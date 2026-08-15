@@ -1,33 +1,34 @@
 # Grok 视频扩展
 
-Grok Video Extend 节点使用 AI 模型为现有视频创建无缝续接。您提供一个短视频和一个描述接下来应发生什么的文本提示，该节点便会生成一个接续原始视频的新视频剪辑。
+Grok Video Extend 节点使用 AI 模型为现有视频创建无缝续接。您提供一段短视频和一段描述接下来应发生内容的文本提示，该节点将生成一段衔接原始视频的新视频片段。
 
 ## 输入
 
 ### 通用输入
 
-| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
+| Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `模型` | 用于视频扩展的模型。 | DYNAMIC_COMBO | 是 | `"grok-imagine-video"` |
-| `提示词` | 描述视频接下来应发生什么的文本。 | STRING | 是 | N/A |
-| `视频` | 要扩展的源视频。MP4 格式，时长 2-15 秒。 | VIDEO | 是 | N/A |
-| `种子` | 用于确定节点是否应重新运行的种子；无论种子为何，实际结果都是不确定的（默认值：0）。 | INT | 否 | 0 到 2147483647 |
+| `model` | 用于视频扩展的模型。 | DYNAMIC_COMBO | 是 | `"grok-imagine-video"` |
+| `prompt` | 描述视频接下来应发生内容的文本。 | STRING | 是 | N/A |
+| `video` | 要扩展的源视频。MP4 格式，时长 2-15 秒。 | VIDEO | 是 | N/A |
+| `seed` | 用于决定节点是否应重新运行的种子；无论种子为何，实际结果都是不确定的（默认值：0）。 | INT | 否 | 0 至 2147483647 |
 
 ### grok-imagine-video 输入
 
-| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
+| Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `duration` | 扩展的时长（秒）（默认值：8）。 | INT | 是 | 2 到 10 |
+| `duration` | 扩展的时长（秒）（默认值：8）。 | INT | 是 | 2 至 10 |
 
 **参数约束：**
-*   `video` 输入必须是 MP4 文件，时长在 2 到 15 秒之间，且文件大小不能超过 50MB。
-*   `prompt` 必须至少包含一个字符（空白字符将被去除）。
-*   `model` 参数是一个动态组合框。选择 "grok-imagine-video" 选项后会显示嵌套的 `duration` 参数。
+*   `video` 输入必须是长度在 2 至 15 秒之间的 MP4 文件，且文件大小不能超过 50MB。
+*   `prompt` 必须至少包含一个字符（空白字符会被去除）。
+*   `model` 参数是一个动态组合。选择 "grok-imagine-video" 选项后会显示嵌套的 `duration` 参数。
 
 ## 输出
-| 输出名称 | 描述 | 数据类型 |
+
+| Output Name | Description | Data Type |
 |-------------|-------------|-----------|
-| `output` | 新生成的视频扩展。 | VIDEO |
+| `output` | 新生成的视频扩展片段。 | VIDEO |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoExtendNode/zh.md)
 

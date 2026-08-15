@@ -1,8 +1,10 @@
 # Bria FIBO Image Edit
 
-The Bria FIBO Image Edit node allows you to modify an existing image using a text instruction. It sends the image and your prompt to the Bria API, which uses the FIBO model to generate a new, edited version of the image based on your request. You can also provide a mask to limit the edits to a specific area.
+The Bria FIBO Image Edit node lets you edit an existing image with a text instruction. It sends the image and your prompt to the Bria API, which uses the FIBO model to create an edited version of the image. You can also provide a mask to limit the changes to a specific area.
 
 ## Inputs
+
+### Common Inputs
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
@@ -10,24 +12,34 @@ The Bria FIBO Image Edit node allows you to modify an existing image using a tex
 | `image` | The input image you want to edit. | IMAGE | Yes | - |
 | `prompt` | Instruction to edit image (default: empty). | STRING | Yes | - |
 | `negative_prompt` | Text describing what you do not want to appear in the edited image (default: empty). | STRING | Yes | - |
-| `structured_prompt` | A string containing the structured edit prompt in JSON format. Use this instead of the usual prompt for precise, programmatic control (default: empty). | STRING | Yes | - |
+| `structured_prompt` | A string containing the structured edit prompt in JSON format. Use this instead of usual prompt for precise, programmatic control (default: empty). | STRING | Yes | - |
 | `seed` | A number used to initialize the random generation, ensuring reproducible results (default: 1). | INT | Yes | 1 to 2147483647 |
-| `guidance_scale` | Higher value makes the image follow the prompt more closely (default: 3.0). | FLOAT | Yes | 3.0 to 5.0 |
-| `steps` | The number of denoising steps the model will perform (default: 50). | INT | Yes | 20 to 50 |
-| `moderation` | Moderation settings. Selecting `"true"` reveals additional moderation options for prompt content, visual input, and visual output. | DYNAMIC_COMBO | Yes | `"false"`<br>`"true"` |
+| `guidance_scale` | Higher value makes the image follow the prompt more closely (default: 3). | FLOAT | Yes | 3.0 to 5.0 |
+| `steps` | The number of denoising steps performed by the model (default: 50). | INT | Yes | 20 to 50 |
+| `moderation` | Moderation settings. Selecting `"true"` reveals additional moderation options. | DYNAMIC_COMBO | Yes | `"false"`<br>`"true"` |
 | `mask` | If omitted, the edit applies to the entire image. | MASK | No | - |
+
+### Moderation Inputs
+
+When `moderation` is set to `"true"`, these additional inputs become available:
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `prompt_content_moderation` | Whether to moderate the prompt text for inappropriate content (default: false). | BOOLEAN | No | `true`<br>`false` |
+| `visual_input_moderation` | Whether to moderate the input image for inappropriate content (default: false). | BOOLEAN | No | `true`<br>`false` |
+| `visual_output_moderation` | Whether to moderate the edited output image for inappropriate content (default: true). | BOOLEAN | No | `true`<br>`false` |
 
 **Important Constraints:**
 
-- You must provide at least one of the `prompt` or `structured_prompt` inputs. They cannot both be empty.
-- When the `moderation` parameter is set to `"true"`, three additional boolean inputs become available: `prompt_content_moderation` (default: false), `visual_input_moderation` (default: false), and `visual_output_moderation` (default: true).
+- At least one of `prompt` or `structured_prompt` must be non-empty. If both are empty, the node raises an error.
+- When `moderation` is set to `"true"`, the three moderation inputs above are shown.
 
 ## Outputs
 
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
 | `IMAGE` | The edited image returned by the Bria API. | IMAGE |
-| `structured_prompt` | The structured prompt that was used or generated during the editing process. | STRING |
+| `structured_prompt` | The structured prompt used or generated during the editing process. | STRING |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaImageEditNode/en.md)
 

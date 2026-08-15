@@ -8,15 +8,15 @@ This node generates a video by creating transitions between multiple keyframes. 
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The Vidu model to use for video generation. | COMBO | Yes | `"viduq2-pro"`<br>`"viduq2-turbo"` |
+| `model` | The Vidu model to use for video generation. | COMBO | Yes | "viduq2-pro"<br>"viduq2-turbo" |
 | `start_image` | The starting frame image. Aspect ratio must be between 1:4 and 4:1. | IMAGE | Yes | Aspect ratio 1:4 to 4:1 |
 | `seed` | A seed value for random number generation to ensure reproducible results (default: 1). | INT | Yes | 0 to 2147483647 |
-| `resolution` | The resolution of the output video. | COMBO | Yes | `"720p"`<br>`"1080p"` |
-| `frames` | Number of keyframe transitions (2-9). Selecting a value dynamically reveals the required inputs for each frame. | DYNAMIC_COMBO | Yes | `"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` |
+| `resolution` | The resolution of the output video. | COMBO | Yes | "720p"<br>"1080p" |
+| `frames` | Number of keyframe transitions (2-9). Selecting a value dynamically reveals the required inputs for each frame. | DYNAMIC_COMBO | Yes | "2"<br>"3"<br>"4"<br>"5"<br>"6"<br>"7"<br>"8"<br>"9" |
 
 ### Frame Inputs (shared by all frame count options)
 
-When `frames` is set to a number, the following three inputs are shown for each frame `i` from 1 to that number. For example, choosing `"3"` adds `prompt1` / `end_image1` / `duration1`, `prompt2` / `end_image2` / `duration2`, and `prompt3` / `end_image3` / `duration3`.
+When `frames` is set to a number, the following three inputs are shown for each frame `i` from 1 to that number. For example, choosing "3" adds `prompt1` / `end_image1` / `duration1`, `prompt2` / `end_image2` / `duration2`, and `prompt3` / `end_image3` / `duration3`.
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|

@@ -24,7 +24,7 @@ The following parameters are shared by both model options (`viduq3-pro` and `vid
 | `model.duration` | Duration of the output video in seconds (default: 5). This parameter is revealed after selecting a `model`. | INT | Yes | 1 to 16 |
 | `model.audio` | When enabled, outputs video with sound (including dialogue and sound effects) (default: False). This parameter is revealed after selecting a `model`. | BOOLEAN | Yes | `True`<br>`False` |
 
-**Note:** The `first_frame` and `end_frame` images should have similar aspect ratios for optimal results. The aspect ratio of the two images must be within 80% to 125% of each other (a relative closeness between 0.8 and 1.25).
+**Note:** The `first_frame` and `end_frame` images must have similar aspect ratios. The aspect ratio of the two images must be within 80% to 125% of each other (a relative closeness between 0.8 and 1.25).
 
 ## Outputs
 

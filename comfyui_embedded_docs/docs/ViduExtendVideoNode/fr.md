@@ -1,6 +1,6 @@
 # Extension de vidéo Vidu
 
-Le nœud ViduExtendVideoNode génère des images supplémentaires pour prolonger la durée d’une vidéo existante. Il utilise un modèle d’IA spécifié pour créer une continuation fluide à partir de la vidéo source et d’une invite de texte facultative.
+Le nœud ViduExtendVideoNode génère des images supplémentaires pour prolonger la durée d’une vidéo existante. Il utilise un modèle d’IA spécifié pour créer une continuation fluide à partir de la vidéo source et d’une invite texte facultative.
 
 ## Entrées
 
@@ -8,28 +8,28 @@ Le nœud ViduExtendVideoNode génère des images supplémentaires pour prolonger
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `modèle` | Modèle à utiliser pour l’extension vidéo. La sélection d’un modèle révèle ses paramètres spécifiques de durée et de résolution. | DYNAMIC_COMBO | Oui | `"viduq2-pro"`<br>`"viduq2-turbo"` |
-| `vidéo` | La vidéo source à prolonger. | VIDEO | Oui | - |
-| `invite` | Invite de texte facultative pour la vidéo prolongée (2 000 caractères maximum, par défaut : vide). | STRING | Non | - |
-| `graine` | Valeur de graine pour contrôler le caractère aléatoire de la génération (par défaut : 1). | INT | Non | 0 à 2147483647 |
-| `image_finale` | Image facultative à utiliser comme image de fin cible pour l’extension. | IMAGE | Non | - |
+| `model` | Modèle à utiliser pour l’extension vidéo. La sélection d’un modèle révèle ses réglages spécifiques de durée et de résolution. | DYNAMIC_COMBO | Oui | `"viduq2-pro"`<br>`"viduq2-turbo"` |
+| `video` | La vidéo source à étendre. | VIDEO | Oui | - |
+| `prompt` | Une invite texte facultative pour la vidéo étendue (2000 caractères maximum ; défaut : vide). | STRING | Oui | - |
+| `seed` | Une valeur de graine pour contrôler l’aléatoire de la génération (défaut : 1). | INT | Oui | 0 à 2147483647 |
+| `end_frame` | Une image facultative à utiliser comme image de fin cible pour l’extension. | IMAGE | Non | - |
 
-### Entrées viduq2-pro et viduq2-turbo
+### viduq2-pro et viduq2-turbo Entrées
 
-Ces paramètres sont communs aux deux modèles.
+Ces réglages sont partagés par les deux modèles.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `durée` | Durée de la vidéo prolongée en secondes (par défaut : 4). Ce paramètre apparaît après avoir sélectionné un modèle. | INT | Oui | 1 à 7 |
-| `résolution` | Résolution de la vidéo de sortie. Ce paramètre apparaît après avoir sélectionné un modèle. | COMBO | Oui | `"720p"`<br>`"1080p"` |
+| `model.duration` | Durée de la vidéo étendue en secondes (défaut : 4). Ce réglage apparaît après la sélection d’un modèle. | INT | Oui | 1 à 7 |
+| `model.resolution` | Résolution de la vidéo de sortie. Ce réglage apparaît après la sélection d’un modèle. | COMBO | Oui | `"720p"`<br>`"1080p"` |
 
-**Remarque :** La `video` source doit avoir une durée comprise entre 4 et 55 secondes. Si `end_frame` est fourni, son ratio hauteur/largeur doit être compris entre 1:4 et 4:1, et sa largeur et sa hauteur doivent chacune être d’au moins 128 pixels.
+**Remarque :** La `video` source doit avoir une durée comprise entre 4 et 55 secondes. Si `end_frame` est fourni, son rapport hauteur/largeur doit être compris entre 1:4 et 4:1, et sa largeur et sa hauteur doivent chacune être d’au moins 128 pixels.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `output` | Le fichier vidéo nouvellement généré contenant la séquence prolongée. | VIDEO |
+| `output` | Le fichier vidéo nouvellement généré contenant les images étendues. | VIDEO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduExtendVideoNode/fr.md)
 

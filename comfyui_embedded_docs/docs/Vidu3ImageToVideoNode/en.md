@@ -11,7 +11,7 @@ The Vidu Q3 Image-to-Video Generation node creates a video sequence starting fro
 | `model` | Model to use for video generation. | DYNAMIC_COMBO | Yes | `"viduq3-pro"`<br>`"viduq3-turbo"` |
 | `image` | An image to be used as the start frame of the generated video. | IMAGE | Yes | - |
 | `prompt` | An optional text prompt for video generation (max 2000 characters) (default: empty). | STRING | No | - |
-| `seed` | A seed value for controlling the randomness of the generation (default: 1). | INT | No | 0 to 2147483647 |
+| `seed` | A seed value for controlling the randomness of the generation (default: 1). Supports control-after-generate. | INT | No | 0 to 2147483647 |
 
 ### viduq3-pro Inputs
 

@@ -8,7 +8,7 @@ Generates a video based on a text prompt using the HappyHorse model. This node s
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The HappyHorse model used for generation, along with its sub-parameters. Selecting a model determines which sub-parameters are available (see the model sections below). | DICT | Yes | "happyhorse-1.1-t2v"<br>"happyhorse-1.0-t2v" |
+| `model` | The HappyHorse model used for generation, along with its sub-parameters. Selecting a model determines which sub-parameters are available (see the model sections below). | DYNAMIC_COMBO | Yes | "happyhorse-1.1-t2v"<br>"happyhorse-1.0-t2v" |
 | `seed` | Seed to use for generation. Using the same seed with the same inputs will produce the same result. (default: 0). | INT | Yes | 0 to 2147483647 |
 | `watermark` | Whether to add an AI-generated watermark to the result. (default: False). | BOOLEAN | No | True / False |
 
@@ -17,8 +17,8 @@ Generates a video based on a text prompt using the HappyHorse model. This node s
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `model.prompt` | Prompt describing the elements and visual features. Supports English and Chinese. (default: ""). | STRING | Yes | - |
-| `model.resolution` | The resolution of the output video. | STRING | Yes | "720P"<br>"1080P" |
-| `model.ratio` | The aspect ratio of the output video. | STRING | Yes | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4"<br>"21:9"<br>"9:21"<br>"5:4"<br>"4:5" |
+| `model.resolution` | The resolution of the output video. | COMBO | Yes | "720P"<br>"1080P" |
+| `model.ratio` | The aspect ratio of the output video. | COMBO | Yes | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4"<br>"21:9"<br>"9:21"<br>"5:4"<br>"4:5" |
 | `model.duration` | The length of the video in seconds. (default: 5, min: 3, max: 15, step: 1). | INT | Yes | 3 to 15 |
 
 ### happyhorse-1.0-t2v Inputs
@@ -26,8 +26,8 @@ Generates a video based on a text prompt using the HappyHorse model. This node s
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `model.prompt` | Prompt describing the elements and visual features. Supports English and Chinese. (default: ""). | STRING | Yes | - |
-| `model.resolution` | The resolution of the output video. | STRING | Yes | "720P"<br>"1080P" |
-| `model.ratio` | The aspect ratio of the output video. | STRING | Yes | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+| `model.resolution` | The resolution of the output video. | COMBO | Yes | "720P"<br>"1080P" |
+| `model.ratio` | The aspect ratio of the output video. | COMBO | Yes | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
 | `model.duration` | The length of the video in seconds. (default: 5, min: 3, max: 15, step: 1). | INT | Yes | 3 to 15 |
 
 Note: The prompt must not be empty; an error is raised if no prompt is provided. Both models support video durations from 3 to 15 seconds. The `happyhorse-1.1-t2v` model offers additional aspect ratios (`21:9`, `9:21`, `5:4`, `4:5`) that are not available with `happyhorse-1.0-t2v`.

@@ -1,4 +1,4 @@
-# QwenImageTextToImageApi
+# Qwen Image 3 Text to Image
 
 Qwen Image 3 Text to Image generates one or more images from a text prompt using the Qwen-Image 3.0 models. You select a model and provide a prompt, and the node returns the generated images as a batch.
 
@@ -8,7 +8,7 @@ Qwen Image 3 Text to Image generates one or more images from a text prompt using
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Model to use (default: "qwen-image-3.0-pro"). This composite selector also provides the prompt, image width, image height, and optional negative prompt. | MODEL | Yes | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
+| `model` | Model to use (default: "qwen-image-3.0-pro"). This composite selector also provides the prompt, image width, image height, and optional negative prompt. | DYNAMIC_COMBO | Yes | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
 | `n` | Number of images to generate, returned as a batch (default: 1). | INT | No | 1 to 6 |
 | `seed` | Seed to use for generation (default: 42). Can be set to update automatically after each generation. | INT | No | 0 to 2147483647 |
 | `prompt_extend` | Whether to enhance the prompt with AI assistance (default: true). Advanced option. | BOOLEAN | No | true<br>false |

@@ -1,30 +1,40 @@
 # Bria FIBO 图像编辑
 
-Bria FIBO Image Edit 节点允许你通过文本指令修改现有图像。它会将图像和你的提示词发送到 Bria API，API 会使用 FIBO 模型根据你的请求生成新的、经过编辑的图像版本。你还可以提供遮罩（mask），将编辑限制在特定区域内。
+Bria FIBO 图像编辑节点允许您通过文本指令编辑现有图像。它将图像和您的提示词发送到 Bria API，由 FIBO 模型创建编辑后的图像版本。您还可以提供遮罩，以将修改限制在特定区域。
 
 ## 输入
+### 通用输入
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | 用于图像编辑的模型版本。 | COMBO | 是 | `"FIBO"` |
-| `image` | 要编辑的输入图像。 | IMAGE | 是 | - |
+| `image` | 您想要编辑的输入图像。 | IMAGE | 是 | - |
 | `prompt` | 编辑图像的指令（默认：空）。 | STRING | 是 | - |
-| `negative_prompt` | 描述你不想在编辑后图像中出现的文本（默认：空）。 | STRING | 是 | - |
-| `structured_prompt` | 包含 JSON 格式的结构化编辑提示词的字符串。需要精确、可编程地控制编辑时，可使用此参数代替常规提示词（默认：空）。 | STRING | 是 | - |
-| `seed` | 用于初始化随机生成的数字，确保结果可复现（默认：1）。 | INT | 是 | 1 到 2147483647 |
-| `guidance_scale` | 数值越高，图像越贴近提示词（默认：3.0）。 | FLOAT | 是 | 3.0 到 5.0 |
-| `steps` | 模型将执行的去噪步数（默认：50）。 | INT | 是 | 20 到 50 |
-| `moderation` | 审核设置。选择 `"true"` 会显示针对提示词内容、视觉输入和视觉输出的额外审核选项。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
+| `negative_prompt` | 描述您不希望出现在编辑后图像中的内容的文本（默认：空）。 | STRING | 是 | - |
+| `structured_prompt` | 包含 JSON 格式的结构化编辑提示词的字符串。使用它代替常规提示词，以实现精确的程序化控制（默认：空）。 | STRING | 是 | - |
+| `seed` | 用于初始化随机生成的数字，确保结果可复现（默认：1）。 | INT | 是 | 1 to 2147483647 |
+| `guidance_scale` | 数值越高，图像越严格遵循提示词（默认：3）。 | FLOAT | 是 | 3.0 to 5.0 |
+| `steps` | 模型执行的去噪步数（默认：50）。 | INT | 是 | 20 to 50 |
+| `moderation` | 审核设置。选择 `"true"` 将显示额外的审核选项。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
 | `mask` | 如果省略，编辑将应用于整个图像。 | MASK | 否 | - |
+
+### 审核输入
+
+当 `moderation` 设置为 `"true"` 时，以下额外输入变为可用：
+
+| 参数 | 描述 | 数据类型 | 必填 | 范围 |
+|-----------|-------------|-----------|----------|-------|
+| `prompt_content_moderation` | 是否对提示词文本进行不当内容审核（默认：false）。 | BOOLEAN | 否 | `true`<br>`false` |
+| `visual_input_moderation` | 是否对输入图像进行不当内容审核（默认：false）。 | BOOLEAN | 否 | `true`<br>`false` |
+| `visual_output_moderation` | 是否对编辑后的输出图像进行不当内容审核（默认：true）。 | BOOLEAN | 否 | `true`<br>`false` |
 
 **重要限制：**
 
-- 你必须至少提供 `prompt` 和 `structured_prompt` 中的一个输入。两者不能同时为空。
-- 当 `moderation` 参数设置为 `"true"` 时，会出现三个额外的布尔输入：`prompt_content_moderation`（默认：false）、`visual_input_moderation`（默认：false）和 `visual_output_moderation`（默认：true）。
+- `prompt` 和 `structured_prompt` 至少有一个必须非空。如果两者都为空，节点将抛出错误。
+- 当 `moderation` 设置为 `"true"` 时，将显示上述三个审核输入。
 
 ## 输出
-
-| 输出名 | 描述 | 数据类型 |
+| 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
 | `IMAGE` | Bria API 返回的编辑后图像。 | IMAGE |
 | `structured_prompt` | 编辑过程中使用或生成的结构化提示词。 | STRING |

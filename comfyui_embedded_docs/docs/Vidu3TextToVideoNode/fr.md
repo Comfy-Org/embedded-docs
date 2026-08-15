@@ -1,6 +1,6 @@
 # Génération de vidéo à partir de texte Vidu Q3
 
-Le nœud Vidu Q3 Text-to-Video Generation crée une vidéo à partir d'une description textuelle. Il utilise le modèle Vidu Q3 Pro ou Q3 Turbo pour générer le contenu vidéo en fonction de votre prompt, ce qui vous permet de contrôler la durée, la résolution, le rapport hauteur/largeur de la vidéo et la présence d'audio.
+Le nœud Vidu Q3 Text-to-Video Generation crée une vidéo à partir d'une description textuelle. Il utilise le modèle Vidu Q3 Pro ou Q3 Turbo pour générer du contenu vidéo en fonction de votre prompt, vous permettant de contrôler la durée, la résolution, le format d'image et la présence d'audio dans la vidéo.
 
 ## Entrées
 
@@ -8,22 +8,22 @@ Le nœud Vidu Q3 Text-to-Video Generation crée une vidéo à partir d'une descr
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `modèle` | Modèle à utiliser pour la génération vidéo. La sélection d'un modèle révèle des paramètres de configuration supplémentaires pour le rapport hauteur/largeur, la résolution, la durée et l'audio. | DYNAMIC_COMBO | Oui | `"viduq3-pro"`<br>`"viduq3-turbo"` |
-| `invite` | Description textuelle pour la génération vidéo, avec une longueur maximale de 2000 caractères. | STRING | Oui | N/A |
-| `graine` | Valeur de graine pour contrôler le caractère aléatoire de la génération (par défaut : 1). | INT | Oui | 0 à 2147483647 |
+| `model` | Modèle à utiliser pour la génération vidéo. La sélection d'un modèle révèle des paramètres de configuration supplémentaires pour le format d'image, la résolution, la durée et l'audio. | DYNAMIC_COMBO | Oui | `"viduq3-pro"`<br>`"viduq3-turbo"` |
+| `prompt` | Description textuelle pour la génération vidéo, avec une longueur maximale de 2000 caractères. | STRING | Oui | N/A |
+| `seed` | Valeur de graine (seed) pour contrôler le caractère aléatoire de la génération (par défaut : 1). | INT | Oui | 0 à 2147483647 |
 
-### Entrées viduq3-pro et viduq3-turbo
+### Entrées de viduq3-pro et viduq3-turbo
 
 Les paramètres de configuration suivants sont partagés par les modèles `viduq3-pro` et `viduq3-turbo`.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `rapport d’aspect` | Le rapport hauteur/largeur de la vidéo de sortie. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
-| `résolution` | Résolution de la vidéo de sortie. | COMBO | Oui | `"720p"`<br>`"1080p"` |
-| `durée` | Durée de la vidéo de sortie en secondes (par défaut : 5). | INT | Oui | 1 à 16 |
-| `audio` | Lorsque cette option est activée, la vidéo générée contient du son (y compris dialogues et effets sonores) (par défaut : False). | BOOLEAN | Oui | True/False |
+| `model.aspect_ratio` | Le ratio d'aspect de la vidéo de sortie. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
+| `model.resolution` | Résolution de la vidéo de sortie. | COMBO | Oui | `"720p"`<br>`"1080p"` |
+| `model.duration` | Durée de la vidéo de sortie en secondes (par défaut : 5). | INT | Oui | 1 à 16 |
+| `model.audio` | Lorsqu'il est activé, génère une vidéo avec du son (incluant dialogues et effets sonores) (par défaut : False). | BOOLEAN | Oui | True/False |
 
-**Remarque :** Les paramètres `aspect_ratio`, `resolution`, `duration` et `audio` sont requis dès lors qu'un `model` est sélectionné, car ils font partie de sa configuration. Le `prompt` ne doit pas être vide et ne peut pas dépasser 2000 caractères.
+**Remarque :** Les paramètres `aspect_ratio`, `resolution`, `duration` et `audio` sont requis une fois qu'un `model` est sélectionné, car ils font partie de sa configuration. Le `prompt` ne doit pas être vide et ne peut pas dépasser 2000 caractères.
 
 ## Sorties
 

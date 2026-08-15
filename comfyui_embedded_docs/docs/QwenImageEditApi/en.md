@@ -1,6 +1,6 @@
-# QwenImageEditApi
+# Qwen Image 3 Edit
 
-This node uses the Qwen-Image 3.0 models to edit or combine up to 3 reference images guided by a text prompt. You provide the text prompt and the reference images, and the node returns the generated result as one or more images.
+This node uses the Qwen-Image 3.0 models to edit or combine up to 3 reference images guided by a text prompt. You select a model, provide the prompt and reference images, and the node returns one or more generated images.
 
 ## Inputs
 
@@ -8,8 +8,8 @@ This node uses the Qwen-Image 3.0 models to edit or combine up to 3 reference im
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Model to use. This selection also includes the text prompt, up to 3 reference image inputs, and an optional negative prompt. | MODEL | Yes | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
-| `size` | Output resolution. "match input" reuses the first reference image's size, "auto" lets the model pick a size with the same aspect ratio, "custom" sets an explicit width and height. | COMBO | Yes | "match input"<br>"auto"<br>"custom" |
+| `model` | Model to use. This selection also includes the text prompt, up to 3 reference image inputs, and an optional negative prompt. | DYNAMIC_COMBO | Yes | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
+| `size` | Output resolution. "match input" reuses the first reference image's size, "auto" lets the model pick a size with the same aspect ratio, "custom" sets an explicit width and height. | DYNAMIC_COMBO | Yes | "match input"<br>"auto"<br>"custom" |
 | `n` | Number of images to generate, returned as a batch. (default: 1) | INT | No | 1 to 6 |
 | `seed` | Seed to use for generation. (default: 42) | INT | No | 0 to 2147483647 |
 | `prompt_extend` | Whether to enhance the prompt with AI assistance. (default: True) | BOOLEAN | No | True<br>False |
@@ -47,7 +47,7 @@ Shown when `size` is set to "custom".
 - When `size` is set to "match input", at least one reference image is required because the first reference image's dimensions are used; the dimensions are scaled to fit the supported area and aspect ratio range.
 - When `size` is set to "auto", the model picks the output size while preserving the input aspect ratio.
 - Prompt references use @Image1, @Image2, @Image3, numbered in input order; a reference to an index higher than the number of connected images raises an error. Tags are recognized only at word boundaries, so addresses like user@image1.com are left unchanged.
-- Input reference images are downscaled to at most 2048x2048 pixels before being sent to the API.
+- Input reference images are downscaled to at most 2048x2048 pixels before being sent to the API. If the PNG encoding exceeds the API size limit, a JPEG encoding is used instead.
 
 ## Outputs
 

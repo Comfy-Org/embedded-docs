@@ -10,8 +10,8 @@ The ViduExtendVideoNode generates additional frames to extend the length of an e
 |-----------|-------------|-----------|----------|-------|
 | `model` | Model to use for video extension. Selecting a model reveals its specific duration and resolution settings. | DYNAMIC_COMBO | Yes | `"viduq2-pro"`<br>`"viduq2-turbo"` |
 | `video` | The source video to extend. | VIDEO | Yes | - |
-| `prompt` | An optional text prompt for the extended video (max 2000 characters, default: empty). | STRING | No | - |
-| `seed` | A seed value for controlling the randomness of the generation (default: 1). | INT | No | 0 to 2147483647 |
+| `prompt` | An optional text prompt for the extended video (max 2000 characters; default: empty). | STRING | Yes | - |
+| `seed` | A seed value for controlling the randomness of the generation (default: 1). | INT | Yes | 0 to 2147483647 |
 | `end_frame` | An optional image to use as the target end frame for the extension. | IMAGE | No | - |
 
 ### viduq2-pro and viduq2-turbo Inputs

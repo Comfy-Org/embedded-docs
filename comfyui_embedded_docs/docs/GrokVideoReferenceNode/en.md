@@ -8,8 +8,8 @@ The Grok Reference-to-Video node generates a video from a text prompt, using up 
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Text description of the desired video. Must be a non-empty string. | STRING | Yes | N/A |
 | `model` | The model to use for video generation. | DYNAMIC_COMBO | Yes | `"grok-imagine-video-1.5"`<br>`"grok-imagine-video"` |
+| `prompt` | Text description of the desired video. Must be a non-empty string. | STRING | Yes | N/A |
 | `seed` | Seed to determine if node should re-run; actual results are nondeterministic regardless of seed (default: 0). | INT | No | 0 to 2147483647 |
 
 ### Grok Imagine Video 1.5 Inputs
@@ -18,9 +18,9 @@ Available when `model` is set to `grok-imagine-video-1.5`.
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `voice_1` | Optional preset voice reference; refer to it in the prompt as @Audio1. The API supports only these preset voices, not custom audio (default: none). | COMBO | No | Preset voice options (includes `"none"`) |
-| `voice_2` | Optional second voice reference; @Audio2 in the prompt (default: none). | COMBO | No | Preset voice options (includes `"none"`) |
-| `voice_3` | Optional third voice reference; @Audio3 in the prompt (default: none). | COMBO | No | Preset voice options (includes `"none"`) |
+| `voice_1` | Optional preset voice reference; refer to it in the prompt as @Audio1. The API supports only these preset voices, not custom audio (default: none). | COMBO | No | Preset voice options, including `"none"` |
+| `voice_2` | Optional second voice reference; @Audio2 in the prompt (default: none). | COMBO | No | Preset voice options, including `"none"` |
+| `voice_3` | Optional third voice reference; @Audio3 in the prompt (default: none). | COMBO | No | Preset voice options, including `"none"` |
 | `resolution` | The resolution of the output video. | COMBO | Yes | `"480p"`<br>`"720p"` |
 | `aspect_ratio` | The aspect ratio of the output video. | COMBO | Yes | `"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` |
 | `duration` | The duration of the output video in seconds (default: 6). | INT | Yes | 1 to 15 |
@@ -41,7 +41,7 @@ Available when `model` is set to `grok-imagine-video`.
 |-----------|-------------|-----------|----------|-------|
 | `reference_images` | Growable slot: connect 1 to 7 reference images to guide the video generation. With `grok-imagine-video-1.5`, refer to them in the prompt as @Image1 ... @Image7, numbered in input order; a batched input counts once per image. | IMAGE | Yes | 1 to 7 images |
 
-**Note:** The sub-parameters shown depend on the selected `model`; `grok-imagine-video-1.5` adds the `voice_1`, `voice_2`, and `voice_3` inputs. At least one reference image is required and the total is capped at 7 (a batched input counts once per image). With `grok-imagine-video-1.5`, the prompt can reference connected images as `@Image1` ... `@Image7` and enabled voices as `@Audio1`, `@Audio2`, `@Audio3`; referencing an image that is not connected or a voice set to `none` causes an error. The API supports only preset voices, not custom audio.
+**Note:** The sub-parameters shown depend on the selected `model`; `grok-imagine-video-1.5` adds the `voice_1`, `voice_2`, and `voice_3` inputs. At least one reference image is required, and the total is capped at 7 (a batched input counts once per image). With `grok-imagine-video-1.5`, the prompt can reference connected images as `@Image1` ... `@Image7` and voice slots as `@Audio1`, `@Audio2`, `@Audio3`; an unnumbered `@image` or `@audio` refers to the first one. `@AudioN` refers to the `voice_N` widget, not the order of enabled voices. Referencing an image that is not connected or a voice slot set to `none` causes an error. The API supports only preset voices, not custom audio.
 
 ## Outputs
 

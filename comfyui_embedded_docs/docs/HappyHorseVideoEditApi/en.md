@@ -8,7 +8,7 @@ Edit a video using text instructions or reference images with the HappyHorse mod
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The HappyHorse video editing model to use. This selection determines which prompt, resolution, ratio, and reference image options are available. | DICT | Yes | "happyhorse-1.0-video-edit" |
+| `model` | The HappyHorse video editing model to use. This selection determines which prompt, resolution, ratio, and reference image options are available. | DYNAMIC_COMBO | Yes | "happyhorse-1.0-video-edit" |
 | `video` | The video to edit. | VIDEO | Yes | 3 to 60 seconds |
 | `seed` | Seed to use for generation (default: 0). | INT | Yes | 0 to 2147483647 |
 | `watermark` | Whether to add an AI-generated watermark to the result (default: False). | BOOLEAN | No | True<br>False |
@@ -18,8 +18,8 @@ Edit a video using text instructions or reference images with the HappyHorse mod
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Editing instructions or style transfer requirements. Must be at least 1 character long. | STRING | Yes | - |
-| `resolution` | The output resolution. | STRING | Yes | "720P"<br>"1080P" |
-| `ratio` | Aspect ratio. If not changed, approximates the input video ratio. | STRING | Yes | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+| `resolution` | The output resolution. | COMBO | Yes | "720P"<br>"1080P" |
+| `ratio` | Aspect ratio. If not changed, approximates the input video ratio. | COMBO | Yes | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
 
 ### Reference Inputs
 

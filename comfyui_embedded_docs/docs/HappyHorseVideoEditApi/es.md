@@ -1,33 +1,33 @@
 # HappyHorse Edición de Video
 
-Edita un video usando instrucciones de texto o imágenes de referencia con el modelo HappyHorse. La duración de salida es de 3 a 15 segundos y coincide con el video de entrada; las entradas de más de 15 segundos se truncan.
+Edita un video usando instrucciones de texto o imágenes de referencia con el modelo HappyHorse. La duración de salida es de 3 a 15 segundos y coincide con el video de entrada; los videos de entrada de más de 15 segundos se truncan.
 
 ## Entradas
 
 ### Entradas comunes
 
-| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
-|-----------|-------------|---------------|-------------|-------|
-| `modelo` | El modelo de edición de video HappyHorse a utilizar. Esta selección determina qué opciones de prompt, resolución, proporción e imagen de referencia están disponibles. | DICT | Sí | "happyhorse-1.0-video-edit" |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `model` | El modelo de edición de video HappyHorse a utilizar. Esta selección determina qué opciones de prompt, resolución, proporción e imágenes de referencia están disponibles. | DYNAMIC_COMBO | Sí | "happyhorse-1.0-video-edit" |
 | `video` | El video a editar. | VIDEO | Sí | 3 a 60 segundos |
-| `semilla` | Semilla a utilizar para la generación (por defecto: 0). | INT | Sí | 0 a 2147483647 |
-| `marca de agua` | Si se debe añadir una marca de agua generada por IA al resultado (por defecto: False). | BOOLEAN | No | True<br>False |
+| `seed` | Semilla a usar para la generación (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
+| `watermark` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False). | BOOLEAN | No | True<br>False |
 
-### happyhorse-1.0-video-edit Entradas
+### Entradas de happyhorse-1.0-video-edit
 
-| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
-|-----------|-------------|---------------|-------------|-------|
-| `prompt` | Instrucciones de edición o requisitos de transferencia de estilo. Debe tener al menos 1 carácter de longitud. | STRING | Sí | - |
-| `resolution` | La resolución de salida. | STRING | Sí | "720P"<br>"1080P" |
-| `ratio` | Relación de aspecto. Si no se cambia, se aproxima a la relación de aspecto del video de entrada. | STRING | Sí | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `prompt` | Instrucciones de edición o requisitos de transferencia de estilo. Debe tener al menos 1 carácter. | STRING | Sí | - |
+| `resolution` | La resolución de salida. | COMBO | Sí | "720P"<br>"1080P" |
+| `ratio` | Relación de aspecto. Si no se cambia, se aproxima a la relación de aspecto del video de entrada. | COMBO | Sí | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
 
 ### Entradas de referencia
 
-| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
-|-----------|-------------|---------------|-------------|-------|
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
 | `reference_images` | Ranura ampliable: conecta de 0 a 5 imágenes de referencia (`image1`...`image5`) para guiar la edición. | IMAGE | No | 0 a 5 imágenes |
 
-**Nota:** El video de entrada debe tener una duración de 3 a 60 segundos. La duración de salida es de 3 a 15 segundos y coincide con el video de entrada; los videos de entrada de más de 15 segundos se truncan. El `prompt` debe tener al menos 1 carácter de longitud.
+**Nota:** El video de entrada debe tener una duración de 3 a 60 segundos. La duración de salida es de 3 a 15 segundos y coincide con el video de entrada; los videos de entrada de más de 15 segundos se truncan. El `prompt` debe tener al menos 1 carácter.
 
 ## Salidas
 

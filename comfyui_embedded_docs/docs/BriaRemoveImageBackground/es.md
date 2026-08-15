@@ -4,20 +4,31 @@ Este nodo elimina el fondo de una imagen utilizando el servicio Bria RMBG 2.0. E
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|-----------|----------|-------|
-| `imagen` | La imagen de entrada a la que se le eliminará el fondo. | IMAGE | Sí | - |
-| `moderación` | Configuración de moderación. Cuando se establece en `"true"`, hay opciones de moderación adicionales disponibles. | COMBO | No | `"false"`<br>`"true"` |
-| `visual_input_moderation` | Habilita la moderación de contenido visual en la imagen de entrada. Este parámetro solo está disponible cuando `moderation` está establecido en `"true"`. Valor predeterminado: `False`. | BOOLEAN | No | - |
-| `visual_output_moderation` | Habilita la moderación de contenido visual en la imagen de salida. Este parámetro solo está disponible cuando `moderation` está establecido en `"true"`. Valor predeterminado: `True`. | BOOLEAN | No | - |
-| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados son no deterministas independientemente de la semilla. Valor predeterminado: `0`. | INT | No | 0 a 2147483647 |
+El selector `moderation` revela opciones de moderación adicionales cuando se establece en `"true"`.
 
-**Nota:** Los parámetros `visual_input_moderation` y `visual_output_moderation` dependen del parámetro `moderation`. Solo están activos cuando `moderation` está establecido en `"true"`.
+### Entradas comunes
+
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+|-----------|-------------|--------------|-------------|-------|
+| `moderation` | Configuración de moderación. Cuando se establece en `"true"`, opciones de moderación adicionales quedan disponibles. | DYNAMIC_COMBO | No | `"false"`<br>`"true"` |
+| `image` | La imagen de entrada de la que se eliminará el fondo. | IMAGE | Sí | - |
+| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Por defecto: `0`. | INT | No | 0 a 2147483647 |
+
+### Entradas de moderación "true"
+
+Estos parámetros aparecen solo cuando `moderation` se establece en `"true"`. La opción `"false"` no añade entradas adicionales.
+
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+|-----------|-------------|--------------|-------------|-------|
+| `visual_input_moderation` | Habilita la moderación de contenido visual en la imagen de entrada. Por defecto: `False`. | BOOLEAN | No | - |
+| `visual_output_moderation` | Habilita la moderación de contenido visual en la imagen de salida. Por defecto: `True`. | BOOLEAN | No | - |
+
+**Nota:** Los parámetros `visual_input_moderation` y `visual_output_moderation` dependen del parámetro `moderation`. Solo están activos cuando `moderation` se establece en `"true"`.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
-|-------------|-------------|-----------|
+| Nombre de salida | Descripción | Tipo de dato |
+|------------------|-------------|--------------|
 | `image` | La imagen procesada con su fondo eliminado. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaRemoveImageBackground/es.md)

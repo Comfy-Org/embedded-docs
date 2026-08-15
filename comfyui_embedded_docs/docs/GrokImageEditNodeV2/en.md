@@ -1,6 +1,6 @@
 # Grok Image Edit
 
-Modify an existing image based on a text prompt. This node sends your images and a text description to the Grok API, which edits the images according to your instructions and returns the result.
+Modify one or more existing images based on a text prompt. The node sends the connected reference image(s) and the prompt to the Grok image editing API using the selected model, then returns the edited image(s).
 
 ## Inputs
 
@@ -8,7 +8,7 @@ Modify an existing image based on a text prompt. This node sends your images and
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The Grok image model to use. The sub-parameters shown below change depending on the selected model. | MODEL | Yes | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
+| `model` | The Grok image model to use. The sub-parameters shown below change depending on the selected model. | DYNAMIC_COMBO | Yes | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
 | `prompt` | The text prompt used to generate the image. (default: "") | STRING | Yes | N/A |
 | `seed` | Seed to determine if node should re-run; actual results are nondeterministic regardless of seed. (default: 0) | INT | Yes | 0 to 2147483647 |
 
@@ -16,11 +16,10 @@ Modify an existing image based on a text prompt. This node sends your images and
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `images` | Reference image(s) to edit. Up to 3 images. | IMAGE | Yes | 1 to 3 images |
-| `resolution` | Output resolution of the edited images. | STRING | Yes | "1K"<br>"2K" |
+| `resolution` | Output resolution of the edited images. | COMBO | Yes | "1K"<br>"2K" |
 | `number_of_images` | Number of edited images to generate. (default: 1) | INT | Yes | 1 to 10 |
-| `quality` | Quality level of the generated images. | STRING | Yes | "medium"<br>"low" |
-| `aspect_ratio` | Aspect ratio of the edited image. (default: "auto") | STRING | Yes | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
+| `quality` | Quality level of the generated images. | COMBO | Yes | "medium"<br>"low" |
+| `aspect_ratio` | Aspect ratio of the edited image. (default: "auto") | COMBO | Yes | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
 
 ### grok-imagine-image-quality and grok-imagine-image Inputs
 
@@ -28,24 +27,22 @@ Shared by grok-imagine-image-quality and grok-imagine-image.
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `images` | Reference image(s) to edit. Up to 3 images. | IMAGE | Yes | 1 to 3 images |
-| `resolution` | Output resolution of the edited images. | STRING | Yes | "1K"<br>"2K" |
+| `resolution` | Output resolution of the edited images. | COMBO | Yes | "1K"<br>"2K" |
 | `number_of_images` | Number of edited images to generate. (default: 1) | INT | Yes | 1 to 10 |
-| `aspect_ratio` | Only allowed when multiple images are connected. (default: "auto") | STRING | Yes | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
+| `aspect_ratio` | Only allowed when multiple images are connected. (default: "auto") | COMBO | Yes | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
 
 ### grok-imagine-image-pro Inputs
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `images` | Reference image to edit. | IMAGE | Yes | 1 image |
-| `resolution` | Output resolution of the edited images. | STRING | Yes | "1K"<br>"2K" |
+| `resolution` | Output resolution of the edited images. | COMBO | Yes | "1K"<br>"2K" |
 | `number_of_images` | Number of edited images to generate. (default: 1) | INT | Yes | 1 to 10 |
 
 ### Reference Inputs
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `images` | Growable slot: connect 1 or more reference images to edit. Numbered slots such as `image_1`, `image_2`, `image_3` can be added. The maximum number of images depends on the selected model (see model sections above). | IMAGE | Yes | 1 to 3 images, depending on the model |
+| `images` | Growable slot: connect 1 or more reference images to edit. The first slot is `image`, additional slots are `image_1`, `image_2`, etc. The maximum number of images depends on the selected model. | IMAGE | Yes | 1 image for `grok-imagine-image-pro`<br>1 to 3 images for `grok-imagine-image-2.0`, `grok-imagine-image-quality`, and `grok-imagine-image` |
 
 **Note on constraints:**
 - `prompt` must contain at least 1 non-whitespace character.

@@ -4,13 +4,24 @@ Ce nœud supprime l'arrière-plan d'une image à l'aide du service Bria RMBG 2.0
 
 ## Entrées
 
+Le sélecteur `moderation` révèle des options de modération supplémentaires lorsqu'il est défini sur `"true"`.
+
+### Entrées communes
+
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
+| `moderation` | Paramètres de modération. Lorsqu'il est défini sur `"true"`, des options de modération supplémentaires deviennent disponibles. | DYNAMIC_COMBO | Non | `"false"`<br>`"true"` |
 | `image` | L'image d'entrée dont l'arrière-plan sera supprimé. | IMAGE | Oui | - |
-| `modération` | Paramètres de modération. Lorsqu'il est défini sur `"true"`, des options de modération supplémentaires deviennent disponibles. | COMBO | Non | `"false"`<br>`"true"` |
-| `visual_input_moderation` | Active la modération du contenu visuel sur l'image d'entrée. Ce paramètre n'est disponible que lorsque `moderation` est défini sur `"true"`. Défaut : `False`. | BOOLEAN | Non | - |
-| `visual_output_moderation` | Active la modération du contenu visuel sur l'image de sortie. Ce paramètre n'est disponible que lorsque `moderation` est défini sur `"true"`. Défaut : `True`. | BOOLEAN | Non | - |
-| `graine` | La graine contrôle si le nœud doit s'exécuter à nouveau ; les résultats sont non déterministes quelle que soit la graine. Défaut : `0`. | INT | Non | 0 à 2147483647 |
+| `seed` | La graine contrôle si le nœud doit se réexécuter ; les résultats sont non déterministes quelle que soit la graine. Par défaut : `0`. | INT | Non | 0 to 2147483647 |
+
+### Entrées de modération « true »
+
+Ces paramètres n'apparaissent que lorsque `moderation` est défini sur `"true"`. L'option `"false"` n'ajoute aucune entrée supplémentaire.
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `visual_input_moderation` | Active la modération du contenu visuel sur l'image d'entrée. Par défaut : `False`. | BOOLEAN | Non | - |
+| `visual_output_moderation` | Active la modération du contenu visuel sur l'image de sortie. Par défaut : `True`. | BOOLEAN | Non | - |
 
 **Remarque :** Les paramètres `visual_input_moderation` et `visual_output_moderation` dépendent du paramètre `moderation`. Ils ne sont actifs que lorsque `moderation` est défini sur `"true"`.
 

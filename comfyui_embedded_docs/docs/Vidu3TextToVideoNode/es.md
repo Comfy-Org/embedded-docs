@@ -1,33 +1,33 @@
 # Generación de video de texto a video Vidu Q3
 
-The Vidu Q3 Text-to-Video Generation node crea un video a partir de una descripción de texto. Utiliza el modelo Vidu Q3 Pro o Q3 Turbo para generar contenido de video basado en tu prompt, permitiéndote controlar la duración, la resolución, la relación de aspecto del video y si incluye o no audio.
+El nodo de generación de texto a video Vidu Q3 crea un video a partir de una descripción de texto. Utiliza el modelo Vidu Q3 Pro o Q3 Turbo para generar contenido de video según tu indicación, permitiéndote controlar la duración, resolución, relación de aspecto y si incluye audio.
 
 ## Entradas
 
 ### Entradas comunes
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | Modelo a utilizar para la generación de video. Al seleccionar un modelo, se muestran parámetros de configuración adicionales para la relación de aspecto, la resolución, la duración y el audio. | DYNAMIC_COMBO | Sí | `"viduq3-pro"`<br>`"viduq3-turbo"` |
+| `model` | Modelo a utilizar para la generación de video. Seleccionar un modelo muestra parámetros de configuración adicionales para relación de aspecto, resolución, duración y audio. | DYNAMIC_COMBO | Sí | `"viduq3-pro"`<br>`"viduq3-turbo"` |
 | `prompt` | Una descripción textual para la generación de video, con una longitud máxima de 2000 caracteres. | STRING | Sí | N/A |
-| `semilla` | Un valor semilla para controlar la aleatoriedad de la generación (por defecto: 1). | INT | Sí | 0 a 2147483647 |
+| `seed` | Un valor semilla para controlar la aleatoriedad de la generación (predeterminado: 1). | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de viduq3-pro y viduq3-turbo
 
 Los siguientes parámetros de configuración son compartidos por los modelos `viduq3-pro` y `viduq3-turbo`.
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `relación_de_aspecto` | La relación de aspecto del video de salida. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
-| `resolución` | Resolución del video de salida. | COMBO | Sí | `"720p"`<br>`"1080p"` |
-| `duración` | Duración del video de salida en segundos (por defecto: 5). | INT | Sí | 1 a 16 |
-| `audio` | Cuando está habilitado, produce video con sonido (incluyendo diálogos y efectos de sonido) (por defecto: False). | BOOLEAN | Sí | True/False |
+| `model.aspect_ratio` | La relación de aspecto del video de salida. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
+| `model.resolution` | Resolución del video de salida. | COMBO | Sí | `"720p"`<br>`"1080p"` |
+| `model.duration` | Duración del video de salida en segundos (predeterminado: 5). | INT | Sí | 1 a 16 |
+| `model.audio` | Cuando está habilitado, genera video con sonido (incluyendo diálogo y efectos de sonido) (predeterminado: False). | BOOLEAN | Sí | True/False |
 
 **Nota:** Los parámetros `aspect_ratio`, `resolution`, `duration` y `audio` son obligatorios una vez que se selecciona un `model`, ya que forman parte de su configuración. El `prompt` no debe estar vacío y no puede superar los 2000 caracteres.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
 | `video` | El archivo de video generado. | VIDEO |
 

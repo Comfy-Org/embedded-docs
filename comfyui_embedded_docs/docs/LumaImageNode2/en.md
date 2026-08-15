@@ -10,8 +10,8 @@ This node generates images from text descriptions using the Luma UNI-1 model. It
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `prompt` | Text description of the desired image. 1–6000 characters. | STRING | Yes | 1 to 6000 characters |
 | `model` | Model to use for generation. Selecting a model reveals additional settings for that model. | DYNAMIC_COMBO | Yes | `"uni-1"`<br>`"uni-1-max"` |
+| `prompt` | Text description of the desired image. 1–6000 characters. | STRING | Yes | 1 to 6000 characters |
 | `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed. (default: 0) | INT | Yes | 0 to 2147483647 |
 
 ### uni-1 and uni-1-max Inputs

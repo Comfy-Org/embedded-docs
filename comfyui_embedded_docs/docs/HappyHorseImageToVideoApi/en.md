@@ -20,7 +20,7 @@ Both model versions share the same set of parameters.
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `model.prompt` | Prompt describing the elements and visual features. Supports English and Chinese. (default: "") | STRING | No | N/A |
-| `model.resolution` | The output video resolution. (default: "720P") | COMBO | Yes | `"720P"`<br>`"1080P"` |
+| `model.resolution` | The output video resolution. (default: `"720P"`) | COMBO | Yes | `"720P"`<br>`"1080P"` |
 | `model.duration` | The duration of the generated video in seconds. (default: 5) | INT | Yes | 3 to 15 |
 
 Note: The `first_frame` image must be at least 300x300 pixels, and its aspect ratio must be between 1:2.5 and 2.5:1.

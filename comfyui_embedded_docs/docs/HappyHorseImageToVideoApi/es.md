@@ -1,29 +1,29 @@
 # HappyHorse Imagen a Video
 
-Este nodo genera un video corto a partir de una única imagen inicial utilizando el modelo HappyHorse. Proporcionas una imagen de primer fotograma y un prompt de texto que describe el movimiento y la escena deseados, y el nodo crea un video que continúa a partir de esa imagen.
+Este nodo genera un video corto a partir de una única imagen inicial utilizando el modelo HappyHorse. Se proporciona una imagen de primer fotograma y un prompt de texto que describe el movimiento y la escena deseados, y el nodo crea un video que continúa a partir de esa imagen.
 
 ## Entradas
 
 ### Entradas comunes
 
-| Parámetro | Descripción | Tipo de datos | ¿Requerido? | Rango |
-|-----------|-------------|---------------|-------------|-------|
-| `modelo` | El modelo HappyHorse que se usará para la generación del video. | DYNAMIC_COMBO | Sí | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
-| `primer fotograma` | Imagen del primer fotograma. La relación de aspecto de la salida se deriva de esta imagen. | IMAGE | Sí | N/D |
-| `semilla` | Semilla a usar para la generación. (por defecto: 0) | INT | No | 0 a 2147483647 |
-| `marca de agua` | Si se debe añadir una marca de agua generada por IA al resultado. (opción avanzada; por defecto: False) | BOOLEAN | No | True / False |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `model` | El modelo HappyHorse que se utilizará para la generación de video. | DYNAMIC_COMBO | Sí | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
+| `first_frame` | Imagen del primer fotograma. La relación de aspecto de la salida se deriva de esta imagen. | IMAGE | Sí | 300×300 px mín.; 1:2.5 a 2.5:1 |
+| `seed` | Semilla para usar en la generación. (por defecto: 0) | INT | No | 0 a 2147483647 |
+| `watermark` | Si se debe agregar una marca de agua generada por IA al resultado. (opción avanzada; por defecto: False) | BOOLEAN | No | True / False |
 
 ### Entradas de happyhorse-1.1-i2v y happyhorse-1.0-i2v
 
 Ambas versiones del modelo comparten el mismo conjunto de parámetros.
 
-| Parámetro | Descripción | Tipo de datos | ¿Requerido? | Rango |
-|-----------|-------------|---------------|-------------|-------|
-| `prompt` | Prompt que describe los elementos y las características visuales. Admite inglés y chino. (por defecto: "") | STRING | No | N/D |
-| `resolución` | La resolución del video de salida. (por defecto: "720P") | COMBO | Sí | `"720P"`<br>`"1080P"` |
-| `duración` | La duración del video generado, en segundos. (por defecto: 5) | INT | Sí | 3 a 15 |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `model.prompt` | Prompt que describe los elementos y las características visuales. Compatible con inglés y chino. (por defecto: "") | STRING | No | N/A |
+| `model.resolution` | La resolución del video de salida. (por defecto: `"720P"`) | COMBO | Sí | `"720P"`<br>`"1080P"` |
+| `model.duration` | La duración del video generado en segundos. (por defecto: 5) | INT | Sí | 3 a 15 |
 
-Nota: La imagen de `first_frame` debe tener al menos 300x300 píxeles, y su relación de aspecto debe estar entre 1:2.5 y 2.5:1.
+Nota: La imagen `first_frame` debe tener al menos 300x300 píxeles, y su relación de aspecto debe estar entre 1:2.5 y 2.5:1.
 
 ## Salidas
 

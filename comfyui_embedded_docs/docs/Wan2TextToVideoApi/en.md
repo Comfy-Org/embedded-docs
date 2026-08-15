@@ -13,8 +13,8 @@ The inputs include common settings and model-specific settings that appear when 
 | `model` | The specific model to use for video generation. | DYNAMIC_COMBO | Yes | `"wan2.7-t2v"` |
 | `audio` | Audio for driving video generation (e.g., lip sync, beat-matched motion). Duration: 1.5s-60s. If not provided, the model automatically generates matching background music or sound effects. | AUDIO | No | - |
 | `seed` | Seed to use for generation (default: 0). | INT | No | 0 to 2147483647 |
-| `prompt_extend` | Whether to enhance the prompt with AI assistance (default: True). | BOOLEAN | No True / False |
-| `watermark` | Whether to add an AI-generated watermark to the result (default: False). | BOOLEAN | No True / False |
+| `prompt_extend` | Whether to enhance the prompt with AI assistance (default: True). | BOOLEAN | No | True<br>False |
+| `watermark` | Whether to add an AI-generated watermark to the result (default: False). | BOOLEAN | No | True<br>False |
 
 ### wan2.7-t2v Inputs
 
