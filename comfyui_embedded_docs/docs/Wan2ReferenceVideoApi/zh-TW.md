@@ -16,11 +16,11 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | 描述影片的提示。使用「character1」和「character2」等識別符來引用參考角色。必須至少包含一個角色。 | STRING | 是 | - |
-| `model.negative_prompt` | 描述應避免內容的負面提示（預設值：空）。 | STRING | 否 | - |
-| `model.resolution` | 輸出影片的解析度。 | COMBO | 是 | "720P"<br>"1080P" |
-| `model.ratio` | 輸出影片的長寬比。 | COMBO | 是 | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
-| `model.duration` | 生成的影片長度（秒）（預設值：5）。 | INT | 是 | 2 到 10 |
+| `prompt` | 描述影片的提示。使用「character1」和「character2」等識別符來引用參考角色。必須至少包含一個角色。 | STRING | 是 | - |
+| `negative_prompt` | 描述應避免內容的負面提示（預設值：空）。 | STRING | 否 | - |
+| `resolution` | 輸出影片的解析度。 | COMBO | 是 | "720P"<br>"1080P" |
+| `ratio` | 輸出影片的長寬比。 | COMBO | 是 | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+| `duration` | 生成的影片長度（秒）（預設值：5）。 | INT | 是 | 2 到 10 |
 
 ### 參考輸入
 

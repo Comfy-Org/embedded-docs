@@ -8,7 +8,7 @@ Bu düğüm, sağlanan referans materyallerine dayalı olarak bir kişiyi veya n
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Video üretimi için kullanılacak belirli model. | COMBO | Evet | "wan2.7-r2v" |
+| `model` | Video üretimi için kullanılacak belirli model. | DYNAMIC_COMBO | Evet | "wan2.7-r2v" |
 | `seed` | Üretim için kullanılan ve çıktının rastgeleliğini kontrol etmeye yardımcı olan tohum (varsayılan: 0). | INT | Hayır | 0 ile 2147483647 arası |
 | `watermark` | Sonuca yapay zeka tarafından üretilmiş bir filigran eklenip eklenmeyeceği (varsayılan: False). Bu gelişmiş bir ayardır. | BOOLEAN | Hayır | True<br>False |
 
@@ -16,11 +16,11 @@ Bu düğüm, sağlanan referans materyallerine dayalı olarak bir kişiyi veya n
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Videoyu tanımlayan istem. Referans karakterlere atıfta bulunmak için 'character1' ve 'character2' gibi tanımlayıcılar kullanın. En az bir karakter içermelidir. | STRING | Evet | - |
-| `model.negative_prompt` | Kaçınılması gerekenleri tanımlayan negatif istem (varsayılan: boş). | STRING | Hayır | - |
-| `model.resolution` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | "720P"<br>"1080P" |
-| `model.ratio` | Çıktı videosunun en-boy oranı. | COMBO | Evet | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
-| `model.duration` | Üretilen videonun saniye cinsinden uzunluğu (varsayılan: 5). | INT | Evet | 2 ile 10 arası |
+| `istek` | Videoyu tanımlayan istem. Referans karakterlere atıfta bulunmak için 'character1' ve 'character2' gibi tanımlayıcılar kullanın. En az bir karakter içermelidir. | STRING | Evet | - |
+| `negatif_istek` | Kaçınılması gerekenleri tanımlayan negatif istem (varsayılan: boş). | STRING | Hayır | - |
+| `çözünürlük` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | "720P"<br>"1080P" |
+| `oran` | Çıktı videosunun en-boy oranı. | COMBO | Evet | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+| `süre` | Üretilen videonun saniye cinsinden uzunluğu (varsayılan: 5). | INT | Evet | 2 ile 10 arası |
 
 ### Referans Girdileri
 

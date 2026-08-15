@@ -8,19 +8,19 @@ Ce nœud génère une vidéo mettant en scène une personne ou un objet à parti
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle spécifique à utiliser pour la génération vidéo. | COMBO | Oui | "wan2.7-r2v" |
-| `seed` | Graine à utiliser pour la génération, qui permet de contrôler le caractère aléatoire de la sortie (défaut : 0). | INT | Non | 0 à 2147483647 |
-| `watermark` | Indique s'il faut ajouter un filigrane généré par IA au résultat (défaut : False). Il s'agit d'un paramètre avancé. | BOOLEAN | Non | True<br>False |
+| `modèle` | Le modèle spécifique à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | "wan2.7-r2v" |
+| `graine` | Graine à utiliser pour la génération, qui permet de contrôler le caractère aléatoire de la sortie (défaut : 0). | INT | Non | 0 à 2147483647 |
+| `filigrane` | Indique s'il faut ajouter un filigrane généré par IA au résultat (défaut : False). Il s'agit d'un paramètre avancé. | BOOLEAN | Non | True<br>False |
 
 ### Entrées wan2.7-r2v
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Invite décrivant la vidéo. Utilisez des identifiants tels que 'character1' et 'character2' pour faire référence aux personnages de référence. Doit contenir au moins un personnage. | STRING | Oui | - |
-| `model.negative_prompt` | Invite négative décrivant ce qu'il faut éviter (défaut : vide). | STRING | Non | - |
-| `model.resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | "720P"<br>"1080P" |
-| `model.ratio` | Le rapport hauteur/largeur de la vidéo de sortie. | COMBO | Oui | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
-| `model.duration` | La durée de la vidéo générée en secondes (défaut : 5). | INT | Oui | 2 à 10 |
+| `prompt` | Invite décrivant la vidéo. Utilisez des identifiants tels que 'character1' et 'character2' pour faire référence aux personnages de référence. Doit contenir au moins un personnage. | STRING | Oui | - |
+| `prompt négatif` | Invite négative décrivant ce qu'il faut éviter (défaut : vide). | STRING | Non | - |
+| `résolution` | La résolution de la vidéo de sortie. | COMBO | Oui | "720P"<br>"1080P" |
+| `ratio` | Le rapport hauteur/largeur de la vidéo de sortie. | COMBO | Oui | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+| `durée` | La durée de la vidéo générée en secondes (défaut : 5). | INT | Oui | 2 à 10 |
 
 ### Entrées de référence
 

@@ -19,9 +19,9 @@ Ambas as versões do modelo compartilham o mesmo conjunto de parâmetros.
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model.prompt` | Prompt que descreve os elementos e as características visuais. Suporta inglês e chinês. (padrão: "") | STRING | Não | N/A |
-| `model.resolution` | A resolução do vídeo de saída. (padrão: "720P") | COMBO | Sim | `"720P"`<br>`"1080P"` |
-| `model.duration` | A duração do vídeo gerado em segundos. (padrão: 5) | INT | Sim | 3 a 15 |
+| `prompt` | Prompt que descreve os elementos e as características visuais. Suporta inglês e chinês. (padrão: "") | STRING | Não | N/A |
+| `resolution` | A resolução do vídeo de saída. (padrão: "720P") | COMBO | Sim | `"720P"`<br>`"1080P"` |
+| `duration` | A duração do vídeo gerado em segundos. (padrão: 5) | INT | Sim | 3 a 15 |
 
 Nota: a imagem `first_frame` deve ter pelo menos 300x300 pixels, e sua proporção de aspecto deve estar entre 1:2.5 e 2.5:1.
 

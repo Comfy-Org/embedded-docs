@@ -8,7 +8,7 @@ The Wan 2.7 Image to Video node generates a video starting from a first-frame im
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `model` | The AI model to use for video generation. | COMBO | Yes | `"wan2.7-i2v"` |
+| `model` | The AI model to use for video generation. | DYNAMIC_COMBO | Yes | `"wan2.7-i2v"` |
 | `first_frame` | First frame image. The output aspect ratio is derived from this image. | IMAGE | Yes | - |
 | `last_frame` | Last frame image. The model generates a video transitioning from first to last frame. | IMAGE | No | - |
 | `audio` | Audio for driving video generation (e.g., lip sync, beat-matched motion). Duration: 2s-30s. If not provided, the model automatically generates matching background music or sound effects. | AUDIO | No | - |

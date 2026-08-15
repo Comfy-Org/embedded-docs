@@ -8,27 +8,27 @@ Génère une vidéo à partir d'un prompt textuel en utilisant le modèle HappyH
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Le modèle HappyHorse utilisé pour la génération, ainsi que ses sous-paramètres. La sélection d'un modèle détermine les sous-paramètres disponibles (voir les sections des modèles ci-dessous). | DICT | Oui | "happyhorse-1.1-t2v"<br>"happyhorse-1.0-t2v" |
-| `seed` | Seed à utiliser pour la génération. L'utilisation de la même seed avec les mêmes entrées produira le même résultat. (par défaut : 0). | INT | Oui | 0 à 2147483647 |
-| `watermark` | Indique s'il faut ajouter un filigrane généré par l'IA au résultat. (par défaut : False). | BOOLEAN | Non | True / False |
+| `modèle` | Le modèle HappyHorse utilisé pour la génération, ainsi que ses sous-paramètres. La sélection d'un modèle détermine les sous-paramètres disponibles (voir les sections des modèles ci-dessous). | DICT | Oui | "happyhorse-1.1-t2v"<br>"happyhorse-1.0-t2v" |
+| `graine` | Seed à utiliser pour la génération. L'utilisation de la même seed avec les mêmes entrées produira le même résultat. (par défaut : 0). | INT | Oui | 0 à 2147483647 |
+| `filigrane` | Indique s'il faut ajouter un filigrane généré par l'IA au résultat. (par défaut : False). | BOOLEAN | Non | True / False |
 
 ### Entrées de happyhorse-1.1-t2v
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------|----------|-------|
-| `model.prompt` | Prompt décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois. (par défaut : ""). | STRING | Oui | - |
-| `model.resolution` | La résolution de la vidéo de sortie. | STRING | Oui | "720P"<br>"1080P" |
-| `model.ratio` | Le rapport hauteur/largeur de la vidéo de sortie. | STRING | Oui | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4"<br>"21:9"<br>"9:21"<br>"5:4"<br>"4:5" |
-| `model.duration` | La durée de la vidéo en secondes. (par défaut : 5, min : 3, max : 15, pas : 1). | INT | Oui | 3 à 15 |
+| `invite` | Prompt décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois. (par défaut : ""). | STRING | Oui | - |
+| `résolution` | La résolution de la vidéo de sortie. | STRING | Oui | "720P"<br>"1080P" |
+| `ratio` | Le rapport hauteur/largeur de la vidéo de sortie. | STRING | Oui | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4"<br>"21:9"<br>"9:21"<br>"5:4"<br>"4:5" |
+| `durée` | La durée de la vidéo en secondes. (par défaut : 5, min : 3, max : 15, pas : 1). | INT | Oui | 3 à 15 |
 
 ### Entrées de happyhorse-1.0-t2v
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------|----------|-------|
-| `model.prompt` | Prompt décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois. (par défaut : ""). | STRING | Oui | - |
-| `model.resolution` | La résolution de la vidéo de sortie. | STRING | Oui | "720P"<br>"1080P" |
-| `model.ratio` | Le rapport hauteur/largeur de la vidéo de sortie. | STRING | Oui | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
-| `model.duration` | La durée de la vidéo en secondes. (par défaut : 5, min : 3, max : 15, pas : 1). | INT | Oui | 3 à 15 |
+| `invite` | Prompt décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois. (par défaut : ""). | STRING | Oui | - |
+| `résolution` | La résolution de la vidéo de sortie. | STRING | Oui | "720P"<br>"1080P" |
+| `ratio` | Le rapport hauteur/largeur de la vidéo de sortie. | STRING | Oui | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+| `durée` | La durée de la vidéo en secondes. (par défaut : 5, min : 3, max : 15, pas : 1). | INT | Oui | 3 à 15 |
 
 Remarque : le prompt ne doit pas être vide ; une erreur est levée si aucun prompt n'est fourni. Les deux modèles prennent en charge des durées vidéo de 3 à 15 secondes. Le modèle `happyhorse-1.1-t2v` offre des rapports hauteur/largeur supplémentaires (`21:9`, `9:21`, `5:4`, `4:5`) qui ne sont pas disponibles avec `happyhorse-1.0-t2v`.
 

@@ -8,10 +8,10 @@ Modifiez une vidéo à l'aide d'instructions textuelles ou d'images de référen
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle de montage vidéo HappyHorse à utiliser. Cette sélection détermine les options de prompt, de résolution, de ratio et d'images de référence disponibles. | DICT | Oui | "happyhorse-1.0-video-edit" |
-| `video` | La vidéo à modifier. | VIDEO | Oui | 3 à 60 secondes |
-| `seed` | Graine (seed) à utiliser pour la génération (par défaut : 0). | INT | Oui | 0 à 2147483647 |
-| `watermark` | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : False). | BOOLEAN | Non | True<br>False |
+| `modèle` | Le modèle de montage vidéo HappyHorse à utiliser. Cette sélection détermine les options de prompt, de résolution, de ratio et d'images de référence disponibles. | DICT | Oui | "happyhorse-1.0-video-edit" |
+| `vidéo` | La vidéo à modifier. | VIDEO | Oui | 3 à 60 secondes |
+| `graine` | Graine (seed) à utiliser pour la génération (par défaut : 0). | INT | Oui | 0 à 2147483647 |
+| `filigrane` | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : False). | BOOLEAN | Non | True<br>False |
 
 ### happyhorse-1.0-video-edit Entrées
 

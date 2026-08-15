@@ -8,10 +8,10 @@ Edita un video usando instrucciones de texto o imágenes de referencia con el mo
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | El modelo de edición de video HappyHorse a utilizar. Esta selección determina qué opciones de prompt, resolución, proporción e imagen de referencia están disponibles. | DICT | Sí | "happyhorse-1.0-video-edit" |
+| `modelo` | El modelo de edición de video HappyHorse a utilizar. Esta selección determina qué opciones de prompt, resolución, proporción e imagen de referencia están disponibles. | DICT | Sí | "happyhorse-1.0-video-edit" |
 | `video` | El video a editar. | VIDEO | Sí | 3 a 60 segundos |
-| `seed` | Semilla a utilizar para la generación (por defecto: 0). | INT | Sí | 0 a 2147483647 |
-| `watermark` | Si se debe añadir una marca de agua generada por IA al resultado (por defecto: False). | BOOLEAN | No | True<br>False |
+| `semilla` | Semilla a utilizar para la generación (por defecto: 0). | INT | Sí | 0 a 2147483647 |
+| `marca de agua` | Si se debe añadir una marca de agua generada por IA al resultado (por defecto: False). | BOOLEAN | No | True<br>False |
 
 ### happyhorse-1.0-video-edit Entradas
 

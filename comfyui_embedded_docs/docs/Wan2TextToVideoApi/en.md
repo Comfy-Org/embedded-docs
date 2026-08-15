@@ -10,7 +10,7 @@ The inputs include common settings and model-specific settings that appear when 
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The specific model to use for video generation. | COMBO | Yes | `"wan2.7-t2v"` |
+| `model` | The specific model to use for video generation. | DYNAMIC_COMBO | Yes | `"wan2.7-t2v"` |
 | `audio` | Audio for driving video generation (e.g., lip sync, beat-matched motion). Duration: 1.5s-60s. If not provided, the model automatically generates matching background music or sound effects. | AUDIO | No | - |
 | `seed` | Seed to use for generation (default: 0). | INT | No | 0 to 2147483647 |
 | `prompt_extend` | Whether to enhance the prompt with AI assistance (default: True). | BOOLEAN | No True / False |

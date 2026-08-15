@@ -8,21 +8,21 @@ Le nœud Wan 2.7 Video Continuation génère un nouveau segment vidéo qui conti
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle de génération vidéo à utiliser. | COMBO | Oui | `"wan2.7-i2v"` |
-| `first_clip` | Vidéo d'entrée à partir de laquelle continuer. Durée : 2s-10s. Le rapport hauteur/largeur de sortie est dérivé de cette vidéo. | VIDEO | Oui | 2s à 10s |
-| `last_frame` | Image de la dernière frame. La continuation effectuera une transition vers cette image. | IMAGE | Non | - |
-| `seed` | Seed à utiliser pour la génération. (défaut : 0) | INT | Oui | 0 à 2147483647 |
-| `prompt_extend` | Indique s'il faut améliorer le prompt avec l'assistance de l'IA. (défaut : True) | BOOLEAN | Oui | - |
-| `watermark` | Indique s'il faut ajouter un filigrane généré par l'IA au résultat. (défaut : False) | BOOLEAN | Oui | - |
+| `modèle` | Le modèle de génération vidéo à utiliser. | DYNAMIC_COMBO | Oui | `"wan2.7-i2v"` |
+| `premier clip` | Vidéo d'entrée à partir de laquelle continuer. Durée : 2s-10s. Le rapport hauteur/largeur de sortie est dérivé de cette vidéo. | VIDEO | Oui | 2s à 10s |
+| `dernière image` | Image de la dernière frame. La continuation effectuera une transition vers cette image. | IMAGE | Non | - |
+| `graine` | Seed à utiliser pour la génération. (défaut : 0) | INT | Oui | 0 à 2147483647 |
+| `extension d'invite` | Indique s'il faut améliorer le prompt avec l'assistance de l'IA. (défaut : True) | BOOLEAN | Oui | - |
+| `filigrane` | Indique s'il faut ajouter un filigrane généré par l'IA au résultat. (défaut : False) | BOOLEAN | Oui | - |
 
 ### Entrées wan2.7-i2v
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model.prompt` | Prompt décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois. (défaut : chaîne vide) | STRING | Oui | - |
-| `model.negative_prompt` | Prompt négatif décrivant ce qu'il faut éviter. (défaut : chaîne vide) | STRING | Oui | - |
-| `model.resolution` | La résolution pour la vidéo de sortie. | COMBO | Oui | `"720P"`<br>`"1080P"` |
-| `model.duration` | Durée totale de sortie en secondes. Le modèle génère une continuation pour remplir le temps restant après le clip d'entrée. (défaut : 5) | INT | Oui | 2 à 15 |
+| `invite` | Prompt décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois. (défaut : chaîne vide) | STRING | Oui | - |
+| `invite négative` | Prompt négatif décrivant ce qu'il faut éviter. (défaut : chaîne vide) | STRING | Oui | - |
+| `résolution` | La résolution pour la vidéo de sortie. | COMBO | Oui | `"720P"`<br>`"1080P"` |
+| `durée` | Durée totale de sortie en secondes. Le modèle génère une continuation pour remplir le temps restant après le clip d'entrée. (défaut : 5) | INT | Oui | 2 à 15 |
 
 **Remarque :** La vidéo d'entrée `first_clip` doit avoir une durée comprise entre 2 et 10 secondes.
 

@@ -8,10 +8,10 @@ Bu düğüm, HappyHorse modelini kullanarak tek bir başlangıç görüntüsünd
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Video oluşturma için kullanılacak HappyHorse modeli. | COMBO | Evet | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
-| `first_frame` | İlk kare görüntüsü. Çıktı en-boy oranı bu görüntüden türetilir. | IMAGE | Evet | min. 300×300 piksel; oran 1:2.5 ile 2.5:1 arası |
-| `seed` | Üretim için kullanılacak tohum. (varsayılan: 0) | INT | Hayır | 0 ile 2147483647 |
-| `watermark` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği. (gelişmiş seçenek; varsayılan: False) | BOOLEAN | Hayır | True / False |
+| `model` | Video oluşturma için kullanılacak HappyHorse modeli. | DYNAMIC_COMBO | Evet | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
+| `ilk_kare` | İlk kare görüntüsü. Çıktı en-boy oranı bu görüntüden türetilir. | IMAGE | Evet | min. 300×300 piksel; oran 1:2.5 ile 2.5:1 arası |
+| `tohum` | Üretim için kullanılacak tohum. (varsayılan: 0) | INT | Hayır | 0 ile 2147483647 |
+| `filigran` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği. (gelişmiş seçenek; varsayılan: False) | BOOLEAN | Hayır | True / False |
 
 ### happyhorse-1.1-i2v ve happyhorse-1.0-i2v Girdileri
 
@@ -19,9 +19,9 @@ Her iki model sürümü de aynı parametre kümesini paylaşır.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model.prompt` | Öğeleri ve görsel özellikleri tanımlayan istem. İngilizce ve Çince destekler. (varsayılan: "") | STRING | Hayır | N/A |
-| `model.resolution` | Çıktı video çözünürlüğü. (varsayılan: "720P") | COMBO | Evet | `"720P"`<br>`"1080P"` |
-| `model.duration` | Oluşturulan videonun saniye cinsinden süresi. (varsayılan: 5) | INT | Evet | 3 ile 15 |
+| `istem` | Öğeleri ve görsel özellikleri tanımlayan istem. İngilizce ve Çince destekler. (varsayılan: "") | STRING | Hayır | N/A |
+| `çözünürlük` | Çıktı video çözünürlüğü. (varsayılan: "720P") | COMBO | Evet | `"720P"`<br>`"1080P"` |
+| `süre` | Oluşturulan videonun saniye cinsinden süresi. (varsayılan: 5) | INT | Evet | 3 ile 15 |
 
 Not: `first_frame` görüntüsü en az 300x300 piksel olmalı ve en-boy oranı 1:2.5 ile 2.5:1 arasında olmalıdır.
 

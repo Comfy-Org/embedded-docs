@@ -8,11 +8,11 @@ O nó Wan2VideoEditApi usa o modelo Wan 2.7 para editar um vídeo com base em in
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo a ser usado para edição de vídeo. | COMBO | Sim | `"wan2.7-videoedit"` |
-| `video` | O vídeo a ser editado. | VIDEO | Sim | - |
-| `seed` | Semente a ser usada para a geração. (padrão: 0) | INT | Não | 0 a 2147483647 |
-| `audio_setting` | 'auto': o modelo decide se deve regenerar o áudio com base no prompt. 'origin': preserva o áudio original do vídeo de entrada. (padrão: "auto") | COMBO | Não | `"auto"`<br>`"origin"` |
-| `watermark` | Se deve adicionar uma marca d'água gerada por IA ao resultado. (padrão: False) | BOOLEAN | Não | - |
+| `modelo` | O modelo a ser usado para edição de vídeo. | DYNAMIC_COMBO | Sim | `"wan2.7-videoedit"` |
+| `vídeo` | O vídeo a ser editado. | VIDEO | Sim | - |
+| `semente` | Semente a ser usada para a geração. (padrão: 0) | INT | Não | 0 a 2147483647 |
+| `configuração_de_áudio` | 'auto': o modelo decide se deve regenerar o áudio com base no prompt. 'origin': preserva o áudio original do vídeo de entrada. (padrão: "auto") | COMBO | Não | `"auto"`<br>`"origin"` |
+| `marca_d'água` | Se deve adicionar uma marca d'água gerada por IA ao resultado. (padrão: False) | BOOLEAN | Não | - |
 
 ### Entradas do wan2.7-videoedit
 

@@ -20,10 +20,10 @@ Wan 2.7 Image to Video 節點會從首幀圖像開始生成影片。您可以選
 
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | 描述元素與視覺特徵的提示詞。支援英文和中文。 | STRING | 是 | - |
-| `model.negative_prompt` | 描述應避免事項的負面提示詞。 | STRING | 是 | - |
-| `model.resolution` | 輸出影片的解析度。 | COMBO | 是 | `"720P"`<br>`"1080P"` |
-| `model.duration` | 生成影片的長度（秒）（預設值：5）。 | INT | 是 | 2 至 15 |
+| `prompt` | 描述元素與視覺特徵的提示詞。支援英文和中文。 | STRING | 是 | - |
+| `negative_prompt` | 描述應避免事項的負面提示詞。 | STRING | 是 | - |
+| `resolution` | 輸出影片的解析度。 | COMBO | 是 | `"720P"`<br>`"1080P"` |
+| `duration` | 生成影片的長度（秒）（預設值：5）。 | INT | 是 | 2 至 15 |
 
 **注意：** `audio` 輸入具有持續時間限制。若提供，音訊檔案必須介於 2 到 30 秒之間。
 

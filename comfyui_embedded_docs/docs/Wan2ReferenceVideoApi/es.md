@@ -8,19 +8,19 @@ Este nodo genera un video de una persona u objeto basado en los materiales de re
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo específico a utilizar para la generación de video. | COMBO | Sí | "wan2.7-r2v" |
-| `seed` | Semilla a utilizar para la generación, que ayuda a controlar la aleatoriedad de la salida (predeterminado: 0). | INT | No | 0 a 2147483647 |
-| `watermark` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False). Esta es una configuración avanzada. | BOOLEAN | No | True<br>False |
+| `modelo` | El modelo específico a utilizar para la generación de video. | DYNAMIC_COMBO | Sí | "wan2.7-r2v" |
+| `semilla` | Semilla a utilizar para la generación, que ayuda a controlar la aleatoriedad de la salida (predeterminado: 0). | INT | No | 0 a 2147483647 |
+| `marca_de_agua` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False). Esta es una configuración avanzada. | BOOLEAN | No | True<br>False |
 
 ### Entradas de wan2.7-r2v
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Instrucción que describe el video. Use identificadores como 'character1' y 'character2' para referirse a los personajes de referencia. Debe contener al menos un personaje. | STRING | Sí | - |
-| `model.negative_prompt` | Instrucción negativa que describe qué evitar (predeterminado: vacío). | STRING | No | - |
-| `model.resolution` | La resolución del video de salida. | COMBO | Sí | "720P"<br>"1080P" |
-| `model.ratio` | La relación de aspecto del video de salida. | COMBO | Sí | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
-| `model.duration` | La duración del video generado en segundos (predeterminado: 5). | INT | Sí | 2 a 10 |
+| `prompt` | Instrucción que describe el video. Use identificadores como 'character1' y 'character2' para referirse a los personajes de referencia. Debe contener al menos un personaje. | STRING | Sí | - |
+| `prompt_negativo` | Instrucción negativa que describe qué evitar (predeterminado: vacío). | STRING | No | - |
+| `resolución` | La resolución del video de salida. | COMBO | Sí | "720P"<br>"1080P" |
+| `relación` | La relación de aspecto del video de salida. | COMBO | Sí | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+| `duración` | La duración del video generado en segundos (predeterminado: 5). | INT | Sí | 2 a 10 |
 
 ### Entradas de referencia
 

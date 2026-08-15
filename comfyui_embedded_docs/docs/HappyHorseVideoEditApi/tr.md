@@ -10,8 +10,8 @@ HappyHorse modeliyle metin talimatlarını veya referans görsellerini kullanara
 |-----------|-------------|-----------|----------|-------|
 | `model` | Kullanılacak HappyHorse video düzenleme modeli. Bu seçim, hangi prompt, çözünürlük, oran ve referans görsel seçeneklerinin kullanılabilir olduğunu belirler. | DICT | Evet | "happyhorse-1.0-video-edit" |
 | `video` | Düzenlenecek video. | VIDEO | Evet | 3 ila 60 saniye |
-| `seed` | Üretim için kullanılacak seed (varsayılan: 0). | INT | Evet | 0 ila 2147483647 |
-| `watermark` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). | BOOLEAN | Hayır | True<br>False |
+| `tohum` | Üretim için kullanılacak seed (varsayılan: 0). | INT | Evet | 0 ila 2147483647 |
+| `filigran` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). | BOOLEAN | Hayır | True<br>False |
 
 ### happyhorse-1.0-video-edit Girdileri
 

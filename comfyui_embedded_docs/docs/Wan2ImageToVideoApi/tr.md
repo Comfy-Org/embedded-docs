@@ -8,7 +8,7 @@ Wan 2.7 Image to Video düğümü, ilk kare görüntüsünden başlayarak bir vi
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Video oluşturma için kullanılacak yapay zeka modeli. | COMBO | Evet | `"wan2.7-i2v"` |
+| `model` | Video oluşturma için kullanılacak yapay zeka modeli. | DYNAMIC_COMBO | Evet | `"wan2.7-i2v"` |
 | `first_frame` | İlk kare görüntüsü. Çıktı en-boy oranı bu görüntüden türetilir. | IMAGE | Evet | - |
 | `last_frame` | Son kare görüntüsü. Model, ilk kareden son kareye geçiş yapan bir video oluşturur. | IMAGE | Hayır | - |
 | `audio` | Video oluşturmayı yönlendiren ses (örn. dudak senkronizasyonu, ritim eşleşmeli hareket). Süre: 2s-30s. Sağlanmazsa, model otomatik olarak uygun arka plan müziği veya ses efektleri oluşturur. | AUDIO | Hayır | - |
@@ -20,10 +20,10 @@ Wan 2.7 Image to Video düğümü, ilk kare görüntüsünden başlayarak bir vi
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Öğeleri ve görsel özellikleri tanımlayan istem. İngilizce ve Çince destekler. | STRING | Evet | - |
-| `model.negative_prompt` | Kaçınılması gerekenleri tanımlayan negatif istem. | STRING | Evet | - |
-| `model.resolution` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | `"720P"`<br>`"1080P"` |
-| `model.duration` | Oluşturulan videonun saniye cinsinden uzunluğu (varsayılan: 5). | INT | Evet | 2 ile 15 arası |
+| `istek` | Öğeleri ve görsel özellikleri tanımlayan istem. İngilizce ve Çince destekler. | STRING | Evet | - |
+| `negatif_istek` | Kaçınılması gerekenleri tanımlayan negatif istem. | STRING | Evet | - |
+| `çözünürlük` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | `"720P"`<br>`"1080P"` |
+| `süre` | Oluşturulan videonun saniye cinsinden uzunluğu (varsayılan: 5). | INT | Evet | 2 ile 15 arası |
 
 **Not:** `audio` girdisinin süre sınırlaması vardır. Sağlanırsa, ses dosyası 2 ila 30 saniye arasında olmalıdır.
 

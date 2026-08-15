@@ -16,11 +16,11 @@
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | 描述视频的提示词。使用诸如“character1”和“character2”之类的标识符来引用参考角色。必须至少包含一个角色。 | STRING | 是 | - |
-| `model.negative_prompt` | 描述应避免内容的负面提示词（默认值：空）。 | STRING | 否 | - |
-| `model.resolution` | 输出视频的分辨率。 | COMBO | 是 | "720P"<br>"1080P" |
-| `model.ratio` | 输出视频的宽高比。 | COMBO | 是 | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
-| `model.duration` | 生成视频的时长（秒）（默认值：5）。 | INT | 是 | 2 到 10 |
+| `prompt` | 描述视频的提示词。使用诸如“character1”和“character2”之类的标识符来引用参考角色。必须至少包含一个角色。 | STRING | 是 | - |
+| `negative_prompt` | 描述应避免内容的负面提示词（默认值：空）。 | STRING | 否 | - |
+| `resolution` | 输出视频的分辨率。 | COMBO | 是 | "720P"<br>"1080P" |
+| `ratio` | 输出视频的宽高比。 | COMBO | 是 | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+| `duration` | 生成视频的时长（秒）（默认值：5）。 | INT | 是 | 2 到 10 |
 
 ### 参考输入
 

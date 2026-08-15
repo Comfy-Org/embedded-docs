@@ -8,10 +8,10 @@ Ce nœud génère une courte vidéo à partir d’une seule image de départ à 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle HappyHorse à utiliser pour la génération vidéo. | COMBO | Oui | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
-| `first_frame` | Image initiale. Le rapport hauteur/largeur de la sortie est dérivé de cette image. | IMAGE | Oui | min. 300×300 px; ratio 1:2.5 à 2.5:1 |
-| `seed` | Graine (seed) à utiliser pour la génération. (défaut : 0) | INT | Non | 0 à 2147483647 |
-| `watermark` | Indique s’il faut ajouter un filigrane généré par IA au résultat. (option avancée ; défaut : False) | BOOLEAN | Non | True / False |
+| `modèle` | Le modèle HappyHorse à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
+| `première image` | Image initiale. Le rapport hauteur/largeur de la sortie est dérivé de cette image. | IMAGE | Oui | min. 300×300 px; ratio 1:2.5 à 2.5:1 |
+| `graine` | Graine (seed) à utiliser pour la génération. (défaut : 0) | INT | Non | 0 à 2147483647 |
+| `filigrane` | Indique s’il faut ajouter un filigrane généré par IA au résultat. (option avancée ; défaut : False) | BOOLEAN | Non | True / False |
 
 ### Entrées happyhorse-1.1-i2v et happyhorse-1.0-i2v
 
@@ -19,9 +19,9 @@ Les deux versions du modèle partagent le même ensemble de paramètres.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model.prompt` | Prompt décrivant les éléments et les caractéristiques visuelles. Prend en charge l’anglais et le chinois. (défaut : "") | STRING | Non | N/A |
-| `model.resolution` | La résolution de la vidéo de sortie. (défaut : "720P") | COMBO | Oui | `"720P"`<br>`"1080P"` |
-| `model.duration` | La durée de la vidéo générée en secondes. (défaut : 5) | INT | Oui | 3 à 15 |
+| `invite` | Prompt décrivant les éléments et les caractéristiques visuelles. Prend en charge l’anglais et le chinois. (défaut : "") | STRING | Non | N/A |
+| `résolution` | La résolution de la vidéo de sortie. (défaut : "720P") | COMBO | Oui | `"720P"`<br>`"1080P"` |
+| `durée` | La durée de la vidéo générée en secondes. (défaut : 5) | INT | Oui | 3 à 15 |
 
 Note : l’image `first_frame` doit faire au moins 300x300 pixels, et son rapport hauteur/largeur doit être compris entre 1:2.5 et 2.5:1.
 

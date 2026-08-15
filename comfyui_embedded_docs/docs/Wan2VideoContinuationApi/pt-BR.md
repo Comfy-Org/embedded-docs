@@ -8,21 +8,21 @@ O nó Wan 2.7 Video Continuation gera um novo segmento de vídeo que continua a 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo de geração de vídeo a ser usado. | COMBO | Sim | `"wan2.7-i2v"` |
-| `first_clip` | Vídeo de entrada a partir do qual continuar. Duração: 2s–10s. A proporção de aspecto da saída é derivada deste vídeo. | VIDEO | Sim | 2 a 10 s |
-| `last_frame` | Imagem do último quadro. A continuação fará a transição em direção a este quadro. | IMAGE | Não | - |
-| `seed` | Semente a ser usada para geração. (padrão: 0) | INT | Sim | 0 a 2147483647 |
-| `prompt_extend` | Se deve aprimorar o prompt com assistência de IA. (padrão: True) | BOOLEAN | Sim | - |
-| `watermark` | Se deve adicionar uma marca d'água gerada por IA ao resultado. (padrão: False) | BOOLEAN | Sim | - |
+| `modelo` | O modelo de geração de vídeo a ser usado. | DYNAMIC_COMBO | Sim | `"wan2.7-i2v"` |
+| `primeiro_clip` | Vídeo de entrada a partir do qual continuar. Duração: 2s–10s. A proporção de aspecto da saída é derivada deste vídeo. | VIDEO | Sim | 2 a 10 s |
+| `último_quadro` | Imagem do último quadro. A continuação fará a transição em direção a este quadro. | IMAGE | Não | - |
+| `semente` | Semente a ser usada para geração. (padrão: 0) | INT | Sim | 0 a 2147483647 |
+| `estender_prompt` | Se deve aprimorar o prompt com assistência de IA. (padrão: True) | BOOLEAN | Sim | - |
+| `marca_d'água` | Se deve adicionar uma marca d'água gerada por IA ao resultado. (padrão: False) | BOOLEAN | Sim | - |
 
 ### Entradas wan2.7-i2v
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `model.prompt` | Prompt que descreve os elementos e recursos visuais. Suporta inglês e chinês. (padrão: string vazia) | STRING | Sim | - |
-| `model.negative_prompt` | Prompt negativo que descreve o que evitar. (padrão: string vazia) | STRING | Sim | - |
-| `model.resolution` | A resolução para o vídeo de saída. | COMBO | Sim | `"720P"`<br>`"1080P"` |
-| `model.duration` | Duração total da saída em segundos. O modelo gera continuação para preencher o tempo restante após o clipe de entrada. (padrão: 5) | INT | Sim | 2 a 15 |
+| `prompt` | Prompt que descreve os elementos e recursos visuais. Suporta inglês e chinês. (padrão: string vazia) | STRING | Sim | - |
+| `prompt_negativo` | Prompt negativo que descreve o que evitar. (padrão: string vazia) | STRING | Sim | - |
+| `resolução` | A resolução para o vídeo de saída. | COMBO | Sim | `"720P"`<br>`"1080P"` |
+| `duração` | Duração total da saída em segundos. O modelo gera continuação para preencher o tempo restante após o clipe de entrada. (padrão: 5) | INT | Sim | 2 a 15 |
 
 **Nota:** O vídeo de entrada `first_clip` deve ter entre 2 e 10 segundos de duração.
 

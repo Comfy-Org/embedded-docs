@@ -16,11 +16,11 @@ Este nó gera um vídeo apresentando uma pessoa ou objeto com base nos materiais
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Prompt descrevendo o vídeo. Use identificadores como 'character1' e 'character2' para se referir aos personagens de referência. Deve conter pelo menos um personagem. | STRING | Sim | - |
-| `model.negative_prompt` | Prompt negativo descrevendo o que evitar (padrão: vazio). | STRING | Não | - |
-| `model.resolution` | A resolução do vídeo de saída. | COMBO | Sim | "720P"<br>"1080P" |
-| `model.ratio` | A proporção de aspecto do vídeo de saída. | COMBO | Sim | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
-| `model.duration` | A duração do vídeo gerado em segundos (padrão: 5). | INT | Sim | 2 a 10 |
+| `prompt` | Prompt descrevendo o vídeo. Use identificadores como 'character1' e 'character2' para se referir aos personagens de referência. Deve conter pelo menos um personagem. | STRING | Sim | - |
+| `negative_prompt` | Prompt negativo descrevendo o que evitar (padrão: vazio). | STRING | Não | - |
+| `resolution` | A resolução do vídeo de saída. | COMBO | Sim | "720P"<br>"1080P" |
+| `ratio` | A proporção de aspecto do vídeo de saída. | COMBO | Sim | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+| `duration` | A duração do vídeo gerado em segundos (padrão: 5). | INT | Sim | 2 a 10 |
 
 ### Entradas de Referência
 

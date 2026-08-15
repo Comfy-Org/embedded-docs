@@ -8,7 +8,7 @@ This node generates a video featuring a person or object based on provided refer
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `model` | The specific model to use for video generation. | COMBO | Yes | "wan2.7-r2v" |
+| `model` | The specific model to use for video generation. | DYNAMIC_COMBO | Yes | "wan2.7-r2v" |
 | `seed` | Seed to use for generation, which helps control the randomness of the output (default: 0). | INT | No | 0 to 2147483647 |
 | `watermark` | Whether to add an AI-generated watermark to the result (default: False). This is an advanced setting. | BOOLEAN | No | True<br>False |
 

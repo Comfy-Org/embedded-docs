@@ -8,7 +8,7 @@ The Wan 2.7 Video Continuation node generates a new video segment that continues
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The video generation model to use. | COMBO | Yes | `"wan2.7-i2v"` |
+| `model` | The video generation model to use. | DYNAMIC_COMBO | Yes | `"wan2.7-i2v"` |
 | `first_clip` | Input video to continue from. Duration: 2s-10s. The output aspect ratio is derived from this video. | VIDEO | Yes | 2s to 10s |
 | `last_frame` | Last frame image. The continuation will transition towards this frame. | IMAGE | No | - |
 | `seed` | Seed to use for generation. (default: 0) | INT | Yes | 0 to 2147483647 |
