@@ -139,11 +139,13 @@ def update_doc_with_translations(doc_file, node_name, lang, frontend_translation
             lines = content.split('\n')
             in_input_section = False
             for i, line in enumerate(lines):
-                # Detect if we're in the Inputs section
-                if re.match(r'##\s+(?:输入|輸入|入力|입력|Входы|Entradas|Entrées|Inputs|المدخلات|Girdiler|ورودی‌ها)', line):
+                # Detect if we're in the Inputs section.
+                # Only H2 (## X) opens/closes a section; H3 (### X) subheadings
+                # like "### Common Inputs" must NOT close it.
+                if re.match(r'^##\s+(?:输入|輸入|入力|입력|Входы|Entradas|Entrées|Inputs|المدخلات|Girdiler|ورودی‌ها)', line):
                     in_input_section = True
                     continue
-                elif line.startswith('##'):
+                elif re.match(r'^##(?!\s*#)', line):
                     in_input_section = False
                     continue
                 if not (in_input_section and line.strip().startswith('|')):
@@ -169,7 +171,7 @@ def update_doc_with_translations(doc_file, node_name, lang, frontend_translation
                 in_output_section = True
                 output_row_index = 0
                 continue
-            elif line.startswith('##'):
+            elif re.match(r'^##(?!\s*#)', line):
                 in_output_section = False
                 continue
             
