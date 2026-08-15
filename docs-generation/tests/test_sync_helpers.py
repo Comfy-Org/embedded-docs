@@ -134,5 +134,55 @@ class FrontmatterTests(unittest.TestCase):
         self.assertIn("Complete documentation for the Canny node", fm)
 
 
+class CrossDirAssetCollisionTests(unittest.TestCase):
+    """Regression: three distinct external assets sharing one basename must not
+    overwrite each other (CodeRabbit PR #120 review)."""
+
+    def _copy_assets(self, abs_paths):
+        """Run copy_assets_and_rewrite against temp dirs; return (out_names, errors)."""
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            doc_dir = root / "docs" / "SomeNode"
+            doc_dir.mkdir(parents=True)
+            out_dir = root / "images_out"
+            content_lines = []
+            for i, src in enumerate(abs_paths):
+                src.parent.mkdir(parents=True, exist_ok=True)
+                src.write_bytes(bytes([i + 1]))  # distinct bytes per source
+                rel = os.path.relpath(src, doc_dir)
+                content_lines.append(f"![img{i}]({rel})")
+            content = "\n".join(content_lines)
+            # All refs resolve outside doc_dir -> cross-directory path
+            sc.copy_assets_and_rewrite(content, doc_dir, "SomeNode", out_dir, dry_run=False)
+            return sorted(p.name for p in out_dir.iterdir()), sorted(
+                p.read_bytes() for p in out_dir.iterdir()
+            )
+
+    def test_three_external_assets_same_basename_no_overwrite(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            abs_paths = [
+                root / "one" / "assets" / "icon.webp",
+                root / "two" / "assets" / "icon.webp",
+                root / "three" / "assets" / "icon.webp",
+            ]
+            names, blobs = self._copy_assets(abs_paths)
+            # Three distinct destination names (collision suffixes applied)
+            self.assertEqual(len(names), 3)
+            # Distinct bytes means no overwrite (each source written its own data)
+            self.assertEqual(len(set(blobs)), 3)
+            self.assertIn("icon.webp", names)
+
+    def test_cross_dir_uses_parent_name_prefix(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            a = root / "one" / "assets" / "icon.webp"
+            b = root / "two" / "assets" / "icon.webp"
+            names, _ = self._copy_assets([a, b])
+            self.assertEqual(len(names), 2)
+            # Second file must get a parent-name prefix, not a bare collision name
+            self.assertIn("assets_icon.webp", names)
+
+
 if __name__ == "__main__":
     unittest.main()
