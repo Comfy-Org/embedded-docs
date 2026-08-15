@@ -8,7 +8,7 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 비디오 생성에 사용할 모델(기본값: "MiniMax H3"). "MiniMax H3"을 선택하면 아래의 `prompt`, `resolution`, `ratio`, `duration`, `reference_images`, `reference_videos` 및 `reference_audios` 설정이 제공됩니다. | STRING | 예 | "MiniMax H3" |
+| `model` | 비디오 생성에 사용할 모델(기본값: "MiniMax H3"). "MiniMax H3"을 선택하면 아래의 `prompt`, `resolution`, `ratio`, `duration`, `reference_images`, `reference_videos` 및 `reference_audios` 설정이 제공됩니다. | DYNAMIC_COMBO | 예 | "MiniMax H3" |
 | `seed` | 난수 시드. 동일한 시드를 사용한 동일한 요청은 유사한 결과를 제공하지만, 동일한 결과가 보장되지는 않습니다(기본값: 42). | INT | 예 | 0~4294967295 |
 | `watermark` | 비디오에 AIGC 워터마크를 추가할지 여부(기본값: false). | BOOLEAN | 아니요 | true<br>false |
 
