@@ -2,12 +2,18 @@
 """
 Update parameter names in documentation to match frontend translations
 Uses node_translations.json exported from frontend nodeDefs
+
+The translations file is refreshed from GitHub (Comfy-Org/ComfyUI_frontend)
+when it is missing or older than TRANSLATIONS_MAX_AGE_HOURS, so param
+localization does not depend on a local frontend checkout being up to date.
 """
 
 import json
 import os
 import re
 import sys
+import time
+import urllib.request
 from pathlib import Path
 
 import runtime  # noqa: F401
@@ -18,16 +24,59 @@ load_dotenv()
 DOCS_ROOT = embedded_docs_dir().resolve()
 TRANSLATIONS_FILE = NODE_TRANSLATIONS
 
+# Refresh the translations file from GitHub when older than this (hours)
+TRANSLATIONS_MAX_AGE_HOURS = 12
+
 # Supported languages
 SUPPORTED_LANGS = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa']
 
-def load_frontend_translations():
-    """Load frontend translations from exported JSON"""
+REMOTE_REPO = "Comfy-Org/ComfyUI_frontend"
+REMOTE_BRANCH = "master"
+REMOTE_BASE = f"https://raw.githubusercontent.com/{REMOTE_REPO}/{REMOTE_BRANCH}/src/locales"
+
+def _fetch_remote_translations() -> dict:
+    """Fetch nodeDefs.json for all languages from GitHub raw."""
+    out = {}
+    for lang in SUPPORTED_LANGS:
+        url = f"{REMOTE_BASE}/{lang}/nodeDefs.json"
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "docs-generation"})
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                out[lang] = json.loads(resp.read().decode("utf-8"))
+        except Exception as e:
+            print(f"⚠️  Warning: failed to fetch {lang} from GitHub ({url}): {e}")
+            out[lang] = {}
+    return out
+
+def load_frontend_translations(force_refresh=False):
+    """Load frontend translations from exported JSON, refreshing from GitHub
+    if the file is missing or stale (older than TRANSLATIONS_MAX_AGE_HOURS)."""
+    stale = False
     if not TRANSLATIONS_FILE.exists():
-        print(f"❌ Error: {TRANSLATIONS_FILE} not found")
-        print("   Please run: python sync_frontend_translations.py <frontend_path> --export")
-        sys.exit(1)
-    
+        print(f"ℹ️  {TRANSLATIONS_FILE} not found")
+        stale = True
+    else:
+        age_h = (time.time() - TRANSLATIONS_FILE.stat().st_mtime) / 3600
+        if age_h > TRANSLATIONS_MAX_AGE_HOURS:
+            print(f"ℹ️  Translations file is {age_h:.1f}h old (max {TRANSLATIONS_MAX_AGE_HOURS}h); refreshing from GitHub")
+            stale = True
+
+    if stale or force_refresh:
+        print("📡 Fetching frontend translations from GitHub (Comfy-Org/ComfyUI_frontend@master)...")
+        data = _fetch_remote_translations()
+        if any(data.values()):
+            with open(TRANSLATIONS_FILE, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            print(f"✓ Refreshed {TRANSLATIONS_FILE} from GitHub")
+            return data
+        # Fetch failed: fall back to existing file
+        if TRANSLATIONS_FILE.exists():
+            print("⚠️  GitHub fetch failed; using existing local translations file")
+        else:
+            print("❌ Error: no translations available (GitHub fetch failed and no local file)")
+            print("   Please run: python sync_frontend_translations.py --export")
+            sys.exit(1)
+
     with open(TRANSLATIONS_FILE, 'r', encoding='utf-8') as f:
         return json.load(f)
 

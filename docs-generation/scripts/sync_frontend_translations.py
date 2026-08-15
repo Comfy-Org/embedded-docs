@@ -1,13 +1,21 @@
 #!/usr/bin/env python3
 """
 Sync parameter translations from the frontend repo's nodeDefs.json into the docs
-Usage: python sync_frontend_translations.py <frontend_repo_path>
-Example: python sync_frontend_translations.py /path/to/ComfyUI_frontend
+
+Sources (in priority order):
+1. Remote: Comfy-Org/ComfyUI_frontend nodeDefs.json via raw.githubusercontent.com
+   (default when no local path is given, or when --remote is passed)
+2. Local: a checked-out ComfyUI_frontend repo (fallback, offline-capable)
+
+Usage:
+  python sync_frontend_translations.py --export                 # fetch from GitHub
+  python sync_frontend_translations.py /path/to/ComfyUI_frontend --export  # local repo
 """
 
 import json
 import os
 import sys
+import urllib.request
 from pathlib import Path
 
 import runtime  # noqa: F401
@@ -20,8 +28,15 @@ DOCS_ROOT = embedded_docs_dir()
 # Supported languages
 SUPPORTED_LANGS = ['en', 'zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa']
 
-def load_frontend_translations(frontend_path, lang):
-    """Load translations for a language from the frontend repo"""
+# Default remote source: ComfyUI frontend repo on GitHub (master branch)
+REMOTE_REPO = "Comfy-Org/ComfyUI_frontend"
+REMOTE_BRANCH = "master"
+REMOTE_BASE = f"https://raw.githubusercontent.com/{REMOTE_REPO}/{REMOTE_BRANCH}/src/locales"
+
+def load_frontend_translations(frontend_path, lang, use_remote=False):
+    """Load translations for a language from the frontend repo (remote or local)"""
+    if use_remote or frontend_path is None:
+        return load_frontend_translations_remote(lang)
     locale_file = Path(frontend_path) / 'src' / 'locales' / lang / 'nodeDefs.json'
     
     if not locale_file.exists():
@@ -33,6 +48,17 @@ def load_frontend_translations(frontend_path, lang):
             return json.load(f)
     except Exception as e:
         print(f"❌ Failed to read language file for {lang}: {e}")
+        return {}
+
+def load_frontend_translations_remote(lang):
+    """Fetch nodeDefs.json for a language from GitHub raw (master branch)"""
+    url = f"{REMOTE_BASE}/{lang}/nodeDefs.json"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "docs-generation"})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except Exception as e:
+        print(f"⚠️  Warning: failed to fetch {lang} from GitHub ({url}): {e}")
         return {}
 
 def get_node_translations(frontend_translations, node_name):
@@ -108,34 +134,51 @@ def create_translation_report(frontend_path):
                         if param_trans['tooltip']:
                             print(f"      Tooltip: {param_trans['tooltip'][:60]}...")
 
-def export_translation_json(frontend_path, output_file=None):
+def export_translation_json(frontend_path, output_file=None, use_remote=False):
     """Export all node translations to a JSON file for later use"""
+    source_desc = "GitHub (remote)" if (use_remote or frontend_path is None) else str(frontend_path)
+    print(f"Loading translations from: {source_desc}")
     all_translations = {}
     for lang in SUPPORTED_LANGS:
-        all_translations[lang] = load_frontend_translations(frontend_path, lang)
+        all_translations[lang] = load_frontend_translations(frontend_path, lang, use_remote=use_remote)
     
     output_path = NODE_TRANSLATIONS if output_file is None else Path(output_file)
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(all_translations, f, ensure_ascii=False, indent=2)
     
     print(f"\n✓ Translation data exported to: {output_path}")
+    print(f"  Source: {source_desc}")
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python sync_frontend_translations.py <frontend_repo_path> [--export]")
-        print("Example: python sync_frontend_translations.py /path/to/ComfyUI_frontend")
-        print("\nOptions:")
-        print("  --export  export translations to JSON file")
-        sys.exit(1)
+    args = [a for a in sys.argv[1:] if not a.startswith('--')]
+    flags = [a for a in sys.argv[1:] if a.startswith('--')]
+    use_remote = '--remote' in flags
+    do_export = '--export' in flags
     
-    frontend_path = Path(sys.argv[1])
+    # No positional path + no --remote: default to remote GitHub source
+    if not args:
+        if use_remote or do_export:
+            frontend_path = None
+        else:
+            print("Usage:")
+            print("  python sync_frontend_translations.py --export                # fetch from GitHub (default)")
+            print("  python sync_frontend_translations.py --remote --export       # force remote")
+            print("  python sync_frontend_translations.py /path/to/ComfyUI_frontend [--export]  # local repo")
+            print("  python sync_frontend_translations.py --report                # report only")
+            sys.exit(1)
+    else:
+        frontend_path = Path(args[0])
+        if frontend_path.exists():
+            # Local path given: use it unless --remote forces GitHub
+            if use_remote:
+                print("⚠️  --remote given; using GitHub source (ignoring local path)")
+                frontend_path = None
+        else:
+            print(f"⚠️  Path does not exist ({frontend_path}); falling back to GitHub source")
+            frontend_path = None
     
-    if not frontend_path.exists():
-        print(f"❌ Error: frontend repo path does not exist: {frontend_path}")
-        sys.exit(1)
-    
-    if '--export' in sys.argv:
-        export_translation_json(frontend_path)
+    if do_export or frontend_path is None:
+        export_translation_json(frontend_path, use_remote=use_remote)
     else:
         create_translation_report(frontend_path)
 
