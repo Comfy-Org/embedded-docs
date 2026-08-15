@@ -1,40 +1,66 @@
 # Kling 3.0 Vidéo
 
-Ce nœud génère des vidéos à l'aide du modèle Kling V3. Il prend en charge deux modes principaux : le texte-vers-vidéo, où une vidéo est créée à partir d'une description textuelle, et l'image-vers-vidéo, où une image existante est animée. Il offre également des fonctionnalités avancées comme la création de vidéos multi-segments avec des invites différentes pour chaque partie (storyboards) et la génération facultative d'un son d'accompagnement.
+Ce nœud génère des vidéos à l'aide du modèle Kling V3. Il prend en charge le mode texte-vers-vidéo, où une vidéo est créée à partir d'une description textuelle, et le mode image-vers-vidéo, où une image existante est animée. Il offre également des fonctionnalités avancées telles que la création de vidéos multi-segments avec des prompts individuels pour chaque partie (storyboards) et la génération facultative d'un son d'accompagnement.
 
 ## Entrées
 
+### Entrées communes
+
 | Paramètre | Description | Type de données | Requis | Plage |
-| --- | --- | --- | --- | --- |
-| `multi_shot` | Contrôle s'il faut générer une seule vidéo ou une série de segments avec des invites et des durées individuelles. Lorsqu'il n'est pas réglé sur "disabled", des entrées supplémentaires pour l'invite et la durée de chaque storyboard apparaissent. | COMBO | Oui | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `générer audio` | Lorsqu'il est activé, le nœud génère un son pour la vidéo. La valeur par défaut est `True`. | BOOLEAN | Oui | `True` / `False` |
-| `modèle` | Le modèle et ses paramètres associés. La sélection de cette option révèle les sous-paramètres `resolution` et `aspect_ratio`. | COMBO | Oui | `"kling-v3"` |
-| `model.resolution` | La résolution de la vidéo générée. Ce paramètre est disponible lorsque le `modèle` est réglé sur "kling-v3". | COMBO | Oui | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | Le rapport hauteur/largeur de la vidéo générée. Ce paramètre est ignoré lorsqu'une image est fournie pour `image de départ` (mode image-vers-vidéo). Disponible lorsque le `modèle` est réglé sur "kling-v3". | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `seed` | Une valeur de graine pour la génération. La modification de cette valeur entraînera la réexécution du nœud, mais les résultats ne sont pas déterministes. La valeur par défaut est `0`. | INT | Oui | 0 à 2147483647 |
-| `image de départ` | Une image de départ facultative. Lorsqu'elle est connectée, le nœud passe du mode texte-vers-vidéo au mode image-vers-vidéo, animant l'image fournie. | IMAGE | Non | - |
+|-----------|-------------|-----------------|--------|-------|
+| `multi_shot` | Génère une série de segments vidéo avec des prompts et des durées individuelles. Lorsque cette option est définie sur une option de storyboard, des entrées supplémentaires apparaissent pour le prompt et la durée de chaque storyboard. | DYNAMIC_COMBO | Oui | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `modèle` | Paramètres du modèle et de génération. La sélection d'un modèle révèle ses sous-paramètres `model.resolution` et `model.aspect_ratio`. | DYNAMIC_COMBO | Oui | `"kling-v3"`<br>`"kling-3.0-turbo"` |
+| `générer audio` | Lorsqu'elle est activée, le nœud génère du son pour la vidéo. Remarque : `"kling-3.0-turbo"` génère toujours du son natif, donc ce bouton est ignoré pour ce modèle. Par défaut : True. | BOOLEAN | Oui | True<br>False |
+| `seed` | La graine (seed) contrôle si le nœud doit être relancé ; les résultats sont non déterministes quelle que soit la graine. Par défaut : 0. | INT | Oui | 0 à 2147483647 |
+| `image de départ` | Image de frame de départ facultative. Lorsqu'elle est connectée, passe en mode image-vers-vidéo. | IMAGE | Non | - |
 
-**Entrées pour le mode `multi_shot` :**
+### Entrées kling-v3
 
-* Lorsque `multi_shot` est réglé sur **"disabled"**, les entrées suivantes apparaissent :
-  * `prompt` (STRING) : La description textuelle principale de la vidéo. Requis. Doit contenir entre 1 et 2500 caractères.
-  * `negative_prompt` (STRING) : Texte décrivant ce qui ne doit pas apparaître dans la vidéo. Facultatif.
-  * `duration` (INT) : La durée de la vidéo en secondes. Doit être comprise entre 3 et 15. La valeur par défaut est `5`.
-* Lorsque `multi_shot` est réglé sur une option de storyboard (par exemple, `"3 storyboards"`), des entrées pour chaque segment de storyboard apparaissent (par exemple, `storyboard_1_prompt`, `storyboard_1_duration`). Chaque invite doit contenir entre 1 et 512 caractères. La **somme totale de toutes les durées des storyboards** doit être comprise entre 3 et 15 secondes.
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `résolution` | Résolution de la vidéo générée. Par défaut : `"1080p"`. | COMBO | Oui | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `ratio d’aspect` | Ratio hauteur/largeur de la vidéo générée. Ignoré en mode image-vers-vidéo. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
-**Contraintes :**
+### Entrées kling-3.0-turbo
 
-* Le nœud fonctionne en mode **texte-vers-vidéo** lorsque `start_frame` n'est pas connecté. Il utilise le paramètre `model.aspect_ratio` dans ce mode.
-* Le nœud fonctionne en mode **image-vers-vidéo** lorsque `start_frame` est connecté. Le paramètre `model.aspect_ratio` est ignoré. L'image d'entrée doit mesurer au moins 300x300 pixels et avoir un rapport hauteur/largeur compris entre 1:2,5 et 2,5:1.
-* En mode storyboard (`multi_shot` n'est pas "disabled"), les entrées principales `prompt` et `negative_prompt` sont masquées et non utilisées.
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `résolution` | Résolution de la vidéo générée. Par défaut : `"720p"`. | COMBO | Oui | `"1080p"`<br>`"720p"` |
+| `ratio d’aspect` | Ratio hauteur/largeur de la vidéo générée. Ignoré en mode image-vers-vidéo. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+
+### Entrées multi-shot
+
+**Lorsque `multi_shot` est défini sur `"disabled"` :**
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `prompt` | Le prompt principal décrivant la vidéo. Doit contenir entre 1 et 2500 caractères. | STRING | Oui | 1 à 2500 caractères |
+| `negative_prompt` | Texte décrivant ce qui ne doit pas apparaître dans la vidéo. Peut être laissé vide. | STRING | Non | - |
+| `duration` | Durée de la vidéo en secondes. Par défaut : 5. | INT | Oui | 3 à 15 |
+
+**Lorsque `multi_shot` est défini sur une option de storyboard (par exemple `"3 storyboards"`) :**
+
+Pour chaque segment de storyboard N (de 1 jusqu'au nombre de storyboards sélectionné), les entrées suivantes apparaissent :
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `storyboard_N_prompt` | Prompt pour le segment de storyboard N. Maximum 512 caractères. | STRING | Oui | 1 à 512 caractères |
+| `storyboard_N_duration` | Durée du segment de storyboard N en secondes. Par défaut : 4. | INT | Oui | 1 à 15 |
+
+**Contraintes et comportement :**
+
+- Le mode texte-vers-vidéo est utilisé lorsque `start_frame` n'est pas connecté ; le mode image-vers-vidéo est utilisé lorsque `start_frame` est connecté. En mode image-vers-vidéo, `model.aspect_ratio` est ignoré et l'image d'entrée doit faire au moins 300x300 pixels avec un ratio hauteur/largeur compris entre 1:2.5 et 2.5:1.
+- En mode storyboard, le `prompt` principal et `negative_prompt` ne sont pas utilisés. La somme totale de toutes les durées des storyboards doit être comprise entre 3 et 15 secondes.
+- Pour `kling-v3`, chaque storyboard est envoyé à l'API comme un segment distinct. Pour `kling-3.0-turbo`, les prompts et durées des storyboards sont combinés en un seul prompt multi-shot.
+- Pour `kling-3.0-turbo`, `generate_audio` est ignoré car ce modèle génère toujours du son natif.
 
 ## Sorties
 
-| Nom de la sortie | Description | Type de données |
-| --- | --- | --- |
+| Nom de sortie | Description | Type de données |
+|---------------|-------------|-----------------|
 | `video` | Le fichier vidéo généré. | VIDEO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVideoNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `f7f827d657b1d057d273eba3215ce6848d3ea05c5f348e2f3fccccfdd030dfc3`
+**Source fingerprint (SHA-256):** `2863d7a971a1978b6009e5321ed2112a9c04809281acd5f65d85ab72c4b49f08`

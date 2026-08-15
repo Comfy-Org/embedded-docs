@@ -15,6 +15,15 @@ This node uses the latest Kling AI model to generate a video from a text descrip
 | `generate_audio` | Whether to generate audio for the video (default: False). | BOOLEAN | No | True / False |
 | `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed (default: 0). | INT | No | 0 to 2147483647 |
 
+### Storyboard Sub-Inputs
+
+When `storyboards` is set to a value other than `"disabled"`, the following inputs appear for each storyboard segment. In the parameter names below, `{i}` is the segment number, from 1 up to the selected storyboard count.
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `storyboard_{i}_prompt` | Prompt for storyboard segment {i}. Max 512 characters. | STRING | Yes | 1 to 512 characters |
+| `storyboard_{i}_duration` | Duration for storyboard segment {i} in seconds (default: 4). | INT | Yes | 1 to 15 seconds |
+
 ### Parameter Constraints and Limitations
 
 - **Model-specific limitations:**
