@@ -97,7 +97,14 @@ Always keep these in English:
 - CLIP
 - VAE
 - CONTROL_NET
+- BOOLEAN
+- COMBO
+- DYNAMIC_COMBO  (inputs defined via `IO.DynamicCombo.Input`, e.g. model selectors / storyboards / multi-shot)
+- VIDEO
+- AUDIO
 - etc.
+
+**IMPORTANT**: Any input whose schema uses `IO.DynamicCombo.Input` MUST be typed `DYNAMIC_COMBO` in the Data Type column, never `COMBO`. `COMBO` is only for plain `IO.Combo.Input` fields. When in doubt, check the extracted source in the bundle: `IO.DynamicCombo.Input("name", options=[...])` → DYNAMIC_COMBO; `IO.Combo.Input("name", options=[...])` → COMBO.
 
 ## Language Style
 
