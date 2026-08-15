@@ -1,20 +1,26 @@
 # ElevenLabs Text to Sound Effects
 
-The ElevenLabs Text to Sound Effects node generates audio sound effects from a text description. It uses the ElevenLabs API to create sound effects based on your prompt, allowing you to control the duration, looping behavior, and how closely the sound follows the text.
+The ElevenLabs Text to Sound Effects node generates sound effect audio from a text description using the ElevenLabs API. It sends your written prompt to the ElevenLabs sound generation service and returns the resulting audio, with controls for the duration, looping behavior, and how closely the sound follows the text.
 
 ## Inputs
 
+### Common Inputs
+
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `text` | Text description of the sound effect to generate. | STRING | Yes | N/A |
-| `model` | Model to use for sound effect generation. Selecting this model reveals additional parameters: `duration` (default: 5.0, range: 0.5 to 30.0 seconds), `loop` (default: False), and `prompt_influence` (default: 0.3, range: 0.0 to 1.0). | COMBO | Yes | `"eleven_sfx_v2"` |
+| `model` | Model to use for sound effect generation. The selected model determines the available generation parameters listed below. | DYNAMIC_COMBO | Yes | `"eleven_sfx_v2"` |
+| `text` | Text description of the sound effect to generate. Must contain at least 1 character. (default: empty) | STRING | Yes | N/A |
 | `output_format` | Audio output format. | COMBO | Yes | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
-**Parameter Details:**
+### Eleven SFX v2 Inputs
 
-* **`model["duration"]`**: Duration of the generated sound in seconds. Default is 5.0, with a minimum of 0.5 and a maximum of 30.0.
-* **`model["loop"]`**: When enabled, creates a smoothly looping sound effect. Default is False.
-* **`model["prompt_influence"]`**: Controls how closely the generation follows the text prompt. Higher values make the sound follow the text more closely. Default is 0.3, with a range from 0.0 to 1.0.
+Sub-parameters shown when `model` is set to `"eleven_sfx_v2"`.
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `duration` | Duration of generated sound in seconds. (default: 5.0) | FLOAT | Yes | 0.5 to 30.0 (step: 0.1) |
+| `loop` | Create a smoothly looping sound effect. (default: False) | BOOLEAN | No | True or False |
+| `prompt_influence` | How closely generation follows the prompt. Higher values make the sound follow the text more closely. (default: 0.3) | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
 
 ## Outputs
 
