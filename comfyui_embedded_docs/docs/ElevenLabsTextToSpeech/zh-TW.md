@@ -33,7 +33,7 @@ ElevenLabs 文字轉語音節點使用 ElevenLabs API 將書面文字轉換為�
 | `speed` | 語音速度。1.0 為正常，<1.0 較慢，>1.0 較快（預設值：1.0）。 | FLOAT | 是 | 0.7 - 1.3 |
 | `similarity_boost` | 相似度增強。較高的值使語音更接近原始語音（預設值：0.75）。 | FLOAT | 是 | 0.0 - 1.0 |
 
-**注意：** `text` 輸入必須至少包含一個字元。如果 `language_code` 留空，則會自動偵測語言。`use_speaker_boost` 和 `style` 參數僅適用於 `eleven_multilingual_v2` 模型。
+**注意：** `文字` 輸入必須至少包含一個字元。如果 `語言代碼` 留空，則會自動偵測語言。`use_speaker_boost` 和 `style` 參數僅適用於 `eleven_multilingual_v2` 模型。
 
 ## 輸出
 

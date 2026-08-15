@@ -33,7 +33,7 @@ ElevenLabs Text to Speech düğümü, ElevenLabs API'sini kullanarak yazılı me
 | `speed` | Konuşma hızı. 1.0 normal, <1.0 yavaş, >1.0 hızlı (varsayılan: 1.0). | FLOAT | Evet | 0.7 - 1.3 |
 | `similarity_boost` | Benzerlik artırma. Yüksek değerler sesi orijinaline daha benzer hale getirir (varsayılan: 0.75). | FLOAT | Evet | 0.0 - 1.0 |
 
-**Not:** `text` girdisi en az bir karakter içermelidir. `language_code` boş bırakılırsa dil otomatik olarak algılanır. `use_speaker_boost` ve `style` parametreleri yalnızca `eleven_multilingual_v2` modeli için kullanılabilir.
+**Not:** `metin` girdisi en az bir karakter içermelidir. `dil_kodu` boş bırakılırsa dil otomatik olarak algılanır. `use_speaker_boost` ve `style` parametreleri yalnızca `eleven_multilingual_v2` modeli için kullanılabilir.
 
 ## Çıktılar
 

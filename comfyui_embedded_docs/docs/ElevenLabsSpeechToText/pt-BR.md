@@ -26,7 +26,7 @@ Estes parâmetros aparecem quando o modelo `"scribe_v2"` é selecionado.
 | `temperature` | Controle de aleatoriedade. 0.0 usa o padrão do modelo. Valores mais altos aumentam a aleatoriedade. (padrão: 0.0) | FLOAT | Não | 0.0 - 2.0 |
 | `timestamps_granularity` | Precisão temporal para as palavras da transcrição. (padrão: "word") | COMBO | Não | `"word"`<br>`"character"`<br>`"none"` |
 
-**Observação:** `num_speakers` não pode ser definido com valor maior que 0 quando `diarize` está ativado. Desative `diarize` ou defina `num_speakers` como 0; caso contrário, um erro será gerado.
+**Observação:** `num_locs` não pode ser definido com valor maior que 0 quando `diarize` está ativado. Desative `diarize` ou defina `num_locs` como 0; caso contrário, um erro será gerado.
 
 ## Saídas
 

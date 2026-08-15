@@ -1,6 +1,6 @@
 # ElevenLabs Text to Dialogue
 
-Le nœud ElevenLabs Text to Dialogue génère un dialogue audio multi-locuteur à partir d'un texte. Il vous permet de créer une conversation en spécifiant différentes lignes de texte et des voix distinctes pour chaque participant. Le nœud envoie la demande de dialogue à l'API ElevenLabs et renvoie l'audio généré.
+Le nœud ElevenLabs Text to Dialogue génère un dialogue audio multilocuteur à partir d'un texte. Il vous permet de créer une conversation en spécifiant différentes lignes de texte et des voix distinctes pour chaque participant. Le nœud envoie la demande de dialogue à l'API ElevenLabs et renvoie l'audio généré.
 
 ## Entrées
 
@@ -20,7 +20,7 @@ Le nœud ElevenLabs Text to Dialogue génère un dialogue audio multi-locuteur �
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `audio` | L'audio de dialogue multi-locuteur généré dans le format de sortie sélectionné. | AUDIO |
+| `audio` | L'audio de dialogue multilocuteur généré dans le format de sortie sélectionné. | AUDIO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToDialogue/fr.md)
 
