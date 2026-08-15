@@ -13,10 +13,10 @@ import os
 import re
 import sys
 import time
-import urllib.request
 from pathlib import Path
 
 import runtime  # noqa: F401
+from lib.frontend_source import fetch_remote_translations, save_translations
 from lib.paths import NODE_TRANSLATIONS, embedded_docs_dir, load_dotenv
 
 load_dotenv()
@@ -35,24 +35,6 @@ SUPPORTED_LANGS = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-
 # when (re)writing the file, even though this script only updates non-en docs.
 FETCH_LANGS = ['en'] + SUPPORTED_LANGS
 
-REMOTE_REPO = "Comfy-Org/ComfyUI_frontend"
-REMOTE_BRANCH = "master"
-REMOTE_BASE = f"https://raw.githubusercontent.com/{REMOTE_REPO}/{REMOTE_BRANCH}/src/locales"
-
-def _fetch_remote_translations() -> dict:
-    """Fetch nodeDefs.json for all languages (incl. 'en') from GitHub raw."""
-    out = {}
-    for lang in FETCH_LANGS:
-        url = f"{REMOTE_BASE}/{lang}/nodeDefs.json"
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": "docs-generation"})
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                out[lang] = json.loads(resp.read().decode("utf-8"))
-        except Exception as e:
-            print(f"⚠️  Warning: failed to fetch {lang} from GitHub ({url}): {e}")
-            out[lang] = {}
-    return out
-
 def load_frontend_translations(force_refresh=False):
     """Load frontend translations from exported JSON, refreshing from GitHub
     if the file is missing or stale (older than TRANSLATIONS_MAX_AGE_HOURS)."""
@@ -68,22 +50,11 @@ def load_frontend_translations(force_refresh=False):
 
     if stale or force_refresh:
         print("📡 Fetching frontend translations from GitHub (Comfy-Org/ComfyUI_frontend@master)...")
-        data = _fetch_remote_translations()
+        data = fetch_remote_translations(FETCH_LANGS)
         if any(data.values()):
-            # Merge over the existing file so languages whose fetch failed
-            # (and any keys not managed here) are preserved.
-            merged = {}
-            if TRANSLATIONS_FILE.exists():
-                try:
-                    with open(TRANSLATIONS_FILE, 'r', encoding='utf-8') as f:
-                        merged = json.load(f)
-                except (json.JSONDecodeError, OSError):
-                    merged = {}
-            for lang, lang_data in data.items():
-                if lang_data:
-                    merged[lang] = lang_data
-            with open(TRANSLATIONS_FILE, 'w', encoding='utf-8') as f:
-                json.dump(merged, f, ensure_ascii=False, indent=2)
+            # Merge over the existing file (atomic write) so languages whose
+            # fetch failed and keys not managed here are preserved.
+            merged = save_translations(TRANSLATIONS_FILE, data)
             print(f"✓ Refreshed {TRANSLATIONS_FILE} from GitHub")
             return merged
         # Fetch failed: fall back to existing file
@@ -154,30 +125,37 @@ def update_doc_with_translations(doc_file, node_name, lang, frontend_translation
     original_content = content
     changes_made = []
     
-    # Update input parameter names
+    # Update input parameter names, restricted to the Inputs table so
+    # same-named rows in Outputs or other tables are not touched.
     if 'inputs' in node_trans:
+        renames = {}
         for param_name, param_data in node_trans['inputs'].items():
             if not isinstance(param_data, dict):
                 continue
             frontend_name = param_data.get('name', '')
             if frontend_name and frontend_name != param_name:
-                # Try to find and replace the parameter name in the table.
-                # Match underscore (frontend key) and dot (docs) forms.
-                dot_variants = {
-                    param_name,
-                    param_name.replace("_", ".", 1),
-                    param_name.replace("_", "."),
-                }
-                hit = any(f'`{p}`' in content for p in dot_variants)
-                if hit:
-                    lines = content.split('\n')
-                    for i, line in enumerate(lines):
-                        if line.strip().startswith('|'):
-                            updated = update_parameter_name_in_row(line, param_name, frontend_name)
-                            if updated != line:
-                                lines[i] = updated
-                                changes_made.append(f"[Input] {param_name} → {frontend_name}")
-                    content = '\n'.join(lines)
+                renames[param_name] = frontend_name
+        if renames:
+            lines = content.split('\n')
+            in_input_section = False
+            for i, line in enumerate(lines):
+                # Detect if we're in the Inputs section
+                if re.match(r'##\s+(?:输入|輸入|入力|입력|Входы|Entradas|Entrées|Inputs|المدخلات|Girdiler|ورودی‌ها)', line):
+                    in_input_section = True
+                    continue
+                elif line.startswith('##'):
+                    in_input_section = False
+                    continue
+                if not (in_input_section and line.strip().startswith('|')):
+                    continue
+                for param_name, frontend_name in renames.items():
+                    updated = update_parameter_name_in_row(line, param_name, frontend_name)
+                    if updated != line:
+                        lines[i] = updated
+                        line = updated
+                        changes_made.append(f"[Input] {param_name} → {frontend_name}")
+                        break
+            content = '\n'.join(lines)
     
     # Update output parameter names
     if 'outputs' in node_trans:
@@ -247,7 +225,8 @@ def main():
     target_lang = None
     target_node = None
     dry_run = False
-    
+    force_refresh = False
+
     for i, arg in enumerate(sys.argv[1:]):
         if arg == '--lang':
             target_lang = sys.argv[i + 2] if i + 2 < len(sys.argv) else None
@@ -255,6 +234,8 @@ def main():
             target_node = sys.argv[i + 2] if i + 2 < len(sys.argv) else None
         elif arg == '--dry-run':
             dry_run = True
+        elif arg == '--refresh':
+            force_refresh = True
     
     print("=" * 80)
     print("Parameter Translation Updater")
@@ -269,7 +250,7 @@ def main():
     
     # Load frontend translations
     print("📖 Loading frontend translations...")
-    frontend_trans = load_frontend_translations()
+    frontend_trans = load_frontend_translations(force_refresh=force_refresh)
     print(f"   Loaded translations for {len(SUPPORTED_LANGS)} languages\n")
     
     # Get list of nodes to process

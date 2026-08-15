@@ -16,11 +16,12 @@ Usage:
 
 import json
 import os
+import subprocess
 import sys
-import urllib.request
 from pathlib import Path
 
 import runtime  # noqa: F401
+from lib.frontend_source import fetch_remote_translations, save_translations
 from lib.paths import NODE_TRANSLATIONS, embedded_docs_dir, load_dotenv
 
 load_dotenv()
@@ -29,11 +30,6 @@ DOCS_ROOT = embedded_docs_dir()
 
 # Supported languages
 SUPPORTED_LANGS = ['en', 'zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa']
-
-# Default remote source: ComfyUI frontend repo on GitHub (master branch)
-REMOTE_REPO = "Comfy-Org/ComfyUI_frontend"
-REMOTE_BRANCH = "master"
-REMOTE_BASE = f"https://raw.githubusercontent.com/{REMOTE_REPO}/{REMOTE_BRANCH}/src/locales"
 
 def load_frontend_translations(frontend_path, lang, use_remote=False):
     """Load translations for a language from the frontend repo (remote or local)"""
@@ -65,7 +61,6 @@ def load_frontend_translations_local(frontend_path, lang):
 
     # Fetch latest default branch so the checkout is up to date before reading.
     # The upstream default branch may be main or master; try both.
-    import subprocess
     fetched_refs = []
     for branch in ("main", "master"):
         try:
@@ -81,7 +76,9 @@ def load_frontend_translations_local(frontend_path, lang):
         print("⚠️  Warning: git fetch failed; using existing checkout state")
 
     # Read the file from the freshest ref via git show (working tree untouched)
-    refs = fetched_refs + ["origin/main", "origin/master", "main", "master", "HEAD"]
+    refs = list(dict.fromkeys(
+        [*fetched_refs, "origin/main", "origin/master", "main", "master", "HEAD"]
+    ))
     for ref in refs:
         try:
             out = subprocess.run(
@@ -97,14 +94,7 @@ def load_frontend_translations_local(frontend_path, lang):
 
 def load_frontend_translations_remote(lang):
     """Fetch nodeDefs.json for a language from GitHub raw (master branch)"""
-    url = f"{REMOTE_BASE}/{lang}/nodeDefs.json"
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "docs-generation"})
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except Exception as e:
-        print(f"⚠️  Warning: failed to fetch {lang} from GitHub ({url}): {e}")
-        return {}
+    return fetch_remote_translations([lang])[lang]
 
 def get_node_translations(frontend_translations, node_name):
     """Get translation info for a node"""
@@ -139,14 +129,14 @@ def get_node_translations(frontend_translations, node_name):
     
     return translations
 
-def create_translation_report(frontend_path):
+def create_translation_report(frontend_path, use_remote=False):
     """Generate a translation comparison report"""
     print(f"\nLoading translations from frontend repo: {frontend_path}\n")
-    
+
     # Load translations for all languages
     all_translations = {}
     for lang in SUPPORTED_LANGS:
-        all_translations[lang] = load_frontend_translations(frontend_path, lang)
+        all_translations[lang] = load_frontend_translations(frontend_path, lang, use_remote=use_remote)
     
     # Get all node names (from the docs directory)
     node_dirs = [d for d in DOCS_ROOT.iterdir() if d.is_dir()]
@@ -186,11 +176,16 @@ def export_translation_json(frontend_path, output_file=None, use_remote=False):
     all_translations = {}
     for lang in SUPPORTED_LANGS:
         all_translations[lang] = load_frontend_translations(frontend_path, lang, use_remote=use_remote)
-    
+
+    if not any(all_translations.values()):
+        print("\n❌ Error: every language came back empty; aborting export to protect the existing translations file")
+        sys.exit(1)
+
     output_path = NODE_TRANSLATIONS if output_file is None else Path(output_file)
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(all_translations, f, ensure_ascii=False, indent=2)
-    
+    # Merge over existing content and write atomically, so a partial fetch
+    # never replaces good data with empty JSON.
+    save_translations(output_path, all_translations)
+
     print(f"\n✓ Translation data exported to: {output_path}")
     print(f"  Source: {source_desc}")
 
@@ -199,10 +194,11 @@ def main():
     flags = [a for a in sys.argv[1:] if a.startswith('--')]
     use_remote = '--remote' in flags
     do_export = '--export' in flags
-    
+    do_report = '--report' in flags
+
     # No positional path + no --remote: default to remote GitHub source
     if not args:
-        if use_remote or do_export:
+        if use_remote or do_export or do_report:
             frontend_path = None
         else:
             print("Usage:")
@@ -221,11 +217,15 @@ def main():
         else:
             print(f"⚠️  Path does not exist ({frontend_path}); falling back to GitHub source")
             frontend_path = None
-    
-    if do_export or frontend_path is None:
+
+    if do_export:
+        export_translation_json(frontend_path, use_remote=use_remote)
+    elif do_report:
+        create_translation_report(frontend_path, use_remote=use_remote)
+    elif frontend_path is None:
         export_translation_json(frontend_path, use_remote=use_remote)
     else:
-        create_translation_report(frontend_path)
+        create_translation_report(frontend_path, use_remote=use_remote)
 
 if __name__ == '__main__':
     main()
