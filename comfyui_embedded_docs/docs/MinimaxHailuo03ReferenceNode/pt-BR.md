@@ -8,9 +8,9 @@ Este nó gera um vídeo usando o modelo MiniMax H3, utilizando imagens, vídeos 
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a ser usado para geração de vídeo (padrão: "MiniMax H3"). A seleção de "MiniMax H3" fornece as configurações de `prompt`, `resolution`, `ratio`, `duration`, `reference_images`, `reference_videos` e `reference_audios` abaixo. | STRING | Sim | "MiniMax H3" |
-| `seed` | Semente aleatória. A mesma solicitação com a mesma semente gera resultados semelhantes, porém não garantidamente idênticos (padrão: 42). | INT | Sim | 0 a 4294967295 |
-| `watermark` | Se deve adicionar uma marca d'água AIGC ao vídeo (padrão: false). | BOOLEAN | Não | true<br>false |
+| `modelo` | Modelo a ser usado para geração de vídeo (padrão: "MiniMax H3"). A seleção de "MiniMax H3" fornece as configurações de `prompt`, `resolution`, `ratio`, `duration`, `reference_images`, `reference_videos` e `reference_audios` abaixo. | STRING | Sim | "MiniMax H3" |
+| `semente` | Semente aleatória. A mesma solicitação com a mesma semente gera resultados semelhantes, porém não garantidamente idênticos (padrão: 42). | INT | Sim | 0 a 4294967295 |
+| `marca d'água` | Se deve adicionar uma marca d'água AIGC ao vídeo (padrão: false). | BOOLEAN | Não | true<br>false |
 
 ### Entradas do MiniMax H3
 

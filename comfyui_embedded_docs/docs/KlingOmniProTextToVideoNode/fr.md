@@ -12,7 +12,7 @@ Ce nœud utilise le dernier modèle Kling AI pour générer une vidéo à partir
 | `duration` | La durée de la vidéo en secondes (par défaut : 5). | INT | Oui | 3 à 15 secondes |
 | `resolution` | La qualité ou la résolution en pixels de la vidéo (par défaut : `"1080p"`). | COMBO | Non | `"4k"`<br>`"1080p"`<br>`"720p"` |
 | `storyboards` | Génère une série de segments vidéo avec des invites et des durées individuelles. Ignoré pour le modèle o1. | DYNAMIC_COMBO | Non | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | Indique s'il faut générer de l'audio pour la vidéo (par défaut : False). | BOOLEAN | Non | True / False |
+| `générer l'audio` | Indique s'il faut générer de l'audio pour la vidéo (par défaut : False). | BOOLEAN | Non | True / False |
 | `seed` | Le seed contrôle si le nœud doit s'exécuter à nouveau ; les résultats sont non déterministes quel que soit le seed (par défaut : 0). | INT | Non | 0 à 2147483647 |
 
 ### Sous-entrées du storyboard

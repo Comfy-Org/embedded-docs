@@ -8,15 +8,15 @@
 
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model_name` | 用于视频生成的特定 Kling 模型（默认值："kling-v3-omni"）。 | COMBO | 是 | `"kling-v3-omni"`<br>`"kling-video-o1"` |
-| `prompt` | 描述视频内容的文本提示。可包含正向和负向描述。诸如 `@image` 或 `@video`（可选编号）之类的占位符会自动转换为 API 兼容格式。长度必须在 1 到 2500 个字符之间（启用故事板时可为空）。启用故事板时此参数将被忽略。 | STRING | 是 | - |
-| `aspect_ratio` | 生成视频所需的宽高比。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `duration` | 视频的时长（秒），可通过滑块调整（默认值：5）。 | INT | 是 | 3 到 15 |
-| `reference_images` | 最多 7 张参考图像。每张图像至少为 300x300 像素，且宽高比需在 1:2.5 到 2.5:1 之间。 | IMAGE | 是 | 1 到 7 张图像 |
-| `resolution` | 视频的输出分辨率（默认值："1080p"）。 | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | 生成一系列具有独立提示和时长的视频片段。仅 `kling-v3-omni` 支持。启用后，全局 `prompt` 将被忽略，所有故事板片段的总时长必须等于全局 `duration`（默认值："disabled"）。 | COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | 为视频生成音频。仅 `kling-v3-omni` 支持（默认值：false）。 | BOOLEAN | 否 | `true`<br>`false` |
-| `seed` | Seed 控制节点是否应重新运行；无论 seed 如何，结果都是非确定性的（默认值：0）。 | INT | 否 | 0 到 2147483647 |
+| `模型` | 用于视频生成的特定 Kling 模型（默认值："kling-v3-omni"）。 | COMBO | 是 | `"kling-v3-omni"`<br>`"kling-video-o1"` |
+| `提示词` | 描述视频内容的文本提示。可包含正向和负向描述。诸如 `@image` 或 `@video`（可选编号）之类的占位符会自动转换为 API 兼容格式。长度必须在 1 到 2500 个字符之间（启用故事板时可为空）。启用故事板时此参数将被忽略。 | STRING | 是 | - |
+| `宽高比` | 生成视频所需的宽高比。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `时长` | 视频的时长（秒），可通过滑块调整（默认值：5）。 | INT | 是 | 3 到 15 |
+| `参考图像` | 最多 7 张参考图像。每张图像至少为 300x300 像素，且宽高比需在 1:2.5 到 2.5:1 之间。 | IMAGE | 是 | 1 到 7 张图像 |
+| `分辨率` | 视频的输出分辨率（默认值："1080p"）。 | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `分镜` | 生成一系列具有独立提示和时长的视频片段。仅 `kling-v3-omni` 支持。启用后，全局 `prompt` 将被忽略，所有故事板片段的总时长必须等于全局 `duration`（默认值："disabled"）。 | COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `生成音频` | 为视频生成音频。仅 `kling-v3-omni` 支持（默认值：false）。 | BOOLEAN | 否 | `true`<br>`false` |
+| `种子` | Seed 控制节点是否应重新运行；无论 seed 如何，结果都是非确定性的（默认值：0）。 | INT | 否 | 0 到 2147483647 |
 
 ### 故事板输入
 

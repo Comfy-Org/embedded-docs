@@ -10,10 +10,10 @@ Bu düğüm, Kling 3.0 modelini kullanarak video oluşturur. Videoyu bir metin i
 |-----------|-------------|-----------|----------|-------|
 | `model` | Model ve oluşturma ayarları. Bu seçeneğin seçilmesi, iç içe bir `resolution` parametresini ortaya çıkarır. | COMBO | Hayır | `"kling-v3"` |
 | `prompt` | Video oluşturmayı yönlendiren metin açıklaması. 1 ile 2500 karakter arasında olmalıdır. | STRING | Evet | N/A |
-| `duration` | Videonun saniye cinsinden uzunluğu (varsayılan: 5). | INT | Hayır | 3 ila 15 |
-| `first_frame` | Video için başlangıç görseli. En az 300x300 piksel olmalı ve en-boy oranı 1:2,5 ile 2,5:1 arasında olmalıdır. | IMAGE | Evet | N/A |
-| `end_frame` | Video için bitiş görseli. En az 300x300 piksel olmalı ve en-boy oranı 1:2,5 ile 2,5:1 arasında olmalıdır. | IMAGE | Evet | N/A |
-| `generate_audio` | Video için ses oluşturulup oluşturulmayacağını kontrol eder (varsayılan: True). | BOOLEAN | Hayır | N/A |
+| `süre` | Videonun saniye cinsinden uzunluğu (varsayılan: 5). | INT | Hayır | 3 ila 15 |
+| `ilk_kare` | Video için başlangıç görseli. En az 300x300 piksel olmalı ve en-boy oranı 1:2,5 ile 2,5:1 arasında olmalıdır. | IMAGE | Evet | N/A |
+| `son_kare` | Video için bitiş görseli. En az 300x300 piksel olmalı ve en-boy oranı 1:2,5 ile 2,5:1 arasında olmalıdır. | IMAGE | Evet | N/A |
+| `ses_oluştur` | Video için ses oluşturulup oluşturulmayacağını kontrol eder (varsayılan: True). | BOOLEAN | Hayır | N/A |
 | `seed` | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak belirlenimci değildir (varsayılan: 0). | INT | Hayır | 0 ila 2147483647 |
 
 ### Kling V3 Girdileri

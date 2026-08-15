@@ -13,8 +13,8 @@ Bu düğüm, bir başlangıç karesinden, isteğe bağlı bir bitiş karesinden 
 | `end_frame` | Video için isteğe bağlı bir bitiş karesi. `reference_images` ile aynı anda kullanılamaz. Storyboard'larla çalışmaz. | IMAGE | Hayır | - |
 | `reference_images` | En fazla 6 ek referans görüntüsü. | IMAGE | Hayır | - |
 | `resolution` | Oluşturulan video için çıktı çözünürlüğü (varsayılan: "1080p"). | COMBO | Hayır | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | Her biri için ayrı istemler ve süreler içeren bir dizi video bölümü oluşturun. Yalnızca `kling-v3-omni` için desteklenir. Etkinleştirildiğinde, her storyboard bir istem ve süre girdisi gerektirir. | DYNAMIC_COMBO | Hayır | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | Video için ses oluşturun (varsayılan: False). Yalnızca `kling-v3-omni` için desteklenir. | BOOLEAN | Hayır | True / False |
+| `hikaye_tahtaları` | Her biri için ayrı istemler ve süreler içeren bir dizi video bölümü oluşturun. Yalnızca `kling-v3-omni` için desteklenir. Etkinleştirildiğinde, her storyboard bir istem ve süre girdisi gerektirir. | DYNAMIC_COMBO | Hayır | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `ses_oluştur` | Video için ses oluşturun (varsayılan: False). Yalnızca `kling-v3-omni` için desteklenir. | BOOLEAN | Hayır | True / False |
 | `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Hayır | 0 ila 2147483647 |
 
 ### Storyboard Girdileri

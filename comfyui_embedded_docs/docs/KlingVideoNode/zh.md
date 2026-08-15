@@ -8,25 +8,25 @@
 
 | 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `multi_shot` | 生成一系列具有独立提示和时长的视频片段。设置为某个分镜选项时，每个分镜的提示和时长对应的附加输入会出现。 | COMBO | 是 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `model` | 模型和生成设置。选择模型后会显示其 `model.resolution` 和 `model.aspect_ratio` 子参数。 | COMBO | 是 | `"kling-v3"`<br>`"kling-3.0-turbo"` |
-| `generate_audio` | 启用后，节点将为视频生成音频。注意：`"kling-3.0-turbo"` 始终生成原生音频，因此该开关对此模型无效。默认值为 True。 | BOOLEAN | 是 | True<br>False |
+| `多镜头` | 生成一系列具有独立提示和时长的视频片段。设置为某个分镜选项时，每个分镜的提示和时长对应的附加输入会出现。 | COMBO | 是 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `模型` | 模型和生成设置。选择模型后会显示其 `model.resolution` 和 `model.aspect_ratio` 子参数。 | COMBO | 是 | `"kling-v3"`<br>`"kling-3.0-turbo"` |
+| `生成音频` | 启用后，节点将为视频生成音频。注意：`"kling-3.0-turbo"` 始终生成原生音频，因此该开关对此模型无效。默认值为 True。 | BOOLEAN | 是 | True<br>False |
 | `seed` | Seed 用于控制节点是否应重新运行；无论 seed 为何，结果都是非确定性的。默认值为 0。 | INT | 是 | 0 到 2147483647 |
-| `start_frame` | 可选的起始帧图像。连接后，切换为图生视频模式。 | IMAGE | 否 | - |
+| `起始帧` | 可选的起始帧图像。连接后，切换为图生视频模式。 | IMAGE | 否 | - |
 
 ### kling-v3 输入
 
 | 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model.resolution` | 生成视频的分辨率。默认值为 `"1080p"`。 | COMBO | 是 | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | 生成视频的宽高比。在图生视频模式下忽略。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `分辨率` | 生成视频的分辨率。默认值为 `"1080p"`。 | COMBO | 是 | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `宽高比` | 生成视频的宽高比。在图生视频模式下忽略。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
 ### kling-3.0-turbo 输入
 
 | 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model.resolution` | 生成视频的分辨率。默认值为 `"720p"`。 | COMBO | 是 | `"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | 生成视频的宽高比。在图生视频模式下忽略。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `分辨率` | 生成视频的分辨率。默认值为 `"720p"`。 | COMBO | 是 | `"1080p"`<br>`"720p"` |
+| `宽高比` | 生成视频的宽高比。在图生视频模式下忽略。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
 ### 多镜头输入
 

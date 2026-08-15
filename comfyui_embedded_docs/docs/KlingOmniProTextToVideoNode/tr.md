@@ -11,8 +11,8 @@ Bu düğüm, bir metin açıklamasından video üretmek için en güncel Kling A
 | `aspect_ratio` | Oluşturulacak videonun şekli veya boyutları. | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 | `duration` | Videonun saniye cinsinden süresi (varsayılan: 5). | INT | Evet | 3 ile 15 saniye arası |
 | `resolution` | Videonun kalitesi veya piksel çözünürlüğü (varsayılan: `"1080p"`). | COMBO | Hayır | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | Her biri ayrı istemler ve süreler içeren bir dizi video segmenti oluşturur. o1 modeli için yok sayılır. | DYNAMIC_COMBO | Hayır | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | Video için ses oluşturulup oluşturulmayacağı (varsayılan: False). | BOOLEAN | Hayır | True / False |
+| `hikaye_tahtaları` | Her biri ayrı istemler ve süreler içeren bir dizi video segmenti oluşturur. o1 modeli için yok sayılır. | DYNAMIC_COMBO | Hayır | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `ses_oluştur` | Video için ses oluşturulup oluşturulmayacağı (varsayılan: False). | BOOLEAN | Hayır | True / False |
 | `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Hayır | 0 ile 2147483647 arası |
 
 ### Storyboard Alt Girdileri

@@ -14,7 +14,7 @@ Ce nœud utilise le dernier modèle Kling AI pour générer une vidéo à partir
 | `reference_images` | Jusqu'à 6 images de référence supplémentaires. | IMAGE | Non | - |
 | `resolution` | La résolution de sortie de la vidéo générée (par défaut : « 1080p »). | COMBO | Non | `"4k"`<br>`"1080p"`<br>`"720p"` |
 | `storyboards` | Génère une série de segments vidéo avec des prompts et des durées individuels. Uniquement pris en charge pour `kling-v3-omni`. Lorsqu'il est activé, chaque storyboard nécessite une entrée de prompt et de durée. | DYNAMIC_COMBO | Non | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | Génère l'audio de la vidéo (par défaut : False). Uniquement pris en charge pour `kling-v3-omni`. | BOOLEAN | Non | True / False |
+| `générer l'audio` | Génère l'audio de la vidéo (par défaut : False). Uniquement pris en charge pour `kling-v3-omni`. | BOOLEAN | Non | True / False |
 | `seed` | Le paramètre `seed` contrôle si le nœud doit se réexécuter ; les résultats sont non déterministes quelle que soit la valeur de `seed` (par défaut : 0). | INT | Non | 0 à 2147483647 |
 
 ### Entrées du storyboard

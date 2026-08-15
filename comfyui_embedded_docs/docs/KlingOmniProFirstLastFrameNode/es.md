@@ -14,8 +14,8 @@ Este nodo utiliza el último modelo de Kling AI para generar un vídeo a partir 
 | `reference_images` | Hasta 6 imágenes de referencia adicionales. | IMAGE | No | - |
 | `resolution` | La resolución de salida del vídeo generado (por defecto: "1080p"). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
 | `storyboards` | Genera una serie de segmentos de vídeo con indicaciones y duraciones individuales. Solo compatible con `kling-v3-omni`. Cuando está habilitado, cada storyboard requiere una indicación y una duración. | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | Genera audio para el vídeo (por defecto: False). Solo compatible con `kling-v3-omni`. | BOOLEAN | No | True / False |
-| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados son no deterministas independientemente de la semilla (por defecto: 0). | INT | No | 0 a 2147483647 |
+| `generar_audio` | Genera audio para el vídeo (por defecto: False). Solo compatible con `kling-v3-omni`. | BOOLEAN | No | True / False |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados son no deterministas independientemente de la semilla (por defecto: 0). | INT | No | 0 a 2147483647 |
 
 ### Entradas de Storyboard
 

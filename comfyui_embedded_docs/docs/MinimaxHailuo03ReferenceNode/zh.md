@@ -8,9 +8,9 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用于视频生成的模型（默认值："MiniMax H3"）。选择 "MiniMax H3" 将提供下面的 `prompt`、`resolution`、`ratio`、`duration`、`reference_images`、`reference_videos` 和 `reference_audios` 设置。 | STRING | 是 | "MiniMax H3" |
-| `seed` | 随机种子。相同请求使用相同种子会产生相似但不保证完全相同的结果（默认值：42）。 | INT | 是 | 0 到 4294967295 |
-| `watermark` | 是否向视频添加 AIGC 水印（默认值：false）。 | BOOLEAN | 否 | true<br>false |
+| `模型` | 用于视频生成的模型（默认值："MiniMax H3"）。选择 "MiniMax H3" 将提供下面的 `prompt`、`resolution`、`ratio`、`duration`、`reference_images`、`reference_videos` 和 `reference_audios` 设置。 | STRING | 是 | "MiniMax H3" |
+| `随机种子` | 随机种子。相同请求使用相同种子会产生相似但不保证完全相同的结果（默认值：42）。 | INT | 是 | 0 到 4294967295 |
+| `水印` | 是否向视频添加 AIGC 水印（默认值：false）。 | BOOLEAN | 否 | true<br>false |
 
 ### MiniMax H3 输入
 

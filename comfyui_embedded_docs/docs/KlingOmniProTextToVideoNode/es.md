@@ -12,8 +12,8 @@ Este nodo utiliza el último modelo de Kling AI para generar un video a partir d
 | `duration` | La duración del video en segundos (predeterminado: 5). | INT | Sí | 3 a 15 segundos |
 | `resolution` | La calidad o resolución de píxeles del video (predeterminado: `"1080p"`). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
 | `storyboards` | Genera una serie de segmentos de video con prompts y duraciones individuales. Se ignora para el modelo o1. | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | Si se debe generar audio para el video (predeterminado: False). | BOOLEAN | No | True / False |
-| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados son no deterministas independientemente de la semilla (predeterminado: 0). | INT | No | 0 a 2147483647 |
+| `generar_audio` | Si se debe generar audio para el video (predeterminado: False). | BOOLEAN | No | True / False |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados son no deterministas independientemente de la semilla (predeterminado: 0). | INT | No | 0 a 2147483647 |
 
 ### Subentradas de Storyboard
 

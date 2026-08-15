@@ -8,9 +8,9 @@
 
 | پارامتر | توضیحات | نوع داده | الزامی | محدوده |
 |-----------|-------------|-----------|----------|---------|
-| `model` | مدلی که برای تولید ویدیو استفاده می‌شود (پیش‌فرض: "MiniMax H3"). انتخاب "MiniMax H3" تنظیمات `prompt`، `resolution`، `ratio`، `duration`، `reference_images`، `reference_videos` و `reference_audios` را در زیر فراهم می‌کند. | STRING | بله | "MiniMax H3" |
+| `مدل` | مدلی که برای تولید ویدیو استفاده می‌شود (پیش‌فرض: "MiniMax H3"). انتخاب "MiniMax H3" تنظیمات `prompt`، `resolution`، `ratio`، `duration`، `reference_images`، `reference_videos` و `reference_audios` را در زیر فراهم می‌کند. | STRING | بله | "MiniMax H3" |
 | `seed` | دانه تصادفی. درخواست یکسان با همان دانه، نتایج مشابه اما نه لزوماً یکسان می‌دهد (پیش‌فرض: 42). | INT | بله | 0 تا 4294967295 |
-| `watermark` | آیا واترمارک AIGC به ویدیو اضافه شود یا نه (پیش‌فرض: false). | BOOLEAN | خیر | true<br>false |
+| `واترمارک` | آیا واترمارک AIGC به ویدیو اضافه شود یا نه (پیش‌فرض: false). | BOOLEAN | خیر | true<br>false |
 
 ### ورودی‌های MiniMax H3
 

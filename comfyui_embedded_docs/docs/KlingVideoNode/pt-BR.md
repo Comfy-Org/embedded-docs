@@ -9,24 +9,24 @@ Este nó gera vídeos usando o modelo Kling V3. Ele suporta o modo texto-para-v�
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `multi_shot` | Gera uma série de segmentos de vídeo com prompts e durações individuais. Quando definido para uma opção de storyboard, entradas adicionais para o prompt e a duração de cada storyboard aparecem. | COMBO | Sim | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `model` | Configurações de modelo e geração. Selecionar um modelo revela seus subparâmetros `model.resolution` e `model.aspect_ratio`. | COMBO | Sim | `"kling-v3"`<br>`"kling-3.0-turbo"` |
-| `generate_audio` | Quando habilitado, o nó gera áudio para o vídeo. Observação: `"kling-3.0-turbo"` sempre gera áudio nativo, portanto esta opção é ignorada para esse modelo. O padrão é True. | BOOLEAN | Sim | True<br>False |
+| `modelo` | Configurações de modelo e geração. Selecionar um modelo revela seus subparâmetros `model.resolution` e `model.aspect_ratio`. | COMBO | Sim | `"kling-v3"`<br>`"kling-3.0-turbo"` |
+| `gerar áudio` | Quando habilitado, o nó gera áudio para o vídeo. Observação: `"kling-3.0-turbo"` sempre gera áudio nativo, portanto esta opção é ignorada para esse modelo. O padrão é True. | BOOLEAN | Sim | True<br>False |
 | `seed` | A semente (seed) controla se o nó deve ser reexecutado; os resultados são não determinísticos independentemente da semente. O padrão é 0. | INT | Sim | 0 a 2147483647 |
-| `start_frame` | Imagem opcional do quadro inicial. Quando conectada, alterna para o modo imagem-para-vídeo. | IMAGE | Não | - |
+| `quadro inicial` | Imagem opcional do quadro inicial. Quando conectada, alterna para o modo imagem-para-vídeo. | IMAGE | Não | - |
 
 ### Entradas do kling-v3
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model.resolution` | A resolução do vídeo gerado. O padrão é `"1080p"`. | COMBO | Sim | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | A proporção de aspecto do vídeo gerado. Ignorada no modo imagem-para-vídeo. | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `resolução` | A resolução do vídeo gerado. O padrão é `"1080p"`. | COMBO | Sim | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `proporção` | A proporção de aspecto do vídeo gerado. Ignorada no modo imagem-para-vídeo. | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
 ### Entradas do kling-3.0-turbo
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model.resolution` | A resolução do vídeo gerado. O padrão é `"720p"`. | COMBO | Sim | `"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | A proporção de aspecto do vídeo gerado. Ignorada no modo imagem-para-vídeo. | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `resolução` | A resolução do vídeo gerado. O padrão é `"720p"`. | COMBO | Sim | `"1080p"`<br>`"720p"` |
+| `proporção` | A proporção de aspecto do vídeo gerado. Ignorada no modo imagem-para-vídeo. | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
 ### Entradas de multi-shot
 

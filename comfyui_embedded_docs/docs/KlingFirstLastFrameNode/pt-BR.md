@@ -8,13 +8,13 @@ Este nó usa o modelo Kling 3.0 para gerar um vídeo. Ele cria o vídeo com base
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo e configurações de geração. Selecionar esta opção revela um parâmetro `resolution` aninhado. | COMBO | Não | `"kling-v3"` |
+| `modelo` | Modelo e configurações de geração. Selecionar esta opção revela um parâmetro `resolution` aninhado. | COMBO | Não | `"kling-v3"` |
 | `prompt` | A descrição em texto que orienta a geração do vídeo. Deve ter entre 1 e 2500 caracteres. | STRING | Sim | N/A |
-| `duration` | A duração do vídeo em segundos (padrão: 5). | INT | Não | 3 a 15 |
-| `first_frame` | A imagem inicial do vídeo. Deve ter pelo menos 300x300 pixels e uma proporção de aspecto entre 1:2.5 e 2.5:1. | IMAGE | Sim | N/A |
-| `end_frame` | A imagem final do vídeo. Deve ter pelo menos 300x300 pixels e uma proporção de aspecto entre 1:2.5 e 2.5:1. | IMAGE | Sim | N/A |
-| `generate_audio` | Controla se o áudio deve ser gerado para o vídeo (padrão: True). | BOOLEAN | Não | N/A |
-| `seed` | A semente controla se o nó deve ser executado novamente; os resultados não são determinísticos independentemente da semente (padrão: 0). | INT | Não | 0 a 2147483647 |
+| `duração` | A duração do vídeo em segundos (padrão: 5). | INT | Não | 3 a 15 |
+| `primeiro_frame` | A imagem inicial do vídeo. Deve ter pelo menos 300x300 pixels e uma proporção de aspecto entre 1:2.5 e 2.5:1. | IMAGE | Sim | N/A |
+| `último_frame` | A imagem final do vídeo. Deve ter pelo menos 300x300 pixels e uma proporção de aspecto entre 1:2.5 e 2.5:1. | IMAGE | Sim | N/A |
+| `gerar_áudio` | Controla se o áudio deve ser gerado para o vídeo (padrão: True). | BOOLEAN | Não | N/A |
+| `semente` | A semente controla se o nó deve ser executado novamente; os resultados não são determinísticos independentemente da semente (padrão: 0). | INT | Não | 0 a 2147483647 |
 
 ### Entradas do Kling V3
 

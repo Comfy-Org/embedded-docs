@@ -7,13 +7,13 @@
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `model_name` | 指定用於影片生成的 Kling 模型（預設：`"kling-v3-omni"`）。 | COMBO | 是 | `"kling-v3-omni"`<br>`"kling-video-o1"` |
-| `prompt` | 描述影片內容的文字提示詞。可包含正面與負面描述。啟用故事板時會忽略此欄位。 | STRING | 是 | 0 到 2500 個字元 |
-| `aspect_ratio` | 要生成之影片的形狀或尺寸比例。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `duration` | 影片的長度（秒）（預設：5）。 | INT | 是 | 3 到 15 秒 |
-| `resolution` | 影片的品質或像素解析度（預設：`"1080p"`）。 | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | 生成一系列帶有個別提示詞與長度的影片片段。`o1` 模型會忽略此參數。 | DYNAMIC_COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | 是否要為影片生成音訊（預設：False）。 | BOOLEAN | 否 | True / False |
-| `seed` | Seed 控制節點是否應重新執行；無論 seed 為何，結果皆為非確定性（預設：0）。 | INT | 否 | 0 到 2147483647 |
+| `提示詞` | 描述影片內容的文字提示詞。可包含正面與負面描述。啟用故事板時會忽略此欄位。 | STRING | 是 | 0 到 2500 個字元 |
+| `長寬比` | 要生成之影片的形狀或尺寸比例。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `時長` | 影片的長度（秒）（預設：5）。 | INT | 是 | 3 到 15 秒 |
+| `解析度` | 影片的品質或像素解析度（預設：`"1080p"`）。 | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `分鏡腳本` | 生成一系列帶有個別提示詞與長度的影片片段。`o1` 模型會忽略此參數。 | DYNAMIC_COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `產生音訊` | 是否要為影片生成音訊（預設：False）。 | BOOLEAN | 否 | True / False |
+| `種子` | Seed 控制節點是否應重新執行；無論 seed 為何，結果皆為非確定性（預設：0）。 | INT | 否 | 0 到 2147483647 |
 
 ### 故事板子輸入
 

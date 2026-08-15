@@ -9,14 +9,14 @@
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `model_name` | 用於影片生成的特定 Kling 模型（預設："kling-v3-omni"）。 | COMBO | 是 | `"kling-v3-omni"`<br>`"kling-video-o1"` |
-| `prompt` | 描述影片內容的文字提示。可包含正面和負面描述。諸如 `@image` 或 `@video`（可選擇編號）等佔位符會自動轉換為 API 相容格式。長度必須介於 1 到 2500 個字元之間（啟用故事板時可為空）。啟用故事板時將忽略此參數。 | STRING | 是 | - |
-| `aspect_ratio` | 生成影片所需的長寬比。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `duration` | 影片長度（秒），使用滑桿調整（預設：5）。 | INT | 是 | 3 到 15 |
-| `reference_images` | 最多 7 張參考影像。每張影像必須至少 300x300 像素，且長寬比介於 1:2.5 和 2.5:1 之間。 | IMAGE | 是 | 1 到 7 張影像 |
-| `resolution` | 影片的輸出解析度（預設："1080p"）。 | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | 生成一系列帶有個別提示和時長的影片片段。僅支援 `kling-v3-omni`。啟用時，全域 `prompt` 將被忽略，且所有故事板片段的總時長必須等於全域 `duration`（預設："disabled"）。 | COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | 為影片生成音訊。僅支援 `kling-v3-omni`（預設：false）。 | BOOLEAN | 否 | `true`<br>`false` |
-| `seed` | 種子控制節點是否重新執行；無論種子為何，結果皆為非確定性（預設：0）。 | INT | 否 | 0 到 2147483647 |
+| `提示詞` | 描述影片內容的文字提示。可包含正面和負面描述。諸如 `@image` 或 `@video`（可選擇編號）等佔位符會自動轉換為 API 相容格式。長度必須介於 1 到 2500 個字元之間（啟用故事板時可為空）。啟用故事板時將忽略此參數。 | STRING | 是 | - |
+| `長寬比` | 生成影片所需的長寬比。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `時長` | 影片長度（秒），使用滑桿調整（預設：5）。 | INT | 是 | 3 到 15 |
+| `參考圖片` | 最多 7 張參考影像。每張影像必須至少 300x300 像素，且長寬比介於 1:2.5 和 2.5:1 之間。 | IMAGE | 是 | 1 到 7 張影像 |
+| `解析度` | 影片的輸出解析度（預設："1080p"）。 | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `分鏡腳本` | 生成一系列帶有個別提示和時長的影片片段。僅支援 `kling-v3-omni`。啟用時，全域 `prompt` 將被忽略，且所有故事板片段的總時長必須等於全域 `duration`（預設："disabled"）。 | COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `產生音訊` | 為影片生成音訊。僅支援 `kling-v3-omni`（預設：false）。 | BOOLEAN | 否 | `true`<br>`false` |
+| `種子` | 種子控制節點是否重新執行；無論種子為何，結果皆為非確定性（預設：0）。 | INT | 否 | 0 到 2147483647 |
 
 ### 故事板輸入
 

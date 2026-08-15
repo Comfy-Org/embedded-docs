@@ -8,9 +8,9 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用於影片生成的模型（預設值："MiniMax H3"）。選擇「MiniMax H3」會提供以下設定：`prompt`、`resolution`、`ratio`、`duration`、`reference_images`、`reference_videos` 和 `reference_audios`。 | STRING | 是 | "MiniMax H3" |
-| `seed` | 隨機種子。使用相同種子的相同請求會產生相似但不保證相同的結果（預設值：42）。 | INT | 是 | 0 至 4294967295 |
-| `watermark` | 是否在影片中加入 AIGC 浮水印（預設值：false）。 | BOOLEAN | 否 | true<br>false |
+| `模型` | 用於影片生成的模型（預設值："MiniMax H3"）。選擇「MiniMax H3」會提供以下設定：`prompt`、`resolution`、`ratio`、`duration`、`reference_images`、`reference_videos` 和 `reference_audios`。 | STRING | 是 | "MiniMax H3" |
+| `隨機種子` | 隨機種子。使用相同種子的相同請求會產生相似但不保證相同的結果（預設值：42）。 | INT | 是 | 0 至 4294967295 |
+| `浮水印` | 是否在影片中加入 AIGC 浮水印（預設值：false）。 | BOOLEAN | 否 | true<br>false |
 
 ### MiniMax H3 輸入
 

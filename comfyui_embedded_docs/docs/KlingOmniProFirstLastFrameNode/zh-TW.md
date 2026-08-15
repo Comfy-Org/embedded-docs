@@ -7,15 +7,15 @@
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `model_name` | 用於影片生成的特定 Kling AI 模型。 | COMBO | 是 | `"kling-v3-omni"`<br>`"kling-video-o1"` |
-| `prompt` | 描述影片內容的文字提示詞。可包含正面和負面描述。啟用分鏡時忽略。 | STRING | 是 | - |
-| `duration` | 生成影片的所需長度（以秒為單位，預設：5）。 | INT | 是 | 3 到 15 |
-| `first_frame` | 影片序列的起始圖像。 | IMAGE | 是 | - |
-| `end_frame` | 影片的可選結束幀。不能與 `reference_images` 同時使用。不適用於分鏡。 | IMAGE | 否 | - |
-| `reference_images` | 最多 6 張額外的參考圖像。 | IMAGE | 否 | - |
-| `resolution` | 生成影片的輸出解析度（預設："1080p"）。 | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | 生成一系列具有各自提示詞和持續時間的影片片段。僅支援 `kling-v3-omni`。啟用時，每個分鏡都需要提示詞和持續時間輸入。 | DYNAMIC_COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | 為影片生成音訊（預設：False）。僅支援 `kling-v3-omni`。 | BOOLEAN | 否 | True / False |
-| `seed` | 種子控制節點是否應重新執行；無論種子為何，結果都是非確定性的（預設：0）。 | INT | 否 | 0 到 2147483647 |
+| `提示詞` | 描述影片內容的文字提示詞。可包含正面和負面描述。啟用分鏡時忽略。 | STRING | 是 | - |
+| `時長` | 生成影片的所需長度（以秒為單位，預設：5）。 | INT | 是 | 3 到 15 |
+| `起始影格` | 影片序列的起始圖像。 | IMAGE | 是 | - |
+| `結束影格` | 影片的可選結束幀。不能與 `reference_images` 同時使用。不適用於分鏡。 | IMAGE | 否 | - |
+| `參考圖片` | 最多 6 張額外的參考圖像。 | IMAGE | 否 | - |
+| `解析度` | 生成影片的輸出解析度（預設："1080p"）。 | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `分鏡腳本` | 生成一系列具有各自提示詞和持續時間的影片片段。僅支援 `kling-v3-omni`。啟用時，每個分鏡都需要提示詞和持續時間輸入。 | DYNAMIC_COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `產生音訊` | 為影片生成音訊（預設：False）。僅支援 `kling-v3-omni`。 | BOOLEAN | 否 | True / False |
+| `種子` | 種子控制節點是否應重新執行；無論種子為何，結果都是非確定性的（預設：0）。 | INT | 否 | 0 到 2147483647 |
 
 ### 分鏡輸入
 
