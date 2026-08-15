@@ -14,7 +14,7 @@ This node generates objects or scenery inside a masked region of an image using 
 | `seed` | Seed for the generation process. (default: 42) | INT | Yes | 1 to 2147483647 |
 | `moderation` | Moderation settings for the request. When set to "true", the nested moderation options described below are applied. (default: "false") | COMBO | Yes | "false"<br>"true" |
 
-Note: The `prompt` must not be empty, and the `mask` must have the same aspect ratio as the `image`.
+Note: The `prompt` must not be empty, and the `mask` must have the same aspect ratio as the `image`. The mask is binarized at 50% opacity, so areas painted at less than half opacity are ignored; if the mask contains no white areas after binarization, the node raises an error.
 
 When `moderation` is set to "true", the following nested boolean options are available:
 - `prompt_content_moderation` (default: false): Applies content moderation to the prompt.

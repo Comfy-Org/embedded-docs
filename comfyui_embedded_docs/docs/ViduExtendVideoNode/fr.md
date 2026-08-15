@@ -1,30 +1,37 @@
 # Extension de vidéo Vidu
 
-Voici la traduction en français de la documentation du nœud ViduExtendVideoNode :
-
-Le nœud ViduExtendVideoNode génère des images supplémentaires pour prolonger la durée d'une vidéo existante. Il utilise un modèle d'IA spécifié pour créer une continuation fluide basée sur la vidéo source et une invite textuelle optionnelle.
+Le nœud ViduExtendVideoNode génère des images supplémentaires pour prolonger la durée d’une vidéo existante. Il utilise un modèle d’IA spécifié pour créer une continuation fluide à partir de la vidéo source et d’une invite de texte facultative.
 
 ## Entrées
 
-| Paramètre | Description | Type de données | Requis | Plage |
-| --- | --- | --- | --- | --- |
-| `modèle` | Le modèle d'IA à utiliser pour l'extension vidéo. La sélection d'un modèle révèle ses paramètres spécifiques de durée et de résolution. | COMBO | Oui | `"viduq2-pro"`<br>`"viduq2-turbo"` |
-| `model.duration` | La durée de la vidéo étendue en secondes (par défaut : 4). Ce paramètre apparaît après la sélection d'un modèle. | INT | Oui | 1 à 7 |
-| `model.resolution` | La résolution de la vidéo de sortie. Ce paramètre apparaît après la sélection d'un modèle. | COMBO | Oui | `"720p"`<br>`"1080p"` |
-| `vidéo` | La vidéo source à étendre. | VIDEO | Oui | - |
-| `invite` | Une invite textuelle optionnelle pour guider le contenu de la vidéo étendue (2000 caractères maximum, par défaut : vide). | STRING | Non | - |
-| `graine` | Une valeur de graine pour contrôler l'aléatoire de la génération (par défaut : 1). | INT | Non | 0 à 2147483647 |
-| `image_finale` | Une image optionnelle à utiliser comme image de fin cible pour l'extension. Si fournie, son rapport hauteur/largeur doit être compris entre 1:4 et 4:1, et ses dimensions doivent être d'au moins 128x128 pixels. | IMAGE | Non | - |
+### Entrées communes
 
-**Remarque :** La `video` source doit avoir une durée comprise entre 4 et 55 secondes.
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `model` | Modèle à utiliser pour l’extension vidéo. La sélection d’un modèle révèle ses paramètres spécifiques de durée et de résolution. | COMBO | Oui | `"viduq2-pro"`<br>`"viduq2-turbo"` |
+| `video` | La vidéo source à prolonger. | VIDEO | Oui | - |
+| `prompt` | Invite de texte facultative pour la vidéo prolongée (2 000 caractères maximum, par défaut : vide). | STRING | Non | - |
+| `seed` | Valeur de graine pour contrôler le caractère aléatoire de la génération (par défaut : 1). | INT | Non | 0 à 2147483647 |
+| `end_frame` | Image facultative à utiliser comme image de fin cible pour l’extension. | IMAGE | Non | - |
+
+### Entrées viduq2-pro et viduq2-turbo
+
+Ces paramètres sont communs aux deux modèles.
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `model.duration` | Durée de la vidéo prolongée en secondes (par défaut : 4). Ce paramètre apparaît après avoir sélectionné un modèle. | INT | Oui | 1 à 7 |
+| `model.resolution` | Résolution de la vidéo de sortie. Ce paramètre apparaît après avoir sélectionné un modèle. | COMBO | Oui | `"720p"`<br>`"1080p"` |
+
+**Remarque :** La `video` source doit avoir une durée comprise entre 4 et 55 secondes. Si `end_frame` est fourni, son ratio hauteur/largeur doit être compris entre 1:4 et 4:1, et sa largeur et sa hauteur doivent chacune être d’au moins 128 pixels.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
-| --- | --- | --- |
-| `output` | Le fichier vidéo nouvellement généré contenant les images étendues. | VIDEO |
+|---------------|-------------|-----------------|
+| `output` | Le fichier vidéo nouvellement généré contenant la séquence prolongée. | VIDEO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduExtendVideoNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `44b942413c8aed2fc0049386a31c441f6f870ba4220b0c439dfc436079229446`
+**Source fingerprint (SHA-256):** `bfa79dd1aee8a3e56d95fe7a899454b5c5f93679e098f59fc3bf58d93d290819`

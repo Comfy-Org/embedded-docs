@@ -1,4 +1,4 @@
-# Bria FIBO Image Edit Node
+# Bria FIBO Image Edit
 
 The Bria FIBO Image Edit node allows you to modify an existing image using a text instruction. It sends the image and your prompt to the Bria API, which uses the FIBO model to generate a new, edited version of the image based on your request. You can also provide a mask to limit the edits to a specific area.
 
@@ -8,9 +8,9 @@ The Bria FIBO Image Edit node allows you to modify an existing image using a tex
 |-----------|-------------|-----------|----------|-------|
 | `model` | The model version to use for image editing. | COMBO | Yes | `"FIBO"` |
 | `image` | The input image you want to edit. | IMAGE | Yes | - |
-| `prompt` | Instruction to edit image (default: empty). | STRING | No | - |
-| `negative_prompt` | Text describing what you do not want to appear in the edited image (default: empty). | STRING | No | - |
-| `structured_prompt` | A string containing the structured edit prompt in JSON format. Use this instead of the usual prompt for precise, programmatic control (default: empty). | STRING | No | - |
+| `prompt` | Instruction to edit image (default: empty). | STRING | Yes | - |
+| `negative_prompt` | Text describing what you do not want to appear in the edited image (default: empty). | STRING | Yes | - |
+| `structured_prompt` | A string containing the structured edit prompt in JSON format. Use this instead of the usual prompt for precise, programmatic control (default: empty). | STRING | Yes | - |
 | `seed` | A number used to initialize the random generation, ensuring reproducible results (default: 1). | INT | Yes | 1 to 2147483647 |
 | `guidance_scale` | Higher value makes the image follow the prompt more closely (default: 3.0). | FLOAT | Yes | 3.0 to 5.0 |
 | `steps` | The number of denoising steps the model will perform (default: 50). | INT | Yes | 20 to 50 |
