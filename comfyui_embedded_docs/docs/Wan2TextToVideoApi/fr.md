@@ -12,7 +12,7 @@ Les entrées incluent des paramètres communs et des paramètres spécifiques au
 |-----------|-------------|-----------------|--------|-------|
 | `model` | Le modèle spécifique à utiliser pour la génération de vidéo. | DYNAMIC_COMBO | Oui | `"wan2.7-t2v"` |
 | `audio` | Audio pour piloter la génération vidéo (par exemple, synchronisation labiale, mouvement synchronisé sur le rythme). Durée : 1,5 s à 60 s. S'il n'est pas fourni, le modèle génère automatiquement une musique de fond ou des effets sonores assortis. | AUDIO | Non | - |
-| `seed` | Graine à utiliser pour la génération (par défaut : 0). | INT | Non | 0 to 2147483647 |
+| `seed` | Graine à utiliser pour la génération (par défaut : 0). | INT | Non | 0 à 2147483647 |
 | `prompt_extend` | Indique s'il faut enrichir le prompt à l'aide de l'IA (par défaut : True). | BOOLEAN | Non | True<br>False |
 | `watermark` | Indique s'il faut ajouter un filigrane généré par l'IA au résultat (par défaut : False). | BOOLEAN | Non | True<br>False |
 
@@ -26,7 +26,7 @@ Ces paramètres apparaissent lorsque le modèle `wan2.7-t2v` est sélectionné.
 | `negative_prompt` | Prompt négatif décrivant ce qu'il faut éviter. | STRING | Non | - |
 | `resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | `"720P"`<br>`"1080P"` |
 | `ratio` | Le rapport d'aspect de la vidéo de sortie. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
-| `duration` | La durée de la vidéo en secondes (par défaut : 5). | INT | Oui | 2 to 15 |
+| `duration` | La durée de la vidéo en secondes (par défaut : 5). | INT | Oui | 2 à 15 |
 
 **Remarque :** L'entrée `prompt` ne doit pas être vide. L'entrée `audio` est facultative ; si elle est fournie, sa durée doit être comprise entre 1,5 et 60 secondes. En cas d'omission, le modèle génère automatiquement l'audio correspondant. Lorsque `negative_prompt` est laissé vide, il n'est pas envoyé à l'API. `prompt_extend` et `watermark` sont des options avancées.
 

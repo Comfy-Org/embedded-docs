@@ -12,7 +12,7 @@ Ce nœud génère une vidéo en interpolant entre une image de départ et une im
 | `first_frame` | Image de départ de la séquence vidéo. | IMAGE | Oui | - |
 | `end_frame` | Image de fin de la séquence vidéo. | IMAGE | Oui | - |
 | `prompt` | Description du prompt (2000 caractères maximum). | STRING | Oui | - |
-| `seed` | Valeur de graine pour contrôler le caractère aléatoire de la génération (par défaut : 1). | INT | Non | 0 to 2147483647 |
+| `seed` | Valeur de graine pour contrôler le caractère aléatoire de la génération (par défaut : 1). | INT | Non | 0 à 2147483647 |
 
 ### Entrées viduq3-pro et viduq3-turbo
 
@@ -21,7 +21,7 @@ Les paramètres suivants sont communs aux deux options de modèle (`viduq3-pro` 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `model.resolution` | Résolution de la vidéo de sortie. Ce paramètre apparaît après avoir sélectionné un `model`. | COMBO | Oui | `"720p"`<br>`"1080p"` |
-| `model.duration` | Durée de la vidéo de sortie en secondes (par défaut : 5). Ce paramètre apparaît après avoir sélectionné un `model`. | INT | Oui | 1 to 16 |
+| `model.duration` | Durée de la vidéo de sortie en secondes (par défaut : 5). Ce paramètre apparaît après avoir sélectionné un `model`. | INT | Oui | 1 à 16 |
 | `model.audio` | Lorsque activé, produit une vidéo avec le son (y compris le dialogue et les effets sonores) (par défaut : False). Ce paramètre apparaît après avoir sélectionné un `model`. | BOOLEAN | Oui | `True`<br>`False` |
 
 **Remarque :** Les images `first_frame` et `end_frame` doivent avoir des ratios d'aspect similaires. Le ratio d'aspect des deux images doit être compris entre 80 % et 125 % l'une de l'autre (une proximité relative entre 0,8 et 1,25).

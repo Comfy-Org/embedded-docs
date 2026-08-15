@@ -8,18 +8,18 @@
 
 | 매개변수 | 설명 | 데이터 유형 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 사용할 Grok 이미지 모델입니다. 아래 표시되는 하위 매개변수는 선택한 모델에 따라 변경됩니다. | DYNAMIC_COMBO | Yes | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
-| `prompt` | 이미지를 생성하는 데 사용되는 텍스트 프롬프트입니다. (기본값: "") | STRING | Yes | N/A |
-| `seed` | 노드 재실행 여부를 결정하는 시드입니다. 실제 결과는 시드와 관계없이 비결정적입니다. (기본값: 0) | INT | Yes | 0 to 2147483647 |
+| `model` | 사용할 Grok 이미지 모델입니다. 아래 표시되는 하위 매개변수는 선택한 모델에 따라 변경됩니다. | DYNAMIC_COMBO | 예 | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
+| `prompt` | 이미지를 생성하는 데 사용되는 텍스트 프롬프트입니다. (기본값: "") | STRING | 예 | N/A |
+| `seed` | 노드 재실행 여부를 결정하는 시드입니다. 실제 결과는 시드와 관계없이 비결정적입니다. (기본값: 0) | INT | 예 | 0 ~ 2147483647 |
 
 ### grok-imagine-image-2.0 입력
 
 | 매개변수 | 설명 | 데이터 유형 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `resolution` | 편집된 이미지의 출력 해상도입니다. | COMBO | Yes | "1K"<br>"2K" |
-| `number_of_images` | 생성할 편집 이미지 수입니다. (기본값: 1) | INT | Yes | 1 to 10 |
-| `quality` | 생성된 이미지의 품질 수준입니다. | COMBO | Yes | "medium"<br>"low" |
-| `aspect_ratio` | 편집된 이미지의 종횡비입니다. (기본값: "auto") | COMBO | Yes | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
+| `resolution` | 편집된 이미지의 출력 해상도입니다. | COMBO | 예 | "1K"<br>"2K" |
+| `number_of_images` | 생성할 편집 이미지 수입니다. (기본값: 1) | INT | 예 | 1 ~ 10 |
+| `quality` | 생성된 이미지의 품질 수준입니다. | COMBO | 예 | "medium"<br>"low" |
+| `aspect_ratio` | 편집된 이미지의 종횡비입니다. (기본값: "auto") | COMBO | 예 | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
 
 ### grok-imagine-image-quality 및 grok-imagine-image 입력
 
@@ -27,22 +27,22 @@ grok-imagine-image-quality 및 grok-imagine-image에 공통으로 적용됩니�
 
 | 매개변수 | 설명 | 데이터 유형 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `resolution` | 편집된 이미지의 출력 해상도입니다. | COMBO | Yes | "1K"<br>"2K" |
-| `number_of_images` | 생성할 편집 이미지 수입니다. (기본값: 1) | INT | Yes | 1 to 10 |
-| `aspect_ratio` | 여러 이미지가 연결된 경우에만 허용됩니다. (기본값: "auto") | COMBO | Yes | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
+| `resolution` | 편집된 이미지의 출력 해상도입니다. | COMBO | 예 | "1K"<br>"2K" |
+| `number_of_images` | 생성할 편집 이미지 수입니다. (기본값: 1) | INT | 예 | 1 ~ 10 |
+| `aspect_ratio` | 여러 이미지가 연결된 경우에만 허용됩니다. (기본값: "auto") | COMBO | 예 | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
 
 ### grok-imagine-image-pro 입력
 
 | 매개변수 | 설명 | 데이터 유형 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `resolution` | 편집된 이미지의 출력 해상도입니다. | COMBO | Yes | "1K"<br>"2K" |
-| `number_of_images` | 생성할 편집 이미지 수입니다. (기본값: 1) | INT | Yes | 1 to 10 |
+| `resolution` | 편집된 이미지의 출력 해상도입니다. | COMBO | 예 | "1K"<br>"2K" |
+| `number_of_images` | 생성할 편집 이미지 수입니다. (기본값: 1) | INT | 예 | 1 ~ 10 |
 
 ### 참조 입력
 
 | 매개변수 | 설명 | 데이터 유형 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `images` | 확장 가능한 슬롯: 편집할 참조 이미지를 하나 이상 연결합니다. 첫 번째 슬롯은 `image`이고, 추가 슬롯은 `image_1`, `image_2` 등입니다. 최대 이미지 수는 선택한 모델에 따라 달라집니다. | IMAGE | Yes | 1 image for `grok-imagine-image-pro`<br>1 to 3 images for `grok-imagine-image-2.0`, `grok-imagine-image-quality`, and `grok-imagine-image` |
+| `images` | 확장 가능한 슬롯: 편집할 참조 이미지를 하나 이상 연결합니다. 첫 번째 슬롯은 `image`이고, 추가 슬롯은 `image_1`, `image_2` 등입니다. 최대 이미지 수는 선택한 모델에 따라 달라집니다. | IMAGE | 예 | 1 image for `grok-imagine-image-pro`<br>1 ~ 3 images for `grok-imagine-image-2.0`, `grok-imagine-image-quality`, and `grok-imagine-image` |
 
 **제약 사항 참고:**
 - `prompt`에는 공백이 아닌 문자가 하나 이상 포함되어야 합니다.

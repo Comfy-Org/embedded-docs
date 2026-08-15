@@ -9,7 +9,7 @@ Générez une vidéo avec de l'audio à partir d'une invite texte à l'aide du m
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `model` | Le modèle vidéo Gemini utilisé pour générer la vidéo. | DYNAMIC_COMBO | Oui | "Omni Flash" |
-| `seed` | La graine (seed) contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine (valeur par défaut : 42). | INT | Oui | 0 to 2147483647 |
+| `seed` | La graine (seed) contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine (valeur par défaut : 42). | INT | Oui | 0 à 2147483647 |
 
 ### Entrées Omni Flash
 

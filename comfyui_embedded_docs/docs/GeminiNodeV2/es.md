@@ -1,6 +1,6 @@
 # Google Gemini
 
-Generate text responses with Google's Gemini models. Provide a text prompt and, optionally, one or more images, audio clips, videos, or files as multimodal context.
+Genere respuestas de texto con los modelos Gemini de Google. Proporcione un mensaje de texto y, opcionalmente, una o más imágenes, clips de audio, vídeos o archivos como contexto multimodal.
 
 ## Entradas
 

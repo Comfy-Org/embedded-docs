@@ -10,7 +10,7 @@ Générez des réponses textuelles avec les modèles Gemini de Google. Fournisse
 |-----------|-------------|-----------------|--------|-------|
 | `model` | Le modèle Gemini utilisé pour générer la réponse. | DYNAMIC_COMBO | Oui | `"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
 | `prompt` | Entrée textuelle fournie au modèle. Incluez des instructions détaillées, des questions ou du contexte. Doit contenir au moins un caractère non blanc. (par défaut : "") | STRING | Oui |  |
-| `seed` | Graine pour l'échantillonnage. Mettez à 0 pour obtenir une graine aléatoire. La sortie déterministe n'est pas garantie. (par défaut : 42) | INT | Oui | 0 to 2147483647 |
+| `seed` | Graine pour l'échantillonnage. Mettez à 0 pour obtenir une graine aléatoire. La sortie déterministe n'est pas garantie. (par défaut : 42) | INT | Oui | 0 à 2147483647 |
 | `system_prompt` | Instructions fondamentales qui dictent le comportement du modèle. (par défaut : "") | STRING | Non |  |
 
 ### Entrées Gemini 3.5 Flash
@@ -20,9 +20,9 @@ Ces entrées apparaissent lorsque `model` est défini sur `"Gemini 3.5 Flash"`.
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `thinking_level` | Le niveau d'effort de raisonnement interne avant de répondre. HIGH améliore la qualité sur les tâches difficiles mais coûte plus de jetons (de réflexion) et est plus lent. (par défaut : "MEDIUM") | COMBO | Oui | `"MINIMAL"`<br>`"LOW"`<br>`"MEDIUM"`<br>`"HIGH"` |
-| `temperature` | Contrôle le caractère aléatoire. Plus bas est plus ciblé/déterministe, plus haut est plus créatif. (par défaut : 1.0) | FLOAT | Oui | 0.0 to 2.0 |
-| `top_p` | Échantillonnage par noyau : échantillonner à partir du plus petit ensemble de jetons dont la probabilité cumulée atteint top_p. (par défaut : 0.95) | FLOAT | Oui | 0.0 to 1.0 |
-| `max_output_tokens` | Nombre maximal de jetons à générer, y compris le raisonnement interne du modèle. Avec `thinking_level` HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez cette valeur si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt une fois terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (par défaut : 32768) | INT | Oui | 16 to 65536 |
+| `temperature` | Contrôle le caractère aléatoire. Plus bas est plus ciblé/déterministe, plus haut est plus créatif. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 2.0 |
+| `top_p` | Échantillonnage par noyau : échantillonner à partir du plus petit ensemble de jetons dont la probabilité cumulée atteint top_p. (par défaut : 0.95) | FLOAT | Oui | 0.0 à 1.0 |
+| `max_output_tokens` | Nombre maximal de jetons à générer, y compris le raisonnement interne du modèle. Avec `thinking_level` HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez cette valeur si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt une fois terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (par défaut : 32768) | INT | Oui | 16 à 65536 |
 
 ### Entrées Gemini 3.1 Pro
 
@@ -31,9 +31,9 @@ Ces entrées apparaissent lorsque `model` est défini sur `"Gemini 3.1 Pro"`.
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `thinking_level` | Le niveau d'effort de raisonnement interne avant de répondre. HIGH améliore la qualité sur les tâches difficiles mais coûte plus de jetons (de réflexion) et est plus lent. (par défaut : "HIGH") | COMBO | Oui | `"LOW"`<br>`"HIGH"` |
-| `temperature` | Contrôle le caractère aléatoire. Plus bas est plus ciblé/déterministe, plus haut est plus créatif. (par défaut : 1.0) | FLOAT | Oui | 0.0 to 2.0 |
-| `top_p` | Échantillonnage par noyau : échantillonner à partir du plus petit ensemble de jetons dont la probabilité cumulée atteint top_p. (par défaut : 0.95) | FLOAT | Oui | 0.0 to 1.0 |
-| `max_output_tokens` | Nombre maximal de jetons à générer, y compris le raisonnement interne du modèle. Avec `thinking_level` HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez cette valeur si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt une fois terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (par défaut : 32768) | INT | Oui | 16 to 65536 |
+| `temperature` | Contrôle le caractère aléatoire. Plus bas est plus ciblé/déterministe, plus haut est plus créatif. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 2.0 |
+| `top_p` | Échantillonnage par noyau : échantillonner à partir du plus petit ensemble de jetons dont la probabilité cumulée atteint top_p. (par défaut : 0.95) | FLOAT | Oui | 0.0 à 1.0 |
+| `max_output_tokens` | Nombre maximal de jetons à générer, y compris le raisonnement interne du modèle. Avec `thinking_level` HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez cette valeur si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt une fois terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (par défaut : 32768) | INT | Oui | 16 à 65536 |
 
 ### Entrées Gemini 3.1 Flash-Lite
 
@@ -42,9 +42,9 @@ Ces entrées apparaissent lorsque `model` est défini sur `"Gemini 3.1 Flash-Lit
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `thinking_level` | Le niveau d'effort de raisonnement interne avant de répondre. HIGH améliore la qualité sur les tâches difficiles mais coûte plus de jetons (de réflexion) et est plus lent. (par défaut : "LOW") | COMBO | Oui | `"LOW"`<br>`"HIGH"` |
-| `temperature` | Contrôle le caractère aléatoire. Plus bas est plus ciblé/déterministe, plus haut est plus créatif. (par défaut : 1.0) | FLOAT | Oui | 0.0 to 2.0 |
-| `top_p` | Échantillonnage par noyau : échantillonner à partir du plus petit ensemble de jetons dont la probabilité cumulée atteint top_p. (par défaut : 0.95) | FLOAT | Oui | 0.0 to 1.0 |
-| `max_output_tokens` | Nombre maximal de jetons à générer, y compris le raisonnement interne du modèle. Avec `thinking_level` HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez cette valeur si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt une fois terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (par défaut : 32768) | INT | Oui | 16 to 65536 |
+| `temperature` | Contrôle le caractère aléatoire. Plus bas est plus ciblé/déterministe, plus haut est plus créatif. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 2.0 |
+| `top_p` | Échantillonnage par noyau : échantillonner à partir du plus petit ensemble de jetons dont la probabilité cumulée atteint top_p. (par défaut : 0.95) | FLOAT | Oui | 0.0 à 1.0 |
+| `max_output_tokens` | Nombre maximal de jetons à générer, y compris le raisonnement interne du modèle. Avec `thinking_level` HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez cette valeur si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt une fois terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (par défaut : 32768) | INT | Oui | 16 à 65536 |
 
 ### Entrées de médias et de fichiers
 

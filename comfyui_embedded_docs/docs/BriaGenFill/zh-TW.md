@@ -13,7 +13,7 @@
 | `prompt` | 描述要在遮罩區域內生成內容的文字。至少需包含 1 個字元。（預設值：""） | STRING | 是 | - |
 | `negative_prompt` | 描述應避免出現在生成結果中的內容的提示詞。若留空，則不會傳送至 API。（預設值：""） | STRING | 是 | - |
 | `refine_prompt` | 自動調整提示詞以獲得更好的結果；停用則完全按照原樣使用提示詞。（預設值：true） | BOOLEAN | 是 | true<br>false |
-| `seed` | 生成過程的種子值。（預設值：42） | INT | 是 | 1 to 2147483647 |
+| `seed` | 生成過程的種子值。（預設值：42） | INT | 是 | 1 至 2147483647 |
 | `moderation` | 審核設定。設為 "true" 時，會套用下方的審核選項。（預設值："false"） | DYNAMIC_COMBO | 是 | "false"<br>"true" |
 
 ### 審核輸入（當 `moderation` = "true" 時）

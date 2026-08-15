@@ -10,7 +10,7 @@ Wan2VideoEditApi 节点使用 Wan 2.7 模型，根据文本指令、参考图像
 |-----------|-------------|-----------|----------|-------|
 | `model` | 用于视频编辑的模型。 | DYNAMIC_COMBO | 是 | `"wan2.7-videoedit"` |
 | `video` | 要编辑的视频。 | VIDEO | 是 | - |
-| `seed` | 用于生成的种子。(默认: 0) | INT | 否 | 0 to 2147483647 |
+| `seed` | 用于生成的种子。(默认: 0) | INT | 否 | 0 到 2147483647 |
 | `audio_setting` | 'auto'：模型根据提示词决定是否重新生成音频。'origin'：保留输入视频的原始音频。(默认: "auto") | COMBO | 否 | `"auto"`<br>`"origin"` |
 | `watermark` | 是否在结果中添加 AI 生成的水印。(默认: False) | BOOLEAN | 否 | - |
 
@@ -27,7 +27,7 @@ Wan2VideoEditApi 节点使用 Wan 2.7 模型，根据文本指令、参考图像
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `reference_images` | 可增长的槽位：连接 0 到 4 张图像（`image1`...`image4`）以指导编辑。对于 wan2.7-videoedit 模型，数量限制为 4。 | IMAGE | 否 | 0 to 4 items |
+| `reference_images` | 可增长的槽位：连接 0 到 4 张图像（`image1`...`image4`）以指导编辑。对于 wan2.7-videoedit 模型，数量限制为 4。 | IMAGE | 否 | 0 到 4 items |
 
 **约束：**
 *   `prompt` 必须至少包含 1 个字符。

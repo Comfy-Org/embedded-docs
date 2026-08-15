@@ -9,7 +9,7 @@
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `model` | 用於影片生成的特定模型。 | DYNAMIC_COMBO | 是 | "wan2.7-r2v" |
-| `seed` | 用於生成的種子，有助於控制輸出的隨機性（預設值：0）。 | INT | 否 | 0 to 2147483647 |
+| `seed` | 用於生成的種子，有助於控制輸出的隨機性（預設值：0）。 | INT | 否 | 0 至 2147483647 |
 | `watermark` | 是否在結果中添加 AI 生成的水印（預設值：False）。這是進階設定。 | BOOLEAN | 否 | True<br>False |
 
 ### wan2.7-r2v 輸入
@@ -20,14 +20,14 @@
 | `model.negative_prompt` | 描述應避免之內容的負面提示（預設值：空）。 | STRING | 否 | - |
 | `model.resolution` | 輸出影片的解析度。 | COMBO | 是 | "720P"<br>"1080P" |
 | `model.ratio` | 輸出影片的長寬比。 | COMBO | 是 | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
-| `model.duration` | 生成影片的長度（秒）（預設值：5）。 | INT | 是 | 2 to 10 |
+| `model.duration` | 生成影片的長度（秒）（預設值：5）。 | INT | 是 | 2 至 10 |
 
 ### 參考輸入
 
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `model.reference_videos` | 可擴充插槽：最多連接 3 個參考影片（插槽 `video1` 至 `video3`）。整體至少需要一個參考影片或圖像。 | VIDEO | 否 | 0 to 3 items |
-| `model.reference_images` | 可擴充插槽：最多連接 5 個參考圖像（插槽 `image1` 至 `image5`）。整體至少需要一個參考影片或圖像。 | IMAGE | 否 | 0 to 5 items |
+| `model.reference_videos` | 可擴充插槽：最多連接 3 個參考影片（插槽 `video1` 至 `video3`）。整體至少需要一個參考影片或圖像。 | VIDEO | 否 | 0 至 3 items |
+| `model.reference_images` | 可擴充插槽：最多連接 5 個參考圖像（插槽 `image1` 至 `image5`）。整體至少需要一個參考影片或圖像。 | IMAGE | 否 | 0 至 5 items |
 
 **重要限制：**
 

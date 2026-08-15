@@ -1,6 +1,6 @@
 # HappyHorse 文本转视频
 
-Generates a video based on a text prompt using the HappyHorse model. This node sends your prompt and settings to the HappyHorse API, waits for the video to be generated, and then downloads the result.
+此节点使用 HappyHorse 模型根据文本提示生成视频。它会将您的提示和设置发送到 HappyHorse API，等待视频生成完成后下载结果。
 
 ## 输入
 

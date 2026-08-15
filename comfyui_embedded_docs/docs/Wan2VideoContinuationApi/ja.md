@@ -8,21 +8,21 @@ Wan 2.7 Video Continuation ノードは、入力ビデオクリップの終端�
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 使用するビデオ生成モデル。 | DYNAMIC_COMBO | Yes | `"wan2.7-i2v"` |
-| `first_clip` | 継続元となる入力ビデオ。長さ: 2秒〜10秒。出力のアスペクト比はこのビデオから取得されます。 | VIDEO | Yes | 2s to 10s |
-| `last_frame` | 最後のフレーム画像。継続部分はこのフレームに向かって遷移します。 | IMAGE | No | - |
-| `seed` | 生成に使用するシード値。(デフォルト: 0) | INT | Yes | 0 to 2147483647 |
-| `prompt_extend` | AI支援でプロンプトを拡張するかどうか。(デフォルト: True) | BOOLEAN | Yes | - |
-| `watermark` | 結果にAI生成ウォーターマークを追加するかどうか。(デフォルト: False) | BOOLEAN | Yes | - |
+| `model` | 使用するビデオ生成モデル。 | DYNAMIC_COMBO | はい | `"wan2.7-i2v"` |
+| `first_clip` | 継続元となる入力ビデオ。長さ: 2秒〜10秒。出力のアスペクト比はこのビデオから取得されます。 | VIDEO | はい | 2秒〜10秒 |
+| `last_frame` | 最後のフレーム画像。継続部分はこのフレームに向かって遷移します。 | IMAGE | いいえ | - |
+| `seed` | 生成に使用するシード値。(デフォルト: 0) | INT | はい | 0 〜 2147483647 |
+| `prompt_extend` | AI支援でプロンプトを拡張するかどうか。(デフォルト: True) | BOOLEAN | はい | - |
+| `watermark` | 結果にAI生成ウォーターマークを追加するかどうか。(デフォルト: False) | BOOLEAN | はい | - |
 
 ### wan2.7-i2v 入力
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model.prompt` | 要素と視覚的特徴を説明するプロンプト。英語と中国語に対応しています。(デフォルト: 空文字列) | STRING | Yes | - |
-| `model.negative_prompt` | 避けるべき内容を説明するネガティブプロンプト。(デフォルト: 空文字列) | STRING | Yes | - |
-| `model.resolution` | 出力ビデオの解像度。 | COMBO | Yes | `"720P"`<br>`"1080P"` |
-| `model.duration` | 出力全体の長さ（秒）。モデルは、入力クリップ後の残り時間を埋める継続部分を生成します。(デフォルト: 5) | INT | Yes | 2 to 15 |
+| `model.prompt` | 要素と視覚的特徴を説明するプロンプト。英語と中国語に対応しています。(デフォルト: 空文字列) | STRING | はい | - |
+| `model.negative_prompt` | 避けるべき内容を説明するネガティブプロンプト。(デフォルト: 空文字列) | STRING | はい | - |
+| `model.resolution` | 出力ビデオの解像度。 | COMBO | はい | `"720P"`<br>`"1080P"` |
+| `model.duration` | 出力全体の長さ（秒）。モデルは、入力クリップ後の残り時間を埋める継続部分を生成します。(デフォルト: 5) | INT | はい | 2 〜 15 |
 
 **注:** 入力ビデオ `first_clip` の長さは2秒から10秒の間である必要があります。
 

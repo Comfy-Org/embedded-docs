@@ -10,7 +10,7 @@ Le nœud Grok Reference-to-Video génère une vidéo à partir d’un prompt tex
 |-----------|-------------|-----------------|--------|-------|
 | `model` | Le modèle à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | `"grok-imagine-video-1.5"`<br>`"grok-imagine-video"` |
 | `prompt` | Description textuelle de la vidéo souhaitée. Doit être une chaîne non vide. | STRING | Oui | N/A |
-| `seed` | Seed pour déterminer si le nœud doit se relancer ; les résultats réels sont non déterministes, quelle que soit la seed (défaut : 0). | INT | Non | 0 to 2147483647 |
+| `seed` | Seed pour déterminer si le nœud doit se relancer ; les résultats réels sont non déterministes, quelle que soit la seed (défaut : 0). | INT | Non | 0 à 2147483647 |
 
 ### Grok Imagine Video 1.5 Entrées
 
@@ -23,7 +23,7 @@ Disponible lorsque `model` est défini sur `grok-imagine-video-1.5`.
 | `voice_3` | Troisième référence vocale facultative ; @Audio3 dans le prompt (défaut : none). | COMBO | Non | Options de voix prédéfinies, y compris `"none"` |
 | `resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | `"480p"`<br>`"720p"` |
 | `aspect_ratio` | Le rapport d’aspect de la vidéo de sortie. | COMBO | Oui | `"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` |
-| `duration` | La durée de la vidéo de sortie en secondes (défaut : 6). | INT | Oui | 1 to 15 |
+| `duration` | La durée de la vidéo de sortie en secondes (défaut : 6). | INT | Oui | 1 à 15 |
 
 ### Grok Imagine Video Entrées
 
@@ -33,13 +33,13 @@ Disponible lorsque `model` est défini sur `grok-imagine-video`.
 |-----------|-------------|-----------------|--------|-------|
 | `resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | `"480p"`<br>`"720p"` |
 | `aspect_ratio` | Le rapport d’aspect de la vidéo de sortie. | COMBO | Oui | `"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` |
-| `duration` | La durée de la vidéo de sortie en secondes (défaut : 6). | INT | Oui | 2 to 10 |
+| `duration` | La durée de la vidéo de sortie en secondes (défaut : 6). | INT | Oui | 2 à 10 |
 
 ### Entrées de référence
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `reference_images` | Emplacement extensible : connectez de 1 à 7 images de référence pour guider la génération vidéo. Avec `grok-imagine-video-1.5`, faites-y référence dans le prompt sous la forme @Image1 ... @Image7, numérotées dans l’ordre des entrées ; une entrée par lot est comptée une fois par image. | IMAGE | Oui | 1 to 7 images |
+| `reference_images` | Emplacement extensible : connectez de 1 à 7 images de référence pour guider la génération vidéo. Avec `grok-imagine-video-1.5`, faites-y référence dans le prompt sous la forme @Image1 ... @Image7, numérotées dans l’ordre des entrées ; une entrée par lot est comptée une fois par image. | IMAGE | Oui | 1 à 7 images |
 
 **Remarque :** Les sous-paramètres affichés dépendent du `model` sélectionné ; `grok-imagine-video-1.5` ajoute les entrées `voice_1`, `voice_2` et `voice_3`. Au moins une image de référence est requise, et le total est plafonné à 7 (une entrée par lot est comptée une fois par image). Avec `grok-imagine-video-1.5`, le prompt peut faire référence aux images connectées sous la forme `@Image1` ... `@Image7` et aux emplacements vocaux sous la forme `@Audio1`, `@Audio2`, `@Audio3` ; un `@image` ou `@audio` non numéroté fait référence au premier. `@AudioN` fait référence au widget `voice_N`, et non à l’ordre des voix activées. Faire référence à une image non connectée ou à un emplacement vocal défini sur `none` provoque une erreur. L’API ne prend en charge que les voix prédéfinies, pas de fichiers audio personnalisés.
 
