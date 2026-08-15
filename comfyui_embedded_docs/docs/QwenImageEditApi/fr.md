@@ -8,7 +8,7 @@ Ce nœud utilise les modèles Qwen-Image 3.0 pour modifier ou combiner jusqu’�
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser. Cette sélection inclut également le prompt texte, jusqu’à 3 entrées d’images de référence et un prompt négatif facultatif. | COMBO | Oui | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
+| `model` | Modèle à utiliser. Cette sélection inclut également le prompt texte, jusqu’à 3 entrées d’images de référence et un prompt négatif facultatif. | MODEL | Oui | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
 | `size` | Résolution de sortie. « match input » réutilise la taille de la première image de référence, « auto » laisse le modèle choisir une taille avec le même rapport hauteur/largeur, « custom » définit une largeur et une hauteur explicites. | COMBO | Oui | "match input"<br>"auto"<br>"custom" |
 | `n` | Nombre d’images à générer, renvoyées sous forme de lot. (par défaut : 1) | INT | Non | 1 à 6 |
 | `seed` | Graine à utiliser pour la génération. (par défaut : 42) | INT | Non | 0 à 2147483647 |
@@ -36,8 +36,8 @@ Affichées lorsque `size` est défini sur « custom ».
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `width` | Largeur de sortie. La surface totale en pixels doit être comprise entre 512x512 et 2560x2560 ; tout rapport hauteur/largeur dans cette surface est accepté. (par défaut : 1024) | INT | Oui (lorsque `size` est « custom ») | 256 à 2560, pas 16 |
-| `height` | Hauteur de sortie. La surface totale en pixels doit être comprise entre 512x512 et 2560x2560 ; tout rapport hauteur/largeur dans cette surface est accepté. (par défaut : 1024) | INT | Oui (lorsque `size` est « custom ») | 256 à 2560, pas 16 |
+| `width` | Largeur de sortie. La surface totale en pixels doit être comprise entre 512x512 et 2560x2560 ; le rapport hauteur/largeur doit être compris entre 1:8 et 8:1. (par défaut : 1024) | INT | Oui (lorsque `size` est « custom ») | 256 à 2560, pas 16 |
+| `height` | Hauteur de sortie. La surface totale en pixels doit être comprise entre 512x512 et 2560x2560 ; le rapport hauteur/largeur doit être compris entre 1:8 et 8:1. (par défaut : 1024) | INT | Oui (lorsque `size` est « custom ») | 256 à 2560, pas 16 |
 
 ### Contraintes
 

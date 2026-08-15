@@ -8,7 +8,7 @@ This node uses the Qwen-Image 3.0 models to edit or combine up to 3 reference im
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Model to use. This selection also includes the text prompt, up to 3 reference image inputs, and an optional negative prompt. | COMBO | Yes | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
+| `model` | Model to use. This selection also includes the text prompt, up to 3 reference image inputs, and an optional negative prompt. | MODEL | Yes | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
 | `size` | Output resolution. "match input" reuses the first reference image's size, "auto" lets the model pick a size with the same aspect ratio, "custom" sets an explicit width and height. | COMBO | Yes | "match input"<br>"auto"<br>"custom" |
 | `n` | Number of images to generate, returned as a batch. (default: 1) | INT | No | 1 to 6 |
 | `seed` | Seed to use for generation. (default: 42) | INT | No | 0 to 2147483647 |
@@ -36,8 +36,8 @@ Shown when `size` is set to "custom".
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `width` | Output width. The total pixel area must be between 512x512 and 2560x2560; any aspect ratio within that area works. (default: 1024) | INT | Yes (when `size` is "custom") | 256 to 2560, step 16 |
-| `height` | Output height. The total pixel area must be between 512x512 and 2560x2560; any aspect ratio within that area works. (default: 1024) | INT | Yes (when `size` is "custom") | 256 to 2560, step 16 |
+| `width` | Output width. The total pixel area must be between 512x512 and 2560x2560; the aspect ratio must be between 1:8 and 8:1. (default: 1024) | INT | Yes (when `size` is "custom") | 256 to 2560, step 16 |
+| `height` | Output height. The total pixel area must be between 512x512 and 2560x2560; the aspect ratio must be between 1:8 and 8:1. (default: 1024) | INT | Yes (when `size` is "custom") | 256 to 2560, step 16 |
 
 ### Constraints
 

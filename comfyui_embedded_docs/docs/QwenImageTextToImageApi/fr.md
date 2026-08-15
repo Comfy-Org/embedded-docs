@@ -22,8 +22,8 @@ Partagées par qwen-image-3.0-pro et qwen-image-3.0.
 |-----------|-------------|-----------------|--------|-------|
 | `prompt` | Prompt décrivant l’image. Prend en charge l’anglais et le chinois. Doit contenir au moins 1 caractère. | STRING | Oui | Texte libre |
 | `negative_prompt` | Prompt négatif décrivant ce qu’il faut éviter (par défaut : ""). | STRING | Non | Texte libre |
-| `width` | La superficie totale en pixels doit être comprise entre 512x512 et 2560x2560 ; tout rapport hauteur/largeur dans cette plage fonctionne. (par défaut : 1024) | INT | Non | 256 à 2560 (pas de 16) |
-| `height` | La superficie totale en pixels doit être comprise entre 512x512 et 2560x2560 ; tout rapport hauteur/largeur dans cette plage fonctionne. (par défaut : 1024) | INT | Non | 256 à 2560 (pas de 16) |
+| `width` | La superficie totale en pixels doit être comprise entre 512x512 et 2560x2560 ; le rapport hauteur/largeur doit être compris entre 1:8 et 8:1. (par défaut : 1024) | INT | Non | 256 à 2560 (pas de 16) |
+| `height` | La superficie totale en pixels doit être comprise entre 512x512 et 2560x2560 ; le rapport hauteur/largeur doit être compris entre 1:8 et 8:1. (par défaut : 1024) | INT | Non | 256 à 2560 (pas de 16) |
 
 Remarque : l’entrée `model` est un sélecteur composite avec les sous-champs `model` (ID du modèle), `prompt` (obligatoire, doit contenir au moins 1 caractère), `width` et `height` (dimensions de l’image), et `negative_prompt` (facultatif). La superficie totale en pixels combinée de `width` et `height` doit être comprise entre 262 144 pixels (512x512) et 6 553 600 pixels (2560x2560), et le rapport hauteur/largeur doit rester entre 1:8 et 8:1.
 

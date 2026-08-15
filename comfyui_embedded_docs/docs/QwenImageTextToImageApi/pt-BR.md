@@ -22,8 +22,8 @@ Compartilhadas por qwen-image-3.0-pro e qwen-image-3.0.
 |-----------|-------------|--------------|-------------|-------|
 | `prompt` | Prompt descrevendo a imagem. Suporta inglês e chinês. Deve conter pelo menos 1 caractere. | STRING | Sim | Texto livre |
 | `negative_prompt` | Prompt negativo descrevendo o que evitar (padrão: ""). | STRING | Não | Texto livre |
-| `width` | A área total de pixels deve estar entre 512x512 e 2560x2560; qualquer proporção de aspecto dentro dessa área funciona. (padrão: 1024) | INT | Não | 256 a 2560 (passo 16) |
-| `height` | A área total de pixels deve estar entre 512x512 e 2560x2560; qualquer proporção de aspecto dentro dessa área funciona. (padrão: 1024) | INT | Não | 256 a 2560 (passo 16) |
+| `width` | A área total de pixels deve estar entre 512x512 e 2560x2560; a proporção de aspecto deve estar entre 1:8 e 8:1. (padrão: 1024) | INT | Não | 256 a 2560 (passo 16) |
+| `height` | A área total de pixels deve estar entre 512x512 e 2560x2560; a proporção de aspecto deve estar entre 1:8 e 8:1. (padrão: 1024) | INT | Não | 256 a 2560 (passo 16) |
 
 Nota: a entrada `model` é um seletor composto com os subcampos `model` (ID do modelo), `prompt` (obrigatório, deve conter pelo menos 1 caractere), `width` e `height` (dimensões da imagem) e `negative_prompt` (opcional). A área de pixels combinada de `width` e `height` deve estar entre 262.144 pixels (512x512) e 6.553.600 pixels (2560x2560), e a proporção de aspecto deve permanecer entre 1:8 e 8:1.
 

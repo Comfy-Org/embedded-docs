@@ -8,7 +8,7 @@ Este nodo utiliza los modelos Qwen-Image 3.0 para editar o combinar hasta 3 imá
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `model` | Modelo a utilizar. Esta selección también incluye el prompt de texto, hasta 3 entradas de imágenes de referencia y un prompt negativo opcional. | COMBO | Sí | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
+| `model` | Modelo a utilizar. Esta selección también incluye el prompt de texto, hasta 3 entradas de imágenes de referencia y un prompt negativo opcional. | MODEL | Sí | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
 | `size` | Resolución de salida. "match input" reutiliza el tamaño de la primera imagen de referencia, "auto" permite que el modelo elija un tamaño con la misma relación de aspecto, "custom" establece un ancho y alto explícitos. | COMBO | Sí | "match input"<br>"auto"<br>"custom" |
 | `n` | Número de imágenes a generar, devueltas como un lote. (valor por defecto: 1) | INT | No | 1 a 6 |
 | `seed` | Semilla a utilizar para la generación. (valor por defecto: 42) | INT | No | 0 a 2147483647 |
@@ -36,8 +36,8 @@ Se muestran cuando `size` está establecido en "custom".
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `width` | Ancho de salida. El área total de píxeles debe estar entre 512x512 y 2560x2560; cualquier relación de aspecto dentro de esa área es válida. (valor por defecto: 1024) | INT | Sí (cuando `size` es "custom") | 256 a 2560, paso 16 |
-| `height` | Alto de salida. El área total de píxeles debe estar entre 512x512 y 2560x2560; cualquier relación de aspecto dentro de esa área es válida. (valor por defecto: 1024) | INT | Sí (cuando `size` es "custom") | 256 a 2560, paso 16 |
+| `width` | Ancho de salida. El área total de píxeles debe estar entre 512x512 y 2560x2560; la relación de aspecto debe estar entre 1:8 y 8:1. (valor por defecto: 1024) | INT | Sí (cuando `size` es "custom") | 256 a 2560, paso 16 |
+| `height` | Alto de salida. El área total de píxeles debe estar entre 512x512 y 2560x2560; la relación de aspecto debe estar entre 1:8 y 8:1. (valor por defecto: 1024) | INT | Sí (cuando `size` es "custom") | 256 a 2560, paso 16 |
 
 ### Restricciones
 

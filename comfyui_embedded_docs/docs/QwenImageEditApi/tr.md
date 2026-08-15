@@ -8,7 +8,7 @@ Bu düğüm, Qwen-Image 3.0 modellerini kullanarak, bir metin istemi rehberliği
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Kullanılacak model. Bu seçim ayrıca metin istemini, en fazla 3 referans görseli girdisini ve isteğe bağlı bir negatif istemi içerir. | COMBO | Evet | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
+| `model` | Kullanılacak model. Bu seçim ayrıca metin istemini, en fazla 3 referans görseli girdisini ve isteğe bağlı bir negatif istemi içerir. | MODEL | Evet | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
 | `size` | Çıktı çözünürlüğü. "match input" ilk referans görselin boyutunu yeniden kullanır, "auto" modelin aynı en-boy oranına sahip bir boyut seçmesini sağlar, "custom" açık bir genişlik ve yükseklik belirler. | COMBO | Evet | "match input"<br>"auto"<br>"custom" |
 | `n` | Oluşturulacak görsel sayısı, bir toplu iş olarak döndürülür. (varsayılan: 1) | INT | Hayır | 1 ile 6 arası |
 | `seed` | Üretim için kullanılacak tohum değeri. (varsayılan: 42) | INT | Hayır | 0 ile 2147483647 arası |
@@ -36,8 +36,8 @@ Her iki model de aynı alt parametreleri paylaşır.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `width` | Çıktı genişliği. Toplam piksel alanı 512x512 ile 2560x2560 arasında olmalıdır; bu alan içindeki herhangi bir en-boy oranı çalışır. (varsayılan: 1024) | INT | Evet (`size` "custom" olduğunda) | 256 ile 2560 arası, adım 16 |
-| `height` | Çıktı yüksekliği. Toplam piksel alanı 512x512 ile 2560x2560 arasında olmalıdır; bu alan içindeki herhangi bir en-boy oranı çalışır. (varsayılan: 1024) | INT | Evet (`size` "custom" olduğunda) | 256 ile 2560 arası, adım 16 |
+| `width` | Çıktı genişliği. Toplam piksel alanı 512x512 ile 2560x2560 arasında olmalıdır; en-boy oranı 1:8 ile 8:1 arasında olmalıdır. (varsayılan: 1024) | INT | Evet (`size` "custom" olduğunda) | 256 ile 2560 arası, adım 16 |
+| `height` | Çıktı yüksekliği. Toplam piksel alanı 512x512 ile 2560x2560 arasında olmalıdır; en-boy oranı 1:8 ile 8:1 arasında olmalıdır. (varsayılan: 1024) | INT | Evet (`size` "custom" olduğunda) | 256 ile 2560 arası, adım 16 |
 
 ### Kısıtlamalar
 

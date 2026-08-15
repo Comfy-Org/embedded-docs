@@ -8,7 +8,7 @@ Este nó usa os modelos Qwen-Image 3.0 para editar ou combinar até 3 imagens de
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a ser usado. Essa seleção também inclui o prompt de texto, até 3 entradas de imagens de referência e um prompt negativo opcional. | COMBO | Sim | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
+| `model` | Modelo a ser usado. Essa seleção também inclui o prompt de texto, até 3 entradas de imagens de referência e um prompt negativo opcional. | MODEL | Sim | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
 | `size` | Resolução de saída. "match input" reutiliza o tamanho da primeira imagem de referência, "auto" permite que o modelo escolha um tamanho com a mesma proporção, "custom" define largura e altura explícitas. | COMBO | Sim | "match input"<br>"auto"<br>"custom" |
 | `n` | Número de imagens a gerar, retornadas em lote. (padrão: 1) | INT | Não | 1 a 6 |
 | `seed` | Semente a ser usada para a geração. (padrão: 42) | INT | Não | 0 a 2147483647 |
@@ -36,8 +36,8 @@ Exibidas quando `size` é definido como "custom".
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `width` | Largura de saída. A área total de pixels deve estar entre 512x512 e 2560x2560; qualquer proporção dentro dessa área funciona. (padrão: 1024) | INT | Sim (quando `size` é "custom") | 256 a 2560, passo 16 |
-| `height` | Altura de saída. A área total de pixels deve estar entre 512x512 e 2560x2560; qualquer proporção dentro dessa área funciona. (padrão: 1024) | INT | Sim (quando `size` é "custom") | 256 a 2560, passo 16 |
+| `width` | Largura de saída. A área total de pixels deve estar entre 512x512 e 2560x2560; a proporção deve estar entre 1:8 e 8:1. (padrão: 1024) | INT | Sim (quando `size` é "custom") | 256 a 2560, passo 16 |
+| `height` | Altura de saída. A área total de pixels deve estar entre 512x512 e 2560x2560; a proporção deve estar entre 1:8 e 8:1. (padrão: 1024) | INT | Sim (quando `size` é "custom") | 256 a 2560, passo 16 |
 
 ### Restrições
 

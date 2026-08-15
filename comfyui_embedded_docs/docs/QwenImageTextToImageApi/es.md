@@ -22,8 +22,8 @@ Compartidas por qwen-image-3.0-pro y qwen-image-3.0.
 |-----------|-------------|--------------|-------------|-------|
 | `prompt` | Prompt que describe la imagen. Admite inglés y chino. Debe contener al menos 1 carácter. | STRING | Sí | Texto libre |
 | `negative_prompt` | Prompt negativo que describe lo que se debe evitar (predeterminado: ""). | STRING | No | Texto libre |
-| `width` | El área total de píxeles debe estar entre 512x512 y 2560x2560; cualquier relación de aspecto dentro de esa área funciona. (predeterminado: 1024) | INT | No | 256 a 2560 (paso 16) |
-| `height` | El área total de píxeles debe estar entre 512x512 y 2560x2560; cualquier relación de aspecto dentro de esa área funciona. (predeterminado: 1024) | INT | No | 256 a 2560 (paso 16) |
+| `width` | El área total de píxeles debe estar entre 512x512 y 2560x2560; la relación de aspecto debe estar entre 1:8 y 8:1. (predeterminado: 1024) | INT | No | 256 a 2560 (paso 16) |
+| `height` | El área total de píxeles debe estar entre 512x512 y 2560x2560; la relación de aspecto debe estar entre 1:8 y 8:1. (predeterminado: 1024) | INT | No | 256 a 2560 (paso 16) |
 
 Nota: La entrada `model` es un selector compuesto con los subcampos `model` (ID del modelo), `prompt` (obligatorio, debe contener al menos 1 carácter), `width` y `height` (dimensiones de la imagen), y `negative_prompt` (opcional). El área de píxeles combinada de `width` y `height` debe estar entre 262,144 píxeles (512x512) y 6,553,600 píxeles (2560x2560), y la relación de aspecto debe mantenerse entre 1:8 y 8:1.
 

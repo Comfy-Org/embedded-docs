@@ -10,7 +10,7 @@ This node edits an existing image using a text prompt, powered by the Luma UNI-1
 |-----------|-------------|-----------|----------|-------|
 | `model` | Model to use for editing. Selecting a model reveals the model-specific options below. | MODEL | Yes | `"uni-1"`<br>`"uni-1-max"` |
 | `source` | Source image to edit. | IMAGE | Yes | - |
-| `prompt` | Description of the desired edit. 1–6000 characters. Default: "" (empty string). | STRING | Yes | 1 to 6000 characters |
+| `prompt` | Description of the desired edit. 1–6000 characters. Default: "" (empty string; the request is invalid until at least one character is entered). | STRING | Yes | 1 to 6000 characters |
 | `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed. Default: 0. | INT | Yes | 0 to 2147483647 |
 
 ### uni-1 and uni-1-max Inputs
@@ -26,7 +26,7 @@ These options are shared by both the `uni-1` and `uni-1-max` models.
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `image_ref` | Growable slot: connect up to 8 reference images (`image_1` through `image_8`) for style/content guidance. Optional. | IMAGE | No | 1 to 8 images |
+| `image_ref` | Growable slot: connect up to 8 reference images (`image_1` through `image_8`) for style/content guidance. Optional. | IMAGE | No | 0 to 8 images |
 
 **Notes:**
 - The `prompt` must be between 1 and 6000 characters.

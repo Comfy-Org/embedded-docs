@@ -22,8 +22,8 @@ qwen-image-3.0-pro ve qwen-image-3.0 için ortaktır.
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Görseli tanımlayan prompt. İngilizce ve Çince destekler. En az 1 karakter içermelidir. | STRING | Evet | Serbest metin |
 | `negative_prompt` | Kaçınılması gerekenleri tanımlayan negatif prompt (varsayılan: ""). | STRING | Hayır | Serbest metin |
-| `width` | Toplam piksel alanı 512x512 ile 2560x2560 arasında olmalıdır; bu alan içinde herhangi bir en-boy oranı çalışır. (varsayılan: 1024) | INT | Hayır | 256 ila 2560 (adım 16) |
-| `height` | Toplam piksel alanı 512x512 ile 2560x2560 arasında olmalıdır; bu alan içinde herhangi bir en-boy oranı çalışır. (varsayılan: 1024) | INT | Hayır | 256 ila 2560 (adım 16) |
+| `width` | Toplam piksel alanı 512x512 ile 2560x2560 arasında olmalıdır; en-boy oranı 1:8 ile 8:1 arasında olmalıdır. (varsayılan: 1024) | INT | Hayır | 256 ila 2560 (adım 16) |
+| `height` | Toplam piksel alanı 512x512 ile 2560x2560 arasında olmalıdır; en-boy oranı 1:8 ile 8:1 arasında olmalıdır. (varsayılan: 1024) | INT | Hayır | 256 ila 2560 (adım 16) |
 
 Not: `model` girdisi, alt alanları `model` (model kimliği), `prompt` (gerekli, en az 1 karakter içermelidir), `width` ve `height` (görsel boyutları) ve `negative_prompt` (isteğe bağlı) olan bir birleşik seçicidir. `width` ve `height` değerlerinin toplam piksel alanı 262.144 piksel (512x512) ile 6.553.600 piksel (2560x2560) arasında olmalı ve en-boy oranı 1:8 ile 8:1 arasında kalmalıdır.
 

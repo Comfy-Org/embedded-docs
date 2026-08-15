@@ -10,7 +10,7 @@ Este nodo edita una imagen existente utilizando un prompt de texto, impulsado po
 |-----------|-------------|---------------|-----------|-------|
 | `model` | Modelo a utilizar para la edición. Al seleccionar un modelo, se muestran las opciones específicas de ese modelo a continuación. | MODEL | Sí | `"uni-1"`<br>`"uni-1-max"` |
 | `source` | Imagen de origen a editar. | IMAGE | Sí | - |
-| `prompt` | Descripción de la edición deseada. De 1 a 6000 caracteres. Predeterminado: "" (cadena vacía). | STRING | Sí | 1 a 6000 caracteres |
+| `prompt` | Descripción de la edición deseada. De 1 a 6000 caracteres. Predeterminado: "" (cadena vacía; la solicitud no es válida hasta que se ingresa al menos un carácter). | STRING | Sí | 1 a 6000 caracteres |
 | `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Predeterminado: 0. | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de uni-1 y uni-1-max
@@ -26,7 +26,7 @@ Estas opciones son compartidas por los modelos `uni-1` y `uni-1-max`.
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `image_ref` | Ranura ampliable: conecta hasta 8 imágenes de referencia (`image_1` a `image_8`) para guiar el estilo/contenido. Opcional. | IMAGE | No | 1 a 8 imágenes |
+| `image_ref` | Ranura ampliable: conecta hasta 8 imágenes de referencia (`image_1` a `image_8`) para guiar el estilo/contenido. Opcional. | IMAGE | No | 0 a 8 imágenes |
 
 **Notas:**
 - El parámetro `prompt` debe tener entre 1 y 6000 caracteres.

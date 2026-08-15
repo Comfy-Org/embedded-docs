@@ -10,7 +10,7 @@ Este nó edita uma imagem existente usando um prompt de texto, com tecnologia do
 |-----------|-------------|-----------|----------|-------|
 | `model` | Modelo a ser usado para edição. Selecionar um modelo revela as opções específicas do modelo abaixo. | MODEL | Sim | `"uni-1"`<br>`"uni-1-max"` |
 | `source` | Imagem de origem para editar. | IMAGE | Sim | - |
-| `prompt` | Descrição da edição desejada. 1–6000 caracteres. Padrão: "" (string vazia). | STRING | Sim | 1 a 6000 caracteres |
+| `prompt` | Descrição da edição desejada. 1–6000 caracteres. Padrão: "" (string vazia; a solicitação é inválida até que pelo menos um caractere seja inserido). | STRING | Sim | 1 a 6000 caracteres |
 | `seed` | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente. Padrão: 0. | INT | Sim | 0 a 2147483647 |
 
 ### Entradas de uni-1 e uni-1-max
@@ -26,7 +26,7 @@ Estas opções são compartilhadas pelos modelos `uni-1` e `uni-1-max`.
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image_ref` | Slot expansível: conecte até 8 imagens de referência (`image_1` a `image_8`) para orientação de estilo/conteúdo. Opcional. | IMAGE | Não | 1 a 8 imagens |
+| `image_ref` | Slot expansível: conecte até 8 imagens de referência (`image_1` a `image_8`) para orientação de estilo/conteúdo. Opcional. | IMAGE | Não | 0 a 8 imagens |
 
 **Notas:**
 - O `prompt` deve ter entre 1 e 6000 caracteres.

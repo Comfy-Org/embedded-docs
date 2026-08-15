@@ -10,7 +10,7 @@ Ce nœud modifie une image existante à l'aide d'une invite textuelle, propulsé
 |-----------|-------------|-----------------|-------------|-------|
 | `modèle` | Modèle à utiliser pour l'édition. La sélection d'un modèle révèle les options spécifiques au modèle ci-dessous. | MODEL | Oui | `"uni-1"`<br>`"uni-1-max"` |
 | `source` | Image source à modifier. | IMAGE | Oui | - |
-| `invite` | Description de la modification souhaitée. 1 à 6000 caractères. Par défaut : "" (chaîne vide). | STRING | Oui | 1 à 6000 caractères |
+| `invite` | Description de la modification souhaitée. 1 à 6000 caractères. Par défaut : "" (chaîne vide ; la requête est invalide tant qu'au moins un caractère n'est pas saisi). | STRING | Oui | 1 à 6000 caractères |
 | `graine` | La graine (seed) contrôle si le nœud doit s'exécuter à nouveau ; les résultats sont non déterministes quelle que soit la graine. Par défaut : 0. | INT | Oui | 0 à 2147483647 |
 
 ### Entrées uni-1 et uni-1-max
@@ -26,7 +26,7 @@ Ces options sont communes aux modèles `uni-1` et `uni-1-max`.
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `image_ref` | Emplacement extensible : connectez jusqu'à 8 images de référence (`image_1` à `image_8`) pour guider le style/contenu. Facultatif. | IMAGE | Non | 1 à 8 images |
+| `image_ref` | Emplacement extensible : connectez jusqu'à 8 images de référence (`image_1` à `image_8`) pour guider le style/contenu. Facultatif. | IMAGE | Non | 0 à 8 images |
 
 **Remarques :**
 - Le `prompt` doit contenir entre 1 et 6000 caractères.

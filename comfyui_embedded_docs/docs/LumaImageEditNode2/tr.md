@@ -10,7 +10,7 @@ Bu düğüm, Luma UNI-1 modeli tarafından desteklenen bir metin istemi kullanar
 |-----------|-------------|-----------|----------|-------|
 | `model` | Düzenleme için kullanılacak model. Bir model seçmek, aşağıdaki modele özgü seçenekleri ortaya çıkarır. | MODEL | Evet | `"uni-1"`<br>`"uni-1-max"` |
 | `source` | Düzenlenecek kaynak görsel. | IMAGE | Evet | - |
-| `prompt` | İstenen düzenlemenin açıklaması. 1–6000 karakter. Varsayılan: "" (boş dize). | STRING | Evet | 1 ile 6000 karakter arası |
+| `prompt` | İstenen düzenlemenin açıklaması. 1–6000 karakter. Varsayılan: "" (boş dize; en az bir karakter girilene kadar istek geçersizdir). | STRING | Evet | 1 ile 6000 karakter arası |
 | `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan: 0. | INT | Evet | 0 ile 2147483647 arası |
 
 ### uni-1 ve uni-1-max Girdileri
@@ -26,7 +26,7 @@ Bu seçenekler hem `uni-1` hem de `uni-1-max` modelleri tarafından paylaşılı
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image_ref` | Genişletilebilir yuva: stil/içerik rehberliği için 8'e kadar referans görseli bağlayın (`image_1` ile `image_8` arası). İsteğe bağlı. | IMAGE | Hayır | 1 ile 8 görsel arası |
+| `image_ref` | Genişletilebilir yuva: stil/içerik rehberliği için 8'e kadar referans görseli bağlayın (`image_1` ile `image_8` arası). İsteğe bağlı. | IMAGE | Hayır | 0 ile 8 görsel arası |
 
 **Notlar:**
 - `prompt` 1 ile 6000 karakter arasında olmalıdır.

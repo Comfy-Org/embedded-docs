@@ -22,8 +22,8 @@ Shared by qwen-image-3.0-pro and qwen-image-3.0.
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt describing the image. Supports English and Chinese. Must contain at least 1 character. | STRING | Yes | Free text |
 | `negative_prompt` | Negative prompt describing what to avoid (default: ""). | STRING | No | Free text |
-| `width` | The total pixel area must be between 512x512 and 2560x2560; any aspect ratio within that area works. (default: 1024) | INT | No | 256 to 2560 (step 16) |
-| `height` | The total pixel area must be between 512x512 and 2560x2560; any aspect ratio within that area works. (default: 1024) | INT | No | 256 to 2560 (step 16) |
+| `width` | The total pixel area must be between 512x512 and 2560x2560; the aspect ratio must be between 1:8 and 8:1. (default: 1024) | INT | No | 256 to 2560 (step 16) |
+| `height` | The total pixel area must be between 512x512 and 2560x2560; the aspect ratio must be between 1:8 and 8:1. (default: 1024) | INT | No | 256 to 2560 (step 16) |
 
 Note: The `model` input is a composite selector with the sub-fields `model` (model ID), `prompt` (required, must contain at least 1 character), `width` and `height` (image dimensions), and `negative_prompt` (optional). The combined pixel area of `width` and `height` must be between 262,144 pixels (512x512) and 6,553,600 pixels (2560x2560), and the aspect ratio must stay between 1:8 and 8:1.
 
