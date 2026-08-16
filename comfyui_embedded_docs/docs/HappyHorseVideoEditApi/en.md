@@ -11,7 +11,7 @@ Edit a video using text instructions or reference images with the HappyHorse mod
 | `model` | The HappyHorse video editing model to use. This selection determines which prompt, resolution, ratio, and reference image options are available. | DYNAMIC_COMBO | Yes | "happyhorse-1.0-video-edit" |
 | `video` | The video to edit. | VIDEO | Yes | 3 to 60 seconds |
 | `seed` | Seed to use for generation (default: 0). | INT | Yes | 0 to 2147483647 |
-| `watermark` | Whether to add an AI-generated watermark to the result (default: False). | BOOLEAN | No | True<br>False |
+| `watermark` | Whether to add an AI-generated watermark to the result (default: False). | BOOLEAN | Yes | True<br>False |
 
 ### happyhorse-1.0-video-edit Inputs
 

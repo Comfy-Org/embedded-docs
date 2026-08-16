@@ -9,8 +9,8 @@ This node generates a video featuring a person or object from reference images u
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `model` | The HappyHorse reference-to-video model to use for generation. | DYNAMIC_COMBO | Yes | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
-| `seed` | Seed to use for generation (default: 0). Can be set to automatically change after each generation. | INT | No | 0 to 2147483647 |
-| `watermark` | Whether to add an AI-generated watermark to the result (default: False). | BOOLEAN | No | True or False |
+| `seed` | Seed to use for generation (default: 0). Can be set to automatically change after each generation. | INT | Yes | 0 to 2147483647 |
+| `watermark` | Whether to add an AI-generated watermark to the result (default: False). | BOOLEAN | Yes | True or False |
 
 ### HappyHorse 1.1 Inputs (happyhorse-1.1-r2v)
 

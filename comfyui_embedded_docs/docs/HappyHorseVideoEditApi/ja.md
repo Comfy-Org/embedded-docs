@@ -15,7 +15,7 @@ HappyHorse モデルを使用して、テキスト指示または参照画像に
 | `model` | 使用する HappyHorse 動画編集モデルです。この選択により、利用可能なプロンプト、解像度、アスペクト比、参照画像オプションが決まります。 | DYNAMIC_COMBO | 必須 | "happyhorse-1.0-video-edit" |
 | `video` | 編集する動画です。 | VIDEO | 必須 | 3 〜 60 seconds |
 | `seed` | 生成に使用するシードです（デフォルト: 0）。 | INT | 必須 | 0 〜 2147483647 |
-| `watermark` | 結果に AI 生成の透かしを追加するかどうかを指定します（デフォルト: False）。 | BOOLEAN | 任意 | True<br>False |
+| `watermark` | 結果に AI 生成の透かしを追加するかどうかを指定します（デフォルト: False）。 | BOOLEAN | 必須 | True<br>False |
 
 ### happyhorse-1.0-video-edit 入力
 

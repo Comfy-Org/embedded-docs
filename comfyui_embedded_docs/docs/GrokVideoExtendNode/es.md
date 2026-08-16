@@ -11,7 +11,7 @@ El nodo Grok Video Extend utiliza un modelo de IA para crear una continuación s
 | `model` | El modelo que se utilizará para la extensión de video. | DYNAMIC_COMBO | Sí | `"grok-imagine-video"` |
 | `prompt` | Descripción textual de lo que debería suceder a continuación en el video. | STRING | Sí | N/A |
 | `video` | Video de origen para extender. Formato MP4, de 2 a 15 segundos. | VIDEO | Sí | N/A |
-| `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla (por defecto: 0). | INT | No | 0 a 2147483647 |
+| `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla (por defecto: 0). | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de grok-imagine-video
 

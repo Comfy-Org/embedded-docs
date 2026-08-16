@@ -10,8 +10,8 @@ Vidu Q3 Görüntüden Videoya Oluşturma düğümü, girdi görüntüsünden ba�
 |-----------|-------------|-----------|----------|-------|
 | `model` | Video oluşturma için kullanılacak model. | DYNAMIC_COMBO | Evet | `"viduq3-pro"`<br>`"viduq3-turbo"` |
 | `image` | Oluşturulan videonun başlangıç karesi olarak kullanılacak bir görüntü. | IMAGE | Evet | - |
-| `prompt` | Video oluşturma için isteğe bağlı bir metin istemi (en fazla 2000 karakter) (varsayılan: boş). | STRING | Hayır | - |
-| `seed` | Oluşturmanın rastgeleliğini kontrol etmek için bir tohum değeri (varsayılan: 1). | INT | Hayır | 0 ile 2147483647 |
+| `prompt` | Video oluşturma için isteğe bağlı bir metin istemi (en fazla 2000 karakter) (varsayılan: boş). | STRING | Evet | - |
+| `seed` | Oluşturmanın rastgeleliğini kontrol etmek için bir tohum değeri (varsayılan: 1). | INT | Evet | 0 ile 2147483647 |
 
 ### viduq3-pro Girdileri
 

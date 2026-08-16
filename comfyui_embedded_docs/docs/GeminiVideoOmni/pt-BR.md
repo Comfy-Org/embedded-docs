@@ -8,7 +8,7 @@ Gere um vídeo com áudio a partir de um prompt de texto usando o modelo Gemini 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo de vídeo Gemini usado para gerar o vídeo. | COMBO | Sim | "Omni Flash" |
+| `model` | O modelo de vídeo Gemini usado para gerar o vídeo. | DYNAMIC_COMBO | Sim | "Omni Flash" |
 | `seed` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed (padrão: 42). | INT | Sim | 0 a 2147483647 |
 
 ### Entradas do Omni Flash

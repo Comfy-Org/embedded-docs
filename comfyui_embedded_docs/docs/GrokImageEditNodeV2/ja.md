@@ -8,18 +8,18 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 使用するGrok画像モデル。以下に表示されるサブパラメータは、選択したモデルによって異なります。 | DYNAMIC_COMBO | はい | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
-| `prompt` | 画像の生成に使用するテキストプロンプト。（デフォルト：""） | STRING | はい | N/A |
-| `seed` | ノードを再実行すべきかどうかを決定するためのシード。実際の結果はシードに関係なく非決定的です。（デフォルト：0） | INT | はい | 0 〜 2147483647 |
+| `model` | 使用するGrok画像モデル。以下に表示されるサブパラメータは、選択したモデルによって異なります。 | DYNAMIC_COMBO | 必須 | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
+| `prompt` | 画像の生成に使用するテキストプロンプト。（デフォルト：""） | STRING | 必須 | N/A |
+| `seed` | ノードを再実行すべきかどうかを決定するためのシード。実際の結果はシードに関係なく非決定的です。（デフォルト：0） | INT | 必須 | 0 〜 2147483647 |
 
 ### grok-imagine-image-2.0 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `resolution` | 編集された画像の出力解像度。 | COMBO | はい | "1K"<br>"2K" |
-| `number_of_images` | 生成する編集画像の数。（デフォルト：1） | INT | はい | 1 〜 10 |
-| `quality` | 生成される画像の品質レベル。 | COMBO | はい | "medium"<br>"low" |
-| `aspect_ratio` | 編集された画像のアスペクト比。（デフォルト："auto"） | COMBO | はい | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
+| `resolution` | 編集された画像の出力解像度。 | COMBO | 必須 | "1K"<br>"2K" |
+| `number_of_images` | 生成する編集画像の数。（デフォルト：1） | INT | 必須 | 1 〜 10 |
+| `quality` | 生成される画像の品質レベル。 | COMBO | 必須 | "medium"<br>"low" |
+| `aspect_ratio` | 編集された画像のアスペクト比。（デフォルト："auto"） | COMBO | 必須 | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
 
 ### grok-imagine-image-quality および grok-imagine-image 入力
 
@@ -27,22 +27,22 @@ grok-imagine-image-quality と grok-imagine-image で共有されます。
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `resolution` | 編集された画像の出力解像度。 | COMBO | はい | "1K"<br>"2K" |
-| `number_of_images` | 生成する編集画像の数。（デフォルト：1） | INT | はい | 1 〜 10 |
-| `aspect_ratio` | 複数の画像が接続されている場合にのみ許可されます。（デフォルト："auto"） | COMBO | はい | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
+| `resolution` | 編集された画像の出力解像度。 | COMBO | 必須 | "1K"<br>"2K" |
+| `number_of_images` | 生成する編集画像の数。（デフォルト：1） | INT | 必須 | 1 〜 10 |
+| `aspect_ratio` | 複数の画像が接続されている場合にのみ許可されます。（デフォルト："auto"） | COMBO | 必須 | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
 
 ### grok-imagine-image-pro 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `resolution` | 編集された画像の出力解像度。 | COMBO | はい | "1K"<br>"2K" |
-| `number_of_images` | 生成する編集画像の数。（デフォルト：1） | INT | はい | 1 〜 10 |
+| `resolution` | 編集された画像の出力解像度。 | COMBO | 必須 | "1K"<br>"2K" |
+| `number_of_images` | 生成する編集画像の数。（デフォルト：1） | INT | 必須 | 1 〜 10 |
 
 ### 参照入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `images` | 拡張可能スロット：編集する参照画像を1つ以上接続します。最初のスロットは`image`、追加のスロットは`image_1`、`image_2`などとなります。画像の最大数は選択したモデルによって異なります。 | IMAGE | はい | `grok-imagine-image-pro` の場合は1枚<br>`grok-imagine-image-2.0`、`grok-imagine-image-quality`、`grok-imagine-image` の場合は1〜3枚 |
+| `images` | 拡張可能スロット：編集する参照画像を1つ以上接続します。最初のスロットは`image`、追加のスロットは`image_1`、`image_2`などとなります。画像の最大数は選択したモデルによって異なります。 | IMAGE | 必須 | `grok-imagine-image-pro` の場合は1枚<br>`grok-imagine-image-2.0`、`grok-imagine-image-quality`、`grok-imagine-image` の場合は1〜3枚 |
 
 **制約に関する注意事項：**
 - `prompt` には、少なくとも1つの空白以外の文字が含まれている必要があります。

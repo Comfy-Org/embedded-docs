@@ -10,7 +10,7 @@ O nó Vidu Q3 Image-to-Video Generation cria uma sequência de vídeo a partir d
 |-----------|-------------|-----------|----------|-------|
 | `modelo` | Modelo a ser usado para a geração de vídeo. | DYNAMIC_COMBO | Sim | `"viduq3-pro"`<br>`"viduq3-turbo"` |
 | `imagem` | Uma imagem a ser usada como quadro inicial do vídeo gerado. | IMAGE | Sim | - |
-| `prompt` | Um prompt de texto opcional para a geração de vídeo (máximo de 2000 caracteres) (padrão: vazio). | STRING | Não | - |
+| `prompt` | Um prompt de texto opcional para a geração de vídeo (máximo de 2000 caracteres) (padrão: vazio). | STRING | Sim | - |
 | `semente` | Um valor de semente para controlar a aleatoriedade da geração (padrão: 1). | INT | Não | 0 a 2147483647 |
 
 ### viduq3-pro Entradas

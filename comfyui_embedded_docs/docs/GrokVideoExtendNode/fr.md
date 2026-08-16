@@ -11,7 +11,7 @@ Le nœud Grok Video Extend utilise un modèle d'IA pour créer une continuation 
 | `model` | Le modèle à utiliser pour l'extension vidéo. | DYNAMIC_COMBO | Oui | `"grok-imagine-video"` |
 | `prompt` | Description textuelle de ce qui doit se passer ensuite dans la vidéo. | STRING | Oui | N/A |
 | `video` | Vidéo source à étendre. Format MP4, 2 à 15 secondes. | VIDEO | Oui | N/A |
-| `seed` | Graine déterminant si le nœud doit être relancé ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). | INT | Non | 0 à 2147483647 |
+| `seed` | Graine déterminant si le nœud doit être relancé ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). | INT | Oui | 0 à 2147483647 |
 
 ### Entrées grok-imagine-video
 

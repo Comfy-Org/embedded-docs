@@ -20,10 +20,10 @@ El nodo Wan 2.7 Image to Video genera un video a partir de una imagen de primer 
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Prompt que describe los elementos y las características visuales. Admite inglés y chino. | STRING | Sí | - |
-| `model.negative_prompt` | Prompt negativo que describe lo que se debe evitar. | STRING | Sí | - |
-| `model.resolution` | La resolución del video de salida. | COMBO | Sí | `"720P"`<br>`"1080P"` |
-| `model.duration` | La duración del video generado en segundos (predeterminado: 5). | INT | Sí | 2 a 15 |
+| `prompt` | Prompt que describe los elementos y las características visuales. Admite inglés y chino. | STRING | Sí | - |
+| `negative_prompt` | Prompt negativo que describe lo que se debe evitar. | STRING | Sí | - |
+| `resolution` | La resolución del video de salida. | COMBO | Sí | `"720P"`<br>`"1080P"` |
+| `duration` | La duración del video generado en segundos (predeterminado: 5). | INT | Sí | 2 a 15 |
 
 **Nota:** La entrada `audio` tiene una restricción de duración. Si se proporciona, el archivo de audio debe tener entre 2 y 30 segundos de duración.
 

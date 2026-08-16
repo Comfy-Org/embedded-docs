@@ -8,9 +8,9 @@ Este nó gera um vídeo com uma pessoa ou objeto a partir de imagens de referên
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo HappyHorse de referência para vídeo a ser usado na geração. | COMBO | Sim | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
-| `seed` | Semente a ser usada para a geração (padrão: 0). Pode ser configurada para alterar automaticamente após cada geração. | INT | Não | 0 a 2147483647 |
-| `watermark` | Se deve adicionar uma marca d'água gerada por IA ao resultado (padrão: False). | BOOLEAN | Não | True ou False |
+| `model` | O modelo HappyHorse de referência para vídeo a ser usado na geração. | DYNAMIC_COMBO | Sim | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
+| `seed` | Semente a ser usada para a geração (padrão: 0). Pode ser configurada para alterar automaticamente após cada geração. | INT | Sim | 0 a 2147483647 |
+| `watermark` | Se deve adicionar uma marca d'água gerada por IA ao resultado (padrão: False). | BOOLEAN | Sim | True ou False |
 
 ### Entradas do HappyHorse 1.1 (happyhorse-1.1-r2v)
 

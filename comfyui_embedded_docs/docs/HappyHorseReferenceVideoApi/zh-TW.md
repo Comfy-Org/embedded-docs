@@ -9,8 +9,8 @@
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | 用於生成的 HappyHorse 參考轉影片模型。 | DYNAMIC_COMBO | 是 | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
-| `seed` | 用於生成的隨機種子（預設：0）。可設定為在每次生成後自動變更。 | INT | 否 | 0 至 2147483647 |
-| `watermark` | 是否在結果中加入 AI 生成的浮水印（預設：False）。 | BOOLEAN | 否 | True or False |
+| `seed` | 用於生成的隨機種子（預設：0）。可設定為在每次生成後自動變更。 | INT | 是 | 0 至 2147483647 |
+| `watermark` | 是否在結果中加入 AI 生成的浮水印（預設：False）。 | BOOLEAN | 是 | True or False |
 
 ### HappyHorse 1.1 輸入 (happyhorse-1.1-r2v)
 

@@ -20,8 +20,8 @@ Ces réglages sont partagés par les deux modèles.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model.duration` | Durée de la vidéo étendue en secondes (défaut : 4). Ce réglage apparaît après la sélection d’un modèle. | INT | Oui | 1 à 7 |
-| `model.resolution` | Résolution de la vidéo de sortie. Ce réglage apparaît après la sélection d’un modèle. | COMBO | Oui | `"720p"`<br>`"1080p"` |
+| `duration` | Durée de la vidéo étendue en secondes (défaut : 4). Ce réglage apparaît après la sélection d’un modèle. | INT | Oui | 1 à 7 |
+| `resolution` | Résolution de la vidéo de sortie. Ce réglage apparaît après la sélection d’un modèle. | COMBO | Oui | `"720p"`<br>`"1080p"` |
 
 **Remarque :** La `video` source doit avoir une durée comprise entre 4 et 55 secondes. Si `end_frame` est fourni, son rapport hauteur/largeur doit être compris entre 1:4 et 4:1, et sa largeur et sa hauteur doivent chacune être d’au moins 128 pixels.
 

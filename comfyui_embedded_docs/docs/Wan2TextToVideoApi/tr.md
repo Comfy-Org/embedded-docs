@@ -13,8 +13,8 @@ Girdiler, `wan2.7-t2v` modeli seçildiğinde görünen ortak ayarları ve modele
 | `model` | Video oluşturma için kullanılacak belirli model. | DYNAMIC_COMBO | Evet | `"wan2.7-t2v"` |
 | `ses` | Video oluşturmayı yönlendiren ses (örn. dudak senkronizasyonu, ritim eşlemeli hareket). Süre: 1.5sn-60sn. Sağlanmazsa, model otomatik olarak uygun arka plan müziği veya ses efektleri üretir. | AUDIO | Hayır | - |
 | `tohum` | Oluşturma için kullanılacak tohum (varsayılan: 0). | INT | Hayır | 0 ila 2147483647 |
-| `istem_genişlet` | İstemin yapay zeka yardımıyla geliştirilip geliştirilmeyeceği (varsayılan: True). | BOOLEAN | Hayır True / False |
-| `filigran` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). | BOOLEAN | Hayır True / False |
+| `istem_genişlet` | İstemin yapay zeka yardımıyla geliştirilip geliştirilmeyeceği (varsayılan: True). | BOOLEAN | Hayır | True / False |
+| `filigran` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). | BOOLEAN | Hayır | True / False |
 
 ### wan2.7-t2v Girdileri
 

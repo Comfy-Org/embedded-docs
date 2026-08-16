@@ -19,10 +19,10 @@ El nodo Wan 2.7 Video Continuation genera un nuevo segmento de video que contin�
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `model.prompt` | Prompt que describe los elementos y las características visuales. Admite inglés y chino. (por defecto: cadena vacía) | STRING | Sí | - |
-| `model.negative_prompt` | Prompt negativo que describe lo que se debe evitar. (por defecto: cadena vacía) | STRING | Sí | - |
-| `model.resolution` | La resolución del video de salida. | COMBO | Sí | `"720P"`<br>`"1080P"` |
-| `model.duration` | Duración total de salida en segundos. El modelo genera la continuación para completar el tiempo restante después del clip de entrada. (por defecto: 5) | INT | Sí | 2 a 15 |
+| `prompt` | Prompt que describe los elementos y las características visuales. Admite inglés y chino. (por defecto: cadena vacía) | STRING | Sí | - |
+| `negative_prompt` | Prompt negativo que describe lo que se debe evitar. (por defecto: cadena vacía) | STRING | Sí | - |
+| `resolution` | La resolución del video de salida. | COMBO | Sí | `"720P"`<br>`"1080P"` |
+| `duration` | Duración total de salida en segundos. El modelo genera la continuación para completar el tiempo restante después del clip de entrada. (por defecto: 5) | INT | Sí | 2 a 15 |
 
 **Nota:** El video de entrada `first_clip` debe tener una duración de entre 2 y 10 segundos.
 

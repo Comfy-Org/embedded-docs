@@ -8,8 +8,8 @@ Bu düğüm, Gemini 3.1 Flash Image modelleri aracılığıyla Google'ın Vertex
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Oluşturulacak görüntüyü veya uygulanacak düzenlemeleri tanımlayan metin istemi. Modelin izlemesi gereken kısıtlamaları, stilleri veya ayrıntıları ekleyin. Boş olmamalıdır. | STRING | Evet | N/A |
 | `model` | Görüntü oluşturma için kullanılacak Gemini modelini seçer. Bu parametre; çözünürlük, en-boy oranı, düşünme düzeyi ve referans girdileri için ek alt parametreler içerir. | DYNAMIC_COMBO | Evet | `"Nano Banana 2 (Gemini 3.1 Flash Image)"<br>"Nano Banana 2 Lite"` |
+| `prompt` | Oluşturulacak görüntüyü veya uygulanacak düzenlemeleri tanımlayan metin istemi. Modelin izlemesi gereken kısıtlamaları, stilleri veya ayrıntıları ekleyin. Boş olmamalıdır. | STRING | Evet | N/A |
 | `seed` | Tohum belirli bir değere sabitlendiğinde model, tekrarlanan isteklerde aynı yanıtı sağlamak için elinden gelenin en iyisini yapar. Deterministik çıktı garanti edilmez. Ayrıca, modeli veya sıcaklık gibi parametre ayarlarını değiştirmek, aynı tohum değerini kullansanız bile yanıtta farklılıklara neden olabilir. Varsayılan olarak rastgele bir tohum değeri kullanılır. (varsayılan: 42) | INT | Evet | 0 ile 18446744073709551615 arası |
 | `response_modalities` | Yanıt biçimini belirler. IMAGE yalnızca bir görüntü döndürür; IMAGE+TEXT bir görüntü ve bir metin yanıtı döndürür. (varsayılan: IMAGE) Gelişmiş parametre. | COMBO | Evet | `"IMAGE"<br>"IMAGE+TEXT"` |
 | `system_prompt` | Bir yapay zekânın davranışını belirleyen temel talimatlardır. Varsayılan olarak, modele her zaman bir görüntü üretmesini söyleyen yerleşik bir istem kullanılır. Gelişmiş parametre. | STRING | Hayır | N/A |

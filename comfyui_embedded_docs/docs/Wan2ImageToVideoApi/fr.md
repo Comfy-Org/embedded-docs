@@ -20,10 +20,10 @@ Le nœud Wan 2.7 Image to Video génère une vidéo à partir d'une image de pre
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Requête décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois. | STRING | Oui | - |
-| `model.negative_prompt` | Requête négative décrivant ce qu'il faut éviter. | STRING | Oui | - |
-| `model.resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | `"720P"`<br>`"1080P"` |
-| `model.duration` | La durée de la vidéo générée en secondes (par défaut : 5). | INT | Oui | 2 à 15 |
+| `prompt` | Requête décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois. | STRING | Oui | - |
+| `negative_prompt` | Requête négative décrivant ce qu'il faut éviter. | STRING | Oui | - |
+| `resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | `"720P"`<br>`"1080P"` |
+| `duration` | La durée de la vidéo générée en secondes (par défaut : 5). | INT | Oui | 2 à 15 |
 
 **Remarque :** L'entrée `audio` a une contrainte de durée. Si elle est fournie, le fichier audio doit avoir une durée comprise entre 2 et 30 secondes.
 

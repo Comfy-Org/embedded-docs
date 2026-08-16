@@ -18,10 +18,10 @@ Les paramètres de configuration suivants sont partagés par les modèles `viduq
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model.aspect_ratio` | Le ratio d'aspect de la vidéo de sortie. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
-| `model.resolution` | Résolution de la vidéo de sortie. | COMBO | Oui | `"720p"`<br>`"1080p"` |
-| `model.duration` | Durée de la vidéo de sortie en secondes (par défaut : 5). | INT | Oui | 1 à 16 |
-| `model.audio` | Lorsqu'il est activé, génère une vidéo avec du son (incluant dialogues et effets sonores) (par défaut : False). | BOOLEAN | Oui | True/False |
+| `aspect_ratio` | Le ratio d'aspect de la vidéo de sortie. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
+| `resolution` | Résolution de la vidéo de sortie. | COMBO | Oui | `"720p"`<br>`"1080p"` |
+| `duration` | Durée de la vidéo de sortie en secondes (par défaut : 5). | INT | Oui | 1 à 16 |
+| `audio` | Lorsqu'il est activé, génère une vidéo avec du son (incluant dialogues et effets sonores) (par défaut : False). | BOOLEAN | Oui | True/False |
 
 **Remarque :** Les paramètres `aspect_ratio`, `resolution`, `duration` et `audio` sont requis une fois qu'un `model` est sélectionné, car ils font partie de sa configuration. Le `prompt` ne doit pas être vide et ne peut pas dépasser 2000 caractères.
 

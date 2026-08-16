@@ -20,8 +20,8 @@ These settings are shared by both models.
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model.duration` | Duration of the extended video in seconds (default: 4). This setting appears after selecting a model. | INT | Yes | 1 to 7 |
-| `model.resolution` | Resolution of the output video. This setting appears after selecting a model. | COMBO | Yes | `"720p"`<br>`"1080p"` |
+| `duration` | Duration of the extended video in seconds (default: 4). This setting appears after selecting a model. | INT | Yes | 1 to 7 |
+| `resolution` | Resolution of the output video. This setting appears after selecting a model. | COMBO | Yes | `"720p"`<br>`"1080p"` |
 
 **Note:** The source `video` must have a duration between 4 and 55 seconds. If `end_frame` is provided, its aspect ratio must be between 1:4 and 4:1, and its width and height must each be at least 128 pixels.
 

@@ -18,10 +18,10 @@ Vidu Q3 文生视频节点可根据文本描述生成视频。它使用 Vidu Q3 
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model.aspect_ratio` | 输出视频的宽高比。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
-| `model.resolution` | 输出视频的分辨率。 | COMBO | 是 | `"720p"`<br>`"1080p"` |
-| `model.duration` | 输出视频的时长（秒）（默认值：5）。 | INT | 是 | 1 到 16 |
-| `model.audio` | 启用后，输出带有声音（包括对话和音效）的视频（默认值：False）。 | BOOLEAN | 是 | True/False |
+| `aspect_ratio` | 输出视频的宽高比。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
+| `resolution` | 输出视频的分辨率。 | COMBO | 是 | `"720p"`<br>`"1080p"` |
+| `duration` | 输出视频的时长（秒）（默认值：5）。 | INT | 是 | 1 到 16 |
+| `audio` | 启用后，输出带有声音（包括对话和音效）的视频（默认值：False）。 | BOOLEAN | 是 | True/False |
 
 **注意：** 一旦选择了 `model`，参数 `aspect_ratio`、`resolution`、`duration` 和 `audio` 即为必填项，因为它们是模型配置的一部分。`prompt` 不能为空，且不能超过 2000 个字符。
 

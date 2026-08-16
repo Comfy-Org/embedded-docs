@@ -19,10 +19,10 @@ Le nœud Wan 2.7 Video Continuation génère un nouveau segment vidéo qui pours
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model.prompt` | Invite décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois. (par défaut : chaîne vide) | STRING | Oui | - |
-| `model.negative_prompt` | Invite négative décrivant ce qu'il faut éviter. (par défaut : chaîne vide) | STRING | Oui | - |
-| `model.resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | `"720P"`<br>`"1080P"` |
-| `model.duration` | Durée totale de sortie en secondes. Le modèle génère la continuation pour combler le temps restant après le clip d'entrée. (par défaut : 5) | INT | Oui | 2 à 15 |
+| `prompt` | Invite décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois. (par défaut : chaîne vide) | STRING | Oui | - |
+| `negative_prompt` | Invite négative décrivant ce qu'il faut éviter. (par défaut : chaîne vide) | STRING | Oui | - |
+| `resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | `"720P"`<br>`"1080P"` |
+| `duration` | Durée totale de sortie en secondes. Le modèle génère la continuation pour combler le temps restant après le clip d'entrée. (par défaut : 5) | INT | Oui | 2 à 15 |
 
 **Remarque :** La vidéo d'entrée `first_clip` doit avoir une durée comprise entre 2 et 10 secondes.
 

@@ -8,9 +8,9 @@ Este nó gera um vídeo apresentando uma pessoa ou objeto com base nos materiais
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo específico a ser usado para geração de vídeo. | COMBO | Sim | "wan2.7-r2v" |
-| `seed` | Semente a ser usada para geração, que ajuda a controlar a aleatoriedade da saída (padrão: 0). | INT | Não | 0 a 2147483647 |
-| `watermark` | Se deve adicionar uma marca d'água gerada por IA ao resultado (padrão: False). Esta é uma configuração avançada. | BOOLEAN | Não | True<br>False |
+| `model` | O modelo específico a ser usado para geração de vídeo. | DYNAMIC_COMBO | Sim | "wan2.7-r2v" |
+| `seed` | Semente a ser usada para geração, que ajuda a controlar a aleatoriedade da saída (padrão: 0). | INT | Sim | 0 a 2147483647 |
+| `watermark` | Se deve adicionar uma marca d'água gerada por IA ao resultado (padrão: False). Esta é uma configuração avançada. | BOOLEAN | Sim | True<br>False |
 
 ### wan2.7-r2v Entradas
 
@@ -26,8 +26,8 @@ Este nó gera um vídeo apresentando uma pessoa ou objeto com base nos materiais
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
-| `model.reference_videos` | Slot expansível: conecte até 3 vídeos de referência (slots `video1` a `video3`). Pelo menos um vídeo ou imagem de referência é necessário no total. | VIDEO | Não | 0 a 3 itens |
-| `model.reference_images` | Slot expansível: conecte até 5 imagens de referência (slots `image1` a `image5`). Pelo menos um vídeo ou imagem de referência é necessário no total. | IMAGE | Não | 0 a 5 itens |
+| `reference_videos` | Slot expansível: conecte até 3 vídeos de referência (slots `video1` a `video3`). Pelo menos um vídeo ou imagem de referência é necessário no total. | VIDEO | Não | 0 a 3 itens |
+| `reference_images` | Slot expansível: conecte até 5 imagens de referência (slots `image1` a `image5`). Pelo menos um vídeo ou imagem de referência é necessário no total. | IMAGE | Não | 0 a 5 itens |
 
 **Restrições Importantes:**
 

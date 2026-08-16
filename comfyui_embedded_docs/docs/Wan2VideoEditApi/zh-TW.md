@@ -10,9 +10,9 @@ Wan2VideoEditApi 節點使用 Wan 2.7 模型，根據文字指令、參考圖片
 |-----------|-------------|-----------|----------|-------|
 | `model` | 用於影片編輯的模型。 | DYNAMIC_COMBO | 是 | `"wan2.7-videoedit"` |
 | `video` | 要編輯的影片。 | VIDEO | 是 | - |
-| `seed` | 用於生成的隨機種子。（預設值：0） | INT | 否 | 0 到 2147483647 |
-| `audio_setting` | `'auto'`：模型根據提示詞決定是否重新生成音訊。`'origin'`：保留輸入影片的原始音訊。（預設值：`"auto"`） | COMBO | 否 | `"auto"`<br>`"origin"` |
-| `watermark` | 是否在結果中加入 AI 生成的水印。（預設值：False） | BOOLEAN | 否 | - |
+| `seed` | 用於生成的隨機種子。（預設值：0） | INT | 是 | 0 到 2147483647 |
+| `audio_setting` | `'auto'`：模型根據提示詞決定是否重新生成音訊。`'origin'`：保留輸入影片的原始音訊。（預設值：`"auto"`） | COMBO | 是 | `"auto"`<br>`"origin"` |
+| `watermark` | 是否在結果中加入 AI 生成的水印。（預設值：False） | BOOLEAN | 是 | - |
 
 ### wan2.7-videoedit 輸入
 

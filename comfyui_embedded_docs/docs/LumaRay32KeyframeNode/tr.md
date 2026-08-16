@@ -7,7 +7,7 @@ Bu düğüm, bir kılavuz görüntüyü Luma Ray 3.2 çıktı videosu zaman çiz
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `image` | Çıktı videosunun seçilen anına yerleştirilecek kılavuz görüntü. | IMAGE | Evet | - |
-| `position` | Bu görüntünün çıktı videosunun zaman çizelgesine nasıl yerleştirileceği. | COMBO | Evet | "Fraction of duration (0.0-1.0)"<br>"Absolute time (seconds)" |
+| `position` | Bu görüntünün çıktı videosunun zaman çizelgesine nasıl yerleştirileceği. | DYNAMIC_COMBO | Evet | "Fraction of duration (0.0-1.0)"<br>"Absolute time (seconds)" |
 | `keyframes` | Bu anahtar kareyle zincirlenecek isteğe bağlı önceki anahtar kareler. | LUMA_RAY32_KEYFRAME | Hayır | - |
 
 `position` parametresi için "Fraction of duration (0.0-1.0)" seçildiğinde, bu görüntünün çıktı videosunda nerede uygulanacağını belirleyen bir `fraction` değeri (varsayılan: 0.0, aralık: 0.0 ila 1.0, adım: 0.01) belirtebilirsiniz (0.0 = başlangıç, 1.0 = bitiş).

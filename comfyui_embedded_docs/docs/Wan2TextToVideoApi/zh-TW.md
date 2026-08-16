@@ -12,9 +12,9 @@
 |-----------|-------------|-----------|----------|-------|
 | `model` | 用於影片生成的特定模型。 | DYNAMIC_COMBO | 是 | `"wan2.7-t2v"` |
 | `audio` | 用於驅動影片生成的音訊（例如：唇形同步、節拍匹配動作）。長度：1.5 秒至 60 秒。若未提供，模型會自動生成相符的背景音樂或音效。 | AUDIO | 否 | - |
-| `seed` | 用於生成的種子（預設：0）。 | INT | 否 | 0 至 2147483647 |
-| `prompt_extend` | 是否使用 AI 輔助來增強提示詞（預設：True）。 | BOOLEAN | 否 | True<br>False |
-| `watermark` | 是否在結果中加入 AI 生成的浮水印（預設：False）。 | BOOLEAN | 否 | True<br>False |
+| `seed` | 用於生成的種子（預設：0）。 | INT | 是 | 0 至 2147483647 |
+| `prompt_extend` | 是否使用 AI 輔助來增強提示詞（預設：True）。 | BOOLEAN | 是 | True<br>False |
+| `watermark` | 是否在結果中加入 AI 生成的浮水印（預設：False）。 | BOOLEAN | 是 | True<br>False |
 
 ### wan2.7-t2v 輸入
 

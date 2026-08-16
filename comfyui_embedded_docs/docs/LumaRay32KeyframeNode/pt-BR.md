@@ -7,7 +7,7 @@ Este nó ancora uma imagem guia a uma posição específica na linha do tempo do
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
 | `image` | Imagem guia para colocar no momento escolhido do vídeo de saída. | IMAGE | Sim | - |
-| `position` | Como colocar esta imagem na linha do tempo do vídeo de saída. | COMBO | Sim | "Fraction of duration (0.0-1.0)"<br>"Absolute time (seconds)" |
+| `position` | Como colocar esta imagem na linha do tempo do vídeo de saída. | DYNAMIC_COMBO | Sim | "Fraction of duration (0.0-1.0)"<br>"Absolute time (seconds)" |
 | `keyframes` | Keyframes anteriores opcionais para encadear com este. | LUMA_RAY32_KEYFRAME | Não | - |
 
 Quando "Fraction of duration (0.0-1.0)" for selecionado para o parâmetro `position`, você pode especificar um valor `fraction` (padrão: 0.0, intervalo: 0.0 a 1.0, passo: 0.01) que determina onde no vídeo de saída esta imagem é aplicada (0.0 = início, 1.0 = fim).

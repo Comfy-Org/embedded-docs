@@ -10,24 +10,24 @@ The Vidu Q3 Image-to-Video Generation node creates a video sequence starting fro
 |-----------|-------------|-----------|----------|-------|
 | `model` | Model to use for video generation. | DYNAMIC_COMBO | Yes | `"viduq3-pro"`<br>`"viduq3-turbo"` |
 | `image` | An image to be used as the start frame of the generated video. | IMAGE | Yes | - |
-| `prompt` | An optional text prompt for video generation (max 2000 characters) (default: empty). | STRING | No | - |
-| `seed` | A seed value for controlling the randomness of the generation (default: 1). Supports control-after-generate. | INT | No | 0 to 2147483647 |
+| `prompt` | An optional text prompt for video generation (max 2000 characters) (default: empty). | STRING | Yes | - |
+| `seed` | A seed value for controlling the randomness of the generation (default: 1). Supports control-after-generate. | INT | Yes | 0 to 2147483647 |
 
 ### viduq3-pro Inputs
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model.resolution` | Resolution of the output video. | COMBO | Yes | `"720p"`<br>`"1080p"`<br>`"2K"` |
-| `model.duration` | Duration of the output video in seconds (default: 5). | INT | Yes | 1 to 16 |
-| `model.audio` | When enabled, outputs video with sound (including dialogue and sound effects) (default: False). | BOOLEAN | Yes | `True`<br>`False` |
+| `resolution` | Resolution of the output video. | COMBO | Yes | `"720p"`<br>`"1080p"`<br>`"2K"` |
+| `duration` | Duration of the output video in seconds (default: 5). | INT | Yes | 1 to 16 |
+| `audio` | When enabled, outputs video with sound (including dialogue and sound effects) (default: False). | BOOLEAN | Yes | `True`<br>`False` |
 
 ### viduq3-turbo Inputs
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model.resolution` | Resolution of the output video. | COMBO | Yes | `"720p"`<br>`"1080p"` |
-| `model.duration` | Duration of the output video in seconds (default: 5). | INT | Yes | 1 to 16 |
-| `model.audio` | When enabled, outputs video with sound (including dialogue and sound effects) (default: False). | BOOLEAN | Yes | `True`<br>`False` |
+| `resolution` | Resolution of the output video. | COMBO | Yes | `"720p"`<br>`"1080p"` |
+| `duration` | Duration of the output video in seconds (default: 5). | INT | Yes | 1 to 16 |
+| `audio` | When enabled, outputs video with sound (including dialogue and sound effects) (default: False). | BOOLEAN | Yes | `True`<br>`False` |
 
 **Note:** The `image` must have an aspect ratio between 1:4 and 4:1 (portrait to landscape). The `prompt` is optional but cannot exceed 2000 characters. The resolution options depend on the selected model: `"viduq3-pro"` supports `"720p"`, `"1080p"`, and `"2K"`; `"viduq3-turbo"` supports `"720p"` and `"1080p"`.
 

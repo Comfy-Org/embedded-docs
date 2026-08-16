@@ -11,7 +11,7 @@ HappyHorse 모델을 사용하여 텍스트 지침 또는 참조 이미지로 �
 | `model` | 사용할 HappyHorse 비디오 편집 모델입니다. 이 선택 항목은 사용 가능한 프롬프트, 해상도, 비율 및 참조 이미지 옵션을 결정합니다. | DYNAMIC_COMBO | 예 | "happyhorse-1.0-video-edit" |
 | `video` | 편집할 비디오입니다. | VIDEO | 예 | 3~60초 |
 | `seed` | 생성에 사용할 시드입니다 (기본값: 0). | INT | 예 | 0~2147483647 |
-| `watermark` | 결과물에 AI 생성 워터마크를 추가할지 여부입니다 (기본값: False). | BOOLEAN | 아니요 | True<br>False |
+| `watermark` | 결과물에 AI 생성 워터마크를 추가할지 여부입니다 (기본값: False). | BOOLEAN | 예 | True<br>False |
 
 ### happyhorse-1.0-video-edit 입력
 

@@ -11,7 +11,7 @@
 | `model` | 要使用的 HappyHorse 影片編輯模型。此選擇決定可用的提示詞、解析度、比例和參考圖片選項。 | DYNAMIC_COMBO | 是 | "happyhorse-1.0-video-edit" |
 | `video` | 要編輯的影片。 | VIDEO | 是 | 3 到 60 秒 |
 | `seed` | 用於生成的隨機種子（預設值：0）。 | INT | 是 | 0 到 2147483647 |
-| `watermark` | 是否在結果中加入 AI 生成的浮水印（預設值：False）。 | BOOLEAN | 否 | True<br>False |
+| `watermark` | 是否在結果中加入 AI 生成的浮水印（預設值：False）。 | BOOLEAN | 是 | True<br>False |
 
 ### happyhorse-1.0-video-edit 輸入
 

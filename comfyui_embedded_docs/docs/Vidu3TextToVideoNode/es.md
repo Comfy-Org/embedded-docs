@@ -18,10 +18,10 @@ Los siguientes parámetros de configuración son compartidos por los modelos `vi
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model.aspect_ratio` | La relación de aspecto del video de salida. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
-| `model.resolution` | Resolución del video de salida. | COMBO | Sí | `"720p"`<br>`"1080p"` |
-| `model.duration` | Duración del video de salida en segundos (predeterminado: 5). | INT | Sí | 1 a 16 |
-| `model.audio` | Cuando está habilitado, genera video con sonido (incluyendo diálogo y efectos de sonido) (predeterminado: False). | BOOLEAN | Sí | True/False |
+| `aspect_ratio` | La relación de aspecto del video de salida. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
+| `resolution` | Resolución del video de salida. | COMBO | Sí | `"720p"`<br>`"1080p"` |
+| `duration` | Duración del video de salida en segundos (predeterminado: 5). | INT | Sí | 1 a 16 |
+| `audio` | Cuando está habilitado, genera video con sonido (incluyendo diálogo y efectos de sonido) (predeterminado: False). | BOOLEAN | Sí | True/False |
 
 **Nota:** Los parámetros `aspect_ratio`, `resolution`, `duration` y `audio` son obligatorios una vez que se selecciona un `model`, ya que forman parte de su configuración. El `prompt` no debe estar vacío y no puede superar los 2000 caracteres.
 

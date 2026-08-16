@@ -12,7 +12,7 @@ Este nodo genera un video interpolando entre un fotograma inicial y un fotograma
 | `first_frame` | La imagen inicial para la secuencia de video. | IMAGE | Sí | - |
 | `end_frame` | La imagen final para la secuencia de video. | IMAGE | Sí | - |
 | `prompt` | Descripción del prompt (máximo 2000 caracteres). | STRING | Sí | - |
-| `seed` | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 1). | INT | No | 0 a 2147483647 |
+| `seed` | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 1). | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de viduq3-pro y viduq3-turbo
 
@@ -20,9 +20,9 @@ Los siguientes parámetros son compartidos por ambas opciones de modelo (`viduq3
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model.resolution` | Resolución del video de salida. Este parámetro se revela después de seleccionar un `model`. | COMBO | Sí | `"720p"`<br>`"1080p"` |
-| `model.duration` | Duración del video de salida en segundos (predeterminado: 5). Este parámetro se revela después de seleccionar un `model`. | INT | Sí | 1 a 16 |
-| `model.audio` | Cuando está habilitado, genera video con sonido (incluyendo diálogo y efectos de sonido) (predeterminado: False). Este parámetro se revela después de seleccionar un `model`. | BOOLEAN | Sí | `True`<br>`False` |
+| `resolution` | Resolución del video de salida. Este parámetro se revela después de seleccionar un `model`. | COMBO | Sí | `"720p"`<br>`"1080p"` |
+| `duration` | Duración del video de salida en segundos (predeterminado: 5). Este parámetro se revela después de seleccionar un `model`. | INT | Sí | 1 a 16 |
+| `audio` | Cuando está habilitado, genera video con sonido (incluyendo diálogo y efectos de sonido) (predeterminado: False). Este parámetro se revela después de seleccionar un `model`. | BOOLEAN | Sí | `True`<br>`False` |
 
 **Nota:** Las imágenes `first_frame` y `end_frame` deben tener relaciones de aspecto similares. La relación de aspecto de las dos imágenes debe estar entre el 80% y el 125% entre sí (una cercanía relativa entre 0.8 y 1.25).
 

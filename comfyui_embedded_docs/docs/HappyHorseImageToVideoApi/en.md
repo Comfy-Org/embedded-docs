@@ -10,8 +10,8 @@ This node generates a short video from a single starting image using the HappyHo
 |-----------|-------------|-----------|----------|-------|
 | `model` | The HappyHorse model to use for video generation. | DYNAMIC_COMBO | Yes | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
 | `first_frame` | First frame image. The output aspect ratio is derived from this image. | IMAGE | Yes | 300×300 px min; 1:2.5 to 2.5:1 |
-| `seed` | Seed to use for generation. (default: 0) | INT | No | 0 to 2147483647 |
-| `watermark` | Whether to add an AI-generated watermark to the result. (advanced option; default: False) | BOOLEAN | No | True / False |
+| `seed` | Seed to use for generation. (default: 0) | INT | Yes | 0 to 2147483647 |
+| `watermark` | Whether to add an AI-generated watermark to the result. (advanced option; default: False) | BOOLEAN | Yes | True / False |
 
 ### happyhorse-1.1-i2v and happyhorse-1.0-i2v Inputs
 
@@ -19,9 +19,9 @@ Both model versions share the same set of parameters.
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model.prompt` | Prompt describing the elements and visual features. Supports English and Chinese. (default: "") | STRING | No | N/A |
-| `model.resolution` | The output video resolution. (default: `"720P"`) | COMBO | Yes | `"720P"`<br>`"1080P"` |
-| `model.duration` | The duration of the generated video in seconds. (default: 5) | INT | Yes | 3 to 15 |
+| `prompt` | Prompt describing the elements and visual features. Supports English and Chinese. (default: "") | STRING | No | N/A |
+| `resolution` | The output video resolution. (default: `"720P"`) | COMBO | Yes | `"720P"`<br>`"1080P"` |
+| `duration` | The duration of the generated video in seconds. (default: 5) | INT | Yes | 3 to 15 |
 
 Note: The `first_frame` image must be at least 300x300 pixels, and its aspect ratio must be between 1:2.5 and 2.5:1.
 

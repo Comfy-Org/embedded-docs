@@ -11,7 +11,7 @@
 | `model` | 要使用的 HappyHorse 视频编辑模型。此选择决定可用的提示词、分辨率、宽高比和参考图像选项。 | DYNAMIC_COMBO | 是 | "happyhorse-1.0-video-edit" |
 | `video` | 要编辑的视频。 | VIDEO | 是 | 3 到 60 seconds |
 | `seed` | 用于生成的种子（默认值：0）。 | INT | 是 | 0 到 2147483647 |
-| `watermark` | 是否在结果中添加 AI 生成的水印（默认值：False）。 | BOOLEAN | 否 | True<br>False |
+| `watermark` | 是否在结果中添加 AI 生成的水印（默认值：False）。 | BOOLEAN | 是 | True<br>False |
 
 ### happyhorse-1.0-video-edit 输入
 

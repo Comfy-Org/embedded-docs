@@ -9,8 +9,8 @@
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | 用于生成的 HappyHorse 参考转视频模型。 | DYNAMIC_COMBO | 是 | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
-| `seed` | 用于生成的种子（默认值：0）。可设置为每次生成后自动更改。 | INT | 否 | 0 到 2147483647 |
-| `watermark` | 是否在结果中添加 AI 生成的水印（默认值：False）。 | BOOLEAN | 否 | True 或 False |
+| `seed` | 用于生成的种子（默认值：0）。可设置为每次生成后自动更改。 | INT | 是 | 0 到 2147483647 |
+| `watermark` | 是否在结果中添加 AI 生成的水印（默认值：False）。 | BOOLEAN | 是 | True 或 False |
 
 ### HappyHorse 1.1 输入 (happyhorse-1.1-r2v)
 

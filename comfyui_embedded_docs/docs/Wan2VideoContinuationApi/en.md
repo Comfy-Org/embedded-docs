@@ -19,10 +19,10 @@ The Wan 2.7 Video Continuation node generates a new video segment that continues
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model.prompt` | Prompt describing the elements and visual features. Supports English and Chinese. (default: empty string) | STRING | Yes | - |
-| `model.negative_prompt` | Negative prompt describing what to avoid. (default: empty string) | STRING | Yes | - |
-| `model.resolution` | The resolution for the output video. | COMBO | Yes | `"720P"`<br>`"1080P"` |
-| `model.duration` | Total output duration in seconds. The model generates continuation to fill the remaining time after the input clip. (default: 5) | INT | Yes | 2 to 15 |
+| `prompt` | Prompt describing the elements and visual features. Supports English and Chinese. (default: empty string) | STRING | Yes | - |
+| `negative_prompt` | Negative prompt describing what to avoid. (default: empty string) | STRING | Yes | - |
+| `resolution` | The resolution for the output video. | COMBO | Yes | `"720P"`<br>`"1080P"` |
+| `duration` | Total output duration in seconds. The model generates continuation to fill the remaining time after the input clip. (default: 5) | INT | Yes | 2 to 15 |
 
 **Note:** The `first_clip` input video must be between 2 and 10 seconds in duration.
 

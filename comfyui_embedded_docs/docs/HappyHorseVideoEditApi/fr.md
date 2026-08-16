@@ -9,7 +9,7 @@
 | `model` | Le modèle d'édition vidéo HappyHorse à utiliser. Cette sélection détermine quelles options de prompt, résolution, format d'image et images de référence sont disponibles. | DYNAMIC_COMBO | Oui | "happyhorse-1.0-video-edit" |
 | `video` | La vidéo à éditer. | VIDEO | Oui | 3 à 60 secondes |
 | `seed` | Graine à utiliser pour la génération (par défaut : 0). | INT | Oui | 0 à 2147483647 |
-| `watermark` | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : False). | BOOLEAN | Non | True<br>False |
+| `watermark` | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : False). | BOOLEAN | Oui | True<br>False |
 
 ### happyhorse-1.0-video-edit Entrées
 

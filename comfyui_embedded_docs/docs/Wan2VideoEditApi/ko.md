@@ -8,11 +8,11 @@ Wan2VideoEditApi 노드는 Wan 2.7 모델을 사용하여 텍스트 지침, 참�
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 비디오 편집에 사용할 모델입니다. | COMBO | 예 | `"wan2.7-videoedit"` |
+| `model` | 비디오 편집에 사용할 모델입니다. | DYNAMIC_COMBO | 예 | `"wan2.7-videoedit"` |
 | `video` | 편집할 비디오입니다. | VIDEO | 예 | - |
-| `seed` | 생성에 사용할 시드입니다. (기본값: 0) | INT | 아니요 | 0 ~ 2147483647 |
-| `audio_setting` | 'auto': 모델이 프롬프트를 기반으로 오디오를 다시 생성할지 여부를 결정합니다. 'origin': 입력 비디오의 원본 오디오를 유지합니다. (기본값: "auto") | COMBO | 아니요 | `"auto"`<br>`"origin"` |
-| `watermark` | 결과물에 AI 생성 워터마크를 추가할지 여부입니다. (기본값: False) | BOOLEAN | 아니요 | - |
+| `seed` | 생성에 사용할 시드입니다. (기본값: 0) | INT | 예 | 0 ~ 2147483647 |
+| `audio_setting` | 'auto': 모델이 프롬프트를 기반으로 오디오를 다시 생성할지 여부를 결정합니다. 'origin': 입력 비디오의 원본 오디오를 유지합니다. (기본값: "auto") | COMBO | 예 | `"auto"`<br>`"origin"` |
+| `watermark` | 결과물에 AI 생성 워터마크를 추가할지 여부입니다. (기본값: False) | BOOLEAN | 예 | - |
 
 ### wan2.7-videoedit 입력
 

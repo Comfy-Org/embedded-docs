@@ -8,8 +8,8 @@ O nó Grok Reference-to-Video gera um vídeo a partir de um prompt de texto, usa
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Descrição textual do vídeo desejado. Deve ser uma string não vazia. | STRING | Sim | N/A |
 | `modelo` | O modelo a ser usado para a geração de vídeo. | DYNAMIC_COMBO | Sim | `"grok-imagine-video-1.5"`<br>`"grok-imagine-video"` |
+| `prompt` | Descrição textual do vídeo desejado. Deve ser uma string não vazia. | STRING | Sim | N/A |
 | `semente` | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos, independentemente da semente (padrão: 0). | INT | Não | 0 a 2147483647 |
 
 ### Entradas do Grok Imagine Video 1.5

@@ -18,10 +18,10 @@ The following configuration parameters are shared by the `viduq3-pro` and `viduq
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `model.aspect_ratio` | The aspect ratio of the output video. | COMBO | Yes | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
-| `model.resolution` | Resolution of the output video. | COMBO | Yes | `"720p"`<br>`"1080p"` |
-| `model.duration` | Duration of the output video in seconds (default: 5). | INT | Yes | 1 to 16 |
-| `model.audio` | When enabled, outputs video with sound (including dialogue and sound effects) (default: False). | BOOLEAN | Yes | True/False |
+| `aspect_ratio` | The aspect ratio of the output video. | COMBO | Yes | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
+| `resolution` | Resolution of the output video. | COMBO | Yes | `"720p"`<br>`"1080p"` |
+| `duration` | Duration of the output video in seconds (default: 5). | INT | Yes | 1 to 16 |
+| `audio` | When enabled, outputs video with sound (including dialogue and sound effects) (default: False). | BOOLEAN | Yes | True/False |
 
 **Note:** The parameters `aspect_ratio`, `resolution`, `duration`, and `audio` are required once a `model` is selected, as they are part of its configuration. The `prompt` must not be empty and cannot exceed 2000 characters.
 

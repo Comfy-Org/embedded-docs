@@ -18,10 +18,10 @@ Vidu Q3 文字轉影片生成節點會根據文字描述建立影片。它使用
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `model.aspect_ratio` | 輸出影片的寬高比。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
-| `model.resolution` | 輸出影片的解析度。 | COMBO | 是 | `"720p"`<br>`"1080p"` |
-| `model.duration` | 輸出影片的時長（以秒為單位，預設值：5）。 | INT | 是 | 1 到 16 |
-| `model.audio` | 啟用後，會輸出包含聲音的影片（包括對話和音效）（預設值：False）。 | BOOLEAN | 是 | True/False |
+| `aspect_ratio` | 輸出影片的寬高比。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
+| `resolution` | 輸出影片的解析度。 | COMBO | 是 | `"720p"`<br>`"1080p"` |
+| `duration` | 輸出影片的時長（以秒為單位，預設值：5）。 | INT | 是 | 1 到 16 |
+| `audio` | 啟用後，會輸出包含聲音的影片（包括對話和音效）（預設值：False）。 | BOOLEAN | 是 | True/False |
 
 **注意：** 一旦選取 `model`，參數 `aspect_ratio`、`resolution`、`duration` 和 `audio` 即為必填，因為它們屬於該模型設定的一部分。`prompt` 不可為空，且不得超過 2000 個字元。
 

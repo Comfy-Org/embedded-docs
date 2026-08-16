@@ -10,9 +10,9 @@ Le nœud Wan2VideoEditApi utilise le modèle Wan 2.7 pour éditer une vidéo sel
 |-----------|-------------|-----------------|--------|-------|
 | `model` | Le modèle à utiliser pour l’édition vidéo. | DYNAMIC_COMBO | Oui | `"wan2.7-videoedit"` |
 | `video` | La vidéo à éditer. | VIDEO | Oui | - |
-| `seed` | Graine à utiliser pour la génération. (défaut : 0) | INT | Non | 0 à 2147483647 |
-| `audio_setting` | 'auto' : le modèle décide s’il doit régénérer l’audio en fonction de la invite. 'origin' : préserver l’audio original de la vidéo d’entrée. (défaut : "auto") | COMBO | Non | `"auto"`<br>`"origin"` |
-| `watermark` | Indique s’il faut ajouter un filigrane généré par IA au résultat. (défaut : False) | BOOLEAN | Non | - |
+| `seed` | Graine à utiliser pour la génération. (défaut : 0) | INT | Oui | 0 à 2147483647 |
+| `audio_setting` | 'auto' : le modèle décide s’il doit régénérer l’audio en fonction de la invite. 'origin' : préserver l’audio original de la vidéo d’entrée. (défaut : "auto") | COMBO | Oui | `"auto"`<br>`"origin"` |
+| `watermark` | Indique s’il faut ajouter un filigrane généré par IA au résultat. (défaut : False) | BOOLEAN | Oui | - |
 
 ### wan2.7-videoedit Entrées
 

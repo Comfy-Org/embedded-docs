@@ -9,8 +9,8 @@ Bu düğüm, sağlanan referans materyallerine dayalı olarak bir kişiyi veya n
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Video üretimi için kullanılacak belirli model. | DYNAMIC_COMBO | Evet | "wan2.7-r2v" |
-| `seed` | Üretim için kullanılan ve çıktının rastgeleliğini kontrol etmeye yardımcı olan tohum (varsayılan: 0). | INT | Hayır | 0 ile 2147483647 arası |
-| `watermark` | Sonuca yapay zeka tarafından üretilmiş bir filigran eklenip eklenmeyeceği (varsayılan: False). Bu gelişmiş bir ayardır. | BOOLEAN | Hayır | True<br>False |
+| `seed` | Üretim için kullanılan ve çıktının rastgeleliğini kontrol etmeye yardımcı olan tohum (varsayılan: 0). | INT | Evet | 0 ile 2147483647 arası |
+| `watermark` | Sonuca yapay zeka tarafından üretilmiş bir filigran eklenip eklenmeyeceği (varsayılan: False). Bu gelişmiş bir ayardır. | BOOLEAN | Evet | True<br>False |
 
 ### wan2.7-r2v Girdileri
 
@@ -26,8 +26,8 @@ Bu düğüm, sağlanan referans materyallerine dayalı olarak bir kişiyi veya n
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model.reference_videos` | Genişletilebilir yuva: en fazla 3 referans videosu bağlayın (`video1` ile `video3` arasındaki yuvalar). Genel olarak en az bir referans videosu veya görseli gereklidir. | VIDEO | Hayır | 0 ile 3 öğe arası |
-| `model.reference_images` | Genişletilebilir yuva: en fazla 5 referans görseli bağlayın (`image1` ile `image5` arasındaki yuvalar). Genel olarak en az bir referans videosu veya görseli gereklidir. | IMAGE | Hayır | 0 ile 5 öğe arası |
+| `reference_videos` | Genişletilebilir yuva: en fazla 3 referans videosu bağlayın (`video1` ile `video3` arasındaki yuvalar). Genel olarak en az bir referans videosu veya görseli gereklidir. | VIDEO | Hayır | 0 ile 3 öğe arası |
+| `reference_images` | Genişletilebilir yuva: en fazla 5 referans görseli bağlayın (`image1` ile `image5` arasındaki yuvalar). Genel olarak en az bir referans videosu veya görseli gereklidir. | IMAGE | Hayır | 0 ile 5 öğe arası |
 
 **Önemli Kısıtlamalar:**
 

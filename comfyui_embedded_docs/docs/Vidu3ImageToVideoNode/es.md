@@ -10,24 +10,24 @@ El nodo Vidu Q3 Image-to-Video Generation crea una secuencia de video a partir d
 |-----------|-------------|---------------|-----------|-------|
 | `model` | Modelo a utilizar para la generación de video. | DYNAMIC_COMBO | Sí | `"viduq3-pro"`<br>`"viduq3-turbo"` |
 | `image` | Una imagen que se utilizará como fotograma inicial del video generado. | IMAGE | Sí | - |
-| `prompt` | Un prompt de texto opcional para la generación de video (máximo 2000 caracteres) (predeterminado: vacío). | STRING | No | - |
-| `seed` | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 1). Admite control posterior a la generación. | INT | No | 0 a 2147483647 |
+| `prompt` | Un prompt de texto opcional para la generación de video (máximo 2000 caracteres) (predeterminado: vacío). | STRING | Sí | - |
+| `seed` | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 1). Admite control posterior a la generación. | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de viduq3-pro
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `model.resolution` | Resolución del video de salida. | COMBO | Sí | `"720p"`<br>`"1080p"`<br>`"2K"` |
-| `model.duration` | Duración del video de salida en segundos (predeterminado: 5). | INT | Sí | 1 a 16 |
-| `model.audio` | Cuando está habilitado, genera video con sonido (incluyendo diálogos y efectos de sonido) (predeterminado: False). | BOOLEAN | Sí | `True`<br>`False` |
+| `resolution` | Resolución del video de salida. | COMBO | Sí | `"720p"`<br>`"1080p"`<br>`"2K"` |
+| `duration` | Duración del video de salida en segundos (predeterminado: 5). | INT | Sí | 1 a 16 |
+| `audio` | Cuando está habilitado, genera video con sonido (incluyendo diálogos y efectos de sonido) (predeterminado: False). | BOOLEAN | Sí | `True`<br>`False` |
 
 ### Entradas de viduq3-turbo
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `model.resolution` | Resolución del video de salida. | COMBO | Sí | `"720p"`<br>`"1080p"` |
-| `model.duration` | Duración del video de salida en segundos (predeterminado: 5). | INT | Sí | 1 a 16 |
-| `model.audio` | Cuando está habilitado, genera video con sonido (incluyendo diálogos y efectos de sonido) (predeterminado: False). | BOOLEAN | Sí | `True`<br>`False` |
+| `resolution` | Resolución del video de salida. | COMBO | Sí | `"720p"`<br>`"1080p"` |
+| `duration` | Duración del video de salida en segundos (predeterminado: 5). | INT | Sí | 1 a 16 |
+| `audio` | Cuando está habilitado, genera video con sonido (incluyendo diálogos y efectos de sonido) (predeterminado: False). | BOOLEAN | Sí | `True`<br>`False` |
 
 **Nota:** El parámetro `image` debe tener una relación de aspecto entre 1:4 y 4:1 (de vertical a horizontal). El parámetro `prompt` es opcional pero no puede superar los 2000 caracteres. Las opciones de resolución dependen del modelo seleccionado: `"viduq3-pro"` admite `"720p"`, `"1080p"` y `"2K"`; `"viduq3-turbo"` admite `"720p"` y `"1080p"`.
 

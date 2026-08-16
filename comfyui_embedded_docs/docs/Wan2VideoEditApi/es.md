@@ -10,9 +10,9 @@ El nodo Wan2VideoEditApi utiliza el modelo Wan 2.7 para editar un video según i
 |-----------|-------------|---------------|-----------|-------|
 | `model` | El modelo a utilizar para la edición de video. | DYNAMIC_COMBO | Sí | `"wan2.7-videoedit"` |
 | `video` | El video a editar. | VIDEO | Sí | - |
-| `seed` | Semilla a utilizar para la generación. (por defecto: 0) | INT | No | 0 a 2147483647 |
-| `audio_setting` | 'auto': el modelo decide si regenerar el audio según el prompt. 'origin': conservar el audio original del video de entrada. (por defecto: "auto") | COMBO | No | `"auto"`<br>`"origin"` |
-| `watermark` | Si se debe añadir una marca de agua generada por IA al resultado. (por defecto: False) | BOOLEAN | No | - |
+| `seed` | Semilla a utilizar para la generación. (por defecto: 0) | INT | Sí | 0 a 2147483647 |
+| `audio_setting` | 'auto': el modelo decide si regenerar el audio según el prompt. 'origin': conservar el audio original del video de entrada. (por defecto: "auto") | COMBO | Sí | `"auto"`<br>`"origin"` |
+| `watermark` | Si se debe añadir una marca de agua generada por IA al resultado. (por defecto: False) | BOOLEAN | Sí | - |
 
 ### Entradas de wan2.7-videoedit
 

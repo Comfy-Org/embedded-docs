@@ -10,8 +10,8 @@ Bu düğüm, Luma UNI-1 modelini kullanarak metin açıklamalarından görüntü
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `prompt` | İstenen görüntünün metin açıklaması. 1–6000 karakter. | STRING | Evet | 1 ila 6000 karakter |
 | `model` | Üretim için kullanılacak model. Bir model seçmek, o modele özel ek ayarları görüntüler. | DYNAMIC_COMBO | Evet | `"uni-1"`<br>`"uni-1-max"` |
+| `prompt` | İstenen görüntünün metin açıklaması. 1–6000 karakter. | STRING | Evet | 1 ila 6000 karakter |
 | `seed` | Seed (tohum), düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak belirlenimci değildir. (varsayılan: 0) | INT | Evet | 0 ila 2147483647 |
 
 ### uni-1 ve uni-1-max Girdileri

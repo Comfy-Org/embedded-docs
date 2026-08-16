@@ -8,8 +8,8 @@ Grok Reference-to-Video düğümü, çıktının stilini ve içeriğini yönlend
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `istem` | İstenen videonun metin açıklaması. Boş olmayan bir string olmalıdır. | STRING | Evet | N/A |
 | `model` | Video oluşturma için kullanılacak model. | DYNAMIC_COMBO | Evet | `"grok-imagine-video-1.5"`<br>`"grok-imagine-video"` |
+| `istem` | İstenen videonun metin açıklaması. Boş olmayan bir string olmalıdır. | STRING | Evet | N/A |
 | `tohum` | Düğümün yeniden çalışıp çalışmayacağını belirleyen tohum; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Hayır | 0 ile 2147483647 arası |
 
 ### Grok Imagine Video 1.5 Girdileri

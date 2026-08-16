@@ -8,7 +8,7 @@ O nó Wan 2.7 Image to Video gera um vídeo a partir de uma imagem de primeiro q
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo de IA usado para a geração de vídeo. | COMBO | Sim | `"wan2.7-i2v"` |
+| `model` | O modelo de IA usado para a geração de vídeo. | DYNAMIC_COMBO | Sim | `"wan2.7-i2v"` |
 | `first_frame` | Imagem do primeiro quadro. A proporção de aspecto da saída é derivada desta imagem. | IMAGE | Sim | - |
 | `last_frame` | Imagem do último quadro. O modelo gera um vídeo com transição do primeiro para o último quadro. | IMAGE | Não | - |
 | `audio` | Áudio para orientar a geração de vídeo (ex.: sincronização labial, movimento sincronizado com batida). Duração: 2s-30s. Se não for fornecido, o modelo gera automaticamente música de fundo ou efeitos sonoros correspondentes. | AUDIO | Não | - |

@@ -8,8 +8,8 @@ Este nó gera ou edita imagens enviando um prompt de texto para a API Vertex AI 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|---------------|--------------|-------|
+| `model` | Seleciona o modelo Gemini a ser usado para geração de imagens. Este parâmetro inclui subparâmetros adicionais para resolução, proporção de aspecto, nível de raciocínio e entradas de referência. | DYNAMIC_COMBO | Sim | `"Nano Banana 2 (Gemini 3.1 Flash Image)"`<br>`"Nano Banana 2 Lite"` |
 | `prompt` | Prompt de texto que descreve a imagem a ser gerada ou as edições a serem aplicadas. Inclua quaisquer restrições, estilos ou detalhes que o modelo deva seguir. Não deve estar vazio. | STRING | Sim | N/A |
-| `model` | Seleciona o modelo Gemini a ser usado para geração de imagens. Este parâmetro inclui subparâmetros adicionais para resolução, proporção de aspecto, nível de raciocínio e entradas de referência. | COMBO | Sim | `"Nano Banana 2 (Gemini 3.1 Flash Image)"`<br>`"Nano Banana 2 Lite"` |
 | `seed` | Quando a seed é fixada em um valor específico, o modelo faz o melhor esforço para fornecer a mesma resposta para solicitações repetidas. A saída determinística não é garantida. Além disso, alterar o modelo ou as configurações de parâmetros, como a temperatura, pode causar variações na resposta mesmo ao usar o mesmo valor de seed. Por padrão, um valor de seed aleatório é usado. (padrão: 42) | INT | Sim | 0 a 18446744073709551615 |
 | `response_modalities` | Determina o formato da resposta. IMAGE retorna apenas uma imagem; IMAGE+TEXT retorna uma imagem e uma resposta em texto. (padrão: IMAGE) Parâmetro avançado. | COMBO | Sim | `"IMAGE"`<br>`"IMAGE+TEXT"` |
 | `system_prompt` | Instruções fundamentais que definem o comportamento de uma IA. O padrão é um prompt integrado que instrui o modelo a sempre produzir uma imagem. Parâmetro avançado. | STRING | Não | N/A |

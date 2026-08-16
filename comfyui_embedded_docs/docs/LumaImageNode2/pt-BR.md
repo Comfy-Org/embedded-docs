@@ -10,8 +10,8 @@ Este nó gera imagens a partir de descrições textuais usando o modelo Luma UNI
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
+| `model` | Modelo a ser usado para a geração. Selecionar um modelo revela configurações adicionais para esse modelo. | DYNAMIC_COMBO | Sim | `"uni-1"`<br>`"uni-1-max"` |
 | `prompt` | Descrição textual da imagem desejada. De 1 a 6000 caracteres. | STRING | Sim | 1 a 6000 caracteres |
-| `model` | Modelo a ser usado para a geração. Selecionar um modelo revela configurações adicionais para esse modelo. | COMBO | Sim | `"uni-1"`<br>`"uni-1-max"` |
 | `seed` | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente. (padrão: 0) | INT | Sim | 0 a 2147483647 |
 
 ### Entradas de uni-1 e uni-1-max

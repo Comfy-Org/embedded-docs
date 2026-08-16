@@ -10,9 +10,9 @@ The Wan2VideoEditApi node uses the Wan 2.7 model to edit a video based on text i
 |-----------|-------------|-----------|----------|-------|
 | `model` | The model to use for video editing. | DYNAMIC_COMBO | Yes | `"wan2.7-videoedit"` |
 | `video` | The video to edit. | VIDEO | Yes | - |
-| `seed` | Seed to use for generation. (default: 0) | INT | No | 0 to 2147483647 |
-| `audio_setting` | 'auto': model decides whether to regenerate audio based on the prompt. 'origin': preserve the original audio from the input video. (default: "auto") | COMBO | No | `"auto"`<br>`"origin"` |
-| `watermark` | Whether to add an AI-generated watermark to the result. (default: False) | BOOLEAN | No | - |
+| `seed` | Seed to use for generation. (default: 0) | INT | Yes | 0 to 2147483647 |
+| `audio_setting` | 'auto': model decides whether to regenerate audio based on the prompt. 'origin': preserve the original audio from the input video. (default: "auto") | COMBO | Yes | `"auto"`<br>`"origin"` |
+| `watermark` | Whether to add an AI-generated watermark to the result. (default: False) | BOOLEAN | Yes | - |
 
 ### wan2.7-videoedit Inputs
 

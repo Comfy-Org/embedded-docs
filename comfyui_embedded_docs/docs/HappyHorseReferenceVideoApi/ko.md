@@ -9,8 +9,8 @@
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | 생성에 사용할 HappyHorse 참조-비디오(reference-to-video) 모델입니다. | DYNAMIC_COMBO | 예 | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
-| `seed` | 생성에 사용할 시드입니다(기본값: 0). 생성 후 자동으로 변경되도록 설정할 수 있습니다. | INT | 아니요 | 0 ~ 2147483647 |
-| `watermark` | 결과물에 AI 생성 워터마크를 추가할지 여부입니다(기본값: False). | BOOLEAN | 아니요 | True 또는 False |
+| `seed` | 생성에 사용할 시드입니다(기본값: 0). 생성 후 자동으로 변경되도록 설정할 수 있습니다. | INT | 예 | 0 ~ 2147483647 |
+| `watermark` | 결과물에 AI 생성 워터마크를 추가할지 여부입니다(기본값: False). | BOOLEAN | 예 | True 또는 False |
 
 ### HappyHorse 1.1 입력 (happyhorse-1.1-r2v)
 

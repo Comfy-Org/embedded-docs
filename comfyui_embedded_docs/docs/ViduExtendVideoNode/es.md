@@ -20,8 +20,8 @@ Estos ajustes son comunes a ambos modelos.
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `model.duration` | Duración del video extendido en segundos (por defecto: 4). Este ajuste aparece después de seleccionar un modelo. | INT | Sí | 1 a 7 |
-| `model.resolution` | Resolución del video de salida. Este ajuste aparece después de seleccionar un modelo. | COMBO | Sí | `"720p"`<br>`"1080p"` |
+| `duration` | Duración del video extendido en segundos (por defecto: 4). Este ajuste aparece después de seleccionar un modelo. | INT | Sí | 1 a 7 |
+| `resolution` | Resolución del video de salida. Este ajuste aparece después de seleccionar un modelo. | COMBO | Sí | `"720p"`<br>`"1080p"` |
 
 **Nota:** El `video` de origen debe tener una duración de entre 4 y 55 segundos. Si se proporciona `end_frame`, su relación de aspecto debe estar entre 1:4 y 4:1, y su ancho y alto deben ser de al menos 128 píxeles cada uno.
 

@@ -12,7 +12,7 @@ This node generates a video by interpolating between a provided start frame and 
 | `first_frame` | The starting image for the video sequence. | IMAGE | Yes | - |
 | `end_frame` | The ending image for the video sequence. | IMAGE | Yes | - |
 | `prompt` | Prompt description (max 2000 characters). | STRING | Yes | - |
-| `seed` | A seed value for controlling the randomness of the generation (default: 1). | INT | No | 0 to 2147483647 |
+| `seed` | A seed value for controlling the randomness of the generation (default: 1). | INT | Yes | 0 to 2147483647 |
 
 ### viduq3-pro and viduq3-turbo Inputs
 
@@ -20,9 +20,9 @@ The following parameters are shared by both model options (`viduq3-pro` and `vid
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model.resolution` | Resolution of the output video. This parameter is revealed after selecting a `model`. | COMBO | Yes | `"720p"`<br>`"1080p"` |
-| `model.duration` | Duration of the output video in seconds (default: 5). This parameter is revealed after selecting a `model`. | INT | Yes | 1 to 16 |
-| `model.audio` | When enabled, outputs video with sound (including dialogue and sound effects) (default: False). This parameter is revealed after selecting a `model`. | BOOLEAN | Yes | `True`<br>`False` |
+| `resolution` | Resolution of the output video. This parameter is revealed after selecting a `model`. | COMBO | Yes | `"720p"`<br>`"1080p"` |
+| `duration` | Duration of the output video in seconds (default: 5). This parameter is revealed after selecting a `model`. | INT | Yes | 1 to 16 |
+| `audio` | When enabled, outputs video with sound (including dialogue and sound effects) (default: False). This parameter is revealed after selecting a `model`. | BOOLEAN | Yes | `True`<br>`False` |
 
 **Note:** The `first_frame` and `end_frame` images must have similar aspect ratios. The aspect ratio of the two images must be within 80% to 125% of each other (a relative closeness between 0.8 and 1.25).
 
