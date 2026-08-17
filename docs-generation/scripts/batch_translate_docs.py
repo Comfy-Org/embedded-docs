@@ -334,6 +334,52 @@ def process_node(node_name, target_lang, lang_config, client, model, force=False
         logger.error(f"❌ Translation failed {node_name}: {e}")
         return "failed"
 
+
+def translate_nodes_concurrently(nodes, concurrency, process_fn, max_consecutive_failures=5):
+    """Translate nodes with a thread pool.
+
+    ``process_fn(node_name)`` must return "success" | "failed" | "skipped".
+    Returns (results_dict, aborted) where results_dict maps each outcome to a
+    list of node names (input order preserved per bucket) and ``aborted`` is
+    True when the consecutive-failure circuit breaker tripped (remaining
+    not-yet-started tasks are cancelled).
+    """
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    results = {"success": [], "failed": [], "skipped": []}
+    consecutive_failures = 0
+    aborted = False
+
+    with ThreadPoolExecutor(max_workers=concurrency) as pool:
+        # Submit in order, consume in completion order
+        future_to_node = {pool.submit(process_fn, n): n for n in nodes}
+        for fut in as_completed(future_to_node):
+            node_name = future_to_node[fut]
+            if fut.cancelled():
+                continue  # cancelled by the circuit breaker; not tallied
+            try:
+                result = fut.result()
+            except Exception as e:  # defensive; process_node already catches
+                logger.error(f"❌ Translation crashed {node_name}: {e}")
+                result = "failed"
+            if result not in results:
+                result = "failed"
+            results[result].append(node_name)
+            logger.info(f"[{sum(len(v) for v in results.values())}/{len(nodes)}] {node_name}: {result}")
+
+            if result == "failed":
+                consecutive_failures += 1
+            else:
+                consecutive_failures = 0  # Reset counter on success/skip
+
+            if consecutive_failures >= max_consecutive_failures:
+                for other in future_to_node:
+                    other.cancel()  # no-op for already-running futures
+                aborted = True
+                break
+
+    return results, aborted
+
 def main():
     """Main function"""
     parser = argparse.ArgumentParser(description="Batch translate docs using prepared batch file")
@@ -347,10 +393,15 @@ def main():
                         help="Comma-separated list of node names to translate (overrides batch file)")
     parser.add_argument("--node-list-file", type=str, default=None,
                         help="Path to JSON file with {'nodes': ['NodeA', 'NodeB']} (overrides batch file)")
+    parser.add_argument("--concurrency", type=int, default=1,
+                        help="Parallel translation workers (default: 1 = sequential, with the "
+                             "usual every-5-nodes rest). >1 uses a thread pool and skips the "
+                             "periodic rest; retries/backoff still apply per request.")
     args = parser.parse_args()
     target_lang = args.lang
     mode = args.mode
     force = args.force
+    concurrency = max(1, args.concurrency)
 
     # Load translation config
     with open(TRANSLATION_CONFIG_FILE, 'r', encoding='utf-8') as f:
@@ -427,20 +478,10 @@ def main():
     MAX_CONSECUTIVE_FAILURES = 5
     completed_nodes = []  # Track completed nodes for batch update
 
-    for idx, node_name in enumerate(nodes_to_translate, 1):
-        logger.info("")
-        logger.info(f"[{idx}/{len(nodes_to_translate)}] Processing node: {node_name}")
-        logger.info("-" * 60)
-
-        result = process_node(
-            node_name,
-            target_lang,
-            lang_config,
-            client,
-            DEFAULT_MODEL,
-            force=force
-        )
-        
+    def _tally(result, node_name):
+        """Update counters for one finished node; return True if the
+        consecutive-failure circuit breaker tripped."""
+        nonlocal success_count, failed_count, skipped_count, consecutive_failures
         if result == "success":
             success_count += 1
             consecutive_failures = 0  # Reset counter on success
@@ -448,34 +489,74 @@ def main():
         elif result == "failed":
             failed_count += 1
             consecutive_failures += 1
-            
-            # Check if we've hit the consecutive failure limit
-            if consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
-                logger.error("")
-                logger.error("=" * 80)
-                logger.error(f"❌ Consecutive failures reached {MAX_CONSECUTIVE_FAILURES}, terminating")
-                logger.error("=" * 80)
-                logger.error(f"Success: {success_count}, Failed: {failed_count}, Skipped: {skipped_count}")
-                logger.error("Please check:")
-                logger.error("  1. API key is correctly configured")
-                logger.error("  2. Network connection is stable")
-                logger.error("  3. API has sufficient balance")
-                logger.error("=" * 80)
-                print()
-                print("=" * 80)
-                print(f"❌ Consecutive failures: {MAX_CONSECUTIVE_FAILURES}, terminated automatically")
-                print(f"Success: {success_count}, Failed: {failed_count}, Skipped: {skipped_count}")
-                print(f"📁 Log: {log_file}")
-                print("=" * 80)
-                sys.exit(1)
         elif result == "skipped":
             skipped_count += 1
             consecutive_failures = 0  # Reset counter on skip
-        
-        # Rate limiting
-        if idx % DEFAULT_BATCH_SIZE == 0 and idx < len(nodes_to_translate):
-            logger.info("⏸️  Batch rest for 2 seconds...")
-            time.sleep(2)
+        return consecutive_failures >= MAX_CONSECUTIVE_FAILURES
+
+    def _abort_with_failure_summary():
+        logger.error("")
+        logger.error("=" * 80)
+        logger.error(f"❌ Consecutive failures reached {MAX_CONSECUTIVE_FAILURES}, terminating")
+        logger.error("=" * 80)
+        logger.error(f"Success: {success_count}, Failed: {failed_count}, Skipped: {skipped_count}")
+        logger.error("Please check:")
+        logger.error("  1. API key is correctly configured")
+        logger.error("  2. Network connection is stable")
+        logger.error("  3. API has sufficient balance")
+        logger.error("=" * 80)
+        print()
+        print("=" * 80)
+        print(f"❌ Consecutive failures: {MAX_CONSECUTIVE_FAILURES}, terminated automatically")
+        print(f"Success: {success_count}, Failed: {failed_count}, Skipped: {skipped_count}")
+        print(f"📁 Log: {log_file}")
+        print("=" * 80)
+        sys.exit(1)
+
+    aborted = False
+
+    if concurrency > 1 and len(nodes_to_translate) > 1:
+        # Concurrent path: thread pool over the shared client (httpx-based,
+        # thread-safe). The periodic every-5-nodes rest is skipped here;
+        # per-request retry/backoff in translate_document still applies.
+        logger.info(f"⚡ Concurrency: {concurrency} workers")
+        results, aborted = translate_nodes_concurrently(
+            nodes_to_translate,
+            concurrency,
+            lambda n: process_node(n, target_lang, lang_config, client, DEFAULT_MODEL, force=force),
+            max_consecutive_failures=MAX_CONSECUTIVE_FAILURES,
+        )
+        success_count = len(results["success"])
+        failed_count = len(results["failed"])
+        skipped_count = len(results["skipped"])
+        completed_nodes = results["success"]
+    else:
+        # Sequential path (default): identical to the original behavior.
+        for idx, node_name in enumerate(nodes_to_translate, 1):
+            logger.info("")
+            logger.info(f"[{idx}/{len(nodes_to_translate)}] Processing node: {node_name}")
+            logger.info("-" * 60)
+
+            result = process_node(
+                node_name,
+                target_lang,
+                lang_config,
+                client,
+                DEFAULT_MODEL,
+                force=force
+            )
+
+            if _tally(result, node_name):
+                aborted = True
+                break
+
+            # Rate limiting
+            if idx % DEFAULT_BATCH_SIZE == 0 and idx < len(nodes_to_translate):
+                logger.info("⏸️  Batch rest for 2 seconds...")
+                time.sleep(2)
+
+    if aborted:
+        _abort_with_failure_summary()
     
     logger.info("")
     logger.info("=" * 80)

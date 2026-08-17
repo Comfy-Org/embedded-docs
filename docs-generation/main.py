@@ -225,7 +225,7 @@ class DocumentationWorkflow:
             f"Preparing {lang} translation batch ({mode} mode{' + force-all-nodes' if force_all_nodes else ''})"
         )
     
-    def translate_docs(self, lang: str, mode: str, count: int = None, force: bool = False, node_name: str = None) -> bool:
+    def translate_docs(self, lang: str, mode: str, count: int = None, force: bool = False, node_name: str = None, concurrency: int = 1) -> bool:
         """Translate documentation to a specific language"""
         args = ["--lang", lang, "--mode", mode]
 
@@ -238,6 +238,9 @@ class DocumentationWorkflow:
 
         if force:
             args.append("--force")
+
+        if concurrency > 1:
+            args.extend(["--concurrency", str(concurrency)])
 
         return self.run_command(
             self.translate_script,
@@ -276,6 +279,7 @@ class DocumentationWorkflow:
         skip_frontend_sync: bool = False,
         force_all_nodes: bool = False,
         node_name: str = None,
+        concurrency: int = 1,
     ):
         """Run translation workflow for a specific language"""
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -319,7 +323,7 @@ class DocumentationWorkflow:
 
         # Step 2: Translate documents (trusts batch list, updates JSON incrementally)
         print(f"\n🤖 Step 2: Translating to {lang}...")
-        if not self.translate_docs(lang, mode, count, force, node_name=node_name):
+        if not self.translate_docs(lang, mode, count, force, node_name=node_name, concurrency=concurrency):
             print("\n❌ Translation workflow failed at Step 2: Translate")
             return False
         
@@ -343,7 +347,7 @@ class DocumentationWorkflow:
         
         return True
     
-    def run_all_languages_translation(self, mode: str = "test", count: int = 10, force: bool = False, force_all_nodes: bool = False, node_name: str = None):
+    def run_all_languages_translation(self, mode: str = "test", count: int = 10, force: bool = False, force_all_nodes: bool = False, node_name: str = None, concurrency: int = 1):
         """Run translation workflow for all supported languages"""
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         languages = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa']
@@ -390,6 +394,7 @@ class DocumentationWorkflow:
                 skip_frontend_sync=True,
                 force_all_nodes=force_all_nodes,
                 node_name=node_name,
+                concurrency=concurrency,
             )
             results[lang] = success
             
@@ -496,7 +501,7 @@ class DocumentationWorkflow:
             print(f"  ⚠️  Could not read scan report: {e}")
             return []
 
-    def run_changed_workflow(self, force: bool = False):
+    def run_changed_workflow(self, force: bool = False, concurrency: int = 1):
         """Run workflow for nodes with changed source code"""
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -549,9 +554,12 @@ class DocumentationWorkflow:
                 print(f"\n{'=' * 60}")
                 print(f"🌐 Translating changed nodes to {lang}...")
                 print(f"{'=' * 60}")
+                tr_args = ["--lang", lang, "--node-list", node_list_str, "--force"]
+                if concurrency > 1:
+                    tr_args.extend(["--concurrency", str(concurrency)])
                 self.run_command(
                     self.translate_script,
-                    ["--lang", lang, "--node-list", node_list_str, "--force"],
+                    tr_args,
                     f"Re-translating changed nodes to {lang}"
                 )
             print(f"\n✅ Step 4 complete: {len(changed_nodes)} changed nodes re-translated across {len(languages)} languages.")
@@ -1171,6 +1179,18 @@ Examples:
     )
 
     parser.add_argument(
+        '--concurrency',
+        type=int,
+        default=1,
+        metavar='N',
+        help=(
+            'Parallel translation workers (default: 1 = sequential). Applies to --translate '
+            'and to the re-translation step of --mode changed. Use with care: raises API '
+            'request rate proportionally.'
+        ),
+    )
+
+    parser.add_argument(
         '--interactive', '-i',
         action='store_true',
         help='Show interactive menu (default when no other args)'
@@ -1208,6 +1228,13 @@ Examples:
         workflow = DocumentationWorkflow()
         success = run_interactive(workflow)
         sys.exit(0 if success else 1)
+
+    if args.concurrency < 1:
+        print("❌ Error: --concurrency must be >= 1")
+        sys.exit(1)
+
+    if args.concurrency > 1 and not (args.translate or args.mode == 'changed'):
+        print("⚠️  Note: --concurrency only applies to translation; ignoring it.")
 
     # Validate arguments
     if args.mode == 'node' and not args.node:
@@ -1272,6 +1299,7 @@ Examples:
                 force=args.force,
                 force_all_nodes=args.force_all_translation_nodes,
                 node_name=args.node if args.mode == "node" else None,
+                concurrency=args.concurrency,
             )
         else:
             # Translate single language
@@ -1282,6 +1310,7 @@ Examples:
                 force=args.force,
                 force_all_nodes=args.force_all_translation_nodes,
                 node_name=args.node if args.mode == "node" else None,
+                concurrency=args.concurrency,
             )
         sys.exit(0 if success else 1)
     
@@ -1296,7 +1325,7 @@ Examples:
         )
     elif args.mode == 'changed':
         # Changed nodes workflow
-        success = workflow.run_changed_workflow(force=args.force)
+        success = workflow.run_changed_workflow(force=args.force, concurrency=args.concurrency)
     elif args.mode == 'regenerate-all':
         success = workflow.run_regenerate_all_workflow(
             prepare_limit=args.prepare_limit,

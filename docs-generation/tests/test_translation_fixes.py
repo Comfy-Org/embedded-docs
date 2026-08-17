@@ -156,5 +156,42 @@ class DryRunTests(unittest.TestCase):
         self.assertIn("`new_name`", final)
 
 
+class ConcurrencyTests(unittest.TestCase):
+    def test_all_success(self):
+        nodes = [f"Node{i}" for i in range(10)]
+        results, aborted = btd.translate_nodes_concurrently(
+            nodes, concurrency=4, process_fn=lambda n: "success"
+        )
+        self.assertFalse(aborted)
+        self.assertEqual(sorted(results["success"]), sorted(nodes))
+        self.assertEqual(results["failed"], [])
+
+    def test_circuit_breaker_trips_on_consecutive_failures(self):
+        nodes = [f"Node{i}" for i in range(20)]
+        results, aborted = btd.translate_nodes_concurrently(
+            nodes,
+            concurrency=1,  # deterministic ordering for the breaker test
+            process_fn=lambda n: "failed",
+            max_consecutive_failures=5,
+        )
+        self.assertTrue(aborted)
+        # Breaker trips after 5 failures; with concurrency=1 nothing beyond
+        # the in-flight task can complete, so we must see far fewer than 20.
+        self.assertLess(len(results["failed"]), 20)
+
+    def test_success_resets_consecutive_failure_counter(self):
+        # Fail 4x, succeed, fail 4x: never 5 in a row -> no abort.
+        outcomes = {"a": "failed", "b": "failed", "c": "failed", "d": "failed",
+                    "e": "success", "f": "failed", "g": "failed", "h": "failed",
+                    "i": "failed"}
+        results, aborted = btd.translate_nodes_concurrently(
+            list(outcomes), concurrency=1, process_fn=lambda n: outcomes[n],
+            max_consecutive_failures=5,
+        )
+        self.assertFalse(aborted)
+        self.assertEqual(len(results["failed"]), 8)
+        self.assertEqual(results["success"], ["e"])
+
+
 if __name__ == "__main__":
     unittest.main()
