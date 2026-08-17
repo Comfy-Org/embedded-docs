@@ -19,7 +19,6 @@ TRANSLATION_BATCHES_DIR = REPO_ROOT / "translation_batches"
 ENV_FILE = REPO_ROOT / ".env"
 TRANSLATION_CONFIG = CONFIG_DIR / "translation_config.json"
 DOC_RULES = CONFIG_DIR / "doc_rules.txt"
-TRANSLATION_RULES = CONFIG_DIR / "translation_rules.txt"
 
 ALL_NODES_INFO = DATA_DIR / "all_nodes_info.json"
 NODE_VERSIONS = DATA_DIR / "node_versions.json"

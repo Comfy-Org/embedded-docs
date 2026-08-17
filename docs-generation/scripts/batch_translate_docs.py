@@ -13,7 +13,6 @@ import time
 import logging
 from pathlib import Path
 from datetime import datetime
-from openai import OpenAI
 
 import runtime  # noqa: F401
 from lib.doc_disclaimer import (
@@ -139,6 +138,20 @@ def strip_ai_preamble(content: str, lang: str) -> str:
 
     return '\n'.join(lines)
 
+def _extract_table_data_rows(table_text: str) -> list[str]:
+    """Return the data rows of a markdown table (lines starting with '|'),
+    excluding the header row and the |---| separator row."""
+    table_lines = [l for l in table_text.split('\n') if l.strip().startswith('|')]
+    data_rows = []
+    for i, line in enumerate(table_lines):
+        if i == 0:
+            continue  # header row
+        if re.match(r'^\|[\s:|-]+\|?$', line.strip()):
+            continue  # separator row
+        data_rows.append(line)
+    return data_rows
+
+
 def _fix_output_names_in_translation(translated_content: str, full_en: str) -> str:
     """Parse the English en.md Outputs table and force output names in translated content
     to match the English original by row index. This prevents the AI from translating
@@ -146,35 +159,23 @@ def _fix_output_names_in_translation(translated_content: str, full_en: str) -> s
 
     Works by:
     1. Extracting output names from en.md Outputs table in order (row by row).
-    2. Extracting output table lines from translated content.
+    2. Extracting output data rows from translated content (rows whose first cell
+       is a backtick-wrapped name).
     3. Replacing the first column (output name) of each row with its English counterpart.
     """
     # Extract English output names
     en_outputs_match = re.search(
-        r'##\s+(?:Outputs|输出|輸出|出力|출력|Выходы|Salidas|Sorties|المخرجات|Çıktılar|خروجی‌ها)\s*\n\n(.*?)(?=\n##|\Z)',
+        r'##\s+(?:Outputs|输出|輸出|出力|출력|Выходы|Salidas|Sorties|المخرجات|Çıktılar|خروجی‌ها)\s*\n(.*?)(?=\n##|\Z)',
         full_en, re.DOTALL
     )
     if not en_outputs_match:
         return translated_content  # No outputs table in English doc, nothing to fix
 
-    en_table = en_outputs_match.group(1).strip()
-    en_lines = en_table.split('\n')
-    if len(en_lines) < 3:
-        return translated_content
-
-    # Skip header row (| Name | Type | ...) and separator row (|---|---|...)
-    # Output names are backtick-wrapped in first column of data rows
     en_output_names = []
-    for line in en_lines[2:]:  # Skip header + separator
-        line = line.strip()
-        if not line.startswith('|'):
-            continue
-        parts = [p.strip() for p in line.split('|')]
-        if len(parts) >= 2:
-            # Extract backtick-wrapped name from first column
-            name = parts[1].strip('`').strip()
-            if name:
-                en_output_names.append(name)
+    for line in _extract_table_data_rows(en_outputs_match.group(1)):
+        m = re.match(r'^\|\s*`([^`]+)`', line.strip())
+        if m:
+            en_output_names.append(m.group(1).strip())
 
     if not en_output_names:
         return translated_content
@@ -182,7 +183,7 @@ def _fix_output_names_in_translation(translated_content: str, full_en: str) -> s
     # Now find and fix the Outputs table in translated content
     # Match any known heading for "Outputs" in any language
     tr_outputs_match = re.search(
-        r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Outputs|المخرجات|Çıktılar|خروجی‌ها)\s*\n\n(.*?)(?=\n##|\Z)',
+        r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Outputs|المخرجات|Çıktılar|خروجی‌ها)\s*\n(.*?)(?=\n##|\Z)',
         translated_content, re.DOTALL
     )
     if not tr_outputs_match:
@@ -191,28 +192,34 @@ def _fix_output_names_in_translation(translated_content: str, full_en: str) -> s
     tr_table = tr_outputs_match.group(1)
     tr_lines = tr_table.split('\n')
 
-    # Build new table lines with English names enforced
+    # Build new table lines with English names enforced. Only rows whose first
+    # cell holds a backtick-wrapped name count as data rows, so the row index
+    # cannot drift when blank/intro lines appear inside the section.
+    header_seen = False
     new_lines = list(tr_lines)
     data_row_idx = 0
     for i, line in enumerate(tr_lines):
-        if i < 2:  # Keep header and separator rows as-is
+        stripped = line.strip()
+        if not stripped.startswith('|'):
             continue
-        line = line.strip()
-        if not line.startswith('|'):
+        if not header_seen:
+            header_seen = True  # first table line is the header row
             continue
-        parts = line.split('|')
-        if len(parts) < 2:
-            continue
-        # Check if we have an English name for this row
+        if re.match(r'^\|[\s:|-]+\|?$', stripped):
+            continue  # separator row
+        orig_name_match = re.match(r'^\|(\s*`[^`]*`\s*)\|', stripped)
+        if not orig_name_match:
+            continue  # not a data row; do not advance the EN row index
         if data_row_idx < len(en_output_names):
             en_name = en_output_names[data_row_idx]
-            # Replace the output name column (first column after initial pipe)
-            # The backtick-wrapped name in the first data column
-            orig_name_match = re.match(r'^\|(\s*`[^`]*`\s*)', line)
-            if orig_name_match:
-                old = orig_name_match.group(1)
-                new = f' `{en_name}` '
-                new_lines[i] = line.replace(old, new, 1)
+            # Replace the backtick-wrapped name in the first column of the
+            # ORIGINAL line (preserves leading whitespace and cell padding)
+            new_lines[i] = re.sub(
+                r'^(\s*\|\s*)`[^`]*`(\s*\|)',
+                lambda m: f"{m.group(1)}`{en_name}`{m.group(2)}",
+                line,
+                count=1,
+            )
         data_row_idx += 1
 
     new_table = '\n'.join(new_lines)
@@ -220,7 +227,7 @@ def _fix_output_names_in_translation(translated_content: str, full_en: str) -> s
     return translated_content
 
 
-def translate_document(node_name, target_lang, lang_config, api_key, base_url, model):
+def translate_document(node_name, target_lang, lang_config, client, model):
     """Translate a single document"""
     
     # Read English source document
@@ -240,10 +247,7 @@ def translate_document(node_name, target_lang, lang_config, api_key, base_url, m
     # Build prompt using language-specific template
     prompt_template = lang_config.get('prompt_template', '')
     full_prompt = prompt_template + "\n\n" + source_content
-    
-    # Call AI API
-    client = OpenAI(api_key=api_key, base_url=base_url)
-    
+
     max_retries = 3
     for attempt in range(max_retries):
         try:
@@ -298,7 +302,7 @@ def translate_document(node_name, target_lang, lang_config, api_key, base_url, m
             else:
                 raise
 
-def process_node(node_name, target_lang, lang_config, api_key, base_url, model, force=False):
+def process_node(node_name, target_lang, lang_config, client, model, force=False):
     """
     Process a single node translation.
     When force=False, skips if target file already exists (do not overwrite).
@@ -310,9 +314,9 @@ def process_node(node_name, target_lang, lang_config, api_key, base_url, model, 
 
     try:
         logger.info(f"🤖 Translating: {node_name}")
-        
+
         # Translate document
-        translated_content = translate_document(node_name, target_lang, lang_config, api_key, base_url, model)
+        translated_content = translate_document(node_name, target_lang, lang_config, client, model)
         
         # Save translated document
         output_dir = DOCS_PATH / node_name
@@ -408,7 +412,13 @@ def main():
     logger.info(f"⚙️  Batch size: {DEFAULT_BATCH_SIZE}")
     logger.info("=" * 80)
     logger.info("")
-    
+
+    # Create the API client once and reuse it for every node in the batch.
+    # Imported lazily so the module's pure post-processing helpers stay
+    # importable (and testable) without the openai package installed.
+    from openai import OpenAI
+    client = OpenAI(api_key=DEFAULT_API_KEY, base_url=DEFAULT_BASE_URL)
+
     # Translate documents
     success_count = 0
     failed_count = 0
@@ -416,18 +426,17 @@ def main():
     consecutive_failures = 0
     MAX_CONSECUTIVE_FAILURES = 5
     completed_nodes = []  # Track completed nodes for batch update
-    
+
     for idx, node_name in enumerate(nodes_to_translate, 1):
         logger.info("")
         logger.info(f"[{idx}/{len(nodes_to_translate)}] Processing node: {node_name}")
         logger.info("-" * 60)
-        
+
         result = process_node(
             node_name,
             target_lang,
             lang_config,
-            DEFAULT_API_KEY,
-            DEFAULT_BASE_URL,
+            client,
             DEFAULT_MODEL,
             force=force
         )
