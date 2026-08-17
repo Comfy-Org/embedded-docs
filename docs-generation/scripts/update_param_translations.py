@@ -286,15 +286,18 @@ def main():
     # Get list of nodes to process
     if target_node:
         # Constrain --node to DOCS_ROOT: absolute values or ../ traversal
-        # must not make the updater write outside the docs tree.
+        # must not make the updater write outside the docs tree. The target
+        # must also be an actual node directory (not a file, not DOCS_ROOT
+        # itself), otherwise the run would silently process nothing.
         candidate = (DOCS_ROOT / target_node).resolve()
-        if not candidate.is_relative_to(DOCS_ROOT):
-            print(f"❌ Error: --node must be a node name inside {DOCS_ROOT}, got: {target_node}")
+        if (
+            not candidate.is_relative_to(DOCS_ROOT)
+            or candidate == DOCS_ROOT
+            or not candidate.is_dir()
+        ):
+            print(f"❌ Error: --node must be a node directory inside {DOCS_ROOT}, got: {target_node}")
             sys.exit(1)
         node_dirs = [candidate]
-        if not node_dirs[0].exists():
-            print(f"❌ Error: Node directory not found: {node_dirs[0]}")
-            sys.exit(1)
     else:
         node_dirs = [d for d in DOCS_ROOT.iterdir() if d.is_dir()]
     

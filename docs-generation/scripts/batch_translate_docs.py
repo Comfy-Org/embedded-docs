@@ -425,6 +425,19 @@ def main():
     # Determine which nodes to translate
     nodes_to_translate: list[str] = []
 
+    # Node names become paths under DOCS_PATH (reading en.md, writing
+    # <lang>.md). Reject any value that resolves outside the docs root —
+    # covers --node-list, --node-list-file and batch-file entries alike.
+    docs_root = DOCS_PATH.resolve()
+
+    def _invalid_nodes(names):
+        bad = []
+        for n in names:
+            node_dir = (docs_root / n).resolve()
+            if not node_dir.is_relative_to(docs_root) or node_dir == docs_root:
+                bad.append(n)
+        return bad
+
     if args.node_list:
         # Direct node list from CLI argument
         nodes_to_translate = [n.strip() for n in args.node_list.split(",") if n.strip()]
@@ -455,6 +468,12 @@ def main():
             nodes_to_translate = nodes_to_translate[:args.count]
 
         print(f"📊 Batch prepared: {batch_data.get('total', 0)} nodes")
+
+    bad_nodes = _invalid_nodes(nodes_to_translate)
+    if bad_nodes:
+        print(f"❌ Error: node names must stay inside {docs_root}; invalid: {', '.join(bad_nodes)}")
+        sys.exit(1)
+
     print(f"💡 {'Test' if mode == 'test' else 'Full'} mode: Translating {len(nodes_to_translate)} nodes")
     print()
     print(f"Target language: {lang_config['name']} ({target_lang})")

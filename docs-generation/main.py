@@ -98,7 +98,7 @@ import sys
 import subprocess
 from pathlib import Path
 
-from lib.paths import REPO_ROOT, load_dotenv
+from lib.paths import REPO_ROOT, embedded_docs_dir, load_dotenv
 
 load_dotenv()
 from datetime import datetime
@@ -228,6 +228,13 @@ class DocumentationWorkflow:
     def translate_docs(self, lang: str, mode: str, count: int = None, force: bool = False, node_name: str = None, concurrency: int = 1) -> bool:
         """Translate documentation to a specific language"""
         if node_name:
+            # Guard: the node name becomes a path under the docs root in the
+            # translator. Reject absolute paths / traversal before forwarding.
+            docs_root = embedded_docs_dir().resolve()
+            node_dir = (docs_root / node_name).resolve()
+            if not node_dir.is_relative_to(docs_root) or node_dir == docs_root:
+                print(f"❌ Error: --node must be a node name inside {docs_root}, got: {node_name!r}")
+                return False
             # Single-node translation: bypass the batch file via --node-list.
             # The translator only accepts --mode test/all; the mode is
             # irrelevant with --node-list (no batch slicing), so pass "all".
