@@ -562,6 +562,11 @@ class DocumentationWorkflow:
                     tr_args,
                     f"Re-translating changed nodes to {lang}"
                 )
+                # Same post-translation correction as the regular translation
+                # workflow (Step 3 there): sync param/output names from the
+                # frontend i18n so re-translated docs match the UI labels.
+                if not self.update_param_translations(lang):
+                    print(f"\n⚠️  Warning: Parameter translation update failed for {lang}, but continuing...")
             print(f"\n✅ Step 4 complete: {len(changed_nodes)} changed nodes re-translated across {len(languages)} languages.")
         else:
             print("\n⏭️  Step 4: No changed nodes to re-translate (skipping).")
