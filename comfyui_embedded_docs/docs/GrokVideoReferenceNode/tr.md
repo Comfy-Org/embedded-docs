@@ -1,56 +1,55 @@
 # Grok Referans-Video
 
-ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
+Grok Reference-to-Video düğümü, çıktının stilini ve içeriğini yönlendirmek için en fazla yedi referans görseli kullanarak bir metin isteminden video üretir. `grok-imagine-video-1.5` modeliyle, en fazla üç ön tanımlı ses referansı ekleyebilir ve istemde doğrudan `@ImageN` ve `@AudioN` etiketlerini kullanarak görsellere ve seslere atıfta bulunabilirsiniz. Düğüm, isteği harici bir API'ye gönderir, üretimin tamamlanmasını bekler ve sonuçta oluşan videoyu indirir.
 
-## Çeviri Kuralları
+## Girdiler
 
-1. **Çevrilmemesi gereken içerik:**
-   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
-   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
-   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
-   - Kod, dosya yolları
+### Ortak Girdiler
 
-2. **Çevrilmesi gereken içerik:**
-   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
-   - Tüm açıklayıcı metinler
-   - Parametre açıklamaları
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `model` | Video oluşturma için kullanılacak model. | DYNAMIC_COMBO | Evet | `"grok-imagine-video-1.5"`<br>`"grok-imagine-video"` |
+| `istem` | İstenen videonun metin açıklaması. Boş olmayan bir string olmalıdır. | STRING | Evet | N/A |
+| `tohum` | Düğümün yeniden çalışıp çalışmayacağını belirleyen tohum; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Hayır | 0 ile 2147483647 arası |
 
-3. **Çeviri kalitesi:**
-   - Standart Türkçe kullanın
-   - Profesyonel ama anlaşılır bir üslup koruyun
-   - Teknik doğruluğu sağlayın
-   - Standart Türkçe teknik terminolojiyi kullanın
+### Grok Imagine Video 1.5 Girdileri
 
-4. **Format:**
-   - Tüm Markdown biçimlendirmesini koruyun
-   - Tablo yapısını koruyun
-   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
+`model` parametresi `grok-imagine-video-1.5` olarak ayarlandığında kullanılabilir.
 
-Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `voice_1` | İsteğe bağlı ön tanımlı ses referansı; istemde @Audio1 olarak atıfta bulunun. API yalnızca bu ön tanımlı sesleri destekler, özel sesleri desteklemez (varsayılan: none). | COMBO | Hayır | Ön tanımlı ses seçenekleri (`"none"` dahil) |
+| `voice_2` | İsteğe bağlı ikinci ses referansı; istemde @Audio2 olarak atıfta bulunun (varsayılan: none). | COMBO | Hayır | Ön tanımlı ses seçenekleri (`"none"` dahil) |
+| `voice_3` | İsteğe bağlı üçüncü ses referansı; istemde @Audio3 olarak atıfta bulunun (varsayılan: none). | COMBO | Hayır | Ön tanımlı ses seçenekleri (`"none"` dahil) |
+| `resolution` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | `"480p"`<br>`"720p"` |
+| `aspect_ratio` | Çıktı videosunun en-boy oranı. | COMBO | Evet | `"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` |
+| `duration` | Çıktı videosunun saniye cinsinden süresi (varsayılan: 6). | INT | Evet | 1 ile 15 arası |
 
-Grok Referanstan-Videoya düğümü, çıktının stilini ve içeriğini yönlendirmek için en fazla yedi referans görseli kullanarak bir metin istemine dayalı video oluşturur. Videoyu oluşturmak için harici bir API'ye bağlanır, ardından video indirilir ve döndürülür.
+### Grok Imagine Video Girdileri
 
-## Girişler
+`model` parametresi `grok-imagine-video` olarak ayarlandığında kullanılabilir.
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-| --- | --- | --- | --- | --- |
-| `istem` | İstenen videonun metin açıklaması. | STRING | Evet | Yok |
-| `model` | Video oluşturma için kullanılacak model. | COMBO | Evet | `"grok-imagine-video"` |
-| `model.reference_images` | Video oluşturmayı yönlendirmek için en fazla 7 referans görseli. | IMAGE | Evet | 1 ila 7 görsel |
-| `model.resolution` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | `"480p"`<br>`"720p"` |
-| `model.aspect_ratio` | Çıktı videosunun en-boy oranı. | COMBO | Evet | `"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` |
-| `model.duration` | Çıktı videosunun saniye cinsinden süresi (varsayılan: 6). | INT | Evet | 2 ila 10 |
-| `tohum` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Hayır | 0 ila 2147483647 |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `resolution` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | `"480p"`<br>`"720p"` |
+| `aspect_ratio` | Çıktı videosunun en-boy oranı. | COMBO | Evet | `"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` |
+| `duration` | Çıktı videosunun saniye cinsinden süresi (varsayılan: 6). | INT | Evet | 2 ile 10 arası |
 
-**Not:** `model` parametresi, `reference_images`, `resolution`, `aspect_ratio` ve `duration` öğelerini içeren bir gruptur. En az bir referans görseli sağlamanız gerekir ve en fazla yedi görsel sağlayabilirsiniz.
+### Referans Girdileri
+
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `reference_images` | Genişletilebilir yuva: video oluşturmayı yönlendirmek için 1 ila 7 referans görseli bağlayın. `grok-imagine-video-1.5` ile istemde bunlara girdi sırasına göre numaralandırılmış şekilde @Image1 ... @Image7 olarak atıfta bulunun; toplu bir girdi her görsel için bir kez sayılır. | IMAGE | Evet | 1 ila 7 görsel |
+
+**Not:** Görüntülenen alt parametreler seçilen `model`'e bağlıdır; `grok-imagine-video-1.5`, `voice_1`, `voice_2` ve `voice_3` girdilerini ekler. En az bir referans görseli gereklidir ve toplam 7 ile sınırlıdır (toplu bir girdi her görsel için bir kez sayılır). `grok-imagine-video-1.5` ile istem, bağlı görsellere `@Image1` ... `@Image7` ve etkin seslere `@Audio1`, `@Audio2`, `@Audio3` olarak atıfta bulunabilir; bağlı olmayan bir görsele veya `none` olarak ayarlanmış bir sese atıfta bulunmak hataya neden olur. API yalnızca ön tanımlı sesleri destekler, özel sesleri desteklemez.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-| --- | --- | --- |
+|-------------|-------------|-----------|
 | `video` | Oluşturulan video dosyası. | VIDEO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoReferenceNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `e368769b869b7a0d0be8e6fdcc2b82774c11805483b2e83a448b6985a6dd9f96`
+**Source fingerprint (SHA-256):** `ac068b34ad7efe786d29f51052a623eaf324041a99b124f6b5f81fadea661a83`

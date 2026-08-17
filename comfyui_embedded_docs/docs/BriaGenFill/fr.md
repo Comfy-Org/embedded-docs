@@ -1,25 +1,30 @@
 # BriaGenFill
 
-Ce nœud génère des objets ou des décors dans une région masquée d'une image à l'aide de l'API Bria. Il téléverse l'image et le masque, envoie l'invite au service de remplissage génératif Bria, attend que l'opération soit terminée, puis renvoie l'image modifiée. Il s'agit d'une opération API payante (0,0429 $ US par requête).
+Ce nœud génère des objets ou des décors dans une région masquée d'une image à l'aide de l'API Bria. Il télécharge l'image et le masque, envoie le prompt au service de remplissage génératif Bria, attend la fin de l'opération, puis renvoie l'image modifiée. Cette opération d'API est payante (0,0429 $US par requête).
 
 ## Entrées
+
+### Entrées communes
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image d'entrée à modifier. | IMAGE | Oui | - |
-| `mask` | Les zones blanches sont remplies de contenu généré, les zones noires sont préservées. Le masque est binarisé avant l'envoi, donc les zones partiellement peintes sont considérées comme blanches. Doit avoir le même rapport hauteur/largeur que l'image. | MASK | Oui | - |
-| `prompt` | Description de ce qui doit être généré dans la région masquée. Doit contenir au moins 1 caractère. | STRING | Oui | - |
-| `negative_prompt` | Une description du contenu à éviter dans le résultat généré. Si elle est laissée vide, elle n'est pas envoyée à l'API. | STRING | Oui | - |
-| `refine_prompt` | Ajuste automatiquement l'invite pour de meilleurs résultats ; désactivez pour utiliser l'invite exactement telle qu'écrite. (par défaut : true) | BOOLEAN | Oui | true<br>false |
-| `seed` | Graine pour le processus de génération. (par défaut : 42) | INT | Oui | 1 à 2147483647 |
-| `moderation` | Paramètres de modération pour la requête. Lorsqu'il est défini sur « true », les options de modération imbriquées décrites ci-dessous sont appliquées. (par défaut : « false ») | COMBO | Oui | "false"<br>"true" |
+| `mask` | Les zones blanches sont remplies avec le contenu généré, les zones noires sont préservées. Le masque est binarisé avant l'envoi, donc les zones partiellement peintes sont considérées comme blanches. Il doit avoir le même rapport hauteur-largeur que l'image. | MASK | Oui | - |
+| `prompt` | Description de ce qui doit être généré dans la région masquée. Doit contenir au moins 1 caractère. (défaut : "") | STRING | Oui | - |
+| `negative_prompt` | Un prompt décrivant le contenu à éviter dans le résultat généré. S'il est laissé vide, il n'est pas envoyé à l'API. (défaut : "") | STRING | Oui | - |
+| `refine_prompt` | Ajuste automatiquement le prompt pour de meilleurs résultats ; désactivez pour utiliser le prompt exactement tel qu'il a été écrit. (défaut : true) | BOOLEAN | Oui | true<br>false |
+| `seed` | Graine (seed) pour le processus de génération. (défaut : 42) | INT | Oui | 1 à 2147483647 |
+| `moderation` | Paramètres de modération. Lorsqu'ils sont définis sur "true", les options de modération ci-dessous sont appliquées. (défaut : "false") | DYNAMIC_COMBO | Oui | "false"<br>"true" |
 
-Remarque : le `prompt` ne doit pas être vide, et le `mask` doit avoir le même rapport hauteur/largeur que l'`image`.
+### Entrées de modération (lorsque `moderation` = "true")
 
-Lorsque `moderation` est défini sur « true », les options booléennes imbriquées suivantes sont disponibles :
-- `prompt_content_moderation` (par défaut : false) : Applique la modération de contenu à l'invite.
-- `visual_input_moderation` (par défaut : false) : Applique la modération de contenu à l'image d'entrée.
-- `visual_output_moderation` (par défaut : false) : Applique la modération de contenu à l'image de sortie.
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `prompt_content_moderation` | Applique une modération de contenu au prompt. (défaut : false) | BOOLEAN | Non | true<br>false |
+| `visual_input_moderation` | Applique une modération de contenu à l'image d'entrée. (défaut : false) | BOOLEAN | Non | true<br>false |
+| `visual_output_moderation` | Applique une modération de contenu à l'image de sortie. (défaut : false) | BOOLEAN | Non | true<br>false |
+
+**Remarque :** Le `prompt` ne doit pas être vide. Le `mask` doit avoir le même rapport hauteur-largeur que l'`image`. Le masque est binarisé à 50 % d'opacité, donc les zones peintes à moins de la moitié de l'opacité sont ignorées ; si le masque ne contient aucune zone blanche après la binarisation, le nœud génère une erreur.
 
 ## Sorties
 

@@ -1,33 +1,43 @@
 # Vidu Çok Kareli Video Üretimi
 
-Bu belge, yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduMultiFrameVideoNode/en.md)
+Bu düğüm, birden çok ana kare arasında geçişler oluşturarak video üretir. Bir başlangıç görüntüsünden başlar ve kullanıcı tarafından tanımlanan bir dizi bitiş görüntüsü ve istemi aracılığıyla animasyon oluşturarak çıktı olarak tek bir video dosyası üretir.
 
-Bu düğüm, birden fazla ana kare arasında geçişler oluşturarak bir video üretir. Bir başlangıç görüntüsünden başlar ve kullanıcı tarafından tanımlanan bir dizi bitiş görüntüsü ve istemi aracılığıyla animasyon yaparak çıktı olarak tek bir video dosyası üretir.
+## Girdiler
 
-## Girişler
+### Genel Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-| --- | --- | --- | --- | --- |
-| `model` | Video oluşturma için kullanılacak Vidu modeli. | COMBO | Evet | `"viduq2-pro"`<br>`"viduq2-turbo"` |
-| `başlangıç_görüntüsü` | Başlangıç karesi görüntüsü. En-boy oranı 1:4 ile 4:1 arasında olmalıdır. | IMAGE | Evet | - |
-| `seed` | Tekrarlanabilir sonuçlar elde etmek için rastgele sayı üretiminde kullanılan tohum değeri (varsayılan: 1). | INT | Hayır | 0 ile 2147483647 |
+|-----------|-------------|-----------|----------|-------|
+| `model` | Video üretimi için kullanılacak Vidu modeli. | COMBO | Evet | `"viduq2-pro"`<br>`"viduq2-turbo"` |
+| `başlangıç_görüntüsü` | Başlangıç karesi görüntüsü. En boy oranı 1:4 ile 4:1 arasında olmalıdır. | IMAGE | Evet | En boy oranı 1:4 ila 4:1 |
+| `seed` | Tekrarlanabilir sonuçlar elde etmek için rastgele sayı üretiminde kullanılan tohum değeri (varsayılan: 1). | INT | Evet | 0 ila 2147483647 |
 | `çözünürlük` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | `"720p"`<br>`"1080p"` |
-| `kareler` | Ana kare geçiş sayısı (2-9). Bir değer seçmek, her kare için gerekli girdileri dinamik olarak ortaya çıkarır. | DYNAMICCOMBO | Evet | `"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` |
+| `kareler` | Ana kare geçiş sayısı (2-9). Bir değer seçmek, her kare için gereken girdileri dinamik olarak ortaya çıkarır. | DYNAMIC_COMBO | Evet | `"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` |
 
-**Kare Girdileri (Dinamik Olarak Görüntülenir):**
-`frames` için bir değer seçtiğinizde (örneğin, "3"), düğüm her geçiş için karşılık gelen bir dizi zorunlu girdi gösterecektir. Seçilen sayıya kadar olan her `i` karesi için aşağıdakileri sağlamanız gerekir:
+### Kare Girdileri (tüm kare sayısı seçeneklerinde ortak)
 
-* `end_image{i}` (IMAGE): Bu geçiş için hedef görüntü. En-boy oranı 1:4 ile 4:1 arasında olmalıdır.
-* `prompt{i}` (STRING): Bu kareye geçişi yönlendiren bir metin açıklaması (maksimum 2000 karakter).
-* `duration{i}` (INT): Bu belirli geçiş bölümü için saniye cinsinden süre.
+`frames` bir sayıya ayarlandığında, 1'den bu sayıya kadar her `i` karesi için aşağıdaki üç girdi gösterilir. Örneğin, `"3"` seçildiğinde `prompt1` / `end_image1` / `duration1`, `prompt2` / `end_image2` / `duration2` ve `prompt3` / `end_image3` / `duration3` eklenir.
+
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `prompt{i}` | {i}. kare geçişi için metin istemi. Çok satırlı metin alanı. Maksimum 2000 karakter. | STRING | Evet | En fazla 2000 karakter |
+| `end_image{i}` | {i}. bölüm için bitiş karesi görüntüsü. En boy oranı 1:4 ile 4:1 arasında olmalıdır. | IMAGE | Evet | En boy oranı 1:4 ila 4:1 |
+| `duration{i}` | {i}. bölümün saniye cinsinden süresi. | INT | Evet | 2 ila 7 (varsayılan: 4) |
+
+**Notlar:**
+
+- Tüm girdiler zorunludur. `seed` varsayılan bir değere sahiptir ancak yine de zorunlu bir girdidir.
+- `start_image` ve her `end_image{i}` 1:4 ile 4:1 arasında bir en boy oranına sahip olmalıdır.
+- Her `prompt{i}` maksimum 2000 karakter uzunluğunda olmalıdır.
+- Her `duration{i}` 2 ile 7 saniye arasında olmalıdır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-| --- | --- | --- |
-| `output` | Tüm animasyonlu geçişleri içeren oluşturulan video dosyası. | VIDEO |
+|-------------|-------------|-----------|
+| `output` | Tüm animasyonlu geçişleri içeren oluşturulmuş video dosyası. | VIDEO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduMultiFrameVideoNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `02ddbb1e041b6d9e6654ab6c3cc25f4c2e5bc1545d84a30624608edc85e51f96`
+**Source fingerprint (SHA-256):** `ad877532ba27444938b7b2e4634ac7f8a47db0f7fb53967d874ad38b44336dcf`
