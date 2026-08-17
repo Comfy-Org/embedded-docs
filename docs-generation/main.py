@@ -227,14 +227,15 @@ class DocumentationWorkflow:
     
     def translate_docs(self, lang: str, mode: str, count: int = None, force: bool = False, node_name: str = None, concurrency: int = 1) -> bool:
         """Translate documentation to a specific language"""
-        args = ["--lang", lang, "--mode", mode]
-
-        if mode == "test" and count:
-            args.extend(["--count", str(count)])
-
         if node_name:
-            # Single-node translation: bypass the batch file entirely
-            args.extend(["--node-list", node_name])
+            # Single-node translation: bypass the batch file via --node-list.
+            # The translator only accepts --mode test/all; the mode is
+            # irrelevant with --node-list (no batch slicing), so pass "all".
+            args = ["--lang", lang, "--mode", "all", "--node-list", node_name]
+        else:
+            args = ["--lang", lang, "--mode", mode]
+            if mode == "test" and count:
+                args.extend(["--count", str(count)])
 
         if force:
             args.append("--force")
@@ -1237,6 +1238,11 @@ Examples:
     if args.concurrency < 1:
         print("❌ Error: --concurrency must be >= 1")
         sys.exit(1)
+
+    MAX_CONCURRENCY = 32
+    if args.concurrency > MAX_CONCURRENCY:
+        print(f"⚠️  Warning: --concurrency {args.concurrency} is too high; capping at {MAX_CONCURRENCY} to avoid API rate-limit storms.")
+        args.concurrency = MAX_CONCURRENCY
 
     if args.concurrency > 1 and not (args.translate or args.mode == 'changed'):
         print("⚠️  Note: --concurrency only applies to translation; ignoring it.")

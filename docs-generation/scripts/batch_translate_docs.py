@@ -141,7 +141,7 @@ def strip_ai_preamble(content: str, lang: str) -> str:
 def _extract_table_data_rows(table_text: str) -> list[str]:
     """Return the data rows of a markdown table (lines starting with '|'),
     excluding the header row and the |---| separator row."""
-    table_lines = [l for l in table_text.split('\n') if l.strip().startswith('|')]
+    table_lines = [line for line in table_text.split('\n') if line.strip().startswith('|')]
     data_rows = []
     for i, line in enumerate(table_lines):
         if i == 0:
@@ -182,8 +182,9 @@ def _fix_output_names_in_translation(translated_content: str, full_en: str) -> s
 
     # Now find and fix the Outputs table in translated content
     # Match any known heading for "Outputs" in any language
+    # (includes pt-BR "Saídas"; heading values come from translation_config.json)
     tr_outputs_match = re.search(
-        r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Outputs|المخرجات|Çıktılar|خروجی‌ها)\s*\n(.*?)(?=\n##|\Z)',
+        r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Saídas|Outputs|المخرجات|Çıktılar|خروجی‌ها)\s*\n(.*?)(?=\n##|\Z)',
         translated_content, re.DOTALL
     )
     if not tr_outputs_match:
@@ -340,14 +341,21 @@ def translate_nodes_concurrently(nodes, concurrency, process_fn, max_consecutive
 
     ``process_fn(node_name)`` must return "success" | "failed" | "skipped".
     Returns (results_dict, aborted) where results_dict maps each outcome to a
-    list of node names (input order preserved per bucket) and ``aborted`` is
-    True when the consecutive-failure circuit breaker tripped (remaining
-    not-yet-started tasks are cancelled).
+    list of node names in COMPLETION order (nondeterministic for
+    concurrency > 1), and ``aborted`` is True when the circuit breaker tripped
+    (remaining not-yet-started tasks are cancelled).
+
+    Breaker rule: with workers running in parallel, completions interleave, so
+    a completion-order "consecutive failures" counter is meaningless — it can
+    trip on unrelated failures during a mostly-healthy run, or stay silent
+    during a real outage because one interleaved success resets it. Instead we
+    trip on an aggregate condition that is independent of interleaving:
+    at least ``max_consecutive_failures`` failures AND failures are at least
+    half of everything completed so far (i.e. the API is mostly failing).
     """
     from concurrent.futures import ThreadPoolExecutor, as_completed
 
     results = {"success": [], "failed": [], "skipped": []}
-    consecutive_failures = 0
     aborted = False
 
     with ThreadPoolExecutor(max_workers=concurrency) as pool:
@@ -367,12 +375,9 @@ def translate_nodes_concurrently(nodes, concurrency, process_fn, max_consecutive
             results[result].append(node_name)
             logger.info(f"[{sum(len(v) for v in results.values())}/{len(nodes)}] {node_name}: {result}")
 
-            if result == "failed":
-                consecutive_failures += 1
-            else:
-                consecutive_failures = 0  # Reset counter on success/skip
-
-            if consecutive_failures >= max_consecutive_failures:
+            completed = sum(len(v) for v in results.values())
+            failed = len(results["failed"])
+            if failed >= max_consecutive_failures and failed * 2 >= completed:
                 for other in future_to_node:
                     other.cancel()  # no-op for already-running futures
                 aborted = True
@@ -401,7 +406,10 @@ def main():
     target_lang = args.lang
     mode = args.mode
     force = args.force
-    concurrency = max(1, args.concurrency)
+    MAX_CONCURRENCY = 32
+    if args.concurrency > MAX_CONCURRENCY:
+        print(f"⚠️  Warning: --concurrency {args.concurrency} is too high; capping at {MAX_CONCURRENCY} to avoid API rate-limit storms.")
+    concurrency = max(1, min(args.concurrency, MAX_CONCURRENCY))
 
     # Load translation config
     with open(TRANSLATION_CONFIG_FILE, 'r', encoding='utf-8') as f:
@@ -468,7 +476,9 @@ def main():
     # Imported lazily so the module's pure post-processing helpers stay
     # importable (and testable) without the openai package installed.
     from openai import OpenAI
-    client = OpenAI(api_key=DEFAULT_API_KEY, base_url=DEFAULT_BASE_URL)
+    # base_url=None lets the SDK fall back to OPENAI_BASE_URL or its default
+    # endpoint when API_BASE_URL is unset (an empty string would not).
+    client = OpenAI(api_key=DEFAULT_API_KEY, base_url=DEFAULT_BASE_URL or None)
 
     # Translate documents
     success_count = 0

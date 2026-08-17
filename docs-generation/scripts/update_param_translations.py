@@ -36,9 +36,12 @@ SUPPORTED_LANGS = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-
 # when (re)writing the file, even though this script only updates non-en docs.
 FETCH_LANGS = ['en'] + SUPPORTED_LANGS
 
-def load_frontend_translations(force_refresh=False):
+def load_frontend_translations(force_refresh=False, persist=True):
     """Load frontend translations from exported JSON, refreshing from GitHub
-    if the file is missing or stale (older than TRANSLATIONS_MAX_AGE_HOURS)."""
+    if the file is missing or stale (older than TRANSLATIONS_MAX_AGE_HOURS).
+
+    With ``persist=False`` (dry-run), a refresh still fetches and merges in
+    memory but never writes the cache file — a dry run must stay dry."""
     stale = False
     if not TRANSLATIONS_FILE.exists():
         print(f"ℹ️  {TRANSLATIONS_FILE} not found")
@@ -53,10 +56,24 @@ def load_frontend_translations(force_refresh=False):
         print("📡 Fetching frontend translations from GitHub (Comfy-Org/ComfyUI_frontend@master)...")
         data = fetch_remote_translations(FETCH_LANGS)
         if any(data.values()):
-            # Merge over the existing file (atomic write) so languages whose
-            # fetch failed and keys not managed here are preserved.
-            merged = save_translations(TRANSLATIONS_FILE, data)
-            print(f"✓ Refreshed {TRANSLATIONS_FILE} from GitHub")
+            if persist:
+                # Merge over the existing file (atomic write) so languages whose
+                # fetch failed and keys not managed here are preserved.
+                merged = save_translations(TRANSLATIONS_FILE, data)
+                print(f"✓ Refreshed {TRANSLATIONS_FILE} from GitHub")
+                return merged
+            # Dry-run: merge in memory only, never touch the cache file
+            merged = {}
+            if TRANSLATIONS_FILE.exists():
+                try:
+                    with open(TRANSLATIONS_FILE, 'r', encoding='utf-8') as f:
+                        merged = json.load(f)
+                except (json.JSONDecodeError, OSError):
+                    merged = {}
+            for lang, lang_data in data.items():
+                if lang_data:
+                    merged[lang] = lang_data
+            print("✓ Fetched translations from GitHub (in-memory only, dry-run)")
             return merged
         # Fetch failed: fall back to existing file
         if TRANSLATIONS_FILE.exists():
@@ -75,7 +92,7 @@ def extract_table_rows(content, table_type='inputs'):
     if table_type == 'inputs':
         pattern = r'##\s+(?:输入|輸入|入力|입력|Входы|Entradas|Entrées|Inputs|المدخلات|Girdiler|ورودی‌ها)\s*\n\n(.*?)(?=\n##|\Z)'
     else:
-        pattern = r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Outputs|المخرجات|Çıktılar|خروجی‌ها)\s*\n\n(.*?)(?=\n##|\Z)'
+        pattern = r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Saídas|Outputs|المخرجات|Çıktılar|خروجی‌ها)\s*\n\n(.*?)(?=\n##|\Z)'
     
     match = re.search(pattern, content, re.DOTALL)
     if not match:
@@ -171,7 +188,7 @@ def update_doc_with_translations(doc_file, node_name, lang, frontend_translation
         
         for i, line in enumerate(lines):
             # Detect if we're in the Outputs section
-            if re.match(r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Outputs|المخرجات|Çıktılar|خروجی‌ها)', line):
+            if re.match(r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Saídas|Outputs|المخرجات|Çıktılar|خروجی‌ها)', line):
                 in_output_section = True
                 output_row_index = 0
                 continue
@@ -261,14 +278,20 @@ def main():
     print("=" * 80)
     print()
     
-    # Load frontend translations
+    # Load frontend translations (dry-run must not write the cache file)
     print("📖 Loading frontend translations...")
-    frontend_trans = load_frontend_translations(force_refresh=force_refresh)
+    frontend_trans = load_frontend_translations(force_refresh=force_refresh, persist=not dry_run)
     print(f"   Loaded translations for {len(SUPPORTED_LANGS)} languages\n")
     
     # Get list of nodes to process
     if target_node:
-        node_dirs = [DOCS_ROOT / target_node]
+        # Constrain --node to DOCS_ROOT: absolute values or ../ traversal
+        # must not make the updater write outside the docs tree.
+        candidate = (DOCS_ROOT / target_node).resolve()
+        if not candidate.is_relative_to(DOCS_ROOT):
+            print(f"❌ Error: --node must be a node name inside {DOCS_ROOT}, got: {target_node}")
+            sys.exit(1)
+        node_dirs = [candidate]
         if not node_dirs[0].exists():
             print(f"❌ Error: Node directory not found: {node_dirs[0]}")
             sys.exit(1)
@@ -308,7 +331,10 @@ def main():
     print("\n" + "=" * 80)
     print("📊 Summary")
     print("=" * 80)
-    print(f"✅ Updated: {total_updated}")
+    if dry_run:
+        print(f"🔍 Would update: {total_updated}")
+    else:
+        print(f"✅ Updated: {total_updated}")
     print(f"⏭️  Skipped: {total_skipped}")
     if dry_run:
         print("\n💡 Run without --dry-run to apply changes")

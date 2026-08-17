@@ -67,19 +67,27 @@ class FixOutputNamesTests(unittest.TestCase):
         self.assertIn("| `latent` | LATENT | 去噪后的潜空间 |", out)
 
     def test_separator_like_row_does_not_count_as_data_row(self):
+        """A stray separator row and a non-backtick row inside the table must
+        not advance the EN row index (only real data rows count)."""
         translated = (
             "## 输出\n\n"
             "| 名称 | 数据类型 | 描述 |\n"
             "|------|-----------|-------------|\n"
             "| `正向` | CONDITIONING | 正向条件 |\n"
+            "|------|-----------|-------------|\n"  # stray separator row mid-table
+            "| 普通文本行 | CONDITIONING | 没有反引号的行 |\n"  # non-backtick row
             "| `负向` | CONDITIONING | 负向条件 |\n"
             "| `潜空间` | LATENT | 去噪后的潜空间 |\n"
         )
         out = btd._fix_output_names_in_translation(translated, self.EN_DOC)
         rows = [l for l in out.split("\n") if l.strip().startswith("| `")]
+        # The stray separator and the non-backtick row must not shift alignment:
+        # 负向 -> negative, 潜空间 -> latent (not negative/latent swapped early)
         self.assertEqual(
             [r.split("`")[1] for r in rows], ["positive", "negative", "latent"]
         )
+        # The non-backtick row keeps its own text
+        self.assertIn("| 普通文本行 |", out)
 
     def test_no_outputs_section_returns_content_unchanged(self):
         translated = "## 输出\n\n没有表格。\n"
@@ -166,7 +174,8 @@ class ConcurrencyTests(unittest.TestCase):
         self.assertEqual(sorted(results["success"]), sorted(nodes))
         self.assertEqual(results["failed"], [])
 
-    def test_circuit_breaker_trips_on_consecutive_failures(self):
+    def test_circuit_breaker_trips_on_aggregate_failures(self):
+        """All-failing run: breaker trips on exactly the 5th failure."""
         nodes = [f"Node{i}" for i in range(20)]
         results, aborted = btd.translate_nodes_concurrently(
             nodes,
@@ -175,22 +184,41 @@ class ConcurrencyTests(unittest.TestCase):
             max_consecutive_failures=5,
         )
         self.assertTrue(aborted)
-        # Breaker trips after 5 failures; with concurrency=1 nothing beyond
-        # the in-flight task can complete, so we must see far fewer than 20.
-        self.assertLess(len(results["failed"]), 20)
+        self.assertEqual(len(results["failed"]), 5)
 
-    def test_success_resets_consecutive_failure_counter(self):
-        # Fail 4x, succeed, fail 4x: never 5 in a row -> no abort.
-        outcomes = {"a": "failed", "b": "failed", "c": "failed", "d": "failed",
-                    "e": "success", "f": "failed", "g": "failed", "h": "failed",
-                    "i": "failed"}
+    def test_interleaved_successes_do_not_prevent_or_fake_trips(self):
+        """The aggregate breaker is independent of completion interleaving:
+        scattered failures below the majority threshold never abort."""
+        # 5 failures spread across 20 nodes -> at completion of node 12
+        # (the 5th failure) failed=5 but 5*2 < 12, so no trip.
+        failing = {"Node0", "Node1", "Node9", "Node10", "Node11"}
+        nodes = [f"Node{i}" for i in range(20)]
         results, aborted = btd.translate_nodes_concurrently(
-            list(outcomes), concurrency=1, process_fn=lambda n: outcomes[n],
+            nodes,
+            concurrency=1,
+            process_fn=lambda n: "failed" if n in failing else "success",
             max_consecutive_failures=5,
         )
         self.assertFalse(aborted)
-        self.assertEqual(len(results["failed"]), 8)
-        self.assertEqual(results["success"], ["e"])
+        self.assertEqual(len(results["failed"]), 5)
+        self.assertEqual(len(results["success"]), 15)
+
+    def test_majority_failure_rate_trips_breaker(self):
+        """Failures dominating completions trip the breaker even when not
+        consecutive in submission order."""
+        # With concurrency=1 this is completion order too: 5 failures and
+        # 1 success interleaved; at the 5th failure failed=5, completed=6,
+        # 5*2 >= 6 -> trip.
+        order = ["f1", "ok1", "f2", "f3", "f4", "f5", "ok2", "ok3"]
+        results, aborted = btd.translate_nodes_concurrently(
+            order,
+            concurrency=1,
+            process_fn=lambda n: "failed" if n.startswith("f") else "success",
+            max_consecutive_failures=5,
+        )
+        self.assertTrue(aborted)
+        self.assertEqual(len(results["failed"]), 5)
+        self.assertEqual(results["success"], ["ok1"])
 
 
 if __name__ == "__main__":
