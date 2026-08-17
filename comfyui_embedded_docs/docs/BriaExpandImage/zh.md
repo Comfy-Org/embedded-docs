@@ -6,7 +6,7 @@ Bria Expand Image 通过使用 Bria 生成新内容，将图像扩展到其原�
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
 | `image` | 要扩展的输入图像。 | IMAGE | 是 | — |
-| `expand_mode` | 扩展图像的目标形状：预设宽高比、自定义比例，或在画布上手动放置原始图像。手动模式是唯一能达到高于 1:2 的画布的模式。选择 `custom_ratio` 会显示 `ratio_width` 和 `ratio_height`。选择 `manual` 会显示画布和图像放置参数。 | COMBO | 是 | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"custom_ratio"`<br>`"manual"` |
+| `expand_mode` | 扩展图像的目标形状：预设宽高比、自定义比例，或在画布上手动放置原始图像。手动模式是唯一能达到高于 1:2 的画布的模式。选择 `custom_ratio` 会显示 `ratio_width` 和 `ratio_height`。选择 `manual` 会显示画布和图像放置参数。 | DYNAMIC_COMBO | 是 | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"custom_ratio"`<br>`"manual"` |
 | `ratio_width` | 目标比例的宽度侧：21 和 9 给出 21:9。默认值：21。 | INT | 条件 | 1–100 |
 | `ratio_height` | 目标比例的高度侧：21 和 9 给出 21:9。Bria 仅接受 0.5 到 3.0 之间的宽高比，因此任何高于 1:2 的比例都需要手动模式。默认值：9。 | INT | 条件 | 1–100 |
 | `canvas_width` | 输出画布的宽度（像素）。默认值：1000。 | INT | 条件 | 64–5000 |
@@ -18,7 +18,7 @@ Bria Expand Image 通过使用 Bria 生成新内容，将图像扩展到其原�
 | `prompt` | 扩展场景的可选描述；为空时，Bria 根据图像自动生成一个。默认值：空字符串。 | STRING | 否 | 任意字符串 |
 | `negative_prompt` | 扩展的可选负面提示。默认值：空字符串。 | STRING | 否 | 任意字符串 |
 | `seed` | 随机生成过程的种子。默认值：42。 | INT | 否 | 1–2147483647 |
-| `moderation` | 审核设置。设置为 `true` 时，会显示额外的审核选项。 | COMBO | 否 | `"false"`<br>`"true"` |
+| `moderation` | 审核设置。设置为 `true` 时，会显示额外的审核选项。 | DYNAMIC_COMBO | 否 | `"false"`<br>`"true"` |
 | `prompt_content_moderation` | 如果启用，将对提示内容进行审核。默认值：false。仅在 `moderation` 为 `true` 时可用。 | BOOLEAN | 条件 | true/false |
 | `visual_input_moderation` | 如果启用，将对视觉输入进行审核。默认值：false。仅在 `moderation` 为 `true` 时可用。 | BOOLEAN | 条件 | true/false |
 | `visual_output_moderation` | 如果启用，将对视觉输出进行审核。默认值：false。仅在 `moderation` 为 `true` 时可用。 | BOOLEAN | 条件 | true/false |

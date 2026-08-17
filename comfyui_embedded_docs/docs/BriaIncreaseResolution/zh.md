@@ -9,7 +9,7 @@ Bria Increase Resolution 使用 Bria 的图像放大 API，将输入图像放大
 | `image` | 要放大的输入图像。 | IMAGE | 是 | 单张图像 |
 | `desired_increase` | 分辨率倍率。输出图像的每一边必须在 8192 像素以内。 | COMBO | 是 | "2"<br>"4" |
 | `auto_downscale` | 当输出将超过限制时，自动降低倍率；如果仍然不够，则对输入图像进行降采样。（默认值：False） | BOOLEAN | 是 | True<br>False |
-| `moderation` | 审核设置。设置为“true”时，启用 `visual_input_moderation` 和 `visual_output_moderation` 子选项，两者均默认为 False。 | COMBO | 是 | "false"<br>"true" |
+| `moderation` | 审核设置。设置为“true”时，启用 `visual_input_moderation` 和 `visual_output_moderation` 子选项，两者均默认为 False。 | DYNAMIC_COMBO | 是 | "false"<br>"true" |
 
 注意：
 - 该节点强制输出图像的最大边长为 8192 像素。如果所选倍率会超过此限制且 `auto_downscale` 被禁用，则会引发错误。启用 `auto_downscale` 后，节点会自动使用较低的倍率或对输入图像进行降采样。

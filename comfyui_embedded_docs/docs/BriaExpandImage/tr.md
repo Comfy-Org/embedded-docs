@@ -7,7 +7,7 @@ Bria Expand Image, Bria ile yeni içerik üreterek bir görüntüyü orijinal s�
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `image` | Genişletilecek girdi görüntüsü. | IMAGE | Evet | — |
-| `expand_mode` | Genişletilmiş görüntünün hedef şekli: önceden tanımlanmış bir en-boy oranı, özel bir oran veya orijinal görüntünün bir tuval üzerinde manuel yerleştirilmesi. 1:2'den daha uzun bir tuvale ulaşabilen tek mod manueldir. `custom_ratio` seçildiğinde `ratio_width` ve `ratio_height` görünür. `manual` seçildiğinde tuval ve görüntü yerleştirme parametreleri görünür. | COMBO | Evet | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"custom_ratio"`<br>`"manual"` |
+| `expand_mode` | Genişletilmiş görüntünün hedef şekli: önceden tanımlanmış bir en-boy oranı, özel bir oran veya orijinal görüntünün bir tuval üzerinde manuel yerleştirilmesi. 1:2'den daha uzun bir tuvale ulaşabilen tek mod manueldir. `custom_ratio` seçildiğinde `ratio_width` ve `ratio_height` görünür. `manual` seçildiğinde tuval ve görüntü yerleştirme parametreleri görünür. | DYNAMIC_COMBO | Evet | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"custom_ratio"`<br>`"manual"` |
 | `ratio_width` | Hedef oranın genişlik tarafı: 21 ve 9, 21:9 verir. Varsayılan: 21. | INT | Koşullu | 1–100 |
 | `ratio_height` | Hedef oranın yükseklik tarafı: 21 ve 9, 21:9 verir. Bria yalnızca 0,5 ile 3,0 arasındaki genişlik/yükseklik oranlarını kabul eder; bu nedenle 1:2'den uzun her şey manuel modu gerektirir. Varsayılan: 9. | INT | Koşullu | 1–100 |
 | `canvas_width` | Çıktı tuvalinin piksel cinsinden genişliği. Varsayılan: 1000. | INT | Koşullu | 64–5000 |
@@ -19,7 +19,7 @@ Bria Expand Image, Bria ile yeni içerik üreterek bir görüntüyü orijinal s�
 | `prompt` | Genişletilmiş sahnenin isteğe bağlı açıklaması; boş olduğunda Bria bir tanesini görüntüden üretir. Varsayılan: boş dize. | STRING | Hayır | Herhangi bir dize |
 | `negative_prompt` | Genişletme için isteğe bağlı negatif istem. Varsayılan: boş dize. | STRING | Hayır | Herhangi bir dize |
 | `seed` | Rastgele üretim süreci için tohum. Varsayılan: 42. | INT | Hayır | 1–2147483647 |
-| `moderation` | Moderasyon ayarları. `true` olarak ayarlandığında ek moderasyon seçenekleri gösterilir. | COMBO | Hayır | `"false"`<br>`"true"` |
+| `moderation` | Moderasyon ayarları. `true` olarak ayarlandığında ek moderasyon seçenekleri gösterilir. | DYNAMIC_COMBO | Hayır | `"false"`<br>`"true"` |
 | `prompt_content_moderation` | Etkinleştirilirse, istem içeriğini moderasyona tabi tutar. Varsayılan: false. Yalnızca `moderation` `true` olduğunda kullanılabilir. | BOOLEAN | Koşullu | true/false |
 | `visual_input_moderation` | Etkinleştirilirse, görsel girdiyi moderasyona tabi tutar. Varsayılan: false. Yalnızca `moderation` `true` olduğunda kullanılabilir. | BOOLEAN | Koşullu | true/false |
 | `visual_output_moderation` | Etkinleştirilirse, görsel çıktıyı moderasyona tabi tutar. Varsayılan: false. Yalnızca `moderation` `true` olduğunda kullanılabilir. | BOOLEAN | Koşullu | true/false |

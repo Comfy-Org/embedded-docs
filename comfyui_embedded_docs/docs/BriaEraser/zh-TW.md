@@ -8,8 +8,8 @@ Bria Eraser 使用 Bria API 從影像中移除物體或區域。您提供一張�
 |-----------|-------------|-----------|----------|-------|
 | `image` | 包含要移除之物體或區域的輸入影像。 | IMAGE | 是 | - |
 | `mask` | 白色區域會被擦除，黑色區域會被保留。遮罩在傳送前會先二值化，因此部分塗繪的區域會被視為白色。必須與影像具有相同的外觀比例。 | MASK | 是 | - |
-| `mask_type` | 選擇遮罩的建立方式。「manual」適用於手繪或筆刷遮罩；「automatic」適用於由分割模型（如 SAM）產生的遮罩。 | STRING | 是 | "manual"<br>"automatic" |
-| `moderation` | 審核設定。設定為 "true" 以對輸入和/或輸出影像啟用內容審核。 | STRING | 是 | "false"<br>"true" |
+| `mask_type` | 選擇遮罩的建立方式。「manual」適用於手繪或筆刷遮罩；「automatic」適用於由分割模型（如 SAM）產生的遮罩。 | COMBO | 是 | "manual"<br>"automatic" |
+| `moderation` | 審核設定。設定為 "true" 以對輸入和/或輸出影像啟用內容審核。 | DYNAMIC_COMBO | 是 | "false"<br>"true" |
 
 注意：當 `moderation` 設為 "true" 時，會提供兩個額外的布林設定：
 

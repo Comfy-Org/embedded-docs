@@ -9,7 +9,7 @@ Le nœud ElevenLabs Speech to Text transcrit des fichiers audio en texte. Il uti
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `audio` | Audio à transcrire. | AUDIO | Oui | - |
-| `model` | Modèle à utiliser pour la transcription. La sélection de ce modèle révèle des paramètres supplémentaires. | COMBO | Oui | `"scribe_v2"` |
+| `model` | Modèle à utiliser pour la transcription. La sélection de ce modèle révèle des paramètres supplémentaires. | DYNAMIC_COMBO | Oui | `"scribe_v2"` |
 | `tag_audio_events` | Annoter les sons comme (rires), (musique), etc. dans la transcription. Ce paramètre est révélé lorsque le modèle `"scribe_v2"` est sélectionné. (par défaut : False) | BOOLEAN | Non | - |
 | `diarize` | Annoter quel locuteur parle. Ce paramètre est révélé lorsque le modèle `"scribe_v2"` est sélectionné. (par défaut : False) | BOOLEAN | Non | - |
 | `diarization_threshold` | Sensibilité de séparation des locuteurs. Des valeurs plus faibles sont plus sensibles aux changements de locuteur. Ce paramètre est révélé lorsque le modèle `"scribe_v2"` est sélectionné et que `diarize` est activé. (par défaut : 0.22) | FLOAT | Non | 0.1 - 0.4 |

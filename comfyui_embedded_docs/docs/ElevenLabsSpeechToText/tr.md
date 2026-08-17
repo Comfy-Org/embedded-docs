@@ -7,7 +7,7 @@ ElevenLabs Speech to Text düğümü, ses dosyalarını metne dönüştürür. E
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `audio` | Transkripsiyonu yapılacak ses. | AUDIO | Evet | - |
-| `model` | Transkripsiyon için kullanılacak model. Bu modelin seçilmesi ek parametreleri ortaya çıkarır. | COMBO | Evet | `"scribe_v2"` |
+| `model` | Transkripsiyon için kullanılacak model. Bu modelin seçilmesi ek parametreleri ortaya çıkarır. | DYNAMIC_COMBO | Evet | `"scribe_v2"` |
 | `tag_audio_events` | Transkriptte (kahkaha), (müzik) vb. sesleri etiketleyin. Bu parametre, `"scribe_v2"` modeli seçildiğinde ortaya çıkar. (varsayılan: False) | BOOLEAN | Hayır | - |
 | `diarize` | Hangi konuşmacının konuştuğunu etiketleyin. Bu parametre, `"scribe_v2"` modeli seçildiğinde ortaya çıkar. (varsayılan: False) | BOOLEAN | Hayır | - |
 | `diarization_threshold` | Konuşmacı ayrımı hassasiyeti. Daha düşük değerler konuşmacı değişikliklerine daha duyarlıdır. Bu parametre, `"scribe_v2"` modeli seçildiğinde ve `diarize` etkinleştirildiğinde ortaya çıkar. (varsayılan: 0.22) | FLOAT | Hayır | 0.1 - 0.4 |

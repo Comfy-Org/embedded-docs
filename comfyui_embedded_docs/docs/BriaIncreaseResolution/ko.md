@@ -9,7 +9,7 @@ Bria Increase Resolution은 Bria의 이미지 업스케일링 API를 사용하�
 | `image` | 업스케일링할 입력 이미지입니다. | IMAGE | 예 | Single image |
 | `desired_increase` | 해상도 배율입니다. 출력물은 각 변이 8192픽셀 이내에 들어와야 합니다. | COMBO | 예 | "2"<br>"4" |
 | `auto_downscale` | 출력물이 제한을 초과할 경우 배율을 자동으로 낮추고, 그래도 충분하지 않으면 입력 이미지를 다운스케일링합니다. (기본값: False) | BOOLEAN | 예 | True<br>False |
-| `moderation` | Moderation 설정입니다. "true"로 설정하면 `visual_input_moderation` 및 `visual_output_moderation` 하위 옵션이 활성화되며, 두 옵션 모두 기본값은 False입니다. | COMBO | 예 | "false"<br>"true" |
+| `moderation` | Moderation 설정입니다. "true"로 설정하면 `visual_input_moderation` 및 `visual_output_moderation` 하위 옵션이 활성화되며, 두 옵션 모두 기본값은 False입니다. | DYNAMIC_COMBO | 예 | "false"<br>"true" |
 
 참고:
 - 이 노드는 최대 출력 변 길이 8192픽셀을 적용합니다. 선택한 배율이 이 제한을 초과하고 `auto_downscale`이 비활성화된 경우 오류가 발생합니다. `auto_downscale`을 활성화하면 노드가 자동으로 더 낮은 배율을 사용하거나 입력 이미지를 다운스케일링할 수 있습니다.

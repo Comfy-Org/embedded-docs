@@ -9,7 +9,7 @@ Bria Increase Resolution agrandit une image d'entrée par 2x ou 4x en utilisant 
 | `image` | L'image d'entrée à agrandir. | IMAGE | Oui | Single image |
 | `desired_increase` | Multiplicateur de résolution. La sortie doit tenir dans 8192 pixels de chaque côté. | COMBO | Oui | "2"<br>"4" |
 | `auto_downscale` | Réduit automatiquement le multiplicateur, et réduit l'image d'entrée si cela ne suffit toujours pas, lorsque la sortie dépasserait la limite. (par défaut : False) | BOOLEAN | Oui | True<br>False |
-| `moderation` | Paramètres de modération. Lorsqu'elle est définie sur "true", active les sous-options `visual_input_moderation` et `visual_output_moderation`, dont la valeur par défaut est False. | COMBO | Oui | "false"<br>"true" |
+| `moderation` | Paramètres de modération. Lorsqu'elle est définie sur "true", active les sous-options `visual_input_moderation` et `visual_output_moderation`, dont la valeur par défaut est False. | DYNAMIC_COMBO | Oui | "false"<br>"true" |
 
 Remarques :
 - Le nœud impose une taille maximale de 8192 pixels pour le côté de sortie. Si le multiplicateur sélectionné dépasse cette limite et que `auto_downscale` est désactivé, une erreur est générée. L'activation de `auto_downscale` permet au nœud d'utiliser automatiquement un multiplicateur inférieur ou de réduire l'image d'entrée à la place.

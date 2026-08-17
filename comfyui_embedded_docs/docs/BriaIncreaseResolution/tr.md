@@ -9,7 +9,7 @@ Bria Increase Resolution, Bria'nın görüntü büyütme API'sini kullanarak bir
 | `image` | Büyütülecek girdi görüntüsü. | IMAGE | Evet | Tek görüntü |
 | `desired_increase` | Çözünürlük çarpanı. Çıktı, her kenarda 8192 piksel sınırına uymalıdır. | COMBO | Evet | "2"<br>"4" |
 | `auto_downscale` | Çıktı sınırı aşacağında çarpanı otomatik olarak düşürür ve bu hâlâ yeterli olmazsa girdi görüntüsünü küçültür. (varsayılan: False) | BOOLEAN | Evet | True<br>False |
-| `moderation` | Moderasyon ayarları. "true" olarak ayarlandığında, `visual_input_moderation` ve `visual_output_moderation` alt seçeneklerini etkinleştirir; her ikisi de varsayılan olarak False'tur. | COMBO | Evet | "false"<br>"true" |
+| `moderation` | Moderasyon ayarları. "true" olarak ayarlandığında, `visual_input_moderation` ve `visual_output_moderation` alt seçeneklerini etkinleştirir; her ikisi de varsayılan olarak False'tur. | DYNAMIC_COMBO | Evet | "false"<br>"true" |
 
 Notlar:
 - Düğüm, maksimum çıktı kenarını 8192 piksel olarak zorunlu kılar. Seçilen çarpan bu sınırı aşarsa ve `auto_downscale` devre dışıysa, bir hata oluşturulur. `auto_downscale` özelliğini etkinleştirmek, düğümün bunun yerine otomatik olarak daha düşük bir çarpan kullanmasına veya girdi görüntüsünü küçültmesine olanak tanır.

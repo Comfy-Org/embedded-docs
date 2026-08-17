@@ -8,8 +8,8 @@ Bria Eraser remove objetos ou áreas de uma imagem usando a API Bria. Você forn
 |-----------|-------------|-----------|----------|-------|
 | `image` | A imagem de entrada contendo os objetos ou áreas a remover. | IMAGE | Sim | - |
 | `mask` | Áreas brancas são removidas, áreas pretas são preservadas. A máscara é binarizada antes do envio, portanto áreas parcialmente pintadas contam como brancas. Deve ter a mesma proporção de aspecto da imagem. | MASK | Sim | - |
-| `mask_type` | Seleciona como a máscara foi criada. "manual" é para máscaras desenhadas à mão ou com pincel; "automatic" é para máscaras produzidas por modelos de segmentação como SAM. | STRING | Sim | "manual"<br>"automatic" |
-| `moderation` | Configurações de moderação. Defina como "true" para ativar a moderação de conteúdo nas imagens de entrada e/ou saída. | STRING | Sim | "false"<br>"true" |
+| `mask_type` | Seleciona como a máscara foi criada. "manual" é para máscaras desenhadas à mão ou com pincel; "automatic" é para máscaras produzidas por modelos de segmentação como SAM. | COMBO | Sim | "manual"<br>"automatic" |
+| `moderation` | Configurações de moderação. Defina como "true" para ativar a moderação de conteúdo nas imagens de entrada e/ou saída. | DYNAMIC_COMBO | Sim | "false"<br>"true" |
 
 Nota: Quando `moderation` está definido como "true", duas configurações booleanas adicionais ficam disponíveis:
 
