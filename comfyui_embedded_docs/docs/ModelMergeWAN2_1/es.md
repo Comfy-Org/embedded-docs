@@ -1,18 +1,18 @@
 # ModelMergeWAN2_1
 
-El nodo `ModelMergeWAN2_1` fusiona dos modelos WAN2.1 combinando sus componentes mediante promedios ponderados. Admite diferentes tamaños de modelo, incluidos modelos de 1.3B con 30 bloques y modelos de 14B con 40 bloques, con manejo especial para modelos de imagen a video que incluyen un componente adicional de incrustación de imagen. Cada componente de los modelos puede ponderarse individualmente para controlar la proporción de fusión entre los dos modelos de entrada.
+El nodo `ModelMergeWAN2_1` fusiona dos modelos WAN2.1 combinando sus componentes mediante promedios ponderados. Admite diferentes tamaños de modelo, incluidos modelos de 1.3B con 30 bloques y modelos de 14B con 40 bloques, con un manejo especial para modelos de imagen a video que incluyen un componente adicional de embedding de imagen. Cada componente de los modelos puede ponderarse individualmente para controlar la proporción de fusión entre los dos modelos de entrada.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `model1` | Primer modelo a fusionar | MODEL | Sí | - |
 | `model2` | Segundo modelo a fusionar | MODEL | Sí | - |
-| `patch_embedding.` | Peso para el componente de incrustación de parches (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `time_embedding.` | Peso para el componente de incrustación temporal (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `time_projection.` | Peso para el componente de proyección temporal (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `text_embedding.` | Peso para el componente de incrustación de texto (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `img_emb.` | Peso para el componente de incrustación de imagen, utilizado en modelos de imagen a video (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `patch_embedding.` | Peso para el componente de embedding de parches (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `time_embedding.` | Peso para el componente de embedding de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `time_projection.` | Peso para el componente de proyección de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `text_embedding.` | Peso para el componente de embedding de texto (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `img_emb.` | Peso para el componente de embedding de imagen, utilizado en modelos de imagen a video (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `blocks.0.` | Peso para el bloque 0 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `blocks.1.` | Peso para el bloque 1 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `blocks.2.` | Peso para el bloque 2 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
@@ -53,17 +53,17 @@ El nodo `ModelMergeWAN2_1` fusiona dos modelos WAN2.1 combinando sus componentes
 | `blocks.37.` | Peso para el bloque 37 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `blocks.38.` | Peso para el bloque 38 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `blocks.39.` | Peso para el bloque 39 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `head.` | Peso para el componente de cabecera (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `head.` | Peso para el componente de cabeza (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 
-**Nota:** Todos los parámetros de peso utilizan un rango de 0.0 a 1.0 con incrementos de 0.01. El nodo admite hasta 40 bloques para adaptarse a diferentes tamaños de modelo, donde los modelos de 1.3B utilizan 30 bloques y los modelos de 14B utilizan 40 bloques. El parámetro `img_emb.` es específico para modelos de imagen a video.
+**Nota:** Todos los parámetros de peso utilizan un rango de 0.0 a 1.0 con incrementos de 0.01. El nodo admite hasta 40 bloques para adaptarse a diferentes tamaños de modelo, donde los modelos de 1.3B usan 30 bloques y los modelos de 14B usan 40 bloques. El parámetro `img_emb.` es específicamente para modelos de imagen a video.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
 | `model` | El modelo fusionado que combina componentes de ambos modelos de entrada según los pesos especificados | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeWAN2_1/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `d550a2f62bbcb4b46ccdd8a04fab80e93f96ea63426d48acb3515d51175efc99`
+**Source fingerprint (SHA-256):** `6a17defa25b1ef045b85af4a73e00d3a64c1948c0c47f355d1d488a75b09f224`

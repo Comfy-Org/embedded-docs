@@ -7,9 +7,9 @@ The CosmosPredict2ImageToVideoLatent node creates video latent representations f
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `vae` | The VAE model used for encoding images into latent space | VAE | Yes | - |
-| `width` | The width of the output video in pixels (default: 848, must be divisible by 16) | INT | Yes | 16 to MAX_RESOLUTION |
-| `height` | The height of the output video in pixels (default: 480, must be divisible by 16) | INT | Yes | 16 to MAX_RESOLUTION |
-| `length` | The number of frames in the video sequence (default: 93, step: 4) | INT | Yes | 1 to MAX_RESOLUTION |
+| `width` | The width of the output video in pixels (default: 848, must be divisible by 16) | INT | Yes | 16 to MAX_RESOLUTION (step 16) |
+| `height` | The height of the output video in pixels (default: 480, must be divisible by 16) | INT | Yes | 16 to MAX_RESOLUTION (step 16) |
+| `length` | The number of frames in the video sequence (default: 93) | INT | Yes | 1 to MAX_RESOLUTION (step 4) |
 | `batch_size` | The number of video sequences to generate (default: 1) | INT | Yes | 1 to 4096 |
 | `start_image` | Optional starting image for the video sequence | IMAGE | No | - |
 | `end_image` | Optional ending image for the video sequence | IMAGE | No | - |
@@ -26,4 +26,4 @@ The CosmosPredict2ImageToVideoLatent node creates video latent representations f
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CosmosPredict2ImageToVideoLatent/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `5c470c35afaa9b994b431f0a8655e108da420182ec5c223fa54ec2c233ba9fd3`
+**Source fingerprint (SHA-256):** `842bd2b8cda438e7b938439d4eba280478939e3302dc1846d52595d40082ff05`

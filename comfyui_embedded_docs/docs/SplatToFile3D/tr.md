@@ -1,23 +1,21 @@
 # 3D Dosya Oluştur (Splat'tan)
 
-## Genel Bakış
+SplatToFile3D, bir gaussian splat'ı Save veya Preview 3D düğümleriyle kullanılabilen bir File3D nesnesine dönüştürür. Çıktı dosya formatını seçebilirsiniz. Düğüm, parti başına yalnızca bir öğeyi destekler; birden fazla öğe alırsa, ilkini kullanır ve günlüğe bir uyarı kaydeder.
 
-SplatToFile3D düğümü, bir gauss sıçramasını (gaussian splat), Kaydet veya Önizleme 3D düğümleriyle kullanılabilen bir File3D nesnesine dönüştürür. Yalnızca parti başına bir öğeyi destekler ve dışa aktarılan 3D verileri için farklı çıktı dosya biçimleri arasından seçim yapmanıza olanak tanır.
-
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
-|-----------|----------|-----------|---------|--------|
-| `splat` | Dosyaya serileştirilecek gauss sıçraması verisi | SPLAT | Evet | - |
-| `format` | 3D dosyası için çıktı dosya biçimi. ply: tam küresel harmoniklerle standart 3D Gauss Sıçraması. ksplat: mkkellogg SplatBuffer (seviye 0, sıkıştırılmamış), yalnızca temel renk. spz: Niantic gzip sıkıştırmalı (~10 kat daha küçük), yalnızca temel renk (varsayılan: "ply") | COMBO | Evet | `"ply"`<br>`"ksplat"`<br>`"spz"` |
+|-----------|-------------|-----------|----------|-------|
+| `splat` | Dosyaya serileştirilecek gaussian splat verisi. Parti başına yalnızca bir öğe desteklenir. Birden fazla öğe sağlanırsa, yalnızca ilki kullanılır. | SPLAT | Evet | - |
+| `format` | 3D dosyası için çıktı dosya formatı. ply: tam küresel harmonikli standart 3D Gaussian Splat. ksplat: mkkellogg SplatBuffer (seviye 0, sıkıştırılmamış), yalnızca temel renk. spz: Niantic gzip ile sıkıştırılmış (~10 kat daha küçük), yalnızca temel renk (varsayılan: "ply") | COMBO | Evet | `"ply"`<br>`"ksplat"`<br>`"spz"` |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-|-----------|----------|-----------|
-| `model_3d` | Seçilen biçimde serileştirilmiş gauss sıçraması verilerini içeren, kaydetme veya önizleme için hazır bir File3D nesnesi | FILE3D |
+|-------------|-------------|-----------|
+| `model_3d` | Seçilen formatta serileştirilmiş gaussian splat verisi içeren, kaydetmeye veya önizlemeye hazır bir File3D nesnesi | FILE3D |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplatToFile3D/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `c04fe04faa8ce81ad699e67c00d047550b0cadbfd037b687331f76944501a9f6`
+**Source fingerprint (SHA-256):** `4bb49f417a66f25fce577894a67f39bae6157c4eb88ccf8fad77d74141a50409`

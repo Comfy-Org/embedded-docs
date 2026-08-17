@@ -12,6 +12,8 @@ The FreeU node applies frequency-domain modifications to a model's output blocks
 | `s1` | Skip connection scaling factor for model_channels × 4 features (default: 0.9) | FLOAT | Yes | 0.0 - 10.0 |
 | `s2` | Skip connection scaling factor for model_channels × 2 features (default: 0.2) | FLOAT | Yes | 0.0 - 10.0 |
 
+Note: The modifications are applied only to feature maps with model_channels × 4 and model_channels × 2 channels; `b1`/`s1` affect the former and `b2`/`s2` affect the latter. Other feature maps are left unchanged.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -21,4 +23,4 @@ The FreeU node applies frequency-domain modifications to a model's output blocks
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FreeU/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `a0f0b165638aa9e88ea415fc966bdac9bfbc13e9a5dcebc9780b31b63ce91f5c`
+**Source fingerprint (SHA-256):** `7f7bd34964218ed16c9e58caa446d0c1e69f116607334df4a114cdc4adaf047f`

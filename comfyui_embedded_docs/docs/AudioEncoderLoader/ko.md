@@ -1,20 +1,22 @@
 # 오디오 인코더 로더
 
-AudioEncoderLoader 노드는 오디오 인코더 폴더에 있는 파일에서 오디오 인코더 모델을 로드합니다. 입력으로 오디오 인코더 모델의 파일 이름을 받아 로드된 모델을 반환하며, 이 모델은 워크플로우에서 오디오 처리 작업에 사용할 수 있습니다.
+AudioEncoderLoader 노드는 오디오 인코더 폴더의 파일에서 오디오 인코더 모델을 로드합니다. 입력으로 오디오 인코더 모델의 파일 이름을 받아 로드된 모델을 반환하며, 이 모델은 워크플로우에서 오디오 처리 작업에 사용할 수 있습니다.
 
 ## 입력
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `audio_encoder_name` | 로드할 오디오 인코더 모델 파일을 선택합니다 | STRING | 예 | audio_encoders 폴더에 있는 사용 가능한 오디오 인코더 파일 목록 |
+| `audio_encoder_name` | 로드할 오디오 인코더 모델 파일을 선택합니다. | COMBO | 예 | audio_encoders 폴더에서 사용 가능한 오디오 인코더 파일 목록 |
+
+참고: 선택한 파일에는 유효한 오디오 인코더 모델이 포함되어 있어야 합니다. 파일이 유효하지 않거나 유효한 모델이 포함되어 있지 않으면 노드에서 오류가 발생합니다.
 
 ## 출력
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `audio_encoder` | 로드된 오디오 인코더 모델로, 오디오 처리 워크플로우에서 사용할 준비가 되었습니다 | AUDIO_ENCODER |
+| `audio_encoder` | 로드된 오디오 인코더 모델로, 오디오 처리 워크플로우에서 사용할 준비가 된 상태입니다. | AUDIO_ENCODER |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioEncoderLoader/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `24cbd45198db7d950633358c29de57f56c999bc33534fabe80404528d194163c`
+**Source fingerprint (SHA-256):** `780d0c7fcf571e5ef02d273791e5d2e894baa6d5900d845ed65e9ce669769f7e`

@@ -9,6 +9,8 @@ The SplitSigmasDenoise node divides a sequence of sigma values into two parts ba
 | `sigmas` | The input sequence of sigma values representing the noise schedule | SIGMAS | Yes | - |
 | `denoise` | The denoising strength factor that determines where to split the sigma sequence (default: 1.0) | FLOAT | Yes | 0.0 - 1.0 |
 
+Note: The total number of steps is the number of sigma values minus 1. The two output sequences share one sigma value at the split point. At `denoise` = 0.0, `high_sigmas` is empty; at `denoise` = 1.0, `high_sigmas` contains only the first sigma value and `low_sigmas` contains the full sequence.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -19,4 +21,4 @@ The SplitSigmasDenoise node divides a sequence of sigma values into two parts ba
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmasDenoise/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `e458c32a51534011712885aa65bfb94bed09a1886954dee07447a7adf41ed456`
+**Source fingerprint (SHA-256):** `6198cdbc07b5c9aacf1137a5d6350e090ffd14050abbcc37ff79ff5e975a8c20`

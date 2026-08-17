@@ -1,7 +1,5 @@
 # WanDancerEncodeAudio
 
-## Overview
-
 This node processes an audio input to extract features that can be used to guide a video generation model. It analyzes the audio to detect tempo, beats, and other musical characteristics, then packages this information into a format suitable for conditioning a video model, allowing the generated video to be synchronized with the audio.
 
 ## Inputs
@@ -22,4 +20,4 @@ This node processes an audio input to extract features that can be used to guide
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerEncodeAudio/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `1318323b202ca26c920a860534062dc7f20e3b10d13eb9825a890e26b5fde731`
+**Source fingerprint (SHA-256):** `ce27a3bdea2d9e3cf8875c24236a2a0a1429e9bc13a58581e372fb669d2c0018`

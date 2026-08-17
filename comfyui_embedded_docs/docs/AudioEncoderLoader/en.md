@@ -1,12 +1,14 @@
 # Load Audio Encoder
 
-The AudioEncoderLoader node loads an audio encoder model from a file in your audio encoders folder. It takes the filename of an audio encoder model as input and returns the loaded model, which can then be used for audio processing tasks in your workflow.
+The `AudioEncoderLoader` node loads an audio encoder model from a file in your audio encoders folder. It takes the filename of an audio encoder model as input and returns the loaded model, which can then be used for audio processing tasks in your workflow.
 
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `audio_encoder_name` | Selects which audio encoder model file to load | STRING | Yes | List of available audio encoder files in the audio_encoders folder |
+| `audio_encoder_name` | Selects which audio encoder model file to load | COMBO | Yes | List of available audio encoder files in the audio_encoders folder |
+
+Note: The selected file must contain a valid audio encoder model. If the file is invalid and does not contain a valid model, the node raises an error.
 
 ## Outputs
 
@@ -17,4 +19,4 @@ The AudioEncoderLoader node loads an audio encoder model from a file in your aud
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioEncoderLoader/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `66982618292df3881546883ff9efddbb8f8a2eae9aab45507ce0f96719fe6ee0`
+**Source fingerprint (SHA-256):** `780d0c7fcf571e5ef02d273791e5d2e894baa6d5900d845ed65e9ce669769f7e`

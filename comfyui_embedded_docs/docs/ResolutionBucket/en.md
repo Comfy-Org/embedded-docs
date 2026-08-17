@@ -1,6 +1,6 @@
 # Resolution Bucket
 
-This node organizes a list of latent images and their corresponding conditioning data by their resolution. It groups together items that share the same height and width, creating separate batches for each unique resolution. This process is useful for preparing data for efficient training, as it allows models to process multiple items of the same size together.
+This node organizes a list of latents and their corresponding conditioning data by their resolution. It groups together items that share the same height and width, creating separate batches for each unique resolution. This process is useful for preparing data for efficient training, as it allows models to process multiple items of the same size together.
 
 ## Inputs
 
@@ -21,4 +21,4 @@ This node organizes a list of latent images and their corresponding conditioning
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionBucket/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `20a0794e5a2c88ac60bb729b60840c5a632a115196de285b764effaf43ab73e0`
+**Source fingerprint (SHA-256):** `11687f9916895136c7c5b8146cd7519cbf6c296720e453bac52fe4da237403cd`

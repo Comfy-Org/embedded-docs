@@ -1,30 +1,32 @@
 # LTXVImgToVideo
 
-The LTXVImgToVideo node converts an input image into a video latent representation for video generation models. It takes a single image and extends it into a sequence of frames using the VAE encoder, then applies conditioning with strength control to determine how much of the original image content is preserved versus modified during video generation.
+The LTXVImgToVideo node prepares a latent representation for generating a video from an input image. The image is resized to the requested width and height, encoded with the VAE, and placed in the first latent frames. A noise mask is created using `strength` to control how much of the original image content is preserved or modified, and the positive and negative conditioning are passed through unchanged.
 
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `positive` | Positive conditioning prompts for guiding the video generation | CONDITIONING | Yes | - |
-| `negative` | Negative conditioning prompts for avoiding certain elements in the video | CONDITIONING | Yes | - |
-| `vae` | VAE model used for encoding the input image into latent space | VAE | Yes | - |
-| `image` | Input image to be converted into video frames | IMAGE | Yes | - |
-| `width` | Output video width in pixels (default: 768, step: 32) | INT | No | 64 to MAX_RESOLUTION |
-| `height` | Output video height in pixels (default: 512, step: 32) | INT | No | 64 to MAX_RESOLUTION |
-| `length` | Number of frames in the generated video (default: 97, step: 8) | INT | No | 9 to MAX_RESOLUTION |
-| `batch_size` | Number of videos to generate simultaneously (default: 1) | INT | No | 1 to 4096 |
-| `strength` | Control over how much of the original image content is preserved in the first frame of the generated video. A value of 1.0 preserves the original image completely, while 0.0 allows maximum modification (default: 1.0) | FLOAT | No | 0.0 to 1.0 |
+| `positive` | Positive conditioning data provided as input and returned unchanged. | CONDITIONING | Yes | - |
+| `negative` | Negative conditioning data provided as input and returned unchanged. | CONDITIONING | Yes | - |
+| `vae` | VAE model used to encode the input image into latent space. | VAE | Yes | - |
+| `image` | Input image that is resized and encoded to form the beginning of the video latent. | IMAGE | Yes | - |
+| `width` | Output video width in pixels (default: 768, step: 32). | INT | Yes | 64 to MAX_RESOLUTION |
+| `height` | Output video height in pixels (default: 512, step: 32). | INT | Yes | 64 to MAX_RESOLUTION |
+| `length` | Number of frames in the generated video (default: 97, step: 8). | INT | Yes | 9 to MAX_RESOLUTION |
+| `batch_size` | Number of videos to generate in one latent batch (default: 1). | INT | Yes | 1 to 4096 |
+| `strength` | Controls how much of the encoded image content is preserved in the first latent frames. A value of 1.0 preserves the original image completely, while 0.0 allows maximum modification (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 |
+
+Note: `MAX_RESOLUTION` is the maximum resolution allowed by the ComfyUI installation.
 
 ## Outputs
 
 | Output Name | Description | Data Type |
 | --- | --- | --- |
-| `positive` | Processed positive conditioning with video frame masking applied | CONDITIONING |
-| `negative` | Processed negative conditioning with video frame masking applied | CONDITIONING |
-| `latent` | Video latent representation containing the encoded frames and noise mask for video generation | LATENT |
+| `positive` | Positive conditioning passed through without modification. | CONDITIONING |
+| `negative` | Negative conditioning passed through without modification. | CONDITIONING |
+| `latent` | Video latent containing the encoded input image at the start of the sequence, together with a noise mask based on `strength`. | LATENT |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVImgToVideo/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `1f9d897d1f461270106bf44106acc90db422a04e6bce10ad3bca22127e96ffab`
+**Source fingerprint (SHA-256):** `4ebc7f80b4d9ac3329e3349c7048885de22b827b5bdd102976687afd7e07a16b`

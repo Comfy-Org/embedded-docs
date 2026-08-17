@@ -1,4 +1,4 @@
-# Recraft Image to Image Node
+# Recraft V3 Image to Image
 
 This node modifies an existing image based on a text prompt and strength parameter. It uses the Recraft API to transform the input image according to the provided description while maintaining some similarity to the original image based on the strength setting.
 
@@ -21,9 +21,9 @@ This node modifies an existing image based on a text prompt and strength paramet
 
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
-| `image` | The generated image(s) based on the input image and prompt | IMAGE |
+| `image` | The generated image(s) based on the input image and prompt. For each input image, `n` images are generated, so the total output count equals the input count multiplied by `n`. | IMAGE |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftImageToImageNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `5e5b675c5122fd4b3c754590b18d4cdf2ec995b4d14c1b9150050599071b38bb`
+**Source fingerprint (SHA-256):** `1932e55d1dc392e6bd42a0bd29f5aaba44b65997b597648a927fba38a27c90ad`

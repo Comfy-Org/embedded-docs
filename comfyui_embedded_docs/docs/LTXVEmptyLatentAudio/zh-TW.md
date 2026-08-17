@@ -1,27 +1,25 @@
 # LTXV 空 latent 音訊
 
-## 概述
+The LTXV Empty Latent Audio node creates a batch of empty (zero-filled) latent audio tensors. It uses the configuration from a provided Audio VAE model to determine the correct dimensions for the latent space, such as the number of channels and frequency bins. The number of audio latents is calculated from the frame count and frame rate using the Audio VAE model. This empty latent serves as a starting point for audio generation or manipulation workflows within ComfyUI.
 
-LTXV 空潛在音訊節點會建立一批空的（零填充）潛在音訊張量。它使用提供的音訊 VAE 模型中的配置來確定潛在空間的正確維度，例如通道數和頻率區間。這個空的潛在張量可作為 ComfyUI 中音訊生成或處理工作流程的起點。
+## Inputs
 
-## 輸入
-
-| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `frames_number` | 影格數量。預設值為 97。 | INT | 是 | 1 至 1000 |
-| `frame_rate` | 每秒影格數。預設值為 25。 | INT | 是 | 1 至 1000 |
-| `batch_size` | 批次中的潛在音訊樣本數量。預設值為 1。 | INT | 是 | 1 至 4096 |
-| `audio_vae` | 用於獲取配置的音訊 VAE 模型。此參數為必要項目。 | VAE | 是 | 不適用 |
+| `frames_number` | Number of frames. Default: 97. | INT | Yes | 1 to 1000 |
+| `frame_rate` | Number of frames per second. Accepts float or integer values. Default: 25.0. | FLOAT (or INT) | Yes | 1.0 to 1000.0 |
+| `batch_size` | The number of latent audio samples in the batch. Default: 1. | INT | Yes | 1 to 4096 |
+| `audio_vae` | The Audio VAE model to get configuration from. | VAE | Yes | N/A |
 
-**注意：** `audio_vae` 輸入為強制性參數。若未提供，節點將會引發錯誤。
+**Note:** The `audio_vae` input is mandatory. The node will raise an error if it is not provided.
 
-## 輸出
+## Outputs
 
-| 輸出名稱 | 說明 | 資料類型 |
+| Output Name | Description | Data Type |
 | --- | --- | --- |
-| `Latent` | 一個空的潛在音訊張量，其結構為 (batch_size, z_channels, num_audio_latents, audio_freq)，配置為與輸入的音訊 VAE 相符。輸出還包含一個設為 "audio" 的 `type` 欄位。 | LATENT |
+| `Latent` | An empty latent audio tensor with the structure (batch_size, z_channels, num_audio_latents, audio_freq), configured to match the input Audio VAE. The output also includes a `type` field set to "audio". | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVEmptyLatentAudio/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `1a8bfea98f14de014069016652b39542cfd9290cae2d870ab4e381e46aa1e08f`
+**Source fingerprint (SHA-256):** `3ac1bf17ebdba7c3a73bdd795f561b7bee31798d8a1efc11b972db1944f873a4`

@@ -18,4 +18,4 @@ The SetFirstSigma node modifies a sequence of sigma values by replacing the firs
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetFirstSigma/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `7f5a5fa4b4aaa4cf31a725df74821ad400bf951320b1ce004087d7ec53668b63`
+**Source fingerprint (SHA-256):** `5302bc61a7ca094fee9ee2ad8c9dc32997ef0bbf27c9945acd7287e7df6b6db3`

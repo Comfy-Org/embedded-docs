@@ -1,22 +1,24 @@
 # Renkten RGB Tam Sayıya
 
-ColorToRGBInt düğümü, onaltılık (hexadecimal) formatta belirtilen bir rengi tek bir tamsayı değerine dönüştürür. `#FF5733` gibi bir renk dizesi alır ve kırmızı, yeşil ve mavi bileşenlerini birleştirerek karşılık gelen RGB tamsayısını hesaplar.
+**ColorToRGBInt** düğümü, onaltılık biçimde belirtilen bir rengi (ör. `#FF5733`) tek bir RGB tamsayı değerine dönüştürür. Renk dizesindeki kırmızı, yeşil ve mavi bileşenleri alır, bunları tek bir tamsayıda birleştirir ve onaltılık gösterimi döndürür. Alfa kanallı renkler (`#RRGGBBAA`) de desteklenir ve alfa değeri ayrı olarak döndürülür.
 
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-| --- | --- | --- | --- | --- |
-| `renk` | `#RRGGBB` onaltılık formatında bir renk değeri. | STRING | Evet | Yok |
+|-----------|-------------|-----------|----------|-------|
+| `color` | `#RRGGBB` veya `#RRGGBBAA` onaltılık biçiminde bir renk değeri. Tam olarak 7 veya 9 karakter uzunluğunda olmalı ve `#` ile başlamalıdır. | COLOR | Evet | `#RRGGBB`<br>`#RRGGBBAA` |
 
-**Not:** Giriş `color` dizesi tam olarak 7 karakter uzunluğunda olmalı ve bir `#` sembolü ile başlamalı, ardından altı onaltılık basamak gelmelidir (örneğin, kırmızı için `#FF0000`). Format hatalıysa düğüm bir hata verecektir.
+**Not:** `color` girdi dizesi tam olarak `#RRGGBB` veya `#RRGGBBAA` biçiminde olmalıdır. Dize 7 veya 9 karakter uzunluğunda değilse, `#` ile başlamıyorsa veya geçerli onaltılık basamaklar olmayan karakterler içeriyorsa, düğüm bir hata verir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-| --- | --- | --- |
-| `rgb_tam_sayı` | Hesaplanan RGB tamsayı değeri. Bu değer şu formülden türetilir: `(Kırmızı * 65536) + (Yeşil * 256) + Mavi`. | INT |
+|-------------|-------------|-----------|
+| `rgb_int` | `(Red * 65536) + (Green * 256) + Blue` formülüyle hesaplanan RGB tamsayı değeri. | INT |
+| `hex` | `#RRGGBB` biçiminde onaltılık renk dizesi. Girdi bir alfa kanalı içeriyorsa, bu çıktıdan çıkarılır. | COLOR |
+| `alpha` | 0.0 ile 1.0 arasında bir sayı olarak alfa (opaklık) değeri. Alfa kanallı (`#RRGGBBAA`) girdi renkleri için, iki basamaklı alfa değerinin 255'e bölünmesidir. Alfa kanalı olmayan renkler için 1.0'dır. | FLOAT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorToRGBInt/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `5b8617d6b28caaa5f01dad1c6a302fa321f1bd53a0454451d468e36747e70e8f`
+**Source fingerprint (SHA-256):** `4e64616d168beee73bca4364d47e2a089418b5046a76bfcfa061dfab9a5e49ed`

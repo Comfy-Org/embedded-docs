@@ -1,26 +1,47 @@
 # Enregistrer l’Audio (Avancé)
 
-Sauvegarde l'audio d'entrée dans votre répertoire de sortie ComfyUI. Ce nœud vous permet d'exporter l'audio dans différents formats, notamment FLAC, MP3 et Opus, avec des paramètres de qualité configurables.
+```markdown
+# Enregistrer l'audio (avancé)
+
+Enregistre l'audio d'entrée dans votre répertoire de sortie ComfyUI. Vous pouvez exporter l'audio aux formats FLAC, MP3 ou Opus, avec des paramètres de qualité sélectionnables pour les fichiers MP3 et Opus.
 
 ## Entrées
 
+### Entrées communes
+
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `audio` | L'audio à sauvegarder. | AUDIO | Oui | - |
-| `préfixe_nom_fichier` | Le préfixe du fichier à sauvegarder. Peut inclure des jetons de formatage tels que %date:yyyy-MM-dd%. (par défaut : "audio/ComfyUI") | STRING | Oui | - |
-| `format` | Le format de fichier dans lequel sauvegarder l'audio. | COMBO | Oui | "flac"<br>"mp3"<br>"opus" |
+| `format` | Le format de fichier dans lequel enregistrer l'audio. | DYNAMIC_COMBO | Oui | "flac"<br>"mp3"<br>"opus" |
+| `audio` | L'audio à enregistrer. | AUDIO | Oui | - |
+| `filename_prefix` | Le préfixe du fichier à enregistrer. Peut inclure des jetons de formatage tels que %date:yyyy-MM-dd%. (défaut : « audio/ComfyUI ») | STRING | Oui | - |
 
-Lorsque "mp3" est sélectionné comme format, un sous-paramètre `quality` devient disponible avec les options suivantes : "V0", "128k", "320k" (par défaut : "V0").
+### Entrées flac
 
-Lorsque "opus" est sélectionné comme format, un sous-paramètre `quality` devient disponible avec les options suivantes : "64k", "96k", "128k", "192k", "320k" (par défaut : "128k").
+Le format `flac` ne nécessite aucun paramètre supplémentaire.
+
+### Entrées mp3
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `quality` | La qualité d'encodage pour les fichiers MP3. (défaut : « V0 ») | COMBO | Oui | "V0"<br>"128k"<br>"320k" |
+
+### Entrées opus
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `quality` | La qualité d'encodage pour les fichiers Opus. (défaut : « 128k ») | COMBO | Oui | "64k"<br>"96k"<br>"128k"<br>"192k"<br>"320k" |
+
+**Remarque :** Le paramètre `quality` n'est affiché que lorsque `format` est `mp3` ou `opus`. Si aucune valeur `quality` n'est fournie, l'audio est enregistré avec la qualité par défaut du format sélectionné.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `audio` | Sortie d'interface contenant les informations du fichier audio sauvegardé. | UI |
+| `audio` | L'audio d'entrée, transmis après avoir été enregistré. | AUDIO |
+| `ui` | Sortie d'interface contenant les informations du fichier audio enregistré. | UI |
+```
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAudioAdvanced/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `98314263dd84c562e7c02ba89f3d10551fcb898ac784af2aa397ca8357e4aae8`
+**Source fingerprint (SHA-256):** `5f3af49670b485bbd31f0ed0c5667c12e9b9b23014cadcf64442a486255d0e6d`

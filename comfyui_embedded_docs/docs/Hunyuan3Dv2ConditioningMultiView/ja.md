@@ -1,28 +1,26 @@
 # Hunyuan3Dv2ConditioningMultiView
 
-このドキュメントはAIによって生成されました。誤りや改善のご提案がございましたら、ぜひご協力ください！ [GitHubで編集する](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2ConditioningMultiView/en.md)
-
-Hunyuan3Dv2ConditioningMultiView ノードは、3D動画生成のためのマルチビューCLIPビジョン埋め込みを処理します。オプションで正面、左、背面、右の各ビュー埋め込みを受け取り、それらを位置エンコーディングと組み合わせて、動画モデル用の条件付けデータを作成します。このノードは、結合された埋め込みからのポジティブ条件付けと、ゼロ値によるネガティブ条件付けの両方を出力します。
+Hunyuan3Dv2ConditioningMultiViewノードは、3Dビデオ生成のためのマルチビューCLIPビジョン埋め込みを処理します。このノードは、任意のフロント、レフト、バック、ライトの各ビュー埋め込みを受け取り、提供された各ビューに位置エンコーディングを追加してから、それらを単一のコンディショニングシーケンスに結合します。ノードは、結合された埋め込みからポジティブコンディショニングと、ゼロ値を持つネガティブコンディショニングの両方を出力します。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `フロント` | 正面ビューのCLIPビジョン出力 | CLIP_VISION_OUTPUT | いいえ | - |
-| `左` | 左ビューのCLIPビジョン出力 | CLIP_VISION_OUTPUT | いいえ | - |
-| `バック` | 背面ビューのCLIPビジョン出力 | CLIP_VISION_OUTPUT | いいえ | - |
-| `右` | 右ビューのCLIPビジョン出力 | CLIP_VISION_OUTPUT | いいえ | - |
+| `front` | フロントビューのCLIPビジョン出力 | CLIP_VISION_OUTPUT | いいえ | - |
+| `left` | レフトビューのCLIPビジョン出力 | CLIP_VISION_OUTPUT | いいえ | - |
+| `back` | バックビューのCLIPビジョン出力 | CLIP_VISION_OUTPUT | いいえ | - |
+| `right` | ライトビューのCLIPビジョン出力 | CLIP_VISION_OUTPUT | いいえ | - |
 
-**注記:** ノードが機能するには、少なくとも1つのビュー入力を提供する必要があります。ノードは、有効なCLIPビジョン出力データを含むビューのみを処理します。
+**注:** ノードが機能するには、少なくとも1つのビュー入力が必要です。ノードは、有効なCLIPビジョン出力データを含むビューのみを処理します。提供された各ビューは、そのビュー位置（front、left、back、right）に基づいて位置エンコーディングを受け取り、エンコードされたビューは同じ順序で連結されます。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `positive` | 位置エンコーディングを含む結合されたマルチビュー埋め込みによるポジティブ条件付け | CONDITIONING |
-| `negative` | 対照学習のためのゼロ値によるネガティブ条件付け | CONDITIONING |
+| `positive` | 位置エンコーディングを含む結合されたマルチビュー埋め込みを含むポジティブコンディショニング | CONDITIONING |
+| `negative` | ポジティブコンディショニングと同じ形状のゼロ値を含むネガティブコンディショニング | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2ConditioningMultiView/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `01998ae9ba7d2ae9a2f6a0b5aee4c03168f935fb9769317cd80d93a7a4b96f13`
+**Source fingerprint (SHA-256):** `1492b51661d0bb8f2c142c1b1e8ef104beed1b9dae532a970e2928e27ad71d69`

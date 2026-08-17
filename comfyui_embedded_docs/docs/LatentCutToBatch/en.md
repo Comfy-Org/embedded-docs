@@ -10,6 +10,8 @@ The LatentCutToBatch node splits a latent representation along a chosen dimensio
 | `dim` | The dimension along which to cut the latent samples. `"t"` refers to the temporal dimension, `"x"` to the width, and `"y"` to the height. | COMBO | Yes | `"t"`<br>`"x"`<br>`"y"` |
 | `slice_size` | The size of each slice to cut from the specified dimension. If the dimension's size is not perfectly divisible by this value, the remainder is discarded. (default: 1) | INT | Yes | 1 to 16384 (max resolution) |
 
+Note: If the selected dimension is the batch or channel axis, the input is returned unchanged. If `slice_size` is larger than the dimension's size, the entire dimension is used as a single slice.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -19,4 +21,4 @@ The LatentCutToBatch node splits a latent representation along a chosen dimensio
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentCutToBatch/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `565fd1e72a1353050cf8c32c6ab8dade475afb2e8ee13ba323d30a8467204201`
+**Source fingerprint (SHA-256):** `873c9bc8391971887f1ab636c086cab86f5504a9c653bc80b54120ee53980bdf`

@@ -5,7 +5,7 @@ The EmptyHunyuanImageLatent node creates an empty latent tensor with specific di
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-| --- | --- | --- | --- | --- |
+|-----------|-------------|-----------|----------|-------|
 | `width` | The width of the generated latent image in pixels (default: 2048, step: 32) | INT | Yes | 64 to MAX_RESOLUTION |
 | `height` | The height of the generated latent image in pixels (default: 2048, step: 32) | INT | Yes | 64 to MAX_RESOLUTION |
 | `batch_size` | The number of latent samples to generate in a batch (default: 1) | INT | Yes | 1 to 4096 |
@@ -13,10 +13,10 @@ The EmptyHunyuanImageLatent node creates an empty latent tensor with specific di
 ## Outputs
 
 | Output Name | Description | Data Type |
-| --- | --- | --- |
-| `LATENT` | An empty latent tensor with the specified dimensions for Hunyuan image processing | LATENT |
+|-------------|-------------|-----------|
+| `LATENT` | An empty latent tensor with the specified dimensions for Hunyuan image processing. The tensor has 64 channels and its spatial dimensions are one-thirty-second (1/32) of the requested width and height. | LATENT |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyHunyuanImageLatent/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `990878294736fcc89f4435127a81e9eec390d58640694ab35789ed7f578692a1`
+**Source fingerprint (SHA-256):** `31fc10d43c224810709870cf40256b6fccd4743445ea9d98d148d443bc591d7a`

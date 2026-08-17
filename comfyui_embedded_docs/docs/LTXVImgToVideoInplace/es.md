@@ -1,26 +1,26 @@
 # LTXVImgToVideoInplace
 
-El nodo LTXVImgToVideoInplace condiciona una representación latente de video codificando una imagen de entrada en sus fotogramas iniciales. Funciona utilizando un VAE para codificar la imagen en el espacio latente y luego fusionándola con las muestras latentes existentes según una intensidad especificada. Esto permite que una imagen sirva como punto de partida o señal de condicionamiento para la generación de video.
+El nodo LTXVImgToVideoInplace condiciona una representación latente de video codificando una imagen de entrada en sus fotogramas iniciales. Funciona usando un VAE para codificar la imagen en el espacio latente y luego reemplazando los primeros fotogramas de las muestras latentes de video con esta imagen codificada. Se aplica una máscara de ruido para que la fuerza de condicionamiento controle cuán fuertemente influye la imagen en esos fotogramas iniciales durante la generación.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `vae` | El modelo VAE utilizado para codificar la imagen de entrada en el espacio latente. | VAE | Sí | - |
-| `imagen` | La imagen de entrada que se codificará y utilizará para condicionar el video latente. | IMAGE | Sí | - |
-| `latente` | La representación latente de video de destino que se modificará. | LATENT | Sí | - |
-| `fuerza` | Controla la intensidad de fusión de la imagen codificada en el latente. Un valor de 1.0 reemplaza completamente los fotogramas iniciales, mientras que valores más bajos los fusionan. (predeterminado: 1.0) | FLOAT | No | 0.0 - 1.0 |
-| `omitir` | Omite el condicionamiento. Cuando está habilitado, el nodo devuelve el latente de entrada sin cambios. (predeterminado: False) | BOOLEAN | No | - |
+| `image` | La imagen de entrada que se codificará y se usará para condicionar el latente de video. | IMAGE | Sí | - |
+| `latent` | La representación latente de video objetivo que se modificará. | LATENT | Sí | - |
+| `strength` | Controla la fuerza de condicionamiento de la imagen codificada en los fotogramas latentes iniciales. Un valor de 1.0 condiciona completamente los fotogramas iniciales, mientras que valores más bajos aplican un condicionamiento más débil. (por defecto: 1.0) | FLOAT | No | 0.0 - 1.0 |
+| `bypass` | Omitir el condicionamiento. Cuando está habilitado, el nodo devuelve el latente de entrada sin cambios. (por defecto: False) | BOOLEAN | No | - |
 
-**Nota:** La `image` se redimensionará automáticamente para que coincida con las dimensiones espaciales requeridas por el `vae` para la codificación, según el ancho y alto de la entrada `latent`.
+**Nota:** La `image` se redimensionará automáticamente (interpolación bilineal) para ajustarse a las dimensiones espaciales requeridas por la `vae` para la codificación, según el ancho y alto del `latent` de entrada. Solo se utilizan los primeros 3 canales de color (RGB) de la imagen; cualquier canal alfa se ignora.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `latente` | La representación latente de video modificada. Contiene las muestras actualizadas y una `noise_mask` que aplica la intensidad de condicionamiento a los fotogramas iniciales. | LATENT |
+| `latent` | La representación latente de video modificada. Contiene las muestras actualizadas y una `noise_mask` que aplica la fuerza de condicionamiento a los fotogramas iniciales. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVImgToVideoInplace/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `49df511591071f51e2b86f2302cfb438d18b5e1ade7ef228345f65fddf88dbcc`
+**Source fingerprint (SHA-256):** `69faa4b2e7b0fedeee531dc5a8809e23a79c9ce03e9760afb865160594fef30d`

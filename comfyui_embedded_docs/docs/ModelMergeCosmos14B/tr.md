@@ -1,18 +1,18 @@
 # ModelBirleştirmeCosmos14B
 
-**ModelMergeCosmos14B** düğümü, Cosmos 14B model mimarisi için özel olarak tasarlanmış blok tabanlı bir yaklaşım kullanarak iki yapay zeka modelini birleştirir. Her model bloğu ve katman gömme (embedding) katmanı için ağırlık değerlerini 0.0 ile 1.0 arasında ayarlayarak modellerin farklı bileşenlerini harmanlamanıza olanak tanır.
+**ModelMergeCosmos14B** düğümü, Cosmos 14B model mimarisi için özel olarak tasarlanmış blok tabanlı bir yaklaşımla iki yapay zeka modelini birleştirir. Her model bloğu ve yerleştirme katmanı için ağırlık değerlerini 0.0 ile 1.0 arasında ayarlayarak modellerin farklı bileşenlerini harmanlamanıza olanak tanır.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model1` | Birleştirilecek ilk model | MODEL | Evet | - |
 | `model2` | Birleştirilecek ikinci model | MODEL | Evet | - |
-| `pos_embedder.` | Konum katman gömücü (position embedder) bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `extra_pos_embedder.` | Ek konum katman gömücü (extra position embedder) bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `x_embedder.` | x katman gömücü (x embedder) bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `t_embedder.` | t katman gömücü (t embedder) bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `affline_norm.` | Afin normalizasyon (affine normalization) bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `pos_embedder.` | Konum yerleştirici bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `extra_pos_embedder.` | Ek konum yerleştirici bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `x_embedder.` | x yerleştirici bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `t_embedder.` | t yerleştirici bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `affline_norm.` | Afin normalizasyon bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.block0.` | Blok 0 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.block1.` | Blok 1 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.block2.` | Blok 2 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
@@ -49,15 +49,17 @@
 | `blocks.block33.` | Blok 33 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.block34.` | Blok 34 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.block35.` | Blok 35 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `final_layer.` | Son katman (final layer) için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `final_layer.` | Son katman için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+
+Not: Tüm FLOAT ağırlık girdileri aynı yapılandırmayı paylaşır — varsayılan 1.0, minimum 0.0, maksimum 1.0, adım 0.01.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model` | Her iki giriş modelinin özelliklerini birleştiren birleştirilmiş model | MODEL |
+| `model` | Her iki girdi modelinin özelliklerini bir araya getiren birleştirilmiş model | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmos14B/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `6fcb4fefe7738d0addef49d386c0d3d22cda4c68f0e49ad003d1df595cf0e9d9`
+**Source fingerprint (SHA-256):** `1d1e5dc176643f577723bb0bb9375748a392a6fafa5c9e5e78ef4c4d8289f77c`

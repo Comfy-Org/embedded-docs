@@ -9,6 +9,8 @@ The CLIPMergeAdd node combines two CLIP models by adding patches from the second
 | `clip1` | The base CLIP model that will be cloned and used as the foundation for merging | CLIP | Yes | - |
 | `clip2` | The secondary CLIP model that provides key patches to be added to the base model | CLIP | Yes | - |
 
+Note: Key patches from `clip2` are added with a strength of 1.0. Keys ending in `.position_ids` or `.logit_scale` are excluded from the merge.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -18,4 +20,4 @@ The CLIPMergeAdd node combines two CLIP models by adding patches from the second
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPMergeAdd/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `f212c2750f317ad51516a10a1a03a838b75bc878333381348d5eb388a2faf516`
+**Source fingerprint (SHA-256):** `e6271ea9139598eb580f79ce63ff5d92307d7ed93f57cdc666c5e022b671a0dd`

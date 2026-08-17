@@ -21,4 +21,4 @@ The FreeU_V2 node enhances image generation quality by applying frequency-based 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FreeU_V2/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `adbbf0934f4c17fa736035b1396d26d6a5c847fd19a981ddd42d9624bd90e619`
+**Source fingerprint (SHA-256):** `4cef2af9b04164a8ead25bea9c9bb3311be9224f2539a5cc6edbe97ad8465d65`

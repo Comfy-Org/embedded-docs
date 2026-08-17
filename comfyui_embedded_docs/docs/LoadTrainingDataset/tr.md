@@ -1,21 +1,23 @@
 # Eğitim Verisetini Yükle
 
-Bu düğüm, daha önce diske kaydedilmiş kodlanmış bir eğitim veri kümesini yükler. ComfyUI çıktı dizini içindeki belirtilen bir klasördeki tüm veri parçası dosyalarını arar ve okur, ardından birleştirilmiş gizli vektörleri ve koşullandırma verilerini eğitim iş akışlarında kullanılmak üzere döndürür.
+Bu düğüm, eğitimde kullanılmak üzere diskten kodlanmış bir eğitim veri kümesini (latentler ve koşullandırma) yükler. Önceden kaydedilmiş bir veri kümesi klasörü seçtikten sonra, içindeki tüm parça dosyalarını okur ve birleştirilmiş latent vektörlerini ve koşullandırma verilerini döndürür.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `folder_name` | ComfyUI çıktı dizini içinde bulunan, kaydedilmiş veri kümesini içeren klasörün adı (varsayılan: "training_dataset"). | STRING | Evet | Yok |
+| `folder_name` | Yüklenecek kaydedilmiş veri kümesi, veri kümeleri dizininden. | COMBO | Evet | Kayıtlı veri kümesi dizinlerinde bulunan tüm veri kümesi klasörleriyle dinamik olarak doldurulur. Yalnızca `metadata.json` dosyası veya `.safetensors` dosyaları içeren klasörler listelenir. |
 
-## Çıkışlar
+**Not:** Seçilen veri kümesi klasörü, kayıtlı bir veri kümesi dizininin alt klasörü olmalı ve en az bir `shard_*.pkl` parça dosyası içermelidir; aksi takdirde düğüm bir hata verir.
 
-| Çıkış Adı | Açıklama | Veri Türü |
+## Çıktılar
+
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `latents` | Her bir sözlüğün `"samples"` anahtarına sahip bir tensör içerdiği, gizli sözlüklerin listesi. | LATENT |
-| `conditioning` | Her bir iç listenin ilgili bir örnek için koşullandırma verileri içerdiği, koşullandırma listelerinin listesi. | CONDITIONING |
+| `latents` | Veri kümesi parçalarından yüklenen latent sözlüklerinin listesi; her biri bir `samples` tensörü içerir. | LATENT |
+| `conditioning` | Veri kümesi parçalarından yüklenen koşullandırma listelerinin listesi; her örnek için bir tane. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `0a07c97e2c6a32f77cd21ea7dbdd33e06fad82285696b88122fef369307e133d`
+**Source fingerprint (SHA-256):** `9f914b27f067460f6f3b54f3f2a7bb793c65b99c85e8aa14ab64894be26bd816`

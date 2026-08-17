@@ -24,4 +24,4 @@ The PatchModelAddDownscale node implements Kohya Deep Shrink functionality by ap
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PatchModelAddDownscale/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `ee6a1191bd753a669e676a58e2052ca4b47ac74d8f40df562df8550b0c71c3c2`
+**Source fingerprint (SHA-256):** `aa9434a521ab585b290a3bd8db804469bd3bb02103a0d830b6be6eb8e8c26a5e`

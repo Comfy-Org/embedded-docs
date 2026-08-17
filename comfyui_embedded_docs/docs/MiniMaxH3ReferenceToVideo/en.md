@@ -1,6 +1,6 @@
 # MiniMax H3 Reference to Video
 
-MiniMax H3 Reference to Video creates the text conditioning and the empty video latent needed for MiniMax H3 reference-to-video generation. You provide a prompt plus optional reference images, videos, and audio clips, and the node encodes these references into tokens the model can use while generating. The prompt refers to the references with `<Picture i>`, `<Video k>`, and `<Audio j>` tags.
+MiniMax H3 Reference to Video creates the text conditioning and the empty audio-video latent needed for MiniMax H3 reference-to-video generation. You provide a prompt plus optional reference images, videos, and audio clips, and the node encodes these references into tokens the model can use while generating. The prompt refers to the references with `<Picture i>`, `<Video k>`, and `<Audio j>` tags.
 
 ## Inputs
 
@@ -21,7 +21,7 @@ MiniMax H3 Reference to Video creates the text conditioning and the empty video 
 
 Notes:
 - The prompt refers to reference media with 1-based tags per type: `<Picture i>` for images, `<Video k>` for videos, and `<Audio j>` for audio. References are presented to the model in a fixed order: images, then videos (with each soundtrack's `<Audio j>` label right before its `<Video k>`), then standalone audio.
-- Reference videos must contain at least 5 frames (~0.2 seconds at 24 fps), otherwise the node raises an error. Video frames are also capped to the selected `length` and trimmed to a supported frame count.
+- Reference videos must contain at least 5 frames (~0.2 seconds at 24 fps), otherwise the node raises an error. Video frames are capped to the selected `length` and trimmed to a supported frame count.
 
 ## Outputs
 
@@ -33,4 +33,4 @@ Notes:
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MiniMaxH3ReferenceToVideo/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `529e51c5c9c63a94176a15851f40ac42f7bd93e7d7c6ad334ed22aa29d04dfde`
+**Source fingerprint (SHA-256):** `d9a444e712cdc255d7c56a3ab38d0523659f198b3228b9283a7028cfd0e4f3f9`

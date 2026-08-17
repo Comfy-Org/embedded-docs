@@ -1,29 +1,31 @@
 # WAN上下文窗口（手動）
 
-WAN 上下文視窗（手動）節點允許您為具有二維處理能力的 WAN 類模型手動配置上下文視窗。它透過指定視窗長度、重疊量、排程方法和融合技術，在取樣過程中應用自訂的上下文視窗設定。這讓您能夠精確控制模型在不同上下文區域間的資訊處理方式。
+Wan Context Windows (Manual) 節點可讓您手動為具備二維處理能力的 Wan 類模型設定上下文視窗。它會在取樣時套用上下文視窗設定，透過指定視窗長度、重疊、排程方法與融合技術，讓您控制模型如何處理不同的上下文區域。
 
 ## 輸入
 
-| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `模型` | 在取樣期間要套用上下文視窗的模型。 | MODEL | 是 | - |
-| `上下文長度` | 上下文視窗的長度（預設值：81）。 | INT | 是 | 1 至 1048576 |
-| `上下文重疊` | 上下文視窗的重疊量（預設值：30）。 | INT | 是 | 0 至 1048576 |
-| `上下文排程` | 上下文視窗的步長策略。 | COMBO | 是 | `"static_standard"`<br>`"uniform_standard"`<br>`"uniform_looped"`<br>`"batched"` |
-| `上下文步幅` | 上下文視窗的步長；僅適用於均勻排程（預設值：1）。 | INT | 是 | 1 至 1048576 |
-| `閉環` | 是否閉合上下文視窗迴圈；僅適用於循環排程（預設值：False）。 | BOOLEAN | 是 | - |
-| `融合方法` | 用於融合上下文視窗的方法（預設值："pyramid"）。 | COMBO | 是 | `"pyramid"`<br>`"gaussian"`<br>`"average"`<br>`"overlap"` |
-| `freenoise` | 是否應用 FreeNoise 噪聲洗牌，可改善視窗混合效果（預設值：False）。 | BOOLEAN | 是 | - |
+| `model` | 在取樣期間要套用上下文視窗的模型。 | MODEL | 是 | - |
+| `context_length` | 上下文視窗以實際幀數表示的長度。必須為 4*n + 1。（預設值：81） | INT | 是 | 1 至 16384（間距 4） |
+| `context_overlap` | 上下文視窗以實際幀數表示的重疊量。（預設值：30） | INT | 是 | 0 或更大 |
+| `context_schedule` | 上下文視窗的依步進排程演算法。（預設值："uniform_standard"） | COMBO | 是 | `"static_standard"`<br>`"uniform_standard"`<br>`"uniform_looped"`<br>`"batched"` |
+| `context_stride` | 上下文視窗的步幅；僅適用於 uniform 排程。（預設值：1） | INT | 是 | 1 或更大 |
+| `closed_loop` | 是否封閉上下文視窗迴圈；僅適用於 looped 排程。（預設值：False） | BOOLEAN | 是 | True 或 False |
+| `fuse_method` | 用於融合上下文視窗的方法。（預設值："pyramid"） | COMBO | 是 | `"pyramid"`<br>`"gaussian"`<br>`"average"`<br>`"overlap"` |
+| `freenoise` | 是否套用 FreeNoise 雜訊重排，以改善視窗混合效果。（預設值：True） | BOOLEAN | 是 | True 或 False |
+| `retain_first_frame` | 在每個上下文視窗中保留第一個 I2V 幀（可能有助於保留初始參考）。（預設值：False） | BOOLEAN | 是 | True 或 False |
+| `split_conds_to_windows` | 是否根據區域索引，將多個條件（由 ConditionCombine 建立）拆分到每個視窗。（預設值：False） | BOOLEAN | 是 | True 或 False |
 
-**注意：** `context_stride` 參數僅影響均勻排程，而 `closed_loop` 僅適用於循環排程。上下文長度和重疊值會在處理過程中自動調整，以確保符合最小有效值。`fuse_method` 參數現在除了 "pyramid" 之外還包含其他選項。
+**注意：** `context_stride` 僅影響 uniform 排程，`closed_loop` 僅適用於 looped 排程。`context_length` 應遵循 4n + 1 的模式。此節點會在套用前將 `context_length` 和 `context_overlap` 從實際幀數轉換為模型單位，並強制 `context_length` 最小值為 1，`context_overlap` 最小值為 0。`context_stride`、`closed_loop`、`freenoise` 和 `split_conds_to_windows` 輸入為進階選項。
 
 ## 輸出
 
-| 輸出名稱 | 說明 | 資料類型 |
+| 輸出名稱 | 描述 | 資料類型 |
 | --- | --- | --- |
-| `模型` | 已套用上下文視窗配置的模型。 | MODEL |
+| `model` | 已套用上下文視窗設定的模型。 | MODEL |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanContextWindowsManual/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `33e539f1e6647a6a2bc98fadc357a25279b0900746f5b3d568e2782cdb770258`
+**Source fingerprint (SHA-256):** `cf4927371e9d4b509f2e6e5319cd6109e3ef36da6b3faee278bcf8c906672857`

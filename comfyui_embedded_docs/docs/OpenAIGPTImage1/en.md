@@ -1,6 +1,6 @@
-# OpenAI GPT Image 1
+# OpenAI GPT Image 2
 
-Generates images synchronously via OpenAI's GPT Image endpoint. This node can create new images from text prompts or edit existing images when provided with an input image and optional mask. It supports multiple GPT Image models, including gpt-image-1, gpt-image-1.5, and gpt-image-2.
+Generates images synchronously via OpenAI's GPT Image endpoint. This node can create new images from text prompts or edit existing images when provided with an input image and optional mask. It supports multiple GPT Image models, including gpt-image-1, gpt-image-1.5, and gpt-image-2. This node is deprecated.
 
 ## Inputs
 
@@ -40,4 +40,4 @@ Generates images synchronously via OpenAI's GPT Image endpoint. This node can cr
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImage1/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `e7f460fccb6c372558f9a012632804a6047ee5be78b1fc3209f255a55fe13d7c`
+**Source fingerprint (SHA-256):** `bf588bffced6e66536b4cb54655ef6ebb9cf988d9739e3c379a8ebda1486e20a`

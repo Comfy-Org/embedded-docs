@@ -7,7 +7,7 @@ The `CLIPSave` node saves a CLIP text encoder model to disk in SafeTensors forma
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `clip` | The CLIP model to be saved. | CLIP | Yes | - |
-| `filename_prefix` | The prefix path and filename for the saved file(s). The node will append a component suffix (e.g., `_clip_l`, `_clip_g`) and a counter to create unique filenames (default: `clip/ComfyUI`). | STRING | Yes | - |
+| `filename_prefix` | The prefix path and filename for the saved file(s). The node appends a component suffix (e.g., `_clip_l`, `_clip_g`) and a counter to create unique filenames (default: `clip/ComfyUI`). | STRING | Yes | - |
 | `prompt` | The workflow prompt information, saved as metadata in the output file. This parameter is hidden in the UI. | PROMPT | No | - |
 | `extra_pnginfo` | Additional metadata, saved as key-value pairs in the output file. This parameter is hidden in the UI. | EXTRA_PNGINFO | No | - |
 
@@ -17,7 +17,7 @@ This node has no output connections. It saves the processed files directly to th
 
 ### Saved File Details
 
-The node analyzes the CLIP model's state dictionary and saves separate SafeTensors files for each detected component. The component is identified by the prefix of its parameter keys. The following prefixes are checked:
+The node analyzes the CLIP model's state dictionary and saves separate SafeTensors files for each detected component. The component is identified by the prefix of its parameter keys. The node checks the following prefixes, in order:
 
 - `clip_l.` (CLIP-L text encoder)
 - `clip_g.` (CLIP-G text encoder)
@@ -32,9 +32,11 @@ The node analyzes the CLIP model's state dictionary and saves separate SafeTenso
 - `hydit_clip.` (Hydit CLIP text encoder)
 - Empty prefix (other CLIP components)
 
-For each detected component, the node creates a file with the name `{filename_prefix}_{counter:05}_.safetensors`, where the component prefix is appended to the filename prefix (e.g., `clip/ComfyUI_clip_l_00001_.safetensors`). The `transformer.` prefix is removed from parameter keys during saving.
+For each detected component, the node creates a file with the name `{filename}_{counter:05}_.safetensors` (for example, `ComfyUI_clip_l_00001_.safetensors`), where the component name is appended to the filename prefix and the counter ensures unique filenames. When a component is saved, the `transformer.` prefix is removed from its parameter keys.
+
+The metadata written to each file includes the workflow prompt and any extra PNG info, unless metadata saving is disabled with the `--disable-metadata` command-line argument.
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `65a5856b0cbf8765b380887741d52af8ad50d2d5d36145c994a8cbf93ebc9807`
+**Source fingerprint (SHA-256):** `4ab9171e4245b10f738f78bac8a5b564c0957dde352e207ec3f9865e4fac0cab`

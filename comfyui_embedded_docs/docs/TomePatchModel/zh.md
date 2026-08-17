@@ -1,21 +1,21 @@
 # Tome合并模型Token
 
-TomePatchModel 节点对扩散模型应用令牌合并（ToMe），以减少推理过程中的计算需求。其工作原理是在注意力机制中选择性地合并相似令牌，使模型能够处理更少的令牌，同时保持图像质量。该技术有助于在无明显质量损失的情况下加速生成。
+TomePatchModel 节点对扩散模型应用 Token Merging (ToMe) 技术，以降低推理过程中的计算需求。其工作原理是在注意力机制中选择性地合并相似的 token，让模型在保持图像质量的同时处理更少的 token。该技术有助于在质量损失不明显的情况下加速生成过程。
 
 ## 输入
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `模型` | 要应用令牌合并的扩散模型 | MODEL | 是 | - |
-| `比率` | 要合并的令牌比例（默认值：0.3） | FLOAT | 否 | 0.0 - 1.0 |
+| `model` | 要应用 token 合并的扩散模型 | MODEL | 是 | - |
+| `ratio` | 要合并的 token 比例（默认值：0.3，步长：0.01）。数值越大，合并的 token 越多，加速效果越明显，但质量可能会降低。 | FLOAT | 是 | 0.0 - 1.0 |
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `模型` | 已应用令牌合并的修改后模型 | MODEL |
+| `model` | 应用 token 合并后的修改模型 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TomePatchModel/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `23d63ffa1b468a8a41533cc926125f4ef566b13edd1d95a6ef1ae63096a9d878`
+**Source fingerprint (SHA-256):** `1202c0df17f357440cd156fa0920f70c18a318e32c41dc04cecff11613f0072f`

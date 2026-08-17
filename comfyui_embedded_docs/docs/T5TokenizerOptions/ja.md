@@ -1,18 +1,14 @@
 # T5TokenizerOptions
 
-以下が翻訳結果です。
-
----
-
-T5TokenizerOptions ノードを使用すると、さまざまな T5 モデルタイプのトークナイザー設定を構成できます。このノードは、t5xxl、pile_t5xl、t5base、mt5xl、umt5xxl を含む複数の T5 モデルバリアントに対して、最小パディング値と最小長さパラメーターを設定します。CLIP 入力を受け取り、指定されたトークナイザーオプションが適用された変更済み CLIP を返します。
+T5TokenizerOptions ノードは、さまざまな T5 モデルタイプのトークナイザー設定を構成できます。t5xxl、pile_t5xl、t5base、mt5xl、umt5xxl を含む複数の T5 モデルバリアントに対して、最小パディングと最小長のパラメータを設定します。このノードは CLIP 入力を受け取り、指定されたトークナイザーオプションが適用された変更済み CLIP を返します。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `clip` | トークナイザーオプションを構成する対象の CLIP モデル | CLIP | はい | - |
-| `最小パディング` | すべての T5 モデルタイプに設定する最小パディング値（デフォルト：0） | INT | いいえ | 0 ～ 10000 |
-| `最小長` | すべての T5 モデルタイプに設定する最小長さの値（デフォルト：0） | INT | いいえ | 0 ～ 10000 |
+| `clip` | トークナイザーオプションを構成する CLIP モデル | CLIP | はい | - |
+| `min_padding` | すべての T5 モデルタイプに設定する最小パディング値（デフォルト: 0） | INT | いいえ | 0 to 10000 |
+| `min_length` | すべての T5 モデルタイプに設定する最小長の値（デフォルト: 0） | INT | いいえ | 0 to 10000 |
 
 ## 出力
 
@@ -23,4 +19,4 @@ T5TokenizerOptions ノードを使用すると、さまざまな T5 モデルタ
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/T5TokenizerOptions/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `bc05c714e4006786d0c948ed1de05324257472337397b0aa4ce574d7483929ff`
+**Source fingerprint (SHA-256):** `1c9a67781ddcc423fa3f6ed8ae1cb767a18681366aca9f1a4a6aff6b2eb38667`

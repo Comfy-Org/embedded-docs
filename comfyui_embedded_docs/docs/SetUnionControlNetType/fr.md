@@ -1,21 +1,23 @@
 # Définir le Type de Réseau de Contrôle d'Union
 
-Le nœud SetUnionControlNetType vous permet de spécifier le type de réseau de contrôle à utiliser pour le conditionnement. Il prend un réseau de contrôle existant et définit son type de contrôle en fonction de votre sélection, créant ainsi une copie modifiée du réseau de contrôle avec la configuration de type spécifiée.
+Le nœud SetUnionControlNetType vous permet de définir le type de contrôle d'un réseau de contrôle utilisé pour le conditionnement. Il prend un réseau de contrôle existant, crée une copie modifiée de celui-ci et stocke le type de contrôle sélectionné dans cette copie, de sorte que l'original reste inchangé.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `réseau_de_contrôle` | Le réseau de contrôle à modifier avec un nouveau paramètre de type | CONTROL_NET | Oui | - |
-| `type` | Le type de réseau de contrôle à appliquer. Utilisez "auto" pour la détection automatique du type ou sélectionnez un type de réseau de contrôle spécifique parmi les options disponibles | STRING | Oui | `"auto"`<br>Toutes les clés UNION_CONTROLNET_TYPES disponibles |
+| `control_net` | Le réseau de contrôle à copier et à modifier avec le type de contrôle sélectionné | CONTROL_NET | Oui | - |
+| `type` | Le type de contrôle à appliquer au réseau de contrôle copié. Sélectionnez « auto » pour laisser le type de contrôle non défini, ou choisissez un type spécifique parmi les types de réseau de contrôle union disponibles (par défaut : « auto ») | COMBO | Oui | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/scribble/ted"`<br>`"canny/softedge"`<br>`"normal/bms"`<br>`"seg"`<br>`"inpaint"`<br>`"lineart"`<br>`"s4"`<br>`"tile/color"`<br>`"blur"`<br>`"identity"` |
+
+Remarque : lorsque `type` est « auto », la liste des types de contrôle sur le réseau de contrôle copié est effacée. Lorsqu'un type spécifique est sélectionné, le réseau de contrôle copié stocke le numéro de type correspondant.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `réseau_de_contrôle` | Le réseau de contrôle modifié avec le paramètre de type spécifié appliqué | CONTROL_NET |
+| `control_net` | La copie modifiée du réseau de contrôle avec le type de contrôle sélectionné appliqué | CONTROL_NET |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetUnionControlNetType/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `a64308aec96784f08b6f3f8e96e85f532bd1c536301739e7252b2c7978921b5a`
+**Source fingerprint (SHA-256):** `db4b1a3cebafcff2be3172faa09cecbd5e19331376491c491cbe359013ed3da3`

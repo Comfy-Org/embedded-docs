@@ -1,25 +1,25 @@
 # HunyuanRefinerLatent
 
-گره `HunyuanRefinerLatent`، ورودی‌های conditioning و latent را برای عملیات refinement پردازش می‌کند. این گره با اعمال نویزافزایی (noise augmentation) بر روی هر دو conditioning مثبت و منفی و ترکیب داده‌های تصویر latent، یک خروجی latent جدید با ابعاد مشخص برای پردازش‌های بعدی تولید می‌کند.
+گره HunyuanRefinerLatent ورودی‌های conditioning و latent را برای عملیات پالایش پردازش می‌کند. این گره با ترکیب داده‌های تصویر latent، افزایش نویز را بر روی هر دو conditioning مثبت و منفی اعمال کرده و خروجی latent جدیدی با ابعاد مشخص برای پردازش بیشتر تولید می‌کند.
 
 ## ورودی‌ها
 
-| پارامتر | توضیحات | نوع داده | ضروری | محدوده |
+| پارامتر | توضیحات | نوع داده | الزامی | محدوده |
 | --- | --- | --- | --- | --- |
-| `مثبت` | ورودی conditioning مثبت برای پردازش | CONDITIONING | بله | - |
-| `منفی` | ورودی conditioning منفی برای پردازش | CONDITIONING | بله | - |
-| `latent` | نمایش ورودی latent | LATENT | بله | - |
-| `افزایش نویز` | میزان نویزافزایی اعمال‌شده (پیش‌فرض: 0.10) | FLOAT | بله | 0.0 - 1.0 |
+| `positive` | ورودی conditioning مثبت برای پردازش | CONDITIONING | بله | - |
+| `negative` | ورودی conditioning منفی برای پردازش | CONDITIONING | بله | - |
+| `latent` | ورودی نمایش نهفته (latent) | LATENT | بله | - |
+| `noise_augmentation` | میزان افزایش نویز برای اعمال (پیش‌فرض: 0.10، گام: 0.01، پارامتر پیشرفته) | FLOAT | بله | 0.0 - 1.0 |
 
 ## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `مثبت` | conditioning مثبت پردازش‌شده با نویزافزایی اعمال‌شده و الحاق تصویر latent | CONDITIONING |
-| `منفی` | conditioning منفی پردازش‌شده با نویزافزایی اعمال‌شده و الحاق تصویر latent | CONDITIONING |
-| `latent` | خروجی latent جدید با ابعاد [batch_size, 32, height, width, channels] | LATENT |
+| `positive` | conditioning مثبت پردازش‌شده با افزایش نویز اعمال‌شده و الحاق تصویر latent | CONDITIONING |
+| `negative` | conditioning منفی پردازش‌شده با افزایش نویز اعمال‌شده و الحاق تصویر latent | CONDITIONING |
+| `latent` | latent جدید پر از صفر با همان اندازه دسته و همان سه بُعد آخر با `latent` ورودی، اما با 32 کانال | LATENT |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanRefinerLatent/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `f097b58f1948e5c0801f81b51a5189619695a6afa189368aff4c64b126fc5ce5`
+**Source fingerprint (SHA-256):** `4c5669cf2ad5ba00e176876741b7d8d3f092cc58d2163871a10fd769ee4ff84c`

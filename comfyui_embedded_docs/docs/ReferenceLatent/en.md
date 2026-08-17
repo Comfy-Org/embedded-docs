@@ -18,4 +18,4 @@ This node sets the guiding latent for an edit model. It takes conditioning data 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceLatent/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `8465db01a0929ae27ac05419f93f0c206835924f1c0196b874fff9adb1834656`
+**Source fingerprint (SHA-256):** `40b02df8ac436480f478fcfa929cc2e13181954507f4bdcd70aade051a25f7d5`

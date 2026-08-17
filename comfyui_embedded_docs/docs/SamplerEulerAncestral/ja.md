@@ -1,6 +1,6 @@
 # サンプラーオイラー祖先
 
-SamplerEulerAncestral ノードは、画像生成のためのEuler Ancestralサンプラーを作成します。このサンプラーは、オイラー積分と祖先サンプリング手法を組み合わせた特定の数学的アプローチを使用して、画像のバリエーションを生成します。このノードでは、生成プロセス中のランダム性とステップサイズを制御するパラメータを調整することで、サンプリング動作を設定できます。
+SamplerEulerAncestral ノードは、画像生成用の Euler Ancestral サンプラーを作成します。このサンプラーは、Euler 積分と祖先サンプリング手法を組み合わせた特定の数学的手法を使用して、画像のバリエーションを生成します。このノードでは、生成プロセス中のランダム性とステップサイズを制御するパラメータを調整することで、サンプリング動作を設定できます。
 
 ## 入力
 
@@ -13,9 +13,9 @@ SamplerEulerAncestral ノードは、画像生成のためのEuler Ancestralサ�
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `sampler` | サンプリングパイプラインで使用できる、設定済みのEuler Ancestralサンプラーを返します。 | SAMPLER |
+| `sampler` | サンプリングパイプラインで使用できる、設定済みの Euler Ancestral サンプラーを返します。 | SAMPLER |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerEulerAncestral/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `4d167de55f003383ccbb4a53daa14496bd931589781d56b62bf282a811669670`
+**Source fingerprint (SHA-256):** `0d3c1f0ffe01eb6cc17fd53e743713f659218ec19001c670440472ae7d0d3887`

@@ -6,19 +6,19 @@ StableCascade_EmptyLatentImage ノードは、Stable Cascade モデル用の空�
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `幅` | 出力画像の幅（ピクセル単位）（デフォルト：1024、ステップ：8） | INT | はい | 256 ～ MAX_RESOLUTION |
-| `高さ` | 出力画像の高さ（ピクセル単位）（デフォルト：1024、ステップ：8） | INT | はい | 256 ～ MAX_RESOLUTION |
-| `圧縮` | ステージ C の潜在次元を決定する圧縮係数（デフォルト：42、ステップ：1） | INT | はい | 4 ～ 128 |
-| `バッチサイズ` | バッチで生成する潜在サンプルの数（デフォルト：1） | INT | いいえ | 1 ～ 4096 |
+| `width` | 出力画像の幅（ピクセル単位）（デフォルト: 1024、ステップ: 8） | INT | はい | 256 から MAX_RESOLUTION |
+| `height` | 出力画像の高さ（ピクセル単位）（デフォルト: 1024、ステップ: 8） | INT | はい | 256 から MAX_RESOLUTION |
+| `compression` | ステージ C の潜在次元を決定する圧縮係数（デフォルト: 42、ステップ: 1）。これは上級パラメータです。 | INT | はい | 4 から 128 |
+| `batch_size` | バッチで生成する潜在サンプルの数（デフォルト: 1） | INT | いいえ | 1 から 4096 |
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `ステージC` | 次元 [batch_size, 16, height//compression, width//compression] のステージ C 潜在テンソル | LATENT |
-| `ステージB` | 次元 [batch_size, 4, height//4, width//4] のステージ B 潜在テンソル | LATENT |
+| `stage_c` | 次元 [batch_size, 16, height//compression, width//compression] のステージ C 潜在テンソル | LATENT |
+| `stage_b` | 次元 [batch_size, 4, height//4, width//4] のステージ B 潜在テンソル | LATENT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_EmptyLatentImage/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `ba5347f522b661993e540bc5775737cae88bd5f7a87c1b91715f8c1858e8e81a`
+**Source fingerprint (SHA-256):** `f336f87d0ec14b3716efda2cfaa194b1f80707d64821bb56ade7d88d9bd5b53f`

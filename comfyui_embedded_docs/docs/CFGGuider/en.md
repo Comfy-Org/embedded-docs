@@ -20,4 +20,4 @@ The CFGGuider node creates a guidance system for controlling the sampling proces
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGGuider/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `a723a359d0e0ac6ae83dc59d9eb459444b0c4a5361d54d54e22fb03ea34c16be`
+**Source fingerprint (SHA-256):** `73b57bfbb6d4fc083a8089bc0f786f82d03e0d7b2faeeb7a42b3d87e38047b9e`

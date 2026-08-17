@@ -29,4 +29,4 @@ The Wan22FunControlToVideo node prepares conditioning and latent representations
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Wan22FunControlToVideo/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `3cc49969226d304e73ec924ccce902c7ae1eee819b4274ad4ffa10e67a4ea211`
+**Source fingerprint (SHA-256):** `731b848f15c13ddc662f19230acb55d195f934bad7d9ae516a288e0ed8f8d899`

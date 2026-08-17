@@ -51,6 +51,8 @@ The **ModelMergeCosmos14B** node merges two AI models using a block-based approa
 | `blocks.block35.` | Weight for block 35 (default: 1.0) | FLOAT | Yes | 0.0 - 1.0 |
 | `final_layer.` | Weight for the final layer (default: 1.0) | FLOAT | Yes | 0.0 - 1.0 |
 
+Note: All FLOAT weight inputs share the same configuration — default 1.0, minimum 0.0, maximum 1.0, step 0.01.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -60,4 +62,4 @@ The **ModelMergeCosmos14B** node merges two AI models using a block-based approa
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmos14B/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `6fcb4fefe7738d0addef49d386c0d3d22cda4c68f0e49ad003d1df595cf0e9d9`
+**Source fingerprint (SHA-256):** `1d1e5dc176643f577723bb0bb9375748a392a6fafa5c9e5e78ef4c4d8289f77c`

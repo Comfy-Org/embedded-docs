@@ -1,34 +1,30 @@
 # Wan首尾帧视频
 
-WanFirstLastFrameToVideo 节点通过结合起始帧、结束帧与文本提示来创建视频条件。它通过编码首帧和末帧、应用遮罩引导生成过程，并在可用时融入 CLIP 视觉特征，为视频生成生成潜在表示。此节点为视频模型准备正面和负面条件，以在指定的起点和终点之间生成连贯的序列。
-
 ## 输入
-
-| 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
+| 参数 | 描述 | 数据类型 | 必需 | 范围 |
 | --- | --- | --- | --- | --- |
-| `正向` | 用于引导视频生成的正面文本条件 | CONDITIONING | 是 | - |
-| `负向` | 用于引导视频生成的负面文本条件 | CONDITIONING | 是 | - |
-| `vae` | 用于将图像编码到潜在空间的 VAE 模型 | VAE | 是 | - |
-| `宽度` | 输出视频宽度（默认值：832，步长：16） | INT | 是 | 16 至 MAX_RESOLUTION |
-| `高度` | 输出视频高度（默认值：480，步长：16） | INT | 是 | 16 至 MAX_RESOLUTION |
-| `长度` | 视频序列中的帧数（默认值：81，步长：4） | INT | 是 | 1 至 MAX_RESOLUTION |
-| `批量大小` | 同时生成的视频数量（默认值：1） | INT | 是 | 1 至 4096 |
-| `clip 视觉起始图像` | 从起始图像提取的 CLIP 视觉特征 | CLIP_VISION_OUTPUT | 否 | - |
-| `clip 视觉结束图像` | 从结束图像提取的 CLIP 视觉特征 | CLIP_VISION_OUTPUT | 否 | - |
-| `起始图像` | 视频序列的起始帧图像 | IMAGE | 否 | - |
-| `结束图像` | 视频序列的结束帧图像 | IMAGE | 否 | - |
+| `positive` | 用于引导视频生成的正向文本条件 | CONDITIONING | 是 | - |
+| `negative` | 用于引导视频生成的负向文本条件 | CONDITIONING | 是 | - |
+| `vae` | 用于将图像编码到潜空间的 VAE 模型 | VAE | 是 | - |
+| `width` | 输出视频宽度（默认：832，步长：16） | INT | 是 | 16 to MAX_RESOLUTION |
+| `height` | 输出视频高度（默认：480，步长：16） | INT | 是 | 16 to MAX_RESOLUTION |
+| `length` | 视频序列中的帧数（默认：81，步长：4） | INT | 是 | 1 to MAX_RESOLUTION |
+| `batch_size` | 同时生成的视频数量（默认：1） | INT | 是 | 1 to 4096 |
+| `clip_vision_start_image` | 从起始图像提取的 CLIP 视觉特征 | CLIP_VISION_OUTPUT | 否 | - |
+| `clip_vision_end_image` | 从结束图像提取的 CLIP 视觉特征 | CLIP_VISION_OUTPUT | 否 | - |
+| `start_image` | 视频序列的起始帧图像 | IMAGE | 否 | - |
+| `end_image` | 视频序列的结束帧图像 | IMAGE | 否 | - |
 
-**注意：** 当同时提供 `start_image` 和 `end_image` 时，节点会创建一个在这两帧之间过渡的视频序列。`clip_vision_start_image` 和 `clip_vision_end_image` 参数为可选，但若提供，其 CLIP 视觉特征将被拼接并应用于正面和负面条件。在处理前，`start_image` 会被裁剪为前 `length` 帧，`end_image` 会被裁剪为后 `length` 帧。
+**注意：** 当同时提供 `start_image` 和 `end_image` 时，节点会创建一个在这两帧之间过渡的视频序列。在处理前，`start_image` 会被裁剪为前 `length` 帧，`end_image` 会被裁剪为后 `length` 帧。如果只提供其中一个，缺失的一侧将用中性灰色帧填充。掩码在起始帧和结束帧存在的位置设置为 0，在其他位置设置为 1。`clip_vision_start_image` 和 `clip_vision_end_image` 参数为可选；当两者都提供时，它们的 CLIP 视觉特征会拼接并应用于正向和负向条件。当仅提供一个时，将单独使用其特征。
 
 ## 输出
-
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `正向` | 应用了视频帧编码和 CLIP 视觉特征的正面条件 | CONDITIONING |
-| `负向` | 应用了视频帧编码和 CLIP 视觉特征的负面条件 | CONDITIONING |
-| `latent` | 空潜在张量，其维度与指定的视频参数匹配 | LATENT |
+| `positive` | 经过视频帧编码和 CLIP 视觉特征应用的正向条件 | CONDITIONING |
+| `negative` | 经过视频帧编码和 CLIP 视觉特征应用的负向条件 | CONDITIONING |
+| `latent` | 维度与指定视频参数匹配的空潜在张量 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFirstLastFrameToVideo/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `8cfca692fc4975bb5238ce749d2102fad4b6cd84e96ef74c3eff2b297ee60c3c`
+**Source fingerprint (SHA-256):** `0072e441cb80334c3c961d1bbf2d081c78bc38ed1eacca840c577a2d01b36f05`

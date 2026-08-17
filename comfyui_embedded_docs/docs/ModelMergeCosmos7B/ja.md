@@ -1,17 +1,17 @@
 # ModelMergeCosmos7B
 
-ModelMergeCosmos7B ノードは、特定のコンポーネントに重み付けブレンドを適用して、2つのAIモデルをマージします。位置埋め込み、トランスフォーマーブロック、最終層の個別の重みを調整することで、モデルの異なる部分をどのように組み合わせるかを細かく制御できます。
+The ModelMergeCosmos7B node merges two AI models together using weighted blending of specific components. It allows fine-grained control over how different parts of the models are combined by adjusting individual weights for position embeddings, transformer blocks, and final layers.
 
-## 入力
+## Inputs
 
-| パラメータ | 説明 | データ型 | 必須 | 範囲 |
+| Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `モデル1` | マージする1つ目のモデル | MODEL | はい | - |
-| `モデル2` | マージする2つ目のモデル | MODEL | はい | - |
-| `pos_embedder.` | 位置埋め込みコンポーネントの重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
-| `extra_pos_embedder.` | 追加位置埋め込みコンポーネントの重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
-| `x_embedder.` | x埋め込みコンポーネントの重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
-| `t_embedder.` | t埋め込みコンポーネントの重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
+| `model1` | マージする最初のモデル | MODEL | はい | - |
+| `model2` | マージする2番目のモデル | MODEL | はい | - |
+| `pos_embedder.` | 位置エンベディングコンポーネントの重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
+| `extra_pos_embedder.` | 追加位置エンベディングコンポーネントの重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
+| `x_embedder.` | xエンベディングコンポーネントの重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
+| `t_embedder.` | tエンベディングコンポーネントの重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
 | `affline_norm.` | アフィン正規化コンポーネントの重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
 | `blocks.block0.` | トランスフォーマーブロック0の重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
 | `blocks.block1.` | トランスフォーマーブロック1の重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
@@ -41,15 +41,15 @@ ModelMergeCosmos7B ノードは、特定のコンポーネントに重み付け�
 | `blocks.block25.` | トランスフォーマーブロック25の重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
 | `blocks.block26.` | トランスフォーマーブロック26の重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
 | `blocks.block27.` | トランスフォーマーブロック27の重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
-| `final_layer.` | 最終層コンポーネントの重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
+| `final_layer.` | 最終レイヤーコンポーネントの重み（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
 
-## 出力
+## Outputs
 
-| 出力名 | 説明 | データ型 |
+| Output Name | Description | Data Type |
 | --- | --- | --- |
-| `model` | 2つの入力モデルの特徴を組み合わせたマージ済みモデル | MODEL |
+| `model` | 両方の入力モデルの特徴を組み合わせたマージ済みモデル | MODEL |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmos7B/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `0721b047933179706c76f622efb5b7425aad530d302d8b33ec12dd68513dec0b`
+**Source fingerprint (SHA-256):** `2cc4dcaa3576c5383c630e233cef55dedc8d742c20197cc83f5832dc9e887dac`

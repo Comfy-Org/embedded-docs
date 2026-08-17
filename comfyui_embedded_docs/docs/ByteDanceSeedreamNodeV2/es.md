@@ -1,46 +1,85 @@
 # ByteDance Seedream 4.5 & 5.0
 
-Este nodo genera o edita imágenes utilizando los modelos Seedream de ByteDance (versiones 4.0, 4.5 y 5.0 Lite). Puede crear nuevas imágenes a partir de un texto descriptivo o editar imágenes existentes proporcionando imágenes de referencia, con soporte para resoluciones de hasta 4K.
+Este nodo crea o edita imágenes utilizando los modelos ByteDance Seedream (4.0, 4.5, 5.0 Lite y 5.0 Pro). Genera nuevas imágenes a partir de un prompt de texto y puede editar imágenes existentes basándose en imágenes de referencia y una instrucción de una sola frase. Admite resoluciones de hasta 4K.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
-| `prompt` | Texto descriptivo para crear o editar una imagen. | STRING | Sí | N/A |
-| `modelo` | Versión del modelo Seedream a utilizar para la generación. Cada modelo tiene diferentes capacidades y precios. | COMBO | Sí | `"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
-| `semilla` | Semilla para la generación (predeterminado: 0). | INT | No | 0 a 2147483647 |
-| `marca de agua` | Si se debe añadir una marca de agua "Generado por IA" a la imagen (predeterminado: Falso). | BOOLEAN | No | Verdadero / Falso |
+El selector `model` determina qué entradas específicas del modelo están disponibles. Las tablas siguientes enumeran las entradas comunes, las entradas de cada modelo y las ranuras ampliables de imágenes de referencia.
 
-### Parámetros Específicos del Modelo
+### Entradas comunes
 
-Al seleccionar un modelo, estarán disponibles parámetros adicionales:
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `model` | La versión del modelo Seedream que se utilizará para la generación. Cada modelo tiene diferentes capacidades, límites y precios. | DYNAMIC_COMBO | Sí | `"seedream 5.0 pro"`<br>`"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
+| `prompt` | Prompt de texto para crear o editar una imagen. | STRING | Sí | Cualquier texto (no vacío) |
+| `seed` | Semilla para la generación (predeterminado: 0). | INT | Sí | de 0 a 2147483647 |
+| `watermark` | Si se debe añadir una marca de agua «generado por IA» a la imagen (predeterminado: False). | BOOLEAN | Sí | True / False |
+| `thinking` | Habilita el razonamiento de optimización del prompt del modelo («thinking») para una mejor adherencia. Puede aumentar sustancialmente el tiempo de generación, especialmente en Seedream 5.0 Pro. Solo se puede deshabilitar para la generación de texto a imagen (no cuando se proporcionan imágenes de referencia). (predeterminado: True) | BOOLEAN | No | True / False |
 
-- **Predefinido de Tamaño**: Un menú desplegable para seleccionar una resolución de imagen predefinida (ej., "2048x2048", "1024x1024"). Los predefinidos disponibles dependen del modelo seleccionado.
-- **Ancho**: El ancho de la imagen generada en píxeles (predeterminado: 2048).
-- **Alto**: El alto de la imagen generada en píxeles (predeterminado: 2048).
-- **Máximo de Imágenes**: El número máximo de imágenes a generar (predeterminado: 1). Cuando se establece en 1, la generación secuencial de imágenes está desactivada.
-- **Imágenes de Referencia**: Hasta 10 (para Seedream 4.0 y 4.5) o 14 (para Seedream 5.0 Lite) imágenes de referencia para edición. Las imágenes deben tener una relación de aspecto entre 1:3 y 3:1.
-- **Fallar en Parcial**: Si está habilitado, el nodo generará un error si no todas las imágenes solicitadas se generan correctamente (predeterminado: Falso).
+### Entradas de seedream 5.0 pro
 
-### Restricciones de Resolución
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `size_preset` | Elija un tamaño recomendado. Seleccione Custom para usar el ancho y la altura indicados a continuación. | COMBO | Sí | Preajustes específicos del modelo (incluye Custom) |
+| `width` | Ancho personalizado de la imagen. El valor solo tiene efecto si `size_preset` está configurado como Custom (predeterminado: 2048). | INT | Sí | de 1024 a 3136 (paso 2) |
+| `height` | Altura personalizada de la imagen. El valor solo tiene efecto si `size_preset` está configurado como Custom (predeterminado: 2048). | INT | Sí | de 1024 a 2496 (paso 2) |
 
-- **Seedream 5.0 Lite y 4.5**: La resolución mínima es de 3.68 megapíxeles (ej., 1920x1920).
-- **Seedream 4.0**: La resolución mínima es de 0.92 megapíxeles (ej., 960x960).
-- **Todos los modelos**: La resolución máxima es de 16.78 megapíxeles (ej., 4096x4096).
+### Entradas de seedream 5.0 lite
 
-### Restricciones de Cantidad de Imágenes
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `size_preset` | Elija un tamaño recomendado. Seleccione Custom para usar el ancho y la altura indicados a continuación. | COMBO | Sí | Preajustes específicos del modelo (incluye Custom) |
+| `width` | Ancho personalizado de la imagen. El valor solo tiene efecto si `size_preset` está configurado como Custom (predeterminado: 2048). | INT | Sí | de 1024 a 6240 (paso 2) |
+| `height` | Altura personalizada de la imagen. El valor solo tiene efecto si `size_preset` está configurado como Custom (predeterminado: 2048). | INT | Sí | de 1024 a 4992 (paso 2) |
+| `max_images` | Número máximo de imágenes a generar. Con 1, se produce exactamente una imagen. Con >1, el modelo genera entre 1 y max_images imágenes relacionadas (p. ej., escenas de una historia, variaciones de personaje). El total de imágenes (entrada + generadas) no puede superar 15. (predeterminado: 1) | INT | Sí | de 1 a 14 |
+| `fail_on_partial` | Si está habilitado, aborta la ejecución si falta alguna de las imágenes solicitadas o si se devuelve un error. (predeterminado: False) | BOOLEAN | Sí | True / False |
 
-- El número total de imágenes de referencia más las imágenes generadas no puede exceder 15.
-- Para Seedream 5.0 Lite, se admiten un máximo de 14 imágenes de referencia.
-- Para Seedream 4.0 y 4.5, se admiten un máximo de 10 imágenes de referencia.
+### Entradas de seedream-4-5-251128
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `size_preset` | Elija un tamaño recomendado. Seleccione Custom para usar el ancho y la altura indicados a continuación. | COMBO | Sí | Preajustes específicos del modelo (incluye Custom) |
+| `width` | Ancho personalizado de la imagen. El valor solo tiene efecto si `size_preset` está configurado como Custom (predeterminado: 2048). | INT | Sí | de 1024 a 6240 (paso 2) |
+| `height` | Altura personalizada de la imagen. El valor solo tiene efecto si `size_preset` está configurado como Custom (predeterminado: 2048). | INT | Sí | de 1024 a 4992 (paso 2) |
+| `max_images` | Número máximo de imágenes a generar. Con 1, se produce exactamente una imagen. Con >1, el modelo genera entre 1 y max_images imágenes relacionadas (p. ej., escenas de una historia, variaciones de personaje). El total de imágenes (entrada + generadas) no puede superar 15. (predeterminado: 1) | INT | Sí | de 1 a 10 |
+| `fail_on_partial` | Si está habilitado, aborta la ejecución si falta alguna de las imágenes solicitadas o si se devuelve un error. (predeterminado: False) | BOOLEAN | Sí | True / False |
+
+### Entradas de seedream-4-0-250828
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `size_preset` | Elija un tamaño recomendado. Seleccione Custom para usar el ancho y la altura indicados a continuación. | COMBO | Sí | Preajustes específicos del modelo (incluye Custom) |
+| `width` | Ancho personalizado de la imagen. El valor solo tiene efecto si `size_preset` está configurado como Custom (predeterminado: 2048). | INT | Sí | de 1024 a 6240 (paso 2) |
+| `height` | Altura personalizada de la imagen. El valor solo tiene efecto si `size_preset` está configurado como Custom (predeterminado: 2048). | INT | Sí | de 1024 a 4992 (paso 2) |
+| `max_images` | Número máximo de imágenes a generar. Con 1, se produce exactamente una imagen. Con >1, el modelo genera entre 1 y max_images imágenes relacionadas (p. ej., escenas de una historia, variaciones de personaje). El total de imágenes (entrada + generadas) no puede superar 15. (predeterminado: 1) | INT | Sí | de 1 a 10 |
+| `fail_on_partial` | Si está habilitado, aborta la ejecución si falta alguna de las imágenes solicitadas o si se devuelve un error. (predeterminado: False) | BOOLEAN | Sí | True / False |
+
+### Entradas de referencia
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `images` | Imagen(es) de referencia opcional(es) para la generación de imagen a imagen o con múltiples referencias. Ranura ampliable: conecte de 1 a N elementos (`image_1`, `image_2`, ..., `image_N`); el número máximo depende del modelo seleccionado (10 para seedream 5.0 pro, seedream-4-5-251128 y seedream-4-0-250828; 14 para seedream 5.0 lite). | IMAGE | No | de 0 a 10<br>de 0 a 14 (seedream 5.0 lite) |
+
+### Notas
+
+- Los valores personalizados de `width` y `height` solo tienen efecto cuando `size_preset` está configurado como Custom.
+- Límites de resolución (según ancho × altura):
+  - seedream 5.0 pro: mínimo 0.92 MP, máximo 4.19 MP.
+  - seedream 5.0 lite y seedream-4-5-251128: mínimo 3.68 MP.
+  - seedream-4-0-250828: mínimo 0.92 MP.
+  - seedream 5.0 lite, seedream-4-5-251128 y seedream-4-0-250828: máximo 16.78 MP.
+- Las imágenes de referencia deben tener una relación de aspecto entre 1:3 y 3:1.
+- Cuando `max_images` es mayor que 1 (disponible en seedream 5.0 lite, seedream-4-5-251128 y seedream-4-0-250828), el número total de imágenes (imágenes de referencia más imágenes generadas) no puede superar 15.
+- `thinking` solo se puede deshabilitar para la generación de texto a imagen; debe estar habilitado cuando se proporcionan imágenes de referencia.
+- seedream 5.0 pro siempre genera una única imagen y no muestra las entradas `max_images` ni `fail_on_partial`.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-| --- | --- | --- |
-| `image` | La imagen generada o editada como un tensor. Si se solicitaron múltiples imágenes, se concatenan en un solo lote. | IMAGE |
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `image` | La imagen generada o editada. Si se solicitaron varias imágenes con `max_images`, se devuelven concatenadas en un único lote. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV2/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `1ceccfdb773807a993c32af22703da155367b67865338c78f153a8ccb02dcc8f`
+**Source fingerprint (SHA-256):** `b57e0d85a586aaeb7cf02ceaaddcd2d36cdac20f5251cba48de602a979420f1c`

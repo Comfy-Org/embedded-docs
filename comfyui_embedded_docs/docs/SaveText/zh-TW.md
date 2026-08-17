@@ -1,24 +1,22 @@
 # 儲存文字
 
-## 概述
-
-儲存文字節點將文字內容寫入輸出目錄中的檔案。它支援以 .txt、.md 或 .json 格式儲存，並在提供有效 JSON 時自動處理 JSON 美化排版。
+Save Text 節點會將文字內容寫入輸出目錄中的檔案。它支援儲存為 .txt、.csv、.md 或 .json 格式，並在提供有效 JSON 時自動進行美化排版（pretty-printing）。
 
 ## 輸入
 
 | 參數 | 說明 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `text` | 要儲存到檔案的文字內容。此輸入必須連接自另一個節點。 | STRING | 是 | - |
-| `filename_prefix` | 輸出檔案名稱的前綴。會附加 5 位計數器以防止覆寫現有檔案（預設："ComfyUI"）。 | STRING | 否 | - |
-| `format` | 儲存文字的檔案格式（預設："txt"）。選擇 "json" 時，有效的 JSON 文字會以 2 空格縮排美化輸出；否則按原樣儲存文字。 | COMBO | 否 | `"txt"`<br>`"md"`<br>`"json"` |
+| `text` | 要儲存到檔案中的文字內容。此輸入必須由其他節點連接。 | STRING | 是 | - |
+| `filename_prefix` | 輸出檔名的前置字串。會附加一個 5 位數計數器，以避免覆寫既有檔案（預設值："ComfyUI"）。 | STRING | 否 | - |
+| `format` | 將文字儲存為的檔案格式（預設值："txt"）。當選取 "json" 時，有效的 JSON 文字會以 2 個空格縮排進行美化排版；否則，文字將原樣儲存。 | COMBO | 否 | `"txt"`<br>`"csv"`<br>`"md"`<br>`"json"` |
 
 ## 輸出
 
-| 輸出名稱 | 說明 | 資料類型 |
+| 輸出名 | 說明 | 資料類型 |
 |-------------|-------------|-----------|
-| `text` | 已儲存到檔案的原始文字內容 | STRING |
+| `text` | 已儲存至檔案的原始文字內容 | STRING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveText/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `5644d143f415773115b38d7af6d9afea20c9eadef2cea836b0384c15e0dcba6a`
+**Source fingerprint (SHA-256):** `09bd896cab770358132834892c1b37efd2ffa0cb0aa7b02b7ef91163331dc9b1`

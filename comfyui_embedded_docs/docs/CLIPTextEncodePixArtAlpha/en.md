@@ -20,4 +20,4 @@ Encodes text and sets the resolution conditioning for PixArt Alpha. This node pr
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodePixArtAlpha/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `d2ed9de57b9b9579162687e1ffaf859e18a0585bbe75888496a42772337b6746`
+**Source fingerprint (SHA-256):** `d25a4117d39e3528cd0f64bc34462cd7b4076c67cb4e454c77fcc66490f89be6`

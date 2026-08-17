@@ -7,7 +7,7 @@ The WanMoveTracksFromCoords node creates motion tracks from a JSON-formatted str
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `track_coords` | A JSON-formatted string containing the coordinate data for the tracks. The default value is an empty list (`"[]"`). | STRING | No | N/A |
-| `track_mask` | An optional mask. When provided, the node uses it to determine the visibility of each track per frame. | MASK | No | N/A |
+| `track_mask` | An optional mask. When provided, the node uses it to determine the visibility of each track per frame. When not provided, all tracks are considered visible for every frame. | MASK | No | N/A |
 
 **Note:** The `track_coords` input expects a specific JSON structure. It should be a list of tracks, where each track is a list of frames, and each frame is an object with `x` and `y` coordinates. The number of frames must be consistent across all tracks.
 
@@ -21,4 +21,4 @@ The WanMoveTracksFromCoords node creates motion tracks from a JSON-formatted str
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTracksFromCoords/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `2c02b7bfc51951d8b5d24e9f19d64cdf0eab7b4f1a3436b63e9baf1765417193`
+**Source fingerprint (SHA-256):** `125187c96332fa81f0a30bcc4c927f405b56b578638ea565642a2b88dff808b7`

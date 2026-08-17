@@ -16,6 +16,8 @@ The ModelMergeQwenImage node merges two AI models by combining their components 
 | `transformer_blocks.0.` to `transformer_blocks.59.` | Weight for each transformer block blending (default: 1.0) | FLOAT | Yes | 0.0 to 1.0 |
 | `proj_out.` | Weight for output projection blending (default: 1.0) | FLOAT | Yes | 0.0 to 1.0 |
 
+Note: There are 60 individual transformer block weight inputs (`transformer_blocks.0.` through `transformer_blocks.59.`), one for each transformer block in the model.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -25,4 +27,4 @@ The ModelMergeQwenImage node merges two AI models by combining their components 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeQwenImage/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `a0424a3f4d4ffe170471ba463350d741f67ff1b1f5a8a016ad844c111033f97c`
+**Source fingerprint (SHA-256):** `5f31f91f3d54d4c5085c684a98f64afd0a0f704693b6dd4f19bc35d3c5f74529`

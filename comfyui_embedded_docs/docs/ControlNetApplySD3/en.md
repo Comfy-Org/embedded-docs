@@ -17,6 +17,8 @@ This node applies ControlNet guidance to Stable Diffusion 3 conditioning. It tak
 | `start_percent` | The starting point in the generation process where ControlNet begins to apply (default: 0.0) | FLOAT | Yes | 0.0 - 1.0 |
 | `end_percent` | The ending point in the generation process where ControlNet stops applying (default: 1.0) | FLOAT | Yes | 0.0 - 1.0 |
 
+**Note:** When `strength` is set to 0, the node returns the positive and negative conditioning unchanged without applying ControlNet.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -27,4 +29,4 @@ This node applies ControlNet guidance to Stable Diffusion 3 conditioning. It tak
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplySD3/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `b79f03a85250f8eda6786fbdb6a96712f5fc60c9ede3b073a1cc8aef31a3f6b0`
+**Source fingerprint (SHA-256):** `b76b0683c05e38102280ca8b0bd23f39a9b9b1b4f52125c77c95686c0a06f398`

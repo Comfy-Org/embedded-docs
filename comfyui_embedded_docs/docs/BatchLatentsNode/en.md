@@ -10,6 +10,8 @@ The Batch Latents node combines multiple latent inputs into a single batch. It t
 
 **Note:** You must provide at least one latent input for the node to function. The node will automatically create input slots as you connect more latents, up to a maximum of 50.
 
+All input latents are reshaped to match the spatial dimensions of the first latent before being combined. Each latent's `batch_index` metadata is carried over to the output; an input without a `batch_index` gets a default sequence starting at 0.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -19,4 +21,4 @@ The Batch Latents node combines multiple latent inputs into a single batch. It t
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BatchLatentsNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `66b2a315c1ce3842e0ee014edd576e87e959591e6d54576c93cba2116b599736`
+**Source fingerprint (SHA-256):** `38df5e6cfa391e054c663af1cc55728d115cebfbb804e1c2c51dfc2aab37df47`

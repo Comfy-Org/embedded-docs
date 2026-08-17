@@ -1,10 +1,9 @@
 # ModelMergeCosmosPredict2_14B
 
-ModelMergeCosmosPredict2_14B 節點透過混合兩個 AI 模型的內部元件來合併它們。它讓您能夠精確控制第二個模型的每個部分對最終合併結果的影響程度，透過為特定層級和元件設定可調整的權重值來實現。
+ModelMergeCosmosPredict2_14B 節點透過混合兩個 AI 模型的內部元件來合併它們。它使用可調整的權重值，針對特定層與元件，讓您精確控制第二個模型的每個部分對最終合併結果的影響程度。
 
 ## 輸入
-
-| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `model1` | 要合併的基礎模型 | MODEL | 是 | - |
 | `model2` | 要合併到基礎模型中的次要模型 | MODEL | 是 | - |
@@ -50,10 +49,9 @@ ModelMergeCosmosPredict2_14B 節點透過混合兩個 AI 模型的內部元件�
 | `blocks.35.` | 區塊 35 混合權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `final_layer.` | 最終層混合權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 
-**注意：** 所有混合權重參數接受 0.0 到 1.0 之間的值，其中 0.0 表示該特定元件不受 model2 影響，1.0 表示完全採用 model2 的貢獻。
+**注意：**所有混合權重參數皆接受 0.0 到 1.0 之間的值，其中 0.0 表示 model2 對該特定元件沒有任何貢獻，1.0 表示 model2 對該元件有完整貢獻。
 
 ## 輸出
-
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
 | `model` | 結合兩個輸入模型特徵的合併模型 | MODEL |
@@ -61,4 +59,4 @@ ModelMergeCosmosPredict2_14B 節點透過混合兩個 AI 模型的內部元件�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmosPredict2_14B/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `5e72608391bc47c2610c93fda19e6e12a1695f95f6135a08efe97e3d400acf84`
+**Source fingerprint (SHA-256):** `a5f34deda62dc03f22613517e43996b908a8673dc5da10d8f1b7f6411ece2f0a`

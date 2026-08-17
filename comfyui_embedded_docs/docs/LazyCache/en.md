@@ -21,4 +21,4 @@ LazyCache is a homebrew version of EasyCache that provides an even easier implem
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LazyCache/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `72ca1bbaf795e17951d1f7f9f37350dc3f1511351cc59a5043b40e069fd31340`
+**Source fingerprint (SHA-256):** `78f9c13473567e068fc2be35b2f8f5aa459d43d3f13300a6ea858af98d3e2a44`

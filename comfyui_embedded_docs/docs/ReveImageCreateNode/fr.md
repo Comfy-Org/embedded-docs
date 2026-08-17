@@ -1,27 +1,45 @@
 # Reve Création d’Image
 
-Le nœud Reve Image Create génère des images à partir de descriptions textuelles en utilisant le modèle Reve AI. Il envoie une invite textuelle à l'API Reve et retourne l'image générée. Vous pouvez contrôler le rapport hauteur/largeur de l'image et appliquer des effets de post-traitement optionnels comme la mise à l'échelle.
+Le nœud **Reve Image Create** génère des images à partir de descriptions textuelles à l’aide du modèle Reve AI. Il envoie un prompt texte à l’API Reve et renvoie l’image générée. Vous pouvez contrôler le rapport hauteur/largeur de l’image et appliquer des effets de post-traitement facultatifs comme la mise à l’échelle et la suppression de l’arrière-plan. Ce nœud est obsolète.
 
 ## Entrées
 
-| Paramètre | Description | Type de données | Requis | Plage |
-| --- | --- | --- | --- | --- |
-| `prompt` | Description textuelle de l'image souhaitée. Maximum 2560 caractères. | STRING | Oui | N/A |
-| `modèle` | Version du modèle et rapport hauteur/largeur à utiliser pour la génération. La première option sélectionne le modèle, et les options suivantes définissent le rapport hauteur/largeur de l'image. | COMBO | Oui | `"reve-create@20250915"`<br>`"3:2"`<br>`"16:9"`<br>`"9:16"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
-| `agrandir` | Active ou désactive l'étape de post-traitement de mise à l'échelle. Lorsqu'elle est activée, vous devez également sélectionner un facteur de mise à l'échelle. | COMBO | Non | `"disabled"`<br>`"enabled"` |
-| `upscale_factor` | Facteur par lequel augmenter la résolution de l'image. Ce paramètre n'est actif que lorsque `agrandir` est défini sur `"enabled"`. | COMBO | Non | `2`<br>`3`<br>`4` |
-| `supprimer l’arrière-plan` | Lorsqu'il est activé, applique une étape de post-traitement de suppression d'arrière-plan à l'image générée. | BOOLEAN | Non | N/A |
-| `graine` | Une valeur de graine qui contrôle si le nœud doit être réexécuté. Remarque : Les résultats sont non déterministes quelle que soit la valeur de la graine. Par défaut : 0. | INT | Non | 0 à 2147483647 |
+### Entrées communes
 
-**Remarque :** Le paramètre `upscale_factor` dépend du paramètre `upscale` défini sur `"enabled"`. Le paramètre `seed` ne garantit pas des sorties déterministes.
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `model` | Version du modèle à utiliser pour la génération. La sélection de ce modèle expose les paramètres `aspect_ratio` et `test_time_scaling`. | DYNAMIC_COMBO | Oui | `"reve-create@20250915"` |
+| `prompt` | Description textuelle de l’image souhaitée. Maximum 2560 caractères. Par défaut : vide. | STRING | Oui | N/A |
+| `seed` | Le seed contrôle si le nœud doit s’exécuter à nouveau ; les résultats sont non déterministes quel que soit le seed. Par défaut : 0. | INT | Non | 0 à 2147483647 |
+| `upscale` | Agrandit l’image générée. Peut entraîner un coût supplémentaire. Lorsqu’il est défini sur `enabled`, le paramètre `upscale_factor` apparaît. Par défaut : `disabled`. | DYNAMIC_COMBO | Non | `"disabled"`<br>`"enabled"` |
+| `remove_background` | Supprime l’arrière-plan de l’image générée. Peut entraîner un coût supplémentaire. Par défaut : false. | BOOLEAN | Non | true<br>false |
+
+### Entrées de reve-create@20250915
+
+Ces paramètres apparaissent lorsque `model` est défini sur `"reve-create@20250915"`.
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `aspect_ratio` | Rapport hauteur/largeur de l’image de sortie. | COMBO | Oui | `"3:2"`<br>`"16:9"`<br>`"9:16"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
+| `test_time_scaling` | Des valeurs plus élevées produisent de meilleures images mais coûtent plus de crédits. Par défaut : 1. | INT | Non | 1 à 5 |
+
+### Entrées de mise à l’échelle
+
+Ces paramètres apparaissent lorsque `upscale` est défini sur `"enabled"`.
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `upscale_factor` | Facteur de mise à l’échelle (2x, 3x ou 4x). Par défaut : 2. | INT | Non | 2 à 4 (pas de 1) |
+
+**Remarque :** Le paramètre `seed` ne garantit pas des résultats déterministes. Le paramètre `upscale` contrôle si la mise à l’échelle est appliquée en tant qu’étape de post-traitement.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
-| --- | --- | --- |
-| `image` | L'image générée par le modèle Reve en fonction de l'invite d'entrée. | IMAGE |
+|---------------|-------------|-----------------|
+| `image` | L’image générée par le modèle Reve en fonction du prompt d’entrée. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReveImageCreateNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `56cb32ad254d39609d9795ca29f1ccba1db2c5a7ac5bb530475298306ec4ea19`
+**Source fingerprint (SHA-256):** `69178bc7d11e32ca179be5f598fbe60c4d41955b87e1c797e79cf224917a930c`

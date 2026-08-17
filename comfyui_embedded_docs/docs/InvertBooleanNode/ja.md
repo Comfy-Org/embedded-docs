@@ -1,6 +1,6 @@
 # InvertBooleanNode
 
-このノードは、単一のブール値（true/false）を入力として受け取り、その反対の値を出力します。論理否定（NOT）演算を実行し、`true` を `false` に、`false` を `true` に変換します。
+このノードは、単一のブール値（true/false）を入力として受け取り、その反対の値を出力します。論理否定（NOT）演算を行い、`true` を `false` に、`false` を `true` に変換します。
 
 ## 入力
 
@@ -17,4 +17,4 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InvertBooleanNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `7c927252a80f42836af6ef16f76714e6892454733d698674b547bd65ddb9d607`
+**Source fingerprint (SHA-256):** `7e28bb375a25249bc237870bf281321375c4be7b7782b217b3e0f70afc2e0c53`

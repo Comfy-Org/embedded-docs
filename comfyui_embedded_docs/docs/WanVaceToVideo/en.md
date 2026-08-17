@@ -14,11 +14,11 @@ The WanVaceToVideo node processes video conditioning data for video generation m
 | `length` | Number of frames in the video (default: 81, step: 4) | INT | Yes | 1 to MAX_RESOLUTION |
 | `batch_size` | Number of videos to generate simultaneously (default: 1) | INT | Yes | 1 to 4096 |
 | `strength` | Condition strength for VACE control (default: 1.0, step: 0.01). This is not a LoRA strength. LoRA weights are applied through separate LoRA nodes. | FLOAT | Yes | 0.0 to 1000.0 |
-| `control_video` | Optional input video for control conditioning. If not provided, a neutral gray video is created automatically. | IMAGE | No | - |
-| `control_masks` | Optional masks for controlling which parts of the video to modify. If not provided, a full white mask is used. | MASK | No | - |
-| `reference_image` | Optional reference image for additional conditioning. When provided, it is encoded and prepended to the latent sequence. | IMAGE | No | - |
+| `control_video` | Optional input video for control conditioning. If not provided, a neutral gray video is created automatically. When provided, it is upscaled to `width` × `height` and limited to the first `length` frames; if it has fewer frames, the missing frames are padded with neutral gray. | IMAGE | No | - |
+| `control_masks` | Optional masks for controlling which parts of the video to modify. If not provided, a full white mask is used. When provided, the mask is upscaled to `width` × `height`, limited to `length` frames, and padded with white if it has fewer frames. | MASK | No | - |
+| `reference_image` | Optional reference image for additional conditioning. When provided, it is upscaled to `width` × `height`, encoded by the VAE, and prepended to the latent sequence. | IMAGE | No | - |
 
-**Note:** When `control_video` is provided, it will be upscaled to match the specified width and height. If `control_masks` are provided, they must match the dimensions of the control video. The `reference_image` is encoded through the VAE and prepended to the latent sequence when provided. The `length` parameter determines the number of frames, and the latent length is calculated as `((length - 1) // 4) + 1`.
+**Note:** When `control_video` is provided, it is upscaled to the specified `width` and `height`. If `control_masks` are provided, they are upscaled to match the same dimensions. The `reference_image` is encoded through the VAE and prepended to the latent sequence when provided. The `length` parameter determines the number of frames, and the latent length is calculated as `((length - 1) // 4) + 1`.
 
 ## Outputs
 
@@ -32,4 +32,4 @@ The WanVaceToVideo node processes video conditioning data for video generation m
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanVaceToVideo/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `e31638510efa11e35f297becb4a9f070fdb84d34878868aaf3525e589e5abb0b`
+**Source fingerprint (SHA-256):** `2039b7509ce5b731e9e41d9cd2dad022d4c5004751f571a4cf88c1ba0cae405b`

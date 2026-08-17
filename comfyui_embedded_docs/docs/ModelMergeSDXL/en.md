@@ -33,6 +33,8 @@ The ModelMergeSDXL node allows you to blend two SDXL models together by adjustin
 | `output_blocks.8` | Blending weight for output block 8 (default: 1.0) | FLOAT | Yes | 0.0 - 1.0 |
 | `out.` | Blending weight for output layers (default: 1.0) | FLOAT | Yes | 0.0 - 1.0 |
 
+All blending weight parameters are required FLOAT values between 0.0 and 1.0, default to 1.0, and can be adjusted in steps of 0.01.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -42,4 +44,4 @@ The ModelMergeSDXL node allows you to blend two SDXL models together by adjustin
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSDXL/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `6c7572a6ed50534f2d9ad6f499146763457da58f0c9dd4b85204e67f7d3e9660`
+**Source fingerprint (SHA-256):** `9a1b0645ee19c2eddb274dd6ea3f9a05997115119cc654a7f055d58475745bb2`

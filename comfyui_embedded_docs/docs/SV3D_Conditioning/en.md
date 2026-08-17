@@ -5,19 +5,21 @@ The SV3D_Conditioning node prepares conditioning data for 3D video generation us
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-| --- | --- | --- | --- | --- |
+|-----------|-------------|-----------|----------|-------|
 | `clip_vision` | The CLIP vision model used for encoding the input image | CLIP_VISION | Yes | - |
 | `init_image` | The initial image that serves as the starting point for 3D video generation | IMAGE | Yes | - |
 | `vae` | The VAE model used for encoding the image into latent space | VAE | Yes | - |
-| `width` | The output width for the generated video frames (default: 576, must be divisible by 8) | INT | Yes | 16 to MAX_RESOLUTION |
-| `height` | The output height for the generated video frames (default: 576, must be divisible by 8) | INT | Yes | 16 to MAX_RESOLUTION |
+| `width` | The output width for the generated video frames (default: 576, must be divisible by 8) | INT | Yes | 16 to MAX_RESOLUTION (step of 8) |
+| `height` | The output height for the generated video frames (default: 576, must be divisible by 8) | INT | Yes | 16 to MAX_RESOLUTION (step of 8) |
 | `video_frames` | The number of frames to generate for the video sequence (default: 21) | INT | Yes | 1 to 4096 |
-| `elevation` | The camera elevation angle in degrees for the 3D view (default: 0.0) | FLOAT | Yes | -90.0 to 90.0 |
+| `elevation` | The camera elevation angle in degrees for the 3D view, applied to every frame (default: 0.0) | FLOAT | Yes | -90.0 to 90.0 (step of 0.1) |
+
+Note: The camera azimuth starts at 0 degrees and increases by 360 / (video_frames - 1) degrees per frame, so the camera completes a full orbit around the object over the sequence. The same `elevation` value is applied to all frames.
 
 ## Outputs
 
 | Output Name | Description | Data Type |
-| --- | --- | --- |
+|-------------|-------------|-----------|
 | `positive` | The positive conditioning data containing image embeddings and camera parameters for generation | CONDITIONING |
 | `negative` | The negative conditioning data with zeroed embeddings for contrastive generation | CONDITIONING |
 | `latent` | An empty latent tensor with dimensions matching the specified video frames and resolution | LATENT |
@@ -25,4 +27,4 @@ The SV3D_Conditioning node prepares conditioning data for 3D video generation us
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SV3D_Conditioning/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `a1d4b7f0106bcdc7c9640f6e12986d9b452f785882caaa2072ba1a5da0913f69`
+**Source fingerprint (SHA-256):** `e28173cfa560290e66b032687088cf0b981256ca5c21f6aa608e0fdaec886665`

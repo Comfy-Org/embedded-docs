@@ -1,37 +1,38 @@
 # WanDancerVideo
 
-WanDancerVideo 节点用于为 WanDancer 模型的视频生成准备 conditioning 数据和空的潜空间张量。它结合了正向和负向 conditioning，并支持起始图像、遮罩、CLIP 视觉嵌入和音频特征等可选输入，以控制生成的视频。
+WanDancerVideo 节点用于准备条件数据和一个空 latent 张量，以配合 WanDancer 模型进行视频生成。它接收正负条件，并可选地与起始图像、掩码、CLIP 视觉嵌入以及音频特征组合，从而控制生成的视频。
 
 ## 输入
 
-| 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
+| 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `正向` | 用于引导视频生成的正向 conditioning。 | CONDITIONING | 是 |  |
-| `负向` | 用于引导视频生成的负向 conditioning。 | CONDITIONING | 是 |  |
-| `vae` | 用于将起始图像编码到潜空间的 VAE。 | VAE | 是 |  |
-| `宽度` | 生成视频的宽度（像素），默认值：480。 | INT | 是 | 16 至 MAX_RESOLUTION（步长：16） |
-| `高度` | 生成视频的高度（像素），默认值：832。 | INT | 是 | 16 至 MAX_RESOLUTION（步长：16） |
-| `长度` | 生成视频的帧数。对于 WanDancer 应保持为 149（默认值：149）。 | INT | 是 | 1 至 MAX_RESOLUTION（步长：4） |
-| `clip视觉输出` | 第一帧的 CLIP 视觉嵌入。 | CLIP_VISION_OUTPUT | 否 |  |
-| `clip视觉参考输出` | 参考图像的 CLIP 视觉嵌入。 | CLIP_VISION_OUTPUT | 否 |  |
-| `起始图像` | 待编码的初始图像。可以是任意数量的帧，最多不超过指定的 `长度`。 | IMAGE | 否 |  |
-| `掩码` | 起始图像的 conditioning 遮罩。白色区域保留，黑色区域生成。用于局部生成。 | MASK | 否 |  |
-| `音频编码器输出` | 音频编码器的输出，提供音频特征、fps 和注入比例，用于音频条件生成。 | AUDIO_ENCODER_OUTPUT | 否 |  |
+| `positive` | 用于引导视频生成的正面条件。 | CONDITIONING | 是 |  |
+| `negative` | 用于引导视频生成的负面条件。 | CONDITIONING | 是 |  |
+| `vae` | 用于将起始图像编码到潜在空间的 VAE。 | VAE | 是 |  |
+| `width` | 生成视频的宽度（像素），默认值：480。 | INT | 是 | 16 到 MAX_RESOLUTION（步长：16） |
+| `height` | 生成视频的高度（像素），默认值：832。 | INT | 是 | 16 到 MAX_RESOLUTION（步长：16） |
+| `length` | 生成视频的帧数。对于 WanDancer 应保持为 149（默认值：149）。 | INT | 是 | 1 到 MAX_RESOLUTION（步长：4） |
+| `clip_vision_output` | 第一帧的 CLIP 视觉嵌入。 | CLIP_VISION_OUTPUT | 否 |  |
+| `clip_vision_output_ref` | 参考图像的 CLIP 视觉嵌入。 | CLIP_VISION_OUTPUT | 否 |  |
+| `start_image` | 要编码的初始图像，可以是任意数量的帧。 | IMAGE | 否 |  |
+| `mask` | 用于起始图像的图像条件掩码。白色区域保留，黑色区域生成。用于局部生成。 | MASK | 否 |  |
+| `audio_encoder_output` | 来自音频编码器的输出，提供音频特征、FPS 和音频注入比例，用于音频条件生成。 | AUDIO_ENCODER_OUTPUT | 否 |  |
 
-**参数约束说明：**
-- `start_image` 和 `mask` 输入为可选，但可同时使用。当提供 `start_image` 时，它会被编码并与潜空间张量拼接。如果同时提供 `mask`，则控制起始图像的哪些部分保留（白色）以及哪些部分重新生成（黑色）。如果未提供 `mask`，则整个起始图像区域将作为 conditioning 引导。
-- `clip_vision_output` 和 `clip_vision_output_ref` 输入为可选，可同时使用，为第一帧和参考图像提供视觉上下文。
-- `audio_encoder_output` 输入为可选，提供音频特征用于音频条件生成。
+**关于参数约束的说明：**
+- 当提供 `start_image` 时，它会被调整为 `width` × `height`，限制为 `length` 帧，并编码为一个 latent，该 latent 连同一个 concat 掩码一起附加到两个条件上。
+- `mask` 仅在同时提供 `start_image` 时生效。在掩码中，白色区域被保留，黑色区域被生成。当未提供 `mask` 时，起始图像区域作为条件引导，其余帧由模型生成。
+- `clip_vision_output_ref` 仅在提供 `clip_vision_output` 时应用。
+- `audio_encoder_output` 会将音频特征、FPS 和音频注入比例（默认 1.0）附加到两个条件上。
 
 ## 输出
 
-| 输出名称 | 描述 | 数据类型 |
+| 输出名 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `正向` | 附加了额外数据（拼接潜空间、CLIP 视觉、音频）的正向 conditioning。 | CONDITIONING |
-| `负向` | 附加了额外数据（拼接潜空间、CLIP 视觉、音频）的负向 conditioning。 | CONDITIONING |
-| `latent` | 维度与指定的视频长度、高度和宽度匹配的空潜空间张量。 | LATENT |
+| `positive` | 附加了额外数据（concat latent、CLIP 视觉、音频）的正面条件。 | CONDITIONING |
+| `negative` | 附加了额外数据（concat latent、CLIP 视觉、音频）的负面条件。 | CONDITIONING |
+| `latent` | 一个空 latent 张量，其维度与指定的视频长度、高度和宽度相匹配。 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerVideo/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `7ab1b4662eb8d780295ea3a3e3139c64d81e03a979a293a481f82deaf1fc2f7e`
+**Source fingerprint (SHA-256):** `086a0ec361cf7f7ae7ce9505b55d31d92b025c6c7c9cde192009e6664011ad05`

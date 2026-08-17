@@ -1,24 +1,26 @@
 # Görüntü Histogramı
 
-ImageHistogram düğümü, bir giriş görüntüsünün renk dağılımını analiz eder. Görüntüdeki her olası yoğunluk değerine sahip kaç piksel olduğunu gösteren grafikler olan birden fazla histogramı hesaplar ve çıktı olarak verir. Kırmızı, yeşil ve mavi renk kanalları için ayrı ayrı histogramlar, birleşik bir RGB histogramı ve standart bir parlaklık formülüne dayalı bir parlaklık histogramı oluşturur.
+The ImageHistogram node analyzes the color distribution of an input image. It calculates and outputs several histograms, which are graphs showing how many pixels in the image have each possible intensity value. It generates separate histograms for the red, green, and blue color channels, a composite RGB histogram, and a luminance histogram based on a standard brightness formula.
 
-## Girişler
+## Inputs
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `görüntü` | Analiz edilecek giriş görüntüsü. Düğüm, topluluktaki ilk görüntüyü işler. | IMAGE | Evet | Yok |
+| `image` | The input image to analyze. The node processes the first image in the batch. | IMAGE | Yes | N/A |
 
-## Çıkışlar
+## Outputs
 
-| Çıkış Adı | Açıklama | Veri Türü |
+All output histograms contain 256 values, one for each intensity level from 0 to 255.
+
+| Output Name | Description | Data Type |
 | --- | --- | --- |
-| `rgb` | Kırmızı, yeşil ve mavi kanallardaki ortalama piksel yoğunluğunu temsil eden birleşik bir histogram. | HISTOGRAM |
-| `luminance` | ITU-R BT.709 standart parlaklık formülü kullanılarak hesaplanan, görüntünün algılanan parlaklığının histogramı. | HISTOGRAM |
-| `red` | Kırmızı renk kanalındaki piksel yoğunluklarının dağılımını gösteren bir histogram. | HISTOGRAM |
-| `green` | Yeşil renk kanalındaki piksel yoğunluklarının dağılımını gösteren bir histogram. | HISTOGRAM |
-| `blue` | Mavi renk kanalındaki piksel yoğunluklarının dağılımını gösteren bir histogram. | HISTOGRAM |
+| `rgb` | A composite histogram representing the average pixel intensity across the red, green, and blue channels. | HISTOGRAM |
+| `luminance` | A histogram of the image's perceived brightness, calculated using the ITU-R BT.709 standard luminance formula. | HISTOGRAM |
+| `red` | A histogram showing the distribution of pixel intensities in the red color channel. | HISTOGRAM |
+| `green` | A histogram showing the distribution of pixel intensities in the green color channel. | HISTOGRAM |
+| `blue` | A histogram showing the distribution of pixel intensities in the blue color channel. | HISTOGRAM |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageHistogram/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `9bfcdb2907ab1e5cb2a9a736671fb9286b0e6ce6439fab95187f691b969ea53d`
+**Source fingerprint (SHA-256):** `5020f5cedd325250a207a00950011f4b6dc19ddfe4d172665ffca4982731dd5e`

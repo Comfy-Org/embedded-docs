@@ -1,26 +1,45 @@
 # Ses Kaydet (Gelişmiş)
 
-Giriş sesini ComfyUI çıktı dizininize kaydeder. Bu düğüm, FLAC, MP3 ve Opus dahil olmak üzere çeşitli formatlarda, yapılandırılabilir kalite ayarlarıyla ses dışa aktarmanıza olanak tanır.
+Ses Kaydet (Gelişmiş)
 
-## Girişler
+Girdi sesini ComfyUI çıktı dizininize kaydeder. Ses dosyalarını FLAC, MP3 veya Opus formatında dışa aktarabilir; MP3 ve Opus dosyaları için seçilebilir kalite ayarları sunar.
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+## Girdiler
+
+### Genel Girdiler
+
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `ses` | Kaydedilecek ses. | AUDIO | Evet | - |
-| `dosya_adı_ön_eki` | Kaydedilecek dosya için ön ek. %date:yyyy-MM-dd% gibi biçimlendirme belirteçleri içerebilir. (varsayılan: "audio/ComfyUI") | STRING | Evet | - |
-| `format` | Sesin kaydedileceği dosya biçimi. | COMBO | Evet | "flac"<br>"mp3"<br>"opus" |
+| `format` | Sesin kaydedileceği dosya biçimi. | DYNAMIC_COMBO | Evet | "flac"<br>"mp3"<br>"opus" |
+| `audio` | Kaydedilecek ses. | AUDIO | Evet | - |
+| `filename_prefix` | Kaydedilecek dosya için önek. %date:yyyy-MM-dd% gibi biçimlendirme belirteçleri içerebilir. (varsayılan: "audio/ComfyUI") | STRING | Evet | - |
 
-Biçim olarak "mp3" seçildiğinde, aşağıdaki seçeneklerle birlikte bir `quality` alt parametresi kullanılabilir hale gelir: "V0", "128k", "320k" (varsayılan: "V0").
+### flac Girdileri
 
-Biçim olarak "opus" seçildiğinde, aşağıdaki seçeneklerle birlikte bir `quality` alt parametresi kullanılabilir hale gelir: "64k", "96k", "128k", "192k", "320k" (varsayılan: "128k").
+`flac` biçimi ek ayar gerektirmez.
+
+### mp3 Girdileri
+
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `quality` | MP3 dosyaları için kodlama kalitesi. (varsayılan: "V0") | COMBO | Evet | "V0"<br>"128k"<br>"320k" |
+
+### opus Girdileri
+
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `quality` | Opus dosyaları için kodlama kalitesi. (varsayılan: "128k") | COMBO | Evet | "64k"<br>"96k"<br>"128k"<br>"192k"<br>"320k" |
+
+**Not:** `quality` ayarı yalnızca `format` `mp3` veya `opus` olduğunda gösterilir. Eğer `quality` değeri sağlanmazsa, ses seçilen biçimin varsayılan kalitesiyle kaydedilir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-|-----------|-------------|-----------|
-| `audio` | Kaydedilen ses dosyası bilgilerini içeren kullanıcı arayüzü çıktısı. | UI |
+|-------------|-------------|-----------|
+| `audio` | Girdi sesi, kaydedildikten sonra geçirilir. | AUDIO |
+| `ui` | Kaydedilen ses dosyası bilgilerini içeren UI çıktısı. | UI |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAudioAdvanced/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `98314263dd84c562e7c02ba89f3d10551fcb898ac784af2aa397ca8357e4aae8`
+**Source fingerprint (SHA-256):** `5f3af49670b485bbd31f0ed0c5667c12e9b9b23014cadcf64442a486255d0e6d`

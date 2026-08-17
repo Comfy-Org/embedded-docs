@@ -1,52 +1,24 @@
 # CLIPMetinKodlamaControlnet
 
-ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
-
-## Çeviri Kuralları
-
-1. **Çevrilmemesi gereken içerik:**
-   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
-   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
-   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
-   - Kod, dosya yolları
-
-2. **Çevrilmesi gereken içerik:**
-   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
-   - Tüm açıklayıcı metinler
-   - Parametre açıklamaları
-
-3. **Çeviri kalitesi:**
-   - Standart Türkçe kullanın
-   - Profesyonel ama anlaşılır bir üslup koruyun
-   - Teknik doğruluğu sağlayın
-   - Standart Türkçe teknik terminolojiyi kullanın
-
-4. **Format:**
-   - Tüm Markdown biçimlendirmesini koruyun
-   - Tablo yapısını koruyun
-   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
-
-Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
-
-CLIPTextEncodeControlnet düğümü, bir CLIP modeli kullanarak metin girdisini işler ve mevcut koşullandırma verileriyle birleştirerek controlnet uygulamaları için gelişmiş koşullandırma çıktısı oluşturur. Girdi metnini tokenleştirir, CLIP modeli aracılığıyla kodlar ve elde edilen gömme vektörlerini, çapraz dikkat controlnet parametreleri olarak sağlanan koşullandırma verilerine ekler.
+CLIPTextEncodeControlnet düğümü, metin girdisini bir CLIP modeli kullanarak işler ve mevcut koşullandırma verileriyle birleştirerek controlnet uygulamaları için gelişmiş koşullandırma çıktısı oluşturur. Girdi metnini tokenleştirir, CLIP modeli aracılığıyla kodlar ve elde edilen yerleştirmeleri, sağlanan koşullandırma verilerine çapraz dikkat controlnet parametreleri olarak ekler.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `clip` | Metin tokenleştirme ve kodlama için kullanılan CLIP modeli | CLIP | Evet | - |
-| `koşullandırma` | Controlnet parametreleriyle geliştirilecek mevcut koşullandırma verileri | CONDITIONING | Evet | - |
-| `metin` | CLIP modeli tarafından işlenecek metin girdisi. Çok satırlı metin ve dinamik istemleri destekler | STRING | Evet | - |
+| `conditioning` | Controlnet parametreleriyle geliştirilecek mevcut koşullandırma verileri | CONDITIONING | Evet | - |
+| `text` | CLIP modeli tarafından işlenecek metin girdisi. Çok satırlı metin ve dinamik promptları destekler | STRING | Evet | - |
 
-**Not:** Bu düğümün düzgün çalışması için üç girdinin de (`clip`, `conditioning` ve `text`) sağlanması gerekir. `text` girdisi, esnek metin işleme için dinamik istemleri ve çok satırlı metni destekler.
+**Not:** Bu düğümün düzgün çalışması için üç girdinin de (`clip`, `conditioning` ve `text`) sağlanması gerekir. `text` girdisi, esnek metin işleme için dinamik promptları ve çok satırlı metni destekler. Bu düğüm deneysel olarak işaretlenmiştir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `CONDITIONING` | CLIP metin kodlamasından türetilen ek controlnet çapraz dikkat parametreleri (`cross_attn_controlnet` ve `pooled_output_controlnet`) ile geliştirilmiş koşullandırma verileri | CONDITIONING |
+| `CONDITIONING` | CLIP metin kodlamasından türetilen, eklenmiş controlnet çapraz dikkat parametrelerini (`cross_attn_controlnet` ve `pooled_output_controlnet`) içeren gelişmiş koşullandırma verileri | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeControlnet/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `dd6f68d822cc38e27c826b634c938d62e07b075e18a0f46f80b462aecca0b70b`
+**Source fingerprint (SHA-256):** `95a798684ca8734bfff53c7b979b320f6834dc1a9553163d0e567243761000f1`

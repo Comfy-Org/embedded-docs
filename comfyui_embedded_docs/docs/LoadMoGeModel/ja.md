@@ -1,24 +1,24 @@
 # MoGeモデルの読み込み
 
-以下が翻訳結果です。
+以下是英语文档的日语翻译（不含免责声明）：
 
-## 概要
+---
 
-MoGe（単眼幾何学）モデルをファイルから読み込み、幾何学推定タスクで使用できるように準備します。このノードは、`geometry_estimation` フォルダからモデルファイルを読み込み、学習済みの重みで MoGe モデルを初期化します。
+ファイルからMoGe（単眼幾何学）モデルを読み込み、幾何学推定タスクで使用できるように準備します。このノードは、`geometry_estimation` フォルダからモデルファイルを読み取り、トレーニング済みの重みでMoGeモデルを初期化します。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `model_name` | 読み込む MoGe モデルファイルの名前です。ComfyUI インストール内の利用可能なモデルファイルから選択します。 | STRING | はい | `geometry_estimation` フォルダ内の利用可能なモデルファイルのリスト |
+| `model_name` | 読み込むMoGeモデルファイルの名前。ComfyUIインストールで利用可能なモデルファイルから選択します。 | COMBO | はい | `geometry_estimation` フォルダ内の利用可能なモデルファイルのリスト |
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `MOGE_MODEL` | 読み込まれた MoGe モデルインスタンス。幾何学推定ワークフローで使用できる状態です。 | MOGE_MODEL |
+| `MOGE_MODEL` | 幾何学推定ワークフローで使用できる、読み込まれたMoGeモデルインスタンス。 | MOGE_MODEL |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadMoGeModel/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `4707002565181ca17936ecf87ea8059630c97c44c17facfecd04053d9581b7d1`
+**Source fingerprint (SHA-256):** `b5b55f94d3762852d5a1480c0b00d15da4e534adbeb544bf7c47da012e5a6353`

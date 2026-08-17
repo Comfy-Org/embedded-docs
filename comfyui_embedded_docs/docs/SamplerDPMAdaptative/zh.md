@@ -1,10 +1,10 @@
 # DPMAdaptative采样器
 
-SamplerDPMAdaptative 节点实现了一种自适应 DPM（扩散概率模型）采样器，可在采样过程中自动调整步长。它使用基于容差的误差控制来确定最优步长，从而在计算效率与采样精度之间取得平衡。这种自适应方法有助于在保持质量的同时，可能减少所需的步数。
+SamplerDPMAdaptative 节点实现了一种自适应 DPM（扩散概率模型）采样器，可在采样过程中自动调整步长。它使用基于容差的误差控制来确定最佳步长，从而在计算效率与采样精度之间取得平衡。这种自适应方法有助于在保持质量的同时，潜在地减少所需的步数。
 
 ## 输入
 
-| 参数 | 描述 | 数据类型 | 是否必填 | 取值范围 |
+| 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
 | --- | --- | --- | --- | --- |
 | `order` | 采样器方法的阶数（默认值：3） | INT | 是 | 2-3 |
 | `rtol` | 误差控制的相对容差（默认值：0.05） | FLOAT | 是 | 0.0-100.0 |
@@ -26,4 +26,4 @@ SamplerDPMAdaptative 节点实现了一种自适应 DPM（扩散概率模型）�
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerDPMAdaptative/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `2815ba8c3325d3d099de685edc99e9ff8e90736c1f4bd0188165969179cb99fa`
+**Source fingerprint (SHA-256):** `07b2e5b9f21ec101eabccc6be245d043e64a996a14db10434b03eaae0a91b1d8`

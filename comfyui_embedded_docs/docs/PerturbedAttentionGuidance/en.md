@@ -7,7 +7,7 @@ The PerturbedAttentionGuidance node applies perturbed attention guidance to a di
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `model` | The diffusion model to apply perturbed attention guidance to | MODEL | Yes | - |
-| `scale` | The strength of the perturbed attention guidance effect (default: 3.0). When set to 0, the node has no effect and returns the original denoised result. | FLOAT | No | 0.0 - 100.0 |
+| `scale` | The strength of the perturbed attention guidance effect (default: 3.0). When set to 0, the node has no effect and returns the original denoised result. | FLOAT | Yes | 0.0 - 100.0 |
 
 ## Outputs
 
@@ -18,4 +18,4 @@ The PerturbedAttentionGuidance node applies perturbed attention guidance to a di
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PerturbedAttentionGuidance/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `b4bcb5e8a0bf990d36d2865c58e6fbf3c9cee9d446f5aced987ddd04387d2b4c`
+**Source fingerprint (SHA-256):** `1cf824486ae695a9e563c70a4798aaf4c9c067ae3b53172c9767e3c5093d0096`

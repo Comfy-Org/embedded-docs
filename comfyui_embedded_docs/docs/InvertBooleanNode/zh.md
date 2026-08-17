@@ -4,17 +4,17 @@
 
 ## 输入
 
-| 参数 | 描述 | 数据类型 | 是否必填 | 取值范围 |
+| 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `boolean` | 需要取反的输入布尔值。 | BOOLEAN | 是 | `true`<br>`false` |
+| `boolean` | 要取反的输入布尔值。 | BOOLEAN | 是 | `true`<br>`false` |
 
 ## 输出
 
-| 输出名称 | 描述 | 数据类型 |
+| 输出名 | 描述 | 数据类型 |
 | --- | --- | --- |
 | `output` | 取反后的布尔值。 | BOOLEAN |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InvertBooleanNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `7c927252a80f42836af6ef16f76714e6892454733d698674b547bd65ddb9d607`
+**Source fingerprint (SHA-256):** `7e28bb375a25249bc237870bf281321375c4be7b7782b217b3e0f70afc2e0c53`

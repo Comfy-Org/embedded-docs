@@ -20,6 +20,8 @@ The Runway First-Last-Frame to Video node generates videos by uploading first an
 - Both `start_frame` and `end_frame` must have aspect ratios between 0.5 and 2.0
 - The `end_frame` parameter is only supported when using the gen3a_turbo model
 
+**Note:** This node is marked as deprecated. Review Runway's best practices for creating with keyframes on Gen-3 before use: https://help.runwayml.com/hc/en-us/articles/34170748696595-Creating-with-Keyframes-on-Gen-3
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -29,4 +31,4 @@ The Runway First-Last-Frame to Video node generates videos by uploading first an
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayFirstLastFrameNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `469814fa2ac6d3fb539a4e4fb8a7e952c610f715816c7179a0c918edd47051eb`
+**Source fingerprint (SHA-256):** `1d8720aba833348583d2aa37e13a1ad43d9055b0201c9cb6ad9c95dada7e5056`

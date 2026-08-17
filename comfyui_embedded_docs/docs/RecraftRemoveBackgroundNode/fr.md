@@ -5,17 +5,17 @@ Ce nœud supprime l'arrière-plan des images à l'aide du service API Recraft. I
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
-| --- | --- | --- | --- | --- |
+|-----------|-------------|-----------------|--------|-------|
 | `image` | Image(s) d'entrée à traiter pour la suppression d'arrière-plan | IMAGE | Oui | - |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
-| --- | --- | --- |
-| `image` | Images traitées avec des arrière-plans transparents | IMAGE |
+|---------------|-------------|-----------------|
+| `image` | Images traitées avec arrière-plans transparents | IMAGE |
 | `mask` | Masques de canal alpha indiquant les zones d'arrière-plan supprimées | MASK |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftRemoveBackgroundNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `9e3f1a0471da3afda6b8de26de3b7e78c1070c49ab49e4fc8b6b79bb10ff77de`
+**Source fingerprint (SHA-256):** `702dfdf2751d5ca33f23e10c0968496887514a21da7a0c42e3636a0ed4e82311`

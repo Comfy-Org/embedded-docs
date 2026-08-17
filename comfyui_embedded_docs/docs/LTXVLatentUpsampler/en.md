@@ -14,9 +14,11 @@ The LTXVLatentUpsampler node increases the spatial resolution of a video latent 
 
 | Output Name | Description | Data Type |
 | --- | --- | --- |
-| `LATENT` | The upscaled latent representation, with spatial dimensions doubled compared to the input. The output latent has the same batch size, number of channels, and temporal length as the input. The `noise_mask` from the input, if present, is removed from the output. | LATENT |
+| `LATENT` | The upscaled latent representation, with spatial dimensions doubled compared to the input. The output latent has the same batch size, number of channels, and temporal length as the input, and is converted back to the same data type as the input latents. The `noise_mask` from the input, if present, is removed from the output. | LATENT |
+
+Note: This node is marked as experimental.
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVLatentUpsampler/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `b2c726d3a3e4881eee7e1d3bae8c478adf01cd87a9652be882579f4e26c1536f`
+**Source fingerprint (SHA-256):** `7d7f0b733cb3758e9ec985cac30134d719b130b5b86c35bfdd14576a5b4575db`

@@ -1,23 +1,27 @@
 # 空Latent视频（Cosmos）
 
-EmptyCosmosLatentVideo 节点用于创建具有指定维度的空潜在视频张量。它会生成一个填充为零的潜在表示，可作为视频生成工作流的起点，并支持可配置的宽度、高度、长度和批次大小参数。
+The EmptyCosmosLatentVideo node creates an empty latent video tensor with specified dimensions. It generates a zero-filled latent representation that can be used as a starting point for video generation workflows, with configurable width, height, length, and batch size parameters. The spatial dimensions of the latent are downsampled by a factor of 8.
+
+EmptyCosmosLatentVideo 节点创建一个具有指定维度的空潜在视频张量。它生成一个零填充的潜在表示，可作为视频生成工作流的起始点，具有可配置的宽度、高度、长度和批量大小参数。潜在空间的空间维度按 8 倍下采样。
 
 ## 输入
-
-| 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
+| Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `宽度` | 潜在视频的宽度（像素），默认值：1280，必须能被 16 整除 | INT | 是 | 16 至 MAX_RESOLUTION |
-| `高度` | 潜在视频的高度（像素），默认值：704，必须能被 16 整除 | INT | 是 | 16 至 MAX_RESOLUTION |
-| `长度` | 潜在视频的帧数，默认值：121，必须能被 8 整除 | INT | 是 | 1 至 MAX_RESOLUTION |
-| `批量大小` | 每批次生成的潜在视频数量，默认值：1 | INT | 否 | 1 至 4096 |
+| `width` | The width of the latent video in pixels (default: 1280, must be divisible by 16) | INT | Yes | 16 to MAX_RESOLUTION |
+| `height` | The height of the latent video in pixels (default: 704, must be divisible by 16) | INT | Yes | 16 to MAX_RESOLUTION |
+| `length` | The number of frames in the latent video (default: 121, must be divisible by 8) | INT | Yes | 1 to MAX_RESOLUTION |
+| `batch_size` | The number of latent videos to generate in a batch (default: 1) | INT | Yes | 1 to 4096 |
+
+The latent tensor uses 16 channels. Spatial dimensions are divided by 8 compared to the pixel dimensions (height // 8, width // 8), and the frame count is compressed to ((length - 1) // 8) + 1 latent frames.
+
+潜在张量使用 16 个通道。与像素尺寸相比，空间维度除以 8（`height // 8`、`width // 8`），帧数压缩为 `((length - 1) // 8) + 1` 个潜在帧。
 
 ## 输出
-
-| 输出名称 | 描述 | 数据类型 |
+| Output Name | Description | Data Type |
 | --- | --- | --- |
-| `samples` | 生成的值为零的空潜在视频张量 | LATENT |
+| `samples` | The generated empty latent video tensor with zero values. Shape: (batch_size, 16, ((length - 1) // 8) + 1, height // 8, width // 8) | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyCosmosLatentVideo/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `f473820af3faf7cb6992ff1959089801e333df395b4007abeb9b504962bfc73b`
+**Source fingerprint (SHA-256):** `7ee194324b02367ed853f6d36bc51742081bac6a9469c4a619586e0560a1b33b`

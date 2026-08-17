@@ -6,7 +6,7 @@ The EmptyLatentAudio node creates an empty latent tensor for audio processing. I
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `seconds` | The duration of the audio in seconds (default: 47.6) | FLOAT | Yes | 1.0 - 1000.0 |
+| `seconds` | The duration of the audio in seconds (default: 47.6) | FLOAT | Yes | 1.0 - 1000.0 (step 0.1) |
 | `batch_size` | The number of latent images in the batch (default: 1) | INT | Yes | 1 - 4096 |
 
 ## Outputs
@@ -18,4 +18,4 @@ The EmptyLatentAudio node creates an empty latent tensor for audio processing. I
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyLatentAudio/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `02d7623358a6cc8200e74ab36f6a83bcfa059abd6ef91e3fd1c3732706926033`
+**Source fingerprint (SHA-256):** `6ca63d26febe2d87ff751a57044eb81b553b19756f4b3f9478ecb5a733ec0041`

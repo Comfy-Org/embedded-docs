@@ -1,6 +1,6 @@
 # WanCameraImageToVideo
 
-The WanCameraImageToVideo node prepares conditioning and latent data for video generation from images. It takes positive and negative conditioning prompts, along with optional starting images and camera controls, and outputs modified conditioning and an empty latent tensor ready for a video model to fill in.
+WanCameraImageToVideo prepares conditioning and latent data for video generation from images. It takes positive and negative conditioning prompts, along with optional starting images and camera controls, and outputs modified conditioning and an empty latent tensor ready for a video model to fill in.
 
 ## Inputs
 
@@ -30,4 +30,4 @@ The WanCameraImageToVideo node prepares conditioning and latent data for video g
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraImageToVideo/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `e2309b40f78d5a2487242f1684f82d9e4dd8405ef256615f82da2f701418fd4a`
+**Source fingerprint (SHA-256):** `467a82be0dfd6ac1c3b2dd2a6cb02e0d0749de4536a7fbdb000456b817b20ebb`

@@ -1,22 +1,24 @@
 # Load Diffusers Model (DEPRECATED)
 
-The DiffusersLoader node loads pre-trained models from the diffusers format. It searches for valid diffusers model directories containing a `model_index.json` file and loads them as MODEL, CLIP, and VAE components for use in the pipeline. This node is part of the deprecated loaders category and provides compatibility with Hugging Face diffusers models.
+The DiffusersLoader node is deprecated. It loads pre-trained models saved in the Hugging Face diffusers format and returns the three standard components needed by the pipeline: MODEL, CLIP, and VAE. The node automatically scans the configured diffusers folders for valid model directories (folders containing a `model_index.json` file) and lets you choose which one to load.
 
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-| --- | --- | --- | --- | --- |
-| `model_path` | The path to the diffusers model directory to load. The node automatically scans for valid diffusers models in the configured diffusers folders and lists available options. | STRING | Yes | Multiple options available<br>(auto-populated from diffusers folders) |
+|-----------|-------------|-----------|----------|-------|
+| `model_path` | The path to the diffusers model directory to load. The node scans the configured diffusers folders and lists every directory that contains a `model_index.json` file. | COMBO | Yes | Auto-populated from the configured diffusers folders (every subdirectory containing a `model_index.json` file) |
+
+Note: the selected path is validated against the list of discovered models. Loading fails with an error if the path is no longer in the list or if the model directory cannot be found.
 
 ## Outputs
 
 | Output Name | Description | Data Type |
-| --- | --- | --- |
+|-------------|-------------|-----------|
 | `MODEL` | The loaded model component from the diffusers format | MODEL |
-| `CLIP` | The loaded CLIP model component from the diffusers format | CLIP |
+| `CLIP` | The loaded CLIP text-encoding model component from the diffusers format | CLIP |
 | `VAE` | The loaded VAE (Variational Autoencoder) component from the diffusers format | VAE |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DiffusersLoader/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `59be9923ed76d4859d5f7217a802c43297cb5af3d895eb6713edea97a32c3db2`
+**Source fingerprint (SHA-256):** `75238342d05eac7528f981a2d4544accb6053891cd078a77751cc838054225d4`

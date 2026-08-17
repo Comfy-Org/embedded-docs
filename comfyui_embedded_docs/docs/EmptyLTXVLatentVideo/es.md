@@ -1,23 +1,23 @@
 # EmptyLTXVLatentVideo
 
-El nodo EmptyLTXVLatentVideo crea un tensor latente vacío para procesamiento de video. Genera un punto de partida en blanco con dimensiones específicas que puede utilizarse como entrada para flujos de trabajo de generación de video. El nodo produce una representación latente rellena de ceros con el ancho, alto, duración y tamaño de lote configurados.
+El nodo EmptyLTXVLatentVideo crea un tensor latente vacío para la generación de videos. Produce una representación latente rellena de ceros con el ancho, alto, longitud y tamaño de lote especificados, lista para usarse como punto de partida en flujos de trabajo de video LTXV. El latente almacena el video en una forma comprimida: las dimensiones espaciales se dividen entre 32 y el recuento de fotogramas se reduce por un factor de 8.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `ancho` | El ancho del tensor latente de video (predeterminado: 768, incremento: 32) | INT | Sí | 64 a MAX_RESOLUTION |
-| `altura` | La altura del tensor latente de video (predeterminado: 512, incremento: 32) | INT | Sí | 64 a MAX_RESOLUTION |
-| `longitud` | El número de fotogramas en el video latente (predeterminado: 97, incremento: 8) | INT | Sí | 1 a MAX_RESOLUTION |
-| `tamaño_del_lote` | La cantidad de videos latentes a generar en un lote (predeterminado: 1) | INT | No | 1 a 4096 |
+| `width` | El ancho del video latente en píxeles (predeterminado: 768, paso: 32) | INT | Sí | 64 to MAX_RESOLUTION |
+| `height` | La altura del video latente en píxeles (predeterminado: 512, paso: 32) | INT | Sí | 64 to MAX_RESOLUTION |
+| `length` | El número de fotogramas del video latente (predeterminado: 97, paso: 8) | INT | Sí | 1 to MAX_RESOLUTION |
+| `batch_size` | El número de videos latentes a generar en un lote (predeterminado: 1) | INT | No | 1 to 4096 |
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `samples` | El tensor latente vacío generado con valores cero en las dimensiones especificadas | LATENT |
+| `samples` | El tensor latente vacío generado, relleno de ceros. El latente también lleva un valor `downscale_ratio_spacial` de 32, que describe la reducción de escala espacial aplicada al ancho y a la altura. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyLTXVLatentVideo/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `c3ee9374210e100a074b238ce7ac8b5d2d2d415efd3318c9a6a7c8f7e20bda84`
+**Source fingerprint (SHA-256):** `0b1e57baf9730d852b03b6bccbb8a033e2be9b9cd2420a0aa3638c31f6d3cd26`

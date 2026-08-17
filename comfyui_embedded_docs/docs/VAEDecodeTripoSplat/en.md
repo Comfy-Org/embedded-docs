@@ -7,7 +7,7 @@ Decode a TripoSplat latent representation into a 3D gaussian splat. This node ta
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `samples` | The latent samples to decode | LATENT | Yes | - |
-| `vae` | TripoSplat VAE decoder model | VAE | Yes | - |
+| `vae` | TripoSplat VAE decoder | VAE | Yes | - |
 | `num_gaussians` | Number of gaussians to produce (rounded to a multiple of 32). 262144 matches the octree's point density; higher oversamples the same points (denser, but no new detail) and costs proportionally more VRAM/time. Default: 262144 | INT | Yes | 32 to 1048576 (step: 32) |
 | `seed` | Seeds the octree point sampler (global RNG) for deterministic decodes. Default: 0 | INT | Yes | 0 to 18446744073709551615 |
 
@@ -22,4 +22,4 @@ Decode a TripoSplat latent representation into a 3D gaussian splat. This node ta
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecodeTripoSplat/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `60fff70ade38bc820eaea9db26b714daf84a111fb3563477f56f4e8ffa96ff5b`
+**Source fingerprint (SHA-256):** `5c2b21cee31c68a6440ab4c7156e0d5c041ce7264f6467a508dc41e2eb0dc598`

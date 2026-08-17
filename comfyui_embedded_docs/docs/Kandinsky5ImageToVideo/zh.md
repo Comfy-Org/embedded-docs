@@ -1,32 +1,32 @@
 # 图像到视频（Kandinsky5）
 
-Kandinsky5ImageToVideo 节点用于准备 Kandinsky 模型视频生成所需的 conditioning 和潜在空间数据。它会创建一个空的视频潜在张量，并可选择对起始图像进行编码，以引导生成视频的初始帧，同时相应地修改正向和负向 conditioning。
+Kandinsky5ImageToVideo 节点使用 Kandinsky 模型为视频生成准备 conditioning 和潜在空间数据。它创建一个空的视频潜在张量，并可选地编码起始图像以引导生成视频的初始帧，相应地修改 positive 和 negative conditioning。
 
 ## 输入
 
-| 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
+| 参数 | 描述 | 数据类型 | 必需 | 范围 |
 | --- | --- | --- | --- | --- |
-| `正面条件` | 引导视频生成的正向 conditioning 提示。 | CONDITIONING | 是 | 不适用 |
-| `负面条件` | 引导视频生成避开特定概念的正向 conditioning 提示。 | CONDITIONING | 是 | 不适用 |
-| `vae` | 用于将可选的起始图像编码到潜在空间的 VAE 模型。 | VAE | 是 | 不适用 |
-| `宽度` | 输出视频的宽度（像素），默认值：768。 | INT | 否 | 16 至 8192（步长 16） |
-| `高度  ` | 输出视频的高度（像素），默认值：512。 | INT | 否 | 16 至 8192（步长 16） |
-| `时长` | 视频的帧数，默认值：121。 | INT | 否 | 1 至 8192（步长 4） |
-| `批次大小` | 同时生成的视频序列数量，默认值：1。 | INT | 否 | 1 至 4096 |
-| `初始图象` | 可选的起始图像。如果提供，该图像将被编码，并用于替换模型输出潜在变量中的噪声起始部分。 | IMAGE | 否 | 不适用 |
+| `positive` | 引导视频生成的正面 conditioning 提示。 | CONDITIONING | 是 | N/A |
+| `negative` | 引导视频生成远离某些概念的负面 conditioning 提示。 | CONDITIONING | 是 | N/A |
+| `vae` | 用于将可选的起始图像编码到潜在空间中的 VAE 模型。 | VAE | 是 | N/A |
+| `width` | 输出视频的宽度（像素）（默认值：768）。 | INT | 是 | 16 到 8192（步长 16） |
+| `height` | 输出视频的高度（像素）（默认值：512）。 | INT | 是 | 16 到 8192（步长 16） |
+| `length` | 视频中的帧数（默认值：121）。 | INT | 是 | 1 到 8192（步长 4） |
+| `batch_size` | 同时生成的视频序列数量（默认值：1）。 | INT | 是 | 1 到 4096 |
+| `start_image` | 可选的起始图像。如果提供，则将其编码并用于替换模型输出潜在张量中的噪声起始部分。 | IMAGE | 否 | N/A |
 
-**注意：** 当提供了 `start_image` 时，它会自动通过双线性插值调整大小，以匹配指定的 `width` 和 `height`。图像批次中的前 `length` 帧将用于编码。编码后的潜在变量随后会被注入到 `positive` 和 `negative` conditioning 中，以引导视频的初始外观。
+**注意：** 当提供 `start_image` 时，它会使用双线性插值调整为指定的 `width` 和 `height`。仅使用图像的前 `length` 帧进行编码。随后，编码后的潜在张量会与一个标记起始帧的掩码一起注入到 `positive` 和 `negative` conditioning 中，从而用干净的编码图像替换生成视频的噪声起始段。
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `正面条件` | 修改后的正向 conditioning，可能已更新编码后的起始图像数据。 | CONDITIONING |
-| `负面条件` | 修改后的负向 conditioning，可能已更新编码后的起始图像数据。 | CONDITIONING |
-| `Latent` | 一个填充为零的空视频潜在张量，其形状符合指定的尺寸。 | LATENT |
-| `条件Latent` | 所提供的起始图像的干净、编码后的潜在表示。内部使用此数据来替换生成视频潜在变量中带噪声的起始部分。 | LATENT |
+| `positive` | 修改后的正面 conditioning，可能已更新为包含编码后的起始图像数据。 | CONDITIONING |
+| `negative` | 修改后的负面 conditioning，可能已更新为包含编码后的起始图像数据。 | CONDITIONING |
+| `latent` | 一个用零填充的空视频潜在张量，其形状根据指定的 `batch_size`、`length`、`height` 和 `width` 确定。 | LATENT |
+| `cond_latent` | 所提供起始图像的干净编码潜在表示。用于替换模型输出潜在张量中的噪声起始部分。当未提供 `start_image` 时为空。 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Kandinsky5ImageToVideo/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `19d3b60be18f5adcd659563329988bce2511a1b27b33fd0ab3a9d93e265557f2`
+**Source fingerprint (SHA-256):** `7212f0ea912578d3b72dddf1333a20054a881e3f22c2b8abd9645fc21e75a08b`

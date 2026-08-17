@@ -1,6 +1,6 @@
 # Save LoRA Weights
 
-The SaveLoRA node saves a LoRA (Low-Rank Adaptation) model to a file. It takes a LoRA model as input and writes it to a `.safetensors` file in the output directory. You can specify a filename prefix and an optional step count to be included in the final filename.
+The SaveLoRA node saves a LoRA (Low-Rank Adaptation) model to a file. It writes the LoRA model as a `.safetensors` file in the output directory. You can specify a filename prefix and an optional step count; when provided, the step count is included in the saved file name.
 
 ## Inputs
 
@@ -21,4 +21,4 @@ The SaveLoRA node saves a LoRA (Low-Rank Adaptation) model to a file. It takes a
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLoRA/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `0d9bb1adef75214e3ecf5a16f046761d547d21bea41488b0ce80cdc05ed2e81b`
+**Source fingerprint (SHA-256):** `02f1d15dd7a5181666f2dbf06c45c07b12c4a178985464e07b5f613bd628f906`

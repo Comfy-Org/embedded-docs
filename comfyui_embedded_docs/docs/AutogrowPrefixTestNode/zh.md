@@ -1,16 +1,14 @@
 # AutogrowPrefixTestNode
 
-此文档由 AI 生成。如发现任何错误或有改进建议，欢迎随时贡献！[在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AutogrowPrefixTestNode/en.md)
-
-AutogrowPrefixTestNode 是一个逻辑节点，用于测试输入自动增长功能。它接受动态数量的浮点数输入，将其值合并为逗号分隔的字符串，并输出该字符串。
+AutogrowPrefixTestNode 是一个逻辑节点，用于测试自动扩展输入功能。它接受动态数量的浮点数输入，将其值组合成逗号分隔的字符串，并输出该字符串。
 
 ## 输入
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `autogrow` | 一个动态输入组，可接受 1 到 10 个浮点数值。组中的每个输入均为 FLOAT 类型，最小值 1，最大值 10。 | AUTOGROW | 是 | 1 至 10 个输入 |
+| `autogrow` | 一个接受浮点数值的动态输入组。该组可包含 1 到 10 个浮点数输入，节点会处理所有提供的值。 | FLOAT | 是 | 1 to 10 inputs |
 
-**注意：** `autogrow` 输入是一种特殊的动态输入。您可以向此组添加多个浮点输入，最多 10 个。节点将处理所有提供的值。每个单独的浮点输入被限制在 1 到 10 的范围内。
+**注意：** `autogrow` 输入是一种特殊的动态输入，可以扩展以添加更多浮点数输入，最多 10 个。最少为 1 个输入。此节点中的 `min` 和 `max` 值定义的是该输入组允许的输入数量范围，而不是每个浮点数值的范围。
 
 ## 输出
 
@@ -21,4 +19,4 @@ AutogrowPrefixTestNode 是一个逻辑节点，用于测试输入自动增长功
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AutogrowPrefixTestNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `7ae65365f77399a2ad8358b5a1eab3f2caa39331e53dec474cdd7f2751bfff4b`
+**Source fingerprint (SHA-256):** `9b815f59961a4c661815f44b9c78e15e9084db1e4be89d502b9d92438f18e70b`

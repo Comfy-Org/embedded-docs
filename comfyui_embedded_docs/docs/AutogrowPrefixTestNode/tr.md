@@ -1,23 +1,22 @@
 # AutogrowPrefixTestNode
 
-## Genel Bakış  
-AutogrowPrefixTestNode, otomatik büyüme giriş özelliğini test etmek için tasarlanmış bir mantık düğümüdür. Dinamik sayıda float girişi kabul eder, bu değerleri virgülle ayrılmış bir dize halinde birleştirir ve bu dizeyi çıktı olarak verir.
+AutogrowPrefixTestNode, otomatik büyüyen girdi (autogrow) özelliğini test etmek için tasarlanmış bir mantık düğümüdür. Dinamik sayıda float girdisi kabul eder, bu değerleri virgülle ayrılmış bir dize hâlinde birleştirir ve bu dizeyi çıktı olarak verir.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `autogrow` | 1 ile 10 arasında float değeri kabul edebilen dinamik bir giriş grubu. Gruptaki her giriş, minimum değeri 1 ve maksimum değeri 10 olan FLOAT türündedir. | AUTOGROW | Evet | 1 ila 10 giriş |
+| `autogrow` | Float değerleri kabul eden dinamik bir girdi grubudur. Grup, 1 ile 10 arasında float girdisi tutabilir ve düğüm, sağlanan tüm değerleri işler. | FLOAT | Evet | 1 ila 10 girdi |
 
-**Not:** `autogrow` girişi özel bir dinamik giriştir. Bu gruba en fazla 10 adede kadar birden fazla float girişi ekleyebilirsiniz. Düğüm, sağlanan tüm değerleri işleyecektir. Her bir float girişi 1 ila 10 aralığıyla sınırlıdır.
+**Not:** `autogrow` girdisi, en fazla 10 float girdisi eklemek için genişletilebilen özel bir dinamik girdidir. Minimum 1 girdidir. Bu düğümdeki `min` ve `max` değerleri, grupta izin verilen girdi sayısını tanımlar; her bir float değerinin değer aralığını değil.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | Tüm giriş float değerlerini virgülle ayırarak içeren tek bir dize. | STRING |
+| `output` | Tüm girdi float değerlerini virgülle ayrılmış olarak içeren tek bir dize. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AutogrowPrefixTestNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `7ae65365f77399a2ad8358b5a1eab3f2caa39331e53dec474cdd7f2751bfff4b`
+**Source fingerprint (SHA-256):** `9b815f59961a4c661815f44b9c78e15e9084db1e4be89d502b9d92438f18e70b`

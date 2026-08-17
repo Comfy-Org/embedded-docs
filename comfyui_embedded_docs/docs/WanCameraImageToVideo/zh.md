@@ -1,33 +1,31 @@
 # 万相机图像转视频
 
-WanCameraImageToVideo 节点通过生成用于视频生成的潜在表示，将图像转换为视频序列。它处理条件化输入和可选的起始图像，以创建可用于视频模型的视频潜在表示。该节点支持相机条件和剪辑视觉输出，以增强视频生成控制。
+WanCameraImageToVideo 根据图像准备用于视频生成的条件数据和潜空间数据。它接收正向和负向条件提示，以及可选的起始图像和相机控制，并输出修改后的条件数据和一个空的潜空间张量，供视频模型填充。
 
 ## 输入
-
-| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
+| 参数 | 说明 | 数据类型 | 必需 | 范围 |
 | --- | --- | --- | --- | --- |
-| `正面提示词` | 用于视频生成的正面条件化提示 | CONDITIONING | 是 | - |
-| `负面提示词` | 视频生成中需避免的负面条件化提示 | CONDITIONING | 是 | - |
-| `VAE` | 用于将图像编码到潜在空间的 VAE 模型 | VAE | 是 | - |
-| `宽度` | 输出视频宽度（像素）（默认值：832，步长：16） | INT | 是 | 16 至 MAX_RESOLUTION |
-| `高度` | 输出视频高度（像素）（默认值：480，步长：16） | INT | 是 | 16 至 MAX_RESOLUTION |
-| `长度` | 视频序列中的帧数（默认值：81，步长：4） | INT | 是 | 1 至 MAX_RESOLUTION |
-| `批次大小` | 同时生成的视频数量（默认值：1） | INT | 是 | 1 至 4096 |
-| `CLIP视觉输出` | 可选的 CLIP 视觉输出，用于额外的条件化 | CLIP_VISION_OUTPUT | 否 | - |
-| `起始图像` | 可选的起始图像，用于初始化视频序列。提供时，视频的前几帧将基于此图像，并应用遮罩将起始帧与生成内容混合。图像会被调整大小以匹配指定的宽度和高度。 | IMAGE | 否 | - |
-| `相机条件` | 可选的相机嵌入条件，用于视频生成。提供时，这些条件会同时应用于正面和负面条件化。 | WAN_CAMERA_EMBEDDING | 否 | - |
+| `positive` | 用于视频生成的正向条件提示 | CONDITIONING | 是 | - |
+| `negative` | 要在视频生成中避免的负向条件提示 | CONDITIONING | 是 | - |
+| `vae` | 用于将图像编码到潜空间的 VAE 模型 | VAE | 是 | - |
+| `width` | 输出视频宽度（像素）（默认值：832，步长：16） | INT | 是 | 16 to MAX_RESOLUTION |
+| `height` | 输出视频高度（像素）（默认值：480，步长：16） | INT | 是 | 16 to MAX_RESOLUTION |
+| `length` | 视频序列中的帧数（默认值：81，步长：4） | INT | 是 | 1 to MAX_RESOLUTION |
+| `batch_size` | 同时生成的视频数量（默认值：1） | INT | 是 | 1 to 4096 |
+| `clip_vision_output` | 可选的 CLIP 视觉输出，用于附加条件化 | CLIP_VISION_OUTPUT | 否 | - |
+| `start_image` | 用于初始化视频序列的可选起始图像。提供后，视频的前几帧将基于此图像，并应用蒙版将起始帧与生成内容混合。图像会被调整大小以匹配指定的宽度和高度。 | IMAGE | 否 | - |
+| `camera_conditions` | 用于视频生成的可选相机嵌入条件。提供后，这些条件将同时应用于正向和负向条件数据。 | WAN_CAMERA_EMBEDDING | 否 | - |
 
-**注意：** 当提供 `start_image` 时，节点会使用它来初始化视频序列，并应用遮罩将起始帧与生成内容混合。`camera_conditions` 和 `clip_vision_output` 参数是可选的，但提供时，它们会修改正面和负面提示的条件化。
+**注意：** 当提供 `start_image` 时，节点会使用它来初始化视频序列，并应用蒙版将起始帧与生成内容混合。`camera_conditions` 和 `clip_vision_output` 参数是可选的，但提供后会同时修改正向和负向提示的条件数据。
 
 ## 输出
-
-| 输出名称 | 描述 | 数据类型 |
+| 输出名称 | 说明 | 数据类型 |
 | --- | --- | --- |
-| `正面提示词` | 应用了相机条件和剪辑视觉输出后的修改版正面条件化 | CONDITIONING |
-| `负面提示词` | 应用了相机条件和剪辑视觉输出后的修改版负面条件化 | CONDITIONING |
-| `潜空间` | 生成的视频潜在表示，用于视频模型。潜在张量的维度为 [batch_size, 16, frames, height/8, width/8]，其中 frames 的计算方式为 ((length - 1) // 4) + 1。 | LATENT |
+| `positive` | 已应用相机条件、CLIP 视觉输出和/或起始图像数据的修改后正向条件数据 | CONDITIONING |
+| `negative` | 已应用相机条件、CLIP 视觉输出和/或起始图像数据的修改后负向条件数据 | CONDITIONING |
+| `latent` | 生成供视频模型使用的空视频潜空间表示。潜空间张量的维度为 [batch_size, 16, frames, height/8, width/8]，其中 frames 按 ((length - 1) // 4) + 1 计算。 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraImageToVideo/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `19d76097d580b14663afd0aab58810f9dc1685cd32e8f67aa43c820be65239e7`
+**Source fingerprint (SHA-256):** `467a82be0dfd6ac1c3b2dd2a6cb02e0d0749de4536a7fbdb000456b817b20ebb`

@@ -1,21 +1,23 @@
 # BileşimControlNetTürüAyarla
 
-SetUnionControlNetType düğümü, koşullandırma için kullanılacak kontrol ağının türünü belirlemenizi sağlar. Mevcut bir kontrol ağını alır ve seçiminize göre kontrol türünü ayarlayarak, belirtilen tür yapılandırmasına sahip değiştirilmiş bir kopyasını oluşturur.
+SetUnionControlTypeNode, koşullandırma için kullanılan bir kontrol ağının kontrol türünü ayarlamanızı sağlar. Mevcut bir kontrol ağını alır, bunun değiştirilmiş bir kopyasını oluşturur ve seçilen kontrol türünü bu kopyada saklar; böylece orijinal değişmeden kalır.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `kontrol_ağı` | Yeni bir tür ayarıyla değiştirilecek kontrol ağı | CONTROL_NET | Evet | - |
-| `tür` | Uygulanacak kontrol ağı türü. Otomatik tür algılama için "auto" kullanın veya mevcut seçenekler arasından belirli bir kontrol ağı türü seçin | STRING | Evet | `"auto"`<br>Mevcut tüm UNION_CONTROLNET_TYPES anahtarları |
+| `control_net` | Seçilen kontrol türüyle kopyalanacak ve değiştirilecek kontrol ağı | CONTROL_NET | Evet | - |
+| `type` | Kopyalanan kontrol ağına uygulanacak kontrol türü. Kontrol türünü ayarlanmamış bırakmak için "auto" seçin veya mevcut birleşik kontrol ağı türlerinden belirli bir tür seçin (varsayılan: "auto") | COMBO | Evet | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/scribble/ted"`<br>`"canny/softedge"`<br>`"normal/bms"`<br>`"seg"`<br>`"inpaint"`<br>`"lineart"`<br>`"s4"`<br>`"tile/color"`<br>`"blur"`<br>`"identity"` |
 
-## Çıkışlar
+Not: `type` "auto" olduğunda, kopyalanan kontrol ağındaki kontrol türü listesi temizlenir. Belirli bir tür seçildiğinde, kopyalanan kontrol ağı ilgili tür numarasını saklar.
 
-| Çıkış Adı | Açıklama | Veri Türü |
+## Çıktılar
+
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `kontrol_ağı` | Belirtilen tür ayarı uygulanmış değiştirilmiş kontrol ağı | CONTROL_NET |
+| `control_net` | Seçilen kontrol türü uygulanmış kontrol ağının değiştirilmiş kopyası | CONTROL_NET |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetUnionControlNetType/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `a64308aec96784f08b6f3f8e96e85f532bd1c536301739e7252b2c7978921b5a`
+**Source fingerprint (SHA-256):** `db4b1a3cebafcff2be3172faa09cecbd5e19331376491c491cbe359013ed3da3`

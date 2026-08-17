@@ -1,24 +1,24 @@
 # NormalizeVideoLatentStart
 
-Bu düğüm, bir video gizilinin (latent) ilk birkaç karesini, sonraki karelere daha çok benzeyecek şekilde ayarlar. Videoda daha sonraki bir dizi referans karesinden ortalama ve varyansı hesaplar ve bu özellikleri başlangıç karelerine uygular. Bu, videonun başlangıcında daha yumuşak ve tutarlı bir görsel geçiş oluşturmaya yardımcı olur.
+Bu düğüm, bir video latentinin ilk birkaç karesini, sonraki karelere daha çok benzeyecek şekilde ayarlar. Videodaki daha sonraki bir dizi referans kareden ortalama ve varyasyonu hesaplar ve aynı özellikleri başlangıç karelerine uygular. Bu, bir videonun başında daha yumuşak ve daha tutarlı bir görsel geçiş oluşturmaya yardımcı olur.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `latent` | İşlenecek video gizil temsili. | LATENT | Evet | - |
-| `start_frame_count` | Başlangıçtan itibaren sayılarak normalleştirilecek gizil kare sayısı (varsayılan: 4). | INT | Evet | 1 ila 16384 |
-| `reference_frame_count` | Başlangıç karelerinden sonra referans olarak kullanılacak gizil kare sayısı (varsayılan: 5). | INT | Evet | 1 ila 16384 |
+| `latent` | İşlenecek video latent temsili. | LATENT | Evet | - |
+| `start_frame_count` | Başlangıçtan itibaren normalize edilecek latent kare sayısı (varsayılan: 4). | INT | Evet | 1 ila 16384 (maksimum çözünürlük) |
+| `reference_frame_count` | Başlangıç karelerinden sonra referans olarak kullanılacak latent kare sayısı (varsayılan: 5). | INT | Evet | 1 ila 16384 (maksimum çözünürlük) |
 
-**Not:** `reference_frame_count` değeri, başlangıç karelerinden sonra kullanılabilir kare sayısıyla otomatik olarak sınırlanır. Video gizili yalnızca 1 kare uzunluğundaysa, herhangi bir normalleştirme yapılmaz ve orijinal gizil değiştirilmeden döndürülür.
+**Not:** `reference_frame_count` otomatik olarak başlangıç karelerinden sonra kullanılabilir kare sayısıyla sınırlandırılır. Video latent yalnızca 1 kare uzunluğundaysa, normalizasyon yapılmaz ve orijinal latent değiştirilmeden döndürülür.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `latent` | Başlangıç kareleri normalleştirilmiş, işlenmiş video gizili. | LATENT |
+| `latent` | Başlangıç kareleri normalize edilmiş işlenmiş video latent. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/NormalizeVideoLatentStart/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `64844f3bf1735952334dcca3a829e8f666fd89e817ab66cf3c2dc04ecbbdff56`
+**Source fingerprint (SHA-256):** `383e5a19ee4cd8bdea5983567ddbdc30bb09c373142a1a934cea985f1b9d1b0d`

@@ -1,26 +1,24 @@
 # ComfySoftSwitchNode
 
-## 概要
-
-Soft Switch ノードは、ブール条件に基づいて2つの入力値のいずれかを選択します。`switch` が true の場合は `on_true` 入力の値を出力し、`switch` が false の場合は `on_false` 入力の値を出力します。このノードは遅延評価方式で設計されており、スイッチの状態に応じて必要な入力のみを評価します。
+Soft Switch ノードは、ブール条件に基づいて2つの入力値のうちいずれかを選択します。`switch` が true の場合は `on_true` 入力の値を出力し、`switch` が false の場合は `on_false` 入力の値を出力します。このノードは遅延評価を採用しており、スイッチの状態に応じて必要な入力のみを評価します。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `switch` | どの入力を通過させるかを決定するブール条件です。true の場合は `on_true` 入力が選択され、false の場合は `on_false` 入力が選択されます。 | BOOLEAN | はい |  |
-| `on_false` | `switch` 条件が false の場合に出力される値です。この入力はオプションですが、`on_false` または `on_true` の少なくとも一方を接続する必要があります。 | MATCH_TYPE | いいえ |  |
-| `on_true` | `switch` 条件が true の場合に出力される値です。この入力はオプションですが、`on_false` または `on_true` の少なくとも一方を接続する必要があります。 | MATCH_TYPE | いいえ |  |
+| `switch` | どの入力を通過させるかを決定するブール条件です。true の場合は `on_true` 入力が選択され、false の場合は `on_false` 入力が選択されます。 | BOOLEAN | 必須 | true<br>false |
+| `on_false` | `switch` 条件が false の場合に出力する値です。この入力は任意ですが、`on_false` と `on_true` のうち少なくとも1つを接続する必要があります。 | MATCH_TYPE | 任意 |  |
+| `on_true` | `switch` 条件が true の場合に出力する値です。この入力は任意ですが、`on_false` と `on_true` のうち少なくとも1つを接続する必要があります。 | MATCH_TYPE | 任意 |  |
 
-**注記:** `on_false` と `on_true` の入力は、ノードの内部テンプレートで定義されている同じデータ型である必要があります。ノードが機能するためには、これらの2つの入力のうち少なくとも一方が接続されている必要があります。
+**注:** `on_false` 入力と `on_true` 入力は、ノードの内部テンプレートで定義されているとおり、同じデータ型でなければなりません。このノードを機能させるには、これら2つの入力のうち少なくとも1つを接続する必要があります。片方の入力のみが接続されている場合、`switch` の状態に関係なく、その値が出力に渡されます。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `output` | 選択された値です。接続された `on_false` または `on_true` 入力のデータ型と一致します。 | MATCH_TYPE |
+| `output` | 選択された値です。接続されている `on_false` または `on_true` 入力のデータ型と一致します。 | MATCH_TYPE |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfySoftSwitchNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `f5e40e7f43948b81b5442c885c3e1ff15e38f8f7ddda00ef3be42225765bfd1c`
+**Source fingerprint (SHA-256):** `7bf4bed69d8fd8c360e971ab8068382cd8ebaa02004d5df44312977a7309ae00`

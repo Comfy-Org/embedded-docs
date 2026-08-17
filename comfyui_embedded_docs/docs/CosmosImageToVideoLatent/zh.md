@@ -1,28 +1,28 @@
 # 图像到视频Latent（Cosmos）
 
-CosmosImageToVideoLatent 节点从输入图像创建视频潜在表示。它会生成一个空白视频潜在表示，并可选择将起始和/或结束图像编码到视频序列的起始和/或结束帧中。当提供图像时，它还会创建相应的噪声掩码，以指示在生成过程中应保留潜在表示的哪些部分。
+CosmosImageToVideoLatent 节点用于创建图像到视频生成的视频潜在表示。它从空白 latent 开始，并可选地将开始图像和/或结束图像编码到视频序列的首帧或末帧。当提供图像时，它还会生成一个噪声掩码，将编码帧标记为生成过程中保持固定。
 
 ## 输入
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `vae` | 用于将图像编码到潜在空间的 VAE 模型 | VAE | 是 | - |
-| `宽度` | 输出视频的宽度（像素），默认值：1280 | INT | 是 | 16 至 MAX_RESOLUTION |
-| `高度` | 输出视频的高度（像素），默认值：704 | INT | 是 | 16 至 MAX_RESOLUTION |
-| `长度` | 视频序列中的帧数，默认值：121 | INT | 是 | 1 至 MAX_RESOLUTION |
-| `批量大小` | 要生成的潜在批次数量，默认值：1 | INT | 是 | 1 至 4096 |
-| `开始图像` | 可选，编码到视频序列起始位置的图像 | IMAGE | 否 | - |
-| `结束图像` | 可选，编码到视频序列结束位置的图像 | IMAGE | 否 | - |
+| `vae` | 用于将输入图像编码到潜在空间的 VAE 模型 | VAE | 是 | - |
+| `width` | 输出视频的宽度，以像素为单位（默认值：1280） | INT | 是 | 16 to MAX_RESOLUTION (step 16) |
+| `height` | 输出视频的高度，以像素为单位（默认值：704） | INT | 是 | 16 to MAX_RESOLUTION (step 16) |
+| `length` | 视频序列中的帧数（默认值：121） | INT | 是 | 1 to MAX_RESOLUTION (step 8) |
+| `batch_size` | 输出批次中要生成的视频潜在表示数量（默认值：1） | INT | 是 | 1 to 4096 |
+| `start_image` | 可选图像或图像序列，用于编码到视频序列的开头 | IMAGE | 否 | - |
+| `end_image` | 可选图像或图像序列，用于编码到视频序列的末尾 | IMAGE | 否 | - |
 
-**注意：** 当既不提供 `start_image` 也不提供 `end_image` 时，节点会返回一个空白潜在表示，不带任何噪声掩码。当提供任一图像时，潜在表示的相应部分会被编码并相应地添加掩码。
+**注：** 当未提供 `start_image` 或 `end_image` 时，节点返回不带噪声掩码的空白潜在表示。当至少提供一个图像时，结果中包含 `noise_mask`：由所提供图像编码得到的 latent 帧掩码值为 0（保持固定），其余帧的掩码值为 1（待生成）。图像在编码前会调整到目标 `width` 和 `height`，从输入图像中提取的帧数等于其批次维度，最大不超过 `length`。该潜在表示具有 16 个通道，空间维度为 `width / 8` 和 `height / 8`，帧数为 `((length - 1) // 8) + 1`。当提供图像时，潜在表示及其噪声掩码会重复 `batch_size` 次以构成输出批次。
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `latent` | 生成的视频潜在表示，包含可选的编码图像及相应的噪声掩码 | LATENT |
+| `latent` | 一个 LATENT，包含视频潜在表示 `samples`；当提供 `start_image` 或 `end_image` 时，还包含标记编码帧为固定的 `noise_mask` | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CosmosImageToVideoLatent/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `31ce4dc577c672e0b3dc0bfb6644b2ef7ab737f6c4ee5e0677973b6a4efdd66d`
+**Source fingerprint (SHA-256):** `0b06ccfcb14c27c81eeebbbff519da1e187970d4cfc19c8796fc3da20688245c`

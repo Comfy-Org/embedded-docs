@@ -12,6 +12,8 @@ The ModelSamplingFlux node applies Flux model sampling to a given model by calcu
 | `width` | Width of the target image in pixels (default: 1024) | INT | Yes | 16 - MAX_RESOLUTION |
 | `height` | Height of the target image in pixels (default: 1024) | INT | Yes | 16 - MAX_RESOLUTION |
 
+The effective shift value is interpolated between `base_shift` and `max_shift` based on the latent size derived from `width` and `height`. The `step` value is 0.01 for `max_shift` and `base_shift`, and 8 for `width` and `height`. The `max_shift` and `base_shift` parameters are marked as advanced options in the user interface.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -21,4 +23,4 @@ The ModelSamplingFlux node applies Flux model sampling to a given model by calcu
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingFlux/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `35733ab0cd032884ceada13715cf51e626586844e8e575471a5ba7cf8a1e5e49`
+**Source fingerprint (SHA-256):** `04065b54ace30a2b20476ed085df871ea89794650e98ae30c40f750357663834`

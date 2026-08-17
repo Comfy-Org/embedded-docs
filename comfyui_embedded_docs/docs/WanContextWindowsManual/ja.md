@@ -1,31 +1,27 @@
 # WAN コンテキストウィンドウ（手動）
 
-以下が日本語訳です。
-
-WAN Context Windows (Manual) ノードを使用すると、2次元処理を行うWAN系モデル向けにコンテキストウィンドウを手動で設定できます。サンプリング中に、ウィンドウの長さ、オーバーラップ、スケジューリング方法、フュージョン手法を指定することで、カスタムのコンテキストウィンドウ設定を適用します。これにより、モデルが異なるコンテキスト領域間で情報を処理する方法を正確に制御できます。
-
-## 入力
-
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `モデル` | サンプリング中にコンテキストウィンドウを適用するモデル。 | MODEL | はい | - |
-| `コンテキスト長` | コンテキストウィンドウの長さ（デフォルト: 81）。 | INT | はい | 1 ～ 1048576 |
-| `コンテキストオーバーラップ` | コンテキストウィンドウのオーバーラップ（デフォルト: 30）。 | INT | はい | 0 ～ 1048576 |
-| `コンテキストスケジュール` | コンテキストウィンドウのストライド。 | COMBO | はい | `"static_standard"`<br>`"uniform_standard"`<br>`"uniform_looped"`<br>`"batched"` |
-| `コンテキストストライド` | コンテキストウィンドウのストライド。uniformスケジュールにのみ適用されます（デフォルト: 1）。 | INT | はい | 1 ～ 1048576 |
-| `クローズドループ` | コンテキストウィンドウのループを閉じるかどうか。loopedスケジュールにのみ適用されます（デフォルト: False）。 | BOOLEAN | はい | - |
-| `融合方法` | コンテキストウィンドウをフュージョンする方法（デフォルト: "pyramid"）。 | COMBO | はい | `"pyramid"`<br>`"gaussian"`<br>`"average"`<br>`"overlap"` |
-| `フリーノイズ` | FreeNoiseノイズシャッフリングを適用するかどうか。ウィンドウのブレンドを改善します（デフォルト: False）。 | BOOLEAN | はい | - |
+| `model` | サンプリング中にコンテキストウィンドウを適用するモデル。 | MODEL | はい | - |
+| `context_length` | コンテキストウィンドウの長さ（実フレーム数）。4n + 1 である必要があります。（デフォルト: 81） | INT | はい | 1 to 16384 (step 4) |
+| `context_overlap` | コンテキストウィンドウのオーバーラップ（実フレーム数）。（デフォルト: 30） | INT | はい | 0 or greater |
+| `context_schedule` | コンテキストウィンドウのステップ依存スケジューリングアルゴリズム。（デフォルト: "uniform_standard"） | COMBO | はい | `"static_standard"`<br>`"uniform_standard"`<br>`"uniform_looped"`<br>`"batched"` |
+| `context_stride` | コンテキストウィンドウのストライド。ユニフォームスケジュールにのみ適用されます。（デフォルト: 1） | INT | はい | 1 or greater |
+| `closed_loop` | コンテキストウィンドウのループを閉じるかどうか。ループ式スケジュールにのみ適用されます。（デフォルト: False） | BOOLEAN | はい | True or False |
+| `fuse_method` | コンテキストウィンドウを融合するために使用するメソッド。（デフォルト: "pyramid"） | COMBO | はい | `"pyramid"`<br>`"gaussian"`<br>`"average"`<br>`"overlap"` |
+| `freenoise` | FreeNoise ノイズシャッフリングを適用するかどうか。これによりウィンドウのブレンドが向上します。（デフォルト: True） | BOOLEAN | はい | True or False |
+| `retain_first_frame` | すべてのコンテキストウィンドウで最初の I2V フレームを保持します（初期参照の保持に役立つ場合があります）。（デフォルト: False） | BOOLEAN | はい | True or False |
+| `split_conds_to_windows` | 複数のコンディショニング（ConditionCombine によって作成されたもの）をリージョンインデックスに基づいて各ウィンドウに分割するかどうか。（デフォルト: False） | BOOLEAN | はい | True or False |
 
-**注記:** `context_stride` パラメータは uniform スケジュールにのみ影響し、`closed_loop` は looped スケジュールにのみ適用されます。コンテキストの長さとオーバーラップの値は、処理中に最小有効値を確保するために自動的に調整されます。`fuse_method` パラメータには、"pyramid" 以外の追加オプションも含まれるようになりました。
+**注:** `context_stride` はユニフォームスケジュールにのみ影響し、`closed_loop` はループ式スケジュールにのみ適用されます。`context_length` は 4n + 1 のパターンに従う必要があります。このノードは、`context_length` と `context_overlap` を実フレームからモデル単位に変換してから適用し、`context_length` には最小 1、`context_overlap` には最小 0 を強制します。`context_stride`、`closed_loop`、`freenoise`、`split_conds_to_windows` は上級者向けオプションです。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `モデル` | コンテキストウィンドウ設定が適用されたモデル。 | MODEL |
+| `model` | 適用されたコンテキストウィンドウ設定を持つモデル。 | MODEL |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanContextWindowsManual/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `33e539f1e6647a6a2bc98fadc357a25279b0900746f5b3d568e2782cdb770258`
+**Source fingerprint (SHA-256):** `cf4927371e9d4b509f2e6e5319cd6109e3ef36da6b3faee278bcf8c906672857`

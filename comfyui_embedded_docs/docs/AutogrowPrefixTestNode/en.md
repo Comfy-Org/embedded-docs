@@ -6,9 +6,9 @@ The AutogrowPrefixTestNode is a logic node designed to test the autogrow input f
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `autogrow` | A dynamic input group that can accept between 1 and 10 float values. Each input in the group is a FLOAT type with a minimum value of 1 and a maximum value of 10. | AUTOGROW | Yes | 1 to 10 inputs |
+| `autogrow` | A dynamic input group that accepts float values. The group can hold between 1 and 10 float inputs, and the node processes all provided values. | FLOAT | Yes | 1 to 10 inputs |
 
-**Note:** The `autogrow` input is a special dynamic input. You can add multiple float inputs to this group, up to a maximum of 10. The node will process all provided values. Each individual float input is constrained to a range of 1 to 10.
+**Note:** The `autogrow` input is a special dynamic input that can be expanded to add more float inputs up to a maximum of 10. The minimum is 1 input. The `min` and `max` values in this node define the allowed number of inputs in the group, not the value range of each individual float.
 
 ## Outputs
 
@@ -19,4 +19,4 @@ The AutogrowPrefixTestNode is a logic node designed to test the autogrow input f
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AutogrowPrefixTestNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `93e3e3d13f8f411206d09e34e7e3b734596af0a2ef066712d6dfbe9dc3eec0cf`
+**Source fingerprint (SHA-256):** `9b815f59961a4c661815f44b9c78e15e9084db1e4be89d502b9d92438f18e70b`

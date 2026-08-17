@@ -1,21 +1,21 @@
 # Recraft Arka Planı Kaldır
 
-Bu düğüm, Recraft API hizmetini kullanarak görüntülerin arka planını kaldırır. Giriş grubundaki her görüntüyü işler ve hem şeffaf arka planlı işlenmiş görüntüleri hem de kaldırılan arka plan alanlarını gösteren karşılık gelen alfa maskelerini döndürür.
+Bu düğüm, Recraft API hizmetini kullanarak görüntülerden arka planı kaldırır. Giriş kümesindeki her görüntüyü işler ve hem şeffaf arka planlı işlenmiş görüntüleri hem de kaldırılan arka plan alanlarını gösteren karşılık gelen alfa maskelerini döndürür.
 
 ## Girişler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-| --- | --- | --- | --- | --- |
-| `görüntü` | Arka planı kaldırılacak giriş görüntüsü/görüntüleri | IMAGE | Evet | - |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `image` | Arka plan kaldırma için işlenecek giriş görüntüsü(leri) | IMAGE | Evet | - |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
-| --- | --- | --- |
-| `görüntü` | Şeffaf arka planlı işlenmiş görüntüler | IMAGE |
+| Çıktı Adı | Açıklama | Veri Türü |
+|-------------|-----------|-----------|
+| `image` | Şeffaf arka planlı işlenmiş görüntüler | IMAGE |
 | `mask` | Kaldırılan arka plan alanlarını gösteren alfa kanalı maskeleri | MASK |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftRemoveBackgroundNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `9e3f1a0471da3afda6b8de26de3b7e78c1070c49ab49e4fc8b6b79bb10ff77de`
+**Source fingerprint (SHA-256):** `702dfdf2751d5ca33f23e10c0968496887514a21da7a0c42e3636a0ed4e82311`

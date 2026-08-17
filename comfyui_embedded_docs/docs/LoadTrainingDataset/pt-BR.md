@@ -1,23 +1,23 @@
 # Carregar Conjunto de Dados de Treinamento
 
-Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/en.md)
-
-Este nó carrega um conjunto de dados de treinamento codificado que foi previamente salvo em disco. Ele procura e lê todos os arquivos de fragmentos de dados de uma pasta especificada dentro do diretório de saída do ComfyUI e, em seguida, retorna os vetores latentes combinados e os dados de condicionamento para uso em fluxos de trabalho de treinamento.
+Este nó carrega um conjunto de dados de treinamento codificado (latentes e condicionamento) do disco para uso no treinamento. Após selecionar uma pasta de conjunto de dados salva anteriormente, ele lê todos os arquivos de shard dentro dela e retorna os vetores latentes combinados e os dados de condicionamento.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
-| `nome_da_pasta` | Nome da pasta que contém o conjunto de dados salvo, localizada dentro do diretório de saída do ComfyUI (padrão: "training_dataset"). | STRING | Sim | N/A |
+| `folder_name` | Conjunto de dados salvo para carregar, a partir do diretório de datasets. | COMBO | Sim | Preenchido dinamicamente com todas as pastas de conjuntos de dados encontradas nos diretórios de datasets registrados. Somente pastas que contenham um arquivo `metadata.json` ou arquivos `.safetensors` são listadas. |
+
+**Nota:** A pasta do conjunto de dados selecionada deve ser uma subpasta de um diretório de datasets registrado e deve conter pelo menos um arquivo de shard chamado `shard_*.pkl`; caso contrário, o nó gera um erro.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
+| Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `latents` | Uma lista de dicionários latentes, onde cada dicionário contém uma chave `"samples"` com um tensor. | LATENT |
-| `conditioning` | Uma lista de listas de condicionamento, onde cada lista interna contém dados de condicionamento para uma amostra correspondente. | CONDITIONING |
+| `latents` | Lista de dicionários de latentes carregados dos shards do conjunto de dados, cada um contendo um tensor `samples`. | LATENT |
+| `conditioning` | Lista de listas de condicionamento carregadas dos shards do conjunto de dados, uma por amostra. | CONDITIONING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `0a07c97e2c6a32f77cd21ea7dbdd33e06fad82285696b88122fef369307e133d`
+**Source fingerprint (SHA-256):** `9f914b27f067460f6f3b54f3f2a7bb793c65b99c85e8aa14ab64894be26bd816`

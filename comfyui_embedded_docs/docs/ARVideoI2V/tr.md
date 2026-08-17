@@ -1,57 +1,29 @@
 # ARVideoI2V
 
-ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
-
-## Çeviri Kuralları
-
-1. **Çevrilmemesi gereken içerik:**
-   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
-   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
-   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
-   - Kod, dosya yolları
-
-2. **Çevrilmesi gereken içerik:**
-   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
-   - Tüm açıklayıcı metinler
-   - Parametre açıklamaları
-
-3. **Çeviri kalitesi:**
-   - Standart Türkçe kullanın
-   - Profesyonel ama anlaşılır bir üslup koruyun
-   - Teknik doğruluğu sağlayın
-   - Standart Türkçe teknik terminolojiyi kullanın
-
-4. **Format:**
-   - Tüm Markdown biçimlendirmesini koruyun
-   - Tablo yapısını koruyun
-   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
-
-Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
-
 ## Genel Bakış
 
-Bu düğüm, AR (Otoregresif) video modelleri için bir görüntüden videoya oluşturma düzeneği hazırlar. Bir başlangıç görüntüsü alır, bir VAE kullanarak bunu gizli uzaya kodlar ve kodlanmış görüntüyü modelin yapılandırmasında saklar. Bu, video örnekleme sürecinin görüntüyü ilk kare olarak kullanmasını sağlayarak, ayrı bir görüntüden videoya model mimarisine ihtiyaç duymadan oluşturmayı etkili bir şekilde başlatır.
+Bu düğüm, AR (Otoregresif) video modelleri için görüntüden videoya üretim kurulumu hazırlar. Bir başlangıç görüntüsünü alır, bir VAE kullanarak bunu gizli uzaya kodlar ve kodlanmış görüntüyü modelin yapılandırmasında saklar. Bu, video örnekleme sürecinin görüntüyü ilk kare olarak kullanmasını sağlayarak, ayrı bir görüntüden videoya model mimarisine ihtiyaç duymadan üretimi etkili bir şekilde başlatır.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Oluşturma için kullanılacak AR video modeli. | MODEL | Evet | - |
+| `model` | Üretim için kullanılacak AR video modeli. | MODEL | Evet | - |
 | `vae` | Başlangıç görüntüsünü gizli uzaya kodlamak için kullanılan VAE modeli. | VAE | Evet | - |
-| `başlangıç_görseli` | Oluşturulan videonun ilk karesi olarak hizmet edecek başlangıç görüntüsü. | IMAGE | Evet | - |
-| `genişlik` | Oluşturulan video karelerinin genişliği (varsayılan: 832). | INT | Evet | 16 ila 8192 (adım: 16) |
-| `yükseklik` | Oluşturulan video karelerinin yüksekliği (varsayılan: 480). | INT | Evet | 16 ila 8192 (adım: 16) |
-| `uzunluk` | Oluşturulan videodaki toplam kare sayısı (varsayılan: 81). | INT | Evet | 1 ila 1024 (adım: 4) |
-| `toplu_boyut` | Tek bir grupta oluşturulacak video dizisi sayısı (varsayılan: 1). | INT | Evet | 1 ila 64 |
+| `start_image` | Oluşturulan videonun ilk karesi olarak kullanılacak başlangıç görüntüsü. | IMAGE | Evet | - |
+| `width` | Oluşturulan video karelerinin genişliği (varsayılan: 832). | INT | Evet | 16 ile 8192 (adım: 16) |
+| `height` | Oluşturulan video karelerinin yüksekliği (varsayılan: 480). | INT | Evet | 16 ile 8192 (adım: 16) |
+| `length` | Oluşturulan videodaki toplam kare sayısı (varsayılan: 81). | INT | Evet | 1 ile 1024 (adım: 4) |
+| `batch_size` | Tek bir yığında (batch) oluşturulacak video dizisi sayısı (varsayılan: 1). | INT | Evet | 1 ile 64 |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `MODEL` | Video oluşturma için yapılandırmasında kodlanmış başlangıç görüntüsü bulunan klonlanmış model. | MODEL |
-| `LATENT` | Video oluşturma süreci için doğru boyutlara sahip boş bir gizli tensör. | LATENT |
+| `MODEL` | Kodlanmış başlangıç görüntüsü, video üretimi için yapılandırmasında saklanan klonlanmış model. | MODEL |
+| `LATENT` | Şekli [batch_size, 16, lat_t, height/8, width/8] olan boş bir gizli tensör; burada lat_t = ((length - 1) // 4) + 1, istenen video uzunluğundan türetilen gizli kare sayısıdır. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ARVideoI2V/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `0445b279ba49fa946050cfa70d1e6b13240eaa600b99dfe63f27c3203dc4b61b`
+**Source fingerprint (SHA-256):** `984834951b9d5a22aef51c85a5019fd8ba58cdb2d6fff235371ed29f316896d8`

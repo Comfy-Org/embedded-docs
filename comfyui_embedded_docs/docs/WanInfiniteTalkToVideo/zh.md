@@ -1,48 +1,60 @@
 # WanInfiniteTalkToVideo
 
-WanInfiniteTalkToVideo 节点可根据音频输入生成视频序列。它使用视频扩散模型，以从一个或两个说话者提取的音频特征为条件，生成说话人头视频的潜在表示。该节点可以生成新序列，或利用先前帧的运动上下文来扩展现有序列。
+WanInfiniteTalkToVideo 节点可根据音频生成一段说话人视频片段。它会将视频扩散模型基于一个或两个说话人的音频特征进行条件化，可选地使用起始图像或先前帧作为上下文，并返回修补后的模型、条件以及用于采样的潜在视频。
 
 ## 输入
 
-| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
+### 通用输入
+
+| 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `模式` | 音频输入模式。`"single_speaker"` 使用一个音频输入。`"two_speakers"` 启用第二个说话者的输入及对应的遮罩。 | COMBO | 是 | `"single_speaker"`<br>`"two_speakers"` |
-| `模型` | 基础视频扩散模型。 | MODEL | 是 | - |
-| `模型补丁` | 包含音频投影层的模型补丁。 | MODELPATCH | 是 | - |
-| `正向提示` | 用于引导生成的正向条件。 | CONDITIONING | 是 | - |
-| `负向提示` | 用于引导生成的负向条件。 | CONDITIONING | 是 | - |
-| `vae` | 用于将图像编码到潜在空间及从潜在空间解码的 VAE。 | VAE | 是 | - |
-| `宽度` | 输出视频的宽度（像素）。必须能被 16 整除。（默认值：832） | INT | 否 | 16 - MAX_RESOLUTION |
-| `高度` | 输出视频的高度（像素）。必须能被 16 整除。（默认值：480） | INT | 否 | 16 - MAX_RESOLUTION |
-| `长度` | 要生成的帧数。（默认值：81） | INT | 否 | 1 - MAX_RESOLUTION |
-| `clip视觉输出` | 可选的 CLIP 视觉输出，用于额外的条件控制。 | CLIPVISIONOUTPUT | 否 | - |
-| `起始图像` | 可选的起始图像，用于初始化视频序列。 | IMAGE | 否 | - |
-| `音频编码器输出1` | 包含第一个说话者特征的主音频编码器输出。 | AUDIOENCODEROUTPUT | 是 | - |
-| `运动帧数` | 扩展序列时用作运动上下文的先前帧数。（默认值：9） | INT | 否 | 1 - 33 |
-| `音频缩放` | 应用于音频条件的缩放因子。（默认值：1.0） | FLOAT | 否 | -10.0 - 10.0 |
-| `前置帧` | 可选的先前视频帧，用于从中扩展。 | IMAGE | 否 | - |
-| `audio_encoder_output_2` | 第二个音频编码器输出。当 `模式` 设置为 `"two_speakers"` 时必需。 | AUDIOENCODEROUTPUT | 否 | - |
-| `mask_1` | 第一个说话者的遮罩，如果使用两个音频输入则必需。 | MASK | 否 | - |
-| `mask_2` | 第二个说话者的遮罩，如果使用两个音频输入则必需。 | MASK | 否 | - |
+| `mode` | 音频模式。选择 `"single_speaker"` 时使用单个音频输入。选择 `"two_speakers"` 时会添加下方列出的第二说话人输入。 | DYNAMIC_COMBO | 是 | `"single_speaker"`<br>`"two_speakers"` |
+| `model` | 要修补的基础视频扩散模型。 | MODEL | 是 | - |
+| `model_patch` | 包含音频投影层的模型补丁。 | MODELPATCH | 是 | - |
+| `positive` | 用于引导视频生成的正向条件。 | CONDITIONING | 是 | - |
+| `negative` | 用于引导视频生成的负向条件。 | CONDITIONING | 是 | - |
+| `vae` | 用于将图像和先前帧编码到潜在空间的 VAE。 | VAE | 是 | - |
+| `width` | 生成视频的宽度（像素），步长为 16。（默认值：832） | INT | 是 | 16 - MAX_RESOLUTION（步长 16） |
+| `height` | 生成视频的高度（像素），步长为 16。（默认值：480） | INT | 是 | 16 - MAX_RESOLUTION（步长 16） |
+| `length` | 要生成的帧数。（默认值：81） | INT | 是 | 1 - MAX_RESOLUTION（步长 4） |
+| `audio_encoder_output_1` | 第一说话人的音频编码器输出，包含用于条件化的音频特征。 | AUDIOENCODEROUTPUT | 是 | - |
+| `start_image` | 可选的起始图像，用于初始化视频的开头。它会被调整为 `width` 和 `height` 指定的大小。 | IMAGE | 否 | - |
+| `clip_vision_output` | 可选的 CLIP 视觉输出，会添加到正向和负向条件中。 | CLIPVISIONOUTPUT | 否 | - |
+| `motion_frame_count` | 用作运动上下文的先前帧数。（默认值：9） | INT | 是 | 1 - 33（步长 1） |
+| `audio_scale` | 应用于音频条件的缩放因子。（默认值：1.0） | FLOAT | 是 | -10.0 - 10.0（步长 0.01） |
+| `previous_frames` | 可选的先前视频帧，用于扩展现有序列。节点会使用最后 `motion_frame_count` 帧作为运动上下文。 | IMAGE | 否 | - |
+
+### 单说话人输入
+
+选择 `single_speaker` 时不会添加任何额外输入。
+
+### 双说话人输入
+
+当 `mode` 为 `"two_speakers"` 时，以下输入可用。
+
+| 参数 | 描述 | 数据类型 | 必填 | 范围 |
+| --- | --- | --- | --- | --- |
+| `audio_encoder_output_2` | 第二说话人的音频编码器输出。提供时，`mask_1` 和 `mask_2` 也必须提供。 | AUDIOENCODEROUTPUT | 否 | - |
+| `mask_1` | 第一说话人的遮罩，使用两个音频输入时需要。 | MASK | 否 | - |
+| `mask_2` | 第二说话人的遮罩，使用两个音频输入时需要。 | MASK | 否 | - |
 
 **参数约束：**
 
-* 当 `mode` 设置为 `"two_speakers"` 时，参数 `audio_encoder_output_2`、`mask_1` 和 `mask_2` 变为必需。
-* 如果提供了 `audio_encoder_output_2`，则必须同时提供 `mask_1` 和 `mask_2`。
-* 如果提供了 `mask_1` 和 `mask_2`，则必须同时提供 `audio_encoder_output_2`。
-* 如果提供了 `previous_frames`，则其包含的帧数必须至少等于 `motion_frame_count` 指定的数量。
+- 如果提供了 `audio_encoder_output_2`，则必须同时提供 `mask_1` 和 `mask_2`。
+- 如果同时提供了 `mask_1` 和 `mask_2`，则必须同时提供 `audio_encoder_output_2`。
+- 如果提供了 `previous_frames`，其帧数必须至少等于 `motion_frame_count` 指定的数量。
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `模型` | 已应用音频条件的修补模型。 | MODEL |
-| `正向提示` | 正向条件，可能已通过额外上下文（例如起始图像、CLIP 视觉）进行修改。 | CONDITIONING |
-| `负向提示` | 负向条件，可能已通过额外上下文进行修改。 | CONDITIONING |
-| `latent` | 潜在空间中生成的视频序列。 | LATENT |
-| `裁剪图像` | 扩展序列时，应从运动上下文起始处裁剪的帧数。 | INT |
+| `model` | 已应用音频条件和采样包装器的修补后模型。 | MODEL |
+| `positive` | 正向条件，可能已通过起始图像或 CLIP 视觉上下文进行修改。 | CONDITIONING |
+| `negative` | 负向条件，可能已通过起始图像或 CLIP 视觉上下文进行修改。 | CONDITIONING |
+| `latent` | 表示待生成视频的零初始化潜在张量。 | LATENT |
+| `trim_image` | 从先前帧扩展时需要从开头裁剪的帧数；开始新序列时为 0。 | INT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanInfiniteTalkToVideo/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `6bb976da5cac0b61edb7d4c9d206c7c7ea9ffc0e982034c23c7f2e891e972888`
+**Source fingerprint (SHA-256):** `b7359490c1de86d9c82122bc227295b3b7f8a3493f629365ae0f22f9f34d9a66`

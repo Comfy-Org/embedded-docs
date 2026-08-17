@@ -9,7 +9,7 @@ The TextEncodeHunyuanVideo_ImageToVideo node creates conditioning data for video
 | `clip` | The CLIP model used for tokenization and encoding | CLIP | Yes | - |
 | `clip_vision_output` | The visual embeddings from a CLIP vision model that provide image context | CLIP_VISION_OUTPUT | Yes | - |
 | `prompt` | The text description to guide the video generation. Supports multiline input and dynamic prompts. The prompt is formatted using a template that asks the model to describe the video based on the reference image, covering aspects like main content, object details, actions, background, and camera angles. | STRING | Yes | - |
-| `image_interleave` | How much the image influences things vs the text prompt. Higher number means more influence from the text prompt. (default: 2) | INT | Yes | 1-512 |
+| `image_interleave` | How much the image influences things vs the text prompt. Higher number means more influence from the text prompt. (default: 2, advanced parameter) | INT | Yes | 1-512 |
 
 ## Outputs
 
@@ -20,4 +20,4 @@ The TextEncodeHunyuanVideo_ImageToVideo node creates conditioning data for video
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeHunyuanVideo_ImageToVideo/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `ecc190941e8d355bc6e6e4b5b7938d54a79e70a7ff0049157dab30b720605e6a`
+**Source fingerprint (SHA-256):** `016b87ead6f7a6ca61eff220e57f59252018cc78e80ec8cff5b83223b8f90f73`

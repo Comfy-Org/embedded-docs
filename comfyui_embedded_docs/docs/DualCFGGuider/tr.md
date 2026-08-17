@@ -1,26 +1,26 @@
 # İkili CFG Rehberi
 
-DualCFGGuider düğümü, çift sınıflandırıcısız yönlendirme örneklemesi için bir yönlendirme sistemi oluşturur. İki pozitif koşullandırma girdisini bir negatif koşullandırma girdisiyle birleştirir ve her koşullandırma çiftine farklı yönlendirme ölçekleri uygulayarak her bir istemin oluşturulan çıktı üzerindeki etkisini kontrol eder.
+DualCFGGuider düğümü, çift sınıflandırıcısız rehberlik örneklemesi için bir rehberlik sistemi oluşturur. İki pozitif koşullandırma girdisini bir negatif koşullandırma girdisiyle birleştirir ve her koşullandırma çiftine farklı rehberlik ölçekleri uygulayarak her istemin oluşturulan çıktıyı ne kadar güçlü etkilediğini kontrol eder.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Yönlendirme için kullanılacak model | MODEL | Evet | - |
-| `koşul1` | İlk pozitif koşullandırma girdisi | CONDITIONING | Evet | - |
-| `koşul2` | İkinci pozitif koşullandırma girdisi | CONDITIONING | Evet | - |
-| `negatif` | Negatif koşullandırma girdisi | CONDITIONING | Evet | - |
-| `cfg_koşulları` | İlk pozitif koşullandırma için yönlendirme ölçeği (varsayılan: 8.0) | FLOAT | Evet | 0.0 - 100.0 |
-| `cfg_koşul2_negatif` | İkinci pozitif ve negatif koşullandırma için yönlendirme ölçeği (varsayılan: 8.0) | FLOAT | Evet | 0.0 - 100.0 |
-| `stil` | Uygulanacak yönlendirme stili (varsayılan: "regular"). "nested" olarak ayarlandığında yönlendirme iç içe bir şekilde uygulanır | COMBO | Evet | "regular"<br>"nested" |
+| `model` | Rehberlik için kullanılacak model. | MODEL | Evet | - |
+| `cond1` | İlk pozitif koşullandırma girdisi. | CONDITIONING | Evet | - |
+| `cond2` | Ara koşullandırma olarak ele alınan ikinci pozitif koşullandırma girdisi. | CONDITIONING | Evet | - |
+| `negative` | Negatif koşullandırma girdisi. | CONDITIONING | Evet | - |
+| `cfg_conds` | `cond1` ve `cond2` arasında uygulanan rehberlik ölçeği (varsayılan: 8.0). | FLOAT | Evet | 0.0 - 100.0 |
+| `cfg_cond2_negative` | `cond2` ile negatif koşullandırma arasında uygulanan rehberlik ölçeği (varsayılan: 8.0). | FLOAT | Evet | 0.0 - 100.0 |
+| `style` | Uygulanacak rehberlik stili (varsayılan: "regular"). "regular" her iki rehberlik ölçeğini tek adımda birleştirir; "nested" önce `cfg_conds` uygular ve ardından sonucu, negatif koşullandırmaya göre `cfg_cond2_negative` ile ölçekler. | COMBO | Evet | "regular"<br>"nested" |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `GUIDER` | Örnekleme ile kullanıma hazır, yapılandırılmış bir yönlendirme sistemi | GUIDER |
+| `GUIDER` | Örnekleme ile kullanıma hazır, yapılandırılmış bir rehberlik sistemi. | GUIDER |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DualCFGGuider/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `802e07f2e64dc2d55e86290db7e94dffd46079a9180480a560035d0bb6350325`
+**Source fingerprint (SHA-256):** `ef28d109149cb545bcd76215fd99535905c1d395222149a029c1c210e2912e97`

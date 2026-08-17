@@ -17,4 +17,4 @@ The ManualSigmas node allows you to manually define a custom sequence of noise l
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ManualSigmas/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `38fef43da8aa27a9b79584213c3b6cdd003bc47bcaddcf29d549b0b91880ae8d`
+**Source fingerprint (SHA-256):** `19d938ef0eac7343a3138393a039f63632b0763e3884636653c06b91b6f44ed6`

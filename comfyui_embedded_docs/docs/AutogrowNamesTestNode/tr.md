@@ -1,24 +1,22 @@
 # AutogrowNamesTestNode
 
-## Genel Bakış
+Bu düğüm, Autogrow giriş özelliği için bir testtir. Her biri belirli bir adla etiketlenmiş dinamik sayıda float girişi alır ve değerlerini virgülle ayrılmış tek bir dizede birleştirir.
 
-Bu düğüm, Otomatik Büyüme (Autogrow) giriş özelliği için bir test düğümüdür. Dinamik sayıda ondalık sayı (float) girişi alır, her biri belirli bir adla etiketlenir ve bu değerleri virgülle ayrılmış tek bir dize (string) halinde birleştirir.
+## Girişler
 
-## Girdiler
-
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `autogrow` | Dinamik bir giriş grubu. "a", "b" veya "c" listesinden önceden tanımlanmış bir ada sahip birden fazla ondalık sayı girişi ekleyebilirsiniz. Düğüm, bu adlandırılmış girişlerin herhangi bir kombinasyonunu kabul eder. | FLOAT | Evet | Yok |
+| `autogrow` | Dinamik bir giriş grubudur. Listede önceden tanımlanmış adlara sahip birden fazla float girişi ekleyebilirsiniz: "a", "b" veya "c". Düğüm, bu adlandırılmış girişlerin herhangi bir kombinasyonunu kabul eder. | FLOAT | Evet | N/A |
 
-**Not:** `autogrow` girişi dinamiktir. İş akışınız için gerektiği şekilde "a", "b" veya "c" adlı bireysel ondalık sayı girişlerini ekleyebilir veya kaldırabilirsiniz. Düğüm, sağlanan tüm değerleri işler.
+**Not:** `autogrow` girişi dinamiktir. İş akışınıza göre tek tek float girişleri ("a", "b" veya "c" adlı) ekleyebilir veya kaldırabilirsiniz. Düğüm, sağlanan tüm değerleri işler.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | Sağlanan tüm ondalık sayı girişlerinden gelen değerlerin virgülle birleştirilmesiyle oluşturulan tek bir dize. | STRING |
+| `output` | Sağlanan tüm float girişlerinin değerlerini virgülle birleştiren tek bir dize. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AutogrowNamesTestNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `33e8b2e2c369d06979415c31ef2623cff55d98ecf49137c5cafbeba7cc3b0451`
+**Source fingerprint (SHA-256):** `dac384c9486ac645d0d292fc891603cbfa6d362baa0a1e939c43257bbc0b06a0`

@@ -11,7 +11,7 @@ This node crops each input image to a centered square on a black background, the
 | `erode_radius` | Erode the alpha matte by this pixel radius before cropping (avoids border bleed). Default: 1 | INT | Yes | 0 to 16 |
 | `size` | Square image size. The model is trained at 1024; other sizes run but are off-distribution. Default: 1024 | INT | Yes | 256 to 4096 (step of 16) |
 
-**Note:** The `mask` input is required and must be provided. If the mask has a different batch size than the image, it is automatically repeated to match. If the mask dimensions differ from the image dimensions, the mask is resized to match the image using bilinear interpolation. The output size is automatically rounded down to the nearest multiple of 16 to ensure compatibility with DINOv3 patch and Flux2 VAE stride requirements.
+**Note:** The `mask` input is required and must be provided. If the mask has a different batch size than the image, it is automatically repeated to match. If the mask dimensions differ from the image dimensions, the mask is resized to match the image using bilinear interpolation. The output size is automatically rounded down to the nearest multiple of 16 to ensure compatibility with DINOv3 patch and Flux2 VAE stride requirements. An error is raised if the mask contains no foreground pixels.
 
 ## Outputs
 
@@ -22,4 +22,4 @@ This node crops each input image to a centered square on a black background, the
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoSplatPreprocessImage/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `3f33dbc3a99ccb23ede767915a28fabdfa388edb8d5782edea3f8d03e5965b2a`
+**Source fingerprint (SHA-256):** `ec66941846398ee6637576b11ae9d2f9576f6b05ed2ef730cdbf99a68fe9b838`

@@ -12,7 +12,7 @@ This node creates a video sequence that transitions between your provided start 
 | `negative_prompt` | Negative text prompt | STRING | Yes | - |
 | `cfg_scale` | Controls the strength of the prompt guidance (default: 0.5) | FLOAT | No | 0.0-1.0 |
 | `aspect_ratio` | The aspect ratio for the generated video (default: "16:9") | COMBO | No | "16:9"<br>"9:16"<br>"1:1" |
-| `mode` | The configuration to use for the video generation following the format: mode / duration / model_name. (default: "pro mode / 5s duration / kling-v2-5-turbo") | COMBO | No | "pro mode / 5s duration / kling-v1-5"<br>"pro mode / 10s duration / kling-v1-5"<br>"pro mode / 5s duration / kling-v1-6"<br>"pro mode / 10s duration / kling-v1-6"<br>"pro mode / 5s duration / kling-v2-1"<br>"pro mode / 10s duration / kling-v2-1"<br>"pro mode / 5s duration / kling-v2-5-turbo"<br>"pro mode / 10s duration / kling-v2-5-turbo" |
+| `mode` | The configuration to use for the video generation following the format: mode / duration / model_name. (default: "pro mode / 5s duration / kling-v2-5-turbo"). All available options use pro mode with the kling-v2-5-turbo model and differ only in the video duration. | COMBO | No | "pro mode / 5s duration / kling-v2-5-turbo"<br>"pro mode / 10s duration / kling-v2-5-turbo" |
 
 **Image Constraints:**
 
@@ -20,6 +20,17 @@ This node creates a video sequence that transitions between your provided start 
 - Minimum resolution: 300×300 pixels for both images
 - `start_frame` aspect ratio must be between 1:2.5 and 2.5:1
 - Base64 encoded images should not include the "data:image" prefix
+
+**Prompt Constraints:**
+
+- The positive prompt must not be empty
+- Both the positive and negative prompts are limited to 500 characters
+- If `negative_prompt` is left empty, it is omitted from the request
+
+**Pricing:**
+
+- "pro mode / 5s duration / kling-v2-5-turbo": $0.35 USD per generation
+- "pro mode / 10s duration / kling-v2-5-turbo": $0.70 USD per generation
 
 ## Outputs
 
@@ -32,4 +43,4 @@ This node creates a video sequence that transitions between your provided start 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingStartEndFrameNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `7e3a6a4b04b7ad01708a0664a6bed9d817103206074ef41a747ef8193a8ce348`
+**Source fingerprint (SHA-256):** `a27977226360a425614255f8330ce7fd8ba94b8c3020eb8fdddc01eb74f035c1`

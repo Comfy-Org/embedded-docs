@@ -8,7 +8,7 @@ The ReplaceVideoLatentFrames node inserts frames from a source latent video into
 | --- | --- | --- | --- | --- |
 | `destination` | The destination latent where frames will be replaced. | LATENT | Yes | - |
 | `source` | The source latent providing frames to insert into the destination latent. If not provided, the destination latent is returned unchanged. | LATENT | No | - |
-| `index` | The starting latent frame index in the destination latent where the source latent frames will be placed. Negative values count from the end (default: 0). | INT | Yes | -MAX_RESOLUTION to MAX_RESOLUTION |
+| `index` | The starting latent frame index in the destination latent where the source latent frames will be placed. Negative values count from the end (default: 0). | INT | Yes | -MAX_RESOLUTION to MAX_RESOLUTION (step: 1) |
 
 **Constraints:**
 
@@ -24,4 +24,4 @@ The ReplaceVideoLatentFrames node inserts frames from a source latent video into
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReplaceVideoLatentFrames/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `c70eb5f907964e00babcee66a98d1bf382c3bc704f920d61598a4a03f4d686f8`
+**Source fingerprint (SHA-256):** `5b98d875bdeaec63521bff19fecbc5510036c8b4f90322d8296b216688b557bf`

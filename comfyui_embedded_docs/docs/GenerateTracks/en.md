@@ -16,9 +16,9 @@ The `GenerateTracks` node creates multiple parallel motion paths for video gener
 | `num_tracks` | The number of parallel tracks to generate. The default value is 5. | INT | Yes | 1 - 100 |
 | `track_spread` | Normalized distance between tracks. Tracks are spread perpendicular to the motion direction. The default value is 0.025. | FLOAT | Yes | 0.0 - 1.0 |
 | `bezier` | Enable Bezier curve path using the mid point as control point. The default value is False. | BOOLEAN | Yes | True / False |
-| `mid_x` | Normalized X control point for Bezier curve. Only used when 'bezier' is enabled. The default value is 0.5. | FLOAT | Yes | 0.0 - 1.0 |
-| `mid_y` | Normalized Y control point for Bezier curve. Only used when 'bezier' is enabled. The default value is 0.5. | FLOAT | Yes | 0.0 - 1.0 |
-| `interpolation` | Controls the timing/speed of movement along the path. The default value is "linear". | COMBO | Yes | `"linear"`<br>`"ease_in"`<br>`"ease_out"`<br>`"ease_in_out"`<br>`"constant"` |
+| `mid_x` | Normalized X control point for Bezier curve. Only used when `bezier` is enabled. The default value is 0.5. | FLOAT | Yes | 0.0 - 1.0 |
+| `mid_y` | Normalized Y control point for Bezier curve. Only used when `bezier` is enabled. The default value is 0.5. | FLOAT | Yes | 0.0 - 1.0 |
+| `interpolation` | Controls the timing/speed of movement along the path. The default value is "linear". With "constant", all points stay at the start position. | COMBO | Yes | `"linear"`<br>`"ease_in"`<br>`"ease_out"`<br>`"ease_in_out"`<br>`"constant"` |
 | `track_mask` | Optional mask to indicate visible frames. | MASK | No | - |
 
 **Note:** The `mid_x` and `mid_y` parameters are only used when the `bezier` parameter is set to `True`. When `bezier` is `False`, the path is a straight line from the start to the end point.
@@ -33,4 +33,4 @@ The `GenerateTracks` node creates multiple parallel motion paths for video gener
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GenerateTracks/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `e4070f3f092bccaf8410800e36b97f5dc56584847221cfeca469b2bb4ca44355`
+**Source fingerprint (SHA-256):** `4bd4d03a84f4b7ea260555b43f217af0b90dd4ca5196aca94e8f3886875ab912`

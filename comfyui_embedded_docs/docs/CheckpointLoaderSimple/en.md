@@ -1,7 +1,6 @@
 # Load Checkpoint
 
-## Overview
-
+```markdown
 Loads a diffusion model checkpoint file and decomposes it into three core components: the main model used for denoising latents, the CLIP text encoder, and the VAE image encoder/decoder. This node automatically detects all model files in the `ComfyUI/models/checkpoints` folder and any additional paths configured in your `extra_model_paths.yaml` file.
 
 ## Inputs
@@ -19,8 +18,9 @@ Loads a diffusion model checkpoint file and decomposes it into three core compon
 | `MODEL` | The model used for denoising latents. This is the core diffusion model used for image generation. | MODEL |
 | `CLIP` | The CLIP model used for encoding text prompts, converting text descriptions into information that AI can understand. | CLIP |
 | `VAE` | The VAE model used for encoding and decoding images to and from latent space. | VAE |
+```
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointLoaderSimple/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `2fd8866ae659f8080f46c16d3a9864fa563d2090815d897ea2f42ba8d66d9b39`
+**Source fingerprint (SHA-256):** `db99a8ba83a586491463df0d4e99ba5f77d4511c6d8337a721d76edd3450f310`

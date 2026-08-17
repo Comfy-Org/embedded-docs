@@ -1,27 +1,29 @@
 # WanMoveVisualizeTracks
 
-El nodo WanMoveVisualizeTracks superpone datos de seguimiento de movimiento sobre una secuencia de imágenes o fotogramas de video. Dibuja representaciones visuales de los puntos rastreados, incluyendo sus trayectorias de movimiento y posiciones actuales, haciendo que los datos de movimiento sean visibles y más fáciles de analizar.
+```markdown
+El nodo WanMoveVisualizeTracks dibuja datos de seguimiento de movimiento sobre una secuencia de imágenes o fotogramas de video. Coloca un círculo en la posición actual de cada punto rastreado y dibuja una línea de trayectoria desvaneciente que muestra hacia dónde se ha movido el punto en los fotogramas recientes. Si no se proporcionan datos de seguimiento, las imágenes de entrada se devuelven sin cambios.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `imágenes` | La secuencia de imágenes de entrada o fotogramas de video sobre los cuales visualizar las trayectorias. | IMAGE | Sí | - |
-| `pistas` | Los datos de seguimiento de movimiento que contienen las trayectorias de los puntos e información de visibilidad. Si no se proporcionan, las imágenes de entrada se pasan sin cambios. | TRACKS | No | - |
-| `resolución_de_línea` | El número de fotogramas anteriores a utilizar al dibujar la línea de trayectoria posterior para cada seguimiento (predeterminado: 24). | INT | Sí | 1 - 1024 |
-| `tamaño_círculo` | El tamaño del círculo dibujado en la posición actual de cada seguimiento (predeterminado: 12). | INT | Sí | 1 - 128 |
-| `opacidad` | La opacidad de las superposiciones de seguimiento dibujadas (predeterminado: 0.75). | FLOAT | Sí | 0.0 - 1.0 |
-| `ancho_de_línea` | El ancho de las líneas utilizadas para dibujar las trayectorias de seguimiento (predeterminado: 16). | INT | Sí | 1 - 128 |
+| `images` | La secuencia de imágenes de entrada o fotogramas de video sobre la que se visualizarán los seguimientos. | IMAGE | Sí | - |
+| `tracks` | Los datos de seguimiento de movimiento que contienen las posiciones de los puntos e información de visibilidad. Si no se proporcionan, las imágenes de entrada pasan sin cambios. | TRACKS | No | - |
+| `line_resolution` | El número de fotogramas anteriores a utilizar al dibujar la línea de trayectoria para cada seguimiento (por defecto: 24). | INT | Sí | 1 - 1024 |
+| `circle_size` | El tamaño del círculo dibujado en la posición actual de cada punto rastreado (por defecto: 12). | INT | Sí | 1 - 128 |
+| `opacity` | La opacidad de las superposiciones de seguimiento dibujadas (por defecto: 0.75). | FLOAT | Sí | 0.0 - 1.0 |
+| `line_width` | El ancho de las líneas utilizadas para dibujar las trayectorias de seguimiento (por defecto: 16). | INT | Sí | 1 - 128 |
 
-**Nota:** Si el número de imágenes de entrada no coincide con el número de fotogramas en los datos de `tracks` proporcionados, la secuencia de imágenes se repetirá para igualar la longitud de las trayectorias.
+**Nota:** Si el número de imágenes de entrada no coincide con el número de fotogramas de los datos `tracks` proporcionados, la secuencia de imágenes de entrada se repite para alinearse con los datos de seguimiento.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `IMAGE` | La secuencia de imágenes con los datos de seguimiento de movimiento visualizados como superposiciones. Si no se proporcionaron `pistas`, se devuelven las imágenes de entrada originales. | IMAGE |
+| `IMAGE` | La secuencia de imágenes con los datos de seguimiento de movimiento dibujados como superposiciones. Si no se proporcionaron `tracks`, las imágenes de entrada originales se devuelven sin cambios. | IMAGE |
+```
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveVisualizeTracks/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `b32169a8c9d3a2dd74463c81f6bd7d9a4bc66486af156843f32b0874f0eaeb8f`
+**Source fingerprint (SHA-256):** `d94bfde28dfdad682edcc81b1c63408f1352e0dbc94af4d043d750e8cd4c099b`

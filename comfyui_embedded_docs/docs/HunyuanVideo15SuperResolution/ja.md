@@ -1,32 +1,30 @@
 # HunyuanVideo15SuperResolution
 
-以下が翻訳結果です。
-
-HunyuanVideo15SuperResolution ノードは、ビデオの超解像処理のための conditioning データを準備します。このノードは、ビデオの潜在表現と、オプションで開始画像を受け取り、それらをノイズ拡張データおよび CLIP ビジョンデータとともにパッケージ化し、モデルが高解像度出力を生成するために使用できる形式に変換します。
+HunyuanVideo15SuperResolution ノードは、動画の超解像プロセス用のコンディショニングデータを準備します。動画の潜在表現と、必要に応じて開始画像を受け取り、ノイズ増幅値とオプションのCLIPビジョンデータとともに、モデルが高解像度出力を生成するために使用できる形式にまとめます。
 
 ## 入力
 
-| パラメータ | 説明 | データ型 | 必須 | 範囲 |
+| Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `ポジティブ` | 潜在データおよび拡張データで変更されるポジティブ conditioning 入力です。 | CONDITIONING | はい | なし |
-| `ネガティブ` | 潜在データおよび拡張データで変更されるネガティブ conditioning 入力です。 | CONDITIONING | はい | なし |
-| `vae` | オプションの `開始画像` をエンコードするために使用される VAE です。`開始画像` が指定されている場合に必要です。 | VAE | いいえ | なし |
-| `開始画像` | 超解像をガイドするためのオプションの開始画像です。指定された場合、アップスケールされ、conditioning 潜在データにエンコードされます。 | IMAGE | いいえ | なし |
-| `clipビジョン出力` | conditioning に追加するオプションの CLIP ビジョン埋め込みです。 | CLIP_VISION_OUTPUT | いいえ | なし |
-| `潜在` | conditioning に組み込まれる入力ビデオの潜在表現です。 | LATENT | はい | なし |
-| `ノイズ拡張` | conditioning に適用するノイズ拡張の強度です（デフォルト：0.70）。 | FLOAT | いいえ | 0.0 - 1.0 |
+| `positive` | 連結された潜在表現とノイズ増幅データで変更されるポジティブコンディショニング入力です。 | CONDITIONING | はい | N/A |
+| `negative` | 連結された潜在表現とノイズ増幅データで変更されるネガティブコンディショニング入力です。 | CONDITIONING | はい | N/A |
+| `vae` | オプションの `start_image` をエンコードするために使用されるVAEです。`start_image` を指定する場合に必須です。 | VAE | いいえ | N/A |
+| `start_image` | 超解像プロセスをガイドするオプションの開始画像です。指定すると、アップスケールされ、`vae` でエンコードされ、コンディショニング潜在表現の先頭に配置されます。 | IMAGE | いいえ | N/A |
+| `clip_vision_output` | オプションのCLIPビジョン埋め込みです。指定すると、ポジティブとネガティブの両方のコンディショニングに追加されます。 | CLIP_VISION_OUTPUT | いいえ | N/A |
+| `latent` | コンディショニングに組み込まれる動画の潜在表現です。 | LATENT | はい | N/A |
+| `noise_augmentation` | コンディショニングに適用するノイズ増幅の強さです（デフォルト: 0.70）。上級者向けのパラメータです。 | FLOAT | はい | 0.0 - 1.0 (step 0.01) |
 
-**注記：** `start_image` を指定する場合は、それをエンコードするために `vae` も接続する必要があります。`start_image` は、入力 `latent` が示す寸法に合わせて自動的にアップスケールされます。
+**注:** `start_image` を指定する場合は、エンコードするための `vae` も接続する必要があります。`start_image` は入力 `latent` が示す寸法に合わせて自動的にアップスケールされ、最初の3つのカラーチャンネル（RGB）のみがVAEによって使用されます。
 
 ## 出力
 
-| 出力名 | 説明 | データ型 |
+| Output Name | Description | Data Type |
 | --- | --- | --- |
-| `ポジティブ` | 変更されたポジティブ conditioning です。連結された潜在データ、ノイズ拡張、およびオプションの CLIP ビジョンデータが含まれます。 | CONDITIONING |
-| `ネガティブ` | 変更されたネガティブ conditioning です。連結された潜在データ、ノイズ拡張、およびオプションの CLIP ビジョンデータが含まれます。 | CONDITIONING |
-| `潜在` | 入力された潜在データがそのまま出力されます。 | LATENT |
+| `positive` | 変更されたポジティブコンディショニング。連結された潜在表現、ノイズ増幅、およびオプションのCLIPビジョンデータが含まれます。 | CONDITIONING |
+| `negative` | 変更されたネガティブコンディショニング。連結された潜在表現、ノイズ増幅、およびオプションのCLIPビジョンデータが含まれます。 | CONDITIONING |
+| `latent` | 入力された潜在表現を、変更せずにそのまま渡します。 | LATENT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15SuperResolution/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `f913327a81d034997fa8a485ca4b3691f75ba1d3c5c6e2e73ab107021b58a52a`
+**Source fingerprint (SHA-256):** `c9e64092e78423f5e0dc43446a77240e09100242c25e4fccc91491049fe76be5`

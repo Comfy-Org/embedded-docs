@@ -8,6 +8,8 @@ The ModelPatchLoader node loads specialized model patches from the model_patches
 | --- | --- | --- | --- | --- |
 | `name` | The filename of the model patch to load from the model_patches directory | STRING | Yes | All available model patch files from model_patches folder |
 
+Note: This node is marked as experimental in ComfyUI. The patch type is detected automatically from the file contents, so a single node can handle multiple kinds of patches.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -17,4 +19,4 @@ The ModelPatchLoader node loads specialized model patches from the model_patches
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelPatchLoader/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `e394e165cf416019ed53d9fde42d97c3c9b9f9afd843b12371a624467a4841bf`
+**Source fingerprint (SHA-256):** `7f5225521b82b39b85183ccc7957fc4172e64aed9289f66d53969ea4a2e81b7f`

@@ -1,6 +1,6 @@
 # CLIPTextEncodeKandinsky5
 
-Le nœud CLIPTextEncodeKandinsky5 prépare les invites textuelles pour une utilisation avec le modèle Kandinsky 5. Il prend deux entrées de texte distinctes, les tokenise à l'aide d'un modèle CLIP fourni, et les combine en une seule sortie de conditionnement. Cette sortie est utilisée pour guider le processus de génération d'images.
+Le nœud CLIPTextEncodeKandinsky5 prépare les invites textuelles pour une utilisation avec le modèle Kandinsky 5. Il prend deux entrées de texte distinctes, les tokenise à l'aide d'un modèle CLIP fourni et les combine en une seule sortie de conditionnement. Cette sortie est utilisée pour guider le processus de génération d'images.
 
 ## Entrées
 
@@ -14,9 +14,9 @@ Le nœud CLIPTextEncodeKandinsky5 prépare les invites textuelles pour une utili
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `CONDITIONING` | Les données de conditionnement combinées générées à partir des deux invites textuelles, prêtes à être transmises à un modèle Kandinsky 5 pour la génération d'images. | CONDITIONING |
+| `CONDITIONING` | Les données de conditionnement combinées générées à partir des deux invites textuelles, prêtes à être utilisées dans un modèle Kandinsky 5 pour la génération d'images. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeKandinsky5/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `80227cf87d46bfa42b07976ab29996ae9583a4c461b2f2408db4b7016d3e1a0c`
+**Source fingerprint (SHA-256):** `d988c47ab9a5f01549a3ae01b365d39e9fa2464bb69ea018ec20151939dcfc56`

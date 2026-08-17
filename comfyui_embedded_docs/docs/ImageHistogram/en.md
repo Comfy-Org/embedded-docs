@@ -10,6 +10,8 @@ The ImageHistogram node analyzes the color distribution of an input image. It ca
 
 ## Outputs
 
+All output histograms contain 256 values, one for each intensity level from 0 to 255.
+
 | Output Name | Description | Data Type |
 | --- | --- | --- |
 | `rgb` | A composite histogram representing the average pixel intensity across the red, green, and blue channels. | HISTOGRAM |
@@ -21,4 +23,4 @@ The ImageHistogram node analyzes the color distribution of an input image. It ca
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageHistogram/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `026a470129a49794bc1ddcdd3ecd8e8ad95b43fc94db4387f0e2de365b305879`
+**Source fingerprint (SHA-256):** `5020f5cedd325250a207a00950011f4b6dc19ddfe4d172665ffca4982731dd5e`

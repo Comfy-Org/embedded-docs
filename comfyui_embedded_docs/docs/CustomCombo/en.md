@@ -7,9 +7,9 @@ The Custom Combo node allows you to create a custom dropdown menu with your own 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `choice` | The text option selected from the custom dropdown. The list of available options is defined by the user in the node's frontend interface. | COMBO | Yes | User-defined |
-| `index` | An integer value that can be used to specify an index. Default: 0. | INT | No | 0 |
+| `index` | An integer value that can be used to specify an index. Default: 0. | INT | No | Any integer |
 
-**Note:** The validation for this node's input is intentionally disabled. This allows you to define any custom text options you want in the frontend without the backend checking if your selection is from a predefined list.
+**Note:** The validation for this node's input is intentionally disabled. This allows you to define any custom text options you want in the frontend without the backend checking if your selection is from a predefined list. This node is marked as experimental.
 
 ## Outputs
 
@@ -21,4 +21,4 @@ The Custom Combo node allows you to create a custom dropdown menu with your own 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CustomCombo/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `1c68db3a71526d52d21f79abae146ffa235b4927961ff45db3aa075bba4e910a`
+**Source fingerprint (SHA-256):** `143eafcf32de7ebaf72b5387537154b5deee7d3e3a520a0b2c12ac4fb67890f8`

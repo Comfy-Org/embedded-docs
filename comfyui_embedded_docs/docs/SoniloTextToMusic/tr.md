@@ -1,24 +1,24 @@
 # Sonilo Metinden Müzik Üret
 
-Sonilo Metinden Müziğe düğümü, Sonilo'nun yapay zeka modelini kullanarak bir metin açıklamasından müzik üretir. İstediğiniz müziği tanımlayan bir istem sağlarsınız ve düğüm, bir ses dosyası oluşturmak için Sonilo hizmetine bir istek gönderir. Hedeflenen bir süre belirtebilir veya modelin bunu isteminizden çıkarmasına izin verebilirsiniz.
+Sonilo Text to Music düğümü, Sonilo'nun AI modelini kullanarak bir metin açıklamasından müzik üretir. İstediğiniz müziği tanımlayan bir prompt sağlarsınız ve düğüm, bir ses dosyası oluşturmak için Sonilo hizmetine bir istek gönderir. Ayrıca üretilen müziğin hedef süresini de belirtebilirsiniz.
 
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-| --- | --- | --- | --- | --- |
-| `prompt` | Oluşturulacak müziği tanımlayan metin istemi. Bu alan zorunludur. | STRING | Evet | Yok |
-| `duration` | Saniye cinsinden hedef süre. Modelin süreyi istemden çıkarması için 0 olarak ayarlayın. Maksimum: 6 dakika (360 saniye). Varsayılan: 0. | INT | Hayır | 0 ila 360 |
-| `seed` | Tekrarlanabilirlik için tohum değeri. Şu anda Sonilo hizmeti tarafından yok sayılır ancak grafik tutarlılığı için korunur. Varsayılan: 0. | INT | Hayır | 0 ila 18446744073709551615 |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Üretilecek müziği tanımlayan metin promptu. 1 ile 1000 karakter arasında olmalıdır. | STRING | Evet | 1 to 1000 characters |
+| `duration` | Hedef süre (saniye cinsinden). Maksimum: 6 dakika. Varsayılan: 30. | INT | Hayır | 1 to 360 |
+| `seed` | Yeniden üretilebilirlik için seed. Şu anda Sonilo hizmeti tarafından yok sayılır ancak grafik tutarlılığı için korunur. Varsayılan: 0. | INT | Hayır | 0 to 18446744073709551615 |
 
-**Not:** `seed` girişi, iş akışı tutarlılığı için sağlanmıştır ancak şu anda Sonilo hizmetinin çıktısını etkilemez.
+**Not:** `seed` girdisi iş akışı tutarlılığı için sağlanır ancak şu anda Sonilo hizmetinin çıktısını etkilemez.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-| --- | --- | --- |
-| `audio` | Bir ses dosyası olarak oluşturulan müzik. | AUDIO |
+|-------------|-------------|-----------|
+| `audio` | Bir ses dosyası olarak üretilen müzik. | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SoniloTextToMusic/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `aac2762d9310179279ed7dcc9766f38342400902de2f8791b78d8092a96b86b4`
+**Source fingerprint (SHA-256):** `9dd1503428b0f23e0fb316ca97e3b64ddf11bcb4a82fc34fd248f481a60c1afe`

@@ -1,23 +1,23 @@
 # 학습 데이터셋 불러오기
 
-이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/en.md)
-
-이 노드는 이전에 디스크에 저장된 인코딩된 학습 데이터셋을 불러옵니다. ComfyUI 출력 디렉터리 내의 지정된 폴더에서 모든 데이터 샤드 파일을 검색하여 읽어온 후, 결합된 잠재 벡터와 컨디셔닝 데이터를 반환하여 학습 워크플로우에서 사용할 수 있도록 합니다.
+이 노드는 디스크에서 인코딩된 학습 데이터셋(잠재 벡터와 컨디셔닝)을 불러와 학습에 사용합니다. 이전에 저장된 데이터셋 폴더를 선택하면 해당 폴더 내의 모든 샤드 파일을 읽고 결합된 잠재 벡터와 컨디셔닝 데이터를 반환합니다.
 
 ## 입력
 
-| 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
+| 매개변수 | 설명 | 데이터 유형 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `folder_name` | ComfyUI 출력 디렉터리 내에 위치한, 저장된 데이터셋이 포함된 폴더 이름입니다(기본값: "training_dataset"). | STRING | 예 | 해당 없음 |
+| `folder_name` | datasets 디렉토리에서 불러올 저장된 데이터셋. | COMBO | 예 | 등록된 데이터셋 디렉토리에서 찾은 모든 데이터셋 폴더로 동적으로 채워집니다. `metadata.json` 파일 또는 `.safetensors` 파일을 포함한 폴더만 나열됩니다. |
+
+**참고:** 선택한 데이터셋 폴더는 등록된 데이터셋 디렉토리의 하위 폴더여야 하며 `shard_*.pkl` 형식의 샤드 파일을 하나 이상 포함해야 합니다. 그렇지 않으면 노드에서 오류가 발생합니다.
 
 ## 출력
 
-| 출력 이름 | 설명 | 데이터 타입 |
+| 출력 이름 | 설명 | 데이터 유형 |
 | --- | --- | --- |
-| `latents` | 각 딕셔너리에 `"samples"` 키와 텐서가 포함된 잠재 딕셔너리 목록입니다. | LATENT |
-| `conditioning` | 각 내부 리스트에 해당 샘플의 컨디셔닝 데이터가 포함된 컨디셔닝 리스트 목록입니다. | CONDITIONING |
+| `latents` | 데이터셋 샤드에서 불러온 잠재 벡터 딕셔너리 목록으로, 각 항목에는 `samples` 텐서가 포함됩니다. | LATENT |
+| `conditioning` | 데이터셋 샤드에서 불러온 컨디셔닝 리스트의 목록으로, 샘플당 하나씩 있습니다. | CONDITIONING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `0a07c97e2c6a32f77cd21ea7dbdd33e06fad82285696b88122fef369307e133d`
+**Source fingerprint (SHA-256):** `9f914b27f067460f6f3b54f3f2a7bb793c65b99c85e8aa14ab64894be26bd816`

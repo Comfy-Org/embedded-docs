@@ -1,18 +1,18 @@
 # ModelMergeCosmos14B
 
-**ModelMergeCosmos14B** 節點採用專為 Cosmos 14B 模型架構設計的區塊式方法，合併兩個 AI 模型。您可以透過調整每個模型區塊和嵌入層的權重值（範圍介於 0.0 到 1.0 之間），來混合這兩個模型的不同組件。
+**ModelMergeCosmos14B** 節點使用專為 Cosmos 14B 模型架構設計的區塊式方法合併兩個 AI 模型。您可以透過調整每個模型區塊和嵌入層的權重值（介於 0.0 到 1.0 之間），來混合模型的不同組成部分。
 
 ## 輸入
 
 | 參數 | 說明 | 資料類型 | 必要 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `模型 1` | 要合併的第一個模型 | MODEL | 是 | - |
-| `模型 2` | 要合併的第二個模型 | MODEL | 是 | - |
-| `pos_embedder.` | 位置嵌入器組件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `extra_pos_embedder.` | 額外位置嵌入器組件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `x_embedder.` | x 嵌入器組件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `t_embedder.` | t 嵌入器組件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `affline_norm.` | 仿射正規化組件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `model1` | 要合併的第一個模型 | MODEL | 是 | - |
+| `model2` | 要合併的第二個模型 | MODEL | 是 | - |
+| `pos_embedder.` | 位置嵌入器元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `extra_pos_embedder.` | 額外位置嵌入器元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `x_embedder.` | x 嵌入器元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `t_embedder.` | t 嵌入器元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `affline_norm.` | 仿射正規化元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `blocks.block0.` | 區塊 0 的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `blocks.block1.` | 區塊 1 的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `blocks.block2.` | 區塊 2 的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
@@ -51,13 +51,15 @@
 | `blocks.block35.` | 區塊 35 的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `final_layer.` | 最終層的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 
+注意：所有 FLOAT 權重輸入皆共用相同的設定 — 預設值 1.0，最小值 0.0，最大值 1.0，步進 0.01。
+
 ## 輸出
 
-| 輸出名稱 | 說明 | 資料類型 |
+| 輸出名 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `model` | 合併後的模型，結合了兩個輸入模型的特徵 | MODEL |
+| `model` | 合併後的模型，結合了兩個輸入模型的特性 | MODEL |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmos14B/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `6fcb4fefe7738d0addef49d386c0d3d22cda4c68f0e49ad003d1df595cf0e9d9`
+**Source fingerprint (SHA-256):** `1d1e5dc176643f577723bb0bb9375748a392a6fafa5c9e5e78ef4c4d8289f77c`

@@ -1,22 +1,22 @@
 # Liste Oluştur
 
-Liste Oluştur düğümü, birden fazla girdiyi tek bir sıralı listede birleştirir. Aynı veri türünden herhangi bir sayıda girdi alır ve bunları bağlandıkları sırayla birleştirir. Bu düğüm, bir iş akışında diğer düğümler tarafından işlenmek üzere görüntü veya metin gibi veri grupları hazırlamak için kullanışlıdır.
+Create List düğümü, birden çok girdiyi tek ve sıralı bir listede birleştirir. Aynı veri türünde herhangi bir sayıda girdi alır ve bunları bağlanma sırasına göre art arda ekler. Bu düğüm; görüntüler veya metinler gibi veri gruplarını, iş akışındaki diğer düğümler tarafından işlenmek üzere hazırlamak için kullanışlıdır.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `input_*` | Değişken sayıda girdi yuvası. Artı (+) simgesine tıklayarak daha fazla girdi ekleyebilirsiniz. Tüm girdiler aynı veri türünde olmalıdır (örneğin, tümü IMAGE veya tümü STRING). | Değişken | Evet | Herhangi |
+| `inputs` | Büyütülebilir bir girdi slotları kümesi. Artı (+) simgesine tıklayarak daha fazla slot ekleyin veya öğeleri bağlayın; yeni slotlar otomatik olarak oluşturulur. Her slot bir veya daha fazla öğe kabul eder ve tüm slotlar aynı veri türünü paylaşmalıdır (örneğin, tümü IMAGE veya tümü STRING). | Değişir (bağlanan veri türüyle eşleşir) | Evet | Herhangi bir sayıda slot; her slot bir veya daha fazla öğe kabul eder |
 
-**Not:** Düğüm, öğeleri bağladıkça otomatik olarak yeni girdi yuvaları oluşturacaktır. Düğümün doğru çalışması için bağlı tüm girdiler aynı veri türünü paylaşmalıdır.
+**Not:** Düğüm, öğeleri bağladıkça otomatik olarak yeni girdi slotları oluşturur. Düğümün doğru çalışması için bağlanan tüm girdiler aynı veri türünü paylaşmalıdır ve çıktı listesi de aynı türü alır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `liste` | Bağlı girdilerdeki tüm öğeleri, sağlandıkları sırayla birleştiren tek bir liste. Çıktı veri türü, girdi veri türüyle eşleşir. | Değişken |
+| `list` | Bağlı girdi slotlarındaki tüm öğeleri, slotların bağlanma sırasına göre art arda eklenmiş şekilde içeren tek bir listedir. Çıktı veri türü, girdi veri türüyle eşleşir. | Değişir (girdi veri türüyle eşleşir) |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateList/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d0e10c4d1186e694a72b18407c34cc1df74f77d02c989b507af75594c1a0794e`
+**Source fingerprint (SHA-256):** `457d17da815ef9cee000d9e8dc8768f19ddfe247feae4b2ff4ce3c6cc0fd564e`

@@ -1,20 +1,20 @@
 # Gürültüyü Devre Dışı Bırak
 
-DisableNoise düğümü, örnekleme süreçlerinde gürültü oluşumunu devre dışı bırakmak için kullanılabilecek boş bir gürültü yapılandırması sağlar. Hiçbir gürültü verisi içermeyen özel bir gürültü nesnesi döndürür ve bu çıktıya bağlandığında diğer düğümlerin gürültüyle ilgili işlemleri atlamasına olanak tanır.
+DisableNoise düğümü, örnekleme süreçlerinde gürültü oluşturmayı devre dışı bırakmak için kullanılabilen boş bir gürültü yapılandırması sağlar. Hiçbir gürültü verisi içermeyen özel bir gürültü nesnesi döndürür; bu çıktıya bağlandığında diğer düğümlerin gürültüyle ilgili işlemleri atlamasına olanak tanır.
 
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| *Giriş parametresi yok* | Bu düğüm herhangi bir giriş parametresi gerektirmez. | - | - | - |
+| *Girdi parametresi yok* | Bu düğüm herhangi bir girdi parametresi gerektirmez. | - | - | - |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `NOISE` | Örnekleme süreçlerinde gürültü oluşumunu devre dışı bırakmak için kullanılabilecek boş bir gürültü yapılandırması döndürür. | NOISE |
+| `NOISE` | Örnekleme süreçlerinde gürültü oluşturmayı devre dışı bırakmak için kullanılabilen boş bir gürültü yapılandırması döndürür. | NOISE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DisableNoise/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `527152dff69bd5c55c622c634b87e625eb16708f8595fa02d69cf38f1125c5eb`
+**Source fingerprint (SHA-256):** `b9edcda655dab3196233b6c66fdb41eb0585b153616b793016d532992b922934`

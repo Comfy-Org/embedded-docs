@@ -1,22 +1,22 @@
 # Cargar modelo de eliminación de fondo
 
-## Descripción general
-
-Carga un modelo de eliminación de fondo desde un archivo. Este nodo prepara el modelo para su uso en la eliminación de fondos de imágenes.
+Carga un modelo de eliminación de fondo desde un archivo y lo deja listo para que otros nodos lo utilicen al eliminar fondos de imágenes. El archivo del modelo se selecciona entre los archivos disponibles en la carpeta de eliminación de fondo.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `nombre_del_modelo_de_eliminación_de_fondo` | El modelo utilizado para eliminar fondos de imágenes. Seleccione de la lista de archivos de modelo de eliminación de fondo disponibles. | STRING | Sí | Lista de archivos de modelo disponibles |
+| `bg_removal_name` | El modelo utilizado para eliminar fondos de imágenes. | COMBO | Sí | Lista de archivos de modelo disponibles (lista ordenada de archivos en la carpeta background_removal) |
+
+**Nota:** El nodo genera un error si el archivo seleccionado no contiene un modelo de eliminación de fondo válido.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `modelo_de_fondo` | El modelo de eliminación de fondo cargado, listo para ser utilizado por otros nodos para procesar imágenes. | BACKGROUND_REMOVAL |
+| `bg_model` | El modelo de eliminación de fondo cargado, listo para ser utilizado por otros nodos para procesar imágenes. | BACKGROUND_REMOVAL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadBackgroundRemovalModel/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `63a1ffb37ea8581e3ba29f7dc4f871612d7ec458e6d36f5e2244201941d48f9d`
+**Source fingerprint (SHA-256):** `76f6536eae849a8b63f46f11c6afcf8c89774e4e89a5976e051253acc6108bcc`

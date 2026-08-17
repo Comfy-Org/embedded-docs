@@ -1,23 +1,23 @@
 # Klasörden Görsel ve Metin Veri Kümesi Yükle
 
-Bu düğüm, belirtilen bir klasörden görüntüleri ve bunlara karşılık gelen metin açıklamalarını yükler. Görüntü dosyalarını arar ve otomatik olarak aynı temel ada sahip eşleşen `.txt` dosyalarını açıklama olarak kullanmak üzere bulur. Düğüm ayrıca, alt klasörlerin çıktıda görüntülerin birden çok kez tekrarlanması gerektiğini belirtmek için bir sayı önekiyle (örneğin `10_klasor_adi`) adlandırılabildiği belirli bir klasör yapısını da destekler.
+Bu düğüm, belirtilen bir klasörden görsel ve metin altyazılarından oluşan bir veri kümesi yükler ve bunları bir liste olarak döndürür. Desteklenen biçimler: PNG, JPG, JPEG, WEBP. Her görsel dosyası için düğüm, altyazı olarak kullanmak üzere aynı temel ada sahip eşleşen bir `.txt` dosyasını otomatik olarak arar. Düğüm ayrıca, alt klasör adlarının bir sayı önekiyle başladığı (ör. `10_folder_name`) ve bu alt klasördeki görsellerin çıktıda o sayı kadar tekrarlanmasına neden olan bir klasör yapısını da destekler.
 
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `folder` | Görüntülerin yükleneceği klasör. Mevcut seçenekler, ComfyUI'nin giriş dizini içindeki alt dizinlerdir. | COMBO | Evet | *`folder_paths.get_input_subfolders()` işlevinden dinamik olarak yüklenir* |
+| `folder` | Görsellerin ve metin altyazılarının yükleneceği klasör. Mevcut seçenekler, ComfyUI giriş dizini içindeki alt klasörlerdir. | COMBO | Evet | *`folder_paths.get_input_subfolders()` işlevinden dinamik olarak yüklenir* |
 
-**Not:** Düğüm belirli bir dosya yapısı bekler. Her görüntü dosyası (`.png`, `.jpg`, `.jpeg`, `.webp`) için, açıklama olarak kullanılmak üzere aynı ada sahip bir `.txt` dosyası arar. Bir açıklama dosyası bulunamazsa, boş bir dize kullanılır. Düğüm ayrıca, bir alt klasörün adının bir sayı ve alt çizgi ile başladığı (örneğin, `5_kediler`) özel bir yapıyı da destekler; bu, o alt klasördeki tüm görüntülerin nihai çıktı listesinde o sayı kadar tekrarlanmasına neden olur.
+**Not:** Düğüm belirli bir dosya yapısı bekler. Her görsel dosyası için (`.png`, `.jpg`, `.jpeg`, `.webp`), altyazı olarak kullanmak üzere aynı ada sahip bir `.txt` dosyası arar. Bir altyazı dosyası bulunamazsa, boş bir dize kullanılır. Düğüm ayrıca, bir alt klasörün adının bir sayı ve alt çizgi ile başladığı (örn. `5_cats`) özel bir yapıyı da destekler; bu, o alt klasördeki tüm görsellerin nihai çıktı listesinde o sayı kadar tekrarlanmasına neden olur. Seçilen klasör ComfyUI'nin giriş dizini içinde olmalıdır; dışarıya çözümlenen klasör adları reddedilir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `images` | Yüklenen görüntü tensörlerinin bir listesi. | IMAGE |
-| `texts` | Yüklenen her görüntüye karşılık gelen metin açıklamalarının bir listesi. | STRING |
+| `images` | Yüklenen görsel tensörlerinin bir listesi. | IMAGE |
+| `texts` | Yüklenen her görsele karşılık gelen metin altyazılarının bir listesi. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageTextDataSetFromFolder/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `e176f35118f08ea397c63f5b6f347d9cdb3dc1a08db7ad7a5cc8255e1526e6ca`
+**Source fingerprint (SHA-256):** `d34494d59a65edb38d7e6a5f12c241fb0093371db0b0bf1e52789e84209ad3f5`

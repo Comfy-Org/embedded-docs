@@ -1,24 +1,26 @@
 # Ses Kaydet (MP3)
 
-SaveAudioMP3 düğümü, ses verilerini MP3 dosyası olarak kaydeder. Ses girişini alır ve özelleştirilebilir dosya adı ve kalite ayarlarıyla belirtilen çıktı dizinine aktarır. Düğüm, oynatılabilir bir MP3 dosyası oluşturmak için dosya adlandırma ve format dönüşümünü otomatik olarak yönetir.
+SaveAudioMP3 düğümü, ses verilerini MP3 dosyası olarak kaydeder. Bir ses girdisi alır ve özelleştirilebilir bir dosya adı öneki ve kalite ayarıyla çıktı dizinine yazar. Bu düğüm kullanımdan kaldırılmıştır ve gelecek sürümlerde kaldırılabilir.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-| --- | --- | --- | --- | --- |
-| `ses` | MP3 dosyası olarak kaydedilecek ses verisi | AUDIO | Evet | - |
-| `dosya_adı_ön_eki` | Çıktı dosya adı için ön ek (varsayılan: "audio/ComfyUI") | STRING | Hayır | - |
-| `kalite` | MP3 dosyası için ses kalite ayarı (varsayılan: "V0") | STRING | Hayır | "V0"<br>"128k"<br>"320k" |
-| `prompt` | Dahili istem verisi (sistem tarafından otomatik sağlanır) | PROMPT | Hayır | - |
-| `extra_pnginfo` | Ek PNG bilgisi (sistem tarafından otomatik sağlanır) | EXTRA_PNGINFO | Hayır | - |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `audio` | MP3 dosyası olarak kaydedilecek ses verisi | AUDIO | Evet | - |
+| `filename_prefix` | Çıktı dosya adı için önek (varsayılan: "audio/ComfyUI") | STRING | Hayır | - |
+| `quality` | MP3 kodlama kalite ayarı (varsayılan: "V0"). V0, yüksek kalite için değişken bit hızı kullanır; 128k ve 320k, 128 ve 320 kbps sabit bit hızlarını kullanır | COMBO | Hayır | `"V0"`<br>`"128k"`<br>`"320k"` |
+| `prompt` | Sistem tarafından otomatik olarak sağlanan dahili prompt verisi | PROMPT | Hayır | - |
+| `extra_pnginfo` | Sistem tarafından otomatik olarak sağlanan ek PNG bilgisi | EXTRA_PNGINFO | Hayır | - |
+
+**Not:** `audio` girdisi None ise (örneğin, kaynak videoda ses parçası olmadığında), düğüm bir ValueError hatası verir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-| --- | --- | --- |
-| *Yok* | Bu düğüm herhangi bir çıktı verisi döndürmez, ancak ses dosyasını çıktı dizinine kaydeder | - |
+|-------------|-------------|-----------|
+| `audio` | MP3 dosyası olarak kaydedilen ses verisi | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAudioMP3/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `70b960cc9c86ad9a4c98e643f40e6caaafdeb9840ac72a5f8e59533fd6120e3e`
+**Source fingerprint (SHA-256):** `7d3b439dfd7cb211dd6568f6b5124bb225909dcf0ae150addc4ca226d947a4f0`

@@ -1,16 +1,16 @@
 # ModelMergeMochiPreview
 
-Este nó mescla dois modelos de IA usando uma abordagem baseada em blocos com controle refinado sobre diferentes componentes do modelo. Ele permite combinar modelos ajustando os pesos de interpolação para seções específicas, incluindo frequências posicionais, camadas de incorporação (embedding) e blocos individuais do transformador. O processo de mesclagem combina as arquiteturas e parâmetros de ambos os modelos de entrada de acordo com os valores de peso especificados.
+Este nó mescla dois modelos de IA usando uma abordagem baseada em blocos, com controle refinado sobre diferentes componentes do modelo. Ele permite combinar modelos ajustando os pesos de interpolação para seções específicas, incluindo frequências posicionais, camadas de embedding e blocos individuais do transformador. O processo de mesclagem combina as arquiteturas e os parâmetros de ambos os modelos de entrada de acordo com os valores de peso especificados.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `model1` | O primeiro modelo a ser mesclado | MODEL | Sim | - |
 | `model2` | O segundo modelo a ser mesclado | MODEL | Sim | - |
 | `pos_frequencies.` | Peso para interpolação das frequências posicionais (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `t_embedder.` | Peso para interpolação do incorporador temporal (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `t5_y_embedder.` | Peso para interpolação do incorporador T5-Y (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `t_embedder.` | Peso para interpolação do embedder de tempo (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `t5_y_embedder.` | Peso para interpolação do embedder T5-Y (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `t5_yproj.` | Peso para interpolação da projeção T5-Y (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `blocks.0.` | Peso para interpolação do bloco 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `blocks.1.` | Peso para interpolação do bloco 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
@@ -64,11 +64,11 @@ Este nó mescla dois modelos de IA usando uma abordagem baseada em blocos com co
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
+| Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `model` | O modelo mesclado combinando características de ambos os modelos de entrada de acordo com os pesos especificados | MODEL |
+| `model` | O modelo mesclado que combina características de ambos os modelos de entrada de acordo com os pesos especificados | MODEL |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeMochiPreview/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `aebf536f3f89ca8c81141ac871b1b612082c3bd38a29984168b05eccf0cb57e3`
+**Source fingerprint (SHA-256):** `8fdf5d023d97ef04bf2b40577be5dbc4c16f8f4437586a98adbdbf7f9fa8a359`

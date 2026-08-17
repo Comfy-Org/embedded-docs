@@ -1,4 +1,4 @@
-# Recraft Image Inpainting Node
+# Recraft Image Inpainting
 
 This node modifies specific areas of an image based on a text prompt and a mask. It uses the Recraft API to intelligently edit only the masked regions while keeping the rest of the image unchanged.
 
@@ -25,4 +25,4 @@ This node modifies specific areas of an image based on a text prompt and a mask.
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftImageInpaintingNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `64493a418224f4a01c6b6511581d31f92189852a32b41d9748629e57782bd511`
+**Source fingerprint (SHA-256):** `539a49aec582f529a13059388222c3998e22d52618738843d9b2b6e0fb1ea5c3`

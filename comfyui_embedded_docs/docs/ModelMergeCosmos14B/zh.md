@@ -1,17 +1,17 @@
 # 模型融合（Cosmos14B）
 
-**ModelMergeCosmos14B** 节点采用基于块的方法，专门为 Cosmos 14B 模型架构设计，用于合并两个 AI 模型。它允许您通过调整每个模型块和嵌入层的权重值（范围在 0.0 到 1.0 之间）来混合模型的不同组件。
+**ModelMergeCosmos14B** 节点采用基于块的方法合并两个 AI 模型，该方法专门针对 Cosmos 14B 模型架构设计。您可以通过调整每个模型块和嵌入层的权重值（0.0 到 1.0 之间）来混合两个模型的不同组件。
 
 ## 输入
 
-| 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
+| 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `模型1` | 要合并的第一个模型 | MODEL | 是 | - |
-| `模型2` | 要合并的第二个模型 | MODEL | 是 | - |
-| `pos_embedder.` | 位置嵌入器组件的权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `extra_pos_embedder.` | 额外位置嵌入器组件的权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `x_embedder.` | x 嵌入器组件的权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `t_embedder.` | t 嵌入器组件的权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `model1` | 要合并的第一个模型 | MODEL | 是 | - |
+| `model2` | 要合并的第二个模型 | MODEL | 是 | - |
+| `pos_embedder.` | 位置嵌入组件的权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `extra_pos_embedder.` | 额外位置嵌入组件的权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `x_embedder.` | x 嵌入组件的权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `t_embedder.` | t 嵌入组件的权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `affline_norm.` | 仿射归一化组件的权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `blocks.block0.` | 块 0 的权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `blocks.block1.` | 块 1 的权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
@@ -51,13 +51,15 @@
 | `blocks.block35.` | 块 35 的权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `final_layer.` | 最终层的权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 
+注意：所有 FLOAT 权重输入共享相同的配置——默认值 1.0，最小值 0.0，最大值 1.0，步长 0.01。
+
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `model` | 合并后的模型，结合了两个输入模型的特征 | MODEL |
+| `model` | 合并后的模型，融合了两个输入模型的特征 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmos14B/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `6fcb4fefe7738d0addef49d386c0d3d22cda4c68f0e49ad003d1df595cf0e9d9`
+**Source fingerprint (SHA-256):** `1d1e5dc176643f577723bb0bb9375748a392a6fafa5c9e5e78ef4c4d8289f77c`

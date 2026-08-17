@@ -17,4 +17,4 @@ This node takes a single boolean (true/false) input and outputs the opposite val
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InvertBooleanNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `c512b0f8847c971776c2aebe0c6053ca17a66f756b1b90c803d1a6ef9d3d0ad0`
+**Source fingerprint (SHA-256):** `7e28bb375a25249bc237870bf281321375c4be7b7782b217b3e0f70afc2e0c53`

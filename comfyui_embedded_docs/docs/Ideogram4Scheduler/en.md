@@ -12,6 +12,8 @@ The Ideogram 4 Scheduler node generates a sequence of sigma values (noise levels
 | `mu` | The mean parameter for the logit-normal distribution, controlling the central noise level (default: 0.0) | FLOAT | Yes | -10.0 to 10.0 (step: 0.05) |
 | `std` | The standard deviation parameter for the logit-normal distribution, controlling the spread of noise levels (default: 1.75) | FLOAT | Yes | 0.1 to 5.0 (step: 0.05) |
 
+Note: The effective central shift of the schedule is determined by `mu` combined with a resolution term based on the image area relative to a 512×512 reference. Larger image areas therefore shift the noise schedule compared with smaller ones.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -21,4 +23,4 @@ The Ideogram 4 Scheduler node generates a sequence of sigma values (noise levels
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Ideogram4Scheduler/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `408ea680158500690e28e300098a5c4fd13eb1a2c96c3d95db06244151116f22`
+**Source fingerprint (SHA-256):** `af0749713ce223d2246fc24b5100f18aa68d56746480990282899c223578b8f4`

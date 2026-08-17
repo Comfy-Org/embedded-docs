@@ -1,53 +1,51 @@
 # WanAnimateToVideo
 
-Voici la traduction en français de la documentation du nœud WanAnimateToVideo :
-
-Le nœud WanAnimateToVideo génère du contenu vidéo en combinant plusieurs entrées de conditionnement, notamment des références de pose, des expressions faciales et des éléments d'arrière-plan. Il traite diverses entrées vidéo pour créer des séquences animées cohérentes tout en maintenant la cohérence temporelle entre les images. Le nœud gère les opérations dans l'espace latent et peut prolonger des vidéos existantes en poursuivant les motifs de mouvement.
+Ce nœud expérimental prépare la génération vidéo Wan en combinant une image de référence avec des vidéos facultatives de pose, de visage et d’arrière-plan. Il construit les données de conditionnement et un tenseur vidéo latent vide pour la génération ultérieure, et il renvoie des informations de décalage de frames qui aident à étendre des vidéos existantes par segments.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `positif` | Conditionnement positif pour guider la génération vers le contenu souhaité | CONDITIONING | Oui | - |
-| `négatif` | Conditionnement négatif pour éloigner la génération du contenu indésirable | CONDITIONING | Oui | - |
-| `vae` | Modèle VAE utilisé pour encoder et décoder les données d'image | VAE | Oui | - |
-| `largeur` | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `hauteur` | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `longueur` | Nombre d'images à générer (par défaut : 77, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
-| `taille_du_lot` | Nombre de vidéos à générer simultanément (par défaut : 1) | INT | Oui | 1 à 4096 |
-| `sortie_vision_clip` | Sortie facultative du modèle de vision CLIP pour un conditionnement supplémentaire | CLIP_VISION_OUTPUT | Non | - |
-| `image_de_référence` | Image de référence utilisée comme point de départ pour la génération | IMAGE | Non | - |
-| `vidéo_visage` | Entrée vidéo fournissant des indications sur les expressions faciales | IMAGE | Non | - |
-| `vidéo_pose` | Entrée vidéo fournissant des indications sur la pose et le mouvement | IMAGE | Non | - |
-| `images_max_poursuite_mouvement` | Nombre maximal d'images à poursuivre à partir du mouvement précédent (par défaut : 5, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
-| `vidéo_arrière_plan` | Vidéo d'arrière-plan à composer avec le contenu généré | IMAGE | Non | - |
-| `masque_personnage` | Masque définissant les régions du personnage pour un traitement sélectif | MASK | Non | - |
-| `poursuite_mouvement` | Séquence de mouvement précédente à poursuivre pour la cohérence temporelle | IMAGE | Non | - |
-| `décalage_image_vidéo` | Le nombre d'images à décaler dans toutes les vidéos d'entrée. Utilisé pour générer des vidéos plus longues par segments. Connectez-le à la sortie `décalage_image_vidéo` du nœud précédent pour prolonger une vidéo. (par défaut : 0, pas : 1) | INT | Oui | 0 à MAX_RESOLUTION |
+| `positive` | Conditionnement positif pour guider la génération vers le contenu souhaité. | CONDITIONING | Oui | - |
+| `negative` | Conditionnement négatif pour éloigner la génération du contenu indésirable. | CONDITIONING | Oui | - |
+| `vae` | Modèle VAE utilisé pour encoder et décoder les données d’image. | VAE | Oui | - |
+| `width` | Largeur de la vidéo de sortie en pixels (défaut : 832, pas : 16). | INT | Oui | 16 à MAX_RESOLUTION |
+| `height` | Hauteur de la vidéo de sortie en pixels (défaut : 480, pas : 16). | INT | Oui | 16 à MAX_RESOLUTION |
+| `length` | Nombre de frames à générer (défaut : 77, pas : 4). | INT | Oui | 1 à MAX_RESOLUTION |
+| `batch_size` | Nombre de vidéos à générer en un seul lot (défaut : 1). | INT | Oui | 1 à 4096 |
+| `clip_vision_output` | Sortie facultative du modèle de vision CLIP utilisée comme conditionnement supplémentaire pour les conditionnements positif et négatif. | CLIP_VISION_OUTPUT | Non | - |
+| `reference_image` | Image de référence utilisée comme point de départ pour la génération. Si aucune n’est fournie, une image noire (tous les zéros) est utilisée. | IMAGE | Non | - |
+| `face_video` | Vidéo fournissant des indications d’expressions faciales. Une fois traitée, elle est redimensionnée à 512x512 et normalisée dans la plage -1.0 à 1.0. | IMAGE | Non | - |
+| `pose_video` | Vidéo fournissant des indications de pose et de mouvement. Si elle est plus courte que `length`, elle est complétée par sa dernière frame. | IMAGE | Non | - |
+| `continue_motion_max_frames` | Nombre maximal de frames à poursuivre à partir d’un mouvement précédent. Seules les dernières frames de `continue_motion`, à hauteur de cette valeur, sont utilisées (défaut : 5, pas : 4). | INT | Oui | 1 à MAX_RESOLUTION |
+| `background_video` | Vidéo d’arrière-plan à composer avec le contenu généré. | IMAGE | Non | - |
+| `character_mask` | Masque définissant les zones des personnages pour un traitement sélectif. Si le masque ne contient qu’une seule frame, il est répété sur toutes les frames. | MASK | Non | - |
+| `continue_motion` | Séquence de mouvement précédente utilisée pour maintenir la cohérence temporelle lors de l’extension d’une vidéo. Seules les dernières `continue_motion_max_frames` frames sont utilisées. | IMAGE | Non | - |
+| `video_frame_offset` | Nombre de frames de décalage à appliquer dans toutes les vidéos d’entrée. Utilisé pour générer des vidéos plus longues par segments. Connectez cette entrée à la sortie `video_frame_offset` du nœud précédent pour étendre une vidéo. (défaut : 0, pas : 1) | INT | Oui | 0 à MAX_RESOLUTION |
 
 **Contraintes des paramètres :**
 
-- Lorsque `pose_video` est fourni, la longueur de sortie sera ajustée pour correspondre à la durée de la vidéo de pose si la logique `trim_to_pose_video` est active (actuellement définie sur `False` dans le code source)
-- `face_video` est automatiquement redimensionné en résolution 512x512 et normalisé dans une plage de -1,0 à 1,0 lors du traitement
-- Les images de `continue_motion` sont limitées par le paramètre `continue_motion_max_frames` ; seules les dernières images `continue_motion_max_frames` de l'entrée sont utilisées
-- Les vidéos d'entrée (`face_video`, `pose_video`, `background_video`, `character_mask`) sont décalées de `video_frame_offset` avant le traitement ; si le décalage dépasse la longueur de la vidéo, l'entrée est ignorée
-- Si `character_mask` ne contient qu'une seule image, elle sera répétée sur toutes les images
-- Lorsque `clip_vision_output` est fourni, il est appliqué à la fois au conditionnement positif et négatif
-- Si `reference_image` n'est pas fourni, une image noire (tous les zéros) est utilisée comme référence par défaut
-- Si `continue_motion` n'est pas fourni, les images initiales sont remplies avec un bruit gris (intensité 0,5)
+- Lorsque `pose_video` est fournie, une vidéo de pose plus courte est complétée par sa dernière frame pour correspondre à `length`. Le code source contient un indicateur `trim_to_pose_video`, actuellement désactivé, qui raccourcirait plutôt la sortie pour correspondre à la longueur de la vidéo de pose.
+- `face_video` est redimensionnée à 512x512 et normalisée dans la plage -1.0 à 1.0.
+- `continue_motion` est limitée aux dernières `continue_motion_max_frames` frames. Lorsque `continue_motion` est utilisée, `video_frame_offset` est réduit du nombre de frames retenues, mais jamais en dessous de 0.
+- Les vidéos d’entrée (`face_video`, `pose_video`, `background_video`, `character_mask`) sont décalées de `video_frame_offset`. Si le décalage est supérieur ou égal à leur longueur, l’entrée est ignorée, sauf pour un `character_mask` à une seule frame, qui est toujours répété.
+- Lorsque `clip_vision_output` est fournie, elle est appliquée aux conditionnements positif et négatif.
+- Si `reference_image` n’est pas fournie, une image noire (tous les zéros) est utilisée comme référence.
+- Si `continue_motion` n’est pas fournie, des frames grises avec une valeur de pixel de 0,5 sont utilisées pour la partie mouvement.
+- `width` et `height` utilisent un pas de 16 ; les dimensions latentes correspondantes sont `width / 8` et `height / 8`.
 
 ## Sorties
 
-| Nom de la sortie | Description | Type de données |
+| Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `positif` | Conditionnement positif modifié avec contexte vidéo supplémentaire incluant la sortie de vision CLIP, le latent de la vidéo de pose, les pixels de la vidéo faciale, l'image latente concaténée et le masque concaténé | CONDITIONING |
-| `négatif` | Conditionnement négatif modifié avec contexte vidéo supplémentaire incluant la sortie de vision CLIP, le latent de la vidéo de pose, les pixels de la vidéo faciale (inversés), l'image latente concaténée et le masque concaténé | CONDITIONING |
-| `latent` | Contenu vidéo généré au format d'espace latent avec la forme [batch_size, 16, latent_length + trim_latent, latent_height, latent_width] | LATENT |
-| `latent_rogné` | Informations de rognage dans l'espace latent indiquant le nombre d'images latentes à rogner depuis le début (correspond aux images latentes de l'image de référence) | INT |
-| `image_rognée` | Informations de rognage dans l'espace image pour les images de mouvement de référence, indiquant le nombre d'images à rogner depuis le début | INT |
-| `décalage de trame vidéo` | Décalage d'images mis à jour pour poursuivre la génération vidéo par segments, calculé comme le décalage précédent plus la longueur générée | INT |
+| `positive` | Conditionnement positif modifié qui inclut toujours l’image latente concaténée et le masque concaténé. Si `clip_vision_output`, `pose_video` ou `face_video` sont fournies, leurs valeurs sont également ajoutées. | CONDITIONING |
+| `negative` | Conditionnement négatif modifié qui inclut toujours l’image latente concaténée et le masque concaténé. Si `clip_vision_output`, `pose_video` ou `face_video` sont fournies, leurs valeurs sont également ajoutées ; les pixels de la vidéo de visage sont définis à -1.0. | CONDITIONING |
+| `latent` | Tenseur latent vide initialisé à zéro, de forme `[batch_size, 16, latent_length + trim_latent, latent_height, latent_width]`. | LATENT |
+| `trim_latent` | Nombre de frames latentes à retirer au début, correspondant aux frames latentes de l’image de référence. | INT |
+| `trim_image` | Nombre de frames d’image à retirer au début, correspondant aux frames de mouvement de référence. | INT |
+| `video_frame_offset` | Décalage de frames mis à jour pour la génération vidéo par segments, égal au décalage d’entrée ajusté plus la longueur générée. | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanAnimateToVideo/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `c2ca90f4963f629d51cdd7f4bdb67e01c32ce5ca7d916b1f992ccd220f57566c`
+**Source fingerprint (SHA-256):** `a95bae4c7ae4ddc8a95bc9dafa2ca920b1d2166802615189537dce16949bfc03`

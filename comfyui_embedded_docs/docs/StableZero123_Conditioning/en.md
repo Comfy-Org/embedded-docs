@@ -28,4 +28,4 @@ The StableZero123_Conditioning node processes an input image and camera angles t
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableZero123_Conditioning/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `197b4efaf13837500f2c3aaf589facc384b3f0bbd026aaa75a7fee509bd0bc51`
+**Source fingerprint (SHA-256):** `a694610c9f22fe0dab3ae02f4aabb33e3de8e5031c82dff5e8ba232c098f4a1d`

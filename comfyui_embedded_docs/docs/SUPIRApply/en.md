@@ -26,4 +26,4 @@ The SUPIRApply node applies a SUPIR model patch to a diffusion model. It uses th
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SUPIRApply/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `41900f166aa7c0e325da874a3e250c56b94569822292785b1b3165705eb22e0c`
+**Source fingerprint (SHA-256):** `fa9f67f63777160863c44c620d8de11e92f79245c3f5b60e138975dfd0cc65c7`

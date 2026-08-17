@@ -1,20 +1,22 @@
 # CargadorCodificadorAudio
 
-El nodo `AudioEncoderLoader` carga un modelo de codificador de audio desde un archivo en tu carpeta de codificadores de audio. Toma como entrada el nombre de archivo de un modelo de codificador de audio y devuelve el modelo cargado, que luego puede utilizarse para tareas de procesamiento de audio en tu flujo de trabajo.
+El nodo `AudioEncoderLoader` carga un modelo de codificador de audio desde un archivo en tu carpeta `audio_encoders`. Toma el nombre de archivo de un modelo de codificador de audio como entrada y devuelve el modelo cargado, que luego puede usarse para tareas de procesamiento de audio en tu flujo de trabajo.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `nombre_codificador_audio` | Selecciona qué archivo de modelo de codificador de audio cargar | STRING | Sí | Lista de archivos de codificador de audio disponibles en la carpeta audio_encoders |
+| `audio_encoder_name` | Selecciona qué archivo de modelo de codificador de audio cargar | COMBO | Sí | Lista de archivos de codificador de audio disponibles en la carpeta `audio_encoders` |
+
+Nota: El archivo seleccionado debe contener un modelo de codificador de audio válido. Si el archivo no es válido y no contiene un modelo válido, el nodo genera un error.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
 | `audio_encoder` | El modelo de codificador de audio cargado, listo para usar en flujos de trabajo de procesamiento de audio | AUDIO_ENCODER |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioEncoderLoader/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `24cbd45198db7d950633358c29de57f56c999bc33534fabe80404528d194163c`
+**Source fingerprint (SHA-256):** `780d0c7fcf571e5ef02d273791e5d2e894baa6d5900d845ed65e9ce669769f7e`

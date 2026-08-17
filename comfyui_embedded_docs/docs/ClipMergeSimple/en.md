@@ -1,47 +1,45 @@
 # CLIPMergeSimple
 
-`CLIPMergeSimple` is an advanced model merging node used to combine two CLIP text encoder models based on a specified ratio.
-
-This node specializes in merging two CLIP models based on a specified ratio, effectively blending their characteristics. It selectively applies patches from one model to another, excluding specific components like position IDs and logit scale, to create a hybrid model that combines features from both source models.
+`CLIPMergeSimple` merges two CLIP text encoder models into a single one. It clones the first CLIP model as the base and applies weighted parameter patches taken from the second CLIP model, so the result combines features from both. The `ratio` setting controls how strongly each model contributes; at the default of 1.0 the first model is used unchanged.
 
 ## Inputs
 
-| Parameter | Description | Data Type | Input Type | Default | Range |
-| --- | --- | --- | --- | --- | --- |
-| `clip1` | The first CLIP model to be merged. It serves as the base model for the merging process. | CLIP | REQUIRED | - | - |
-| `clip2` | The second CLIP model to be merged. Its key patches, except for position IDs and logit scale, are applied to the first model based on the specified ratio. | CLIP | REQUIRED | - | - |
-| `ratio` | Determines the proportion of features from the second model to blend into the first model. A ratio of 1.0 means fully adopting the second model's features, while 0.0 retains only the first model's features. | FLOAT | REQUIRED | 1.0 | 0.0 - 1.0 (step: 0.01) |
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `clip1` | The first CLIP model. It is cloned and used as the base model for the merge. | CLIP | Yes | — |
+| `clip2` | The second CLIP model. Its key patches are applied to the base model, except for patches whose keys end with `.position_ids` or `.logit_scale`. | CLIP | Yes | — |
+| `ratio` | Controls the relative strength of the two models. The base model (`clip1`) keeps a strength equal to `ratio`, and `clip2`'s patches are applied with a strength of `1.0 - ratio`. At the default of 1.0 the output equals `clip1`; lower values blend in more of `clip2`; at 0.0 `clip2`'s patches are applied at full strength. | FLOAT | Yes | 0.0 to 1.0 (default: 1.0, step: 0.01) |
 
 ## Outputs
 
 | Output Name | Description | Data Type |
-| --- | --- | --- |
-| `clip` | The resulting merged CLIP model, incorporating features from both input models according to the specified ratio. | CLIP |
+|-------------|-------------|-----------|
+| `clip` | The merged CLIP model: a clone of `clip1` with patches from `clip2` applied according to `ratio`. | CLIP |
 
 ## Merging Mechanism Explained
 
 ### Merging Algorithm
 
-The node uses weighted averaging to merge the two models:
+The node uses weighted patch application to combine the two models:
 
-1. **Clone Base Model**: First clones `clip1` as the base model
-2. **Get Patches**: Obtains all key patches from `clip2`
-3. **Filter Special Keys**: Skips keys ending with `.position_ids` and `.logit_scale`
-4. **Apply Weighted Merge**: Uses the formula `(1.0 - ratio) * clip1 + ratio * clip2`
+1. **Clone Base Model**: Clones `clip1` to serve as the base model.
+2. **Get Patches**: Collects all key patches (parameter values) from `clip2`.
+3. **Filter Special Keys**: Skips keys ending with `.position_ids` and `.logit_scale`, so those parameters stay unchanged.
+4. **Apply Weighted Merge**: Applies `clip2`'s patches to the cloned base model with a patch strength of `1.0 - ratio`, while the base model keeps a strength of `ratio`.
 
 ### Ratio Parameter Explained
 
-- **ratio = 0.0**: Fully uses clip1, ignores clip2
-- **ratio = 0.5**: 50% contribution from each model
-- **ratio = 1.0**: Fully uses clip2, ignores clip1
+- **ratio = 1.0**: Base strength is 1.0 and patch strength is 0.0, so the output is identical to `clip1` (default).
+- **ratio = 0.5**: Base strength and patch strength are both 0.5, so both models contribute with equal strength.
+- **ratio = 0.0**: Base strength is 0.0 and patch strength is 1.0, so `clip2`'s patches are applied at full strength.
 
 ## Use Cases
 
-1. **Model Style Fusion**: Combine characteristics of CLIP models trained on different data
-2. **Performance Optimization**: Balance strengths and weaknesses of different models
-3. **Experimental Research**: Explore combinations of different CLIP encoders
+1. **Model Style Fusion**: Combine characteristics of CLIP models trained on different data.
+2. **Performance Optimization**: Balance strengths and weaknesses of different models.
+3. **Experimental Research**: Explore combinations of different CLIP encoders.
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPMergeSimple/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `0d3c8388dbe88675ea7fb51161ab41ce898bcf63983b3d2817b16ec5bfa613e5`
+**Source fingerprint (SHA-256):** `42c4b2042c56c3f21a9416aa577e2d41fef1dcc749c4e5c7953851110a4fb6bc`

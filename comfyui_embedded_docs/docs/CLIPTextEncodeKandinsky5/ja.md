@@ -1,16 +1,14 @@
 # CLIPTextEncodeKandinsky5
 
-以下が翻訳結果です。
-
-CLIPTextEncodeKandinsky5 ノードは、Kandinsky 5 モデルで使用するテキストプロンプトを準備します。このノードは、2 つの個別のテキスト入力を受け取り、提供された CLIP モデルを使用してトークン化し、それらを 1 つの conditioning 出力に結合します。この出力は、画像生成プロセスをガイドするために使用されます。
+CLIPTextEncodeKandinsky5 ノードは、Kandinsky 5 モデルで使用するテキストプロンプトを準備します。2 つの別々のテキスト入力を受け取り、提供された CLIP モデルを使用してトークン化し、それらを単一の conditioning 出力に結合します。この出力は、画像生成プロセスを導くために使用されます。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `clip` | テキストプロンプトをトークン化およびエンコードするために使用する CLIP モデル。 | CLIP | はい |  |
+| `clip` | テキストプロンプトのトークン化とエンコードに使用される CLIP モデル。 | CLIP | はい |  |
 | `clip_l` | 主要なテキストプロンプト。この入力は複数行テキストと動的プロンプトをサポートします。 | STRING | はい |  |
-| `qwen25_7b` | 2 番目のテキストプロンプト。この入力は複数行テキストと動的プロンプトをサポートします。 | STRING | はい |  |
+| `qwen25_7b` | 二次的なテキストプロンプト。この入力は複数行テキストと動的プロンプトをサポートします。 | STRING | はい |  |
 
 ## 出力
 
@@ -21,4 +19,4 @@ CLIPTextEncodeKandinsky5 ノードは、Kandinsky 5 モデルで使用するテ�
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeKandinsky5/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `80227cf87d46bfa42b07976ab29996ae9583a4c461b2f2408db4b7016d3e1a0c`
+**Source fingerprint (SHA-256):** `d988c47ab9a5f01549a3ae01b365d39e9fa2464bb69ea018ec20151939dcfc56`

@@ -1,6 +1,6 @@
 # ModelMergeSD1
 
-The ModelMergeSD1 node allows you to blend two Stable Diffusion 1.x models together by adjusting the influence of different model components. It provides individual control over time embedding, label embedding, and all input, middle, and output blocks, enabling fine-tuned model merging for specific use cases.
+ModelMergeSD1 allows you to blend two Stable Diffusion 1.x models together by adjusting the influence of their individual components. It provides a separate blending weight for the time embedding, label embedding, each input block, each middle block, each output block, and the final output layer, enabling fine-tuned control over how the two models are combined.
 
 ## Inputs
 
@@ -48,4 +48,4 @@ The ModelMergeSD1 node allows you to blend two Stable Diffusion 1.x models toget
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD1/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `512c62fb5a4e1b7f90f5ad5b80de5818659a20c8f4b024cfa33ca13b823efad8`
+**Source fingerprint (SHA-256):** `b9d53f126139412fbd8b21be72e1dcdb02736519ab4dc9e28c7840d69acb7c87`

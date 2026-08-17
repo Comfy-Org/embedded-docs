@@ -6,7 +6,7 @@ The ComfyOrNode performs a logical OR operation on a set of input values. It ret
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `value` | A value to evaluate for truthiness. You can provide multiple values by adding more inputs. The node returns `true` if any of these values is truthy. | ANY | Yes | Multiple values accepted |
+| `value` | A value to evaluate for truthiness. You can provide multiple values by adding more inputs. The node returns `true` if any of these values is truthy. | ANY | Yes | Minimum 1 value; multiple values accepted |
 
 **Note:** The node accepts a minimum of 1 input value. You can add more inputs as needed using the autogrow feature.
 
@@ -19,4 +19,4 @@ The ComfyOrNode performs a logical OR operation on a set of input values. It ret
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfyOrNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `00c60d5c80bbddc993af0bcd92e35dc77f153731329c23a6e4e9a980709111b1`
+**Source fingerprint (SHA-256):** `f673aa2b0d754f55c51ba9c9ceea7d9de9a21d2e7308bd1281b4d4461243e4ad`

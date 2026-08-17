@@ -1,6 +1,6 @@
 # ModelMergeFlux1
 
-The ModelMergeFlux1 node merges two diffusion models by blending their components using weighted interpolation. It allows fine-grained control over how different parts of the models are combined, including image processing blocks, time embedding layers, guidance mechanisms, vector inputs, text encoders, and various transformer blocks. This enables creating hybrid models with customized characteristics from two source models.
+The ModelMergeFlux1 node merges two diffusion models by blending their components using weighted interpolation. It gives fine-grained control over how different parts of the models are combined, including image processing blocks, time embedding layers, guidance mechanisms, vector inputs, text encoders, and transformer blocks. This allows creating hybrid models with customized characteristics from two source models.
 
 ## Inputs
 
@@ -72,6 +72,8 @@ The ModelMergeFlux1 node merges two diffusion models by blending their component
 | `single_blocks.37.` | Single block 37 interpolation weight (default: 1.0) | FLOAT | Yes | 0.0 to 1.0 |
 | `final_layer.` | Final layer interpolation weight (default: 1.0) | FLOAT | Yes | 0.0 to 1.0 |
 
+All interpolation weight inputs share the same range (0.0 to 1.0), default (1.0), and step (0.01).
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -81,4 +83,4 @@ The ModelMergeFlux1 node merges two diffusion models by blending their component
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeFlux1/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `a632133b5d4bc7c5a4e1be5f6f779e424a491fffb8ef7702346adc4acf6f23bc`
+**Source fingerprint (SHA-256):** `4a1cc4dd2c253bbeb94144969e921af40a7f12a1ec23ed7c23da89107767dc26`

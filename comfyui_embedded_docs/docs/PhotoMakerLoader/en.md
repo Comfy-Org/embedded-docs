@@ -1,4 +1,4 @@
-# PhotoMakerLoader
+# Load PhotoMaker Model
 
 The PhotoMakerLoader node loads a PhotoMaker model from the available model files. It reads the specified model file and prepares the PhotoMaker ID encoder for use in identity-based image generation tasks. This node is marked as experimental and is intended for testing purposes.
 
@@ -6,7 +6,9 @@ The PhotoMakerLoader node loads a PhotoMaker model from the available model file
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `photomaker_model_name` | The name of the PhotoMaker model file to load. The available options are determined by the model files present in the `photomaker` folder. | STRING | Yes | Multiple options available |
+| `photomaker_model_name` | The name of the PhotoMaker model file to load. The available options are determined by the model files present in the `photomaker` folder. | COMBO | Yes | Multiple options available |
+
+Note: The selected model file must exist in the `photomaker` folder. The node raises an error if the specified file cannot be found.
 
 ## Outputs
 
@@ -17,4 +19,4 @@ The PhotoMakerLoader node loads a PhotoMaker model from the available model file
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PhotoMakerLoader/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `43824e1afc147e8d85117eebce5cb47b9c0091a3a5b70f3e1ee0134a1482c6f3`
+**Source fingerprint (SHA-256):** `1b26630fadbdc144cd42ca7393f743b079ee7463deb9c8b31b628b5dc7432317`

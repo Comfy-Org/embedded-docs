@@ -10,10 +10,10 @@ The QwenImageDiffsynthControlnet node applies a diffusion synthesis control netw
 | `model_patch` | The control network patch model to apply to the base model | MODEL_PATCH | Yes | - |
 | `vae` | The VAE (Variational Autoencoder) used in the diffusion process | VAE | Yes | - |
 | `image` | The input image used to guide the control network (only RGB channels are used) | IMAGE | Yes | - |
-| `strength` | The strength of the control network influence (default: 1.0) | FLOAT | Yes | -10.0 to 10.0 |
+| `strength` | The strength of the control network influence (default: 1.0) | FLOAT | Yes | -10.0 to 10.0 (step: 0.01) |
 | `mask` | Optional mask that defines areas where the control network should be applied (inverted internally) | MASK | No | - |
 
-**Note:** When a mask is provided, it is automatically inverted (1.0 - mask) and reshaped to match the expected dimensions for the control network processing. The node uses different internal processing methods depending on whether the model patch is a ZImage Control type or a standard DiffSynth control network.
+**Note:** When a mask is provided, it is automatically inverted (1.0 - mask) and reshaped to match the dimensions expected by the control network processing. When the model patch is a ZImage Control type, the patch is applied to both the noise refiner and double blocks; for a standard DiffSynth control network, only the double block patch is applied.
 
 ## Outputs
 
@@ -24,4 +24,4 @@ The QwenImageDiffsynthControlnet node applies a diffusion synthesis control netw
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageDiffsynthControlnet/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `61833984d0b92be65fae72a894806572c0588dea74a295e8289d1194dee611bb`
+**Source fingerprint (SHA-256):** `56739c098933cb70d3bcb8d6b251da33e7879b464b2e8a7296da085aefc15698`

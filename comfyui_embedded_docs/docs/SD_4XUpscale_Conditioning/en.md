@@ -9,8 +9,10 @@ The SD_4XUpscale_Conditioning node prepares conditioning data for upscaling imag
 | `images` | Input images to be upscaled | IMAGE | Yes | - |
 | `positive` | Positive conditioning data that guides the generation toward desired content | CONDITIONING | Yes | - |
 | `negative` | Negative conditioning data that steers the generation away from unwanted content | CONDITIONING | Yes | - |
-| `scale_ratio` | Scaling factor applied to the input images (default: 4.0) | FLOAT | No | 0.0 - 10.0 |
-| `noise_augmentation` | Amount of noise to add during the upscaling process (default: 0.0) | FLOAT | No | 0.0 - 1.0 |
+| `scale_ratio` | Scaling factor applied to the input images (default: 4.0) | FLOAT | Yes | 0.0 - 10.0 |
+| `noise_augmentation` | Amount of noise to add during the upscaling process (default: 0.0) | FLOAT | Yes | 0.0 - 1.0 |
+
+The target upscaled dimensions are computed by multiplying the input image dimensions by `scale_ratio`. The image embedded in the conditioning and the output latent are both created at one quarter of those target dimensions.
 
 ## Outputs
 
@@ -23,4 +25,4 @@ The SD_4XUpscale_Conditioning node prepares conditioning data for upscaling imag
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SD_4XUpscale_Conditioning/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `06e8e451cc939019e1d7213ab24ff1e4a9937540733194d66edbc5d32d352e16`
+**Source fingerprint (SHA-256):** `f215e890bd86f42d4da9c6f575fc92e65844e2e2056c5610310d8089e5d61902`

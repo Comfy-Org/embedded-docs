@@ -1,28 +1,28 @@
 # Recraft: Текст в вектор
 
-Генерирует векторные иллюстрации SVG синхронно на основе текстового запроса и разрешения. Этот узел отправляет ваш запрос в API Recraft и возвращает сгенерированное содержимое SVG.
+Generates SVG vector illustrations synchronously from a text prompt using the Recraft V3 model. The node sends the prompt and any optional settings to the Recraft API and returns the generated vector illustration as SVG data.
 
-## Входные параметры
+## Inputs
 
-| Параметр | Описание | Тип данных | Обязательный | Диапазон |
-| --- | --- | --- | --- | --- |
-| `prompt` | Запрос для генерации изображения. (по умолчанию: "") | STRING | Да | - |
-| `substyle` | Конкретный стиль векторной иллюстрации, используемый для генерации. | COMBO | Да | `"2d_character"`<br>`"2d_gradient"`<br>`"2d_illustration"`<br>`"2d_flat_character"`<br>`"2d_flat_illustration"`<br>`"2d_art"`<br>`"2d_art_character"`<br>`"2d_pattern"`<br>`"2d_pixel_art"`<br>`"2d_cyberpunk"`<br>`"2d_engraving"`<br>`"2d_black_and_white"`<br>`"2d_ink"`<br>`"2d_sketch"`<br>`"2d_watercolor"`<br>`"2d_animation"`<br>`"2d_comic"`<br>`"2d_children_illustration"`<br>`"2d_vintage"`<br>`"2d_retro"`<br>`"2d_hand_drawn"`<br>`"2d_psychedelic"`<br>`"2d_graffiti"`<br>`"2d_ukiyo_e"`<br>`"2d_woodcut"`<br>`"2d_art_deco"`<br>`"2d_art_nouveau"`<br>`"2d_bauhaus"`<br>`"2d_constructivism"`<br>`"2d_cubism"`<br>`"2d_futurism"`<br>`"2d_glitch"`<br>`"2d_impressionism"`<br>`"2d_naive"`<br>`"2d_pointillism"`<br>`"2d_pop_art"`<br>`"2d_realism"`<br>`"2d_renaissance"`<br>`"2d_rococo"`<br>`"2d_romanticism"`<br>`"2d_surrealism"`<br>`"2d_suprematism"`<br>`"2d_symbolism"`<br>`"2d_expressionism"`<br>`"2d_abstract"`<br>`"2d_minimalism"`<br>`"2d_contemporary"`<br>`"2d_modern"`<br>`"2d_brutalism"`<br>`"2d_metaphysical"`<br>`"2d_mannerism"`<br>`"2d_baroque"`<br>`"2d_neoclassicism"`<br>`"2d_orientalism"`<br>`"2d_primitivism"`<br>`"2d_fauvism"`<br>`"2d_rayonism"`<br>`"2d_orphism"`<br>`"2d_vorticism"`<br>`"2d_dadaism"`<br>`"2d_neo_expressionism"`<br>`"2d_transavantgarde"`<br>`"2d_new_wild"`<br>`"2d_graffiti_classic"`<br>`"2d_graffiti_modern"`<br>`"2d_graffiti_wildstyle"`<br>`"2d_graffiti_bubble"`<br>`"2d_graffiti_throwup"`<br>`"2d_graffiti_tag"`<br>`"2d_graffiti_blockbuster"`<br>`"2d_graffiti_mural"`<br>`"2d_graffiti_stencil"`<br>`"2d_graffiti_3d"`<br>`"2d_graffiti_character"`<br>`"2d_graffiti_abstract"`<br>`"2d_graffiti_urban"`<br>`"2d_graffiti_neo_muralism"`<br>`"2d_graffiti_post_graffiti"`<br>`"2d_graffiti_street_art"` |
-| `size` | Размер генерируемого изображения. (по умолчанию: "1024x1024") | COMBO | Да | `"1024x1024"`<br>`"1024x2048"`<br>`"2048x1024"`<br>`"2048x2048"`<br>`"512x512"`<br>`"512x1024"`<br>`"1024x512"`<br>`"2048x512"`<br>`"512x2048"` |
-| `n` | Количество генерируемых изображений. (по умолчанию: 1, мин: 1, макс: 6) | INT | Да | 1-6 |
-| `seed` | Зерно для определения необходимости повторного запуска узла; фактические результаты недетерминированы независимо от зерна. (по умолчанию: 0, мин: 0, макс: 18446744073709551615) | INT | Да | 0-18446744073709551615 |
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Запрос для генерации изображения. (по умолчанию: "", максимальная длина: 1000 символов) | STRING | Да | - |
+| `substyle` | Конкретный стиль векторной иллюстрации для генерации. | COMBO | Да | `"2d_character"`<br>`"2d_gradient"`<br>`"2d_illustration"`<br>`"2d_flat_character"`<br>`"2d_flat_illustration"`<br>`"2d_art"`<br>`"2d_art_character"`<br>`"2d_pattern"`<br>`"2d_pixel_art"`<br>`"2d_cyberpunk"`<br>`"2d_engraving"`<br>`"2d_black_and_white"`<br>`"2d_ink"`<br>`"2d_sketch"`<br>`"2d_watercolor"`<br>`"2d_animation"`<br>`"2d_comic"`<br>`"2d_children_illustration"`<br>`"2d_vintage"`<br>`"2d_retro"`<br>`"2d_hand_drawn"`<br>`"2d_psychedelic"`<br>`"2d_graffiti"`<br>`"2d_ukiyo_e"`<br>`"2d_woodcut"`<br>`"2d_art_deco"`<br>`"2d_art_nouveau"`<br>`"2d_bauhaus"`<br>`"2d_constructivism"`<br>`"2d_cubism"`<br>`"2d_futurism"`<br>`"2d_glitch"`<br>`"2d_impressionism"`<br>`"2d_naive"`<br>`"2d_pointillism"`<br>`"2d_pop_art"`<br>`"2d_realism"`<br>`"2d_renaissance"`<br>`"2d_rococo"`<br>`"2d_romanticism"`<br>`"2d_surrealism"`<br>`"2d_suprematism"`<br>`"2d_symbolism"`<br>`"2d_expressionism"`<br>`"2d_abstract"`<br>`"2d_minimalism"`<br>`"2d_contemporary"`<br>`"2d_modern"`<br>`"2d_brutalism"`<br>`"2d_metaphysical"`<br>`"2d_mannerism"`<br>`"2d_baroque"`<br>`"2d_neoclassicism"`<br>`"2d_orientalism"`<br>`"2d_primitivism"`<br>`"2d_fauvism"`<br>`"2d_rayonism"`<br>`"2d_orphism"`<br>`"2d_vorticism"`<br>`"2d_dadaism"`<br>`"2d_neo_expressionism"`<br>`"2d_transavantgarde"`<br>`"2d_new_wild"`<br>`"2d_graffiti_classic"`<br>`"2d_graffiti_modern"`<br>`"2d_graffiti_wildstyle"`<br>`"2d_graffiti_bubble"`<br>`"2d_graffiti_throwup"`<br>`"2d_graffiti_tag"`<br>`"2d_graffiti_blockbuster"`<br>`"2d_graffiti_mural"`<br>`"2d_graffiti_stencil"`<br>`"2d_graffiti_3d"`<br>`"2d_graffiti_character"`<br>`"2d_graffiti_abstract"`<br>`"2d_graffiti_urban"`<br>`"2d_graffiti_neo_muralism"`<br>`"2d_graffiti_post_graffiti"`<br>`"2d_graffiti_street_art"` |
+| `size` | Размер сгенерированного изображения. (по умолчанию: "1024x1024") | COMBO | Да | `"1024x1024"`<br>`"1024x2048"`<br>`"2048x1024"`<br>`"2048x2048"`<br>`"512x512"`<br>`"512x1024"`<br>`"1024x512"`<br>`"2048x512"`<br>`"512x2048"` |
+| `n` | Количество генерируемых изображений. (по умолчанию: 1, мин.: 1, макс.: 6) | INT | Да | 1-6 |
+| `seed` | Сид, определяющий, должен ли узел перезапускаться; фактические результаты недетерминированы независимо от сида. (по умолчанию: 0, мин.: 0, макс.: 18446744073709551615) | INT | Да | 0-18446744073709551615 |
 | `negative_prompt` | Необязательное текстовое описание нежелательных элементов на изображении. (по умолчанию: "") | STRING | Нет | - |
-| `recraft_controls` | Дополнительные необязательные элементы управления генерацией через узел Recraft Controls. | CONTROLS | Нет | - |
+| `recraft_controls` | Необязательные дополнительные элементы управления генерацией через узел Recraft Controls. | CONTROLS | Нет | - |
 
-**Примечание:** Параметр `seed` управляет только моментом повторного запуска узла, но не делает результаты генерации детерминированными.
+**Примечание:** `prompt` ограничен максимум 1000 символов. Пустой `negative_prompt` считается отсутствующим негативным запросом и не отправляется в API. Параметр `seed` только управляет моментом повторного запуска узла, но не делает результаты генерации детерминированными.
 
-## Выходные параметры
+## Outputs
 
-| Имя выхода | Описание | Тип данных |
-| --- | --- | --- |
+| Output Name | Description | Data Type |
+|-------------|-------------|-----------|
 | `SVG` | Сгенерированная векторная иллюстрация в формате SVG | SVG |
 
 > Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftTextToVectorNode/ru.md)
 
 ---
-**Source fingerprint (SHA-256):** `3ac4057fa100a207c0400d0d01756899fc02261e3fb7d962fb0057e6c6519100`
+**Source fingerprint (SHA-256):** `aec7e96e339047e75dfe419d94d23a613595bc22e7f187895c52b143780fcbf3`

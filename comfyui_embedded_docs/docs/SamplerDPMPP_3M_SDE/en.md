@@ -19,4 +19,4 @@ The SamplerDPMPP_3M_SDE node creates a DPM++ 3M SDE sampler for use in the sampl
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerDPMPP_3M_SDE/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `d25f8f69211ebca5aca8d1925d53f90a1bee3f883239635bffc107b5fdae8b36`
+**Source fingerprint (SHA-256):** `0f624398c67e50639fc41384b50b91bab93797bd785dda25f1f5fc649e46825b`

@@ -1,10 +1,10 @@
 # CLIP文本编码（HiDream）
 
-CLIPTextEncodeHiDream 节点使用不同的语言模型（CLIP-L、CLIP-G、T5-XXL 和 LLaMA）处理四个独立的文本输入，并将它们合并为单个 conditioning 输出。它会使用对应的模型对每个文本输入进行分词，并通过调度编码方法将它们一起编码，从而通过同时利用多个语言模型实现更复杂的文本 conditioning。
+CLIPTextEncodeHiDream 节点使用不同的语言模型（CLIP-L、CLIP-G、T5-XXL 和 LLaMA）处理四个单独的文本输入，并将它们组合成一个 conditioning 输出。它使用对应的模型对每个文本输入进行分词，并通过一种调度编码方法将它们一起编码，从而通过同时利用多个语言模型实现更复杂的文本 conditioning。
 
 ## 输入
 
-| 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
+| 参数 | 描述 | 数据类型 | 必需 | 范围 |
 | --- | --- | --- | --- | --- |
 | `clip` | 用于分词和编码的 CLIP 模型 | CLIP | 是 | - |
 | `clip_l` | 用于 CLIP-L 模型处理的文本输入。支持多行文本和动态提示。 | STRING | 是 | - |
@@ -16,11 +16,11 @@ CLIPTextEncodeHiDream 节点使用不同的语言模型（CLIP-L、CLIP-G、T5-X
 
 ## 输出
 
-| 输出名称 | 描述 | 数据类型 |
+| 输出名 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `CONDITIONING` | 来自所有已处理文本输入的合并 conditioning 输出，使用调度编码方法进行编码 | CONDITIONING |
+| `CONDITIONING` | 来自所有已处理文本输入的组合 conditioning 输出，使用调度编码方法进行编码 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeHiDream/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `51d117d82a9d833f095e874bf442d5cf8c46a12313fda6b98e628fa988797565`
+**Source fingerprint (SHA-256):** `c5e269c17bd2dd7d7171c02598a87983a988d953dd7df285978fc25a9c896e46`

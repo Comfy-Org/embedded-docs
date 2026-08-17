@@ -1,36 +1,34 @@
 # WanMoveTrackToVideo
 
-## 概述
-
-WanMoveTrackToVideo 節點為影片生成準備條件化（conditioning）與潛在空間（latent space）資料，並可整合選擇性的運動追蹤資訊。它會將起始影像序列編碼為潛在表示，並可將來自物體軌跡的位置資料混合進來，以引導生成影片中的運動。該節點會輸出修改後的正向與負向條件化資料，以及一個準備好供影片模型使用的空潛在張量。
+WanMoveTrackToVideo 節點為影片生成準備 conditioning 與潛在資料。它使用 VAE 將起始影像序列編碼到潛在空間，並可選擇性地納入運動追蹤資訊，以引導生成影片中的物體移動。此節點輸出修改後的正向與負向 conditioning，以及準備好供影片生成模型使用的空潛在張量。
 
 ## 輸入
 
-| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `positive` | 待修改的正向條件化輸入。 | CONDITIONING | 是 | - |
-| `negative` | 待修改的負向條件化輸入。 | CONDITIONING | 是 | - |
-| `vae` | 用於將起始影像編碼至潛在空間的 VAE 模型。 | VAE | 是 | - |
-| `軌跡` | 選擇性的運動追蹤資料，包含物體路徑。 | TRACKS | 否 | - |
-| `強度` | 軌跡條件化的強度。（預設值：1.0） | FLOAT | 否 | 0.0 - 100.0 |
-| `寬度` | 輸出影片的寬度。必須能被 16 整除。（預設值：832） | INT | 否 | 16 - MAX_RESOLUTION |
-| `高度` | 輸出影片的高度。必須能被 16 整除。（預設值：480） | INT | 否 | 16 - MAX_RESOLUTION |
-| `長度` | 影片序列的影格數。（預設值：81） | INT | 否 | 1 - MAX_RESOLUTION |
-| `批次大小` | 潛在輸出的批次大小。（預設值：1） | INT | 否 | 1 - 4096 |
-| `起始影像` | 要編碼的起始影像或影像序列。 | IMAGE | 是 | - |
-| `clip_vision_output` | 選擇性的 CLIP 視覺模型輸出，用於添加到條件化資料中。 | CLIPVISIONOUTPUT | 否 | - |
+| `positive` | 要修改的正向 conditioning 輸入。 | CONDITIONING | 是 | - |
+| `negative` | 要修改的負向 conditioning 輸入。 | CONDITIONING | 是 | - |
+| `vae` | 用於將起始影像編碼到潛在空間的 VAE 模型。 | VAE | 是 | - |
+| `tracks` | 選用的運動追蹤資料，包含物體路徑。 | TRACKS | 否 | - |
+| `strength` | 軌跡 conditioning 的強度。僅在提供 `tracks` 且數值大於 0.0 時有效。（預設值：1.0） | FLOAT | 是 | 0.0 - 100.0 |
+| `width` | 輸出影片的寬度。以 16 的倍數設定。（預設值：832） | INT | 是 | 16 - MAX_RESOLUTION |
+| `height` | 輸出影片的高度。以 16 的倍數設定。（預設值：480） | INT | 是 | 16 - MAX_RESOLUTION |
+| `length` | 影片序列的影格數。以 4 的倍數設定。（預設值：81） | INT | 是 | 1 - MAX_RESOLUTION |
+| `batch_size` | 潛在輸出的批次大小。（預設值：1） | INT | 是 | 1 - 4096 |
+| `start_image` | 要用 VAE 編碼的起始影像或影像序列。 | IMAGE | 是 | - |
+| `clip_vision_output` | 選用的 CLIP 視覺模型輸出，用於加入 conditioning。 | CLIP_VISION_OUTPUT | 否 | - |
 
-**注意：** `strength` 參數僅在提供 `tracks` 時才有效。如果未提供 `tracks` 或 `strength` 為 0.0，則不會套用軌跡條件化。`start_image` 用於建立條件化所需的潛在影像與遮罩；如果未提供，該節點僅會傳遞條件化資料並輸出一個空的潛在張量。
+注意：基於軌跡的運動僅在提供 `tracks` 且 `strength` 大於 0.0 時才會套用。否則，conditioning 會接收未修改的已編碼起始影像。`start_image` 用於建立潛在影像與 conditioning 遮罩；若 `start_image` 無法取得，此節點僅會傳遞 conditioning 並輸出空的潛在張量。
 
 ## 輸出
 
-| 輸出名稱 | 說明 | 資料類型 |
+| 輸出名稱 | 描述 | 資料類型 |
 | --- | --- | --- |
-| `positive` | 修改後的正向條件化資料，可能包含 `concat_latent_image`、`concat_mask` 與 `clip_vision_output`。 | CONDITIONING |
-| `negative` | 修改後的負向條件化資料，可能包含 `concat_latent_image`、`concat_mask` 與 `clip_vision_output`。 | CONDITIONING |
-| `latent` | 一個空的潛在張量，其維度由 `批次大小`、`長度`、`高度` 與 `寬度` 輸入決定。 | LATENT |
+| `positive` | 修改後的正向 conditioning，可能包含 `concat_latent_image`、`concat_mask` 與 `clip_vision_output`。 | CONDITIONING |
+| `negative` | 修改後的負向 conditioning，可能包含 `concat_latent_image`、`concat_mask` 與 `clip_vision_output`。 | CONDITIONING |
+| `latent` | 一個空的潛在張量，其維度由 `batch_size`、`length`、`height` 與 `width` 輸入決定。 | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTrackToVideo/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `9677addf5b94b42efd3015f51380c1fa9b16d4a5105cc7f24de0be34c0042bbc`
+**Source fingerprint (SHA-256):** `b02a1a359d349a0136d84ed77a510c46cb2c8b565650ed54d5fca6c87cd0ab1f`

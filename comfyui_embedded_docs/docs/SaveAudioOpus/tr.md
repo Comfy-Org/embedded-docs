@@ -1,22 +1,22 @@
 # Sesi Kaydet (Opus)
 
-SaveAudioOpus düğümü, ses verilerini Opus formatında bir dosyaya kaydeder. Ses girişini alır ve yapılandırılabilir kalite ayarlarıyla sıkıştırılmış bir Opus dosyası olarak dışa aktarır. Düğüm, dosya adlandırmayı otomatik olarak yönetir ve çıktıyı belirlenen çıktı dizinine kaydeder.
+SaveAudioOpus düğümü, ses verilerini Opus formatında bir dosyaya kaydeder. Bir ses girdisi alır ve yapılandırılabilir kalite ayarlarıyla sıkıştırılmış bir Opus dosyası olarak dışa aktarır. Bu düğüm kullanımdan kaldırılmıştır ve gelecek sürümlerde kaldırılabilir.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-| --- | --- | --- | --- | --- |
-| `ses` | Opus dosyası olarak kaydedilecek ses verisi | AUDIO | Evet | - |
-| `dosya_adı_ön_eki` | Çıktı dosya adı için ön ek (varsayılan: "audio/ComfyUI") | STRING | Hayır | - |
-| `kalite` | Opus dosyası için ses kalitesi ayarı (varsayılan: "128k") | COMBO | Hayır | "64k"<br>"96k"<br>"128k"<br>"192k"<br>"320k" |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `audio` | Opus dosyası olarak kaydedilecek ses verisi. Hiçbir ses sağlanmazsa (örneğin, kaynak videoda ses parçası yoksa) düğüm bir hata verir. | AUDIO | Evet | - |
+| `filename_prefix` | Çıktı dosya adı için önek (varsayılan: "audio/ComfyUI") | STRING | Hayır | - |
+| `quality` | Opus dosyası için ses kalitesi (bit hızı) ayarı (varsayılan: "128k") | COMBO | Hayır | "64k"<br>"96k"<br>"128k"<br>"192k"<br>"320k" |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-| --- | --- | --- |
-| - | Bu düğüm herhangi bir çıktı değeri döndürmez. Temel işlevi olarak ses dosyasını diske kaydeder. | - |
+|-------------|-------------|-----------|
+| `audio` | Opus dosyası diske kaydedildikten sonra döndürülen girdi ses verisi. | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAudioOpus/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `87c3b1b85ca51b79d43c8486eeb2de7b074faa11c4da2bff7b8931a3049560e2`
+**Source fingerprint (SHA-256):** `a2f585f45299759738fa85f6b73f51680d4e86da57d3fc9c2236e66114fa3d6c`

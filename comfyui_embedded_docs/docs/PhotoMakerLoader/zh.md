@@ -1,12 +1,14 @@
 # PhotoMaker加载器
 
-PhotoMakerLoader 节点从可用的模型文件中加载 PhotoMaker 模型。它会读取指定的模型文件，并准备 PhotoMaker ID 编码器，用于基于身份的图像生成任务。此节点标记为实验性，仅供测试使用。
+PhotoMakerLoader 节点用于从可用的模型文件中加载 PhotoMaker 模型。它读取指定的模型文件，并准备 PhotoMaker ID 编码器，以供基于身份的图像生成任务使用。此节点标记为实验性，仅用于测试目的。
 
 ## 输入
 
-| 参数 | 描述 | 数据类型 | 是否必填 | 取值范围 |
+| Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `photomaker模型名称` | 要加载的 PhotoMaker 模型文件名。可用选项由 `photomaker` 文件夹中存在的模型文件决定。 | STRING | 是 | 多个可用选项 |
+| `photomaker_model_name` | 要加载的 PhotoMaker 模型文件的名称。可用选项由 `photomaker` 文件夹中存在的模型文件决定。 | COMBO | 是 | Multiple options available |
+
+注意：选定的模型文件必须存在于 `photomaker` 文件夹中。如果找不到指定文件，节点将引发错误。
 
 ## 输出
 
@@ -17,4 +19,4 @@ PhotoMakerLoader 节点从可用的模型文件中加载 PhotoMaker 模型。它
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PhotoMakerLoader/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `4c55abacf8462d8de3d1f2a728d4b09ab1d1c8c6476d25cc4af5089508a721da`
+**Source fingerprint (SHA-256):** `1b26630fadbdc144cd42ca7393f743b079ee7463deb9c8b31b628b5dc7432317`

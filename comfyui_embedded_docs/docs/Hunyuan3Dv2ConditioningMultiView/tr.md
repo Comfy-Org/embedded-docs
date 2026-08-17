@@ -1,26 +1,26 @@
 # Hunyuan3Dv2ÇokluGörünümKoşullandırma
 
-Hunyuan3Dv2ConditioningMultiView düğümü, 3D video oluşturma için çoklu görünüm CLIP görsel yerleştirmelerini işler. İsteğe bağlı olarak ön, sol, arka ve sağ görünüm yerleştirmelerini alır ve bunları konumsal kodlama ile birleştirerek video modelleri için koşullandırma verileri oluşturur. Düğüm, birleştirilmiş yerleştirmelerden pozitif koşullandırma ve sıfır değerlerle negatif koşullandırma çıktısı verir.
+Hunyuan3Dv2ConditioningMultiView düğümü, 3D video üretimi için çok görünümlü CLIP görüş yerleştirmelerini işler. Ön, sol, arka ve sağ görünüm yerleştirmelerini isteğe bağlı olarak alır ve bunları tek bir conditioning dizisinde birleştirmeden önce sağlanan her görünüme konumsal kodlama ekler. Düğüm, birleştirilmiş yerleştirmelerden hem pozitif conditioning hem de sıfır değerli negatif conditioning çıktısı üretir.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `ön` | Ön görünüm için CLIP görsel çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
-| `sol` | Sol görünüm için CLIP görsel çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
-| `arka` | Arka görünüm için CLIP görsel çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
-| `sağ` | Sağ görünüm için CLIP görsel çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
+| `front` | Ön görünüm için CLIP görüş çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
+| `left` | Sol görünüm için CLIP görüş çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
+| `back` | Arka görünüm için CLIP görüş çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
+| `right` | Sağ görünüm için CLIP görüş çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
 
-**Not:** Düğümün çalışması için en az bir görünüm girişi sağlanmalıdır. Düğüm, yalnızca geçerli CLIP görsel çıktı verisi içeren görünümleri işleyecektir.
+**Not:** Düğümün çalışması için en az bir görünüm girdisi sağlanmalıdır. Düğüm yalnızca geçerli CLIP görüş çıktı verisi içeren görünümleri işler. Sağlanan her görünüm, görünüm konumuna (ön, sol, arka, sağ) göre bir konumsal kodlama alır ve kodlanmış görünümler aynı sırayla birleştirilir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | Konumsal kodlama ile birleştirilmiş çoklu görünüm yerleştirmelerini içeren pozitif koşullandırma | CONDITIONING |
-| `negative` | Karşılaştırmalı öğrenme için sıfır değerlerle negatif koşullandırma | CONDITIONING |
+| `positive` | Konumsal kodlama ile birleştirilmiş çok görünümlü yerleştirmeleri içeren pozitif conditioning | CONDITIONING |
+| `negative` | Pozitif conditioning ile aynı şekle sahip sıfır değerleri içeren negatif conditioning | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2ConditioningMultiView/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `01998ae9ba7d2ae9a2f6a0b5aee4c03168f935fb9769317cd80d93a7a4b96f13`
+**Source fingerprint (SHA-256):** `1492b51661d0bb8f2c142c1b1e8ef104beed1b9dae532a970e2928e27ad71d69`

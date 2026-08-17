@@ -5,24 +5,26 @@ The SamplerSASolver node implements a custom sampling algorithm for diffusion mo
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-| --- | --- | --- | --- | --- |
+|-----------|-------------|-----------|----------|-------|
 | `model` | The diffusion model to use for sampling | MODEL | Yes | - |
 | `eta` | Controls the step size scaling factor (default: 1.0) | FLOAT | No | 0.0 - 10.0 |
-| `sde_start_percent` | The starting percentage for SDE sampling (default: 0.2) | FLOAT | No | 0.0 - 1.0 |
-| `sde_end_percent` | The ending percentage for SDE sampling (default: 0.8) | FLOAT | No | 0.0 - 1.0 |
+| `sde_start_percent` | The starting percentage of the denoising process where SDE sampling begins, converted to a sigma value using the model's sampling schedule (default: 0.2) | FLOAT | No | 0.0 - 1.0 |
+| `sde_end_percent` | The ending percentage of the denoising process where SDE sampling stops, converted to a sigma value using the model's sampling schedule (default: 0.8) | FLOAT | No | 0.0 - 1.0 |
 | `s_noise` | Controls the amount of noise added during sampling (default: 1.0) | FLOAT | No | 0.0 - 100.0 |
 | `predictor_order` | The order of the predictor component in the solver (default: 3) | INT | No | 1 - 6 |
 | `corrector_order` | The order of the corrector component in the solver (default: 4) | INT | No | 0 - 6 |
 | `use_pece` | Enables or disables the PECE (Predict-Evaluate-Correct-Evaluate) method | BOOLEAN | No | - |
 | `simple_order_2` | Enables or disables simplified second-order calculations | BOOLEAN | No | - |
 
+Note: All inputs except `model` are advanced parameters, hidden by default in the node's interface.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
-| --- | --- | --- |
+|-------------|-------------|-----------|
 | `sampler` | A configured sampler object that can be used with diffusion models | SAMPLER |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerSASolver/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `f1491a63377d4d8a5c44cb7109afba09678ef9c048786f9086a5437aacb17753`
+**Source fingerprint (SHA-256):** `31da2d436665bf533c28b32248f632edab8f6d92372402904702ae954230f98d`

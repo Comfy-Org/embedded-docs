@@ -1,17 +1,17 @@
 # ModelMergeCosmos14B
 
-El nodo **ModelMergeCosmos14B** fusiona dos modelos de IA utilizando un enfoque basado en bloques diseñado específicamente para la arquitectura del modelo Cosmos 14B. Permite combinar diferentes componentes de los modelos ajustando valores de peso entre 0.0 y 1.0 para cada bloque del modelo y capa de incrustación (embedding).
+El nodo **ModelMergeCosmos14B** fusiona dos modelos de IA mediante un enfoque basado en bloques diseñado específicamente para la arquitectura del modelo Cosmos 14B. Permite combinar diferentes componentes de los modelos ajustando los valores de peso entre 0.0 y 1.0 para cada bloque del modelo y capa de incrustación.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `model1` | Primer modelo a fusionar | MODEL | Sí | - |
 | `model2` | Segundo modelo a fusionar | MODEL | Sí | - |
-| `pos_embedder.` | Peso para el componente incrustador de posición (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `extra_pos_embedder.` | Peso para el componente incrustador de posición adicional (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `x_embedder.` | Peso para el componente incrustador x (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `t_embedder.` | Peso para el componente incrustador t (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `pos_embedder.` | Peso para el componente de incrustación posicional (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `extra_pos_embedder.` | Peso para el componente de incrustación posicional extra (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `x_embedder.` | Peso para el componente de incrustación de x (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `t_embedder.` | Peso para el componente de incrustación de t (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `affline_norm.` | Peso para el componente de normalización afín (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `blocks.block0.` | Peso para el bloque 0 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `blocks.block1.` | Peso para el bloque 1 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
@@ -51,13 +51,15 @@ El nodo **ModelMergeCosmos14B** fusiona dos modelos de IA utilizando un enfoque 
 | `blocks.block35.` | Peso para el bloque 35 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `final_layer.` | Peso para la capa final (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 
+Nota: Todas las entradas de peso de tipo FLOAT comparten la misma configuración: valor predeterminado 1.0, mínimo 0.0, máximo 1.0, paso 0.01.
+
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
 | `model` | El modelo fusionado que combina características de ambos modelos de entrada | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmos14B/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `6fcb4fefe7738d0addef49d386c0d3d22cda4c68f0e49ad003d1df595cf0e9d9`
+**Source fingerprint (SHA-256):** `1d1e5dc176643f577723bb0bb9375748a392a6fafa5c9e5e78ef4c4d8289f77c`

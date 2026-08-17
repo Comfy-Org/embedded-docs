@@ -1,13 +1,13 @@
 # 모델 병합 (SD1)
 
-ModelMergeSD1 노드는 두 개의 Stable Diffusion 1.x 모델을 혼합하여 서로 다른 모델 구성 요소의 영향을 조정할 수 있게 해줍니다. 시간 임베딩, 레이블 임베딩, 그리고 모든 입력, 중간, 출력 블록에 대한 개별 제어 기능을 제공하여 특정 사용 사례에 맞게 세밀하게 조정된 모델 병합을 가능하게 합니다.
+ModelMergeSD1을 사용하면 두 개의 Stable Diffusion 1.x 모델을 개별 구성 요소의 영향을 조정하여 함께 혼합할 수 있습니다. 시간 임베딩, 레이블 임베딩, 각 입력 블록, 각 중간 블록, 각 출력 블록 및 최종 출력 레이어에 대해 별도의 혼합 가중치를 제공하므로 두 모델이 결합되는 방식을 정밀하게 제어할 수 있습니다.
 
 ## 입력
 
-| 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
+| 매개변수 | 설명 | 데이터 유형 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `모델1` | 병합할 첫 번째 모델 | MODEL | 예 | - |
-| `모델2` | 병합할 두 번째 모델 | MODEL | 예 | - |
+| `model1` | 병합할 첫 번째 모델 | MODEL | 예 | - |
+| `model2` | 병합할 두 번째 모델 | MODEL | 예 | - |
 | `time_embed.` | 시간 임베딩 레이어 혼합 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 | `label_emb.` | 레이블 임베딩 레이어 혼합 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 | `input_blocks.0.` | 입력 블록 0 혼합 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
@@ -41,11 +41,11 @@ ModelMergeSD1 노드는 두 개의 Stable Diffusion 1.x 모델을 혼합하여 �
 
 ## 출력
 
-| 출력 이름 | 설명 | 데이터 타입 |
+| 출력 이름 | 설명 | 데이터 유형 |
 | --- | --- | --- |
-| `MODEL` | 두 입력 모델의 특징을 결합한 병합된 모델 | MODEL |
+| `MODEL` | 두 입력 모델의 특징을 결합한 병합 모델 | MODEL |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD1/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `512c62fb5a4e1b7f90f5ad5b80de5818659a20c8f4b024cfa33ca13b823efad8`
+**Source fingerprint (SHA-256):** `b9d53f126139412fbd8b21be72e1dcdb02736519ab4dc9e28c7840d69acb7c87`

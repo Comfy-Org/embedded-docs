@@ -19,4 +19,4 @@ This node applies Temporal Score Rescaling (TSR) to a diffusion model. It modifi
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TemporalScoreRescaling/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `c558da8dea80131f705f3217740c4f9df3c9a7a6695e2c089f5798a726730bb8`
+**Source fingerprint (SHA-256):** `4d4e3c64fb6e3a3fe4725ea944a361b46d871943a10e65d72d70e0e6d757dfca`

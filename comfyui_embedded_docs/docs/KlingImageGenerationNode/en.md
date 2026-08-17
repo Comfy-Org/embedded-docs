@@ -1,6 +1,6 @@
-# Kling 3.0 Image Generation Node
+# Kling 3.0 Image
 
-Kling Image Generation Node generates images from text prompts with the option to use a reference image for guidance. It creates one or more images based on your text description and reference settings, then returns the generated images as output.
+Kling Image Generation Node generates images from text prompts, with the option to use a reference image for guidance. It creates one or more images based on your text description and reference settings, then returns the generated images as output.
 
 ## Inputs
 
@@ -8,10 +8,10 @@ Kling Image Generation Node generates images from text prompts with the option t
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Positive text prompt | STRING | Yes | Maximum 500 characters |
 | `negative_prompt` | Negative text prompt | STRING | Yes | Maximum 500 characters |
-| `image_type` | Image reference type selection (advanced). Required when a reference image is provided. | COMBO | Yes | `"subject_reference"`<br>`"style_reference"` |
+| `image_type` | Image reference type selection (advanced). Used when a reference image is provided. | COMBO | Yes | `"subject_reference"`<br>`"style_reference"` |
 | `image_fidelity` | Reference intensity for user-uploaded images (default: 0.5, advanced) | FLOAT | Yes | 0.0 - 1.0 |
 | `human_fidelity` | Subject reference similarity (default: 0.45, advanced) | FLOAT | Yes | 0.0 - 1.0 |
-| `model_name` | Model selection for image generation (default: "kling-v3") | COMBO | Yes | `"kling-v3"`<br>`"kling-v2"`<br>`"kling-v1-5"` |
+| `model_name` | Model selection for image generation (default: "kling-v3") | COMBO | Yes | `"kling-v3"`<br>`"kling-v2"` |
 | `aspect_ratio` | Aspect ratio for generated images (default: "16:9") | COMBO | Yes | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` |
 | `n` | Number of generated images (default: 1) | INT | Yes | 1 - 9 |
 | `image` | Optional reference image | IMAGE | No | - |
@@ -19,18 +19,17 @@ Kling Image Generation Node generates images from text prompts with the option t
 
 **Parameter Constraints:**
 
-- The `image` parameter is optional. When a reference image is provided, the `image_type` parameter must be set to either `"subject_reference"` or `"style_reference"`.
-- When no reference image is provided, the `image_type`, `image_fidelity`, and `human_fidelity` parameters are not used.
-- Prompt and negative prompt have a maximum length of 500 characters.
+- The `image` parameter is optional. When a reference image is provided, `image_type` determines whether it is used as a subject reference or a style reference. When no reference image is provided, `image_type` is not applied.
+- `prompt` must contain at least 1 character and at most 500 characters. `negative_prompt` can be empty but is limited to 500 characters.
 - The `seed` parameter is optional and does not guarantee deterministic results.
 
 ## Outputs
 
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
-| `output` | Generated image(s) based on the input parameters | IMAGE |
+| `output` | Generated image(s) based on the input parameters. When more than one image is requested, all images are returned stacked in a single batch. | IMAGE |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingImageGenerationNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `65bd6ea842877a9af9a7b554fe020418291d06ae6cc35e86127ab524aadd48c1`
+**Source fingerprint (SHA-256):** `165d18244870b5b4f34587633a5492e733ad0b0a923bb8c3e506319460321906`

@@ -9,7 +9,7 @@ The HunyuanRefinerLatent node processes conditioning and latent inputs for refin
 | `positive` | The positive conditioning input to be processed | CONDITIONING | Yes | - |
 | `negative` | The negative conditioning input to be processed | CONDITIONING | Yes | - |
 | `latent` | The latent representation input | LATENT | Yes | - |
-| `noise_augmentation` | The amount of noise augmentation to apply (default: 0.10) | FLOAT | Yes | 0.0 - 1.0 |
+| `noise_augmentation` | The amount of noise augmentation to apply (default: 0.10, step: 0.01, advanced parameter) | FLOAT | Yes | 0.0 - 1.0 |
 
 ## Outputs
 
@@ -17,9 +17,9 @@ The HunyuanRefinerLatent node processes conditioning and latent inputs for refin
 | --- | --- | --- |
 | `positive` | The processed positive conditioning with applied noise augmentation and latent image concatenation | CONDITIONING |
 | `negative` | The processed negative conditioning with applied noise augmentation and latent image concatenation | CONDITIONING |
-| `latent` | A new latent output with dimensions [batch_size, 32, height, width, channels] | LATENT |
+| `latent` | A new zero-filled latent with the same batch size and the same last three dimension sizes as the input `latent`, but with 32 channels | LATENT |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanRefinerLatent/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `da9ba6729a4ff9147e3783841200ae5b6a9a20ab396e82d7ac6300faec3dc8f9`
+**Source fingerprint (SHA-256):** `4c5669cf2ad5ba00e176876741b7d8d3f092cc58d2163871a10fd769ee4ff84c`

@@ -1,40 +1,63 @@
 # OpenAI GPT Image 2
 
-## Descripción general
-
-Este nodo genera imágenes mediante la API GPT Image de OpenAI. Admite múltiples modelos, permite proporcionar imágenes de entrada para edición y puede utilizar una máscara para especificar qué partes de una imagen modificar.
+Este nodo genera imágenes mediante la API de OpenAI GPT Image. Admite varios modelos GPT Image, imágenes de referencia opcionales para edición y una máscara opcional para inpainting. Cuando se proporcionan imágenes de referencia, el nodo envía una solicitud de edición a la API; de lo contrario, envía una solicitud de generación simple.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+### Entradas comunes
+
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `prompt` | Texto de solicitud (prompt) para GPT Image (por defecto: ""). | STRING | Sí | N/A |
-| `modelo` | El modelo GPT Image de OpenAI a utilizar. Al seleccionar un modelo, se muestran parámetros adicionales específicos de ese modelo. | COMBO | Sí | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
-| `model.size` | Tamaño de la imagen. Seleccione 'Custom' para usar el ancho y alto personalizados (por defecto: "auto"). Solo disponible para `gpt-image-2`. | COMBO | Sí | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
-| `model.custom_width` | Se usa solo cuando `size` es 'Custom'. Debe ser múltiplo de 16 (por defecto: 1024). Solo disponible para `gpt-image-2`. | INT | No | 1024 a 3840 |
-| `model.custom_height` | Se usa solo cuando `size` es 'Custom'. Debe ser múltiplo de 16 (por defecto: 1024). Solo disponible para `gpt-image-2`. | INT | No | 1024 a 3840 |
-| `model.background` | Devuelve la imagen con o sin fondo (por defecto: "auto"). Solo disponible para `gpt-image-2`. | COMBO | Sí | `"auto"`<br>`"opaque"` |
-| `model.quality` | La calidad de la imagen generada. Solo disponible para `gpt-image-2`. | COMBO | Sí | `"standard"`<br>`"hd"` |
-| `model.images` | Imágenes de entrada para edición. Solo disponible para `gpt-image-2`. | IMAGE | No | N/A |
-| `model.mask` | Una máscara para especificar qué partes de la imagen de entrada se van a editar. Solo disponible para `gpt-image-2`. | MASK | No | N/A |
+| `model` | El modelo OpenAI GPT Image a utilizar. Al seleccionar un modelo, se revelan parámetros adicionales específicos de dicho modelo. | DYNAMIC_COMBO | Sí | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
+| `prompt` | Prompt de texto para GPT Image (por defecto: `""`). | STRING | Sí | N/A |
 | `n` | Cuántas imágenes generar (por defecto: 1). | INT | Sí | 1 a 8 |
-| `semilla` | Semilla para reproducibilidad (por defecto: 0). Nota: aún no está implementada en el backend. | INT | Sí | 0 a 2147483647 |
+| `seed` | Semilla para reproducibilidad (por defecto: 0). Aún no implementada en el backend. | INT | Sí | 0 a 2147483647 |
+
+### Entradas de gpt-image-2
+
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `model.size` | Tamaño de la imagen. Seleccione "Custom" para usar el ancho y alto personalizados (por defecto: "auto"). | COMBO | Sí | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `model.custom_width` | Se usa solo cuando `size` es "Custom". Debe ser múltiplo de 16 (por defecto: 1024). | INT | No | 1024 a 3840 |
+| `model.custom_height` | Se usa solo cuando `size` es "Custom". Debe ser múltiplo de 16 (por defecto: 1024). | INT | No | 1024 a 3840 |
+| `model.background` | Devuelve la imagen con o sin fondo (por defecto: "auto"). | COMBO | Sí | `"auto"`<br>`"opaque"` |
+| `model.quality` | Calidad de imagen, afecta el costo y el tiempo de generación (por defecto: "low"). | COMBO | Sí | `"low"`<br>`"medium"`<br>`"high"` |
+
+### Entradas de gpt-image-1.5 y gpt-image-1
+
+Estos dos modelos comparten el mismo conjunto de parámetros específicos del modelo.
+
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `model.size` | Tamaño de imagen (por defecto: "auto"). | COMBO | Sí | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"` |
+| `model.background` | Devuelve la imagen con o sin fondo (por defecto: "auto"). | COMBO | Sí | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `model.quality` | Calidad de imagen, afecta el costo y el tiempo de generación (por defecto: "low"). | COMBO | Sí | `"low"`<br>`"medium"`<br>`"high"` |
+
+### Entradas de referencia
+
+Estas entradas están disponibles para todos los modelos.
+
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `model.images` | Imagen(es) de referencia opcional(es) para la edición de imágenes. Ranura ampliable: conecta hasta 16 imágenes (`image_1` a `image_16`). | IMAGE | No | 0 a 16 imágenes |
+| `model.mask` | Máscara opcional para inpainting (las áreas blancas se reemplazarán). Requiere exactamente una imagen de referencia. | MASK | No | N/A |
 
 **Restricciones y limitaciones de los parámetros:**
 
-- Al usar `gpt-image-2` con un `model.size` de "Custom", `custom_width` y `custom_height` deben ser múltiplos de 16, el lado máximo debe ser `<= 3840`, la relación de aspecto no debe superar 3:1, y el número total de píxeles debe estar entre 655,360 y 8,294,400.
-- Si se proporciona una `mask`, se requiere una imagen de entrada (`model.images`). No se puede usar una máscara sin una imagen de entrada.
-- Una máscara no se puede usar con múltiples imágenes de entrada.
-- Cuando se proporciona una máscara, las dimensiones de la máscara deben coincidir con las dimensiones de la imagen de entrada.
-- El parámetro `seed` actualmente no es funcional.
+- Cuando `model.size` es "Custom" (solo gpt-image-2), `model.custom_width` y `model.custom_height` deben ser múltiplos de 16, el borde más largo no debe superar los 3840 píxeles, la relación de aspecto no debe superar 3:1, y el número total de píxeles debe estar entre 655,360 y 8,294,400.
+- Una máscara requiere exactamente una imagen de referencia. Una máscara no se puede usar sin una imagen de entrada, ni con múltiples imágenes de entrada.
+- Cuando se proporciona una máscara, la altura y el ancho de la máscara deben coincidir con la altura y el ancho de la imagen de entrada.
+- Las imágenes de referencia se reducen a un máximo de 2048 x 2048 píxeles en total antes de enviarse a la API.
+- El parámetro `seed` aún no está implementado en el backend.
+- Si la API devuelve imágenes con dimensiones diferentes en una sola respuesta, todas las imágenes se redimensionan para que coincidan con las dimensiones de la primera imagen.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `image` | La imagen o las imágenes generadas. | IMAGE |
+| `image` | La imagen o imágenes generadas, apiladas en un tensor de lote único de forma (N, H, W, C). | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `d0544a2d0f9e9cdd4b121bbf18eb6e43d508b2230e44dfa814649f6a4999e543`
+**Source fingerprint (SHA-256):** `fb3491f949151fbd3f5825ec9f9ae124019767d083f56966ef34af278aef50c0`

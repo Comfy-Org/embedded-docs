@@ -1,8 +1,6 @@
 # Convert MoGe Point Map to Mesh
 
-## Overview
-
-This node converts a MoGe point map into a 3D mesh. It takes the geometry data produced by a MoGe depth estimation node and triangulates it into a mesh with UV coordinates and an optional texture.
+This node converts a MoGe point map into a 3D mesh. It takes the geometry data produced by a MoGe depth estimation node and triangulates one image from it into a mesh with UV coordinates and an optional texture.
 
 ## Inputs
 
@@ -14,6 +12,8 @@ This node converts a MoGe point map into a 3D mesh. It takes the geometry data p
 | `discontinuity_threshold` | Drop pixels whose 3x3 depth span exceeds this fraction. 0 = off (default: 0.04). | FLOAT | Yes | 0.0 to 1.0 |
 | `texture` | Carry the source image through as the baseColor texture (default: True). | BOOLEAN | Yes | True/False |
 
+Note: `batch_index` must be smaller than the batch size of the provided `moge_geometry`. The input geometry must contain point data, and if the generated mesh is empty, the node returns an error suggesting `discontinuity_threshold = 0`.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -23,4 +23,4 @@ This node converts a MoGe point map into a 3D mesh. It takes the geometry data p
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MoGePointMapToMesh/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `65c43d64050d1c63d9efbb6c2bb96123f94c6d356d6341f2975537ac24ace29f`
+**Source fingerprint (SHA-256):** `626925866eed6805d2ce87529909fc76b9484cd2e8118fdd1669a237d44b9b0b`

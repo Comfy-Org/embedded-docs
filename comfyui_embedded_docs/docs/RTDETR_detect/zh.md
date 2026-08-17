@@ -1,24 +1,24 @@
 # RT-DETR 检测
 
-RT-DETR 检测节点使用 RT-DETR 模型对输入图像执行目标检测。它能识别物体、绘制边界框，并根据 COCO 数据集类别进行标注。您可以根据置信度分数、目标类别进行过滤，并限制检测总数。
+RT-DETR Detect 节点使用 RT-DETR 模型对输入图像执行目标检测。它查找图像中的目标，并返回每个检测到的目标的边界框坐标，以及对应的 COCO 数据集类别标签。您可以根据置信度分数和目标类别过滤结果，并限制每张图像返回的最大检测数量。
 
 ## 输入
 
-| 参数 | 描述 | 数据类型 | 是否必需 | 取值范围 |
+| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
 | --- | --- | --- | --- | --- |
-| `模型` | 用于目标检测的 RT-DETR 模型。 | MODEL | 是 | 不适用 |
-| `图像` | 要检测目标的输入图像。该节点最多可批量处理 32 张图像。 | IMAGE | 是 | 不适用 |
-| `阈值` | 检测结果必须达到的最低置信度分数，才会被包含在结果中（默认值：0.5）。 | FLOAT | 否 | 不适用 |
-| `类别名称` | 按类别过滤检测结果。设置为 'all' 可禁用过滤（默认值："all"）。 | COMBO | 否 | `"all"`<br>`"person"`<br>`"bicycle"`<br>`"car"`<br>`"motorcycle"`<br>`"airplane"`<br>`"bus"`<br>`"train"`<br>`"truck"`<br>`"boat"`<br>`"traffic light"`<br>`"fire hydrant"`<br>`"stop sign"`<br>`"parking meter"`<br>`"bench"`<br>`"bird"`<br>`"cat"`<br>`"dog"`<br>`"horse"`<br>`"sheep"`<br>`"cow"`<br>`"elephant"`<br>`"bear"`<br>`"zebra"`<br>`"giraffe"`<br>`"backpack"`<br>`"umbrella"`<br>`"handbag"`<br>`"tie"`<br>`"suitcase"`<br>`"frisbee"`<br>`"skis"`<br>`"snowboard"`<br>`"sports ball"`<br>`"kite"`<br>`"baseball bat"`<br>`"baseball glove"`<br>`"skateboard"`<br>`"surfboard"`<br>`"tennis racket"`<br>`"bottle"`<br>`"wine glass"`<br>`"cup"`<br>`"fork"`<br>`"knife"`<br>`"spoon"`<br>`"bowl"`<br>`"banana"`<br>`"apple"`<br>`"sandwich"`<br>`"orange"`<br>`"broccoli"`<br>`"carrot"`<br>`"hot dog"`<br>`"pizza"`<br>`"donut"`<br>`"cake"`<br>`"chair"`<br>`"couch"`<br>`"potted plant"`<br>`"bed"`<br>`"dining table"`<br>`"toilet"`<br>`"tv"`<br>`"laptop"`<br>`"mouse"`<br>`"remote"`<br>`"keyboard"`<br>`"cell phone"`<br>`"microwave"`<br>`"oven"`<br>`"toaster"`<br>`"sink"`<br>`"refrigerator"`<br>`"book"`<br>`"clock"`<br>`"vase"`<br>`"scissors"`<br>`"teddy bear"`<br>`"hair drier"`<br>`"toothbrush"` |
-| `最大检测数` | 每张图像返回的最大检测数量。按置信度分数降序排列（默认值：100）。 | INT | 否 | 不适用 |
+| `model` | 用于目标检测的 RT-DETR 模型。 | MODEL | 是 | N/A |
+| `image` | 要在其中检测目标的输入图像。节点以最多 32 张图像为一批进行处理，并在内部调整其大小以进行检测。 | IMAGE | 是 | N/A |
+| `threshold` | 检测必须达到的最低置信度分数，才会被包含在结果中（默认值：0.5）。 | FLOAT | 是 | N/A |
+| `class_name` | 按类别过滤检测结果。设置为 `'all'` 可禁用过滤（默认值：`"all"`）。 | COMBO | 是 | `"all"`<br>`"person"`<br>`"bicycle"`<br>`"car"`<br>`"motorcycle"`<br>`"airplane"`<br>`"bus"`<br>`"train"`<br>`"truck"`<br>`"boat"`<br>`"traffic light"`<br>`"fire hydrant"`<br>`"stop sign"`<br>`"parking meter"`<br>`"bench"`<br>`"bird"`<br>`"cat"`<br>`"dog"`<br>`"horse"`<br>`"sheep"`<br>`"cow"`<br>`"elephant"`<br>`"bear"`<br>`"zebra"`<br>`"giraffe"`<br>`"backpack"`<br>`"umbrella"`<br>`"handbag"`<br>`"tie"`<br>`"suitcase"`<br>`"frisbee"`<br>`"skis"`<br>`"snowboard"`<br>`"sports ball"`<br>`"kite"`<br>`"baseball bat"`<br>`"baseball glove"`<br>`"skateboard"`<br>`"surfboard"`<br>`"tennis racket"`<br>`"bottle"`<br>`"wine glass"`<br>`"cup"`<br>`"fork"`<br>`"knife"`<br>`"spoon"`<br>`"bowl"`<br>`"banana"`<br>`"apple"`<br>`"sandwich"`<br>`"orange"`<br>`"broccoli"`<br>`"carrot"`<br>`"hot dog"`<br>`"pizza"`<br>`"donut"`<br>`"cake"`<br>`"chair"`<br>`"couch"`<br>`"potted plant"`<br>`"bed"`<br>`"dining table"`<br>`"toilet"`<br>`"tv"`<br>`"laptop"`<br>`"mouse"`<br>`"remote"`<br>`"keyboard"`<br>`"cell phone"`<br>`"microwave"`<br>`"oven"`<br>`"toaster"`<br>`"sink"`<br>`"refrigerator"`<br>`"book"`<br>`"clock"`<br>`"vase"`<br>`"scissors"`<br>`"teddy bear"`<br>`"hair drier"`<br>`"toothbrush"` |
+| `max_detections` | 每张图像返回的最大检测数量。按置信度分数降序排列（默认值：100）。 | INT | 是 | N/A |
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `边界框` | 每个输入图像的边界框列表。每个框包含坐标 (x, y, 宽度, 高度)、类别标签和置信度分数。 | BOUNDINGBOX |
+| `bboxes` | 每个输入图像的边界框列表。每个框包含坐标（x、y、宽度、高度）、类别标签和置信度分数。 | BOUNDINGBOX |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RTDETR_detect/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `0c32aa9e17b8ea81e52cb45df2a40f7c1faeb39fdf18dfc643d1d31ed0bfdefd`
+**Source fingerprint (SHA-256):** `658a47cae788da207a52edc6bf8a428c9f3d8cf415e5f20f71d6125ad6d49734`

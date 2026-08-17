@@ -19,4 +19,4 @@ The CLIPTextEncodeKandinsky5 node prepares text prompts for use with the Kandins
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeKandinsky5/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `f033b1924336ccb15d300eb713e859f9f08f48552b409c45b0a8a168d1ba51c2`
+**Source fingerprint (SHA-256):** `d988c47ab9a5f01549a3ae01b365d39e9fa2464bb69ea018ec20151939dcfc56`

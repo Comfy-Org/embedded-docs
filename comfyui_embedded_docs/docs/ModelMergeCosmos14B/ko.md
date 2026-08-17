@@ -1,13 +1,13 @@
 # 모델 병합 (Cosmos 14B)
 
-**ModelMergeCosmos14B** 노드는 Cosmos 14B 모델 아키텍처를 위해 특별히 설계된 블록 기반 방식을 사용하여 두 개의 AI 모델을 병합합니다. 각 모델 블록 및 임베딩 레이어에 대해 0.0에서 1.0 사이의 가중치 값을 조정하여 모델의 서로 다른 구성 요소를 혼합할 수 있습니다.
+**ModelMergeCosmos14B** 노드는 Cosmos 14B 모델 아키텍처에 특화된 블록 기반 방식으로 두 AI 모델을 병합합니다. 각 모델 블록과 임베딩 레이어의 가중치 값을 0.0에서 1.0 사이로 조정하여 모델의 서로 다른 구성 요소를 혼합할 수 있습니다.
 
 ## 입력
 
-| 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
+| 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `모델1` | 병합할 첫 번째 모델 | MODEL | 예 | - |
-| `모델2` | 병합할 두 번째 모델 | MODEL | 예 | - |
+| `model1` | 병합할 첫 번째 모델 | MODEL | 예 | - |
+| `model2` | 병합할 두 번째 모델 | MODEL | 예 | - |
 | `pos_embedder.` | 위치 임베더 구성 요소의 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 | `extra_pos_embedder.` | 추가 위치 임베더 구성 요소의 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 | `x_embedder.` | x 임베더 구성 요소의 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
@@ -51,6 +51,8 @@
 | `blocks.block35.` | 블록 35의 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 | `final_layer.` | 최종 레이어의 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 
+참고: 모든 FLOAT 가중치 입력은 동일한 구성을 공유합니다 — 기본값 1.0, 최소값 0.0, 최대값 1.0, 단계 0.01.
+
 ## 출력
 
 | 출력 이름 | 설명 | 데이터 타입 |
@@ -60,4 +62,4 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmos14B/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `6fcb4fefe7738d0addef49d386c0d3d22cda4c68f0e49ad003d1df595cf0e9d9`
+**Source fingerprint (SHA-256):** `1d1e5dc176643f577723bb0bb9375748a392a6fafa5c9e5e78ef4c4d8289f77c`

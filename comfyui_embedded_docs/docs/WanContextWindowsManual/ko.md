@@ -1,29 +1,31 @@
 # WAN 컨텍스트 창 (수동)
 
-WAN 컨텍스트 윈도우(수동) 노드는 2차원 처리를 수행하는 WAN 계열 모델의 컨텍스트 윈도우를 수동으로 구성할 수 있게 해줍니다. 윈도우 길이, 중첩, 스케줄링 방식 및 융합 기법을 지정하여 샘플링 중에 사용자 정의 컨텍스트 윈도우 설정을 적용합니다. 이를 통해 모델이 서로 다른 컨텍스트 영역에서 정보를 처리하는 방식을 정밀하게 제어할 수 있습니다.
+Wan Context Windows (Manual) 노드를 사용하면 2차원 처리를 수행하는 Wan 유사 모델에 대한 컨텍스트 창을 수동으로 구성할 수 있습니다. 이 노드는 창 길이, 겹침, 스케줄링 방법 및 융합 기법을 지정하여 샘플링 중에 컨텍스트 창 설정을 적용하므로 모델이 다양한 컨텍스트 영역을 처리하는 방식을 제어할 수 있습니다.
 
 ## 입력
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `모델` | 샘플링 중 컨텍스트 윈도우를 적용할 모델입니다. | MODEL | 예 | - |
-| `컨텍스트 길이` | 컨텍스트 윈도우의 길이입니다(기본값: 81). | INT | 예 | 1 ~ 1048576 |
-| `컨텍스트 오버랩` | 컨텍스트 윈도우의 중첩입니다(기본값: 30). | INT | 예 | 0 ~ 1048576 |
-| `컨텍스트 스케줄` | 컨텍스트 윈도우의 보폭입니다. | COMBO | 예 | `"static_standard"`<br>`"uniform_standard"`<br>`"uniform_looped"`<br>`"batched"` |
-| `컨텍스트 스트라이드` | 컨텍스트 윈도우의 보폭입니다. 균일 스케줄에만 적용됩니다(기본값: 1). | INT | 예 | 1 ~ 1048576 |
-| `폐쇄 루프` | 컨텍스트 윈도우 루프를 닫을지 여부입니다. 반복 스케줄에만 적용됩니다(기본값: False). | BOOLEAN | 예 | - |
-| `퓨즈 방법` | 컨텍스트 윈도우를 융합하는 데 사용할 방법입니다(기본값: "pyramid"). | COMBO | 예 | `"pyramid"`<br>`"gaussian"`<br>`"average"`<br>`"overlap"` |
-| `freenoise` | FreeNoise 노이즈 셔플링을 적용할지 여부입니다. 윈도우 혼합을 개선합니다(기본값: False). | BOOLEAN | 예 | - |
+| `model` | 샘플링 중에 컨텍스트 창을 적용할 모델입니다. | MODEL | 예 | - |
+| `context_length` | 실제 프레임 기준 컨텍스트 창의 길이입니다. 4n + 1이어야 합니다. (기본값: 81) | INT | 예 | 1 to 16384 (step 4) |
+| `context_overlap` | 실제 프레임 기준 컨텍스트 창의 겹침입니다. (기본값: 30) | INT | 예 | 0 or greater |
+| `context_schedule` | 컨텍스트 창에 대한 단계 종속 스케줄링 알고리즘입니다. (기본값: "uniform_standard") | COMBO | 예 | `"static_standard"`<br>`"uniform_standard"`<br>`"uniform_looped"`<br>`"batched"` |
+| `context_stride` | 컨텍스트 창의 보폭입니다. uniform 스케줄에만 적용됩니다. (기본값: 1) | INT | 예 | 1 or greater |
+| `closed_loop` | 컨텍스트 창 루프를 닫을지 여부입니다. 루프형(looped) 스케줄에만 적용됩니다. (기본값: False) | BOOLEAN | 예 | True or False |
+| `fuse_method` | 컨텍스트 창을 융합하는 데 사용할 방법입니다. (기본값: "pyramid") | COMBO | 예 | `"pyramid"`<br>`"gaussian"`<br>`"average"`<br>`"overlap"` |
+| `freenoise` | FreeNoise 노이즈 셔플링을 적용할지 여부입니다. 창 혼합을 개선합니다. (기본값: True) | BOOLEAN | 예 | True or False |
+| `retain_first_frame` | 모든 컨텍스트 창의 첫 번째 I2V 프레임을 유지합니다. (초기 참조 유지에 도움이 될 수 있습니다). (기본값: False) | BOOLEAN | 예 | True or False |
+| `split_conds_to_windows` | 여러 컨디셔닝(ConditionCombine으로 생성됨)을 지역 인덱스를 기준으로 각 창에 분할할지 여부입니다. (기본값: False) | BOOLEAN | 예 | True or False |
 
-**참고:** `context_stride` 매개변수는 균일 스케줄에만 영향을 미치며, `closed_loop`는 반복 스케줄에만 적용됩니다. 컨텍스트 길이와 중첩 값은 처리 중에 최소 유효 값을 보장하기 위해 자동으로 조정됩니다. `fuse_method` 매개변수는 이제 "pyramid" 외에도 추가 옵션을 포함합니다.
+**참고:** `context_stride`는 uniform 스케줄에만 영향을 주며, `closed_loop`는 루프형(looped) 스케줄에만 적용됩니다. `context_length`는 4n + 1 패턴을 따라야 합니다. 이 노드는 `context_length`와 `context_overlap`을 적용하기 전에 실제 프레임에서 모델 단위로 변환하며, `context_length`는 최소 1, `context_overlap`은 최소 0을 적용합니다. `context_stride`, `closed_loop`, `freenoise`, `split_conds_to_windows` 입력은 고급 옵션입니다.
 
 ## 출력
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `모델` | 컨텍스트 윈도우 구성이 적용된 모델입니다. | MODEL |
+| `model` | 컨텍스트 창 구성이 적용된 모델입니다. | MODEL |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanContextWindowsManual/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `33e539f1e6647a6a2bc98fadc357a25279b0900746f5b3d568e2782cdb770258`
+**Source fingerprint (SHA-256):** `cf4927371e9d4b509f2e6e5319cd6109e3ef36da6b3faee278bcf8c906672857`

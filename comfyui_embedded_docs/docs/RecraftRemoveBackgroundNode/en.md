@@ -1,4 +1,4 @@
-# Recraft Remove Background Node
+# Recraft Remove Background
 
 This node removes the background from images using the Recraft API service. It processes each image in the input batch and returns both the processed images with transparent backgrounds and corresponding alpha masks that indicate the removed background areas.
 
@@ -18,4 +18,4 @@ This node removes the background from images using the Recraft API service. It p
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftRemoveBackgroundNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `b71006e6b276329c2652483a06ac57ab817135a9d2d2625a971bef9dcb870d5c`
+**Source fingerprint (SHA-256):** `702dfdf2751d5ca33f23e10c0968496887514a21da7a0c42e3636a0ed4e82311`

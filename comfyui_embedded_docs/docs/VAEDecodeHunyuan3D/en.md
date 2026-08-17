@@ -11,6 +11,8 @@ The VAEDecodeHunyuan3D node converts latent representations into 3D voxel data u
 | `num_chunks` | The number of chunks to split the processing into for memory management (default: 8000) | INT | Yes | 1000-500000 |
 | `octree_resolution` | The resolution of the octree structure used for 3D voxel generation (default: 256) | INT | Yes | 16-512 |
 
+Note: `num_chunks` and `octree_resolution` are advanced parameters.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -20,4 +22,4 @@ The VAEDecodeHunyuan3D node converts latent representations into 3D voxel data u
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecodeHunyuan3D/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `04818af007257ec0c73873dba703465960e7adae8a9b22649e118116c388da56`
+**Source fingerprint (SHA-256):** `740e328e9e7817aa1a029c5fadddf5457c91bbb5ac12c7e8af2cd81bee6184a7`

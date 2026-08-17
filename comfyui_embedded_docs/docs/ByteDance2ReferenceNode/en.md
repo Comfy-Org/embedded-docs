@@ -1,6 +1,6 @@
-# ByteDance Seedance 2.0 Reference to Video
+# ByteDance Seedance 2.5 Reference to Video
 
-This node generates, edits, or extends videos using ByteDance's Seedance 2.5 or 2.0 AI models. You describe the video in a text prompt and can add reference images, videos, and audio to guide the result. It supports multimodal reference inputs, video editing, and video extension.
+This node generates, edits, or extends videos using ByteDance's Seedance 2.5 or 2.0 AI models. You describe the video in a text prompt and can add reference images, videos, and audio to guide the result. It supports multimodal reference inputs, video editing, and video extension. This is the legacy, deprecated version of the ByteDance Seedance 2.5 Reference to Video node.
 
 ## Inputs
 
@@ -10,8 +10,8 @@ Selecting a `model` determines which of the parameters below are available. `vid
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The AI model used to generate the video. Seedance 2.5 for the newest model, videos up to 30 seconds and mp4 output; Seedance 2.0 for maximum quality and 1080p/4k; Fast for speed optimization; Mini for the fastest, lowest-cost generation. Selecting a model reveals the model-specific inputs listed below. | COMBO | Yes | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
-| `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed (default: 0). | INT | Yes | 0 to 2147483647 |
+| `model` | The AI model used to generate the video. Seedance 2.5 for the newest model, videos up to 30 seconds and mp4/mov output; Seedance 2.0 for maximum quality and 1080p/4k; Fast for speed optimization; Mini for the fastest, lowest-cost generation. Selecting a model reveals the model-specific inputs listed below. | DYNAMIC_COMBO | Yes | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed (default: 0). | INT | Yes | 0 to 2147483647<br>Step: 1 |
 | `watermark` | Whether to add a watermark to the video (default: False). | BOOLEAN | Yes | `True`<br>`False` |
 
 ### Seedance 2.5 Inputs
@@ -54,7 +54,7 @@ Available for all models. The maximum number of slots depends on the selected mo
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `reference_images` | Growable slot: connect one or more reference images (`image_1`, `image_2`, ...) that guide the video generation. Images are auto-downscaled to a maximum side of 6000 pixels and must be at least 300x300 pixels with an aspect ratio between 0.4 and 2.5. | IMAGE | No | Up to 30 (Seedance 2.5)<br>Up to 9 (Seedance 2.0 models) |
+| `reference_images` | Growable slot: connect one or more reference images (`image_1`, `image_2`, ...) that guide the video generation. The count limit is per model (see model sections). Images are auto-downscaled to a maximum side of 6000 pixels and must be at least 300x300 pixels with an aspect ratio between 0.4 and 2.5. | IMAGE | No | Up to 30 (Seedance 2.5)<br>Up to 9 (Seedance 2.0 models) |
 | `reference_videos` | Growable slot: connect one or more reference videos (`video_1`, `video_2`, ...) that guide the video generation; used for video editing and extension. | VIDEO | No | Up to 10 (Seedance 2.5)<br>Up to 3 (Seedance 2.0 models) |
 | `reference_audios` | Growable slot: connect one or more reference audio clips (`audio_1`, `audio_2`, ...) that guide the video generation. | AUDIO | No | Up to 10 (Seedance 2.5)<br>Up to 3 (Seedance 2.0 models) |
 | `auto_downscale` | Automatically downscale reference videos that exceed the model's pixel budget for the selected resolution. Aspect ratio is preserved; videos already within limits are untouched (default: True). | BOOLEAN | No | `True`<br>`False` |
@@ -79,4 +79,4 @@ Available for all models. The maximum number of slots depends on the selected mo
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `4429306ac40b0f04ce7176cd805b34164de5e4e2b7204b008ea076b57663c200`
+**Source fingerprint (SHA-256):** `4a1b62f65ff3515cdb749c9b3916e631e53523fe144e8cdf71ca020825196ae6`

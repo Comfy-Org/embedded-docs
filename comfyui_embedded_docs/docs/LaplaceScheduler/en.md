@@ -21,4 +21,4 @@ The LaplaceScheduler node generates a sequence of sigma values following a Lapla
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LaplaceScheduler/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `fe8a405937a4b59ab988031b8509a9f030a57d8d1a17bb0812dc51eb5ad83717`
+**Source fingerprint (SHA-256):** `8e5ca00f4797f863a2cf8b9b115ec27beb7f65981cbb04eb036150402fc19389`

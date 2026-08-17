@@ -1,6 +1,6 @@
 # SDPose Draw Keypoints
 
-The SDPoseDrawKeypoints node takes pose estimation data (keypoints) and draws them as a visual skeleton on a blank canvas. It allows you to selectively draw different parts of the pose, such as the body, hands, face, and feet, with customizable line widths and point sizes. The resulting image can be used for visualization or as input for other nodes that require a pose image.
+The SDPoseDrawKeypoints node takes pose estimation data (keypoints) and draws them as a visual skeleton on a blank canvas. It allows you to selectively draw different parts of the pose, such as the body, head, hands, face, and feet, with customizable line widths and point sizes. The resulting image can be used for visualization or as input for other nodes that require a pose image.
 
 ## Inputs
 
@@ -14,6 +14,7 @@ The SDPoseDrawKeypoints node takes pose estimation data (keypoints) and draws th
 | `stick_width` | The width of the lines used to draw the body skeleton (default: 4). | INT | No | 1 to 10 |
 | `face_point_size` | The size of the points used to draw the face keypoints (default: 3). | INT | No | 1 to 10 |
 | `score_threshold` | The minimum confidence score a keypoint must have to be drawn. Keypoints with scores below this value are ignored (default: 0.3). | FLOAT | No | 0.0 to 1.0 |
+| `draw_head` | Controls whether the head keypoints (nose, eyes, ears) and head connections are drawn (default: True). | BOOLEAN | No | - |
 
 **Note:** If the `keypoints` input is empty or `None`, the node will output a blank 64x64 image.
 
@@ -26,4 +27,4 @@ The SDPoseDrawKeypoints node takes pose estimation data (keypoints) and draws th
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDPoseDrawKeypoints/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `09b91930bd88c64aefe32b2b742562537408a13882ad59398fb2e8bcd12fa4eb`
+**Source fingerprint (SHA-256):** `2b2b9530b55c56e278666bd5d139bb6a1bb503b75b948a89266b9982b5a295e4`

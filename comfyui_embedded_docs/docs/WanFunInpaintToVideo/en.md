@@ -28,4 +28,4 @@ The WanFunInpaintToVideo node creates video sequences by inpainting between star
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFunInpaintToVideo/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `16926439268e3748418f1a7c1e9a295ddb1ebc5fcb0ad4914fc8e3215a7950dc`
+**Source fingerprint (SHA-256):** `70b58e961c5df12f94183245ce320197439b2505b47d0bb3ff643b25c9fe6175`

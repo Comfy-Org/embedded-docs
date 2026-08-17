@@ -19,4 +19,4 @@ The SamplingPercentToSigma node converts a sampling percentage value to a corres
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplingPercentToSigma/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `4aa5c1efdb5c9bf8c6b2c38db58845a71a0159d6b2ff7a71449934acb05eae1a`
+**Source fingerprint (SHA-256):** `30decf1d4804accbdf2a70eba1a773b41ef0e09cfb74f2a9388044dadf0a1ac1`

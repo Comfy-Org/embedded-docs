@@ -22,4 +22,4 @@ This node creates an empty latent tensor specifically formatted for use with the
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyHunyuanVideo15Latent/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `6f53c99967149dd7c92e4d20a4ee80bd23d856ebab0a14a8201c55db847a525e`
+**Source fingerprint (SHA-256):** `ce7ec75e8433c778d175a3e2ea260a4397aa5507428908b9a32f50fbe9e184c6`

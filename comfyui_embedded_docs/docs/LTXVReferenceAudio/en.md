@@ -1,6 +1,6 @@
 # LTXV Reference Audio (ID-LoRA)
 
-The LTXV Reference Audio node is used for speaker identity transfer in audio generation. It encodes a reference audio clip into the conditioning for a model, allowing the generated audio to adopt the speaker's voice characteristics. It can also apply identity guidance, which runs an extra processing step to amplify the speaker identity effect.
+The LTXV Reference Audio node sets a reference audio clip for ID-LoRA speaker identity transfer in audio generation. It encodes the clip into the conditioning so the generated audio adopts the speaker's voice characteristics, and optionally patches the model with identity guidance, which runs an extra forward pass without the reference to amplify the speaker identity effect.
 
 ## Inputs
 
@@ -10,10 +10,12 @@ The LTXV Reference Audio node is used for speaker identity transfer in audio gen
 | `positive` | The positive conditioning input. | CONDITIONING | Yes | - |
 | `negative` | The negative conditioning input. | CONDITIONING | Yes | - |
 | `reference_audio` | Reference audio clip whose speaker identity to transfer. ~5 seconds recommended (training duration). Shorter or longer clips may degrade voice identity transfer. | AUDIO | Yes | - |
-| `audio_vae` | LTXV Audio VAE for encoding the reference audio. | VAE | Yes | - |
+| `audio_vae` | LTXV Audio VAE for encoding. | VAE | Yes | - |
 | `identity_guidance_scale` | Strength of identity guidance. Runs an extra forward pass without reference each step to amplify speaker identity. Set to 0 to disable (no extra pass). (default: 3.0) | FLOAT | No | 0.0 - 100.0 |
 | `start_percent` | Start of the sigma range where identity guidance is active. (default: 0.0) | FLOAT | No | 0.0 - 1.0 |
 | `end_percent` | End of the sigma range where identity guidance is active. (default: 1.0) | FLOAT | No | 0.0 - 1.0 |
+
+Note: Identity guidance is only active for sigma values within the range defined by `start_percent` and `end_percent`; outside that range the denoised output is left unchanged. The reference audio is added to both the positive and negative conditioning. If the reference audio sample rate differs from the audio VAE's sample rate, the audio is resampled automatically to match the VAE.
 
 ## Outputs
 
@@ -26,4 +28,4 @@ The LTXV Reference Audio node is used for speaker identity transfer in audio gen
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVReferenceAudio/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `a25e24a08df73b8a34fd476544634e396a0eec5b6dc630e911c371f1b16931b8`
+**Source fingerprint (SHA-256):** `ae15c5838656324667d099614b325b863341f05afda43054658999574522dd49`

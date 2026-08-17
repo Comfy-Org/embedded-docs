@@ -20,4 +20,4 @@ The StableCascade_StageC_VAEEncode node processes an input image through a VAE e
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_StageC_VAEEncode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `6ebdd035349744bc76ab294f16504672d3e79883fccc86d6ea057b4b15faef05`
+**Source fingerprint (SHA-256):** `1679aaac77057fcc359e5428906d5227f6c2dde721aabbfb5a32c08738ac376c`

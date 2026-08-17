@@ -1,32 +1,32 @@
 # WanHuMoGörüntüdenVideoya
 
-WanHuMoImageToVideo düğümü, video kareleri için gizil (latent) temsiller oluşturarak görüntüleri video dizilerine dönüştürür. Koşullandırma girdilerini işler ve video oluşumunu etkilemek için referans görüntüleri ve ses katıştırmalarını (embeddings) dahil edebilir. Düğüm, video sentezi için uygun, değiştirilmiş koşullandırma verileri ve gizil temsiller çıktısı verir.
+WanHuMoImageToVideo düğümü, görüntüden videoya üretim için koşullandırma verilerini ve latent alanını hazırlar. Boş bir latent video tensörü oluşturur, isteğe bağlı olarak VAE ile bir referans görüntüsünü kodlar ve isteğe bağlı olarak ses kodlayıcı çıktısını video zamanlamalı koşullandırmaya dönüştürür. Düğüm, daha fazla video örneklemesi için pozitif ve negatif koşullandırma akışları ile birlikte bir latent tensör çıkarır.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `pozitif` | Video oluşumunu istenen içeriğe yönlendiren pozitif koşullandırma girdisi | CONDITIONING | Evet | - |
-| `negatif` | Video oluşumunu istenmeyen içerikten uzaklaştıran negatif koşullandırma girdisi | CONDITIONING | Evet | - |
-| `vae` | Referans görüntüleri gizil uzaya kodlamak için kullanılan VAE modeli | VAE | Evet | - |
-| `genişlik` | Çıktı video karelerinin piksel cinsinden genişliği (varsayılan: 832, 16'ya bölünebilir olmalıdır) | INT | Evet | 16 - MAX_RESOLUTION |
-| `yükseklik` | Çıktı video karelerinin piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalıdır) | INT | Evet | 16 - MAX_RESOLUTION |
-| `uzunluk` | Oluşturulan video dizisindeki kare sayısı (varsayılan: 97, (length - 1) 4'e bölünebilir olmalıdır) | INT | Evet | 1 - MAX_RESOLUTION |
-| `toplu_iş_boyutu` | Aynı anda oluşturulacak video dizisi sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
-| `ses_kodlayıcı_çıktısı` | Ses içeriğine göre video oluşumunu etkileyebilecek isteğe bağlı ses kodlama verisi | AUDIOENCODEROUTPUT | Hayır | - |
-| `referans_görsel` | Video oluşum stilini ve içeriğini yönlendirmek için kullanılan isteğe bağlı referans görüntüsü | IMAGE | Hayır | - |
+| `positive` | Video üretimini istenen içeriğe yönlendiren pozitif koşullandırma girdisi. | CONDITIONING | Evet | - |
+| `negative` | Video üretimini istenmeyen içerikten uzaklaştıran negatif koşullandırma girdisi. | CONDITIONING | Evet | - |
+| `vae` | Referans görüntüsünü latent alana kodlamak için kullanılan VAE modeli. | VAE | Evet | - |
+| `width` | Çıktı video karelerinin piksel cinsinden genişliği (varsayılan: 832; 16'ya bölünebilir olmalıdır). | INT | Evet | 16 to MAX_RESOLUTION (step 16) |
+| `height` | Çıktı video karelerinin piksel cinsinden yüksekliği (varsayılan: 480; 16'ya bölünebilir olmalıdır). | INT | Evet | 16 to MAX_RESOLUTION (step 16) |
+| `length` | Oluşturulan video dizisindeki kare sayısı (varsayılan: 97; `(length - 1)` ifadesi 4'e bölünebilir olmalıdır). | INT | Evet | 1 to MAX_RESOLUTION (step 4) |
+| `batch_size` | Aynı anda oluşturulacak video dizisi sayısı (varsayılan: 1). | INT | Evet | 1 to 4096 |
+| `audio_encoder_output` | Ses içeriğine dayalı olarak video üretimini etkilemek için kullanılan isteğe bağlı ses kodlayıcı çıktısı. | AUDIO_ENCODER_OUTPUT | Hayır | - |
+| `ref_image` | Video üretim stilini ve içeriğini yönlendirmek için kullanılan isteğe bağlı referans görüntüsü. | IMAGE | Hayır | - |
 
-**Not:** Bir referans görüntüsü sağlandığında, kodlanır ve hem pozitif hem de negatif koşullandırmaya eklenir. Ses kodlayıcı çıktısı sağlandığında, işlenir ve koşullandırma verilerine dahil edilir. Hiçbiri sağlanmazsa, hem referans gizilleri hem de ses katıştırmaları için sıfır dolu yer tutucu tensörler kullanılır.
+**Not:** `ref_image` sağlandığında, `width` x `height` boyutuna yeniden boyutlandırılır, `vae` ile kodlanır ve pozitif ve negatif koşullandırmaya bir referans latent olarak eklenir. Referans görüntüsü sağlanmadığında, sıfır referans latentleri kullanılır. `audio_encoder_output` sağlandığında, ses embedding'leri işlenir ve her iki koşullandırma akışına bir ses embedding'i olarak eklenir; aksi takdirde sıfır ses embedding'i kullanılır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `pozitif` | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş pozitif koşullandırma | CONDITIONING |
-| `negatif` | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş negatif koşullandırma | CONDITIONING |
-| `gizli_uzay` | Video dizisi verilerini içeren oluşturulmuş gizil temsil | LATENT |
+| `positive` | Referans latent ve ses embedding bilgisi eklenmiş pozitif koşullandırma. | CONDITIONING |
+| `negative` | Referans latent ve ses embedding bilgisi eklenmiş negatif koşullandırma. | CONDITIONING |
+| `latent` | Video dizisini temsil eden ve `batch_size`, `length`, `height` ve `width` değerlerine göre sıfırlarla başlatılan latent tensör. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanHuMoImageToVideo/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `6301671d04748ce80c561a65df80c7ca146b91bcce8851872df40211af29fd39`
+**Source fingerprint (SHA-256):** `db674a4a00729a8715988030083e2858f958cd21de73bbbe4ed6d76f5f539419`

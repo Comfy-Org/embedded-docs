@@ -1,6 +1,6 @@
-# LTXVSeparateAVLatent
+# Separate AV Latent
 
-The LTXVSeparateAVLatent node takes a combined audio-visual latent representation and splits it into two distinct parts: one for video and one for audio. It separates the samples and, if present, the noise masks from the input latent, creating two new latent objects.
+The LTXVSeparateAVLatent node takes a combined audio-visual latent representation and splits it into two separate latents: one for video and one for audio. It works with any audio-visual model, such as LTXV or MiniMax H3.
 
 ## Inputs
 
@@ -20,4 +20,4 @@ The LTXVSeparateAVLatent node takes a combined audio-visual latent representatio
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVSeparateAVLatent/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `8e871b6163af27826c197c678214bac7a02c2a5b24279385ba34632c7116356c`
+**Source fingerprint (SHA-256):** `22ed38bbc1b5716cee380c35c50455810f79c273f51bbe6a535c9ae33192afe6`

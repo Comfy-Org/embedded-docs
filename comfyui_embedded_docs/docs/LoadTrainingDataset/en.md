@@ -1,21 +1,23 @@
 # Load Training Dataset
 
-This node loads an encoded training dataset that has been previously saved to disk. It searches for and reads all data shard files from a specified folder within the ComfyUI output directory, then returns the combined latent vectors and conditioning data for use in training workflows.
+This node loads an encoded training dataset (latents and conditioning) from disk for use in training. After you select a previously saved dataset folder, it reads all shard files inside it and returns the combined latent vectors and conditioning data.
 
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `folder_name` | Name of the folder containing the saved dataset, located inside the ComfyUI output directory (default: "training_dataset"). | STRING | Yes | N/A |
+| `folder_name` | Saved dataset to load, from the datasets directory. | COMBO | Yes | Dynamically populated with all dataset folders found in the registered datasets directories. Only folders containing a `metadata.json` file or `.safetensors` files are listed. |
+
+**Note:** The selected dataset folder must be a subfolder of a registered datasets directory and must contain at least one shard file named `shard_*.pkl`; otherwise the node raises an error.
 
 ## Outputs
 
 | Output Name | Description | Data Type |
 | --- | --- | --- |
-| `latents` | A list of latent dictionaries, where each dictionary contains a `"samples"` key with a tensor. | LATENT |
-| `conditioning` | A list of conditioning lists, where each inner list contains conditioning data for a corresponding sample. | CONDITIONING |
+| `latents` | List of latent dicts loaded from the dataset shards, each containing a `samples` tensor. | LATENT |
+| `conditioning` | List of conditioning lists loaded from the dataset shards, one per sample. | CONDITIONING |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `1d074685317b5bd53d9fb7596126b0f579de6c67b5615717b1a16ba01fc01efd`
+**Source fingerprint (SHA-256):** `9f914b27f067460f6f3b54f3f2a7bb793c65b99c85e8aa14ab64894be26bd816`

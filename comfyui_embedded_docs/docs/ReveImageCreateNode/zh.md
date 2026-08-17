@@ -1,27 +1,45 @@
 # Reve 图像生成
 
-Reve Image Create 节点使用 Reve AI 模型根据文本描述生成图像。它将文本提示发送到 Reve API，并返回生成的图像。您可以控制图像的宽高比，并应用可选的后期处理效果（如放大）。
+The Reve Image Create 节点使用 Reve AI 模型根据文本描述生成图像。它将文本提示发送到 Reve API 并返回生成的图像。您可以控制图像的宽高比，并应用可选的后处理效果，如放大和背景移除。此节点已弃用。
 
 ## 输入
 
-| 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
-| --- | --- | --- | --- | --- |
-| `prompt` | 所需图像的文本描述。最多 2560 个字符。 | STRING | 是 | N/A |
-| `model` | 用于生成的模型版本和宽高比。第一个选项选择模型，后续选项定义图像的宽高比。 | COMBO | 是 | `"reve-create@20250915"`<br>`"3:2"`<br>`"16:9"`<br>`"9:16"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
-| `upscale` | 启用或禁用放大后期处理步骤。启用时，您还必须选择放大倍数。 | COMBO | 否 | `"disabled"`<br>`"enabled"` |
-| `upscale_factor` | 增加图像分辨率的倍数。此参数仅在 `upscale` 设置为 `"enabled"` 时生效。 | COMBO | 否 | `2`<br>`3`<br>`4` |
-| `remove_background` | 启用时，对生成的图像应用背景移除后期处理步骤。 | BOOLEAN | 否 | N/A |
-| `seed` | 控制节点是否应重新运行的种子值。注意：无论种子值如何，结果都是非确定性的。默认值：0。 | INT | 否 | 0 到 2147483647 |
+### 通用输入
 
-**注意：** `upscale_factor` 参数依赖于 `upscale` 参数设置为 `"enabled"`。`seed` 参数不保证确定性输出。
+| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
+|-----------|-------------|-----------|----------|-------|
+| `model` | 用于生成的模型版本。选择此模型将显示 `aspect_ratio` 和 `test_time_scaling` 设置。 | DYNAMIC_COMBO | 是 | `"reve-create@20250915"` |
+| `prompt` | 所需图像的文本描述。最多 2560 个字符。默认值：空。 | STRING | 是 | 不适用 |
+| `seed` | 种子用于控制节点是否应重新运行；无论种子如何，结果都是非确定性的。默认值：0。 | INT | 否 | 0 到 2147483647 |
+| `upscale` | 放大生成的图像。可能会产生额外费用。设置为 `enabled` 时，将显示 `upscale_factor` 设置。默认值：`disabled`。 | DYNAMIC_COMBO | 否 | `"disabled"`<br>`"enabled"` |
+| `remove_background` | 从生成的图像中移除背景。可能会产生额外费用。默认值：false。 | BOOLEAN | 否 | true<br>false |
+
+### reve-create@20250915 输入
+
+当 `model` 设置为 `"reve-create@20250915"` 时，将显示这些设置。
+
+| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
+|-----------|-------------|-----------|----------|-------|
+| `aspect_ratio` | 输出图像的宽高比。 | COMBO | 是 | `"3:2"`<br>`"16:9"`<br>`"9:16"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
+| `test_time_scaling` | 数值越高，生成的图像质量越好，但消耗的积分也越多。默认值：1。 | INT | 否 | 1 到 5 |
+
+### 放大输入
+
+当 `upscale` 设置为 `"enabled"` 时，将显示这些设置。
+
+| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
+|-----------|-------------|-----------|----------|-------|
+| `upscale_factor` | 放大倍数（2 倍、3 倍或 4 倍）。默认值：2。 | INT | 否 | 2 到 4（步长 1） |
+
+**注意：** `seed` 参数不能保证确定性输出。`upscale` 参数控制是否将放大作为后处理步骤应用。
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
-| --- | --- | --- |
-| `image` | 由 Reve 模型根据输入提示生成的图像。 | IMAGE |
+|-------------|-------------|-----------|
+| `image` | Reve 模型根据输入提示生成的图像。 | IMAGE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReveImageCreateNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `56cb32ad254d39609d9795ca29f1ccba1db2c5a7ac5bb530475298306ec4ea19`
+**Source fingerprint (SHA-256):** `69178bc7d11e32ca179be5f598fbe60c4d41955b87e1c797e79cf224917a930c`

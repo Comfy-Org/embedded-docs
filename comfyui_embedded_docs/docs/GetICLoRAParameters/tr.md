@@ -2,21 +2,21 @@
 
 ## Genel Bakış
 
-Bu düğüm, bir LoRA yüklenmiş modelin meta verilerinden IC-LoRA parametrelerini çıkarır. Referans küçültme faktörü gibi değerleri bulmak için safetensors meta verilerini okur ve bunları yapılandırılmış bir parametre nesnesi olarak çıktılar; bu nesne, özel kılavuz işleme için LTXVAddGuide düğümüne bağlanabilir.
+Bu düğüm, LoRA yüklü bir modelin meta verilerinden IC-LoRA parametrelerini çıkarır. Safetensors meta verilerini okuyarak referans küçültme faktörü gibi değerleri bulur ve bunları yapılandırılmış bir parametre nesnesi olarak çıkarır; bu nesne, özel kılavuz işleme için LTXVAddGuide düğümüne bağlanabilir. Meta veriler eksikse veya referans küçültme faktörü okunamazsa değer varsayılan olarak 1 olur; bulunduğunda ise değer yuvarlanır ve minimum 1 olacak şekilde sınırlandırılır.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `iclora_model` | Meta verilerin çıkarılacağı belirli IC-LoRA için bir LoRA Yükleyici'den doğrudan çıktı. | MODEL | Evet | Yok |
+| `iclora_model` | Meta verileri çıkarılacak belirli IC-LoRA'ya ait bir LoRA Loader'ın doğrudan çıktısı. | MODEL | Evet | N/A |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `iclora_parameters` | LoRA meta verilerinden çıkarılan IC-LoRA parametreleri (örneğin, reference_downscale_factor). LoRA, kılavuzların özel işlenmesini gerektiriyorsa LTXVAddGuide'a bağlayın. | IC_LORA_PARAMETERS |
+| `iclora_parameters` | LoRA meta verilerinden çıkarılan IC-LoRA parametreleri (örn. reference_downscale_factor). LoRA, kılavuzların özel işlenmesini gerektiriyorsa LTXVAddGuide düğümüne bağlayın. | IC_LORA_PARAMETERS |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetICLoRAParameters/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `44673f0b06cb258014efd77f734c076865d59338ddf825598d85592f000aca50`
+**Source fingerprint (SHA-256):** `5f6becad0c7673b8cde1e099bd7ba5be7106da958b8967f8e693ba2a704baaef`

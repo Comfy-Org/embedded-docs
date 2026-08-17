@@ -1,4 +1,4 @@
-# CLIPTextEncodeControlnet
+# CLIP Text Encode (Controlnet)
 
 The CLIPTextEncodeControlnet node processes text input using a CLIP model and combines it with existing conditioning data to create enhanced conditioning output for controlnet applications. It tokenizes the input text, encodes it through the CLIP model, and adds the resulting embeddings to the provided conditioning data as cross-attention controlnet parameters.
 
@@ -10,7 +10,7 @@ The CLIPTextEncodeControlnet node processes text input using a CLIP model and co
 | `conditioning` | Existing conditioning data to be enhanced with controlnet parameters | CONDITIONING | Yes | - |
 | `text` | Text input to be processed by the CLIP model. Supports multiline text and dynamic prompts | STRING | Yes | - |
 
-**Note:** This node requires all three inputs (`clip`, `conditioning`, and `text`) to function properly. The `text` input supports dynamic prompts and multiline text for flexible text processing.
+**Note:** This node requires all three inputs (`clip`, `conditioning`, and `text`) to function properly. The `text` input supports dynamic prompts and multiline text for flexible text processing. This node is marked as experimental.
 
 ## Outputs
 
@@ -21,4 +21,4 @@ The CLIPTextEncodeControlnet node processes text input using a CLIP model and co
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeControlnet/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `36f0c9b7d3f3187bcf794c71e8a261d456972a41c079ddaca0cb5117912e9685`
+**Source fingerprint (SHA-256):** `95a798684ca8734bfff53c7b979b320f6834dc1a9553163d0e567243761000f1`

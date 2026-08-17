@@ -1,17 +1,17 @@
 # ModelBirleştirmeMochiÖnizleme
 
-Bu düğüm, blok tabanlı bir yaklaşım kullanarak iki yapay zeka modelini birleştirir ve farklı model bileşenleri üzerinde ince ayar yapma imkanı sağlar. Konumsal frekanslar, gömme katmanları ve bireysel dönüştürücü blokları dahil olmak üzere belirli bölümler için enterpolasyon ağırlıklarını ayarlayarak modelleri harmanlamanıza olanak tanır. Birleştirme işlemi, belirtilen ağırlık değerlerine göre her iki girdi modelinin mimarilerini ve parametrelerini birleştirir.
+Bu düğüm, iki yapay zeka modelini blok tabanlı bir yaklaşımla birleştirir ve farklı model bileşenleri üzerinde ayrıntılı kontrol sağlar. Konumsal frekanslar, gömme katmanları ve tek tek transformatör blokları dahil olmak üzere belirli bölümler için enterpolasyon ağırlıklarını ayarlayarak modelleri harmanlamanıza olanak tanır. Birleştirme işlemi, her iki girdi modelinin mimarilerini ve parametrelerini belirtilen ağırlık değerlerine göre birleştirir.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model1` | Birleştirilecek ilk model | MODEL | Evet | - |
 | `model2` | Birleştirilecek ikinci model | MODEL | Evet | - |
 | `pos_frequencies.` | Konumsal frekans enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `t_embedder.` | Zaman gömücü enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `t5_y_embedder.` | T5-Y gömücü enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `t5_yproj.` | T5-Y izdüşüm enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `t5_yproj.` | T5-Y projeksiyon enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.0.` | Blok 0 enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.1.` | Blok 1 enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.2.` | Blok 2 enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
@@ -71,4 +71,4 @@ Bu düğüm, blok tabanlı bir yaklaşım kullanarak iki yapay zeka modelini bir
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeMochiPreview/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `aebf536f3f89ca8c81141ac871b1b612082c3bd38a29984168b05eccf0cb57e3`
+**Source fingerprint (SHA-256):** `8fdf5d023d97ef04bf2b40577be5dbc4c16f8f4437586a98adbdbf7f9fa8a359`

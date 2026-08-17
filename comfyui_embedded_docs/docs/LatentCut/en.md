@@ -11,6 +11,8 @@ The LatentCut node extracts a specific section from latent samples along a chose
 | `index` | The starting position for the cut (default: 0). Positive values count from the start, negative values count from the end. The node automatically clamps the index to stay within the valid range of the latent samples | INT | Yes | -16384 to 16384 |
 | `amount` | The number of elements to extract along the specified dimension (default: 1). The node automatically reduces this value if it would exceed the available data beyond the starting index | INT | Yes | 1 to 16384 |
 
+Note: `x` cuts along the last dimension of the latent tensor, `y` along the second-to-last dimension, and `t` along the third-to-last dimension. When `index` is positive it is clamped to the last valid position of the chosen dimension; when negative it is clamped so it does not point before the beginning of the data. `amount` is reduced whenever the requested cut would extend beyond the available data.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -20,4 +22,4 @@ The LatentCut node extracts a specific section from latent samples along a chose
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentCut/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `c05ce7a33d9416bdd8dabeed2c61fbc6102fc9e797d727aefaadb00f375287a9`
+**Source fingerprint (SHA-256):** `7682de2644a4b85dba0571406f9f9802eca7caab09dc2ccf1ac91dc13b41bcdf`

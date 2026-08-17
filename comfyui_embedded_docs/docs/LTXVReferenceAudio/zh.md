@@ -1,31 +1,31 @@
 # LTXV 参考音频（ID-LoRA）
 
-## 概述
-
-LTXV 参考音频节点用于音频生成中的说话人身份迁移。它将参考音频片段编码为模型的条件输入，使生成的音频能够继承说话人的声音特征。该节点还可应用身份引导，通过额外的处理步骤来增强说话人身份效果。
+LTXV Reference Audio 节点在音频生成中为 ID-LoRA 说话人身份迁移设置参考音频片段。它将该片段编码到 conditioning 中，使生成的音频采用说话人的声音特征，并可选地使用身份引导修补模型，在没有参考音频的情况下额外执行一次前向传播，以增强说话人身份效果。
 
 ## 输入
 
-| 参数 | 说明 | 数据类型 | 是否必填 | 取值范围 |
+| 参数 | 描述 | 数据类型 | 必需 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model` | 需要应用身份引导补丁的模型。 | MODEL | 是 | - |
-| `positive` | 正向条件输入。 | CONDITIONING | 是 | - |
-| `negative` | 负向条件输入。 | CONDITIONING | 是 | - |
-| `reference_audio` | 用于迁移说话人身份的参考音频片段。建议时长约5秒（训练时长）。过短或过长的片段可能会降低声音身份迁移效果。 | AUDIO | 是 | - |
-| `audio_vae` | 用于编码参考音频的 LTXV 音频 VAE。 | VAE | 是 | - |
-| `identity_guidance_scale` | 身份引导强度。每步额外执行一次无参考的前向传播以增强说话人身份。设为0可禁用（无额外前向传播）。（默认值：3.0） | FLOAT | 否 | 0.0 - 100.0 |
-| `start_percent` | 身份引导生效的 sigma 范围起始值。（默认值：0.0） | FLOAT | 否 | 0.0 - 1.0 |
-| `end_percent` | 身份引导生效的 sigma 范围结束值。（默认值：1.0） | FLOAT | 否 | 0.0 - 1.0 |
+| `model` | 要使用身份引导进行修补的模型。 | MODEL | 是 | - |
+| `positive` | 正向 conditioning 输入。 | CONDITIONING | 是 | - |
+| `negative` | 负向 conditioning 输入。 | CONDITIONING | 是 | - |
+| `reference_audio` | 要迁移其说话人身份的参考音频片段。建议约 5 秒（训练时长）。较短或较长的音频片段可能会降低语音身份迁移效果。 | AUDIO | 是 | - |
+| `audio_vae` | 用于编码的 LTXV 音频 VAE。 | VAE | 是 | - |
+| `identity_guidance_scale` | 身份引导的强度。每一步都会在没有参考音频的情况下额外执行一次前向传播，以增强说话人身份。设为 0 可禁用（不进行额外传播）。（默认值：3.0） | FLOAT | 否 | 0.0 - 100.0 |
+| `start_percent` | 身份引导生效的 sigma 范围的起始点。（默认值：0.0） | FLOAT | 否 | 0.0 - 1.0 |
+| `end_percent` | 身份引导生效的 sigma 范围的结束点。（默认值：1.0） | FLOAT | 否 | 0.0 - 1.0 |
+
+注意：身份引导仅在 `start_percent` 和 `end_percent` 定义的 sigma 范围内生效；超出该范围时，去噪输出保持不变。参考音频会被添加到正向和负向 conditioning 中。如果参考音频的采样率与音频 VAE 的采样率不同，音频会自动重采样以匹配 VAE。
 
 ## 输出
 
-| 输出名称 | 说明 | 数据类型 |
+| 输出名 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `positive` | 已应用身份引导函数的模型。 | MODEL |
-| `positive` | 正向条件，现包含编码后的参考音频数据。 | CONDITIONING |
-| `negative` | 负向条件，现包含编码后的参考音频数据。 | CONDITIONING |
+| `model` | 已使用身份引导功能修补的模型。 | MODEL |
+| `positive` | 正向 conditioning，现包含编码后的参考音频数据。 | CONDITIONING |
+| `negative` | 负向 conditioning，现包含编码后的参考音频数据。 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVReferenceAudio/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `0b87fb135ba8e752f4114cb47152503b0ec548eefcaa03f99f1cbdda6664874c`
+**Source fingerprint (SHA-256):** `ae15c5838656324667d099614b325b863341f05afda43054658999574522dd49`

@@ -1,6 +1,6 @@
 # MiniMax H3 Image to Video
 
-This node prepares the conditioning and empty latent needed to generate a video with the MiniMax H3 model. It takes a text prompt and, optionally, images for the first and/or last frame of the video, and converts them into model inputs. Keyframe images are resized, encoded, and attached to the conditioning at the start and end of the video.
+MiniMax H3 Image to Video prepares the conditioning and empty latent needed to generate a video with the MiniMax H3 model. It takes a text prompt and, optionally, images for the first and/or last frame of the video, and converts them into model inputs. Keyframe images are resized, encoded, and attached to the conditioning at the start and end of the video.
 
 ## Inputs
 
@@ -21,10 +21,10 @@ When `first_frame` and/or `last_frame` are provided, the keyframe images are enc
 
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
-| `positive` | Conditioning containing the encoded prompt and, when keyframe images are provided, the encoded keyframes and frame count for the MiniMax H3 model. | CONDITIONING |
-| `latent` | Empty latent representing the video to be generated, with the requested width, height, and frame count. | LATENT |
+| `positive` | Conditioning containing the encoded prompt and, when keyframe images are provided, the encoded keyframes positioned at the first and last frames of the video for the MiniMax H3 model. | CONDITIONING |
+| `latent` | Empty latent representing the video and its accompanying audio track to be generated, with the requested width, height, and frame count. | LATENT |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MiniMaxH3ImageToVideo/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `46efc87bd46f4a86cb6df37c75f960419a2a98b34480e7dc0023c9d87903870b`
+**Source fingerprint (SHA-256):** `d1bdf3f8c66ef20ff11c35203d2c266a88dcf8cc00c65dbb0aea2b1dd16befd6`

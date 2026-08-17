@@ -11,6 +11,12 @@ This node provides a configurable sampler for generating images. It implements t
 | `s_noise` | SDE noise multiplier (default: 1.0). | FLOAT | No | 0.0 - 100.0 |
 | `r` | Relative step size for the intermediate stage (c2 node) (default: 0.5). | FLOAT | No | 0.01 - 1.0 |
 
+Depending on the parameter settings, this sampler can represent:
+
+- `seeds_2` — default settings
+- `exp_heun_2_x0` — `solver_type`=`phi_2`, `r`=1.0, `eta`=0.0
+- `exp_heun_2_x0_sde` — `solver_type`=`phi_2`, `r`=1.0, `eta`=1.0, `s_noise`=1.0
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -20,4 +26,4 @@ This node provides a configurable sampler for generating images. It implements t
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerSEEDS2/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `85cd8fe647b555e32e2aae9c2300ff9d3e01fcfd8bcdff687b0dc2aa0d06b47d`
+**Source fingerprint (SHA-256):** `f48744a706a49ef93d41845bf8c308af971853f6150afd00ded45f0317ffc4f9`

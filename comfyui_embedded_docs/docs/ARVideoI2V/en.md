@@ -21,9 +21,9 @@ This node prepares an image-to-video generation setup for AR (Auto-Regressive) v
 | Output Name | Description | Data Type |
 | --- | --- | --- |
 | `MODEL` | The cloned model with the encoded start image stored in its configuration for video generation. | MODEL |
-| `LATENT` | An empty latent tensor with the correct dimensions for the video generation process. | LATENT |
+| `LATENT` | An empty latent tensor with shape [batch_size, 16, lat_t, height/8, width/8], where lat_t = ((length - 1) // 4) + 1 is the number of latent frames derived from the requested video length. | LATENT |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ARVideoI2V/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `0445b279ba49fa946050cfa70d1e6b13240eaa600b99dfe63f27c3203dc4b61b`
+**Source fingerprint (SHA-256):** `984834951b9d5a22aef51c85a5019fd8ba58cdb2d6fff235371ed29f316896d8`

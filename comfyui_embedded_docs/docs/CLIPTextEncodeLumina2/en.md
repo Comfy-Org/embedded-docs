@@ -6,7 +6,7 @@ The CLIP Text Encode for Lumina2 node encodes a system prompt and a user prompt 
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `system_prompt` | Lumina2 provides two types of system prompts: "superior" generates images with superior image-text alignment; "alignment" generates high-quality images with the highest degree of image-text alignment. | STRING | Yes | `"superior"`<br>`"alignment"` |
+| `system_prompt` | Lumina2 provides two types of system prompts: "superior" generates images with superior image-text alignment; "alignment" generates high-quality images with the highest degree of image-text alignment. | COMBO | Yes | `"superior"`<br>`"alignment"` |
 | `user_prompt` | The text to be encoded. Supports multiline input and dynamic prompts. | STRING | Yes | N/A |
 | `clip` | The CLIP model used for encoding the text. | CLIP | Yes | N/A |
 
@@ -21,4 +21,4 @@ The CLIP Text Encode for Lumina2 node encodes a system prompt and a user prompt 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeLumina2/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `e9d5f685a666a4f0737739e56afa3eb854a4abcbd8a76480c7a050cd503b53b2`
+**Source fingerprint (SHA-256):** `0c7540e6232c93b0f76c4903f5646e00a639ccb0b7720f70b5ac727513358a02`

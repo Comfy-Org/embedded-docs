@@ -18,4 +18,4 @@ The VideoTriangleCFGGuidance node applies a triangular classifier-free guidance 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoTriangleCFGGuidance/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `10b3ad8dcfe5e44f131b2e943e6645899102f406501418906cfe06ac2d21d433`
+**Source fingerprint (SHA-256):** `412d84d402f8c9a4852ee7b3f0ca0ab5650658fc26a37d10333a653e92e0294e`

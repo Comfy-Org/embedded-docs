@@ -6,7 +6,7 @@ The EmptyAceStepLatentAudio node creates empty latent audio samples of a specifi
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `seconds` | The duration of the audio in seconds (default: 120.0) | FLOAT | Yes | 1.0 - 1000.0 |
+| `seconds` | The duration of the audio in seconds (default: 120.0) | FLOAT | Yes | 1.0 - 1000.0 (step 0.1) |
 | `batch_size` | The number of latent images in the batch (default: 1) | INT | Yes | 1 - 4096 |
 
 ## Outputs
@@ -15,7 +15,9 @@ The EmptyAceStepLatentAudio node creates empty latent audio samples of a specifi
 | --- | --- | --- |
 | `output` | Returns empty latent audio samples with zeros. The output contains a `samples` tensor and a `type` field set to "audio". | LATENT |
 
+Note: The latent length is derived from the `seconds` value using an internal sample rate of 44100 Hz, computed as `int(seconds × 44100 / 512 / 8)` frames. The resulting latent tensor is filled entirely with zeros.
+
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyAceStepLatentAudio/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `be20317ed22bf89eeb35a31de0177842f366105da8653e6d7af71241a84967a0`
+**Source fingerprint (SHA-256):** `8268eb582a28c7acc495c52831cc6edd8f8fdd1b294857451ce94abc37ca0d14`

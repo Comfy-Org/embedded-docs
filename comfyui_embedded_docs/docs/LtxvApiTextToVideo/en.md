@@ -11,7 +11,7 @@ The LTXV Text To Video node generates professional-quality videos from a text de
 | `duration` | The length of the generated video in seconds (default: 8). | COMBO | Yes | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` |
 | `resolution` | The pixel dimensions (width x height) of the output video. | COMBO | Yes | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` |
 | `fps` | The frames per second for the video (default: 25). | COMBO | Yes | `25`<br>`50` |
-| `generate_audio` | When enabled, the generated video will include AI-generated audio matching the scene (default: False). | BOOLEAN | No | - |
+| `generate_audio` | When true, the generated video will include AI-generated audio matching the scene (default: False). | BOOLEAN | No | `True`<br>`False` |
 
 **Important Constraints:**
 
@@ -27,4 +27,4 @@ The LTXV Text To Video node generates professional-quality videos from a text de
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LtxvApiTextToVideo/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `11e358bdf9ff9b799b428768c10504f450d81d12f81b2ec0749f9d2d88e82f91`
+**Source fingerprint (SHA-256):** `8cf7409e46bb92abdff8a12e0d4ab49d67bb70e66c0c9074c9af99d1cf250df8`

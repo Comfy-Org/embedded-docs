@@ -1,21 +1,21 @@
 # VideoGizliDeğişkeniniKırp
 
-TrimVideoLatent düğümü, bir video gizli temsilinin başındaki kareleri kaldırır. Bir gizli video örneği alır ve başlangıçtan itibaren belirtilen sayıda kareyi keserek videonun kalan kısmını döndürür. Bu, ilk kareleri kaldırarak video dizilerini kısaltmanıza olanak tanır.
+TrimVideoLatent düğümü, bir latent video temsilinin başlangıcından kareler kaldırır. Bir latent video örneği alır ve baştan belirtilen sayıda kareyi kırparak videonun geri kalan kısmını döndürür. Bu, ilk kareleri kaldırarak video dizilerini kısaltmanıza olanak tanır.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `örnekler` | Kırpılacak video karelerini içeren giriş gizli video temsili | LATENT | Evet | - |
-| `kırpma_miktarı` | Videonun başından kaldırılacak kare sayısı (varsayılan: 0) | INT | Evet | 0 ila 99999 |
+| `samples` | Kırpılacak video karelerini içeren girdi latent video temsili | LATENT | Evet | - |
+| `trim_amount` | Videonun başlangıcından kaldırılacak kare sayısı (varsayılan: 0) | INT | Evet | 0 to 99999 |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | Başlangıçtan itibaren belirtilen sayıda karenin kaldırıldığı kırpılmış gizli video temsili | LATENT |
+| `output` | Belirtilen sayıda kare başlangıçtan kaldırılmış, kırpılmış latent video temsili | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TrimVideoLatent/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `7fd482533d1f63219565a3a25776173c77c419fbf5086015d42136f5bfdfbed2`
+**Source fingerprint (SHA-256):** `33b7a899f2002e9a7008f2ca93de853c08dd0629a4c6867fb42aae4ec2eb864b`

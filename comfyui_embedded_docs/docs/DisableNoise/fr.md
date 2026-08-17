@@ -1,12 +1,12 @@
 # DésactiverBruit
 
-Le nœud DisableNoise fournit une configuration de bruit vide qui peut être utilisée pour désactiver la génération de bruit dans les processus d'échantillonnage. Il renvoie un objet de bruit spécial ne contenant aucune donnée de bruit, permettant aux autres nœuds d'ignorer les opérations liées au bruit lorsqu'ils sont connectés à cette sortie.
+Le nœud DisableNoise fournit une configuration de bruit vide qui peut être utilisée pour désactiver la génération de bruit dans les processus d'échantillonnage. Il renvoie un objet de bruit spécial ne contenant aucune donnée de bruit, permettant ainsi à d'autres nœuds d'ignorer les opérations liées au bruit lorsqu'ils sont connectés à cette sortie.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| *Aucun paramètre d'entrée* | Ce nœud ne nécessite aucun paramètre d'entrée. | - | - | - |
+| *Aucun paramètre d'entrée* | Ce nœud ne requiert aucun paramètre d'entrée. | - | - | - |
 
 ## Sorties
 
@@ -17,4 +17,4 @@ Le nœud DisableNoise fournit une configuration de bruit vide qui peut être uti
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DisableNoise/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `527152dff69bd5c55c622c634b87e625eb16708f8595fa02d69cf38f1125c5eb`
+**Source fingerprint (SHA-256):** `b9edcda655dab3196233b6c66fdb41eb0585b153616b793016d532992b922934`

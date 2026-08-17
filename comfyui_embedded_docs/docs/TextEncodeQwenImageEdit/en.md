@@ -22,4 +22,4 @@ The TextEncodeQwenImageEdit node processes text prompts and optional images to g
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeQwenImageEdit/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `7d1f82174d92ee86ca35e14a364e1a703fb9fc1ac9979611bd894a0a639c58a2`
+**Source fingerprint (SHA-256):** `ec6980a63eab0d6c95be3abea00b2bf3018d30a1267f0b39a21be29a3e9228fe`

@@ -1,24 +1,24 @@
-# SeedVR2Conditioning
+# SeedVR2コンディショニングを適用
 
-このノードは、VAE潜在変数からSeedVR2モデルで使用するポジティブおよびネガティブなコンディショニングを構築します。画像や動画の生成プロセスを導くコンディショニングデータを準備します。
+このノードは、SeedVR2 モデルで使用するために、VAE 潜在変数からポジティブおよびネガティブのコンディショニングを構築します。潜在変数にマスクチャンネルを追加し、それをモデルに組み込まれたポジティブおよびネガティブのコンディショニング埋め込みと組み合わせて、サンプリングに必要なコンディショニング値を生成します。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | SeedVR2モデルです。 | MODEL | はい | - |
-| `vae_conditioning` | コンディショニングを構築する元となるVAE潜在変数です。 | LATENT | はい | - |
+| `model` | SeedVR2 モデル。 | MODEL | はい | - |
+| `vae_conditioning` | コンディショニングを構築するための VAE 潜在変数。表示名: latent。 | LATENT | はい | - |
+
+`vae_conditioning` の潜在変数は、Comfy のチャネルファーストレイアウト (B, C, T, H, W) における 5 次元テンソルであり、SeedVR2 VAE が期待するチャンネル数を持つ必要があります。チャネルラストの潜在変数はエラーとして拒否されます。`model` 入力は、期待される内部構造を持つ有効な SeedVR2 モデルでなければなりません。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `positive` | SeedVR2モデルです。 | MODEL |
-| `negative` | 生成を導くためのポジティブコンディショニングです。 | CONDITIONING |
-| `negative` | 生成を導くためのネガティブコンディショニングです。 | CONDITIONING |
-| `latent` | 処理された潜在サンプルです。 | LATENT |
+| `positive` | サンプリング用のポジティブコンディショニング。 | CONDITIONING |
+| `negative` | サンプリング用のネガティブコンディショニング。 | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SeedVR2Conditioning/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `8f99c0e712c5c6fc76261d6d72c5c08b7202c77827ecf2549240fc530c1b65bd`
+**Source fingerprint (SHA-256):** `28e508bdd776e2e3f5f2f93bfc29a1a1d1c34a11dbdc7f421d197ddbfa85f0f5`

@@ -1,6 +1,6 @@
 # Context Windows (Manual)
 
-The Context Windows (Manual) node allows you to manually configure context windows for models during sampling. It creates overlapping context segments with specified length, overlap, and scheduling patterns to process data in manageable chunks while maintaining continuity between segments. This node provides advanced options for controlling how context windows are applied, including noise shuffling, conditioning retention, and causal window fixes.
+The Context Windows (Manual) node allows you to manually configure context windows for models during sampling. It creates overlapping context segments with specified length, overlap, and scheduling patterns to process data in manageable chunks while maintaining continuity between segments. This node provides advanced options for controlling how context windows are applied, including noise shuffling, conditioning retention, noise latent retention, and causal window fixes.
 
 ## Inputs
 
@@ -9,14 +9,15 @@ The Context Windows (Manual) node allows you to manually configure context windo
 | `model` | The model to apply context windows to during sampling. | MODEL | Yes | - |
 | `context_length` | The length of the context window (default: 16). | INT | No | 1+ |
 | `context_overlap` | The overlap of the context window (default: 4). | INT | No | 0+ |
-| `context_schedule` | The stride of the context window. | COMBO | No | `STATIC_STANDARD`<br>`UNIFORM_STANDARD`<br>`UNIFORM_LOOPED`<br>`BATCHED` |
+| `context_schedule` | Step-dependent scheduling algorithm for context windows (default: STATIC_STANDARD). | COMBO | No | `"STATIC_STANDARD"`<br>`"UNIFORM_STANDARD"`<br>`"UNIFORM_LOOPED"`<br>`"BATCHED"` |
 | `context_stride` | The stride of the context window; only applicable to uniform schedules (default: 1). | INT | No | 1+ |
 | `closed_loop` | Whether to close the context window loop; only applicable to looped schedules (default: False). | BOOLEAN | No | - |
-| `fuse_method` | The method to use to fuse the context windows (default: PYRAMID). | COMBO | No | `PYRAMID`<br>`LIST_STATIC` |
+| `fuse_method` | The method to use to fuse the context windows (default: PYRAMID). | COMBO | No | `"PYRAMID"`<br>`"LIST_STATIC"` |
 | `dim` | The dimension to apply the context windows to (default: 0). | INT | No | 0-5 |
 | `freenoise` | Whether to apply FreeNoise noise shuffling, improves window blending (default: False). | BOOLEAN | No | - |
-| `cond_retain_index_list` | List of latent indices to retain in the conditioning tensors for each window, for example setting this to '0' will use the initial start image for each window (default: ""). | STRING | No | - |
+| `cond_retain_index_list` | List of latent indices to retain in the conditioning tensors for each window. For concat-style I2V models (e.g. Wan I2V, HunyuanVideo I2V, Cosmos I2V, SVD) the encoded start image lives in the c_concat conditioning channels; setting this to '0' will retain that start image content at sub-pos 0 of every window (default: ""). | STRING | No | - |
 | `split_conds_to_windows` | Whether to split multiple conditionings (created by ConditionCombine) to each window based on region index (default: False). | BOOLEAN | No | - |
+| `latent_retain_index_list` | List of latent indices to retain in the noise latent itself for each window. Use for workflows where reference content (e.g. a start image) lives directly in the noise latent rather than in separate conditioning channels (e.g. inplace-style I2V like LTXV, AnimateDiff). Independent of cond_retain_index_list (default: ""). | STRING | No | - |
 | `causal_window_fix` | Whether to add a causal fix frame to non-0-indexed context windows (default: True). | BOOLEAN | No | - |
 
 **Parameter Constraints:**
@@ -25,6 +26,7 @@ The Context Windows (Manual) node allows you to manually configure context windo
 - `closed_loop` is only applicable to looped schedules
 - `dim` must be between 0 and 5 inclusive
 - `cond_retain_index_list` expects a comma-separated list of integer indices as a string (e.g., "0,1,2")
+- `latent_retain_index_list` expects a comma-separated list of integer indices as a string (e.g., "0,1,2") and is independent of `cond_retain_index_list`
 
 ## Outputs
 
@@ -35,4 +37,4 @@ The Context Windows (Manual) node allows you to manually configure context windo
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ContextWindowsManual/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `1351789e54e6b4013331014a49b98c6f8b79692ddabed7a64eeb7463cda03cc5`
+**Source fingerprint (SHA-256):** `39dc39ece3d3c10c13ca8c4b85af4fbbebbcaba8a019145a6d4727c3df7b302b`

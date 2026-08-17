@@ -1,17 +1,13 @@
 # ComboOptionTestNode
 
-以下は、指定された翻訳ルールに従って日本語に翻訳したドキュメントです。
-
----
-
-ComboOptionTestNode は、コンボボックスの選択内容をテストし、そのまま出力するロジックノードです。このノードは、あらかじめ定義されたオプションを持つ2つのコンボボックス入力を受け取り、選択された値を変更せずに直接出力します。
+ComboOptionTestNodeは、コンボボックスの選択をテストしてパススルーするために設計されたロジックノードです。定義済みのオプションセットを持つ2つのコンボボックス入力を受け取り、選択された値を変更せずにそのまま出力します。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `combo` | 3つのテストオプションから最初の選択を行います。 | COMBO | はい | `"option1"`<br>`"option2"`<br>`"option3"` |
-| `combo2` | 別の3つのテストオプションから2番目の選択を行います。 | COMBO | はい | `"option4"`<br>`"option5"`<br>`"option6"` |
+| `combo` | 3つのテストオプションの中からの最初の選択です。 | COMBO | はい | `"option1"`<br>`"option2"`<br>`"option3"` |
+| `combo2` | 別の3つのテストオプションの中からの2番目の選択です。 | COMBO | はい | `"option4"`<br>`"option5"`<br>`"option6"` |
 
 ## 出力
 
@@ -23,4 +19,4 @@ ComboOptionTestNode は、コンボボックスの選択内容をテストし、
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComboOptionTestNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `2f5a73eb7c2962a983b12688159e52d4d05f569d67909f536956ab18a6cc87d7`
+**Source fingerprint (SHA-256):** `fe0b6a35680de55767af2c0d8a293010ddb4c4282cfdde7f9dff7a3a11ff1e5c`

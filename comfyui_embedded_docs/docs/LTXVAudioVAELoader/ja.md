@@ -1,24 +1,22 @@
 # LTXV オーディオVAEローダー
 
-以下が翻訳結果です。
-
----
-
-LTXV Audio VAE Loader ノードは、チェックポイントファイルから事前学習済みの Audio Variational Autoencoder（VAE）モデルを読み込みます。指定されたチェックポイントを読み取り、その重みとメタデータをロードし、ComfyUI 内の音声生成または処理ワークフローで使用できるようにモデルを準備します。
+LTXV Audio VAE Loaderノードは、チェックポイントファイルから事前学習済みのオーディオ変分オートエンコーダー（VAE）モデルをロードします。指定されたチェックポイントを読み取り、その重みとメタデータをロードし、ComfyUI内のオーディオ生成または処理ワークフローで使用できるようにモデルを準備します。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `ckpt_name` | 読み込む Audio VAE チェックポイントです。ComfyUI の `checkpoints` ディレクトリにあるすべてのファイルから選択できるドロップダウンリストです。 | STRING | はい | `checkpoints` フォルダ内のすべてのファイル。<br>*例：`"audio_vae.safetensors"`* |
+| `ckpt_name` | ロードするAudio VAEチェックポイント。ComfyUIの `checkpoints` ディレクトリにあるすべてのファイルが表示されるドロップダウンリストです。 | COMBO | はい | `checkpoints` フォルダ内のすべてのファイル（動的に生成されます）。<br>*例：`"audio_vae.safetensors"`* |
+
+注意：選択したチェックポイントファイルが見つからない場合、または有効なオーディオVAEが含まれていない場合、ノードはエラーを発生させます。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| Audio VAE | 読み込まれた Audio Variational Autoencoder モデルです。他の音声処理ノードに接続する準備が整っています。 | VAE |
+| Audio VAE | ロードされたオーディオ変分オートエンコーダーモデルです。他のオーディオ処理ノードに接続する準備ができています。 | VAE |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAudioVAELoader/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `44e79f694eed796a83f3ac25c56946baaa12b016568bd8824eb179bf79e50588`
+**Source fingerprint (SHA-256):** `c91956645a9de0b8f56191f6c0c6bef43f13724ba59078ec9a885168bf2650e8`

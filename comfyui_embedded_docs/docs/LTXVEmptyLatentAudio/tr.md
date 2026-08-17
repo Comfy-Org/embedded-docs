@@ -1,53 +1,25 @@
 # LTXV Boş Latent Ses
 
-ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
-
-## Çeviri Kuralları
-
-1. **Çevrilmemesi gereken içerik:**
-   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
-   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
-   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
-   - Kod, dosya yolları
-
-2. **Çevrilmesi gereken içerik:**
-   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
-   - Tüm açıklayıcı metinler
-   - Parametre açıklamaları
-
-3. **Çeviri kalitesi:**
-   - Standart Türkçe kullanın
-   - Profesyonel ama anlaşılır bir üslup koruyun
-   - Teknik doğruluğu sağlayın
-   - Standart Türkçe teknik terminolojiyi kullanın
-
-4. **Format:**
-   - Tüm Markdown biçimlendirmesini koruyun
-   - Tablo yapısını koruyun
-   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
-
-Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
-
-LTXV Boş Latent Ses düğümü, boş (sıfır doldurulmuş) latent ses tensörlerinden oluşan bir grup oluşturur. Kanal sayısı ve frekans aralıkları gibi latent uzay için doğru boyutları belirlemek amacıyla sağlanan bir Ses VAE modelinin yapılandırmasını kullanır. Bu boş latent, ComfyUI içindeki ses oluşturma veya işleme iş akışları için bir başlangıç noktası görevi görür.
+LTXV Empty Latent Audio düğümü, sıfırlarla dolu (boş) latent ses tensörlerinden oluşan bir grup oluşturur. Doğru latent uzay boyutlarını (kanal sayısı ve frekans bölmesi gibi) belirlemek için sağlanan Audio VAE modelindeki yapılandırmayı kullanır. Ses latentlerinin sayısı, Audio VAE modeli kullanılarak kare sayısından ve kare hızından hesaplanır. Bu boş latent, ComfyUI içinde ses üretimi veya manipülasyon iş akışları için bir başlangıç noktası görevi görür.
 
 ## Girişler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Tipi | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `frames_number` | Kare sayısı. Varsayılan değer 97'dir. | INT | Evet | 1 ile 1000 arası |
-| `frame_rate` | Saniyedeki kare sayısı. Varsayılan değer 25'tir. | INT | Evet | 1 ile 1000 arası |
-| `batch_size` | Gruptaki latent ses örneklerinin sayısı. Varsayılan değer 1'dir. | INT | Evet | 1 ile 4096 arası |
-| `audio_vae` | Yapılandırmanın alınacağı Ses VAE modeli. Bu parametre zorunludur. | VAE | Evet | Yok |
+| `frames_number` | Kare sayısı. Varsayılan: 97. | INT | Evet | 1 - 1000 |
+| `frame_rate` | Saniyedeki kare sayısı. Ondalıklı veya tam sayı değerlerini kabul eder. Varsayılan: 25.0. | FLOAT (veya INT) | Evet | 1.0 - 1000.0 |
+| `batch_size` | Gruptaki latent ses örneklerinin sayısı. Varsayılan: 1. | INT | Evet | 1 - 4096 |
+| `audio_vae` | Yapılandırmanın alınacağı Audio VAE modeli. | VAE | Evet | N/A |
 
-**Not:** `audio_vae` girişi zorunludur. Sağlanmazsa düğüm bir hata verecektir.
+**Not:** `audio_vae` girişi zorunludur. Sağlanmazsa düğüm bir hata verir.
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Tipi |
 | --- | --- | --- |
-| `Latent` | Giriş Ses VAE'siyle eşleşecek şekilde yapılandırılmış, (batch_size, z_channels, num_audio_latents, audio_freq) yapısında boş bir latent ses tensörü. Çıkış ayrıca "audio" olarak ayarlanmış bir `type` alanı içerir. | LATENT |
+| `Latent` | Giriş Audio VAE'siyle eşleşecek şekilde yapılandırılmış, (batch_size, z_channels, num_audio_latents, audio_freq) yapısında boş bir latent ses tensörü. Çıktı ayrıca "audio" olarak ayarlanmış bir `type` alanı içerir. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVEmptyLatentAudio/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `1a8bfea98f14de014069016652b39542cfd9290cae2d870ab4e381e46aa1e08f`
+**Source fingerprint (SHA-256):** `3ac1bf17ebdba7c3a73bdd795f561b7bee31798d8a1efc11b972db1944f873a4`

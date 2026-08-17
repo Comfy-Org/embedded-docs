@@ -1,21 +1,23 @@
 # CLIP相加
 
-CLIPMergeAdd 节点通过将第二个 CLIP 模型的补丁添加到第一个模型来合并两个 CLIP 模型。它会创建第一个 CLIP 模型的副本，并有选择地合并第二个模型的关键补丁，排除位置 ID 和 logit 缩放参数。这允许您在保留基础模型结构的同时合并 CLIP 模型组件。
+CLIPMergeAdd 节点通过将第二个模型中的补丁添加到第一个模型来合并两个 CLIP 模型。它会创建第一个 CLIP 模型的副本，并选择性地整合第二个模型中的关键补丁，同时排除位置 ID 和 logit scale 参数。这使您可以在保留基础模型结构的前提下合并 CLIP 模型组件。
 
 ## 输入
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `clip1` | 将被克隆并作为合并基础的基础 CLIP 模型 | CLIP | 是 | - |
-| `clip2` | 提供要添加到基础模型的关键补丁的次要 CLIP 模型 | CLIP | 是 | - |
+| `clip1` | 基础 CLIP 模型，将被克隆并用作合并的基础 | CLIP | 是 | - |
+| `clip2` | 次要 CLIP 模型，提供要添加到基础模型中的关键补丁 | CLIP | 是 | - |
+
+注意：`clip2` 中的关键补丁以强度 1.0 添加。以 `.position_ids` 或 `.logit_scale` 结尾的键会被排除在合并之外。
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `CLIP` | 一个合并后的 CLIP 模型，包含基础模型结构以及从次要模型添加的补丁 | CLIP |
+| `CLIP` | 合并后的 CLIP 模型，包含基础模型结构以及来自次要模型的附加补丁 | CLIP |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPMergeAdd/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `f212c2750f317ad51516a10a1a03a838b75bc878333381348d5eb388a2faf516`
+**Source fingerprint (SHA-256):** `e6271ea9139598eb580f79ce63ff5d92307d7ed93f57cdc666c5e022b671a0dd`

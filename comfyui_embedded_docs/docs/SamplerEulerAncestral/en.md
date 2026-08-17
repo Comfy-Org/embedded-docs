@@ -18,4 +18,4 @@ The SamplerEulerAncestral node creates an Euler Ancestral sampler for generating
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerEulerAncestral/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `e54d6ae421731851d54ba747063ff804b1def6024b530afdec0748d255ad1251`
+**Source fingerprint (SHA-256):** `0d3c1f0ffe01eb6cc17fd53e743713f659218ec19001c670440472ae7d0d3887`

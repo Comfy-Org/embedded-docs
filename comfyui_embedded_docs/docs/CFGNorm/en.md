@@ -1,13 +1,16 @@
 # CFGNorm
 
-The CFGNorm node applies a normalization technique to the classifier-free guidance (CFG) process in diffusion models. It adjusts the scale of the denoised prediction by comparing the norms of the conditional and unconditional outputs, then applies a strength multiplier to control the effect. This helps stabilize the generation process by preventing extreme values in the guidance scaling.
+CFGNorm applies a normalization technique to the classifier-free guidance (CFG) process in diffusion models. It adjusts the scale of the denoised prediction by comparing the norms of the conditional and unconditional outputs, then applies a strength multiplier to control the effect. This helps stabilize the generation process by preventing extreme values in the guidance scaling. When `pre_cfg` is enabled, the rescaling is instead applied to the combined noise before the sampler's CFG combination.
 
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `model` | The diffusion model to apply CFG normalization to | MODEL | Yes | - |
-| `strength` | Controls the intensity of the normalization effect applied to the CFG scaling (default: 1.0) | FLOAT | Yes | 0.0 to 100.0 |
+| `strength` | Controls the intensity of the normalization effect applied to the CFG scaling (default: 1.0) | FLOAT | Yes | 0.0 to 100.0 (step 0.01) |
+| `pre_cfg` | If true, rescale the combined noise BEFORE the sampler's CFG combine, without clamping (can amplify). Matches the norm-scaled CFG used by models like Lens. Default false keeps the original post-CFG x0-space attenuate-only behavior. (default: False) | BOOLEAN | No | True<br>False |
+
+Note: In the default post-CFG mode, the rescale factor is clamped between 0.0 and 1.0, so it can only attenuate (reduce) the prediction scale. When `pre_cfg` is enabled, no clamping is applied, so the combined noise can be amplified. In that mode, a `strength` value other than 1.0 blends the result back toward standard linear CFG.
 
 ## Outputs
 
@@ -18,4 +21,4 @@ The CFGNorm node applies a normalization technique to the classifier-free guidan
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGNorm/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `adbcea5c02277a7bd93866eaae75fe150b5b310dbc6e0a3a31c4e4ee0f71e57c`
+**Source fingerprint (SHA-256):** `427dda498ebda2642489aa2591f063355a77b1e064e0dc7fa8570ed8200c2734`

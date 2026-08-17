@@ -19,4 +19,4 @@ The EmptySD3LatentImage node creates a blank latent image tensor specifically fo
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptySD3LatentImage/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `7a4b2454807bc905f26b96c0ff98706fa3e248bbf2b3995d5d38ebc3c5663fd6`
+**Source fingerprint (SHA-256):** `694ede56f43e3f3889b4d23e636fa6b33b490bcbd214584557f0dc883fa0a32d`

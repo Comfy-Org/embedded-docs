@@ -7,7 +7,7 @@ The TomePatchModel node applies Token Merging (ToMe) to a diffusion model to red
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `model` | The diffusion model to apply token merging to | MODEL | Yes | - |
-| `ratio` | The ratio of tokens to merge (default: 0.3). Higher values merge more tokens, resulting in greater speedup but potentially lower quality. | FLOAT | Yes | 0.0 - 1.0 |
+| `ratio` | The ratio of tokens to merge (default: 0.3, step: 0.01). Higher values merge more tokens, resulting in greater speedup but potentially lower quality. | FLOAT | Yes | 0.0 - 1.0 |
 
 ## Outputs
 
@@ -18,4 +18,4 @@ The TomePatchModel node applies Token Merging (ToMe) to a diffusion model to red
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TomePatchModel/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `f2549a504397ee2ba96a0fa5ad5c3e69da2cd0996087af439d151f1f33f4a51e`
+**Source fingerprint (SHA-256):** `1202c0df17f357440cd156fa0920f70c18a318e32c41dc04cecff11613f0072f`

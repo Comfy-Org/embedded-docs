@@ -1,32 +1,28 @@
 # SAM3 Video İzleme
 
-Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_VideoTrack/en.md)
+SAM3'ün bellek tabanlı takipçisini kullanarak video kareleri arasında nesneleri takip edin. Bu düğüm, bir video kare dizisini işler ve başlangıç maskelerini veya metin istemlerini kullanarak neyin takip edileceğini tanımlar, nesne kimliklerini kareler arasında korur.
 
-## Genel Bakış
+## Girdiler
 
-SAM3'ün bellek tabanlı izleyicisini kullanarak video kareleri arasındaki nesneleri takip edin. Bu düğüm, bir dizi video karesini işler ve nesne kimliklerini kareler arasında korur; neyin izleneceğini tanımlamak için başlangıç maskelerini veya metin istemlerini kullanır.
-
-## Girişler
-
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `görüntüler` | Toplu görüntüler olarak video kareleri | IMAGE | Evet | Toplu video kareleri |
-| `model` | İzleme için kullanılacak SAM3 modeli | MODEL | Evet | SAM3 modeli |
-| `ilk_maske` | İzlenecek ilk kare için maske(lar) (nesne başına bir tane). `koşullandırma` sağlanmadıysa zorunludur. | MASK | Hayır | Nesne başına bir maske |
-| `koşullandırma` | İzleme sırasında yeni nesneleri algılamak için metin koşullandırması. `ilk_maske` sağlanmadıysa zorunludur. | CONDITIONING | Hayır | Metin koşullandırması |
-| `tespit_eşiği` | Metin istemiyle algılama için puan eşiği | FLOAT | Hayır | 0.0 ila 1.0 (varsayılan: 0.5) |
-| `maks_nesne` | Maksimum izlenen nesne sayısı. Başlangıç maskeleri bu sınıra dahildir. 0, dahili sınır olan 64'ü kullanır. | INT | Hayır | 0 ila 64 (varsayılan: 0) |
-| `tespit_aralığı` | Her N karede bir algılama çalıştırın (1=her kare). Daha yüksek değerler hesaplama tasarrufu sağlar. | INT | Hayır | 1 ila sınırsız (varsayılan: 1) |
+| `images` | Toplu görüntüler halinde video kareleri | IMAGE | Evet | Toplu video kareleri |
+| `model` | Takip için kullanılacak SAM3 modeli | MODEL | Evet | SAM3 modeli |
+| `initial_mask` | Takip edilecek ilk kare için maske(ler) (nesne başına bir adet). `conditioning` sağlanmadıysa gereklidir. | MASK | Hayır | Nesne başına bir maske |
+| `conditioning` | Takip sırasında yeni nesneleri algılamak için metin koşullandırması. `initial_mask` sağlanmadıysa gereklidir. | CONDITIONING | Hayır | Metin koşullandırması |
+| `detection_threshold` | Metin istemiyle algılama için skor eşiği (varsayılan: 0.5). | FLOAT | Evet | 0.0 to 1.0 |
+| `max_objects` | Maksimum takip edilen nesne sayısı. Başlangıç maskeleri bu sınıra dahildir. 0, dahili üst sınır olan 64'ü kullanır (varsayılan: 4). | INT | Evet | 0 to 64 |
+| `detect_interval` | Algılamayı her N karede bir çalıştırın (1=her kare). Daha yüksek değerler hesaplama gücünden tasarruf sağlar (varsayılan: 1). | INT | Evet | 1 veya daha yüksek |
 
-**Not:** `initial_mask` veya `conditioning`'den biri sağlanmalıdır. Her ikisi de atlanırsa, düğüm bir hata verecektir.
+**Not:** `initial_mask` veya `conditioning` değerlerinden en az biri sağlanmalıdır. İkisi de atlanırsa düğüm bir hata verir. İkisi de sağlandığında, başlangıç maskeleri ilk kareden itibaren takip edilecek nesneleri tanımlar ve metin istemleri takip sırasında ek nesneleri algılar.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `iz_verisi` | Tüm video karelerindeki nesne maskelerini ve meta verilerini içeren izleme verileri | SAM3TrackData |
+| `track_data` | Orijinal kare boyutları dahil olmak üzere, tüm video kareleri boyunca nesne maskelerini ve meta verilerini içeren takip verileri. | SAM3_TRACK_DATA |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_VideoTrack/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `30768bdf5839c1d7b984675e68a127a27f21b17724a2dc885e27f00c272db3cb`
+**Source fingerprint (SHA-256):** `ef584628b334997a001a857a7deffb7eda34db8fa50e3d734a07b5e92566d48d`

@@ -1,51 +1,49 @@
 # WanAnimateToVideo
 
-WanAnimateToVideo ノードは、ポーズ参照、表情、背景要素を含む複数の条件付け入力を組み合わせてビデオコンテンツを生成します。様々なビデオ入力を処理して、フレーム間の時間的一貫性を維持しながら、一貫性のあるアニメーションシーケンスを作成します。このノードは潜在空間の操作を処理し、モーションパターンを継続することで既存のビデオを拡張することもできます。
-
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `ポジティブ` | 生成を目的のコンテンツに導くためのポジティブ条件付け | CONDITIONING | はい | - |
-| `ネガティブ` | 生成を望ましくないコンテンツから遠ざけるためのネガティブ条件付け | CONDITIONING | はい | - |
-| `vae` | 画像データのエンコードとデコードに使用されるVAEモデル | VAE | はい | - |
-| `幅` | 出力ビデオの幅（ピクセル単位）（デフォルト：832、ステップ：16） | INT | はい | 16 ～ MAX_RESOLUTION |
-| `高さ` | 出力ビデオの高さ（ピクセル単位）（デフォルト：480、ステップ：16） | INT | はい | 16 ～ MAX_RESOLUTION |
-| `長さ` | 生成するフレーム数（デフォルト：77、ステップ：4） | INT | はい | 1 ～ MAX_RESOLUTION |
-| `バッチサイズ` | 同時に生成するビデオの数（デフォルト：1） | INT | はい | 1 ～ 4096 |
-| `クリップビジョン出力` | 追加の条件付けのためのオプションのCLIPビジョンモデル出力 | CLIP_VISION_OUTPUT | いいえ | - |
-| `参照画像` | 生成の開始点として使用される参照画像 | IMAGE | いいえ | - |
-| `顔動画` | 表情ガイダンスを提供するビデオ入力 | IMAGE | いいえ | - |
-| `ポーズ動画` | ポーズとモーションガイダンスを提供するビデオ入力 | IMAGE | いいえ | - |
-| `継続モーション最大フレーム数` | 以前のモーションから継続する最大フレーム数（デフォルト：5、ステップ：4） | INT | はい | 1 ～ MAX_RESOLUTION |
-| `背景動画` | 生成コンテンツと合成する背景ビデオ | IMAGE | いいえ | - |
-| `キャラクターマスク` | 選択的処理のためのキャラクター領域を定義するマスク | MASK | いいえ | - |
-| `継続モーション` | 時間的一貫性のために継続する以前のモーションシーケンス | IMAGE | いいえ | - |
-| `動画フレームオフセット` | すべての入力ビデオ内でシークするフレーム数。チャンク単位でより長いビデオを生成するために使用します。ビデオを拡張するには、前のノードのvideo_frame_offset出力に接続します。（デフォルト：0、ステップ：1） | INT | はい | 0 ～ MAX_RESOLUTION |
+| `positive` | 生成を望ましいコンテンツへ導くためのポジティブ conditioning です。 | CONDITIONING | 必須 | - |
+| `negative` | 望ましくないコンテンツから生成を遠ざけるためのネガティブ conditioning です。 | CONDITIONING | 必須 | - |
+| `vae` | 画像データのエンコードとデコードに使用される VAE モデルです。 | VAE | 必須 | - |
+| `width` | 出力ビデオの幅（ピクセル単位）です（デフォルト: 832、ステップ: 16）。 | INT | 必須 | 16 to MAX_RESOLUTION |
+| `height` | 出力ビデオの高さ（ピクセル単位）です（デフォルト: 480、ステップ: 16）。 | INT | 必須 | 16 to MAX_RESOLUTION |
+| `length` | 生成するフレーム数です（デフォルト: 77、ステップ: 4）。 | INT | 必須 | 1 to MAX_RESOLUTION |
+| `batch_size` | 1 バッチで生成するビデオの本数です（デフォルト: 1）。 | INT | 必須 | 1 to 4096 |
+| `clip_vision_output` | ポジティブ conditioning とネガティブ conditioning の両方に追加の conditioning として使用される、オプションの CLIP vision モデル出力です。 | CLIP_VISION_OUTPUT | 任意 | - |
+| `reference_image` | 生成の開始点として使用される参照画像です。指定しない場合は、黒画像（すべてゼロ）が使用されます。 | IMAGE | 任意 | - |
+| `face_video` | 顔の表情のガイドを提供するビデオです。処理時に 512x512 にリサイズされ、-1.0 から 1.0 の範囲に正規化されます。 | IMAGE | 任意 | - |
+| `pose_video` | ポーズとモーションのガイドを提供するビデオです。`length` より短い場合、最後のフレームでパディングされます。 | IMAGE | 任意 | - |
+| `continue_motion_max_frames` | 前回のモーションから継続する最大フレーム数です。`continue_motion` の最後のこのフレーム数だけが使用されます（デフォルト: 5、ステップ: 4）。 | INT | 必須 | 1 to MAX_RESOLUTION |
+| `background_video` | 生成されたコンテンツと合成する背景ビデオです。 | IMAGE | 任意 | - |
+| `character_mask` | 選択的処理のためのキャラクター領域を定義するマスクです。マスクが 1 フレームのみの場合は、全フレームで繰り返されます。 | MASK | 任意 | - |
+| `continue_motion` | ビデオを延長する際に時間的一貫性を維持するために使用される、以前のモーションシーケンスです。最後の `continue_motion_max_frames` フレームのみが使用されます。 | IMAGE | 任意 | - |
+| `video_frame_offset` | すべての入力ビデオでシークするフレーム数です。チャンク単位で長いビデオを生成するために使用します。ビデオを延長するには、前のノードの `video_frame_offset` 出力に接続します（デフォルト: 0、ステップ: 1）。 | INT | 必須 | 0 to MAX_RESOLUTION |
 
-**パラメータ制約：**
+**パラメータの制約:**
 
-- `pose_video`が提供された場合、`trim_to_pose_video`ロジックが有効であれば（現在ソースコードでは`False`に設定）、出力長はポーズビデオの長さに合わせて調整されます
-- `face_video`は処理時に自動的に512x512解像度にリサイズされ、-1.0から1.0の範囲に正規化されます
-- `continue_motion`フレームは`continue_motion_max_frames`パラメータによって制限され、入力の最後の`continue_motion_max_frames`フレームのみが使用されます
-- 入力ビデオ（`face_video`、`pose_video`、`background_video`、`character_mask`）は処理前に`video_frame_offset`分だけオフセットされます。オフセットがビデオ長を超えた場合、その入力は無視されます
-- `character_mask`に1フレームのみが含まれている場合、すべてのフレームに繰り返し適用されます
-- `clip_vision_output`が提供された場合、ポジティブ条件付けとネガティブ条件付けの両方に適用されます
-- `reference_image`が提供されない場合、黒色画像（すべてゼロ）がデフォルトの参照として使用されます
-- `continue_motion`が提供されない場合、初期フレームはグレー（強度0.5）のノイズで埋められます
+- `pose_video` が指定された場合、`length` に一致するように、短いポーズビデオは最後のフレームでパディングされます。ソースには、現在無効化されている `trim_to_pose_video` フラグがあり、これを有効にすると、ポーズビデオの長さに合わせて出力を短縮します。
+- `face_video` は 512x512 にリサイズされ、-1.0 から 1.0 の範囲に正規化されます。
+- `continue_motion` は、最後の `continue_motion_max_frames` フレームに制限されます。`continue_motion` を使用する場合、`video_frame_offset` は取得したフレーム数だけ減少しますが、0 未満にはなりません。
+- 入力ビデオ（`face_video`、`pose_video`、`background_video`、`character_mask`）は、`video_frame_offset` によってオフセットされます。オフセットがこれらの長さ以上の場合、その入力は無視されます。ただし、単一フレームの `character_mask` は常に繰り返されるため例外です。
+- `clip_vision_output` が指定された場合、ポジティブ conditioning とネガティブ conditioning の両方に適用されます。
+- `reference_image` が指定されない場合、黒画像（すべてゼロ）が参照として使用されます。
+- `continue_motion` が指定されない場合、モーション部分にはピクセル値 0.5 のグレーフレームが使用されます。
+- `width` と `height` はステップ 16 を使用します。対応する潜在的な次元は `width / 8` と `height / 8` です。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `ポジティブ` | CLIPビジョン出力、ポーズビデオ潜在、顔ビデオピクセル、連結された潜在画像、連結されたマスクを含む追加のビデオコンテキストを持つ修正済みポジティブ条件付け | CONDITIONING |
-| `ネガティブ` | CLIPビジョン出力、ポーズビデオ潜在、顔ビデオピクセル（反転）、連結された潜在画像、連結されたマスクを含む追加のビデオコンテキストを持つ修正済みネガティブ条件付け | CONDITIONING |
-| `潜在変数` | 形状 [batch_size, 16, latent_length + trim_latent, latent_height, latent_width] の潜在空間形式で生成されたビデオコンテンツ | LATENT |
-| `トリム潜在変数` | 先頭からトリミングする潜在フレーム数を示す潜在空間トリミング情報（参照画像の潜在フレームに対応） | INT |
-| `トリム画像` | 参照モーションフレームの画像空間トリミング情報。先頭からトリミングする画像フレーム数を示します | INT |
-| `動画フレームオフセット` | チャンク単位でビデオ生成を継続するための更新されたフレームオフセット。以前のオフセットに生成された長さを加算して計算されます | INT |
+| `positive` | 変更されたポジティブ conditioning です。連結された潜在画像と連結されたマスクを常に含みます。`clip_vision_output`、`pose_video`、`face_video` が指定されている場合は、それらの値も追加されます。 | CONDITIONING |
+| `negative` | 変更されたネガティブ conditioning です。連結された潜在画像と連結されたマスクを常に含みます。`clip_vision_output`、`pose_video`、`face_video` が指定されている場合は、それらの値も追加されます。なお、顔ビデオのピクセルは -1.0 に設定されます。 | CONDITIONING |
+| `latent` | ゼロで初期化された空の潜在テンソルです。形状は `[batch_size, 16, latent_length + trim_latent, latent_height, latent_width]` です。 | LATENT |
+| `trim_latent` | 参照画像の潜在フレームに対応する、先頭から切り取る潜在フレーム数です。 | INT |
+| `trim_image` | 参照モーションフレームに対応する、先頭から切り取る画像フレーム数です。 | INT |
+| `video_frame_offset` | チャンク単位のビデオ生成用に更新されたフレームオフセットです。調整後の入力オフセットに生成された長さを加えた値になります。 | INT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanAnimateToVideo/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `c2ca90f4963f629d51cdd7f4bdb67e01c32ce5ca7d916b1f992ccd220f57566c`
+**Source fingerprint (SHA-256):** `a95bae4c7ae4ddc8a95bc9dafa2ca920b1d2166802615189537dce16949bfc03`

@@ -10,6 +10,8 @@ The LTXVCropGuides node processes conditioning and latent inputs for video gener
 | `negative` | The negative conditioning input containing guidance information for what to avoid in generation | CONDITIONING | Yes | - |
 | `latent` | The latent representation containing image samples and noise mask data | LATENT | Yes | - |
 
+Note: If the positive conditioning contains no keyframe indices, the node returns the positive, negative, and latent inputs unchanged.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -21,4 +23,4 @@ The LTXVCropGuides node processes conditioning and latent inputs for video gener
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVCropGuides/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `b5981a2e685c3590df2ced4b619d6d4596971255c8eb6081d63f917a9a938504`
+**Source fingerprint (SHA-256):** `83e08bad281902e765ec18e06144b6a5fa730be2533932daa1d4076e6390b1e1`

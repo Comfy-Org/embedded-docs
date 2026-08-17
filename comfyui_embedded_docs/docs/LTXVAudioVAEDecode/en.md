@@ -1,5 +1,8 @@
 # LTXV Audio VAE Decode
 
+```markdown
+# LTXV Audio VAE Decode
+
 The LTXV Audio VAE Decode node converts a latent representation of audio back into an audio waveform. It uses a specialized Audio VAE model to perform this decoding process, producing an audio output with a specific sample rate.
 
 ## Inputs
@@ -20,4 +23,4 @@ The LTXV Audio VAE Decode node converts a latent representation of audio back in
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAudioVAEDecode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `b410b535f8cfc07b2d5a7814d719970ca813172bbbb04bec22a0ce3be04dfa94`
+**Source fingerprint (SHA-256):** `fc94f3cb78ede86ada374444d613411cc9bb5849e5cdb8a24074babee50719b1`

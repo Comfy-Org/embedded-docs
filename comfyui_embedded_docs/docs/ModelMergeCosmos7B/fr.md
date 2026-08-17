@@ -1,6 +1,6 @@
 # ModelMergeCosmos7B
 
-Le nœud ModelMergeCosmos7B fusionne deux modèles d'IA en utilisant un mélange pondéré de composants spécifiques. Il permet un contrôle précis sur la façon dont les différentes parties des modèles sont combinées en ajustant des poids individuels pour les plongements de position, les blocs de transformeur et les couches finales.
+Le nœud **ModelMergeCosmos7B** fusionne deux modèles d'IA en utilisant une combinaison pondérée de composants spécifiques. Il permet un contrôle fin sur la manière dont les différentes parties des modèles sont combinées en ajustant les poids individuels des intégrations de position, des blocs de transformeurs et des couches finales.
 
 ## Entrées
 
@@ -8,10 +8,10 @@ Le nœud ModelMergeCosmos7B fusionne deux modèles d'IA en utilisant un mélange
 | --- | --- | --- | --- | --- |
 | `model1` | Premier modèle à fusionner | MODEL | Oui | - |
 | `model2` | Deuxième modèle à fusionner | MODEL | Oui | - |
-| `pos_embedder.` | Poids pour le composant de plongement de position (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
-| `extra_pos_embedder.` | Poids pour le composant de plongement de position supplémentaire (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
-| `x_embedder.` | Poids pour le composant de plongement x (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
-| `t_embedder.` | Poids pour le composant de plongement t (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
+| `pos_embedder.` | Poids pour le composant d'intégration de position (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
+| `extra_pos_embedder.` | Poids pour le composant d'intégration de position supplémentaire (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
+| `x_embedder.` | Poids pour le composant d'intégration x (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
+| `t_embedder.` | Poids pour le composant d'intégration t (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
 | `affline_norm.` | Poids pour le composant de normalisation affine (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
 | `blocks.block0.` | Poids pour le bloc de transformeur 0 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
 | `blocks.block1.` | Poids pour le bloc de transformeur 1 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
@@ -52,4 +52,4 @@ Le nœud ModelMergeCosmos7B fusionne deux modèles d'IA en utilisant un mélange
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmos7B/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `0721b047933179706c76f622efb5b7425aad530d302d8b33ec12dd68513dec0b`
+**Source fingerprint (SHA-256):** `2cc4dcaa3576c5383c630e233cef55dedc8d742c20197cc83f5832dc9e887dac`

@@ -1,24 +1,24 @@
 # Lumina2 için CLIP Metin Kodlama
 
-CLIP Metin Kodlama (Lumina2) düğümü, bir sistem yönergesini ve bir kullanıcı yönergesini CLIP modeli kullanarak, difüzyon modelini belirli görüntüler üretmeye yönlendirebilecek bir gömülü vektöre (embedding) kodlar. Önceden tanımlanmış bir sistem yönergesini, özel metin yönergenizle birleştirir ve bunları CLIP modeli aracılığıyla işleyerek görüntü oluşturma için koşullama verisi (conditioning data) oluşturur.
+Lumina2 için CLIP Text Encode düğümü, bir sistem istemini ve bir kullanıcı istemini, difüzyon modelinin belirli görüntüler üretmesini yönlendirebilecek bir katıştırmaya kodlamak için bir CLIP modeli kullanır. Önceden tanımlanmış bir sistem istemini özel metin isteminizle birleştirir ve görüntü üretimi için koşullandırma verileri oluşturmak üzere bunları CLIP modelinden geçirir.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `sistem_istemi` | Lumina2 iki tür sistem yönergesi sağlar: "superior" üstün görüntü-metin uyumuna sahip görüntüler üretir; "alignment" ise en yüksek derecede görüntü-metin uyumuna sahip yüksek kaliteli görüntüler üretir. | STRING | Evet | `"superior"`<br>`"alignment"` |
-| `kullanıcı_istemi` | Kodlanacak metin. Çok satırlı girişi ve dinamik yönergeleri destekler. | STRING | Evet | Yok |
-| `clip` | Metni kodlamak için kullanılan CLIP modeli. | CLIP | Evet | Yok |
+| `system_prompt` | Lumina2 iki tür sistem istemi sağlar: "superior", üstün görüntü-metin uyumuna sahip görüntüler üretir; "alignment", en yüksek derecede görüntü-metin uyumuna sahip yüksek kaliteli görüntüler üretir. | COMBO | Evet | `"superior"`<br>`"alignment"` |
+| `user_prompt` | Kodlanacak metin. Çok satırlı girdiyi ve dinamik istemleri destekler. | STRING | Evet | N/A |
+| `clip` | Metni kodlamak için kullanılan CLIP modeli. | CLIP | Evet | N/A |
 
-**Not:** `clip` girişi zorunludur ve boş (None) olamaz. clip girişi geçersizse, düğüm kontrol noktasının (checkpoint) geçerli bir CLIP veya metin kodlayıcı modeli içermeyebileceğini belirten bir hata verecektir.
+**Not:** `clip` girdisi zorunludur ve None olamaz. clip girdisi geçersizse, düğüm, kontrol noktasının geçerli bir CLIP veya metin kodlayıcı modeli içermeyebileceğini belirten bir hata verir.
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `CONDITIONING` | Difüzyon modelini yönlendirmek için kullanılan, kodlanmış metni içeren bir koşullama (conditioning). | CONDITIONING |
+| `CONDITIONING` | Difüzyon modelini yönlendirmek için kullanılan, katıştırılmış metni içeren bir koşullandırma. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeLumina2/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `fcc0802180ffc2c0757b395850d54632da011473da0c6b1c5268b42da3747024`
+**Source fingerprint (SHA-256):** `0c7540e6232c93b0f76c4903f5646e00a639ccb0b7720f70b5ac727513358a02`

@@ -1,15 +1,15 @@
 # ModelMergeLTXV
 
-O nó ModelMergeLTXV realiza operações avançadas de mesclagem de modelos projetadas especificamente para arquiteturas de modelos LTXV. Ele permite combinar dois modelos diferentes ajustando os pesos de interpolação para vários componentes do modelo, incluindo blocos transformadores, camadas de projeção e outros módulos especializados.
+ModelMergeLTXV mescla dois modelos LTXV em um, combinando seus componentes internos. Cada parâmetro de peso controla a força com que uma parte específica do `model2` é misturada ao `model1`, onde valores mais baixos favorecem o `model1` e valores mais altos favorecem o `model2`.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `model1` | O primeiro modelo a ser mesclado | MODEL | Sim | - |
 | `model2` | O segundo modelo a ser mesclado | MODEL | Sim | - |
 | `patchify_proj.` | Peso de interpolação para camadas de projeção patchify (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `adaln_single.` | Peso de interpolação para camadas únicas de normalização adaptativa de camada (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `adaln_single.` | Peso de interpolação para camadas únicas de normalização de camada adaptativa (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `caption_projection.` | Peso de interpolação para camadas de projeção de legenda (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `transformer_blocks.0.` | Peso de interpolação para o bloco transformador 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `transformer_blocks.1.` | Peso de interpolação para o bloco transformador 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
@@ -39,16 +39,16 @@ O nó ModelMergeLTXV realiza operações avançadas de mesclagem de modelos proj
 | `transformer_blocks.25.` | Peso de interpolação para o bloco transformador 25 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `transformer_blocks.26.` | Peso de interpolação para o bloco transformador 26 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `transformer_blocks.27.` | Peso de interpolação para o bloco transformador 27 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `scale_shift_table` | Peso de interpolação para a tabela de deslocamento de escala (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `proj_out.` | Peso de interpolação para camadas de saída de projeção (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `scale_shift_table` | Peso de interpolação para a tabela de escala e deslocamento (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `proj_out.` | Peso de interpolação para as camadas de projeção de saída (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
+| Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `model` | O modelo mesclado combinando características de ambos os modelos de entrada de acordo com os pesos de interpolação especificados | MODEL |
+| `model` | O modelo mesclado que combina características de ambos os modelos de entrada de acordo com os pesos de interpolação especificados | MODEL |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeLTXV/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `29ef8750b6e88f71abca10c8aaad5d75c9c32afec057af78842ca82441438922`
+**Source fingerprint (SHA-256):** `0ff5f93aee831259066679a27fff8f7cbd4a9686242091f1bc7dd3805725566e`

@@ -1,23 +1,23 @@
-# LTXVSeparateAVLatent
+# AV Latent Ayır
 
-LTXVSeparateAVLatent düğümü, birleşik bir ses-görüntü gizli temsilini alır ve bunu iki ayrı parçaya ayırır: biri video, diğeri ses için. Giriş gizli temsilinden örnekleri ve varsa gürültü maskelerini ayırarak iki yeni gizli nesne oluşturur.
+LTXVSeparateAVLatent düğümü, birleşik ses-görüntü latent temsilini alır ve iki ayrı latente böler: biri video, diğeri ses için. LTXV veya MiniMax H3 gibi herhangi bir ses-görüntü modeliyle çalışır.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `av_latent` | Ayrıştırılacak birleşik ses-görüntü gizli temsili. | LATENT | Evet | Yok |
+| `av_latent` | Ayrıştırılacak birleşik ses-görüntü latent temsili. | LATENT | Evet | N/A |
 
-**Not:** Giriş gizli temsilinin `samples` tensörünün, ilk boyut (toplu iş boyutu) boyunca en az iki öğeye sahip olması beklenir. İlk öğe video gizli temsili için, ikinci öğe ise ses gizli temsili için kullanılır. Bir `noise_mask` (gürültü maskesi) varsa, aynı şekilde ayrıştırılır.
+**Not:** Girdi latentinin `samples` tensörünün ilk boyutunda (batch boyutu) en az iki öğe bulunması beklenir. İlk öğe video latenti için, ikinci öğe ise ses latenti için kullanılır. Bir `noise_mask` mevcutsa, aynı şekilde bölünür.
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `video_latent` | Ayrıştırılmış video verilerini içeren gizli temsil. | LATENT |
-| `audio_latent` | Ayrıştırılmış ses verilerini içeren gizli temsil. | LATENT |
+| `video_latent` | Ayrıştırılmış video verilerini içeren latent temsil. | LATENT |
+| `audio_latent` | Ayrıştırılmış ses verilerini içeren latent temsil. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVSeparateAVLatent/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `55bce5d768e7fe13f885cc32d34ecdac5cdcbb667b03743004866ea4b6d58d46`
+**Source fingerprint (SHA-256):** `22ed38bbc1b5716cee380c35c50455810f79c273f51bbe6a535c9ae33192afe6`

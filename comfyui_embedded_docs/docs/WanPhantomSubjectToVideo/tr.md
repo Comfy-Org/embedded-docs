@@ -1,32 +1,32 @@
 # WanPhantomSubjectToVideo
 
-WanPhantomSubjectToVideo düğümü, koşullandırma girdilerini ve isteğe bağlı referans görüntülerini işleyerek video içeriği oluşturur. Video oluşturma için gizli temsiller oluşturur ve sağlandığında girdi görüntülerinden görsel yönlendirme ekleyebilir. Düğüm, video modelleri için zaman boyutlu birleştirme ile koşullandırma verilerini hazırlar ve oluşturulan gizli video verileriyle birlikte değiştirilmiş koşullandırmayı çıktı olarak verir.
+The WanPhantomSubjectToVideo düğümü, koşullandırma girdilerini ve isteğe bağlı referans görüntülerini işleyerek video içeriği üretir. Video üretimi için latent temsiller oluşturur ve sağlandığında giriş görüntülerinden görsel rehberlik ekleyebilir. Düğüm, Wan video modelleri için zamansal boyutlu birleştirme ile koşullandırma verilerini hazırlar ve değiştirilmiş koşullandırmanın yanı sıra üretilen latent video verisini çıktı olarak verir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `pozitif` | Video oluşturmayı yönlendirmek için pozitif koşullandırma girdisi | CONDITIONING | Evet | - |
-| `negatif` | Belirli özelliklerden kaçınmak için negatif koşullandırma girdisi | CONDITIONING | Evet | - |
+| `positive` | Video üretimini yönlendirmek için pozitif koşullandırma girdisi | CONDITIONING | Evet | - |
+| `negative` | Belirli özelliklerden kaçınmak için negatif koşullandırma girdisi | CONDITIONING | Evet | - |
 | `vae` | Sağlandığında görüntüleri kodlamak için VAE modeli | VAE | Evet | - |
-| `genişlik` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, 16'ya bölünebilir olmalıdır) | INT | Evet | 16 ile MAX_RESOLUTION |
-| `yükseklik` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalıdır) | INT | Evet | 16 ile MAX_RESOLUTION |
-| `uzunluk` | Oluşturulan videodaki kare sayısı (varsayılan: 81, 4'e bölünebilir olmalıdır) | INT | Evet | 1 ile MAX_RESOLUTION |
-| `toplu_iş_boyutu` | Aynı anda oluşturulacak video sayısı (varsayılan: 1) | INT | Evet | 1 ile 4096 |
-| `görseller` | Zaman boyutlu koşullandırma için isteğe bağlı referans görüntüleri | IMAGE | Hayır | - |
+| `width` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, 16'ya bölünebilmelidir) | INT | Evet | 16 - MAX_RESOLUTION |
+| `height` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilmelidir) | INT | Evet | 16 - MAX_RESOLUTION |
+| `length` | Üretilen videodaki kare sayısı (varsayılan: 81, 4'e bölünebilmelidir) | INT | Evet | 1 - MAX_RESOLUTION |
+| `batch_size` | Aynı anda üretilecek video sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `images` | Zamansal boyutlu koşullandırma için isteğe bağlı referans görüntüleri | IMAGE | Hayır | - |
 
-**Not:** `images` sağlandığında, belirtilen `width` ve `height` değerlerine uyacak şekilde otomatik olarak yükseltilir ve işleme için yalnızca ilk `length` karesi kullanılır.
+**Not:** `images` sağlandığında, görüntüler belirtilen `width` ve `height` ile eşleşecek şekilde otomatik olarak büyütülür ve işleme için yalnızca ilk `length` kare kullanılır. Her görüntü, VAE tarafından kodlanmadan önce ilk 3 renk kanalına indirgenir. `images` sağlanmadığında, koşullandırma girdileri değiştirilmeden geçer.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `pozitif` | Görüntüler sağlandığında zaman boyutlu birleştirme ile değiştirilmiş pozitif koşullandırma | CONDITIONING |
-| `negatif_metin` | Görüntüler sağlandığında zaman boyutlu birleştirme ile değiştirilmiş negatif koşullandırma | CONDITIONING |
-| `negatif_img_metin` | Görüntüler sağlandığında sıfırlanmış zaman boyutlu birleştirme ile negatif koşullandırma | CONDITIONING |
-| `gizli` | Belirtilen boyutlar ve uzunluk ile oluşturulmuş gizli video temsili | LATENT |
+| `positive` | Görüntüler sağlandığında zamansal boyutlu birleştirme ile değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `negative_text` | Görüntüler sağlandığında zamansal boyutlu birleştirme ile değiştirilmiş negatif koşullandırma | CONDITIONING |
+| `negative_img_text` | Görüntüler sağlandığında sıfırlanmış zamansal boyutlu birleştirme ile negatif koşullandırma | CONDITIONING |
+| `latent` | 16 kanallı, zamansal boyutu ((length - 1) // 4) + 1 ve uzamsal boyutları height // 8 ve width // 8 olan sıfır dolu latent video gösterimi | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanPhantomSubjectToVideo/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `2e3e8277dca9e998220fc5939c2cc72fdc15e80cc4b95daa33f5b92e2270dd73`
+**Source fingerprint (SHA-256):** `a1853382f6e564f66262b69dd7b06cc58e26b93386a460a98e6fcc2ff6acf12b`

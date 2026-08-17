@@ -1,23 +1,25 @@
 # Video Dilimle
 
-Video Slice düğümü, bir videodan belirli bir bölümü çıkarmanızı sağlar. Videoyu kırpmak için bir başlangıç zamanı ve süre tanımlayabilir veya yalnızca başlangıç karelerini atlayabilirsiniz. İstenen süre kalan videodan daha uzunsa, düğüm mevcut olanı döndürebilir veya bir hata verebilir.
+Video Slice düğümü, bir videodan belirli bir bölümü çıkarmanızı sağlar. Videoyu kırpmak için bir başlangıç zamanı ve süre tanımlayabilir veya yalnızca başlangıç karelerini atlayabilirsiniz. İstenen süre, kalan videodan daha uzunsa, düğüm mevcut olanı döndürebilir veya bir hata fırlatabilir.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `video` | Kırpılacak giriş videosu. | VIDEO | Evet | - |
-| `başlangıç zamanı` | Saniye cinsinden başlangıç zamanı (varsayılan: 0.0). | FLOAT | Hayır | -1e5 ila 1e5 |
-| `süre` | Saniye cinsinden süre veya sınırsız süre için 0 (varsayılan: 0.0). | FLOAT | Hayır | 0.0 ve üzeri |
-| `kesin süre` | True ise, belirtilen süre mümkün olmadığında bir hata oluşturulur (varsayılan: False). | BOOLEAN | Hayır | - |
+| `video` | Kesilecek giriş videosu. | VIDEO | Evet | - |
+| `start_time` | Saniye cinsinden başlangıç zamanı (varsayılan: 0.0). | FLOAT | Hayır | -1e5 ila 1e5 |
+| `duration` | Saniye cinsinden süre veya sınırsız süre için 0 (varsayılan: 0.0). | FLOAT | Hayır | 0.0 ve üzeri |
+| `strict_duration` | True ise, belirtilen süre mümkün olmadığında bir hata fırlatılır (varsayılan: False). | BOOLEAN | Hayır | - |
 
-## Çıkışlar
+Not: `duration` 0 olduğunda, düğüm `start_time`'dan videonun sonuna kadar dilimler. İstenen bölüm oluşturulamazsa — örneğin `start_time` videonun sonunun ötesindeyse — düğüm bir hata fırlatır.
 
-| Çıkış Adı | Açıklama | Veri Türü |
+## Çıktılar
+
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
 | `video` | Kırpılmış video bölümü. | VIDEO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video Slice/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `5e3e3e69931a25183eb01b7b87ec12cbf9f5a748781993dcbeec7a6d5f7260c1`
+**Source fingerprint (SHA-256):** `439b76528742c1fbe230eee9502e945847ae99a58a9bd81a7a7dc3b20e15d450`

@@ -1,30 +1,45 @@
 # Recraft V4 Texte vers Vectoriel
 
-Voici la traduction en français de la documentation du nœud Recraft V4 Text to Vector :
-
-Le nœud Recraft V4 Texte vers Vecteur génère des illustrations vectorielles (SVG) à partir d'une description textuelle. Il se connecte à une API externe pour utiliser le modèle Recraft V4 ou Recraft V4 Pro pour la génération d'images. Le nœud produit une ou plusieurs images SVG en fonction de votre invite.
+Le nœud Recraft V4 Text to Vector génère des images Scalable Vector Graphics (SVG) à partir d'une description textuelle. Il se connecte à une API externe pour générer des images à l'aide des modèles Recraft V4 et V4.1. Le nœud produit une ou plusieurs images SVG selon votre prompt.
 
 ## Entrées
 
-| Paramètre | Description | Type de données | Requis | Plage |
-| --- | --- | --- | --- | --- |
-| `prompt` | Invite pour la génération d'image. Maximum 10 000 caractères. | STRING | Oui | N/A |
-| `prompt_négatif` | Description textuelle facultative des éléments indésirables sur une image. | STRING | Non | N/A |
-| `modèle` | Le modèle à utiliser pour la génération. La sélection d'un modèle modifie les options `size` disponibles. | COMBO | Oui | `"recraftv4"`<br>`"recraftv4_pro"` |
-| `size` | La taille de l'image générée. Les options disponibles dépendent du `modèle` sélectionné. La valeur par défaut est `"1024x1024"` pour `recraftv4` et `"2048x2048"` pour `recraftv4_pro`. | COMBO | Oui | Pour `recraftv4` : `"1024x1024"`, `"1152x896"`, `"896x1152"`, `"1216x832"`, `"832x1216"`, `"1344x768"`, `"768x1344"`, `"1536x640"`, `"640x1536"`<br>Pour `recraftv4_pro` : `"2048x2048"`, `"2304x1792"`, `"1792x2304"`, `"2432x1664"`, `"1664x2432"`, `"2688x1536"`, `"1536x2688"`, `"3072x1280"`, `"1280x3072"` |
-| `n` | Le nombre d'images à générer (par défaut : 1). | INT | Oui | 1 à 6 |
-| `graine` | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine. | INT | Oui | 0 à 18446744073709551615 |
-| `recraft_controls` | Contrôles supplémentaires facultatifs sur la génération via le nœud Contrôles Recraft. | CUSTOM | Non | N/A |
+### Entrées communes
 
-**Remarque :** Le paramètre `size` est une entrée dynamique dont les options disponibles changent en fonction du `model` sélectionné. La valeur `seed` ne garantit pas des résultats reproductibles depuis l'API externe.
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `model` | Le modèle à utiliser pour la génération. La sélection d'un modèle modifie les options `size` disponibles. | DYNAMIC_COMBO | Oui | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"` |
+| `prompt` | Prompt pour la génération d'images. 10 000 caractères maximum. | STRING | Oui | N/A |
+| `negative_prompt` | Cette entrée est ignorée : le prompt négatif n'est pas pris en charge par les modèles Recraft V4 et V4.1. | STRING | Oui | N/A |
+| `n` | Le nombre d'images à générer (défaut : 1). | INT | Oui | 1 à 6 |
+| `seed` | Seed pour déterminer si le nœud doit se ré-exécuter ; les résultats réels sont non déterministes quelle que soit la seed (défaut : 0). | INT | Oui | 0 à 18446744073709551615 |
+| `recraft_controls` | Contrôles supplémentaires facultatifs sur la génération via le nœud Recraft Controls. | CUSTOM | Non | N/A |
+
+### Entrées recraftv4_1_vector, recraftv4_1_utility_vector et recraftv4
+
+Ces trois modèles partagent les mêmes options `size`.
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `size` | La taille de l'image générée (défaut : `"1024x1024"`). | COMBO | Oui | `"1024x1024"`<br>`"1152x896"`<br>`"896x1152"`<br>`"1216x832"`<br>`"832x1216"`<br>`"1344x768"`<br>`"768x1344"`<br>`"1536x640"`<br>`"640x1536"` |
+
+### Entrées recraftv4_1_pro_vector, recraftv4_1_utility_pro_vector et recraftv4_pro
+
+Ces trois modèles partagent les mêmes options `size`.
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `size` | La taille de l'image générée (défaut : `"2048x2048"`). | COMBO | Oui | `"2048x2048"`<br>`"2304x1792"`<br>`"1792x2304"`<br>`"2432x1664"`<br>`"1664x2432"`<br>`"2688x1536"`<br>`"1536x2688"`<br>`"3072x1280"`<br>`"1280x3072"` |
+
+**Remarque :** Le paramètre `size` est une entrée dynamique dont les options disponibles changent en fonction du `model` sélectionné. La valeur `seed` ne garantit pas des résultats reproductibles depuis l'API externe. L'entrée `negative_prompt` est ignorée car les modèles Recraft V4 et V4.1 ne prennent pas en charge les prompts négatifs.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
-| --- | --- | --- |
-| `output` | La ou les images vectorielles (SVG) générées. | SVG |
+|---------------|-------------|-----------------|
+| `output` | Les images Scalable Vector Graphics (SVG) générées. | SVG |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToVectorNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `ffab67555923cea29b50ae71e3ffaad13340aead4d01973a70244468fae4420d`
+**Source fingerprint (SHA-256):** `822f6b9fef67ef6beb1eba099c41c72570a1f79e316612201c81f6e5eb91408d`

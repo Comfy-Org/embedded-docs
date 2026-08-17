@@ -1,4 +1,4 @@
-# MiniMax Hailuo Video
+# MiniMax Hailuo 02 Video
 
 Generates videos from text prompts using the MiniMax Hailuo-02 model. You can optionally provide a starting image as the first frame to create a video that continues from that image.
 
@@ -13,7 +13,9 @@ Generates videos from text prompts using the MiniMax Hailuo-02 model. You can op
 | `duration` | The length of the output video in seconds (default: 6). | COMBO | No | `6`<br>`10` |
 | `resolution` | The dimensions of the video display. 1080p is 1920x1080, 768p is 1366x768 (default: "768P"). | COMBO | No | `"768P"`<br>`"1080P"` |
 
-**Note:** When using the MiniMax-Hailuo-02 model with 1080P resolution, the duration is limited to 6 seconds.
+**Notes:**
+- `prompt_text` must be a non-empty string when no `first_frame_image` is provided.
+- When using the MiniMax-Hailuo-02 model with 1080P resolution, the duration is limited to 6 seconds.
 
 ## Outputs
 
@@ -24,4 +26,4 @@ Generates videos from text prompts using the MiniMax Hailuo-02 model. You can op
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxHailuoVideoNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `7b6c78459bb1347ca61cb16fb6c5e9c88c6a0896dda90f48bb1b6397b99e8ca0`
+**Source fingerprint (SHA-256):** `f371aae15cfbe7353236bc679c8a6d558703c5037e49ab7ddb9bdf5c50ef0995`

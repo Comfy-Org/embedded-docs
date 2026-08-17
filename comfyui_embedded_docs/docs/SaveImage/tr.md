@@ -1,21 +1,26 @@
 # Görüntüyü Kaydet
 
-SaveImage düğümü, aldığı görselleri `ComfyUI/output` dizininize kaydeder. Her görseli PNG dosyası olarak kaydeder ve prompt gibi iş akışı meta verilerini, ileride başvurmak üzere kaydedilen dosyaya gömmektedir.
+SaveImage düğümü, aldığı görselleri `ComfyUI/output` dizininize kaydeder. Her görseli bir PNG dosyası olarak kaydeder ve ileride başvurmak üzere, istem (prompt) gibi iş akışı meta verilerini kaydedilen dosyaya gömer.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `görüntüler` | Kaydedilecek görseller. | IMAGE | Evet | - |
-| `dosyaadı_öneki` | Kaydedilecek dosyanın ön eki. Bu, düğümlerden değerleri dahil etmek için `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme bilgileri içerebilir (varsayılan: "ComfyUI"). | STRING | Evet | - |
+| `images` | Kaydedilecek görseller. | IMAGE | Evet | - |
+| `filename_prefix` | Kaydedilecek dosyanın öneki. Bu, düğümlerden değerler eklemek için `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme bilgileri içerebilir (varsayılan: "ComfyUI"). | STRING | Evet | - |
+| `prompt` | Gizli girdi, ComfyUI tarafından otomatik sağlanır: kaydedilen PNG dosyasına meta veri olarak gömülen istem verisi. | PROMPT | Hayır | - |
+| `extra_pnginfo` | Gizli girdi, ComfyUI tarafından otomatik sağlanır: kaydedilen PNG dosyasına meta veri olarak gömülen ek iş akışı bilgisi. | EXTRA_PNGINFO | Hayır | - |
+
+Her görsel bir PNG dosyası olarak kaydedilir. Kaydedilen dosya adında, önekteki `%batch_num%` ifadesi görselin batch numarasıyla değiştirilir ve sonuna sıfırla doldurulmuş bir sayaç eklenir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `images` | Bu düğüm, kaydedilen görsellerin dosya adlarını ve alt klasörlerini içeren bir liste olarak bir kullanıcı arayüzü sonucu çıktısı verir. Diğer düğümlere bağlanmak için veri çıktısı sağlamaz. | UI_RESULT |
+| `images` | Kaydedilen görsellerin aynısı; diğer düğümler tarafından kullanılabilmeleri için olduğu gibi iletilir. | IMAGE |
+| `ui` | ComfyUI arayüzünde görüntülenen, kaydedilen görsellerin dosya adları, alt klasörleri ve türlerinin listesini içeren UI sonucu. | UI_RESULT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImage/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `fa88c26e5e03f788dcc545434a54124c5e9d03b559da67f0857b52faec0e97e7`
+**Source fingerprint (SHA-256):** `4a718495fd0801304d2bc3afee859e6b9839f9aba8e929bb9ba90ae6a229a750`

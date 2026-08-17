@@ -6,7 +6,9 @@ The LTXV Audio VAE Loader node loads a pre-trained Audio Variational Autoencoder
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `ckpt_name` | Audio VAE checkpoint to load. This is a dropdown list populated with all the files found in your ComfyUI `checkpoints` directory. | STRING | Yes | All files in the `checkpoints` folder.<br>*Example: `"audio_vae.safetensors"`* |
+| `ckpt_name` | Audio VAE checkpoint to load. This is a dropdown list populated with all the files found in your ComfyUI `checkpoints` directory. | COMBO | Yes | All files in the `checkpoints` folder (populated dynamically).<br>*Example: `"audio_vae.safetensors"`* |
+
+Note: The node raises an error if the selected checkpoint file cannot be found or does not contain a valid audio VAE.
 
 ## Outputs
 
@@ -17,4 +19,4 @@ The LTXV Audio VAE Loader node loads a pre-trained Audio Variational Autoencoder
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAudioVAELoader/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `bafe0ae9a6175565e95514d8a42cd11ffc32330503d87a097bc7fd2ef113c794`
+**Source fingerprint (SHA-256):** `c91956645a9de0b8f56191f6c0c6bef43f13724ba59078ec9a885168bf2650e8`

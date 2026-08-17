@@ -1,15 +1,15 @@
 # Yapılandırmayla Kontrol Noktası Yükle (ESKİ)
 
-CheckpointLoader düğümü, önceden eğitilmiş bir model kontrol noktasını (checkpoint) ve yapılandırma dosyasını yükler. Giriş olarak bir yapılandırma dosyası ve bir kontrol noktası dosyası alır; çıktı olarak ise ana model, CLIP modeli ve VAE modeli dahil olmak üzere yüklenen model bileşenlerini iş akışında kullanılmak üzere döndürür.
+CheckpointLoader düğümü, önceden eğitilmiş bir model kontrol noktasını (checkpoint) yapılandırma dosyasıyla birlikte yükler. Girdi olarak bir yapılandırma dosyası ve bir kontrol noktası dosyası alır; iş akışında kullanılmak üzere ana model, CLIP modeli ve VAE modeli dahil yüklenen model bileşenlerini döndürür.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `yapılandırma_adı` | Model mimarisini ve ayarlarını tanımlayan yapılandırma dosyası | STRING | Evet | Kullanılabilir yapılandırma dosyaları |
-| `ckpt_adı` | Eğitilmiş model ağırlıklarını ve parametrelerini içeren kontrol noktası dosyası | STRING | Evet | Kullanılabilir kontrol noktası dosyaları |
+| `config_name` | Model mimarisini ve ayarlarını tanımlayan yapılandırma dosyası | STRING | Evet | Available config files |
+| `ckpt_name` | Eğitilmiş model ağırlıklarını ve parametrelerini içeren kontrol noktası dosyası | STRING | Evet | Available checkpoint files |
 
-**Not:** Bu düğüm, hem bir yapılandırma dosyası hem de bir kontrol noktası dosyasının seçilmesini gerektirir. Yapılandırma dosyası, yüklenen kontrol noktası dosyasının mimarisiyle eşleşmelidir.
+**Not:** Bu düğüm, hem bir yapılandırma dosyası hem de bir kontrol noktası dosyası seçilmesini gerektirir. Yapılandırma dosyası, yüklenen kontrol noktası dosyasının mimarisiyle eşleşmelidir.
 
 ## Çıktılar
 
@@ -24,4 +24,4 @@ CheckpointLoader düğümü, önceden eğitilmiş bir model kontrol noktasını 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointLoader/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `9977bda5e124a9d10566839cbee868c74fab120c454141f27ce145efa60105e9`
+**Source fingerprint (SHA-256):** `820cd9f7a5ccd5a70d2b29906c8deca3632d2ccba84ca51022717e061afb72b3`

@@ -6,11 +6,11 @@ The Soft Switch node selects between two possible input values based on a boolea
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `switch` | The boolean condition that determines which input to pass through. When true, the `on_true` input is selected. When false, the `on_false` input is selected. | BOOLEAN | Yes |  |
+| `switch` | The boolean condition that determines which input to pass through. When true, the `on_true` input is selected. When false, the `on_false` input is selected. | BOOLEAN | Yes | true<br>false |
 | `on_false` | The value to output when the `switch` condition is false. This input is optional, but at least one of `on_false` or `on_true` must be connected. | MATCH_TYPE | No |  |
 | `on_true` | The value to output when the `switch` condition is true. This input is optional, but at least one of `on_false` or `on_true` must be connected. | MATCH_TYPE | No |  |
 
-**Note:** The `on_false` and `on_true` inputs must be of the same data type, as defined by the node's internal template. At least one of these two inputs must be connected for the node to function.
+**Note:** The `on_false` and `on_true` inputs must be of the same data type, as defined by the node's internal template. At least one of these two inputs must be connected for the node to function. If only one input is connected, that value is passed through to the output regardless of the `switch` state.
 
 ## Outputs
 
@@ -21,4 +21,4 @@ The Soft Switch node selects between two possible input values based on a boolea
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfySoftSwitchNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `3ddfebaf67642f5bd79b0de38605f93507ede00d95e98cd78ec295f8de98d743`
+**Source fingerprint (SHA-256):** `7bf4bed69d8fd8c360e971ab8068382cd8ebaa02004d5df44312977a7309ae00`

@@ -1,26 +1,26 @@
 # LTXVImgToVideoInplace
 
-LTXVImgToVideoInplace düğümü, bir giriş görüntüsünü ilk karelerine kodlayarak bir video gizil temsilini koşullandırır. Bir VAE kullanarak görüntüyü gizil uzaya kodlar ve belirtilen bir güç değerine göre mevcut gizil örneklerle harmanlar. Bu sayede bir görüntü, video üretimi için başlangıç noktası veya koşullandırma sinyali olarak kullanılabilir.
+LTXVImgToVideoInplace düğümü, bir girdi görüntüsünü başlangıç karelerine kodlayarak bir video latent temsilini koşullandırır. Görüntüyü latent uzaya kodlamak için bir VAE kullanır ve ardından latent video örneklerinin ilk karelerini bu kodlanmış görüntüyle değiştirir. Bir gürültü maskesi uygulanır; böylece koşullandırma gücü, görüntünün üretim sırasında bu başlangıç karelerini ne kadar güçlü etkilediğini kontrol eder.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `vae` | Giriş görüntüsünü gizil uzaya kodlamak için kullanılan VAE modeli. | VAE | Evet | - |
-| `görüntü` | Kodlanacak ve video gizilini koşullandırmak için kullanılacak giriş görüntüsü. | IMAGE | Evet | - |
-| `latent` | Değiştirilecek hedef video gizil temsili. | LATENT | Evet | - |
-| `güç` | Kodlanmış görüntünün gizile harmanlanma gücünü kontrol eder. 1.0 değeri ilk kareleri tamamen değiştirirken, daha düşük değerler harmanlama yapar. (varsayılan: 1.0) | FLOAT | Hayır | 0.0 - 1.0 |
-| `atla` | Koşullandırmayı atlar. Etkinleştirildiğinde, düğüm giriş gizilini değiştirmeden döndürür. (varsayılan: False) | BOOLEAN | Hayır | - |
+| `vae` | Girdi görüntüsünü latent uzaya kodlamak için kullanılan VAE modeli. | VAE | Evet | - |
+| `image` | Kodlanacak ve video latentini koşullandırmak için kullanılacak girdi görüntüsü. | IMAGE | Evet | - |
+| `latent` | Değiştirilecek hedef latent video temsili. | LATENT | Evet | - |
+| `strength` | Kodlanmış görüntünün başlangıç latent kareleri üzerindeki koşullandırma gücünü kontrol eder. 1.0 değeri başlangıç karelerini tamamen koşullandırırken, daha düşük değerler daha zayıf koşullandırma uygular. (varsayılan: 1.0) | FLOAT | Hayır | 0.0 - 1.0 |
+| `bypass` | Koşullandırmayı atlar. Etkinleştirildiğinde, düğüm girdi latentini değiştirmeden döndürür. (varsayılan: False) | BOOLEAN | Hayır | - |
 
-**Not:** `image`, `latent` girişinin genişlik ve yüksekliğine bağlı olarak, `vae` tarafından kodlama için gereken uzamsal boyutlara otomatik olarak yeniden boyutlandırılır.
+**Not:** `image`, `latent` girdisinin genişliğine ve yüksekliğine dayalı olarak `vae` tarafından kodlama için gereken uzamsal boyutlara uyacak şekilde otomatik olarak yeniden boyutlandırılır (bilineer enterpolasyon). Görüntünün yalnızca ilk 3 renk kanalı (RGB) kullanılır; herhangi bir alfa kanalı yok sayılır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `latent` | Değiştirilmiş video gizil temsili. Güncellenmiş örnekleri ve ilk karelere koşullandırma gücünü uygulayan bir `noise_mask` içerir. | LATENT |
+| `latent` | Değiştirilmiş latent video temsili. Güncellenmiş örnekleri ve başlangıç karelerine koşullandırma gücünü uygulayan bir `noise_mask` içerir. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVImgToVideoInplace/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `49df511591071f51e2b86f2302cfb438d18b5e1ade7ef228345f65fddf88dbcc`
+**Source fingerprint (SHA-256):** `69faa4b2e7b0fedeee531dc5a8809e23a79c9ce03e9760afb865160594fef30d`

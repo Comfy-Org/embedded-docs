@@ -1,8 +1,8 @@
 # ModelBirleştirmeSD1
 
-ModelMergeSD1 düğümü, iki Stable Diffusion 1.x modelini, farklı model bileşenlerinin etkisini ayarlayarak birleştirmenize olanak tanır. Zaman gömme, etiket gömme ve tüm giriş, orta ve çıkış blokları üzerinde ayrı ayrı kontrol sağlayarak, belirli kullanım durumları için ince ayarlanmış model birleştirmeye imkan tanır.
+ModelMergeSD1, iki Stable Diffusion 1.x modelini, bireysel bileşenlerinin etkisini ayarlayarak birbirine karıştırmanıza olanak tanır. Zaman gömme, etiket gömme, her giriş bloğu, her orta blok, her çıkış bloğu ve son çıkış katmanı için ayrı bir karıştırma ağırlığı sağlayarak, iki modelin nasıl birleştirileceği üzerinde ince ayarlı kontrol imkânı sunar.
 
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
@@ -39,13 +39,13 @@ ModelMergeSD1 düğümü, iki Stable Diffusion 1.x modelini, farklı model bile�
 | `output_blocks.11.` | Çıkış bloğu 11 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `out.` | Çıkış katmanı karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `MODEL` | Her iki giriş modelinin özelliklerini birleştiren birleştirilmiş model | MODEL |
+| `MODEL` | Her iki giriş modelinin özelliklerini harmanlayan birleştirilmiş model | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD1/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `512c62fb5a4e1b7f90f5ad5b80de5818659a20c8f4b024cfa33ca13b823efad8`
+**Source fingerprint (SHA-256):** `b9d53f126139412fbd8b21be72e1dcdb02736519ab4dc9e28c7840d69acb7c87`

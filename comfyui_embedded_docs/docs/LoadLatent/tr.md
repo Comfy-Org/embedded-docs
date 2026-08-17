@@ -1,20 +1,22 @@
 # GizliYükle
 
-LoadLatent düğümü, giriş dizinindeki .latent dosyalarından önceden kaydedilmiş gizli (latent) temsilleri yükler. Dosyadaki gizli tensör verilerini okur ve gerekli ölçeklendirme ayarlamalarını uygulayarak, gizli verileri diğer düğümlerde kullanılmak üzere döndürür.
+LoadLatent düğümü, daha önce giriş dizininde .latent dosyaları olarak kaydedilmiş latent temsillerini yükler. Seçilen dosyadan latent tensör verilerini okur ve sonuçları diğer düğümlerde kullanılmak üzere döndürmeden önce gerekli ölçekleme ayarlamalarını uygular.
 
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `gizli` | Giriş dizinindeki mevcut dosyalar arasından hangi .latent dosyasının yükleneceğini seçer | STRING | Evet | Giriş dizinindeki tüm .latent dosyaları |
+| `latent` | Giriş dizinindeki mevcut dosyalar arasından hangi .latent dosyasının yükleneceğini seçer | COMBO | Evet | Giriş dizinindeki tüm .latent dosyaları |
 
-## Çıkışlar
+Not: `latent_format_version_0` işaretini içermeyen .latent dosyaları için, yüklenen latent tensörü 1/0.18215 ile çarpılır; böylece ölçeği diğer düğümlerin beklediği biçimle eşleşir.
 
-| Çıkış Adı | Açıklama | Veri Türü |
+## Çıktılar
+
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `LATENT` | Seçilen dosyadan yüklenen gizli temsil verilerini döndürür | LATENT |
+| `LATENT` | Seçilen dosyadan yüklenen latent temsil verilerini döndürür | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLatent/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `020185a6066263b75b2417411f07af54d31a2a3a056d650eacfff188dc2cb87e`
+**Source fingerprint (SHA-256):** `0938214361687a3a98e03878b8cbc0240100cbeacc0b157c4a299e59e7728a13`

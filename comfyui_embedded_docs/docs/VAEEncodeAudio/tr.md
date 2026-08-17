@@ -1,51 +1,23 @@
 # VAESesKodla
 
-ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
-
-## Çeviri Kuralları
-
-1. **Çevrilmemesi gereken içerik:**
-   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
-   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
-   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
-   - Kod, dosya yolları
-
-2. **Çevrilmesi gereken içerik:**
-   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
-   - Tüm açıklayıcı metinler
-   - Parametre açıklamaları
-
-3. **Çeviri kalitesi:**
-   - Standart Türkçe kullanın
-   - Profesyonel ama anlaşılır bir üslup koruyun
-   - Teknik doğruluğu sağlayın
-   - Standart Türkçe teknik terminolojiyi kullanın
-
-4. **Format:**
-   - Tüm Markdown biçimlendirmesini koruyun
-   - Tablo yapısını koruyun
-   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
-
-Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
-
-VAEEncodeAudio düğümü, bir Varyasyonel Otomatik Kodlayıcı (VAE) kullanarak ses verilerini gizli bir temsile dönüştürür. Ses girdisini alır ve sıkıştırılmış gizli örnekler oluşturmak için VAE aracılığıyla işler; bu örnekler daha sonraki ses üretimi veya manipülasyon görevleri için kullanılabilir. Düğüm, kodlamadan önce gerekirse sesi VAE'nin beklenen örnekleme hızına uyacak şekilde otomatik olarak yeniden örnekler.
+VAEEncodeAudio düğümü, bir Varyasyonel Otomatik Kodlayıcı (VAE) kullanarak ses verilerini latent bir temsile dönüştürür. Ses girdisini alır ve VAE aracılığıyla işleyerek daha sonraki ses üretimi veya manipülasyon görevleri için kullanılabilecek sıkıştırılmış latent örnekler üretir. Düğüm, kodlamadan önce gerekirse sesi VAE'nin beklenen örnekleme hızına uyacak şekilde otomatik olarak yeniden örnekler.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `ses` | Kodlanacak ses verisi; dalga formu ve örnekleme hızı bilgilerini içerir | AUDIO | Evet | - |
-| `vae` | Sesi gizli uzaya kodlamak için kullanılan Varyasyonel Otomatik Kodlayıcı modeli | VAE | Evet | - |
+| `audio` | Kodlanacak ses verisi; dalga formu ve örnekleme hızı bilgisini içerir | AUDIO | Evet | - |
+| `vae` | Sesi latent uzaya kodlamak için kullanılan Varyasyonel Otomatik Kodlayıcı modeli | VAE | Evet | - |
 
-**Not:** Ses girdisi, orijinal örnekleme hızı VAE'nin beklenen değerinden (varsayılan: 44100 Hz) farklıysa, otomatik olarak VAE'nin beklenen örnekleme hızına yeniden örneklenir.
+**Not:** Orijinal örnekleme hızı farklıysa, ses girdisi VAE'nin beklenen örnekleme hızına (varsayılan: 44100 Hz) uyacak şekilde otomatik olarak yeniden örneklenir. Girdi sesi None ise (örn. kaynak videoda ses parçası yoksa), düğüm bir hata fırlatır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `LATENT` | Sıkıştırılmış örnekler içeren, gizli uzaydaki kodlanmış ses temsili | LATENT |
+| `LATENT` | Latent uzayda kodlanmış ses temsili; sıkıştırılmış örnekleri içerir | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEEncodeAudio/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `db509ab571154c4cedbfc6cae6591bd2b67b2c6e2261766565cdb0205b2c2ecc`
+**Source fingerprint (SHA-256):** `224563af40a377a37209b26ec8becf035560da273b18293634f684e18c5e63ed`

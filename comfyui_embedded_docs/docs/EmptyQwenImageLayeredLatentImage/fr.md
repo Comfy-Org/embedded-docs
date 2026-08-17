@@ -1,15 +1,15 @@
 # Qwen Image Layered latent vide
 
-Le nœud Empty Qwen Image Layered Latent prépare la toile vierge sur laquelle le modèle Qwen-Image-Layered peint. Imaginez une pile de feuilles de papier calque propres, maintenues dans l'ordre : le modèle remplit la première feuille avec l'image complète, et chaque feuille suivante avec une partie de cette image. Ce nœud décide de la taille et du nombre des feuilles. Il ne dessine rien lui-même.
+Le nœud Empty Qwen Image Layered Latent prépare la toile vierge sur laquelle le modèle Qwen-Image-Layered peint. Imaginez-le comme une pile de feuilles de calque propres, reliées dans l'ordre : le modèle remplit la première feuille avec l'image complète, et chaque feuille suivante avec une partie de cette image. Ce nœud détermine la taille des feuilles et leur nombre, mais il ne dessine rien lui-même.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `largeur` | La largeur de l'image latente à créer. La valeur doit être divisible par 16. (par défaut : 640) | INT | Oui | 16 à MAX_RESOLUTION |
-| `hauteur` | La hauteur de l'image latente à créer. La valeur doit être divisible par 16. (par défaut : 640) | INT | Oui | 16 à MAX_RESOLUTION |
-| `couches` | En combien de couches diviser l'image. Une feuille supplémentaire est toujours réservée à l'image complète, vous obtenez donc `layers + 1` images, et non `couches`. Réglez-le sur 2 et vous obtenez l'image complète plus 2 couches. Réglez-le sur 0 et vous obtenez uniquement l'image complète. (par défaut : 3) | INT | Oui | 0 à MAX_RESOLUTION |
-| `taille_lot` | Le nombre d'échantillons latents à générer dans un lot. (par défaut : 1) | INT | Non | 1 à 4096 |
+| `width` | La largeur de l'image latente à créer. La valeur doit être divisible par 16. (par défaut : 640) | INT | Oui | 16 to MAX_RESOLUTION (step 16) |
+| `height` | La hauteur de l'image latente à créer. La valeur doit être divisible par 16. (par défaut : 640) | INT | Oui | 16 to MAX_RESOLUTION (step 16) |
+| `layers` | Combien de couches pour séparer l'image. Une feuille supplémentaire est toujours réservée à l'image complète, vous obtenez donc `layers + 1` images en retour, et non `layers`. Réglez-le sur 2 et vous obtenez l'image complète plus 2 couches. Réglez-le sur 0 et vous obtenez l'image complète seule. (par défaut : 3) | INT | Oui | 0 to MAX_RESOLUTION (step 1) |
+| `batch_size` | Le nombre d'échantillons latents à générer dans un lot. (par défaut : 1) | INT | Oui | 1 to 4096 |
 
 **Remarque :** Les paramètres `width` et `height` sont divisés en interne par 8 pour déterminer les dimensions spatiales du tenseur latent de sortie.
 
@@ -21,20 +21,20 @@ Le nœud Empty Qwen Image Layered Latent prépare la toile vierge sur laquelle l
 
 ## Pourquoi vous obtenez une image de plus que demandé
 
-Qwen-Image-Layered ne se contente pas de décomposer une image. Il repeint également l'image complète, sur sa propre feuille, en plus des couches. C'est pourquoi la pile est toujours d'une feuille plus haute que le nombre de couches demandé.
+Qwen-Image-Layered ne fait pas que décomposer une image. Il repeint également l'image complète, sur sa propre feuille, en plus des couches. C'est pourquoi la pile est toujours d'une feuille plus haute que le nombre de couches demandé.
 
-- **La première image est l'image complète, pas une couche.** C'est la même image que vous avez déjà, jetez-la donc lorsque vous ne voulez que les couches.
-- **Si vous superposez toutes les couches, vous obtenez à nouveau l'image complète.** Si elles ne correspondent pas à cette première image, la séparation n'a pas fonctionné comme vous le vouliez, c'est donc un moyen rapide de vérifier le résultat.
-- **Gardez les feuilles dans l'ordre.** La pile est le seul moyen de savoir quelle couche se trouve au-dessus de laquelle. Rien n'est écrit sur les feuilles pour indiquer où elles vont, donc réorganiser ou supprimer des images signifie réorganiser ou perdre des couches.
+- **La première image est l'image complète, pas une couche.** C'est la même image que vous avez déjà, alors jetez-la si vous ne voulez que les couches.
+- **Superposez toutes les couches de nouveau et vous obtenez l'image complète.** Si elles ne reconstituent pas cette première image, la séparation n'a pas fonctionné comme vous le souhaitiez, c'est donc un moyen rapide de vérifier le résultat.
+- **Gardez les feuilles dans l'ordre.** La pile est la seule trace de la couche qui se trouve au-dessus de laquelle. Rien n'est écrit sur les feuilles elles-mêmes pour indiquer leur position, donc réorganiser ou supprimer des images signifie réorganiser ou perdre des couches.
 - **Les couches sortent avec de la transparence**, elles peuvent donc être empilées sans que les couches inférieures soient masquées par un fond opaque.
 
 ## Suggestions d'utilisation
 
-Envoyez la sortie à l'échantillonneur comme vous le feriez avec un latent vide normal, puis placez LatentCutToBatch avec `dim` défini sur `t` avant le décodage VAE. C'est l'étape qui sépare la pile en images individuelles, dans l'ordre, en commençant par l'image complète.
+Envoyez la sortie à l'échantillonneur comme vous le feriez avec un latent vide normal, puis placez LatentCutToBatch avec `dim` réglé sur `t` avant VAE Decode. C'est l'étape qui sépare la pile en images distinctes, dans l'ordre, en commençant par l'image complète.
 
-Commencez avec la valeur par défaut de 3 couches. En demander plus signifie une génération plus longue et une séparation plus fine, et cela ne vaut pas la peine d'augmenter tant que vous n'avez pas vu ce que le modèle fait avec un petit nombre.
+Commencez avec la valeur par défaut de 3 couches. Demander plus signifie une génération plus longue et une séparation plus fine, et cela ne vaut pas la peine d'augmenter avant d'avoir vu ce que le modèle fait avec un petit nombre.
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyQwenImageLayeredLatentImage/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `fe97966663c534dd347aa49a908a8026f2c34716631f1d17be97d74eacc3574e`
+**Source fingerprint (SHA-256):** `5ccac979fcbcefb65f28867a89401c095cb330e09c13270008c32feeeafb1287`

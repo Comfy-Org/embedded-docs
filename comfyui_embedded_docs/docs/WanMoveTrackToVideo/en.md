@@ -1,6 +1,6 @@
 # WanMoveTrackToVideo
 
-The WanMoveTrackToVideo node prepares conditioning and latent space data for video generation, incorporating optional motion tracking information. It encodes a starting image sequence into a latent representation and can blend in positional data from object tracks to guide the motion in the generated video. The node outputs modified positive and negative conditioning along with an empty latent tensor ready for a video model.
+The WanMoveTrackToVideo node prepares conditioning and latent data for video generation. It encodes a starting image sequence into latent space using a VAE and can optionally incorporate motion tracking information to guide object movement in the generated video. The node outputs modified positive and negative conditioning along with an empty latent tensor ready for a video generation model.
 
 ## Inputs
 
@@ -10,15 +10,15 @@ The WanMoveTrackToVideo node prepares conditioning and latent space data for vid
 | `negative` | The negative conditioning input to be modified. | CONDITIONING | Yes | - |
 | `vae` | The VAE model used to encode the starting image into the latent space. | VAE | Yes | - |
 | `tracks` | Optional motion tracking data containing object paths. | TRACKS | No | - |
-| `strength` | Strength of the track conditioning. (default: 1.0) | FLOAT | No | 0.0 - 100.0 |
-| `width` | The width of the output video. Must be divisible by 16. (default: 832) | INT | No | 16 - MAX_RESOLUTION |
-| `height` | The height of the output video. Must be divisible by 16. (default: 480) | INT | No | 16 - MAX_RESOLUTION |
-| `length` | The number of frames in the video sequence. (default: 81) | INT | No | 1 - MAX_RESOLUTION |
-| `batch_size` | The batch size for the latent output. (default: 1) | INT | No | 1 - 4096 |
-| `start_image` | The starting image or image sequence to encode. | IMAGE | Yes | - |
-| `clip_vision_output` | Optional CLIP vision model output to add to the conditioning. | CLIPVISIONOUTPUT | No | - |
+| `strength` | Strength of the track conditioning. Only has an effect when `tracks` is provided and the value is greater than 0.0. (default: 1.0) | FLOAT | Yes | 0.0 - 100.0 |
+| `width` | The width of the output video. Set in increments of 16. (default: 832) | INT | Yes | 16 - MAX_RESOLUTION |
+| `height` | The height of the output video. Set in increments of 16. (default: 480) | INT | Yes | 16 - MAX_RESOLUTION |
+| `length` | The number of frames in the video sequence. Set in increments of 4. (default: 81) | INT | Yes | 1 - MAX_RESOLUTION |
+| `batch_size` | The batch size for the latent output. (default: 1) | INT | Yes | 1 - 4096 |
+| `start_image` | The starting image or image sequence to encode with the VAE. | IMAGE | Yes | - |
+| `clip_vision_output` | Optional CLIP vision model output to add to the conditioning. | CLIP_VISION_OUTPUT | No | - |
 
-**Note:** The `strength` parameter only has an effect when `tracks` are provided. If `tracks` are not provided or `strength` is 0.0, the track conditioning is not applied. The `start_image` is used to create a latent image and mask for the conditioning; if it is not provided, the node only passes through the conditioning and outputs an empty latent.
+Note: Track-based motion is applied only when `tracks` is provided and `strength` is greater than 0.0. Otherwise, the conditioning receives the unmodified encoded starting image. The `start_image` is used to create a latent image and a mask for the conditioning; if it is not available, the node only passes through the conditioning and outputs an empty latent.
 
 ## Outputs
 
@@ -31,4 +31,4 @@ The WanMoveTrackToVideo node prepares conditioning and latent space data for vid
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTrackToVideo/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `9dc861c3616a3d92c9dc647e1d227bc1f94d5c74c58eed41ffa8d28b445c9160`
+**Source fingerprint (SHA-256):** `b02a1a359d349a0136d84ed77a510c46cb2c8b565650ed54d5fca6c87cd0ab1f`

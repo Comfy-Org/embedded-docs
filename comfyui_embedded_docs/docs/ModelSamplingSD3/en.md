@@ -18,4 +18,4 @@ The ModelSamplingSD3 node applies Stable Diffusion 3 sampling parameters to a mo
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingSD3/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `410fbe0ce16c7e22733ff1e2124c24634a2c6752a882e1c97763b35666882e5f`
+**Source fingerprint (SHA-256):** `46d44786422c2efea78c1fe7e1183cebc9bf51d4f13861da04d5a974b5b6da7d`

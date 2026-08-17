@@ -1,18 +1,18 @@
 # ModelBirleştirmeWAN2_1
 
-ModelMergeWAN2_1 düğümü, iki WAN2.1 modelini bileşenlerini ağırlıklı ortalamalar kullanarak harmanlayarak birleştirir. 30 bloklu 1.3B modeller ve 40 bloklu 14B modeller dahil olmak üzere farklı model boyutlarını destekler. Ek bir görüntü gömme bileşeni içeren görüntüden videoya modeller için özel işleme sahiptir. Modellerin her bir bileşeni, iki giriş modeli arasındaki harmanlama oranını kontrol etmek için ayrı ayrı ağırlıklandırılabilir.
+ModelMergeWAN2_1 düğümü, iki WAN2.1 modelini bileşenlerini ağırlıklı ortalamalar kullanarak harmanlayarak birleştirir. 30 bloklu 1.3B modeller ve 40 bloklu 14B modeller dahil olmak üzere farklı model boyutlarını destekler ve ek bir görüntü embedding bileşeni içeren görüntüden videoya modeller için özel işleme sahiptir. Modellerin her bileşeni, iki girdi modeli arasındaki harmanlama oranını kontrol etmek için ayrı ayrı ağırlıklandırılabilir.
 
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
 | `model1` | Birleştirilecek ilk model | MODEL | Evet | - |
 | `model2` | Birleştirilecek ikinci model | MODEL | Evet | - |
-| `patch_embedding.` | Yama gömme bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `time_embedding.` | Zaman gömme bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `time_projection.` | Zaman izdüşümü bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `text_embedding.` | Metin gömme bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `img_emb.` | Görüntü gömme bileşeni için ağırlık, görüntüden videoya modellerde kullanılır (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `patch_embedding.` | Patch embedding bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `time_embedding.` | Time embedding bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `time_projection.` | Time projection bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `text_embedding.` | Text embedding bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `img_emb.` | Görüntüden videoya modellerde kullanılan görüntü embedding bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.0.` | Blok 0 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.1.` | Blok 1 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.2.` | Blok 2 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
@@ -53,17 +53,17 @@ ModelMergeWAN2_1 düğümü, iki WAN2.1 modelini bileşenlerini ağırlıklı or
 | `blocks.37.` | Blok 37 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.38.` | Blok 38 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.39.` | Blok 39 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `head.` | Baş bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `head.` | Head bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 
-**Not:** Tüm ağırlık parametreleri 0.0 ile 1.0 arasında, 0.01 adım artışlarıyla bir aralık kullanır. Düğüm, farklı model boyutlarını desteklemek için 40 bloğa kadar destekler; 1.3B modeller 30 blok, 14B modeller ise 40 blok kullanır. `img_emb.` parametresi özellikle görüntüden videoya modeller içindir.
+**Not:** Tüm ağırlık parametreleri 0.0 ile 1.0 aralığında 0.01 adım artışlarıyla kullanılır. Düğüm, farklı model boyutlarını desteklemek için 40 bloğa kadar destek sağlar; 1.3B modeller 30 blok, 14B modeller 40 blok kullanır. `img_emb.` parametresi özellikle görüntüden videoya modeller içindir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model` | Belirtilen ağırlıklara göre her iki giriş modelinin bileşenlerini birleştiren birleştirilmiş model | MODEL |
+| `model` | Belirtilen ağırlıklara göre her iki girdi modelinin bileşenlerini birleştiren birleştirilmiş model | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeWAN2_1/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d550a2f62bbcb4b46ccdd8a04fab80e93f96ea63426d48acb3515d51175efc99`
+**Source fingerprint (SHA-256):** `6a17defa25b1ef045b85af4a73e00d3a64c1948c0c47f355d1d488a75b09f224`

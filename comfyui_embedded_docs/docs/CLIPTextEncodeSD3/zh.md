@@ -1,30 +1,30 @@
 # CLIP文本编码（SD3）
 
-CLIPTextEncodeSD3 节点通过使用不同的 CLIP 模型对多个文本提示进行编码，处理 Stable Diffusion 3 模型的文本输入。它管理三个独立的文本输入（`clip_g`、`clip_l` 和 `t5xxl`），并提供管理空文本填充的选项。该节点确保不同文本输入之间的令牌对齐正确，并返回适用于 SD3 生成流程的条件数据。
+CLIPTextEncodeSD3 节点通过使用不同的 CLIP 模型对多个文本提示进行编码，来处理 Stable Diffusion 3 模型的文本输入。它处理三个独立的文本输入（`clip_g`、`clip_l` 和 `t5xxl`），并提供管理空文本填充的选项。该节点确保不同文本输入之间的 token 对齐正确，并返回适用于 SD3 生成流程的 conditioning 数据。
 
 ## 输入
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
-| --- | --- | --- | --- | --- |
+|-----------|-------------|-----------|----------|-------|
 | `clip` | 用于文本编码的 CLIP 模型 | CLIP | 是 | - |
-| `clip_l` | 本地 CLIP 模型的文本输入。支持多行文本和动态提示。 | STRING | 是 | - |
-| `clip_g` | 全局 CLIP 模型的文本输入。支持多行文本和动态提示。 | STRING | 是 | - |
-| `t5xxl` | T5-XXL 模型的文本输入。支持多行文本和动态提示。 | STRING | 是 | - |
-| `空白填充` | 控制如何处理空文本输入。当设置为 "none" 时，`clip_g`、`clip_l` 或 `t5xxl` 的空文本输入将导致空令牌列表，而非填充。这是一个高级参数（默认值："none"）。 | COMBO | 是 | `"none"`<br>`"empty_prompt"` |
+| `clip_l` | 用于本地 CLIP 模型的文本输入。支持多行文本和动态提示。 | STRING | 是 | - |
+| `clip_g` | 用于全局 CLIP 模型的文本输入。支持多行文本和动态提示。 | STRING | 是 | - |
+| `t5xxl` | 用于 T5-XXL 模型的文本输入。支持多行文本和动态提示。 | STRING | 是 | - |
+| `empty_padding` | 控制如何处理空文本输入。设为 "none" 时，`clip_g`、`clip_l` 或 `t5xxl` 的空文本输入将产生空 token 列表而非填充。这是一个高级参数（默认值："none"）。 | COMBO | 是 | `"none"`<br>`"empty_prompt"` |
 
 **参数约束：**
 
-- 当 `empty_padding` 设置为 "none" 时，`clip_g`、`clip_l` 或 `t5xxl` 的空文本输入将导致空令牌列表，而非填充
-- 当 `clip_l` 和 `clip_g` 输入的令牌长度不同时，节点会自动通过用空令牌填充较短者来平衡两者之间的令牌长度
-- 所有文本输入均支持动态提示和多行文本输入
+- 当 `empty_padding` 设为 "none" 时，`clip_g`、`clip_l` 或 `t5xxl` 的空文本输入将产生空 token 列表而非填充。
+- 当长度不同时，节点会自动通过在较短的输入上填充空 token 来平衡 `clip_l` 和 `clip_g` 输入之间的 token 长度。
+- 所有文本输入均支持动态提示和多行文本输入。
 
 ## 输出
 
-| 输出名称 | 描述 | 数据类型 |
-| --- | --- | --- |
-| `CONDITIONING` | 编码后的文本条件数据，可直接用于 SD3 生成流程 | CONDITIONING |
+| 输出名 | 描述 | 数据类型 |
+|-------------|-------------|-----------|
+| `CONDITIONING` | 编码后的文本 conditioning 数据，可直接用于 SD3 生成流程 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSD3/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `38f7538d05fe48e74f41f265550b83906b2f0c5d31f0783f6859f4df7b5cb9d3`
+**Source fingerprint (SHA-256):** `874869bac024e6b5ac6b4bf4f79c31bb750e54f7096f6638647aac6b95bb202f`

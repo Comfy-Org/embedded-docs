@@ -1,29 +1,31 @@
 # LTXV Referans Ses (ID-LoRA)
 
-**LTXV Referans Ses Düğümü**, ses üretiminde konuşmacı kimlik aktarımı için kullanılır. Bir referans ses klibini model için koşullandırmaya kodlayarak, üretilen sesin konuşmacının ses özelliklerini benimsemesini sağlar. Ayrıca, konuşmacı kimlik etkisini güçlendirmek için ek bir işlem adımı çalıştıran kimlik yönlendirmesi uygulayabilir.
+LTXV Reference Audio düğümü, ses üretiminde ID-LoRA konuşmacı kimliği aktarımı için bir referans ses klibi ayarlar. Klibi koşullandırmaya kodlar; böylece üretilen ses, konuşmacının ses özelliklerini benimser. İsteğe bağlı olarak modeli kimlik rehberliği ile yamalar; bu işlem, referans olmadan ek bir ileri geçiş çalıştırarak konuşmacı kimliği etkisini güçlendirir.
 
 ## Girişler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Kimlik yönlendirmesi ile yamalanacak model. | MODEL | Evet | - |
-| `pozitif` | Pozitif koşullandırma girişi. | CONDITIONING | Evet | - |
-| `negatif` | Negatif koşullandırma girişi. | CONDITIONING | Evet | - |
-| `referans_ses` | Konuşmacı kimliği aktarılacak referans ses klibi. Yaklaşık 5 saniye önerilir (eğitim süresi). Daha kısa veya daha uzun klipler ses kimliği aktarımını bozabilir. | SES | Evet | - |
-| `audio_vae` | Referans sesi kodlamak için LTXV Ses VAE'si. | VAE | Evet | - |
-| `kimlik_rehberliği_ölçeği` | Kimlik yönlendirmesinin gücü. Konuşmacı kimliğini güçlendirmek için her adımda referans olmadan ek bir ileri geçiş çalıştırır. Devre dışı bırakmak için 0 olarak ayarlayın (ek geçiş yok). (varsayılan: 3.0) | FLOAT | Hayır | 0.0 - 100.0 |
-| `başlangıç_yüzdesi` | Kimlik yönlendirmesinin etkin olduğu sigma aralığının başlangıcı. (varsayılan: 0.0) | FLOAT | Hayır | 0.0 - 1.0 |
-| `bitiş_yüzdesi` | Kimlik yönlendirmesinin etkin olduğu sigma aralığının sonu. (varsayılan: 1.0) | FLOAT | Hayır | 0.0 - 1.0 |
+| `model` | Kimlik rehberliği ile yamalanacak model. | MODEL | Evet | - |
+| `positive` | Pozitif koşullandırma girdisi. | CONDITIONING | Evet | - |
+| `negative` | Negatif koşullandırma girdisi. | CONDITIONING | Evet | - |
+| `reference_audio` | Kimliği aktarılacak referans ses klibi. Yaklaşık 5 saniye önerilir (eğitim süresi). Daha kısa veya daha uzun klipler ses kimliği aktarımını bozabilir. | AUDIO | Evet | - |
+| `audio_vae` | Kodlama için LTXV Ses VAE'si. | VAE | Evet | - |
+| `identity_guidance_scale` | Kimlik rehberliğinin gücü. Her adımda referans olmadan ek bir ileri geçiş çalıştırarak konuşmacı kimliğini güçlendirir. Devre dışı bırakmak için 0'a ayarlayın (ek geçiş yok). (varsayılan: 3.0) | FLOAT | Hayır | 0.0 - 100.0 |
+| `start_percent` | Kimlik rehberliğinin aktif olduğu sigma aralığının başlangıcı. (varsayılan: 0.0) | FLOAT | Hayır | 0.0 - 1.0 |
+| `end_percent` | Kimlik rehberliğinin aktif olduğu sigma aralığının sonu. (varsayılan: 1.0) | FLOAT | Hayır | 0.0 - 1.0 |
 
-## Çıkışlar
+Not: Kimlik rehberliği yalnızca `start_percent` ve `end_percent` tarafından tanımlanan aralıktaki sigma değerleri için aktiftir; bu aralığın dışında gürültü giderme çıktısı değiştirilmeden bırakılır. Referans ses hem pozitif hem de negatif koşullandırmaya eklenir. Referans sesin örnekleme hızı, ses VAE'sinin örnekleme hızından farklıysa, ses VAE'ye uyacak şekilde otomatik olarak yeniden örneklenir.
 
-| Çıkış Adı | Açıklama | Veri Türü |
+## Çıktılar
+
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model` | Kimlik yönlendirme işlevi ile yamalanmış model. | MODEL |
-| `pozitif` | Artık kodlanmış referans ses verilerini içeren pozitif koşullandırma. | CONDITIONING |
-| `negatif` | Artık kodlanmış referans ses verilerini içeren negatif koşullandırma. | CONDITIONING |
+| `model` | Kimlik rehberliği işleviyle yamalanmış model. | MODEL |
+| `positive` | Artık kodlanmış referans ses verilerini içeren pozitif koşullandırma. | CONDITIONING |
+| `negative` | Artık kodlanmış referans ses verilerini içeren negatif koşullandırma. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVReferenceAudio/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `0b87fb135ba8e752f4114cb47152503b0ec548eefcaa03f99f1cbdda6664874c`
+**Source fingerprint (SHA-256):** `ae15c5838656324667d099614b325b863341f05afda43054658999574522dd49`

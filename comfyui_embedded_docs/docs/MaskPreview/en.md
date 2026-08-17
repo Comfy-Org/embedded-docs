@@ -1,12 +1,12 @@
 # Preview Mask
 
-The MaskPreview node saves mask data as a preview image to your ComfyUI output directory, allowing you to visually inspect mask data during workflow execution. It converts the input mask into a format suitable for image display and saves it with a configurable filename prefix.
+The MaskPreview node shows a visual preview of mask data directly in the ComfyUI interface, so you can inspect masks during your workflow. It displays the preview without saving it to the ComfyUI output directory and passes the mask through as output.
 
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-| --- | --- | --- | --- | --- |
-| `mask` | The mask data to be previewed and saved as an image | MASK | Yes | - |
+|-----------|-------------|-----------|----------|-------|
+| `mask` | The mask data to be previewed | MASK | Yes | - |
 | `filename_prefix` | Prefix for the output filename (default: "ComfyUI") | STRING | No | - |
 | `prompt` | Prompt information for metadata (automatically provided) | PROMPT | No | - |
 | `extra_pnginfo` | Additional PNG information for metadata (automatically provided) | EXTRA_PNGINFO | No | - |
@@ -14,10 +14,10 @@ The MaskPreview node saves mask data as a preview image to your ComfyUI output d
 ## Outputs
 
 | Output Name | Description | Data Type |
-| --- | --- | --- |
-| `ui` | Contains the preview image information and metadata for display in the UI | DICT |
+|-------------|-------------|-----------|
+| `mask` | The mask data that was previewed, passed through unchanged | MASK |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MaskPreview/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `c9d9dbc5720ac4c75518c758f2ec3e789b0d3c45431590fb0008573bb9159427`
+**Source fingerprint (SHA-256):** `3d4ecb8cd90c3ecbe9d3cff8f782062c582c7190d9f0e0ed069cba114d4beac5`

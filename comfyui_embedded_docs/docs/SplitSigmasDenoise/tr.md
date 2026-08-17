@@ -1,22 +1,24 @@
 # SigmalarıGürültüAzaltmaBöl
 
-SplitSigmasDenoise düğümü, bir sigma değerleri dizisini gürültü giderme gücü parametresine göre iki parçaya böler. Giriş sigmalarını yüksek ve düşük sigma dizilerine ayırır; bölünme noktası, toplam adım sayısının gürültü giderme faktörü ile çarpılmasıyla belirlenir. Bu, gürültü programının özel işleme için farklı yoğunluk aralıklarına ayrılmasını sağlar.
+SplitSigmasDenoise düğümü, bir sigma değerleri dizisini, gürültü giderme (denoising) gücü parametresine göre iki parçaya böler. Girdi sigmalarını yüksek ve düşük sigma dizileri olarak ayırır; bölünme noktası, toplam adım sayısının denoise faktörüyle çarpılmasıyla belirlenir. Bu, gürültü programının farklı yoğunluk aralıklarına ayrılmasına ve özel işleme tabi tutulmasına olanak tanır.
 
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `sigmalar` | Gürültü programını temsil eden giriş sigma değerleri dizisi | SIGMAS | Evet | - |
-| `gürültü_azaltma` | Sigma dizisinin nereden bölüneceğini belirleyen gürültü giderme gücü faktörü (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `sigmas` | Gürültü programını temsil eden sigma değerleri girdi dizisi | SIGMAS | Evet | - |
+| `denoise` | Sigma dizisinin nereden bölüneceğini belirleyen gürültü giderme gücü faktörü (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 
-## Çıkışlar
+Not: Toplam adım sayısı, sigma değerlerinin sayısının 1 eksiğidir. İki çıktı dizisi, bölünme noktasında bir sigma değerini paylaşır. `denoise` = 0.0 olduğunda `high_sigmas` boştur; `denoise` = 1.0 olduğunda `high_sigmas` yalnızca ilk sigma değerini içerir ve `low_sigmas` dizinin tamamını içerir.
 
-| Çıkış Adı | Açıklama | Veri Türü |
+## Çıktılar
+
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `high_sigmas` | Daha yüksek sigma değerlerini içeren sigma dizisinin ilk kısmı | SIGMAS |
-| `low_sigmas` | Daha düşük sigma değerlerini içeren sigma dizisinin ikinci kısmı | SIGMAS |
+| `high_sigmas` | Sigma dizisinin daha yüksek sigma değerlerini içeren ilk bölümü | SIGMAS |
+| `low_sigmas` | Sigma dizisinin daha düşük sigma değerlerini içeren ikinci bölümü | SIGMAS |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmasDenoise/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `fda53efe2fcaed9244376b7360d8b0b76ce7395d594de4c2ecc48a8f243d7ca6`
+**Source fingerprint (SHA-256):** `6198cdbc07b5c9aacf1137a5d6350e090ffd14050abbcc37ff79ff5e975a8c20`

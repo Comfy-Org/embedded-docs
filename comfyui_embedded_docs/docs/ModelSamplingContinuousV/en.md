@@ -7,9 +7,9 @@ The ModelSamplingContinuousV node modifies a model's sampling behavior by applyi
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `model` | The input model to be modified with continuous V-prediction sampling | MODEL | Yes | - |
-| `sampling` | The sampling method to apply (currently only V-prediction is supported) | STRING | Yes | `"v_prediction"` |
-| `sigma_max` | The maximum sigma value for sampling (default: 500.0) | FLOAT | Yes | 0.0 - 1000.0 |
-| `sigma_min` | The minimum sigma value for sampling (default: 0.03) | FLOAT | Yes | 0.0 - 1000.0 |
+| `sampling` | The sampling method to apply. Only V-prediction is currently supported. | COMBO | Yes | `"v_prediction"` |
+| `sigma_max` | The maximum sigma value for sampling (default: 500.0) | FLOAT | Yes | 0.0 – 1000.0 (step 0.001) |
+| `sigma_min` | The minimum sigma value for sampling (default: 0.03) | FLOAT | Yes | 0.0 – 1000.0 (step 0.001) |
 
 ## Outputs
 
@@ -20,4 +20,4 @@ The ModelSamplingContinuousV node modifies a model's sampling behavior by applyi
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousV/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `8095b5024c0d33011f6a81ed496cf1711981701e0f35f9527646b150f5033d45`
+**Source fingerprint (SHA-256):** `8549be9dd2375374c20da7c74a756a90285716db0e52fed8a1a2b753cd6d75fe`

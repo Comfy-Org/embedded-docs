@@ -1,13 +1,14 @@
 # 모델 병합 (Cosmos 7B)
 
-ModelMergeCosmos7B 노드는 두 개의 AI 모델을 특정 구성 요소의 가중치 혼합을 사용하여 병합합니다. 위치 임베딩, 트랜스포머 블록 및 최종 레이어에 대한 개별 가중치를 조정하여 모델의 서로 다른 부분이 결합되는 방식을 세밀하게 제어할 수 있습니다.
+```markdown
+ModelMergeCosmos7B 노드는 특정 구성 요소의 가중치 혼합을 통해 두 AI 모델을 병합합니다. 위치 임베딩, 트랜스포머 블록 및 최종 레이어에 대한 개별 가중치를 조정하여 모델의 서로 다른 부분이 결합되는 방식을 세밀하게 제어할 수 있습니다.
 
 ## 입력
 
-| 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
+| 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
 | --- | --- | --- | --- | --- |
-| `모델1` | 병합할 첫 번째 모델 | MODEL | 예 | - |
-| `모델2` | 병합할 두 번째 모델 | MODEL | 예 | - |
+| `model1` | 첫 번째 병합할 모델 | MODEL | 예 | - |
+| `model2` | 두 번째 병합할 모델 | MODEL | 예 | - |
 | `pos_embedder.` | 위치 임베더 구성 요소의 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 | `extra_pos_embedder.` | 추가 위치 임베더 구성 요소의 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 | `x_embedder.` | x 임베더 구성 요소의 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
@@ -47,9 +48,10 @@ ModelMergeCosmos7B 노드는 두 개의 AI 모델을 특정 구성 요소의 가
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `model` | 두 입력 모델의 특징을 결합한 병합된 모델 | MODEL |
+| `model` | 두 입력 모델의 특징을 결합한 병합 모델 | MODEL |
+```
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmos7B/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `0721b047933179706c76f622efb5b7425aad530d302d8b33ec12dd68513dec0b`
+**Source fingerprint (SHA-256):** `2cc4dcaa3576c5383c630e233cef55dedc8d742c20197cc83f5832dc9e887dac`

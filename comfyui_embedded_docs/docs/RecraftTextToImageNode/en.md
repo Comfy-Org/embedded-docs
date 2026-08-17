@@ -1,4 +1,4 @@
-# Recraft Text to Image Node
+# Recraft V3 Text to Image
 
 Generates images synchronously based on prompt and resolution. This node connects to the Recraft API to create images from text descriptions with specified dimensions and optional style and control parameters.
 
@@ -10,7 +10,7 @@ Generates images synchronously based on prompt and resolution. This node connect
 | `size` | The size of the generated image. (default: "1024x1024") | COMBO | Yes | "1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" |
 | `n` | The number of images to generate. (default: 1) | INT | Yes | 1-6 |
 | `seed` | Seed to determine if node should re-run; actual results are nondeterministic regardless of seed. (default: 0) | INT | Yes | 0-18446744073709551615 |
-| `recraft_style` | Optional style selection for image generation. When not provided, defaults to "realistic_image" style. | RECRAFT_STYLE | No | Multiple options available |
+| `recraft_style` | Optional style selection for image generation. When not provided, defaults to realistic image style. | RECRAFT_STYLE | No | Multiple options available |
 | `negative_prompt` | An optional text description of undesired elements on an image. (default: "") | STRING | No | - |
 | `recraft_controls` | Optional additional controls over the generation via the Recraft Controls node. | RECRAFT_CONTROLS | No | Multiple options available |
 
@@ -29,4 +29,4 @@ Generates images synchronously based on prompt and resolution. This node connect
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftTextToImageNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `9e9607f6c122a5560680302287b677a4aced626443bc782641177a4ecdaef65a`
+**Source fingerprint (SHA-256):** `d75b7dd2d8cee70c3bc1d2c64fb07ce814a3672619e8647f4c4c2cdc2635945c`

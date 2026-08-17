@@ -1,27 +1,27 @@
 # PatchModelAddDownscale (Kohya Deep Shrink)
 
-El nodo PatchModelAddDownscale implementa la funcionalidad Kohya Deep Shrink aplicando operaciones de reducción y aumento de escala a bloques específicos de un modelo. Reduce la resolución de las características intermedias durante el procesamiento y luego las restaura a su tamaño original, lo que puede mejorar el rendimiento manteniendo la calidad. El nodo permite un control preciso sobre cuándo y cómo ocurren estas operaciones de escalado durante la ejecución del modelo.
+El nodo `PatchModelAddDownscale` implementa la funcionalidad Kohya Deep Shrink al aplicar operaciones de reducción y ampliación de escala a bloques específicos de un modelo. Reduce la resolución de las características intermedias durante el procesamiento y luego las restaura a su tamaño original, lo que puede mejorar el rendimiento mientras se mantiene la calidad. El nodo permite un control preciso sobre cuándo y cómo ocurren estas operaciones de escala durante la ejecución del modelo.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo al que se aplicará el parche de reducción de escala | MODEL | Sí | - |
-| `numero_de_bloque` | El número de bloque específico donde se aplicará la reducción de escala (predeterminado: 3) | INT | No | 1-32 |
-| `factor_de_reducción` | El factor de reducción de escala para las características (predeterminado: 2.0) | FLOAT | No | 0.1-9.0 |
-| `porcentaje_inicial` | El punto de inicio en el proceso de eliminación de ruido donde comienza la reducción de escala (predeterminado: 0.0) | FLOAT | No | 0.0-1.0 |
-| `porcentaje_final` | El punto final en el proceso de eliminación de ruido donde se detiene la reducción de escala (predeterminado: 0.35) | FLOAT | No | 0.0-1.0 |
-| `reducción_después_de_omitir` | Si se aplica la reducción de escala después de las conexiones de salto (predeterminado: True) | BOOLEAN | No | - |
-| `método_de_reducción` | El método de interpolación utilizado para las operaciones de reducción de escala | COMBO | No | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
-| `método_de_ampliación` | El método de interpolación utilizado para las operaciones de aumento de escala | COMBO | No | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `model` | El modelo al que se aplica el parche de reducción de escala | MODEL | Sí | - |
+| `block_number` | El número de bloque específico donde se aplicará la reducción de escala (por defecto: 3) | INT | No | 1-32 |
+| `downscale_factor` | El factor por el cual se reducirá la escala de las características (por defecto: 2.0) | FLOAT | No | 0.1-9.0 |
+| `start_percent` | El punto inicial en el proceso de denoising donde comienza la reducción de escala (por defecto: 0.0) | FLOAT | No | 0.0-1.0 |
+| `end_percent` | El punto final en el proceso de denoising donde se detiene la reducción de escala (por defecto: 0.35) | FLOAT | No | 0.0-1.0 |
+| `downscale_after_skip` | Si se aplica la reducción de escala después de las conexiones de salto (por defecto: True) | BOOLEAN | No | - |
+| `downscale_method` | El método de interpolación utilizado para las operaciones de reducción de escala | COMBO | No | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `upscale_method` | El método de interpolación utilizado para las operaciones de ampliación de escala | COMBO | No | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `modelo` | El modelo modificado con el parche de reducción de escala aplicado | MODEL |
+| `model` | El modelo modificado con el parche de reducción de escala aplicado | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PatchModelAddDownscale/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `93ece77ad2dce3c1cdd554583ae1f2e6be51a43ab072d408869dddbcc7798c40`
+**Source fingerprint (SHA-256):** `aa9434a521ab585b290a3bd8db804469bd3bb02103a0d830b6be6eb8e8c26a5e`

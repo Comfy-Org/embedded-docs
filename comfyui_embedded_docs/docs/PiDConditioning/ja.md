@@ -1,27 +1,25 @@
 # PiD コンディショニング
 
-以下が翻訳結果です。
-
-## 概要
-
-潜在画像と劣化シグマ値をCONDITIONINGデータに付加します。これはPiD（Pixel-in-Detail）デコードまたはアップスケーリングに使用され、処理前に潜在表現をどの程度劣化させるかを制御できます。
+潜在イメージと劣化シグマ値を CONDITIONING データに添付します。これは PiD（Pixel-in-Detail）デコードやアップスケーリングに使用され、処理前に潜在イメージをどの程度劣化させるかを制御できます。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
-| --- | --- | --- | --- | --- |
-| `ポジティブ` | 潜在画像と劣化シグマを付加する対象のコンディショニングデータ。 | CONDITIONING | はい | - |
-| `latent` | コンディショニングに付加する潜在画像（VAEEncodeまたはKSamplerから出力）。 | LATENT | はい | - |
-| `latent_format` | 潜在表現のフォーマット。Flux1およびFlux2の潜在表現はチャンネル次元から自動検出されます。SD3は手動で選択する必要があります（デフォルト: "flux"）。 | COMBO | はい | `"flux"`<br>`"sd3"` |
-| `degrade_sigma` | 適用する劣化の量。0はクリーンな潜在表現を意味します。この値を増やすと、破損した潜在出力をノイズ除去できます（デフォルト: 0.0）。 | FLOAT | はい | 0.0～1.0（刻み: 0.01） |
+|-----------|-------------|-----------|----------|-------|
+| `positive` | 潜在イメージと劣化シグマを添付する CONDITIONING データです。 | CONDITIONING | はい | - |
+| `latent` | CONDITIONING に添付する潜在イメージ（VAEEncode または KSampler から取得したもの）です。 | LATENT | はい | - |
+| `latent_format` | 潜在イメージの形式です。Flux1（16チャンネル）と Flux2（128チャンネル）の潜在イメージは、「flux」ではチャンネル次元から自動検出されます。SD3（16チャンネル）、SDXL（4チャンネル）、QwenImage（16チャンネル）の場合は手動で選択してください（デフォルト："flux"）。 | COMBO | はい | `"flux"`<br>`"sd3"`<br>`"sdxl"`<br>`"qwenimage"` |
+| `degrade_sigma` | 0 はクリーンな潜在イメージです。破損した潜在出力のノイズを除去するには、値を増やします（デフォルト：0.0）。 | FLOAT | はい | 0.0 から 1.0（ステップ：0.01） |
+
+注：`latent_format` が "flux" の場合、ノードは潜在イメージのチャンネル次元に基づいて、Flux1（16チャンネル）か Flux2（128チャンネル）かを自動的に検出します。処理対象の潜在イメージが5次元の場合、最後の次元に沿った最初のスライスのみが使用されます。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
-| --- | --- | --- |
-| `CONDITIONING` | 潜在画像と劣化シグマ値が付加された元のコンディショニングデータ。 | CONDITIONING |
+|-------------|-------------|-----------|
+| `CONDITIONING` | 潜在イメージと劣化シグマ値が添付された元の CONDITIONING データです。 | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PiDConditioning/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `7c8de543629c2299fc2c1e035e433dfc249af594773a77e65c69dde67eb104d7`
+**Source fingerprint (SHA-256):** `24f613b33e7872cb35f458aa5794a3cc4d37ceaecd43725039edef75f4a512bc`

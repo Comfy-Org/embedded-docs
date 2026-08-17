@@ -1,23 +1,25 @@
 # Gizli Kesme
 
-LatentCut düğümü, gizli örneklerden seçilen bir boyut boyunca belirli bir bölümü çıkarır. x, y veya t boyutunu, başlangıç konumunu ve çıkarılacak miktarı belirterek gizli temsilin bir kısmını kesmenizi sağlar. Düğüm, hem pozitif hem de negatif indekslemeyi işler ve çıkarma miktarını mevcut sınırlar içinde kalacak şekilde otomatik olarak ayarlar.
+LatentCut düğümü, seçilen bir boyut boyunca latent örneklerden belirli bir bölüm çıkarır. Boyutu (x, y veya t), başlangıç konumunu ve çıkarılacak miktarı belirterek latent gösterimin bir kısmını kesmenize olanak tanır. Düğüm hem pozitif hem negatif indekslemeyi işler ve çıkarma miktarını mevcut sınırlar içinde kalacak şekilde otomatik olarak ayarlar.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `örnekler` | Çıkarım yapılacak giriş gizli örnekleri | LATENT | Evet | - |
-| `boyut` | Gizli örneklerin hangi boyut boyunca kesileceği | COMBO | Evet | "x"<br>"y"<br>"t" |
-| `dizin` | Kesme işlemi için başlangıç konumu (varsayılan: 0). Pozitif değerler baştan, negatif değerler sondan sayar. Düğüm, indeksi gizli örneklerin geçerli aralığında kalacak şekilde otomatik olarak sınırlar | INT | Evet | -16384 ila 16384 |
-| `miktar` | Belirtilen boyut boyunca çıkarılacak öğe sayısı (varsayılan: 1). Düğüm, bu değer başlangıç indeksinin ötesindeki mevcut veriyi aşarsa otomatik olarak azaltır | INT | Evet | 1 ila 16384 |
+| `samples` | Çıkarım yapılacak giriş latent örnekleri | LATENT | Evet | - |
+| `dim` | Latent örneklerin kesileceği boyut | COMBO | Evet | "x"<br>"y"<br>"t" |
+| `index` | Kesme için başlangıç konumu (varsayılan: 0). Pozitif değerler baştan, negatif değerler sondan sayılır. Düğüm, indeksi latent örneklerin geçerli aralığında kalacak şekilde otomatik olarak sınırlar. | INT | Evet | -16384 - 16384 |
+| `amount` | Belirtilen boyut boyunca çıkarılacak öğe sayısı (varsayılan: 1). Düğüm, bu değer başlangıç indeksinin ötesindeki mevcut veriyi aşarsa otomatik olarak azaltır. | INT | Evet | 1 - 16384 |
 
-## Çıkışlar
+Not: `x`, latent tensörün son boyutu boyunca, `y` sondan ikinci boyut boyunca ve `t` sondan üçüncü boyut boyunca keser. `index` pozitif olduğunda seçilen boyutun son geçerli konumuna sınırlanır; negatif olduğunda verinin başlangıcından önceyi göstermeyecek şekilde sınırlanır. İstenen kesim mevcut verinin ötesine uzanacaksa `amount` azaltılır.
 
-| Çıkış Adı | Açıklama | Veri Türü |
+## Çıktılar
+
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | Gizli örneklerin çıkarılan bölümü | LATENT |
+| `output` | Latent örneklerin çıkarılan bölümü | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentCut/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `54f2b0cead9dce2c2cbd241d4e8c50ce85a67d3e1a40e7002056b83acbf0cf2d`
+**Source fingerprint (SHA-256):** `7682de2644a4b85dba0571406f9f9802eca7caab09dc2ccf1ac91dc13b41bcdf`

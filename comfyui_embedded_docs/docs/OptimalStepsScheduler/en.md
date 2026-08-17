@@ -8,7 +8,7 @@ The OptimalStepsScheduler node calculates noise schedule sigmas for diffusion mo
 | --- | --- | --- | --- | --- |
 | `model_type` | The type of diffusion model to use for noise level calculation | COMBO | Yes | "FLUX"<br>"Wan"<br>"Chroma" |
 | `steps` | The total number of sampling steps to calculate (default: 20) | INT | Yes | 3-1000 |
-| `denoise` | Controls the denoising strength, which adjusts the effective number of steps (default: 1.0) | FLOAT | No | 0.0-1.0 |
+| `denoise` | Controls the denoising strength, which adjusts the effective number of steps (default: 1.0) | FLOAT | Yes | 0.0-1.0 |
 
 **Note:** When `denoise` is set to less than 1.0, the node calculates the effective steps as `steps * denoise`. If `denoise` is set to 0.0, the node returns an empty tensor.
 
@@ -21,4 +21,4 @@ The OptimalStepsScheduler node calculates noise schedule sigmas for diffusion mo
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OptimalStepsScheduler/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `19ad2b96d8256b1fd274f09d863215d4a4375f071829509d9f105d244cee3d28`
+**Source fingerprint (SHA-256):** `fd48c94ca16c8a3d8e6f0138018e7b13c15d100d6147807bcb23d838899045b7`

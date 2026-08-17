@@ -1,7 +1,5 @@
 # Run MoGe Inference
 
-## Overview
-
 Run MoGe on a single image to estimate depth and geometry. This node processes an input image through the MoGe model to generate a 3D point cloud, depth map, camera intrinsics, a mask, and surface normals.
 
 ## Inputs
@@ -9,20 +7,22 @@ Run MoGe on a single image to estimate depth and geometry. This node processes a
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `moge_model` | The MoGe model to use for inference. | MOGE_MODEL | Yes | N/A |
-| `image` | The input image for depth and geometry estimation. | IMAGE | Yes | N/A |
+| `image` | The input image for depth and geometry estimation. Only the RGB channels are used; any alpha channel is ignored. | IMAGE | Yes | N/A |
 | `resolution_level` | Controls the processing resolution. 0 is fastest, 9 provides the most detail. (default: 9) | INT | Yes | 0 to 9 |
-| `fov_x_degrees` | Horizontal field of view of the source camera in degrees. Sets the focal length used to unproject the depth map into 3D. Set to 0.0 to automatically recover the field of view from the predicted points. (default: 0.0) | FLOAT | Yes | 0.0 to 170.0 |
+| `fov_x_degrees` | (Advanced) Horizontal field of view of the source camera in degrees. Sets the focal length used to unproject the depth map into 3D. Set to 0.0 to automatically recover the field of view from the predicted points. (default: 0.0) | FLOAT | Yes | 0.0 to 170.0 |
 | `batch_size` | Number of images processed per inference call. Lower this value if you run out of memory when processing long videos or large image sets. (default: 4) | INT | Yes | 1 to 64 |
 | `force_projection` | (Advanced) Forces projection of the predicted points. (default: True) | BOOLEAN | Yes | True/False |
-| `apply_mask` | When enabled, sets masked-out (sky or invalid) pixels to infinity in the points and depth outputs. This helps meshing tools ignore these areas. Disable to keep the raw predicted geometry everywhere; the mask is still returned separately. (default: True) | BOOLEAN | Yes | True/False |
+| `apply_mask` | (Advanced) When enabled, sets masked-out (sky or invalid) pixels to infinity in the points and depth outputs. This helps meshing tools ignore these areas. Disable to keep the raw predicted geometry everywhere; the mask is still returned separately. (default: True) | BOOLEAN | Yes | True/False |
+
+Note: The `image` input can contain multiple images. The node processes them in groups of `batch_size` and combines the results into a single output.
 
 ## Outputs
 
 | Output Name | Description | Data Type |
 | --- | --- | --- |
-| `moge_geometry` | A dictionary containing the estimated geometry. It includes the original `image`, and may contain `points` (3D point cloud), `depth` (depth map), `intrinsics` (camera intrinsics matrix), `mask` (mask identifying valid pixels), and `normal` (surface normals). | MOGE_GEOMETRY |
+| `moge_geometry` | A dictionary containing the estimated geometry. It always includes the input `image` (RGB channels only) and may contain `points` (3D point cloud), `depth` (depth map), `intrinsics` (camera intrinsics matrix), `mask` (mask identifying valid pixels), and `normal` (surface normals). | MOGE_GEOMETRY |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MoGeInference/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `5213b280513850eeef2e22ae723ebb015789109435e28ddd79f91f9a4b4a1e79`
+**Source fingerprint (SHA-256):** `59f6b8b1ab65147a47f5dc7ebee7b965a5ab37c6a0843a2c80d50c767ad98db4`

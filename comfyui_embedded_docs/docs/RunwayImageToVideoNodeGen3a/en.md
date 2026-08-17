@@ -18,6 +18,11 @@ The Runway Image to Video (Gen3a Turbo) node generates a video from a single sta
 - The `start_frame` must have an aspect ratio between 0.5 and 2.0.
 - The `prompt` must contain at least one character (cannot be empty).
 
+**Notes:**
+
+- This node is deprecated.
+- Before generating, Runway recommends reviewing their best practices guide: https://help.runwayml.com/hc/en-us/articles/33927968552339-Creating-with-Act-One-on-Gen-3-Alpha-and-Turbo
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -27,4 +32,4 @@ The Runway Image to Video (Gen3a Turbo) node generates a video from a single sta
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayImageToVideoNodeGen3a/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `86d4c5468ca1a192e71f502d4d409a9813769c68aa464d113a012052a55d760e`
+**Source fingerprint (SHA-256):** `ff66cbdfa80aabeaf96d43e7822dd0c700ee027d13fb430a9dc2079e1a23f38e`

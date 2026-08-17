@@ -1,48 +1,60 @@
 # WanInfiniteTalkToVideo
 
-Le nœud WanInfiniteTalkToVideo génère des séquences vidéo à partir d’une entrée audio. Il utilise un modèle de diffusion vidéo, conditionné par des caractéristiques audio extraites d’un ou deux locuteurs, pour produire une représentation latente d’une vidéo de tête parlante. Le nœud peut générer une nouvelle séquence ou en étendre une existante en utilisant les images précédentes pour le contexte de mouvement.
+Le nœud WanInfiniteTalkToVideo génère un clip vidéo de tête parlante à partir d'audio. Il conditionne un modèle de diffusion vidéo sur des caractéristiques audio d'un ou deux locuteurs, utilise éventuellement une image de départ ou des images précédentes comme contexte, et renvoie un modèle patché, un conditionnement et une vidéo latente pour l'échantillonnage.
 
 ## Entrées
 
+### Entrées communes
+
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `mode` | Le mode d’entrée audio. `"single_speaker"` utilise une seule entrée audio. `"two_speakers"` active les entrées pour un second locuteur et les masques correspondants. | COMBO | Oui | `"single_speaker"`<br>`"two_speakers"` |
-| `modèle` | Le modèle de diffusion vidéo de base. | MODEL | Oui | - |
-| `correctif du modèle` | Le patch de modèle contenant les couches de projection audio. | MODELPATCH | Oui | - |
-| `positif` | Le conditionnement positif pour guider la génération. | CONDITIONING | Oui | - |
-| `négatif` | Le conditionnement négatif pour guider la génération. | CONDITIONING | Oui | - |
-| `vae` | Le VAE utilisé pour encoder les images vers et depuis l’espace latent. | VAE | Oui | - |
-| `largeur` | La largeur de la vidéo de sortie en pixels. Doit être divisible par 16. (par défaut : 832) | INT | Non | 16 - MAX_RESOLUTION |
-| `hauteur` | La hauteur de la vidéo de sortie en pixels. Doit être divisible par 16. (par défaut : 480) | INT | Non | 16 - MAX_RESOLUTION |
-| `longueur` | Le nombre d’images à générer. (par défaut : 81) | INT | Non | 1 - MAX_RESOLUTION |
-| `sortie vision clip` | Sortie CLIP vision optionnelle pour un conditionnement supplémentaire. | CLIPVISIONOUTPUT | Non | - |
-| `image de départ` | Une image de départ optionnelle pour initialiser la séquence vidéo. | IMAGE | Non | - |
-| `sortie encodeur audio 1` | La sortie principale de l’encodeur audio contenant les caractéristiques du premier locuteur. | AUDIOENCODEROUTPUT | Oui | - |
-| `nombre d’images de mouvement` | Nombre d’images précédentes à utiliser comme contexte de mouvement lors de l’extension d’une séquence. (par défaut : 9) | INT | Non | 1 - 33 |
-| `échelle audio` | Facteur d’échelle appliqué au conditionnement audio. (par défaut : 1.0) | FLOAT | Non | -10.0 - 10.0 |
-| `images précédentes` | Images vidéo précédentes optionnelles pour étendre la séquence. | IMAGE | Non | - |
-| `audio_encoder_output_2` | La seconde sortie de l’encodeur audio. Requise lorsque `mode` est réglé sur `"two_speakers"`. | AUDIOENCODEROUTPUT | Non | - |
+| `mode` | Le mode audio. La sélection de `"single_speaker"` utilise une entrée audio. La sélection de `"two_speakers"` ajoute les entrées du deuxième locuteur listées ci-dessous. | DYNAMIC_COMBO | Oui | `"single_speaker"`<br>`"two_speakers"` |
+| `model` | Le modèle de diffusion vidéo de base à patcher. | MODEL | Oui | - |
+| `model_patch` | Le patch de modèle contenant les couches de projection audio. | MODELPATCH | Oui | - |
+| `positive` | Le conditionnement positif utilisé pour guider la génération vidéo. | CONDITIONING | Oui | - |
+| `negative` | Le conditionnement négatif utilisé pour guider la génération vidéo. | CONDITIONING | Oui | - |
+| `vae` | Le VAE utilisé pour encoder les images et les images précédentes dans l'espace latent. | VAE | Oui | - |
+| `width` | La largeur de la vidéo générée en pixels, par pas de 16. (défaut : 832) | INT | Oui | 16 - MAX_RESOLUTION (step 16) |
+| `height` | La hauteur de la vidéo générée en pixels, par pas de 16. (défaut : 480) | INT | Oui | 16 - MAX_RESOLUTION (step 16) |
+| `length` | Le nombre d'images à générer. (défaut : 81) | INT | Oui | 1 - MAX_RESOLUTION (step 4) |
+| `audio_encoder_output_1` | La sortie de l'encodeur audio pour le premier locuteur, contenant les caractéristiques audio utilisées pour le conditionnement. | AUDIOENCODEROUTPUT | Oui | - |
+| `start_image` | Image de départ facultative utilisée pour initialiser le début de la vidéo. Elle est redimensionnée à `width` et `height`. | IMAGE | Non | - |
+| `clip_vision_output` | Sortie CLIP vision facultative ajoutée aux conditionnements positif et négatif. | CLIPVISIONOUTPUT | Non | - |
+| `motion_frame_count` | Nombre d'images précédentes à utiliser comme contexte de mouvement. (défaut : 9) | INT | Oui | 1 - 33 (step 1) |
+| `audio_scale` | Facteur d'échelle appliqué au conditionnement audio. (défaut : 1.0) | FLOAT | Oui | -10.0 - 10.0 (step 0.01) |
+| `previous_frames` | Images vidéo précédentes facultatives utilisées pour étendre une séquence existante. Le nœud utilise les `motion_frame_count` dernières images comme contexte de mouvement. | IMAGE | Non | - |
+
+### Entrées pour un seul locuteur
+
+La sélection de `single_speaker` n'ajoute aucune entrée supplémentaire.
+
+### Entrées pour deux locuteurs
+
+Ces entrées sont disponibles lorsque `mode` est `"two_speakers"`.
+
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `audio_encoder_output_2` | La sortie de l'encodeur audio pour le deuxième locuteur. Lorsqu'elle est fournie, `mask_1` et `mask_2` doivent également être fournis. | AUDIOENCODEROUTPUT | Non | - |
 | `mask_1` | Masque pour le premier locuteur, requis si deux entrées audio sont utilisées. | MASK | Non | - |
-| `mask_2` | Masque pour le second locuteur, requis si deux entrées audio sont utilisées. | MASK | Non | - |
+| `mask_2` | Masque pour le deuxième locuteur, requis si deux entrées audio sont utilisées. | MASK | Non | - |
 
 **Contraintes des paramètres :**
 
-* Lorsque `mode` est réglé sur `"two_speakers"`, les paramètres `audio_encoder_output_2`, `mask_1` et `mask_2` deviennent obligatoires.
-* Si `audio_encoder_output_2` est fourni, `mask_1` et `mask_2` doivent également être fournis.
-* Si `mask_1` et `mask_2` sont fournis, `audio_encoder_output_2` doit également être fourni.
-* Si `previous_frames` est fourni, il doit contenir au moins autant d’images que spécifié par `motion_frame_count`.
+- Si `audio_encoder_output_2` est fourni, `mask_1` et `mask_2` doivent également être fournis.
+- Si `mask_1` et `mask_2` sont fournis, `audio_encoder_output_2` doit également être fourni.
+- Si `previous_frames` est fourni, il doit contenir au moins autant d'images que spécifié par `motion_frame_count`.
 
 ## Sorties
 
-| Nom de la sortie | Description | Type de données |
+| Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle patché avec le conditionnement audio appliqué. | MODEL |
-| `positif` | Le conditionnement positif, potentiellement modifié avec un contexte supplémentaire (ex. : image de départ, CLIP vision). | CONDITIONING |
-| `négatif` | Le conditionnement négatif, potentiellement modifié avec un contexte supplémentaire. | CONDITIONING |
-| `latent` | La séquence vidéo générée dans l’espace latent. | LATENT |
-| `image rognée` | Le nombre d’images depuis le début du contexte de mouvement qui doivent être supprimées lors de l’extension d’une séquence. | INT |
+| `model` | Le modèle patché avec conditionnement audio et wrappers d'échantillonnage appliqués. | MODEL |
+| `positive` | Le conditionnement positif, potentiellement modifié avec l'image de départ ou le contexte CLIP vision. | CONDITIONING |
+| `negative` | Le conditionnement négatif, potentiellement modifié avec l'image de départ ou le contexte CLIP vision. | CONDITIONING |
+| `latent` | Un tenseur latent initialisé à zéro représentant la vidéo à générer. | LATENT |
+| `trim_image` | Le nombre d'images à retirer au début lors de l'extension à partir d'images précédentes ; 0 lors du démarrage d'une nouvelle séquence. | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanInfiniteTalkToVideo/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `6bb976da5cac0b61edb7d4c9d206c7c7ea9ffc0e982034c23c7f2e891e972888`
+**Source fingerprint (SHA-256):** `b7359490c1de86d9c82122bc227295b3b7f8a3493f629365ae0f22f9f34d9a66`

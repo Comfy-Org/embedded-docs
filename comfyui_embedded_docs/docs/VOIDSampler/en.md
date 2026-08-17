@@ -12,6 +12,8 @@ This node has no configurable input parameters. It is a self-contained sampler t
 | --- | --- | --- | --- | --- |
 | *No inputs* | This node does not accept any input parameters. | - | - | - |
 
+Note: VOID models were trained with the diffusers CogVideoXDDIMScheduler, which operates in alpha-space where the input standard deviation is approximately 1. The standard KSampler applies noise scaling that multiplies by about 4500x, which is incompatible with this training. The VOIDSampler skips that scaling and implements the DDIM update rule directly using sigma-to-alpha conversion.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -21,4 +23,4 @@ This node has no configurable input parameters. It is a self-contained sampler t
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDSampler/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `ca30211dc30975a1c6447afd3f6dcdb29d59d31effabe9b7fed5b90ee1cab540`
+**Source fingerprint (SHA-256):** `b8bb6d3d7220cca4a6dd252efe9c92953b1c5c67c14365e5e0583bc9bdb133be`

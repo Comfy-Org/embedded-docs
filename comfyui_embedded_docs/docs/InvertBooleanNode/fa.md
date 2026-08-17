@@ -1,6 +1,6 @@
 # InvertBooleanNode
 
-این گره یک ورودی بولی (درست/نادرست) دریافت کرده و مقدار مخالف آن را خروجی می‌دهد. این عملیات یک NOT منطقی است که `true` را به `false` و `false` را به `true` تبدیل می‌کند.
+این گره یک ورودی بولی (`true`/`false`) دریافت می‌کند و مقدار مخالف آن را خروجی می‌دهد. عملیات منطقی NOT را انجام می‌دهد؛ به این ترتیب `true` به `false` و `false` به `true` تبدیل می‌شود.
 
 ## ورودی‌ها
 
@@ -17,4 +17,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InvertBooleanNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `7c927252a80f42836af6ef16f76714e6892454733d698674b547bd65ddb9d607`
+**Source fingerprint (SHA-256):** `7e28bb375a25249bc237870bf281321375c4be7b7782b217b3e0f70afc2e0c53`

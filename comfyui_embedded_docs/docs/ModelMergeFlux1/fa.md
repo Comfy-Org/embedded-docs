@@ -1,16 +1,16 @@
 # ModelMergeFlux1
 
-گره `ModelMergeFlux1` دو مدل انتشار (diffusion) را با ترکیب مؤلفه‌های آن‌ها از طریق درون‌یابی وزنی ادغام می‌کند. این گره کنترل دقیقی بر نحوه ترکیب بخش‌های مختلف مدل‌ها، از جمله بلوک‌های پردازش تصویر، لایه‌های جاسازی زمانی، مکانیسم‌های هدایت، ورودی‌های برداری، رمزگذارهای متن و بلوک‌های ترانسفورمر مختلف فراهم می‌کند. این امکان ایجاد مدل‌های ترکیبی با ویژگی‌های سفارشی‌شده از دو مدل مبدأ را فراهم می‌سازد.
+The ModelMergeFlux1 node merges two diffusion models by blending their components using weighted interpolation. It gives fine-grained control over how different parts of the models are combined, including image processing blocks, time embedding layers, guidance mechanisms, vector inputs, text encoders, and transformer blocks. This allows creating hybrid models with customized characteristics from two source models.
 
 ## ورودی‌ها
 
 | پارامتر | توضیحات | نوع داده | الزامی | محدوده |
 | --- | --- | --- | --- | --- |
-| `مدل۱` | اولین مدل مبدأ برای ادغام | MODEL | بله | - |
-| `مدل۲` | دومین مدل مبدأ برای ادغام | MODEL | بله | - |
+| `model1` | اولین مدل منبع برای ادغام | MODEL | بله | - |
+| `model2` | دومین مدل منبع برای ادغام | MODEL | بله | - |
 | `img_in.` | وزن درون‌یابی ورودی تصویر (پیش‌فرض: 1.0) | FLOAT | بله | 0.0 تا 1.0 |
-| `time_in.` | وزن درون‌یابی جاسازی زمانی (پیش‌فرض: 1.0) | FLOAT | بله | 0.0 تا 1.0 |
-| `ورودی راهنما` | وزن درون‌یابی مکانیسم هدایت (پیش‌فرض: 1.0) | FLOAT | بله | 0.0 تا 1.0 |
+| `time_in.` | وزن درون‌یابی جاسازی زمان (پیش‌فرض: 1.0) | FLOAT | بله | 0.0 تا 1.0 |
+| `guidance_in` | وزن درون‌یابی مکانیزم هدایت (پیش‌فرض: 1.0) | FLOAT | بله | 0.0 تا 1.0 |
 | `vector_in.` | وزن درون‌یابی ورودی برداری (پیش‌فرض: 1.0) | FLOAT | بله | 0.0 تا 1.0 |
 | `txt_in.` | وزن درون‌یابی رمزگذار متن (پیش‌فرض: 1.0) | FLOAT | بله | 0.0 تا 1.0 |
 | `double_blocks.0.` | وزن درون‌یابی بلوک دوگانه 0 (پیش‌فرض: 1.0) | FLOAT | بله | 0.0 تا 1.0 |
@@ -72,6 +72,8 @@
 | `single_blocks.37.` | وزن درون‌یابی بلوک تکی 37 (پیش‌فرض: 1.0) | FLOAT | بله | 0.0 تا 1.0 |
 | `final_layer.` | وزن درون‌یابی لایه نهایی (پیش‌فرض: 1.0) | FLOAT | بله | 0.0 تا 1.0 |
 
+تمام ورودی‌های وزن درون‌یابی محدوده یکسانی (0.0 تا 1.0)، پیش‌فرض (1.0) و گام (0.01) دارند.
+
 ## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
@@ -81,4 +83,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeFlux1/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `a632133b5d4bc7c5a4e1be5f6f779e424a491fffb8ef7702346adc4acf6f23bc`
+**Source fingerprint (SHA-256):** `4a1cc4dd2c253bbeb94144969e921af40a7f12a1ec23ed7c23da89107767dc26`

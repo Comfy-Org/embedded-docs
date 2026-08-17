@@ -26,4 +26,4 @@ The SamplerDPMAdaptative node implements an adaptive DPM (Diffusion Probabilisti
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerDPMAdaptative/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `6f7bc9c02604d2645a3b33aa418c99706228ec5947722a7e45a0a519f7a42a9f`
+**Source fingerprint (SHA-256):** `07b2e5b9f21ec101eabccc6be245d043e64a996a14db10434b03eaae0a91b1d8`

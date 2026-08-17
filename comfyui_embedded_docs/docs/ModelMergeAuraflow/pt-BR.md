@@ -1,18 +1,18 @@
 # ModelMergeAuraflow
 
-O nó ModelMergeAuraflow permite combinar dois modelos diferentes ajustando pesos específicos de mesclagem para vários componentes do modelo. Ele oferece controle refinado sobre como diferentes partes dos modelos são mescladas, desde as camadas iniciais até as saídas finais. Este nó é particularmente útil para criar combinações personalizadas de modelos com controle preciso sobre o processo de mesclagem.
+O ModelMergeAuraflow permite combinar dois modelos diferentes ajustando pesos de mesclagem específicos para vários componentes do modelo. Ele oferece controle fino sobre como diferentes partes dos modelos são mescladas, desde as camadas iniciais até as saídas finais, e é projetado para uso com arquiteturas de modelo no estilo Auraflow. Este nó é particularmente útil para criar combinações personalizadas de modelos com controle preciso sobre o processo de mesclagem.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
 | `model1` | O primeiro modelo a ser mesclado | MODEL | Sim | - |
 | `model2` | O segundo modelo a ser mesclado | MODEL | Sim | - |
 | `init_x_linear.` | Peso de mesclagem para a transformação linear inicial (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `codificação_posicional` | Peso de mesclagem para componentes de codificação posicional (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `positional_encoding` | Peso de mesclagem para componentes de codificação posicional (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `cond_seq_linear.` | Peso de mesclagem para camadas lineares de sequência condicional (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `registrar_tokens` | Peso de mesclagem para componentes de registro de tokens (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `t_embedder.` | Peso de mesclagem para componentes de incorporação temporal (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `register_tokens` | Peso de mesclagem para componentes de registro de tokens (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `t_embedder.` | Peso de mesclagem para componentes de incorporação de tempo (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `double_layers.0.` | Peso de mesclagem para o grupo de camada dupla 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `double_layers.1.` | Peso de mesclagem para o grupo de camada dupla 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `double_layers.2.` | Peso de mesclagem para o grupo de camada dupla 2 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
@@ -54,11 +54,11 @@ O nó ModelMergeAuraflow permite combinar dois modelos diferentes ajustando peso
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
+| Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `model` | O modelo mesclado combinando características de ambos os modelos de entrada de acordo com os pesos de mesclagem especificados | MODEL |
+| `model` | O modelo mesclado que combina recursos de ambos os modelos de entrada de acordo com os pesos de mesclagem especificados | MODEL |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeAuraflow/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `c4959321bba252eb24c945343198d72f50d6021d4dac9945f94e3eb28f1bc3c9`
+**Source fingerprint (SHA-256):** `e9d3d81b2a3f81b082f9dc9f662f4e51df66f1f077e2899a1fea9a7061c4a97b`

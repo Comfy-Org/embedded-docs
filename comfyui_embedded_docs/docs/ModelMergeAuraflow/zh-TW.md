@@ -1,19 +1,17 @@
 # ModelMergeAuraflow
 
-## 概述
-
-ModelMergeAuraflow 節點允許您透過調整各個模型元件的特定混合權重，將兩個不同的模型融合在一起。它提供了從初始層到最終輸出的精細控制，讓您能夠精確掌控模型不同部分的合併方式。此節點特別適合用於建立自訂模型組合，並對合併過程進行精確控制。
+ModelMergeAuraflow 允許您透過調整各種模型元件的特定混合權重，將兩個不同的模型混合在一起。它提供了對模型不同部分（從初始層到最終輸出）合併方式的精細控制，專為 Auraflow 風格的模型架構所設計。此節點特別適合用於建立自訂模型組合，並能精確控制合併過程。
 
 ## 輸入
 
-| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `模型 1` | 要合併的第一個模型 | MODEL | 是 | - |
-| `模型 2` | 要合併的第二個模型 | MODEL | 是 | - |
+| `model1` | 要合併的第一個模型 | MODEL | 是 | - |
+| `model2` | 要合併的第二個模型 | MODEL | 是 | - |
 | `init_x_linear.` | 初始線性轉換的混合權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `positional_encoding` | 位置編碼元件的混合權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `cond_seq_linear.` | 條件序列線性層的混合權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `register_tokens` | 令牌註冊元件的混合權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `register_tokens` | Token 註冊元件的混合權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `t_embedder.` | 時間嵌入元件的混合權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `double_layers.0.` | 雙層群組 0 的混合權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `double_layers.1.` | 雙層群組 1 的混合權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
@@ -56,11 +54,11 @@ ModelMergeAuraflow 節點允許您透過調整各個模型元件的特定混合�
 
 ## 輸出
 
-| 輸出名稱 | 說明 | 資料類型 |
+| 輸出名 | 說明 | 資料類型 |
 | --- | --- | --- |
 | `model` | 根據指定的混合權重，結合兩個輸入模型特徵的合併模型 | MODEL |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeAuraflow/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `c4959321bba252eb24c945343198d72f50d6021d4dac9945f94e3eb28f1bc3c9`
+**Source fingerprint (SHA-256):** `e9d3d81b2a3f81b082f9dc9f662f4e51df66f1f077e2899a1fea9a7061c4a97b`

@@ -1,13 +1,13 @@
 # 模型融合（SDXL）
 
-ModelMergeSDXL 节点允许您通过调整两个模型对架构不同部分的影响力，将两个 SDXL 模型混合在一起。您可以控制每个模型对时间嵌入、标签嵌入以及模型结构中各个块的贡献程度。这会创建一个结合了两个输入模型特征的混合模型。
+ModelMergeSDXL 节点允许您通过调整每个模型对架构不同部分的影响力，将两个 SDXL 模型混合在一起。您可以控制每个模型对时间嵌入、标签嵌入以及模型结构中各个块的贡献程度。这将创建一个融合了两个输入模型特征的混合模型。
 
 ## 输入
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `模型1` | 要合并的第一个 SDXL 模型 | MODEL | 是 | - |
-| `模型2` | 要合并的第二个 SDXL 模型 | MODEL | 是 | - |
+| `model1` | 要合并的第一个 SDXL 模型 | MODEL | 是 | - |
+| `model2` | 要合并的第二个 SDXL 模型 | MODEL | 是 | - |
 | `time_embed.` | 时间嵌入层的混合权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `label_emb.` | 标签嵌入层的混合权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `input_blocks.0` | 输入块 0 的混合权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
@@ -33,13 +33,15 @@ ModelMergeSDXL 节点允许您通过调整两个模型对架构不同部分的�
 | `output_blocks.8` | 输出块 8 的混合权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `out.` | 输出层的混合权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 
+所有混合权重参数均为必填的 FLOAT 值，范围在 0.0 到 1.0 之间，默认值为 1.0，可按 0.01 的步长进行调整。
+
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `model` | 合并后的 SDXL 模型，结合了两个输入模型的特征 | MODEL |
+| `model` | 融合了两个输入模型特征的合并 SDXL 模型 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSDXL/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `6c7572a6ed50534f2d9ad6f499146763457da58f0c9dd4b85204e67f7d3e9660`
+**Source fingerprint (SHA-256):** `9a1b0645ee19c2eddb274dd6ea3f9a05997115119cc654a7f055d58475745bb2`

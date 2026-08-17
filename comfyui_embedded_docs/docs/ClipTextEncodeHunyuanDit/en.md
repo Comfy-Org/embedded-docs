@@ -1,6 +1,6 @@
 # CLIP Text Encode (Hunyuan Image)
 
-The `CLIPTextEncodeHunyuanDiT` node converts text descriptions into a format that the HunyuanDiT model can understand. It is an advanced conditioning node designed for the dual text encoder architecture of HunyuanDiT, processing two separate text inputs through different tokenizers.
+The `CLIPTextEncodeHunyuanDiT` node converts text descriptions into a format that the HunyuanDiT model can understand. It is an advanced conditioning node designed for the dual text encoder architecture of HunyuanDiT, processing two separate text inputs through different tokenizers and combining them into a single conditioning output.
 
 ## Inputs
 
@@ -19,4 +19,4 @@ The `CLIPTextEncodeHunyuanDiT` node converts text descriptions into a format tha
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeHunyuanDiT/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `bde7c884f72829491090965bd9af34ad59ec326f96e88bb7cdb9ddc47592137e`
+**Source fingerprint (SHA-256):** `550e8c09b8b74974576a852a9b690a87a0156ef49fe7ec1050b10415c6af78aa`

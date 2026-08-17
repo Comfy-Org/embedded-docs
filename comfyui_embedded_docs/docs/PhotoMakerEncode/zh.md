@@ -1,25 +1,25 @@
 # PhotoMaker编码
 
-PhotoMakerEncode 节点处理图像和文本，为 AI 图像生成生成条件数据。它接收参考图像和文本提示，然后创建嵌入，用于根据参考图像的视觉特征引导图像生成。该节点会特别查找文本中的 "photomaker" 标记，以确定在何处应用基于图像的条件控制。
+PhotoMakerEncode 通过将参考图像与文本提示相结合，为 AI 图像生成创建 conditioning 数据。它会搜索文本提示中的 "photomaker" 一词，当找到时，使用 PhotoMaker 模型在该提示位置应用参考图像的视觉特征。
 
 ## 输入
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `photomaker` | 用于处理图像并生成嵌入的 PhotoMaker 模型 | PHOTOMAKER | 是 | - |
-| `图像` | 提供视觉特征用于条件控制的参考图像 | IMAGE | 是 | - |
+| `photomaker` | 用于处理参考图像并生成基于图像的 embedding 的 PhotoMaker 模型 | PHOTOMAKER | 是 | - |
+| `image` | 为 conditioning 提供视觉特征的参考图像 | IMAGE | 是 | - |
 | `clip` | 用于文本分词和编码的 CLIP 模型 | CLIP | 是 | - |
-| `文本` | 用于生成条件控制的文本提示（默认值："photograph of photomaker"） | STRING | 是 | - |
+| `text` | 用于生成 conditioning 的文本提示。支持多行文本和动态提示（默认值："photograph of photomaker"） | STRING | 是 | - |
 
-**注意：** 当文本中包含 "photomaker" 一词时，节点会在提示词中的该位置应用基于图像的条件控制。如果文本中未找到 "photomaker"，节点将生成标准文本条件控制，不包含图像影响。
+**注意：** 文本提示中必须将 "photomaker" 作为独立单词出现（匹配区分大小写），才会应用基于图像的 conditioning。如果存在该词，图像特征会在提示中的该位置被注入。如果未找到 "photomaker"，节点将返回不包含图像影响的标准文本 conditioning。
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `CONDITIONING` | 包含图像和文本嵌入的条件数据，用于引导图像生成 | CONDITIONING |
+| `CONDITIONING` | 包含图像和文本 embedding 的 conditioning 数据，用于引导图像生成，以及来自 CLIP 文本编码器的池化输出 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PhotoMakerEncode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `535fd3dbbe0e48205bebde030138ffca841dc94a18fd47db768a1066fe84bce4`
+**Source fingerprint (SHA-256):** `490a90c504ade253c2bb055e0efb1eb015ba6d7faf8f2370cac188871f678986`

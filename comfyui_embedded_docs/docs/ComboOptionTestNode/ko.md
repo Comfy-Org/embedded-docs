@@ -1,6 +1,6 @@
 # ComboOptionTestNode
 
-ComboOptionTestNode는 콤보 박스 선택을 테스트하고 전달하는 로직 노드입니다. 두 개의 콤보 박스 입력을 받으며, 각 입력에는 미리 정의된 옵션 집합이 있습니다. 선택된 값을 수정 없이 그대로 출력합니다.
+ComboOptionTestNode는 콤보 상자 선택 항목을 테스트하고 전달하도록 설계된 로직 노드입니다. 이 노드는 각각 사전 정의된 옵션 세트가 있는 두 개의 콤보 상자 입력을 받아 수정 없이 선택된 값을 직접 출력합니다.
 
 ## 입력
 
@@ -13,10 +13,10 @@ ComboOptionTestNode는 콤보 박스 선택을 테스트하고 전달하는 로�
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `output_1` | 첫 번째 콤보 박스(`combo`)에서 선택된 값을 출력합니다. | COMBO |
-| `output_2` | 두 번째 콤보 박스(`combo2`)에서 선택된 값을 출력합니다. | COMBO |
+| `output_1` | 첫 번째 콤보 상자(`combo`)에서 선택된 값을 출력합니다. | COMBO |
+| `output_2` | 두 번째 콤보 상자(`combo2`)에서 선택된 값을 출력합니다. | COMBO |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComboOptionTestNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `2f5a73eb7c2962a983b12688159e52d4d05f569d67909f536956ab18a6cc87d7`
+**Source fingerprint (SHA-256):** `fe0b6a35680de55767af2c0d8a293010ddb4c4282cfdde7f9dff7a3a11ff1e5c`

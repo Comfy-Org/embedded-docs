@@ -1,26 +1,20 @@
 # Charger le modèle MoGe
 
-Voici la traduction en français de la documentation, en respectant toutes vos règles :
-
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadMoGeModel/en.md)
-
-## Aperçu
-
-Charge un modèle MoGe (géométrie monoculaire) à partir d'un fichier et le prépare pour une utilisation dans des tâches d'estimation géométrique. Ce nœud lit un fichier de modèle depuis le dossier `geometry_estimation` et initialise le modèle MoGe avec ses poids entraînés.
+Charge un modèle MoGe (géométrie monoculaire) depuis un fichier et le prépare pour une utilisation dans des tâches d'estimation de géométrie. Ce nœud lit un fichier de modèle dans le dossier `geometry_estimation` et initialise le modèle MoGe avec ses poids entraînés.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model_name` | Le nom du fichier de modèle MoGe à charger. Sélectionnez parmi les fichiers de modèle disponibles dans votre installation ComfyUI. | STRING | Oui | Liste des fichiers de modèle disponibles dans le dossier `geometry_estimation` |
+| `model_name` | Le nom du fichier de modèle MoGe à charger. Sélectionnez parmi les fichiers de modèle disponibles dans votre installation ComfyUI. | COMBO | Oui | Liste des fichiers de modèle disponibles dans le dossier `geometry_estimation` |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `MOGE_MODEL` | L'instance du modèle MoGe chargée, prête à être utilisée dans des workflows d'estimation géométrique. | MOGE_MODEL |
+| `MOGE_MODEL` | L'instance du modèle MoGe chargée, prête à être utilisée dans des flux de travail d'estimation de géométrie. | MOGE_MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadMoGeModel/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `4707002565181ca17936ecf87ea8059630c97c44c17facfecd04053d9581b7d1`
+**Source fingerprint (SHA-256):** `b5b55f94d3762852d5a1480c0b00d15da4e534adbeb544bf7c47da012e5a6353`

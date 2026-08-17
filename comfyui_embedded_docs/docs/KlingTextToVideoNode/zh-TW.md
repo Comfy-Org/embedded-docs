@@ -1,28 +1,26 @@
 # Kling 文字轉影片
 
-## 概述
-
-Kling 文字轉影片節點可將文字描述轉換為影片內容。它接收文字提示，並根據指定的配置設定生成對應的影片序列。此節點支援不同的畫面比例和生成模式，以產生不同長度和品質的影片。
+Kling 文字轉影片節點使用 Kling 影片生成服務，將文字提示轉換為短影片片段。您提供正面與負面提示，以及寬高比、設定比例、生成模式等設定，節點將回傳生成的影片及其識別碼與持續時間。
 
 ## 輸入
 
-| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
-| --- | --- | --- | --- | --- |
-| `prompt` | 正向文字提示 | STRING | 是 | - |
-| `負向提示詞` | 負向文字提示 | STRING | 是 | - |
-| `cfg_scale` | 配置縮放值（預設值：1.0） | FLOAT | 否 | 0.0 至 1.0 |
-| `aspect_ratio` | 影片畫面比例設定（預設值："16:9"） | COMBO | 否 | 選項來自 KlingVideoGenAspectRatio |
-| `mode` | 用於影片生成的配置，格式為：模式 / 時長 / 模型名稱。（預設值：modes[8]） | COMBO | 否 | 提供多個選項 |
+| 參數 | 說明 | 資料類型 | 必填 | 範圍 |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | 描述所需影片內容的正面文字提示。支援多行輸入。不可為空。 | STRING | 是 | Maximum 2500 characters |
+| `negative_prompt` | 描述影片中應避免內容的負面文字提示。支援多行輸入。可留空。 | STRING | 是 | Maximum 2500 characters |
+| `cfg_scale` | 控制影片遵循提示程度的設定比例值（預設值：1.0）。 | FLOAT | 否 | 0.0 to 1.0 |
+| `aspect_ratio` | 影片寬高比設定（預設值："16:9"）。 | COMBO | 否 | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `mode` | 依照以下格式用於影片生成的設定：mode / duration / model_name（預設值："pro mode / 5s duration / kling-v2-5-turbo"）。5 秒模式費用為 0.35 美元，10 秒模式費用為 0.70 美元。 | COMBO | 否 | `"pro mode / 5s duration / kling-v2-5-turbo"`<br>`"pro mode / 10s duration / kling-v2-5-turbo"` |
 
 ## 輸出
 
-| 輸出名稱 | 說明 | 資料類型 |
-| --- | --- | --- |
-| `video_id` | 生成的影片輸出 | VIDEO |
-| `video_id` | 生成影片的唯一識別碼 | STRING |
-| `時長` | 生成影片的時長資訊 | STRING |
+| 輸出名 | 說明 | 資料類型 |
+|-------------|-------------|-----------|
+| `output` | 生成的影片輸出。 | VIDEO |
+| `video_id` | 生成影片的唯一識別碼。 | STRING |
+| `duration` | 生成影片的持續時間資訊。 | STRING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingTextToVideoNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `467f89a47890bfbfe6cebac8897fef3bce37d888d3419b248d13be89bed442f3`
+**Source fingerprint (SHA-256):** `6a63b0b8bc45dc5a6300cdfe7a373399eeead36de6727f7aae2c026ba0deaea8`

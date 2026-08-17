@@ -9,6 +9,8 @@ The VAEDecodeAudio node converts latent representations back into audio waveform
 | `samples` | The encoded audio samples in latent space that will be decoded back to audio waveform | LATENT | Yes | - |
 | `vae` | The Variational Autoencoder model used to decode the latent samples into audio | VAE | Yes | - |
 
+Note: If `samples` contains nested latent data, only the last element is used for decoding.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -18,4 +20,4 @@ The VAEDecodeAudio node converts latent representations back into audio waveform
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecodeAudio/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `4736b987361bf16ad9c5db1a9f8593646fd7ffb37267aed4396285a2a0e6c1cc`
+**Source fingerprint (SHA-256):** `2a3f5c912d1d84eea7768979f6b8f0eaa9fe89041f3a3352434f38abd3c09fea`

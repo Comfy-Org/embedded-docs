@@ -20,4 +20,4 @@ This node converts a compressed audio representation (latent samples) back into 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecodeAudioTiled/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `d846ec48856b8a1415101b8db06b5dd38b5d1222c117ea4f170daf3347ed1685`
+**Source fingerprint (SHA-256):** `5ddedf218ba27ab9f463646c1e5288091172f2d7fae8f2980bb2b5e4d3dca89c`

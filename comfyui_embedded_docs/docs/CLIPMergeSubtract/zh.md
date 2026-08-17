@@ -1,6 +1,6 @@
 # CLIP相减
 
-CLIPMergeSubtract 节点通过从一个 CLIP 模型中减去另一个模型的权重来执行模型合并。它通过克隆第一个模型，然后减去第二个模型的关键补丁来创建一个新的 CLIP 模型，并使用可调整的乘数来控制减法强度。这使得可以通过从基础模型中移除特定特征来实现精细调整的模型混合。
+CLIPMergeSubtract 节点通过将一个 CLIP 模型的权重从另一个模型中减去来合并两个 CLIP 模型。它通过克隆第一个模型，然后从第二个模型中减去关键补丁（key patches），并使用可调乘数来控制减法强度，从而创建一个新的 CLIP 模型。这可以通过从基础模型中移除特定特征来实现精细的模型混合。
 
 ## 输入
 
@@ -8,17 +8,17 @@ CLIPMergeSubtract 节点通过从一个 CLIP 模型中减去另一个模型的�
 | --- | --- | --- | --- | --- |
 | `clip1` | 将被克隆并修改的基础 CLIP 模型 | CLIP | 是 | - |
 | `clip2` | 其关键补丁将从基础模型中减去的 CLIP 模型 | CLIP | 是 | - |
-| `乘数` | 控制减法操作的强度（默认值：1.0） | FLOAT | 是 | -10.0 到 10.0 |
+| `multiplier` | 控制减法操作的强度（默认值：1.0） | FLOAT | 是 | -10.0 到 10.0（步长：0.01） |
 
-**注意：** 无论乘数值如何，该节点都会从减法操作中排除 `.position_ids` 和 `.logit_scale` 参数。
+**注意：** 无论乘数值如何，该节点都会将 `.position_ids` 和 `.logit_scale` 参数排除在减法操作之外。
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `clip` | 从第一个模型中减去第二个模型权重后得到的 CLIP 模型 | CLIP |
+| `clip` | 从第一个模型中减去第二个模型的权重后得到的 CLIP 模型 | CLIP |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPMergeSubtract/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `3136cf509fcbfa291af8f820928a6cc14de7a586f953af0ada9bea949b437d86`
+**Source fingerprint (SHA-256):** `62a8cf719c34d9e2b7321f6eeb03c881f0767fd36b80e25e74feff4c0a29045e`

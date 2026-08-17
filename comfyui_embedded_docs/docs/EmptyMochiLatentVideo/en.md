@@ -11,7 +11,7 @@ The EmptyMochiLatentVideo node creates an empty latent video tensor with specifi
 | `length` | The number of frames in the latent video (default: 25, must satisfy that `(length - 1)` is divisible by 6) | INT | Yes | 7 to MAX_RESOLUTION |
 | `batch_size` | The number of latent videos to generate in a batch (default: 1) | INT | No | 1 to 4096 |
 
-**Note:** The actual latent dimensions are calculated as width/8 and height/8, and the temporal dimension is calculated as `((length - 1) // 6) + 1`. The `length` parameter must satisfy that `(length - 1)` is divisible by 6, meaning valid values are 7, 13, 19, 25, etc.
+**Note:** The node compresses the spatial and temporal dimensions of the input. The latent width and height are calculated as `width / 8` and `height / 8`, and the temporal dimension is calculated as `((length - 1) // 6) + 1`. The `length` parameter must satisfy that `(length - 1)` is divisible by 6, meaning valid values are 7, 13, 19, 25, etc. The resulting latent tensor has 12 channels and a final shape of `(batch_size, 12, ((length - 1) // 6) + 1, height // 8, width // 8)`.
 
 ## Outputs
 
@@ -22,4 +22,4 @@ The EmptyMochiLatentVideo node creates an empty latent video tensor with specifi
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyMochiLatentVideo/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `1e5f70821965a9c8607920554f50ae3b6a0b38643074f669e5b81d81c3e26302`
+**Source fingerprint (SHA-256):** `1774e1b54b429a946172ba9f609b433d99c0ca2ced2d9e0e3b0b85c82e5141b2`

@@ -1,27 +1,45 @@
 # Reve Görsel Remix
 
-Reve Image Remix düğümü, Reve API'sini kullanarak yeni bir görüntü oluşturur. Bir veya daha fazla referans görüntüyü bir metin istemiyle birleştirerek, sağlanan açıklamaya dayalı yeni, yeniden karıştırılmış bir görüntü oluşturur.
+Reve Image Remix düğümü, yeni bir görüntü oluşturmak için Reve API'sini kullanır. Bir veya daha fazla referans görüntüsünü bir metin istemiyle birleştirerek sağlanan açıklamaya dayalı yeni, remikslenmiş bir görüntü oluşturur. İki model sürümü mevcuttur ve yükseltme veya arka plan kaldırma gibi isteğe bağlı son işlemler uygulanabilir.
 
-## Girişler
+## Girdiler
+
+### Ortak Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-| --- | --- | --- | --- | --- |
-| `referans_görseller` | Remix için temel olarak kullanılacak bir veya daha fazla referans görüntü. 1 ile 6 arasında görüntü ekleyebilirsiniz. | IMAGE | Evet | 1 ila 6 görüntü |
-| `prompt` | İstenen görüntünün metin açıklaması. Belirli görüntülere indeksleriyle başvurmak için XML `<img>` etiketleri ekleyebilirsiniz (örneğin, `<img>0</img>`, `<img>1</img>`). (varsayılan: boş) | STRING | Evet | 1 ila 2560 karakter |
-| `model` | Remix için kullanılacak model sürümü. Her model seçeneği, yapılandırılabilir en boy oranları ve test zamanı ölçeklendirme içerir. | COMBO | Evet | `reve-remix@20250915`<br>`reve-remix-fast@20251030` |
-| `upscale` | Oluşturulan görüntünün yükseltilip yükseltilmeyeceğini kontrol eder. Etkinleştirildiğinde, bir yükseltme faktörü seçebilirsiniz. | COMBO | Hayır | `"disabled"`<br>`"enabled"` |
-| `remove_background` | Etkinleştirildiğinde, oluşturulan görüntüden arka planı kaldırmaya çalışır. | BOOLEAN | Hayır | `true`<br>`false` |
-| `seed` | Bir tohum değeri. Bu değeri değiştirmek düğümün yeniden çalışmasına neden olur, ancak tohumdan bağımsız olarak sonuçlar deterministik değildir. (varsayılan: 0) | INT | Hayır | 0 ila 2147483647 |
+|-----------|-------------|-----------|----------|-------|
+| `model` | Remiksleme için kullanılacak model sürümü. Bir model seçmek, en-boy oranı ve test zamanı ölçekleme ayarlarını gösterir. | DYNAMIC_COMBO | Evet | `reve-remix@20250915`<br>`reve-remix-fast@20251030` |
+| `prompt` | İstenen görüntünün metin açıklaması. Belirli görüntülere dizine göre başvurmak için XML img etiketleri içerebilir, örn. `<img>0</img>`, `<img>1</img>`, vb. (varsayılan: boş) | STRING | Evet | 1 ila 2560 karakter |
+| `upscale` | Oluşturulan görüntüyü yükseltir. Ek maliyet ekleyebilir. "enabled" olarak ayarlandığında, bir `upscale_factor` ayarı gösterilir. (varsayılan: "disabled") | DYNAMIC_COMBO | Hayır | `"disabled"`<br>`"enabled"` |
+| `remove_background` | Oluşturulan görüntüden arka planı kaldırır. Ek maliyet ekleyebilir. (varsayılan: false) | BOOLEAN | Hayır | `true`<br>`false` |
+| `seed` | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: 0) | INT | Hayır | 0 ila 2147483647 |
 
-**Not:** `model` parametresi, `aspect_ratio` (seçenekler: "auto", "16:9", "9:16", "3:2", "2:3", "4:3", "3:4", "1:1") ve `test_time_scaling` için iç içe ayarlar içeren dinamik bir kombinasyondur. `upscale` parametresi "enabled" olarak ayarlandığında, iç içe bir `upscale_factor` ayarını ortaya çıkarır.
+### Model Sürümü Girdileri (`reve-remix@20250915` ve `reve-remix-fast@20251030` tarafından paylaşılır)
+
+Her iki model sürümü de aynı ayarları sunar.
+
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `aspect_ratio` | Çıktı görüntüsünün en-boy oranı. "auto" olarak ayarlandığında, API en-boy oranına otomatik olarak karar verir. | COMBO | Hayır | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
+| `test_time_scaling` | Daha yüksek değerler daha iyi görüntüler üretir ancak daha fazla kredi harcar. (varsayılan: 1; yalnızca 1'den büyük değerler uygulanır) | INT | Hayır | 1 ila 5 (adım 1) |
+
+### Referans Girdileri
+
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `reference_images` | Genişletilebilir yuva: remiks için temel olarak kullanılacak 1 ila 6 referans görüntüsü bağlayın (yuvalar `image_1`, `image_2`, vb. olarak adlandırılır). En az bir referans görüntüsü gereklidir. | IMAGE | Evet | 1 ila 6 görüntü |
+
+**Not:** İstem 1 ila 2560 karakter arasında olmalıdır. `upscale` "enabled" olarak ayarlandığında, iç içe `upscale_factor` ayarı 2, 3 veya 4 değerini kabul eder (varsayılan: 2) ve ek maliyet ekleyebilir. Arka planı kaldırmak da ek maliyet ekleyebilir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-| --- | --- | --- |
-| `image` | Reve remix işlemi tarafından oluşturulan yeni görüntü. | IMAGE |
+|-------------|-------------|-----------|
+| `image` | Reve remiks süreci tarafından oluşturulan yeni görüntü. | IMAGE |
+
+Not: Bu düğüm kullanımdan kaldırılmış olarak işaretlenmiştir.
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReveImageRemixNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `e64dccddfd55ebaa7e28bf17c2a5ff1a0c130db1475e307940b75106c788f687`
+**Source fingerprint (SHA-256):** `9cf0c6653aa620179ed5d888a455fe248a240b0db04687eade6652730eb5f003`

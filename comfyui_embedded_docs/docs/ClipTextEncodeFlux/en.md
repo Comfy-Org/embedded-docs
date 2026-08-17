@@ -1,6 +1,6 @@
 # CLIPTextEncodeFlux
 
-`CLIPTextEncodeFlux` is an advanced text encoding node designed for the Flux architecture. It processes two separate text inputs through different encoders—CLIP-L and T5XXL—and combines them with a guidance scale to produce a unified conditioning output for image generation.
+`CLIPTextEncodeFlux` is a text encoding node designed for the Flux architecture. It processes two separate text inputs through different encoders—CLIP-L and T5XXL—and combines them with a guidance scale to produce a unified conditioning output for image generation.
 
 ## Inputs
 
@@ -15,9 +15,9 @@
 
 | Output Name | Description | Data Type |
 | --- | --- | --- |
-| `CONDITIONING` | Contains the fused embeddings from both encoders and the guidance parameter, used for conditional image generation. | CONDITIONING |
+| `CONDITIONING` | Contains the combined embeddings from both encoders and the guidance value, used for conditional image generation. | CONDITIONING |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeFlux/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `63027b4a7c1868da27fb2644b0d6599d241fa0206a78d169110ce57f0cebf148`
+**Source fingerprint (SHA-256):** `022928fa6917102f5dc599364df9541b2451b42eb36a11813931b5fd71990b74`

@@ -7,15 +7,17 @@ This node implements the Epsilon Scaling method from the research paper "Elucida
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `model` | The model to which the epsilon scaling patch will be applied. | MODEL | Yes | - |
-| `scaling_factor` | The factor by which the predicted noise is scaled. A value greater than 1.0 reduces the noise, while a value less than 1.0 increases it (default: 1.005). | FLOAT | No | 0.5 - 1.5 |
+| `scaling_factor` | The factor by which the predicted noise is scaled. A value greater than 1.0 reduces the predicted noise, while a value less than 1.0 increases it (default: 1.005). | FLOAT | Yes | 0.5 - 1.5 (step: 0.001) |
+
+Note: The `scaling_factor` is guarded against a value of zero to prevent division by zero. The UI enforces a minimum of 0.5, so this cannot occur through normal use.
 
 ## Outputs
 
 | Output Name | Description | Data Type |
 | --- | --- | --- |
-| `model` | A patched version of the input model with the epsilon scaling function applied to its sampling process. | MODEL |
+| `model` | A patched copy of the input model with the epsilon scaling function applied to its sampling process. The original model is left unmodified. | MODEL |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Epsilon Scaling/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `245d230ec2db7298493d4fbe58c3d96c15821985da3dc12aaccf64e2bf7922a1`
+**Source fingerprint (SHA-256):** `8d258c7bb853940922402f1009d777bfc71e88704fd2f615f569c214ddbeac64`

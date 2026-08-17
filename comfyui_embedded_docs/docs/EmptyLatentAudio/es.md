@@ -1,21 +1,21 @@
 # EmptyLatentAudio
 
-El nodo `EmptyLatentAudio` crea un tensor latente vacío para procesamiento de audio. Genera una representación latente de audio en blanco con una duración y tamaño de lote especificados, que puede utilizarse como punto de partida para flujos de trabajo de generación o procesamiento de audio. El nodo calcula automáticamente las dimensiones latentes apropiadas según la duración del audio y la frecuencia de muestreo.
+El nodo EmptyLatentAudio crea un tensor latente vacío para el procesamiento de audio. Genera una representación latente de audio en blanco con una duración y un tamaño de lote especificados, que puede utilizarse como punto de partida para flujos de trabajo de generación o procesamiento de audio. El nodo calcula automáticamente las dimensiones latentes apropiadas según la duración del audio y la frecuencia de muestreo.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `segundos` | La duración del audio en segundos (predeterminado: 47.6) | FLOAT | Sí | 1.0 - 1000.0 |
-| `tamaño_del_lote` | El número de imágenes latentes en el lote (predeterminado: 1) | INT | Sí | 1 - 4096 |
+| `seconds` | La duración del audio en segundos (predeterminado: 47.6) | FLOAT | Sí | 1.0 - 1000.0 (paso 0.1) |
+| `batch_size` | El número de imágenes latentes en el lote (predeterminado: 1) | INT | Sí | 1 - 4096 |
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `LATENT` | Devuelve un tensor latente vacío para procesamiento de audio con la duración y el tamaño de lote especificados. El tensor tiene una forma de [batch_size, 64, length], donde length se calcula a partir de la duración del audio y la frecuencia de muestreo. | LATENT |
+| `LATENT` | Devuelve un tensor latente vacío para el procesamiento de audio con la duración y el tamaño de lote especificados. El tensor tiene una forma de [batch_size, 64, length], donde length se calcula a partir de la duración del audio y la frecuencia de muestreo. La salida también incluye metadatos que indican que el tipo es "audio" y una relación de reducción temporal de 2048. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyLatentAudio/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `004f730131b179fe5ac072afe81b2e01a3937fceca5a260b4ae66f92774e96d9`
+**Source fingerprint (SHA-256):** `6ca63d26febe2d87ff751a57044eb81b553b19756f4b3f9478ecb5a733ec0041`

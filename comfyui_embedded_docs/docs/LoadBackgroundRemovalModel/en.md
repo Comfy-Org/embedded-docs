@@ -1,14 +1,14 @@
 # Load Background Removal Model
 
-## Overview
-
-Loads a background removal model from a file. This node prepares the model for use in removing backgrounds from images.
+Loads a background removal model from a file and makes it ready for other nodes to use when removing backgrounds from images. The model file is selected from the available files in the background removal folder.
 
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `bg_removal_name` | The model used to remove backgrounds from images. Select from the list of available background removal model files. | STRING | Yes | List of available model files |
+| `bg_removal_name` | The model used to remove backgrounds from images. | COMBO | Yes | List of available model files (sorted list of files in the background_removal folder) |
+
+**Note:** The node raises an error if the selected file does not contain a valid background removal model.
 
 ## Outputs
 
@@ -19,4 +19,4 @@ Loads a background removal model from a file. This node prepares the model for u
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadBackgroundRemovalModel/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `3f2da4d2fcafb7d65f4e5099102011c3be9500f3eec6c59c6897aa9640ae8f04`
+**Source fingerprint (SHA-256):** `76f6536eae849a8b63f46f11c6afcf8c89774e4e89a5976e051253acc6108bcc`

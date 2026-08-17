@@ -1,30 +1,32 @@
 # VAE ile Controlnet Uygula
 
-Bu düğüm, Stable Diffusion 3 koşullandırmasına ControlNet yönlendirmesi uygular. Pozitif ve negatif koşullandırma girdilerini bir ControlNet modeli ve görüntü ile birlikte alır, ardından üretim sürecini etkilemek için ayarlanabilir güç ve zamanlama parametreleriyle kontrol yönlendirmesini uygular.
+Bu düğüm, Stable Diffusion 3 koşullandırmasına ControlNet rehberliği uygular. Pozitif ve negatif koşullandırma girdilerini bir ControlNet modeli ve görüntüsüyle birlikte alır, ardından ayarlanabilir güç ve zamanlama parametreleriyle kontrol rehberliğini uygulayarak üretim sürecini etkiler.
 
-**Not:** Bu düğüm kullanımdan kaldırılmış olarak işaretlenmiştir ve gelecekteki sürümlerde kaldırılabilir.
+**Not:** Bu düğüm kullanımdan kaldırılmış olarak işaretlenmiştir ve gelecek sürümlerde kaldırılabilir.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `pozitif` | ControlNet yönlendirmesinin uygulanacağı pozitif koşullandırma | CONDITIONING | Evet | - |
-| `negatif` | ControlNet yönlendirmesinin uygulanacağı negatif koşullandırma | CONDITIONING | Evet | - |
-| `kontrol_ağı` | Yönlendirme için kullanılacak ControlNet modeli | CONTROL_NET | Evet | - |
-| `vae` | Süreçte kullanılan VAE modeli | VAE | Evet | - |
-| `görüntü` | ControlNet'in yönlendirme olarak kullanacağı girdi görüntüsü | IMAGE | Evet | - |
-| `güç` | ControlNet etkisinin gücü (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 10.0 |
-| `başlangıç_yüzdesi` | ControlNet'in uygulanmaya başladığı üretim sürecindeki başlangıç noktası (varsayılan: 0.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `bitiş_yüzdesi` | ControlNet'in uygulanmasının durduğu üretim sürecindeki bitiş noktası (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `positive` | ControlNet rehberliğinin uygulanacağı pozitif koşullandırma | CONDITIONING | Yes | - |
+| `negative` | ControlNet rehberliğinin uygulanacağı negatif koşullandırma | CONDITIONING | Yes | - |
+| `control_net` | Rehberlik için kullanılacak ControlNet modeli | CONTROL_NET | Yes | - |
+| `vae` | İşlemde kullanılan VAE modeli | VAE | Yes | - |
+| `image` | ControlNet'in rehberlik olarak kullanacağı girdi görüntüsü | IMAGE | Yes | - |
+| `strength` | ControlNet efektinin gücü (varsayılan: 1.0) | FLOAT | Yes | 0.0 - 10.0 |
+| `start_percent` | ControlNet'in uygulanmaya başladığı üretim sürecindeki başlangıç noktası (varsayılan: 0.0) | FLOAT | Yes | 0.0 - 1.0 |
+| `end_percent` | ControlNet'in uygulanmasının sona erdiği üretim sürecindeki bitiş noktası (varsayılan: 1.0) | FLOAT | Yes | 0.0 - 1.0 |
+
+**Not:** `strength` 0 olarak ayarlandığında, düğüm ControlNet'i uygulamadan pozitif ve negatif koşullandırmayı değiştirmeden döndürür.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `pozitif` | ControlNet yönlendirmesi uygulanmış değiştirilmiş pozitif koşullandırma | CONDITIONING |
-| `negatif` | ControlNet yönlendirmesi uygulanmış değiştirilmiş negatif koşullandırma | CONDITIONING |
+| `positive` | ControlNet rehberliği uygulanmış değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `negative` | ControlNet rehberliği uygulanmış değiştirilmiş negatif koşullandırma | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplySD3/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `7bd24b19c159374bc86a773be9b563760bfae7e10d3333596788dbc52ef2f294`
+**Source fingerprint (SHA-256):** `b76b0683c05e38102280ca8b0bd23f39a9b9b1b4f52125c77c95686c0a06f398`

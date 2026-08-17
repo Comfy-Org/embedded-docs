@@ -1,20 +1,22 @@
-# SeedVR2Preprocess
+# SeedVR2 Girdisini Ön İşle
 
-Bu düğüm, yeniden boyutlandırılmış bir görüntüyü SeedVR2 modeli için hazırlamak amacıyla kenar boşluğu (padding) ekler. İşlem sırasında alfa kanalını kaldırır; bu kanal daha sonra, orijinal yeniden boyutlandırılmış görüntü kullanılarak eşlik eden SeedVR2 Çıkış Son İşleme düğümü tarafından geri yüklenir.
+Bu düğüm, yeniden boyutlandırılmış bir görüntüyü SeedVR2 modeli için hazırlamak üzere dolgular. İşlem sırasında alfa kanalını kaldırır; alfa kanalı daha sonra eşlik eden Post-Process SeedVR2 Output düğümü tarafından orijinal yeniden boyutlandırılmış görüntü kullanılarak geri yüklenir.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-|-----------|----------|-----------|---------|--------|
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
 | `resized_images` | İşlenecek yeniden boyutlandırılmış görüntü. | IMAGE | Evet | - |
 
-## Çıkışlar
+Not: Girdi, tek bir görüntü veya bir kare dizisi olabilir (örneğin, bir videodan kareler). Kısa kenarı en az 2 piksel olmalıdır. İşlem sırasında alfa kanalı (varsa) kaldırılır, piksel değerleri [0, 1] aralığına sıkıştırılır ve genişlik ile yükseklik 16'nın katlarına dolgulanır. Kare dizileri, uzunlukları 1, 5, 9, 13, ... kare desenini izleyecek şekilde dolgulanır.
 
-| Çıkış Adı | Açıklama | Veri Türü |
-|-----------|----------|-----------|
-| `images` | SeedVR2 işlemi için hazır, kenar boşluğu eklenmiş görüntü. | IMAGE |
+## Çıktılar
+
+| Çıktı Adı | Açıklama | Veri Türü |
+|-------------|-------------|-----------|
+| `images` | VAE kodlaması için dolgulanmış görüntü. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SeedVR2Preprocess/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `b8135d0e27f75a673f52d080c6704de8cc86d15b5d16eca055d55e2d20837dc7`
+**Source fingerprint (SHA-256):** `f4fa433d299feba40696f27ff365c59988e5102112f09536724b5db5b09416bb`

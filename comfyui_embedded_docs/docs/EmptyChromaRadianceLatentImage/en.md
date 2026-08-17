@@ -1,6 +1,6 @@
 # EmptyChromaRadianceLatentImage
 
-The EmptyChromaRadianceLatentImage node creates a blank latent image with specified dimensions for use in chroma radiance workflows. It generates a tensor filled with zeros that serves as a starting point for latent space operations. The node allows you to define the width, height, and batch size of the empty latent image.
+The EmptyChromaRadianceLatentImage node creates a blank latent image with specified dimensions for use in chroma radiance workflows. It generates a tensor filled with zeros (containing 3 color channels) that serves as a starting point for latent space operations. The node allows you to define the width, height, and batch size of the empty latent image.
 
 ## Inputs
 
@@ -14,9 +14,9 @@ The EmptyChromaRadianceLatentImage node creates a blank latent image with specif
 
 | Output Name | Description | Data Type |
 | --- | --- | --- |
-| `samples` | The generated empty latent image tensor with specified dimensions | LATENT |
+| `samples` | The generated empty latent image tensor with the specified dimensions, filled with zeros | LATENT |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyChromaRadianceLatentImage/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `15f4d3f9803aa3242b07ff4f49946e1f1f409512af07cffe5495e9ce09c587dd`
+**Source fingerprint (SHA-256):** `870cc89fb021c258c214db153cda0a32a63da1b6bf92f09cbd3b8498c363096b`

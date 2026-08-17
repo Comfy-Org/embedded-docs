@@ -1,25 +1,26 @@
 # 潜在を保存
 
-このドキュメントはAI生成です。誤りや改善のご提案がございましたら、ぜひご協力ください！[GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLatent/en.md)
-
-SaveLatentノードは、潜在テンソルを後で使用したり共有したりするために、ファイルとしてディスクに保存します。このノードは潜在サンプルを受け取り、プロンプト情報を含むオプションのメタデータとともに出力ディレクトリに保存します。ノードはファイルの命名と整理を自動的に処理し、潜在データ構造を保持します。
+SaveLatent ノードは、潜在サンプルを後での使用や共有のために .latent ファイルとしてディスクに保存します。指定されたファイル名プレフィックスを使用して出力フォルダーに潜在テンソルデータを書き込み、プロンプト情報などのオプションのメタデータを埋め込みます。また、このノードは元の潜在サンプルを変更せずに返すため、ワークフローはそれらを引き続き使用できます。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `サンプル` | ディスクに保存する潜在サンプル | LATENT | はい | - |
-| `ファイル名_プレフィックス` | 出力ファイル名のプレフィックス（デフォルト："latents/ComfyUI"） | STRING | いいえ | - |
-| `prompt` | メタデータに含めるプロンプト情報（非表示パラメータ） | PROMPT | いいえ | - |
-| `extra_pnginfo` | メタデータに含める追加のPNG情報（非表示パラメータ） | EXTRA_PNGINFO | いいえ | - |
+| `samples` | ディスクに保存する潜在サンプル | LATENT | はい | - |
+| `filename_prefix` | 出力ファイル名とサブフォルダーパスの生成に使用するプレフィックス（デフォルト："latents/ComfyUI"） | STRING | はい | - |
+| `prompt` | ワークフローのプロンプトデータ。保存されたファイルにJSONメタデータとして格納されます（非表示入力、自動的に供給されます） | PROMPT | いいえ | - |
+| `extra_pnginfo` | 追加のワークフローメタデータ。保存されたファイルにJSONとして格納されます（非表示入力、自動的に供給されます） | EXTRA_PNGINFO | いいえ | - |
+
+注：メタデータは、ComfyUI が `--disable-metadata` 引数で起動されない限り、保存された .latent ファイルに書き込まれます。保存されるファイル名は `{filename}_{5-digit counter}_.latent` というパターンで命名され、例えば `ComfyUI_00001_.latent` のようになります。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `samples` | ComfyUIインターフェースで保存された潜在データのファイル位置情報を提供します | UI |
+| `samples` | 変更されずに返される元の潜在サンプル | LATENT |
+| `ui` | 保存された潜在ファイルのファイル位置の詳細（ファイル名、サブフォルダー、出力タイプ） | UI |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLatent/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `dc7fd101c8dd93e2bcc39de64e0c39abe8e056c9e5932587fc6ce80e2fd143e8`
+**Source fingerprint (SHA-256):** `137d52d589d93d8229940a8572621ab6eeb25a4e13ac05172e9f8609f1af038a`

@@ -1,16 +1,16 @@
 # 모델 병합 (LTXV)
 
-ModelMergeLTXV 노드는 LTXV 모델 아키텍처를 위해 특별히 설계된 고급 모델 병합 작업을 수행합니다. 트랜스포머 블록, 프로젝션 레이어 및 기타 특수 모듈을 포함한 다양한 모델 구성 요소에 대한 보간 가중치를 조정하여 두 개의 서로 다른 모델을 혼합할 수 있습니다.
+ModelMergeLTXV는 내부 구성 요소를 혼합하여 두 개의 LTXV 모델을 하나로 병합합니다. 각 가중치 매개변수는 `model2`의 특정 부분이 `model1`에 혼합되는 강도를 제어하며, 값이 낮을수록 `model1`이 우세하고 값이 높을수록 `model2`가 우세합니다.
 
 ## 입력
 
-| 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
+| 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `모델1` | 병합할 첫 번째 모델 | MODEL | 예 | - |
-| `모델2` | 병합할 두 번째 모델 | MODEL | 예 | - |
-| `patchify_proj.` | 패치화 프로젝션 레이어의 보간 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
+| `model1` | 병합할 첫 번째 모델 | MODEL | 예 | - |
+| `model2` | 병합할 두 번째 모델 | MODEL | 예 | - |
+| `patchify_proj.` | 패치화 투영 레이어의 보간 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 | `adaln_single.` | 적응형 레이어 정규화 단일 레이어의 보간 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
-| `caption_projection.` | 캡션 프로젝션 레이어의 보간 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
+| `caption_projection.` | 캡션 투영 레이어의 보간 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 | `transformer_blocks.0.` | 트랜스포머 블록 0의 보간 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 | `transformer_blocks.1.` | 트랜스포머 블록 1의 보간 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 | `transformer_blocks.2.` | 트랜스포머 블록 2의 보간 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
@@ -40,15 +40,15 @@ ModelMergeLTXV 노드는 LTXV 모델 아키텍처를 위해 특별히 설계된 
 | `transformer_blocks.26.` | 트랜스포머 블록 26의 보간 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 | `transformer_blocks.27.` | 트랜스포머 블록 27의 보간 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 | `scale_shift_table` | 스케일 시프트 테이블의 보간 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
-| `proj_out.` | 프로젝션 출력 레이어의 보간 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
+| `proj_out.` | 투영 출력 레이어의 보간 가중치 (기본값: 1.0) | FLOAT | 예 | 0.0 - 1.0 |
 
 ## 출력
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `model` | 지정된 보간 가중치에 따라 두 입력 모델의 특징을 결합한 병합된 모델 | MODEL |
+| `model` | 지정된 보간 가중치에 따라 두 입력 모델의 특징을 결합한 병합 모델 | MODEL |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeLTXV/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `29ef8750b6e88f71abca10c8aaad5d75c9c32afec057af78842ca82441438922`
+**Source fingerprint (SHA-256):** `0ff5f93aee831259066679a27fff8f7cbd4a9686242091f1bc7dd3805725566e`

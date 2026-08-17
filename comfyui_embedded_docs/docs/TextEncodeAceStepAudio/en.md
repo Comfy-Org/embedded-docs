@@ -20,4 +20,4 @@ The TextEncodeAceStepAudio node processes text inputs for audio conditioning by 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeAceStepAudio/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `79cdc3b7d0728a7fdb771243bc1b30f252cc322892df634584698a8f2c4d1633`
+**Source fingerprint (SHA-256):** `2226c9f25dd26bf454bcce2e298d6d261dace5a9bbed164a2fcf0e1204d7c3f4`

@@ -16,6 +16,8 @@ The WanCameraEmbedding node generates camera trajectory embeddings using Plücke
 | `cx` | The principal point x coordinate (default: 0.5, step: 0.01) | FLOAT | No | 0.0 to 1.0 |
 | `cy` | The principal point y coordinate (default: 0.5, step: 0.01) | FLOAT | No | 0.0 to 1.0 |
 
+Note: `fx`, `fy`, `cx`, and `cy` are advanced parameters. The `length` parameter uses a step of 4 because the first camera frame is repeated internally, so the effective processed sequence length becomes `length + 3`.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -28,4 +30,4 @@ The WanCameraEmbedding node generates camera trajectory embeddings using Plücke
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraEmbedding/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `9c13c4504ca58b7623f106eaf07ceb2aef7739a9b9ce24e321445078b1f953c9`
+**Source fingerprint (SHA-256):** `1a2f98d83d18033581823dee61b5a3686d560c749c55223f81febca89654a29f`

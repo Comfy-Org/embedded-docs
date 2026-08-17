@@ -1,6 +1,6 @@
 # CLIPMergeSubtract
 
-The CLIPMergeSubtract node performs model merging by subtracting the weights of one CLIP model from another. It creates a new CLIP model by cloning the first model and then subtracting the key patches from the second model, with an adjustable multiplier to control the subtraction strength. This allows for fine-tuned model blending by removing specific characteristics from the base model.
+The CLIPMergeSubtract node merges two CLIP models by subtracting the weights of one model from the other. It creates a new CLIP model by cloning the first model and then subtracting key patches from the second model, with an adjustable multiplier to control the subtraction strength. This allows for fine-tuned model blending by removing specific characteristics from the base model.
 
 ## Inputs
 
@@ -8,7 +8,7 @@ The CLIPMergeSubtract node performs model merging by subtracting the weights of 
 | --- | --- | --- | --- | --- |
 | `clip1` | The base CLIP model that will be cloned and modified | CLIP | Yes | - |
 | `clip2` | The CLIP model whose key patches will be subtracted from the base model | CLIP | Yes | - |
-| `multiplier` | Controls the strength of the subtraction operation (default: 1.0) | FLOAT | Yes | -10.0 to 10.0 |
+| `multiplier` | Controls the strength of the subtraction operation (default: 1.0) | FLOAT | Yes | -10.0 to 10.0 (step: 0.01) |
 
 **Note:** The node excludes `.position_ids` and `.logit_scale` parameters from the subtraction operation, regardless of the multiplier value.
 
@@ -21,4 +21,4 @@ The CLIPMergeSubtract node performs model merging by subtracting the weights of 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPMergeSubtract/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `3136cf509fcbfa291af8f820928a6cc14de7a586f953af0ada9bea949b437d86`
+**Source fingerprint (SHA-256):** `62a8cf719c34d9e2b7321f6eeb03c881f0767fd36b80e25e74feff4c0a29045e`

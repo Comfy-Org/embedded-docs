@@ -1,11 +1,11 @@
 # CLIP Text Encode (SD3)
 
-The CLIPTextEncodeSD3 node processes text inputs for Stable Diffusion 3 models by encoding multiple text prompts using different CLIP models. It handles three separate text inputs (clip_g, clip_l, and t5xxl) and provides options for managing empty text padding. The node ensures proper token alignment between different text inputs and returns conditioning data suitable for SD3 generation pipelines.
+The CLIPTextEncodeSD3 node processes text inputs for Stable Diffusion 3 models by encoding multiple text prompts using different CLIP models. It handles three separate text inputs (`clip_g`, `clip_l`, and `t5xxl`) and provides options for managing empty text padding. The node ensures proper token alignment between different text inputs and returns conditioning data suitable for SD3 generation pipelines.
 
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-| --- | --- | --- | --- | --- |
+|-----------|-------------|-----------|----------|-------|
 | `clip` | The CLIP model used for text encoding | CLIP | Yes | - |
 | `clip_l` | Text input for the local CLIP model. Supports multiline text and dynamic prompts. | STRING | Yes | - |
 | `clip_g` | Text input for the global CLIP model. Supports multiline text and dynamic prompts. | STRING | Yes | - |
@@ -14,17 +14,17 @@ The CLIPTextEncodeSD3 node processes text inputs for Stable Diffusion 3 models b
 
 **Parameter Constraints:**
 
-- When `empty_padding` is set to "none", empty text inputs for `clip_g`, `clip_l`, or `t5xxl` will result in empty token lists instead of padding
-- The node automatically balances token lengths between `clip_l` and `clip_g` inputs by padding the shorter one with empty tokens when lengths differ
-- All text inputs support dynamic prompts and multiline text entry
+- When `empty_padding` is set to "none", empty text inputs for `clip_g`, `clip_l`, or `t5xxl` will result in empty token lists instead of padding.
+- The node automatically balances token lengths between `clip_l` and `clip_g` inputs by padding the shorter one with empty tokens when lengths differ.
+- All text inputs support dynamic prompts and multiline text entry.
 
 ## Outputs
 
 | Output Name | Description | Data Type |
-| --- | --- | --- |
+|-------------|-------------|-----------|
 | `CONDITIONING` | The encoded text conditioning data ready for use in SD3 generation pipelines | CONDITIONING |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSD3/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `2086e7c0fe910a94c04173ecfe35a2e04ecb306526b9089c527bb874e97b20c4`
+**Source fingerprint (SHA-256):** `874869bac024e6b5ac6b4bf4f79c31bb750e54f7096f6638647aac6b95bb202f`

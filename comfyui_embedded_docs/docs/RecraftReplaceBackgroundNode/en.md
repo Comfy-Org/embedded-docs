@@ -15,6 +15,8 @@ Replace background on image, based on provided prompt. This node uses the Recraf
 
 **Note:** The `seed` parameter controls when the node re-executes but does not guarantee deterministic results due to the nature of the external API.
 
+**Note:** Each image in the input batch is processed individually; the node returns `n` background-replaced images for every input image.
+
 ## Outputs
 
 | Output Name | Description | Data Type |
@@ -24,4 +26,4 @@ Replace background on image, based on provided prompt. This node uses the Recraf
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftReplaceBackgroundNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `3b97298469f0b116da260f444df4d1c174e04720938e3701f964a4aefda2213b`
+**Source fingerprint (SHA-256):** `45a2607ae73cc67caa98d33bf536feda83a2021d960dec7cca76cbe0b9fc47ef`

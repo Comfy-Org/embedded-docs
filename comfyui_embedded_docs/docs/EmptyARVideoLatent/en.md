@@ -1,7 +1,5 @@
 # EmptyARVideoLatent
 
-## Overview
-
 The EmptyARVideoLatent node creates a blank, empty latent representation for video generation. It is used to initialize a video generation process by providing a tensor of zeros with the specified dimensions, aspect ratio, and length.
 
 ## Inputs
@@ -22,4 +20,4 @@ The EmptyARVideoLatent node creates a blank, empty latent representation for vid
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyARVideoLatent/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `b36c40d768e846bc67ed6a7bfb4145c6e2a4ca55824296250a88f52d5ae305cf`
+**Source fingerprint (SHA-256):** `02ed3c96d94f2a3df9fb5315a5312e5280b9bee280369eb1218ba10bc122e609`

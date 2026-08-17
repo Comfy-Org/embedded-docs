@@ -1,6 +1,6 @@
-# Switch
+# If/Else Switch
 
-The Switch node selects between two possible inputs based on a boolean condition. It outputs the `on_true` input when the `switch` is enabled, and the `on_false` input when the `switch` is disabled. This allows you to create conditional logic and choose different data paths in your workflow.
+The Switch node selects between two possible inputs based on a boolean condition. It outputs the `on_true` input when the `switch` is enabled, and the `on_false` input when the `switch` is disabled, allowing you to create conditional logic and choose different data paths in your workflow. This node is currently marked as experimental.
 
 ## Inputs
 
@@ -21,4 +21,4 @@ The Switch node selects between two possible inputs based on a boolean condition
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfySwitchNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `6709dc66cf1c52bb31bde2cccd70324691261a03dfbab813b7196e20c0a4cb63`
+**Source fingerprint (SHA-256):** `d0adda02e7f997f27182cb26e11e934660ae5bd80f3091bed2fed7c981632ce5`

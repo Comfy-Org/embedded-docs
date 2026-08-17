@@ -18,4 +18,4 @@ The Curve Editor node provides a visual interface for adjusting and fine-tuning 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CurveEditor/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `7cd265b724f4b80bd6838b665254b54f1ca16f32ed0b4e072fabf856d769e11c`
+**Source fingerprint (SHA-256):** `6c4459998b1a3dd3a53f84cb1c231c448c64aa55b96444bc4ac7470556a3b915`

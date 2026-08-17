@@ -1,27 +1,29 @@
 # Google Gemini
 
-此节点允许用户与 Google 的 Gemini AI 模型交互，以生成文本回复。您可以提供多种类型的输入，包括文本、图像、音频、视频和文件，作为模型的上下文，从而生成更相关、更有意义的回复。该节点会自动处理所有 API 通信和响应解析。
+此节点允许用户与 Google 的 Gemini AI 模型交互，以生成文本响应。您可以提供多种类型的输入，包括文本、图像、音频、视频和文件，作为模型的上下文，以生成更相关、更有意义的响应。该节点会自动处理所有 API 通信和响应解析。
 
 ## 输入
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
-| --- | --- | --- | --- | --- |
-| `提示` | 输入给模型的文本，用于生成回复。您可以包含详细的指令、问题或上下文信息。默认值：空字符串。 | STRING | 是 | - |
-| `模型` | 用于生成回复的 Gemini 模型。默认值：gemini-3-1-pro。 | COMBO | 是 | `gemini-2.5-pro-preview-05-06`<br>`gemini-2.5-flash-preview-04-17`<br>`gemini-2.5-pro`<br>`gemini-2.5-flash`<br>`gemini-3-pro-preview`<br>`gemini-3-1-pro`<br>`gemini-3-1-flash-lite` |
-| `种子` | 当种子值固定为特定值时，模型会尽力为重复请求提供相同的回复。但不保证输出具有确定性。此外，即使使用相同的种子值，更改模型或参数设置（如温度）也可能导致回复发生变化。默认情况下，使用随机种子值。默认值：42。 | INT | 是 | 0 到 18446744073709551615 |
-| `图像` | 可选的图像，用作模型的上下文。如需包含多张图像，可使用批量图像节点。默认值：无。 | IMAGE | 否 | - |
-| `音频` | 可选的音频，用作模型的上下文。默认值：无。 | AUDIO | 否 | - |
-| `视频` | 可选的视频，用作模型的上下文。默认值：无。 | VIDEO | 否 | - |
-| `文件` | 可选的文件，用作模型的上下文。接受来自 Gemini 生成内容输入文件节点的输入。默认值：无。 | GEMINI_INPUT_FILES | 否 | - |
-| `系统提示词` | 用于规定 AI 行为的基础指令。默认值：空字符串。这是一个高级参数。 | STRING | 否 | - |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | 输入给模型的文本，用于生成响应。您可以包含详细的指令、问题或上下文。默认值：空字符串。 | STRING | 是 | - |
+| `model` | 用于生成响应的 Gemini 模型。默认值：gemini-3-1-pro。 | COMBO | 是 | "gemini-2.5-pro"<br>"gemini-2.5-flash"<br>"gemini-3-pro-preview"<br>"gemini-3-1-pro"<br>"gemini-3-1-flash-lite" |
+| `seed` | 当 `seed` 固定为特定值时，模型会尽力为重复请求提供相同的响应。但不保证确定性输出。此外，即使使用相同的 `seed` 值，更改模型或参数设置（例如 temperature）也可能导致响应发生变化。默认情况下，使用随机种子值。默认值：42。 | INT | 是 | 0 to 18446744073709551615 |
+| `images` | 可选。用作模型上下文的图像。要包含多张图像，可以使用 Batch Images 节点。默认值：无。 | IMAGE | 否 | - |
+| `audio` | 可选。用作模型上下文的音频。默认值：无。 | AUDIO | 否 | - |
+| `video` | 可选。用作模型上下文的视频。默认值：无。 | VIDEO | 否 | - |
+| `files` | 可选。用作模型上下文的文件。接受来自 Gemini Generate Content Input Files 节点的输入。默认值：无。 | GEMINI_INPUT_FILES | 否 | - |
+| `system_prompt` | 基础指令，用于规定 AI 的行为。默认值：空字符串。这是一个高级参数。 | STRING | 否 | - |
+
+注意：此节点已标记为弃用。
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
-| --- | --- | --- |
-| `STRING` | Gemini 模型生成的文本回复。 | STRING |
+|-------------|-------------|-----------|
+| `STRING` | Gemini 模型生成的文本响应。如果模型未返回文本，则节点输出 “Empty response from Gemini model...”。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `6addc7c0bc0c5889ddd6dbcb72b0b608ab738189990c591eb7160f849f6b5374`
+**Source fingerprint (SHA-256):** `d1c53a5d80182085a36302867c8875df696adec6aaea9a9519a21bd6b9543d8f`

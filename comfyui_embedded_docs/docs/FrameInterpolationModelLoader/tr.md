@@ -1,24 +1,24 @@
 # Kare Enterpolasyon Modeli Yükle
 
-Bu belge yapay zeka tarafından oluşturulmuştur. Hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FrameInterpolationModelLoader/en.md)
-
 ## Genel Bakış
 
-Bu düğüm, bir dosyadan kare enterpolasyon modeli yükler ve iş akışında kullanıma hazır hale getirir. Model türünü (FILM veya RIFE) otomatik olarak algılar ve donanımınızda optimum performans için modeli yapılandırır.
+Bu düğüm, bir dosyadan kare enterpolasyon modeli yükler ve onu iş akışında kullanıma hazırlar. Model türünü (FILM veya RIFE) otomatik olarak algılar ve modeli donanımınızda en iyi performans için yapılandırır.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model_adı` | Yüklenecek kare enterpolasyon modelini seçin. Modeller 'frame_interpolation' klasörüne yerleştirilmelidir. | STRING | Evet | `frame_interpolation` klasöründeki model dosyalarının listesi |
+| `model_name` | Yüklenecek bir kare enterpolasyon modeli seçin. Modeller 'frame_interpolation' klasörüne yerleştirilmelidir. | COMBO | Evet | `frame_interpolation` klasöründeki model dosyalarının listesi |
 
-## Çıkışlar
+Not: Seçilen dosya tanınan bir FILM veya RIFE kare enterpolasyon modeli değilse, düğüm bir hata verir.
 
-| Çıkış Adı | Açıklama | Veri Türü |
+## Çıktılar
+
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `FRAME_INTERPOLATION_MODEL` | Yüklenmiş ve yapılandırılmış, diğer düğümlerde kullanıma hazır kare enterpolasyon modeli. | MODEL |
+| `FRAME_INTERPOLATION_MODEL` | Yüklenmiş, yapılandırılmış ve diğer düğümlerde kullanıma hazır kare enterpolasyon modeli. | INTERP_MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FrameInterpolationModelLoader/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `497c20d5123bcbfd321dc4a659250ce3e0903e55c3a0274d3ed45710d75573d9`
+**Source fingerprint (SHA-256):** `21f470ee2852dbd1b332ac4a506eaa20dc8578c04b63c4fe1a072878b57beaba`

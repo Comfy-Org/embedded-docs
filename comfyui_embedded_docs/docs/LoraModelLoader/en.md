@@ -5,7 +5,7 @@ The LoraModelLoader node applies trained LoRA (Low-Rank Adaptation) weights to a
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-| --- | --- | --- | --- | --- |
+|-----------|-------------|-----------|----------|-------|
 | `model` | The diffusion model the LoRA will be applied to. | MODEL | Yes | - |
 | `lora` | The LoRA model to apply to the diffusion model. | LORA_MODEL | Yes | - |
 | `strength_model` | How strongly to modify the diffusion model. This value can be negative (default: 1.0). | FLOAT | Yes | -100.0 to 100.0 |
@@ -16,10 +16,10 @@ The LoraModelLoader node applies trained LoRA (Low-Rank Adaptation) weights to a
 ## Outputs
 
 | Output Name | Description | Data Type |
-| --- | --- | --- |
-| `model` | The modified diffusion model with LoRA weights applied. | MODEL |
+|-------------|-------------|-----------|
+| `model` | The modified diffusion model. | MODEL |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraModelLoader/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `dbb0852d4f40ded8a4490244634e13eeb367e5573b664a0f7e37213364793413`
+**Source fingerprint (SHA-256):** `81eb2a9b0376fe7453f6e7e422414472e80a3d1b92bb6874b91df6de8aed0d9a`

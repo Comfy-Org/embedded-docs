@@ -1,27 +1,27 @@
 # InstructPixToPixConditioning
 
-El nodo InstructPixToPixConditioning prepara datos de condicionamiento para la edición de imágenes InstructPix2Pix combinando indicaciones de texto positivas y negativas con datos de imagen. Procesa las imágenes de entrada a través de un codificador VAE para crear representaciones latentes y adjunta estos latentes tanto a los datos de condicionamiento positivos como a los negativos. El nodo maneja automáticamente las dimensiones de la imagen recortándolas a múltiplos de 8 píxeles para garantizar la compatibilidad con el proceso de codificación VAE.
+El nodo `InstructPixToPixConditioning` prepara los datos de condicionamiento para la edición de imágenes InstructPix2Pix combinando una imagen de entrada con el condicionamiento de prompts de texto positivo y negativo. Codifica la imagen con el VAE en una representación latente, adjunta ese latente a ambos conjuntos de condicionamiento y crea un latente lleno de ceros con dimensiones coincidentes. Si el ancho o el alto de la imagen no es un múltiplo de 8 píxeles, la imagen se recorta automáticamente antes de la codificación.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `positivo` | Datos de condicionamiento positivos que contienen indicaciones de texto y configuraciones para las características deseadas de la imagen | CONDITIONING | Sí | - |
-| `negativo` | Datos de condicionamiento negativos que contienen indicaciones de texto y configuraciones para las características no deseadas de la imagen | CONDITIONING | Sí | - |
-| `vae` | Modelo VAE utilizado para codificar las imágenes de entrada en representaciones latentes | VAE | Sí | - |
-| `píxeles` | Imagen de entrada que se procesará y codificará en el espacio latente | IMAGE | Sí | - |
+| `positive` | Datos de condicionamiento positivo que contienen prompts de texto y ajustes para las características deseadas de la imagen. | CONDITIONING | Sí | - |
+| `negative` | Datos de condicionamiento negativo que contienen prompts de texto y ajustes para las características no deseadas de la imagen. | CONDITIONING | Sí | - |
+| `vae` | Modelo VAE utilizado para codificar la imagen de entrada en una representación latente. | VAE | Sí | - |
+| `pixels` | Imagen de entrada que se procesa y codifica en el espacio latente. | IMAGE | Sí | - |
 
-**Nota:** Las dimensiones de la imagen de entrada se ajustan automáticamente recortándolas al múltiplo de 8 píxeles más cercano tanto en ancho como en alto para garantizar la compatibilidad con el proceso de codificación VAE.
+**Nota:** La imagen de entrada se recorta automáticamente a un múltiplo de 8 píxeles tanto en ancho como en alto, redondeando hacia abajo, para garantizar la compatibilidad con el proceso de codificación del VAE.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `positivo` | Datos de condicionamiento positivos con la representación de imagen latente adjunta | CONDITIONING |
-| `negativo` | Datos de condicionamiento negativos con la representación de imagen latente adjunta | CONDITIONING |
-| `latente` | Tensor latente vacío con las mismas dimensiones que la imagen codificada | LATENT |
+| `positive` | Datos de condicionamiento positivo con el latente de la imagen codificada adjunto. | CONDITIONING |
+| `negative` | Datos de condicionamiento negativo con el latente de la imagen codificada adjunto. | CONDITIONING |
+| `latent` | Tensor latente lleno de ceros con las mismas dimensiones que la imagen codificada. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InstructPixToPixConditioning/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `4b2383c9d64efdb558758359bf544fc5a1be65c12b23b54152e2df79a6dd8d79`
+**Source fingerprint (SHA-256):** `e9a5a05cdeafe9337ca2033111f1ad4f7314fa33d71a4764f62919857efc79f4`

@@ -1,27 +1,27 @@
 # WanMoveVisualizeTracks
 
-WanMoveVisualizeTracks düğümü, hareket takip verilerini bir dizi görüntü veya video karesi üzerine yerleştirir. Takip edilen noktaların hareket yolları ve mevcut konumları dahil olmak üzere görsel temsillerini çizerek hareket verilerini görünür hale getirir ve analiz edilmesini kolaylaştırır.
+WanMoveVisualizeTracks düğümü, hareket takip verilerini bir dizi görüntü veya video karesi üzerine çizer. Her takip edilen noktanın mevcut konumuna bir daire yerleştirir ve noktanın son karelerde nerede hareket ettiğini gösteren, solan bir yol çizgisi çizer. Takip verisi sağlanmazsa, giriş görüntüleri değiştirilmeden döndürülür.
 
 ## Girişler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `görseller` | İzlerin görselleştirileceği giriş görüntüleri veya video kareleri dizisi. | IMAGE | Evet | - |
-| `izler` | Nokta yolları ve görünürlük bilgilerini içeren hareket takip verileri. Sağlanmazsa, giriş görüntüleri değiştirilmeden iletilir. | TRACKS | Hayır | - |
-| `çizgi_çözünürlüğü` | Her bir iz için takip çizgisi çizilirken kullanılacak önceki kare sayısı (varsayılan: 24). | INT | Evet | 1 - 1024 |
-| `daire_boyutu` | Her bir izin mevcut konumunda çizilen dairenin boyutu (varsayılan: 12). | INT | Evet | 1 - 128 |
-| `opaklık` | Çizilen iz katmanlarının opaklığı (varsayılan: 0.75). | FLOAT | Evet | 0.0 - 1.0 |
-| `çizgi_kalınlığı` | İz yollarını çizmek için kullanılan çizgilerin genişliği (varsayılan: 16). | INT | Evet | 1 - 128 |
+| `images` | Takip verilerinin görselleştirileceği giriş görüntüleri veya video kareleri dizisi. | IMAGE | Evet | - |
+| `tracks` | Nokta konumlarını ve görünürlük bilgilerini içeren hareket takip verisi. Sağlanmazsa, giriş görüntüleri değiştirilmeden iletilir. | TRACKS | Hayır | - |
+| `line_resolution` | Her takip için iz çizgisini çizerken kullanılacak önceki kare sayısı (varsayılan: 24). | INT | Evet | 1 - 1024 |
+| `circle_size` | Her takip edilen noktanın mevcut konumuna çizilen dairenin boyutu (varsayılan: 12). | INT | Evet | 1 - 128 |
+| `opacity` | Çizilen takip katmanlarının opaklığı (varsayılan: 0.75). | FLOAT | Evet | 0.0 - 1.0 |
+| `line_width` | Takip yollarını çizmek için kullanılan çizgilerin genişliği (varsayılan: 16). | INT | Evet | 1 - 128 |
 
-**Not:** Giriş görüntülerinin sayısı, sağlanan `tracks` verisindeki kare sayısıyla eşleşmezse, görüntü dizisi iz uzunluğuna uyacak şekilde tekrarlanır.
+**Not:** Giriş görüntülerinin sayısı, sağlanan `tracks` verisindeki kare sayısıyla eşleşmezse, giriş görüntü dizisi takip verisiyle hizalanacak şekilde tekrarlanır.
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `IMAGE` | Hareket takip verilerinin katman olarak görselleştirildiği görüntü dizisi. Hiçbir `izler` sağlanmadıysa, orijinal giriş görüntüleri döndürülür. | IMAGE |
+| `IMAGE` | Hareket takip verilerinin katman olarak çizildiği görüntü dizisi. `tracks` sağlanmadıysa, orijinal giriş görüntüleri değiştirilmeden döndürülür. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveVisualizeTracks/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `b32169a8c9d3a2dd74463c81f6bd7d9a4bc66486af156843f32b0874f0eaeb8f`
+**Source fingerprint (SHA-256):** `d94bfde28dfdad682edcc81b1c63408f1352e0dbc94af4d043d750e8cd4c099b`

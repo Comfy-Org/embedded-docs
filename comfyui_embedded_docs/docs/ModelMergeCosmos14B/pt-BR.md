@@ -1,17 +1,17 @@
 # ModelMergeCosmos14B
 
-O nó **ModelMergeCosmos14B** mescla dois modelos de IA usando uma abordagem baseada em blocos, projetada especificamente para a arquitetura do modelo Cosmos 14B. Ele permite combinar diferentes componentes dos modelos ajustando valores de peso entre 0.0 e 1.0 para cada bloco do modelo e camada de incorporação.
+O nó **ModelMergeCosmos14B** mescla dois modelos de IA usando uma abordagem baseada em blocos, especificamente projetada para a arquitetura do modelo Cosmos 14B. Ele permite combinar diferentes componentes dos modelos ajustando os valores de peso entre 0.0 e 1.0 para cada bloco do modelo e camada de incorporação.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `model1` | Primeiro modelo a ser mesclado | MODEL | Sim | - |
 | `model2` | Segundo modelo a ser mesclado | MODEL | Sim | - |
-| `pos_embedder.` | Peso para o componente de incorporador de posição (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `extra_pos_embedder.` | Peso para o componente de incorporador de posição extra (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `x_embedder.` | Peso para o componente de incorporador x (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `t_embedder.` | Peso para o componente de incorporador t (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `pos_embedder.` | Peso para o componente do codificador de posição (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `extra_pos_embedder.` | Peso para o componente do codificador de posição extra (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `x_embedder.` | Peso para o componente do codificador x (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `t_embedder.` | Peso para o componente do codificador t (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `affline_norm.` | Peso para o componente de normalização afim (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `blocks.block0.` | Peso para o bloco 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `blocks.block1.` | Peso para o bloco 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
@@ -51,13 +51,15 @@ O nó **ModelMergeCosmos14B** mescla dois modelos de IA usando uma abordagem bas
 | `blocks.block35.` | Peso para o bloco 35 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `final_layer.` | Peso para a camada final (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 
+Nota: Todos os pesos de entrada do tipo FLOAT compartilham a mesma configuração — padrão 1.0, mínimo 0.0, máximo 1.0, passo 0.01.
+
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `model` | O modelo mesclado combinando características de ambos os modelos de entrada | MODEL |
+| `model` | O modelo mesclado que combina características de ambos os modelos de entrada | MODEL |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmos14B/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `6fcb4fefe7738d0addef49d386c0d3d22cda4c68f0e49ad003d1df595cf0e9d9`
+**Source fingerprint (SHA-256):** `1d1e5dc176643f577723bb0bb9375748a392a6fafa5c9e5e78ef4c4d8289f77c`

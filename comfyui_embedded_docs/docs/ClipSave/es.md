@@ -4,20 +4,20 @@ El nodo `CLIPSave` guarda un modelo de codificador de texto CLIP en disco en for
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango |
-| --- | --- | --- | --- | --- | --- |
-| `clip` | El modelo CLIP que se va a guardar. | CLIP | Requerido | - | - |
-| `prefijo_nombre_archivo` | La ruta de prefijo y nombre de archivo para los archivos guardados. El nodo añadirá un sufijo de componente (ej., `_clip_l`, `_clip_g`) y un contador para crear nombres de archivo únicos. | STRING | Requerido | `clip/ComfyUI` | - |
-| `prompt` | La información del prompt del flujo de trabajo, guardada como metadatos en el archivo de salida. | PROMPT | Oculto | - | - |
-| `extra_pnginfo` | Metadatos adicionales, guardados como pares clave-valor en el archivo de salida. | EXTRA_PNGINFO | Oculto | - | - |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `clip` | El modelo CLIP que se va a guardar. | CLIP | Sí | - |
+| `filename_prefix` | La ruta del prefijo y el nombre de archivo para los archivos guardados. El nodo añade un sufijo de componente (p. ej., `_clip_l`, `_clip_g`) y un contador para crear nombres de archivo únicos (valor predeterminado: `clip/ComfyUI`). | STRING | Sí | - |
+| `prompt` | La información del prompt del flujo de trabajo, guardada como metadatos en el archivo de salida. Este parámetro está oculto en la interfaz de usuario. | PROMPT | No | - |
+| `extra_pnginfo` | Metadatos adicionales, guardados como pares clave-valor en el archivo de salida. Este parámetro está oculto en la interfaz de usuario. | EXTRA_PNGINFO | No | - |
 
 ## Salidas
 
 Este nodo no tiene conexiones de salida. Guarda los archivos procesados directamente en el directorio `ComfyUI/output/`.
 
-### Detalles del Archivo Guardado
+### Detalles de los archivos guardados
 
-El nodo analiza el diccionario de estado del modelo CLIP y guarda archivos SafeTensors separados para cada componente detectado. El componente se identifica por el prefijo de sus claves de parámetros. Se verifican los siguientes prefijos:
+El nodo analiza el diccionario de estado del modelo CLIP y guarda archivos SafeTensors separados para cada componente detectado. El componente se identifica por el prefijo de sus claves de parámetros. El nodo verifica los siguientes prefijos, en orden:
 
 - `clip_l.` (codificador de texto CLIP-L)
 - `clip_g.` (codificador de texto CLIP-G)
@@ -32,9 +32,11 @@ El nodo analiza el diccionario de estado del modelo CLIP y guarda archivos SafeT
 - `hydit_clip.` (codificador de texto Hydit CLIP)
 - Prefijo vacío (otros componentes CLIP)
 
-Para cada componente detectado, el nodo crea un archivo con el nombre `{filename_prefix}_{contador:05}_.safetensors`, donde el prefijo del componente se añade al prefijo del nombre de archivo (ej., `clip/ComfyUI_clip_l_00001_.safetensors`). El prefijo `transformer.` se elimina de las claves de parámetros durante el guardado.
+Para cada componente detectado, el nodo crea un archivo con el nombre `{filename}_{counter:05}_.safetensors` (por ejemplo, `ComfyUI_clip_l_00001_.safetensors`), donde el nombre del componente se añade al prefijo del nombre de archivo y el contador garantiza nombres de archivo únicos. Cuando se guarda un componente, el prefijo `transformer.` se elimina de sus claves de parámetros.
+
+Los metadatos escritos en cada archivo incluyen el prompt del flujo de trabajo y cualquier información PNG extra, a menos que el guardado de metadatos esté deshabilitado con el argumento de línea de comandos `--disable-metadata`.
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `039b39cbfb9b04ccebc5fc885ebe75dfde14838530d38133d0a3a6311e392059`
+**Source fingerprint (SHA-256):** `4ab9171e4245b10f738f78bac8a5b564c0957dde352e207ec3f9865e4fac0cab`

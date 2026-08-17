@@ -7,8 +7,8 @@ O nó T5TokenizerOptions permite configurar as configurações do tokenizador pa
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `clip` | O modelo CLIP para configurar as opções do tokenizador | CLIP | Sim | - |
-| `preenchimento_mínimo` | Valor mínimo de preenchimento a ser definido para todos os tipos de modelo T5 (padrão: 0) | INT | Não | 0 a 10000 |
-| `comprimento_mínimo` | Valor mínimo de comprimento a ser definido para todos os tipos de modelo T5 (padrão: 0) | INT | Não | 0 a 10000 |
+| `min_padding` | Valor de preenchimento mínimo a ser definido para todos os tipos de modelo T5 (padrão: 0) | INT | Não | 0 a 10000 |
+| `min_length` | Valor de comprimento mínimo a ser definido para todos os tipos de modelo T5 (padrão: 0) | INT | Não | 0 a 10000 |
 
 ## Saídas
 
@@ -19,4 +19,4 @@ O nó T5TokenizerOptions permite configurar as configurações do tokenizador pa
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/T5TokenizerOptions/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `bc05c714e4006786d0c948ed1de05324257472337397b0aa4ce574d7483929ff`
+**Source fingerprint (SHA-256):** `1c9a67781ddcc423fa3f6ed8ae1cb767a18681366aca9f1a4a6aff6b2eb38667`

@@ -24,4 +24,4 @@ The ChromaRadianceOptions node allows you to configure advanced settings for the
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ChromaRadianceOptions/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `4c93e4809e2948d633ccfc00460de470bdb125f7a2e9c3407f7dda178dd899b5`
+**Source fingerprint (SHA-256):** `761f1946fe1fd77158e97f6f34d002e2445cc00e008741f8c37cde5673900409`

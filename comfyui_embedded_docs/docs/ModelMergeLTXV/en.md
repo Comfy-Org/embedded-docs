@@ -1,6 +1,6 @@
 # ModelMergeLTXV
 
-The ModelMergeLTXV node performs advanced model merging operations specifically designed for LTXV model architectures. It allows you to blend two different models together by adjusting interpolation weights for various model components including transformer blocks, projection layers, and other specialized modules.
+ModelMergeLTXV merges two LTXV models into one by blending their internal components. Each weight parameter controls how strongly a specific part of `model2` is mixed into `model1`, where lower values favor `model1` and higher values favor `model2`.
 
 ## Inputs
 
@@ -51,4 +51,4 @@ The ModelMergeLTXV node performs advanced model merging operations specifically 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeLTXV/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `29ef8750b6e88f71abca10c8aaad5d75c9c32afec057af78842ca82441438922`
+**Source fingerprint (SHA-256):** `0ff5f93aee831259066679a27fff8f7cbd4a9686242091f1bc7dd3805725566e`

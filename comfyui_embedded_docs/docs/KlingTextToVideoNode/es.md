@@ -1,54 +1,26 @@
 # Kling Texto a Video
 
-Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
+El nodo Kling de texto a video convierte indicaciones de texto en clips de video cortos mediante el servicio de generación de video de Kling. Debe proporcionar indicaciones positivas y negativas junto con ajustes como la relación de aspecto, la escala de configuración y el modo de generación, y el nodo devuelve el video generado con su identificador y duración.
 
-## Reglas de Traducción
+## Inputs
 
-1. **Contenido que NO debe traducirse:**
-   - Nombres de parámetros entre comillas invertidas: `image`, `seed`, `model`
-   - Tipos de datos en MAYÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.
-   - Valores en columna Range: números, "auto", nombres de opciones
-   - Código, rutas de archivos
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Indicación de texto positiva que describe el contenido de video deseado. Entrada multilínea. No puede estar vacía. | STRING | Sí | Máximo 2500 caracteres |
+| `negative_prompt` | Indicación de texto negativa que describe lo que se debe evitar en el video. Entrada multilínea. Puede dejarse vacía. | STRING | Sí | Máximo 2500 caracteres |
+| `cfg_scale` | Valor de escala de configuración que controla cuán fielmente sigue el video la indicación (predeterminado: 1.0). | FLOAT | No | 0.0 a 1.0 |
+| `aspect_ratio` | Configuración de relación de aspecto del video (predeterminado: "16:9"). | COMBO | No | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `mode` | La configuración a usar para la generación del video con el formato: modo / duración / nombre_modelo (predeterminado: "pro mode / 5s duration / kling-v2-5-turbo"). El modo de 5s cuesta USD 0.35, el modo de 10s cuesta USD 0.70. | COMBO | No | `"pro mode / 5s duration / kling-v2-5-turbo"`<br>`"pro mode / 10s duration / kling-v2-5-turbo"` |
 
-2. **Contenido que SÍ debe traducirse:**
-   - Títulos de secciones: ## Descripción general, ## Entradas, ## Salidas
-   - Todo el texto descriptivo y explicativo
-   - Descripciones de parámetros
+## Outputs
 
-3. **Calidad de traducción:**
-   - Usar español estándar y neutral
-   - Mantener tono profesional pero accesible
-   - Asegurar precisión técnica
-   - Usar terminología técnica estándar en español
-
-4. **Formato:**
-   - Mantener todo el formato Markdown
-   - Preservar estructura de tablas
-   - No agregar ninguna nota o enlace al inicio del documento (será agregado automáticamente)
-
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
-El nodo Kling Text to Video convierte descripciones textuales en contenido de video. Toma indicaciones de texto y genera secuencias de video correspondientes según los ajustes de configuración especificados. El nodo admite diferentes relaciones de aspecto y modos de generación para producir videos de duración y calidad variables.
-
-## Entradas
-
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
-| `prompt` | Indicación de texto positiva | STRING | Sí | - |
-| `negative_prompt` | Indicación de texto negativa | STRING | Sí | - |
-| `cfg_scale` | Valor de escala de configuración (predeterminado: 1.0) | FLOAT | No | 0.0 a 1.0 |
-| `aspect_ratio` | Configuración de la relación de aspecto del video (predeterminado: "16:9") | COMBO | No | Opciones de KlingVideoGenAspectRatio |
-| `mode` | Configuración a utilizar para la generación de video siguiendo el formato: modo / duración / nombre_del_modelo. (predeterminado: modes[8]) | COMBO | No | Múltiples opciones disponibles |
-
-## Salidas
-
-| Nombre de Salida | Descripción | Tipo de Dato |
-| --- | --- | --- |
-| `video_id` | La salida de video generada | VIDEO |
-| `video_id` | Identificador único para el video generado | STRING |
-| `duration` | Información de duración del video generado | STRING |
+| Output Name | Description | Data Type |
+|-------------|-------------|-----------|
+| `output` | La salida de video generada. | VIDEO |
+| `video_id` | Identificador único para el video generado. | STRING |
+| `duration` | Información de duración para el video generado. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingTextToVideoNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `467f89a47890bfbfe6cebac8897fef3bce37d888d3419b248d13be89bed442f3`
+**Source fingerprint (SHA-256):** `6a63b0b8bc45dc5a6300cdfe7a373399eeead36de6727f7aae2c026ba0deaea8`

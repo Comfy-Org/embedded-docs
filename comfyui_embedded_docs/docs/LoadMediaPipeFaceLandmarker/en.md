@@ -1,24 +1,22 @@
 # Load Face Detection Model (MediaPipe)
 
-## Overview
-
-This node loads a MediaPipe Face Landmarker v2 model, which can detect faces and facial landmarks (like eyes, nose, and mouth) in images. It contains two detection variants (short-range and full-range) along with shared mesh data, blendshapes, and canonical geometry for facial analysis.
+This node loads a MediaPipe Face Landmarker v2 model, which can detect faces and facial landmarks (like eyes, nose, and mouth) in images. The loaded model contains two detection variants (short and full), along with shared mesh data, blendshapes, and canonical geometry for facial analysis.
 
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-| --- | --- | --- | --- | --- |
-| `model_name` | Face detection model from models/detection/. | STRING | Yes | List of available models in the `models/detection/` directory |
+|-----------|-------------|-----------|----------|-------|
+| `model_name` | Face detection model from models/detection/. | COMBO | Yes | List of available models in the `models/detection/` directory |
 
 ## Outputs
 
 | Output Name | Description | Data Type |
-| --- | --- | --- |
-| `FACE_DETECTION_MODEL` | A loaded FaceLandmarker model object containing both detection variants (short/full), connection sets for facial topology, canonical data, and model patchers for GPU management. | FACE_DETECTION_MODEL |
+|-------------|-------------|-----------|
+| `FACE_DETECTION_MODEL` | A loaded MediaPipe Face Landmarker model object containing both detection variants (short/full), shared mesh and blendshape data, canonical geometry, facial topology connection sets, and model patchers for GPU management. | FACE_DETECTION_MODEL |
 
 **Note:** The output is a complex object that can be used by other nodes for face detection and landmark extraction tasks. It contains two detection variants: "short" for close-range detection and "full" for full-range detection.
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadMediaPipeFaceLandmarker/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `b30bf4d04aa06a227f3661c0e1346d3dab3ea1e25d6627fce5b6480198203c26`
+**Source fingerprint (SHA-256):** `33dda845b572ccffc1bd4b64fb9c338ce4313783b092fe311d89741a211f18c9`

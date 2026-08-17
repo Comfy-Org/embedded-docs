@@ -1,24 +1,26 @@
 # HyperTile
 
-O nó HyperTile aplica uma técnica de divisão em blocos ao mecanismo de atenção em modelos de difusão para otimizar o uso de memória durante a geração de imagens. Ele divide o espaço latente em blocos menores e os processa separadamente, depois remonta os resultados. Isso permite trabalhar com tamanhos de imagem maiores sem esgotar a memória.
+O nó HyperTile aplica uma técnica de tileamento (divisão em tiles) ao mecanismo de atenção em modelos de difusão para otimizar o uso de memória durante a geração de imagens. Ele divide o espaço latente em tiles menores, processa-os separadamente e remonta os resultados. Isso permite trabalhar com tamanhos de imagem maiores sem esgotar a memória.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `modelo` | O modelo de difusão ao qual aplicar a otimização HyperTile | MODEL | Sim | - |
-| `tamanho_do_tile` | O tamanho alvo do bloco para processamento (padrão: 256). O tamanho efetivo do bloco é arredondado para baixo até um múltiplo de 8, com um mínimo de 32. | INT | Não | 1 - 2048 |
-| `tamanho_da_troca` | Controla como os blocos são reorganizados durante o processamento para melhorar a eficiência (padrão: 2) | INT | Não | 1 - 128 |
-| `profundidade_máxima` | O nível máximo de profundidade (escala de resolução) para aplicar a divisão em blocos. Um valor de 0 aplica a divisão apenas na resolução mais alta (padrão: 0) | INT | Não | 0 - 10 |
-| `escala_de_profundidade` | Quando ativado, o tamanho do bloco é dimensionado proporcionalmente em níveis de profundidade maiores. Isso pode ajudar a manter a qualidade em resoluções mais baixas (padrão: Falso) | BOOLEAN | Não | Verdadeiro / Falso |
+| `model` | O modelo de difusão ao qual aplicar a otimização HyperTile | MODEL | Sim | - |
+| `tile_size` | O tamanho alvo do tile para processamento (padrão: 256). O tamanho efetivo do tile é arredondado para baixo até um múltiplo de 8, com um mínimo de 32. | INT | Não | 1 - 2048 |
+| `swap_size` | O número de divisões candidatas de tiles consideradas quando o nó escolhe aleatoriamente como dividir a imagem. Um valor maior permite mais variação na divisão (padrão: 2) | INT | Não | 1 - 128 |
+| `max_depth` | O nível máximo de profundidade (escala de resolução) para aplicar o tileamento. Um valor de 0 aplica o tileamento apenas na resolução mais alta (padrão: 0) | INT | Não | 0 - 10 |
+| `scale_depth` | Quando habilitado, o tamanho do tile é escalado proporcionalmente em níveis de profundidade maiores. Isso pode ajudar a manter a qualidade em resoluções mais baixas (padrão: False) | BOOLEAN | Não | True / False |
+
+Nota: `scale_depth` só tem efeito quando `max_depth` é maior que 0, porque no nível de resolução mais alta (profundidade 0) o tamanho do tile nunca é escalado.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
+| Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `modelo` | O modelo modificado com a otimização HyperTile aplicada | MODEL |
+| `model` | O modelo modificado com a otimização HyperTile aplicada | MODEL |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HyperTile/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `d3c55e6a38abecc8fe612dbb91a3ba26de9bc5cf8a187f01cf4746550f62f40a`
+**Source fingerprint (SHA-256):** `fb2fa29a403b6b7de7d5263240cc51a74126078457a3ff9ea63aeded45b9b74a`
