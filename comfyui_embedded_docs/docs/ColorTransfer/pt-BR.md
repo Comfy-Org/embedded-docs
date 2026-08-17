@@ -9,7 +9,7 @@ O nó ColorTransfer ajusta a paleta de cores de uma imagem alvo para corresponde
 | `image_target` | Imagem(ns) na(s) qual(is) aplicar a transformação de cor. | IMAGE | Sim | - |
 | `image_ref` | Imagem(ns) de referência para corresponder as cores. | IMAGE | Sim | - |
 | `method` | O algoritmo de transferência de cor a ser utilizado. | COMBO | Sim | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` |
-| `source_stats` | Determina como as estatísticas de cor são calculadas a partir da(s) imagem(ns) de origem (alvo). | DYNAMICCOMBO | Sim | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
+| `source_stats` | Determina como as estatísticas de cor são calculadas a partir da(s) imagem(ns) de origem (alvo). | DYNAMIC_COMBO | Sim | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
 | `strength` | A intensidade do efeito de transferência de cor. Um valor de 1.0 aplica a transformação completa, enquanto 0.0 retorna a imagem original. Padrão: 1.0 | FLOAT | Sim | 0.0 a 10.0 |
 
 **Detalhes dos Parâmetros:**

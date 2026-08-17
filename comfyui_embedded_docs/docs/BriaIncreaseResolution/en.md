@@ -9,7 +9,7 @@ Bria Increase Resolution upscales an input image by 2x or 4x using Bria's image 
 | `image` | The input image to upscale. | IMAGE | Yes | Single image |
 | `desired_increase` | Resolution multiplier. The output must fit within 8192 pixels on each side. | COMBO | Yes | "2"<br>"4" |
 | `auto_downscale` | Automatically lower the multiplier, and downscale the input image if that is still not enough, when the output would exceed the limit. (default: False) | BOOLEAN | Yes | True<br>False |
-| `moderation` | Moderation settings. When set to "true", enables the `visual_input_moderation` and `visual_output_moderation` sub-options, both defaulting to False. | COMBO | Yes | "false"<br>"true" |
+| `moderation` | Moderation settings. When set to "true", enables the `visual_input_moderation` and `visual_output_moderation` sub-options, both defaulting to False. | DYNAMIC_COMBO | Yes | "false"<br>"true" |
 
 Notes:
 - The node enforces a maximum output side of 8192 pixels. If the selected multiplier would exceed this limit and `auto_downscale` is disabled, an error is raised. Enabling `auto_downscale` allows the node to automatically use a lower multiplier or downscale the input image instead.

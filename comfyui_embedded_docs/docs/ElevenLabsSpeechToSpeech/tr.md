@@ -37,7 +37,7 @@ ElevenLabs Konuşmadan Konuşmaya düğümü, bir giriş ses dosyasını bir ses
 | `ses` | Dönüşüm için hedef ses. Ses Seçici veya Anlık Ses Klonlama'dan bağlantı kurun. | CUSTOM | Evet | - |
 | `ses` | Dönüştürülecek kaynak ses. | AUDIO | Evet | - |
 | `kararlılık` | Ses kararlılığı. Düşük değerler daha geniş bir duygusal yelpaze sağlar, yüksek değerler daha tutarlı ancak potansiyel olarak monoton konuşma üretir (varsayılan: 0.5). | FLOAT | Hayır | 0.0 - 1.0 |
-| `model` | Konuşmadan konuşmaya dönüşüm için kullanılacak model. Her seçenek belirli bir ses ayarları kümesi sağlar (similarity_boost, style, use_speaker_boost, speed). | DYNAMICCOMBO | Hayır | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` |
+| `model` | Konuşmadan konuşmaya dönüşüm için kullanılacak model. Her seçenek belirli bir ses ayarları kümesi sağlar (similarity_boost, style, use_speaker_boost, speed). | DYNAMIC_COMBO | Hayır | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` |
 | `çıktı_formatı` | Ses çıktı formatı (varsayılan: "mp3_44100_192"). | COMBO | Hayır | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 | `tohum` | Tekrarlanabilirlik için tohum değeri (varsayılan: 0). | INT | Hayır | 0 - 4294967295 |
 | `arka_plan_gürültüsünü_kaldır` | Ses izolasyonu kullanarak giriş sesinden arka plan gürültüsünü kaldırır (varsayılan: False). | BOOLEAN | Hayır | - |

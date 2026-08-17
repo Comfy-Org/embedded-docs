@@ -9,7 +9,7 @@ Bria Increase Resolution は、Bria の画像アップスケーリング API を
 | `image` | アップスケールする入力画像です。 | IMAGE | はい | 単一画像 |
 | `desired_increase` | 解像度の倍率です。出力は各辺が 8192 ピクセル以内に収まる必要があります。 | COMBO | はい | "2"<br>"4" |
 | `auto_downscale` | 出力が制限を超える場合に、倍率を自動的に下げ、それでも不十分な場合は入力画像もダウンスケールします（デフォルト: False）。 | BOOLEAN | はい | True<br>False |
-| `moderation` | モデレーション設定です。"true" に設定すると、`visual_input_moderation` と `visual_output_moderation` のサブオプションが有効になり、どちらもデフォルトは False です。 | COMBO | はい | "false"<br>"true" |
+| `moderation` | モデレーション設定です。"true" に設定すると、`visual_input_moderation` と `visual_output_moderation` のサブオプションが有効になり、どちらもデフォルトは False です。 | DYNAMIC_COMBO | はい | "false"<br>"true" |
 
 注意事項：
 - このノードは、出力の各辺を最大 8192 ピクセルに制限します。選択した倍率がこの制限を超える場合、`auto_downscale` が無効になっているとエラーが発生します。`auto_downscale` を有効にすると、ノードは代わりに自動的に低い倍率を使用するか、入力画像をダウンスケールします。

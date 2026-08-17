@@ -12,7 +12,7 @@ Bu düğüm, Tencent'in Hunyuan3D Pro API'sini kullanarak bir veya daha fazla gi
 | `sağ görsel` | Çoklu görünüm oluşturma için nesnenin sağ tarafının isteğe bağlı görüntüsü. En az 128x128 piksel olmalıdır. | IMAGE | Hayır | - |
 | `arka görsel` | Çoklu görünüm oluşturma için nesnenin arka tarafının isteğe bağlı görüntüsü. En az 128x128 piksel olmalıdır. | IMAGE | Hayır | - |
 | `yüz sayısı` | Oluşturulan 3B model için hedef yüz sayısı (varsayılan: 500000). | INT | Evet | 3000 - 1500000 |
-| `oluşturma türü` | Oluşturulacak 3B model türü. Bir seçenek seçildiğinde ilgili ek parametreler görünür hale gelir. | DYNAMICCOMBO | Evet | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
+| `oluşturma türü` | Oluşturulacak 3B model türü. Bir seçenek seçildiğinde ilgili ek parametreler görünür hale gelir. | DYNAMIC_COMBO | Evet | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
 | `generate_type.pbr` | Fiziksel Tabanlı Renderlama (PBR) malzeme oluşturmayı etkinleştirir. Bu parametre yalnızca `oluşturma türü` "Normal" veya "LowPoly" olarak ayarlandığında görünür (varsayılan: Yanlış). | BOOLEAN | Hayır | - |
 | `generate_type.polygon_type` | Ağ için kullanılacak çokgen türü. Bu parametre yalnızca `oluşturma türü` "LowPoly" olarak ayarlandığında görünür. | COMBO | Hayır | `"triangle"`<br>`"quadrilateral"` |
 | `tohum` | Oluşturma işlemi için bir tohum değeri. Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Evet | 0 - 2147483647 |

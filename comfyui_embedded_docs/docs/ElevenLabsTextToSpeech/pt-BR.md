@@ -10,7 +10,7 @@ O nó ElevenLabs Text to Speech converte texto escrito em áudio falado usando a
 | `texto` | O texto a ser convertido em fala. | STRING | Sim | N/A |
 | `estabilidade` | Estabilidade da voz. Valores mais baixos proporcionam uma faixa emocional mais ampla; valores mais altos produzem uma fala mais consistente, mas potencialmente monótona (padrão: 0.5). | FLOAT | Não | 0.0 - 1.0 |
 | `aplicar normalização de texto` | Modo de normalização de texto. 'auto' permite que o sistema decida, 'on' sempre aplica a normalização, 'off' a ignora. | COMBO | Não | `"auto"`<br>`"on"`<br>`"off"` |
-| `modelo` | Modelo a ser usado para conversão de texto em fala. Selecionar um modelo revela seus parâmetros específicos. | DYNAMICCOMBO | Não | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
+| `modelo` | Modelo a ser usado para conversão de texto em fala. Selecionar um modelo revela seus parâmetros específicos. | DYNAMIC_COMBO | Não | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
 | `código do idioma` | Código de idioma ISO-639-1 ou ISO-639-3 (ex.: 'en', 'es', 'fra'). Deixe vazio para detecção automática (padrão: ""). | STRING | Não | N/A |
 | `semente` | Semente para reprodutibilidade (determinismo não garantido) (padrão: 1). | INT | Não | 0 - 2147483647 |
 | `formato de saída` | Formato de saída de áudio. | COMBO | Não | `"mp3_44100_192"`<br>`"opus_48000_192"` |

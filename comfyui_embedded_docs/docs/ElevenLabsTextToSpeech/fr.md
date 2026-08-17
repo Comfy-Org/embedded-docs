@@ -12,7 +12,7 @@ Le nœud ElevenLabs Text to Speech convertit du texte écrit en audio parlé à 
 | `texte` | Le texte à convertir en parole. | STRING | Oui | N/A |
 | `stabilité` | Stabilité de la voix. Des valeurs plus faibles offrent une gamme émotionnelle plus large, des valeurs plus élevées produisent une parole plus cohérente mais potentiellement monotone (par défaut : 0.5). | FLOAT | Non | 0.0 - 1.0 |
 | `appliquer la normalisation du texte` | Mode de normalisation du texte. 'auto' laisse le système décider, 'on' applique toujours la normalisation, 'off' l'ignore. | COMBO | Non | `"auto"`<br>`"on"`<br>`"off"` |
-| `modèle` | Modèle à utiliser pour la synthèse vocale. La sélection d'un modèle révèle ses paramètres spécifiques. | DYNAMICCOMBO | Non | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
+| `modèle` | Modèle à utiliser pour la synthèse vocale. La sélection d'un modèle révèle ses paramètres spécifiques. | DYNAMIC_COMBO | Non | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
 | `code langue` | Code de langue ISO-639-1 ou ISO-639-3 (par exemple, 'en', 'es', 'fra'). Laissez vide pour la détection automatique (par défaut : ""). | STRING | Non | N/A |
 | `graine` | Graine pour la reproductibilité (déterminisme non garanti) (par défaut : 1). | INT | Non | 0 - 2147483647 |
 | `format de sortie` | Format de sortie audio. | COMBO | Non | `"mp3_44100_192"`<br>`"opus_48000_192"` |

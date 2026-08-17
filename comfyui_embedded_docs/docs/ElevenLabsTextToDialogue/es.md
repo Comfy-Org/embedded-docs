@@ -9,7 +9,7 @@ El nodo ElevenLabs Text to Dialogue genera un diálogo de audio con múltiples h
 | `estabilidad` | Estabilidad de la voz. Valores más bajos brindan un rango emocional más amplio, valores más altos producen un habla más consistente pero potencialmente monótona. (predeterminado: 0.5) | FLOAT | No | 0.0 - 1.0 |
 | `aplicar_normalización_de_texto` | Modo de normalización de texto. 'auto' permite que el sistema decida, 'on' aplica siempre la normalización, 'off' la omite. | COMBO | No | `"auto"`<br>`"on"`<br>`"off"` |
 | `modelo` | Modelo a utilizar para la generación del diálogo. | COMBO | No | `"eleven_v3"` |
-| `entradas` | Número de entradas de diálogo. Seleccionar un número generará esa cantidad de campos de entrada de texto y voz. | DYNAMICCOMBO | Sí | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
+| `entradas` | Número de entradas de diálogo. Seleccionar un número generará esa cantidad de campos de entrada de texto y voz. | DYNAMIC_COMBO | Sí | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
 | `código_de_idioma` | Código de idioma ISO-639-1 o ISO-639-3 (ej., 'en', 'es', 'fra'). Déjelo vacío para detección automática. (predeterminado: vacío) | STRING | No | - |
 | `semilla` | Semilla para reproducibilidad. (predeterminado: 1) | INT | No | 0 - 4294967295 |
 | `formato_de_salida` | Formato de salida de audio. | COMBO | No | `"mp3_44100_192"`<br>`"opus_48000_192"` |

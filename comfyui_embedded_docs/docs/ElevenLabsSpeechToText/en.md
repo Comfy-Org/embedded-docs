@@ -7,7 +7,7 @@ The ElevenLabs Speech to Text node transcribes audio files into text. It uses El
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `audio` | Audio to transcribe. | AUDIO | Yes | - |
-| `model` | Model to use for transcription. Selecting this model reveals additional parameters. | COMBO | Yes | `"scribe_v2"` |
+| `model` | Model to use for transcription. Selecting this model reveals additional parameters. | DYNAMIC_COMBO | Yes | `"scribe_v2"` |
 | `tag_audio_events` | Annotate sounds like (laughter), (music), etc. in transcript. This parameter is revealed when the `"scribe_v2"` model is selected. (default: False) | BOOLEAN | No | - |
 | `diarize` | Annotate which speaker is talking. This parameter is revealed when the `"scribe_v2"` model is selected. (default: False) | BOOLEAN | No | - |
 | `diarization_threshold` | Speaker separation sensitivity. Lower values are more sensitive to speaker changes. This parameter is revealed when the `"scribe_v2"` model is selected and `diarize` is enabled. (default: 0.22) | FLOAT | No | 0.1 - 0.4 |

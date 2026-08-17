@@ -9,7 +9,7 @@ O nó **Meshy: Text to Model** utiliza a API Meshy para gerar um modelo 3D a par
 | `modelo` | Especifica a versão do modelo de IA a ser utilizada. Atualmente, apenas a versão "latest" está disponível. | COMBO | Sim | `"latest"` |
 | `prompt` | A descrição textual do modelo 3D que você deseja gerar. Deve ter entre 1 e 600 caracteres. | STRING | Sim | - |
 | `estilo` | O estilo artístico para o modelo 3D gerado. | COMBO | Sim | `"realistic"`<br>`"sculpture"` |
-| `deve_refazer_malha` | Controla se a malha gerada será processada. Quando definido como "false", o nó retorna uma malha triangular não processada. Selecionar "true" revela parâmetros adicionais para topologia e contagem de polígonos. | COMBO DINÂMICO | Sim | `"true"`<br>`"false"` |
+| `deve_refazer_malha` | Controla se a malha gerada será processada. Quando definido como "false", o nó retorna uma malha triangular não processada. Selecionar "true" revela parâmetros adicionais para topologia e contagem de polígonos. | DYNAMIC_COMBO | Sim | `"true"`<br>`"false"` |
 | `topology` | O tipo de polígono alvo para o modelo remalhado. Este parâmetro só está disponível e é obrigatório quando `deve_refazer_malha` está definido como "true". | COMBO | Não* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | O número alvo de polígonos para o modelo remalhado. O padrão é 300000. Este parâmetro só está disponível e é obrigatório quando `deve_refazer_malha` está definido como "true". | INT | Não* | 100 - 300000 |
 | `modo_de_simetria` | Controla a simetria no modelo gerado. | COMBO | Sim | `"auto"`<br>`"on"`<br>`"off"` |

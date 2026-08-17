@@ -1,7 +1,5 @@
 # Meshy：画像からモデルへ
 
-以下が翻訳結果です。
-
 Meshy: Image to Model ノードは、Meshy API を使用して、1枚の入力画像から3Dモデルを生成します。画像をアップロードし、処理タスクを送信し、生成された3Dモデルファイル（GLBおよびFBX）と参照用のタスクIDを返します。
 
 ## 入力
@@ -10,11 +8,11 @@ Meshy: Image to Model ノードは、Meshy API を使用して、1枚の入力�
 | --- | --- | --- | --- | --- |
 | `model` | 生成に使用するAIモデルのバージョンを指定します。 | COMBO | はい | `"latest"` |
 | `image` | 3Dモデルに変換する入力画像です。 | IMAGE | はい | - |
-| `should_remesh` | 生成されたメッシュを処理するかどうかを指定します。`"false"` に設定すると、未処理の三角形メッシュが返されます。 | DYNAMIC COMBO | はい | `"true"`<br>`"false"` |
+| `should_remesh` | 生成されたメッシュを処理するかどうかを指定します。`"false"` に設定すると、未処理の三角形メッシュが返されます。 | DYNAMIC_COMBO | はい | `"true"`<br>`"false"` |
 | `topology` | リメッシュ後のモデルの目標ポリゴントポロジーです。この入力は、`should_remesh` が `"true"` に設定されている場合のみ使用可能です。 | COMBO | いいえ* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | リメッシュ後のモデルの目標ポリゴン数です。この入力は、`should_remesh` が `"true"` に設定されている場合のみ使用可能です。デフォルト値は300000です。 | INT | いいえ* | 100 - 300000 |
 | `symmetry_mode` | 生成された3Dモデルに適用する対称性を制御します。 | COMBO | はい | `"auto"`<br>`"on"`<br>`"off"` |
-| `should_texture` | モデルにテクスチャを生成するかどうかを指定します。`"false"` に設定すると、テクスチャフェーズをスキップし、テクスチャのないメッシュが返されます。 | DYNAMIC COMBO | はい | `"true"`<br>`"false"` |
+| `should_texture` | モデルにテクスチャを生成するかどうかを指定します。`"false"` に設定すると、テクスチャフェーズをスキップし、テクスチャのないメッシュが返されます。 | DYNAMIC_COMBO | はい | `"true"`<br>`"false"` |
 | `enable_pbr` | `should_texture` が `"true"` の場合、このオプションはベースカラーに加えてPBRマップ（メタリック、ラフネス、法線）を生成します。デフォルト値は `False` です。 | BOOLEAN | いいえ* | - |
 | `texture_prompt` | テクスチャ処理をガイドするテキストプロンプトです（最大600文字）。この入力は、`should_texture` が `"true"` に設定されている場合のみ使用可能です。`texture_image` と同時に使用することはできません。 | STRING | いいえ* | - |
 | `texture_image` | テクスチャ処理をガイドする画像です。この入力は、`should_texture` が `"true"` に設定されている場合のみ使用可能です。`texture_prompt` と同時に使用することはできません。 | IMAGE | いいえ* | - |

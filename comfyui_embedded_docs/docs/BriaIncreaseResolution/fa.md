@@ -11,7 +11,7 @@ Bria Increase Resolution تصویر ورودی را با استفاده از API
 | `image` | تصویر ورودی برای بزرگ‌نمایی. | IMAGE | بله | Single image |
 | `desired_increase` | ضریب بزرگ‌نمایی. خروجی باید در هر ضلع حداکثر 8192 پیکسل باشد. | COMBO | بله | "2"<br>"4" |
 | `auto_downscale` | به‌طور خودکار ضریب را کاهش می‌دهد و اگر باز هم کافی نبود، تصویر ورودی را کوچک‌نمایی می‌کند، در صورتی که خروجی از حد مجاز فراتر رود. (پیش‌فرض: False) | BOOLEAN | بله | True<br>False |
-| `moderation` | تنظیمات نظارت. وقتی روی «true» تنظیم شود، گزینه‌های فرعی `visual_input_moderation` و `visual_output_moderation` فعال می‌شوند که هر دو به‌صورت پیش‌فرض False هستند. | COMBO | بله | "false"<br>"true" |
+| `moderation` | تنظیمات نظارت. وقتی روی «true» تنظیم شود، گزینه‌های فرعی `visual_input_moderation` و `visual_output_moderation` فعال می‌شوند که هر دو به‌صورت پیش‌فرض False هستند. | DYNAMIC_COMBO | بله | "false"<br>"true" |
 
 ## نکات
 

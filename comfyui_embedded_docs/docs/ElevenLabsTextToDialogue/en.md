@@ -9,7 +9,7 @@ The ElevenLabs Text to Dialogue node generates a multi-speaker audio dialogue fr
 | `stability` | Voice stability. Lower values give broader emotional range, higher values produce more consistent but potentially monotonous speech. (default: 0.5) | FLOAT | No | 0.0 - 1.0 |
 | `apply_text_normalization` | Text normalization mode. 'auto' lets the system decide, 'on' always applies normalization, 'off' skips it. | COMBO | No | `"auto"`<br>`"on"`<br>`"off"` |
 | `model` | Model to use for dialogue generation. | COMBO | No | `"eleven_v3"` |
-| `inputs` | Number of dialogue entries. Selecting a number will generate that many text and voice input fields. | DYNAMICCOMBO | Yes | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
+| `inputs` | Number of dialogue entries. Selecting a number will generate that many text and voice input fields. | DYNAMIC_COMBO | Yes | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
 | `language_code` | ISO-639-1 or ISO-639-3 language code (e.g., 'en', 'es', 'fra'). Leave empty for automatic detection. (default: empty) | STRING | No | - |
 | `seed` | Seed for reproducibility. (default: 1) | INT | No | 0 - 4294967295 |
 | `output_format` | Audio output format. | COMBO | No | `"mp3_44100_192"`<br>`"opus_48000_192"` |

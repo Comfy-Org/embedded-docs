@@ -12,7 +12,7 @@
 | `右侧图像` | 物体右侧的可选图像，用于多视角生成。分辨率至少为128x128像素。 | IMAGE | 否 | - |
 | `背面图像` | 物体背面的可选图像，用于多视角生成。分辨率至少为128x128像素。 | IMAGE | 否 | - |
 | `面数` | 生成3D模型的目标面数（默认值：500000）。 | INT | 是 | 3000 - 1500000 |
-| `生成类型` | 要生成的3D模型类型。选择某个选项会显示额外的相关参数。 | DYNAMICCOMBO | 是 | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
+| `生成类型` | 要生成的3D模型类型。选择某个选项会显示额外的相关参数。 | DYNAMIC_COMBO | 是 | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
 | `generate_type.pbr` | 启用基于物理渲染（PBR）材质生成。此参数仅在`生成类型`设置为"Normal"或"LowPoly"时可见（默认值：False）。 | BOOLEAN | 否 | - |
 | `generate_type.polygon_type` | 网格使用的多边形类型。此参数仅在`生成类型`设置为"LowPoly"时可见。 | COMBO | 否 | `"triangle"`<br>`"quadrilateral"` |
 | `种子` | 生成过程的种子值。种子控制节点是否应重新运行；无论种子如何，结果均非确定性（默认值：0）。 | INT | 是 | 0 - 2147483647 |

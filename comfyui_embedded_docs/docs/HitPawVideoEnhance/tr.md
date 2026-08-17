@@ -34,7 +34,7 @@ HitPaw Video Enhance düğümü, videoların kalitesini artırmak için harici b
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Video iyileştirme için kullanılacak AI modeli. Bir model seçmek, iç içe geçmiş bir `resolution` parametresini ortaya çıkarır. Mevcut modeller ve destekledikleri çözünürlükler farklılık gösterir. | DYNAMIC COMBO | Evet | Birden çok seçenek mevcut |
+| `model` | Video iyileştirme için kullanılacak AI modeli. Bir model seçmek, iç içe geçmiş bir `resolution` parametresini ortaya çıkarır. Mevcut modeller ve destekledikleri çözünürlükler farklılık gösterir. | DYNAMIC_COMBO | Evet | Birden çok seçenek mevcut |
 | `model.resolution` | İyileştirilmiş video için hedef çözünürlük. Seçilen `model`'e bağlı olarak bazı seçenekler kullanılamayabilir. | COMBO | Evet | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` |
 | `video` | İyileştirilecek giriş video dosyası. | VIDEO | Evet | Yok |
 

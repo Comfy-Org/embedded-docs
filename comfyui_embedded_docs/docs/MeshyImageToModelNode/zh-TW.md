@@ -12,11 +12,11 @@ Meshy：圖片轉模型節點使用 Meshy API 從單一輸入圖片生成 3D 模
 | --- | --- | --- | --- | --- |
 | `model` | 指定用於生成的 AI 模型版本。 | COMBO | 是 | `"latest"` |
 | `image` | 要轉換為 3D 模型的輸入圖片。 | IMAGE | 是 | - |
-| `should_remesh` | 決定是否處理生成的網格。設為 `"false"` 時，節點會傳回未經處理的三角形網格。 | DYNAMIC COMBO | 是 | `"true"`<br>`"false"` |
+| `should_remesh` | 決定是否處理生成的網格。設為 `"false"` 時，節點會傳回未經處理的三角形網格。 | DYNAMIC_COMBO | 是 | `"true"`<br>`"false"` |
 | `topology` | 重新網格化模型的目標多邊形拓撲結構。此輸入僅在 `should_remesh` 設為 `"true"` 時可用。 | COMBO | 否* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | 重新網格化模型的目標多邊形數量。此輸入僅在 `should_remesh` 設為 `"true"` 時可用。預設值為 300000。 | INT | 否* | 100 - 300000 |
 | `symmetry_mode` | 控制應用於生成 3D 模型的對稱性。 | COMBO | 是 | `"auto"`<br>`"on"`<br>`"off"` |
-| `should_texture` | 決定是否為模型生成紋理。設為 `"false"` 會跳過紋理階段，並傳回一個沒有紋理的網格。 | DYNAMIC COMBO | 是 | `"true"`<br>`"false"` |
+| `should_texture` | 決定是否為模型生成紋理。設為 `"false"` 會跳過紋理階段，並傳回一個沒有紋理的網格。 | DYNAMIC_COMBO | 是 | `"true"`<br>`"false"` |
 | `enable_pbr` | 當 `should_texture` 為 `"true"` 時，此選項會在基礎顏色之外，額外生成 PBR 貼圖（金屬、粗糙度、法線）。預設值為 `False`。 | BOOLEAN | 否* | - |
 | `texture_prompt` | 用於引導紋理生成過程的文字提示（最多 600 個字元）。此輸入僅在 `should_texture` 設為 `"true"` 時可用。不能與 `texture_image` 同時使用。 | STRING | 否* | - |
 | `texture_image` | 用於引導紋理生成過程的圖片。此輸入僅在 `should_texture` 設為 `"true"` 時可用。不能與 `texture_prompt` 同時使用。 | IMAGE | 否* | - |

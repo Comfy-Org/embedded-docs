@@ -10,7 +10,7 @@ The ElevenLabs Text to Speech node converts written text into spoken audio using
 | `text` | The text to convert to speech. | STRING | Yes | N/A |
 | `stability` | Voice stability. Lower values give broader emotional range, higher values produce more consistent but potentially monotonous speech (default: 0.5). | FLOAT | No | 0.0 - 1.0 |
 | `apply_text_normalization` | Text normalization mode. 'auto' lets the system decide, 'on' always applies normalization, 'off' skips it. | COMBO | No | `"auto"`<br>`"on"`<br>`"off"` |
-| `model` | Model to use for text-to-speech. Selecting a model reveals its specific parameters. | DYNAMICCOMBO | No | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
+| `model` | Model to use for text-to-speech. Selecting a model reveals its specific parameters. | DYNAMIC_COMBO | No | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
 | `language_code` | ISO-639-1 or ISO-639-3 language code (e.g., 'en', 'es', 'fra'). Leave empty for automatic detection (default: ""). | STRING | No | N/A |
 | `seed` | Seed for reproducibility (determinism not guaranteed) (default: 1). | INT | No | 0 - 2147483647 |
 | `output_format` | Audio output format. | COMBO | No | `"mp3_44100_192"`<br>`"opus_48000_192"` |

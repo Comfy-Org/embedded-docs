@@ -7,7 +7,7 @@ Bria Expand Image expande una imagen más allá de sus bordes originales generan
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
 | `image` | La imagen de entrada que se va a expandir. | IMAGE | Sí | — |
-| `expand_mode` | Forma objetivo de la imagen expandida: una relación de aspecto predefinida, una relación personalizada o la colocación manual de la imagen original en un lienzo. Manual es el único modo que puede alcanzar un lienzo más alto que 1:2. Seleccionar `custom_ratio` muestra `ratio_width` y `ratio_height`. Seleccionar `manual` muestra el lienzo y los parámetros de colocación de la imagen. | COMBO | Sí | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"custom_ratio"`<br>`"manual"` |
+| `expand_mode` | Forma objetivo de la imagen expandida: una relación de aspecto predefinida, una relación personalizada o la colocación manual de la imagen original en un lienzo. Manual es el único modo que puede alcanzar un lienzo más alto que 1:2. Seleccionar `custom_ratio` muestra `ratio_width` y `ratio_height`. Seleccionar `manual` muestra el lienzo y los parámetros de colocación de la imagen. | DYNAMIC_COMBO | Sí | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"custom_ratio"`<br>`"manual"` |
 | `ratio_width` | Lado del ancho de la relación objetivo: 21 y 9 dan 21:9. Predeterminado: 21. | INT | Condicional | 1–100 |
 | `ratio_height` | Lado de la altura de la relación objetivo: 21 y 9 dan 21:9. Bria solo acepta relaciones ancho/alto entre 0.5 y 3.0, por lo que cualquier proporción más alta que 1:2 necesita el modo manual. Predeterminado: 9. | INT | Condicional | 1–100 |
 | `canvas_width` | Ancho del lienzo de salida en píxeles. Predeterminado: 1000. | INT | Condicional | 64–5000 |
@@ -19,7 +19,7 @@ Bria Expand Image expande una imagen más allá de sus bordes originales generan
 | `prompt` | Descripción opcional de la escena expandida; cuando está vacío, Bria genera una a partir de la imagen. Predeterminado: cadena vacía. | STRING | No | Cualquier cadena |
 | `negative_prompt` | Un prompt negativo opcional para la expansión. Predeterminado: cadena vacía. | STRING | No | Cualquier cadena |
 | `seed` | Semilla para el proceso de generación aleatoria. Predeterminado: 42. | INT | No | 1–2147483647 |
-| `moderation` | Configuración de moderación. Cuando está establecido en `true`, se muestran opciones de moderación adicionales. | COMBO | No | `"false"`<br>`"true"` |
+| `moderation` | Configuración de moderación. Cuando está establecido en `true`, se muestran opciones de moderación adicionales. | DYNAMIC_COMBO | No | `"false"`<br>`"true"` |
 | `prompt_content_moderation` | Si está habilitado, modera el contenido del prompt. Predeterminado: false. Solo disponible cuando `moderation` es `true`. | BOOLEAN | Condicional | true/false |
 | `visual_input_moderation` | Si está habilitado, modera la entrada visual. Predeterminado: false. Solo disponible cuando `moderation` es `true`. | BOOLEAN | Condicional | true/false |
 | `visual_output_moderation` | Si está habilitado, modera la salida visual. Predeterminado: false. Solo disponible cuando `moderation` es `true`. | BOOLEAN | Condicional | true/false |

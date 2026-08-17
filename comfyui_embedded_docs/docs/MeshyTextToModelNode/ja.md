@@ -13,7 +13,7 @@ Meshy: Text to Model ノードは、Meshy API を使用してテキスト記述�
 | `model` | 使用する AI モデルのバージョンを指定します。現在は "latest" バージョンのみ利用可能です。 | COMBO | はい | `"latest"` |
 | `prompt` | 生成したい 3D モデルのテキスト記述です。1 文字以上 600 文字以下である必要があります。 | STRING | はい | - |
 | `style` | 生成される 3D モデルのアートスタイルです。 | COMBO | はい | `"realistic"`<br>`"sculpture"` |
-| `should_remesh` | 生成されたメッシュを処理するかどうかを制御します。"false" に設定すると、未処理の三角形メッシュが返されます。"true" を選択すると、トポロジーとポリゴン数に関する追加パラメータが表示されます。 | DYNAMIC COMBO | はい | `"true"`<br>`"false"` |
+| `should_remesh` | 生成されたメッシュを処理するかどうかを制御します。"false" に設定すると、未処理の三角形メッシュが返されます。"true" を選択すると、トポロジーとポリゴン数に関する追加パラメータが表示されます。 | DYNAMIC_COMBO | はい | `"true"`<br>`"false"` |
 | `topology` | リメッシュ後のモデルの目標ポリゴンタイプです。このパラメータは `should_remesh` が "true" に設定されている場合のみ利用可能かつ必須となります。 | COMBO | いいえ* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | リメッシュ後のモデルの目標ポリゴン数です。デフォルトは 300000 です。このパラメータは `should_remesh` が "true" に設定されている場合のみ利用可能かつ必須となります。 | INT | いいえ* | 100 - 300000 |
 | `symmetry_mode` | 生成されるモデルの対称性を制御します。 | COMBO | はい | `"auto"`<br>`"on"`<br>`"off"` |

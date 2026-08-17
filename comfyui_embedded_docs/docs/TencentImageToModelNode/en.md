@@ -12,7 +12,7 @@ This node uses Tencent's Hunyuan3D Pro API to generate a 3D model from one or mo
 | `image_right` | An optional image of the object's right side for multi-view generation. Must be at least 128x128 pixels. | IMAGE | No | - |
 | `image_back` | An optional image of the object's back side for multi-view generation. Must be at least 128x128 pixels. | IMAGE | No | - |
 | `face_count` | The target number of faces for the generated 3D model (default: 500000). | INT | Yes | 3000 - 1500000 |
-| `generate_type` | The type of 3D model to generate. Selecting an option reveals additional related parameters. | DYNAMICCOMBO | Yes | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
+| `generate_type` | The type of 3D model to generate. Selecting an option reveals additional related parameters. | DYNAMIC_COMBO | Yes | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
 | `generate_type.pbr` | Enables Physically Based Rendering (PBR) material generation. This parameter is only visible when `generate_type` is set to "Normal" or "LowPoly" (default: False). | BOOLEAN | No | - |
 | `generate_type.polygon_type` | The type of polygon to use for the mesh. This parameter is only visible when `generate_type` is set to "LowPoly". | COMBO | No | `"triangle"`<br>`"quadrilateral"` |
 | `seed` | A seed value for the generation process. Seed controls whether the node should re-run; results are non-deterministic regardless of seed (default: 0). | INT | Yes | 0 - 2147483647 |

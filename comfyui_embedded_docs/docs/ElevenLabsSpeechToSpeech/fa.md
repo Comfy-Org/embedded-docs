@@ -9,7 +9,7 @@
 | `voice` | صدای هدف برای تبدیل. از Voice Selector یا Instant Voice Clone متصل کنید. | CUSTOM | بله | - |
 | `audio` | صدای منبع برای تبدیل. | AUDIO | بله | - |
 | `stability` | پایداری صدا. مقادیر پایین‌تر دامنه احساسی گسترده‌تری می‌دهند، مقادیر بالاتر گفتاری سازگارتر ولی احتمالاً یکنواخت تولید می‌کنند (پیش‌فرض: 0.5). | FLOAT | خیر | 0.0 - 1.0 |
-| `model` | مدل مورد استفاده برای تبدیل گفتار به گفتار. هر گزینه مجموعه خاصی از تنظیمات صدا (similarity_boost، style، use_speaker_boost، speed) را فراهم می‌کند. | DYNAMICCOMBO | خیر | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` |
+| `model` | مدل مورد استفاده برای تبدیل گفتار به گفتار. هر گزینه مجموعه خاصی از تنظیمات صدا (similarity_boost، style، use_speaker_boost، speed) را فراهم می‌کند. | DYNAMIC_COMBO | خیر | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` |
 | `output_format` | قالب خروجی صدا (پیش‌فرض: "mp3_44100_192"). | COMBO | خیر | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 | `seed` | Seed برای تکرارپذیری (پیش‌فرض: 0). | INT | خیر | 0 - 4294967295 |
 | `remove_background_noise` | حذف نویز پس‌زمینه از صدای ورودی با استفاده از جداسازی صدا (پیش‌فرض: False). | BOOLEAN | خیر | - |

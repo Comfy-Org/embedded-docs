@@ -9,7 +9,7 @@ Meshy: Metinden Modele düğümü, bir metin açıklamasından 3B model oluştur
 | `model` | Kullanılacak AI model sürümünü belirtir. Şu anda yalnızca "latest" (en son) sürümü mevcuttur. | COMBO | Evet | `"latest"` |
 | `prompt` | Oluşturmak istediğiniz 3B modelin metin açıklaması. 1 ile 600 karakter arasında olmalıdır. | STRING | Evet | - |
 | `style` | Oluşturulan 3B model için sanatsal stil. | COMBO | Evet | `"realistic"`<br>`"sculpture"` |
-| `should_remesh` | Oluşturulan ağın işlenip işlenmeyeceğini kontrol eder. "false" olarak ayarlandığında, düğüm işlenmemiş bir üçgen ağ döndürür. "true" seçildiğinde, topoloji ve çokgen sayısı için ek parametreler görünür hale gelir. | DYNAMIC COMBO | Evet | `"true"`<br>`"false"` |
+| `should_remesh` | Oluşturulan ağın işlenip işlenmeyeceğini kontrol eder. "false" olarak ayarlandığında, düğüm işlenmemiş bir üçgen ağ döndürür. "true" seçildiğinde, topoloji ve çokgen sayısı için ek parametreler görünür hale gelir. | DYNAMIC_COMBO | Evet | `"true"`<br>`"false"` |
 | `topology` | Yeniden ağ oluşturulan model için hedef çokgen türü. Bu parametre yalnızca `should_remesh` "true" olarak ayarlandığında kullanılabilir ve zorunludur. | COMBO | Hayır* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | Yeniden ağ oluşturulan model için hedef çokgen sayısı. Varsayılan değer 300000'dir. Bu parametre yalnızca `should_remesh` "true" olarak ayarlandığında kullanılabilir ve zorunludur. | INT | Hayır* | 100 - 300000 |
 | `symmetry_mode` | Oluşturulan modelde simetriyi kontrol eder. | COMBO | Evet | `"auto"`<br>`"on"`<br>`"off"` |

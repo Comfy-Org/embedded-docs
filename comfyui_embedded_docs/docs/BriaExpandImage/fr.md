@@ -7,7 +7,7 @@ Bria Expand Image étend une image au-delà de ses bordures d'origine en génér
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image d'entrée à étendre. | IMAGE | Oui | — |
-| `expand_mode` | Forme cible de l'image étendue : un ratio d'aspect prédéfini, un ratio personnalisé, ou un placement manuel de l'image d'origine sur un canevas. Le mode manuel est le seul à pouvoir atteindre un canevas plus haut que 1:2. La sélection de `custom_ratio` révèle `ratio_width` et `ratio_height`. La sélection de `manual` révèle les paramètres de canevas et de placement de l'image. | COMBO | Oui | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"custom_ratio"`<br>`"manual"` |
+| `expand_mode` | Forme cible de l'image étendue : un ratio d'aspect prédéfini, un ratio personnalisé, ou un placement manuel de l'image d'origine sur un canevas. Le mode manuel est le seul à pouvoir atteindre un canevas plus haut que 1:2. La sélection de `custom_ratio` révèle `ratio_width` et `ratio_height`. La sélection de `manual` révèle les paramètres de canevas et de placement de l'image. | DYNAMIC_COMBO | Oui | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"custom_ratio"`<br>`"manual"` |
 | `ratio_width` | Côté largeur du ratio cible : 21 et 9 donnent 21:9. Valeur par défaut : 21. | INT | Conditionnel | 1–100 |
 | `ratio_height` | Côté hauteur du ratio cible : 21 et 9 donnent 21:9. Bria n'accepte que les ratios largeur/hauteur entre 0,5 et 3,0, donc tout ce qui est plus haut que 1:2 nécessite le mode manuel. Valeur par défaut : 9. | INT | Conditionnel | 1–100 |
 | `canvas_width` | Largeur du canevas de sortie en pixels. Valeur par défaut : 1000. | INT | Conditionnel | 64–5000 |
@@ -19,7 +19,7 @@ Bria Expand Image étend une image au-delà de ses bordures d'origine en génér
 | `prompt` | Description facultative de la scène étendue ; si elle est vide, Bria en génère une à partir de l'image. Valeur par défaut : chaîne vide. | STRING | Non | Toute chaîne |
 | `negative_prompt` | Un prompt négatif facultatif pour l'expansion. Valeur par défaut : chaîne vide. | STRING | Non | Toute chaîne |
 | `seed` | Graine pour le processus de génération aléatoire. Valeur par défaut : 42. | INT | Non | 1–2147483647 |
-| `moderation` | Paramètres de modération. Lorsqu'elle est définie sur `true`, des options de modération supplémentaires sont affichées. | COMBO | Non | `"false"`<br>`"true"` |
+| `moderation` | Paramètres de modération. Lorsqu'elle est définie sur `true`, des options de modération supplémentaires sont affichées. | DYNAMIC_COMBO | Non | `"false"`<br>`"true"` |
 | `prompt_content_moderation` | Si activé, modère le contenu du prompt. Valeur par défaut : false. Disponible uniquement lorsque `moderation` est `true`. | BOOLEAN | Conditionnel | true/false |
 | `visual_input_moderation` | Si activé, modère l'entrée visuelle. Valeur par défaut : false. Disponible uniquement lorsque `moderation` est `true`. | BOOLEAN | Conditionnel | true/false |
 | `visual_output_moderation` | Si activé, modère la sortie visuelle. Valeur par défaut : false. Disponible uniquement lorsque `moderation` est `true`. | BOOLEAN | Conditionnel | true/false |

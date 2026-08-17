@@ -17,7 +17,7 @@ Magnific Image Relight 節點可調整輸入影像的光線。它能根據文字
 | `interpolate_from_original` | 限制生成自由度以更貼近原始影像。預設值：False。 | BOOLEAN | 是 | 不適用 |
 | `change_background` | 根據提示/參考影像修改背景。預設值：True。 | BOOLEAN | 是 | 不適用 |
 | `preserve_details` | 保留原始影像的紋理和細節。預設值：True。 | BOOLEAN | 是 | 不適用 |
-| `advanced_settings` | 進階光線控制的微調選項。設為 `"enabled"` 時，將啟用其他參數。 | DYNAMICCOMBO | 是 | `"disabled"`<br>`"enabled"` |
+| `advanced_settings` | 進階光線控制的微調選項。設為 `"enabled"` 時，將啟用其他參數。 | DYNAMIC_COMBO | 是 | `"disabled"`<br>`"enabled"` |
 | `reference_image` | 可選的參考影像，用於從中轉移光線。若提供，需要剛好一張影像。最小尺寸為 160x160 像素。長寬比必須介於 1:3 到 3:1 之間。 | IMAGE | 否 | 不適用 |
 
 **關於進階設定的說明：** 當 `advanced_settings` 設為 `"enabled"` 時，以下嵌套參數將啟用：

@@ -7,8 +7,8 @@ Bria Eraser 使用 Bria API 从图像中移除对象或区域。您提供一张�
 |-----------|-------------|-----------|----------|-------|
 | `image` | 包含待移除对象或区域的输入图像。 | IMAGE | 是 | - |
 | `mask` | 白色区域将被擦除，黑色区域将被保留。掩码在发送前会进行二值化处理，因此部分绘制的区域会被视为白色。掩码必须与图像具有相同的宽高比。 | MASK | 是 | - |
-| `mask_type` | 选择掩码的创建方式。"manual" 用于手绘或画笔掩码；"automatic" 用于由 SAM 等分割模型生成的掩码。 | STRING | 是 | "manual"<br>"automatic" |
-| `moderation` | 审核设置。设置为 "true" 可对输入和/或输出图像启用内容审核。 | STRING | 是 | "false"<br>"true" |
+| `mask_type` | 选择掩码的创建方式。"manual" 用于手绘或画笔掩码；"automatic" 用于由 SAM 等分割模型生成的掩码。 | COMBO | 是 | "manual"<br>"automatic" |
+| `moderation` | 审核设置。设置为 "true" 可对输入和/或输出图像启用内容审核。 | DYNAMIC_COMBO | 是 | "false"<br>"true" |
 
 注意：当 `moderation` 设置为 "true" 时，会出现两个额外的布尔设置：
 

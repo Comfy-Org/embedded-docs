@@ -8,8 +8,8 @@ Bria Eraser supprime des objets ou des zones d’une image à l’aide de l’AP
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L’image d’entrée contenant les objets ou zones à supprimer. | IMAGE | Oui | - |
 | `mask` | Les zones blanches sont effacées, les zones noires sont conservées. Le masque est binarisé avant l’envoi, donc les zones partiellement peintes comptent comme blanches. Il doit avoir le même rapport hauteur/largeur que l’image. | MASK | Oui | - |
-| `mask_type` | Sélectionne la manière dont le masque a été créé. « manual » correspond aux masques dessinés à la main ou au pinceau ; « automatic » correspond aux masques produits par des modèles de segmentation tels que SAM. | STRING | Oui | « manual »<br>« automatic » |
-| `moderation` | Paramètres de modération. Définissez « true » pour activer la modération du contenu sur les images d’entrée et/ou de sortie. | STRING | Oui | « false »<br>« true » |
+| `mask_type` | Sélectionne la manière dont le masque a été créé. « manual » correspond aux masques dessinés à la main ou au pinceau ; « automatic » correspond aux masques produits par des modèles de segmentation tels que SAM. | COMBO | Oui | « manual »<br>« automatic » |
+| `moderation` | Paramètres de modération. Définissez « true » pour activer la modération du contenu sur les images d’entrée et/ou de sortie. | DYNAMIC_COMBO | Oui | « false »<br>« true » |
 
 Remarque : lorsque `moderation` est défini sur « true », deux paramètres booléens supplémentaires deviennent disponibles :
 

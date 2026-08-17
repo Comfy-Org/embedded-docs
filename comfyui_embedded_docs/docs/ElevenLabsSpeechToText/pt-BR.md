@@ -7,7 +7,7 @@ O nó ElevenLabs Speech to Text transcreve arquivos de áudio em texto. Ele util
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `áudio` | Áudio a ser transcrito. | AUDIO | Sim | - |
-| `modelo` | Modelo a ser usado para transcrição. Selecionar este modelo revela parâmetros adicionais. | COMBO | Sim | `"scribe_v2"` |
+| `modelo` | Modelo a ser usado para transcrição. Selecionar este modelo revela parâmetros adicionais. | DYNAMIC_COMBO | Sim | `"scribe_v2"` |
 | `tag_audio_events` | Anotar sons como (risadas), (música), etc. na transcrição. Este parâmetro é revelado quando o modelo `"scribe_v2"` é selecionado. (padrão: False) | BOOLEAN | Não | - |
 | `diarize` | Anotar qual falante está falando. Este parâmetro é revelado quando o modelo `"scribe_v2"` é selecionado. (padrão: False) | BOOLEAN | Não | - |
 | `diarization_threshold` | Sensibilidade de separação de falantes. Valores menores são mais sensíveis a mudanças de falante. Este parâmetro é revelado quando o modelo `"scribe_v2"` é selecionado e `diarize` está ativado. (padrão: 0,22) | FLOAT | Não | 0,1 - 0,4 |

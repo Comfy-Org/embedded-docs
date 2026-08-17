@@ -12,7 +12,7 @@ Ce nœud utilise l'API Tencent Hunyuan3D Pro pour générer un modèle 3D à par
 | `image droite` | Une image optionnelle du côté droit de l'objet pour une génération multi-vue. Doit faire au moins 128x128 pixels. | IMAGE | Non | - |
 | `image arrière` | Une image optionnelle de l'arrière de l'objet pour une génération multi-vue. Doit faire au moins 128x128 pixels. | IMAGE | Non | - |
 | `nombre de faces` | Le nombre cible de faces pour le modèle 3D généré (par défaut : 500000). | INT | Oui | 3000 - 1500000 |
-| `type de génération` | Le type de modèle 3D à générer. La sélection d'une option révèle des paramètres supplémentaires associés. | DYNAMICCOMBO | Oui | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
+| `type de génération` | Le type de modèle 3D à générer. La sélection d'une option révèle des paramètres supplémentaires associés. | DYNAMIC_COMBO | Oui | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
 | `generate_type.pbr` | Active la génération de matériaux basée sur le rendu physique (PBR). Ce paramètre n'est visible que lorsque `type de génération` est défini sur "Normal" ou "LowPoly" (par défaut : False). | BOOLEAN | Non | - |
 | `generate_type.polygon_type` | Le type de polygone à utiliser pour le maillage. Ce paramètre n'est visible que lorsque `type de génération` est défini sur "LowPoly". | COMBO | Non | `"triangle"`<br>`"quadrilateral"` |
 | `graine` | Une valeur de graine pour le processus de génération. La graine détermine si le nœud doit être réexécuté ; les résultats ne sont pas déterministes, quelle que soit la graine (par défaut : 0). | INT | Oui | 0 - 2147483647 |

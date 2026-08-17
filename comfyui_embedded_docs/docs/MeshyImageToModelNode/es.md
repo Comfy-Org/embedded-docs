@@ -8,11 +8,11 @@ El nodo **Meshy: Imagen a Modelo** utiliza la API de Meshy para generar un model
 | --- | --- | --- | --- | --- |
 | `modelo` | Especifica la versión del modelo de IA a utilizar para la generación. | COMBO | Sí | `"latest"` |
 | `imagen` | La imagen de entrada que se convertirá en un modelo 3D. | IMAGE | Sí | - |
-| `remallar` | Determina si la malla generada debe procesarse. Cuando se establece en `"false"`, el nodo devuelve una malla triangular sin procesar. | COMBO DINÁMICO | Sí | `"true"`<br>`"false"` |
+| `remallar` | Determina si la malla generada debe procesarse. Cuando se establece en `"false"`, el nodo devuelve una malla triangular sin procesar. | DYNAMIC_COMBO | Sí | `"true"`<br>`"false"` |
 | `topology` | La topología de polígonos objetivo para el modelo remallado. Esta entrada solo está disponible cuando `remallar` está configurado en `"true"`. | COMBO | No* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | El número objetivo de polígonos para el modelo remallado. Esta entrada solo está disponible cuando `remallar` está configurado en `"true"`. El valor predeterminado es 300000. | INT | No* | 100 - 300000 |
 | `modo de simetría` | Controla la simetría aplicada al modelo 3D generado. | COMBO | Sí | `"auto"`<br>`"on"`<br>`"off"` |
-| `texturizar` | Determina si se generan texturas para el modelo. Configurarlo en `"false"` omite la fase de texturizado y devuelve una malla sin texturas. | COMBO DINÁMICO | Sí | `"true"`<br>`"false"` |
+| `texturizar` | Determina si se generan texturas para el modelo. Configurarlo en `"false"` omite la fase de texturizado y devuelve una malla sin texturas. | DYNAMIC_COMBO | Sí | `"true"`<br>`"false"` |
 | `enable_pbr` | Cuando `texturizar` es `"true"`, esta opción genera mapas PBR (metálico, rugosidad, normal) además del color base. El valor predeterminado es `False`. | BOOLEAN | No* | - |
 | `texture_prompt` | Un prompt de texto para guiar el proceso de texturizado (máximo 600 caracteres). Esta entrada solo está disponible cuando `texturizar` está configurado en `"true"`. No se puede usar al mismo tiempo que `texture_image`. | STRING | No* | - |
 | `texture_image` | Una imagen para guiar el proceso de texturizado. Esta entrada solo está disponible cuando `texturizar` está configurado en `"true"`. No se puede usar al mismo tiempo que `texture_prompt`. | IMAGE | No* | - |

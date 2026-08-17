@@ -15,7 +15,7 @@ Magnific Image Relight düğümü, bir girdi görüntüsünün aydınlatmasını
 | `interpolate_from_original` | Orijinale daha yakın eşleşmesi için üretim özgürlüğünü kısıtlar. Varsayılan: False. | BOOLEAN | Evet | Yok |
 | `change_background` | İstem/referansa göre arka planı değiştirir. Varsayılan: True. | BOOLEAN | Evet | Yok |
 | `preserve_details` | Orijinalden doku ve ince ayrıntıları korur. Varsayılan: True. | BOOLEAN | Evet | Yok |
-| `advanced_settings` | Gelişmiş aydınlatma kontrolü için ince ayar seçenekleri. `"enabled"` olarak ayarlandığında ek parametreler kullanılabilir hale gelir. | DYNAMICCOMBO | Evet | `"disabled"`<br>`"enabled"` |
+| `advanced_settings` | Gelişmiş aydınlatma kontrolü için ince ayar seçenekleri. `"enabled"` olarak ayarlandığında ek parametreler kullanılabilir hale gelir. | DYNAMIC_COMBO | Evet | `"disabled"`<br>`"enabled"` |
 | `reference_image` | Aydınlatmanın aktarılacağı isteğe bağlı referans görüntü. Sağlanırsa tam olarak bir görüntü gereklidir. Minimum boyutlar 160x160 pikseldir. En-boy oranı 1:3 ile 3:1 arasında olmalıdır. | IMAGE | Hayır | Yok |
 
 **Gelişmiş Ayarlar Hakkında Not:** `advanced_settings` `"enabled"` olarak ayarlandığında, aşağıdaki iç içe parametreler etkinleşir:

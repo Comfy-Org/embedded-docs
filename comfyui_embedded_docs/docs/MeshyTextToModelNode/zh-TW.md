@@ -9,7 +9,7 @@ Meshy：文字轉模型節點使用 Meshy API 從文字描述生成 3D 模型。
 | `model` | 指定要使用的 AI 模型版本。目前僅提供「最新」版本。 | COMBO | 是 | `"latest"` |
 | `prompt` | 您想要生成的 3D 模型的文字描述。長度必須在 1 到 600 個字元之間。 | STRING | 是 | - |
 | `style` | 生成 3D 模型的藝術風格。 | COMBO | 是 | `"realistic"`<br>`"sculpture"` |
-| `should_remesh` | 控制是否處理生成的網格。設為「false」時，節點會傳回未經處理的三角形網格。選擇「true」會顯示拓撲和多邊形數量的額外參數。 | DYNAMIC COMBO | 是 | `"true"`<br>`"false"` |
+| `should_remesh` | 控制是否處理生成的網格。設為「false」時，節點會傳回未經處理的三角形網格。選擇「true」會顯示拓撲和多邊形數量的額外參數。 | DYNAMIC_COMBO | 是 | `"true"`<br>`"false"` |
 | `topology` | 重新網格化模型的目標多邊形類型。此參數僅在 `should_remesh` 設為「true」時可用且必要。 | COMBO | 否* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | 重新網格化模型的目標多邊形數量。預設值為 300000。此參數僅在 `should_remesh` 設為「true」時可用且必要。 | INT | 否* | 100 - 300000 |
 | `symmetry_mode` | 控制生成模型的對稱性。 | COMBO | 是 | `"auto"`<br>`"on"`<br>`"off"` |

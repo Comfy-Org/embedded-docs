@@ -9,7 +9,7 @@ ColorTransfer 节点用于调整目标图像的调色板，使其与参考图像
 | `image_target` | 需要应用色彩变换的图像。 | IMAGE | 是 | - |
 | `image_ref` | 用于匹配颜色的参考图像。 | IMAGE | 是 | - |
 | `method` | 使用的色彩迁移算法。 | COMBO | 是 | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` |
-| `source_stats` | 确定如何从源（目标）图像计算色彩统计信息。 | DYNAMICCOMBO | 是 | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
+| `source_stats` | 确定如何从源（目标）图像计算色彩统计信息。 | DYNAMIC_COMBO | 是 | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
 | `strength` | 色彩迁移效果的强度。值为 1.0 时应用完整变换，值为 0.0 时返回原始图像。默认值：1.0 | FLOAT | 是 | 0.0 至 10.0 |
 
 **参数详情：**

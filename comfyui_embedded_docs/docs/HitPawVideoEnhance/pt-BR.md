@@ -8,7 +8,7 @@ O nó HitPaw Video Enhance utiliza uma API externa para melhorar a qualidade de 
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
-| `modelo` | O modelo de IA a ser usado para aprimoramento de vídeo. Selecionar um modelo revela um parâmetro `resolution` aninhado. Os modelos disponíveis e suas resoluções suportadas variam. | DYNAMIC COMBO | Sim | Múltiplas opções disponíveis |
+| `modelo` | O modelo de IA a ser usado para aprimoramento de vídeo. Selecionar um modelo revela um parâmetro `resolution` aninhado. Os modelos disponíveis e suas resoluções suportadas variam. | DYNAMIC_COMBO | Sim | Múltiplas opções disponíveis |
 | `model.resolution` | A resolução alvo para o vídeo aprimorado. Algumas opções podem não estar disponíveis dependendo do `modelo` selecionado. | COMBO | Sim | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` |
 | `vídeo` | O arquivo de vídeo de entrada a ser aprimorado. | VIDEO | Sim | N/A |
 

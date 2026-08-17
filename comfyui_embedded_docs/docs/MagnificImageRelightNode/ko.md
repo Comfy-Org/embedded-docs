@@ -13,7 +13,7 @@ Magnific Image Relight 노드는 입력 이미지의 조명을 조정합니다. 
 | `interpolate_from_original` | 원본과 더 가깝게 일치하도록 생성 자유도를 제한합니다. 기본값: False. | BOOLEAN | 예 | 해당 없음 |
 | `change_background` | 프롬프트/참조 이미지에 따라 배경을 수정합니다. 기본값: True. | BOOLEAN | 예 | 해당 없음 |
 | `preserve_details` | 원본의 질감과 미세한 디테일을 유지합니다. 기본값: True. | BOOLEAN | 예 | 해당 없음 |
-| `advanced_settings` | 고급 조명 제어를 위한 미세 조정 옵션입니다. `"enabled"`로 설정하면 추가 매개변수를 사용할 수 있습니다. | DYNAMICCOMBO | 예 | `"disabled"`<br>`"enabled"` |
+| `advanced_settings` | 고급 조명 제어를 위한 미세 조정 옵션입니다. `"enabled"`로 설정하면 추가 매개변수를 사용할 수 있습니다. | DYNAMIC_COMBO | 예 | `"disabled"`<br>`"enabled"` |
 | `reference_image` | 조명을 전송할 선택적 참조 이미지입니다. 제공하는 경우 정확히 하나의 이미지가 필요합니다. 최소 크기는 160x160 픽셀입니다. 종횡비는 1:3에서 3:1 사이여야 합니다. | IMAGE | 아니요 | 해당 없음 |
 
 **고급 설정 참고:** `advanced_settings`를 `"enabled"`로 설정하면 다음 중첩 매개변수가 활성화됩니다:

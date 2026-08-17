@@ -8,11 +8,11 @@
 | --- | --- | --- | --- | --- |
 | `model` | Oluşturma için kullanılacak yapay zeka modeli sürümünü belirtir. | COMBO | Evet | `"latest"` |
 | `image` | 3B modele dönüştürülecek giriş görüntüsü. | IMAGE | Evet | - |
-| `should_remesh` | Oluşturulan ağın işlenip işlenmeyeceğini belirler. `"false"` olarak ayarlandığında, düğüm işlenmemiş bir üçgen ağ döndürür. | DYNAMIC COMBO | Evet | `"true"`<br>`"false"` |
+| `should_remesh` | Oluşturulan ağın işlenip işlenmeyeceğini belirler. `"false"` olarak ayarlandığında, düğüm işlenmemiş bir üçgen ağ döndürür. | DYNAMIC_COMBO | Evet | `"true"`<br>`"false"` |
 | `topology` | Yeniden ağ oluşturulan model için hedef çokgen topolojisi. Bu girdi yalnızca `should_remesh` `"true"` olarak ayarlandığında kullanılabilir. | COMBO | Hayır* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | Yeniden ağ oluşturulan model için hedef çokgen sayısı. Bu girdi yalnızca `should_remesh` `"true"` olarak ayarlandığında kullanılabilir. Varsayılan değer 300000'dir. | INT | Hayır* | 100 - 300000 |
 | `symmetry_mode` | Oluşturulan 3B modele uygulanan simetriyi kontrol eder. | COMBO | Evet | `"auto"`<br>`"on"`<br>`"off"` |
-| `should_texture` | Model için doku oluşturulup oluşturulmayacağını belirler. `"false"` olarak ayarlanması doku aşamasını atlar ve dokusuz bir ağ döndürür. | DYNAMIC COMBO | Evet | `"true"`<br>`"false"` |
+| `should_texture` | Model için doku oluşturulup oluşturulmayacağını belirler. `"false"` olarak ayarlanması doku aşamasını atlar ve dokusuz bir ağ döndürür. | DYNAMIC_COMBO | Evet | `"true"`<br>`"false"` |
 | `enable_pbr` | `should_texture` `"true"` olduğunda, bu seçenek temel renge ek olarak PBR haritaları (metalik, pürüzlülük, normal) oluşturur. Varsayılan değer `False`'dur. | BOOLEAN | Hayır* | - |
 | `texture_prompt` | Doku oluşturma sürecini yönlendiren bir metin istemi (maksimum 600 karakter). Bu girdi yalnızca `should_texture` `"true"` olarak ayarlandığında kullanılabilir. `texture_image` ile aynı anda kullanılamaz. | STRING | Hayır* | - |
 | `texture_image` | Doku oluşturma sürecini yönlendiren bir görüntü. Bu girdi yalnızca `should_texture` `"true"` olarak ayarlandığında kullanılabilir. `texture_prompt` ile aynı anda kullanılamaz. | IMAGE | Hayır* | - |

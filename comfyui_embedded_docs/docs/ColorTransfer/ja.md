@@ -11,7 +11,7 @@ ColorTransferノードは、ターゲット画像のカラーパレットを調�
 | `image_target` | カラー変換を適用する画像 | IMAGE | はい | - |
 | `image_ref` | 色を合わせるための参照画像 | IMAGE | はい | - |
 | `method` | 使用するカラー転送アルゴリズム | COMBO | はい | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` |
-| `source_stats` | ソース（ターゲット）画像から色統計を計算する方法を指定します | DYNAMICCOMBO | はい | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
+| `source_stats` | ソース（ターゲット）画像から色統計を計算する方法を指定します | DYNAMIC_COMBO | はい | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
 | `strength` | カラー転送効果の強度。1.0で完全な変換を適用し、0.0で元の画像を返します。デフォルト：1.0 | FLOAT | はい | 0.0 ～ 10.0 |
 
 **パラメータの詳細：**
