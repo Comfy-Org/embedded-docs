@@ -1,38 +1,47 @@
 # Bria Image Edit
 
-Voici la traduction en français de la documentation du nœud Bria FIBO Image Edit :
-
-Le nœud Bria FIBO Image Edit vous permet de modifier une image existante à l'aide d'une instruction textuelle. Il envoie l'image et votre invite à l'API Bria, qui utilise le modèle FIBO pour générer une nouvelle version modifiée de l'image en fonction de votre demande. Vous pouvez également fournir un masque pour limiter les modifications à une zone spécifique.
+Le nœud Bria FIBO Image Edit vous permet de modifier une image existante à l'aide d'une instruction texte. Il envoie l'image et votre prompt à l'API Bria, qui utilise le modèle FIBO pour créer une version modifiée de l'image. Vous pouvez également fournir un masque pour limiter les modifications à une zone spécifique.
 
 ## Entrées
 
+### Entrées communes
+
 | Paramètre | Description | Type de données | Requis | Plage |
-| --- | --- | --- | --- | --- |
-| `modèle` | La version du modèle à utiliser pour l'édition d'image. | COMBO | Oui | `"FIBO"` |
+|-----------|-------------|-----------------|--------|-------|
+| `model` | La version du modèle à utiliser pour la modification d'image. | COMBO | Oui | `"FIBO"` |
 | `image` | L'image d'entrée que vous souhaitez modifier. | IMAGE | Oui | - |
-| `invite` | L'instruction textuelle décrivant comment modifier l'image (par défaut : vide). | STRING | Non | - |
-| `invite négative` | Texte décrivant ce que vous ne souhaitez pas voir apparaître dans l'image modifiée (par défaut : vide). | STRING | Non | - |
-| `invite structurée` | Une chaîne contenant l'invite d'édition structurée au format JSON. Utilisez-la à la place de l'invite habituelle pour un contrôle précis et programmatique (par défaut : vide). | STRING | Non | - |
-| `graine` | Un nombre utilisé pour initialiser la génération aléatoire, garantissant des résultats reproductibles (par défaut : 1). | INT | Oui | 1 à 2147483647 |
-| `échelle de guidage` | Contrôle à quel point l'image générée suit l'invite. Une valeur plus élevée entraîne une adhérence plus forte (par défaut : 3,0). | FLOAT | Oui | 3,0 à 5,0 |
-| `étapes` | Le nombre d'étapes de débruitage que le modèle effectuera (par défaut : 50). | INT | Oui | 20 à 50 |
-| `modération` | Active ou désactive la modération du contenu. La sélection de `"true"` révèle des options de modération supplémentaires pour le contenu de l'invite, l'entrée visuelle et la sortie visuelle. | DYNAMICCOMBO | Oui | `"false"`<br>`"true"` |
-| `masque` | Une image de masque optionnelle. Si fournie, les modifications ne seront appliquées qu'aux zones masquées de l'image. | MASK | Non | - |
+| `prompt` | Instruction pour modifier l'image (défaut : vide). | STRING | Oui | - |
+| `negative_prompt` | Texte décrivant ce que vous ne voulez pas voir apparaître dans l'image modifiée (défaut : vide). | STRING | Oui | - |
+| `structured_prompt` | Chaîne contenant le prompt de modification structuré au format JSON. Utilisez-la à la place du prompt habituel pour un contrôle précis et programmatique (défaut : vide). | STRING | Oui | - |
+| `seed` | Nombre utilisé pour initialiser la génération aléatoire, garantissant des résultats reproductibles (défaut : 1). | INT | Oui | 1 à 2147483647 |
+| `guidance_scale` | Une valeur plus élevée fait que l'image suit le prompt plus fidèlement (défaut : 3). | FLOAT | Oui | 3.0 à 5.0 |
+| `steps` | Le nombre d'étapes de débruitage effectuées par le modèle (défaut : 50). | INT | Oui | 20 à 50 |
+| `moderation` | Paramètres de modération. La sélection de `"true"` révèle des options de modération supplémentaires. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
+| `mask` | S'il est omis, la modification s'applique à l'image entière. | MASK | Non | - |
+
+### Entrées de modération
+
+Lorsque `moderation` est défini sur `"true"`, ces entrées supplémentaires deviennent disponibles :
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `prompt_content_moderation` | Indique si le texte du prompt doit être modéré pour détecter un contenu inapproprié (défaut : false). | BOOLEAN | Non | `true`<br>`false` |
+| `visual_input_moderation` | Indique si l'image d'entrée doit être modérée pour détecter un contenu inapproprié (défaut : false). | BOOLEAN | Non | `true`<br>`false` |
+| `visual_output_moderation` | Indique si l'image de sortie modifiée doit être modérée pour détecter un contenu inapproprié (défaut : true). | BOOLEAN | Non | `true`<br>`false` |
 
 **Contraintes importantes :**
 
-* Vous devez fournir au moins l'une des entrées `prompt` ou `structured_prompt`. Elles ne peuvent pas être toutes les deux vides.
-* Une seule entrée `image` est requise.
-* Lorsque le paramètre `moderation` est défini sur `"true"`, trois entrées booléennes supplémentaires deviennent disponibles : `prompt_content_moderation` (par défaut : false), `visual_input_moderation` (par défaut : false) et `visual_output_moderation` (par défaut : true).
+- Au moins un des deux paramètres `prompt` ou `structured_prompt` doit être non vide. Si les deux sont vides, le nœud génère une erreur.
+- Lorsque `moderation` est défini sur `"true"`, les trois entrées de modération ci-dessus sont affichées.
 
 ## Sorties
 
-| Nom de la sortie | Description | Type de données |
-| --- | --- | --- |
-| `invite structurée` | L'image modifiée renvoyée par l'API Bria. | IMAGE |
-| `invite structurée` | L'invite structurée qui a été utilisée ou générée pendant le processus d'édition. | STRING |
+| Nom de sortie | Description | Type de données |
+|---------------|-------------|-----------------|
+| `IMAGE` | L'image modifiée renvoyée par l'API Bria. | IMAGE |
+| `structured_prompt` | Le prompt structuré utilisé ou généré lors du processus de modification. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaImageEditNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `30148261f43f5bfd14339f5ff1ec250381a615cc05c67eee21b0a2423ebe349d`
+**Source fingerprint (SHA-256):** `e66aaa563a82407408f25b289011a491c8b158822fc2db8912daf73731750081`

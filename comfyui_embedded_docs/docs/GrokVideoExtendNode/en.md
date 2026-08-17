@@ -1,20 +1,28 @@
-# Grok Video Extend Node
+# Grok Video Extend
 
 The Grok Video Extend node uses an AI model to create a seamless continuation of an existing video. You provide a short video and a text prompt describing what should happen next, and the node generates a new video clip that follows on from the original.
 
 ## Inputs
 
+### Common Inputs
+
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
+| `model` | The model to use for video extension. | DYNAMIC_COMBO | Yes | `"grok-imagine-video"` |
 | `prompt` | Text description of what should happen next in the video. | STRING | Yes | N/A |
 | `video` | Source video to extend. MP4 format, 2-15 seconds. | VIDEO | Yes | N/A |
-| `model` | The model to use for video extension. When selected, it reveals a nested `duration` parameter. | COMBO | Yes | `"grok-imagine-video"` |
-| `seed` | Seed to determine if node should re-run; actual results are nondeterministic regardless of seed (default: 0). | INT | No | 0 to 2147483647 |
+| `seed` | Seed to determine if node should re-run; actual results are nondeterministic regardless of seed (default: 0). | INT | Yes | 0 to 2147483647 |
+
+### grok-imagine-video Inputs
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `duration` | Length of the extension in seconds (default: 8). | INT | Yes | 2 to 10 |
 
 **Parameter Constraints:**
 *   The `video` input must be an MP4 file between 2 and 15 seconds in length and cannot exceed 50MB in file size.
 *   The `prompt` must contain at least one character (whitespace is trimmed).
-*   The `model` parameter is a dynamic combo. Selecting the "grok-imagine-video" option reveals a nested `duration` parameter, which controls the length of the extension in seconds (default: 8, range: 2 to 10).
+*   The `model` parameter is a dynamic combo. Selecting the "grok-imagine-video" option reveals the nested `duration` parameter.
 
 ## Outputs
 

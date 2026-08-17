@@ -1,31 +1,36 @@
 # Luma UNI-1 Image
 
-Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageNode2/en.md)
-
 ## Visão Geral
 
-Este nó gera imagens a partir de descrições textuais usando o modelo Luma UNI-1. Ele recebe um prompt de texto e configurações opcionais, como proporção de aspecto e estilo, e então envia a solicitação para a API Luma para criar uma imagem.
+Este nó gera imagens a partir de descrições textuais usando o modelo Luma UNI-1. Ele recebe um prompt de texto e configurações opcionais, como proporção de aspecto e estilo, e envia a solicitação para a API da Luma para criar uma imagem. Duas variantes do modelo estão disponíveis: `uni-1` e `uni-1-max`.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+### Entradas Comuns
+
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `prompt` | Descrição textual da imagem desejada. | STRING | Sim | 1–6000 caracteres |
-| `model` | Modelo a ser usado para a geração. Selecionar um modelo revela configurações adicionais para aquele modelo. | COMBO | Sim | `"uni-1"`<br>`"uni-1-max"` |
+| `model` | Modelo a ser usado para a geração. Selecionar um modelo revela configurações adicionais para esse modelo. | DYNAMIC_COMBO | Sim | `"uni-1"`<br>`"uni-1-max"` |
+| `prompt` | Descrição textual da imagem desejada. De 1 a 6000 caracteres. | STRING | Sim | 1 a 6000 caracteres |
 | `seed` | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente. (padrão: 0) | INT | Sim | 0 a 2147483647 |
 
-### Entradas Específicas do Modelo
+### Entradas de uni-1 e uni-1-max
 
-Quando `"uni-1"` ou `"uni-1-max"` é selecionado para o parâmetro `model`, as seguintes entradas ficam disponíveis:
+Compartilhadas pelas opções de modelo `uni-1` e `uni-1-max`. Essas configurações aparecem quando qualquer um dos modelos é selecionado.
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `aspect_ratio` | Proporção de aspecto da imagem de saída. `"auto"` permite que o modelo escolha com base no prompt. (padrão: `"auto"`) | COMBO | Sim | `"auto"`<br>`"3:1"`<br>`"2:1"`<br>`"16:9"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"9:16"`<br>`"1:2"`<br>`"1:3"` |
-| `style` | O estilo visual para a imagem gerada. (padrão: `"auto"`) | COMBO | Sim | `"auto"`<br>`"manga"` |
-| `web_search` | Se o modelo pode pesquisar na web por contexto adicional. (padrão: Falso) | BOOLEAN | Sim | Verdadeiro / Falso |
-| `image_ref` | Imagens de referência para guiar a geração. | IMAGE | Não | Até 9 imagens |
+| `style` | Predefinição de estilo. `"auto"` escolhe com base no prompt; `"manga"` aplica uma estética de mangá/anime e exige uma proporção de aspecto retrato (2:3, 9:16, 1:2, 1:3). (padrão: `"auto"`) | COMBO | Sim | `"auto"`<br>`"manga"` |
+| `web_search` | Pesquisar na web por referências visuais antes de gerar. (padrão: False) | BOOLEAN | Sim | True / False |
 
-**Nota sobre restrições de `style` e `aspect_ratio`:** Se `style` for definido como `"manga"`, a `aspect_ratio` deve ser `"auto"` ou uma das seguintes proporções de retrato: `"2:3"`, `"9:16"`, `"1:2"`, `"1:3"`. Usar uma proporção paisagem ou quadrada com o estilo `"manga"` causará um erro.
+### Entradas de Referência
+
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
+| --- | --- | --- | --- | --- |
+| `image_ref` | Slot expansível: conecte de 1 a 9 itens (por exemplo, `image_1` a `image_9`). Até 9 imagens de referência para orientação de estilo/conteúdo. | IMAGE | Não | Até 9 imagens |
+
+**Observação:** Se `style` estiver definido como `"manga"`, o `aspect_ratio` deve ser `"auto"` ou uma das proporções retrato `"2:3"`, `"9:16"`, `"1:2"`, `"1:3"`. Usar qualquer outra proporção com o estilo `"manga"` causará um erro. O número máximo de imagens de referência é 9 para ambos `uni-1` e `uni-1-max`.
 
 ## Saídas
 
@@ -36,4 +41,4 @@ Quando `"uni-1"` ou `"uni-1-max"` é selecionado para o parâmetro `model`, as s
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageNode2/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `0a71bcd7c68c3610c162601b4c3f700034e47af8f16cf7853606753ad270c96e`
+**Source fingerprint (SHA-256):** `27254fe4627fd340426a68f651cab4513ffb6668cafc0accd17f2c442f7d3125`

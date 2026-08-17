@@ -1,33 +1,43 @@
 # Génération de vidéo multi-images Vidu
 
-Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduMultiFrameVideoNode/en.md)
-
-Ce nœud génère une vidéo en créant des transitions entre plusieurs images clés. Il part d'une image initiale et anime une séquence d'images finales et de prompts définis par l'utilisateur, produisant un fichier vidéo unique en sortie.
+Ce nœud génère une vidéo en créant des transitions entre plusieurs images clés. Il démarre à partir d'une image initiale et anime une séquence d'images de fin et d'invites définies par l'utilisateur, produisant un fichier vidéo unique en sortie.
 
 ## Entrées
 
+### Entrées communes
+
 | Paramètre | Description | Type de données | Requis | Plage |
-| --- | --- | --- | --- | --- |
-| `modèle` | Le modèle Vidu à utiliser pour la génération vidéo. | COMBO | Oui | `"viduq2-pro"`<br>`"viduq2-turbo"` |
-| `image_de_départ` | L'image de départ. Le rapport hauteur/largeur doit être compris entre 1:4 et 4:1. | IMAGE | Oui | - |
-| `graine` | Une valeur de graine pour la génération de nombres aléatoires, garantissant des résultats reproductibles (par défaut : 1). | INT | Non | 0 à 2147483647 |
-| `résolution` | La résolution de la vidéo de sortie. | COMBO | Oui | `"720p"`<br>`"1080p"` |
-| `images` | Nombre de transitions d'images clés (2-9). La sélection d'une valeur révèle dynamiquement les entrées requises pour chaque image. | DYNAMICCOMBO | Oui | `"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` |
+|-----------|-------------|-----------------|--------|-------|
+| `model` | Le modèle Vidu à utiliser pour la génération vidéo. | COMBO | Oui | "viduq2-pro"<br>"viduq2-turbo" |
+| `start_image` | L'image de départ. Le format d'image doit être compris entre 1:4 et 4:1. | IMAGE | Oui | Format d'image 1:4 à 4:1 |
+| `seed` | Une valeur de graine (seed) pour la génération de nombres aléatoires afin d'assurer des résultats reproductibles (par défaut : 1). | INT | Oui | 0 à 2147483647 |
+| `resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | "720p"<br>"1080p" |
+| `frames` | Nombre de transitions d'images clés (2-9). La sélection d'une valeur révèle dynamiquement les entrées requises pour chaque image. | DYNAMIC_COMBO | Oui | "2"<br>"3"<br>"4"<br>"5"<br>"6"<br>"7"<br>"8"<br>"9" |
 
-**Entrées d'images (révélées dynamiquement) :**
-Lorsque vous sélectionnez une valeur pour `frames` (par exemple, "3"), le nœud affiche un ensemble correspondant d'entrées requises pour chaque transition. Pour chaque image `i` de 1 au nombre sélectionné, vous devez fournir :
+### Entrées des images (partagées par toutes les options de nombre d'images)
 
-* `end_image{i}` (IMAGE) : L'image cible pour cette transition. Le rapport hauteur/largeur doit être compris entre 1:4 et 4:1.
-* `prompt{i}` (STRING) : Une description textuelle guidant la transition vers cette image (2000 caractères maximum).
-* `duration{i}` (INT) : La durée en secondes pour ce segment de transition spécifique.
+Lorsque `frames` est défini sur un nombre, les trois entrées suivantes sont affichées pour chaque image `i` de 1 à ce nombre. Par exemple, choisir « 3 » ajoute `prompt1` / `end_image1` / `duration1`, `prompt2` / `end_image2` / `duration2`, et `prompt3` / `end_image3` / `duration3`.
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `prompt{i}` | Invite de texte pour la transition de l'image {i}. Champ de texte multiligne. 2000 caractères maximum. | STRING | Oui | Jusqu'à 2000 caractères |
+| `end_image{i}` | Image de fin pour le segment {i}. Le format d'image doit être compris entre 1:4 et 4:1. | IMAGE | Oui | Format d'image 1:4 à 4:1 |
+| `duration{i}` | Durée pour le segment {i} en secondes. | INT | Oui | 2 à 7 (par défaut : 4) |
+
+**Remarques :**
+
+- Toutes les entrées sont requises. `seed` possède une valeur par défaut mais reste une entrée requise.
+- `start_image` et chaque `end_image{i}` doivent avoir un format d'image compris entre 1:4 et 4:1.
+- Chaque `prompt{i}` a une longueur maximale de 2000 caractères.
+- Chaque `duration{i}` doit être comprise entre 2 et 7 secondes.
 
 ## Sorties
 
-| Nom de la sortie | Description | Type de données |
-| --- | --- | --- |
+| Nom de sortie | Description | Type de données |
+|---------------|-------------|-----------------|
 | `output` | Le fichier vidéo généré contenant toutes les transitions animées. | VIDEO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduMultiFrameVideoNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `02ddbb1e041b6d9e6654ab6c3cc25f4c2e5bc1545d84a30624608edc85e51f96`
+**Source fingerprint (SHA-256):** `ad877532ba27444938b7b2e4634ac7f8a47db0f7fb53967d874ad38b44336dcf`
