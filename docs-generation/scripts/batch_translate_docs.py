@@ -13,7 +13,6 @@ import time
 import logging
 from pathlib import Path
 from datetime import datetime
-from openai import OpenAI
 
 import runtime  # noqa: F401
 from lib.doc_disclaimer import (
@@ -139,6 +138,20 @@ def strip_ai_preamble(content: str, lang: str) -> str:
 
     return '\n'.join(lines)
 
+def _extract_table_data_rows(table_text: str) -> list[str]:
+    """Return the data rows of a markdown table (lines starting with '|'),
+    excluding the header row and the |---| separator row."""
+    table_lines = [line for line in table_text.split('\n') if line.strip().startswith('|')]
+    data_rows = []
+    for i, line in enumerate(table_lines):
+        if i == 0:
+            continue  # header row
+        if re.match(r'^\|[\s:|-]+\|?$', line.strip()):
+            continue  # separator row
+        data_rows.append(line)
+    return data_rows
+
+
 def _fix_output_names_in_translation(translated_content: str, full_en: str) -> str:
     """Parse the English en.md Outputs table and force output names in translated content
     to match the English original by row index. This prevents the AI from translating
@@ -146,43 +159,32 @@ def _fix_output_names_in_translation(translated_content: str, full_en: str) -> s
 
     Works by:
     1. Extracting output names from en.md Outputs table in order (row by row).
-    2. Extracting output table lines from translated content.
+    2. Extracting output data rows from translated content (rows whose first cell
+       is a backtick-wrapped name).
     3. Replacing the first column (output name) of each row with its English counterpart.
     """
     # Extract English output names
     en_outputs_match = re.search(
-        r'##\s+(?:Outputs|输出|輸出|出力|출력|Выходы|Salidas|Sorties|المخرجات|Çıktılar|خروجی‌ها)\s*\n\n(.*?)(?=\n##|\Z)',
+        r'##\s+(?:Outputs|输出|輸出|出力|출력|Выходы|Salidas|Sorties|المخرجات|Çıktılar|خروجی‌ها)\s*\n(.*?)(?=\n##|\Z)',
         full_en, re.DOTALL
     )
     if not en_outputs_match:
         return translated_content  # No outputs table in English doc, nothing to fix
 
-    en_table = en_outputs_match.group(1).strip()
-    en_lines = en_table.split('\n')
-    if len(en_lines) < 3:
-        return translated_content
-
-    # Skip header row (| Name | Type | ...) and separator row (|---|---|...)
-    # Output names are backtick-wrapped in first column of data rows
     en_output_names = []
-    for line in en_lines[2:]:  # Skip header + separator
-        line = line.strip()
-        if not line.startswith('|'):
-            continue
-        parts = [p.strip() for p in line.split('|')]
-        if len(parts) >= 2:
-            # Extract backtick-wrapped name from first column
-            name = parts[1].strip('`').strip()
-            if name:
-                en_output_names.append(name)
+    for line in _extract_table_data_rows(en_outputs_match.group(1)):
+        m = re.match(r'^\|\s*`([^`]+)`', line.strip())
+        if m:
+            en_output_names.append(m.group(1).strip())
 
     if not en_output_names:
         return translated_content
 
     # Now find and fix the Outputs table in translated content
     # Match any known heading for "Outputs" in any language
+    # (includes pt-BR "Saídas"; heading values come from translation_config.json)
     tr_outputs_match = re.search(
-        r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Outputs|المخرجات|Çıktılar|خروجی‌ها)\s*\n\n(.*?)(?=\n##|\Z)',
+        r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Saídas|Outputs|المخرجات|Çıktılar|خروجی‌ها)\s*\n(.*?)(?=\n##|\Z)',
         translated_content, re.DOTALL
     )
     if not tr_outputs_match:
@@ -191,28 +193,34 @@ def _fix_output_names_in_translation(translated_content: str, full_en: str) -> s
     tr_table = tr_outputs_match.group(1)
     tr_lines = tr_table.split('\n')
 
-    # Build new table lines with English names enforced
+    # Build new table lines with English names enforced. Only rows whose first
+    # cell holds a backtick-wrapped name count as data rows, so the row index
+    # cannot drift when blank/intro lines appear inside the section.
+    header_seen = False
     new_lines = list(tr_lines)
     data_row_idx = 0
     for i, line in enumerate(tr_lines):
-        if i < 2:  # Keep header and separator rows as-is
+        stripped = line.strip()
+        if not stripped.startswith('|'):
             continue
-        line = line.strip()
-        if not line.startswith('|'):
+        if not header_seen:
+            header_seen = True  # first table line is the header row
             continue
-        parts = line.split('|')
-        if len(parts) < 2:
-            continue
-        # Check if we have an English name for this row
+        if re.match(r'^\|[\s:|-]+\|?$', stripped):
+            continue  # separator row
+        orig_name_match = re.match(r'^\|(\s*`[^`]*`\s*)\|', stripped)
+        if not orig_name_match:
+            continue  # not a data row; do not advance the EN row index
         if data_row_idx < len(en_output_names):
             en_name = en_output_names[data_row_idx]
-            # Replace the output name column (first column after initial pipe)
-            # The backtick-wrapped name in the first data column
-            orig_name_match = re.match(r'^\|(\s*`[^`]*`\s*)', line)
-            if orig_name_match:
-                old = orig_name_match.group(1)
-                new = f' `{en_name}` '
-                new_lines[i] = line.replace(old, new, 1)
+            # Replace the backtick-wrapped name in the first column of the
+            # ORIGINAL line (preserves leading whitespace and cell padding)
+            new_lines[i] = re.sub(
+                r'^(\s*\|\s*)`[^`]*`(\s*\|)',
+                lambda m: f"{m.group(1)}`{en_name}`{m.group(2)}",
+                line,
+                count=1,
+            )
         data_row_idx += 1
 
     new_table = '\n'.join(new_lines)
@@ -220,7 +228,7 @@ def _fix_output_names_in_translation(translated_content: str, full_en: str) -> s
     return translated_content
 
 
-def translate_document(node_name, target_lang, lang_config, api_key, base_url, model):
+def translate_document(node_name, target_lang, lang_config, client, model):
     """Translate a single document"""
     
     # Read English source document
@@ -240,10 +248,7 @@ def translate_document(node_name, target_lang, lang_config, api_key, base_url, m
     # Build prompt using language-specific template
     prompt_template = lang_config.get('prompt_template', '')
     full_prompt = prompt_template + "\n\n" + source_content
-    
-    # Call AI API
-    client = OpenAI(api_key=api_key, base_url=base_url)
-    
+
     max_retries = 3
     for attempt in range(max_retries):
         try:
@@ -298,7 +303,7 @@ def translate_document(node_name, target_lang, lang_config, api_key, base_url, m
             else:
                 raise
 
-def process_node(node_name, target_lang, lang_config, api_key, base_url, model, force=False):
+def process_node(node_name, target_lang, lang_config, client, model, force=False):
     """
     Process a single node translation.
     When force=False, skips if target file already exists (do not overwrite).
@@ -310,9 +315,9 @@ def process_node(node_name, target_lang, lang_config, api_key, base_url, model, 
 
     try:
         logger.info(f"🤖 Translating: {node_name}")
-        
+
         # Translate document
-        translated_content = translate_document(node_name, target_lang, lang_config, api_key, base_url, model)
+        translated_content = translate_document(node_name, target_lang, lang_config, client, model)
         
         # Save translated document
         output_dir = DOCS_PATH / node_name
@@ -330,6 +335,56 @@ def process_node(node_name, target_lang, lang_config, api_key, base_url, model, 
         logger.error(f"❌ Translation failed {node_name}: {e}")
         return "failed"
 
+
+def translate_nodes_concurrently(nodes, concurrency, process_fn, max_consecutive_failures=5):
+    """Translate nodes with a thread pool.
+
+    ``process_fn(node_name)`` must return "success" | "failed" | "skipped".
+    Returns (results_dict, aborted) where results_dict maps each outcome to a
+    list of node names in COMPLETION order (nondeterministic for
+    concurrency > 1), and ``aborted`` is True when the circuit breaker tripped
+    (remaining not-yet-started tasks are cancelled).
+
+    Breaker rule: with workers running in parallel, completions interleave, so
+    a completion-order "consecutive failures" counter is meaningless — it can
+    trip on unrelated failures during a mostly-healthy run, or stay silent
+    during a real outage because one interleaved success resets it. Instead we
+    trip on an aggregate condition that is independent of interleaving:
+    at least ``max_consecutive_failures`` failures AND failures are at least
+    half of everything completed so far (i.e. the API is mostly failing).
+    """
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    results = {"success": [], "failed": [], "skipped": []}
+    aborted = False
+
+    with ThreadPoolExecutor(max_workers=concurrency) as pool:
+        # Submit in order, consume in completion order
+        future_to_node = {pool.submit(process_fn, n): n for n in nodes}
+        for fut in as_completed(future_to_node):
+            node_name = future_to_node[fut]
+            if fut.cancelled():
+                continue  # cancelled by the circuit breaker; not tallied
+            try:
+                result = fut.result()
+            except Exception as e:  # defensive; process_node already catches
+                logger.error(f"❌ Translation crashed {node_name}: {e}")
+                result = "failed"
+            if result not in results:
+                result = "failed"
+            results[result].append(node_name)
+            logger.info(f"[{sum(len(v) for v in results.values())}/{len(nodes)}] {node_name}: {result}")
+
+            completed = sum(len(v) for v in results.values())
+            failed = len(results["failed"])
+            if failed >= max_consecutive_failures and failed * 2 >= completed:
+                for other in future_to_node:
+                    other.cancel()  # no-op for already-running futures
+                aborted = True
+                break
+
+    return results, aborted
+
 def main():
     """Main function"""
     parser = argparse.ArgumentParser(description="Batch translate docs using prepared batch file")
@@ -343,10 +398,18 @@ def main():
                         help="Comma-separated list of node names to translate (overrides batch file)")
     parser.add_argument("--node-list-file", type=str, default=None,
                         help="Path to JSON file with {'nodes': ['NodeA', 'NodeB']} (overrides batch file)")
+    parser.add_argument("--concurrency", type=int, default=1,
+                        help="Parallel translation workers (default: 1 = sequential, with the "
+                             "usual every-5-nodes rest). >1 uses a thread pool and skips the "
+                             "periodic rest; retries/backoff still apply per request.")
     args = parser.parse_args()
     target_lang = args.lang
     mode = args.mode
     force = args.force
+    MAX_CONCURRENCY = 32
+    if args.concurrency > MAX_CONCURRENCY:
+        print(f"⚠️  Warning: --concurrency {args.concurrency} is too high; capping at {MAX_CONCURRENCY} to avoid API rate-limit storms.")
+    concurrency = max(1, min(args.concurrency, MAX_CONCURRENCY))
 
     # Load translation config
     with open(TRANSLATION_CONFIG_FILE, 'r', encoding='utf-8') as f:
@@ -361,6 +424,19 @@ def main():
 
     # Determine which nodes to translate
     nodes_to_translate: list[str] = []
+
+    # Node names become paths under DOCS_PATH (reading en.md, writing
+    # <lang>.md). Reject any value that resolves outside the docs root —
+    # covers --node-list, --node-list-file and batch-file entries alike.
+    docs_root = DOCS_PATH.resolve()
+
+    def _invalid_nodes(names):
+        bad = []
+        for n in names:
+            node_dir = (docs_root / n).resolve()
+            if not node_dir.is_relative_to(docs_root) or node_dir == docs_root:
+                bad.append(n)
+        return bad
 
     if args.node_list:
         # Direct node list from CLI argument
@@ -392,6 +468,12 @@ def main():
             nodes_to_translate = nodes_to_translate[:args.count]
 
         print(f"📊 Batch prepared: {batch_data.get('total', 0)} nodes")
+
+    bad_nodes = _invalid_nodes(nodes_to_translate)
+    if bad_nodes:
+        print(f"❌ Error: node names must stay inside {docs_root}; invalid: {', '.join(bad_nodes)}")
+        sys.exit(1)
+
     print(f"💡 {'Test' if mode == 'test' else 'Full'} mode: Translating {len(nodes_to_translate)} nodes")
     print()
     print(f"Target language: {lang_config['name']} ({target_lang})")
@@ -408,7 +490,15 @@ def main():
     logger.info(f"⚙️  Batch size: {DEFAULT_BATCH_SIZE}")
     logger.info("=" * 80)
     logger.info("")
-    
+
+    # Create the API client once and reuse it for every node in the batch.
+    # Imported lazily so the module's pure post-processing helpers stay
+    # importable (and testable) without the openai package installed.
+    from openai import OpenAI
+    # base_url=None lets the SDK fall back to OPENAI_BASE_URL or its default
+    # endpoint when API_BASE_URL is unset (an empty string would not).
+    client = OpenAI(api_key=DEFAULT_API_KEY, base_url=DEFAULT_BASE_URL or None)
+
     # Translate documents
     success_count = 0
     failed_count = 0
@@ -416,22 +506,11 @@ def main():
     consecutive_failures = 0
     MAX_CONSECUTIVE_FAILURES = 5
     completed_nodes = []  # Track completed nodes for batch update
-    
-    for idx, node_name in enumerate(nodes_to_translate, 1):
-        logger.info("")
-        logger.info(f"[{idx}/{len(nodes_to_translate)}] Processing node: {node_name}")
-        logger.info("-" * 60)
-        
-        result = process_node(
-            node_name,
-            target_lang,
-            lang_config,
-            DEFAULT_API_KEY,
-            DEFAULT_BASE_URL,
-            DEFAULT_MODEL,
-            force=force
-        )
-        
+
+    def _tally(result, node_name):
+        """Update counters for one finished node; return True if the
+        consecutive-failure circuit breaker tripped."""
+        nonlocal success_count, failed_count, skipped_count, consecutive_failures
         if result == "success":
             success_count += 1
             consecutive_failures = 0  # Reset counter on success
@@ -439,34 +518,74 @@ def main():
         elif result == "failed":
             failed_count += 1
             consecutive_failures += 1
-            
-            # Check if we've hit the consecutive failure limit
-            if consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
-                logger.error("")
-                logger.error("=" * 80)
-                logger.error(f"❌ Consecutive failures reached {MAX_CONSECUTIVE_FAILURES}, terminating")
-                logger.error("=" * 80)
-                logger.error(f"Success: {success_count}, Failed: {failed_count}, Skipped: {skipped_count}")
-                logger.error("Please check:")
-                logger.error("  1. API key is correctly configured")
-                logger.error("  2. Network connection is stable")
-                logger.error("  3. API has sufficient balance")
-                logger.error("=" * 80)
-                print()
-                print("=" * 80)
-                print(f"❌ Consecutive failures: {MAX_CONSECUTIVE_FAILURES}, terminated automatically")
-                print(f"Success: {success_count}, Failed: {failed_count}, Skipped: {skipped_count}")
-                print(f"📁 Log: {log_file}")
-                print("=" * 80)
-                sys.exit(1)
         elif result == "skipped":
             skipped_count += 1
             consecutive_failures = 0  # Reset counter on skip
-        
-        # Rate limiting
-        if idx % DEFAULT_BATCH_SIZE == 0 and idx < len(nodes_to_translate):
-            logger.info("⏸️  Batch rest for 2 seconds...")
-            time.sleep(2)
+        return consecutive_failures >= MAX_CONSECUTIVE_FAILURES
+
+    def _abort_with_failure_summary():
+        logger.error("")
+        logger.error("=" * 80)
+        logger.error(f"❌ Consecutive failures reached {MAX_CONSECUTIVE_FAILURES}, terminating")
+        logger.error("=" * 80)
+        logger.error(f"Success: {success_count}, Failed: {failed_count}, Skipped: {skipped_count}")
+        logger.error("Please check:")
+        logger.error("  1. API key is correctly configured")
+        logger.error("  2. Network connection is stable")
+        logger.error("  3. API has sufficient balance")
+        logger.error("=" * 80)
+        print()
+        print("=" * 80)
+        print(f"❌ Consecutive failures: {MAX_CONSECUTIVE_FAILURES}, terminated automatically")
+        print(f"Success: {success_count}, Failed: {failed_count}, Skipped: {skipped_count}")
+        print(f"📁 Log: {log_file}")
+        print("=" * 80)
+        sys.exit(1)
+
+    aborted = False
+
+    if concurrency > 1 and len(nodes_to_translate) > 1:
+        # Concurrent path: thread pool over the shared client (httpx-based,
+        # thread-safe). The periodic every-5-nodes rest is skipped here;
+        # per-request retry/backoff in translate_document still applies.
+        logger.info(f"⚡ Concurrency: {concurrency} workers")
+        results, aborted = translate_nodes_concurrently(
+            nodes_to_translate,
+            concurrency,
+            lambda n: process_node(n, target_lang, lang_config, client, DEFAULT_MODEL, force=force),
+            max_consecutive_failures=MAX_CONSECUTIVE_FAILURES,
+        )
+        success_count = len(results["success"])
+        failed_count = len(results["failed"])
+        skipped_count = len(results["skipped"])
+        completed_nodes = results["success"]
+    else:
+        # Sequential path (default): identical to the original behavior.
+        for idx, node_name in enumerate(nodes_to_translate, 1):
+            logger.info("")
+            logger.info(f"[{idx}/{len(nodes_to_translate)}] Processing node: {node_name}")
+            logger.info("-" * 60)
+
+            result = process_node(
+                node_name,
+                target_lang,
+                lang_config,
+                client,
+                DEFAULT_MODEL,
+                force=force
+            )
+
+            if _tally(result, node_name):
+                aborted = True
+                break
+
+            # Rate limiting
+            if idx % DEFAULT_BATCH_SIZE == 0 and idx < len(nodes_to_translate):
+                logger.info("⏸️  Batch rest for 2 seconds...")
+                time.sleep(2)
+
+    if aborted:
+        _abort_with_failure_summary()
     
     logger.info("")
     logger.info("=" * 80)
