@@ -565,11 +565,15 @@ class DocumentationWorkflow:
                 tr_args = ["--lang", lang, "--node-list", node_list_str, "--force"]
                 if concurrency > 1:
                     tr_args.extend(["--concurrency", str(concurrency)])
-                self.run_command(
+                if not self.run_command(
                     self.translate_script,
                     tr_args,
                     f"Re-translating changed nodes to {lang}"
-                )
+                ):
+                    # Includes circuit-breaker aborts (translator exits 1):
+                    # do not run the param correction on half-translated docs.
+                    print(f"\n❌ Changed-node translation failed for {lang}")
+                    return False
                 # Same post-translation correction as the regular translation
                 # workflow (Step 3 there): sync param/output names from the
                 # frontend i18n so re-translated docs match the UI labels.
