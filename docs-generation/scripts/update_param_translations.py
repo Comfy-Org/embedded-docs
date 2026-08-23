@@ -8,6 +8,7 @@ when it is missing or older than TRANSLATIONS_MAX_AGE_HOURS, so param
 localization does not depend on a local frontend checkout being up to date.
 """
 
+import argparse
 import json
 import os
 import re
@@ -35,9 +36,12 @@ SUPPORTED_LANGS = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-
 # when (re)writing the file, even though this script only updates non-en docs.
 FETCH_LANGS = ['en'] + SUPPORTED_LANGS
 
-def load_frontend_translations(force_refresh=False):
+def load_frontend_translations(force_refresh=False, persist=True):
     """Load frontend translations from exported JSON, refreshing from GitHub
-    if the file is missing or stale (older than TRANSLATIONS_MAX_AGE_HOURS)."""
+    if the file is missing or stale (older than TRANSLATIONS_MAX_AGE_HOURS).
+
+    With ``persist=False`` (dry-run), a refresh still fetches and merges in
+    memory but never writes the cache file — a dry run must stay dry."""
     stale = False
     if not TRANSLATIONS_FILE.exists():
         print(f"ℹ️  {TRANSLATIONS_FILE} not found")
@@ -52,10 +56,24 @@ def load_frontend_translations(force_refresh=False):
         print("📡 Fetching frontend translations from GitHub (Comfy-Org/ComfyUI_frontend@master)...")
         data = fetch_remote_translations(FETCH_LANGS)
         if any(data.values()):
-            # Merge over the existing file (atomic write) so languages whose
-            # fetch failed and keys not managed here are preserved.
-            merged = save_translations(TRANSLATIONS_FILE, data)
-            print(f"✓ Refreshed {TRANSLATIONS_FILE} from GitHub")
+            if persist:
+                # Merge over the existing file (atomic write) so languages whose
+                # fetch failed and keys not managed here are preserved.
+                merged = save_translations(TRANSLATIONS_FILE, data)
+                print(f"✓ Refreshed {TRANSLATIONS_FILE} from GitHub")
+                return merged
+            # Dry-run: merge in memory only, never touch the cache file
+            merged = {}
+            if TRANSLATIONS_FILE.exists():
+                try:
+                    with open(TRANSLATIONS_FILE, 'r', encoding='utf-8') as f:
+                        merged = json.load(f)
+                except (json.JSONDecodeError, OSError):
+                    merged = {}
+            for lang, lang_data in data.items():
+                if lang_data:
+                    merged[lang] = lang_data
+            print("✓ Fetched translations from GitHub (in-memory only, dry-run)")
             return merged
         # Fetch failed: fall back to existing file
         if TRANSLATIONS_FILE.exists():
@@ -74,7 +92,7 @@ def extract_table_rows(content, table_type='inputs'):
     if table_type == 'inputs':
         pattern = r'##\s+(?:输入|輸入|入力|입력|Входы|Entradas|Entrées|Inputs|المدخلات|Girdiler|ورودی‌ها)\s*\n\n(.*?)(?=\n##|\Z)'
     else:
-        pattern = r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Outputs|المخرجات|Çıktılar|خروجی‌ها)\s*\n\n(.*?)(?=\n##|\Z)'
+        pattern = r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Saídas|Outputs|المخرجات|Çıktılar|خروجی‌ها)\s*\n\n(.*?)(?=\n##|\Z)'
     
     match = re.search(pattern, content, re.DOTALL)
     if not match:
@@ -106,8 +124,11 @@ def update_parameter_name_in_row(row, old_param_name, new_param_name):
             return re.sub(pattern, f'| `{new_param_name}` |', row)
     return row
 
-def update_doc_with_translations(doc_file, node_name, lang, frontend_translations):
-    """Update a documentation file with frontend translations"""
+def update_doc_with_translations(doc_file, node_name, lang, frontend_translations, dry_run=False):
+    """Update a documentation file with frontend translations.
+
+    When ``dry_run`` is True, compute changes but never write to disk.
+    """
     
     # Get translations for this node and language
     if lang not in frontend_translations:
@@ -167,7 +188,7 @@ def update_doc_with_translations(doc_file, node_name, lang, frontend_translation
         
         for i, line in enumerate(lines):
             # Detect if we're in the Outputs section
-            if re.match(r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Outputs|المخرجات|Çıktılar)', line):
+            if re.match(r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Saídas|Outputs|المخرجات|Çıktılar|خروجی‌ها)', line):
                 in_output_section = True
                 output_row_index = 0
                 continue
@@ -212,32 +233,39 @@ def update_doc_with_translations(doc_file, node_name, lang, frontend_translation
         
         content = '\n'.join(lines)
     
-    # Save if changes were made
+    # Save if changes were made (never write in dry-run mode)
     if content != original_content:
-        with open(doc_file, 'w', encoding='utf-8') as f:
-            f.write(content)
+        if not dry_run:
+            with open(doc_file, 'w', encoding='utf-8') as f:
+                f.write(content)
         return True, changes_made
     
     return False, []
 
 def main():
     """Main function"""
-    
-    # Parse arguments
-    target_lang = None
-    target_node = None
-    dry_run = False
-    force_refresh = False
 
-    for i, arg in enumerate(sys.argv[1:]):
-        if arg == '--lang':
-            target_lang = sys.argv[i + 2] if i + 2 < len(sys.argv) else None
-        elif arg == '--node':
-            target_node = sys.argv[i + 2] if i + 2 < len(sys.argv) else None
-        elif arg == '--dry-run':
-            dry_run = True
-        elif arg == '--refresh':
-            force_refresh = True
+    parser = argparse.ArgumentParser(
+        description="Update parameter names in docs to match frontend translations"
+    )
+    parser.add_argument("--lang", default=None,
+                        help=f"Target language (default: all of {' '.join(SUPPORTED_LANGS)})")
+    parser.add_argument("--node", default=None, help="Process a single node directory")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="Preview changes without writing files")
+    parser.add_argument("--refresh", action="store_true",
+                        help="Force re-fetch of frontend translations from GitHub")
+    args = parser.parse_args()
+
+    if args.lang and args.lang not in SUPPORTED_LANGS:
+        print(f"❌ Error: unknown language '{args.lang}'")
+        print(f"   Supported: {', '.join(SUPPORTED_LANGS)}")
+        sys.exit(1)
+
+    target_lang = args.lang
+    target_node = args.node
+    dry_run = args.dry_run
+    force_refresh = args.refresh
     
     print("=" * 80)
     print("Parameter Translation Updater")
@@ -250,17 +278,26 @@ def main():
     print("=" * 80)
     print()
     
-    # Load frontend translations
+    # Load frontend translations (dry-run must not write the cache file)
     print("📖 Loading frontend translations...")
-    frontend_trans = load_frontend_translations(force_refresh=force_refresh)
+    frontend_trans = load_frontend_translations(force_refresh=force_refresh, persist=not dry_run)
     print(f"   Loaded translations for {len(SUPPORTED_LANGS)} languages\n")
     
     # Get list of nodes to process
     if target_node:
-        node_dirs = [DOCS_ROOT / target_node]
-        if not node_dirs[0].exists():
-            print(f"❌ Error: Node directory not found: {node_dirs[0]}")
+        # Constrain --node to DOCS_ROOT: absolute values or ../ traversal
+        # must not make the updater write outside the docs tree. The target
+        # must also be an actual node directory (not a file, not DOCS_ROOT
+        # itself), otherwise the run would silently process nothing.
+        candidate = (DOCS_ROOT / target_node).resolve()
+        if (
+            not candidate.is_relative_to(DOCS_ROOT)
+            or candidate == DOCS_ROOT
+            or not candidate.is_dir()
+        ):
+            print(f"❌ Error: --node must be a node directory inside {DOCS_ROOT}, got: {target_node}")
             sys.exit(1)
+        node_dirs = [candidate]
     else:
         node_dirs = [d for d in DOCS_ROOT.iterdir() if d.is_dir()]
     
@@ -282,28 +319,25 @@ def main():
             if not doc_file.exists():
                 continue
             
-            # Update document
-            if not dry_run:
-                updated, changes = update_doc_with_translations(doc_file, node_name, lang, frontend_trans)
-                
-                if updated:
-                    print(f"✅ Updated {node_name} ({lang}): {', '.join(changes)}")
-                    total_updated += 1
-                else:
-                    total_skipped += 1
+            # Update document (update_doc_with_translations honors dry_run internally)
+            updated, changes = update_doc_with_translations(
+                doc_file, node_name, lang, frontend_trans, dry_run=dry_run
+            )
+
+            if updated:
+                prefix = "🔍 Would update" if dry_run else "✅ Updated"
+                print(f"{prefix} {node_name} ({lang}): {', '.join(changes)}")
+                total_updated += 1
             else:
-                # Dry run - just check
-                _, changes = update_doc_with_translations(doc_file, node_name, lang, frontend_trans)
-                if changes:
-                    print(f"🔍 Would update {node_name} ({lang}): {', '.join(changes)}")
-                    total_updated += 1
-                else:
-                    total_skipped += 1
+                total_skipped += 1
     
     print("\n" + "=" * 80)
     print("📊 Summary")
     print("=" * 80)
-    print(f"✅ Updated: {total_updated}")
+    if dry_run:
+        print(f"🔍 Would update: {total_updated}")
+    else:
+        print(f"✅ Updated: {total_updated}")
     print(f"⏭️  Skipped: {total_skipped}")
     if dry_run:
         print("\n💡 Run without --dry-run to apply changes")
