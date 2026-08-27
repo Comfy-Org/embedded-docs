@@ -12,11 +12,11 @@ Ce nœud génère des images à l'aide de l'API GPT Image d'OpenAI. Il prend en 
 | --- | --- | --- | --- | --- |
 | `prompt` | Invite textuelle pour GPT Image (par défaut : ""). | STRING | Oui | N/A |
 | `modèle` | Le modèle GPT Image OpenAI à utiliser. La sélection d'un modèle révèle des paramètres supplémentaires spécifiques à ce modèle. | COMBO | Oui | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
-| `model.size` | Taille de l'image. Sélectionnez 'Personnalisé' pour utiliser la largeur et la hauteur personnalisées (par défaut : "auto"). Disponible uniquement pour `gpt-image-2`. | COMBO | Oui | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Personnalisé"` |
-| `model.custom_width` | Utilisé uniquement lorsque `size` est 'Personnalisé'. Doit être un multiple de 16 (par défaut : 1024). Disponible uniquement pour `gpt-image-2`. | INT | Non | 1024 à 3840 |
-| `model.custom_height` | Utilisé uniquement lorsque `size` est 'Personnalisé'. Doit être un multiple de 16 (par défaut : 1024). Disponible uniquement pour `gpt-image-2`. | INT | Non | 1024 à 3840 |
-| `model.background` | Renvoie l'image avec ou sans arrière-plan (par défaut : "auto"). Disponible uniquement pour `gpt-image-2`. | COMBO | Oui | `"auto"`<br>`"opaque"` |
-| `model.quality` | La qualité de l'image générée. Disponible uniquement pour `gpt-image-2`. | COMBO | Oui | `"standard"`<br>`"hd"` |
+| `taille` | Taille de l'image. Sélectionnez 'Personnalisé' pour utiliser la largeur et la hauteur personnalisées (par défaut : "auto"). Disponible uniquement pour `gpt-image-2`. | COMBO | Oui | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Personnalisé"` |
+| `largeur_personnalisée` | Utilisé uniquement lorsque `size` est 'Personnalisé'. Doit être un multiple de 16 (par défaut : 1024). Disponible uniquement pour `gpt-image-2`. | INT | Non | 1024 à 3840 |
+| `hauteur_personnalisée` | Utilisé uniquement lorsque `size` est 'Personnalisé'. Doit être un multiple de 16 (par défaut : 1024). Disponible uniquement pour `gpt-image-2`. | INT | Non | 1024 à 3840 |
+| `arrière-plan` | Renvoie l'image avec ou sans arrière-plan (par défaut : "auto"). Disponible uniquement pour `gpt-image-2`. | COMBO | Oui | `"auto"`<br>`"opaque"` |
+| `qualité` | La qualité de l'image générée. Disponible uniquement pour `gpt-image-2`. | COMBO | Oui | `"standard"`<br>`"hd"` |
 | `model.images` | Images d'entrée pour l'édition. Disponible uniquement pour `gpt-image-2`. | IMAGE | Non | N/A |
 | `model.mask` | Un masque pour spécifier les parties de l'image d'entrée à modifier. Disponible uniquement pour `gpt-image-2`. | MASK | Non | N/A |
 | `n` | Nombre d'images à générer (par défaut : 1). | INT | Oui | 1 à 8 |

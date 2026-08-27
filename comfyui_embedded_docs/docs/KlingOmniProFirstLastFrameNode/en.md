@@ -13,7 +13,7 @@ This node uses the latest Kling AI model to generate a video from a start frame,
 | `end_frame` | An optional end frame for the video. This cannot be used simultaneously with `reference_images`. Does not work with storyboards. | IMAGE | No | - |
 | `reference_images` | Up to 6 additional reference images. | IMAGE | No | - |
 | `resolution` | The output resolution for the generated video (default: "1080p"). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | Generate a series of video segments with individual prompts and durations. Only supported for `kling-v3-omni`. When enabled, each storyboard requires a prompt and duration input. | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `storyboards` | Generate a series of video segments with individual prompts and durations. Only supported for `kling-v3-omni`. | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
 | `generate_audio` | Generate audio for the video (default: False). Only supported for `kling-v3-omni`. | BOOLEAN | No | True / False |
 | `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed (default: 0). | INT | No | 0 to 2147483647 |
 

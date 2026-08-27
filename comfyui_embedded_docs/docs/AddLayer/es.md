@@ -6,20 +6,20 @@ El nodo Add Layer convierte una imagen de entrada en una capa y la coloca en un 
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `layers` | Pila de capas a la que se añadirá. Si se deja sin conectar, se inicia una nueva pila. | LAYERS | No | — |
-| `image` | Contenido de la capa en su tamaño nativo. Un lote se expande a capas consecutivas. | IMAGE | Sí | — |
-| `mask` | Máscara de transparencia para esta capa. Las áreas enmascaradas (valor 1) se vuelven transparentes, multiplicándose con cualquier canal alfa que la imagen ya contenga. | MASK | No | — |
-| `name` | Nombre de la capa mostrado en el editor del compositor. (predeterminado: "") | STRING | No | — |
+| `capas` | Pila de capas a la que se añadirá. Si se deja sin conectar, se inicia una nueva pila. | LAYERS | No | — |
+| `imagen` | Contenido de la capa en su tamaño nativo. Un lote se expande a capas consecutivas. | IMAGE | Sí | — |
+| `máscara` | Máscara de transparencia para esta capa. Las áreas enmascaradas (valor 1) se vuelven transparentes, multiplicándose con cualquier canal alfa que la imagen ya contenga. | MASK | No | — |
+| `nombre` | Nombre de la capa mostrado en el editor del compositor. (predeterminado: "") | STRING | No | — |
 | `x` | Posición horizontal inicial en el lienzo. (predeterminado: 0) | INT | No | -MAX_RESOLUTION a MAX_RESOLUTION |
 | `y` | Posición vertical inicial en el lienzo. (predeterminado: 0) | INT | No | -MAX_RESOLUTION a MAX_RESOLUTION |
-| `opacity` | Opacidad inicial de la capa. (predeterminado: 1.0) | FLOAT | No | 0.0 a 1.0 (paso 0.01) |
-| `blend_mode` | Modo de fusión inicial, aplicado contra las capas inferiores. En la capa inferior sobre el fondo transparente predeterminado, los modos no normales producen transparencia. (predeterminado: "normal") | COMBO | No | Múltiples opciones disponibles |
-| `rotation` | Rotación inicial en grados, en sentido horario. (predeterminado: 0.0) | FLOAT | No | -360.0 a 360.0 (paso 1.0) |
-| `width` | Ancho de visualización inicial. 0 conserva el ancho nativo de la imagen. (predeterminado: 0) | INT | No | 0 a MAX_RESOLUTION |
-| `height` | Altura de visualización inicial. 0 conserva la altura nativa de la imagen. (predeterminado: 0) | INT | No | 0 a MAX_RESOLUTION |
-| `z_index` | Anulación del orden de apilamiento. Las capas se ordenan de forma estable por z_index; los valores iguales mantienen su orden en la lista. (predeterminado: 0) | INT | No | -1000 a 1000 |
-| `flip_h` | Voltear la capa horizontalmente. (predeterminado: False) | BOOLEAN | No | false / true |
-| `flip_v` | Voltear la capa verticalmente. (predeterminado: False) | BOOLEAN | No | false / true |
+| `opacidad` | Opacidad inicial de la capa. (predeterminado: 1.0) | FLOAT | No | 0.0 a 1.0 (paso 0.01) |
+| `modo de fusión` | Modo de fusión inicial, aplicado contra las capas inferiores. En la capa inferior sobre el fondo transparente predeterminado, los modos no normales producen transparencia. (predeterminado: "normal") | COMBO | No | Múltiples opciones disponibles |
+| `rotación` | Rotación inicial en grados, en sentido horario. (predeterminado: 0.0) | FLOAT | No | -360.0 a 360.0 (paso 1.0) |
+| `ancho` | Ancho de visualización inicial. 0 conserva el ancho nativo de la imagen. (predeterminado: 0) | INT | No | 0 a MAX_RESOLUTION |
+| `alto` | Altura de visualización inicial. 0 conserva la altura nativa de la imagen. (predeterminado: 0) | INT | No | 0 a MAX_RESOLUTION |
+| `índice z` | Anulación del orden de apilamiento. Las capas se ordenan de forma estable por z_index; los valores iguales mantienen su orden en la lista. (predeterminado: 0) | INT | No | -1000 a 1000 |
+| `voltear_h` | Voltear la capa horizontalmente. (predeterminado: False) | BOOLEAN | No | false / true |
+| `voltear_v` | Voltear la capa verticalmente. (predeterminado: False) | BOOLEAN | No | false / true |
 
 Notas:
 - Solo se requiere `image`; todos los demás parámetros son opcionales.

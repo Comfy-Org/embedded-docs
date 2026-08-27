@@ -10,11 +10,11 @@ Bu düğüm, OpenAI'nin GPT Image API'sini kullanarak görseller oluşturur. Bir
 | --- | --- | --- | --- | --- |
 | `istem` | GPT Image için metin istemi (varsayılan: ""). | STRING | Evet | Yok |
 | `model` | Kullanılacak OpenAI GPT Image modeli. Bir model seçmek, o modele özgü ek parametreleri ortaya çıkarır. | COMBO | Evet | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
-| `model.size` | Görsel boyutu. Özel genişlik ve yükseklik kullanmak için 'Custom' seçeneğini seçin (varsayılan: "auto"). Yalnızca `gpt-image-2` için kullanılabilir. | COMBO | Evet | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
-| `model.custom_width` | Yalnızca `size` 'Custom' olduğunda kullanılır. 16'nın katı olmalıdır (varsayılan: 1024). Yalnızca `gpt-image-2` için kullanılabilir. | INT | Hayır | 1024 - 3840 |
-| `model.custom_height` | Yalnızca `size` 'Custom' olduğunda kullanılır. 16'nın katı olmalıdır (varsayılan: 1024). Yalnızca `gpt-image-2` için kullanılabilir. | INT | Hayır | 1024 - 3840 |
-| `model.background` | Görseli arka planlı veya arka plansız döndürür (varsayılan: "auto"). Yalnızca `gpt-image-2` için kullanılabilir. | COMBO | Evet | `"auto"`<br>`"opaque"` |
-| `model.quality` | Oluşturulan görselin kalitesi. Yalnızca `gpt-image-2` için kullanılabilir. | COMBO | Evet | `"standard"`<br>`"hd"` |
+| `boyut` | Görsel boyutu. Özel genişlik ve yükseklik kullanmak için 'Custom' seçeneğini seçin (varsayılan: "auto"). Yalnızca `gpt-image-2` için kullanılabilir. | COMBO | Evet | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `özel_genişlik` | Yalnızca `size` 'Custom' olduğunda kullanılır. 16'nın katı olmalıdır (varsayılan: 1024). Yalnızca `gpt-image-2` için kullanılabilir. | INT | Hayır | 1024 - 3840 |
+| `özel_yükseklik` | Yalnızca `size` 'Custom' olduğunda kullanılır. 16'nın katı olmalıdır (varsayılan: 1024). Yalnızca `gpt-image-2` için kullanılabilir. | INT | Hayır | 1024 - 3840 |
+| `arka_plan` | Görseli arka planlı veya arka plansız döndürür (varsayılan: "auto"). Yalnızca `gpt-image-2` için kullanılabilir. | COMBO | Evet | `"auto"`<br>`"opaque"` |
+| `kalite` | Oluşturulan görselin kalitesi. Yalnızca `gpt-image-2` için kullanılabilir. | COMBO | Evet | `"standard"`<br>`"hd"` |
 | `model.images` | Düzenleme için giriş görselleri. Yalnızca `gpt-image-2` için kullanılabilir. | IMAGE | Hayır | Yok |
 | `model.mask` | Giriş görselinin hangi bölümlerinin düzenleneceğini belirten bir maske. Yalnızca `gpt-image-2` için kullanılabilir. | MASK | Hayır | Yok |
 | `n` | Kaç adet görsel oluşturulacağı (varsayılan: 1). | INT | Evet | 1 - 8 |

@@ -11,8 +11,8 @@ Le nœud Reve Image Edit vous permet de modifier une image existante en fonction
 | `image` | L'image à modifier. | IMAGE | Oui | - |
 | `instruction d’édition` | Description textuelle de la modification à apporter à l'image. Maximum 2560 caractères. | STRING | Oui | - |
 | `modèle` | Version du modèle à utiliser pour la modification. | MODEL | Oui | `"reve-edit@20250915"`<br>`"reve-edit-fast@20251030"` |
-| `model.aspect_ratio` | Le rapport hauteur/largeur de l'image modifiée. Lorsqu'il est défini sur "auto", le rapport est déterminé automatiquement. | COMBO | Non | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
-| `model.test_time_scaling` | Facteur de mise à l'échelle pendant le test pour le modèle. Des valeurs plus élevées peuvent améliorer la qualité mais augmentent le temps de traitement. | FLOAT | Non | - |
+| `rapport d’aspect` | Le rapport hauteur/largeur de l'image modifiée. Lorsqu'il est défini sur "auto", le rapport est déterminé automatiquement. | COMBO | Non | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
+| `mise à l’échelle à l’exécution` | Facteur de mise à l'échelle pendant le test pour le modèle. Des valeurs plus élevées peuvent améliorer la qualité mais augmentent le temps de traitement. | FLOAT | Non | - |
 | `agrandir` | Contrôle si l'image générée doit être agrandie. | COMBO | Non | `"disabled"`<br>`"enabled"` |
 | `upscale.upscale_factor` | Le facteur d'agrandissement de l'image lorsque l'agrandissement est activé. | FLOAT | Non | - |
 | `supprimer l’arrière-plan` | Contrôle si l'arrière-plan doit être supprimé de l'image générée. | BOOLEAN | Non | - |

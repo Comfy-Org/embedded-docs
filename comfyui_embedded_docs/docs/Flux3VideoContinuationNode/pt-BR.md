@@ -6,14 +6,14 @@ Este nó dá continuidade a um videoclipe existente com o FLUX 3, fazendo com qu
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `video` | O clipe a ser continuado. | VIDEO | Sim | Videoclipe único |
+| `vídeo` | O clipe a ser continuado. | VIDEO | Sim | Videoclipe único |
 | `prompt` | O que a continuação deve mostrar; o prompt é interpretado e expandido antes da geração. (padrão: "") | STRING | Sim | Texto não vazio (mínimo de 1 caractere) |
-| `aspect_ratio` | Proporção de aspecto da saída. 'auto' escolhe uma a partir do prompt e das entradas. (padrão: "auto") | STRING | Sim | Múltiplas opções predefinidas (padrão: "auto") |
-| `duration` | Duração do clipe em segundos. 'auto' ajusta a duração ao conteúdo. (padrão: "auto") | STRING | Sim | "auto" (padrão)<br>Valores numéricos em segundos |
-| `resolution` | Resolução da saída. (padrão: "720p") | STRING | Sim | Múltiplas opções predefinidas (padrão: "720p") |
-| `generate_audio` | Gera áudio sincronizado (ambiente, fala, efeitos). Desativado produz um vídeo sem trilha de áudio. (padrão: true) | BOOLEAN | Sim | true<br>false |
-| `safety_tolerance` | Tolerância de moderação; 0 é o mais estrito. Solicitações que enviam imagens ou vídeo são limitadas a 2, independentemente do valor definido aqui. (parâmetro avançado, padrão: 2) | INT | Sim | 0 - 4 (máximo efetivo: 2 para solicitações de vídeo) |
-| `seed` | Semente para determinar se o nó deve ser executado novamente; o FLUX 3 escolhe sua própria semente, portanto os resultados reais são não determinísticos independentemente desse valor. (parâmetro avançado, padrão: 42) | INT | Sim | 0 - 4294967295 (0xFFFFFFFF) |
+| `proporção` | Proporção de aspecto da saída. 'auto' escolhe uma a partir do prompt e das entradas. (padrão: "auto") | STRING | Sim | Múltiplas opções predefinidas (padrão: "auto") |
+| `duração` | Duração do clipe em segundos. 'auto' ajusta a duração ao conteúdo. (padrão: "auto") | STRING | Sim | "auto" (padrão)<br>Valores numéricos em segundos |
+| `resolução` | Resolução da saída. (padrão: "720p") | STRING | Sim | Múltiplas opções predefinidas (padrão: "720p") |
+| `gerar áudio` | Gera áudio sincronizado (ambiente, fala, efeitos). Desativado produz um vídeo sem trilha de áudio. (padrão: true) | BOOLEAN | Sim | true<br>false |
+| `tolerância de segurança` | Tolerância de moderação; 0 é o mais estrito. Solicitações que enviam imagens ou vídeo são limitadas a 2, independentemente do valor definido aqui. (parâmetro avançado, padrão: 2) | INT | Sim | 0 - 4 (máximo efetivo: 2 para solicitações de vídeo) |
+| `semente` | Semente para determinar se o nó deve ser executado novamente; o FLUX 3 escolhe sua própria semente, portanto os resultados reais são não determinísticos independentemente desse valor. (parâmetro avançado, padrão: 42) | INT | Sim | 0 - 4294967295 (0xFFFFFFFF) |
 
 ### Notas
 

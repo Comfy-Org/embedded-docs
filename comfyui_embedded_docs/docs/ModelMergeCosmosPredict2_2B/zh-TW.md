@@ -14,34 +14,34 @@ ModelMergeCosmosPredict2_2B 節點採用基於區塊的方法合併兩個擴散�
 | `x_embedder.` | 輸入嵌入器插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `t_embedder.` | 時間嵌入器插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `t_embedding_norm.` | 時間嵌入正規化插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.0.` | Transformer 區塊 0 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.1.` | Transformer 區塊 1 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.2.` | Transformer 區塊 2 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.3.` | Transformer 區塊 3 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.4.` | Transformer 區塊 4 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.5.` | Transformer 區塊 5 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.6.` | Transformer 區塊 6 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.7.` | Transformer 區塊 7 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.8.` | Transformer 區塊 8 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.9.` | Transformer 區塊 9 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.10.` | Transformer 區塊 10 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.11.` | Transformer 區塊 11 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.12.` | Transformer 區塊 12 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.13.` | Transformer 區塊 13 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.14.` | Transformer 區塊 14 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.15.` | Transformer 區塊 15 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.16.` | Transformer 區塊 16 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.17.` | Transformer 區塊 17 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.18.` | Transformer 區塊 18 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.19.` | Transformer 區塊 19 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.20.` | Transformer 區塊 20 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.21.` | Transformer 區塊 21 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.22.` | Transformer 區塊 22 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.23.` | Transformer 區塊 23 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.24.` | Transformer 區塊 24 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.25.` | Transformer 區塊 25 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.26.` | Transformer 區塊 26 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.27.` | Transformer 區塊 27 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.0.` | Transformer 區塊 0 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.1.` | Transformer 區塊 1 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.2.` | Transformer 區塊 2 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.3.` | Transformer 區塊 3 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.4.` | Transformer 區塊 4 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.5.` | Transformer 區塊 5 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.6.` | Transformer 區塊 6 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.7.` | Transformer 區塊 7 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.8.` | Transformer 區塊 8 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.9.` | Transformer 區塊 9 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.10.` | Transformer 區塊 10 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.11.` | Transformer 區塊 11 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.12.` | Transformer 區塊 12 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.13.` | Transformer 區塊 13 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.14.` | Transformer 區塊 14 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.15.` | Transformer 區塊 15 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.16.` | Transformer 區塊 16 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.17.` | Transformer 區塊 17 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.18.` | Transformer 區塊 18 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.19.` | Transformer 區塊 19 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.20.` | Transformer 區塊 20 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.21.` | Transformer 區塊 21 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.22.` | Transformer 區塊 22 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.23.` | Transformer 區塊 23 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.24.` | Transformer 區塊 24 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.25.` | Transformer 區塊 25 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.26.` | Transformer 區塊 26 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `區塊.27.` | Transformer 區塊 27 插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `final_layer.` | 最終層插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 
 ## 輸出

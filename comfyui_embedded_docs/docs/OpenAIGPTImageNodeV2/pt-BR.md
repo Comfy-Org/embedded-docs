@@ -12,11 +12,11 @@ Este nó gera imagens usando a API GPT Image da OpenAI. Ele oferece suporte a v�
 | --- | --- | --- | --- | --- |
 | `prompt` | Prompt de texto para a GPT Image (padrão: ""). | STRING | Sim | N/A |
 | `modelo` | O modelo GPT Image da OpenAI a ser usado. Selecionar um modelo revela parâmetros adicionais específicos para aquele modelo. | COMBO | Sim | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
-| `model.size` | Tamanho da imagem. Selecione 'Custom' para usar largura e altura personalizadas (padrão: "auto"). Disponível apenas para `gpt-image-2`. | COMBO | Sim | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
-| `model.custom_width` | Usado apenas quando `size` é 'Custom'. Deve ser um múltiplo de 16 (padrão: 1024). Disponível apenas para `gpt-image-2`. | INT | Não | 1024 a 3840 |
-| `model.custom_height` | Usado apenas quando `size` é 'Custom'. Deve ser um múltiplo de 16 (padrão: 1024). Disponível apenas para `gpt-image-2`. | INT | Não | 1024 a 3840 |
-| `model.background` | Retorna imagem com ou sem fundo (padrão: "auto"). Disponível apenas para `gpt-image-2`. | COMBO | Sim | `"auto"`<br>`"opaque"` |
-| `model.quality` | A qualidade da imagem gerada. Disponível apenas para `gpt-image-2`. | COMBO | Sim | `"standard"`<br>`"hd"` |
+| `tamanho` | Tamanho da imagem. Selecione 'Custom' para usar largura e altura personalizadas (padrão: "auto"). Disponível apenas para `gpt-image-2`. | COMBO | Sim | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `largura_personalizada` | Usado apenas quando `size` é 'Custom'. Deve ser um múltiplo de 16 (padrão: 1024). Disponível apenas para `gpt-image-2`. | INT | Não | 1024 a 3840 |
+| `altura_personalizada` | Usado apenas quando `size` é 'Custom'. Deve ser um múltiplo de 16 (padrão: 1024). Disponível apenas para `gpt-image-2`. | INT | Não | 1024 a 3840 |
+| `fundo` | Retorna imagem com ou sem fundo (padrão: "auto"). Disponível apenas para `gpt-image-2`. | COMBO | Sim | `"auto"`<br>`"opaque"` |
+| `qualidade` | A qualidade da imagem gerada. Disponível apenas para `gpt-image-2`. | COMBO | Sim | `"standard"`<br>`"hd"` |
 | `model.images` | Imagens de entrada para edição. Disponível apenas para `gpt-image-2`. | IMAGE | Não | N/A |
 | `model.mask` | Uma máscara para especificar quais partes da imagem de entrada editar. Disponível apenas para `gpt-image-2`. | MASK | Não | N/A |
 | `n` | Quantas imagens gerar (padrão: 1). | INT | Sim | 1 a 8 |

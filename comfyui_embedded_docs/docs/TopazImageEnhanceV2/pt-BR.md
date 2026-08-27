@@ -6,10 +6,10 @@ O Topaz Image Enhance aplica ampliação de escala (upscaling) e aprimoramento d
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A imagem de entrada a ser aprimorada. Apenas uma imagem de entrada é suportada. | IMAGE | Sim | Imagem única |
-| `model` | O modelo de aprimoramento Topaz a ser utilizado. O modelo selecionado determina quais configurações específicas do modelo aparecem. | STRING | Sim | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"` |
-| `output_width` | Valor zero significa calcular automaticamente (geralmente será o tamanho original ou redimensionado proporcionalmente a `output_height` se especificado). O Wonder 3.5 suporta apenas fatores de ampliação de 1x a 6x. O Bloom 2 e o Wonder 3.5 preservam a proporção de aspecto da entrada e tratam o tamanho solicitado como alvo. (padrão: 0) | INT | Não | 0 a 32000 |
-| `output_height` | Valor zero significa gerar a saída com a mesma altura da original ou redimensionado proporcionalmente a `output_width` se especificado. O Wonder 3.5 suporta apenas fatores de ampliação de 1x a 6x. O Bloom 2 e o Wonder 3.5 preservam a proporção de aspecto da entrada e tratam o tamanho solicitado como alvo. (padrão: 0) | INT | Não | 0 a 32000 |
+| `imagem` | A imagem de entrada a ser aprimorada. Apenas uma imagem de entrada é suportada. | IMAGE | Sim | Imagem única |
+| `modelo` | O modelo de aprimoramento Topaz a ser utilizado. O modelo selecionado determina quais configurações específicas do modelo aparecem. | STRING | Sim | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"` |
+| `largura de saída` | Valor zero significa calcular automaticamente (geralmente será o tamanho original ou redimensionado proporcionalmente a `output_height` se especificado). O Wonder 3.5 suporta apenas fatores de ampliação de 1x a 6x. O Bloom 2 e o Wonder 3.5 preservam a proporção de aspecto da entrada e tratam o tamanho solicitado como alvo. (padrão: 0) | INT | Não | 0 a 32000 |
+| `altura de saída` | Valor zero significa gerar a saída com a mesma altura da original ou redimensionado proporcionalmente a `output_width` se especificado. O Wonder 3.5 suporta apenas fatores de ampliação de 1x a 6x. O Bloom 2 e o Wonder 3.5 preservam a proporção de aspecto da entrada e tratam o tamanho solicitado como alvo. (padrão: 0) | INT | Não | 0 a 32000 |
 
 ### Configurações do Reimagine
 

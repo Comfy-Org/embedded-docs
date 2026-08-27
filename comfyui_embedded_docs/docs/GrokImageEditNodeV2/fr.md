@@ -8,9 +8,9 @@ Modifie une ou plusieurs images existantes en fonction d'un prompt texte. Le nœ
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Le modèle d'image Grok à utiliser. Les sous-paramètres affichés ci-dessous changent en fonction du modèle sélectionné. | DYNAMIC_COMBO | Oui | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
+| `modèle` | Le modèle d'image Grok à utiliser. Les sous-paramètres affichés ci-dessous changent en fonction du modèle sélectionné. | DYNAMIC_COMBO | Oui | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
 | `prompt` | Le prompt texte utilisé pour générer l'image. (défaut : "") | STRING | Oui | N/A |
-| `seed` | Graine permettant de déterminer si le nœud doit être relancé ; les résultats réels sont non déterministes quelle que soit la graine. (défaut : 0) | INT | Oui | 0 à 2147483647 |
+| `graine` | Graine permettant de déterminer si le nœud doit être relancé ; les résultats réels sont non déterministes quelle que soit la graine. (défaut : 0) | INT | Oui | 0 à 2147483647 |
 
 ### grok-imagine-image-2.0 Entrées
 

@@ -8,10 +8,10 @@ Le nœud Vidu Q3 Image-to-Video Generation crée une séquence vidéo à partir 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | `"viduq3-pro"`<br>`"viduq3-turbo"` |
+| `modèle` | Modèle à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | `"viduq3-pro"`<br>`"viduq3-turbo"` |
 | `image` | Image à utiliser comme image initiale de la vidéo générée. | IMAGE | Oui | - |
-| `prompt` | Invite de texte facultative pour la génération vidéo (2000 caractères maximum) (défaut : vide). | STRING | Oui | - |
-| `seed` | Valeur de départ (seed) permettant de contrôler le caractère aléatoire de la génération (défaut : 1). Prend en charge le contrôle après génération. | INT | Oui | 0 à 2147483647 |
+| `invite` | Invite de texte facultative pour la génération vidéo (2000 caractères maximum) (défaut : vide). | STRING | Oui | - |
+| `graine` | Valeur de départ (seed) permettant de contrôler le caractère aléatoire de la génération (défaut : 1). Prend en charge le contrôle après génération. | INT | Oui | 0 à 2147483647 |
 
 ### viduq3-pro Entrées
 

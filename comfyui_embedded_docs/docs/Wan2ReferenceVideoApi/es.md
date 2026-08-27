@@ -8,9 +8,9 @@ Este nodo genera un video que presenta a una persona u objeto basado en los mate
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo específico a utilizar para la generación de videos. | DYNAMIC_COMBO | Sí | "wan2.7-r2v" |
-| `seed` | Semilla para usar en la generación, que ayuda a controlar la aleatoriedad del resultado (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
-| `watermark` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False). Esta es una configuración avanzada. | BOOLEAN | Sí | True<br>False |
+| `modelo` | El modelo específico a utilizar para la generación de videos. | DYNAMIC_COMBO | Sí | "wan2.7-r2v" |
+| `semilla` | Semilla para usar en la generación, que ayuda a controlar la aleatoriedad del resultado (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
+| `marca_de_agua` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False). Esta es una configuración avanzada. | BOOLEAN | Sí | True<br>False |
 
 ### wan2.7-r2v Entradas
 

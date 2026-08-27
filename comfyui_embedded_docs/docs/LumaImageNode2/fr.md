@@ -10,9 +10,9 @@ Ce nœud génère des images à partir de descriptions textuelles à l'aide du m
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Modèle à utiliser pour la génération. La sélection d'un modèle révèle des paramètres supplémentaires pour ce modèle. | DYNAMIC_COMBO | Oui | `"uni-1"`<br>`"uni-1-max"` |
-| `prompt` | Description textuelle de l'image souhaitée. De 1 à 6000 caractères. | STRING | Oui | 1 à 6000 caractères |
-| `seed` | La graine (seed) contrôle si le nœud doit s'exécuter de nouveau ; les résultats ne sont pas déterministes quelle que soit la graine. (par défaut : 0) | INT | Oui | 0 à 2147483647 |
+| `modèle` | Modèle à utiliser pour la génération. La sélection d'un modèle révèle des paramètres supplémentaires pour ce modèle. | DYNAMIC_COMBO | Oui | `"uni-1"`<br>`"uni-1-max"` |
+| `invite` | Description textuelle de l'image souhaitée. De 1 à 6000 caractères. | STRING | Oui | 1 à 6000 caractères |
+| `graine` | La graine (seed) contrôle si le nœud doit s'exécuter de nouveau ; les résultats ne sont pas déterministes quelle que soit la graine. (par défaut : 0) | INT | Oui | 0 à 2147483647 |
 
 ### Entrées uni-1 et uni-1-max
 

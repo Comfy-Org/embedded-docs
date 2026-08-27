@@ -1,4 +1,4 @@
-# Text String (Multiline)
+# Text (Multiline)
 
 The PrimitiveStringMultiline node provides a multiline text input field for entering and passing string values through your workflow. It accepts text input with multiple lines and outputs the same string value unchanged. This node is useful when you need to input longer text content or formatted text that spans multiple lines.
 
@@ -17,4 +17,4 @@ The PrimitiveStringMultiline node provides a multiline text input field for ente
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrimitiveStringMultiline/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `cc3e3f09f71f91721c338649699ffb8822de5109a2892e93eb9746ba3c9b22fb`
+**Source fingerprint (SHA-256):** `c94ea034591b8b98630b1ee831d65a156f59cf3b84dc2837046f67fdf78f8c15`

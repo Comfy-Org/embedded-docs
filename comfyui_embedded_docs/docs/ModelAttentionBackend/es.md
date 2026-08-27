@@ -6,8 +6,8 @@ Este nodo te permite elegir qué backend de atención utiliza un modelo para sus
 
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `model` | El modelo al que se le aplicará el backend de atención seleccionado. | MODEL | Sí |  |
-| `attention` | El backend de atención a utilizar (predeterminado: "pytorch attention"). Si el backend seleccionado no está disponible, se usa PyTorch attention como respaldo. | STRING | Sí | "pytorch attention"<br>"comfy kitchen attention" |
+| `modelo` | El modelo al que se le aplicará el backend de atención seleccionado. | MODEL | Sí |  |
+| `atención` | El backend de atención a utilizar (predeterminado: "pytorch attention"). Si el backend seleccionado no está disponible, se usa PyTorch attention como respaldo. | STRING | Sí | "pytorch attention"<br>"comfy kitchen attention" |
 
 Nota: La opción "comfy kitchen attention" solo se muestra cuando el módulo de atención int8 de comfy kitchen está disponible en el entorno actual.
 

@@ -1,7 +1,5 @@
 # Not
 
-## Overview
-
 The Not node performs a logical NOT operation on any input value. It returns True if the input value is considered falsy (like 0, empty string, None, False), and returns False if the input value is truthy. It uses Python's standard rules for determining truthiness.
 
 ## Inputs
@@ -19,4 +17,4 @@ The Not node performs a logical NOT operation on any input value. It returns Tru
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfyNotNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `fd8f940218538fce28079bc836379703c0e3c04f80351520497855c464176877`
+**Source fingerprint (SHA-256):** `24bbe667a0800b187d991b24894794e2ce710256200a2667ff391c1e644963a5`

@@ -31,7 +31,7 @@ ModelMergeSDXL düğümü, iki SDXL modelini birleştirerek her bir modelin mima
 | `output_blocks.6` | Çıktı bloğu 6 için karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `output_blocks.7` | Çıktı bloğu 7 için karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `output_blocks.8` | Çıktı bloğu 8 için karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `out.` | Çıktı katmanları için karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `çıktı.` | Çıktı katmanları için karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 
 ## Çıktılar
 

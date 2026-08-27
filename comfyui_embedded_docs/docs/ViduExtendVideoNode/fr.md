@@ -8,11 +8,11 @@ Le nœud ViduExtendVideoNode génère des images supplémentaires pour prolonger
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser pour l’extension vidéo. La sélection d’un modèle révèle ses réglages spécifiques de durée et de résolution. | DYNAMIC_COMBO | Oui | `"viduq2-pro"`<br>`"viduq2-turbo"` |
-| `video` | La vidéo source à étendre. | VIDEO | Oui | - |
-| `prompt` | Une invite texte facultative pour la vidéo étendue (2000 caractères maximum ; défaut : vide). | STRING | Oui | - |
-| `seed` | Une valeur de graine pour contrôler l’aléatoire de la génération (défaut : 1). | INT | Oui | 0 à 2147483647 |
-| `end_frame` | Une image facultative à utiliser comme image de fin cible pour l’extension. | IMAGE | Non | - |
+| `modèle` | Modèle à utiliser pour l’extension vidéo. La sélection d’un modèle révèle ses réglages spécifiques de durée et de résolution. | DYNAMIC_COMBO | Oui | `"viduq2-pro"`<br>`"viduq2-turbo"` |
+| `vidéo` | La vidéo source à étendre. | VIDEO | Oui | - |
+| `invite` | Une invite texte facultative pour la vidéo étendue (2000 caractères maximum ; défaut : vide). | STRING | Oui | - |
+| `graine` | Une valeur de graine pour contrôler l’aléatoire de la génération (défaut : 1). | INT | Oui | 0 à 2147483647 |
+| `image_finale` | Une image facultative à utiliser comme image de fin cible pour l’extension. | IMAGE | Non | - |
 
 ### viduq2-pro et viduq2-turbo Entrées
 

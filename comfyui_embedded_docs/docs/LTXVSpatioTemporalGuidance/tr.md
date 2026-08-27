@@ -7,10 +7,10 @@ Bu düğüm, her örnekleme adımında ekstra bir geçiş çalıştırarak LTXV 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Uzamsal-zamansal rehberliğin uygulanacağı temel model. Model kopyalanır ve CFG sonrası rehberlik işleviyle değiştirilir. | MODEL | Evet | — |
-| `scale` | Gürültü giderme sonucuna uygulanan rehberliğin gücü. 0 olarak ayarlandığında rehberliğin etkisi olmaz. (varsayılan: 1.0) | FLOAT | Evet | 0.0 ila 100.0 (adım 0.01) |
-| `blocks` | Bozulacak virgülle ayrılmış transformatör blok dizinleri. Yalnızca sayısal değerler kullanılır; diğer tüm karakterler yok sayılır. (varsayılan: "29") | STRING | Evet | — |
-| `start_percent` | Rehberliğin başladığı örnekleme sürecinin kesri. (varsayılan: 0.0) | FLOAT | Evet | 0.0 ila 1.0 (adım 0.001) |
-| `end_percent` | Rehberliğin bittiği örnekleme sürecinin kesri. (varsayılan: 1.0) | FLOAT | Evet | 0.0 ila 1.0 (adım 0.001) |
+| `ölçek` | Gürültü giderme sonucuna uygulanan rehberliğin gücü. 0 olarak ayarlandığında rehberliğin etkisi olmaz. (varsayılan: 1.0) | FLOAT | Evet | 0.0 ila 100.0 (adım 0.01) |
+| `bloklar` | Bozulacak virgülle ayrılmış transformatör blok dizinleri. Yalnızca sayısal değerler kullanılır; diğer tüm karakterler yok sayılır. (varsayılan: "29") | STRING | Evet | — |
+| `başlangıç_yüzdesi` | Rehberliğin başladığı örnekleme sürecinin kesri. (varsayılan: 0.0) | FLOAT | Evet | 0.0 ila 1.0 (adım 0.001) |
+| `bitiş_yüzdesi` | Rehberliğin bittiği örnekleme sürecinin kesri. (varsayılan: 1.0) | FLOAT | Evet | 0.0 ila 1.0 (adım 0.001) |
 
 Not: Rehberlik yalnızca `start_percent` ile `end_percent` arasındaki örnekleme aralığında uygulanır. `scale` 0 ise veya `blocks` sayısal değer içermiyorsa, rehberli geçişin örnekleme sürecine etkisi olmaz.
 

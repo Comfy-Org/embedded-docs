@@ -8,10 +8,10 @@ Ce nœud génère une courte vidéo à partir d’une image de départ unique en
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Le modèle HappyHorse à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
-| `first_frame` | Image du premier frame. Le rapport hauteur/largeur de la sortie est dérivé de cette image. | IMAGE | Oui | 300×300 px min ; 1:2.5 à 2.5:1 |
-| `seed` | Graine à utiliser pour la génération. (défaut : 0) | INT | Oui | 0 à 2147483647 |
-| `watermark` | Indique s’il faut ajouter un filigrane généré par IA au résultat. (option avancée ; défaut : False) | BOOLEAN | Oui | True / False |
+| `modèle` | Le modèle HappyHorse à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
+| `première image` | Image du premier frame. Le rapport hauteur/largeur de la sortie est dérivé de cette image. | IMAGE | Oui | 300×300 px min ; 1:2.5 à 2.5:1 |
+| `graine` | Graine à utiliser pour la génération. (défaut : 0) | INT | Oui | 0 à 2147483647 |
+| `filigrane` | Indique s’il faut ajouter un filigrane généré par IA au résultat. (option avancée ; défaut : False) | BOOLEAN | Oui | True / False |
 
 ### happyhorse-1.1-i2v and happyhorse-1.0-i2v Entrées
 

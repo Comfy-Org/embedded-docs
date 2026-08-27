@@ -10,9 +10,9 @@ La sélection d'un `model` détermine quels paramètres ci-dessous sont disponib
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Le modèle d'IA utilisé pour générer la vidéo. Seedance 2.5 pour le modèle le plus récent, vidéos jusqu'à 30 secondes et sortie mp4 ; Seedance 2.0 pour une qualité maximale et 1080p/4k ; Fast pour une optimisation de la vitesse ; Mini pour la génération la plus rapide et la moins coûteuse. La sélection d'un modèle révèle les entrées spécifiques au modèle listées ci-dessous. | COMBO | Oui | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `modèle` | Le modèle d'IA utilisé pour générer la vidéo. Seedance 2.5 pour le modèle le plus récent, vidéos jusqu'à 30 secondes et sortie mp4 ; Seedance 2.0 pour une qualité maximale et 1080p/4k ; Fast pour une optimisation de la vitesse ; Mini pour la génération la plus rapide et la moins coûteuse. La sélection d'un modèle révèle les entrées spécifiques au modèle listées ci-dessous. | COMBO | Oui | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `seed` | Le `seed` contrôle si le nœud doit s'exécuter à nouveau ; les résultats sont non déterministes quel que soit le seed (par défaut : 0). | INT | Oui | 0 à 2147483647 |
-| `watermark` | Indique s'il faut ajouter un filigrane à la vidéo (par défaut : False). | BOOLEAN | Oui | `True`<br>`False` |
+| `filigrane` | Indique s'il faut ajouter un filigrane à la vidéo (par défaut : False). | BOOLEAN | Oui | `True`<br>`False` |
 
 ### Entrées Seedance 2.5
 

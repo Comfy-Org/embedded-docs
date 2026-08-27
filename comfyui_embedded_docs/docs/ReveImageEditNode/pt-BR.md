@@ -9,8 +9,8 @@ O nó Reve Image Edit permite modificar uma imagem existente com base em uma des
 | `image` | A imagem a ser editada. | IMAGE | Sim | - |
 | `edit_instruction` | Descrição textual de como editar a imagem. Máximo de 2560 caracteres. | STRING | Sim | - |
 | `model` | Versão do modelo a ser usada para edição. | MODEL | Sim | `"reve-edit@20250915"`<br>`"reve-edit-fast@20251030"` |
-| `model.aspect_ratio` | A proporção de aspecto para a imagem editada. Quando definido como "auto", a proporção de aspecto é determinada automaticamente. | COMBO | Não | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
-| `model.test_time_scaling` | Fator de escalonamento em tempo de teste para o modelo. Valores mais altos podem melhorar a qualidade, mas aumentam o tempo de processamento. | FLOAT | Não | - |
+| `aspect_ratio` | A proporção de aspecto para a imagem editada. Quando definido como "auto", a proporção de aspecto é determinada automaticamente. | COMBO | Não | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
+| `test_time_scaling` | Fator de escalonamento em tempo de teste para o modelo. Valores mais altos podem melhorar a qualidade, mas aumentam o tempo de processamento. | FLOAT | Não | - |
 | `upscale` | Controla se deve aumentar a resolução da imagem gerada. | COMBO | Não | `"disabled"`<br>`"enabled"` |
 | `upscale.upscale_factor` | O fator pelo qual aumentar a resolução da imagem quando o aumento de resolução está ativado. | FLOAT | Não | - |
 | `remove_background` | Controla se deve remover o fundo da imagem gerada. | BOOLEAN | Não | - |

@@ -8,11 +8,11 @@ El nodo ViduExtendVideoNode genera fotogramas adicionales para extender la durac
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `model` | Modelo a utilizar para la extensión del video. Al seleccionar un modelo, se muestran sus ajustes específicos de duración y resolución. | DYNAMIC_COMBO | Sí | `"viduq2-pro"`<br>`"viduq2-turbo"` |
+| `modelo` | Modelo a utilizar para la extensión del video. Al seleccionar un modelo, se muestran sus ajustes específicos de duración y resolución. | DYNAMIC_COMBO | Sí | `"viduq2-pro"`<br>`"viduq2-turbo"` |
 | `video` | El video de origen que se va a extender. | VIDEO | Sí | - |
 | `prompt` | Una indicación de texto opcional para el video extendido (máximo 2000 caracteres; por defecto: vacío). | STRING | Sí | - |
-| `seed` | Un valor de semilla para controlar la aleatoriedad de la generación (por defecto: 1). | INT | Sí | 0 a 2147483647 |
-| `end_frame` | Una imagen opcional para usar como fotograma final de destino de la extensión. | IMAGE | No | - |
+| `semilla` | Un valor de semilla para controlar la aleatoriedad de la generación (por defecto: 1). | INT | Sí | 0 a 2147483647 |
+| `fotograma_final` | Una imagen opcional para usar como fotograma final de destino de la extensión. | IMAGE | No | - |
 
 ### Entradas de viduq2-pro y viduq2-turbo
 

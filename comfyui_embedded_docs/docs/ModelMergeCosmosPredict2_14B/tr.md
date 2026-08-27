@@ -37,17 +37,17 @@ ModelMergeCosmosPredict2_14B düğümü, iki yapay zeka modelini iç bileşenler
 | `blocks.22.` | Blok 22 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.23.` | Blok 23 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.24.` | Blok 24 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.25.` | Blok 25 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.26.` | Blok 26 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.27.` | Blok 27 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.28.` | Blok 28 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.29.` | Blok 29 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.30.` | Blok 30 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.31.` | Blok 31 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.32.` | Blok 32 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.33.` | Blok 33 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.34.` | Blok 34 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.35.` | Blok 35 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.25.` | Blok 25 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.26.` | Blok 26 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.27.` | Blok 27 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.28.` | Blok 28 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.29.` | Blok 29 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.30.` | Blok 30 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.31.` | Blok 31 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.32.` | Blok 32 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.33.` | Blok 33 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.34.` | Blok 34 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.35.` | Blok 35 harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `final_layer.` | Son katman harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 
 **Not:** Tüm harmanlama ağırlığı parametreleri 0.0 ile 1.0 arasında değerler kabul eder; burada 0.0, model2'den hiçbir katkı olmadığı ve 1.0, ilgili bileşen için model2'den tam katkı olduğu anlamına gelir.

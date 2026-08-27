@@ -6,11 +6,11 @@ Ce nœud améliore le détail spatial et la cohérence du mouvement de la géné
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle de base auquel appliquer le guidage spatio-temporel. Le modèle est cloné et modifié avec une fonction de guidage post-CFG. | MODEL | Oui | — |
-| `scale` | La force du guidage appliqué au résultat débruité. Lorsqu'elle est définie à 0, le guidage n'a aucun effet. (défaut : 1.0) | FLOAT | Oui | 0.0 à 100.0 (pas 0.01) |
-| `blocks` | Indices de blocs de transformateur séparés par des virgules à perturber. Seules les valeurs numériques sont utilisées ; tous les autres caractères sont ignorés. (défaut : "29") | STRING | Oui | — |
-| `start_percent` | La fraction du processus d'échantillonnage à laquelle le guidage commence. (défaut : 0.0) | FLOAT | Oui | 0.0 à 1.0 (pas 0.001) |
-| `end_percent` | La fraction du processus d'échantillonnage à laquelle le guidage se termine. (défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas 0.001) |
+| `modèle` | Le modèle de base auquel appliquer le guidage spatio-temporel. Le modèle est cloné et modifié avec une fonction de guidage post-CFG. | MODEL | Oui | — |
+| `échelle` | La force du guidage appliqué au résultat débruité. Lorsqu'elle est définie à 0, le guidage n'a aucun effet. (défaut : 1.0) | FLOAT | Oui | 0.0 à 100.0 (pas 0.01) |
+| `blocs` | Indices de blocs de transformateur séparés par des virgules à perturber. Seules les valeurs numériques sont utilisées ; tous les autres caractères sont ignorés. (défaut : "29") | STRING | Oui | — |
+| `pourcentage_début` | La fraction du processus d'échantillonnage à laquelle le guidage commence. (défaut : 0.0) | FLOAT | Oui | 0.0 à 1.0 (pas 0.001) |
+| `pourcentage_fin` | La fraction du processus d'échantillonnage à laquelle le guidage se termine. (défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas 0.001) |
 
 Remarque : Le guidage n'est appliqué que pendant l'intervalle d'échantillonnage entre `start_percent` et `end_percent`. Si `scale` est 0 ou si `blocks` ne contient aucune valeur numérique, la passe guidée n'a aucun effet sur le processus d'échantillonnage.
 

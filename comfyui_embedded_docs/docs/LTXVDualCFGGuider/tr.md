@@ -7,8 +7,8 @@ Bu düğüm, LTXV-AV modelleri için yönlendirilmiş bir örnekleme nesnesi (CF
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Örnekleme sırasında kullanılacak model. | MODEL | Evet | - |
-| `positive` | Üretimi yönlendirmek için kullanılan pozitif koşullandırma. | CONDITIONING | Evet | - |
-| `negative` | Üretimi istenmeyen yönden uzaklaştıran negatif koşullandırma. | CONDITIONING | Evet | - |
+| `pozitif` | Üretimi yönlendirmek için kullanılan pozitif koşullandırma. | CONDITIONING | Evet | - |
+| `negatif` | Üretimi istenmeyen yönden uzaklaştıran negatif koşullandırma. | CONDITIONING | Evet | - |
 | `video_cfg` | Latentin video modalitesine uygulanan yönlendirme gücü (varsayılan: 3.0). | FLOAT | Evet | 0.0 ile 100.0 arası |
 | `audio_cfg` | Latentin ses modalitesine uygulanan yönlendirme gücü (varsayılan: 7.0). | FLOAT | Evet | 0.0 ile 100.0 arası |
 

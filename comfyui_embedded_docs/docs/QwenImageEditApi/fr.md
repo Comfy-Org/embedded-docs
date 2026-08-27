@@ -8,12 +8,12 @@ Ce nœud utilise les modèles Qwen-Image 3.0 pour modifier ou combiner jusqu'à 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser. Cette sélection inclut également le prompt texte, jusqu'à 3 entrées d'images de référence et un prompt négatif facultatif. | DYNAMIC_COMBO | Oui | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
-| `size` | Résolution de sortie. "match input" réutilise la taille de la première image de référence, "auto" laisse le modèle choisir une taille avec le même rapport hauteur/largeur, "custom" définit une largeur et une hauteur explicites. | DYNAMIC_COMBO | Oui | "match input"<br>"auto"<br>"custom" |
+| `modèle` | Modèle à utiliser. Cette sélection inclut également le prompt texte, jusqu'à 3 entrées d'images de référence et un prompt négatif facultatif. | DYNAMIC_COMBO | Oui | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
+| `taille` | Résolution de sortie. "match input" réutilise la taille de la première image de référence, "auto" laisse le modèle choisir une taille avec le même rapport hauteur/largeur, "custom" définit une largeur et une hauteur explicites. | DYNAMIC_COMBO | Oui | "match input"<br>"auto"<br>"custom" |
 | `n` | Nombre d'images à générer, renvoyées sous forme de lot. (défaut : 1) | INT | Non | 1 à 6 |
-| `seed` | Graine à utiliser pour la génération. (défaut : 42) | INT | Non | 0 à 2147483647 |
-| `prompt_extend` | Indique si le prompt doit être enrichi avec l'assistance de l'IA. (défaut : True) | BOOLEAN | Non | True<br>False |
-| `watermark` | Indique si un filigrane généré par l'IA doit être ajouté au résultat. (défaut : False) | BOOLEAN | Non | True<br>False |
+| `graine` | Graine à utiliser pour la génération. (défaut : 42) | INT | Non | 0 à 2147483647 |
+| `extension de prompt` | Indique si le prompt doit être enrichi avec l'assistance de l'IA. (défaut : True) | BOOLEAN | Non | True<br>False |
+| `filigrane` | Indique si un filigrane généré par l'IA doit être ajouté au résultat. (défaut : False) | BOOLEAN | Non | True<br>False |
 
 ### Entrées qwen-image-3.0-pro et qwen-image-3.0
 

@@ -8,10 +8,10 @@ Grok Video Extend 节点使用 AI 模型为现有视频创建无缝续接。您�
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用于视频扩展的模型。 | DYNAMIC_COMBO | 是 | `"grok-imagine-video"` |
-| `prompt` | 描述视频接下来应发生内容的文本。 | STRING | 是 | N/A |
-| `video` | 要扩展的源视频。MP4 格式，时长 2-15 秒。 | VIDEO | 是 | N/A |
-| `seed` | 用于决定节点是否应重新运行的种子；无论种子为何，实际结果都是不确定的（默认值：0）。 | INT | 是 | 0 至 2147483647 |
+| `模型` | 用于视频扩展的模型。 | DYNAMIC_COMBO | 是 | `"grok-imagine-video"` |
+| `提示词` | 描述视频接下来应发生内容的文本。 | STRING | 是 | N/A |
+| `视频` | 要扩展的源视频。MP4 格式，时长 2-15 秒。 | VIDEO | 是 | N/A |
+| `种子` | 用于决定节点是否应重新运行的种子；无论种子为何，实际结果都是不确定的（默认值：0）。 | INT | 是 | 0 至 2147483647 |
 
 ### grok-imagine-video 输入
 

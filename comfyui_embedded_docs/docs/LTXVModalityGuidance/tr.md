@@ -8,8 +8,8 @@ Bu düğüm, bir LTXV-AV modeline çapraz mod (ses-video) yönlendirmesi uygular
 |-----------|-------------|-----------|----------|-------|
 | `model` | Üzerine modalite yönlendirmesi uygulanacak temel model. Dahili olarak klonlanır ve orijinal model değişmeden bırakılır. | MODEL | Evet | - |
 | `modality_scale` | Ses-video birleştirme yönlendirmesinin gücü. Varsayılan 3.0'dır. Ekstra ileri geçişi devre dışı bırakmak için 1.0 olarak ayarlayın. | FLOAT | Evet | 1.0 ile 100.0 arası (default: 3.0) |
-| `start_percent` | Modalite yönlendirmesinin başladığı örnekleme sürecindeki nokta (0.0 ile 1.0 arasında bir yüzde). Varsayılan 0.0'dır. | FLOAT | Evet | 0.0 ile 1.0 arası (default: 0.0) |
-| `end_percent` | Modalite yönlendirmesinin sona erdiği örnekleme sürecindeki nokta (0.0 ile 1.0 arasında bir yüzde). Varsayılan 1.0'dır. | FLOAT | Evet | 0.0 ile 1.0 arası (default: 1.0) |
+| `başlangıç_yüzdesi` | Modalite yönlendirmesinin başladığı örnekleme sürecindeki nokta (0.0 ile 1.0 arasında bir yüzde). Varsayılan 0.0'dır. | FLOAT | Evet | 0.0 ile 1.0 arası (default: 0.0) |
+| `bitiş_yüzdesi` | Modalite yönlendirmesinin sona erdiği örnekleme sürecindeki nokta (0.0 ile 1.0 arasında bir yüzde). Varsayılan 1.0'dır. | FLOAT | Evet | 0.0 ile 1.0 arası (default: 1.0) |
 
 Yönlendirme yalnızca sigma değerleri `start_percent` ve `end_percent` tarafından tanımlanan aralığa giren örnekleme adımlarına uygulanır. Bu aralığın dışında, düğüm gürültüsü giderilmiş sonucu değiştirmeden döndürür. `modality_scale` değerinin 1.0 olması ayrıca ekstra ileri geçişi tamamen devre dışı bırakır.
 

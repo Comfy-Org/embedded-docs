@@ -6,9 +6,9 @@ Ce nœud crée un objet d'échantillonnage guidé (guider CFG) pour les modèles
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Le modèle à utiliser lors de l'échantillonnage. | MODEL | Oui | - |
-| `positive` | Conditionnement positif pour guider la génération vers la cible souhaitée. | CONDITIONING | Oui | - |
-| `negative` | Conditionnement négatif pour éloigner la génération de la cible indésirable. | CONDITIONING | Oui | - |
+| `modèle` | Le modèle à utiliser lors de l'échantillonnage. | MODEL | Oui | - |
+| `positif` | Conditionnement positif pour guider la génération vers la cible souhaitée. | CONDITIONING | Oui | - |
+| `négatif` | Conditionnement négatif pour éloigner la génération de la cible indésirable. | CONDITIONING | Oui | - |
 | `video_cfg` | Force de guidage appliquée à la modalité vidéo du latent (par défaut : 3.0). | FLOAT | Oui | 0.0 à 100.0 |
 | `audio_cfg` | Force de guidage appliquée à la modalité audio du latent (par défaut : 7.0). | FLOAT | Oui | 0.0 à 100.0 |
 

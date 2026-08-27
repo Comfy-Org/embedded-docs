@@ -10,9 +10,9 @@ Le sélecteur `moderation` révèle des options de modération supplémentaires 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `moderation` | Paramètres de modération. Lorsqu'il est défini sur `"true"`, des options de modération supplémentaires deviennent disponibles. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
+| `modération` | Paramètres de modération. Lorsqu'il est défini sur `"true"`, des options de modération supplémentaires deviennent disponibles. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
 | `image` | L'image d'entrée dont l'arrière-plan sera supprimé. | IMAGE | Oui | - |
-| `seed` | La graine contrôle si le nœud doit se réexécuter ; les résultats sont non déterministes quelle que soit la graine. Par défaut : `0`. | INT | Oui | 0 à 2147483647 |
+| `graine` | La graine contrôle si le nœud doit se réexécuter ; les résultats sont non déterministes quelle que soit la graine. Par défaut : `0`. | INT | Oui | 0 à 2147483647 |
 
 ### Entrées de modération « true »
 

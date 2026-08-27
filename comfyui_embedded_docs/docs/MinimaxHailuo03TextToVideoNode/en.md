@@ -21,7 +21,7 @@ These settings appear when the "MiniMax H3" model is selected.
 | `prompt` | Text prompt for video generation. | STRING | Yes | Any text |
 | `resolution` | Resolution of the output video. | COMBO | Yes | "768P"<br>"2K" |
 | `ratio` | Aspect ratio of the output video. (default: "16:9") | COMBO | Yes | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9" |
-| `duration` | Duration of the output video in seconds. (default: 5) | INT | Yes | 4 to 15 |
+| `duration` | Duration of the output video in seconds (4-15). (default: 5) | INT | Yes | 4 to 15 |
 
 Note: The text prompt included in the `model` option must contain at least one non-whitespace character. The estimated price shown for this node is calculated from the selected resolution and video duration.
 

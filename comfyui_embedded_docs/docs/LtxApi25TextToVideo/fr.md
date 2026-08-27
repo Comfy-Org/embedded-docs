@@ -6,11 +6,11 @@ LTX 2.5 Text To Video est un nœud API qui génère des vidéos de qualité prof
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le niveau du modèle LTX 2.5 à utiliser pour la génération de vidéos. | STRING | Oui | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
-| `model.duration` | La durée de la vidéo générée. | INT | Oui | Entier |
-| `model.resolution` | La résolution de sortie de la vidéo. Les options disponibles dépendent du `model` sélectionné. | STRING | Oui | Avec "LTX-2.5 (Fast)" :<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840"<br>Avec "LTX-2.5 (Pro)" :<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920" |
-| `model.fps` | Nombre d'images par seconde (FPS) de la vidéo générée (par défaut : 25). | INT | Non | Entier |
-| `model.generate_audio` | Indique si l'audio doit être généré avec la vidéo (par défaut : True). | BOOLEAN | Non | True<br>False |
+| `modèle` | Le niveau du modèle LTX 2.5 à utiliser pour la génération de vidéos. | STRING | Oui | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
+| `durée` | La durée de la vidéo générée. | INT | Oui | Entier |
+| `résolution` | La résolution de sortie de la vidéo. Les options disponibles dépendent du `model` sélectionné. | STRING | Oui | Avec "LTX-2.5 (Fast)" :<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840"<br>Avec "LTX-2.5 (Pro)" :<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920" |
+| `fps` | Nombre d'images par seconde (FPS) de la vidéo générée (par défaut : 25). | INT | Non | Entier |
+| `générer_audio` | Indique si l'audio doit être généré avec la vidéo (par défaut : True). | BOOLEAN | Non | True<br>False |
 | `prompt` | La description textuelle de la vidéo à générer. Une invite non vide de 10 000 caractères maximum est requise (par défaut : ""). | STRING | Oui | 1 à 10000 caractères |
 | `seed` | Valeur de graine utilisée pour une génération reproductible (par défaut : 42). | INT | Non | Entier |
 

@@ -9,7 +9,7 @@ Le nœud HitPaw Video Enhance utilise une API externe pour améliorer la qualit�
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `modèle` | Le modèle d'IA à utiliser pour l'amélioration vidéo. La sélection d'un modèle révèle un paramètre `resolution` imbriqué. Les modèles disponibles et leurs résolutions prises en charge varient. | DYNAMIC COMBO | Oui | Plusieurs options disponibles |
-| `model.resolution` | La résolution cible pour la vidéo améliorée. Certaines options peuvent être indisponibles selon le `modèle` sélectionné. | COMBO | Oui | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` |
+| `résolution` | La résolution cible pour la vidéo améliorée. Certaines options peuvent être indisponibles selon le `modèle` sélectionné. | COMBO | Oui | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` |
 | `vidéo` | Le fichier vidéo d'entrée à améliorer. | VIDEO | Oui | N/A |
 
 **Contraintes :**

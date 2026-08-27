@@ -5,15 +5,15 @@
 ## 输入
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 用于视频的第一帧。 | IMAGE | 是 | Exactly one image |
-| `model` | 模型设置组。选择要使用的 LTX 2.5 模型变体。 | COMBO | 是 | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
-| `model.duration` | 生成视频的时长（以秒为单位）。 | INT | 是 | Integer |
-| `model.resolution` | 生成视频的分辨率。可用选项可能取决于所选的模型。 | COMBO | 是 | "1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840" |
-| `model.fps` | 生成视频的帧率。 | INT | 是 | Integer (default: 25) |
-| `model.generate_audio` | 是否为视频生成音频。 | BOOLEAN | 是 | True<br>False |
-| `prompt` | 要生成的视频内容的文本描述。长度必须在 1 到 10000 个字符之间。 | STRING | 是 | 1 到 10000 characters |
-| `seed` | 用于可重现生成的种子值。使用相同种子和相同设置将产生相同结果。 | INT | 是 | Integer (default: 42) |
-| `last_frame` | 用于视频的最后一帧。 | IMAGE | 否 | Exactly one image |
+| `图像` | 用于视频的第一帧。 | IMAGE | 是 | Exactly one image |
+| `模型` | 模型设置组。选择要使用的 LTX 2.5 模型变体。 | COMBO | 是 | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
+| `时长` | 生成视频的时长（以秒为单位）。 | INT | 是 | Integer |
+| `分辨率` | 生成视频的分辨率。可用选项可能取决于所选的模型。 | COMBO | 是 | "1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840" |
+| `帧率` | 生成视频的帧率。 | INT | 是 | Integer (default: 25) |
+| `生成音频` | 是否为视频生成音频。 | BOOLEAN | 是 | True<br>False |
+| `提示词` | 要生成的视频内容的文本描述。长度必须在 1 到 10000 个字符之间。 | STRING | 是 | 1 到 10000 characters |
+| `种子` | 用于可重现生成的种子值。使用相同种子和相同设置将产生相同结果。 | INT | 是 | Integer (default: 42) |
+| `末帧` | 用于视频的最后一帧。 | IMAGE | 否 | Exactly one image |
 
 ## 输出
 | Output Name | Description | Data Type |

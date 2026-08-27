@@ -8,9 +8,9 @@ Le nœud Grok Reference-to-Video génère une vidéo à partir d’un prompt tex
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | `"grok-imagine-video-1.5"`<br>`"grok-imagine-video"` |
-| `prompt` | Description textuelle de la vidéo souhaitée. Doit être une chaîne non vide. | STRING | Oui | N/A |
-| `seed` | Seed pour déterminer si le nœud doit se relancer ; les résultats réels sont non déterministes, quelle que soit la seed (défaut : 0). | INT | Oui | 0 à 2147483647 |
+| `modèle` | Le modèle à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | `"grok-imagine-video-1.5"`<br>`"grok-imagine-video"` |
+| `invite` | Description textuelle de la vidéo souhaitée. Doit être une chaîne non vide. | STRING | Oui | N/A |
+| `graine` | Seed pour déterminer si le nœud doit se relancer ; les résultats réels sont non déterministes, quelle que soit la seed (défaut : 0). | INT | Oui | 0 à 2147483647 |
 
 ### Grok Imagine Video 1.5 Entrées
 

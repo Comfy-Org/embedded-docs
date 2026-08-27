@@ -8,9 +8,9 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 使用するGrok画像モデル。以下に表示されるサブパラメータは、選択したモデルによって異なります。 | DYNAMIC_COMBO | 必須 | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
-| `prompt` | 画像の生成に使用するテキストプロンプト。（デフォルト：""） | STRING | 必須 | N/A |
-| `seed` | ノードを再実行すべきかどうかを決定するためのシード。実際の結果はシードに関係なく非決定的です。（デフォルト：0） | INT | 必須 | 0 〜 2147483647 |
+| `モデル` | 使用するGrok画像モデル。以下に表示されるサブパラメータは、選択したモデルによって異なります。 | DYNAMIC_COMBO | 必須 | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
+| `プロンプト` | 画像の生成に使用するテキストプロンプト。（デフォルト：""） | STRING | 必須 | N/A |
+| `シード` | ノードを再実行すべきかどうかを決定するためのシード。実際の結果はシードに関係なく非決定的です。（デフォルト：0） | INT | 必須 | 0 〜 2147483647 |
 
 ### grok-imagine-image-2.0 入力
 

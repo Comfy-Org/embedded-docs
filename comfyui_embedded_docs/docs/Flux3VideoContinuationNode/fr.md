@@ -6,13 +6,13 @@ Ce nœud prolonge un clip vidéo existant avec FLUX 3, de sorte que le nouveau c
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------|----------|-------|
-| `video` | Le clip à prolonger. | VIDEO | Oui | Clip vidéo unique |
+| `vidéo` | Le clip à prolonger. | VIDEO | Oui | Clip vidéo unique |
 | `prompt` | Ce que la continuation doit montrer ; le prompt est interprété et développé avant la génération. (défaut : "") | STRING | Oui | Texte non vide (minimum 1 caractère) |
-| `aspect_ratio` | Rapport d’aspect de sortie. 'auto' en choisit un à partir du prompt et des entrées. (défaut : "auto") | STRING | Oui | Plusieurs options prédéfinies (défaut : "auto") |
-| `duration` | Durée du clip en secondes. 'auto' adapte la durée au contenu. (défaut : "auto") | STRING | Oui | "auto" (défaut)<br>Valeurs numériques en secondes |
-| `resolution` | Résolution de sortie. (défaut : "720p") | STRING | Oui | Plusieurs options prédéfinies (défaut : "720p") |
-| `generate_audio` | Générer un son synchronisé (ambiance, parole, effets). La valeur Off produit une vidéo sans piste audio. (défaut : true) | BOOLEAN | Oui | true<br>false |
-| `safety_tolerance` | Tolérance de modération, 0 étant le plus strict. Les requêtes qui envoient des images ou des vidéos sont plafonnées à 2, quelle que soit la valeur définie ici. (paramètre avancé, défaut : 2) | INT | Oui | 0 - 4 (maximum effectif : 2 pour les requêtes vidéo) |
+| `rapport d'aspect` | Rapport d’aspect de sortie. 'auto' en choisit un à partir du prompt et des entrées. (défaut : "auto") | STRING | Oui | Plusieurs options prédéfinies (défaut : "auto") |
+| `durée` | Durée du clip en secondes. 'auto' adapte la durée au contenu. (défaut : "auto") | STRING | Oui | "auto" (défaut)<br>Valeurs numériques en secondes |
+| `résolution` | Résolution de sortie. (défaut : "720p") | STRING | Oui | Plusieurs options prédéfinies (défaut : "720p") |
+| `générer l'audio` | Générer un son synchronisé (ambiance, parole, effets). La valeur Off produit une vidéo sans piste audio. (défaut : true) | BOOLEAN | Oui | true<br>false |
+| `tolérance de sécurité` | Tolérance de modération, 0 étant le plus strict. Les requêtes qui envoient des images ou des vidéos sont plafonnées à 2, quelle que soit la valeur définie ici. (paramètre avancé, défaut : 2) | INT | Oui | 0 - 4 (maximum effectif : 2 pour les requêtes vidéo) |
 | `seed` | Seed permettant de déterminer si le nœud doit s’exécuter à nouveau ; FLUX 3 choisit lui-même la seed, donc les résultats réels sont non déterministes quelle que soit cette valeur. (paramètre avancé, défaut : 42) | INT | Oui | 0 - 4294967295 (0xFFFFFFFF) |
 
 ### Remarques

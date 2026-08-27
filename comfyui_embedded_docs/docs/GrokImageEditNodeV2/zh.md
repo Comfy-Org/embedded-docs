@@ -8,9 +8,9 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的 Grok 图像模型。下方显示的子参数会随所选模型而变化。 | DYNAMIC_COMBO | 是 | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
-| `prompt` | 用于生成图像的文字提示。（默认值：""） | STRING | 是 | 不适用 |
-| `seed` | 用于决定节点是否应重新运行的种子；实际结果与种子无关，具有不确定性。（默认值：0） | INT | 是 | 0 到 2147483647 |
+| `模型` | 要使用的 Grok 图像模型。下方显示的子参数会随所选模型而变化。 | DYNAMIC_COMBO | 是 | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
+| `提示词` | 用于生成图像的文字提示。（默认值：""） | STRING | 是 | 不适用 |
+| `种子` | 用于决定节点是否应重新运行的种子；实际结果与种子无关，具有不确定性。（默认值：0） | INT | 是 | 0 到 2147483647 |
 
 ### grok-imagine-image-2.0 输入
 

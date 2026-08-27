@@ -8,28 +8,29 @@ The Meshy: Image to Model node uses the Meshy API to generate a 3D model from a 
 | --- | --- | --- | --- | --- |
 | `model` | Specifies the AI model version to use for generation. | COMBO | Yes | `"latest"` |
 | `image` | The input image to convert into a 3D model. | IMAGE | Yes | - |
-| `should_remesh` | Determines if the generated mesh should be processed. When set to `"false"`, the node returns an unprocessed triangular mesh. | DYNAMIC COMBO | Yes | `"true"`<br>`"false"` |
+| `should_remesh` | When set to `"false"`, returns an unprocessed triangular mesh. | DYNAMIC_COMBO | Yes | `"true"`<br>`"false"` |
 | `topology` | The target polygon topology for the remeshed model. This input is only available when `should_remesh` is set to `"true"`. | COMBO | No* | `"triangle"`<br>`"quad"` |
-| `target_polycount` | The target number of polygons for the remeshed model. This input is only available when `should_remesh` is set to `"true"`. The default value is 300000. | INT | No* | 100 - 300000 |
+| `target_polycount` | The target number of polygons for the remeshed model. This input is only available when `should_remesh` is set to `"true"`. Default: 300000. | INT | No* | 100 - 300000 |
 | `symmetry_mode` | Controls the symmetry applied to the generated 3D model. | COMBO | Yes | `"auto"`<br>`"on"`<br>`"off"` |
-| `should_texture` | Determines whether textures are generated for the model. Setting it to `"false"` skips the texture phase and returns a mesh without textures. | DYNAMIC COMBO | Yes | `"true"`<br>`"false"` |
-| `enable_pbr` | When `should_texture` is `"true"`, this option generates PBR maps (metallic, roughness, normal) in addition to the base color. The default value is `False`. | BOOLEAN | No* | - |
-| `texture_prompt` | A text prompt to guide the texturing process (maximum 600 characters). This input is only available when `should_texture` is `"true"`. It cannot be used at the same time as `texture_image`. | STRING | No* | - |
-| `texture_image` | An image to guide the texturing process. This input is only available when `should_texture` is `"true"`. It cannot be used at the same time as `texture_prompt`. | IMAGE | No* | - |
-| `pose_mode` | Specifies the pose mode for the generated model. This is an advanced parameter. | COMBO | Yes | `""` (empty)<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | A seed value for the generation process. The results are non-deterministic regardless of the seed value. The default value is 0. | INT | Yes | 0 - 2147483647 |
+| `should_texture` | Determines whether textures are generated. Setting it to `"false"` skips the texture phase and returns a mesh without textures. | DYNAMIC_COMBO | Yes | `"true"`<br>`"false"` |
+| `enable_pbr` | Generate PBR Maps (metallic, roughness, normal) in addition to the base color. This input is only available when `should_texture` is set to `"true"`. Default: `False`. | BOOLEAN | No* | - |
+| `texture_prompt` | Provide a text prompt to guide the texturing process. Maximum 600 characters. Cannot be used at the same time as `texture_image`. This input is only available when `should_texture` is set to `"true"`. Default: empty string. | STRING | No* | - |
+| `texture_image` | Only one of `texture_image` or `texture_prompt` may be used at the same time. This input is only available when `should_texture` is set to `"true"`. | IMAGE | No* | - |
+| `pose_mode` | Specify the pose mode for the generated model. This is an advanced parameter. | COMBO | Yes | `""` (empty)<br>`"A-pose"`<br>`"T-pose"` |
+| `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed. Default: 0. | INT | Yes | 0 - 2147483647 |
 
 **Note on Parameter Constraints:**
 
 * The `topology` and `target_polycount` inputs are only available when `should_remesh` is set to `"true"`.
 * The `enable_pbr`, `texture_prompt`, and `texture_image` inputs are only available when `should_texture` is set to `"true"`.
-* You cannot use `texture_prompt` and `texture_image` at the same time. If both are provided when `should_texture` is `"true"`, the node will raise an error.
+* When `should_texture` is set to `"true"`, `texture_prompt` and `texture_image` cannot be used at the same time. If both are provided, the node raises an error.
+* `texture_prompt` has a maximum length of 600 characters.
 
 ## Outputs
 
 | Output Name | Description | Data Type |
 | --- | --- | --- |
-| `model_file` | The filename of the generated GLB model. (Maintained for backward compatibility). | STRING |
+| `model_file` | The filename of the generated GLB model. Maintained for backward compatibility only. | STRING |
 | `meshy_task_id` | The unique identifier for the Meshy API task, which can be used for reference or troubleshooting. | MESHY_TASK_ID |
 | `GLB` | The generated 3D model in the GLB file format. | FILE3DGLB |
 | `FBX` | The generated 3D model in the FBX file format. | FILE3DFBX |

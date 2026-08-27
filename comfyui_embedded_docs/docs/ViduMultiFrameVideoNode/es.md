@@ -8,11 +8,11 @@ Este nodo genera un video creando transiciones entre múltiples fotogramas clave
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | El modelo Vidu que se usará para la generación de video. | COMBO | Sí | "viduq2-pro"<br>"viduq2-turbo" |
-| `start_image` | La imagen del fotograma inicial. La relación de aspecto debe estar entre 1:4 y 4:1. | IMAGE | Sí | Relación de aspecto 1:4 a 4:1 |
-| `seed` | Un valor de semilla para la generación de números aleatorios que garantice resultados reproducibles (predeterminado: 1). | INT | Sí | 0 a 2147483647 |
-| `resolution` | La resolución del video de salida. | COMBO | Sí | "720p"<br>"1080p" |
-| `frames` | Número de transiciones entre fotogramas clave (2-9). Al seleccionar un valor, se muestran dinámicamente las entradas requeridas para cada fotograma. | DYNAMIC_COMBO | Sí | "2"<br>"3"<br>"4"<br>"5"<br>"6"<br>"7"<br>"8"<br>"9" |
+| `modelo` | El modelo Vidu que se usará para la generación de video. | COMBO | Sí | "viduq2-pro"<br>"viduq2-turbo" |
+| `imagen_inicial` | La imagen del fotograma inicial. La relación de aspecto debe estar entre 1:4 y 4:1. | IMAGE | Sí | Relación de aspecto 1:4 a 4:1 |
+| `semilla` | Un valor de semilla para la generación de números aleatorios que garantice resultados reproducibles (predeterminado: 1). | INT | Sí | 0 a 2147483647 |
+| `resolución` | La resolución del video de salida. | COMBO | Sí | "720p"<br>"1080p" |
+| `fotogramas` | Número de transiciones entre fotogramas clave (2-9). Al seleccionar un valor, se muestran dinámicamente las entradas requeridas para cada fotograma. | DYNAMIC_COMBO | Sí | "2"<br>"3"<br>"4"<br>"5"<br>"6"<br>"7"<br>"8"<br>"9" |
 
 ### Entradas de fotogramas (compartidas por todas las opciones de número de fotogramas)
 

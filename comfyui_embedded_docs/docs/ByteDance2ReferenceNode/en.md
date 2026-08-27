@@ -1,6 +1,6 @@
-# ByteDance Seedance 2.0 Reference to Video
+# ByteDance Seedance 2.5 Reference to Video
 
-This node generates, edits, or extends videos using ByteDance's Seedance 2.5 or 2.0 AI models. You describe the video in a text prompt and can add reference images, videos, and audio to guide the result. It supports multimodal reference inputs, video editing, and video extension.
+This node generates, edits, or extends videos using ByteDance's Seedance 2.5 or 2.0 AI models. You describe the video in a text prompt and can add reference images, videos, and audio to guide the result. It supports multimodal reference inputs, video editing, and video extension. This is the legacy, deprecated version of the Seedance reference-to-video node.
 
 ## Inputs
 
@@ -10,16 +10,16 @@ Selecting a `model` determines which of the parameters below are available. `vid
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The AI model used to generate the video. Seedance 2.5 for the newest model, videos up to 30 seconds and mp4 output; Seedance 2.0 for maximum quality and 1080p/4k; Fast for speed optimization; Mini for the fastest, lowest-cost generation. Selecting a model reveals the model-specific inputs listed below. | COMBO | Yes | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
-| `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed (default: 0). | INT | Yes | 0 to 2147483647 |
-| `watermark` | Whether to add a watermark to the video (default: False). | BOOLEAN | Yes | `True`<br>`False` |
+| `model` | The AI model used to generate the video. Seedance 2.5 for the newest model, videos up to 30 seconds and mp4/mov output; Seedance 2.0 for maximum quality and 4k; Fast for speed optimization; Mini for the fastest, lowest-cost generation. Selecting a model reveals the model-specific inputs listed below. | DYNAMIC_COMBO | Yes | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed (default: 0). | INT | Yes | 0 to 2147483647<br>Step: 1 |
+| `watermark` | Whether to add a watermark to the video (default: False). Advanced setting. | BOOLEAN | Yes | `True`<br>`False` |
 
 ### Seedance 2.5 Inputs
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Text prompt for video generation. Put spoken lines in double quotes to steer the generated dialogue. Must contain at least one non-whitespace character (default: empty). | STRING | Yes | Any text |
-| `resolution` | Resolution of the output video (default: `"720p"`). | COMBO | Yes | `"480p"`<br>`"720p"` |
+| `resolution` | Resolution of the output video (default: `"720p"`). | COMBO | Yes | `"480p"`<br>`"720p"`<br>`"1080p"` |
 | `ratio` | Aspect ratio of the output video (default: `"16:9"`). | COMBO | Yes | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
 | `duration` | Duration of the output video in seconds (default: 5). | INT | Yes | 4 to 30<br>Step: 1 |
 | `generate_audio` | Enable audio generation for the output video (default: True). | BOOLEAN | Yes | `True`<br>`False` |
@@ -58,7 +58,7 @@ Available for all models. The maximum number of slots depends on the selected mo
 | `reference_videos` | Growable slot: connect one or more reference videos (`video_1`, `video_2`, ...) that guide the video generation; used for video editing and extension. | VIDEO | No | Up to 10 (Seedance 2.5)<br>Up to 3 (Seedance 2.0 models) |
 | `reference_audios` | Growable slot: connect one or more reference audio clips (`audio_1`, `audio_2`, ...) that guide the video generation. | AUDIO | No | Up to 10 (Seedance 2.5)<br>Up to 3 (Seedance 2.0 models) |
 | `auto_downscale` | Automatically downscale reference videos that exceed the model's pixel budget for the selected resolution. Aspect ratio is preserved; videos already within limits are untouched (default: True). | BOOLEAN | No | `True`<br>`False` |
-| `auto_upscale` | Automatically upscale reference videos that are below the model's minimum pixel count for the selected resolution. Aspect ratio is preserved; videos already meeting the minimum are untouched. Note: upscaling a low-resolution source does not add real detail and may produce lower-quality generations (default: False). | BOOLEAN | No | `True`<br>`False` |
+| `auto_upscale` | Advanced setting. Automatically upscale reference videos that are below the model's minimum pixel count for the selected resolution. Aspect ratio is preserved; videos already meeting the minimum are untouched. Note: upscaling a low-resolution source does not add real detail and may produce lower-quality generations (default: False). | BOOLEAN | No | `True`<br>`False` |
 | `reference_assets` | Growable slot: IDs of previously created Seedance virtual-library assets (Image, Video, or Audio) to use as references (`asset_1`, `asset_2`, ...). Each asset must exist and have an Active status. In the prompt, assets can be referred to as `asset1`, `asset 1`, etc.; the node replaces these tokens with labels such as "Image 2". | STRING | No | Up to 30 (Seedance 2.5)<br>Up to 9 (Seedance 2.0 models) |
 
 **Important Constraints:**
@@ -79,4 +79,4 @@ Available for all models. The maximum number of slots depends on the selected mo
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `4429306ac40b0f04ce7176cd805b34164de5e4e2b7204b008ea076b57663c200`
+**Source fingerprint (SHA-256):** `4a1b62f65ff3515cdb749c9b3916e631e53523fe144e8cdf71ca020825196ae6`

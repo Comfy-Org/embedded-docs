@@ -21,7 +21,7 @@ The Grok Video Extend node uses an AI model to create a seamless continuation of
 
 **Parameter Constraints:**
 *   The `video` input must be an MP4 file between 2 and 15 seconds in length and cannot exceed 50MB in file size.
-*   The `prompt` must contain at least one character (whitespace is trimmed).
+*   The `prompt` must contain at least one character after whitespace is trimmed.
 *   The `model` parameter is a dynamic combo. Selecting the "grok-imagine-video" option reveals the nested `duration` parameter.
 
 ## Outputs
@@ -33,4 +33,4 @@ The Grok Video Extend node uses an AI model to create a seamless continuation of
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoExtendNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `bfaf56dd12afab13c820345587db9ee871db87d60b8dc003f00f035513dbdf61`
+**Source fingerprint (SHA-256):** `5009c007b6f93cd44f2742b024b65f1ac92ab9bca3b85a55554b1d99649e323b`

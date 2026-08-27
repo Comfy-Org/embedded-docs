@@ -6,15 +6,15 @@ Bu düğüm, bir başlangıç görüntüsüne dayalı olarak profesyonel kalited
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Video için kullanılacak ilk kare. | IMAGE | Evet | Tam olarak bir görüntü |
+| `görsel` | Video için kullanılacak ilk kare. | IMAGE | Evet | Tam olarak bir görüntü |
 | `model` | Model ayarları grubu. Kullanılacak LTX 2.5 model çeşidini seçer. | COMBO | Evet | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
-| `model.duration` | Üretilen videonun saniye cinsinden süresi. | INT | Evet | Tam sayı |
-| `model.resolution` | Üretilen videonun çözünürlüğü. Kullanılabilir seçenekler seçilen modele bağlı olabilir. | COMBO | Evet | "1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840" |
-| `model.fps` | Üretilen videonun kare hızı. | INT | Evet | Tam sayı (varsayılan: 25) |
-| `model.generate_audio` | Video için ses üretilip üretilmeyeceği. | BOOLEAN | Evet | True<br>False |
+| `süre` | Üretilen videonun saniye cinsinden süresi. | INT | Evet | Tam sayı |
+| `çözünürlük` | Üretilen videonun çözünürlüğü. Kullanılabilir seçenekler seçilen modele bağlı olabilir. | COMBO | Evet | "1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840" |
+| `fps` | Üretilen videonun kare hızı. | INT | Evet | Tam sayı (varsayılan: 25) |
+| `ses_oluştur` | Video için ses üretilip üretilmeyeceği. | BOOLEAN | Evet | True<br>False |
 | `prompt` | Üretilecek video içeriğinin metin açıklaması. 1 ile 10000 karakter arasında olmalıdır. | STRING | Evet | 1 ila 10000 karakter |
-| `seed` | Tekrarlanabilir üretim için tohum değeri. Aynı tohumu aynı ayarlarla kullanmak aynı sonucu üretir. | INT | Evet | Tam sayı (varsayılan: 42) |
-| `last_frame` | Video için kullanılacak son kare. | IMAGE | Hayır | Tam olarak bir görüntü |
+| `tohum` | Tekrarlanabilir üretim için tohum değeri. Aynı tohumu aynı ayarlarla kullanmak aynı sonucu üretir. | INT | Evet | Tam sayı (varsayılan: 42) |
+| `son_kare` | Video için kullanılacak son kare. | IMAGE | Hayır | Tam olarak bir görüntü |
 
 ## Çıktılar
 

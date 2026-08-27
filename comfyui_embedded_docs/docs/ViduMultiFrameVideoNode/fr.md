@@ -8,11 +8,11 @@ Ce nœud génère une vidéo en créant des transitions entre plusieurs images c
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle Vidu à utiliser pour la génération vidéo. | COMBO | Oui | "viduq2-pro"<br>"viduq2-turbo" |
-| `start_image` | L'image de départ. Le format d'image doit être compris entre 1:4 et 4:1. | IMAGE | Oui | Format d'image 1:4 à 4:1 |
-| `seed` | Une valeur de graine (seed) pour la génération de nombres aléatoires afin d'assurer des résultats reproductibles (par défaut : 1). | INT | Oui | 0 à 2147483647 |
-| `resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | "720p"<br>"1080p" |
-| `frames` | Nombre de transitions d'images clés (2-9). La sélection d'une valeur révèle dynamiquement les entrées requises pour chaque image. | DYNAMIC_COMBO | Oui | "2"<br>"3"<br>"4"<br>"5"<br>"6"<br>"7"<br>"8"<br>"9" |
+| `modèle` | Le modèle Vidu à utiliser pour la génération vidéo. | COMBO | Oui | "viduq2-pro"<br>"viduq2-turbo" |
+| `image_de_départ` | L'image de départ. Le format d'image doit être compris entre 1:4 et 4:1. | IMAGE | Oui | Format d'image 1:4 à 4:1 |
+| `graine` | Une valeur de graine (seed) pour la génération de nombres aléatoires afin d'assurer des résultats reproductibles (par défaut : 1). | INT | Oui | 0 à 2147483647 |
+| `résolution` | La résolution de la vidéo de sortie. | COMBO | Oui | "720p"<br>"1080p" |
+| `images` | Nombre de transitions d'images clés (2-9). La sélection d'une valeur révèle dynamiquement les entrées requises pour chaque image. | DYNAMIC_COMBO | Oui | "2"<br>"3"<br>"4"<br>"5"<br>"6"<br>"7"<br>"8"<br>"9" |
 
 ### Entrées des images (partagées par toutes les options de nombre d'images)
 

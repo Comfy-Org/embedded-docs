@@ -8,9 +8,9 @@ Génère une vidéo à partir d'une invite texte en utilisant le modèle HappyHo
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle HappyHorse utilisé pour la génération, ainsi que ses sous-paramètres. La sélection d'un modèle détermine les sous-paramètres disponibles (voir les sections de modèle ci-dessous). | DYNAMIC_COMBO | Oui | "happyhorse-1.1-t2v"<br>"happyhorse-1.0-t2v" |
-| `seed` | Graine à utiliser pour la génération. Utiliser la même graine avec les mêmes entrées produira le même résultat. (défaut : 0). | INT | Oui | 0 à 2147483647 |
-| `watermark` | Indique s'il faut ajouter un filigrane généré par IA au résultat. (défaut : False). | BOOLEAN | Oui | True / False |
+| `modèle` | Le modèle HappyHorse utilisé pour la génération, ainsi que ses sous-paramètres. La sélection d'un modèle détermine les sous-paramètres disponibles (voir les sections de modèle ci-dessous). | DYNAMIC_COMBO | Oui | "happyhorse-1.1-t2v"<br>"happyhorse-1.0-t2v" |
+| `graine` | Graine à utiliser pour la génération. Utiliser la même graine avec les mêmes entrées produira le même résultat. (défaut : 0). | INT | Oui | 0 à 2147483647 |
+| `filigrane` | Indique s'il faut ajouter un filigrane généré par IA au résultat. (défaut : False). | BOOLEAN | Oui | True / False |
 
 ### happyhorse-1.1-t2v Entrées
 

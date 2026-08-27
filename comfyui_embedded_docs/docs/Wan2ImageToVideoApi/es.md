@@ -8,13 +8,13 @@ El nodo Wan 2.7 Image to Video genera un video a partir de una imagen de primer 
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de IA que se usará para la generación de video. | DYNAMIC_COMBO | Sí | `"wan2.7-i2v"` |
-| `first_frame` | Imagen del primer fotograma. La relación de aspecto de salida se deriva de esta imagen. | IMAGE | Sí | - |
-| `last_frame` | Imagen del último fotograma. El modelo genera un video que hace la transición del primer al último fotograma. | IMAGE | No | - |
+| `modelo` | El modelo de IA que se usará para la generación de video. | DYNAMIC_COMBO | Sí | `"wan2.7-i2v"` |
+| `primer_fotograma` | Imagen del primer fotograma. La relación de aspecto de salida se deriva de esta imagen. | IMAGE | Sí | - |
+| `último_fotograma` | Imagen del último fotograma. El modelo genera un video que hace la transición del primer al último fotograma. | IMAGE | No | - |
 | `audio` | Audio para guiar la generación del video (p. ej., sincronización de labios, movimiento sincronizado con el ritmo). Duración: 2s-30s. Si no se proporciona, el modelo genera automáticamente música de fondo o efectos de sonido acordes. | AUDIO | No | - |
-| `seed` | Semilla para usar en la generación (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
-| `prompt_extend` | Si se debe mejorar el prompt con asistencia de IA (predeterminado: True). Esta es una configuración avanzada. | BOOLEAN | Sí | True<br>False |
-| `watermark` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False). Esta es una configuración avanzada. | BOOLEAN | Sí | True<br>False |
+| `semilla` | Semilla para usar en la generación (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
+| `extender_prompt` | Si se debe mejorar el prompt con asistencia de IA (predeterminado: True). Esta es una configuración avanzada. | BOOLEAN | Sí | True<br>False |
+| `marca_de_agua` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False). Esta es una configuración avanzada. | BOOLEAN | Sí | True<br>False |
 
 ### Entradas de wan2.7-i2v
 

@@ -1,6 +1,6 @@
 # CFG Override
 
-The CFG Override node allows you to set a fixed CFG (Classifier-Free Guidance) scale value for a specific range of the sampling process, defined as a percentage of the total steps. When multiple CFG Override nodes are connected, the one closest to the sampler in the chain takes priority for overlapping ranges.
+The CFG Override node lets you set a fixed CFG (Classifier-Free Guidance) scale value for a specific range of the sampling process, defined as a percentage of the total steps. When multiple CFG Override nodes are connected, the one closest to the sampler in the chain takes priority for overlapping ranges.
 
 ## Inputs
 
@@ -20,4 +20,4 @@ The CFG Override node allows you to set a fixed CFG (Classifier-Free Guidance) s
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGOverride/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `1fe57a4e78a2f18c4e7da49fa7a6c473d64dc0ebf6662535dfb5379c37936662`
+**Source fingerprint (SHA-256):** `94c7d3751d90b42479f9cec4bdb3c95eeda405f51224f85d313ff12ec071ec58`

@@ -8,10 +8,10 @@ Générez des réponses textuelles avec les modèles Gemini de Google. Fournisse
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle Gemini utilisé pour générer la réponse. | DYNAMIC_COMBO | Oui | `"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
-| `prompt` | Entrée textuelle fournie au modèle. Incluez des instructions détaillées, des questions ou du contexte. Doit contenir au moins un caractère non blanc. (par défaut : "") | STRING | Oui |  |
-| `seed` | Graine pour l'échantillonnage. Mettez à 0 pour obtenir une graine aléatoire. La sortie déterministe n'est pas garantie. (par défaut : 42) | INT | Oui | 0 à 2147483647 |
-| `system_prompt` | Instructions fondamentales qui dictent le comportement du modèle. (par défaut : "") | STRING | Non |  |
+| `modèle` | Le modèle Gemini utilisé pour générer la réponse. | DYNAMIC_COMBO | Oui | `"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `invite` | Entrée textuelle fournie au modèle. Incluez des instructions détaillées, des questions ou du contexte. Doit contenir au moins un caractère non blanc. (par défaut : "") | STRING | Oui |  |
+| `graine` | Graine pour l'échantillonnage. Mettez à 0 pour obtenir une graine aléatoire. La sortie déterministe n'est pas garantie. (par défaut : 42) | INT | Oui | 0 à 2147483647 |
+| `invite système` | Instructions fondamentales qui dictent le comportement du modèle. (par défaut : "") | STRING | Non |  |
 
 ### Entrées Gemini 3.5 Flash
 

@@ -6,11 +6,11 @@
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `model` | Modèle à utiliser (par défaut : "qwen-image-3.0-pro"). Ce sélecteur composite fournit également le prompt, la largeur d'image, la hauteur d'image et le prompt négatif optionnel. | DYNAMIC_COMBO | Oui | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
+| `modèle` | Modèle à utiliser (par défaut : "qwen-image-3.0-pro"). Ce sélecteur composite fournit également le prompt, la largeur d'image, la hauteur d'image et le prompt négatif optionnel. | DYNAMIC_COMBO | Oui | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
 | `n` | Nombre d'images à générer, renvoyées sous forme de lot (par défaut : 1). | INT | Non | 1 à 6 |
-| `seed` | Seed à utiliser pour la génération (par défaut : 42). Peut être réglé pour une mise à jour automatique après chaque génération. | INT | Non | 0 à 2147483647 |
-| `prompt_extend` | Indique s'il faut enrichir le prompt avec l'assistance de l'IA (par défaut : true). Option avancée. | BOOLEAN | Non | true<br>false |
-| `watermark` | Indique s'il faut ajouter un filigrane généré par l'IA au résultat (par défaut : false). Option avancée. | BOOLEAN | Non | true<br>false |
+| `graine` | Seed à utiliser pour la génération (par défaut : 42). Peut être réglé pour une mise à jour automatique après chaque génération. | INT | Non | 0 à 2147483647 |
+| `extension de prompt` | Indique s'il faut enrichir le prompt avec l'assistance de l'IA (par défaut : true). Option avancée. | BOOLEAN | Non | true<br>false |
+| `filigrane` | Indique s'il faut ajouter un filigrane généré par l'IA au résultat (par défaut : false). Option avancée. | BOOLEAN | Non | true<br>false |
 
 ### Entrées de qwen-image-3.0-pro et qwen-image-3.0
 

@@ -6,10 +6,10 @@ Ce nœud applique un guidage cross-modal (audio-vidéo) à un modèle LTXV-AV. P
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle de base auquel le guidage de modalité sera appliqué. Il est cloné en interne, laissant le modèle original inchangé. | MODEL | Oui | - |
+| `modèle` | Le modèle de base auquel le guidage de modalité sera appliqué. Il est cloné en interne, laissant le modèle original inchangé. | MODEL | Oui | - |
 | `modality_scale` | Force du guidage de couplage audio-vidéo. La valeur par défaut est 3.0. Réglez sur 1.0 pour désactiver la passe avant supplémentaire. | FLOAT | Oui | 1.0 à 100.0 (default: 3.0) |
-| `start_percent` | Le point du processus d'échantillonnage, en pourcentage de 0.0 à 1.0, auquel le guidage de modalité commence. La valeur par défaut est 0.0. | FLOAT | Oui | 0.0 à 1.0 (default: 0.0) |
-| `end_percent` | Le point du processus d'échantillonnage, en pourcentage de 0.0 à 1.0, auquel le guidage de modalité se termine. La valeur par défaut est 1.0. | FLOAT | Oui | 0.0 à 1.0 (default: 1.0) |
+| `pourcentage_début` | Le point du processus d'échantillonnage, en pourcentage de 0.0 à 1.0, auquel le guidage de modalité commence. La valeur par défaut est 0.0. | FLOAT | Oui | 0.0 à 1.0 (default: 0.0) |
+| `pourcentage_fin` | Le point du processus d'échantillonnage, en pourcentage de 0.0 à 1.0, auquel le guidage de modalité se termine. La valeur par défaut est 1.0. | FLOAT | Oui | 0.0 à 1.0 (default: 1.0) |
 
 Le guidage n'est appliqué que pour les étapes d'échantillonnage dont les valeurs de sigma se situent dans la plage définie par `start_percent` et `end_percent`. En dehors de cette plage, le nœud renvoie le résultat débruité inchangé. Un `modality_scale` de 1.0 désactive également entièrement la passe avant supplémentaire.
 

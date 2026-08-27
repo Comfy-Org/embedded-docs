@@ -46,8 +46,8 @@ Cuando seleccionas un modelo, los siguientes parámetros estarán disponibles:
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model.width` | El ancho de la imagen generada en píxeles. | INT | Sí | 256 a 1440 |
-| `model.height` | La altura de la imagen generada en píxeles. | INT | Sí | 256 a 1440 |
+| `ancho` | El ancho de la imagen generada en píxeles. | INT | Sí | 256 a 1440 |
+| `altura` | La altura de la imagen generada en píxeles. | INT | Sí | 256 a 1440 |
 | `model.images` | Imágenes de referencia opcionales para guiar la generación. Se admite un máximo de 8 imágenes. | IMAGE | No | 0 a 8 imágenes |
 
 **Restricciones:**

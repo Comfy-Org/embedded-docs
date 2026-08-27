@@ -6,13 +6,13 @@ Bu düğüm, bir görüntü kümesini ve sınırlayıcı kutularını bir katman
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Görüntü kümesi; her kare bir katman olur. | IMAGE | Evet | — |
-| `bboxes` | Yerleştirme kutuları, görüntü kümesiyle dizin hizalıdır. Sınırlayıcı kutuları (x, y, genişlik, yükseklik), normalleştirilmiş öğeleri ("bbox" içeren — bunlar piksele dönüştürülmek için canvas_width/canvas_height gerektirir) veya bunlardan birinin JSON dizgesini kabul eder. Eşleşen kutusu olmayan kareler orijine yerleştirilir. Bir kutunun genişliği/yüksekliği, katmanı ona sığacak şekilde ölçekler. metadata.name (veya desc) ve metadata.z_index varsa kullanılır; metadata.content_rect (kareye göreli) kareyi gerçek içeriğine göre kırpar. | BOUNDING_BOX, ARRAY veya STRING | Evet | — |
-| `mask` | Kare başına saydamlık, görüntü kümesiyle dizin hizalıdır (1 = saydam, LoadImage kuralı). | MASK | Hayır | — |
-| `layers` | Eklenecek katman yığını. Yeni bir yığın başlatmak için bağlantısız bırakın. | LAYERS | Hayır | — |
-| `crop_to_content` | Her kareyi, varsa metadata.content_rect'e göre kırpın ve içeriği kutu konumu artı dikdörtgen ofsetiyle yerleştirin. Kareleri dolgulu olan kümeler için açık bırakın — yalnızca gerçek içeriği gerçek konumunda tutar. (varsayılan: true) | BOOLEAN | Hayır | true<br>false |
-| `canvas_width` | Belge tuvali genişliği. 0, yerleştirilen katmanlardan türetir. (varsayılan: 0) | INT | Hayır | 0 ile MAX_RESOLUTION |
-| `canvas_height` | Belge tuvali yüksekliği. 0, yerleştirilen katmanlardan türetir. (varsayılan: 0) | INT | Hayır | 0 ile MAX_RESOLUTION |
+| `görsel` | Görüntü kümesi; her kare bir katman olur. | IMAGE | Evet | — |
+| `sınırlayıcı_kutular` | Yerleştirme kutuları, görüntü kümesiyle dizin hizalıdır. Sınırlayıcı kutuları (x, y, genişlik, yükseklik), normalleştirilmiş öğeleri ("bbox" içeren — bunlar piksele dönüştürülmek için canvas_width/canvas_height gerektirir) veya bunlardan birinin JSON dizgesini kabul eder. Eşleşen kutusu olmayan kareler orijine yerleştirilir. Bir kutunun genişliği/yüksekliği, katmanı ona sığacak şekilde ölçekler. metadata.name (veya desc) ve metadata.z_index varsa kullanılır; metadata.content_rect (kareye göreli) kareyi gerçek içeriğine göre kırpar. | BOUNDING_BOX, ARRAY veya STRING | Evet | — |
+| `maske` | Kare başına saydamlık, görüntü kümesiyle dizin hizalıdır (1 = saydam, LoadImage kuralı). | MASK | Hayır | — |
+| `katmanlar` | Eklenecek katman yığını. Yeni bir yığın başlatmak için bağlantısız bırakın. | LAYERS | Hayır | — |
+| `içeriğe_kırp` | Her kareyi, varsa metadata.content_rect'e göre kırpın ve içeriği kutu konumu artı dikdörtgen ofsetiyle yerleştirin. Kareleri dolgulu olan kümeler için açık bırakın — yalnızca gerçek içeriği gerçek konumunda tutar. (varsayılan: true) | BOOLEAN | Hayır | true<br>false |
+| `tuval_genişliği` | Belge tuvali genişliği. 0, yerleştirilen katmanlardan türetir. (varsayılan: 0) | INT | Hayır | 0 ile MAX_RESOLUTION |
+| `tuval_yüksekliği` | Belge tuvali yüksekliği. 0, yerleştirilen katmanlardan türetir. (varsayılan: 0) | INT | Hayır | 0 ile MAX_RESOLUTION |
 
 Notlar:
 

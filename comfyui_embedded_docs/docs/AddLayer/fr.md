@@ -6,20 +6,20 @@ Le nœud Add Layer convertit une image d’entrée en un calque et le place sur 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `layers` | Pile de calques à laquelle ajouter le calque. Laisser non connecté pour démarrer une nouvelle pile. | LAYERS | Non | — |
+| `calques` | Pile de calques à laquelle ajouter le calque. Laisser non connecté pour démarrer une nouvelle pile. | LAYERS | Non | — |
 | `image` | Contenu du calque à sa taille native. Un lot d’images se déploie en calques consécutifs. | IMAGE | Oui | — |
-| `mask` | Masque de transparence pour ce calque. Les zones masquées (valeur 1) deviennent transparentes, en multipliant tout canal alpha que l’image contient déjà. | MASK | Non | — |
-| `name` | Nom du calque affiché dans l’éditeur de composition. (défaut : "") | STRING | Non | — |
+| `masque` | Masque de transparence pour ce calque. Les zones masquées (valeur 1) deviennent transparentes, en multipliant tout canal alpha que l’image contient déjà. | MASK | Non | — |
+| `nom` | Nom du calque affiché dans l’éditeur de composition. (défaut : "") | STRING | Non | — |
 | `x` | Placement horizontal initial sur le canevas. (défaut : 0) | INT | Non | -MAX_RESOLUTION à MAX_RESOLUTION |
 | `y` | Placement vertical initial sur le canevas. (défaut : 0) | INT | Non | -MAX_RESOLUTION à MAX_RESOLUTION |
-| `opacity` | Opacité initiale du calque. (défaut : 1.0) | FLOAT | Non | 0.0 à 1.0 (pas 0.01) |
-| `blend_mode` | Mode de fusion initial, appliqué aux calques inférieurs. Sur le calque inférieur, au-dessus du fond transparent par défaut, les modes non normaux produisent de la transparence. (défaut : "normal") | COMBO | Non | Plusieurs options disponibles |
+| `opacité` | Opacité initiale du calque. (défaut : 1.0) | FLOAT | Non | 0.0 à 1.0 (pas 0.01) |
+| `mode de fusion` | Mode de fusion initial, appliqué aux calques inférieurs. Sur le calque inférieur, au-dessus du fond transparent par défaut, les modes non normaux produisent de la transparence. (défaut : "normal") | COMBO | Non | Plusieurs options disponibles |
 | `rotation` | Rotation initiale en degrés, dans le sens horaire. (défaut : 0.0) | FLOAT | Non | -360.0 à 360.0 (pas 1.0) |
-| `width` | Largeur d’affichage initiale. 0 conserve la largeur native de l’image. (défaut : 0) | INT | Non | 0 à MAX_RESOLUTION |
-| `height` | Hauteur d’affichage initiale. 0 conserve la hauteur native de l’image. (défaut : 0) | INT | Non | 0 à MAX_RESOLUTION |
+| `largeur` | Largeur d’affichage initiale. 0 conserve la largeur native de l’image. (défaut : 0) | INT | Non | 0 à MAX_RESOLUTION |
+| `hauteur` | Hauteur d’affichage initiale. 0 conserve la hauteur native de l’image. (défaut : 0) | INT | Non | 0 à MAX_RESOLUTION |
 | `z_index` | Surcharge d’empilement. Les calques sont triés de manière stable selon `z_index` ; les valeurs égales conservent leur ordre de liste. (défaut : 0) | INT | Non | -1000 à 1000 |
-| `flip_h` | Retourne le calque horizontalement. (défaut : False) | BOOLEAN | Non | false / true |
-| `flip_v` | Retourne le calque verticalement. (défaut : False) | BOOLEAN | Non | false / true |
+| `retourner_h` | Retourne le calque horizontalement. (défaut : False) | BOOLEAN | Non | false / true |
+| `retourner_v` | Retourne le calque verticalement. (défaut : False) | BOOLEAN | Non | false / true |
 
 Notes :
 

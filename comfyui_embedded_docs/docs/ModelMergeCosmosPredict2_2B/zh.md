@@ -14,34 +14,34 @@ ModelMergeCosmosPredict2_2B 节点采用基于块（block-based）的方法合�
 | `x_embedder.` | 输入嵌入器插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `t_embedder.` | 时间嵌入器插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `t_embedding_norm.` | 时间嵌入归一化插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.0.` | Transformer 块 0 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.1.` | Transformer 块 1 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.2.` | Transformer 块 2 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.3.` | Transformer 块 3 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.4.` | Transformer 块 4 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.5.` | Transformer 块 5 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.6.` | Transformer 块 6 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.7.` | Transformer 块 7 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.8.` | Transformer 块 8 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.9.` | Transformer 块 9 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.10.` | Transformer 块 10 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.11.` | Transformer 块 11 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.12.` | Transformer 块 12 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.13.` | Transformer 块 13 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.14.` | Transformer 块 14 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.15.` | Transformer 块 15 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.16.` | Transformer 块 16 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.17.` | Transformer 块 17 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.18.` | Transformer 块 18 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.19.` | Transformer 块 19 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.20.` | Transformer 块 20 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.21.` | Transformer 块 21 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.22.` | Transformer 块 22 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.23.` | Transformer 块 23 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.24.` | Transformer 块 24 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.25.` | Transformer 块 25 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.26.` | Transformer 块 26 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `blocks.27.` | Transformer 块 27 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.0.` | Transformer 块 0 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.1.` | Transformer 块 1 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.2.` | Transformer 块 2 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.3.` | Transformer 块 3 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.4.` | Transformer 块 4 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.5.` | Transformer 块 5 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.6.` | Transformer 块 6 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.7.` | Transformer 块 7 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.8.` | Transformer 块 8 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.9.` | Transformer 块 9 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.10.` | Transformer 块 10 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.11.` | Transformer 块 11 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.12.` | Transformer 块 12 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.13.` | Transformer 块 13 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.14.` | Transformer 块 14 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.15.` | Transformer 块 15 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.16.` | Transformer 块 16 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.17.` | Transformer 块 17 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.18.` | Transformer 块 18 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.19.` | Transformer 块 19 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.20.` | Transformer 块 20 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.21.` | Transformer 块 21 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.22.` | Transformer 块 22 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.23.` | Transformer 块 23 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.24.` | Transformer 块 24 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.25.` | Transformer 块 25 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.26.` | Transformer 块 26 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `块.27.` | Transformer 块 27 插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `final_layer.` | 最终层插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 
 ## 输出

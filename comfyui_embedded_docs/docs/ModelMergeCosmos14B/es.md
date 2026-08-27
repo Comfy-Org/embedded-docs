@@ -48,7 +48,7 @@ El nodo **ModelMergeCosmos14B** fusiona dos modelos de IA utilizando un enfoque 
 | `blocks.block32.` | Peso para el bloque 32 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `blocks.block33.` | Peso para el bloque 33 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `blocks.block34.` | Peso para el bloque 34 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `blocks.block35.` | Peso para el bloque 35 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `final_layer.` | Peso para el bloque 35 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `final_layer.` | Peso para la capa final (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 
 ## Salidas

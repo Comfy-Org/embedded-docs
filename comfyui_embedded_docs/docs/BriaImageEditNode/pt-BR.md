@@ -7,16 +7,16 @@ O nó Bria FIBO Image Edit permite modificar uma imagem existente usando uma ins
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |---|---|---|---|---|
-| `model` | A versão do modelo a ser usada para edição de imagem. | COMBO | Sim | `"FIBO"` |
-| `image` | A imagem de entrada que você deseja editar. | IMAGE | Sim | - |
+| `modelo` | A versão do modelo a ser usada para edição de imagem. | COMBO | Sim | `"FIBO"` |
+| `imagem` | A imagem de entrada que você deseja editar. | IMAGE | Sim | - |
 | `prompt` | Instrução para editar a imagem (padrão: vazio). | STRING | Sim | - |
-| `negative_prompt` | Texto descrevendo o que você não deseja que apareça na imagem editada (padrão: vazio). | STRING | Sim | - |
-| `structured_prompt` | Uma string contendo o prompt de edição estruturado em formato JSON. Use este em vez do prompt usual para controle preciso e programático (padrão: vazio). | STRING | Sim | - |
-| `seed` | Um número usado para inicializar a geração aleatória, garantindo resultados reproduzíveis (padrão: 1). | INT | Sim | 1 to 2147483647 |
-| `guidance_scale` | Valores mais altos fazem a imagem seguir o prompt mais fielmente (padrão: 3.0). | FLOAT | Sim | 3.0 to 5.0 |
-| `steps` | O número de etapas de remoção de ruído que o modelo executará (padrão: 50). | INT | Sim | 20 to 50 |
-| `moderation` | Configurações de moderação. Selecionar `"true"` revela opções adicionais de moderação para conteúdo do prompt, entrada visual e saída visual. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
-| `mask` | Se omitida, a edição se aplica a toda a imagem. | MASK | Não | - |
+| `prompt_negativo` | Texto descrevendo o que você não deseja que apareça na imagem editada (padrão: vazio). | STRING | Sim | - |
+| `prompt_estruturado` | Uma string contendo o prompt de edição estruturado em formato JSON. Use este em vez do prompt usual para controle preciso e programático (padrão: vazio). | STRING | Sim | - |
+| `semente` | Um número usado para inicializar a geração aleatória, garantindo resultados reproduzíveis (padrão: 1). | INT | Sim | 1 to 2147483647 |
+| `escala_de_guia` | Valores mais altos fazem a imagem seguir o prompt mais fielmente (padrão: 3.0). | FLOAT | Sim | 3.0 to 5.0 |
+| `passos` | O número de etapas de remoção de ruído que o modelo executará (padrão: 50). | INT | Sim | 20 to 50 |
+| `moderação` | Configurações de moderação. Selecionar `"true"` revela opções adicionais de moderação para conteúdo do prompt, entrada visual e saída visual. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
+| `máscara` | Se omitida, a edição se aplica a toda a imagem. | MASK | Não | - |
 
 ### Entradas de moderação
 

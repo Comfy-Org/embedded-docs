@@ -1,6 +1,6 @@
 # Bria FIBO Image Edit
 
-The Bria FIBO Image Edit node lets you edit an existing image with a text instruction. It sends the image and your prompt to the Bria API, which uses the FIBO model to create an edited version of the image. You can also provide a mask to limit the changes to a specific area.
+The Bria FIBO Image Edit node edits an existing image using a text instruction. It sends the image and your prompt to the Bria API, where the FIBO model creates an edited version. An optional mask can limit the changes to a specific area.
 
 ## Inputs
 

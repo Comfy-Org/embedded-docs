@@ -6,9 +6,9 @@ Este nodo crea un objeto de muestreo guiado (guía CFG) para los modelos LTXV-AV
 
 | Parámetro | Descripción | Tipo de datos | ¿Requerido? | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | El modelo que se usará al muestrear. | MODEL | Sí | - |
-| `positive` | Condicionamiento positivo para guiar la generación hacia lo deseado. | CONDITIONING | Sí | - |
-| `negative` | Condicionamiento negativo para alejar la generación de lo no deseado. | CONDITIONING | Sí | - |
+| `modelo` | El modelo que se usará al muestrear. | MODEL | Sí | - |
+| `positivo` | Condicionamiento positivo para guiar la generación hacia lo deseado. | CONDITIONING | Sí | - |
+| `negativo` | Condicionamiento negativo para alejar la generación de lo no deseado. | CONDITIONING | Sí | - |
 | `video_cfg` | Intensidad de guía aplicada a la modalidad de video del latent (predeterminado: 3.0). | FLOAT | Sí | 0.0 a 100.0 |
 | `audio_cfg` | Intensidad de guía aplicada a la modalidad de audio del latent (predeterminado: 7.0). | FLOAT | Sí | 0.0 a 100.0 |
 

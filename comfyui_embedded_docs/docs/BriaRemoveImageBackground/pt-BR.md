@@ -7,9 +7,9 @@ Este nó remove o fundo de uma imagem usando o serviço Bria RMBG 2.0. Ele envia
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |---|---|---|---|---|
-| `moderation` | Configurações de moderação. Quando definido como `"true"`, opções adicionais de moderação ficam disponíveis. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
-| `image` | A imagem de entrada da qual o fundo será removido. | IMAGE | Sim | - |
-| `seed` | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente. Padrão: `0`. | INT | Sim | 0 to 2147483647 |
+| `moderação` | Configurações de moderação. Quando definido como `"true"`, opções adicionais de moderação ficam disponíveis. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
+| `imagem` | A imagem de entrada da qual o fundo será removido. | IMAGE | Sim | - |
+| `semente` | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente. Padrão: `0`. | INT | Sim | 0 to 2147483647 |
 
 ### Entradas de moderação
 

@@ -1,6 +1,6 @@
 # AudioEncoderEncode
 
-The AudioEncoderEncode node processes audio data by encoding it using an audio encoder model. It takes audio input and converts it into an encoded representation that can be used for further processing in the conditioning pipeline. This node transforms raw audio waveforms into a format suitable for audio-based machine learning applications.
+The AudioEncoderEncode node converts audio data into an encoded representation using an audio encoder model. It takes an audio encoder and raw audio input, then extracts the waveform and sample rate from the audio to produce an encoded output suitable for further processing in the conditioning pipeline.
 
 ## Inputs
 
@@ -18,4 +18,4 @@ The AudioEncoderEncode node processes audio data by encoding it using an audio e
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioEncoderEncode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `abd34445d7b959a6421fe0fe6bed0498b3754ee313019e3315cbed399f68bbe6`
+**Source fingerprint (SHA-256):** `85f77152ccc1e3f4687e2b655283e69e03d90b862d6a676dcb89ea973dd70a63`

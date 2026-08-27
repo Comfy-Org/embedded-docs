@@ -7,12 +7,12 @@ LTX 2.5 Text To Video, LTX 2.5 modelini kullanarak metin açıklamasından profe
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Video üretimi için kullanılacak LTX 2.5 model kademesi. | STRING | Evet | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
-| `model.duration` | Oluşturulan videonun uzunluğu. | INT | Evet | Integer |
-| `model.resolution` | Videonun çıktı çözünürlüğü. Kullanılabilir seçenekler seçilen `model`e bağlıdır. | STRING | Evet | With "LTX-2.5 (Fast)":<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840"<br>With "LTX-2.5 (Pro)":<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920" |
-| `model.fps` | Oluşturulan videonun kare hızı (varsayılan: 25). | INT | Hayır | Integer |
-| `model.generate_audio` | Video ile birlikte ses üretilip üretilmeyeceği (varsayılan: True). | BOOLEAN | Hayır | True<br>False |
+| `süre` | Oluşturulan videonun uzunluğu. | INT | Evet | Integer |
+| `çözünürlük` | Videonun çıktı çözünürlüğü. Kullanılabilir seçenekler seçilen `model`e bağlıdır. | STRING | Evet | With "LTX-2.5 (Fast)":<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840"<br>With "LTX-2.5 (Pro)":<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920" |
+| `fps` | Oluşturulan videonun kare hızı (varsayılan: 25). | INT | Hayır | Integer |
+| `ses_oluştur` | Video ile birlikte ses üretilip üretilmeyeceği (varsayılan: True). | BOOLEAN | Hayır | True<br>False |
 | `prompt` | Oluşturulacak videonun metin açıklaması. En fazla 10.000 karakterden oluşan boş olmayan bir istem gereklidir (varsayılan: ""). | STRING | Evet | 1 ile 10000 arası characters |
-| `seed` | Tekrarlanabilir üretim için kullanılan tohum değeri (varsayılan: 42). | INT | Hayır | Integer |
+| `tohum` | Tekrarlanabilir üretim için kullanılan tohum değeri (varsayılan: 42). | INT | Hayır | Integer |
 
 Not: Kullanılabilir `model.resolution` seçenekleri seçilen `model`e bağlıdır. "LTX-2.5 (Fast)" 2160x3840'a kadar çözünürlükleri desteklerken, "LTX-2.5 (Pro)" 1920x1080'e kadar çözünürlükleri destekler.
 

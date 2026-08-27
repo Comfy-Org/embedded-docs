@@ -9,8 +9,8 @@ Reve 图像编辑节点允许您根据文本描述修改现有图像。它使用
 | `image` | 要编辑的图像。 | IMAGE | 是 | - |
 | `edit_instruction` | 描述如何编辑图像的文本。最多 2560 个字符。 | STRING | 是 | - |
 | `model` | 用于编辑的模型版本。 | MODEL | 是 | `"reve-edit@20250915"`<br>`"reve-edit-fast@20251030"` |
-| `model.aspect_ratio` | 编辑后图像的宽高比。设置为 "auto" 时，宽高比将自动确定。 | COMBO | 否 | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
-| `model.test_time_scaling` | 模型的测试时缩放因子。较高的值可能提高质量，但会增加处理时间。 | FLOAT | 否 | - |
+| `aspect_ratio` | 编辑后图像的宽高比。设置为 "auto" 时，宽高比将自动确定。 | COMBO | 否 | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
+| `test_time_scaling` | 模型的测试时缩放因子。较高的值可能提高质量，但会增加处理时间。 | FLOAT | 否 | - |
 | `upscale` | 控制是否对生成的图像进行放大。 | COMBO | 否 | `"disabled"`<br>`"enabled"` |
 | `upscale.upscale_factor` | 启用放大时，图像的放大倍数。 | FLOAT | 否 | - |
 | `remove_background` | 控制是否从生成的图像中移除背景。 | BOOLEAN | 否 | - |

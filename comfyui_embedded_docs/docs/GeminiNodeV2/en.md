@@ -8,10 +8,21 @@ Generate text responses with Google's Gemini models. Provide a text prompt and, 
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The Gemini model used to generate the response. | DYNAMIC_COMBO | Yes | `"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `model` | The Gemini model used to generate the response. | DYNAMIC_COMBO | Yes | `"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
 | `prompt` | Text input to the model. Include detailed instructions, questions, or context. Must contain at least one non-whitespace character. (default: "") | STRING | Yes |  |
 | `seed` | Seed for sampling. Set to 0 for a random seed. Deterministic output isn't guaranteed. (default: 42) | INT | Yes | 0 to 2147483647 |
 | `system_prompt` | Foundational instructions that dictate the model's behavior. (default: "") | STRING | No |  |
+
+### Gemini 3.7 Flash Inputs
+
+These inputs appear when `model` is set to `"Gemini 3.7 Flash"`.
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `thinking_level` | How hard the model reasons internally before answering. HIGH improves quality on difficult tasks but costs more (thinking) tokens and is slower. (default: "MEDIUM") | COMBO | Yes | `"LOW"`<br>`"MEDIUM"`<br>`"HIGH"` |
+| `temperature` | Controls randomness. Lower is more focused/deterministic, higher is more creative. (default: 1.0) | FLOAT | Yes | 0.0 to 2.0 |
+| `top_p` | Nucleus sampling: sample from the smallest token set whose cumulative probability reaches top_p. (default: 0.95) | FLOAT | Yes | 0.0 to 1.0 |
+| `max_output_tokens` | Maximum tokens to generate, including the model's internal thinking. With thinking_level HIGH, a low value can leave no room for the answer; raise this if responses come back empty or truncated. The model stops early when finished, so a higher cap costs nothing extra for short replies. (default: 32768) | INT | Yes | 16 to 65536 |
 
 ### Gemini 3.5 Flash Inputs
 
@@ -48,11 +59,11 @@ These inputs appear when `model` is set to `"Gemini 3.1 Flash-Lite"`.
 
 ### Media and File Inputs
 
-The following inputs are shared by all three models and appear alongside the model-specific inputs.
+The following inputs are shared by all four models and appear alongside the model-specific inputs.
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `images` | Growable slot: connect 1 to 16 images (`image_1` ... `image_16`). Optional image(s) to use as context for the model. | IMAGE | No | 0 to 16 images |
+| `images` | Growable slot: connect 1 to 16 images (`image_1` ... `image_16`). Optional image(s) to use as context for the model. Up to 16 images. | IMAGE | No | 0 to 16 images |
 | `audio` | Growable slot: connect one audio clip (`audio_1`). Optional audio clip to use as context for the model. | AUDIO | No | 0 to 1 clip |
 | `video` | Growable slot: connect one video clip (`video_1`). Optional video clip to use as context for the model. | VIDEO | No | 0 to 1 clip |
 | `files` | Optional file(s) to use as context for the model. Accepts inputs from the Gemini Input Files node. | GEMINI_INPUT_FILES | No |  |
@@ -68,4 +79,4 @@ The following inputs are shared by all three models and appear alongside the mod
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiNodeV2/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `e88c253d9ae987ab91b0fb6b0b55cfd9cd3671438770afcedd844f236b30dc36`
+**Source fingerprint (SHA-256):** `00e0f614303fa723eb787ad763e0b0c6322f89abf43d93b697357527b2fae49c`

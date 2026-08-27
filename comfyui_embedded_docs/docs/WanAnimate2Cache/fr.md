@@ -6,8 +6,8 @@ Caches the pose-video's per-block activations once so they do not need to be rec
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle Wan Animate2 auquel attacher le cache. | MODEL | Oui | |
-| `device` | Où conserver le cache. `cpu` (RAM) est le choix sûr, le cache ne tiendra pas dans la VRAM en plus du modèle aux tailles typiques. `gpu` (VRAM) peut être plus rapide s'il y tient. (par défaut : "cpu") | STRING | Oui | "cpu"<br>"gpu" |
+| `modèle` | Le modèle Wan Animate2 auquel attacher le cache. | MODEL | Oui | |
+| `appareil` | Où conserver le cache. `cpu` (RAM) est le choix sûr, le cache ne tiendra pas dans la VRAM en plus du modèle aux tailles typiques. `gpu` (VRAM) peut être plus rapide s'il y tient. (par défaut : "cpu") | STRING | Oui | "cpu"<br>"gpu" |
 | `dtype` | Précision de stockage. `default` stocke les activations dans le dtype de calcul du modèle. `int8` réduit le cache de moitié, `int4` le divise par quatre, `convrot` est utilisé pour conserver la précision. (par défaut : "default") | STRING | Oui | "default"<br>"int8"<br>"int4" |
 
 Remarque : Lorsque des fenêtres de contexte sont utilisées, chaque fenêtre est mise en cache séparément, donc l'utilisation de la mémoire évolue avec le nombre de fenêtres. Le programme `static_standard` doit être utilisé, car les programmes uniformes déplacent les fenêtres à chaque étape et le cache n'est jamais réutilisé.

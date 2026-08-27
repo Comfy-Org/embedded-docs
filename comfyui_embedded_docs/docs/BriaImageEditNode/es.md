@@ -8,16 +8,16 @@ El nodo **Bria FIBO Image Edit** te permite editar una imagen existente con una 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | La versión del modelo a utilizar para la edición de imágenes. | COMBO | Sí | `"FIBO"` |
-| `image` | La imagen de entrada que deseas editar. | IMAGE | Sí | - |
-| `prompt` | Instrucción para editar la imagen (predeterminado: vacío). | STRING | Sí | - |
-| `negative_prompt` | Texto que describe lo que no deseas que aparezca en la imagen editada (predeterminado: vacío). | STRING | Sí | - |
-| `structured_prompt` | Una cadena que contiene el prompt de edición estructurado en formato JSON. Úsala en lugar del prompt habitual para un control preciso y programático (predeterminado: vacío). | STRING | Sí | - |
-| `seed` | Un número utilizado para inicializar la generación aleatoria, garantizando resultados reproducibles (predeterminado: 1). | INT | Sí | 1 a 2147483647 |
-| `guidance_scale` | Un valor más alto hace que la imagen siga el prompt más fielmente (predeterminado: 3). | FLOAT | Sí | 3.0 a 5.0 |
-| `steps` | El número de pasos de eliminación de ruido realizados por el modelo (predeterminado: 50). | INT | Sí | 20 a 50 |
-| `moderation` | Configuración de moderación. Seleccionar `"true"` revela opciones de moderación adicionales. | DYNAMIC_COMBO | Sí | `"false"`<br>`"true"` |
-| `mask` | Si se omite, la edición se aplica a toda la imagen. | MASK | No | - |
+| `modelo` | La versión del modelo a utilizar para la edición de imágenes. | COMBO | Sí | `"FIBO"` |
+| `imagen` | La imagen de entrada que deseas editar. | IMAGE | Sí | - |
+| `instrucción` | Instrucción para editar la imagen (predeterminado: vacío). | STRING | Sí | - |
+| `instrucción_negativa` | Texto que describe lo que no deseas que aparezca en la imagen editada (predeterminado: vacío). | STRING | Sí | - |
+| `instrucción_estructurada` | Una cadena que contiene el prompt de edición estructurado en formato JSON. Úsala en lugar del prompt habitual para un control preciso y programático (predeterminado: vacío). | STRING | Sí | - |
+| `semilla` | Un número utilizado para inicializar la generación aleatoria, garantizando resultados reproducibles (predeterminado: 1). | INT | Sí | 1 a 2147483647 |
+| `escala_de_guía` | Un valor más alto hace que la imagen siga el prompt más fielmente (predeterminado: 3). | FLOAT | Sí | 3.0 a 5.0 |
+| `pasos` | El número de pasos de eliminación de ruido realizados por el modelo (predeterminado: 50). | INT | Sí | 20 a 50 |
+| `moderación` | Configuración de moderación. Seleccionar `"true"` revela opciones de moderación adicionales. | DYNAMIC_COMBO | Sí | `"false"`<br>`"true"` |
+| `máscara` | Si se omite, la edición se aplica a toda la imagen. | MASK | No | - |
 
 ### Entradas de moderación
 
@@ -39,7 +39,7 @@ Cuando `moderation` se establece en `"true"`, se habilitan estas entradas adicio
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
 | `IMAGE` | La imagen editada devuelta por la API de Bria. | IMAGE |
-| `structured_prompt` | El prompt estructurado utilizado o generado durante el proceso de edición. | STRING |
+| `instrucción_estructurada` | El prompt estructurado utilizado o generado durante el proceso de edición. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaImageEditNode/es.md)
 

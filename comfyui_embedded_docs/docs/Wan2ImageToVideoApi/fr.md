@@ -8,13 +8,13 @@ Le nœud Wan 2.7 Image to Video génère une vidéo à partir d'une image de pre
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle IA à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | `"wan2.7-i2v"` |
-| `first_frame` | Image de la première frame. Le rapport d'aspect de la sortie est dérivé de cette image. | IMAGE | Oui | - |
-| `last_frame` | Image de la dernière frame. Le modèle génère une vidéo en transition de la première à la dernière frame. | IMAGE | Non | - |
+| `modèle` | Le modèle IA à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | `"wan2.7-i2v"` |
+| `première image` | Image de la première frame. Le rapport d'aspect de la sortie est dérivé de cette image. | IMAGE | Oui | - |
+| `dernière image` | Image de la dernière frame. Le modèle génère une vidéo en transition de la première à la dernière frame. | IMAGE | Non | - |
 | `audio` | Audio pour piloter la génération vidéo (ex. synchronisation labiale, mouvement synchronisé sur le rythme). Durée : 2s-30s. Si aucune n'est fournie, le modèle génère automatiquement une musique de fond ou des effets sonores correspondants. | AUDIO | Non | - |
-| `seed` | Graine (seed) à utiliser pour la génération (par défaut : 0). | INT | Oui | 0 à 2147483647 |
-| `prompt_extend` | Indique si la requête doit être enrichie à l'aide de l'IA (par défaut : True). Ceci est un paramètre avancé. | BOOLEAN | Oui | True<br>False |
-| `watermark` | Indique si un filigrane généré par IA doit être ajouté au résultat (par défaut : False). Ceci est un paramètre avancé. | BOOLEAN | Oui | True<br>False |
+| `graine` | Graine (seed) à utiliser pour la génération (par défaut : 0). | INT | Oui | 0 à 2147483647 |
+| `extension de prompt` | Indique si la requête doit être enrichie à l'aide de l'IA (par défaut : True). Ceci est un paramètre avancé. | BOOLEAN | Oui | True<br>False |
+| `filigrane` | Indique si un filigrane généré par IA doit être ajouté au résultat (par défaut : False). Ceci est un paramètre avancé. | BOOLEAN | Oui | True<br>False |
 
 ### Entrées wan2.7-i2v
 

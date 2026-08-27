@@ -7,9 +7,9 @@ Topaz Image Enhance applique une mise à l’échelle et une amélioration d’i
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L’image d’entrée à améliorer. Une seule image d’entrée est prise en charge. | IMAGE | Oui | Image unique |
-| `model` | Le modèle d’amélioration Topaz à utiliser. Le modèle sélectionné détermine les paramètres spécifiques au modèle qui apparaissent. | STRING | Oui | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"` |
-| `output_width` | Une valeur nulle signifie que le calcul est automatique (généralement la taille d’origine ou une mise à l’échelle proportionnelle à `output_height` si spécifié). Wonder 3.5 ne prend en charge que des facteurs d’agrandissement de 1x à 6x. Bloom 2 et Wonder 3.5 préservent le rapport hauteur/largeur de l’entrée et traitent la taille demandée comme une cible. (défaut : 0) | INT | Non | 0 à 32000 |
-| `output_height` | Une valeur nulle signifie que la hauteur de sortie est identique à celle de l’originale ou mise à l’échelle proportionnellement à `output_width` si spécifié. Wonder 3.5 ne prend en charge que des facteurs d’agrandissement de 1x à 6x. Bloom 2 et Wonder 3.5 préservent le rapport hauteur/largeur de l’entrée et traitent la taille demandée comme une cible. (défaut : 0) | INT | Non | 0 à 32000 |
+| `modèle` | Le modèle d’amélioration Topaz à utiliser. Le modèle sélectionné détermine les paramètres spécifiques au modèle qui apparaissent. | STRING | Oui | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"` |
+| `largeur de sortie` | Une valeur nulle signifie que le calcul est automatique (généralement la taille d’origine ou une mise à l’échelle proportionnelle à `output_height` si spécifié). Wonder 3.5 ne prend en charge que des facteurs d’agrandissement de 1x à 6x. Bloom 2 et Wonder 3.5 préservent le rapport hauteur/largeur de l’entrée et traitent la taille demandée comme une cible. (défaut : 0) | INT | Non | 0 à 32000 |
+| `hauteur de sortie` | Une valeur nulle signifie que la hauteur de sortie est identique à celle de l’originale ou mise à l’échelle proportionnellement à `output_width` si spécifié. Wonder 3.5 ne prend en charge que des facteurs d’agrandissement de 1x à 6x. Bloom 2 et Wonder 3.5 préservent le rapport hauteur/largeur de l’entrée et traitent la taille demandée comme une cible. (défaut : 0) | INT | Non | 0 à 32000 |
 
 ### Paramètres de Reimagine
 

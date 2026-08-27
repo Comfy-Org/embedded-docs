@@ -8,9 +8,9 @@
 
 | 매개변수 | 설명 | 데이터 유형 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 사용할 Grok 이미지 모델입니다. 아래 표시되는 하위 매개변수는 선택한 모델에 따라 변경됩니다. | DYNAMIC_COMBO | 예 | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
-| `prompt` | 이미지를 생성하는 데 사용되는 텍스트 프롬프트입니다. (기본값: "") | STRING | 예 | N/A |
-| `seed` | 노드 재실행 여부를 결정하는 시드입니다. 실제 결과는 시드와 관계없이 비결정적입니다. (기본값: 0) | INT | 예 | 0 ~ 2147483647 |
+| `모델` | 사용할 Grok 이미지 모델입니다. 아래 표시되는 하위 매개변수는 선택한 모델에 따라 변경됩니다. | DYNAMIC_COMBO | 예 | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
+| `프롬프트` | 이미지를 생성하는 데 사용되는 텍스트 프롬프트입니다. (기본값: "") | STRING | 예 | N/A |
+| `시드` | 노드 재실행 여부를 결정하는 시드입니다. 실제 결과는 시드와 관계없이 비결정적입니다. (기본값: 0) | INT | 예 | 0 ~ 2147483647 |
 
 ### grok-imagine-image-2.0 입력
 

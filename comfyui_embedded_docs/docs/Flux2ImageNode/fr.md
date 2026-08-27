@@ -20,8 +20,8 @@ Lorsque vous sélectionnez un modèle, les paramètres suivants deviennent dispo
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model.width` | La largeur de l'image générée en pixels. | INT | Oui | 256 à 1440 |
-| `model.height` | La hauteur de l'image générée en pixels. | INT | Oui | 256 à 1440 |
+| `largeur` | La largeur de l'image générée en pixels. | INT | Oui | 256 à 1440 |
+| `hauteur` | La hauteur de l'image générée en pixels. | INT | Oui | 256 à 1440 |
 | `model.images` | Images de référence optionnelles pour guider la génération. Un maximum de 8 images est pris en charge. | IMAGE | Non | 0 à 8 images |
 
 **Contraintes :**

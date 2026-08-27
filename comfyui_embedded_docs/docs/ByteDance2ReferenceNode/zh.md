@@ -10,9 +10,9 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用于生成视频的 AI 模型。Seedance 2.5 为最新模型，视频最长 30 秒，支持 mp4 输出；Seedance 2.0 提供最高质量和 1080p/4k；Fast 针对速度优化；Mini 提供最快、最低成本的生成。选择模型后会显示下方列出的对应模型特有输入。 | COMBO | 是 | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
-| `seed` | `seed` 控制节点是否应重新运行；无论 seed 为何，结果都不具有确定性（默认：0）。 | INT | 是 | 0 到 2147483647 |
-| `watermark` | 是否向视频添加水印（默认：False）。 | BOOLEAN | 是 | `True`<br>`False` |
+| `模型` | 用于生成视频的 AI 模型。Seedance 2.5 为最新模型，视频最长 30 秒，支持 mp4 输出；Seedance 2.0 提供最高质量和 1080p/4k；Fast 针对速度优化；Mini 提供最快、最低成本的生成。选择模型后会显示下方列出的对应模型特有输入。 | COMBO | 是 | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `种子` | `seed` 控制节点是否应重新运行；无论 seed 为何，结果都不具有确定性（默认：0）。 | INT | 是 | 0 到 2147483647 |
+| `水印` | 是否向视频添加水印（默认：False）。 | BOOLEAN | 是 | `True`<br>`False` |
 
 ### Seedance 2.5 输入
 

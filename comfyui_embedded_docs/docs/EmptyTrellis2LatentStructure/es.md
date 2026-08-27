@@ -1,0 +1,20 @@
+# EmptyTrellis2LatentStructure
+
+Este nodo crea una estructura latente vacía para el modelo Trellis2, donde todos los valores se establecen en cero. Produce un tensor latente tridimensional vacío con 32 canales a una resolución de 16×16×16, dimensionado para el número especificado de elementos en el lote.
+
+## Entradas
+
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `batch_size` | El número de imágenes latentes en el lote (predeterminado: 1). | INT | Sí | 1 a 4096 |
+
+## Salidas
+
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `LATENT` | Una estructura latente vacía de Trellis2. Las muestras son un tensor relleno de ceros con la forma (batch_size, 32, 16, 16, 16), y el tipo de latente se establece en «trellis2». | LATENT |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyTrellis2LatentStructure/es.md)
+
+---
+**Source fingerprint (SHA-256):** `a551f0e05e58b025df03a3babee36f57fd900b5e02926fbdbd67a512ebead078`

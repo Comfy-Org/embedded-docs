@@ -7,10 +7,10 @@ Este nodo genera un video que sigue una pista de audio utilizando el modelo LTX 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
 | `audio` | Pista de audio que impulsa el video. Su duración (2-20 segundos) establece la duración del video. | AUDIO | Sí | 2-20 segundos |
-| `model` | La versión del modelo LTX 2.5 a utilizar. La resolución se elige junto con el modelo; ambos modelos ofrecen las mismas opciones de resolución (1920x1080 o 1080x1920). | COMBO | Sí | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
+| `modelo` | La versión del modelo LTX 2.5 a utilizar. La resolución se elige junto con el modelo; ambos modelos ofrecen las mismas opciones de resolución (1920x1080 o 1080x1920). | COMBO | Sí | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
 | `prompt` | Una descripción de texto que guía el contenido del video generado (por defecto: ""). Debe contener al menos 1 carácter y como máximo 10000 caracteres. | STRING | Sí | 1-10000 caracteres |
-| `seed` | Un número que controla la aleatoriedad de la generación. La misma semilla produce el mismo resultado (por defecto: 42). | INT | Sí | Cualquier entero |
-| `image` | Primer fotograma opcional para usar en el video. Solo se admite una imagen. | IMAGE | No | Una sola imagen |
+| `semilla` | Un número que controla la aleatoriedad de la generación. La misma semilla produce el mismo resultado (por defecto: 42). | INT | Sí | Cualquier entero |
+| `imagen` | Primer fotograma opcional para usar en el video. Solo se admite una imagen. | IMAGE | No | Una sola imagen |
 
 Notas sobre las restricciones:
 - La duración del audio debe estar entre 2 y 20 segundos; el nodo genera un error si está fuera de este rango.

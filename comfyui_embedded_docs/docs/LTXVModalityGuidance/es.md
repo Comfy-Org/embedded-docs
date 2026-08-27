@@ -6,10 +6,10 @@ Este nodo aplica guía multimodal (audio-video) a un modelo LTXV-AV. Durante el 
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `model` | El modelo base al que se le aplicará la guía multimodal. Se clona internamente, dejando el modelo original sin cambios. | MODEL | Sí | - |
+| `modelo` | El modelo base al que se le aplicará la guía multimodal. Se clona internamente, dejando el modelo original sin cambios. | MODEL | Sí | - |
 | `modality_scale` | Fuerza de la guía de acoplamiento audio-video. El valor predeterminado es 3.0. Configúrelo en 1.0 para desactivar la pasada adicional hacia adelante. | FLOAT | Sí | 1.0 a 100.0 (default: 3.0) |
-| `start_percent` | El punto del proceso de muestreo, como porcentaje de 0.0 a 1.0, en el que comienza la guía multimodal. El valor predeterminado es 0.0. | FLOAT | Sí | 0.0 a 1.0 (default: 0.0) |
-| `end_percent` | El punto del proceso de muestreo, como porcentaje de 0.0 a 1.0, en el que termina la guía multimodal. El valor predeterminado es 1.0. | FLOAT | Sí | 0.0 a 1.0 (default: 1.0) |
+| `porcentaje_inicio` | El punto del proceso de muestreo, como porcentaje de 0.0 a 1.0, en el que comienza la guía multimodal. El valor predeterminado es 0.0. | FLOAT | Sí | 0.0 a 1.0 (default: 0.0) |
+| `porcentaje_fin` | El punto del proceso de muestreo, como porcentaje de 0.0 a 1.0, en el que termina la guía multimodal. El valor predeterminado es 1.0. | FLOAT | Sí | 0.0 a 1.0 (default: 1.0) |
 
 La guía se aplica solo para los pasos de muestreo cuyos valores de sigma se encuentran dentro del rango definido por `start_percent` y `end_percent`. Fuera de este rango, el nodo devuelve el resultado denoizado sin cambios. Un `modality_scale` de 1.0 también desactiva por completo la pasada adicional hacia adelante.
 

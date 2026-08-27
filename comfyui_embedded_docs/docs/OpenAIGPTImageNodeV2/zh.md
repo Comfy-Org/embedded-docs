@@ -10,11 +10,11 @@
 | --- | --- | --- | --- | --- |
 | `提示词` | GPT 图像的文本提示（默认值：""）。 | STRING | 是 | 无 |
 | `模型` | 要使用的 OpenAI GPT 图像模型。选择模型后会显示该模型特有的附加参数。 | COMBO | 是 | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
-| `model.size` | 图像尺寸。选择"Custom"可使用自定义宽度和高度（默认值："auto"）。仅适用于 `gpt-image-2`。 | COMBO | 是 | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
-| `model.custom_width` | 仅在 `size` 为"Custom"时使用。必须是 16 的倍数（默认值：1024）。仅适用于 `gpt-image-2`。 | INT | 否 | 1024 至 3840 |
-| `model.custom_height` | 仅在 `size` 为"Custom"时使用。必须是 16 的倍数（默认值：1024）。仅适用于 `gpt-image-2`。 | INT | 否 | 1024 至 3840 |
-| `model.background` | 返回带或不带背景的图像（默认值："auto"）。仅适用于 `gpt-image-2`。 | COMBO | 是 | `"auto"`<br>`"opaque"` |
-| `model.quality` | 生成图像的质量。仅适用于 `gpt-image-2`。 | COMBO | 是 | `"standard"`<br>`"hd"` |
+| `尺寸` | 图像尺寸。选择"Custom"可使用自定义宽度和高度（默认值："auto"）。仅适用于 `gpt-image-2`。 | COMBO | 是 | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `自定义宽度` | 仅在 `size` 为"Custom"时使用。必须是 16 的倍数（默认值：1024）。仅适用于 `gpt-image-2`。 | INT | 否 | 1024 至 3840 |
+| `自定义高度` | 仅在 `size` 为"Custom"时使用。必须是 16 的倍数（默认值：1024）。仅适用于 `gpt-image-2`。 | INT | 否 | 1024 至 3840 |
+| `背景` | 返回带或不带背景的图像（默认值："auto"）。仅适用于 `gpt-image-2`。 | COMBO | 是 | `"auto"`<br>`"opaque"` |
+| `质量` | 生成图像的质量。仅适用于 `gpt-image-2`。 | COMBO | 是 | `"standard"`<br>`"hd"` |
 | `model.images` | 用于编辑的输入图像。仅适用于 `gpt-image-2`。 | IMAGE | 否 | 无 |
 | `model.mask` | 用于指定输入图像中要编辑区域的遮罩。仅适用于 `gpt-image-2`。 | MASK | 否 | 无 |
 | `数量` | 要生成的图像数量（默认值：1）。 | INT | 是 | 1 至 8 |
