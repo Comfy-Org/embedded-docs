@@ -1,19 +1,21 @@
 # MeshSmoothNormals
 
+Calcula normales suaves por vértice para una malla y adjúntalas. Las mallas sin normales se sombrean planas (por cara) en los visores glTF; este nodo hace que se sombreen suavemente. Con un ángulo de pliegue inferior a 180, los bordes más pronunciados que el umbral se mantienen duros dividiendo los vértices a lo largo de ellos.
+
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
-|-----------|-------------|--------------|--------------|-------|
-| `mesh` | La malla de entrada a procesar. | MESH | Sí | - |
-| `crease_angle` | Las aristas cuyo ángulo diedro supera este valor (en grados) permanecen duras (los vértices se dividen). 180 = completamente suave; valores más bajos conservan aristas afiladas (p. ej., ~30-60 para superficies duras). Predeterminado: 180.0. | FLOAT | Sí | 0.0 to 180.0 (step 1.0) |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `malla` | La malla de entrada a procesar. | MESH | Sí | - |
+| `crease_angle` | Los bordes cuyo ángulo diedro supera este valor (grados) permanecen duros (los vértices se dividen). 180 = totalmente suave; valores más bajos conservan bordes afilados (p. ej. ~30-60 para superficies duras). Predeterminado: 180.0. | FLOAT | Sí | 0.0 a 180.0 (paso 1.0) |
 
-Cuando `crease_angle` es 180 o más, la topología de la malla no cambia. Cuando se establece por debajo de 180, los vértices se dividen a lo largo de las aristas duras, lo que puede aumentar el número de vértices.
+Cuando `crease_angle` es 180 o más, la topología de la malla no cambia. Si se establece por debajo de 180, los vértices se dividen a lo largo de los bordes duros, lo que puede aumentar el número de vértices.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
-|-----------------|-------------|--------------|
-| `mesh` | La malla de entrada con datos normales suaves adjuntos, o con vértices y normales divididos cuando se establece un ángulo de pliegue. | MESH |
+| Nombre de salida | Descripción | Tipo de datos |
+|-------------|-------------|-----------|
+| `malla` | La malla de entrada con datos de normales suaves adjuntos, o con vértices y normales divididos cuando se establece un ángulo de pliegue. | MESH |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshSmoothNormals/es.md)
 

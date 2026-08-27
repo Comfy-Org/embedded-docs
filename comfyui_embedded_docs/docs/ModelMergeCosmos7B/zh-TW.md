@@ -1,17 +1,17 @@
 # ModelMergeCosmos7B
 
-ModelMergeCosmos7B 節點透過對特定元件進行加權混合，將兩個 AI 模型合併在一起。它允許透過調整位置嵌入、Transformer 區塊和最終層的個別權重，來精細控制模型不同部分的組合方式。
+ModelMergeCosmos7B 節點透過對特定元件進行加權混合，將兩個 AI 模型合併在一起。它允許透過調整位置嵌入、Transformer 區塊和最終層的個別權重，對模型不同部分的組合方式進行細粒度控制。
 
 ## 輸入
 
-| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `模型 1` | 要合併的第一個模型 | MODEL | 是 | - |
 | `模型 2` | 要合併的第二個模型 | MODEL | 是 | - |
-| `pos_embedder.` | 位置嵌入元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `extra_pos_embedder.` | 額外位置嵌入元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `x_embedder.` | x 嵌入元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
-| `t_embedder.` | t 嵌入元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `pos_embedder.` | 位置嵌入器元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `extra_pos_embedder.` | 額外位置嵌入器元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `x_embedder.` | x 嵌入器元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
+| `t_embedder.` | t 嵌入器元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `affline_norm.` | 仿射正規化元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `blocks.block0.` | Transformer 區塊 0 的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `blocks.block1.` | Transformer 區塊 1 的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
@@ -43,13 +43,15 @@ ModelMergeCosmos7B 節點透過對特定元件進行加權混合，將兩個 AI 
 | `blocks.block27.` | Transformer 區塊 27 的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 | `final_layer.` | 最終層元件的權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 
+所有權重參數接受 0.0 到 1.0 之間的值，步長為 0.01，預設值為 1.0。
+
 ## 輸出
 
-| 輸出名稱 | 說明 | 資料類型 |
+| 輸出名 | 描述 | 資料類型 |
 | --- | --- | --- |
 | `model` | 合併後的模型，結合了兩個輸入模型的特徵 | MODEL |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmos7B/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `0721b047933179706c76f622efb5b7425aad530d302d8b33ec12dd68513dec0b`
+**Source fingerprint (SHA-256):** `2cc4dcaa3576c5383c630e233cef55dedc8d742c20197cc83f5832dc9e887dac`

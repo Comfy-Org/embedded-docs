@@ -18,8 +18,8 @@ O nó **PairConditioningSetProperties** permite modificar propriedades de pares 
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `positive` | O condicionamento positivo modificado com as propriedades aplicadas | CONDITIONING |
-| `negative` | O condicionamento negativo modificado com as propriedades aplicadas | CONDITIONING |
+| `positivo` | O condicionamento positivo modificado com as propriedades aplicadas | CONDITIONING |
+| `negativo` | O condicionamento negativo modificado com as propriedades aplicadas | CONDITIONING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningSetProperties/pt-BR.md)
 

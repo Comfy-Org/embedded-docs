@@ -1,20 +1,20 @@
 # Ruido aleatorio
 
-El nodo RandomNoise genera patrones de ruido aleatorio basados en un valor de semilla. Crea ruido reproducible que puede utilizarse para diversas tareas de procesamiento y generación de imágenes. La misma semilla siempre producirá el mismo patrón de ruido, lo que permite obtener resultados consistentes en múltiples ejecuciones.
+El nodo RandomNoise crea un generador de ruido basado en un valor de semilla para su uso durante el proceso de muestreo. La misma semilla siempre produce el mismo patrón de ruido, lo que permite obtener resultados consistentes y reproducibles en múltiples ejecuciones. Los muestreadores utilizan el ruido generado al procesar imágenes latentes.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `semilla_ruido` | El valor de semilla utilizado para generar el patrón de ruido aleatorio (predeterminado: 0). La misma semilla siempre producirá la misma salida de ruido. | INT | Sí | 0 a 18446744073709551615 |
+| `semilla_ruido` | El valor de semilla utilizado para generar el patrón de ruido aleatorio (predeterminado: 0). La misma semilla siempre produce la misma salida de ruido. Esta entrada incluye una opción de control posterior a la generación para actualizar automáticamente la semilla después de cada generación. | INT | Sí | 0 a 18446744073709551615 |
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `noise` | El patrón de ruido aleatorio generado basado en el valor de semilla proporcionado. | NOISE |
+| `noise` | Un objeto de ruido que genera ruido aleatorio para muestras latentes basado en el valor de semilla proporcionado. Utilizado por los muestreadores durante el proceso de muestreo. | NOISE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RandomNoise/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `893d3eefdef78592ba3cc403ec1e4bf3a672607abe79f05db1b65078d6b9ea20`
+**Source fingerprint (SHA-256):** `b55ff98c636c55f064ede82c6848ffa163d1fd9b0cf6195f4a35603cfbe2bc1e`

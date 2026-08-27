@@ -1,30 +1,46 @@
 # HeyGen Talking Photo
 
-Transforma una imagen estática de una persona en un video parlante con sincronización labial utilizando la tecnología Avatar IV de HeyGen. Puedes controlar la animación con un guion de texto que HeyGen convierte en voz, o proporcionar tu propio audio para que el avatar sincronice los labios.
+Anima una imagen fija de una persona para convertirla en un video hablado con sincronización de labios mediante la tecnología Avatar IV de HeyGen. Puedes impulsar la animación con un guion de texto que HeyGen convierte en voz, o proporcionar tu propio audio para que el avatar sincronice los labios.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
-|-----------|-------------|--------------|-----------|-------|
-| `imagen` | Imagen de una persona para animar. Se reduce automáticamente si es mayor a 2K. | IMAGE | Sí | - |
-| `voz` | Controla el avatar con un guion de texto (texto a voz de HeyGen) o tu propio audio. | COMBO | Sí | `"script"`<br>`"audio"` |
-| `text` | Texto que el avatar debe decir (hasta 5000 caracteres). El discurso generado debe tener al menos 1 segundo de duración. (predeterminado: vacío) | STRING | Sí (cuando speech es "script") | - |
-| `voice` | Voz para el guion (las voces más populares de HeyGen). | COMBO | Sí (cuando speech es "script") | Múltiples opciones disponibles |
-| `custom_voice_id` | ID de voz opcional de HeyGen. Cuando se establece, anula la voz seleccionada anteriormente. Se puede usar cualquier voz de la biblioteca de HeyGen (más de 2000). (predeterminado: vacío) | STRING | No | - |
-| `voice_speed` | Multiplicador de velocidad del habla (predeterminado: 1.0). | FLOAT | No | 0.5 a 1.5 |
-| `audio` | Audio para que el avatar sincronice los labios, hasta 10 minutos. | AUDIO | Sí (cuando speech es "audio") | - |
-| `resolución` | Resolución del video de salida (predeterminado: "1080p"). | COMBO | No | `"720p"`<br>`"1080p"` |
-| `relación de aspecto` | Relación de aspecto de salida. 'auto' sigue la imagen de entrada (predeterminado: "auto"). | COMBO | No | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `expresividad` | Qué tan expresivos son el rostro y los gestos animados (predeterminado: "low"). | COMBO | No | `"low"`<br>`"medium"`<br>`"high"` |
-| `semilla` | No se envía a HeyGen; cámbialo para forzar una nueva ejecución (predeterminado: 42). | INT | No | 0 a 2147483647 |
+### Entradas comunes
 
-Nota: `speech` es una entrada dinámica que selecciona la fuente de voz. Cuando se establece en "script", se requieren `text` y `voice`, y `custom_voice_id` y `voice_speed` son opcionales. Cuando se establece en "audio", se requiere `audio` en su lugar.
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `imagen` | Imagen de una persona para animar. Se reduce automáticamente si es mayor que 2K. | IMAGE | Sí | - |
+| `voz` | Impulsa el avatar con un guion de texto (texto a voz de HeyGen) o con tu propio audio. | DYNAMIC_COMBO | Sí | `"script"`<br>`"audio"` |
+| `resolución` | Resolución del video de salida (predeterminado: `"1080p"`). | COMBO | No | `"720p"`<br>`"1080p"` |
+| `relación de aspecto` | Relación de aspecto de salida. `"auto"` sigue la imagen de entrada (predeterminado: `"auto"`). | COMBO | No | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `expresividad` | Cuán expresivos son el rostro y los gestos animados (predeterminado: `"low"`). | COMBO | No | `"low"`<br>`"medium"`<br>`"high"` |
+| `semilla` | No se envía a HeyGen; cámbielo para forzar una nueva ejecución (predeterminado: 42). | INT | No | 0 a 2147483647 |
+
+### Entradas de guion
+
+Se muestran cuando `speech` es `"script"`.
+
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `text` | Texto que debe hablar el avatar (hasta 5000 caracteres). El discurso generado debe tener al menos 1 segundo de duración. (predeterminado: vacío) | STRING | Sí | 1 a 5000 caracteres |
+| `voice` | Voz para el guion (las voces más populares de HeyGen). | COMBO | Sí | Hay múltiples opciones disponibles |
+| `custom_voice_id` | ID de voz opcional de HeyGen. Cuando se establece, anula la voz seleccionada arriba. Se puede usar cualquier voz de la biblioteca de HeyGen (más de 2000). (predeterminado: vacío) | STRING | No | - |
+| `voice_speed` | Multiplicador de velocidad del habla (predeterminado: 1.0). | FLOAT | No | 0.5 a 1.5 (paso 0.05) |
+
+### Entradas de audio
+
+Se muestran cuando `speech` es `"audio"`.
+
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `audio` | Audio para que el avatar sincronice los labios, hasta 10 minutos. | AUDIO | Sí | Hasta 10 minutos |
+
+Nota: Cuando `speech` es `"script"`, se debe especificar `text` y se requiere una voz mediante el selector `voice` (eligiendo cualquier opción que no sea la voz predeterminada del avatar) o un `custom_voice_id`. Cuando `speech` es `"audio"`, se requiere `audio` en su lugar.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-|------------------|-------------|--------------|
-| `video` | Video generado de la foto parlante animada con discurso sincronizado con los labios. | VIDEO |
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `video` | Video generado de la foto animada hablando con discurso sincronizado con los labios. | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenTalkingPhotoNode/es.md)
 

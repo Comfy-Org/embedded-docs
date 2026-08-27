@@ -1,21 +1,21 @@
 # Kontrastı Ayarla
 
-Kontrast Ayarla düğümü, bir giriş görüntüsünün kontrast seviyesini değiştirir. Görüntünün açık ve koyu alanları arasındaki farkı ayarlayarak çalışır. 1,0 faktörü görüntüyü değiştirmez, 1,0'ın altındaki değerler kontrastı azaltır ve 1,0'ın üzerindeki değerler kontrastı artırır.
+Adjust Contrast düğümü, bir girdi görüntüsünün kontrast düzeyini değiştirir. Bu, görüntünün açık ve koyu alanları arasındaki farkı ayarlayarak çalışır. 1.0 faktörü görüntüyü değiştirmez, 1.0'ın altındaki değerler kontrastı azaltır, 1.0'ın üzerindeki değerler ise artırır.
 
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `image` | Kontrastı ayarlanacak giriş görüntüsü. | IMAGE | Evet | - |
-| `faktör` | Kontrast faktörü. 1,0 = değişiklik yok, <1,0 = daha az kontrast, >1,0 = daha fazla kontrast. (varsayılan: 1,0) | FLOAT | Hayır | 0,0 - 2,0 |
+| `image` | Kontrastı ayarlanacak girdi görüntüsü. | IMAGE | Evet | - |
+| `faktör` | Kontrast faktörü. 1.0 = değişiklik yok, <1.0 = daha az kontrast, >1.0 = daha fazla kontrast. (varsayılan: 1.0) | FLOAT | Hayır | 0.0 - 2.0 |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `image` | Kontrastı ayarlanmış sonuç görüntüsü. | IMAGE |
+| `görseller` | Kontrastı ayarlanmış sonuç görüntüsü. Piksel değerleri 0.0–1.0 aralığına sınırlandırılmıştır. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AdjustContrast/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `01148cdd9d951e78c712c1c3159c5562a680a5147bd4a76e33d91543d5245854`
+**Source fingerprint (SHA-256):** `1f5fbd0f0b739492bc171d3c43ea2150a3ca76dc3ede9bf63cb97c45a90b9e44`

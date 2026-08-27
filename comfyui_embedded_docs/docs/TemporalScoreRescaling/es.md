@@ -1,22 +1,22 @@
 # TSR - Reajuste de Puntuación Temporal
 
-Este nodo aplica Re-escalado de Puntuación Temporal (TSR) a un modelo de difusión. Modifica el comportamiento de muestreo del modelo re-escalando el ruido o la puntuación predicha durante el proceso de eliminación de ruido, lo que puede dirigir la diversidad del resultado generado. Se implementa como una función posterior a CFG (Guía Libre de Clasificador).
+Este nodo aplica el reescalado de puntuación temporal (TSR, por sus siglas en inglés) a un modelo de difusión. Modifica el comportamiento de muestreo del modelo reescalando el ruido o puntuación predicho durante el proceso de eliminación de ruido, lo que puede orientar la diversidad de la salida generada. Esto se implementa como una función post-CFG (Classifier-Free Guidance).
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo de difusión al que se le aplicará el parche con la función TSR. | MODEL | Sí | - |
-| `tsr_k` | Controla la intensidad del re-escalado. Un valor k más bajo produce resultados más detallados; un valor k más alto produce resultados más suaves en la generación de imágenes. Establecer k = 1 desactiva el re-escalado. (valor predeterminado: 0.95) | FLOAT | No | 0.01 - 100.0 |
-| `tsr_sigma` | Controla qué tan temprano surte efecto el re-escalado. Los valores más grandes surten efecto más temprano. (valor predeterminado: 1.0) | FLOAT | No | 0.01 - 100.0 |
+| `modelo` | El modelo de difusión que se va a parchear con la función TSR. | MODEL | Sí | - |
+| `tsr_k` | Controla la fuerza del reescalado. Un valor de k más bajo produce resultados más detallados; un valor de k más alto produce resultados más suaves en la generación de imágenes. Establecer k = 1 desactiva el reescalado. (predeterminado: 0.95) | FLOAT | Sí | 0.01 - 100.0 |
+| `tsr_sigma` | Controla qué tan temprano surte efecto el reescalado. Los valores más grandes surten efecto antes. (predeterminado: 1.0) | FLOAT | Sí | 0.01 - 100.0 |
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `modelo_modificado` | El modelo de entrada, ahora parcheado con la función de Re-escalado de Puntuación Temporal aplicada a su proceso de muestreo. | MODEL |
+| `modelo_modificado` | El modelo de entrada, ahora parcheado con la función de reescalado de puntuación temporal aplicada a su proceso de muestreo. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TemporalScoreRescaling/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `2931b42ac93cf50e2c395bacf3128bb43dcc043ab5c8f86d7aabe4d35a44d20a`
+**Source fingerprint (SHA-256):** `4d4e3c64fb6e3a3fe4725ea944a361b46d871943a10e65d72d70e0e6d757dfca`

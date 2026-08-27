@@ -1,21 +1,21 @@
 # Editor de curvas
 
-El nodo Editor de Curvas proporciona una interfaz visual para ajustar y refinar una curva. Permite modificar la forma de una curva de entrada y, opcionalmente, visualizar su distribución con un histograma. El nodo entrega la curva modificada para su uso en otras partes de su flujo de trabajo.
+El nodo Curve Editor proporciona una interfaz visual para ajustar y afinar una curva. Puede modificar la forma de una curva de entrada directamente en la interfaz del nodo y, opcionalmente, mostrar un histograma junto a ella como referencia visual. El nodo admite salida intermedia durante la edición, lo que le permite ver resultados en vivo mientras realiza cambios, y genera la curva modificada para usarla en otras partes de su flujo de trabajo.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `curva` | La curva de entrada que se va a editar. | CURVE | Sí | N/A |
 | `histograma` | Un histograma opcional para mostrar junto a la curva como referencia visual. | HISTOGRAM | No | N/A |
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `curva` | La curva editada después de realizar los ajustes en la interfaz del nodo. | CURVE |
+| `curva` | La curva editada después de realizar ajustes en la interfaz del nodo. | CURVE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CurveEditor/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `34cf36a5b934c44ebfce0b81e7c515f1b31fb17f3b7e1ad52255d1d72f68240b`
+**Source fingerprint (SHA-256):** `6c4459998b1a3dd3a53f84cb1c231c448c64aa55b96444bc4ac7470556a3b915`

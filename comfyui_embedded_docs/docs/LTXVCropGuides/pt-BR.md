@@ -1,24 +1,26 @@
 # LTXVCropGuides
 
-O nó LTXVCropGuides processa entradas de condicionamento e latentes para geração de vídeo, removendo informações de keyframes e ajustando as dimensões latentes. Ele recorta a imagem latente e a máscara de ruído para excluir seções de keyframes, enquanto limpa os índices de keyframes das entradas de condicionamento positivo e negativo. Isso prepara os dados para fluxos de trabalho de geração de vídeo que não exigem orientação por keyframes.
+O nó LTXVCropGuides processa entradas de conditioning e latent para geração de vídeo, removendo informações de quadros-chave e ajustando as dimensões do latent. Ele recorta a imagem latente e o mapa de ruído para excluir seções de quadros-chave, ao mesmo tempo que limpa os índices de quadros-chave e as entradas de atenção de orientação tanto no conditioning positivo quanto no negativo. Isso prepara os dados para fluxos de trabalho de geração de vídeo que não exigem orientação por quadros-chave.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `positivo` | A entrada de condicionamento positivo contendo informações de orientação para a geração | CONDITIONING | Sim | - |
-| `negativo` | A entrada de condicionamento negativo contendo informações sobre o que evitar na geração | CONDITIONING | Sim | - |
-| `latent` | A representação latente contendo amostras de imagem e dados de máscara de ruído | LATENT | Sim | - |
+| `positivo` | A entrada de conditioning positiva contendo informações de orientação para a geração. Seus índices de quadros-chave determinam quantos quadros são recortados do latent. | CONDITIONING | Sim | - |
+| `negativo` | A entrada de conditioning negativa contendo informações de orientação sobre o que evitar na geração. Seus dados de quadros-chave são limpos juntamente com os do conditioning positivo. | CONDITIONING | Sim | - |
+| `latent` | A representação latente que contém as amostras de imagem e os dados do mapa de ruído. Quando há quadros-chave no conditioning positivo, os quadros do último quadro-chave são removidos tanto das amostras quanto do mapa de ruído. | LATENT | Sim | - |
+
+Nota: O recorte ocorre somente quando o conditioning positivo contém índices de quadros-chave. Se nenhum quadro-chave for detectado, os conditionings positivo e negativo passam inalterados, juntamente com o latent.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
+| Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `positivo` | O condicionamento positivo processado com índices de keyframes e entradas de atenção guiada limpos | CONDITIONING |
-| `negativo` | O condicionamento negativo processado com índices de keyframes e entradas de atenção guiada limpos | CONDITIONING |
-| `latent` | A representação latente recortada com amostras e máscara de ruído ajustadas, onde as seções de keyframes foram removidas | LATENT |
+| `positivo` | O conditioning positivo processado, com os índices de quadros-chave e as entradas de atenção de orientação removidos | CONDITIONING |
+| `negativo` | O conditioning negativo processado, com os índices de quadros-chave e as entradas de atenção de orientação removidos | CONDITIONING |
+| `latent` | A representação latente recortada, com as amostras e o mapa de ruído ajustados, onde as seções de quadros-chave foram removidas | LATENT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVCropGuides/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `029309c260e09221cc9a046897589d99498f6e8ad984ef6052e50be9a0ea7b6d`
+**Source fingerprint (SHA-256):** `83e08bad281902e765ec18e06144b6a5fa730be2533932daa1d4076e6390b1e1`

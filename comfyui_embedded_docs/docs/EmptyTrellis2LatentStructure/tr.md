@@ -1,12 +1,12 @@
 # EmptyTrellis2LatentStructure
 
-Bu düğüm, Trellis2 modeli için tüm değerleri sıfıra ayarlanmış boş bir latent yapı oluşturur. Belirtilen batch boyutuna göre, 32 kanallı ve 16×16×16 çözünürlüğünde boş bir 3B latent tensör üretir.
+Bu düğüm, Trellis2 modeli için tüm değerleri sıfıra ayarlanmış boş bir latent yapı oluşturur. Toplu işte belirtilen öğe sayısına göre boyutlandırılmış, 16×16×16 çözünürlüğünde ve 32 kanallı boş bir 3B latent tensör üretir.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `batch_size` | Batch içindeki latent görüntü sayısı (varsayılan: 1). | INT | Evet | 1 to 4096 |
+| `batch_size` | Toplu işteki latent görüntülerin sayısı (varsayılan: 1). | INT | Evet | 1 ila 4096 |
 
 ## Çıktılar
 

@@ -1,40 +1,45 @@
 # Flux.2 Image
 
-Voici la traduction en français de la documentation du nœud ComfyUI, en respectant vos règles :
+Flux.2 Image
 
-## Aperçu
-
-Générez des images en utilisant le modèle Flux.2 [pro] ou Flux.2 [max] à partir d'une invite textuelle et d'images de référence optionnelles. Ce nœud envoie votre requête à l'API BFL, interroge le résultat et renvoie l'image générée sous forme de tenseur.
+Générez des images à l'aide du modèle Flux.2 [pro] ou Flux.2 [max] à partir d'une invite texte et d'images de référence facultatives. Ce nœud envoie votre requête à l'API BFL, interroge le résultat et renvoie l'image générée sous forme de tenseur.
 
 ## Entrées
 
+### Entrées communes
+
 | Paramètre | Description | Type de données | Requis | Plage |
-| --- | --- | --- | --- | --- |
+|-----------|-------------|-----------------|--------|-------|
+| `modèle` | La version du modèle Flux.2 à utiliser. La sélection d'un modèle débloque des paramètres supplémentaires pour la largeur, la hauteur et les images de référence facultatives. | DYNAMIC_COMBO | Oui | "Flux.2 [pro]"<br>"Flux.2 [max]" |
 | `prompt` | Invite pour la génération ou l'édition d'image (par défaut : chaîne vide). | STRING | Oui | N/A |
-| `modèle` | La version du modèle Flux.2 à utiliser. La sélection d'un modèle déverrouille des paramètres supplémentaires pour la largeur, la hauteur et les images de référence optionnelles. | COMBO | Oui | `"Flux.2 [pro]"`<br>`"Flux.2 [max]"` |
-| `graine` | La graine aléatoire utilisée pour créer le bruit. Peut être définie pour se randomiser après chaque génération (par défaut : 0). | INT | Oui | 0 à 18446744073709551615 |
+| `graine` | La graine aléatoire utilisée pour créer le bruit. Peut être définie pour être randomisée après chaque génération (par défaut : 0). | INT | Oui | 0 à 18446744073709551615 |
 
-**Paramètres supplémentaires (déverrouillés par la sélection du `model`) :**
+### Entrées Flux.2 [pro] et Flux.2 [max]
 
-Lorsque vous sélectionnez un modèle, les paramètres suivants deviennent disponibles :
+Partagées par les deux modèles — les ensembles de paramètres sont identiques.
 
 | Paramètre | Description | Type de données | Requis | Plage |
-| --- | --- | --- | --- | --- |
-| `largeur` | La largeur de l'image générée en pixels. | INT | Oui | 256 à 1440 |
-| `hauteur` | La hauteur de l'image générée en pixels. | INT | Oui | 256 à 1440 |
-| `model.images` | Images de référence optionnelles pour guider la génération. Un maximum de 8 images est pris en charge. | IMAGE | Non | 0 à 8 images |
+|-----------|-------------|-----------------|--------|-------|
+| `largeur` | La largeur de l'image générée en pixels (par défaut : 1024). | INT | Oui | 256 à 2048 (step 32) |
+| `hauteur` | La hauteur de l'image générée en pixels (par défaut : 768). | INT | Oui | 256 à 2048 (step 32) |
 
-**Contraintes :**
-- Le nombre maximum d'images de référence est de 8. Si plus de 8 images sont fournies, une erreur sera générée.
-- Les valeurs `model.width` et `model.height` affectent le coût de la génération (voir la logique du badge de prix dans le code source).
+### Entrées de référence
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `model.images` | Image(s) de référence facultative(s) pour la génération image-à-image. Jusqu'à 8 images. Emplacement extensible : connectez 1 à 8 éléments (`image_1`...`image_8`). | IMAGE | Non | 0 à 8 images |
+
+**Remarque :**
+- Le nombre maximal d'images de référence est de 8. Si plus de 8 images sont fournies, une erreur est déclenchée.
+- Les valeurs `model.width` et `model.height` affectent le coût de génération. Le coût dépend également du modèle sélectionné et de la présence d'images de référence.
 
 ## Sorties
 
-| Nom de la sortie | Description | Type de données |
-| --- | --- | --- |
-| `image` | L'image générée sous forme de tenseur, téléchargée depuis le résultat de l'API BFL. | IMAGE |
+| Nom de sortie | Description | Type de données |
+|---------------|-------------|-----------------|
+| `image` | L'image générée sous forme de tenseur, téléchargée à partir du résultat de l'API BFL. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Flux2ImageNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `664ddf45d42f64e4882cc959018f7874915325f2d46519c6bb9a0c5a501228f7`
+**Source fingerprint (SHA-256):** `2994564757e1c66ac6da7b45d227b27ceb0020ac6fc9e8cbe2b53fe9f70bc195`

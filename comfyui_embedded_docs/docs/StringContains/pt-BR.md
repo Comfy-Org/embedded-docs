@@ -14,7 +14,7 @@ O nó StringContains verifica se uma determinada string contém uma substring es
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `contains` | Retorna verdadeiro se a substring for encontrada na string, falso caso contrário | BOOLEAN |
+| `contém` | Retorna verdadeiro se a substring for encontrada na string, falso caso contrário | BOOLEAN |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringContains/pt-BR.md)
 

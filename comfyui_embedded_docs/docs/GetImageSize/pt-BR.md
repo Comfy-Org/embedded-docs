@@ -12,9 +12,9 @@ O nó GetImageSize extrai as dimensões e informações de lote de uma imagem de
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `width` | A largura da imagem de entrada em pixels | INT |
-| `height` | A altura da imagem de entrada em pixels | INT |
-| `batch_size` | O número de imagens no lote | INT |
+| `largura` | A largura da imagem de entrada em pixels | INT |
+| `altura` | A altura da imagem de entrada em pixels | INT |
+| `tamanho_do_lote` | O número de imagens no lote | INT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetImageSize/pt-BR.md)
 

@@ -1,22 +1,22 @@
 # Görüntüleri Normalleştir
 
-Bu düğüm, bir giriş görüntüsünün piksel değerlerini matematiksel bir normalleştirme işlemi kullanarak ayarlar. Her pikselden belirtilen bir ortalama değeri çıkarır ve ardından sonucu belirtilen bir standart sapmaya böler. Bu, görüntü verilerini diğer makine öğrenimi modelleri için hazırlamak amacıyla yapılan yaygın bir ön işleme adımıdır.
+Bu düğüm, girdi görüntüsünün piksel değerlerini matematiksel bir normalizasyon süreci kullanarak ayarlar. Her pikselden belirtilen ortalama (mean) değerini çıkarır ve sonucu belirtilen standart sapmaya (std) böler. Bu, görüntü verilerini diğer makine öğrenimi modelleri için hazırlamak amacıyla yapılan yaygın bir ön işleme adımıdır.
 
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `image` | Normalleştirilecek giriş görüntüsü. | IMAGE | Evet | - |
-| `ortalama` | Normalleştirme için ortalama değeri (varsayılan: 0.5). | FLOAT | Hayır | 0.0 - 1.0 |
-| `std` | Normalleştirme için standart sapma (varsayılan: 0.5). | FLOAT | Hayır | 0.001 - 1.0 |
+| `image` | Normalize edilecek girdi görüntüsü. | IMAGE | Evet | - |
+| `ortalama` | Normalizasyon için ortalama değeri (varsayılan: 0.5). | FLOAT | Hayır | 0.0 - 1.0 |
+| `std` | Normalizasyon için standart sapma (varsayılan: 0.5). | FLOAT | Hayır | 0.001 - 1.0 |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `görüntüler` | Normalleştirme işlemi uygulandıktan sonra elde edilen sonuç görüntüsü. | IMAGE |
+| `görüntüler` | Normalizasyon süreci uygulandıktan sonra elde edilen görüntü. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/NormalizeImages/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `9d08c8dba7d13c6f255ed786d3d2d3005bce425dc04b14b7199d868c3fc81fd9`
+**Source fingerprint (SHA-256):** `927451ed275254d87e42b52919143ee2f3d9833a2aa5b43c7315d798871f9a2d`

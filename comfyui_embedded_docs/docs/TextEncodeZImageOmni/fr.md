@@ -1,31 +1,29 @@
 # TextEncodeZImageOmni
 
-Voici la traduction en français de la documentation du nœud TextEncodeZImageOmni :
-
-Le nœud TextEncodeZImageOmni est un nœud de conditionnement avancé qui encode une invite textuelle ainsi que des images de référence optionnelles dans un format de conditionnement adapté aux modèles de génération d'images. Il peut traiter jusqu'à trois images, en les encodant éventuellement avec un encodeur visuel et/ou un VAE pour produire des latentes de référence, et intègre ces références visuelles à l'invite textuelle en utilisant une structure de modèle spécifique.
+TextEncodeZImageOmni encode un prompt texte ainsi que jusqu'à trois images de référence optionnelles dans un format de conditionnement pour les modèles de génération d'images. Le prompt est tokenisé et encodé avec le modèle CLIP, et chaque image connectée peut éventuellement être traitée par un encodeur de vision et/ou un VAE afin que les références visuelles soient intégrées au texte. Ce nœud est marqué comme expérimental.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `clip` | Le modèle CLIP utilisé pour tokeniser et encoder l'invite textuelle. | CLIP | Oui |  |
-| `encodeur d'image` | Un modèle d'encodeur visuel optionnel. S'il est fourni, il sera utilisé pour encoder les images d'entrée, et les embeddings résultants seront ajoutés au conditionnement. | CLIPVision | Non |  |
-| `invite` | L'invite textuelle à encoder. Ce champ prend en charge les entrées multilignes et les invites dynamiques. | STRING | Oui |  |
-| `redimensionnement automatique des images` | Lorsqu'il est activé (par défaut : True), les images d'entrée sont automatiquement redimensionnées en fonction de leur surface en pixels avant d'être transmises au VAE pour encodage. | BOOLEAN | Non |  |
-| `vae` | Un modèle VAE optionnel. S'il est fourni, il sera utilisé pour encoder les images d'entrée en représentations latentes, qui sont ajoutées au conditionnement en tant que latentes de référence. | VAE | Non |  |
+| `clip` | Le modèle CLIP utilisé pour tokeniser et encoder le prompt texte. | CLIP | Oui |  |
+| `encodeur d'image` | Un modèle encodeur de vision optionnel. S'il est fourni, il est utilisé pour encoder les images d'entrée, et les plongements résultants sont ajoutés au conditionnement. | CLIP_VISION | Non |  |
+| `invite` | Le prompt texte à encoder. Prend en charge la saisie multiligne et les prompts dynamiques. | STRING | Oui |  |
+| `redimensionnement automatique des images` | Lorsqu'il est activé (par défaut : True), les images d'entrée sont automatiquement redimensionnées avant l'encodage VAE afin que leur surface totale en pixels soit proche de 1024x1024, avec des dimensions arrondies à des multiples de 8. | BOOLEAN | Non | True<br>False |
+| `vae` | Un modèle VAE optionnel. S'il est fourni, il est utilisé pour encoder les images d'entrée en représentations latentes, qui sont ajoutées au conditionnement en tant que latents de référence. | VAE | Non |  |
 | `image1` | La première image de référence optionnelle. | IMAGE | Non |  |
 | `image2` | La deuxième image de référence optionnelle. | IMAGE | Non |  |
 | `image3` | La troisième image de référence optionnelle. | IMAGE | Non |  |
 
-**Remarque :** Le nœud peut accepter un maximum de trois images (`image1`, `image2`, `image3`). Les entrées `image_encoder` et `vae` ne sont utilisées que si au moins une image est fournie. Lorsque `auto_resize_images` est True et qu'un `vae` est connecté, les images sont redimensionnées pour avoir une surface totale en pixels proche de 1024x1024 avant encodage.
+**Remarque :** Le nœud accepte un maximum de trois images (`image1`, `image2`, `image3`). Les entrées `image_encoder` et `vae` ne sont utilisées que lorsqu'au moins une image est fournie ; lorsque les deux sont connectées, chaque image est traitée par les deux. Lorsque `auto_resize_images` est défini sur True et qu'un `vae` est connecté, les images sont redimensionnées pour avoir une surface totale en pixels proche de 1024x1024 avant l'encodage.
 
 ## Sorties
 
-| Nom de la sortie | Description | Type de données |
+| Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `CONDITIONING` | La sortie de conditionnement finale, qui contient l'invite textuelle encodée et peut inclure des embeddings d'images encodées et/ou des latentes de référence si des images ont été fournies. | CONDITIONING |
+| `CONDITIONING` | La sortie de conditionnement finale. Elle contient le prompt texte encodé et, lorsque des images sont fournies, peut inclure des plongements d'images encodés, des latents de référence et des plongements de texte supplémentaires dérivés du gabarit avec espace réservé pour l'image. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeZImageOmni/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `daa4205acdf72503180eeedb4142708d239d4ff0f689012a298264ae2d8ea949`
+**Source fingerprint (SHA-256):** `b40a3150f536b6f37e2b53e6d9992fcb4fd32dceb540c0a76773a7ba1af9a7b8`

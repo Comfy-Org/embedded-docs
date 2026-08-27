@@ -14,8 +14,8 @@
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
 | `TIMESTEPS_RANGE` | بازه گام زمانی اصلی که توسط start_percent و end_percent تعریف شده است | TIMESTEPS_RANGE |
-| `BEFORE_RANGE` | بازه گام زمانی از 0.0 تا start_percent | TIMESTEPS_RANGE |
-| `AFTER_RANGE` | بازه گام زمانی از end_percent تا 1.0 | TIMESTEPS_RANGE |
+| `قبل از محدوده` | بازه گام زمانی از 0.0 تا start_percent | TIMESTEPS_RANGE |
+| `بعد از محدوده` | بازه گام زمانی از end_percent تا 1.0 | TIMESTEPS_RANGE |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningTimestepsRange/fa.md)
 

@@ -15,7 +15,7 @@ O nó **Join Audio Channels** combina duas entradas de áudio mono separadas em 
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `audio` | O áudio estéreo resultante, contendo os canais esquerdo e direito unidos. | AUDIO |
+| `áudio` | O áudio estéreo resultante, contendo os canais esquerdo e direito unidos. | AUDIO |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/JoinAudioChannels/pt-BR.md)
 

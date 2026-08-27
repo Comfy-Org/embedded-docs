@@ -1,32 +1,32 @@
 # WanPhantomSubjectToVideo
 
-El nodo WanPhantomSubjectToVideo genera contenido de video procesando entradas de condicionamiento e imágenes de referencia opcionales. Crea representaciones latentes para la generación de video y puede incorporar guía visual a partir de imágenes de entrada cuando se proporcionan. El nodo prepara datos de condicionamiento con concatenación de dimensión temporal para modelos de video y genera condicionamiento modificado junto con datos de video latente generados.
+El nodo WanPhantomSubjectToVideo prepara los datos de condicionamiento y un latent para la generación de videos Wan. Crea un video latent vacío a partir del ancho, alto, longitud y tamaño de lote solicitados y, cuando se suministran imágenes de referencia, las codifica con el VAE y las añade a los condicionamientos como guía visual en la dimensión temporal.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `positivo` | Entrada de condicionamiento positivo para guiar la generación de video | CONDITIONING | Sí | - |
 | `negativo` | Entrada de condicionamiento negativo para evitar ciertas características | CONDITIONING | Sí | - |
-| `vae` | Modelo VAE para codificar imágenes cuando se proporcionan | VAE | Sí | - |
-| `ancho` | Ancho del video de salida en píxeles (predeterminado: 832, debe ser divisible por 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `alto` | Alto del video de salida en píxeles (predeterminado: 480, debe ser divisible por 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `longitud` | Número de fotogramas en el video generado (predeterminado: 81, debe ser divisible por 4) | INT | Sí | 1 a MAX_RESOLUTION |
+| `vae` | Modelo VAE utilizado para codificar las imágenes de referencia cuando se proporcionan | VAE | Sí | - |
+| `ancho` | Ancho del video de salida en píxeles (predeterminado: 832, debe ser múltiplo de 16) | INT | Sí | 16 a MAX_RESOLUTION |
+| `alto` | Alto del video de salida en píxeles (predeterminado: 480, debe ser múltiplo de 16) | INT | Sí | 16 a MAX_RESOLUTION |
+| `longitud` | Número de fotogramas del video generado (predeterminado: 81, debe ser múltiplo de 4) | INT | Sí | 1 a MAX_RESOLUTION |
 | `tamaño_lote` | Número de videos a generar simultáneamente (predeterminado: 1) | INT | Sí | 1 a 4096 |
-| `imágenes` | Imágenes de referencia opcionales para condicionamiento de dimensión temporal | IMAGE | No | - |
+| `imágenes` | Imágenes de referencia opcionales utilizadas como guía visual en la dimensión temporal | IMAGE | No | - |
 
-**Nota:** Cuando se proporcionan `images`, se redimensionan automáticamente para coincidir con el `width` y `height` especificados, y solo se utilizan los primeros `length` fotogramas para el procesamiento.
+**Nota:** Cuando se proporcionan `images`, estas se escalan automáticamente para coincidir con el `width` y `height` especificados, y solo se utilizan las primeras `length` imágenes para el procesamiento. Cada imagen se codifica con el `vae` y se concatena a lo largo de la dimensión temporal; solo se usan los canales RGB de cada imagen.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `positivo` | Condicionamiento positivo modificado con concatenación de dimensión temporal cuando se proporcionan imágenes | CONDITIONING |
-| `texto_negativo` | Condicionamiento negativo modificado con concatenación de dimensión temporal cuando se proporcionan imágenes | CONDITIONING |
-| `texto_img_negativa` | Condicionamiento negativo con concatenación de dimensión temporal puesta a cero cuando se proporcionan imágenes | CONDITIONING |
-| `latente` | Representación de video latente generada con las dimensiones y longitud especificadas | LATENT |
+| `positivo` | Condicionamiento positivo con concatenación en la dimensión temporal de las imágenes de referencia codificadas cuando se proporcionan imágenes; de lo contrario, se devuelve la entrada `positive` sin cambios | CONDITIONING |
+| `texto_negativo` | Condicionamiento negativo con concatenación en la dimensión temporal de las imágenes de referencia codificadas cuando se proporcionan imágenes; de lo contrario, se devuelve la entrada `negative` sin cambios | CONDITIONING |
+| `texto_img_negativa` | Condicionamiento negativo con concatenación en la dimensión temporal puesta a cero cuando se proporcionan imágenes; de lo contrario, se devuelve la entrada `negative` sin cambios | CONDITIONING |
+| `latente` | Tensor de video latent relleno con ceros y 16 canales; su cantidad de fotogramas se deriva de `length` y sus dimensiones espaciales de `height` y `width` | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanPhantomSubjectToVideo/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `2e3e8277dca9e998220fc5939c2cc72fdc15e80cc4b95daa33f5b92e2270dd73`
+**Source fingerprint (SHA-256):** `a1853382f6e564f66262b69dd7b06cc58e26b93386a460a98e6fcc2ff6acf12b`

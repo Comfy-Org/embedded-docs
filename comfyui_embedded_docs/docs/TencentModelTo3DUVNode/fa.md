@@ -15,7 +15,7 @@
 | --- | --- | --- |
 | `OBJ` | فایل مدل سه‌بعدی پردازش‌شده در قالب OBJ. | FILE3D |
 | `FBX` | فایل مدل سه‌بعدی پردازش‌شده در قالب FBX. | FILE3D |
-| `uv_image` | تصویر بافت UV تولیدشده. | IMAGE |
+| `تصویر UV` | تصویر بافت UV تولیدشده. | IMAGE |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentModelTo3DUVNode/fa.md)
 

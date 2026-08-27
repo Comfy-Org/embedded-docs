@@ -1,10 +1,10 @@
 # 模型合併 (SD3 2B)
 
-ModelMergeSD3_2B 節點允許您透過以可調整的權重混合其元件，來合併兩個 Stable Diffusion 3 2B 模型。它提供對嵌入層和 Transformer 區塊的個別控制，從而實現針對特定生成任務的微調模型組合。
+ModelMergeSD3_2B 節點可讓您透過以可調整的權重混合其元件，來合併兩個 Stable Diffusion 3 2B 模型。它提供對嵌入層和 Transformer 區塊的個別控制，針對專門的生成任務實現微調的模型組合。
 
 ## 輸入
 
-| 參數 | 描述 | 資料類型 | 必要 | 範圍 |
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `模型 1` | 要合併的第一個模型 | MODEL | 是 | - |
 | `模型 2` | 要合併的第二個模型 | MODEL | 是 | - |
@@ -43,9 +43,9 @@ ModelMergeSD3_2B 節點允許您透過以可調整的權重混合其元件，來
 
 | 輸出名稱 | 描述 | 資料類型 |
 | --- | --- | --- |
-| `model` | 合併後的模型，結合了兩個輸入模型的特徵 | MODEL |
+| `model` | 合併後的模型，結合來自兩個輸入模型的特徵 | MODEL |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD3_2B/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `5b0c28c66e1828742873191be424956a9006e59ea1167a5941069ba0b7bc390b`
+**Source fingerprint (SHA-256):** `db27b10ade457933f6225218bb806aafcf9fc4478cac85b1623a75d110103529`

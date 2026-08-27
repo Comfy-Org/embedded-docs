@@ -1,22 +1,22 @@
 # VOIDWarpedNoiseSource
 
-## نمای کلی
+## بررسی اجمالی
 
-این گره یک LATENT (مانند خروجی گره VOIDWarpedNoise) را به یک منبع NOISE تبدیل می‌کند. این امکان را فراهم می‌کند تا از نویز تغییرشکل‌یافته با گره SamplerCustomAdvanced برای تولید تصویر کنترل‌شده‌تر استفاده کنید.
+این گره یک LATENT (مانند خروجی گره VOIDWarpedNoise) را به یک منبع NOISE تبدیل می‌کند. این کار به شما امکان می‌دهد از نویز وارپ‌شده با گره SamplerCustomAdvanced برای تولید تصویر با کنترل بیشتر استفاده کنید.
 
 ## ورودی‌ها
 
 | پارامتر | توضیحات | نوع داده | الزامی | محدوده |
 | --- | --- | --- | --- | --- |
-| `warped_noise` | نویز تغییرشکل‌یافته از گره VOIDWarpedNoise | LATENT | بله | نامشخص |
+| `warped_noise` | لاتنت نویز وارپ‌شده از VOIDWarpedNoise | LATENT | بله | N/A |
 
 ## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `NOISE` | یک منبع نویز که می‌تواند با SamplerCustomAdvanced استفاده شود | NOISE |
+| NOISE | منبع نویزی که می‌تواند با SamplerCustomAdvanced استفاده شود | NOISE |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDWarpedNoiseSource/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `ff798d223da5cf705a40ad1f36cc403030105331d0cc4173e9553cd3718c5d93`
+**Source fingerprint (SHA-256):** `61d7c82cb8a2acba28f980c4c42c6d4be12788b27676a5d30885799cf9c36185`

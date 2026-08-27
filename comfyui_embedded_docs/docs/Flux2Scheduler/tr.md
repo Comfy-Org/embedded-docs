@@ -1,22 +1,24 @@
 # Flux2Scheduler
 
-Flux2Scheduler düğümü, özellikle Flux modeli için uyarlanmış, gürültü giderme işlemi için bir dizi gürültü seviyesi (sigma) üretir. Bu düğüm, gürültü giderme adımlarının sayısına ve hedef görüntünün boyutlarına bağlı olarak bir zamanlama hesaplar; bu da görüntü oluşturma sırasında gürültü giderme ilerlemesini etkiler.
+Flux2Scheduler, denoising işlemi için Flux modeline özel olarak uyarlanmış bir dizi gürültü seviyesi (sigma) üretir. Zamanlamayı, denoising adım sayısına ve hedef görüntünün boyutlarına göre hesaplar; bu da görüntü üretimi sırasında gürültü giderme ilerleyişini etkiler.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `adım` | Gerçekleştirilecek gürültü giderme adım sayısı. Daha yüksek bir değer genellikle daha ayrıntılı sonuçlar verir ancak işlemin daha uzun sürmesine neden olur (varsayılan: 20). | INT | Evet | 1 ila 4096 |
-| `genişlik` | Oluşturulacak görüntünün piksel cinsinden genişliği. Bu değer, gürültü zamanlaması hesaplamasını etkiler (varsayılan: 1024). | INT | Evet | 16 ila 16384 |
-| `yükseklik` | Oluşturulacak görüntünün piksel cinsinden yüksekliği. Bu değer, gürültü zamanlaması hesaplamasını etkiler (varsayılan: 1024). | INT | Evet | 16 ila 16384 |
+| `adım` | Gerçekleştirilecek denoising adım sayısı. Daha yüksek bir değer genellikle daha detaylı sonuçlara yol açar ancak işlemin daha uzun sürmesine neden olur (varsayılan: 20). | INT | Evet | 1 ile 4096 |
+| `genişlik` | Oluşturulacak görüntünün piksel cinsinden genişliği. Bu değer gürültü zamanlaması hesaplamasını etkiler (varsayılan: 1024). | INT | Evet | 16 ile 16384 |
+| `yükseklik` | Oluşturulacak görüntünün piksel cinsinden yüksekliği. Bu değer gürültü zamanlaması hesaplamasını etkiler (varsayılan: 1024). | INT | Evet | 16 ile 16384 |
+
+Not: Zamanlama, `width` ve `height` değerlerinden `(width * height) / 256` olarak türetilen görüntü dizisi uzunluğundan hesaplanır; bu da modelin 16x latent alt örneklemesini yansıtır. Daha büyük görüntüler daha uzun diziler üretir ve gürültü zamanlamasını buna göre kaydırır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `sigmas` | Örnekleyici için gürültü giderme zamanlamasını tanımlayan bir dizi gürültü seviyesi değeri (sigma). | SIGMAS |
+| `sigmas` | Örnekleyici için denoising zamanlamasını tanımlayan gürültü seviyesi değerleri (sigma) dizisi. | SIGMAS |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Flux2Scheduler/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `dbe44a6eb454dd61ab22df5770ad5ac559e03b20fd36d17d33730cdb835f7ede`
+**Source fingerprint (SHA-256):** `9606177f37f7bc03aef524623f03b7f24bcdc3d9327dcdf74863fe2befeb2b65`

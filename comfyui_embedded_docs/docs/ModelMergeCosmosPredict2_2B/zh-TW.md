@@ -1,12 +1,9 @@
 # 模型合併宇宙預測2_2B
 
-## 概述
-
-ModelMergeCosmosPredict2_2B 節點採用基於區塊的方法合併兩個擴散模型，並對不同模型組件提供精細控制。透過調整位置嵌入器、時間嵌入器、Transformer 區塊和最終層的插值權重，您可以混合兩個模型的特定部分。這使得您能夠精確控制每個模型的不同架構組件對最終合併結果的貢獻程度。
+ModelMergeCosmosPredict2_2B 節點採用區塊式（block-based）方法合併兩個擴散模型，並可對不同模型元件進行精細控制。您可以透過調整位置嵌入器、時間嵌入器、Transformer 區塊與最終層的插值權重，來混合兩個模型的特定部分。如此即可精確控制每個模型的不同架構元件對最終合併結果的貢獻。
 
 ## 輸入
-
-| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `模型1` | 要合併的第一個模型 | MODEL | 是 | - |
 | `模型2` | 要合併的第二個模型 | MODEL | 是 | - |
@@ -45,12 +42,11 @@ ModelMergeCosmosPredict2_2B 節點採用基於區塊的方法合併兩個擴散�
 | `final_layer.` | 最終層插值權重（預設值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 
 ## 輸出
-
-| 輸出名稱 | 說明 | 資料類型 |
+| 輸出名稱 | 描述 | 資料類型 |
 | --- | --- | --- |
 | `model` | 合併後的模型，結合了兩個輸入模型的特徵 | MODEL |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmosPredict2_2B/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `53a8de66d6b731f5b29af326832f66cc973284bc8fdf09d779575f2346cc75a7`
+**Source fingerprint (SHA-256):** `3586868201320ae9a326a08f6a9bd74511a5342bf8496e7efcb9f45cf4b7c55d`

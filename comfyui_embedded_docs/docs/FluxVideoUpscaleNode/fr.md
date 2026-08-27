@@ -1,20 +1,20 @@
 # FluxVideoUpscaleNode
 
-Flux Video Upscale agrandit un clip vidéo de 1,5 à 3 fois grâce à la super-résolution FLUX. En mode créatif, il restaure et invente des détails fins ; en mode précis, il accentue la netteté de la source sans la modifier.
+Flux Video Upscale agrandit un clip vidéo de 1,5 à 3 fois grâce à la super-résolution FLUX. En mode `creative`, il restaure et invente des détails fins ; en mode `precise`, il accentue la source sans la modifier.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
-|-----------|-------------|-----------------|--------|-------|
-| `video` | Clip source d'une durée de 1 à 20 secondes avec un rapport hauteur/largeur compris entre 1:4 et 4:1. La sortie est rendue à 24 fps et plafonnée à environ 14,4 mégapixels par image. | VIDEO | Oui | Durée de 1 à 20 secondes ; rapport hauteur/largeur entre 1:4 et 4:1 ; minimum 64x64 pixels |
-| `upscale_factor` | Taille de sortie par rapport à la source. Les sources très grandes sont agrandies d'un facteur inférieur à celui demandé en raison du plafond par image. (par défaut : 2.0) | FLOAT | Oui | 1.5 à 3.0 (pas 0.1) |
-| `mode` | Le mode 'creative' restaure et invente des détails fins, idéal pour les séquences générées, les textures et les paysages. Le mode 'precise' accentue la netteté de la source sans la modifier, pour les visages, les produits et les séquences réelles. (par défaut : "creative") | COMBO | Oui | "creative"<br>"precise" |
-| `prompt` | Description facultative du clip qui oriente les détails améliorés. Laissez vide pour un agrandissement neutre. (par défaut : vide) | STRING | Oui | Texte multiligne |
-| `auto_downscale` | Réduit automatiquement les sources dont la surface dépasse 3840x2160 pixels pour respecter la limite d'entrée. Le rapport hauteur/largeur est préservé ; les vidéos plus petites ne sont pas modifiées. (par défaut : true) | BOOLEAN | Oui | true<br>false |
-| `safety_tolerance` | Tolérance de modération, 0 est le plus strict. (par défaut : 2, paramètre avancé) | INT | Oui | 0 à 4 |
-| `seed` | Seed pour déterminer si le nœud doit se réexécuter ; FLUX choisit sa propre seed, donc les résultats réels sont non déterministes quelle que soit cette valeur. (par défaut : 42) | INT | Oui | 0 à 4294967295 |
+|-----------|-------------|----------------|--------|-------|
+| `video` | Clip source de 1 à 20 secondes avec un rapport hauteur/largeur compris entre 1:4 et 4:1. La sortie est rendue à 24 fps et plafonnée à environ 14,4 mégapixels par image. | VIDEO | Oui | Durée de 1 à 20 secondes ; rapport hauteur/largeur entre 1:4 et 4:1 ; minimum 64x64 pixels |
+| `upscale_factor` | Taille de sortie par rapport à la source. Les sources très grandes sont agrandies avec un facteur inférieur à celui demandé en raison du plafond par image. (défaut : 2.0) | FLOAT | Oui | 1.5 à 3.0 (pas de 0.1) |
+| `mode` | Le mode `creative` restaure et invente des détails fins, idéal pour les images générées, les textures et les paysages. Le mode `precise` accentue la source sans la modifier, pour les visages, les produits et les images réelles. (défaut : "creative") | COMBO | Oui | "creative"<br>"precise" |
+| `prompt` | Description facultative du clip qui oriente l’amélioration des détails. Laissez vide pour un agrandissement neutre. (défaut : vide) | STRING | Oui | Texte multiligne |
+| `auto_downscale` | Réduit automatiquement les sources dont la surface dépasse 3840x2160 pixels pour respecter la limite d’entrée. Le rapport hauteur/largeur est préservé ; les vidéos plus petites ne sont pas modifiées. (défaut : true) | BOOLEAN | Oui | true<br>false |
+| `safety_tolerance` | Tolérance de modération, 0 étant la plus stricte. (défaut : 2, paramètre avancé) | INT | Oui | 0 à 4 |
+| `seed` | Seed permettant de déterminer si le nœud doit s’exécuter à nouveau ; FLUX choisit sa propre seed, donc les résultats réels sont non déterministes quelle que soit cette valeur. (défaut : 42) | INT | Oui | 0 à 4294967295 |
 
-Remarque : La vidéo source doit avoir une durée comprise entre 1 et 20 secondes et une taille d'au moins 64x64 pixels. Si `auto_downscale` est désactivé et que la zone vidéo dépasse 3840x2160 pixels, le nœud lève une erreur. La vidéo de sortie est rendue à 24 fps et plafonnée à environ 14,4 mégapixels par image, donc les sources très grandes peuvent être agrandies d'un facteur inférieur à celui demandé.
+Remarque : La vidéo source doit durer entre 1 et 20 secondes et mesurer au moins 64x64 pixels. Si `auto_downscale` est désactivé et que la surface de la vidéo dépasse 3840x2160 pixels, le nœud génère une erreur. La vidéo de sortie est rendue à 24 fps et plafonnée à environ 14,4 mégapixels par image ; par conséquent, les sources très grandes peuvent être agrandies avec un facteur inférieur à celui demandé.
 
 ## Sorties
 

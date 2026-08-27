@@ -1,6 +1,6 @@
 # DecimateMesh
 
-DecimateMesh는 활성 계산 장치에서 계산을 실행하면서 QEM(Quadric Error Metric) 단순화를 사용하여 3D 메시를 목표 면 수로 단순화합니다. `"midpoint"` 배치 모드는 머리카락과 같은 얇은 특징을 보존하면서 최상의 품질을 제공하는 cumesh에 충실한 사전 설정이며, `"qem"`은 선택적 라인 및 특징 가장자리 제어와 함께 QEM 최적 위치에 정점을 배치합니다. 출력 메시는 용접된 상태를 유지합니다.
+DecimateMesh는 활성 연산 장치에서 QEM(Quadric Error Metric) 단순화를 사용하여 3D 메시를 목표 면 수로 줄입니다. `"midpoint"` 배치 모드는 cumesh-faithful 프리셋으로, 머리카락과 같은 얇은 특징을 보존하면서 최상의 품질을 제공합니다. 반면 `"qem"` 모드는 선택적 선 및 특징 모서리 제어와 함께 QEM 최적 위치에 정점을 배치합니다. 출력 메시는 용접된 상태로 유지됩니다.
 
 ## 입력
 
@@ -9,12 +9,12 @@ DecimateMesh는 활성 계산 장치에서 계산을 실행하면서 QEM(Quadric
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
 | `mesh` | 단순화할 3D 메시입니다. | MESH | 예 | - |
-| `target_face_count` | 최대 목표 면 수입니다. 0이면 비활성화됩니다. (기본값: 200000) | INT | 예 | 0 to 50000000 |
-| `placement_mode` | midpoint: cumesh에 충실한 (권장). qem: QEM 최적 배치. (기본값: `"midpoint"`) | DYNAMIC_COMBO | 예 | `"midpoint"`<br>`"qem"` |
+| `target_face_count` | 목표 최대 면 수입니다. 0이면 비활성화됩니다. (기본값: 200000) | INT | 예 | 0 ~ 50000000 |
+| `placement_mode` | midpoint: cumesh-faithful(권장). qem: QEM 최적 배치. (기본값: `"midpoint"`) | DYNAMIC_COMBO | 예 | `"midpoint"`<br>`"qem"` |
 
 ### Midpoint 입력
 
-`"midpoint"` 배치 모드는 추가 하위 매개변수를 노출하지 않으며 기본 미드포인트 배치 사전 설정을 사용합니다.
+`"midpoint"` 배치 모드는 추가 하위 매개변수를 노출하지 않으며 기본 midpoint 배치 프리셋을 사용합니다.
 
 ### QEM 입력
 
@@ -22,12 +22,12 @@ DecimateMesh는 활성 계산 장치에서 계산을 실행하면서 QEM(Quadric
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `line_quadric_weight` | 가장자리별 라인 쿼드릭 가중치입니다. 날카로운 능선/골짜기를 보존합니다. 0 = 비활성화. (기본값: 0.0) | FLOAT | 아니오 | 0.0 to 100.0 |
-| `feature_edge_quadric_weight` | 이면각 특징 가장자리(주름)에 대한 추가 쿼드릭 가중치입니다. 0 = 비활성화. (기본값: 0.0) | FLOAT | 아니오 | 0.0 to 1000.0 |
-| `feature_edge_min_dihedral_deg` | 가장자리를 특징 가장자리로 간주하기 위한 최소 이면각(도)입니다. (기본값: 30.0) | FLOAT | 아니오 | 0.0 to 180.0 |
-| `clamp_v_to_edge` | QEM 최적 위치를 축약된 가장자리 세그먼트에 투영합니다. (기본값: true) | BOOLEAN | 아니오 | `true`<br>`false` |
+| `line_quadric_weight` | 모서리별 선 2차(quadric) 가중치입니다. 날카로운 능선/골짜기를 보존합니다. 0 = 꺼짐. (기본값: 0.0) | FLOAT | 아니요 | 0.0 ~ 100.0 |
+| `feature_edge_quadric_weight` | 이면각 특징 모서리(주름)에 대한 추가 2차 가중치입니다. 0 = 꺼짐. (기본값: 0.0) | FLOAT | 아니요 | 0.0 ~ 1000.0 |
+| `feature_edge_min_dihedral_deg` | 모서리를 특징 모서리로 간주하기 위한 최소 이면각(도)입니다. (기본값: 30.0) | FLOAT | 아니요 | 0.0 ~ 180.0 |
+| `clamp_v_to_edge` | QEM 최적 위치를 붕괴된 모서리 선분으로 투영합니다. (기본값: true) | BOOLEAN | 아니요 | `true`<br>`false` |
 
-참고: `target_face_count`가 0이거나 메시에 이미 대상보다 적은 면이 있는 경우 데시메이션은 건너뜁니다. 노드는 자체적으로 면 감소 요약을 표시합니다(예: `faces: 1.23M → 200K (-84%)`).
+참고: `target_face_count`가 0이거나 메시의 현재 면 수가 목표보다 적으면 단순화가 건너뜁니다. 노드는 예를 들어 `faces: 1.23M → 200K (-84%)`와 같이 면 감소 요약을 자체적으로 표시합니다.
 
 ## 출력
 

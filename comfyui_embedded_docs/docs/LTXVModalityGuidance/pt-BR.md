@@ -1,17 +1,17 @@
-# LTXVModalityGuidance
+# LTXV Modality Guidance (acoplamento A/V)
 
-Este nó aplica orientação cross-modal (áudio-vídeo) a um modelo LTXV-AV. Durante a amostragem, ele executa uma passagem direta extra por etapa com as conexões de atenção cruzada áudio-para-vídeo e vídeo-para-áudio desativadas e, em seguida, aproxima o resultado da predição acoplada. Isso fortalece a sincronização audiovisual, como a sincronização labial. O valor de referência padrão para `modality_scale` é 3.0; defini-lo como 1.0 desativa a passagem extra.
+Este nó aplica orientação entre modalidades (áudio-vídeo) a um modelo LTXV-AV. Durante a amostragem, ele executa uma passagem direta extra por etapa com as conexões de atenção cruzada de áudio para vídeo e de vídeo para áudio desativadas. Em seguida, desloca o resultado em direção à previsão acoplada para reforçar a sincronização audiovisual, como a sincronização labial. O padrão de referência para `modality_scale` é 3.0; defini-lo como 1.0 desativa a passagem extra, e essa orientação pode ser combinada com o orientador dual-CFG e o STG.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `model` | O modelo base ao qual a orientação de modalidade será aplicada. Ele é clonado internamente, deixando o modelo original inalterado. | MODEL | Sim | - |
 | `modality_scale` | Intensidade da orientação de acoplamento áudio-vídeo. O padrão é 3.0. Defina como 1.0 para desativar a passagem direta extra. | FLOAT | Sim | 1.0 a 100.0 (padrão: 3.0) |
-| `start_percent` | O ponto do processo de amostragem, como porcentagem de 0.0 a 1.0, em que a orientação de modalidade começa. O padrão é 0.0. | FLOAT | Sim | 0.0 a 1.0 (padrão: 0.0) |
-| `end_percent` | O ponto do processo de amostragem, como porcentagem de 0.0 a 1.0, em que a orientação de modalidade termina. O padrão é 1.0. | FLOAT | Sim | 0.0 a 1.0 (padrão: 1.0) |
+| `start_percent` | O ponto no processo de amostragem, como uma proporção de 0.0 a 1.0, em que a orientação de modalidade começa. Este é um parâmetro avançado. O padrão é 0.0. | FLOAT | Sim | 0.0 a 1.0 (padrão: 0.0) |
+| `end_percent` | O ponto no processo de amostragem, como uma proporção de 0.0 a 1.0, em que a orientação de modalidade termina. Este é um parâmetro avançado. O padrão é 1.0. | FLOAT | Sim | 0.0 a 1.0 (padrão: 1.0) |
 
-A orientação é aplicada apenas às etapas de amostragem cujos valores de sigma estejam dentro da faixa definida por `start_percent` e `end_percent`. Fora dessa faixa, o nó retorna o resultado sem ruído inalterado. Um `modality_scale` de 1.0 também desativa completamente a passagem direta extra.
+A orientação é aplicada somente nas etapas de amostragem cujos valores de sigma estejam dentro do intervalo definido por `start_percent` e `end_percent`. Fora desse intervalo, o nó retorna o resultado limpo inalterado. Um `modality_scale` de 1.0 também desativa completamente a passagem direta extra.
 
 ## Saídas
 

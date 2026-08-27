@@ -12,7 +12,7 @@ O nó StringLength calcula o número de caracteres em uma string de texto. Ele r
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `length` | O número total de caracteres na string de entrada, incluindo espaços e caracteres especiais. | INT |
+| `comprimento` | O número total de caracteres na string de entrada, incluindo espaços e caracteres especiais. | INT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringLength/pt-BR.md)
 

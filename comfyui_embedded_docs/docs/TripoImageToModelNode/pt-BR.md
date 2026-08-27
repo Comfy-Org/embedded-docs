@@ -26,8 +26,8 @@ Gera modelos 3D de forma síncrona com base em uma única imagem usando a API da
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `model_file` | O arquivo do modelo 3D gerado (apenas para compatibilidade reversa) | STRING |
-| `model task_id` | O ID da tarefa para rastrear o processo de geração do modelo | MODEL_TASK_ID |
+| `arquivo_do_modelo` | O arquivo do modelo 3D gerado (apenas para compatibilidade reversa) | STRING |
+| `task_id_do_modelo` | O ID da tarefa para rastrear o processo de geração do modelo | MODEL_TASK_ID |
 | `GLB` | O modelo 3D gerado no formato GLB | FILE3DGLB |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoImageToModelNode/pt-BR.md)

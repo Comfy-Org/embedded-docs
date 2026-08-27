@@ -30,8 +30,8 @@ Este nó gera modelos 3D de forma síncrona usando a API da Tripo, processando a
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `model_file` | Caminho do arquivo ou identificador do modelo 3D gerado (apenas para compatibilidade reversa) | STRING |
-| `model task_id` | Identificador da tarefa para rastrear o processo de geração do modelo | MODEL_TASK_ID |
+| `arquivo_do_modelo` | Caminho do arquivo ou identificador do modelo 3D gerado (apenas para compatibilidade reversa) | STRING |
+| `task_id_do_modelo` | Identificador da tarefa para rastrear o processo de geração do modelo | MODEL_TASK_ID |
 | `GLB` | Arquivo do modelo 3D gerado no formato GLB | FILE3DGLB |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoMultiviewToModelNode/pt-BR.md)

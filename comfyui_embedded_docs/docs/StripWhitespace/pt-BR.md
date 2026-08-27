@@ -14,7 +14,7 @@ Este nó remove quaisquer espaços extras, tabulações ou quebras de linha do i
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `text` | O texto processado com todos os caracteres de espaço em branco iniciais e finais removidos. | STRING |
+| `textos` | O texto processado com todos os caracteres de espaço em branco iniciais e finais removidos. | STRING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StripWhitespace/pt-BR.md)
 

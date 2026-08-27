@@ -1,17 +1,19 @@
 # HappyHorse Édition Vidéo
 
+Edit a video using text instructions or reference images with the HappyHorse model. Output duration is 3-15 seconds and matches the input video; inputs longer than 15 seconds are truncated.
+
 ## Entrées
 
 ### Entrées communes
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `modèle` | Le modèle d'édition vidéo HappyHorse à utiliser. Cette sélection détermine quelles options de prompt, résolution, format d'image et images de référence sont disponibles. | DYNAMIC_COMBO | Oui | "happyhorse-1.0-video-edit" |
+| `modèle` | Le modèle d'édition vidéo HappyHorse à utiliser. Cette sélection détermine quelles options de prompt, de résolution, de format d'image et d'images de référence sont disponibles. | DYNAMIC_COMBO | Oui | "happyhorse-1.0-video-edit" |
 | `vidéo` | La vidéo à éditer. | VIDEO | Oui | 3 à 60 secondes |
-| `graine` | Graine à utiliser pour la génération (par défaut : 0). | INT | Oui | 0 à 2147483647 |
-| `filigrane` | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : False). | BOOLEAN | Oui | True<br>False |
+| `graine` | Seed à utiliser pour la génération (par défaut : 0). | INT | Oui | 0 à 2147483647 |
+| `filigrane` | Indique s'il faut ajouter un filigrane généré par l'IA au résultat (par défaut : False). Paramètre avancé. | BOOLEAN | Oui | True<br>False |
 
-### happyhorse-1.0-video-edit Entrées
+### Entrées happyhorse-1.0-video-edit
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
@@ -23,9 +25,9 @@
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `reference_images` | Emplacement extensible : connectez 0 à 5 images de référence (`image1`...`image5`) pour guider l'édition. | IMAGE | Non | 0 à 5 images |
+| `reference_images` | Emplacement extensible : connectez de 0 à 5 images de référence (`image1`...`image5`) pour guider l'édition. | IMAGE | Non | 0 à 5 images |
 
-**Remarque :** La vidéo d'entrée doit durer de 3 à 60 secondes. La durée de sortie est de 3 à 15 secondes et correspond à la vidéo d'entrée ; les vidéos d'entrée de plus de 15 secondes sont tronquées. Le `prompt` doit contenir au moins 1 caractère.
+**Note :** La vidéo d'entrée doit durer de 3 à 60 secondes. La durée de sortie est de 3 à 15 secondes et correspond à la vidéo d'entrée ; les vidéos d'entrée de plus de 15 secondes sont tronquées. Le champ `prompt` doit contenir au moins 1 caractère.
 
 ## Sorties
 

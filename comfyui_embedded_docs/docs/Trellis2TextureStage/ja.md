@@ -1,28 +1,28 @@
 # Trellis2TextureStage
 
-このノードは、Trellis2生成のためのテクスチャステージのサンプリングパスを設定します。入力されたシェイプ潜在変数から座標レイアウトとボクセルごとのシェイプ潜在変数を読み取り、同じ座標レイアウト上に32チャンネルの空のスパース潜在変数を構築し、必要なテクスチャステージのメタデータをコンディショニングに付加します。
+このノードは、Trellis2生成におけるテクスチャステージのサンプリングパスを設定します。入力されたシェイプ潜在変数から座標レイアウトとボクセルごとのシェイプ潜在変数を読み取り、同じ座標レイアウトを持つ32チャンネルの空のスパース潜在変数を構築し、必要なテクスチャステージのメタデータをconditioningに付加します。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | テクスチャ生成パスで使用されるポジティブコンディショニングです。テクスチャステージのメタデータがここに付加されます。 | CONDITIONING | はい | - |
-| `negative` | テクスチャ生成パスで使用されるネガティブコンディショニングです。テクスチャステージのメタデータがここに付加されます。 | CONDITIONING | はい | - |
-| `shape_latent` | Trellis2ShapeStage または Trellis2UpsampleStage によって生成された潜在変数辞書です。`coords`（座標レイアウト、形状 [N, 4]）と `samples`（ボクセルごとのシェイプ潜在変数）を含む必要があります。`coord_resolution` と `model_frame` はオプションです。 | LATENT | はい | - |
+| `positive` | テクスチャ生成パスに使用されるポジティブconditioningです。テクスチャステージのメタデータがここに付加されます。 | CONDITIONING | はい | - |
+| `negative` | テクスチャ生成パスに使用されるネガティブconditioningです。テクスチャステージのメタデータがここに付加されます。 | CONDITIONING | はい | - |
+| `shape_latent` | Trellis2ShapeStage または Trellis2UpsampleStage によって生成された潜在変数ディクショナリです。`coords`（座標レイアウト、形状 [N, 4]）と`samples`（ボクセルごとのシェイプ潜在変数）を含む必要があります。`coord_resolution` と `model_frame` は任意です。 | LATENT | はい | - |
 
 注記：
 - `shape_latent` は Trellis2ShapeStage または Trellis2UpsampleStage の出力である必要があります。テクスチャパスで使用される座標レイアウトとボクセルごとのシェイプ潜在変数を提供します。
-- 座標レイアウトは検証されます。`coords` の最初の列にあるバッチIDは非負かつ連続している必要があり、総行数は座標数と一致する必要があります。
-- `positive` が投影特徴パック（Pixal3Dコンディショニング）を保持し、`shape_latent` が `coord_resolution` を含む場合、1024テクスチャ解像度での投影特徴が計算され、コンディショニングに付加されます。
-- モデルフレームは `shape_latent` から読み取られます。存在しない場合、投影特徴が存在すれば `"y_up"`、それ以外では `"z_up"` がデフォルトになります。
+- 座標レイアウトは検証されます。`coords` の最初の列にあるバッチIDは非負かつ連続している必要があり、総行数は座標カウントと一致している必要があります。
+- `positive` が投影特徴パック（Pixal3D conditioning）を保持し、`shape_latent` が `coord_resolution` を含む場合、1024テクスチャ解像度の投影特徴が計算され、conditioningに付加されます。
+- モデルフレームは `shape_latent` から読み取られます。存在しない場合、投影特徴が存在すれば `"y_up"`、それ以外では `"z_up"` がデフォルトとなります。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `positive` | テクスチャステージのメタデータ（生成モード、座標、座標数、シェイプ潜在変数、モデルフレーム、該当する場合は投影特徴）が付加されたポジティブコンディショニングです。 | CONDITIONING |
-| `negative` | 同じテクスチャステージのメタデータが付加されたネガティブコンディショニングです。 | CONDITIONING |
-| `latent` | 入力されたシェイプ潜在変数と同じ座標レイアウト上にあり、32チャンネルを持つ新しい空のスパース潜在変数です。その辞書には `samples`、`type`（"trellis2"）、`coords`、`coord_counts`、`model_frame` が含まれます。`coord_resolution` は利用可能な場合に含まれます。 | LATENT |
+| `positive` | テクスチャステージのメタデータ（生成モード、座標、座標カウント、シェイプ潜在変数、モデルフレーム、該当する場合は投影特徴）が付加されたポジティブconditioning。 | CONDITIONING |
+| `negative` | 同じテクスチャステージのメタデータが付加されたネガティブconditioning。 | CONDITIONING |
+| `latent` | 入力されたシェイプ潜在変数と同じ座標レイアウトを持つ、32チャンネルの新しい空のスパース潜在変数。そのディクショナリには `samples`、`type`（"trellis2"）、`coords`、`coord_counts`、`model_frame` が含まれます。`coord_resolution` は利用可能な場合に含まれます。 | LATENT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Trellis2TextureStage/ja.md)
 

@@ -15,7 +15,7 @@ O nó **Rodin 3D Detail** gera ativos 3D detalhados usando a API Rodin. Ele rece
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `3D Model Path` | Caminho do arquivo para o modelo 3D gerado (apenas para compatibilidade reversa) | STRING |
+| `Caminho do Modelo 3D` | Caminho do arquivo para o modelo 3D gerado (apenas para compatibilidade reversa) | STRING |
 | `GLB` | O modelo 3D gerado no formato GLB | FILE3DGLB |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Detail/pt-BR.md)

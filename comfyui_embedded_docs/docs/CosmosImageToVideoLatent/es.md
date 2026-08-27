@@ -1,28 +1,32 @@
 # CosmosImageToVideoLatent
 
-El nodo CosmosImageToVideoLatent crea representaciones latentes de video a partir de imágenes de entrada. Genera un latente de video en blanco y, opcionalmente, codifica imágenes de inicio y/o final en los primeros y/o últimos fotogramas de la secuencia de video. Cuando se proporcionan imágenes, también crea máscaras de ruido correspondientes para indicar qué partes del latente deben preservarse durante la generación.
+El nodo CosmosImageToVideoLatent crea una representación latente de video a partir de las imágenes de entrada. Construye un latente de video vacío con el ancho, la altura y el número de fotogramas solicitados y, opcionalmente, codifica una imagen inicial en los primeros fotogramas y/o una imagen final en los últimos fotogramas. Cuando se proporcionan imágenes, también genera una máscara de ruido para que los fotogramas codificados permanezcan fijos durante la generación.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `vae` | El modelo VAE utilizado para codificar imágenes en el espacio latente | VAE | Sí | - |
-| `ancho` | El ancho del video de salida en píxeles (predeterminado: 1280) | INT | Sí | 16 a MAX_RESOLUTION |
-| `altura` | La altura del video de salida en píxeles (predeterminado: 704) | INT | Sí | 16 a MAX_RESOLUTION |
-| `longitud` | El número de fotogramas en la secuencia de video (predeterminado: 121) | INT | Sí | 1 a MAX_RESOLUTION |
-| `tamaño_lote` | El número de lotes latentes a generar (predeterminado: 1) | INT | Sí | 1 a 4096 |
-| `imagen_inicio` | Imagen opcional para codificar al inicio de la secuencia de video | IMAGE | No | - |
-| `imagen_final` | Imagen opcional para codificar al final de la secuencia de video | IMAGE | No | - |
+| `vae` | El modelo VAE utilizado para codificar las imágenes en el espacio latente de video. | VAE | Sí | - |
+| `ancho` | El ancho del video de salida en píxeles (por defecto: 1280). | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) |
+| `altura` | La altura del video de salida en píxeles (por defecto: 704). | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) |
+| `longitud` | El número total de fotogramas del video (por defecto: 121). | INT | Sí | 1 a MAX_RESOLUTION (paso: 8) |
+| `tamaño_lote` | El número de latentes de video a generar (por defecto: 1). | INT | Sí | 1 a 4096 |
+| `imagen_inicio` | Imagen opcional o secuencia de imágenes para codificar al inicio del video. | IMAGE | No | - |
+| `imagen_final` | Imagen opcional o secuencia de imágenes para codificar al final del video. | IMAGE | No | - |
 
-**Nota:** Cuando no se proporcionan ni `start_image` ni `end_image`, el nodo devuelve un latente en blanco sin ninguna máscara de ruido. Cuando se proporciona alguna imagen, las secciones correspondientes del latente se codifican y enmascaran según corresponda.
+**Nota:**
+- Cuando no se proporciona ni `start_image` ni `end_image`, el nodo devuelve un latente vacío sin máscara de ruido.
+- Cuando se proporciona `start_image`, esta se codifica en los primeros fotogramas del latente y esos fotogramas se marcan con valor de máscara de ruido 0 (preservados). Cuando se proporciona `end_image`, se codifica en los últimos fotogramas y esos fotogramas se marcan con valor de máscara de ruido 0. Los fotogramas restantes conservan un valor de máscara de 1.
+- El latente tiene 16 canales y sus dimensiones espaciales son `height / 8` por `width / 8`. El número de fotogramas latentes es `((length - 1) // 8) + 1`.
+- `batch_size` repite el latente y, cuando está presente, la máscara de ruido.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `latent` | La representación latente de video generada con imágenes codificadas opcionales y máscaras de ruido correspondientes | LATENT |
+| `latent` | El latente de video generado que contiene las imágenes iniciales y/o finales codificadas de forma opcional y, cuando se proporcionan imágenes, una máscara de ruido correspondiente con valor 0 en los fotogramas preservados. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CosmosImageToVideoLatent/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `31ce4dc577c672e0b3dc0bfb6644b2ef7ab737f6c4ee5e0677973b6a4efdd66d`
+**Source fingerprint (SHA-256):** `0b06ccfcb14c27c81eeebbbff519da1e187970d4cfc19c8796fc3da20688245c`

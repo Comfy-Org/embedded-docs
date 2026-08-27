@@ -22,7 +22,7 @@ O nó Meshy: Textura aplica texturas geradas por IA a um modelo 3D. Ele recebe u
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `model_file` | O nome do arquivo do modelo GLB gerado. Esta saída é fornecida para compatibilidade com versões anteriores. | STRING |
+| `arquivo_do_modelo` | O nome do arquivo do modelo GLB gerado. Esta saída é fornecida para compatibilidade com versões anteriores. | STRING |
 | `meshy_task_id` | O identificador único da tarefa para este trabalho de texturização, que pode ser usado para referenciar o resultado. | MODEL_TASK_ID |
 | `GLB` | O modelo 3D texturizado salvo no formato de arquivo GLB. | FILE3DGLB |
 | `FBX` | O modelo 3D texturizado salvo no formato de arquivo FBX. | FILE3DFBX |

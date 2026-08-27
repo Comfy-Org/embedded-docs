@@ -1,6 +1,6 @@
 # GizliİşlemUygula
 
-**LatentApplyOperation** düğümü, latent örneklere belirtilen bir işlemi uygular. Girdi olarak latent verileri ve bir işlem alır, sağlanan işlemi kullanarak latent örnekleri işler ve değiştirilmiş latent verilerini döndürür. Bu düğüm, iş akışınızda latent temsilleri dönüştürmenize veya manipüle etmenize olanak tanır.
+LatentApplyOperation düğümü, belirtilen bir latent işlemini latent örneklere uygular. Girdi olarak latent verisi ve bir işlem alır, sağlanan işlemi kullanarak latent örnekleri işler ve değiştirilmiş latent verisini döndürür. Bu düğüm, iş akışınızda latent temsilleri dönüştürmenize veya değiştirmenize olanak tanır. Bu düğüm şu anda deneysel olarak işaretlenmiştir.
 
 ## Girdiler
 
@@ -18,4 +18,4 @@
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentApplyOperation/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `77147b480fe8cb48eb26a31f6f0c7bc038e07d26e628ebe361861394946d8678`
+**Source fingerprint (SHA-256):** `cba55d019793fde8dcc0d4aeb4eb6020b6149f523c6bffc65d73c533aa2e2c6c`

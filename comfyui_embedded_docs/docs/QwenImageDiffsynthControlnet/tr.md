@@ -1,47 +1,19 @@
 # QwenImageDiffsynthControlnet
 
-ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
+QwenImageDiffsynthControlnet, temel bir modele difüzyon sentezi kontrol ağı yaması uygular. Giriş görüntüsü ve isteğe bağlı bir maske kullanarak modelin üretim sürecini ayarlanabilir güçle yönlendirir; kontrol ağının etkisini içeren yamalı bir model üretir ve böylece daha kontrollü görüntü sentezi sağlar.
 
-## Çeviri Kuralları
+## Girdiler
 
-1. **Çevrilmemesi gereken içerik:**
-   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
-   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
-   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
-   - Kod, dosya yolları
-
-2. **Çevrilmesi gereken içerik:**
-   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
-   - Tüm açıklayıcı metinler
-   - Parametre açıklamaları
-
-3. **Çeviri kalitesi:**
-   - Standart Türkçe kullanın
-   - Profesyonel ama anlaşılır bir üslup koruyun
-   - Teknik doğruluğu sağlayın
-   - Standart Türkçe teknik terminolojiyi kullanın
-
-4. **Format:**
-   - Tüm Markdown biçimlendirmesini koruyun
-   - Tablo yapısını koruyun
-   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
-
-Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
-
-QwenImageDiffsynthControlnet düğümü, bir temel modelin davranışını değiştirmek için bir difüzyon sentezi kontrol ağı yaması uygular. Modelin üretim sürecini ayarlanabilir güçle yönlendirmek için bir görüntü girişi ve isteğe bağlı maske kullanarak, kontrol ağının etkisini bünyesine katan ve daha kontrollü görüntü sentezi sağlayan yamalı bir model oluşturur.
-
-## Girişler
-
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Kontrol ağı ile yamalanacak temel model | MODEL | Evet | - |
 | `model_yaması` | Temel modele uygulanacak kontrol ağı yama modeli | MODEL_PATCH | Evet | - |
 | `vae` | Difüzyon sürecinde kullanılan VAE (Varyasyonel Otomatik Kodlayıcı) | VAE | Evet | - |
-| `görsel` | Kontrol ağını yönlendirmek için kullanılan giriş görüntüsü (yalnızca RGB kanalları kullanılır) | IMAGE | Evet | - |
-| `güç` | Kontrol ağı etkisinin gücü (varsayılan: 1.0) | FLOAT | Evet | -10.0 ila 10.0 |
-| `maske` | Kontrol ağının uygulanması gereken alanları tanımlayan isteğe bağlı maske (dahili olarak ters çevrilir) | MASK | Hayır | - |
+| `görsel` | Kontrol ağını yönlendirmek için kullanılan giriş görüntüsü. Yalnızca ilk üç renk kanalı (RGB) kullanılır; ek kanallar atılır | IMAGE | Evet | - |
+| `güç` | Kontrol ağı etkisinin gücü (varsayılan: 1.0) | FLOAT | Evet | -10.0 ile 10.0 |
+| `maske` | Kontrol ağının uygulanacağı alanları tanımlayan isteğe bağlı maske. Maske kullanımdan önce dahili olarak ters çevrilir | MASK | Hayır | - |
 
-**Not:** Bir maske sağlandığında, otomatik olarak ters çevrilir (1.0 - mask) ve kontrol ağı işlemesi için beklenen boyutlara uyacak şekilde yeniden şekillendirilir. Düğüm, model yamasının bir ZImage Kontrol türü mü yoksa standart bir DiffSynth kontrol ağı mı olduğuna bağlı olarak farklı dahili işleme yöntemleri kullanır.
+**Not:** Maske sağlandığında, maske otomatik olarak ters çevrilir (1.0 - maske) ve kontrol ağı işleme için beklenen boyutlara yeniden şekillendirilir. Düğüm, model yamasının bir ZImage Kontrol tipi mi yoksa standart bir DiffSynth kontrol ağı mı olduğuna bağlı olarak farklı dahili işleme yöntemleri kullanır. Bu düğüm deneysel olarak işaretlenmiştir.
 
 ## Çıktılar
 
@@ -52,4 +24,4 @@ QwenImageDiffsynthControlnet düğümü, bir temel modelin davranışını deği
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageDiffsynthControlnet/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `61833984d0b92be65fae72a894806572c0588dea74a295e8289d1194dee611bb`
+**Source fingerprint (SHA-256):** `56739c098933cb70d3bcb8d6b251da33e7879b464b2e8a7296da085aefc15698`

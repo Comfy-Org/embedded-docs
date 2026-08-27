@@ -19,9 +19,9 @@ Este nó recebe uma sequência de imagens e uma faixa de áudio opcional, e as d
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `keyframes_sequence` | Uma lista de sequências de quadros-chave preenchidas, uma para cada segmento. | IMAGE |
-| `keyframes_mask` | Uma lista de máscaras indicando quadros válidos para cada segmento. | MASK |
-| `audio_segment` | Uma lista de segmentos de áudio, um para cada segmento de vídeo. | AUDIO |
+| `sequências_de_keyframes` | Uma lista de sequências de quadros-chave preenchidas, uma para cada segmento. | IMAGE |
+| `máscaras_de_keyframes` | Uma lista de máscaras indicando quadros válidos para cada segmento. | MASK |
+| `segmento_de_áudio` | Uma lista de segmentos de áudio, um para cada segmento de vídeo. | AUDIO |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/pt-BR.md)
 

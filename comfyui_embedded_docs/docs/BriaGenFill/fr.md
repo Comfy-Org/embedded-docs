@@ -9,11 +9,11 @@ Ce nœud génère des objets ou des décors dans une région masquée d'une imag
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image d'entrée à modifier. | IMAGE | Oui | - |
-| `mask` | Les zones blanches sont remplies avec le contenu généré, les zones noires sont préservées. Le masque est binarisé avant l'envoi, donc les zones partiellement peintes sont considérées comme blanches. Il doit avoir le même rapport hauteur-largeur que l'image. | MASK | Oui | - |
-| `prompt` | Description de ce qui doit être généré dans la région masquée. Doit contenir au moins 1 caractère. (défaut : "") | STRING | Oui | - |
+| `masque` | Les zones blanches sont remplies avec le contenu généré, les zones noires sont préservées. Le masque est binarisé avant l'envoi, donc les zones partiellement peintes sont considérées comme blanches. Il doit avoir le même rapport hauteur-largeur que l'image. | MASK | Oui | - |
+| `texte d’invite` | Description de ce qui doit être généré dans la région masquée. Doit contenir au moins 1 caractère. (défaut : "") | STRING | Oui | - |
 | `negative_prompt` | Un prompt décrivant le contenu à éviter dans le résultat généré. S'il est laissé vide, il n'est pas envoyé à l'API. (défaut : "") | STRING | Oui | - |
 | `refine_prompt` | Ajuste automatiquement le prompt pour de meilleurs résultats ; désactivez pour utiliser le prompt exactement tel qu'il a été écrit. (défaut : true) | BOOLEAN | Oui | true<br>false |
-| `seed` | Graine (seed) pour le processus de génération. (défaut : 42) | INT | Oui | 1 à 2147483647 |
+| `graine` | Graine (seed) pour le processus de génération. (défaut : 42) | INT | Oui | 1 à 2147483647 |
 | `moderation` | Paramètres de modération. Lorsqu'ils sont définis sur "true", les options de modération ci-dessous sont appliquées. (défaut : "false") | DYNAMIC_COMBO | Oui | "false"<br>"true" |
 
 ### Entrées de modération (lorsque `moderation` = "true")

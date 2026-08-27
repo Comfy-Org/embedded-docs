@@ -1,66 +1,45 @@
 # Flux.2 Image
 
-Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
+Flux.2 Image
 
-## Reglas de Traducción
-
-1. **Contenido que NO debe traducirse:**
-   - Nombres de parámetros entre comillas invertidas: `image`, `seed`, `model`
-   - Tipos de datos en MAYÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.
-   - Valores en columna Range: números, "auto", nombres de opciones
-   - Código, rutas de archivos
-
-2. **Contenido que SÍ debe traducirse:**
-   - Títulos de secciones: ## Descripción general, ## Entradas, ## Salidas
-   - Todo el texto descriptivo y explicativo
-   - Descripciones de parámetros
-
-3. **Calidad de traducción:**
-   - Usar español estándar y neutral
-   - Mantener tono profesional pero accesible
-   - Asegurar precisión técnica
-   - Usar terminología técnica estándar en español
-
-4. **Formato:**
-   - Mantener todo el formato Markdown
-   - Preservar estructura de tablas
-   - No agregar ninguna nota o enlace al inicio del documento (será agregado automáticamente)
-
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
-## Resumen
-
-Genera imágenes utilizando el modelo Flux.2 [pro] o Flux.2 [max] a partir de un texto de instrucción (prompt) e imágenes de referencia opcionales. Este nodo envía tu solicitud a la API de BFL, consulta el resultado y devuelve la imagen generada como un tensor.
+Genere imágenes usando el modelo Flux.2 [pro] o Flux.2 [max] a partir de un prompt de texto e imágenes de referencia opcionales. Este nodo envía su solicitud a la API de BFL, consulta el resultado y devuelve la imagen generada como un tensor.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
-| `prompt` | Instrucción para la generación o edición de la imagen (por defecto: cadena vacía). | STRING | Sí | N/A |
-| `modelo` | La versión del modelo Flux.2 a utilizar. La selección de un modelo desbloquea parámetros adicionales para ancho, alto e imágenes de referencia opcionales. | COMBO | Sí | `"Flux.2 [pro]"`<br>`"Flux.2 [max]"` |
+### Entradas comunes
+
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `modelo` | La versión del modelo Flux.2 a utilizar. Seleccionar un modelo desbloquea parámetros adicionales para ancho, alto e imágenes de referencia opcionales. | DYNAMIC_COMBO | Sí | "Flux.2 [pro]"<br>"Flux.2 [max]" |
+| `prompt` | Prompt para la generación o edición de la imagen (por defecto: cadena vacía). | STRING | Sí | N/A |
 | `semilla` | La semilla aleatoria utilizada para crear el ruido. Se puede configurar para aleatorizar después de cada generación (por defecto: 0). | INT | Sí | 0 a 18446744073709551615 |
 
-**Parámetros Adicionales (desbloqueados por la selección de `model`):**
+### Entradas de Flux.2 [pro] y Flux.2 [max]
 
-Cuando seleccionas un modelo, los siguientes parámetros estarán disponibles:
+Compartidas por ambos modelos — los conjuntos de parámetros son idénticos.
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
-| `ancho` | El ancho de la imagen generada en píxeles. | INT | Sí | 256 a 1440 |
-| `altura` | La altura de la imagen generada en píxeles. | INT | Sí | 256 a 1440 |
-| `model.images` | Imágenes de referencia opcionales para guiar la generación. Se admite un máximo de 8 imágenes. | IMAGE | No | 0 a 8 imágenes |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `ancho` | El ancho de la imagen generada en píxeles (por defecto: 1024). | INT | Sí | 256 a 2048 (step 32) |
+| `altura` | El alto de la imagen generada en píxeles (por defecto: 768). | INT | Sí | 256 a 2048 (step 32) |
 
-**Restricciones:**
-- El número máximo de imágenes de referencia es 8. Si se proporcionan más de 8 imágenes, se generará un error.
-- Los valores de `model.width` y `model.height` afectan el costo de la generación (consulta la lógica de la insignia de precio en el código fuente).
+### Entradas de referencia
+
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `model.images` | Imagen(es) de referencia opcional(es) para la generación de imagen a imagen. Hasta 8 imágenes. Ranura ampliable: conecte de 1 a 8 elementos (`image_1`...`image_8`). | IMAGE | No | 0 a 8 images |
+
+**Nota:**
+- El número máximo de imágenes de referencia es 8. Si se proporcionan más de 8 imágenes, se produce un error.
+- Los valores de `model.width` y `model.height` afectan el costo de generación. El costo también depende del modelo seleccionado y de si se proporcionan imágenes de referencia.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-| --- | --- | --- |
+| Nombre de salida | Descripción | Tipo de datos |
+|-------------|-------------|-----------|
 | `image` | La imagen generada como un tensor, descargada desde el resultado de la API de BFL. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Flux2ImageNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `664ddf45d42f64e4882cc959018f7874915325f2d46519c6bb9a0c5a501228f7`
+**Source fingerprint (SHA-256):** `2994564757e1c66ac6da7b45d227b27ceb0020ac6fc9e8cbe2b53fe9f70bc195`

@@ -1,6 +1,6 @@
 # HappyHorse Edición de Video
 
-Edita un video usando instrucciones de texto o imágenes de referencia con el modelo HappyHorse. La duración de salida es de 3 a 15 segundos y coincide con el video de entrada; los videos de entrada de más de 15 segundos se truncan.
+Edita un vídeo mediante instrucciones de texto o imágenes de referencia con el modelo HappyHorse. La duración de salida es de 3 a 15 segundos y coincide con el vídeo de entrada; los vídeos de más de 15 segundos se recortan.
 
 ## Entradas
 
@@ -8,10 +8,10 @@ Edita un video usando instrucciones de texto o imágenes de referencia con el mo
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `modelo` | El modelo de edición de video HappyHorse a utilizar. Esta selección determina qué opciones de prompt, resolución, proporción e imágenes de referencia están disponibles. | DYNAMIC_COMBO | Sí | "happyhorse-1.0-video-edit" |
-| `video` | El video a editar. | VIDEO | Sí | 3 a 60 segundos |
-| `semilla` | Semilla a usar para la generación (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
-| `marca de agua` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False). | BOOLEAN | Sí | True<br>False |
+| `modelo` | El modelo de edición de vídeo HappyHorse a utilizar. Esta selección determina qué opciones de prompt, resolución, relación de aspecto e imágenes de referencia están disponibles. | DYNAMIC_COMBO | Sí | "happyhorse-1.0-video-edit" |
+| `video` | El vídeo a editar. | VIDEO | Sí | 3 a 60 segundos |
+| `semilla` | Semilla para la generación (predeterminada: 0). | INT | Sí | 0 a 2147483647 |
+| `marca de agua` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False). Parámetro avanzado. | BOOLEAN | Sí | True<br>False |
 
 ### Entradas de happyhorse-1.0-video-edit
 
@@ -19,7 +19,7 @@ Edita un video usando instrucciones de texto o imágenes de referencia con el mo
 |-----------|-------------|---------------|-----------|-------|
 | `prompt` | Instrucciones de edición o requisitos de transferencia de estilo. Debe tener al menos 1 carácter. | STRING | Sí | - |
 | `resolution` | La resolución de salida. | COMBO | Sí | "720P"<br>"1080P" |
-| `ratio` | Relación de aspecto. Si no se cambia, se aproxima a la relación de aspecto del video de entrada. | COMBO | Sí | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+| `ratio` | Relación de aspecto. Si no se cambia, se aproxima a la relación de aspecto del vídeo de entrada. | COMBO | Sí | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
 
 ### Entradas de referencia
 
@@ -27,13 +27,13 @@ Edita un video usando instrucciones de texto o imágenes de referencia con el mo
 |-----------|-------------|---------------|-----------|-------|
 | `reference_images` | Ranura ampliable: conecta de 0 a 5 imágenes de referencia (`image1`...`image5`) para guiar la edición. | IMAGE | No | 0 a 5 imágenes |
 
-**Nota:** El video de entrada debe tener una duración de 3 a 60 segundos. La duración de salida es de 3 a 15 segundos y coincide con el video de entrada; los videos de entrada de más de 15 segundos se truncan. El `prompt` debe tener al menos 1 carácter.
+**Nota:** El vídeo de entrada debe tener una duración de 3 a 60 segundos. La duración de salida es de 3 a 15 segundos y coincide con el vídeo de entrada; los vídeos de entrada de más de 15 segundos se recortan. El `prompt` debe tener al menos 1 carácter.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `video` | El video editado de salida. | VIDEO |
+| `video` | El vídeo editado de salida. | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HappyHorseVideoEditApi/es.md)
 

@@ -1,24 +1,24 @@
 # MeshTextureToImage
 
-Bu düğüm, bir ağın pişirilmiş dokularını çıkarır ve bunları ayrı görüntüler olarak döndürür: temel renk, metalik, pürüzlülük, oklüzyon ve normal haritası. Pişirilmemiş doku kanalları nötr varsayılan değerler olarak gelir — oklüzyon için beyaz ve normal haritası için düz mavi.
+Bu düğüm, bir mesh'in bake edilmiş dokularını çıkarır ve bunları ayrı görüntüler olarak döndürür: temel renk, metalik, pürüzlülük, occlusion ve normal haritası. Bake edilmemiş doku kanalları nötr varsayılan değerlerle döner — occlusion için beyaz ve normal haritası için düz mavi.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `mesh` | Pişirilmiş dokuları çıkarılan ağ. Ağın bir temel renk dokusuna sahip olması gerekir; yalnızca köşe noktası renklerine sahip ağlar (örneğin bir PaintMesh düğümünden sonra) doku içermez ve hataya neden olur. | MESH | Evet | — |
+| `mesh` | Bake edilmiş dokuları çıkarılacak mesh. Mesh, temel renk dokusuna sahip olmalıdır; yalnızca vertex renklerine sahip olan mesh'ler (örneğin bir PaintMesh düğümünden sonra) doku içermez ve hataya neden olur. | MESH | Evet | — |
 
-Not: Ağın pişirilmiş bir temel renk dokusuna sahip olması gerekir. Eğer yoksa, düğüm bir hata verir ve önce BakeTextureFromVoxel çalıştırmayı önerir. Metalik-pürüzlülük dokusu eksik olduğunda, `metallic` ve `roughness` çıktıları siyah (0) olur. `occlusion` çıktısı, ağ pişirilmiş ortam oklüzyonu içermediği sürece beyazdır. `normal_map` çıktısı, normal haritası pişirilmediğinde düz nötr mavidir.
+Not: Mesh, bake edilmiş bir temel renk dokusuna sahip olmalıdır. Aksi takdirde düğüm hata verir ve önce BakeTextureFromVoxel çalıştırılmasını önerir. metallic-roughness dokusu eksik olduğunda `metallic` ve `roughness` çıktıları siyah (0) olur. `occlusion` çıktısı, mesh bake edilmiş ambient occlusion içermediği sürece beyazdır. `normal_map` çıktısı, normal haritası bake edilmediğinde düz nötr mavidir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `base_color` | Ağın temel renk dokusu, görüntü olarak. | IMAGE |
-| `metallic` | Ağın oklüzyon-pürüzlülük-metalik dokusundaki metalik kanalı, gri tonlamalı görüntü olarak. Siyah (0) metalik olmadığını, beyaz (1) tamamen metalik olduğunu gösterir. Doku eksik olduğunda siyah. | IMAGE |
-| `roughness` | Ağın oklüzyon-pürüzlülük-metalik dokusundaki pürüzlülük kanalı, gri tonlamalı görüntü olarak. Doku eksik olduğunda siyah. | IMAGE |
-| `occlusion` | Ağın oklüzyon-pürüzlülük-metalik dokusundaki ortam oklüzyonu kanalı, gri tonlamalı görüntü olarak. Ortam oklüzyonu pişirilmediğinde beyaz (oklüzyon yok). | IMAGE |
-| `normal_map` | Ağın normal haritası dokusu. Normal haritası pişirilmediğinde düz nötr normal haritası (0.5, 0.5, 1.0, düz mavi olarak görünür). | IMAGE |
+| `base_color` | Mesh'in temel renk dokusunun görüntüsü. | IMAGE |
+| `metallic` | Mesh'in occlusion-roughness-metallic dokusundan metalik kanalı; gri tonlamalı bir görüntü olarak. Siyah (0) metalik değil anlamına gelir, beyaz (1) tamamen metalik anlamına gelir. Doku eksik olduğunda siyahtır. | IMAGE |
+| `roughness` | Mesh'in occlusion-roughness-metallic dokusundan pürüzlülük kanalı; gri tonlamalı bir görüntü olarak. Doku eksik olduğunda siyahtır. | IMAGE |
+| `occlusion` | Mesh'in occlusion-roughness-metallic dokusundan ambient occlusion kanalı; gri tonlamalı bir görüntü olarak. Ambient occlusion bake edilmediğinde beyazdır (occlusion yok). | IMAGE |
+| `normal_map` | Mesh'in normal haritası dokusu. Normal haritası bake edilmediğinde düz nötr normal haritası (0.5, 0.5, 1.0; düz mavi olarak görünür). | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshTextureToImage/tr.md)
 

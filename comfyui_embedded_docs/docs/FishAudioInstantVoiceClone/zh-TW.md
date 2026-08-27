@@ -4,18 +4,18 @@
 
 ## 輸入
 
-| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `files` | 用於語音克隆的音訊錄音。這是一個可擴充輸入：連接一個或多個音訊項目（例如 `audio_1`、`audio_2`、...）以提供語音樣本。 | AUDIO | 是 | 1 到 20 個錄音 |
-| `enhance_audio_quality` | 在訓練前增強參考音訊的品質（預設值：True）。 | BOOLEAN | 是 | True<br>False |
+| `檔案` | 用於語音克隆的音訊錄音。這是一個可增長輸入：連接一個或多個音訊項目（例如 `audio_1`、`audio_2`……）以提供語音樣本。 | AUDIO | 是 | 1 到 20 個錄音 |
+| `enhance_audio_quality` | 在訓練前增強參考音訊品質（預設值：True）。 | BOOLEAN | 是 | True<br>False |
 
-**注意：** 所有參考音訊的合併總時長必須低於 270 秒。如果合併總時長達到或超過 270 秒，此節點將回傳錯誤。
+**注意：** 所有參考音訊合併後的總時長必須少於 270 秒。如果合併時長達到或超過 270 秒，節點將回傳錯誤。
 
 ## 輸出
 
-| 輸出名稱 | 說明 | 資料類型 |
+| 輸出名稱 | 描述 | 資料類型 |
 |-------------|-------------|-----------|
-| `voice` | 新建立的克隆語音，由 Fish Audio API 回傳的唯一語音 ID 識別。此語音可用於文字轉語音。 | FISHAUDIO_VOICE |
+| `語音` | 新建立的克隆語音，由 Fish Audio API 回傳的唯一語音 ID 識別。此語音可用於文字轉語音。 | FISHAUDIO_VOICE |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FishAudioInstantVoiceClone/zh-TW.md)
 

@@ -13,6 +13,6 @@ O nó SplitSigmas foi projetado para dividir uma sequência de valores sigma em 
 
 | Parâmetro | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `sigmas` | O nó gera duas sequências de valores sigma, cada uma representando uma parte da sequência original dividida na etapa especificada. Essas saídas são cruciais para operações subsequentes que exigem tratamento diferenciado dos valores sigma. | `SIGMAS` |
+| `sigmas_altos` | O nó gera duas sequências de valores sigma, cada uma representando uma parte da sequência original dividida na etapa especificada. Essas saídas são cruciais para operações subsequentes que exigem tratamento diferenciado dos valores sigma. | `SIGMAS` |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmas/pt-BR.md)

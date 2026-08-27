@@ -4,14 +4,14 @@ O nó Grok Video Extend usa um modelo de IA para criar uma continuação perfeit
 
 ## Entradas
 
-### Entradas Comuns
+### Entradas comuns
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `modelo` | O modelo a ser usado para extensão de vídeo. | DYNAMIC_COMBO | Sim | `"grok-imagine-video"` |
-| `prompt` | Descrição textual do que deve acontecer a seguir no vídeo. | STRING | Sim | N/A |
-| `vídeo` | Vídeo de origem a ser estendido. Formato MP4, de 2 a 15 segundos. | VIDEO | Sim | N/A |
-| `semente` | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente (padrão: 0). | INT | Não | 0 a 2147483647 |
+| `modelo` | O modelo a ser usado para a extensão de vídeo. | DYNAMIC_COMBO | Sim | `"grok-imagine-video"` |
+| `prompt` | Descrição textual do que deve acontecer em seguida no vídeo. | STRING | Sim | N/A |
+| `vídeo` | Vídeo de origem a ser estendido. Formato MP4, 2 a 15 segundos. | VIDEO | Sim | N/A |
+| `semente` | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente (padrão: 0). | INT | Sim | 0 a 2147483647 |
 
 ### Entradas do grok-imagine-video
 
@@ -19,10 +19,10 @@ O nó Grok Video Extend usa um modelo de IA para criar uma continuação perfeit
 |-----------|-------------|-----------|----------|-------|
 | `duration` | Duração da extensão em segundos (padrão: 8). | INT | Sim | 2 a 10 |
 
-**Restrições de Parâmetros:**
-*   A entrada `video` deve ser um arquivo MP4 com duração entre 2 e 15 segundos e não pode exceder 50MB de tamanho de arquivo.
-*   A entrada `prompt` deve conter pelo menos um caractere (espaços em branco são removidos).
-*   O parâmetro `model` é uma combinação dinâmica. Selecionar a opção "grok-imagine-video" revela o parâmetro aninhado `duration`.
+**Restrições dos parâmetros:**
+*   A entrada `video` deve ser um arquivo MP4 com duração entre 2 e 15 segundos e não pode exceder 50MB de tamanho.
+*   O `prompt` deve conter pelo menos um caractere após a remoção de espaços em branco.
+*   O parâmetro `model` é um combo dinâmico. Selecionar a opção "grok-imagine-video" revela o parâmetro aninhado `duration`.
 
 ## Saídas
 
@@ -33,4 +33,4 @@ O nó Grok Video Extend usa um modelo de IA para criar uma continuação perfeit
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoExtendNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `bfaf56dd12afab13c820345587db9ee871db87d60b8dc003f00f035513dbdf61`
+**Source fingerprint (SHA-256):** `5009c007b6f93cd44f2742b024b65f1ac92ab9bca3b85a55554b1d99649e323b`

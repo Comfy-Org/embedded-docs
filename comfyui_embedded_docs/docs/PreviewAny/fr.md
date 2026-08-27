@@ -1,20 +1,20 @@
 # Aperçu de n'importe quel
 
-Le nœud PreviewAny affiche un aperçu de tout type de données d’entrée au format texte. Il accepte tout type de données en entrée et les convertit en une représentation textuelle lisible. Le nœud gère automatiquement différents types de données, notamment les chaînes de caractères, les nombres, les booléens et les objets complexes, en tentant de les sérialiser au format JSON.
+PreviewAny convertit toute valeur d'entrée en texte lisible afin que vous puissiez l'inspecter. Les chaînes de caractères traversent sans modification, les nombres et les booléens deviennent du texte brut, et les autres types de données sont sérialisés en JSON lorsque c'est possible (en revenant à leur forme de chaîne simple si la sérialisation échoue). Le texte résultant est affiché dans l'interface utilisateur et également renvoyé comme sortie de chaîne pour un traitement ultérieur.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `source` | Accepte tout type de données d’entrée pour l’affichage de l’aperçu | ANY | Oui | Tout type de données |
+| `source` | Accepte tout type de données d'entrée pour l'affichage de l'aperçu. Si aucune valeur n'est fournie, l'aperçu affiche 'None'. | ANY | Oui | Tout type de données |
 
 ## Sorties
 
-| Nom de la sortie | Description | Type de données |
+| Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `UI Text Display` | Affiche les données d’entrée converties au format texte dans l’interface utilisateur. Renvoie également le texte sous forme de chaîne de caractères pour un traitement ultérieur. | STRING |
+| `result` | La valeur d'entrée convertie au format texte. Le même texte est également affiché dans l'interface utilisateur. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewAny/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `6011c39a31ef9a6786a1dff6e135edcf35def2f715b49301dd49a6467f859271`
+**Source fingerprint (SHA-256):** `9572eac396aa27a83148a940e4bf37a9ec4e4a47e9526db8bb983611f9237536`

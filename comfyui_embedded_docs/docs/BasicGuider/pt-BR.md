@@ -1,6 +1,6 @@
 # Guia Básico
 
-O nó BasicGuider cria um mecanismo de orientação simples para o processo de amostragem. Ele recebe um modelo e dados de condicionamento como entradas e produz um objeto guia que pode ser usado para orientar o processo de geração durante a amostragem. Este nó fornece a funcionalidade de orientação fundamental necessária para a geração controlada.
+O nó BasicGuider cria um mecanismo simples de orientação para o processo de amostragem. Ele recebe um modelo e dados de condicionamento como entradas e produz um objeto guia que pode ser usado para orientar o processo de geração durante a amostragem. Este nó fornece a funcionalidade fundamental de orientação necessária para a geração controlada.
 
 ## Entradas
 
@@ -18,4 +18,4 @@ O nó BasicGuider cria um mecanismo de orientação simples para o processo de a
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BasicGuider/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `012171caea6aacfadaabacb746be104ca783ae5ea5834cc4a67088233b835654`
+**Source fingerprint (SHA-256):** `8ea6b56be58ae99baaf13a04c4fadbf8ad921801d8f2ce2aecce768cc34a3b20`

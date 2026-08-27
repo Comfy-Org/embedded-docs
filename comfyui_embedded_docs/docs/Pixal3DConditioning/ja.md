@@ -1,21 +1,23 @@
 # Pixal3DConditioning
 
+このノードは、Trellis2 3D生成パイプラインのための画像条件付けを準備します。入力画像からDINOv3ビジョンモデルを用いて2つの解像度で視覚的特徴を抽出し、ステージごとのフィーチャマップに整理し（任意でNAFモデルにより強化）、水平視野角から導出されたカメラデータと組み合わせます。ポジティブとネガティブの条件付けペアを出力し、ネガティブにはクラシファイアフリーガイダンス用にゼロ化された特徴を使用します。
+
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `clip_vision_model` | DINOv3 ViT-L/16 ClipVision モデル。 | CLIP_VISION | はい | — |
-| `image` | ImageCropToMask で前処理済みの画像（Pixal3D では pad_factor=1.1）。 | IMAGE | はい | — |
-| `camera_angle_x` | 水平方向の画角（度）。表示名は fov。画像ごとの FoV を設定するには MoGeGeometryToFOV（axis='horizontal'、unit='degrees'）を接続します（アップストリームのデフォルトと一致）。デフォルト: 49.13。 | FLOAT | はい | 1.0 – 170.0 |
+| `clip_vision_model` | DINOv3 ViT-L/16 ClipVisionです。 | CLIP_VISION | はい | — |
+| `image` | ImageCropToMask（Pixal3Dではpad_factor=1.1）から出力された前処理済み画像です。 | IMAGE | はい | — |
+| `camera_angle_x` | 水平FOV（度単位）です（表示名: fov）。画像ごとのFoVを得るには、MoGeGeometryToFOV（axis='horizontal', unit='degrees'）を接続してください（アップストリームのデフォルトと一致します）。デフォルト: 49.13。 | FLOAT | はい | 1.0 – 170.0 |
 
-注: `camera_angle_x` の値は内部でラジアンに変換され、投影変換行列のカメラ距離の計算に使用されます。指定されたビジョンモデルに NAF コンポーネントが含まれている場合、このノードはさらにシェイプステージとテクスチャステージ用の高解像度フィーチャマップを生成します。
+注: `camera_angle_x` の値は内部でラジアンに変換され、射影変換行列のカメラ距離を計算するために使用されます。指定されたビジョンモデルにNAFコンポーネントが含まれる場合、ノードはさらにシェイプステージとテクスチャステージ用の高解像度フィーチャマップを生成します。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `positive` | 画像由来のフィーチャマップと Trellis2 生成用の投影データを含むポジティブ conditioning。 | CONDITIONING |
-| `negative` | ゼロ埋めされた特徴テンソルを含むネガティブ conditioning。classifier-free guidance に使用されます。 | CONDITIONING |
+| `ポジティブ` | Trellis2生成用の画像由来フィーチャマップと射影データを含むポジティブ条件付けです。 | CONDITIONING |
+| `ネガティブ` | クラシファイアフリーガイダンスに使用される、ゼロ化された特徴テンソルを持つネガティブ条件付けです。 | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Pixal3DConditioning/ja.md)
 

@@ -1,22 +1,22 @@
-# CLIPMetinKodlamaHunyuanDiT
+# ClipTextEncodeHunyuanDit
 
-`CLIPTextEncodeHunyuanDiT` düğümü, metin açıklamalarını HunyuanDiT modelinin anlayabileceği bir biçime dönüştürür. HunyuanDiT'in çift metin kodlayıcı mimarisi için tasarlanmış gelişmiş bir koşullandırma düğümüdür; iki ayrı metin girdisini farklı tokenlaştırıcılar aracılığıyla işler.
+`CLIPTextEncodeHunyuanDiT` düğümü, metin açıklamalarını HunyuanDiT modelinin anlayabileceği bir biçime dönüştürür. HunyuanDiT'in çift metin kodlayıcı mimarisi için tasarlanmış gelişmiş bir koşullandırma düğümüdür; iki ayrı metin girdisini farklı tokenizer'lar aracılığıyla işler ve sonuçlarını tek bir koşullandırma çıktısında birleştirir.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `clip` | Metin tokenlaştırma ve kodlama için kullanılan bir CLIP model örneği; koşulların oluşturulmasında temel rol oynar. | CLIP | Evet | - |
-| `bert` | BERT tokenlaştırıcı aracılığıyla kodlanacak metin girdisi. İfadeleri ve anahtar kelimeleri tercih eder. Çok satırlı ve dinamik istemleri destekler. | STRING | Evet | - |
-| `mt5xl` | mT5-XL tokenlaştırıcı aracılığıyla kodlanacak metin girdisi. Çok satırlı ve dinamik istemleri (çok dilli) destekler. Tam cümleler ve karmaşık açıklamalar kullanılabilir. | STRING | Evet | - |
+| `clip` | Koşulların oluşturulmasında temel olan, metin tokenizasyonu ve kodlaması için kullanılan bir CLIP model örneği. | CLIP | Evet | - |
+| `bert` | BERT tokenizer aracılığıyla kodlanacak metin girdisi. İfadeleri ve anahtar kelimeleri tercih eder. Çok satırlı ve dinamik istemleri destekler. | STRING | Evet | - |
+| `mt5xl` | mT5-XL tokenizer aracılığıyla kodlanacak metin girdisi. Çok satırlı ve dinamik istemleri destekler (çok dilli). Tam cümleler ve karmaşık açıklamalar kullanılabilir. | STRING | Evet | - |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `CONDITIONING` | Hem BERT hem de mT5-XL tokenlaştırılmış metni birleştiren kodlanmış koşullandırma çıktısı; üretim görevlerinde daha ileri işlemler için kullanılır. | CONDITIONING |
+| `CONDITIONING` | BERT ve mT5-XL ile tokenize edilmiş metinleri birleştiren kodlanmış koşullandırma çıktısıdır; üretim görevlerinde daha sonraki işlemler için kullanılır. | CONDITIONING |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeHunyuanDiT/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipTextEncodeHunyuanDit/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `6a8d649708b315c42b7933b52fad7e0b45aa34c168616f18a2178041148eeea1`
+**Source fingerprint (SHA-256):** `550e8c09b8b74974576a852a9b690a87a0156ef49fe7ec1050b10415c6af78aa`

@@ -1,6 +1,6 @@
 # ModelMergeCosmosPredict2_2B
 
-ModelMergeCosmosPredict2_2B 노드는 블록 기반 접근 방식을 사용하여 두 개의 확산 모델을 병합하며, 다양한 모델 구성 요소에 대해 세밀한 제어를 제공합니다. 위치 임베더, 시간 임베더, 트랜스포머 블록 및 최종 레이어에 대한 보간 가중치를 조정하여 두 모델의 특정 부분을 혼합할 수 있습니다. 이를 통해 각 모델의 서로 다른 아키텍처 구성 요소가 최종 병합 결과에 기여하는 방식을 정밀하게 제어할 수 있습니다.
+ModelMergeCosmosPredict2_2B 노드는 블록 기반 접근 방식을 사용하여 두 개의 확산 모델을 병합하며, 서로 다른 모델 구성 요소에 대해 세밀하게 제어할 수 있습니다. 위치 임베더, 시간 임베더, 트랜스포머 블록 및 최종 레이어의 보간 가중치를 조정하여 두 모델의 특정 부분을 혼합할 수 있습니다. 이를 통해 각 모델의 서로 다른 아키텍처 구성 요소가 최종 병합 결과에 기여하는 방식을 정밀하게 제어할 수 있습니다.
 
 ## 입력
 
@@ -46,9 +46,9 @@ ModelMergeCosmosPredict2_2B 노드는 블록 기반 접근 방식을 사용하�
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `model` | 두 입력 모델의 특징을 결합한 병합된 모델 | MODEL |
+| `model` | 두 입력 모델의 특징을 결합한 병합 모델 | MODEL |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmosPredict2_2B/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `53a8de66d6b731f5b29af326832f66cc973284bc8fdf09d779575f2346cc75a7`
+**Source fingerprint (SHA-256):** `3586868201320ae9a326a08f6a9bd74511a5342bf8496e7efcb9f45cf4b7c55d`

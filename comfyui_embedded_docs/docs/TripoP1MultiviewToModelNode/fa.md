@@ -26,7 +26,7 @@
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
 | `model_file` | نام فایل مدل GLB تولیدشده (فقط برای سازگاری با نسخه‌های قبلی). | STRING |
-| `model_task_id` | شناسه یکتای وظیفه برای این درخواست تولید مدل. | MODEL_TASK_ID |
+| `model task_id` | شناسه یکتای وظیفه برای این درخواست تولید مدل. | MODEL_TASK_ID |
 | `GLB` | مدل سه‌بعدی تولیدشده در قالب GLB. | FILE3DGLB |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1MultiviewToModelNode/fa.md)

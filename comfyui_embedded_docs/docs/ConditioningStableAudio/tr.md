@@ -1,8 +1,6 @@
 # KoşullandırmaKararlıSes
 
-## Genel Bakış
-
-ConditioningStableAudio düğümü, ses üretimi için hem pozitif hem de negatif koşullandırma girdilerine zamanlama bilgisi ekler. Ses içeriğinin ne zaman ve ne kadar süreyle oluşturulacağını kontrol etmeye yardımcı olan başlangıç zamanı ve toplam süre parametrelerini ayarlar. Bu düğüm, mevcut koşullandırma verilerine sesle ilgili zamanlama meta verileri ekleyerek değiştirir.
+ConditioningStableAudio düğümü, ses üretimi için hem pozitif hem de negatif koşullandırma girdilerine zamanlama bilgisi ekler. Ses içeriğinin ne zaman ve ne kadar süreyle üretileceğini kontrol etmeye yardımcı olan başlangıç zamanı ve toplam süre parametrelerini ayarlar. Bu düğüm, mevcut koşullandırma verilerine sese özgü zamanlama meta verileri ekleyerek bu verileri değiştirir.
 
 ## Girdiler
 
@@ -10,8 +8,8 @@ ConditioningStableAudio düğümü, ses üretimi için hem pozitif hem de negati
 | --- | --- | --- | --- | --- |
 | `pozitif` | Ses zamanlama bilgisiyle değiştirilecek pozitif koşullandırma girdisi | CONDITIONING | Evet | - |
 | `negatif` | Ses zamanlama bilgisiyle değiştirilecek negatif koşullandırma girdisi | CONDITIONING | Evet | - |
-| `saniye_başlangıç` | Ses üretimi için saniye cinsinden başlangıç zamanı (varsayılan: 0,0) | FLOAT | Evet | 0,0 - 1000,0 |
-| `saniye_toplam` | Ses üretimi için saniye cinsinden toplam süre (varsayılan: 47,0) | FLOAT | Evet | 0,0 - 1000,0 |
+| `saniye_başlangıç` | Ses üretimi için saniye cinsinden başlangıç zamanı (varsayılan: 0.0) | FLOAT | Evet | 0.0 ile 1000.0 |
+| `saniye_toplam` | Ses üretimi için saniye cinsinden toplam süre (varsayılan: 47.0) | FLOAT | Evet | 0.0 ile 1000.0 |
 
 ## Çıktılar
 
@@ -23,4 +21,4 @@ ConditioningStableAudio düğümü, ses üretimi için hem pozitif hem de negati
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningStableAudio/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `ad4fdb2ac536e4f9cc23c044a7a63333e3f3530cc782937eaedc1565cc7c5d0e`
+**Source fingerprint (SHA-256):** `8bdf29514002837090c549b9921e8cb19c07d385881fe09a58885fcbfe968261`

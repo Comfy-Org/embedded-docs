@@ -1,30 +1,30 @@
 # HunyuanVideo15SuperResolution
 
-HunyuanVideo15SuperResolution düğümü, bir video süper çözünürlük işlemi için koşullama (conditioning) verilerini hazırlar. Bir videonun gizli (latent) temsilini ve isteğe bağlı olarak bir başlangıç görüntüsünü alır; bunları gürültü artırımı (noise augmentation) ve CLIP görsel verileriyle birlikte, bir model tarafından daha yüksek çözünürlüklü bir çıktı üretmek için kullanılabilecek bir formata paketler.
+HunyuanVideo15SuperResolution düğümü, video süper çözünürlük süreci için koşullandırma verilerini hazırlar. Bir videonun latent temsilini ve isteğe bağlı olarak bir başlangıç görüntüsünü alır; bunları gürültü artırımı ve CLIP görüş verileriyle birlikte, bir modelin daha yüksek çözünürlüklü çıktı üretmek için kullanabileceği bir biçimde paketler.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `pozitif` | Gizli (latent) ve artırım (augmentation) verileriyle değiştirilecek pozitif koşullama girişi. | CONDITIONING | Evet | Yok |
-| `negatif` | Gizli (latent) ve artırım (augmentation) verileriyle değiştirilecek negatif koşullama girişi. | CONDITIONING | Evet | Yok |
-| `vae` | İsteğe bağlı `başlangıç_görseli`'i kodlamak için kullanılan VAE. `başlangıç_görseli` sağlanmışsa gereklidir. | VAE | Hayır | Yok |
-| `başlangıç_görseli` | Süper çözünürlüğü yönlendirmek için isteğe bağlı bir başlangıç görüntüsü. Sağlanırsa, yükseltilir (upscale) ve koşullama gizli (latent) değişkenine kodlanır. | IMAGE | Hayır | Yok |
-| `clip_vision_output` | Koşullamaya eklenecek isteğe bağlı CLIP görsel yerleştirmeleri (embeddings). | CLIP_VISION_OUTPUT | Hayır | Yok |
-| `latent` | Koşullamaya dahil edilecek giriş gizli (latent) video temsili. | LATENT | Evet | Yok |
-| `gürültü_artırımı` | Koşullamaya uygulanacak gürültü artırımının (noise augmentation) gücü (varsayılan: 0.70). | FLOAT | Hayır | 0.0 - 1.0 |
+| `pozitif` | Latent ve artırım verileriyle değiştirilecek pozitif koşullandırma girdisi. | CONDITIONING | Evet | N/A |
+| `negatif` | Latent ve artırım verileriyle değiştirilecek negatif koşullandırma girdisi. | CONDITIONING | Evet | N/A |
+| `vae` | İsteğe bağlı `start_image` görüntüsünü kodlamak için kullanılan VAE. `start_image` sağlanırsa gereklidir. | VAE | Hayır | N/A |
+| `başlangıç_görseli` | Süper çözünürlük sürecini yönlendirmek için isteğe bağlı bir başlangıç görüntüsü. Sağlanırsa, büyütülür ve koşullandırma latentine kodlanır. | IMAGE | Hayır | N/A |
+| `clip_vision_output` | Koşullandırmaya eklenecek isteğe bağlı CLIP görüş yerleştirmeleri. | CLIP_VISION_OUTPUT | Hayır | N/A |
+| `latent` | Koşullandırmaya dahil edilen girdi latent video temsili. | LATENT | Evet | N/A |
+| `gürültü_artırımı` | Koşullandırmaya uygulanacak gürültü artırımının gücü (varsayılan: 0.70). Bu, gelişmiş bir parametredir. | FLOAT | Hayır | 0.0 - 1.0 (step 0.01) |
 
-**Not:** Bir `start_image` sağlarsanız, kodlanması için bir `vae` de bağlamanız gerekir. `start_image`, giriş `latent` tarafından belirtilen boyutlarla eşleşecek şekilde otomatik olarak yükseltilecektir (upscale).
+**Not:** Bir `start_image` sağlarsanız, kodlanabilmesi için bir `vae` de bağlamanız gerekir. `start_image`, girdi `latent`inin uzamsal boyutlarının (genişlik ve yükseklik) 16 katına otomatik olarak büyütülür, ardından kodlanır ve koşullandırma latentine yerleştirilir. Kodlama için `start_image`in yalnızca RGB kanalları kullanılır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `pozitif` | Artık birleştirilmiş gizli (latent), gürültü artırımı (noise augmentation) ve isteğe bağlı CLIP görsel verilerini içeren değiştirilmiş pozitif koşullama. | CONDITIONING |
-| `negatif` | Artık birleştirilmiş gizli (latent), gürültü artırımı (noise augmentation) ve isteğe bağlı CLIP görsel verilerini içeren değiştirilmiş negatif koşullama. | CONDITIONING |
-| `latent` | Giriş gizli (latent) değişkeni değiştirilmeden iletilir. | LATENT |
+| `pozitif` | Birleştirilmiş latent, gürültü artırımı ve isteğe bağlı CLIP görüş verilerini artık içeren değiştirilmiş pozitif koşullandırma. | CONDITIONING |
+| `negatif` | Birleştirilmiş latent, gürültü artırımı ve isteğe bağlı CLIP görüş verilerini artık içeren değiştirilmiş negatif koşullandırma. | CONDITIONING |
+| `latent` | Girdi latent, değiştirilmeden olduğu gibi iletilir. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15SuperResolution/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `f913327a81d034997fa8a485ca4b3691f75ba1d3c5c6e2e73ab107021b58a52a`
+**Source fingerprint (SHA-256):** `c9e64092e78423f5e0dc43446a77240e09100242c25e4fccc91491049fe76be5`

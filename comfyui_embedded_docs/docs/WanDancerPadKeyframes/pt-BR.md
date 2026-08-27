@@ -17,9 +17,9 @@ Este nó prepara uma sequência de quadros-chave para um segmento específico de
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `keyframes_sequence` | Sequência de quadros-chave preenchida para o segmento especificado. | IMAGE |
-| `keyframes_mask` | Máscara indicando quadros válidos (1 para posições de quadros-chave, 0 para posições preenchidas). | MASK |
-| `audio_segment` | Segmento de áudio para este segmento de vídeo. | AUDIO |
+| `sequência_de_keyframes` | Sequência de quadros-chave preenchida para o segmento especificado. | IMAGE |
+| `máscara_de_keyframes` | Máscara indicando quadros válidos (1 para posições de quadros-chave, 0 para posições preenchidas). | MASK |
+| `segmento_de_áudio` | Segmento de áudio para este segmento de vídeo. | AUDIO |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframes/pt-BR.md)
 

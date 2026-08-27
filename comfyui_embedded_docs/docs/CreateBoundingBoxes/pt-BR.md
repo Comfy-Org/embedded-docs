@@ -17,9 +17,9 @@ Este nó fornece uma interface de tela para desenhar caixas delimitadoras ao red
 
 | Nome da Saída | Descrição | Tipo de Dado |
 |---------------|-----------|--------------|
-| `preview` | Uma imagem RGB mostrando a tela com todas as caixas delimitadoras renderizadas, incluindo rótulos, amostras da paleta de cores e texto descritivo. | IMAGE |
-| `bboxes` | Uma lista de caixas delimitadoras em coordenadas de pixels, com cada caixa contendo valores de x, y, largura e altura. | BOUNDING_BOX |
-| `elements` | Uma matriz estruturada de objetos de elemento, cada um contendo tipo, coordenadas da caixa delimitadora (normalizadas de 0 a 1000), texto (para tipo texto), descrição e paleta de cores. | ARRAY |
+| `pré-visualização` | Uma imagem RGB mostrando a tela com todas as caixas delimitadoras renderizadas, incluindo rótulos, amostras da paleta de cores e texto descritivo. | IMAGE |
+| `caixas_delimitadoras` | Uma lista de caixas delimitadoras em coordenadas de pixels, com cada caixa contendo valores de x, y, largura e altura. | BOUNDING_BOX |
+| `elementos` | Uma matriz estruturada de objetos de elemento, cada um contendo tipo, coordenadas da caixa delimitadora (normalizadas de 0 a 1000), texto (para tipo texto), descrição e paleta de cores. | ARRAY |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateBoundingBoxes/pt-BR.md)
 

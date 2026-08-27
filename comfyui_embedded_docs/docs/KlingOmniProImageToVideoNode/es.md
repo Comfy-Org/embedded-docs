@@ -1,33 +1,33 @@
 # Kling Omni Imagen a Video (Pro)
 
-Este nodo utiliza el modelo Kling AI para generar un video basado en un prompt de texto y hasta siete imágenes de referencia. Permite controlar la relación de aspecto, la duración y la resolución del video, y opcionalmente usar storyboards o generar audio. El nodo envía la solicitud a una API externa y devuelve el video generado.
+Este nodo utiliza el modelo Kling AI para generar un vídeo basado en un prompt de texto y hasta siete imágenes de referencia. Permite controlar la relación de aspecto, la duración y la resolución del vídeo y, opcionalmente, usar storyboards o generar audio. El nodo envía la solicitud a una API externa y devuelve el vídeo generado.
 
 ## Entradas
 
 ### Entradas comunes
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
-|-----------|-------------|--------------|-----------|-------|
-| `model_name` | El modelo Kling específico que se usará para la generación de video (predeterminado: "kling-v3-omni"). | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` |
-| `prompt` | Un prompt de texto que describe el contenido del video. Puede incluir descripciones tanto positivas como negativas. Los marcadores de posición como `@image` o `@video` (opcionalmente numerados) se convierten automáticamente al formato compatible con la API. Debe tener entre 1 y 2500 caracteres (puede estar vacío cuando los storyboards están habilitados). Se ignora cuando los storyboards están habilitados. | STRING | Sí | - |
-| `aspect_ratio` | La relación de aspecto deseada para el video generado. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `duration` | La duración del video en segundos, ajustada con un control deslizante (predeterminado: 5). | INT | Sí | 3 a 15 |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `model_name` | El modelo Kling específico que se utilizará para la generación de vídeo (predeterminado: `"kling-v3-omni"`). | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` |
+| `prompt` | Un prompt de texto que describe el contenido del vídeo. Puede incluir descripciones tanto positivas como negativas. Se ignora cuando los storyboards están habilitados. Los marcadores de posición como `@image` o `@video` (opcionalmente numerados) se convierten automáticamente al formato compatible con la API. Debe tener entre 1 y 2500 caracteres (puede estar vacío cuando los storyboards están habilitados). | STRING | Sí | 1 a 2500 caracteres |
+| `aspect_ratio` | La relación de aspecto deseada para el vídeo generado. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `duration` | La duración del vídeo en segundos, ajustada con un control deslizante (predeterminado: 5). | INT | Sí | 3 a 15 |
 | `reference_images` | Hasta 7 imágenes de referencia. Cada imagen debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. | IMAGE | Sí | 1 a 7 imágenes |
-| `resolution` | La resolución de salida del video (predeterminado: "1080p"). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | Genera una serie de segmentos de video con prompts y duraciones individuales. Solo compatible con `kling-v3-omni`. Cuando está habilitado, el `prompt` global se ignora y la duración total de todos los segmentos de storyboard debe ser igual a la `duration` global (predeterminado: "disabled"). | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generar_audio` | Genera audio para el video. Solo compatible con `kling-v3-omni` (predeterminado: false). | BOOLEAN | No | `true`<br>`false` |
-| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). | INT | No | 0 a 2147483647 |
+| `resolution` | La resolución de salida del vídeo (predeterminado: `"1080p"`). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `storyboards` | Genera una serie de segmentos de vídeo con prompts y duraciones individuales. Solo compatible con `kling-v3-omni`. Cuando está habilitado, se ignora el `prompt` global y la duración total de todos los segmentos de storyboard debe ser igual a la `duration` global (predeterminado: `"disabled"`). | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `generar_audio` | Genera audio para el vídeo. Solo compatible con `kling-v3-omni` (predeterminado: false). | BOOLEAN | No | `true`<br>`false` |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados son no deterministas independientemente de la semilla (predeterminado: 0). | INT | No | 0 a 2147483647 |
 
 ### Entradas de storyboard
 
-Cuando `storyboards` está habilitado, las siguientes entradas aparecen para cada segmento de storyboard seleccionado. N varía de 1 hasta el número seleccionado de storyboards.
+Cuando `storyboards` está habilitado, aparecen las siguientes entradas para cada segmento de storyboard seleccionado. N varía de 1 hasta el número de storyboards seleccionado.
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
-|-----------|-------------|--------------|-----------|-------|
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
 | `storyboard_N_prompt` | Prompt para el segmento de storyboard N. Máximo 512 caracteres. | STRING | Sí | 1 a 512 caracteres |
 | `storyboard_N_duration` | Duración para el segmento de storyboard N en segundos (predeterminado: 4). | INT | Sí | 1 a 15 |
 
-**Nota:** La entrada `reference_images` acepta un máximo de 7 imágenes. Si se proporcionan más, el nodo genera un error. Cada imagen se valida para dimensiones mínimas y relación de aspecto.
+**Nota:** La entrada `reference_images` acepta un máximo de 7 imágenes. Si se proporcionan más, el nodo genera un error. Cada imagen se valida en cuanto a dimensiones mínimas y relación de aspecto.
 
 **Restricciones específicas del modelo:**
 - `kling-video-o1` no admite duraciones mayores a 10 segundos.
@@ -37,9 +37,9 @@ Cuando `storyboards` está habilitado, las siguientes entradas aparecen para cad
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
-|------------------|-------------|--------------|
-| `output` | El archivo de video generado. | VIDEO |
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `output` | El archivo de vídeo generado. | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProImageToVideoNode/es.md)
 

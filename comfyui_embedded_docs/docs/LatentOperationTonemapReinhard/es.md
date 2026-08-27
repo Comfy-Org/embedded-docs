@@ -1,20 +1,20 @@
 # OperaciónTonemapReinhardLatente
 
-El nodo `LatentOperationTonemapReinhard` aplica el mapeo de tonos Reinhard a vectores latentes. Esta técnica normaliza los vectores latentes y ajusta su magnitud mediante un enfoque estadístico basado en la media y la desviación estándar, con la intensidad controlada por un parámetro multiplicador.
+El nodo LatentOperationTonemapReinhard aplica el mapeo tonal de Reinhard a los vectores latentes. Esta técnica normaliza los vectores latentes y ajusta su magnitud mediante un enfoque estadístico basado en la media y la desviación estándar, con la intensidad controlada por un parámetro multiplicador. Este nodo está actualmente marcado como experimental.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `multiplicador` | Controla la intensidad del efecto de mapeo de tonos (predeterminado: 1.0) | FLOAT | No | 0.0 a 100.0 |
+| `multiplicador` | Controla la intensidad del efecto de mapeo tonal (por defecto: 1.0) | FLOAT | Sí | 0.0 a 100.0 (step 0.01) |
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `operation` | Devuelve una operación de mapeo de tonos que puede aplicarse a vectores latentes | LATENT_OPERATION |
+| `operation` | Devuelve una operación de mapeo tonal que se puede aplicar a vectores latentes | LATENT_OPERATION |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentOperationTonemapReinhard/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `70c04eaef06b749392a0c65f3d1267e52484f7cf956f87173d10ad935afcf98c`
+**Source fingerprint (SHA-256):** `19d58c288967ab27eb1e84e60bc35a6d6c8b4e643168de689132396ae0ee3cbe`

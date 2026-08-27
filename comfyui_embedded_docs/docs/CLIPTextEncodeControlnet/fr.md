@@ -1,26 +1,24 @@
 # CLIPTextEncodeControlnet
 
-Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeControlnet/en.md)
-
-Le nœud CLIPTextEncodeControlnet traite une entrée textuelle à l'aide d'un modèle CLIP et la combine avec des données de conditionnement existantes pour produire un conditionnement enrichi destiné aux applications controlnet. Il tokenise le texte d'entrée, l'encode via le modèle CLIP, puis ajoute les embeddings résultants aux données de conditionnement fournies sous forme de paramètres d'attention croisée pour controlnet.
+Le nœud CLIPTextEncodeControlnet traite une invite de texte à l'aide d'un modèle CLIP et combine l'encodage de texte résultant avec les données de conditionnement existantes. Il ajoute les plongements dérivés du texte à chaque entrée de conditionnement comme paramètres d'attention croisée controlnet, produisant une sortie de conditionnement enrichie pour les applications controlnet.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `clip` | Le modèle CLIP utilisé pour la tokenisation et l'encodage du texte | CLIP | Oui | - |
-| `conditioning` | Données de conditionnement existantes à enrichir avec les paramètres controlnet | CONDITIONING | Oui | - |
-| `text` | Texte d'entrée à traiter par le modèle CLIP. Prend en charge le texte multiligne et les invites dynamiques | STRING | Oui | - |
+| `conditioning` | Données de conditionnement existantes à combiner avec l'encodage de texte CLIP | CONDITIONING | Oui | - |
+| `text` | L'invite de texte à traiter par le modèle CLIP. Prend en charge le texte multiligne et les invites dynamiques | STRING | Oui | - |
 
-**Remarque :** Ce nœud nécessite les trois entrées (`clip`, `conditioning` et `text`) pour fonctionner correctement. L'entrée `text` prend en charge les invites dynamiques et le texte multiligne pour un traitement flexible du texte.
+**Remarque :** Les trois entrées (`clip`, `conditioning` et `text`) sont requises pour que ce nœud fonctionne. L'entrée `text` prend en charge le texte multiligne et les invites dynamiques pour un traitement flexible du texte. Ce nœud est marqué comme expérimental dans le code source.
 
 ## Sorties
 
-| Nom de la sortie | Description | Type de données |
+| Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `CONDITIONING` | Données de conditionnement enrichies avec les paramètres d'attention croisée controlnet ajoutés (`cross_attn_controlnet` et `pooled_output_controlnet`) dérivés de l'encodage CLIP du texte | CONDITIONING |
+| `CONDITIONING` | Données de conditionnement enrichies avec les paramètres d'attention croisée controlnet ajoutés (`cross_attn_controlnet` et `pooled_output_controlnet`) dérivés de l'encodage de texte CLIP | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeControlnet/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `dd6f68d822cc38e27c826b634c938d62e07b075e18a0f46f80b462aecca0b70b`
+**Source fingerprint (SHA-256):** `95a798684ca8734bfff53c7b979b320f6834dc1a9553163d0e567243761000f1`

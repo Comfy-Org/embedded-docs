@@ -12,7 +12,7 @@ O nó Texto para Minúsculas recebe uma string de texto como entrada e converte 
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `text` | O texto de entrada com todos os caracteres convertidos para minúsculas. | STRING |
+| `texts` | O texto de entrada com todos os caracteres convertidos para minúsculas. | STRING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextToLowercase/pt-BR.md)
 

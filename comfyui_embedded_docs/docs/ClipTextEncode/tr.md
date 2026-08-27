@@ -1,59 +1,60 @@
-# CLIP Metin Kodlama (İstem)
+# ClipTextEncode
 
-`CLIP Text Encode (CLIPTextEncode)`, metin açıklamalarınızı yapay zekanın anlayabileceği bir formata dönüştüren bir çevirmen görevi görür. Bu, yapay zekanın girdinizi yorumlamasına ve istenen görüntüyü oluşturmasına yardımcı olur.
+`CLIP Text Encode (CLIPTextEncode)` bir çevirmen gibi çalışır; metin açıklamalarınızı yapay zekanın anlayabileceği bir biçime dönüştürür. Bu, yapay zekanın girdinizi yorumlamasına ve istenen görüntüyü oluşturmasına yardımcı olur.
 
-Bunu, farklı bir dil konuşan bir sanatçıyla iletişim kurmak gibi düşünün. Devasa görüntü-metin çiftleri üzerinde eğitilmiş CLIP modeli, açıklamalarınızı yapay zeka modelinin takip edebileceği "talimatlara" dönüştürerek bu boşluğu doldurur.
+Bunu farklı bir dil konuşan bir sanatçıyla iletişim kurmak gibi düşünün. Geniş görüntü-metin çiftleriyle eğitilen CLIP modeli, açıklamalarınızı yapay zeka modelinin takip edebileceği "talimatlara" dönüştürerek bu boşluğu kapatır.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Tipi | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `metin` | Kodlanacak metin. Çok satırlı girişi ve dinamik promptları destekler. | STRING | Evet | Herhangi bir metin |
+| `metin` | Kodlanacak metin. Çok satırlı girdiyi ve dinamik promptları destekler. | STRING | Evet | Herhangi bir metin |
 | `clip` | Metni kodlamak için kullanılan CLIP modeli. | CLIP | Evet | Yüklenmiş CLIP modelleri |
 
-## Çıkışlar
+Not: `clip` girdisi None ise (örneğin, checkpoint yükleyiciden gelen checkpoint geçerli bir CLIP veya metin kodlayıcı modeli içermiyorsa), düğüm hata verir.
 
-| Çıkış Adı | Açıklama | Veri Türü |
+## Çıktılar
+
+| Çıktı Adı | Açıklama | Veri Tipi |
 | --- | --- | --- |
-| `CONDITIONING` | Difüzyon modelini yönlendirmek için kullanılan, gömülü metni içeren bir koşullandırma. | CONDITIONING |
+| `CONDITIONING` | Diffüzyon modelini yönlendirmek için kullanılan, gömülü metni içeren bir koşullandırma. | CONDITIONING |
 
 ## Prompt Özellikleri
 
-### Gömme Modelleri
+### Embedding Modelleri
 
-Gömme modelleri, belirli sanatsal efektler veya stiller uygulamanıza olanak tanır. Desteklenen formatlar `.safetensors`, `.pt` ve `.bin`'dir. Bir gömme modeli kullanmak için:
+Embedding modelleri, belirli sanatsal efektler veya stiller uygulamanıza olanak tanır. Desteklenen biçimler `.safetensors`, `.pt` ve `.bin` şeklindedir. Bir embedding modeli kullanmak için:
 
 1. Dosyayı `ComfyUI/models/embeddings` klasörüne yerleştirin.
-2. Metninizde `embedding:model_adı` kullanarak ona başvurun.
+2. Metninizde `embedding:model_name` kullanarak ona başvurun.
 
-Örnek: `ComfyUI/models/embeddings` klasörünüzde `EasyNegative.pt` adında bir modeliniz varsa, onu şu şekilde kullanabilirsiniz:
+Örnek: Eğer `ComfyUI/models/embeddings` klasörünüzde `EasyNegative.pt` adında bir modeliniz varsa, bunu şu şekilde kullanabilirsiniz:
 
 ```
 worst quality, embedding:EasyNegative, bad quality
 ```
 
-**ÖNEMLİ**: Gömme modellerini kullanırken, dosya adının eşleştiğini ve modelinizin mimarisiyle uyumlu olduğunu doğrulayın. Örneğin, SD1.5 için tasarlanmış bir gömme, bir SDXL modeli için doğru çalışmayacaktır.
+**ÖNEMLİ**: Embedding modellerini kullanırken, dosya adının eşleştiğini ve modelinizin mimarisiyle uyumlu olduğunu doğrulayın. Örneğin, SD1.5 için tasarlanmış bir embedding, SDXL modeliyle doğru çalışmayacaktır.
 
-### Prompt Ağırlık Ayarı
+### Prompt Ağırlığı Ayarı
 
-Parantez kullanarak açıklamanızın belirli bölümlerinin önemini ayarlayabilirsiniz. Örneğin:
+Açıklamanızın belirli bölümlerinin önemini parantez kullanarak ayarlayabilirsiniz. Örneğin:
 
-- `(beautiful:1.2)` "beautiful" kelimesinin ağırlığını artırır.
-- `(beautiful:0.8)` "beautiful" kelimesinin ağırlığını azaltır.
-- Düz parantezler `(beautiful)` varsayılan olarak 1.1 ağırlığı uygulayacaktır.
+- `(beautiful:1.2)` "beautiful" ifadesinin ağırlığını artırır.
+- `(beautiful:0.8)` "beautiful" ifadesinin ağırlığını azaltır.
+- Düz parantezler `(beautiful)` varsayılan ağırlık olarak 1.1 uygular.
 
-Ağırlıkları hızlı bir şekilde ayarlamak için `ctrl + yukarı/aşağı ok` klavye kısayollarını kullanabilirsiniz. Ağırlık ayarlama adım boyutu ayarlardan değiştirilebilir.
+Klavye kısayolları `ctrl + yukarı/aşağı ok` ile ağırlıkları hızlıca ayarlayabilirsiniz. Ağırlık ayarlama adım boyutu ayarlardan değiştirilebilir.
 
-Promptunuzda ağırlığı değiştirmeden gerçek parantez karakterlerini kullanmak istiyorsanız, bunları bir ters eğik çizgi ile kaçış karakteri olarak kullanabilirsiniz, örn. `\(kelime\)`.
+Promptunuzda ağırlığı değiştirmeden gerçek parantezler kullanmak istiyorsanız, bunları bir ters eğik çizgi ile kaçış karakteri olarak belirtebilirsiniz; örn. `\(word\)`.
 
-### Joker Karakter/Dinamik Promptlar
+### Wildcard/Dinamik Promptlar
 
-Dinamik promptlar oluşturmak için `{}` kullanın. Örneğin, `{gündüz|gece|sabah}` promptu her işlendiğinde rastgele bir seçenek seçecektir.
+Dinamik promptlar oluşturmak için `{}` kullanın. Örneğin, `{day|night|morning}` prompt her işlendiğinde seçeneklerden birini rastgele seçer.
 
-Promptunuzda dinamik davranışı tetiklemeden gerçek küme parantezlerini kullanmak istiyorsanız, bunları bir ters eğik çizgi ile kaçış karakteri olarak kullanabilirsiniz, örn. `\{kelime\}`.
+Promptunuzda dinamik davranışı tetiklemeden gerçek süslü parantezler kullanmak istiyorsanız, bunları bir ters eğik çizgi ile kaçış karakteri olarak belirtebilirsiniz; örn. `\{word\}`.
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipTextEncode/tr.md)
 
 ---
-
-**Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`
+**Source fingerprint (SHA-256):** `ace7988df7aaa3ac26419b16a9bd8908a327da6e82c21c2b2704af091d2e76e7`

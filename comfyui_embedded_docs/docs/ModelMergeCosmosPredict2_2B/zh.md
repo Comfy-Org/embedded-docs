@@ -1,12 +1,9 @@
 # 模型融合（CosmosPredict2_2B）
 
-## 概述
-
-ModelMergeCosmosPredict2_2B 节点采用基于块（block-based）的方法合并两个扩散模型，可对模型的不同组件进行精细控制。通过调整位置嵌入器、时间嵌入器、Transformer 块和最终层的插值权重，您可以混合两个模型的特定部分，从而精确控制每个模型的不同架构组件对最终合并结果的贡献。
+ModelMergeCosmosPredict2_2B 节点使用基于块的方法合并两个扩散模型，对不同模型组件提供细粒度控制。它允许你通过调整位置嵌入器、时间嵌入器、Transformer 块和最终层的插值权重，来混合两个模型的特定部分。这提供了对每个模型不同架构组件如何贡献于最终合并结果的精确控制。
 
 ## 输入
-
-| 参数 | 描述 | 数据类型 | 必填 | 范围 |
+| 参数 | 描述 | 数据类型 | 必需 | 范围 |
 | --- | --- | --- | --- | --- |
 | `模型1` | 要合并的第一个模型 | MODEL | 是 | - |
 | `模型2` | 要合并的第二个模型 | MODEL | 是 | - |
@@ -45,7 +42,6 @@ ModelMergeCosmosPredict2_2B 节点采用基于块（block-based）的方法合�
 | `final_layer.` | 最终层插值权重（默认值：1.0） | FLOAT | 是 | 0.0 - 1.0 |
 
 ## 输出
-
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
 | `model` | 合并后的模型，融合了两个输入模型的特征 | MODEL |
@@ -53,4 +49,4 @@ ModelMergeCosmosPredict2_2B 节点采用基于块（block-based）的方法合�
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmosPredict2_2B/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `53a8de66d6b731f5b29af326832f66cc973284bc8fdf09d779575f2346cc75a7`
+**Source fingerprint (SHA-256):** `3586868201320ae9a326a08f6a9bd74511a5342bf8496e7efcb9f45cf4b7c55d`

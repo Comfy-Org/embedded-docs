@@ -1,23 +1,23 @@
-# CLIP Kaydet
+# ClipSave
 
-`CLIPSave` düğümü, bir CLIP metin kodlayıcı modelini SafeTensors formatında diske kaydeder. Gelişmiş model birleştirme iş akışları için tasarlanmıştır ve CLIP modelini, modelin iç yapısına bağlı olarak otomatik olarak bileşen parçalarına (CLIP-L, CLIP-G veya T5XXL gibi) ayırır ve her bileşeni ayrı bir dosya olarak kaydeder.
+`CLIPSave` düğümü, bir CLIP metin kodlayıcı modelini SafeTensors formatında diske kaydeder. Gelişmiş model birleştirme iş akışları için tasarlanmıştır ve CLIP modelini, modelin iç yapısına göre bileşen parçalarına (CLIP-L, CLIP-G veya T5XXL gibi) otomatik olarak ayırır ve her bileşeni ayrı bir dosya olarak kaydeder.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Girdi Türü | Varsayılan | Aralık |
-| --- | --- | --- | --- | --- | --- |
-| `clip` | Kaydedilecek CLIP modeli. | CLIP | Zorunlu | - | - |
-| `dosyaadı_öneki` | Kaydedilen dosya(lar) için ön ek yolu ve dosya adı. Düğüm, benzersiz dosya adları oluşturmak için bir bileşen son eki (ör. `_clip_l`, `_clip_g`) ve bir sayaç ekleyecektir. | STRING | Zorunlu | `clip/ComfyUI` | - |
-| `prompt` | Çıktı dosyasında meta veri olarak kaydedilen iş akışı istem bilgisi. | PROMPT | Gizli | - | - |
-| `extra_pnginfo` | Çıktı dosyasında anahtar-değer çiftleri olarak kaydedilen ek meta veriler. | EXTRA_PNGINFO | Gizli | - | - |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| --- | --- | --- | --- | --- |
+| `clip` | Kaydedilecek CLIP modeli. | CLIP | Evet | - |
+| `dosyaadı_öneki` | Kaydedilen dosyalar için önek yolu ve dosya adı. Düğüm, benzersiz dosya adları oluşturmak için bir bileşen son eki (örn. `_clip_l`, `_clip_g`) ve bir sayaç ekler (varsayılan: `clip/ComfyUI`). | STRING | Evet | - |
+| `prompt` | İş akışı prompt bilgisi; çıktı dosyasına meta veri olarak kaydedilir. Bu parametre kullanıcı arayüzünde gizlidir. | PROMPT | Hayır | - |
+| `extra_pnginfo` | Ek meta veri; çıktı dosyasına anahtar-değer çiftleri olarak kaydedilir. Bu parametre kullanıcı arayüzünde gizlidir. | EXTRA_PNGINFO | Hayır | - |
 
 ## Çıktılar
 
-Bu düğümün herhangi bir çıktı bağlantısı yoktur. İşlenen dosyaları doğrudan `ComfyUI/output/` dizinine kaydeder.
+Bu düğümün çıktı bağlantısı yoktur. İşlenen dosyaları doğrudan `ComfyUI/output/` dizinine kaydeder. Kaydedilen dosyalar, ComfyUI `--disable-metadata` bağımsız değişkeniyle başlatılmadığı sürece meta veri içerir (format "pt" olarak ayarlanır, ayrıca iş akışı promptu ve varsa ek PNG bilgileri de meta veriye dahil edilir).
 
 ### Kaydedilen Dosya Ayrıntıları
 
-Düğüm, CLIP modelinin durum sözlüğünü analiz eder ve algılanan her bileşen için ayrı SafeTensors dosyaları kaydeder. Bileşen, parametre anahtarlarının ön ekiyle tanımlanır. Aşağıdaki ön ekler kontrol edilir:
+Düğüm, CLIP modelinin durum sözlüğünü (state dictionary) analiz eder ve algılanan her bileşen için ayrı SafeTensors dosyaları kaydeder. Bileşen, parametre anahtarlarının önekine göre tanımlanır. Aşağıdaki önekler kontrol edilir:
 
 - `clip_l.` (CLIP-L metin kodlayıcı)
 - `clip_g.` (CLIP-G metin kodlayıcı)
@@ -30,11 +30,11 @@ Düğüm, CLIP modelinin durum sözlüğünü analiz eder ve algılanan her bile
 - `gemma2_2b.` (Gemma 2 2B metin kodlayıcı)
 - `llama.` (LLaMA metin kodlayıcı)
 - `hydit_clip.` (Hydit CLIP metin kodlayıcı)
-- Boş ön ek (diğer CLIP bileşenleri)
+- Boş önek (diğer CLIP bileşenleri)
 
-Algılanan her bileşen için düğüm, `{filename_prefix}_{counter:05}_.safetensors` adında bir dosya oluşturur; burada bileşen ön eki, dosya adı ön ekine eklenir (ör. `clip/ComfyUI_clip_l_00001_.safetensors`). Kaydetme sırasında `transformer.` ön eki parametre anahtarlarından kaldırılır.
+Algılanan her bileşen için düğüm, `{filename_prefix}_{counter:05}_.safetensors` adında bir dosya oluşturur; bileşen öneki dosya adı önekine eklenir (örn. `clip/ComfyUI_clip_l_00001_.safetensors`). Kaydetme sırasında `transformer.` öneki parametre anahtarlarından kaldırılır.
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipSave/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `039b39cbfb9b04ccebc5fc885ebe75dfde14838530d38133d0a3a6311e392059`
+**Source fingerprint (SHA-256):** `4ab9171e4245b10f738f78bac8a5b564c0957dde352e207ec3f9865e4fac0cab`

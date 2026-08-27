@@ -1,6 +1,6 @@
 # FishAudioVoiceSelector
 
-Fish Audio Voice Selector 노드는 텍스트 음성 변환 생성을 위해 Fish Audio 라이브러리에서 음성을 선택합니다. 내장된 사전 설정 음성 중 하나를 선택하거나 "custom"을 선택하여 fish.audio의 음성 모델 ID를 입력할 수 있습니다.
+Fish Audio Voice Selector 노드는 텍스트 음성 변환(TTS) 생성을 위해 Fish Audio 라이브러리에서 음성을 선택합니다. 내장된 사전 설정 음성 중 하나를 선택하거나 "custom"을 선택하여 fish.audio의 음성 모델 ID를 입력할 수 있습니다.
 
 ## 입력
 
@@ -8,19 +8,19 @@ Fish Audio Voice Selector 노드는 텍스트 음성 변환 생성을 위해 Fis
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `voice` | 음성을 선택하거나 'custom'을 선택하여 fish.audio 음성 모델 ID를 입력합니다. | DYNAMIC_COMBO | 예 | "Energetic Male (en)"<br>"Friendly Women (en)"<br>"Sarah (en)"<br>"Verity (en)"<br>"Polo (en)"<br>"Adrian (en)"<br>"E-girl (en)"<br>"Narrator (en)"<br>"Warm Conversational Voice (en)"<br>"Warm Storyteller (en)"<br>"Dramatic Character Male (en)"<br>"News Narrator (zh)"<br>"Lively Female (zh)"<br>"Gentle Female (zh)"<br>"Energetic Female (ja)"<br>"Calm Female (ja)"<br>"Calm Male (ja)"<br>"custom" |
+| `voice` | 음성을 선택하거나, 'custom'을 선택하여 fish.audio 음성 모델 ID를 입력합니다. | DYNAMIC_COMBO | 예 | "Energetic Male (en)"<br>"Friendly Women (en)"<br>"Sarah (en)"<br>"Verity (en)"<br>"Polo (en)"<br>"Adrian (en)"<br>"E-girl (en)"<br>"Narrator (en)"<br>"Warm Conversational Voice (en)"<br>"Warm Storyteller (en)"<br>"Dramatic Character Male (en)"<br>"News Narrator (zh)"<br>"Lively Female (zh)"<br>"Gentle Female (zh)"<br>"Energetic Female (ja)"<br>"Calm Female (ja)"<br>"Calm Male (ja)"<br>"custom" |
 
 사전 설정 음성 옵션은 영어(en), 중국어(zh), 일본어(ja) 음성을 포함하며 추가 입력이 필요하지 않습니다.
 
-### 사용자 지정 입력
+### 커스텀 입력
 
-이 입력은 `voice`가 "custom"으로 설정된 경우 표시됩니다.
+이 입력들은 `voice`가 "custom"으로 설정된 경우에 나타납니다.
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `voice_id` | fish.audio의 음성 모델 ID입니다. 예: https://fish.audio/m/<id>/의 ID. 기본값: 빈 문자열. | STRING | 예 | 유효한 Fish Audio 음성 모델 ID |
+| `voice_id` | fish.audio의 음성 모델 ID입니다. 예: https://fish.audio/m/<id>/의 ID. 기본값: 빈 문자열. | STRING | 예 | Any valid Fish Audio voice model ID |
 
-참고: `voice`가 "custom"으로 설정된 경우, 공백을 제거한 후 `voice_id`가 비어 있으면 안 됩니다. 그렇지 않으면 노드에서 "Custom voice ID is empty." 오류가 발생합니다. 인식할 수 없는 음성 옵션이 전달되면 노드에서 "Unknown voice" 오류가 발생합니다.
+참고: `voice`가 "custom"으로 설정된 경우, `voice_id`는 공백을 제거한 후 비어 있으면 안 됩니다. 그렇지 않으면 노드에서 "Custom voice ID is empty." 오류가 발생합니다. 인식할 수 없는 음성 옵션이 전달되면 노드에서 "Unknown voice" 오류가 발생합니다.
 
 ## 출력
 

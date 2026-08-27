@@ -1,20 +1,20 @@
 # MeshToFile3D
 
-Este nodo serializa una malla en un objeto de archivo GLB que puede pasarse a los nodos Save 3D o Preview 3D. Transporta todos los datos de la malla, incluidos UVs, colores, normales, textura, mapas de normales/oclusión/emisión y ajustes de material. Solo se utiliza el primer elemento de un lote de múltiples elementos.
+Este nodo serializa una malla en un objeto de archivo GLB que se puede pasar a los nodos Save 3D o Preview 3D. Incluye todos los datos de la malla, incluyendo UV, colores, normales, textura, mapas de normales/oclusión/emisión y ajustes de material. Solo se utiliza el primer elemento de un lote con varios elementos.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `mesh` | La malla a convertir en un archivo GLB, incluidos UVs, colores, normales, textura, mapas de normales/oclusión/emisión y material. Solo se admite un elemento por lote; si un lote contiene varios elementos, se utiliza el primero. | MESH | Sí | Malla única |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `malla` | La malla que se convertirá en un archivo GLB, incluyendo UV, colores, normales, textura, mapas de normales/oclusión/emisión y material. Solo se admite un elemento por lote; si un lote contiene varios elementos, se utiliza el primero. | MESH | Sí | Malla única |
 
-Nota: El nodo solo admite un elemento por lote. Si la malla de entrada contiene más de un elemento en su lote, se registra una advertencia y se utiliza el primer elemento. La malla debe contener al menos un vértice y una cara; una malla vacía genera un error.
+Nota: El nodo admite solo un elemento por lote. Si la malla de entrada contiene más de un elemento en su lote, se registra una advertencia y se utiliza el primer elemento. La malla debe contener al menos un vértice y una cara; una malla vacía genera un error.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `model_3d` | Un objeto de archivo GLB (glTF binario) que contiene la malla serializada, listo para ser guardado o previsualizado por otros nodos 3D. | FILE3D |
+| `modelo 3D` | Un objeto de archivo GLB (glTF binario) que contiene la malla serializada, listo para ser guardado o previsualizado por otros nodos 3D. | FILE3D |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshToFile3D/es.md)
 

@@ -1,22 +1,24 @@
 # ReferenciaDeEstiloUSO
 
-El nodo USOStyleReference aplica parches de referencia de estilo a modelos utilizando características de imagen codificadas provenientes de la salida de CLIP vision. Crea una versión modificada del modelo de entrada incorporando información de estilo extraída de entradas visuales, lo que permite capacidades de transferencia de estilo o generación basada en referencias.
+El nodo USOStyleReference aplica una referencia de estilo a un modelo combinando las características de visión de CLIP con un parche de modelo, y devuelve una copia parcheada del modelo de entrada. Está diseñado para modelos Flux y está marcado como experimental. La información de estilo visual se combina con el condicionamiento de texto del modelo para que pueda influir en la generación.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo base al que se le aplicará el parche de referencia de estilo | MODEL | Sí | - |
-| `parche_del_modelo` | El parche de modelo que contiene la información de referencia de estilo | MODEL_PATCH | Sí | - |
-| `salida_de_visión_clip` | Las características visuales codificadas extraídas del procesamiento de CLIP vision | CLIP_VISION_OUTPUT | Sí | - |
+| `modelo` | El modelo base al que se le aplica el parche de referencia de estilo. | MODEL | Sí | - |
+| `parche_del_modelo` | El parche de modelo que contiene el modelo de proyección utilizado para codificar las características de la imagen de referencia. | MODEL_PATCH | Sí | - |
+| `salida_de_visión_clip` | Las características visuales codificadas extraídas del procesamiento de visión CLIP de la imagen de referencia. | CLIP_VISION_OUTPUT | Sí | - |
+
+Nota: El `clip_vision_output` debe provenir de un modelo de visión CLIP que proporcione los estados ocultos completos y el penúltimo estado oculto. El nodo combina los estados ocultos vigésimo desde el último, undécimo desde el último y penúltimo en la incrustación de estilo. El `model_patch` debe exponer un modelo de proyección a través de su atributo `model` que convierta estas características de imagen en la incrustación de estilo. Durante el muestreo, la incrustación de estilo se antepone al condicionamiento de texto para que pueda influir en la generación.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `modelo` | El modelo modificado con los parches de referencia de estilo aplicados | MODEL |
+| `model` | El modelo modificado con el parche de referencia de estilo aplicado. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/USOStyleReference/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `fd800fb927677da29e148bfa1b287efed82895860ce4b0241d662579d2c07ff4`
+**Source fingerprint (SHA-256):** `9033dddb76fafb388c67dcd09d96102a7ab3e5bc416cec61bf18d088da37a0f0`

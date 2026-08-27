@@ -1,23 +1,23 @@
-# LTXVModalityGuidance
+# LTXV Mod Modu Yönlendirme (A/V eşleşmesi)
 
-Bu düğüm, bir LTXV-AV modeline çapraz mod (ses-video) yönlendirmesi uygular. Örnekleme sırasında, sesden videoya ve videodan sese çapraz dikkat bağlantıları devre dışı bırakılmış şekilde her adımda bir ekstra ileri geçiş çalıştırır ve sonucu birleşik tahmine doğru iter. Bu, dudak senkronizasyonu gibi görsel-işitsel senkronizasyonu güçlendirir. `modality_scale` için referans varsayılan değer 3.0'dır; 1.0 olarak ayarlamak ekstra geçişi devre dışı bırakır.
+Bu düğüm, bir LTXV-AV modeline modaliteler arası (ses-görüntü) rehberlik uygular. Örnekleme sırasında, ses-görüntü ve görüntü-ses çapraz dikkat bağlantıları devre dışı bırakılmış halde her adımda fazladan bir ileri geçiş çalıştırır ve sonucu eşleştirilmiş tahmine doğru iterek dudak senkronizasyonu gibi ses-görüntü senkronizasyonunu güçlendirir. `modality_scale` için referans varsayılan değeri 3.0'dır; 1.0'a ayarlamak ekstra geçişi devre dışı bırakır ve bu, çift-CFG kılavuzu ve STG ile birlikte çalışır.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Üzerine modalite yönlendirmesi uygulanacak temel model. Dahili olarak klonlanır ve orijinal model değişmeden bırakılır. | MODEL | Evet | - |
-| `modality_scale` | Ses-video birleştirme yönlendirmesinin gücü. Varsayılan 3.0'dır. Ekstra ileri geçişi devre dışı bırakmak için 1.0 olarak ayarlayın. | FLOAT | Evet | 1.0 ile 100.0 arası (default: 3.0) |
-| `başlangıç_yüzdesi` | Modalite yönlendirmesinin başladığı örnekleme sürecindeki nokta (0.0 ile 1.0 arasında bir yüzde). Varsayılan 0.0'dır. | FLOAT | Evet | 0.0 ile 1.0 arası (default: 0.0) |
-| `bitiş_yüzdesi` | Modalite yönlendirmesinin sona erdiği örnekleme sürecindeki nokta (0.0 ile 1.0 arasında bir yüzde). Varsayılan 1.0'dır. | FLOAT | Evet | 0.0 ile 1.0 arası (default: 1.0) |
+| `model` | Modalite rehberliğinin uygulanacağı temel model. Dahili olarak kopyalanır ve orijinal model değişmeden kalır. | MODEL | Evet | - |
+| `modality_scale` | Ses-görüntü birleştirme rehberliğinin gücü. Varsayılan 3.0'dır. Ekstra ileri geçişi devre dışı bırakmak için 1.0'a ayarlayın. | FLOAT | Evet | 1.0 ila 100.0 (varsayılan: 3.0) |
+| `başlangıç_yüzdesi` | Örnekleme sürecinde modalite rehberliğinin başladığı nokta (0.0 ile 1.0 arasında bir yüzde olarak). Bu gelişmiş bir parametredir. Varsayılan 0.0'dır. | FLOAT | Evet | 0.0 ila 1.0 (varsayılan: 0.0) |
+| `bitiş_yüzdesi` | Örnekleme sürecinde modalite rehberliğinin bittiği nokta (0.0 ile 1.0 arasında bir yüzde olarak). Bu gelişmiş bir parametredir. Varsayılan 1.0'dır. | FLOAT | Evet | 0.0 ila 1.0 (varsayılan: 1.0) |
 
-Yönlendirme yalnızca sigma değerleri `start_percent` ve `end_percent` tarafından tanımlanan aralığa giren örnekleme adımlarına uygulanır. Bu aralığın dışında, düğüm gürültüsü giderilmiş sonucu değiştirmeden döndürür. `modality_scale` değerinin 1.0 olması ayrıca ekstra ileri geçişi tamamen devre dışı bırakır.
+Rehberlik yalnızca sigma değerleri `start_percent` ve `end_percent` tarafından tanımlanan aralığa giren örnekleme adımlarına uygulanır. Bu aralığın dışında, düğüm gürültüden arındırılmış sonucu değiştirmeden döndürür. `modality_scale` değerinin 1.0 olması da ekstra ileri geçişi tamamen devre dışı bırakır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `model` | Üzerine CFG sonrası yönlendirme işlevi eklenmiş klonlanmış model. Bu değiştirilmiş model, örnekleme sırasında modalite yönlendirmesi uygular. | MODEL |
+| `model` | CFG sonrası rehberlik işlevi eklenmiş kopyalanmış model. Bu değiştirilmiş model, örnekleme sırasında modalite rehberliği uygular. | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVModalityGuidance/tr.md)
 

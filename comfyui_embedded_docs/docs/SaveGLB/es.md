@@ -1,21 +1,23 @@
 # GuardarGLB
 
-El nodo SaveGLB guarda datos de malla 3D o archivos 3D en el directorio de salida. Acepta datos de malla o varios formatos de archivo 3D (GLB, GLTF, OBJ, FBX, STL, USDZ) y los exporta con un prefijo de nombre de archivo especificado. Al guardar datos de malla, puede manejar múltiples mallas y agrega automáticamente metadatos del flujo de trabajo a los archivos cuando los metadatos están habilitados.
+El nodo SaveGLB guarda datos de malla 3D o entradas de archivos 3D en el directorio de salida. Acepta datos de malla y formatos de archivo 3D comunes (GLB, GLTF, OBJ, FBX, STL, USDZ, PLY, SPLAT, SPZ, KSPLAT) y los exporta con el prefijo de nombre de archivo especificado. Las entradas de malla se escriben como archivos GLB, uno por elemento del lote, mientras que las entradas de archivos 3D se guardan en su formato original.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
-| --- | --- | --- | --- | --- |
-| `malla` | Malla o archivo 3D a guardar. Acepta datos de malla o formatos de archivo 3D, incluyendo GLB, GLTF, OBJ, FBX, STL y USDZ | MESH o FILE3D | Sí | - |
-| `prefijo_nombre_archivo` | El prefijo para el nombre del archivo de salida (predeterminado: "3d/ComfyUI") | STRING | No | - |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `malla` | Malla o archivo 3D a guardar | MESH or FILE3D | Sí | Mesh data<br>GLB<br>GLTF<br>OBJ<br>FBX<br>STL<br>USDZ<br>PLY<br>SPLAT<br>SPZ<br>KSPLAT<br>Any splat format<br>Any point cloud format<br>Any 3D file format |
+| `prefijo_nombre_archivo` | El prefijo para el nombre de archivo de salida (por defecto: "3d/ComfyUI"). El prefijo puede incluir una ruta de subcarpeta, por lo que los archivos se guardan en la subcarpeta "3d" del directorio de salida de forma predeterminada | STRING | No | - |
+
+Nota: Cuando la entrada `mesh` es un archivo 3D, el nodo lo guarda usando su extensión de formato original (se usa GLB si el archivo no tiene formato). Cuando son datos de malla, cada elemento del lote se guarda como un archivo `.glb` separado; los elementos vacíos (sin vértices ni caras) se omiten con una advertencia. Los nombres de archivo de salida siguen el patrón `{filename_prefix}_{counter:05}_.{ext}` con un contador creciente. Los metadatos del flujo de trabajo (prompt e información PNG adicional) se incrustan en los archivos guardados cuando los metadatos están habilitados.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-| --- | --- | --- |
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
 | `ui` | Muestra los archivos 3D guardados en la interfaz de usuario con información de nombre de archivo, subcarpeta y tipo | UI |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveGLB/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `bd36600185aeb793cd4e9f37f3b4464267cb36f451fdcf71aff83077bb8c3f53`
+**Source fingerprint (SHA-256):** `366b56c4fd6e3c2f7783222990792a982857b3419a2becfa27ddfa37853bb22c`

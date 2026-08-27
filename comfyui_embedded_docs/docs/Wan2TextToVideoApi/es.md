@@ -1,17 +1,17 @@
 # Wan 2.7 Texto a Video
 
-Este nodo genera un video a partir de una descripción de texto utilizando el modelo Wan 2.7. Envía tu solicitud a una API externa, que procesa el prompt y devuelve un archivo de video. Opcionalmente, puedes proporcionar un clip de audio para influir en el movimiento y la sincronización del video.
+Este nodo genera un video a partir de una descripción de texto utilizando el modelo Wan 2.7. Envía tu prompt a la API de generación de video de Wan, espera a que la tarea finalice y devuelve el video resultante. Opcionalmente, puedes conectar un clip de audio para influir en el movimiento y la sincronización del video; si no se proporciona audio, el modelo genera automáticamente audio coincidente.
 
 ## Entradas
 
-Las entradas incluyen configuraciones comunes y configuraciones específicas del modelo que aparecen cuando se selecciona el modelo `wan2.7-t2v`.
-
 ### Entradas comunes
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
+Estas entradas están siempre disponibles en el nivel superior del nodo.
+
+| Parámetro | Descripción | Tipo de datos | Obligatoria | Rango |
+|-----------|-------------|---------------|-------------|-------|
 | `modelo` | El modelo específico a utilizar para la generación de video. | DYNAMIC_COMBO | Sí | `"wan2.7-t2v"` |
-| `audio` | Audio para guiar la generación del video (por ejemplo, sincronización de labios, movimiento sincronizado al ritmo). Duración: 1.5s-60s. Si no se proporciona, el modelo genera automáticamente música de fondo o efectos de sonido coherentes. | AUDIO | No | - |
+| `audio` | Audio para impulsar la generación de video (por ejemplo, sincronización de labios, movimiento sincronizado con el ritmo). Duración: 3s-30s. Si no se proporciona, el modelo genera automáticamente música de fondo o efectos de sonido coincidentes. | AUDIO | No | - |
 | `semilla` | Semilla a utilizar para la generación (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
 | `extender_prompt` | Si se debe mejorar el prompt con asistencia de IA (predeterminado: True). | BOOLEAN | Sí | True<br>False |
 | `marca de agua` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False). | BOOLEAN | Sí | True<br>False |
@@ -20,15 +20,15 @@ Las entradas incluyen configuraciones comunes y configuraciones específicas del
 
 Estos ajustes aparecen cuando se selecciona el modelo `wan2.7-t2v`.
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
+| Parámetro | Descripción | Tipo de datos | Obligatoria | Rango |
+|-----------|-------------|---------------|-------------|-------|
 | `prompt` | Prompt que describe los elementos y las características visuales. Admite inglés y chino. | STRING | Sí | - |
-| `negative_prompt` | Prompt negativo que describe lo que se debe evitar. | STRING | No | - |
+| `negative_prompt` | Prompt negativo que describe lo que se debe evitar. El valor predeterminado es una cadena vacía. | STRING | No | - |
 | `resolution` | La resolución del video de salida. | COMBO | Sí | `"720P"`<br>`"1080P"` |
 | `ratio` | La relación de aspecto del video de salida. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | La duración del video en segundos (predeterminado: 5). | INT | Sí | 2 a 15 |
 
-**Nota:** La entrada `prompt` no debe estar vacía. La entrada `audio` es opcional; si se proporciona, su duración debe estar entre 1.5 y 60 segundos. Si se omite, el modelo genera automáticamente el audio correspondiente. Cuando `negative_prompt` se deja vacío, no se envía a la API. `prompt_extend` y `watermark` son opciones avanzadas.
+**Nota:** La entrada `prompt` no debe estar vacía. La entrada `audio` es opcional; si se proporciona, el nodo acepta audio de entre 1.5 y 60 segundos, aunque la información emergente recomiende 3s-30s. Si no se suministra audio, el modelo genera automáticamente audio coincidente. Cuando `negative_prompt` se deja vacío, no se envía a la API. `prompt_extend` y `watermark` son opciones avanzadas.
 
 ## Salidas
 

@@ -1,21 +1,21 @@
 # BoşGizliHunyuan3Dv2
 
-EmptyLatentHunyuan3Dv2 düğümü, Hunyuan3Dv2 3B oluşturma modelleri için özel olarak biçimlendirilmiş boş gizil tensörler oluşturur. Hunyuan3Dv2 mimarisi tarafından gereken doğru boyut ve yapıya sahip boş gizil uzaylar üreterek, 3B oluşturma iş akışlarına sıfırdan başlamanızı sağlar. Düğüm, sonraki 3B oluşturma süreçleri için temel görevi gören, sıfırlarla doldurulmuş gizil tensörler üretir.
+The EmptyLatentHunyuan3Dv2 düğümü, Hunyuan3Dv2 3B üretim modelleri için özel olarak biçimlendirilmiş boş latent tensörler oluşturur. Hunyuan3Dv2 mimarisinin gerektirdiği doğru boyutlara ve yapıya sahip boş latent uzaylar üretir ve 3B üretim iş akışlarına sıfırdan başlamanızı sağlar. Düğüm, sonraki 3B üretim süreçlerinin temelini oluşturan sıfırlarla doldurulmuş latent tensörler üretir.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Tipi | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `çözünürlük` | Gizil uzay için çözünürlük boyutu (varsayılan: 3072) | INT | Evet | 1 - 8192 |
-| `toplu_boyut` | Gruptaki gizil görüntü sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `çözünürlük` | Gizli uzay için çözünürlük boyutu (varsayılan: 3072) | INT | Evet | 1 - 8192 |
+| `toplu_boyut` | Partideki gizli görüntü sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Tipi |
 | --- | --- | --- |
-| `LATENT` | Hunyuan3Dv2 3B oluşturma için biçimlendirilmiş boş örnekler içeren bir gizil tensör döndürür | LATENT |
+| `LATENT` | Hunyuan3Dv2 3B üretimi için biçimlendirilmiş, "hunyuan3dv2" türüyle etiketlenmiş boş örnekler içeren bir latent tensör döndürür | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyLatentHunyuan3Dv2/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `f912b226bcec4e2edd52250682d0583ab378b5502173f8e027e0e8fbff1db08f`
+**Source fingerprint (SHA-256):** `e9061301341ab84290cd2b16d5307636310a0772562cf485e3444876e4786ddd`

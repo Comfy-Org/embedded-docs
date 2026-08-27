@@ -1,20 +1,22 @@
 # Manuel Sigmalar
 
-ManualSigmas düğümü, örnekleme süreci için özel bir gürültü seviyesi (sigma) dizisini manuel olarak tanımlamanıza olanak tanır. Bir sayı listesini dize olarak girersiniz ve düğüm bunları diğer örnekleme düğümleri tarafından kullanılabilecek bir tensöre dönüştürür. Bu, belirli gürültü programlarını test etmek veya oluşturmak için kullanışlıdır.
+The ManualSigmas node allows you to manually define a custom sequence of noise levels (sigmas) for the sampling process. You input a list of numbers as a string, and the node converts them into a tensor that can be used by other sampling nodes. This is useful for testing or creating specific noise schedules.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `sigmalar` | Sigma değerlerini içeren bir dize. Düğüm, bu dizedeki tüm sayıları çıkarır. Örneğin, "1, 0.5, 0.1" veya "1 0.5 0.1". Varsayılan değer "1, 0.5" şeklindedir. | STRING | Evet | Virgül veya boşlukla ayrılmış herhangi bir sayı |
+| `sigmalar` | Sigma değerlerini içeren bir dize. Düğüm, bu dizeden ondalık ve negatif değerler dahil tüm sayıları çıkarır. Örneğin, "1, 0.5, 0.1" veya "1 0.5 0.1". Varsayılan: "1, 0.5". | STRING | Evet | Virgül veya boşlukla ayrılmış herhangi bir sayısal değer |
 
-## Çıkışlar
+Not: Bu düğüm deneysel olarak işaretlenmiştir.
 
-| Çıkış Adı | Açıklama | Veri Türü |
+## Çıktılar
+
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `sigmalar` | Giriş dizesinden çıkarılan sigma değerleri dizisini içeren tensör. | SIGMAS |
+| `sigmas` | Girdi dizesinden çıkarılan sigma değerleri dizisini içeren bir tensör. | SIGMAS |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ManualSigmas/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `b815633dfea8f529f487f46b2d0464fa8c1045df8c4d4ef586bd36ad6f4a28db`
+**Source fingerprint (SHA-256):** `19d938ef0eac7343a3138393a039f63632b0763e3884636653c06b91b6f44ed6`

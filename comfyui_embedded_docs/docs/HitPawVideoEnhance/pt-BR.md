@@ -1,29 +1,41 @@
 # HitPaw Video Enhance
 
-Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HitPawVideoEnhance/en.md)
-
-O nó HitPaw Video Enhance utiliza uma API externa para melhorar a qualidade de vídeos. Ele aumenta a resolução de vídeos de baixa qualidade para uma resolução superior, remove artefatos visuais e reduz ruídos. O custo do processamento é calculado por segundo do vídeo de entrada.
-
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+### Entradas comuns
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `modelo` | O modelo de IA a ser usado para aprimoramento de vídeo. Selecionar um modelo revela um parâmetro `resolution` aninhado. Os modelos disponíveis e suas resoluções suportadas variam. | DYNAMIC COMBO | Sim | Múltiplas opções disponíveis |
-| `resolução` | A resolução alvo para o vídeo aprimorado. Algumas opções podem não estar disponíveis dependendo do `modelo` selecionado. | COMBO | Sim | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` |
+| `modelo` | O modelo de IA a ser usado para aprimoramento de vídeo. Selecionar um modelo revela um parâmetro `resolution` aninhado. Os modelos disponíveis e suas resoluções compatíveis variam. | DYNAMIC_COMBO | Sim | `"Portrait Restore Model (1x)"`<br>`"Portrait Restore Model (2x)"`<br>`"General Restore Model (1x)"`<br>`"General Restore Model (2x)"`<br>`"General Restore Model (4x)"`<br>`"Ultra HD Model (2x)"`<br>`"Generative Model (1x)"` |
 | `vídeo` | O arquivo de vídeo de entrada a ser aprimorado. | VIDEO | Sim | N/A |
 
-**Restrições:**
+### Entradas do Portrait Restore, General Restore e Ultra HD Model
 
-* O `video` de entrada deve ter duração entre 0,5 segundos e 60 minutos (3600 segundos).
-* A `resolution` selecionada deve ser maior que as dimensões do vídeo de entrada. Se o vídeo for quadrado, a resolução selecionada deve ser maior que sua largura/altura. Para vídeos não quadrados, a resolução selecionada deve ser maior que a dimensão mais curta do vídeo. Se a resolução alvo for menor, um erro será gerado. Escolha `"original"` para manter a resolução do vídeo de entrada.
+Essas opções de resolução são compartilhadas por Portrait Restore Model (1x), Portrait Restore Model (2x), General Restore Model (1x), General Restore Model (2x), General Restore Model (4x) e Ultra HD Model (2x).
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+| --- | --- | --- | --- | --- |
+| `resolução` | A resolução de destino do vídeo aprimorado. Selecionar `"original"` mantém a resolução do vídeo de entrada. | COMBO | Sim | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"`<br>`"8K"` |
+
+### Entradas do Generative Model (1x)
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+| --- | --- | --- | --- | --- |
+| `resolução` | A resolução de destino do vídeo aprimorado. Selecionar `"original"` mantém a resolução do vídeo de entrada. A opção `"8K"` não está disponível para este modelo. | COMBO | Sim | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"` |
+
+**Notas:**
+
+* O `video` de entrada deve ter entre 0,5 segundo e 60 minutos (3600 segundos) de duração.
+* A `resolution` selecionada deve ser pelo menos tão grande quanto as dimensões do vídeo de entrada. Para vídeos quadrados, ela deve ser pelo menos tão grande quanto a largura e a altura do vídeo. Para vídeos não quadrados, ela deve ser pelo menos tão grande quanto a menor dimensão do vídeo. Se a resolução de destino for menor, um erro é gerado. Selecionar `"original"` mantém a resolução do vídeo de entrada.
+* Quando uma resolução diferente de `"original"` é selecionada, vídeos não quadrados são redimensionados de modo que sua menor dimensão corresponda à resolução selecionada, preservando a proporção. Vídeos quadrados são redimensionados de modo que ambas as dimensões correspondam ao tamanho quadrado de destino da resolução selecionada (por exemplo, `"4K/UHD"` produz 2048×2048).
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
+| Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `vídeo` | O arquivo de vídeo aprimorado. | VIDEO |
+| `video` | O arquivo de vídeo aprimorado. | VIDEO |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HitPawVideoEnhance/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `0f329cbf61784474ee5b97a92d28a3e2383dc40e208f8a8317f3c4f60b43e5b2`
+**Source fingerprint (SHA-256):** `42803c7137d62dbce5021cd2bd9b9fba1a89c80e7b3f237f8a0eb03858c49967`

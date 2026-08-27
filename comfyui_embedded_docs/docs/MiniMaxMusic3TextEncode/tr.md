@@ -1,25 +1,25 @@
 # MiniMaxMusic3TextEncode
 
-MiniMax Music3 Text Encode, MiniMax Music3 CLIP modelini kullanarak metin açıklamalarını ve şarkı sözlerini, müzik oluşturmak için kullanılan akustik koşul dizilerine dönüştürür. Bu düğüm, dönüştürülmüş CONDITIONING verilerini ve girdi süresine göre hesaplanan gerçek ses saniyelerini döndürür.
+MiniMax Music3 Text Encode, metin açıklamalarını ve şarkı sözlerini müzik üretimi için akustik koşullandırma dizisine dönüştürmek üzere bir MiniMax Music3 CLIP modeli kullanır. Düğüm, sonuçta ortaya çıkan CONDITIONING verilerini ve girdi maksimum süresinden hesaplanan gerçek ses süresini (saniye cinsinden) döndürür.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `clip` | MiniMax Music3 CLIP modeli; metin kodlama ve koşul dizisi üretimi için kullanılır. | CLIP | Evet | - |
-| `caption` | Oluşturulacak müziği tanımlayan metin içeriği. Çok satırlı metin ve dinamik promptları destekler. | STRING | Evet | - |
-| `lyrics` | Müzik oluşturmak için kullanılacak şarkı sözü metni. Çok satırlı metin ve dinamik promptları destekler. | STRING | Evet | - |
-| `seed` | Üretim süreci için tekrarlanabilir rastgele tohum değeri. Varsayılan değer: 0. | INT | Evet | 0 ile 18446744073709551615 (0xffffffffffffffff) arası |
-| `max_duration` | Oluşturulacak müziğin maksimum süresi (saniye). Model, şarkıyı erken sonlandırabilir. Varsayılan değer: 120.0. | FLOAT | Evet | 0.04 ile modelin maksimum ses süresi (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND) arası, adım 0.04 |
-| `cfg_scale` | Sınıflandırıcısız rehberlik ölçek katsayısı. Varsayılan değer: model sabiti CFG_SCALE. Gelişmiş parametre. | FLOAT | Evet | 0.0 ile 100.0 arası, adım 0.1 (2 ondalık basamak korunur) |
-| `top_k` | Akustik token seçimi için top-k örnekleme değeri. Varsayılan değer: model sabiti CFG_TOP_K. Gelişmiş parametre. | INT | Evet | 1 ile model sözlük boyutu (C0_VOCAB_SIZE) arası |
+| `clip` | MiniMax Music3 CLIP modeli, metin kodlama ve koşullandırma dizisi oluşturma için kullanılır. | CLIP | Evet | - |
+| `caption` | Müzik üretimini tanımlayan metin. Çok satırlı metin ve dinamik istemleri destekler. | STRING | Evet | - |
+| `şarkı sözleri` | Müzik üretiminde kullanılacak şarkı sözü metni. Çok satırlı metin ve dinamik istemleri destekler. | STRING | Evet | - |
+| `tohum` | Üretim süreci için tekrarlanabilir rastgele tohum. Varsayılan: 0. | INT | Evet | 0 ile 18446744073709551615 (0xffffffffffffffff) |
+| `max_duration` | Saniye cinsinden maksimum süre; model şarkıyı daha erken bitirebilir. Varsayılan: 120.0. | FLOAT | Evet | 0.04 to the model's maximum audio duration (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND), step 0.04 |
+| `cfg_scale` | Sınıflandırıcısız rehberlik ölçeği. Varsayılan: model sabiti CFG_SCALE. Gelişmiş parametre. | FLOAT | Evet | 0.0 ile 100.0, step 0.1 (keeps 2 decimal places) |
+| `top_k` | Akustik token seçimi için kullanılan top-k örnekleme değeri. Varsayılan: model sabiti CFG_TOP_K. Gelişmiş parametre. | INT | Evet | 1 to the model's vocabulary size (C0_VOCAB_SIZE) |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `conditioning` | Sonraki müzik üretimini yönlendirmek için kullanılan, üretilmiş akustik koşul dizisi. | CONDITIONING |
-| `seconds` | Koşul dizisine karşılık gelen gerçek süre, saniye cinsinden. | FLOAT |
+| `conditioning` | Üretilen akustik koşullandırma dizisi, sonraki müzik üretimini yönlendirmek için kullanılır. | CONDITIONING |
+| `saniye` | Koşullandırma dizisinin gerçek süresi, saniye cinsinden. | FLOAT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MiniMaxMusic3TextEncode/tr.md)
 

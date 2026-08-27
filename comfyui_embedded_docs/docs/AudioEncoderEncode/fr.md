@@ -1,13 +1,13 @@
 # EncodeurAudioEncoder
 
-Le nœud AudioEncoderEncode traite des données audio en les encodant à l'aide d'un modèle d'encodeur audio. Il prend une entrée audio et la convertit en une représentation encodée pouvant être utilisée pour un traitement ultérieur dans le pipeline de conditionnement. Ce nœud transforme les formes d'onde audio brutes en un format adapté aux applications d'apprentissage automatique basées sur l'audio.
+Le nœud AudioEncoderEncode convertit des données audio en une représentation encodée à l'aide d'un modèle d'encodeur audio. Il prend un encodeur audio et une entrée audio brute, puis extrait la forme d'onde et la fréquence d'échantillonnage de l'audio pour produire une sortie encodée adaptée à un traitement ultérieur dans le pipeline de conditionnement.
 
 ## Entrées
 
-| Paramètre | Description | Type de données | Type d'entrée | Défaut | Plage |
-| --- | --- | --- | --- | --- | --- |
-| `encodeur_audio` | Le modèle d'encodeur audio utilisé pour traiter l'entrée audio | AUDIO_ENCODER | Requis | - | - |
-| `audio` | Les données audio contenant les informations de forme d'onde et de fréquence d'échantillonnage | AUDIO | Requis | - | - |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `encodeur_audio` | Le modèle d'encodeur audio utilisé pour traiter l'entrée audio | AUDIO_ENCODER | Oui | - |
+| `audio` | Les données audio contenant les informations de forme d'onde et de fréquence d'échantillonnage | AUDIO | Oui | - |
 
 ## Sorties
 
@@ -18,4 +18,4 @@ Le nœud AudioEncoderEncode traite des données audio en les encodant à l'aide 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioEncoderEncode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `8de45c157937ee95fbaef06aaefe478db7be8b16088d92720d977fe3d14eee39`
+**Source fingerprint (SHA-256):** `85f77152ccc1e3f4687e2b655283e69e03d90b862d6a676dcb89ea973dd70a63`

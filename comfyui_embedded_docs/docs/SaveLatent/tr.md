@@ -1,23 +1,26 @@
 # GizliDeğişkeniKaydet
 
-SaveLatent düğümü, gizli tensörleri dosya olarak diske kaydederek daha sonra kullanım veya paylaşım için saklar. Gizli örnekleri alır ve isteğe bağlı olarak bilgi istemi bilgilerini içeren meta verilerle birlikte çıktı dizinine kaydeder. Düğüm, gizli veri yapısını korurken dosya adlandırma ve düzenlemeyi otomatik olarak halleder.
+SaveLatent, latent tensörleri `.latent` dosyaları olarak diske kaydeder; böylece daha sonra yeniden kullanılabilir veya paylaşılabilirler. Latent örneklerini alır, otomatik oluşturulan bir adla çıktı klasörüne yazar ve kaydedilen dosyaya prompt gibi iş akışı meta verilerini gömmek mümkündür. Aynı latent örnekler, daha sonraki işlemler için değiştirilmeden iletilir.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `örnekler` | Diske kaydedilecek gizli örnekler | LATENT | Evet | - |
-| `dosyaadı_öneki` | Çıktı dosya adı için ön ek (varsayılan: "latents/ComfyUI") | STRING | Hayır | - |
-| `prompt` | Meta verilere dahil edilecek bilgi istemi bilgisi (gizli parametre) | PROMPT | Hayır | - |
-| `extra_pnginfo` | Meta verilere dahil edilecek ek PNG bilgisi (gizli parametre) | EXTRA_PNGINFO | Hayır | - |
+| `örnekler` | Diske kaydedilecek latent örnekler. | LATENT | Evet | - |
+| `dosyaadı_öneki` | Çıktı dosya adını oluşturmak için kullanılan önek. Alt klasörler içerebilir, örneğin `latents/ComfyUI` (varsayılan: `latents/ComfyUI`). | STRING | Evet | - |
+| `prompt` | JSON olarak serileştirilmiş ve kaydedilen dosya meta verilerinde saklanan iş akışı promptu (gizli parametre, otomatik olarak sağlanır). | PROMPT | Hayır | - |
+| `extra_pnginfo` | JSON olarak serileştirilmiş ve kaydedilen dosya meta verilerinde saklanan ek iş akışı bilgisi (gizli parametre, otomatik olarak sağlanır). | EXTRA_PNGINFO | Hayır | - |
+
+Not: Kaydedilen her dosya, önek ve 5 haneli bir sayaç kullanılarak adlandırılır, örneğin `ComfyUI_00001_.latent` ve çıktı dizinine yerleştirilir. Dosya, latent tensörünü ve latent format sürüm işaretçisini içerir. Meta veriler, yalnızca meta veri desteği etkinleştirildiğinde, yani ComfyUI `--disable-metadata` seçeneğiyle başlatılmadığında kaydedilen dosyaya gömülür.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `samples` | Kaydedilen gizli dosyanın ComfyUI arayüzünde dosya konumu bilgisini sağlar | UI |
+| `samples` | Girdi olarak sağlanan aynı latent örnekler, değiştirilmeden geçirilir. | LATENT |
+| `ui` | Kaydedilen dosyayı tanımlayan arayüz görüntüleme verileri: dosya adı, alt klasör ve çıktı türü (`output`). | UI |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLatent/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `dc7fd101c8dd93e2bcc39de64e0c39abe8e056c9e5932587fc6ce80e2fd143e8`
+**Source fingerprint (SHA-256):** `137d52d589d93d8229940a8572621ab6eeb25a4e13ac05172e9f8609f1af038a`

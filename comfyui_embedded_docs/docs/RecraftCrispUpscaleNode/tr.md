@@ -1,22 +1,20 @@
 # Recraft Net Büyütme Görüntüsü
 
-Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCrispUpscaleNode/en.md)
+'crisp upscale' aracını kullanarak bir girdi görüntüsünü senkronize şekilde büyütür, çözünürlüğünü artırır ve daha keskin ve temiz hale getirir. Girdi batch'indeki her görüntü bağımsız olarak işlenir ve büyütülmüş sonuçlar bir batch olarak döndürülür.
 
-Görüntüyü eşzamanlı olarak büyütür. 'Keskin büyütme' aracını kullanarak verilen bir raster görüntüyü iyileştirir, görüntü çözünürlüğünü artırır, görüntüyü daha keskin ve temiz hale getirir.
-
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-| --- | --- | --- | --- | --- |
-| `görüntü` | Büyütülecek giriş görüntüsü. Bir görüntü grubunu kabul eder. | IMAGE | Evet | - |
+|-----------|-------------|-----------|----------|-------|
+| `görüntü` | Büyütülecek girdi görüntüsü. Bir batch görüntü kabul eder. | IMAGE | Evet | — |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
-| --- | --- | --- |
-| `görüntü` | Geliştirilmiş çözünürlük ve netlikle büyütülmüş görüntü. Giriş olarak bir grup sağlanmışsa, bir görüntü grubu döndürür. | IMAGE |
+| Çıktı Adı | Açıklama | Veri Türü |
+|-------------|-------------|-----------|
+| `image` | Geliştirilmiş çözünürlük ve netliğe sahip büyütülmüş görüntü. Girdi olarak bir batch sağlandıysa bir batch görüntü döndürür. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCrispUpscaleNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `2c7f6cf4dc801ac83b365bfc501baffb573aa8dde432fa56c57b3d522b4068c6`
+**Source fingerprint (SHA-256):** `7a60c563504df7a81ce5d50e989bc4a8853f4bb30805a014c9fb567d8ec83e33`

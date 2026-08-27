@@ -1,21 +1,21 @@
 # RenderUVAtlas
 
-Bir mesh'in UV yerleşimini bir görüntü olarak işler. Birbirine bağlı her UV bölgesi (chart) farklı bir renkle doldurulur ve chart sınırları koyu gri bir arka plan üzerinde siyah renkle çerçevelenir.
+Bir mesh'in UV yerleşimini görüntü olarak render eder. Birbirine bağlı her UV bölgesi (chart) farklı bir renkle doldurulur ve chart sınırları, koyu gri bir arka plan üzerinde siyah çizgilerle çevrelenir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `mesh` | UV yerleşimi işlenecek 3B mesh. Mesh'in UV koordinatlarına sahip olması gerekir; aksi takdirde bir hata verilir. | MESH | Evet | - |
-| `resolution` | İşlenen görüntünün piksel cinsinden genişliği ve yüksekliği (varsayılan: 1024). | INT | Evet | 64 ila 4096 (adım 64) |
+| `ağ` | UV yerleşimi render edilecek 3D mesh. Mesh'in UV koordinatlarına sahip olması gerekir; aksi takdirde bir hata verilir. | MESH | Evet | - |
+| `çözünürlük` | Render edilen görüntünün piksel cinsinden genişliği ve yüksekliği (varsayılan: 1024). | INT | Evet | 64 ila 4096 (adım 64) |
 
-Not: Mesh'in UV koordinatları yoksa düğüm "mesh has no UVs to render. Run UnwrapMesh first." hatasını verir. Mesh bir batch boyutu içeriyorsa (3B UV veya yüz dizileri), batch içindeki yalnızca ilk öğe işlenir.
+Not: Mesh'in UV koordinatları yoksa, düğüm "mesh has no UVs to render. Run UnwrapMesh first." hatasını verir. Mesh bir batch boyutu içeriyorsa (3D UV veya yüz dizileri), batch içindeki yalnızca ilk öğe render edilir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `image` | İşlenmiş UV atlas görüntüsü; her chart renklendirilmiş ve chart sınır kenarları siyahla çerçevelenmiştir. | IMAGE |
+| `görüntü` | Her chart'ın renklendirildiği ve chart sınır kenarlarının siyah çizgilerle çevrelendiği render edilmiş UV atlas görüntüsü. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RenderUVAtlas/tr.md)
 

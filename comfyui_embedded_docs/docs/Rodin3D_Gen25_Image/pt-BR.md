@@ -32,7 +32,7 @@ Este nó gera um modelo 3D a partir de uma a cinco imagens de referência usando
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `model_file` | O arquivo de modelo 3D gerado no formato de geometria selecionado. | FILE3D |
+| `arquivo_modelo` | O arquivo de modelo 3D gerado no formato de geometria selecionado. | FILE3D |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Gen25_Image/pt-BR.md)
 

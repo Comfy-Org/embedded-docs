@@ -1,23 +1,25 @@
 # VAE Sesini Çöz (Döşemeli)
 
-Bu düğüm, sıkıştırılmış bir ses temsilini (latent örnekler) bir Değişken Otomatik Kodlayıcı (VAE) kullanarak tekrar ses dalga formuna dönüştürür. Verileri, bellek kullanımını yönetmek için daha küçük, örtüşen bölümler (tile'lar) halinde işler; bu da onu daha uzun ses dizilerini işlemek için uygun hale getirir.
+Bu düğüm, Varyasyonel Otomatik Kodlayıcı (VAE) kullanarak sıkıştırılmış bir ses temsilini (gizli örnekler) tekrar bir ses dalga formuna dönüştürür. Verileri, bellek kullanımını yönetmek için daha küçük, üst üste binen bölümler (döşemeler) halinde işler; bu da daha uzun ses dizilerinin işlenmesi için uygundur. Kod çözülen ses ayrıca, ses düzeyi seviyesini tutarlı tutmak için normalize edilir.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `örnekler` | Kod çözülecek sesin sıkıştırılmış latent temsili. | LATENT | Evet | Yok |
-| `vae` | Kod çözme işlemini gerçekleştirmek için kullanılan Değişken Otomatik Kodlayıcı modeli. | VAE | Evet | Yok |
-| `döşeme boyutu` | Her bir işleme tile'ının boyutu. Ses, belleği korumak için bu uzunluktaki bölümler halinde kod çözülür (varsayılan: 512). | INT | Evet | 32 ila 8192 |
-| `örtüşme` | Bitişik tile'ların örtüştüğü örnek sayısı. Bu, tile'lar arasındaki sınırlardaki yapaylıkları azaltmaya yardımcı olur (varsayılan: 64). | INT | Evet | 0 ila 1024 |
+| `örnekler` | Kod çözülecek sesin sıkıştırılmış gizli temsili. | LATENT | Evet | N/A |
+| `vae` | Kod çözme işlemini gerçekleştirmek için kullanılan Varyasyonel Otomatik Kodlayıcı modeli. | VAE | Evet | N/A |
+| `döşeme boyutu` | Her bir işleme döşemesinin boyutu. Ses, bellekten tasarruf etmek için bu uzunluktaki bölümler halinde kod çözülür (varsayılan: 512). | INT | Evet | 32 ile 8192 |
+| `örtüşme` | Bitişik döşemelerin çakıştığı örnek sayısı. Bu, döşemeler arasındaki sınırlarda oluşan bozulmaları azaltmaya yardımcı olur (varsayılan: 64). | INT | Evet | 0 ile 1024 |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | Kod çözülmüş ses dalga formu. | AUDIO |
+| `output` | Kod çözülen ses dalga formu, örnekleme hızı bilgisi dahil. | AUDIO |
+
+Çıkış örnekleme hızı, girdi `samples` bir örnekleme hızı içerdiğinde oradan alınır; aksi takdirde VAE modelinden okunur (varsayılan: 44100 Hz).
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecodeAudioTiled/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d989f0cd0e4b4bf992d6860e27c25b8e814df52763c82909a61c58f418306352`
+**Source fingerprint (SHA-256):** `5ddedf218ba27ab9f463646c1e5288091172f2d7fae8f2980bb2b5e4d3dca89c`

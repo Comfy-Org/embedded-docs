@@ -1,22 +1,20 @@
 # InvertBooleanNode
 
-Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InvertBooleanNode/en.md)
-
-Este nó recebe um único valor booleano (verdadeiro/falso) como entrada e retorna o valor oposto. Ele executa uma operação lógica NÃO, transformando `true` em `false` e `false` em `true`.
+Este nó recebe um único valor booleano (verdadeiro/falso) como entrada e gera o valor oposto. Ele executa uma operação lógica NOT, transformando `true` em `false` e `false` em `true`.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
-| --- | --- | --- | --- | --- |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|---------------|-------------|-----------|
 | `boolean` | O valor booleano de entrada a ser invertido. | BOOLEAN | Sim | `true`<br>`false` |
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
-| --- | --- | --- |
+|---------------|-------------|---------------|
 | `output` | O valor booleano invertido. | BOOLEAN |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InvertBooleanNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `7c927252a80f42836af6ef16f76714e6892454733d698674b547bd65ddb9d607`
+**Source fingerprint (SHA-256):** `7e28bb375a25249bc237870bf281321375c4be7b7782b217b3e0f70afc2e0c53`

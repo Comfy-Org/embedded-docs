@@ -1,53 +1,25 @@
 # LTXV Boş Latent Ses
 
-ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
+LTXV Empty Latent Audio düğümü, sıfırlarla doldurulmuş boş bir latent ses tensör kümesi oluşturur. Sağlanan bir Audio VAE modelinden gelen yapılandırmayı kullanarak latent uzay için doğru boyutları (kanal sayısı ve frekans bölmeleri gibi) belirler ve kare sayısı ile kare hızından ses latentlerinin sayısını hesaplar. Bu boş latent, ComfyUI içindeki ses üretim veya işleme iş akışları için bir başlangıç noktası görevi görür.
 
-## Çeviri Kuralları
+## Girdiler
 
-1. **Çevrilmemesi gereken içerik:**
-   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
-   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
-   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
-   - Kod, dosya yolları
-
-2. **Çevrilmesi gereken içerik:**
-   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
-   - Tüm açıklayıcı metinler
-   - Parametre açıklamaları
-
-3. **Çeviri kalitesi:**
-   - Standart Türkçe kullanın
-   - Profesyonel ama anlaşılır bir üslup koruyun
-   - Teknik doğruluğu sağlayın
-   - Standart Türkçe teknik terminolojiyi kullanın
-
-4. **Format:**
-   - Tüm Markdown biçimlendirmesini koruyun
-   - Tablo yapısını koruyun
-   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
-
-Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
-
-LTXV Boş Latent Ses düğümü, boş (sıfır doldurulmuş) latent ses tensörlerinden oluşan bir grup oluşturur. Kanal sayısı ve frekans aralıkları gibi latent uzay için doğru boyutları belirlemek amacıyla sağlanan bir Ses VAE modelinin yapılandırmasını kullanır. Bu boş latent, ComfyUI içindeki ses oluşturma veya işleme iş akışları için bir başlangıç noktası görevi görür.
-
-## Girişler
-
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `frames_number` | Kare sayısı. Varsayılan değer 97'dir. | INT | Evet | 1 ile 1000 arası |
-| `frame_rate` | Saniyedeki kare sayısı. Varsayılan değer 25'tir. | INT | Evet | 1 ile 1000 arası |
-| `batch_size` | Gruptaki latent ses örneklerinin sayısı. Varsayılan değer 1'dir. | INT | Evet | 1 ile 4096 arası |
-| `audio_vae` | Yapılandırmanın alınacağı Ses VAE modeli. Bu parametre zorunludur. | VAE | Evet | Yok |
+| `frames_number` | Kare sayısı. Varsayılan değer 97'dir. | INT | Evet | 1 ila 1000 |
+| `frame_rate` | Saniyedeki kare sayısı. Varsayılan değer 25.0'tır. FLOAT veya INT değerlerini kabul eder. | FLOAT | Evet | 1.0 ila 1000.0 |
+| `batch_size` | Kümedeki latent ses örneklerinin sayısı. Varsayılan değer 1'dir. | INT | Evet | 1 ila 4096 |
+| `audio_vae` | Yapılandırmanın alınacağı Audio VAE modeli. Bu parametre gereklidir. | VAE | Evet | YOK |
 
-**Not:** `audio_vae` girişi zorunludur. Sağlanmazsa düğüm bir hata verecektir.
+**Not:** `audio_vae` girdisi zorunludur. Sağlanmazsa düğüm bir hata verecektir.
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `Latent` | Giriş Ses VAE'siyle eşleşecek şekilde yapılandırılmış, (batch_size, z_channels, num_audio_latents, audio_freq) yapısında boş bir latent ses tensörü. Çıkış ayrıca "audio" olarak ayarlanmış bir `type` alanı içerir. | LATENT |
+| `Latent` | Girdi Audio VAE ile eşleşecek şekilde yapılandırılmış, (batch_size, z_channels, num_audio_latents, audio_freq) yapısında boş bir latent ses tensörü. Çıktı ayrıca "audio" olarak ayarlanmış bir `type` alanı da içerir. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVEmptyLatentAudio/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `1a8bfea98f14de014069016652b39542cfd9290cae2d870ab4e381e46aa1e08f`
+**Source fingerprint (SHA-256):** `3ac1bf17ebdba7c3a73bdd795f561b7bee31798d8a1efc11b972db1944f873a4`

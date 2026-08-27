@@ -19,7 +19,7 @@ Este nó converte um splat Gaussiano 3D em uma superfície de malha colorida. El
 
 | Nome da Saída | Descrição | Tipo de Dado |
 |---------------|-----------|--------------|
-| `mesh` | A malha colorida extraída com renderização não iluminada (tipo emissiva) para corresponder à aparência do splat | MESH |
+| `malha` | A malha colorida extraída com renderização não iluminada (tipo emissiva) para corresponder à aparência do splat | MESH |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplatToMesh/pt-BR.md)
 

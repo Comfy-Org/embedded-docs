@@ -18,8 +18,8 @@
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `positive` | شرطی‌سازی مثبت اصلاح‌شده با ویژگی‌های اعمال‌شده | CONDITIONING |
-| `negative` | شرطی‌سازی منفی اصلاح‌شده با ویژگی‌های اعمال‌شده | CONDITIONING |
+| `مثبت` | شرطی‌سازی مثبت اصلاح‌شده با ویژگی‌های اعمال‌شده | CONDITIONING |
+| `منفی` | شرطی‌سازی منفی اصلاح‌شده با ویژگی‌های اعمال‌شده | CONDITIONING |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningSetProperties/fa.md)
 

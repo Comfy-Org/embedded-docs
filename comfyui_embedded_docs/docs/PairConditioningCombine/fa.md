@@ -17,8 +17,8 @@
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `positive` | خروجی شرطی‌سازی مثبت ترکیب‌شده | CONDITIONING |
-| `negative` | خروجی شرطی‌سازی منفی ترکیب‌شده | CONDITIONING |
+| `مثبت` | خروجی شرطی‌سازی مثبت ترکیب‌شده | CONDITIONING |
+| `منفی` | خروجی شرطی‌سازی منفی ترکیب‌شده | CONDITIONING |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningCombine/fa.md)
 

@@ -1,6 +1,6 @@
 # Trellis2Conditioning
 
-Trellis2Conditioning convertit une image d'entrée en données de conditionnement pour le modèle TRELLIS.2. Il utilise un modèle de vision CLIP pour encoder l'image en deux ensembles de caractéristiques (aux échelles 512 et 1024) et les regroupe en une paire de conditionnement positif, tout en créant également une paire de conditionnement négatif remplie de zéros qui sert de référence vide.
+Trellis2Conditioning convertit une image d'entrée en données de conditionnement pour le modèle TRELLIS.2. Il utilise un modèle de vision CLIP pour encoder l'image en deux ensembles de caractéristiques (aux échelles 512 et 1024) et les regroupe en une paire de conditionnement positive, tout en créant également une paire de conditionnement négative remplie de zéros correspondante qui sert de référence vide.
 
 ## Entrées
 
@@ -13,8 +13,8 @@ Trellis2Conditioning convertit une image d'entrée en données de conditionnemen
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `positive` | Conditionnement contenant les caractéristiques de l'image encodées aux échelles 512 et 1024, utilisé comme conditionnement positif pour le modèle TRELLIS.2. | CONDITIONING |
-| `negative` | Conditionnement rempli de zéros avec la même forme que le conditionnement positif, utilisé comme référence négative vide. | CONDITIONING |
+| `positif` | Conditionnement contenant les caractéristiques de l'image encodées aux échelles 512 et 1024, utilisé comme conditionnement positif pour le modèle TRELLIS.2. | CONDITIONING |
+| `négatif` | Conditionnement rempli de zéros avec la même forme que le conditionnement positif, utilisé comme référence négative vide. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Trellis2Conditioning/fr.md)
 

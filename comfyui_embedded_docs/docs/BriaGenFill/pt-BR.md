@@ -13,7 +13,7 @@ Este nó gera objetos ou cenas dentro de uma região mascarada de uma imagem usa
 | `negative_prompt` | Um prompt que descreve conteúdo a evitar no resultado gerado. Se deixado vazio, não é enviado à API. | STRING | Sim | - |
 | `refine_prompt` | Ajusta automaticamente o prompt para melhores resultados; desative para usar o prompt exatamente como escrito. (padrão: true) | BOOLEAN | Sim | true<br>false |
 | `seed` | Semente para o processo de geração. (padrão: 42) | INT | Sim | 1 to 2147483647 |
-| `moderation` | Configurações de moderação para a solicitação. Quando definido como "true", as opções de moderação aninhadas descritas abaixo são aplicadas. (padrão: "false") | DYNAMIC_COMBO | Sim | "false"<br>"true" |
+| `moderação` | Configurações de moderação para a solicitação. Quando definido como "true", as opções de moderação aninhadas descritas abaixo são aplicadas. (padrão: "false") | DYNAMIC_COMBO | Sim | "false"<br>"true" |
 
 ### Entradas de moderação
 

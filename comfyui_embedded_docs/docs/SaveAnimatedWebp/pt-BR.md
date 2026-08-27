@@ -17,6 +17,6 @@ Este nó foi projetado para salvar uma sequência de imagens como um arquivo WEB
 
 | Campo | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `ui` | Fornece um componente de interface que exibe as imagens WEBP animadas salvas junto com seus metadados, e indica se a animação está habilitada. | N/A |
+| `imagens` | Fornece um componente de interface que exibe as imagens WEBP animadas salvas junto com seus metadados, e indica se a animação está habilitada. | N/A |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedWEBP/pt-BR.md)

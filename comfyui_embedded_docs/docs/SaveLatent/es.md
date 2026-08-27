@@ -1,23 +1,26 @@
 # GuardarLatente
 
-El nodo SaveLatent guarda tensores latentes en el disco como archivos para su uso posterior o para compartir. Toma muestras latentes y las guarda en el directorio de salida con metadatos opcionales que incluyen información de la indicación. El nodo maneja automáticamente la nomenclatura y organización de archivos, preservando la estructura de datos latentes.
+SaveLatent guarda tensores latentes en el disco como archivos `.latent` para que puedan reutilizarse o compartirse más adelante. Toma muestras latentes, las escribe en la carpeta de salida con un nombre generado automáticamente y puede incrustar metadatos del flujo de trabajo, como el prompt, dentro del archivo guardado. Las mismas muestras latentes también se pasan sin cambios para su posterior procesamiento.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de Datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `muestras` | Las muestras latentes que se guardarán en el disco | LATENT | Sí | - |
-| `prefijo_nombre_archivo` | El prefijo para el nombre del archivo de salida (predeterminado: "latents/ComfyUI") | STRING | No | - |
-| `prompt` | Información de la indicación para incluir en los metadatos (parámetro oculto) | PROMPT | No | - |
-| `extra_pnginfo` | Información adicional PNG para incluir en los metadatos (parámetro oculto) | EXTRA_PNGINFO | No | - |
+| `muestras` | Las muestras latentes que se guardarán en el disco. | LATENT | Sí | - |
+| `prefijo_nombre_archivo` | El prefijo utilizado para construir el nombre del archivo de salida. Puede incluir subcarpetas, por ejemplo "latents/ComfyUI" (predeterminado: "latents/ComfyUI"). | STRING | Sí | - |
+| `prompt` | El prompt del flujo de trabajo, serializado como JSON y almacenado en los metadatos del archivo guardado (parámetro oculto, proporcionado automáticamente). | PROMPT | No | - |
+| `extra_pnginfo` | Información adicional del flujo de trabajo, serializada como JSON y almacenada en los metadatos del archivo guardado (parámetro oculto, proporcionada automáticamente). | EXTRA_PNGINFO | No | - |
+
+Nota: Cada archivo guardado se nombra usando el prefijo y un contador de 5 dígitos, por ejemplo `ComfyUI_00001_.latent`, y se coloca en el directorio de salida. El archivo contiene el tensor latente y un marcador de versión del formato latente. Los metadatos se incrustan en el archivo guardado solo cuando el soporte de metadatos está habilitado, es decir, cuando ComfyUI no se inicia con la opción `--disable-metadata`.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de Salida | Descripción | Tipo de Datos |
 | --- | --- | --- |
-| `samples` | Proporciona información de ubicación del archivo para el latente guardado en la interfaz de ComfyUI | UI |
+| `samples` | Las mismas muestras latentes que se proporcionaron como entrada, pasadas sin cambios. | LATENT |
+| `ui` | Datos de visualización de la interfaz que describen el archivo guardado: su nombre de archivo, subcarpeta y tipo de salida ("output"). | UI |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLatent/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `dc7fd101c8dd93e2bcc39de64e0c39abe8e056c9e5932587fc6ce80e2fd143e8`
+**Source fingerprint (SHA-256):** `137d52d589d93d8229940a8572621ab6eeb25a4e13ac05172e9f8609f1af038a`

@@ -18,7 +18,7 @@ O nó "Meshy: Refinar Modelo Bruto" recebe um modelo 3D bruto gerado anteriormen
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `model_file` | O nome do arquivo do modelo GLB gerado. (Apenas para compatibilidade com versões anteriores) | STRING |
+| `arquivo_do_modelo` | O nome do arquivo do modelo GLB gerado. (Apenas para compatibilidade com versões anteriores) | STRING |
 | `meshy_task_id` | O ID de tarefa único para o trabalho de refinamento enviado. | MESHY_TASK_ID |
 | `GLB` | O modelo 3D final refinado no formato GLB. | FILE3DGLB |
 | `FBX` | O modelo 3D final refinado no formato FBX. | FILE3DFBX |

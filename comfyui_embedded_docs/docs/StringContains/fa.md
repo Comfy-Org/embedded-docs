@@ -14,7 +14,7 @@
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `contains` | اگر زیررشته در رشته پیدا شود true و در غیر این صورت false برمی‌گرداند | BOOLEAN |
+| `شامل` | اگر زیررشته در رشته پیدا شود true و در غیر این صورت false برمی‌گرداند | BOOLEAN |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringContains/fa.md)
 

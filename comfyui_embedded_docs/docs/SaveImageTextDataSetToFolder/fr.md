@@ -1,29 +1,26 @@
 # Enregistrer l'ensemble d'images et de textes dans un dossier
 
-Voici la traduction en français de la documentation du nœud ComfyUI, en respectant vos règles :
-
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageTextDataSetToFolder/en.md)
-
-Le nœud Enregistrer les images et textes dans un dossier enregistre une liste d'images et leurs légendes textuelles correspondantes dans un dossier spécifié à l'intérieur du répertoire de sortie de ComfyUI. Pour chaque image enregistrée au format PNG, un fichier texte portant le même nom de base est créé pour stocker sa légende. Cela est utile pour créer des ensembles de données organisés d'images générées et de leurs descriptions.
+Save Image-Text (to Folder) enregistre une liste d'images et leurs légendes textuelles correspondantes dans un dossier spécifié à l'intérieur du répertoire de sortie de ComfyUI. Pour chaque image enregistrée en fichier PNG, un fichier TXT correspondant portant le même nom de base est créé pour stocker sa légende, ce qui est utile pour créer des jeux de données organisés d'images générées associées à leurs descriptions.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
-| --- | --- | --- | --- | --- |
-| `images` | Liste des images à enregistrer. | IMAGE | Oui | - |
-| `texts` | Liste des légendes textuelles à enregistrer. | STRING | Oui | - |
-| `folder_name` | Nom du dossier dans lequel enregistrer les images (à l'intérieur du répertoire de sortie). (par défaut : "dataset") | STRING | Non | - |
-| `filename_prefix` | Préfixe pour les noms de fichiers d'images enregistrés. (par défaut : "image") | STRING | Non | - |
+|-----------|-------------|-----------------|--------|-------|
+| `images` | Liste d'images à enregistrer. | IMAGE | Oui | - |
+| `texts` | Liste de légendes textuelles à enregistrer. Cette entrée est facultative. | STRING | Non | - |
+| `folder_name` | Nom du dossier dans lequel enregistrer les images (dans le répertoire de sortie). (défaut : "dataset") | STRING | Oui | - |
+| `filename_prefix` | Préfixe pour les noms de fichiers des images enregistrées. (défaut : "image") | STRING | Oui | - |
+| `mode` | Indique s'il faut écraser les fichiers existants ou incrémenter les noms de fichiers pour éviter tout écrasement. (défaut : "overwrite") | COMBO | Oui | "overwrite"<br>"increment" |
 
-**Remarque :** Les entrées `images` et `texts` sont des listes. Le nœud s'attend à ce que le nombre de légendes textuelles corresponde au nombre d'images fournies. Chaque légende sera enregistrée dans un fichier `.txt` correspondant à son image associée.
+**Remarque :** L'entrée `images` est une liste. L'entrée `texts` est facultative ; si elle est fournie, elle doit être une liste de légendes textuelles et doit contenir le même nombre d'éléments que `images`. Chaque légende est enregistrée dans un fichier `.txt` correspondant à son image associée. En mode `overwrite`, les fichiers sont nommés `{filename_prefix}_{index}.png` et remplacent tout fichier existant portant le même nom. En mode `increment`, un compteur unique est ajouté aux noms de fichiers afin que les fichiers existants ne soient pas écrasés. Le `folder_name` doit correspondre à un chemin situé dans le répertoire de sortie ; les noms de dossier qui tentent d'en sortir (par exemple avec `..`) sont rejetés.
 
 ## Sorties
 
-| Nom de la sortie | Description | Type de données |
-| --- | --- | --- |
-| - | Ce nœud n'a aucune sortie. Il enregistre les fichiers directement dans le système de fichiers. | - |
+| Nom de sortie | Description | Type de données |
+|---------------|-------------|-----------------|
+| - | Ce nœud ne renvoie aucune donnée. Il enregistre les fichiers directement dans le système de fichiers. | - |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageTextDataSetToFolder/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `0c76f623e97b1502c850e0a59dc9edd7c241bcd823f5e32a8dcdd8b8160d2e44`
+**Source fingerprint (SHA-256):** `46c5a04ba1befedf62b75abbff2442dde934048f365fa7e2604ea37e70d8fdcb`

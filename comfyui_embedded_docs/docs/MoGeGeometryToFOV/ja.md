@@ -1,23 +1,23 @@
 # MoGeGeometryToFOV
 
-このノードは、MoGe ジオメトリオブジェクトに格納されたカメラ内部パラメータから、視野角と焦点距離を導出します。垂直・水平・対角のFOVを、度またはラジアンで返すことができます。垂直FOVの出力は、例えばSAM3DBody_Predictノードへの入力として使用できます。
+このノードは、MoGeジオメトリオブジェクトに格納されたカメラ内部パラメータから視野角と焦点距離を導出します。垂直・水平・対角のFOVを、度またはラジアンで返すことができます。垂直FOVの出力は、例えばSAM3DBody_Predictノードに入力するために使用できます。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `moge_geometry` | MoGeジオメトリオブジェクト。内部パラメータ行列と、画像・ポイント・深度データのうち少なくとも1つを含む必要があります。焦点距離変換に使用するピクセル高さを読み取るために使用されます。 | MOGE_GEOMETRY | はい | — |
-| `axis` | FOVを計算する軸。"vertical"（fov_y）、"horizontal"（fov_x）、"diagonal"（デフォルト: "vertical"）。 | COMBO | はい | "vertical"<br>"horizontal"<br>"diagonal" |
-| `unit` | FOVの出力単位（デフォルト: "degrees"）。 | COMBO | はい | "degrees"<br>"radians" |
+| `moge_geometry` | MoGeジオメトリオブジェクトです。内部パラメータ行列と、画像・ポイント・深度データのうち少なくとも1つを含む必要があります。これらのデータは、焦点距離変換のためのピクセル高さを読み取るために使用されます。 | MOGE_GEOMETRY | はい | — |
+| `axis` | FOVが計算される軸です："vertical"（fov_y）、"horizontal"（fov_x）、または"diagonal"（デフォルト："vertical"）。 | COMBO | はい | "vertical"<br>"horizontal"<br>"diagonal" |
+| `unit` | FOVの出力単位です（デフォルト："degrees"）。 | COMBO | はい | "degrees"<br>"radians" |
 
-注：`moge_geometry` に内部パラメータが含まれない場合（パノラマジオメトリにはありません）、または画像・ポイント・深度データのいずれも含まれない場合、ノードはエラーを発生させます。
+注：`moge_geometry`に内部パラメータが含まれていない場合（パノラマジオメトリには内部パラメータがありません）、または画像・ポイント・深度データのいずれも含まれていない場合、このノードはエラーを発生させます。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `fov` | 選択した軸に沿った視野角。選択した単位（度またはラジアン）で返されます。 | FLOAT |
-| `focal_pixels` | 垂直内部パラメータとピクセル高さから導出される、ピクセル単位のレンズ焦点距離。 | FLOAT |
+| `fov` | 選択した軸に沿ったFOVです。選択した単位（度またはラジアン）で返されます。 | FLOAT |
+| `focal_pixels` | 垂直方向の内部パラメータとピクセル高さから導出された、ピクセル単位のレンズ焦点距離です。 | FLOAT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MoGeGeometryToFOV/ja.md)
 

@@ -1,18 +1,18 @@
-# بارگذاری CLIP
+# ClipLoader
 
-گره CLIPLoader یک مدل رمزگذار متن (CLIP، T5 یا مشابه) را از یک فایل بارگذاری می‌کند و آن را برای استفاده در سایر گره‌هایی که نیاز به تبدیل پرامپت‌های متنی به نمایش‌های عددی دارند، در دسترس قرار می‌دهد. این گره از طیف گسترده‌ای از معماری‌های مدل پشتیبانی می‌کند که هرکدام به نوع رمزگذار خاصی نیاز دارند.
+گره `CLIPLoader` یک مدل رمزگذار متن (مانند CLIP، T5 یا مشابه) را از یک فایل بارگذاری می‌کند و آن را برای استفاده در سایر گره‌هایی که نیاز به تبدیل متن به نمایش‌های عددی دارند، در دسترس قرار می‌دهد. این گره از طیف گسترده‌ای از معماری‌های مدل پشتیبانی می‌کند که هر یک به نوع خاصی از رمزگذار نیاز دارند.
 
 ## ورودی‌ها
 
-| پارامتر | توضیحات | نوع داده | اجباری | محدوده |
-| --- | --- | --- | --- | --- |
-| `clip_name` | نام فایل مدل رمزگذار متن برای بارگذاری. این فایل باید در دایرکتوری `ComfyUI/models/text_encoders/` یا `ComfyUI/models/clip/` قرار داشته باشد. | STRING | بله | فهرست فایل‌های موجود در پوشه `text_encoders` |
-| `type` | نوع معماری مدل در حال بارگذاری. این پارامتر تعیین می‌کند که کدام نوع رمزگذار خاص استفاده شود. مقدار پیش‌فرض `"stable_diffusion"` است. | STRING | بله | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` |
-| `device` | دستگاهی که مدل روی آن بارگذاری می‌شود. `"default"` در صورت وجود از GPU استفاده می‌کند، در حالی که `"cpu"` بارگذاری روی CPU را اجباری می‌کند. این یک گزینه پیشرفته است (پیش‌فرض: `"default"`). | STRING | خیر | `"default"`<br>`"cpu"` |
+| پارامتر | توضیحات | نوع داده | الزامی | محدوده |
+|-----------|-------------|-----------|----------|-------|
+| `clip_name` | نام فایل مدل رمزگذار متنی که باید بارگذاری شود. این فایل باید در دایرکتوری `ComfyUI/models/text_encoders/` قرار داشته باشد. | STRING | بله | فهرست فایل‌های موجود در پوشه `text_encoders` |
+| `type` | نوع معماری مدلی که بارگذاری می‌شود. این گزینه مشخص می‌کند کدام گونه خاص رمزگذار استفاده شود (پیش‌فرض: `"stable_diffusion"`). | COMBO | بله | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"` |
+| `device` | دستگاهی که مدل روی آن بارگذاری می‌شود. `"default"` در صورت موجود بودن از GPU استفاده می‌کند، در حالی که `"cpu"` بارگذاری روی CPU را اجباری می‌کند. این یک گزینه پیشرفته است (پیش‌فرض: `"default"`). | COMBO | خیر | `"default"`<br>`"cpu"` |
 
 ### نگاشت‌های پشتیبانی‌شده نوع به رمزگذار
 
-پارامتر `type` رمزگذار مناسب را برای یک معماری مدل مشخص انتخاب می‌کند. موارد زیر نگاشت‌های رایج هستند:
+پارامتر `type` رمزگذار صحیح را برای یک معماری مدل مشخص انتخاب می‌کند. در ادامه نگاشت‌های رایج ارائه شده است:
 
 | نوع | رمزگذار |
 |------|---------|
@@ -21,20 +21,24 @@
 | sd3 | t5 xxl / clip-g / clip-l |
 | stable_audio | t5 base |
 | mochi | t5 xxl |
-| cogvideox | t5 xxl (padding 226-توکن) |
-| cosmos | t5 xxl قدیمی |
+| cogvideox | t5 xxl (پدینگ ۲۲۶ توکن) |
+| cosmos | old t5 xxl |
 | lumina2 | gemma 2 2B |
 | wan | umt5 xxl |
 | hidream | llama-3.1 (توصیه‌شده) یا t5 |
 | omnigen2 | qwen vl 2.5 3B |
+| joyimage | qwen3-vl 8B |
+| lens | gpt-oss-20b |
+| pixeldit | gemma 2 2B elm |
+| minimax | MiniMax H3 Qwen3-VL یا Music3 Qwen/RVQ |
 
 ## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
-| --- | --- | --- |
-| `clip` | مدل رمزگذار متن بارگذاری‌شده، آماده برای اتصال به سایر گره‌ها برای رمزگذاری متن و شرطی‌سازی. | CLIP |
+|-------------|-------------|-----------|
+| `clip` | مدل رمزگذار متن بارگذاری‌شده، آماده اتصال به سایر گره‌ها برای رمزگذاری متن و شرطی‌سازی. | CLIP |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipLoader/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `1051bfe5570dff81719682cb09938bae4c03e94e0e72f7a2be84867cccb48017`
+**Source fingerprint (SHA-256):** `7c1586d01410d319468f7c8c153ef0717280804add868ba57bff0c6539fb5dd9`

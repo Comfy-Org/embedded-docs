@@ -1,34 +1,34 @@
 # WanFirstLastFrameToVideo
 
-El nodo WanFirstLastFrameToVideo crea condicionamiento de video combinando fotogramas de inicio y fin con indicaciones de texto. Genera una representación latente para la generación de video codificando el primer y último fotograma, aplicando máscaras para guiar el proceso de generación e incorporando características de visión CLIP cuando están disponibles. Este nodo prepara condicionamiento tanto positivo como negativo para modelos de video con el fin de generar secuencias coherentes entre puntos de inicio y fin especificados.
+El nodo WanFirstLastFrameToVideo prepara el condicionamiento para la generación de vídeo combinando un fotograma inicial y un fotograma final con indicaciones de texto. Codifica las imágenes de los fotogramas en el espacio latente, crea una máscara que indica al modelo de vídeo qué fotogramas ya se conocen y adjunta las características CLIP vision cuando se proporcionan. El nodo genera un condicionamiento positivo y negativo actualizado, además de un latente vacío que define el tamaño y la duración del vídeo a generar.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `positivo` | Condicionamiento de texto positivo para guiar la generación de video | CONDITIONING | Sí | - |
-| `negativo` | Condicionamiento de texto negativo para guiar la generación de video | CONDITIONING | Sí | - |
-| `vae` | Modelo VAE utilizado para codificar imágenes al espacio latente | VAE | Sí | - |
-| `ancho` | Ancho del video de salida (predeterminado: 832, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `alto` | Alto del video de salida (predeterminado: 480, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `longitud` | Número de fotogramas en la secuencia de video (predeterminado: 81, paso: 4) | INT | Sí | 1 a MAX_RESOLUTION |
-| `tamaño_lote` | Número de videos a generar simultáneamente (predeterminado: 1) | INT | Sí | 1 a 4096 |
-| `clip_vision_start_image` | Características de visión CLIP extraídas de la imagen de inicio | CLIP_VISION_OUTPUT | No | - |
-| `clip_vision_end_image` | Características de visión CLIP extraídas de la imagen de fin | CLIP_VISION_OUTPUT | No | - |
-| `imagen_inicial` | Imagen del fotograma de inicio para la secuencia de video | IMAGE | No | - |
-| `imagen_final` | Imagen del fotograma de fin para la secuencia de video | IMAGE | No | - |
+| `positivo` | Condicionamiento de texto positivo utilizado para guiar la generación del vídeo. | CONDITIONING | Sí | - |
+| `negativo` | Condicionamiento de texto negativo utilizado para guiar la generación del vídeo. | CONDITIONING | Sí | - |
+| `vae` | Modelo VAE utilizado para codificar las imágenes combinadas de los fotogramas en el espacio latente. | VAE | Sí | - |
+| `ancho` | Anchura del vídeo generado en píxeles (predeterminado: 832, paso: 16). | INT | Sí | 16 a MAX_RESOLUTION |
+| `alto` | Altura del vídeo generado en píxeles (predeterminado: 480, paso: 16). | INT | Sí | 16 a MAX_RESOLUTION |
+| `longitud` | Número de fotogramas en la secuencia de vídeo (predeterminado: 81, paso: 4). | INT | Sí | 1 a MAX_RESOLUTION |
+| `tamaño_lote` | Número de vídeos a generar a la vez (predeterminado: 1). | INT | Sí | 1 a 4096 |
+| `clip_vision_start_image` | Características CLIP vision extraídas de la imagen inicial. Si se proporcionan tanto las entradas CLIP vision inicial como final, sus características se combinan. | CLIP_VISION_OUTPUT | No | - |
+| `clip_vision_end_image` | Características CLIP vision extraídas de la imagen final. Si se proporcionan tanto las entradas CLIP vision inicial como final, sus características se combinan. | CLIP_VISION_OUTPUT | No | - |
+| `imagen_inicial` | Imagen del fotograma inicial para la secuencia de vídeo. Se utilizan sus primeros `length` fotogramas y se redimensionan a `width` × `height`. | IMAGE | No | - |
+| `imagen_final` | Imagen del fotograma final para la secuencia de vídeo. Se utilizan sus últimos `length` fotogramas y se redimensionan a `width` × `height`. | IMAGE | No | - |
 
-**Nota:** Cuando se proporcionan tanto `start_image` como `end_image`, el nodo crea una secuencia de video que realiza una transición entre estos dos fotogramas. Los parámetros `clip_vision_start_image` y `clip_vision_end_image` son opcionales, pero cuando se proporcionan, sus características de visión CLIP se concatenan y se aplican tanto al condicionamiento positivo como al negativo. La `start_image` se recorta a los primeros `length` fotogramas, y la `end_image` se recorta a los últimos `length` fotogramas antes del procesamiento.
+**Nota:** Cuando se proporciona al menos una de las imágenes `start_image` o `end_image`, el nodo construye una secuencia de fotogramas combinada donde los fotogramas inicial y final se rellenan y los fotogramas restantes utilizan un marcador gris neutro (0.5). Una máscara marca las regiones rellenas como conocidas y las regiones del marcador como desconocidas, lo que permite al modelo de vídeo generar los fotogramas intermedios. Cuando se proporciona una imagen inicial, la región conocida también se extiende 3 fotogramas adicionales más allá de la imagen. La misma imagen de fotograma codificada y máscara se adjuntan tanto al condicionamiento `positive` como al `negative`. Si se proporcionan ambas entradas CLIP vision, sus estados ocultos se concatenan; si solo se proporciona una, se utiliza por sí sola. La duración latente del vídeo se deriva de `length` después de la compresión temporal: `((length - 1) // 4) + 1`.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `positivo` | Condicionamiento positivo con codificación de fotogramas de video aplicada y características de visión CLIP | CONDITIONING |
-| `negativo` | Condicionamiento negativo con codificación de fotogramas de video aplicada y características de visión CLIP | CONDITIONING |
-| `latente` | Tensor latente vacío con dimensiones que coinciden con los parámetros de video especificados | LATENT |
+| `positivo` | Condicionamiento positivo con la imagen de fotograma codificada, la máscara y, si se proporcionan, las características CLIP vision adjuntas. | CONDITIONING |
+| `negativo` | Condicionamiento negativo con la imagen de fotograma codificada, la máscara y, si se proporcionan, las características CLIP vision adjuntas. | CONDITIONING |
+| `latente` | Tensor latente vacío (todo ceros) con forma para el tamaño de lote, la duración del vídeo y la resolución dados. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFirstLastFrameToVideo/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `8cfca692fc4975bb5238ce749d2102fad4b6cd84e96ef74c3eff2b297ee60c3c`
+**Source fingerprint (SHA-256):** `0072e441cb80334c3c961d1bbf2d081c78bc38ed1eacca840c577a2d01b36f05`

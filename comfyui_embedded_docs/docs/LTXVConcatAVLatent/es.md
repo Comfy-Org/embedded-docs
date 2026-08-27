@@ -1,23 +1,23 @@
-# LTXVConcatAVLatent
+# Concatenar AV Latent
 
-El nodo LTXVConcatAVLatent combina una representación latente de video y una representación latente de audio en una única salida latente concatenada. Fusiona los tensores `samples` de ambas entradas y, si están presentes, también sus tensores `noise_mask`, preparándolos para su procesamiento posterior en un pipeline de generación de video.
+Este nodo fusiona un latent de video y un latent de audio en un único latent audiovisual (AV) conjunto, listo para modelos AV como LTXV o MiniMax H3. Si la entrada de video ya es un latent AV, se conserva su flujo de video y solo se reemplaza el flujo de audio con el latent de audio proporcionado.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `video_latent` | La representación latente de los datos de video. | LATENT | Sí |  |
-| `audio_latent` | La representación latente de los datos de audio. | LATENT | Sí |  |
+| `video_latent` | La representación latent de los datos de video. Cuando ya contiene tanto flujos de video como de audio, el nodo conserva su flujo de video y sustituye el audio proveniente de `audio_latent`. | LATENT | Sí |  |
+| `audio_latent` | La representación latent de los datos de audio. Su longitud se ajusta para adaptarse al flujo de video: el audio más largo se recorta, y el audio más corto se rellena con ceros. | LATENT | Sí |  |
 
-**Nota:** Los tensores `samples` de las entradas `video_latent` y `audio_latent` se concatenan. Si alguna de las entradas contiene un `noise_mask`, se utilizará; si falta alguna, se crea una máscara de unos (con la misma forma que los `samples` correspondientes) para dicha entrada. Las máscaras resultantes también se concatenan.
+**Nota:** Las muestras de ambas entradas se combinan como un par de flujos de video y audio en un tensor anidado. Si cualquiera de las entradas contiene un `noise_mask`, la salida incluye uno combinado; una máscara faltante se reemplaza con una máscara de todos unos que coincide con la forma de sus muestras. Cuando el audio más corto se rellena con ceros, la región rellenada se deja sin enmascarar para que el modelo pueda generarla. El nodo genera un error si el latent de audio no puede ajustarse al latent de video, por ejemplo, cuando los dos latents difieren en más de una dimensión o cuando difieren en las dimensiones de lote o de canal.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `latent` | Un diccionario latente único que contiene los `samples` concatenados y, si corresponde, el `noise_mask` concatenado de las entradas de video y audio. | LATENT |
+| `latent` | Un latent que contiene las muestras de video y audio empaquetadas juntas como dos flujos, más un `noise_mask` combinado cuando al menos una entrada lo proporciona. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVConcatAVLatent/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `322d6870f110fb1ef8b472cb49649cc9fff7865f4c7a83fbfd536f1fdfd694f8`
+**Source fingerprint (SHA-256):** `0231f9db2ce73132d8555fbb33f295b68aa68a0c1c54e4a0c5d2e1f67b5611cb`

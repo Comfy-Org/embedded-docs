@@ -1,10 +1,10 @@
 # ModelBirleştirmeSDXL
 
-ModelMergeSDXL düğümü, iki SDXL modelini birleştirerek her bir modelin mimarinin farklı bölümleri üzerindeki etkisini ayarlamanıza olanak tanır. Zaman gömmeleri, etiket gömmeleri ve model yapısındaki çeşitli bloklar üzerinde her bir modelin ne kadar katkıda bulunacağını kontrol edebilirsiniz. Bu, her iki girdi modelinin özelliklerini birleştiren hibrit bir model oluşturur.
+ModelMergeSDXL düğümü, iki SDXL modelini mimarinin farklı bölümleri üzerindeki her modelin etkisini ayarlayarak birleştirmenizi sağlar. Her modelin zaman gömmelerine, etiket gömmelerine ve model yapısındaki çeşitli bloklara ne kadar katkıda bulunacağını kontrol edebilirsiniz. Bu, her iki girdi modelinin özelliklerini birleştiren hibrit bir model oluşturur.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model1` | Birleştirilecek ilk SDXL modeli | MODEL | Evet | - |
 | `model2` | Birleştirilecek ikinci SDXL modeli | MODEL | Evet | - |
@@ -42,4 +42,4 @@ ModelMergeSDXL düğümü, iki SDXL modelini birleştirerek her bir modelin mima
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSDXL/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `6c7572a6ed50534f2d9ad6f499146763457da58f0c9dd4b85204e67f7d3e9660`
+**Source fingerprint (SHA-256):** `9a1b0645ee19c2eddb274dd6ea3f9a05997115119cc654a7f055d58475745bb2`

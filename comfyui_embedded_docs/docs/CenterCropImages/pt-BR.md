@@ -14,7 +14,7 @@ O nó Center Crop Images recorta uma imagem a partir de seu centro para uma larg
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `image` | A imagem resultante após a operação de recorte central. | IMAGE |
+| `imagens` | A imagem resultante após a operação de recorte central. | IMAGE |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CenterCropImages/pt-BR.md)
 

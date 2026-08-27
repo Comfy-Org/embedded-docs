@@ -1,6 +1,6 @@
 # ModelMergeCosmosPredict2_2B
 
-O nó ModelMergeCosmosPredict2_2B mescla dois modelos de difusão usando uma abordagem baseada em blocos com controle refinado sobre diferentes componentes do modelo. Ele permite combinar partes específicas de dois modelos ajustando pesos de interpolação para incorporadores de posição, incorporadores de tempo, blocos transformadores e camadas finais. Isso proporciona controle preciso sobre como diferentes componentes arquitetônicos de cada modelo contribuem para o resultado mesclado final.
+O nó ModelMergeCosPredict2_2B mescla dois modelos de difusão usando uma abordagem baseada em blocos com controle fino sobre diferentes componentes do modelo. Ele permite combinar partes específicas de dois modelos ajustando os pesos de interpolação para incorporadores de posição, incorporadores de tempo, blocos transformadores e camadas finais. Isso fornece controle preciso sobre como diferentes componentes arquiteturais de cada modelo contribuem para o resultado final mesclado.
 
 ## Entradas
 
@@ -11,7 +11,7 @@ O nó ModelMergeCosmosPredict2_2B mescla dois modelos de difusão usando uma abo
 | `pos_embedder.` | Peso de interpolação do incorporador de posição (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `x_embedder.` | Peso de interpolação do incorporador de entrada (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `t_embedder.` | Peso de interpolação do incorporador de tempo (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `t_embedding_norm.` | Peso de interpolação da normalização da incorporação de tempo (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `t_embedding_norm.` | Peso de interpolação da normalização do embedding de tempo (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `blocos.0.` | Peso de interpolação do bloco transformador 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `blocos.1.` | Peso de interpolação do bloco transformador 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `blocos.2.` | Peso de interpolação do bloco transformador 2 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
@@ -46,9 +46,9 @@ O nó ModelMergeCosmosPredict2_2B mescla dois modelos de difusão usando uma abo
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `model` | O modelo mesclado combinando características de ambos os modelos de entrada | MODEL |
+| `model` | O modelo mesclado que combina características de ambos os modelos de entrada | MODEL |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmosPredict2_2B/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `53a8de66d6b731f5b29af326832f66cc973284bc8fdf09d779575f2346cc75a7`
+**Source fingerprint (SHA-256):** `3586868201320ae9a326a08f6a9bd74511a5342bf8496e7efcb9f45cf4b7c55d`

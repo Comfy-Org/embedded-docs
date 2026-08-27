@@ -23,7 +23,7 @@ Este nó utiliza a API Hunyuan3D Pro da Tencent para gerar um modelo 3D a partir
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `model_file` | Uma saída legada para compatibilidade com versões anteriores. | STRING |
+| `arquivo_do_modelo` | Uma saída legada para compatibilidade com versões anteriores. | STRING |
 | `GLB` | O modelo 3D gerado no formato de arquivo GLB (Formato de Transmissão GL Binário). | FILE3DGLB |
 | `OBJ` | O modelo 3D gerado no formato de arquivo OBJ (Wavefront). | FILE3DOBJ |
 | `texture_image` | A imagem de textura para o modelo 3D gerado. | IMAGE |

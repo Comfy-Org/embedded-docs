@@ -1,18 +1,18 @@
-# LTXVDualCFGGuider
+# LTXV Çift CFG Yönlendirici
 
-Bu düğüm, LTXV-AV modelleri için yönlendirilmiş bir örnekleme nesnesi (CFG guider) oluşturur. Paketlenmiş latentin video kısmına ve ses kısmına ayrı birer yönlendirme ölçeği uygulayarak, koşullandırmanın etkisini her bir modalite üzerinde bağımsız olarak kontrol etmenizi sağlar. İki ölçek eşitse veya latent ayrı video ve ses bileşenleri içermiyorsa, tek bir genel ölçek kullanılır.
+Bu düğüm, LTXV-AV modelleri için rehberli bir örnekleme nesnesi (CFG guider) oluşturur. Paketlenmiş latentin video ve ses bölümlerine ayrı birer rehberlik ölçeği uygulayarak, koşullandırmanın etkisini her bir modalite üzerinde bağımsız olarak kontrol etmenizi sağlar. İki ölçek birbirine eşitse veya latent ayrı video ve ses bileşenleri içermiyorsa, tek bir genel ölçek kullanılır.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Örnekleme sırasında kullanılacak model. | MODEL | Evet | - |
-| `pozitif` | Üretimi yönlendirmek için kullanılan pozitif koşullandırma. | CONDITIONING | Evet | - |
-| `negatif` | Üretimi istenmeyen yönden uzaklaştıran negatif koşullandırma. | CONDITIONING | Evet | - |
-| `video_cfg` | Latentin video modalitesine uygulanan yönlendirme gücü (varsayılan: 3.0). | FLOAT | Evet | 0.0 ile 100.0 arası |
-| `audio_cfg` | Latentin ses modalitesine uygulanan yönlendirme gücü (varsayılan: 7.0). | FLOAT | Evet | 0.0 ile 100.0 arası |
+| `pozitif` | Üretimi yönlendirmek için pozitif koşullandırma. | CONDITIONING | Evet | - |
+| `negatif` | Üretimi istenmeyen içeriklerden uzaklaştırmak için negatif koşullandırma. | CONDITIONING | Evet | - |
+| `video_cfg` | Latent'in video modalitesine uygulanan rehberlik gücü (varsayılan: 3.0). | FLOAT | Evet | 0.0 ile 100.0 |
+| `audio_cfg` | Latent'in ses modalitesine uygulanan rehberlik gücü (varsayılan: 7.0). | FLOAT | Evet | 0.0 ile 100.0 |
 
-Not: `video_cfg` ve `audio_cfg` aynı değere sahip olduğunda, guider bu değeri tüm latent için tek bir CFG ölçeği olarak kullanır. Latent, paketlenmiş bir LTXV-AV latent değilse yalnızca `video_cfg` değeri kullanılır.
+Not: `video_cfg` ve `audio_cfg` değerleri eşit veya birbirine çok yakın olduğunda, guider bu değeri tüm latent için tek bir CFG ölçeği olarak kullanır. Latent, paketlenmiş bir LTXV-AV latent değilse yalnızca `video_cfg` değeri kullanılır.
 
 ## Çıktılar
 

@@ -1,14 +1,12 @@
 # LotusConditioning
 
-Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LotusConditioning/en.md)
-
-O nó LotusConditioning fornece embeddings de condicionamento pré-computados para o modelo Lotus. Ele utiliza um codificador congelado com condicionamento nulo e retorna embeddings de prompt codificados manualmente para alcançar paridade com a implementação de referência, sem exigir inferência ou carregamento de grandes arquivos de tensor. Este nó gera um tensor de condicionamento fixo que pode ser usado diretamente no pipeline de geração.
+O nó LotusConditioning fornece embeddings de condicionamento pré-computados para o modelo Lotus. Ele usa um codificador congelado com condicionamento nulo e retorna embeddings de prompt fixos para alcançar paridade com a implementação de referência, sem exigir inferência ou carregar grandes arquivos de tensor. Este nó gera um tensor de condicionamento fixo que pode ser usado diretamente no pipeline de geração.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
-| *Nenhuma entrada* | Este nó não aceita nenhum parâmetro de entrada. | - | - | - |
+| *Sem entradas* | Este nó não aceita nenhum parâmetro de entrada. | - | - | - |
 
 ## Saídas
 
@@ -19,4 +17,4 @@ O nó LotusConditioning fornece embeddings de condicionamento pré-computados pa
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LotusConditioning/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `aa428f8c355e2840dadbf634fe27d20c7c323dbe8c21255b40f4dafa12e4a0d0`
+**Source fingerprint (SHA-256):** `1fcb6530850341253c8acb47b2f26ee79d93f51eca84bef03a1fa5de33d6bc8d`

@@ -1,69 +1,69 @@
 # ModelBirleştirmeWAN2_1
 
-ModelMergeWAN2_1 düğümü, iki WAN2.1 modelini bileşenlerini ağırlıklı ortalamalar kullanarak harmanlayarak birleştirir. 30 bloklu 1.3B modeller ve 40 bloklu 14B modeller dahil olmak üzere farklı model boyutlarını destekler. Ek bir görüntü gömme bileşeni içeren görüntüden videoya modeller için özel işleme sahiptir. Modellerin her bir bileşeni, iki giriş modeli arasındaki harmanlama oranını kontrol etmek için ayrı ayrı ağırlıklandırılabilir.
+ModelMergeWAN2_1 düğümü, iki WAN2.1 modelini, bileşenlerini ağırlıklı ortalamalar kullanarak harmanlayarak birleştirir. 1.3B modeller (30 blok) ve 14B modeller (40 blok) dahil olmak üzere farklı model boyutlarını destekler; ek bir görüntü yerleştirme bileşeni içeren görüntüden videoya (image-to-video) modeller için özel işleme sahiptir. Her bileşen, iki girdi modeli arasındaki harmanlama oranını kontrol etmek için ayrı ayrı ağırlıklandırılabilir.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model1` | Birleştirilecek ilk model | MODEL | Evet | - |
 | `model2` | Birleştirilecek ikinci model | MODEL | Evet | - |
-| `patch_embedding.` | Yama gömme bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `time_embedding.` | Zaman gömme bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `time_projection.` | Zaman izdüşümü bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `text_embedding.` | Metin gömme bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `img_emb.` | Görüntü gömme bileşeni için ağırlık, görüntüden videoya modellerde kullanılır (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.0.` | Blok 0 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.1.` | Blok 1 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.2.` | Blok 2 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.3.` | Blok 3 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.4.` | Blok 4 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.5.` | Blok 5 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.6.` | Blok 6 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.7.` | Blok 7 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.8.` | Blok 8 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.9.` | Blok 9 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.10.` | Blok 10 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.11.` | Blok 11 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.12.` | Blok 12 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.13.` | Blok 13 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.14.` | Blok 14 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.15.` | Blok 15 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.16.` | Blok 16 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.17.` | Blok 17 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.18.` | Blok 18 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.19.` | Blok 19 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.20.` | Blok 20 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.21.` | Blok 21 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.22.` | Blok 22 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.23.` | Blok 23 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.24.` | Blok 24 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.25.` | Blok 25 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.26.` | Blok 26 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.27.` | Blok 27 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.28.` | Blok 28 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.29.` | Blok 29 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.30.` | Blok 30 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.31.` | Blok 31 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.32.` | Blok 32 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.33.` | Blok 33 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.34.` | Blok 34 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.35.` | Blok 35 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.36.` | Blok 36 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.37.` | Blok 37 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.38.` | Blok 38 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.39.` | Blok 39 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `head.` | Baş bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `patch_embedding.` | Patch yerleştirme bileşeni ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `time_embedding.` | Zaman yerleştirme bileşeni ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `time_projection.` | Zaman projeksiyonu bileşeni ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `text_embedding.` | Metin yerleştirme bileşeni ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `img_emb.` | Görüntü yerleştirme bileşeni ağırlığı; görüntüden videoya modellerde kullanılır (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.0.` | 0. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.1.` | 1. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.2.` | 2. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.3.` | 3. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.4.` | 4. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.5.` | 5. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.6.` | 6. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.7.` | 7. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.8.` | 8. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.9.` | 9. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.10.` | 10. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.11.` | 11. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.12.` | 12. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.13.` | 13. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.14.` | 14. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.15.` | 15. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.16.` | 16. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.17.` | 17. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.18.` | 18. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.19.` | 19. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.20.` | 20. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.21.` | 21. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.22.` | 22. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.23.` | 23. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.24.` | 24. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.25.` | 25. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.26.` | 26. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.27.` | 27. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.28.` | 28. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.29.` | 29. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.30.` | 30. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.31.` | 31. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.32.` | 32. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.33.` | 33. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.34.` | 34. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.35.` | 35. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.36.` | 36. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.37.` | 37. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.38.` | 38. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.39.` | 39. blok ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `baş.` | Baş (head) bileşeni ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 
-**Not:** Tüm ağırlık parametreleri 0.0 ile 1.0 arasında, 0.01 adım artışlarıyla bir aralık kullanır. Düğüm, farklı model boyutlarını desteklemek için 40 bloğa kadar destekler; 1.3B modeller 30 blok, 14B modeller ise 40 blok kullanır. `img_emb.` parametresi özellikle görüntüden videoya modeller içindir.
+**Not:** Tüm ağırlık parametreleri 0,01 adım artışlarıyla 0,0 ile 1,0 aralığını kullanır. Düğüm, farklı model boyutlarını desteklemek için en fazla 40 blok ağırlık girdisi sağlar: 1.3B modeller 30 blok kullanır (`blocks.0.` ile `blocks.29.` arası), 14B modeller ise 40 blok kullanır (`blocks.0.` ile `blocks.39.` arası). `img_emb.` parametresi görüntüden videoya modeller tarafından kullanılır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model` | Belirtilen ağırlıklara göre her iki giriş modelinin bileşenlerini birleştiren birleştirilmiş model | MODEL |
+| `model` | Belirtilen ağırlıklara göre her iki girdi modelinin bileşenlerini birleştiren birleştirilmiş model | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeWAN2_1/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d550a2f62bbcb4b46ccdd8a04fab80e93f96ea63426d48acb3515d51175efc99`
+**Source fingerprint (SHA-256):** `6a17defa25b1ef045b85af4a73e00d3a64c1948c0c47f355d1d488a75b09f224`
