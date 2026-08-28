@@ -16,7 +16,7 @@ O nó RegexMatch verifica se uma string de texto contém uma correspondência pa
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `matches` | Retorna Verdadeiro se o padrão regex corresponder a qualquer parte da string de entrada, Falso caso contrário | BOOLEAN |
+| `correspondencias` | Retorna Verdadeiro se o padrão regex corresponder a qualquer parte da string de entrada, Falso caso contrário | BOOLEAN |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RegexMatch/pt-BR.md)
 

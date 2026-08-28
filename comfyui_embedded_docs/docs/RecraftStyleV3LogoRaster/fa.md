@@ -10,7 +10,7 @@
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `recraft_style` | پیکربندی سبک Recraft انتخاب‌شده، شامل سبک لوگوی شطرنجی و زیرسبک انتخابی | CUSTOM |
+| `سبک Recraft` | پیکربندی سبک Recraft انتخاب‌شده، شامل سبک لوگوی شطرنجی و زیرسبک انتخابی | CUSTOM |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3LogoRaster/fa.md)
 

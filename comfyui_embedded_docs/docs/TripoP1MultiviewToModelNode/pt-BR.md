@@ -25,8 +25,8 @@ Este nó gera um modelo 3D a partir de 2 a 4 imagens de referência de um objeto
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `model_file` | O nome do arquivo do modelo GLB gerado (apenas para compatibilidade reversa). | STRING |
-| `model_task_id` | O ID único da tarefa para esta solicitação de geração de modelo. | MODEL_TASK_ID |
+| `arquivo_modelo` | O nome do arquivo do modelo GLB gerado (apenas para compatibilidade reversa). | STRING |
+| `id_tarefa_modelo` | O ID único da tarefa para esta solicitação de geração de modelo. | MODEL_TASK_ID |
 | `GLB` | O modelo 3D gerado no formato GLB. | FILE3DGLB |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1MultiviewToModelNode/pt-BR.md)

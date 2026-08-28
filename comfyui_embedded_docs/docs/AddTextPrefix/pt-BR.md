@@ -13,7 +13,7 @@ O nó Adicionar Prefixo de Texto modifica o texto adicionando uma string especif
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `text` | O texto resultante com o prefixo adicionado ao início. | STRING |
+| `textos` | O texto resultante com o prefixo adicionado ao início. | STRING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AddTextPrefix/pt-BR.md)
 

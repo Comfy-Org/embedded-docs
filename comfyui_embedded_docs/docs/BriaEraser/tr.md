@@ -1,28 +1,28 @@
 # BriaEraser
 
-Bria Eraser, Bria API'sini kullanarak bir görüntüdeki nesneleri veya alanları kaldırır. Kaldırılacak bölgeleri belirten bir görüntü ve bir maske sağlarsınız; düğüm her ikisini de Bria'ya yükler, silme işini çalıştırır, tamamlanmasını bekler ve maskelenmiş alanlar silinmiş düzenlenmiş görüntüyü döndürür.
+Bria Eraser, Bria API'sini kullanarak bir görüntüden nesneleri veya alanları siler. Silinecek bölgeleri belirten bir görüntü ve maske sağlarsınız; düğüm her ikisini de Bria'ya yükler, silme işini çalıştırır, tamamlanmasını bekler ve maskelenen alanların silinmiş olduğu düzenlenmiş görüntüyü döndürür.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
-|-----------|-------------|-----------|----------|---------|
-| `image` | Kaldırılacak nesneleri veya alanları içeren giriş görüntüsü. | IMAGE | Evet | - |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `image` | Silinecek nesneleri veya alanları içeren girdi görüntüsü. | IMAGE | Evet | - |
 | `mask` | Beyaz alanlar silinir, siyah alanlar korunur. Maske gönderilmeden önce ikili hale getirilir, bu nedenle kısmen boyanmış alanlar beyaz sayılır. Görüntüyle aynı en-boy oranına sahip olmalıdır. | MASK | Evet | - |
-| `mask_type` | Maskenin nasıl oluşturulduğunu seçer. "manual", elle çizilmiş veya fırça maskeleri içindir; "automatic", SAM gibi segmentasyon modelleri tarafından üretilen maskeler içindir. | STRING | Evet | "manual"<br>"automatic" |
-| `moderation` | Moderasyon ayarları. Giriş ve/veya çıkış görüntülerinde içerik moderasyonunu etkinleştirmek için "true" olarak ayarlayın. | STRING | Evet | "false"<br>"true" |
+| `mask_type` | Maskenin nasıl oluşturulduğunu seçer. "manual" el ile çizilmiş veya fırça maskeleri içindir; "automatic" ise SAM gibi bölütleme modelleri tarafından üretilen maskeler içindir. | COMBO | Evet | "manual"<br>"automatic" |
+| `moderation` | Moderasyon ayarları. Girdi ve/veya çıktı görüntülerinde görsel içerik moderasyonunu etkinleştirmek için "true" olarak ayarlayın. | DYNAMIC_COMBO | Evet | "false"<br>"true" |
 
-Not: `moderation` "true" olarak ayarlandığında, iki ek boolean ayar kullanılabilir hale gelir:
+Not: `moderation` "true" olarak ayarlandığında, iki ek boole ayarı kullanılabilir hale gelir:
 
-- `visual_input_moderation` — giriş görüntüsüne görsel içerik moderasyonu uygular (varsayılan: false)
-- `visual_output_moderation` — çıkış görüntüsüne görsel içerik moderasyonu uygular (varsayılan: false)
+- `visual_input_moderation` — girdi görüntüsüne görsel içerik moderasyonu uygular (varsayılan: false)
+- `visual_output_moderation` — çıktı görüntüsüne görsel içerik moderasyonu uygular (varsayılan: false)
 
-Maske, görüntünün en-boy oranıyla eşleşmelidir, aksi takdirde istek başarısız olur. Maske, API'ye gönderilmeden önce ikili (siyah ve beyaz) bir maskeye dönüştürülür, bu nedenle kısmen boyanmış alanlar beyaz olarak kabul edilir ve silinir.
+Maske, görüntünün en-boy oranıyla eşleşmelidir, aksi takdirde istek başarısız olur. Maske, API'ye gönderilmeden önce ikili (siyah ve beyaz) bir maskeye dönüştürülür: yarı opaklıktan daha az boyanmış alanlar yok sayılır ve kısmen boyanmış alanlar beyaz olarak kabul edilir ve silinir. Maske en azından bir miktar beyaz alan içermelidir; boş bir maske, silinecek bir şey olmadığı için isteğin başarısız olmasına neden olur.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `image` | Maskelenmiş nesnelerin veya alanların kaldırıldığı düzenlenmiş görüntü. | IMAGE |
+| `image` | Maskelenen nesnelerin veya alanların silindiği düzenlenmiş görüntü. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaEraser/tr.md)
 

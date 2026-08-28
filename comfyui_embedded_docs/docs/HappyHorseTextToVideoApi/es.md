@@ -8,9 +8,9 @@ Genera un video basado en un prompt de texto utilizando el modelo HappyHorse. Es
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|--------------|-------|
-| `model` | El modelo HappyHorse utilizado para la generación, junto con sus subparámetros. Seleccionar un modelo determina qué subparámetros están disponibles (consulta las secciones de modelos a continuación). | DYNAMIC_COMBO | Sí | "happyhorse-1.1-t2v"<br>"happyhorse-1.0-t2v" |
-| `seed` | Semilla utilizada para la generación. Usar la misma semilla con las mismas entradas producirá el mismo resultado. (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
-| `watermark` | Si se añade una marca de agua generada por IA al resultado. (predeterminado: False). | BOOLEAN | Sí | True / False |
+| `modelo` | El modelo HappyHorse utilizado para la generación, junto con sus subparámetros. Seleccionar un modelo determina qué subparámetros están disponibles (consulta las secciones de modelos a continuación). | DYNAMIC_COMBO | Sí | "happyhorse-1.1-t2v"<br>"happyhorse-1.0-t2v" |
+| `semilla` | Semilla utilizada para la generación. Usar la misma semilla con las mismas entradas producirá el mismo resultado. (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
+| `marca de agua` | Si se añade una marca de agua generada por IA al resultado. (predeterminado: False). | BOOLEAN | Sí | True / False |
 
 ### Entradas de happyhorse-1.1-t2v
 

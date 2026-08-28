@@ -16,7 +16,7 @@ O nó Meshy: Rig Model recebe um modelo 3D de uma tarefa anterior do Meshy e cri
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `model_file` | Uma saída legada para compatibilidade reversa, contendo o nome do arquivo do modelo GLB. | STRING |
+| `arquivo_do_modelo` | Uma saída legada para compatibilidade reversa, contendo o nome do arquivo do modelo GLB. | STRING |
 | `rig_task_id` | O ID único da tarefa para esta operação de rigagem, que pode ser usado para referenciar o resultado. | STRING |
 | `GLB` | O modelo 3D de personagem rigado salvo no formato de arquivo GLB. | FILE3DGLB |
 | `FBX` | O modelo 3D de personagem rigado salvo no formato de arquivo FBX. | FILE3DFBX |

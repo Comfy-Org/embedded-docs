@@ -12,7 +12,7 @@
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `patched_model` | مدل اصلاح‌شده با اعمال مقیاس‌گذاری هدایت CFGZeroStar | MODEL |
+| `مدل_اصلاح‌شده` | مدل اصلاح‌شده با اعمال مقیاس‌گذاری هدایت CFGZeroStar | MODEL |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGZeroStar/fa.md)
 

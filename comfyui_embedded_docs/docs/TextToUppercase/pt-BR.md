@@ -12,7 +12,7 @@ O nó Text to Uppercase recebe um texto como entrada e converte todos os seus ca
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `text` | O texto resultante com todos os caracteres convertidos para maiúsculas. | STRING |
+| `textos` | O texto resultante com todos os caracteres convertidos para maiúsculas. | STRING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextToUppercase/pt-BR.md)
 

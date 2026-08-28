@@ -8,10 +8,10 @@ Ce nœud modifie une image existante à l'aide d'une invite texte, propulsé par
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser pour l'édition. La sélection d'un modèle révèle les options spécifiques au modèle ci-dessous. | DYNAMIC_COMBO | Oui | `"uni-1"`<br>`"uni-1-max"` |
+| `modèle` | Modèle à utiliser pour l'édition. La sélection d'un modèle révèle les options spécifiques au modèle ci-dessous. | DYNAMIC_COMBO | Oui | `"uni-1"`<br>`"uni-1-max"` |
 | `source` | Image source à modifier. | IMAGE | Oui | - |
-| `prompt` | Description de la modification souhaitée. 1 à 6000 caractères. Par défaut : "" (chaîne vide ; la requête est invalide tant qu'au moins un caractère n'est pas saisi). | STRING | Oui | 1 à 6000 caractères |
-| `seed` | Le seed contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quel que soit le seed. Par défaut : 0. | INT | Oui | 0 à 2147483647 |
+| `invite` | Description de la modification souhaitée. 1 à 6000 caractères. Par défaut : "" (chaîne vide ; la requête est invalide tant qu'au moins un caractère n'est pas saisi). | STRING | Oui | 1 à 6000 caractères |
+| `graine` | Le seed contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quel que soit le seed. Par défaut : 0. | INT | Oui | 0 à 2147483647 |
 
 ### Entrées uni-1 et uni-1-max
 

@@ -1,22 +1,22 @@
 # SplitSigmasDenoise
 
-El nodo SplitSigmasDenoise divide una secuencia de valores sigma en dos partes basándose en un parámetro de fuerza de eliminación de ruido. Divide los sigmas de entrada en secuencias de sigma altas y bajas, donde el punto de división se determina multiplicando el total de pasos por el factor de eliminación de ruido. Esto permite separar el programa de ruido en diferentes rangos de intensidad para un procesamiento especializado.
+El nodo SplitSigmasDenoise divide una secuencia de valores sigma en dos partes basándose en un parámetro de intensidad de denoising. Divide los sigmas de entrada en secuencias de sigma altos y bajos, donde el punto de división se determina multiplicando los pasos totales por el factor de denoise. Esto permite separar el programa de ruido en diferentes rangos de intensidad para un procesamiento especializado.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `sigmas` | La secuencia de entrada de valores sigma que representa el programa de ruido | SIGMAS | Sí | - |
-| `denoise` | El factor de fuerza de eliminación de ruido que determina dónde dividir la secuencia sigma (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `denoise` | El factor de intensidad de denoising que determina dónde dividir la secuencia de sigma (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (step: 0.01) |
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `sigmas_altos` | La primera parte de la secuencia sigma que contiene valores sigma más altos | SIGMAS |
-| `sigmas_bajos` | La segunda parte de la secuencia sigma que contiene valores sigma más bajos | SIGMAS |
+| `sigmas_altos` | La primera parte de la secuencia de sigma que contiene valores sigma más altos | SIGMAS |
+| `sigmas_bajos` | La segunda parte de la secuencia de sigma que contiene valores sigma más bajos | SIGMAS |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmasDenoise/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `fda53efe2fcaed9244376b7360d8b0b76ce7395d594de4c2ecc48a8f243d7ca6`
+**Source fingerprint (SHA-256):** `6198cdbc07b5c9aacf1137a5d6350e090ffd14050abbcc37ff79ff5e975a8c20`

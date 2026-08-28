@@ -1,18 +1,18 @@
 # ModelMergeSD3_2B
 
-El nodo ModelMergeSD3_2B permite fusionar dos modelos Stable Diffusion 3 2B combinando sus componentes con pesos ajustables. Proporciona control individual sobre las capas de incrustación y los bloques transformadores, permitiendo combinaciones de modelos finamente ajustadas para tareas de generación especializadas.
+El nodo ModelMergeSD3_2B permite fusionar dos modelos Stable Diffusion 3 2B combinando sus componentes con pesos ajustables. Proporciona control individual sobre las capas de incrustación (embedding) y los bloques del transformador, lo que permite combinaciones de modelos finamente ajustadas para tareas de generación especializadas.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model1` | Primer modelo a fusionar | MODEL | Sí | - |
-| `model2` | Segundo modelo a fusionar | MODEL | Sí | - |
-| `pos_embed.` | Peso de interpolación de incrustación de posición (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `x_embedder.` | Peso de interpolación de incrustación de entrada (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `context_embedder.` | Peso de interpolación de incrustación de contexto (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `y_embedder.` | Peso de interpolación de incrustación Y (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `t_embedder.` | Peso de interpolación de incrustación temporal (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `model1` | El primer modelo a fusionar | MODEL | Sí | - |
+| `model2` | El segundo modelo a fusionar | MODEL | Sí | - |
+| `pos_embed.` | Peso de interpolación de la incrustación de posición (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `x_embedder.` | Peso de interpolación de la incrustación de entrada (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `context_embedder.` | Peso de interpolación de la incrustación de contexto (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `y_embedder.` | Peso de interpolación de la incrustación Y (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `t_embedder.` | Peso de interpolación de la incrustación de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `joint_blocks.0.` | Peso de interpolación del bloque conjunto 0 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `joint_blocks.1.` | Peso de interpolación del bloque conjunto 1 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `joint_blocks.2.` | Peso de interpolación del bloque conjunto 2 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
@@ -41,11 +41,11 @@ El nodo ModelMergeSD3_2B permite fusionar dos modelos Stable Diffusion 3 2B comb
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
 | `model` | El modelo fusionado que combina características de ambos modelos de entrada | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD3_2B/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `5b0c28c66e1828742873191be424956a9006e59ea1167a5941069ba0b7bc390b`
+**Source fingerprint (SHA-256):** `db27b10ade457933f6225218bb806aafcf9fc4478cac85b1623a75d110103529`

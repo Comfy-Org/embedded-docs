@@ -1,0 +1,23 @@
+# GetMeshInfo
+
+「Get Mesh Info」節點會回報網格中的頂點數與面數，以及其所包含的屬性（例如 UV、頂點顏色、法線與紋理）。報告會顯示在節點上，並以文字輸出回傳，同時網格本身會原封不動地通過。
+
+## 輸入
+
+| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+|-----------|-------------|-----------|----------|-------|
+| `mesh` | 要檢查的網格。此節點會計算其頂點與面數、偵測存在哪些屬性，並將網格原封不動地傳遞出去。 | MESH | 是 | — |
+
+注意：當輸入包含多個網格（一個批次）時，報告會顯示整個批次的頂點與面數總計，並附上每個網格的明細。對於補零（zero-padded）的批次，則會使用網格資料中儲存的各項目計數。
+
+## 輸出
+
+| 輸出名稱 | 說明 | 資料類型 |
+|-------------|-------------|-----------|
+| `mesh` | 原始網格，未經任何修改直接傳遞。 | MESH |
+| `info` | 多行文字報告，包含頂點數、面數與偵測到的屬性（uvs、vertex_colors、normals、tangents、texture、metallic_roughness、normal_map）。較大的數值會以逗號格式化，例如「1,234,567 (1.23M)」。相同的文字也會顯示在節點上。 | STRING |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetMeshInfo/zh-TW.md)
+
+---
+**Source fingerprint (SHA-256):** `cd168a5e69131a4a37f1f47014af2bc2ac2c8aa69e146cf33c2072480b35ebb2`

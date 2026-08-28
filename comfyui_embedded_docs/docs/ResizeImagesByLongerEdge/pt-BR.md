@@ -13,7 +13,7 @@ O nó Redimensionar Imagens pela Borda Maior redimensiona uma ou mais imagens pa
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `image` | A imagem ou lote de imagens redimensionado. A saída terá o mesmo número de imagens que a entrada, com a borda maior de cada uma correspondendo ao comprimento especificado em `borda_maior`. | IMAGE |
+| `imagens` | A imagem ou lote de imagens redimensionado. A saída terá o mesmo número de imagens que a entrada, com a borda maior de cada uma correspondendo ao comprimento especificado em `borda_maior`. | IMAGE |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImagesByLongerEdge/pt-BR.md)
 

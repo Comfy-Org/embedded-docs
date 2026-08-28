@@ -1,22 +1,22 @@
 # Cargador de Difusores
 
-El nodo DiffusersLoader carga modelos preentrenados desde el formato diffusers. Busca directorios de modelos diffusers válidos que contengan un archivo `model_index.json` y los carga como componentes MODEL, CLIP y VAE para su uso en el pipeline. Este nodo pertenece a la categoría de cargadores obsoletos y proporciona compatibilidad con modelos diffusers de Hugging Face.
+El nodo DiffusersLoader carga modelos preentrenados guardados en el formato diffusers. Busca en las carpetas `diffusers` configuradas los directorios que contengan un archivo `model_index.json`, te permite seleccionar uno y lo carga como los componentes MODEL, CLIP y VAE utilizados en el pipeline. Este nodo está obsoleto, pero sigue disponible para compatibilidad con modelos diffusers de Hugging Face.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
-| `ruta_del_modelo` | La ruta al directorio del modelo diffusers a cargar. El nodo escanea automáticamente los modelos diffusers válidos en las carpetas configuradas y lista las opciones disponibles. | STRING | Sí | Múltiples opciones disponibles<br>(auto-rellenadas desde las carpetas diffusers) |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `ruta_del_modelo` | La ruta al directorio del modelo diffusers que se va a cargar. El nodo escanea automáticamente las carpetas diffusers configuradas para buscar modelos válidos y muestra las opciones disponibles. | COMBO | Sí | Múltiples opciones disponibles<br>(autocompletadas desde las carpetas diffusers) |
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
-| --- | --- | --- |
-| `MODEL` | El componente del modelo cargado desde el formato diffusers | MODEL |
-| `CLIP` | El componente del modelo CLIP cargado desde el formato diffusers | CLIP |
-| `VAE` | El componente VAE (Autoencoder Variacional) cargado desde el formato diffusers | VAE |
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `MODEL` | El componente de modelo cargado desde el formato diffusers. | MODEL |
+| `CLIP` | El componente de modelo CLIP cargado desde el formato diffusers. | CLIP |
+| `VAE` | El componente VAE (Autoencoder Variacional) cargado desde el formato diffusers. | VAE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DiffusersLoader/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `59be9923ed76d4859d5f7217a802c43297cb5af3d895eb6713edea97a32c3db2`
+**Source fingerprint (SHA-256):** `75238342d05eac7528f981a2d4544accb6053891cd078a77751cc838054225d4`

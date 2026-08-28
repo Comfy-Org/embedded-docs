@@ -17,7 +17,7 @@ O nó Random Crop Images seleciona aleatoriamente uma seção retangular de cada
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `image` | A imagem resultante após a aplicação do recorte aleatório. | IMAGE |
+| `imagens` | A imagem resultante após a aplicação do recorte aleatório. | IMAGE |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RandomCropImages/pt-BR.md)
 

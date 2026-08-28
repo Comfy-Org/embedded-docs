@@ -6,7 +6,7 @@ Este nodo combina múltiples capas de imagen en una única imagen compuesta. Tom
 
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `layers` | Pila de capas para componer; constrúyala con Add Layer. Los elementos se apilan por z_index, los fotogramas de lote dentro de un elemento se expanden a capas consecutivas, y la posición, opacidad y modo de mezcla del elemento definen la composición inicial. Sin un lienzo de documento explícito, el tamaño es el alcance máximo de las capas colocadas según el mejor esfuerzo. Una composición guardada que coincida con las entradas actuales tiene prioridad. | LAYERS | Sí | Máximo 50 capas |
+| `capas` | Pila de capas para componer; constrúyala con Add Layer. Los elementos se apilan por z_index, los fotogramas de lote dentro de un elemento se expanden a capas consecutivas, y la posición, opacidad y modo de mezcla del elemento definen la composición inicial. Sin un lienzo de documento explícito, el tamaño es el alcance máximo de las capas colocadas según el mejor esfuerzo. Una composición guardada que coincida con las entradas actuales tiene prioridad. | LAYERS | Sí | Máximo 50 capas |
 | `compositor` | Composición en capas guardada por el editor de compositor. | COMPOSITOR | No | Ninguno |
 
 **Notas sobre las restricciones:**

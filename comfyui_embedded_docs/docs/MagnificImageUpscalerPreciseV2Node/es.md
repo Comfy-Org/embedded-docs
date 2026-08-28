@@ -1,28 +1,28 @@
 # Magnific Image Upscale (Preciso V2)
 
-El nodo Ampliación de Imagen Magnífica (Precisa V2) realiza una ampliación de imágenes de alta fidelidad con control preciso sobre nitidez, granulado y mejora de detalles. Procesa imágenes a través de una API externa, admitiendo una resolución máxima de salida de hasta 10060×10060 píxeles. El nodo ofrece diferentes estilos de procesamiento y puede reducir automáticamente la escala de la entrada si la salida solicitada supera el tamaño máximo permitido.
+El nodo The Magnific Image Upscale (Precise V2) realiza un escalado de imágenes de alta fidelidad con control fino sobre nitidez, grano y mejora de detalles. Procesa imágenes a través de una API externa, admitiendo hasta una resolución máxima de salida de 10060×10060 píxeles. El nodo ofrece diferentes estilos de procesamiento y puede reducir automáticamente la escala de la imagen de entrada si la salida solicitada excediera el tamaño máximo permitido.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
-| `imagen` | La imagen de entrada que se ampliará. Se requiere exactamente una imagen. Las dimensiones mínimas son 160x160 píxeles. La relación de aspecto debe estar entre 1:3 y 3:1. | IMAGE | Sí | - |
-| `factor_de_escala` | El multiplicador de ampliación deseado. | STRING | Sí | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` |
-| `estilo` | El estilo de procesamiento. "sublime" es para uso general, "photo" está optimizado para fotografías y "photo_denoiser" es para fotos con ruido. | STRING | Sí | `"sublime"`<br>`"photo"`<br>`"photo_denoiser"` |
-| `nitidez` | Controla la intensidad del enfoque de la imagen para aumentar la definición de bordes y la claridad. Valores más altos producen un resultado más nítido. Valor predeterminado: 7. | INT | No | 0 a 100 |
-| `grano_inteligente` | Agrega granulado inteligente o mejora de textura para evitar que la imagen ampliada se vea demasiado suave o artificial. Valor predeterminado: 7. | INT | No | 0 a 100 |
-| `ultra_detalle` | Controla la cantidad de detalles finos, texturas y microdetalles añadidos durante el proceso de ampliación. Valor predeterminado: 30. | INT | No | 0 a 100 |
-| `reducción_automática` | Cuando está habilitado, el nodo reducirá automáticamente la escala de la imagen de entrada si las dimensiones de salida calculadas superan la resolución máxima permitida de 10060x10060 píxeles. Esto ayuda a prevenir errores, pero puede afectar la calidad. Valor predeterminado: Falso. | BOOLEAN | No | - |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `imagen` | La imagen de entrada que se va a escalar. Se requiere exactamente una imagen. Las dimensiones mínimas son 160x160 píxeles. La relación de aspecto debe estar entre 1:3 y 3:1. | IMAGE | Sí | - |
+| `factor_de_escala` | El multiplicador de escalado deseado. | COMBO | Sí | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` |
+| `estilo` | Estilo de procesamiento: sublime para uso general, photo para fotografías, photo_denoiser para fotos con ruido. | COMBO | Sí | `"sublime"`<br>`"photo"`<br>`"photo_denoiser"` |
+| `nitidez` | Intensidad de nitidez de la imagen. Los valores más altos aumentan la definición y claridad de los bordes. Predeterminado: 7. | INT | No | 0 a 100 |
+| `grano_inteligente` | Mejora inteligente de grano/textura para evitar que la imagen se vea demasiado suave o artificial. Predeterminado: 7. | INT | No | 0 a 100 |
+| `ultra_detalle` | Controla el detalle fino, las texturas y los microdetalles añadidos durante el escalado. Predeterminado: 30. | INT | No | 0 a 100 |
+| `reducción_automática` | Reduce automáticamente la escala de la imagen de entrada si la salida excediera la resolución máxima. Predeterminado: False. | BOOLEAN | No | - |
 
-**Nota:** Si `auto_downscale` está deshabilitado y el tamaño de salida solicitado (dimensiones de entrada × `scale_factor`) supera los 10060x10060 píxeles, el nodo generará un error.
+**Nota:** Si `auto_downscale` está deshabilitado y el tamaño de salida solicitado (dimensiones de entrada × `scale_factor`) supera los 10060x10060 píxeles, el nodo generará un error. Cuando `auto_downscale` está habilitado, el nodo intentará encontrar un factor de escala óptimo que minimice la pérdida de calidad.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-| --- | --- | --- |
-| `imagen` | La imagen ampliada resultante. | IMAGE |
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `image` | La imagen resultante tras el escalado. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MagnificImageUpscalerPreciseV2Node/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `cceff30e9702c6a24ab8102698c59f1afb20ec50e7f279b3c0d50befc9673b24`
+**Source fingerprint (SHA-256):** `aeb2b3569fd7b1d2417890586b8ac84ff921c4405f63f190188af93044ccfd28`

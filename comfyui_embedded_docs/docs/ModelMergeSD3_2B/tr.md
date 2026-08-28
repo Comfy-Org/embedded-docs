@@ -1,18 +1,18 @@
 # ModelBirleştirmeSD3_2B
 
-ModelMergeSD3_2B düğümü, iki Stable Diffusion 3 2B modelini bileşenlerini ayarlanabilir ağırlıklarla harmanlayarak birleştirmenizi sağlar. Gömm katmanları ve dönüştürücü blokları üzerinde bireysel kontrol sağlayarak, özel üretim görevleri için ince ayarlanmış model kombinasyonları oluşturulmasına olanak tanır.
+ModelMergeSD3_2B düğümü, iki Stable Diffusion 3 2B modelini bileşenlerini ayarlanabilir ağırlıklarla harmanlayarak birleştirmenizi sağlar. Gömme katmanları ve transformatör blokları üzerinde ayrı ayrı kontrol sağlayarak, özel üretim görevleri için ince ayarlanmış model kombinasyonlarına olanak tanır.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model1` | Birleştirilecek ilk model | MODEL | Evet | - |
 | `model2` | Birleştirilecek ikinci model | MODEL | Evet | - |
-| `pos_embed.` | Konum gömm enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `x_embedder.` | Giriş gömm enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `context_embedder.` | Bağlam gömm enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `y_embedder.` | Y gömm enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `t_embedder.` | Zaman gömm enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `pos_embed.` | Konum embedding enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `x_embedder.` | Girdi embedding enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `context_embedder.` | Bağlam embedding enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `y_embedder.` | Y embedding enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `t_embedder.` | Zaman embedding enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `joint_blocks.0.` | Ortak blok 0 enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `joint_blocks.1.` | Ortak blok 1 enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `joint_blocks.2.` | Ortak blok 2 enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
@@ -43,9 +43,9 @@ ModelMergeSD3_2B düğümü, iki Stable Diffusion 3 2B modelini bileşenlerini a
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model` | Her iki giriş modelinin özelliklerini birleştiren harmanlanmış model | MODEL |
+| `model` | Her iki girdi modelinin özelliklerini birleştiren birleştirilmiş model | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD3_2B/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `5b0c28c66e1828742873191be424956a9006e59ea1167a5941069ba0b7bc390b`
+**Source fingerprint (SHA-256):** `db27b10ade457933f6225218bb806aafcf9fc4478cac85b1623a75d110103529`

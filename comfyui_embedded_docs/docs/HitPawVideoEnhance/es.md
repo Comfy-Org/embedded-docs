@@ -1,27 +1,43 @@
 # HitPaw Video Enhance
 
-El nodo HitPaw Video Enhance utiliza una API externa para mejorar la calidad de los videos. Escala videos de baja resolución a una resolución más alta, elimina artefactos visuales y reduce el ruido. El costo del procesamiento se calcula por segundo del video de entrada.
+El nodo HitPaw Video Enhance utiliza una API externa para mejorar la calidad de los videos. Escala videos de baja resolución a una resolución más alta, elimina artefactos visuales y reduce el ruido. El costo de procesamiento se calcula por segundo del video de entrada.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+### Entradas comunes
+
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo de IA a utilizar para la mejora del video. Al seleccionar un modelo, se muestra un parámetro `resolution` anidado. Los modelos disponibles y sus resoluciones compatibles varían. | DYNAMIC COMBO | Sí | Múltiples opciones disponibles |
-| `model.resolution` | La resolución objetivo para el video mejorado. Algunas opciones pueden no estar disponibles según el `modelo` seleccionado. | COMBO | Sí | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` |
+| `modelo` | El modelo de IA que se utilizará para mejorar el video. Seleccionar un modelo revela un parámetro `resolution` anidado. Los modelos disponibles y sus resoluciones compatibles varían. | DYNAMIC_COMBO | Sí | `"Portrait Restore Model (1x)"`<br>`"Portrait Restore Model (2x)"`<br>`"General Restore Model (1x)"`<br>`"General Restore Model (2x)"`<br>`"General Restore Model (4x)"`<br>`"Ultra HD Model (2x)"`<br>`"Generative Model (1x)"` |
 | `video` | El archivo de video de entrada que se va a mejorar. | VIDEO | Sí | N/A |
 
-**Restricciones:**
+### Entradas de Portrait Restore, General Restore y Ultra HD Model
 
-* El `video` de entrada debe tener una duración entre 0.5 segundos y 60 minutos (3600 segundos).
-* La `resolution` seleccionada debe ser mayor que las dimensiones del video de entrada. Si el video es cuadrado, la resolución seleccionada debe ser mayor que su ancho/alto. Para videos no cuadrados, la resolución seleccionada debe ser mayor que la dimensión más corta del video. Si la resolución objetivo es menor, se generará un error. Seleccione `"original"` para mantener la resolución del video de entrada.
+Estas opciones de resolución son compartidas por Portrait Restore Model (1x), Portrait Restore Model (2x), General Restore Model (1x), General Restore Model (2x), General Restore Model (4x) y Ultra HD Model (2x).
+
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `resolución` | La resolución objetivo para el video mejorado. Seleccionar `"original"` mantiene la resolución del video de entrada. | COMBO | Sí | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"`<br>`"8K"` |
+
+### Entradas de Generative Model (1x)
+
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `resolución` | La resolución objetivo para el video mejorado. Seleccionar `"original"` mantiene la resolución del video de entrada. La opción `"8K"` no está disponible para este modelo. | COMBO | Sí | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"` |
+
+**Notas:**
+
+* El `video` de entrada debe tener una duración de entre 0.5 segundos y 60 minutos (3600 segundos).
+* La `resolution` seleccionada debe ser al menos tan grande como las dimensiones del video de entrada. Para videos cuadrados, debe ser al menos tan grande como el ancho y el alto del video. Para videos no cuadrados, debe ser al menos tan grande como la dimensión más corta del video. Si la resolución objetivo es menor, se produce un error. Seleccionar `"original"` mantiene la resolución del video de entrada.
+* Cuando se selecciona una resolución distinta de `"original"`, los videos no cuadrados se escalan de modo que su dimensión más corta coincida con la resolución seleccionada, conservando la relación de aspecto. Los videos cuadrados se escalan de modo que ambas dimensiones coincidan con el tamaño cuadrado objetivo de la resolución seleccionada (por ejemplo, `"4K/UHD"` produce 2048×2048).
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
 | `video` | El archivo de video mejorado. | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HitPawVideoEnhance/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `0f329cbf61784474ee5b97a92d28a3e2383dc40e208f8a8317f3c4f60b43e5b2`
+**Source fingerprint (SHA-256):** `42803c7137d62dbce5021cd2bd9b9fba1a89c80e7b3f237f8a0eb03858c49967`

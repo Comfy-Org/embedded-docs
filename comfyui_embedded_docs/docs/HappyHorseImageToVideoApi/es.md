@@ -8,10 +8,10 @@ Este nodo genera un video corto a partir de una única imagen inicial utilizando
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `model` | El modelo HappyHorse que se utilizará para la generación de video. | DYNAMIC_COMBO | Sí | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
-| `first_frame` | Imagen del primer fotograma. La relación de aspecto de la salida se deriva de esta imagen. | IMAGE | Sí | 300×300 px mín.; 1:2.5 a 2.5:1 |
-| `seed` | Semilla para usar en la generación. (por defecto: 0) | INT | Sí | 0 a 2147483647 |
-| `watermark` | Si se debe agregar una marca de agua generada por IA al resultado. (opción avanzada; por defecto: False) | BOOLEAN | Sí | True / False |
+| `modelo` | El modelo HappyHorse que se utilizará para la generación de video. | DYNAMIC_COMBO | Sí | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
+| `primer fotograma` | Imagen del primer fotograma. La relación de aspecto de la salida se deriva de esta imagen. | IMAGE | Sí | 300×300 px mín.; 1:2.5 a 2.5:1 |
+| `semilla` | Semilla para usar en la generación. (por defecto: 0) | INT | Sí | 0 a 2147483647 |
+| `marca de agua` | Si se debe agregar una marca de agua generada por IA al resultado. (opción avanzada; por defecto: False) | BOOLEAN | Sí | True / False |
 
 ### Entradas de happyhorse-1.1-i2v y happyhorse-1.0-i2v
 

@@ -14,7 +14,7 @@ Este nodo genera objetos o escenarios dentro de una región enmascarada de una i
 | `negative_prompt` | Un prompt que describe el contenido que se debe evitar en el resultado generado. Si se deja vacío, no se envía a la API. (por defecto: "") | STRING | Sí | - |
 | `refine_prompt` | Ajusta automáticamente el prompt para obtener mejores resultados; desactívelo para usar el prompt tal como está escrito. (por defecto: true) | BOOLEAN | Sí | true<br>false |
 | `seed` | Semilla para el proceso de generación. (por defecto: 42) | INT | Sí | 1 a 2147483647 |
-| `moderation` | Configuración de moderación. Cuando se establece en "true", se aplican las opciones de moderación siguientes. (por defecto: "false") | DYNAMIC_COMBO | Sí | "false"<br>"true" |
+| `moderación` | Configuración de moderación. Cuando se establece en "true", se aplican las opciones de moderación siguientes. (por defecto: "false") | DYNAMIC_COMBO | Sí | "false"<br>"true" |
 
 ### Entradas de moderación (cuando `moderation` = "true")
 

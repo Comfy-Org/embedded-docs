@@ -15,8 +15,8 @@ O nó PairConditioningCombine mescla dois pares de condicionamento separados (ca
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `positive` | Saída de condicionamento positivo combinado | CONDITIONING |
-| `negative` | Saída de condicionamento negativo combinado | CONDITIONING |
+| `positivo` | Saída de condicionamento positivo combinado | CONDITIONING |
+| `negativo` | Saída de condicionamento negativo combinado | CONDITIONING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningCombine/pt-BR.md)
 

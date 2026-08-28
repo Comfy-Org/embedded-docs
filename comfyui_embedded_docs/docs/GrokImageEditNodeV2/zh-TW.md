@@ -8,9 +8,9 @@
 
 | 參數 | 說明 | 資料型別 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的 Grok 影像模型。下方顯示的子參數會依所選模型而變。 | DYNAMIC_COMBO | 是 | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
-| `prompt` | 用於產生影像的文字提示。（預設值：""） | STRING | 是 | N/A |
-| `seed` | 用於決定節點是否應重新執行的種子；無論種子數值為何，實際結果皆為非確定性。（預設值：0） | INT | 是 | 0 至 2147483647 |
+| `模型` | 要使用的 Grok 影像模型。下方顯示的子參數會依所選模型而變。 | DYNAMIC_COMBO | 是 | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
+| `提示詞` | 用於產生影像的文字提示。（預設值：""） | STRING | 是 | N/A |
+| `種子` | 用於決定節點是否應重新執行的種子；無論種子數值為何，實際結果皆為非確定性。（預設值：0） | INT | 是 | 0 至 2147483647 |
 
 ### grok-imagine-image-2.0 輸入
 

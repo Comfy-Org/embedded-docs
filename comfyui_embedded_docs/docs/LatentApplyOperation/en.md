@@ -1,6 +1,6 @@
 # LatentApplyOperation
 
-The LatentApplyOperation node applies a specified operation to latent samples. It takes latent data and an operation as inputs, processes the latent samples using the provided operation, and returns the modified latent data. This node allows you to transform or manipulate latent representations in your workflow.
+The LatentApplyOperation node applies a specified latent operation to latent samples. It takes latent data and an operation as inputs, processes the latent samples using the provided operation, and returns the modified latent data. This node allows you to transform or manipulate latent representations in your workflow. This node is currently marked as experimental.
 
 ## Inputs
 
@@ -18,4 +18,4 @@ The LatentApplyOperation node applies a specified operation to latent samples. I
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentApplyOperation/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `e91307b6426c5220b4eab574d1efd0dd5ff26886b3baf8de9f7b6d9a123920e4`
+**Source fingerprint (SHA-256):** `cba55d019793fde8dcc0d4aeb4eb6020b6149f523c6bffc65d73c533aa2e2c6c`

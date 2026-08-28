@@ -1,19 +1,20 @@
 # BriaIncreaseResolution
 
-Bria Increase Resolution amplía una imagen de entrada por 2x o 4x utilizando la API de ampliación de imágenes de Bria, preservando el contenido original. Sube la imagen, la procesa en el servicio de Bria y devuelve el resultado ampliado como imagen.
+Bria Increase Resolution amplía una imagen de entrada 2x o 4x mediante el servicio de ampliación de imágenes de Bria, preservando el contenido original. Sube la imagen, la procesa en el servicio de Bria y devuelve el resultado ampliado como imagen.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `image` | La imagen de entrada para ampliar. | IMAGE | Sí | Imagen única |
-| `desired_increase` | Multiplicador de resolución. La salida debe caber dentro de 8192 píxeles en cada lado. | COMBO | Sí | "2"<br>"4" |
-| `auto_downscale` | Reduce automáticamente el multiplicador y reduce la escala de la imagen de entrada si aún no es suficiente, cuando la salida excedería el límite. (valor predeterminado: False) | BOOLEAN | Sí | True<br>False |
-| `moderation` | Configuración de moderación. Cuando se establece en "true", habilita las subopciones `visual_input_moderation` y `visual_output_moderation`, ambas con valor predeterminado False. | COMBO | Sí | "false"<br>"true" |
+| `imagen` | La imagen de entrada a ampliar. | IMAGE | Sí | Imagen única |
+| `desired_increase` | Multiplicador de resolución. La salida debe tener como máximo 8192 píxeles por lado. | COMBO | Sí | "2"<br>"4" |
+| `auto_downscale` | Reduce automáticamente el multiplicador y reduce la escala de la imagen de entrada si eso aún no es suficiente, cuando la salida excedería el límite. (por defecto: False) | BOOLEAN | Sí | True<br>False |
+| `moderación` | Configuración de moderación. Cuando se establece en "true", habilita las subopciones `visual_input_moderation` y `visual_output_moderation`, ambas con valor predeterminado False. | DYNAMIC_COMBO | Sí | "false"<br>"true" |
 
 Notas:
-- El nodo aplica un máximo de 8192 píxeles por lado en la salida. Si el multiplicador seleccionado excede este límite y `auto_downscale` está deshabilitado, se genera un error. Habilitar `auto_downscale` permite que el nodo use automáticamente un multiplicador menor o reduzca la escala de la imagen de entrada.
-- Bria primero amplía el lado corto de la imagen de entrada a al menos 224 píxeles antes de aumentar la resolución. Las imágenes demasiado alargadas pueden provocar un error que pide recortarlas para que tengan una forma más cuadrada.
+- Cuando `moderation` se establece en "true", las subopciones `visual_input_moderation` y `visual_output_moderation` están disponibles, ambas con valor predeterminado False. Controlan la moderación del contenido de la imagen de entrada y de la imagen de salida.
+- El nodo aplica un lado máximo de salida de 8192 píxeles. Si el multiplicador seleccionado superara este límite y `auto_downscale` está desactivado, se genera un error. Activar `auto_downscale` permite que el nodo utilice automáticamente un multiplicador menor o reduzca la escala de la imagen de entrada en su lugar.
+- Bria primero amplía el lado corto de la imagen de entrada a al menos 224 píxeles antes de ampliarla. Las imágenes demasiado alargadas pueden provocar un error que solicite recortarlas a una forma más cuadrada.
 
 ## Salidas
 

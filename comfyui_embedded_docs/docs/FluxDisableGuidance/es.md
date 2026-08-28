@@ -1,20 +1,20 @@
 # FluxDisableGuidance
 
-Este nodo desactiva por completo la funcionalidad de guía integrada para Flux y modelos similares. Toma datos de condicionamiento como entrada y elimina el componente de guía estableciéndolo en None, desactivando efectivamente el condicionamiento basado en guía para el proceso de generación.
+Este nodo desactiva por completo la incrustación de guía en modelos Flux y similares. Toma datos de condicionamiento como entrada y elimina el componente de guía estableciéndolo en None, desactivando efectivamente el condicionamiento basado en guía para el proceso de generación.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `acondicionamiento` | Los datos de condicionamiento a procesar y de los cuales eliminar la guía | CONDITIONING | Sí | - |
+| `acondicionamiento` | Los datos de condicionamiento que se procesarán y a los que se les eliminará la guía | CONDITIONING | Sí | - |
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `acondicionamiento` | Los datos de condicionamiento modificados con la guía desactivada | CONDITIONING |
+| `conditioning` | Los datos de condicionamiento modificados con la guía desactivada | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxDisableGuidance/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `37e544460d5e50542cebb451997c0320f16d822cc5695cb34825d2038866a455`
+**Source fingerprint (SHA-256):** `da3286194f9f5e7e49dd7047d6b0a0c97bb2570eaa9281abbd3992a743302fbf`

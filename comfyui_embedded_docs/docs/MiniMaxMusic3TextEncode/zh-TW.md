@@ -1,25 +1,25 @@
 # MiniMaxMusic3TextEncode
 
-MiniMax Music3 Text Encode 使用 MiniMax Music3 CLIP 模型，將文字描述和歌詞轉換成用於產生音樂的聲學條件序列。此節點會傳回轉換後的 CONDITIONING 資料，以及根據輸入時長計算出的實際音訊秒數。
+MiniMax Music3 Text Encode 使用 MiniMax Music3 CLIP 模型將文字標題和歌詞轉換為用於音樂生成的聲學條件序列。此節點會回傳產生的 CONDITIONING 資料，以及根據輸入的最大時長計算出的實際音訊秒數。
 
-## Inputs
+## 輸入
 
-| Parameter | Description | Data Type | Required | Range |
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `clip` | MiniMax Music3 CLIP 模型，用於文字編碼和條件序列生成。 | CLIP | 是 | - |
-| `caption` | 描述要產生音樂的文字內容。支援多行文字和動態提示。 | STRING | 是 | - |
-| `lyrics` | 要用於產生音樂的歌詞文字。支援多行文字和動態提示。 | STRING | 是 | - |
-| `seed` | 用於生成過程的可重現隨機種子。預設值：0。 | INT | 是 | 0 到 18446744073709551615（0xffffffffffffffff） |
-| `max_duration` | 產生音樂的最大時長（秒），模型可能提前結束歌曲。預設值：120.0。 | FLOAT | 是 | 0.04 到模型最大音訊時長（MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND），步長 0.04 |
-| `cfg_scale` | 分類器自由引導縮放係數。預設值：模型常數 CFG_SCALE。進階參數。 | FLOAT | 是 | 0.0 到 100.0，步長 0.1（保留 2 位小數） |
-| `top_k` | 用於聲學 token 選擇的 top-k 取樣值。預設值：模型常數 CFG_TOP_K。進階參數。 | INT | 是 | 1 到模型詞彙表大小（C0_VOCAB_SIZE） |
+| `clip` | 用於文字編碼和條件序列生成的 MiniMax Music3 CLIP 模型。 | CLIP | 是 | - |
+| `caption` | 描述要生成之音樂的文字。支援多行文字與動態提示詞。 | STRING | 是 | - |
+| `歌詞` | 用於生成音樂的歌詞文字。支援多行文字與動態提示詞。 | STRING | 是 | - |
+| `種子` | 用於生成過程的可重現隨機種子。預設值：0。 | INT | 是 | 0 至 18446744073709551615 (0xffffffffffffffff) |
+| `max_duration` | 最大時長（秒）；模型可以提前結束歌曲。預設值：120.0。 | FLOAT | 是 | 0.04 to the model's maximum audio duration (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND), step 0.04 |
+| `cfg_scale` | 無分類器引導尺度。預設值：模型常數 CFG_SCALE。進階參數。 | FLOAT | 是 | 0.0 至 100.0, step 0.1 (keeps 2 decimal places) |
+| `top_k` | 用於聲學 token 選擇的 Top-k 取樣值。預設值：模型常數 CFG_TOP_K。進階參數。 | INT | 是 | 1 to the model's vocabulary size (C0_VOCAB_SIZE) |
 
-## Outputs
+## 輸出
 
-| Output Name | Description | Data Type |
+| 輸出名稱 | 描述 | 資料類型 |
 |-------------|-------------|-----------|
-| `conditioning` | 生成的聲學條件序列，用於指導後續音樂生成。 | CONDITIONING |
-| `seconds` | 條件序列對應的實際時長，以秒為單位。 | FLOAT |
+| `conditioning` | 生成的聲學條件序列，用於引導後續的音樂生成。 | CONDITIONING |
+| `秒` | 條件序列的實際持續時間（秒）。 | FLOAT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MiniMaxMusic3TextEncode/zh-TW.md)
 

@@ -1,22 +1,22 @@
 # TSR - Zamansal Skor Yeniden Ölçeklendirme
 
-Bu düğüm, bir difüzyon modeline Zamansal Puan Yeniden Ölçekleme (TSR) uygular. Gürültü giderme işlemi sırasında tahmin edilen gürültüyü veya puanı yeniden ölçeklendirerek modelin örnekleme davranışını değiştirir; bu, oluşturulan çıktının çeşitliliğini yönlendirebilir. Bu, bir CFG (Sınıflandırıcısız Kılavuzluk) sonrası işlevi olarak uygulanır.
+Bu düğüm, bir difüzyon modeline Temporal Score Rescaling (TSR) uygular. Gürültü giderme işlemi sırasında tahmin edilen gürültüyü veya skoru yeniden ölçeklendirerek modelin örnekleme davranışını değiştirir; bu da üretilen çıktının çeşitliliğini yönlendirebilir. Bu işlev, CFG (Classifier-Free Guidance) sonrası bir işlev olarak uygulanır.
 
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | TSR işleviyle yamalanacak difüzyon modeli. | MODEL | Evet | - |
-| `tsr_k` | Yeniden ölçekleme gücünü kontrol eder. Daha düşük k değeri, görüntü oluşturmada daha ayrıntılı sonuçlar üretir; daha yüksek k değeri ise daha yumuşak sonuçlar üretir. k = 1 olarak ayarlandığında yeniden ölçekleme devre dışı bırakılır. (varsayılan: 0.95) | FLOAT | Hayır | 0.01 - 100.0 |
-| `tsr_sigma` | Yeniden ölçeklemenin ne kadar erken etkili olacağını kontrol eder. Daha büyük değerler daha erken etkili olur. (varsayılan: 1.0) | FLOAT | Hayır | 0.01 - 100.0 |
+| `tsr_k` | Yeniden ölçekleme gücünü kontrol eder. Düşük k değeri görüntü üretiminde daha detaylı sonuçlar üretir; yüksek k değeri daha pürüzsüz sonuçlar üretir. k = 1 olarak ayarlanması yeniden ölçeklemeyi devre dışı bırakır. (varsayılan: 0.95) | FLOAT | Evet | 0.01 - 100.0 |
+| `tsr_sigma` | Yeniden ölçeklemenin ne kadar erken etkili olacağını kontrol eder. Daha büyük değerler daha erken etkili olur. (varsayılan: 1.0) | FLOAT | Evet | 0.01 - 100.0 |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `yama_uygulanmış_model` | Örnekleme sürecine Zamansal Puan Yeniden Ölçekleme işlevi uygulanmış olan giriş modeli. | MODEL |
+| `yama_uygulanmış_model` | Örnekleme sürecine Temporal Score Rescaling işlevi uygulanmış olan girdi modeli. | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TemporalScoreRescaling/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `2931b42ac93cf50e2c395bacf3128bb43dcc043ab5c8f86d7aabe4d35a44d20a`
+**Source fingerprint (SHA-256):** `4d4e3c64fb6e3a3fe4725ea944a361b46d871943a10e65d72d70e0e6d757dfca`

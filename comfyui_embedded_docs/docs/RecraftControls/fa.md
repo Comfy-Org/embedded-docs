@@ -11,7 +11,7 @@
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `recraft_controls` | کنترل‌های پیکربندی‌شده Recraft شامل تنظیمات رنگ | CONTROLS |
+| `کنترل‌های Recraft` | کنترل‌های پیکربندی‌شده Recraft شامل تنظیمات رنگ | CONTROLS |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftControls/fa.md)
 

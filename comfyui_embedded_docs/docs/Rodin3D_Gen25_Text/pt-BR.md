@@ -31,7 +31,7 @@ Gere um modelo 3D a partir de um prompt de texto usando a API Rodin Gen-2.5. Voc
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `model_file` | O arquivo do modelo 3D gerado no formato especificado. | FILE3DANY |
+| `arquivo_modelo` | O arquivo do modelo 3D gerado no formato especificado. | FILE3DANY |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Gen25_Text/pt-BR.md)
 

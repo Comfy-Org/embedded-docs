@@ -19,7 +19,7 @@ Este nó altera a proporção de aspecto de um vídeo existente usando o Luma Ra
 | Nome da Saída | Descrição | Tipo de Dado |
 |-------------|-------------|-----------|
 | `vídeo` | O vídeo reenquadrado com a nova proporção de aspecto e áreas da tela preenchidas. | VIDEO |
-| `generation_id` | O identificador único para a solicitação de geração. | STRING |
+| `id_geração` | O identificador único para a solicitação de geração. | STRING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32VideoReframeNode/pt-BR.md)
 

@@ -13,8 +13,8 @@ O nó Seletor de Resolução calcula a largura e altura em pixels de uma imagem 
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `width` | A largura calculada em pixels, que é um múltiplo de 8. | INT |
-| `height` | A altura calculada em pixels, que é um múltiplo de 8. | INT |
+| `largura` | A largura calculada em pixels, que é um múltiplo de 8. | INT |
+| `altura` | A altura calculada em pixels, que é um múltiplo de 8. | INT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionSelector/pt-BR.md)
 

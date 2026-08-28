@@ -12,7 +12,7 @@
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `patched_model` | مدل اصلاح‌شده با تابع هدایت Mahiro اعمال‌شده | MODEL |
+| `مدل اصلاح‌شده` | مدل اصلاح‌شده با تابع هدایت Mahiro اعمال‌شده | MODEL |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Mahiro/fa.md)
 

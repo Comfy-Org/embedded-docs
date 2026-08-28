@@ -13,7 +13,7 @@ O nó Obter Contagem de Splats retorna o número total de splats (pontos gaussia
 | Nome da Saída | Descrição | Tipo de Dado |
 |---------------|-----------|--------------|
 | `splat` | Os dados originais do splat, transmitidos inalterados | SPLAT |
-| `count` | O número total de splats somados em todo o lote | INT |
+| `contagem` | O número total de splats somados em todo o lote | INT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetSplatCount/pt-BR.md)
 

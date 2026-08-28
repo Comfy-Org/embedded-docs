@@ -18,7 +18,7 @@
 | --- | --- | --- |
 | `GLB` | مدل سه‌بعدی پردازش‌شده با فرمت GLB. | FILE3D |
 | `OBJ` | مدل سه‌بعدی پردازش‌شده با فرمت OBJ. | FILE3D |
-| `texture_image` | تصویر بافت تازه تولیدشده برای مدل سه‌بعدی. | IMAGE |
+| `تصویر بافت` | تصویر بافت تازه تولیدشده برای مدل سه‌بعدی. | IMAGE |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Tencent3DTextureEditNode/fa.md)
 

@@ -1,6 +1,6 @@
-# LTXVDurationPredictor
+# LTXV Duration Predictor
 
-This node predicts the natural duration of a shot for a prompt using an LTX 2.4 duration head. It converts the predicted duration into a frame count that fits the VAE's frame grid, using the supplied frame rate and minimum/maximum duration limits.
+This node predicts the natural shot duration for a prompt using an LTX 2.4 duration head. It converts the predicted duration into a frame count that fits the VAE's frame grid, using the supplied frame rate and minimum/maximum duration limits.
 
 ## Inputs
 

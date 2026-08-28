@@ -7,7 +7,7 @@ Bu düğüm, bir modelin dikkat hesaplamaları için hangi dikkat arka ucunu (ba
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Seçilen dikkat arka ucunun uygulanacağı model. | MODEL | Evet |  |
-| `attention` | Kullanılacak dikkat arka ucu (varsayılan: "pytorch attention"). Seçilen arka uç kullanılamıyorsa, PyTorch dikkati yedek olarak kullanılır. | STRING | Evet | "pytorch attention"<br>"comfy kitchen attention" |
+| `dikkat` | Kullanılacak dikkat arka ucu (varsayılan: "pytorch attention"). Seçilen arka uç kullanılamıyorsa, PyTorch dikkati yedek olarak kullanılır. | STRING | Evet | "pytorch attention"<br>"comfy kitchen attention" |
 
 Not: "comfy kitchen attention" seçeneği yalnızca comfy kitchen int8 dikkat modülü mevcut ortamda kullanılabilir olduğunda listelenir.
 

@@ -17,7 +17,7 @@ O nó ElevenLabs Instant Voice Clone cria um novo modelo de voz único analisand
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `voice` | O identificador único para o modelo de voz clonado recém-criado. Esta saída pode ser conectada a outros nós de texto para fala do ElevenLabs. | ELEVENLABS_VOICE |
+| `voz` | O identificador único para o modelo de voz clonado recém-criado. Esta saída pode ser conectada a outros nós de texto para fala do ElevenLabs. | ELEVENLABS_VOICE |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsInstantVoiceClone/pt-BR.md)
 

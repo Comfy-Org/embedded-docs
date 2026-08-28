@@ -14,7 +14,7 @@
 | `negative_prompt` | 描述生成结果中要避免的内容的提示词。如果留空，则不会发送到 API。（默认：""） | STRING | 是 | - |
 | `refine_prompt` | 自动调整提示词以获得更好的结果；禁用后则完全按照原样使用提示词。（默认：true） | BOOLEAN | 是 | true<br>false |
 | `seed` | 生成过程的随机种子。（默认：42） | INT | 是 | 1 到 2147483647 |
-| `moderation` | 审核设置。当设置为“true”时，将应用下方的内容审核选项。（默认：“false”） | DYNAMIC_COMBO | 是 | "false"<br>"true" |
+| `内容审核` | 审核设置。当设置为“true”时，将应用下方的内容审核选项。（默认：“false”） | DYNAMIC_COMBO | 是 | "false"<br>"true" |
 
 ### 审核输入（当 `moderation` = "true" 时）
 

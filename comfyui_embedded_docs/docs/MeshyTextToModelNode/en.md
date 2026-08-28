@@ -9,12 +9,12 @@ The Meshy: Text to Model node uses the Meshy API to generate a 3D model from a t
 | `model` | Specifies the AI model version to use. Currently, only the "latest" version is available. | COMBO | Yes | `"latest"` |
 | `prompt` | The text description of the 3D model you want to generate. Must be between 1 and 600 characters long. | STRING | Yes | - |
 | `style` | The artistic style for the generated 3D model. | COMBO | Yes | `"realistic"`<br>`"sculpture"` |
-| `should_remesh` | Controls whether the generated mesh is processed. When set to "false", the node returns an unprocessed triangular mesh. Selecting "true" reveals additional parameters for topology and polycount. | DYNAMIC COMBO | Yes | `"true"`<br>`"false"` |
+| `should_remesh` | Controls whether the generated mesh is processed. When set to "false", the node returns an unprocessed triangular mesh. Selecting "true" reveals additional parameters for topology and polycount. | DYNAMIC_COMBO | Yes | `"true"`<br>`"false"` |
 | `topology` | The target polygon type for the remeshed model. This parameter is only available when `should_remesh` is set to "true". | COMBO | No* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | The target number of polygons for the remeshed model. Default is 300000. This parameter is only available when `should_remesh` is set to "true". | INT | No* | 100 - 300000 |
-| `symmetry_mode` | Controls symmetry in the generated model. | COMBO | Yes | `"auto"`<br>`"on"`<br>`"off"` |
-| `pose_mode` | Specifies the pose mode for the generated model. An empty string means no specific pose is requested. | COMBO | Yes | `""`<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | A seed value for generation. Setting this controls whether the node should re-run, but results are non-deterministic regardless of the seed value. Default is 0. | INT | Yes | 0 - 2147483647 |
+| `symmetry_mode` | Controls symmetry in the generated model. This is an advanced parameter. | COMBO | Yes | `"auto"`<br>`"on"`<br>`"off"` |
+| `pose_mode` | Specify the pose mode for the generated model. An empty string means no specific pose is requested. This is an advanced parameter. | COMBO | Yes | `""`<br>`"A-pose"`<br>`"T-pose"` |
+| `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed. Default is 0. | INT | Yes | 0 - 2147483647 |
 
 *Note: The `topology` and `target_polycount` parameters are conditionally available. They only appear when the `should_remesh` parameter is set to "true".
 

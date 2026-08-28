@@ -13,7 +13,7 @@ Este nó aplica uma animação específica a um modelo de personagem 3D que já 
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `model_file` | Um identificador de string para o modelo animado. Esta saída é fornecida apenas para compatibilidade com versões anteriores. | STRING |
+| `arquivo_do_modelo` | Um identificador de string para o modelo animado. Esta saída é fornecida apenas para compatibilidade com versões anteriores. | STRING |
 | `GLB` | O arquivo de modelo 3D animado no formato GLB. | FILE3DGLB |
 | `FBX` | O arquivo de modelo 3D animado no formato FBX. | FILE3DFBX |
 

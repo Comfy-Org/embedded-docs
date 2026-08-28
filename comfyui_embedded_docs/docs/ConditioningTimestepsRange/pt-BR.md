@@ -14,8 +14,8 @@ O nó **ConditioningTimestepsRange** cria três faixas de timesteps distintas pa
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
 | `TIMESTEPS_RANGE` | A faixa principal de timesteps definida por start_percent e end_percent | TIMESTEPS_RANGE |
-| `BEFORE_RANGE` | A faixa de timesteps de 0.0 até start_percent | TIMESTEPS_RANGE |
-| `AFTER_RANGE` | A faixa de timesteps de end_percent até 1.0 | TIMESTEPS_RANGE |
+| `ANTES_DO_INTERVALO` | A faixa de timesteps de 0.0 até start_percent | TIMESTEPS_RANGE |
+| `APÓS_O_INTERVALO` | A faixa de timesteps de end_percent até 1.0 | TIMESTEPS_RANGE |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningTimestepsRange/pt-BR.md)
 

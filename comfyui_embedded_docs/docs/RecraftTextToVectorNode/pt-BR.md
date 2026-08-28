@@ -1,28 +1,28 @@
 # Recraft Texto para Vetor
 
-Gera ilustrações vetoriais SVG de forma síncrona com base em um prompt de texto e resolução. Este nó envia seu prompt para a API Recraft e retorna o conteúdo SVG gerado.
+Gera ilustrações vetoriais SVG de forma síncrona com base em um prompt de texto e resolução. Este nó envia seu prompt para a API do Recraft e retorna o conteúdo SVG gerado.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
-| --- | --- | --- | --- | --- |
-| `prompt` | Prompt para a geração da imagem. (padrão: "") | STRING | Sim | - |
+| Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Prompt para a geração da imagem. (padrão: "", máximo de 1000 caracteres) | STRING | Sim | - |
 | `substyle` | O estilo específico de ilustração vetorial a ser usado na geração. | COMBO | Sim | `"2d_character"`<br>`"2d_gradient"`<br>`"2d_illustration"`<br>`"2d_flat_character"`<br>`"2d_flat_illustration"`<br>`"2d_art"`<br>`"2d_art_character"`<br>`"2d_pattern"`<br>`"2d_pixel_art"`<br>`"2d_cyberpunk"`<br>`"2d_engraving"`<br>`"2d_black_and_white"`<br>`"2d_ink"`<br>`"2d_sketch"`<br>`"2d_watercolor"`<br>`"2d_animation"`<br>`"2d_comic"`<br>`"2d_children_illustration"`<br>`"2d_vintage"`<br>`"2d_retro"`<br>`"2d_hand_drawn"`<br>`"2d_psychedelic"`<br>`"2d_graffiti"`<br>`"2d_ukiyo_e"`<br>`"2d_woodcut"`<br>`"2d_art_deco"`<br>`"2d_art_nouveau"`<br>`"2d_bauhaus"`<br>`"2d_constructivism"`<br>`"2d_cubism"`<br>`"2d_futurism"`<br>`"2d_glitch"`<br>`"2d_impressionism"`<br>`"2d_naive"`<br>`"2d_pointillism"`<br>`"2d_pop_art"`<br>`"2d_realism"`<br>`"2d_renaissance"`<br>`"2d_rococo"`<br>`"2d_romanticism"`<br>`"2d_surrealism"`<br>`"2d_suprematism"`<br>`"2d_symbolism"`<br>`"2d_expressionism"`<br>`"2d_abstract"`<br>`"2d_minimalism"`<br>`"2d_contemporary"`<br>`"2d_modern"`<br>`"2d_brutalism"`<br>`"2d_metaphysical"`<br>`"2d_mannerism"`<br>`"2d_baroque"`<br>`"2d_neoclassicism"`<br>`"2d_orientalism"`<br>`"2d_primitivism"`<br>`"2d_fauvism"`<br>`"2d_rayonism"`<br>`"2d_orphism"`<br>`"2d_vorticism"`<br>`"2d_dadaism"`<br>`"2d_neo_expressionism"`<br>`"2d_transavantgarde"`<br>`"2d_new_wild"`<br>`"2d_graffiti_classic"`<br>`"2d_graffiti_modern"`<br>`"2d_graffiti_wildstyle"`<br>`"2d_graffiti_bubble"`<br>`"2d_graffiti_throwup"`<br>`"2d_graffiti_tag"`<br>`"2d_graffiti_blockbuster"`<br>`"2d_graffiti_mural"`<br>`"2d_graffiti_stencil"`<br>`"2d_graffiti_3d"`<br>`"2d_graffiti_character"`<br>`"2d_graffiti_abstract"`<br>`"2d_graffiti_urban"`<br>`"2d_graffiti_neo_muralism"`<br>`"2d_graffiti_post_graffiti"`<br>`"2d_graffiti_street_art"` |
 | `size` | O tamanho da imagem gerada. (padrão: "1024x1024") | COMBO | Sim | `"1024x1024"`<br>`"1024x2048"`<br>`"2048x1024"`<br>`"2048x2048"`<br>`"512x512"`<br>`"512x1024"`<br>`"1024x512"`<br>`"2048x512"`<br>`"512x2048"` |
 | `n` | O número de imagens a serem geradas. (padrão: 1, mínimo: 1, máximo: 6) | INT | Sim | 1-6 |
 | `seed` | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente. (padrão: 0, mínimo: 0, máximo: 18446744073709551615) | INT | Sim | 0-18446744073709551615 |
-| `negative_prompt` | Uma descrição textual opcional de elementos indesejados em uma imagem. (padrão: "") | STRING | Não | - |
-| `recraft_controls` | Controles adicionais opcionais sobre a geração através do nó Recraft Controls. | CONTROLS | Não | - |
+| `negative_prompt` | Uma descrição opcional de elementos indesejados em uma imagem. (padrão: "", quando vazio nenhum prompt negativo é usado) | STRING | Não | - |
+| `recraft_controls` | Controles adicionais opcionais sobre a geração por meio do nó Recraft Controls. | CONTROLS | Não | - |
 
-**Nota:** O parâmetro `seed` controla apenas quando o nó é executado novamente, mas não torna os resultados da geração determinísticos.
+**Observação:** O parâmetro `seed` controla apenas quando o nó é executado novamente, mas não torna os resultados da geração determinísticos.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
-| --- | --- | --- |
-| `SVG` | A ilustração vetorial gerada no formato SVG | SVG |
+| Nome da saída | Descrição | Tipo de dados |
+|-------------|-------------|-----------|
+| `SVG` | A ilustração vetorial gerada em formato SVG | SVG |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftTextToVectorNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `3ac4057fa100a207c0400d0d01756899fc02261e3fb7d962fb0057e6c6519100`
+**Source fingerprint (SHA-256):** `aec7e96e339047e75dfe419d94d23a613595bc22e7f187895c52b143780fcbf3`

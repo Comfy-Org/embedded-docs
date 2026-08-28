@@ -1,63 +1,45 @@
 # Kling Fotograma Inicial-Final a Video
 
-Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
-
-## Reglas de Traducción
-
-1. **Contenido que NO debe traducirse:**
-   - Nombres de parámetros entre comillas invertidas: `image`, `seed`, `model`
-   - Tipos de datos en MAYÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.
-   - Valores en columna Range: números, "auto", nombres de opciones
-   - Código, rutas de archivos
-
-2. **Contenido que SÍ debe traducirse:**
-   - Títulos de secciones: ## Descripción general, ## Entradas, ## Salidas
-   - Todo el texto descriptivo y explicativo
-   - Descripciones de parámetros
-
-3. **Calidad de traducción:**
-   - Usar español estándar y neutral
-   - Mantener tono profesional pero accesible
-   - Asegurar precisión técnica
-   - Usar terminología técnica estándar en español
-
-4. **Formato:**
-   - Mantener todo el formato Markdown
-   - Preservar estructura de tablas
-   - No agregar ninguna nota o enlace al inicio del documento (será agregado automáticamente)
-
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
-El nodo Kling Start-End Frame to Video crea una secuencia de video que realiza una transición entre las imágenes de inicio y fin proporcionadas. Genera todos los fotogramas intermedios para producir una transformación suave desde el primer fotograma hasta el último. Este nodo utiliza la API de imagen a video, pero solo admite las opciones de entrada que funcionan con el campo de solicitud `image_tail`.
+Este nodo crea una secuencia de video que hace la transición entre las imágenes de inicio y fin proporcionadas. Genera todos los fotogramas intermedios para producir una transformación suave del primer al último fotograma. Este nodo llama a la API de imagen a video, pero solo admite las opciones de entrada que funcionan con el campo de solicitud `image_tail`.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
-| --- | --- | --- | --- | --- |
-| `start_frame` | Imagen de referencia - URL o cadena codificada en Base64, no puede superar los 10MB, resolución no inferior a 300*300px, relación de aspecto entre 1:2.5 y 2.5:1. Base64 no debe incluir el prefijo data:image. | IMAGE | Sí | - |
-| `end_frame` | Imagen de referencia - Control del fotograma final. URL o cadena codificada en Base64, no puede superar los 10MB, resolución no inferior a 300*300px. Base64 no debe incluir el prefijo data:image. | IMAGE | Sí | - |
-| `prompt` | Prompt de texto positivo | STRING | Sí | - |
-| `negative_prompt` | Prompt de texto negativo | STRING | Sí | - |
-| `cfg_scale` | Controla la fuerza de la guía del prompt (predeterminado: 0.5) | FLOAT | No | 0.0-1.0 |
-| `aspect_ratio` | La relación de aspecto para el video generado (predeterminado: "16:9") | COMBO | No | "16:9"<br>"9:16"<br>"1:1" |
-| `mode` | La configuración a utilizar para la generación de video siguiendo el formato: modo / duración / nombre_del_modelo. (predeterminado: la séptima opción de los modos disponibles) | COMBO | No | Múltiples opciones disponibles |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `start_frame` | Imagen de referencia: URL o cadena codificada en Base64, no puede superar los 10 MB, resolución no inferior a 300×300 píxeles, relación de aspecto entre 1:2.5 y 2.5:1. El Base64 no debe incluir el prefijo data:image. | IMAGE | Sí | - |
+| `end_frame` | Imagen de referencia: control del fotograma final. URL o cadena codificada en Base64, no puede superar los 10 MB, resolución no inferior a 300×300 píxeles. El Base64 no debe incluir el prefijo data:image. | IMAGE | Sí | - |
+| `prompt` | Indicación de texto positiva. No debe estar vacía y no puede superar los 500 caracteres. | STRING | Sí | - |
+| `negative_prompt` | Indicación de texto negativa. No puede superar los 500 caracteres. Si se deja vacía, se omite de la solicitud. | STRING | Sí | - |
+| `cfg_scale` | Controla la intensidad de la guía de la indicación (valor por defecto: 0.5) | FLOAT | Sí | 0.0-1.0 |
+| `aspect_ratio` | La relación de aspecto del video generado (valor por defecto: "16:9") | COMBO | Sí | "16:9"<br>"9:16"<br>"1:1" |
+| `mode` | La configuración a utilizar para la generación de video, con el formato: modo / duración / nombre del modelo. (Valor por defecto: "pro mode / 5s duration / kling-v2-5-turbo") | COMBO | Sí | "pro mode / 5s duration / kling-v2-5-turbo"<br>"pro mode / 10s duration / kling-v2-5-turbo" |
 
 **Restricciones de las imágenes:**
 
-- Tanto `start_frame` como `end_frame` deben proporcionarse y no pueden superar un tamaño de archivo de 10MB
-- Resolución mínima: 300×300 píxeles para ambas imágenes
-- La relación de aspecto de `start_frame` debe estar entre 1:2.5 y 2.5:1
-- Las imágenes codificadas en Base64 no deben incluir el prefijo "data:image"
+- Tanto `start_frame` como `end_frame` son obligatorios y no pueden superar los 10 MB de tamaño de archivo.
+- Resolución mínima: 300×300 píxeles para ambas imágenes.
+- La relación de aspecto de `start_frame` debe estar entre 1:2.5 y 2.5:1.
+- Las imágenes codificadas en Base64 no deben incluir el prefijo "data:image".
+
+**Restricciones de las indicaciones:**
+
+- `prompt` no debe estar vacío y no puede superar los 500 caracteres.
+- `negative_prompt` no puede superar los 500 caracteres; cuando está vacío, no se envía con la solicitud.
+
+**Notas sobre el modo:**
+
+- Ambas opciones de modo utilizan el modo pro con el modelo kling-v2-5-turbo y solo difieren en la duración (5 segundos o 10 segundos).
+- Precio por generación, como se muestra en la insignia de precio del nodo: el modo de 5s cuesta $0.35 USD y el modo de 10s cuesta $0.70 USD.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-| --- | --- | --- |
-| `video_id` | La secuencia de video generada | VIDEO |
-| `video_id` | Identificador único para el video generado | STRING |
+| Nombre de salida | Descripción | Tipo de datos |
+|-------------|-------------|-----------|
+| `output` | La secuencia de video generada | VIDEO |
+| `video_id` | Identificador único del video generado | STRING |
 | `duration` | Duración del video generado | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingStartEndFrameNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `1df5820b4f41ccd5afec8e2701888d90c940f164c433c7f81397b41e8fc333c6`
+**Source fingerprint (SHA-256):** `a27977226360a425614255f8330ce7fd8ba94b8c3020eb8fdddc01eb74f035c1`

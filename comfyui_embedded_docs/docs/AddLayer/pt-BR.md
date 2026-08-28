@@ -6,20 +6,20 @@ O nó Add Layer transforma uma imagem de entrada em uma camada e a coloca em uma
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `layers` | Pilha de camadas à qual anexar. Deixe desconectado para iniciar uma nova pilha. | LAYERS | Não | — |
-| `image` | Conteúdo da camada em seu tamanho nativo. Um lote se expande em camadas consecutivas. | IMAGE | Sim | — |
-| `mask` | Máscara de transparência para esta camada. Áreas mascaradas (valor 1) tornam-se transparentes, multiplicando-se com qualquer canal alfa que a imagem já possua. | MASK | Não | — |
-| `name` | Nome da camada exibido no editor do compositor. (padrão: "") | STRING | Não | — |
+| `camadas` | Pilha de camadas à qual anexar. Deixe desconectado para iniciar uma nova pilha. | LAYERS | Não | — |
+| `imagem` | Conteúdo da camada em seu tamanho nativo. Um lote se expande em camadas consecutivas. | IMAGE | Sim | — |
+| `máscara` | Máscara de transparência para esta camada. Áreas mascaradas (valor 1) tornam-se transparentes, multiplicando-se com qualquer canal alfa que a imagem já possua. | MASK | Não | — |
+| `nome` | Nome da camada exibido no editor do compositor. (padrão: "") | STRING | Não | — |
 | `x` | Posicionamento horizontal inicial na tela. (padrão: 0) | INT | Não | -MAX_RESOLUTION a MAX_RESOLUTION |
 | `y` | Posicionamento vertical inicial na tela. (padrão: 0) | INT | Não | -MAX_RESOLUTION a MAX_RESOLUTION |
-| `opacity` | Opacidade inicial da camada. (padrão: 1.0) | FLOAT | Não | 0.0 a 1.0 (passo: 0.01) |
-| `blend_mode` | Modo de mesclagem inicial, aplicado às camadas abaixo. Na camada inferior sobre o fundo transparente padrão, modos não normais produzem transparência. (padrão: "normal") | COMBO | Não | Múltiplas opções disponíveis |
-| `rotation` | Rotação inicial em graus, no sentido horário. (padrão: 0.0) | FLOAT | Não | -360.0 a 360.0 (passo: 1.0) |
-| `width` | Largura de exibição inicial. 0 mantém a largura nativa da imagem. (padrão: 0) | INT | Não | 0 a MAX_RESOLUTION |
-| `height` | Altura de exibição inicial. 0 mantém a altura nativa da imagem. (padrão: 0) | INT | Não | 0 a MAX_RESOLUTION |
+| `opacidade` | Opacidade inicial da camada. (padrão: 1.0) | FLOAT | Não | 0.0 a 1.0 (passo: 0.01) |
+| `modo_de_mesclagem` | Modo de mesclagem inicial, aplicado às camadas abaixo. Na camada inferior sobre o fundo transparente padrão, modos não normais produzem transparência. (padrão: "normal") | COMBO | Não | Múltiplas opções disponíveis |
+| `rotação` | Rotação inicial em graus, no sentido horário. (padrão: 0.0) | FLOAT | Não | -360.0 a 360.0 (passo: 1.0) |
+| `largura` | Largura de exibição inicial. 0 mantém a largura nativa da imagem. (padrão: 0) | INT | Não | 0 a MAX_RESOLUTION |
+| `altura` | Altura de exibição inicial. 0 mantém a altura nativa da imagem. (padrão: 0) | INT | Não | 0 a MAX_RESOLUTION |
 | `z_index` | Substituição de empilhamento. As camadas são ordenadas de forma estável por z_index; valores iguais mantêm sua ordem na lista. (padrão: 0) | INT | Não | -1000 a 1000 |
-| `flip_h` | Inverter a camada horizontalmente. (padrão: False) | BOOLEAN | Não | false / true |
-| `flip_v` | Inverter a camada verticalmente. (padrão: False) | BOOLEAN | Não | false / true |
+| `inverter_h` | Inverter a camada horizontalmente. (padrão: False) | BOOLEAN | Não | false / true |
+| `inverter_v` | Inverter a camada verticalmente. (padrão: False) | BOOLEAN | Não | false / true |
 
 Notas:
 - Apenas `image` é obrigatório; todos os outros parâmetros são opcionais.

@@ -1,27 +1,27 @@
 # ReplaceVideoLatentFrames
 
-El nodo ReplaceVideoLatentFrames inserta fotogramas de un video latente fuente en un video latente de destino, comenzando en un índice de fotograma especificado. Si no se proporciona el latente fuente, se devuelve el latente de destino sin cambios. El nodo maneja índices negativos y emitirá una advertencia si los fotogramas fuente no caben dentro del destino.
+ReplaceVideoLatentFrames reemplaza un rango de fotogramas en un video latente de destino con fotogramas de un video latente de origen, comenzando en un índice de fotograma especificado. Si no se proporciona un latente de origen, el latente de destino se devuelve sin cambios. El nodo admite índices negativos y registra una advertencia cuando los fotogramas de origen no caben dentro del destino.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `destination` | El latente de destino donde se reemplazarán los fotogramas. | LATENT | Sí | - |
-| `source` | El latente fuente que proporciona los fotogramas a insertar en el latente de destino. Si no se proporciona, se devuelve el latente de destino sin cambios. | LATENT | No | - |
-| `index` | El índice de fotograma latente inicial en el latente de destino donde se colocarán los fotogramas del latente fuente. Los valores negativos cuentan desde el final (predeterminado: 0). | INT | Sí | -MAX_RESOLUTION a MAX_RESOLUTION |
+| `source` | El latente de origen que proporciona los fotogramas para insertar en el latente de destino. Si no se proporciona, el latente de destino se devuelve sin cambios. | LATENT | No | - |
+| `index` | El índice de fotograma latente inicial en el latente de destino donde se colocarán los fotogramas del latente de origen. Los valores negativos cuentan desde el final (por defecto: 0). | INT | Sí | -MAX_RESOLUTION to MAX_RESOLUTION |
 
 **Restricciones:**
 
-* El `index` debe estar dentro de los límites del recuento de fotogramas del latente de destino. Si no es así, se registra una advertencia y se devuelve el destino sin cambios.
-* Los fotogramas del latente fuente deben caber dentro de los fotogramas del latente de destino a partir del `index` especificado. Si no es así, se registra una advertencia y se devuelve el destino sin cambios.
+* Un `index` negativo se ajusta sumándolo al recuento de fotogramas de destino, por lo que cuenta hacia atrás desde el final del latente de destino.
+* Si `index` apunta más allá del recuento de fotogramas de destino, o si los fotogramas de origen no caben dentro del destino comenzando en `index`, se registra una advertencia y el latente de destino se devuelve sin cambios.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `output` | El video latente resultante después de la operación de reemplazo de fotogramas. | LATENT |
+| `output` | El video latente resultante después de la operación de reemplazo de fotogramas. Si el reemplazo no se puede realizar, el latente de destino se devuelve sin cambios. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReplaceVideoLatentFrames/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `b4e2b3dcdaa5c400fefc30262ae05cd1849896e6cb6bbb3a1bd6ce4d31583e23`
+**Source fingerprint (SHA-256):** `5b98d875bdeaec63521bff19fecbc5510036c8b4f90322d8296b216688b557bf`

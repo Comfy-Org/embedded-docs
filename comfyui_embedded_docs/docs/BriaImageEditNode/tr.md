@@ -1,37 +1,45 @@
 # Bria Görüntü Düzenleme
 
-Bria FIBO Image Edit düğümü, mevcut bir görseli metin talimatı kullanarak değiştirmenize olanak tanır. Görseli ve isteminizi, isteğinize göre görselin yeni ve düzenlenmiş bir sürümünü oluşturmak için FIBO modelini kullanan Bria API'sine gönderir. Ayrıca düzenlemeleri belirli bir alanla sınırlamak için bir maske de sağlayabilirsiniz.
-## Girişler
+Bria FIBO Image Edit düğümü, mevcut bir görüntüyü metin talimatı kullanarak düzenler. Görüntüyü ve isteminizi Bria API'sine gönderir; burada FIBO modeli düzenlenmiş bir sürüm oluşturur. İsteğe bağlı bir maske, değişiklikleri belirli bir alanla sınırlayabilir.
 
-### Ortak Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-|---|---|---|---|---|
-| `model` | Görsel düzenleme için kullanılacak model sürümü. | COMBO | Evet | `"FIBO"` |
-| `image` | Düzenlemek istediğiniz giriş görseli. | IMAGE | Evet | - |
-| `prompt` | Görseli düzenlemek için talimat (varsayılan: boş). | STRING | Evet | - |
-| `negative_prompt` | Düzenlenmiş görselde görünmesini istemediğiniz şeyleri tanımlayan metin (varsayılan: boş). | STRING | Evet | - |
-| `structured_prompt` | JSON formatında yapılandırılmış düzenleme istemini içeren bir dize. Hassas, programatik kontrol için normal istem yerine bunu kullanın (varsayılan: boş). | STRING | Evet | - |
-| `seed` | Rastgele üretimi başlatmak için kullanılan ve tekrarlanabilir sonuçları garanti eden bir sayı (varsayılan: 1). | INT | Evet | 1 to 2147483647 |
-| `guidance_scale` | Daha yüksek değer, görselin istemi daha yakından takip etmesini sağlar (varsayılan: 3.0). | FLOAT | Evet | 3.0 to 5.0 |
-| `steps` | Modelin gerçekleştireceği gürültü giderme adımı sayısı (varsayılan: 50). | INT | Evet | 20 to 50 |
-| `moderation` | Moderasyon ayarları. `"true"` seçildiğinde, istem içeriği, görsel girdi ve görsel çıktı için ek moderasyon seçenekleri görüntülenir. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
-| `mask` | Atlanırsa, düzenleme görselin tamamına uygulanır. | MASK | Hayır | - |
+### Ortak Girdiler
 
-### Moderasyon Girişleri
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `model` | Görüntü düzenleme için kullanılacak model sürümü. | COMBO | Evet | `"FIBO"` |
+| `görüntü` | Düzenlemek istediğiniz giriş görüntüsü. | IMAGE | Evet | - |
+| `istem` | Görüntüyü düzenleme talimatı (varsayılan: boş). | STRING | Evet | - |
+| `negatif_istem` | Düzenlenmiş görüntüde görünmesini istemediğiniz şeyleri tanımlayan metin (varsayılan: boş). | STRING | Evet | - |
+| `yapılandırılmış_istem` | JSON formatında yapılandırılmış düzenleme istemini içeren bir dize. Hassas, programatik kontrol için normal istem yerine bunu kullanın (varsayılan: boş). | STRING | Evet | - |
+| `tohum` | Rastgele üretimi başlatmak için kullanılan ve tekrarlanabilir sonuçlar sağlayan bir sayı (varsayılan: 1). | INT | Evet | 1 ila 2147483647 |
+| `yönlendirme_ölçeği` | Daha yüksek değer, görüntünün istemi daha yakından takip etmesini sağlar (varsayılan: 3). | FLOAT | Evet | 3.0 ila 5.0 |
+| `adımlar` | Model tarafından gerçekleştirilen gürültü giderme adımı sayısı (varsayılan: 50). | INT | Evet | 20 ila 50 |
+| `denetleme` | Moderasyon ayarları. `"true"` seçilmesi ek moderasyon seçeneklerini ortaya çıkarır. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
+| `maske` | Atlanırsa, düzenleme görüntünün tamamına uygulanır. | MASK | Hayır | - |
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-|---|---|---|---|---|
-| `prompt_content_moderation` | prompt_content_moderation (varsayılan: false) | BOOLEAN | Hayır | `true`<br>`false` |
-| `visual_input_moderation` | visual_input_moderation (varsayılan: false) | BOOLEAN | Hayır | `true`<br>`false` |
-| `visual_output_moderation` | visual_output_moderation (varsayılan: true) | BOOLEAN | Hayır | `true`<br>`false` |
+### Moderasyon Girdileri
+
+`moderation` `"true"` olarak ayarlandığında, şu ek girdiler kullanılabilir hale gelir:
+
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `prompt_content_moderation` | İstem metninin uygunsuz içerik için denetlenip denetlenmeyeceği (varsayılan: false). | BOOLEAN | Hayır | `true`<br>`false` |
+| `visual_input_moderation` | Giriş görüntüsünün uygunsuz içerik için denetlenip denetlenmeyeceği (varsayılan: false). | BOOLEAN | Hayır | `true`<br>`false` |
+| `visual_output_moderation` | Düzenlenmiş çıktı görüntüsünün uygunsuz içerik için denetlenip denetlenmeyeceği (varsayılan: true). | BOOLEAN | Hayır | `true`<br>`false` |
+
+**Önemli Kısıtlamalar:**
+
+- `prompt` veya `structured_prompt` alanlarından en az biri boş olmamalıdır. İkisi de boşsa, düğüm bir hata verir.
+- `moderation` `"true"` olarak ayarlandığında, yukarıdaki üç moderasyon girdisi gösterilir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-|---|---|---|
-| `IMAGE` | The edited image returned by the Bria API. | IMAGE |
-| `structured_prompt` | The structured prompt used or generated during the editing process. | STRING |
+|-------------|-------------|-----------|
+| `IMAGE` | Bria API tarafından döndürülen düzenlenmiş görüntü. | IMAGE |
+| `yapılandırılmış_istem` | Düzenleme sürecinde kullanılan veya oluşturulan yapılandırılmış istem. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaImageEditNode/tr.md)
 

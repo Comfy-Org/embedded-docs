@@ -24,8 +24,8 @@ Nó de Vídeo de Sincronização Labial com Texto Kling sincroniza os movimentos
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
 | `output` | Vídeo gerado com áudio sincronizado labialmente | VIDEO |
-| `video_id` | Identificador único para o vídeo gerado | STRING |
-| `duration` | Informação de duração para o vídeo gerado | STRING |
+| `id_vídeo` | Identificador único para o vídeo gerado | STRING |
+| `duração` | Informação de duração para o vídeo gerado | STRING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncTextToVideoNode/pt-BR.md)
 

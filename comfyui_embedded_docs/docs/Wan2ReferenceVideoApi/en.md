@@ -31,9 +31,9 @@ This node generates a video featuring a person or object based on provided refer
 
 **Important Constraints:**
 
-* You must provide at least one reference video or reference image in the `model.reference_videos` or `model.reference_images` inputs.
+* You must provide at least one reference video or reference image in the `reference_videos` or `reference_images` inputs.
 * The total combined number of reference videos and reference images cannot exceed 5.
-* The `model.prompt` input must contain at least one character.
+* The `prompt` input must contain at least one character.
 
 ## Outputs
 

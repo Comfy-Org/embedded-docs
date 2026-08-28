@@ -1,27 +1,27 @@
-# LtxApi25AudioToVideo
+# LTX 2.5 Ses'ten Videoya
 
-Bu düğüm, LTX 2.5 modelini kullanarak bir ses parçasına uygun video oluşturur. Ses, video süresini belirler (2-20 saniye arası) ve isteğe bağlı olarak ilk kare olarak kullanılacak bir görüntü sağlayabilirsiniz. Video, LTX 2.5 API hizmeti aracılığıyla oluşturulur.
+Bu düğüm, LTX 2.5 modelini kullanarak bir ses parçasını takip eden bir video üretir. Ses, video süresini (2 ila 20 saniye arasında) belirler ve isteğe bağlı olarak ilk kare olarak kullanılacak bir görsel sağlayabilirsiniz. Video, LTX 2.5 API hizmeti aracılığıyla üretilir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `audio` | Videoyu yönlendiren ses parçası. Uzunluğu (2-20 saniye) video süresini belirler. | AUDIO | Evet | 2-20 seconds |
-| `model` | Kullanılacak LTX 2.5 model sürümü. Çözünürlük modelle birlikte seçilir; her iki model de aynı çözünürlük seçeneklerini sunar (1920x1080 veya 1080x1920). | COMBO | Evet | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
-| `prompt` | Oluşturulan videonun içeriğini yönlendiren metin açıklaması (varsayılan: ""). En az 1 karakter ve en fazla 10000 karakter içermelidir. | STRING | Evet | 1-10000 characters |
-| `seed` | Üretimin rastgeleliğini kontrol eden bir sayı. Aynı seed aynı sonucu üretir (varsayılan: 42). | INT | Evet | Any integer |
-| `image` | Video için kullanılacak isteğe bağlı ilk kare. Yalnızca bir görüntü desteklenir. | IMAGE | Hayır | Single image |
+| `ses` | Videoyu yönlendiren ses parçası. Uzunluğu (2-20 saniye) video süresini belirler. | AUDIO | Evet | 2-20 saniye |
+| `model` | Kullanılacak LTX 2.5 model sürümü. Video çözünürlüğü (1920x1080 veya 1080x1920) modelle birlikte seçilir; her iki model de aynı çözünürlük seçeneklerini sunar. | COMBO | Evet | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
+| `prompt` | Üretilen videonun içeriğini yönlendiren metin açıklaması (varsayılan: ""). En az 1 karakter ve en fazla 10000 karakter içermelidir. | STRING | Evet | 1-10000 karakter |
+| `tohum` | Üretimin rastgeleliğini kontrol eden sayı. Aynı seed aynı sonucu üretir (varsayılan: 42). | INT | Evet | Herhangi bir tam sayı |
+| `görsel` | Video için kullanılacak isteğe bağlı ilk kare. Yalnızca bir görsel desteklenir. | IMAGE | Hayır | Tek görsel |
 
 Kısıtlamalara ilişkin notlar:
-- Ses süresi 2 ila 20 saniye arasında olmalıdır; düğüm bu aralığın dışında bir değerde hata verir.
-- Prompt zorunludur ve boş olamaz.
-- `image` sağlandığında yalnızca tek bir girdi görüntüsü kabul edilir.
+- Ses süresi 2 ila 20 saniye arasında olmalıdır; bu aralığın dışındaysa düğüm bir hata verir.
+- Prompt gereklidir ve boş olamaz; 1 ila 10000 karakter arasında olmalıdır.
+- `image` sağlandığında yalnızca tek bir giriş görseli kabul edilir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `video` | Sağlanan ses parçası tarafından yönlendirilen oluşturulmuş video. | VIDEO |
+| `video` | Sağlanan ses parçası tarafından yönlendirilen üretilmiş video. | VIDEO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LtxApi25AudioToVideo/tr.md)
 

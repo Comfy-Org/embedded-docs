@@ -1,17 +1,17 @@
 # HunyuanVideo 1.5 latent vide
 
-Ce nœud crée un tenseur latent vide spécialement formaté pour être utilisé avec le modèle HunyuanVideo 1.5. Il génère un point de départ vierge pour la génération vidéo en allouant un tenseur de zéros avec le nombre correct de canaux et les dimensions spatiales adaptées à l'espace latent du modèle.
+Ce nœud crée un tenseur latent vide spécialement formaté pour être utilisé avec le modèle HunyuanVideo 1.5. Il génère un point de départ vierge pour la génération de vidéo en allouant un tenseur de zéros avec le nombre de canaux correct et les dimensions spatiales adaptées à l’espace latent du modèle.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `largeur` | La largeur de l'image vidéo en pixels. | INT | Oui | - |
-| `hauteur` | La hauteur de l'image vidéo en pixels. | INT | Oui | - |
-| `longueur` | Le nombre d'images dans la séquence vidéo. | INT | Oui | - |
-| `taille_lot` | Le nombre d'échantillons vidéo à générer dans un lot (par défaut : 1). | INT | Non | - |
+| `largeur` | La largeur de l’image vidéo en pixels. | INT | Oui | - |
+| `hauteur` | La hauteur de l’image vidéo en pixels. | INT | Oui | - |
+| `longueur` | Le nombre d’images dans la séquence vidéo. | INT | Oui | - |
+| `taille_lot` | Le nombre d’échantillons vidéo à générer dans un lot (par défaut : 1). | INT | Non | - |
 
-**Remarque :** Les dimensions spatiales du tenseur latent généré sont calculées en divisant la `width` et la `height` d'entrée par 16. La dimension temporelle (images) est calculée comme suit : `((length - 1) // 4) + 1`.
+**Remarque :** Les dimensions spatiales du tenseur latent généré sont calculées en divisant la `width` et la `height` d’entrée par 16. La dimension temporelle (images) est calculée comme `((length - 1) // 4) + 1`. Ces calculs utilisent une division entière, donc `width` et `height` devraient être des multiples de 16 pour éviter toute troncature.
 
 ## Sorties
 
@@ -22,4 +22,4 @@ Ce nœud crée un tenseur latent vide spécialement formaté pour être utilisé
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyHunyuanVideo15Latent/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `eebc131adfe63f6bc8367f2a96b3ac7f3f3223c5b1fb308eda3ec09c94fff2ee`
+**Source fingerprint (SHA-256):** `ce7ec75e8433c778d175a3e2ea260a4397aa5507428908b9a32f50fbe9e184c6`

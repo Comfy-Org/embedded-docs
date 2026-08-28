@@ -4,22 +4,22 @@ Este nodo reemplaza el fondo de un video con una imagen o video proporcionado me
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
-|-----------|-------------|--------------|-----------|-------|
-| `video` | Video en primer plano cuyo fondo será reemplazado. | VIDEO | Sí | - |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `video` | Video en primer plano cuyo fondo se reemplaza. | VIDEO | Sí | - |
 | `imagen_de_fondo` | Imagen de fondo para componer detrás del primer plano. Proporcione una imagen de fondo o un video de fondo, no ambos. | IMAGE | No | - |
 | `video_de_fondo` | Video de fondo para componer detrás del primer plano. Proporcione una imagen de fondo o un video de fondo, no ambos. | VIDEO | No | - |
-| `semilla` | La semilla controla si el nodo debe re-ejecutarse; los resultados no son deterministas independientemente de la semilla. (predeterminado: 0) | INT | Sí | 0 a 2147483647 |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados son no deterministas independientemente de la semilla. (predeterminado: 0) | INT | Sí | 0 a 2147483647 |
 
-**Nota:** Debe proporcionar exactamente uno de `background_image` o `background_video` — no ambos y no ninguno. El video en primer plano debe tener una duración de 60 segundos o menos.
+**Nota:** Debe proporcionar exactamente uno de `background_image` o `background_video` — no ambos ni ninguno. El video en primer plano y el video de fondo (si se usa) deben tener cada uno 60 segundos o menos. Cuando se usa `background_image`, su canal alfa se elimina antes del procesamiento.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-|------------------|-------------|--------------|
-| `video` | El video resultante con el fondo reemplazado. | VIDEO |
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `video` | El video resultante con el fondo reemplazado, codificado como MP4 (H.264). | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaVideoReplaceBackground/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `4eb9650e5ca88baf2a91a9309b87936b3d18b88e314a56ab4c73d06a9143c645`
+**Source fingerprint (SHA-256):** `c487cf7dd434b8523ce64f241c2171c82bb5e0abdc5c3ca3e8b1a1259aeab490`

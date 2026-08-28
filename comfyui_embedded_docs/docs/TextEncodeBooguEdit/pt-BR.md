@@ -17,8 +17,8 @@ Os latentes de referência são adicionados a ambas as saídas de condicionament
 
 | Nome da Saída | Descrição | Tipo de Dado |
 |---------------|-----------|--------------|
-| `positive` | Condicionamento contendo tanto o prompt de texto com tokens visuais quanto os latents de referência | CONDITIONING |
-| `negative` | Condicionamento contendo o prompt de texto negativo e os latents de referência | CONDITIONING |
+| `positivo` | Condicionamento contendo tanto o prompt de texto com tokens visuais quanto os latents de referência | CONDITIONING |
+| `negativo` | Condicionamento contendo o prompt de texto negativo e os latents de referência | CONDITIONING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeBooguEdit/pt-BR.md)
 

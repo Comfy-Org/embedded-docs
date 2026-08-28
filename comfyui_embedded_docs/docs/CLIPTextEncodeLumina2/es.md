@@ -1,24 +1,24 @@
 # CLIP Text Encode para Lumina2
 
-El nodo Codificación de Texto CLIP para Lumina2 codifica un mensaje de sistema y un mensaje de usuario utilizando un modelo CLIP en una incrustación que puede guiar al modelo de difusión para generar imágenes específicas. Combina un mensaje de sistema predefinido con tu mensaje de texto personalizado y los procesa a través del modelo CLIP para crear datos de condicionamiento para la generación de imágenes.
+Este nodo codifica un prompt de sistema y un prompt de usuario utilizando un modelo CLIP en un embedding que puede usarse para guiar el modelo de difusión hacia la generación de imágenes específicas. Combina un prompt de sistema predefinido de Lumina 2 con tu prompt de texto personalizado y los procesa a través del modelo CLIP para crear datos de condicionamiento para la generación de imágenes.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `system_prompt` | Lumina2 proporciona dos tipos de mensajes de sistema: "superior" genera imágenes con una alineación superior entre imagen y texto; "alignment" genera imágenes de alta calidad con el mayor grado de alineación entre imagen y texto. | STRING | Sí | `"superior"`<br>`"alignment"` |
-| `user_prompt` | El texto a codificar. Admite entrada multilínea y mensajes dinámicos. | STRING | Sí | N/A |
+| `system_prompt` | Lumina2 proporciona dos tipos de prompts de sistema: Superior: Eres un asistente diseñado para generar imágenes superiores con el mayor grado de alineación imagen-texto basado en prompts textuales o prompts de usuario. Alignment: Eres un asistente diseñado para generar imágenes de alta calidad con el mayor grado de alineación imagen-texto basado en prompts textuales. | COMBO | Sí | `"superior"`<br>`"alignment"` |
+| `user_prompt` | El texto a codificar. Admite entrada de varias líneas y prompts dinámicos. | STRING | Sí | N/A |
 | `clip` | El modelo CLIP utilizado para codificar el texto. | CLIP | Sí | N/A |
 
-**Nota:** La entrada `clip` es obligatoria y no puede ser nula. Si la entrada de clip no es válida, el nodo generará un error indicando que el punto de control puede no contener un modelo CLIP o codificador de texto válido.
+**Nota:** La entrada `clip` es obligatoria y no puede ser None. Si la entrada clip no es válida, el nodo generará un error indicando que el checkpoint puede no contener un modelo CLIP o de codificador de texto válido.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `CONDITIONING` | Un condicionamiento que contiene el texto incrustado utilizado para guiar al modelo de difusión. | CONDITIONING |
+| `CONDITIONING` | Un condicionamiento que contiene el texto incrustado utilizado para guiar el modelo de difusión. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeLumina2/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `fcc0802180ffc2c0757b395850d54632da011473da0c6b1c5268b42da3747024`
+**Source fingerprint (SHA-256):** `0c7540e6232c93b0f76c4903f5646e00a639ccb0b7720f70b5ac727513358a02`

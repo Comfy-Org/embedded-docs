@@ -8,7 +8,7 @@ Ce nœud fusionne deux modèles en mélangeant leurs composants internes à un n
 |-----------|-------------|-----------------|--------|-------|
 | `model1` | Le premier modèle à fusionner | MODEL | Oui | - |
 | `model2` | Le second modèle à fusionner | MODEL | Oui | - |
-| `first.` | Ratio de mélange pour le premier bloc de couches (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
+| `premier.` | Ratio de mélange pour le premier bloc de couches (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
 | `tmlp.` | Ratio de mélange pour le bloc MLP temporel (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
 | `txtmlp.` | Ratio de mélange pour le bloc MLP textuel (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
 | `tproj.` | Ratio de mélange pour le bloc de projection temporelle (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
@@ -18,7 +18,7 @@ Ce nœud fusionne deux modèles en mélangeant leurs composants internes à un n
 | `txtfusion.refiner_blocks.0.` | Ratio de mélange pour le premier bloc affineur de fusion textuelle (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
 | `txtfusion.refiner_blocks.1.` | Ratio de mélange pour le second bloc affineur de fusion textuelle (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
 | `blocks.0.` à `blocks.27.` | Ratio de mélange pour chacun des 28 blocs principaux (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
-| `last.` | Ratio de mélange pour le dernier bloc (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
+| `dernier.` | Ratio de mélange pour le dernier bloc (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
 
 Chaque ratio de mélange contrôle la proportion de `model2` utilisée pour ce composant spécifique, où 0.0 signifie utiliser uniquement `model1`, 1.0 signifie utiliser uniquement `model2`, et les valeurs intermédiaires créent un mélange pondéré.
 

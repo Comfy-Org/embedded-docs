@@ -16,7 +16,7 @@ O nó Grade de Imagens combina múltiplas imagens em uma única grade ou colagem
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `image` | A única imagem de saída contendo todas as imagens de entrada organizadas em uma grade. | IMAGE |
+| `imagens` | A única imagem de saída contendo todas as imagens de entrada organizadas em uma grade. | IMAGE |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageGrid/pt-BR.md)
 

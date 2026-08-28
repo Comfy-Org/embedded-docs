@@ -22,7 +22,7 @@ O nó SDPoseKeypointExtractor detecta pontos-chave de pose humana a partir de im
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `keypoints` | Pontos-chave no formato de quadro OpenPose (largura_do_canvas, altura_do_canvas, pessoas). A saída contém as pessoas detectadas, cada uma com uma matriz de coordenadas de pontos-chave (x, y) e suas respectivas pontuações de confiança. | POSE_KEYPOINT |
+| `pontos-chave` | Pontos-chave no formato de quadro OpenPose (largura_do_canvas, altura_do_canvas, pessoas). A saída contém as pessoas detectadas, cada uma com uma matriz de coordenadas de pontos-chave (x, y) e suas respectivas pontuações de confiança. | POSE_KEYPOINT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDPoseKeypointExtractor/pt-BR.md)
 

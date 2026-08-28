@@ -1,10 +1,10 @@
 # 模型合併 (SDXL)
 
-ModelMergeSDXL 節點允許您透過調整每個模型對架構不同部分的影響力，將兩個 SDXL 模型混合在一起。您可以控制每個模型對時間嵌入、標籤嵌入以及模型結構中各個區塊的貢獻程度。這會建立一個結合兩個輸入模型特性的混合模型。
+ModelMergeSDXL 節點允許您透過調整每個模型對架構不同部分的影響力，將兩個 SDXL 模型混合在一起。您可以控制每個模型對時間嵌入（time embeddings）、標籤嵌入（label embeddings）以及模型結構中各個區塊的貢獻程度。這會建立一個結合兩個輸入模型特性的混合模型。
 
 ## 輸入
 
-| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `模型 1` | 要合併的第一個 SDXL 模型 | MODEL | 是 | - |
 | `模型 2` | 要合併的第二個 SDXL 模型 | MODEL | 是 | - |
@@ -35,11 +35,11 @@ ModelMergeSDXL 節點允許您透過調整每個模型對架構不同部分的�
 
 ## 輸出
 
-| 輸出名稱 | 說明 | 資料類型 |
+| 輸出名 | 描述 | 資料類型 |
 | --- | --- | --- |
 | `model` | 合併後的 SDXL 模型，結合了兩個輸入模型的特性 | MODEL |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSDXL/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `6c7572a6ed50534f2d9ad6f499146763457da58f0c9dd4b85204e67f7d3e9660`
+**Source fingerprint (SHA-256):** `9a1b0645ee19c2eddb274dd6ea3f9a05997115119cc654a7f055d58475745bb2`

@@ -10,9 +10,9 @@ El selector `moderation` revela opciones de moderación adicionales cuando se es
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `moderation` | Configuración de moderación. Cuando se establece en `"true"`, opciones de moderación adicionales quedan disponibles. | DYNAMIC_COMBO | Sí | `"false"`<br>`"true"` |
-| `image` | La imagen de entrada de la que se eliminará el fondo. | IMAGE | Sí | - |
-| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Por defecto: `0`. | INT | Sí | 0 a 2147483647 |
+| `moderación` | Configuración de moderación. Cuando se establece en `"true"`, opciones de moderación adicionales quedan disponibles. | DYNAMIC_COMBO | Sí | `"false"`<br>`"true"` |
+| `imagen` | La imagen de entrada de la que se eliminará el fondo. | IMAGE | Sí | - |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Por defecto: `0`. | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de moderación "true"
 

@@ -45,7 +45,7 @@ Shown when `size` is set to "custom".
 - A maximum of 3 reference images is supported; an error is raised if more are provided (a batched input counts once per image).
 - When `size` is set to "custom", explicit width and height values must be provided and are validated: the total pixel area must be between 262,144 (512x512) and 6,553,600 (2560x2560) pixels, and the aspect ratio must be between 1:8 and 8:1.
 - When `size` is set to "match input", at least one reference image is required because the first reference image's dimensions are used; the dimensions are scaled to fit the supported area and aspect ratio range.
-- When `size` is set to "auto", the model picks the output size while preserving the input aspect ratio.
+- When `size` is set to "auto", the model picks the output size (1.9-4.2 megapixels) while preserving the input aspect ratio.
 - Prompt references use @Image1, @Image2, @Image3, numbered in input order; a reference to an index higher than the number of connected images raises an error. Tags are recognized only at word boundaries, so addresses like user@image1.com are left unchanged.
 - Input reference images are downscaled to at most 2048x2048 pixels before being sent to the API. If the PNG encoding exceeds the API size limit, a JPEG encoding is used instead.
 

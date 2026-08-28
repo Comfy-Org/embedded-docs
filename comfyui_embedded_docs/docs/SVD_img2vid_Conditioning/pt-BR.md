@@ -20,8 +20,8 @@ O nó SVD_img2vid_Conditioning prepara dados de condicionamento para geração d
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `positive` | Dados de condicionamento positivo contendo embeddings de imagem e parâmetros de vídeo | CONDITIONING |
-| `negative` | Dados de condicionamento negativo com embeddings zerados e parâmetros de vídeo | CONDITIONING |
+| `positivo` | Dados de condicionamento positivo contendo embeddings de imagem e parâmetros de vídeo | CONDITIONING |
+| `negativo` | Dados de condicionamento negativo com embeddings zerados e parâmetros de vídeo | CONDITIONING |
 | `latent` | Tensor de espaço latente vazio pronto para geração de vídeo | LATENT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SVD_img2vid_Conditioning/pt-BR.md)

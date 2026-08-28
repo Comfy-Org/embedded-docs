@@ -1,29 +1,31 @@
 # ARVideoI2V
 
-## Descripción general
+## Resumen
 
-Este nodo prepara una configuración de generación de imagen a video para modelos de video AR (Auto-Regresivos). Toma una imagen inicial, la codifica en el espacio latente usando un VAE y almacena la imagen codificada en la configuración del modelo. Esto permite que el proceso de muestreo de video utilice la imagen como primer fotograma, iniciando efectivamente la generación sin necesidad de una arquitectura de modelo separada de imagen a video.
+Este nodo prepara una configuración de generación de imagen a video para modelos de video AR (autorregresivos) que utilizan Causal Forcing o Self-Forcing. Codifica una imagen inicial en el espacio latente con un VAE y la almacena en las opciones del transformer del modelo, de modo que el proceso de muestreo de video pueda inicializar el caché KV antes del denoising. Utiliza el mismo checkpoint del modelo de texto a video, por lo que no se necesita una arquitectura separada de imagen a video.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `modelo` | El modelo de video AR que se utilizará para la generación. | MODEL | Sí | - |
 | `vae` | El modelo VAE utilizado para codificar la imagen inicial en el espacio latente. | VAE | Sí | - |
-| `imagen_inicial` | La imagen inicial que servirá como primer fotograma del video generado. | IMAGE | Sí | - |
-| `ancho` | El ancho de los fotogramas del video generado (predeterminado: 832). | INT | Sí | 16 a 8192 (paso: 16) |
-| `alto` | La altura de los fotogramas del video generado (predeterminado: 480). | INT | Sí | 16 a 8192 (paso: 16) |
-| `longitud` | El número total de fotogramas en el video generado (predeterminado: 81). | INT | Sí | 1 a 1024 (paso: 4) |
-| `tamaño_de_lote` | La cantidad de secuencias de video a generar en un solo lote (predeterminado: 1). | INT | Sí | 1 a 64 |
+| `imagen_inicial` | La imagen inicial que servirá como primer fotograma del video generado. Solo se utiliza la primera imagen del lote de entrada, y solo se codifican sus canales RGB. | IMAGE | Sí | - |
+| `ancho` | El ancho de los fotogramas del video generado (por defecto: 832). | INT | Sí | 16 a 8192 (paso: 16) |
+| `alto` | El alto de los fotogramas del video generado (por defecto: 480). | INT | Sí | 16 a 8192 (paso: 16) |
+| `longitud` | El número total de fotogramas del video generado (por defecto: 81). | INT | Sí | 1 a 1024 (paso: 4) |
+| `tamaño_de_lote` | El número de secuencias de video a generar en un solo lote (por defecto: 1). | INT | Sí | 1 a 64 |
+
+Nota: La imagen inicial se redimensiona a los valores `width` y `height` especificados antes de codificarse. La dimensión temporal latente se calcula como `((length - 1) // 4) + 1`, y las dimensiones espaciales latentes son `height / 8` y `width / 8`.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `MODEL` | El modelo clonado con la imagen de inicio codificada almacenada en su configuración para la generación de video. | MODEL |
-| `LATENT` | Un tensor latente vacío con las dimensiones correctas para el proceso de generación de video. | LATENT |
+| `MODEL` | El modelo clonado con la imagen inicial codificada almacenada en sus opciones de transformer (`ar_config.initial_latent`), que el muestreador utiliza para inicializar el caché KV antes del denoising. | MODEL |
+| `LATENT` | Un tensor latente relleno con ceros con forma `[batch_size, 16, lat_t, height // 8, width // 8]`, donde `lat_t = ((length - 1) // 4) + 1`. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ARVideoI2V/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `0445b279ba49fa946050cfa70d1e6b13240eaa600b99dfe63f27c3203dc4b61b`
+**Source fingerprint (SHA-256):** `984834951b9d5a22aef51c85a5019fd8ba58cdb2d6fff235371ed29f316896d8`

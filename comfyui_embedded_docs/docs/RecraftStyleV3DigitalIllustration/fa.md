@@ -12,7 +12,7 @@
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `recraft_style` | یک شیء سبک پیکربندی‌شده شامل سبک انتخاب‌شده "digital_illustration" و زیرسبک اختیاری، آماده برای ارسال به سایر گره‌های API ریکرفت. | STYLEV3 |
+| `سبک Recraft` | یک شیء سبک پیکربندی‌شده شامل سبک انتخاب‌شده "digital_illustration" و زیرسبک اختیاری، آماده برای ارسال به سایر گره‌های API ریکرفت. | STYLEV3 |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3DigitalIllustration/fa.md)
 

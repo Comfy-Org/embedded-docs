@@ -23,7 +23,7 @@ Renderiza um gaussian splat como imagem usando um rasterizador EWA anisotrópico
 
 | Nome da Saída | Descrição | Tipo de Dado |
 |---------------|-----------|--------------|
-| `image` | A imagem renderizada do gaussian splat | IMAGE |
+| `imagem` | A imagem renderizada do gaussian splat | IMAGE |
 | `mask` | A máscara alfa do splat renderizado | MASK |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RenderSplat/pt-BR.md)

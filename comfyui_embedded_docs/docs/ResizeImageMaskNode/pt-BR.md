@@ -24,7 +24,7 @@ O nó Redimensionar Imagem/Máscara fornece múltiplos métodos para alterar as 
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `resized` | A imagem ou máscara redimensionada, correspondendo ao tipo de dados da entrada. | IMAGE ou MASK |
+| `redimensionado` | A imagem ou máscara redimensionada, correspondendo ao tipo de dados da entrada. | IMAGE ou MASK |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImageMaskNode/pt-BR.md)
 

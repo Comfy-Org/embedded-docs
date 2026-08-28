@@ -18,8 +18,8 @@ latentهای مرجع تنها زمانی به هر دو خروجی شرطی‌�
 
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
-| `positive` | شرطی‌سازی شامل پرامپت متنی با توکن‌های بینایی و همچنین latentهای مرجع | CONDITIONING |
-| `negative` | شرطی‌سازی شامل پرامپت متن منفی و latentهای مرجع | CONDITIONING |
+| `مثبت` | شرطی‌سازی شامل پرامپت متنی با توکن‌های بینایی و همچنین latentهای مرجع | CONDITIONING |
+| `منفی` | شرطی‌سازی شامل پرامپت متن منفی و latentهای مرجع | CONDITIONING |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeBooguEdit/fa.md)
 

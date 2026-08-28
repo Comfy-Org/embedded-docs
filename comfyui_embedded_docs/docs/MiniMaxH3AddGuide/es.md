@@ -6,8 +6,8 @@ Este nodo fija una imagen, un clip corto, audio o un clip con su banda sonora en
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `positive` | El condicionamiento al que se adjunta el fotograma clave guía. | CONDITIONING | Sí | - |
-| `latent` | El latent de audio-video MiniMax H3 que define el video objetivo. Debe ser un latent AV MiniMax H3 (anidado, con dos tensores 5D de 24 canales cada uno). | LATENT | Sí | - |
+| `positivo` | El condicionamiento al que se adjunta el fotograma clave guía. | CONDITIONING | Sí | - |
+| `latente` | El latent de audio-video MiniMax H3 que define el video objetivo. Debe ser un latent AV MiniMax H3 (anidado, con dos tensores 5D de 24 canales cada uno). | LATENT | Sí | - |
 | `frame_idx` | Índice de fotograma en el que anclar la imagen o el primer fotograma del clip. Los valores negativos se cuentan desde el final del video. (por defecto: 0) | INT | Sí | -9999 a 9999 |
 | `vae` | VAE de video, necesario cuando se conecta una imagen. | VAE | No | - |
 | `audio_vae` | VAE de audio, necesario cuando se conecta un audio. | VAE | No | - |

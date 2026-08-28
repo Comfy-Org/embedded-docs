@@ -9,7 +9,7 @@ This node generates videos using the Kling V3 model. It supports text-to-video m
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `multi_shot` | Generate a series of video segments with individual prompts and durations. When set to a storyboard option, additional inputs for each storyboard's prompt and duration appear. | DYNAMIC_COMBO | Yes | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `model` | Model and generation settings. Selecting a model reveals its `model.resolution` and `model.aspect_ratio` sub-parameters. | DYNAMIC_COMBO | Yes | `"kling-v3"`<br>`"kling-3.0-turbo"` |
+| `model` | Model and generation settings. Selecting a model reveals its resolution and aspect ratio sub-parameters. | DYNAMIC_COMBO | Yes | `"kling-v3"`<br>`"kling-3.0-turbo"` |
 | `generate_audio` | When enabled, the node generates audio for the video. Note: `"kling-3.0-turbo"` always generates native audio, so this toggle is ignored for that model. Default is True. | BOOLEAN | Yes | True<br>False |
 | `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed. Default is 0. | INT | Yes | 0 to 2147483647 |
 | `start_frame` | Optional start frame image. When connected, switches to image-to-video mode. | IMAGE | No | - |
@@ -51,6 +51,7 @@ For each storyboard segment N (from 1 up to the selected storyboard count), the 
 
 - Text-to-video mode is used when `start_frame` is not connected; image-to-video mode is used when `start_frame` is connected. In image-to-video mode, `model.aspect_ratio` is ignored and the input image must be at least 300x300 pixels with an aspect ratio between 1:2.5 and 2.5:1.
 - In storyboard mode, the main `prompt` and `negative_prompt` are not used. The total sum of all storyboard durations must be between 3 and 15 seconds.
+- `negative_prompt` is only used with `kling-v3`; it is ignored when `kling-3.0-turbo` is selected.
 - For `kling-v3`, each storyboard is sent to the API as a separate segment. For `kling-3.0-turbo`, the storyboard prompts and durations are combined into a single multi-shot prompt.
 - For `kling-3.0-turbo`, `generate_audio` is ignored because this model always generates native audio.
 

@@ -19,7 +19,7 @@
 | نام خروجی | توضیحات | نوع داده |
 |-----------|---------|----------|
 | `video` | خروجی ویدئوی تولیدشده. | VIDEO |
-| `generation_id` | شناسه یکتای درخواست تولید. | STRING |
+| `شناسه تولید` | شناسه یکتای درخواست تولید. | STRING |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32KeyframesToVideoNode/fa.md)
 

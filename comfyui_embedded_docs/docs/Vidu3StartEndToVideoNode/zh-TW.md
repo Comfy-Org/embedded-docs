@@ -8,11 +8,11 @@
 
 | 參數 | 描述 | 資料型別 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用於影片生成的模型。選取選項會顯示 `resolution`、`duration` 與 `audio` 的額外設定參數。 | DYNAMIC_COMBO | 是 | `"viduq3-pro"`<br>`"viduq3-turbo"` |
-| `first_frame` | 影片序列的起始影像。 | IMAGE | 是 | - |
-| `end_frame` | 影片序列的結束影像。 | IMAGE | 是 | - |
-| `prompt` | 提示描述（最多 2000 個字元）。 | STRING | 是 | - |
-| `seed` | 用於控制生成隨機性的種子值（預設值：1）。 | INT | 是 | 0 至 2147483647 |
+| `模型` | 用於影片生成的模型。選取選項會顯示 `resolution`、`duration` 與 `audio` 的額外設定參數。 | DYNAMIC_COMBO | 是 | `"viduq3-pro"`<br>`"viduq3-turbo"` |
+| `起始影格` | 影片序列的起始影像。 | IMAGE | 是 | - |
+| `結束影格` | 影片序列的結束影像。 | IMAGE | 是 | - |
+| `提示詞` | 提示描述（最多 2000 個字元）。 | STRING | 是 | - |
+| `隨機種子` | 用於控制生成隨機性的種子值（預設值：1）。 | INT | 是 | 0 至 2147483647 |
 
 ### viduq3-pro 與 viduq3-turbo 輸入
 

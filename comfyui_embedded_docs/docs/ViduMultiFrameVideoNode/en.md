@@ -22,7 +22,7 @@ When `frames` is set to a number, the following three inputs are shown for each 
 |-----------|-------------|-----------|----------|-------|
 | `prompt{i}` | Text prompt for frame {i} transition. Multiline text field. Maximum 2000 characters. | STRING | Yes | Up to 2000 characters |
 | `end_image{i}` | End frame image for segment {i}. Aspect ratio must be between 1:4 and 4:1. | IMAGE | Yes | Aspect ratio 1:4 to 4:1 |
-| `duration{i}` | Duration for segment {i} in seconds. | INT | Yes | 2 to 7 (default: 4) |
+| `duration{i}` | Duration for segment {i} in seconds (default: 4). | INT | Yes | 2 to 7 |
 
 **Notes:**
 

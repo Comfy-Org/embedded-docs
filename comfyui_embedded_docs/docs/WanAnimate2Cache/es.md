@@ -6,9 +6,9 @@ Caches the pose-video's per-block activations once so they do not need to be rec
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `model` | El modelo Wan Animate2 al que se le adjunta la caché. | MODEL | Sí | |
-| `device` | Dónde mantener la caché. cpu (RAM) es la opción segura; la caché no cabe en VRAM junto con el modelo en tamaños típicos. gpu (VRAM) puede ser más rápida si cabe. (predeterminado: "cpu") | STRING | Sí | "cpu"<br>"gpu" |
-| `dtype` | Precisión de almacenamiento. default almacena las activaciones en el dtype de cómputo del modelo. int8 reduce la caché a la mitad, int4 a la cuarta parte, convrot se usa para mantener la precisión. (predeterminado: "default") | STRING | Sí | "default"<br>"int8"<br>"int4" |
+| `modelo` | El modelo Wan Animate2 al que se le adjunta la caché. | MODEL | Sí | |
+| `dispositivo` | Dónde mantener la caché. cpu (RAM) es la opción segura; la caché no cabe en VRAM junto con el modelo en tamaños típicos. gpu (VRAM) puede ser más rápida si cabe. (predeterminado: "cpu") | STRING | Sí | "cpu"<br>"gpu" |
+| `tipo de dato` | Precisión de almacenamiento. default almacena las activaciones en el dtype de cómputo del modelo. int8 reduce la caché a la mitad, int4 a la cuarta parte, convrot se usa para mantener la precisión. (predeterminado: "default") | STRING | Sí | "default"<br>"int8"<br>"int4" |
 
 Nota: Cuando se usan ventanas de contexto, cada ventana se almacena en caché por separado, por lo que el uso de memoria escala con el número de ventanas. Se debe usar el programa static_standard, porque los programas uniformes desplazan las ventanas en cada paso y la caché nunca se reutiliza.
 

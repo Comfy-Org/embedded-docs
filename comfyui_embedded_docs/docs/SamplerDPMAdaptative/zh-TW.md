@@ -1,12 +1,10 @@
 # SamplerDPMAdaptative
 
-## 概述
-
-SamplerDPMAdaptative 節點實作了一種自適應 DPM（擴散機率模型）取樣器，能夠在取樣過程中自動調整步長。它使用基於容差的誤差控制來決定最佳步長，在計算效率與取樣精度之間取得平衡。這種自適應方法有助於維持品質，同時可能減少所需的步驟數量。
+SamplerDPMAdaptative 節點實作了一個自適應 DPM（擴散機率模型）取樣器，在取樣過程中自動調整步長。它使用基於容差的誤差控制來決定最佳步長，在計算效率與取樣準確度之間取得平衡。這種自適應方法有助於維持品質，同時可能減少所需的步驟數。
 
 ## 輸入
 
-| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `order` | 取樣器方法的階數（預設值：3） | INT | 是 | 2-3 |
 | `rtol` | 誤差控制的相對容差（預設值：0.05） | FLOAT | 是 | 0.0-100.0 |
@@ -19,13 +17,15 @@ SamplerDPMAdaptative 節點實作了一種自適應 DPM（擴散機率模型）�
 | `eta` | 隨機性參數（預設值：0.0） | FLOAT | 是 | 0.0-100.0 |
 | `s_noise` | 雜訊縮放因子（預設值：1.0） | FLOAT | 是 | 0.0-100.0 |
 
+所有輸入皆為進階參數，用於微調自適應取樣行為。
+
 ## 輸出
 
-| 輸出名稱 | 說明 | 資料類型 |
+| Output Name | Description | Data Type |
 | --- | --- | --- |
-| `sampler` | 回傳一個已配置的 DPM 自適應取樣器實例 | SAMPLER |
+| `sampler` | 傳回已設定的 DPM 自適應取樣器實例 | SAMPLER |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerDPMAdaptative/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `2815ba8c3325d3d099de685edc99e9ff8e90736c1f4bd0188165969179cb99fa`
+**Source fingerprint (SHA-256):** `07b2e5b9f21ec101eabccc6be245d043e64a996a14db10434b03eaae0a91b1d8`

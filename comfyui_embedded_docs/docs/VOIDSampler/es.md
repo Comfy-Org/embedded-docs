@@ -1,8 +1,6 @@
 # VOIDSampler
 
-## Descripción general
-
-El nodo VOIDSampler proporciona un método de muestreo DDIM especializado diseñado específicamente para modelos de inpainting VOID. Implementa el mismo proceso de eliminación de ruido utilizado durante el entrenamiento del modelo VOID, sin el escalado de ruido que aplican los KSamplers estándar. Este nodo está diseñado para usarse con los nodos SamplerCustom o SamplerCustomAdvanced, y debe combinarse con RandomNoise o VOIDWarpedNoiseSource.
+VOIDSampler es un muestreador DDIM especializado para modelos de inpainting VOID. Implementa el mismo proceso de eliminación de ruido con el que fue entrenado VOID, sin la escala de ruido que aplican los KSampler estándar. Use este nodo con SamplerCustom o SamplerCustomAdvanced, junto con RandomNoise o VOIDWarpedNoiseSource.
 
 ## Entradas
 
@@ -16,9 +14,9 @@ Este nodo no tiene parámetros de entrada configurables. Es un muestreador autó
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `SAMPLER` | Un objeto muestreador que implementa el algoritmo VOID DDIM, listo para conectarse a los nodos SamplerCustom o SamplerCustomAdvanced. | SAMPLER |
+| `SAMPLER` | Un objeto de muestreador que implementa el algoritmo DDIM de VOID, listo para conectarse a los nodos SamplerCustom o SamplerCustomAdvanced. | SAMPLER |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDSampler/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `c6f1be9a90003906c54cced20e8136ab7e4f7e7118e63b67ce366eeb7f790dca`
+**Source fingerprint (SHA-256):** `b8bb6d3d7220cca4a6dd252efe9c92953b1c5c67c14365e5e0583bc9bdb133be`

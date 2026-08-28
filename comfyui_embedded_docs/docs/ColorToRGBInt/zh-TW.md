@@ -1,24 +1,24 @@
 # 顏色轉為 RGB 整數值
 
-## 概述
+**ColorToRGBInt** 節點可將十六進位格式的顏色（例如 `#FF5733`）轉換為單一的 RGB 整數值。它會從顏色字串中提取紅色、綠色和藍色分量，將其組合成一個整數，同時傳回原始的十六進位表示法和 alpha（不透明度）值。
 
-ColorToRGBInt 節點將以十六進位格式指定的顏色轉換為單一整數值。它接收像 `#FF5733` 這樣的顏色字串，並透過結合紅色、綠色和藍色分量來計算對應的 RGB 整數。
+## Inputs
 
-## 輸入
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `顏色` | 十六進位格式 `#RRGGBB` 或 `#RRGGBBAA` 的顏色值。必須為 7 或 9 個字元，且以 `#` 開頭。 | COLOR | 是 | `#RRGGBB`<br>`#RRGGBBAA` |
 
-| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
-| --- | --- | --- | --- | --- |
-| `顏色` | 以十六進位格式 `#RRGGBB` 表示的顏色值。 | STRING | 是 | N/A |
+**注意：** 輸入 `color` 字串必須符合 `#RRGGBB` 或 `#RRGGBBAA` 格式。如果長度不是 7 或 9 個字元、不是以 `#` 開頭，或包含無效的十六進位字元，節點將拋出錯誤。
 
-**注意：** 輸入的 `color` 字串長度必須恰好為 7 個字元，並以 `#` 符號開頭，後面接著六個十六進位數字（例如，紅色為 `#FF0000`）。如果格式不正確，節點將會引發錯誤。
+## Outputs
 
-## 輸出
-
-| 輸出名稱 | 說明 | 資料類型 |
-| --- | --- | --- |
-| `rgb 整數值` | 計算出的 RGB 整數值。此值由以下公式推導得出：`(Red * 65536) + (Green * 256) + Blue`。 | INT |
+| Output Name | Description | Data Type |
+|-------------|-------------|-----------|
+| `rgb 整數值` | 計算出的 RGB 整數值，公式為：`(Red * 65536) + (Green * 256) + Blue`。 | INT |
+| `hex` | 格式為 `#RRGGBB` 的十六進位顏色字串。如果輸入包含 alpha 通道，則此輸出會將其移除。 | COLOR |
+| `alpha` | 介於 0.0 和 1.0 之間的 alpha（不透明度）值。當輸入為 `#RRGGBB` 時等於 1.0；當輸入為 `#RRGGBBAA` 時為 alpha 通道值除以 255。 | FLOAT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorToRGBInt/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `5b8617d6b28caaa5f01dad1c6a302fa321f1bd53a0454451d468e36747e70e8f`
+**Source fingerprint (SHA-256):** `4e64616d168beee73bca4364d47e2a089418b5046a76bfcfa061dfab9a5e49ed`

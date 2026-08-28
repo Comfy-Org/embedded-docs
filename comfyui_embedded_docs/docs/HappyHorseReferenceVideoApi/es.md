@@ -8,9 +8,9 @@ Este nodo genera un video que muestra a una persona u objeto a partir de imágen
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `model` | El modelo HappyHorse de referencia a video que se utilizará para la generación. | DYNAMIC_COMBO | Sí | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
-| `seed` | Semilla a utilizar para la generación (por defecto: 0). Puede configurarse para que cambie automáticamente después de cada generación. | INT | Sí | 0 a 2147483647 |
-| `watermark` | Si se debe añadir una marca de agua generada por IA al resultado (por defecto: False). | BOOLEAN | Sí | True or False |
+| `modelo` | El modelo HappyHorse de referencia a video que se utilizará para la generación. | DYNAMIC_COMBO | Sí | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
+| `semilla` | Semilla a utilizar para la generación (por defecto: 0). Puede configurarse para que cambie automáticamente después de cada generación. | INT | Sí | 0 a 2147483647 |
+| `marca de agua` | Si se debe añadir una marca de agua generada por IA al resultado (por defecto: False). | BOOLEAN | Sí | True or False |
 
 ### Entradas de HappyHorse 1.1 (happyhorse-1.1-r2v)
 

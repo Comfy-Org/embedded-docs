@@ -16,7 +16,7 @@ O nó SDPoseFaceBBoxes processa dados de pontos-chave de pose para detectar e ge
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `bboxes` | Uma lista de caixas delimitadoras faciais para cada quadro. Cada caixa delimitadora é definida por suas coordenadas do canto superior esquerdo (`x`, `y`), `width` e `height`. Esta saída é compatível com a entrada `bboxes` do nó SDPoseKeypointExtractor. | BOUNDINGBOX |
+| `caixas_delimitadoras` | Uma lista de caixas delimitadoras faciais para cada quadro. Cada caixa delimitadora é definida por suas coordenadas do canto superior esquerdo (`x`, `y`), `width` e `height`. Esta saída é compatível com a entrada `bboxes` do nó SDPoseKeypointExtractor. | BOUNDINGBOX |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDPoseFaceBBoxes/pt-BR.md)
 

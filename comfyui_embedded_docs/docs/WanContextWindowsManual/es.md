@@ -1,29 +1,31 @@
 # Ventanas de Contexto WAN (Manual)
 
-El nodo Ventanas de Contexto WAN (Manual) permite configurar manualmente ventanas de contexto para modelos similares a WAN con procesamiento bidimensional. Aplica configuraciones personalizadas de ventanas de contexto durante el muestreo especificando la longitud de la ventana, la superposición, el método de programación y la técnica de fusión. Esto proporciona un control preciso sobre cómo el modelo procesa la información en diferentes regiones de contexto.
+El nodo WAN Context Windows (Manual) permite configurar manualmente las ventanas de contexto para modelos de video de estilo Wan. Aplica estos ajustes durante el muestreo, brindando control sobre la longitud de la ventana, el solapamiento, la planificación y el método de fusión utilizados mientras el modelo procesa video. La longitud del contexto y el solapamiento se especifican en fotogramas reales y se convierten internamente para el procesamiento 2D del modelo.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo al que se aplicarán las ventanas de contexto durante el muestreo. | MODEL | Sí | - |
-| `longitud_contexto` | La longitud de la ventana de contexto (predeterminado: 81). | INT | Sí | 1 a 1048576 |
-| `context_overlap` | La superposición de la ventana de contexto (predeterminado: 30). | INT | Sí | 0 a 1048576 |
-| `context_schedule` | El paso de la ventana de contexto. | COMBO | Sí | `"static_standard"`<br>`"uniform_standard"`<br>`"uniform_looped"`<br>`"batched"` |
-| `context_stride` | El paso de la ventana de contexto; solo aplicable a programaciones uniformes (predeterminado: 1). | INT | Sí | 1 a 1048576 |
-| `closed_loop` | Si se debe cerrar el bucle de la ventana de contexto; solo aplicable a programaciones en bucle (predeterminado: Falso). | BOOLEAN | Sí | - |
-| `fuse_method` | El método a utilizar para fusionar las ventanas de contexto (predeterminado: "pyramid"). | COMBO | Sí | `"pyramid"`<br>`"gaussian"`<br>`"average"`<br>`"overlap"` |
-| `freenoise` | Si se debe aplicar la mezcla de ruido FreeNoise, mejora la combinación de ventanas (predeterminado: Falso). | BOOLEAN | Sí | - |
+| `modelo` | El modelo al que aplicar ventanas de contexto durante el muestreo. | MODEL | Sí | - |
+| `longitud_contexto` | La longitud de la ventana de contexto en fotogramas reales. Debe ser 4*n + 1 (predeterminado: 81). | INT | Sí | 1 a 16384 (MAX_RESOLUTION), paso 4 |
+| `context_overlap` | El solapamiento de la ventana de contexto en fotogramas reales (predeterminado: 30). | INT | Sí | 0 o superior |
+| `context_schedule` | Algoritmo de planificación dependiente del paso para ventanas de contexto (predeterminado: "uniform_standard"). | COMBO | Sí | "static_standard"<br>"uniform_standard"<br>"uniform_looped"<br>"batched" |
+| `context_stride` | El paso de la ventana de contexto; solo aplicable a planificaciones uniformes (predeterminado: 1). | INT | Sí | 1 o superior |
+| `closed_loop` | Si se debe cerrar el bucle de la ventana de contexto; solo aplicable a planificaciones en bucle (predeterminado: False). | BOOLEAN | Sí | - |
+| `fuse_method` | El método que se utiliza para fusionar las ventanas de contexto (predeterminado: "pyramid"). | COMBO | Sí | "pyramid"<br>"gaussian"<br>"average"<br>"overlap" |
+| `freenoise` | Si se debe aplicar el barajado de ruido FreeNoise; mejora la mezcla de ventanas (predeterminado: True). | BOOLEAN | Sí | - |
+| `retain_first_frame` | Conservar el primer fotograma I2V en cada ventana de contexto (puede ayudar a mantener la referencia inicial) (predeterminado: False). | BOOLEAN | Sí | - |
+| `split_conds_to_windows` | Si se deben dividir los múltiples condicionamientos (creados por ConditionCombine) en cada ventana según el índice de región (predeterminado: False). | BOOLEAN | Sí | - |
 
-**Nota:** El parámetro `context_stride` solo afecta a las programaciones uniformes, y `closed_loop` solo se aplica a las programaciones en bucle. Los valores de longitud y superposición de contexto se ajustan automáticamente para garantizar valores mínimos válidos durante el procesamiento. El parámetro `fuse_method` ahora incluye opciones adicionales más allá de solo "pyramid".
+**Nota:** `context_stride` solo afecta a las planificaciones uniformes, y `closed_loop` solo se aplica a planificaciones en bucle. La longitud del contexto y el solapamiento se especifican en fotogramas reales y se convierten y ajustan automáticamente a los valores mínimos válidos durante el procesamiento (`context_length` se convierte en ((length - 1) / 4) + 1, `context_overlap` se convierte en overlap / 4). `context_length` debe seguir la forma 4*n + 1. `retain_first_frame` está pensado para el uso de imagen a video. `split_conds_to_windows` espera múltiples condicionamientos creados por el nodo ConditionCombine. El parámetro `fuse_method` incluye varias opciones más allá de solo "pyramid".
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `modelo` | El modelo con la configuración de ventana de contexto aplicada. | MODEL |
+| `model` | El modelo con la configuración de ventanas de contexto aplicada. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanContextWindowsManual/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `33e539f1e6647a6a2bc98fadc357a25279b0900746f5b3d568e2782cdb770258`
+**Source fingerprint (SHA-256):** `cf4927371e9d4b509f2e6e5319cd6109e3ef36da6b3faee278bcf8c906672857`

@@ -1,21 +1,23 @@
 # MuestreoDeModeloSD3
 
-El nodo ModelSamplingSD3 aplica parámetros de muestreo de Stable Diffusion 3 a un modelo. Modifica el comportamiento de muestreo del modelo ajustando el parámetro de desplazamiento, que controla las características de la distribución de muestreo. El nodo crea una copia modificada del modelo de entrada con la configuración de muestreo especificada aplicada.
+El nodo ModelSamplingSD3 aplica parámetros de muestreo de Stable Diffusion 3 a un modelo. Modifica el comportamiento de muestreo del modelo ajustando el parámetro shift, que controla las características de distribución del muestreo. El nodo crea una copia modificada del modelo de entrada con la configuración de muestreo especificada aplicada.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo de entrada al que se aplicarán los parámetros de muestreo SD3 | MODEL | Sí | - |
-| `desplazamiento` | Controla el parámetro de desplazamiento del muestreo (valor predeterminado: 3.0) | FLOAT | Sí | 0.0 - 100.0 |
+| `modelo` | El modelo de entrada al que se le aplican los parámetros de muestreo de SD3 | MODEL | Sí | - |
+| `desplazamiento` | Controla el parámetro de desplazamiento de muestreo (predeterminado: 3.0) | FLOAT | Sí | 0.0 - 100.0 (paso: 0.01) |
+
+Nota: El nodo aplica el valor de `shift` con un multiplicador interno fijo de 1000. Si el modelo original tiene una configuración de escala de ruido, esta se conserva en el modelo modificado.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `modelo` | El modelo modificado con los parámetros de muestreo SD3 aplicados | MODEL |
+| `model` | El modelo modificado con los parámetros de muestreo de SD3 aplicados | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingSD3/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `aa2172d578badffb0a728308b0d3aae4d048db074336963965264d5e512a0d93`
+**Source fingerprint (SHA-256):** `46d44786422c2efea78c1fe7e1183cebc9bf51d4f13861da04d5a974b5b6da7d`

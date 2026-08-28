@@ -1,29 +1,29 @@
 # TextEncodeZImageOmni
 
-O nó TextEncodeZImageOmni é um nó de condicionamento avançado que codifica um prompt de texto juntamente com imagens de referência opcionais em um formato de condicionamento adequado para modelos de geração de imagens. Ele pode processar até três imagens, opcionalmente codificando-as com um codificador de visão e/ou um VAE para produzir latentes de referência, e integra essas referências visuais ao prompt de texto usando uma estrutura de modelo específica.
+TextEncodeZImageOmni codifica um prompt de texto juntamente com até três imagens de referência opcionais em um formato de condicionamento para modelos de geração de imagem. O prompt é tokenizado e codificado com o modelo CLIP, e cada imagem conectada pode, opcionalmente, ser processada por um codificador de visão e/ou por um VAE, para que referências visuais sejam incorporadas junto ao texto. Este nó é marcado como experimental.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `clip` | O modelo CLIP usado para tokenizar e codificar o prompt de texto. | CLIP | Sim |  |
-| `codificador_de_imagem` | Um modelo de codificador de visão opcional. Se fornecido, será usado para codificar as imagens de entrada, e os embeddings resultantes serão adicionados ao condicionamento. | CLIPVision | Não |  |
-| `prompt` | O prompt de texto a ser codificado. Este campo suporta entrada multilinha e prompts dinâmicos. | STRING | Sim |  |
-| `redimensionar_imagens_automaticamente` | Quando ativado (padrão: Verdadeiro), as imagens de entrada serão redimensionadas automaticamente com base em sua área de pixels antes de serem passadas para o VAE para codificação. | BOOLEAN | Não |  |
-| `vae` | Um modelo VAE opcional. Se fornecido, será usado para codificar as imagens de entrada em representações latentes, que são adicionadas ao condicionamento como latentes de referência. | VAE | Não |  |
+| `codificador_de_imagem` | Um codificador de visão opcional. Se fornecido, ele é usado para codificar as imagens de entrada, e os embeddings resultantes são adicionados ao condicionamento. | CLIP_VISION | Não |  |
+| `prompt` | O prompt de texto a ser codificado. Suporta entrada de múltiplas linhas e prompts dinâmicos. | STRING | Sim |  |
+| `redimensionar_imagens_automaticamente` | Quando ativado (padrão: True), as imagens de entrada são redimensionadas automaticamente antes da codificação pelo VAE, de modo que sua área total de pixels fique próxima de 1024x1024, com as dimensões arredondadas para múltiplos de 8. | BOOLEAN | Não | True<br>False |
+| `vae` | Um modelo VAE opcional. Se fornecido, ele é usado para codificar as imagens de entrada em representações latentes, que são adicionadas ao condicionamento como latentes de referência. | VAE | Não |  |
 | `imagem1` | A primeira imagem de referência opcional. | IMAGE | Não |  |
 | `imagem2` | A segunda imagem de referência opcional. | IMAGE | Não |  |
 | `imagem3` | A terceira imagem de referência opcional. | IMAGE | Não |  |
 
-**Nota:** O nó pode aceitar no máximo três imagens (`image1`, `image2`, `image3`). As entradas `image_encoder` e `vae` só são utilizadas se pelo menos uma imagem for fornecida. Quando `auto_resize_images` está ativado e um `vae` está conectado, as imagens são redimensionadas para ter uma área total de pixels próxima a 1024x1024 antes da codificação.
+**Observação:** O nó aceita no máximo três imagens (`image1`, `image2`, `image3`). As entradas `image_encoder` e `vae` são usadas somente quando pelo menos uma imagem é fornecida; quando ambas estão conectadas, cada imagem é processada por ambas. Quando `auto_resize_images` está como True e um `vae` está conectado, as imagens são redimensionadas para ter uma área total de pixels próxima de 1024x1024 antes da codificação.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `CONDITIONING` | A saída de condicionamento final, que contém o prompt de texto codificado e pode incluir embeddings de imagem codificados e/ou latentes de referência, caso imagens tenham sido fornecidas. | CONDITIONING |
+| `CONDITIONING` | A saída de condicionamento final. Ela contém o prompt de texto codificado e, quando imagens são fornecidas, pode incluir embeddings de imagem codificados, latentes de referência e embeddings de texto extras derivados do modelo de espaço reservado da imagem. | CONDITIONING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeZImageOmni/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `daa4205acdf72503180eeedb4142708d239d4ff0f689012a298264ae2d8ea949`
+**Source fingerprint (SHA-256):** `b40a3150f536b6f37e2b53e6d9992fcb4fd32dceb540c0a76773a7ba1af9a7b8`

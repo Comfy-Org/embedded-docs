@@ -14,7 +14,7 @@ O nó CFGZeroStar aplica uma técnica especializada de escalonamento de orienta�
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `patched_model` | O modelo modificado com o escalonamento de orientação CFGZeroStar aplicado | MODEL |
+| `modelo_patchado` | O modelo modificado com o escalonamento de orientação CFGZeroStar aplicado | MODEL |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGZeroStar/pt-BR.md)
 

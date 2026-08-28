@@ -1,22 +1,22 @@
 # Cargar modelo de flujo óptico
 
-## Descripción general
-
-Carga un modelo de flujo óptico desde la carpeta `models/optical_flow/`. Actualmente, solo se admite el formato RAFT-large de torchvision, que es el modelo utilizado por el nodo VOIDWarpedNoise. ComfyUI no descarga los pesos del flujo óptico automáticamente; debes colocar el archivo de checkpoint manualmente en el directorio `models/optical_flow/`.
+Carga un modelo de flujo óptico desde la carpeta `models/optical_flow/`. Actualmente, solo se admite el formato RAFT-large de torchvision, que es el modelo utilizado por el nodo VOIDWarpedNoise. ComfyUI no descarga los pesos del flujo óptico automáticamente; debe colocar el archivo de checkpoint manualmente en el directorio `models/optical_flow/`.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model_name` | Modelo de flujo óptico a cargar. Los archivos deben colocarse en la carpeta `optical_flow`. Actualmente solo se admite `raft_large.pth` de torchvision. | STRING | Sí | Lista de archivos en la carpeta `models/optical_flow/` |
+| `model_name` | Modelo de flujo óptico a cargar. Los archivos deben colocarse en la carpeta `optical_flow`. Actualmente solo se admite `raft_large.pth` de torchvision. | COMBO | Sí | Lista de archivos en la carpeta `models/optical_flow/` |
+
+Nota: El checkpoint seleccionado debe ser un state dict de torchvision RAFT-large que contenga claves con los prefijos `feature_encoder.`, `context_encoder.` y `update_block.`. Si el archivo no coincide con este formato, el nodo lanza un ValueError.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `OPTICAL_FLOW` | El modelo de flujo óptico cargado, envuelto en un ModelPatcher para su uso con otros nodos. | MODEL |
+| `OPTICAL_FLOW` | El modelo de flujo óptico cargado, configurado en modo de evaluación y precisión float32, envuelto en un ModelPatcher para usarlo con otros nodos. | OPTICAL_FLOW |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpticalFlowLoader/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `94bab0bb7e2b9d9b3f343337799eccc744f79275b72a6fad9681b408b4a0820b`
+**Source fingerprint (SHA-256):** `5e79551545ad7ee2fd4856a47da29808a404342d1d5e57da0980058db6b11c3b`

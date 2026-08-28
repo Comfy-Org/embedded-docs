@@ -4,46 +4,46 @@ Este nodo utiliza el último modelo de Kling AI para generar un vídeo a partir 
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `model_name` | El modelo específico de Kling AI que se usará para la generación del vídeo. | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` |
-| `prompt` | Una descripción de texto del contenido del vídeo. Puede incluir tanto descripciones positivas como negativas. Se ignora cuando los storyboards están habilitados. | STRING | Sí | - |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+|-----------|-------------|--------------|-----------|-------|
+| `model_name` | El modelo específico de Kling AI que se utilizará para la generación de vídeo. | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` |
+| `prompt` | Una indicación de texto que describe el contenido del vídeo. Puede incluir descripciones tanto positivas como negativas. Se ignora cuando los storyboards están habilitados. | STRING | Sí | - |
 | `duration` | La duración deseada del vídeo generado en segundos (por defecto: 5). | INT | Sí | 3 a 15 |
-| `first_frame` | La imagen inicial para la secuencia del vídeo. | IMAGE | Sí | - |
-| `end_frame` | Un fotograma final opcional para el vídeo. No puede usarse simultáneamente con `reference_images`. No funciona con storyboards. | IMAGE | No | - |
+| `first_frame` | La imagen inicial para la secuencia de vídeo. | IMAGE | Sí | - |
+| `end_frame` | Un fotograma final opcional para el vídeo. No se puede utilizar simultáneamente con `reference_images`. No funciona con storyboards. | IMAGE | No | - |
 | `reference_images` | Hasta 6 imágenes de referencia adicionales. | IMAGE | No | - |
-| `resolution` | La resolución de salida del vídeo generado (por defecto: "1080p"). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | Genera una serie de segmentos de vídeo con indicaciones y duraciones individuales. Solo compatible con `kling-v3-omni`. Cuando está habilitado, cada storyboard requiere una indicación y una duración. | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generar_audio` | Genera audio para el vídeo (por defecto: False). Solo compatible con `kling-v3-omni`. | BOOLEAN | No | True / False |
+| `resolution` | La resolución de salida para el vídeo generado (por defecto: "1080p"). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `storyboards` | Genera una serie de segmentos de vídeo con indicaciones y duraciones individuales. Solo es compatible con `kling-v3-omni`. | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `generar_audio` | Genera audio para el vídeo (por defecto: False). Solo es compatible con `kling-v3-omni`. | BOOLEAN | No | True / False |
 | `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados son no deterministas independientemente de la semilla (por defecto: 0). | INT | No | 0 a 2147483647 |
 
-### Entradas de Storyboard
+### Entradas de storyboard
 
-Cuando `storyboards` se establece en un valor distinto de `"disabled"`, se agregan las siguientes entradas para cada segmento seleccionado (N varía de 1 al número de storyboards seleccionado):
+Cuando `storyboards` está establecido en un valor distinto de `"disabled"`, se añaden las siguientes entradas para cada segmento seleccionado (N varía de 1 al número seleccionado de storyboards):
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+|-----------|-------------|--------------|-----------|-------|
 | `storyboard_N_prompt` | Indicación para el segmento N del storyboard. Máximo 512 caracteres. (por defecto: "") | STRING | Sí | - |
-| `storyboard_N_duration` | Duración en segundos del segmento N del storyboard (por defecto: 4). | INT | Sí | 1 a 15 |
+| `storyboard_N_duration` | Duración para el segmento N del storyboard en segundos (por defecto: 4). | INT | Sí | 1 a 15 |
 
 **Restricciones importantes:**
 
-* La entrada `end_frame` no puede usarse al mismo tiempo que la entrada `reference_images`.
-* La entrada `end_frame` no puede usarse simultáneamente con storyboards.
-* El modelo `kling-video-o1` no admite duraciones mayores de 10 segundos, generación de audio, resolución 4k ni storyboards.
+* La entrada `end_frame` no se puede utilizar al mismo tiempo que la entrada `reference_images`.
+* La entrada `end_frame` no se puede utilizar simultáneamente con los storyboards.
+* El modelo `kling-video-o1` no admite duraciones mayores a 10 segundos, generación de audio, resolución 4k ni storyboards.
 * Si no se proporciona un `end_frame` ni ninguna `reference_images` con el modelo `kling-video-o1`, la `duration` solo puede establecerse en 5 o 10 segundos.
 * Todas las imágenes de entrada (`first_frame`, `end_frame` y cualquier `reference_images`) deben tener una dimensión mínima de 300 píxeles tanto en ancho como en alto.
 * La relación de aspecto de todas las imágenes de entrada debe estar entre 1:2.5 y 2.5:1.
 * Se puede proporcionar un máximo de 6 imágenes a través de la entrada `reference_images`.
 * El texto de `prompt` debe tener entre 1 y 2500 caracteres de longitud (se permiten 0 caracteres cuando los storyboards están habilitados).
-* La indicación puede hacer referencia a las imágenes de entrada mediante los marcadores de posición `@image`, `@image1`, `@image2`, etc.; estos se convierten automáticamente al formato de referencia de imagen compatible con la API.
+* La indicación puede hacer referencia a las imágenes de entrada utilizando los marcadores de posición `@image`, `@image1`, `@image2`, etc.; estos se convierten automáticamente al formato de referencia de imagen compatible con la API.
 * Cuando los storyboards están habilitados, la duración total de todos los segmentos del storyboard debe ser igual al valor global de `duration`.
 * Cada indicación de storyboard debe tener entre 1 y 512 caracteres de longitud.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
-|------------------|-------------|---------------|
+| Nombre de salida | Descripción | Tipo de dato |
+|------------------|-------------|--------------|
 | `output` | El archivo de vídeo generado. | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProFirstLastFrameNode/es.md)

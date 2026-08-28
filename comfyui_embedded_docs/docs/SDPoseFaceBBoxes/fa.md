@@ -16,7 +16,7 @@
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `bboxes` | فهرستی از کادرهای محدودکننده صورت برای هر فریم. هر کادر محدودکننده با مختصات گوشه بالا-چپ (`x`، `y`)، `width` و `height` تعریف می‌شود. این خروجی با ورودی `bboxes` گره SDPoseKeypointExtractor سازگار است. | BOUNDINGBOX |
+| `جعبه‌های مرزی` | فهرستی از کادرهای محدودکننده صورت برای هر فریم. هر کادر محدودکننده با مختصات گوشه بالا-چپ (`x`، `y`)، `width` و `height` تعریف می‌شود. این خروجی با ورودی `bboxes` گره SDPoseKeypointExtractor سازگار است. | BOUNDINGBOX |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDPoseFaceBBoxes/fa.md)
 

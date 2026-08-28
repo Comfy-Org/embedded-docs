@@ -1,33 +1,46 @@
 # HeyGen Avatar Oluştur
 
-Bir kişinin fotoğrafından veya bir karakteri tanımlayan metin isteminden yeniden kullanılabilir bir HeyGen avatarı oluşturun. Ortaya çıkan avatar kimliği, bu avatarın yer aldığı videolar oluşturmak için HeyGen Avatar Video düğümüyle kullanılabilir. Avatarı gelecekteki iş akışlarında yeniden kullanmak için kimliği kaydedin.
+Yeniden kullanılabilir bir HeyGen avatarı, bir kişinin fotoğrafından veya bir karakteri tanımlayan metin isteminden oluşturun. Üretilen `avatar_id`, HeyGen Avatar Video düğümüyle kullanılabilir ve gelecekteki iş akışlarında avatarı yeniden kullanmak üzere kaydedilmelidir.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-|-----------|-------------|-----------|----------|-------|
-| `kaynak` | Bir metin isteminden yeni bir karakter oluşturun veya bağlı bir kişi fotoğrafından avatar oluşturun. | COMBO | Evet | `"prompt"`<br>`"photo"` |
-
-`source` parametresi `"prompt"` olarak ayarlandığında aşağıdaki ek parametreler kullanılabilir:
+### Ortak Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Oluşturulacak avatarın açıklaması (en fazla 1000 karakter). En az 1 boşluk olmayan karakter içermelidir. Varsayılan: boş dize. | STRING | Evet | 1 ila 1000 karakter |
-| `reference_images` | Oluşturulacak görünüme yön veren en fazla 3 referans görseli. 2K'dan büyükse otomatik olarak küçültülür. | IMAGE | Hayır | 0 ila 3 görsel |
+| `kaynak` | Bir metin isteminden yeni bir karakter oluşturun veya avatarı bağlı bir kişi fotoğrafından oluşturun. | DYNAMIC_COMBO | Evet | `"prompt"`<br>`"photo"` |
 
-`source` parametresi `"photo"` olarak ayarlandığında aşağıdaki ek parametre kullanılabilir:
+### Prompt Girdileri
+
+`source` değeri `"prompt"` olarak ayarlandığında kullanılabilir.
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `identity_photo` | Avatara dönüştürülecek kişinin fotoğrafı. 2K'dan büyükse otomatik olarak küçültülür. | IMAGE | Evet | Tek görsel |
+| `prompt` | Oluşturulacak avatarın açıklaması (en fazla 1000 karakter). En az 1 boşluk olmayan karakter içermelidir. Varsayılan: boş dize. | STRING | Evet | 1 ile 1000 characters |
 
-**Not:** `source` parametresi iki mod arasında geçiş yapar. `"prompt"` modunda, bir metin açıklaması ve isteğe bağlı olarak en fazla 3 referans görseli sağlarsınız. `"photo"` modunda, bir kişinin tek bir fotoğrafını sağlarsınız. Bu modlar birbirini dışlar.
+### Fotoğraf Girdileri
+
+`source` değeri `"photo"` olarak ayarlandığında kullanılabilir.
+
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `identity_photo` | Avatar'a dönüştürülecek kişinin fotoğrafı. 2K'dan büyükse otomatik olarak küçültülür. | IMAGE | Evet | Single image |
+
+### Referans Girdileri
+
+`source` değeri `"prompt"` olarak ayarlandığında kullanılabilir.
+
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `reference_images` | Büyütülebilir yuva: oluşturulan görünümü yönlendirmek için en fazla 3 görsel bağlayın (`ref_image_1`...`ref_image_3`). Görseller 2K'dan büyükse otomatik olarak küçültülür. | IMAGE | Hayır | 0 ile 3 images |
+
+**Not:** `source` parametresi birbirini dışlayan iki mod arasında geçiş yapar. `"prompt"` modunda `prompt` zorunludur ve isteğe bağlı olarak en fazla 3 referans görseli bağlanabilir. `"photo"` modunda `identity_photo` zorunludur. Fotoğraflar ve referans görseller 2K'dan büyük olduğunda otomatik olarak küçültülür; 3'ten fazla referans görsel kabul edilmez.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `avatar_id` | Avatar görünüm kimliği. Bunu HeyGen Avatar Video'nun `custom_avatar_id` parametresine iletin; avatarı daha sonra yeniden kullanmak için kaydedin. | STRING |
+| `avatar_id` | Avatar görünüm kimliği. HeyGen Avatar Video'nun `custom_avatar_id` parametresine iletin; avatarı daha sonra yeniden kullanmak için kaydedin. | STRING |
 | `önizleme` | Oluşturulan avatarın önizleme görseli. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenCreateAvatarNode/tr.md)

@@ -7,7 +7,7 @@ Poz videosuna ait blok başına aktivasyonları bir kez önbelleğe alır, böyl
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Önbelleğin ekleneceği Wan Animate2 modeli. | MODEL | Evet | |
-| `device` | Önbelleğin nerede tutulacağı. cpu (RAM) güvenli seçimdir; önbellek, tipik boyutlarda modelle birlikte VRAM'e sığmaz. gpu (VRAM), sığdığı takdirde daha hızlı olabilir. (varsayılan: "cpu") | STRING | Evet | "cpu"<br>"gpu" |
+| `cihaz` | Önbelleğin nerede tutulacağı. cpu (RAM) güvenli seçimdir; önbellek, tipik boyutlarda modelle birlikte VRAM'e sığmaz. gpu (VRAM), sığdığı takdirde daha hızlı olabilir. (varsayılan: "cpu") | STRING | Evet | "cpu"<br>"gpu" |
 | `dtype` | Depolama hassasiyeti. default, aktivasyonları modelin hesaplama dtype'ında saklar. int8 önbelleği yarıya, int4 dörtte birine indirir; convrot ise doğruluğu korumak için kullanılır. (varsayılan: "default") | STRING | Evet | "default"<br>"int8"<br>"int4" |
 
 Not: Bağlam pencereleri kullanıldığında, her pencere ayrı ayrı önbelleğe alınır; bu nedenle bellek kullanımı pencere sayısıyla ölçeklenir. static_standard zamanlaması kullanılmalıdır, çünkü tekdüze zamanlamalar pencereleri her adımda kaydırır ve önbellek asla yeniden kullanılmaz.

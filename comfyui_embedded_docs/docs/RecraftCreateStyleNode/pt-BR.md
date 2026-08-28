@@ -15,7 +15,7 @@ Este nó cria um estilo personalizado para geração de imagens através do uplo
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `style_id` | O identificador único para o estilo personalizado recém-criado. | STRING |
+| `id_estilo` | O identificador único para o estilo personalizado recém-criado. | STRING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCreateStyleNode/pt-BR.md)
 

@@ -20,7 +20,7 @@ O nó SamplerCustom foi projetado para fornecer um mecanismo de amostragem flex�
 
 | Parâmetro | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `output` | A saída 'output' representa o resultado principal do processo de amostragem, contendo as amostras geradas. | `LATENT` |
-| `denoised_output` | A saída 'denoised_output' representa as amostras após a aplicação de um processo de remoção de ruído, potencialmente melhorando a clareza e a qualidade das amostras geradas. | `LATENT` |
+| `saída` | A saída 'output' representa o resultado principal do processo de amostragem, contendo as amostras geradas. | `LATENT` |
+| `saída_denoisada` | A saída 'denoised_output' representa as amostras após a aplicação de um processo de remoção de ruído, potencialmente melhorando a clareza e a qualidade das amostras geradas. | `LATENT` |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerCustom/pt-BR.md)

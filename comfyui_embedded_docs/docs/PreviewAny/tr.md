@@ -1,20 +1,20 @@
 # Herhangi Bir Şeyi Önizle
 
-PreviewAny düğümü, herhangi bir girdi veri türünün önizlemesini metin biçiminde görüntüler. Girdi olarak herhangi bir veri türünü kabul eder ve okunabilir bir dize temsiline dönüştürerek görüntülenmesini sağlar. Düğüm, dizeler, sayılar, boolean değerler ve karmaşık nesneler dahil olmak üzere farklı veri türlerini JSON biçimine serileştirmeye çalışarak otomatik olarak işler.
+PreviewAny, herhangi bir girdi değerini inceleyebilmeniz için okunabilir metne dönüştürür. Dizeler değişmeden geçer, sayılar ve boolean değerler düz metin haline gelir ve diğer veri türleri mümkün olduğunda JSON olarak serileştirilir (serileştirme başarısız olursa düz dize biçimine geri dönülür). Ortaya çıkan metin kullanıcı arayüzünde gösterilir ve ayrıca daha sonraki işlemler için bir dize çıktısı olarak döndürülür.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `kaynak` | Önizleme görüntülemesi için herhangi bir girdi veri türünü kabul eder | ANY | Evet | Herhangi bir veri türü |
+| `kaynak` | Önizleme görüntüsü için herhangi bir girdi veri türünü kabul eder. Bir değer sağlanmazsa, önizleme 'None' gösterir. | ANY | Evet | Herhangi bir veri türü |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `UI Metin Görüntüleme` | Girdi verilerini metin biçimine dönüştürerek kullanıcı arayüzünde görüntüler. Ayrıca metni daha sonraki işlemler için bir dize çıktısı olarak döndürür. | STRING |
+| `result` | Girdi değerinin metin biçimine dönüştürülmüş hali. Aynı metin kullanıcı arayüzünde de görüntülenir. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewAny/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `6011c39a31ef9a6786a1dff6e135edcf35def2f715b49301dd49a6467f859271`
+**Source fingerprint (SHA-256):** `9572eac396aa27a83148a940e4bf37a9ec4e4a47e9526db8bb983611f9237536`

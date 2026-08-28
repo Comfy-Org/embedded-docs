@@ -1,32 +1,37 @@
 # Runway Primer-Fotograma-Último a Video
 
-El nodo Runway Primer-Último Fotograma a Video genera videos subiendo fotogramas clave inicial y final junto con un mensaje de texto. Crea transiciones suaves entre los fotogramas de inicio y fin proporcionados utilizando el modelo Gen-3 de Runway. Esto es particularmente útil para transiciones complejas donde el fotograma final difiere significativamente del fotograma inicial.
+El nodo Runway First-Last-Frame to Video genera un video utilizando un fotograma inicial, un fotograma final y un prompt de texto. Crea una transición suave entre los dos fotogramas clave proporcionados mediante el modelo gen3a_turbo de Runway. Es especialmente útil para transiciones complejas donde el fotograma final es completamente diferente del fotograma inicial.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
-| `prompt` | Mensaje de texto para la generación (predeterminado: cadena vacía) | STRING | Sí | N/A |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `prompt` | Indicación de texto para la generación (por defecto: cadena vacía) | STRING | Sí | N/A |
 | `fotograma_inicial` | Fotograma inicial que se utilizará para el video | IMAGE | Sí | N/A |
 | `fotograma_final` | Fotograma final que se utilizará para el video. Solo compatible con gen3a_turbo. | IMAGE | Sí | N/A |
-| `duración` | Duración del video en segundos (predeterminado: "5") | COMBO | Sí | `"5"`<br>`"10"` |
-| `relación` | Relación de aspecto para el video generado (predeterminado: "16:9") | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `semilla` | Semilla aleatoria para la generación. Establecer en 0 para semilla aleatoria (predeterminado: 0). | INT | No | 0 a 4294967295 |
+| `duración` | Duración del video generado en segundos. La duración más larga de 10 s ofrece a la generación más tiempo para transicionar suavemente entre el fotograma inicial y el final (por defecto: "5"). | COMBO | Sí | `"5"`<br>`"10"` |
+| `relación` | Relación de aspecto del video generado (por defecto: "768:1280") | COMBO | Sí | `"768:1280"`<br>`"1280:768"` |
+| `semilla` | Semilla aleatoria para la generación. Establézcala en 0 para una semilla aleatoria (por defecto: 0). | INT | No | 0 a 4294967295 |
 
-**Restricciones de Parámetros:**
+**Restricciones de parámetros:**
 
-- El `prompt` debe contener al menos 1 carácter
+- El parámetro `prompt` debe contener al menos 1 carácter
 - Tanto `start_frame` como `end_frame` deben tener dimensiones máximas de 7999x7999 píxeles
 - Tanto `start_frame` como `end_frame` deben tener relaciones de aspecto entre 0.5 y 2.0
 - El parámetro `end_frame` solo es compatible cuando se utiliza el modelo gen3a_turbo
 
+**Notas:**
+
+- El costo de generación se basa en la duración seleccionada: USD 0.0715 por segundo (USD 0.3575 por 5 segundos, USD 0.715 por 10 segundos)
+- Este nodo está marcado como obsoleto
+
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-| --- | --- | --- |
-| `output` | El video generado que realiza la transición entre los fotogramas inicial y final | VIDEO |
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `output` | El video generado que hace la transición entre el fotograma inicial y el final | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayFirstLastFrameNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `57b72c1143b7053272107403279e1f84919cbfe71c57ca4f4e21b4324f7a5346`
+**Source fingerprint (SHA-256):** `1d8720aba833348583d2aa37e13a1ad43d9055b0201c9cb6ad9c95dada7e5056`

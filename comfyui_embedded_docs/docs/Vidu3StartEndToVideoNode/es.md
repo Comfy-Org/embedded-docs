@@ -8,11 +8,11 @@ Este nodo genera un video interpolando entre un fotograma inicial y un fotograma
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | El modelo a utilizar para la generación de video. Al seleccionar una opción se revelan parámetros de configuración adicionales para `resolution`, `duration` y `audio`. | DYNAMIC_COMBO | Sí | `"viduq3-pro"`<br>`"viduq3-turbo"` |
-| `first_frame` | La imagen inicial para la secuencia de video. | IMAGE | Sí | - |
-| `end_frame` | La imagen final para la secuencia de video. | IMAGE | Sí | - |
+| `modelo` | El modelo a utilizar para la generación de video. Al seleccionar una opción se revelan parámetros de configuración adicionales para `resolution`, `duration` y `audio`. | DYNAMIC_COMBO | Sí | `"viduq3-pro"`<br>`"viduq3-turbo"` |
+| `fotograma inicial` | La imagen inicial para la secuencia de video. | IMAGE | Sí | - |
+| `fotograma final` | La imagen final para la secuencia de video. | IMAGE | Sí | - |
 | `prompt` | Descripción del prompt (máximo 2000 caracteres). | STRING | Sí | - |
-| `seed` | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 1). | INT | Sí | 0 a 2147483647 |
+| `semilla` | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 1). | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de viduq3-pro y viduq3-turbo
 

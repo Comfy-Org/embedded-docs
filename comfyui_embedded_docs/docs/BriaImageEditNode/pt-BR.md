@@ -1,37 +1,45 @@
 # Bria Image Edit
 
-O nó Bria FIBO Image Edit permite modificar uma imagem existente usando uma instrução de texto. Ele envia a imagem e seu prompt para a API da Bria, que usa o modelo FIBO para gerar uma nova versão editada da imagem com base na sua solicitação. Você também pode fornecer uma máscara para limitar as edições a uma área específica.
+O nó Bria FIBO Image Edit edita uma imagem existente usando uma instrução de texto. Ele envia a imagem e o prompt para a API da Bria, onde o modelo FIBO cria uma versão editada. Uma máscara opcional pode limitar as alterações a uma área específica.
+
 ## Entradas
 
 ### Entradas comuns
 
-| Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
-|---|---|---|---|---|
-| `model` | A versão do modelo a ser usada para edição de imagem. | COMBO | Sim | `"FIBO"` |
-| `image` | A imagem de entrada que você deseja editar. | IMAGE | Sim | - |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `modelo` | A versão do modelo a ser usada para edição de imagem. | COMBO | Sim | `"FIBO"` |
+| `imagem` | A imagem de entrada que você deseja editar. | IMAGE | Sim | - |
 | `prompt` | Instrução para editar a imagem (padrão: vazio). | STRING | Sim | - |
-| `negative_prompt` | Texto descrevendo o que você não deseja que apareça na imagem editada (padrão: vazio). | STRING | Sim | - |
-| `structured_prompt` | Uma string contendo o prompt de edição estruturado em formato JSON. Use este em vez do prompt usual para controle preciso e programático (padrão: vazio). | STRING | Sim | - |
-| `seed` | Um número usado para inicializar a geração aleatória, garantindo resultados reproduzíveis (padrão: 1). | INT | Sim | 1 to 2147483647 |
-| `guidance_scale` | Valores mais altos fazem a imagem seguir o prompt mais fielmente (padrão: 3.0). | FLOAT | Sim | 3.0 to 5.0 |
-| `steps` | O número de etapas de remoção de ruído que o modelo executará (padrão: 50). | INT | Sim | 20 to 50 |
-| `moderation` | Configurações de moderação. Selecionar `"true"` revela opções adicionais de moderação para conteúdo do prompt, entrada visual e saída visual. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
-| `mask` | Se omitida, a edição se aplica a toda a imagem. | MASK | Não | - |
+| `prompt_negativo` | Texto descrevendo o que você não deseja que apareça na imagem editada (padrão: vazio). | STRING | Sim | - |
+| `prompt_estruturado` | Uma string contendo o prompt estruturado de edição em formato JSON. Use isto em vez do prompt usual para controle preciso e programático (padrão: vazio). | STRING | Sim | - |
+| `semente` | Número usado para inicializar a geração aleatória, garantindo resultados reproduzíveis (padrão: 1). | INT | Sim | 1 a 2147483647 |
+| `escala_de_guia` | Valores mais altos fazem a imagem seguir o prompt mais fielmente (padrão: 3). | FLOAT | Sim | 3.0 a 5.0 |
+| `passos` | O número de etapas de remoção de ruído realizadas pelo modelo (padrão: 50). | INT | Sim | 20 a 50 |
+| `moderação` | Configurações de moderação. Selecionar `"true"` revela opções adicionais de moderação. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
+| `máscara` | Se omitida, a edição se aplica à imagem inteira. | MASK | Não | - |
 
 ### Entradas de moderação
 
-| Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
-|---|---|---|---|---|
-| `prompt_content_moderation` | prompt_content_moderation (padrão: false) | BOOLEAN | Não | `true`<br>`false` |
-| `visual_input_moderation` | visual_input_moderation (padrão: false) | BOOLEAN | Não | `true`<br>`false` |
-| `visual_output_moderation` | visual_output_moderation (padrão: true) | BOOLEAN | Não | `true`<br>`false` |
+Quando `moderation` está definido como `"true"`, estas entradas adicionais ficam disponíveis:
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `prompt_content_moderation` | Se deve moderar o texto do prompt para conteúdo impróprio (padrão: false). | BOOLEAN | Não | `true`<br>`false` |
+| `visual_input_moderation` | Se deve moderar a imagem de entrada para conteúdo impróprio (padrão: false). | BOOLEAN | Não | `true`<br>`false` |
+| `visual_output_moderation` | Se deve moderar a imagem de saída editada para conteúdo impróprio (padrão: true). | BOOLEAN | Não | `true`<br>`false` |
+
+**Restrições importantes:**
+
+- Pelo menos um entre `prompt` ou `structured_prompt` deve ser não vazio. Se ambos estiverem vazios, o nó gera um erro.
+- Quando `moderation` está definido como `"true"`, as três entradas de moderação acima são exibidas.
 
 ## Saídas
 
-| Nome da saída | Descrição | Tipo de dados |
-|---|---|---|
-| `IMAGE` | The edited image returned by the Bria API. | IMAGE |
-| `structured_prompt` | The structured prompt used or generated during the editing process. | STRING |
+| Nome da Saída | Descrição | Tipo de Dados |
+|-------------|-------------|-----------|
+| `IMAGE` | A imagem editada retornada pela API da Bria. | IMAGE |
+| `prompt_estruturado` | O prompt estruturado usado ou gerado durante o processo de edição. | STRING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaImageEditNode/pt-BR.md)
 

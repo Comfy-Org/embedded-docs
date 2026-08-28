@@ -6,7 +6,7 @@ Ce nœud vous permet de choisir le backend d'attention qu'un modèle utilisera p
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle auquel le backend d'attention sélectionné sera appliqué. | MODEL | Oui |  |
+| `modèle` | Le modèle auquel le backend d'attention sélectionné sera appliqué. | MODEL | Oui |  |
 | `attention` | Le backend d'attention à utiliser (par défaut : « pytorch attention »). Si le backend sélectionné n'est pas disponible, l'attention PyTorch est utilisée comme solution de repli. | STRING | Oui | « pytorch attention »<br>« comfy kitchen attention » |
 
 Remarque : L'option « comfy kitchen attention » n'est listée que lorsque le module d'attention int8 de comfy kitchen est disponible dans l'environnement actuel.

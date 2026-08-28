@@ -1,23 +1,25 @@
 # Sesi Kaydet
 
-SaveAudio düğümü, ses verilerini FLAC formatında bir dosyaya kaydeder. Ses girişini alır ve belirtilen çıktı dizinine verilen dosya adı önekiyle yazar. Düğüm, dosya adlandırmayı otomatik olarak yönetir ve sesin daha sonra kullanılmak üzere doğru şekilde kaydedilmesini sağlar.
+Bu düğüm, ses verilerini FLAC formatında bir dosyaya kaydeder. Bir ses girdisi alır ve belirtilen dosya adı önekiyle çıktı dizinine yazar. Bu düğüm kullanımdan kaldırılmıştır ve mevcut Ses Kaydet düğümüyle değiştirilmelidir.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-| --- | --- | --- | --- | --- |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
 | `ses` | Kaydedilecek ses verisi | AUDIO | Evet | - |
-| `dosyaadı_öneki` | Çıktı dosya adı için önek (varsayılan: "audio/ComfyUI") | STRING | Hayır | - |
+| `dosyaadı_öneki` | Çıktı dosya adı öneki (varsayılan: "audio/ComfyUI") | STRING | Hayır | - |
 
-*Not: `prompt` ve `extra_pnginfo` parametreleri gizlidir ve sistem tarafından otomatik olarak yönetilir.*
+*Not: `prompt` ve `extra_pnginfo` parametreleri gizlidir ve sistem tarafından otomatik olarak işlenir.*
+
+Eğer `audio` girdisi hiç veri almazsa (örneğin, kaynak videoda ses parçası yoksa), düğüm bir hata verir ve hiçbir dosya kaydedilmez.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-| --- | --- | --- |
-| *Yok* | Bu düğüm herhangi bir çıktı verisi döndürmez, ancak ses dosyasını çıktı dizinine kaydeder | - |
+|-------------|-------------|-----------|
+| `audio` | Girdiye sağlanan ses verisi, dosya kaydedildikten sonra olduğu gibi iletilir | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAudio/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `16242dfc45d0f2808a5615e9c1bfe4de4d19e2f5f6b28370f631439021dc72e5`
+**Source fingerprint (SHA-256):** `6ac62d315f14213091cd179a05f0bbd51f1b1a5056bb5c06ca137d2b574d6017`

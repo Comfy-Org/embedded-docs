@@ -8,7 +8,7 @@ Este nodo fusiona dos modelos combinando sus componentes internos a un nivel det
 |-----------|-------------|--------------|-------------|-------|
 | `model1` | El primer modelo a fusionar | MODEL | Sí | - |
 | `model2` | El segundo modelo a fusionar | MODEL | Sí | - |
-| `first.` | Proporción de mezcla para el primer bloque de capas (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
+| `primero.` | Proporción de mezcla para el primer bloque de capas (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
 | `tmlp.` | Proporción de mezcla para el bloque MLP de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
 | `txtmlp.` | Proporción de mezcla para el bloque MLP de texto (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
 | `tproj.` | Proporción de mezcla para el bloque de proyección de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
@@ -18,7 +18,7 @@ Este nodo fusiona dos modelos combinando sus componentes internos a un nivel det
 | `txtfusion.refiner_blocks.0.` | Proporción de mezcla para el primer bloque refinador de fusión de texto (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
 | `txtfusion.refiner_blocks.1.` | Proporción de mezcla para el segundo bloque refinador de fusión de texto (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
 | `blocks.0.` hasta `blocks.27.` | Proporción de mezcla para cada uno de los 28 bloques principales (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
-| `last.` | Proporción de mezcla para el último bloque (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
+| `último.` | Proporción de mezcla para el último bloque (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
 
 Cada proporción de mezcla controla cuánto de `model2` se utiliza para ese componente específico, donde 0.0 significa usar solo `model1`, 1.0 significa usar solo `model2`, y los valores intermedios crean una mezcla ponderada.
 

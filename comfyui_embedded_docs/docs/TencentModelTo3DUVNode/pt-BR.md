@@ -15,7 +15,7 @@ Este nó utiliza a API Tencent Hunyuan3D para realizar o desdobramento UV em um 
 | --- | --- | --- |
 | `OBJ` | O arquivo de modelo 3D processado no formato OBJ. | FILE3D |
 | `FBX` | O arquivo de modelo 3D processado no formato FBX. | FILE3D |
-| `uv_image` | A imagem de textura UV gerada. | IMAGE |
+| `imagem UV` | A imagem de textura UV gerada. | IMAGE |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentModelTo3DUVNode/pt-BR.md)
 

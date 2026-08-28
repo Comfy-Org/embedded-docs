@@ -1,23 +1,23 @@
-# LTXVConcatAVLatent
+# 串接 AV 潛空間
 
-LTXVConcatAVLatent 節點將影片潛在表示與音訊潛在表示合併為單一、串接的潛在輸出。它會合併兩個輸入中的 `samples` 張量，如果存在的話，也會合併它們的 `noise_mask` 張量，為後續在影片生成流程中的處理做好準備。
+此節點將影片潛在表示（video latent）與音訊潛在表示（audio latent）合併為單一的聯合影音（AV）潛在表示，可供 LTXV 或 MiniMax H3 等 AV 模型使用。若影片輸入本身已是 AV 潛在表示，則保留其影片串流，僅以所提供的音訊潛在表示取代音訊串流。
 
 ## 輸入
 
-| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `video_latent` | 影片資料的潛在表示。 | LATENT | 是 |  |
-| `audio_latent` | 音訊資料的潛在表示。 | LATENT | 是 |  |
+| `video_latent` | 影片資料的潛在表示。當它已同時包含影片與音訊串流時，節點會保留其影片串流，並以 `audio_latent` 中的音訊進行替換。 | LATENT | 是 |  |
+| `audio_latent` | 音訊資料的潛在表示。其長度會調整以配合影片串流：較長的音訊會被截短，較短的音訊則以零填補。 | LATENT | 是 |  |
 
-**注意：** 來自 `video_latent` 和 `audio_latent` 輸入的 `samples` 張量會被串接。如果任一輸入包含 `noise_mask`，則會使用該遮罩；如果缺少其中一個，則會為其建立一個全為 1 的遮罩（形狀與對應的 `samples` 相同）。接著，產生的遮罩也會被串接起來。
+**注意：** 兩個輸入的樣本會以巢狀張量（nested tensor）中的一對影片與音訊串流形式結合。若任一輸入包含 `noise_mask`，輸出會包含合併後的遮罩；缺少的遮罩會以形狀與其樣本相符的全 1 遮罩取代。當較短的音訊被填補時，填補區域會保持未遮蓋狀態，以便模型產生該區域。若音訊潛在表示無法配合影片潛在表示，節點會引發錯誤，例如當兩個潛在表示在多個維度上不同，或是在批次或通道維度上不同時。
 
 ## 輸出
 
-| 輸出名稱 | 說明 | 資料類型 |
+| 輸出名 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `latent` | 一個單一的潛在字典，包含來自影片和音訊輸入的串接 `samples`，以及（如果適用的話）串接的 `noise_mask`。 | LATENT |
+| `latent` | 包含影片與音訊樣本以兩條串流形式打包在一起的潛在表示，且當至少一個輸入提供 `noise_mask` 時，也包含合併後的 `noise_mask`。 | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVConcatAVLatent/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `322d6870f110fb1ef8b472cb49649cc9fff7865f4c7a83fbfd536f1fdfd694f8`
+**Source fingerprint (SHA-256):** `0231f9db2ce73132d8555fbb33f295b68aa68a0c1c54e4a0c5d2e1f67b5611cb`

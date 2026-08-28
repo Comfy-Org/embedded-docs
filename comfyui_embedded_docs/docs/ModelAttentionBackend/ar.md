@@ -8,8 +8,8 @@ This node lets you choose which attention backend a model uses for its attention
 
 | المعامل | الوصف | نوع البيانات | إلزامي | النطاق |
 |-----------|-------------|-----------|----------|-------|
-| `model` | النموذج الذي سيتم تطبيق خلفية الانتباه المحددة عليه. | MODEL | نعم |  |
-| `attention` | خلفية الانتباه المستخدمة (الافتراضي: "pytorch attention"). إذا كانت الخلفية المحددة غير متاحة، يتم استخدام انتباه PyTorch كخيار احتياطي. | STRING | نعم | "pytorch attention"<br>"comfy kitchen attention" |
+| `النموذج` | النموذج الذي سيتم تطبيق خلفية الانتباه المحددة عليه. | MODEL | نعم |  |
+| `الانتباه` | خلفية الانتباه المستخدمة (الافتراضي: "pytorch attention"). إذا كانت الخلفية المحددة غير متاحة، يتم استخدام انتباه PyTorch كخيار احتياطي. | STRING | نعم | "pytorch attention"<br>"comfy kitchen attention" |
 
 ملاحظة: يُدرج خيار "comfy kitchen attention" فقط عندما تكون وحدة انتباه comfy kitchen int8 متاحة في البيئة الحالية.
 

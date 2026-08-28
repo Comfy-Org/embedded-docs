@@ -8,12 +8,12 @@ Le nœud Wan 2.7 Video Continuation génère un nouveau segment vidéo qui pours
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle de génération vidéo à utiliser. | DYNAMIC_COMBO | Oui | `"wan2.7-i2v"` |
-| `first_clip` | Vidéo d'entrée à partir de laquelle continuer. Durée : 2 s à 10 s. Le rapport hauteur/largeur de la sortie est dérivé de cette vidéo. | VIDEO | Oui | 2 s à 10 s |
-| `last_frame` | Image de la dernière frame. La continuation effectuera une transition vers cette image. | IMAGE | Non | - |
-| `seed` | Graine à utiliser pour la génération. (par défaut : 0) | INT | Oui | 0 à 2147483647 |
-| `prompt_extend` | Indique s'il faut enrichir l'invite avec l'assistance de l'IA. (par défaut : True) | BOOLEAN | Oui | - |
-| `watermark` | Indique s'il faut ajouter un filigrane généré par IA au résultat. (par défaut : False) | BOOLEAN | Oui | - |
+| `modèle` | Le modèle de génération vidéo à utiliser. | DYNAMIC_COMBO | Oui | `"wan2.7-i2v"` |
+| `premier clip` | Vidéo d'entrée à partir de laquelle continuer. Durée : 2 s à 10 s. Le rapport hauteur/largeur de la sortie est dérivé de cette vidéo. | VIDEO | Oui | 2 s à 10 s |
+| `dernière image` | Image de la dernière frame. La continuation effectuera une transition vers cette image. | IMAGE | Non | - |
+| `graine` | Graine à utiliser pour la génération. (par défaut : 0) | INT | Oui | 0 à 2147483647 |
+| `extension d'invite` | Indique s'il faut enrichir l'invite avec l'assistance de l'IA. (par défaut : True) | BOOLEAN | Oui | - |
+| `filigrane` | Indique s'il faut ajouter un filigrane généré par IA au résultat. (par défaut : False) | BOOLEAN | Oui | - |
 
 ### Entrées wan2.7-i2v
 

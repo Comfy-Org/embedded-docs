@@ -20,8 +20,8 @@ The Wan 2.7 Image to Video node generates a video starting from a first-frame im
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `prompt` | Prompt describing the elements and visual features. Supports English and Chinese. | STRING | Yes | - |
-| `negative_prompt` | Negative prompt describing what to avoid. | STRING | Yes | - |
+| `prompt` | Prompt describing the elements and visual features. Supports English and Chinese. (default: empty) | STRING | Yes | - |
+| `negative_prompt` | Negative prompt describing what to avoid. (default: empty) | STRING | Yes | - |
 | `resolution` | The resolution of the output video. | COMBO | Yes | `"720P"`<br>`"1080P"` |
 | `duration` | The length of the generated video in seconds (default: 5). | INT | Yes | 2 to 15 |
 

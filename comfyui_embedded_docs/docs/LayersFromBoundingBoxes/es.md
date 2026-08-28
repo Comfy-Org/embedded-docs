@@ -6,13 +6,13 @@ Este nodo convierte un lote de imágenes y sus cajas delimitadoras en una pila d
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `image` | Lote de imágenes; cada fotograma se convierte en una capa. | IMAGE | Sí | — |
-| `bboxes` | Cajas de colocación, alineadas por índice con el lote de imágenes. Acepta cajas delimitadoras (x, y, width, height), elementos normalizados (con un "bbox" — estos necesitan `canvas_width`/`canvas_height` para resolverse en píxeles), o una cadena JSON de cualquiera de ambos. Los fotogramas sin una caja correspondiente se colocan en el origen. El ancho/alto de una caja escala la capa para ajustarse a ella. Se usan `metadata.name` (o `desc`) y `metadata.z_index` cuando están presentes, y `metadata.content_rect` (relativo al fotograma) recorta el fotograma a su contenido real. | BOUNDING_BOX, ARRAY o STRING | Sí | — |
-| `mask` | Transparencia por fotograma, alineada por índice con el lote de imágenes (1 = transparente, convención de LoadImage). | MASK | No | — |
-| `layers` | Pila de capas a la que añadir. Déjala sin conectar para iniciar una nueva pila. | LAYERS | No | — |
-| `crop_to_content` | Recorta cada fotograma a `metadata.content_rect` cuando esté presente y coloca el contenido en la posición de la caja más el desplazamiento del rect. Mantén esta opción activada para lotes cuyos fotogramas estén rellenos (padded): conserva solo el contenido real en su ubicación verdadera. (por defecto: true) | BOOLEAN | No | true<br>false |
-| `canvas_width` | Ancho del lienzo del documento. 0 lo deriva de las capas colocadas. (por defecto: 0) | INT | No | 0 a MAX_RESOLUTION |
-| `canvas_height` | Alto del lienzo del documento. 0 lo deriva de las capas colocadas. (por defecto: 0) | INT | No | 0 a MAX_RESOLUTION |
+| `imagen` | Lote de imágenes; cada fotograma se convierte en una capa. | IMAGE | Sí | — |
+| `cajas` | Cajas de colocación, alineadas por índice con el lote de imágenes. Acepta cajas delimitadoras (x, y, width, height), elementos normalizados (con un "bbox" — estos necesitan `canvas_width`/`canvas_height` para resolverse en píxeles), o una cadena JSON de cualquiera de ambos. Los fotogramas sin una caja correspondiente se colocan en el origen. El ancho/alto de una caja escala la capa para ajustarse a ella. Se usan `metadata.name` (o `desc`) y `metadata.z_index` cuando están presentes, y `metadata.content_rect` (relativo al fotograma) recorta el fotograma a su contenido real. | BOUNDING_BOX, ARRAY o STRING | Sí | — |
+| `máscara` | Transparencia por fotograma, alineada por índice con el lote de imágenes (1 = transparente, convención de LoadImage). | MASK | No | — |
+| `capas` | Pila de capas a la que añadir. Déjala sin conectar para iniciar una nueva pila. | LAYERS | No | — |
+| `recortar_al_contenido` | Recorta cada fotograma a `metadata.content_rect` cuando esté presente y coloca el contenido en la posición de la caja más el desplazamiento del rect. Mantén esta opción activada para lotes cuyos fotogramas estén rellenos (padded): conserva solo el contenido real en su ubicación verdadera. (por defecto: true) | BOOLEAN | No | true<br>false |
+| `ancho_lienzo` | Ancho del lienzo del documento. 0 lo deriva de las capas colocadas. (por defecto: 0) | INT | No | 0 a MAX_RESOLUTION |
+| `alto_lienzo` | Alto del lienzo del documento. 0 lo deriva de las capas colocadas. (por defecto: 0) | INT | No | 0 a MAX_RESOLUTION |
 
 Notas:
 

@@ -1,21 +1,21 @@
 # Referans Gizli Değişken
 
-Bu düğüm, bir düzenleme modeli için yönlendirici gizli değişkeni (guiding latent) ayarlar. Koşullandırma verilerini ve isteğe bağlı bir gizli değişken girişini alır, ardından koşullandırmayı referans gizli değişken bilgisini içerecek şekilde değiştirir. Model destekliyorsa, birden fazla referans görseli ayarlamak için birden çok ReferenceLatent düğümünü zincirleyebilirsiniz.
+Bu düğüm, bir düzenleme modeli için yönlendirici latent değerini ayarlar. Koşullandırma verilerini ve isteğe bağlı bir latent girdisini alır, ardından referans latent bilgisini içerecek şekilde koşullandırmayı değiştirir. Model destekliyorsa, birden fazla referans görseli ayarlamak için birden çok ReferenceLatent düğümünü zincirleyebilirsiniz.
 
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `koşullandırma` | Referans gizli değişken bilgisi ile değiştirilecek koşullandırma verileri | CONDITIONING | Evet | - |
-| `gizli değişken` | Düzenleme modeli için referans olarak kullanılacak isteğe bağlı gizli değişken verileri | LATENT | Hayır | - |
+| `koşullandırma` | Referans latent bilgisiyle değiştirilecek koşullandırma verisi | CONDITIONING | Evet | - |
+| `gizli değişken` | Düzenleme modeli için referans olarak kullanılacak isteğe bağlı latent veri. Sağlanmazsa koşullandırma değiştirilmeden döndürülür | LATENT | Hayır | - |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | Referans gizli değişken bilgisini içeren değiştirilmiş koşullandırma verileri | CONDITIONING |
+| `output` | Referans latent bilgisini içeren değiştirilmiş koşullandırma verisi | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceLatent/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d233778cfa7d6f057509f93f8445a0bbf151308e430fc50e28577f48cf136b53`
+**Source fingerprint (SHA-256):** `40b02df8ac436480f478fcfa929cc2e13181954507f4bdcd70aade051a25f7d5`

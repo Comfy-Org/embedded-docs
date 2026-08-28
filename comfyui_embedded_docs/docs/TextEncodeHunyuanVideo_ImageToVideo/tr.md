@@ -1,25 +1,23 @@
 # MetinKodlamaHunyuanVideo_GörüntüdenVideoya
 
-**Genel Bakış**
+TextEncodeHunyuanVideo_ImageToVideo düğümü, bir metin istemini referans görselden alınan görsel bilgilerle birleştirerek görüntüden videoya üretimi için koşullandırma verileri oluşturur. Hem metni hem de CLIP görüş çıktısındaki görsel yerleştirmelerini işlemek için bir CLIP modeli kullanır ve ardından bu iki kaynağı `image_interleave` ayarına göre harmanlayan token'lar üretir.
 
-TextEncodeHunyuanVideo_ImageToVideo düğümü, metin istemlerini görsel yerleştirmelerle birleştirerek video oluşturma için koşullandırma verileri oluşturur. Hem metin girişini hem de bir CLIP görüş çıktısından gelen görsel bilgileri işlemek için bir CLIP modeli kullanır ve ardından belirtilen görsel enterpolasyon ayarına göre bu iki kaynağı harmanlayan tokenler oluşturur.
+## Girdiler
 
-## Girişler
-
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `clip` | Tokenleştirme ve kodlama için kullanılan CLIP modeli | CLIP | Evet | - |
-| `clip_görü_çıktısı` | Görsel bağlam sağlayan bir CLIP görüş modelinden gelen görsel yerleştirmeler | CLIP_VISION_OUTPUT | Evet | - |
-| `istem` | Video oluşturmayı yönlendiren metin açıklaması; çok satırlı giriş ve dinamik istemleri destekler | STRING | Evet | - |
-| `görüntü_serpiştirme` | Görselin metin istemine kıyasla sonuçları ne kadar etkilediği. Daha yüksek değer, metin isteminin daha fazla etkisi olduğu anlamına gelir. (varsayılan: 2) | INT | Evet | 1-512 |
+| `clip` | Tokenizasyon ve kodlama için kullanılan CLIP modeli. | CLIP | Evet | - |
+| `clip_görü_çıktısı` | Referans görsel için görsel bağlam sağlayan CLIP görüş modelinden alınan görsel yerleştirmeler. | CLIP_VISION_OUTPUT | Evet | - |
+| `istem` | Video üretimini yönlendiren metin açıklaması. Çok satırlı girişi ve dinamik istemleri destekler. İstem, modelden referans görsele dayalı olarak videoyu tanımlamasını isteyen bir şablon kullanılarak biçimlendirilir; ana içerik, nesne ayrıntıları, eylemler, arka plan ve kamera açıları gibi yönleri kapsar. | STRING | Evet | - |
+| `görüntü_serpiştirme` | Görselin metin istemine kıyasla ne kadar etkili olduğunu belirler. Daha yüksek sayı, metin isteminden daha fazla etki anlamına gelir. (varsayılan: 2) | INT | Evet | 1-512 |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `CONDITIONING` | Video oluşturma için metin ve görsel bilgilerini birleştiren koşullandırma verileri | CONDITIONING |
+| `CONDITIONING` | Video üretimi için metin ve görsel bilgilerini birleştiren koşullandırma verileri. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeHunyuanVideo_ImageToVideo/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `ee748bd1fb1733593eb4cb1187c5cc279171163cfbc389f039378d0e366fc231`
+**Source fingerprint (SHA-256):** `016b87ead6f7a6ca61eff220e57f59252018cc78e80ec8cff5b83223b8f90f73`

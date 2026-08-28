@@ -1,23 +1,25 @@
 # Corte de Video
 
-El nodo Video Slice permite extraer un segmento específico de un video. Puedes definir un tiempo de inicio y una duración para recortar el video, o simplemente saltar los fotogramas iniciales. Si la duración solicitada es mayor que el video restante, el nodo puede devolver lo disponible o generar un error.
+El nodo Video Slice permite extraer un segmento específico de un video. Puedes definir un tiempo de inicio y una duración para recortar el video, o simplemente omitir los fotogramas iniciales. Si la duración solicitada es mayor que el video restante, el nodo puede devolver lo que esté disponible o generar un error.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `video` | El video de entrada que se va a segmentar. | VIDEO | Sí | - |
-| `hora de inicio` | Tiempo de inicio en segundos (predeterminado: 0.0). | FLOAT | No | -1e5 a 1e5 |
-| `duración` | Duración en segundos, o 0 para duración ilimitada (predeterminado: 0.0). | FLOAT | No | 0.0 y superior |
-| `duración estricta` | Si es Verdadero, cuando no sea posible cumplir con la duración especificada, se generará un error (predeterminado: Falso). | BOOLEAN | No | - |
+| `hora de inicio` | Tiempo de inicio en segundos (predeterminado: 0.0). | FLOAT | Sí | -1e5 a 1e5 |
+| `duración` | Duración en segundos, o 0 para duración ilimitada (predeterminado: 0.0). | FLOAT | Sí | 0.0 y superior |
+| `duración estricta` | Si es True, cuando la duración especificada no sea posible, se generará un error (predeterminado: False). | BOOLEAN | Sí | - |
+
+**Nota:** Si el video no se puede segmentar para el `start_time` y `duration` dados, el nodo genera un error. Cuando `strict_duration` es False, el nodo devuelve la porción disponible del video cuando la duración solicitada supera la longitud restante; cuando es True, genera un error en su lugar.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
 | `video` | El segmento de video recortado. | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video Slice/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `5e3e3e69931a25183eb01b7b87ec12cbf9f5a748781993dcbeec7a6d5f7260c1`
+**Source fingerprint (SHA-256):** `439b76528742c1fbe230eee9502e945847ae99a58a9bd81a7a7dc3b20e15d450`

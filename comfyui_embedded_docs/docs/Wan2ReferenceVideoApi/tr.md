@@ -1,45 +1,43 @@
 # Wan 2.7 Referanstan Videoya
 
-Bu düğüm, sağlanan referans materyallerine dayalı olarak bir kişiyi veya nesneyi içeren bir video üretir. Metin isteminden videolar oluşturmak için Wan 2.7 modelini kullanır; tek karakterli performansları ve çok karakterli etkileşimleri destekler. Üretimin çalışması için en az bir referans video veya referans görsel sağlamanız gerekir.
-
 ## Girdiler
 
-### Genel Girdiler
+### Ortak Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Video üretimi için kullanılacak belirli model. | DYNAMIC_COMBO | Evet | "wan2.7-r2v" |
-| `seed` | Üretim için kullanılan ve çıktının rastgeleliğini kontrol etmeye yardımcı olan tohum (varsayılan: 0). | INT | Evet | 0 ile 2147483647 arası |
-| `watermark` | Sonuca yapay zeka tarafından üretilmiş bir filigran eklenip eklenmeyeceği (varsayılan: False). Bu gelişmiş bir ayardır. | BOOLEAN | Evet | True<br>False |
+| `model` | Video oluşturma için kullanılacak belirli model. | DYNAMIC_COMBO | Evet | "wan2.7-r2v" |
+| `seed` | Oluşturma için kullanılacak tohum (seed); çıktının rastgeleliğini kontrol etmeye yardımcı olur (varsayılan: 0). | INT | Evet | 0 ile 2147483647 |
+| `watermark` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). Bu gelişmiş bir ayardır. | BOOLEAN | Evet | True<br>False |
 
 ### wan2.7-r2v Girdileri
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `istek` | Videoyu tanımlayan istem. Referans karakterlere atıfta bulunmak için 'character1' ve 'character2' gibi tanımlayıcılar kullanın. En az bir karakter içermelidir. | STRING | Evet | - |
-| `negatif_istek` | Kaçınılması gerekenleri tanımlayan negatif istem (varsayılan: boş). | STRING | Hayır | - |
-| `çözünürlük` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | "720P"<br>"1080P" |
-| `oran` | Çıktı videosunun en-boy oranı. | COMBO | Evet | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
-| `süre` | Üretilen videonun saniye cinsinden uzunluğu (varsayılan: 5). | INT | Evet | 2 ile 10 arası |
+| `prompt` | Videoyu tanımlayan istem. Referans karakterlere atıfta bulunmak için 'character1' ve 'character2' gibi tanımlayıcılar kullanın. En az bir karakter içermelidir. | STRING | Evet | - |
+| `negative_prompt` | Kaçınılması gerekenleri tanımlayan negatif istem (varsayılan: boş). | STRING | Hayır | - |
+| `resolution` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | "720P"<br>"1080P" |
+| `ratio` | Çıktı videosunun en-boy oranı. | COMBO | Evet | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+| `duration` | Oluşturulan videonun saniye cinsinden uzunluğu (varsayılan: 5). | INT | Evet | 2 ile 10 |
 
 ### Referans Girdileri
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `reference_videos` | Genişletilebilir yuva: en fazla 3 referans videosu bağlayın (`video1` ile `video3` arasındaki yuvalar). Genel olarak en az bir referans videosu veya görseli gereklidir. | VIDEO | Hayır | 0 ile 3 öğe arası |
-| `reference_images` | Genişletilebilir yuva: en fazla 5 referans görseli bağlayın (`image1` ile `image5` arasındaki yuvalar). Genel olarak en az bir referans videosu veya görseli gereklidir. | IMAGE | Hayır | 0 ile 5 öğe arası |
+| `reference_videos` | Genişletilebilir yuva: 3 adede kadar referans videosu bağlayın (`video1` ile `video3` arasındaki yuvalar). Genel olarak en az bir referans videosu veya görseli gereklidir. | VIDEO | Hayır | 0 ile 3 öğe |
+| `reference_images` | Genişletilebilir yuva: 5 adede kadar referans görseli bağlayın (`image1` ile `image5` arasındaki yuvalar). Genel olarak en az bir referans videosu veya görseli gereklidir. | IMAGE | Hayır | 0 ile 5 öğe |
 
 **Önemli Kısıtlamalar:**
 
-* `model.reference_videos` veya `model.reference_images` girdilerinde en az bir referans videosu veya referans görseli sağlamalısınız.
+* `reference_videos` veya `reference_images` girdilerinde en az bir referans videosu veya referans görseli sağlamalısınız.
 * Referans videoları ve referans görsellerinin toplam birleşik sayısı 5'i aşamaz.
-* `model.prompt` girdisi en az bir karakter içermelidir.
+* `prompt` girdisi en az bir karakter içermelidir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | Üretilen video dosyası. | VIDEO |
+| `output` | Oluşturulan video dosyası. | VIDEO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Wan2ReferenceVideoApi/tr.md)
 

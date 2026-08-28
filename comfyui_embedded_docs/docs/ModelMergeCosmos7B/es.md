@@ -1,17 +1,17 @@
 # ModelMergeCosmos7B
 
-El nodo ModelMergeCosmos7B fusiona dos modelos de IA utilizando una combinación ponderada de componentes específicos. Permite un control detallado sobre cómo se combinan las diferentes partes de los modelos ajustando pesos individuales para las incrustaciones de posición, los bloques del transformador y las capas finales.
+El nodo ModelMergeCosmos7B fusiona dos modelos de IA mediante una combinación ponderada de componentes específicos. Permite un control detallado sobre cómo se combinan diferentes partes de los modelos ajustando pesos individuales para los embeddings de posición, los bloques del transformador y las capas finales.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `model1` | Primer modelo a fusionar | MODEL | Sí | - |
 | `model2` | Segundo modelo a fusionar | MODEL | Sí | - |
-| `pos_embedder.` | Peso para el componente de incrustación de posición (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `extra_pos_embedder.` | Peso para el componente de incrustación de posición adicional (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `x_embedder.` | Peso para el componente de incrustación x (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `t_embedder.` | Peso para el componente de incrustación t (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `pos_embedder.` | Peso para el componente de embedding de posición (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `extra_pos_embedder.` | Peso para el componente de embedding de posición adicional (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `x_embedder.` | Peso para el componente de embedding de x (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `t_embedder.` | Peso para el componente de embedding de t (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `affline_norm.` | Peso para el componente de normalización afín (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `blocks.block0.` | Peso para el bloque 0 del transformador (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `blocks.block1.` | Peso para el bloque 1 del transformador (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
@@ -43,13 +43,15 @@ El nodo ModelMergeCosmos7B fusiona dos modelos de IA utilizando una combinación
 | `blocks.block27.` | Peso para el bloque 27 del transformador (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `final_layer.` | Peso para el componente de capa final (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 
+Todos los parámetros de peso aceptan valores de 0.0 a 1.0 en pasos de 0.01 y tienen un valor predeterminado de 1.0.
+
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
 | `model` | El modelo fusionado que combina características de ambos modelos de entrada | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmos7B/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `0721b047933179706c76f622efb5b7425aad530d302d8b33ec12dd68513dec0b`
+**Source fingerprint (SHA-256):** `2cc4dcaa3576c5383c630e233cef55dedc8d742c20197cc83f5832dc9e887dac`

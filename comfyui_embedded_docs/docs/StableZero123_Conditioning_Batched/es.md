@@ -1,33 +1,33 @@
 # StableZero123_Conditioning_Batched
 
-El nodo `StableZero123_Conditioning_Batched` procesa una imagen de entrada y genera datos de condicionamiento para la generación de modelos 3D. Codifica la imagen utilizando modelos CLIP vision y VAE, luego crea incrustaciones de cámara basadas en ángulos de elevación y azimut para producir condicionamiento positivo y negativo, junto con representaciones latentes para procesamiento por lotes.
+El nodo StableZero123_Conditioning_Batched prepara datos de condicionamiento para generar un modelo 3D a partir de una única imagen de entrada. Codifica la imagen con un modelo de visión CLIP y un VAE, combina las características visuales con las incrustaciones de cámara construidas a partir de los ángulos de elevación y azimut, y produce condicionamiento positivo y negativo además de un tensor latente para un lote de muestras. Cuando `batch_size` es mayor que 1, los ángulos de elevación y azimut se incrementan según sus valores de incremento de lote para cada elemento del lote.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|-----------|----------|-------|
 | `clip_vision` | El modelo de visión CLIP utilizado para codificar la imagen de entrada | CLIP_VISION | Sí | - |
-| `imagen_inicial` | La imagen de entrada inicial a procesar y codificar | IMAGE | Sí | - |
-| `vae` | El modelo VAE utilizado para codificar píxeles de imagen en espacio latente | VAE | Sí | - |
-| `ancho` | El ancho de salida para la imagen procesada (predeterminado: 256, debe ser divisible por 8) | INT | No | 16 a MAX_RESOLUTION |
-| `altura` | La altura de salida para la imagen procesada (predeterminado: 256, debe ser divisible por 8) | INT | No | 16 a MAX_RESOLUTION |
-| `tamaño_del_lote` | El número de muestras de condicionamiento a generar en el lote (predeterminado: 1) | INT | No | 1 a 4096 |
-| `elevación` | El ángulo inicial de elevación de la cámara en grados (predeterminado: 0.0) | FLOAT | No | -180.0 a 180.0 |
-| `acimut` | El ángulo inicial de azimut de la cámara en grados (predeterminado: 0.0) | FLOAT | No | -180.0 a 180.0 |
-| `incremento_de_lote_de_elevación` | El incremento de elevación para cada elemento del lote (predeterminado: 0.0) | FLOAT | No | -180.0 a 180.0 |
-| `incremento_de_lote_de_acimut` | El incremento de azimut para cada elemento del lote (predeterminado: 0.0) | FLOAT | No | -180.0 a 180.0 |
+| `imagen_inicial` | La imagen de entrada inicial que se procesará y codificará | IMAGE | Sí | - |
+| `vae` | El modelo VAE utilizado para codificar los píxeles de la imagen en el espacio latente | VAE | Sí | - |
+| `ancho` | El ancho de salida para la imagen procesada (predeterminado: 256) | INT | Sí | 16 a MAX_RESOLUTION (paso de 8) |
+| `altura` | La altura de salida para la imagen procesada (predeterminado: 256) | INT | Sí | 16 a MAX_RESOLUTION (paso de 8) |
+| `tamaño_del_lote` | El número de muestras de condicionamiento a generar en el lote (predeterminado: 1) | INT | Sí | 1 a 4096 |
+| `elevación` | El ángulo de elevación inicial de la cámara en grados (predeterminado: 0.0) | FLOAT | Sí | -180.0 a 180.0 |
+| `acimut` | El ángulo de azimut inicial de la cámara en grados (predeterminado: 0.0) | FLOAT | Sí | -180.0 a 180.0 |
+| `incremento_de_lote_de_elevación` | La cantidad en la que se incrementa la elevación para cada elemento del lote (predeterminado: 0.0) | FLOAT | Sí | -180.0 a 180.0 |
+| `incremento_de_lote_de_acimut` | La cantidad en la que se incrementa el azimut para cada elemento del lote (predeterminado: 0.0) | FLOAT | Sí | -180.0 a 180.0 |
 
-**Nota:** Los parámetros `width` y `height` deben ser divisibles por 8, ya que el nodo divide internamente estas dimensiones entre 8 para la generación del espacio latente.
+**Nota:** Los valores de `width` y `height` deben ser múltiplos de 8, ya que el nodo divide estas dimensiones entre 8 internamente al construir el tensor latente.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-| --- | --- | --- |
-| `positivo` | Los datos de condicionamiento positivo que contienen incrustaciones de imagen y parámetros de cámara | CONDITIONING |
-| `negativo` | Los datos de condicionamiento negativo con incrustaciones inicializadas en cero | CONDITIONING |
-| `latente` | La representación latente de la imagen procesada con información de indexación por lotes | LATENT |
+| Nombre de salida | Descripción | Tipo de datos |
+|-------------|-------------|-----------|
+| `positivo` | Los datos de condicionamiento positivo que contienen las incrustaciones de imagen y las incrustaciones de cámara para cada elemento del lote | CONDITIONING |
+| `negativo` | Los datos de condicionamiento negativo con incrustaciones inicializadas a cero | CONDITIONING |
+| `latente` | Un tensor latente inicializado a cero con dimensiones batch_size x 4 x height/8 x width/8, junto con la información de indexación del lote | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableZero123_Conditioning_Batched/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `2b770f7a168a0d3e33da8bfa63383080709fa5d53846dbf6a4374bd1ef1746aa`
+**Source fingerprint (SHA-256):** `94fc53dace8f294a746c47f8aa0da145f3e7beeb77a95912a38f0037ac094292`

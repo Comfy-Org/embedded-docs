@@ -1,6 +1,6 @@
 # Kling Omni Imagem para Vídeo (Pro)
 
-Este nó usa o modelo Kling AI para gerar um vídeo com base em um prompt de texto e até sete imagens de referência. Ele permite controlar a proporção de aspecto, a duração e a resolução do vídeo e, opcionalmente, usar storyboards ou gerar áudio. O nó envia a solicitação para uma API externa e retorna o vídeo gerado.
+Este nó usa o modelo Kling AI para gerar um vídeo com base em um prompt de texto e até sete imagens de referência. Ele permite controlar a proporção de aspecto, a duração e a resolução do vídeo e, opcionalmente, usar storyboards ou gerar áudio. O nó envia a requisição para uma API externa e retorna o vídeo gerado.
 
 ## Entradas
 
@@ -8,26 +8,26 @@ Este nó usa o modelo Kling AI para gerar um vídeo com base em um prompt de tex
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model_name` | O modelo Kling específico a ser usado para geração de vídeo (padrão: "kling-v3-omni"). | COMBO | Sim | `"kling-v3-omni"`<br>`"kling-video-o1"` |
-| `prompt` | Um prompt de texto descrevendo o conteúdo do vídeo. Pode incluir descrições positivas e negativas. Marcadores como `@image` ou `@video` (opcionalmente numerados) são convertidos automaticamente para o formato compatível com a API. Deve ter entre 1 e 2500 caracteres (pode ficar vazio quando storyboards estão habilitados). Ignorado quando storyboards estão habilitados. | STRING | Sim | - |
+| `model_name` | O modelo Kling específico a ser usado para geração de vídeo (padrão: `"kling-v3-omni"`). | COMBO | Sim | `"kling-v3-omni"`<br>`"kling-video-o1"` |
+| `prompt` | Um prompt de texto descrevendo o conteúdo do vídeo. Isso pode incluir descrições positivas e negativas. Ignorado quando storyboards estão habilitados. Placeholders como `@image` ou `@video` (opcionalmente numerados) são convertidos automaticamente para o formato compatível com a API. Deve ter entre 1 e 2500 caracteres (pode estar vazio quando storyboards estão habilitados). | STRING | Sim | 1 a 2500 caracteres |
 | `aspect_ratio` | A proporção de aspecto desejada para o vídeo gerado. | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 | `duration` | A duração do vídeo em segundos, ajustada com um controle deslizante (padrão: 5). | INT | Sim | 3 a 15 |
 | `reference_images` | Até 7 imagens de referência. Cada imagem deve ter pelo menos 300x300 pixels e uma proporção de aspecto entre 1:2.5 e 2.5:1. | IMAGE | Sim | 1 a 7 imagens |
-| `resolution` | A resolução de saída do vídeo (padrão: "1080p"). | COMBO | Não | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | Gera uma série de segmentos de vídeo com prompts e durações individuais. Suportado apenas para `kling-v3-omni`. Quando habilitado, o `prompt` global é ignorado, e a duração total de todos os segmentos de storyboard deve ser igual à duração global (padrão: "disabled"). | DYNAMIC_COMBO | Não | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `resolution` | A resolução de saída do vídeo (padrão: `"1080p"`). | COMBO | Não | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `storyboards` | Gera uma série de segmentos de vídeo com prompts e durações individuais. Suportado apenas para `kling-v3-omni`. Quando habilitado, o `prompt` global é ignorado, e a duração total de todos os segmentos de storyboard deve ser igual à `duration` global (padrão: `"disabled"`). | DYNAMIC_COMBO | Não | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
 | `gerar_áudio` | Gera áudio para o vídeo. Suportado apenas para `kling-v3-omni` (padrão: false). | BOOLEAN | Não | `true`<br>`false` |
-| `semente` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed (padrão: 0). | INT | Não | 0 a 2147483647 |
+| `semente` | O seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente do seed (padrão: 0). | INT | Não | 0 a 2147483647 |
 
-### Entradas de Storyboard
+### Entradas de storyboard
 
 Quando `storyboards` está habilitado, as seguintes entradas aparecem para cada segmento de storyboard selecionado. N varia de 1 até o número selecionado de storyboards.
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `storyboard_N_prompt` | Prompt para o segmento de storyboard N. Máximo de 512 caracteres. | STRING | Sim | 1 a 512 caracteres |
-| `storyboard_N_duration` | Duração para o segmento de storyboard N em segundos (padrão: 4). | INT | Sim | 1 a 15 |
+| `storyboard_N_prompt` | Prompt para o segmento N do storyboard. Máximo de 512 caracteres. | STRING | Sim | 1 a 512 caracteres |
+| `storyboard_N_duration` | Duração do segmento N do storyboard em segundos (padrão: 4). | INT | Sim | 1 a 15 |
 
-**Nota:** A entrada `reference_images` aceita um máximo de 7 imagens. Se mais forem fornecidas, o nó gera um erro. Cada imagem é validada quanto às dimensões mínimas e à proporção de aspecto.
+**Observação:** A entrada `reference_images` aceita no máximo 7 imagens. Se mais forem fornecidas, o nó gera um erro. Cada imagem é validada quanto às dimensões mínimas e à proporção de aspecto.
 
 **Restrições específicas do modelo:**
 - `kling-video-o1` não suporta durações maiores que 10 segundos.

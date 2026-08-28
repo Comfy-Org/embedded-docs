@@ -1,20 +1,20 @@
 # LotusKoşullandırma
 
-LotusConditioning düğümü, Lotus modeli için önceden hesaplanmış koşullandırma gömmeleri (conditioning embeddings) sağlar. Donmuş bir kodlayıcı (frozen encoder) kullanarak boş koşullandırma (null conditioning) ile çalışır ve referans uygulamayla eşdeğerlik sağlamak için, çıkarım (inference) yapmaya veya büyük tensör dosyaları yüklemeye gerek kalmadan sabit kodlanmış (hardcoded) prompt gömmeleri döndürür. Bu düğüm, doğrudan üretim hattında (generation pipeline) kullanılabilecek sabit bir koşullandırma tensörü çıktısı verir.
+LotusConditioning düğümü, Lotus modeli için önceden hesaplanmış koşullandırma (conditioning) embedding'leri sağlar. Referans uygulamayla eşitliği sağlamak için dondurulmuş bir kodlayıcıyı null koşullandırma ile kullanır ve çıkarım yapmaya veya büyük tensör dosyaları yüklemeye gerek kalmadan sabit kodlanmış prompt embedding'leri döndürür. Bu düğüm, üretim hattında doğrudan kullanılabilen sabit bir koşullandırma tensörü çıkarır.
 
-## Girişler
+## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| *Giriş yok* | Bu düğüm herhangi bir giriş parametresi kabul etmez. | - | - | - |
+| *Girdi yok* | Bu düğüm herhangi bir girdi parametresi kabul etmez. | - | - | - |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `conditioning` | Lotus modeli için önceden hesaplanmış koşullandırma gömmeleri; sabit prompt gömmeleri ve boş bir sözlük içerir. | CONDITIONING |
+| `koşullandırma` | Lotus modeli için önceden hesaplanmış koşullandırma embedding'leri; sabit prompt embedding'leri ve boş bir sözlük içerir. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LotusConditioning/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `aa428f8c355e2840dadbf634fe27d20c7c323dbe8c21255b40f4dafa12e4a0d0`
+**Source fingerprint (SHA-256):** `1fcb6530850341253c8acb47b2f26ee79d93f51eca84bef03a1fa5de33d6bc8d`

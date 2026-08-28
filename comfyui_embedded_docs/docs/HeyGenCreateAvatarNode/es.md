@@ -1,33 +1,46 @@
 # Crear Avatar HeyGen
 
-Crea un avatar reutilizable de HeyGen a partir de una foto de una persona o de una instrucción de texto que describa un personaje para generar. El ID del avatar resultante se puede usar con el nodo HeyGen Avatar Video para crear videos con este avatar. Guarde el ID para reutilizar el avatar en flujos de trabajo futuros.
+Crea un avatar HeyGen reutilizable a partir de una foto de una persona o de un prompt de texto que describa un personaje para generar. El `avatar_id` resultante puede usarse con el nodo HeyGen Avatar Video y debe guardarse para reutilizar el avatar en futuros flujos de trabajo.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
-| `fuente` | Genera un nuevo personaje a partir de una instrucción de texto, o crea el avatar desde una foto conectada de una persona. | COMBO | Sí | `"prompt"`<br>`"photo"` |
+### Entradas comunes
 
-Cuando `source` está configurado en `"prompt"`, los siguientes parámetros adicionales están disponibles:
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `fuente` | Genera un nuevo personaje a partir de un prompt de texto, o crea el avatar a partir de una foto de una persona conectada. | DYNAMIC_COMBO | Sí | `"prompt"`<br>`"photo"` |
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
-| `prompt` | Descripción del avatar a generar (hasta 1000 caracteres). Debe contener al menos 1 carácter que no sea espacio en blanco. Predeterminado: cadena vacía. | STRING | Sí | 1 a 1000 caracteres |
-| `reference_images` | Hasta 3 imágenes de referencia que guían la apariencia generada. Se reducen automáticamente si superan 2K. | IMAGE | No | 0 a 3 imágenes |
+### Entradas de prompt
 
-Cuando `source` está configurado en `"photo"`, el siguiente parámetro adicional está disponible:
+Disponible cuando `source` está configurado como `"prompt"`.
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
-| `identity_photo` | Foto de la persona para convertir en avatar. Se reduce automáticamente si es mayor a 2K. | IMAGE | Sí | Imagen única |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `prompt` | Descripción del avatar a generar (hasta 1000 caracteres). Debe contener al menos 1 carácter que no sea un espacio. Valor predeterminado: cadena vacía. | STRING | Sí | 1 a 1000 caracteres |
 
-**Nota:** El parámetro `source` cambia entre dos modos. En el modo `"prompt"`, proporcionas una descripción de texto y opcionalmente hasta 3 imágenes de referencia. En el modo `"photo"`, proporcionas una sola foto de una persona. Estos modos son mutuamente excluyentes.
+### Entradas de foto
+
+Disponible cuando `source` está configurado como `"photo"`.
+
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `identity_photo` | Foto de la persona que se convertirá en avatar. Se reduce automáticamente si es mayor de 2K. | IMAGE | Sí | Imagen única |
+
+### Entradas de referencia
+
+Disponible cuando `source` está configurado como `"prompt"`.
+
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `reference_images` | Ranura ampliable: conecta hasta 3 imágenes (`ref_image_1`...`ref_image_3`) que guían la apariencia generada. Las imágenes se reducen automáticamente si son mayores de 2K. | IMAGE | No | 0 a 3 imágenes |
+
+**Nota:** El parámetro `source` cambia entre dos modos mutuamente excluyentes. En el modo `"prompt"`, `prompt` es obligatorio y se pueden conectar opcionalmente hasta 3 imágenes de referencia. En el modo `"photo"`, `identity_photo` es obligatorio. Las fotos y las imágenes de referencia se reducen automáticamente cuando son mayores de 2K; no se aceptan más de 3 imágenes de referencia.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-|-------------|-------------|-----------|
-| `avatar_id` | ID de apariencia del avatar. Pásalo al `custom_avatar_id` de Video de Avatar de HeyGen; guárdalo para reutilizar el avatar más tarde. | STRING |
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `avatar_id` | ID de apariencia del avatar. Pásalo al `custom_avatar_id` de HeyGen Avatar Video; consérvalo para reutilizar el avatar en futuros flujos de trabajo. | STRING |
 | `vista previa` | Imagen de vista previa del avatar generado. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenCreateAvatarNode/es.md)

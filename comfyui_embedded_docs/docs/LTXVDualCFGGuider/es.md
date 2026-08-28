@@ -1,24 +1,24 @@
-# LTXVDualCFGGuider
+# LTXV Dual CFG Guider
 
-Este nodo crea un objeto de muestreo guiado (guía CFG) para los modelos LTXV-AV. Aplica una escala de guía independiente a la parte de video y a la parte de audio del latent empaquetado, lo que permite controlar la influencia del condicionamiento en cada modalidad de forma independiente. Si las dos escalas son iguales, o si el latent no contiene componentes separados de video y audio, se utiliza una única escala general.
+Este nodo crea un objeto de muestreo guiado (guía CFG) para los modelos LTXV-AV. Aplica una escala de guía separada a la parte de video y a la parte de audio del latent empaquetado, lo que permite controlar la influencia del condicionamiento en cada modalidad de forma independiente. Si las dos escalas son iguales, o si el latent no contiene componentes de video y audio separados, se utiliza una única escala general.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | ¿Requerido? | Rango |
-|-----------|-------------|---------------|-------------|-------|
-| `model` | El modelo que se usará al muestrear. | MODEL | Sí | - |
-| `positive` | Condicionamiento positivo para guiar la generación hacia lo deseado. | CONDITIONING | Sí | - |
-| `negative` | Condicionamiento negativo para alejar la generación de lo no deseado. | CONDITIONING | Sí | - |
-| `video_cfg` | Intensidad de guía aplicada a la modalidad de video del latent (predeterminado: 3.0). | FLOAT | Sí | 0.0 a 100.0 |
-| `audio_cfg` | Intensidad de guía aplicada a la modalidad de audio del latent (predeterminado: 7.0). | FLOAT | Sí | 0.0 a 100.0 |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `modelo` | El modelo que se usará al muestrear. | MODEL | Sí | - |
+| `positivo` | Condicionamiento positivo para guiar la generación. | CONDITIONING | Sí | - |
+| `negativo` | Condicionamiento negativo para alejar la generación. | CONDITIONING | Sí | - |
+| `video_cfg` | Intensidad de guía aplicada a la modalidad de video del latent (por defecto: 3.0). | FLOAT | Sí | 0.0 a 100.0 |
+| `audio_cfg` | Intensidad de guía aplicada a la modalidad de audio del latent (por defecto: 7.0). | FLOAT | Sí | 0.0 a 100.0 |
 
-Nota: Cuando `video_cfg` y `audio_cfg` tienen el mismo valor, la guía utiliza ese valor como una única escala CFG para todo el latent. Si el latent no es un latent LTXV-AV empaquetado, solo se utiliza el valor de `video_cfg`.
+Nota: Cuando `video_cfg` y `audio_cfg` son iguales o muy cercanos en valor, la guía utiliza ese valor como una única escala CFG para todo el latent. Si el latent no es un latent LTXV-AV empaquetado, solo se utiliza el valor de `video_cfg`.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `guider` | La guía CFG configurada que se pasará a un nodo de muestreo. | GUIDER |
+| `guider` | La guía CFG configurada para pasarse a un nodo de muestreo. | GUIDER |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVDualCFGGuider/es.md)
 

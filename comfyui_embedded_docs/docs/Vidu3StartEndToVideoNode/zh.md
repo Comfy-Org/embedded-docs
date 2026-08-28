@@ -8,11 +8,11 @@
 
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用于视频生成的模型。选择一个选项会显示 `resolution`、`duration` 和 `audio` 的附加配置参数。 | DYNAMIC_COMBO | 是 | `"viduq3-pro"`<br>`"viduq3-turbo"` |
-| `first_frame` | 视频序列的起始图像。 | IMAGE | 是 | - |
-| `end_frame` | 视频序列的结束图像。 | IMAGE | 是 | - |
-| `prompt` | 提示描述（最多 2000 个字符）。 | STRING | 是 | - |
-| `seed` | 用于控制生成随机性的种子值（默认：1）。 | INT | 是 | 0 到 2147483647 |
+| `模型` | 用于视频生成的模型。选择一个选项会显示 `resolution`、`duration` 和 `audio` 的附加配置参数。 | DYNAMIC_COMBO | 是 | `"viduq3-pro"`<br>`"viduq3-turbo"` |
+| `起始帧` | 视频序列的起始图像。 | IMAGE | 是 | - |
+| `结束帧` | 视频序列的结束图像。 | IMAGE | 是 | - |
+| `提示词` | 提示描述（最多 2000 个字符）。 | STRING | 是 | - |
+| `种子` | 用于控制生成随机性的种子值（默认：1）。 | INT | 是 | 0 到 2147483647 |
 
 ### viduq3-pro 和 viduq3-turbo 输入
 
