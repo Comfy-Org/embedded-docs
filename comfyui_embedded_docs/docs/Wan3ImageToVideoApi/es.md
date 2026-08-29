@@ -1,0 +1,41 @@
+# Imagen a vídeo de Wan 3.0
+
+Este nodo genera un video a partir de una imagen del primer fotograma utilizando el modelo Wan 3.0. Opcionalmente, puede proporcionar una imagen del último fotograma para controlar cómo termina el video; el modelo crea entonces un video que transita del primer fotograma al último.
+
+## Entradas
+
+### Entradas comunes
+
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `model` | Selecciona la variante del modelo Wan 3.0 que se utilizará y determina qué ajustes específicos del modelo se muestran a continuación. | DYNAMIC_COMBO | Sí | "wan3.0-video"<br>"wan3.0-video-prime" |
+| `first_frame` | Imagen del primer fotograma. Se requiere exactamente una imagen. | IMAGE | Sí | Una sola imagen |
+| `last_frame` | Imagen del último fotograma. El modelo genera un video que transita del primer al último fotograma. Opcional; si se proporciona, se requiere exactamente una imagen. | IMAGE | No | Una sola imagen |
+| `seed` | Semilla a utilizar para la generación (por defecto: 42). | INT | Sí | 0 - 2147483647 |
+| `watermark` | Indica si se añade una marca de agua generada por IA al resultado (por defecto: false). | BOOLEAN | Sí | true<br>false |
+
+### Entradas de wan3.0-video y wan3.0-video-prime
+
+Estos ajustes específicos del modelo son comunes a ambas opciones de modelo y aparecen cuando se selecciona un modelo.
+
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `prompt` | Prompt que describe los elementos y las características visuales. Admite inglés y chino. Puede dejarse vacío (por defecto: vacío). | STRING | Sí | Hasta 20000 caracteres |
+| `resolution` | Resolución del video de salida. | COMBO | Sí | "1080P"<br>"720P"<br>"480P" |
+| `ratio` | Relación de aspecto del video de salida. Con "adaptive", las dimensiones de salida se derivan del primer fotograma. | COMBO | Sí | "adaptive"<br>"16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+| `duration` | Duración de salida en segundos. Con "auto", el modelo elige una duración que se ajuste al prompt. | COMBO | Sí | "auto"<br>"2" - "30" |
+| `audio` | Indica si el video de salida contiene una pista de audio (por defecto: true). | BOOLEAN | Sí | true<br>false |
+| `prompt_extend` | Indica si se mejora el prompt con asistencia de IA (por defecto: true). | BOOLEAN | Sí | true<br>false |
+
+Nota: El nodo acepta exactamente una imagen `first_frame` y opcionalmente una imagen `last_frame`. Si se conecta más de una imagen a cualquiera de las entradas, se genera un error. Cuando se proporciona `last_frame`, el video generado transita del primer fotograma al último. El `prompt` está limitado a 20 000 caracteres.
+
+## Salidas
+
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `video` | El video generado. Contiene una pista de audio cuando la opción `audio` está habilitada. | VIDEO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Wan3ImageToVideoApi/es.md)
+
+---
+**Source fingerprint (SHA-256):** `ff9fce554fa7aa5fc8729b5f84b2f8bf89e8e7772ce1c32b1307d0dc4882200c`
