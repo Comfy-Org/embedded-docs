@@ -1,4 +1,4 @@
-# PixVerse Image to Video Node
+# PixVerse Image to Video
 
 Generates videos based on an input image and text prompt. This node takes an image and creates an animated video by applying the specified motion and quality settings to transform the static image into a moving sequence.
 
@@ -26,4 +26,4 @@ Generates videos based on an input image and text prompt. This node takes an ima
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PixverseImageToVideoNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `e95db00401aaa81959a93b2111b6395e3ff34baf55857dc3453a174328012a82`
+**Source fingerprint (SHA-256):** `93ea662a27159f55bf12e49ea230f0005813614ad07f5189d1fd61e7b937fd4b`

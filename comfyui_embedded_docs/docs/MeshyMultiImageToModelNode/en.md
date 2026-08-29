@@ -8,27 +8,28 @@ This node uses the Meshy API to generate a 3D model from multiple input images. 
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `model` | Specifies the AI model version to use. | COMBO | Yes | `"latest"` |
-| `should_remesh` | Determines if the generated mesh should be processed. When set to `"false"`, the node returns an unprocessed triangular mesh. When set to `"true"`, the remesh settings below are shown. | DYNAMIC_COMBO | Yes | `"true"`<br>`"false"` |
+| `model` | Specifies the AI model version to use. | COMBO | Yes | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `should_remesh` | Determines whether the generated mesh is processed. When set to `"false"`, the node returns an unprocessed triangular mesh. When set to `"true"`, the remesh settings below are shown. | DYNAMIC_COMBO | Yes | `"true"`<br>`"false"` |
 | `symmetry_mode` | Controls whether symmetry is applied to the generated model. | COMBO | Yes | `"auto"`<br>`"on"`<br>`"off"` |
 | `should_texture` | Determines whether textures are generated. Setting it to `"false"` skips the texture phase and returns a mesh without textures. When set to `"true"`, the texture settings below are shown. | DYNAMIC_COMBO | Yes | `"true"`<br>`"false"` |
 | `pose_mode` | Specify the pose mode for the generated model. | COMBO | Yes | `""` (empty)<br>`"A-pose"`<br>`"T-pose"` |
 | `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed. (default: 0) | INT | Yes | 0 to 2147483647 |
 
-### Remesh Settings (visible when `should_remesh` is set to `"true"`)
+### Remesh Settings (visible when `should_remesh` is `"true"`)
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `topology` | The target polygon type for the remeshed output. | COMBO | No | `"triangle"`<br>`"quad"` |
 | `target_polycount` | The target number of polygons for the remeshed model (default: 300000). | INT | No | 100 to 300000 |
 
-### Texture Settings (visible when `should_texture` is set to `"true"`)
+### Texture Settings (visible when `should_texture` is `"true"`)
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `enable_pbr` | Generate PBR Maps (metallic, roughness, normal) in addition to the base color. (default: False) | BOOLEAN | No | True / False |
-| `texture_prompt` | Provide a text prompt to guide the texturing process. Maximum 600 characters. Cannot be used at the same time as `texture_image`. (default: empty) | STRING | No | - |
+| `texture_prompt` | Provide a text prompt to guide the texturing process. Maximum 600 characters. Cannot be used at the same time as `texture_image`. (default: empty) | STRING | No | Up to 600 characters |
 | `texture_image` | Only one of `texture_image` or `texture_prompt` may be used at the same time. | IMAGE | No | - |
+| `texture_resolution` | Base color texture resolution. Higher resolutions capture more surface detail. | COMBO | No | `"2k"`<br>`"4k"`<br>`"8k"` |
 
 ### Image Inputs
 
@@ -40,7 +41,7 @@ This node uses the Meshy API to generate a 3D model from multiple input images. 
 
 * You must provide between 2 and 4 images for the `images` input.
 * The `topology` and `target_polycount` parameters are only active when `should_remesh` is set to `"true"`.
-* The `enable_pbr`, `texture_prompt`, and `texture_image` parameters are only active when `should_texture` is set to `"true"`.
+* The `enable_pbr`, `texture_prompt`, `texture_image`, and `texture_resolution` parameters are only active when `should_texture` is set to `"true"`.
 * `texture_prompt` and `texture_image` are mutually exclusive; you cannot use both at the same time. `texture_prompt` is limited to 600 characters.
 * The `seed` value does not make results deterministic; changing it simply causes the node to re-run the generation task.
 
@@ -56,4 +57,4 @@ This node uses the Meshy API to generate a 3D model from multiple input images. 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyMultiImageToModelNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `c2282cad611bbbc8c0a618df6a68fcd9f6e3c29c6d08b2c96a117c29765d8a7a`
+**Source fingerprint (SHA-256):** `a8b2fc23ef8a8a4af097489c15beb3e0ed205dfdc8309afc95207d7a5616d37a`

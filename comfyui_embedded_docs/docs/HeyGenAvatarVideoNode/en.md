@@ -9,11 +9,11 @@ Generate a talking-presenter video from a HeyGen avatar. This node creates a vid
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `engine` | Rendering engine; each choice lists only the avatars that support it. "auto" offers every avatar and picks its best engine (Avatar IV preferred). Avatar V is highest fidelity, Avatar III is the most affordable. | DYNAMIC_COMBO | Yes | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
-| `custom_avatar_id` | Optional HeyGen avatar look ID. When set, overrides the avatar selected above. Any of HeyGen's 3000+ public looks (or your private avatars) can be used. Default: empty string. | STRING | No |  |
-| `speech` | Drive the avatar with a text script (HeyGen text-to-speech) or your own audio. | DYNAMIC_COMBO | Yes | `"script"`<br>`"audio"` |
+| `custom_avatar_id` | Optional HeyGen avatar look ID. When set, overrides the avatar selected above. Any of HeyGen's 3000+ public looks (or your private avatars) can be used. Default: `""`. | STRING | No |  |
+| `speech` | Drive the avatar with a text script (HeyGen text-to-speech) or your own audio. Display name: "speech source". | DYNAMIC_COMBO | Yes | `"script"`<br>`"audio"` |
 | `resolution` | Output video resolution. Default: `"1080p"`. | COMBO | No | `"720p"`<br>`"1080p"` |
 | `aspect_ratio` | Output aspect ratio. "auto" follows the avatar's source footage. Default: `"auto"`. | COMBO | No | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `background_color` | Optional solid background color as a hex code (e.g. `"#00ff00"`). Leave empty for the avatar's own background. If provided, the value must start with `#`. Default: empty string. | STRING | No |  |
+| `background_color` | Optional solid background color as a hex code (e.g. `"#00ff00"`). Leave empty for the avatar's own background. If provided, the value must start with `#`. Default: `""`. | STRING | No |  |
 | `seed` | Not sent to HeyGen; change it to force a re-run. Default: `42`. | INT | No | Min: 0<br>Max: 2147483647 |
 
 ### `auto` Inputs
@@ -54,9 +54,9 @@ When `speech` is `"script"`, the following sub-parameters are available:
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `text` | Text for the avatar to speak (up to 5000 characters). The generated speech must be at least 1 second long. Default: empty string. | STRING | Yes | Min: 1 character<br>Max: 5000 characters |
-| `voice` | Voice for the script. The default option uses the voice HeyGen assigned to the avatar. | COMBO | Yes | `"(avatar's default voice)"`<br>Multiple general voice options available |
-| `custom_voice_id` | Optional HeyGen voice ID. When set, overrides the voice selected above. Any voice from HeyGen's library (2000+) can be used. Default: empty string. | STRING | No |  |
+| `text` | Text for the avatar to speak (up to 5000 characters). The generated speech must be at least 1 second long. Default: `""`. | STRING | Yes | Min: 1 character<br>Max: 5000 characters |
+| `voice` | Voice for the script. The default option uses the voice HeyGen assigned to the avatar. Ignored if `custom_voice_id` is set. | COMBO | Yes | `"(avatar's default voice)"`<br>Multiple general voice options available |
+| `custom_voice_id` | Optional HeyGen voice ID. When set, overrides the voice selected above. Any voice from HeyGen's library (2000+) can be used. Default: `""`. | STRING | No |  |
 | `voice_speed` | Speech speed multiplier. Default: `1.0`. | FLOAT | No | Min: 0.5<br>Max: 1.5<br>Step: 0.05 |
 
 ### `audio` Inputs
@@ -67,7 +67,7 @@ When `speech` is `"audio"`, the following sub-parameter is available:
 |-----------|-------------|-----------|----------|-------|
 | `audio` | Audio for the avatar to lip-sync, up to 10 minutes. | AUDIO | Yes |  |
 
-Note: `speech` is a source selector with two mutually exclusive modes. In `"script"` mode, `text` is required (1 to 5000 characters); if `custom_voice_id` is provided, it overrides `voice`. In `"audio"` mode, the avatar lip-syncs to the provided audio clip. `background_color` must be a hex color code starting with `#` when provided. When `custom_avatar_id` is set, it overrides the `avatar` selection, and the selected `engine` must be supported by that avatar look; otherwise an error is raised (unless `engine` is `"auto"`).
+Note: `engine` and `speech` are selectors that reveal different sub-parameters depending on the chosen value. The `speech` selector has two mutually exclusive modes: in `"script"` mode, `text` is required; if `custom_voice_id` is provided, it overrides `voice`. In `"audio"` mode, the avatar lip-syncs to the provided audio clip. `background_color` must be a hex color code starting with `#` when provided. When `custom_avatar_id` is set, it overrides the `avatar` selection, and the selected `engine` must be supported by that avatar look; otherwise an error is raised unless `engine` is `"auto"`.
 
 ## Outputs
 
@@ -78,4 +78,4 @@ Note: `speech` is a source selector with two mutually exclusive modes. In `"scri
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenAvatarVideoNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `009bc72b841ca273af83fe6f80fb24d4b11c2efd96c011795b1ff1cf8e66ee61`
+**Source fingerprint (SHA-256):** `86dc799d3a8cf2666449b0d422853b12feffb81ce002f84594f9b925d58b522a`

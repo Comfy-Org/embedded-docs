@@ -15,10 +15,10 @@ The Get Video Components node extracts all the main elements from a video file. 
 | `images` | The individual frames extracted from the video as separate images. | IMAGE |
 | `audio` | The audio track extracted from the video. | AUDIO |
 | `fps` | The framerate of the video in frames per second. | FLOAT |
-| `bit_depth` | The bit depth of the video. | INT |
+| `bit_depth` | The bit depth of the video. | COMBO |
 | `color_space` | The color space of the video. | COMBO |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetVideoComponents/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `ffe8b6c698cb9a855b8796768f068d403448cf56188ce4c5ead21bff30baff6e`
+**Source fingerprint (SHA-256):** `b57dbf1120105885d17361f07ec96c078aac9ae9a84beb63319885df679e4f81`
