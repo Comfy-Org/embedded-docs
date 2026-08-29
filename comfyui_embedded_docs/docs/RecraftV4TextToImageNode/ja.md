@@ -1,6 +1,8 @@
 # Recraft V4 テキストから画像生成
 
-このノードは、Recraft V4 および V4.1 AI モデルを使用して、テキスト記述から画像を生成します。プロンプトを外部APIに送信し、生成された画像を返します。モデル、画像サイズ、生成する画像の数を指定することで、出力を制御できます。
+Recraft V4 Text to Image
+
+このノードは、Recraft V4 および V4.1 AI モデルを使用して、テキスト記述から画像を生成します。プロンプトを外部 API に送信し、生成された画像を返します。モデル、画像サイズ、画像枚数、およびオプションのスタイル（保存済みのスタイル ID または参照画像のいずれか）を指定して、出力を制御できます。
 
 ## 入力
 
@@ -8,38 +10,47 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 生成に使用するモデルです。 | DYNAMIC_COMBO | はい | `"recraftv4_1"`<br>`"recraftv4_1_utility"`<br>`"recraftv4_1_pro"`<br>`"recraftv4_1_utility_pro"`<br>`"recraftv4"`<br>`"recraftv4_pro"` |
-| `prompt` | 画像生成のためのプロンプトです。最大10,000文字です。 | STRING | はい | N/A |
-| `negative_prompt` | この入力は無視されます。ネガティブプロンプトは Recraft V4 および V4.1 モデルではサポートされていません。 | STRING | はい | N/A |
-| `n` | 生成する画像の数です（デフォルト: 1）。 | INT | はい | 1〜6 |
-| `seed` | ノードを再実行するかどうかを決定するためのシードです。実際の結果はシードに関係なく非決定的です（デフォルト: 0）。 | INT | はい | 0〜18446744073709551615 |
-| `recraft_controls` | Recraft Controls ノードを使用した、生成に関する任意の追加コントロールです。 | CUSTOM | いいえ | N/A |
+| `model` | 生成に使用するモデルです。recraftv4_styles モデルはスタイル一貫性のある生成用に設計されており、常に style_id または style_references が必要です。 | DYNAMIC_COMBO | 必須 | "recraftv4_1"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `prompt` | 画像生成のためのプロンプトです。最大 10,000 文字です。 | STRING | 必須 | 1〜10000 文字 |
+| `negative_prompt` | この入力は無視されます。ネガティブプロンプトは Recraft V4 および V4.1 モデルではサポートされていません。 | STRING | 必須 | N/A |
+| `n` | 生成する画像の枚数です（デフォルト: 1）。 | INT | 必須 | 1〜6 |
+| `seed` | ノードを再実行するかどうかを決定するシードです。実際の結果はシードに関係なく非決定的です（デフォルト: 0）。 | INT | 必須 | 0〜18446744073709551615 |
+| `recraft_controls` | Recraft Controls ノードを介した生成の追加制御（オプション）です。 | CUSTOM | 任意 | N/A |
+| `style_id` | 適用する Recraft V4 スタイルの UUID です。例: Recraft V4 Create Style ノード、または前回の実行の style_id 出力から取得します。style_references とは併用できません（デフォルト: 空）。 | STRING | 任意 | 有効な UUID 文字列 |
+| `style_match` | スタイルにどの程度厳密に従うかを指定します。precise はスタイルを詳細に再現し、flexible は全体的な雰囲気を一致させます。スタイルが指定された場合にのみ使用されます（デフォルト: "precise"）。 | COMBO | 任意 | "precise"<br>"flexible" |
 
-### recraftv4_1、recraftv4_1_utility、recraftv4 入力
+### recraftv4_1、recraftv4_1_utility、recraftv4、および recraftv4_styles 入力
 
-`recraftv4_1`、`recraftv4_1_utility`、`recraftv4` で共有されます。
-
-| パラメータ | 説明 | データ型 | 必須 | 範囲 |
-|-----------|-------------|-----------|----------|-------|
-| `size` | 生成される画像のサイズです（デフォルト: "1024x1024"）。 | COMBO | はい | 複数のオプションが利用可能（標準の Recraft V4 サイズ、"1024x1024" を含む） |
-
-### recraftv4_1_pro、recraftv4_1_utility_pro、recraftv4_pro 入力
-
-`recraftv4_1_pro`、`recraftv4_1_utility_pro`、`recraftv4_pro` で共有されます。
+これらのモデルは同じ `size` パラメータを共有します。
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `size` | 生成される画像のサイズです（デフォルト: "2048x2048"）。 | COMBO | はい | 複数のオプションが利用可能（Pro の Recraft V4 サイズ、"2048x2048" を含む） |
+| `size` | 生成される画像のサイズです（デフォルト: "1024x1024"）。 | COMBO | 必須 | 複数のオプションがあります（標準の Recraft V4 サイズ、"1024x1024" を含む） |
 
-**注記:** `size` パラメータは動的な入力であり、利用可能なオプションは選択した `model` に応じて変わります。`seed` の値は再現可能な画像出力を保証するものではありません。Infinite Style Library のスタイル ID を使用する場合は、それが Vector アートスタイルでないことを確認してください。Vector アートスタイルの場合、画像の代わりに SVG データが返される可能性があります。
+### recraftv4_1_pro、recraftv4_1_utility_pro、recraftv4_pro、および recraftv4_styles_pro 入力
+
+これらのモデルは同じ `size` パラメータを共有します。
+
+| パラメータ | 説明 | データ型 | 必須 | 範囲 |
+|-----------|-------------|-----------|----------|-------|
+| `size` | 生成される画像のサイズです（デフォルト: "2048x2048"）。 | COMBO | 必須 | 複数のオプションがあります（Pro の Recraft V4 サイズ、"2048x2048" を含む） |
+
+### 参照入力
+
+| パラメータ | 説明 | データ型 | 必須 | 範囲 |
+|-----------|-------------|-----------|----------|-------|
+| `style_references` | その場でスタイルを作成するための参照画像です。生成費用に加えて課金されます。作成されたスタイルは再利用用に style_id として返されます。style_id とは併用できません。拡張可能スロット: 1..N 枚の画像を接続できます（style_reference_1、style_reference_2、...）。 | IMAGE | 任意 | 0〜Recraft API で許可される参照画像の最大枚数。エンコード済みの合計サイズは 10 MB を超えてはなりません。 |
+
+**注意:** `size` パラメータは動的入力であり、選択された `model` に応じて利用可能なオプションが変わります。`recraftv4_styles` モデルと `recraftv4_styles_pro` モデルは常にスタイルを必要とします。スタイル参照画像を接続するか、`style_id` を指定してください。`style_id` 入力と `style_references` 入力は相互に排他的です。どちらか一方のみを指定してください。`style_id` は有効な UUID である必要があります。`style_match` 入力は、スタイルが指定された場合にのみ使用されます。スタイル参照画像は生成費用に加えて課金され、エンコード済みの合計サイズが 10 MB を超えてはなりません。`seed` 値は再現可能な画像出力を保証するものではありません。Infinite Style Library のスタイル ID を使用する場合は、それが Vector アートスタイルでないことを確認してください。Vector アートスタイルの場合、画像の代わりに SVG データが返される可能性があります。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
 | `output` | 生成された画像、または画像のバッチです。 | IMAGE |
+| `style_id` | この生成で使用または作成されたスタイル ID です。スタイル参照画像が指定された場合、作成されたスタイルが再利用用にここに返されます。スタイルが使用されなかった場合は空文字列です。 | STRING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `0b345a2f84d20a5a86681c358796a3ee3a5a101aab62441a978c610854e02c8a`
+**Source fingerprint (SHA-256):** `af5c1f68e59ca282cdca7c32cd50f0438b743fdda27d9d22e59b2d1343f45e26`

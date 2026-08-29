@@ -1,33 +1,36 @@
 # Meshy：テキストからモデル生成
 
-Meshy: Text to Model ノードは、Meshy APIを使用してテキスト記述から3Dモデルを生成します。プロンプトと設定をAPIにリクエストとして送信し、生成が完了するまで待機して、結果のモデルファイルをダウンロードします。
+The Meshy: Text to Model ノードは、Meshy API を使用して、テキスト記述から 3D モデルを生成します。プロンプトと設定を API に送信し、生成が完了するまで待機して、結果のモデルファイルをダウンロードします。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 使用するAIモデルのバージョンを指定します。現在は「latest」バージョンのみが利用可能です。 | COMBO | はい | `"latest"` |
-| `prompt` | 生成したい3Dモデルのテキストによる説明です。1文字以上600文字以内で指定する必要があります。 | STRING | はい | - |
-| `style` | 生成する3Dモデルのアーティスティックなスタイルを指定します。 | COMBO | はい | `"realistic"`<br>`"sculpture"` |
-| `should_remesh` | 生成されたメッシュを処理するかどうかを制御します。「false」に設定すると、未処理の三角形メッシュが返されます。「true」を選択すると、トポロジーとポリゴン数に関する追加パラメータが表示されます。 | DYNAMIC_COMBO | はい | `"true"`<br>`"false"` |
-| `topology` | リメッシュされたモデルのターゲットとなるポリゴンタイプを指定します。このパラメータは、`should_remesh` が「true」に設定されている場合のみ利用可能です。 | COMBO | いいえ* | `"triangle"`<br>`"quad"` |
-| `target_polycount` | リメッシュされたモデルのターゲットとなるポリゴン数を指定します。デフォルトは300000です。このパラメータは、`should_remesh` が「true」に設定されている場合のみ利用可能です。 | INT | いいえ* | 100 - 300000 |
-| `symmetry_mode` | 生成されたモデルの対称性を制御します。これは詳細パラメータです。 | COMBO | はい | `"auto"`<br>`"on"`<br>`"off"` |
-| `pose_mode` | 生成されたモデルのポーズモードを指定します。空文字列の場合は、特定のポーズが要求されません。これは詳細パラメータです。 | COMBO | はい | `""`<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | シードはノードを再実行するかどうかを制御します。シードに関係なく、結果は非決定的です。デフォルトは0です。 | INT | はい | 0 - 2147483647 |
+| `model` | 生成に使用するAIモデルのバージョンを指定します。 | COMBO | はい | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `prompt` | 生成したい3Dモデルのテキスト記述。1～600文字の長さである必要があります。 | STRING | はい | 1 - 600文字 |
+| `style` | 生成される3Dモデルのアートスタイル。 | COMBO | はい | `"realistic"` |
+| `should_remesh` | false に設定すると、未処理の三角形メッシュを返します。"true" を選択すると、トポロジとターゲットポリゴン数の追加パラメータが表示されます。 | DYNAMIC_COMBO | はい | `"true"`<br>`"false"` |
+| `topology` | リメッシュされたモデルのターゲットポリゴンタイプ。このパラメータは、`should_remesh` が "true" に設定されている場合にのみ使用できます。 | COMBO | いいえ* | `"triangle"`<br>`"quad"` |
+| `target_polycount` | リメッシュされたモデルのターゲットポリゴン数。デフォルトは300000です。このパラメータは、`should_remesh` が "true" に設定されている場合にのみ使用できます。 | INT | いいえ* | 100 - 300000 |
+| `symmetry_mode` | 生成されたモデルの対称性を制御します。これは高度なパラメータです。 | COMBO | はい | `"auto"`<br>`"on"`<br>`"off"` |
+| `pose_mode` | 生成されたモデルのポーズモードを指定します。空の文字列は特定のポーズが要求されていないことを意味します。これは高度なパラメータです。 | COMBO | はい | `""`<br>`"A-pose"`<br>`"T-pose"` |
+| `seed` | シードはノードを再実行するかどうかを制御します。結果はシードに関係なく非決定的です。デフォルトは0です。 | INT | はい | 0 - 2147483647 |
+| `ultra_mode` | より細かいサーフェスディテールを持つ高忠実度ジオメトリのために、追加のリファインメントパスを実行します。デフォルトはfalseです。 | BOOLEAN | はい | true<br>false |
 
-※注: `topology` と `target_polycount` パラメータは条件付きで利用可能です。これらは、`should_remesh` パラメータが「true」に設定されている場合にのみ表示されます。
+*注: `topology` と `target_polycount` パラメータは条件付きで使用できます。`should_remesh` パラメータが "true" に設定されている場合にのみ表示されます。
+
+`ultra_mode` を有効にすると、`model` パラメータを `"meshy-7"` または `"latest"` に設定する必要があります。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `モデルファイル` | 生成されたGLBモデルのファイル名です。この出力は後方互換性のために提供されています。 | STRING |
-| `meshy_task_id` | Meshy APIタスクの一意の識別子です。 | MESHY_TASK_ID |
-| `GLB` | GLB形式で生成された3Dモデルファイルです。 | FILE3DGLB |
-| `FBX` | FBX形式で生成された3Dモデルファイルです。 | FILE3DFBX |
+| `モデルファイル` | 生成されたGLBモデルのファイル名。この出力は後方互換性のために提供されています。 | STRING |
+| `meshy_task_id` | Meshy APIタスクの一意の識別子。 | MESHY_TASK_ID |
+| `GLB` | GLB形式で生成された3Dモデルファイル。 | FILE3DGLB |
+| `FBX` | FBX形式で生成された3Dモデルファイル。 | FILE3DFBX |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `1860b2d760aa81d611d4f44114591b4d98ccb85075bd1e06beabf462fb58bd53`
+**Source fingerprint (SHA-256):** `131f17bfb788f206e15c1d48c877e822114902fadf073a6f9fb25e8340421122`

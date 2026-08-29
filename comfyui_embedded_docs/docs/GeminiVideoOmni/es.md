@@ -6,34 +6,39 @@ Genera un video con audio a partir de un prompt de texto utilizando el modelo Ge
 
 ### Entradas comunes
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
-|-----------|-------------|--------------|-----------|-------|
-| `model` | El modelo de video Gemini utilizado para generar el video. | DYNAMIC_COMBO | Sí | "Omni Flash" |
-| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados son no deterministas independientemente de la semilla (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `model` | El modelo de video de Gemini utilizado para generar el video. | DYNAMIC_COMBO | Sí | "Omni Flash" |
+| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (por defecto: 42). | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de Omni Flash
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
-|-----------|-------------|--------------|-----------|-------|
-| `prompt` | Describe el video a generar. Especifica la duración y la relación de aspecto directamente en el prompt, por ejemplo, "un clip de 6 segundos en 16:9". La duración puede ser de 3 a 10 segundos; la relación de aspecto debe ser 16:9 (horizontal) o 9:16 (vertical). La salida es 720p, 24 FPS, con audio. | STRING | Sí | Mínimo 1 carácter después de eliminar espacios en blanco |
-| `images` | Ranura expandible: conecta una o más imágenes de referencia (`image_1`...`image_14`) para guiar o animar el video. Hasta 14 imágenes en total. | IMAGE | No | 0 a 14 imágenes |
-| `videos` | Ranura expandible: conecta uno o más videos de referencia (`video_1`...`video_3`) para guiar o editar. Hasta 3 videos, cada uno de hasta 10 segundos de duración. | VIDEO | No | 0 a 3 videos, cada uno con un máximo de 10 segundos |
-| `temperature` | Controla la aleatoriedad. Un valor más bajo es más enfocado/determinista, uno más alto es más variado (predeterminado: 1.0). | FLOAT | No | 0.0 a 2.0 |
-| `top_p` | Muestreo de núcleo: muestra del conjunto de tokens más pequeño cuya probabilidad acumulada alcanza top_p (predeterminado: 0.95). | FLOAT | No | 0.0 a 1.0 |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Describe el video que se va a generar. Especifica la duración y la relación de aspecto directamente en el prompt, p. ej., «un clip de 6 segundos en 16:9». La duración puede ser de 3 a 10 segundos; la relación de aspecto debe ser 16:9 (horizontal) o 9:16 (vertical). El resultado es 720p, 24 FPS, con audio. | STRING | Sí | Mínimo 1 carácter después de eliminar espacios en blanco |
+| `temperature` | Controla la aleatoriedad. Un valor más bajo es más enfocado/determinista, uno más alto es más variado (por defecto: 1.0). | FLOAT | No | 0.0 a 2.0 |
+| `top_p` | Muestreo de núcleo: muestrear del conjunto de tokens más pequeño cuya probabilidad acumulada alcance top_p (por defecto: 0.95). | FLOAT | No | 0.0 a 1.0 |
+
+### Entradas de referencia
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `images` | Ranura ampliable: conecta una o más imágenes de referencia (`image_1`...`image_14`) para guiar o animar el video. Hasta 14 imágenes en total. | IMAGE | No | 0 a 14 imágenes |
+| `videos` | Ranura ampliable: conecta uno o más videos de referencia (`video_1`...`video_3`) para guiar o editar. Hasta 3 videos, cada uno de hasta 10 segundos de duración. | VIDEO | No | 0 a 3 videos, cada uno con un máximo de 10 segundos |
 
 Notas:
 - Si una entrada de imagen contiene varios fotogramas, cada fotograma cuenta para el máximo de 14 imágenes.
 - Cuando se proporcionan imágenes o videos de referencia, el tamaño total de los medios codificados debe mantenerse por debajo de aproximadamente 90 MB; de lo contrario, el nodo genera un error.
-- Cuando no se proporcionan imágenes o videos de referencia, el nodo genera el video únicamente a partir del prompt de texto.
+- Cuando no se proporcionan imágenes ni videos de referencia, el nodo genera el video únicamente a partir del prompt de texto.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
-|------------------|-------------|--------------|
+| Nombre de salida | Descripción | Tipo de datos |
+|-------------|-------------|-----------|
 | `VIDEO` | El video generado con audio del modelo Gemini. | VIDEO |
 | `STRING` | Cualquier respuesta de texto del modelo, como razonamientos o explicaciones. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiVideoOmni/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `1b7ca51d07cfb6a166cfed2a7e7174fd62f3290abcc1bdfdce94369dda242d3f`
+**Source fingerprint (SHA-256):** `648844868affb68298d2eac8ac20095bfe378d32e721396781de330ef6a6d69f`
