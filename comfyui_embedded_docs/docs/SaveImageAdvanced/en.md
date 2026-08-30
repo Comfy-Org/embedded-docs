@@ -1,6 +1,6 @@
 # Save Image (Advanced)
 
-The **Save Image (Advanced)** node saves the input images to your ComfyUI output directory with advanced control over file format, bit depth, and color space. It supports saving as PNG or EXR files and can embed workflow metadata into the saved files.
+The **Save Image (Advanced)** node saves the input images to your ComfyUI output directory with advanced control over file format, bit depth, and color space. It supports saving as PNG, EXR, or AVIF files (including animated AVIF) and can embed workflow metadata into the saved files.
 
 ## Inputs
 
@@ -10,7 +10,7 @@ The **Save Image (Advanced)** node saves the input images to your ComfyUI output
 | --- | --- | --- | --- | --- |
 | `images` | The images to save. | IMAGE | Yes | - |
 | `filename_prefix` | The prefix for the file to save. May include formatting tokens such as `%date:yyyy-MM-dd%` or `%Empty Latent Image.width%`. (default: "ComfyUI") | STRING | Yes | - |
-| `format` | The file format in which to save the image. Selecting a format reveals additional options for that format. | DYNAMIC_COMBO | Yes | `"png"`<br>`"exr"` |
+| `format` | The file format in which to save the image. Selecting a format reveals additional options for that format. | DYNAMIC_COMBO | Yes | `"png"`<br>`"exr"`<br>`"avif"` |
 
 ### PNG Inputs
 
@@ -30,11 +30,33 @@ These options appear when `format` is set to `"exr"`.
 | `bit_depth` | The bit depth for the saved EXR file. (default: "32-bit float") | COMBO | Yes (conditional) | `"32-bit float"` |
 | `input_color_space` | Colorspace of the input tensor. The EXR is always written as scene-linear in the matching gamut.<br>`"sRGB"` — input is sRGB-encoded Rec.709; the inverse sRGB EOTF is applied.<br>`"HDR"` — input is HLG-encoded Rec.2020 (BT.2100); the inverse HLG OETF is applied to get scene-linear light.<br>`"linear"` — input is already scene-linear (Rec.709 primaries); written through unchanged. Use this for renderer/compositor output. (default: "sRGB") | COMBO | Yes (conditional) | `"sRGB"`<br>`"HDR"`<br>`"linear"` |
 
+### AVIF Inputs
+
+These options appear when `format` is set to `"avif"`.
+
+| Parameter | Description | Data Type | Required | Range |
+| --- | --- | --- | --- | --- |
+| `bit_depth` | The bit depth for the saved AVIF file. Auto uses 8-bit YUV420 for sRGB and 10-bit YUV420 for HDR. (default: "auto") | COMBO | Yes (conditional) | `"auto"`<br>`"8-bit YUV420"`<br>`"10-bit YUV420"` |
+| `input_color_space` | Colorspace of the input images. HDR selects BT.2020/HLG and HDR PQ selects BT.2020/PQ. (default: "sRGB") | COMBO | Yes (conditional) | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"` |
+| `crf` | Lower values produce higher quality and larger files. (default: 18) | INT | Yes (conditional) | 1 to 63 |
+| `save_mode` | The save mode for the AVIF file. `"still images"` saves each image in the batch as a separate still file; `"animated"` saves the entire batch as a single animated AVIF file and reveals `fps` and `loop_count`. (default: "still images") | DYNAMIC_COMBO | Yes (conditional) | `"still images"`<br>`"animated"` |
+
+### AVIF Animated Options
+
+These options appear when `save_mode` is set to `"animated"`.
+
+| Parameter | Description | Data Type | Required | Range |
+| --- | --- | --- | --- | --- |
+| `fps` | The frame rate of the animation. (default: 6.0) | FLOAT | Yes (conditional) | 0.01 to 1000.0 |
+| `loop_count` | Number of times to loop the animation. 0 loops forever. (default: 0) | INT | Yes (conditional) | 0 to 1000 |
+
 **Notes on Parameter Dependencies:**
-- The `bit_depth` and `input_color_space` parameters are only available when a specific `format` is selected.
+- The format-specific parameters (`bit_depth`, `input_color_space`, and for AVIF also `crf` and `save_mode`) are only available when a specific `format` is selected.
 - For PNG format, only "8-bit" and "16-bit" bit depths are available, and only "sRGB" color space.
 - For EXR format, only "32-bit float" bit depth is available, with "sRGB", "HDR", or "linear" color spaces.
-- Images must have 1 (grayscale), 3 (RGB), or 4 (RGBA) channels; other channel counts are not supported and raise an error.
+- For AVIF format, `fps` and `loop_count` are only available when `save_mode` is set to `"animated"`.
+- PNG and EXR images must have 1 (grayscale), 3 (RGB), or 4 (RGBA) channels; other channel counts are not supported and raise an error.
+- AVIF supports only 1-channel grayscale and 3-channel RGB images; RGBA (alpha) images are not supported and raise an error.
 
 ## Outputs
 
@@ -45,4 +67,4 @@ These options appear when `format` is set to `"exr"`.
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageAdvanced/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `b03a822a90cf50d30fbf4397ab280393951f08d2339dd48c0dbaf75d9c415bca`
+**Source fingerprint (SHA-256):** `d3df3caca99d58d973d0bc2ff7c22c4626185d390ec2acf870d4014331c4c335`

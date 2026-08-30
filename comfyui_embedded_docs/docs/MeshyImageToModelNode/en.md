@@ -6,7 +6,7 @@ The Meshy: Image to Model node uses the Meshy API to generate a 3D model from a 
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `model` | Specifies the AI model version to use for generation. | COMBO | Yes | `"latest"` |
+| `model` | Specifies the AI model version to use for generation. | COMBO | Yes | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `image` | The input image to convert into a 3D model. | IMAGE | Yes | - |
 | `should_remesh` | When set to `"false"`, returns an unprocessed triangular mesh. | DYNAMIC_COMBO | Yes | `"true"`<br>`"false"` |
 | `topology` | The target polygon topology for the remeshed model. This input is only available when `should_remesh` is set to `"true"`. | COMBO | No* | `"triangle"`<br>`"quad"` |
@@ -16,15 +16,18 @@ The Meshy: Image to Model node uses the Meshy API to generate a 3D model from a 
 | `enable_pbr` | Generate PBR Maps (metallic, roughness, normal) in addition to the base color. This input is only available when `should_texture` is set to `"true"`. Default: `False`. | BOOLEAN | No* | - |
 | `texture_prompt` | Provide a text prompt to guide the texturing process. Maximum 600 characters. Cannot be used at the same time as `texture_image`. This input is only available when `should_texture` is set to `"true"`. Default: empty string. | STRING | No* | - |
 | `texture_image` | Only one of `texture_image` or `texture_prompt` may be used at the same time. This input is only available when `should_texture` is set to `"true"`. | IMAGE | No* | - |
+| `texture_resolution` | Base color texture resolution. Higher resolutions capture more surface detail. This input is only available when `should_texture` is set to `"true"`. | COMBO | No* | `"2k"`<br>`"4k"`<br>`"8k"` |
 | `pose_mode` | Specify the pose mode for the generated model. This is an advanced parameter. | COMBO | Yes | `""` (empty)<br>`"A-pose"`<br>`"T-pose"` |
 | `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed. Default: 0. | INT | Yes | 0 - 2147483647 |
+| `ultra_mode` | Run an extra refinement pass for higher-fidelity geometry with finer surface detail. Default: `False`. | BOOLEAN | Yes | - |
 
 **Note on Parameter Constraints:**
 
 * The `topology` and `target_polycount` inputs are only available when `should_remesh` is set to `"true"`.
-* The `enable_pbr`, `texture_prompt`, and `texture_image` inputs are only available when `should_texture` is set to `"true"`.
+* The `enable_pbr`, `texture_prompt`, `texture_image`, and `texture_resolution` inputs are only available when `should_texture` is set to `"true"`.
 * When `should_texture` is set to `"true"`, `texture_prompt` and `texture_image` cannot be used at the same time. If both are provided, the node raises an error.
 * `texture_prompt` has a maximum length of 600 characters.
+* `ultra_mode` requires the `"meshy-7"` or `"latest"` model. If `ultra_mode` is enabled with the `"meshy-6"` model, the node raises an error.
 
 ## Outputs
 
@@ -38,4 +41,4 @@ The Meshy: Image to Model node uses the Meshy API to generate a 3D model from a 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `9f7abcb0db3c78715e4ba7370efe294caf186590f7ab62da8568778848fc838c`
+**Source fingerprint (SHA-256):** `689828ad52de4493e1039aecc408e18af4122d2c0e2511fd254ba0f1d56bad14`

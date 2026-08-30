@@ -1,30 +1,33 @@
 # Meshy: 이미지 → 모델
 
-Meshy: Image to Model 노드는 Meshy API를 사용하여 단일 입력 이미지에서 3D 모델을 생성합니다. 이미지를 업로드하고 처리 작업을 제출한 후, 생성된 3D 모델 파일(GLB 및 FBX)과 작업 ID를 참조용으로 반환합니다.
+Meshy: Image to Model 노드는 Meshy API를 사용하여 단일 입력 이미지에서 3D 모델을 생성합니다. 이미지를 업로드하고 처리 작업을 제출한 후 생성된 3D 모델 파일(GLB 및 FBX)과 참조용 작업 ID를 반환합니다.
 
 ## 입력
 
 | 매개변수 | 설명 | 데이터 유형 | 필수 여부 | 범위 |
 | --- | --- | --- | --- | --- |
-| `model` | 생성에 사용할 AI 모델 버전을 지정합니다. | COMBO | 예 | `"latest"` |
+| `model` | 생성에 사용할 AI 모델 버전을 지정합니다. | COMBO | 예 | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `image` | 3D 모델로 변환할 입력 이미지입니다. | IMAGE | 예 | - |
-| `should_remesh` | `"false"`로 설정하면 후처리되지 않은 삼각형 메시가 반환됩니다. | DYNAMIC_COMBO | 예 | `"true"`<br>`"false"` |
-| `topology` | 리메시 처리된 모델의 대상 폴리곤 토폴로지입니다. 이 입력은 `should_remesh`가 `"true"`로 설정된 경우에만 사용할 수 있습니다. | COMBO | 아니요* | `"triangle"`<br>`"quad"` |
-| `target_polycount` | 리메시 처리된 모델의 대상 폴리곤 수입니다. 이 입력은 `should_remesh`가 `"true"`로 설정된 경우에만 사용할 수 있습니다. 기본값: 300000. | INT | 아니요* | 100 - 300000 |
+| `should_remesh` | `"false"`로 설정하면 처리되지 않은 삼각형 메시가 반환됩니다. | DYNAMIC_COMBO | 예 | `"true"`<br>`"false"` |
+| `topology` | 리메시된 모델의 목표 폴리곤 토폴로지입니다. 이 입력은 `should_remesh` 값이 `"true"`로 설정된 경우에만 사용할 수 있습니다. | COMBO | 아니요* | `"triangle"`<br>`"quad"` |
+| `target_polycount` | 리메시된 모델의 목표 폴리곤 수입니다. 이 입력은 `should_remesh` 값이 `"true"`로 설정된 경우에만 사용할 수 있습니다. 기본값: 300000. | INT | 아니요* | 100 - 300000 |
 | `symmetry_mode` | 생성된 3D 모델에 적용되는 대칭을 제어합니다. | COMBO | 예 | `"auto"`<br>`"on"`<br>`"off"` |
 | `should_texture` | 텍스처 생성 여부를 결정합니다. `"false"`로 설정하면 텍스처 단계를 건너뛰고 텍스처가 없는 메시를 반환합니다. | DYNAMIC_COMBO | 예 | `"true"`<br>`"false"` |
-| `enable_pbr` | 기본 색상 외에 PBR 맵(금속성, 거칠기, 법선)을 생성합니다. 이 입력은 `should_texture`가 `"true"`로 설정된 경우에만 사용할 수 있습니다. 기본값: `False`. | BOOLEAN | 아니요* | - |
-| `texture_prompt` | 텍스처링 과정을 안내하는 텍스트 프롬프트를 제공합니다. 최대 600자입니다. `texture_image`와 동시에 사용할 수 없습니다. 이 입력은 `should_texture`가 `"true"`로 설정된 경우에만 사용할 수 있습니다. 기본값: 빈 문자열. | STRING | 아니요* | - |
-| `texture_image` | `texture_image` 또는 `texture_prompt` 중 하나만 동시에 사용할 수 있습니다. 이 입력은 `should_texture`가 `"true"`로 설정된 경우에만 사용할 수 있습니다. | IMAGE | 아니요* | - |
-| `pose_mode` | 생성된 모델의 포즈 모드를 지정합니다. 고급 매개변수입니다. | COMBO | 예 | `""` (빈 값)<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | 시드는 노드가 다시 실행되어야 하는지 여부를 제어합니다. 시드와 관계없이 결과는 비결정적입니다. 기본값: 0. | INT | 예 | 0 - 2147483647 |
+| `enable_pbr` | 베이스 컬러에 더해 PBR 맵(금속성, 거칠기, 법선)을 생성합니다. 이 입력은 `should_texture` 값이 `"true"`로 설정된 경우에만 사용할 수 있습니다. 기본값: `False`. | BOOLEAN | 아니요* | - |
+| `texture_prompt` | 텍스처링 과정을 안내하는 텍스트 프롬프트를 제공합니다. 최대 600자입니다. `texture_image`와 동시에 사용할 수 없습니다. 이 입력은 `should_texture` 값이 `"true"`로 설정된 경우에만 사용할 수 있습니다. 기본값: 빈 문자열. | STRING | 아니요* | - |
+| `texture_image` | `texture_image`와 `texture_prompt` 중 하나만 동시에 사용할 수 있습니다. 이 입력은 `should_texture` 값이 `"true"`로 설정된 경우에만 사용할 수 있습니다. | IMAGE | 아니요* | - |
+| `texture_resolution` | 베이스 컬러 텍스처 해상도입니다. 해상도가 높을수록 더 세밀한 표면 디테일을 포착합니다. 이 입력은 `should_texture` 값이 `"true"`로 설정된 경우에만 사용할 수 있습니다. | COMBO | 아니요* | `"2k"`<br>`"4k"`<br>`"8k"` |
+| `pose_mode` | 생성된 모델의 포즈 모드를 지정합니다. 고급 매개변수입니다. | COMBO | 예 | `""` (empty)<br>`"A-pose"`<br>`"T-pose"` |
+| `seed` | 시드는 노드 재실행 여부를 제어합니다. 시드와 관계없이 결과는 비결정적입니다. 기본값: 0. | INT | 예 | 0 - 2147483647 |
+| `ultra_mode` | 더 미세한 표면 디테일과 더 높은 정밀도의 지오메트리를 위해 추가 정제 패스를 실행합니다. 기본값: `False`. | BOOLEAN | 예 | - |
 
-**매개변수 제약 참고 사항:**
+**매개변수 제약 조건 참고:**
 
-* `topology` 및 `target_polycount` 입력은 `should_remesh`가 `"true"`로 설정된 경우에만 사용할 수 있습니다.
-* `enable_pbr`, `texture_prompt`, `texture_image` 입력은 `should_texture`가 `"true"`로 설정된 경우에만 사용할 수 있습니다.
-* `should_texture`가 `"true"`로 설정된 경우 `texture_prompt`와 `texture_image`는 동시에 사용할 수 없습니다. 둘 다 제공되면 노드에서 오류가 발생합니다.
+* `topology` 및 `target_polycount` 입력은 `should_remesh` 값이 `"true"`로 설정된 경우에만 사용할 수 있습니다.
+* `enable_pbr`, `texture_prompt`, `texture_image`, `texture_resolution` 입력은 `should_texture` 값이 `"true"`로 설정된 경우에만 사용할 수 있습니다.
+* `should_texture` 값이 `"true"`로 설정된 경우 `texture_prompt`와 `texture_image`는 동시에 사용할 수 없습니다. 둘 다 제공되면 노드에서 오류가 발생합니다.
 * `texture_prompt`의 최대 길이는 600자입니다.
+* `ultra_mode`는 `"meshy-7"` 또는 `"latest"` 모델이 필요합니다. `"meshy-6"` 모델에서 `ultra_mode`를 활성화하면 노드에서 오류가 발생합니다.
 
 ## 출력
 
@@ -38,4 +41,4 @@ Meshy: Image to Model 노드는 Meshy API를 사용하여 단일 입력 이미�
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `9f7abcb0db3c78715e4ba7370efe294caf186590f7ab62da8568778848fc838c`
+**Source fingerprint (SHA-256):** `689828ad52de4493e1039aecc408e18af4122d2c0e2511fd254ba0f1d56bad14`

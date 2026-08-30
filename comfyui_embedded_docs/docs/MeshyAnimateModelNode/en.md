@@ -1,6 +1,6 @@
-# ComfyUI Node Documentation: Meshy: Animate Model
+# Meshy: Animate Model
 
-This node applies a specific animation to a 3D character model that has already been rigged using the Meshy service. It takes a task ID from a previous rigging operation and an action ID to select the desired animation from the library. The node then processes the request and returns the animated model in both GLB and FBX file formats.
+This node applies a specific animation action to a previously rigged 3D character using the Meshy service. It takes a task ID from an earlier rigging operation and an action ID to select the desired animation from the library, then returns the animated model in both GLB and FBX file formats.
 
 ## Inputs
 
@@ -20,4 +20,4 @@ This node applies a specific animation to a 3D character model that has already 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `e773145f8f08e80f3cef8ce70becc3b593aea8e02a888a0005353f1bc8e3b909`
+**Source fingerprint (SHA-256):** `760e94d3a92910051d9b473545191842dc9672e6c4a59c3d1cd9cfdc5eb2589d`

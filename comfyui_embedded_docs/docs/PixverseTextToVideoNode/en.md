@@ -1,4 +1,4 @@
-# PixVerse Text to Video Node
+# PixVerse Text to Video
 
 Generates videos based on a text prompt and various generation parameters. This node creates video content using the PixVerse API, allowing control over aspect ratio, quality, duration, motion style, and more.
 
@@ -15,7 +15,7 @@ Generates videos based on a text prompt and various generation parameters. This 
 | `negative_prompt` | An optional text description of undesired elements on an image (default: "") | STRING | No | - |
 | `pixverse_template` | An optional template to influence style of generation, created by the PixVerse Template node | CUSTOM | No | - |
 
-**Note:** When using 1080p quality, the motion mode is automatically set to normal and duration is limited to 5 seconds. For non-5 second durations, the motion mode is also automatically set to normal.
+**Note:** The `prompt` must contain at least 1 character. When using 1080p quality, the motion mode is automatically set to `normal` and the duration is limited to 5 seconds. For non-5 second durations, the motion mode is also automatically set to `normal`.
 
 ## Outputs
 
@@ -26,4 +26,4 @@ Generates videos based on a text prompt and various generation parameters. This 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PixverseTextToVideoNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `9b0bf0d863243b5a9840c21c7f82caea32d30395a22290e323b63d86eabd0721`
+**Source fingerprint (SHA-256):** `cb95579dc6c9afa17455b0216ec46571ad2c0455606cf3b9c725ca512c45f938`

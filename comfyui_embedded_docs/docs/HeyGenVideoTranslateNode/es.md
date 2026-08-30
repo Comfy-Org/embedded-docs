@@ -1,25 +1,25 @@
 # HeyGen Video Translate
 
-Traduce un video hablado a otro idioma con clonación de voz y sincronización de labios. Este nodo clona la voz del hablante original y reanima la boca para que coincida con el discurso traducido, produciendo un resultado de aspecto natural.
+Traduce un video con habla a otro idioma mediante clonación de voz y sincronización de labios. Este nodo clona la voz del hablante original y reanima la boca para que coincida con el habla traducida, produciendo un resultado de aspecto natural.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+|-----------|-------------|--------------|-----------|-------|
 | `video` | Video con habla para traducir. | VIDEO | Sí | - |
-| `output_language` | Idioma de destino para el video traducido. | STRING | Sí | "Arabic"<br>"Bengali"<br>"Chinese"<br>"Danish"<br>"Dutch"<br>"English"<br>"French"<br>"German"<br>"Greek"<br>"Hindi"<br>"Indonesian"<br>"Italian"<br>"Japanese"<br>"Korean"<br>"Malay"<br>"Polish"<br>"Portuguese"<br>"Russian"<br>"Spanish"<br>"Swedish"<br>"Tamil"<br>"Telugu"<br>"Thai"<br>"Turkish"<br>"Ukrainian"<br>"Vietnamese" |
-| `mode` | 'speed' es más rápido; 'precision' produce una sincronización de labios de mayor calidad al doble de precio. (por defecto: "speed") | STRING | Sí | "speed"<br>"precision" |
-| `translate_audio_only` | Solo intercambia la pista de audio, manteniendo los movimientos originales de la boca (sin sincronización de labios). (por defecto: False) | BOOLEAN | No | True<br>False |
-| `speaker_count` | Número de hablantes en el video. 0 = detectar automáticamente. Los valores superiores a 0 se envían a la API como el número de hablantes. (por defecto: 0) | INT | No | 0 a 10 |
-| `seed` | No se envía a HeyGen; cámbielo para forzar una nueva ejecución. (por defecto: 42) | INT | No | 0 a 2147483647 |
+| `output_language` | Idioma de destino para el video traducido. | COMBO | Sí | "Arabic"<br>"Bengali"<br>"Chinese"<br>"Danish"<br>"Dutch"<br>"English"<br>"French"<br>"German"<br>"Greek"<br>"Hindi"<br>"Indonesian"<br>"Italian"<br>"Japanese"<br>"Korean"<br>"Malay"<br>"Polish"<br>"Portuguese"<br>"Russian"<br>"Spanish"<br>"Swedish"<br>"Tamil"<br>"Telugu"<br>"Thai"<br>"Turkish"<br>"Ukrainian"<br>"Vietnamese" |
+| `mode` | 'speed' es más rápido; 'precision' produce una sincronización de labios de mayor calidad a un precio más alto. (predeterminado: "speed") | COMBO | Sí | "speed"<br>"precision" |
+| `translate_audio_only` | Solo intercambia la pista de audio, manteniendo los movimientos originales de la boca (sin sincronización de labios). (predeterminado: False) | BOOLEAN | No | True<br>False |
+| `speaker_count` | Número de hablantes en el video. 0 = detectar automáticamente. Los valores superiores a 0 se envían a la API como el número de hablantes. (predeterminado: 0) | INT | No | 0 a 10 |
+| `seed` | No se envía a HeyGen; cámbialo para forzar una nueva ejecución. (predeterminado: 42) | INT | No | 0 a 2147483647 |
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
-|------------------|-------------|---------------|
-| `video` | El video traducido con clonación de voz y sincronización de labios aplicada. | VIDEO |
+| Nombre de salida | Descripción | Tipo de dato |
+|------------------|-------------|--------------|
+| `video` | El video traducido con clonación de voz y sincronización de labios aplicadas. | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVideoTranslateNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `31056060b6309b8ec28b37b353322403e173fd2862b56021392dba24e7a15f69`
+**Source fingerprint (SHA-256):** `709438c0c713d6db750643cc48f75352c6f293ae1ff2fd82c1bacb03b2581923`

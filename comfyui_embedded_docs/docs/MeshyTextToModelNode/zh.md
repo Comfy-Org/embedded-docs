@@ -1,33 +1,34 @@
 # Meshy：文本生成模型
 
-Meshy: Text to Model 节点使用 Meshy API 根据文本描述生成 3D 模型。它会在发送请求时将你的提示词和设置传给 API，然后等待生成完成并下载结果模型文件。
+Meshy: Text to Model 节点使用 Meshy API 根据文本描述生成 3D 模型。它会向 API 发送包含提示词和设置的请求，然后等待生成完成并下载生成的模型文件。
 
 ## 输入
-
-| 参数 | 描述 | 数据类型 | 必填 | 范围 |
+| 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 指定要使用的 AI 模型版本。目前仅提供 "latest" 版本。 | COMBO | 是 | `"latest"` |
-| `prompt` | 你想要生成的 3D 模型的文本描述。长度必须在 1 到 600 个字符之间。 | STRING | 是 | - |
-| `style` | 生成 3D 模型的艺术风格。 | COMBO | 是 | `"realistic"`<br>`"sculpture"` |
-| `should_remesh` | 控制是否处理生成后的网格。设为 "false" 时，节点返回未处理的三角网格；选择 "true" 会显示拓扑和多边形数量相关的额外参数。 | DYNAMIC_COMBO | 是 | `"true"`<br>`"false"` |
-| `topology` | 重新网格化后的目标多边形类型。仅当 `should_remesh` 设为 "true" 时可用。 | COMBO | 否* | `"triangle"`<br>`"quad"` |
-| `target_polycount` | 重新网格化后的目标多边形数量。默认值为 300000。仅当 `should_remesh` 设为 "true" 时可用。 | INT | 否* | 100 - 300000 |
+| `model` | 指定用于生成的 AI 模型版本。 | COMBO | 是 | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `prompt` | 您要生成的 3D 模型的文本描述。长度必须介于 1 到 600 个字符之间。 | STRING | 是 | 1 - 600 characters |
+| `style` | 生成 3D 模型的艺术风格。 | COMBO | 是 | `"realistic"` |
+| `should_remesh` | 当设置为 false 时，返回未经处理的三角形网格。选择“true”会显示拓扑和目标多边形数量的其他参数。 | DYNAMIC_COMBO | 是 | `"true"`<br>`"false"` |
+| `topology` | 重新网格化模型的目标多边形类型。此参数仅在 `should_remesh` 设置为“true”时可用。 | COMBO | No* | `"triangle"`<br>`"quad"` |
+| `target_polycount` | 重新网格化模型的目标多边形数量。默认值为 300000。此参数仅在 `should_remesh` 设置为“true”时可用。 | INT | No* | 100 - 300000 |
 | `symmetry_mode` | 控制生成模型中的对称性。这是一个高级参数。 | COMBO | 是 | `"auto"`<br>`"on"`<br>`"off"` |
-| `pose_mode` | 指定生成模型的姿态模式。空字符串表示不请求特定姿态。这是一个高级参数。 | COMBO | 是 | `""`<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | Seed 控制节点是否应重新运行；无论 seed 为何，结果都是非确定性的。默认值为 0。 | INT | 是 | 0 - 2147483647 |
+| `pose_mode` | 指定生成模型的姿势模式。空字符串表示不要求特定姿势。这是一个高级参数。 | COMBO | 是 | `""`<br>`"A-pose"`<br>`"T-pose"` |
+| `seed` | 种子控制节点是否应重新运行；但无论种子如何，结果都是非确定性的。默认值为 0。 | INT | 是 | 0 - 2147483647 |
+| `超精细模式` | 运行额外的细化过程，以获得具有更精细表面细节的高保真几何体。默认值为 false。 | BOOLEAN | 是 | true<br>false |
 
-*注意：`topology` 和 `target_polycount` 参数是条件性可用的。它们仅在 `should_remesh` 设为 "true" 时出现。
+*注意：`topology` 和 `target_polycount` 参数为条件可用参数。它们仅在 `should_remesh` 参数设置为“true”时出现。
+
+当启用 `ultra_mode` 时，`model` 参数必须设置为 `"meshy-7"` 或 `"latest"`。
 
 ## 输出
-
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `模型文件` | 生成的 GLB 模型文件名。此输出用于向后兼容。 | STRING |
+| `模型文件` | 生成的 GLB 模型的文件名。此输出用于向后兼容。 | STRING |
 | `meshy_task_id` | Meshy API 任务的唯一标识符。 | MESHY_TASK_ID |
-| `GLB` | 以 GLB 格式生成的 3D 模型文件。 | FILE3DGLB |
-| `FBX` | 以 FBX 格式生成的 3D 模型文件。 | FILE3DFBX |
+| `GLB` | 生成的 GLB 格式的 3D 模型文件。 | FILE3DGLB |
+| `FBX` | 生成的 FBX 格式的 3D 模型文件。 | FILE3DFBX |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `1860b2d760aa81d611d4f44114591b4d98ccb85075bd1e06beabf462fb58bd53`
+**Source fingerprint (SHA-256):** `131f17bfb788f206e15c1d48c877e822114902fadf073a6f9fb25e8340421122`

@@ -1,48 +1,44 @@
 # 保存视频
 
-Save Video 节点将输入视频保存到您的 ComfyUI 输出目录。您可以选择文件名前缀、容器格式、视频编解码器以及质量和色彩空间等编码选项。该节点会自动处理带计数器递增的文件命名，并可在保存的文件中嵌入工作流元数据。
+保存视频节点将输入视频保存到您的 ComfyUI 输出目录。您可以选择文件名前缀、容器格式、视频编解码器以及质量等编码选项。该节点使用计数器自动生成唯一的文件名，并可将工作流元数据嵌入到保存的文件中。
 
 ## 输入
-
 ### 通用输入
 
-| 参数 | 描述 | 数据类型 | 必需 | 范围 |
+| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
 | --- | --- | --- | --- | --- |
 | `视频` | 要保存的视频。 | VIDEO | 是 | - |
-| `文件名前缀` | 要保存文件的前缀。可包含格式化信息，例如 `%date:yyyy-MM-dd%` 或 `%Empty Latent Image.width%`，以包含来自节点的值（默认值："video/ComfyUI"）。 | STRING | 是 | - |
-| `格式` | 输出容器。Auto 尽可能保留源容器；MP4、MKV 和 WebM 选择特定容器（默认值："auto"）。 | DYNAMIC_COMBO | 是 | `"auto"`<br>`"mp4"`<br>`"mkv"`<br>`"webm"` |
-| `编码器` | 输出视频编解码器。Auto 保留兼容的源流。H.264 和 AV1 重新编码支持 SDR、HDR (HLG) 和 HDR PQ。当选择了格式时出现（默认值："auto"）。 | DYNAMIC_COMBO | 否 | `"auto"`<br>`"h264"`<br>`"av1"` |
+| `文件名前缀` | 要保存文件的前缀。其中可包含格式信息，如 `%date:yyyy-MM-dd%` 或 `%Empty Latent Image.width%`，以包含来自节点的值（默认值：`video/ComfyUI`）。 | STRING | 是 | - |
+| `格式` | 输出容器。自动模式下，Auto/H.264 使用 MP4，AV1 使用 WebM。MP4、MKV 和 WebM 可选择特定容器。选择格式还会决定哪些编解码器选项可用（默认值：`auto`）。 | DYNAMIC_COMBO | 是 | `"auto"`<br>`"mp4"`<br>`"mkv"`<br>`"webm"` |
+| `编码器` | 输出视频编解码器。自动（Auto）保留兼容的源流。H.264 和 AV1 重新编码支持 SDR、HDR (HLG) 和 HDR PQ。在选择格式后出现（默认值：`auto`）。 | DYNAMIC_COMBO | 否 | `"auto"`<br>`"h264"`<br>`"av1"` |
 
 ### H.264 输入
 
-当 `codec` 为 `"h264"` 时，这些输入会出现。此编解码器可用于 `auto`、`mp4` 和 `mkv` 格式。
+当 `codec` 为 `"h264"` 时，这些输入会出现，并可与 `auto`、`mp4` 和 `mkv` 格式一起使用。
 
-| 参数 | 描述 | 数据类型 | 必需 | 范围 |
+| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
 | --- | --- | --- | --- | --- |
-| `encoding` | 自动保留兼容的 H.264 流。重新编码则应用自定义编码选项。 | DYNAMIC_COMBO | 否 | `"auto"`<br>`"re-encode"` |
-| `crf` | 数值越低，质量越高，文件越大。当 `encoding` 为 `"re-encode"` 时出现（默认值：23.0）。 | FLOAT | 否 | 0.0 到 51.0 |
-| `color_space` | Auto 对从图像创建的视频使用 sRGB，并保留已加载视频上可识别的颜色。sRGB 写入 SDR BT.709/sRGB。HDR 写入 10-bit BT.2020/HLG；HDR PQ 写入 BT.2020/PQ。其他输入像素必须已使用所选色彩空间。当 `encoding` 为 `"re-encode"` 时出现（默认值："auto"）。 | COMBO | 否 | `"auto"`<br>`"sRGB"`<br>`"HDR"`<br>`"HDR PQ"` |
+| `encoding` | 自动（Automatic）保留兼容的 H.264 流。重新编码（Re-encode）应用自定义编码选项。 | DYNAMIC_COMBO | 否 | `"auto"`<br>`"re-encode"` |
+| `crf` | 值越低，质量越高，文件越大。当 `encoding` 为 `"re-encode"` 时出现（默认值：23.0）。 | FLOAT | 否 | 0.0 到 51.0 |
 
 ### AV1 输入
 
-当 `codec` 为 `"av1"` 时，这些输入会出现。此编解码器可用于 `auto`、`mp4`、`mkv` 和 `webm` 格式。
+当 `codec` 为 `"av1"` 时，这些输入会出现，并可与 `auto`、`mp4`、`mkv` 和 `webm` 格式一起使用。
 
-| 参数 | 描述 | 数据类型 | 必需 | 范围 |
+| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
 | --- | --- | --- | --- | --- |
-| `encoding` | 自动保留兼容的 AV1 流。重新编码则应用自定义编码选项。 | DYNAMIC_COMBO | 否 | `"auto"`<br>`"re-encode"` |
-| `crf` | 数值越低，质量越高，文件越大。当 `encoding` 为 `"re-encode"` 时出现（默认值：30.0）。 | FLOAT | 否 | 0.0 到 63.0 |
-| `color_space` | Auto 对从图像创建的视频使用 sRGB，并保留已加载视频上可识别的颜色。sRGB 写入 SDR BT.709/sRGB。HDR 写入 10-bit BT.2020/HLG；HDR PQ 写入 BT.2020/PQ。其他输入像素必须已使用所选色彩空间。当 `encoding` 为 `"re-encode"` 时出现（默认值："auto"）。 | COMBO | 否 | `"auto"`<br>`"sRGB"`<br>`"HDR"`<br>`"HDR PQ"` |
+| `encoding` | 自动（Automatic）保留兼容的 AV1 流。重新编码（Re-encode）应用自定义编码选项。 | DYNAMIC_COMBO | 否 | `"auto"`<br>`"re-encode"` |
+| `crf` | 值越低，质量越高，文件越大。当 `encoding` 为 `"re-encode"` 时出现（默认值：30.0）。 | FLOAT | 否 | 0.0 到 63.0 |
 
-注意：`webm` 格式仅支持 `auto` 和 `av1` 编解码器。当 `format` 为 `"auto"` 时，尽可能保留源容器。当 `color_space` 为 `"auto"` 时，不应用显式色彩空间，而由系统自动确定色彩空间。
+注意：当 `format` 为 `"auto"` 时，保存的容器将自动选择：`av1` 生成 WebM，而 `auto` 和 `h264` 生成 MP4。`webm` 格式仅允许 `auto` 和 `av1` 编解码器。当 `codec` 为 `"auto"` 时，源视频流会被保留而非重新编码。保存的文件使用计数器后缀以避免覆盖现有文件。
 
 ## 输出
-
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `video` | 输入视频，未做更改。 | VIDEO |
+| `video` | 输入视频，保持不变。 | VIDEO |
 | `ui` | 已保存视频文件的预览，包括文件路径和子文件夹信息，用于在界面中显示。 | PREVIEW_VIDEO |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveVideo/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `39b168eab2d6798adfec6ace3d4320f26217d893844ba54e62041cfdf0183e6f`
+**Source fingerprint (SHA-256):** `8078f692b5c366447a1b08f351637baff901e489f2389e7a26c945661f75c37a`

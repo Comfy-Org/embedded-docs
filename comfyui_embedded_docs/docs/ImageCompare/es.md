@@ -1,16 +1,16 @@
 # Comparar Imágenes
 
-El nodo Image Compare proporciona una interfaz visual para comparar dos imágenes lado a lado mediante un control deslizante. Está diseñado como un nodo de salida, lo que significa que no transfiere datos a otros nodos, sino que muestra las imágenes directamente en la interfaz de usuario para su inspección.
+El nodo Image Compare proporciona una interfaz visual para comparar dos imágenes lado a lado mediante un control deslizante. Está diseñado como un nodo de salida, lo que significa que no pasa datos a otros nodos, sino que muestra las imágenes directamente en la interfaz de usuario para su inspección.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `imagen_a` | La primera imagen a comparar. | IMAGE | No | - |
 | `imagen_b` | La segunda imagen a comparar. | IMAGE | No | - |
 | `vista_comparar` | El control que habilita la vista de comparación con deslizador en la interfaz de usuario. | IMAGECOMPARE | Sí | - |
 
-**Nota:** Este nodo es un nodo de salida. Aunque `image_a` y `image_b` son opcionales, se debe proporcionar al menos una imagen para que el nodo tenga un efecto visible. El nodo mostrará un área vacía para cualquier entrada de imagen que no esté conectada.
+**Nota:** Este nodo es un nodo de salida. Aunque `image_a` e `image_b` son opcionales, debe proporcionarse al menos una imagen para que el nodo tenga un efecto visible. El nodo mostrará un área vacía para cualquier entrada de imagen que no esté conectada.
 
 ## Salidas
 
@@ -19,4 +19,4 @@ Este nodo es un nodo de salida y no produce ninguna salida de datos para usar en
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageCompare/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `2bc980cd20aad3cf60300868599bbce8eaba1cdb21880d2b3f4cd628108d8139`
+**Source fingerprint (SHA-256):** `bc065572c5631ed80c0590aabae775c51d0f607895a87cb2cca78037ab9a6638`

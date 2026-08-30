@@ -1,4 +1,4 @@
-# Meshy: Rig Model Node
+# Meshy: Rig Model
 
 The Meshy: Rig Model node takes a 3D model from a previous Meshy task and automatically creates a skeleton for it, producing a rigged character that can be posed and animated. The node outputs the rigged model in both GLB and FBX file formats.
 
@@ -24,4 +24,4 @@ The Meshy: Rig Model node takes a 3D model from a previous Meshy task and automa
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRigModelNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `c7817278d4269d6a507937691529e063cb470e5123d33a726307bff7e1813344`
+**Source fingerprint (SHA-256):** `6ae79359fa54f36dd2491a952fe54fa56866038758e8cd475a2d2f8e9e47e3b3`

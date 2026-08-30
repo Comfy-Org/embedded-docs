@@ -16,10 +16,15 @@ Generate a video with audio from a text prompt using Google's Gemini Omni Flash 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Describe the video to generate. Specify the length and aspect ratio directly in the prompt, e.g. "a 6-second clip in 16:9". Length may be 3-10 seconds; the aspect ratio must be 16:9 (landscape) or 9:16 (portrait). The output is 720p, 24 FPS, with audio. | STRING | Yes | Minimum 1 character after stripping whitespace |
-| `images` | Growable slot: connect one or more reference images (`image_1`...`image_14`) to guide or animate the video. Up to 14 images in total. | IMAGE | No | 0 to 14 images |
-| `videos` | Growable slot: connect one or more reference videos (`video_1`...`video_3`) to guide or edit. Up to 3 videos, each up to 10 seconds long. | VIDEO | No | 0 to 3 videos, each max 10 seconds |
 | `temperature` | Controls randomness. Lower is more focused/deterministic, higher is more varied (default: 1.0). | FLOAT | No | 0.0 to 2.0 |
 | `top_p` | Nucleus sampling: sample from the smallest token set whose cumulative probability reaches top_p (default: 0.95). | FLOAT | No | 0.0 to 1.0 |
+
+### Reference Inputs
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `images` | Growable slot: connect one or more reference images (`image_1`...`image_14`) to guide or animate the video. Up to 14 images in total. | IMAGE | No | 0 to 14 images |
+| `videos` | Growable slot: connect one or more reference videos (`video_1`...`video_3`) to guide or edit. Up to 3 videos, each up to 10 seconds long. | VIDEO | No | 0 to 3 videos, each max 10 seconds |
 
 Notes:
 - If an image input contains multiple frames, each frame counts toward the maximum of 14 images.
@@ -36,4 +41,4 @@ Notes:
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiVideoOmni/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `1b7ca51d07cfb6a166cfed2a7e7174fd62f3290abcc1bdfdce94369dda242d3f`
+**Source fingerprint (SHA-256):** `648844868affb68298d2eac8ac20095bfe378d32e721396781de330ef6a6d69f`
