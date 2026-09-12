@@ -41,12 +41,12 @@ Se muestra cuando `source` está establecido en `"image"`. Tripo primero genera 
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `task_id de segmentación` | ID de la tarea de segmentación, utilizable como entrada para otros nodos Tripo. | SEGMENT_TASK_ID |
-| `task_id del modelo` | El modelo que fue segmentado (generado a partir de la imagen, o importado). | MODEL_TASK_ID |
+| `segment task_id` | ID de la tarea de segmentación, utilizable como entrada para otros nodos Tripo. | SEGMENT_TASK_ID |
+| `model task_id` | El modelo que fue segmentado (generado a partir de la imagen, o importado). | MODEL_TASK_ID |
 | `GLB` | El archivo de modelo 3D segmentado. | FILE3DGLB |
 | `part_names` | Nombres de las partes separados por comas. | STRING |
 | `parts` | Descripción de las partes que Tripo encontró. | STRING |
-| `máscara` | Imagen de máscara producida por la segmentación. | IMAGE |
+| `mask` | Imagen de máscara producida por la segmentación. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoSmartSegmentNode/es.md)
 

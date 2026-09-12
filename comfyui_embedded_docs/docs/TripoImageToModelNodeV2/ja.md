@@ -33,7 +33,7 @@ Tripo: Image to Model ノードは、Tripo の image-to-model サービスを使
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `モデル task_id` | 生成ジョブの Tripo タスク ID。 | MODEL_TASK_ID |
+| `model task_id` | 生成ジョブの Tripo タスク ID。 | MODEL_TASK_ID |
 | `GLB` | 生成されたモデル（GLB ファイル）。`quad` が有効な場合は空です。 | FILE3DGLB |
 | `FBX` | 生成されたモデル（FBX ファイル）。`quad` が有効な場合にのみ設定されます。 | FILE3DFBX |
 

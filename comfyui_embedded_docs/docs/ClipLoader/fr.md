@@ -38,7 +38,7 @@ Le paramètre `type` sélectionne l'encodeur correct pour une architecture de mo
 |---------------|-------------|-----------------|
 | `CLIP` | Le modèle d'encodeur de texte chargé, prêt à être connecté à d'autres nœuds pour l'encodage de texte et le conditionnement. | CLIP |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipLoader/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `6df608d500520d9414acd82d9fd509b1e211a8385202cefd5579e8a8f397bc64`

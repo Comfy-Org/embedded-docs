@@ -32,7 +32,7 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 |-------------|-------------|-----------|
-| `模型 task_id` | 產生該模型的 Tripo 生成任務識別碼。 | MODEL_TASK_ID |
+| `model task_id` | 產生該模型的 Tripo 生成任務識別碼。 | MODEL_TASK_ID |
 | `GLB` | 以 GLB 格式生成的模型。啟用 `quad` 時為空。 | FILE3D_GLB |
 | `FBX` | 以 FBX 格式生成的模型。僅在啟用 `quad` 時填入。 | FILE3D_FBX |
 

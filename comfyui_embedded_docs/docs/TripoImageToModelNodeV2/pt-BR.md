@@ -33,7 +33,7 @@ O nó Tripo: Image to Model transforma uma única imagem de referência em um mo
 
 | Nome da saída | Descrição | Tipo de dados |
 |-------------|-------------|-----------|
-| `task_id do modelo` | O ID da tarefa Tripo do trabalho de geração. | MODEL_TASK_ID |
+| `model task_id` | O ID da tarefa Tripo do trabalho de geração. | MODEL_TASK_ID |
 | `GLB` | O modelo gerado como um arquivo GLB. Vazio quando `quad` está habilitado. | FILE3DGLB |
 | `FBX` | O modelo gerado como um arquivo FBX. Preenchido apenas quando `quad` está habilitado. | FILE3DFBX |
 

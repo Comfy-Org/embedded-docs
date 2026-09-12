@@ -44,9 +44,9 @@
 | `segment task_id` | 분할 작업의 작업 ID로, 다른 Tripo 노드의 입력으로 사용할 수 있습니다. | SEGMENT_TASK_ID |
 | `model task_id` | 분할된 모델입니다(이미지에서 생성되었거나 가져온 모델). | MODEL_TASK_ID |
 | `GLB` | 분할된 3D 모델 파일입니다. | FILE3DGLB |
-| `파트 이름` | 쉼표로 구분된 부분 이름입니다. | STRING |
-| `파트` | Tripo가 찾은 부분에 대한 설명입니다. | STRING |
-| `마스크` | 분할로 생성된 마스크 이미지입니다. | IMAGE |
+| `part_names` | 쉼표로 구분된 부분 이름입니다. | STRING |
+| `parts` | Tripo가 찾은 부분에 대한 설명입니다. | STRING |
+| `mask` | 분할로 생성된 마스크 이미지입니다. | IMAGE |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoSmartSegmentNode/ko.md)
 

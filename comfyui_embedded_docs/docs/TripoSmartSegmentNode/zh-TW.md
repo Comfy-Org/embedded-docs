@@ -41,12 +41,12 @@
 
 | 輸出名稱 | 描述 | 資料類型 |
 |-------------|-------------|-----------|
-| `分割 task_id` | 分割任務的任務 ID，可作為其他 Tripo 節點的輸入。 | SEGMENT_TASK_ID |
-| `模型 task_id` | 被分割的模型（從圖像生成，或匯入的模型）。 | MODEL_TASK_ID |
+| `segment task_id` | 分割任務的任務 ID，可作為其他 Tripo 節點的輸入。 | SEGMENT_TASK_ID |
+| `model task_id` | 被分割的模型（從圖像生成，或匯入的模型）。 | MODEL_TASK_ID |
 | `GLB` | 分割後的 3D 模型檔案。 | FILE3DGLB |
 | `part_names` | 以逗號分隔的部分名稱。 | STRING |
-| `零件` | Tripo 對其找到之部分的描述。 | STRING |
-| `遮罩` | 分割所產生的遮罩圖像。 | IMAGE |
+| `parts` | Tripo 對其找到之部分的描述。 | STRING |
+| `mask` | 分割所產生的遮罩圖像。 | IMAGE |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoSmartSegmentNode/zh-TW.md)
 

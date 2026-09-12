@@ -38,7 +38,7 @@ El parámetro `type` selecciona el codificador correcto para una arquitectura de
 |------------------|-------------|---------------|
 | `CLIP` | El modelo codificador de texto cargado, listo para conectarse a otros nodos para codificación de texto y condicionamiento. | CLIP |
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipLoader/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `6df608d500520d9414acd82d9fd509b1e211a8385202cefd5579e8a8f397bc64`

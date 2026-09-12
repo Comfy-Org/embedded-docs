@@ -1,29 +1,31 @@
 # ByteDance Seedream 5.0 Pro Katman Ayrıştırma
 
+ByteDance Seedream 5.0 Pro Layer Separation, bir görüntüyü bir arka plan plakası ve yeniden konumlandırılabilir en fazla 16 şeffaf katmana ayırır; her katmanın yığın sırası, sınırlayıcı kutusu, adı ve açıklaması vardır. Arka planı, maskelerle birlikte katman başına görüntüleri, yerleştirme kutularını ve düzenlemeye hazır bir katman yığınını döndürür.
+
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `görüntü` | Ayrıştırılacak görsel. Tam olarak bir görsel; en az 512x512 piksel, 1:16 ile 16:1 arasında en boy oranı. Yaklaşık 4MP'den büyük girdiler yüklemeden önce küçültülür. | IMAGE | Evet | Tek görsel |
-| `istem` | Görselin nasıl ayrıştırılacağı. Otomatik algılama ve tüm ana öğeleri ayırma için boş bırakın. Ayrıştırmayı kontrol etmek için öğeleri doğal dilde tanımlayın veya `<bbox>left top right bottom</bbox>` etiketleriyle belirli bölgeleri hedefleyin (0-1000 binde birlik koordinatlar). Varsayılan: boş dize. | STRING | Evet | Çok satırlı metin |
-| `boyut` | Çıktı çözünürlük düzeyi. "auto", girdi görselinin boyutunu izler (1K-2K aralığına sınırlanır). Varsayılan: "auto". | COMBO | Evet | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
-| `tohum` | Üretim için kullanılacak tohum değeri. Varsayılan: 0. | INT | Evet | 0 - 2147483647 |
-| `istem_optimizasyonu` | İstem iyileştirme modu: "standard" daha yüksek kalite, "fast" daha kısa üretim süresi sağlar. Varsayılan: "standard". | COMBO | Hayır | "standard"<br>"fast" |
-| `filigran` | Görsellere "AI generated" filigranı eklenip eklenmeyeceği. Varsayılan: false. | BOOLEAN | Hayır | false<br>true |
-| `katmanları_kırp` | Katman/maske toplu çıktılarının geometrisi (`layer_stack` etkilenmez ve her zaman içeriğe tam oturacak şekilde kırpılmıştır). Tam tuval: her katman, sınırlayıcı kutusu konumunda taban boyutunda bir tuval üzerine yerleştirilir - ImageCompositeMasked ile doğrudan yeniden birleştirin. Minimum boyut: her katman, sınırlayıcı kutusuna göre kırpılır (toplu işlem için en büyük katmana dolgulanır) - çok daha küçük tensörler; yerleşimi, `bboxes` çıktısını kullanarak Layers From Bounding Boxes ile yeniden oluşturun. Varsayılan: false (tam tuval). | BOOLEAN | Hayır | false (tam tuval)<br>true (minimum boyut) |
+| `image` | Ayrıştırılacak görüntü. Tam olarak bir görüntü, en az 512x512 piksel, en-boy oranı 1:16 ile 16:1 arasında. Yaklaşık 4MP'den büyük girdiler yüklemeden önce küçültülür. | IMAGE | Evet | Single image |
+| `prompt` | Görüntünün nasıl ayrıştırılacağı. Tüm ana öğeleri otomatik algılamak ve ayırmak için boş bırakın. Ayrıştırmayı kontrol etmek için öğeleri doğal dille tanımlayın veya `<bbox>left top right bottom</bbox>` etiketleriyle (0-1000 binde bir koordinatlar) tam bölgeleri hedefleyin. Varsayılan: boş dize. | STRING | Evet | Multiline text |
+| `size` | Çıktı çözünürlük düzeyi. "auto" girdi görüntü boyutunu izler (1K-2K aralığına sınırlandırılır). Varsayılan: "auto". | COMBO | Evet | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
+| `seed` | Üretim için kullanılacak tohum. Varsayılan: 0. | INT | Evet | 0 to 2147483647 |
+| `prompt_optimization` | İstem optimizasyonu modu: "standard" daha yüksek kalite, "fast" daha kısa üretim süresi verir. Varsayılan: "standard". | COMBO | Hayır | "standard"<br>"fast" |
+| `watermark` | Görüntülere "AI generated" filigranı eklenip eklenmeyeceği. Varsayılan: false. | BOOLEAN | Hayır | false<br>true |
+| `crop_layers` | Katmanlar/maskeler toplu çıktılarının geometrisi (`layer_stack` etkilenmez ve her zaman sıkı kırpılmıştır). Tam tuval: her katman, taban boyutunda bir tuval üzerinde sınırlayıcı kutusu konumunda - ImageCompositeMasked ile doğrudan yeniden birleştirin. Minimum boyut: her katman sınırlayıcı kutusuna kırpılır (toplu işlem için en büyük katmana kadar doldurulur) - çok daha küçük tensörler; `bboxes` çıktısını kullanarak Layers From Bounding Boxes ile yerleşimi yeniden oluşturun. Varsayılan: false (tam tuval). | BOOLEAN | Hayır | false (full canvas)<br>true (minimal size) |
 
-Not: `image` girdisi tek bir görsel olmalıdır; toplu işlemler desteklenmez. Görsel, en az 512x512 piksel boyutunda ve 1:16 ile 16:1 arasında bir en boy oranına sahip olmalıdır.
+Not: `image` girdisi tek bir görüntü olmalıdır; toplu işlemler desteklenmez. Görüntü en az 512x512 piksel olmalı ve en-boy oranı 1:16 ile 16:1 arasında olmalıdır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `taban_görüntü` | Katmanların üzerine yerleştiği temel görsel (arka plan katmanı). | IMAGE |
-| `taban_maske` | Temel görselin saydamlığı (1 = saydam, LoadImage kuralı); şu anda her zaman tamamen opaktır. | MASK |
-| `katmanlar` | Alttan üste sıralanmış saydam katmanlar. Tam tuval modu: sınırlayıcı kutusu konumlarında, siyah taban boyutunda bir tuval üzerine yerleştirilir. Minimum boyut modu: sınırlayıcı kutularına göre kırpılır, sol üste hizalanır ve en büyük katmana dolgulanır. | IMAGE |
-| `maskeler` | Katman başına saydamlık; katman toplu işlemiyle dizin uyumludur (1 = saydam, LoadImage kuralı). ImageCompositeMasked tarzı birleştirme için önce InvertMask ekleyin. | MASK |
-| `bboxes` | Katman başına bir yerleştirme kutusu; katman toplu işlemiyle dizin uyumludur (katman başına yerleşimi yeniden oluşturmak için her ikisini ve maskeleri Layers From Bounding Boxes düğümüne verin): `{x, y, width, height, metadata: {name, desc, z_index, native_size, content_rect, flags}}`. `content_rect = [left, top, width, height]`, katmanın kendi çerçevesi içindeki içerik bölgesidir; kutu konumuna bu ofset eklenmiş haliyle tuval üzerine yerleşir. | BOUNDING_BOX |
-| `katman_yığını` | Create Layered Image için düzenlemeye hazır katman belgesi: temel katman artı her öğe, kendi adlandırılmış, içeriğine tam oturacak şekilde kırpılmış katmanı olarak gerçek konumunda ve istifleme sırasındadır. Doğrudan bağlayın veya Add Layer ile genişletin. | LAYERS |
+| `base_image` | Katmanların üzerine yığıldığı taban görüntü (arka plan plakası). | IMAGE |
+| `base_mask` | Taban görüntünün şeffaflığı (1 = şeffaf, LoadImage kuralı); şu anda her zaman tamamen opaktır. | MASK |
+| `layers` | Alttan üste sıralanmış şeffaf katmanlar. Tam tuval modu: taban boyutunda siyah bir tuval üzerinde sınırlayıcı kutusu konumuna yerleştirilir. Minimum boyut modu: sınırlayıcı kutusuna kırpılır, sol üste sabitlenir, en büyük katmana kadar doldurulur. | IMAGE |
+| `masks` | Katman başına şeffaflık, katmanlar toplu işiyle dizin hizalı (1 = şeffaf, LoadImage kuralı). ImageCompositeMasked tarzı birleştirme için önce InvertMask ekleyin. | MASK |
+| `bboxes` | Katman başına bir yerleştirme kutusu, katmanlar toplu işiyle dizin hizalı (katman başına yerleşimi yeniden oluşturmak için her ikisini ve maskeleri Layers From Bounding Boxes'a besleyin): `{x, y, width, height, metadata: {name, desc, z_index, native_size, content_rect, flags}}`. `content_rect = [left, top, width, height]`, katmanın kendi çerçevesi içindeki içerik bölgesidir; tuval üzerinde kutunun konumuna artı bu uzaklığa denk gelen yere oturur. | BOUNDING_BOX |
+| `layer_stack` | Create Layered Image için düzenlemeye hazır katman belgesi: taban plakası artı her öğe, gerçek konumunda ve yığın sırasında kendi adlandırılmış, sıkı kırpılmış katmanı olarak. Doğrudan bağlayın veya Add Layer ile genişletin. | LAYERS |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNode/tr.md)
 

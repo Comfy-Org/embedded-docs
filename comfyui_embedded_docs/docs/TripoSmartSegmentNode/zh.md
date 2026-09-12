@@ -41,8 +41,8 @@
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `分割 task_id` | 分割任务的任务 ID，可用作其他 Tripo 节点的输入。 | SEGMENT_TASK_ID |
-| `模型 task_id` | 被分割的模型（由图像生成，或导入的模型）。 | MODEL_TASK_ID |
+| `segment task_id` | 分割任务的任务 ID，可用作其他 Tripo 节点的输入。 | SEGMENT_TASK_ID |
+| `model task_id` | 被分割的模型（由图像生成，或导入的模型）。 | MODEL_TASK_ID |
 | `GLB` | 分割后的 3D 模型文件。 | FILE3DGLB |
 | `part_names` | 以逗号分隔的各部分名称。 | STRING |
 | `parts` | Tripo 对其找到的部分的描述。 | STRING |

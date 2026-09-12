@@ -1,18 +1,18 @@
-# CLIPを読み込む
+# ClipLoader
 
-CLIPLoader ノードは、ファイルからテキストエンコーダーモデル（CLIP、T5、または同様のもの）を読み込み、テキストプロンプトを数値表現に変換する必要がある他のノードで使用できるようにします。多様なモデルアーキテクチャをサポートしており、それぞれに特定のエンコーダータイプが必要です。
+CLIPLoader ノードは、テキストエンコーダーモデル（CLIP、T5 など）をファイルからロードし、テキストプロンプトを数値表現に変換する必要がある他のノードで使用できるようにします。さまざまなモデルアーキテクチャをサポートしており、それぞれに特定のエンコーダータイプが必要です。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `clip名` | 読み込むテキストエンコーダーモデルのファイル名です。これは `ComfyUI/models/text_encoders/` ディレクトリにあるファイルである必要があります。 | STRING | はい | `text_encoders` フォルダー内で見つかったファイルのリスト |
-| `タイプ` | 読み込むモデルのアーキテクチャタイプです。使用する特定のエンコーダーバリアントを決定します（デフォルト: `"stable_diffusion"`）。 | COMBO | はい | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
-| `デバイス` | モデルを読み込むデバイスです。`"default"` は利用可能な場合に GPU を使用し、`"cpu"` は強制的に CPU に読み込みます。これは上級者向けオプションです（デフォルト: `"default"`）。 | COMBO | いいえ | `"default"`<br>`"cpu"` |
+| `clip名` | ロードするテキストエンコーダーモデルのファイル名。これは `ComfyUI/models/text_encoders/` ディレクトリにあるファイルである必要があります。 | STRING | はい | `text_encoders` フォルダ内で見つかったファイルの一覧 |
+| `タイプ` | ロードするモデルのアーキテクチャタイプ。使用する特定のエンコーダーバリアントを決定します（デフォルト: `"stable_diffusion"`）。 | COMBO | はい | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
+| `デバイス` | モデルをロードするデバイス。`"default"` は GPU が利用可能な場合に GPU を使用し、`"cpu"` は CPU へのロードを強制します。これは高度なオプションです（デフォルト: `"default"`）。 | COMBO | いいえ | `"default"`<br>`"cpu"` |
 
 ### サポートされるタイプとエンコーダーのマッピング
 
-`type` パラメータは、指定されたモデルアーキテクチャに対して正しいエンコーダーを選択します。一般的なマッピングは次のとおりです。
+`type` パラメータは、指定されたモデルアーキテクチャに適したエンコーダーを選択します。以下は一般的なマッピングです：
 
 | タイプ | エンコーダー |
 |------|---------|
@@ -21,8 +21,8 @@ CLIPLoader ノードは、ファイルからテキストエンコーダーモデ
 | sd3 | t5 xxl / clip-g / clip-l |
 | stable_audio | t5 base |
 | mochi | t5 xxl |
-| cogvideox | t5 xxl（226トークンパディング） |
-| cosmos | old t5 xxl |
+| cogvideox | t5 xxl（226トークンのパディング） |
+| cosmos | 旧 t5 xxl |
 | lumina2 | gemma 2 2B |
 | wan | umt5 xxl |
 | hidream | llama-3.1（推奨）または t5 |
@@ -36,9 +36,9 @@ CLIPLoader ノードは、ファイルからテキストエンコーダーモデ
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `CLIP` | 読み込まれたテキストエンコーダーモデルです。テキストエンコーディングとコンディショニングのために他のノードに接続できる状態です。 | CLIP |
+| `CLIP` | ロードされたテキストエンコーダーモデル。テキストエンコーディングとコンディショニングのために他のノードに接続する準備ができています。 | CLIP |
 
-> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/ja.md)
+> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipLoader/ja.md)
 
 ---
 **Source fingerprint (SHA-256):** `6df608d500520d9414acd82d9fd509b1e211a8385202cefd5579e8a8f397bc64`

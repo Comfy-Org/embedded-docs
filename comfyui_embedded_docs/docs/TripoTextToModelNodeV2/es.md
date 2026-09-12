@@ -32,7 +32,7 @@ Genera un modelo 3D a partir de una descripción de texto mediante el servicio T
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `id de tarea del modelo` | Identificador de la tarea de generación de Tripo que produjo el modelo. | MODEL_TASK_ID |
+| `model task_id` | Identificador de la tarea de generación de Tripo que produjo el modelo. | MODEL_TASK_ID |
 | `GLB` | El modelo generado en formato GLB. Vacío cuando `quad` está habilitado. | FILE3D_GLB |
 | `FBX` | El modelo generado en formato FBX. Solo se completa cuando `quad` está habilitado. | FILE3D_FBX |
 

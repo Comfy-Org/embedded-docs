@@ -33,7 +33,7 @@ Tripo: Image to Model 節點使用 Tripo 的 image-to-model 服務，將單一�
 
 | 輸出名稱 | 描述 | 資料類型 |
 |-------------|-------------|-----------|
-| `模型 task_id` | Tripo 生成工作的任務 ID。 | MODEL_TASK_ID |
+| `model task_id` | Tripo 生成工作的任務 ID。 | MODEL_TASK_ID |
 | `GLB` | 生成模型，格式為 GLB 檔案。啟用 `quad` 時為空。 | FILE3DGLB |
 | `FBX` | 生成模型，格式為 FBX 檔案。僅在啟用 `quad` 時填入。 | FILE3DFBX |
 

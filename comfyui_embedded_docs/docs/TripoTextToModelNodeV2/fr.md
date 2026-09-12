@@ -32,7 +32,7 @@ Génère un modèle 3D à partir d'une description textuelle en utilisant le ser
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `ID de tâche du modèle` | Identifiant de la tâche de génération Tripo ayant produit le modèle. | MODEL_TASK_ID |
+| `model task_id` | Identifiant de la tâche de génération Tripo ayant produit le modèle. | MODEL_TASK_ID |
 | `GLB` | Le modèle généré au format GLB. Vide lorsque `quad` est activé. | FILE3D_GLB |
 | `FBX` | Le modèle généré au format FBX. Rempli uniquement lorsque `quad` est activé. | FILE3D_FBX |
 

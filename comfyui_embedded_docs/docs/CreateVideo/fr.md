@@ -9,9 +9,9 @@ Le nœud Create Video combine une séquence d’images en une vidéo. Vous pouve
 | `images` | Les images à partir desquelles créer la vidéo. | IMAGE | Oui | - |
 | `fps` | Le nombre d’images par seconde pour la vitesse de lecture de la vidéo (par défaut : 30.0). | FLOAT | Oui | 1.0 - 120.0 |
 | `audio` | L’audio à ajouter à la vidéo. | AUDIO | Non | - |
-| `bit_depth` | Auto utilise 8 bits pour sRGB et 10 bits pour HDR et HDR PQ. Les choix explicites 8 bits et 10 bits sont indépendants de l’espace colorimétrique. (par défaut : "auto") | COMBO | Non | `"auto"`<br>8<br>10 |
+| `bit_depth` | L'option "auto" utilise 8 bits pour sRGB et 10 bits pour HDR et HDR PQ. Les choix explicites 8 bits et 10 bits sont indépendants de l’espace colorimétrique. (par défaut : "auto") | COMBO | Non | `"auto"`<br>8<br>10 |
 | `color_space` | Espace colorimétrique des images d’entrée. HDR sélectionne BT.2020/HLG et HDR PQ sélectionne BT.2020/PQ. (par défaut : "sRGB") | COMBO | Non | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"` |
-| `codec` | Encode éventuellement la vidéo immédiatement. None conserve les images sous forme de tenseur ; Auto utilise H.264. (par défaut : "none") | COMBO | Non | `"none"`<br>Options de codec vidéo disponibles dans la liste des codecs vidéo (par ex. `"auto"` et autres codecs pris en charge) |
+| `codec` | Encode éventuellement la vidéo immédiatement. L'option "none" conserve les images sous forme de tenseur ; l'option "auto" utilise H.264. (par défaut : "none") | COMBO | Non | `"none"`<br>Options de codec vidéo disponibles dans la liste des codecs vidéo (par ex. `"auto"` et autres codecs pris en charge) |
 
 Remarque : lorsque `bit_depth` est défini sur `"auto"`, le nœud utilise automatiquement 10 bits pour les espaces colorimétriques HDR et HDR PQ, et 8 bits pour sRGB.
 
