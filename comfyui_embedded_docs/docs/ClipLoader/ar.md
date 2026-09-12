@@ -1,20 +1,20 @@
-# ClipLoader
+# تحميل CLIP
 
-عقدة CLIPLoader تقوم بتحميل نموذج مشفّر نصوص (CLIP أو T5 أو ما شابه) من ملف، وتجعله متاحًا للاستخدام في العُقد الأخرى التي تحتاج إلى تحويل مطالبات النصوص إلى تمثيلات رقمية. وهي تدعم مجموعة واسعة من بنى النماذج، ويتطلب كلٌّ منها نوعًا محددًا من المشفّرات.
+تقوم عقدة CLIPLoader بتحميل نموذج مُشفّر نصي (CLIP أو T5 أو ما شابه) من ملف، مما يجعله متاحًا للاستخدام في عقد أخرى تحتاج إلى تحويل مطالبات النص إلى تمثيلات رقمية. وهي تدعم مجموعة واسعة من معماريات النماذج، ويتطلب كل منها نوع مُشفّر محددًا.
 
 ## المدخلات
 
-| المعامل | الوصف | نوع البيانات | إلزامي | النطاق |
-|-----------|-------------|-----------|----------|---------|
-| `اسم CLIP` | اسم ملف نموذج مشفّر النصوص المراد تحميله. يجب أن يكون ملفًا موجودًا داخل المجلد `ComfyUI/models/text_encoders/`. | STRING | نعم | قائمة الملفات الموجودة في مجلد `text_encoders` |
-| `النوع` | نوع بنية النموذج الذي يتم تحميله. يحدد هذا المتغير أيّ نسخة مشفّر محددة سيتم استخدامها (الافتراضي: `"stable_diffusion"`). | COMBO | نعم | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"` |
-| `الجهاز` | الجهاز الذي سيتم تحميل النموذج عليه. تستخدم القيمة `"default"` وحدة معالجة الرسومات (GPU) إذا كانت متوفرة، بينما تفرض القيمة `"cpu"` التحميل عبر وحدة المعالجة المركزية (CPU). هذا خيار متقدم (الافتراضي: `"default"`). | COMBO | لا | `"default"`<br>`"cpu"` |
+| المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
+|-----------|-------------|-----------|----------|-------|
+| `اسم CLIP` | اسم ملف نموذج مُشفّر النص المراد تحميله. يجب أن يكون ملفًا موجودًا في دليل `ComfyUI/models/text_encoders/`. | STRING | نعم | قائمة الملفات الموجودة في مجلد `text_encoders` |
+| `النوع` | نوع معمارية النموذج الذي يتم تحميله. يحدد هذا أي متغير مُشفّر محدد لاستخدامه (الافتراضي: `"stable_diffusion"`). | COMBO | نعم | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
+| `الجهاز` | الجهاز الذي سيتم تحميل النموذج عليه. يستخدم `"default"` وحدة معالجة الرسومات (GPU) إذا كانت متاحة، بينما يفرض `"cpu"` التحميل على وحدة المعالجة المركزية (CPU). هذا خيار متقدم (الافتراضي: `"default"`). | COMBO | لا | `"default"`<br>`"cpu"` |
 
-### الاقترانات المدعومة بين النوع والمشفّر
+### تعيينات النوع إلى المُشفّر المدعومة
 
-تحدد معلمة `type` المشفّر الصحيح لبنية نموذج معينة. فيما يلي الاقترانات الشائعة:
+يحدد المعامل `type` المُشفّر الصحيح لمعمارية نموذج معينة. فيما يلي التعيينات الشائعة:
 
-| النوع | المشفّر |
+| النوع | المُشفّر |
 |------|---------|
 | stable_diffusion | clip-l |
 | stable_cascade | clip-g |
@@ -25,20 +25,20 @@
 | cosmos | old t5 xxl |
 | lumina2 | gemma 2 2B |
 | wan | umt5 xxl |
-| hidream | llama-3.1 (موصى به) أو t5 |
+| hidream | llama-3.1 (recommended) or t5 |
 | omnigen2 | qwen vl 2.5 3B |
 | joyimage | qwen3-vl 8B |
 | lens | gpt-oss-20b |
 | pixeldit | gemma 2 2B elm |
-| minimax | MiniMax H3 Qwen3-VL أو Music3 Qwen/RVQ |
+| minimax | MiniMax H3 Qwen3-VL or Music3 Qwen/RVQ |
 
 ## المخرجات
 
-| اسم المخرَج | الوصف | نوع البيانات |
+| اسم المخرج | الوصف | نوع البيانات |
 |-------------|-------------|-----------|
-| `clip` | نموذج مشفّر النصوص المُحمَّل، وجاهز للاتصال بالعُقد الأخرى لترميز النصوص والتكييف. | CLIP |
+| `CLIP` | نموذج مُشفّر النص المحمّل، جاهز للاتصال بعقد أخرى لتشفير النص والتكييف. | CLIP |
 
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipLoader/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `7c1586d01410d319468f7c8c153ef0717280804add868ba57bff0c6539fb5dd9`
+**Source fingerprint (SHA-256):** `6df608d500520d9414acd82d9fd509b1e211a8385202cefd5579e8a8f397bc64`

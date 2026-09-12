@@ -1,30 +1,30 @@
-# BriaEraser
+# Bria Eraser
 
-O nó Bria Eraser remove objetos ou áreas de uma imagem usando a API Bria. Você fornece uma imagem e uma máscara que delimita as regiões a remover; o nó envia ambos para a Bria, executa o trabalho de remoção, aguarda a conclusão e retorna a imagem editada com as áreas mascaradas apagadas.
+O Bria Eraser remove objetos ou áreas de uma imagem usando a API da Bria. Você fornece uma imagem e uma máscara que delineia as regiões a remover; o nó envia ambas para a Bria, executa a tarefa de apagamento, aguarda sua conclusão e retorna a imagem editada com as áreas mascaradas apagadas.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
-|-----------|-------------|---------------|-------------|-----------|
+|-----------|-------------|-----------|----------|-------|
 | `image` | A imagem de entrada contendo os objetos ou áreas a remover. | IMAGE | Sim | - |
-| `mask` | Áreas brancas são apagadas, áreas pretas são preservadas. A máscara é binarizada antes do envio, portanto áreas parcialmente pintadas são consideradas brancas. Deve ter a mesma proporção (aspect ratio) da imagem. | MASK | Sim | - |
-| `mask_type` | Seleciona como a máscara foi criada. `"manual"` é para máscaras desenhadas à mão ou com pincel; `"automatic"` é para máscaras produzidas por modelos de segmentação como SAM. | COMBO | Sim | `"manual"`<br>`"automatic"` |
-| `moderation` | Configurações de moderação. Defina como `"true"` para ativar a moderação visual de conteúdo nas imagens de entrada e/ou saída. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
+| `mask` | Áreas brancas são apagadas, áreas pretas são preservadas. A máscara é binarizada antes do envio, então áreas parcialmente pintadas contam como branco. Deve ter a mesma proporção da imagem. | MASK | Sim | - |
+| `mask_type` | O tipo de origem da máscara. "manual" é para máscaras desenhadas à mão ou com pincel; "automatic" é para máscaras produzidas por modelos de segmentação, como SAM. | COMBO | Sim | "manual"<br>"automatic" |
+| `moderation` | Configurações de moderação. Defina como "true" para ativar a moderação de conteúdo visual nas imagens de entrada e/ou saída. | DYNAMIC_COMBO | Sim | "false"<br>"true" |
 
-Observação: quando `moderation` é definido como `"true"`, duas configurações booleanas adicionais ficam disponíveis:
+Quando `moderation` está definido como "true", duas configurações booleanas adicionais ficam disponíveis:
 
-- `visual_input_moderation` — aplica moderação visual de conteúdo na imagem de entrada (padrão: false)
-- `visual_output_moderation` — aplica moderação visual de conteúdo na imagem de saída (padrão: false)
+- `visual_input_moderation` — aplica moderação de conteúdo visual à imagem de entrada (padrão: false)
+- `visual_output_moderation` — aplica moderação de conteúdo visual à imagem de saída (padrão: false)
 
-A máscara deve corresponder à proporção da imagem; caso contrário, a solicitação falha. A máscara é convertida em uma máscara binária (preto e branco) antes de ser enviada à API: áreas pintadas com menos da metade da opacidade são ignoradas, e áreas parcialmente pintadas são tratadas como brancas e serão apagadas. A máscara deve conter pelo menos alguma área branca; uma máscara vazia faz a solicitação falhar porque não há nada para apagar.
+Observação: A máscara deve corresponder à proporção da imagem, caso contrário, a requisição falha. A máscara é convertida em uma máscara binária (preto e branco) antes de ser enviada para a API: áreas pintadas com menos da metade da opacidade são ignoradas, e áreas parcialmente pintadas são tratadas como branco e serão apagadas. A máscara deve conter pelo menos alguma área branca; uma máscara vazia faz a requisição falhar porque não há nada para apagar.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
-|---------------|-------------|---------------|
-| `image` | A imagem editada com os objetos ou áreas mascarados removidos. | IMAGE |
+|-------------|-------------|-----------|
+| `image` | A imagem editada com os objetos ou áreas mascaradas removidos. | IMAGE |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaEraser/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `557272ecb0e6487796184ce88217ff318de4a5728a82e903aeb3fa3a0d24a664`
+**Source fingerprint (SHA-256):** `5528b7a3cb4d0a7b1b28acbc642a8bd21e2eacf5aa225403d6344c29f0cdba80`

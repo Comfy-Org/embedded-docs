@@ -1,14 +1,14 @@
-# ClipLoader
+# CLIP 로드
 
-CLIPLoader 노드는 파일에서 텍스트 인코더 모델(CLIP, T5 또는 유사 모델)을 로드하여, 텍스트 프롬프트를 수치 표현으로 변환해야 하는 다른 노드에서 사용할 수 있도록 제공합니다. 이 노드는 다양한 모델 아키텍처를 지원하며, 각 아키텍처마다 특정 인코더 유형이 필요합니다.
+CLIPLoader 노드는 파일에서 텍스트 인코더 모델(CLIP, T5 또는 유사 모델)을 로드하여, 텍스트 프롬프트를 수치 표현으로 변환해야 하는 다른 노드에서 사용할 수 있게 합니다. 다양한 모델 아키텍처를 지원하며, 각 아키텍처에는 특정 인코더 유형이 필요합니다.
 
 ## 입력
 
-| 매개변수 | 설명 | 데이터 유형 | 필수 여부 | 범위 |
+| 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
 | `CLIP 파일명` | 로드할 텍스트 인코더 모델의 파일 이름입니다. 이 파일은 `ComfyUI/models/text_encoders/` 디렉터리에 있어야 합니다. | STRING | 예 | `text_encoders` 폴더에서 발견된 파일 목록 |
-| `유형` | 로드되는 모델의 아키텍처 유형입니다. 사용할 특정 인코더 변형을 결정합니다 (기본값: `"stable_diffusion"`). | COMBO | 예 | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"` |
-| `장치` | 모델을 로드할 디바이스입니다. `"default"`는 GPU를 사용 가능한 경우 사용하며, `"cpu"`는 CPU 로딩을 강제합니다. 고급 옵션입니다 (기본값: `"default"`). | COMBO | 아니요 | `"default"`<br>`"cpu"` |
+| `유형` | 로드할 모델의 아키텍처 유형입니다. 사용할 특정 인코더 변형을 결정합니다(기본값: `"stable_diffusion"`). | COMBO | 예 | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
+| `장치` | 모델을 로드할 장치입니다. `"default"`는 사용 가능한 경우 GPU를 사용하고, `"cpu"`는 CPU 로딩을 강제합니다. 이는 고급 옵션입니다(기본값: `"default"`). | COMBO | 아니요 | `"default"`<br>`"cpu"` |
 
 ### 지원되는 타입-인코더 매핑
 
@@ -25,7 +25,7 @@ CLIPLoader 노드는 파일에서 텍스트 인코더 모델(CLIP, T5 또는 유
 | cosmos | old t5 xxl |
 | lumina2 | gemma 2 2B |
 | wan | umt5 xxl |
-| hidream | llama-3.1 (권장) 또는 t5 |
+| hidream | llama-3.1(권장) 또는 t5 |
 | omnigen2 | qwen vl 2.5 3B |
 | joyimage | qwen3-vl 8B |
 | lens | gpt-oss-20b |
@@ -34,11 +34,11 @@ CLIPLoader 노드는 파일에서 텍스트 인코더 모델(CLIP, T5 또는 유
 
 ## 출력
 
-| 출력 이름 | 설명 | 데이터 유형 |
+| 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `clip` | 로드된 텍스트 인코더 모델로, 텍스트 인코딩 및 컨디셔닝을 위해 다른 노드에 연결할 수 있는 상태입니다. | CLIP |
+| `CLIP` | 로드된 텍스트 인코더 모델로, 텍스트 인코딩 및 컨디셔닝을 위해 다른 노드에 연결할 준비가 되어 있습니다. | CLIP |
 
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipLoader/ko.md)
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `7c1586d01410d319468f7c8c153ef0717280804add868ba57bff0c6539fb5dd9`
+**Source fingerprint (SHA-256):** `6df608d500520d9414acd82d9fd509b1e211a8385202cefd5579e8a8f397bc64`

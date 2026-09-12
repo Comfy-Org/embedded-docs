@@ -1,6 +1,6 @@
 # Bria Generative Fill
 
-This node generates objects or scenery inside a masked region of an image using the Bria API. It uploads the image and mask, sends the prompt to the Bria generative fill service, waits for the operation to complete, and returns the edited image. This is a paid API operation (US$0.0429 per request).
+This node generates objects or scenery inside a masked region of an image using Bria. It uploads the image and mask, sends the prompt to the Bria generative fill service, waits for the operation to complete, and returns the edited image. This is a paid API operation (US$0.0429 per request).
 
 ## Inputs
 
@@ -35,4 +35,4 @@ This node generates objects or scenery inside a masked region of an image using 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaGenFill/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `0d9babfa5e14c03f73d2b5befbd1c5cd1f5ffc685a0d7ccb3db09cfec51ba4fa`
+**Source fingerprint (SHA-256):** `b23e29d4457f859181d68eaeb4b0238de28f4b18932d68438fa2954739cdc66a`

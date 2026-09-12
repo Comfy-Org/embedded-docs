@@ -1,17 +1,18 @@
-# ClipLoader
+# 加载CLIP
 
-CLIPLoader 节点从文件中加载文本编码器模型（CLIP、T5 或类似模型），使其可用于其他需要将文本提示转换为数值表示的节点。它支持多种模型架构，每种架构都需要特定的编码器类型。
+CLIPLoader 节点从文件加载文本编码器模型（CLIP、T5 或类似），使其可供其他需要将文本提示转换为数值表示的节点使用。它支持各种模型架构，每种架构都需要特定的编码器类型。
 
 ## 输入
-| 参数 | 说明 | 数据类型 | 是否必需 | 范围 |
+
+| 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `CLIP名称` | 要加载的文本编码器模型的文件名。该文件必须位于 `ComfyUI/models/text_encoders/` 目录中。 | STRING | 是 | `text_encoders` 文件夹中的文件列表 |
-| `类型` | 所加载模型的架构类型。这决定了要使用的具体编码器变体（默认值：`"stable_diffusion"`）。 | COMBO | 是 | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"` |
-| `设备` | 用于加载模型的设备。`"default"` 会在可用时使用 GPU，而 `"cpu"` 则强制使用 CPU 加载。这是一个高级选项（默认值：`"default"`）。 | COMBO | 否 | `"default"`<br>`"cpu"` |
+| `CLIP名称` | 要加载的文本编码器模型的文件名。该文件必须位于 `ComfyUI/models/text_encoders/` 目录中。 | STRING | 是 | 在 `text_encoders` 文件夹中找到的文件列表 |
+| `类型` | 要加载的模型的架构类型。这决定了使用哪个特定的编码器变体（默认：`"stable_diffusion"`）。 | COMBO | 是 | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
+| `设备` | 将模型加载到的设备。`"default"` 在可用时使用 GPU，而 `"cpu"` 强制使用 CPU 加载。这是一个高级选项（默认：`"default"`）。 | COMBO | 否 | `"default"`<br>`"cpu"` |
 
-### 支持的类型与编码器映射
+### 支持的类型到编码器映射
 
-`type` 参数会为给定的模型架构选择正确的编码器。以下是常见的映射：
+`type` 参数为给定的模型架构选择正确的编码器。以下是常见映射：
 
 | 类型 | 编码器 |
 |------|---------|
@@ -32,11 +33,12 @@ CLIPLoader 节点从文件中加载文本编码器模型（CLIP、T5 或类似�
 | minimax | MiniMax H3 Qwen3-VL 或 Music3 Qwen/RVQ |
 
 ## 输出
-| 输出名称 | 说明 | 数据类型 |
-|-------------|-------------|-----------|
-| `clip` | 已加载的文本编码器模型，可连接到其他节点以进行文本编码和条件设置。 | CLIP |
 
-> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipLoader/zh.md)
+| 输出名称 | 描述 | 数据类型 |
+|-------------|-------------|-----------|
+| `CLIP` | 已加载的文本编码器模型，可连接到其他节点以进行文本编码和条件化。 | CLIP |
+
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `7c1586d01410d319468f7c8c153ef0717280804add868ba57bff0c6539fb5dd9`
+**Source fingerprint (SHA-256):** `6df608d500520d9414acd82d9fd509b1e211a8385202cefd5579e8a8f397bc64`

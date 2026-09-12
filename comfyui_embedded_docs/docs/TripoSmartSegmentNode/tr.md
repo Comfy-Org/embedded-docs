@@ -46,7 +46,7 @@ Bir 3B modeli anlamsal olarak anlamlı parçalara böler ve her parçaya bir ad 
 | `GLB` | Segmentlere ayrılmış 3B model dosyası. | FILE3DGLB |
 | `part_names` | Parçaların virgülle ayrılmış adları. | STRING |
 | `parts` | Tripo'nun bulduğu parçaların açıklaması. | STRING |
-| `mask` | Segmentasyon tarafından üretilen maske görüntüsü. | IMAGE |
+| `maske` | Segmentasyon tarafından üretilen maske görüntüsü. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoSmartSegmentNode/tr.md)
 
