@@ -9,7 +9,7 @@ This node removes an object described in plain text from an image using Bria. Br
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `image` | The image from which the named object should be removed. | IMAGE | Yes | - |
-| `object_name` | Name of the object to remove, such as 'the lamp'. Several objects can be named at once, such as 'the phone and the pencils'. Naming something that is not in the picture still returns, and bills, a re-rendered image. Must be at least 1 character long (default: empty). | STRING | Yes | - |
+| `object_name` | Name of the object to remove, such as 'the lamp'. Several objects can be named at once, such as 'the phone and the pencils'. Naming something that is not in the picture still returns a re-rendered image, and the request is still billed. Must be at least 1 character long (default: empty). | STRING | Yes | - |
 | `moderation` | Moderation settings. Selects whether the optional moderation controls are shown. | DYNAMIC_COMBO | Yes | `"false"`<br>`"true"` |
 
 ### Moderation Inputs

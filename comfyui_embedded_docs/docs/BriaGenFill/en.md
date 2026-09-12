@@ -9,7 +9,7 @@ This node generates objects or scenery inside a masked region of an image using 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `image` | The input image to edit. | IMAGE | Yes | - |
-| `mask` | White areas are filled with generated content, black areas are preserved. The mask is binarized before sending, so partially painted areas count as white. Must have the same aspect ratio as the image. | MASK | Yes | - |
+| `mask` | White areas are filled with generated content, black areas are preserved. The mask is binarized before sending with a 50% cutoff: only areas painted above 50% opacity count as white. Must have the same aspect ratio as the image. | MASK | Yes | - |
 | `prompt` | Description of what to generate inside the masked region. Must contain at least 1 character. (default: "") | STRING | Yes | - |
 | `negative_prompt` | A prompt describing content to avoid in the generated result. If left empty, it is not sent to the API. (default: "") | STRING | Yes | - |
 | `refine_prompt` | Automatically adjust the prompt for better results; disable to use the prompt exactly as written. (default: true) | BOOLEAN | Yes | true<br>false |

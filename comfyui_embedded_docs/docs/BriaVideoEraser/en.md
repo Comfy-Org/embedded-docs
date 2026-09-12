@@ -23,7 +23,7 @@ Erases whatever a per-frame mask covers from a video with Bria and fills the gap
 
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
-| `video` | The edited clip with the masked areas erased and the gaps filled in. May be a few frames shorter than the input clip. | VIDEO |
+| `video` | The edited clip with the masked areas erased and the gaps filled in. The output may be a few frames shorter than the input clip. | VIDEO |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaVideoEraser/en.md)
 

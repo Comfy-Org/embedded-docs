@@ -7,7 +7,7 @@ Bria Eraser removes objects or areas from an image using the Bria API. You provi
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `image` | The input image containing the objects or areas to remove. | IMAGE | Yes | - |
-| `mask` | White areas are erased, black areas are preserved. The mask is binarized before sending, so partially painted areas count as white. Must have the same aspect ratio as the image. | MASK | Yes | - |
+| `mask` | White areas are erased, black areas are preserved. The mask is binarized before sending with a 50% cutoff: only areas painted above 50% opacity count as white. Must have the same aspect ratio as the image. | MASK | Yes | - |
 | `mask_type` | The mask source type. "manual" is for hand-drawn or brush masks; "automatic" is for masks produced by segmentation models such as SAM. | COMBO | Yes | "manual"<br>"automatic" |
 | `moderation` | Moderation settings. Set to "true" to enable visual content moderation on the input and/or output images. | DYNAMIC_COMBO | Yes | "false"<br>"true" |
 
