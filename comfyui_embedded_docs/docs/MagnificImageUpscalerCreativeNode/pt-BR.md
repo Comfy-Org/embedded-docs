@@ -7,15 +7,15 @@ Este nó usa o serviço Magnific AI para ampliar e aprimorar criativamente uma i
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `imagem` | A imagem de entrada a ser ampliada e aprimorada. | IMAGE | Sim | - |
-| `prompt` | Uma descrição textual para orientar o aprimoramento criativo da imagem. Opcional (padrão: vazio). | STRING | Não | - |
+| `prompt` | Uma descrição textual para orientar o aprimoramento criativo da imagem. Opcional (padrão: vazio). | STRING | Sim | - |
 | `fator de escala` | O fator pelo qual as dimensões da imagem serão ampliadas. | COMBO | Sim | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` |
 | `otimizado para` | O estilo ou tipo de conteúdo para o qual o processo de aprimoramento será otimizado. | COMBO | Sim | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` |
-| `criatividade` | Controla o nível de interpretação criativa aplicado à imagem (padrão: 0). | INT | Não | -10 a 10 |
-| `hdr` | O nível de definição e detalhes (padrão: 0). | INT | Não | -10 a 10 |
-| `semelhança` | O nível de semelhança com a imagem original (padrão: 0). | INT | Não | -10 a 10 |
-| `fractalidade` | A força do prompt e a complexidade por pixel quadrado (padrão: 0). | INT | Não | -10 a 10 |
+| `criatividade` | Controla o nível de interpretação criativa aplicado à imagem (padrão: 0). | INT | Sim | -10 a 10 |
+| `hdr` | O nível de definição e detalhes (padrão: 0). | INT | Sim | -10 a 10 |
+| `semelhança` | O nível de semelhança com a imagem original (padrão: 0). | INT | Sim | -10 a 10 |
+| `fractalidade` | A força do prompt e a complexidade por pixel quadrado (padrão: 0). | INT | Sim | -10 a 10 |
 | `engine` | O motor de IA específico a ser usado para o processamento. Este é um parâmetro avançado. | COMBO | Sim | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` |
-| `redução automática` | Reduz automaticamente a escala da imagem de entrada se a saída exceder o limite máximo de pixels (padrão: False). Este é um parâmetro avançado. | BOOLEAN | Não | - |
+| `redução automática` | Reduz automaticamente a escala da imagem de entrada se a saída exceder o limite máximo de pixels (padrão: False). Este é um parâmetro avançado. | BOOLEAN | Sim | - |
 
 **Restrições:**
 

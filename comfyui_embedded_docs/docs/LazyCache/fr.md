@@ -7,10 +7,10 @@ LazyCache est une version maison d'EasyCache qui offre une implémentation encor
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `modèle` | Le modèle auquel ajouter LazyCache. | MODEL | Oui | - |
-| `seuil_réutilisation` | Le seuil pour réutiliser les étapes mises en cache (défaut : 0.2). | FLOAT | Non | 0.0 - 3.0 |
-| `pourcentage_début` | L’étape d’échantillonnage relative pour commencer à utiliser LazyCache (défaut : 0.15). | FLOAT | Non | 0.0 - 1.0 |
-| `pourcentage_fin` | L’étape d’échantillonnage relative pour arrêter d’utiliser LazyCache (défaut : 0.95). | FLOAT | Non | 0.0 - 1.0 |
-| `verbeux` | Indique si des informations détaillées doivent être consignées (défaut : False). | BOOLEAN | Non | - |
+| `seuil_réutilisation` | Le seuil pour réutiliser les étapes mises en cache (défaut : 0.2). | FLOAT | Oui | 0.0 - 3.0 |
+| `pourcentage_début` | L’étape d’échantillonnage relative pour commencer à utiliser LazyCache (défaut : 0.15). | FLOAT | Oui | 0.0 - 1.0 |
+| `pourcentage_fin` | L’étape d’échantillonnage relative pour arrêter d’utiliser LazyCache (défaut : 0.95). | FLOAT | Oui | 0.0 - 1.0 |
+| `verbeux` | Indique si des informations détaillées doivent être consignées (défaut : False). | BOOLEAN | Oui | - |
 
 Remarque : `reuse_threshold`, `start_percent`, `end_percent` et `verbose` sont des options avancées facultatives.
 

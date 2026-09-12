@@ -7,8 +7,8 @@ Ce nœud ancre une image, un court clip, de l'audio ou un clip avec sa bande-son
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `positive` | Le conditionnement auquel l'image clé de guidage est attachée. | CONDITIONING | Oui | - |
-| `latent` | Le latent audio-vidéo MiniMax H3 qui définit la vidéo cible. Doit être un latent AV MiniMax H3 (imbriqué, avec deux tenseurs 5D de 24 canaux chacun). | LATENT | Oui | - |
-| `frame_idx` | Index de frame pour ancrer l'image ou la première frame du clip. Les valeurs négatives sont comptées depuis la fin de la vidéo. (défaut : 0) | INT | Oui | -9999 à 9999 |
+| `latent` | Le latent audio-vidéo MiniMax H3 qui définit la vidéo cible. Doit être un latent AV MiniMax H3 (imbriqué, avec deux tenseurs 5D de 24 canaux chacun). | LATENT | Non | - |
+| `frame_idx` | Index de frame pour ancrer l'image ou la première frame du clip. Les valeurs négatives sont comptées depuis la fin de la vidéo. (défaut : 0) | INT | Non | -9999 à 9999 |
 | `vae` | VAE vidéo, requis lorsqu'une image est connectée. | VAE | Non | - |
 | `audio_vae` | VAE audio, requis lorsqu'un audio est connecté. | VAE | Non | - |
 | `image` | Image ou frames vidéo à ancrer. Les lots multi-frames sont ancrés comme un clip et recadrés aux longueurs de clip valides du modèle : 5, 22, 39... (17k + 5) frames. Les lots de moins de 5 frames utilisent uniquement la première image. | IMAGE | Non | - |

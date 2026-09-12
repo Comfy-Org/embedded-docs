@@ -7,7 +7,7 @@ Ce nœud redimensionne les images afin que le bord le plus court corresponde à 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `image` | L'image d'entrée à redimensionner. | IMAGE | Oui | - |
-| `shorter_edge` | Longueur cible pour le bord le plus court. (valeur par défaut : 512) | INT | Non | 1 à 8192 |
+| `shorter_edge` | Longueur cible pour le bord le plus court. (valeur par défaut : 512) | INT | Oui | 1 à 8192 |
 
 ## Sorties
 

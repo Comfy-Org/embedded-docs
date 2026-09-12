@@ -8,10 +8,10 @@ El nodo Hunyuan Video 15 Latent Upscale With Model aumenta la resolución de una
 | --- | --- | --- | --- | --- |
 | `modelo` | El modelo de ampliación latente Hunyuan Video 1.5 utilizado para refinar las muestras ampliadas. | LATENT_UPSCALE_MODEL | Sí | N/D |
 | `muestras` | La representación de imagen latente que se va a ampliar. | LATENT | Sí | N/D |
-| `método_de_escalado` | El algoritmo de interpolación utilizado para el paso de ampliación inicial (predeterminado: `"bilinear"`). | COMBO | No | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"bislerp"` |
-| `ancho` | El ancho objetivo para el latente ampliado, en píxeles. Un valor de 0 calcula el ancho automáticamente según la altura objetivo y la relación de aspecto original. El ancho final de salida será un múltiplo de 16 (predeterminado: 1280). | INT | No | 0 a 16384 (paso: 8) |
-| `alto` | La altura objetivo para el latente ampliado, en píxeles. Un valor de 0 calcula la altura automáticamente según el ancho objetivo y la relación de aspecto original. La altura final de salida será un múltiplo de 16 (predeterminado: 720). | INT | No | 0 a 16384 (paso: 8) |
-| `recorte` | Determina cómo se recorta el latente ampliado para ajustarse a las dimensiones objetivo. | COMBO | No | `"disabled"`<br>`"center"` |
+| `método_de_escalado` | El algoritmo de interpolación utilizado para el paso de ampliación inicial (predeterminado: `"bilinear"`). | COMBO | Sí | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"bislerp"` |
+| `ancho` | El ancho objetivo para el latente ampliado, en píxeles. Un valor de 0 calcula el ancho automáticamente según la altura objetivo y la relación de aspecto original. El ancho final de salida será un múltiplo de 16 (predeterminado: 1280). | INT | Sí | 0 a 16384 (paso: 8) |
+| `alto` | La altura objetivo para el latente ampliado, en píxeles. Un valor de 0 calcula la altura automáticamente según el ancho objetivo y la relación de aspecto original. La altura final de salida será un múltiplo de 16 (predeterminado: 720). | INT | Sí | 0 a 16384 (paso: 8) |
+| `recorte` | Determina cómo se recorta el latente ampliado para ajustarse a las dimensiones objetivo. | COMBO | Sí | `"disabled"`<br>`"center"` |
 
 **Nota sobre las dimensiones:** Si tanto `width` como `height` se establecen en 0, el nodo devuelve las `samples` de entrada sin cambios. Si solo una dimensión se establece en 0, la otra se calcula para preservar la relación de aspecto original. Las dimensiones finales siempre se ajustan para ser al menos 64 píxeles y divisibles por 16.
 

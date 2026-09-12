@@ -9,7 +9,7 @@ El nodo `StableCascade_EmptyLatentImage` crea tensores latentes vacíos para los
 | `ancho` | El ancho de la imagen de salida en píxeles (predeterminado: 1024, paso: 8) | INT | Sí | 256 a MAX_RESOLUTION |
 | `altura` | La altura de la imagen de salida en píxeles (predeterminado: 1024, paso: 8) | INT | Sí | 256 a MAX_RESOLUTION |
 | `compresión` | El factor de compresión que determina las dimensiones latentes para la etapa C (predeterminado: 42, paso: 1). Este es un parámetro avanzado. | INT | Sí | 4 a 128 |
-| `tamaño_del_lote` | El número de muestras latentes a generar en un lote (predeterminado: 1) | INT | No | 1 a 4096 |
+| `tamaño_del_lote` | El número de muestras latentes a generar en un lote (predeterminado: 1) | INT | Sí | 1 a 4096 |
 
 Nota: El valor de `compression` controla el tamaño latente de la etapa C: su altura y ancho son la `height` y `width` de entrada divididas por `compression`. El latente de la etapa B siempre usa una compresión fija de 4.
 

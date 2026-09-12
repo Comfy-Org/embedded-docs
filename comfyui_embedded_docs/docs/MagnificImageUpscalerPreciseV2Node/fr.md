@@ -9,10 +9,10 @@ Le nœud Magnific Image Upscale (Precise V2) effectue une mise à l'échelle d'i
 | `image` | L'image d'entrée à mettre à l'échelle. Une seule image est requise. Les dimensions minimales sont de 160x160 pixels. Le rapport hauteur/largeur doit être compris entre 1:3 et 3:1. | IMAGE | Oui | - |
 | `facteur d’agrandissement` | Le facteur de mise à l'échelle souhaité. | COMBO | Oui | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` |
 | `style` | Style de traitement : sublime pour un usage général, photo pour les photographies, photo_denoiser pour les photos bruitées. | COMBO | Oui | `"sublime"`<br>`"photo"`<br>`"photo_denoiser"` |
-| `netteté` | Intensité de la netteté de l'image. Des valeurs plus élevées augmentent la définition des contours et la clarté. Défaut : 7. | INT | Non | 0 à 100 |
-| `grain intelligent` | Amélioration intelligente du grain/des textures pour éviter que l'image ne paraisse trop lisse ou artificielle. Défaut : 7. | INT | Non | 0 à 100 |
-| `ultra-détail` | Contrôle les détails fins, les textures et les micro-détails ajoutés lors de la mise à l'échelle. Défaut : 30. | INT | Non | 0 à 100 |
-| `réduction automatique` | Réduit automatiquement l'image d'entrée si la sortie dépasse la résolution maximale. Défaut : False. | BOOLEAN | Non | - |
+| `netteté` | Intensité de la netteté de l'image. Des valeurs plus élevées augmentent la définition des contours et la clarté. Défaut : 7. | INT | Oui | 0 à 100 |
+| `grain intelligent` | Amélioration intelligente du grain/des textures pour éviter que l'image ne paraisse trop lisse ou artificielle. Défaut : 7. | INT | Oui | 0 à 100 |
+| `ultra-détail` | Contrôle les détails fins, les textures et les micro-détails ajoutés lors de la mise à l'échelle. Défaut : 30. | INT | Oui | 0 à 100 |
+| `réduction automatique` | Réduit automatiquement l'image d'entrée si la sortie dépasse la résolution maximale. Défaut : False. | BOOLEAN | Oui | - |
 
 **Remarque :** Si `auto_downscale` est désactivé et que la taille de sortie demandée (dimensions d'entrée × `scale_factor`) dépasse 10060x10060 pixels, le nœud générera une erreur. Lorsque `auto_downscale` est activé, le nœud tentera de trouver un facteur d'échelle optimal qui minimise la perte de qualité.
 

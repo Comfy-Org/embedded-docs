@@ -7,9 +7,9 @@ Le nœud APG (Adaptive Projected Guidance) modifie le processus d'échantillonna
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `modèle` | Le modèle de diffusion auquel appliquer le guidage projectif adaptatif | MODEL | Oui | - |
-| `eta` | Contrôle l'échelle du vecteur de guidage parallèle. Comportement CFG par défaut à un réglage de 1 (défaut : 1.0). | FLOAT | Oui | -10.0 à 10.0 |
-| `seuil_norme` | Normalise le vecteur de guidage à cette valeur ; la normalisation est désactivée à un réglage de 0 (défaut : 5.0). | FLOAT | Oui | 0.0 à 50.0 |
-| `momentum` | Contrôle une moyenne mobile du guidage pendant la diffusion, désactivée à un réglage de 0 (défaut : 0.0). | FLOAT | Oui | -5.0 à 1.0 |
+| `eta` | Contrôle l'échelle du vecteur de guidage parallèle. Comportement CFG par défaut à un réglage de 1 (défaut : 1.0). | FLOAT | Non | -10.0 à 10.0 |
+| `seuil_norme` | Normalise le vecteur de guidage à cette valeur ; la normalisation est désactivée à un réglage de 0 (défaut : 5.0). | FLOAT | Non | 0.0 à 50.0 |
+| `momentum` | Contrôle une moyenne mobile du guidage pendant la diffusion, désactivée à un réglage de 0 (défaut : 0.0). | FLOAT | Non | -5.0 à 1.0 |
 
 Remarque : Lorsque le niveau de bruit (`sigma`) augmente pendant l'échantillonnage, la moyenne mobile du momentum est réinitialisée à zéro. Si le modèle ne fournit qu'une seule sortie de conditionnement (sans conditionnement inconditionnel séparé), l'ajustement du guidage est ignoré et le conditionnement reste inchangé.
 

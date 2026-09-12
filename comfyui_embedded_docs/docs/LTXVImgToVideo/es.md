@@ -10,11 +10,11 @@ LTXVImgToVideo convierte una imagen de entrada en una representación latente de
 | `negativo` | Condicionamientos negativos para evitar ciertos elementos en el video | CONDITIONING | Sí | - |
 | `vae` | Modelo VAE utilizado para codificar la imagen de entrada en el espacio latente | VAE | Sí | - |
 | `imagen` | Imagen de entrada que se convertirá en fotogramas de video | IMAGE | Sí | - |
-| `ancho` | Ancho del video de salida en píxeles (predeterminado: 768, paso: 32) | INT | No | 64 a MAX_RESOLUTION |
-| `altura` | Alto del video de salida en píxeles (predeterminado: 512, paso: 32) | INT | No | 64 a MAX_RESOLUTION |
-| `longitud` | Número de fotogramas en el video generado (predeterminado: 97, paso: 8) | INT | No | 9 a MAX_RESOLUTION |
-| `tamaño_lote` | Número de videos a generar simultáneamente (predeterminado: 1) | INT | No | 1 a 4096 |
-| `fuerza` | Control sobre cuánto del contenido de la imagen original se conserva en los primeros fotogramas del video generado. Un valor de 1.0 conserva la imagen original por completo, mientras que 0.0 permite la modificación máxima (predeterminado: 1.0) | FLOAT | No | 0.0 a 1.0 |
+| `ancho` | Ancho del video de salida en píxeles (predeterminado: 768, paso: 32) | INT | Sí | 64 a MAX_RESOLUTION |
+| `altura` | Alto del video de salida en píxeles (predeterminado: 512, paso: 32) | INT | Sí | 64 a MAX_RESOLUTION |
+| `longitud` | Número de fotogramas en el video generado (predeterminado: 97, paso: 8) | INT | Sí | 9 a MAX_RESOLUTION |
+| `tamaño_lote` | Número de videos a generar simultáneamente (predeterminado: 1) | INT | Sí | 1 a 4096 |
+| `fuerza` | Control sobre cuánto del contenido de la imagen original se conserva en los primeros fotogramas del video generado. Un valor de 1.0 conserva la imagen original por completo, mientras que 0.0 permite la modificación máxima (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
 
 Nota: `width` y `height` cambian en pasos de 32 píxeles, y `length` cambia en pasos de 8 fotogramas, lo que corresponde a la compresión del latente de video (32x en las dimensiones espaciales y 8x en la dimensión temporal). El latente de video contiene ((length - 1) // 8) + 1 fotogramas.
 

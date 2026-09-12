@@ -9,9 +9,9 @@ Rodin 3D Detay düğümü, Rodin API'sini kullanarak detaylı 3D varlıklar üre
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
 | `Görseller` | 3D model oluşturma için kullanılan girdi görüntüleri. Birden fazla görüntü sağlanabilir. | IMAGE | Evet | - |
-| `Tohum` | Tekrarlanabilir sonuçlar için rastgele tohum değeri | INT | Evet | - |
-| `Malzeme_Türü` | 3D modele uygulanacak malzeme türü | STRING | Evet | - |
-| `Poligon_sayısı` | Oluşturulan 3D model için hedef çokgen sayısı. Ağ kalite seviyesini belirler. | STRING | Evet | - |
+| `Tohum` | Tekrarlanabilir sonuçlar için rastgele tohum değeri | INT | Hayır | - |
+| `Malzeme_Türü` | 3D modele uygulanacak malzeme türü | STRING | Hayır | - |
+| `Poligon_sayısı` | Oluşturulan 3D model için hedef çokgen sayısı. Ağ kalite seviyesini belirler. | STRING | Hayır | - |
 
 ## Çıktılar
 

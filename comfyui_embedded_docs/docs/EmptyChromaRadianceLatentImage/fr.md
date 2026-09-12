@@ -8,7 +8,7 @@ Le nœud EmptyChromaRadianceLatentImage crée une image latente vide avec des di
 | --- | --- | --- | --- | --- |
 | `largeur` | La largeur de l'image latente en pixels (défaut : 1024, doit être divisible par 16) | INT | Oui | 16 à MAX_RESOLUTION |
 | `hauteur` | La hauteur de l'image latente en pixels (défaut : 1024, doit être divisible par 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `taille_du_lot` | Le nombre d'images latentes à générer dans un lot (défaut : 1) | INT | Non | 1 à 4096 |
+| `taille_du_lot` | Le nombre d'images latentes à générer dans un lot (défaut : 1) | INT | Oui | 1 à 4096 |
 
 Remarque : `width` et `height` sont définis avec un pas de 16, ils doivent donc être des multiples de 16.
 

@@ -8,7 +8,7 @@ El nodo `EmptyChromaRadianceLatentImage` crea una imagen latente vacía con las 
 | --- | --- | --- | --- | --- |
 | `ancho` | El ancho de la imagen latente en píxeles (predeterminado: 1024, debe ser divisible entre 16) | INT | Sí | 16 a MAX_RESOLUTION |
 | `alto` | La altura de la imagen latente en píxeles (predeterminado: 1024, debe ser divisible entre 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `tamaño_lote` | La cantidad de imágenes latentes a generar en un lote (predeterminado: 1) | INT | No | 1 a 4096 |
+| `tamaño_lote` | La cantidad de imágenes latentes a generar en un lote (predeterminado: 1) | INT | Sí | 1 a 4096 |
 
 Nota: `width` y `height` se definen con un paso de 16, por lo que deben ser múltiplos de 16.
 

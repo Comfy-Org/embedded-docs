@@ -8,7 +8,7 @@ Ce nœud crée une image latente vide dans l’espace des pixels, spécialement 
 | --- | --- | --- | --- | --- |
 | `largeur` | La largeur de l’image latente en pixels (par défaut : 2048). Le modèle a été entraîné à environ 4 mégapixels ; les résolutions inférieures sortent de la distribution et la qualité régresse sensiblement. | INT | Oui | 64 à 4096 (step: 32) |
 | `hauteur` | La hauteur de l’image latente en pixels (par défaut : 2048). Le modèle a été entraîné à environ 4 mégapixels ; les résolutions inférieures sortent de la distribution et la qualité régresse sensiblement. | INT | Oui | 64 à 4096 (step: 32) |
-| `taille_lot` | Le nombre d’images latentes à générer en un seul lot (par défaut : 1). | INT | Non | 1 à 64 |
+| `taille_lot` | Le nombre d’images latentes à générer en un seul lot (par défaut : 1). | INT | Oui | 1 à 64 |
 
 ## Sorties
 

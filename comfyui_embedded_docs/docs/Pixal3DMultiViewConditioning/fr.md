@@ -10,7 +10,7 @@ Le nœud Pixal3D Multi-View Conditioning est un cadre d'orbitation fixe qui gén
 |-----------|-------------|-----------|----------|-------|
 | `clip_vision_model` | DINOv3 ViT-L/16 ClipVision avec des poids NAF inclus. | MODEL | Oui | N/A |
 | `fov` | Champ de vision horizontal en degrés des vues encadrées. | FLOAT | Oui | 1.0 - 170.0 |
-| `front` | Vue carrée du côté avant de l'objet, avec alpha ou sur un fond noir. | IMAGE | Oui | N/A |
+| `front` | Vue carrée du côté avant de l'objet, avec alpha ou sur un fond noir. | IMAGE | Non | N/A |
 | `left` | Vue carrée du côté gauche de l'objet, avec alpha ou sur un fond noir. | IMAGE | Facultatif | N/A |
 | `back` | Vue carrée du côté arrière de l'objet, avec alpha ou sur un fond noir. | IMAGE | Facultatif | N/A |
 | `right` | Vue carrée du côté droit de l'objet, avec alpha ou sur un fond noir. | IMAGE | Facultatif | N/A |

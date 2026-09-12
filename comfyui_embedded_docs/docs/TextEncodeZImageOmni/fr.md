@@ -9,7 +9,7 @@ TextEncodeZImageOmni encode un prompt texte ainsi que jusqu'à trois images de r
 | `clip` | Le modèle CLIP utilisé pour tokeniser et encoder le prompt texte. | CLIP | Oui |  |
 | `encodeur d'image` | Un modèle encodeur de vision optionnel. S'il est fourni, il est utilisé pour encoder les images d'entrée, et les plongements résultants sont ajoutés au conditionnement. | CLIP_VISION | Non |  |
 | `invite` | Le prompt texte à encoder. Prend en charge la saisie multiligne et les prompts dynamiques. | STRING | Oui |  |
-| `redimensionnement automatique des images` | Lorsqu'il est activé (par défaut : True), les images d'entrée sont automatiquement redimensionnées avant l'encodage VAE afin que leur surface totale en pixels soit proche de 1024x1024, avec des dimensions arrondies à des multiples de 8. | BOOLEAN | Non | True<br>False |
+| `redimensionnement automatique des images` | Lorsqu'il est activé (par défaut : True), les images d'entrée sont automatiquement redimensionnées avant l'encodage VAE afin que leur surface totale en pixels soit proche de 1024x1024, avec des dimensions arrondies à des multiples de 8. | BOOLEAN | Oui | True<br>False |
 | `vae` | Un modèle VAE optionnel. S'il est fourni, il est utilisé pour encoder les images d'entrée en représentations latentes, qui sont ajoutées au conditionnement en tant que latents de référence. | VAE | Non |  |
 | `image1` | La première image de référence optionnelle. | IMAGE | Non |  |
 | `image2` | La deuxième image de référence optionnelle. | IMAGE | Non |  |

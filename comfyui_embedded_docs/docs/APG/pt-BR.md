@@ -7,9 +7,9 @@ O nó APG (Adaptive Projected Guidance) modifica o processo de amostragem ao aju
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `model` | O modelo de difusão ao qual aplicar a orientação projetada adaptativa | MODEL | Sim | - |
-| `eta` | Controla a escala do vetor de orientação paralelo. Comportamento padrão de CFG em uma configuração de 1 (padrão: 1.0). | FLOAT | Sim | -10.0 a 10.0 |
-| `limite_normalização` | Normaliza o vetor de orientação para este valor; a normalização é desativada em uma configuração de 0 (padrão: 5.0). | FLOAT | Sim | 0.0 a 50.0 |
-| `momento` | Controla uma média móvel da orientação durante a difusão; desativado em uma configuração de 0 (padrão: 0.0). | FLOAT | Sim | -5.0 a 1.0 |
+| `eta` | Controla a escala do vetor de orientação paralelo. Comportamento padrão de CFG em uma configuração de 1 (padrão: 1.0). | FLOAT | Não | -10.0 a 10.0 |
+| `limite_normalização` | Normaliza o vetor de orientação para este valor; a normalização é desativada em uma configuração de 0 (padrão: 5.0). | FLOAT | Não | 0.0 a 50.0 |
+| `momento` | Controla uma média móvel da orientação durante a difusão; desativado em uma configuração de 0 (padrão: 0.0). | FLOAT | Não | -5.0 a 1.0 |
 
 Observação: Quando o nível de ruído (`sigma`) aumenta durante a amostragem, a média móvel do momentum é redefinida para zero. Se o modelo fornecer apenas uma saída condicional (sem condicionamento não condicional separado), o ajuste de orientação é ignorado e o condicionamento é mantido inalterado.
 

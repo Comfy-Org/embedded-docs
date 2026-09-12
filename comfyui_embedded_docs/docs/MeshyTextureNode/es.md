@@ -8,9 +8,9 @@ El nodo Meshy: Texture aplica texturas generadas por IA a un modelo 3D. Toma un 
 | --- | --- | --- | --- | --- |
 | `modelo` | La versión del modelo de IA que se usará para el texturizado. | COMBO | Sí | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `meshy_task_id` | El identificador único (ID de tarea) de una tarea anterior de generación o conversión 3D de Meshy. Este proporciona el modelo 3D base que se va a texturizar. | MESHY_TASK_ID | Sí | - |
-| `habilitar_uv_original` | Utiliza la UV original del modelo en lugar de generar nuevas UV. Cuando está habilitado (predeterminado: `True`), Meshy conserva las texturas existentes del modelo cargado. Si el modelo no tiene UV original, la calidad del resultado podría no ser tan buena. Esta es una opción avanzada. | BOOLEAN | No | true / false |
-| `pbr` | Habilita la salida de materiales de renderizado basado en física (PBR) para el modelo texturizado (predeterminado: `False`). Esta es una opción avanzada. | BOOLEAN | No | true / false |
-| `estilo_texto` | Describe con texto el estilo de textura deseado para el objeto. Máximo 600 caracteres. No se puede usar al mismo tiempo que `image_style`. | STRING | No | - |
+| `habilitar_uv_original` | Utiliza la UV original del modelo en lugar de generar nuevas UV. Cuando está habilitado (predeterminado: `True`), Meshy conserva las texturas existentes del modelo cargado. Si el modelo no tiene UV original, la calidad del resultado podría no ser tan buena. Esta es una opción avanzada. | BOOLEAN | Sí | true / false |
+| `pbr` | Habilita la salida de materiales de renderizado basado en física (PBR) para el modelo texturizado (predeterminado: `False`). Esta es una opción avanzada. | BOOLEAN | Sí | true / false |
+| `estilo_texto` | Describe con texto el estilo de textura deseado para el objeto. Máximo 600 caracteres. No se puede usar al mismo tiempo que `image_style`. | STRING | Sí | - |
 | `estilo_imagen` | Una imagen 2D para guiar el proceso de texturizado. No se puede usar al mismo tiempo que `text_style_prompt`. | IMAGE | No | - |
 | `resolución de textura` | Resolución de la textura de color base. Las resoluciones más altas capturan más detalle de superficie. | COMBO | Sí | `"2k"`<br>`"4k"`<br>`"8k"` |
 

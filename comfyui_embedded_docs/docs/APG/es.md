@@ -7,9 +7,9 @@ El nodo APG (Adaptive Projected Guidance) modifica el proceso de muestreo ajusta
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `modelo` | El modelo de difusión al que se le aplicará la guía proyectada adaptativa | MODEL | Sí | - |
-| `eta` | Controla la escala del vector de guía paralelo. Comportamiento CFG predeterminado con un valor de 1 (predeterminado: 1.0). | FLOAT | Sí | -10.0 a 10.0 |
-| `umbral_norm` | Normaliza el vector de guía a este valor; la normalización se desactiva con un valor de 0 (predeterminado: 5.0). | FLOAT | Sí | 0.0 a 50.0 |
-| `momento` | Controla un promedio móvil de la guía durante la difusión; se desactiva con un valor de 0 (predeterminado: 0.0). | FLOAT | Sí | -5.0 a 1.0 |
+| `eta` | Controla la escala del vector de guía paralelo. Comportamiento CFG predeterminado con un valor de 1 (predeterminado: 1.0). | FLOAT | No | -10.0 a 10.0 |
+| `umbral_norm` | Normaliza el vector de guía a este valor; la normalización se desactiva con un valor de 0 (predeterminado: 5.0). | FLOAT | No | 0.0 a 50.0 |
+| `momento` | Controla un promedio móvil de la guía durante la difusión; se desactiva con un valor de 0 (predeterminado: 0.0). | FLOAT | No | -5.0 a 1.0 |
 
 Nota: Cuando el nivel de ruido (`sigma`) aumenta durante el muestreo, el promedio móvil del momentum se restablece a cero. Si el modelo proporciona solo una salida de condicionamiento (sin condicionamiento incondicional separado), el ajuste de la guía se omite y el condicionamiento se deja sin cambios.
 

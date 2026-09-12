@@ -7,15 +7,15 @@ Ce nœud utilise le service Magnific AI pour agrandir et améliorer créativemen
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L’image d’entrée à agrandir et à améliorer. | IMAGE | Oui | - |
-| `prompt` | Une description textuelle pour guider l’amélioration créative de l’image. Ce paramètre est facultatif (par défaut : vide). | STRING | Non | - |
+| `prompt` | Une description textuelle pour guider l’amélioration créative de l’image. Ce paramètre est facultatif (par défaut : vide). | STRING | Oui | - |
 | `facteur d’agrandissement` | Le facteur par lequel les dimensions de l’image sont agrandies. | COMBO | Oui | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` |
 | `optimisé pour` | Le style ou le type de contenu pour lequel optimiser le processus d’amélioration. | COMBO | Oui | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` |
-| `créativité` | Contrôle le niveau d’interprétation créative appliquée à l’image (par défaut : 0). | INT | Non | -10 à 10 |
-| `hdr` | Le niveau de définition et de détail (par défaut : 0). | INT | Non | -10 à 10 |
-| `ressemblance` | Le niveau de ressemblance avec l’image d’origine (par défaut : 0). | INT | Non | -10 à 10 |
-| `fractalité` | La force de l’invite et la complexité par pixel carré (par défaut : 0). | INT | Non | -10 à 10 |
+| `créativité` | Contrôle le niveau d’interprétation créative appliquée à l’image (par défaut : 0). | INT | Oui | -10 à 10 |
+| `hdr` | Le niveau de définition et de détail (par défaut : 0). | INT | Oui | -10 à 10 |
+| `ressemblance` | Le niveau de ressemblance avec l’image d’origine (par défaut : 0). | INT | Oui | -10 à 10 |
+| `fractalité` | La force de l’invite et la complexité par pixel carré (par défaut : 0). | INT | Oui | -10 à 10 |
 | `moteur` | Le moteur IA spécifique à utiliser pour le traitement. Ce paramètre est avancé. | COMBO | Oui | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` |
-| `réduction automatique` | Réduire automatiquement la taille de l’image d’entrée si la sortie dépasse la limite maximale de pixels (par défaut : False). Ce paramètre est avancé. | BOOLEAN | Non | - |
+| `réduction automatique` | Réduire automatiquement la taille de l’image d’entrée si la sortie dépasse la limite maximale de pixels (par défaut : False). Ce paramètre est avancé. | BOOLEAN | Oui | - |
 
 **Contraintes :**
 

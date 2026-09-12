@@ -7,15 +7,15 @@ Este nodo utiliza el servicio Magnific AI para ampliar y mejorar creativamente u
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
 | `imagen` | La imagen de entrada que se va a ampliar y mejorar. | IMAGE | Sí | - |
-| `prompt` | Una descripción de texto para guiar la mejora creativa de la imagen. Es opcional (por defecto: vacío). | STRING | No | - |
+| `prompt` | Una descripción de texto para guiar la mejora creativa de la imagen. Es opcional (por defecto: vacío). | STRING | Sí | - |
 | `factor_de_escala` | El factor por el que se amplían las dimensiones de la imagen. | COMBO | Sí | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` |
 | `optimizado_para` | El estilo o tipo de contenido para el que se optimiza el proceso de mejora. | COMBO | Sí | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` |
-| `creatividad` | Controla el nivel de interpretación creativa aplicada a la imagen (por defecto: 0). | INT | No | -10 a 10 |
-| `hdr` | El nivel de definición y detalle (por defecto: 0). | INT | No | -10 a 10 |
-| `semejanza` | El nivel de semejanza con la imagen original (por defecto: 0). | INT | No | -10 a 10 |
-| `fractalidad` | La fuerza del prompt y la complejidad por píxel cuadrado (por defecto: 0). | INT | No | -10 a 10 |
+| `creatividad` | Controla el nivel de interpretación creativa aplicada a la imagen (por defecto: 0). | INT | Sí | -10 a 10 |
+| `hdr` | El nivel de definición y detalle (por defecto: 0). | INT | Sí | -10 a 10 |
+| `semejanza` | El nivel de semejanza con la imagen original (por defecto: 0). | INT | Sí | -10 a 10 |
+| `fractalidad` | La fuerza del prompt y la complejidad por píxel cuadrado (por defecto: 0). | INT | Sí | -10 a 10 |
 | `motor` | El motor de IA específico que se utiliza para el procesamiento. Este es un parámetro avanzado. | COMBO | Sí | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` |
-| `reducción_automática` | Reduce automáticamente la escala de la imagen de entrada si la salida superara el límite máximo de píxeles (por defecto: False). Este es un parámetro avanzado. | BOOLEAN | No | - |
+| `reducción_automática` | Reduce automáticamente la escala de la imagen de entrada si la salida superara el límite máximo de píxeles (por defecto: False). Este es un parámetro avanzado. | BOOLEAN | Sí | - |
 
 **Restricciones:**
 

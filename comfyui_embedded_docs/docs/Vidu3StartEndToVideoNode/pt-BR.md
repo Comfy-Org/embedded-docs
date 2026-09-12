@@ -12,7 +12,7 @@ Este nó gera um vídeo interpolando entre um quadro inicial e um quadro final f
 | `quadro inicial` | A imagem inicial para a sequência de vídeo. | IMAGE | Sim | - |
 | `quadro final` | A imagem final para a sequência de vídeo. | IMAGE | Sim | - |
 | `prompt` | Descrição do prompt (máximo 2000 caracteres). | STRING | Sim | - |
-| `semente` | Um valor de semente para controlar a aleatoriedade da geração (padrão: 1). | INT | Não | 0 a 2147483647 |
+| `semente` | Um valor de semente para controlar a aleatoriedade da geração (padrão: 1). | INT | Sim | 0 a 2147483647 |
 
 ### Entradas de viduq3-pro e viduq3-turbo
 

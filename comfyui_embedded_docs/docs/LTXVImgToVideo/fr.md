@@ -10,11 +10,11 @@ LTXVImgToVideo convertit une image d'entrée en une représentation latente vid�
 | `negative` | Prompts de conditionnement négatifs pour éviter certains éléments dans la vidéo | CONDITIONING | Oui | - |
 | `vae` | Modèle VAE utilisé pour encoder l'image d'entrée dans l'espace latent | VAE | Oui | - |
 | `image` | Image d'entrée à convertir en images vidéo | IMAGE | Oui | - |
-| `width` | Largeur de la vidéo de sortie en pixels (défaut : 768, pas : 32) | INT | Non | 64 to MAX_RESOLUTION |
-| `height` | Hauteur de la vidéo de sortie en pixels (défaut : 512, pas : 32) | INT | Non | 64 to MAX_RESOLUTION |
-| `length` | Nombre d'images dans la vidéo générée (défaut : 97, pas : 8) | INT | Non | 9 to MAX_RESOLUTION |
-| `batch_size` | Nombre de vidéos à générer simultanément (défaut : 1) | INT | Non | 1 à 4096 |
-| `force` | Contrôle de la mesure dans laquelle le contenu de l'image d'origine est préservé dans les premières images de la vidéo générée. Une valeur de 1.0 préserve complètement l'image d'origine, tandis que 0.0 permet une modification maximale (défaut : 1.0) | FLOAT | Non | 0.0 à 1.0 |
+| `width` | Largeur de la vidéo de sortie en pixels (défaut : 768, pas : 32) | INT | Oui | 64 to MAX_RESOLUTION |
+| `height` | Hauteur de la vidéo de sortie en pixels (défaut : 512, pas : 32) | INT | Oui | 64 to MAX_RESOLUTION |
+| `length` | Nombre d'images dans la vidéo générée (défaut : 97, pas : 8) | INT | Oui | 9 to MAX_RESOLUTION |
+| `batch_size` | Nombre de vidéos à générer simultanément (défaut : 1) | INT | Oui | 1 à 4096 |
+| `force` | Contrôle de la mesure dans laquelle le contenu de l'image d'origine est préservé dans les premières images de la vidéo générée. Une valeur de 1.0 préserve complètement l'image d'origine, tandis que 0.0 permet une modification maximale (défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 |
 
 Remarque : `width` et `height` changent par pas de 32 pixels, et `length` par pas de 8 images, conformément à la compression du latent vidéo (32x dans les dimensions spatiales et 8x dans la dimension temporelle). Le latent vidéo contient ((length - 1) // 8) + 1 images.
 

@@ -8,19 +8,19 @@ Este nó usa o modelo Kling 3.0 para gerar um vídeo. Ele cria o vídeo com base
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `modelo` | Modelo e configurações de geração. Selecionar esta opção revela um parâmetro `resolution` aninhado. | DYNAMIC_COMBO | Não | `"kling-v3"` |
+| `modelo` | Modelo e configurações de geração. Selecionar esta opção revela um parâmetro `resolution` aninhado. | DYNAMIC_COMBO | Sim | `"kling-v3"` |
 | `prompt` | A descrição em texto que orienta a geração do vídeo. Deve ter entre 1 e 2500 caracteres. | STRING | Sim | N/A |
-| `duração` | A duração do vídeo em segundos (padrão: 5). | INT | Não | 3 a 15 |
+| `duração` | A duração do vídeo em segundos (padrão: 5). | INT | Sim | 3 a 15 |
 | `primeiro_frame` | A imagem inicial do vídeo. Deve ter pelo menos 300x300 pixels e uma proporção de aspecto entre 1:2.5 e 2.5:1. | IMAGE | Sim | N/A |
 | `último_frame` | A imagem final do vídeo. Deve ter pelo menos 300x300 pixels e uma proporção de aspecto entre 1:2.5 e 2.5:1. | IMAGE | Sim | N/A |
-| `gerar_áudio` | Controla se o áudio deve ser gerado para o vídeo (padrão: True). | BOOLEAN | Não | N/A |
-| `semente` | A semente controla se o nó deve ser executado novamente; os resultados não são determinísticos independentemente da semente (padrão: 0). | INT | Não | 0 a 2147483647 |
+| `gerar_áudio` | Controla se o áudio deve ser gerado para o vídeo (padrão: True). | BOOLEAN | Sim | N/A |
+| `semente` | A semente controla se o nó deve ser executado novamente; os resultados não são determinísticos independentemente da semente (padrão: 0). | INT | Sim | 0 a 2147483647 |
 
 ### Entradas do Kling V3
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `resolution` | A resolução do vídeo gerado (padrão: `"1080p"`). | COMBO | Não | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `resolution` | A resolução do vídeo gerado (padrão: `"1080p"`). | COMBO | Sim | `"4k"`<br>`"1080p"`<br>`"720p"` |
 
 **Nota:** As imagens `first_frame` e `end_frame` devem ter pelo menos 300x300 pixels e uma proporção de aspecto entre 1:2.5 e 2.5:1 para que o nó funcione corretamente. O `prompt` deve ter entre 1 e 2500 caracteres. A opção `resolution` corresponde a um modo de geração Kling: `"4k"`, `"1080p"` (pro) e `"720p"` (padrão).
 

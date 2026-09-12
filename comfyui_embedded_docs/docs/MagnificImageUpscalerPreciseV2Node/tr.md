@@ -9,10 +9,10 @@ Magnific Image Upscale (Precise V2) düğümü, keskinlik, gren ve detay iyileş
 | `görüntü` | Büyütülecek girdi görüntüsü. Tam olarak bir görüntü gereklidir. Minimum boyutlar 160x160 pikseldir. En-boy oranı 1:3 ile 3:1 arasında olmalıdır. | IMAGE | Evet | - |
 | `ölçek_faktörü` | İstenen büyütme çarpanı. | COMBO | Evet | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` |
 | `stil` | İşleme stili: genel kullanım için sublime, fotoğraflar için photo, gürültülü fotoğraflar için photo_denoiser. | COMBO | Evet | `"sublime"`<br>`"photo"`<br>`"photo_denoiser"` |
-| `keskinleştirme` | Görüntü keskinlik yoğunluğu. Daha yüksek değerler kenar tanımını ve netliği artırır. Varsayılan: 7. | INT | Hayır | 0 ila 100 |
-| `akıllı_gren` | Görüntünün çok pürüzsüz veya yapay görünmesini önlemek için akıllı gren/doku iyileştirmesi. Varsayılan: 7. | INT | Hayır | 0 ila 100 |
-| `ultra_detay` | Büyütme sırasında eklenen ince detayları, dokuları ve mikro detayları kontrol eder. Varsayılan: 30. | INT | Hayır | 0 ila 100 |
-| `otomatik_küçültme` | Çıktı maksimum çözünürlüğü aşarsa girdi görüntüsünü otomatik olarak küçültür. Varsayılan: False. | BOOLEAN | Hayır | - |
+| `keskinleştirme` | Görüntü keskinlik yoğunluğu. Daha yüksek değerler kenar tanımını ve netliği artırır. Varsayılan: 7. | INT | Evet | 0 ila 100 |
+| `akıllı_gren` | Görüntünün çok pürüzsüz veya yapay görünmesini önlemek için akıllı gren/doku iyileştirmesi. Varsayılan: 7. | INT | Evet | 0 ila 100 |
+| `ultra_detay` | Büyütme sırasında eklenen ince detayları, dokuları ve mikro detayları kontrol eder. Varsayılan: 30. | INT | Evet | 0 ila 100 |
+| `otomatik_küçültme` | Çıktı maksimum çözünürlüğü aşarsa girdi görüntüsünü otomatik olarak küçültür. Varsayılan: False. | BOOLEAN | Evet | - |
 
 **Not:** `auto_downscale` devre dışıysa ve istenen çıktı boyutu (girdi boyutları × `scale_factor`) 10060x10060 pikseli aşarsa, düğüm bir hata verir. `auto_downscale` etkinleştirildiğinde, düğüm kalite kaybını minimumda tutan en uygun ölçek faktörünü bulmaya çalışır.
 

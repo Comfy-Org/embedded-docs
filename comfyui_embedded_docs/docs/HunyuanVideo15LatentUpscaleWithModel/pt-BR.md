@@ -8,10 +8,10 @@ O nó Hunyuan Video 15 Latent Upscale With Model aumenta a resolução de uma re
 | --- | --- | --- | --- | --- |
 | `modelo` | O modelo de upscale latente Hunyuan Video 1.5 usado para refinar as amostras com upscale. | LATENT_UPSCALE_MODEL | Sim | N/A |
 | `amostras` | A representação de imagem latente que será submetida a upscale. | LATENT | Sim | N/A |
-| `método_de_upscale` | O algoritmo de interpolação usado na etapa inicial de upscale (padrão: `"bilinear"`). | COMBO | Não | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"bislerp"` |
-| `largura` | A largura alvo para o latente com upscale, em pixels. Um valor de 0 calculará a largura automaticamente com base na altura alvo e na proporção original. A largura final da saída será um múltiplo de 16 (padrão: 1280). | INT | Não | 0 a 16384 (passo: 8) |
-| `altura` | A altura alvo para o latente com upscale, em pixels. Um valor de 0 calculará a altura automaticamente com base na largura alvo e na proporção original. A altura final da saída será um múltiplo de 16 (padrão: 720). | INT | Não | 0 a 16384 (passo: 8) |
-| `corte` | Determina como o latente com upscale é cortado para se ajustar às dimensões alvo. | COMBO | Não | `"disabled"`<br>`"center"` |
+| `método_de_upscale` | O algoritmo de interpolação usado na etapa inicial de upscale (padrão: `"bilinear"`). | COMBO | Sim | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"bislerp"` |
+| `largura` | A largura alvo para o latente com upscale, em pixels. Um valor de 0 calculará a largura automaticamente com base na altura alvo e na proporção original. A largura final da saída será um múltiplo de 16 (padrão: 1280). | INT | Sim | 0 a 16384 (passo: 8) |
+| `altura` | A altura alvo para o latente com upscale, em pixels. Um valor de 0 calculará a altura automaticamente com base na largura alvo e na proporção original. A altura final da saída será um múltiplo de 16 (padrão: 720). | INT | Sim | 0 a 16384 (passo: 8) |
+| `corte` | Determina como o latente com upscale é cortado para se ajustar às dimensões alvo. | COMBO | Sim | `"disabled"`<br>`"center"` |
 
 **Nota sobre Dimensões:** Se `width` e `height` forem definidos como 0, o nó retorna as `samples` de entrada inalteradas. Se apenas uma dimensão for definida como 0, a outra dimensão será calculada para preservar a proporção original. As dimensões finais são sempre ajustadas para ter pelo menos 64 pixels e ser divisíveis por 16.
 

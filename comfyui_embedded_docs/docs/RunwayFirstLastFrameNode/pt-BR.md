@@ -11,7 +11,7 @@ O nó Runway First-Last-Frame to Video gera um vídeo usando um quadro inicial, 
 | `quadro_final` | Quadro final a ser usado no vídeo. Suportado apenas para gen3a_turbo. | IMAGE | Sim | N/A |
 | `duração` | Duração do vídeo gerado em segundos. A duração mais longa, de 10s, dá mais tempo para a geração transicionar suavemente entre os quadros inicial e final (padrão: "5"). | COMBO | Sim | `"5"`<br>`"10"` |
 | `proporção` | Proporção de aspecto do vídeo gerado (padrão: "768:1280") | COMBO | Sim | `"768:1280"`<br>`"1280:768"` |
-| `semente` | Semente aleatória para a geração. Defina como 0 para usar uma semente aleatória (padrão: 0). | INT | Não | 0 a 4294967295 |
+| `semente` | Semente aleatória para a geração. Defina como 0 para usar uma semente aleatória (padrão: 0). | INT | Sim | 0 a 4294967295 |
 
 **Restrições de parâmetros:**
 

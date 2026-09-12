@@ -10,7 +10,7 @@ El nodo Pixal3D Multi-View Conditioning es una estructura de órbita fija que ge
 |-----------|-------------|-----------|----------|-------|
 | `clip_vision_model` | DINOv3 ViT-L/16 ClipVision con pesos NAF incluidos. | MODEL | Sí | N/A |
 | `fov` | FOV horizontal en grados de las vistas enmarcadas. | FLOAT | Sí | 1.0 - 170.0 |
-| `frontal` | Vista cuadrada del lado frontal del objeto, con alpha o en un fondo negro. | IMAGE | Sí | N/A |
+| `frontal` | Vista cuadrada del lado frontal del objeto, con alpha o en un fondo negro. | IMAGE | No | N/A |
 | `izquierda` | Vista cuadrada del lado izquierdo del objeto, con alpha o en un fondo negro. | IMAGE | Opcional | N/A |
 | `trasera` | Vista cuadrada del lado trasero del objeto, con alpha o en un fondo negro. | IMAGE | Opcional | N/A |
 | `derecha` | Vista cuadrada del lado derecho del objeto, con alpha o en un fondo negro. | IMAGE | Opcional | N/A |

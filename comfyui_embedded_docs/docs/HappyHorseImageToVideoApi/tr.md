@@ -10,8 +10,8 @@ Bu düğüm, HappyHorse modelini kullanarak tek bir başlangıç görüntüsünd
 |-----------|-------------|-----------|----------|-------|
 | `model` | Video oluşturma için kullanılacak HappyHorse modeli. | DYNAMIC_COMBO | Evet | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
 | `ilk_kare` | İlk kare görüntüsü. Çıktı en-boy oranı bu görüntüden türetilir. | IMAGE | Evet | min. 300×300 piksel; oran 1:2.5 ile 2.5:1 arası |
-| `tohum` | Üretim için kullanılacak tohum. (varsayılan: 0) | INT | Hayır | 0 ile 2147483647 |
-| `filigran` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği. (gelişmiş seçenek; varsayılan: False) | BOOLEAN | Hayır | True / False |
+| `tohum` | Üretim için kullanılacak tohum. (varsayılan: 0) | INT | Evet | 0 ile 2147483647 |
+| `filigran` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği. (gelişmiş seçenek; varsayılan: False) | BOOLEAN | Evet | True / False |
 
 ### happyhorse-1.1-i2v ve happyhorse-1.0-i2v Girdileri
 

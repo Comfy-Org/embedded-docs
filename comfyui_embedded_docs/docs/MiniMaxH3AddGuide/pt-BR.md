@@ -7,8 +7,8 @@ Este nó ancora uma imagem, um clipe curto, áudio ou um clipe com sua trilha so
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `positive` | O condicionamento ao qual o quadro-chave guia é anexado. | CONDITIONING | Sim | - |
-| `latent` | O latente de áudio-vídeo MiniMax H3 que define o vídeo de destino. Deve ser um latente AV MiniMax H3 (aninhado, com dois tensores 5D de 24 canais cada). | LATENT | Sim | - |
-| `frame_idx` | Índice do quadro para ancorar a imagem ou o primeiro quadro do clipe. Valores negativos são contados a partir do final do vídeo. (padrão: 0) | INT | Sim | -9999 a 9999 |
+| `latent` | O latente de áudio-vídeo MiniMax H3 que define o vídeo de destino. Deve ser um latente AV MiniMax H3 (aninhado, com dois tensores 5D de 24 canais cada). | LATENT | Não | - |
+| `frame_idx` | Índice do quadro para ancorar a imagem ou o primeiro quadro do clipe. Valores negativos são contados a partir do final do vídeo. (padrão: 0) | INT | Não | -9999 a 9999 |
 | `vae` | VAE de vídeo, necessário quando uma imagem é conectada. | VAE | Não | - |
 | `audio_vae` | VAE de áudio, necessário quando um áudio é conectado. | VAE | Não | - |
 | `image` | Imagem ou quadros de vídeo para ancorar. Lotes com múltiplos quadros são ancorados como um clipe e cortados para os comprimentos de clipe válidos do modelo: 5, 22, 39... (17k + 5) quadros. Lotes com menos de 5 quadros usam apenas a primeira imagem. | IMAGE | Não | - |

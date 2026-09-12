@@ -8,7 +8,7 @@ Este nodo crea una imagen latente vacía en el espacio de píxeles, diseñado es
 | --- | --- | --- | --- | --- |
 | `ancho` | El ancho de la imagen latente en píxeles (por defecto: 2048). El modelo fue entrenado a ~4 megapíxeles; resoluciones más bajas se salen de la distribución y la calidad disminuye notablemente. | INT | Sí | 64 a 4096 (paso: 32) |
 | `alto` | La altura de la imagen latente en píxeles (por defecto: 2048). El modelo fue entrenado a ~4 megapíxeles; resoluciones más bajas se salen de la distribución y la calidad disminuye notablemente. | INT | Sí | 64 a 4096 (paso: 32) |
-| `tamaño_lote` | El número de imágenes latentes a generar en un solo lote (por defecto: 1). | INT | No | 1 a 64 |
+| `tamaño_lote` | El número de imágenes latentes a generar en un solo lote (por defecto: 1). | INT | Sí | 1 a 64 |
 
 ## Salidas
 

@@ -8,7 +8,7 @@ Este nó cria uma imagem latente vazia no espaço de pixels, projetada especific
 | --- | --- | --- | --- | --- |
 | `largura` | A largura da imagem latente em pixels (padrão: 2048). O modelo foi treinado em ~4 megapixels; resoluções mais baixas saem da distribuição e a qualidade regride visivelmente. | INT | Sim | 64 a 4096 (passo: 32) |
 | `altura` | A altura da imagem latente em pixels (padrão: 2048). O modelo foi treinado em ~4 megapixels; resoluções mais baixas saem da distribuição e a qualidade regride visivelmente. | INT | Sim | 64 a 4096 (passo: 32) |
-| `tamanho_do_lote` | O número de imagens latentes a serem geradas em um único lote (padrão: 1). | INT | Não | 1 a 64 |
+| `tamanho_do_lote` | O número de imagens latentes a serem geradas em um único lote (padrão: 1). | INT | Sim | 1 a 64 |
 
 ## Saídas
 

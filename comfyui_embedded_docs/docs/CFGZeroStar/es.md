@@ -6,7 +6,7 @@ El nodo CFGZeroStar aplica una técnica especializada de escalado de guía a mod
 
 | Parámetro | Descripción | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango |
 | --- | --- | --- | --- | --- | --- |
-| `modelo` | El modelo de difusión que se modificará con la técnica de escalado de guía CFGZeroStar | MODEL | requerido | - | - |
+| `modelo` | El modelo de difusión que se modificará con la técnica de escalado de guía CFGZeroStar | MODEL | Sí | - | - |
 
 ## Salidas
 

@@ -9,10 +9,10 @@ El nodo The Magnific Image Upscale (Precise V2) realiza un escalado de imágenes
 | `imagen` | La imagen de entrada que se va a escalar. Se requiere exactamente una imagen. Las dimensiones mínimas son 160x160 píxeles. La relación de aspecto debe estar entre 1:3 y 3:1. | IMAGE | Sí | - |
 | `factor_de_escala` | El multiplicador de escalado deseado. | COMBO | Sí | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` |
 | `estilo` | Estilo de procesamiento: sublime para uso general, photo para fotografías, photo_denoiser para fotos con ruido. | COMBO | Sí | `"sublime"`<br>`"photo"`<br>`"photo_denoiser"` |
-| `nitidez` | Intensidad de nitidez de la imagen. Los valores más altos aumentan la definición y claridad de los bordes. Predeterminado: 7. | INT | No | 0 a 100 |
-| `grano_inteligente` | Mejora inteligente de grano/textura para evitar que la imagen se vea demasiado suave o artificial. Predeterminado: 7. | INT | No | 0 a 100 |
-| `ultra_detalle` | Controla el detalle fino, las texturas y los microdetalles añadidos durante el escalado. Predeterminado: 30. | INT | No | 0 a 100 |
-| `reducción_automática` | Reduce automáticamente la escala de la imagen de entrada si la salida excediera la resolución máxima. Predeterminado: False. | BOOLEAN | No | - |
+| `nitidez` | Intensidad de nitidez de la imagen. Los valores más altos aumentan la definición y claridad de los bordes. Predeterminado: 7. | INT | Sí | 0 a 100 |
+| `grano_inteligente` | Mejora inteligente de grano/textura para evitar que la imagen se vea demasiado suave o artificial. Predeterminado: 7. | INT | Sí | 0 a 100 |
+| `ultra_detalle` | Controla el detalle fino, las texturas y los microdetalles añadidos durante el escalado. Predeterminado: 30. | INT | Sí | 0 a 100 |
+| `reducción_automática` | Reduce automáticamente la escala de la imagen de entrada si la salida excediera la resolución máxima. Predeterminado: False. | BOOLEAN | Sí | - |
 
 **Nota:** Si `auto_downscale` está deshabilitado y el tamaño de salida solicitado (dimensiones de entrada × `scale_factor`) supera los 10060x10060 píxeles, el nodo generará un error. Cuando `auto_downscale` está habilitado, el nodo intentará encontrar un factor de escala óptimo que minimice la pérdida de calidad.
 

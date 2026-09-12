@@ -6,7 +6,7 @@ Le nœud CFGZeroStar applique une technique de mise à l'échelle spécialisée 
 
 | Paramètre | Description | Type de données | Type d'entrée | Défaut | Plage |
 | --- | --- | --- | --- | --- | --- |
-| `modèle` | Le modèle de diffusion à modifier avec la technique de mise à l'échelle du guidage CFGZeroStar | MODEL | requis | - | - |
+| `modèle` | Le modèle de diffusion à modifier avec la technique de mise à l'échelle du guidage CFGZeroStar | MODEL | Oui | - | - |
 
 ## Sorties
 

@@ -10,11 +10,11 @@ O LTXVImgToVideo converte uma imagem de entrada em uma representação latente d
 | `negative` | Condicionamento negativo (prompts) para evitar certos elementos no vídeo | CONDITIONING | Sim | - |
 | `vae` | Modelo VAE usado para codificar a imagem de entrada no espaço latente | VAE | Sim | - |
 | `image` | Imagem de entrada a ser convertida em quadros de vídeo | IMAGE | Sim | - |
-| `width` | Largura do vídeo de saída em pixels (padrão: 768, passo: 32) | INT | Não | 64 a MAX_RESOLUTION |
-| `height` | Altura do vídeo de saída em pixels (padrão: 512, passo: 32) | INT | Não | 64 a MAX_RESOLUTION |
-| `length` | Número de quadros no vídeo gerado (padrão: 97, passo: 8) | INT | Não | 9 a MAX_RESOLUTION |
-| `batch_size` | Número de vídeos a serem gerados simultaneamente (padrão: 1) | INT | Não | 1 a 4096 |
-| `strength` | Controle sobre o quanto do conteúdo da imagem original é preservado nos primeiros quadros do vídeo gerado. Um valor de 1.0 preserva a imagem original completamente, enquanto 0.0 permite modificação máxima (padrão: 1.0) | FLOAT | Não | 0.0 a 1.0 |
+| `width` | Largura do vídeo de saída em pixels (padrão: 768, passo: 32) | INT | Sim | 64 a MAX_RESOLUTION |
+| `height` | Altura do vídeo de saída em pixels (padrão: 512, passo: 32) | INT | Sim | 64 a MAX_RESOLUTION |
+| `length` | Número de quadros no vídeo gerado (padrão: 97, passo: 8) | INT | Sim | 9 a MAX_RESOLUTION |
+| `batch_size` | Número de vídeos a serem gerados simultaneamente (padrão: 1) | INT | Sim | 1 a 4096 |
+| `strength` | Controle sobre o quanto do conteúdo da imagem original é preservado nos primeiros quadros do vídeo gerado. Um valor de 1.0 preserva a imagem original completamente, enquanto 0.0 permite modificação máxima (padrão: 1.0) | FLOAT | Sim | 0.0 a 1.0 |
 
 Nota: `width` e `height` mudam em passos de 32 pixels, e `length` muda em passos de 8 quadros, correspondendo à compressão latente do vídeo (32x nas dimensões espaciais e 8x na dimensão temporal). O latente de vídeo contém ((length - 1) // 8) + 1 quadros.
 

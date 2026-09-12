@@ -8,9 +8,9 @@ O nó Meshy: Texture aplica texturas geradas por IA a um modelo 3D. Ele recebe u
 | --- | --- | --- | --- | --- |
 | `modelo` | A versão do modelo de IA a ser usada para texturização. | COMBO | Sim | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `meshy_task_id` | O identificador exclusivo (ID da tarefa) de uma tarefa anterior de geração ou conversão 3D do Meshy. Isso fornece o modelo 3D base a ser texturizado. | MESHY_TASK_ID | Sim | - |
-| `habilitar_uv_original` | Use a UV original do modelo em vez de gerar novas UVs. Quando ativado (padrão: `True`), o Meshy preserva as texturas existentes do modelo enviado. Se o modelo não tiver UV original, a qualidade da saída pode não ser tão boa. Esta é uma opção avançada. | BOOLEAN | Não | true / false |
-| `pbr` | Ativa a saída de material com renderização baseada em física (PBR) para o modelo texturizado (padrão: `False`). Esta é uma opção avançada. | BOOLEAN | Não | true / false |
-| `prompt_de_estilo_textual` | Descreva o estilo de textura desejado do objeto usando texto. Máximo de 600 caracteres. Não pode ser usado ao mesmo tempo que `image_style`. | STRING | Não | - |
+| `habilitar_uv_original` | Use a UV original do modelo em vez de gerar novas UVs. Quando ativado (padrão: `True`), o Meshy preserva as texturas existentes do modelo enviado. Se o modelo não tiver UV original, a qualidade da saída pode não ser tão boa. Esta é uma opção avançada. | BOOLEAN | Sim | true / false |
+| `pbr` | Ativa a saída de material com renderização baseada em física (PBR) para o modelo texturizado (padrão: `False`). Esta é uma opção avançada. | BOOLEAN | Sim | true / false |
+| `prompt_de_estilo_textual` | Descreva o estilo de textura desejado do objeto usando texto. Máximo de 600 caracteres. Não pode ser usado ao mesmo tempo que `image_style`. | STRING | Sim | - |
 | `estilo_de_imagem` | Uma imagem 2D para orientar o processo de texturização. Não pode ser usada ao mesmo tempo que `text_style_prompt`. | IMAGE | Não | - |
 | `texture_resolution` | Resolução da textura de cor base. Resoluções mais altas capturam mais detalhes da superfície. | COMBO | Sim | `"2k"`<br>`"4k"`<br>`"8k"` |
 

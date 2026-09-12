@@ -8,19 +8,19 @@ Ce nœud utilise le modèle Kling 3.0 pour générer une vidéo. Il crée la vid
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `modèle` | Paramètres du modèle et de génération. La sélection de cette option révèle un paramètre `resolution` imbriqué. | DYNAMIC_COMBO | Non | `"kling-v3"` |
+| `modèle` | Paramètres du modèle et de génération. La sélection de cette option révèle un paramètre `resolution` imbriqué. | DYNAMIC_COMBO | Oui | `"kling-v3"` |
 | `prompt` | La description textuelle qui guide la génération de la vidéo. Doit contenir entre 1 et 2500 caractères. | STRING | Oui | N/A |
-| `durée` | La durée de la vidéo en secondes (par défaut : 5). | INT | Non | 3 à 15 |
+| `durée` | La durée de la vidéo en secondes (par défaut : 5). | INT | Oui | 3 à 15 |
 | `première image` | L'image de départ pour la vidéo. Doit faire au moins 300x300 pixels et avoir un rapport hauteur/largeur compris entre 1:2.5 et 2.5:1. | IMAGE | Oui | N/A |
 | `dernière image` | L'image de fin pour la vidéo. Doit faire au moins 300x300 pixels et avoir un rapport hauteur/largeur compris entre 1:2.5 et 2.5:1. | IMAGE | Oui | N/A |
-| `générer l'audio` | Contrôle si la génération d'un fichier audio pour la vidéo est activée (par défaut : True). | BOOLEAN | Non | N/A |
-| `seed` | Le paramètre `seed` contrôle si le nœud doit être exécuté à nouveau ; les résultats ne sont pas déterministes, quelle que soit la valeur de `seed` (par défaut : 0). | INT | Non | 0 à 2147483647 |
+| `générer l'audio` | Contrôle si la génération d'un fichier audio pour la vidéo est activée (par défaut : True). | BOOLEAN | Oui | N/A |
+| `seed` | Le paramètre `seed` contrôle si le nœud doit être exécuté à nouveau ; les résultats ne sont pas déterministes, quelle que soit la valeur de `seed` (par défaut : 0). | INT | Oui | 0 à 2147483647 |
 
 ### Entrées Kling V3
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `resolution` | La résolution de la vidéo générée (par défaut : `"1080p"`). | COMBO | Non | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `resolution` | La résolution de la vidéo générée (par défaut : `"1080p"`). | COMBO | Oui | `"4k"`<br>`"1080p"`<br>`"720p"` |
 
 **Remarque :** Les images `first_frame` et `end_frame` doivent faire au moins 300x300 pixels et avoir un rapport hauteur/largeur compris entre 1:2.5 et 2.5:1 pour que le nœud fonctionne correctement. Le paramètre `prompt` doit contenir entre 1 et 2500 caractères. L'option `resolution` correspond à un mode de génération Kling : `"4k"`, `"1080p"` (pro) et `"720p"` (standard).
 

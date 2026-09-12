@@ -7,7 +7,7 @@ Bria Eraser supprime des objets ou des zones d’une image à l’aide de l’AP
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L’image d’entrée contenant les objets ou les zones à supprimer. | IMAGE | Oui | - |
-| `masque` | Les zones blanches sont effacées, les zones noires sont préservées. Le masque est binarisé avant l’envoi, donc les zones partiellement peintes comptent comme blanches. Doit avoir le même rapport d’aspect que l’image. | MASK | Oui | - |
+| `masque` | Les zones blanches sont effacées, les zones noires sont préservées. Le masque est binarisé avant l’envoi avec un seuil de 50 % : seules les zones peintes à plus de 50 % d’opacité comptent comme blanches. Doit avoir le même rapport d’aspect que l’image. | MASK | Oui | - |
 | `mask_type` | Le type de source du masque. "manual" est destiné aux masques dessinés à la main ou au pinceau ; "automatic" est destiné aux masques produits par des modèles de segmentation tels que SAM. | COMBO | Oui | "manual"<br>"automatic" |
 | `modération` | Paramètres de modération. Réglez sur "true" pour activer la modération du contenu visuel sur les images d’entrée et/ou de sortie. | DYNAMIC_COMBO | Oui | "false"<br>"true" |
 

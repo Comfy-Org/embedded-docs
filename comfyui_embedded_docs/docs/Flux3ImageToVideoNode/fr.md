@@ -14,7 +14,7 @@ Flux 3 Image to Video anime 1 à 10 images avec FLUX 3. Chaque image devient une
 | `duration` | Durée du clip en secondes. « auto » adapte la longueur au contenu. | COMBO | Oui | `"auto"` (défaut)<br>autres durées disponibles |
 | `resolution` | Résolution de sortie. | COMBO | Oui | `"720p"` (défaut)<br>`"1080p"` |
 | `generate_audio` | Générer un audio synchronisé (ambiance, parole, effets). Désactivé produit une vidéo sans piste audio. | BOOLEAN | Oui | true / false (défaut : true) |
-| `safety_tolerance` | Tolérance de modération, 0 est la plus stricte. Les requêtes qui envoient des images ou des vidéos sont plafonnées à 2, quelle que soit la valeur définie ici. | INT | Oui | 0 à 4 (défaut : 2, paramètre avancé) |
+| `safety_tolerance` | Tolérance de modération, 0 est la plus stricte. Les requêtes qui envoient des images ou des vidéos sont plafonnées à 2, quelle que soit la valeur définie ici. | INT | Non | 0 à 4 (défaut : 2, paramètre avancé) |
 | `seed` | Graine (seed) pour déterminer si le nœud doit se relancer ; FLUX 3 choisit sa propre graine, donc les résultats réels sont non déterministes quelle que soit cette valeur. | INT | Oui | 0 à 4294967295 (défaut : 42, contrôle après génération) |
 
 Remarque : `keyframes` doit contenir au moins une image ; le nœud génère une erreur si aucune n'est connectée. Chaque image clé doit faire au moins 256x256 pixels et son format d'image ne peut pas être plus extrême que 64:1.

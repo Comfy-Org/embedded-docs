@@ -10,8 +10,8 @@ O ViduExtendVideoNode gera quadros adicionais para estender a duração de um v�
 |-----------|-------------|-----------|----------|-------|
 | `modelo` | Modelo a ser usado para extensão de vídeo. Selecionar um modelo revela suas configurações específicas de duração e resolução. | DYNAMIC_COMBO | Sim | `"viduq2-pro"`<br>`"viduq2-turbo"` |
 | `vídeo` | O vídeo de origem a ser estendido. | VIDEO | Sim | - |
-| `prompt` | Um prompt de texto opcional para o vídeo estendido (máximo de 2000 caracteres, padrão: vazio). | STRING | Não | - |
-| `semente` | Um valor de semente (seed) para controlar a aleatoriedade da geração (padrão: 1). | INT | Não | 0 a 2147483647 |
+| `prompt` | Um prompt de texto opcional para o vídeo estendido (máximo de 2000 caracteres, padrão: vazio). | STRING | Sim | - |
+| `semente` | Um valor de semente (seed) para controlar a aleatoriedade da geração (padrão: 1). | INT | Sim | 0 a 2147483647 |
 | `quadro_final` | Uma imagem opcional para usar como quadro final de destino para a extensão. | IMAGE | Não | - |
 
 ### Entradas do viduq2-pro e do viduq2-turbo

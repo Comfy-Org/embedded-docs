@@ -7,10 +7,10 @@ LazyCache é uma versão caseira do EasyCache que oferece uma implementação ai
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `modelo` | O modelo ao qual adicionar o LazyCache. | MODEL | Sim | - |
-| `limite_de_reutilização` | O limite para reutilizar etapas em cache (padrão: 0.2). | FLOAT | Não | 0.0 - 3.0 |
-| `percentual_inicial` | A etapa relativa da amostragem para começar a usar o LazyCache (padrão: 0.15). | FLOAT | Não | 0.0 - 1.0 |
-| `percentual_final` | A etapa relativa da amostragem para encerrar o uso do LazyCache (padrão: 0.95). | FLOAT | Não | 0.0 - 1.0 |
-| `detalhado` | Se deve registrar informações detalhadas (padrão: False). | BOOLEAN | Não | - |
+| `limite_de_reutilização` | O limite para reutilizar etapas em cache (padrão: 0.2). | FLOAT | Sim | 0.0 - 3.0 |
+| `percentual_inicial` | A etapa relativa da amostragem para começar a usar o LazyCache (padrão: 0.15). | FLOAT | Sim | 0.0 - 1.0 |
+| `percentual_final` | A etapa relativa da amostragem para encerrar o uso do LazyCache (padrão: 0.95). | FLOAT | Sim | 0.0 - 1.0 |
+| `detalhado` | Se deve registrar informações detalhadas (padrão: False). | BOOLEAN | Sim | - |
 
 Nota: `reuse_threshold`, `start_percent`, `end_percent` e `verbose` são opções avançadas opcionais.
 

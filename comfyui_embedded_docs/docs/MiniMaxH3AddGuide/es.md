@@ -7,8 +7,8 @@ Este nodo fija una imagen, un clip corto, audio o un clip con su banda sonora en
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
 | `positivo` | El condicionamiento al que se adjunta el fotograma clave guía. | CONDITIONING | Sí | - |
-| `latente` | El latent de audio-video MiniMax H3 que define el video objetivo. Debe ser un latent AV MiniMax H3 (anidado, con dos tensores 5D de 24 canales cada uno). | LATENT | Sí | - |
-| `frame_idx` | Índice de fotograma en el que anclar la imagen o el primer fotograma del clip. Los valores negativos se cuentan desde el final del video. (por defecto: 0) | INT | Sí | -9999 a 9999 |
+| `latente` | El latent de audio-video MiniMax H3 que define el video objetivo. Debe ser un latent AV MiniMax H3 (anidado, con dos tensores 5D de 24 canales cada uno). | LATENT | No | - |
+| `frame_idx` | Índice de fotograma en el que anclar la imagen o el primer fotograma del clip. Los valores negativos se cuentan desde el final del video. (por defecto: 0) | INT | No | -9999 a 9999 |
 | `vae` | VAE de video, necesario cuando se conecta una imagen. | VAE | No | - |
 | `audio_vae` | VAE de audio, necesario cuando se conecta un audio. | VAE | No | - |
 | `image` | Imagen o fotogramas de video para anclar. Los lotes de múltiples fotogramas se anclan como un clip y se recortan a las longitudes de clip válidas del modelo: 5, 22, 39... (17k + 5) fotogramas. Los lotes de menos de 5 fotogramas usan solo la primera imagen. | IMAGE | No | - |

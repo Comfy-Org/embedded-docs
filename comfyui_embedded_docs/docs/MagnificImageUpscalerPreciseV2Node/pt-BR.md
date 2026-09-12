@@ -9,10 +9,10 @@ O nó The Magnific Image Upscale (Precise V2) realiza o aumento de escala de ima
 | `imagem` | A imagem de entrada a ser ampliada. Exatamente uma imagem é obrigatória. As dimensões mínimas são 160x160 pixels. A proporção de aspecto deve estar entre 1:3 e 3:1. | IMAGE | Sim | - |
 | `fator de escala` | O multiplicador de aumento de escala desejado. | COMBO | Sim | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` |
 | `estilo` | Estilo de processamento: sublime para uso geral, photo para fotografias, photo_denoiser para fotos com ruído. | COMBO | Sim | `"sublime"`<br>`"photo"`<br>`"photo_denoiser"` |
-| `nitidez` | Intensidade da nitidez da imagem. Valores mais altos aumentam a definição das bordas e a clareza. Padrão: 7. | INT | Não | 0 a 100 |
-| `granulação inteligente` | Aprimoramento inteligente de granulação/textura para evitar que a imagem pareça lisa demais ou artificial. Padrão: 7. | INT | Não | 0 a 100 |
-| `ultra detalhe` | Controla detalhes finos, texturas e microdetalhes adicionados durante o aumento de escala. Padrão: 30. | INT | Não | 0 a 100 |
-| `redução automática` | Reduzir automaticamente a escala da imagem de entrada se a saída exceder a resolução máxima. Padrão: False. | BOOLEAN | Não | - |
+| `nitidez` | Intensidade da nitidez da imagem. Valores mais altos aumentam a definição das bordas e a clareza. Padrão: 7. | INT | Sim | 0 a 100 |
+| `granulação inteligente` | Aprimoramento inteligente de granulação/textura para evitar que a imagem pareça lisa demais ou artificial. Padrão: 7. | INT | Sim | 0 a 100 |
+| `ultra detalhe` | Controla detalhes finos, texturas e microdetalhes adicionados durante o aumento de escala. Padrão: 30. | INT | Sim | 0 a 100 |
+| `redução automática` | Reduzir automaticamente a escala da imagem de entrada se a saída exceder a resolução máxima. Padrão: False. | BOOLEAN | Sim | - |
 
 **Observação:** Se `auto_downscale` estiver desativado e o tamanho de saída solicitado (dimensões da entrada × `scale_factor`) exceder 10060x10060 pixels, o nó gerará um erro. Quando `auto_downscale` estiver ativado, o nó tentará encontrar um fator de escala ideal que mantenha a perda de qualidade mínima.
 

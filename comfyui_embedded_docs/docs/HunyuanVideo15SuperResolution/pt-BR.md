@@ -12,7 +12,7 @@ O nó HunyuanVideo15SuperResolution prepara dados de condicionamento para um pro
 | `imagem_inicial` | Uma imagem inicial opcional para guiar a super-resolução. Se fornecida, ela é ampliada e codificada no latente de condicionamento. | IMAGE | Não | N/A |
 | `clip_vision_output` | Embeddings de visão do CLIP opcionais para adicionar ao condicionamento. | CLIP_VISION_OUTPUT | Não | N/A |
 | `latente` | A representação latente de vídeo de entrada que é incorporada ao condicionamento. | LATENT | Sim | N/A |
-| `aumento_de_ruído` | A intensidade do aumento de ruído a ser aplicada ao condicionamento (padrão: 0.70). Este é um parâmetro avançado. | FLOAT | Não | 0.0 - 1.0 (step 0.01) |
+| `aumento_de_ruído` | A intensidade do aumento de ruído a ser aplicada ao condicionamento (padrão: 0.70). Este é um parâmetro avançado. | FLOAT | Sim | 0.0 - 1.0 (step 0.01) |
 
 **Nota:** Se você fornecer uma `start_image`, você também deve conectar um `vae` para que ela possa ser codificada. A `start_image` é automaticamente ampliada para 16 vezes as dimensões espaciais (largura e altura) do `latent` de entrada, em seguida, codificada e colocada no latente de condicionamento. Apenas os canais RGB da `start_image` são usados para codificação.
 

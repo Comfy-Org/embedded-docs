@@ -8,9 +8,9 @@ Le nœud Meshy : Texture applique des textures générées par IA à un modèle 
 | --- | --- | --- | --- | --- |
 | `modèle` | La version du modèle IA à utiliser pour la texturation. | COMBO | Oui | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `meshy_task_id` | L’identifiant unique (ID de tâche) d’une tâche précédente de génération ou de conversion 3D Meshy. Cela fournit le modèle 3D de base à texturer. | MESHY_TASK_ID | Oui | - |
-| `activer_uv_original` | Utilisez les UV d’origine du modèle au lieu de générer de nouveaux UV. Lorsque cette option est activée (par défaut : `True`), Meshy conserve les textures existantes du modèle téléchargé. Si le modèle n’a pas d’UV d’origine, la qualité de la sortie pourrait être moindre. Il s’agit d’une option avancée. | BOOLEAN | Non | true / false |
-| `pbr` | Active la sortie de matériaux à rendu physiquement réaliste (PBR) pour le modèle texturé (par défaut : `False`). Il s’agit d’une option avancée. | BOOLEAN | Non | true / false |
-| `invite_style_texte` | Décrivez le style de texture souhaité pour l’objet à l’aide de texte. 600 caractères maximum. Ne peut pas être utilisé en même temps que `image_style`. | STRING | Non | - |
+| `activer_uv_original` | Utilisez les UV d’origine du modèle au lieu de générer de nouveaux UV. Lorsque cette option est activée (par défaut : `True`), Meshy conserve les textures existantes du modèle téléchargé. Si le modèle n’a pas d’UV d’origine, la qualité de la sortie pourrait être moindre. Il s’agit d’une option avancée. | BOOLEAN | Oui | true / false |
+| `pbr` | Active la sortie de matériaux à rendu physiquement réaliste (PBR) pour le modèle texturé (par défaut : `False`). Il s’agit d’une option avancée. | BOOLEAN | Oui | true / false |
+| `invite_style_texte` | Décrivez le style de texture souhaité pour l’objet à l’aide de texte. 600 caractères maximum. Ne peut pas être utilisé en même temps que `image_style`. | STRING | Oui | - |
 | `style_image` | Une image 2D pour guider le processus de texturation. Ne peut pas être utilisée en même temps que `text_style_prompt`. | IMAGE | Non | - |
 | `texture_resolution` | Résolution de la texture de couleur de base. Les résolutions plus élevées capturent plus de détails de surface. | COMBO | Oui | `"2k"`<br>`"4k"`<br>`"8k"` |
 

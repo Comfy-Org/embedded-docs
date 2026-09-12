@@ -9,7 +9,7 @@ TextEncodeZImageOmni codifica um prompt de texto juntamente com até três image
 | `clip` | O modelo CLIP usado para tokenizar e codificar o prompt de texto. | CLIP | Sim |  |
 | `codificador_de_imagem` | Um codificador de visão opcional. Se fornecido, ele é usado para codificar as imagens de entrada, e os embeddings resultantes são adicionados ao condicionamento. | CLIP_VISION | Não |  |
 | `prompt` | O prompt de texto a ser codificado. Suporta entrada de múltiplas linhas e prompts dinâmicos. | STRING | Sim |  |
-| `redimensionar_imagens_automaticamente` | Quando ativado (padrão: True), as imagens de entrada são redimensionadas automaticamente antes da codificação pelo VAE, de modo que sua área total de pixels fique próxima de 1024x1024, com as dimensões arredondadas para múltiplos de 8. | BOOLEAN | Não | True<br>False |
+| `redimensionar_imagens_automaticamente` | Quando ativado (padrão: True), as imagens de entrada são redimensionadas automaticamente antes da codificação pelo VAE, de modo que sua área total de pixels fique próxima de 1024x1024, com as dimensões arredondadas para múltiplos de 8. | BOOLEAN | Sim | True<br>False |
 | `vae` | Um modelo VAE opcional. Se fornecido, ele é usado para codificar as imagens de entrada em representações latentes, que são adicionadas ao condicionamento como latentes de referência. | VAE | Não |  |
 | `imagem1` | A primeira imagem de referência opcional. | IMAGE | Não |  |
 | `imagem2` | A segunda imagem de referência opcional. | IMAGE | Não |  |
