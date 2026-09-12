@@ -181,7 +181,12 @@ def update_doc_with_translations(doc_file, node_name, lang, frontend_translation
             content = '\n'.join(lines)
     
     # Update output parameter names
-    if 'outputs' in node_trans:
+    # DISABLED (2026-09-13): output names are programmatic identifiers and must
+    # stay English per repo policy (enforced by .cursorrules and
+    # _fix_output_names_in_translation in batch_translate_docs.py). Replacing them
+    # with frontend display names was regressing the review fixes from PR #145
+    # commit 58a9d1c2. Flip this flag only if the policy changes.
+    if False and 'outputs' in node_trans:
         lines = content.split('\n')
         in_output_section = False
         output_row_index = 0  # Track which output row we're on (0-indexed)
