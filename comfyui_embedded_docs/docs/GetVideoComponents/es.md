@@ -1,18 +1,18 @@
 # Obtener componentes de video
 
-El nodo Get Video Components extrae todos los elementos principales de un archivo de video. Separa el video en fotogramas individuales, extrae la pista de audio y proporciona información sobre la velocidad de fotogramas, la profundidad de bits y el espacio de color del video. Esto permite trabajar con cada componente de forma independiente para su posterior procesamiento o análisis.
+El nodo Get Video Components extrae todos los elementos principales de un archivo de video. Separa el video en fotogramas individuales, extrae la pista de audio y proporciona la velocidad de fotogramas, la profundidad de bits y el espacio de color del video. Esto te permite trabajar con cada componente de forma independiente para su posterior procesamiento o análisis.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `video` | El video del que se extraen los componentes. | VIDEO | Sí | - |
+| `video` | El video del que se extraerán los componentes. | VIDEO | Sí | - |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `imágenes` | Los fotogramas individuales extraídos del video como imágenes separadas. | IMAGE |
+| `images` | Los fotogramas individuales extraídos del video como imágenes separadas. | IMAGE |
 | `audio` | La pista de audio extraída del video. | AUDIO |
 | `fps` | La velocidad de fotogramas del video en fotogramas por segundo. | FLOAT |
 | `bit_depth` | La profundidad de bits del video. | COMBO |

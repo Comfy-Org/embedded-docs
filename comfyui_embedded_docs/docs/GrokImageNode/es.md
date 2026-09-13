@@ -1,28 +1,28 @@
 # Imagen Grok
 
-El nodo Grok Image genera una o más imágenes a partir de una descripción de texto utilizando el modelo de IA Grok. Envía tu indicación a un servicio externo y devuelve las imágenes generadas como tensores que puedes utilizar en tu flujo de trabajo.
+El nodo Grok Image genera una o más imágenes a partir de una descripción de texto utilizando el modelo de IA Grok. Envía tu prompt a un servicio externo y devuelve las imágenes generadas como tensores que pueden usarse en tu flujo de trabajo.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `modelo` | El modelo Grok específico que se utiliza para la generación de imágenes. Los diferentes modelos pueden ofrecer calidad, velocidad o características variables. | COMBO | Sí | `"grok-imagine-image-2.0"`<br>`"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"` |
-| `indicación` | La indicación de texto utilizada para generar la imagen. Esta descripción guía a la IA sobre qué crear. Debe tener al menos 1 carácter. | STRING | Sí | N/D |
-| `relación de aspecto` | La relación ancho-alto deseada para la imagen generada. | COMBO | Sí | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
-| `número de imágenes` | Número de imágenes a generar (predeterminado: 1). | INT | Sí | 1 a 10 |
-| `semilla` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
-| `resolución` | La resolución de salida deseada para las imágenes generadas (predeterminado: "1K"). | COMBO | No | `"1K"`<br>`"2K"` |
-| `calidad` | Nivel de calidad, compatible únicamente con el modelo `grok-imagine-image-2.0` (predeterminado: "medium"; "low" es una de las opciones disponibles). Para todos los demás modelos, esta configuración se ignora. | COMBO | No | Varias opciones disponibles |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `model` | El modelo Grok específico que se usará para la generación de imágenes. Los diferentes modelos pueden ofrecer calidad, velocidad o funciones variables. | COMBO | Sí | `"grok-imagine-image-2.0"`<br>`"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"` |
+| `prompt` | El prompt de texto usado para generar la imagen. Esta descripción guía a la IA sobre qué crear. Debe tener al menos 1 carácter (no se acepta texto compuesto únicamente por espacios en blanco). | STRING | Sí | N/A |
+| `aspect_ratio` | La relación ancho-alto deseada para la imagen generada. | COMBO | Sí | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
+| `number_of_images` | Número de imágenes que se generarán (predeterminado: 1). | INT | Sí | 1 a 10 |
+| `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
+| `resolution` | La resolución de salida deseada para las imágenes generadas (predeterminado: "1K"). | COMBO | No | `"1K"`<br>`"2K"` |
+| `quality` | Nivel de calidad, compatible solo con el modelo `grok-imagine-image-2.0` (predeterminado: "medium"; "low" es una de las opciones disponibles). Para todos los demás modelos, esta configuración se ignora. | COMBO | No | Múltiples opciones disponibles |
 
-**Nota:** El parámetro `seed` se utiliza principalmente para controlar cuándo se vuelve a ejecutar el nodo dentro de un flujo de trabajo. Debido a la naturaleza del servicio de IA externo, las imágenes generadas no serán reproducibles ni idénticas entre ejecuciones, incluso con la misma semilla.
+**Nota:** El parámetro `seed` se usa principalmente para controlar cuándo el nodo se vuelve a ejecutar dentro de un flujo de trabajo. Debido a la naturaleza del servicio de IA externo, las imágenes generadas no serán reproducibles ni idénticas entre ejecuciones, incluso con una semilla idéntica.
 
-**Nota sobre precios:** El costo de generar imágenes depende del `model`, la `resolution`, la `quality` y el `number_of_images` seleccionados. Para el modelo `grok-imagine-image-2.0`, la calidad "low" cuesta $0.04 por imagen en resolución 1K y $0.06 por imagen en resolución 2K; otros niveles de calidad cuestan $0.06 por imagen en 1K y $0.08 por imagen en 2K. El modelo `grok-imagine-image-quality` cuesta $0.05 por imagen en resolución 1K y $0.07 por imagen en resolución 2K. El modelo `grok-imagine-image-pro` cuesta $0.07 por imagen. El modelo `grok-imagine-image` cuesta $0.02 por imagen.
+**Nota sobre precios:** El costo de generar imágenes depende del `model`, `resolution`, `quality` y `number_of_images` seleccionados. Para el modelo `grok-imagine-image-2.0`, la calidad "low" cuesta $0.04 por imagen a resolución 1K y $0.06 por imagen a resolución 2K; los demás niveles de calidad cuestan $0.06 por imagen a 1K y $0.08 por imagen a 2K. El modelo `grok-imagine-image-quality` cuesta $0.05 por imagen a resolución 1K y $0.07 por imagen a resolución 2K. El modelo `grok-imagine-image-pro` cuesta $0.07 por imagen. El modelo `grok-imagine-image` cuesta $0.02 por imagen.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `output` | La imagen generada o un lote de imágenes. Si `number_of_images` es 1, se devuelve un tensor de imagen único. Si es mayor que 1, se devuelve un lote de tensores de imagen. | IMAGE |
+| `output` | La imagen generada o un lote de imágenes. Si `number_of_images` es 1, se devuelve un único tensor de imagen. Si es mayor que 1, se devuelve un lote de tensores de imagen. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokImageNode/es.md)
 

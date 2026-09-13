@@ -1,22 +1,24 @@
 # T5TokenizerOptions
 
-El nodo T5TokenizerOptions configura los ajustes del tokenizador para varios tipos de modelos T5. Establece los parámetros de padding mínimo y longitud mínima para múltiples variantes de modelos T5, incluyendo t5xxl, pile_t5xl, t5base, mt5xl y umt5xxl. El nodo toma una entrada CLIP, aplica los ajustes a una copia de la misma y devuelve el CLIP modificado.
+## Descripción general
+
+El nodo T5TokenizerOptions configura los ajustes del tokenizer para varios tipos de modelos T5. Establece los parámetros de padding mínimo y longitud mínima para múltiples variantes de modelos T5, incluyendo t5xxl, pile_t5xl, t5base, mt5xl y umt5xxl. El nodo toma una entrada CLIP, aplica la configuración a una copia de esta y devuelve el CLIP modificado.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `clip` | El modelo CLIP para configurar las opciones del tokenizador | CLIP | Sí | - |
-| `mín_relleno` | Valor de padding mínimo para establecer en todos los tipos de modelos T5 (por defecto: 0) | INT | Sí | 0 a 10000 |
-| `mín_longitud` | Valor de longitud mínima para establecer en todos los tipos de modelos T5 (por defecto: 0) | INT | Sí | 0 a 10000 |
+| `clip` | El modelo CLIP para el que se configurarán las opciones del tokenizer | CLIP | Sí | - |
+| `min_padding` | Valor mínimo de padding a establecer para todos los tipos de modelo T5 (predeterminado: 0) | INT | Sí | 0 a 10000 |
+| `min_length` | Valor mínimo de longitud a establecer para todos los tipos de modelo T5 (predeterminado: 0) | INT | Sí | 0 a 10000 |
 
-Nota: Este nodo está marcado como experimental en ComfyUI.
+Nota: Este nodo está marcado como experimental en ComfyUI. La configuración se aplica a todas las variantes T5 compatibles a la vez: t5xxl, pile_t5xl, t5base, mt5xl y umt5xxl. La entrada `clip` se clona antes de la modificación, por lo que el CLIP original no se altera.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `output` | El modelo CLIP modificado con las opciones del tokenizador actualizadas aplicadas a todas las variantes T5 | CLIP |
+| `output` | El modelo CLIP modificado con opciones de tokenizer actualizadas aplicadas a todas las variantes de T5 | CLIP |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/T5TokenizerOptions/es.md)
 

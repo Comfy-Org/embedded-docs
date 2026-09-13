@@ -1,20 +1,20 @@
-# MeshToFile3D
+# 3B Dosyası Oluştur (Mesh'ten)
 
-Bu düğüm, bir ağı (mesh) Save 3D veya Preview 3D düğümlerine aktarılabilen bir GLB dosya nesnesine seri hale getirir. UV'ler, renkler, normaller, doku, normal/ortam/emissive haritaları ve malzeme ayarları dahil tüm ağ verilerini taşır. Çok öğeli bir grubun (batch) yalnızca ilk öğesi kullanılır.
+Bu düğüm, bir mesh'i Save 3D veya Preview 3D düğümlerine aktarılabilecek bir GLB dosya nesnesine serileştirir. UV'ler, renkler, normaller, doku, normal/occlusion/emissive haritaları ve malzeme ayarları dahil olmak üzere tüm mesh verilerini taşır. Çok öğeli bir toplu işlemin yalnızca ilk öğesi kullanılır.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `mesh` | GLB dosyasına dönüştürülecek ağ; UV'ler, renkler, normaller, doku, normal/ortam/emissive haritaları ve malzeme dahildir. Grup başına yalnızca bir öğe desteklenir; grup birden fazla öğe içeriyorsa ilki kullanılır. | MESH | Evet | Tek ağ |
+| `mesh` | UV'ler, renkler, normaller, doku, normal/occlusion/emissive haritaları ve malzeme dahil olmak üzere GLB dosyasına dönüştürülecek mesh. Toplu işlem başına yalnızca bir öğe desteklenir; bir toplu işlem birden fazla öğe içeriyorsa ilk öğe kullanılır. | MESH | Evet | Tek mesh |
 
-Not: Düğüm, grup başına yalnızca bir öğeyi destekler. Girdi ağı, grubunda birden fazla öğe içeriyorsa bir uyarı günlüğe kaydedilir ve ilk öğe kullanılır. Ağ en az bir köşe noktası ve bir yüzey içermelidir; boş bir ağ hata oluşturur.
+Not: Düğüm, toplu işlem başına yalnızca bir öğeyi destekler. Girdi mesh'inin toplu işleminde birden fazla öğe varsa bir uyarı günlüğe kaydedilir ve ilk öğe kullanılır. Mesh en az bir köşe noktası ve bir yüz içermelidir; boş bir mesh hata verir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `model_3d` | Seri hale getirilmiş ağı içeren, diğer 3D düğümleri tarafından kaydedilmeye veya önizlenmeye hazır bir GLB (glTF Binary) dosya nesnesi. | FILE3D |
+| `model_3d` | Diğer 3D düğümleri tarafından kaydedilmeye veya önizlenmeye hazır, serileştirilmiş mesh'i içeren bir GLB (glTF Binary) dosya nesnesi. | FILE3D |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshToFile3D/tr.md)
 

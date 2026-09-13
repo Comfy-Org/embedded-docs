@@ -1,12 +1,12 @@
 # Booléen
 
-Le nœud Boolean offre un moyen simple de transmettre des valeurs booléennes (true/false) à travers votre flux de travail. Il prend une valeur d’entrée booléenne et renvoie la même valeur inchangée, ce qui vous permet de contrôler les paramètres booléens d’autres nœuds.
+Le nœud Boolean transmet une valeur booléenne (true/false) à travers votre flux de travail. Il prend une entrée booléenne et renvoie la même valeur inchangée, afin que vous puissiez fournir un réglage true/false à d'autres nœuds qui en ont besoin.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `valeur` | La valeur booléenne à transmettre via le nœud | BOOLEAN | Oui | true<br>false |
+| `value` | La valeur booléenne à transmettre via le nœud | BOOLEAN | Oui | true<br>false |
 
 ## Sorties
 

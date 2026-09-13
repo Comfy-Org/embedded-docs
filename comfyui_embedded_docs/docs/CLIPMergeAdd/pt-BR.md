@@ -1,17 +1,19 @@
 # CLIPMergeAdd
 
-O nó CLIPMergeAdd combina dois modelos CLIP adicionando patches do segundo modelo ao primeiro modelo. Ele cria uma cópia do primeiro modelo CLIP e incorpora seletivamente patches-chave do segundo modelo, excluindo IDs de posição e parâmetros de escala logit. Isso permite mesclar componentes de modelos CLIP preservando a estrutura do modelo base.
+O nó CLIPMergeAdd combina dois modelos CLIP adicionando patches do segundo modelo ao primeiro. Ele cria uma cópia do primeiro modelo CLIP e incorpora seletivamente patches principais do segundo modelo, excluindo IDs de posição e parâmetros de escala de logit. Isso permite combinar componentes de modelos CLIP preservando a estrutura do modelo base.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `clip1` | O modelo CLIP base que será clonado e usado como base para a mesclagem | CLIP | Sim | - |
-| `clip2` | O modelo CLIP secundário que fornece patches-chave a serem adicionados ao modelo base | CLIP | Sim | - |
+| `clip1` | O modelo CLIP base que será clonado e usado como fundamento para a mesclagem | CLIP | Sim | - |
+| `clip2` | O modelo CLIP secundário que fornece patches principais a serem adicionados ao modelo base | CLIP | Sim | - |
+
+Chaves terminadas em `.position_ids` ou `.logit_scale` de `clip2` são ignoradas, então esses parâmetros mantêm os valores de `clip1`.
 
 ## Saídas
 
-| Nome de Saída | Descrição | Tipo de Dados |
+| Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
 | `CLIP` | Um modelo CLIP mesclado contendo a estrutura do modelo base com patches adicionados do modelo secundário | CLIP |
 

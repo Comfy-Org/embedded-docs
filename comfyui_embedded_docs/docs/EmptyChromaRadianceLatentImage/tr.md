@@ -1,22 +1,22 @@
 # BoşKromaIşımaGizliGörsel
 
-The EmptyChromaRadianceLatentImage düğümü, kroma radiance iş akışlarında kullanılmak üzere belirtilen boyutlarda boş bir latent görüntü oluşturur. Sıfırlarla doldurulmuş bir tensör üretir; bu tensör, latent uzay işlemleri için bir başlangıç noktası görevi görür. Düğüm, boş latent görüntünün genişliğini, yüksekliğini ve batch boyutunu tanımlamanızı sağlar.
+EmptyChromaRadianceLatentImage düğümü, chroma radiance iş akışlarında kullanılmak üzere belirttiğiniz boyutlarda boş bir latent görüntü oluşturur. Latent uzayı işlemleri için başlangıç noktası işlevi gören sıfırlarla dolu bir tensör üretir; böylece boş latent görüntünün genişliğini, yüksekliğini ve batch boyutunu tanımlayabilirsiniz.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `genişlik` | Latent görüntünün piksel cinsinden genişliği (varsayılan: 1024, 16'ya bölünebilir olmalıdır) | INT | Evet | 16 ila MAX_RESOLUTION |
-| `yükseklik` | Latent görüntünün piksel cinsinden yüksekliği (varsayılan: 1024, 16'ya bölünebilir olmalıdır) | INT | Evet | 16 ila MAX_RESOLUTION |
-| `toplu_iş_boyutu` | Bir batch içinde oluşturulacak latent görüntü sayısı (varsayılan: 1) | INT | Hayır | 1 ila 4096 |
+| `width` | Latent görüntünün piksel cinsinden genişliği (varsayılan: 1024) | INT | Evet | 16 - MAX_RESOLUTION |
+| `height` | Latent görüntünün piksel cinsinden yüksekliği (varsayılan: 1024) | INT | Evet | 16 - MAX_RESOLUTION |
+| `batch_size` | Bir batch içinde oluşturulacak latent görüntü sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
 
-Not: `width` ve `height` parametreleri 16 adım aralığıyla tanımlanır, bu yüzden 16'nın katları olmalıdır.
+Not: `width` ve `height` 16 adım aralığıyla tanımlanır; bu nedenle değerler 16'nın katları olarak ayarlanır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `samples` | Sıfırlarla doldurulmuş, batch_size x 3 x height x width şeklindeki oluşturulan boş latent görüntü tensörü | LATENT |
+| `samples` | Sıfırlarla dolu, şekli batch_size x 3 x height x width olan oluşturulmuş boş latent görüntü tensörü | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyChromaRadianceLatentImage/tr.md)
 

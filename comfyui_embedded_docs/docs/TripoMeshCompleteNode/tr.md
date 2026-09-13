@@ -1,19 +1,19 @@
 # Tripo: Ağ Parçalarını Tamamla
 
-Bölümlenmiş bir 3B modelin parçalarını tamamlar ve mesh'in eksik veya hasarlı bölgelerini onarır. Bir Tripo mesh bölümleme sonucunun görev kimliğini alır, Tripo'dan tamamlama işini ister ve tamamlanmasını bekler. İsteğe bağlı olarak çalışmayı belirli parça adlarıyla sınırlayabilirsiniz. Tamamlanan model bir GLB dosyası olarak döndürülür.
+Parçalara ayrılmış bir 3B modelin parçalarını tamamlar ve meshin eksik veya hasarlı bölgelerini onarır. Bir Tripo mesh segmentasyon sonucunun görev kimliğini alır, Tripo'dan tamamlama işini ister ve tamamlanmasını bekler. İsteğe bağlı olarak işi belirli parça adlarıyla sınırlayabilirsiniz. Tamamlanan model bir GLB dosyası olarak döndürülür.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
-|-----------|----------|-----------|---------|--------|
-| `segment_task_id` | Bir Tripo mesh bölümleme görevinin görev kimliği. Bu görevdeki bölümlenmiş modelin parçaları tamamlanır. Önceki bir Tripo mesh bölümleme düğümünün SEGMENT_TASK_ID çıktısını bağlayın. | SEGMENT_TASK_ID | Evet | Tek görev kimliği |
-| `part_names` | Tamamlanacak virgülle ayrılmış parça adları. Boş bırakılırsa tüm parçaları tamamlar. Varsayılan: boş dize. Adların çevresindeki fazladan boşluklar kaldırılır ve yinelenen adlar yok sayılır. | STRING | Hayır | Serbest metin veya boş |
+|-----------|-------------|-----------|----------|-------|
+| `segment_task_id` | Bir Tripo mesh segmentasyon görevinin görev kimliği. Bu görevden parçalara ayrılmış modelin parçaları tamamlanır. Önceki bir Tripo mesh segmentasyon düğümünün SEGMENT_TASK_ID çıktısını bağlayın. | SEGMENT_TASK_ID | Evet | Tek görev kimliği |
+| `part_names` | Tamamlanacak, virgülle ayrılmış parça adları. Boş bırakılırsa tüm parçalar tamamlanır. Varsayılan: boş dize. Adların çevresindeki fazladan boşluklar kaldırılır ve yinelenen adlar yok sayılır. | STRING | Hayır | Serbest metin veya boş |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-|-------------|----------|-----------|
-| `model_file` | Tamamlanan modelin dosya adı. Bu çıktı yalnızca geriye dönük uyumluluk için vardır. | STRING |
+|-------------|-----------|-----------|
+| `model_file` | Tamamlanan modelin dosya adı. Bu çıktı yalnızca geriye dönük uyumluluk için mevcuttur. | STRING |
 | `model task_id` | Tamamlanan Tripo mesh tamamlama görevinin görev kimliği. Model görev kimliği bekleyen diğer Tripo düğümleri tarafından girdi olarak kullanılabilir. | MODEL_TASK_ID |
 | `GLB` | Onarılmış parçalarla tamamlanan 3B model, GLB dosyası olarak indirilir. | GLB |
 

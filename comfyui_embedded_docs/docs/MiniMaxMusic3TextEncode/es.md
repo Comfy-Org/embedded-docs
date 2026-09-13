@@ -1,25 +1,25 @@
-# MiniMaxMusic3TextEncode
+# Codificación de texto MiniMax Music3
 
-MiniMax Music3 Text Encode utiliza un modelo CLIP MiniMax Music3 para convertir descripciones de texto y letras en una secuencia de acondicionamiento acústico para la generación de música. El nodo devuelve los datos CONDITIONING resultantes, junto con la duración real del audio en segundos calculada a partir de la duración máxima de entrada.
+MiniMax Music3 Text Encode utiliza un modelo CLIP de MiniMax Music3 para convertir descripciones de texto y letras en una secuencia de condicionamiento acústico para la generación de música. El nodo devuelve los datos CONDITIONING resultantes, junto con la duración real del audio en segundos calculada a partir de la duración máxima de entrada.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
-|-----------|-------------|--------------|-----------|-------|
-| `clip` | El modelo CLIP MiniMax Music3, utilizado para la codificación de texto y la generación de secuencias de acondicionamiento. | CLIP | Sí | - |
-| `caption` | Texto que describe la música a generar. Admite texto multilínea y prompts dinámicos. | STRING | Sí | - |
-| `letras` | El texto de la letra que se utilizará para generar la música. Admite texto multilínea y prompts dinámicos. | STRING | Sí | - |
-| `semilla` | Semilla aleatoria reproducible para el proceso de generación. Valor predeterminado: 0. | INT | Sí | 0 a 18446744073709551615 (0xffffffffffffffff) |
-| `max_duration` | Duración máxima en segundos; el modelo puede finalizar la canción antes. Valor predeterminado: 120.0. | FLOAT | Sí | 0.04 to the model's maximum audio duration (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND), step 0.04 |
-| `cfg_scale` | Escala de guía sin clasificador. Valor predeterminado: constante CFG_SCALE del modelo. Parámetro avanzado. | FLOAT | Sí | 0.0 a 100.0, step 0.1 (keeps 2 decimal places) |
-| `top_k` | Valor de muestreo top-k utilizado para la selección de tokens acústicos. Valor predeterminado: constante CFG_TOP_K del modelo. Parámetro avanzado. | INT | Sí | 1 to the model's vocabulary size (C0_VOCAB_SIZE) |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `clip` | El modelo CLIP de MiniMax Music3, utilizado para la codificación de texto y la generación de la secuencia de condicionamiento. | CLIP | Sí | - |
+| `caption` | Texto que describe la música a generar. Admite texto de varias líneas y prompts dinámicos. | STRING | Sí | - |
+| `lyrics` | El texto de la letra que se utilizará para generar la música. Admite texto de varias líneas y prompts dinámicos. | STRING | Sí | - |
+| `seed` | Semilla aleatoria reproducible para el proceso de generación. Predeterminado: 0. Se proporciona un widget de control después de generar. | INT | Sí | 0 a 18446744073709551615 (0xffffffffffffffff) |
+| `max_duration` | Duración máxima en segundos; el modelo puede terminar la canción antes. Predeterminado: 120.0. | FLOAT | Sí | 0.04 hasta la duración máxima de audio del modelo (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND), paso 0.04 |
+| `cfg_scale` | Escala de guiado sin clasificador. Predeterminado: constante del modelo CFG_SCALE. Parámetro avanzado. | FLOAT | Sí | 0.0 a 100.0, paso 0.1 (conserva 2 decimales) |
+| `top_k` | Valor de muestreo top-k utilizado para la selección de tokens acústicos. Predeterminado: constante del modelo CFG_TOP_K. Parámetro avanzado. | INT | Sí | 1 hasta el tamaño del vocabulario del modelo (C0_VOCAB_SIZE) |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de dato |
-|------------------|-------------|--------------|
-| `conditioning` | La secuencia de acondicionamiento acústico generada, utilizada para guiar la generación de música posterior. | CONDITIONING |
-| `segundos` | La duración real de la secuencia de acondicionamiento, en segundos. | FLOAT |
+|-------------|-------------|-----------|
+| `conditioning` | La secuencia de condicionamiento acústico generada, utilizada para guiar la generación de música posterior. | CONDITIONING |
+| `seconds` | La duración real de la secuencia de condicionamiento, en segundos. | FLOAT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MiniMaxMusic3TextEncode/es.md)
 

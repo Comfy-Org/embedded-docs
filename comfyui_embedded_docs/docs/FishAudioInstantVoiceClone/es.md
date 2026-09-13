@@ -1,21 +1,21 @@
-# FishAudioInstantVoiceClone
+# Clonación instantánea de voz de Fish Audio
 
-Este nodo crea una voz clonada privada a partir de tus grabaciones de audio mediante la API de Fish Audio. Proporcionas una o más muestras de audio, y el nodo construye una voz personalizada que se puede usar inmediatamente para conversión de texto a voz. Acepta de 1 a 20 grabaciones, con una duración recomendada de 10 a 30 segundos cada una y un límite total de 270 segundos.
+Este nodo crea una voz clonada privada a partir de tus grabaciones de audio mediante la API de Fish Audio. Proporcionas una o más muestras de audio y el nodo crea una voz personalizada que se puede usar de inmediato para texto a voz. Acepta de 1 a 20 grabaciones, con una duración recomendada de 10 a 30 segundos cada una y un límite total de 270 segundos.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
-|-----------|-------------|--------------|-----------|-------|
-| `files` | Grabaciones de audio para la clonación de voz. Esta es una entrada ampliable: conecta uno o más elementos de audio (por ejemplo, `audio_1`, `audio_2`, ...) para proporcionar las muestras de voz. | AUDIO | Sí | 1 a 20 grabaciones |
-| `enhance_audio_quality` | Mejora la calidad del audio de referencia antes del entrenamiento (valor predeterminado: True). | BOOLEAN | Sí | True<br>False |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `files` | Grabaciones de audio para el clonado de voz. Esta es una entrada ampliable: conecta uno o más elementos de audio (por ejemplo, `audio_1`, `audio_2`, ...) para proporcionar las muestras de voz. | AUDIO | Sí | 1 a 20 grabaciones |
+| `enhance_audio_quality` | Mejora la calidad del audio de referencia antes del entrenamiento (predeterminado: True). | BOOLEAN | Sí | True<br>False |
 
 **Nota:** La duración total de todo el audio de referencia combinado debe ser inferior a 270 segundos. Si la duración combinada alcanza o supera los 270 segundos, el nodo devuelve un error.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
-|------------------|-------------|--------------|
-| `voice` | La voz clonada recién creada, identificada por un ID de voz único devuelto por la API de Fish Audio. Esta voz se puede usar para conversión de texto a voz. | FISHAUDIO_VOICE |
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `voice` | La voz clonada recién creada, identificada por un ID de voz único devuelto por la API de Fish Audio. Esta voz se puede usar para texto a voz. | FISHAUDIO_VOICE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FishAudioInstantVoiceClone/es.md)
 

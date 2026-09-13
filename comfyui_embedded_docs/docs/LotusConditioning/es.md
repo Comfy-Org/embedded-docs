@@ -1,18 +1,18 @@
 # LotusConditioning
 
-El nodo LotusConditioning proporciona embeddings de condicionamiento precomputados para el modelo Lotus. Utiliza un codificador congelado con condicionamiento nulo y devuelve embeddings de prompt codificados para lograr paridad con la implementación de referencia, sin requerir inferencia ni cargar archivos de tensores grandes. Este nodo genera un tensor de condicionamiento fijo que puede usarse directamente en el pipeline de generación.
+El nodo LotusConditioning proporciona embeddings de condicionamiento fijos y precalculados para el modelo Lotus. Debido a que Lotus utiliza un codificador congelado con condicionamiento nulo, el nodo incorpora directamente los embeddings de prompt resultantes en lugar de ejecutar inferencia o cargar archivos grandes de tensores, por lo que su salida nunca cambia. El condicionamiento devuelto se puede conectar directamente a un pipeline de generación que espera un condicionamiento compatible con Lotus.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | *Sin entradas* | Este nodo no acepta ningún parámetro de entrada. | - | - | - |
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `condicionamiento` | Las embeddings de condicionamiento precomputadas para el modelo Lotus, que contienen embeddings de prompt fijas y un diccionario vacío. | CONDITIONING |
+| `conditioning` | Los embeddings de condicionamiento precalculados para el modelo Lotus. Se devuelven como una lista de condicionamiento que contiene los embeddings de prompt fijos junto con un diccionario vacío. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LotusConditioning/es.md)
 

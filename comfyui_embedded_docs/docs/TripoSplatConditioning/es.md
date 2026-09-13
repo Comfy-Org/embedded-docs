@@ -1,22 +1,22 @@
 # Condicionamiento TripoSplat
 
-Este nodo codifica una imagen de entrada utilizando el codificador de imagen DINOv3 y el VAE Flux2 para crear datos de condicionamiento positivo y negativo para el modelo TripoSplat. También genera un objetivo de ruido de tamaño fijo (latente más datos de cámara) que sirve como punto de partida para el KSampler.
+Este nodo codifica una imagen de entrada con el codificador de imágenes DINOv3 y el VAE Flux2 para producir datos de condicionamiento positivo y negativo para el modelo TripoSplat. También crea un objetivo de ruido de tamaño fijo (latent más datos de cámara) que sirve como punto de partida para el KSampler.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `clip_vision` | Codificador de imagen DINOv3 ViT-H/16+ | CLIP_VISION | Sí | - |
-| `vae` | VAE Flux2 | VAE | Sí | - |
-| `imagen` | La imagen de entrada a codificar | IMAGE | Sí | - |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `clip_vision` | Codificador de imágenes DINOv3 ViT-H/16+ | CLIP_VISION | Sí | - |
+| `vae` | Flux2 VAE | VAE | Sí | - |
+| `image` | La imagen de entrada que se va a codificar | IMAGE | Sí | - |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `positivo` | Datos de condicionamiento positivo que contienen características DINOv3 y latente del VAE Flux2 | CONDITIONING |
-| `negativo` | Datos de condicionamiento negativo que contienen características DINOv3 rellenas de ceros y latente del VAE Flux2 relleno de ceros | CONDITIONING |
-| `latente` | El objetivo de ruido de tamaño fijo (latente + cámara) para el KSampler | LATENT |
+| `positive` | Datos de condicionamiento positivo que contienen la secuencia de características DINOv3 y el latent del VAE Flux2 transportado como latent de referencia | CONDITIONING |
+| `negative` | Datos de condicionamiento negativo que contienen características DINOv3 rellenadas con ceros y un latent de referencia del VAE Flux2 rellenado con ceros | CONDITIONING |
+| `latent` | El objetivo de ruido de tamaño fijo (latent + cámara) para el KSampler. El latent es una secuencia de códigos de forma (shape-code) de forma constante (8192 x 16) emparejada con un único token de cámara (1 x 5) | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoSplatConditioning/es.md)
 

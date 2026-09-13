@@ -1,14 +1,14 @@
 # Carregar AudioEncoder
 
-O nó AudioEncoderLoader carrega um modelo de codificador de áudio de um arquivo na sua pasta de codificadores de áudio. Ele recebe o nome do arquivo de um modelo de codificador de áudio como entrada e retorna o modelo carregado, que pode então ser usado para tarefas de processamento de áudio no seu fluxo de trabalho.
+## Visão geral
+
+O nó AudioEncoderLoader carrega um modelo de codificador de áudio a partir de um arquivo armazenado na sua pasta `audio_encoders`. Ele recebe o nome do arquivo de um modelo de codificador de áudio como entrada e retorna o modelo carregado, que pode então ser usado para tarefas de processamento de áudio no seu fluxo de trabalho. Se o arquivo selecionado não contiver um modelo de codificador de áudio válido, o nó gera um erro.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `audio_encoder_name` | Seleciona qual arquivo de modelo de codificador de áudio carregar | COMBO | Sim | Lista de arquivos de codificador de áudio disponíveis na pasta audio_encoders |
-
-Nota: Se o arquivo selecionado não contiver um modelo de codificador de áudio válido, o nó lança um erro.
+| `audio_encoder_name` | Seleciona qual arquivo de modelo de codificador de áudio carregar da pasta de codificadores de áudio | COMBO | Sim | Lista de arquivos de codificador de áudio disponíveis na pasta `audio_encoders` |
 
 ## Saídas
 

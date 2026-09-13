@@ -1,21 +1,21 @@
 # Recraft V4 Create Style
 
-Este nodo crea un estilo Recraft V4 reutilizable a partir de 1 a 10 imágenes de referencia. El ID de estilo devuelto funciona con todos los modelos Recraft V4 y V4.1 del mismo tipo de salida (ráster o vectorial) y puede reutilizarse en pasos posteriores de generación de imágenes. El tamaño total de todas las imágenes de referencia está limitado a 10 MB.
+Este nodo crea un estilo de Recraft V4 reutilizable a partir de 1 a 10 imágenes de referencia. El ID de estilo devuelto funciona con todos los modelos Recraft V4 y V4.1 del mismo tipo de salida (ráster o vectorial) y se puede reutilizar en pasos posteriores de generación de imágenes. El tamaño total de todas las imágenes de referencia está limitado a 10 MB.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|-----------|----------|-------|
-| `model` | Modelo para el que se crea el estilo. Standard y Pro comparten un mismo grupo de estilos: los estilos ráster funcionan con todos los modelos ráster de Recraft V4 y V4.1, y los estilos vectoriales (*_vector) con todos los modelos vectoriales de V4 y V4.1. | COMBO | Sí | "recraftv4_styles"<br>"recraftv4_styles_vector"<br>"recraftv4_styles_pro"<br>"recraftv4_styles_pro_vector" |
-| `images` | Imágenes de referencia que definen el estilo. Las referencias similares afinan la coincidencia; las referencias variadas la amplían. Ranura ampliable: conecte de 1 a 10 imágenes (`image_1` hasta `image_10`). | IMAGE | Sí | De 1 a 10 imágenes |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `model` | Modelo para el que se crea el estilo. Standard y Pro comparten un grupo de estilos: los estilos ráster funcionan con todos los modelos ráster Recraft V4 y V4.1; los estilos vectoriales (*_vector), con todos los modelos vectoriales V4 y V4.1. | COMBO | Sí | "recraftv4_styles"<br>"recraftv4_styles_vector"<br>"recraftv4_styles_pro"<br>"recraftv4_styles_pro_vector" |
+| `images` | Imágenes de referencia que definen el estilo. Las referencias similares afinan la coincidencia; las referencias variadas la amplían. Ranura ampliable: conecte de 1 a 10 imágenes (`image_1` a `image_10`). | IMAGE | Sí | 1 a 10 imágenes |
 
 ### Notas
 
-- Se requiere al menos una imagen de referencia; el nodo genera un error si no se proporciona ninguna.
-- Se permiten como máximo 10 imágenes de referencia; el nodo genera un error si se proporcionan más.
-- El tamaño total codificado de todas las imágenes de referencia no debe superar los 10 MB; el nodo genera un error si se supera el límite.
+- Se requiere al menos una imagen de referencia; el nodo lanza un error si no se proporciona ninguna.
+- Se permiten como máximo 10 imágenes de referencia; el nodo lanza un error si se proporcionan más.
+- El tamaño codificado total de todas las imágenes de referencia no debe superar los 10 MB; el nodo lanza un error si se excede el límite.
 - Cada imagen de referencia se reduce a un máximo de 2048×2048 píxeles y se codifica como WebP antes de enviarse a la API de Recraft.
-- Los modelos que terminan en `_vector` crean estilos vectoriales; el resto de opciones crean estilos ráster. Los modelos Standard y Pro comparten los mismos grupos de estilos dentro de cada tipo de salida.
+- Los modelos que terminan en `_vector` crean estilos vectoriales; las demás opciones crean estilos ráster. Los modelos Standard y Pro comparten los mismos grupos de estilos dentro de cada tipo de salida.
 
 ## Salidas
 

@@ -1,22 +1,22 @@
 # USOTarzReferansı
 
-USOStyleReference düğümü, CLIP görüş özelliklerini bir model yamasıyla birleştirerek modele stil referansı uygular ve girdi modelinin yamalı bir kopyasını döndürür. Flux modelleri için tasarlanmıştır ve deneysel olarak işaretlenmiştir. Görsel stil bilgisi, modelin metin koşullandırmasıyla birleştirilir, böylece üretimi etkileyebilir.
+USOStyleReference düğümü, CLIP görüntü özelliklerini bir model yamasıyla birleştirerek bir modele stil referansı uygular ve girdi modelinin yamalanmış bir kopyasını döndürür. Görsel stil bilgisi, üretimi etkileyebilmesi için modelin metin koşullandırmasıyla birleştirilir. Bu düğüm Flux modelleri için tasarlanmıştır ve deneysel olarak işaretlenmiştir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Stil referans yamasının uygulandığı temel model. | MODEL | Evet | - |
-| `model_yama` | Referans görüntü özelliklerini kodlamak için kullanılan projeksiyon modelini içeren model yaması. | MODEL_PATCH | Evet | - |
-| `clip_vision_çıktısı` | Referans görüntünün CLIP vision işlemesinden çıkarılan kodlanmış görsel özellikler. | CLIP_VISION_OUTPUT | Evet | - |
+| `model` | Stil referansı yamasının uygulandığı temel model. | MODEL | Evet | - |
+| `model_patch` | Referans görüntü özelliklerini kodlamak için kullanılan projeksiyon modelini içeren model yaması. | MODEL_PATCH | Evet | - |
+| `clip_vision_output` | Referans görüntünün CLIP görüntü işlemesinden çıkarılan kodlanmış görsel özellikler. | CLIP_VISION_OUTPUT | Evet | - |
 
-Not: `clip_vision_output`, tam gizli durumları ve sondan bir önceki gizli durumu sağlayan bir CLIP vision modelinden gelmelidir. Düğüm, sondan 20., sondan 11. ve sondan bir önceki gizli durumları stil yerleştirmesinde birleştirir. `model_patch`, bu görüntü özelliklerini stil yerleştirmesine dönüştüren bir projeksiyon modelini `model` özniteliği aracılığıyla açığa çıkarmalıdır. Örnekleme sırasında, stil yerleştirmesi metin koşullandırmasının başına eklenir, böylece üretimi etkileyebilir.
+Not: `clip_vision_output`, tam gizli durumları ve sondan bir önceki gizli durumu sağlayan bir CLIP görüntü modelinden gelmelidir. Düğüm, sondan 20., sondan 11. ve sondan bir önceki gizli durumları stil gömülmesinde birleştirir. `model_patch`, bu görüntü özelliklerini stil gömülmesine dönüştüren bir projeksiyon modelini `model` özniteliği aracılığıyla sunmalıdır. Örnekleme sırasında stil gömülmesi, üretimi etkileyebilmesi için metin koşullandırmasının başına eklenir ve eşleşen sıfır konumlu metin kimlikleri, tanımlayıcı dizisi genişletilmiş koşullandırmayla hizalı kalacak şekilde metin kimliklerinin başına eklenir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model` | Stil referans yaması uygulanmış değiştirilmiş model. | MODEL |
+| `model` | Stil referansı yaması uygulanmış değiştirilmiş model. | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/USOStyleReference/tr.md)
 

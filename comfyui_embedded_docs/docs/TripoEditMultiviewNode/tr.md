@@ -12,18 +12,18 @@ Tripo: Image to Multiview sonucunun görünümlerini, her görünüm için ayrı
 | `back_prompt` | Arka görünüme uygulanacak düzenlemeyi açıklayan metin talimatı. Boş olduğunda arka görünüm değişmeden kalır. Varsayılan: boş dize. | STRING | Hayır | Çok satırlı metin |
 | `right_prompt` | Sağ görünüme uygulanacak düzenlemeyi açıklayan metin talimatı. Boş olduğunda sağ görünüm değişmeden kalır. Varsayılan: boş dize. | STRING | Hayır | Çok satırlı metin |
 
-Not: Dört istemden (`front_prompt`, `left_prompt`, `back_prompt`, `right_prompt`) en az biri boş olmayan metin içermelidir; yalnızca boşluk içeren metin boş kabul edilir ve tüm istemler boşsa düğüm bir hata verir.
+Not: Dört metin talimatından (`front_prompt`, `left_prompt`, `back_prompt`, `right_prompt`) en az biri boş olmayan metin içermelidir; yalnızca boşluk karakterlerinden oluşan metin boş kabul edilir ve tüm metin talimatları boşsa düğüm bir hata verir.
 
-Not: Maliyet, düzenleme talimatı bulunan her görünüm için yaklaşık 0,05 USD'dir.
+Not: Maliyet, düzenleme talimatı içeren her görünüm için yaklaşık 0,05 USD'dir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
 | `front` | Düzenlenmiş ön görünüm görüntüsü. | IMAGE |
-| `sol` | Düzenlenmiş sol görünüm görüntüsü. | IMAGE |
-| `arka` | Düzenlenmiş arka görünüm görüntüsü. | IMAGE |
-| `sağ` | Düzenlenmiş sağ görünüm görüntüsü. | IMAGE |
+| `left` | Düzenlenmiş sol görünüm görüntüsü. | IMAGE |
+| `back` | Düzenlenmiş arka görünüm görüntüsü. | IMAGE |
+| `right` | Düzenlenmiş sağ görünüm görüntüsü. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoEditMultiviewNode/tr.md)
 

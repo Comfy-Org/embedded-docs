@@ -1,21 +1,21 @@
 # ClipTextEncodeFlux
 
-`CLIPTextEncodeFlux` est un nœud d'encodage de texte avancé conçu pour l'architecture Flux. Il traite deux entrées de texte distinctes via différents encodeurs—CLIP-L et T5XXL—et les combine avec une échelle de guidance pour produire une sortie de conditionnement unifiée pour la génération d'images.
+`CLIPTextEncodeFlux` est un nœud d'encodage de texte conçu pour l'architecture Flux. Il traite deux entrées de texte distinctes via différents encodeurs — CLIP-L et T5XXL — et les combine avec une échelle de guidage pour produire une sortie de conditionnement unifiée destinée à la génération d'images.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `clip` | Un modèle CLIP prenant en charge l'architecture Flux, incluant les encodeurs CLIP-L et T5XXL. | CLIP | Oui | - |
-| `clip_l` | Entrée de texte traitée par l'encodeur CLIP-L. Convient aux descriptions concises par mots-clés, telles que le style ou le thème. Prend en charge les entrées multilignes et les invites dynamiques. | STRING | Oui | - |
-| `t5xxl` | Entrée de texte traitée par l'encodeur T5XXL. Convient aux descriptions détaillées en langage naturel, exprimant des scènes et des détails complexes. Prend en charge les entrées multilignes et les invites dynamiques. | STRING | Oui | - |
-| `guidance` | Contrôle l'influence des conditions textuelles sur le processus de génération. Des valeurs plus élevées signifient une adhérence plus stricte au texte. Valeur par défaut : 3.5. Ajustable par incréments de 0,1. | FLOAT | Oui | 0.0 - 100.0 |
+| `clip_l` | Entrée texte traitée par l'encodeur CLIP-L. Adaptée aux descriptions concises par mots-clés, telles que le style ou le thème. Prend en charge les entrées multilignes et les invites dynamiques. | STRING | Oui | - |
+| `t5xxl` | Entrée texte traitée par l'encodeur T5XXL. Adaptée aux descriptions détaillées en langage naturel, exprimant des scènes et des détails complexes. Prend en charge les entrées multilignes et les invites dynamiques. | STRING | Oui | - |
+| `guidance` | Contrôle l'influence des conditions textuelles sur le processus de génération. Des valeurs plus élevées signifient une adhésion plus stricte au texte. Par défaut : 3,5. Ajustable par incréments de 0,1. | FLOAT | Oui | 0.0 - 100.0 |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `CONDITIONING` | Contient les embeddings fusionnés des deux encodeurs et le paramètre de guidance, utilisé pour la génération d'images conditionnelle. | CONDITIONING |
+| `CONDITIONING` | Contient les embeddings fusionnés des deux encodeurs ainsi que le paramètre de guidage, utilisés pour la génération d'images conditionnelle. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipTextEncodeFlux/fr.md)
 

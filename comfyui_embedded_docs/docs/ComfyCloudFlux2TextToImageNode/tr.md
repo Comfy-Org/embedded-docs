@@ -1,22 +1,22 @@
-# ComfyCloudFlux2TextToImageNode
+# Comfy Cloud Flux 2 Metinden Görüntüye [BETA]
 
-Flux 2 dev text-to-image modelini bir Comfy Cloud GPU üzerinde çalıştırır ve üretilen görüntüyü döndürür. `turbo` seçeneği, Turbo LoRA'yı kısa bir zamanlama ile uygulayarak çok daha hızlı bir çalışma sağlar; bunun karşılığında küçük bir kalite kaybı yaşanır. Kapatıldığında, LoRA olmadan tam uzunlukta dev geçişi yapılır. Bu, kredi cinsinden çalışma süresine göre faturalandırılan bir beta düğüm setidir.
+Flux 2 dev metinden görüntüye modelini bir Comfy Cloud GPU üzerinde çalıştırır ve oluşturulan görüntüyü döndürür. `turbo` seçeneği, Turbo LoRA'yı kısa bir zamanlamayla uygulayarak biraz kaliteden ödün verip çok daha hızlı bir çalışma sağlar; kapatıldığında LoRA olmadan tam uzunlukta dev geçişi gerçekleştirilir. Bu bir beta düğüm kümesidir ve kredi cinsinden çalışma süresine göre faturalandırılır.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Oluşturulacak görüntüyü tanımlayan metin istemi. Gönderimden önce baştaki ve sondaki boşluklar kaldırılır. | STRING | Evet | 1 ile 4096 karakter arası |
-| `seed` | Tekrarlanabilirlik için oluşturulan sonucu kontrol eden rastgele tohum değeri (varsayılan: 42). | INT | Evet | 0 ile 18446744073709551615 arası |
+| `prompt` | Oluşturulacak görüntüyü tanımlayan metin istemi. Gönderilmeden önce baştaki ve sondaki boşluklar kaldırılır. | STRING | Evet | 1 ila 4096 karakter |
+| `seed` | Yeniden üretilebilirlik için oluşturulan sonucu kontrol eden rastgele tohum (varsayılan: 42). | INT | Evet | 0 ila 18446744073709551615 |
 | `aspect_ratio` | Çıktı görüntüsünün en-boy oranı (varsayılan: "1:1"). | COMBO | Evet | "1:1"<br>"3:4"<br>"2:3"<br>"3:2"<br>"4:3"<br>"16:9"<br>"9:16"<br>"21:9" |
-| `megapixels` | Toplam piksel bütçesi. 1.0, kare oranda yaklaşık 1024x1024'e karşılık gelir (varsayılan: 1.0). | FLOAT | Evet | 0.1 ile 16.0 arası (adım 0.1) |
-| `turbo` | Turbo LoRA'yı kısa bir zamanlama ile çalıştırır; çok daha hızlı bir çalışma karşılığında küçük bir kalite kaybı yaşanır. Kapalı durumda, LoRA olmadan tam dev geçişi yapılır (varsayılan: True). | BOOLEAN | Evet | True / False |
+| `megapixels` | Toplam piksel bütçesi. 1.0, kare oranda yaklaşık 1024x1024'tür (varsayılan: 1.0). | FLOAT | Evet | 0.1 ila 16.0 (adım 0.1) |
+| `turbo` | Turbo LoRA'yı kısa bir zamanlamayla çalıştırır; biraz kaliteden ödün verip çok daha hızlı bir çalışma sağlar. Kapalıyken LoRA olmadan tam dev geçişi çalışır (varsayılan: True). | BOOLEAN | Evet | True / False |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `IMAGE` | Metin isteminden üretilen ve diğer düğümlere aktarılabilen bir ComfyUI görüntü tensörü olarak döndürülen görüntü. | IMAGE |
+| `IMAGE` | Metin isteminden oluşturulan görüntü; diğer düğümlere aktarılabilen bir ComfyUI görüntü tensörü olarak döndürülür. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfyCloudFlux2TextToImageNode/tr.md)
 

@@ -1,19 +1,19 @@
 # SamplerEulerAncestral
 
-El nodo SamplerEulerAncestral crea un muestreador Euler Ancestral para generar imágenes. Este muestreador utiliza un enfoque matemático específico que combina la integración de Euler con técnicas de muestreo ancestral para producir variaciones de imagen. El nodo permite configurar el comportamiento del muestreo ajustando parámetros que controlan la aleatoriedad y el tamaño del paso durante el proceso de generación.
+El nodo SamplerEulerAncestral crea un muestreador Euler Ancestral que se puede usar durante la generación de imágenes. Este muestreador combina la integración de Euler con el muestreo ancestral, lo que agrega cierto grado de aleatoriedad en cada paso para producir resultados variados. El nodo permite ajustar cuánta aleatoriedad se aplica mediante sus ajustes.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `eta` | Controla el tamaño del paso y la estocasticidad del proceso de muestreo (por defecto: 1.0). Este es un parámetro avanzado. | FLOAT | Sí | 0.0 - 100.0 |
-| `s_ruido` | Controla la cantidad de ruido añadido durante el muestreo (por defecto: 1.0). Este es un parámetro avanzado. | FLOAT | Sí | 0.0 - 100.0 |
+| `eta` | Controla el tamaño de paso y la estocasticidad del proceso de muestreo (predeterminado: 1.0). Este es un parámetro avanzado. | FLOAT | Sí | 0.0 - 100.0 |
+| `s_noise` | Controla la cantidad de ruido añadido durante el muestreo (predeterminado: 1.0). Este es un parámetro avanzado. | FLOAT | Sí | 0.0 - 100.0 |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `sampler` | Devuelve un muestreador Euler Ancestral configurado que puede utilizarse en el flujo de muestreo. | SAMPLER |
+| `sampler` | Devuelve un muestreador Euler Ancestral configurado que se puede usar en el flujo de muestreo. | SAMPLER |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerEulerAncestral/es.md)
 

@@ -1,19 +1,19 @@
 # LatentApplyOperationCFG
 
-El nodo LatentApplyOperationCFG aplica una operación latente para modificar el proceso de guiado de condicionamiento en un modelo. Funciona interceptando las salidas de condicionamiento durante el proceso de muestreo de la guía sin clasificador (CFG) y aplicando la operación especificada a las representaciones latentes antes de que se utilicen para la generación. Cuando el muestreador produce dos salidas de condicionamiento, la operación se aplica a la diferencia entre ambas, y la segunda salida se suma de nuevo al resultado.
+El nodo LatentApplyOperationCFG aplica una operación latente dentro del paso de guía libre de clasificador (CFG) del proceso de muestreo de un modelo. Intercepta las salidas de condicionamiento producidas antes de CFG, aplica la operación conectada a los valores latentes y devuelve el modelo con este comportamiento de muestreo modificado.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo al que se le aplicará la operación CFG | MODEL | Sí | - |
-| `operación` | La operación latente que se aplicará durante el proceso de muestreo CFG | LATENT_OPERATION | Sí | - |
+| `model` | El modelo al que se aplicará la operación CFG | MODEL | Sí | - |
+| `operation` | La operación latente que se aplicará durante el proceso de muestreo CFG | LATENT_OPERATION | Sí | - |
 
-Nota: Este nodo está marcado como experimental. La operación se aplica a las salidas de condicionamiento del modelo durante el proceso de muestreo CFG. Cuando hay dos salidas de condicionamiento, la operación se aplica a la diferencia entre la primera y la segunda salida, y la segunda salida se suma de nuevo. Cuando solo hay una salida de condicionamiento, la operación se aplica directamente a ella.
+Nota: Este nodo está marcado como experimental. La operación se aplica a las salidas de condicionamiento del modelo durante el proceso de muestreo CFG. Cuando hay dos salidas de condicionamiento, la operación se aplica a la diferencia entre la primera y la segunda salida, y la segunda salida se vuelve a sumar al resultado. Cuando solo hay una salida de condicionamiento, la operación se aplica directamente a ella.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
 | `model` | El modelo modificado con la operación CFG aplicada a su proceso de muestreo | MODEL |
 

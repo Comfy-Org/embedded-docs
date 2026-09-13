@@ -1,59 +1,31 @@
 # Sincronización Labial Kling Video con Texto
 
-Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
-
-## Reglas de Traducción
-
-1. **Contenido que NO debe traducirse:**
-   - Nombres de parámetros entre comillas invertidas: `image`, `seed`, `model`
-   - Tipos de datos en MAYÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.
-   - Valores en columna Range: números, "auto", nombres de opciones
-   - Código, rutas de archivos
-
-2. **Contenido que SÍ debe traducirse:**
-   - Títulos de secciones: ## Descripción general, ## Entradas, ## Salidas
-   - Todo el texto descriptivo y explicativo
-   - Descripciones de parámetros
-
-3. **Calidad de traducción:**
-   - Usar español estándar y neutral
-   - Mantener tono profesional pero accesible
-   - Asegurar precisión técnica
-   - Usar terminología técnica estándar en español
-
-4. **Formato:**
-   - Mantener todo el formato Markdown
-   - Preservar estructura de tablas
-   - No agregar ninguna nota o enlace al inicio del documento (será agregado automáticamente)
-
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
-Nodo Kling de Sincronización Labial de Texto a Video sincroniza los movimientos de la boca en un archivo de video para que coincidan con un texto indicado. Toma un video de entrada y genera un nuevo video donde los movimientos labiales del personaje están alineados con el texto proporcionado. El nodo utiliza síntesis de voz para crear una sincronización del habla de aspecto natural.
+El nodo Kling Lip Sync Text to Video sincroniza los movimientos de la boca en un archivo de video para que coincidan con un texto de entrada. Toma un video de entrada y genera un nuevo video en el que los movimientos labiales del personaje se alinean con el texto proporcionado. El nodo utiliza síntesis de voz para crear una sincronización del habla de aspecto natural.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
-| `video` | Archivo de video de entrada para la sincronización labial | VIDEO | Sí | - |
-| `texto` | Contenido de texto para la generación de video con sincronización labial. Obligatorio cuando el modo es text2video. Longitud máxima de 120 caracteres. | STRING | Sí | - |
-| `voz` | Selección de voz para el audio de sincronización labial (por defecto: "Melody") | COMBO | No | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" |
-| `velocidad_de_voz` | Velocidad del habla. Rango válido: 0.8~2.0, preciso hasta un decimal. (por defecto: 1) | FLOAT | No | 0.8-2.0 |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `video` | Archivo de video de entrada para la sincronización labial. El video debe tener entre 720px y 1920px de alto/ancho, entre 2s y 10s de duración y no superar los 100MB. | VIDEO | Sí | - |
+| `text` | Contenido de texto para la generación del video con sincronización labial. Requerido cuando el modo es text2video. La longitud máxima es de 120 caracteres. | STRING | Sí | - |
+| `voice` | Selección de voz para el audio de sincronización labial (predeterminado: "Melody"). Incluye opciones de voz tanto en inglés como en chino. | COMBO | No | "Melody"<br>"Sunny"<br>"Sage"<br>"Ace"<br>"Blossom"<br>"Peppy"<br>"Dove"<br>"Shine"<br>"Anchor"<br>"Lyric"<br>"Tender"<br>"Siren"<br>"Zippy"<br>"Bud"<br>"Sprite"<br>"Candy"<br>"Beacon"<br>"Rock"<br>"Titan"<br>"Grace"<br>"Helen"<br>"Lore"<br>"Crag"<br>"Prattle"<br>"Hearth"<br>"The Reader"<br>"Commercial Lady"<br>"阳光少年"<br>"懂事小弟"<br>"运动少年"<br>"青春少女"<br>"温柔小妹"<br>"元气少女"<br>"阳光男生"<br>"幽默小哥"<br>"文艺小哥"<br>"甜美邻家"<br>"温柔姐姐"<br>"职场女青"<br>"活泼男童"<br>"俏皮女童"<br>"稳重老爸"<br>"温柔妈妈"<br>"严肃上司"<br>"优雅贵妇"<br>"慈祥爷爷"<br>"唠叨爷爷"<br>"唠叨奶奶"<br>"和蔼奶奶"<br>"东北老铁"<br>"重庆小伙"<br>"四川妹子"<br>"潮汕大叔"<br>"台湾男生"<br>"西安掌柜"<br>"天津姐姐"<br>"新闻播报男"<br>"译制片男"<br>"撒娇女友"<br>"刀片烟嗓"<br>"乖巧正太" |
+| `voice_speed` | Velocidad del habla. Rango válido: 0.8~2.0, con precisión de un decimal. (predeterminado: 1) | FLOAT | No | 0.8-2.0 |
 
-**Requisitos del Video:**
+**Requisitos del video:**
 
 - El archivo de video no debe superar los 100MB
-- La altura/ancho debe estar entre 720px y 1920px
+- El alto/ancho debe estar entre 720px y 1920px
 - La duración debe estar entre 2s y 10s
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-| --- | --- | --- |
-| `id_video` | Video generado con audio sincronizado con los labios | VIDEO |
-| `id_video` | Identificador único para el video generado | STRING |
-| `duración` | Información de duración del video generado | STRING |
+| Nombre de salida | Descripción | Tipo de dato |
+|-------------|-------------|-----------|
+| `output` | Video generado con audio sincronizado con los labios | VIDEO |
+| `video_id` | Identificador único del video generado | STRING |
+| `duration` | Información de duración del video generado | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncTextToVideoNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `f16200d52ba05acfedebc027dde91e2c91bdbb80086888d947c9f56a4e92856d`
+**Source fingerprint (SHA-256):** `28a7be92d7e8a57efeb7e2913124e4373dfc75fbdba6ff7036fafb3a8ae43a60`

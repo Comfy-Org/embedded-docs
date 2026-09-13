@@ -1,21 +1,21 @@
 # Salvar Checkpoint Somente Imagem
 
-O nó ImageOnlyCheckpointSave salva um arquivo de checkpoint contendo um modelo, um codificador de visão CLIP e uma VAE. Ele cria um arquivo safetensors com o prefixo de nome de arquivo especificado e o armazena no diretório de saída. Este nó é especificamente projetado para salvar componentes de modelo relacionados a imagens juntos em um único arquivo de checkpoint.
+Este nó salva um arquivo checkpoint que agrupa um modelo junto com seu codificador de visão CLIP e VAE. O arquivo é gravado no formato safetensors no diretório de saída, usando o prefixo de nome de arquivo fornecido, para que os componentes relacionados a imagem de um modelo possam ser armazenados como um único checkpoint.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `modelo` | O modelo a ser salvo no checkpoint | MODEL | Sim | - |
+| `model` | O modelo a ser salvo no checkpoint | MODEL | Sim | - |
 | `clip_vision` | O codificador de visão CLIP a ser salvo no checkpoint | CLIP_VISION | Sim | - |
-| `vae` | A VAE (Autoencoder Variacional) a ser salva no checkpoint | VAE | Sim | - |
-| `prefixo_do_arquivo` | O prefixo para o nome do arquivo de saída (padrão: "checkpoints/ComfyUI") | STRING | Sim | - |
-| `prompt` | Parâmetro oculto para dados de prompt do fluxo de trabalho | PROMPT | Não | - |
-| `extra_pnginfo` | Metadados adicionais de PNG | EXTRA_PNGINFO | Não | - |
+| `vae` | O VAE (Variational Autoencoder) a ser salvo no checkpoint | VAE | Sim | - |
+| `filename_prefix` | O prefixo para o nome do arquivo de saída (padrão: "checkpoints/ComfyUI") | STRING | Sim | - |
+| `prompt` | Parâmetro oculto que recebe os dados do prompt do fluxo de trabalho | PROMPT | Não | - |
+| `extra_pnginfo` | Parâmetro oculto que recebe metadados PNG adicionais | EXTRA_PNGINFO | Não | - |
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dados |
+| Nome da saída | Descrição | Tipo de dados |
 | --- | --- | --- |
 | - | Este nó não retorna nenhuma saída | - |
 

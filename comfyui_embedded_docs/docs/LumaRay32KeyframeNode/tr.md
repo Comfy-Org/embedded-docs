@@ -1,8 +1,10 @@
 # Luma Ray 3.2 Ana Kare
 
-Bu düğüm, bir kılavuz görüntüyü Luma Ray 3.2 çıktı videosu zaman çizelgesinde belirli bir konuma sabitler. Bu düğümü Luma Ray 3.2 Keyframes to Video düğümünün "keyframes" girişine bağlayın ve isteğe bağlı "keyframes" girişini bağlayarak birden fazla anahtar kareyi zincirleyin.
+Bu düğüm, bir kılavuz görüntüyü Luma Ray 3.2 çıktı videosunun zaman çizelgesinde belirli bir konuma sabitler. Bu düğümü Luma Ray 3.2 Keyframes to Video düğümünün "keyframes" girişine bağlayın ve isteğe bağlı "keyframes" girişini bağlayarak birkaç anahtar kareyi birbirine zincirleyin.
 
-## Girişler
+## Girdiler
+
+### Ortak Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
@@ -10,15 +12,25 @@ Bu düğüm, bir kılavuz görüntüyü Luma Ray 3.2 çıktı videosu zaman çiz
 | `position` | Bu görüntünün çıktı videosunun zaman çizelgesine nasıl yerleştirileceği. | DYNAMIC_COMBO | Evet | "Fraction of duration (0.0-1.0)"<br>"Absolute time (seconds)" |
 | `keyframes` | Bu anahtar kareyle zincirlenecek isteğe bağlı önceki anahtar kareler. | LUMA_RAY32_KEYFRAME | Hayır | - |
 
-`position` parametresi için "Fraction of duration (0.0-1.0)" seçildiğinde, bu görüntünün çıktı videosunda nerede uygulanacağını belirleyen bir `fraction` değeri (varsayılan: 0.0, aralık: 0.0 ila 1.0, adım: 0.01) belirtebilirsiniz (0.0 = başlangıç, 1.0 = bitiş).
+### Sürenin Kesri (0.0-1.0) Girdileri
 
-`position` parametresi için "Absolute time (seconds)" seçildiğinde, bu görüntünün uygulanacağı çıktı videosunun başlangıcından itibaren saniye cinsinden süreyi belirleyen bir `seconds` değeri (varsayılan: 0.0, aralık: 0.0 ila 10.0, adım: 0.1) belirtebilirsiniz.
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `fraction` | Bu görüntünün çıktı videosunda nerede geçerli olacağı (0.0 = başlangıç, 1.0 = bitiş). Varsayılan: 0.0. | FLOAT | Evet | 0.0 ile 1.0 (step: 0.01) |
+
+### Mutlak Zaman (saniye) Girdileri
+
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `seconds` | Bu görüntünün geçerli olduğu, çıktı videosunun başlangıcından itibaren saniye cinsinden zaman. Varsayılan: 0.0. | FLOAT | Evet | 0.0 ile 10.0 (step: 0.1) |
+
+`position` parametresi, görüntünün zaman çizelgesine yerleştirilmesi için hangi değerin kullanılacağını belirler. Yalnızca seçilen seçeneğe ait alt parametre gösterilir ve kullanılır: "Fraction of duration (0.0-1.0)" için `fraction` ve "Absolute time (seconds)" için `seconds`.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-|-------------|-------------|-----------|
-| `keyframes` | Yeni anahtar kare ile isteğe bağlı önceki anahtar karelerin birleşimini içeren bir anahtar kare zinciri. | LUMA_RAY32_KEYFRAME |
+|-------------|-----------|-----------|
+| `keyframes` | Yeni anahtar kareyi isteğe bağlı önceki anahtar karelerle birleştiren bir anahtar kare zinciri. | LUMA_RAY32_KEYFRAME |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32KeyframeNode/tr.md)
 

@@ -1,6 +1,6 @@
 # Tripo P1: Texto para Modelo
 
-Tripo P1 text-to-3D. Este nó gera um modelo 3D a partir de uma descrição de texto usando a API Tripo P1. Ele é otimizado para criar malhas low-poly prontas para jogos com topologia estável, o que o torna adequado para aplicações em tempo real.
+Tripo P1 de texto para 3D. Este nó gera um modelo 3D a partir de uma descrição textual usando a API do Tripo P1. Ele é otimizado para criar malhas low-poly prontas para jogos, com topologia estável, o que o torna adequado para aplicações em tempo real.
 
 ## Entradas
 
@@ -14,13 +14,13 @@ Tripo P1 text-to-3D. Este nó gera um modelo 3D a partir de uma descrição de t
 | `image_seed` | Um valor de semente usado para controlar a aleatoriedade. Padrão: 42. | INT | Não | 0 a 2147483647 |
 | `face_limit` | Contagem alvo de faces, 48-20000. -1 permite que o Tripo escolha de forma adaptativa. Padrão: -1. | INT | Não | -1 a 20000 |
 | `model_seed` | Um valor de semente usado para controlar a aleatoriedade. Padrão: 42. | INT | Não | 0 a 2147483647 |
-| `auto_size` | Escala a saída para se aproximar de metros do mundo real. Padrão: False. | BOOLEAN | Não | True / False |
-| `export_uv` | Desdobramento UV durante a geração. Desative para execuções mais rápidas apenas com geometria. Padrão: True. | BOOLEAN | Não | True / False |
+| `auto_size` | Escala a saída para aproximar metros do mundo real. Padrão: False. | BOOLEAN | Não | True / False |
+| `export_uv` | Desdobramento de UV durante a geração. Desative para execuções mais rápidas de apenas geometria. Padrão: True. | BOOLEAN | Não | True / False |
 | `compress_geometry` | Aplica compressão de geometria meshopt (EXT_meshopt_compression). Arquivos menores, mas a visualização 3D do ComfyUI não consegue exibi-los; descompacte antes de editar. Padrão: False. | BOOLEAN | Não | True / False |
 
 ### Entradas de apenas geometria
 
-Nenhuma entrada extra está disponível quando `output_mode` está definido como `"Geometry only"`. Parâmetros relacionados a textura não são enviados ao Tripo nesse modo.
+Nenhuma entrada extra está disponível quando `output_mode` está definido como `"Geometry only"`. Parâmetros relacionados a textura não são enviados ao Tripo neste modo.
 
 ### Entradas com textura
 
@@ -28,16 +28,16 @@ Estas entradas aparecem apenas quando `output_mode` está definido como `"Textur
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `pbr` | Inclui mapas PBR. Quando ativado, a textura base também é ativada obrigatoriamente. Padrão: True. | BOOLEAN | Sim | True / False |
-| `texture_quality` | Predefinição de qualidade de textura. detailed = texturas HD, extreme = texturas 8K Ultra. Padrão: "standard". | COMBO | Sim | `"standard"`<br>`"detailed"`<br>`"extreme"` |
-| `texture_seed` | Um valor de semente para geração de textura, usado para controlar a aleatoriedade. Padrão: 42. | INT | Sim | 0 a 2147483647 |
+| `pbr` | Inclui mapas PBR. Quando ativado, a textura base também é forçada. Padrão: True. | BOOLEAN | Sim | True / False |
+| `texture_quality` | Predefinição de qualidade de textura. detailed = texturas HD, extreme = texturas Ultra 8K. Padrão: "standard". | COMBO | Sim | `"standard"`<br>`"detailed"`<br>`"extreme"` |
+| `texture_seed` | Um valor de semente para a geração de textura, usado para controlar a aleatoriedade. Padrão: 42. | INT | Sim | 0 a 2147483647 |
 
 ## Saídas
 
 | Nome da saída | Descrição | Tipo de dados |
 |-------------|-------------|-----------|
-| `model_file` | O nome do arquivo de modelo gerado, mantido apenas para compatibilidade com versões anteriores. | STRING |
-| `model task_id` | O ID de tarefa exclusivo para a solicitação de geração do modelo. | MODEL_TASK_ID |
+| `model_file` | O nome do arquivo de modelo gerado, mantido apenas para compatibilidade retroativa. | STRING |
+| `model task_id` | O ID exclusivo da tarefa para a solicitação de geração do modelo. | MODEL_TASK_ID |
 | `GLB` | O modelo 3D gerado no formato GLB. | FILE3DGLB |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1TextToModelNode/pt-BR.md)

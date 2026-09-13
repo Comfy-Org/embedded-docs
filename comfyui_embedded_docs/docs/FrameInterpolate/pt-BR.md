@@ -1,14 +1,16 @@
 # Interpolação de Quadros
 
-O nó Frame Interpolate cria novos quadros entre os existentes em uma sequência de imagens, aumentando efetivamente a taxa de quadros. Ele usa um modelo de IA para prever como os quadros intermediários devem se parecer, o que pode ser usado para criar efeitos suaves de câmera lenta ou para aumentar a suavidade de um vídeo.
+O nó Frame Interpolate cria novos quadros entre quadros existentes em uma sequência de imagens, aumentando efetivamente a taxa de quadros. Ele usa um modelo de IA para prever como os quadros intermediários devem se parecer, o que pode ser usado para criar efeitos suaves de câmera lenta ou para aumentar a suavidade de um vídeo.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `interp_model` | O modelo de interpolação de quadros a ser usado para gerar quadros intermediários | INTERP_MODEL | Sim | - |
-| `imagens` | Um lote de imagens consecutivas (quadros) para interpolar. Requer pelo menos 2 imagens. Se forem fornecidos menos de 2 quadros, o nó retorna as imagens de entrada inalteradas. | IMAGE | Sim | - |
-| `multiplicador` | O número de vezes para multiplicar a contagem de quadros. Por exemplo, um multiplicador de 2 dobra o número de quadros. (padrão: 2) | INT | Sim | 2 a 16 |
+| `images` | Um lote de imagens consecutivas (quadros) entre as quais interpolar. Requer pelo menos 2 imagens. Se menos de 2 quadros forem fornecidos, o nó retorna as imagens de entrada sem alterações. | IMAGE | Sim | - |
+| `multiplier` | O número de vezes para multiplicar a contagem de quadros. Por exemplo, um multiplier de 2 dobra o número de quadros. (padrão: 2) | INT | Sim | 2 a 16 |
+
+**Observação:** O nó exige pelo menos 2 quadros de entrada e um `multiplier` de pelo menos 2. Se qualquer uma dessas condições não for atendida, as imagens de entrada serão retornadas sem alterações.
 
 ## Saídas
 

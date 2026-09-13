@@ -1,22 +1,22 @@
 # GörüntüRGB'denYUV'ye
 
-ImageRGBToYUV düğümü, bir RGB görüntüsünü YUV renk uzayına dönüştürür. Görüntüyü üç bileşene ayırır — Y (parlaklık), U (mavi-fark kroma) ve V (kırmızı-fark kroma) — ve her bileşeni, girdiyle aynı boyutta ayrı bir görüntü olarak döndürür.
+ImageRGBToYUV düğümü, RGB'den YCbCr'ye renk dönüşümü kullanarak bir RGB görüntüsünü YUV tarzı renk bileşenlerine dönüştürür. Sonucu üç ayrı görüntüye ayırır — Y (parlaklık veya aydınlık), U (mavi fark kroma) ve V (kırmızı fark kroma) — ve her bileşeni girdiyle aynı genişlik ve yükseklikte döndürür.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
-|-----------|-----------|-----------|----------|-------|
-| `görüntü` | YUV renk uzayına dönüştürülecek RGB girdi görüntüsü. Görüntü bir alfa kanalı içeriyorsa yalnızca ilk üç (RGB) kanal kullanılır. | IMAGE | Evet | - |
+|-----------|-------------|-----------|----------|-------|
+| `image` | Y, U ve V bileşenlerine dönüştürülecek girdi RGB görüntüsü. Görüntü bir alfa kanalı içeriyorsa yalnızca ilk üç (RGB) kanal kullanılır. | IMAGE | Evet | - |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `Y` | YUV renk uzayının parlaklık bileşeni | IMAGE |
-| `U` | YUV renk uzayının mavi-fark kroma bileşeni | IMAGE |
-| `V` | YUV renk uzayının kırmızı-fark kroma bileşeni | IMAGE |
+| `Y` | YUV renk uzayının parlaklık (aydınlık) bileşeni, üç kanallı görüntü olarak döndürülür | IMAGE |
+| `U` | YUV renk uzayının mavi fark kroma bileşeni, üç kanallı görüntü olarak döndürülür | IMAGE |
+| `V` | YUV renk uzayının kırmızı fark kroma bileşeni, üç kanallı görüntü olarak döndürülür | IMAGE |
 
-Her çıktı, girdi görüntüsüyle aynı genişliğe, yüksekliğe ve kanal sayısına sahiptir. İlgili Y, U veya V bileşeni tüm kanallara kopyalanır; böylece her çıktı standart bir görüntü olarak döndürülür.
+Her çıktı, girdi görüntüsüyle aynı genişlik ve yüksekliğe sahiptir. İlgili Y, U veya V bileşeni üç kanalın tamamında yinelenir; böylece her çıktı standart bir üç kanallı görüntü olarak döndürülür.
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageRGBToYUV/tr.md)
 

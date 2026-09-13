@@ -1,6 +1,6 @@
 # Video Bileşenlerini Al
 
-Get Video Components düğümü, bir video dosyasındaki tüm ana öğeleri çıkarır. Videoyu ayrı karelere böler, ses parçasını çıkarır ve videonun kare hızı, bit derinliği ve renk uzayı bilgilerini sağlar. Bu sayede her öğeyle bağımsız olarak daha ileri işleme veya analiz için çalışabilirsiniz.
+Get Video Components düğümü, bir video dosyasındaki tüm ana öğeleri çıkarır. Videoyu tek tek karelere ayırır, ses parçasını çıkarır ve videonun kare hızını, bit derinliğini ve renk uzayını sağlar. Bu, daha fazla işleme veya analiz için her bir bileşenle bağımsız olarak çalışmanıza olanak tanır.
 
 ## Girdiler
 
@@ -12,9 +12,9 @@ Get Video Components düğümü, bir video dosyasındaki tüm ana öğeleri çı
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `görüntüler` | Videodan ayrı görüntüler olarak çıkarılan tek tek kareler. | IMAGE |
-| `ses` | Videodan çıkarılan ses parçası. | AUDIO |
-| `fps` | Videonun saniyedeki kare sayısı (fps) cinsinden kare hızı. | FLOAT |
+| `images` | Videodan ayrı görüntüler olarak çıkarılan tek tek kareler. | IMAGE |
+| `audio` | Videodan çıkarılan ses parçası. | AUDIO |
+| `fps` | Videonun saniyedeki kare hızı. | FLOAT |
 | `bit_depth` | Videonun bit derinliği. | COMBO |
 | `color_space` | Videonun renk uzayı. | COMBO |
 

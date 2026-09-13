@@ -1,13 +1,15 @@
 # Tome Model Yaması
 
-TomePatchModel, çıkarım sırasında hesaplama gereksinimlerini azaltmak için bir difüzyon modeline Token Merging (ToMe) uygular. Dikkat mekanizmasındaki benzer tokenleri seçici olarak birleştirerek çalışır ve modelin görüntü kalitesini korurken daha az token işlemesine olanak tanır. Bu teknik, önemli bir kalite kaybı olmadan üretimi hızlandırmaya yardımcı olur.
+TomePatchModel, çıkarım sırasında hesaplama maliyetini azaltmak için bir difüzyon modeline Token Merging (ToMe) uygular. Modelin dikkat mekanizması içindeki benzer token'ları birleştirerek çalışır; böylece model, çıktı kalitesini büyük ölçüde korurken daha az token işler.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Token birleştirmenin uygulanacağı difüzyon modeli | MODEL | Evet | - |
-| `oran` | Birleştirilecek tokenlerin oranı (varsayılan: 0.3). Daha yüksek değerler daha fazla tokeni birleştirir, bu da daha yüksek hız artışı ancak potansiyel olarak daha düşük kalite sağlar. | FLOAT | Evet | 0.0 - 1.0 |
+| `ratio` | Birleştirilecek token oranı (varsayılan: 0.3). Daha yüksek değerler daha fazla token birleştirir; bu daha büyük hızlanma sağlayabilir ancak potansiyel olarak kaliteyi düşürebilir. | FLOAT | Evet | 0.0 - 1.0 |
+
+Not: Bir dikkat bloğundaki token sayısı, alt örnekleme gerekmeyecek kadar küçükse, birleştirme işlevleri no-op'larla değiştirilir ve model o blok için değişmeden çalışır.
 
 ## Çıktılar
 

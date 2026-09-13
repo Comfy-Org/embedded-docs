@@ -1,19 +1,19 @@
 # EmptyLatentHunyuan3Dv2
 
-El nodo EmptyLatentHunyuan3Dv2 crea tensores latentes vacíos formateados específicamente para los modelos de generación 3D Hunyuan3Dv2. Genera espacios latentes vacíos con las dimensiones y la estructura correctas que requiere la arquitectura Hunyuan3Dv2, lo que permite iniciar flujos de trabajo de generación 3D desde cero. El nodo produce tensores latentes rellenos de ceros que sirven como base para los procesos posteriores de generación 3D.
+Este nodo crea un lote de muestras latentes vacías (de todos ceros) formateadas para modelos de generación 3D Hunyuan3Dv2. Produce el tensor latente con la forma correcta que sirve como punto de partida para flujos de trabajo de generación 3D, con el latente etiquetado con el tipo "hunyuan3dv2".
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `resolución` | La dimensión de resolución del espacio latente (por defecto: 3072) | INT | Sí | 1 - 8192 |
-| `tamaño_del_lote` | El número de imágenes latentes en el lote (por defecto: 1) | INT | Sí | 1 - 4096 |
+| `resolution` | La dimensión de resolución del espacio latente a crear (predeterminado: 3072) | INT | Sí | 1 - 8192 |
+| `batch_size` | El número de imágenes latentes en el lote (predeterminado: 1) | INT | Sí | 1 - 4096 |
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `LATENT` | Devuelve un tensor latente que contiene muestras vacías etiquetadas con el tipo "hunyuan3dv2", formateado para la generación 3D de Hunyuan3Dv2 | LATENT |
+| `LATENT` | Un tensor latente vacío de forma [batch_size, 64, resolution] que contiene muestras rellenas de ceros, etiquetado con el tipo "hunyuan3dv2" | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyLatentHunyuan3Dv2/es.md)
 

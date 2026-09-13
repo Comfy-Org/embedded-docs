@@ -1,31 +1,31 @@
 # Image vers vidéo WanCamera
 
-Le nœud `WanCameraImageToVideo` prépare les données de conditionnement et latentes pour la génération de vidéos à partir d’images. Il prend en entrée des prompts de conditionnement positifs et négatifs, ainsi qu’une image de départ facultative et des contrôles de caméra facultatifs, et produit un conditionnement modifié ainsi qu’un tenseur latent vide prêt à être rempli par un modèle vidéo.
+Le nœud WanCameraImageToVideo prépare les données de conditionnement et latentes pour la génération vidéo contrôlée par caméra à partir d’images. Il prend des prompts de conditionnement positifs et négatifs, ainsi que des entrées facultatives telles qu’une image de départ, une sortie de vision CLIP et des conditions de caméra, et produit un conditionnement mis à jour ainsi qu’un tenseur latent vide prêt à être rempli par un modèle vidéo.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `positif` | Prompts de conditionnement positifs pour la génération vidéo | CONDITIONING | Oui | - |
-| `négatif` | Prompts de conditionnement négatifs à éviter lors de la génération vidéo | CONDITIONING | Oui | - |
-| `vae` | Modèle VAE utilisé pour encoder les images dans l’espace latent | VAE | Oui | - |
-| `largeur` | Largeur de la vidéo de sortie en pixels (défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `hauteur` | Hauteur de la vidéo de sortie en pixels (défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `longueur` | Nombre d’images de la séquence vidéo (défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
-| `taille du lot` | Nombre de vidéos à générer simultanément (défaut : 1) | INT | Oui | 1 à 4096 |
-| `sortie de vision de clip` | Sortie CLIP vision facultative pour un conditionnement supplémentaire | CLIP_VISION_OUTPUT | Non | - |
-| `image de départ` | Image de départ facultative pour initialiser la séquence vidéo. Lorsqu’elle est fournie, les premières images de la vidéo sont basées sur cette image, avec un masque appliqué pour fusionner les images de départ avec le contenu généré. L’image est redimensionnée pour correspondre à la largeur et à la hauteur spécifiées. | IMAGE | Non | - |
-| `conditions de caméra` | Conditions d’embedding caméra facultatives pour la génération vidéo. Lorsqu’elles sont fournies, ces conditions sont appliquées au conditionnement positif et négatif. | WAN_CAMERA_EMBEDDING | Non | - |
+| `positive` | Prompts de conditionnement positifs pour la génération vidéo | CONDITIONING | Oui | - |
+| `negative` | Prompts de conditionnement négatifs à éviter dans la génération vidéo | CONDITIONING | Oui | - |
+| `vae` | Modèle VAE pour encoder les images dans l’espace latent | VAE | Oui | - |
+| `width` | Largeur de la vidéo de sortie en pixels (valeur par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `height` | Hauteur de la vidéo de sortie en pixels (valeur par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `length` | Nombre d’images dans la séquence vidéo (valeur par défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
+| `batch_size` | Nombre de vidéos à générer simultanément (valeur par défaut : 1) | INT | Oui | 1 à 4096 |
+| `clip_vision_output` | Sortie de vision CLIP facultative pour un conditionnement supplémentaire | CLIP_VISION_OUTPUT | Non | - |
+| `start_image` | Image de départ facultative pour initialiser la séquence vidéo. Lorsqu’elle est fournie, seules les premières `length` images sont utilisées, et l’image est redimensionnée pour correspondre à la `width` et à la `height` spécifiées. Les premières images de la séquence sont encodées dans le latent et un masque est appliqué pour mélanger les images de départ avec le contenu généré. | IMAGE | Non | - |
+| `camera_conditions` | Conditions d’embedding de caméra facultatives pour la génération vidéo. Lorsqu’elles sont fournies, ces conditions sont appliquées à la fois au conditionnement positif et négatif. | WAN_CAMERA_EMBEDDING | Non | - |
 
-**Remarque :** Lorsque `start_image` est fourni, seules les premières `length` images de l’image d’entrée sont utilisées pour initialiser la séquence vidéo, et le nœud applique un masque pour fusionner ces images de départ avec le contenu généré. Les paramètres `camera_conditions` et `clip_vision_output` sont facultatifs, mais lorsqu’ils sont fournis, ils modifient le conditionnement pour les prompts positifs et négatifs.
+**Remarque :** Lorsque `start_image` est fournie, le nœud définit les valeurs `concat_latent_image` et `concat_mask` sur les conditionnements `positive` et `negative`. Les paramètres `camera_conditions` et `clip_vision_output` sont facultatifs, mais lorsqu’ils sont fournis, ils modifient le conditionnement à la fois pour les prompts positif et négatif.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `positif` | Conditionnement positif modifié avec les conditions caméra, sorties CLIP vision et/ou données d’image de départ appliquées | CONDITIONING |
-| `négatif` | Conditionnement négatif modifié avec les conditions caméra, sorties CLIP vision et/ou données d’image de départ appliquées | CONDITIONING |
-| `latent` | Représentation latente vidéo vide générée pour une utilisation avec les modèles vidéo. Le tenseur latent a pour dimensions [batch_size, 16, frames, height/8, width/8], où frames est calculé comme ((length - 1) // 4) + 1. | LATENT |
+| `positive` | Conditionnement positif modifié avec application des conditions de caméra, de la sortie de vision CLIP et/ou des données d’image de départ | CONDITIONING |
+| `negative` | Conditionnement négatif modifié avec application des conditions de caméra, de la sortie de vision CLIP et/ou des données d’image de départ | CONDITIONING |
+| `latent` | Représentation latente vidéo vide à utiliser avec les modèles vidéo. Le tenseur latent a les dimensions [batch_size, 16, frames, height/8, width/8], où frames est calculé comme ((length - 1) // 4) + 1. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraImageToVideo/fr.md)
 

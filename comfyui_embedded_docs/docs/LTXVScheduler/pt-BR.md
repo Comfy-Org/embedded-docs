@@ -1,25 +1,25 @@
 # LTXVScheduler
 
-O nó LTXVScheduler gera valores de sigma para processos de amostragem personalizados. Ele calcula parâmetros de agendamento de ruído com base no número de tokens na entrada latente e aplica uma transformação sigmoide para criar o agendamento de amostragem. O nó pode opcionalmente esticar os sigmas resultantes para corresponder a um valor terminal especificado.
+O nó LTXVScheduler gera valores sigma para um processo de amostragem personalizado. Ele calcula o cronograma de ruído a partir do número de tokens no latente fornecido, ou usa um padrão de 4096 tokens quando nenhum latente está conectado, e pode opcionalmente esticar os valores sigma para que o valor final corresponda ao valor `terminal` especificado.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `steps` | Número de passos de amostragem (padrão: 20) | INT | Sim | 1-10000 |
-| `max_shift` | Valor máximo de deslocamento para o cálculo de sigma (padrão: 2.05) | FLOAT | Sim | 0.0-100.0 |
-| `base_shift` | Valor base de deslocamento para o cálculo de sigma (padrão: 0.95) | FLOAT | Sim | 0.0-100.0 |
+| `steps` | Número de etapas de amostragem (padrão: 20) | INT | Sim | 1-10000 |
+| `max_shift` | Valor máximo de deslocamento usado no cálculo de sigma (padrão: 2.05) | FLOAT | Sim | 0.0-100.0 (passo: 0.01) |
+| `base_shift` | Valor base de deslocamento usado no cálculo de sigma (padrão: 0.95) | FLOAT | Sim | 0.0-100.0 (passo: 0.01) |
 | `stretch` | Estica os sigmas para que fiquem no intervalo [terminal, 1] (padrão: True) | BOOLEAN | Sim | True/False |
-| `terminal` | O valor terminal dos sigmas após o estiramento (padrão: 0.1) | FLOAT | Sim | 0.0-0.99 |
-| `latent` | Entrada latente opcional usada para calcular a contagem de tokens para o ajuste de sigma | LATENT | Não | - |
+| `terminal` | O valor terminal dos sigmas após o esticamento (padrão: 0.1). Usado apenas quando `stretch` está habilitado. | FLOAT | Sim | 0.0-0.99 (passo: 0.01) |
+| `latent` | Entrada latente opcional usada para calcular a contagem de tokens para ajuste dos sigmas. Quando não fornecida, usa-se uma contagem padrão de 4096 tokens. | LATENT | Não | - |
 
-**Observação:** O parâmetro `latent` é opcional. Quando não fornecido, o nó usa uma contagem padrão de 4096 tokens para os cálculos.
+**Nota:** Quando `stretch` está habilitado, os valores sigma diferentes de zero são reescalados para que o último sigma diferente de zero seja igual ao valor `terminal`.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `sigmas` | Valores de sigma gerados para o processo de amostragem | SIGMAS |
+| `sigmas` | Valores sigma gerados para o processo de amostragem | SIGMAS |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVScheduler/pt-BR.md)
 

@@ -1,22 +1,22 @@
 # Posprocesar salida de SeedVR2
 
-Este nodo alinea la imagen generada con la imagen redimensionada original y aplica una corrección de color opcional. Toma la salida de un proceso de ampliación SeedVR2 y la ajusta para que coincida con los colores y las dimensiones de la imagen de referencia original.
+Este nodo alinea la imagen generada con la imagen original redimensionada y aplica corrección de color opcional. Toma la salida de un proceso de escalado de SeedVR2 y la ajusta para que coincida con los colores y las dimensiones de la imagen de referencia original.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `imágenes` | La imagen generada a procesar. | IMAGE | Sí | - |
-| `imágenes_redimensionadas_originales` | La imagen redimensionada original antes del preprocesamiento, utilizada como referencia. | IMAGE | Sí | - |
-| `método_de_corrección_de_color` | Método para ajustar los colores de la imagen generada a los de la imagen original. lab: transfiere el color en el espacio CIELAB, preservando el detalle (el más fiel). wavelet: transfiere el color de baja frecuencia, conservando el detalle de alta frecuencia ampliado. adain: iguala la media/desviación estándar por canal (el más rápido, tinte global). none: omite la transferencia de color (solo alineación geométrica). (predeterminado: "lab") | COMBO | Sí | `"lab"`<br>`"wavelet"`<br>`"adain"`<br>`"none"` |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `images` | La imagen generada a procesar. | IMAGE | Sí | - |
+| `original_resized_images` | La imagen original redimensionada antes del preprocesamiento, utilizada como referencia. | IMAGE | Sí | - |
+| `color_correction_method` | Método para hacer coincidir los colores de la imagen generada con los de la imagen original. lab: transfiere el color en el espacio CIELAB, preservando el detalle (más fiel). wavelet: transfiere el color de baja frecuencia, manteniendo el detalle de alta frecuencia del escalado. adain: iguala la media/desviación estándar por canal (más rápido, tinte global). none: omite la transferencia de color (solo alineación geométrica). (predeterminado: "lab") | COMBO | Sí | `"lab"`<br>`"wavelet"`<br>`"adain"`<br>`"none"` |
 
-**Nota:** Ambas entradas pueden ser tensores 4-D (lote, altura, ancho, canales) o 5-D (lote, fotogramas, altura, ancho, canales). El nodo recorta ambas al lote, número de fotogramas, altura y ancho más pequeños, por lo que no es necesario que coincidan exactamente. La altura y el ancho de salida se redondean hacia abajo a números pares. Si la imagen de referencia tiene un canal alfa (4 canales), ese canal alfa se preserva y se aplica a la salida.
+**Nota:** Ambas entradas pueden ser tensores 4-D (lote, alto, ancho, canales) o 5-D (lote, fotogramas, alto, ancho, canales). El nodo recorta ambas al menor lote, número de fotogramas, alto y ancho, por lo que no necesitan coincidir exactamente. Cuando se utiliza un método de corrección de color distinto de `none`, la imagen de referencia se redimensiona primero al tamaño de salida. La corrección de color se procesa en fragmentos que tienen en cuenta la memoria, reduciendo a un tamaño de fragmento menor si se agota la memoria. La altura y el ancho de salida se redondean hacia abajo a números pares. Si la imagen de referencia tiene un canal alfa (4 canales), ese canal alfa se conserva y se aplica a la salida.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
-|------------------|-------------|---------------|
-| `imágenes` | La imagen alineada y con corrección de color. | IMAGE |
+|-------------|-------------|-----------|
+| `images` | La imagen alineada y con corrección de color. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SeedVR2PostProcessing/es.md)
 

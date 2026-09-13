@@ -1,22 +1,22 @@
 # Selector de Resolución
 
-El nodo Resolution Selector calcula el ancho y el alto en píxeles basándose en una relación de aspecto elegida y una resolución total objetivo en megapíxeles. Es útil para generar dimensiones consistentes para otros nodos, como el nodo Empty Latent Image.
+El nodo Resolution Selector calcula el ancho y la altura en píxeles a partir de una relación de aspecto elegida y una resolución total objetivo en megapíxeles. Es útil para generar dimensiones consistentes para otros nodos, como el nodo Empty Latent Image.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
-|-----------|-------------|--------------|-------------|-------|
-| `relación_de_aspecto` | La relación de aspecto para las dimensiones de salida (predeterminado: `"1:1 (Square)"`). | COMBO | Sí | `"1:1 (Square)"`<br>`"2:3 (Portrait Photo)"`<br>`"3:2 (Photo)"`<br>`"3:4 (Portrait Standard)"`<br>`"4:3 (Standard)"`<br>`"9:16 (Portrait Widescreen)"`<br>`"16:9 (Widescreen)"`<br>`"21:9 (Ultrawide)"` |
-| `megapíxeles` | Megapíxeles totales objetivo. 1.0 MP ≈ 1024x1024 para formato cuadrado (predeterminado: 1.0). | FLOAT | Sí | 0.1 - 16.0 (paso: 0.1) |
-| `preview` | Vista previa en vivo de la resolución de salida calculada. Este widget de solo lectura se actualiza automáticamente y no acepta entrada del usuario. | RESOLUTION_PREVIEW | No | N/D |
-| `múltiplo` | Múltiplo más cercano al que se redondeará la resolución seleccionada (predeterminado: 8). | INT | No | 8 - 128 (paso: 4) |
+|-----------|-------------|-----------|----------|-------|
+| `aspect_ratio` | La relación de aspecto para las dimensiones de salida (predeterminado: `"1:1 (Square)"`). | COMBO | Sí | `"1:1 (Square)"`<br>`"2:3 (Portrait Photo)"`<br>`"3:2 (Photo)"`<br>`"3:4 (Portrait Standard)"`<br>`"4:3 (Standard)"`<br>`"9:16 (Portrait Widescreen)"`<br>`"16:9 (Widescreen)"`<br>`"21:9 (Ultrawide)"` |
+| `megapixels` | Megapíxeles totales objetivo. 1.0 MP ≈ 1024x1024 para cuadrado (predeterminado: 1.0). | FLOAT | Sí | 0.1 - 16.0 (paso: 0.1) |
+| `preview` | Vista previa en vivo de la resolución de salida calculada. Este widget de solo lectura se actualiza automáticamente y no acepta entrada del usuario. | RESOLUTION_PREVIEW | No | N/A |
+| `multiple` | Múltiplo más cercano del resultado al que se ajustará la resolución seleccionada (predeterminado: 8). | INT | No | 8 - 128 (paso: 4) |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de dato |
-|------------------|-------------|--------------|
-| `ancho` | Ancho calculado en píxeles multiplicado por el múltiplo seleccionado. | INT |
-| `alto` | Alto calculado en píxeles multiplicado por el múltiplo seleccionado. | INT |
+|-------------|-------------|-----------|
+| `width` | Ancho calculado en píxeles multiplicado por el múltiplo seleccionado. | INT |
+| `height` | Altura calculada en píxeles multiplicada por el múltiplo seleccionado. | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionSelector/es.md)
 

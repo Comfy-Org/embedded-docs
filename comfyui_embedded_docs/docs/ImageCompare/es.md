@@ -1,20 +1,22 @@
 # Comparar Imágenes
 
-El nodo Image Compare proporciona una interfaz visual para comparar dos imágenes lado a lado mediante un control deslizante. Está diseñado como un nodo de salida, lo que significa que no pasa datos a otros nodos, sino que muestra las imágenes directamente en la interfaz de usuario para su inspección.
+## Descripción general
+
+El nodo Image Compare proporciona una interfaz visual para comparar dos imágenes lado a lado mediante un control deslizante arrastrable. Está diseñado como un nodo de salida, lo que significa que no pasa datos a otros nodos, sino que muestra las imágenes directamente en la interfaz de usuario para su inspección.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `imagen_a` | La primera imagen a comparar. | IMAGE | No | - |
-| `imagen_b` | La segunda imagen a comparar. | IMAGE | No | - |
-| `vista_comparar` | El control que habilita la vista de comparación con deslizador en la interfaz de usuario. | IMAGECOMPARE | Sí | - |
+| `image_a` | La primera imagen a comparar. | IMAGE | No | - |
+| `image_b` | La segunda imagen a comparar. | IMAGE | No | - |
+| `compare_view` | El control que habilita la vista de comparación con control deslizante en la interfaz de usuario. | IMAGECOMPARE | Sí | - |
 
-**Nota:** Este nodo es un nodo de salida. Aunque `image_a` e `image_b` son opcionales, debe proporcionarse al menos una imagen para que el nodo tenga un efecto visible. El nodo mostrará un área vacía para cualquier entrada de imagen que no esté conectada.
+**Nota:** Este nodo es un nodo de salida. Aunque `image_a` e `image_b` son opcionales, se debe proporcionar al menos una imagen para que el nodo tenga un efecto visible. El nodo mostrará un área vacía para cualquier entrada de imagen que no esté conectada. Cada lote de imágenes proporcionado se guarda en almacenamiento temporal bajo los prefijos `comfy.compare.a` y `comfy.compare.b` respectivamente, y luego se muestra en la vista de control deslizante.
 
 ## Salidas
 
-Este nodo es un nodo de salida y no produce ninguna salida de datos para usar en otros nodos. Su función es mostrar las imágenes proporcionadas en la interfaz de ComfyUI.
+Este nodo es un nodo de salida y no produce datos de salida para su uso en otros nodos. Su función es mostrar las imágenes proporcionadas en la interfaz de ComfyUI.
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageCompare/es.md)
 

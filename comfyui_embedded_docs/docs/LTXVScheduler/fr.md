@@ -1,23 +1,23 @@
 # LTXVScheduler
 
-Le nœud LTXVScheduler génère des valeurs sigma pour les processus d'échantillonnage personnalisés. Il calcule les paramètres du programme de bruit en fonction du nombre de jetons dans le latent d’entrée et applique une transformation sigmoïde pour créer le programme d’échantillonnage. Le nœud peut éventuellement étirer les sigma résultants pour correspondre à une valeur terminale spécifiée.
+Le nœud LTXVScheduler génère des valeurs sigma pour un processus d'échantillonnage personnalisé. Il calcule le calendrier de bruit à partir du nombre de tokens dans le latent fourni, ou utilise une valeur par défaut de 4096 tokens lorsqu'aucun latent n'est connecté, et peut éventuellement étirer les valeurs sigma afin que la valeur finale corresponde à la valeur `terminal` spécifiée.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `étapes` | Nombre d'étapes d'échantillonnage (par défaut : 20) | INT | Oui | 1-10000 |
-| `décalage_max` | Valeur de décalage maximale pour le calcul de sigma (par défaut : 2.05) | FLOAT | Oui | 0.0-100.0 |
-| `décalage_base` | Valeur de décalage de base pour le calcul de sigma (par défaut : 0.95) | FLOAT | Oui | 0.0-100.0 |
-| `étirement` | Étire les sigma pour qu'ils soient dans la plage [terminal, 1] (par défaut : True) | BOOLEAN | Oui | True/False |
-| `terminal` | La valeur terminale des sigma après étirement (par défaut : 0.1) | FLOAT | Oui | 0.0-0.99 |
-| `latent` | Entrée latente facultative utilisée pour calculer le nombre de jetons pour l'ajustement des sigma | LATENT | Non | - |
+| `steps` | Nombre d'étapes d'échantillonnage (par défaut : 20) | INT | Oui | 1-10000 |
+| `max_shift` | Valeur de décalage maximale utilisée dans le calcul des sigma (par défaut : 2.05) | FLOAT | Oui | 0.0-100.0 (pas : 0.01) |
+| `base_shift` | Valeur de décalage de base utilisée dans le calcul des sigma (par défaut : 0.95) | FLOAT | Oui | 0.0-100.0 (pas : 0.01) |
+| `stretch` | Étire les sigmas pour qu'ils soient dans l'intervalle [terminal, 1] (par défaut : True) | BOOLEAN | Oui | True/False |
+| `terminal` | Valeur terminale des sigmas après étirement (par défaut : 0.1). Utilisée uniquement lorsque `stretch` est activé. | FLOAT | Oui | 0.0-0.99 (pas : 0.01) |
+| `latent` | Entrée latent optionnelle utilisée pour calculer le nombre de tokens pour l'ajustement des sigma. Lorsqu'elle n'est pas fournie, un nombre de tokens par défaut de 4096 est utilisé. | LATENT | Non | - |
 
-**Remarque :** Le paramètre `latent` est facultatif. Lorsqu'il n'est pas fourni, le nœud utilise un nombre de jetons par défaut de 4096 pour les calculs.
+**Remarque :** Lorsque `stretch` est activé, les valeurs sigma non nulles sont remises à l'échelle afin que le dernier sigma non nul soit égal à la valeur `terminal`.
 
 ## Sorties
 
-| Nom de la sortie | Description | Type de données |
+| Nom de sortie | Description | Type de données |
 | --- | --- | --- |
 | `sigmas` | Valeurs sigma générées pour le processus d'échantillonnage | SIGMAS |
 

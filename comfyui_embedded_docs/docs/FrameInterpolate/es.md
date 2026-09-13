@@ -1,14 +1,16 @@
 # Interpolar fotogramas
 
-El nodo Frame Interpolate crea nuevos fotogramas entre los existentes en una secuencia de imágenes, aumentando efectivamente la velocidad de fotogramas. Utiliza un modelo de IA para predecir cómo deberían verse los fotogramas intermedios, lo que puede usarse para crear efectos de cámara lenta suaves o para aumentar la fluidez de un video.
+El nodo Frame Interpolate crea nuevos fotogramas entre los existentes en una secuencia de imágenes, aumentando eficazmente la tasa de fotogramas. Utiliza un modelo de IA para predecir cómo deberían verse los fotogramas intermedios, lo que puede usarse para crear efectos fluidos de cámara lenta o para aumentar la fluidez de un video.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `interp_model` | El modelo de interpolación de fotogramas que se usará para generar fotogramas intermedios | INTERP_MODEL | Sí | - |
-| `imágenes` | Un lote de imágenes consecutivas (fotogramas) entre las que se interpolará. Se requieren al menos 2 imágenes. Si se proporcionan menos de 2 fotogramas, el nodo devuelve las imágenes de entrada sin cambios. | IMAGE | Sí | - |
-| `multiplicador` | El número de veces que se multiplicará el recuento de fotogramas. Por ejemplo, un multiplicador de 2 duplica el número de fotogramas. (por defecto: 2) | INT | Sí | 2 a 16 |
+| `interp_model` | El modelo de interpolación de fotogramas que se utilizará para generar fotogramas intermedios | INTERP_MODEL | Sí | - |
+| `images` | Un lote de imágenes consecutivas (fotogramas) entre las que interpolar. Requiere al menos 2 imágenes. Si se proporcionan menos de 2 fotogramas, el nodo devuelve las imágenes de entrada sin cambios. | IMAGE | Sí | - |
+| `multiplier` | El número de veces que se multiplicará la cantidad de fotogramas. Por ejemplo, un multiplicador de 2 duplica el número de fotogramas. (predeterminado: 2) | INT | Sí | 2 a 16 |
+
+**Nota:** El nodo requiere al menos 2 fotogramas de entrada y un `multiplier` de al menos 2. Si no se cumple alguna de estas condiciones, las imágenes de entrada se devuelven sin cambios.
 
 ## Salidas
 

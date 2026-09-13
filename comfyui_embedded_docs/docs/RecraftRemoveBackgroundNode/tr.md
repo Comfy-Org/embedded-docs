@@ -1,19 +1,19 @@
 # Recraft Arka Planı Kaldır
 
-Bu düğüm, Recraft API hizmetini kullanarak görsellerden arka planı kaldırır. Giriş grubundaki her görseli işler ve hem şeffaf arka planlı işlenmiş görselleri hem de kaldırılan arka plan alanlarını gösteren ilgili alfa maskelerini döndürür.
+Bu düğüm, Recraft API hizmetini kullanarak görüntülerin arka planını kaldırır. Girdi grubundaki her görüntüyü ayrı ayrı işler ve hem saydam arka planlara sahip işlenmiş görüntüleri hem de kaldırılan arka plan alanlarını belirten ilgili alfa maskelerini döndürür.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Tipi | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `görüntü` | Arka plan kaldırma için işlenecek giriş görseli(ler)i. Gruptaki her görsel ayrı ayrı işlenir. | IMAGE | Evet | - |
+| `image` | Arka plan kaldırma için işlenecek girdi görüntü(ler)i. Gruptaki her görüntü ayrı ayrı işlenir. | IMAGE | Evet | - |
 
 ## Çıktılar
 
-| Çıktı Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Tipi |
 |-------------|-------------|-----------|
-| `image` | Şeffaf arka planlı işlenmiş görseller (RGBA formatı) | IMAGE |
-| `mask` | Kaldırılan arka plan alanlarını gösteren alfa kanalı maskeleri, B,H,W formatında | MASK |
+| `image` | Saydam arka planlara sahip işlenmiş görüntüler (RGBA biçimi) | IMAGE |
+| `mask` | Kaldırılan arka plan alanlarını belirten alfa kanalı maskeleri, B,H,W biçiminde | MASK |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftRemoveBackgroundNode/tr.md)
 

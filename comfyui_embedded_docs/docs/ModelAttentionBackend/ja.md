@@ -1,21 +1,21 @@
 # モデルアテンションバックエンド
 
-このノードは、モデルがアテンション計算に使用する dense アテンションバックエンドを選択します。指定されたモデルをクローンし、選択したバックエンドを適用して、パッチ適用済みのクローンを返します。Block Sparse Attention と併用する場合、スパースアテンションが非アクティブまたはサポートされていないときは、このバックエンドが使用されます。選択したバックエンドが利用できない場合、ノードは自動的に PyTorch アテンションにフォールバックします。
+このノードは、モデルに対して密なアテンション実装を選択し、モデルをクローンして、選択したバックエンドを適用し、パッチ適用済みのクローンを返します。Block Sparse Attention と併用する場合、スパースアテンションが非アクティブまたは未対応のときは常にこのバックエンドが使用されます。選択したバックエンドが利用できない場合、ノードは自動的に PyTorch attention にフォールバックします。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | パッチ適用対象のモデルです。 | MODEL | はい |  |
-| `attention` | 適用する dense アテンションバックエンドです（デフォルト: "pytorch attention"）。Comfy Kitchen attention は INT8 量子化アテンションを使用しており、Nvidia GPU および AMD GPU でのみ利用できます。選択したバックエンドが利用できない場合は、PyTorch アテンションがフォールバックとして使用されます。 | COMBO | はい | "pytorch attention"<br>"comfy kitchen attention" |
+| `model` | パッチを適用するモデル。 | MODEL | はい |  |
+| `attention` | 適用する密なアテンションバックエンド。Comfy Kitchen attention は量子化された INT8 アテンションを使用し、Nvidia および AMD GPU でのみ利用できます。デフォルト: "pytorch attention"。選択したバックエンドが利用できない場合、PyTorch attention がフォールバックとして使用されます。 | COMBO | はい | "pytorch attention"<br>"comfy kitchen attention" |
 
-注："comfy kitchen attention" オプションは、現在の環境で Comfy Kitchen INT8 アテンションモジュールが利用可能な場合にのみ表示されます。
+注: 「comfy kitchen attention」オプションは、現在の環境で Comfy Kitchen INT8 attention モジュールが利用可能な場合にのみ一覧に表示されます。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `model` | 選択したアテンションバックエンドを適用した入力モデルのクローンです。 | MODEL |
+| `model` | 選択したアテンションバックエンドが適用された、入力モデルのクローン。 | MODEL |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelAttentionBackend/ja.md)
 

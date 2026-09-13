@@ -1,17 +1,17 @@
 # MétodoLatenteReferenciaMúltipleFluxKontext
 
-El nodo FluxKontextMultiReferenceLatentMethod modifica los datos de condicionamiento al establecer un método específico de latentes de referencia. Agrega el método seleccionado a la entrada `conditioning`, lo que afecta la forma en que se procesan los latentes de referencia en los pasos posteriores de generación. Este nodo está marcado como experimental y forma parte del sistema de condicionamiento de Flux.
+El nodo FluxKontextMultiReferenceLatentMethod actualiza los datos de condicionamiento almacenando en ellos un método de latentes de referencia elegido. El método almacenado se utiliza luego cuando se procesan los latentes de referencia en pasos de generación posteriores. Este nodo está marcado como experimental y pertenece al sistema de condicionamiento Flux.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `acondicionamiento` | Los datos de condicionamiento que se modificarán con el método de latentes de referencia | CONDITIONING | Sí | - |
-| `método_latentes_referencia` | El método que se utilizará para el procesamiento de los latentes de referencia. Si se selecciona "uxo" o "uso", se convertirá a "uxo". Este parámetro está marcado como avanzado. | COMBO | Sí | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
+| `conditioning` | Los datos de condicionamiento que se modificarán con el método de latentes de referencia | CONDITIONING | Sí | - |
+| `reference_latents_method` | El método utilizado para el procesamiento de latentes de referencia. Si se selecciona un valor que contiene "uxo" o "uso", se convierte a "uxo" antes de almacenarse. Este parámetro está marcado como avanzado. | COMBO | Sí | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
 | `conditioning` | Los datos de condicionamiento modificados con el método de latentes de referencia aplicado | CONDITIONING |
 

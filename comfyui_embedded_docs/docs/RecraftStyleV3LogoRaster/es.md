@@ -1,20 +1,20 @@
 # Recraft Style - Logo Raster
 
-Este nodo selecciona el estilo raster de logotipo y un subestilo para generar imágenes de logotipos. Se especializa en crear diseños de logotipos con tratamientos visuales basados en raster.
+Este nodo selecciona el estilo ráster de logotipo y un subestilo específico para generar imágenes de logotipo. Está especializado en crear diseños de logotipo con tratamientos visuales basados en ráster. El estilo elegido se devuelve como una configuración de estilo de Recraft que se puede pasar a otros nodos de Recraft.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|-----------|----------|-------|
-| `subestilo` | El subestilo raster de logotipo específico que se aplicará para la generación de logotipos | STRING | Sí | `"bold"`<br>`"minimal"`<br>`"vibrant"`<br>`"handdrawn"`<br>`"geometric"`<br>`"vintage"`<br>`"neon"`<br>`"gradient"`<br>`"flat"`<br>`"outline"`<br>`"mascot"`<br>`"badge"`<br>`"abstract"`<br>`"retro"`<br>`"modern"`<br>`"playful"`<br>`"luxury"`<br>`"tech"`<br>`"nature"`<br>`"food"`<br>`"sport"`<br>`"fashion"`<br>`"music"`<br>`"travel"`<br>`"education"`<br>`"health"`<br>`"finance"`<br>`"realestate"`<br>`"nonprofit"` |
+|-----------|-------------|---------------|-----------|-------|
+| `substyle` | El subestilo específico de logotipo ráster que se aplicará para la generación de logotipos | COMBO | Sí | `"bold"`<br>`"minimal"`<br>`"vibrant"`<br>`"handdrawn"`<br>`"geometric"`<br>`"vintage"`<br>`"neon"`<br>`"gradient"`<br>`"flat"`<br>`"outline"`<br>`"mascot"`<br>`"badge"`<br>`"abstract"`<br>`"retro"`<br>`"modern"`<br>`"playful"`<br>`"luxury"`<br>`"tech"`<br>`"nature"`<br>`"food"`<br>`"sport"`<br>`"fashion"`<br>`"music"`<br>`"travel"`<br>`"education"`<br>`"health"`<br>`"finance"`<br>`"realestate"`<br>`"nonprofit"` |
 
-Nota: Siempre debe seleccionarse un subestilo; no existe la opción "none".
+Nota: Siempre se debe seleccionar un subestilo; no existe una opción `"none"`.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |-------------|-------------|-----------|
-| `recraft_style` | La configuración de estilo de Recraft seleccionada, incluidos el estilo raster de logotipo y el subestilo elegido | CUSTOM |
+| `recraft_style` | La configuración de estilo de Recraft seleccionada, que incluye el estilo ráster de logotipo y el subestilo elegido | CUSTOM |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3LogoRaster/es.md)
 

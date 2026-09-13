@@ -1,14 +1,14 @@
 # CodificarTextoCLIPControlnet
 
-El nodo CLIPTextEncodeControlnet procesa un prompt de texto utilizando un modelo CLIP y combina la codificación de texto resultante con los datos de condicionamiento existentes. Añade las incrustaciones derivadas del texto a cada entrada de condicionamiento como parámetros de atención cruzada de ControlNet, produciendo una salida de condicionamiento mejorada para aplicaciones de ControlNet.
+El nodo CLIP Text Encode (Controlnet) codifica un prompt de texto con un modelo CLIP y agrega la codificación de texto resultante a los datos de condicionamiento existentes. Almacena las incrustaciones de texto como parámetros de atención cruzada de controlnet dentro de cada entrada de condicionamiento, por lo que el condicionamiento devuelto incluye esa información adicional de controlnet.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `clip` | El modelo CLIP utilizado para la tokenización y codificación de texto | CLIP | Sí | - |
-| `condicionamiento` | Datos de condicionamiento existentes que se combinarán con la codificación de texto CLIP | CONDITIONING | Sí | - |
-| `texto` | El prompt de texto que será procesado por el modelo CLIP. Admite texto multilínea y prompts dinámicos | STRING | Sí | - |
+| `clip` | El modelo CLIP usado para la tokenización y codificación de texto | CLIP | Sí | - |
+| `conditioning` | Datos de condicionamiento existentes que se combinarán con la codificación de texto de CLIP | CONDITIONING | Sí | - |
+| `text` | El prompt de texto que procesará el modelo CLIP. Admite texto multilínea y prompts dinámicos | STRING | Sí | - |
 
 **Nota:** Las tres entradas (`clip`, `conditioning` y `text`) son necesarias para que este nodo funcione. La entrada `text` admite texto multilínea y prompts dinámicos para un procesamiento de texto flexible. Este nodo está marcado como experimental en el código fuente.
 
@@ -16,7 +16,7 @@ El nodo CLIPTextEncodeControlnet procesa un prompt de texto utilizando un modelo
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `CONDITIONING` | Datos de condicionamiento mejorados con los parámetros de atención cruzada de ControlNet añadidos (`cross_attn_controlnet` y `pooled_output_controlnet`) derivados de la codificación de texto CLIP | CONDITIONING |
+| `CONDITIONING` | Datos de condicionamiento mejorados con los parámetros de atención cruzada de controlnet agregados (`cross_attn_controlnet` y `pooled_output_controlnet`) derivados de la codificación de texto de CLIP | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeControlnet/es.md)
 

@@ -1,20 +1,18 @@
 # VOIDWarpedNoiseSource
 
-## Visão geral
-
-Este nó converte um LATENT (como a saída do nó VOIDWarpedNoise) em uma fonte de NOISE. Isso permite usar o ruído distorcido com o nó SamplerCustomAdvanced para uma geração de imagem mais controlada.
+Este nó converte um LATENT (como a saída do nó VOIDWarpedNoise) em uma fonte de NOISE. Isso permite alimentar ruído distorcido pré-calculado em nós que esperam uma fonte de ruído, como o SamplerCustomAdvanced.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+| Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `warped_noise` | Ruído distorcido latente do VOIDWarpedNoise | LATENT | Sim | N/A |
+| `warped_noise` | Latent de ruído distorcido do VOIDWarpedNoise | LATENT | Sim | N/A |
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dados |
+| Nome da saída | Descrição | Tipo de dados |
 | --- | --- | --- |
-| `NOISE` | Uma fonte de ruído que pode ser usada com o SamplerCustomAdvanced | NOISE |
+| `NOISE` | Uma fonte de ruído que envolve o latent fornecido, utilizável com SamplerCustomAdvanced | NOISE |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDWarpedNoiseSource/pt-BR.md)
 

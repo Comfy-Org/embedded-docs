@@ -1,15 +1,15 @@
 # MuestreoDeModeloSD3
 
-Este nodo aplica una configuración de muestreo al estilo de Stable Diffusion 3 a un modelo. Crea una copia del modelo y reemplaza su método de muestreo con una configuración de muestreo basada en flujo que usa el valor `shift` proporcionado, el cual controla cómo se forma la distribución de muestreo.
+Este nodo aplica configuraciones de muestreo al estilo de Stable Diffusion 3 a un modelo. Crea una copia del modelo y reemplaza su método de muestreo por una configuración de muestreo basada en flujo que utiliza el valor de `shift` proporcionado, el cual controla cómo se da forma a la distribución de muestreo.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo de entrada al que se aplicarán los parámetros de muestreo de SD3 | MODEL | Sí | - |
-| `desplazamiento` | Controla el parámetro de desplazamiento del muestreo (predeterminado: 3.0) | FLOAT | Sí | 0.0 - 100.0 (paso: 0.01) |
+| `model` | El modelo de entrada al que se aplican los parámetros de muestreo de SD3 | MODEL | Sí | - |
+| `shift` | Controla el parámetro de desplazamiento de muestreo (predeterminado: 3.0) | FLOAT | Sí | 0.0 - 100.0 (paso: 0.01) |
 
-Nota: El valor `shift` se aplica junto con un multiplicador interno fijo de 1000. Si el modelo original tiene una configuración de escala de ruido, ese valor se transfiere al modelo modificado. El modelo original no se modifica; se devuelve una copia clonada y parcheada.
+Nota: El valor de `shift` se aplica junto con un multiplicador interno fijo de 1000. Si el modelo original tiene una configuración de escala de ruido, ese valor se transfiere al modelo modificado. El modelo original no se modifica; se devuelve una copia clonada y parcheada.
 
 ## Salidas
 

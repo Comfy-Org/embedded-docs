@@ -1,20 +1,20 @@
 # Arka Plan Kaldırma Modelini Yükle
 
-Bir dosyadan arka plan kaldırma modeli yükler. Bu düğüm, modeli görüntülerden arka planları kaldırmak için kullanıma hazırlar.
+Bir dosyadan arka plan kaldırma modeli yükler. Bu düğüm, modeli görüntülerdeki arka planları kaldırmak için diğer düğümler tarafından kullanılabilecek şekilde hazırlar.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `arka_plan_kaldırma_adı` | Görüntülerden arka planları kaldırmak için kullanılan model. Mevcut arka plan kaldırma modeli dosyaları listesinden seçin. | COMBO | Evet | Mevcut model dosyalarının listesi (alfabetik olarak sıralanmıştır) |
+| `bg_removal_name` | Görüntülerdeki arka planları kaldırmak için kullanılan model. Kullanılabilir arka plan kaldırma model dosyaları listesinden seçin. | COMBO | Evet | Kullanılabilir model dosyalarının listesi (alfabetik olarak sıralanmış) |
 
-Not: Seçilen dosya geçerli bir arka plan kaldırma modeli içermiyorsa, düğüm bir RuntimeError hatası oluşturur.
+Not: Seçilen dosya geçerli bir arka plan kaldırma modeli içermiyorsa, düğüm bir RuntimeError oluşturur.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `bg_model` | Yüklenen arka plan kaldırma modeli; diğer düğümler tarafından görüntüleri işlemek için kullanıma hazırdır. | BACKGROUND_REMOVAL |
+| `bg_model` | Yüklenen arka plan kaldırma modeli; görüntüleri işlemek için diğer düğümler tarafından kullanılmaya hazırdır. | BACKGROUND_REMOVAL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadBackgroundRemovalModel/tr.md)
 

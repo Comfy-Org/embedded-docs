@@ -1,19 +1,19 @@
 # BozulmuşDikkatRehberliği
 
-PerturbedAttentionGuidance düğümü, üretim kalitesini artırmak için bir difüzyon modeline bozulmuş dikkat rehberliği uygular. Örnekleme sırasında modelin gürültü giderme sürecini, normal koşullu tahmini yalnızca değer projeksiyonlarını kullanan basitleştirilmiş bir dikkat mekanizmasıyla yapılan tahminle karşılaştırarak ayarlar ve ölçeklendirilmiş farkı sonuca geri ekler. Ölçek 0 olarak ayarlandığında düğümün hiçbir etkisi yoktur.
+PerturbedAttentionGuidance düğümü, üretim kalitesini artırmak için bir difüzyon modeline pertürbe edilmiş dikkat rehberliği uygular. Örnekleme sırasında, orta bloğun öz-dikkatinin, değer projeksiyonlarını doğrudan geçiren basitleştirilmiş bir sürümle değiştirildiği ek bir tahmin yapar; ardından normal koşullu tahmin ile bu pertürbe edilmiş tahmin arasındaki ölçeklenmiş farkı, gürültüsü giderilmiş sonuca ekler. `scale` değerini 0 yapmak etkiyi tamamen devre dışı bırakır.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Bozulmuş dikkat rehberliğinin uygulanacağı difüzyon modeli | MODEL | Evet | - |
-| `ölçek` | Bozulmuş dikkat rehberliği etkisinin gücü (varsayılan: 3.0). 0 olarak ayarlandığında düğümün hiçbir etkisi yoktur ve orijinal gürültüsü giderilmiş sonucu döndürür. | FLOAT | Evet | 0.0 - 100.0 (adım: 0.01) |
+| `model` | Pertürbe edilmiş dikkat rehberliğinin uygulanacağı difüzyon modeli | MODEL | Evet | - |
+| `scale` | Pertürbe edilmiş dikkat rehberliği etkisinin gücü (varsayılan: 3.0). 0 olarak ayarlandığında düğümün hiçbir etkisi olmaz ve özgün gürültüsü giderilmiş sonucu değiştirmeden döndürür. | FLOAT | Evet | 0.0 - 100.0 (adım: 0.01) |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `model` | Bozulmuş dikkat rehberliği uygulanmış değiştirilmiş model | MODEL |
+| `model` | Örnekleme sürecine pertürbe edilmiş dikkat rehberliği yaması eklenmiş değiştirilmiş model | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PerturbedAttentionGuidance/tr.md)
 

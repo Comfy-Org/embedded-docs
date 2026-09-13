@@ -1,15 +1,15 @@
 # GuardarAudio
 
-Este nodo guarda datos de audio en un archivo en formato FLAC. Toma una entrada de audio y la escribe en el directorio de salida utilizando el prefijo de nombre de archivo especificado. Este nodo está obsoleto y debe reemplazarse con el nodo Save Audio actual.
+Este nodo guarda datos de audio en un archivo en formato FLAC. Toma una entrada de audio y la escribe en el directorio de salida usando el prefijo de nombre de archivo especificado, y también transfiere el audio a su salida. Este nodo está obsoleto y debe reemplazarse con el nodo Save Audio actual.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `audio` | Los datos de audio que se guardarán | AUDIO | Sí | - |
-| `prefijo_nombre_archivo` | El prefijo para el nombre del archivo de salida (por defecto: "audio/ComfyUI") | STRING | No | - |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `audio` | Los datos de audio que se van a guardar | AUDIO | Sí | - |
+| `filename_prefix` | El prefijo para el nombre del archivo de salida (predeterminado: "audio/ComfyUI") | STRING | No | - |
 
-*Nota: Los parámetros `prompt` y `extra_pnginfo` están ocultos y son manejados automáticamente por el sistema.*
+*Nota: Los parámetros `prompt` y `extra_pnginfo` están ocultos y son gestionados automáticamente por el sistema.*
 
 Si la entrada `audio` no recibe datos (por ejemplo, cuando el video de origen no tiene pista de audio), el nodo genera un error y no se guarda ningún archivo.
 
@@ -17,7 +17,7 @@ Si la entrada `audio` no recibe datos (por ejemplo, cuando el video de origen no
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `audio` | Los datos de audio que se proporcionaron a la entrada, transferidos después de que el archivo se guarda | AUDIO |
+| `audio` | Los datos de audio que se proporcionaron a la entrada, transferidos a la salida después de guardar el archivo | AUDIO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAudio/es.md)
 

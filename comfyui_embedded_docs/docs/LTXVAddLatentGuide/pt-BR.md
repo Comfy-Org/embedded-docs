@@ -1,8 +1,6 @@
-# LTXVAddLatentGuide
+# LTXV Adicionar Guia Latent
 
-## Visão Geral
-
-O nó Guia de Adição de Latente LTXV fixa um latente já codificado como um guia, permitindo o uso de um guia que sai de uma etapa anterior em vez de uma imagem. Este nó evita a viagem de decodificação/encodificação do VAE e pode dilatar um guia espacialmente menor em uma grade rala para cobrir o canvas alvo.
+O nó LTXV Add Latent Guide fixa um latent já codificado como um guia, para quando o guia vem de um estágio anterior em vez de uma imagem. Tem o mesmo efeito que o LTXV Add Guide sem a ida e volta de decode/encode do VAE. Um guia que é espacialmente menor que o destino (uma referência IC-LoRA ou de detalhamento) é dilatado em uma grade esparsa, e suas posições finais de RoPE são expandidas pela mesma proporção para que cubra o canvas de destino em vez de endereçar apenas o canto superior esquerdo dele.
 
 ## Entradas
 
@@ -10,27 +8,27 @@ O nó Guia de Adição de Latente LTXV fixa um latente já codificado como um gu
 |-----------|-------------|-----------|----------|-------|
 | `positive` | Entrada de condicionamento positivo. | CONDITIONING | Sim | N/A |
 | `negative` | Entrada de condicionamento negativo. | CONDITIONING | Sim | N/A |
-| `vae` | O modelo VAE a ser usado. | MODEL | Sim | N/A |
-| `latent` | Latente de vídeo alvo em que o guia é fixado. | LATENT | Sim | N/A |
-| `guiding_latent` | Latente de guia. Seu tamanho espacial deve dividir o tamanho do alvo pelo mesmo número inteiro em ambos os eixos; tamanho igual fixa-o como está, metade do tamanho é tratado como uma referência IC-LoRA x2. | LATENT | Sim | N/A |
-| `latent_idx` | Índice do quadro latente para começar o guia, contado em quadros latentes em vez de quadros de pixel. Valores negativos colocam o guia em quadros antes do início do latente, não contados a partir do final. | INTEIRO | Sim | -9999 a 9999 |
-| `strength` | Limitado a 1.0. Um guia dilatado marca suas posições de preenchimento com uma máscara de denoising negativa para que o modelo os descarte; valores acima de 1.0 farão com que as posições mantidas se tornem negativas e todo o guia será descartado. Amplifique além de 1.0 usando attention_mask em vez disso. | FLUTUANTE | Sim | 0.0 a 1.0, passo 0.01 |
-| `attention_mask` | Máscara espacial opcional no espaço de pixels. Controla a influência de condicionamento por região via auto-atenção, multiplicada por força. | MASK | Não | N/A |
+| `vae` | O modelo VAE usado para ler a fórmula do índice de redução de escala para posicionamento de frames. | VAE | Sim | N/A |
+| `latent` | Latent de vídeo de destino no qual o guia é fixado. | LATENT | Sim | N/A |
+| `guiding_latent` | Latent do guia. Seu tamanho espacial deve dividir o do destino pelo mesmo número inteiro em ambos os eixos; tamanho igual o fixa como está, metade do tamanho é tratada como uma referência IC-LoRA x2. | LATENT | Sim | N/A |
+| `latent_idx` | Índice do frame latente em que o guia começa, contado em frames latentes em vez de frames de pixel. Valores negativos posicionam o guia em frames antes do início do latent, não contados de trás para frente a partir do seu fim. Padrão: 0. | INT | Sim | -9999 a 9999 |
+| `strength` | Limitado a 1.0. Um guia dilatado marca suas posições de padding com uma máscara de denoise negativa para que o modelo as descarte; acima de 1.0, as posições mantidas também ficariam negativas e todo o guia seria descartado. Em vez disso, amplifique além de 1.0 com attention_mask. Padrão: 1.0. | FLOAT | Sim | 0.0 a 1.0, passo 0.01 |
+| `attention_mask` | Máscara espacial opcional no espaço de pixels. Controla a influência do condicionamento por região via auto-atenção, multiplicada por strength. | MASK | Não | N/A |
+
+### Observações
+
+- Tanto `latent` quanto `guiding_latent` devem ser latents de vídeo 5D com formato (batch, channels, frames, height, width).
+- O guia deve caber dentro do latent de destino: o número de frames do guia somado a `latent_idx` não pode ultrapassar o fim do latent de destino. Valores negativos de `latent_idx` são permitidos e posicionam o guia antes do início do latent.
+- O tamanho espacial do guia deve dividir o tamanho espacial do destino por um número inteiro tanto no eixo de altura quanto no de largura.
+- A proporção de altura e a proporção de largura devem ter o mesmo valor (proporção quadrada). Uma proporção não quadrada gera um erro, porque a dilatação e o posicionamento RoPE usam um único fator de redução de escala para ambos os eixos.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 |-------------|-------------|-----------|
-| `positive` | Saída de condicionamento positivo. | CONDITIONING |
-| `negative` | Saída de condicionamento negativo. | CONDITIONING |
-| `latent` | Saída latente com o guia aplicado. | LATENT |
-
-## Notas
-
-- O tamanho espacial do `guiding_latent` deve dividir o tamanho do `latent` pelo mesmo número inteiro em ambos os eixos.
-- O parâmetro `latent_idx` permite a colocação precisa do guia dentro dos quadros latentes.
-- O parâmetro `strength` controla a intensidade do guia, com valores acima de 1.0 exigindo o uso de `attention_mask` para evitar posições negativas.
-- O parâmetro `attention_mask` é opcional mas pode ser usado para ajustar a influência do guia em regiões específicas da imagem.
+| `positive` | Condicionamento positivo com o guia anexado. | CONDITIONING |
+| `negative` | Condicionamento negativo com o guia anexado. | CONDITIONING |
+| `latent` | Saída de latent com o guia aplicado, incluindo o `noise_mask` atualizado. | LATENT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddLatentGuide/pt-BR.md)
 

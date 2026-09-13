@@ -1,22 +1,22 @@
 # EmptyChromaRadianceLatentImage
 
-O nó EmptyChromaRadianceLatentImage cria uma imagem latente em branco com dimensões especificadas para uso em fluxos de trabalho de Chroma Radiance. Ele gera um tensor preenchido com zeros que serve como ponto de partida para operações no espaço latente. O nó permite definir a largura, a altura e o tamanho do lote da imagem latente vazia.
+O nó EmptyChromaRadianceLatentImage cria uma imagem latente vazia com as dimensões especificadas, para uso em fluxos de trabalho Chroma Radiance. Ele produz um tensor preenchido com zeros que atua como ponto de partida para operações no espaço latente, permitindo que você defina a largura, a altura e o tamanho do lote da imagem latente vazia.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `largura` | A largura da imagem latente em pixels (padrão: 1024, deve ser divisível por 16) | INT | Sim | 16 to MAX_RESOLUTION |
-| `altura` | A altura da imagem latente em pixels (padrão: 1024, deve ser divisível por 16) | INT | Sim | 16 to MAX_RESOLUTION |
-| `tamanho_do_lote` | O número de imagens latentes a serem geradas em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
+| `width` | A largura da imagem latente em pixels (padrão: 1024) | INT | Sim | 16 a MAX_RESOLUTION |
+| `height` | A altura da imagem latente em pixels (padrão: 1024) | INT | Sim | 16 a MAX_RESOLUTION |
+| `batch_size` | O número de imagens latentes a serem geradas em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
 
-Nota: `width` e `height` são definidos com um passo de 16, portanto devem ser múltiplos de 16.
+Observação: `width` e `height` são definidos com um passo de 16, então os valores são ajustados em múltiplos de 16.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `samples` | O tensor de imagem latente vazio gerado, preenchido com zeros, com a forma batch_size x 3 x height x width | LATENT |
+| `samples` | O tensor de imagem latente vazia gerado, preenchido com zeros, com o formato batch_size x 3 x height x width | LATENT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyChromaRadianceLatentImage/pt-BR.md)
 

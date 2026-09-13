@@ -1,29 +1,27 @@
 # ARVideoI2V
 
-## Resumen
-
-Este nodo prepara una configuración de generación de imagen a video para modelos de video AR (autorregresivos) que utilizan Causal Forcing o Self-Forcing. Codifica una imagen inicial en el espacio latente con un VAE y la almacena en las opciones del transformer del modelo, de modo que el proceso de muestreo de video pueda inicializar el caché KV antes del denoising. Utiliza el mismo checkpoint del modelo de texto a video, por lo que no se necesita una arquitectura separada de imagen a video.
+Este nodo prepara una configuración de generación de imagen a video para modelos de video AR (Auto-Regresivo) que usan Causal Forcing o Self-Forcing. Codifica una imagen inicial en el espacio latente con un VAE y la almacena en las opciones del transformer del modelo, de modo que el proceso de muestreo de video pueda inicializar la caché KV antes de la eliminación de ruido. Utiliza el mismo checkpoint del modelo de texto a video, por lo que no se necesita una arquitectura separada de imagen a video.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo de video AR que se utilizará para la generación. | MODEL | Sí | - |
-| `vae` | El modelo VAE utilizado para codificar la imagen inicial en el espacio latente. | VAE | Sí | - |
-| `imagen_inicial` | La imagen inicial que servirá como primer fotograma del video generado. Solo se utiliza la primera imagen del lote de entrada, y solo se codifican sus canales RGB. | IMAGE | Sí | - |
-| `ancho` | El ancho de los fotogramas del video generado (por defecto: 832). | INT | Sí | 16 a 8192 (paso: 16) |
-| `alto` | El alto de los fotogramas del video generado (por defecto: 480). | INT | Sí | 16 a 8192 (paso: 16) |
-| `longitud` | El número total de fotogramas del video generado (por defecto: 81). | INT | Sí | 1 a 1024 (paso: 4) |
-| `tamaño_de_lote` | El número de secuencias de video a generar en un solo lote (por defecto: 1). | INT | Sí | 1 a 64 |
+| `model` | El modelo de video AR que se utilizará para la generación. | MODEL | Sí | - |
+| `vae` | El modelo VAE que se utiliza para codificar la imagen inicial en el espacio latente. | VAE | Sí | - |
+| `start_image` | La imagen inicial que servirá como primer fotograma del video generado. Solo se utiliza la primera imagen del lote de entrada y solo se codifican sus canales RGB. | IMAGE | Sí | - |
+| `width` | El ancho de los fotogramas del video generado (predeterminado: 832). | INT | Sí | 16 a 8192 (paso: 16) |
+| `height` | La altura de los fotogramas del video generado (predeterminado: 480). | INT | Sí | 16 a 8192 (paso: 16) |
+| `length` | El número total de fotogramas del video generado (predeterminado: 81). | INT | Sí | 1 a 1024 (paso: 4) |
+| `batch_size` | El número de secuencias de video a generar en un solo lote (predeterminado: 1). | INT | Sí | 1 a 64 |
 
-Nota: La imagen inicial se redimensiona a los valores `width` y `height` especificados antes de codificarse. La dimensión temporal latente se calcula como `((length - 1) // 4) + 1`, y las dimensiones espaciales latentes son `height / 8` y `width / 8`.
+Nota: La imagen inicial se redimensiona a los valores especificados de `width` y `height` antes de codificarse. La dimensión temporal latente se calcula como `((length - 1) // 4) + 1`, y las dimensiones espaciales latentes son `height / 8` y `width / 8`.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `MODEL` | El modelo clonado con la imagen inicial codificada almacenada en sus opciones de transformer (`ar_config.initial_latent`), que el muestreador utiliza para inicializar el caché KV antes del denoising. | MODEL |
-| `LATENT` | Un tensor latente relleno con ceros con forma `[batch_size, 16, lat_t, height // 8, width // 8]`, donde `lat_t = ((length - 1) // 4) + 1`. | LATENT |
+| `MODEL` | El modelo clonado con la imagen inicial codificada almacenada en sus opciones del transformer (`ar_config.initial_latent`), que el muestreador utiliza para inicializar la caché KV antes de la eliminación de ruido. | MODEL |
+| `LATENT` | Un tensor latente relleno de ceros con forma `[batch_size, 16, lat_t, height // 8, width // 8]`, donde `lat_t = ((length - 1) // 4) + 1`. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ARVideoI2V/es.md)
 

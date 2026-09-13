@@ -1,16 +1,16 @@
 # USOStyleReference
 
-O nó USOStyleReference aplica uma referência de estilo a um modelo combinando características de visão do CLIP com um patch de modelo, e retorna uma cópia corrigida do modelo de entrada. Ele é destinado a modelos Flux e está marcado como experimental. As informações de estilo visual são combinadas com o condicionamento de texto do modelo para que possam influenciar a geração.
+O nó USOStyleReference aplica uma referência de estilo a um modelo, combinando recursos de visão do CLIP com um patch de modelo, e retorna uma cópia corrigida do modelo de entrada. As informações de estilo visual são combinadas com o condicionamento de texto do modelo para que possam influenciar a geração. Este nó é destinado a modelos Flux e está marcado como experimental.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `model` | O modelo base ao qual o patch de referência de estilo é aplicado. | MODEL | Sim | - |
-| `model_patch` | O patch de modelo que contém o modelo de projeção usado para codificar as características da imagem de referência. | MODEL_PATCH | Sim | - |
-| `clip_vision_output` | As características visuais codificadas extraídas do processamento de visão CLIP da imagem de referência. | CLIP_VISION_OUTPUT | Sim | - |
+| `model_patch` | O patch de modelo que contém o modelo de projeção usado para codificar os recursos da imagem de referência. | MODEL_PATCH | Sim | - |
+| `clip_vision_output` | Os recursos visuais codificados extraídos do processamento de visão do CLIP da imagem de referência. | CLIP_VISION_OUTPUT | Sim | - |
 
-Nota: O `clip_vision_output` deve vir de um modelo de visão CLIP que forneça os estados ocultos completos e o penúltimo estado oculto. O nó combina o 20º a partir do final, o 11º a partir do final e o penúltimo estado oculto no embedding de estilo. O `model_patch` deve expor um modelo de projeção por meio de seu atributo `model` que converte essas características de imagem no embedding de estilo. Durante a amostragem, o embedding de estilo é adicionado ao início do condicionamento de texto para que possa influenciar a geração.
+Nota: O `clip_vision_output` deve vir de um modelo de visão do CLIP que forneça os estados ocultos completos e o penúltimo estado oculto. O nó combina o 20º a partir do final, o 11º a partir do final e o penúltimo estado oculto no embedding de estilo. O `model_patch` deve expor um modelo de projeção por meio de seu atributo `model` que converte esses recursos da imagem no embedding de estilo. Durante a amostragem, o embedding de estilo é prefixado ao condicionamento de texto para que possa influenciar a geração, e IDs de texto de posição zero correspondentes são prefixados aos IDs de texto para que a sequência de identificadores permaneça alinhada com o condicionamento estendido.
 
 ## Saídas
 

@@ -1,27 +1,28 @@
 # Eğitim Veriseti Oluştur
 
-Bu düğüm, görüntüleri ve metni kodlayarak eğitim için veri hazırlar. Bir görüntü listesi ve buna karşılık gelen bir metin açıklamaları listesi alır; ardından görüntüleri latent gösterimlere dönüştürmek için bir VAE modeli ve metni koşullandırma verisine dönüştürmek için bir CLIP modeli kullanır. Elde edilen eşleştirilmiş latentler ve koşullandırma, eğitim iş akışlarında kullanıma hazır listeler olarak çıktılanır.
+Bu düğüm, görüntüleri ve metni kodlayarak eğitim için veri hazırlar. Bir görüntü listesi ve buna karşılık gelen metin altyazıları listesini alır, ardından görüntüleri latent temsillere dönüştürmek için bir VAE modeli ve metni koşullandırma verisine dönüştürmek için bir CLIP modeli kullanır. Ortaya çıkan eşleştirilmiş latentler ve koşullandırma, eğitim iş akışlarında kullanıma hazır listeler olarak çıkarılır.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `görüntüler` | Kodlanacak görüntülerin listesi. | IMAGE | Evet | N/A |
-| `vae` | Görüntüleri latent'e kodlamak için VAE modeli. | VAE | Evet | N/A |
+| `images` | Kodlanacak görüntülerin listesi. | IMAGE | Evet | N/A |
+| `vae` | Görüntüleri latentlere kodlamak için VAE modeli. | VAE | Evet | N/A |
 | `clip` | Metni koşullandırmaya kodlamak için CLIP modeli. | CLIP | Evet | N/A |
-| `metinler` | Metin açıklamalarının listesi. Uzunluğu n (görüntülerle eşleşen), 1 (tümü için tekrarlanan) olabilir veya atlanabilir (boş dize kullanılır). | STRING | Hayır | 0, 1 veya n öğe (n = görüntü sayısı) |
+| `texts` | Metin altyazılarının listesi. Uzunluğu n (görüntülerle eşleşen), 1 (tümü için yinelenen) veya atlanmış (boş dize kullanılır) olabilir. | STRING | Hayır | 0, 1 veya n öğe (n = görüntü sayısı) |
 
 **Parametre Kısıtlamaları:**
 
-* `texts` listesindeki öğe sayısı 0, 1 olmalı veya `images` listesindeki öğe sayısıyla tam olarak eşleşmelidir. 0 ise, tüm görüntüler için boş dize kullanılır. 1 ise, bu tek metin tüm görüntüler için tekrarlanır. Başka herhangi bir uzunluk hata verir.
-* `latents` ve `conditioning` çıktı listeleri her zaman `images` listesiyle aynı sayıda öğe içerir; böylece her latent, karşılık gelen açıklamasının koşullandırmasıyla eşleştirilir.
+* Bu düğüm liste girdileri kullanır: `images` ve `texts` liste olarak işlenir; `vae` ve `clip` ise her biri tek bir model kabul eder (sağlanan listenin ilk öğesi kullanılır).
+* `texts` listesindeki öğe sayısı 0, 1 olmalı veya `images` listesindeki öğe sayısıyla tam olarak eşleşmelidir. 0 ise veya atlanırsa, tüm görüntüler için boş bir dize kullanılır. 1 ise, bu tek metin tüm görüntüler için yinelenir. Başka herhangi bir uzunluk hata verir.
+* Çıktı `latents` ve `conditioning` listeleri her zaman `images` listesiyle aynı sayıda öğe içerir; böylece her latent, karşılık gelen altyazının koşullandırmasıyla eşleştirilir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
 | `latents` | Latent sözlüklerinin listesi. | LATENT |
-| `koşullandırma` | Koşullandırma listelerinin listesi. | CONDITIONING |
+| `conditioning` | Koşullandırma listelerinin listesi. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MakeTrainingDataset/tr.md)
 

@@ -1,24 +1,24 @@
 # Tripo: Görüntüden Çoklu Görünüme
 
-Tek bir giriş görüntüsünden Tripo API'sini kullanarak konunun ön, sol, arka ve sağ görünümlerini üretir. Görüntü yüklenir, bir çoklu görünüm oluşturma görevi başlatılır ve tamamlanana kadar yoklanır; elde edilen dört görünüm görev kimliğiyle birlikte döndürülür. Bu, yaklaşık 0,10 USD olarak faturalandırılan ücretli bir görevdir.
+Tripo API kullanarak tek bir girdi görselinden öznenin ön, sol, arka ve sağ görünümlerini oluşturur. Görsel yüklenir, bir çoklu görünüm oluşturma görevi başlatılır ve tamamlanana kadar sorgulanır; elde edilen dört görünüm görev kimliğiyle birlikte döndürülür. Bu, yaklaşık 0,10 USD olarak faturalandırılan ücretli bir görevdir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Tripo'nun ön, sol, arka ve sağ görünümleri ürettiği konunun kaynak görüntüsü. Bir toplu iş sağlansa bile istek için yalnızca bir görüntü kullanılır. | IMAGE | Evet | Single image |
+| `image` | Tripo'nun ön, sol, arka ve sağ görünümlerini oluşturduğu öznenin kaynak görseli. Bir toplu iş sağlansa bile istek için yalnızca bir görsel kullanılır. | IMAGE | Evet | Tek görsel |
 
-Not: Düğüm, Tripo'nun bulut API'sini çağırır ve oluşturma görevinin tamamlanmasını bekler. Tipik bir görev yaklaşık 25 saniye sürer. Kimlik doğrulama, düğümün gizli girdileri aracılığıyla otomatik olarak gerçekleştirilir; bu nedenle iş akışında herhangi bir Tripo API anahtarı sağlanmasına gerek yoktur. Düğüm, Tripo yanıtındaki dört görünüm URL'sinin tümünü gerektirir (`front_view_url`, `left_view_url`, `back_view_url`, `right_view_url`); herhangi bir görünüm eksikse yürütme bir hatayla başarısız olur.
+Not: Düğüm, Tripo'nun bulut API'sini çağırır ve oluşturma görevinin tamamlanmasını bekler. Tipik bir görev yaklaşık 25 saniye sürer. Kimlik doğrulama, düğümün gizli girdileri aracılığıyla otomatik olarak yönetilir; bu nedenle iş akışında herhangi bir Tripo API anahtarı sağlanması gerekmez. Düğüm, Tripo yanıtındaki dört görünüm URL'sinin tamamını (`front_view_url`, `left_view_url`, `back_view_url`, `right_view_url`) gerektirir; herhangi bir görünüm eksikse yürütme bir hatayla başarısız olur.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-|-------------|-----------|-----------|
-| `multiview task_id` | Tripo tarafından çoklu görünüm görüntü oluşturma isteği için döndürülen görev tanımlayıcısı. Tamamlanan göreve başvurmak için kullanılabilir; örneğin görünümleri Tripo: Edit Multiview ile iyileştirirken. | MULTIVIEW_TASK_ID |
-| `ön` | Konunun oluşturulan ön görünümü. | IMAGE |
-| `sol` | Konunun oluşturulan sol yan görünümü. | IMAGE |
-| `arka` | Konunun oluşturulan arka görünümü. | IMAGE |
-| `sağ` | Konunun oluşturulan sağ yan görünümü. | IMAGE |
+|-------------|-------------|-----------|
+| `multiview task_id` | Tripo tarafından çoklu görünüm görsel oluşturma isteği için döndürülen görev tanımlayıcısı. Tamamlanan göreve başvurmak için kullanılabilir; örneğin görünümleri Tripo: Edit Multiview ile iyileştirirken. | MULTIVIEW_TASK_ID |
+| `front` | Öznenin oluşturulan ön görünümü. | IMAGE |
+| `left` | Öznenin oluşturulan sol yan görünümü. | IMAGE |
+| `back` | Öznenin oluşturulan arka görünümü. | IMAGE |
+| `right` | Öznenin oluşturulan sağ yan görünümü. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoImageToMultiviewNode/tr.md)
 

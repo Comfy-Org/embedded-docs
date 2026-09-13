@@ -1,23 +1,25 @@
 # VAE Decodificar (Mosaico)
 
-El nodo VAEDecodeTiled decodifica representaciones latentes en imágenes mediante un enfoque por teselas para manejar imágenes grandes de manera eficiente. Procesa la entrada en teselas más pequeñas para gestionar el uso de memoria mientras mantiene la calidad de imagen. El nodo también admite VAEs de video procesando los fotogramas temporales en bloques con superposición para transiciones suaves.
+El nodo VAEDecodeTiled decodifica representaciones latentes en imágenes utilizando un enfoque por mosaicos para manejar imágenes grandes de forma eficiente. Procesa la entrada en mosaicos más pequeños para gestionar el uso de memoria mientras mantiene la calidad de la imagen. El nodo también admite VAE de video al procesar fotogramas temporales en bloques con superposición para lograr transiciones suaves.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `muestras` | La representación latente que se decodificará en imágenes | LATENT | Sí | - |
+| `samples` | La representación latente que se decodificará en imágenes | LATENT | Sí | - |
 | `vae` | El modelo VAE utilizado para decodificar las muestras latentes | VAE | Sí | - |
-| `tamaño_mosaico` | El tamaño de cada tesela para el procesamiento (por defecto: 512) | INT | Sí | 64-4096 (step: 32) |
-| `superposición` | La cantidad de superposición entre teselas adyacentes (por defecto: 64) | INT | Sí | 0-4096 (step: 32) |
-| `tamaño_temporal` | Solo se usa para VAE de video: cantidad de fotogramas a decodificar a la vez (por defecto: 64) | INT | Sí | 8-4096 (step: 4) |
-| `superposición_temporal` | Solo se usa para VAE de video: cantidad de fotogramas a superponer (por defecto: 8) | INT | Sí | 4-4096 (step: 4) |
+| `tile_size` | El tamaño de cada mosaico para el procesamiento (predeterminado: 512) | INT | Sí | 64-4096 (paso: 32) |
+| `overlap` | La cantidad de superposición entre mosaicos adyacentes (predeterminado: 64) | INT | Sí | 0-4096 (paso: 32) |
+| `temporal_size` | Solo se utiliza para VAE de video: Cantidad de fotogramas a decodificar a la vez (predeterminado: 64) | INT | Sí | 8-4096 (paso: 4) |
+| `temporal_overlap` | Solo se utiliza para VAE de video: Cantidad de fotogramas a superponer (predeterminado: 8) | INT | Sí | 4-4096 (paso: 4) |
 
-**Nota:** El nodo ajusta automáticamente los valores de superposición si exceden los límites prácticos. Si `tile_size` es menor que 4 veces el `overlap`, la superposición se reduce a una cuarta parte del tamaño de la tesela. De manera similar, si `temporal_size` es menor que el doble de `temporal_overlap`, la superposición temporal se reduce a la mitad. El nodo también tiene en cuenta las relaciones de compresión internas del VAE al calcular los tamaños de tesela y superposición tanto para las dimensiones espaciales como temporales. Si la entrada latente es un lote anidado de latentes, solo se decodifica el primer elemento del lote.
+**Nota:** Las entradas `tile_size`, `overlap`, `temporal_size` y `temporal_overlap` están marcadas como configuraciones avanzadas.
+
+**Nota:** El nodo ajusta automáticamente los valores de superposición si exceden los límites prácticos. Si `tile_size` es menor que 4 veces el `overlap`, la superposición se reduce a un cuarto del tamaño del mosaico. De manera similar, si `temporal_size` es menor que el doble del `temporal_overlap`, la superposición temporal se reduce a la mitad. El nodo también tiene en cuenta las relaciones de compresión internas del VAE al calcular los tamaños de mosaico y superposición tanto para las dimensiones espaciales como temporales. Si el latente de entrada es un lote anidado de latentes, solo se decodifica el primer elemento del lote.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
 | `IMAGE` | La imagen o imágenes decodificadas generadas a partir de la representación latente. Al decodificar latentes de video, la salida es una secuencia de fotogramas de imagen. | IMAGE |
 

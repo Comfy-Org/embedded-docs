@@ -1,26 +1,26 @@
 # SAM3 Video İzleme
 
-SAM3'ün bellek tabanlı izleyicisini kullanarak video kareleri boyunca nesneleri takip edin. Bu düğüm, bir video karesi dizisini işler ve nesne kimliklerini kareler arasında korur; neyin izleneceğini tanımlamak için başlangıç maskelerini veya metin istemlerini kullanır.
+SAM3'ün bellek tabanlı izleyicisini kullanarak nesneleri video kareleri boyunca takip edin. Düğüm, bir video kareleri dizisini işler ve kareler arasında nesne kimliklerini korur; neyin izleneceğini tanımlamak için başlangıç maskelerini veya metin istemlerini kullanır ve metin koşullandırmasıyla izleme sırasında yeni nesneleri algılayabilir.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `görüntüler` | Toplu video kareleri olarak video kareleri | IMAGE | Evet | Toplu video kareleri |
+| `images` | Toplu görüntüler olarak video kareleri | IMAGE | Evet | Toplu video kareleri |
 | `model` | İzleme için kullanılacak SAM3 modeli | MODEL | Evet | SAM3 modeli |
-| `ilk_maske` | İzlenecek ilk kareye ait maske(ler) (nesne başına bir adet) | MASK | Hayır | Nesne başına bir maske |
-| `koşullandırma` | İzleme sırasında yeni nesneleri algılamak için metin koşullandırması | CONDITIONING | Hayır | Metin koşullandırması |
-| `tespit_eşiği` | Metin istemli algılama için puan eşiği (varsayılan: 0.5) | FLOAT | Hayır | 0.0 ile 1.0 arası |
-| `maks_nesne` | Maksimum izlenen nesne sayısı. Başlangıç maskeleri bu sınıra dahildir. 0, dahili 64 sınırını kullanır. (varsayılan: 4) | INT | Hayır | 0 ile 64 arası |
-| `tespit_aralığı` | Algılamayı her N karede bir çalıştırın (1=her kare). Daha yüksek değerler hesaplama tasarrufu sağlar. (varsayılan: 1) | INT | Hayır | 1 veya daha yüksek |
+| `initial_mask` | İzlenecek ilk kare için maskeler (nesne başına bir tane) | MASK | Hayır | Nesne başına bir maske |
+| `conditioning` | İzleme sırasında yeni nesneleri algılamak için metin koşullandırması | CONDITIONING | Hayır | Metin koşullandırması |
+| `detection_threshold` | Metin istemiyle algılama için puan eşiği (varsayılan: 0.5) | FLOAT | Hayır | 0.0 ile 1.0 arası (adım 0.01) |
+| `max_objects` | Maksimum izlenen nesne sayısı. Başlangıç maskeleri bu sınıra dahildir. 0, dahili 64 üst sınırını kullanır. (varsayılan: 4) | INT | Hayır | 0 ile 64 arası |
+| `detect_interval` | Algılamayı her N karede bir çalıştır (1=her kare). Daha yüksek değerler hesaplamadan tasarruf sağlar. (varsayılan: 1) | INT | Hayır | 1 veya daha yüksek |
 
-**Not:** `initial_mask` veya `conditioning` girdilerinden en az biri sağlanmalıdır. İkisi de atlanırsa düğüm bir hata verir.
+**Not:** `initial_mask` veya `conditioning` alanlarından biri sağlanmalıdır. İkisi de belirtilmezse düğüm bir hata verir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `iz_verisi` | Tüm video kareleri boyunca nesne maskelerini ve meta verilerini içeren izleme verisi | SAM3TrackData |
+| `track_data` | Tüm video kareleri boyunca nesne maskelerini ve meta verileri içeren izleme verileri | SAM3_TRACK_DATA |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_VideoTrack/tr.md)
 

@@ -1,16 +1,16 @@
 # ImageYUVToRGB
 
-El nodo ImageYUVToRGB convierte imágenes en espacio de color YUV a espacio de color RGB. Toma tres imágenes de entrada separadas que representan los componentes Y (luminancia), U (proyección de azul) y V (proyección de rojo) y las combina en una única imagen RGB.
+El nodo ImageYUVToRGB convierte imágenes del espacio de color YUV al espacio de color RGB. Toma tres imágenes de entrada separadas que representan los componentes Y (luma), U (proyección azul) y V (proyección roja), y las combina en una sola imagen RGB.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `Y` | Imagen de entrada del componente Y (luminancia) | IMAGE | Sí | - |
-| `U` | Imagen de entrada del componente U (proyección de azul) | IMAGE | Sí | - |
-| `V` | Imagen de entrada del componente V (proyección de rojo) | IMAGE | Sí | - |
+| `Y` | La imagen de entrada del componente Y (luminancia). Si la imagen tiene más de tres canales, solo se usan los primeros tres y se promedian en un único canal. | IMAGE | Sí | - |
+| `U` | La imagen de entrada del componente U (proyección azul). Si la imagen tiene más de tres canales, solo se usan los primeros tres y se promedian en un único canal. | IMAGE | Sí | - |
+| `V` | La imagen de entrada del componente V (proyección roja). Si la imagen tiene más de tres canales, solo se usan los primeros tres y se promedian en un único canal. | IMAGE | Sí | - |
 
-**Nota:** Las tres imágenes de entrada (Y, U y V) deben proporcionarse juntas y deben tener dimensiones compatibles para una conversión adecuada.
+**Nota:** Las tres imágenes de entrada (Y, U y V) deben proporcionarse juntas y deben tener dimensiones compatibles (altura, anchura y tamaño de lote coincidentes) para que la conversión se realice correctamente.
 
 ## Salidas
 

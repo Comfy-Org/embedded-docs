@@ -1,15 +1,13 @@
 # Échelle de bruit du modèle
 
-## Vue d'ensemble
-
-Ce nœud ajuste l'échelle de bruit utilisée lors de l'échantillonnage du modèle. Il permet de définir une valeur spécifique d'échelle de bruit, qui contrôle la quantité de bruit appliquée au processus d'échantillonnage du modèle.
+Ce nœud ajuste l’échelle de bruit utilisée lors de l’échantillonnage du modèle. Il crée une copie du modèle d’entrée, applique l’échelle de bruit spécifiée à sa configuration d’échantillonnage et renvoie le modèle modifié.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `modèle` | Le modèle auquel appliquer l'ajustement de l'échelle de bruit. | MODEL | Oui | - |
-| `échelle_bruit` | Échelle de bruit d'entraînement absolue. Par exemple, HiDream-O1 base : 8.0, dev : 7.5. (défaut : 1.0) | FLOAT | Oui | 0.0 à 64.0 (pas : 0.01) |
+| `model` | Le modèle auquel appliquer l’ajustement de l’échelle de bruit. | MODEL | Oui | - |
+| `noise_scale` | Échelle de bruit d’entraînement absolue. Par exemple HiDream-O1 base : 8.0, dev : 7.5. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 64.0 (pas : 0.01) |
 
 ## Sorties
 

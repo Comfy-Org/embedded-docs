@@ -1,20 +1,20 @@
 # Flux 3 Texto a Video
 
-Genera un video con audio sincronizado a partir de un prompt de texto usando FLUX 3. El nodo envía tu prompt al servicio de FLUX 3, espera a que la generación termine y devuelve el clip de video completado.
+Genera un video con audio sincronizado a partir de un prompt de texto usando FLUX 3. El nodo envía tu prompt al servicio FLUX 3, espera a que finalice la generación y devuelve el clip de video completado.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `prompt` | Lo que deseas, en lenguaje natural; el prompt se interpreta y expande antes de la generación. Describe el sonido ambiente, la música y el habla por separado para obtener audio en capas. (predeterminado: "") | STRING | Sí | Texto multilínea |
-| `aspect_ratio` | Relación de aspecto de salida. 'auto' elige una a partir del prompt y las entradas. (predeterminado: "auto") | COMBO | Sí | Múltiples opciones disponibles, incluyendo `"auto"` |
-| `duration` | Duración del clip en segundos. 'auto' ajusta la duración al contenido. (predeterminado: "auto") | COMBO | Sí | Múltiples opciones disponibles, incluyendo `"auto"` |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `prompt` | Lo que deseas, en lenguaje natural; el prompt se interpreta y se expande antes de la generación. Describe el sonido ambiental, la música y la voz por separado para obtener audio en capas. (predeterminado: "") | STRING | Sí | Texto multilínea |
+| `aspect_ratio` | Relación de aspecto de salida. 'auto' elige una a partir del prompt y las entradas. (predeterminado: "auto") | COMBO | Sí | Múltiples opciones disponibles, incluida `"auto"` |
+| `duration` | Duración del clip en segundos. 'auto' ajusta la duración al contenido. (predeterminado: "auto") | COMBO | Sí | Múltiples opciones disponibles, incluida `"auto"` |
 | `resolution` | Resolución de salida. (predeterminado: "720p") | COMBO | Sí | `"720p"`<br>`"1080p"` |
-| `generate_audio` | Generar audio sincronizado (ambiente, habla, efectos). Desactivado produce un video sin pista de audio. (predeterminado: True) | BOOLEAN | Sí | True<br>False |
-| `safety_tolerance` | Tolerancia de moderación, 0 es la más estricta. Las solicitudes que envían imágenes o video están limitadas a 2 sin importar lo que configures aquí. (predeterminado: 2) | INT | Sí | 0 a 4 |
-| `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; FLUX 3 elige su propia semilla, por lo que los resultados reales son no deterministas independientemente de este valor. (predeterminado: 42) | INT | Sí | 0 a 4294967295 |
+| `generate_audio` | Genera audio sincronizado (ambiental, voz, efectos). Desactivado produce un video sin pista de audio. (predeterminado: True) | BOOLEAN | Sí | True<br>False |
+| `safety_tolerance` | Tolerancia de moderación; 0 es la más estricta. Las solicitudes que envían imágenes o video están limitadas a 2, sin importar lo que configures aquí. (predeterminado: 2) | INT | Sí | 0 a 4 |
+| `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; FLUX 3 elige su propia semilla, por lo que los resultados reales no son deterministas independientemente de este valor. (predeterminado: 42) | INT | Sí | 0 a 4294967295 |
 
-Nota: La entrada `seed` incluye controles de Control After Generate en la interfaz. El precio mostrado se basa en `resolution` y `duration`: HD (720p) se cobra a $0.2431 por segundo y FHD (1080p) a $0.4147 por segundo. Cuando se elige una duración fija, se muestra el costo total estimado para el clip; cuando `duration` es "auto", se muestra la tarifa por segundo.
+Nota: `safety_tolerance` es una entrada avanzada. La entrada `seed` incluye controles Control After Generate en la interfaz. El precio mostrado se basa en `resolution` y `duration`: HD (720p) se cobra a $0.2431 por segundo y FHD (1080p) a $0.4147 por segundo. Cuando se elige una duración fija, se muestra el costo total estimado del clip; cuando `duration` es "auto", se muestra la tarifa por segundo.
 
 ## Salidas
 

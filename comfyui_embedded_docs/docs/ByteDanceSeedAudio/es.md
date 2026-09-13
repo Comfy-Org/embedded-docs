@@ -1,46 +1,46 @@
-# ByteDanceSeedAudio
+# ByteDance Seed Audio 1.0
 
-Genera voz, música, efectos de sonido y diálogo multi-locutor a partir de un solo prompt con ByteDance Seed Audio 1.0. Describe la(s) voz(ces), emoción, ambiente, música de fondo y efectos de sonido en el prompt, e incluye las líneas a hablar. Opcionalmente, selecciona una voz predefinida integrada, clona voces de hasta 3 clips de referencia (etiquetados como @Audio1-3 en el prompt), o deriva una voz a partir de una imagen de personaje. Hasta 2 minutos de audio por ejecución.
+Genera voz, música, efectos de sonido y diálogo con varios hablantes a partir de un solo prompt con ByteDance Seed Audio 1.0. Describe la(s) voz/voces, la emoción, el ritmo, el ambiente, la música de fondo y los efectos de sonido en el prompt, e incluye las líneas que se van a pronunciar. De manera opcional, elige una voz predefinida integrada, clona voces a partir de hasta 3 clips de referencia (etiquetados como @Audio1-3 en el prompt), o deriva una voz a partir de una imagen de personaje. Hasta 2 minutos de audio por ejecución. El modelo multilingüe admite 20 idiomas y control de tiempos basado en marcas de tiempo.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-|-----------|-------------|--------------|-------------|-------|
-| `text_prompt` | Describe la(s) voz(ces), emoción, ritmo, ambiente, música de fondo y efectos de sonido, e incluye las líneas a hablar (nombra personajes en línea para diálogos). En modo 'referencia de audio', refiérete a los clips conectados por orden como @Audio1, @Audio2, @Audio3. Con el modelo multilingüe, una línea entre comillas puede comenzar con un rango de marcas de tiempo que controla cuándo y durante cuánto tiempo se pronuncia, p. ej. `[5.5s:8.0s] ¡Espérame!`. Escribe el prompt en el mismo idioma que las líneas a pronunciar. Mínimo 1 carácter, Máximo 3000 caracteres. | STRING | Sí | 1 a 3000 caracteres |
-  - **"referencia de audio"**: Requiere que al menos uno de `reference_audio_1`, `reference_audio_2` o `reference_audio_3` esté conectado. Los clips de referencia deben conectarse en orden sin huecos. Cada clip tiene un máximo de 30 segundos. Si se usan etiquetas @AudioN en el prompt, el número de etiqueta más alto no debe exceder la cantidad de clips de referencia conectados.
-| `reference_audio_1` | Clip de referencia para clonación de voz, etiquetado @Audio1 en el prompt. Hasta 30s. Solo disponible cuando `reference_mode` es "referencia de audio". | AUDIO | No | Hasta 30 segundos |
-| `reference_audio_2` | Clip de referencia etiquetado @Audio2 en el prompt. Hasta 30s. Solo disponible cuando `reference_mode` es "referencia de audio". | AUDIO | No | Hasta 30 segundos |
-| `reference_audio_3` | Clip de referencia etiquetado @Audio3 en el prompt. Hasta 30s. Solo disponible cuando `reference_mode` es "referencia de audio". | AUDIO | No | Hasta 30 segundos |
-  - **"referencia de imagen"**: Requiere que `reference_image` esté conectado. No se usan etiquetas @AudioN; el prompt debe contener solo el texto a sintetizar.
-  - **"voz predefinida"**: Requiere que se seleccione una voz preestablecida. Todo el prompt se lee con la voz seleccionada; las etiquetas @AudioN no se usan como referencia, y etiquetas como @Audio2 o superiores se rechazan.
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `text_prompt` | Describe la(s) voz/voces, la emoción, el ritmo, el ambiente, la música de fondo y los efectos de sonido, e incluye las líneas que se van a pronunciar (nombra a los personajes en línea para el diálogo). En el modo "audio reference", haz referencia a los clips conectados por orden como @Audio1, @Audio2, @Audio3. Con el modelo multilingüe, una línea entre comillas puede comenzar con un rango de marcas de tiempo que controla cuándo y durante cuánto tiempo se pronuncia, p. ej., `[5.5s:8.0s] Wait for me!`. Escribe el prompt en el mismo idioma que las líneas que se van a pronunciar. Mínimo 1 carácter, máximo 3000 caracteres. | STRING | Sí | 1 a 3000 caracteres |
+| `reference_mode` | Cómo condicionar la voz: "text only" (describe todo en el prompt), "audio reference" (clona hasta 3 voces, etiquetadas @Audio1-3), "image reference" (deriva una voz a partir de una imagen de personaje), o "preset voice" (elige una voz integrada con nombre que lee el prompt). | COMBO | Sí | `"text only"`<br>`"audio reference"`<br>`"image reference"`<br>`"preset voice"` |
+| `reference_audio_1` | Clip de referencia para clonación de voz, etiquetado como @Audio1 en el prompt. Hasta 30 s. Disponible solo cuando `reference_mode` es "audio reference". | AUDIO | No | Hasta 30 segundos |
+| `reference_audio_2` | Clip de referencia etiquetado como @Audio2 en el prompt. Hasta 30 s. Disponible solo cuando `reference_mode` es "audio reference". | AUDIO | No | Hasta 30 segundos |
+| `reference_audio_3` | Clip de referencia etiquetado como @Audio3 en el prompt. Hasta 30 s. Disponible solo cuando `reference_mode` es "audio reference". | AUDIO | No | Hasta 30 segundos |
+| `reference_image` | Una única imagen de personaje; el modelo deriva una voz a partir de ella. No se puede combinar con audio de referencia. Disponible solo cuando `reference_mode` es "image reference". | IMAGE | No | - |
+| `preset_voice` | Una voz integrada de TTS 2.0 que lee el prompt. No se necesita clip de referencia y las etiquetas @AudioN no se usan en este modo. Obligatorio cuando `reference_mode` es "preset voice". | COMBO | No | Múltiples opciones de voces predefinidas integradas (la primera opción se selecciona de forma predeterminada) |
 | `sample_rate` | Frecuencia de muestreo de salida en Hz. (predeterminado: "24000") | COMBO | Sí | `"8000"`<br>`"16000"`<br>`"24000"`<br>`"32000"`<br>`"44100"`<br>`"48000"` |
 | `speech_rate` | Velocidad del habla. 0 = normal, 100 = 2.0x, -50 = 0.5x. (predeterminado: 0) | INT | Sí | -50 a 100 |
-| `loudness_rate` | Volumen. 0 = normal, 100 = 2.0x, -50 = 0.5x. (predeterminado: 0) | INT | Sí | -50 a 100 |
+| `loudness_rate` | Sonoridad. 0 = normal, 100 = 2.0x, -50 = 0.5x. (predeterminado: 0) | INT | Sí | -50 a 100 |
 | `pitch_rate` | Desplazamiento de tono en semitonos (-12 a 12). (predeterminado: 0) | INT | Sí | -12 a 12 |
-| `seed` | La semilla controla si el nodo debe re-ejecutarse; los resultados no son deterministas independientemente de la semilla. (predeterminado: 42) | INT | Sí | 0 a 2147483647 |
-| `model` | Versión del modelo. `seed-audio-1.0-multilingual` admite 20 idiomas y control de sincronización por oración mediante marcas de tiempo `[5.5s:8.0s]`. `seed-audio-1.0` solo admite inglés y chino, sin control de sincronización. (predeterminado: "seed-audio-1.0-multilingual") | COMBO | No | `"seed-audio-1.0-multilingual"`<br>`"seed-audio-1.0"` |
+| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. (predeterminado: 42) | INT | Sí | 0 a 2147483647 |
+| `model` | Versión del modelo. `seed-audio-1.0-multilingual` admite 20 idiomas y control de tiempos por oración mediante marcas de tiempo con formato `[5.5s:8.0s]`. `seed-audio-1.0` admite solo inglés y chino, sin control de tiempos. (predeterminado: "seed-audio-1.0-multilingual") | COMBO | No | `"seed-audio-1.0-multilingual"`<br>`"seed-audio-1.0"` |
 
-### Restricciones de Parámetros
+### Restricciones de parámetros
 
-- **Dependencias del modo de referencia**: El parámetro `reference_mode` determina qué otras entradas son necesarias:
-  - **"solo texto"**: No se requieren entradas adicionales. El prompt no debe contener etiquetas @AudioN.
-  - **"referencia de audio"**: Requiere que al menos uno de `reference_audio_1`, `reference_audio_2` o `reference_audio_3` esté conectado. Los clips de referencia deben conectarse en orden sin espacios (ej., _1, luego _2, luego _3). Cada clip tiene una duración máxima de 30 segundos. El prompt debe hacer referencia a los clips conectados usando las etiquetas @Audio1, @Audio2, @Audio3.
-  - **"referencia de imagen"**: Requiere que `reference_image` esté conectado. El prompt no debe contener etiquetas @AudioN.
-  - **"voz predefinida"**: Requiere que `preset_voice` esté seleccionado. El prompt no debe contener etiquetas @AudioN (todo el prompt se lee con la voz seleccionada).
+- **Dependencias del modo de referencia**: El parámetro `reference_mode` determina qué otras entradas son obligatorias:
+  - **"text only"**: No se requieren entradas adicionales. El prompt no debe contener etiquetas @AudioN.
+  - **"audio reference"**: Requiere que al menos uno de `reference_audio_1`, `reference_audio_2` o `reference_audio_3` esté conectado. Los clips de referencia deben conectarse en orden sin dejar huecos. Cada clip está limitado a una duración máxima de 30 segundos. Si se usan etiquetas @AudioN en el prompt, el número de etiqueta más alto no debe superar el número de clips de referencia conectados.
+  - **"image reference"**: Requiere que `reference_image` esté conectado. No se usan etiquetas @AudioN; el prompt debe contener solo el texto que se va a sintetizar.
+  - **"preset voice"**: Requiere que se seleccione una voz predefinida. Todo el prompt se lee con la voz seleccionada; las etiquetas @AudioN no se usan como referencias, y las etiquetas como @Audio2 o superiores se rechazan.
 
-- **Orden de referencia de audio**: Al usar el modo "referencia de audio", las entradas de audio de referencia deben conectarse secuencialmente comenzando desde `reference_audio_1` sin espacios. Por ejemplo, puedes conectar _1 y _2, pero no _1 y _3 sin _2.
+- **Orden de las referencias de audio**: En el modo "audio reference", las entradas de audio de referencia deben conectarse de forma secuencial comenzando desde `reference_audio_1` sin dejar huecos. Por ejemplo, puedes conectar `reference_audio_1` y `reference_audio_2`, pero no `reference_audio_1` y `reference_audio_3` sin `reference_audio_2`.
 
-- **Etiquetas de audio máximas**: El prompt puede hacer referencia hasta 3 clips de audio (@Audio1, @Audio2, @Audio3), y la etiqueta @AudioN más alta en el prompt no puede exceder el número de entradas de audio de referencia conectadas.
+- **Máximo de etiquetas de audio**: En el modo "audio reference", se pueden conectar hasta 3 clips de referencia (@Audio1, @Audio2, @Audio3), y la etiqueta @AudioN más alta en el prompt no puede superar el número de entradas de audio de referencia conectadas.
 
-- **Diferencias de modelo**: El modelo `seed-audio-1.0-multilingual` admite 20 idiomas (inglés, chino, japonés, coreano, español mexicano y castellano, indonesio, alemán, portugués brasileño, francés, tailandés, vietnamita, malayo, filipino, italiano, ruso, neerlandés, polaco, turco, sueco) además del control de sincronización por oración mediante marcas de tiempo en el formato `[5.5s:8.0s]`. El modelo `seed-audio-1.0` solo admite inglés y chino, sin control de sincronización.
+- **Diferencias entre modelos**: El modelo `seed-audio-1.0-multilingual` admite 20 idiomas (inglés, chino, japonés, coreano, español de México y de Castilla, indonesio, alemán, portugués de Brasil, francés, tailandés, vietnamita, malayo, filipino, italiano, ruso, neerlandés, polaco, turco, sueco) además de control de tiempos por oración usando marcas de tiempo con el formato `[5.5s:8.0s]`. El modelo `seed-audio-1.0` admite solo inglés y chino, sin control de tiempos.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-|------------------|-------------|--------------|
-| `AUDIO` | La salida de audio generada por ByteDance Seed Audio 1.0, que contiene voz, música, efectos de sonido o diálogo multi-locutor según lo descrito en el prompt. | AUDIO |
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `AUDIO` | La salida de audio generada por ByteDance Seed Audio 1.0, que contiene voz, música, efectos de sonido o diálogo con varios hablantes según lo descrito en el prompt. | AUDIO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedAudio/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `cefd5fca496b02c35022d25be3d99d3911c1304b6e3a751751b58841d5895ef7`
+**Source fingerprint (SHA-256):** `e86e4edde424b4427d864350a9d3b082e271fbd2b1e335175637a9cc3ad51163`

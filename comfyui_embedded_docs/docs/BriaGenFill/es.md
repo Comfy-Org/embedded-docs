@@ -1,6 +1,6 @@
 # Relleno generativo de Bria
 
-Este nodo genera objetos o escenarios dentro de una región enmascarada de una imagen usando Bria. Carga la imagen y la máscara, envía el prompt al servicio de relleno generativo de Bria, espera a que se complete la operación y devuelve la imagen editada. Esta es una operación de API de pago (US$0.0429 por solicitud).
+Este nodo genera objetos o escenarios dentro de una región enmascarada de una imagen usando Bria. Carga la imagen y la máscara, envía el prompt al servicio de relleno generativo de Bria, espera a que finalice la operación y devuelve la imagen editada. Esta es una operación de API de pago (US$0.0429 por solicitud).
 
 ## Entradas
 
@@ -8,13 +8,13 @@ Este nodo genera objetos o escenarios dentro de una región enmascarada de una i
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `image` | La imagen de entrada a editar. | IMAGE | Sí | - |
-| `mask` | Las áreas blancas se rellenan con contenido generado; las áreas negras se conservan. La máscara se binariza antes de enviarla, por lo que las áreas pintadas parcialmente cuentan como blancas. Debe tener la misma relación de aspecto que la imagen. | MASK | Sí | - |
+| `image` | La imagen de entrada que se va a editar. | IMAGE | Sí | - |
+| `mask` | Las áreas blancas se rellenan con contenido generado; las áreas negras se conservan. La máscara se binariza antes de enviarla con un umbral del 50%: solo las áreas pintadas con más del 50% de opacidad cuentan como blancas. Debe tener la misma relación de aspecto que la imagen. | MASK | Sí | - |
 | `prompt` | Descripción de lo que se debe generar dentro de la región enmascarada. Debe contener al menos 1 carácter. (predeterminado: "") | STRING | Sí | - |
 | `negative_prompt` | Un prompt que describe el contenido que se debe evitar en el resultado generado. Si se deja vacío, no se envía a la API. (predeterminado: "") | STRING | Sí | - |
 | `refine_prompt` | Ajusta automáticamente el prompt para obtener mejores resultados; desactívalo para usar el prompt exactamente como se escribió. (predeterminado: true) | BOOLEAN | Sí | true<br>false |
 | `seed` | Semilla para el proceso de generación. (predeterminado: 42) | INT | Sí | 1 a 2147483647 |
-| `moderación` | Configuración de moderación. Cuando se establece en "true", se aplican las opciones de moderación a continuación. (predeterminado: "false") | DYNAMIC_COMBO | Sí | "false"<br>"true" |
+| `moderation` | Configuración de moderación. Cuando se establece en "true", se aplican las opciones de moderación a continuación. (predeterminado: "false") | DYNAMIC_COMBO | Sí | "false"<br>"true" |
 
 ### Entradas de moderación (cuando `moderation` = "true")
 
@@ -24,7 +24,7 @@ Este nodo genera objetos o escenarios dentro de una región enmascarada de una i
 | `visual_input_moderation` | Aplica moderación de contenido a la imagen de entrada. (predeterminado: false) | BOOLEAN | No | true<br>false |
 | `visual_output_moderation` | Aplica moderación de contenido a la imagen de salida. (predeterminado: false) | BOOLEAN | No | true<br>false |
 
-**Nota:** El `prompt` no debe estar vacío. La `mask` debe tener la misma relación de aspecto que la `image`. La máscara se binariza al 50% de opacidad, por lo que las áreas pintadas con menos de la mitad de opacidad se ignoran; si la máscara no contiene áreas blancas después de la binarización, el nodo lanza un error.
+**Nota:** El `prompt` no debe estar vacío. La `mask` debe tener la misma relación de aspecto que la `image`. La máscara se binariza al 50% de opacidad, por lo que las áreas pintadas con menos de la mitad de opacidad se ignoran; si la máscara no contiene áreas blancas después de la binarización, el nodo genera un error.
 
 ## Salidas
 

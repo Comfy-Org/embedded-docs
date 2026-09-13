@@ -1,18 +1,18 @@
 # Recraft Net Büyütme Görüntüsü
 
-'crisp upscale' aracını kullanarak bir girdi görüntüsünü senkronize şekilde büyütür, çözünürlüğünü artırır ve daha keskin ve temiz hale getirir. Girdi batch'indeki her görüntü bağımsız olarak işlenir ve büyütülmüş sonuçlar bir batch olarak döndürülür.
+Bu düğüm, bir görüntüyü "crisp upscale" aracını kullanarak senkron olarak büyütür. Verilen bir raster görüntüyü çözünürlüğünü artırarak geliştirir; görüntüyü daha keskin ve daha temiz hale getirir. Bir görüntü grubu sağlandığında, her görüntü bağımsız olarak işlenir ve büyütülmüş sonuçlar bir grup olarak döndürülür.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `görüntü` | Büyütülecek girdi görüntüsü. Bir batch görüntü kabul eder. | IMAGE | Evet | — |
+| `image` | Büyütülecek girdi görüntüsü. Bir görüntü grubunu kabul eder; her görüntü bağımsız olarak işlenir. | IMAGE | Evet | — |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `image` | Geliştirilmiş çözünürlük ve netliğe sahip büyütülmüş görüntü. Girdi olarak bir batch sağlandıysa bir batch görüntü döndürür. | IMAGE |
+| `image` | Geliştirilmiş çözünürlük ve netliğe sahip, büyütülmüş görüntü. Girdi olarak bir görüntü grubu sağlanmışsa, bir görüntü grubu döndürür. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCrispUpscaleNode/tr.md)
 

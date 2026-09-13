@@ -1,16 +1,16 @@
 # ImageYUVToRGB
 
-O nó ImageYUVToRGB converte imagens do espaço de cores YUV para o espaço de cores RGB. Ele recebe três imagens de entrada separadas que representam os componentes Y (luma), U (projeção azul) e V (projeção vermelha) e as combina em uma única imagem RGB.
+O nó ImageYUVToRGB converte imagens do espaço de cores YUV para o espaço de cores RGB. Ele recebe três imagens de entrada separadas representando os componentes Y (luma), U (projeção azul) e V (projeção vermelha) e as combina em uma única imagem RGB.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `Y` | A imagem de entrada do componente Y (luminância) | IMAGE | Sim | - |
-| `U` | A imagem de entrada do componente U (projeção azul) | IMAGE | Sim | - |
-| `V` | A imagem de entrada do componente V (projeção vermelha) | IMAGE | Sim | - |
+| `Y` | A imagem de entrada do componente Y (luminância). Se a imagem tiver mais de três canais, somente os três primeiros serão usados e a média deles será calculada em um único canal. | IMAGE | Sim | - |
+| `U` | A imagem de entrada do componente U (projeção azul). Se a imagem tiver mais de três canais, somente os três primeiros serão usados e a média deles será calculada em um único canal. | IMAGE | Sim | - |
+| `V` | A imagem de entrada do componente V (projeção vermelha). Se a imagem tiver mais de três canais, somente os três primeiros serão usados e a média deles será calculada em um único canal. | IMAGE | Sim | - |
 
-**Nota:** Todas as três imagens de entrada (Y, U e V) devem ser fornecidas juntas e devem ter dimensões compatíveis para uma conversão adequada.
+**Nota:** Todas as três imagens de entrada (Y, U e V) devem ser fornecidas em conjunto e devem ter dimensões compatíveis (altura, largura e tamanho do lote correspondentes) para que a conversão seja bem-sucedida.
 
 ## Saídas
 

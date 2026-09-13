@@ -1,38 +1,40 @@
 # ClipSetLastLayer
 
-`CLIP Set Last Layer` es un nodo central en ComfyUI para controlar la profundidad de procesamiento de los modelos CLIP. Permite a los usuarios controlar con precisión dónde se detiene el codificador de texto CLIP, afectando tanto la profundidad de la comprensión del texto como el estilo de las imágenes generadas.
-
-Imagina el modelo CLIP como un cerebro inteligente de 24 capas:
-
-- Capas superficiales (1-8): Reconocen letras y palabras básicas
-- Capas intermedias (9-16): Comprenden la gramática y la estructura de las oraciones
-- Capas profundas (17-24): Captan conceptos abstractos y semántica compleja
-
-`CLIP Set Last Layer` funciona como un **"controlador de profundidad de pensamiento"**:
-
-- -1: Usa las 24 capas (comprensión completa)
-- -2: Se detiene en la capa 23 (ligeramente simplificado)
-- -12: Se detiene en la capa 13 (comprensión media)
-- -24: Usa solo la capa 1 (comprensión básica)
+`CLIP Set Last Layer` es un nodo central en ComfyUI para controlar la profundidad de procesamiento de los modelos CLIP. Permite a los usuarios controlar con precisión dónde deja de procesar el codificador de texto CLIP, lo que afecta tanto la profundidad de comprensión del texto como el estilo de las imágenes generadas. El modelo CLIP original se deja sin cambios: el nodo trabaja sobre una copia y devuelve la copia modificada.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `clip` | El modelo CLIP que se va a modificar | CLIP | Sí | - |
-| `detener_en_capa_clip` | Especifica en qué capa detenerse. Un valor de -1 usa todas las capas, mientras que -24 usa solo la primera capa (predeterminado: -1). Este es un parámetro avanzado. | INT | Sí | -24 a -1 (paso: 1) |
+| `stop_at_clip_layer` | Especifica en qué capa detenerse. Un valor de -1 usa todas las capas, mientras que -24 usa solo la primera capa (predeterminado: -1). Este es un parámetro avanzado. | INT | Sí | -24 a -1 (paso: 1) |
+
+Los valores son negativos y se cuentan hacia atrás desde el final del modelo: -1 se refiere a la última capa (la más profunda) y -24 a la primera capa (la más superficial), por lo que el rango permitido solo abarca de -24 a -1.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `clip` | El modelo CLIP modificado (una copia de la entrada; el modelo CLIP original no se modifica) con la capa especificada establecida como la última | CLIP |
+| `clip` | El modelo CLIP modificado (un clon de la entrada; el modelo CLIP original no se modifica) con la capa especificada establecida como la última | CLIP |
 
 ## Por qué establecer la última capa
 
-- **Optimización del rendimiento**: Al igual que no se necesita un doctorado para entender oraciones simples, a veces una comprensión superficial es suficiente y más rápida
-- **Control de estilo**: Diferentes niveles de comprensión producen diferentes estilos artísticos
-- **Compatibilidad**: Algunos modelos podrían rendir mejor en capas específicas
+- **Optimización del rendimiento**: como no se necesita un doctorado para entender frases simples, a veces una comprensión superficial es suficiente y más rápida
+- **Control de estilo**: diferentes niveles de comprensión producen diferentes estilos artísticos
+- **Compatibilidad**: algunos modelos podrían funcionar mejor en capas específicas
+
+Imagina el modelo CLIP como un cerebro inteligente de 24 capas:
+
+- Capas superficiales (1-8): reconocen letras y palabras básicas
+- Capas intermedias (9-16): entienden la gramática y la estructura de las oraciones
+- Capas profundas (17-24): captan conceptos abstractos y semántica compleja
+
+`CLIP Set Last Layer` funciona como un **"controlador de profundidad de pensamiento"**:
+
+- -1: usa las 24 capas (comprensión completa)
+- -2: se detiene en la capa 23 (ligeramente simplificada)
+- -12: se detiene en la capa 13 (comprensión media)
+- -24: usa solo la capa 1 (comprensión básica)
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipSetLastLayer/es.md)
 

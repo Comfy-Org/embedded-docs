@@ -1,6 +1,6 @@
 # LotusConditioning
 
-Le nœud LotusConditioning fournit des embeddings de conditionnement précalculés pour le modèle Lotus. Il utilise un encodeur figé avec un conditionnement nul et renvoie des embeddings de prompt codés en dur pour atteindre la parité avec l'implémentation de référence sans nécessiter d'inférence ni de chargement de fichiers tensoriels volumineux. Ce nœud produit un tenseur de conditionnement fixe qui peut être utilisé directement dans le pipeline de génération.
+Le nœud LotusConditioning fournit des embeddings de conditionnement fixes et pré-calculés pour le modèle Lotus. Comme Lotus utilise un encodeur figé avec un conditionnement nul, le nœud intègre directement les embeddings de prompt résultants au lieu d'exécuter une inférence ou de charger des fichiers de tenseurs volumineux ; sa sortie ne change donc jamais. Le conditionnement renvoyé peut être branché directement dans un pipeline de génération qui attend un conditionnement compatible avec Lotus.
 
 ## Entrées
 
@@ -12,7 +12,7 @@ Le nœud LotusConditioning fournit des embeddings de conditionnement précalcul�
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `conditionnement` | Les embeddings de conditionnement précalculés pour le modèle Lotus, contenant des embeddings de prompt fixes et un dictionnaire vide. | CONDITIONING |
+| `conditioning` | Les embeddings de conditionnement pré-calculés pour le modèle Lotus. Renvoyés sous forme de liste de conditionnement contenant les embeddings de prompt fixes ainsi qu'un dictionnaire vide. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LotusConditioning/fr.md)
 

@@ -1,27 +1,29 @@
 # VOIDInpaintConditioning
 
-گره VOIDInpaintConditioning داده‌های conditioning موردنیاز برای inpainting با مدل‌های CogVideoX را آماده می‌کند. این گره یک ویدیوی منبع و یک quadmask از‌پیش‌پردازش‌شده را دریافت می‌کند، آن‌ها را از طریق VAE رمزگذاری می‌کند و آن‌ها را در یک سیگنال conditioning با ۳۲ کانال (۱۶ کانال از ماسک + ۱۶ کانال از ویدیوی ماسک‌شده) ترکیب می‌کند که مدل از آن برای پر کردن نواحی ماسک‌شده استفاده می‌کند.
+گره VOIDInpaintConditioning داده‌های شرطی‌سازی موردنیاز برای inpainting با مدل‌های CogVideoX را آماده می‌کند. یک ویدئوی منبع و یک quadmask پیش‌پردازش‌شده را دریافت می‌کند، آن‌ها را از طریق VAE رمزگذاری می‌کند و در یک سیگنال شرطی‌سازی 32 کاناله (16 کانال از ماسک + 16 کانال از ویدئوی ماسک‌شده) ترکیب می‌کند که مدل از آن برای پر کردن نواحی ماسک‌شده استفاده می‌کند.
 
 ## ورودی‌ها
 
 | پارامتر | توضیحات | نوع داده | الزامی | محدوده |
 | --- | --- | --- | --- | --- |
-| `positive` | conditioning مثبت که با اطلاعات latent مربوط به inpainting تکمیل می‌شود | CONDITIONING | بله | - |
-| `negative` | conditioning منفی که با اطلاعات latent مربوط به inpainting تکمیل می‌شود | CONDITIONING | بله | - |
-| `vae` | مدل VAE مورد استفاده برای رمزگذاری ماسک و ویدیوی ماسک‌شده به فضای latent | VAE | بله | - |
-| `video` | فریم‌های ویدیوی منبع [T, H, W, 3] | IMAGE | بله | - |
-| `quadmask` | quadmask از‌پیش‌پردازش‌شده از VOIDQuadmaskPreprocess [T, H, W] | MASK | بله | - |
-| `width` | عرضی که ویدیو و ماسک به آن تغییر اندازه می‌دهند (پیش‌فرض: 672) | INT | بله | 16 to MAX_RESOLUTION (step: 8) |
-| `height` | ارتفاعی که ویدیو و ماسک به آن تغییر اندازه می‌دهند (پیش‌فرض: 384) | INT | بله | 16 to MAX_RESOLUTION (step: 8) |
-| `length` | تعداد فریم‌های پیکسلی برای پردازش. برای CogVideoX-Fun-V1.5 (patch_size_t=2)، latent_t باید زوج باشد — طول‌هایی که latent_t فرد تولید می‌کنند به پایین گرد می‌شوند (مثلاً 49 → 45) (پیش‌فرض: 45) | INT | بله | 1 to MAX_RESOLUTION (step: 1) |
-| `batch_size` | اندازه دسته (batch size) برای latent نویز خروجی (پیش‌فرض: 1) | INT | بله | 1 تا 64 |
+| `positive` | شرطی‌سازی مثبتی که با اطلاعات latent inpainting غنی‌سازی می‌شود | CONDITIONING | بله | - |
+| `negative` | شرطی‌سازی منفی‌ای که با اطلاعات latent inpainting غنی‌سازی می‌شود | CONDITIONING | بله | - |
+| `vae` | مدل VAE مورد استفاده برای رمزگذاری ماسک و ویدئوی ماسک‌شده در فضای latent | VAE | بله | - |
+| `video` | فریم‌های ویدئوی منبع [T, H, W, 3] | IMAGE | بله | - |
+| `quadmask` | quadmask پیش‌پردازش‌شده از VOIDQuadmaskPreprocess [T, H, W] | MASK | بله | - |
+| `width` | عرضی که ویدئو و ماسک به آن تغییر اندازه داده می‌شوند (پیش‌فرض: 672) | INT | بله | 16 تا MAX_RESOLUTION (گام: 8) |
+| `height` | ارتفاعی که ویدئو و ماسک به آن تغییر اندازه داده می‌شوند (پیش‌فرض: 384) | INT | بله | 16 تا MAX_RESOLUTION (گام: 8) |
+| `length` | تعداد فریم‌های پیکسلی برای پردازش. برای CogVideoX-Fun-V1.5 (patch_size_t=2)، latent_t باید زوج باشد — طول‌هایی که latent_t فرد تولید می‌کنند به سمت پایین گرد می‌شوند (مثلاً 49 → 45) (پیش‌فرض: 45) | INT | بله | 1 تا MAX_RESOLUTION (گام: 1) |
+| `batch_size` | اندازه دسته برای latent نویز خروجی (پیش‌فرض: 1) | INT | بله | 1 تا 64 |
+
+**توجه:** چون CogVideoX-Fun-V1.5 از `patch_size_t=2` استفاده می‌کند، latent رمزگذاری‌شده باید بُعد زمانی زوج داشته باشد. اگر `length` باعث تولید `latent_t` فرد شود، گره به‌طور خودکار آن را به نزدیک‌ترین مقدار معتبر پایین‌تر گرد می‌کند و یک هشدار ثبت می‌کند. استفاده از `latent_t` فرد آخرین فریم را از طریق padding دایره‌ای خراب می‌کند، که می‌تواند موجب لرزش قابل‌مشاهده یا ناپدید شدن سوژه‌ها نزدیک پایان ویدئوی رمزگشایی‌شده شود.
 
 ## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `positive` | conditioning مثبت که اطلاعات latent مربوط به inpainting به آن اضافه شده است | CONDITIONING |
-| `negative` | conditioning منفی که اطلاعات latent مربوط به inpainting به آن اضافه شده است | CONDITIONING |
+| `positive` | شرطی‌سازی مثبت با اطلاعات latent inpainting اضافه‌شده | CONDITIONING |
+| `negative` | شرطی‌سازی منفی با اطلاعات latent inpainting اضافه‌شده | CONDITIONING |
 | `latent` | یک تنسور latent نویز پر از صفر با شکل [batch_size, 16, latent_t, latent_h, latent_w] | LATENT |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDInpaintConditioning/fa.md)

@@ -1,12 +1,12 @@
 # FluxRehberliğiDevreDışıBırak
 
-Bu düğüm, Flux ve Flux benzeri modellerde guidance embed bileşenini tamamen devre dışı bırakır. Girdi olarak conditioning verisi alır ve guidance bileşenini None olarak ayarlayarak kaldırır; böylece üretim sürecinde guidance tabanlı conditioning'i etkili bir şekilde kapatır.
+Bu düğüm, Flux ve Flux benzeri modellerde guidance embed'ini tamamen devre dışı bırakır. Girdi olarak conditioning verisini alır ve guidance değerini None olarak ayarlar; böylece üretim süreci için guidance tabanlı conditioning'i etkili bir şekilde kapatır.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `koşullandırma` | Üzerinde işlem yapılacak ve guidance bileşeni kaldırılacak conditioning verisi | CONDITIONING | Evet | - |
+| `conditioning` | İşlenecek ve guidance'ın kaldırılacağı conditioning verisi | CONDITIONING | Evet | - |
 
 ## Çıktılar
 

@@ -1,22 +1,22 @@
 # Alternar
 
-O nó Switch seleciona entre duas entradas possíveis com base em uma condição booleana. Quando `switch` está ativado (true), ele passa a entrada `on_true` para a saída; quando desativado (false), ele passa `on_false`. Apenas a ramificação selecionada é avaliada, então a outra entrada não precisa estar conectada.
+O nó If/Else Switch seleciona entre duas entradas possíveis com base em uma condição booleana. Quando `switch` está habilitado (true), ele passa a entrada `on_true` para a saída; quando desabilitado (false), ele passa `on_false`. As entradas têm avaliação preguiçosa (lazy), de modo que apenas o ramo selecionado é avaliado e a outra entrada não precisa estar conectada.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+| Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `alternar` | Uma condição booleana que determina qual entrada passar. Quando ativado (true), a entrada `on_true` é selecionada. Quando desativado (false), a entrada `on_false` é selecionada. | BOOLEAN | Sim | |
-| `falso` | Os dados a serem passados para a saída quando o `switch` estiver desativado (false). Esta entrada é necessária apenas quando o `switch` é false. | MATCH_TYPE | Não | |
-| `verdadeiro` | Os dados a serem passados para a saída quando o `switch` estiver ativado (true). Esta entrada é necessária apenas quando o `switch` é true. | MATCH_TYPE | Não | |
+| `switch` | Uma condição booleana que determina qual entrada é passada para a saída. Quando habilitado (true), a entrada `on_true` é selecionada. Quando desabilitado (false), a entrada `on_false` é selecionada. | BOOLEAN | Sim |  |
+| `on_false` | Os dados a serem passados para a saída quando `switch` estiver desabilitado (false). Esta entrada é solicitada apenas quando `switch` for false. | MATCH_TYPE | Não |  |
+| `on_true` | Os dados a serem passados para a saída quando `switch` estiver habilitado (true). Esta entrada é solicitada apenas quando `switch` for true. | MATCH_TYPE | Não |  |
 
-**Nota sobre Requisitos de Entrada:** As entradas `on_false` e `on_true` são necessárias condicionalmente. O nó solicita a entrada `on_true` apenas quando o `switch` é true e a entrada `on_false` apenas quando o `switch` é false. Ambas as entradas devem ser do mesmo tipo de dados e devem coincidir com o tipo de dados da saída. Se a entrada selecionada não estiver conectada, o nó não gera valor de saída.
+**Nota sobre os requisitos das entradas:** As entradas `on_false` e `on_true` são solicitadas condicionalmente. O nó solicita `on_true` apenas quando `switch` for true, e solicita `on_false` apenas quando `switch` for false. Ambas as entradas devem ser do mesmo tipo de dados, e esse tipo deve corresponder ao tipo de dados da saída. Se a entrada selecionada não estiver conectada, o nó não gera nenhum valor.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dados |
+| Nome da saída | Descrição | Tipo de dados |
 | --- | --- | --- |
-| `saída` | Os dados selecionados. Este é o valor da entrada `on_true` quando o `switch` é true ou o valor da entrada `on_false` quando o `switch` é false. | MATCH_TYPE |
+| `output` | Os dados selecionados: o valor de `on_true` quando `switch` for true, ou o valor de `on_false` quando `switch` for false. | MATCH_TYPE |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfySwitchNode/pt-BR.md)
 

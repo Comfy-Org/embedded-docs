@@ -1,21 +1,26 @@
 # Recraft Substituir Fundo
 
+Substitua o fundo da imagem com base no prompt fornecido. Este nó usa a API Recraft para gerar novos fundos para suas imagens de acordo com sua descrição de texto, permitindo transformar completamente o fundo enquanto mantém o assunto principal intacto. Cada imagem no lote de entrada é processada separadamente, e os resultados são combinados em um único lote de saída.
+
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `imagem` | A imagem de entrada a ser processada | IMAGE | Sim | - |
+| `image` | A imagem de entrada a ser processada | IMAGE | Sim | - |
 | `prompt` | Prompt para a geração da imagem (padrão: vazio) | STRING | Sim | - |
-| `n` | O número de imagens a gerar (padrão: 1) | INT | Sim | 1-6 |
-| `semente` | Seed para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da seed (padrão: 0) | INT | Sim | 0-18446744073709551615 |
+| `n` | O número de imagens a serem geradas (padrão: 1) | INT | Sim | 1-6 |
+| `seed` | Semente para determinar se o nó deve ser reexecutado; os resultados reais são não determinísticos independentemente da semente (padrão: 0) | INT | Sim | 0-18446744073709551615 |
 | `recraft_style` | Seleção opcional de estilo para o fundo gerado. Se não for fornecida, o padrão é o estilo "realistic_image" | STYLEV3 | Não | - |
-| `prompt_negativo` | Uma descrição textual opcional de elementos indesejados em uma imagem (padrão: vazio) | STRING | Não | - |
+| `negative_prompt` | Uma descrição de texto opcional de elementos indesejados em uma imagem (padrão: vazio) | STRING | Não | - |
 
-**Nota:** O parâmetro `seed` controla quando o nó é executado novamente, mas não garante resultados determinísticos devido à natureza da API externa.
+**Notas:**
+- O parâmetro `seed` controla quando o nó é reexecutado, mas não garante resultados determinísticos devido à natureza da API externa.
+- Quando `recraft_style` não está conectado ou é deixado vazio, o nó recorre ao estilo `realistic_image`.
+- Quando `negative_prompt` é deixado vazio, ele não é enviado com a solicitação.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
+| Nome da Saída | Descrição | Tipo de Dados |
 |-------------|-------------|-----------|
 | `IMAGE` | A(s) imagem(ns) gerada(s) com o fundo substituído. Para cada imagem de entrada, o número de resultados gerados é determinado por `n`. | IMAGE |
 

@@ -1,28 +1,28 @@
 # Recraft V4 Texto a Vector
 
-El nodo Recraft V4 Text to Vector genera ilustraciones de gráficos vectoriales escalables (SVG) a partir de una descripción de texto mediante los modelos Recraft V4 y V4.1. Se conecta a la API de Recraft para generar uno o más archivos SVG según la indicación proporcionada, y puede aplicar un estilo vectorial existente o crear uno nuevo a partir de imágenes de referencia; cuando se utilizan imágenes de referencia, el estilo creado se devuelve como un `style_id` para su reutilización.
+El nodo Recraft V4 Text to Vector genera ilustraciones de gráficos vectoriales escalables (SVG) a partir de una descripción de texto usando los modelos Recraft V4 y V4.1. Se conecta a la API de Recraft para generar uno o más archivos SVG según tu prompt, y puede aplicar un estilo vectorial existente o crear uno nuevo a partir de imágenes de referencia; cuando se usan imágenes de referencia, el estilo creado se devuelve como `style_id` para reutilizarlo.
 
 ## Entradas
 
 ### Entradas comunes
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
-| `modelo` | El modelo que se usará para la generación. Los modelos recraftv4_styles están diseñados para una generación coherente con el estilo y siempre requieren un style_id o style_references. Al seleccionar un modelo, cambian las opciones disponibles de `size`. | DYNAMIC_COMBO | Sí | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
-| `prompt` | Indicación para la generación de la imagen. Máximo 10 000 caracteres. | STRING | Sí | N/A |
-| `prompt_negativo` | Esta entrada se ignora: los modelos Recraft V4 y V4.1 no admiten prompt negativo. | STRING | Sí | N/A |
-| `n` | El número de imágenes a generar (por defecto: 1). | INT | Sí | 1 a 6 |
-| `semilla` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla (por defecto: 0). | INT | Sí | 0 a 18446744073709551615 |
+|-----------|-------------|---------------|-------------|-------|
+| `model` | El modelo que se usará para la generación. Los modelos recraftv4_styles están diseñados para una generación coherente con el estilo y siempre requieren un style_id o style_references. Seleccionar un modelo cambia las opciones disponibles de `size`. | DYNAMIC_COMBO | Sí | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
+| `prompt` | Prompt para la generación de la imagen. Máximo 10.000 caracteres. | STRING | Sí | N/A |
+| `negative_prompt` | Esta entrada se ignora: los modelos Recraft V4 y V4.1 no admiten prompt negativo. | STRING | Sí | N/A |
+| `n` | El número de imágenes a generar (predeterminado: 1). | INT | Sí | 1 a 6 |
+| `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla (predeterminado: 0). | INT | Sí | 0 a 18446744073709551615 |
 | `recraft_controls` | Controles adicionales opcionales sobre la generación mediante el nodo Recraft Controls. | CUSTOM | No | N/A |
-| `style_id` | UUID de un estilo vectorial de Recraft V4 que se aplicará, p. ej., del nodo Recraft V4 Create Style o de la salida style_id de una ejecución anterior. No se puede combinar con style_references. | STRING | No | N/A |
-| `style_match` | El grado de fidelidad al estilo: "precise" lo reproduce en detalle, "flexible" coincide con el aspecto general. Solo se usa cuando se proporciona un estilo (por defecto: "precise"). | COMBO | No | `"precise"`<br>`"flexible"` |
+| `style_id` | UUID de un estilo vectorial de Recraft V4 que se aplicará, por ejemplo, desde el nodo Recraft V4 Create Style o la salida `style_id` de una ejecución anterior. No se puede combinar con style_references. | STRING | No | N/A |
+| `style_match` | Qué tan fielmente seguir el estilo: precise lo reproduce en detalle, flexible coincide con el aspecto general. Solo se usa cuando se proporciona un estilo (predeterminado: "precise"). | COMBO | No | `"precise"`<br>`"flexible"` |
 
 ### Entradas de recraftv4_1_vector, recraftv4_1_utility_vector, recraftv4 y recraftv4_styles_vector
 
 Estos modelos comparten las mismas opciones de `size`.
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
+|-----------|-------------|---------------|-------------|-------|
 | `size` | El tamaño de la imagen generada. El valor predeterminado es `"1024x1024"`. | COMBO | Sí | `"1024x1024"`<br>`"1152x896"`<br>`"896x1152"`<br>`"1216x832"`<br>`"832x1216"`<br>`"1344x768"`<br>`"768x1344"`<br>`"1536x640"`<br>`"640x1536"` |
 
 ### Entradas de recraftv4_1_pro_vector, recraftv4_1_utility_pro_vector, recraftv4_pro y recraftv4_styles_pro_vector
@@ -30,21 +30,21 @@ Estos modelos comparten las mismas opciones de `size`.
 Estos modelos comparten las mismas opciones de `size`.
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
+|-----------|-------------|---------------|-------------|-------|
 | `size` | El tamaño de la imagen generada. El valor predeterminado es `"2048x2048"`. | COMBO | Sí | `"2048x2048"`<br>`"2304x1792"`<br>`"1792x2304"`<br>`"2432x1664"`<br>`"1664x2432"`<br>`"2688x1536"`<br>`"1536x2688"`<br>`"3072x1280"`<br>`"1280x3072"` |
 
 ### Entradas de referencia
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
-| `style_references` | Imágenes de referencia para crear un estilo vectorial sobre la marcha, facturadas además de la generación. El estilo creado se devuelve como style_id para reutilizarlo. No se puede combinar con style_id. | IMAGE | No | Entrada ampliable: conecte de 1 a N imágenes de referencia (hasta el máximo del nodo) |
+|-----------|-------------|---------------|-------------|-------|
+| `style_references` | Imágenes de referencia para crear un estilo vectorial sobre la marcha, con costo adicional sobre la generación. El estilo creado se devuelve como style_id para reutilizarlo. No se puede combinar con style_id. | IMAGE | No | Ranura ampliable: conecte 1..N imágenes de referencia (hasta el máximo del nodo) |
 
-**Nota:** El parámetro `size` es una entrada dinámica cuyas opciones disponibles cambian según el `model` seleccionado. El valor de `seed` no garantiza resultados reproducibles desde la API externa. Los modelos `recraftv4_styles_vector` y `recraftv4_styles_pro_vector` siempre requieren un estilo: proporcione un `style_id` o conecte al menos una imagen de `style_references`. `style_id` y `style_references` no se pueden usar juntos; si se proporcionan ambos, se produce un error, y `style_id` debe ser un UUID válido. El número de imágenes de referencia está limitado y su tamaño total codificado no debe superar los 10 MB.
+**Nota:** El parámetro `size` es una entrada dinámica cuyas opciones disponibles cambian según el `model` seleccionado. El valor de `seed` no garantiza resultados reproducibles desde la API externa. Los modelos `recraftv4_styles_vector` y `recraftv4_styles_pro_vector` siempre requieren un estilo: proporcione un `style_id` o conecte al menos una imagen en `style_references`. `style_id` y `style_references` no se pueden usar juntos; proporcionar ambos genera un error, y `style_id` debe ser un UUID válido. Las imágenes de referencia de estilo están limitadas en número, y su tamaño codificado total no debe superar los 10 MB.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
-|-------------|-------------|-----------|
+|------------------|-------------|---------------|
 | `output` | La(s) imagen(es) de gráficos vectoriales escalables (SVG) generada(s). | SVG |
 | `style_id` | El UUID del estilo devuelto por la API de Recraft. Cuando se proporcionan imágenes de referencia, el estilo creado se devuelve aquí para reutilizarlo; de lo contrario, una cadena vacía. | STRING |
 

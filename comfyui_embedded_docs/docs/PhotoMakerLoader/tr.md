@@ -1,18 +1,18 @@
 # PhotoMakerYükleyici
 
-PhotoMakerLoader düğümü, mevcut model dosyalarından bir PhotoMaker modeli yükler. Belirtilen model dosyasını okur ve PhotoMaker ID kodlayıcıyı kimlik tabanlı görüntü oluşturma görevlerinde kullanılmak üzere hazırlar. Bu düğüm deneysel olarak işaretlenmiştir ve test amaçlıdır.
+PhotoMakerLoader düğümü, mevcut model dosyaları arasından bir PhotoMaker modeli yükler. Seçilen dosyayı okur, ID kodlayıcı ağırlıklarını yükler ve kimlik tabanlı görüntü üretme görevlerinde kullanılmak üzere PhotoMaker ID kodlayıcıyı hazırlar. Bu düğüm deneysel olarak işaretlenmiştir ve test amacıyla kullanılmak üzere tasarlanmıştır.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `photomaker_model_adı` | Yüklenecek PhotoMaker model dosyasının adı. Kullanılabilir seçenekler, `photomaker` klasöründe bulunan model dosyalarına göre belirlenir. | COMBO | Evet | Birden fazla seçenek mevcuttur (`photomaker` klasöründen dinamik olarak doldurulur) |
+| `photomaker_model_name` | Yüklenecek PhotoMaker model dosyasının adı. Kullanılabilir seçenekler `photomaker` klasöründe bulunan model dosyalarına göre belirlenir. | COMBO | Evet | Birden çok seçenek mevcut (`photomaker` klasöründen dinamik olarak doldurulur) |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `photomaker_model` | Kimlik kodlama işlemlerinde kullanıma hazır, ID kodlayıcıyı içeren yüklenmiş PhotoMaker modeli. | PHOTOMAKER |
+| `photomaker_model` | ID kodlayıcıyı içeren yüklenmiş PhotoMaker modeli, kimlik kodlama işlemlerinde kullanıma hazır. | PHOTOMAKER |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PhotoMakerLoader/tr.md)
 

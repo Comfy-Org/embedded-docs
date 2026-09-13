@@ -1,22 +1,22 @@
 # ImageRGBToYUV
 
-El nodo ImageRGBToYUV convierte una imagen RGB al espacio de color YUV. Divide la imagen en tres componentes — Y (luminancia o brillo), U (crominancia de diferencia de azul) y V (crominancia de diferencia de rojo) — y devuelve cada componente como una imagen separada del mismo tamaño que la imagen de entrada.
+El nodo ImageRGBToYUV convierte una imagen RGB en componentes de color de estilo YUV mediante una conversión de color de RGB a YCbCr. Divide el resultado en tres imágenes separadas — Y (luminancia o brillo), U (croma de diferencia de azul) y V (croma de diferencia de rojo) — y devuelve cada componente con el mismo ancho y alto que la entrada.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `imagen` | La imagen RGB de entrada que se convertirá a YUV. Si la imagen contiene un canal alfa, solo se utilizan los primeros tres canales (RGB). | IMAGE | Sí | - |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `image` | La imagen RGB de entrada que se va a convertir en los componentes Y, U y V. Si la imagen contiene un canal alfa, solo se utilizan los tres primeros canales (RGB). | IMAGE | Sí | - |
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
-|------------------|-------------|---------------|
-| `Y` | El componente de luminancia (brillo) del espacio de color YUV. | IMAGE |
-| `U` | El componente de crominancia de diferencia de azul del espacio de color YUV. | IMAGE |
-| `V` | El componente de crominancia de diferencia de rojo del espacio de color YUV. | IMAGE |
+| Nombre de salida | Descripción | Tipo de dato |
+|-------------|-------------|-----------|
+| `Y` | El componente de luminancia (brillo) del espacio de color YUV, devuelto como una imagen de tres canales | IMAGE |
+| `U` | El componente de croma de diferencia de azul del espacio de color YUV, devuelto como una imagen de tres canales | IMAGE |
+| `V` | El componente de croma de diferencia de rojo del espacio de color YUV, devuelto como una imagen de tres canales | IMAGE |
 
-Cada salida tiene el mismo ancho, alto y número de canales que la imagen de entrada. El componente Y, U o V correspondiente se repite en todos los canales para que cada salida se devuelva como una imagen estándar.
+Cada salida tiene el mismo ancho y alto que la imagen de entrada. El componente Y, U o V correspondiente se repite en los tres canales para que cada salida se devuelva como una imagen estándar de tres canales.
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageRGBToYUV/es.md)
 

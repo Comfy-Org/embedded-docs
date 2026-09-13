@@ -1,25 +1,25 @@
 # VAE Kodlama (Döşemeli)
 
-VAEEncodeTiled, görüntüleri daha küçük parçalara bölerek ve bir Değişken Otomatik Kodlayıcı (VAE) kullanarak kodlayarak işler. Bu parçalı yaklaşım, aksi takdirde bellek sınırlamalarını aşabilecek büyük görüntülerin işlenmesine olanak tanır. Düğüm, hem görüntü hem de video VAE'lerini destekler ve uzamsal ve zamansal boyutlar için ayrı parçalama kontrolleri sunar.
+VAEEncodeTiled, görüntüleri daha küçük karolara bölerek ve bunları bir Varyasyonel Otomatik Kodlayıcı kullanarak kodlayarak işler. Bu karolama yaklaşımı, aksi takdirde bellek sınırlarını aşabilecek büyük görüntülerin işlenmesine olanak tanır. Düğüm, hem görüntü hem de video VAE'lerini destekler; uzamsal ve zamansal boyutlar için ayrı karolama denetimleri sunar.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `pikseller` | Kodlanacak giriş görüntüsü verisi | IMAGE | Evet | - |
-| `vae` | Kodlama için kullanılan Değişken Otomatik Kodlayıcı modeli | VAE | Evet | - |
-| `döşeme_boyutu` | Uzamsal işleme için her parçanın boyutu (varsayılan: 512) | INT | Evet | 64-4096 (adım: 64) |
-| `örtüşme` | Bitişik parçalar arasındaki örtüşme miktarı (varsayılan: 64) | INT | Evet | 0-4096 (adım: 32) |
-| `zamansal_boyut` | Yalnızca video VAE'leri için kullanılır: Aynı anda kodlanacak kare sayısı (varsayılan: 64) | INT | Evet | 8-4096 (adım: 4) |
-| `zamansal_örtüşme` | Yalnızca video VAE'leri için kullanılır: Örtüşecek kare sayısı (varsayılan: 8) | INT | Evet | 4-4096 (adım: 4) |
+| `pixels` | Kodlanacak girdi görüntü verisi. | IMAGE | Evet | - |
+| `vae` | Kodlama için kullanılan Varyasyonel Otomatik Kodlayıcı modeli. | VAE | Evet | - |
+| `tile_size` | Uzamsal işleme için her bir karonun boyutu (varsayılan: 512). Gelişmiş ayar. | INT | Evet | 64-4096 (adım: 64) |
+| `overlap` | Bitişik karolar arasındaki örtüşme miktarı (varsayılan: 64). Gelişmiş ayar. | INT | Evet | 0-4096 (adım: 32) |
+| `temporal_size` | Yalnızca video VAE'leri için kullanılır: Bir seferde kodlanacak kare miktarı (varsayılan: 64). Gelişmiş ayar. | INT | Evet | 8-4096 (adım: 4) |
+| `temporal_overlap` | Yalnızca video VAE'leri için kullanılır: Örtüşecek kare miktarı (varsayılan: 8). Gelişmiş ayar. | INT | Evet | 4-4096 (adım: 4) |
 
-**Not:** `temporal_size` ve `temporal_overlap` parametreleri yalnızca video VAE'leri kullanıldığında geçerlidir ve standart görüntü VAE'leri üzerinde hiçbir etkisi yoktur.
+**Not:** `temporal_size` ve `temporal_overlap` parametreleri yalnızca video VAE'leri kullanılırken geçerlidir ve standart görüntü VAE'leri üzerinde hiçbir etkisi yoktur.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `LATENT` | Giriş görüntüsünün kodlanmış latent temsili | LATENT |
+| `LATENT` | Girdi görüntüsünün kodlanmış gizli temsili. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEEncodeTiled/tr.md)
 

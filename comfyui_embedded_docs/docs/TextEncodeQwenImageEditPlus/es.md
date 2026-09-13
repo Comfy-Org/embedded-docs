@@ -1,19 +1,19 @@
 # TextEncodeQwenImageEditPlus
 
-El nodo `TextEncodeQwenImageEditPlus` procesa prompts de texto e imágenes opcionales para generar datos de condicionamiento para tareas de generación o edición de imágenes. Utiliza una plantilla especializada para analizar las imágenes de entrada y comprender cómo las instrucciones de texto deben modificarlas, luego codifica esta información para usarla en pasos posteriores de generación. El nodo puede manejar hasta tres imágenes de entrada y generar opcionalmente latentes de referencia cuando se proporciona un VAE.
+El nodo TextEncodeQwenImageEditPlus procesa un prompt de texto y hasta tres imágenes opcionales para producir datos de condicionamiento para tareas de generación o edición de imágenes. Utiliza una plantilla especializada que primero solicita al modelo que describa las características clave de las imágenes de entrada y luego explique cómo la instrucción de texto del usuario debería modificarlas, de modo que el resultado codificado comprenda tanto las imágenes como la modificación solicitada. Cuando se proporciona una VAE, el nodo también crea latentes de referencia a partir de las imágenes de entrada.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `clip` | El modelo CLIP utilizado para la tokenización y codificación | CLIP | Sí | - |
-| `prompt` | Instrucción de texto que describe la modificación deseada de la imagen (admite entrada multilínea y prompts dinámicos) | STRING | Sí | - |
+| `prompt` | Instrucción de texto que describe la modificación de imagen deseada (admite entrada multilínea y prompts dinámicos) | STRING | Sí | - |
 | `vae` | Modelo VAE opcional para generar latentes de referencia a partir de las imágenes de entrada | VAE | No | - |
-| `imagen1` | Primera imagen de entrada opcional para análisis y modificación | IMAGE | No | - |
-| `imagen2` | Segunda imagen de entrada opcional para análisis y modificación | IMAGE | No | - |
-| `imagen3` | Tercera imagen de entrada opcional para análisis y modificación | IMAGE | No | - |
+| `image1` | Primera imagen de entrada opcional para análisis y modificación | IMAGE | No | - |
+| `image2` | Segunda imagen de entrada opcional para análisis y modificación | IMAGE | No | - |
+| `image3` | Tercera imagen de entrada opcional para análisis y modificación | IMAGE | No | - |
 
-**Nota:** Cuando se proporciona un VAE, el nodo genera latentes de referencia a partir de todas las imágenes de entrada proporcionadas. Se pueden procesar hasta tres imágenes a la vez. Las imágenes se escalan a un área objetivo de 384x384 píxeles (conservando la relación de aspecto) para el procesamiento de visión y lenguaje, y a dimensiones divisibles por 8 (con un área objetivo de 1024x1024 píxeles) para la codificación VAE.
+**Nota:** Cuando se proporciona una VAE, el nodo genera latentes de referencia a partir de todas las imágenes de entrada proporcionadas. Se pueden procesar hasta tres imágenes a la vez. Las imágenes se escalan a un área objetivo de 384x384 píxeles (relación de aspecto preservada) para el procesamiento de visión-lenguaje, y a dimensiones divisibles por 8 (con un área objetivo de 1024x1024 píxeles) para la codificación VAE.
 
 ## Salidas
 

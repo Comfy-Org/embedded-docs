@@ -1,18 +1,18 @@
 # AraSigmalarıGenişlet
 
-ExtendIntermediateSigmas düğümü, mevcut bir sigma değerleri dizisini alır ve aralarına ek ara sigma değerleri yerleştirir. Kaç ek adım ekleneceğini, enterpolasyonda kullanılacak aralıklandırma yöntemini ve uzatmanın sigma dizisi içinde nerede gerçekleşeceğini kontrol etmek için isteğe bağlı başlangıç ve bitiş sigma sınırlarını belirlemenize olanak tanır.
+ExtendIntermediateSigmas düğümü, mevcut bir sigma değerleri dizisini alır ve bunların arasına ek ara sigma değerleri ekler. Kaç ek adım ekleneceğini, interpolasyon için aralıklandırma yöntemini ve sigma dizisi içinde genişletmenin nerede gerçekleşeceğini kontrol eden isteğe bağlı başlangıç ve bitiş sigma sınırlarını belirtmenize olanak tanır.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `sigmalar` | Ara değerlerle genişletilecek giriş sigma dizisi | SIGMAS | Evet | - |
-| `adımlar` | Mevcut sigma çiftlerinin her biri arasına eklenen ara sigma değerlerinin sayısını kontrol eder. İki sigma arasındaki aralık `steps` parçaya bölünür ve her çift için `steps - 1` yeni değer üretilir (varsayılan: 2, her çift için bir değer ekler) | INT | Evet | 1 ila 100 |
-| `sigma_başlangıcı` | Uzatma için üst sigma sınırı - yalnızca bu değerin altındaki sigmaları genişletir (varsayılan: -1.0, sonsuzluk anlamına gelir) | FLOAT | Evet | -1.0 ila 20000.0 |
-| `sigma_bitişi` | Uzatma için alt sigma sınırı - yalnızca bu değerin üzerindeki sigmaları genişletir (varsayılan: 12.0) | FLOAT | Evet | 0.0 ila 20000.0 |
-| `aralık` | Ara sigma değerlerini aralıklandırmak için enterpolasyon yöntemi (varsayılan: "linear") | COMBO | Evet | `"linear"`<br>`"cosine"`<br>`"sine"` |
+| `sigmas` | Ara değerlerle genişletilecek giriş sigma dizisi | SIGMAS | Evet | - |
+| `steps` | Mevcut sigmaların her bir çifti arasına eklenecek ara sigma değerlerinin sayısını kontrol eder. İki sigma arasındaki aralık `steps` parçaya bölünür ve her çift için `steps - 1` yeni değer üretilir (varsayılan: 2, bu da her çift için bir değer ekler) | INT | Evet | 1 - 100 |
+| `start_at_sigma` | Genişletme için üst sigma sınırı. Yalnızca başlangıç sigması bu değerden küçük veya bu değere eşit olan sigma aralıkları genişletilir. -1.0 olarak ayarlandığında sonsuz olarak kabul edilir, yani üst sınır uygulanmaz. Varsayılan: -1.0 | FLOAT | Evet | -1.0 - 20000.0 |
+| `end_at_sigma` | Genişletme için alt sigma sınırı. Yalnızca başlangıç sigması bu değerden büyük veya bu değere eşit olan sigma aralıkları genişletilir. Varsayılan: 12.0 | FLOAT | Evet | 0.0 - 20000.0 |
+| `spacing` | Ara sigma değerlerinin aralıklandırılması için interpolasyon yöntemi (varsayılan: "linear") | COMBO | Evet | `"linear"`<br>`"cosine"`<br>`"sine"` |
 
-**Not:** Düğüm, ara sigmaları yalnızca mevcut sigma değeri `start_at_sigma` değerinden küçük veya eşit ve `end_at_sigma` değerinden büyük veya eşit olan sigma çiftleri arasına ekler. `start_at_sigma` -1.0 olarak ayarlandığında sonsuzluk olarak kabul edilir; bu durumda yalnızca `end_at_sigma` alt sınırı uygulanır.
+**Not:** Düğüm, yalnızca başlangıç sigması `start_at_sigma` değerinden küçük veya bu değere eşit ve `end_at_sigma` değerinden büyük veya bu değere eşit olan sigma aralıkları için ara sigmalar ekler. `start_at_sigma` -1.0 olarak ayarlandığında sonsuz olarak kabul edilir, bu nedenle yalnızca `end_at_sigma` alt sınırı geçerli olur.
 
 ## Çıktılar
 

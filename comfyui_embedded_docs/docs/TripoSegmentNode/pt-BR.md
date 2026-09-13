@@ -1,19 +1,19 @@
 # Tripo: Segmentar modelo
 
-Este nó divide um modelo 3D em partes individuais. Ele envia o modelo para o serviço de segmentação da Tripo, aguarda a conclusão da tarefa e retorna o modelo segmentado no formato GLB, juntamente com uma lista de nomes de partes separados por vírgula. Esses nomes de partes alimentam etapas posteriores, como Tripo: Complete Mesh Parts, Tripo: Retopology e Tripo: Convert model.
+Este nó divide um modelo 3D em partes individuais. Ele envia o modelo para o serviço de segmentação Tripo, aguarda a conclusão da tarefa e retorna o modelo segmentado no formato GLB, juntamente com uma lista de nomes de partes separados por vírgula. Esses nomes de partes alimentam etapas posteriores, como Tripo: Complete Mesh Parts, Tripo: Retopology e Tripo: Convert model.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+| Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `model_task_id` | O ID da tarefa do modelo 3D a ser segmentado em partes. | MODEL_TASK_ID | Sim | N/A |
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dados |
+| Nome da saída | Descrição | Tipo de dados |
 |-------------|-------------|-----------|
 | `model_file` | Nome do arquivo de saída do modelo GLB segmentado, no formato `<task_id>.glb`. Mantido apenas para compatibilidade com versões anteriores. | STRING |
-| `segment task_id` | O ID da tarefa do processo de segmentação que produziu o resultado. | SEGMENT_TASK_ID |
+| `segment task_id` | O ID da tarefa do trabalho de segmentação que produziu o resultado. | SEGMENT_TASK_ID |
 | `GLB` | O modelo 3D segmentado, como um arquivo GLB. | GLB |
 | `part_names` | Nomes das partes separados por vírgula. | STRING |
 

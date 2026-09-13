@@ -1,23 +1,22 @@
 # HiDream-O1 Yama Dikiş Yumuşatma
 
-Bu düğüm, HiDream-O1 modeli tarafından üretilen görüntülerde görünür dikiş izlerini azaltır. Bunu, örnekleme sürecinin sonraki bölümünde modelin çıktısını birden çok kaydırılmış doku parçası ızgarası konumunda ortalamayı alarak yapar. Modeli, görüntü hizalamasında küçük farklarla birkaç kez çalıştırır ve sonuçları birbirine karıştırarak doku parçası sınırlarında oluşabilecek ızgara benzeri yapaylıkların giderilmesine yardımcı olur.
+Bu düğüm, örnekleme sürecinin sonraki kısmında modelin çıktısını birden çok kaydırılmış yama ızgarası konumu boyunca ortalayarak HiDream-O1 modeli tarafından üretilen görüntülerdeki görünür dikişleri azaltır. Modeli hafifçe farklı görüntü hizalamalarıyla birkaç kez çalıştırır ve sonuçları birbiriyle harmanlar; bu, yama sınırlarında ortaya çıkabilen ızgara benzeri yapaylıkların giderilmesine yardımcı olur.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Dikiş yumuşatma uygulanacak HiDream-O1 modeli. | MODEL | Evet | - |
-| `başlangıç_yüzdesi` | Yumuşatma etkisinin devreye girdiği örnekleme ilerlemesi (0=başlangıç, 1=bitiş) (varsayılan: 0.8). | FLOAT | Evet | 0.0 ile 1.0 (step: 0.01) |
-| `bitiş_yüzdesi` | Yumuşatma etkisinin kapandığı örnekleme ilerlemesi (varsayılan: 1.0). | FLOAT | Evet | 0.0 ile 1.0 (step: 0.01) |
-| `desen` | Kaydırılmış ızgara konumlarının düzeni. `single_shift`: doğal doku parçası ızgarasında bir geçiş ve diğerleri ofsetli. `symmetric`: tüm geçişler ızgaranın dışındadır; kaydırmalar orijin çevresinde bölünmüştür (varsayılan: `"single_shift"`). | COMBO | Evet | `"single_shift"`<br>`"symmetric"` |
-| `geçişler` | Kapılı adım başına düşen geçiş sayısı (model çalıştırma sayısı). `2` ve `4` sabit sayılardır. `ramp_2_4` ve `ramp_2_4_8`, örnekleme sona yaklaştıkça geçiş sayısını artırarak dikiş izlerinin en görünür olduğu yerlerde daha fazla yumuşatma sağlar (varsayılan: `"2"`). | COMBO | Evet | `"2"`<br>`"4"`<br>`"ramp_2_4"`<br>`"ramp_2_4_8"` |
-| `karıştırma` | Her geçişten elde edilen sonuçların birleştirilmesinde kullanılan yöntem. `average`: tüm geçişlerin eşit ağırlıklı ortalaması. `window`: her geçişin merkezine daha fazla ağırlık veren bir Hann penceresi kullanarak sınır yapaylıklarını azaltır. `median`: piksel başına medyanı alır; bu, sarmadan kaynaklanan aykırı geçişleri eleyebilir (varsayılan: `"average"`). | COMBO | Evet | `"average"`<br>`"window"`<br>`"median"` |
-| `güç` | Orijinal model çıktısı (0.0) ile tamamen yumuşatılmış sonuç (1.0) arasındaki enterpolasyonu kontrol eder (varsayılan: 1.0). | FLOAT | Evet | 0.0 ile 1.0 (step: 0.01) |
+| `model` | Dikiş yumuşatmanın uygulanacağı model. | MODEL | Evet | - |
+| `start_percent` | Harmanlamanın AÇILDIĞI örnekleme ilerlemesi (0=başlangıç, 1=bitiş). varsayılan: 0.8 | FLOAT | Evet | 0.0 ile 1.0 (step: 0.01) |
+| `end_percent` | Harmanlamanın KAPANDIĞI örnekleme ilerlemesi. varsayılan: 1.0 | FLOAT | Evet | 0.0 ile 1.0 (step: 0.01) |
+| `pattern` | Kaydırma düzeni. `single_shift`: doğal yama ızgarasında bir geçiş + diğerleri kaydırılmış. `symmetric`: tüm geçişler ızgara dışında, kaydırmalar orijin etrafında bölünür. varsayılan: "single_shift" | COMBO | Evet | `"single_shift"`<br>`"symmetric"` |
+| `passes` | Etkin adım başına geçiş sayısı. `2`/`4` = sabit. `ramp_*`: örnekleme sona yaklaştıkça geçiş sayısı artar (dikişlerin en görünür olduğu yerlerde daha fazla yumuşatma). varsayılan: "2" | COMBO | Evet | `"2"`<br>`"4"`<br>`"ramp_2_4"`<br>`"ramp_2_4_8"` |
+| `blend` | `average`: eşit ağırlıklı ortalama. `window`: her geçişi kendi yama sınırlarından uzakta tercih eden Hann pencereli ağırlıklandırma. `median`: piksel başına medyan, sarmalama kaynaklı aykırı geçişleri reddeder. varsayılan: "average" | COMBO | Evet | `"average"`<br>`"window"`<br>`"median"` |
+| `strength` | Doğal ızgara tahmini (0) ile ortalaması alınmış sonuç (1) arasında enterpolasyon. varsayılan: 1.0 | FLOAT | Evet | 0.0 ile 1.0 (step: 0.01) |
 
 **Parametre Kısıtlamalarına İlişkin Not:**
-
-- `strength` 0.0 veya daha küçükse ya da `end_percent`, `start_percent` değerine eşit veya daha küçükse yumuşatma etkisi uygulanmaz. Bu durumlarda düğüm modeli değiştirilmeden döndürür.
-- `passes` parametresinin rampa seçenekleri (`ramp_2_4`, `ramp_2_4_8`) yalnızca `start_percent` ve `end_percent` bir aralık tanımladığında anlamlıdır; çünkü bu aralıkta örnekleme ilerledikçe geçiş sayısı artar.
+- `strength` 0.0 veya daha azsa ya da `end_percent`, `start_percent` değerinden küçük veya ona eşitse yumuşatma etkisi uygulanmaz. Bu durumlarda düğüm, modeli değiştirilmemiş olarak döndürür.
+- `passes` parametresinin rampa seçenekleri (`ramp_2_4`, `ramp_2_4_8`) yalnızca `end_percent`, `start_percent` değerinden büyük olduğunda anlamlıdır; çünkü örnekleme bu aralıkta ilerledikçe geçiş sayısı artar.
 
 ## Çıktılar
 

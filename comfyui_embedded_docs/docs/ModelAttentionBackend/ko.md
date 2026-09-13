@@ -1,15 +1,15 @@
 # 모델 어텐션 백엔드
 
-이 노드는 모델이 어텐션 계산에 사용할 밀집 어텐션 백엔드를 선택합니다. 주어진 모델을 복제하고, 선택한 백엔드를 적용한 다음, 패치된 복제본을 반환합니다. 블록 희소 어텐션(Block Sparse Attention)과 함께 사용하는 경우, 이 백엔드는 희소 어텐션이 비활성화되거나 지원되지 않을 때 사용됩니다. 선택한 백엔드를 사용할 수 없으면, 이 노드는 자동으로 PyTorch 어텐션으로 대체합니다.
+이 노드는 모델의 밀집 어텐션 구현을 선택하고, 모델을 복제한 뒤, 선택한 백엔드를 적용하여 패치된 복제본을 반환합니다. Block Sparse Attention과 함께 사용할 때, 이 백엔드는 희소 어텐션이 비활성 상태이거나 지원되지 않을 때마다 사용됩니다. 선택한 백엔드를 사용할 수 없으면 노드는 자동으로 PyTorch 어텐션으로 대체됩니다.
 
 ## 입력
 
-| 파라미터 | 설명 | 데이터 타입 | 필수 | 범위 |
+| 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | 패치할 모델입니다. | MODEL | 예 |  |
-| `attention` | 적용할 밀집 어텐션 백엔드입니다(기본값: "pytorch attention"). Comfy Kitchen 어텐션은 양자화된 INT8 어텐션을 사용하며, Nvidia 및 AMD GPU에서만 사용할 수 있습니다. 선택한 백엔드를 사용할 수 없으면 PyTorch 어텐션이 대체 수단으로 사용됩니다. | COMBO | 예 | "pytorch attention"<br>"comfy kitchen attention" |
+| `attention` | 적용할 밀집 어텐션 백엔드입니다. Comfy Kitchen 어텐션은 양자화된 INT8 어텐션을 사용하며 Nvidia 및 AMD GPU에서만 사용할 수 있습니다. 기본값: "pytorch attention". 선택한 백엔드를 사용할 수 없으면 PyTorch 어텐션이 대체로 사용됩니다. | COMBO | 예 | "pytorch attention"<br>"comfy kitchen attention" |
 
-참고: "comfy kitchen attention" 옵션은 현재 환경에서 Comfy Kitchen INT8 어텐션 모듈을 사용할 수 있는 경우에만 목록에 표시됩니다.
+참고: "comfy kitchen attention" 옵션은 현재 환경에서 Comfy Kitchen INT8 어텐션 모듈을 사용할 수 있는 경우에만 표시됩니다.
 
 ## 출력
 

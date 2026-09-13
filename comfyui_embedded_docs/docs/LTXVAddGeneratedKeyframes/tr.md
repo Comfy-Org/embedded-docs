@@ -1,36 +1,38 @@
-# LTXVAddGeneratedKeyframes
+# LTXV Oluşturulan Anahtar Kareleri Ekle
 
-## Genel Bakış
-
-LTXV Oluşturulan Anahtar Çerçeveleri düğümü, bir video latentine ayrıntılı anahtar çerçeveler ekler. Her anahtar çerçeve, tek bir piksel çerçevesini kapsayan bir latent çerçevesi temsil eder ve bu çerçeveler video ile denoize edilir, ancak çözülen çıktının bir parçası değildir. Konumlandırma, interval_frames parametresi tarafından belirlenir ve bu parametre, otomatik konumlandırma için piksel çerçeve adımını belirtir.
+LTXV Add Generated Keyframes düğümü, bir video latente detaylandırma ana kareleri ekler. Her ana kare, tek bir piksel kare üzerine yerleştirilmiş tokenlardan oluşan bir latent karesidir; video ile birlikte gürültüden arındırılır ve çözülen çıktının parçası değildir. Yerleştirme, her `interval_frames` pikselde bir yuvadır; I2V kareleri, mevcut kılavuzlar ve koşullandırma üzerinde zaten bulunan oluşturulmuş ana kareler atlanır; onları LTXV Separate Generated Keyframes ile geri çıkarın. Oluşturulmuş ana kareler için eğitilmiş bir checkpoint (`keyframes_abs_pos_embedding` taşıyan bir tanesi) gereklidir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Anahtar çerçevelerin eklenmesi için pozitif koşullama. | KOŞULLAMA | Evet | N/A |
-| `negative` | Anahtar çerçevelerin eklenmesi için negatif koşullama. | KOŞULLAMA | Evet | N/A |
+| `positive` | Ana karelerin bağlandığı pozitif koşullandırma. | CONDITIONING | Evet | N/A |
+| `negative` | Ana karelerin bağlandığı negatif koşullandırma. | CONDITIONING | Evet | N/A |
 | `vae` | Yalnızca latent ölçek faktörlerini okumak için kullanılır. | VAE | Evet | N/A |
-| `latent` | Anahtar çerçevelerle birlikte oluşturulacak temiz 5D video latenti. Concat AV Latent öncesinde ekleyin. | LATENT | Evet | N/A |
-| `interval_frames` | Otomatik konumlandırma için piksel çerçeve adımı. Standart 24, 24 fps'de bir saniyede bir anahtar çerçeve anlamına gelir. İşgal edilmiş pikseller atlanır. frame_indices ayarlandığında yoksayılmıştır. | INT | Hayır | 1-1024 |
-| `keyframes` | Yeni anahtar çerçeveleri başlatmak için seçmeli içerik. Daha erken bir Ayır (aynı alan boyutu) veya temiz bir video latentine bağlanarak mevcut her yeni yuva için en yakın çerçeveyi kopyalayın (örneğin, zamansal yükseltme sonrası). Bu çerçeveler hala denoize edilir, rehber olarak sabitlenmez. Anahtar çerçeveler latentindeki kaydedilen indeksler, frame_indices ayarlandığında yoksayılmaz. Yalnızca sigma 1 altında başlangıçta örnek alındığında etkili olur. | LATENT | Hayır | N/A |
-| `frame_indices` | Seçmeli piksel çerçeve indeksleri. Boş bırakarak mevcut canvas üzerinde interval_frames ile konumlandırma yapın. Ayarlandığında, bu liste konumlandırma (bağlantılı anahtar çerçeveler sırayla eşleştirilir). Son çerçeve izin verilir; çerçeve 0 izin verilmez (zaten bağımsız bir token). | STRING | Hayır | N/A |
+| `latent` | Yanında ana kareler oluşturmak için düz 5D video latent. Bunları Concat AV Latent'ten önce ekleyin. | LATENT | Evet | N/A |
+| `interval_frames` | Otomatik yerleştirme için piksel kare adımı. Varsayılan 24, 24 fps'de yaklaşık saniyede bir ana kare anlamına gelir. Kullanılan pikseller atlanır. `frame_indices` ayarlandığında yok sayılır. (varsayılan: 24) | INT | Hayır | 1-1024 |
+| `keyframes` | Yeni ana kareleri başlatmak için isteğe bağlı içerik. Daha önceki bir Separate düğümünden ana kareleri (aynı uzamsal boyutta) bağlayın veya her yeni yuvada en yakın kareyi kopyalamak için düz bir video latent bağlayın (örn. zamansal büyütmeden sonra). Bunlar yine de gürültüden arındırılır, kılavuz olarak sabitlenmez. `frame_indices` ayarlanmadıkça bir ana kareler latentindeki kayıtlı indeksler yok sayılır. Yalnızca örnekleme sigma 1'in altında başladığında etkisi olur. | LATENT | Hayır | N/A |
+| `frame_indices` | İsteğe bağlı piksel kare indeksleri. Geçerli tuval üzerinde `interval_frames` değerinden yerleştirmek için boş bırakın. Ayarlandığında, bu liste yerleşimdir (bağlı ana kareler sırayla eşleştirilir). Son kareye izin verilir; 0. kareye izin verilmez (zaten bağımsız bir tokendır). (varsayılan: boş dize) | STRING | Hayır | Virgülle ayrılmış tamsayılar; 1'den son piksel karesine kadar (0. kare hariç) |
+
+**Not:** `latent`, Concat AV Latent'ten önce oluşturulmuş ana kareler eklenmiş düz bir 5D video latent olmalıdır. `frame_indices` ayarlandığında, listelenen her piksel karesi benzersiz olmalı ve hâlihazırda bir görüntü ana karesi, bir kılavuz veya oluşturulmuş bir ana kare içermemelidir. `frame_indices` boşsa, kullanılan pikseller otomatik olarak atlanır; boş bir detaylandırma yuvası yoksa düğüm bir hata verir. Mevcut oluşturulmuş ana karelere ekleme yaparken, latent yine de kare başına aynı tokenlara sahip olmalı ve mevcut blok son latent karesinde bitmelidir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `positive` | Oluşturulan-anahtar çerçeve dikkatini eklediği pozitif koşullama. | KOŞULLAMA |
-| `negative` | Oluşturulan-anahtar çerçeve dikkatini eklediği negatif koşullama. | KOŞULLAMA |
-| `latent` | Oluşturulan anahtar çerçevelerle eklenen T'ye eklenen video latenti. | LATENT |
+| `positive` | Oluşturulmuş ana kare dikkati eklenmiş pozitif koşullandırma. | CONDITIONING |
+| `negative` | Oluşturulmuş ana kare dikkati eklenmiş negatif koşullandırma. | CONDITIONING |
+| `latent` | T üzerinde oluşturulmuş ana kareler eklenmiş video latent. | LATENT |
 
 ## Notlar
 
-- `interval_frames` parametresi, videodaki anahtar çerçevelerin aralığını belirler. Daha yüksek bir değer, daha az anahtar çerçeve ve daha düşük kare hızı anlamına gelir.
-- `keyframes` girdisi, mevcut anahtar çerçeveler veya video latenti ile yeni anahtar çerçeveleri başlatmanıza olanak tanır. Sağlandığında, bu çerçeveler denoize edilir ve video latentine eklenir.
-- `frame_indices` parametresi, anahtar çerçevelerin yerleştirileceği kesin piksel çerçeve indekslerini belirlemenize olanak tanır. Ayarlandığında, `interval_frames` parametresi yoksayılmaz.
-- `positive` ve `negative` çıktıları, oluşturulan-anahtar çerçeve dikkatini eklediği koşullamalar içerir ve bu çıktılar ileri işleme veya analiz için kullanılabilir.
-- `latent` çıktısı, oluşturulan anahtar çerçevelerle eklenen video latenti içerir ve bu çıktı ileri işleme veya analiz için kullanılabilir.
+- `interval_frames` parametresi, otomatik yerleştirilen ana karelerin aralığını belirler. Daha yüksek bir değer daha az ana kare ve daha geniş aralıklarla sonuçlanır; daha düşük bir değer daha fazla ana kare üretir.
+- `keyframes` girdisi, yeni ana kareleri mevcut ana karelerle veya bir video latent ile başlatmanıza olanak tanır. Daha uzun düz bir video latent sağlanırsa, her yeni yuvada en yakın video karesi kopyalanır. Bu ana kareler yine de gürültüden arındırılır ve kılavuz olarak sabitlenmez.
+- `frame_indices` parametresi, ana karelerin yerleştirileceği tam piksel kare indekslerini belirtmenize olanak tanır. Sağlandığında, `interval_frames` yok sayılır. Liste, geçerli piksel aralığında benzersiz tamsayılar içermelidir ve 0. kareye izin verilmez.
+- `positive` ve `negative` çıktıları, oluşturulmuş ana kare dikkati eklenmiş koşullandırmayı içerir.
+- `latent` çıktısı, T üzerinde oluşturulmuş ana kareler eklenmiş video latentini içerir.
+- Oluşturulmuş ana kareler için eğitilmiş bir checkpoint (`keyframes_abs_pos_embedding` taşıyan bir tanesi) gereklidir.
+- Oluşturulmuş ana kareleri LTXV Separate Generated Keyframes ile geri çıkarın.
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddGeneratedKeyframes/tr.md)
 

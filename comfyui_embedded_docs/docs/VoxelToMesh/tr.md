@@ -1,21 +1,22 @@
 # VokseldenAğa
 
-VoxelToMeshBasic düğümü, belirtilen bir eşik değerinde yüzey çıkararak 3B voxel verilerini ağ geometrisine dönüştürür. Girişteki her voxel ızgarasını işler ve 3B ağ temsili oluşturan köşeler ve yüzeyler üretir.
+VoxelToMesh düğümü, 3B voksel verisini belirtilen bir eşik değerinde yüzey çıkararak bir mesh geometrisine dönüştürür. Yüzey çıkarma için iki algoritma sunar: basit kutu benzeri yüzler oluşturan temel bir yöntem ve daha pürüzsüz, daha ayrıntılı mesh'ler üreten bir "surface net" yöntemi. Düğüm, girdideki her voksel ızgarasını işler ve 3B mesh gösterimini oluşturan köşe noktaları ve yüzler üretir.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `voksel` | Ağ geometrisine dönüştürülecek giriş voxel verisi | VOXEL | Evet | - |
-| `eşik` | Yüzey çıkarma için eşik değeri (varsayılan: 0.6) | FLOAT | Evet | -1.0 ile 1.0 arası |
+| `voxel` | Mesh geometrisine dönüştürülecek girdi voksel verisi | VOXEL | Evet | - |
+| `algorithm` | Yüzey çıkarma için kullanılan algoritma. "surface net" daha pürüzsüz mesh'ler üretirken, "basic" basit kutu benzeri yüzler oluşturur (varsayılan: "surface net") | COMBO | Evet | `"surface net"`<br>`"basic"` |
+| `threshold` | Yüzey çıkarma için eşik değeri. Değerleri bu eşiğin üzerinde olan vokseller katı kabul edilir (varsayılan: 0.6) | FLOAT | Evet | -1.0 ile 1.0 |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `MESH` | Tüm giriş voxel ızgaralarından birleştirilmiş köşeler ve yüzeyler içeren oluşturulan 3B ağ | MESH |
+| `MESH` | Tüm girdi voksel ızgaralarından gelen köşe noktaları ve yüzleri içeren oluşturulan 3B mesh. Tüm voksel ızgaraları aynı şekle sahip mesh'ler üretirse, çıktı yığılmış bir tensördür; aksi takdirde değişken uzunlukta bir toplu iş döndürülür | MESH |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VoxelToMesh/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `36df962c84c99a83f243a59b6387874e42e7d05323bd84079dbab112d2f1b67c`
+**Source fingerprint (SHA-256):** `b600be13f1a484d8c0cc1f9c3918630d00c15d35008bcac0f677b21ef64b5d98`

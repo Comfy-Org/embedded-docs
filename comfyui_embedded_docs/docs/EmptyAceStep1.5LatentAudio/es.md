@@ -1,19 +1,19 @@
 # EmptyAceStep1.5LatentAudio
 
-El nodo The Empty Ace Step 1.5 Latent Audio crea un tensor latente vacío diseñado para el procesamiento de audio. Genera un latente de audio silencioso con una duración y un tamaño de lote específicos, que puede utilizarse como punto de partida para flujos de trabajo de generación de audio en ComfyUI. El nodo calcula la longitud del latente basándose en los segundos de entrada y una frecuencia de muestreo fija.
+El nodo Empty Ace Step 1.5 Latent Audio crea un tensor latente de audio vacío (silencioso) para flujos de trabajo de generación de audio. Construye un latente con 64 canales cuya longitud temporal se calcula a partir de la duración solicitada y lo etiqueta como datos de audio para que lo usen los nodos de audio posteriores.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `seconds` | La duración del audio a generar, en segundos (predeterminado: 120.0). | FLOAT | Sí | 1.0 - 1000.0 |
+| `seconds` | La duración del audio a generar, en segundos (predeterminado: 120.0). La longitud del latente se calcula como `seconds * 48000 / 1920`, redondeada al número entero más cercano. | FLOAT | Sí | 1.0 - 1000.0 (paso: 0.01) |
 | `batch_size` | El número de imágenes latentes en el lote (predeterminado: 1). | INT | Sí | 1 - 4096 |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `LATENT` | Un tensor latente vacío que representa audio silencioso, con un identificador de tipo "audio". La salida también incluye un valor `downscale_ratio_temporal` de 1764, que se utiliza para la reducción de escala temporal en el procesamiento de audio. | LATENT |
+| `LATENT` | Un tensor latente vacío que representa audio silencioso. El tensor tiene la forma [batch_size, 64, length], donde length se deriva de `seconds`. La salida también incluye un identificador de tipo "audio" y un valor `downscale_ratio_temporal` de 1764, que se utiliza para el submuestreo temporal en el procesamiento de audio. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyAceStep1.5LatentAudio/es.md)
 

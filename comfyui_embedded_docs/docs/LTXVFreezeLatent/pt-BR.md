@@ -1,28 +1,24 @@
-# LTXVFreezeLatent
+# LTXV Congelar Latent
 
-## Visão Geral
-
-O nó LTXV Freeze Latent foi projetado para definir o noise_mask como 0 para um latent específico, garantindo que o latent permaneça limpo durante a amostragem. É particularmente útil para congelar latentes de áudio ou vídeo para evitar a desnuvem, que pode ser aplicada antes de concatenar áudio e vídeo para cross-attention ou para qualquer latent que não deve ser desnuvem.
+O nó LTXV Freeze Latent define a máscara de ruído de um latent como zero, o que mantém esse latent limpo e inalterado durante a amostragem. Ele funciona com latents de vídeo e áudio, então um latent pode ser congelado antes de ser concatenado com outros ou quando não deve passar por denoising algum.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `latent` | Latente de vídeo ou áudio a ser congelado. O áudio é 4D; o vídeo é 5D. | LATENT | Sim | N/A |
-| `samples` | O tensor contendo as amostras do latent. | TENSOR | Sim | Áudio: 4D (lote, canais, quadros, amostras); Vídeo: 5D (lote, canais, altura, largura, quadros) |
+| `latent` | Latent de vídeo ou áudio a congelar. Áudio é 4D; vídeo é 5D. | LATENT | Sim | N/A |
+
+### Restrições
+
+- O latent deve conter um tensor simples. Um latent concatenado de áudio e vídeo não é aceito; ele deve ser separado primeiro com o nó Separate AV Latent.
+- Apenas latents 4D (áudio) e latents 5D (vídeo) são suportados. Qualquer outro shape causa um erro.
+- A máscara de ruído gerada é criada com zeros usando o mesmo dispositivo do tensor de entrada. Para latents de vídeo, a máscara tem shape (batch, 1, frames, 1, 1); para latents de áudio, tem shape (batch, 1, frames, 1).
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 |-------------|-------------|-----------|
-| `latent` | O latent com o noise_mask definido como 0, garantindo que ele permaneça limpo durante a amostragem. | LATENT |
-
-## Notas
-
-- O tensor `samples` deve ser um tensor simples e não um latent concatenado áudio-vídeo. Se for um latent concatenado, ele deve ser dividido usando o nó Separate AV Latent primeiro.
-- A saída `latent` terá um noise_mask de zeros, que impede a desnuvem para o latent especificado.
-- O nó suporta tanto latentes de áudio quanto de vídeo, com diferentes formas de tensor para cada um.
-- Se a forma do tensor `samples` não corresponder à forma esperada de áudio ou vídeo, um ValueError será levantado.
+| `latent` | O latent de entrada com uma máscara de ruído de zeros adicionada, de modo que permaneça limpo durante a amostragem. | LATENT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVFreezeLatent/pt-BR.md)
 

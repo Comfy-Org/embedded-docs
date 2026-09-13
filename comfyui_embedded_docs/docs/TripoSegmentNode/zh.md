@@ -1,20 +1,20 @@
 # Tripo：分割模型
 
-此节点将 3D 模型拆分为各个独立部件。它将模型发送至 Tripo 分割服务，等待任务完成，然后以 GLB 格式返回分割后的模型，并附带一个以逗号分隔的部件名称列表。这些部件名称将用于后续步骤，例如 Tripo: Complete Mesh Parts、Tripo: Retopology 和 Tripo: Convert model。
+此节点将 3D 模型拆分为各个部件。它会将模型发送到 Tripo 分割服务，等待任务完成，然后返回 GLB 格式的分割后模型，以及以逗号分隔的部件名称列表。这些部件名称会提供给下游步骤，例如 Tripo: Complete Mesh Parts、Tripo: Retopology 和 Tripo: Convert model。
 
 ## 输入
 
-| 参数 | 描述 | 数据类型 | 必填 | 取值范围 |
+| 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model_task_id` | 待分割为多个部件的 3D 模型的任务 ID。 | MODEL_TASK_ID | 是 | N/A |
+| `model_task_id` | 要分割为部件的 3D 模型的任务 ID。 | MODEL_TASK_ID | 是 | N/A |
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
 | `model_file` | 分割后 GLB 模型的输出文件名，格式为 `<task_id>.glb`。仅为向后兼容而保留。 | STRING |
-| `segment task_id` | 生成该结果的分割任务的任务 ID。 | SEGMENT_TASK_ID |
-| `GLB` | 分割后的 3D 模型，以 GLB 文件形式提供。 | GLB |
+| `segment task_id` | 生成结果的分割任务的任务 ID。 | SEGMENT_TASK_ID |
+| `GLB` | 分割后的 3D 模型，为 GLB 文件。 | GLB |
 | `part_names` | 以逗号分隔的部件名称。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoSegmentNode/zh.md)

@@ -1,6 +1,6 @@
 # Gürültüyü Devre Dışı Bırak
 
-DisableNoise düğümü, örnekleme süreçlerinde gürültü üretimini devre dışı bırakmak için kullanılabilen boş bir gürültü yapılandırması sağlar. Hiçbir gürültü verisi içermeyen özel bir gürültü nesnesi döndürür; bu sayede bu çıktıya bağlanan diğer düğümler gürültüyle ilgili işlemleri atlayabilir. Düğüm ayrıca "sıfır gürültü" takma adıyla da aranabilir.
+Bu düğüm, örnekleme sırasında gürültü üretimini devre dışı bırakan boş bir gürültü yapılandırması sağlar. İçinde gürültü verisi bulunmayan özel bir gürültü nesnesi çıkarır; böylece ona bağlanan herhangi bir düğüm gürültüyle ilgili işlemleri atlar. Ayrıca "zero noise" takma adıyla da aranabilir.
 
 ## Girdiler
 
@@ -12,7 +12,7 @@ DisableNoise düğümü, örnekleme süreçlerinde gürültü üretimini devre d
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `NOISE` | Örnekleme süreçlerinde gürültü üretimini devre dışı bırakmak için kullanılabilen boş bir gürültü yapılandırması döndürür. | NOISE |
+| `NOISE` | Örnekleme süreçlerinde gürültü üretimini devre dışı bırakmak için kullanılabilecek boş bir gürültü yapılandırması döndürür. | NOISE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DisableNoise/tr.md)
 

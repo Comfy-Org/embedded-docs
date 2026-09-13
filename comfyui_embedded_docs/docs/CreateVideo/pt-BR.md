@@ -1,21 +1,21 @@
 # Criar Vídeo
 
-O nó Create Video combina uma sequência de imagens em um vídeo. Você pode definir a velocidade de reprodução em quadros por segundo, adicionar áudio opcionalmente e escolher o formato de compressão, a profundidade de bits e o espaço de cores do vídeo resultante.
+O nó Create Video combina uma sequência de imagens em um vídeo. Você pode definir a velocidade de reprodução em quadros por segundo, opcionalmente adicionar áudio e escolher o formato de compressão, a profundidade de bits e o espaço de cores do vídeo resultante.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `imagens` | As imagens a partir das quais criar um vídeo. | IMAGE | Sim | - |
-| `fps` | Os quadros por segundo para a velocidade de reprodução do vídeo (padrão: 30.0). | FLOAT | Sim | 1.0 - 120.0 |
-| `áudio` | O áudio a ser adicionado ao vídeo. | AUDIO | Não | - |
-| `bit_depth` | A opção `"auto"` usa 8 bits para sRGB e 10 bits para HDR e HDR PQ. As escolhas explícitas de 8 bits e 10 bits são independentes do espaço de cores. (padrão: `"auto"`) | COMBO | Não | `"auto"`<br>8<br>10 |
-| `color_space` | Espaço de cores das imagens de entrada. HDR seleciona BT.2020/HLG e HDR PQ seleciona BT.2020/PQ. (padrão: `"sRGB"`) | COMBO | Não | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"` |
-| `codec` | Opcionalmente, codifica o vídeo imediatamente. A opção `"none"` mantém as imagens em formato de tensor; `"auto"` usa H.264. (padrão: `"none"`) | COMBO | Não | `"none"`<br>Opções de codec de vídeo disponíveis na lista de codecs de vídeo (por exemplo, `"auto"` e outros codecs suportados) |
+| `images` | As imagens a partir das quais criar um vídeo. | IMAGE | Sim | - |
+| `fps` | A taxa de quadros por segundo para a velocidade de reprodução do vídeo (padrão: 30.0). | FLOAT | Sim | 1.0 - 120.0 |
+| `audio` | O áudio a ser adicionado ao vídeo. | AUDIO | Não | - |
+| `bit_depth` | A opção `"auto"` usa 8 bits para sRGB e 10 bits para HDR e HDR PQ. As escolhas explícitas de 8 bits e 10 bits são independentes do espaço de cores. (padrão: "auto") | COMBO | Não | `"auto"`<br>8<br>10 |
+| `color_space` | Espaço de cores das imagens de entrada. HDR seleciona BT.2020/HLG e HDR PQ seleciona BT.2020/PQ. (padrão: "sRGB") | COMBO | Não | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"` |
+| `codec` | Opcionalmente, codifica o vídeo imediatamente. `"none"` mantém as imagens em formato de tensor; `"auto"` usa H.264. (padrão: "none") | COMBO | Não | `"none"`<br>Opções de codec de vídeo disponíveis na lista de codecs de vídeo (por exemplo, `"auto"` e outros codecs suportados) |
 
-Nota: Quando `bit_depth` é definido como `"auto"`, o nó usa automaticamente 10 bits para os espaços de cores HDR e HDR PQ, e 8 bits para sRGB.
+Observação: Quando `bit_depth` está definido como `"auto"`, o nó usa automaticamente 10 bits para os espaços de cores HDR e HDR PQ, e 8 bits para sRGB.
 
-Nota: O parâmetro `codec` é uma opção avançada. Quando é deixado em `"none"`, a saída permanece em formato de tensor; selecionar qualquer outro codec codifica o vídeo imediatamente.
+Observação: O parâmetro `codec` é uma opção avançada. Quando ele é deixado como `"none"`, a saída permanece em formato de tensor; selecionar qualquer outro codec codifica o vídeo imediatamente.
 
 ## Saídas
 

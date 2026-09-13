@@ -5,17 +5,17 @@ Este nó remove o fundo de um vídeo usando o serviço Bria AI. Ele processa o v
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
-|-----------|-------------|---------------|-------------|-----------|
-| `vídeo` | O arquivo de vídeo de entrada do qual o fundo será removido. | VIDEO | Sim | N/A |
-| `cor de fundo` | Cor de fundo para o vídeo de saída. | COMBO | Sim | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` |
-| `semente` | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente. (padrão: 0) | INT | Sim | 0 a 2147483647 |
+|-----------|-------------|-----------|----------|-------|
+| `video` | O arquivo de vídeo de entrada do qual o fundo será removido. | VIDEO | Sim | N/A |
+| `background_color` | Cor de fundo para o vídeo de saída. | COMBO | Sim | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` |
+| `seed` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed. (padrão: 0) | INT | Sim | 0 a 2147483647 |
 
-**Nota:** O vídeo de entrada deve ter duração de 60 segundos ou menos.
+**Nota:** O vídeo de entrada deve ter duração de 60 segundos ou menos. Os resultados são não determinísticos mesmo se o valor da seed não for alterado.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
-|---------------|-----------|---------------|
+|-------------|-------------|-----------|
 | `output` | O arquivo de vídeo processado com o fundo removido e substituído pela cor selecionada, codificado como MP4 com codec H.264. | VIDEO |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaRemoveVideoBackground/pt-BR.md)

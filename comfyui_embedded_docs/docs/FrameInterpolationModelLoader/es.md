@@ -1,14 +1,12 @@
 # Cargar modelo de interpolación de fotogramas
 
-## Descripción general
-
-Este nodo carga un modelo de interpolación de fotogramas desde un archivo y lo prepara para su uso en el flujo de trabajo. Detecta automáticamente si el archivo es un modelo FILM o RIFE y configura el modelo para un rendimiento óptimo en su hardware.
+Este nodo carga un archivo de modelo de interpolación de fotogramas y lo prepara para su uso en el flujo de trabajo. Detecta automáticamente si el archivo es un modelo FILM o RIFE y configura el modelo para el hardware disponible.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `nombre del modelo` | Seleccione un modelo de interpolación de fotogramas para cargar. Los modelos deben colocarse en la carpeta 'frame_interpolation'. | COMBO | Sí | Lista de archivos de modelo en la carpeta `frame_interpolation` |
+| `model_name` | Selecciona un modelo de interpolación de fotogramas para cargar. Los modelos deben colocarse en la carpeta `frame_interpolation`. | COMBO | Sí | Lista de archivos de modelo en la carpeta `frame_interpolation` |
 
 Nota: El nodo admite formatos de modelo FILM y RIFE. Si el archivo seleccionado no es un formato reconocido, se genera un error.
 
@@ -16,7 +14,7 @@ Nota: El nodo admite formatos de modelo FILM y RIFE. Si el archivo seleccionado 
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `FRAME_INTERPOLATION_MODEL` | El modelo de interpolación de fotogramas cargado y configurado, listo para usar en otros nodos. | INTERP_MODEL |
+| `FRAME_INTERPOLATION_MODEL` | El modelo de interpolación de fotogramas cargado y configurado, listo para usarse en otros nodos. | INTERP_MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FrameInterpolationModelLoader/es.md)
 

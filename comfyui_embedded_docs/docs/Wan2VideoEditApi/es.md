@@ -1,35 +1,36 @@
 # Wan 2.7 Edición de Video
 
-El nodo Wan2VideoEditApi utiliza el modelo Wan 2.7 para editar un video según instrucciones de texto, imágenes de referencia o transferencia de estilo. Procesa el video de entrada y genera un nuevo video de acuerdo con los parámetros especificados, como resolución, duración y relación de aspecto.
+El nodo Wan 2.7 Video Edit edita un video usando instrucciones de texto, imágenes de referencia o transferencia de estilo. Envía el video de entrada (más cualquier imagen de referencia) al servicio de edición de video Wan 2.7 y devuelve un video recién generado según la resolución, relación de aspecto y duración elegidas.
 
 ## Entradas
 
 ### Entradas comunes
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `modelo` | El modelo a utilizar para la edición de video. | DYNAMIC_COMBO | Sí | `"wan2.7-videoedit"` |
-| `video` | El video a editar. | VIDEO | Sí | - |
-| `semilla` | Semilla a utilizar para la generación. (por defecto: 0) | INT | Sí | 0 a 2147483647 |
-| `configuración_de_audio` | 'auto': el modelo decide si regenerar el audio según el prompt. 'origin': conservar el audio original del video de entrada. (por defecto: "auto") | COMBO | Sí | `"auto"`<br>`"origin"` |
-| `marca de agua` | Si se debe añadir una marca de agua generada por IA al resultado. (por defecto: False) | BOOLEAN | Sí | - |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `model` | El modelo que se usará para la edición de video. Cada opción expone su propio conjunto de subparámetros. | DYNAMIC_COMBO | Sí | `"wan2.7-videoedit"` |
+| `video` | El video que se va a editar. | VIDEO | Sí | - |
+| `seed` | Semilla que se usará para la generación. (predeterminado: 0) | INT | Sí | 0 a 2147483647 |
+| `audio_setting` | 'auto': el modelo decide si regenerar el audio según el prompt. 'origin': conserva el audio original del video de entrada. (predeterminado: "auto") | COMBO | Sí | `"auto"`<br>`"origin"` |
+| `watermark` | Si se debe agregar una marca de agua generada por IA al resultado. (predeterminado: False) | BOOLEAN | Sí | - |
 
 ### Entradas de wan2.7-videoedit
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `prompt` | Instrucciones de edición o requisitos de transferencia de estilo. (por defecto: cadena vacía) | STRING | Sí | - |
-| `resolution` | La resolución para el video de salida. | COMBO | Sí | `"720P"`<br>`"1080P"` |
-| `ratio` | Relación de aspecto. Si no se cambia, se aproxima a la relación del video de entrada. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
-| `duration` | Duración de salida en segundos. 'auto' coincide con la duración del video de entrada. Un valor específico trunca desde el inicio del video. (por defecto: "auto") | COMBO | Sí | `"auto"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `prompt` | Instrucciones de edición o requisitos de transferencia de estilo. (predeterminado: cadena vacía) | STRING | Sí | - |
+| `resolution` | La resolución del video de salida. | COMBO | Sí | `"720P"`<br>`"1080P"` |
+| `ratio` | Relación de aspecto. Si no se cambia, se aproxima a la relación de aspecto del video de entrada. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
+| `duration` | Duración de salida en segundos. 'auto' coincide con la duración del video de entrada. Un valor específico recorta desde el inicio del video. (predeterminado: "auto") | COMBO | Sí | `"auto"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
 
 ### Entradas de referencia
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `reference_images` | Ranura ampliable: conecta de 0 a 4 imágenes (`image1`...`image4`) para guiar la edición. El límite es 4 para el modelo wan2.7-videoedit. | IMAGE | No | 0 a 4 elementos |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `reference_images` | Ranura ampliable: conecta de 0 a 4 imágenes (`image1`...`image4`) para guiar la edición. El límite de cantidad es 4 para el modelo wan2.7-videoedit. | IMAGE | No | 0 a 4 items |
 
 **Restricciones:**
+*   `audio_setting` y `watermark` son opciones avanzadas.
 *   El `prompt` debe contener al menos 1 carácter.
 *   El `video` de entrada debe tener una duración de entre 2 y 10 segundos.
 *   La ranura ampliable `reference_images` acepta un máximo de 4 imágenes.

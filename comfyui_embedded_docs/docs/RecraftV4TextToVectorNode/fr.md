@@ -1,6 +1,6 @@
 # Recraft V4 Texte vers Vectoriel
 
-Le nœud Recraft V4 Text to Vector génère des illustrations vectorielles (SVG) à partir d'une description textuelle en utilisant les modèles Recraft V4 et V4.1. Il se connecte à l'API Recraft pour générer un ou plusieurs fichiers SVG en fonction de votre prompt, et peut appliquer un style vectoriel existant ou en créer un nouveau à partir d'images de référence — lorsque des images de référence sont utilisées, le style créé est renvoyé sous la forme d'un `style_id` réutilisable.
+Le nœud Recraft V4 Text to Vector génère des illustrations Scalable Vector Graphics (SVG) à partir d'une description textuelle en utilisant les modèles Recraft V4 et V4.1. Il se connecte à l'API Recraft pour générer un ou plusieurs fichiers SVG en fonction de votre prompt, et peut appliquer un style vectoriel existant ou en créer un nouveau à partir d'images de référence — lorsque des images de référence sont utilisées, le style créé est renvoyé sous la forme d'un `style_id` pour réutilisation.
 
 ## Entrées
 
@@ -8,14 +8,14 @@ Le nœud Recraft V4 Text to Vector génère des illustrations vectorielles (SVG)
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `modèle` | Le modèle à utiliser pour la génération. Les modèles recraftv4_styles sont conçus pour une génération cohérente en termes de style et nécessitent toujours un style_id ou des style_references. La sélection d'un modèle modifie les options `size` disponibles. | DYNAMIC_COMBO | Oui | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
-| `prompt` | Prompt pour la génération d'images. 10 000 caractères maximum. | STRING | Oui | N/A |
-| `prompt_négatif` | Cette entrée est ignorée : le prompt négatif n'est pas pris en charge par les modèles Recraft V4 et V4.1. | STRING | Oui | N/A |
+| `model` | Le modèle à utiliser pour la génération. Les modèles recraftv4_styles sont conçus pour une génération cohérente en style et nécessitent toujours un `style_id` ou des `style_references`. La sélection d'un modèle modifie les options `size` disponibles. | DYNAMIC_COMBO | Oui | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
+| `prompt` | Prompt pour la génération d'image. Maximum 10 000 caractères. | STRING | Oui | N/A |
+| `negative_prompt` | Cette entrée est ignorée : le prompt négatif n'est pas pris en charge par les modèles Recraft V4 et V4.1. | STRING | Oui | N/A |
 | `n` | Le nombre d'images à générer (par défaut : 1). | INT | Oui | 1 à 6 |
-| `graine` | Seed permettant de déterminer si le nœud doit se réexécuter ; les résultats réels sont non déterministes quelle que soit la seed (par défaut : 0). | INT | Oui | 0 à 18446744073709551615 |
+| `seed` | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). | INT | Oui | 0 à 18446744073709551615 |
 | `recraft_controls` | Contrôles supplémentaires facultatifs sur la génération via le nœud Recraft Controls. | CUSTOM | Non | N/A |
-| `style_id` | UUID d'un style vectoriel Recraft V4 à appliquer, par exemple depuis le nœud Recraft V4 Create Style ou la sortie style_id d'une exécution précédente. Ne peut pas être combiné avec style_references. | STRING | Non | N/A |
-| `style_match` | Degré de fidélité au style : precise le reproduit en détail, flexible correspond à l'apparence générale. Uniquement utilisé lorsqu'un style est fourni (par défaut : « precise »). | COMBO | Non | `"precise"`<br>`"flexible"` |
+| `style_id` | UUID d'un style vectoriel Recraft V4 à appliquer, par exemple depuis le nœud Recraft V4 Create Style ou la sortie `style_id` d'une exécution précédente. Ne peut pas être combiné avec `style_references`. | STRING | Non | N/A |
+| `style_match` | Degré de fidélité au style : precise le reproduit en détail, flexible correspond à l'aspect général. Utilisé uniquement lorsqu'un style est fourni (par défaut : "precise"). | COMBO | Non | `"precise"`<br>`"flexible"` |
 
 ### Entrées recraftv4_1_vector, recraftv4_1_utility_vector, recraftv4 et recraftv4_styles_vector
 
@@ -37,16 +37,16 @@ Ces modèles partagent les mêmes options `size`.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `style_references` | Images de référence pour créer un style vectoriel à la volée, facturées en plus de la génération. Le style créé est renvoyé comme style_id pour être réutilisé. Ne peut pas être combiné avec style_id. | IMAGE | Non | Emplacement extensible : connectez de 1 à N images de référence (jusqu'au maximum du nœud) |
+| `style_references` | Images de référence à partir desquelles créer un style vectoriel à la volée ; la création est facturée en plus de la génération. Le style créé est renvoyé sous la forme d'un `style_id` pour réutilisation. Ne peut pas être combiné avec `style_id`. | IMAGE | Non | Emplacement extensible : connectez 1..N images de référence (jusqu'au maximum du nœud) |
 
-**Remarque :** Le paramètre `size` est une entrée dynamique dont les options disponibles changent en fonction du `model` sélectionné. La valeur `seed` ne garantit pas des résultats reproductibles depuis l'API externe. Les modèles `recraftv4_styles_vector` et `recraftv4_styles_pro_vector` nécessitent toujours un style : fournissez un `style_id` ou connectez au moins une image `style_references`. `style_id` et `style_references` ne peuvent pas être utilisés ensemble — fournir les deux provoque une erreur, et `style_id` doit être un UUID valide. Les images de référence sont limitées en nombre et leur taille totale encodée ne doit pas dépasser 10 Mo.
+**Remarque :** Le paramètre `size` est une entrée dynamique dont les options disponibles changent selon le `model` sélectionné. La valeur `seed` ne garantit pas de résultats reproductibles depuis l'API externe. Les modèles `recraftv4_styles_vector` et `recraftv4_styles_pro_vector` nécessitent toujours un style : fournissez un `style_id` ou connectez au moins une image `style_references`. `style_id` et `style_references` ne peuvent pas être utilisés ensemble — fournir les deux déclenche une erreur, et `style_id` doit être un UUID valide. Les images de référence de style sont limitées en nombre, et leur taille encodée totale ne doit pas dépasser 10 Mo.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `output` | La ou les images vectorielles (SVG) générées. | SVG |
-| `style_id` | L'UUID du style renvoyé par l'API Recraft. Lorsque des images de référence sont fournies, le style créé est renvoyé ici pour être réutilisé ; sinon, chaîne vide. | STRING |
+| `output` | La ou les images SVG (Scalable Vector Graphics) générées. | SVG |
+| `style_id` | L'UUID du style renvoyé par l'API Recraft. Lorsque des images de référence sont fournies, le style créé est renvoyé ici pour réutilisation ; sinon, une chaîne vide. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToVectorNode/fr.md)
 

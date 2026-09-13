@@ -1,23 +1,23 @@
 # LTXVコンテキストウィンドウ
 
-このノードは、サンプリング中に LTXV 系モデルにコンテキストウィンドウを設定します。ビデオ生成プロセスを重複するウィンドウに分割することで、メモリ使用量を管理し、時間的な整合性を向上させます。
+このノードは、サンプリング中に LTXV 系モデルのコンテキストウィンドウを設定します。生成をオーバーラップするウィンドウに分割することで、メモリ使用量の管理と時間的コヒーレンスの向上に役立ちます。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | サンプリング中にコンテキストウィンドウを適用するモデル。 | MODEL | 必須 | - |
-| `context_length` | コンテキストウィンドウの長さ（実フレーム単位）。8*n + 1 の形式である必要があります。（デフォルト：145） | INT | 必須 | 最小: 1<br>最大: nodes.MAX_RESOLUTION<br>ステップ: 8 |
-| `context_overlap` | コンテキストウィンドウの重なり（実フレーム単位）。（デフォルト：40） | INT | 必須 | 最小: 0<br>ステップ: 8 |
-| `context_schedule` | コンテキストウィンドウのステップ依存スケジューリングアルゴリズム。（デフォルト：UNIFORM_STANDARD） | COMBO | 必須 | `STATIC_STANDARD`<br>`UNIFORM_STANDARD`<br>`UNIFORM_LOOPED`<br>`BATCHED` |
-| `context_stride` | コンテキストウィンドウのストライド。ユニフォームスケジュールにのみ適用されます。（デフォルト：1） | INT | 任意 | 最小: 1 |
-| `closed_loop` | コンテキストウィンドウのループを閉じるかどうか。ループ型スケジュールにのみ適用されます。（デフォルト：False） | BOOLEAN | 任意 | True<br>False |
-| `fuse_method` | コンテキストウィンドウを融合する方法。（デフォルト：PYRAMID） | COMBO | 必須 | comfy.context_windows.ContextFuseMethods.LIST_STATIC のオプション |
-| `freenoise` | FreeNoise ノイズシャッフリングを適用するかどうか。ウィンドウのブレンドを向上させます。（デフォルト：True） | BOOLEAN | 任意 | True<br>False |
-| `retain_first_frame` | 各コンテキストウィンドウの最初の潜在フレームを保持します（初期参照を保持するのに役立つ場合があります）。（デフォルト：False） | BOOLEAN | 任意 | True<br>False |
-| `split_conds_to_windows` | ConditionCombine で作成された複数の条件付けを、リージョンインデックスに基づいて各ウィンドウに分割するかどうか。（デフォルト：False） | BOOLEAN | 任意 | True<br>False |
+| `model` | サンプリング中にコンテキストウィンドウを適用するモデル。 | MODEL | はい | - |
+| `context_length` | 実フレーム単位でのコンテキストウィンドウの長さ。8*n + 1 である必要があります。（デフォルト: 145） | INT | はい | 最小: 1<br>最大: nodes.MAX_RESOLUTION<br>ステップ: 8 |
+| `context_overlap` | 実フレーム単位でのコンテキストウィンドウのオーバーラップ。（デフォルト: 40） | INT | はい | 最小: 0<br>ステップ: 8 |
+| `context_schedule` | コンテキストウィンドウのステップ依存スケジューリングアルゴリズム。（デフォルト: "UNIFORM_STANDARD"） | COMBO | はい | `"STATIC_STANDARD"`<br>`"UNIFORM_STANDARD"`<br>`"UNIFORM_LOOPED"`<br>`"BATCHED"` |
+| `context_stride` | コンテキストウィンドウのストライド。uniform スケジュールにのみ適用されます。（デフォルト: 1） | INT | はい | 最小: 1 |
+| `closed_loop` | コンテキストウィンドウのループを閉じるかどうか。looped スケジュールにのみ適用されます。（デフォルト: False） | BOOLEAN | はい | True<br>False |
+| `fuse_method` | コンテキストウィンドウを融合するために使用する方法。使用可能なオプションは `ContextFuseMethods.LIST_STATIC` で定義されています。（デフォルト: "PYRAMID"） | COMBO | はい | `ContextFuseMethods.LIST_STATIC` で定義 |
+| `freenoise` | FreeNoise ノイズシャッフルを適用するかどうか。ウィンドウのブレンドを改善します。（デフォルト: True） | BOOLEAN | はい | True<br>False |
+| `retain_first_frame` | 各コンテキストウィンドウで最初の潜在フレームを保持します（初期参照の保持に役立つ場合があります）。（デフォルト: False） | BOOLEAN | はい | True<br>False |
+| `split_conds_to_windows` | 複数の conditioning（ConditionCombine によって作成）を、リージョンインデックスに基づいて各ウィンドウに分割するかどうか。（デフォルト: False） | BOOLEAN | はい | True<br>False |
 
-**注記:** `context_length` パラメータは、8*n + 1 の式に従う必要があります。ここで n は正の整数です。ノードは、実フレームを潜在フレームに変換することで、この要件を満たすように値を自動調整します。`context_overlap` も同様に実フレームから潜在フレームに変換されます（8 で除算）。
+**注:** `context_length` の値は実フレーム単位で指定され、内部的に式 `((context_length - 1) // 8) + 1` を使用して潜在フレームに変換されます（最小値は 1）。`context_overlap` の値も実フレーム単位で指定され、8 による整数除算を使用して潜在フレームに変換されます（最小値は 0）。`context_length` のツールチップには、8*n + 1 のパターンに従う必要があることが示されています。
 
 ## 出力
 

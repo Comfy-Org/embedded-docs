@@ -1,19 +1,19 @@
 # Guidance VideoTriangleCFG
 
-Le nœud VideoTriangleCFGGuidance applique un motif de guidage sans classificateur (CFG) triangulaire à un modèle vidéo. Il fait varier l'échelle de conditionnement au fil du temps à l'aide d'une onde triangulaire qui oscille entre `min_cfg` et l'échelle de conditionnement d'origine du modèle. Cela crée un motif de guidage dynamique qui peut contribuer à améliorer la cohérence et la qualité de la génération vidéo.
+Le nœud VideoTriangleCFGGuidance applique un motif de mise à l'échelle triangulaire pour le guidage sans classificateur (CFG) à un modèle vidéo. Il fait varier l'échelle de conditionnement à l'aide d'une onde triangulaire qui oscille entre `min_cfg` et l'échelle de conditionnement d'origine du modèle. Cela crée un motif de guidage dynamique qui peut aider à améliorer la cohérence et la qualité de la génération vidéo.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `modèle` | Le modèle vidéo auquel appliquer le guidage CFG triangulaire | MODEL | Oui | - |
-| `min_cfg` | La valeur d'échelle CFG minimale pour le motif triangulaire (par défaut : 1.0). Ce paramètre est affiché dans la section avancée de l'interface du nœud. | FLOAT | Oui | 0.0 - 100.0 (pas : 0.5, arrondi : 0.01) |
+| `model` | Le modèle vidéo auquel appliquer le guidage CFG triangulaire. | MODEL | Oui | - |
+| `min_cfg` | Valeur minimale de l'échelle CFG pour le motif triangulaire. Ce paramètre est affiché dans la section avancée de l'interface du nœud (valeur par défaut : 1.0). | FLOAT | Oui | 0.0 - 100.0 (pas : 0.5, arrondi : 0.01) |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `model` | Le modèle modifié avec le guidage CFG triangulaire appliqué | MODEL |
+| `model` | Le modèle modifié avec le guidage CFG triangulaire appliqué. | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoTriangleCFGGuidance/fr.md)
 

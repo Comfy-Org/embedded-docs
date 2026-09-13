@@ -1,6 +1,6 @@
 # Extensión de video Vidu
 
-El nodo ViduExtendVideoNode genera fotogramas adicionales para extender la duración de un video existente. Utiliza un modelo de IA especificado para crear una continuación fluida basada en el video de origen y una indicación de texto opcional.
+El nodo Vidu Video Extension genera fotogramas adicionales para extender la duración de un video existente. Utiliza un modelo de IA especificado para crear una continuación basada en el video de origen y un prompt de texto opcional.
 
 ## Entradas
 
@@ -8,22 +8,22 @@ El nodo ViduExtendVideoNode genera fotogramas adicionales para extender la durac
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `modelo` | Modelo a utilizar para la extensión del video. Al seleccionar un modelo, se muestran sus ajustes específicos de duración y resolución. | DYNAMIC_COMBO | Sí | `"viduq2-pro"`<br>`"viduq2-turbo"` |
+| `model` | Modelo a usar para la extensión de video. Al seleccionar un modelo, se muestran sus ajustes específicos de duración y resolución. | DYNAMIC_COMBO | Sí | `"viduq2-pro"`<br>`"viduq2-turbo"` |
 | `video` | El video de origen que se va a extender. | VIDEO | Sí | - |
-| `prompt` | Una indicación de texto opcional para el video extendido (máximo 2000 caracteres; por defecto: vacío). | STRING | Sí | - |
-| `semilla` | Un valor de semilla para controlar la aleatoriedad de la generación (por defecto: 1). | INT | Sí | 0 a 2147483647 |
-| `fotograma_final` | Una imagen opcional para usar como fotograma final de destino de la extensión. | IMAGE | No | - |
+| `prompt` | Un prompt de texto opcional para el video extendido (máx. 2000 caracteres; predeterminado: vacío). | STRING | Sí | - |
+| `seed` | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 1). | INT | Sí | 0 a 2147483647 |
+| `end_frame` | Una imagen opcional para usar como fotograma final objetivo de la extensión. | IMAGE | No | - |
 
 ### Entradas de viduq2-pro y viduq2-turbo
 
-Estos ajustes son comunes a ambos modelos.
+Estos ajustes son compartidos por ambos modelos.
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `duration` | Duración del video extendido en segundos (por defecto: 4). Este ajuste aparece después de seleccionar un modelo. | INT | Sí | 1 a 7 |
+| `duration` | Duración del video extendido en segundos (predeterminado: 4). Este ajuste aparece después de seleccionar un modelo. | INT | Sí | 1 a 7 |
 | `resolution` | Resolución del video de salida. Este ajuste aparece después de seleccionar un modelo. | COMBO | Sí | `"720p"`<br>`"1080p"` |
 
-**Nota:** El `video` de origen debe tener una duración de entre 4 y 55 segundos. Si se proporciona `end_frame`, su relación de aspecto debe estar entre 1:4 y 4:1, y su ancho y alto deben ser de al menos 128 píxeles cada uno.
+**Nota:** El `video` de origen debe tener una duración entre 4 y 55 segundos. Si se proporciona `end_frame`, su relación de aspecto debe estar entre 1:4 y 4:1, y su ancho y alto deben ser de al menos 128 píxeles cada uno.
 
 ## Salidas
 

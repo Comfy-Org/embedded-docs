@@ -1,20 +1,20 @@
 # Sesi Kaydet (Opus)
 
-SaveAudioOpus düğümü, ses verilerini Opus formatında bir dosyaya kaydeder. Bir ses girdisi alır ve yapılandırılabilir kalite ayarlarıyla sıkıştırılmış bir Opus dosyası olarak dışa aktarır. Bu düğüm kullanımdan kaldırılmıştır ve gelecekteki sürümlerde kaldırılabilir.
+SaveAudioOpus düğümü, ses verilerini Opus biçiminde bir dosyaya kaydeder; dışa aktarılan dosya için kodlama kalitesini (bit hızı) ve dosya adı önekini seçmenize olanak tanır. Bu düğüm kullanımdan kaldırılmıştır ve gelecek sürümlerde kaldırılabilir.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `ses` | Opus dosyası olarak kaydedilecek ses verisi. Bu değer None ise (örneğin, kaynak videoda ses parçası olmadığında) bir ValueError yükseltilir. | AUDIO | Evet | - |
-| `dosya_adı_ön_eki` | Çıktı dosya adı için ön ek (varsayılan: "audio/ComfyUI") | STRING | Hayır | - |
-| `kalite` | Opus dosyasını kodlamak için kullanılan bit hızı; daha yüksek değerler daha iyi kalite ancak daha büyük dosyalar üretir (varsayılan: "128k") | COMBO | Hayır | "64k"<br>"96k"<br>"128k"<br>"192k"<br>"320k" |
+| `audio` | Opus dosyası olarak kaydedilecek ses verisi. Bunun None olması durumunda (örneğin, kaynak videoda ses parçası olmadığında) bir ValueError yükseltilir. | AUDIO | Evet | - |
+| `filename_prefix` | Çıktı dosya adı için kullanılan önek (varsayılan: "audio/ComfyUI"). | STRING | Hayır | - |
+| `quality` | Opus dosyasını kodlamak için kullanılan bit hızı; daha yüksek değerler daha iyi kalite ancak daha büyük dosyalar üretir (varsayılan: "128k"). | COMBO | Hayır | `"64k"`<br>`"96k"`<br>`"128k"`<br>`"192k"`<br>`"320k"` |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `audio` | Opus dosyasına kaydedilen ses verisi | AUDIO |
+| `audio` | Opus dosyasına kaydedilen ses verisi. | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAudioOpus/tr.md)
 

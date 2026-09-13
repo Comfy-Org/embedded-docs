@@ -1,51 +1,56 @@
 # Model Seyrek Dikkat
 
-## Genel Bakış
-
-Blok Düzenli Dikkat düğümü, bir ComfyUI modeline blok-düzenli dikkat mekanizmasını uygulamak için kullanılır. Bu mekanizma, her sorgu bloğunun tüm olası bloklara değil, sadece belirli bir alt küme bloklara odaklanmasına izin vererek hesaplama yükünü azaltır ve uzun diziler için özellikle faydalıdır.
+**Block Sparse Attention** düğümü, dikkat katmanları tüm girdiye aynı anda odaklanmak yerine yalnızca girdinin en ilgili kısımlarına odaklanacak şekilde bir modeli değiştirir; bu, uzun diziler için gereken hesaplama işini azaltır. Tasarruf, dizi uzunluğuyla birlikte artar; çünkü kısa diziler genellikle normal (yoğun) dikkat ile daha hızlıdır.
 
 ## Girdiler
 
+### Ortak Girdiler
+
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Blok-düzenli dikkat uygulamak için kullanılacak ComfyUI modeli. | MODEL | Evet | N/A |
-| `selection` | Anahtar blokları belirlemek için kullanılan yöntem. | DYNAMIC_COMBO | Evet | Seçenekler: sol-attn (uyumlu tau), sla (top-k), vsa (Video Düzenli Dikkat) |
-| `tau` | sol-attn yönteminde puan dağılımı sigmalarında kullanılan eşiğin değeri. | FLOAT | Hayır | varsayılan: 1.3, min: 0.0, max: 4.0, adım: 0.05 |
-| `keep_percent` | sla yönteminde her sorgu bloğunun kesin olarak tuttuğu anahtar blokların yüzdesi. | FLOAT | Hayır | varsayılan: 10.0, min: 0.5, max: 95.0, adım: 0.5 |
-| `start_percent` | Düzenli dikkat başlamaya başladığı yüzdesi noktası. | FLOAT | Hayır | varsayılan: 0.2, min: 0.0, max: 1.0, adım: 0.01 |
-| `end_percent` | Düzenli dikkat bittiği yüzdesi noktası. | FLOAT | Hayır | varsayılan: 1.0, min: 0.0, max: 1.0, adım: 0.01 |
-| `dense_blocks` | Her zaman yoğun dikkat kullanacak transformer bloklarını temsil eden bir string. | STRING | Hayır | varsayılan: "", |
-| `min_tokens` | Modelin yoğun dikkat kullanacağı dizideki en az token sayısı. | INT | Hayır | varsayılan: 12288, min: 0, max: 1 << 20, adım: 512 |
-| `extra_tokens` | Her sorgu bloğunun seçili bloklarının ötesinde dikkat ettiği ekstra en yüksek puanlı token sayısı. | INT | Hayır | varsayılan: 256, min: 0, max: 256, adım: 64 |
-| `sink_conditioning` | Kullanılacak MiniMax-H3 şartlandırma satırları. | COMBO | Hayır | Seçenekler: exact_kv, exact_kv_and_rows, off |
-| `verbose` | Ayrıntılı günlüklemeyi etkinleştirir. | BOOLEAN | Hayır | varsayılan: False |
+| `model` | Yamalanacak model. | MODEL | Evet | N/A |
+| `selection` | Tam token düzeyinde dikkat için anahtar bloklarını seçmekte kullanılan yöntem (`method` olarak görüntülenir). <br>`sol-attn`: Sparsifying Online Attention, her dikkat başlığı ve sorgu bloğu için eğitim gerektirmeyen uyarlanabilir bir eşik kullanır.<br>`sla`: Sparse-Linear Attention, en yüksek puanlı anahtar bloklarının sabit bir yüzdesini korur; yalnızca bu desen için eğitilmiş model ağırlıklarıyla kullanın.<br>`vsa`: Video Sparse Attention (FastVideo), 3B video-küp döşeme ve öğrenilmiş kaba bir dikkat dalı kullanır; FastH3 model ağırlıkları gerektirir. | DYNAMIC_COMBO | Evet | `"sol-attn"`<br>`"sla"`<br>`"vsa"` |
+| `start_percent` | Seyrek dikkatin başladığı yüzde noktası. Bu noktadan önce dikkat yoğun kalır. Varsayılan: 0.2. | FLOAT | Hayır | min: 0.0, max: 1.0, step: 0.01 |
+| `end_percent` | Seyrek dikkatin bittiği yüzde noktası. Bu noktadan sonra dikkat yoğunluğa döner. Varsayılan: 1.0. | FLOAT | Hayır | min: 0.0, max: 1.0, step: 0.01 |
+| `dense_blocks` | Her zaman yoğun çalışan Transformer blokları, örn. '0, 1, 47-49'. Varsayılan: "" (boş). Gelişmiş girdi. | STRING | Hayır | Varsayılan: "" |
+| `min_tokens` | Bundan daha kısa diziler yoğun kalır. Varsayılan: 12288. Gelişmiş girdi. | INT | Hayır | min: 0, max: 1048576, step: 512 |
+| `extra_tokens` | Her sorgu bloğunun seçili bloklarının ötesinde dikkat ettiği ek en yüksek puanlı tokenlar. Daha fazla dikkat süresi için yoğuna yaklaşır; 256 önerilir, 0 devre dışı bırakır. VSA için yok sayılır. Varsayılan: 256. Gelişmiş girdi. | INT | Hayır | min: 0, max: 256, step: 64 |
+| `sink_conditioning` | Yalnızca MiniMax-H3. `exact_kv`: her sorgu, paketlenmiş metin/ses/referans satırlarına tam olarak dikkat eder (yaklaşık %3 maliyet). `exact_kv_and_rows`: ek olarak hedef ses sorgu satırlarını yoğun çalıştırır (üretilen sesi bozulmadan korur). `off` bu davranışı devre dışı bırakır. Varsayılan: "exact_kv_and_rows". Gelişmiş girdi. | COMBO | Hayır | `"exact_kv"`<br>`"exact_kv_and_rows"`<br>`"off"` |
+| `verbose` | Her dikkat biçiminin seyrek dikkat kullanıp kullanmadığını veya neden yoğun kaldığını günlüğe kaydeder. Varsayılan: False. Gelişmiş girdi. | BOOLEAN | Hayır | Varsayılan: False |
 
-### Notlar
+### sol-attn Girdileri
 
-- `selection` parametresi, anahtar blokları seçmek için farklı yöntemler arasında seçim yapmanıza olanak tanır:
-  - `sol-attn`: Puan dağılımına dayalı olarak anahtar blokları seçmek için uyumlu bir eşiği kullanır.
-  - `sla`: En yüksek puanlı anahtar blokların sabit bir yüzdesini tutar.
-  - `vsa`: 3B video-küp döşeme ve öğrenilmiş ince dikkat dalığını kullanarak Video Düzenli Dikkat uygular.
-- `dense_blocks` parametresi, her zaman yoğun dikkat kullanacak transformer bloklarını belirtmek için kullanılır.
-- `min_tokens` parametresi, yoğun dikkatin kullanılacağı dizideki en az token sayısını ayarlar.
-- `extra_tokens` parametresi, her sorgu bloğunun seçili bloklarının ötesinde dikkat ettiği ekstra en yüksek puanlı token sayısını belirler.
-- `sink_conditioning` parametresi yalnızca MiniMax-H3 modelleri için geçerlidir ve şartlandırma satırlarının nasıl ele alınacağını belirler.
-- `verbose` parametresi, ayrıntılı günlüklemeyi etkinleştirir ve hata ayıklamada faydalı olabilir.
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `tau` | Puan dağılımı sigmalarında eşik. Daha yüksek değer daha seyrektir: 1.0, anahtar bloklarının yaklaşık %16'sını tam tutar; 1.5 yaklaşık %7'sini; 2.0 yaklaşık %2.7'sini. Varsayılan: 1.3. | FLOAT | Hayır | min: 0.0, max: 4.0, step: 0.05 |
+
+### sla Girdileri
+
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `keep_percent` | Her sorgu bloğunun tam olarak tuttuğu anahtar bloklarının yüzdesi (sink'ler ve köşegen bunun üzerine eklenir). Seçim, SLA tarzı LoRA'ların damıtıldığı hedeftir; böyle bir LoRA olmadan daha yüksek değer yoğuna daha yakındır. Varsayılan: 10.0. | FLOAT | Hayır | min: 0.5, max: 95.0, step: 0.5 |
+
+### vsa Girdileri
+
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `keep_percent` | Her sorgu küpünün tuttuğu video küplerinin yüzdesi; FastH3-VSA kontrol noktaları 10 ile eğitilmiştir. Mevcut olduğunda kaba dal için modelin `to_gate_compress` katmanlarını kullanır. Varsayılan: 10.0. | FLOAT | Hayır | min: 0.5, max: 95.0, step: 0.5 |
+
+**Not:** Arayüzde yalnızca seçili yönteme ait parametreler gösterilir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `model` | Blok-düzenli dikkat uygulandıktan sonra olan ComfyUI modeli. | MODEL |
+| `model` | Blok seyrek dikkat uygulanmış model. | MODEL |
 
-### Kısıtlamalar ve Sınırlamalar
+## Kısıtlamalar ve Sınırlamalar
 
-- `sol-attn` yöntemi için `tau` değeri 0.0 ile 4.0 arasında olmalıdır.
-- `sla` yöntemi için `keep_percent` değeri 0.5 ile 95.0 arasında olmalıdır.
-- `vsa` yöntemi yalnızca MiniMax-H3 modelleri ile uyumludur ve modelin `to_gate_compress` katmanına sahip olması gerekmektedir.
-- `min_tokens` parametresi negatif olmayan bir tamsayı olmalıdır (0 ayarlanırsa tüm dikkat işlemi yoğun kalır).
-- `extra_tokens` parametresi negatif olmayan bir tamsayı olmalıdır.
-- `sink_conditioning` seçenekleri yalnızca MiniMax-H3 modelleri için geçerlidir.
+- `min_tokens` değerinden kısa diziler, `dense_blocks` içinde listelenen bloklar ve `start_percent` ile `end_percent` aralığının dışındaki örnekleme adımları, Model Attention Backend düğümü tarafından seçilen yoğun model dikkat arka ucuna geri döner.
+- `vsa` yöntemi seçildiğinde `extra_tokens` yok sayılır. VSA ağırlıkları kendi seyrek desenlerine karşı eğitildiği için bir mesaj günlüğe kaydedilir.
+- `vsa` yöntemi bir MiniMax-H3 modeli gerektirir; başka herhangi bir model hata verir. Modelde `to_gate_compress` katmanları yoksa, ince aşama kaba dal olmadan çalışır ve bir uyarı günlüğe kaydedilir.
+- Blok indekslerini bildirmeyen modeller için `dense_blocks` yok sayılır; bu, `verbose` etkinleştirildiğinde günlüğe not edilir.
+- `sink_conditioning` yalnızca geçerli dizi uzunluğuyla eşleşen bir düzen bildiren MiniMax-H3 modelleri için geçerlidir.
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BlockSparseAttention/tr.md)
 

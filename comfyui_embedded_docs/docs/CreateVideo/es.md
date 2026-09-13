@@ -4,23 +4,23 @@ El nodo Create Video combina una secuencia de imágenes en un video. Puedes esta
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `imágenes` | Las imágenes con las que se creará un video. | IMAGE | Sí | - |
-| `fps` | Los fotogramas por segundo para la velocidad de reproducción del video (valor predeterminado: 30.0). | FLOAT | Sí | 1.0 - 120.0 |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|----------|-------|
+| `images` | Las imágenes a partir de las cuales crear un video. | IMAGE | Sí | - |
+| `fps` | Los fotogramas por segundo para la velocidad de reproducción del video (predeterminado: 30.0). | FLOAT | Sí | 1.0 - 120.0 |
 | `audio` | El audio que se agregará al video. | AUDIO | No | - |
-| `bit_depth` | `"auto"` usa 8 bits para sRGB y 10 bits para HDR y HDR PQ. Las opciones explícitas de 8 bits y 10 bits son independientes del espacio de color. (valor predeterminado: `"auto"`) | COMBO | No | `"auto"`<br>8<br>10 |
-| `color_space` | Espacio de color de las imágenes de entrada. `"HDR"` selecciona BT.2020/HLG y `"HDR PQ"` selecciona BT.2020/PQ. (valor predeterminado: `"sRGB"`) | COMBO | No | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"` |
-| `codec` | Opcionalmente, codifica el video de inmediato. `"none"` mantiene las imágenes en forma de tensor; `"auto"` usa H.264. (valor predeterminado: `"none"`) | COMBO | No | `"none"`<br>Opciones de códec de video disponibles en la lista de códecs de video (p. ej. `"auto"` y otros códecs compatibles) |
+| `bit_depth` | La opción `"auto"` usa 8 bits para sRGB y 10 bits para HDR y HDR PQ. Las opciones explícitas de 8 bits y 10 bits son independientes del espacio de color. (predeterminado: "auto") | COMBO | No | `"auto"`<br>8<br>10 |
+| `color_space` | Espacio de color de las imágenes de entrada. HDR selecciona BT.2020/HLG y HDR PQ selecciona BT.2020/PQ. (predeterminado: "sRGB") | COMBO | No | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"` |
+| `codec` | Opcionalmente, codifica el video de inmediato. La opción `"none"` mantiene las imágenes en forma de tensor; `"auto"` usa H.264. (predeterminado: "none") | COMBO | No | `"none"`<br>Opciones de códec de video disponibles de la lista de códecs de video (p. ej. `"auto"` y otros códecs compatibles) |
 
 Nota: Cuando `bit_depth` se establece en `"auto"`, el nodo usa automáticamente 10 bits para los espacios de color HDR y HDR PQ, y 8 bits para sRGB.
 
-Nota: El parámetro `codec` es una opción avanzada. Cuando se deja en `"none"`, la salida permanece en forma de tensor; seleccionar cualquier otro códec codifica el video de inmediato.
+Nota: El parámetro `codec` es una opción avanzada. Cuando se deja en `"none"`, la salida permanece en forma de tensor; seleccionar cualquier otro códec codifica el video inmediatamente.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
-|------------------|-------------|---------------|
+|-------------|-------------|-----------|
 | `output` | El video generado que contiene las imágenes de entrada y el audio opcional. | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateVideo/es.md)

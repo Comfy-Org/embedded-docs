@@ -1,20 +1,20 @@
 # Obtener componentes 3D
 
-Get3DComponents analiza un archivo de modelo 3D (GLB, GLTF, OBJ o STL) y lo convierte en una malla editable que puede ser utilizada por nodos de procesamiento de mallas, como decimate, remesh, UV unwrap y bake. Todos los nodos y primitivas de la escena se fusionan en una sola malla con sus transformaciones aplicadas, y las texturas y los ajustes de material provienen del primer material. Es la contraparte del nodo MeshToFile3D.
+Get3DComponents analiza un archivo de modelo 3D (GLB, GLTF, OBJ o STL) y lo convierte en una malla editable que pueden usar nodos de procesamiento de malla como decimate, remesh, UV unwrap y bake. Todos los nodos de escena y las primitivas se fusionan en una sola malla con sus transformaciones aplicadas, y las texturas y la configuración del material provienen del primer material. Es la contraparte del nodo MeshToFile3D.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `model_3d` | Archivo de modelo 3D desde Load 3D u otro nodo 3D. No se admiten FBX/USDZ: convierta a GLB primero. | File3DGLB<br>File3DGLTF<br>File3DOBJ<br>File3DSTL<br>File3DAny | Sí | GLB<br>GLTF<br>OBJ<br>STL |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `model_3d` | Archivo de modelo 3D desde Load 3D u otro nodo 3D. No se admiten FBX/USDZ: conviértelo a GLB primero. | File3DGLB<br>File3DGLTF<br>File3DOBJ<br>File3DSTL<br>File3DAny | Sí | GLB<br>GLTF<br>OBJ<br>STL |
 
-Nota: los archivos FBX y USDZ no son compatibles y causan un error; conviértalos a GLB o GLTF primero. Si el archivo 3D contiene múltiples materiales, solo se conservan las texturas y los factores de material del primer material (se registra una advertencia). Todas las primitivas de la escena se fusionan en una sola malla con sus transformaciones aplicadas. Este nodo es experimental.
+Nota: Los archivos FBX y USDZ no son compatibles y provocan un error; conviértelos a GLB o GLTF primero. Si el formato de archivo no se puede reconocer como GLB, GLTF, OBJ o STL, el nodo genera un error que enumera los formatos compatibles. Si la escena glTF no contiene geometría de triángulos, o si el archivo contiene índices de caras que apuntan fuera de la lista de vértices (señal de un archivo corrupto), el nodo genera un error. Si el archivo 3D contiene varios materiales, solo se conservan las texturas y los factores de material del primer material (se registra una advertencia). Todas las primitivas de la escena se fusionan en una sola malla con sus transformaciones aplicadas. Este nodo es experimental.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
-|------------------|-------------|--------------|
-| `mesh` | Malla editable que contiene vértices, caras, UVs, colores de vértice, normales, tangentes e información de material (textura, metal-rugosidad, mapa de normales, emisiva, indicador de no iluminado) extraída del archivo de modelo. | MESH |
+| Nombre de salida | Descripción | Tipo de dato |
+|-------------|-------------|-----------|
+| `mesh` | Malla editable que contiene vértices, caras, UVs, colores de vértices, normales y tangentes, además de información de material tomada del archivo (textura, metallic-roughness, mapa de normales, color emisivo, indicador unlit, indicador de oclusión en metallic-roughness y datos del material). | MESH |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Get3DComponents/es.md)
 

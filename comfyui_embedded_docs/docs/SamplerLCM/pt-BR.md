@@ -1,14 +1,12 @@
 # SamplerLCM
 
-O nó SamplerLCM fornece um amostrador LCM (Modelo de Consistência Latente) com parâmetros de ruído ajustáveis por etapa. Ele permite controlar o ruído aplicado em cada etapa do processo de amostragem; `s_noise` é um multiplicador da escala de ruído de treinamento do modelo.
-
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `s_noise` | Multiplicador de ruído por etapa na primeira etapa (1.0 = corresponder ao treinamento). (padrão: 1.0) | FLOAT | Sim | 0.0 a 64.0 (step: 0.01) |
-| `s_noise_end` | Multiplicador de ruído por etapa na última etapa. Defina igual a `s_noise` para uma agenda de ruído constante. (padrão: 1.0) | FLOAT | Sim | 0.0 a 64.0 (step: 0.01) |
-| `noise_clip_std` | Limita o ruído por etapa a +/- N*std. 0 desativa. (padrão: 0.0) | FLOAT | Sim | 0.0 a 10.0 (step: 0.01) |
+| `s_noise` | Multiplicador de ruído por passo no primeiro passo (1.0 = corresponder ao treinamento). Padrão: 1.0. | FLOAT | Sim | 0.0 a 64.0 (passo: 0.01) |
+| `s_noise_end` | Multiplicador de ruído por passo no último passo. Defina igual a `s_noise` para um cronograma constante. Padrão: 1.0. | FLOAT | Sim | 0.0 a 64.0 (passo: 0.01) |
+| `noise_clip_std` | Limita o ruído por passo a +/- N*std. 0 desativa. Padrão: 0.0. | FLOAT | Sim | 0.0 a 10.0 (passo: 0.01) |
 
 ## Saídas
 

@@ -1,20 +1,20 @@
 # Preprocesar entrada de SeedVR2
 
-Este nodo prepara una imagen o video redimensionado para el modelo SeedVR2 aplicando un relleno (padding) a la forma que el modelo espera. Durante el procesamiento, elimina el canal alfa; el nodo complementario Post-Process SeedVR2 Output lo restaura más tarde desde la imagen redimensionada original. Los valores de píxeles se limitan al rango 0-1, la altura y el ancho se rellenan a múltiplos de 16, y el número de fotogramas se rellena repitiendo el último fotograma cuando sea necesario.
+Este nodo prepara una imagen o un vídeo redimensionados para el modelo SeedVR2 mediante relleno hasta la forma que espera el modelo. Los valores de píxel se limitan al rango de 0 a 1, la altura y la anchura se rellenan hasta múltiplos de 16, y el número de fotogramas se rellena repitiendo el último fotograma hasta que siga un patrón 4n+1 (1, 5, 9, 13, ...). El canal alfa se descarta durante el procesamiento; el nodo complementario Post-Process SeedVR2 Output lo restaura posteriormente a partir de la imagen redimensionada original.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `imágenes_redimensionadas` | La imagen redimensionada a procesar. | IMAGE | Sí | - |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `resized_images` | La imagen redimensionada que se va a procesar. | IMAGE | Sí | - |
 
-Nota: La entrada puede ser un solo fotograma, una secuencia de fotogramas o un lote de videos. Si tiene más de 3 canales, el canal alfa se elimina y solo se conserva RGB. El borde más corto de la entrada debe tener al menos 2 píxeles. El relleno espacial se rellena con negro (valor 0), y los recuentos de fotogramas válidos siguen un patrón 4n+1 (1, 5, 9, 13, ...).
+Nota: La entrada puede ser un solo fotograma, una secuencia de fotogramas o un lote de vídeos (tensores IMAGE en 4-D o 5-D). Si tiene más de 3 canales, el canal alfa se descarta y solo se conserva RGB. El lado más corto de la entrada debe medir al menos 2 píxeles. El relleno espacial se hace con negro (valor 0), y los números de fotogramas válidos siguen un patrón 4n+1 (1, 5, 9, 13, ...).
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `imágenes` | La imagen rellenada para la codificación VAE. | IMAGE |
+| `images` | La imagen con relleno para la codificación VAE. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SeedVR2Preprocess/es.md)
 

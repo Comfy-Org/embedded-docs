@@ -1,22 +1,22 @@
-# LumaRay32KeyframesToVideoNode
+# Luma Ray 3.2 Keyframes para Vídeo
 
-Este nó gera um vídeo que interpola através de uma sequência de imagens guia, cada uma ancorada a uma posição específica na linha do tempo, usando o Luma Ray 3.2. Construa a sequência de quadros-chave usando os nós de quadro-chave do Luma Ray 3.2, conectando pelo menos 2 quadros-chave para definir a animação.
+Este nó gera um vídeo que interpola através de uma sequência de imagens-guia, cada uma ancorada a uma posição específica na linha do tempo, usando Luma Ray 3.2. Construa a sequência de keyframes usando nós Luma Ray 3.2 Keyframe, conectando pelo menos 2 keyframes para definir a animação.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Prompt de texto para a geração do vídeo (padrão: string vazia). | STRING | Sim | 1 a 6000 caracteres |
-| `resolução` | A resolução de saída do vídeo gerado (padrão: "720p"). | COMBO | Sim | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
-| `duração` | A duração do vídeo gerado (padrão: "5s"). | COMBO | Sim | `"5s"`<br>`"10s"` |
+| `prompt` | Texto de prompt para a geração do vídeo (padrão: string vazia). | STRING | Sim | 1 a 6000 caracteres |
+| `resolution` | A resolução de saída do vídeo gerado (padrão: "720p"). | STRING | Sim | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+| `duration` | A duração do vídeo gerado (padrão: "5s"). | STRING | Sim | `"5s"`<br>`"10s"` |
 | `seed` | Semente para geração de números aleatórios para controlar a reprodutibilidade. | INT | Sim | 0 a 4294967295 |
-| `keyframes` | Sequência de quadros-chave dos nós de quadro-chave do Luma Ray 3.2 (pelo menos 2). | LUMA_RAY32_KEYFRAME | Sim | 2 a 64 quadros-chave |
+| `keyframes` | Sequência de keyframes dos nós Luma Ray 3.2 Keyframe (pelo menos 2). | LUMA_RAY32_KEYFRAME | Sim | 2 a 64 keyframes |
 
-**Nota:** A sequência de quadros-chave deve conter pelo menos 2 quadros-chave e no máximo 64 quadros-chave. Cada quadro-chave deve ter uma posição distinta na linha do tempo. As posições dos quadros-chave são resolvidas para índices de quadros de saída com base na duração selecionada (120 quadros para 5s, 240 quadros para 10s). As posições dos quadros-chave no modo de segundos não devem exceder a duração total do vídeo.
+**Nota:** A sequência de keyframes deve conter pelo menos 2 keyframes e no máximo 64 keyframes. Cada keyframe deve ter uma posição distinta na linha do tempo. As posições dos keyframes são resolvidas para índices de quadros de saída com base na duração selecionada (120 quadros para 5s, 240 quadros para 10s). As posições dos keyframes no modo segundos não devem exceder a duração total do vídeo.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
+| Nome da Saída | Descrição | Tipo de Dados |
 |-------------|-------------|-----------|
 | `video` | A saída de vídeo gerada. | VIDEO |
 | `generation_id` | O identificador único para a solicitação de geração. | STRING |

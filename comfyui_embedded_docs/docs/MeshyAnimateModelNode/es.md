@@ -1,13 +1,13 @@
 # Meshy: Animar Modelo
 
-Este nodo aplica una acción de animación específica a un personaje 3D previamente riggeado mediante el servicio Meshy. Toma un ID de tarea de una operación de rigging anterior y un ID de acción para seleccionar la animación deseada de la biblioteca, y luego devuelve el modelo animado en formatos de archivo GLB y FBX.
+Este nodo aplica una acción de animación específica a un personaje 3D previamente riggeado mediante el servicio Meshy. Toma un ID de tarea de una operación de rigging anterior y un ID de acción para seleccionar la animación deseada de la biblioteca, y luego devuelve el modelo animado tanto en formato de archivo GLB como FBX.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `rig_task_id` | El ID de tarea único de una operación de rigging de personaje de Meshy completada previamente. | STRING | Sí | N/A |
-| `action_id` | El número de ID de la acción de animación que se va a aplicar. Visite https://docs.meshy.ai/en/api/animation-library para obtener una lista de valores disponibles. (valor predeterminado: 0) | INT | Sí | 0 a 696 |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `rig_task_id` | El ID de tarea único de una operación de rigging de personaje de Meshy completada previamente. | MESHY_RIGGED_TASK_ID | Sí | N/A |
+| `action_id` | El número de ID de la acción de animación que se aplicará. Visite https://docs.meshy.ai/en/api/animation-library para obtener una lista de los valores disponibles. (predeterminado: 0) | INT | Sí | 0 a 696 |
 
 ## Salidas
 

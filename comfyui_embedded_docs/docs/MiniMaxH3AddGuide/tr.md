@@ -1,32 +1,32 @@
-# MiniMaxH3AddGuide
+# MiniMax H3 için Kılavuz Ekle
 
-Bu düğüm, bir MiniMax H3 videosunun seçilen herhangi bir karesine bir görüntü, kısa bir klip, ses veya film müziği içeren bir klibi sabitler. Belirtilen kare dizinine koşullandırmaya bir kılavuz ana kare ekler ve aynı videoda birden fazla kareyi sabitlemek için bu düğümlerden birkaçını zincirleyebilirsiniz.
+Bu düğüm, bir görüntüyü, kısa bir klibi, sesi veya ses parçasıyla birlikte bir klibi MiniMax H3 videosunun herhangi bir karesine sabitler. Seçilen kare indeksinde koşullandırmaya bir kılavuz anahtar karesi ekler ve aynı videoda birkaç kareyi sabitlemek için birkaç düğümü zincirleyebilirsiniz.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
-|-----------|-------------|-----------|----------|---------|
-| `positive` | Kılavuz ana karenin eklendiği koşullandırma. | CONDITIONING | Evet | - |
-| `latent` | Hedef videoyu tanımlayan MiniMax H3 ses-video latent değeri. MiniMax H3 AV latent değeri olmalıdır (iç içe, her biri 24 kanallı iki 5D tensör). | LATENT | Evet | - |
-| `frame_idx` | Görüntünün veya klibin ilk karesinin sabitleneceği kare dizini. Negatif değerler videonun sonundan itibaren sayılır. (varsayılan: 0) | INT | Evet | -9999 ile 9999 arası |
-| `vae` | Video VAE'si, bir görüntü bağlandığında gereklidir. | VAE | Hayır | - |
-| `audio_vae` | Ses VAE'si, bir ses bağlandığında gereklidir. | VAE | Hayır | - |
-| `image` | Sabitlenecek görüntü veya video kareleri. Çok kareli gruplar bir klip olarak sabitlenir ve modelin geçerli klip uzunluklarına kırpılır: 5, 22, 39... (17k + 5) kare. 5 kareden kısa gruplar yalnızca ilk görüntüyü kullanır. | IMAGE | Hayır | - |
-| `audio` | Aynı kare dizininden başlayarak sabitlenecek film müziği, videonun kalan süresine kırpılır. | AUDIO | Hayır | - |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `positive` | Kılavuz anahtar karesinin eklendiği koşullandırma. | CONDITIONING | Evet | - |
+| `vae` | Görüntü bağlandığında gerekli olan video VAE'si. | VAE | Hayır | - |
+| `audio_vae` | Ses bağlandığında gerekli olan ses VAE'si. | VAE | Hayır | - |
+| `latent` | Hedef videoyu tanımlayan MiniMax H3 ses-video latent değeri. MiniMax H3 AV latent olmalıdır (iç içe, iki adet 5D tensör içerir; video tensörü 24 kanallıdır). | LATENT | Evet | - |
+| `image` | Sabitlenecek görüntü veya video kareleri. Çok kareli gruplar bir klip olarak sabitlenir ve modelin geçerli klip uzunluklarına kırpılır: 5, 22, 39... (17k + 5) kare. 5 kareden kısa gruplarda yalnızca ilk görüntü kullanılır. | IMAGE | Hayır | - |
+| `audio` | Aynı kare indeksinden başlayarak sabitlenecek ses parçası; videonun kalan süresine kırpılır. | AUDIO | Hayır | - |
+| `frame_idx` | Görüntünün veya klibin ilk karesinin sabitleneceği kare indeksi. Negatif değerler videonun sonundan itibaren sayılır. (varsayılan: 0) | INT | Evet | -9999 ile 9999 |
 
 **Kısıtlamalar:**
-- `image` veya `audio` girdilerinden en az biri sağlanmalıdır; aksi takdirde düğüm bir hata verir.
+- En az bir `image` veya `audio` sağlanmalıdır; aksi halde düğüm bir hata verir.
 - `image` bağlandığında `vae` gereklidir.
 - `audio` bağlandığında `audio_vae` gereklidir.
-- 5 kareden az olan `image` grupları yalnızca ilk görüntüyü kullanır; 5 veya daha fazla kare içeren gruplar geçerli bir klip uzunluğuna (5, 22, 39, vb.) kırpılır.
-- `frame_idx`, kılavuzu videonun kare aralığına yerleştirmelidir ve çok kareli bir klip videoya tamamen sığmalıdır; aksi takdirde düğüm bir hata verir.
-- Ses bağlandığında, kare dizini videonun ses parçasının sonunun ötesinde olmamalıdır.
+- 5 kareden az `image` grubu yalnızca ilk görüntüyü kullanır; 5 veya daha fazla kare içeren gruplar geçerli bir klip uzunluğuna (5, 22, 39 vb.) kırpılır.
+- `frame_idx`, kılavuzu videonun kare aralığı içine yerleştirmelidir ve çok kareli bir klip videoya tamamen sığmalıdır; aksi halde düğüm bir hata verir.
+- Ses bağlandığında, kare indeksi videonun ses parçasının sonunu geçmemelidir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `positive` | Kılavuz ana kare eklenmiş koşullandırma; çözümlenmiş kare dizinini ve sağlandıysa kodlanmış görüntü veya ses latent değerlerini içerir. | CONDITIONING |
+| `positive` | Kılavuz anahtar karesi eklenmiş koşullandırma; çözümlenmiş kare indeksini ve sağlandığında kodlanmış görüntü veya ses latentlerini içerir. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MiniMaxH3AddGuide/tr.md)
 

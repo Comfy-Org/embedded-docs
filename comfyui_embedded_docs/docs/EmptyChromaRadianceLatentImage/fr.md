@@ -1,16 +1,16 @@
 # EmptyChromaRadianceLatentImage
 
-Le nœud EmptyChromaRadianceLatentImage crée une image latente vide avec des dimensions spécifiées pour une utilisation dans les flux de travail chroma radiance. Il génère un tenseur rempli de zéros qui sert de point de départ pour les opérations dans l'espace latent. Le nœud permet de définir la largeur, la hauteur et la taille du lot de l'image latente vide.
+Le nœud EmptyChromaRadianceLatentImage crée une image latente vide avec les dimensions que vous spécifiez, pour une utilisation dans les workflows chroma radiance. Il produit un tenseur rempli de zéros qui sert de point de départ aux opérations dans l'espace latent, vous permettant de définir la largeur, la hauteur et la taille de lot de l'image latente vide.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `largeur` | La largeur de l'image latente en pixels (défaut : 1024, doit être divisible par 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `hauteur` | La hauteur de l'image latente en pixels (défaut : 1024, doit être divisible par 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `taille_du_lot` | Le nombre d'images latentes à générer dans un lot (défaut : 1) | INT | Oui | 1 à 4096 |
+| `width` | La largeur de l'image latente en pixels (valeur par défaut : 1024) | INT | Oui | 16 à MAX_RESOLUTION |
+| `height` | La hauteur de l'image latente en pixels (valeur par défaut : 1024) | INT | Oui | 16 à MAX_RESOLUTION |
+| `batch_size` | Le nombre d'images latentes à générer dans un lot (valeur par défaut : 1) | INT | Oui | 1 à 4096 |
 
-Remarque : `width` et `height` sont définis avec un pas de 16, ils doivent donc être des multiples de 16.
+Remarque : `width` et `height` sont définis avec un pas de 16, donc les valeurs sont ajustées selon des multiples de 16.
 
 ## Sorties
 

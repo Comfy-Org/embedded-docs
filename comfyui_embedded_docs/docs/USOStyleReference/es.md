@@ -1,20 +1,20 @@
 # ReferenciaDeEstiloUSO
 
-El nodo USOStyleReference aplica una referencia de estilo a un modelo combinando las características de visión de CLIP con un parche de modelo, y devuelve una copia parcheada del modelo de entrada. Está diseñado para modelos Flux y está marcado como experimental. La información de estilo visual se combina con el condicionamiento de texto del modelo para que pueda influir en la generación.
+El nodo USOStyleReference aplica una referencia de estilo a un modelo combinando características de visión de CLIP con un parche de modelo, y devuelve una copia parcheada del modelo de entrada. La información de estilo visual se combina con el condicionamiento de texto del modelo para que pueda influir en la generación. Este nodo está destinado a modelos Flux y está marcado como experimental.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo base al que se le aplica el parche de referencia de estilo. | MODEL | Sí | - |
-| `parche_del_modelo` | El parche de modelo que contiene el modelo de proyección utilizado para codificar las características de la imagen de referencia. | MODEL_PATCH | Sí | - |
-| `salida_de_visión_clip` | Las características visuales codificadas extraídas del procesamiento de visión CLIP de la imagen de referencia. | CLIP_VISION_OUTPUT | Sí | - |
+| `model` | El modelo base al que se aplica el parche de referencia de estilo. | MODEL | Sí | - |
+| `model_patch` | El parche de modelo que contiene el modelo de proyección utilizado para codificar las características de la imagen de referencia. | MODEL_PATCH | Sí | - |
+| `clip_vision_output` | Las características visuales codificadas extraídas del procesamiento de visión CLIP de la imagen de referencia. | CLIP_VISION_OUTPUT | Sí | - |
 
-Nota: El `clip_vision_output` debe provenir de un modelo de visión CLIP que proporcione los estados ocultos completos y el penúltimo estado oculto. El nodo combina los estados ocultos vigésimo desde el último, undécimo desde el último y penúltimo en la incrustación de estilo. El `model_patch` debe exponer un modelo de proyección a través de su atributo `model` que convierta estas características de imagen en la incrustación de estilo. Durante el muestreo, la incrustación de estilo se antepone al condicionamiento de texto para que pueda influir en la generación.
+Nota: El `clip_vision_output` debe provenir de un modelo de visión CLIP que proporcione los estados ocultos completos y el penúltimo estado oculto. El nodo combina el vigésimo desde el final, el undécimo desde el final y el penúltimo estado oculto en el embedding de estilo. El `model_patch` debe exponer un modelo de proyección a través de su atributo `model` que convierta estas características de imagen en el embedding de estilo. Durante el muestreo, el embedding de estilo se antepone al condicionamiento de texto para que pueda influir en la generación, y los IDs de texto de posición cero coincidentes se anteponen a los IDs de texto para que la secuencia de identificadores permanezca alineada con el condicionamiento extendido.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
 | `model` | El modelo modificado con el parche de referencia de estilo aplicado. | MODEL |
 

@@ -1,17 +1,17 @@
 # GuardarModelo
 
-El nodo ModelSave guarda un modelo en el almacenamiento de tu computadora como un archivo de checkpoint `.safetensors`. Toma un modelo como entrada y lo escribe en el directorio de salida utilizando el prefijo de nombre de archivo que especifiques. Cuando está disponible, también incrusta información del prompt del flujo de trabajo y metadatos adicionales en el archivo guardado.
+El nodo ModelSave guarda un MODEL en el almacenamiento de tu equipo como un archivo de checkpoint `.safetensors`. Escribe el archivo en el directorio de salida de ComfyUI usando el prefijo de nombre de archivo que proporciones, e inserta la información del prompt del flujo de trabajo y los metadatos del modelo en el archivo guardado cuando están disponibles.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo que se guardará en el disco | MODEL | Sí | - |
-| `prefijo_nombre_archivo` | El prefijo de nombre de archivo y ruta para el archivo de modelo guardado (predeterminado: "diffusion_models/ComfyUI") | STRING | Sí | - |
+| `model` | El modelo que se va a guardar en disco | MODEL | Sí | - |
+| `filename_prefix` | El prefijo de nombre de archivo y ruta para el archivo de modelo guardado (predeterminado: "diffusion_models/ComfyUI") | STRING | Sí | - |
 | `prompt` | Información del prompt del flujo de trabajo (proporcionada automáticamente) | PROMPT | No | - |
 | `extra_pnginfo` | Metadatos adicionales del flujo de trabajo (proporcionados automáticamente) | EXTRA_PNGINFO | No | - |
 
-Nota: El nombre de archivo guardado se construye a partir del valor de `filename_prefix` seguido de un contador de cinco dígitos (por ejemplo, `diffusion_models/ComfyUI_00001_.safetensors`). Si ya existe un archivo con el mismo prefijo, el contador se incrementa para que el nuevo archivo tenga un nombre único. Cuando están disponibles, el prompt del flujo de trabajo, los metadatos adicionales y la información de la arquitectura del modelo se incrustan en el archivo guardado.
+Nota: El nombre de archivo guardado se construye a partir del valor de `filename_prefix` seguido de un contador de cinco dígitos (por ejemplo, `diffusion_models/ComfyUI_00001_.safetensors`). Si ya existe un archivo con el mismo prefijo, el contador se incrementa para que el nuevo archivo obtenga un nombre único. Cuando están disponibles, el prompt del flujo de trabajo, los metadatos adicionales y la información de arquitectura del modelo (por ejemplo, Stable Diffusion XL, SDXL Refiner, Stable Video Diffusion o Stable Diffusion 3) se insertan en el archivo guardado. Si el guardado de metadatos está deshabilitado mediante la configuración de línea de comandos de ComfyUI, el prompt y los metadatos adicionales no se escriben en el archivo.
 
 ## Salidas
 

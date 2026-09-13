@@ -1,19 +1,18 @@
 # Sesi Önizle
 
-The Preview Audio düğümü, sesi çıktı dizinine kaydetmeden doğrudan ComfyUI arayüzünde dinlemenizi sağlar. Ses verisini girdi olarak alır, varlığını doğrular ve geçici bir ses oynatıcısı göstererek sonucu duyabilmeniz için onu geçirir.
+Preview Audio düğümü, sesi çıktı dizinine kaydetmeden doğrudan ComfyUI içinde dinlemenizi sağlar. Bir ses girdisi alır, ses verisinin gerçekten mevcut olduğunu kontrol eder ve ardından aynı sesi çıktısı olarak iletirken arayüzdeki bir önizleme oynatıcısı aracılığıyla oynatır.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `ses` | Önizlenecek ses verisi. Kaynak videoda ses parçası yoksa girdi None olduğunda düğüm bir ValueError yükseltir. | AUDIO | Evet | - |
+| `audio` | Önizlenecek ses verisi. Bu girdi None ise düğüm bir ValueError yükseltir; bu, kaynak videoda ses parçası olmadığında meydana gelebilir. | AUDIO | Evet | - |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `audio` | Girdiden değiştirilmeden geçirilen ses verisi. | AUDIO |
-| `ui` | Sesin önizlenmesi için arayüzde bir ses oynatıcı bileşeni görüntüler. | UI |
+| `audio` | Girdiden değiştirilmeden geçirilen ses verisi; böylece düğüm bir iş akışının ortasına yerleştirilebilir. | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewAudio/tr.md)
 

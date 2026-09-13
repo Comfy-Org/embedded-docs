@@ -1,17 +1,18 @@
 # Sonilo Texte en Musique
 
-Le nœud Sonilo Text to Music génère de la musique à partir d'une description textuelle en utilisant le modèle IA de Sonilo. Vous fournissez un prompt décrivant la musique souhaitée, et le nœud envoie une requête au service Sonilo pour créer un fichier audio. Vous pouvez définir une durée cible pour le clip généré.
+Le nœud Sonilo Text to Music génère de la musique à partir d'une description textuelle à l'aide du modèle d'IA de Sonilo. Vous fournissez un prompt décrivant la musique souhaitée, et le nœud envoie une requête au service Sonilo pour créer un fichier audio. Vous pouvez définir une durée cible pour le clip généré.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `prompt` | Prompt textuel décrivant la musique à générer. Doit contenir entre 1 et 1000 caractères après suppression des espaces en début et fin de chaîne. | STRING | Oui | N/A |
-| `duration` | Durée cible en secondes. Maximum : 6 minutes. Défaut : 30. | INT | Non | 1 à 360 |
-| `seed` | Graine pour la reproductibilité. Actuellement ignorée par le service Sonilo, mais conservée pour la cohérence du graphe. Défaut : 0. | INT | Non | 0 à 18446744073709551615 |
+| `prompt` | Prompt textuel décrivant la musique à générer. Doit contenir de 1 à 1000 caractères après suppression des espaces blancs. | STRING | Oui | 1 à 1000 caractères |
+| `duration` | Durée cible en secondes. Maximum : 6 minutes. Par défaut : 30. | INT | Non | 1 à 360 |
+| `seed` | Graine pour la reproductibilité. Actuellement ignorée par le service Sonilo, mais conservée pour la cohérence du graphe. Par défaut : 0. | INT | Non | 0 à 18446744073709551615 |
 
 **Remarques :**
-- L'entrée `seed` est fournie pour la cohérence des workflows, mais n'affecte pas actuellement la sortie du service Sonilo.
+- L'entrée `seed` est fournie pour la cohérence du flux de travail, mais n'affecte actuellement pas la sortie du service Sonilo.
+- L'entrée `prompt` est obligatoire et doit être non vide ; le nœud valide qu'elle contient au moins 1 caractère (après suppression des espaces blancs) et au plus 1000 caractères.
 - L'utilisation est facturée à 0,0025 $ par seconde de `duration` demandée.
 
 ## Sorties

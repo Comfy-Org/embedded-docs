@@ -1,18 +1,18 @@
 # FluxDisableGuidance
 
-Ce nœud désactive complètement l'intégration du guidage sur les modèles Flux et similaires. Il prend des données de conditionnement en entrée et supprime la composante de guidage en la définissant sur None, désactivant ainsi le conditionnement basé sur le guidage pour le processus de génération.
+Ce nœud désactive complètement l'embedding de guidage sur les modèles Flux et de type Flux. Il prend en entrée des données de conditionnement et définit leur valeur de guidage sur None, ce qui désactive effectivement le conditionnement basé sur le guidage pour le processus de génération.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `conditionnement` | Les données de conditionnement à traiter et dont le guidage doit être retiré | CONDITIONING | Oui | - |
+| `conditioning` | Données de conditionnement à traiter et dont le guidage doit être retiré | CONDITIONING | Oui | - |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `conditioning` | Les données de conditionnement modifiées avec le guidage désactivé | CONDITIONING |
+| `conditioning` | Données de conditionnement modifiées avec le guidage désactivé | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxDisableGuidance/fr.md)
 

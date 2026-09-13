@@ -1,21 +1,21 @@
 # Model Dikkat Arka Ucu
 
-Bu düğüm, bir modelin dikkat hesaplamaları için kullandığı yoğun dikkat arka ucunu seçer. Verilen modeli kopyalar, seçilen arka ucu uygular ve yamalı kopyayı döndürür. Blok Seyrek Dikkat ile kullanıldığında, bu arka uç, seyrek dikkatin etkin olmadığı veya desteklenmediği durumlarda kullanılır. Seçilen arka uç kullanılamıyorsa, düğüm otomatik olarak PyTorch dikkatine geri döner.
+Bu düğüm, bir model için yoğun attention uygulamasını seçer, modeli klonlar, seçilen arka ucu uygular ve yamalanmış klonu döndürür. Block Sparse Attention ile kullanıldığında, bu arka uç seyrek attention etkin olmadığında veya desteklenmediğinde kullanılır. Seçilen arka uç kullanılamıyorsa, düğüm otomatik olarak PyTorch attention'a geri döner.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Yamalanacak model. | MODEL | Evet |  |
-| `dikkat` | Uygulanacak yoğun dikkat arka ucu (varsayılan: "pytorch attention"). Comfy Kitchen dikkati, nicelenmiş INT8 dikkat kullanır ve yalnızca Nvidia ve AMD GPU'larında kullanılabilir. Seçilen arka uç kullanılamıyorsa, geri dönüş olarak PyTorch dikkati kullanılır. | COMBO | Evet | "pytorch attention"<br>"comfy kitchen attention" |
+| `attention` | Uygulanacak yoğun attention arka ucu. Comfy Kitchen attention, nicemlenmiş INT8 attention kullanır ve yalnızca Nvidia ve AMD GPU'larda kullanılabilir. Varsayılan: "pytorch attention". Seçilen arka uç kullanılamıyorsa, geri dönüş olarak PyTorch attention kullanılır. | COMBO | Evet | "pytorch attention"<br>"comfy kitchen attention" |
 
-Not: "comfy kitchen attention" seçeneği yalnızca geçerli ortamda Comfy Kitchen INT8 dikkat modülü mevcut olduğunda listelenir.
+Not: "comfy kitchen attention" seçeneği yalnızca mevcut ortamda Comfy Kitchen INT8 attention modülü kullanılabilir olduğunda listelenir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `model` | Seçilen dikkat arka ucu uygulanmış girdi modelinin bir kopyası. | MODEL |
+| `model` | Seçilen attention arka ucu uygulanmış girdi modelinin bir klonu. | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelAttentionBackend/tr.md)
 

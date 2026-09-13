@@ -1,19 +1,21 @@
 # CLIPMergeAdd
 
-Le nœud CLIPMergeAdd combine deux modèles CLIP en ajoutant des correctifs (patches) du second modèle au premier. Il crée une copie du premier modèle CLIP et incorpore sélectivement les correctifs clés du second modèle, en excluant les identifiants de position et les paramètres d’échelle logit. Cela permet de fusionner les composants du modèle CLIP tout en préservant la structure du modèle de base.
+Le nœud CLIPMergeAdd combine deux modèles CLIP en ajoutant les patches du second modèle au premier modèle. Il crée une copie du premier modèle CLIP et intègre sélectivement les patches clés du second modèle, à l'exclusion des ID de position et des paramètres d'échelle logit. Cela vous permet de fusionner les composants de modèles CLIP tout en préservant la structure du modèle de base.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `clip1` | Le modèle CLIP de base qui sera cloné et utilisé comme fondation pour la fusion | CLIP | Oui | - |
-| `clip2` | Le modèle CLIP secondaire qui fournit les correctifs clés à ajouter au modèle de base | CLIP | Oui | - |
+| `clip2` | Le modèle CLIP secondaire qui fournit les patches clés à ajouter au modèle de base | CLIP | Oui | - |
+
+Les clés se terminant par `.position_ids` ou `.logit_scale` provenant de `clip2` sont ignorées, de sorte que ces paramètres conservent les valeurs de `clip1`.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `CLIP` | Un modèle CLIP fusionné contenant la structure du modèle de base avec les correctifs ajoutés depuis le modèle secondaire | CLIP |
+| `CLIP` | Un modèle CLIP fusionné contenant la structure du modèle de base avec les patches ajoutés du modèle secondaire | CLIP |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPMergeAdd/fr.md)
 

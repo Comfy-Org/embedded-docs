@@ -1,28 +1,27 @@
 # Seleccionar Dispositivo del Modelo
 
-## Descripción general
-
-El nodo SelectModelDevice permite elegir manualmente en qué dispositivo (CPU o una GPU específica) se ejecuta un modelo de difusión. Puede mover un modelo a un dispositivo diferente y gestiona automáticamente los conflictos con otros nodos de múltiples GPU.
+El nodo Select Model Device permite elegir manualmente en qué dispositivo (CPU o una GPU específica) se ejecuta un modelo de difusión. Puede mover un modelo a un dispositivo diferente y gestiona automáticamente los conflictos con otros nodos multi-GPU. Seleccionar `"default"` restaura el dispositivo original elegido por el cargador del modelo.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `model` | El modelo de difusión que se colocará en un dispositivo específico. | MODEL | Sí |  |
-| `device` | El dispositivo de destino para el modelo. Las opciones se generan dinámicamente según las GPU disponibles. (predeterminado: `"default"`) | COMBO | Sí | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>... (una entrada `"gpu:N"` por cada GPU detectada) |
+| `device` | El dispositivo de destino para el modelo. Las opciones se generan dinámicamente según los dispositivos disponibles en la máquina actual. (predeterminado: `"default"`) | COMBO | Sí | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>... (una entrada `"gpu:N"` por cada GPU detectada) |
 
 **Detalles de los parámetros:**
-- `"default"`: Restablece el dispositivo asignado por el cargador de modelos, incluso si un nodo SelectModelDevice anterior lo cambió.
-- `"cpu"`: Fija tanto el dispositivo de carga como el de descarga en la CPU.
-- `"gpu:N"`: Fija el dispositivo de carga a la enésima GPU disponible (p. ej., `"gpu:0"` para la primera GPU). El dispositivo de descarga se restablece a la elección original del cargador.
+- `"default"`: Restaura los dispositivos de carga y descarga asignados por el cargador del modelo, incluso después de una llamada previa a Select Model Device.
+- `"cpu"`: Fija tanto el dispositivo de carga como el de descarga a CPU.
+- `"gpu:N"`: Fija el dispositivo de carga a la N-ésima GPU disponible (por ejemplo, `"gpu:0"` para la primera GPU). El dispositivo de descarga se restaura a la elección original del cargador.
 
 **Notas importantes:**
-- Si el dispositivo solicitado no existe en la máquina actual (p. ej., un flujo de trabajo creado en una máquina con 2 GPU se abre en una máquina con 1 GPU), el nodo pasará el modelo sin cambios y registrará un mensaje en lugar de fallar.
-- Si el modelo ya está en el dispositivo solicitado, el nodo toma una ruta rápida y no vuelve a cargar el modelo.
-- Si el cargador de modelos no es compatible con múltiples GPU (sin fábrica de recarga), el nodo pasa el modelo sin cambios y registra una advertencia.
+- Si el dispositivo solicitado no existe en la máquina actual (por ejemplo, si un flujo de trabajo creado en una máquina con 2 GPU se abre en una máquina con 1 GPU), el nodo pasa el modelo sin cambios y registra un mensaje en lugar de fallar. Los valores `gpu:N` desconocidos se permiten durante la validación de entradas para que los flujos de trabajo portátiles no fallen de forma anticipada.
+- Si el modelo ya está en el dispositivo solicitado, el nodo usa una ruta rápida y no recarga el modelo.
+- Cuando el dispositivo solicitado difiere del dispositivo en el que ya está el modelo de entrada, se genera un modelo nuevo usando la fábrica de recarga del cargador, de modo que el nuevo patcher posee pesos independientes en el nuevo dispositivo.
+- Si el cargador de modelos no admite multi-GPU (no tiene fábrica de recarga), el nodo pasa el modelo sin cambios y registra una advertencia.
 - Cuando un clon de MultiGPU CFG Split ya ocupa el dispositivo seleccionado, ese clon se poda para que dos modelos no queden vinculados al mismo dispositivo.
-- Cuando se selecciona un dispositivo específico, el nodo también ajusta el dtype de cómputo del modelo a uno compatible con ese dispositivo.
-- Colocar este nodo *después* de un nodo que ya ha consumido el modelo (p. ej., un KSampler) no es recomendable, ya que cualquier estado modificado por el nodo anterior se observará si el dispositivo coincide con el original.
+- Cuando se selecciona un dispositivo no predeterminado (CPU o GPU), el nodo también ajusta el dtype de cómputo del modelo a uno compatible con ese dispositivo.
+- No se recomienda colocar este nodo después de un nodo que ya haya consumido el modelo (por ejemplo, un KSampler), porque cualquier estado modificado por el nodo anterior se observará si el dispositivo coincide con el original.
 
 ## Salidas
 

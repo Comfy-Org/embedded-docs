@@ -1,23 +1,23 @@
 # Runway Image vers Vidéo (Gen3a Turbo)
 
-Le nœud Runway Image to Video (Gen3a Turbo) génère une vidéo à partir d'une image de départ unique à l'aide du modèle Gen3a Turbo de Runway. Il prend une invite textuelle et une image initiale, puis crée une séquence vidéo en fonction de la durée et du format d'image spécifiés. Ce nœud se connecte à l'API de Runway pour traiter la génération à distance. Runway recommande de consulter son guide des bonnes pratiques avant de générer : https://help.runwayml.com/hc/en-us/articles/33927968552339-Creating-with-Act-One-on-Gen-3-Alpha-and-Turbo. Ce nœud est marqué comme étant obsolète.
+Le nœud Runway Image to Video (Gen3a Turbo) génère une vidéo à partir d’une seule image de départ à l’aide du modèle Gen3a Turbo de Runway. Il prend une invite textuelle et une image de départ, puis crée une séquence vidéo en fonction de la durée et du rapport d’aspect spécifiés. La génération est traitée à distance via l’API de Runway. Ce nœud est marqué comme obsolète.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `prompt` | Invite textuelle pour la génération (défaut : "") | STRING | Oui | N/A |
-| `image_début` | Image de départ à utiliser pour la vidéo | IMAGE | Oui | N/A |
-| `durée` | Durée de la vidéo en secondes (défaut : "5") | COMBO | Oui | `"5"`<br>`"10"` |
-| `ratio` | Format d'image de la vidéo générée (défaut : "768:1280") | COMBO | Oui | `"768:1280"`<br>`"1280:768"` |
-| `graine` | Graine aléatoire pour la génération (défaut : 0) | INT | Oui | 0 à 4294967295 |
+| `prompt` | Invite textuelle pour la génération (par défaut : "") | STRING | Oui | N/A |
+| `start_frame` | Image de départ à utiliser pour la vidéo | IMAGE | Oui | N/A |
+| `duration` | Durée de la vidéo générée, en secondes (par défaut : "5") | COMBO | Oui | `"5"`<br>`"10"` |
+| `ratio` | Rapport d’aspect de la vidéo générée (par défaut : "768:1280") | COMBO | Oui | `"768:1280"`<br>`"1280:768"` |
+| `seed` | Graine aléatoire pour la génération (par défaut : 0) | INT | Oui | 0 à 4294967295 |
 
 **Contraintes des paramètres :**
 
-- Le `start_frame` ne doit pas dépasser les dimensions de 7999x7999 pixels.
-- Le `start_frame` doit avoir un format d'image compris entre 0.5 et 2.0.
-- Le `start_frame` accepte une seule image (maximum de 1).
-- Le `prompt` doit contenir au moins un caractère (ne peut pas être vide).
+- `prompt` doit contenir au moins un caractère (il ne peut pas être vide).
+- `start_frame` accepte une seule image (maximum : 1).
+- `start_frame` ne doit pas dépasser 7999 x 7999 pixels en dimensions.
+- `start_frame` doit avoir un rapport d’aspect compris entre 1:2 et 2:1 (0,5 à 2,0).
 
 ## Sorties
 

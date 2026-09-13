@@ -1,53 +1,25 @@
 # Kling Metinden Videoya (Sesli)
 
-ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
+Kling Text to Video with Audio düğümü, bir metin açıklamasından kısa bir video oluşturur. Kling AI hizmetine bir istek gönderir; hizmet istemi işler ve bir video dosyası döndürür. Düğüm ayrıca metne dayalı olarak video için eşlik eden ses de oluşturabilir.
 
-## Çeviri Kuralları
+## Girdiler
 
-1. **Çevrilmemesi gereken içerik:**
-   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
-   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
-   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
-   - Kod, dosya yolları
-
-2. **Çevrilmesi gereken içerik:**
-   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
-   - Tüm açıklayıcı metinler
-   - Parametre açıklamaları
-
-3. **Çeviri kalitesi:**
-   - Standart Türkçe kullanın
-   - Profesyonel ama anlaşılır bir üslup koruyun
-   - Teknik doğruluğu sağlayın
-   - Standart Türkçe teknik terminolojiyi kullanın
-
-4. **Format:**
-   - Tüm Markdown biçimlendirmesini koruyun
-   - Tablo yapısını koruyun
-   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
-
-Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
-
-Kling Metinden Videoya Sesli düğümü, bir metin açıklamasından kısa bir video oluşturur. İsteği işleyen ve bir video dosyası döndüren Kling AI hizmetine bir istek gönderir. Düğüm, metne dayalı olarak video için eşlik eden ses de oluşturabilir.
-
-## Girişler
-
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-| --- | --- | --- | --- | --- |
-| `model_name` | Video oluşturma için kullanılacak belirli AI modeli. | COMBO | Evet | `"kling-v2-6"` |
-| `prompt` | Olumlu metin istemi. Videoyu oluşturmak için kullanılan açıklama. 1 ile 2500 karakter arasında olmalıdır. | STRING | Evet | - |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `model_name` | Video oluşturmak için kullanılacak belirli AI modeli. | COMBO | Evet | `"kling-v2-6"` |
+| `prompt` | Pozitif metin istemi. Videoyu oluşturmak için kullanılan açıklama. 1 ile 2500 karakter arasında olmalıdır. | STRING | Evet | - |
 | `mode` | Video oluşturma için çalışma modu. | COMBO | Evet | `"pro"` |
 | `aspect_ratio` | Oluşturulan video için istenen genişlik-yükseklik oranı. | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 | `duration` | Videonun saniye cinsinden uzunluğu. | COMBO | Evet | `5`<br>`10` |
-| `generate_audio` | Video için ses oluşturulup oluşturulmayacağını kontrol eder. Etkinleştirildiğinde, AI isteme dayalı olarak ses oluşturur. (varsayılan: `True`) | BOOLEAN | Hayır | - |
+| `generate_audio` | Video için ses oluşturulup oluşturulmayacağını kontrol eder. Etkinleştirildiğinde, AI isteme dayalı olarak ses oluşturur (varsayılan: `True`). | BOOLEAN | Hayır | - |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-| --- | --- | --- |
+|-------------|-------------|-----------|
 | `output` | Oluşturulan video dosyası. | VIDEO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingTextToVideoWithAudio/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `eff4549816c347a090e2f6e8ae8ba832bd2c5b7aef7c729b51c9d72b7a814d5a`
+**Source fingerprint (SHA-256):** `ddd2f3c1799abac067a05f3f5d6442ad4fe023d2f4f9afbde2894ca66854977e`

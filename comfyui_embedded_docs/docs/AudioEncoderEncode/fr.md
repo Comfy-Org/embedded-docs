@@ -1,19 +1,19 @@
 # EncodeurAudioEncoder
 
-Le nœud AudioEncoderEncode convertit des données audio en une représentation encodée à l'aide d'un modèle d'encodeur audio. Il prend un encodeur audio et une entrée audio brute, puis extrait la forme d'onde et la fréquence d'échantillonnage de l'audio pour produire une sortie encodée adaptée à un traitement ultérieur dans le pipeline de conditionnement.
+Le nœud AudioEncoderEncode convertit l'audio en une représentation encodée à l'aide d'un modèle d'encodeur audio. Il prend un encodeur audio et une entrée audio, puis extrait la forme d'onde et la fréquence d'échantillonnage de l'audio et les transmet à l'encodeur pour produire une sortie encodée.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `encodeur_audio` | Le modèle d'encodeur audio utilisé pour traiter l'entrée audio | AUDIO_ENCODER | Oui | - |
-| `audio` | Les données audio contenant les informations de forme d'onde et de fréquence d'échantillonnage | AUDIO | Oui | - |
+| `audio_encoder` | Modèle d'encodeur audio utilisé pour traiter l'entrée audio | AUDIO_ENCODER | Oui | - |
+| `audio` | Données audio contenant la forme d'onde et les informations de fréquence d'échantillonnage | AUDIO | Oui | - |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `output` | La représentation audio encodée générée par l'encodeur audio | AUDIO_ENCODER_OUTPUT |
+| `output` | Représentation audio encodée produite par l'encodeur audio | AUDIO_ENCODER_OUTPUT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioEncoderEncode/fr.md)
 

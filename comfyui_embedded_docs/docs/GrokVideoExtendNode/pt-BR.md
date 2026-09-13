@@ -1,6 +1,6 @@
 # Grok Video Extend
 
-O nó Grok Video Extend usa um modelo de IA para criar uma continuação perfeita de um vídeo existente. Você fornece um vídeo curto e um prompt de texto descrevendo o que deve acontecer em seguida, e o nó gera um novo clipe de vídeo que dá continuidade ao original.
+O nó Grok Video Extend estende um vídeo existente com uma continuação contínua baseada em um prompt de texto. Forneça um vídeo de origem curto e descreva o que deve acontecer a seguir; o nó retorna um novo clipe de vídeo que continua a partir do original.
 
 ## Entradas
 
@@ -8,10 +8,10 @@ O nó Grok Video Extend usa um modelo de IA para criar uma continuação perfeit
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `modelo` | O modelo a ser usado para a extensão de vídeo. | DYNAMIC_COMBO | Sim | `"grok-imagine-video"` |
-| `prompt` | Descrição textual do que deve acontecer em seguida no vídeo. | STRING | Sim | N/A |
-| `vídeo` | Vídeo de origem a ser estendido. Formato MP4, 2 a 15 segundos. | VIDEO | Sim | N/A |
-| `semente` | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente (padrão: 0). | INT | Sim | 0 a 2147483647 |
+| `model` | O modelo a ser usado para extensão de vídeo. Selecionar a opção `"grok-imagine-video"` revela suas configurações específicas do modelo. | DYNAMIC_COMBO | Sim | `"grok-imagine-video"` |
+| `prompt` | Descrição textual do que deve acontecer a seguir no vídeo. | STRING | Sim | N/A |
+| `video` | Vídeo de origem a ser estendido. Formato MP4, 2-15 segundos. | VIDEO | Sim | MP4, 2-15 segundos, máximo 50MB |
+| `seed` | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente (padrão: 0). | INT | Sim | 0 a 2147483647 |
 
 ### Entradas do grok-imagine-video
 
@@ -20,9 +20,9 @@ O nó Grok Video Extend usa um modelo de IA para criar uma continuação perfeit
 | `duration` | Duração da extensão em segundos (padrão: 8). | INT | Sim | 2 a 10 |
 
 **Restrições dos parâmetros:**
-*   A entrada `video` deve ser um arquivo MP4 com duração entre 2 e 15 segundos e não pode exceder 50MB de tamanho.
+*   A entrada `video` deve ser um arquivo MP4 entre 2 e 15 segundos de duração e não pode exceder 50MB de tamanho de arquivo.
 *   O `prompt` deve conter pelo menos um caractere após a remoção de espaços em branco.
-*   O parâmetro `model` é um combo dinâmico. Selecionar a opção "grok-imagine-video" revela o parâmetro aninhado `duration`.
+*   O parâmetro `model` é um combo dinâmico. Selecionar a opção `"grok-imagine-video"` revela o parâmetro `duration` aninhado.
 
 ## Saídas
 

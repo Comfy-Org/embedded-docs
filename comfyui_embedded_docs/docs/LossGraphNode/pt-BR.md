@@ -1,13 +1,13 @@
 # Plotar Gráfico de Loss
 
-O `LossGraphNode` cria um gráfico de linhas dos valores de perda de treinamento ao longo das etapas de treinamento e o exibe como uma imagem de pré-visualização. Ele lê os valores de perda de um nó de treinamento, plota-os em um gráfico com eixos rotulados e valores mínimo e máximo de perda, e retorna o gráfico como uma pré-visualização de imagem na interface.
+O LossGraphNode cria um gráfico de linhas com valores de perda de treinamento ao longo das etapas de treinamento e o exibe como uma imagem de pré-visualização. Ele lê valores de perda de um nó de treinamento, plota-os em um gráfico com eixos rotulados e valores mínimo/máximo de perda, e retorna o gráfico como uma pré-visualização de imagem na UI. Este nó está marcado como experimental e é um nó de saída.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `loss` | Mapa de perda do nó de treinamento. Deve conter uma chave `loss` com uma lista de valores numéricos de perda. | LOSS_MAP | Sim | - |
-| `filename_prefix` | Prefixo para a imagem do gráfico de perda salvo. (padrão: "loss_graph") | STRING | Sim | - |
+| `filename_prefix` | Prefixo para a imagem do gráfico de perda salva. (padrão: "loss_graph") | STRING | Sim | - |
 
 ## Saídas
 

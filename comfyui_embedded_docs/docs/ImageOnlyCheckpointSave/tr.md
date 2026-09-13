@@ -1,21 +1,21 @@
 # SadeceGörüntüKontrolNoktasıKaydet
 
-ImageOnlyCheckpointSave düğümü, bir model, CLIP görsel kodlayıcısı ve VAE içeren bir kontrol noktası (checkpoint) dosyası kaydeder. Belirtilen dosya adı önekine sahip bir safetensors dosyası oluşturur ve bunu çıktı dizinine kaydeder. Bu düğüm, görüntüyle ilgili model bileşenlerini tek bir kontrol noktası dosyasında birlikte kaydetmek için özel olarak tasarlanmıştır.
+Bu düğüm, bir modeli CLIP görüntü kodlayıcısı ve VAE'siyle birlikte paketleyen bir checkpoint dosyası kaydeder. Dosya, verilen dosya adı öneki kullanılarak çıktı dizinine safetensors biçiminde yazılır; böylece bir modelin görüntüyle ilgili bileşenleri tek bir checkpoint olarak depolanabilir.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Tipi | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Kontrol noktasına kaydedilecek model | MODEL | Evet | - |
-| `clip_görü` | Kontrol noktasına kaydedilecek CLIP görsel kodlayıcısı | CLIP_VISION | Evet | - |
-| `vae` | Kontrol noktasına kaydedilecek VAE (Varyasyonel Otomatik Kodlayıcı) | VAE | Evet | - |
-| `dosyaadı_öneki` | Çıktı dosya adı için önek (varsayılan: "checkpoints/ComfyUI") | STRING | Evet | - |
-| `prompt` | İş akışı prompt verileri için gizli parametre | PROMPT | Hayır | - |
-| `extra_pnginfo` | Ek PNG meta verileri | EXTRA_PNGINFO | Hayır | - |
+| `model` | Checkpoint'e kaydedilecek model | MODEL | Evet | - |
+| `clip_vision` | Checkpoint'e kaydedilecek CLIP görüntü kodlayıcısı | CLIP_VISION | Evet | - |
+| `vae` | Checkpoint'e kaydedilecek VAE (Varyasyonel Otomatik Kodlayıcı) | VAE | Evet | - |
+| `filename_prefix` | Çıktı dosya adı için önek (varsayılan: "checkpoints/ComfyUI") | STRING | Evet | - |
+| `prompt` | İş akışı istem verisini alan gizli parametre | PROMPT | Hayır | - |
+| `extra_pnginfo` | Ek PNG meta verisini alan gizli parametre | EXTRA_PNGINFO | Hayır | - |
 
 ## Çıktılar
 
-| Çıktı Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Tipi |
 | --- | --- | --- |
 | - | Bu düğüm herhangi bir çıktı döndürmez | - |
 

@@ -1,27 +1,26 @@
 # CosmosPredict2ImageToVideoLatent
 
-CosmosPredict2ImageToVideoLatent crea representaciones latentes de video a partir de imágenes para la generación de video. Puede generar un latente de video en blanco o incorporar imágenes de inicio y fin para crear secuencias de video con dimensiones y duración específicas. El nodo se encarga de codificar las imágenes en el formato de espacio latente adecuado para el procesamiento de video.
+Crea latentes de video para el flujo de trabajo de imagen a video de Cosmos Predict2. El nodo puede producir un latente de video vacío de un tamaño y una longitud dados, o insertar imágenes inicial y/o final codificadas en la secuencia para que esos fotogramas se conserven durante la generación. Cualquier imagen proporcionada se redimensiona al `width` y `height` solicitados y se codifica con el VAE proporcionado antes de colocarse al principio y/o al final de la secuencia latente.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `vae` | El modelo VAE utilizado para codificar imágenes en el espacio latente | VAE | Sí | - |
-| `ancho` | El ancho del video de salida en píxeles (predeterminado: 848, debe ser divisible por 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `alto` | La altura del video de salida en píxeles (predeterminado: 480, debe ser divisible por 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `longitud` | El número de fotogramas en la secuencia de video (predeterminado: 93, paso: 4) | INT | Sí | 1 a MAX_RESOLUTION |
-| `tamaño_del_lote` | El número de secuencias de video a generar (predeterminado: 1) | INT | Sí | 1 a 4096 |
-| `imagen_inicial` | Imagen inicial opcional para la secuencia de video | IMAGE | No | - |
-| `imagen_final` | Imagen final opcional para la secuencia de video | IMAGE | No | - |
+| `vae` | El modelo VAE utilizado para codificar las imágenes inicial y final en el espacio latente | VAE | Sí | - |
+| `width` | Ancho del video de salida en píxeles (predeterminado: 848, debe ser múltiplo de 16) | INT | Sí | 16 a MAX_RESOLUTION |
+| `height` | Altura del video de salida en píxeles (predeterminado: 480, debe ser múltiplo de 16) | INT | Sí | 16 a MAX_RESOLUTION |
+| `length` | Número de fotogramas en la secuencia de video (predeterminado: 93) | INT | Sí | 1 a MAX_RESOLUTION |
+| `batch_size` | Número de secuencias de video a generar (predeterminado: 1) | INT | Sí | 1 a 4096 |
+| `start_image` | Imagen inicial opcional para la secuencia de video | IMAGE | No | - |
+| `end_image` | Imagen final opcional para la secuencia de video | IMAGE | No | - |
 
-**Nota:** Cuando no se proporcionan ni `start_image` ni `end_image`, el nodo genera un latente de video en blanco. Cuando se proporciona una o ambas imágenes, se redimensionan a `width` y `height`, se codifican en el espacio latente y se colocan al inicio y/o al final de la secuencia de video, marcando las regiones correspondientes en la máscara de ruido para que se conserven durante la generación. El latente y la máscara resultantes se repiten `batch_size` veces.
+**Nota:** Cuando no se proporciona ni `start_image` ni `end_image`, el nodo simplemente devuelve un latente vacío del tamaño y la longitud solicitados. Cuando se proporciona una o ambas imágenes, se redimensionan a `width` y `height`, se codifican con el `vae` y se colocan al principio y/o al final de la secuencia latente. Las regiones correspondientes se marcan en la máscara de ruido para que se conserven durante la generación. Los latentes codificados se convierten con el formato latente de Wan 2.1, y el latente y la máscara resultantes se repiten `batch_size` veces.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `samples` | La representación latente de video generada que contiene la secuencia de video codificada | LATENT |
-| `noise_mask` | Una máscara que indica qué partes del latente deben conservarse durante la generación. Solo está presente cuando se proporciona al menos una de `start_image` o `end_image`. | LATENT |
+| `LATENT` | El latente de video generado que contiene `samples` (la secuencia de latentes de video) y, cuando se proporciona al menos uno de `start_image` o `end_image`, una `noise_mask` que marca los fotogramas que deben conservarse durante la generación | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CosmosPredict2ImageToVideoLatent/es.md)
 

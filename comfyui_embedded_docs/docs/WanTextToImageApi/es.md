@@ -1,55 +1,27 @@
 # Wan Texto a Imagen
 
-Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
-
-## Reglas de Traducción
-
-1. **Contenido que NO debe traducirse:**
-   - Nombres de parámetros entre comillas invertidas: `image`, `seed`, `model`
-   - Tipos de datos en MAYÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.
-   - Valores en columna Range: números, "auto", nombres de opciones
-   - Código, rutas de archivos
-
-2. **Contenido que SÍ debe traducirse:**
-   - Títulos de secciones: ## Descripción general, ## Entradas, ## Salidas
-   - Todo el texto descriptivo y explicativo
-   - Descripciones de parámetros
-
-3. **Calidad de traducción:**
-   - Usar español estándar y neutral
-   - Mantener tono profesional pero accesible
-   - Asegurar precisión técnica
-   - Usar terminología técnica estándar en español
-
-4. **Formato:**
-   - Mantener todo el formato Markdown
-   - Preservar estructura de tablas
-   - No agregar ninguna nota o enlace al inicio del documento (será agregado automáticamente)
-
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
-El nodo Wan Text to Image genera imágenes basadas en descripciones textuales. Utiliza modelos de IA para crear contenido visual a partir de indicaciones escritas, compatible con entrada de texto tanto en inglés como en chino. El nodo proporciona varios controles para ajustar el tamaño, la calidad y las preferencias de estilo de la imagen de salida.
+El nodo Wan Text to Image genera imágenes a partir de descripciones de texto. Utiliza modelos de IA para crear contenido visual a partir de prompts escritos, y admite entrada de texto en inglés y chino. El nodo ofrece varios controles para ajustar el tamaño, la calidad y las preferencias de estilo de la imagen de salida.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
-| `modelo` | Modelo a utilizar (predeterminado: "wan2.5-t2i-preview") | COMBO | Sí | "wan2.5-t2i-preview" |
-| `texto_entrada` | Indicación que describe los elementos y características visuales. Compatible con inglés y chino (predeterminado: vacío) | STRING | Sí | - |
-| `texto_negativo` | Indicación negativa que describe lo que se debe evitar (predeterminado: vacío) | STRING | No | - |
-| `ancho` | Ancho de la imagen en píxeles (predeterminado: 1024, incremento: 32) | INT | No | 768-1440 |
-| `alto` | Alto de la imagen en píxeles (predeterminado: 1024, incremento: 32) | INT | No | 768-1440 |
-| `semilla` | Semilla a utilizar para la generación (predeterminado: 0) | INT | No | 0-2147483647 |
-| `extender_texto` | Si se debe mejorar la indicación con asistencia de IA (predeterminado: True) | BOOLEAN | No | - |
-| `marca_agua` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False) | BOOLEAN | No | - |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `model` | Modelo que se va a usar (predeterminado: "wan2.5-t2i-preview") | STRING | Sí | "wan2.5-t2i-preview" |
+| `prompt` | Prompt que describe los elementos y las características visuales. Admite inglés y chino (predeterminado: vacío) | STRING | Sí | - |
+| `negative_prompt` | Prompt negativo que describe lo que se debe evitar (predeterminado: vacío) | STRING | No | - |
+| `width` | Ancho de la imagen en píxeles (predeterminado: 1024, paso: 32) | INT | No | 768-1440 |
+| `height` | Alto de la imagen en píxeles (predeterminado: 1024, paso: 32) | INT | No | 768-1440 |
+| `seed` | Semilla que se va a usar para la generación (predeterminado: 0) | INT | No | 0-2147483647 |
+| `prompt_extend` | Indica si se debe mejorar el prompt con asistencia de IA (predeterminado: True) | BOOLEAN | No | - |
+| `watermark` | Indica si se debe agregar una marca de agua generada por IA al resultado (predeterminado: False) | BOOLEAN | No | - |
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-| --- | --- | --- |
-| `output` | La imagen generada basada en la indicación textual | IMAGE |
+| Nombre de salida | Descripción | Tipo de datos |
+|-------------|-------------|-----------|
+| `output` | La imagen generada a partir del prompt de texto | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanTextToImageApi/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `2a59551d7ff0fc0553f41561afd94092d2d950ac3e1aa3f6402436540da7d6fb`
+**Source fingerprint (SHA-256):** `208b7c839da45316aeb1a14a3e9d176eeb09b2f931f764fb8a296da15ae3bd4e`

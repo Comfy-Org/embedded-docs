@@ -1,22 +1,26 @@
 # Normaliser les images
 
-Ce nœud ajuste les valeurs de pixels d’une image d’entrée à l’aide d’un processus de normalisation mathématique. Il soustrait une valeur moyenne spécifiée de chaque pixel, puis divise le résultat par un écart type spécifié. Il s’agit d’une étape de prétraitement courante pour préparer les données d’image à d’autres modèles d’apprentissage automatique.
+Ce nœud normalise les couleurs d'une image d'entrée en ajustant ses valeurs de pixels selon une moyenne et un écart-type spécifiés. La moyenne est soustraite de chaque pixel, puis le résultat est divisé par l'écart-type, ce qui est une étape courante pour standardiser les données d'image avant d'autres traitements.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
-| --- | --- | --- | --- | --- |
-| `image` | L’image d’entrée à normaliser. | IMAGE | Oui | - |
-| `moyenne` | Valeur moyenne pour la normalisation (par défaut : 0.5). | FLOAT | Non | 0.0 - 1.0 |
-| `écart_type` | Écart type pour la normalisation (par défaut : 0.5). | FLOAT | Non | 0.001 - 1.0 |
+|-----------|-------------|-----------|----------|-------|
+| `image` | Image d'entrée à normaliser. | IMAGE | Oui | - |
+| `mean` | Valeur moyenne pour la normalisation (par défaut : 0.5). | FLOAT | Non | 0.0 - 1.0 |
+| `std` | Écart-type pour la normalisation (par défaut : 0.5). | FLOAT | Non | 0.001 - 1.0 |
 
-Remarque : lorsque l’image d’entrée comprend un canal alpha (transparence), ce canal n’est pas normalisé. Il est conservé tel quel dans la sortie, car alpha stocke la transparence plutôt que la couleur.
+Les paramètres `mean` et `std` contrôlent la normalisation appliquée à l'image d'entrée. La valeur par défaut des deux paramètres est 0.5.
+
+Remarque : Si l'image d'entrée possède un canal alpha (transparence), ce canal n'est pas normalisé. Il est copié tel quel vers la sortie, car le canal alpha stocke la transparence plutôt que la couleur.
+
+Remarque : Le nœud fonctionne avec n'importe quelle taille de lot, donc plusieurs images peuvent être traitées en même temps.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
-| --- | --- | --- |
-| `images` | L’image résultante après application du processus de normalisation. | IMAGE |
+|-------------|-------------|-----------|
+| `image` | Image résultante après application du processus de normalisation. Les valeurs des pixels sont ajustées à l'aide de la moyenne et de l'écart-type spécifiés, et le canal alpha (s'il est présent) est préservé. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/NormalizeImages/fr.md)
 

@@ -1,19 +1,19 @@
 # OrientaciónTriangularCFGVideo
 
-El nodo VideoTriangleCFGGuidance aplica un patrón de escala de guía sin clasificador (CFG) triangular a un modelo de video. Varía la escala de condicionamiento a lo largo del tiempo mediante una onda triangular que oscila entre `min_cfg` y la escala de condicionamiento original del modelo. Esto crea un patrón de guía dinámico que puede ayudar a mejorar la consistencia y la calidad de la generación de videos.
+El nodo VideoTriangleCFGGuidance aplica un patrón de escalado de guía libre de clasificador (CFG) triangular a un modelo de video. Varía la escala de condicionamiento usando una onda triangular que oscila entre `min_cfg` y la escala de condicionamiento original del modelo. Esto crea un patrón de guía dinámico que puede ayudar a mejorar la consistencia y la calidad de la generación de video.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo de video al que se aplicará la guía CFG triangular | MODEL | Sí | - |
-| `min_cfg` | El valor mínimo de escala CFG para el patrón triangular (predeterminado: 1.0). Este parámetro se muestra en la sección avanzada de la interfaz del nodo. | FLOAT | Sí | 0.0 - 100.0 (paso: 0.5, redondeo: 0.01) |
+| `model` | El modelo de video al que se aplicará la guía CFG triangular. | MODEL | Sí | - |
+| `min_cfg` | El valor mínimo de escala CFG para el patrón triangular. Este parámetro se muestra en la sección avanzada de la interfaz del nodo (predeterminado: 1.0). | FLOAT | Sí | 0.0 - 100.0 (paso: 0.5, redondeo: 0.01) |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `model` | El modelo modificado con la guía CFG triangular aplicada | MODEL |
+| `model` | El modelo modificado con la guía CFG triangular aplicada. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoTriangleCFGGuidance/es.md)
 

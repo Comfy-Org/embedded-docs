@@ -1,6 +1,6 @@
 # Bria Generative Fill
 
-Este nó gera objetos ou cenários dentro de uma região mascarada de uma imagem usando a Bria. Ele faz upload da imagem e da máscara, envia o prompt ao serviço de preenchimento generativo da Bria, aguarda a conclusão da operação e retorna a imagem editada. Esta é uma operação de API paga (US$ 0,0429 por solicitação).
+Este nó gera objetos ou cenários dentro de uma região mascarada de uma imagem usando Bria. Ele faz upload da imagem e da máscara, envia o prompt ao serviço de preenchimento generativo da Bria, aguarda a conclusão da operação e retorna a imagem editada. Esta é uma operação de API paga (US$ 0,0429 por solicitação).
 
 ## Entradas
 
@@ -9,12 +9,12 @@ Este nó gera objetos ou cenários dentro de uma região mascarada de uma imagem
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `image` | A imagem de entrada a ser editada. | IMAGE | Sim | - |
-| `mask` | Áreas brancas são preenchidas com conteúdo gerado; áreas pretas são preservadas. A máscara é binarizada antes do envio, então áreas parcialmente pintadas contam como brancas. Deve ter a mesma proporção de aspecto que a imagem. | MASK | Sim | - |
-| `prompt` | Descrição do que deve ser gerado dentro da região mascarada. Deve conter pelo menos 1 caractere. (padrão: "") | STRING | Sim | - |
-| `negative_prompt` | Um prompt que descreve conteúdo a ser evitado no resultado gerado. Se deixado vazio, não é enviado à API. (padrão: "") | STRING | Sim | - |
-| `refine_prompt` | Ajusta automaticamente o prompt para obter melhores resultados; desative para usar o prompt exatamente como escrito. (padrão: true) | BOOLEAN | Sim | true<br>false |
+| `mask` | Áreas brancas são preenchidas com conteúdo gerado; áreas pretas são preservadas. A máscara é binarizada antes do envio com um corte de 50%: apenas áreas pintadas acima de 50% de opacidade contam como brancas. Deve ter a mesma proporção que a imagem. | MASK | Sim | - |
+| `prompt` | Descrição do que gerar dentro da região mascarada. Deve conter pelo menos 1 caractere. (padrão: "") | STRING | Sim | - |
+| `negative_prompt` | Um prompt que descreve conteúdo a evitar no resultado gerado. Se deixado vazio, não é enviado à API. (padrão: "") | STRING | Sim | - |
+| `refine_prompt` | Ajusta automaticamente o prompt para melhores resultados; desative para usar o prompt exatamente como escrito. (padrão: true) | BOOLEAN | Sim | true<br>false |
 | `seed` | Semente para o processo de geração. (padrão: 42) | INT | Sim | 1 a 2147483647 |
-| `moderação` | Configurações de moderação. Quando definido como "true", as opções de moderação abaixo são aplicadas. (padrão: "false") | DYNAMIC_COMBO | Sim | "false"<br>"true" |
+| `moderation` | Configurações de moderação. Quando definido como "true", as opções de moderação abaixo são aplicadas. (padrão: "false") | DYNAMIC_COMBO | Sim | "false"<br>"true" |
 
 ### Entradas de moderação (quando `moderation` = "true")
 
@@ -24,7 +24,7 @@ Este nó gera objetos ou cenários dentro de uma região mascarada de uma imagem
 | `visual_input_moderation` | Aplica moderação de conteúdo à imagem de entrada. (padrão: false) | BOOLEAN | Não | true<br>false |
 | `visual_output_moderation` | Aplica moderação de conteúdo à imagem de saída. (padrão: false) | BOOLEAN | Não | true<br>false |
 
-**Nota:** O `prompt` não pode estar vazio. A `mask` deve ter a mesma proporção de aspecto que a `image`. A máscara é binarizada com 50% de opacidade, então áreas pintadas com menos de metade da opacidade são ignoradas; se a máscara não contiver áreas brancas após a binarização, o nó lança um erro.
+**Observação:** O `prompt` não pode estar vazio. A `mask` deve ter a mesma proporção que a `image`. A máscara é binarizada com 50% de opacidade, então áreas pintadas com menos de metade da opacidade são ignoradas; se a máscara não contiver áreas brancas após a binarização, o nó gera um erro.
 
 ## Saídas
 

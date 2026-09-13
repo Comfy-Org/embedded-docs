@@ -1,36 +1,34 @@
-# LTXVAddLatentGuide
+# LTXV Añadir guía latente
 
-## Resumen
-
-El nodo Guía de Añadir Latente LTXV fija un latente ya codificado como una guía, permitiendo el uso de una guía que proviene de una etapa anterior en lugar de una imagen. Este nodo evita el viaje de decodificación/encodificación del VAE y puede dilatar una guía espacialmente más pequeña en una cuadrícula dispersa para cubrir el lienzo objetivo.
+El nodo LTXV Add Latent Guide fija un latente ya codificado como guía, para cuando la guía proviene de una etapa anterior en lugar de una imagen. Tiene el mismo efecto que LTXV Add Guide sin el ciclo de decodificación/codificación del VAE. Una guía que es espacialmente más pequeña que el destino (una referencia IC-LoRA o de detallado) se dilata sobre una cuadrícula dispersa, y sus posiciones finales de RoPE se expanden en la misma proporción para que cubra el lienzo de destino en lugar de dirigirse solo a la esquina superior izquierda de este.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
 | `positive` | Entrada de condicionamiento positivo. | CONDITIONING | Sí | N/A |
 | `negative` | Entrada de condicionamiento negativo. | CONDITIONING | Sí | N/A |
-| `vae` | El modelo VAE a usar. | MODEL | Sí | N/A |
-| `latent` | Latente de video objetivo al que se fija la guía. | LATENT | Sí | N/A |
-| `guiding_latent` | Latente de guía. Su tamaño espacial debe dividir el tamaño del objetivo por el mismo número entero en ambos ejes; un tamaño igual fija la guía tal cual, la mitad del tamaño se trata como una referencia IC-LoRA x2. | LATENT | Sí | N/A |
-| `latent_idx` | Índice de cuadro de latente para comenzar la guía, contado en cuadros latentes en lugar de cuadros de píxeles. Valores negativos colocan la guía en cuadros antes del inicio del latente, no contados hacia atrás desde su final. | INT | Sí | -9999 a 9999 |
-| `strength` | Acotado en 1.0. Una guía dilatada marca sus posiciones de relleno con una máscara de desenoise negativa para que el modelo los descarte; valores por encima de 1.0 los posiciones mantenidas también serían negativas y toda la guía sería descartada. Amplifique más allá de 1.0 con attention_mask en su lugar. | FLOAT | Sí | 0.0 a 1.0, paso 0.01 |
-| `attention_mask` | Máscara espacial opcional en espacio de píxeles. Controla la influencia de condicionamiento por región a través de auto-consideración, multiplicada por la fuerza. | MASK | No | N/A |
+| `vae` | El modelo VAE usado para leer la fórmula del índice de reducción de escala para la ubicación de fotogramas. | VAE | Sí | N/A |
+| `latent` | Latente de video de destino sobre el que se fija la guía. | LATENT | Sí | N/A |
+| `guiding_latent` | Latente de guía. Su tamaño espacial debe dividir el del destino por el mismo número entero en ambos ejes; un tamaño igual lo fija tal cual, la mitad del tamaño se trata como una referencia IC-LoRA x2. | LATENT | Sí | N/A |
+| `latent_idx` | Índice de fotograma latente en el que iniciar la guía, contado en fotogramas latentes en lugar de fotogramas de píxeles. Los valores negativos colocan la guía en fotogramas anteriores al inicio del latente, no contados hacia atrás desde su final. Predeterminado: 0. | INT | Sí | -9999 a 9999 |
+| `strength` | Limitado a 1.0. Una guía dilatada marca sus posiciones de relleno con una máscara de denoising negativa para que el modelo las descarte; por encima de 1.0 las posiciones conservadas también se volverían negativas y se descartaría toda la guía. Amplifica más allá de 1.0 con attention_mask en su lugar. Predeterminado: 1.0. | FLOAT | Sí | 0.0 a 1.0, paso 0.01 |
+| `attention_mask` | Máscara espacial opcional en el espacio de píxeles. Controla la influencia del condicionamiento por región mediante self-attention, multiplicada por strength. | MASK | No | N/A |
+
+### Notas
+
+- Tanto `latent` como `guiding_latent` deben ser latentes de video 5D con forma (batch, channels, frames, height, width).
+- La guía debe caber dentro del latente de destino: el número de fotogramas de la guía sumado a `latent_idx` no debe superar el final del latente de destino. Los valores negativos de `latent_idx` están permitidos y colocan la guía antes del inicio del latente.
+- El tamaño espacial de la guía debe dividir el tamaño espacial del destino por un número entero tanto en el eje de altura como en el de anchura.
+- La proporción de altura y la proporción de anchura deben ser el mismo valor (una proporción cuadrada). Una proporción no cuadrada genera un error, porque la dilatación y la ubicación de RoPE usan un único factor de reducción de escala para ambos ejes.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Datos |
+| Nombre de salida | Descripción | Tipo de dato |
 |-------------|-------------|-----------|
-| `positive` | Salida de condicionamiento positivo. | CONDITIONING |
-| `negative` | Salida de condicionamiento negativo. | CONDITIONING |
-| `latent` | Salida latente con la guía aplicada. | LATENT |
-
-## Notas
-
-- El tamaño espacial del `guiding_latent` debe dividir el tamaño `latent` por el mismo número entero en ambos ejes.
-- El parámetro `latent_idx` permite una colocación precisa de la guía dentro de los cuadros latentes.
-- El parámetro `strength` controla la intensidad de la guía, con valores por encima de 1.0 que requieren el uso de `attention_mask` para evitar posiciones negativas.
-- El parámetro `attention_mask` es opcional pero se puede usar para afinar la influencia de la guía en regiones específicas de la imagen.
+| `positive` | Condicionamiento positivo con la guía adjunta. | CONDITIONING |
+| `negative` | Condicionamiento negativo con la guía adjunta. | CONDITIONING |
+| `latent` | Salida de latente con la guía aplicada, incluida la `noise_mask` actualizada. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddLatentGuide/es.md)
 

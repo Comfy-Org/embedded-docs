@@ -1,19 +1,21 @@
 # WanMoveVisualizeTracks
 
-El nodo WanMoveVisualizeTracks superpone datos de seguimiento de movimiento sobre una secuencia de imágenes o fotogramas de video. Dibuja representaciones visuales de los puntos rastreados, incluidas sus trayectorias de movimiento y sus posiciones actuales, haciendo que los datos de movimiento sean visibles y más fáciles de analizar.
+El nodo WanMoveVisualizeTracks superpone datos de seguimiento de movimiento sobre una secuencia de imágenes o fotogramas de video. Dibuja representaciones visuales de los puntos rastreados, incluidas sus trayectorias de movimiento y posiciones actuales, lo que hace que los datos de movimiento sean visibles y más fáciles de analizar.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `imágenes` | La secuencia de imágenes de entrada o fotogramas de video sobre la cual visualizar las trayectorias. | IMAGE | Sí | - |
-| `pistas` | Los datos de seguimiento de movimiento que contienen las trayectorias de los puntos e información de visibilidad. Si no se proporcionan, las imágenes de entrada se pasan sin cambios. | TRACKS | No | - |
-| `resolución_de_línea` | El número de fotogramas anteriores que se utilizarán al dibujar la línea de trayectoria para cada punto rastreado (valor predeterminado: 24). | INT | Sí | 1 - 1024 |
-| `tamaño_círculo` | El tamaño del círculo dibujado en la posición actual de cada punto rastreado (valor predeterminado: 12). | INT | Sí | 1 - 128 |
-| `opacidad` | La opacidad de las superposiciones de seguimiento dibujadas (valor predeterminado: 0.75). | FLOAT | Sí | 0.0 - 1.0 |
-| `ancho_de_línea` | El ancho de las líneas utilizadas para dibujar las trayectorias de los puntos (valor predeterminado: 16). | INT | Sí | 1 - 128 |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `images` | La secuencia de imágenes de entrada o fotogramas de video sobre los que se visualizarán las pistas. | IMAGE | Sí | - |
+| `tracks` | Los datos de seguimiento de movimiento que contienen las trayectorias de puntos y la información de visibilidad. Si no se proporcionan, las imágenes de entrada se pasan sin cambios. | TRACKS | No | - |
+| `line_resolution` | El número de fotogramas anteriores que se usarán al dibujar la línea de trayectoria de estela para cada pista (predeterminado: 24). | INT | Sí | 1 - 1024 |
+| `circle_size` | El tamaño del círculo dibujado en la posición actual de cada pista (predeterminado: 12). Marcado como parámetro avanzado. | INT | Sí | 1 - 128 |
+| `opacity` | La opacidad de las superposiciones de pistas dibujadas (predeterminado: 0.75). | FLOAT | Sí | 0.0 - 1.0 |
+| `line_width` | El ancho de las líneas usadas para dibujar las trayectorias de las pistas (predeterminado: 16). Marcado como parámetro avanzado. | INT | Sí | 1 - 128 |
 
-**Nota:** Si el número de imágenes de entrada no coincide con el número de fotogramas en los datos `tracks` proporcionados, la secuencia de imágenes se repetirá para que coincida con la longitud de los tracks.
+**Nota:** Si el número de imágenes de entrada no coincide con el número de fotogramas de los datos de `tracks` proporcionados, la secuencia de imágenes se repetirá para coincidir con la longitud de las pistas.
+
+**Nota:** Los puntos de seguimiento se dibujan con un conjunto limitado de colores repetidos, y un punto se omite en un fotograma cuando su indicador de visibilidad es cero para ese fotograma.
 
 ## Salidas
 

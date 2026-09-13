@@ -1,19 +1,21 @@
 # TomePatchModel
 
-TomePatchModel aplica Token Merging (ToMe) a um modelo de difusão para reduzir os requisitos computacionais durante a inferência. Ele funciona mesclando seletivamente tokens semelhantes no mecanismo de atenção, permitindo que o modelo processe menos tokens enquanto mantém a qualidade da imagem. Essa técnica ajuda a acelerar a geração sem perda significativa de qualidade.
+TomePatchModel aplica Token Merging (ToMe) a um modelo de difusão para reduzir o custo computacional durante a inferência. Ele funciona fundindo tokens semelhantes dentro do mecanismo de atenção do modelo, de modo que o modelo processa menos tokens enquanto mantém a qualidade da saída em grande parte intacta.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `modelo` | O modelo de difusão ao qual aplicar a fusão de tokens | MODEL | Sim | - |
-| `proporção` | A proporção de tokens a mesclar (padrão: 0.3). Valores maiores mesclam mais tokens, resultando em maior aceleração, mas potencialmente menor qualidade. | FLOAT | Sim | 0.0 - 1.0 |
+| `model` | O modelo de difusão ao qual aplicar a fusão de tokens | MODEL | Sim | - |
+| `ratio` | A proporção de tokens a fundir (padrão: 0.3). Valores mais altos fundem mais tokens, o que pode proporcionar maior aceleração, mas potencialmente menor qualidade. | FLOAT | Sim | 0.0 - 1.0 |
+
+Observação: Se o número de tokens em um bloco de atenção for pequeno o suficiente para que nenhum downsampling seja necessário, as funções de fusão são substituídas por no-ops, e o modelo é executado sem alterações para esse bloco.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `model` | O modelo modificado com fusão de tokens aplicada | MODEL |
+| `model` | O modelo modificado com a fusão de tokens aplicada | MODEL |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TomePatchModel/pt-BR.md)
 

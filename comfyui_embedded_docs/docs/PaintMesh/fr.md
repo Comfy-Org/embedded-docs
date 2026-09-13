@@ -1,21 +1,21 @@
-# PaintMesh
+# Peindre le maillage
 
-PaintMesh prend en entrée un maillage 3D et un champ de voxels colorés. Il attribue à chaque sommet la couleur du voxel le plus proche du champ, en écrivant le résultat sous forme de couleurs de sommets sur le maillage de sortie. Si le champ de voxels est vide, le maillage est peint avec des couleurs de sommets nulles par défaut (noir).
+PaintMesh prend un maillage 3D et un champ de couleurs de voxels. Il attribue à chaque sommet la couleur du voxel le plus proche dans le champ et renvoie le maillage avec ces couleurs de sommets appliquées. Si le champ de voxels est vide, le maillage est peint avec des couleurs de sommets par défaut à zéro (noir).
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
-|-----------|-------------|-----------|----------|-------|
-| `maillage` | Le maillage à peindre. | MESH | Oui | N/A |
-| `voxel_colors` | Champ de voxels contenant les données de couleur utilisées pour la peinture. Seuls les canaux RGB de la couleur de base sont utilisés à partir du champ. | VOXEL | Oui | N/A |
+|-----------|-------------|-----------------|--------|-------|
+| `mesh` | Le maillage à peindre. | MESH | Oui | N/A |
+| `voxel_colors` | Champ de voxels contenant les données de couleur utilisées pour la peinture. Seuls les canaux RGB de couleur de base sont utilisés à partir du champ. | VOXEL | Oui | N/A |
 
-Remarque : Lorsque les coordonnées du champ de voxels incluent un canal d'indice de lot et que le maillage d'entrée contient plusieurs éléments de maillage, le nœud applique les couleurs séparément à chaque élément de maillage du lot. Les couleurs échantillonnées sont converties de sRGB en RGB linéaire pour le maillage de sortie.
+Remarque : Lorsque les coordonnées du champ de voxels incluent un canal d'index de lot et que le maillage d'entrée contient plusieurs éléments de maillage, le nœud applique les couleurs séparément à chaque élément de maillage du lot. Si un élément de maillage donné ne possède aucun voxel correspondant, il reçoit des couleurs de sommets par défaut à zéro (noir). Les couleurs échantillonnées sont converties de sRGB en RGB linéaire pour le maillage de sortie, car le champ de voxels peut contenir des données PBR complètes, mais seuls les canaux RGB de couleur de base sont utilisés pour les couleurs de sommets.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
-|-------------|-------------|-----------|
-| `maillage` | Le maillage peint avec des couleurs de sommets appliquées. | MESH |
+|---------------|-------------|-----------------|
+| `mesh` | Le maillage peint avec les couleurs de sommets appliquées. | MESH |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PaintMesh/fr.md)
 

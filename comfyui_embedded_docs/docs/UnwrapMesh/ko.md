@@ -1,24 +1,24 @@
 # 메시 UV 펼치기
 
-3D 메시에 대한 UV 아틀라스를 생성합니다. 메시 표면은 차트(chart)로 분할되며, 각 차트는 2차원으로 평면화된 후 [0,1] UV 아틀라스에 패킹됩니다. 차트 경계(seam)의 정점은 중복되므로 출력 메시는 입력 메시보다 많은 정점을 포함할 수 있습니다.
+Generates a UV atlas for a 3D mesh. The mesh surface is split into charts, each chart is flattened into two dimensions, and the flattened charts are packed into a [0,1] UV atlas. Vertices on chart seams are duplicated (one copy per chart, same position, own UV), so the output mesh can contain more vertices than the input mesh, and the output faces may differ in count from the input.
 
 ## 입력
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `mesh` | 언랩할 입력 메시입니다. 단일 메시 또는 메시 배치를 허용합니다. | MESH | 예 | — |
-| `segmenter` | 사용할 차팅(charting) 알고리즘입니다. `pec`: GPU에서 빠른 병렬 에지 축소 차팅입니다. `adaptive`: CPU 기반이며 더 느립니다. (기본값: "pec") | COMBO | 예 | "pec"<br>"adaptive" |
-| `resolution` | 텍셀 밀도 자동 스케일링을 위한 대상 아틀라스 해상도입니다 (0 = 콘텐츠에 맞춤). (기본값: 1024) | INT | 예 | 0 ~ 8192 (단계 256) |
-| `padding` | 차트 사이의 텍셀 패딩입니다. (기본값: 1) | INT | 예 | 0 ~ 16 |
-| `weld_distance` | 메시 범위 대비 일치 정점 병합 반경입니다 (0 = 자동). 삼각형별 차트(용접되지 않은 입력)가 생성되는 경우 약 0.001로 올리십시오. (기본값: 0.0) | FLOAT | 예 | 0.0 ~ 1.0 (단계 0.0001) |
+| `mesh` | 언랩할 입력 메시입니다. 단일 메시 또는 메시 배치를 받습니다. 배치는 한 번에 하나씩 처리됩니다. | MESH | 예 | — |
+| `segmenter` | 사용할 차트화 알고리즘입니다. `pec`: GPU에서 빠른 병렬 에지 축약 차트화입니다. `adaptive`: CPU 기반이며 더 느립니다. (기본값: "pec") | COMBO | 예 | "pec"<br>"adaptive" |
+| `resolution` | 텍셀 밀도 자동 스케일을 위한 대상 아틀라스 해상도입니다(0 = 콘텐츠에 맞춤). (기본값: 1024) | INT | 예 | 0  ~  8192 (단계: 256) |
+| `padding` | 차트 사이의 텍셀 패딩입니다. (기본값: 1) | INT | 예 | 0  ~  16 |
+| `weld_distance` | 메시 범위에 대한 비율로서 일치 정점 병합 반경입니다(0 = 자동). 용접되지 않은 입력으로 인해 삼각형별 차트가 생성되면 ~0.001로 높이십시오. (기본값: 0.0) | FLOAT | 예 | 0.0  ~  1.0 (단계: 0.0001) |
 
-참고: 입력 메시에 용접되지 않은 정점이 포함되어 있으면 노드가 면 인접도가 낮다고 경고하고 면별 UV 차트를 생성할 수 있습니다. `weld_distance`를 늘리면 언랩 전에 일치하는 정점이 병합됩니다.
+참고: 입력 메시에 용접되지 않은 정점이 포함되어 있으면 노드가 면 인접성이 낮다고 경고하고 면별 UV 차트를 생성할 수 있습니다. `weld_distance`를 높이면 언랩 전에 일치하는 정점이 병합됩니다. 퇴화 면(동일한 정점 인덱스를 재사용하는 면)은 처리 중에 제거됩니다.
 
 ## 출력
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `mesh` | 생성된 UV 아틀라스가 [0,1] 범위로 포함된 입력 메시입니다. 경계(seam) 정점은 중복되므로 출력 정점 수는 입력보다 많을 수 있습니다. 입력 메시의 정점 색상과 텍스처는 보존됩니다. | MESH |
+| `mesh` | 범위 [0,1]의 생성된 UV 아틀라스가 있는 입력 메시입니다. 이음새 정점이 복제되므로 출력 정점 수가 입력을 초과할 수 있습니다. 입력 메시의 정점 색상과 텍스처는 유지됩니다. | MESH |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnwrapMesh/ko.md)
 

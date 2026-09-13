@@ -1,15 +1,15 @@
 # ModèleÉchantillonnageSD3
 
-Ce nœud applique les paramètres d’échantillonnage de style Stable Diffusion 3 à un modèle. Il crée une copie du modèle et remplace sa méthode d’échantillonnage par une configuration d’échantillonnage basée sur les flux qui utilise la valeur `shift` donnée, laquelle contrôle la forme de la distribution d’échantillonnage.
+Ce nœud applique des paramètres d’échantillonnage de style Stable Diffusion 3 à un modèle. Il crée une copie du modèle et remplace sa méthode d’échantillonnage par une configuration d’échantillonnage basée sur un flux qui utilise la valeur `shift` donnée, laquelle contrôle la forme de la distribution d’échantillonnage.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `modèle` | Le modèle d’entrée auquel appliquer les paramètres d’échantillonnage SD3 | MODEL | Oui | - |
-| `décalage` | Contrôle le paramètre de décalage d’échantillonnage (par défaut : 3.0) | FLOAT | Oui | 0.0 - 100.0 (pas : 0.01) |
+| `model` | Le modèle d’entrée auquel appliquer les paramètres d’échantillonnage SD3 | MODEL | Oui | - |
+| `shift` | Contrôle le paramètre de décalage d’échantillonnage (valeur par défaut : 3.0) | FLOAT | Oui | 0.0 - 100.0 (pas : 0.01) |
 
-Remarque : La valeur `shift` est appliquée conjointement avec un multiplicateur interne fixe de 1000. Si le modèle d’origine possède un paramètre d’échelle de bruit, cette valeur est reportée sur le modèle modifié. Le modèle d’origine n’est pas modifié ; une copie clonée et patchée est renvoyée.
+Remarque : La valeur `shift` est appliquée conjointement avec un multiplicateur interne fixe de 1000. Si le modèle d’origine possède un réglage d’échelle de bruit, cette valeur est reportée sur le modèle modifié. Le modèle d’origine n’est pas modifié ; une copie clonée et corrigée est renvoyée.
 
 ## Sorties
 

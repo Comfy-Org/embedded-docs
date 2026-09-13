@@ -1,13 +1,13 @@
-# ComfyCloudMageFlowTextToImageNode
+# Comfy Cloud Mage Flow Texte vers image [BETA]
 
-Ce nœud génère une image à partir d'un prompt textuel en envoyant la requête au flux de travail texte-vers-image Mage-Flow dans le Comfy Cloud. Il exécute la passe de génération complète en 30 étapes plutôt que la passe turbo distillée plus rapide, et il accepte un prompt négatif pour décrire le contenu que vous ne souhaitez pas voir dans l'image finale. Le prompt négatif est pris en charge dans ce mode à 30 étapes ; d'après le résumé du nœud, la variante turbo distillée ne peut pas l'utiliser correctement.
+Ce nœud génère une image à partir d'un prompt textuel en envoyant la requête au workflow text-to-image Mage-Flow dans le Comfy Cloud. Il exécute la passe de génération complète en 30 étapes plutôt que la passe turbo distillée plus rapide, et il accepte un prompt négatif afin que vous puissiez décrire le contenu que vous ne souhaitez pas voir dans l'image finale. Le prompt négatif est pris en charge dans ce mode à 30 étapes ; selon le résumé du nœud, la variante turbo distillée ne peut pas l'exploiter efficacement.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `prompt` | La description textuelle de l'image à générer. | STRING | Oui | Free-form text |
-| `negative_prompt` | Texte décrivant le contenu qui ne doit pas apparaître dans l'image générée. Ce paramètre est utilisé pendant la passe de génération standard à 30 étapes, mais la variante turbo distillée n'utilise pas efficacement les prompts négatifs. | STRING | Non | Free-form text |
+| `prompt` | La description textuelle de l'image à générer. | STRING | Oui | Texte libre |
+| `negative_prompt` | Texte décrivant le contenu qui ne doit pas apparaître dans l'image générée. Cette entrée est utilisée pendant la passe de génération standard en 30 étapes, mais la variante turbo distillée n'exploite pas bien les prompts négatifs. | STRING | Non | Texte libre |
 
 ## Sorties
 

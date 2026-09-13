@@ -1,23 +1,23 @@
 # Pixal3DConditioning
 
-이 노드는 Trellis2 3D 생성 파이프라인을 위한 이미지 컨디셔닝을 생성합니다. DINOv3 비전 모델을 사용하여 입력 이미지에서 두 해상도로 시각적 특징을 추출하고, 이를 단계별 특징 맵으로 구성하며(선택적으로 NAF 모델로 향상), 수평 화각에서 파생된 카메라 데이터와 결합합니다. 그런 다음 포지티브 및 네거티브 컨디셔닝 쌍을 출력하며, 네거티브는 classifier-free guidance를 위해 0으로 채워진 특징을 사용합니다.
+Pixal3DConditioning 노드는 Trellis2 3D 생성 파이프라인을 위한 이미지 컨디셔닝을 준비합니다. DINOv3 비전 모델을 사용하여 입력 이미지에서 두 해상도(512 및 1024)의 시각적 특징을 추출한 다음, NAF 모델로 선택적으로 향상할 수 있는 단계별 특징 맵으로 구성합니다. 카메라 정보는 수평 시야각에서 유도되어 투영 변환 행렬을 구성하며, 이 노드는 분류기 없는 가이던스(CFG)를 위한 긍정 컨디셔닝 쌍(이미지에서 파생된 특징과 투영 데이터)과 부정 컨디셔닝 쌍(0으로 채워진 특징 텐서)을 출력합니다.
 
 ## 입력
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `clip_vision_model` | DINOv3 ViT-L/16 ClipVision 모델입니다. | CLIP_VISION | 예 | — |
+| `clip_vision_model` | DINOv3 ViT-L/16 ClipVision. | CLIP_VISION | 예 | — |
 | `이미지` | ImageCropToMask에서 전처리된 이미지입니다(Pixal3D의 경우 pad_factor=1.1). | IMAGE | 예 | — |
-| `camera_angle_x` | 도 단위의 수평 FOV입니다(표시 이름: fov). 이미지별 FoV를 얻으려면 MoGeGeometryToFOV(axis='horizontal', unit='degrees')를 연결하십시오(업스트림 기본값과 일치). 기본값: 49.13. | FLOAT | 예 | 1.0 – 170.0 |
-
-참고: `camera_angle_x` 값은 내부적으로 라디안으로 변환되며 투영 변환 행렬에 필요한 카메라 거리를 계산하는 데 사용됩니다. 제공된 비전 모델에 NAF 구성 요소가 포함된 경우, 이 노드는 셰이프 및 텍스처 단계를 위해 고해상도 특징 맵을 추가로 생성합니다.
+| `camera_angle_x` | 수평 FOV(도)입니다(`fov`로 표시됨). 이미지별 FoV를 사용하려면 MoGeGeometryToFOV(axis='horizontal', unit='degrees')를 연결하세요(업스트림 기본값과 일치). 기본값: 49.13. | FLOAT | 예 | 1.0 – 170.0 (단계: 0.01) |
 
 ## 출력
 
 | 출력 이름 | 설명 | 데이터 타입 |
-|-----------|-------------|-----------|
-| `긍정` | Trellis2 생성을 위해 이미지에서 도출된 특징 맵과 투영 데이터를 포함하는 포지티브 컨디셔닝입니다. | CONDITIONING |
-| `부정` | 0으로 채워진 특징 텐서를 포함하며, classifier-free guidance에 사용되는 네거티브 컨디셔닝입니다. | CONDITIONING |
+|-------------|-------------|-----------|
+| `positive` | Trellis2 생성에 사용할 이미지에서 파생된 특징 맵과 투영 데이터를 포함하는 긍정 컨디셔닝 출력입니다. | CONDITIONING |
+| `negative` | CFG에 사용되는, 0으로 채워진 특징 텐서를 가진 부정 컨디셔닝 출력입니다. | CONDITIONING |
+
+참고: `camera_angle_x` 값은 내부적으로 도에서 라디안으로 변환되며, 투영 변환 행렬을 구성하기 위해 이 값으로부터 카메라 거리가 계산됩니다. 제공된 비전 모델에 NAF 구성 요소가 포함된 경우, 이 노드는 형상 및 텍스처 단계를 위한 고해상도 특징 맵도 생성합니다.
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Pixal3DConditioning/ko.md)
 

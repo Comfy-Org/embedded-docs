@@ -1,25 +1,26 @@
-# 將 DA3 幾何資料轉換為網格
+# 將 DA3 幾何轉換為網格
 
-此節點透過反投影深度圖並對產生的點雲進行三角化，將 DA3_GEOMETRY 資料包轉換為 3D 網格。它處理批次中的單一影像，並產生適合 3D 渲染的紋理或無紋理網格。
+此節點會將 DA3_GEOMETRY 封包轉換為 3D 網格，方式是將深度圖反投影，並對產生的點雲進行三角化。它會處理批次中的單一影像，並產生適合 3D 渲染的帶紋理或無紋理網格。
 
 ## 輸入
 
-| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `da3_geometry` | 包含深度圖、可選置信度圖、可選天空圖及來源影像的 DA3_GEOMETRY 資料包 | DA3_GEOMETRY | 是 | - |
-| `batch_index` | 要轉換的批次影像索引。每張影像的頂點數量不同，因此批次無法堆疊（預設值：0）。必須小於輸入幾何體的批次大小，否則將引發錯誤 | INT | 是 | 0 至 4096 |
-| `decimation` | 頂點步長。1 = 完整解析度，2 = 一半解析度，以此類推（預設值：1） | INT | 是 | 1 至 8 |
-| `discontinuity_threshold` | 丟棄 3x3 深度跨度超過此比例的三角形。0 = 關閉（預設值：0.04） | FLOAT | 是 | 0.0 至 1.0 |
-| `confidence_threshold` | 排除每張影像正規化置信度低於此值的像素。0 = 保留全部，1 = 僅保留置信度最高的單一像素。當幾何資料包含置信度圖時使用（Small/Base 模型）（預設值：0.1） | FLOAT | 是 | 0.0 至 1.0 |
-| `use_sky_mask` | 從網格中排除天空機率像素（天空 >= 0.5）。當幾何資料包含天空圖時使用（Mono/Metric 模型）（預設值：True） | BOOLEAN | 是 | True 或 False |
-| `texture` | 使用來源影像作為基底顏色紋理（預設值：True） | BOOLEAN | 是 | True 或 False |
-深度值非有限、為零或為負的像素一律會被排除在網格之外。如果產生的網格為空，將引發錯誤；錯誤訊息建議提高 `discontinuity_threshold`、降低 `confidence_threshold` 或停用 `use_sky_mask`。
+| `da3_geometry` | 包含深度圖、選填的信心圖、選填的天空圖以及來源影像的 DA3_GEOMETRY 封包 | DA3_GEOMETRY | 是 | - |
+| `batch_index` | 要轉換批次中的哪一張影像。每張影像的頂點數量不同，因此批次無法堆疊（預設：0）。必須小於輸入幾何的批次大小，否則會引發錯誤 | INT | 是 | 0 至 4096 |
+| `decimation` | 頂點步幅。1 = 完整解析度，2 = 一半，依此類推（預設：1） | INT | 是 | 1 至 8 |
+| `discontinuity_threshold` | 捨棄 3x3 深度跨度超過此比例的三角形。0 = 關閉（預設：0.04） | FLOAT | 是 | 0.0 至 1.0 |
+| `confidence_threshold` | 排除每張影像正規化信心低於此值的像素。0 = 保留全部，1 = 僅保留信心最高的單一像素。當幾何具有信心圖（Small/Base 模型）時使用（預設：0.1） | FLOAT | 是 | 0.0 至 1.0 |
+| `use_sky_mask` | 從網格中排除天空機率像素（sky >= 0.5）。當幾何具有天空圖（Mono/Metric 模型）時使用（預設：True） | BOOLEAN | 是 | True or False |
+| `texture` | 使用來源影像作為基礎顏色紋理（預設：True） | BOOLEAN | 是 | True or False |
+
+具有非有限、零或負深度值的像素一律會從網格中排除。若產生的網格為空，則會引發錯誤；錯誤訊息會建議提高 `discontinuity_threshold`、降低 `confidence_threshold`，或停用 `use_sky_mask`。
 
 ## 輸出
 
-| 輸出名稱 | 說明 | 資料類型 |
+| 輸出名稱 | 描述 | 資料類型 |
 |-------------|-------------|-----------|
-| `MESH` | 包含頂點、面、UV 座標及可選紋理的三角化 3D 網格 | MESH |
+| `MESH` | 具有頂點、面、UV 座標以及選填紋理的三角化 3D 網格 | MESH |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DA3GeometryToMesh/zh-TW.md)
 

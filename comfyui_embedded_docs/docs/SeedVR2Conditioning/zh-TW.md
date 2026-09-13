@@ -1,15 +1,15 @@
 # 套用 SeedVR2 Conditioning
 
-此節點從 VAE 潛在變量為 SeedVR2 模型建立正向和負向條件。它驗證輸入的潛在變量形狀和模型結構，然後產生引導影像或影片取樣的正向和負向條件。
+從 VAE latent 建立正向與負向條件，以供 SeedVR2 模型使用。它會驗證輸入 latent 與模型結構，將遮罩通道加入 latent，並回傳兩個條件輸出。
 
 ## 輸入
 
-| 參數 | 描述 | 資料類型 | 必要 | 範圍 |
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | SeedVR2 模型。 | MODEL | 是 | - |
-| `vae_conditioning` | 用於建立條件的 SeedVR2 VAE 潛在變量（顯示名稱：latent）。 | LATENT | 是 | - |
+| `vae_conditioning` | 要用來建立條件的 SeedVR2 VAE latent（顯示名稱：latent）。 | LATENT | 是 | - |
 
-注意：`vae_conditioning` 潛在變量必須是 Comfy 通道優先佈局中的 5 維張量（B、C、T、H、W），其中 C 是預期的 SeedVR2 VAE 通道數。如果潛在變量不是 5 維、其通道數不匹配，或看起來是通道最後佈局，節點將引發錯誤。`model` 輸入必須是具有預期 SeedVR2 結構的模型。在內部，節點會向潛在變量附加一個常數遮罩通道，並將產生的條件同時附加到正向和負向條件池。
+注意：`vae_conditioning` latent 必須是採用 Comfy channel-first 佈局的 5-D 張量（B, C, T, H, W），其中 C 是 SeedVR2 VAE 預期的通道數。如果 latent 不是 5-D、通道數不符，或張量似乎採用 channel-last 佈局，此節點會引發錯誤。`model` 輸入必須具有 SeedVR2 預期的結構；此節點會解析其內部的擴散模型，並讀取其正向與負向條件。在內部，此節點會將一個固定遮罩通道附加到 latent，並將產生的條件附加到正向與負向條件輸出。
 
 ## 輸出
 

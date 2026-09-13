@@ -1,20 +1,20 @@
-# MergeMeshes
+# Mesclar malhas
 
-MergeMeshes combina múltiplas malhas de entrada em uma única malha, empilhando seus vértices, faces, coordenadas UV e cores de vértice, e ajustando os índices de face para que o resultado seja uma malha contínua.
+MergeMeshes combina várias entradas de malha em uma única malha, empilhando seus vértices, faces, coordenadas UV e cores de vértice, e deslocando os índices das faces para que todas as partes se unam corretamente em uma malha contínua.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
-|-----------|-------------|--------------|-------------|-----------|
-| `malhas` | Slot expansível: conecte de 2 a 50 objetos de malha (nomeados `mesh_1`, `mesh_2`, ..., `mesh_50`). Todas as malhas conectadas são mescladas em uma única malha de saída. | MESH | Sim | 2 a 50 malhas |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `meshes` | Slot expansível: conecte de 2 a 50 objetos de malha (nomeados `mesh_1`, `mesh_2`, ..., `mesh_50`). Todas as malhas conectadas são mescladas em uma malha de saída. | MESH | Sim | 2 a 50 malhas |
 
-**Nota:** Apenas o primeiro item de malha de cada lote de malha de entrada é usado. Se alguma malha de entrada tiver dados de UV, a saída inclui UVs e malhas sem UVs recebem valores de UV preenchidos com zeros. Se alguma malha de entrada tiver cores de vértice, a saída inclui cores de vértice; malhas sem cores recebem cores brancas (valor 1), e os canais de cor são preenchidos até a maior contagem de canais encontrada entre as entradas. Apenas a textura da primeira entrada que fornecer uma é mantida; texturas adicionais são descartadas.
+**Nota:** Pelo menos uma malha deve ser fornecida; caso contrário, o nó gera um erro. Apenas o primeiro item de malha do lote de cada malha de entrada é usado. As malhas de entrada são movidas para a CPU antes da mesclagem. Se alguma malha de entrada tiver dados UV, a saída incluirá UVs, e malhas sem UVs receberão valores UV preenchidos com zero. Se alguma malha de entrada tiver cores de vértice, a saída incluirá cores de vértice; malhas sem cores receberão cores brancas (valor 1), e os canais de cor serão preenchidos até a maior contagem de canais encontrada entre as entradas. Apenas a textura da primeira entrada que fornecer uma é mantida; texturas adicionais são descartadas.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
-|---------------|-------------|--------------|
-| `malha` | A malha mesclada contendo todos os vértices, faces, UVs e cores de entrada combinados em uma única malha. | MESH |
+| Nome da Saída | Descrição | Tipo de Dados |
+|-------------|-------------|-----------|
+| `mesh` | A malha mesclada contendo todos os vértices, faces, UVs e cores de entrada combinados em uma única malha. | MESH |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MergeMeshes/pt-BR.md)
 

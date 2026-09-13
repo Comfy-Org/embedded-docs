@@ -1,22 +1,26 @@
 # Normalizar Imágenes
 
-Este nodo ajusta los valores de píxel de una imagen de entrada mediante un proceso de normalización matemática. Resta un valor medio específico a cada píxel y luego divide el resultado por una desviación estándar especificada. Este es un paso de preprocesamiento común para preparar datos de imagen para otros modelos de aprendizaje automático.
+Este nodo normaliza los colores de una imagen de entrada ajustando sus valores de píxel según una media y una desviación estándar especificadas. A cada píxel se le resta la media y luego se divide por la desviación estándar, lo cual es un paso común para estandarizar los datos de imagen antes de otro procesamiento.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-| --- | --- | --- | --- | --- |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
 | `image` | La imagen de entrada que se va a normalizar. | IMAGE | Sí | - |
-| `media` | Valor medio para la normalización (predeterminado: 0.5). | FLOAT | No | 0.0 - 1.0 |
-| `desviación estándar` | Desviación estándar para la normalización (predeterminado: 0.5). | FLOAT | No | 0.001 - 1.0 |
+| `mean` | Valor de la media para la normalización (predeterminado: 0.5). | FLOAT | No | 0.0 - 1.0 |
+| `std` | Desviación estándar para la normalización (predeterminado: 0.5). | FLOAT | No | 0.001 - 1.0 |
 
-Nota: Cuando la imagen de entrada incluye un canal alfa (transparencia), el canal alfa no se normaliza. Se mantiene sin cambios en la salida porque el alfa almacena transparencia en lugar de color.
+Los parámetros `mean` y `std` controlan la normalización aplicada a la imagen de entrada. El valor predeterminado para ambos parámetros es 0.5.
+
+Nota: Si la imagen de entrada tiene un canal alfa (transparencia), ese canal no se normaliza. Se copia sin cambios a la salida porque el alfa almacena transparencia en lugar de color.
+
+Nota: El nodo funciona con cualquier tamaño de lote, por lo que se pueden procesar varias imágenes a la vez.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
-| --- | --- | --- |
-| `imágenes` | La imagen resultante después de aplicar el proceso de normalización. | IMAGE |
+|------------------|-------------|---------------|
+| `image` | La imagen resultante después de aplicar el proceso de normalización. Los valores de píxel se ajustan usando la media y la desviación estándar especificadas, y el canal alfa (si está presente) se conserva. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/NormalizeImages/es.md)
 

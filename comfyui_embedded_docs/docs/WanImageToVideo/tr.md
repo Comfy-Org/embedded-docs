@@ -1,30 +1,30 @@
 # WanGörüntüdenVideoya
 
-WanImageToVideo düğümü, video oluşturma görevleri için conditioning ve latent temsillerini hazırlar. Video oluşturma için boş bir latent alan oluşturur ve isteğe bağlı olarak video oluşturma sürecini yönlendirmek için başlangıç görüntülerini ve CLIP vision çıktılarını dahil edebilir. Düğüm, sağlanan görüntü ve vision verilerine dayalı olarak hem pozitif hem de negatif conditioning girdilerini değiştirir.
+WanImageToVideo düğümü, video üretimi için koşullandırma ve latent temsilleri hazırlar. Video için boş bir latent uzayı oluşturur ve üretimi yönlendirmek için isteğe bağlı olarak bir başlangıç görüntüsünü ve CLIP görü çıktısını dahil edebilir. Hem pozitif hem de negatif koşullandırma girdileri, sağlanan görüntü ve görü verisiyle güncellenir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `pozitif` | Oluşturmayı yönlendiren pozitif conditioning girdisi | CONDITIONING | Evet | - |
-| `negatif` | Oluşturmayı yönlendiren negatif conditioning girdisi | CONDITIONING | Evet | - |
-| `vae` | Görüntüleri latent alana kodlamak için VAE modeli | VAE | Evet | - |
-| `genişlik` | Çıktı videosunun genişliği (varsayılan: 832, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
-| `yükseklik` | Çıktı videosunun yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
-| `uzunluk` | Videodaki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 to MAX_RESOLUTION |
-| `toplu_boyut` | Bir toplu işlemde oluşturulacak video sayısı (varsayılan: 1) | INT | Evet | 1 ile 4096 |
-| `clip_görü_çıktısı` | Ek conditioning için isteğe bağlı CLIP vision çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
-| `başlangıç_görüntüsü` | Video oluşturmayı başlatmak için isteğe bağlı başlangıç görüntüsü. Sağlandığında, görüntü belirtilen genişlik ve yüksekliğe uyacak şekilde yeniden boyutlandırılır ve videonun ilk kareleri bu görüntüden başlatılır. Kalan kareler nötr gri (0.5) değerleriyle doldurulur. `length` değerini aşan kareler yok sayılır. | IMAGE | Hayır | - |
+| `positive` | Üretimi yönlendirmek için kullanılan pozitif koşullandırma girdisi | CONDITIONING | Evet | - |
+| `negative` | Üretimi yönlendirmek için kullanılan negatif koşullandırma girdisi | CONDITIONING | Evet | - |
+| `vae` | Görüntüleri latent uzayına kodlamak için kullanılan VAE modeli | VAE | Evet | - |
+| `width` | Üretilen videonun genişliği (varsayılan: 832, adım: 16) | INT | Evet | 16 - MAX_RESOLUTION |
+| `height` | Üretilen videonun yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 - MAX_RESOLUTION |
+| `length` | Videodaki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 - MAX_RESOLUTION |
+| `batch_size` | Tek bir toplu işte üretilecek video sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `clip_vision_output` | Hem pozitif hem de negatif girdilere ek koşullandırma olarak eklenen isteğe bağlı CLIP görü çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
+| `start_image` | Videoyu başlatmak için kullanılan isteğe bağlı başlangıç görüntüsü. Sağlandığında, belirtilen `width` ve `height` boyutlarına yeniden boyutlandırılır ve kare dizisinin başına yerleştirilir; `length` değerinin ötesindeki kareler yok sayılır. Kalan kareler nötr gri (0.5) değerleriyle doldurulur. | IMAGE | Hayır | - |
 
-**Not:** `start_image` sağlandığında, düğüm görüntü dizisini VAE kullanarak kodlar ve conditioning girdilerine bir maske uygular. Maske, başlangıç görüntüsüyle başlatılanlar dışındaki tüm kareleri kapsar ve oluşturmanın sağlanan görüntü üzerine inşa edilmesine olanak tanır. Kodlama sırasında görüntünün yalnızca ilk üç renk kanalı (RGB) kullanılır. `clip_vision_output` parametresi sağlandığında, hem pozitif hem de negatif girdilere vision tabanlı conditioning ekler.
+**Not:** `start_image` sağlandığında, kare dizisi VAE ile kodlanır ve koşullandırmaya bir maske uygulanır. Maske, başlangıç görüntüsünün kapsadığı kareler için 0, kalan kareler için 1 olarak ayarlanır; böylece üretim sağlanan görüntüden devam eder. Kodlama sırasında görüntünün yalnızca ilk üç renk kanalı (RGB) kullanılır. Hem pozitif hem de negatif koşullandırma aynı birleştirilmiş latent görüntüyü, maskeyi ve (sağlanmışsa) CLIP görü çıktısını alır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `pozitif` | Görüntü ve vision verileri dahil edilmiş, değiştirilmiş pozitif conditioning | CONDITIONING |
-| `negatif` | Görüntü ve vision verileri dahil edilmiş, değiştirilmiş negatif conditioning | CONDITIONING |
-| `gizli` | Video oluşturma için hazır boş latent alan tensörü, şekli [batch_size, 16, ((length-1)//4)+1, height//8, width//8] | LATENT |
+| `positive` | Görüntü ve görü verisiyle güncellenmiş pozitif koşullandırma | CONDITIONING |
+| `negative` | Görüntü ve görü verisiyle güncellenmiş negatif koşullandırma | CONDITIONING |
+| `latent` | Video üretimine hazır, [batch_size, 16, ((length-1)//4)+1, height//8, width//8] şeklinde boş latent tensör | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideo/tr.md)
 

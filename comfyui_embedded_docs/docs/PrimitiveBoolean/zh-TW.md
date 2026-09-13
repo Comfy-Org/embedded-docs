@@ -1,18 +1,18 @@
 # 布林值
 
-Boolean 節點提供了一種簡單的方式，讓您可以將布林值（true/false）傳遞到工作流程中。它接收一個布林輸入值，並原樣輸出相同的值，讓您能夠控制其他節點中的布林參數。
+Boolean 節點會在工作流程中傳遞布林值（true/false）。它接收一個布林輸入並回傳未變更的相同值，因此您可以將 true/false 設定提供給其他需要此設定的節點。
 
 ## 輸入
 
-| 參數 | 說明 | 資料類型 | 必填 | 範圍 |
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `值` | 要傳遞到節點的布林值 | BOOLEAN | 是 | true<br>false |
+| `值` | 要通過此節點傳遞的布林值 | BOOLEAN | 是 | true<br>false |
 
 ## 輸出
 
-| 輸出名稱 | 說明 | 資料類型 |
+| 輸出名稱 | 描述 | 資料類型 |
 | --- | --- | --- |
-| `output` | 與輸入相同的布林值 | BOOLEAN |
+| `output` | 與輸入提供的相同布林值 | BOOLEAN |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrimitiveBoolean/zh-TW.md)
 

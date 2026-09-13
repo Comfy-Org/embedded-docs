@@ -1,8 +1,6 @@
 # EmptyARVideoLatent
 
-## Visão Geral
-
-O nó EmptyARVideoLatent cria uma representação latente de vídeo vazia, em branco, para geração de vídeos. Ele é usado para inicializar um processo de geração de vídeo fornecendo um tensor de zeros com as dimensões, a proporção de aspecto e o comprimento especificados.
+O nó EmptyARVideoLatent cria uma representação latente vazia para geração de vídeo. Ele constrói um tensor de zeros usando a largura, a altura, a contagem de quadros e o tamanho do lote solicitados, que pode então ser usado para inicializar um processo de geração de vídeo.
 
 ## Entradas
 
@@ -10,8 +8,10 @@ O nó EmptyARVideoLatent cria uma representação latente de vídeo vazia, em br
 | --- | --- | --- | --- | --- |
 | `width` | A largura dos quadros de vídeo em pixels (padrão: 832) | INT | Sim | 16 a 8192 (passo: 16) |
 | `height` | A altura dos quadros de vídeo em pixels (padrão: 480) | INT | Sim | 16 a 8192 (passo: 16) |
-| `length` | O número de quadros do vídeo (padrão: 81) | INT | Sim | 1 a 1024 (passo: 4) |
+| `length` | O número de quadros no vídeo (padrão: 81) | INT | Sim | 1 a 1024 (passo: 4) |
 | `batch_size` | O número de vídeos a serem gerados em um único lote (padrão: 1) | INT | Sim | 1 a 64 |
+
+Observação: O tamanho latente interno é derivado dessas entradas. `width` e `height` são divididos por 8, e o número de etapas de tempo latentes é calculado como `((length - 1) // 4) + 1`.
 
 ## Saídas
 

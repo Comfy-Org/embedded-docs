@@ -1,19 +1,19 @@
 # MiniMax Hailuo Video
 
-Genera videos a partir de indicaciones de texto utilizando el modelo MiniMax Hailuo-02. Opcionalmente, puedes proporcionar una imagen inicial como primer fotograma para crear un video que continúe desde esa imagen.
+Genera videos a partir de prompts de texto utilizando el modelo MiniMax Hailuo-02. De manera opcional, puedes proporcionar una imagen inicial para usarla como primer fotograma, lo que crea un video que continúa a partir de esa imagen.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `texto_del_prompt` | Indicación de texto para guiar la generación del video. | STRING | Sí | - |
-| `semilla` | La semilla aleatoria utilizada para crear el ruido (predeterminado: 0). | INT | No | 0 a 18446744073709551615 |
-| `imagen_primer_fotograma` | Imagen opcional para usar como primer fotograma para generar un video. | IMAGE | No | - |
-| `optimizador_de_prompt` | Optimizar la indicación para mejorar la calidad de generación cuando sea necesario (predeterminado: True). | BOOLEAN | No | True<br>False |
-| `duración` | La duración del video de salida en segundos (predeterminado: 6). | COMBO | No | 6<br>10 |
-| `resolución` | Las dimensiones de la pantalla del video. 1080p es 1920x1080, 768p es 1366x768 (predeterminado: "768P"). | COMBO | No | "768P"<br>"1080P" |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `prompt_text` | Prompt de texto para guiar la generación del video (predeterminado: vacío). | STRING | Sí | - |
+| `seed` | La semilla aleatoria utilizada para crear el ruido (predeterminado: 0). | INT | No | 0 a 18446744073709551615 |
+| `first_frame_image` | Imagen opcional para usar como primer fotograma al generar un video. | IMAGE | No | - |
+| `prompt_optimizer` | Optimiza el prompt para mejorar la calidad de la generación cuando sea necesario (predeterminado: True). | BOOLEAN | No | True<br>False |
+| `duration` | La duración del video de salida en segundos (predeterminado: 6). | COMBO | No | 6<br>10 |
+| `resolution` | Las dimensiones de visualización del video. 1080p es 1920x1080, 768p es 1366x768 (predeterminado: "768P"). | COMBO | No | "768P"<br>"1080P" |
 
-**Nota:** Cuando `resolution` está configurado en "1080P", `duration` se limita a 6 segundos. Cuando no se proporciona `first_frame_image`, `prompt_text` no debe estar vacío.
+**Nota:** Cuando `resolution` se establece en "1080P", `duration` se limita a 6 segundos. Cuando no se proporciona `first_frame_image`, `prompt_text` no debe estar vacío.
 
 ## Salidas
 

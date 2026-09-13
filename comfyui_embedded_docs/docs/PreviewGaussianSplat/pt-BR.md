@@ -1,29 +1,27 @@
 # Pré-visualizar Splat
 
-### Visão Geral
-
-O nó PreviewGaussianSplat exibe um arquivo de splat gaussiano 3D em uma janela de pré-visualização sem salvá-lo no diretório de saída do ComfyUI. Ele aceita arquivos de modelo 3D em vários formatos de splat gaussiano, salva uma cópia temporária para pré-visualização e passa os dados do modelo para processamento adicional no fluxo de trabalho.
+The PreviewGaussianSplat node exibe um arquivo 3D gaussian splat em uma janela de pré-visualização sem salvá-lo no diretório de saída do ComfyUI. Ele aceita um arquivo de modelo 3D em vários formatos gaussian splat, salva uma cópia temporária para pré-visualização e repassa os dados do modelo para processamento posterior no workflow. Este nó é marcado como experimental e atua como um nó de saída.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model_3d` | Um arquivo de splat gaussiano 3D. | FILE3D | Sim | splat<br>ply<br>spz<br>ksplat |
-| `model_3d_info` | Informações metadata opcionais sobre o modelo 3D. Quando não conectado, o nó usa as informações do modelo de `viewport_state`. | LOAD3DMODELINFO | Não | - |
-| `viewport_state` | O estado atual da visualização 3D, incluindo informações de câmera e modelo. | LOAD3D | Sim | - |
-| `camera_info` | Informações de câmera opcionais para a pré-visualização. Quando não conectado, o nó usa as informações da câmera de `viewport_state`. | LOAD3DCAMERA | Não | - |
+| `model_3d` | Um arquivo 3D gaussian splat. | FILE3D | Sim | splat<br>ply<br>spz<br>ksplat |
+| `model_3d_info` | Informações opcionais de metadados sobre o modelo 3D. Quando não conectado, o nó usa as informações do modelo de `viewport_state`. | LOAD3DMODELINFO | Não | - |
+| `viewport_state` | O estado atual do viewport 3D, incluindo informações de câmera e modelo. | LOAD3D | Sim | - |
+| `camera_info` | Informações opcionais de câmera para a pré-visualização. Quando não conectado, o nó usa as informações de câmera de `viewport_state`. | LOAD3DCAMERA | Não | - |
 | `width` | A largura da renderização de pré-visualização em pixels (padrão: 1024). | INT | Sim | 1 a 4096 |
 | `height` | A altura da renderização de pré-visualização em pixels (padrão: 1024). | INT | Sim | 1 a 4096 |
 
-Nota: Quando `camera_info` ou `model_3d_info` não são fornecidos, o nó recorre às informações de câmera e modelo armazenadas em `viewport_state`.
+Nota: Quando `camera_info` ou `model_3d_info` não são fornecidos, o nó recorre às informações de câmera e modelo armazenadas em `viewport_state`. Se `viewport_state` não for um objeto de estado de viewport válido, ele será tratado como vazio.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 |-------------|-------------|-----------|
-| `model_3d` | O arquivo de splat gaussiano 3D de entrada, passado inalterado. | FILE3D |
-| `model_3d_info` | Informações metadata sobre o modelo 3D, seja do entrada ou derivada do estado da visualização. | LOAD3DMODELINFO |
-| `camera_info` | Informações de câmera para a pré-visualização, seja do entrada ou derivada do estado da visualização. | LOAD3DCAMERA |
+| `model_3d` | O arquivo 3D gaussian splat de entrada, repassado sem alterações. | FILE3D |
+| `model_3d_info` | Informações de metadados sobre o modelo 3D, obtidas da entrada ou derivadas do estado do viewport. | LOAD3DMODELINFO |
+| `camera_info` | Informações de câmera para a pré-visualização, obtidas da entrada ou derivadas do estado do viewport. | LOAD3DCAMERA |
 | `width` | A largura da renderização de pré-visualização. | INT |
 | `height` | A altura da renderização de pré-visualização. | INT |
 

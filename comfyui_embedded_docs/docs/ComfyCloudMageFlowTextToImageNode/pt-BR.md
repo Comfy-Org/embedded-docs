@@ -1,13 +1,13 @@
-# ComfyCloudMageFlowTextToImageNode
+# Comfy Cloud Mage Flow Texto para Imagem [BETA]
 
-Este nó gera uma imagem a partir de um prompt de texto enviando a solicitação para o fluxo de trabalho de texto para imagem Mage-Flow no Comfy Cloud. Ele executa o passo de geração completo de 30 etapas em vez do passo turbo destilado mais rápido, e aceita um prompt negativo para que você possa descrever conteúdo que não deseja na imagem final. O prompt negativo é suportado neste modo de 30 etapas; conforme o resumo do nó, a variante turbo destilada não consegue fazer bom uso dele.
+Este nó gera uma imagem a partir de um prompt de texto enviando a solicitação para o fluxo de trabalho text-to-image do Mage-Flow no Comfy Cloud. Ele executa a passagem completa de geração com 30 etapas em vez da passagem turbo destilada, mais rápida, e aceita um prompt negativo para que você possa descrever conteúdo que não deseja na imagem final. O prompt negativo é compatível com este modo de 30 etapas; de acordo com o resumo do nó, a variante turbo destilada não consegue fazer bom uso dele.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | A descrição em texto da imagem a ser gerada. | STRING | Sim | Texto livre |
-| `negative_prompt` | Texto que descreve conteúdo que não deve aparecer na imagem gerada. Esta entrada é usada durante o passo de geração padrão de 30 etapas, mas a variante turbo destilada não utiliza bem prompts negativos. | STRING | Não | Texto livre |
+| `prompt` | A descrição textual da imagem a ser gerada. | STRING | Sim | Texto livre |
+| `negative_prompt` | Texto que descreve conteúdo que não deve aparecer na imagem gerada. Esta entrada é usada durante a passagem de geração padrão de 30 etapas, mas a variante turbo destilada não utiliza bem os prompts negativos. | STRING | Não | Texto livre |
 
 ## Saídas
 

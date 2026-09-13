@@ -1,19 +1,18 @@
 # Vista previa de audio
 
-El nodo Preview Audio te permite escuchar el audio directamente en la interfaz de ComfyUI sin necesidad de guardarlo en el directorio de salida. Toma datos de audio como entrada, verifica que estén presentes y los deja pasar mientras muestra un reproductor de audio temporal para que puedas escuchar el resultado.
+El nodo Preview Audio te permite escuchar audio directamente dentro de ComfyUI sin guardarlo en el directorio de salida. Recibe una entrada de audio, comprueba que los datos de audio estén realmente presentes y luego lo reproduce mediante un reproductor de vista previa en la interfaz, mientras pasa el mismo audio como su salida.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `audio` | Los datos de audio para previsualizar. El nodo lanza un ValueError si la entrada es None, lo que puede ocurrir cuando el video de origen no tiene pista de audio. | AUDIO | Sí | - |
+| `audio` | Los datos de audio que se van a previsualizar. Si esta entrada es None, el nodo genera un ValueError, lo cual puede ocurrir cuando el video de origen no tiene pista de audio. | AUDIO | Sí | - |
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `audio` | Los datos de audio pasan sin cambios desde la entrada. | AUDIO |
-| `ui` | Muestra un widget de reproductor de audio en la interfaz para previsualizar el audio. | UI |
+| `audio` | Los datos de audio pasados sin cambios desde la entrada, de modo que el nodo se puede colocar en medio de un flujo de trabajo. | AUDIO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewAudio/es.md)
 

@@ -1,19 +1,21 @@
 # CLIPMergeAdd
 
-El nodo CLIPMergeAdd combina dos modelos CLIP añadiendo parches del segundo modelo al primero. Crea una copia del primer modelo CLIP e incorpora selectivamente parches clave del segundo modelo, excluyendo los IDs de posición y los parámetros de escala logit. Esto permite fusionar componentes de modelos CLIP conservando la estructura del modelo base.
+El nodo CLIPMergeAdd combina dos modelos CLIP agregando parches del segundo modelo al primero. Crea una copia del primer modelo CLIP e incorpora selectivamente parches clave del segundo modelo, excluyendo los parámetros position IDs y logit scale. Esto permite fusionar componentes de modelos CLIP mientras se preserva la estructura del modelo base.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `clip1` | El modelo CLIP base que se clonará y se utilizará como base para la fusión | CLIP | Sí | - |
-| `clip2` | El modelo CLIP secundario que proporciona parches clave que se añadirán al modelo base | CLIP | Sí | - |
+| `clip1` | El modelo CLIP base que se clonará y se usará como base para la fusión | CLIP | Sí | - |
+| `clip2` | El modelo CLIP secundario que proporciona parches clave para agregarlos al modelo base | CLIP | Sí | - |
+
+Las claves que terminan en `.position_ids` o `.logit_scale` de `clip2` se omiten, por lo que esos parámetros conservan los valores de `clip1`.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `CLIP` | Un modelo CLIP fusionado que contiene la estructura del modelo base con parches añadidos del modelo secundario | CLIP |
+| `CLIP` | Un modelo CLIP fusionado que contiene la estructura del modelo base con parches agregados del modelo secundario | CLIP |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPMergeAdd/es.md)
 

@@ -1,20 +1,20 @@
 # AutogrowNamesTestNode
 
-Este nodo es una prueba de la función de entrada Autogrow. Acepta un número dinámico de entradas de tipo float, cada una etiquetada con un nombre específico, y combina sus valores en una sola cadena separada por comas.
+Este nodo es una prueba de la función de entrada Autogrow. Acepta un grupo dinámico de entradas de tipo float, cada una con un nombre predefinido, y combina sus valores en una única cadena separada por comas.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `autogrow` | Un grupo de entradas dinámico. Puede agregar múltiples entradas de tipo float, cada una con un nombre predefinido de la lista: "a", "b" o "c". El nodo aceptará cualquier combinación de estas entradas con nombre. | FLOAT | Sí | N/A |
+| `autogrow` | Un grupo de entrada dinámico. Puedes agregar múltiples entradas de tipo float, cada una con un nombre predefinido de la lista: "a", "b" o "c". El nodo acepta cualquier combinación de estas entradas con nombre. | FLOAT | Sí | Ranuras nombradas: `a`, `b`, `c` |
 
-**Nota:** La entrada `autogrow` es dinámica. Puede agregar o eliminar entradas de tipo float individuales (llamadas "a", "b" o "c") según sea necesario para su flujo de trabajo. El nodo procesa todos los valores proporcionados.
+**Nota:** La entrada `autogrow` es dinámica. Las entradas float individuales llamadas "a", "b" y "c" se pueden agregar o quitar según sea necesario. Todos los valores proporcionados son procesados por el nodo.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `output` | Una sola cadena que contiene los valores de todas las entradas de tipo float proporcionadas, unidas con comas. | STRING |
+| `output` | Una única cadena que contiene los valores de todas las entradas float proporcionadas, unidos entre sí por comas. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AutogrowNamesTestNode/es.md)
 

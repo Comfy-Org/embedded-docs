@@ -1,17 +1,17 @@
-# TripoRigCheckNode
+# Tripo: Verificação de Rig
 
-Este nó envia o ID de uma tarefa concluída de modelo 3D Tripo para a API do Tripo e verifica se esse modelo pode ser rigado. Ele aguarda a conclusão da verificação e retorna um resultado sim/não, além do tipo de esqueleto que o Tripo recomenda para o modelo.
+Este nó envia o ID de uma tarefa de modelo 3D Tripo concluída para a API do Tripo e verifica se esse modelo pode ser rigado. Ele aguarda a conclusão da verificação e então retorna um resultado sim/não, além do tipo de esqueleto que a Tripo recomenda para o modelo.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
-|-----------|-------------|--------------|-------------|-----------|
-| `model_task_id` | O ID da tarefa Tripo do modelo a ser analisado. Ele identifica um modelo que foi previamente gerado, importado ou criado de outra forma por meio de uma tarefa Tripo. | STRING | Sim | N/A |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `model_task_id` | O ID da tarefa Tripo do modelo a ser analisado. Ele identifica um modelo que foi previamente gerado, importado ou de outra forma criado por meio de uma tarefa Tripo. | MODEL_TASK_ID | Sim | N/A |
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
-|---------------|-------------|--------------|
+| Nome da Saída | Descrição | Tipo de Dados |
+|-------------|-------------|-----------|
 | `riggable` | Indica se o modelo pode ser rigado. | BOOLEAN |
 | `rig_type` | Esqueleto recomendado: biped, quadruped, hexapod, octopod, avian, serpentine ou aquatic; 'others' quando o modelo não pode ser rigado. | STRING |
 

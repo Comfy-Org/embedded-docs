@@ -1,19 +1,19 @@
 # VAESesKodunuÇöz
 
-VAEDecodeAudio düğümü, bir Varyasyonel Otomatik Kodlayıcı (VAE) kullanarak gizli temsilleri ses dalga formlarına geri dönüştürür. Kodlanmış ses örneklerini alır ve bunları VAE üzerinden işleyerek orijinal sesi yeniden yapılandırır; tutarlı çıktı seviyelerini sağlamak için normalizasyon uygular. Ortaya çıkan ses, varsayılan olarak 44100 Hz örnekleme hızıyla veya sağlanmışsa girdi örneklerinden alınan örnekleme hızıyla döndürülür.
+Bu düğüm, bir ses latent temsilini Varyasyonel Otokodlayıcı (VAE) kullanarak yeniden oynatılabilir bir ses dalga formuna dönüştürür. Kodlanmış örnekleri alır, seçilen VAE üzerinden çözer ve ardından genel ses seviyesi tutarlı kalacak şekilde ortaya çıkan dalga formunu normalleştirir. Çıktı sesi, VAE'nin ses örnekleme hızını (varsayılan olarak 44100 Hz) veya girdi örneklerinde bir örnekleme hızı mevcutsa bu değeri kullanır.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `örnekler` | Ses dalga formuna geri çözülecek, gizli uzaydaki kodlanmış ses örnekleri | LATENT | Evet | - |
-| `vae` | Gizli örnekleri sese çözmek için kullanılan Varyasyonel Otomatik Kodlayıcı (VAE) modeli | VAE | Evet | - |
+| `samples` | Latent uzayda kodlanmış, yeniden bir ses dalga formuna çözülecek ses örnekleri. Örnekler kendi örnekleme hızını taşıyorsa çıktı için bu değer kullanılır. | LATENT | Evet | - |
+| `vae` | Latent örnekleri sese çözmek için kullanılan Varyasyonel Otokodlayıcı modeli. Girdi örnekleri bir örnekleme hızı belirtmediğinde, ses çıktısı örnekleme hızı (varsayılan 44100 Hz) ortaya çıkan dalga formunun örnekleme hızını belirler. | VAE | Evet | - |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `AUDIO` | Normalize edilmiş ses seviyesi ve örnekleme hızına sahip çözülen ses dalga formu (varsayılan: 44100 Hz veya girdi `samples` içinde mevcutsa buradan alınan örnekleme hızı) | AUDIO |
+| `AUDIO` | Normalleştirilmiş ses seviyesine sahip, çözülmüş ses dalga formu; örnekleme hızıyla birlikte döndürülür (girdi `samples` içinde varsa bu örnekleme hızı, aksi halde VAE'nin ses örnekleme hızı, varsayılan 44100 Hz). | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecodeAudio/tr.md)
 

@@ -1,38 +1,38 @@
 # Tripo: モデル変換
 
-このノードは、既存の Tripo 3D モデルを別の 3D ファイル形式に変換します。以前に Tripo の操作（モデル生成、リギング、リターゲティング、セグメンテーションなど）で作成または処理されたモデルのタスク ID を受け取り、Tripo API に変換タスクを送信し、そのタスクが完了するまで待機して、変換されたモデルファイルを返します。
+このノードは、既存の Tripo 3D モデルを別の 3D ファイル形式に変換します。以前に Tripo の操作（モデル生成、リギング、リターゲティング、セグメンテーションなど）で作成または処理されたモデルのタスク ID を受け取り、Tripo API に変換タスクを送信し、そのタスクが完了するまで待機してから、変換されたモデルファイルを返します。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `original_model_task_id` | 変換する Tripo モデルのタスク ID。以前の Tripo モデル生成、リギング、リターゲティング、またはセグメンテーションのタスクから取得する必要があります。ID が欠落しているか空の場合、ノードはエラーを発生させます。 | STRING | はい | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID<br>SEGMENT_TASK_ID |
-| `format` | 変換された 3D モデルのターゲットファイル形式。 | COMBO | はい | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF |
+| `original_model_task_id` | 変換する Tripo モデルのタスク ID。以前の Tripo モデル生成、リギング、リターゲティング、またはセグメンテーションタスクで作成されたものである必要があります。ID が見つからないか空の場合、ノードはエラーを発生させます。 | STRING | はい | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID<br>SEGMENT_TASK_ID |
+| `format` | 変換後の 3D モデルのターゲットファイル形式。 | COMBO | はい | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF |
 | `quad` | 有効にすると三角形を四角形に変換します（デフォルト: False）。 | BOOLEAN | いいえ | True or False |
-| `face_limit` | 変換されたモデルの最大面数。-1 に設定すると無制限になります（デフォルト: -1）。 | INT | いいえ | -1〜2000000 |
-| `texture_size` | 出力テクスチャの解像度（ピクセル単位）（デフォルト: 4096）。 | INT | いいえ | 128〜8192 |
-| `texture_format` | エクスポートされるテクスチャに使用するファイル形式（デフォルト: JPEG）。 | COMBO | いいえ | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP |
+| `face_limit` | 変換後のモデルの最大面数。-1 に設定すると無制限になります（デフォルト: -1）。 | INT | いいえ | -1 〜 2000000 |
+| `texture_size` | 出力テクスチャの解像度（ピクセル単位）（デフォルト: 4096）。 | INT | いいえ | 128 〜 8192 |
+| `texture_format` | エクスポートされるテクスチャに使用されるファイル形式（デフォルト: JPEG）。 | COMBO | いいえ | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP |
 | `対称性を強制` | 有効にするとモデルを強制的に対称にします（デフォルト: False）。 | BOOLEAN | いいえ | True or False |
 | `底面を平坦化` | 有効にするとモデルの底面を平らにします（デフォルト: False）。 | BOOLEAN | いいえ | True or False |
-| `底面平坦化しきい値` | `flatten_bottom` と併用する平坦化の深さ（デフォルト: 0.01）。この値は `flatten_bottom` が有効な場合にのみ適用されます。 | FLOAT | いいえ | 0.01〜1.0 |
+| `底面平坦化しきい値` | `flatten_bottom` で使用される平坦化の深さ（デフォルト: 0.01）。この値は `flatten_bottom` が有効な場合にのみ適用されます。 | FLOAT | いいえ | 0.01 〜 1.0 |
 | `ピボットを底面中央へ` | 有効にするとピボットポイントをモデルの底面中央に移動します（デフォルト: False）。 | BOOLEAN | いいえ | True or False |
-| `スケール係数` | 変換されたモデルに適用されるスケール係数（デフォルト: 1.0）。 | FLOAT | いいえ | 0.01 and above |
-| `アニメーション付き` | リギングまたはリターゲティングされたモデルのスケルトンとアニメーションを保持します（デフォルト: True）。 | BOOLEAN | いいえ | True or False |
+| `スケール係数` | 変換後のモデルに適用されるスケール係数（デフォルト: 1.0）。 | FLOAT | いいえ | 0.01 and above |
+| `アニメーション付き` | リギング済みまたはリターゲティング済みモデルのスケルトンとアニメーションを保持します（デフォルト: True）。 | BOOLEAN | いいえ | True or False |
 | `UVパック` | 有効にすると UV 座標を再パックします（デフォルト: False）。 | BOOLEAN | いいえ | True or False |
-| `ベイク` | より広い互換性のために、高度なマテリアルをベーステクスチャにベイクします（デフォルト: True）。 | BOOLEAN | いいえ | True or False |
-| `パーツ名` | 変換に送信するモデルパーツ名のカンマ区切りリスト。空のエントリは無視され、重複する名前は削除されます。空のままにするとこのオプションを省略します（デフォルト: 空）。 | STRING | いいえ | カンマ区切りのパーツ名リスト |
-| `FBXプリセット` | FBX 互換性プリセット。bake_scale はスケール変換をジオメトリにベイクします（デフォルト: blender）。 | COMBO | いいえ | blender<br>mixamo<br>3dsmax<br>bake_scale |
+| `ベイク` | 幅広い互換性のために、高度なマテリアルをベーステクスチャにベイクします（デフォルト: True）。 | BOOLEAN | いいえ | True or False |
+| `パーツ名` | 変換に送信するモデルパーツ名のカンマ区切りリスト。空のエントリは無視され、重複した名前は削除されます。このオプションを省略するには空のままにします（デフォルト: 空）。 | STRING | いいえ | カンマ区切りのパーツ名リスト |
+| `FBXプリセット` | FBX 互換プリセット。bake_scale はスケール変換をジオメトリにベイクします（デフォルト: blender）。 | COMBO | いいえ | blender<br>mixamo<br>3dsmax<br>bake_scale |
 | `頂点カラーをエクスポート` | 有効にすると頂点カラーをエクスポートします（デフォルト: False）。 | BOOLEAN | いいえ | True or False |
 | `エクスポート方向` | エクスポートされるモデルの前方軸。default は Tripo の +x を維持します（デフォルト: default）。 | COMBO | いいえ | default<br>+x<br>-x<br>+y<br>-y |
-| `その場でアニメーション` | 有効にするとモデルをその場でアニメーション化します（デフォルト: False）。 | BOOLEAN | いいえ | True or False |
+| `その場でアニメーション` | 有効にするとモデルをその場でアニメーションさせます（デフォルト: False）。 | BOOLEAN | いいえ | True or False |
 
-**注意:** `original_model_task_id` と `format` を除き、すべての入力はオプションの詳細設定です。ほとんどの設定はデフォルト値のままにすると変換リクエストから省略され、Tripo API が標準の動作を使用できるようになります。`with_animation` と `bake` のオプションは常に送信されます。`flatten_bottom_threshold` は `flatten_bottom` が有効な場合にのみ適用されます。
+**注記:** `original_model_task_id` と `format` を除き、すべての入力は任意の詳細設定です。ほとんどの設定はデフォルト値のままだと変換リクエストから省略され、Tripo API が標準の動作を使用できるようになります。`with_animation` と `bake` オプションは常に送信されます。`flatten_bottom_threshold` は `flatten_bottom` が有効な場合にのみ適用されます。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `model_3d` | 要求された形式に変換されたモデル。OBJ は Tripo から ZIP アーカイブ（メッシュ、マテリアル、テクスチャ）として配信されます。 | FILE_3D |
+| `model_3d` | 要求された形式の変換済みモデル。OBJ は Tripo によって ZIP アーカイブ（メッシュ、マテリアル、テクスチャ）として提供されます。 | FILE_3D |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoConversionNode/ja.md)
 

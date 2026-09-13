@@ -1,15 +1,15 @@
 # ModelÖrneklemeSD3
 
-Bu düğüm, bir modele Stable Diffusion 3 tarzı örnekleme ayarlarını uygular. Modelin bir kopyasını oluşturur ve örnekleme yöntemini, verilen `shift` değerini kullanan akış tabanlı bir örnekleme yapılandırmasıyla değiştirir; bu değer örnekleme dağılımının nasıl şekillendirileceğini kontrol eder.
+Bu düğüm, bir modele Stable Diffusion 3 tarzı örnekleme ayarlarını uygular. Modelin bir kopyasını oluşturur ve örnekleme yöntemini, verilen `shift` değerini kullanan akış tabanlı bir örnekleme yapılandırmasıyla değiştirir; bu değer, örnekleme dağılımının nasıl şekillendirileceğini kontrol eder.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | SD3 örnekleme parametrelerinin uygulanacağı giriş modeli | MODEL | Evet | - |
-| `kaydırma` | Örnekleme kaydırma parametresini kontrol eder (varsayılan: 3.0) | FLOAT | Evet | 0.0 - 100.0 (adım: 0.01) |
+| `shift` | Örnekleme kaydırma parametresini kontrol eder (varsayılan: 3.0) | FLOAT | Evet | 0.0 - 100.0 (adım: 0.01) |
 
-Not: `shift` değeri, sabit bir dahili 1000 çarpanıyla birlikte uygulanır. Özgün modelde bir gürültü ölçeği ayarı varsa, bu değer değiştirilmiş modele aktarılır. Özgün model değiştirilmez; klonlanmış ve yamalanmış bir kopya döndürülür.
+Not: `shift` değeri, 1000 sabit iç çarpanıyla birlikte uygulanır. Özgün modelde bir gürültü ölçeği ayarı varsa, bu değer değiştirilen modele aktarılır. Özgün model değiştirilmez; klonlanmış ve yamalanmış bir kopya döndürülür.
 
 ## Çıktılar
 

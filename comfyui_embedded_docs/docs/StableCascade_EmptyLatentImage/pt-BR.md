@@ -1,15 +1,15 @@
 # StableCascade_EmptyLatentImage
 
-O nó StableCascade_EmptyLatentImage cria tensores latentes vazios para modelos Stable Cascade. Ele gera duas representações latentes separadas — uma para o estágio C e outra para o estágio B — com dimensões apropriadas com base na resolução de entrada e nas configurações de compressão. Este nó fornece o ponto de partida para o pipeline de geração do Stable Cascade.
+O nó StableCascade_EmptyLatentImage cria tensores latentes vazios para modelos Stable Cascade. Ele gera duas representações latentes separadas — uma para o estágio C e outra para o estágio B — com dimensões calculadas a partir da resolução de entrada e das configurações de compressão. Este nó fornece um ponto de partida para o pipeline de geração do Stable Cascade.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `largura` | A largura da imagem de saída em pixels (padrão: 1024, passo: 8) | INT | Sim | 256 a MAX_RESOLUTION |
-| `altura` | A altura da imagem de saída em pixels (padrão: 1024, passo: 8) | INT | Sim | 256 a MAX_RESOLUTION |
-| `compressão` | O fator de compressão que determina as dimensões latentes para o estágio C (padrão: 42, passo: 1). Este é um parâmetro avançado. | INT | Sim | 4 a 128 |
-| `tamanho_do_lote` | O número de amostras latentes a serem geradas em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
+| `width` | A largura da imagem de saída em pixels (padrão: 1024, passo: 8) | INT | Sim | 256 a MAX_RESOLUTION |
+| `height` | A altura da imagem de saída em pixels (padrão: 1024, passo: 8) | INT | Sim | 256 a MAX_RESOLUTION |
+| `compression` | O fator de compressão que determina as dimensões latentes para o estágio C (padrão: 42, passo: 1). Este é um parâmetro avançado. | INT | Sim | 4 a 128 |
+| `batch_size` | O número de amostras latentes a serem geradas em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
 
 Nota: O valor de `compression` controla o tamanho latente do estágio C: sua altura e largura são a `height` e a `width` de entrada divididas por `compression`. O latente do estágio B sempre usa uma compressão fixa de 4.
 

@@ -1,22 +1,26 @@
 # Görüntüleri Normalleştir
 
-Bu düğüm, matematiksel bir normalleştirme süreci kullanarak girdi görüntüsünün piksel değerlerini ayarlar. Her pikselden belirtilen ortalama değeri çıkarır ve ardından sonucu belirtilen standart sapmaya böler. Bu, görüntü verilerini diğer makine öğrenimi modelleri için hazırlamak amacıyla yapılan yaygın bir ön işleme adımıdır.
+Bu düğüm, bir girdi görüntüsünün renklerini, piksel değerlerini belirtilen ortalama ve standart sapmaya göre ayarlayarak normalleştirir. Her pikselden ortalama çıkarılır ve ardından standart sapmaya bölünür; bu, diğer işlemlerden önce görüntü verilerini standart hale getirmek için yaygın bir adımdır.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-| --- | --- | --- | --- | --- |
+|-----------|-------------|-----------|----------|-------|
 | `image` | Normalleştirilecek girdi görüntüsü. | IMAGE | Evet | - |
-| `ortalama` | Normalleştirme için ortalama değer (varsayılan: 0.5). | FLOAT | Hayır | 0.0 - 1.0 |
+| `mean` | Normalleştirme için ortalama değeri (varsayılan: 0.5). | FLOAT | Hayır | 0.0 - 1.0 |
 | `std` | Normalleştirme için standart sapma (varsayılan: 0.5). | FLOAT | Hayır | 0.001 - 1.0 |
 
-Not: Girdi görüntüsü bir alfa (şeffaflık) kanalı içerdiğinde, alfa kanalı normalleştirilmez. Alfa, renk yerine şeffaflığı sakladığı için çıktıda değiştirilmeden korunur.
+`mean` ve `std` parametreleri, girdi görüntüsüne uygulanan normalleştirmeyi kontrol eder. Her iki parametrenin varsayılan değeri 0.5'tir.
+
+Not: Girdi görüntüsünde bir alfa (saydamlık) kanalı varsa, bu kanal normalleştirilmez. Alfa, renk yerine saydamlığı depoladığı için çıktıya değiştirilmeden kopyalanır.
+
+Not: Düğüm herhangi bir toplu iş boyutuyla çalışır, bu nedenle birden fazla görüntü aynı anda işlenebilir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-| --- | --- | --- |
-| `görüntüler` | Normalleştirme süreci uygulandıktan sonra elde edilen görüntü. | IMAGE |
+|-------------|-------------|-----------|
+| `image` | Normalleştirme işlemi uygulandıktan sonra elde edilen görüntü. Piksel değerleri belirtilen ortalama ve standart sapma kullanılarak ayarlanır ve alfa kanalı (varsa) korunur. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/NormalizeImages/tr.md)
 

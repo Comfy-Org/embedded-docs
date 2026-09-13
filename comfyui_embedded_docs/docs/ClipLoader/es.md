@@ -1,18 +1,18 @@
-# Cargar CLIP
+# ClipLoader
 
-El nodo CLIPLoader carga un modelo codificador de texto (CLIP, T5 o similar) desde un archivo, dejándolo disponible para usarse en otros nodos que necesitan convertir prompts de texto en representaciones numéricas. Admite una amplia variedad de arquitecturas de modelo, cada una requiere un tipo de codificador específico.
+El nodo CLIPLoader carga un modelo codificador de texto (CLIP, T5 o similar) desde un archivo, lo que lo hace disponible para su uso en otros nodos que necesitan convertir prompts de texto en representaciones numéricas. Admite una amplia variedad de arquitecturas de modelos, y cada una requiere un tipo específico de codificador.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `nombre_clip` | El nombre de archivo del modelo codificador de texto que se cargará. Debe ser un archivo ubicado en el directorio `ComfyUI/models/text_encoders/`. | STRING | Sí | Lista de archivos encontrados en la carpeta `text_encoders` |
-| `tipo` | El tipo de arquitectura del modelo que se cargará. Esto determina qué variante específica de codificador usar (predeterminado: `"stable_diffusion"`). | COMBO | Sí | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
-| `dispositivo` | El dispositivo en el que se cargará el modelo. `"default"` usa la GPU si está disponible, mientras que `"cpu"` fuerza la carga en CPU. Esta es una opción avanzada (predeterminado: `"default"`). | COMBO | No | `"default"`<br>`"cpu"` |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `clip_name` | El nombre de archivo del modelo codificador de texto que se va a cargar. Debe ser un archivo ubicado en el directorio `ComfyUI/models/text_encoders/`. | STRING | Sí | Lista de archivos encontrados en la carpeta `text_encoders` |
+| `type` | El tipo de arquitectura del modelo que se carga. Esto determina qué variante específica del codificador usar (predeterminado: `"stable_diffusion"`). | COMBO | Sí | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
+| `device` | El dispositivo en el que se cargará el modelo. `"default"` usa la GPU si está disponible, mientras que `"cpu"` fuerza la carga en CPU. Esta es una opción avanzada (predeterminado: `"default"`). | COMBO | No | `"default"`<br>`"cpu"` |
 
 ### Asignaciones compatibles de tipo a codificador
 
-El parámetro `type` selecciona el codificador correcto para una arquitectura de modelo determinada. Las siguientes son asignaciones comunes:
+El parámetro `type` selecciona el codificador correcto para una arquitectura de modelo dada. Las siguientes son asignaciones comunes:
 
 | Tipo | Codificador |
 |------|---------|
@@ -21,7 +21,7 @@ El parámetro `type` selecciona el codificador correcto para una arquitectura de
 | sd3 | t5 xxl / clip-g / clip-l |
 | stable_audio | t5 base |
 | mochi | t5 xxl |
-| cogvideox | t5 xxl (226-token padding) |
+| cogvideox | t5 xxl (padding de 226 tokens) |
 | cosmos | old t5 xxl |
 | lumina2 | gemma 2 2B |
 | wan | umt5 xxl |
@@ -35,8 +35,8 @@ El parámetro `type` selecciona el codificador correcto para una arquitectura de
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
-|------------------|-------------|---------------|
-| `CLIP` | El modelo codificador de texto cargado, listo para conectarse a otros nodos para codificación de texto y condicionamiento. | CLIP |
+|-------------|-------------|-----------|
+| `CLIP` | El modelo codificador de texto cargado, listo para conectarse a otros nodos para la codificación de texto y el condicionamiento. | CLIP |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipLoader/es.md)
 

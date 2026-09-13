@@ -1,32 +1,32 @@
-# MiniMaxH3AddGuide
+# Adicionar guia para MiniMax H3
 
-Este nó ancora uma imagem, um clipe curto, áudio ou um clipe com sua trilha sonora em qualquer quadro escolhido de um vídeo MiniMax H3. Ele adiciona um quadro-chave guia ao condicionamento no índice de quadro especificado, e você pode encadear vários desses nós para ancorar vários quadros no mesmo vídeo.
+Este nó ancora uma imagem, um clipe curto, áudio ou um clipe com sua trilha sonora em qualquer frame de um vídeo do MiniMax H3. Ele adiciona um keyframe de guia ao condicionamento no índice de frame escolhido, e você pode encadear vários desses nós para ancorar vários frames no mesmo vídeo.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | O condicionamento ao qual o quadro-chave guia é anexado. | CONDITIONING | Sim | - |
-| `latent` | O latente de áudio-vídeo MiniMax H3 que define o vídeo de destino. Deve ser um latente AV MiniMax H3 (aninhado, com dois tensores 5D de 24 canais cada). | LATENT | Não | - |
-| `frame_idx` | Índice do quadro para ancorar a imagem ou o primeiro quadro do clipe. Valores negativos são contados a partir do final do vídeo. (padrão: 0) | INT | Não | -9999 a 9999 |
-| `vae` | VAE de vídeo, necessário quando uma imagem é conectada. | VAE | Não | - |
-| `audio_vae` | VAE de áudio, necessário quando um áudio é conectado. | VAE | Não | - |
-| `image` | Imagem ou quadros de vídeo para ancorar. Lotes com múltiplos quadros são ancorados como um clipe e cortados para os comprimentos de clipe válidos do modelo: 5, 22, 39... (17k + 5) quadros. Lotes com menos de 5 quadros usam apenas a primeira imagem. | IMAGE | Não | - |
-| `audio` | Trilha sonora para ancorar começando no mesmo índice de quadro, cortada para a duração restante do vídeo. | AUDIO | Não | - |
+| `positive` | O condicionamento ao qual o keyframe de guia é anexado. | CONDITIONING | Sim | - |
+| `vae` | VAE de vídeo, necessário quando uma imagem está conectada. | VAE | Não | - |
+| `audio_vae` | VAE de áudio, necessário quando um áudio está conectado. | VAE | Não | - |
+| `latent` | O latent de áudio e vídeo do MiniMax H3 que define o vídeo de destino. Deve ser um latent AV do MiniMax H3 (aninhado, com dois tensores 5D, sendo que o tensor de vídeo tem 24 canais). | LATENT | Sim | - |
+| `image` | Imagem ou frames de vídeo a ancorar. Lotes de múltiplos frames são ancorados como um clipe e recortados para os comprimentos de clipe válidos do modelo: 5, 22, 39... (17k + 5) frames. Lotes com menos de 5 frames usam apenas a primeira imagem. | IMAGE | Não | - |
+| `audio` | Trilha sonora a ancorar começando no mesmo índice de frame, recortada para a duração restante do vídeo. | AUDIO | Não | - |
+| `frame_idx` | Índice de frame no qual ancorar a imagem ou o primeiro frame do clipe. Valores negativos são contados a partir do fim do vídeo. (padrão: 0) | INT | Sim | -9999 a 9999 |
 
 **Restrições:**
-- Pelo menos um de `image` ou `audio` deve ser fornecido; caso contrário, o nó gera um erro.
-- `vae` é obrigatório quando `image` é conectada.
-- `audio_vae` é obrigatório quando `audio` é conectado.
-- Lotes de `image` com menos de 5 quadros usam apenas a primeira imagem; lotes de 5 ou mais quadros são cortados para um comprimento de clipe válido (5, 22, 39, etc.).
-- `frame_idx` deve posicionar o guia dentro do intervalo de quadros do vídeo, e um clipe de múltiplos quadros deve caber inteiramente no vídeo; caso contrário, o nó gera um erro.
-- Quando o áudio é conectado, o índice do quadro não deve ultrapassar o final da trilha de áudio do vídeo.
+- Pelo menos um entre `image` ou `audio` deve ser fornecido; caso contrário, o nó lança um erro.
+- `vae` é obrigatório quando `image` está conectado.
+- `audio_vae` é obrigatório quando `audio` está conectado.
+- Lotes de `image` com menos de 5 frames usam apenas a primeira imagem; lotes com 5 frames ou mais são recortados para um comprimento de clipe válido (5, 22, 39 etc.).
+- `frame_idx` deve posicionar o keyframe de guia dentro do intervalo de frames do vídeo, e um clipe de múltiplos frames deve caber inteiramente no vídeo; caso contrário, o nó lança um erro.
+- Quando áudio está conectado, o índice de frame não pode ultrapassar o fim da faixa de áudio do vídeo.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 |-------------|-------------|-----------|
-| `positive` | O condicionamento com o quadro-chave guia adicionado, contendo o índice de quadro resolvido e, quando fornecido, os latentes de imagem ou áudio codificados. | CONDITIONING |
+| `positive` | O condicionamento com o keyframe de guia adicionado, contendo o índice de frame resolvido e, quando fornecidos, os latents de imagem ou áudio codificados. | CONDITIONING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MiniMaxH3AddGuide/pt-BR.md)
 

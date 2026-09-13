@@ -1,42 +1,38 @@
-# LTXVGeneratedKeyframesToGuides
+# LTXV Images clés générées vers guides
 
-## Aperçu
-
-Le nœud LTXV Générés Clés à Guides fixe les clés générées à une étape précédente en tant que guides d'image figées sur un canevas ultérieur. Il décode les clés comme des images indépendantes, les redimensionne si nécessaire, et les écrit avec un masque de bruit à 0 pour éviter un débruitage supplémentaire. Les indices enregistrés sont étalonnés à partir du canevas où ils ont été générés vers le canevas cible, et vous pouvez remplacer les indices de cadre pour définir des positions explicitement.
+Le nœud LTXV Generated Keyframes to Guides fixe les keyframes générées d'une étape antérieure comme guides d'image figés sur un canevas ultérieur. Il décode les keyframes comme des trames autonomes, les redimensionne si nécessaire et les écrit avec un masque de bruit de 0 afin qu'elles ne soient pas débruitées à nouveau. Après un upscale temporel, les indices enregistrés sont mis à l'échelle depuis le canevas sur lequel elles ont été générées vers celui-ci ; utilisez `override_frame_indices` pour définir explicitement les positions.
 
 ## Entrées
 
-| Paramètre                 | Description                                                                 | Type de données | Obligatoire | Gamme |
-|---------------------------|-----------------------------------------------------------------------------|-----------------|--------------|-------|
-| `positive`                | Conditionnement positif avec les clés fixées en tant que guides d'image.         | CONDITIONING    | Oui          |       |
-| `negative`                | Conditionnement négatif avec les clés fixées en tant que guides d'image.         | CONDITIONING    | Oui          |       |
-| `vae`                     | Le modèle VAE à utiliser pour décoder les clés.                               | MODEL           | Oui          |       |
-| `latent`                  | La vidéo latente cible auxquelles ajouter les guides, par exemple, la version temporellement agrandie. | LATENT         | Oui          |       |
-| `keyframes`               | Les clés en sortie de LTXV Séparer Générés Clés, qui contient l'index de cadre pixelique à chaque clé générée. | LATENT         | Oui          |       |
-| `strength`                | Force du guide. 1.0 est un fixation rigide ; les valeurs inférieures le relâchent. | FLOAT           | Oui          | 0.0 - 10.0 |
-| `override_frame_indices` | Optionnel — fixer à ces cadres pixeliques au lieu des positions enregistrées (ou étalonnées) automatiquement. Fournir un index par clé. Laisser vide pour réutiliser les positions enregistrées ou les étaler si nécessaire. | STRING          | Non          |       |
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `positive` | Conditionnement positif auquel ajouter les guides de keyframes. | CONDITIONING | Oui | |
+| `negative` | Conditionnement négatif auquel ajouter les guides de keyframes. | CONDITIONING | Oui | |
+| `vae` | Le VAE utilisé pour décoder les keyframes si un redimensionnement est nécessaire. | VAE | Oui | |
+| `latent` | Le latent vidéo cible auquel ajouter les guides, par ex. celui ayant subi un upscale temporel. | LATENT | Oui | |
+| `keyframes` | La sortie keyframes de LTXV Separate Generated Keyframes, qui porte l'indice de trame pixel auquel chaque keyframe a été générée. | LATENT | Oui | |
+| `strength` | Force du guide. 1.0 correspond à un ancrage fort ; des valeurs plus faibles relâchent l'ancrage. (par défaut : 1.0) | FLOAT | Oui | 0.0 - 10.0 (pas 0.01) |
+| `override_frame_indices` | Facultatif — fixez à ces trames pixel au lieu des positions enregistrées (ou mises à l'échelle automatiquement). Fournissez un indice par keyframe. Laissez vide pour réutiliser les positions enregistrées, ou pour les mettre à l'échelle lorsque le canevas cible a une longueur différente (par ex. après un upscale temporel x2). (par défaut : "") | STRING | Non | |
 
 ## Sorties
 
-| Nom de sortie | Description                                                                 | Type de données |
-|---------------|-----------------------------------------------------------------------------|-----------------|
-| `positive`    | Conditionnement positif avec les clés fixées en tant que guides d'image.         | CONDITIONING    |
-| `negative`    | Conditionnement négatif avec les clés fixées en tant que guides d'image.         | CONDITIONING    |
-| `latent`      | Vidéo latente cible avec les clés ajoutées en tant que guides figés.               | LATENT          |
+| Nom de sortie | Description | Type de données |
+|---------------|-------------|-----------------|
+| `positive` | Conditionnement positif avec les keyframes fixées comme guides d'image. | CONDITIONING |
+| `negative` | Conditionnement négatif avec les keyframes fixées comme guides d'image. | CONDITIONING |
+| `latent` | Latent vidéo cible avec les keyframes ajoutées comme guides figés. | LATENT |
 
-## Notes
+## Remarques
 
-- Le paramètre `strength` contrôle la force avec laquelle les clés sont fixées en tant que guides. Une valeur de 1.0 crée une fixation rigide, tandis que les valeurs inférieures la relâchent.
-- Le paramètre `override_frame_indices` permet de spécifier les cadres pixeliques exacts où les clés doivent être fixées. Si laissé vide, le nœud utilisera les positions enregistrées ou les étalonnera si nécessaire.
-- Le nœud suppose que la latente `keyframes` contient l'index de cadre pixelique pour chaque clé. Si ce n'est pas le cas, le nœud lèvera une `ValueError`.
-- Le nœud ne prend en charge qu'une taille de lot de 1. Chaque guide est codé à partir d'une image, donc il ne peut pas différer entre les éléments du lot.
-- Le nœud lèvera une `ValueError` si le tenseur `samples` dans l'entrée `latent` n'est pas un tenseur 5D ou si la taille de lot n'est pas de 1.
-- Le nœud lèvera une `ValueError` si le tenseur `samples` dans l'entrée `keyframes` n'est pas un tenseur 5D ou si la taille de lot n'est pas de 1.
-- Le nœud lèvera une `ValueError` si la forme du tenseur `samples` dans l'entrée `keyframes` ne correspond pas à la forme du tenseur `samples` dans l'entrée `latent` après redimensionnement.
-- Le nœud lèvera une `ValueError` si le paramètre `strength` est en dehors de la gamme de 0.0 à 10.0.
-- Le nœud lèvera une `ValueError` si le paramètre `override_frame_indices` n'est pas une liste de nombres entiers séparés par des virgules ou si le nombre d'indices ne correspond pas au nombre de clés.
-- Le nœud lèvera une `ValueError` si l'un des indices dans le paramètre `override_frame_indices` est en dehors de la gamme de 1 à la nombre de cadres pixeliques dans le canevas cible.
-- Le nœud lèvera une `ValueError` si l'index maximal dans le paramètre `override_frame_indices` est supérieur au nombre de cadres pixeliques dans le canevas cible.
+- L'entrée `keyframes` doit être connectée à la sortie keyframes de LTXV Separate Generated Keyframes. Le nœud lève une erreur si le latent ne porte pas les positions des keyframes générées.
+- Les entrées de conditionnement `positive` et `negative` doivent provenir des sorties positive et negative de LTXV Separate Generated Keyframes. Le nœud lève une erreur si le conditionnement positif porte encore des keyframes générées.
+- L'entrée `latent` doit être un latent vidéo simple (tenseur 5D). Les guides doivent être ajoutés avant la fusion des latents vidéo et audio avec Concat AV Latent.
+- Seule une taille de lot de 1 est prise en charge. Chaque guide est encodé à partir d'une image, il ne peut donc pas différer d'un élément du lot à l'autre.
+- Le nombre de keyframes dans le latent `keyframes` doit correspondre au nombre de positions enregistrées ; sinon, une erreur est levée.
+- Si `override_frame_indices` est laissé vide, les positions enregistrées sont utilisées. Si le canevas cible a un nombre de trames différent de celui du canevas sur lequel les keyframes ont été générées, les indices enregistrés sont mis à l'échelle automatiquement.
+- Si `override_frame_indices` est fourni, il doit contenir un indice entier par keyframe, les indices étant séparés par des virgules ou des espaces. Les indices doivent être uniques et compris entre 1 et (nombre de trames pixel dans le latent cible - 1). Sinon, une erreur est levée.
+- Si un indice final de keyframe est supérieur ou égal au nombre de trames pixel dans le latent cible, le nœud lève une erreur. Cela peut se produire lorsque la cible a été redimensionnée temporellement après la génération des keyframes.
+- Le paramètre `strength` a un minimum de 0.0 et un maximum de 10.0.
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVGeneratedKeyframesToGuides/fr.md)
 

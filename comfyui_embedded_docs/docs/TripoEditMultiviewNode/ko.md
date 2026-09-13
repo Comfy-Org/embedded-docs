@@ -1,18 +1,18 @@
 # Tripo: 멀티뷰 편집
 
-각 뷰에 대해 별도의 텍스트 지시를 사용하여 Tripo: Image to Multiview 결과의 뷰를 편집합니다. 지시가 없는 뷰는 변경되지 않습니다. 편집된 이미지는 3D 모델을 생성하기 위해 Tripo: Multiview to Model에 연결하도록 의도되었습니다. 편집된 멀티뷰 세트는 다시 편집할 수 없습니다.
+별도의 텍스트 지시를 각 뷰에 사용하여 Tripo: Image to Multiview 결과의 뷰를 편집합니다. 지시가 없는 뷰는 변경되지 않습니다. 편집된 이미지는 3D 모델을 생성하기 위해 Tripo: Multiview to Model에 연결하는 용도로 사용됩니다. 편집된 멀티뷰 세트는 다시 편집할 수 없습니다.
 
 ## 입력
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `multiview_task_id` | 뷰를 편집할 Tripo: Image to Multiview 결과의 작업 ID입니다. 반드시 Tripo: Image to Multiview 노드에서 가져와야 합니다. | MULTIVIEW_TASK_ID | 예 | 작업 ID |
+| `multiview_task_id` | 뷰를 편집할 Tripo: Image to Multiview 결과의 작업 ID입니다. 반드시 Tripo: Image to Multiview 노드에서 제공되어야 합니다. | MULTIVIEW_TASK_ID | 예 | 작업 ID |
 | `front_prompt` | 정면 뷰에 적용할 편집을 설명하는 텍스트 지시입니다. 비어 있으면 정면 뷰는 변경되지 않습니다. 기본값: 빈 문자열. | STRING | 아니요 | 여러 줄 텍스트 |
 | `left_prompt` | 왼쪽 뷰에 적용할 편집을 설명하는 텍스트 지시입니다. 비어 있으면 왼쪽 뷰는 변경되지 않습니다. 기본값: 빈 문자열. | STRING | 아니요 | 여러 줄 텍스트 |
 | `back_prompt` | 후면 뷰에 적용할 편집을 설명하는 텍스트 지시입니다. 비어 있으면 후면 뷰는 변경되지 않습니다. 기본값: 빈 문자열. | STRING | 아니요 | 여러 줄 텍스트 |
 | `right_prompt` | 오른쪽 뷰에 적용할 편집을 설명하는 텍스트 지시입니다. 비어 있으면 오른쪽 뷰는 변경되지 않습니다. 기본값: 빈 문자열. | STRING | 아니요 | 여러 줄 텍스트 |
 
-참고: 네 개의 프롬프트(`front_prompt`, `left_prompt`, `back_prompt`, `right_prompt`) 중 최소 하나에는 비어 있지 않은 텍스트가 있어야 합니다. 공백만 있는 텍스트는 비어 있는 것으로 간주되며, 모든 프롬프트가 비어 있으면 노드에서 오류가 발생합니다.
+참고: 네 개의 프롬프트(`front_prompt`, `left_prompt`, `back_prompt`, `right_prompt`) 중 적어도 하나에는 비어 있지 않은 텍스트가 포함되어야 합니다. 공백만 있는 텍스트는 빈 것으로 간주되며, 모든 프롬프트가 비어 있으면 노드에서 오류를 발생시킵니다.
 
 참고: 비용은 편집 지시가 있는 뷰당 약 0.05 USD입니다.
 
@@ -20,10 +20,10 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `전면` | 편집된 정면 뷰 이미지. | IMAGE |
-| `왼쪽` | 편집된 왼쪽 뷰 이미지. | IMAGE |
-| `뒤쪽` | 편집된 후면 뷰 이미지. | IMAGE |
-| `오른쪽` | 편집된 오른쪽 뷰 이미지. | IMAGE |
+| `front` | 편집된 정면 뷰 이미지. | IMAGE |
+| `left` | 편집된 왼쪽 뷰 이미지. | IMAGE |
+| `back` | 편집된 후면 뷰 이미지. | IMAGE |
+| `right` | 편집된 오른쪽 뷰 이미지. | IMAGE |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoEditMultiviewNode/ko.md)
 

@@ -1,20 +1,20 @@
 # EmptySD3LatentImage
 
-EmptySD3LatentImage crea un tensor de imagen latente en blanco específicamente formateado para los modelos Stable Diffusion 3. Genera un tensor relleno de ceros que tiene las dimensiones y la estructura correctas esperadas por los pipelines de SD3. Se utiliza comúnmente como punto de partida para flujos de trabajo de generación de imágenes.
+EmptySD3LatentImage crea una imagen latente en blanco (todo ceros) con la disposición que esperan los modelos Stable Diffusion 3. Como el latente está vacío, normalmente se usa como el punto de partida que un flujo de trabajo de generación rellena con una imagen. El ancho y el alto que elijas determinan el tamaño de la imagen final.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `ancho` | El ancho de la imagen latente de salida en píxeles (por defecto: 1024) | INT | Sí | 16 a MAX_RESOLUTION (step: 16) |
-| `altura` | El alto de la imagen latente de salida en píxeles (por defecto: 1024) | INT | Sí | 16 a MAX_RESOLUTION (step: 16) |
-| `tamaño_del_lote` | El número de imágenes latentes a generar en un lote (por defecto: 1) | INT | Sí | 1 a 4096 |
+| `width` | El ancho de la imagen latente en píxeles (predeterminado: 1024). Los valores se incrementan en pasos de 16. | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) |
+| `height` | El alto de la imagen latente en píxeles (predeterminado: 1024). Los valores se incrementan en pasos de 16. | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) |
+| `batch_size` | La cantidad de imágenes latentes a generar en el lote (predeterminado: 1). | INT | Sí | 1 a 4096 |
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `LATENT` | Un tensor latente que contiene muestras en blanco con dimensiones compatibles con SD3. El tensor tiene 16 canales y está reducido espacialmente por un factor de 8 en comparación con el ancho y alto de entrada. | LATENT |
+| `LATENT` | Un tensor latente que contiene muestras en blanco (todo ceros) en el formato compatible con SD3. El tensor tiene 16 canales, se reduce por un factor de 8 en relación con `width` y `height`, y tiene una relación de reducción espacial de 8. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptySD3LatentImage/es.md)
 

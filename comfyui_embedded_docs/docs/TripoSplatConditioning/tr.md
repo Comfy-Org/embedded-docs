@@ -1,22 +1,22 @@
 # TripoSplat Koşullandırma
 
-Bu düğüm, giriş görüntüsünü DINOv3 görüntü kodlayıcı ve Flux2 VAE kullanarak kodlar; TripoSplat modeli için pozitif ve negatif koşullandırma verileri oluşturur. Ayrıca KSampler için başlangıç noktası görevi gören sabit boyutlu bir gürültü hedefi (latent artı kamera verisi) üretir.
+Bu düğüm, TripoSplat modeli için pozitif ve negatif koşullandırma verisi üretmek amacıyla bir giriş görüntüsünü DINOv3 görüntü kodlayıcısı ve Flux2 VAE ile kodlar. Ayrıca KSampler için başlangıç noktası işlevi gören sabit boyutlu bir gürültü hedefi (latent artı kamera verisi) oluşturur.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `clip_vision` | DINOv3 ViT-H/16+ görüntü kodlayıcı | CLIP_VISION | Evet | - |
+| `clip_vision` | DINOv3 ViT-H/16+ görüntü kodlayıcısı | CLIP_VISION | Evet | - |
 | `vae` | Flux2 VAE | VAE | Evet | - |
-| `görsel` | Kodlanacak giriş görüntüsü | IMAGE | Evet | - |
+| `image` | Kodlanacak giriş görüntüsü | IMAGE | Evet | - |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-|-------------|-------------|-----------|
-| `pozitif` | DINOv3 özelliklerini ve Flux2 VAE latentini içeren pozitif koşullandırma verileri | CONDITIONING |
-| `negatif` | Sıfır doldurulmuş DINOv3 özelliklerini ve sıfır doldurulmuş Flux2 VAE latentini içeren negatif koşullandırma verileri | CONDITIONING |
-| `latent` | KSampler için sabit boyutlu gürültü hedefi (latent + kamera) | LATENT |
+|-------------|-----------|-----------|
+| `positive` | DINOv3 öznitelik dizisini ve referans latent olarak taşınan Flux2 VAE latentini içeren pozitif koşullandırma verisi | CONDITIONING |
+| `negative` | Sıfırla doldurulmuş DINOv3 özniteliklerini ve sıfırla doldurulmuş bir Flux2 VAE referans latentini içeren negatif koşullandırma verisi | CONDITIONING |
+| `latent` | KSampler için sabit boyutlu gürültü hedefi (latent + kamera). Latent, tek bir kamera token'ı (1 x 5) ile eşleştirilmiş sabit şekilli bir shape-code dizisidir (8192 x 16) | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoSplatConditioning/tr.md)
 

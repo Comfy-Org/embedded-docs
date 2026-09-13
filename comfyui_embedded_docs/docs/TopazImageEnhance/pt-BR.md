@@ -1,26 +1,28 @@
 # Topaz Image Enhance
 
-O nó Topaz Image Enhance fornece ampliação (upscaling) e aprimoramento de imagem de nível profissional. Ele processa uma única imagem de entrada usando um modelo de IA baseado em nuvem para melhorar qualidade, detalhes e resolução. O nó oferece controle refinado sobre o processo de aprimoramento, incluindo opções para orientação criativa, foco no assunto e preservação facial.
+O nó Topaz Image Enhance fornece ampliação e aprimoramento de imagem padrão do setor. Ele processa uma única imagem de entrada usando um modelo de IA baseado em nuvem para melhorar a qualidade, o detalhe e a resolução. O nó oferece controle refinado sobre o processo de aprimoramento, incluindo opções para orientação criativa, foco no sujeito e preservação facial.
+
+Este nó é uma versão legada e está marcado como obsoleto na interface.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `modelo` | O modelo de IA a ser usado para aprimoramento de imagem. | COMBO | Sim | `"Reimagine"` |
-| `imagem` | A imagem de entrada a ser aprimorada. Apenas uma imagem é suportada. | IMAGE | Sim | - |
-| `prompt` | Texto opcional para orientação de ampliação criativa (padrão: vazio). | STRING | Não | - |
-| `detecção_de_sujeito` | Controla em qual parte da imagem o aprimoramento se concentra (padrão: "All"). | COMBO | Não | `"All"`<br>`"Foreground"`<br>`"Background"` |
-| `aprimoramento_de_rostos` | Aprimora rostos (se presentes) durante o processamento (padrão: True). | BOOLEAN | Não | - |
-| `criatividade_no_aprimoramento_de_rostos` | Define o nível de criatividade para o aprimoramento facial (padrão: 0.0). | FLOAT | Não | 0.0 - 1.0 |
-| `força_do_aprimoramento_de_rostos` | Controla o quão nítidos os rostos aprimorados são em relação ao fundo (padrão: 1.0). | FLOAT | Não | 0.0 - 1.0 |
-| `cortar_para_preencher` | Por padrão, a imagem recebe letterbox quando a proporção de aspecto de saída difere. Ative para cortar a imagem e preencher as dimensões de saída (padrão: False). | BOOLEAN | Não | - |
-| `largura_de_saida` | Valor zero significa cálculo automático (normalmente será o tamanho original ou a `output_height` se especificada) (padrão: 0). | INT | Não | 0 - 32000 |
-| `altura_de_saida` | Valor zero significa gerar com a mesma altura da original ou a `output_width` (padrão: 0). | INT | Não | 0 - 32000 |
-| `criatividade` | Controla o nível geral de criatividade do aprimoramento (padrão: 3). | INT | Não | 1 - 9 |
-| `preservação_de_rostos` | Preserva a identidade facial dos assuntos (padrão: True). | BOOLEAN | Não | - |
-| `preservação_de_cores` | Preserva as cores originais (padrão: True). | BOOLEAN | Não | - |
+| `model` | O modelo de IA a ser usado para aprimoramento de imagem. | COMBO | Sim | `"Reimagine"` |
+| `image` | A imagem de entrada a ser aprimorada. Apenas uma imagem é suportada. | IMAGE | Sim | - |
+| `prompt` | Prompt de texto opcional para orientação de ampliação criativa (padrão: vazio). | STRING | Não | - |
+| `subject_detection` | Controla em qual parte da imagem o aprimoramento se concentra (padrão: "All"). | COMBO | Não | `"All"`<br>`"Foreground"`<br>`"Background"` |
+| `face_enhancement` | Aprimora rostos (se houver) durante o processamento (padrão: True). | BOOLEAN | Não | - |
+| `face_enhancement_creativity` | Define o nível de criatividade para o aprimoramento de rostos (padrão: 0.0). | FLOAT | Não | 0.0 - 1.0 |
+| `face_enhancement_strength` | Controla quão nítidos os rostos aprimorados ficam em relação ao fundo (padrão: 1.0). | FLOAT | Não | 0.0 - 1.0 |
+| `crop_to_fill` | Por padrão, a imagem é exibida com tarjas (letterbox) quando a proporção da saída difere. Ative para recortar a imagem a fim de preencher as dimensões de saída (padrão: False). | BOOLEAN | Não | - |
+| `output_width` | O valor zero significa calcular automaticamente (normalmente será o tamanho original ou output_height, se especificado) (padrão: 0). | INT | Não | 0 - 32000 |
+| `output_height` | O valor zero significa gerar na mesma altura que o original ou a largura de saída (padrão: 0). | INT | Não | 0 - 32000 |
+| `creativity` | Controla o nível geral de criatividade do aprimoramento (padrão: 3). | INT | Não | 1 - 9 |
+| `face_preservation` | Preserva a identidade facial dos sujeitos (padrão: True). | BOOLEAN | Não | - |
+| `color_preservation` | Preserva as cores originais (padrão: True). | BOOLEAN | Não | - |
 
-**Nota:** Este nó só pode processar uma única imagem de entrada. Fornecer um lote com várias imagens resultará em erro.
+**Observação:** Este nó só pode processar uma única imagem de entrada. Fornecer um lote com várias imagens resultará em erro.
 
 ## Saídas
 

@@ -1,29 +1,29 @@
 # Meshy: Modelo de Textura
 
-O nó Meshy: Texture aplica texturas geradas por IA a um modelo 3D. Ele recebe um ID de tarefa de um nó anterior de geração ou conversão 3D do Meshy e usa uma descrição de texto ou uma imagem de referência para criar novas texturas para o modelo. O nó gera o modelo texturizado nos formatos de arquivo GLB e FBX.
+O nó Meshy: Texture Model aplica texturas geradas por IA a um modelo 3D existente. Ele usa um ID de tarefa de uma tarefa anterior de geração ou conversão 3D do Meshy e orienta o processo de texturização com um prompt de estilo em texto ou uma imagem de referência. O nó retorna o modelo texturizado nos formatos de arquivo GLB e FBX.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+| Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `modelo` | A versão do modelo de IA a ser usada para texturização. | COMBO | Sim | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `meshy_task_id` | O identificador exclusivo (ID da tarefa) de uma tarefa anterior de geração ou conversão 3D do Meshy. Isso fornece o modelo 3D base a ser texturizado. | MESHY_TASK_ID | Sim | - |
-| `habilitar_uv_original` | Use a UV original do modelo em vez de gerar novas UVs. Quando ativado (padrão: `True`), o Meshy preserva as texturas existentes do modelo enviado. Se o modelo não tiver UV original, a qualidade da saída pode não ser tão boa. Esta é uma opção avançada. | BOOLEAN | Sim | true / false |
-| `pbr` | Ativa a saída de material com renderização baseada em física (PBR) para o modelo texturizado (padrão: `False`). Esta é uma opção avançada. | BOOLEAN | Sim | true / false |
-| `prompt_de_estilo_textual` | Descreva o estilo de textura desejado do objeto usando texto. Máximo de 600 caracteres. Não pode ser usado ao mesmo tempo que `image_style`. | STRING | Sim | - |
-| `estilo_de_imagem` | Uma imagem 2D para orientar o processo de texturização. Não pode ser usada ao mesmo tempo que `text_style_prompt`. | IMAGE | Não | - |
+| `model` | A versão do modelo de IA a ser usada para texturização. | COMBO | Sim | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `meshy_task_id` | O identificador exclusivo (ID da tarefa) de uma tarefa anterior de geração ou conversão 3D do Meshy. Ele fornece o modelo 3D base a ser texturizado. | MESHY_TASK_ID | Sim | - |
+| `enable_original_uv` | Usa o UV original do modelo em vez de gerar novos UVs. Quando habilitado (padrão: `True`), o Meshy preserva texturas existentes do modelo enviado. Se o modelo não tiver UV original, a qualidade da saída pode não ser tão boa. Esta é uma opção avançada. | BOOLEAN | Sim | true / false |
+| `pbr` | Habilita a saída de material com Renderização Baseada em Física (PBR) para o modelo texturizado (padrão: `False`). Esta é uma opção avançada. | BOOLEAN | Sim | true / false |
+| `text_style_prompt` | Descreva o estilo de textura desejado para o objeto usando texto (padrão: string vazia). Máximo de 600 caracteres. Não pode ser usado ao mesmo tempo que `image_style`. | STRING | Sim | - |
+| `image_style` | Uma imagem 2D para orientar o processo de texturização. Não pode ser usada ao mesmo tempo que `text_style_prompt`. | IMAGE | Não | - |
 | `texture_resolution` | Resolução da textura de cor base. Resoluções mais altas capturam mais detalhes da superfície. | COMBO | Sim | `"2k"`<br>`"4k"`<br>`"8k"` |
 
-**Restrições de Parâmetro:**
+**Restrições de parâmetros:**
 
-* Você deve fornecer um `text_style_prompt` ou um `image_style`, mas não pode fornecer ambos ao mesmo tempo.
+* Você deve fornecer um `text_style_prompt` ou uma `image_style`, mas não pode fornecer ambos ao mesmo tempo.
 * O `text_style_prompt` é limitado a um máximo de 600 caracteres.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dados |
+| Nome da saída | Descrição | Tipo de dados |
 | --- | --- | --- |
-| `arquivo_do_modelo` | O nome do arquivo do modelo GLB gerado. Esta saída é fornecida apenas para compatibilidade reversa. | STRING |
+| `model_file` | O nome do arquivo do modelo GLB gerado. Esta saída é fornecida apenas para compatibilidade com versões anteriores. | STRING |
 | `meshy_task_id` | O identificador exclusivo da tarefa para este trabalho de texturização, que pode ser usado para referenciar o resultado. | MESHY_TASK_ID |
 | `GLB` | O modelo 3D texturizado salvo no formato de arquivo GLB. | FILE3DGLB |
 | `FBX` | O modelo 3D texturizado salvo no formato de arquivo FBX. | FILE3DFBX |

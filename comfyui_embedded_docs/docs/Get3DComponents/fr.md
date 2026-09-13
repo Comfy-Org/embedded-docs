@@ -1,20 +1,20 @@
 # Obtenir les composants 3D
 
-Get3DComponents analyse un fichier de modèle 3D (GLB, GLTF, OBJ ou STL) en un maillage éditable pouvant être utilisé par des nœuds de traitement de maillage tels que decimate, remesh, UV unwrap et bake. Tous les nœuds et primitives de la scène sont fusionnés en un seul maillage avec leurs transformations appliquées, et les textures et paramètres de matériau proviennent du premier matériau. C'est la contrepartie du nœud MeshToFile3D.
+Get3DComponents analyse un fichier de modèle 3D (GLB, GLTF, OBJ ou STL) pour le convertir en un maillage éditable pouvant être utilisé par des nœuds de traitement de maillage tels que decimate, remesh, UV unwrap et bake. Tous les nœuds de scène et primitives sont fusionnés en un seul maillage avec leurs transformations appliquées, et les textures et paramètres de matériau proviennent du premier matériau. C'est le pendant du nœud MeshToFile3D.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model_3d` | Fichier de modèle 3D provenant du nœud Load 3D ou d'un autre nœud 3D. Les fichiers FBX/USDZ ne sont pas pris en charge - convertissez-les en GLB d'abord. | File3DGLB<br>File3DGLTF<br>File3DOBJ<br>File3DSTL<br>File3DAny | Oui | GLB<br>GLTF<br>OBJ<br>STL |
+| `model_3d` | Fichier de modèle 3D provenant de Load 3D ou d'un autre nœud 3D. FBX/USDZ ne sont pas pris en charge - convertissez d'abord en GLB. | File3DGLB<br>File3DGLTF<br>File3DOBJ<br>File3DSTL<br>File3DAny | Oui | GLB<br>GLTF<br>OBJ<br>STL |
 
-Remarque : Les fichiers FBX et USDZ ne sont pas pris en charge et provoquent une erreur ; convertissez-les d'abord en GLB ou GLTF. Si le fichier 3D contient plusieurs matériaux, seules les textures et les facteurs de matériau du premier matériau sont conservés (un avertissement est journalisé). Toutes les primitives de la scène sont fusionnées en un seul maillage avec leurs transformations appliquées. Ce nœud est expérimental.
+Remarque : les fichiers FBX et USDZ ne sont pas pris en charge et provoquent une erreur ; convertissez-les d'abord en GLB ou GLTF. Si le format de fichier ne peut pas être reconnu comme GLB, GLTF, OBJ ou STL, le nœud génère une erreur listant les formats pris en charge. Si la scène glTF ne contient aucune géométrie triangulaire, ou si le fichier contient des indices de faces qui pointent en dehors de la liste des sommets (signe d'un fichier corrompu), le nœud génère une erreur. Si le fichier 3D contient plusieurs matériaux, seules les textures et les facteurs de matériau du premier matériau sont conservés (un avertissement est journalisé). Toutes les primitives de scène sont fusionnées en un seul maillage avec leurs transformations appliquées. Ce nœud est expérimental.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `mesh` | Maillage éditable contenant les sommets, les faces, les UV, les couleurs de sommets, les normales, les tangentes et les informations de matériau (texture, rugosité-métallique, carte de normales, émissif, drapeau unlit) extraits du fichier de modèle. | MESH |
+| `mesh` | Maillage éditable contenant des sommets, des faces, des UV, des couleurs de sommets, des normales et des tangentes, ainsi que des informations de matériau extraites du fichier (texture, metallic-roughness, normal map, couleur émissive, indicateur unlit, indicateur occlusion-in-metallic-roughness et données de matériau). | MESH |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Get3DComponents/fr.md)
 

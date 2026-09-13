@@ -1,24 +1,24 @@
 # Tembel Önbellek
 
-LazyCache, EasyCache'in daha da kolay bir uygulama sunan özel yapım bir sürümüdür. ComfyUI'deki herhangi bir modelle çalışır ve örnekleme sırasında hesaplamayı azaltmak için önbelleğe alma işlevi ekler. Genel olarak EasyCache'ten daha kötü performans gösterse de, bazı nadir durumlarda daha etkili olabilir ve evrensel uyumluluk sunar.
+LazyCache, örnekleme sırasında önbellekleme ekleyerek hesaplamayı azaltan deneysel, gayriresmî bir EasyCache sürümüdür. ComfyUI'daki modellerle evrensel uyumluluk için tasarlanmıştır; ancak genellikle EasyCache'ten daha kötü performans gösterir ve yalnızca nadir durumlarda daha iyi çalışabilir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | LazyCache'in ekleneceği model. | MODEL | Evet | - |
-| `yeniden kullanım eşiği` | Önbelleğe alınmış adımların yeniden kullanılması için eşik (varsayılan: 0.2). | FLOAT | Hayır | 0.0 - 3.0 |
-| `başlangıç_yüzdesi` | LazyCache kullanımına başlanacak göreli örnekleme adımı (varsayılan: 0.15). | FLOAT | Hayır | 0.0 - 1.0 |
-| `bitiş_yüzdesi` | LazyCache kullanımının sonlandırılacağı göreli örnekleme adımı (varsayılan: 0.95). | FLOAT | Hayır | 0.0 - 1.0 |
-| `ayrıntılı` | Ayrıntılı bilgilerin günlüğe kaydedilip kaydedilmeyeceği (varsayılan: False). | BOOLEAN | Hayır | - |
+| `reuse_threshold` | Önbelleğe alınmış adımların yeniden kullanılması için eşik. Varsayılan: 0.2. | FLOAT | Evet | 0.0 - 3.0 (adım: 0.01) |
+| `start_percent` | LazyCache kullanımının başlatılacağı göreli örnekleme adımı. Varsayılan: 0.15. | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
+| `end_percent` | LazyCache kullanımının sonlandırılacağı göreli örnekleme adımı. Varsayılan: 0.95. | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
+| `verbose` | Ayrıntılı bilgilerin günlüğe kaydedilip kaydedilmeyeceği. Varsayılan: False. | BOOLEAN | Evet | - |
 
-Not: `reuse_threshold`, `start_percent`, `end_percent` ve `verbose` isteğe bağlı gelişmiş seçeneklerdir.
+Not: `reuse_threshold`, `start_percent`, `end_percent` ve `verbose` gelişmiş girdiler olarak işaretlenmiştir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model` | LazyCache işlevi eklenmiş model. | MODEL |
+| `model` | LazyCache işlevselliği eklenmiş model. | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LazyCache/tr.md)
 

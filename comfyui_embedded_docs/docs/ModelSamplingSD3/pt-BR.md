@@ -6,16 +6,16 @@ Este nó aplica configurações de amostragem no estilo Stable Diffusion 3 a um 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `modelo` | O modelo de entrada ao qual aplicar os parâmetros de amostragem SD3 | MODEL | Sim | - |
-| `deslocamento` | Controla o parâmetro de deslocamento de amostragem (padrão: 3.0) | FLOAT | Sim | 0.0 - 100.0 (passo: 0.01) |
+| `model` | O modelo de entrada ao qual aplicar os parâmetros de amostragem do SD3 | MODEL | Sim | - |
+| `shift` | Controla o parâmetro de deslocamento de amostragem (padrão: 3.0) | FLOAT | Sim | 0.0 - 100.0 (passo: 0.01) |
 
-Observação: o valor de `shift` é aplicado junto com um multiplicador interno fixo de 1000. Se o modelo original tiver uma configuração de escala de ruído, esse valor será transferido para o modelo modificado. O modelo original não é alterado; uma cópia clonada e modificada é retornada.
+Observação: O valor `shift` é aplicado junto com um multiplicador interno fixo de 1000. Se o modelo original tiver uma configuração de escala de ruído, esse valor será transferido para o modelo modificado. O modelo original não é alterado; uma cópia clonada e com patch é retornada.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `model` | O modelo modificado com parâmetros de amostragem SD3 aplicados | MODEL |
+| `model` | O modelo modificado com os parâmetros de amostragem do SD3 aplicados | MODEL |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingSD3/pt-BR.md)
 

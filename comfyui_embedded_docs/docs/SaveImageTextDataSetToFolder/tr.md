@@ -1,18 +1,18 @@
 # Görüntü ve Metin Veri Setini Klasöre Kaydet
 
-Save Image-Text (to Folder), bir görüntü listesini ve bunlara karşılık gelen metin açıklamalarını ComfyUI'nin çıktı dizini içindeki belirtilen bir klasöre kaydeder. PNG dosyası olarak kaydedilen her görüntü için, açıklamasını saklamak amacıyla aynı temel ada sahip bir TXT dosyası oluşturulur. Bu özellik, üretilen görüntülerin açıklamalarıyla eşleştirildiği düzenli veri setleri oluşturmak için kullanışlıdır.
+Save Image-Text (to Folder), görüntü ve metin açıklaması çiftlerinden oluşan bir veri kümesini ComfyUI'nin çıktı dizini içindeki bir klasöre kaydeder. Her görüntü bir PNG dosyası olarak, eşleşen metin açıklaması ise aynı temel dosya adına sahip bir TXT dosyası olarak yazılır; böylece her görüntü açıklamasıyla eşleştirilmiş olur.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `images` | Kaydedilecek görüntülerin listesi. | IMAGE | Evet | - |
 | `texts` | Kaydedilecek metin açıklamalarının listesi. Bu girdi isteğe bağlıdır. | STRING | Hayır | - |
 | `folder_name` | Görüntülerin kaydedileceği klasörün adı (çıktı dizini içinde). (varsayılan: "dataset") | STRING | Evet | - |
-| `filename_prefix` | Kaydedilen görüntü dosya adları için önek. (varsayılan: "image") | STRING | Evet | - |
-| `mod` | Mevcut dosyaların üzerine yazılıp yazılmayacağını veya üzerine yazmayı önlemek için dosya adlarının artırılıp artırılmayacağını belirler. (varsayılan: "overwrite") | COMBO | Evet | "overwrite"<br>"increment" |
+| `filename_prefix` | Kaydedilen görüntü dosya adları için ön ek. (varsayılan: "image") | STRING | Evet | - |
+| `mode` | Mevcut dosyaların üzerine yazılıp yazılmayacağını veya üzerine yazmayı önlemek için dosya adlarının artırılıp artırılmayacağını belirler. (varsayılan: "overwrite") | COMBO | Evet | "overwrite"<br>"increment" |
 
-**Not:** `images` girdisi bir listedir. `texts` girdisi isteğe bağlıdır; sağlanırsa, bir metin açıklamaları listesi olmalı ve `images` ile aynı sayıda öğe içermelidir. Her açıklama, eşleştirildiği görüntüye karşılık gelen bir `.txt` dosyası olarak kaydedilir. `overwrite` modunda, dosyalar `{filename_prefix}_{index}.png` olarak adlandırılır ve aynı ada sahip mevcut dosyaların üzerine yazılır. `increment` modunda, dosya adlarına benzersiz bir sayaç eklenir, böylece mevcut dosyaların üzerine yazılmaz. `folder_name`, çıktı dizini içindeki bir yola çözümlenmelidir; bu dizinden kaçmaya çalışan klasör adları (örneğin `..` ile) reddedilir.
+**Not:** `images` girdisi bir listedir ve düğüm hem `images` hem de `texts` girdilerini liste olarak alır. `texts` girdisi isteğe bağlıdır; sağlanırsa, metin açıklamalarından oluşan bir liste olmalı ve `images` ile aynı sayıda öğe içermelidir. Her metin açıklaması, eşleştiği görüntüye karşılık gelen bir `.txt` dosyası olarak kaydedilir. `overwrite` modunda dosyalar `{filename_prefix}_{index}.png` olarak adlandırılır ve aynı ada sahip mevcut dosyaların yerini alır. `increment` modunda, mevcut dosyaların üzerine yazılmaması için dosya adlarına benzersiz bir sayaç eklenir. `folder_name`, çıktı dizini içinde bir yola çözümlenmelidir; çıktı dizininin dışına çıkmaya çalışan klasör adları (örneğin `..` ile) reddedilir.
 
 ## Çıktılar
 

@@ -1,22 +1,22 @@
 # ImageRGBToYUV
 
-Le nœud ImageRGBToYUV convertit une image RVB dans l’espace colorimétrique YUV. Il décompose l’image en trois composantes — Y (luminance, ou luminosité), U (chrominance de différence bleue) et V (chrominance de différence rouge) — et renvoie chaque composante sous forme d’image distincte, de même taille que l’image d’entrée.
+Le nœud ImageRGBToYUV convertit une image RGB en composantes colorimétriques de style YUV à l’aide d’une conversion de couleur RGB vers YCbCr. Il sépare le résultat en trois images distinctes — Y (luminance, ou luminosité), U (chrominance de différence bleue) et V (chrominance de différence rouge) — et renvoie chaque composante avec la même largeur et la même hauteur que l’entrée.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `image` | L’image RVB d’entrée à convertir en YUV. Si l’image contient un canal alpha, seuls les trois premiers canaux (RVB) sont utilisés. | IMAGE | Oui | - |
+| `image` | Image RGB d’entrée à convertir en composantes Y, U et V. Si l’image contient un canal alpha, seuls les trois premiers canaux (RGB) sont utilisés. | IMAGE | Oui | - |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
-|-------------|-------------|-----------------|
-| `Y` | La composante de luminance (luminosité) de l’espace colorimétrique YUV | IMAGE |
-| `U` | La composante de chrominance de différence bleue de l’espace colorimétrique YUV | IMAGE |
-| `V` | La composante de chrominance de différence rouge de l’espace colorimétrique YUV | IMAGE |
+|---------------|-------------|-----------------|
+| `Y` | Composante de luminance (luminosité) de l’espace colorimétrique YUV, renvoyée sous forme d’image à trois canaux | IMAGE |
+| `U` | Composante de chrominance de différence bleue de l’espace colorimétrique YUV, renvoyée sous forme d’image à trois canaux | IMAGE |
+| `V` | Composante de chrominance de différence rouge de l’espace colorimétrique YUV, renvoyée sous forme d’image à trois canaux | IMAGE |
 
-Chaque sortie a la même largeur, la même hauteur et le même nombre de canaux que l’image d’entrée. La composante correspondante Y, U ou V est répétée sur tous les canaux afin que chaque sortie soit renvoyée sous forme d’image standard.
+Chaque sortie possède la même largeur et la même hauteur que l’image d’entrée. La composante Y, U ou V correspondante est répétée sur les trois canaux, de sorte que chaque sortie soit renvoyée sous forme d’image standard à trois canaux.
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageRGBToYUV/fr.md)
 

@@ -1,28 +1,28 @@
 # Runway Imagen a Video (Gen3a Turbo)
 
-El nodo Runway Image to Video (Gen3a Turbo) genera un video a partir de un único fotograma inicial utilizando el modelo Gen3a Turbo de Runway. Toma un prompt de texto y un fotograma de imagen inicial, y luego crea una secuencia de video basada en la duración y la relación de aspecto especificadas. Este nodo se conecta a la API de Runway para procesar la generación de forma remota. Runway recomienda revisar su guía de mejores prácticas antes de generar: https://help.runwayml.com/hc/en-us/articles/33927968552339-Creating-with-Act-One-on-Gen-3-Alpha-and-Turbo. Este nodo está marcado como obsoleto.
+El nodo Runway Image to Video (Gen3a Turbo) genera un video a partir de un único fotograma inicial utilizando el modelo Gen3a Turbo de Runway. Toma un prompt de texto y un fotograma de imagen inicial, y luego crea una secuencia de video basada en la duración y la relación de aspecto especificadas. La generación se procesa de forma remota a través de la API de Runway. Este nodo está marcado como obsoleto.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `prompt` | Prompt de texto para la generación (por defecto: "") | STRING | Sí | N/A |
-| `fotograma_inicial` | Fotograma inicial que se utilizará para el video | IMAGE | Sí | N/A |
-| `duración` | Duración del video en segundos (por defecto: "5") | COMBO | Sí | `"5"`<br>`"10"` |
-| `relación` | Relación de aspecto del video generado (por defecto: "768:1280") | COMBO | Sí | `"768:1280"`<br>`"1280:768"` |
-| `semilla` | Semilla aleatoria para la generación (por defecto: 0) | INT | Sí | 0 a 4294967295 |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `prompt` | Prompt de texto para la generación (predeterminado: "") | STRING | Sí | N/A |
+| `start_frame` | Fotograma inicial que se utilizará para el video | IMAGE | Sí | N/A |
+| `duration` | Duración del video generado, en segundos (predeterminado: "5") | COMBO | Sí | `"5"`<br>`"10"` |
+| `ratio` | Relación de aspecto del video generado (predeterminado: "768:1280") | COMBO | Sí | `"768:1280"`<br>`"1280:768"` |
+| `seed` | Semilla aleatoria para la generación (predeterminado: 0) | INT | Sí | 0 a 4294967295 |
 
-**Restricciones de parámetros:**
+**Restricciones de los parámetros:**
 
-- El `start_frame` no debe superar los 7999x7999 píxeles de dimensiones.
-- El `start_frame` debe tener una relación de aspecto entre 0.5 y 2.0.
-- El `start_frame` acepta una sola imagen (máximo 1).
 - El `prompt` debe contener al menos un carácter (no puede estar vacío).
+- El `start_frame` acepta una sola imagen (máximo de 1).
+- El `start_frame` no debe exceder las dimensiones de 7999 x 7999 píxeles.
+- El `start_frame` debe tener una relación de aspecto entre 1:2 y 2:1 (0.5 a 2.0).
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
-|-----------------|-------------|--------------|
+|------------------|-------------|---------------|
 | `output` | La secuencia de video generada | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayImageToVideoNodeGen3a/es.md)

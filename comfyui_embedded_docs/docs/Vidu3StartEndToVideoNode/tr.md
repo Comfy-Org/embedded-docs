@@ -1,30 +1,32 @@
 # Vidu Q3 Başlangıç/Bitiş Kareden Videoya Oluşturma
 
-Bu düğüm, sağlanan başlangıç karesi ile bitiş karesi arasında enterpolasyon yaparak, bir metin istemi rehberliğinde video oluşturur. Vidu Q3 modelini kullanarak iki görüntü arasında kesintisiz bir geçiş üretir ve belirtilen süre ve çözünürlükte bir video ortaya çıkarır.
+Bu düğüm, bir başlangıç karesi ile bir bitiş karesi arasında geçiş oluşturarak ve bir metin istemi rehberliğinde video üretir. İki görüntü arasında interpolasyon yapmak için Vidu Q3 modelini kullanır ve seçilen süre ile çözünürlükte bir video üretir.
 
 ## Girdiler
 
-### Genel Girdiler
+### Ortak Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Video oluşturma için kullanılacak model. Bir seçenek seçilmesi, `resolution`, `duration` ve `audio` için ek yapılandırma parametrelerini ortaya çıkarır. | DYNAMIC_COMBO | Evet | `"viduq3-pro"`<br>`"viduq3-turbo"` |
-| `ilk kare` | Video dizisi için başlangıç görüntüsü. | IMAGE | Evet | - |
-| `bitiş karesi` | Video dizisi için bitiş görüntüsü. | IMAGE | Evet | - |
-| `komut istemi` | İstem açıklaması (en fazla 2000 karakter). | STRING | Evet | - |
-| `tohum` | Oluşturmanın rastgeleliğini kontrol etmek için kullanılan tohum değeri (varsayılan: 1). | INT | Hayır | 0 ila 2147483647 |
+| `model` | Video üretimi için kullanılacak model. Bir seçenek seçildiğinde `resolution`, `duration` ve `audio` için ek yapılandırma parametreleri görünür. | DYNAMIC_COMBO | Evet | `"viduq3-pro"`<br>`"viduq3-turbo"` |
+| `first_frame` | Video dizisinin başlangıç görüntüsü. | IMAGE | Evet | - |
+| `end_frame` | Video dizisinin bitiş görüntüsü. | IMAGE | Evet | - |
+| `prompt` | İstem açıklaması (en fazla 2000 karakter). | STRING | Evet | En fazla 2000 karakter |
+| `seed` | Üretimin rastgeleliğini kontrol etmek için kullanılan seed değeri. Üretim sonrası kontrol seçeneği vardır (varsayılan: 1). | INT | Evet | 0 - 2147483647 |
 
 ### viduq3-pro ve viduq3-turbo Girdileri
 
-Aşağıdaki parametreler her iki model seçeneği tarafından da (`viduq3-pro` ve `viduq3-turbo`) paylaşılır. Bir model seçildikten sonra görüntülenirler.
+Aşağıdaki parametreler her iki model seçeneği (`viduq3-pro` ve `viduq3-turbo`) tarafından paylaşılır. Bir model seçildikten sonra görünürler.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `çözünürlük` | Çıktı videosunun çözünürlüğü. Bu parametre, bir `model` seçildikten sonra görüntülenir. | COMBO | Evet | `"720p"`<br>`"1080p"` |
-| `süre` | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5). Bu parametre, bir `model` seçildikten sonra görüntülenir. | INT | Evet | 1 ila 16 |
-| `ses` | Etkinleştirildiğinde, videoyu sesle (diyaloglar ve ses efektleri dahil) çıkarır (varsayılan: False). Bu parametre, bir `model` seçildikten sonra görüntülenir. | BOOLEAN | Evet | `True`<br>`False` |
+| `resolution` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | `"720p"`<br>`"1080p"` |
+| `duration` | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5). | INT | Evet | 1 - 16 |
+| `audio` | Etkinleştirildiğinde, sesli video (diyalog ve ses efektleri dahil) üretir (varsayılan: False). | BOOLEAN | Evet | `True`<br>`False` |
 
-**Not:** En iyi sonuçlar için `first_frame` ve `end_frame` görüntüleri benzer en-boy oranlarına sahip olmalıdır. İki görüntünün en-boy oranı birbirinin %80'i ile %125'i arasında olmalıdır (göreli yakınlık 0,8 ile 1,25 arasında).
+**Not:** `first_frame` ve `end_frame` görüntüleri benzer en-boy oranlarına sahip olmalıdır. İki görüntünün en-boy oranı birbirinin %80 ila %125'i arasında kalmalıdır (0.8 ile 1.25 arasında göreli yakınlık).
+
+**Not:** `viduq3-turbo` için fiyat 720p'de saniye başına 0.06 USD, 1080p'de saniye başına 0.08 USD'dir. `viduq3-pro` için fiyat 720p'de saniye başına 0.15 USD, 1080p'de saniye başına 0.16 USD'dir.
 
 ## Çıktılar
 

@@ -1,16 +1,16 @@
-# ComfyCloudMageFlowTurboTextToImageNode
+# Comfy Cloud Mage Flow Turbo Texto para Imagem [BETA]
 
-Este nó Comfy Cloud gera uma imagem a partir de um prompt de texto usando o fluxo de trabalho Mage-Flow Turbo (`mage-flow-turbo/text-to-image`). Ele executa uma versão destilada do modelo Mage-Flow que gera a imagem em 4 etapas com valor de cfg de 1, consumindo cerca de um sétimo do tempo de GPU de uma passagem completa do Mage-Flow, o que o torna a variante destinada à iteração rápida.
+Este nó do Comfy Cloud gera uma imagem a partir de um prompt de texto usando o fluxo de trabalho Mage-Flow Turbo (`mage-flow-turbo/text-to-image`). Ele executa uma versão destilada do modelo Mage-Flow que produz a imagem em 4 etapas com um valor cfg de 1, levando aproximadamente um sétimo do tempo de GPU de uma passagem completa do Mage-Flow, o que a torna a variante destinada à iteração rápida.
 
 ## Entradas
 
-A própria classe do nó não declara widgets de entrada no código-fonte disponível; seu esquema de entrada é herdado da classe base compartilhada `_ComfyCloudMageFlowNode`, cuja definição não está incluída no instantâneo do código-fonte. Com base no resumo do nó e no nome do fluxo de trabalho de texto para imagem, o nó recebe um prompt de texto descrevendo a imagem a ser gerada.
+A própria classe do nó não declara widgets de entrada no código-fonte disponível; seu esquema de entrada é herdado da classe base compartilhada `_ComfyCloudMageFlowNode`, cuja definição não está incluída no snapshot do código-fonte. Com base no resumo do nó e no nome do fluxo de trabalho text-to-image, o nó recebe um prompt de texto que descreve a imagem a ser gerada.
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | O prompt de texto que descreve a imagem a ser gerada. O nome exato do parâmetro é definido pelo esquema base herdado `_ComfyCloudMageFlowNode` e pode diferir deste rótulo. | STRING | Sim | Texto livre |
+| `prompt` | O prompt de texto que descreve a imagem a ser gerada. O nome exato do parâmetro é definido pelo esquema base herdado de `_ComfyCloudMageFlowNode` e pode diferir deste rótulo. | STRING | Sim | Texto livre |
 
-Observação: Parâmetros de entrada adicionais podem existir na definição do nó base herdado, que não está disponível no código-fonte fornecido.
+Observação: Parâmetros de entrada adicionais podem existir na definição herdada do nó base, que não está disponível no código-fonte fornecido.
 
 ## Saídas
 

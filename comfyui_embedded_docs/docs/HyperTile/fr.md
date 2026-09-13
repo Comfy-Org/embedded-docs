@@ -1,16 +1,18 @@
 # HyperTile
 
-Le nœud HyperTile applique une technique de tuilage au mécanisme d'attention des modèles de diffusion afin d'optimiser l'utilisation de la mémoire lors de la génération d'images. Il divise l'espace latent en tuiles plus petites, les traite séparément, puis reassemble les résultats. Cela permet de travailler avec des tailles d'image plus grandes sans épuiser la mémoire.
+HyperTile applique une technique de découpage en tuiles au mécanisme d'attention à l'intérieur des modèles de diffusion afin de réduire l'utilisation de la mémoire pendant la génération d'images. Il divise l'espace latent en tuiles plus petites, traite l'attention pour chaque tuile séparément, puis réassemble les résultats. Cela permet de travailler avec des tailles d'image plus grandes sans épuiser la mémoire.
 
 ## Entrées
 
-| Paramètre | Description | Type de données | Requis | Plage |
+| Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
-| `modèle` | Le modèle de diffusion auquel appliquer l'optimisation HyperTile | MODEL | Oui | - |
-| `taille_tuile` | La taille de tuile cible pour le traitement (par défaut : 256). En interne, la valeur est bornée à un minimum de 32 puis divisée par 8 pour obtenir la taille de tuile effective. | INT | Oui | 1 - 2048 |
-| `taille_échange` | Contrôle la façon dont les tuiles sont réarrangées pendant le traitement pour améliorer l'efficacité. Des valeurs plus élevées permettent une plus grande variation des tailles de tuiles (par défaut : 2) | INT | Oui | 1 - 128 |
-| `profondeur_max` | Le niveau de profondeur maximal (échelle de résolution) auquel appliquer le tuilage. Une valeur de 0 applique le tuilage uniquement à la plus haute résolution (par défaut : 0) | INT | Oui | 0 - 10 |
-| `échelle_profondeur` | Lorsque activé, la taille des tuiles est mise à l'échelle proportionnellement aux niveaux de profondeur plus profonds. Cela peut aider à maintenir la qualité aux résolutions inférieures (par défaut : False) | BOOLEAN | Oui | True / False |
+| `model` | Le modèle de diffusion auquel appliquer l'optimisation HyperTile | MODEL | Oui | - |
+| `tile_size` | Taille de tuile cible pour le traitement (par défaut : 256). En interne, la valeur est limitée à un minimum de 32, puis divisée par 8 pour obtenir la taille de tuile effective. | INT | Oui | 1 - 2048 |
+| `swap_size` | Contrôle la façon dont les tuiles sont réorganisées pendant le traitement afin d'améliorer l'efficacité. Des valeurs plus élevées permettent davantage de variation dans les tailles de tuiles (par défaut : 2) | INT | Oui | 1 - 128 |
+| `max_depth` | Niveau de profondeur maximal (échelle de résolution) auquel appliquer le découpage en tuiles. Une valeur de 0 applique le découpage en tuiles uniquement à la résolution la plus élevée (par défaut : 0) | INT | Oui | 0 - 10 |
+| `scale_depth` | Lorsque cette option est activée, la taille des tuiles est mise à l'échelle proportionnellement aux niveaux de profondeur plus élevés. Cela peut aider à maintenir la qualité aux résolutions inférieures (par défaut : False) | BOOLEAN | Oui | True / False |
+
+Remarque : `tile_size`, `swap_size`, `max_depth` et `scale_depth` sont marqués comme entrées avancées, elles ne sont donc affichées que lorsque les options avancées sont activées dans l'interface.
 
 ## Sorties
 

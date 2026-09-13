@@ -1,10 +1,10 @@
 # 模型合併 (SD3 2B)
 
-ModelMergeSD3_2B 節點可讓您透過以可調整的權重混合其元件，來合併兩個 Stable Diffusion 3 2B 模型。它提供對嵌入層和 Transformer 區塊的個別控制，針對專門的生成任務實現微調的模型組合。
+ModelMergeSD3_2B 節點可讓您透過以可調整的權重混合兩個 Stable Diffusion 3 2B 模型的各個元件來合併它們。它提供對嵌入層、transformer 區塊以及最終層的個別控制，實現兩個模型的精細組合。
 
 ## 輸入
 
-| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
+| 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `模型 1` | 要合併的第一個模型 | MODEL | 是 | - |
 | `模型 2` | 要合併的第二個模型 | MODEL | 是 | - |
@@ -41,9 +41,9 @@ ModelMergeSD3_2B 節點可讓您透過以可調整的權重混合其元件，來
 
 ## 輸出
 
-| 輸出名稱 | 描述 | 資料類型 |
+| 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `model` | 合併後的模型，結合來自兩個輸入模型的特徵 | MODEL |
+| `model` | 合併後的模型，結合了兩個輸入模型的特徵 | MODEL |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD3_2B/zh-TW.md)
 

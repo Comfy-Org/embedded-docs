@@ -1,23 +1,23 @@
 # Hunyuan3Dv2ConditioningMultiView
 
-Le nœud Hunyuan3Dv2ConditioningMultiView combine les sorties de vision CLIP de jusqu'à quatre vues (avant, gauche, arrière et droite) en un unique conditionnement multi-vues. Chaque vue fournie reçoit un encodage positionnel ajouté à son plongement de vision CLIP, puis les plongements résultants sont concaténés. Le nœud produit un conditionnement positif basé sur les plongements combinés et un conditionnement négatif rempli de zéros de la même forme.
+Le nœud Hunyuan3Dv2ConditioningMultiView combine les sorties CLIP vision de jusqu’à quatre vues (front, left, back et right) en un seul conditionnement multi-vues. Chaque vue fournie reçoit un encodage positionnel ajouté à son embedding CLIP vision, puis les embeddings résultants sont concaténés. Le nœud produit un conditionnement positif basé sur les embeddings combinés et un conditionnement négatif rempli de zéros de même forme.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `avant` | Sortie de vision CLIP pour la vue avant. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
-| `gauche` | Sortie de vision CLIP pour la vue gauche. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
-| `arrière` | Sortie de vision CLIP pour la vue arrière. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
-| `droite` | Sortie de vision CLIP pour la vue droite. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
+| `front` | Sortie CLIP vision pour la vue de face. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
+| `left` | Sortie CLIP vision pour la vue de gauche. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
+| `back` | Sortie CLIP vision pour la vue arrière. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
+| `right` | Sortie CLIP vision pour la vue de droite. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
 
-**Remarque :** Au moins une entrée de vue doit être fournie pour que le nœud fonctionne. Le nœud ne traite que les vues contenant des données de sortie de vision CLIP valides et ignore les vues non connectées.
+**Remarque :** Au moins une entrée de vue doit être fournie pour que le nœud fonctionne. Le nœud ne traite que les vues contenant des données de sortie CLIP vision valides et ignore les vues qui ne sont pas connectées. Chaque vue reçoit un encodage positionnel fixe en fonction de son emplacement (`front`, `left`, `back`, `right`), et les embeddings traités de toutes les vues fournies sont assemblés le long de la dimension de séquence.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `positive` | Conditionnement positif contenant les plongements multi-vues combinés avec l'encodage positionnel. | CONDITIONING |
+| `positive` | Conditionnement positif contenant les embeddings multi-vues combinés avec encodage positionnel. | CONDITIONING |
 | `negative` | Conditionnement négatif avec des valeurs nulles correspondant à la forme du conditionnement positif. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2ConditioningMultiView/fr.md)

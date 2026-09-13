@@ -1,19 +1,19 @@
 # StableCascade_StageB_Conditioning
 
-El nodo StableCascade_StageB_Conditioning prepara los datos de condicionamiento para la generación de Stable Cascade Stage B al combinar la información de condicionamiento existente con las representaciones latentes previas de Stage C. Copia cada entrada de condicionamiento y añade las muestras latentes de Stage C, lo que permite que el proceso de generación aproveche la información previa para obtener resultados más coherentes.
+El nodo StableCascade_StageB_Conditioning prepara los datos de condicionamiento para la generación de la etapa B de Stable Cascade combinando la información de condicionamiento existente con la representación latente previa producida por la etapa C. Copia cada entrada de condicionamiento y almacena en ella las muestras latentes de la etapa C, de modo que los pasos de generación posteriores puedan usar esta información previa para obtener resultados más coherentes.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `acondicionamiento` | Los datos de condicionamiento que se modificarán con la información previa de Stage C | CONDITIONING | Sí | - |
-| `etapa_c` | La representación latente de Stage C que contiene muestras previas para el condicionamiento | LATENT | Sí | - |
+| `conditioning` | Los datos de condicionamiento que se modificarán con la información previa de la etapa C. Cada entrada de la lista se copia y se le asignan las muestras de la etapa C. | CONDITIONING | Sí | - |
+| `stage_c` | La representación latente de la etapa C. Su valor `samples` se usa como la información previa agregada al condicionamiento. | LATENT | Sí | - |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `CONDITIONING` | Los datos de condicionamiento modificados con la información previa de Stage C integrada | CONDITIONING |
+| `CONDITIONING` | Los datos de condicionamiento modificados con la información previa de la etapa C integrada. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_StageB_Conditioning/es.md)
 

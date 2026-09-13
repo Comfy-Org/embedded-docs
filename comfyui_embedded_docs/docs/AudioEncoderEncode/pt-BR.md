@@ -1,19 +1,19 @@
 # Codificar com AudioEncoder
 
-O nó AudioEncoderEncode converte dados de áudio em uma representação codificada usando um modelo de codificador de áudio. Ele recebe um codificador de áudio e a entrada de áudio bruta, então extrai a forma de onda e a taxa de amostragem do áudio para produzir uma saída codificada adequada para processamento adicional no pipeline de condicionamento.
+O nó AudioEncoderEncode converte áudio em uma representação codificada usando um modelo codificador de áudio. Ele recebe um codificador de áudio e uma entrada de áudio, então extrai a forma de onda e a taxa de amostragem do áudio e as passa ao codificador para produzir uma saída codificada.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `audio_encoder` | O modelo de codificador de áudio usado para processar a entrada de áudio | AUDIO_ENCODER | Sim | - |
-| `áudio` | Os dados de áudio contendo informações de forma de onda e taxa de amostragem | AUDIO | Sim | - |
+| `audio_encoder` | O modelo codificador de áudio usado para processar a entrada de áudio | AUDIO_ENCODER | Sim | - |
+| `audio` | Os dados de áudio contendo as informações de forma de onda e taxa de amostragem | AUDIO | Sim | - |
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `output` | A representação de áudio codificada gerada pelo codificador de áudio | AUDIO_ENCODER_OUTPUT |
+| `output` | A representação de áudio codificada produzida pelo codificador de áudio | AUDIO_ENCODER_OUTPUT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioEncoderEncode/pt-BR.md)
 

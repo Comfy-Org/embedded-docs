@@ -1,36 +1,38 @@
-# LTXVAddGeneratedKeyframes
+# LTXV Añadir fotogramas clave generados
 
-## Resumen
-
-El nodo LTXV Agregar Keyframes Generados añade detalles de keyframes a un video latente. Cada keyframe representa un solo cuadro latente de tokens que abarca un solo cuadro de píxeles, que se suaviza con el video y no forma parte de la salida decodificada. La ubicación se determina por el parámetro interval_frames, que especifica el paso de cuadro de píxeles para el autoajuste.
+El nodo LTXV Add Generated Keyframes añade keyframes de detalle a un latente de video. Cada keyframe es un frame latente de tokens posicionado sobre un único frame de píxeles; se le aplica denoising junto con el video y no forma parte de la salida decodificada. La colocación es una ranura cada `interval_frames` píxeles, omitiendo frames I2V, guías existentes y keyframes generados que ya estén en el condicionamiento; extráelos de nuevo con LTXV Separate Generated Keyframes. Se requiere un checkpoint entrenado para keyframes generados (uno que contenga `keyframes_abs_pos_embedding`).
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Datos | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
 | `positive` | Condicionamiento positivo al que se adjuntan los keyframes. | CONDITIONING | Sí | N/A |
 | `negative` | Condicionamiento negativo al que se adjuntan los keyframes. | CONDITIONING | Sí | N/A |
-| `vae` | Únicamente utilizado para leer los factores de escala latentes. | VAE | Sí | N/A |
-| `latent` | Latente de video plano 5D al que se generan keyframes junto. Añádalo antes de Concat AV Latent. | LATENT | Sí | N/A |
-| `interval_frames` | Paso de cuadro de píxeles para el autoajuste. El valor predeterminado 24 es aproximadamente un keyframe por segundo a 24 fps. Los píxeles ocupados se saltan. Se ignora cuando frame_indices está configurado. | INT | No | 1-1024 |
-| `keyframes` | Contenido opcional para inicializar los nuevos keyframes. Conecte keyframes de un Separar (tamaño espacial similar) o un latente de video plano para copiar el cuadro más cercano en cada nuevo espacio (por ejemplo, después de un upscale temporal). Estos aún se suavizan, no se fijan como guías. Los índices grabados en un latente de keyframes se ignoran a menos que frame_indices esté configurado. Solo tiene efecto cuando se comienza a muestrear por debajo de sigma 1. | LATENT | No | N/A |
-| `frame_indices` | Índices de cuadro de píxeles opcionales. Deje en blanco para ubicar desde interval_frames en el lienzo actual. Cuando se configura, esta lista es la ubicación (los keyframes conectados se coinciden en orden). El último cuadro está permitido; el cuadro 0 no (ya es un token autónomo). | STRING | No | N/A |
+| `vae` | Solo se usa para leer los factores de escala del latente. | VAE | Sí | N/A |
+| `latent` | Latente de video 5D simple junto al cual generar keyframes. Agrégalos antes de Concat AV Latent. | LATENT | Sí | N/A |
+| `interval_frames` | Paso de frames de píxeles para la colocación automática. El valor predeterminado 24 es aproximadamente un keyframe por segundo a 24 fps. Se omiten los píxeles ocupados. Se ignora cuando `frame_indices` está establecido. (predeterminado: 24) | INT | No | 1-1024 |
+| `keyframes` | Contenido opcional para inicializar los nuevos keyframes. Conecta keyframes de un Separate anterior (del mismo tamaño espacial), o un latente de video simple para copiar el frame más cercano en cada nueva ranura (p. ej., después de un upscale temporal). A estos todavía se les aplica denoising, no se fijan como guías. Los índices registrados en un latente de keyframes se ignoran a menos que `frame_indices` esté establecido. Solo tiene efecto cuando el muestreo comienza por debajo de sigma 1. | LATENT | No | N/A |
+| `frame_indices` | Índices de frames de píxeles opcionales. Déjalo vacío para colocar desde `interval_frames` en el lienzo actual. Cuando se establece, esta lista es la colocación (los keyframes conectados se emparejan en orden). Se permite el último frame; el frame 0 no (ya es un token independiente). (predeterminado: cadena vacía) | STRING | No | Enteros separados por comas; 1 hasta el último frame de píxeles (frame 0 excluido) |
+
+**Nota:** El `latent` debe ser un latente de video 5D simple con keyframes generados añadidos antes de Concat AV Latent. Cuando se establece `frame_indices`, cada frame de píxeles listado debe ser único y no puede contener ya un keyframe de imagen, una guía o un keyframe generado. Si `frame_indices` está vacío, los píxeles ocupados se omiten automáticamente; si no existe una ranura de detalle libre, el nodo lanza un error. Al anexar a keyframes generados existentes, el latente aún debe tener los mismos tokens por frame y el bloque existente debe terminar en el último frame latente.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Datos |
-|-------------|-------------|-----------|
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
 | `positive` | Condicionamiento positivo con atención de keyframes generados adjunta. | CONDITIONING |
 | `negative` | Condicionamiento negativo con atención de keyframes generados adjunta. | CONDITIONING |
-| `latent` | Latente de video con keyframes generados añadidos en T. | LATENT |
+| `latent` | Latente de video con keyframes generados anexados en T. | LATENT |
 
 ## Notas
 
-- El parámetro `interval_frames` determina el espaciado de los keyframes en el video. Un valor más alto resulta en menos keyframes y una tasa de cuadros más baja.
-- La entrada `keyframes` le permite inicializar los nuevos keyframes con keyframes existentes o un latente de video. Si se proporciona, estos keyframes se suavizarán y se añadirán al latente de video.
-- El parámetro `frame_indices` le permite especificar los índices de cuadro de píxeles exactos donde deben ubicarse los keyframes. Si se proporciona, se ignora el parámetro `interval_frames`.
-- Las salidas `positive` y `negative` contienen el condicionamiento con atención de keyframes generados adjunta, que se puede utilizar para procesamiento o análisis adicionales.
-- La salida `latent` contiene el latente de video con keyframes generados añadidos en T, que se puede utilizar para procesamiento o análisis adicionales.
+- El parámetro `interval_frames` establece el espaciado de los keyframes colocados automáticamente. Un valor más alto da como resultado menos keyframes y un espaciado más amplio; un valor más bajo produce más keyframes.
+- La entrada `keyframes` te permite inicializar los nuevos keyframes con keyframes existentes o un latente de video. Si se proporciona un latente de video simple más largo, se copia el frame de video más cercano en cada nueva ranura. A estos keyframes todavía se les aplica denoising y no se fijan como guías.
+- El parámetro `frame_indices` te permite especificar índices exactos de frames de píxeles donde se deben colocar los keyframes. Cuando se proporciona, se ignora `interval_frames`. La lista debe contener enteros únicos dentro del rango de píxeles válido, y no se permite el frame 0.
+- Las salidas `positive` y `negative` contienen el condicionamiento con atención de keyframes generados adjunta.
+- La salida `latent` contiene el latente de video con keyframes generados anexados en T.
+- Se requiere un checkpoint entrenado para keyframes generados (uno que contenga `keyframes_abs_pos_embedding`).
+- Extrae los keyframes generados de nuevo con LTXV Separate Generated Keyframes.
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddGeneratedKeyframes/es.md)
 

@@ -1,30 +1,30 @@
 # WanImagemParaVídeo
 
-O nó WanImageToVideo prepara representações de condicionamento e latentes para tarefas de geração de vídeo. Ele cria um espaço latente vazio para a geração de vídeo e pode, opcionalmente, incorporar imagens iniciais e saídas de visão do CLIP para orientar o processo de geração. O nó modifica tanto as entradas de condicionamento positivo quanto negativo com base na imagem e nos dados de visão fornecidos.
+O nó WanImageToVideo prepara condicionamento e representações latentes para geração de vídeo. Ele cria um espaço latente vazio para o vídeo e pode, opcionalmente, incorporar uma imagem inicial e uma saída de visão CLIP para orientar a geração. Tanto as entradas de condicionamento positivo quanto as de condicionamento negativo são atualizadas com a imagem e os dados de visão fornecidos.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `positivo` | Entrada de condicionamento positivo para orientar a geração | CONDITIONING | Sim | - |
-| `negativo` | Entrada de condicionamento negativo para orientar a geração | CONDITIONING | Sim | - |
-| `vae` | Modelo VAE para codificar imagens no espaço latente | VAE | Sim | - |
-| `largura` | Largura do vídeo de saída (padrão: 832, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
-| `altura` | Altura do vídeo de saída (padrão: 480, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
-| `duração` | Número de quadros no vídeo (padrão: 81, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
-| `tamanho_do_lote` | Número de vídeos a serem gerados em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
-| `clip_vision_output` | Saída de visão do CLIP opcional para condicionamento adicional | CLIP_VISION_OUTPUT | Não | - |
-| `imagem_inicial` | Imagem inicial opcional para inicializar a geração de vídeo. Quando fornecida, a imagem é redimensionada para corresponder à largura e à altura especificadas, e os primeiros quadros do vídeo são inicializados a partir dela. Os quadros restantes são preenchidos com valores neutros de cinza (0,5). Quaisquer quadros além de `length` são ignorados. | IMAGE | Não | - |
+| `positive` | Entrada de condicionamento positivo usada para orientar a geração | CONDITIONING | Sim | - |
+| `negative` | Entrada de condicionamento negativo usada para orientar a geração | CONDITIONING | Sim | - |
+| `vae` | Modelo VAE usado para codificar imagens no espaço latente | VAE | Sim | - |
+| `width` | Largura do vídeo gerado (padrão: 832, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
+| `height` | Altura do vídeo gerado (padrão: 480, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
+| `length` | Número de quadros no vídeo (padrão: 81, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
+| `batch_size` | Número de vídeos a gerar em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
+| `clip_vision_output` | Saída de visão CLIP opcional adicionada como condicionamento extra tanto às entradas positiva quanto negativa | CLIP_VISION_OUTPUT | Não | - |
+| `start_image` | Imagem inicial opcional usada para inicializar o vídeo. Quando fornecida, ela é redimensionada para a `width` e a `height` especificadas e colocada no início da sequência de quadros; quaisquer quadros além de `length` são ignorados. Os quadros restantes são preenchidos com valores de cinza neutro (0.5). | IMAGE | Não | - |
 
-**Observação:** Quando `start_image` é fornecida, o nó codifica a sequência de imagens usando o VAE e aplica uma máscara às entradas de condicionamento. A máscara cobre todos os quadros, exceto aqueles inicializados pela imagem inicial, permitindo que a geração se baseie na imagem fornecida. Apenas os três primeiros canais de cor (RGB) da imagem são usados durante a codificação. O parâmetro `clip_vision_output`, quando fornecido, adiciona condicionamento baseado em visão tanto às entradas positivas quanto negativas.
+**Nota:** Quando `start_image` é fornecida, a sequência de quadros é codificada com o VAE e uma máscara é aplicada ao condicionamento. A máscara é definida como 0 para os quadros cobertos pela imagem inicial e como 1 para os quadros restantes, para que a geração continue a partir da imagem fornecida. Apenas os três primeiros canais de cor (RGB) da imagem são usados durante a codificação. Tanto o condicionamento positivo quanto o negativo recebem a mesma imagem latente concatenada, a máscara e, se fornecida, a saída de visão CLIP.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `positivo` | Condicionamento positivo modificado com dados de imagem e visão incorporados | CONDITIONING |
-| `negativo` | Condicionamento negativo modificado com dados de imagem e visão incorporados | CONDITIONING |
-| `latente` | Tensor de espaço latente vazio pronto para geração de vídeo, com formato [batch_size, 16, ((length-1)//4)+1, height//8, width//8] | LATENT |
+| `positive` | Condicionamento positivo, atualizado com a imagem e os dados de visão | CONDITIONING |
+| `negative` | Condicionamento negativo, atualizado com a imagem e os dados de visão | CONDITIONING |
+| `latent` | Tensor latente vazio pronto para geração de vídeo, com shape [batch_size, 16, ((length-1)//4)+1, height//8, width//8] | LATENT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideo/pt-BR.md)
 

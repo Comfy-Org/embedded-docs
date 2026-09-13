@@ -1,20 +1,20 @@
 # Cargar conjunto de imágenes desde carpeta
 
-Este nodo carga múltiples imágenes desde una subcarpeta seleccionada dentro del directorio principal de entrada de ComfyUI y las devuelve como una lista. Escanea la carpeta elegida en busca de archivos de imagen en formato PNG, JPG, JPEG o WEBP, lo que resulta útil para procesamiento por lotes o preparación de conjuntos de datos de imágenes.
+Este nodo carga varias imágenes desde una subcarpeta seleccionada dentro del directorio de entrada principal de ComfyUI y las devuelve como una lista. Escanea la carpeta elegida en busca de archivos de imagen en formato PNG, JPG, JPEG o WEBP, lo que lo hace útil para el procesamiento por lotes o para preparar conjuntos de datos de imágenes.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `folder` | La carpeta desde la que se cargan las imágenes. Las opciones son las subcarpetas presentes en el directorio principal de entrada de ComfyUI. | COMBO | Sí | Múltiples opciones disponibles |
+| `folder` | La carpeta desde la que se cargarán las imágenes. Las opciones son las subcarpetas presentes en el directorio de entrada principal de ComfyUI. | COMBO | Sí | Múltiples opciones disponibles |
 
-Nota: La carpeta seleccionada debe ser una subcarpeta del directorio principal de entrada de ComfyUI; cualquier valor que se resuelva fuera de este directorio es rechazado. Solo se cargan los archivos con las extensiones .png, .jpg, .jpeg o .webp, y la verificación de extensión no distingue entre mayúsculas y minúsculas. Si la carpeta seleccionada no contiene archivos de imagen válidos, el nodo genera un error. Este nodo está marcado como experimental.
+Nota: La carpeta seleccionada debe ser una subcarpeta del directorio de entrada principal de ComfyUI; cualquier valor que se resuelva fuera de él (por ejemplo, usando `..`, rutas absolutas, letras de unidad o enlaces simbólicos) se rechaza. Solo se cargan archivos con las extensiones .png, .jpg, .jpeg o .webp, y la comprobación de extensiones no distingue entre mayúsculas y minúsculas. Las imágenes cargadas se convierten a RGB y se escalan al rango 0-1. Si la carpeta seleccionada no contiene archivos de imagen válidos, el nodo genera un error. Este nodo está marcado como experimental.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `images` | Lista de imágenes cargadas. El nodo carga todos los archivos de imagen válidos (PNG, JPG, JPEG, WEBP) que se encuentren en la carpeta seleccionada. | IMAGE |
+| `images` | Lista de imágenes cargadas. El nodo carga todos los archivos de imagen válidos (PNG, JPG, JPEG, WEBP) encontrados en la carpeta seleccionada. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageDataSetFromFolder/es.md)
 

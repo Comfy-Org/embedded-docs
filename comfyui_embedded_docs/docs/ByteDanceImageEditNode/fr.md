@@ -1,17 +1,17 @@
 # ByteDanceImageEditNode
 
-Le nœud ByteDance Image Edit vous permet de modifier des images à l'aide des modèles d'IA de ByteDance via une API. Vous fournissez une image d'entrée et une instruction textuelle décrivant les modifications souhaitées, puis le nœud traite l'image conformément à vos instructions. Le nœud gère automatiquement la communication avec l'API et renvoie l'image modifiée.
+Le nœud ByteDance Image Edit vous permet de modifier des images à l'aide des modèles d'IA de ByteDance via une API. Vous fournissez une image d'entrée et une invite textuelle décrivant les modifications souhaitées, et le nœud traite l'image selon vos instructions. Le nœud gère automatiquement la communication avec l'API et renvoie l'image modifiée.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Type d'entrée | Défaut | Plage |
 | --- | --- | --- | --- | --- | --- |
-| `model` | Nom du modèle | MODEL | COMBO | seededit_3 | Options Image2ImageModelName |
-| `image` | L'image de base à modifier | IMAGE | IMAGE | - | - |
+| `model` | Nom du modèle | MODEL | COMBO | seededit_3 | Options de Image2ImageModelName |
+| `image` | Image de base à modifier | IMAGE | IMAGE | - | - |
 | `prompt` | Instruction pour modifier l'image | STRING | STRING | "" | - |
 | `seed` | Graine à utiliser pour la génération | INT | INT | 0 | 0-2147483647 |
-| `guidance_scale` | Une valeur plus élevée fait que l'image suit plus fidèlement l'instruction | FLOAT | FLOAT | 5,5 | 1,0-10,0 |
-| `watermark` | Indique s'il faut ajouter un filigrane "Généré par IA" à l'image | BOOLEAN | BOOLEAN | True | - |
+| `guidance_scale` | Une valeur plus élevée fait que l'image suit plus étroitement l'invite | FLOAT | FLOAT | 5.5 | 1.0-10.0 |
+| `watermark` | Indique s'il faut ajouter un filigrane « AI generated » à l'image | BOOLEAN | BOOLEAN | True | - |
 
 ## Sorties
 

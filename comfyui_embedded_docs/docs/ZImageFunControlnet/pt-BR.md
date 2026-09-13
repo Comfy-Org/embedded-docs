@@ -1,24 +1,24 @@
 # ZImageFunControlnet
 
-O ZImageFunControlnet aplica uma rede de controle especializada para influenciar o processo de geração ou edição de imagens. Ele usa um modelo base, um patch de modelo e um VAE, permitindo ajustar a força do efeito de controle. Este nó pode trabalhar com uma imagem base, uma imagem de inpaint e uma máscara para edições mais direcionadas.
+ZImageFunControlnet aplica um patch de rede de controle a um modelo base para que ele possa orientar o processo de geração ou edição de imagens. Ele combina um modelo, um patch de modelo e um VAE, e permite controlar quão fortemente o efeito de controle influencia o resultado. Entradas opcionais de `image`, `inpaint_image` e `mask` permitem edições mais direcionadas.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `modelo` | O modelo base usado no processo de geração. | MODEL | Sim | - |
-| `patch_do_modelo` | Um modelo de patch especializado que aplica a orientação da rede de controle. | MODEL_PATCH | Sim | - |
+| `model` | O modelo base usado para o processo de geração. | MODEL | Sim | - |
+| `model_patch` | Um patch de modelo especializado que aplica a orientação da rede de controle. | MODEL_PATCH | Sim | - |
 | `vae` | O Autoencoder Variacional usado para codificar e decodificar imagens. | VAE | Sim | - |
-| `força` | A força da influência da rede de controle. Valores positivos aplicam o efeito, enquanto valores negativos podem invertê-lo (padrão: 1.0). | FLOAT | Sim | -10.0 a 10.0 |
-| `imagem` | Uma imagem base opcional para orientar o processo de geração. | IMAGE | Não | - |
-| `imagem_para_retouch` | Uma imagem opcional usada especificamente para inpaint de áreas definidas por uma máscara. | IMAGE | Não | - |
-| `máscara` | Uma máscara opcional que define quais áreas de uma imagem devem ser editadas ou receber inpaint. | MASK | Não | - |
+| `strength` | A força da influência da rede de controle. Valores positivos aplicam o efeito, enquanto valores negativos podem invertê-lo (padrão: 1.0). | FLOAT | Sim | -10.0 a 10.0 (passo 0.01) |
+| `image` | Uma imagem base opcional para orientar o processo de geração. | IMAGE | Não | - |
+| `inpaint_image` | Uma imagem opcional usada especificamente para inpainting de áreas definidas por uma máscara. | IMAGE | Não | - |
+| `mask` | Uma máscara opcional que define quais áreas de uma imagem devem ser editadas ou submetidas a inpainting. | MASK | Não | - |
 
-**Nota:** O parâmetro `inpaint_image` é tipicamente usado em conjunto com um `mask` para especificar o conteúdo do inpaint. O comportamento do nó pode mudar dependendo de quais entradas opcionais são fornecidas (por exemplo, usar `image` para orientação ou usar `image`, `mask` e `inpaint_image` para inpaint).
+**Observação:** O parâmetro `inpaint_image` geralmente é usado em conjunto com um `mask` para especificar o conteúdo do inpainting. O comportamento do nó pode mudar dependendo de quais entradas opcionais são fornecidas (por exemplo, usar `image` para orientação ou usar `image`, `mask` e `inpaint_image` para inpainting).
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dados |
+| Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
 | `model` | O modelo com o patch da rede de controle aplicado, pronto para uso em um pipeline de amostragem. | MODEL |
 | `positive` | O condicionamento positivo, potencialmente modificado pelas entradas da rede de controle. | CONDITIONING |

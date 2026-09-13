@@ -1,23 +1,25 @@
-# LumaRay32VideoEditNode
+# Luma Ray 3.2 Edição de Vídeo
 
-Este nó re-renderiza um vídeo existente sob um novo prompt usando o Luma Ray 3.2, permitindo que você reformate, reilumine, adicione ou remova elementos enquanto mantém o movimento original. O vídeo de origem pode ter até 18 segundos, e o vídeo editado mantém a duração original da fonte.
+## Visão geral
+
+Este nó renderiza novamente um vídeo existente sob um novo prompt usando o Luma Ray 3.2, permitindo restilizar, reiluminar, adicionar ou remover elementos enquanto mantém o movimento original. O vídeo de origem pode ter até 18 segundos, e o vídeo editado mantém o comprimento original da origem.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
-|-----------|-------------|--------------|-------------|-------|
-| `vídeo` | Vídeo de origem a ser editado. Até 18 segundos. | VIDEO | Sim | - |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `video` | Vídeo de origem a ser editado. Até 18 segundos. | VIDEO | Sim | - |
 | `prompt` | Descreve a edição desejada. | STRING | Sim | - |
-| `resolução` | A resolução de saída para o vídeo editado. | COMBO | Sim | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
-| `força` | O quanto preservar versus reimaginar a origem. "auto" permite que o Ray 3.2 escolha; adhere_* preserva ao máximo, flex_* é equilibrado, reimagine_* altera mais. (padrão: "auto") | COMBO | Sim | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
+| `resolution` | A resolução de saída para o vídeo editado. (padrão: "720p") | COMBO | Sim | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+| `strength` | O quão fortemente preservar versus reimaginar a origem. "auto" permite que o Ray 3.2 escolha; adhere_* preserva ao máximo, flex_* é equilibrado, reimagine_* altera ao máximo. (padrão: "auto") | COMBO | Sim | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
 | `seed` | Semente para reprodutibilidade. | INT | Sim | - |
 
-| `resolução` | A resolução de saída para o vídeo editado. (padrão: "720p") | COMBO | Sim | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+**Nota:** O `prompt` deve ter entre 1 e 6000 caracteres. O vídeo de origem não deve exceder 18 segundos de duração.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
-|---------------|-----------|--------------|
+| Nome da Saída | Descrição | Tipo de Dados |
+|-------------|-------------|-----------|
 | `VIDEO` | A saída do vídeo editado. | VIDEO |
 | `generation_id` | O identificador único para a solicitação de geração. | STRING |
 

@@ -1,16 +1,16 @@
 # AdımlarınıHizalaZamanlayıcı
 
-AlignYourStepsScheduler düğümü, farklı model türlerine dayalı olarak gürültü giderme işlemi için sigma değerleri üretir. Örnekleme sürecinin her adımı için uygun gürültü seviyelerini hesaplar ve `denoise` parametresine göre toplam adım sayısını ayarlar. Bu, örnekleme adımlarının farklı difüzyon modellerinin belirli gereksinimleriyle uyumlu hale getirilmesine yardımcı olur.
+AlignYourStepsScheduler düğümü, farklı model türlerine göre gürültü giderme işlemi için sigma değerleri (gürültü seviyeleri) üretir. Örnekleme sürecinin her adımı için uygun gürültü seviyelerini hesaplar ve toplam adım sayısını `denoise` parametresine göre ayarlar; böylece örnekleme adımlarının farklı difüzyon modellerinin özel gereksinimleriyle uyumlu hale getirilmesine yardımcı olur.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model_türü` | Sigma hesaplaması için kullanılacak model türünü belirtir (varsayılan: "SD1") | COMBO | Evet | `"SD1"`<br>`"SDXL"`<br>`"SVD"` |
-| `adımlar` | Oluşturulacak toplam örnekleme adım sayısı (varsayılan: 10) | INT | Evet | 1-10000 |
-| `gürültü_azaltma` | Görüntünün ne kadar gürültü giderileceğini kontrol eder; 1.0 tüm adımları kullanır, daha düşük değerler daha az adım kullanır (varsayılan: 1.0) | FLOAT | Evet | 0.0-1.0 |
+| `model_type` | Sigma hesaplaması için kullanılacak model türünü belirtir (varsayılan: "SD1") | COMBO | Evet | `"SD1"`<br>`"SDXL"`<br>`"SVD"` |
+| `steps` | Üretilecek toplam örnekleme adımı sayısı (varsayılan: 10) | INT | Evet | 1 ile 10000 |
+| `denoise` | Görüntüde ne kadar gürültü giderme yapılacağını kontrol eder; 1.0 tüm adımları kullanır ve daha düşük değerler daha az adım kullanır (varsayılan: 1.0) | FLOAT | Evet | 0.0 ile 1.0 (adım: 0.01) |
 
-Not: Her model türü, 10 adım için 11 sigma değeri içeren yerleşik bir gürültü seviyesi çizelgesine sahiptir. `denoise` 0.0 olduğunda düğüm boş bir sigma tensörü döndürür. `denoise` 0.0 ile 1.0 arasında olduğunda, etkili adım sayısı `round(steps × denoise)` olarak hesaplanır ve sigma çizelgesinin yalnızca buna karşılık gelen son kısmı kullanılır. İstenen `steps` değeri yerleşik çizelge uzunluğuyla eşleşmezse, gürültü seviyeleri istenen adım sayısıyla eşleşecek şekilde log-doğrusal olarak enterpolasyon yapılır. Son sigma değeri her zaman 0 olarak ayarlanır.
+Not: Her model türünün, 10 adım için 11 sigma değeri içeren yerleşik bir gürültü seviyesi çizelgesi vardır. `denoise` 0.0 olduğunda düğüm boş bir sigma tensörü döndürür. `denoise` 0.0 ile 1.0 arasında olduğunda, etkin adım sayısı `round(steps × denoise)` olarak hesaplanır ve sigma çizelgesinin yalnızca karşılık gelen son kısmı kullanılır. İstenen `steps` değeri yerleşik çizelge uzunluğuyla eşleşmiyorsa, gürültü seviyeleri istenen adım sayısına uyacak şekilde log-doğrusal enterpolasyon uygulanarak hesaplanır. Son sigma değeri her zaman 0 olarak ayarlanır.
 
 ## Çıktılar
 

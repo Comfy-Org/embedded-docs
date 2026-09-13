@@ -1,6 +1,6 @@
 # Imagen de OpenRouter
 
-Este nodo genera o edita imágenes a través de OpenRouter usando los modelos MAI-Image-2.6 de Microsoft. Admite generación de texto a imagen, así como edición guiada por imagen con hasta cinco imágenes de referencia, en siete relaciones de aspecto a resolución 1K o 1.5K.
+Este nodo genera o edita imágenes a través de OpenRouter usando los modelos MAI-Image-2.6 de Microsoft. Admite generación de texto a imagen, así como edición guiada por imágenes con hasta cinco imágenes de referencia, en siete relaciones de aspecto a resolución 1K o 1.5K.
 
 ## Entradas
 
@@ -8,39 +8,39 @@ Este nodo genera o edita imágenes a través de OpenRouter usando los modelos MA
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `model` | El modelo de imagen de OpenRouter usado para generar la imagen. Al seleccionar un modelo, se muestran las opciones específicas del modelo indicadas a continuación. | DYNAMIC_COMBO | Sí | `microsoft/mai-image-2.6`<br>`microsoft/mai-image-2.6-flash` |
+| `model` | El modelo de imagen de OpenRouter usado para generar la imagen. Seleccionar un modelo revela las opciones específicas del modelo que se enumeran a continuación. | DYNAMIC_COMBO | Sí | `microsoft/mai-image-2.6`<br>`microsoft/mai-image-2.6-flash` |
 
 ### Entradas de Mai Image 2.6 y Mai Image 2.6 Flash
 
-Compartidas por ambas opciones de modelo (`microsoft/mai-image-2.6` y `microsoft/mai-image-2.6-flash`), que exponen el mismo conjunto de parámetros.
+Compartido por ambas opciones de modelo (`microsoft/mai-image-2.6` y `microsoft/mai-image-2.6-flash`), que exponen el mismo conjunto de parámetros.
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Describe la imagen a generar, o la edición que se aplicará a las imágenes de referencia. Hasta 20000 caracteres. Predeterminado: `""` (vacío). Se requiere al menos 1 carácter después de eliminar los espacios en blanco circundantes. | STRING | Sí | 1 a 20000 caracteres |
-| `aspect_ratio` | Relación de aspecto de la imagen generada, también aplicada cuando se conectan imágenes de referencia. Predeterminado: `"1:1"`. `"auto"` permite que el modelo elija la relación para texto a imagen (renderizada en el tamaño 1.5K) y mantiene la relación de aspecto de la primera imagen de referencia al editar. | COMBO | Sí | `"1:1"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"auto"` |
-| `resolution` | Nivel de tamaño de salida. 1K es aproximadamente 1 megapíxel (1:1 es 1024x1024, 16:9 es 1360x768); 1.5K es aproximadamente 2.3 megapíxeles (1:1 es 1536x1536, 16:9 es 2048x1152). Predeterminado: `"1K"`. Se ignora cuando `aspect_ratio` es `"auto"`. | COMBO | Sí | `"1K"`<br>`"1.5K"` |
-| `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; la API no tiene semilla, por lo que los resultados reales no son deterministas sin importar este valor. Predeterminado: `42`. | INT | Sí | 0 a 2147483647 |
+| `prompt` | Describe la imagen que se va a generar, o la edición que se aplicará a las imágenes de referencia. Hasta 20000 caracteres. Predeterminado: `""` (vacío). Se requiere al menos 1 carácter después de eliminar los espacios en blanco circundantes. | STRING | Sí | 1 a 20000 caracteres |
+| `aspect_ratio` | Relación de aspecto de la imagen generada; también se aplica cuando hay imágenes de referencia conectadas. Predeterminado: `"1:1"`. `"auto"` permite que el modelo elija la relación para texto a imagen (renderizada con el tamaño 1.5K) y mantiene la relación de aspecto de la primera imagen de referencia al editar. | COMBO | Sí | `"1:1"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"auto"` |
+| `resolution` | Nivel de tamaño de salida. 1K es aproximadamente 1 megapíxel (1:1 es 1024x1024, 16:9 es 1360x768); 1.5K es aproximadamente 2,3 megapíxeles (1:1 es 1536x1536, 16:9 es 2048x1152). Predeterminado: `"1K"`. Se ignora cuando `aspect_ratio` es `"auto"`. | COMBO | Sí | `"1K"`<br>`"1.5K"` |
+| `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; la API no tiene semilla, por lo que los resultados reales no son deterministas independientemente de este valor. Predeterminado: `42`. | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de referencia
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `image_1` ... `image_5` | Ranura ampliable: conecta de 1 a 5 imágenes de referencia para edición guiada por imagen; una entrada por lotes cuenta una vez por imagen. Las ranuras son opcionales y pueden dejarse vacías (mínimo 0 conectadas). | IMAGE | No | 0 a 5 imágenes |
+| `image_1` ... `image_5` | Ranura ampliable: conecta de 1 a 5 imágenes de referencia para edición guiada por imágenes; una entrada por lotes cuenta una vez por imagen. Las ranuras son opcionales y pueden dejarse vacías (mínimo 0 conectadas). | IMAGE | No | 0 a 5 imágenes |
 
 **Notas:**
 
 - Se admite un máximo de 5 imágenes de referencia en total entre todas las ranuras conectadas; una entrada por lotes cuenta una vez por imagen.
-- El `prompt` debe contener al menos 1 carácter después de eliminar los espacios en blanco circundantes, y no puede superar los 20000 caracteres.
+- El `prompt` debe contener al menos 1 carácter después de eliminar los espacios en blanco circundantes y no puede superar los 20000 caracteres.
 - Las imágenes de referencia se envían como datos PNG y están limitadas a un total de 2048 x 2048 píxeles.
-- La configuración de `aspect_ratio` se aplica a la salida incluso cuando hay imágenes de referencia conectadas.
-- Cuando `aspect_ratio` es `"auto"`, se ignora la configuración de `resolution`. Sin imágenes de referencia, el modelo elige la relación para texto a imagen y renderiza en el tamaño 1.5K; con imágenes de referencia conectadas, se mantiene la relación de aspecto de la primera imagen de referencia.
+- La configuración `aspect_ratio` se aplica a la salida incluso cuando hay imágenes de referencia conectadas.
+- Cuando `aspect_ratio` es `"auto"`, la configuración `resolution` se ignora. Sin imágenes de referencia, el modelo elige la relación para texto a imagen y renderiza con el tamaño 1.5K; con imágenes de referencia conectadas, se mantiene la relación de aspecto de la primera imagen de referencia.
 - El valor de la semilla no afecta el resultado de la API; solo determina si el nodo se vuelve a ejecutar.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |-------------|-------------|-----------|
-| `IMAGE` | La imagen generada o editada. Si el servicio devuelve varias imágenes, se combinan en una única salida IMAGE por lotes. Se genera un error si no se devuelve ninguna imagen o si una imagen devuelta no se puede decodificar. | IMAGE |
+| `IMAGE` | La imagen generada o editada. Si el servicio devuelve varias imágenes, se combinan en una única salida IMAGE por lotes. Se produce un error si no se devuelve ninguna imagen o si una imagen devuelta no se puede decodificar. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterImageNode/es.md)
 

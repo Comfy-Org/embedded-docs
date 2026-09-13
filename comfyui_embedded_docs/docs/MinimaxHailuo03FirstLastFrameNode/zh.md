@@ -1,54 +1,54 @@
 # MiniMax H3 首帧-末帧生成视频
 
-此节点使用 MiniMax H3 模型，根据首帧图像以及可选的末帧图像生成视频。`model` 选择器会切换适用的生成设置和约束，生成视频的宽高比与所提供的图像保持一致。
+此节点使用 MiniMax H3 模型，根据首帧图像以及可选的末帧图像生成视频。`model` 选择器会改变所适用的生成设置和约束，生成的视频宽高比与所提供的图像一致。
 
 ## 输入
 
 ### 通用输入
 
-| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
+| 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用于视频生成的模型。选择模型会在下方显示该模型专属的设置。 | DYNAMIC_COMBO | 是 | "MiniMax H3"<br>"MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
-| `first_frame` | 视频的首帧图像。生成视频的宽高比与此图像一致。 | IMAGE | 是 | - |
-| `last_frame` | 可选的视频末帧图像。提供后，视频将根据首帧向此末帧生成。 | IMAGE | 否 | - |
-| `seed` | 随机种子。使用相同种子的相同请求会得到相似但不保证相同的结果。包含一个“生成后控制”选项。默认值：42。 | INT | 是 | 0 到 4294967295 |
+| `model` | 用于视频生成的模型。选择模型后，下方会显示该模型专属的设置。 | DYNAMIC_COMBO | 是 | "MiniMax H3"<br>"MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `first_frame` | 视频的首帧图像。生成的视频宽高比与此图像一致。 | IMAGE | 是 | - |
+| `last_frame` | 可选的视频末帧图像。提供后，视频会从首帧生成并朝该末帧过渡。 | IMAGE | 否 | - |
+| `seed` | 随机种子。使用相同种子进行的相同请求会得到相似但不保证完全相同的结果。包含一个“生成后控制”选项。默认值：42。 | INT | 是 | 0 到 4294967295 |
 | `watermark` | 是否为视频添加 AIGC 水印。这是一个高级参数。仅 `MiniMax H3` 模型支持。默认值：False。 | BOOLEAN | 是 | True<br>False |
 
 ### MiniMax H3 输入
 
-当在 `model` 选择器中选择 `MiniMax H3` 时，会显示以下设置。
+当在 `model` 选择器中选中 `MiniMax H3` 时，会显示这些设置。
 
-| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
+| 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | 视频生成的文本提示。必须至少包含一个非空白字符。 | STRING | 是 | 多行文本 |
+| `prompt` | 用于视频生成的文本提示词。必须至少包含一个非空白字符。 | STRING | 是 | Multiline text |
 | `resolution` | 输出视频的分辨率。 | COMBO | 是 | "768P"<br>"2K" |
-| `duration` | 输出视频的时长（秒）。默认值：5。 | INT | 是 | 4 到 15 |
+| `duration` | 输出视频的时长，以秒为单位。默认值：5。 | INT | 是 | 4 到 15 |
 
 ### MiniMax H3 Max 和 MiniMax H3 Max Turbo 输入
 
-当在 `model` 选择器中选择 `MiniMax H3 Max` 或 `MiniMax H3 Max Turbo` 时，会显示以下设置。两个模型提供相同的设置。
+这些设置由 `MiniMax H3 Max` 和 `MiniMax H3 Max Turbo` 共享。选择任一模型都会显示相同的设置。
 
-| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
+| 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | 视频生成的文本提示。不得为空或仅包含空白字符，且限制为 50,000 个字符。 | STRING | 是 | 多行文本 |
+| `prompt` | 用于视频生成的文本提示词。不得为空或仅包含空白字符，且限制为 50,000 个字符。 | STRING | 是 | Multiline text |
 | `resolution` | 输出视频的分辨率。默认值：768P。 | COMBO | 是 | "480P"<br>"768P" |
-| `duration` | 输出视频的时长（秒）。默认值：5。 | INT | 是 | 5 到 15 |
-| `prompt_expansion_mode` | 生成之前重写提示词所投入的努力程度。默认值：balanced。 | COMBO | 是 | "balanced"<br>"quality" |
+| `duration` | 输出视频的时长，以秒为单位。默认值：5。 | INT | 是 | 5 到 15 |
+| `prompt_expansion_mode` | 生成前用于重写提示词的工作量。默认值：balanced。 | COMBO | 是 | "balanced"<br>"quality" |
 
-**约束条件说明：**
+**约束说明：**
 
-- 提示词必须包含文本：拒绝空提示词或仅含空白字符的提示词。
-- 提供的任意帧图像必须至少为 256 像素宽、256 像素高，宽高比介于 0.4 至 2.5（约为 2:5 至 5:2）。该要求适用于 `first_frame`；若提供了 `last_frame`，同样适用。
-- 省略 `last_frame` 时，仅从首帧生成视频。
-- 输出视频的宽高比与所提供的图像保持一致。
-- `watermark` 仅受 `MiniMax H3` 支持。在 `MiniMax H3 Max` 或 `MiniMax H3 Max Turbo` 上启用会引发错误。
-- `MiniMax H3` 的时长范围为 4 至 15 秒；`MiniMax H3 Max` 和 `MiniMax H3 Max Turbo` 的时长范围为 5 至 15 秒。
+- 提示词必须包含文本：空提示词或仅含空白字符的提示词会被拒绝。
+- 任何提供的帧图像必须至少为 256 像素宽、256 像素高，宽高比介于 0.4 到 2.5 之间（约为 2:5 到 5:2）。此要求适用于 `first_frame`，以及在提供时适用于 `last_frame`。
+- 省略 `last_frame` 时，视频仅从首帧生成。
+- 输出视频的宽高比与所提供的图像一致。
+- `watermark` 仅由 `MiniMax H3` 支持。在 `MiniMax H3 Max` 或 `MiniMax H3 Max Turbo` 中启用它会引发错误。
+- `MiniMax H3` 的时长范围为 4 到 15 秒，`MiniMax H3 Max` 和 `MiniMax H3 Max Turbo` 的时长范围为 5 到 15 秒。
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `video` | 使用选定的 MiniMax H3 模型，根据首帧及可选的末帧生成视频。 | VIDEO |
+| `video` | 使用所选的 MiniMax H3 模型，从首帧和可选末帧生成的视频。 | VIDEO |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxHailuo03FirstLastFrameNode/zh.md)
 

@@ -1,51 +1,56 @@
 # Atención dispersa por bloques del modelo
 
-## Resumen
-
-El nodo de Atención Esparsa de Bloque modifica un modelo de ComfyUI para aplicar un mecanismo de atención esparsa de bloque. Este mecanismo reduce la carga computacional permitiendo que cada bloque de consulta se centre en un subconjunto de bloques clave, en lugar de atender a todos los posibles bloques, lo cual es particularmente beneficioso para secuencias largas.
+El nodo **Block Sparse Attention** modifica un modelo para que sus capas de atención se centren solo en las partes más relevantes de la entrada en lugar de en todo a la vez, lo que reduce el trabajo computacional necesario para secuencias largas. El ahorro crece con la longitud de la secuencia, ya que las secuencias cortas suelen ser más rápidas con atención normal (densa).
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Datos | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
-| `model` | El modelo de ComfyUI al que aplicar la atención esparsa de bloque. | MODEL | Sí | N/A |
-| `selection` | El método utilizado para determinar qué bloques clave atender. | DYNAMIC_COMBO | Sí | Opciones: sol-attn (tau adaptativo), sla (top-k), vsa (Atención Esparsa de Video) |
-| `tau` | El umbral en sigmas de distribución de puntuaciones para el método sol-attn. | FLOAT | No | predeterminado: 1.3, mínimo: 0.0, máximo: 4.0, paso: 0.05 |
-| `keep_percent` | El porcentaje de bloques clave que cada bloque de consulta mantiene exactamente para el método sla. | FLOAT | No | predeterminado: 10.0, mínimo: 0.5, máximo: 95.0, paso: 0.5 |
-| `start_percent` | El punto porcentual cuando comienza la atención esparsa. | FLOAT | No | predeterminado: 0.2, mínimo: 0.0, máximo: 1.0, paso: 0.01 |
-| `end_percent` | El punto porcentual cuando termina la atención esparsa. | FLOAT | No | predeterminado: 1.0, mínimo: 0.0, máximo: 1.0, paso: 0.01 |
-| `dense_blocks` | Una cadena que representa los bloques del transformador que siempre ejecutan atención densa. | STRING | No | predeterminado: "" |
-| `min_tokens` | El número mínimo de tokens en una secuencia para el que el modelo utiliza atención densa. | INT | No | predeterminado: 12288, mínimo: 0, máximo: 1 << 20, paso: 512 |
-| `extra_tokens` | El número de tokens de alta puntuación adicionales a los que cada bloque de consulta debe prestar atención más allá de sus bloques seleccionados. | INT | No | predeterminado: 256, mínimo: 0, máximo: 256, paso: 64 |
-| `sink_conditioning` | Las filas de condicionamiento MiniMax-H3 a usar para el condicionamiento de sumidero. | COMBO | No | Opciones: exact_kv, exact_kv_and_rows, off |
-| `verbose` | Habilita el registro detallado. | BOOLEAN | No | predeterminado: Falso |
+### Entradas comunes
 
-### Notas
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `model` | El modelo al que se aplicará el parche. | MODEL | Sí | N/A |
+| `selection` | Método utilizado para elegir bloques clave para atención completa a nivel de token (se muestra como `method`). <br>`sol-attn`: Sparsifying Online Attention utiliza un umbral adaptativo sin entrenamiento para cada cabeza de atención y bloque de consulta.<br>`sla`: Sparse-Linear Attention conserva un porcentaje fijo de los bloques clave con mayor puntuación; úsalo solo con pesos de modelo entrenados para este patrón.<br>`vsa`: Video Sparse Attention (FastVideo) utiliza teselación 3D de cubos de video y una rama de atención gruesa aprendida; requiere pesos de modelo FastH3. | DYNAMIC_COMBO | Sí | `"sol-attn"`<br>`"sla"`<br>`"vsa"` |
+| `start_percent` | Punto porcentual en el que comienza la atención dispersa. Antes de este punto, la atención permanece densa. Predeterminado: 0.2. | FLOAT | No | min: 0.0, max: 1.0, step: 0.01 |
+| `end_percent` | Punto porcentual en el que termina la atención dispersa. Después de este punto, la atención vuelve a ser densa. Predeterminado: 1.0. | FLOAT | No | min: 0.0, max: 1.0, step: 0.01 |
+| `dense_blocks` | Bloques Transformer que siempre se ejecutan de forma densa, p. ej. '0, 1, 47-49'. Predeterminado: "" (vacío). Entrada avanzada. | STRING | No | Default: "" |
+| `min_tokens` | Las secuencias más cortas que este valor permanecen densas. Predeterminado: 12288. Entrada avanzada. | INT | No | min: 0, max: 1048576, step: 512 |
+| `extra_tokens` | Tokens adicionales con mayor puntuación a los que cada bloque de consulta atiende más allá de sus bloques seleccionados. Más cercano a denso para mayor tiempo de atención; se recomienda 256, 0 lo desactiva. Se ignora para VSA. Predeterminado: 256. Entrada avanzada. | INT | No | min: 0, max: 256, step: 64 |
+| `sink_conditioning` | Solo para MiniMax-H3. `exact_kv`: cada consulta atiende exactamente las filas empaquetadas de texto/audio/referencia (aprox. 3 % de costo). `exact_kv_and_rows`: además ejecuta densamente las filas de consulta de audio objetivo (mantiene intacto el audio generado). `off` desactiva este comportamiento. Predeterminado: "exact_kv_and_rows". Entrada avanzada. | COMBO | No | `"exact_kv"`<br>`"exact_kv_and_rows"`<br>`"off"` |
+| `verbose` | Registra si cada forma de atención usó atención dispersa o por qué permaneció densa. Predeterminado: False. Entrada avanzada. | BOOLEAN | No | Default: False |
 
-- El parámetro `selection` le permite elegir entre diferentes métodos para seleccionar bloques clave:
-  - `sol-attn`: Utiliza un umbral adaptativo para seleccionar bloques clave basado en la distribución de puntuaciones.
-  - `sla`: Mantiene un porcentaje fijo de los bloques clave de mayor puntuación.
-  - `vsa`: Aplica Atención Esparsa de Video, que utiliza mosaico de cubo 3D de video y una rama de atención gruesa aprendida.
-- El parámetro `dense_blocks` puede utilizarse para especificar los bloques del transformador que deben utilizar siempre atención densa.
-- El parámetro `min_tokens` establece el número mínimo de tokens en una secuencia para el que se utiliza atención densa.
-- El parámetro `extra_tokens` permite especificar el número adicional de tokens de alta puntuación a los que cada bloque de consulta debe prestar atención.
-- El parámetro `sink_conditioning` es relevante solo para modelos MiniMax-H3 y determina cómo se manejan las filas de condicionamiento.
-- El parámetro `verbose` habilita el registro detallado, lo cual puede ser útil para la depuración.
+### Entradas de sol-attn
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `tau` | Umbral en sigmas de la distribución de puntuaciones. Un valor más alto es más disperso: 1.0 conserva exactos aproximadamente el 16 % de los bloques clave, 1.5 alrededor del 7 %, 2.0 alrededor del 2.7 %. Predeterminado: 1.3. | FLOAT | No | min: 0.0, max: 4.0, step: 0.05 |
+
+### Entradas de sla
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `keep_percent` | Porcentaje de bloques clave que cada bloque de consulta conserva exactamente (los sumideros y la diagonal se añaden por encima). Las LoRAs de selección de estilo SLA se destilan contra este valor; sin dicha LoRA, un valor más alto está más cerca de denso. Predeterminado: 10.0. | FLOAT | No | min: 0.5, max: 95.0, step: 0.5 |
+
+### Entradas de vsa
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `keep_percent` | Porcentaje de cubos de video que cada cubo de consulta conserva; los checkpoints FastH3-VSA están entrenados con 10. Usa las capas `to_gate_compress` del modelo para la rama gruesa cuando están presentes. Predeterminado: 10.0. | FLOAT | No | min: 0.5, max: 95.0, step: 0.5 |
+
+**Nota:** Solo se muestran en la interfaz los parámetros que pertenecen al método seleccionado actualmente.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Datos |
-|-------------|-------------|-----------|
-| `model` | El modelo de ComfyUI con la atención esparsa de bloque aplicada. | MODEL |
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `model` | El modelo con atención dispersa por bloques aplicada. | MODEL |
 
-### Restricciones y Limitaciones
+## Restricciones y limitaciones
 
-- El método `sol-attn` requiere un valor de `tau` entre 0.0 y 4.0.
-- El método `sla` requiere un valor de `keep_percent` entre 0.5 y 95.0.
-- El método `vsa` es compatible solo con modelos MiniMax-H3 y requiere que el modelo tenga una capa `to_gate_compress`.
-- El parámetro `min_tokens` debe ser un entero no negativo (con 0, toda la atención permanece densa).
-- El parámetro `extra_tokens` debe ser un entero no negativo.
-- Las opciones de `sink_conditioning` solo son aplicables a modelos MiniMax-H3.
+- Las secuencias más cortas que `min_tokens`, los bloques listados en `dense_blocks` y los pasos de muestreo fuera de la ventana de `start_percent` a `end_percent` recurren al backend de atención densa del modelo seleccionado por el nodo Model Attention Backend.
+- `extra_tokens` se ignora cuando se selecciona el método `vsa`. Se registra un mensaje porque los pesos de VSA se entrenaron con su patrón disperso.
+- El método `vsa` requiere un modelo MiniMax-H3; cualquier otro modelo genera un error. Si al modelo le faltan las capas `to_gate_compress`, la etapa fina se ejecuta sin la rama gruesa y se registra una advertencia.
+- `dense_blocks` se ignora para los modelos que no reportan índices de bloques, lo cual se indica en el registro cuando `verbose` está habilitado.
+- `sink_conditioning` solo se aplica a modelos MiniMax-H3 que reportan una disposición que coincide con la longitud de secuencia actual.
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BlockSparseAttention/es.md)
 

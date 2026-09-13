@@ -1,21 +1,21 @@
 # Video-Metin Yükle (Klasörden)
 
-Bu düğüm, ComfyUI girdi dizinindeki seçili bir alt klasörden video dosyalarını ve bunlarla ilişkili metin açıklamalarını yükler ve bunları iki liste olarak döndürür: videolar ve açıklamalar. Video girişleri tembel referanslardır; bu nedenle kareler yalnızca aşağı akıştaki bir düğüm onlara ihtiyaç duyduğunda çözülür. Desteklenen formatlar MP4, AVI, MOV, WEBM, MKV ve FLV'dir. Tekrar sayısı önekine sahip iç içe klasörler (örneğin `5_classname/`, kohya-ss/sd-scripts gibi araçlar tarafından kullanılır) da desteklenir.
+Bu düğüm, ComfyUI giriş dizini içindeki bir klasörden video dosyalarını ve bunlarla eşleşen metin başlıklarını yükler ve bunları iki liste olarak döndürür: videolar ve başlıklar. Video girdileri tembel referanslardır; bu nedenle kareler yalnızca aşağı akıştaki bir düğüm bunlara ihtiyaç duyduğunda çözülür. Desteklenen biçimler MP4, AVI, MOV, WEBM, MKV ve FLV'dir; ayrıca yineleme sayısı öneki içeren iç içe klasörler (örn. kohya-ss/sd-scripts gibi araçlarda kullanılan `5_classname/`) de desteklenir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `folder` | Video dosyalarını ve .txt açıklamalarını içeren klasör. | COMBO | Evet | Kullanılabilir birden fazla seçenek: ComfyUI girdi dizinindeki tüm alt klasörleri dinamik olarak listeler |
+| `folder` | Video dosyalarını ve .txt başlıklarını içeren klasör. | COMBO | Evet | ComfyUI giriş dizini içindeki tüm alt klasörleri dinamik olarak listeler |
 
-Seçilen klasör, ComfyUI girdi dizininin bir alt klasörü olmalıdır; bu dizinin dışına çözümlenen bir klasör adı hata verir. Seçilen klasörde desteklenen bir video uzantısına (MP4, AVI, MOV, WEBM, MKV, FLV) sahip dosya yoksa, düğüm hata verir. Adı bir sayı ve ardından alt çizgi ile başlayan iç içe klasörler için (örneğin `5_classname`), o klasördeki her video, bu önek tarafından belirtilen sayı kadar veri kümesine dahil edilir. Her videonun açıklaması, aynı temel ada sahip bir `.txt` dosyasından okunur; eşleşen bir `.txt` dosyası yoksa açıklama boş bir dizedir.
+Seçilen klasör, ComfyUI giriş dizininin bir alt klasörü olmalıdır; o dizinin dışına çözümlenen bir klasör adı hata verir. Seçilen klasör desteklenen bir video uzantısına sahip (MP4, AVI, MOV, WEBM, MKV, FLV) hiçbir dosya içermiyorsa düğüm hata verir. Adı bir sayı ve ardından bir alt çizgi ile başlayan iç içe klasörlerde (örneğin `5_classname`), o klasördeki her video, veri kümesine bu önekte belirtilen sayı kadar dahil edilir. Her videonun başlığı, aynı temel ada sahip bir `.txt` dosyasından okunur; eşleşen bir `.txt` dosyası yoksa başlık boş dizedir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `videos` | Tembel video referansları; kareler yalnızca aşağı akışta ihtiyaç duyulduğunda çözülür. Klasörde bulunan her video dosyası için bir giriş. | VIDEO (list) |
-| `texts` | Metin açıklamalarının listesi. Video başına bir açıklama; bir videonun eşleşen `.txt` dosyası yoksa açıklaması boş bir dizedir. | STRING (list) |
+| `videos` | Tembel video referansları; kareler yalnızca aşağı akışta ihtiyaç duyulduğunda çözülür. Klasörde bulunan her video dosyası için bir girdi. | VIDEO (list) |
+| `texts` | Metin başlıkları listesi. Her video için bir başlık; bir videonun eşleşen `.txt` dosyası yoksa başlığı boş dizedir. | STRING (list) |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadVideoTextDataSetFromFolder/tr.md)
 

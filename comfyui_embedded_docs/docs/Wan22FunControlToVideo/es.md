@@ -1,30 +1,30 @@
 # Wan22FunControlToVideo
 
-El nodo Wan22FunControlToVideo prepara los datos de condicionamiento y un tensor latente vacío para la generación de video con el modelo Wan de video. Codifica imágenes de referencia opcionales y videos de control en el espacio latente, los adjunta al condicionamiento positivo y negativo, y crea un tensor latente relleno de ceros con las dimensiones espaciales y temporales correctas para el video solicitado.
+El nodo Wan22FunControlToVideo prepara datos de acondicionamiento y un tensor latente vacío para la generación de video con el modelo de video Wan. Codifica imágenes de referencia opcionales y videos de control en el espacio latente, los adjunta al acondicionamiento positivo y negativo, y crea un tensor latente relleno de ceros con las dimensiones espaciales y temporales correctas para el video solicitado.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `positivo` | Entrada de condicionamiento positivo para guiar la generación de video | CONDITIONING | Sí | - |
-| `negativo` | Entrada de condicionamiento negativo para guiar la generación de video | CONDITIONING | Sí | - |
+| `positive` | Entrada de acondicionamiento positivo para guiar la generación de video | CONDITIONING | Sí | - |
+| `negative` | Entrada de acondicionamiento negativo para guiar la generación de video | CONDITIONING | Sí | - |
 | `vae` | Modelo VAE utilizado para codificar imágenes en el espacio latente | VAE | Sí | - |
-| `ancho` | Ancho del video de salida en píxeles (por defecto: 832, paso: 16) | INT | Sí | 16 to MAX_RESOLUTION |
-| `alto` | Alto del video de salida en píxeles (por defecto: 480, paso: 16) | INT | Sí | 16 to MAX_RESOLUTION |
-| `duración` | Número de fotogramas en la secuencia de video (por defecto: 81, paso: 4) | INT | Sí | 1 to MAX_RESOLUTION |
-| `tamaño_lote` | Número de secuencias de video a generar (por defecto: 1) | INT | Sí | 1 a 4096 |
-| `imagen_ref` | Imagen de referencia opcional que proporciona guía visual para la generación | IMAGE | No | - |
-| `video_control` | Video de control opcional que guía el proceso de generación | IMAGE | No | - |
+| `width` | Ancho del video de salida en píxeles (predeterminado: 832, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
+| `height` | Alto del video de salida en píxeles (predeterminado: 480, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
+| `length` | Número de fotogramas en la secuencia de video (predeterminado: 81, paso: 4) | INT | Sí | 1 a MAX_RESOLUTION |
+| `batch_size` | Número de secuencias de video a generar (predeterminado: 1) | INT | Sí | 1 a 4096 |
+| `ref_image` | Imagen de referencia opcional que proporciona guía visual para la generación | IMAGE | No | - |
+| `control_video` | Video de control opcional que guía el proceso de generación | IMAGE | No | - |
 
-**Nota:** El parámetro `length` se procesa en pasos de 4 fotogramas, y el nodo aplica automáticamente un escalado temporal al construir el espacio latente. Cuando se proporciona `ref_image`, solo se codifica su primer fotograma y se adjunta al condicionamiento como latentes de referencia. Cuando se proporciona `control_video`, este se recorta a `length` fotogramas, se codifica y se coloca en el latente concatenado utilizado por el condicionamiento. El parámetro `start_image` se menciona en la lógica de ejecución, pero no está expuesto en el esquema de entradas del nodo.
+**Nota:** El parámetro `length` se procesa en pasos de 4 fotogramas, y el nodo aplica automáticamente escalado temporal al construir el espacio latente. Cuando se proporciona `ref_image`, solo se codifica su primer fotograma (redimensionado a `width` x `height`) y se adjunta al acondicionamiento como latentes de referencia. Cuando se proporciona `control_video`, se recorta a `length` fotogramas, se redimensiona, se codifica y se coloca en el latente concatenado usado por el acondicionamiento. El latente concatenado se duplica a lo largo de la dimensión de canales y su disposición de canales depende de la cantidad de canales latentes del VAE (con 48 canales se usa el formato Wan 2.2; de lo contrario, el formato Wan 2.1). El parámetro `start_image` se referencia en la lógica de ejecución, pero no se expone en el esquema de entrada del nodo, por lo que no se puede establecer desde la interfaz del nodo.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `positivo` | Condicionamiento positivo con datos latentes específicos del video añadidos, incluidos el latente concatenado, la máscara y los latentes de referencia opcionales | CONDITIONING |
-| `negativo` | Condicionamiento negativo con datos latentes específicos del video añadidos, incluidos el latente concatenado, la máscara y los latentes de referencia opcionales | CONDITIONING |
-| `latente` | Tensor latente vacío preparado para la generación de video, con dimensiones según el tamaño del lote, los canales latentes, la longitud, la altura y el ancho | LATENT |
+| `positive` | Acondicionamiento positivo con datos latentes específicos de video añadidos, incluidos el latente concatenado, la máscara y los latentes de referencia opcionales | CONDITIONING |
+| `negative` | Acondicionamiento negativo con datos latentes específicos de video añadidos, incluidos el latente concatenado, la máscara y los latentes de referencia opcionales | CONDITIONING |
+| `latent` | Tensor latente vacío preparado para la generación de video, dimensionado según el tamaño de lote, los canales latentes, la longitud, la altura y el ancho | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Wan22FunControlToVideo/es.md)
 

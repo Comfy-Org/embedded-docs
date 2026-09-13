@@ -1,22 +1,22 @@
 # Aplicar Condicionamento SeedVR2
 
-Este nó constrói condicionamentos positivo e negativo a partir de um latent do VAE para uso com o modelo SeedVR2. Ele valida a forma do latent de entrada e a estrutura do modelo e, em seguida, produz condicionamentos positivo e negativo que orientam a amostragem de imagem ou vídeo.
+Constrói condicionamentos positivo e negativo a partir de um latente VAE para uso com o modelo SeedVR2. Valida o latente de entrada e a estrutura do modelo, adiciona um canal de máscara ao latente e retorna ambas as saídas de condicionamento.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
-|-----------|-------------|---------------|--------------|-----------|
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+|-----------|-------------|-----------|----------|-------|
 | `model` | O modelo SeedVR2. | MODEL | Sim | - |
-| `vae_conditioning` | O latent do VAE SeedVR2 usado para criar o condicionamento (nome de exibição: latent). | LATENT | Sim | - |
+| `vae_conditioning` | O latente VAE do SeedVR2 a partir do qual construir o condicionamento (nome de exibição: latent). | LATENT | Sim | - |
 
-Observação: o latent `vae_conditioning` deve ser um tensor 5-D no layout canal-primeiro do Comfy (B, C, T, H, W), em que C é o número esperado de canais do VAE SeedVR2. O nó gera um erro se o latent não for 5-D, se o número de canais não corresponder ou se parecer estar no layout canal-último. A entrada `model` deve ser um modelo com a estrutura SeedVR2 esperada. Internamente, o nó anexa um canal de máscara constante ao latent e anexa a condição resultante aos conjuntos de condicionamento positivo e negativo.
+Nota: O latente `vae_conditioning` deve ser um tensor 5-D no layout channel-first do Comfy (B, C, T, H, W), em que C é a contagem esperada de canais do VAE SeedVR2. O nó gera um erro se o latente não for 5-D, se a contagem de canais não corresponder ou se o tensor parecer estar no layout channel-last. A entrada `model` deve ter a estrutura esperada do SeedVR2; o nó resolve seu modelo de difusão interno e lê seus condicionamentos positivo e negativo. Internamente, o nó anexa um canal de máscara constante ao latente e associa o condicionamento resultante tanto às saídas de condicionamento `positive` quanto `negative`.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
-|-------------|-------------|---------------|
-| `positive` | O condicionamento positivo para a amostragem. | CONDITIONING |
-| `negative` | O condicionamento negativo para a amostragem. | CONDITIONING |
+|-------------|-------------|-----------|
+| `positive` | O condicionamento positivo para amostragem. | CONDITIONING |
+| `negative` | O condicionamento negativo para amostragem. | CONDITIONING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SeedVR2Conditioning/pt-BR.md)
 

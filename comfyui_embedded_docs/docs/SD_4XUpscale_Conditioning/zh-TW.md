@@ -1,26 +1,26 @@
 # SD_4XUpscale_Conditioning
 
-SD_4XUpscale_Conditioning 節點用於準備擴散模型影像放大所需的條件資料。它接收輸入影像與條件資料，套用縮放與雜訊增強，產生修改後的條件，以引導放大過程。此節點輸出正向與負向條件，以及對應放大尺寸的潛在表示。
+SD_4XUpscale_Conditioning 節點會準備 conditioning 資料，以便使用擴散模型放大影像。它會依所選比例縮放輸入影像，加入可選的雜訊增強，並傳回修改後的正向與負向 conditioning，以及對應放大尺寸的空 latent。
 
 ## 輸入
 
-| 參數 | 說明 | 資料類型 | 是否必要 | 範圍 |
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `images` | 要進行放大的輸入影像 | IMAGE | 是 | - |
-| `正向` | 正向條件資料，用於引導生成朝向期望的內容 | CONDITIONING | 是 | - |
-| `負向` | 負向條件資料，用於引導生成遠離不想要的內容 | CONDITIONING | 是 | - |
-| `縮放比例` | 套用到輸入影像的縮放倍率（預設值：4.0） | FLOAT | 否 | 0.0 - 10.0 |
-| `雜訊增強` | 放大過程中加入的雜訊量（預設值：0.0） | FLOAT | 否 | 0.0 - 1.0 |
+| `images` | 要放大的輸入影像。 | IMAGE | 是 | - |
+| `正向` | 正向 conditioning 資料，可引導生成朝向想要的內容。 | CONDITIONING | 是 | - |
+| `負向` | 負向 conditioning 資料，可引導生成遠離不想要的內容。 | CONDITIONING | 是 | - |
+| `縮放比例` | 準備放大後的 conditioning 與 latent 時，套用於輸入影像尺寸的乘數（預設值：4.0）。 | FLOAT | 是 | 0.0 - 10.0 （步進值：0.01） |
+| `雜訊增強` | 在放大過程中加入的雜訊量（預設值：0.0）。 | FLOAT | 是 | 0.0 - 1.0 （步進值：0.001） |
 
-注意：`noise_augmentation` 為進階參數，在節點介面中顯示於「進階」（Advanced）切換區域。
+注意：`noise_augmentation` 是進階參數，會顯示在節點介面的「Advanced」切換項下。
 
 ## 輸出
 
-| 輸出名稱 | 說明 | 資料類型 |
+| 輸出名稱 | 描述 | 資料類型 |
 | --- | --- | --- |
-| `正向` | 已套用放大資訊的修改後正向條件 | CONDITIONING |
-| `負向` | 已套用放大資訊的修改後負向條件 | CONDITIONING |
-| `潛在空間` | 對應放大尺寸的空潛在表示 | LATENT |
+| `positive` | 已套用縮放後影像資料與雜訊增強設定的修改後正向 conditioning。 | CONDITIONING |
+| `negative` | 已套用縮放後影像資料與雜訊增強設定的修改後負向 conditioning。 | CONDITIONING |
+| `latent` | 符合放大後尺寸的空 latent 表示。 | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SD_4XUpscale_Conditioning/zh-TW.md)
 

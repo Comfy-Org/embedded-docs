@@ -1,27 +1,27 @@
 # TextEncodeZImageOmni
 
-TextEncodeZImageOmni codifica un prompt de texto junto con hasta tres imágenes de referencia opcionales en un formato de condicionamiento para modelos de generación de imágenes. El prompt se tokeniza y codifica con el modelo CLIP, y cada imagen conectada puede procesarse opcionalmente mediante un codificador de visión y/o un VAE para que las referencias visuales se incrusten junto con el texto. Este nodo está marcado como experimental.
+TextEncodeZImageOmni codifica un prompt de texto junto con hasta tres imágenes de referencia opcionales en un formato de condicionamiento para modelos de generación de imágenes. El prompt se tokeniza y se codifica con el modelo CLIP, y cada imagen conectada puede procesarse opcionalmente mediante un codificador de visión y/o un VAE para que las referencias visuales se integren junto con el texto. Este nodo está marcado como experimental.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `clip` | El modelo CLIP utilizado para tokenizar y codificar el prompt de texto. | CLIP | Sí |  |
-| `codificador_de_imagen` | Un modelo codificador de visión opcional. Si se proporciona, se utiliza para codificar las imágenes de entrada y las incrustaciones resultantes se añaden al condicionamiento. | CLIP_VISION | No |  |
-| `instrucción` | El prompt de texto a codificar. Admite entrada multilínea y prompts dinámicos. | STRING | Sí |  |
-| `auto_redimensionar_imágenes` | Cuando está habilitado (por defecto: True), las imágenes de entrada se redimensionan automáticamente antes de la codificación VAE para que su área total de píxeles se acerque a 1024x1024, con dimensiones redondeadas a múltiplos de 8. | BOOLEAN | Sí | True<br>False |
+| `image_encoder` | Un modelo codificador de visión opcional. Si se proporciona, se utiliza para codificar las imágenes de entrada y los embeddings resultantes se añaden al condicionamiento. | CLIP_VISION | No |  |
+| `prompt` | El prompt de texto que se va a codificar. Admite entrada multilínea y prompts dinámicos. | STRING | Sí |  |
+| `auto_resize_images` | Cuando está habilitado (predeterminado: True), las imágenes de entrada se redimensionan automáticamente antes de la codificación VAE para que su área total en píxeles se acerque a 1024x1024, con las dimensiones redondeadas a múltiplos de 8. | BOOLEAN | Sí | True<br>False |
 | `vae` | Un modelo VAE opcional. Si se proporciona, se utiliza para codificar las imágenes de entrada en representaciones latentes, que se añaden al condicionamiento como latentes de referencia. | VAE | No |  |
-| `imagen1` | La primera imagen de referencia opcional. | IMAGE | No |  |
-| `imagen2` | La segunda imagen de referencia opcional. | IMAGE | No |  |
-| `imagen3` | La tercera imagen de referencia opcional. | IMAGE | No |  |
+| `image1` | La primera imagen de referencia opcional. | IMAGE | No |  |
+| `image2` | La segunda imagen de referencia opcional. | IMAGE | No |  |
+| `image3` | La tercera imagen de referencia opcional. | IMAGE | No |  |
 
-**Nota:** El nodo acepta un máximo de tres imágenes (`image1`, `image2`, `image3`). Las entradas `image_encoder` y `vae` solo se utilizan cuando se proporciona al menos una imagen; cuando ambas están conectadas, cada imagen es procesada por ambas. Cuando `auto_resize_images` es True y hay un `vae` conectado, las imágenes se redimensionan para tener un área total de píxeles cercana a 1024x1024 antes de la codificación.
+**Nota:** El nodo acepta un máximo de tres imágenes (`image1`, `image2`, `image3`). Las entradas `image_encoder` y `vae` solo se utilizan cuando se proporciona al menos una imagen; cuando ambas están conectadas, cada imagen es procesada por ambas. Cuando `auto_resize_images` es True y hay un `vae` conectado, las imágenes se redimensionan para tener un área total en píxeles cercana a 1024x1024 antes de la codificación. Si no se proporciona ninguna imagen, solo se codifica el prompt de texto.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `CONDITIONING` | La salida de condicionamiento final. Contiene el prompt de texto codificado y, cuando se proporcionan imágenes, puede incluir incrustaciones de imagen codificadas, latentes de referencia e incrustaciones de texto adicionales derivadas de la plantilla de marcador de posición de imagen. | CONDITIONING |
+| `CONDITIONING` | La salida final de condicionamiento. Contiene el prompt de texto codificado y, cuando se proporcionan imágenes, puede incluir embeddings de imágenes codificados, latentes de referencia y embeddings de texto adicionales derivados de la plantilla de marcador de posición de imagen. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeZImageOmni/es.md)
 

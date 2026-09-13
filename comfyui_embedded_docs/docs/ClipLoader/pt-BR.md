@@ -1,16 +1,16 @@
-# Carregar CLIP
+# ClipLoader
 
-O nó CLIPLoader carrega um modelo codificador de texto (CLIP, T5 ou similar) a partir de um arquivo, disponibilizando-o para uso em outros nós que precisam converter prompts de texto em representações numéricas. Ele suporta uma ampla variedade de arquiteturas de modelo, cada uma exigindo um tipo específico de codificador.
+O nó CLIPLoader carrega um modelo codificador de texto (CLIP, T5 ou similar) a partir de um arquivo, tornando-o disponível para uso em outros nós que precisam converter prompts de texto em representações numéricas. Ele oferece suporte a uma ampla variedade de arquiteturas de modelo, cada uma exigindo um tipo específico de codificador.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `clip_name` | O nome do arquivo do modelo codificador de texto a ser carregado. Este deve ser um arquivo localizado no diretório `ComfyUI/models/text_encoders/`. | STRING | Sim | Lista de arquivos encontrados na pasta `text_encoders` |
+| `clip_name` | O nome do arquivo do modelo codificador de texto a ser carregado. Deve ser um arquivo localizado no diretório `ComfyUI/models/text_encoders/`. | STRING | Sim | Lista de arquivos encontrados na pasta `text_encoders` |
 | `type` | O tipo de arquitetura do modelo sendo carregado. Isso determina qual variante específica de codificador usar (padrão: `"stable_diffusion"`). | COMBO | Sim | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
 | `device` | O dispositivo no qual carregar o modelo. `"default"` usa a GPU se disponível, enquanto `"cpu"` força o carregamento na CPU. Esta é uma opção avançada (padrão: `"default"`). | COMBO | Não | `"default"`<br>`"cpu"` |
 
-### Mapeamentos de tipo para codificador suportados
+### Mapeamentos de Tipo para Codificador Suportados
 
 O parâmetro `type` seleciona o codificador correto para uma determinada arquitetura de modelo. A seguir estão mapeamentos comuns:
 
@@ -21,7 +21,7 @@ O parâmetro `type` seleciona o codificador correto para uma determinada arquite
 | sd3 | t5 xxl / clip-g / clip-l |
 | stable_audio | t5 base |
 | mochi | t5 xxl |
-| cogvideox | t5 xxl (preenchimento de 226 tokens) |
+| cogvideox | t5 xxl (padding de 226 tokens) |
 | cosmos | t5 xxl antigo |
 | lumina2 | gemma 2 2B |
 | wan | umt5 xxl |

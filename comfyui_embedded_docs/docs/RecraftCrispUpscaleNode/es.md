@@ -1,18 +1,18 @@
 # Recraft Crisp Upscale Image
 
-Amplía una imagen de entrada de forma síncrona utilizando la herramienta "crisp upscale", aumentando su resolución y haciéndola más nítida y limpia. Cada imagen del lote de entrada se procesa de forma independiente, y los resultados ampliados se devuelven como un lote.
+Este nodo aumenta la escala de una imagen de forma sincrónica utilizando la herramienta "crisp upscale". Mejora una imagen ráster dada al aumentar su resolución, lo que hace que la imagen sea más nítida y limpia. Cuando se proporciona un lote de imágenes, cada imagen se procesa de forma independiente y los resultados con escala aumentada se devuelven como un lote.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `imagen` | La imagen de entrada que se va a ampliar. Acepta un lote de imágenes. | IMAGE | Sí | — |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `image` | La imagen de entrada que se va a escalar. Acepta un lote de imágenes; cada imagen se procesa de forma independiente. | IMAGE | Sí | — |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
-|------------------|-------------|---------------|
-| `image` | La imagen ampliada con resolución y nitidez mejoradas. Devuelve un lote de imágenes si se proporcionó un lote como entrada. | IMAGE |
+|-------------|-------------|-----------|
+| `image` | La imagen con escala aumentada, con resolución y claridad mejoradas. Devuelve un lote de imágenes si se proporcionó un lote como entrada. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCrispUpscaleNode/es.md)
 

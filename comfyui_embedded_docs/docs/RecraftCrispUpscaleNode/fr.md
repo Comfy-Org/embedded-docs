@@ -1,18 +1,18 @@
 # Recraft Crisp Upscale Image
 
-Upscale une image d'entrée de manière synchrone à l'aide de l'outil « crisp upscale », augmentant sa résolution et la rendant plus nette et plus propre. Chaque image du lot d'entrée est traitée indépendamment, et les résultats suréchantillonnés sont renvoyés sous forme de lot.
+Ce nœud agrandit une image de manière synchrone à l'aide de l'outil « crisp upscale ». Il améliore une image raster donnée en augmentant sa résolution, ce qui rend l'image plus nette et plus propre. Lorsqu'un lot d'images est fourni, chaque image est traitée indépendamment et les résultats agrandis sont renvoyés sous forme de lot.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `image` | L'image d'entrée à suréchantillonner. Accepte un lot d'images. | IMAGE | Oui | — |
+| `image` | L'image d'entrée à agrandir. Accepte un lot d'images ; chaque image est traitée indépendamment. | IMAGE | Oui | — |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `image` | L'image suréchantillonnée avec une résolution et une netteté améliorées. Renvoie un lot d'images si un lot a été fourni en entrée. | IMAGE |
+| `image` | L'image agrandie avec une résolution et une clarté améliorées. Renvoie un lot d'images si un lot a été fourni en entrée. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCrispUpscaleNode/fr.md)
 

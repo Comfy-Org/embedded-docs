@@ -1,19 +1,19 @@
 # LTXVProgramador
 
-El nodo LTXVScheduler genera valores sigma para procesos de muestreo personalizados. Calcula los parámetros del programa de ruido basándose en el número de tokens en el latent de entrada y aplica una transformación sigmoide para crear el programa de muestreo. El nodo puede opcionalmente estirar los sigmas resultantes para que coincidan con un valor terminal especificado.
+El nodo LTXVScheduler genera valores sigma para un proceso de muestreo personalizado. Calcula el programa de ruido a partir del número de tokens en el `latent` proporcionado, o usa un valor predeterminado de 4096 tokens cuando no hay ningún `latent` conectado, y opcionalmente puede estirar los valores sigma para que el valor final coincida con el valor `terminal` especificado.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Necesario | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `pasos` | Número de pasos de muestreo (por defecto: 20) | INT | Sí | 1-10000 |
-| `max_desplazamiento` | Valor máximo de desplazamiento para el cálculo de sigma (por defecto: 2.05) | FLOAT | Sí | 0.0-100.0 |
-| `base_desplazamiento` | Valor base de desplazamiento para el cálculo de sigma (por defecto: 0.95) | FLOAT | Sí | 0.0-100.0 |
-| `estiramiento` | Estira los sigmas para que estén en el rango [terminal, 1] (por defecto: True) | BOOLEAN | Sí | True/False |
-| `terminal` | El valor terminal de los sigmas después del estiramiento (por defecto: 0.1) | FLOAT | Sí | 0.0-0.99 |
-| `latente` | Entrada latent opcional utilizada para calcular el número de tokens para el ajuste de sigma | LATENT | No | - |
+| `steps` | Número de pasos de muestreo (predeterminado: 20) | INT | Sí | 1-10000 |
+| `max_shift` | Valor de desplazamiento máximo utilizado en el cálculo de sigma (predeterminado: 2.05) | FLOAT | Sí | 0.0-100.0 (paso: 0.01) |
+| `base_shift` | Valor de desplazamiento base utilizado en el cálculo de sigma (predeterminado: 0.95) | FLOAT | Sí | 0.0-100.0 (paso: 0.01) |
+| `stretch` | Estira los valores sigma para que estén en el rango [terminal, 1] (predeterminado: True) | BOOLEAN | Sí | True/False |
+| `terminal` | El valor terminal de los valores sigma después del estiramiento (predeterminado: 0.1). Se usa solo cuando `stretch` está habilitado. | FLOAT | Sí | 0.0-0.99 (paso: 0.01) |
+| `latent` | Entrada `latent` opcional utilizada para calcular el recuento de tokens para el ajuste de sigma. Cuando no se proporciona, se usa un recuento de tokens predeterminado de 4096. | LATENT | No | - |
 
-**Nota:** El parámetro `latent` es opcional. Cuando no se proporciona, el nodo utiliza un número de tokens por defecto de 4096 para los cálculos.
+**Nota:** Cuando `stretch` está habilitado, los valores sigma distintos de cero se reescalan para que el último valor sigma distinto de cero sea igual al valor `terminal`.
 
 ## Salidas
 

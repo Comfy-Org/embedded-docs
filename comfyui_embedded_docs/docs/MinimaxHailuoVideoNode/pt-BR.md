@@ -1,17 +1,19 @@
 # MiniMax Hailuo Vídeo
 
+Gera vídeos a partir de prompts de texto usando o modelo MiniMax Hailuo-02. Opcionalmente, você pode fornecer uma imagem inicial para usar como primeiro quadro, o que cria um vídeo que continua a partir dessa imagem.
+
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `texto_prompt` | Prompt de texto para orientar a geração do vídeo. | STRING | Sim | - |
-| `semente` | A semente aleatória usada para criar o ruído (padrão: 0). | INT | Não | 0 a 18446744073709551615 |
-| `imagem_primeiro_quadro` | Imagem opcional para usar como primeiro quadro a fim de gerar um vídeo. | IMAGE | Não | - |
-| `otimizador_de_prompt` | Otimiza o prompt para melhorar a qualidade da geração quando necessário (padrão: True). | BOOLEAN | Não | True<br>False |
-| `duração` | A duração do vídeo de saída em segundos (padrão: 6). | COMBO | Não | 6<br>10 |
-| `resolução` | As dimensões da exibição do vídeo. 1080p é 1920x1080, 768p é 1366x768 (padrão: "768P"). | COMBO | Não | "768P"<br>"1080P" |
+| `prompt_text` | Texto do prompt para orientar a geração do vídeo (padrão: vazio). | STRING | Sim | - |
+| `seed` | A semente aleatória usada para criar o ruído (padrão: 0). | INT | Não | 0 a 18446744073709551615 |
+| `first_frame_image` | Imagem opcional a ser usada como primeiro quadro para gerar um vídeo. | IMAGE | Não | - |
+| `prompt_optimizer` | Otimiza o prompt para melhorar a qualidade da geração quando necessário (padrão: True). | BOOLEAN | Não | True<br>False |
+| `duration` | A duração do vídeo de saída em segundos (padrão: 6). | COMBO | Não | 6<br>10 |
+| `resolution` | As dimensões de exibição do vídeo. 1080p é 1920x1080, 768p é 1366x768 (padrão: "768P"). | COMBO | Não | "768P"<br>"1080P" |
 
-**Observação:** Quando `resolution` estiver definido como "1080P", `duration` fica limitado a 6 segundos. Quando `first_frame_image` não for fornecido, `prompt_text` não deve estar vazio.
+**Observação:** Quando `resolution` está definido como "1080P", `duration` é limitado a 6 segundos. Quando `first_frame_image` não é fornecido, `prompt_text` não deve estar vazio.
 
 ## Saídas
 

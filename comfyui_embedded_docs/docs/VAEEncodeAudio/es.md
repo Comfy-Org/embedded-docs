@@ -1,19 +1,19 @@
 # VAEEncodeAudio
 
-El nodo VAEEncodeAudio convierte datos de audio en una representación latente utilizando un Autoencoder Variacional (VAE). Toma una entrada de audio y la procesa a través del VAE para generar muestras latentes comprimidas que pueden usarse para tareas de generación o manipulación de audio. El nodo remuestrea automáticamente el audio para que coincida con la frecuencia de muestreo esperada del VAE si es necesario antes de codificarlo.
+El nodo VAE Encode Audio convierte datos de audio en una representación latente utilizando un autoencoder variacional (VAE). Procesa el audio de entrada a través del VAE para producir muestras latentes comprimidas que pueden usarse para tareas posteriores de generación o manipulación de audio. Si la frecuencia de muestreo del audio difiere de la frecuencia de muestreo esperada por el VAE, el audio se remuestrea automáticamente antes de la codificación.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `audio` | Los datos de audio a codificar, que contienen la forma de onda y la información de frecuencia de muestreo | AUDIO | Sí | - |
-| `vae` | El modelo de Autoencoder Variacional utilizado para codificar el audio en el espacio latente | VAE | Sí | - |
+| `vae` | El modelo de autoencoder variacional utilizado para codificar el audio en el espacio latente | VAE | Sí | - |
 
-**Nota:** La entrada de audio se remuestrea automáticamente para que coincida con la frecuencia de muestreo esperada por el VAE (predeterminada: 44100 Hz) si la frecuencia de muestreo original difiere de este valor. Si el audio de entrada es `None` (por ejemplo, si el video de origen no tiene pista de audio), el nodo generará un error.
+**Nota:** La entrada de audio se remuestrea automáticamente para coincidir con la frecuencia de muestreo esperada por el VAE (predeterminada: 44100 Hz) si la frecuencia de muestreo original difiere de este valor. Si el audio de entrada es None (por ejemplo, cuando el video de origen no tiene pista de audio), el nodo generará un error.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
 | `LATENT` | La representación de audio codificada en el espacio latente, que contiene muestras comprimidas | LATENT |
 

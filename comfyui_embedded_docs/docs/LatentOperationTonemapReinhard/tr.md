@@ -1,12 +1,12 @@
 # GizliİşlemTonEşlemeReinhard
 
-LatentOperationTonemapReinhard düğümü, latent vektörlere Reinhard ton eşleme uygular. Bu teknik, latent vektörleri normalize eder ve büyüklüklerini ortalama ve standart sapmaya dayalı istatistiksel bir yaklaşımla ayarlar; yoğunluk, bir çarpan parametresiyle kontrol edilir. Bu düğüm şu anda deneysel olarak işaretlenmiştir.
+Bu düğüm, latent vektörlere Reinhard ton eşlemesi uygulayan bir latent işlemi oluşturur. Her latent vektörü normalleştirir, genel büyüklük dağılımını (ortalama ve standart sapma) ölçer ve ardından Reinhard eğrisini kullanarak aşırı büyüklükleri sıkıştırır; genel güç, bir çarpan ile kontrol edilir. Düğüm deneysel olarak işaretlenmiştir (ayrıca "hdr latent" olarak aranabilir).
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `çarpan` | Ton eşleme efektinin yoğunluğunu kontrol eder (varsayılan: 1.0) | FLOAT | Evet | 0.0 ile 100.0 (step 0.01) |
+| `multiplier` | Ton eşleme etkisinin yoğunluğunu kontrol eder (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 100.0 (adım 0.01) |
 
 ## Çıktılar
 

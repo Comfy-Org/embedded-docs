@@ -1,16 +1,23 @@
 # Vista previa de cualquier
 
-PreviewAny convierte cualquier valor de entrada en texto legible para que puedas inspeccionarlo. Las cadenas pasan sin cambios, los números y los booleanos se convierten en texto plano, y otros tipos de datos se serializan a JSON cuando es posible (recurriendo a su forma de cadena simple si la serialización falla). El texto resultante se muestra en la interfaz de usuario y también se devuelve como salida de cadena para su posterior procesamiento.
+PreviewAny convierte cualquier valor de entrada en texto legible para que puedas inspeccionarlo. Las cadenas se conservan sin cambios, los números y booleanos se convierten en texto plano, y otros tipos de datos se serializan a JSON cuando es posible (recurriendo a su forma de cadena simple si la serialización falla). El texto resultante se muestra en la interfaz de usuario y también se devuelve como una salida de tipo cadena para su procesamiento posterior.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `fuente` | Acepta cualquier tipo de dato de entrada para mostrarlo en la vista previa. Si no se proporciona ningún valor, la vista previa muestra 'None'. | ANY | Sí | Cualquier tipo de dato |
+| `source` | Acepta cualquier tipo de datos de entrada para su visualización en la vista previa. Si no se proporciona un valor, la vista previa muestra 'None'. | ANY | Sí | Cualquier tipo de datos |
+
+**Comportamiento de conversión**
+
+- Los valores de tipo STRING se muestran exactamente como se proporcionan.
+- Los valores de tipo INT, FLOAT o BOOLEAN se convierten a texto plano.
+- Cualquier otro valor no vacío se convierte a texto JSON con una indentación de 4 espacios; si esa conversión falla, el nodo recurre a la forma de texto plano del valor. Si eso también falla, la vista previa muestra el mensaje 'source exists, but could not be serialized.'
+- Si no se conecta ningún valor o el valor está vacío, la vista previa muestra 'None'.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
 | `result` | El valor de entrada convertido a formato de texto. El mismo texto también se muestra en la interfaz de usuario. | STRING |
 

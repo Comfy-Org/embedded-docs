@@ -8,10 +8,10 @@ Générez des réponses textuelles avec les modèles Gemini de Google. Fournisse
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `modèle` | Le modèle Gemini utilisé pour générer la réponse. | DYNAMIC_COMBO | Oui | `"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
-| `invite` | Entrée textuelle destinée au modèle. Incluez des instructions détaillées, des questions ou du contexte. Doit contenir au moins un caractère non blanc. (par défaut : "") | STRING | Oui |  |
-| `graine` | Graine d'échantillonnage. Réglez sur 0 pour une graine aléatoire. Une sortie déterministe n'est pas garantie. (par défaut : 42) | INT | Oui | 0 à 2147483647 |
-| `invite système` | Instructions fondamentales qui dictent le comportement du modèle. (par défaut : "") | STRING | Non |  |
+| `model` | Modèle Gemini utilisé pour générer la réponse. | DYNAMIC_COMBO | Oui | `"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `prompt` | Entrée textuelle pour le modèle. Incluez des instructions détaillées, des questions ou du contexte. Doit contenir au moins un caractère autre qu'un espace blanc. (valeur par défaut : "") | STRING | Oui |  |
+| `seed` | Graine pour l'échantillonnage. Définissez sur 0 pour une graine aléatoire. Une sortie déterministe n'est pas garantie. (valeur par défaut : 42) | INT | Oui | 0 à 2147483647 |
+| `system_prompt` | Instructions fondamentales qui dictent le comportement du modèle. (valeur par défaut : "") | STRING | Non |  |
 
 ### Entrées Gemini 3.8 Flash
 
@@ -19,8 +19,8 @@ Ces entrées apparaissent lorsque `model` est défini sur `"Gemini 3.8 Flash"`.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `thinking_level` | Intensité du raisonnement interne du modèle avant de répondre. HIGH améliore la qualité sur les tâches difficiles, mais consomme plus de tokens (de réflexion) et est plus lent. (par défaut : "MEDIUM") | COMBO | Oui | `"LOW"`<br>`"MEDIUM"`<br>`"HIGH"` |
-| `max_output_tokens` | Nombre maximal de tokens à générer, y compris la réflexion interne du modèle. Avec thinking_level HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez-la si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt une fois terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (par défaut : 32768) | INT | Oui | 16 à 65536 |
+| `thinking_level` | Intensité avec laquelle le modèle raisonne en interne avant de répondre. HIGH améliore la qualité sur les tâches difficiles, mais consomme plus de tokens (de réflexion) et est plus lent. (valeur par défaut : "MEDIUM") | COMBO | Oui | `"LOW"`<br>`"MEDIUM"`<br>`"HIGH"` |
+| `max_output_tokens` | Nombre maximal de tokens à générer, y compris la réflexion interne du modèle. Avec thinking_level HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez-la si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt lorsqu'il a terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (valeur par défaut : 32768) | INT | Oui | 16 à 65536 |
 
 **Remarque :** Ce modèle n'expose pas les contrôles d'échantillonnage `temperature` ou `top_p`.
 
@@ -30,10 +30,10 @@ Ces entrées apparaissent lorsque `model` est défini sur `"Gemini 3.7 Flash"`.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `thinking_level` | Intensité du raisonnement interne du modèle avant de répondre. HIGH améliore la qualité sur les tâches difficiles, mais consomme plus de tokens (de réflexion) et est plus lent. (par défaut : "MEDIUM") | COMBO | Oui | `"LOW"`<br>`"MEDIUM"`<br>`"HIGH"` |
-| `temperature` | Contrôle le caractère aléatoire. Une valeur plus faible est plus ciblée/déterministe, une valeur plus élevée est plus créative. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 2.0 |
-| `top_p` | Échantillonnage par noyau (nucleus sampling) : échantillonne à partir du plus petit ensemble de tokens dont la probabilité cumulée atteint top_p. (par défaut : 0.95) | FLOAT | Oui | 0.0 à 1.0 |
-| `max_output_tokens` | Nombre maximal de tokens à générer, y compris la réflexion interne du modèle. Avec thinking_level HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez-la si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt une fois terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (par défaut : 32768) | INT | Oui | 16 à 65536 |
+| `thinking_level` | Intensité avec laquelle le modèle raisonne en interne avant de répondre. HIGH améliore la qualité sur les tâches difficiles, mais consomme plus de tokens (de réflexion) et est plus lent. (valeur par défaut : "MEDIUM") | COMBO | Oui | `"LOW"`<br>`"MEDIUM"`<br>`"HIGH"` |
+| `temperature` | Contrôle l'aléatoire. Une valeur plus faible est plus ciblée/déterministe, une valeur plus élevée est plus créative. (valeur par défaut : 1.0) | FLOAT | Oui | 0.0 à 2.0 |
+| `top_p` | Échantillonnage par noyau (nucleus sampling) : échantillonne à partir du plus petit ensemble de tokens dont la probabilité cumulée atteint top_p. (valeur par défaut : 0.95) | FLOAT | Oui | 0.0 à 1.0 |
+| `max_output_tokens` | Nombre maximal de tokens à générer, y compris la réflexion interne du modèle. Avec thinking_level HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez-la si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt lorsqu'il a terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (valeur par défaut : 32768) | INT | Oui | 16 à 65536 |
 
 ### Entrées Gemini 3.5 Flash
 
@@ -41,10 +41,10 @@ Ces entrées apparaissent lorsque `model` est défini sur `"Gemini 3.5 Flash"`.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `thinking_level` | Intensité du raisonnement interne du modèle avant de répondre. HIGH améliore la qualité sur les tâches difficiles, mais consomme plus de tokens (de réflexion) et est plus lent. (par défaut : "MEDIUM") | COMBO | Oui | `"MINIMAL"`<br>`"LOW"`<br>`"MEDIUM"`<br>`"HIGH"` |
-| `temperature` | Contrôle le caractère aléatoire. Une valeur plus faible est plus ciblée/déterministe, une valeur plus élevée est plus créative. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 2.0 |
-| `top_p` | Échantillonnage par noyau (nucleus sampling) : échantillonne à partir du plus petit ensemble de tokens dont la probabilité cumulée atteint top_p. (par défaut : 0.95) | FLOAT | Oui | 0.0 à 1.0 |
-| `max_output_tokens` | Nombre maximal de tokens à générer, y compris la réflexion interne du modèle. Avec thinking_level HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez-la si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt une fois terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (par défaut : 32768) | INT | Oui | 16 à 65536 |
+| `thinking_level` | Intensité avec laquelle le modèle raisonne en interne avant de répondre. HIGH améliore la qualité sur les tâches difficiles, mais consomme plus de tokens (de réflexion) et est plus lent. (valeur par défaut : "MEDIUM") | COMBO | Oui | `"MINIMAL"`<br>`"LOW"`<br>`"MEDIUM"`<br>`"HIGH"` |
+| `temperature` | Contrôle l'aléatoire. Une valeur plus faible est plus ciblée/déterministe, une valeur plus élevée est plus créative. (valeur par défaut : 1.0) | FLOAT | Oui | 0.0 à 2.0 |
+| `top_p` | Échantillonnage par noyau (nucleus sampling) : échantillonne à partir du plus petit ensemble de tokens dont la probabilité cumulée atteint top_p. (valeur par défaut : 0.95) | FLOAT | Oui | 0.0 à 1.0 |
+| `max_output_tokens` | Nombre maximal de tokens à générer, y compris la réflexion interne du modèle. Avec thinking_level HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez-la si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt lorsqu'il a terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (valeur par défaut : 32768) | INT | Oui | 16 à 65536 |
 
 ### Entrées Gemini 3.1 Pro
 
@@ -52,10 +52,10 @@ Ces entrées apparaissent lorsque `model` est défini sur `"Gemini 3.1 Pro"`.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `thinking_level` | Intensité du raisonnement interne du modèle avant de répondre. HIGH améliore la qualité sur les tâches difficiles, mais consomme plus de tokens (de réflexion) et est plus lent. (par défaut : "HIGH") | COMBO | Oui | `"LOW"`<br>`"HIGH"` |
-| `temperature` | Contrôle le caractère aléatoire. Une valeur plus faible est plus ciblée/déterministe, une valeur plus élevée est plus créative. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 2.0 |
-| `top_p` | Échantillonnage par noyau (nucleus sampling) : échantillonne à partir du plus petit ensemble de tokens dont la probabilité cumulée atteint top_p. (par défaut : 0.95) | FLOAT | Oui | 0.0 à 1.0 |
-| `max_output_tokens` | Nombre maximal de tokens à générer, y compris la réflexion interne du modèle. Avec thinking_level HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez-la si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt une fois terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (par défaut : 32768) | INT | Oui | 16 à 65536 |
+| `thinking_level` | Intensité avec laquelle le modèle raisonne en interne avant de répondre. HIGH améliore la qualité sur les tâches difficiles, mais consomme plus de tokens (de réflexion) et est plus lent. (valeur par défaut : "HIGH") | COMBO | Oui | `"LOW"`<br>`"HIGH"` |
+| `temperature` | Contrôle l'aléatoire. Une valeur plus faible est plus ciblée/déterministe, une valeur plus élevée est plus créative. (valeur par défaut : 1.0) | FLOAT | Oui | 0.0 à 2.0 |
+| `top_p` | Échantillonnage par noyau (nucleus sampling) : échantillonne à partir du plus petit ensemble de tokens dont la probabilité cumulée atteint top_p. (valeur par défaut : 0.95) | FLOAT | Oui | 0.0 à 1.0 |
+| `max_output_tokens` | Nombre maximal de tokens à générer, y compris la réflexion interne du modèle. Avec thinking_level HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez-la si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt lorsqu'il a terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (valeur par défaut : 32768) | INT | Oui | 16 à 65536 |
 
 ### Entrées Gemini 3.1 Flash-Lite
 
@@ -63,14 +63,14 @@ Ces entrées apparaissent lorsque `model` est défini sur `"Gemini 3.1 Flash-Lit
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `thinking_level` | Intensité du raisonnement interne du modèle avant de répondre. HIGH améliore la qualité sur les tâches difficiles, mais consomme plus de tokens (de réflexion) et est plus lent. (par défaut : "LOW") | COMBO | Oui | `"LOW"`<br>`"HIGH"` |
-| `temperature` | Contrôle le caractère aléatoire. Une valeur plus faible est plus ciblée/déterministe, une valeur plus élevée est plus créative. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 2.0 |
-| `top_p` | Échantillonnage par noyau (nucleus sampling) : échantillonne à partir du plus petit ensemble de tokens dont la probabilité cumulée atteint top_p. (par défaut : 0.95) | FLOAT | Oui | 0.0 à 1.0 |
-| `max_output_tokens` | Nombre maximal de tokens à générer, y compris la réflexion interne du modèle. Avec thinking_level HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez-la si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt une fois terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (par défaut : 32768) | INT | Oui | 16 à 65536 |
+| `thinking_level` | Intensité avec laquelle le modèle raisonne en interne avant de répondre. HIGH améliore la qualité sur les tâches difficiles, mais consomme plus de tokens (de réflexion) et est plus lent. (valeur par défaut : "LOW") | COMBO | Oui | `"LOW"`<br>`"HIGH"` |
+| `temperature` | Contrôle l'aléatoire. Une valeur plus faible est plus ciblée/déterministe, une valeur plus élevée est plus créative. (valeur par défaut : 1.0) | FLOAT | Oui | 0.0 à 2.0 |
+| `top_p` | Échantillonnage par noyau (nucleus sampling) : échantillonne à partir du plus petit ensemble de tokens dont la probabilité cumulée atteint top_p. (valeur par défaut : 0.95) | FLOAT | Oui | 0.0 à 1.0 |
+| `max_output_tokens` | Nombre maximal de tokens à générer, y compris la réflexion interne du modèle. Avec thinking_level HIGH, une valeur faible peut ne laisser aucune place à la réponse ; augmentez-la si les réponses reviennent vides ou tronquées. Le modèle s'arrête tôt lorsqu'il a terminé, donc un plafond plus élevé ne coûte rien de plus pour les réponses courtes. (valeur par défaut : 32768) | INT | Oui | 16 à 65536 |
 
 ### Entrées de médias et de fichiers
 
-Les entrées suivantes sont partagées par tous les modèles et apparaissent à côté des entrées spécifiques au modèle.
+Les entrées suivantes sont partagées par tous les modèles et apparaissent à côté des entrées propres à chaque modèle.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
@@ -79,7 +79,7 @@ Les entrées suivantes sont partagées par tous les modèles et apparaissent à 
 | `video` | Emplacement extensible : connectez un clip vidéo (`video_1`). Clip vidéo facultatif à utiliser comme contexte pour le modèle. | VIDEO | Non | 0 à 1 clip |
 | `files` | Fichier(s) facultatif(s) à utiliser comme contexte pour le modèle. Accepte les entrées du nœud Gemini Input Files. | GEMINI_INPUT_FILES | Non |  |
 
-**Remarque :** Lorsque des médias (images, audio ou vidéo) sont joints, le nœud téléverse les 10 premiers éléments multimédias vers le stockage ComfyAPI et les transmet sous forme d'URL ; ce budget d'URL est partagé entre tous les types de médias et est consommé dans l'ordre (vidéo d'abord, puis audio, puis images). Tout média restant est encodé en ligne sous forme de données base64, avec une charge utile en ligne combinée maximale de 18 Mo. Si la charge utile en ligne devait dépasser 18 Mo, le nœud lève une erreur. Le paramètre `prompt` doit contenir au moins un caractère non blanc. Régler `seed` sur 0 demande une graine aléatoire.
+**Remarque :** Lorsque des médias (images, audio ou vidéo) sont joints, le nœud téléverse les 10 premiers éléments multimédias vers le stockage ComfyAPI et les transmet sous forme d'URL ; ce budget d'URL est partagé entre tous les types de médias et est consommé dans l'ordre (vidéo d'abord, puis audio, puis images). Tout média restant est encodé en ligne en données base64, avec une charge utile en ligne combinée maximale de 18 Mo. Si la charge utile en ligne dépasse 18 Mo, le nœud génère une erreur. Le paramètre `prompt` doit contenir au moins un caractère autre qu'un espace blanc. Définir `seed` sur 0 demande une graine aléatoire.
 
 ## Sorties
 

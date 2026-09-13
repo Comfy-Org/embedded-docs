@@ -1,6 +1,6 @@
 # Wan 2.7 Referência para Vídeo
 
-Este nó gera um vídeo com uma pessoa ou objeto com base nos materiais de referência fornecidos. Ele usa o modelo Wan 2.7 para criar vídeos a partir de um prompt de texto, com suporte a performances de personagem único e interações entre múltiplos personagens. Você deve fornecer pelo menos um vídeo de referência ou uma imagem de referência para que a geração funcione.
+Este nó gera um vídeo apresentando uma pessoa ou objeto com base nos materiais de referência fornecidos. Ele usa o modelo Wan 2.7 para criar vídeos a partir de um prompt de texto, com suporte a performances de um único personagem e interações entre vários personagens. Você deve fornecer pelo menos um vídeo de referência ou uma imagem de referência para que a geração funcione.
 
 ## Entradas
 
@@ -9,7 +9,7 @@ Este nó gera um vídeo com uma pessoa ou objeto com base nos materiais de refer
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `model` | O modelo específico a ser usado para geração de vídeo. | DYNAMIC_COMBO | Sim | "wan2.7-r2v" |
-| `seed` | Semente a ser usada para a geração, que ajuda a controlar a aleatoriedade da saída (padrão: 0). | INT | Sim | 0 a 2147483647 |
+| `seed` | Semente a ser usada para a geração, o que ajuda a controlar a aleatoriedade da saída (padrão: 0). | INT | Sim | 0 a 2147483647 |
 | `watermark` | Se deve adicionar uma marca d'água gerada por IA ao resultado (padrão: False). Esta é uma configuração avançada. | BOOLEAN | Sim | True<br>False |
 
 ### Entradas do wan2.7-r2v
@@ -26,18 +26,18 @@ Este nó gera um vídeo com uma pessoa ou objeto com base nos materiais de refer
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `reference_videos` | Slot expansível: conecte até 3 vídeos de referência (slots `video1` a `video3`). Pelo menos um vídeo ou imagem de referência é necessário no total. | VIDEO | Não | 0 a 3 itens |
-| `reference_images` | Slot expansível: conecte até 5 imagens de referência (slots `image1` a `image5`). Pelo menos um vídeo ou imagem de referência é necessário no total. | IMAGE | Não | 0 a 5 itens |
+| `reference_videos` | Slot expansível: conecte até 3 vídeos de referência (slots `video1` a `video3`). É necessário fornecer pelo menos um vídeo ou imagem de referência no total. | VIDEO | Não | 0 a 3 itens |
+| `reference_images` | Slot expansível: conecte até 5 imagens de referência (slots `image1` a `image5`). É necessário fornecer pelo menos um vídeo ou imagem de referência no total. | IMAGE | Não | 0 a 5 itens |
 
 **Restrições importantes:**
 
-* Você deve fornecer pelo menos um vídeo de referência ou imagem de referência nas entradas `reference_videos` ou `reference_images`.
+* Você deve fornecer pelo menos um vídeo de referência ou uma imagem de referência nas entradas `reference_videos` ou `reference_images`. Caso contrário, o nó lança um erro.
 * O número total combinado de vídeos de referência e imagens de referência não pode exceder 5.
 * A entrada `prompt` deve conter pelo menos um personagem.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dados |
+| Nome da saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
 | `output` | O arquivo de vídeo gerado. | VIDEO |
 

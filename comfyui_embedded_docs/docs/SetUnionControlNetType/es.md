@@ -1,15 +1,15 @@
 # EstablecerTipoDeRedDeControlUnion
 
-El nodo SetUnionControlNetType le permite elegir qué tipo de control utiliza una red de control. Toma una red de control existente y crea una copia modificada con el tipo de control seleccionado, dejando la red de control original sin cambios. Cuando se selecciona "auto", el tipo de control almacenado se limpia para que el tipo pueda detectarse automáticamente.
+El nodo SetUnionControlNetType permite elegir qué tipo de control utiliza una red de control. Toma una red de control existente y crea una copia modificada con el tipo de control seleccionado, sin modificar la red de control original. Cuando se selecciona `"auto"`, se borra el tipo de control almacenado para que el tipo pueda detectarse automáticamente.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `controlnet` | La red de control a modificar con una nueva configuración de tipo | CONTROL_NET | Sí | - |
-| `tipo` | El tipo de red de control a aplicar. Use "auto" para la detección automática de tipo o seleccione un tipo de red de control específico de las opciones disponibles (predeterminado: "auto") | COMBO | Sí | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/softedge"`<br>`"canny"`<br>`"scribble"`<br>`"seg"`<br>`"tile"`<br>`"inpaint"`<br>`"lineart"`<br>`"blur"`<br>`"mlsd"`<br>`"normalbae"`<br>`"mask"` |
+| `control_net` | La red de control que se modificará con una nueva configuración de tipo | CONTROL_NET | Sí | - |
+| `type` | El tipo de red de control que se aplicará. Use `"auto"` para la detección automática de tipo o seleccione un tipo de red de control específico entre las opciones disponibles (predeterminado: `"auto"`) | COMBO | Sí | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/softedge"`<br>`"canny"`<br>`"scribble"`<br>`"seg"`<br>`"tile"`<br>`"inpaint"`<br>`"lineart"`<br>`"blur"`<br>`"mlsd"`<br>`"normalbae"`<br>`"mask"` |
 
-Cuando `type` se establece en `"auto"`, el nodo limpia el tipo de control almacenado para que el tipo pueda detectarse automáticamente. Cuando se selecciona un tipo específico, el nodo almacena el tipo de control correspondiente en la red de control copiada.
+Cuando `type` se establece en `"auto"`, el nodo borra el tipo de control almacenado para que el tipo pueda detectarse automáticamente. Cuando se selecciona un tipo específico, el nodo almacena el tipo de control correspondiente en la red de control copiada. La red de control de entrada nunca se modifica en el lugar; en su lugar, se devuelve una copia modificada.
 
 ## Salidas
 
