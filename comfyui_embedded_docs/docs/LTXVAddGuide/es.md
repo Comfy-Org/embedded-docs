@@ -6,13 +6,13 @@ El nodo LTXVAddGuide codifica imágenes o videos de entrada a través de un codi
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `positive` | Entrada de condicionamiento positivo que se modificará con la guía de fotogramas clave. | CONDITIONING | Sí | - |
-| `negative` | Entrada de condicionamiento negativo que se modificará con la guía de fotogramas clave. | CONDITIONING | Sí | - |
+| `positivo` | Entrada de condicionamiento positivo que se modificará con la guía de fotogramas clave. | CONDITIONING | Sí | - |
+| `negativo` | Entrada de condicionamiento negativo que se modificará con la guía de fotogramas clave. | CONDITIONING | Sí | - |
 | `vae` | Modelo VAE utilizado para codificar los fotogramas de imagen/video de entrada. | VAE | Sí | - |
-| `latent` | Secuencia latente de entrada que recibirá los fotogramas de condicionamiento. | LATENT | Sí | - |
-| `image` | Imagen o video para condicionar el video latente. Debe tener 8*n + 1 fotogramas. Si el video no tiene 8*n + 1 fotogramas, se recortará a los 8*n + 1 fotogramas más cercanos. | IMAGE | Sí | - |
-| `frame_idx` | Índice de fotograma para iniciar el condicionamiento. Para imágenes de un solo fotograma o videos con 1-8 fotogramas, cualquier valor de frame_idx es aceptable. Para videos con 9+ fotogramas, frame_idx debe ser divisible por 8; de lo contrario, se redondeará hacia abajo al múltiplo de 8 más cercano. Los valores negativos se cuentan desde el final del video. Predeterminado: 0. | INT | Sí | -9999 a 9999 |
-| `strength` | Fuerza de la influencia del condicionamiento, donde 1.0 aplica condicionamiento completo y 0.0 no aplica condicionamiento. Predeterminado: 1.0. | FLOAT | Sí | 0.0 a 10.0 |
+| `latente` | Secuencia latente de entrada que recibirá los fotogramas de condicionamiento. | LATENT | Sí | - |
+| `imagen` | Imagen o video para condicionar el video latente. Debe tener 8*n + 1 fotogramas. Si el video no tiene 8*n + 1 fotogramas, se recortará a los 8*n + 1 fotogramas más cercanos. | IMAGE | Sí | - |
+| `indice_fotograma` | Índice de fotograma para iniciar el condicionamiento. Para imágenes de un solo fotograma o videos con 1-8 fotogramas, cualquier valor de frame_idx es aceptable. Para videos con 9+ fotogramas, frame_idx debe ser divisible por 8; de lo contrario, se redondeará hacia abajo al múltiplo de 8 más cercano. Los valores negativos se cuentan desde el final del video. Predeterminado: 0. | INT | Sí | -9999 a 9999 |
+| `fuerza` | Fuerza de la influencia del condicionamiento, donde 1.0 aplica condicionamiento completo y 0.0 no aplica condicionamiento. Predeterminado: 1.0. | FLOAT | Sí | 0.0 a 10.0 |
 | `attention_mask` | Máscara espacial opcional en el espacio de píxeles. Controla la influencia del condicionamiento por región mediante auto-atención, multiplicada por la fuerza. | MASK | No | - |
 | `iclora_parameters` | Parámetros IC-LoRA opcionales de un nodo Get IC-LoRA Parameters. Se utilizan para ajustar el procesamiento de la guía según lo requieran ciertas IC-LoRA (por ejemplo, aquellas con un reference_downscale_factor > 1). Cuando se encadenan, cada LTXVAddGuide utiliza solo los parámetros conectados a él. | IC_LORA_PARAMETERS | No | - |
 

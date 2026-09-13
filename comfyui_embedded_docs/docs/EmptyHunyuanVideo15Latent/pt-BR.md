@@ -6,10 +6,10 @@ This node creates an empty latent tensor specifically formatted for use with the
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `width` | A largura do quadro de vídeo em pixels. | INT | Sim | - |
-| `height` | A altura do quadro de vídeo em pixels. | INT | Sim | - |
-| `length` | O número de quadros na sequência de vídeo. | INT | Sim | - |
-| `batch_size` | O número de amostras de vídeo a serem geradas em um lote (padrão: 1). | INT | Não | - |
+| `largura` | A largura do quadro de vídeo em pixels. | INT | Sim | - |
+| `altura` | A altura do quadro de vídeo em pixels. | INT | Sim | - |
+| `duração` | O número de quadros na sequência de vídeo. | INT | Sim | - |
+| `tamanho_do_lote` | O número de amostras de vídeo a serem geradas em um lote (padrão: 1). | INT | Não | - |
 
 **Nota:** As dimensões espaciais do tensor latente gerado são calculadas dividindo-se os valores de entrada `width` e `height` por 16 (este nó usa um fator de escala espacial de 16 em vez de 8). A dimensão temporal (quadros) é calculada como `((length - 1) // 4) + 1`. Esses cálculos usam divisão inteira, portanto `width` e `height` devem ser múltiplos de 16 para evitar truncamento.
 

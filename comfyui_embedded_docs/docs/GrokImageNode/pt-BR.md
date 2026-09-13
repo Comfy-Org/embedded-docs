@@ -11,8 +11,8 @@ O nó Grok Image gera uma ou mais imagens a partir de uma descrição de texto u
 | `aspect_ratio` | A proporção largura-altura desejada para a imagem gerada. | COMBO | Sim | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
 | `number_of_images` | Número de imagens a gerar (padrão: 1). | INT | Sim | 1 a 10 |
 | `seed` | Semente para determinar se o nó deve ser reexecutado; os resultados reais são não determinísticos independentemente da semente (padrão: 0). | INT | Sim | 0 a 2147483647 |
-| `resolution` | A resolução de saída desejada para as imagens geradas (padrão: "1K"). | COMBO | Não | `"1K"`<br>`"2K"` |
-| `quality` | Nível de qualidade, suportado apenas pelo modelo `grok-imagine-image-2.0` (padrão: "medium"; "low" é uma das opções disponíveis). Para todos os outros modelos, esta configuração é ignorada. | COMBO | Não | Várias opções disponíveis |
+| `resolução` | A resolução de saída desejada para as imagens geradas (padrão: "1K"). | COMBO | Não | `"1K"`<br>`"2K"` |
+| `qualidade` | Nível de qualidade, suportado apenas pelo modelo `grok-imagine-image-2.0` (padrão: "medium"; "low" é uma das opções disponíveis). Para todos os outros modelos, esta configuração é ignorada. | COMBO | Não | Várias opções disponíveis |
 
 **Observação:** O parâmetro `seed` é usado principalmente para controlar quando o nó é reexecutado dentro de um fluxo de trabalho. Devido à natureza do serviço externo de IA, as imagens geradas não serão reproduzíveis ou idênticas entre execuções, mesmo com uma semente idêntica.
 

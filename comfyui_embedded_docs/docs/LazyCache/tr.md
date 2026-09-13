@@ -7,10 +7,10 @@ LazyCache, örnekleme sırasında önbellekleme ekleyerek hesaplamayı azaltan d
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | LazyCache'in ekleneceği model. | MODEL | Evet | - |
-| `reuse_threshold` | Önbelleğe alınmış adımların yeniden kullanılması için eşik. Varsayılan: 0.2. | FLOAT | Evet | 0.0 - 3.0 (adım: 0.01) |
-| `start_percent` | LazyCache kullanımının başlatılacağı göreli örnekleme adımı. Varsayılan: 0.15. | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
-| `end_percent` | LazyCache kullanımının sonlandırılacağı göreli örnekleme adımı. Varsayılan: 0.95. | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
-| `verbose` | Ayrıntılı bilgilerin günlüğe kaydedilip kaydedilmeyeceği. Varsayılan: False. | BOOLEAN | Evet | - |
+| `yeniden kullanım eşiği` | Önbelleğe alınmış adımların yeniden kullanılması için eşik. Varsayılan: 0.2. | FLOAT | Evet | 0.0 - 3.0 (adım: 0.01) |
+| `başlangıç_yüzdesi` | LazyCache kullanımının başlatılacağı göreli örnekleme adımı. Varsayılan: 0.15. | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
+| `bitiş_yüzdesi` | LazyCache kullanımının sonlandırılacağı göreli örnekleme adımı. Varsayılan: 0.95. | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
+| `ayrıntılı` | Ayrıntılı bilgilerin günlüğe kaydedilip kaydedilmeyeceği. Varsayılan: False. | BOOLEAN | Evet | - |
 
 Not: `reuse_threshold`, `start_percent`, `end_percent` ve `verbose` gelişmiş girdiler olarak işaretlenmiştir.
 

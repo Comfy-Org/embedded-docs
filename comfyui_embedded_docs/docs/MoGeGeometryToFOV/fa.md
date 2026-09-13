@@ -7,8 +7,8 @@
 | پارامتر | توضیحات | نوع داده | الزامی | محدوده |
 |-----------|-------------|-----------|----------|-------|
 | `moge_geometry` | شیء هندسه MoGe. باید شامل یک ماتریس پارامترهای درونی و حداقل یکی از داده‌های `image`، `points` یا `depth` باشد؛ از این داده‌ها برای خواندن ارتفاع پیکسلی جهت تبدیل فاصله کانونی استفاده می‌شود. | MOGE_GEOMETRY | بله | — |
-| `axis` | محوری که FOV در راستای آن محاسبه می‌شود: "vertical" (fov_y)، "horizontal" (fov_x) یا "diagonal" (پیش‌فرض: "vertical"). | COMBO | بله | "vertical"<br>"horizontal"<br>"diagonal" |
-| `unit` | واحد خروجی FOV (پیش‌فرض: "degrees"). | COMBO | بله | "degrees"<br>"radians" |
+| `محور` | محوری که FOV در راستای آن محاسبه می‌شود: "vertical" (fov_y)، "horizontal" (fov_x) یا "diagonal" (پیش‌فرض: "vertical"). | COMBO | بله | "vertical"<br>"horizontal"<br>"diagonal" |
+| `واحد` | واحد خروجی FOV (پیش‌فرض: "degrees"). | COMBO | بله | "degrees"<br>"radians" |
 
 توجه: اگر `moge_geometry` هیچ پارامتر درونی نداشته باشد (هندسه پانوراما هیچ‌کدام را ندارد) یا اگر هیچ‌یک از داده‌های `image`، `points` یا `depth` را شامل نشود، گره خطا می‌دهد.
 

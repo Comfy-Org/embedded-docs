@@ -6,7 +6,7 @@ El nodo Custom Combo te permite definir tu propia lista de opciones de texto par
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `choice` | La opción de texto seleccionada del menú desplegable personalizado. La lista de opciones disponibles la define el usuario en la interfaz frontend del nodo. | COMBO | Sí | Definido por el usuario |
+| `elección` | La opción de texto seleccionada del menú desplegable personalizado. La lista de opciones disponibles la define el usuario en la interfaz frontend del nodo. | COMBO | Sí | Definido por el usuario |
 | `index` | Un valor entero que se puede usar para especificar un índice. Predeterminado: 0. | INT | No | Cualquier entero (predeterminado: 0) |
 
 **Nota:** La validación de las entradas de este nodo está deshabilitada intencionalmente. Esto te permite escribir cualquier opción de texto personalizada en el frontend sin que el backend verifique si tu selección coincide con una lista predefinida. Los widgets distintos del menú desplegable combo están totalmente definidos en el frontend. Este nodo está marcado como experimental.

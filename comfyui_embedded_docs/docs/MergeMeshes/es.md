@@ -6,7 +6,7 @@ MergeMeshes combina múltiples entradas de malla en una sola malla al apilar sus
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `meshes` | Ranura ampliable: conecta de 2 a 50 objetos de malla (nombrados `mesh_1`, `mesh_2`, ..., `mesh_50`). Todas las mallas conectadas se fusionan en una única malla de salida. | MESH | Sí | 2 a 50 mallas |
+| `mallas` | Ranura ampliable: conecta de 2 a 50 objetos de malla (nombrados `mesh_1`, `mesh_2`, ..., `mesh_50`). Todas las mallas conectadas se fusionan en una única malla de salida. | MESH | Sí | 2 a 50 mallas |
 
 **Nota:** Se debe proporcionar al menos una malla; de lo contrario, el nodo genera un error. Solo se utiliza el primer elemento de malla del lote de cada malla de entrada. Las mallas de entrada se mueven a la CPU antes de fusionarse. Si alguna malla de entrada tiene datos UV, la salida incluye UVs y las mallas sin UVs reciben valores UV rellenos de ceros. Si alguna malla de entrada tiene colores de vértices, la salida incluye colores de vértices; las mallas sin colores reciben colores blancos (valor 1), y los canales de color se rellenan hasta el mayor número de canales encontrado entre las entradas. Solo se conserva la textura de la primera entrada que proporcione una; las texturas adicionales se descartan.
 

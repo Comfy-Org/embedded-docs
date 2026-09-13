@@ -8,8 +8,8 @@ O nó Remove Background gera uma máscara de primeiro plano que separa o assunto
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `bg_removal_model` | Modelo de remoção de fundo usado para gerar a máscara | BACKGROUND_REMOVAL_MODEL | Sim | N/A |
-| `image` | Imagem de entrada da qual remover o fundo | IMAGE | Sim | N/A |
+| `modelo_remoção_fundo` | Modelo de remoção de fundo usado para gerar a máscara | BACKGROUND_REMOVAL_MODEL | Sim | N/A |
+| `imagem` | Imagem de entrada da qual remover o fundo | IMAGE | Sim | N/A |
 
 ## Saídas
 

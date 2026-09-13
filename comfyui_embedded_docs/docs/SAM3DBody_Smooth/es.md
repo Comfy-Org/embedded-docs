@@ -7,9 +7,9 @@ Smooth SAM3D Body Pose Data reduce el jitter entre fotogramas en una secuencia d
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|----------|-------|
 | `mhr_pose_data` | La secuencia de datos de pose MHR que se va a suavizar, que contiene parámetros del modelo, parámetros de forma, parámetros de expresión, disposición de puntos clave MHR70 y datos de malla relacionados. | MHR_POSE_DATA | Sí | — |
-| `strength` | Fuerza de suavizado. 0 = sin procesar, 1 = suavizado. (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso 0.05) |
-| `method` | gaussian: promedio ponderado simétrico, el mejor suavizador de propósito general.<br>savgol: ajuste polinomial deslizante, conserva picos pronunciados. (predeterminado: "savgol") | COMBO | Sí | "gaussian"<br>"savgol" |
-| `window` | Ventana temporal en fotogramas (valores impares). (predeterminado: 7) | INT | Sí | 1 a 51 (valores impares, paso 2) |
+| `intensidad` | Fuerza de suavizado. 0 = sin procesar, 1 = suavizado. (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso 0.05) |
+| `método` | gaussian: promedio ponderado simétrico, el mejor suavizador de propósito general.<br>savgol: ajuste polinomial deslizante, conserva picos pronunciados. (predeterminado: "savgol") | COMBO | Sí | "gaussian"<br>"savgol" |
+| `ventana` | Ventana temporal en fotogramas (valores impares). (predeterminado: 7) | INT | Sí | 1 a 51 (valores impares, paso 2) |
 | `rotation_threshold_degrees` | Desactiva el suavizado para esta tasa de rotación de la raíz (grados/fotograma) para conservar giros rápidos. 30° se adapta a la mayoría del contenido; los valores bajos podrían desactivar el suavizado en jitter ordinario y afectar silenciosamente la calidad. 0 = desactivar. (predeterminado: 30.0) | FLOAT | Sí | 0.0 a 90.0 (paso 1.0) |
 
 Nota: Cuando `strength` es 0.0 o menor, o `window` es 1 o menor, el nodo devuelve los datos de entrada sin cambios. La entrada debe contener al menos 2 fotogramas y datos de puntos clave; de lo contrario, el nodo devuelve los datos de entrada sin cambios. Cuando `rotation_threshold_degrees` es 0.0, el mecanismo de reducción del suavizado basado en rotación se desactiva.

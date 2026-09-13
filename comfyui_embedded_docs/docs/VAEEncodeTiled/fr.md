@@ -8,10 +8,10 @@ VAEEncodeTiled traite les images en les divisant en tuiles plus petites et en le
 | --- | --- | --- | --- | --- |
 | `pixels` | Les données d'image d'entrée à encoder. | IMAGE | Oui | - |
 | `vae` | Le modèle d'autoencodeur variationnel utilisé pour l'encodage. | VAE | Oui | - |
-| `tile_size` | La taille de chaque tuile pour le traitement spatial (par défaut : 512). Paramètre avancé. | INT | Oui | 64-4096 (pas : 64) |
-| `overlap` | La quantité de chevauchement entre les tuiles adjacentes (par défaut : 64). Paramètre avancé. | INT | Oui | 0-4096 (pas : 32) |
-| `temporal_size` | Utilisé uniquement pour les VAE vidéo : nombre d'images à encoder à la fois (par défaut : 64). Paramètre avancé. | INT | Oui | 8-4096 (pas : 4) |
-| `temporal_overlap` | Utilisé uniquement pour les VAE vidéo : nombre d'images à chevaucher (par défaut : 8). Paramètre avancé. | INT | Oui | 4-4096 (pas : 4) |
+| `taille_de_tuile` | La taille de chaque tuile pour le traitement spatial (par défaut : 512). Paramètre avancé. | INT | Oui | 64-4096 (pas : 64) |
+| `chevauchement` | La quantité de chevauchement entre les tuiles adjacentes (par défaut : 64). Paramètre avancé. | INT | Oui | 0-4096 (pas : 32) |
+| `taille_temporelle` | Utilisé uniquement pour les VAE vidéo : nombre d'images à encoder à la fois (par défaut : 64). Paramètre avancé. | INT | Oui | 8-4096 (pas : 4) |
+| `chevauchement_temporel` | Utilisé uniquement pour les VAE vidéo : nombre d'images à chevaucher (par défaut : 8). Paramètre avancé. | INT | Oui | 4-4096 (pas : 4) |
 
 **Remarque :** Les paramètres `temporal_size` et `temporal_overlap` ne sont pertinents que lors de l'utilisation de VAE vidéo et n'ont aucun effet sur les VAE d'image standard.
 

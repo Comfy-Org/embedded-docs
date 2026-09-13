@@ -6,11 +6,11 @@ SamplerCustomAdvanced düğümü, özel gürültü, yönlendirme ve örnekleme y
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `noise` | Örnekleme süreci için başlangıç gürültü desenini ve tohumu sağlayan gürültü üreteci | NOISE | Evet | - |
-| `guider` | Örnekleme sürecini istenen çıktıya doğru yönlendiren yönlendirme modeli | GUIDER | Evet | - |
-| `sampler` | Üretim sırasında latent uzayda nasıl ilerleneceğini tanımlayan örnekleme algoritması | SAMPLER | Evet | - |
-| `sigmas` | Örnekleme adımları boyunca gürültü seviyelerini kontrol eden sigma çizelgesi | SIGMAS | Evet | - |
-| `latent_image` | Örnekleme için başlangıç noktası olarak hizmet eden başlangıç latent temsili. Seçmeli gürültüden arındırma için isteğe bağlı bir `noise_mask` anahtarını ve gelişmiş latent işleme için isteğe bağlı `downscale_ratio_spacial` ve `downscale_ratio_temporal` anahtarlarını destekler | LATENT | Evet | - |
+| `gürültü` | Örnekleme süreci için başlangıç gürültü desenini ve tohumu sağlayan gürültü üreteci | NOISE | Evet | - |
+| `rehber` | Örnekleme sürecini istenen çıktıya doğru yönlendiren yönlendirme modeli | GUIDER | Evet | - |
+| `örnekleyici` | Üretim sırasında latent uzayda nasıl ilerleneceğini tanımlayan örnekleme algoritması | SAMPLER | Evet | - |
+| `sigmalar` | Örnekleme adımları boyunca gürültü seviyelerini kontrol eden sigma çizelgesi | SIGMAS | Evet | - |
+| `gizli_görüntü` | Örnekleme için başlangıç noktası olarak hizmet eden başlangıç latent temsili. Seçmeli gürültüden arındırma için isteğe bağlı bir `noise_mask` anahtarını ve gelişmiş latent işleme için isteğe bağlı `downscale_ratio_spacial` ve `downscale_ratio_temporal` anahtarlarını destekler | LATENT | Evet | - |
 
 ## Çıktılar
 

@@ -6,12 +6,12 @@ Le nœud Dual CFG Guider crée un système de guidage pour l'échantillonnage qu
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle à utiliser pour le guidage | MODEL | Oui | - |
+| `modèle` | Le modèle à utiliser pour le guidage | MODEL | Oui | - |
 | `cond1` | La première entrée de conditionnement positive | CONDITIONING | Oui | - |
 | `cond2` | La deuxième entrée de conditionnement, utilisée comme référence entre le premier conditionnement positif et le conditionnement négatif | CONDITIONING | Oui | - |
-| `negative` | L'entrée de conditionnement négative | CONDITIONING | Oui | - |
+| `négatif` | L'entrée de conditionnement négative | CONDITIONING | Oui | - |
 | `cfg_conds` | Échelle de guidage appliquée au premier conditionnement positif (valeur par défaut : 8.0) | FLOAT | Oui | 0.0 - 100.0 |
-| `cfg_cond2_negative` | Échelle de guidage appliquée entre le deuxième conditionnement et le conditionnement négatif (valeur par défaut : 8.0) | FLOAT | Oui | 0.0 - 100.0 |
+| `cfg_cond2_négatif` | Échelle de guidage appliquée entre le deuxième conditionnement et le conditionnement négatif (valeur par défaut : 8.0) | FLOAT | Oui | 0.0 - 100.0 |
 | `style` | Le style de guidage à appliquer (valeur par défaut : « regular »). Lorsqu'il est défini sur « nested », le guidage est appliqué de manière imbriquée | COMBO | Oui | "regular"<br>"nested" |
 
 Remarque : dans le style `regular`, `cfg_cond2_negative` est appliqué entre `cond2` et `negative`, et `cfg_conds` est appliqué entre `cond1` et `cond2`. Dans le style `nested`, `cfg_conds` est d'abord appliqué entre `cond1` et `cond2`, puis la prédiction résultante est guidée à l'écart de `negative` à l'aide de `cfg_cond2_negative`.

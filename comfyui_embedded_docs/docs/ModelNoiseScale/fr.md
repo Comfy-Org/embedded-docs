@@ -6,8 +6,8 @@ Ce nœud ajuste l’échelle de bruit utilisée lors de l’échantillonnage du 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle auquel appliquer l’ajustement de l’échelle de bruit. | MODEL | Oui | - |
-| `noise_scale` | Échelle de bruit d’entraînement absolue. Par exemple HiDream-O1 base : 8.0, dev : 7.5. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 64.0 (pas : 0.01) |
+| `modèle` | Le modèle auquel appliquer l’ajustement de l’échelle de bruit. | MODEL | Oui | - |
+| `échelle_bruit` | Échelle de bruit d’entraînement absolue. Par exemple HiDream-O1 base : 8.0, dev : 7.5. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 64.0 (pas : 0.01) |
 
 ## Sorties
 

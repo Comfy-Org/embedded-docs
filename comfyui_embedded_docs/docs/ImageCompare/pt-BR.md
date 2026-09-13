@@ -8,8 +8,8 @@ O nó Image Compare fornece uma interface visual para comparar duas imagens lado
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `image_a` | A primeira imagem a ser comparada. | IMAGE | Não | - |
-| `image_b` | A segunda imagem a ser comparada. | IMAGE | Não | - |
+| `imagem_a` | A primeira imagem a ser comparada. | IMAGE | Não | - |
+| `imagem_b` | A segunda imagem a ser comparada. | IMAGE | Não | - |
 | `compare_view` | O controle que habilita a visualização de comparação com controle deslizante na interface. | IMAGECOMPARE | Sim | - |
 
 **Observação:** Este nó é um nó de saída. Embora `image_a` e `image_b` sejam opcionais, pelo menos uma imagem deve ser fornecida para que o nó tenha um efeito visível. O nó exibirá uma área vazia para qualquer entrada de imagem que não estiver conectada. Cada lote de imagens fornecido é salvo em armazenamento temporário sob os prefixos `comfy.compare.a` e `comfy.compare.b`, respectivamente, e então exibido na visualização com controle deslizante.

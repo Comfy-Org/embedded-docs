@@ -6,8 +6,8 @@ Este nodo selecciona la implementación de atención densa para un modelo, clona
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `model` | El modelo al que se aplicará el parche. | MODEL | Sí |  |
-| `attention` | El backend de atención densa que se aplicará. La atención de Comfy Kitchen usa atención INT8 cuantizada y solo está disponible en GPU de Nvidia y AMD. Predeterminado: "pytorch attention". Si el backend seleccionado no está disponible, se usa la atención de PyTorch como respaldo. | COMBO | Sí | "pytorch attention"<br>"comfy kitchen attention" |
+| `modelo` | El modelo al que se aplicará el parche. | MODEL | Sí |  |
+| `atención` | El backend de atención densa que se aplicará. La atención de Comfy Kitchen usa atención INT8 cuantizada y solo está disponible en GPU de Nvidia y AMD. Predeterminado: "pytorch attention". Si el backend seleccionado no está disponible, se usa la atención de PyTorch como respaldo. | COMBO | Sí | "pytorch attention"<br>"comfy kitchen attention" |
 
 Nota: La opción "comfy kitchen attention" solo se muestra cuando el módulo de atención INT8 de Comfy Kitchen está disponible en el entorno actual.
 

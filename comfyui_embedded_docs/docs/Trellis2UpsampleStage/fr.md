@@ -6,8 +6,8 @@ Ce nœud suréchantillonne un latent de forme en résolution 512 en coordonnées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `positive` | Le conditionnement positif auquel sont attachées les métadonnées de forme de l'étape de suréchantillonnage. | CONDITIONING | Oui | |
-| `negative` | Le conditionnement négatif auquel sont attachées les métadonnées de forme de l'étape de suréchantillonnage. | CONDITIONING | Oui | |
+| `positif` | Le conditionnement positif auquel sont attachées les métadonnées de forme de l'étape de suréchantillonnage. | CONDITIONING | Oui | |
+| `négatif` | Le conditionnement négatif auquel sont attachées les métadonnées de forme de l'étape de suréchantillonnage. | CONDITIONING | Oui | |
 | `shape_latent` | Le latent de forme en résolution 512 produit par le premier KSampler de l'étape de forme. | LATENT | Oui | |
 | `vae` | Le VAE Trellis2 utilisé pour décoder le latent de forme en coordonnées sparse de haute résolution. | VAE | Oui | |
 | `target_resolution` | Résolution voxel de la forme suréchantillonnée. Plus élevé = plus de détails, plus de VRAM. Par défaut : 1024. | INT | Oui | 1024 - 2048 (pas 128) |

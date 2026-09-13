@@ -6,9 +6,9 @@ CLIPLoader düğümü, bir metin kodlayıcı modelini (CLIP, T5 veya benzeri) bi
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|---------|--------|
-| `clip_name` | Yüklenecek metin kodlayıcı modelinin dosya adı. Bu, `ComfyUI/models/text_encoders/` dizininde bulunan bir dosya olmalıdır. | STRING | Evet | `text_encoders` klasöründe bulunan dosyaların listesi |
-| `type` | Yüklenen modelin mimari türü. Kullanılacak belirli kodlayıcı varyantını belirler (varsayılan: `"stable_diffusion"`). | COMBO | Evet | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
-| `device` | Modelin yükleneceği aygıt. `"default"` varsa GPU'yu kullanır, `"cpu"` ise CPU'da yüklemeye zorlar. Bu gelişmiş bir seçenektir (varsayılan: `"default"`). | COMBO | Hayır | `"default"`<br>`"cpu"` |
+| `clip_adı` | Yüklenecek metin kodlayıcı modelinin dosya adı. Bu, `ComfyUI/models/text_encoders/` dizininde bulunan bir dosya olmalıdır. | STRING | Evet | `text_encoders` klasöründe bulunan dosyaların listesi |
+| `tür` | Yüklenen modelin mimari türü. Kullanılacak belirli kodlayıcı varyantını belirler (varsayılan: `"stable_diffusion"`). | COMBO | Evet | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
+| `cihaz` | Modelin yükleneceği aygıt. `"default"` varsa GPU'yu kullanır, `"cpu"` ise CPU'da yüklemeye zorlar. Bu gelişmiş bir seçenektir (varsayılan: `"default"`). | COMBO | Hayır | `"default"`<br>`"cpu"` |
 
 ### Desteklenen Tür-Kodlayıcı Eşlemeleri
 

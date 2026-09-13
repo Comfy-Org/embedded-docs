@@ -6,15 +6,15 @@ El nodo WanHuMoImageToVideo prepara datos de condicionamiento y un video latente
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `positive` | Entrada de condicionamiento positivo que guía la generación de video hacia el contenido deseado. | CONDITIONING | Sí | - |
-| `negative` | Entrada de condicionamiento negativo que aleja la generación de video del contenido no deseado. | CONDITIONING | Sí | - |
+| `positivo` | Entrada de condicionamiento positivo que guía la generación de video hacia el contenido deseado. | CONDITIONING | Sí | - |
+| `negativo` | Entrada de condicionamiento negativo que aleja la generación de video del contenido no deseado. | CONDITIONING | Sí | - |
 | `vae` | Modelo VAE utilizado para codificar imágenes de referencia en el espacio latente. | VAE | Sí | - |
-| `width` | Ancho de los fotogramas del video de salida en píxeles. Predeterminado: 832. | INT | Sí | 16 a MAX_RESOLUTION, paso 16 |
-| `height` | Alto de los fotogramas del video de salida en píxeles. Predeterminado: 480. | INT | Sí | 16 a MAX_RESOLUTION, paso 16 |
-| `length` | Número de fotogramas en la secuencia de video generada. Predeterminado: 97. | INT | Sí | 1 a MAX_RESOLUTION, paso 4 |
-| `batch_size` | Número de secuencias de video a generar simultáneamente. Predeterminado: 1. | INT | Sí | 1 a 4096 |
-| `audio_encoder_output` | Datos opcionales de codificación de audio que pueden influir en la generación de video según el contenido de audio. | AUDIOENCODEROUTPUT | No | - |
-| `ref_image` | Imagen de referencia opcional utilizada para guiar el estilo y el contenido de la generación de video. Solo se utiliza la primera imagen del lote. | IMAGE | No | - |
+| `ancho` | Ancho de los fotogramas del video de salida en píxeles. Predeterminado: 832. | INT | Sí | 16 a MAX_RESOLUTION, paso 16 |
+| `alto` | Alto de los fotogramas del video de salida en píxeles. Predeterminado: 480. | INT | Sí | 16 a MAX_RESOLUTION, paso 16 |
+| `longitud` | Número de fotogramas en la secuencia de video generada. Predeterminado: 97. | INT | Sí | 1 a MAX_RESOLUTION, paso 4 |
+| `tamaño_lote` | Número de secuencias de video a generar simultáneamente. Predeterminado: 1. | INT | Sí | 1 a 4096 |
+| `salida_codificador_audio` | Datos opcionales de codificación de audio que pueden influir en la generación de video según el contenido de audio. | AUDIOENCODEROUTPUT | No | - |
+| `imagen_referencia` | Imagen de referencia opcional utilizada para guiar el estilo y el contenido de la generación de video. Solo se utiliza la primera imagen del lote. | IMAGE | No | - |
 
 **Nota:** Cuando se proporciona una imagen de referencia, la primera imagen del lote se escala hacia arriba al `width` y `height` solicitados mediante interpolación bilineal y se codifica con el VAE. Ese latente de referencia se adjunta al condicionamiento positivo, mientras que un latente lleno de ceros de la misma forma se adjunta al condicionamiento negativo. Cuando se proporciona `audio_encoder_output`, los embeddings de audio se interpolan y se adjuntan al condicionamiento positivo, mientras que un embedding de audio lleno de ceros se adjunta al condicionamiento negativo. Si se omite cualquiera de las entradas opcionales, se utilizan tensores de marcador de posición llenos de ceros: un latente de referencia lleno de ceros de forma `[batch_size, 16, 1, height // 8, width // 8]` y/o embeddings de audio llenos de ceros de forma `[batch_size, latent_t + 1, 8, 5, 1280]`, donde `latent_t = ((length - 1) // 4) + 1`.
 

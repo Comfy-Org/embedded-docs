@@ -11,8 +11,8 @@ Le sélecteur `moderation` révèle des options de modération supplémentaires 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image d'entrée dont l'arrière-plan sera supprimé. | IMAGE | Oui | - |
-| `moderation` | Paramètres de modération. Lorsqu'ils sont définis sur `"true"`, des options de modération supplémentaires deviennent disponibles. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
-| `seed` | Le paramètre `seed` contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine. Valeur par défaut : `0`. | INT | Oui | 0 à 2147483647 |
+| `modération` | Paramètres de modération. Lorsqu'ils sont définis sur `"true"`, des options de modération supplémentaires deviennent disponibles. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
+| `graine` | Le paramètre `seed` contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine. Valeur par défaut : `0`. | INT | Oui | 0 à 2147483647 |
 
 ### Entrées lorsque `moderation` est défini sur `"true"`
 

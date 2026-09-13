@@ -6,8 +6,8 @@ SetUnionControlNetType düğümü, bir kontrol ağının hangi kontrol türünü
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `control_net` | Yeni bir tür ayarıyla değiştirilecek kontrol ağı | CONTROL_NET | Evet | - |
-| `type` | Uygulanacak kontrol ağı türü. Otomatik tür algılama için "auto" kullanın veya mevcut seçeneklerden belirli bir kontrol ağı türü seçin (varsayılan: "auto") | COMBO | Evet | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/softedge"`<br>`"canny"`<br>`"scribble"`<br>`"seg"`<br>`"tile"`<br>`"inpaint"`<br>`"lineart"`<br>`"blur"`<br>`"mlsd"`<br>`"normalbae"`<br>`"mask"` |
+| `kontrol_ağı` | Yeni bir tür ayarıyla değiştirilecek kontrol ağı | CONTROL_NET | Evet | - |
+| `tür` | Uygulanacak kontrol ağı türü. Otomatik tür algılama için "auto" kullanın veya mevcut seçeneklerden belirli bir kontrol ağı türü seçin (varsayılan: "auto") | COMBO | Evet | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/softedge"`<br>`"canny"`<br>`"scribble"`<br>`"seg"`<br>`"tile"`<br>`"inpaint"`<br>`"lineart"`<br>`"blur"`<br>`"mlsd"`<br>`"normalbae"`<br>`"mask"` |
 
 `type` `"auto"` olarak ayarlandığında, düğüm türün otomatik olarak algılanabilmesi için depolanan kontrol türünü temizler. Belirli bir tür seçildiğinde, düğüm eşleşen kontrol türünü kopyalanan kontrol ağında depolar. Girdi kontrol ağı asla yerinde değiştirilmez; bunun yerine değiştirilmiş bir kopya döndürülür.
 

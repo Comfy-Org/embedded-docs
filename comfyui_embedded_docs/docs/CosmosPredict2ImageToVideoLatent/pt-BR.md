@@ -7,12 +7,12 @@ Cria latentes de vídeo para o fluxo de trabalho de imagem para vídeo do Cosmos
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `vae` | O modelo VAE usado para codificar as imagens inicial e final no espaço latente | VAE | Sim | - |
-| `width` | Largura do vídeo de saída em pixels (padrão: 848, deve ser múltiplo de 16) | INT | Sim | 16 a MAX_RESOLUTION |
-| `height` | Altura do vídeo de saída em pixels (padrão: 480, deve ser múltiplo de 16) | INT | Sim | 16 a MAX_RESOLUTION |
-| `length` | Número de quadros na sequência de vídeo (padrão: 93) | INT | Sim | 1 a MAX_RESOLUTION |
-| `batch_size` | Número de sequências de vídeo a gerar (padrão: 1) | INT | Sim | 1 a 4096 |
-| `start_image` | Imagem inicial opcional para a sequência de vídeo | IMAGE | Não | - |
-| `end_image` | Imagem final opcional para a sequência de vídeo | IMAGE | Não | - |
+| `largura` | Largura do vídeo de saída em pixels (padrão: 848, deve ser múltiplo de 16) | INT | Sim | 16 a MAX_RESOLUTION |
+| `altura` | Altura do vídeo de saída em pixels (padrão: 480, deve ser múltiplo de 16) | INT | Sim | 16 a MAX_RESOLUTION |
+| `comprimento` | Número de quadros na sequência de vídeo (padrão: 93) | INT | Sim | 1 a MAX_RESOLUTION |
+| `tamanho_do_lote` | Número de sequências de vídeo a gerar (padrão: 1) | INT | Sim | 1 a 4096 |
+| `imagem_inicial` | Imagem inicial opcional para a sequência de vídeo | IMAGE | Não | - |
+| `imagem_final` | Imagem final opcional para a sequência de vídeo | IMAGE | Não | - |
 
 **Nota:** Quando nem `start_image` nem `end_image` forem fornecidos, o nó simplesmente retorna um latente vazio do tamanho e comprimento solicitados. Quando uma ou ambas as imagens forem fornecidas, elas são redimensionadas para `width` e `height`, codificadas com o `vae` e posicionadas no início e/ou no final da sequência latente. As regiões correspondentes são marcadas na máscara de ruído para que sejam preservadas durante a geração. Os latentes codificados são convertidos com o formato de latente Wan 2.1, e o latente e a máscara resultantes são repetidos `batch_size` vezes.
 

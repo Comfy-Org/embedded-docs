@@ -6,14 +6,14 @@ PixVerse kullanarak sabit bir görüntüden ve metin isteminden video üretir. D
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Videoya dönüştürülecek giriş görüntüsü | IMAGE | Evet | - |
-| `prompt` | Video üretimi için istem (varsayılan: boş dize) | STRING | Evet | - |
-| `quality` | Video kalite ayarı (varsayılan: res_540p) | COMBO | Evet | `res_540p`<br>`res_1080p` |
-| `duration_seconds` | Üretilen videonun saniye cinsinden süresi | COMBO | Evet | `dur_2`<br>`dur_5`<br>`dur_10` |
-| `motion_mode` | Video üretimine uygulanan hareket stili | COMBO | Evet | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` |
-| `seed` | Video üretimi için tohum (varsayılan: 0) | INT | Evet | 0-2147483647 |
-| `negative_prompt` | Görüntüde istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: boş dize) | STRING | Hayır | - |
-| `pixverse_template` | Üretim stilini etkilemek için isteğe bağlı şablon; PixVerse Template düğümü tarafından oluşturulur | CUSTOM | Hayır | - |
+| `görüntü` | Videoya dönüştürülecek giriş görüntüsü | IMAGE | Evet | - |
+| `istem` | Video üretimi için istem (varsayılan: boş dize) | STRING | Evet | - |
+| `kalite` | Video kalite ayarı (varsayılan: res_540p) | COMBO | Evet | `res_540p`<br>`res_1080p` |
+| `süre_saniye` | Üretilen videonun saniye cinsinden süresi | COMBO | Evet | `dur_2`<br>`dur_5`<br>`dur_10` |
+| `hareket_modu` | Video üretimine uygulanan hareket stili | COMBO | Evet | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` |
+| `tohum` | Video üretimi için tohum (varsayılan: 0) | INT | Evet | 0-2147483647 |
+| `negatif_istem` | Görüntüde istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: boş dize) | STRING | Hayır | - |
+| `pixverse_şablonu` | Üretim stilini etkilemek için isteğe bağlı şablon; PixVerse Template düğümü tarafından oluşturulur | CUSTOM | Hayır | - |
 
 **Not:** 1080p kalitesi kullanıldığında hareket modu otomatik olarak normal olarak ayarlanır ve süre 5 saniye ile sınırlandırılır. 5 saniye dışındaki sürelerde hareket modu da otomatik olarak normal olarak ayarlanır.
 

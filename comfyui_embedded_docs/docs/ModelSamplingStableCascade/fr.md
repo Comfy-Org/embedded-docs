@@ -6,8 +6,8 @@ Le nœud ModelSamplingStableCascade applique les paramètres d'échantillonnage 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle d'entrée auquel appliquer l'échantillonnage Stable Cascade | MODEL | Oui | - |
-| `shift` | La valeur de décalage appliquée aux paramètres d'échantillonnage (par défaut : 2.0) | FLOAT | Oui | 0.0 - 100.0 (pas 0.01) |
+| `modèle` | Le modèle d'entrée auquel appliquer l'échantillonnage Stable Cascade | MODEL | Oui | - |
+| `décalage` | La valeur de décalage appliquée aux paramètres d'échantillonnage (par défaut : 2.0) | FLOAT | Oui | 0.0 - 100.0 (pas 0.01) |
 
 ## Sorties
 

@@ -6,12 +6,12 @@ Génère des vidéos à partir d'invites textuelles à l'aide du modèle MiniMax
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `prompt_text` | Invite textuelle pour guider la génération de la vidéo (par défaut : vide). | STRING | Oui | - |
-| `seed` | La graine aléatoire utilisée pour créer le bruit (par défaut : 0). | INT | Non | 0 à 18446744073709551615 |
-| `first_frame_image` | Image facultative à utiliser comme première image pour générer une vidéo. | IMAGE | Non | - |
-| `prompt_optimizer` | Optimiser l'invite pour améliorer la qualité de génération si nécessaire (par défaut : True). | BOOLEAN | Non | True<br>False |
-| `duration` | La durée de la vidéo de sortie en secondes (par défaut : 6). | COMBO | Non | 6<br>10 |
-| `resolution` | Les dimensions de l'affichage vidéo. 1080p correspond à 1920x1080, 768p correspond à 1366x768 (par défaut : "768P"). | COMBO | Non | "768P"<br>"1080P" |
+| `texte_prompt` | Invite textuelle pour guider la génération de la vidéo (par défaut : vide). | STRING | Oui | - |
+| `graine` | La graine aléatoire utilisée pour créer le bruit (par défaut : 0). | INT | Non | 0 à 18446744073709551615 |
+| `image_premiere_frame` | Image facultative à utiliser comme première image pour générer une vidéo. | IMAGE | Non | - |
+| `optimiseur_prompt` | Optimiser l'invite pour améliorer la qualité de génération si nécessaire (par défaut : True). | BOOLEAN | Non | True<br>False |
+| `durée` | La durée de la vidéo de sortie en secondes (par défaut : 6). | COMBO | Non | 6<br>10 |
+| `résolution` | Les dimensions de l'affichage vidéo. 1080p correspond à 1920x1080, 768p correspond à 1366x768 (par défaut : "768P"). | COMBO | Non | "768P"<br>"1080P" |
 
 **Remarque :** Lorsque `resolution` est défini sur "1080P", `duration` est limité à 6 secondes. Lorsque `first_frame_image` n'est pas fourni, `prompt_text` ne doit pas être vide.
 

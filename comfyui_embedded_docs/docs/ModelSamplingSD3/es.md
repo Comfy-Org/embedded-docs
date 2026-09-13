@@ -6,8 +6,8 @@ Este nodo aplica configuraciones de muestreo al estilo de Stable Diffusion 3 a u
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de entrada al que se aplican los parámetros de muestreo de SD3 | MODEL | Sí | - |
-| `shift` | Controla el parámetro de desplazamiento de muestreo (predeterminado: 3.0) | FLOAT | Sí | 0.0 - 100.0 (paso: 0.01) |
+| `modelo` | El modelo de entrada al que se aplican los parámetros de muestreo de SD3 | MODEL | Sí | - |
+| `desplazamiento` | Controla el parámetro de desplazamiento de muestreo (predeterminado: 3.0) | FLOAT | Sí | 0.0 - 100.0 (paso: 0.01) |
 
 Nota: El valor de `shift` se aplica junto con un multiplicador interno fijo de 1000. Si el modelo original tiene una configuración de escala de ruido, ese valor se transfiere al modelo modificado. El modelo original no se modifica; se devuelve una copia clonada y parcheada.
 

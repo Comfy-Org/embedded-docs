@@ -9,8 +9,8 @@ Flux.2 [pro] veya Flux.2 [max] modelini kullanarak bir metin isteminden ve iste�
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Kullanılacak Flux.2 model sürümü. Bir model seçmek, genişlik, yükseklik ve isteğe bağlı referans görseller için ek parametrelerin kilidini açar. | DYNAMIC_COMBO | Evet | "Flux.2 [pro]"<br>"Flux.2 [max]" |
-| `prompt` | Görsel üretimi veya düzenlemesi için istem (varsayılan: boş dize). | STRING | Evet | N/A |
-| `seed` | Gürültüyü oluşturmak için kullanılan rastgele tohum (varsayılan: 0). Her çalıştırmadan sonra değeri rastgeleleştirmek için üretim sonrası kontrol seçeneğini destekler. | INT | Evet | 0 - 18446744073709551615 |
+| `istem` | Görsel üretimi veya düzenlemesi için istem (varsayılan: boş dize). | STRING | Evet | N/A |
+| `tohum` | Gürültüyü oluşturmak için kullanılan rastgele tohum (varsayılan: 0). Her çalıştırmadan sonra değeri rastgeleleştirmek için üretim sonrası kontrol seçeneğini destekler. | INT | Evet | 0 - 18446744073709551615 |
 
 ### Flux.2 [pro] ve Flux.2 [max] Girdileri
 
@@ -18,8 +18,8 @@ Her iki model tarafından paylaşılır — parametre kümeleri aynıdır.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model.width` | Üretilen görselin piksel cinsinden genişliği (varsayılan: 1024). | INT | Evet | 256 - 2048 (adım 32) |
-| `model.height` | Üretilen görselin piksel cinsinden yüksekliği (varsayılan: 768). | INT | Evet | 256 - 2048 (adım 32) |
+| `genişlik` | Üretilen görselin piksel cinsinden genişliği (varsayılan: 1024). | INT | Evet | 256 - 2048 (adım 32) |
+| `yükseklik` | Üretilen görselin piksel cinsinden yüksekliği (varsayılan: 768). | INT | Evet | 256 - 2048 (adım 32) |
 
 ### Referans Girdileri
 

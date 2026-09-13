@@ -6,9 +6,9 @@ Le nœud If/Else Switch sélectionne entre deux entrées possibles en fonction d
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `switch` | Une condition booléenne qui détermine quelle entrée est transmise à la sortie. Lorsqu'elle est activée (true), l'entrée `on_true` est sélectionnée. Lorsqu'elle est désactivée (false), l'entrée `on_false` est sélectionnée. | BOOLEAN | Oui |  |
-| `on_false` | Les données à transmettre à la sortie lorsque `switch` est désactivé (false). Cette entrée n'est demandée que lorsque `switch` est false. | MATCH_TYPE | Non |  |
-| `on_true` | Les données à transmettre à la sortie lorsque `switch` est activé (true). Cette entrée n'est demandée que lorsque `switch` est true. | MATCH_TYPE | Non |  |
+| `interrupteur` | Une condition booléenne qui détermine quelle entrée est transmise à la sortie. Lorsqu'elle est activée (true), l'entrée `on_true` est sélectionnée. Lorsqu'elle est désactivée (false), l'entrée `on_false` est sélectionnée. | BOOLEAN | Oui |  |
+| `faux` | Les données à transmettre à la sortie lorsque `switch` est désactivé (false). Cette entrée n'est demandée que lorsque `switch` est false. | MATCH_TYPE | Non |  |
+| `vrai` | Les données à transmettre à la sortie lorsque `switch` est activé (true). Cette entrée n'est demandée que lorsque `switch` est true. | MATCH_TYPE | Non |  |
 
 **Note sur les exigences des entrées :** Les entrées `on_false` et `on_true` sont demandées de manière conditionnelle. Le nœud demande `on_true` uniquement lorsque `switch` est true, et demande `on_false` uniquement lorsque `switch` est false. Les deux entrées doivent être du même type de données, et ce type doit correspondre au type de données de la sortie. Si l'entrée sélectionnée n'est pas connectée, le nœud ne produit aucune valeur.
 

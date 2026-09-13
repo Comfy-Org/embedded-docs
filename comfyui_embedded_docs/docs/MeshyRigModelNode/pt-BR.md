@@ -7,8 +7,8 @@ O nó Meshy: Rig Model recebe um modelo 3D de uma tarefa Meshy anterior e cria a
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `meshy_task_id` | O ID exclusivo da tarefa de uma operação Meshy anterior (por exemplo, text-to-3D ou image-to-3D) que gerou o modelo que receberá o rig. | MESHY_TASK_ID | Sim | N/A |
-| `height_meters` | A altura aproximada do modelo do personagem em metros. Isso ajuda na precisão de escala e de rigging (padrão: 1,7). | FLOAT | Sim | 0,1 a 15,0 |
-| `texture_image` | A imagem de textura de cor base com UV desdobrado do modelo. | IMAGE | Não | N/A |
+| `altura_metros` | A altura aproximada do modelo do personagem em metros. Isso ajuda na precisão de escala e de rigging (padrão: 1,7). | FLOAT | Sim | 0,1 a 15,0 |
+| `imagem_de_textura` | A imagem de textura de cor base com UV desdobrado do modelo. | IMAGE | Não | N/A |
 
 **Observação:** O processo de rigging automático atualmente não é adequado para malhas sem textura, ativos não humanoides ou ativos humanoides com estrutura de membros e corpo pouco clara.
 

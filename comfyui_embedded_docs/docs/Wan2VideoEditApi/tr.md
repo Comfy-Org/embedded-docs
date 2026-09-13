@@ -10,9 +10,9 @@ Wan 2.7 Video Edit düğümü, bir videoyu metin talimatları, referans görünt
 |-----------|-------------|-----------|----------|-------|
 | `model` | Video düzenleme için kullanılacak model. Her seçenek kendi alt parametre kümesini sunar. | DYNAMIC_COMBO | Evet | `"wan2.7-videoedit"` |
 | `video` | Düzenlenecek video. | VIDEO | Evet | - |
-| `seed` | Oluşturma için kullanılacak tohum. (varsayılan: 0) | INT | Evet | 0 ile 2147483647 |
-| `audio_setting` | 'auto': modelin isteme göre sesi yeniden oluşturup oluşturmayacağına karar verir. 'origin': girdi videosundaki özgün sesi korur. (varsayılan: "auto") | COMBO | Evet | `"auto"`<br>`"origin"` |
-| `watermark` | Sonuca yapay zekâ tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği. (varsayılan: False) | BOOLEAN | Evet | - |
+| `tohum` | Oluşturma için kullanılacak tohum. (varsayılan: 0) | INT | Evet | 0 ile 2147483647 |
+| `ses_ayarı` | 'auto': modelin isteme göre sesi yeniden oluşturup oluşturmayacağına karar verir. 'origin': girdi videosundaki özgün sesi korur. (varsayılan: "auto") | COMBO | Evet | `"auto"`<br>`"origin"` |
+| `filigran` | Sonuca yapay zekâ tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği. (varsayılan: False) | BOOLEAN | Evet | - |
 
 ### wan2.7-videoedit Girdileri
 

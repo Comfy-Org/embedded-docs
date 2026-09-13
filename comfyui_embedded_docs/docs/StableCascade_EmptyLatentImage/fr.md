@@ -6,10 +6,10 @@ Le nœud StableCascade_EmptyLatentImage crée des tenseurs latents vides pour le
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `width` | La largeur de l'image de sortie en pixels (par défaut : 1024, pas : 8) | INT | Oui | 256 à MAX_RESOLUTION |
-| `height` | La hauteur de l'image de sortie en pixels (par défaut : 1024, pas : 8) | INT | Oui | 256 à MAX_RESOLUTION |
+| `largeur` | La largeur de l'image de sortie en pixels (par défaut : 1024, pas : 8) | INT | Oui | 256 à MAX_RESOLUTION |
+| `hauteur` | La hauteur de l'image de sortie en pixels (par défaut : 1024, pas : 8) | INT | Oui | 256 à MAX_RESOLUTION |
 | `compression` | Le facteur de compression qui détermine les dimensions latentes pour l'étape C (par défaut : 42, pas : 1). Il s'agit d'un paramètre avancé. | INT | Oui | 4 à 128 |
-| `batch_size` | Le nombre d'échantillons latents à générer dans un lot (par défaut : 1) | INT | Oui | 1 à 4096 |
+| `taille_du_lot` | Le nombre d'échantillons latents à générer dans un lot (par défaut : 1) | INT | Oui | 1 à 4096 |
 
 Remarque : la valeur de `compression` contrôle la taille latente de l'étape C : sa hauteur et sa largeur correspondent aux valeurs d'entrée `height` et `width` divisées par `compression`. Le latent de l'étape B utilise toujours une compression fixe de 4.
 

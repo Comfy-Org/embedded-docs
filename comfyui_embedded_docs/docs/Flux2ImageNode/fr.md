@@ -8,9 +8,9 @@ Génère des images à l’aide du modèle Flux.2 [pro] ou Flux.2 [max] à parti
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Version du modèle Flux.2 à utiliser. La sélection d’un modèle déverrouille des paramètres supplémentaires pour la largeur, la hauteur et les images de référence facultatives. | DYNAMIC_COMBO | Oui | "Flux.2 [pro]"<br>"Flux.2 [max]" |
+| `modèle` | Version du modèle Flux.2 à utiliser. La sélection d’un modèle déverrouille des paramètres supplémentaires pour la largeur, la hauteur et les images de référence facultatives. | DYNAMIC_COMBO | Oui | "Flux.2 [pro]"<br>"Flux.2 [max]" |
 | `prompt` | Prompt pour la génération ou l’édition d’image (valeur par défaut : chaîne vide). | STRING | Oui | N/A |
-| `seed` | Graine aléatoire utilisée pour créer le bruit (valeur par défaut : 0). Prend en charge l’option de contrôle après génération pour randomiser la valeur après chaque exécution. | INT | Oui | 0 à 18446744073709551615 |
+| `graine` | Graine aléatoire utilisée pour créer le bruit (valeur par défaut : 0). Prend en charge l’option de contrôle après génération pour randomiser la valeur après chaque exécution. | INT | Oui | 0 à 18446744073709551615 |
 
 ### Entrées Flux.2 [pro] et Flux.2 [max]
 
@@ -18,8 +18,8 @@ Partagées par les deux modèles — les ensembles de paramètres sont identique
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model.width` | Largeur de l’image générée en pixels (valeur par défaut : 1024). | INT | Oui | 256 à 2048 (pas de 32) |
-| `model.height` | Hauteur de l’image générée en pixels (valeur par défaut : 768). | INT | Oui | 256 à 2048 (pas de 32) |
+| `largeur` | Largeur de l’image générée en pixels (valeur par défaut : 1024). | INT | Oui | 256 à 2048 (pas de 32) |
+| `hauteur` | Hauteur de l’image générée en pixels (valeur par défaut : 768). | INT | Oui | 256 à 2048 (pas de 32) |
 
 ### Entrées de référence
 

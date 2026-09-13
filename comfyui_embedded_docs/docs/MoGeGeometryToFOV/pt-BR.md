@@ -7,8 +7,8 @@ Este nó deriva o campo de visão e a distância focal a partir dos parâmetros 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `moge_geometry` | O objeto de geometria MoGe. Ele deve conter uma matriz de intrínsecos e pelo menos um dos dados `image`, `points` ou `depth`, que é usado para ler a altura em pixels para a conversão de distância focal. | MOGE_GEOMETRY | Sim | — |
-| `axis` | O eixo ao longo do qual o FOV é calculado: "vertical" (fov_y), "horizontal" (fov_x) ou "diagonal" (padrão: "vertical"). | COMBO | Sim | "vertical"<br>"horizontal"<br>"diagonal" |
-| `unit` | Unidade de saída para o FOV (padrão: "degrees"). | COMBO | Sim | "degrees"<br>"radians" |
+| `eixo` | O eixo ao longo do qual o FOV é calculado: "vertical" (fov_y), "horizontal" (fov_x) ou "diagonal" (padrão: "vertical"). | COMBO | Sim | "vertical"<br>"horizontal"<br>"diagonal" |
+| `unidade` | Unidade de saída para o FOV (padrão: "degrees"). | COMBO | Sim | "degrees"<br>"radians" |
 
 Nota: O nó gera um erro se `moge_geometry` não contiver intrínsecos (a geometria de panorama não tem nenhum) ou se não contiver nem dados de `image`, nem de `points`, nem de `depth`.
 

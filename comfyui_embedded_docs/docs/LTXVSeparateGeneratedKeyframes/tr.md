@@ -8,8 +8,8 @@ LTXV Separate Generated Keyframes düğümü, LTXV Add Generated Keyframes taraf
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Oluşturulan anahtar kare meta verilerini tutan pozitif koşullandırma. Çıktıda meta veriler ondan kaldırılır. | CONDITIONING | Evet | N/A |
-| `negative` | Oluşturulan anahtar kare meta verilerini tutan negatif koşullandırma. Çıktıda meta veriler ondan kaldırılır. | CONDITIONING | Evet | N/A |
+| `pozitif` | Oluşturulan anahtar kare meta verilerini tutan pozitif koşullandırma. Çıktıda meta veriler ondan kaldırılır. | CONDITIONING | Evet | N/A |
+| `negatif` | Oluşturulan anahtar kare meta verilerini tutan negatif koşullandırma. Çıktıda meta veriler ondan kaldırılır. | CONDITIONING | Evet | N/A |
 | `latent` | Oluşturulan anahtar kareleri içeren video latent. Çıktıda anahtar kareler ondan çıkarılır. | LATENT | Evet | N/A |
 | `keyframes_to_batch` | Anahtar kareleri tek kareli latentlerden oluşan bir grup olarak döndürün. Tek bir çok kareli latent olarak almak için kapalı bırakın; latent büyütücü ve daha sonraki bir Add Generated Keyframes düğümünün beklediği şey budur. | BOOLEAN | Hayır | varsayılan: False |
 

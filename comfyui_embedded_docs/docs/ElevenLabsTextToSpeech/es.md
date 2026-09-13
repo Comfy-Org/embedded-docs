@@ -8,14 +8,14 @@ El nodo ElevenLabs Text to Speech convierte texto escrito en audio hablado usand
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Modelo que se utilizará para texto a voz. Al seleccionar un modelo, se revelan sus parámetros específicos. | DYNAMIC_COMBO | No | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
-| `voice` | Voz que se utilizará para la síntesis de voz. Conectar desde Voice Selector o Instant Voice Clone. | CUSTOM | Sí | N/A |
-| `text` | El texto que se convertirá a voz. Debe contener al menos un carácter. | STRING | Sí | N/A |
-| `stability` | Estabilidad de la voz. Los valores más bajos ofrecen un rango emocional más amplio; los valores más altos producen un habla más consistente pero potencialmente monótona (predeterminado: 0.5). | FLOAT | No | 0.0 - 1.0 |
-| `apply_text_normalization` | Modo de normalización de texto. 'auto' deja que el sistema decida, 'on' siempre aplica la normalización, 'off' la omite. | COMBO | No | `"auto"`<br>`"on"`<br>`"off"` |
-| `language_code` | Código de idioma ISO-639-1 o ISO-639-3 (p. ej., 'en', 'es', 'fra'). Dejar vacío para detección automática (predeterminado: ""). | STRING | No | N/A |
-| `seed` | Semilla para reproducibilidad (no se garantiza el determinismo) (predeterminado: 1). | INT | No | 0 - 2147483647 |
-| `output_format` | Formato de salida de audio. | COMBO | No | `"mp3_44100_192"`<br>`"opus_48000_192"` |
+| `modelo` | Modelo que se utilizará para texto a voz. Al seleccionar un modelo, se revelan sus parámetros específicos. | DYNAMIC_COMBO | No | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
+| `voz` | Voz que se utilizará para la síntesis de voz. Conectar desde Voice Selector o Instant Voice Clone. | CUSTOM | Sí | N/A |
+| `texto` | El texto que se convertirá a voz. Debe contener al menos un carácter. | STRING | Sí | N/A |
+| `estabilidad` | Estabilidad de la voz. Los valores más bajos ofrecen un rango emocional más amplio; los valores más altos producen un habla más consistente pero potencialmente monótona (predeterminado: 0.5). | FLOAT | No | 0.0 - 1.0 |
+| `aplicar_normalización_de_texto` | Modo de normalización de texto. 'auto' deja que el sistema decida, 'on' siempre aplica la normalización, 'off' la omite. | COMBO | No | `"auto"`<br>`"on"`<br>`"off"` |
+| `código_de_idioma` | Código de idioma ISO-639-1 o ISO-639-3 (p. ej., 'en', 'es', 'fra'). Dejar vacío para detección automática (predeterminado: ""). | STRING | No | N/A |
+| `semilla` | Semilla para reproducibilidad (no se garantiza el determinismo) (predeterminado: 1). | INT | No | 0 - 2147483647 |
+| `formato_de_salida` | Formato de salida de audio. | COMBO | No | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
 ### Entradas de eleven_multilingual_v2
 

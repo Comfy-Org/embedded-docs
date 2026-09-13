@@ -8,8 +8,8 @@ Bu düğüm, eski veya hasarlı fotoğrafları Bria API'si aracılığıyla onar
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Onarılacak fotoğraf. Yüklemeden önce alfa kanalı kaldırılır. | IMAGE | Evet | - |
-| `moderation` | İstek için moderasyon ayarları. `"true"` seçildiğinde iki ek boolean anahtar görünür; `"false"` seçildiğinde hiçbir moderasyon bayrağı gönderilmez. Varsayılan: `"false"`. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
+| `görüntü` | Onarılacak fotoğraf. Yüklemeden önce alfa kanalı kaldırılır. | IMAGE | Evet | - |
+| `moderasyon` | İstek için moderasyon ayarları. `"true"` seçildiğinde iki ek boolean anahtar görünür; `"false"` seçildiğinde hiçbir moderasyon bayrağı gönderilmez. Varsayılan: `"false"`. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
 
 ### Moderasyon Girdileri
 

@@ -7,7 +7,7 @@ Bu düğüm, bir modele Stable Diffusion 3 tarzı örnekleme ayarlarını uygula
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | SD3 örnekleme parametrelerinin uygulanacağı giriş modeli | MODEL | Evet | - |
-| `shift` | Örnekleme kaydırma parametresini kontrol eder (varsayılan: 3.0) | FLOAT | Evet | 0.0 - 100.0 (adım: 0.01) |
+| `kaydırma` | Örnekleme kaydırma parametresini kontrol eder (varsayılan: 3.0) | FLOAT | Evet | 0.0 - 100.0 (adım: 0.01) |
 
 Not: `shift` değeri, 1000 sabit iç çarpanıyla birlikte uygulanır. Özgün modelde bir gürültü ölçeği ayarı varsa, bu değer değiştirilen modele aktarılır. Özgün model değiştirilmez; klonlanmış ve yamalanmış bir kopya döndürülür.
 

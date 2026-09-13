@@ -6,7 +6,7 @@ Le nœud FreeU applique des modifications dans le domaine fréquentiel aux blocs
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle auquel appliquer les modifications FreeU | MODEL | Oui | - |
+| `modèle` | Le modèle auquel appliquer les modifications FreeU | MODEL | Oui | - |
 | `b1` | Facteur de mise à l'échelle du backbone appliqué aux cartes de caractéristiques ayant model_channels × 4 canaux (par défaut : 1.1). Marqué comme paramètre avancé. | FLOAT | Oui | 0.0 - 10.0 |
 | `b2` | Facteur de mise à l'échelle du backbone appliqué aux cartes de caractéristiques ayant model_channels × 2 canaux (par défaut : 1.2). Marqué comme paramètre avancé. | FLOAT | Oui | 0.0 - 10.0 |
 | `s1` | Facteur de mise à l'échelle de la connexion de saut appliqué aux cartes de caractéristiques ayant model_channels × 4 canaux (par défaut : 0.9). Marqué comme paramètre avancé. | FLOAT | Oui | 0.0 - 10.0 |

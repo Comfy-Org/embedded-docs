@@ -6,7 +6,7 @@ Custom Combo düğümü, sabit değerler arasından seçim yapmak yerine bir aç
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `choice` | Özel açılır menüden seçilen metin seçeneği. Kullanılabilir seçenekler listesi, düğümün ön uç arayüzünde kullanıcı tarafından tanımlanır. | COMBO | Evet | Kullanıcı tanımlı |
+| `seçim` | Özel açılır menüden seçilen metin seçeneği. Kullanılabilir seçenekler listesi, düğümün ön uç arayüzünde kullanıcı tarafından tanımlanır. | COMBO | Evet | Kullanıcı tanımlı |
 | `index` | Bir dizin belirtmek için kullanılabilecek tam sayı değeri. Varsayılan: 0. | INT | Hayır | Herhangi bir tam sayı (varsayılan: 0) |
 
 **Not:** Bu düğümün girdileri için doğrulama kasıtlı olarak devre dışı bırakılmıştır. Bu, ön uçta herhangi bir özel metin seçeneği yazmanıza olanak tanır; arka uç, seçiminizin önceden tanımlanmış bir listeyle eşleşip eşleşmediğini kontrol etmez. Combo açılır menüsü dışındaki widget'lar tamamen ön uçta tanımlanır. Bu düğüm deneysel olarak işaretlenmiştir.

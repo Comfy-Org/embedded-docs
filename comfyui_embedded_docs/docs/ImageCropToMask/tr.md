@@ -6,13 +6,13 @@ Bir görüntüyü maskesinin sınırlayıcı kutusuna kırparak düz bir arka pl
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `images` | Kırpılacak giriş görüntüsü veya görüntü grubu. | IMAGE | Evet | — |
-| `masks` | Özne alanını tanımlayan maske veya maske grubu. Tek bir maske tüm görüntülere uygulanır; aksi halde maske grup boyutu görüntü grup boyutuyla eşleşmelidir. Maske çözünürlüğü görüntü çözünürlüğünden farklıysa, maske otomatik olarak eşleşecek şekilde yeniden boyutlandırılır. | MASK | Evet | — |
-| `width` | Piksel cinsinden çıktı genişliği. (varsayılan: 1024) | INT | Evet | 64 ile 4096 (adım: 8) |
-| `height` | Piksel cinsinden çıktı yüksekliği. (varsayılan: 1024) | INT | Evet | 64 ile 4096 (adım: 8) |
+| `görüntüler` | Kırpılacak giriş görüntüsü veya görüntü grubu. | IMAGE | Evet | — |
+| `maskeler` | Özne alanını tanımlayan maske veya maske grubu. Tek bir maske tüm görüntülere uygulanır; aksi halde maske grup boyutu görüntü grup boyutuyla eşleşmelidir. Maske çözünürlüğü görüntü çözünürlüğünden farklıysa, maske otomatik olarak eşleşecek şekilde yeniden boyutlandırılır. | MASK | Evet | — |
+| `genişlik` | Piksel cinsinden çıktı genişliği. (varsayılan: 1024) | INT | Evet | 64 ile 4096 (adım: 8) |
+| `yükseklik` | Piksel cinsinden çıktı yüksekliği. (varsayılan: 1024) | INT | Evet | 64 ile 4096 (adım: 8) |
 | `pad_factor` | Maske sınırlayıcı kutusu etrafındaki ek kenar boşluğu, çarpan olarak. (varsayılan: 1.0) | FLOAT | Evet | 1.0 ile 2.0 (adım: 0.01) |
 | `grow_mask` | Kırpmadan önce maskeyi bu kadar piksel büyütün veya küçültün. Pozitif değerler maskeyi genişletir, negatif değerler daraltır. (varsayılan: 0) | INT | Evet | -32 ile 32 (adım: 1) |
-| `background` | Maskelenmiş öznenin arkasındaki arka plan rengi. (varsayılan: #000000) | COLOR | Evet | — |
+| `arka plan` | Maskelenmiş öznenin arkasındaki arka plan rengi. (varsayılan: #000000) | COLOR | Evet | — |
 
 Not: Kırpma bölgesi maskenin sınırlayıcı kutusu üzerinde ortalanır ve en-boy oranı `width` / `height` ile eşleşir. Düğüm, ters çevrilmiş bir maskeyi (kenar boyunca ön plan pikselleri, merkezde arka plan) otomatik olarak algılar ve düzeltir. Maske hiç ön plan pikseli içermiyorsa, düğüm ters çevrilmiş maskeyi dener; bu da boşsa bir uyarı kaydeder ve tüm görüntüyü kırpar. Maske grup boyutu görüntü grup boyutuyla eşleşmediğinde ve tek bir maske olmadığında bir hata oluşur.
 

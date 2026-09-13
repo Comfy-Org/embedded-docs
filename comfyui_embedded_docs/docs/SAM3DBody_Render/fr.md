@@ -10,9 +10,9 @@ Rend les données de pose corporelle 3D dans une image à l'aide d'un style sél
 |-----------|-------------|-----------------|--------|-------|
 | `render_style` | Mode de rendu. 'mesh' = maillage MHR 3D rastérisé via la caméra. 'silhouette' = masque binaire du maillage. 'openpose_2d' = squelette 2D plat. 'openpose_3d' = squelette OpenPose sous forme de modèle 3D à ombrage plat. 'scail' = capsules 3D SCAIL. (défaut : "mesh") | DYNAMIC_COMBO | Oui | "mesh"<br>"silhouette"<br>"openpose_2d"<br>"openpose_3d"<br>"scail" |
 | `pose_data` | Données de pose MHR, ou données de pose d'un rig externe orienté Y-up (KimodoSample). Tous les styles de rendu fonctionnent pour les rigs externes qui contiennent des cartes d'articulations OpenPose dans leur `_skeleton_override` (KimodoSample le fait). | MHR_POSE_DATA ou KIMODO_POSE_DATA | Oui | — |
-| `background` | Arrière-plan par image. Omis = canevas noir. | IMAGE | Non | — |
-| `width` | Largeur de sortie en pixels. 0 = utiliser la taille d'image native (`image_size`) des données de pose. Si une seule des valeurs `width`/`height` est définie, l'autre est dérivée en préservant le rapport d'aspect d'origine. (défaut : 0) | INT | Non | 0 à 16384, pas 8 |
-| `height` | Hauteur de sortie en pixels. 0 = utiliser la taille d'image native (`image_size`) des données de pose. Si une seule des valeurs `width`/`height` est définie, l'autre est dérivée en préservant le rapport d'aspect d'origine. (défaut : 0) | INT | Non | 0 à 16384, pas 8 |
+| `arrière-plan` | Arrière-plan par image. Omis = canevas noir. | IMAGE | Non | — |
+| `largeur` | Largeur de sortie en pixels. 0 = utiliser la taille d'image native (`image_size`) des données de pose. Si une seule des valeurs `width`/`height` est définie, l'autre est dérivée en préservant le rapport d'aspect d'origine. (défaut : 0) | INT | Non | 0 à 16384, pas 8 |
+| `hauteur` | Hauteur de sortie en pixels. 0 = utiliser la taille d'image native (`image_size`) des données de pose. Si une seule des valeurs `width`/`height` est définie, l'autre est dérivée en préservant le rapport d'aspect d'origine. (défaut : 0) | INT | Non | 0 à 16384, pas 8 |
 | `camera_info` | Remplacement libre de caméra 6DOF. Lorsqu'elle est connectée, la pose est reprojetée via cette caméra (position/cible/zoom/rotation/FoV) au lieu de celle prédite. | LOAD_3D_CAMERA | Non | — |
 
 ### Entrées Mesh

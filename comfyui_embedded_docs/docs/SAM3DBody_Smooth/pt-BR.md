@@ -7,9 +7,9 @@ Smooth SAM3D Body Pose Data reduz a trepidação entre quadros em uma sequência
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `mhr_pose_data` | A sequência de dados de pose MHR a ser suavizada, contendo parâmetros de modelo, parâmetros de forma, parâmetros de expressão, layout de keypoints MHR70 e dados de malha relacionados. | MHR_POSE_DATA | Sim | — |
-| `strength` | Intensidade da suavização. 0 = bruto, 1 = suavizado. (padrão: 1.0) | FLOAT | Sim | 0.0 a 1.0 (passo 0.05) |
-| `method` | gaussian: média ponderada simétrica, melhor suavizador de uso geral.<br>savgol: ajuste polinomial deslizante, preserva picos acentuados. (padrão: "savgol") | COMBO | Sim | "gaussian"<br>"savgol" |
-| `window` | Janela temporal em quadros (valores ímpares). (padrão: 7) | INT | Sim | 1 a 51 (valores ímpares, passo 2) |
+| `intensidade` | Intensidade da suavização. 0 = bruto, 1 = suavizado. (padrão: 1.0) | FLOAT | Sim | 0.0 a 1.0 (passo 0.05) |
+| `método` | gaussian: média ponderada simétrica, melhor suavizador de uso geral.<br>savgol: ajuste polinomial deslizante, preserva picos acentuados. (padrão: "savgol") | COMBO | Sim | "gaussian"<br>"savgol" |
+| `janela` | Janela temporal em quadros (valores ímpares). (padrão: 7) | INT | Sim | 1 a 51 (valores ímpares, passo 2) |
 | `rotation_threshold_degrees` | Desativa a suavização para esta taxa de rotação da raiz (grau/quadro) a fim de preservar giros rápidos. 30° é adequado para a maioria do conteúdo; valores baixos podem desativar a suavização em trepidações comuns e impactar silenciosamente a qualidade. 0 = desativar. (padrão: 30.0) | FLOAT | Sim | 0.0 a 90.0 (passo 1.0) |
 
 Observação: quando `strength` é 0.0 ou menor, ou `window` é 1 ou menor, o nó retorna os dados de entrada inalterados. A entrada deve conter pelo menos 2 quadros e dados de keypoints; caso contrário, o nó retorna os dados de entrada inalterados. Quando `rotation_threshold_degrees` é 0.0, o recuo da suavização baseado em rotação é desativado.

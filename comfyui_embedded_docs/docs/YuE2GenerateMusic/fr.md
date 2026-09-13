@@ -8,9 +8,9 @@ Génère des jetons musicaux et un conditionnement acoustique à partir d'un sty
 |-----------|-------------|-----------------|--------|-------|
 | `clip` | Le modèle CLIP utilisé pour tokeniser et encoder les entrées musicales. | CLIP | Oui | - |
 | `style` | Texte décrivant le style musical. Prend en charge la saisie multiligne et les prompts dynamiques. | STRING | Oui | Texte multiligne |
-| `lyrics` | Paroles de la musique générée. Prend en charge la saisie multiligne et les prompts dynamiques. | STRING | Oui | Texte multiligne |
+| `paroles` | Paroles de la musique générée. Prend en charge la saisie multiligne et les prompts dynamiques. | STRING | Oui | Texte multiligne |
 | `abc` | Connectez le générateur ABC ou fournissez une partition modifiée. Laissez vide pour utiliser automatiquement le mode off. par défaut : "" | STRING | Oui | Texte multiligne |
-| `seed` | Graine aléatoire pour la génération. par défaut : 0 | INT | Oui | 0 à 18446744073709551615 |
+| `graine` | Graine aléatoire pour la génération. par défaut : 0 | INT | Oui | 0 à 18446744073709551615 |
 | `mode` | full : génère la mélodie et les accords ; melody : génère uniquement la mélodie, recommandé pour les reprises. par défaut : "full" | COMBO | Oui | "full"<br>"melody" |
 | `max_duration` | Durée maximale en secondes. Réduite automatiquement pour les prompts longs ; la génération peut s'arrêter plus tôt. par défaut : 360.0 | FLOAT | Oui | 0.04 à 900.0 |
 | `temperature` | Température d'échantillonnage pour la génération. par défaut : 1.0 (avancé) | FLOAT | Oui | 0.0 à 5.0 |

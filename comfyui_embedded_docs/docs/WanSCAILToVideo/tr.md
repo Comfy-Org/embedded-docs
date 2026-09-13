@@ -6,20 +6,20 @@ WanSCAILToVideo düğümü, SCAIL ve SCAIL-2 video modelleriyle video oluşturma
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Pozitif koşullandırma girdisi. | CONDITIONING | Evet | - |
-| `negative` | Negatif koşullandırma girdisi. | CONDITIONING | Evet | - |
+| `pozitif` | Pozitif koşullandırma girdisi. | CONDITIONING | Evet | - |
+| `negatif` | Negatif koşullandırma girdisi. | CONDITIONING | Evet | - |
 | `vae` | Görüntüleri ve video karelerini kodlamak için kullanılan VAE modeli. | VAE | Evet | - |
-| `width` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 512). Değerler 32'lik adımlarla artar. | INT | Evet | 32 - MAX_RESOLUTION |
-| `height` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 896). Değerler 32'lik adımlarla artar. | INT | Evet | 32 - MAX_RESOLUTION |
-| `length` | Videodaki kare sayısı (varsayılan: 81). Değerler 4'lük adımlarla artar. | INT | Evet | 1 - MAX_RESOLUTION |
-| `batch_size` | Bir toplu işte oluşturulacak video sayısı (varsayılan: 1). | INT | Evet | 1 - 4096 |
-| `pose_video` | Poz koşullandırması için kullanılan video. Ana videonun çözünürlüğünün yarısına ölçeklenir. | IMAGE | Hayır | - |
+| `genişlik` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 512). Değerler 32'lik adımlarla artar. | INT | Evet | 32 - MAX_RESOLUTION |
+| `yükseklik` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 896). Değerler 32'lik adımlarla artar. | INT | Evet | 32 - MAX_RESOLUTION |
+| `uzunluk` | Videodaki kare sayısı (varsayılan: 81). Değerler 4'lük adımlarla artar. | INT | Evet | 1 - MAX_RESOLUTION |
+| `toplu_boyutu` | Bir toplu işte oluşturulacak video sayısı (varsayılan: 1). | INT | Evet | 1 - 4096 |
+| `poz_videosu` | Poz koşullandırması için kullanılan video. Ana videonun çözünürlüğünün yarısına ölçeklenir. | IMAGE | Hayır | - |
 | `pose_video_mask` | Yalnızca SCAIL-2. pose_video ile aynı çözünürlükte, kimlik başına renklendirilmiş SAM3 maske videosu. | IMAGE | Hayır | - |
 | `replacement_mode` | Yalnızca SCAIL-2. False = Animasyon Modu (pose_video_mask siyah arka plana sahip olmalıdır). True = Değiştirme Modu (pose_video_mask beyaz arka plana sahip olmalıdır). (varsayılan: False) | BOOLEAN | Hayır | - |
-| `pose_strength` | Poz latentinin gücü. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 10.0 |
-| `pose_start` | Poz koşullandırmasının başlangıç adımı. (varsayılan: 0.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `pose_end` | Poz koşullandırmasının bitiş adımı. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `reference_image` | Referans görüntü. İlk görüntü birincil referanstır (tüm kimlikleri onun üzerine birleştirin). SCAIL-2: ek toplu görüntüler ek görünümler olarak kullanılır (arka görünüm, yakın çekim, örtülü arka plan); her biri o kimliğin renginde eşleşen bir reference_image_mask gerektirir. | IMAGE | Hayır | - |
+| `poz_gücü` | Poz latentinin gücü. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 10.0 |
+| `poz_başlangıcı` | Poz koşullandırmasının başlangıç adımı. (varsayılan: 0.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `poz_bitişi` | Poz koşullandırmasının bitiş adımı. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `referans_görsel` | Referans görüntü. İlk görüntü birincil referanstır (tüm kimlikleri onun üzerine birleştirin). SCAIL-2: ek toplu görüntüler ek görünümler olarak kullanılır (arka görünüm, yakın çekim, örtülü arka plan); her biri o kimliğin renginde eşleşen bir reference_image_mask gerektirir. | IMAGE | Hayır | - |
 | `reference_image_mask` | Yalnızca SCAIL-2. Renkli referans maskesi; toplu iş reference_image ile eşleşir (ilk = birincil referans maskesi, geri kalanı ek reference_image için kimlik maskeleri). | IMAGE | Hayır | - |
 | `clip_vision_output` | Koşullandırma için CLIP vision öznitelikleri. Model, en-boy oranına esnetilmiş yeniden boyutlandırma ile eğitilmiştir. | CLIP_VISION_OUTPUT | Hayır | - |
 | `video_frame_offset` | Bu parçanın başladığı kümülatif çıktı karesi. Önceki parçanın video_frame_offset çıktısından bağlayın. (varsayılan: 0) | INT | Evet | 0 - MAX_RESOLUTION |

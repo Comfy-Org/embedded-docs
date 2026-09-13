@@ -8,11 +8,11 @@ This node generates a video by creating transitions between multiple keyframes. 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo Vidu a ser usado para geração de vídeo. | COMBO | Sim | "viduq2-pro"<br>"viduq2-turbo" |
-| `start_image` | A imagem do frame inicial. A proporção de aspecto deve estar entre 1:4 e 4:1. | IMAGE | Sim | Proporção de aspecto 1:4 a 4:1 |
-| `seed` | Um valor de seed para geração de números aleatórios para garantir resultados reproduzíveis (padrão: 1). | INT | Sim | 0 a 2147483647 |
-| `resolution` | A resolução do vídeo de saída. | COMBO | Sim | "720p"<br>"1080p" |
-| `frames` | Número de transições de keyframes (2-9). Selecionar um valor revela dinamicamente as entradas necessárias para cada frame. | DYNAMIC_COMBO | Sim | "2"<br>"3"<br>"4"<br>"5"<br>"6"<br>"7"<br>"8"<br>"9" |
+| `modelo` | O modelo Vidu a ser usado para geração de vídeo. | COMBO | Sim | "viduq2-pro"<br>"viduq2-turbo" |
+| `imagem_inicial` | A imagem do frame inicial. A proporção de aspecto deve estar entre 1:4 e 4:1. | IMAGE | Sim | Proporção de aspecto 1:4 a 4:1 |
+| `semente` | Um valor de seed para geração de números aleatórios para garantir resultados reproduzíveis (padrão: 1). | INT | Sim | 0 a 2147483647 |
+| `resolução` | A resolução do vídeo de saída. | COMBO | Sim | "720p"<br>"1080p" |
+| `quadros` | Número de transições de keyframes (2-9). Selecionar um valor revela dinamicamente as entradas necessárias para cada frame. | DYNAMIC_COMBO | Sim | "2"<br>"3"<br>"4"<br>"5"<br>"6"<br>"7"<br>"8"<br>"9" |
 
 ### Entradas de frames (compartilhadas por todas as opções de contagem de frames)
 

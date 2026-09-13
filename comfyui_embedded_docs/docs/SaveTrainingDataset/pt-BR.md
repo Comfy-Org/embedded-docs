@@ -7,9 +7,9 @@ Este nó salva um conjunto de dados de treinamento codificado no disco para carr
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `latents` | Lista de dicionários de latentes de MakeTrainingDataset. | LATENT | Sim | N/A |
-| `conditioning` | Lista de listas de condicionamento de MakeTrainingDataset. | CONDITIONING | Sim | N/A |
-| `folder_name` | Nome da pasta na qual salvar o conjunto de dados, dentro do diretório datasets. Subpastas como 'project/run1' são permitidas. (padrão: "training_dataset") | STRING | Sim | N/A |
-| `shard_size` | Número de amostras por arquivo de shard. (padrão: 1000) | INT | Sim | 1 a 100000 |
+| `condicionamento` | Lista de listas de condicionamento de MakeTrainingDataset. | CONDITIONING | Sim | N/A |
+| `nome_da_pasta` | Nome da pasta na qual salvar o conjunto de dados, dentro do diretório datasets. Subpastas como 'project/run1' são permitidas. (padrão: "training_dataset") | STRING | Sim | N/A |
+| `tamanho_do_fragmento` | Número de amostras por arquivo de shard. (padrão: 1000) | INT | Sim | 1 a 100000 |
 
 **Observação:** O número de itens em `latents` deve corresponder exatamente ao número de itens em `conditioning`; o nó gera um erro se essas contagens não corresponderem. O `folder_name` deve nomear uma subpasta do diretório datasets (por exemplo, `my_dataset`) — ele não pode ser o próprio diretório datasets, e nomes de pasta que seriam resolvidos fora do diretório datasets são rejeitados. O parâmetro `shard_size` é uma configuração avançada.
 

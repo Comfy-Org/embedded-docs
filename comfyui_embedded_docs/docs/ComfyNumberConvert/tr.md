@@ -6,7 +6,7 @@ Number Convert düğümü, çeşitli girdi veri türlerini sayısal değerlere d
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `value` | Sayısal çıktılara dönüştürülecek değer. Bir tamsayı, bir kayan noktalı sayı, bir metin dizesi veya doğru/yanlış mantıksal değer kabul eder. | INT, FLOAT, STRING, BOOLEAN | Evet | N/A |
+| `değer` | Sayısal çıktılara dönüştürülecek değer. Bir tamsayı, bir kayan noktalı sayı, bir metin dizesi veya doğru/yanlış mantıksal değer kabul eder. | INT, FLOAT, STRING, BOOLEAN | Evet | N/A |
 
 **Not:** Girdi bir dize olduğunda boş olmamalı ve geçerli bir sayı gösterimi içermelidir (örn. `"123"`, `"3.14"`). Düğüm; boş dizeler, sayı olarak ayrıştırılamayan metinler veya sonlu olmayan değerler (örneğin `"inf"` veya `"nan"`) için hata verir. Mantıksal girdilerde `true`, 1.0 (FLOAT) ve 1 (INT) değerine dönüşür; `false` ise 0.0 (FLOAT) ve 0 (INT) değerine dönüşür. Ondalık sayı girdileri ve ondalık sayı içeren dizeler için tamsayı çıktısı, ondalık kısmın kesilmesiyle elde edilir.
 

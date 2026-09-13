@@ -6,10 +6,10 @@ El nodo Hunyuan3Dv2ConditioningMultiView combina salidas de visión CLIP de hast
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `front` | Salida de visión CLIP para la vista frontal. Entrada de vista opcional. | CLIP_VISION_OUTPUT | No | - |
-| `left` | Salida de visión CLIP para la vista izquierda. Entrada de vista opcional. | CLIP_VISION_OUTPUT | No | - |
-| `back` | Salida de visión CLIP para la vista trasera. Entrada de vista opcional. | CLIP_VISION_OUTPUT | No | - |
-| `right` | Salida de visión CLIP para la vista derecha. Entrada de vista opcional. | CLIP_VISION_OUTPUT | No | - |
+| `frente` | Salida de visión CLIP para la vista frontal. Entrada de vista opcional. | CLIP_VISION_OUTPUT | No | - |
+| `izquierda` | Salida de visión CLIP para la vista izquierda. Entrada de vista opcional. | CLIP_VISION_OUTPUT | No | - |
+| `atrás` | Salida de visión CLIP para la vista trasera. Entrada de vista opcional. | CLIP_VISION_OUTPUT | No | - |
+| `derecha` | Salida de visión CLIP para la vista derecha. Entrada de vista opcional. | CLIP_VISION_OUTPUT | No | - |
 
 **Nota:** Se debe proporcionar al menos una entrada de vista para que el nodo funcione. El nodo solo procesa las vistas que contienen datos válidos de salida de visión CLIP y omite las vistas que no están conectadas. Cada vista recibe una codificación posicional fija según su ranura (frontal, izquierda, trasera, derecha), y los embeddings procesados de todas las vistas proporcionadas se unen a lo largo de la dimensión de secuencia.
 

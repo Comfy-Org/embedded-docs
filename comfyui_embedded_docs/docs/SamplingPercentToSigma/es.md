@@ -6,9 +6,9 @@ Convierte un porcentaje de muestreo en el valor sigma correspondiente usando la 
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo que contiene los parámetros de muestreo utilizados para la conversión | MODEL | Sí | - |
-| `sampling_percent` | El porcentaje de muestreo que se convertirá a un valor sigma (predeterminado: 0.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.0001) |
-| `return_actual_sigma` | Devuelve el valor sigma real en lugar del valor utilizado para las comprobaciones de intervalo. Esto solo afecta los resultados en 0.0 y 1.0. (predeterminado: False) | BOOLEAN | Sí | - |
+| `modelo` | El modelo que contiene los parámetros de muestreo utilizados para la conversión | MODEL | Sí | - |
+| `porcentaje_muestreo` | El porcentaje de muestreo que se convertirá a un valor sigma (predeterminado: 0.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.0001) |
+| `devolver_sigma_real` | Devuelve el valor sigma real en lugar del valor utilizado para las comprobaciones de intervalo. Esto solo afecta los resultados en 0.0 y 1.0. (predeterminado: False) | BOOLEAN | Sí | - |
 
 Cuando `return_actual_sigma` está habilitado, un `sampling_percent` de 0.0 devuelve el valor sigma máximo del modelo (sigma_max), y un `sampling_percent` de 1.0 devuelve el valor sigma mínimo (sigma_min). Para todos los demás porcentajes, el resultado es el mismo independientemente de si esta opción está habilitada o no.
 

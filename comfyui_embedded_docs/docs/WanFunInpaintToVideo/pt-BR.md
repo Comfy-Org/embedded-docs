@@ -6,16 +6,16 @@ O nó WanFunInpaintToVideo prepara dados de condicionamento e latentes para gera
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `positive` | Prompts de condicionamento positivo para geração de vídeo | CONDITIONING | Sim | - |
-| `negative` | Prompts de condicionamento negativo a evitar na geração de vídeo | CONDITIONING | Sim | - |
+| `positivo` | Prompts de condicionamento positivo para geração de vídeo | CONDITIONING | Sim | - |
+| `negativo` | Prompts de condicionamento negativo a evitar na geração de vídeo | CONDITIONING | Sim | - |
 | `vae` | Modelo VAE usado para codificar e decodificar os quadros do vídeo | VAE | Sim | - |
-| `width` | Largura do vídeo de saída em pixels (padrão: 832, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
-| `height` | Altura do vídeo de saída em pixels (padrão: 480, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
-| `length` | Número de quadros na sequência de vídeo (padrão: 81, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
-| `batch_size` | Número de vídeos a serem gerados em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
+| `largura` | Largura do vídeo de saída em pixels (padrão: 832, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
+| `altura` | Altura do vídeo de saída em pixels (padrão: 480, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
+| `duração` | Número de quadros na sequência de vídeo (padrão: 81, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
+| `tamanho_do_lote` | Número de vídeos a serem gerados em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
 | `clip_vision_output` | Saída opcional de visão CLIP usada como condicionamento para a imagem inicial | CLIP_VISION_OUTPUT | Não | - |
-| `start_image` | Imagem de quadro inicial opcional para geração de vídeo | IMAGE | Não | - |
-| `end_image` | Imagem de quadro final opcional para geração de vídeo | IMAGE | Não | - |
+| `imagem_inicial` | Imagem de quadro inicial opcional para geração de vídeo | IMAGE | Não | - |
+| `imagem_final` | Imagem de quadro final opcional para geração de vídeo | IMAGE | Não | - |
 
 ## Saídas
 

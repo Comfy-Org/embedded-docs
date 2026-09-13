@@ -6,7 +6,7 @@ Le nœud Get Video Components extrait tous les éléments principaux d'un fichie
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `video` | La vidéo à partir de laquelle extraire les composants. | VIDEO | Oui | - |
+| `vidéo` | La vidéo à partir de laquelle extraire les composants. | VIDEO | Oui | - |
 
 ## Sorties
 

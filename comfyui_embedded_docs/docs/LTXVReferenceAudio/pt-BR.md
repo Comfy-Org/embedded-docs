@@ -6,14 +6,14 @@ LTXV Reference Audio transfere a identidade vocal de um falante de um clipe de �
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo ao qual será aplicado o patch com orientação de identidade. | MODEL | Sim | - |
-| `positive` | A entrada de condicionamento positiva. | CONDITIONING | Sim | - |
-| `negative` | A entrada de condicionamento negativa. | CONDITIONING | Sim | - |
-| `reference_audio` | Clipe de áudio de referência cuja identidade do falante será transferida. Recomenda-se ~5 segundos (duração de treinamento). Clipes mais curtos ou mais longos podem degradar a transferência de identidade vocal. | AUDIO | Sim | - |
+| `modelo` | O modelo ao qual será aplicado o patch com orientação de identidade. | MODEL | Sim | - |
+| `positivo` | A entrada de condicionamento positiva. | CONDITIONING | Sim | - |
+| `negativo` | A entrada de condicionamento negativa. | CONDITIONING | Sim | - |
+| `áudio_de_referência` | Clipe de áudio de referência cuja identidade do falante será transferida. Recomenda-se ~5 segundos (duração de treinamento). Clipes mais curtos ou mais longos podem degradar a transferência de identidade vocal. | AUDIO | Sim | - |
 | `audio_vae` | VAE de áudio LTXV para codificação. | VAE | Sim | - |
-| `identity_guidance_scale` | Força da orientação de identidade. Executa uma passagem forward extra sem referência a cada etapa para amplificar a identidade do falante. Defina como 0 para desabilitar (sem passagem extra). (padrão: 3.0) | FLOAT | Sim | 0.0 - 100.0 |
-| `start_percent` | Início do intervalo de sigma em que a orientação de identidade está ativa. (padrão: 0.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `end_percent` | Fim do intervalo de sigma em que a orientação de identidade está ativa. (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `escala_de_orientação_de_identidade` | Força da orientação de identidade. Executa uma passagem forward extra sem referência a cada etapa para amplificar a identidade do falante. Defina como 0 para desabilitar (sem passagem extra). (padrão: 3.0) | FLOAT | Sim | 0.0 - 100.0 |
+| `percentual_inicial` | Início do intervalo de sigma em que a orientação de identidade está ativa. (padrão: 0.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `percentual_final` | Fim do intervalo de sigma em que a orientação de identidade está ativa. (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 
 Nota: A orientação de identidade só é aplicada quando `identity_guidance_scale` for maior que 0 e a etapa de amostragem atual estiver dentro do intervalo definido por `start_percent` e `end_percent`. O áudio de referência é reamostrado para a taxa de amostragem do VAE de áudio se as duas forem diferentes.
 

@@ -6,17 +6,17 @@ Ce nœud génère une vidéo à partir d’un prompt texte ainsi que d’images 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle utilisé pour la génération vidéo (par défaut : `"seedance-1-5-pro-251215"`). | COMBO | Oui | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"` |
-| `prompt` | Le prompt texte utilisé pour générer la vidéo. Ne doit pas être vide et ne doit pas contenir de mots-clés de paramètres réservés (`resolution`, `ratio`, `duration`, `seed`, `camerafixed`, `watermark`). | STRING | Oui | - |
-| `first_frame` | Première frame à utiliser pour la vidéo. Doit être comprise entre 300x300 et 6000x6000 pixels, avec un rapport d’aspect compris entre 0,4 et 2,5. | IMAGE | Oui | - |
-| `last_frame` | Dernière frame à utiliser pour la vidéo. Doit être comprise entre 300x300 et 6000x6000 pixels, avec un rapport d’aspect compris entre 0,4 et 2,5. | IMAGE | Oui | - |
-| `resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | `"480p"`<br>`"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Le rapport d’aspect de la vidéo de sortie. | COMBO | Oui | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` |
-| `duration` | La durée de la vidéo de sortie en secondes. Lors de l’utilisation de `seedance-1-5-pro-251215`, la durée minimale est de 4 secondes. (par défaut : 5) | INT | Oui | 3 - 12 |
-| `seed` | Graine à utiliser pour la génération. (par défaut : 0) | INT | Non | 0 - 2147483647 |
+| `modèle` | Le modèle utilisé pour la génération vidéo (par défaut : `"seedance-1-5-pro-251215"`). | COMBO | Oui | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"` |
+| `invite` | Le prompt texte utilisé pour générer la vidéo. Ne doit pas être vide et ne doit pas contenir de mots-clés de paramètres réservés (`resolution`, `ratio`, `duration`, `seed`, `camerafixed`, `watermark`). | STRING | Oui | - |
+| `première_image` | Première frame à utiliser pour la vidéo. Doit être comprise entre 300x300 et 6000x6000 pixels, avec un rapport d’aspect compris entre 0,4 et 2,5. | IMAGE | Oui | - |
+| `dernière_image` | Dernière frame à utiliser pour la vidéo. Doit être comprise entre 300x300 et 6000x6000 pixels, avec un rapport d’aspect compris entre 0,4 et 2,5. | IMAGE | Oui | - |
+| `résolution` | La résolution de la vidéo de sortie. | COMBO | Oui | `"480p"`<br>`"720p"`<br>`"1080p"` |
+| `ratio_d'aspect` | Le rapport d’aspect de la vidéo de sortie. | COMBO | Oui | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` |
+| `durée` | La durée de la vidéo de sortie en secondes. Lors de l’utilisation de `seedance-1-5-pro-251215`, la durée minimale est de 4 secondes. (par défaut : 5) | INT | Oui | 3 - 12 |
+| `graine` | Graine à utiliser pour la génération. (par défaut : 0) | INT | Non | 0 - 2147483647 |
 | `camera_fixed` | Indique s’il faut fixer la caméra. La plateforme ajoute au prompt une instruction pour fixer la caméra, mais ne garantit pas l’effet réel. (par défaut : False) | BOOLEAN | Non | - |
 | `watermark` | Indique s’il faut ajouter un filigrane « AI generated » à la vidéo. (par défaut : False) | BOOLEAN | Non | - |
-| `generate_audio` | Ce paramètre est ignoré pour tout modèle autre que `seedance-1-5-pro-251215`. (par défaut : False) | BOOLEAN | Non | - |
+| `générer_audio` | Ce paramètre est ignoré pour tout modèle autre que `seedance-1-5-pro-251215`. (par défaut : False) | BOOLEAN | Non | - |
 
 **Remarque :** Pour le modèle `seedance-1-5-pro-251215`, `duration` doit être supérieur ou égal à 4 secondes. `first_frame` et `last_frame` doivent tous deux être compris entre 300x300 et 6000x6000 pixels et avoir un rapport d’aspect compris entre 0,4 et 2,5. Le `prompt` est vérifié et rejeté s’il contient des mots-clés de paramètres réservés.
 

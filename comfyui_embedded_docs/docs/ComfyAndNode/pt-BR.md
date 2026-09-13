@@ -6,7 +6,7 @@ O nó And realiza uma operação lógica AND em um grupo de valores de entrada. 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `values` | Um grupo expansível de valores a serem avaliados. O nó começa com um slot e você pode adicionar mais clicando no botão "+" no nó. Aceita qualquer tipo de dados. | ANY | Sim | Mínimo 1 (sem máximo) |
+| `valores` | Um grupo expansível de valores a serem avaliados. O nó começa com um slot e você pode adicionar mais clicando no botão "+" no nó. Aceita qualquer tipo de dados. | ANY | Sim | Mínimo 1 (sem máximo) |
 
 **Nota:** Esta entrada é um grupo de slots expansível. Os slots são adicionados individualmente (por exemplo, `value_1`, `value_2` e assim por diante), e pelo menos um slot deve estar presente.
 

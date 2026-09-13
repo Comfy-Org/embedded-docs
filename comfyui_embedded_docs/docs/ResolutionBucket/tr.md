@@ -6,8 +6,8 @@ Bu düğüm, latent görüntülerden oluşan bir listeyi ve bunlara karşılık 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `latents` | Çözünürlüğe göre gruplandırılacak latent sözlükleri listesi. | LATENT | Evet | N/A |
-| `conditioning` | Koşullandırma listeleri listesi (`latents` uzunluğuyla eşleşmelidir). | CONDITIONING | Evet | N/A |
+| `latentler` | Çözünürlüğe göre gruplandırılacak latent sözlükleri listesi. | LATENT | Evet | N/A |
+| `koşullandırma` | Koşullandırma listeleri listesi (`latents` uzunluğuyla eşleşmelidir). | CONDITIONING | Evet | N/A |
 
 **Not:** Her iki girdi de liste türünde girdilerdir; yani düğüm her biri için bir öğe listesi alır. `latents` listesindeki öğe sayısı, `conditioning` listesindeki öğe sayısıyla tam olarak eşleşmelidir; sayılar eşleşmezse düğüm hata verir. Her latent sözlüğü bir örneklem batch’i içerebilir ve ilgili koşullandırma listesi bu batch için eşleşen sayıda koşullandırma öğesi içermelidir; çünkü batch’teki her örneklem kendi koşullandırma girdisiyle eşleştirilir. Latent örneklemleri görüntüler için (B, C, H, W) veya videolar için (B, T, C, H, W) şeklinde olabilir; düğüm bunları yalnızca yükseklik ve genişliğe göre gruplar.
 

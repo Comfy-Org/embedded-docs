@@ -10,9 +10,9 @@ A seleção de um `model` determina quais dos parâmetros abaixo estão disponí
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo de IA usado para gerar o vídeo. Seedance 2.5 para o modelo mais recente, vídeos de até 30 segundos e saída mp4/mov; Seedance 2.0 para qualidade máxima e 4k; Fast para otimização de velocidade; Mini para a geração mais rápida e de menor custo. Selecionar um modelo revela as entradas específicas do modelo listadas abaixo. | DYNAMIC_COMBO | Sim | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
-| `seed` | A seed controla se o nó deve ser reexecutado; os resultados são não determinísticos independentemente da seed (padrão: 0). | INT | Sim | 0 a 2147483647<br>Passo: 1 |
-| `watermark` | Se deve adicionar uma marca d'água ao vídeo (padrão: False). Configuração avançada. | BOOLEAN | Sim | `True`<br>`False` |
+| `modelo` | O modelo de IA usado para gerar o vídeo. Seedance 2.5 para o modelo mais recente, vídeos de até 30 segundos e saída mp4/mov; Seedance 2.0 para qualidade máxima e 4k; Fast para otimização de velocidade; Mini para a geração mais rápida e de menor custo. Selecionar um modelo revela as entradas específicas do modelo listadas abaixo. | DYNAMIC_COMBO | Sim | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `semente` | A seed controla se o nó deve ser reexecutado; os resultados são não determinísticos independentemente da seed (padrão: 0). | INT | Sim | 0 a 2147483647<br>Passo: 1 |
+| `marca_d'água` | Se deve adicionar uma marca d'água ao vídeo (padrão: False). Configuração avançada. | BOOLEAN | Sim | `True`<br>`False` |
 
 ### Entradas do Seedance 2.5
 

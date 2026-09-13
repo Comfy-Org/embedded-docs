@@ -9,9 +9,9 @@ O nó ModelMergeAuraflow mescla dois modelos Auraflow ao atribuir um peso de mes
 | `model1` | O primeiro modelo a ser mesclado | MODEL | Sim | - |
 | `model2` | O segundo modelo a ser mesclado | MODEL | Sim | - |
 | `init_x_linear.` | Peso de mesclagem para a transformação linear inicial (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `positional_encoding` | Peso de mesclagem para componentes de codificação posicional (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `codificação_posicional` | Peso de mesclagem para componentes de codificação posicional (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `cond_seq_linear.` | Peso de mesclagem para camadas lineares de sequência condicional (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `register_tokens` | Peso de mesclagem para componentes de registro de tokens (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `registrar_tokens` | Peso de mesclagem para componentes de registro de tokens (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `t_embedder.` | Peso de mesclagem para componentes de embedding de tempo (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `double_layers.0.` | Peso de mesclagem para o grupo de camadas duplas 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `double_layers.1.` | Peso de mesclagem para o grupo de camadas duplas 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |

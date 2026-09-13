@@ -8,13 +8,13 @@ Génère une vidéo de présentateur parlant à partir d'un avatar HeyGen. Ce n�
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `engine` | Moteur de rendu ; chaque choix ne liste que les avatars qui le prennent en charge. `"auto"` propose tous les avatars et sélectionne son meilleur moteur (Avatar IV privilégié). Avatar V offre la plus haute fidélité, Avatar III est le plus abordable. | DYNAMIC_COMBO | Oui | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
-| `custom_avatar_id` | ID d'apparence d'avatar HeyGen facultatif. Lorsqu'il est défini, remplace l'avatar sélectionné ci-dessus. N'importe laquelle des plus de 3000 apparences publiques de HeyGen (ou vos avatars privés) peut être utilisée. Valeur par défaut : `""`. | STRING | Non |  |
-| `speech` | Pilotez l'avatar avec un script texte (synthèse vocale HeyGen) ou votre propre audio. Nom d'affichage : « speech source ». | DYNAMIC_COMBO | Oui | `"script"`<br>`"audio"` |
-| `resolution` | Résolution de la vidéo de sortie. Valeur par défaut : `"1080p"`. | COMBO | Non | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Format d'image de la vidéo de sortie. `"auto"` suit la séquence source de l'avatar. Valeur par défaut : `"auto"`. | COMBO | Non | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `background_color` | Couleur d'arrière-plan unie facultative sous forme de code hexadécimal (par ex. `"#00ff00"`). Laissez vide pour conserver l'arrière-plan propre à l'avatar. Si fournie, la valeur doit commencer par `#`. Valeur par défaut : `""`. | STRING | Non |  |
-| `seed` | Non envoyé à HeyGen ; modifiez-le pour forcer une nouvelle exécution. Valeur par défaut : `42`. | INT | Non | Min : 0<br>Max : 2147483647 |
+| `moteur` | Moteur de rendu ; chaque choix ne liste que les avatars qui le prennent en charge. `"auto"` propose tous les avatars et sélectionne son meilleur moteur (Avatar IV privilégié). Avatar V offre la plus haute fidélité, Avatar III est le plus abordable. | DYNAMIC_COMBO | Oui | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
+| `identifiant_avatar_personnalisé` | ID d'apparence d'avatar HeyGen facultatif. Lorsqu'il est défini, remplace l'avatar sélectionné ci-dessus. N'importe laquelle des plus de 3000 apparences publiques de HeyGen (ou vos avatars privés) peut être utilisée. Valeur par défaut : `""`. | STRING | Non |  |
+| `parole` | Pilotez l'avatar avec un script texte (synthèse vocale HeyGen) ou votre propre audio. Nom d'affichage : « speech source ». | DYNAMIC_COMBO | Oui | `"script"`<br>`"audio"` |
+| `résolution` | Résolution de la vidéo de sortie. Valeur par défaut : `"1080p"`. | COMBO | Non | `"720p"`<br>`"1080p"` |
+| `format d’image` | Format d'image de la vidéo de sortie. `"auto"` suit la séquence source de l'avatar. Valeur par défaut : `"auto"`. | COMBO | Non | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `couleur de fond` | Couleur d'arrière-plan unie facultative sous forme de code hexadécimal (par ex. `"#00ff00"`). Laissez vide pour conserver l'arrière-plan propre à l'avatar. Si fournie, la valeur doit commencer par `#`. Valeur par défaut : `""`. | STRING | Non |  |
+| `graine` | Non envoyé à HeyGen ; modifiez-le pour forcer une nouvelle exécution. Valeur par défaut : `42`. | INT | Non | Min : 0<br>Max : 2147483647 |
 
 ### Entrées `auto`
 

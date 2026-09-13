@@ -7,12 +7,12 @@ SV3D_Conditioning prepara dados de condicionamento para geração de vídeo 3D u
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `clip_vision` | O modelo de visão CLIP usado para codificar a imagem de entrada | CLIP_VISION | Sim | - |
-| `init_image` | A imagem inicial que serve como ponto de partida para a geração de vídeo 3D | IMAGE | Sim | - |
+| `imagem_inicial` | A imagem inicial que serve como ponto de partida para a geração de vídeo 3D | IMAGE | Sim | - |
 | `vae` | O modelo VAE usado para codificar a imagem no espaço latente | VAE | Sim | - |
-| `width` | A largura de saída para os quadros de vídeo gerados (padrão: 576, passo de 8) | INT | Sim | 16 a MAX_RESOLUTION |
-| `height` | A altura de saída para os quadros de vídeo gerados (padrão: 576, passo de 8) | INT | Sim | 16 a MAX_RESOLUTION |
-| `video_frames` | O número de quadros a gerar para a sequência de vídeo (padrão: 21) | INT | Sim | 1 a 4096 |
-| `elevation` | O ângulo de elevação da câmera em graus para a visualização 3D (padrão: 0.0, passo de 0.1) | FLOAT | Sim | -90.0 a 90.0 |
+| `largura` | A largura de saída para os quadros de vídeo gerados (padrão: 576, passo de 8) | INT | Sim | 16 a MAX_RESOLUTION |
+| `altura` | A altura de saída para os quadros de vídeo gerados (padrão: 576, passo de 8) | INT | Sim | 16 a MAX_RESOLUTION |
+| `quadros_de_vídeo` | O número de quadros a gerar para a sequência de vídeo (padrão: 21) | INT | Sim | 1 a 4096 |
+| `elevação` | O ângulo de elevação da câmera em graus para a visualização 3D (padrão: 0.0, passo de 0.1) | FLOAT | Sim | -90.0 a 90.0 |
 
 Observação: O azimute da câmera começa em 0 graus e aumenta em uma quantidade constante a cada quadro, de modo que a câmera complete uma órbita completa de 360 graus ao redor do objeto ao longo dos quadros gerados. O incremento por quadro é calculado como 360 dividido por (`video_frames` - 1), usando um divisor mínimo de 2 quando apenas um quadro é solicitado. O valor de `elevation` permanece constante para todos os quadros.
 

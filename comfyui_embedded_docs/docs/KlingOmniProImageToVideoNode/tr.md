@@ -14,8 +14,8 @@ Bu düğüm, bir metin istemi ve en fazla yedi referans görseline dayalı olara
 | `duration` | Videonun saniye cinsinden uzunluğu, bir kaydırıcıyla ayarlanır (varsayılan: 5). | INT | Evet | 3 - 15 |
 | `reference_images` | En fazla 7 referans görseli. Her görsel en az 300x300 piksel olmalı ve en-boy oranı 1:2.5 ile 2.5:1 arasında olmalıdır. | IMAGE | Evet | 1 - 7 görsel |
 | `resolution` | Videonun çıktı çözünürlüğü (varsayılan: `"1080p"`). | COMBO | Hayır | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | Her biri kendi istemi ve süresine sahip bir dizi video segmenti oluşturun. Yalnızca `kling-v3-omni` için desteklenir. Etkinleştirildiğinde genel `prompt` yok sayılır ve tüm storyboard segmentlerinin toplam süresi genel `duration` değerine eşit olmalıdır (varsayılan: `"disabled"`). | DYNAMIC_COMBO | Hayır | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | Video için ses oluştur. Yalnızca `kling-v3-omni` için desteklenir (varsayılan: false). | BOOLEAN | Hayır | `true`<br>`false` |
+| `hikaye_tahtaları` | Her biri kendi istemi ve süresine sahip bir dizi video segmenti oluşturun. Yalnızca `kling-v3-omni` için desteklenir. Etkinleştirildiğinde genel `prompt` yok sayılır ve tüm storyboard segmentlerinin toplam süresi genel `duration` değerine eşit olmalıdır (varsayılan: `"disabled"`). | DYNAMIC_COMBO | Hayır | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `ses_oluştur` | Video için ses oluştur. Yalnızca `kling-v3-omni` için desteklenir (varsayılan: false). | BOOLEAN | Hayır | `true`<br>`false` |
 | `seed` | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Hayır | 0 - 2147483647 |
 
 ### Storyboard Girdileri

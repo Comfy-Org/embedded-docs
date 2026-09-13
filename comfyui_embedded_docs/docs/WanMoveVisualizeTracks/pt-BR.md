@@ -6,12 +6,12 @@ O nó WanMoveVisualizeTracks sobrepõe dados de rastreamento de movimento a uma 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `images` | A sequência de imagens de entrada ou quadros de vídeo nos quais visualizar os rastreamentos. | IMAGE | Sim | - |
-| `tracks` | Os dados de rastreamento de movimento contendo caminhos de pontos e informações de visibilidade. Se não forem fornecidos, as imagens de entrada são repassadas sem alterações. | TRACKS | Não | - |
-| `line_resolution` | O número de quadros anteriores a serem usados ao desenhar a linha do caminho percorrido para cada rastreamento (padrão: 24). | INT | Sim | 1 - 1024 |
-| `circle_size` | O tamanho do círculo desenhado na posição atual de cada rastreamento (padrão: 12). Marcado como parâmetro avançado. | INT | Sim | 1 - 128 |
-| `opacity` | A opacidade das sobreposições de rastreamento desenhadas (padrão: 0.75). | FLOAT | Sim | 0.0 - 1.0 |
-| `line_width` | A largura das linhas usadas para desenhar os caminhos dos rastreamentos (padrão: 16). Marcado como parâmetro avançado. | INT | Sim | 1 - 128 |
+| `imagens` | A sequência de imagens de entrada ou quadros de vídeo nos quais visualizar os rastreamentos. | IMAGE | Sim | - |
+| `trilhas` | Os dados de rastreamento de movimento contendo caminhos de pontos e informações de visibilidade. Se não forem fornecidos, as imagens de entrada são repassadas sem alterações. | TRACKS | Não | - |
+| `resolução_da_linha` | O número de quadros anteriores a serem usados ao desenhar a linha do caminho percorrido para cada rastreamento (padrão: 24). | INT | Sim | 1 - 1024 |
+| `tamanho_do_círculo` | O tamanho do círculo desenhado na posição atual de cada rastreamento (padrão: 12). Marcado como parâmetro avançado. | INT | Sim | 1 - 128 |
+| `opacidade` | A opacidade das sobreposições de rastreamento desenhadas (padrão: 0.75). | FLOAT | Sim | 0.0 - 1.0 |
+| `largura_da_linha` | A largura das linhas usadas para desenhar os caminhos dos rastreamentos (padrão: 16). Marcado como parâmetro avançado. | INT | Sim | 1 - 128 |
 
 **Nota:** Se o número de imagens de entrada não corresponder ao número de quadros nos dados de `tracks` fornecidos, a sequência de imagens será repetida para corresponder ao comprimento dos rastreamentos.
 

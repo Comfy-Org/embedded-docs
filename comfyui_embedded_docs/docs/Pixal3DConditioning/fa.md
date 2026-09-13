@@ -7,7 +7,7 @@
 | پارامتر | توضیحات | نوع داده | الزامی | بازه |
 |-----------|-------------|-----------|----------|-------|
 | `clip_vision_model` | DINOv3 ViT-L/16 ClipVision. | CLIP_VISION | بله | — |
-| `image` | تصویر پیش‌پردازش‌شده از ImageCropToMask (pad_factor=1.1 برای Pixal3D). | IMAGE | بله | — |
+| `تصویر` | تصویر پیش‌پردازش‌شده از ImageCropToMask (pad_factor=1.1 برای Pixal3D). | IMAGE | بله | — |
 | `camera_angle_x` | FOV افقی بر حسب درجه (به‌صورت `fov` نمایش داده می‌شود). یک MoGeGeometryToFOV (axis='horizontal', unit='degrees') وصل کنید تا FoV برای هر تصویر داشته باشید (مطابق پیش‌فرض بالادست). پیش‌فرض: 49.13. | FLOAT | بله | 1.0 – 170.0 (گام 0.01) |
 
 ## خروجی‌ها

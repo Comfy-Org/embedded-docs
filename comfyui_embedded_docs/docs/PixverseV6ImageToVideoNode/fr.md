@@ -9,7 +9,7 @@ Ce nœud anime une image d'entrée avec le modèle PixVerse V6 et renvoie une vi
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
 | `image` | L'image d'entrée à animer. | IMAGE | Oui | Image unique |
-| `model` | Modèle et paramètres de génération. | DYNAMIC_COMBO | Oui | "PixVerse V6" |
+| `modèle` | Modèle et paramètres de génération. | DYNAMIC_COMBO | Oui | "PixVerse V6" |
 
 ### Entrées PixVerse V6
 

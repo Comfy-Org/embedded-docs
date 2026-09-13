@@ -8,19 +8,19 @@ Ce nœud est une version héritée et est marqué comme obsolète dans l'interfa
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle d'IA à utiliser pour l'amélioration de l'image. | COMBO | Oui | `"Reimagine"` |
+| `modèle` | Le modèle d'IA à utiliser pour l'amélioration de l'image. | COMBO | Oui | `"Reimagine"` |
 | `image` | L'image d'entrée à améliorer. Une seule image est prise en charge. | IMAGE | Oui | - |
-| `prompt` | Invite textuelle facultative pour guider la mise à l'échelle créative (par défaut : vide). | STRING | Non | - |
-| `subject_detection` | Contrôle la partie de l'image sur laquelle l'amélioration se concentre (par défaut : "All"). | COMBO | Non | `"All"`<br>`"Foreground"`<br>`"Background"` |
-| `face_enhancement` | Améliore les visages (s'ils sont présents) pendant le traitement (par défaut : True). | BOOLEAN | Non | - |
-| `face_enhancement_creativity` | Définit le niveau de créativité pour l'amélioration des visages (par défaut : 0.0). | FLOAT | Non | 0.0 - 1.0 |
-| `face_enhancement_strength` | Contrôle la netteté des visages améliorés par rapport à l'arrière-plan (par défaut : 1.0). | FLOAT | Non | 0.0 - 1.0 |
-| `crop_to_fill` | Par défaut, l'image est letterboxée lorsque le rapport d'aspect de sortie diffère. Activez cette option pour recadrer l'image afin de remplir les dimensions de sortie (par défaut : False). | BOOLEAN | Non | - |
-| `output_width` | Une valeur nulle signifie que la valeur est calculée automatiquement (il s'agira généralement de la taille d'origine ou de output_height si spécifié) (par défaut : 0). | INT | Non | 0 - 32000 |
-| `output_height` | Une valeur nulle signifie que la sortie aura la même hauteur que l'original ou que la largeur de sortie (par défaut : 0). | INT | Non | 0 - 32000 |
-| `creativity` | Contrôle le niveau global de créativité de l'amélioration (par défaut : 3). | INT | Non | 1 - 9 |
-| `face_preservation` | Préserve l'identité faciale des sujets (par défaut : True). | BOOLEAN | Non | - |
-| `color_preservation` | Préserve les couleurs d'origine (par défaut : True). | BOOLEAN | Non | - |
+| `invite` | Invite textuelle facultative pour guider la mise à l'échelle créative (par défaut : vide). | STRING | Non | - |
+| `détection du sujet` | Contrôle la partie de l'image sur laquelle l'amélioration se concentre (par défaut : "All"). | COMBO | Non | `"All"`<br>`"Foreground"`<br>`"Background"` |
+| `amélioration du visage` | Améliore les visages (s'ils sont présents) pendant le traitement (par défaut : True). | BOOLEAN | Non | - |
+| `créativité de l'amélioration du visage` | Définit le niveau de créativité pour l'amélioration des visages (par défaut : 0.0). | FLOAT | Non | 0.0 - 1.0 |
+| `intensité de l'amélioration du visage` | Contrôle la netteté des visages améliorés par rapport à l'arrière-plan (par défaut : 1.0). | FLOAT | Non | 0.0 - 1.0 |
+| `rogner pour remplir` | Par défaut, l'image est letterboxée lorsque le rapport d'aspect de sortie diffère. Activez cette option pour recadrer l'image afin de remplir les dimensions de sortie (par défaut : False). | BOOLEAN | Non | - |
+| `largeur de sortie` | Une valeur nulle signifie que la valeur est calculée automatiquement (il s'agira généralement de la taille d'origine ou de output_height si spécifié) (par défaut : 0). | INT | Non | 0 - 32000 |
+| `hauteur de sortie` | Une valeur nulle signifie que la sortie aura la même hauteur que l'original ou que la largeur de sortie (par défaut : 0). | INT | Non | 0 - 32000 |
+| `créativité` | Contrôle le niveau global de créativité de l'amélioration (par défaut : 3). | INT | Non | 1 - 9 |
+| `préservation du visage` | Préserve l'identité faciale des sujets (par défaut : True). | BOOLEAN | Non | - |
+| `préservation des couleurs` | Préserve les couleurs d'origine (par défaut : True). | BOOLEAN | Non | - |
 
 **Remarque :** Ce nœud ne peut traiter qu'une seule image d'entrée. Fournir un lot de plusieurs images entraînera une erreur.
 

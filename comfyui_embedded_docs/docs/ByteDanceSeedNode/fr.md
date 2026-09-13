@@ -8,10 +8,10 @@ Générez des réponses textuelles avec les modèles Seed 2.0 de ByteDance. Four
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `prompt` | Entrée textuelle pour le modèle. (par défaut : "") | STRING | Oui | N/A |
-| `model` | Le modèle Seed utilisé pour générer la réponse. Ce sélecteur expose également les sous-paramètres du modèle. | DYNAMIC_COMBO | Oui | `"Seed 2.0 Pro"`<br>`"Seed 2.0 Lite"`<br>`"Seed 2.0 Mini"` |
+| `invite` | Entrée textuelle pour le modèle. (par défaut : "") | STRING | Oui | N/A |
+| `modèle` | Le modèle Seed utilisé pour générer la réponse. Ce sélecteur expose également les sous-paramètres du modèle. | DYNAMIC_COMBO | Oui | `"Seed 2.0 Pro"`<br>`"Seed 2.0 Lite"`<br>`"Seed 2.0 Mini"` |
 | `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. (par défaut : 0) | INT | Oui | 0 à 2147483647 |
-| `system_prompt` | Instructions fondamentales qui dictent le comportement du modèle. (par défaut : "") | STRING | Non | N/A |
+| `invite système` | Instructions fondamentales qui dictent le comportement du modèle. (par défaut : "") | STRING | Non | N/A |
 
 ### Entrées du modèle (partagées par Seed 2.0 Pro, Seed 2.0 Lite et Seed 2.0 Mini)
 

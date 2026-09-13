@@ -6,14 +6,14 @@ LTXV Reference Audio transfiere la identidad de voz de un hablante desde un clip
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo al que se le aplicará el parche con guía de identidad. | MODEL | Sí | - |
-| `positive` | La entrada de condicionamiento positivo. | CONDITIONING | Sí | - |
-| `negative` | La entrada de condicionamiento negativo. | CONDITIONING | Sí | - |
-| `reference_audio` | Clip de audio de referencia cuya identidad de hablante se transferirá. Se recomiendan ~5 segundos (duración de entrenamiento). Los clips más cortos o más largos pueden degradar la transferencia de identidad de voz. | AUDIO | Sí | - |
+| `modelo` | El modelo al que se le aplicará el parche con guía de identidad. | MODEL | Sí | - |
+| `positivo` | La entrada de condicionamiento positivo. | CONDITIONING | Sí | - |
+| `negativo` | La entrada de condicionamiento negativo. | CONDITIONING | Sí | - |
+| `audio_referencia` | Clip de audio de referencia cuya identidad de hablante se transferirá. Se recomiendan ~5 segundos (duración de entrenamiento). Los clips más cortos o más largos pueden degradar la transferencia de identidad de voz. | AUDIO | Sí | - |
 | `audio_vae` | VAE de audio de LTXV para la codificación. | VAE | Sí | - |
-| `identity_guidance_scale` | Intensidad de la guía de identidad. Ejecuta una pasada forward adicional sin la referencia en cada paso para amplificar la identidad del hablante. Establecer en 0 para deshabilitar (sin pasada adicional). (predeterminado: 3.0) | FLOAT | Sí | 0.0 - 100.0 |
-| `start_percent` | Inicio del rango de sigma donde la guía de identidad está activa. (predeterminado: 0.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `end_percent` | Fin del rango de sigma donde la guía de identidad está activa. (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `escala_guía_identidad` | Intensidad de la guía de identidad. Ejecuta una pasada forward adicional sin la referencia en cada paso para amplificar la identidad del hablante. Establecer en 0 para deshabilitar (sin pasada adicional). (predeterminado: 3.0) | FLOAT | Sí | 0.0 - 100.0 |
+| `porcentaje_inicio` | Inicio del rango de sigma donde la guía de identidad está activa. (predeterminado: 0.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `porcentaje_fin` | Fin del rango de sigma donde la guía de identidad está activa. (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 
 Nota: La guía de identidad solo se aplica cuando `identity_guidance_scale` es mayor que 0 y el paso de muestreo actual está dentro del rango definido por `start_percent` y `end_percent`. El audio de referencia se remuestrea a la frecuencia de muestreo del VAE de audio si ambos difieren.
 

@@ -6,13 +6,13 @@ Recorta uma imagem para a caixa delimitadora de sua máscara, produzindo um suje
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `images` | A imagem de entrada ou lote de imagens a recortar. | IMAGE | Sim | — |
-| `masks` | A máscara ou lote de máscaras que define a área do sujeito. Uma única máscara é aplicada a todas as imagens; caso contrário, o tamanho do lote de máscaras deve corresponder ao tamanho do lote de imagens. Se a resolução da máscara for diferente da resolução da imagem, a máscara será redimensionada automaticamente para corresponder. | MASK | Sim | — |
-| `width` | Largura de saída em pixels. (padrão: 1024) | INT | Sim | 64 a 4096 (passo 8) |
-| `height` | Altura de saída em pixels. (padrão: 1024) | INT | Sim | 64 a 4096 (passo 8) |
+| `imagens` | A imagem de entrada ou lote de imagens a recortar. | IMAGE | Sim | — |
+| `máscaras` | A máscara ou lote de máscaras que define a área do sujeito. Uma única máscara é aplicada a todas as imagens; caso contrário, o tamanho do lote de máscaras deve corresponder ao tamanho do lote de imagens. Se a resolução da máscara for diferente da resolução da imagem, a máscara será redimensionada automaticamente para corresponder. | MASK | Sim | — |
+| `largura` | Largura de saída em pixels. (padrão: 1024) | INT | Sim | 64 a 4096 (passo 8) |
+| `altura` | Altura de saída em pixels. (padrão: 1024) | INT | Sim | 64 a 4096 (passo 8) |
 | `pad_factor` | Margem extra ao redor da caixa delimitadora da máscara como multiplicador. (padrão: 1.0) | FLOAT | Sim | 1.0 a 2.0 (passo 0.01) |
 | `grow_mask` | Expande ou reduz a máscara nessa quantidade de pixels antes do recorte. Valores positivos expandem a máscara, valores negativos a reduzem. (padrão: 0) | INT | Sim | -32 a 32 (passo 1) |
-| `background` | Cor de fundo atrás do sujeito mascarado. (padrão: #000000) | COLOR | Sim | — |
+| `plano de fundo` | Cor de fundo atrás do sujeito mascarado. (padrão: #000000) | COLOR | Sim | — |
 
 Nota: A região de recorte é centralizada na caixa delimitadora da máscara e sua proporção corresponde a `width` / `height`. O nó detecta e corrige automaticamente uma máscara invertida (pixels de primeiro plano ao longo da borda, fundo no centro). Se a máscara não contiver pixels de primeiro plano, o nó tenta a máscara invertida; se essa também estiver vazia, ele registra um aviso e recorta a imagem inteira. Um erro é gerado quando o tamanho do lote de máscaras não corresponde ao tamanho do lote de imagens e não se trata de uma única máscara.
 

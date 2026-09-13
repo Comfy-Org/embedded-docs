@@ -6,9 +6,9 @@ O nó If/Else Switch seleciona entre duas entradas possíveis com base em uma co
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `switch` | Uma condição booleana que determina qual entrada é passada para a saída. Quando habilitado (true), a entrada `on_true` é selecionada. Quando desabilitado (false), a entrada `on_false` é selecionada. | BOOLEAN | Sim |  |
-| `on_false` | Os dados a serem passados para a saída quando `switch` estiver desabilitado (false). Esta entrada é solicitada apenas quando `switch` for false. | MATCH_TYPE | Não |  |
-| `on_true` | Os dados a serem passados para a saída quando `switch` estiver habilitado (true). Esta entrada é solicitada apenas quando `switch` for true. | MATCH_TYPE | Não |  |
+| `alternar` | Uma condição booleana que determina qual entrada é passada para a saída. Quando habilitado (true), a entrada `on_true` é selecionada. Quando desabilitado (false), a entrada `on_false` é selecionada. | BOOLEAN | Sim |  |
+| `falso` | Os dados a serem passados para a saída quando `switch` estiver desabilitado (false). Esta entrada é solicitada apenas quando `switch` for false. | MATCH_TYPE | Não |  |
+| `verdadeiro` | Os dados a serem passados para a saída quando `switch` estiver habilitado (true). Esta entrada é solicitada apenas quando `switch` for true. | MATCH_TYPE | Não |  |
 
 **Nota sobre os requisitos das entradas:** As entradas `on_false` e `on_true` são solicitadas condicionalmente. O nó solicita `on_true` apenas quando `switch` for true, e solicita `on_false` apenas quando `switch` for false. Ambas as entradas devem ser do mesmo tipo de dados, e esse tipo deve corresponder ao tipo de dados da saída. Se a entrada selecionada não estiver conectada, o nó não gera nenhum valor.
 

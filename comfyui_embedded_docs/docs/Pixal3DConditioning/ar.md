@@ -7,7 +7,7 @@
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
 | `clip_vision_model` | DINOv3 ViT-L/16 ClipVision. | CLIP_VISION | نعم | — |
-| `image` | صورة مُعالَجة مسبقًا من ImageCropToMask (pad_factor=1.1 لـ Pixal3D). | IMAGE | نعم | — |
+| `الصورة` | صورة مُعالَجة مسبقًا من ImageCropToMask (pad_factor=1.1 لـ Pixal3D). | IMAGE | نعم | — |
 | `camera_angle_x` | مجال الرؤية الأفقي FOV بالدرجات (يُعرض باسم `fov`). وصّل MoGeGeometryToFOV (axis='horizontal', unit='degrees') للحصول على FoV لكل صورة (يطابق الافتراضي في المنبع). الافتراضي: 49.13. | FLOAT | نعم | 1.0 – 170.0 (خطوة: 0.01) |
 
 ## المخرجات

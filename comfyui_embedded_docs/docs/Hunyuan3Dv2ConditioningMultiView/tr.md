@@ -6,10 +6,10 @@ Hunyuan3Dv2ConditioningMultiView düğümü, en fazla dört görünümden (ön, 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `front` | Ön görünüm için CLIP vision çıktısı. İsteğe bağlı görünüm girdisi. | CLIP_VISION_OUTPUT | Hayır | - |
-| `left` | Sol görünüm için CLIP vision çıktısı. İsteğe bağlı görünüm girdisi. | CLIP_VISION_OUTPUT | Hayır | - |
-| `back` | Arka görünüm için CLIP vision çıktısı. İsteğe bağlı görünüm girdisi. | CLIP_VISION_OUTPUT | Hayır | - |
-| `right` | Sağ görünüm için CLIP vision çıktısı. İsteğe bağlı görünüm girdisi. | CLIP_VISION_OUTPUT | Hayır | - |
+| `ön` | Ön görünüm için CLIP vision çıktısı. İsteğe bağlı görünüm girdisi. | CLIP_VISION_OUTPUT | Hayır | - |
+| `sol` | Sol görünüm için CLIP vision çıktısı. İsteğe bağlı görünüm girdisi. | CLIP_VISION_OUTPUT | Hayır | - |
+| `arka` | Arka görünüm için CLIP vision çıktısı. İsteğe bağlı görünüm girdisi. | CLIP_VISION_OUTPUT | Hayır | - |
+| `sağ` | Sağ görünüm için CLIP vision çıktısı. İsteğe bağlı görünüm girdisi. | CLIP_VISION_OUTPUT | Hayır | - |
 
 **Not:** Düğümün çalışması için en az bir görünüm girdisi sağlanmalıdır. Düğüm yalnızca geçerli CLIP vision çıktı verisi içeren görünümleri işler ve bağlı olmayan görünümleri atlar. Her görünüm, yuvasına (ön, sol, arka, sağ) göre sabit bir konumsal kodlama alır ve sağlanan tüm görünümlerden işlenen gömme vektörleri dizi boyutu boyunca birleştirilir.
 

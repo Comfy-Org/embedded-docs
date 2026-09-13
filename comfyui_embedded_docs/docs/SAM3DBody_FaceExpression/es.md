@@ -8,8 +8,8 @@ Este nodo añade expresiones faciales a un cuerpo SAM3D detectando rostros en un
 |-----------|-------------|---------------|-------------|-------|
 | `sam3d_body_model` | El modelo corporal SAM3D que contiene el detector de puntos faciales usado para detectar rostros y regenerar la malla del cuerpo. | SAM3D_BODY_MODEL | Sí | - |
 | `mhr_pose_data` | Datos de pose que contienen personas rastreadas por fotograma con cuadros delimitadores, puntos clave y parámetros de expresión. El nodo empareja cada rostro detectado con una persona y escribe los parámetros de expresión actualizados en estos datos. | MHR_POSE_DATA | Sí | - |
-| `image` | Fotogramas de imagen usados para detectar rostros. Si el lote de imágenes tiene menos fotogramas que los datos de pose, el último fotograma se reutiliza para los fotogramas restantes. | IMAGE | Sí | - |
-| `strength` | Multiplicador global sobre todos los blendshapes. >1 exagera. Predeterminado: 1.0. | FLOAT | No | 0.0 a 4.0 (paso 0.05, predeterminado 1.0) |
+| `imagen` | Fotogramas de imagen usados para detectar rostros. Si el lote de imágenes tiene menos fotogramas que los datos de pose, el último fotograma se reutiliza para los fotogramas restantes. | IMAGE | Sí | - |
+| `intensidad` | Multiplicador global sobre todos los blendshapes. >1 exagera. Predeterminado: 1.0. | FLOAT | No | 0.0 a 4.0 (paso 0.05, predeterminado 1.0) |
 | `mouth_strength` | Multiplicador sobre las formas de boca/mandíbula. jawOpen de MediaPipe se satura cerca de 1.0. Predeterminado: 1.0. | FLOAT | No | 0.0 a 4.0 (paso 0.05, predeterminado 1.0) |
 | `eye_strength` | Multiplicador sobre las formas de ojos. MediaPipe rara vez supera 0.5; a menudo se necesita 2-3x. Predeterminado: 2.0. | FLOAT | No | 0.0 a 4.0 (paso 0.05, predeterminado 2.0) |
 | `brow_strength` | Multiplicador sobre las formas de cejas/mejillas/mueca. MediaPipe genera ~0.1-0.3; 2-3x. Predeterminado: 2.0. | FLOAT | No | 0.0 a 4.0 (paso 0.05, predeterminado 2.0) |

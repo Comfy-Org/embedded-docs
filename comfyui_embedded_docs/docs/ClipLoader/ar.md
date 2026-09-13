@@ -6,9 +6,9 @@
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
-| `clip_name` | اسم ملف نموذج المُرمِّز النصي المراد تحميله. يجب أن يكون ملفًا موجودًا في المجلد `ComfyUI/models/text_encoders/`. | STRING | نعم | قائمة بالملفات الموجودة في مجلد `text_encoders` |
-| `type` | نوع معمارية النموذج الذي يتم تحميله. يحدد هذا أي متغير مُرمِّز محدد يجب استخدامه (الافتراضي: `"stable_diffusion"`). | COMBO | نعم | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
-| `device` | الجهاز الذي سيُحمَّل عليه النموذج. يستخدم `"default"` وحدة معالجة الرسوميات (GPU) إذا كانت متاحة، بينما يفرض `"cpu"` التحميل على المعالج (CPU). هذا خيار متقدم (الافتراضي: `"default"`). | COMBO | لا | `"default"`<br>`"cpu"` |
+| `اسم CLIP` | اسم ملف نموذج المُرمِّز النصي المراد تحميله. يجب أن يكون ملفًا موجودًا في المجلد `ComfyUI/models/text_encoders/`. | STRING | نعم | قائمة بالملفات الموجودة في مجلد `text_encoders` |
+| `النوع` | نوع معمارية النموذج الذي يتم تحميله. يحدد هذا أي متغير مُرمِّز محدد يجب استخدامه (الافتراضي: `"stable_diffusion"`). | COMBO | نعم | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
+| `الجهاز` | الجهاز الذي سيُحمَّل عليه النموذج. يستخدم `"default"` وحدة معالجة الرسوميات (GPU) إذا كانت متاحة، بينما يفرض `"cpu"` التحميل على المعالج (CPU). هذا خيار متقدم (الافتراضي: `"default"`). | COMBO | لا | `"default"`<br>`"cpu"` |
 
 ### تعيينات النوع إلى المُرمِّز المدعومة
 

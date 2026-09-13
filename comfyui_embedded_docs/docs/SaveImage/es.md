@@ -6,8 +6,8 @@ El nodo SaveImage guarda las imágenes de entrada como archivos PNG en tu direct
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `images` | Las imágenes que se van a guardar. | IMAGE | Sí | - |
-| `filename_prefix` | El prefijo para el archivo que se va a guardar. Puede incluir información de formato como `%date:yyyy-MM-dd%` o `%Empty Latent Image.width%` para incluir valores de los nodos (predeterminado: "ComfyUI"). | STRING | Sí | - |
+| `imágenes` | Las imágenes que se van a guardar. | IMAGE | Sí | - |
+| `prefijo_nombre_archivo` | El prefijo para el archivo que se va a guardar. Puede incluir información de formato como `%date:yyyy-MM-dd%` o `%Empty Latent Image.width%` para incluir valores de los nodos (predeterminado: "ComfyUI"). | STRING | Sí | - |
 
 El nodo también recibe dos entradas ocultas, `prompt` y `extra_pnginfo`, que ComfyUI rellena automáticamente con el prompt del flujo de trabajo y la información adicional del PNG. Cuando los metadatos están habilitados, esta información se incrusta como metadatos de texto en cada archivo PNG guardado.
 

@@ -6,7 +6,7 @@ Ce nœud charge un fichier de modèle d'interpolation de trames et le prépare p
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model_name` | Sélectionnez un modèle d'interpolation de trames à charger. Les modèles doivent être placés dans le dossier 'frame_interpolation'. | COMBO | Oui | Liste des fichiers de modèle dans le dossier `frame_interpolation` |
+| `nom_du_modèle` | Sélectionnez un modèle d'interpolation de trames à charger. Les modèles doivent être placés dans le dossier 'frame_interpolation'. | COMBO | Oui | Liste des fichiers de modèle dans le dossier `frame_interpolation` |
 
 Remarque : Le nœud prend en charge les formats de modèle FILM et RIFE. Si le fichier sélectionné n'est pas dans un format reconnu, une erreur est générée.
 

@@ -8,7 +8,7 @@ AudioEncoderLoader düğümü, `audio_encoders` klasöründe depolanan bir dosya
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `audio_encoder_name` | Ses kodlayıcıları klasöründen hangi ses kodlayıcı modeli dosyasının yükleneceğini seçer | COMBO | Evet | `audio_encoders` klasöründeki kullanılabilir ses kodlayıcı dosyalarının listesi |
+| `ses_kodlayıcı_adı` | Ses kodlayıcıları klasöründen hangi ses kodlayıcı modeli dosyasının yükleneceğini seçer | COMBO | Evet | `audio_encoders` klasöründeki kullanılabilir ses kodlayıcı dosyalarının listesi |
 
 ## Çıktılar
 

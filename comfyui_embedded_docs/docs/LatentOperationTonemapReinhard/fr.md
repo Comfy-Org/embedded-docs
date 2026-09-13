@@ -6,7 +6,7 @@ Ce nœud crée une opération latente qui applique un tonemapping Reinhard aux v
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `multiplier` | Contrôle l’intensité de l’effet de tonemapping (par défaut : 1.0) | FLOAT | Oui | 0.0 à 100.0 (pas de 0.01) |
+| `multiplicateur` | Contrôle l’intensité de l’effet de tonemapping (par défaut : 1.0) | FLOAT | Oui | 0.0 à 100.0 (pas de 0.01) |
 
 ## Sorties
 

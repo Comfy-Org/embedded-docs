@@ -6,13 +6,13 @@ Le nœud Vidu2 Text-to-Video Generation crée une vidéo à partir d'une descrip
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle d'IA à utiliser pour la génération de vidéo. Actuellement, un seul modèle est disponible. | COMBO | Oui | `"viduq2"` |
-| `prompt` | Une description textuelle pour la génération de vidéo, d'une longueur maximale de 2000 caractères. | STRING | Oui | - |
-| `duration` | La durée de la vidéo générée en secondes. La valeur peut être ajustée à l'aide d'un curseur (par défaut : 5). | INT | Non | 1 à 10 |
-| `seed` | Un nombre utilisé pour contrôler l'aléatoire de la génération, permettant d'obtenir des résultats reproductibles. Cette valeur peut être contrôlée après la génération (par défaut : 1). | INT | Non | 0 à 2147483647 |
-| `aspect_ratio` | Le rapport proportionnel entre la largeur et la hauteur de la vidéo. | COMBO | Non | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
-| `resolution` | Les dimensions en pixels de la vidéo générée. Il s'agit d'un paramètre avancé. | COMBO | Non | `"720p"`<br>`"1080p"` |
-| `background_music` | Indique s'il faut ajouter de la musique de fond à la vidéo générée (par défaut : False). Il s'agit d'un paramètre avancé. | BOOLEAN | Non | - |
+| `modèle` | Le modèle d'IA à utiliser pour la génération de vidéo. Actuellement, un seul modèle est disponible. | COMBO | Oui | `"viduq2"` |
+| `invite` | Une description textuelle pour la génération de vidéo, d'une longueur maximale de 2000 caractères. | STRING | Oui | - |
+| `durée` | La durée de la vidéo générée en secondes. La valeur peut être ajustée à l'aide d'un curseur (par défaut : 5). | INT | Non | 1 à 10 |
+| `graine` | Un nombre utilisé pour contrôler l'aléatoire de la génération, permettant d'obtenir des résultats reproductibles. Cette valeur peut être contrôlée après la génération (par défaut : 1). | INT | Non | 0 à 2147483647 |
+| `rapport d'aspect` | Le rapport proportionnel entre la largeur et la hauteur de la vidéo. | COMBO | Non | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
+| `résolution` | Les dimensions en pixels de la vidéo générée. Il s'agit d'un paramètre avancé. | COMBO | Non | `"720p"`<br>`"1080p"` |
+| `musique de fond` | Indique s'il faut ajouter de la musique de fond à la vidéo générée (par défaut : False). Il s'agit d'un paramètre avancé. | BOOLEAN | Non | - |
 
 ## Sorties
 

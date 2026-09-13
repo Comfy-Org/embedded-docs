@@ -6,9 +6,9 @@ Frame Interpolate düğümü, bir görüntü dizisindeki mevcut kareler arasınd
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `interp_model` | Ara kareleri oluşturmak için kullanılacak kare enterpolasyon modeli | INTERP_MODEL | Evet | - |
-| `images` | Aralarında enterpolasyon yapılacak ardışık görüntü (kare) grubu. En az 2 görüntü gerektirir. 2'den az kare sağlanırsa düğüm, giriş görüntülerini değiştirmeden döndürür. | IMAGE | Evet | - |
-| `multiplier` | Kare sayısının kaç katına çıkarılacağı. Örneğin, 2 çarpanı kare sayısını iki katına çıkarır. (varsayılan: 2) | INT | Evet | 2 ile 16 |
+| `enterpolasyon_modeli` | Ara kareleri oluşturmak için kullanılacak kare enterpolasyon modeli | INTERP_MODEL | Evet | - |
+| `görseller` | Aralarında enterpolasyon yapılacak ardışık görüntü (kare) grubu. En az 2 görüntü gerektirir. 2'den az kare sağlanırsa düğüm, giriş görüntülerini değiştirmeden döndürür. | IMAGE | Evet | - |
+| `çarpan` | Kare sayısının kaç katına çıkarılacağı. Örneğin, 2 çarpanı kare sayısını iki katına çıkarır. (varsayılan: 2) | INT | Evet | 2 ile 16 |
 
 **Not:** Düğüm, en az 2 giriş karesi ve `multiplier` için en az 2 değeri gerektirir. Bu koşullardan biri karşılanmazsa, giriş görüntüleri değiştirilmeden döndürülür.
 

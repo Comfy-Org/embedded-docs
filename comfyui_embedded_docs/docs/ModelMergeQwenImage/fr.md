@@ -6,8 +6,8 @@ Ce nœud fusionne deux modèles d'image Qwen en mélangeant leurs composants ind
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
-| `model1` | Le premier modèle à fusionner | MODEL | Oui | - |
-| `model2` | Le deuxième modèle à fusionner | MODEL | Oui | - |
+| `modèle1` | Le premier modèle à fusionner | MODEL | Oui | - |
+| `modèle2` | Le deuxième modèle à fusionner | MODEL | Oui | - |
 | `pos_embeds.` | Poids pour le mélange des embeddings positionnels (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
 | `img_in.` | Poids pour le mélange du traitement d'entrée d'image (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
 | `txt_norm.` | Poids pour le mélange de la normalisation de texte (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |

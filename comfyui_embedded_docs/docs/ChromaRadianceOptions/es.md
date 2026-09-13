@@ -6,12 +6,12 @@ El nodo ChromaRadianceOptions te permite configurar ajustes avanzados para el mo
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | El modelo al que se aplicarán las opciones de Chroma Radiance | MODEL | Sí | - |
-| `preserve_wrapper` | Cuando está habilitado, delega a un wrapper de función de modelo existente si existe. Por lo general, debería dejarse habilitado. (predeterminado: True) | BOOLEAN | No | - |
-| `start_sigma` | Primera sigma en la que estas opciones estarán en efecto. (predeterminado: 1.0) | FLOAT | No | 0.0 a 1.0 |
-| `end_sigma` | Última sigma en la que estas opciones estarán en efecto. (predeterminado: 0.0) | FLOAT | No | 0.0 a 1.0 |
-| `nerf_tile_size` | Permite anular el tamaño de tile de NeRF predeterminado. -1 significa usar el valor predeterminado (32). 0 significa usar el modo sin tiles (puede requerir mucha VRAM). (predeterminado: -1) | INT | No | -1 y superior |
-| `force_sequential_txt_ids` | Fuerza el uso de ID de token de texto secuenciales en lugar de ceros. Debe usarse para checkpoints del 2026-05-22 al 2026-06-01 que estén entrenados de esta manera pero que no contengan la clave __sequential__ en el state dict. (predeterminado: False) | BOOLEAN | No | - |
+| `modelo` | El modelo al que se aplicarán las opciones de Chroma Radiance | MODEL | Sí | - |
+| `preservar_envoltorio` | Cuando está habilitado, delega a un wrapper de función de modelo existente si existe. Por lo general, debería dejarse habilitado. (predeterminado: True) | BOOLEAN | No | - |
+| `sigma_inicial` | Primera sigma en la que estas opciones estarán en efecto. (predeterminado: 1.0) | FLOAT | No | 0.0 a 1.0 |
+| `sigma_final` | Última sigma en la que estas opciones estarán en efecto. (predeterminado: 0.0) | FLOAT | No | 0.0 a 1.0 |
+| `tamaño_mosaico_nerf` | Permite anular el tamaño de tile de NeRF predeterminado. -1 significa usar el valor predeterminado (32). 0 significa usar el modo sin tiles (puede requerir mucha VRAM). (predeterminado: -1) | INT | No | -1 y superior |
+| `forzar_ids_de_texto_secuenciales` | Fuerza el uso de ID de token de texto secuenciales en lugar de ceros. Debe usarse para checkpoints del 2026-05-22 al 2026-06-01 que estén entrenados de esta manera pero que no contengan la clave __sequential__ en el state dict. (predeterminado: False) | BOOLEAN | No | - |
 
 **Nota:** Las opciones de Chroma Radiance solo tienen efecto cuando el valor de sigma actual se encuentra entre `end_sigma` y `start_sigma` (inclusive). La opción `nerf_tile_size` solo se aplica cuando se establece en 0 o un valor superior (un valor de -1 usa el tamaño de tile predeterminado de 32 y no almacena ninguna anulación). La opción `force_sequential_txt_ids` solo se aplica cuando se establece en True. Cuando `nerf_tile_size` es -1 y `force_sequential_txt_ids` es False, no se configura ninguna opción y el modelo se devuelve sin cambios sin ningún wrapper aplicado.
 

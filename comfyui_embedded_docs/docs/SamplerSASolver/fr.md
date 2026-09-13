@@ -6,15 +6,15 @@ Le nœud SamplerSASolver crée et configure un sampler personnalisé pour les mo
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle de diffusion dont le calendrier d’échantillonnage est utilisé pour construire le sampler | MODEL | Oui | - |
+| `modèle` | Le modèle de diffusion dont le calendrier d’échantillonnage est utilisé pour construire le sampler | MODEL | Oui | - |
 | `eta` | Contrôle le facteur d’échelle de la taille de pas du solveur SDE (par défaut : 1.0) | FLOAT | Non | 0.0 - 10.0 |
-| `sde_start_percent` | Pourcentage de début du processus d’échantillonnage où commence la composante stochastique (SDE) ; converti en valeur sigma à l’aide du calendrier du modèle (par défaut : 0.2) | FLOAT | Non | 0.0 - 1.0 |
-| `sde_end_percent` | Pourcentage de fin du processus d’échantillonnage où s’arrête la composante stochastique (SDE) ; converti en valeur sigma à l’aide du calendrier du modèle (par défaut : 0.8) | FLOAT | Non | 0.0 - 1.0 |
-| `s_noise` | Contrôle la quantité de bruit ajoutée pendant l’échantillonnage (par défaut : 1.0) | FLOAT | Non | 0.0 - 100.0 |
-| `predictor_order` | Ordre de la composante prédicteur dans le solveur (par défaut : 3) | INT | Non | 1 - 6 |
-| `corrector_order` | Ordre de la composante correcteur dans le solveur (par défaut : 4) | INT | Non | 0 - 6 |
-| `use_pece` | Active la méthode PECE (Predict-Evaluate-Correct-Evaluate) (par défaut : désactivé) | BOOLEAN | Non | - |
-| `simple_order_2` | Active les calculs simplifiés du second ordre (par défaut : désactivé) | BOOLEAN | Non | - |
+| `pourcent_début_sde` | Pourcentage de début du processus d’échantillonnage où commence la composante stochastique (SDE) ; converti en valeur sigma à l’aide du calendrier du modèle (par défaut : 0.2) | FLOAT | Non | 0.0 - 1.0 |
+| `pourcent_fin_sde` | Pourcentage de fin du processus d’échantillonnage où s’arrête la composante stochastique (SDE) ; converti en valeur sigma à l’aide du calendrier du modèle (par défaut : 0.8) | FLOAT | Non | 0.0 - 1.0 |
+| `s_bruit` | Contrôle la quantité de bruit ajoutée pendant l’échantillonnage (par défaut : 1.0) | FLOAT | Non | 0.0 - 100.0 |
+| `ordre_prédicteur` | Ordre de la composante prédicteur dans le solveur (par défaut : 3) | INT | Non | 1 - 6 |
+| `ordre_correcteur` | Ordre de la composante correcteur dans le solveur (par défaut : 4) | INT | Non | 0 - 6 |
+| `utiliser_pece` | Active la méthode PECE (Predict-Evaluate-Correct-Evaluate) (par défaut : désactivé) | BOOLEAN | Non | - |
+| `ordre_simple_2` | Active les calculs simplifiés du second ordre (par défaut : désactivé) | BOOLEAN | Non | - |
 
 Toutes les entrées optionnelles sont marquées comme avancées dans l’interface.
 

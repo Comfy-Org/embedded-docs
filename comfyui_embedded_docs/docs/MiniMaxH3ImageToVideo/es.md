@@ -9,11 +9,11 @@ Este nodo prepara el condicionamiento y el latent vacío necesarios para generar
 | `clip` | Modelo CLIP utilizado para tokenizar el prompt y codificar las imágenes de fotogramas clave en condicionamiento. | CLIP | Sí |  |
 | `vae` | Modelo VAE utilizado para codificar las imágenes de fotogramas clave en el espacio latente cuando se proporcionan imágenes de fotogramas clave. | VAE | Sí |  |
 | `prompt` | Prompt de texto que describe el video a generar. Admite varias líneas y prompts dinámicos. | STRING | Sí |  |
-| `width` | Ancho del video en píxeles (predeterminado: 1344). | INT | Sí | 32 a MAX_RESOLUTION (paso 32) |
-| `height` | Alto del video en píxeles (predeterminado: 768). | INT | Sí | 32 a MAX_RESOLUTION (paso 32) |
-| `length` | Recuento de fotogramas a 24 fps, ajustado hacia arriba a la cuadrícula 17k+5 del modelo (124 = ~5 s; el rango entrenado es ~124-362; los valores más largos no están probados) (predeterminado: 124). | INT | Sí | 5 a 3600 (paso 17) |
-| `first_frame` | Imagen opcional utilizada como primer fotograma del video. Se estira al tamaño completo del lienzo, por lo que no se conserva su relación de aspecto. Solo se utiliza la primera imagen del lote de entrada. | IMAGE | No |  |
-| `last_frame` | Imagen opcional utilizada como último fotograma del video. Se recorta para cubrir el lienzo mientras se conserva su relación de aspecto. Solo se utiliza la primera imagen del lote de entrada. | IMAGE | No |  |
+| `ancho` | Ancho del video en píxeles (predeterminado: 1344). | INT | Sí | 32 a MAX_RESOLUTION (paso 32) |
+| `alto` | Alto del video en píxeles (predeterminado: 768). | INT | Sí | 32 a MAX_RESOLUTION (paso 32) |
+| `duración` | Recuento de fotogramas a 24 fps, ajustado hacia arriba a la cuadrícula 17k+5 del modelo (124 = ~5 s; el rango entrenado es ~124-362; los valores más largos no están probados) (predeterminado: 124). | INT | Sí | 5 a 3600 (paso 17) |
+| `primer_fotograma` | Imagen opcional utilizada como primer fotograma del video. Se estira al tamaño completo del lienzo, por lo que no se conserva su relación de aspecto. Solo se utiliza la primera imagen del lote de entrada. | IMAGE | No |  |
+| `último_fotograma` | Imagen opcional utilizada como último fotograma del video. Se recorta para cubrir el lienzo mientras se conserva su relación de aspecto. Solo se utiliza la primera imagen del lote de entrada. | IMAGE | No |  |
 
 Cuando se proporciona `first_frame` y/o `last_frame`, las imágenes de fotogramas clave se codifican con el VAE y se adjuntan al condicionamiento en el fotograma 0 y en el fotograma final, respectivamente. Cuando no se proporciona ninguno, el nodo funciona solo con el prompt. La `length` solicitada se ajusta hacia arriba al recuento de fotogramas válido más cercano (17k + 5), por lo que el recuento efectivo de fotogramas puede ser ligeramente superior al solicitado.
 

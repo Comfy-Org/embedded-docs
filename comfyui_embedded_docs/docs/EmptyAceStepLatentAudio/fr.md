@@ -6,8 +6,8 @@ Le nœud Empty Ace Step 1.0 Latent Audio crée des échantillons latents audio v
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
-| `seconds` | Durée de l'audio en secondes (par défaut : 120.0, pas : 0.1) | FLOAT | Oui | 1.0 - 1000.0 |
-| `batch_size` | Nombre d'images latentes dans le lot (par défaut : 1) | INT | Oui | 1 - 4096 |
+| `secondes` | Durée de l'audio en secondes (par défaut : 120.0, pas : 0.1) | FLOAT | Oui | 1.0 - 1000.0 |
+| `taille_du_lot` | Nombre d'images latentes dans le lot (par défaut : 1) | INT | Oui | 1 - 4096 |
 
 ## Sorties
 

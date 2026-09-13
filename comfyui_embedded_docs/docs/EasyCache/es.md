@@ -6,11 +6,11 @@ El nodo EasyCache agrega un sistema de caché nativo a un modelo de difusión qu
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo al que se agregará EasyCache. | MODEL | Sí | - |
-| `reuse_threshold` | El umbral para reutilizar pasos en caché (predeterminado: 0.2). | FLOAT | Sí | 0.0 - 3.0 |
-| `start_percent` | El paso de muestreo relativo para comenzar a usar EasyCache (predeterminado: 0.15). | FLOAT | Sí | 0.0 - 1.0 |
-| `end_percent` | El paso de muestreo relativo para finalizar el uso de EasyCache (predeterminado: 0.95). | FLOAT | Sí | 0.0 - 1.0 |
-| `verbose` | Si se debe registrar información detallada (predeterminado: False). | BOOLEAN | Sí | - |
+| `modelo` | El modelo al que se agregará EasyCache. | MODEL | Sí | - |
+| `umbral_de_reutilización` | El umbral para reutilizar pasos en caché (predeterminado: 0.2). | FLOAT | Sí | 0.0 - 3.0 |
+| `porcentaje_inicial` | El paso de muestreo relativo para comenzar a usar EasyCache (predeterminado: 0.15). | FLOAT | Sí | 0.0 - 1.0 |
+| `porcentaje_final` | El paso de muestreo relativo para finalizar el uso de EasyCache (predeterminado: 0.95). | FLOAT | Sí | 0.0 - 1.0 |
+| `detallado` | Si se debe registrar información detallada (predeterminado: False). | BOOLEAN | Sí | - |
 
 ## Salidas
 

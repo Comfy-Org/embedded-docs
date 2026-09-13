@@ -7,7 +7,7 @@ Le nœud InstructPixToPixConditioning prépare les données de conditionnement p
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `positive` | Données de conditionnement positives contenant les prompts textuels et les réglages pour les caractéristiques d’image souhaitées | CONDITIONING | Oui | - |
-| `negative` | Données de conditionnement négatives contenant les prompts textuels et les réglages pour les caractéristiques d’image non souhaitées | CONDITIONING | Oui | - |
+| `négatif` | Données de conditionnement négatives contenant les prompts textuels et les réglages pour les caractéristiques d’image non souhaitées | CONDITIONING | Oui | - |
 | `vae` | Modèle VAE utilisé pour encoder les images d’entrée en représentations latentes | VAE | Oui | - |
 | `pixels` | Image d’entrée à traiter et à encoder dans l’espace latent | IMAGE | Oui | - |
 

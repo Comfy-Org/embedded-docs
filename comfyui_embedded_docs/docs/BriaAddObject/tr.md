@@ -8,10 +8,10 @@ Bu düğüm, düz metinle açıklanan bir nesneyi Bria kullanarak bir görüntü
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Açıklanan nesnenin ekleneceği görüntü. Görüntü yüklenmeden önce alfa kanalı kaldırılır. | IMAGE | Evet | - |
-| `instruction` | Neyin ve nereye ekleneceği; örneğin 'Masanın üzerine çiçekli kırmızı bir vazo yerleştir'. Boş olmamalıdır. Varsayılan: "" (boş dize). | STRING | Evet | - |
-| `seed` | Bria burada seed almaz ve düzenlemeyi her çağrıda yeniden yorumlar; bu nedenle tekrarlanan çalıştırmalar farklılık gösterebilir. Değer hiçbir zaman gönderilmez: yalnızca bu düğümün önbellek anahtarını değiştirir, böylece aksi halde aynı olan bir grafik önbelleğe alınmış sonucu döndürmek yerine düzenlemeyi yeniden çalıştırır. Varsayılan: 42. | INT | Evet | 0 - 2147483647 |
-| `moderation` | Moderasyon ayarları. Aşağıdaki moderasyon bayraklarını göstermek için "true" seçeneğini belirleyin. | DYNAMIC_COMBO | Evet | "false"<br>"true" |
+| `görüntü` | Açıklanan nesnenin ekleneceği görüntü. Görüntü yüklenmeden önce alfa kanalı kaldırılır. | IMAGE | Evet | - |
+| `yönerge` | Neyin ve nereye ekleneceği; örneğin 'Masanın üzerine çiçekli kırmızı bir vazo yerleştir'. Boş olmamalıdır. Varsayılan: "" (boş dize). | STRING | Evet | - |
+| `tohum` | Bria burada seed almaz ve düzenlemeyi her çağrıda yeniden yorumlar; bu nedenle tekrarlanan çalıştırmalar farklılık gösterebilir. Değer hiçbir zaman gönderilmez: yalnızca bu düğümün önbellek anahtarını değiştirir, böylece aksi halde aynı olan bir grafik önbelleğe alınmış sonucu döndürmek yerine düzenlemeyi yeniden çalıştırır. Varsayılan: 42. | INT | Evet | 0 - 2147483647 |
+| `moderasyon` | Moderasyon ayarları. Aşağıdaki moderasyon bayraklarını göstermek için "true" seçeneğini belirleyin. | DYNAMIC_COMBO | Evet | "false"<br>"true" |
 
 ### Moderasyon Etkinleştirildiğinde Girdiler
 

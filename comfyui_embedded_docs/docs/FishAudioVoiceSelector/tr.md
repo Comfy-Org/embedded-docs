@@ -8,7 +8,7 @@ Fish Audio Voice Selector düğümü, metinden sese üretim için Fish Audio kü
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `voice` | Bir ses seçin veya herhangi bir fish.audio ses modeli kimliğini girmek için 'custom' seçeneğini seçin. | DYNAMIC_COMBO | Evet | "Energetic Male (en)"<br>"Friendly Women (en)"<br>"Sarah (en)"<br>"Verity (en)"<br>"Polo (en)"<br>"Adrian (en)"<br>"E-girl (en)"<br>"Narrator (en)"<br>"Warm Conversational Voice (en)"<br>"Warm Storyteller (en)"<br>"Dramatic Character Male (en)"<br>"News Narrator (zh)"<br>"Lively Female (zh)"<br>"Gentle Female (zh)"<br>"Energetic Female (ja)"<br>"Calm Female (ja)"<br>"Calm Male (ja)"<br>"custom" |
+| `ses` | Bir ses seçin veya herhangi bir fish.audio ses modeli kimliğini girmek için 'custom' seçeneğini seçin. | DYNAMIC_COMBO | Evet | "Energetic Male (en)"<br>"Friendly Women (en)"<br>"Sarah (en)"<br>"Verity (en)"<br>"Polo (en)"<br>"Adrian (en)"<br>"E-girl (en)"<br>"Narrator (en)"<br>"Warm Conversational Voice (en)"<br>"Warm Storyteller (en)"<br>"Dramatic Character Male (en)"<br>"News Narrator (zh)"<br>"Lively Female (zh)"<br>"Gentle Female (zh)"<br>"Energetic Female (ja)"<br>"Calm Female (ja)"<br>"Calm Male (ja)"<br>"custom" |
 
 Hazır ses seçenekleri İngilizce (en), Çince (zh) ve Japonca (ja) sesleri kapsar ve herhangi bir ek girdi gerektirmez.
 

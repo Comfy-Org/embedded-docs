@@ -6,9 +6,9 @@ Le nœud EmptyHunyuanImageLatent crée un espace latent vide, entièrement compo
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `width` | La largeur de l'image latente générée en pixels (par défaut : 2048, pas : 32) | INT | Oui | 64 à MAX_RESOLUTION |
-| `height` | La hauteur de l'image latente générée en pixels (par défaut : 2048, pas : 32) | INT | Oui | 64 à MAX_RESOLUTION |
-| `batch_size` | Le nombre d'échantillons latents à générer dans un lot (par défaut : 1) | INT | Oui | 1 à 4096 |
+| `largeur` | La largeur de l'image latente générée en pixels (par défaut : 2048, pas : 32) | INT | Oui | 64 à MAX_RESOLUTION |
+| `hauteur` | La hauteur de l'image latente générée en pixels (par défaut : 2048, pas : 32) | INT | Oui | 64 à MAX_RESOLUTION |
+| `taille_du_lot` | Le nombre d'échantillons latents à générer dans un lot (par défaut : 1) | INT | Oui | 1 à 4096 |
 
 ## Sorties
 

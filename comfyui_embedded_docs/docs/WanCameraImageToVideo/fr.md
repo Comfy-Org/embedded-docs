@@ -6,16 +6,16 @@ Le nœud WanCameraImageToVideo prépare les données de conditionnement et laten
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `positive` | Prompts de conditionnement positifs pour la génération vidéo | CONDITIONING | Oui | - |
-| `negative` | Prompts de conditionnement négatifs à éviter dans la génération vidéo | CONDITIONING | Oui | - |
+| `positif` | Prompts de conditionnement positifs pour la génération vidéo | CONDITIONING | Oui | - |
+| `négatif` | Prompts de conditionnement négatifs à éviter dans la génération vidéo | CONDITIONING | Oui | - |
 | `vae` | Modèle VAE pour encoder les images dans l’espace latent | VAE | Oui | - |
-| `width` | Largeur de la vidéo de sortie en pixels (valeur par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `height` | Hauteur de la vidéo de sortie en pixels (valeur par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `length` | Nombre d’images dans la séquence vidéo (valeur par défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
-| `batch_size` | Nombre de vidéos à générer simultanément (valeur par défaut : 1) | INT | Oui | 1 à 4096 |
-| `clip_vision_output` | Sortie de vision CLIP facultative pour un conditionnement supplémentaire | CLIP_VISION_OUTPUT | Non | - |
-| `start_image` | Image de départ facultative pour initialiser la séquence vidéo. Lorsqu’elle est fournie, seules les premières `length` images sont utilisées, et l’image est redimensionnée pour correspondre à la `width` et à la `height` spécifiées. Les premières images de la séquence sont encodées dans le latent et un masque est appliqué pour mélanger les images de départ avec le contenu généré. | IMAGE | Non | - |
-| `camera_conditions` | Conditions d’embedding de caméra facultatives pour la génération vidéo. Lorsqu’elles sont fournies, ces conditions sont appliquées à la fois au conditionnement positif et négatif. | WAN_CAMERA_EMBEDDING | Non | - |
+| `largeur` | Largeur de la vidéo de sortie en pixels (valeur par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `hauteur` | Hauteur de la vidéo de sortie en pixels (valeur par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `longueur` | Nombre d’images dans la séquence vidéo (valeur par défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
+| `taille du lot` | Nombre de vidéos à générer simultanément (valeur par défaut : 1) | INT | Oui | 1 à 4096 |
+| `sortie de vision de clip` | Sortie de vision CLIP facultative pour un conditionnement supplémentaire | CLIP_VISION_OUTPUT | Non | - |
+| `image de départ` | Image de départ facultative pour initialiser la séquence vidéo. Lorsqu’elle est fournie, seules les premières `length` images sont utilisées, et l’image est redimensionnée pour correspondre à la `width` et à la `height` spécifiées. Les premières images de la séquence sont encodées dans le latent et un masque est appliqué pour mélanger les images de départ avec le contenu généré. | IMAGE | Non | - |
+| `conditions de caméra` | Conditions d’embedding de caméra facultatives pour la génération vidéo. Lorsqu’elles sont fournies, ces conditions sont appliquées à la fois au conditionnement positif et négatif. | WAN_CAMERA_EMBEDDING | Non | - |
 
 **Remarque :** Lorsque `start_image` est fournie, le nœud définit les valeurs `concat_latent_image` et `concat_mask` sur les conditionnements `positive` et `negative`. Les paramètres `camera_conditions` et `clip_vision_output` sont facultatifs, mais lorsqu’ils sont fournis, ils modifient le conditionnement à la fois pour les prompts positif et négatif.
 

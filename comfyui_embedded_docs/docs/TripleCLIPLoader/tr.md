@@ -8,9 +8,9 @@ SD3 için yaygın bir tarif şudur: clip-l, clip-g, t5.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `clip_name1` | Mevcut metin kodlayıcılar arasından yüklenecek ilk metin kodlayıcı modeli | COMBO | Evet | Birden çok seçenek mevcut (text_encoders klasöründeki tüm dosyalar) |
-| `clip_name2` | Mevcut metin kodlayıcılar arasından yüklenecek ikinci metin kodlayıcı modeli | COMBO | Evet | Birden çok seçenek mevcut (text_encoders klasöründeki tüm dosyalar) |
-| `clip_name3` | Mevcut metin kodlayıcılar arasından yüklenecek üçüncü metin kodlayıcı modeli | COMBO | Evet | Birden çok seçenek mevcut (text_encoders klasöründeki tüm dosyalar) |
+| `clip_adı1` | Mevcut metin kodlayıcılar arasından yüklenecek ilk metin kodlayıcı modeli | COMBO | Evet | Birden çok seçenek mevcut (text_encoders klasöründeki tüm dosyalar) |
+| `clip_adı2` | Mevcut metin kodlayıcılar arasından yüklenecek ikinci metin kodlayıcı modeli | COMBO | Evet | Birden çok seçenek mevcut (text_encoders klasöründeki tüm dosyalar) |
+| `clip_adı3` | Mevcut metin kodlayıcılar arasından yüklenecek üçüncü metin kodlayıcı modeli | COMBO | Evet | Birden çok seçenek mevcut (text_encoders klasöründeki tüm dosyalar) |
 
 **Not:** Üç parametrenin tümü gereklidir. Kullanılabilir seçenekler text_encoders klasörünüzdeki metin kodlayıcı dosyalarıdır. Seçilen bir dosya bulunamazsa düğüm bir hata verir. Düğüm, seçilen üç modelin tümünü yükler ve bunları tek bir CLIP modelinde birleştirir.
 

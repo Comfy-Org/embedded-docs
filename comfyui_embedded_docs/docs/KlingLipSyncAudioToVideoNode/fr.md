@@ -6,9 +6,9 @@ Le nœud Kling Lip Sync Audio to Video synchronise les mouvements de la bouche d
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `video` | Le fichier vidéo contenant un visage à synchroniser labialement | VIDEO | Oui | - |
+| `vidéo` | Le fichier vidéo contenant un visage à synchroniser labialement | VIDEO | Oui | - |
 | `audio` | Le fichier audio contenant les voix à synchroniser avec la vidéo | AUDIO | Oui | - |
-| `voice_language` | La langue de la voix dans le fichier audio (par défaut : "en") | COMBO | Oui | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` |
+| `langue de la voix` | La langue de la voix dans le fichier audio (par défaut : "en") | COMBO | Oui | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` |
 
 **Contraintes importantes :**
 

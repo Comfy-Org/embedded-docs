@@ -6,7 +6,7 @@ El nodo Seed proporciona un valor entero que se puede usar como semilla para con
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `seed` | El valor de semilla que se va a usar. La opción control after generate determina si el valor permanece fijo o cambia después de cada generación; en este nodo, está establecido en fixed. | INT | Sí | 0 a 9223372036854775807 |
+| `semilla` | El valor de semilla que se va a usar. La opción control after generate determina si el valor permanece fijo o cambia después de cada generación; en este nodo, está establecido en fixed. | INT | Sí | 0 a 9223372036854775807 |
 
 ## Salidas
 

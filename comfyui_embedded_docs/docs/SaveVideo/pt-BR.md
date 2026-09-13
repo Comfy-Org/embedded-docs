@@ -8,9 +8,9 @@ O nó Save Video salva o vídeo de entrada no diretório de saída do ComfyUI. V
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `video` | O vídeo a ser salvo. | VIDEO | Sim | - |
-| `filename_prefix` | O prefixo do arquivo a ser salvo. Pode incluir informações de formatação, como `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%`, para incluir valores de nós (padrão: `video/ComfyUI`). | STRING | Sim | - |
-| `format` | O contêiner de saída. O modo Auto usa MP4 para Auto/H.264 e WebM para AV1. MP4, MKV e WebM selecionam um contêiner específico. Selecionar um formato também determina quais opções de codec estão disponíveis (padrão: `auto`). | DYNAMIC_COMBO | Sim | `"auto"`<br>`"mp4"`<br>`"mkv"`<br>`"webm"` |
+| `vídeo` | O vídeo a ser salvo. | VIDEO | Sim | - |
+| `prefixo_do_arquivo` | O prefixo do arquivo a ser salvo. Pode incluir informações de formatação, como `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%`, para incluir valores de nós (padrão: `video/ComfyUI`). | STRING | Sim | - |
+| `formato` | O contêiner de saída. O modo Auto usa MP4 para Auto/H.264 e WebM para AV1. MP4, MKV e WebM selecionam um contêiner específico. Selecionar um formato também determina quais opções de codec estão disponíveis (padrão: `auto`). | DYNAMIC_COMBO | Sim | `"auto"`<br>`"mp4"`<br>`"mkv"`<br>`"webm"` |
 | `codec` | O codec de vídeo de saída. O modo Auto preserva um fluxo de origem compatível. A recodificação em H.264 e AV1 oferece suporte a SDR, HDR (HLG) e HDR PQ. Este seletor fica aninhado sob o formato escolhido (padrão: `auto`). | DYNAMIC_COMBO | Não | `"auto"`<br>`"h264"`<br>`"av1"` (não disponível com o formato `webm`) |
 
 ### Entradas do H.264

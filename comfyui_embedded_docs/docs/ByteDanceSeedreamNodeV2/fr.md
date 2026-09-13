@@ -8,10 +8,10 @@ This node generates or edits images using ByteDance's Seedream models (versions 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | La version du modèle Seedream à utiliser pour la génération. Chaque modèle possède des capacités et une tarification différentes. | DYNAMIC_COMBO | Oui | `"seedream 5.0 pro"`<br>`"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
+| `modèle` | La version du modèle Seedream à utiliser pour la génération. Chaque modèle possède des capacités et une tarification différentes. | DYNAMIC_COMBO | Oui | `"seedream 5.0 pro"`<br>`"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
 | `prompt` | Prompt textuel pour créer ou modifier une image (par défaut : chaîne vide). | STRING | Oui | N/A |
-| `seed` | Graine à utiliser pour la génération (par défaut : 0). | INT | Oui | 0 à 2147483647 |
-| `watermark` | Indique s'il faut ajouter un filigrane « AI generated » à l'image (par défaut : False). | BOOLEAN | Oui | True / False |
+| `graine` | Graine à utiliser pour la génération (par défaut : 0). | INT | Oui | 0 à 2147483647 |
+| `filigrane` | Indique s'il faut ajouter un filigrane « AI generated » à l'image (par défaut : False). | BOOLEAN | Oui | True / False |
 | `thinking` | Active le raisonnement d'optimisation du prompt du modèle (« thinking ») pour une meilleure fidélité. Peut augmenter considérablement le temps de génération — notamment sur Seedream 5.0 Pro. Ne peut être désactivé que pour la génération texte-vers-image (pas lorsque des images de référence sont fournies) (par défaut : True). | BOOLEAN | Non | True / False |
 
 ### Entrées `seedream 5.0 pro`

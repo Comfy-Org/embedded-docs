@@ -8,19 +8,19 @@ Este nodo es una versión heredada y está marcado como obsoleto en la interfaz.
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | El modelo de IA que se usará para la mejora de la imagen. | COMBO | Sí | `"Reimagine"` |
-| `image` | La imagen de entrada que se va a mejorar. Solo se admite una imagen. | IMAGE | Sí | - |
+| `modelo` | El modelo de IA que se usará para la mejora de la imagen. | COMBO | Sí | `"Reimagine"` |
+| `imagen` | La imagen de entrada que se va a mejorar. Solo se admite una imagen. | IMAGE | Sí | - |
 | `prompt` | Prompt de texto opcional para guiar el escalado creativo (predeterminado: vacío). | STRING | No | - |
-| `subject_detection` | Controla en qué parte de la imagen se centra la mejora (predeterminado: "All"). | COMBO | No | `"All"`<br>`"Foreground"`<br>`"Background"` |
-| `face_enhancement` | Mejora los rostros (si los hay) durante el procesamiento (predeterminado: True). | BOOLEAN | No | - |
-| `face_enhancement_creativity` | Establece el nivel de creatividad para la mejora de rostros (predeterminado: 0.0). | FLOAT | No | 0.0 - 1.0 |
-| `face_enhancement_strength` | Controla cuán nítidos son los rostros mejorados en relación con el fondo (predeterminado: 1.0). | FLOAT | No | 0.0 - 1.0 |
-| `crop_to_fill` | De forma predeterminada, la imagen se muestra con barras negras cuando la relación de aspecto de salida difiere. Actívelo para recortar la imagen y llenar las dimensiones de salida (predeterminado: False). | BOOLEAN | No | - |
-| `output_width` | Un valor de cero significa calcular automáticamente (normalmente será el tamaño original o output_height si se especifica) (predeterminado: 0). | INT | No | 0 - 32000 |
-| `output_height` | Un valor de cero significa generar con la misma altura que la original o el ancho de salida (predeterminado: 0). | INT | No | 0 - 32000 |
-| `creativity` | Controla el nivel general de creatividad de la mejora (predeterminado: 3). | INT | No | 1 - 9 |
-| `face_preservation` | Preserva la identidad facial de los sujetos (predeterminado: True). | BOOLEAN | No | - |
-| `color_preservation` | Preserva los colores originales (predeterminado: True). | BOOLEAN | No | - |
+| `detección_de_sujetos` | Controla en qué parte de la imagen se centra la mejora (predeterminado: "All"). | COMBO | No | `"All"`<br>`"Foreground"`<br>`"Background"` |
+| `mejora_de_rostros` | Mejora los rostros (si los hay) durante el procesamiento (predeterminado: True). | BOOLEAN | No | - |
+| `creatividad_mejora_rostros` | Establece el nivel de creatividad para la mejora de rostros (predeterminado: 0.0). | FLOAT | No | 0.0 - 1.0 |
+| `intensidad_mejora_rostros` | Controla cuán nítidos son los rostros mejorados en relación con el fondo (predeterminado: 1.0). | FLOAT | No | 0.0 - 1.0 |
+| `recortar_para_ajustar` | De forma predeterminada, la imagen se muestra con barras negras cuando la relación de aspecto de salida difiere. Actívelo para recortar la imagen y llenar las dimensiones de salida (predeterminado: False). | BOOLEAN | No | - |
+| `ancho_de_salida` | Un valor de cero significa calcular automáticamente (normalmente será el tamaño original o output_height si se especifica) (predeterminado: 0). | INT | No | 0 - 32000 |
+| `alto_de_salida` | Un valor de cero significa generar con la misma altura que la original o el ancho de salida (predeterminado: 0). | INT | No | 0 - 32000 |
+| `creatividad` | Controla el nivel general de creatividad de la mejora (predeterminado: 3). | INT | No | 1 - 9 |
+| `preservación_de_rostros` | Preserva la identidad facial de los sujetos (predeterminado: True). | BOOLEAN | No | - |
+| `preservación_de_color` | Preserva los colores originales (predeterminado: True). | BOOLEAN | No | - |
 
 **Nota:** Este nodo solo puede procesar una única imagen de entrada. Proporcionar un lote de varias imágenes dará como resultado un error.
 

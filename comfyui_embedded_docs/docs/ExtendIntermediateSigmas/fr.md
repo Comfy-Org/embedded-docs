@@ -7,10 +7,10 @@ Le nœud ExtendIntermediateSigmas prend une séquence existante de valeurs sigma
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `sigmas` | La séquence sigma d’entrée à étendre avec des valeurs intermédiaires | SIGMAS | Oui | - |
-| `steps` | Contrôle le nombre de valeurs sigma intermédiaires insérées entre chaque paire de sigmas existants. L’intervalle entre deux sigmas est divisé en `steps` parties, produisant `steps - 1` nouvelles valeurs par paire (par défaut : 2, ce qui insère une valeur par paire) | INT | Oui | 1 à 100 |
-| `start_at_sigma` | Limite sigma supérieure pour l’extension. Seuls les intervalles sigma dont le sigma de départ est inférieur ou égal à cette valeur sont étendus. Lorsqu’elle est définie à -1.0, elle est traitée comme l’infini, ce qui signifie qu’aucune limite supérieure n’est appliquée. Par défaut : -1.0 | FLOAT | Oui | -1.0 à 20000.0 |
-| `end_at_sigma` | Limite sigma inférieure pour l’extension. Seuls les intervalles sigma dont le sigma de départ est supérieur ou égal à cette valeur sont étendus. Par défaut : 12.0 | FLOAT | Oui | 0.0 à 20000.0 |
-| `spacing` | Méthode d’interpolation pour l’espacement des valeurs sigma intermédiaires (par défaut : "linear") | COMBO | Oui | `"linear"`<br>`"cosine"`<br>`"sine"` |
+| `étapes` | Contrôle le nombre de valeurs sigma intermédiaires insérées entre chaque paire de sigmas existants. L’intervalle entre deux sigmas est divisé en `steps` parties, produisant `steps - 1` nouvelles valeurs par paire (par défaut : 2, ce qui insère une valeur par paire) | INT | Oui | 1 à 100 |
+| `commencer_à_sigma` | Limite sigma supérieure pour l’extension. Seuls les intervalles sigma dont le sigma de départ est inférieur ou égal à cette valeur sont étendus. Lorsqu’elle est définie à -1.0, elle est traitée comme l’infini, ce qui signifie qu’aucune limite supérieure n’est appliquée. Par défaut : -1.0 | FLOAT | Oui | -1.0 à 20000.0 |
+| `finir_à_sigma` | Limite sigma inférieure pour l’extension. Seuls les intervalles sigma dont le sigma de départ est supérieur ou égal à cette valeur sont étendus. Par défaut : 12.0 | FLOAT | Oui | 0.0 à 20000.0 |
+| `espacement` | Méthode d’interpolation pour l’espacement des valeurs sigma intermédiaires (par défaut : "linear") | COMBO | Oui | `"linear"`<br>`"cosine"`<br>`"sine"` |
 
 **Remarque :** Le nœud n’insère des sigmas intermédiaires que pour les intervalles sigma où le sigma de départ est inférieur ou égal à `start_at_sigma` et supérieur ou égal à `end_at_sigma`. Lorsque `start_at_sigma` est défini à -1.0, il est traité comme l’infini ; par conséquent, seule la limite inférieure `end_at_sigma` s’applique.
 

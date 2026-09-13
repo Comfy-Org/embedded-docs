@@ -7,8 +7,8 @@ Le nœud VoxelToMesh convertit des données de voxels 3D en une géométrie de m
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `voxel` | Les données de voxels d'entrée à convertir en géométrie de maillage | VOXEL | Oui | - |
-| `algorithm` | L'algorithme utilisé pour l'extraction de surface. "surface net" produit des maillages plus lisses, tandis que "basic" crée des faces simples en forme de boîtes (par défaut : "surface net") | COMBO | Oui | `"surface net"`<br>`"basic"` |
-| `threshold` | La valeur de seuil pour l'extraction de surface. Les voxels dont les valeurs sont supérieures à ce seuil sont considérés comme solides (par défaut : 0.6) | FLOAT | Oui | -1.0 à 1.0 |
+| `algorithme` | L'algorithme utilisé pour l'extraction de surface. "surface net" produit des maillages plus lisses, tandis que "basic" crée des faces simples en forme de boîtes (par défaut : "surface net") | COMBO | Oui | `"surface net"`<br>`"basic"` |
+| `seuil` | La valeur de seuil pour l'extraction de surface. Les voxels dont les valeurs sont supérieures à ce seuil sont considérés comme solides (par défaut : 0.6) | FLOAT | Oui | -1.0 à 1.0 |
 
 ## Sorties
 

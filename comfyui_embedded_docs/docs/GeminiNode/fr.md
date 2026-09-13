@@ -9,12 +9,12 @@ Ce nœud permet aux utilisateurs d'interagir avec les modèles d'IA Gemini de Go
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `prompt` | Entrées texte pour le modèle, utilisées pour générer une réponse. Vous pouvez inclure des instructions détaillées, des questions ou du contexte pour le modèle. Par défaut : chaîne vide. | STRING | Oui | - |
-| `model` | Le modèle Gemini à utiliser pour générer des réponses. Par défaut : gemini-3-1-pro. | COMBO | Oui | "gemini-2.5-pro"<br>"gemini-2.5-flash"<br>"gemini-3-pro-preview"<br>"gemini-3-1-pro"<br>"gemini-3-1-flash-lite" |
-| `seed` | Lorsque `seed` est fixé à une valeur spécifique, le modèle fait de son mieux pour fournir la même réponse pour des requêtes répétées. Une sortie déterministe n'est pas garantie. De plus, changer le modèle ou les paramètres, comme la température, peut entraîner des variations dans la réponse même si vous utilisez la même valeur de `seed`. Par défaut, une valeur de `seed` aléatoire est utilisée. Par défaut : 42. | INT | Oui | 0 à 18446744073709551615 |
+| `modèle` | Le modèle Gemini à utiliser pour générer des réponses. Par défaut : gemini-3-1-pro. | COMBO | Oui | "gemini-2.5-pro"<br>"gemini-2.5-flash"<br>"gemini-3-pro-preview"<br>"gemini-3-1-pro"<br>"gemini-3-1-flash-lite" |
+| `graine` | Lorsque `seed` est fixé à une valeur spécifique, le modèle fait de son mieux pour fournir la même réponse pour des requêtes répétées. Une sortie déterministe n'est pas garantie. De plus, changer le modèle ou les paramètres, comme la température, peut entraîner des variations dans la réponse même si vous utilisez la même valeur de `seed`. Par défaut, une valeur de `seed` aléatoire est utilisée. Par défaut : 42. | INT | Oui | 0 à 18446744073709551615 |
 | `images` | Image(s) facultative(s) à utiliser comme contexte pour le modèle. Pour inclure plusieurs images, vous pouvez utiliser le nœud Batch Images. Par défaut : Aucune. | IMAGE | Non | - |
 | `audio` | Audio facultatif à utiliser comme contexte pour le modèle. Par défaut : Aucun. | AUDIO | Non | - |
-| `video` | Vidéo facultative à utiliser comme contexte pour le modèle. Par défaut : Aucune. | VIDEO | Non | - |
-| `files` | Fichier(s) facultatif(s) à utiliser comme contexte pour le modèle. Accepte les entrées du nœud Gemini Generate Content Input Files. Par défaut : Aucun. | GEMINI_INPUT_FILES | Non | - |
+| `vidéo` | Vidéo facultative à utiliser comme contexte pour le modèle. Par défaut : Aucune. | VIDEO | Non | - |
+| `fichiers` | Fichier(s) facultatif(s) à utiliser comme contexte pour le modèle. Accepte les entrées du nœud Gemini Generate Content Input Files. Par défaut : Aucun. | GEMINI_INPUT_FILES | Non | - |
 | `system_prompt` | Instructions fondamentales qui dictent le comportement d'une IA. Par défaut : chaîne vide. Il s'agit d'un paramètre avancé. | STRING | Non | - |
 
 Toutes les images connectées sont utilisées comme contexte. Lorsque plus de 10 images sont fournies, les 10 premières sont téléversées comme références de fichiers et les images restantes sont envoyées en inline à l'API.

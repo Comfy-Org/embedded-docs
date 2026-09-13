@@ -8,10 +8,10 @@ Topaz Image Enhance aplica upscaling e aprimoramento de imagem padrão do setor 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A imagem de entrada a ser aprimorada. Apenas uma imagem de entrada é suportada. | IMAGE | Sim | Imagem única |
-| `model` | O modelo de aprimoramento Topaz a ser usado. O modelo selecionado determina quais configurações específicas do modelo aparecem. | DYNAMIC_COMBO | Sim | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"` |
-| `output_width` | O valor zero significa calcular automaticamente (normalmente será o tamanho original ou dimensionado proporcionalmente a `output_height`, se especificado). Wonder 3.5 suporta fatores de upscaling apenas de 1x a 6x. Bloom 2 e Wonder 3.5 preservam a proporção da imagem de entrada e tratam o tamanho solicitado como uma meta. (padrão: 0) | INT | Não | 0 a 32000 |
-| `output_height` | O valor zero significa gerar na mesma altura que o original ou dimensionar proporcionalmente a `output_width`, se especificado. Wonder 3.5 suporta fatores de upscaling apenas de 1x a 6x. Bloom 2 e Wonder 3.5 preservam a proporção da imagem de entrada e tratam o tamanho solicitado como uma meta. (padrão: 0) | INT | Não | 0 a 32000 |
+| `imagem` | A imagem de entrada a ser aprimorada. Apenas uma imagem de entrada é suportada. | IMAGE | Sim | Imagem única |
+| `modelo` | O modelo de aprimoramento Topaz a ser usado. O modelo selecionado determina quais configurações específicas do modelo aparecem. | DYNAMIC_COMBO | Sim | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"` |
+| `largura de saída` | O valor zero significa calcular automaticamente (normalmente será o tamanho original ou dimensionado proporcionalmente a `output_height`, se especificado). Wonder 3.5 suporta fatores de upscaling apenas de 1x a 6x. Bloom 2 e Wonder 3.5 preservam a proporção da imagem de entrada e tratam o tamanho solicitado como uma meta. (padrão: 0) | INT | Não | 0 a 32000 |
+| `altura de saída` | O valor zero significa gerar na mesma altura que o original ou dimensionar proporcionalmente a `output_width`, se especificado. Wonder 3.5 suporta fatores de upscaling apenas de 1x a 6x. Bloom 2 e Wonder 3.5 preservam a proporção da imagem de entrada e tratam o tamanho solicitado como uma meta. (padrão: 0) | INT | Não | 0 a 32000 |
 
 ### Entradas do Reimagine
 

@@ -15,7 +15,7 @@ El nodo Kling Image Generation genera imágenes a partir de prompts de texto con
 | `aspect_ratio` | Relación de aspecto para las imágenes generadas (predeterminado: "16:9") | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` |
 | `n` | Número de imágenes generadas (predeterminado: 1) | INT | Sí | 1 - 9 |
 | `image` | Imagen de referencia opcional | IMAGE | No | - |
-| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0) | INT | No | 0 - 2147483647 |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0) | INT | No | 0 - 2147483647 |
 
 **Restricciones de los parámetros:**
 

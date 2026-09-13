@@ -6,8 +6,8 @@ O nó ModelSave salva um MODEL no armazenamento do seu computador como um arquiv
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo a ser salvo em disco | MODEL | Sim | - |
-| `filename_prefix` | O prefixo de nome de arquivo e caminho para o arquivo de modelo salvo (padrão: "diffusion_models/ComfyUI") | STRING | Sim | - |
+| `modelo` | O modelo a ser salvo em disco | MODEL | Sim | - |
+| `prefixo_do_arquivo` | O prefixo de nome de arquivo e caminho para o arquivo de modelo salvo (padrão: "diffusion_models/ComfyUI") | STRING | Sim | - |
 | `prompt` | Informações de prompt do fluxo de trabalho (fornecidas automaticamente) | PROMPT | Não | - |
 | `extra_pnginfo` | Metadados adicionais do fluxo de trabalho (fornecidos automaticamente) | EXTRA_PNGINFO | Não | - |
 

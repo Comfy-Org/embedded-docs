@@ -7,10 +7,10 @@ Runway Image to Video (Gen3a Turbo) düğümü, Runway'in Gen3a Turbo modelini k
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Üretim için metin istemi (varsayılan: "") | STRING | Evet | N/A |
-| `start_frame` | Video için kullanılacak başlangıç karesi | IMAGE | Evet | N/A |
-| `duration` | Üretilen videonun saniye cinsinden süresi (varsayılan: "5") | COMBO | Evet | `"5"`<br>`"10"` |
-| `ratio` | Üretilen videonun en-boy oranı (varsayılan: "768:1280") | COMBO | Evet | `"768:1280"`<br>`"1280:768"` |
-| `seed` | Üretim için rastgele tohum (varsayılan: 0) | INT | Evet | 0 ile 4294967295 arası |
+| `başlangıç_karesi` | Video için kullanılacak başlangıç karesi | IMAGE | Evet | N/A |
+| `süre` | Üretilen videonun saniye cinsinden süresi (varsayılan: "5") | COMBO | Evet | `"5"`<br>`"10"` |
+| `oran` | Üretilen videonun en-boy oranı (varsayılan: "768:1280") | COMBO | Evet | `"768:1280"`<br>`"1280:768"` |
+| `tohum` | Üretim için rastgele tohum (varsayılan: 0) | INT | Evet | 0 ile 4294967295 arası |
 
 **Parametre Kısıtlamaları:**
 

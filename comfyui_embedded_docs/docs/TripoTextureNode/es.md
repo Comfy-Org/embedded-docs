@@ -10,16 +10,16 @@ El nodo Tripo: Texture model (Legacy) añade texturas a un modelo 3D de Tripo ex
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model_task_id` | El ID de tarea de Tripo del modelo al que se aplicará textura. Acepta ID de tarea de modelo e ID de tarea de segmentación. | MODEL_TASK_ID, SEGMENT_TASK_ID | Sí | - |
-| `texture` | Ignorado: este nodo siempre genera texturas. Se conserva para flujos de trabajo anteriores. (predeterminado: True) | BOOLEAN | No | true<br>false |
+| `id_de_tarea_del_modelo` | El ID de tarea de Tripo del modelo al que se aplicará textura. Acepta ID de tarea de modelo e ID de tarea de segmentación. | MODEL_TASK_ID, SEGMENT_TASK_ID | Sí | - |
+| `textura` | Ignorado: este nodo siempre genera texturas. Se conserva para flujos de trabajo anteriores. (predeterminado: True) | BOOLEAN | No | true<br>false |
 | `pbr` | Mapas de material PBR (color base, metálico, rugosidad, normal); desactivado produce una textura de color plano. (predeterminado: True) | BOOLEAN | No | true<br>false |
-| `texture_seed` | Semilla aleatoria para la generación de texturas. (predeterminado: 42) | INT | No | 0 – 2147483647 |
-| `texture_quality` | Calidad de resolución de textura: detailed = texturas HD, extreme = texturas 8K Ultra. (predeterminado: "standard"). Costo aproximado: standard $0.10, detailed $0.20, extreme $0.30. | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
-| `texture_alignment` | Método utilizado para alinear las texturas generadas con el modelo. (predeterminado: "original_image") | COMBO | No | "original_image"<br>"geometry" |
+| `semilla_de_textura` | Semilla aleatoria para la generación de texturas. (predeterminado: 42) | INT | No | 0 – 2147483647 |
+| `calidad_de_textura` | Calidad de resolución de textura: detailed = texturas HD, extreme = texturas 8K Ultra. (predeterminado: "standard"). Costo aproximado: standard $0.10, detailed $0.20, extreme $0.30. | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
+| `alineación_de_textura` | Método utilizado para alinear las texturas generadas con el modelo. (predeterminado: "original_image") | COMBO | No | "original_image"<br>"geometry" |
 | `texture_prompt` | Guía de texto opcional para el texturizado. Obligatorio en la práctica para modelos importados (Tripo: Import Model), que no llevan una imagen de origen de la que inferir colores. No se puede combinar con imágenes de referencia. (predeterminado: "") | STRING | No | - |
 | `model_version` | Modelo de texturizado: v3.0 para mallas generadas con v3.x, v2.5 para mallas generadas con v2.5. (predeterminado: v3.0_20250812) | COMBO | No | Varias opciones disponibles |
 | `style_image` | Imagen de referencia para el estilo artístico de las texturas. Solo se utiliza junto con `texture_prompt`. | IMAGE | No | - |
-| `reference` | Imágenes de referencia que guían las texturas. No se pueden combinar con `texture_prompt` ni con `style_image`. (predeterminado: "none") | DYNAMIC_COMBO | No | "none"<br>"image"<br>"multiview" |
+| `referencia` | Imágenes de referencia que guían las texturas. No se pueden combinar con `texture_prompt` ni con `style_image`. (predeterminado: "none") | DYNAMIC_COMBO | No | "none"<br>"image"<br>"multiview" |
 | `part_names` | Nombres de partes separados por comas provenientes de Tripo: Segment Model que se van a texturizar. Si está vacío, texturiza cada parte. (predeterminado: "") | STRING | No | - |
 
 ### Entradas de referencia de `image`

@@ -6,10 +6,10 @@
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 | --- | --- | --- | --- | --- |
-| `model` | النموذج المراد حفظه في ملف checkpoint | MODEL | نعم | - |
-| `clip_vision` | مشفر رؤية CLIP المراد حفظه في ملف checkpoint | CLIP_VISION | نعم | - |
-| `vae` | VAE (المشفر التلقائي التبايني) المراد حفظه في ملف checkpoint | VAE | نعم | - |
-| `filename_prefix` | بادئة اسم ملف الإخراج (الافتراضي: "checkpoints/ComfyUI") | STRING | نعم | - |
+| `النموذج` | النموذج المراد حفظه في ملف checkpoint | MODEL | نعم | - |
+| `رؤية Clip` | مشفر رؤية CLIP المراد حفظه في ملف checkpoint | CLIP_VISION | نعم | - |
+| `VAE` | VAE (المشفر التلقائي التبايني) المراد حفظه في ملف checkpoint | VAE | نعم | - |
+| `بادئة اسم الملف` | بادئة اسم ملف الإخراج (الافتراضي: "checkpoints/ComfyUI") | STRING | نعم | - |
 | `prompt` | معامل مخفي يستقبل بيانات موجه سير العمل | PROMPT | لا | - |
 | `extra_pnginfo` | معامل مخفي يستقبل بيانات PNG الوصفية الإضافية | EXTRA_PNGINFO | لا | - |
 

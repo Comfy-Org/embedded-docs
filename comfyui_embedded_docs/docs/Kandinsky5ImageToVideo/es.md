@@ -6,14 +6,14 @@ El nodo Kandinsky5ImageToVideo prepara datos de condicionamiento y latentes para
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `positive` | Los prompts de condicionamiento positivo para guiar la generación de video. | CONDITIONING | Sí | N/A |
-| `negative` | Los prompts de condicionamiento negativo para alejar la generación de video de ciertos conceptos. | CONDITIONING | Sí | N/A |
+| `positivo` | Los prompts de condicionamiento positivo para guiar la generación de video. | CONDITIONING | Sí | N/A |
+| `negativo` | Los prompts de condicionamiento negativo para alejar la generación de video de ciertos conceptos. | CONDITIONING | Sí | N/A |
 | `vae` | El modelo VAE usado para codificar la imagen inicial opcional en el espacio latente. | VAE | Sí | N/A |
-| `width` | El ancho del video de salida en píxeles (predeterminado: 768). | INT | Sí | 16 a 16384 (paso 16) |
-| `height` | El alto del video de salida en píxeles (predeterminado: 512). | INT | Sí | 16 a 16384 (paso 16) |
-| `length` | El número de fotogramas del video (predeterminado: 121). | INT | Sí | 1 a 16384 (paso 4) |
-| `batch_size` | El número de secuencias de video a generar simultáneamente (predeterminado: 1). | INT | Sí | 1 a 4096 |
-| `start_image` | Una imagen inicial opcional o lote de fotogramas. Si se proporciona, se codifica y se usa para reemplazar el inicio ruidoso de los latentes de salida del modelo. | IMAGE | No | N/A |
+| `ancho` | El ancho del video de salida en píxeles (predeterminado: 768). | INT | Sí | 16 a 16384 (paso 16) |
+| `alto` | El alto del video de salida en píxeles (predeterminado: 512). | INT | Sí | 16 a 16384 (paso 16) |
+| `duración` | El número de fotogramas del video (predeterminado: 121). | INT | Sí | 1 a 16384 (paso 4) |
+| `tamaño_lote` | El número de secuencias de video a generar simultáneamente (predeterminado: 1). | INT | Sí | 1 a 4096 |
+| `imagen_inicial` | Una imagen inicial opcional o lote de fotogramas. Si se proporciona, se codifica y se usa para reemplazar el inicio ruidoso de los latentes de salida del modelo. | IMAGE | No | N/A |
 
 **Nota:** Cuando se proporciona una `start_image`, se redimensiona automáticamente para coincidir con el `width` y el `height` especificados usando interpolación bilineal. Solo se usan los primeros `length` fotogramas del lote de imágenes para la codificación; cualquier fotograma adicional se ignora. Si el lote de imágenes tiene menos de `length` fotogramas, solo se usan esos fotogramas. Solo se codifican los canales RGB de la imagen. Luego, el latente codificado se inyecta tanto en el condicionamiento `positive` como en el `negative` para guiar la apariencia inicial del video, y los fotogramas codificados limpios reemplazan el inicio ruidoso de los latentes de salida del modelo.
 

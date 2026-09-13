@@ -9,7 +9,7 @@ Le nœud **Save Image (Advanced)** enregistre les images d’entrée dans votre 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `images` | Les images à enregistrer. | IMAGE | Oui | - |
-| `filename_prefix` | Le préfixe du fichier à enregistrer. Peut inclure des jetons de formatage tels que `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%`. (par défaut : "ComfyUI") | STRING | Oui | - |
+| `préfixe_nom_fichier` | Le préfixe du fichier à enregistrer. Peut inclure des jetons de formatage tels que `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%`. (par défaut : "ComfyUI") | STRING | Oui | - |
 | `format` | Le format de fichier dans lequel enregistrer l’image. La sélection d’un format révèle des options supplémentaires pour ce format. | DYNAMIC_COMBO | Oui | `"png"`<br>`"exr"`<br>`"avif"` |
 
 ### Entrées PNG

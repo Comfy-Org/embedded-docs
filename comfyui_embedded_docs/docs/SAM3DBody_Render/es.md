@@ -10,9 +10,9 @@ Renderiza datos de pose corporal 3D en una imagen usando un estilo seleccionable
 |-----------|-------------|---------------|-----------|-------|
 | `render_style` | Modo de render. 'mesh' = malla MHR 3D rasterizada a través de la cámara. 'silhouette' = máscara binaria de la malla. 'openpose_2d' = esqueleto 2D plano. 'openpose_3d' = esqueleto OpenPose como modelo 3D de sombreado plano. 'scail' = cápsulas 3D de SCAIL. (predeterminado: "mesh") | DYNAMIC_COMBO | Sí | "mesh"<br>"silhouette"<br>"openpose_2d"<br>"openpose_3d"<br>"scail" |
 | `pose_data` | Datos de pose MHR, o datos de pose de rig externo Y-up (KimodoSample). Todos los estilos de render funcionan para rigs externos que llevan mapas de articulaciones OpenPose en su `_skeleton_override` (KimodoSample lo hace). | MHR_POSE_DATA or KIMODO_POSE_DATA | Sí | — |
-| `background` | Fondo por fotograma. Omitido = lienzo negro. | IMAGE | No | — |
-| `width` | Ancho de salida en píxeles. 0 = usar el image_size nativo de los datos de pose. Si solo se establece uno de `width`/`height`, el otro se deriva preservando la relación de aspecto original. (predeterminado: 0) | INT | No | 0 a 16384, step 8 |
-| `height` | Alto de salida en píxeles. 0 = usar el image_size nativo de los datos de pose. Si solo se establece uno de `width`/`height`, el otro se deriva preservando la relación de aspecto original. (predeterminado: 0) | INT | No | 0 a 16384, step 8 |
+| `fondo` | Fondo por fotograma. Omitido = lienzo negro. | IMAGE | No | — |
+| `anchura` | Ancho de salida en píxeles. 0 = usar el image_size nativo de los datos de pose. Si solo se establece uno de `width`/`height`, el otro se deriva preservando la relación de aspecto original. (predeterminado: 0) | INT | No | 0 a 16384, step 8 |
+| `altura` | Alto de salida en píxeles. 0 = usar el image_size nativo de los datos de pose. Si solo se establece uno de `width`/`height`, el otro se deriva preservando la relación de aspecto original. (predeterminado: 0) | INT | No | 0 a 16384, step 8 |
 | `camera_info` | Anulación de cámara libre de 6DOF. Cuando se conecta, la pose se reproyecta a través de esta cámara (posición/objetivo/zoom/rotación/FoV) en lugar de la predicha. | LOAD_3D_CAMERA | No | — |
 
 ### Entradas de malla

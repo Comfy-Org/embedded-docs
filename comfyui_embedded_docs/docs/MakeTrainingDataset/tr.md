@@ -6,10 +6,10 @@ Bu düğüm, görüntüleri ve metni kodlayarak eğitim için veri hazırlar. Bi
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `images` | Kodlanacak görüntülerin listesi. | IMAGE | Evet | N/A |
+| `görüntüler` | Kodlanacak görüntülerin listesi. | IMAGE | Evet | N/A |
 | `vae` | Görüntüleri latentlere kodlamak için VAE modeli. | VAE | Evet | N/A |
 | `clip` | Metni koşullandırmaya kodlamak için CLIP modeli. | CLIP | Evet | N/A |
-| `texts` | Metin altyazılarının listesi. Uzunluğu n (görüntülerle eşleşen), 1 (tümü için yinelenen) veya atlanmış (boş dize kullanılır) olabilir. | STRING | Hayır | 0, 1 veya n öğe (n = görüntü sayısı) |
+| `metinler` | Metin altyazılarının listesi. Uzunluğu n (görüntülerle eşleşen), 1 (tümü için yinelenen) veya atlanmış (boş dize kullanılır) olabilir. | STRING | Hayır | 0, 1 veya n öğe (n = görüntü sayısı) |
 
 **Parametre Kısıtlamaları:**
 

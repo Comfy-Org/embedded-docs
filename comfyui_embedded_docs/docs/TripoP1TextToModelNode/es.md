@@ -8,15 +8,15 @@ Tripo P1 de texto a 3D. Este nodo genera un modelo 3D a partir de una descripci�
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `output_mode` | Controla si el modelo generado contiene solo geometría o también texturas de color/PBR. "Geometry only" devuelve una malla sin texturas. "Textured" agrega mapas de color/PBR y muestra las opciones de textura a continuación. | DYNAMIC_COMBO | Sí | `"Geometry only"`<br>`"Textured"` |
+| `modo_de_salida` | Controla si el modelo generado contiene solo geometría o también texturas de color/PBR. "Geometry only" devuelve una malla sin texturas. "Textured" agrega mapas de color/PBR y muestra las opciones de textura a continuación. | DYNAMIC_COMBO | Sí | `"Geometry only"`<br>`"Textured"` |
 | `prompt` | La descripción textual del modelo 3D que deseas generar. Hasta 1024 caracteres. Obligatorio y no puede estar vacío. | STRING | Sí | Hasta 1024 caracteres |
-| `negative_prompt` | Una descripción textual de lo que no deseas en el modelo generado. Hasta 255 caracteres. Predeterminado: sin establecer. | STRING | No | Hasta 255 caracteres |
-| `image_seed` | Un valor de semilla usado para controlar la aleatoriedad. Predeterminado: 42. | INT | No | 0 a 2147483647 |
-| `face_limit` | Cantidad objetivo de caras, 48-20000. -1 permite que Tripo elija de forma adaptativa. Predeterminado: -1. | INT | No | -1 a 20000 |
-| `model_seed` | Un valor de semilla usado para controlar la aleatoriedad. Predeterminado: 42. | INT | No | 0 a 2147483647 |
-| `auto_size` | Escala la salida para aproximarla a metros del mundo real. Predeterminado: False. | BOOLEAN | No | True / False |
-| `export_uv` | Desenvuelve las UV durante la generación. Desactívalo para ejecuciones más rápidas de solo geometría. Predeterminado: True. | BOOLEAN | No | True / False |
-| `compress_geometry` | Aplica compresión de geometría meshopt (EXT_meshopt_compression). Archivos más pequeños, pero la vista previa 3D de ComfyUI no puede mostrarlos; descomprímelos antes de editar. Predeterminado: False. | BOOLEAN | No | True / False |
+| `prompt_negativo` | Una descripción textual de lo que no deseas en el modelo generado. Hasta 255 caracteres. Predeterminado: sin establecer. | STRING | No | Hasta 255 caracteres |
+| `semilla_imagen` | Un valor de semilla usado para controlar la aleatoriedad. Predeterminado: 42. | INT | No | 0 a 2147483647 |
+| `límite_de_caras` | Cantidad objetivo de caras, 48-20000. -1 permite que Tripo elija de forma adaptativa. Predeterminado: -1. | INT | No | -1 a 20000 |
+| `semilla_modelo` | Un valor de semilla usado para controlar la aleatoriedad. Predeterminado: 42. | INT | No | 0 a 2147483647 |
+| `auto_escala` | Escala la salida para aproximarla a metros del mundo real. Predeterminado: False. | BOOLEAN | No | True / False |
+| `exportar_uv` | Desenvuelve las UV durante la generación. Desactívalo para ejecuciones más rápidas de solo geometría. Predeterminado: True. | BOOLEAN | No | True / False |
+| `comprimir_geometría` | Aplica compresión de geometría meshopt (EXT_meshopt_compression). Archivos más pequeños, pero la vista previa 3D de ComfyUI no puede mostrarlos; descomprímelos antes de editar. Predeterminado: False. | BOOLEAN | No | True / False |
 
 ### Entradas de solo geometría
 

@@ -6,10 +6,10 @@ Este nó realiza uma prova virtual, vestindo uma pessoa com uma imagem de peça 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `person` | Imagem da pessoa a vestir. | IMAGE | Sim | - |
-| `garment` | Imagem da peça de vestuário a aplicar. | IMAGE | Sim | - |
+| `pessoa` | Imagem da pessoa a vestir. | IMAGE | Sim | - |
+| `roupa` | Imagem da peça de vestuário a aplicar. | IMAGE | Sim | - |
 | `prompt` | Instrução de estilização opcional em linguagem natural (ex.: como a peça deve se ajustar). O padrão é uma string vazia. | STRING | Não | - |
-| `seed` | A semente aleatória usada para criar o ruído. Padrão: 0. | INT | Não | 0 a 18446744073709551615 |
+| `semente` | A semente aleatória usada para criar o ruído. Padrão: 0. | INT | Não | 0 a 18446744073709551615 |
 
 ## Saídas
 

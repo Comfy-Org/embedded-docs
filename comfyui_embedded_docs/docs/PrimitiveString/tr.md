@@ -6,7 +6,7 @@ Text düğümü, iş akışınızda metin verilerini girmenin ve iletmenin basit
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `value` | Düğümden geçirilecek metin dizesi | STRING | Evet | Herhangi bir metin |
+| `değer` | Düğümden geçirilecek metin dizesi | STRING | Evet | Herhangi bir metin |
 
 ## Çıktılar
 

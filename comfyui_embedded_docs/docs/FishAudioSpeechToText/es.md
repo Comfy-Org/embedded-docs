@@ -7,7 +7,7 @@ Este nodo transcribe audio a texto mediante el servicio de reconocimiento de voz
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
 | `audio` | Audio a transcribir. | AUDIO | Sí | — |
-| `language` | Sugerencia de idioma ISO 639-1 (p. ej., 'en', 'zh'). El idioma se detecta automáticamente de todos modos. Predeterminado: "" (cadena vacía). | STRING | No | Cualquier código de idioma ISO 639-1, p. ej., `en`, `zh`; cadena vacía para detección automática |
+| `idioma` | Sugerencia de idioma ISO 639-1 (p. ej., 'en', 'zh'). El idioma se detecta automáticamente de todos modos. Predeterminado: "" (cadena vacía). | STRING | No | Cualquier código de idioma ISO 639-1, p. ej., `en`, `zh`; cadena vacía para detección automática |
 | `precise_timestamps` | Devuelve segmentos con marcas de tiempo a nivel de palabra. Predeterminado: false. | BOOLEAN | No | true o false |
 
 Nota: El parámetro `language` es solo una sugerencia: el idioma siempre se detecta automáticamente a partir del audio. Cuando `precise_timestamps` es false (el valor predeterminado), no se devuelven las marcas de tiempo a nivel de palabra; cuando es true, los segmentos de salida incluyen marcas de tiempo a nivel de palabra.

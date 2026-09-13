@@ -7,7 +7,7 @@ PerturbedAttentionGuidance düğümü, üretim kalitesini artırmak için bir di
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Pertürbe edilmiş dikkat rehberliğinin uygulanacağı difüzyon modeli | MODEL | Evet | - |
-| `scale` | Pertürbe edilmiş dikkat rehberliği etkisinin gücü (varsayılan: 3.0). 0 olarak ayarlandığında düğümün hiçbir etkisi olmaz ve özgün gürültüsü giderilmiş sonucu değiştirmeden döndürür. | FLOAT | Evet | 0.0 - 100.0 (adım: 0.01) |
+| `ölçek` | Pertürbe edilmiş dikkat rehberliği etkisinin gücü (varsayılan: 3.0). 0 olarak ayarlandığında düğümün hiçbir etkisi olmaz ve özgün gürültüsü giderilmiş sonucu değiştirmeden döndürür. | FLOAT | Evet | 0.0 - 100.0 (adım: 0.01) |
 
 ## Çıktılar
 

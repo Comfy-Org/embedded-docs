@@ -6,8 +6,8 @@ El nodo ModelSave guarda un MODEL en el almacenamiento de tu equipo como un arch
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo que se va a guardar en disco | MODEL | Sí | - |
-| `filename_prefix` | El prefijo de nombre de archivo y ruta para el archivo de modelo guardado (predeterminado: "diffusion_models/ComfyUI") | STRING | Sí | - |
+| `modelo` | El modelo que se va a guardar en disco | MODEL | Sí | - |
+| `prefijo_nombre_archivo` | El prefijo de nombre de archivo y ruta para el archivo de modelo guardado (predeterminado: "diffusion_models/ComfyUI") | STRING | Sí | - |
 | `prompt` | Información del prompt del flujo de trabajo (proporcionada automáticamente) | PROMPT | No | - |
 | `extra_pnginfo` | Metadatos adicionales del flujo de trabajo (proporcionados automáticamente) | EXTRA_PNGINFO | No | - |
 

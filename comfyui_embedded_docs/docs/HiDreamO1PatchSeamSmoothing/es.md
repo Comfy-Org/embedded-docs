@@ -6,13 +6,13 @@ Este nodo reduce las costuras visibles en las imágenes generadas por el modelo 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo al que se le aplicará el suavizado de costuras. | MODEL | Sí | - |
-| `start_percent` | Progreso de muestreo (0=inicio, 1=fin) en el que la mezcla se ACTIVA. predeterminado: 0.8 | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
-| `end_percent` | Progreso de muestreo en el que la mezcla se DESACTIVA. predeterminado: 1.0 | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
-| `pattern` | Disposición de desplazamientos. `single_shift`: una pasada en la cuadrícula natural de parches + otras desplazadas. `symmetric`: todas las pasadas fuera de la cuadrícula, con desplazamientos divididos alrededor del origen. predeterminado: "single_shift" | COMBO | Sí | `"single_shift"`<br>`"symmetric"` |
-| `passes` | Número de pasadas por paso con activación. `2`/`4` = fijo. `ramp_*`: el número de pasadas aumenta a medida que el muestreo se acerca al final (más suavizado donde las costuras son más visibles). predeterminado: "2" | COMBO | Sí | `"2"`<br>`"4"`<br>`"ramp_2_4"`<br>`"ramp_2_4_8"` |
-| `blend` | `average`: media con pesos iguales. `window`: ponderación con ventana de Hann que favorece cada pasada lejos de sus límites de parche. `median`: mediana por píxel, rechaza las pasadas atípicas por ajuste circular. predeterminado: "average" | COMBO | Sí | `"average"`<br>`"window"`<br>`"median"` |
-| `strength` | Interpolación entre la predicción de la cuadrícula natural (0) y el resultado promediado (1). predeterminado: 1.0 | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
+| `modelo` | El modelo al que se le aplicará el suavizado de costuras. | MODEL | Sí | - |
+| `porcentaje_inicio` | Progreso de muestreo (0=inicio, 1=fin) en el que la mezcla se ACTIVA. predeterminado: 0.8 | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
+| `porcentaje_fin` | Progreso de muestreo en el que la mezcla se DESACTIVA. predeterminado: 1.0 | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
+| `patrón` | Disposición de desplazamientos. `single_shift`: una pasada en la cuadrícula natural de parches + otras desplazadas. `symmetric`: todas las pasadas fuera de la cuadrícula, con desplazamientos divididos alrededor del origen. predeterminado: "single_shift" | COMBO | Sí | `"single_shift"`<br>`"symmetric"` |
+| `pasadas` | Número de pasadas por paso con activación. `2`/`4` = fijo. `ramp_*`: el número de pasadas aumenta a medida que el muestreo se acerca al final (más suavizado donde las costuras son más visibles). predeterminado: "2" | COMBO | Sí | `"2"`<br>`"4"`<br>`"ramp_2_4"`<br>`"ramp_2_4_8"` |
+| `mezcla` | `average`: media con pesos iguales. `window`: ponderación con ventana de Hann que favorece cada pasada lejos de sus límites de parche. `median`: mediana por píxel, rechaza las pasadas atípicas por ajuste circular. predeterminado: "average" | COMBO | Sí | `"average"`<br>`"window"`<br>`"median"` |
+| `fuerza` | Interpolación entre la predicción de la cuadrícula natural (0) y el resultado promediado (1). predeterminado: 1.0 | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
 
 **Nota sobre restricciones de parámetros:**
 - El efecto de suavizado no se aplica si `strength` es 0.0 o menos, o si `end_percent` es menor o igual que `start_percent`. En esos casos, el nodo devuelve el modelo sin cambios.

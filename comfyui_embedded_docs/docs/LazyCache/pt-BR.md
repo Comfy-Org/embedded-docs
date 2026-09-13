@@ -6,11 +6,11 @@ LazyCache é uma versão experimental e caseira do EasyCache que adiciona cache 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo ao qual adicionar o LazyCache. | MODEL | Sim | - |
-| `reuse_threshold` | O limiar para reutilizar etapas em cache. Padrão: 0.2. | FLOAT | Sim | 0.0 - 3.0 (passo 0.01) |
-| `start_percent` | A etapa relativa de amostragem para iniciar o uso do LazyCache. Padrão: 0.15. | FLOAT | Sim | 0.0 - 1.0 (passo 0.01) |
-| `end_percent` | A etapa relativa de amostragem para encerrar o uso do LazyCache. Padrão: 0.95. | FLOAT | Sim | 0.0 - 1.0 (passo 0.01) |
-| `verbose` | Se deve registrar informações detalhadas. Padrão: False. | BOOLEAN | Sim | - |
+| `modelo` | O modelo ao qual adicionar o LazyCache. | MODEL | Sim | - |
+| `limite_de_reutilização` | O limiar para reutilizar etapas em cache. Padrão: 0.2. | FLOAT | Sim | 0.0 - 3.0 (passo 0.01) |
+| `percentual_inicial` | A etapa relativa de amostragem para iniciar o uso do LazyCache. Padrão: 0.15. | FLOAT | Sim | 0.0 - 1.0 (passo 0.01) |
+| `percentual_final` | A etapa relativa de amostragem para encerrar o uso do LazyCache. Padrão: 0.95. | FLOAT | Sim | 0.0 - 1.0 (passo 0.01) |
+| `detalhado` | Se deve registrar informações detalhadas. Padrão: False. | BOOLEAN | Sim | - |
 
 Nota: `reuse_threshold`, `start_percent`, `end_percent` e `verbose` são marcados como entradas avançadas.
 

@@ -6,9 +6,9 @@ EmptyHunyuanImageLatent düğümü, Hunyuan görüntü oluşturma modelleri içi
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `width` | Oluşturulan latent görüntünün piksel cinsinden genişliği (varsayılan: 2048, adım: 32) | INT | Evet | 64 - MAX_RESOLUTION |
-| `height` | Oluşturulan latent görüntünün piksel cinsinden yüksekliği (varsayılan: 2048, adım: 32) | INT | Evet | 64 - MAX_RESOLUTION |
-| `batch_size` | Bir toplu işlemde oluşturulacak latent örnek sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `genişlik` | Oluşturulan latent görüntünün piksel cinsinden genişliği (varsayılan: 2048, adım: 32) | INT | Evet | 64 - MAX_RESOLUTION |
+| `yükseklik` | Oluşturulan latent görüntünün piksel cinsinden yüksekliği (varsayılan: 2048, adım: 32) | INT | Evet | 64 - MAX_RESOLUTION |
+| `toplu_işlem_boyutu` | Bir toplu işlemde oluşturulacak latent örnek sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
 
 ## Çıktılar
 

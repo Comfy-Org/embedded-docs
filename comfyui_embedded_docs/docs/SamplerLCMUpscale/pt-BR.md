@@ -6,9 +6,9 @@ Este nó fornece um método de amostragem especializado que combina amostragem d
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `scale_ratio` | O fator de escala total a aplicar durante o aumento de escala. Um valor de 1.0 mantém a resolução original (padrão: 1.0) | FLOAT | Sim | 0.1 - 20.0 |
-| `scale_steps` | O número de etapas a usar para o processo de aumento de escala. Use -1 para cálculo automático com base no cronograma de amostragem (padrão: -1) | INT | Sim | -1 - 1000 |
-| `upscale_method` | O método de interpolação usado para aumentar a escala da imagem em cada etapa de aumento de escala (padrão: "bislerp") | COMBO | Sim | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" |
+| `proporção_de_escala` | O fator de escala total a aplicar durante o aumento de escala. Um valor de 1.0 mantém a resolução original (padrão: 1.0) | FLOAT | Sim | 0.1 - 20.0 |
+| `etapas_de_escala` | O número de etapas a usar para o processo de aumento de escala. Use -1 para cálculo automático com base no cronograma de amostragem (padrão: -1) | INT | Sim | -1 - 1000 |
+| `método_de_upscale` | O método de interpolação usado para aumentar a escala da imagem em cada etapa de aumento de escala (padrão: "bislerp") | COMBO | Sim | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" |
 
 `scale_ratio` e `scale_steps` são parâmetros avançados. A imagem é ampliada gradualmente do seu tamanho original até a `scale_ratio` alvo ao longo das etapas de aumento de escala. Quando `scale_steps` é -1, o número de etapas de aumento de escala é calculado automaticamente como cerca de metade do número de etapas de amostragem, com um mínimo de 2; quando um valor positivo é fornecido, o nó o ajusta internamente e o limita com base no número total de etapas de amostragem.
 

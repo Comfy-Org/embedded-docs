@@ -8,8 +8,8 @@ Bir 3B mesh'i dünya eksenleri etrafında Euler XYZ açılarını (derece cinsin
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `mode` | Kullanılacak döndürme modu. `"euler_xyz"` döndürmeyi dünya eksenleri etrafında X, sonra Y, sonra Z açıları olarak uygular (derece cinsinden). `"quaternion"` otomatik olarak normalleştirilen bir (w, x, y, z) kuaterniyonu kullanır. | DYNAMIC_COMBO | Evet | `"euler_xyz"`<br>`"quaternion"` |
-| `mesh` | Döndürülecek 3B mesh. | MESH | Evet | — |
+| `mod` | Kullanılacak döndürme modu. `"euler_xyz"` döndürmeyi dünya eksenleri etrafında X, sonra Y, sonra Z açıları olarak uygular (derece cinsinden). `"quaternion"` otomatik olarak normalleştirilen bir (w, x, y, z) kuaterniyonu kullanır. | DYNAMIC_COMBO | Evet | `"euler_xyz"`<br>`"quaternion"` |
+| `ağ` | Döndürülecek 3B mesh. | MESH | Evet | — |
 
 ### euler_xyz Girdileri
 

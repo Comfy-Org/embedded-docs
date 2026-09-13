@@ -8,8 +8,8 @@ El nodo Remove Background genera una máscara de primer plano que separa el suje
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `bg_removal_model` | Modelo de eliminación de fondo utilizado para generar la máscara | BACKGROUND_REMOVAL_MODEL | Sí | N/A |
-| `image` | Imagen de entrada a la que se le eliminará el fondo | IMAGE | Sí | N/A |
+| `modelo_de_eliminación_de_fondo` | Modelo de eliminación de fondo utilizado para generar la máscara | BACKGROUND_REMOVAL_MODEL | Sí | N/A |
+| `imagen` | Imagen de entrada a la que se le eliminará el fondo | IMAGE | Sí | N/A |
 
 ## Salidas
 

@@ -6,9 +6,9 @@ O nó OptimalStepsScheduler cria um cronograma de ruído (uma sequência de valo
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model_type` | O tipo de modelo de difusão a ser usado para o cálculo do nível de ruído. Cada opção usa sua própria tabela predefinida de níveis de ruído. | COMBO | Sim | "FLUX"<br>"Wan"<br>"Chroma" |
-| `steps` | O número total de passos de amostragem a calcular (padrão: 20). | INT | Sim | 3 a 1000 |
-| `denoise` | Controla a força de remoção de ruído, que ajusta o número efetivo de passos (padrão: 1.0). | FLOAT | Sim | 0.0 a 1.0 (passo: 0.01) |
+| `tipo_de_modelo` | O tipo de modelo de difusão a ser usado para o cálculo do nível de ruído. Cada opção usa sua própria tabela predefinida de níveis de ruído. | COMBO | Sim | "FLUX"<br>"Wan"<br>"Chroma" |
+| `passos` | O número total de passos de amostragem a calcular (padrão: 20). | INT | Sim | 3 a 1000 |
+| `reduzir_ruído` | Controla a força de remoção de ruído, que ajusta o número efetivo de passos (padrão: 1.0). | FLOAT | Sim | 0.0 a 1.0 (passo: 0.01) |
 
 **Nota:** A tabela base de níveis de ruído para o `model_type` selecionado é reamostrada com interpolação log-linear sempre que seu comprimento não for igual a `steps + 1`, de modo que a saída sempre corresponda à contagem de passos solicitada.
 

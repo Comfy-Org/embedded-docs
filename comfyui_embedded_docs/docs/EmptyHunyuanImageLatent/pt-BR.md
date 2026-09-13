@@ -6,9 +6,9 @@ O nó EmptyHunyuanImageLatent cria um espaço latente vazio, totalmente zerado, 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `width` | A largura da imagem latente gerada em pixels (padrão: 2048, passo: 32) | INT | Sim | 64 a MAX_RESOLUTION |
-| `height` | A altura da imagem latente gerada em pixels (padrão: 2048, passo: 32) | INT | Sim | 64 a MAX_RESOLUTION |
-| `batch_size` | O número de amostras latentes a serem geradas em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
+| `largura` | A largura da imagem latente gerada em pixels (padrão: 2048, passo: 32) | INT | Sim | 64 a MAX_RESOLUTION |
+| `altura` | A altura da imagem latente gerada em pixels (padrão: 2048, passo: 32) | INT | Sim | 64 a MAX_RESOLUTION |
+| `tamanho_do_lote` | O número de amostras latentes a serem geradas em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
 
 ## Saídas
 

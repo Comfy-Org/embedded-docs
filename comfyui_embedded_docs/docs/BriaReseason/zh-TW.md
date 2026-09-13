@@ -8,9 +8,9 @@
 
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 要移至另一個季節的影像。影像傳送前會移除任何 alpha 通道。 | IMAGE | 是 | - |
-| `season` | 要套用的季節。 | COMBO | 是 | `"spring"`<br>`"summer"`<br>`"autumn"`<br>`"winter"` |
-| `moderation` | 內容審核設定。選擇是否為此請求設定內容審核選項。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
+| `圖片` | 要移至另一個季節的影像。影像傳送前會移除任何 alpha 通道。 | IMAGE | 是 | - |
+| `季節` | 要套用的季節。 | COMBO | 是 | `"spring"`<br>`"summer"`<br>`"autumn"`<br>`"winter"` |
+| `內容審核` | 內容審核設定。選擇是否為此請求設定內容審核選項。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
 
 ### 內容審核輸入
 

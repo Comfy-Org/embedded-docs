@@ -6,7 +6,7 @@ Bu düğüm, Flux ve Flux benzeri modellerde guidance embed'ini tamamen devre d�
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `conditioning` | İşlenecek ve guidance'ın kaldırılacağı conditioning verisi | CONDITIONING | Evet | - |
+| `koşullandırma` | İşlenecek ve guidance'ın kaldırılacağı conditioning verisi | CONDITIONING | Evet | - |
 
 ## Çıktılar
 

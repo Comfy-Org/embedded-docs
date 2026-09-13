@@ -7,12 +7,12 @@ Ce nœud dessine du texte par-dessus une image ou un lot d’images. Il crée un
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `images` | L’image d’entrée ou le lot d’images sur lequel dessiner le texte | IMAGE | Oui | |
-| `text` | Le texte à superposer sur l’image (par défaut : ""). Prend en charge plusieurs lignes : les séquences d’échappement `\n` et `\t` sont converties en retours à la ligne et tabulations, et les lignes longues sont automatiquement mises à la ligne pour tenir dans la largeur de l’image. | STRING | Oui | |
-| `font_size` | Taille de police en pourcentage de la hauteur de l’image (par défaut : 5.0) | FLOAT | Oui | 0.5 à 50.0 (pas de 0.5) |
-| `color` | Couleur du texte (par défaut : "#ffffff") | COLOR | Oui | |
+| `texte` | Le texte à superposer sur l’image (par défaut : ""). Prend en charge plusieurs lignes : les séquences d’échappement `\n` et `\t` sont converties en retours à la ligne et tabulations, et les lignes longues sont automatiquement mises à la ligne pour tenir dans la largeur de l’image. | STRING | Oui | |
+| `taille_de_police` | Taille de police en pourcentage de la hauteur de l’image (par défaut : 5.0) | FLOAT | Oui | 0.5 à 50.0 (pas de 0.5) |
+| `couleur` | Couleur du texte (par défaut : "#ffffff") | COLOR | Oui | |
 | `position` | Position verticale du texte sur l’image (par défaut : "top") | COMBO | Oui | "top"<br>"bottom" |
-| `align` | Alignement horizontal du texte (par défaut : "left") | COMBO | Oui | "left"<br>"center"<br>"right" |
-| `outline` | Dessiner un contour noir autour du texte (par défaut : True) | BOOLEAN | Oui | |
+| `alignement` | Alignement horizontal du texte (par défaut : "left") | COMBO | Oui | "left"<br>"center"<br>"right" |
+| `contour` | Dessiner un contour noir autour du texte (par défaut : True) | BOOLEAN | Oui | |
 
 Remarque : Si `text` est vide ou ne contient que des espaces, le nœud renvoie les images d’entrée inchangées. La superposition de texte est rendue une seule fois et appliquée à chaque image du lot. Si le bloc de texte rendu est plus haut que la zone d’image disponible, la taille de police est réduite automatiquement jusqu’à ce qu’il tienne ou atteigne une taille minimale.
 

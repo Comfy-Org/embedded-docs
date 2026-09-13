@@ -6,11 +6,11 @@ Este nó gera um embedding de trajetória de câmera usando embeddings de Plück
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `camera_pose` | O tipo de movimento de câmera a simular (padrão: "Static") | COMBO | Sim | "Static"<br>"Pan Up"<br>"Pan Down"<br>"Pan Left"<br>"Pan Right"<br>"Zoom In"<br>"Zoom Out"<br>"Anti Clockwise (ACW)"<br>"ClockWise (CW)" |
-| `width` | A largura da saída em pixels (padrão: 832, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
-| `height` | A altura da saída em pixels (padrão: 480, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
-| `length` | O comprimento da sequência de trajetória da câmera (padrão: 81, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
-| `speed` | A velocidade do movimento da câmera (padrão: 1.0, passo: 0.1) | FLOAT | Não | 0.0 a 10.0 |
+| `pose_da_câmera` | O tipo de movimento de câmera a simular (padrão: "Static") | COMBO | Sim | "Static"<br>"Pan Up"<br>"Pan Down"<br>"Pan Left"<br>"Pan Right"<br>"Zoom In"<br>"Zoom Out"<br>"Anti Clockwise (ACW)"<br>"ClockWise (CW)" |
+| `largura` | A largura da saída em pixels (padrão: 832, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
+| `altura` | A altura da saída em pixels (padrão: 480, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
+| `duração` | O comprimento da sequência de trajetória da câmera (padrão: 81, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
+| `velocidade` | A velocidade do movimento da câmera (padrão: 1.0, passo: 0.1) | FLOAT | Não | 0.0 a 10.0 |
 | `fx` | O parâmetro de comprimento focal x (padrão: 0.5, passo: 0.000000001) | FLOAT | Não | 0.0 a 1.0 |
 | `fy` | O parâmetro de comprimento focal y (padrão: 0.5, passo: 0.000000001) | FLOAT | Não | 0.0 a 1.0 |
 | `cx` | A coordenada x do ponto principal (padrão: 0.5, passo: 0.01) | FLOAT | Não | 0.0 a 1.0 |

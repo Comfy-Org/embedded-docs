@@ -6,8 +6,8 @@ Este nodo crea un lote de muestras latentes vacías (de todos ceros) formateadas
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `resolution` | La dimensión de resolución del espacio latente a crear (predeterminado: 3072) | INT | Sí | 1 - 8192 |
-| `batch_size` | El número de imágenes latentes en el lote (predeterminado: 1) | INT | Sí | 1 - 4096 |
+| `resolución` | La dimensión de resolución del espacio latente a crear (predeterminado: 3072) | INT | Sí | 1 - 8192 |
+| `tamaño_del_lote` | El número de imágenes latentes en el lote (predeterminado: 1) | INT | Sí | 1 - 4096 |
 
 ## Salidas
 

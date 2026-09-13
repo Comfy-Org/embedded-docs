@@ -6,11 +6,11 @@ Este nodo mejora el detalle espacial y la coherencia de movimiento de la generac
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `model` | El modelo base al que se aplica la guía espacio-temporal. El modelo se clona y se adjunta una función de guía posterior al CFG al clon. | MODEL | Sí | — |
-| `scale` | La intensidad de la guía aplicada al resultado desruidificado. Cuando se establece en 0, la guía no tiene efecto. (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 100.0 (paso 0.01) |
-| `blocks` | Índices de bloques del transformer separados por comas que se van a perturbar. Solo se utilizan valores numéricos; cualquier otro carácter se ignora. (predeterminado: "29") | STRING | Sí | — |
-| `start_percent` | La fracción del proceso de muestreo en la que comienza la guía. Este es un parámetro avanzado. (predeterminado: 0.0) | FLOAT | Sí | 0.0 a 1.0 (paso 0.001) |
-| `end_percent` | La fracción del proceso de muestreo en la que finaliza la guía. Este es un parámetro avanzado. (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso 0.001) |
+| `modelo` | El modelo base al que se aplica la guía espacio-temporal. El modelo se clona y se adjunta una función de guía posterior al CFG al clon. | MODEL | Sí | — |
+| `escala` | La intensidad de la guía aplicada al resultado desruidificado. Cuando se establece en 0, la guía no tiene efecto. (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 100.0 (paso 0.01) |
+| `bloques` | Índices de bloques del transformer separados por comas que se van a perturbar. Solo se utilizan valores numéricos; cualquier otro carácter se ignora. (predeterminado: "29") | STRING | Sí | — |
+| `porcentaje_inicio` | La fracción del proceso de muestreo en la que comienza la guía. Este es un parámetro avanzado. (predeterminado: 0.0) | FLOAT | Sí | 0.0 a 1.0 (paso 0.001) |
+| `porcentaje_fin` | La fracción del proceso de muestreo en la que finaliza la guía. Este es un parámetro avanzado. (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso 0.001) |
 
 Nota: La guía solo se aplica durante el intervalo de muestreo comprendido entre `start_percent` y `end_percent`. Fuera de ese intervalo, se devuelve el resultado desruidificado original sin cambios. Si `scale` es 0 o `blocks` no contiene valores numéricos, la pasada guiada no tiene efecto sobre el proceso de muestreo.
 

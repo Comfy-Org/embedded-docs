@@ -6,12 +6,12 @@ VAEEncodeTiled, görüntüleri daha küçük karolara bölerek ve bunları bir V
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `pixels` | Kodlanacak girdi görüntü verisi. | IMAGE | Evet | - |
+| `pikseller` | Kodlanacak girdi görüntü verisi. | IMAGE | Evet | - |
 | `vae` | Kodlama için kullanılan Varyasyonel Otomatik Kodlayıcı modeli. | VAE | Evet | - |
-| `tile_size` | Uzamsal işleme için her bir karonun boyutu (varsayılan: 512). Gelişmiş ayar. | INT | Evet | 64-4096 (adım: 64) |
-| `overlap` | Bitişik karolar arasındaki örtüşme miktarı (varsayılan: 64). Gelişmiş ayar. | INT | Evet | 0-4096 (adım: 32) |
-| `temporal_size` | Yalnızca video VAE'leri için kullanılır: Bir seferde kodlanacak kare miktarı (varsayılan: 64). Gelişmiş ayar. | INT | Evet | 8-4096 (adım: 4) |
-| `temporal_overlap` | Yalnızca video VAE'leri için kullanılır: Örtüşecek kare miktarı (varsayılan: 8). Gelişmiş ayar. | INT | Evet | 4-4096 (adım: 4) |
+| `döşeme_boyutu` | Uzamsal işleme için her bir karonun boyutu (varsayılan: 512). Gelişmiş ayar. | INT | Evet | 64-4096 (adım: 64) |
+| `örtüşme` | Bitişik karolar arasındaki örtüşme miktarı (varsayılan: 64). Gelişmiş ayar. | INT | Evet | 0-4096 (adım: 32) |
+| `zamansal_boyut` | Yalnızca video VAE'leri için kullanılır: Bir seferde kodlanacak kare miktarı (varsayılan: 64). Gelişmiş ayar. | INT | Evet | 8-4096 (adım: 4) |
+| `zamansal_örtüşme` | Yalnızca video VAE'leri için kullanılır: Örtüşecek kare miktarı (varsayılan: 8). Gelişmiş ayar. | INT | Evet | 4-4096 (adım: 4) |
 
 **Not:** `temporal_size` ve `temporal_overlap` parametreleri yalnızca video VAE'leri kullanılırken geçerlidir ve standart görüntü VAE'leri üzerinde hiçbir etkisi yoktur.
 

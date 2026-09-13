@@ -6,9 +6,9 @@ EmptyChromaRadianceLatentImage düğümü, chroma radiance iş akışlarında ku
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `width` | Latent görüntünün piksel cinsinden genişliği (varsayılan: 1024) | INT | Evet | 16 - MAX_RESOLUTION |
-| `height` | Latent görüntünün piksel cinsinden yüksekliği (varsayılan: 1024) | INT | Evet | 16 - MAX_RESOLUTION |
-| `batch_size` | Bir batch içinde oluşturulacak latent görüntü sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `genişlik` | Latent görüntünün piksel cinsinden genişliği (varsayılan: 1024) | INT | Evet | 16 - MAX_RESOLUTION |
+| `yükseklik` | Latent görüntünün piksel cinsinden yüksekliği (varsayılan: 1024) | INT | Evet | 16 - MAX_RESOLUTION |
+| `toplu_iş_boyutu` | Bir batch içinde oluşturulacak latent görüntü sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
 
 Not: `width` ve `height` 16 adım aralığıyla tanımlanır; bu nedenle değerler 16'nın katları olarak ayarlanır.
 

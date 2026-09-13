@@ -6,11 +6,11 @@ Ce nœud améliore le détail spatial et la cohérence du mouvement de la géné
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle de base auquel appliquer le guidage spatio-temporel. Le modèle est cloné et une fonction de guidage post-CFG est attachée au clone. | MODEL | Oui | — |
-| `scale` | La force du guidage appliqué au résultat débruité. Lorsque la valeur est définie à 0, le guidage n'a aucun effet. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 100.0 (pas: 0.01) |
-| `blocks` | Indices des blocs Transformer à perturber, séparés par des virgules. Seules les valeurs numériques sont utilisées ; tout autre caractère est ignoré. (par défaut : "29") | STRING | Oui | — |
-| `start_percent` | Fraction du processus d'échantillonnage à laquelle le guidage commence. Il s'agit d'un paramètre avancé. (par défaut : 0.0) | FLOAT | Oui | 0.0 à 1.0 (pas: 0.001) |
-| `end_percent` | Fraction du processus d'échantillonnage à laquelle le guidage se termine. Il s'agit d'un paramètre avancé. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas: 0.001) |
+| `modèle` | Le modèle de base auquel appliquer le guidage spatio-temporel. Le modèle est cloné et une fonction de guidage post-CFG est attachée au clone. | MODEL | Oui | — |
+| `échelle` | La force du guidage appliqué au résultat débruité. Lorsque la valeur est définie à 0, le guidage n'a aucun effet. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 100.0 (pas: 0.01) |
+| `blocs` | Indices des blocs Transformer à perturber, séparés par des virgules. Seules les valeurs numériques sont utilisées ; tout autre caractère est ignoré. (par défaut : "29") | STRING | Oui | — |
+| `pourcentage_début` | Fraction du processus d'échantillonnage à laquelle le guidage commence. Il s'agit d'un paramètre avancé. (par défaut : 0.0) | FLOAT | Oui | 0.0 à 1.0 (pas: 0.001) |
+| `pourcentage_fin` | Fraction du processus d'échantillonnage à laquelle le guidage se termine. Il s'agit d'un paramètre avancé. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas: 0.001) |
 
 Remarque : Le guidage n'est appliqué que pendant l'intervalle d'échantillonnage entre `start_percent` et `end_percent`. En dehors de cet intervalle, le résultat débruité d'origine est renvoyé sans modification. Si `scale` vaut 0 ou si `blocks` ne contient aucune valeur numérique, la passe guidée n'a aucun effet sur le processus d'échantillonnage.
 

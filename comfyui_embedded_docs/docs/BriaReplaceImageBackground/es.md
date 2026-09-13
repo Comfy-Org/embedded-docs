@@ -8,11 +8,11 @@ Este nodo reemplaza el fondo de una imagen por uno nuevo generado por Bria. El n
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `image` | La imagen de entrada cuyo fondo se va a reemplazar. | IMAGE | Sí | |
-| `background` | Describa el nuevo fondo con un prompt o guíelo con imágenes de referencia. | DYNAMIC_COMBO | Sí | `"prompt"`<br>`"reference images"` |
+| `imagen` | La imagen de entrada cuyo fondo se va a reemplazar. | IMAGE | Sí | |
+| `fondo` | Describa el nuevo fondo con un prompt o guíelo con imágenes de referencia. | DYNAMIC_COMBO | Sí | `"prompt"`<br>`"reference images"` |
 | `original_quality` | Devuelve el tamaño exacto en píxeles de la entrada en lugar de escalar el resultado a aproximadamente 1 megapíxel. En ese caso, una entrada grande devuelve una imagen grande. (predeterminado: false) | BOOLEAN | No | `true`<br>`false` |
-| `seed` | La misma semilla suele devolver el mismo fondo; el refinamiento automático del prompt aún puede variarlo. (predeterminado: 42) | INT | No | 0 a 2147483647 |
-| `moderation` | Ajustes de moderación. (predeterminado: "false") | DYNAMIC_COMBO | No | `"false"`<br>`"true"` |
+| `semilla` | La misma semilla suele devolver el mismo fondo; el refinamiento automático del prompt aún puede variarlo. (predeterminado: 42) | INT | No | 0 a 2147483647 |
+| `moderación` | Ajustes de moderación. (predeterminado: "false") | DYNAMIC_COMBO | No | `"false"`<br>`"true"` |
 
 ### Entradas de prompt
 

@@ -6,10 +6,10 @@ EmptyMochiLatentVideo, belirttiğiniz boyutlarla boş bir latent video tensörü
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `width` | Latent videonun piksel cinsinden genişliği (varsayılan: 848, değerler 16'lık adımlarla artar) | INT | Evet | 16 - MAX_RESOLUTION |
-| `height` | Latent videonun piksel cinsinden yüksekliği (varsayılan: 480, değerler 16'lık adımlarla artar) | INT | Evet | 16 - MAX_RESOLUTION |
-| `length` | Latent videodaki kare sayısı (varsayılan: 25, değerler 7'den başlayarak 6'lık adımlarla artar) | INT | Evet | 7 - MAX_RESOLUTION |
-| `batch_size` | Bir toplu işte oluşturulacak latent video sayısı (varsayılan: 1) | INT | Hayır | 1 - 4096 |
+| `genişlik` | Latent videonun piksel cinsinden genişliği (varsayılan: 848, değerler 16'lık adımlarla artar) | INT | Evet | 16 - MAX_RESOLUTION |
+| `yükseklik` | Latent videonun piksel cinsinden yüksekliği (varsayılan: 480, değerler 16'lık adımlarla artar) | INT | Evet | 16 - MAX_RESOLUTION |
+| `uzunluk` | Latent videodaki kare sayısı (varsayılan: 25, değerler 7'den başlayarak 6'lık adımlarla artar) | INT | Evet | 7 - MAX_RESOLUTION |
+| `toplu_boyut` | Bir toplu işte oluşturulacak latent video sayısı (varsayılan: 1) | INT | Hayır | 1 - 4096 |
 
 **Not:** Gerçek latent boyutları width/8 ve height/8 olarak hesaplanır, zamansal boyut `((length - 1) // 6) + 1` olarak hesaplanır ve tensör 12 kanala sahiptir. `length` 7'den başlayarak 6'lık adımlarla ilerlediğinden geçerli değerler 7, 13, 19, 25 vb.'dir.
 

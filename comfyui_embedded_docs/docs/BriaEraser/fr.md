@@ -7,9 +7,9 @@ Bria Eraser supprime des objets ou des zones d'une image à l'aide de l'API Bria
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image d'entrée contenant les objets ou zones à supprimer. | IMAGE | Oui | - |
-| `mask` | Les zones blanches sont effacées, les zones noires sont conservées. Le masque est binarisé avant l'envoi avec un seuil de coupure de 50 % : seules les zones peintes avec une opacité supérieure à 50 % sont considérées comme blanches. Doit avoir le même rapport d'aspect que l'image. | MASK | Oui | - |
+| `masque` | Les zones blanches sont effacées, les zones noires sont conservées. Le masque est binarisé avant l'envoi avec un seuil de coupure de 50 % : seules les zones peintes avec une opacité supérieure à 50 % sont considérées comme blanches. Doit avoir le même rapport d'aspect que l'image. | MASK | Oui | - |
 | `mask_type` | Le type de source du masque. "manual" est destiné aux masques dessinés à la main ou au pinceau ; "automatic" est destiné aux masques produits par des modèles de segmentation tels que SAM. | COMBO | Oui | "manual"<br>"automatic" |
-| `moderation` | Paramètres de modération. Défini sur "true" pour activer la modération du contenu visuel sur les images d'entrée et/ou de sortie. | DYNAMIC_COMBO | Oui | "false"<br>"true" |
+| `modération` | Paramètres de modération. Défini sur "true" pour activer la modération du contenu visuel sur les images d'entrée et/ou de sortie. | DYNAMIC_COMBO | Oui | "false"<br>"true" |
 
 Lorsque `moderation` est défini sur "true", deux paramètres booléens supplémentaires deviennent disponibles :
 

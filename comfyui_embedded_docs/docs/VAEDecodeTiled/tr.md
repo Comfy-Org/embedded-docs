@@ -6,12 +6,12 @@ VAEDecodeTiled düğümü, büyük görüntüleri verimli bir şekilde işlemek 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `samples` | Görüntülere çözülecek latent temsil | LATENT | Evet | - |
+| `örnekler` | Görüntülere çözülecek latent temsil | LATENT | Evet | - |
 | `vae` | Latent örnekleri çözmek için kullanılan VAE modeli | VAE | Evet | - |
-| `tile_size` | İşleme için her döşemenin boyutu (varsayılan: 512) | INT | Evet | 64-4096 (adım: 32) |
-| `overlap` | Bitişik döşemeler arasındaki örtüşme miktarı (varsayılan: 64) | INT | Evet | 0-4096 (adım: 32) |
-| `temporal_size` | Yalnızca video VAE'leri için kullanılır: Bir seferde çözülecek kare miktarı (varsayılan: 64) | INT | Evet | 8-4096 (adım: 4) |
-| `temporal_overlap` | Yalnızca video VAE'leri için kullanılır: Örtüşecek kare miktarı (varsayılan: 8) | INT | Evet | 4-4096 (adım: 4) |
+| `döşeme_boyutu` | İşleme için her döşemenin boyutu (varsayılan: 512) | INT | Evet | 64-4096 (adım: 32) |
+| `örtüşme` | Bitişik döşemeler arasındaki örtüşme miktarı (varsayılan: 64) | INT | Evet | 0-4096 (adım: 32) |
+| `zamansal_boyut` | Yalnızca video VAE'leri için kullanılır: Bir seferde çözülecek kare miktarı (varsayılan: 64) | INT | Evet | 8-4096 (adım: 4) |
+| `zamansal_örtüşme` | Yalnızca video VAE'leri için kullanılır: Örtüşecek kare miktarı (varsayılan: 8) | INT | Evet | 4-4096 (adım: 4) |
 
 **Not:** `tile_size`, `overlap`, `temporal_size` ve `temporal_overlap` girdileri gelişmiş ayarlar olarak işaretlenmiştir.
 

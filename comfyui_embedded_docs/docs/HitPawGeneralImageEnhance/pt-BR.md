@@ -6,10 +6,10 @@ Este nó aprimora imagens de baixa resolução ao aumentá-las para super-resolu
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo de aprimoramento a ser usado. O modelo `generative_portrait` é otimizado para retratos, enquanto `generative` é um modelo de uso geral. | COMBO | Sim | `"generative_portrait"`<br>`"generative"` |
-| `image` | A imagem de entrada a ser aprimorada. | IMAGE | Sim | - |
-| `upscale_factor` | O fator pelo qual aumentar as dimensões da imagem. Um fator de 1 significa sem aumento, 2 dobra as dimensões e 4 as quadruplica. | COMBO | Sim | `1`<br>`2`<br>`4` |
-| `auto_downscale` | Reduz automaticamente a escala da imagem de entrada se a saída exceder o limite. (padrão: `False`) | BOOLEAN | Não | - |
+| `modelo` | O modelo de aprimoramento a ser usado. O modelo `generative_portrait` é otimizado para retratos, enquanto `generative` é um modelo de uso geral. | COMBO | Sim | `"generative_portrait"`<br>`"generative"` |
+| `imagem` | A imagem de entrada a ser aprimorada. | IMAGE | Sim | - |
+| `fator_de_upscale` | O fator pelo qual aumentar as dimensões da imagem. Um fator de 1 significa sem aumento, 2 dobra as dimensões e 4 as quadruplica. | COMBO | Sim | `1`<br>`2`<br>`4` |
+| `auto_redimensionar` | Reduz automaticamente a escala da imagem de entrada se a saída exceder o limite. (padrão: `False`) | BOOLEAN | Não | - |
 
 **Observação:** O nó gera um erro se o tamanho de saída calculado (largura de entrada × upscale_factor × altura de entrada × upscale_factor) exceder 32.000.000 pixels (32MP) e `auto_downscale` estiver desabilitado. Quando `auto_downscale` está habilitado, o nó reduz automaticamente o tamanho da imagem de entrada ou o fator de upscale (ou ambos) para que a saída caiba dentro do limite de 32MP. O `model` e o `upscale_factor` selecionados são combinados no nome do modelo enviado ao serviço.
 

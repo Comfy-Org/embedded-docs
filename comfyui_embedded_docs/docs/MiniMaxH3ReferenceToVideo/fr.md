@@ -9,15 +9,15 @@ MiniMax H3 Reference to Video crée le conditionnement textuel et le latent audi
 | `clip` | Modèle CLIP utilisé pour tokeniser le prompt et encoder les médias de référence en tokens de conditionnement. | CLIP | Oui | |
 | `vae` | VAE vidéo. Sans lui, les images/vidéos de référence ne conditionnent que l'encodeur de texte. | VAE | Non | |
 | `audio_vae` | VAE audio. Sans lui, l'audio de référence ne conditionne que l'encodeur de texte. | VAE | Non | |
-| `prompt` | Prompt textuel pour la vidéo. Les médias de référence peuvent être adressés avec les balises `<Picture i>`, `<Video k>` et `<Audio j>` (indexées à partir de 1 par type). Prend en charge les prompts multilignes et dynamiques. | STRING | Oui | |
-| `width` | Largeur de la vidéo générée en pixels (par défaut : 1344). | INT | Oui | 32 à 16384 (pas 32) |
-| `height` | Hauteur de la vidéo générée en pixels (par défaut : 768). | INT | Oui | 32 à 16384 (pas 32) |
-| `length` | Nombre d'images à 24 fps, (124 = ~5 s, plage d'entraînement ~124-362) (par défaut : 124). | INT | Oui | 5 à 3600 (pas 17) |
-| `ref_image_size` | Dimensionnement des images de référence. `match` met à l'échelle chaque réf (uniquement vers le bas, en conservant les proportions) vers la zone en pixels de la génération ; `max` utilise le petit côté de 2048 px du pipeline de référence pour une meilleure fidélité d'identité. Les tokens de référence traversent chaque étape d'échantillonnage, donc `max` peut être plusieurs fois plus lent (par défaut : `match`). | COMBO | Oui | `"match"`<br>`"max"` |
-| `ref_images` | Emplacement extensible : connectez jusqu'à 9 images de référence (`ref_image_1` ... `ref_image_9`). Image de référence (réduite à un petit côté de 2048 px si plus grande, jamais agrandie). | IMAGE | Non | 0 à 9 |
-| `ref_videos` | Emplacement extensible : connectez jusqu'à 3 vidéos de référence (`ref_video_1` ... `ref_video_3`). Images de vidéo de référence à 24 fps (2-15 s). | IMAGE | Non | 0 à 3 |
-| `ref_video_audios` | Emplacement extensible : connectez jusqu'à 3 pistes audio (`ref_video_audio_1` ... `ref_video_audio_3`). Piste audio de la vidéo de référence portant le même numéro. | AUDIO | Non | 0 à 3 |
-| `ref_audios` | Emplacement extensible : connectez jusqu'à 3 clips audio de référence autonomes (`ref_audio_1` ... `ref_audio_3`). Audio de référence autonome. | AUDIO | Non | 0 à 3 |
+| `invite` | Prompt textuel pour la vidéo. Les médias de référence peuvent être adressés avec les balises `<Picture i>`, `<Video k>` et `<Audio j>` (indexées à partir de 1 par type). Prend en charge les prompts multilignes et dynamiques. | STRING | Oui | |
+| `largeur` | Largeur de la vidéo générée en pixels (par défaut : 1344). | INT | Oui | 32 à 16384 (pas 32) |
+| `hauteur` | Hauteur de la vidéo générée en pixels (par défaut : 768). | INT | Oui | 32 à 16384 (pas 32) |
+| `longueur` | Nombre d'images à 24 fps, (124 = ~5 s, plage d'entraînement ~124-362) (par défaut : 124). | INT | Oui | 5 à 3600 (pas 17) |
+| `taille_image_référence` | Dimensionnement des images de référence. `match` met à l'échelle chaque réf (uniquement vers le bas, en conservant les proportions) vers la zone en pixels de la génération ; `max` utilise le petit côté de 2048 px du pipeline de référence pour une meilleure fidélité d'identité. Les tokens de référence traversent chaque étape d'échantillonnage, donc `max` peut être plusieurs fois plus lent (par défaut : `match`). | COMBO | Oui | `"match"`<br>`"max"` |
+| `images_de_référence` | Emplacement extensible : connectez jusqu'à 9 images de référence (`ref_image_1` ... `ref_image_9`). Image de référence (réduite à un petit côté de 2048 px si plus grande, jamais agrandie). | IMAGE | Non | 0 à 9 |
+| `vidéos_de_référence` | Emplacement extensible : connectez jusqu'à 3 vidéos de référence (`ref_video_1` ... `ref_video_3`). Images de vidéo de référence à 24 fps (2-15 s). | IMAGE | Non | 0 à 3 |
+| `audios_vidéo_de_référence` | Emplacement extensible : connectez jusqu'à 3 pistes audio (`ref_video_audio_1` ... `ref_video_audio_3`). Piste audio de la vidéo de référence portant le même numéro. | AUDIO | Non | 0 à 3 |
+| `audios_de_référence` | Emplacement extensible : connectez jusqu'à 3 clips audio de référence autonomes (`ref_audio_1` ... `ref_audio_3`). Audio de référence autonome. | AUDIO | Non | 0 à 3 |
 
 Remarques :
 

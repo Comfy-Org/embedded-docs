@@ -6,7 +6,7 @@ Ce nœud désactive complètement l'embedding de guidage sur les modèles Flux e
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Données de conditionnement à traiter et dont le guidage doit être retiré | CONDITIONING | Oui | - |
+| `conditionnement` | Données de conditionnement à traiter et dont le guidage doit être retiré | CONDITIONING | Oui | - |
 
 ## Sorties
 

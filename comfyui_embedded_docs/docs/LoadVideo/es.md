@@ -6,7 +6,7 @@ El nodo Load Video carga archivos de video desde el directorio de entrada y los 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `file` | El archivo de video que se cargará desde el directorio de entrada. La lista desplegable se completa dinámicamente con todos los archivos de video encontrados en la carpeta de entrada de ComfyUI, y se pueden subir nuevos archivos de video directamente mediante el selector de archivos. | COMBO | Sí | Múltiples opciones disponibles (todos los archivos de video en el directorio de entrada) |
+| `archivo` | El archivo de video que se cargará desde el directorio de entrada. La lista desplegable se completa dinámicamente con todos los archivos de video encontrados en la carpeta de entrada de ComfyUI, y se pueden subir nuevos archivos de video directamente mediante el selector de archivos. | COMBO | Sí | Múltiples opciones disponibles (todos los archivos de video en el directorio de entrada) |
 
 **Nota:** Las opciones disponibles para el parámetro `file` se completan dinámicamente a partir de los archivos de video presentes en el directorio de entrada. Solo se muestran los archivos que coinciden con los tipos de contenido de video compatibles, y la lista se ordena alfabéticamente. También puede subir un nuevo archivo de video directamente a través de la interfaz del selector de archivos del nodo. Si un archivo de video seleccionado previamente ya no se encuentra, el nodo informa un error de archivo no válido.
 

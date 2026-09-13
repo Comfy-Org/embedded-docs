@@ -6,7 +6,7 @@ Calcula normales suaves por vértice para una malla y las adjunta. Los visores g
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `mesh` | La malla de entrada que se va a procesar. | MESH | Sí | - |
+| `malla` | La malla de entrada que se va a procesar. | MESH | Sí | - |
 | `crease_angle` | Los bordes cuyo ángulo diedro supera este valor (en grados) permanecen duros (los vértices se dividen). 180 = totalmente suave; un valor menor conserva los bordes afilados (p. ej., ~30-60 para superficies duras). Predeterminado: 180.0. | FLOAT | Sí | 0.0 a 180.0 (paso: 1.0) |
 
 Cuando `crease_angle` es 180 o superior, la topología de la malla no cambia. Cuando se establece por debajo de 180, los vértices se dividen a lo largo de los bordes duros, lo que puede aumentar el recuento de vértices. Cuando se dividen los vértices, los datos por vértice (colores, UVs y tangentes) se duplican para coincidir con la nueva disposición de vértices, y la malla resultante se reconstruye como un lote de tamaño variable.

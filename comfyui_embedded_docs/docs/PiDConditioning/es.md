@@ -6,9 +6,9 @@ Adjunta un latent y un valor degrade_sigma a un CONDITIONING para que pueda usar
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Los datos de condicionamiento a los que se adjuntarán el latent y el valor degrade_sigma. | CONDITIONING | Sí | - |
+| `positivo` | Los datos de condicionamiento a los que se adjuntarán el latent y el valor degrade_sigma. | CONDITIONING | Sí | - |
 | `latent` | El latent (de VAEEncode o de un KSampler) que se adjuntará al condicionamiento. | LATENT | Sí | - |
-| `latent_format` | El formato del latent. Los latents Flux1 (16 canales) y Flux2 (128 canales) se detectan automáticamente a partir de la dimensión de canales para la opción "flux". Para SD3 (16 canales), SDXL (4 canales) o QwenImage (16 canales), seleccione manualmente (predeterminado: "flux"). | COMBO | Sí | `"flux"`<br>`"sd3"`<br>`"sdxl"`<br>`"qwenimage"` |
+| `formato_latent` | El formato del latent. Los latents Flux1 (16 canales) y Flux2 (128 canales) se detectan automáticamente a partir de la dimensión de canales para la opción "flux". Para SD3 (16 canales), SDXL (4 canales) o QwenImage (16 canales), seleccione manualmente (predeterminado: "flux"). | COMBO | Sí | `"flux"`<br>`"sd3"`<br>`"sdxl"`<br>`"qwenimage"` |
 | `degrade_sigma` | La cantidad de degradación que se aplicará. 0 significa un latent limpio. Aumente este valor para eliminar el ruido de salidas de latent corruptas (predeterminado: 0.0). | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
 
 Nota: Cuando `latent_format` se establece en `"flux"`, el nodo detecta automáticamente el tipo de latent a partir de la dimensión de canales: 128 canales se tratan como latents Flux2, mientras que 16 canales se tratan como latents Flux1.

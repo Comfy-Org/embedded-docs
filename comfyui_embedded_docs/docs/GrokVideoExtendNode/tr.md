@@ -9,9 +9,9 @@ Grok Video Extend düğümü, mevcut bir videoyu metin istemine dayalı kesintis
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Video uzatma için kullanılacak model. `"grok-imagine-video"` seçeneğini seçmek, modele özgü ayarlarını gösterir. | DYNAMIC_COMBO | Evet | `"grok-imagine-video"` |
-| `prompt` | Videoda bundan sonra ne olması gerektiğinin metin açıklaması. | STRING | Evet | N/A |
+| `istem` | Videoda bundan sonra ne olması gerektiğinin metin açıklaması. | STRING | Evet | N/A |
 | `video` | Uzatılacak kaynak video. MP4 formatı, 2-15 saniye. | VIDEO | Evet | MP4, 2-15 saniye, maksimum 50MB |
-| `seed` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirlemek için seed; gerçek sonuçlar seed'den bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Evet | 0 - 2147483647 |
+| `tohum` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirlemek için seed; gerçek sonuçlar seed'den bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Evet | 0 - 2147483647 |
 
 ### grok-imagine-video Girdileri
 

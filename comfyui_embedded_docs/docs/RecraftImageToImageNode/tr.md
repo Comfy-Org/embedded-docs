@@ -6,14 +6,14 @@ Bu düğüm, mevcut bir görüntüyü bir metin istemine ve bir güç ayarına g
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Değiştirilecek giriş görüntüsü. Bir görüntü grubu sağlandığında, her görüntü ayrı ayrı işlenir. | IMAGE | Evet | - |
-| `prompt` | Görüntü oluşturma için istem. Varsayılan: boş dize. Maksimum uzunluk: 1000 karakter. | STRING | Evet | - |
+| `görüntü` | Değiştirilecek giriş görüntüsü. Bir görüntü grubu sağlandığında, her görüntü ayrı ayrı işlenir. | IMAGE | Evet | - |
+| `istem` | Görüntü oluşturma için istem. Varsayılan: boş dize. Maksimum uzunluk: 1000 karakter. | STRING | Evet | - |
 | `n` | Oluşturulacak görüntü sayısı. Varsayılan: 1. | INT | Evet | 1-6 |
-| `strength` | Orijinal görüntüyle farkı tanımlar; [0, 1] aralığında olmalıdır; burada 0 neredeyse aynı, 1 ise çok düşük benzerlik anlamına gelir. Varsayılan: 0.5. | FLOAT | Evet | 0.0-1.0 (adım: 0.01) |
-| `seed` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir. Varsayılan: 0. | INT | Evet | 0-18446744073709551615 |
-| `recraft_style` | Görüntü oluşturma için isteğe bağlı stil seçimi. Sağlanmazsa varsayılan olarak `realistic_image` kullanılır. | STYLEV3 | Hayır | - |
-| `negative_prompt` | Görüntüde istenmeyen öğelerin isteğe bağlı metin açıklaması. Varsayılan: boş dize. Bir giriş soketi olarak sağlanır. | STRING | Hayır | - |
-| `recraft_controls` | Recraft Controls düğümü aracılığıyla oluşturma üzerinde isteğe bağlı ek kontroller. | CONTROLS | Hayır | - |
+| `güç` | Orijinal görüntüyle farkı tanımlar; [0, 1] aralığında olmalıdır; burada 0 neredeyse aynı, 1 ise çok düşük benzerlik anlamına gelir. Varsayılan: 0.5. | FLOAT | Evet | 0.0-1.0 (adım: 0.01) |
+| `tohum` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir. Varsayılan: 0. | INT | Evet | 0-18446744073709551615 |
+| `recraft_stili` | Görüntü oluşturma için isteğe bağlı stil seçimi. Sağlanmazsa varsayılan olarak `realistic_image` kullanılır. | STYLEV3 | Hayır | - |
+| `negatif_istem` | Görüntüde istenmeyen öğelerin isteğe bağlı metin açıklaması. Varsayılan: boş dize. Bir giriş soketi olarak sağlanır. | STRING | Hayır | - |
+| `recraft_kontrolleri` | Recraft Controls düğümü aracılığıyla oluşturma üzerinde isteğe bağlı ek kontroller. | CONTROLS | Hayır | - |
 
 **Not:** `seed` parametresi yalnızca düğümün yeniden yürütülmesini tetikler ancak deterministik sonuçları garanti etmez. `strength` parametresi dahili olarak 2 ondalık basamağa yuvarlanır. `prompt` doğrulanır ve 1000 karakteri aşmamalıdır. Boş bir `negative_prompt`, negatif istem yok olarak değerlendirilir. `recraft_style` sağlanmazsa düğüm varsayılan olarak `realistic_image` stiline geçer. Infinite Style Library'den bir `style_id` kullanırsanız, bunun bir Vector art stili olmadığından emin olun; çünkü bu, düğümün görüntü yerine SVG verisi almasına ve hata oluşmasına neden olabilir. Giriş `image` bir grup olduğunda, gruptaki her görüntü ayrı ayrı işlenir ve tüm sonuçlar birlikte döndürülür.
 

@@ -6,8 +6,8 @@ Empty Ace Step 1.0 Latent Audio düğümü, seçilen süre için boş latent ses
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `seconds` | Sesin saniye cinsinden süresi (varsayılan: 120.0, adım: 0.1) | FLOAT | Evet | 1.0 - 1000.0 |
-| `batch_size` | Gruptaki latent görüntü sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `saniye` | Sesin saniye cinsinden süresi (varsayılan: 120.0, adım: 0.1) | FLOAT | Evet | 1.0 - 1000.0 |
+| `toplu_iş_boyutu` | Gruptaki latent görüntü sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
 
 ## Çıktılar
 

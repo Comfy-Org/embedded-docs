@@ -6,7 +6,7 @@ Ce nœud définit le latent de guidage pour un modèle d’édition. Il prend de
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Données de conditionnement à modifier avec les informations latentes de référence | CONDITIONING | Oui | - |
+| `conditionnement` | Données de conditionnement à modifier avec les informations latentes de référence | CONDITIONING | Oui | - |
 | `latent` | Données latentes optionnelles à utiliser comme référence pour le modèle d’édition. Si elles ne sont pas fournies, le conditionnement est renvoyé inchangé | LATENT | Non | - |
 
 ## Sorties

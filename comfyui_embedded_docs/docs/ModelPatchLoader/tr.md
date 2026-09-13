@@ -6,7 +6,7 @@ ModelPatchLoader düğümü, `model_patches` klasöründen bir model yama dosyas
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `name` | `model_patches` klasöründen yüklenecek model yamasının dosya adı. Listeden mevcut yama dosyalarından birini seçin. | COMBO | Evet | `model_patches` klasöründe bulunan tüm model yama dosyalarının dinamik olarak oluşturulan listesi |
+| `ad` | `model_patches` klasöründen yüklenecek model yamasının dosya adı. Listeden mevcut yama dosyalarından birini seçin. | COMBO | Evet | `model_patches` klasöründe bulunan tüm model yama dosyalarının dinamik olarak oluşturulan listesi |
 
 Not: Bu düğüm deneysel olarak işaretlenmiştir. Yama türü dosya içeriğinden otomatik olarak algılanır, bu nedenle manuel tür seçimi gerekmez. Düğüm, checkpoint meta verilerini okur ve hangi mimarinin oluşturulacağına karar vermek için ağırlık anahtarlarını inceler (örneğin Qwen Image blok tabanlı ControlNet, Z-Image ControlNet, Wan Uni3C ControlNet, MiniMax H3 Fun ControlNet, SigLIP özellik projeksiyonu, Lightricks duration head, Anima LLLite, MultiTalk veya SUPIR). Ağırlıklar güvenli yükleme etkin olarak yüklenir ve model, daha sonra başka bir modele uygulanabilmesi için bir `CoreModelPatcher` içindeki offload aygıtına yerleştirilir.
 

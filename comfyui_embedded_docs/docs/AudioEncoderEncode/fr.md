@@ -6,7 +6,7 @@ Le nœud AudioEncoderEncode convertit l'audio en une représentation encodée à
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `audio_encoder` | Modèle d'encodeur audio utilisé pour traiter l'entrée audio | AUDIO_ENCODER | Oui | - |
+| `encodeur_audio` | Modèle d'encodeur audio utilisé pour traiter l'entrée audio | AUDIO_ENCODER | Oui | - |
 | `audio` | Données audio contenant la forme d'onde et les informations de fréquence d'échantillonnage | AUDIO | Oui | - |
 
 ## Sorties

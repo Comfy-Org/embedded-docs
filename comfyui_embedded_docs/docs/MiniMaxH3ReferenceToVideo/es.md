@@ -10,14 +10,14 @@ MiniMax H3 Reference to Video crea el condicionamiento de texto y el latente vac
 | `vae` | VAE de video. Sin él, las imágenes/videos de referencia solo condicionan el codificador de texto. | VAE | No | |
 | `audio_vae` | VAE de audio. Sin él, el audio de referencia solo condiciona el codificador de texto. | VAE | No | |
 | `prompt` | Prompt de texto para el video. Se puede hacer referencia a los medios de referencia con las etiquetas `<Picture i>`, `<Video k>` y `<Audio j>` (indexadas desde 1 por tipo). Admite prompts multilínea y dinámicos. | STRING | Sí | |
-| `width` | Ancho del video generado en píxeles (predeterminado: 1344). | INT | Sí | 32 a 16384 (paso: 32) |
-| `height` | Alto del video generado en píxeles (predeterminado: 768). | INT | Sí | 32 a 16384 (paso: 32) |
-| `length` | Cantidad de fotogramas a 24 fps, (124 = ~5s, el rango entrenado es ~124-362) (predeterminado: 124). | INT | Sí | 5 a 3600 (paso: 17) |
-| `ref_image_size` | Dimensionamiento de la imagen de referencia. `match` escala cada referencia (solo hacia abajo, manteniendo la relación de aspecto) al área de píxeles de la generación; `max` utiliza el borde corto de 2048px de la tubería de referencia para obtener la mejor fidelidad de identidad. Los tokens de referencia atraviesan cada paso de muestreo, por lo que `max` puede ser varias veces más lento (predeterminado: `match`). | COMBO | Sí | `"match"`<br>`"max"` |
-| `ref_images` | Ranura ampliable: conecte hasta 9 imágenes de referencia (`ref_image_1` ... `ref_image_9`). Imagen de referencia (reducida a un borde corto de 2048 si es más grande, nunca ampliada). | IMAGE | No | 0 a 9 |
-| `ref_videos` | Ranura ampliable: conecte hasta 3 videos de referencia (`ref_video_1` ... `ref_video_3`). Fotogramas de video de referencia a 24 fps (2-15s). | IMAGE | No | 0 a 3 |
-| `ref_video_audios` | Ranura ampliable: conecte hasta 3 pistas de audio (`ref_video_audio_1` ... `ref_video_audio_3`). Pista de audio del video de referencia con el mismo número. | AUDIO | No | 0 a 3 |
-| `ref_audios` | Ranura ampliable: conecte hasta 3 clips de audio de referencia independientes (`ref_audio_1` ... `ref_audio_3`). Audio de referencia independiente. | AUDIO | No | 0 a 3 |
+| `ancho` | Ancho del video generado en píxeles (predeterminado: 1344). | INT | Sí | 32 a 16384 (paso: 32) |
+| `alto` | Alto del video generado en píxeles (predeterminado: 768). | INT | Sí | 32 a 16384 (paso: 32) |
+| `duración` | Cantidad de fotogramas a 24 fps, (124 = ~5s, el rango entrenado es ~124-362) (predeterminado: 124). | INT | Sí | 5 a 3600 (paso: 17) |
+| `tamaño_imagen_ref` | Dimensionamiento de la imagen de referencia. `match` escala cada referencia (solo hacia abajo, manteniendo la relación de aspecto) al área de píxeles de la generación; `max` utiliza el borde corto de 2048px de la tubería de referencia para obtener la mejor fidelidad de identidad. Los tokens de referencia atraviesan cada paso de muestreo, por lo que `max` puede ser varias veces más lento (predeterminado: `match`). | COMBO | Sí | `"match"`<br>`"max"` |
+| `imágenes_ref` | Ranura ampliable: conecte hasta 9 imágenes de referencia (`ref_image_1` ... `ref_image_9`). Imagen de referencia (reducida a un borde corto de 2048 si es más grande, nunca ampliada). | IMAGE | No | 0 a 9 |
+| `videos_ref` | Ranura ampliable: conecte hasta 3 videos de referencia (`ref_video_1` ... `ref_video_3`). Fotogramas de video de referencia a 24 fps (2-15s). | IMAGE | No | 0 a 3 |
+| `audios_video_ref` | Ranura ampliable: conecte hasta 3 pistas de audio (`ref_video_audio_1` ... `ref_video_audio_3`). Pista de audio del video de referencia con el mismo número. | AUDIO | No | 0 a 3 |
+| `audios_ref` | Ranura ampliable: conecte hasta 3 clips de audio de referencia independientes (`ref_audio_1` ... `ref_audio_3`). Audio de referencia independiente. | AUDIO | No | 0 a 3 |
 
 Notas:
 

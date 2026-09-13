@@ -8,11 +8,11 @@ O nó Vidu Video Extension gera quadros adicionais para estender a duração de 
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a ser usado para a extensão de vídeo. Selecionar um modelo revela suas configurações específicas de duração e resolução. | DYNAMIC_COMBO | Sim | `"viduq2-pro"`<br>`"viduq2-turbo"` |
-| `video` | O vídeo de origem a ser estendido. | VIDEO | Sim | - |
+| `modelo` | Modelo a ser usado para a extensão de vídeo. Selecionar um modelo revela suas configurações específicas de duração e resolução. | DYNAMIC_COMBO | Sim | `"viduq2-pro"`<br>`"viduq2-turbo"` |
+| `vídeo` | O vídeo de origem a ser estendido. | VIDEO | Sim | - |
 | `prompt` | Um prompt de texto opcional para o vídeo estendido (máx. 2000 caracteres; padrão: vazio). | STRING | Sim | - |
-| `seed` | Um valor de seed para controlar a aleatoriedade da geração (padrão: 1). | INT | Sim | 0 a 2147483647 |
-| `end_frame` | Uma imagem opcional a ser usada como quadro final de destino para a extensão. | IMAGE | Não | - |
+| `semente` | Um valor de seed para controlar a aleatoriedade da geração (padrão: 1). | INT | Sim | 0 a 2147483647 |
+| `quadro_final` | Uma imagem opcional a ser usada como quadro final de destino para a extensão. | IMAGE | Não | - |
 
 ### Entradas do viduq2-pro e do viduq2-turbo
 

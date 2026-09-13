@@ -6,10 +6,10 @@ O nó ModelSamplingLTXV aplica parâmetros avançados de amostragem a um modelo 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo de entrada ao qual aplicar os parâmetros de amostragem. | MODEL | Sim | - |
-| `max_shift` | O valor máximo de shift usado no cálculo de interpolação linear (padrão: 2.05). | FLOAT | Sim | 0.0 a 100.0 (passo: 0.01) |
-| `base_shift` | O valor base de shift usado no cálculo de interpolação linear (padrão: 0.95). | FLOAT | Sim | 0.0 a 100.0 (passo: 0.01) |
-| `latent` | Entrada latent opcional usada para determinar a contagem de tokens para o cálculo do shift. Se não for fornecida, uma contagem padrão de 4096 tokens será usada. | LATENT | Não | - |
+| `modelo` | O modelo de entrada ao qual aplicar os parâmetros de amostragem. | MODEL | Sim | - |
+| `deslocamento_máx` | O valor máximo de shift usado no cálculo de interpolação linear (padrão: 2.05). | FLOAT | Sim | 0.0 a 100.0 (passo: 0.01) |
+| `deslocamento_base` | O valor base de shift usado no cálculo de interpolação linear (padrão: 0.95). | FLOAT | Sim | 0.0 a 100.0 (passo: 0.01) |
+| `latente` | Entrada latent opcional usada para determinar a contagem de tokens para o cálculo do shift. Se não for fornecida, uma contagem padrão de 4096 tokens será usada. | LATENT | Não | - |
 
 O valor de shift é calculado por interpolação entre `base_shift` em 1024 tokens e `max_shift` em 4096 tokens. Quando `latent` é fornecido, a contagem de tokens é o produto de todas as dimensões após as duas primeiras nas amostras de latent (as dimensões espaciais/temporais). Se nenhum `latent` for fornecido, a contagem de tokens usa 4096 como padrão.
 

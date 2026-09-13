@@ -6,10 +6,10 @@ El nodo InstructPixToPixConditioning prepara datos de condicionamiento para la e
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `positive` | Datos de condicionamiento positivo que contienen prompts de texto y ajustes para las características deseadas de la imagen | CONDITIONING | Sí | - |
-| `negative` | Datos de condicionamiento negativo que contienen prompts de texto y ajustes para las características no deseadas de la imagen | CONDITIONING | Sí | - |
+| `positivo` | Datos de condicionamiento positivo que contienen prompts de texto y ajustes para las características deseadas de la imagen | CONDITIONING | Sí | - |
+| `negativo` | Datos de condicionamiento negativo que contienen prompts de texto y ajustes para las características no deseadas de la imagen | CONDITIONING | Sí | - |
 | `vae` | Modelo VAE utilizado para codificar imágenes de entrada en representaciones latentes | VAE | Sí | - |
-| `pixels` | Imagen de entrada que se procesará y codificará en el espacio latente | IMAGE | Sí | - |
+| `píxeles` | Imagen de entrada que se procesará y codificará en el espacio latente | IMAGE | Sí | - |
 
 **Nota:** Las dimensiones de la imagen de entrada se ajustan automáticamente mediante recorte central a múltiplos de 8 píxeles tanto en ancho como en alto para garantizar la compatibilidad con el proceso de codificación del VAE.
 

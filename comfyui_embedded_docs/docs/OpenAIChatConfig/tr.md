@@ -6,9 +6,9 @@ OpenAIChatConfig düğümü, OpenAI Chat Node'un yanıtları nasıl oluşturduğ
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `truncation` | Model yanıtı için kullanılacak kesme stratejisi. auto: Bu yanıtın ve önceki yanıtların bağlamı modelin bağlam pencere boyutunu aşarsa, model konuşmanın ortasındaki girdi öğelerini bırakarak yanıtı bağlam penceresine sığacak şekilde kısaltır. disabled: Bir model yanıtı modelin bağlam pencere boyutunu aşacaksa, istek 400 hatasıyla başarısız olur (varsayılan: "auto") | COMBO | Evet | "auto"<br>"disabled" |
-| `max_output_tokens` | Bir yanıt için üretilebilecek token sayısı üst sınırı; görünür çıktı token'ları ve akıl yürütme token'ları dahil (varsayılan: 4096) | INT | Hayır | 16 ile 16384 |
-| `instructions` | Modelin yanıtı nasıl oluşturacağına ilişkin talimatlar (çok satırlı girdi desteklenir) | STRING | Hayır | - |
+| `kırpma` | Model yanıtı için kullanılacak kesme stratejisi. auto: Bu yanıtın ve önceki yanıtların bağlamı modelin bağlam pencere boyutunu aşarsa, model konuşmanın ortasındaki girdi öğelerini bırakarak yanıtı bağlam penceresine sığacak şekilde kısaltır. disabled: Bir model yanıtı modelin bağlam pencere boyutunu aşacaksa, istek 400 hatasıyla başarısız olur (varsayılan: "auto") | COMBO | Evet | "auto"<br>"disabled" |
+| `maksimum_çıktı_tokenları` | Bir yanıt için üretilebilecek token sayısı üst sınırı; görünür çıktı token'ları ve akıl yürütme token'ları dahil (varsayılan: 4096) | INT | Hayır | 16 ile 16384 |
+| `talimatlar` | Modelin yanıtı nasıl oluşturacağına ilişkin talimatlar (çok satırlı girdi desteklenir) | STRING | Hayır | - |
 | `reasoning_effort` | Modelin yanıtlamadan önce ne kadar akıl yürüttüğü. "default" seçimi modele bırakır. Desteklenen seviyeler modele göre farklılık gösterir: GPT-6 Astra low-max, GPT-5.6 none-max (minimal yok), GPT-5.5 none-xhigh, GPT-5.5 Pro medium-xhigh, GPT-5 minimal-high, o-series low-high; GPT-4.1'de akıl yürütme yoktur. Desteklenmeyen seviyeler, istek gönderilmeden önce reddedilir. (varsayılan: "default") | COMBO | Hayır | "default"<br>"none"<br>"minimal"<br>"low"<br>"medium"<br>"high"<br>"xhigh"<br>"max" |
 
 Not: `top_p` ve `temperature` API spesifikasyonunda özellik olarak listelense de tüm modeller tarafından desteklenmez ve bu nedenle girdi olarak sunulmaz.

@@ -8,9 +8,9 @@ Bu düğüm, Bria kullanarak bir görüntüyü farklı bir mevsime taşır. Tüm
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Başka bir mevsime taşınacak görüntü. Görüntü gönderilmeden önce varsa alfa kanalı kaldırılır. | IMAGE | Evet | - |
-| `season` | Uygulanacak mevsim. | COMBO | Evet | `"spring"`<br>`"summer"`<br>`"autumn"`<br>`"winter"` |
-| `moderation` | Moderasyon ayarları. İçerik moderasyonu seçeneklerinin bu istek için yapılandırılıp yapılandırılmayacağını seçer. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
+| `görüntü` | Başka bir mevsime taşınacak görüntü. Görüntü gönderilmeden önce varsa alfa kanalı kaldırılır. | IMAGE | Evet | - |
+| `mevsim` | Uygulanacak mevsim. | COMBO | Evet | `"spring"`<br>`"summer"`<br>`"autumn"`<br>`"winter"` |
+| `moderasyon` | Moderasyon ayarları. İçerik moderasyonu seçeneklerinin bu istek için yapılandırılıp yapılandırılmayacağını seçer. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
 
 ### Moderasyon Girdileri
 

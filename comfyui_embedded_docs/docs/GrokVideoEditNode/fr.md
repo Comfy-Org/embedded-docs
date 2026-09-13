@@ -6,10 +6,10 @@ Ce nœud utilise l'API Grok pour modifier une vidéo existante à partir d'une i
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `model` | Modèle d'IA à utiliser pour l'édition vidéo (par défaut : "grok-imagine-video"). | COMBO | Oui | "grok-imagine-video" |
-| `prompt` | Description textuelle de la vidéo souhaitée. | STRING | Oui | N/A |
-| `video` | Vidéo d'entrée à modifier. Durée maximale prise en charge : 8,7 secondes et taille de fichier maximale : 50 Mo. | VIDEO | Oui | N/A |
-| `seed` | Graine permettant de déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quel que soit la graine (par défaut : 0). | INT | Non | 0 à 2147483647 |
+| `modèle` | Modèle d'IA à utiliser pour l'édition vidéo (par défaut : "grok-imagine-video"). | COMBO | Oui | "grok-imagine-video" |
+| `invite` | Description textuelle de la vidéo souhaitée. | STRING | Oui | N/A |
+| `vidéo` | Vidéo d'entrée à modifier. Durée maximale prise en charge : 8,7 secondes et taille de fichier maximale : 50 Mo. | VIDEO | Oui | N/A |
+| `graine` | Graine permettant de déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quel que soit la graine (par défaut : 0). | INT | Non | 0 à 2147483647 |
 
 **Contraintes :**
 

@@ -4,7 +4,7 @@
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model_name` | Yüklenecek bir kare interpolasyon modeli seçin. Modeller 'frame_interpolation' klasörüne yerleştirilmelidir. | COMBO | Evet | `frame_interpolation` klasöründeki model dosyalarının listesi |
+| `model_adı` | Yüklenecek bir kare interpolasyon modeli seçin. Modeller 'frame_interpolation' klasörüne yerleştirilmelidir. | COMBO | Evet | `frame_interpolation` klasöründeki model dosyalarının listesi |
 
 Not: Düğüm, FILM ve RIFE model biçimlerini destekler. Seçilen dosya tanınan bir biçim değilse bir hata oluşturulur.
 

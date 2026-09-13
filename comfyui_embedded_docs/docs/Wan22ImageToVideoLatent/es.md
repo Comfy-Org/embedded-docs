@@ -7,11 +7,11 @@ Wan22ImageToVideoLatent crea representaciones latentes de video a partir de imá
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `vae` | Modelo VAE utilizado para codificar la imagen inicial en el espacio latente | VAE | Sí | - |
-| `width` | Ancho del video de salida en píxeles (predeterminado: 1280, paso: 32) | INT | Sí | 32 a MAX_RESOLUTION |
-| `height` | Altura del video de salida en píxeles (predeterminado: 704, paso: 32) | INT | Sí | 32 a MAX_RESOLUTION |
-| `length` | Número de fotogramas de la secuencia de video (predeterminado: 49, paso: 4) | INT | Sí | 1 a MAX_RESOLUTION |
-| `batch_size` | Número de latentes de video a generar (predeterminado: 1) | INT | Sí | 1 a 4096 |
-| `start_image` | Secuencia de imágenes inicial opcional para codificar en los fotogramas iniciales del latente de video (usa los primeros `length` fotogramas) | IMAGE | No | - |
+| `ancho` | Ancho del video de salida en píxeles (predeterminado: 1280, paso: 32) | INT | Sí | 32 a MAX_RESOLUTION |
+| `alto` | Altura del video de salida en píxeles (predeterminado: 704, paso: 32) | INT | Sí | 32 a MAX_RESOLUTION |
+| `duración` | Número de fotogramas de la secuencia de video (predeterminado: 49, paso: 4) | INT | Sí | 1 a MAX_RESOLUTION |
+| `tamaño_lote` | Número de latentes de video a generar (predeterminado: 1) | INT | Sí | 1 a 4096 |
+| `imagen_inicio` | Secuencia de imágenes inicial opcional para codificar en los fotogramas iniciales del latente de video (usa los primeros `length` fotogramas) | IMAGE | No | - |
 
 **Nota:** Cuando se proporciona `start_image`, la secuencia de imágenes se reescala a los valores objetivo de `width` y `height`, se codifica con el VAE y se coloca en los primeros fotogramas del latente. La máscara de ruido para esos fotogramas se establece en 0 (preservados), mientras que los fotogramas restantes tienen un valor de máscara de 1 (a los que se debe aplicar eliminación de ruido). El latente siempre tiene 48 canales, dimensiones espaciales de `height / 16` por `width / 16`, y una dimensión temporal de `((length - 1) // 4) + 1`. `width` y `height` deben ser divisibles por 16 (forzado por el paso de 32), y `length` incrementa la dimensión temporal en pasos de 4.
 

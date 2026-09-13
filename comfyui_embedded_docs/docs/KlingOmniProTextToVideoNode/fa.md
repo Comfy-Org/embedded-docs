@@ -11,8 +11,8 @@
 | `aspect_ratio` | شکل یا ابعاد ویدئوی تولیدشده. | COMBO | بله | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 | `duration` | طول ویدئو بر حسب ثانیه (پیش‌فرض: 5). | INT | بله | 3 تا 15 ثانیه |
 | `resolution` | کیفیت یا وضوح پیکسلی ویدئو (پیش‌فرض: `"1080p"`). در داخل به کیفیت استاندارد، pro یا 4k نگاشت می‌شود. | COMBO | خیر | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | تولید مجموعه‌ای از بخش‌های ویدئویی با پرامپت‌ها و مدت‌های مجزا. برای مدل o1 نادیده گرفته می‌شود. | DYNAMIC_COMBO | خیر | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | آیا برای ویدئو صدا تولید شود (پیش‌فرض: False). | BOOLEAN | خیر | True / False |
+| `استوری‌بوردها` | تولید مجموعه‌ای از بخش‌های ویدئویی با پرامپت‌ها و مدت‌های مجزا. برای مدل o1 نادیده گرفته می‌شود. | DYNAMIC_COMBO | خیر | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `تولید صدا` | آیا برای ویدئو صدا تولید شود (پیش‌فرض: False). | BOOLEAN | خیر | True / False |
 | `seed` | مقدار seed کنترل می‌کند که آیا گره باید دوباره اجرا شود؛ نتایج بدون توجه به seed غیرقطعی هستند (پیش‌فرض: 0). | INT | خیر | 0 تا 2147483647 |
 
 ### ورودی‌های فرعی استوری‌بورد

@@ -6,11 +6,11 @@ Le nœud SamplerCustomAdvanced effectue un échantillonnage avancé dans l'espac
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `noise` | Le générateur de bruit qui fournit le motif de bruit initial et la graine pour le processus d'échantillonnage | NOISE | Oui | - |
-| `guider` | Le modèle de guidage qui oriente le processus d'échantillonnage vers la sortie souhaitée | GUIDER | Oui | - |
-| `sampler` | L'algorithme d'échantillonnage qui définit comment l'espace latent est parcouru pendant la génération | SAMPLER | Oui | - |
+| `bruit` | Le générateur de bruit qui fournit le motif de bruit initial et la graine pour le processus d'échantillonnage | NOISE | Oui | - |
+| `guide` | Le modèle de guidage qui oriente le processus d'échantillonnage vers la sortie souhaitée | GUIDER | Oui | - |
+| `échantillonneur` | L'algorithme d'échantillonnage qui définit comment l'espace latent est parcouru pendant la génération | SAMPLER | Oui | - |
 | `sigmas` | Le programme de sigmas qui contrôle les niveaux de bruit tout au long des étapes d'échantillonnage | SIGMAS | Oui | - |
-| `latent_image` | La représentation latente initiale qui sert de point de départ à l'échantillonnage. Prend en charge une clé optionnelle `noise_mask` pour le débruitage sélectif, ainsi que les clés optionnelles `downscale_ratio_spacial` et `downscale_ratio_temporal` pour une gestion avancée du latent | LATENT | Oui | - |
+| `image_latente` | La représentation latente initiale qui sert de point de départ à l'échantillonnage. Prend en charge une clé optionnelle `noise_mask` pour le débruitage sélectif, ainsi que les clés optionnelles `downscale_ratio_spacial` et `downscale_ratio_temporal` pour une gestion avancée du latent | LATENT | Oui | - |
 
 ## Sorties
 

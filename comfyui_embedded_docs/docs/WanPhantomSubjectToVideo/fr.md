@@ -6,13 +6,13 @@ Le nœud WanPhantomSubjectToVideo prépare les données de conditionnement et un
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `positive` | Entrée de conditionnement positive pour guider la génération vidéo | CONDITIONING | Oui | - |
-| `negative` | Entrée de conditionnement négative pour éviter certaines caractéristiques | CONDITIONING | Oui | - |
+| `positif` | Entrée de conditionnement positive pour guider la génération vidéo | CONDITIONING | Oui | - |
+| `négatif` | Entrée de conditionnement négative pour éviter certaines caractéristiques | CONDITIONING | Oui | - |
 | `vae` | Modèle VAE utilisé pour encoder les images de référence lorsqu'elles sont fournies | VAE | Oui | - |
-| `width` | Largeur de la vidéo de sortie en pixels (par défaut : 832) | INT | Oui | 16 à MAX_RESOLUTION (pas de 16) |
-| `height` | Hauteur de la vidéo de sortie en pixels (par défaut : 480) | INT | Oui | 16 à MAX_RESOLUTION (pas de 16) |
-| `length` | Nombre d'images dans la vidéo générée (par défaut : 81) | INT | Oui | 1 à MAX_RESOLUTION (pas de 4) |
-| `batch_size` | Nombre de vidéos à générer simultanément (par défaut : 1) | INT | Oui | 1 à 4096 |
+| `largeur` | Largeur de la vidéo de sortie en pixels (par défaut : 832) | INT | Oui | 16 à MAX_RESOLUTION (pas de 16) |
+| `hauteur` | Hauteur de la vidéo de sortie en pixels (par défaut : 480) | INT | Oui | 16 à MAX_RESOLUTION (pas de 16) |
+| `longueur` | Nombre d'images dans la vidéo générée (par défaut : 81) | INT | Oui | 1 à MAX_RESOLUTION (pas de 4) |
+| `taille_lot` | Nombre de vidéos à générer simultanément (par défaut : 1) | INT | Oui | 1 à 4096 |
 | `images` | Images de référence facultatives utilisées comme guidage visuel selon la dimension temporelle | IMAGE | Non | - |
 
 **Remarque :** Lorsque des `images` sont fournies, elles sont automatiquement redimensionnées pour correspondre à la `width` et à la `height` spécifiées, et seules les `length` premières images sont utilisées pour le traitement. Chaque image est encodée avec le `vae` et concaténée le long de la dimension temporelle, et seuls les canaux RVB de chaque image sont utilisés. Lorsque des `images` ne sont pas fournies, les trois sorties de conditionnement sont renvoyées inchangées à partir des conditionnements d'entrée.

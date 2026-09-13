@@ -6,8 +6,8 @@ LTXVLatentUpsampler düğümü, bir video latent temsilinin uzamsal çözünürl
 
 | Parametre | Açıklama | Veri Tipi | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `samples` | Büyütülecek videonun girdi latent temsili. | LATENT | Evet |  |
-| `upscale_model` | Latent verisi üzerinde 2x büyütme gerçekleştirmek için kullanılan yüklenmiş model. | LATENT_UPSCALE_MODEL | Evet |  |
+| `örnekler` | Büyütülecek videonun girdi latent temsili. | LATENT | Evet |  |
+| `büyütme_modeli` | Latent verisi üzerinde 2x büyütme gerçekleştirmek için kullanılan yüklenmiş model. | LATENT_UPSCALE_MODEL | Evet |  |
 | `vae` | Büyütmeden önce girdi latentlerini normalizasyondan çıkarmak ve sonrasında çıktı latentlerini normalize etmek için kullanılan VAE modeli. | VAE | Evet |  |
 
 Not: Bu düğüm ComfyUI'de deneysel olarak işaretlenmiştir.

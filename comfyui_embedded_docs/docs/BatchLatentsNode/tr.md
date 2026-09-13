@@ -6,7 +6,7 @@ Batch Latents düğümü, birden çok latent girdisini tek bir batch içinde bir
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `latents` | Tek bir batch içinde birleştirilecek bir dizi latent örneği. En az bir latent sağlamanız gerekir ve 50'ye kadar ekleyebilirsiniz. Daha fazla latent bağladıkça düğüm otomatik olarak girdi yuvaları (`latent_1`, `latent_2` vb.) oluşturur. | LATENT | Evet | 1 ila 50 girdi |
+| `latentler` | Tek bir batch içinde birleştirilecek bir dizi latent örneği. En az bir latent sağlamanız gerekir ve 50'ye kadar ekleyebilirsiniz. Daha fazla latent bağladıkça düğüm otomatik olarak girdi yuvaları (`latent_1`, `latent_2` vb.) oluşturur. | LATENT | Evet | 1 ila 50 girdi |
 
 **Not:** Düğümün çalışması için en az bir latent girdisi sağlamalısınız. Daha fazla latent bağladıkça düğüm otomatik olarak girdi yuvaları oluşturur, en fazla 50'ye kadar. Birleştirilmeden önce her girdi latentı, ilk latentın örnek şekliyle eşleşecek şekilde yeniden şekillendirilir ve batch dizini meta verisi olmayan her latent için sıralı bir batch dizini atanır. Girdi latentları, birleştirilmiş sonucu üretmek için batch boyutu boyunca birleştirilir.
 

@@ -6,8 +6,8 @@ SaveWEBM düğümü, bir görüntü dizisini WEBM video dosyası olarak kaydeder
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `images` | RGBA görüntüleri, alfa kanalı saydamlık olarak korunarak kaydedilir (yalnızca vp9 kodeği). | IMAGE | Evet | - |
-| `filename_prefix` | Çıktı dosya adı için önek (varsayılan: "ComfyUI"). | STRING | Hayır | - |
+| `görüntüler` | RGBA görüntüleri, alfa kanalı saydamlık olarak korunarak kaydedilir (yalnızca vp9 kodeği). | IMAGE | Evet | - |
+| `dosyaadı_öneki` | Çıktı dosya adı için önek (varsayılan: "ComfyUI"). | STRING | Hayır | - |
 | `codec` | Kodlama için kullanılacak video kodeği. | COMBO | Evet | "vp9"<br>"av1" |
 | `fps` | Çıktı videosu için kare hızı (varsayılan: 24.0). | FLOAT | Hayır | 0.01-1000.0 |
 | `crf` | Daha yüksek crf, daha küçük dosya boyutuyla daha düşük kalite anlamına gelir; daha düşük crf, daha büyük dosya boyutuyla daha yüksek kalite anlamına gelir (varsayılan: 32.0). | FLOAT | Hayır | 0-63.0 |

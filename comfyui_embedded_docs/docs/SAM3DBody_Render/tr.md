@@ -10,9 +10,9 @@
 |-----------|-------------|-----------|----------|-------|
 | `render_style` | Render modu. 'mesh' = kamera aracılığıyla rasterleştirilen 3B MHR mesh. 'silhouette' = meshin ikili maskesi. 'openpose_2d' = düz 2B iskelet. 'openpose_3d' = düz gölgeli 3B model olarak OpenPose iskeleti. 'scail' = SCAIL 3B kapsülleri. (varsayılan: "mesh") | DYNAMIC_COMBO | Evet | "mesh"<br>"silhouette"<br>"openpose_2d"<br>"openpose_3d"<br>"scail" |
 | `pose_data` | MHR poz verileri veya harici Y-up rig poz verileri (KimodoSample). Tüm render stilleri, `_skeleton_override` içinde OpenPose eklem haritaları taşıyan harici rig'ler için çalışır (KimodoSample taşır). | MHR_POSE_DATA or KIMODO_POSE_DATA | Evet | — |
-| `background` | Kare başına arka plan. Atlanırsa = siyah tuval. | IMAGE | Hayır | — |
-| `width` | Çıktı genişliği piksel cinsinden. 0 = poz verilerinin yerel image_size değerini kullan. Genişlik/yükseklikten yalnızca biri ayarlanırsa, diğeri orijinal en-boy oranı korunarak türetilir. (varsayılan: 0) | INT | Hayır | 0 - 16384, adım 8 |
-| `height` | Çıktı yüksekliği piksel cinsinden. 0 = poz verilerinin yerel image_size değerini kullan. Genişlik/yükseklikten yalnızca biri ayarlanırsa, diğeri orijinal en-boy oranı korunarak türetilir. (varsayılan: 0) | INT | Hayır | 0 - 16384, adım 8 |
+| `arka plan` | Kare başına arka plan. Atlanırsa = siyah tuval. | IMAGE | Hayır | — |
+| `genişlik` | Çıktı genişliği piksel cinsinden. 0 = poz verilerinin yerel image_size değerini kullan. Genişlik/yükseklikten yalnızca biri ayarlanırsa, diğeri orijinal en-boy oranı korunarak türetilir. (varsayılan: 0) | INT | Hayır | 0 - 16384, adım 8 |
+| `yükseklik` | Çıktı yüksekliği piksel cinsinden. 0 = poz verilerinin yerel image_size değerini kullan. Genişlik/yükseklikten yalnızca biri ayarlanırsa, diğeri orijinal en-boy oranı korunarak türetilir. (varsayılan: 0) | INT | Hayır | 0 - 16384, adım 8 |
 | `camera_info` | Serbest 6DOF kamera geçersiz kılma. Bağlandığında, poz öngörülen kamera yerine bu kamera (konum/hedef/yakınlaştırma/döndürme/FoV) aracılığıyla yeniden yansıtılır. | LOAD_3D_CAMERA | Hayır | — |
 
 ### Mesh Girdileri

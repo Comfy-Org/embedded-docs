@@ -6,7 +6,7 @@ Get Mesh Info informa el número de vértices y caras de una malla, junto con lo
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `mesh` | La malla que se va a inspeccionar. El nodo cuenta sus vértices y caras, detecta qué atributos están presentes y pasa la malla sin cambios. | MESH | Sí | — |
+| `malla` | La malla que se va a inspeccionar. El nodo cuenta sus vértices y caras, detecta qué atributos están presentes y pasa la malla sin cambios. | MESH | Sí | — |
 
 Nota: Cuando la entrada contiene varias mallas (un lote), el informe muestra los recuentos totales de vértices y caras para todo el lote, además de un desglose por malla. Para lotes con relleno de ceros, se utilizan los recuentos por elemento almacenados en los datos de la malla.
 

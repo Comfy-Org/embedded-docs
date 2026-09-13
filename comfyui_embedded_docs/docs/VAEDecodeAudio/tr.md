@@ -6,7 +6,7 @@ Bu düğüm, bir ses latent temsilini Varyasyonel Otokodlayıcı (VAE) kullanara
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `samples` | Latent uzayda kodlanmış, yeniden bir ses dalga formuna çözülecek ses örnekleri. Örnekler kendi örnekleme hızını taşıyorsa çıktı için bu değer kullanılır. | LATENT | Evet | - |
+| `örnekler` | Latent uzayda kodlanmış, yeniden bir ses dalga formuna çözülecek ses örnekleri. Örnekler kendi örnekleme hızını taşıyorsa çıktı için bu değer kullanılır. | LATENT | Evet | - |
 | `vae` | Latent örnekleri sese çözmek için kullanılan Varyasyonel Otokodlayıcı modeli. Girdi örnekleri bir örnekleme hızı belirtmediğinde, ses çıktısı örnekleme hızı (varsayılan 44100 Hz) ortaya çıkan dalga formunun örnekleme hızını belirler. | VAE | Evet | - |
 
 ## Çıktılar

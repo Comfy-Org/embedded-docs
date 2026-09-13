@@ -6,7 +6,7 @@ FreeU_V2 mejora la calidad de la generación de imágenes aplicando modificacion
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de difusión al que se aplicará la mejora FreeU | MODEL | Sí | - |
+| `modelo` | El modelo de difusión al que se aplicará la mejora FreeU | MODEL | Sí | - |
 | `b1` | Factor de escala de características del backbone para el primer bloque (predeterminado: 1.3) | FLOAT | Sí | 0.0 - 10.0 |
 | `b2` | Factor de escala de características del backbone para el segundo bloque (predeterminado: 1.4) | FLOAT | Sí | 0.0 - 10.0 |
 | `s1` | Factor de escala de características de salto para el primer bloque (predeterminado: 0.9) | FLOAT | Sí | 0.0 - 10.0 |

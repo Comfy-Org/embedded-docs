@@ -6,9 +6,9 @@ Este nó analisa um clipe de áudio e o transforma em um conjunto de caracterís
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `audio` | A entrada de áudio a ser analisada e codificada. Se o áudio tiver vários canais, os canais são combinados em mono pela média antes da extração de características. | AUDIO | Sim | - |
-| `video_frames` | O número de quadros no vídeo de destino. Usado para calcular a taxa de quadros para sincronização (padrão: 149). | INT | Sim | Mín.: 1, Máx.: 16384 (MAX_RESOLUTION), Passo: 4 |
-| `audio_inject_scale` | A escala das características de áudio quando injetadas no modelo de vídeo (padrão: 1.0). | FLOAT | Sim | Mín.: 0.0, Máx.: 10.0, Passo: 0.01 |
+| `áudio` | A entrada de áudio a ser analisada e codificada. Se o áudio tiver vários canais, os canais são combinados em mono pela média antes da extração de características. | AUDIO | Sim | - |
+| `quadros_de_vídeo` | O número de quadros no vídeo de destino. Usado para calcular a taxa de quadros para sincronização (padrão: 149). | INT | Sim | Mín.: 1, Máx.: 16384 (MAX_RESOLUTION), Passo: 4 |
+| `escala_de_injeção_de_áudio` | A escala das características de áudio quando injetadas no modelo de vídeo (padrão: 1.0). | FLOAT | Sim | Mín.: 0.0, Máx.: 10.0, Passo: 0.01 |
 
 ## Saídas
 

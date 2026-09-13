@@ -7,13 +7,13 @@ TextEncodeZImageOmni codifica um prompt de texto junto com até três imagens de
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `clip` | O modelo CLIP usado para tokenizar e codificar o prompt de texto. | CLIP | Sim |  |
-| `image_encoder` | Um modelo codificador visual opcional. Se fornecido, ele é usado para codificar as imagens de entrada, e os embeddings resultantes são adicionados ao condicionamento. | CLIP_VISION | Não |  |
+| `codificador_de_imagem` | Um modelo codificador visual opcional. Se fornecido, ele é usado para codificar as imagens de entrada, e os embeddings resultantes são adicionados ao condicionamento. | CLIP_VISION | Não |  |
 | `prompt` | O prompt de texto a ser codificado. Suporta entrada multilinha e prompts dinâmicos. | STRING | Sim |  |
-| `auto_resize_images` | Quando habilitado (padrão: True), as imagens de entrada são redimensionadas automaticamente antes da codificação VAE para que sua área total de pixels fique próxima de 1024x1024, com dimensões arredondadas para múltiplos de 8. | BOOLEAN | Sim | True<br>False |
+| `redimensionar_imagens_automaticamente` | Quando habilitado (padrão: True), as imagens de entrada são redimensionadas automaticamente antes da codificação VAE para que sua área total de pixels fique próxima de 1024x1024, com dimensões arredondadas para múltiplos de 8. | BOOLEAN | Sim | True<br>False |
 | `vae` | Um modelo VAE opcional. Se fornecido, ele é usado para codificar as imagens de entrada em representações latentes, que são adicionadas ao condicionamento como latentes de referência. | VAE | Não |  |
-| `image1` | A primeira imagem de referência opcional. | IMAGE | Não |  |
-| `image2` | A segunda imagem de referência opcional. | IMAGE | Não |  |
-| `image3` | A terceira imagem de referência opcional. | IMAGE | Não |  |
+| `imagem1` | A primeira imagem de referência opcional. | IMAGE | Não |  |
+| `imagem2` | A segunda imagem de referência opcional. | IMAGE | Não |  |
+| `imagem3` | A terceira imagem de referência opcional. | IMAGE | Não |  |
 
 **Nota:** O nó aceita no máximo três imagens (`image1`, `image2`, `image3`). As entradas `image_encoder` e `vae` só são usadas quando pelo menos uma imagem é fornecida; quando ambos estão conectados, cada imagem é processada por ambos. Quando `auto_resize_images` é True e um `vae` está conectado, as imagens são redimensionadas para ter uma área total de pixels próxima de 1024x1024 antes da codificação. Se nenhuma imagem for fornecida, apenas o prompt de texto é codificado.
 

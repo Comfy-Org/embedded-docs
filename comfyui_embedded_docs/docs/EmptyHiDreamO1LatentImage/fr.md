@@ -6,9 +6,9 @@ Ce nœud crée une image latente vide dans l'espace pixel pour le modèle HiDrea
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `width` | La largeur de l'image latente en pixels. Valeur par défaut : 2048. La valeur doit être un multiple de 32. Le modèle a été entraîné à environ 4 mégapixels ; des résolutions inférieures peuvent réduire sensiblement la qualité. | INT | Oui | 64 à 4096 (pas : 32) |
-| `height` | La hauteur de l'image latente en pixels. Valeur par défaut : 2048. La valeur doit être un multiple de 32. Le modèle a été entraîné à environ 4 mégapixels ; des résolutions inférieures peuvent réduire sensiblement la qualité. | INT | Oui | 64 à 4096 (pas : 32) |
-| `batch_size` | Le nombre d'images latentes à générer dans un seul lot. Valeur par défaut : 1. | INT | Oui | 1 à 64 |
+| `largeur` | La largeur de l'image latente en pixels. Valeur par défaut : 2048. La valeur doit être un multiple de 32. Le modèle a été entraîné à environ 4 mégapixels ; des résolutions inférieures peuvent réduire sensiblement la qualité. | INT | Oui | 64 à 4096 (pas : 32) |
+| `hauteur` | La hauteur de l'image latente en pixels. Valeur par défaut : 2048. La valeur doit être un multiple de 32. Le modèle a été entraîné à environ 4 mégapixels ; des résolutions inférieures peuvent réduire sensiblement la qualité. | INT | Oui | 64 à 4096 (pas : 32) |
+| `taille_lot` | Le nombre d'images latentes à générer dans un seul lot. Valeur par défaut : 1. | INT | Oui | 1 à 64 |
 
 ## Sorties
 

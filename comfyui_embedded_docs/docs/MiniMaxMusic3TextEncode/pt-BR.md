@@ -8,8 +8,8 @@ O MiniMax Music3 Text Encode usa um modelo CLIP MiniMax Music3 para converter le
 |-----------|-------------|-----------|----------|-------|
 | `clip` | O modelo CLIP MiniMax Music3, usado para codificação de texto e geração de sequência de condicionamento. | CLIP | Sim | - |
 | `caption` | Texto descrevendo a música a ser gerada. Suporta texto multilinha e prompts dinâmicos. | STRING | Sim | - |
-| `lyrics` | O texto da letra a ser usado para gerar a música. Suporta texto multilinha e prompts dinâmicos. | STRING | Sim | - |
-| `seed` | Semente aleatória reproduzível para o processo de geração. Padrão: 0. É fornecido um widget de controle após a geração. | INT | Sim | 0 a 18446744073709551615 (0xffffffffffffffff) |
+| `letras` | O texto da letra a ser usado para gerar a música. Suporta texto multilinha e prompts dinâmicos. | STRING | Sim | - |
+| `semente` | Semente aleatória reproduzível para o processo de geração. Padrão: 0. É fornecido um widget de controle após a geração. | INT | Sim | 0 a 18446744073709551615 (0xffffffffffffffff) |
 | `max_duration` | Duração máxima em segundos; o modelo pode encerrar a música mais cedo. Padrão: 120.0. | FLOAT | Sim | 0.04 até a duração máxima de áudio do modelo (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND), passo 0.04 |
 | `cfg_scale` | Escala de orientação livre de classificador. Padrão: constante do modelo CFG_SCALE. Parâmetro avançado. | FLOAT | Sim | 0.0 a 100.0, passo 0.1 (mantém 2 casas decimais) |
 | `top_k` | Valor de amostragem top-k usado para seleção de tokens acústicos. Padrão: constante do modelo CFG_TOP_K. Parâmetro avançado. | INT | Sim | 1 até o tamanho do vocabulário do modelo (C0_VOCAB_SIZE) |

@@ -9,24 +9,24 @@ Este nodo genera videos con el modelo Kling V3. Admite texto a video, donde se c
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
 | `multi_shot` | Genera una serie de segmentos de video con prompts y duraciones individuales. Cuando se establece en una opción de storyboard, aparecen entradas adicionales para el prompt y la duración de cada storyboard. | DYNAMIC_COMBO | Sí | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | Cuando está habilitado, el nodo genera audio para el video. Nota: `"kling-3.0-turbo"` siempre genera audio nativo, por lo que el interruptor de audio se ignora para ese modelo. El valor predeterminado es True. | BOOLEAN | Sí | True<br>False |
-| `model` | Modelo y ajustes de generación. Al seleccionar un modelo, se revelan sus subparámetros de resolución y relación de aspecto. | DYNAMIC_COMBO | Sí | `"kling-v3"`<br>`"kling-3.0-turbo"` |
-| `seed` | `seed` controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. El valor predeterminado es 0. | INT | Sí | 0 a 2147483647 |
-| `start_frame` | Imagen de fotograma inicial opcional. Cuando se conecta, cambia al modo imagen a video. | IMAGE | No | - |
+| `generar audio` | Cuando está habilitado, el nodo genera audio para el video. Nota: `"kling-3.0-turbo"` siempre genera audio nativo, por lo que el interruptor de audio se ignora para ese modelo. El valor predeterminado es True. | BOOLEAN | Sí | True<br>False |
+| `modelo` | Modelo y ajustes de generación. Al seleccionar un modelo, se revelan sus subparámetros de resolución y relación de aspecto. | DYNAMIC_COMBO | Sí | `"kling-v3"`<br>`"kling-3.0-turbo"` |
+| `semilla` | `seed` controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. El valor predeterminado es 0. | INT | Sí | 0 a 2147483647 |
+| `fotograma inicial` | Imagen de fotograma inicial opcional. Cuando se conecta, cambia al modo imagen a video. | IMAGE | No | - |
 
 ### Entradas de kling-v3
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model.resolution` | La resolución para el video generado. El valor predeterminado es `"1080p"`. | COMBO | Sí | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | La relación de aspecto para el video generado. Se ignora en el modo imagen a video. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `resolución` | La resolución para el video generado. El valor predeterminado es `"1080p"`. | COMBO | Sí | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `relación de aspecto` | La relación de aspecto para el video generado. Se ignora en el modo imagen a video. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
 ### Entradas de kling-3.0-turbo
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model.resolution` | La resolución para el video generado. El valor predeterminado es `"720p"`. | COMBO | Sí | `"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | La relación de aspecto para el video generado. Se ignora en el modo imagen a video. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `resolución` | La resolución para el video generado. El valor predeterminado es `"720p"`. | COMBO | Sí | `"1080p"`<br>`"720p"` |
+| `relación de aspecto` | La relación de aspecto para el video generado. Se ignora en el modo imagen a video. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
 ### Entradas de tomas múltiples
 

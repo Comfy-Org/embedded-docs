@@ -8,11 +8,11 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 將要替換背景的輸入影像。 | IMAGE | 是 | |
-| `background` | 使用提示詞描述新背景，或使用參考影像引導。 | DYNAMIC_COMBO | 是 | `"prompt"`<br>`"reference images"` |
+| `影像` | 將要替換背景的輸入影像。 | IMAGE | 是 | |
+| `背景` | 使用提示詞描述新背景，或使用參考影像引導。 | DYNAMIC_COMBO | 是 | `"prompt"`<br>`"reference images"` |
 | `original_quality` | 傳回輸入的確切像素尺寸，而不是將結果縮放為約 1 百萬像素。大型輸入接著會傳回大型影像。（預設：false） | BOOLEAN | 否 | `true`<br>`false` |
-| `seed` | 相同的 `seed` 通常會傳回相同背景；自動提示詞精煉仍可能使其有所不同。（預設：42） | INT | 否 | 0 至 2147483647 |
-| `moderation` | 審核設定。（預設：`"false"`） | DYNAMIC_COMBO | 否 | `"false"`<br>`"true"` |
+| `種子` | 相同的 `seed` 通常會傳回相同背景；自動提示詞精煉仍可能使其有所不同。（預設：42） | INT | 否 | 0 至 2147483647 |
+| `內容審核` | 審核設定。（預設：`"false"`） | DYNAMIC_COMBO | 否 | `"false"`<br>`"true"` |
 
 ### 提示輸入
 

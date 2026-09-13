@@ -6,8 +6,8 @@ O nó SaveWEBM salva uma sequência de imagens como um arquivo de vídeo WEBM. E
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `images` | Imagens RGBA são salvas com seu canal alfa como transparência (somente codec vp9). | IMAGE | Sim | - |
-| `filename_prefix` | Prefixo para o nome do arquivo de saída (padrão: "ComfyUI"). | STRING | Não | - |
+| `imagens` | Imagens RGBA são salvas com seu canal alfa como transparência (somente codec vp9). | IMAGE | Sim | - |
+| `prefixo_do_arquivo` | Prefixo para o nome do arquivo de saída (padrão: "ComfyUI"). | STRING | Não | - |
 | `codec` | Codec de vídeo a ser usado para codificação. | COMBO | Sim | "vp9"<br>"av1" |
 | `fps` | Taxa de quadros para o vídeo de saída (padrão: 24.0). | FLOAT | Não | 0.01-1000.0 |
 | `crf` | CRF mais alto significa qualidade menor com tamanho de arquivo menor; CRF mais baixo significa qualidade maior com tamanho de arquivo maior (padrão: 32.0). | FLOAT | Não | 0-63.0 |

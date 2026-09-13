@@ -6,8 +6,8 @@ El nodo LossGraphNode crea un gráfico de líneas de los valores de pérdida de 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `loss` | Mapa de pérdida del nodo de entrenamiento. Debe contener una clave `loss` con una lista de valores de pérdida numéricos. | LOSS_MAP | Sí | - |
-| `filename_prefix` | Prefijo para la imagen del gráfico de pérdida guardada. (predeterminado: "loss_graph") | STRING | Sí | - |
+| `pérdida` | Mapa de pérdida del nodo de entrenamiento. Debe contener una clave `loss` con una lista de valores de pérdida numéricos. | LOSS_MAP | Sí | - |
+| `prefijo_nombre_archivo` | Prefijo para la imagen del gráfico de pérdida guardada. (predeterminado: "loss_graph") | STRING | Sí | - |
 
 ## Salidas
 

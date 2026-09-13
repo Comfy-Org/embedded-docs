@@ -6,7 +6,7 @@ Este nó faz parte do grupo experimental Stable Cascade. Ele prepara entradas pa
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `image` | A imagem de entrada a ser processada para super-resolução. Apenas os 3 primeiros canais de cor (RGB) da imagem são usados para codificação. | IMAGE | Sim | - |
+| `imagem` | A imagem de entrada a ser processada para super-resolução. Apenas os 3 primeiros canais de cor (RGB) da imagem são usados para codificação. | IMAGE | Sim | - |
 | `vae` | O modelo VAE usado para codificar a imagem de entrada | VAE | Sim | - |
 
 ## Saídas

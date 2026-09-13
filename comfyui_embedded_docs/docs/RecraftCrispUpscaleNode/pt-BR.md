@@ -6,7 +6,7 @@ Este nó redimensiona uma imagem de forma síncrona usando a ferramenta "crisp u
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A imagem de entrada a ser redimensionada. Aceita um lote de imagens; cada imagem é processada independentemente. | IMAGE | Sim | — |
+| `imagem` | A imagem de entrada a ser redimensionada. Aceita um lote de imagens; cada imagem é processada independentemente. | IMAGE | Sim | — |
 
 ## Saídas
 

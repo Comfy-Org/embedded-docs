@@ -6,7 +6,7 @@ Le nœud VideoTriangleCFGGuidance applique un motif de mise à l'échelle triang
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle vidéo auquel appliquer le guidage CFG triangulaire. | MODEL | Oui | - |
+| `modèle` | Le modèle vidéo auquel appliquer le guidage CFG triangulaire. | MODEL | Oui | - |
 | `min_cfg` | Valeur minimale de l'échelle CFG pour le motif triangulaire. Ce paramètre est affiché dans la section avancée de l'interface du nœud (valeur par défaut : 1.0). | FLOAT | Oui | 0.0 - 100.0 (pas : 0.5, arrondi : 0.01) |
 
 ## Sorties

@@ -6,14 +6,14 @@ Kandinsky5ImageToVideo düğümü, Kandinsky modelini kullanarak video oluşturm
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `positive` | Video oluşturmayı yönlendirmek için kullanılan pozitif koşullandırma istemleri. | CONDITIONING | Evet | N/A |
-| `negative` | Video oluşturmayı belirli kavramlardan uzaklaştırmak için kullanılan negatif koşullandırma istemleri. | CONDITIONING | Evet | N/A |
+| `pozitif` | Video oluşturmayı yönlendirmek için kullanılan pozitif koşullandırma istemleri. | CONDITIONING | Evet | N/A |
+| `negatif` | Video oluşturmayı belirli kavramlardan uzaklaştırmak için kullanılan negatif koşullandırma istemleri. | CONDITIONING | Evet | N/A |
 | `vae` | İsteğe bağlı başlangıç görüntüsünü latent uzayına kodlamak için kullanılan VAE modeli. | VAE | Evet | N/A |
-| `width` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 768). | INT | Evet | 16 ila 16384 (adım 16) |
-| `height` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 512). | INT | Evet | 16 ila 16384 (adım 16) |
-| `length` | Videodaki kare sayısı (varsayılan: 121). | INT | Evet | 1 ila 16384 (adım 4) |
-| `batch_size` | Aynı anda oluşturulacak video dizisi sayısı (varsayılan: 1). | INT | Evet | 1 ila 4096 |
-| `start_image` | İsteğe bağlı bir başlangıç görüntüsü veya kare grubu. Sağlanırsa, kodlanır ve modelin çıktı latentlerinin gürültülü başlangıcının yerine kullanılır. | IMAGE | Hayır | N/A |
+| `genişlik` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 768). | INT | Evet | 16 ila 16384 (adım 16) |
+| `yükseklik` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 512). | INT | Evet | 16 ila 16384 (adım 16) |
+| `uzunluk` | Videodaki kare sayısı (varsayılan: 121). | INT | Evet | 1 ila 16384 (adım 4) |
+| `toplu_boyutu` | Aynı anda oluşturulacak video dizisi sayısı (varsayılan: 1). | INT | Evet | 1 ila 4096 |
+| `başlangıç_görseli` | İsteğe bağlı bir başlangıç görüntüsü veya kare grubu. Sağlanırsa, kodlanır ve modelin çıktı latentlerinin gürültülü başlangıcının yerine kullanılır. | IMAGE | Hayır | N/A |
 
 **Not:** Bir `start_image` sağlandığında, belirtilen `width` ve `height` değerlerine uyacak şekilde çift doğrusal interpolasyon kullanılarak otomatik olarak yeniden boyutlandırılır. Görüntü grubunun yalnızca ilk `length` karesi kodlama için kullanılır; fazladan kareler yok sayılır. Görüntü grubunda `length` değerinden daha az kare varsa, yalnızca o kareler kullanılır. Görüntünün yalnızca RGB kanalları kodlanır. Kodlanan latent daha sonra videonun başlangıç görünümünü yönlendirmek için hem `positive` hem de `negative` koşullandırmasına enjekte edilir ve temiz kodlanmış kareler modelin çıktı latentlerinin gürültülü başlangıcının yerine geçer.
 

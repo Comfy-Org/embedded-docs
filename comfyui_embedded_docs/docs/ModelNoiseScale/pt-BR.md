@@ -6,8 +6,8 @@ Este nó ajusta a escala de ruído usada durante a amostragem do modelo. Ele cri
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo no qual aplicar o ajuste da escala de ruído. | MODEL | Sim | - |
-| `noise_scale` | Escala de ruído de treinamento absoluta. Por exemplo, HiDream-O1 base: 8.0, dev: 7.5. (padrão: 1.0) | FLOAT | Sim | 0.0 a 64.0 (passo: 0.01) |
+| `modelo` | O modelo no qual aplicar o ajuste da escala de ruído. | MODEL | Sim | - |
+| `escala_de_ruído` | Escala de ruído de treinamento absoluta. Por exemplo, HiDream-O1 base: 8.0, dev: 7.5. (padrão: 1.0) | FLOAT | Sim | 0.0 a 64.0 (passo: 0.01) |
 
 ## Saídas
 

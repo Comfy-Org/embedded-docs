@@ -6,7 +6,7 @@ Le nœud Text offre un moyen simple de saisir et de transmettre des données tex
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
-| `value` | La chaîne de texte à transmettre via le nœud | STRING | Oui | Tout texte |
+| `valeur` | La chaîne de texte à transmettre via le nœud | STRING | Oui | Tout texte |
 
 ## Sorties
 

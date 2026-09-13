@@ -6,8 +6,8 @@ Este nodo establece el audio de referencia para el proceso "ace step 1.5". Toma 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Los datos de conditioning a los que se adjuntará la información de audio de referencia. | CONDITIONING | Sí |  |
-| `latent` | Una representación latente opcional del audio de referencia (predeterminado: None). Cuando se proporciona, sus muestras se añaden al conditioning como latentes de timbre de audio de referencia. | LATENT | No |  |
+| `condicionamiento` | Los datos de conditioning a los que se adjuntará la información de audio de referencia. | CONDITIONING | Sí |  |
+| `latente` | Una representación latente opcional del audio de referencia (predeterminado: None). Cuando se proporciona, sus muestras se añaden al conditioning como latentes de timbre de audio de referencia. | LATENT | No |  |
 
 ## Salidas
 

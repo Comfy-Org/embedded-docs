@@ -7,8 +7,8 @@ RenormCFG düğümü, difüzyon modellerinde sınıflandırıcısız yönlendirm
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Yeniden normalleştirilmiş CFG'nin uygulanacağı difüzyon modeli | MODEL | Evet | - |
-| `cfg_trunc` | CFG ölçeklemesini uygulamak için zaman adımı eşiği. Geçerli zaman adımı bu değerin altında olduğunda CFG ölçeklemesi ve yeniden normalleştirme uygulanır; aksi halde yalnızca koşullu tahmin kullanılır (varsayılan: 100.0) | FLOAT | Hayır | 0.0 - 100.0 (adım 0.01) |
-| `renorm_cfg` | CFG ile ölçeklenmiş tahminin maksimum normunu orijinal koşullu tahmine göre sınırlayan yeniden normalleştirme faktörü. 0.0 değeri yeniden normalleştirmeyi devre dışı bırakır (varsayılan: 1.0) | FLOAT | Hayır | 0.0 - 100.0 (adım 0.01) |
+| `cfg_kesme` | CFG ölçeklemesini uygulamak için zaman adımı eşiği. Geçerli zaman adımı bu değerin altında olduğunda CFG ölçeklemesi ve yeniden normalleştirme uygulanır; aksi halde yalnızca koşullu tahmin kullanılır (varsayılan: 100.0) | FLOAT | Hayır | 0.0 - 100.0 (adım 0.01) |
+| `yenidenorm_cfg` | CFG ile ölçeklenmiş tahminin maksimum normunu orijinal koşullu tahmine göre sınırlayan yeniden normalleştirme faktörü. 0.0 değeri yeniden normalleştirmeyi devre dışı bırakır (varsayılan: 1.0) | FLOAT | Hayır | 0.0 - 100.0 (adım 0.01) |
 
 Not: `cfg_trunc` ve `renorm_cfg` gelişmiş parametrelerdir. Yeniden normalleştirme yalnızca `renorm_cfg` 0.0'dan büyük olduğunda ve geçerli zaman adımı `cfg_trunc` değerinin altında olduğunda etkili olur; yeni tahmin normu hesaplanan maksimumun altındaysa yeniden ölçekleme yapılmaz.
 

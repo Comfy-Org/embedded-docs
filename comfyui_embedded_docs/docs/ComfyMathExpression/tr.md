@@ -6,8 +6,8 @@ ComfyMathExpression düğümü, metin olarak yazdığınız bir matematiksel for
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `expression` | Değerlendirilecek matematiksel formül, metin olarak yazılır (örneğin `a + b`), giriş değerlerinin harf adlarını değişken olarak kullanır. Çok satırlı giriş. (varsayılan: "a + b") | STRING | Evet | N/A |
-| `values` | İfade için değişkenleri sağlayan genişletilebilir giriş değerleri grubu. Gruba eklenen her değer otomatik olarak `a` ile başlayan bir sonraki küçük harf adını alır (`a`, `b`, `c`, ...) ve bu ad daha sonra `expression` içinde kullanılabilir. Her öğe bir sayı (INT veya FLOAT) ya da bir boolean (TRUE/FALSE) kabul eder. | FLOAT, INT, BOOLEAN | Evet | 1 ile 26 değer, `a` ile `z` olarak adlandırılır |
+| `ifade` | Değerlendirilecek matematiksel formül, metin olarak yazılır (örneğin `a + b`), giriş değerlerinin harf adlarını değişken olarak kullanır. Çok satırlı giriş. (varsayılan: "a + b") | STRING | Evet | N/A |
+| `değerler` | İfade için değişkenleri sağlayan genişletilebilir giriş değerleri grubu. Gruba eklenen her değer otomatik olarak `a` ile başlayan bir sonraki küçük harf adını alır (`a`, `b`, `c`, ...) ve bu ad daha sonra `expression` içinde kullanılabilir. Her öğe bir sayı (INT veya FLOAT) ya da bir boolean (TRUE/FALSE) kabul eder. | FLOAT, INT, BOOLEAN | Evet | 1 ile 26 değer, `a` ile `z` olarak adlandırılır |
 
 ### Notlar ve kısıtlamalar
 

@@ -10,7 +10,7 @@ Save Image-Text (to Folder) guarda un conjunto de datos de pares de imagen y des
 | `texts` | Lista de descripciones de texto que se van a guardar. Esta entrada es opcional. | STRING | No | - |
 | `folder_name` | Nombre de la carpeta en la que se guardarán las imágenes (dentro del directorio de salida). (predeterminado: "dataset") | STRING | Sí | - |
 | `filename_prefix` | Prefijo para los nombres de archivo de las imágenes guardadas. (predeterminado: "image") | STRING | Sí | - |
-| `mode` | Indica si se deben sobrescribir los archivos existentes o incrementar los nombres de archivo para evitar sobrescribirlos. (predeterminado: "overwrite") | COMBO | Sí | "overwrite"<br>"increment" |
+| `modo` | Indica si se deben sobrescribir los archivos existentes o incrementar los nombres de archivo para evitar sobrescribirlos. (predeterminado: "overwrite") | COMBO | Sí | "overwrite"<br>"increment" |
 
 **Nota:** La entrada `images` es una lista, y el nodo recibe tanto `images` como `texts` como listas. La entrada `texts` es opcional; si se proporciona, debe ser una lista de descripciones de texto y debe contener el mismo número de elementos que `images`. Cada descripción se guarda como un archivo `.txt` correspondiente a su imagen emparejada. En el modo `overwrite`, los archivos se nombran `{filename_prefix}_{index}.png` y reemplazan cualquier archivo existente con el mismo nombre. En el modo `increment`, se agrega un contador único a los nombres de archivo para que no se sobrescriban los archivos existentes. `folder_name` debe resolverse a una ruta dentro del directorio de salida; los nombres de carpeta que intenten salir de él (por ejemplo, con `..`) se rechazan.
 

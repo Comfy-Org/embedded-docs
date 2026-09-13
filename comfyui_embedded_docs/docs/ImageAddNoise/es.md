@@ -6,9 +6,9 @@ El nodo ImageAddNoise añade ruido aleatorio a una imagen de entrada. Utiliza un
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `image` | La imagen de entrada a la que se añadirá ruido | IMAGE | Sí | - |
-| `seed` | La semilla aleatoria utilizada para crear el ruido (predeterminado: 0). Este parámetro admite la funcionalidad «control después de generar». | INT | Sí | 0 a 18446744073709551615 |
-| `strength` | Controla la intensidad del efecto de ruido (predeterminado: 0.5, paso: 0.01) | FLOAT | Sí | 0.0 a 1.0 |
+| `imagen` | La imagen de entrada a la que se añadirá ruido | IMAGE | Sí | - |
+| `semilla` | La semilla aleatoria utilizada para crear el ruido (predeterminado: 0). Este parámetro admite la funcionalidad «control después de generar». | INT | Sí | 0 a 18446744073709551615 |
+| `intensidad` | Controla la intensidad del efecto de ruido (predeterminado: 0.5, paso: 0.01) | FLOAT | Sí | 0.0 a 1.0 |
 
 **Nota:** Los valores de ruido se añaden a la imagen y el resultado se recorta al rango 0.0–1.0. Si la imagen de entrada tiene un canal alfa (4 canales), el canal alfa original se conserva sin cambios; el ruido solo se aplica a los canales de color.
 

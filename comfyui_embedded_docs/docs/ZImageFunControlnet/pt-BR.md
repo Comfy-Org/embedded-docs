@@ -6,13 +6,13 @@ ZImageFunControlnet aplica um patch de rede de controle a um modelo base para qu
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo base usado para o processo de geração. | MODEL | Sim | - |
-| `model_patch` | Um patch de modelo especializado que aplica a orientação da rede de controle. | MODEL_PATCH | Sim | - |
+| `modelo` | O modelo base usado para o processo de geração. | MODEL | Sim | - |
+| `patch_do_modelo` | Um patch de modelo especializado que aplica a orientação da rede de controle. | MODEL_PATCH | Sim | - |
 | `vae` | O Autoencoder Variacional usado para codificar e decodificar imagens. | VAE | Sim | - |
-| `strength` | A força da influência da rede de controle. Valores positivos aplicam o efeito, enquanto valores negativos podem invertê-lo (padrão: 1.0). | FLOAT | Sim | -10.0 a 10.0 (passo 0.01) |
-| `image` | Uma imagem base opcional para orientar o processo de geração. | IMAGE | Não | - |
-| `inpaint_image` | Uma imagem opcional usada especificamente para inpainting de áreas definidas por uma máscara. | IMAGE | Não | - |
-| `mask` | Uma máscara opcional que define quais áreas de uma imagem devem ser editadas ou submetidas a inpainting. | MASK | Não | - |
+| `força` | A força da influência da rede de controle. Valores positivos aplicam o efeito, enquanto valores negativos podem invertê-lo (padrão: 1.0). | FLOAT | Sim | -10.0 a 10.0 (passo 0.01) |
+| `imagem` | Uma imagem base opcional para orientar o processo de geração. | IMAGE | Não | - |
+| `imagem_para_retouch` | Uma imagem opcional usada especificamente para inpainting de áreas definidas por uma máscara. | IMAGE | Não | - |
+| `máscara` | Uma máscara opcional que define quais áreas de uma imagem devem ser editadas ou submetidas a inpainting. | MASK | Não | - |
 
 **Observação:** O parâmetro `inpaint_image` geralmente é usado em conjunto com um `mask` para especificar o conteúdo do inpainting. O comportamento do nó pode mudar dependendo de quais entradas opcionais são fornecidas (por exemplo, usar `image` para orientação ou usar `image`, `mask` e `inpaint_image` para inpainting).
 

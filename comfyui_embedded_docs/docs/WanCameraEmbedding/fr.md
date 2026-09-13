@@ -6,11 +6,11 @@ Ce nœud génère un embedding de trajectoire de caméra à l’aide d’embeddi
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `camera_pose` | Le type de mouvement de caméra à simuler (par défaut : « Static ») | COMBO | Oui | "Static"<br>"Pan Up"<br>"Pan Down"<br>"Pan Left"<br>"Pan Right"<br>"Zoom In"<br>"Zoom Out"<br>"Anti Clockwise (ACW)"<br>"ClockWise (CW)" |
-| `width` | La largeur de la sortie en pixels (par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `height` | La hauteur de la sortie en pixels (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `length` | La longueur de la séquence de trajectoire de caméra (par défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
-| `speed` | La vitesse du mouvement de caméra (par défaut : 1.0, pas : 0.1) | FLOAT | Non | 0.0 à 10.0 |
+| `pose de caméra` | Le type de mouvement de caméra à simuler (par défaut : « Static ») | COMBO | Oui | "Static"<br>"Pan Up"<br>"Pan Down"<br>"Pan Left"<br>"Pan Right"<br>"Zoom In"<br>"Zoom Out"<br>"Anti Clockwise (ACW)"<br>"ClockWise (CW)" |
+| `largeur` | La largeur de la sortie en pixels (par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `hauteur` | La hauteur de la sortie en pixels (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `longueur` | La longueur de la séquence de trajectoire de caméra (par défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
+| `vitesse` | La vitesse du mouvement de caméra (par défaut : 1.0, pas : 0.1) | FLOAT | Non | 0.0 à 10.0 |
 | `fx` | Le paramètre x de longueur focale (par défaut : 0.5, pas : 0.000000001) | FLOAT | Non | 0.0 à 1.0 |
 | `fy` | Le paramètre y de longueur focale (par défaut : 0.5, pas : 0.000000001) | FLOAT | Non | 0.0 à 1.0 |
 | `cx` | La coordonnée x du point principal (par défaut : 0.5, pas : 0.01) | FLOAT | Non | 0.0 à 1.0 |

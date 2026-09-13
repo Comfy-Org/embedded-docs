@@ -7,12 +7,12 @@ Cosmos Predict2 görüntüden videoya iş akışı için video latentleri oluşt
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `vae` | Başlangıç ve bitiş görüntülerini latent uzayına kodlamak için kullanılan VAE modeli | VAE | Evet | - |
-| `width` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 848, 16'nın katı olmalıdır) | INT | Evet | 16 - MAX_RESOLUTION |
-| `height` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, 16'nın katı olmalıdır) | INT | Evet | 16 - MAX_RESOLUTION |
-| `length` | Video dizisindeki kare sayısı (varsayılan: 93) | INT | Evet | 1 - MAX_RESOLUTION |
-| `batch_size` | Oluşturulacak video dizisi sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
-| `start_image` | Video dizisi için isteğe bağlı başlangıç görüntüsü | IMAGE | Hayır | - |
-| `end_image` | Video dizisi için isteğe bağlı bitiş görüntüsü | IMAGE | Hayır | - |
+| `genişlik` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 848, 16'nın katı olmalıdır) | INT | Evet | 16 - MAX_RESOLUTION |
+| `yükseklik` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, 16'nın katı olmalıdır) | INT | Evet | 16 - MAX_RESOLUTION |
+| `uzunluk` | Video dizisindeki kare sayısı (varsayılan: 93) | INT | Evet | 1 - MAX_RESOLUTION |
+| `toplu_iş_boyutu` | Oluşturulacak video dizisi sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `başlangıç_görseli` | Video dizisi için isteğe bağlı başlangıç görüntüsü | IMAGE | Hayır | - |
+| `bitiş_görseli` | Video dizisi için isteğe bağlı bitiş görüntüsü | IMAGE | Hayır | - |
 
 **Not:** `start_image` veya `end_image` sağlanmadığında, düğüm yalnızca istenen boyut ve uzunlukta boş bir latent döndürür. Bir veya her iki görüntü sağlandığında, bunlar `width` ve `height` değerlerine yeniden boyutlandırılır, `vae` ile kodlanır ve latent dizisinin başına ve/veya sonuna yerleştirilir. İlgili bölgeler, üretim sırasında korunmaları için gürültü maskesinde işaretlenir. Kodlanan latentler Wan 2.1 latent formatına dönüştürülür ve ortaya çıkan latent ile maske `batch_size` kez yinelenir.
 

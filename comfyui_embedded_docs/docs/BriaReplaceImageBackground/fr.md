@@ -9,7 +9,7 @@ Ce nœud remplace l'arrière-plan d'une image par un nouveau généré par Bria.
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image d'entrée dont l'arrière-plan sera remplacé. | IMAGE | Oui | |
-| `background` | Décrivez le nouvel arrière-plan avec un prompt, ou guidez-le avec des images de référence. | DYNAMIC_COMBO | Oui | `"prompt"`<br>`"reference images"` |
+| `arrière-plan` | Décrivez le nouvel arrière-plan avec un prompt, ou guidez-le avec des images de référence. | DYNAMIC_COMBO | Oui | `"prompt"`<br>`"reference images"` |
 | `original_quality` | Renvoie la taille exacte en pixels de l'entrée au lieu de redimensionner le résultat à environ 1 mégapixel. Une grande entrée renvoie alors une grande image. (par défaut : false) | BOOLEAN | Non | `true`<br>`false` |
 | `seed` | La même graine renvoie généralement le même arrière-plan ; l'affinement automatique du prompt peut toutefois le faire varier. (par défaut : 42) | INT | Non | 0 à 2147483647 |
 | `moderation` | Paramètres de modération. (par défaut : "false") | DYNAMIC_COMBO | Non | `"false"`<br>`"true"` |

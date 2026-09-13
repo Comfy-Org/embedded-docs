@@ -10,7 +10,7 @@ Bunu, farklı bir dil konuşan bir sanatçıyla iletişim kurmak gibi düşünü
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `text` | Kodlanacak metin. Çok satırlı girişi ve dinamik istemleri destekler. | STRING | Evet | Herhangi bir metin |
+| `metin` | Kodlanacak metin. Çok satırlı girişi ve dinamik istemleri destekler. | STRING | Evet | Herhangi bir metin |
 | `clip` | Metni kodlamak için kullanılan CLIP modeli. | CLIP | Evet | Yüklenmiş CLIP modelleri |
 
 Not: `clip` girişi None ise (örneğin, checkpoint'i geçerli bir CLIP veya metin kodlayıcı modeli içermeyen bir checkpoint yükleyiciden geldiğinde), düğüm hata verir.

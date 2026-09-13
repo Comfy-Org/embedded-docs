@@ -6,7 +6,7 @@ Load Video düğümü, girdi dizininden video dosyalarını yükler ve bunları 
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `file` | Girdi dizininden yüklenecek video dosyası. Açılır liste, ComfyUI girdi klasöründe bulunan tüm video dosyalarıyla dinamik olarak doldurulur ve yeni video dosyaları doğrudan dosya seçici aracılığıyla yüklenebilir. | COMBO | Evet | Birden çok seçenek mevcut (girdi dizinindeki tüm video dosyaları) |
+| `dosya` | Girdi dizininden yüklenecek video dosyası. Açılır liste, ComfyUI girdi klasöründe bulunan tüm video dosyalarıyla dinamik olarak doldurulur ve yeni video dosyaları doğrudan dosya seçici aracılığıyla yüklenebilir. | COMBO | Evet | Birden çok seçenek mevcut (girdi dizinindeki tüm video dosyaları) |
 
 **Not:** `file` parametresi için kullanılabilir seçenekler, girdi dizininde bulunan video dosyalarından dinamik olarak doldurulur. Yalnızca desteklenen video içerik türleriyle eşleşen dosyalar görüntülenir ve liste alfabetik olarak sıralanır. Ayrıca düğümün dosya seçici arayüzü aracılığıyla doğrudan yeni bir video dosyası yükleyebilirsiniz. Daha önce seçilen bir video dosyası artık bulunamazsa, düğüm geçersiz dosya hatası bildirir.
 

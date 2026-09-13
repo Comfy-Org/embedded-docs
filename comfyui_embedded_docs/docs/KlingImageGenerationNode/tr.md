@@ -6,15 +6,15 @@ Kling Görüntü Üretme Düğümü, metin istemlerinden görüntüler üretir v
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Pozitif metin istemi. Gerekli, 1 ile 500 karakter arasında olmalıdır. | STRING | Evet | Maksimum 500 karakter |
-| `negative_prompt` | Negatif metin istemi. | STRING | Evet | Maksimum 500 karakter |
-| `image_type` | Görüntü referans türü seçimi (gelişmiş). Referans görüntü sağlandığında gereklidir. | COMBO | Evet | `"subject_reference"`<br>`"style_reference"` |
-| `image_fidelity` | Kullanıcı tarafından yüklenen görüntüler için referans yoğunluğu (varsayılan: 0.5, gelişmiş) | FLOAT | Evet | 0.0 - 1.0 |
-| `human_fidelity` | Özne referansı benzerliği (varsayılan: 0.45, gelişmiş) | FLOAT | Evet | 0.0 - 1.0 |
-| `model_name` | Görüntü üretimi için model seçimi (varsayılan: "kling-v3") | COMBO | Evet | `"kling-v3"` |
-| `aspect_ratio` | Üretilen görüntüler için en-boy oranı (varsayılan: "16:9") | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` |
+| `istem` | Pozitif metin istemi. Gerekli, 1 ile 500 karakter arasında olmalıdır. | STRING | Evet | Maksimum 500 karakter |
+| `negatif_istem` | Negatif metin istemi. | STRING | Evet | Maksimum 500 karakter |
+| `görüntü_türü` | Görüntü referans türü seçimi (gelişmiş). Referans görüntü sağlandığında gereklidir. | COMBO | Evet | `"subject_reference"`<br>`"style_reference"` |
+| `görüntü_sadakati` | Kullanıcı tarafından yüklenen görüntüler için referans yoğunluğu (varsayılan: 0.5, gelişmiş) | FLOAT | Evet | 0.0 - 1.0 |
+| `insan_sadakati` | Özne referansı benzerliği (varsayılan: 0.45, gelişmiş) | FLOAT | Evet | 0.0 - 1.0 |
+| `model_adı` | Görüntü üretimi için model seçimi (varsayılan: "kling-v3") | COMBO | Evet | `"kling-v3"` |
+| `en_boy_oranı` | Üretilen görüntüler için en-boy oranı (varsayılan: "16:9") | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` |
 | `n` | Üretilen görüntü sayısı (varsayılan: 1) | INT | Evet | 1 - 9 |
-| `image` | İsteğe bağlı referans görüntü | IMAGE | Hayır | - |
+| `görüntü` | İsteğe bağlı referans görüntü | IMAGE | Hayır | - |
 | `seed` | `seed`, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir (varsayılan: 0) | INT | Hayır | 0 - 2147483647 |
 
 **Parametre Kısıtlamaları:**

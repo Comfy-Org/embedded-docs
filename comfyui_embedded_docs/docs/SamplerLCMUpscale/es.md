@@ -6,9 +6,9 @@ Este nodo proporciona un método de muestreo especializado que combina el muestr
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `scale_ratio` | El factor de escala total que se aplicará durante el escalado. Un valor de 1.0 mantiene la resolución original (predeterminado: 1.0) | FLOAT | Sí | 0.1 - 20.0 |
-| `scale_steps` | El número de pasos que se utilizarán para el proceso de escalado. Use -1 para el cálculo automático basado en la programación de muestreo (predeterminado: -1) | INT | Sí | -1 - 1000 |
-| `upscale_method` | El método de interpolación utilizado para escalar la imagen en cada paso de escalado (predeterminado: "bislerp") | COMBO | Sí | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" |
+| `relación_escala` | El factor de escala total que se aplicará durante el escalado. Un valor de 1.0 mantiene la resolución original (predeterminado: 1.0) | FLOAT | Sí | 0.1 - 20.0 |
+| `pasos_escala` | El número de pasos que se utilizarán para el proceso de escalado. Use -1 para el cálculo automático basado en la programación de muestreo (predeterminado: -1) | INT | Sí | -1 - 1000 |
+| `método_aumento_escala` | El método de interpolación utilizado para escalar la imagen en cada paso de escalado (predeterminado: "bislerp") | COMBO | Sí | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" |
 
 `scale_ratio` y `scale_steps` son parámetros avanzados. La imagen se escala gradualmente desde su tamaño original hasta el `scale_ratio` objetivo a lo largo de los pasos de escalado. Cuando `scale_steps` es -1, el número de pasos de escalado se calcula automáticamente como aproximadamente la mitad del número de pasos de muestreo, con un mínimo de 2; cuando se proporciona un valor positivo, el nodo lo ajusta internamente y lo limita según el número total de pasos de muestreo.
 

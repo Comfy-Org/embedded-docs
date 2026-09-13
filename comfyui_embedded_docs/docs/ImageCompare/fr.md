@@ -8,9 +8,9 @@ Le nœud Image Compare fournit une interface visuelle permettant de comparer deu
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `image_a` | La première image à comparer. | IMAGE | Non | - |
-| `image_b` | La deuxième image à comparer. | IMAGE | Non | - |
-| `compare_view` | Le contrôle qui active la vue de comparaison à curseur dans l’interface utilisateur. | IMAGECOMPARE | Oui | - |
+| `image A` | La première image à comparer. | IMAGE | Non | - |
+| `image B` | La deuxième image à comparer. | IMAGE | Non | - |
+| `vue de comparaison` | Le contrôle qui active la vue de comparaison à curseur dans l’interface utilisateur. | IMAGECOMPARE | Oui | - |
 
 **Remarque :** Ce nœud est un nœud de sortie. Bien que `image_a` et `image_b` soient facultatifs, au moins une image doit être fournie pour que le nœud ait un effet visible. Le nœud affichera une zone vide pour toute entrée d’image non connectée. Chaque lot d’images fourni est enregistré dans un stockage temporaire sous les préfixes `comfy.compare.a` et `comfy.compare.b` respectivement, puis affiché dans la vue de comparaison à curseur.
 

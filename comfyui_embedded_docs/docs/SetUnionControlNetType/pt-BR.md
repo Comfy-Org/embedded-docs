@@ -7,7 +7,7 @@ O nó SetUnionControlNetType permite escolher qual tipo de controle uma rede de 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `control_net` | A rede de controle a ser modificada com uma nova configuração de tipo | CONTROL_NET | Sim | - |
-| `type` | O tipo de rede de controle a aplicar. Use "auto" para detecção automática de tipo ou selecione um tipo específico de rede de controle nas opções disponíveis (padrão: "auto") | COMBO | Sim | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/softedge"`<br>`"canny"`<br>`"scribble"`<br>`"seg"`<br>`"tile"`<br>`"inpaint"`<br>`"lineart"`<br>`"blur"`<br>`"mlsd"`<br>`"normalbae"`<br>`"mask"` |
+| `tipo` | O tipo de rede de controle a aplicar. Use "auto" para detecção automática de tipo ou selecione um tipo específico de rede de controle nas opções disponíveis (padrão: "auto") | COMBO | Sim | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/softedge"`<br>`"canny"`<br>`"scribble"`<br>`"seg"`<br>`"tile"`<br>`"inpaint"`<br>`"lineart"`<br>`"blur"`<br>`"mlsd"`<br>`"normalbae"`<br>`"mask"` |
 
 Quando `type` é definido como `"auto"`, o nó limpa o tipo de controle armazenado para que o tipo possa ser detectado automaticamente. Quando um tipo específico é selecionado, o nó armazena o tipo de controle correspondente na rede de controle copiada. A rede de controle de entrada nunca é alterada no local; uma cópia modificada é retornada.
 

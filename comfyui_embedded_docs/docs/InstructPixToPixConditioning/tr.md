@@ -6,10 +6,10 @@ InstructPixToPixConditioning düğümü, pozitif ve negatif metin istemlerini g�
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `positive` | İstenen görüntü özellikleri için metin istemlerini ve ayarları içeren pozitif koşullandırma verisi | CONDITIONING | Evet | - |
-| `negative` | İstenmeyen görüntü özellikleri için metin istemlerini ve ayarları içeren negatif koşullandırma verisi | CONDITIONING | Evet | - |
+| `pozitif` | İstenen görüntü özellikleri için metin istemlerini ve ayarları içeren pozitif koşullandırma verisi | CONDITIONING | Evet | - |
+| `negatif` | İstenmeyen görüntü özellikleri için metin istemlerini ve ayarları içeren negatif koşullandırma verisi | CONDITIONING | Evet | - |
 | `vae` | Girdi görüntülerini latent temsillere kodlamak için kullanılan VAE modeli | VAE | Evet | - |
-| `pixels` | Latent uzayına işlenecek ve kodlanacak girdi görüntüsü | IMAGE | Evet | - |
+| `pikseller` | Latent uzayına işlenecek ve kodlanacak girdi görüntüsü | IMAGE | Evet | - |
 
 **Not:** Girdi görüntü boyutları, VAE kodlama süreciyle uyumluluğu sağlamak için hem genişlik hem de yükseklikte 8 pikselin katlarına merkezden kırpılarak otomatik olarak ayarlanır.
 

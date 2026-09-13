@@ -8,9 +8,9 @@ Bu düğüm, Bria kullanarak düz metinle tanımlanan bir nesneyi görüntüden 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Adlandırılan nesnenin kaldırılacağı görüntü. | IMAGE | Evet | - |
+| `görüntü` | Adlandırılan nesnenin kaldırılacağı görüntü. | IMAGE | Evet | - |
 | `object_name` | Kaldırılacak nesnenin adı, örneğin 'the lamp'. Birden fazla nesne aynı anda adlandırılabilir, örneğin 'the phone and the pencils'. Resimde olmayan bir şeyin adlandırılması yine de yeniden işlenmiş bir görüntü döndürür ve faturalandırılır. En az 1 karakter uzunluğunda olmalıdır (varsayılan: boş). | STRING | Evet | - |
-| `moderation` | Moderasyon ayarları. İsteğe bağlı moderasyon denetimlerinin gösterilip gösterilmeyeceğini seçer. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
+| `moderasyon` | Moderasyon ayarları. İsteğe bağlı moderasyon denetimlerinin gösterilip gösterilmeyeceğini seçer. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
 
 ### Moderasyon Girdileri
 

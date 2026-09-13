@@ -6,7 +6,7 @@ Este nodo forma parte del grupo experimental Stable Cascade. Prepara las entrada
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `image` | La imagen de entrada que se procesará para superresolución. Solo se utilizan los primeros 3 canales de color (RGB) de la imagen para la codificación. | IMAGE | Sí | - |
+| `imagen` | La imagen de entrada que se procesará para superresolución. Solo se utilizan los primeros 3 canales de color (RGB) de la imagen para la codificación. | IMAGE | Sí | - |
 | `vae` | El modelo VAE utilizado para codificar la imagen de entrada | VAE | Sí | - |
 
 ## Salidas

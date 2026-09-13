@@ -7,7 +7,7 @@ Pixal3DConditioning düğümü, Trellis2 3D üretim hattı için görüntü koş
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `clip_vision_model` | DINOv3 ViT-L/16 ClipVision. | CLIP_VISION | Evet | — |
-| `image` | ImageCropToMask'ten gelen ön işlenmiş görüntü (Pixal3D için pad_factor=1.1). | IMAGE | Evet | — |
+| `görüntü` | ImageCropToMask'ten gelen ön işlenmiş görüntü (Pixal3D için pad_factor=1.1). | IMAGE | Evet | — |
 | `camera_angle_x` | Yatay FOV, derece cinsinden (`fov` olarak görüntülenir). Görüntü başına FoV için bir MoGeGeometryToFOV (axis='horizontal', unit='degrees') bağlayın (üst kaynak varsayılanıyla eşleşir). Varsayılan: 49.13. | FLOAT | Evet | 1.0 – 170.0 (adım: 0.01) |
 
 ## Çıktılar

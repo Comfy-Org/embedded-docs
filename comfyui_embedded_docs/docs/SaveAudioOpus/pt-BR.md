@@ -6,9 +6,9 @@ O nó SaveAudioOpus salva dados de áudio em um arquivo no formato Opus, permiti
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `audio` | Os dados de áudio a serem salvos como um arquivo Opus. Um ValueError é gerado se isto for None (por exemplo, quando o vídeo de origem não tem faixa de áudio). | AUDIO | Sim | - |
-| `filename_prefix` | O prefixo usado para o nome do arquivo de saída (padrão: "audio/ComfyUI"). | STRING | Não | - |
-| `quality` | O bitrate usado para codificar o arquivo Opus; valores mais altos produzem melhor qualidade, mas arquivos maiores (padrão: "128k"). | COMBO | Não | `"64k"`<br>`"96k"`<br>`"128k"`<br>`"192k"`<br>`"320k"` |
+| `áudio` | Os dados de áudio a serem salvos como um arquivo Opus. Um ValueError é gerado se isto for None (por exemplo, quando o vídeo de origem não tem faixa de áudio). | AUDIO | Sim | - |
+| `prefixo_do_arquivo` | O prefixo usado para o nome do arquivo de saída (padrão: "audio/ComfyUI"). | STRING | Não | - |
+| `qualidade` | O bitrate usado para codificar o arquivo Opus; valores mais altos produzem melhor qualidade, mas arquivos maiores (padrão: "128k"). | COMBO | Não | `"64k"`<br>`"96k"`<br>`"128k"`<br>`"192k"`<br>`"320k"` |
 
 ## Saídas
 

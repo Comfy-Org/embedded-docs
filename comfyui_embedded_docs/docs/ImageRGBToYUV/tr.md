@@ -6,7 +6,7 @@ ImageRGBToYUV düğümü, RGB'den YCbCr'ye renk dönüşümü kullanarak bir RGB
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Y, U ve V bileşenlerine dönüştürülecek girdi RGB görüntüsü. Görüntü bir alfa kanalı içeriyorsa yalnızca ilk üç (RGB) kanal kullanılır. | IMAGE | Evet | - |
+| `görüntü` | Y, U ve V bileşenlerine dönüştürülecek girdi RGB görüntüsü. Görüntü bir alfa kanalı içeriyorsa yalnızca ilk üç (RGB) kanal kullanılır. | IMAGE | Evet | - |
 
 ## Çıktılar
 

@@ -6,14 +6,14 @@ WanSoundImageToVideo düğümü, Wan ses-video üretimi için koşullandırma ve
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `positive` | Oluşturulan videoda hangi içeriğin görünmesi gerektiğini yönlendiren pozitif koşullandırma istemleri | CONDITIONING | Evet | - |
-| `negative` | Oluşturulan videoda hangi içerikten kaçınılması gerektiğini belirten negatif koşullandırma istemleri | CONDITIONING | Evet | - |
+| `pozitif` | Oluşturulan videoda hangi içeriğin görünmesi gerektiğini yönlendiren pozitif koşullandırma istemleri | CONDITIONING | Evet | - |
+| `negatif` | Oluşturulan videoda hangi içerikten kaçınılması gerektiğini belirten negatif koşullandırma istemleri | CONDITIONING | Evet | - |
 | `vae` | Referans görüntülerini, hareket referanslarını ve kontrol videosu karelerini latent temsillere kodlamak için kullanılan VAE modeli | VAE | Evet | - |
-| `width` | Çıktı videosunun genişliği, piksel cinsinden (varsayılan: 832, adım: 16) | INT | Evet | 16 - MAX_RESOLUTION |
-| `height` | Çıktı videosunun yüksekliği, piksel cinsinden (varsayılan: 480, adım: 16) | INT | Evet | 16 - MAX_RESOLUTION |
-| `length` | Oluşturulan videodaki kare sayısı (varsayılan: 77, adım: 4) | INT | Evet | 1 - MAX_RESOLUTION |
-| `batch_size` | Aynı anda oluşturulacak video sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
-| `audio_encoder_output` | Ses özelliklerine göre video oluşturmayı etkileyebilen isteğe bağlı ses kodlaması. Sağlandığında, ses özellikleri enterpole edilir ve video oluşturmayı koşullandırmak için kullanılır. | AUDIO_ENCODER_OUTPUT | Hayır | - |
+| `genişlik` | Çıktı videosunun genişliği, piksel cinsinden (varsayılan: 832, adım: 16) | INT | Evet | 16 - MAX_RESOLUTION |
+| `yükseklik` | Çıktı videosunun yüksekliği, piksel cinsinden (varsayılan: 480, adım: 16) | INT | Evet | 16 - MAX_RESOLUTION |
+| `uzunluk` | Oluşturulan videodaki kare sayısı (varsayılan: 77, adım: 4) | INT | Evet | 1 - MAX_RESOLUTION |
+| `toplu_iş_boyutu` | Aynı anda oluşturulacak video sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `ses_kodlayıcı_çıktısı` | Ses özelliklerine göre video oluşturmayı etkileyebilen isteğe bağlı ses kodlaması. Sağlandığında, ses özellikleri enterpole edilir ve video oluşturmayı koşullandırmak için kullanılır. | AUDIO_ENCODER_OUTPUT | Hayır | - |
 | `ref_image` | Video içeriği için görsel rehberlik sağlayan isteğe bağlı referans görüntüsü. Görüntü, belirtilen genişlik ve yükseklikle eşleşecek şekilde yeniden ölçeklendirilir ve ardından bir latent temsile kodlanır. Girdinin yalnızca ilk görüntüsü referans olarak kullanılır. | IMAGE | Hayır | - |
 | `control_video` | Oluşturulan videonun hareketini ve yapısını yönlendiren isteğe bağlı kontrol videosu. Video yeniden ölçeklendirilir ve kodlanır, ardından çıktıyı koşullandırmak için kullanılır. Yalnızca ilk `length` kare kullanılır. | IMAGE | Hayır | - |
 | `ref_motion` | Videodaki hareket desenleri için rehberlik sağlayan isteğe bağlı hareket referansı. Girdi 73'ten fazla kare içeriyorsa yalnızca son 73 kare kullanılır. 73'ten az kare sağlanırsa dizi nötr karelerle doldurulur. | IMAGE | Hayır | - |

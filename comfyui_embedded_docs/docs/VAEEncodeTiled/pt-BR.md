@@ -8,10 +8,10 @@ VAEEncodeTiled processa imagens dividindo-as em blocos menores e codificando-as 
 | --- | --- | --- | --- | --- |
 | `pixels` | Os dados da imagem de entrada a serem codificados. | IMAGE | Sim | - |
 | `vae` | O modelo Autoencoder Variacional usado para codificação. | VAE | Sim | - |
-| `tile_size` | O tamanho de cada bloco para processamento espacial (padrão: 512). Configuração avançada. | INT | Sim | 64-4096 (passo: 64) |
-| `overlap` | A quantidade de sobreposição entre blocos adjacentes (padrão: 64). Configuração avançada. | INT | Sim | 0-4096 (passo: 32) |
-| `temporal_size` | Usado apenas para VAEs de vídeo: quantidade de quadros a codificar por vez (padrão: 64). Configuração avançada. | INT | Sim | 8-4096 (passo: 4) |
-| `temporal_overlap` | Usado apenas para VAEs de vídeo: quantidade de quadros a sobrepor (padrão: 8). Configuração avançada. | INT | Sim | 4-4096 (passo: 4) |
+| `tamanho_do_bloco` | O tamanho de cada bloco para processamento espacial (padrão: 512). Configuração avançada. | INT | Sim | 64-4096 (passo: 64) |
+| `sobreposição` | A quantidade de sobreposição entre blocos adjacentes (padrão: 64). Configuração avançada. | INT | Sim | 0-4096 (passo: 32) |
+| `tamanho_temporal` | Usado apenas para VAEs de vídeo: quantidade de quadros a codificar por vez (padrão: 64). Configuração avançada. | INT | Sim | 8-4096 (passo: 4) |
+| `sobreposição_temporal` | Usado apenas para VAEs de vídeo: quantidade de quadros a sobrepor (padrão: 8). Configuração avançada. | INT | Sim | 4-4096 (passo: 4) |
 
 **Observação:** Os parâmetros `temporal_size` e `temporal_overlap` são relevantes apenas ao usar VAEs de vídeo e não têm efeito sobre VAEs de imagem padrão.
 

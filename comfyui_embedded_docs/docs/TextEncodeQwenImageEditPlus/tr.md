@@ -9,9 +9,9 @@ TextEncodeQwenImageEditPlus düğümü, görüntü oluşturma veya düzenleme g�
 | `clip` | Tokenizasyon ve kodlama için kullanılan CLIP modeli | CLIP | Evet | - |
 | `prompt` | İstenen görüntü değişikliğini açıklayan metin talimatı (çok satırlı girdiyi ve dinamik istemleri destekler) | STRING | Evet | - |
 | `vae` | Girdi görüntülerinden referans latentleri oluşturmak için isteğe bağlı VAE modeli | VAE | Hayır | - |
-| `image1` | Analiz ve değişiklik için birinci isteğe bağlı girdi görüntüsü | IMAGE | Hayır | - |
-| `image2` | Analiz ve değişiklik için ikinci isteğe bağlı girdi görüntüsü | IMAGE | Hayır | - |
-| `image3` | Analiz ve değişiklik için üçüncü isteğe bağlı girdi görüntüsü | IMAGE | Hayır | - |
+| `görüntü1` | Analiz ve değişiklik için birinci isteğe bağlı girdi görüntüsü | IMAGE | Hayır | - |
+| `görüntü2` | Analiz ve değişiklik için ikinci isteğe bağlı girdi görüntüsü | IMAGE | Hayır | - |
+| `görüntü3` | Analiz ve değişiklik için üçüncü isteğe bağlı girdi görüntüsü | IMAGE | Hayır | - |
 
 **Not:** Bir VAE sağlandığında düğüm, sağlanan tüm girdi görüntülerinden referans latentleri üretir. Aynı anda en fazla üç görüntü işlenebilir. Görüntüler, görsel-dil işleme için 384x384 piksel hedef alanına (en-boy oranı korunarak) ve VAE kodlama için 8'e bölünebilen boyutlara (1024x1024 piksel hedef alanıyla) ölçeklenir.
 

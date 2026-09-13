@@ -6,10 +6,10 @@ El nodo CFG Override sobrescribe la escala CFG (Guía libre de clasificador) a u
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | El modelo al que se aplicará la sobrescritura de CFG. | MODEL | Sí | |
+| `modelo` | El modelo al que se aplicará la sobrescritura de CFG. | MODEL | Sí | |
 | `cfg` | El valor fijo de escala CFG que se usará durante el rango de sobrescritura. Predeterminado: 1.0. | FLOAT | Sí | 0.0 a 100.0 (paso: 0.1) |
-| `start_percent` | El punto de inicio del rango de sobrescritura como porcentaje del proceso de muestreo. Predeterminado: 0.0. | FLOAT | Sí | 0.0 a 1.0 (paso: 0.001) |
-| `end_percent` | El punto final del rango de sobrescritura como porcentaje del proceso de muestreo. Predeterminado: 1.0. | FLOAT | Sí | 0.0 a 1.0 (paso: 0.001) |
+| `porcentaje_inicio` | El punto de inicio del rango de sobrescritura como porcentaje del proceso de muestreo. Predeterminado: 0.0. | FLOAT | Sí | 0.0 a 1.0 (paso: 0.001) |
+| `porcentaje_fin` | El punto final del rango de sobrescritura como porcentaje del proceso de muestreo. Predeterminado: 1.0. | FLOAT | Sí | 0.0 a 1.0 (paso: 0.001) |
 
 ## Salidas
 

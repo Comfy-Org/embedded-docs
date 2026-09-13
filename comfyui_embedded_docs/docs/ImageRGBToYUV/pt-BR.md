@@ -6,7 +6,7 @@ O nó ImageRGBToYUV converte uma imagem RGB em componentes de cor no estilo YUV 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A imagem RGB de entrada a ser convertida em componentes Y, U e V. Se a imagem contiver um canal alfa, apenas os três primeiros canais (RGB) serão usados. | IMAGE | Sim | - |
+| `imagem` | A imagem RGB de entrada a ser convertida em componentes Y, U e V. Se a imagem contiver um canal alfa, apenas os três primeiros canais (RGB) serão usados. | IMAGE | Sim | - |
 
 ## Saídas
 

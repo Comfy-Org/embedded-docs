@@ -18,9 +18,9 @@ Nihai çıktı, beyaz kısımların algılanan kenar çizgileri, siyah kısımla
 
 | Parametre Adı | İşlev Açıklaması | Veri Türü | Girdi Türü | Varsayılan | Aralık |
 | --- | --- | --- | --- | --- | --- |
-| `image` | Kenar çıkarımı yapılacak orijinal fotoğraf | IMAGE | Girdi | - | - |
-| `low_threshold` | Düşük eşik; yok sayılacak kenarların ne kadar zayıf olabileceğini belirler. Daha düşük değerler daha fazla ayrıntıyı korur ancak gürültü üretebilir | FLOAT | Widget | 0.4 | 0.01-0.99 |
-| `high_threshold` | Yüksek eşik; korunacak kenarların ne kadar güçlü olması gerektiğini belirler. Daha yüksek değerler yalnızca en belirgin kontur çizgilerini korur | FLOAT | Widget | 0.8 | 0.01-0.99 |
+| `görüntü` | Kenar çıkarımı yapılacak orijinal fotoğraf | IMAGE | Girdi | - | - |
+| `düşük_eşik` | Düşük eşik; yok sayılacak kenarların ne kadar zayıf olabileceğini belirler. Daha düşük değerler daha fazla ayrıntıyı korur ancak gürültü üretebilir | FLOAT | Widget | 0.4 | 0.01-0.99 |
+| `yüksek_eşik` | Yüksek eşik; korunacak kenarların ne kadar güçlü olması gerektiğini belirler. Daha yüksek değerler yalnızca en belirgin kontur çizgilerini korur | FLOAT | Widget | 0.8 | 0.01-0.99 |
 
 ## Çıktılar
 

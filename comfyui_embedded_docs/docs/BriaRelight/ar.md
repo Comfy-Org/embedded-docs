@@ -8,10 +8,10 @@
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
-| `image` | الصورة التي سيتم تغيير إضاءتها. يتم إسقاط أي قناة ألفا قبل رفع الصورة. | IMAGE | نعم | - |
-| `light_type` | جو الإضاءة المراد تطبيقه. | COMBO | نعم | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
-| `light_direction` | من أين يأتي الضوء. أكثر ما يتفاعل معه هذا الإعداد هي أجواء الإضاءة الصلبة مثل midday وspotlight on subject وharsh studio lighting. | COMBO | نعم | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
-| `moderation` | إعدادات الرقابة. اختر `"true"` لإظهار خيارات الرقابة، أو `"false"` للتشغيل من دونها. | DYNAMIC_COMBO | نعم | `"false"`<br>`"true"` |
+| `صورة` | الصورة التي سيتم تغيير إضاءتها. يتم إسقاط أي قناة ألفا قبل رفع الصورة. | IMAGE | نعم | - |
+| `نوع الإضاءة` | جو الإضاءة المراد تطبيقه. | COMBO | نعم | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
+| `اتجاه الإضاءة` | من أين يأتي الضوء. أكثر ما يتفاعل معه هذا الإعداد هي أجواء الإضاءة الصلبة مثل midday وspotlight on subject وharsh studio lighting. | COMBO | نعم | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
+| `الإشراف` | إعدادات الرقابة. اختر `"true"` لإظهار خيارات الرقابة، أو `"false"` للتشغيل من دونها. | DYNAMIC_COMBO | نعم | `"false"`<br>`"true"` |
 
 ### مدخلات الرقابة
 

@@ -6,7 +6,7 @@ Este nodo decodifica representaciones latentes de forma de Trellis2 en una malla
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `samples` | Las muestras latentes a decodificar, incluidos el tensor de muestra y los datos de coordenadas dispersas. El diccionario latente también puede contener campos opcionales: `coord_counts` para formas por lotes, `coord_resolution` para controlar la resolución de la malla y `model_frame` para la orientación de coordenadas. | LATENT | Sí | None |
+| `muestras` | Las muestras latentes a decodificar, incluidos el tensor de muestra y los datos de coordenadas dispersas. El diccionario latente también puede contener campos opcionales: `coord_counts` para formas por lotes, `coord_resolution` para controlar la resolución de la malla y `model_frame` para la orientación de coordenadas. | LATENT | Sí | None |
 | `vae` | El modelo VAE usado para decodificar el latente de forma en una malla. | VAE | Sí | None |
 
 ### Notas sobre `samples`

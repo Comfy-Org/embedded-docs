@@ -6,7 +6,7 @@ Bir CONDITIONING'e, PiD kod çözme veya ölçekleme için kullanılabilecek şe
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | `latent` ve `degrade_sigma` değerlerinin ekleneceği koşullandırma verisi. | CONDITIONING | Evet | - |
+| `pozitif` | `latent` ve `degrade_sigma` değerlerinin ekleneceği koşullandırma verisi. | CONDITIONING | Evet | - |
 | `latent` | Koşullandırmaya eklenecek latent (VAEEncode veya bir KSampler'dan). | LATENT | Evet | - |
 | `latent_format` | Latentin biçimi. Flux1 (16 kanal) ve Flux2 (128 kanal) latentleri, "flux" altında kanal boyutundan otomatik algılanır. SD3 (16 kanal), SDXL (4 kanal) veya QwenImage (16 kanal) için manuel olarak seçin (varsayılan: "flux"). | COMBO | Evet | `"flux"`<br>`"sd3"`<br>`"sdxl"`<br>`"qwenimage"` |
 | `degrade_sigma` | Uygulanacak bozulma miktarı. 0, temiz bir latent anlamına gelir. Bozulmuş latent çıktılarının gürültüsünü gidermek için bu değeri artırın (varsayılan: 0.0). | FLOAT | Evet | 0.0 ile 1.0 (adım: 0.01) |

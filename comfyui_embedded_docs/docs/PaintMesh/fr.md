@@ -6,7 +6,7 @@ PaintMesh prend un maillage 3D et un champ de couleurs de voxels. Il attribue à
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `mesh` | Le maillage à peindre. | MESH | Oui | N/A |
+| `maillage` | Le maillage à peindre. | MESH | Oui | N/A |
 | `voxel_colors` | Champ de voxels contenant les données de couleur utilisées pour la peinture. Seuls les canaux RGB de couleur de base sont utilisés à partir du champ. | VOXEL | Oui | N/A |
 
 Remarque : Lorsque les coordonnées du champ de voxels incluent un canal d'index de lot et que le maillage d'entrée contient plusieurs éléments de maillage, le nœud applique les couleurs séparément à chaque élément de maillage du lot. Si un élément de maillage donné ne possède aucun voxel correspondant, il reçoit des couleurs de sommets par défaut à zéro (noir). Les couleurs échantillonnées sont converties de sRGB en RGB linéaire pour le maillage de sortie, car le champ de voxels peut contenir des données PBR complètes, mais seuls les canaux RGB de couleur de base sont utilisés pour les couleurs de sommets.

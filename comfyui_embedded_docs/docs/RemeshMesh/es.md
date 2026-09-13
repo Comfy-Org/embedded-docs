@@ -8,8 +8,8 @@ Remesh Mesh reconstruye una malla con un teselado limpio y uniforme muestreando 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `mesh` | La malla de entrada que se va a remallar. | MESH | Sí | — |
-| `resolution` | Resolución de la cuadrícula de vóxeles (densidad de salida). 256 ~ 100k caras, 512 ~ 1M. Para un recuento exacto de caras, continúe con Decimate Mesh. (predeterminado: 512) | INT | Sí | 32 - 2048 |
+| `malla` | La malla de entrada que se va a remallar. | MESH | Sí | — |
+| `resolución` | Resolución de la cuadrícula de vóxeles (densidad de salida). 256 ~ 100k caras, 512 ~ 1M. Para un recuento exacto de caras, continúe con Decimate Mesh. (predeterminado: 512) | INT | Sí | 32 - 2048 |
 | `sign_mode` | Modo de extracción de superficie. "udf" es robusto ante entradas desordenadas/no manifold; "sdf" produce una superficie única limpia con recuperación de características nítidas mediante QEF (función de error cuadrático), pero necesita un bobinado consistente. Al seleccionar un modo, se muestran sus subopciones específicas. (predeterminado: "udf") | DYNAMIC_COMBO | Sí | "udf"<br>"sdf" |
 | `band` | Ancho de la banda estrecha en unidades de vóxel. En modo UDF, también desplaza la superficie. (avanzado, predeterminado: 1.0) | FLOAT | Sí | 0.5 - 4.0 |
 | `project_back` | Interpola linealmente los vértices hacia la superficie original (0 = DC puro, 1 = ajustado). (avanzado, predeterminado: 0.0) | FLOAT | Sí | 0.0 - 1.0 |

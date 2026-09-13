@@ -9,11 +9,11 @@ Bu düğüm, MiniMax H3 modeliyle bir video oluşturmak için gereken koşulland
 | `clip` | İstemi tokenize etmek ve anahtar kare görüntülerini koşullandırmaya kodlamak için kullanılan CLIP modeli. | CLIP | Evet |  |
 | `vae` | Anahtar kare görüntüleri sağlandığında bunları latent uzayına kodlamak için kullanılan VAE modeli. | VAE | Evet |  |
 | `prompt` | Oluşturulacak videoyu tanımlayan metin istemi. Birden çok satırı ve dinamik istemleri destekler. | STRING | Evet |  |
-| `width` | Videonun piksel cinsinden genişliği (varsayılan: 1344). | INT | Evet | 32 - MAX_RESOLUTION (adım 32) |
-| `height` | Videonun piksel cinsinden yüksekliği (varsayılan: 768). | INT | Evet | 32 - MAX_RESOLUTION (adım 32) |
-| `length` | 24 fps'de kare sayısı; modelin 17k+5 ızgarasına yukarı yuvarlanır (124 = ~5 sn; eğitilmiş aralık ~124-362, daha uzunu test edilmemiştir) (varsayılan: 124). | INT | Evet | 5 - 3600 (adım 17) |
-| `first_frame` | Videonun ilk karesi olarak kullanılan isteğe bağlı görüntü. Tam tuval boyutuna gerilir, bu nedenle en-boy oranı korunmaz. Girdi grubunun yalnızca ilk görüntüsü kullanılır. | IMAGE | Hayır |  |
-| `last_frame` | Videonun son karesi olarak kullanılan isteğe bağlı görüntü. En-boy oranı korunarak tuvali kaplayacak şekilde kırpılır. Girdi grubunun yalnızca ilk görüntüsü kullanılır. | IMAGE | Hayır |  |
+| `genişlik` | Videonun piksel cinsinden genişliği (varsayılan: 1344). | INT | Evet | 32 - MAX_RESOLUTION (adım 32) |
+| `yükseklik` | Videonun piksel cinsinden yüksekliği (varsayılan: 768). | INT | Evet | 32 - MAX_RESOLUTION (adım 32) |
+| `uzunluk` | 24 fps'de kare sayısı; modelin 17k+5 ızgarasına yukarı yuvarlanır (124 = ~5 sn; eğitilmiş aralık ~124-362, daha uzunu test edilmemiştir) (varsayılan: 124). | INT | Evet | 5 - 3600 (adım 17) |
+| `ilk_kare` | Videonun ilk karesi olarak kullanılan isteğe bağlı görüntü. Tam tuval boyutuna gerilir, bu nedenle en-boy oranı korunmaz. Girdi grubunun yalnızca ilk görüntüsü kullanılır. | IMAGE | Hayır |  |
+| `son_kare` | Videonun son karesi olarak kullanılan isteğe bağlı görüntü. En-boy oranı korunarak tuvali kaplayacak şekilde kırpılır. Girdi grubunun yalnızca ilk görüntüsü kullanılır. | IMAGE | Hayır |  |
 
 `first_frame` ve/veya `last_frame` sağlandığında, anahtar kare görüntüleri VAE ile kodlanır ve sırasıyla 0. karede ve son karede koşullandırmaya eklenir. İkisi de sağlanmadığında düğüm yalnızca istemden çalışır. İstenen `length`, en yakın geçerli kare sayısına (17k + 5) yukarı yuvarlanır; bu nedenle etkin kare sayısı istenenden biraz daha yüksek olabilir.
 

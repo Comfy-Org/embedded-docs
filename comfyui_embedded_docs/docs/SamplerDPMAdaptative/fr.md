@@ -6,7 +6,7 @@ Le nœud SamplerDPMAdaptative implémente un échantillonneur DPM (modèle proba
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `order` | L'ordre de la méthode d'échantillonnage (par défaut : 3) | INT | Oui | 2-3 |
+| `ordre` | L'ordre de la méthode d'échantillonnage (par défaut : 3) | INT | Oui | 2-3 |
 | `rtol` | Tolérance relative pour le contrôle d'erreur (par défaut : 0.05) | FLOAT | Oui | 0.0-100.0 |
 | `atol` | Tolérance absolue pour le contrôle d'erreur (par défaut : 0.0078) | FLOAT | Oui | 0.0-100.0 |
 | `h_init` | Taille de pas initiale (par défaut : 0.05) | FLOAT | Oui | 0.0-100.0 |
@@ -15,7 +15,7 @@ Le nœud SamplerDPMAdaptative implémente un échantillonneur DPM (modèle proba
 | `dcoeff` | Coefficient dérivé pour le contrôle de la taille de pas (par défaut : 0.0) | FLOAT | Oui | 0.0-100.0 |
 | `accept_safety` | Facteur de sécurité pour l'acceptation des pas (par défaut : 0.81) | FLOAT | Oui | 0.0-100.0 |
 | `eta` | Paramètre de stochasticité (par défaut : 0.0) | FLOAT | Oui | 0.0-100.0 |
-| `s_noise` | Facteur d'échelle du bruit (par défaut : 1.0) | FLOAT | Oui | 0.0-100.0 |
+| `s_bruit` | Facteur d'échelle du bruit (par défaut : 1.0) | FLOAT | Oui | 0.0-100.0 |
 
 Toutes les entrées sont des paramètres avancés utilisés pour affiner le comportement d'échantillonnage adaptatif. Toutes les entrées numériques autorisent les valeurs décimales et acceptent un minimum de 0.0 et un maximum de 100.0, sauf `order`, qui est limité aux valeurs entières 2 ou 3.
 

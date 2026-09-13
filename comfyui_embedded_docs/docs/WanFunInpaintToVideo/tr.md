@@ -6,16 +6,16 @@ WanFunInpaintToVideo düğümü, isteğe bağlı bir başlangıç görüntüsü 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `positive` | Video oluşturma için pozitif koşullandırma istemleri | CONDITIONING | Evet | - |
-| `negative` | Video oluşturmada kaçınılacak negatif koşullandırma istemleri | CONDITIONING | Evet | - |
+| `pozitif` | Video oluşturma için pozitif koşullandırma istemleri | CONDITIONING | Evet | - |
+| `negatif` | Video oluşturmada kaçınılacak negatif koşullandırma istemleri | CONDITIONING | Evet | - |
 | `vae` | Video karelerini kodlamak ve kodunu çözmek için kullanılan VAE modeli | VAE | Evet | - |
-| `width` | Çıktı video genişliği piksel cinsinden (varsayılan: 832, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
-| `height` | Çıktı video yüksekliği piksel cinsinden (varsayılan: 480, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
-| `length` | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 to MAX_RESOLUTION |
-| `batch_size` | Bir toplu işte oluşturulacak video sayısı (varsayılan: 1) | INT | Evet | 1 ile 4096 |
-| `clip_vision_output` | Başlangıç görüntüsü için koşullandırma olarak kullanılan isteğe bağlı CLIP vision çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
-| `start_image` | Video oluşturma için isteğe bağlı başlangıç kare görüntüsü | IMAGE | Hayır | - |
-| `end_image` | Video oluşturma için isteğe bağlı bitiş kare görüntüsü | IMAGE | Hayır | - |
+| `genişlik` | Çıktı video genişliği piksel cinsinden (varsayılan: 832, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
+| `yükseklik` | Çıktı video yüksekliği piksel cinsinden (varsayılan: 480, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
+| `uzunluk` | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 to MAX_RESOLUTION |
+| `toplu_boyut` | Bir toplu işte oluşturulacak video sayısı (varsayılan: 1) | INT | Evet | 1 ile 4096 |
+| `clip_görü_çıktısı` | Başlangıç görüntüsü için koşullandırma olarak kullanılan isteğe bağlı CLIP vision çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
+| `başlangıç_görüntüsü` | Video oluşturma için isteğe bağlı başlangıç kare görüntüsü | IMAGE | Hayır | - |
+| `bitiş_görüntüsü` | Video oluşturma için isteğe bağlı bitiş kare görüntüsü | IMAGE | Hayır | - |
 
 ## Çıktılar
 

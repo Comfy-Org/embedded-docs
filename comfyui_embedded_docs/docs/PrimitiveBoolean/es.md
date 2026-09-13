@@ -6,7 +6,7 @@ El nodo Boolean pasa un valor booleano (true/false) a través de tu flujo de tra
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `value` | El valor booleano que se pasa a través del nodo | BOOLEAN | Sí | true<br>false |
+| `valor` | El valor booleano que se pasa a través del nodo | BOOLEAN | Sí | true<br>false |
 
 ## Salidas
 

@@ -9,18 +9,18 @@ Bu düğüm eski bir sürümdür ve arayüzde kullanımdan kaldırılmış olara
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Görüntü iyileştirme için kullanılacak yapay zeka modeli. | COMBO | Evet | `"Reimagine"` |
-| `image` | İyileştirilecek girdi görüntüsü. Yalnızca bir görüntü desteklenir. | IMAGE | Evet | - |
-| `prompt` | Yaratıcı büyütme yönlendirmesi için isteğe bağlı metin istemi (varsayılan: boş). | STRING | Hayır | - |
-| `subject_detection` | İyileştirmenin görüntünün hangi bölümüne odaklanacağını kontrol eder (varsayılan: "All"). | COMBO | Hayır | `"All"`<br>`"Foreground"`<br>`"Background"` |
-| `face_enhancement` | İşleme sırasında yüzleri (varsa) iyileştirir (varsayılan: True). | BOOLEAN | Hayır | - |
-| `face_enhancement_creativity` | Yüz iyileştirme için yaratıcılık düzeyini ayarlar (varsayılan: 0.0). | FLOAT | Hayır | 0.0 - 1.0 |
-| `face_enhancement_strength` | İyileştirilmiş yüzlerin arka plana göre ne kadar keskin olacağını kontrol eder (varsayılan: 1.0). | FLOAT | Hayır | 0.0 - 1.0 |
-| `crop_to_fill` | Varsayılan olarak, çıktı en-boy oranı farklı olduğunda görüntüye letterbox uygulanır. Görüntüyü çıktı boyutlarını dolduracak şekilde kırpmak için etkinleştirin (varsayılan: False). | BOOLEAN | Hayır | - |
-| `output_width` | Sıfır değeri otomatik olarak hesaplanacağı anlamına gelir (genellikle özgün boyut veya belirtilmişse output_height olur) (varsayılan: 0). | INT | Hayır | 0 - 32000 |
-| `output_height` | Sıfır değeri, özgün yükseklik veya çıktı genişliğiyle aynı yükseklikte çıktı vermek anlamına gelir (varsayılan: 0). | INT | Hayır | 0 - 32000 |
-| `creativity` | İyileştirmenin genel yaratıcılık düzeyini kontrol eder (varsayılan: 3). | INT | Hayır | 1 - 9 |
-| `face_preservation` | Öznelerin yüz kimliğini korur (varsayılan: True). | BOOLEAN | Hayır | - |
-| `color_preservation` | Orijinal renkleri korur (varsayılan: True). | BOOLEAN | Hayır | - |
+| `görüntü` | İyileştirilecek girdi görüntüsü. Yalnızca bir görüntü desteklenir. | IMAGE | Evet | - |
+| `istem` | Yaratıcı büyütme yönlendirmesi için isteğe bağlı metin istemi (varsayılan: boş). | STRING | Hayır | - |
+| `konu_tespiti` | İyileştirmenin görüntünün hangi bölümüne odaklanacağını kontrol eder (varsayılan: "All"). | COMBO | Hayır | `"All"`<br>`"Foreground"`<br>`"Background"` |
+| `yüz_iyileştirme` | İşleme sırasında yüzleri (varsa) iyileştirir (varsayılan: True). | BOOLEAN | Hayır | - |
+| `yüz_iyileştirme_yaratıcılığı` | Yüz iyileştirme için yaratıcılık düzeyini ayarlar (varsayılan: 0.0). | FLOAT | Hayır | 0.0 - 1.0 |
+| `yüz_iyileştirme_gücü` | İyileştirilmiş yüzlerin arka plana göre ne kadar keskin olacağını kontrol eder (varsayılan: 1.0). | FLOAT | Hayır | 0.0 - 1.0 |
+| `doldurmak_için_kırp` | Varsayılan olarak, çıktı en-boy oranı farklı olduğunda görüntüye letterbox uygulanır. Görüntüyü çıktı boyutlarını dolduracak şekilde kırpmak için etkinleştirin (varsayılan: False). | BOOLEAN | Hayır | - |
+| `çıktı_genişliği` | Sıfır değeri otomatik olarak hesaplanacağı anlamına gelir (genellikle özgün boyut veya belirtilmişse output_height olur) (varsayılan: 0). | INT | Hayır | 0 - 32000 |
+| `çıktı_yüksekliği` | Sıfır değeri, özgün yükseklik veya çıktı genişliğiyle aynı yükseklikte çıktı vermek anlamına gelir (varsayılan: 0). | INT | Hayır | 0 - 32000 |
+| `yaratıcılık` | İyileştirmenin genel yaratıcılık düzeyini kontrol eder (varsayılan: 3). | INT | Hayır | 1 - 9 |
+| `yüz_koruma` | Öznelerin yüz kimliğini korur (varsayılan: True). | BOOLEAN | Hayır | - |
+| `renk_koruma` | Orijinal renkleri korur (varsayılan: True). | BOOLEAN | Hayır | - |
 
 **Not:** Bu düğüm yalnızca tek bir girdi görüntüsünü işleyebilir. Birden çok görüntüden oluşan bir toplu iş sağlamak hataya neden olur.
 

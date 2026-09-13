@@ -6,11 +6,11 @@ HyperTile aplica una técnica de teselado al mecanismo de atención dentro de lo
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de difusión al que se le aplicará la optimización HyperTile | MODEL | Sí | - |
-| `tile_size` | El tamaño de mosaico objetivo para el procesamiento (predeterminado: 256). Internamente, el valor se limita a un mínimo de 32 y luego se divide por 8 para obtener el tamaño de mosaico efectivo. | INT | Sí | 1 - 2048 |
-| `swap_size` | Controla cómo se reorganizan los mosaicos durante el procesamiento para mejorar la eficiencia. Los valores más grandes permiten una mayor variación en los tamaños de los mosaicos (predeterminado: 2) | INT | Sí | 1 - 128 |
-| `max_depth` | El nivel de profundidad máximo (escala de resolución) para aplicar el teselado. Un valor de 0 aplica el teselado solo en la resolución más alta (predeterminado: 0) | INT | Sí | 0 - 10 |
-| `scale_depth` | Cuando está habilitado, el tamaño del mosaico se escala proporcionalmente en niveles de profundidad mayores. Esto puede ayudar a mantener la calidad en resoluciones más bajas (predeterminado: False) | BOOLEAN | Sí | True / False |
+| `modelo` | El modelo de difusión al que se le aplicará la optimización HyperTile | MODEL | Sí | - |
+| `tamaño_de_mosaico` | El tamaño de mosaico objetivo para el procesamiento (predeterminado: 256). Internamente, el valor se limita a un mínimo de 32 y luego se divide por 8 para obtener el tamaño de mosaico efectivo. | INT | Sí | 1 - 2048 |
+| `tamaño_de_intercambio` | Controla cómo se reorganizan los mosaicos durante el procesamiento para mejorar la eficiencia. Los valores más grandes permiten una mayor variación en los tamaños de los mosaicos (predeterminado: 2) | INT | Sí | 1 - 128 |
+| `profundidad_máxima` | El nivel de profundidad máximo (escala de resolución) para aplicar el teselado. Un valor de 0 aplica el teselado solo en la resolución más alta (predeterminado: 0) | INT | Sí | 0 - 10 |
+| `escala_de_profundidad` | Cuando está habilitado, el tamaño del mosaico se escala proporcionalmente en niveles de profundidad mayores. Esto puede ayudar a mantener la calidad en resoluciones más bajas (predeterminado: False) | BOOLEAN | Sí | True / False |
 
 Nota: `tile_size`, `swap_size`, `max_depth` y `scale_depth` están marcados como entradas avanzadas, por lo que solo se muestran cuando las opciones avanzadas están habilitadas en la interfaz.
 

@@ -7,8 +7,8 @@ Ce nœud déduit le champ de vision et la distance focale à partir des paramèt
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
 | `moge_geometry` | L'objet de géométrie MoGe. Il doit contenir une matrice intrinsèque et au moins une des données `image`, `points` ou `depth`, qui est utilisée pour lire la hauteur en pixels pour la conversion de la distance focale. | MOGE_GEOMETRY | Oui | — |
-| `axis` | L'axe selon lequel le FOV est calculé : "vertical" (fov_y), "horizontal" (fov_x) ou "diagonal" (par défaut : "vertical"). | COMBO | Oui | "vertical"<br>"horizontal"<br>"diagonal" |
-| `unit` | Unité de sortie pour le FOV (par défaut : "degrees"). | COMBO | Oui | "degrees"<br>"radians" |
+| `axe` | L'axe selon lequel le FOV est calculé : "vertical" (fov_y), "horizontal" (fov_x) ou "diagonal" (par défaut : "vertical"). | COMBO | Oui | "vertical"<br>"horizontal"<br>"diagonal" |
+| `unité` | Unité de sortie pour le FOV (par défaut : "degrees"). | COMBO | Oui | "degrees"<br>"radians" |
 
 Remarque : Le nœud lève une erreur si `moge_geometry` ne contient aucun paramètre intrinsèque (la géométrie panorama n'en contient aucun) ou s'il ne contient ni `image`, ni `points`, ni `depth`.
 

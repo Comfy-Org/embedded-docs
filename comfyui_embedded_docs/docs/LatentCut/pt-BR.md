@@ -6,10 +6,10 @@ O nó LatentCut extrai uma seção específica de amostras latentes ao longo de 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `samples` | As amostras latentes de entrada das quais extrair | LATENT | Sim | - |
-| `dim` | A dimensão ao longo da qual recortar as amostras latentes. "x" recorta ao longo do último eixo (normalmente largura), "y" ao longo do penúltimo eixo (normalmente altura) e "t" ao longo do antepenúltimo eixo (normalmente quadros em latentes de vídeo) | COMBO | Sim | "x"<br>"y"<br>"t" |
-| `index` | A posição inicial para o corte (padrão: 0). Valores positivos contam a partir do início; valores negativos contam a partir do fim. O nó limita o índice para permanecer dentro do intervalo válido das amostras latentes | INT | Sim | -16384 a 16384 |
-| `amount` | O número de elementos a extrair ao longo da dimensão especificada (padrão: 1). Deve ser pelo menos 1. O nó reduz automaticamente esse valor se ele exceder os dados disponíveis após a posição inicial | INT | Sim | 1 a 16384 |
+| `amostras` | As amostras latentes de entrada das quais extrair | LATENT | Sim | - |
+| `dimensão` | A dimensão ao longo da qual recortar as amostras latentes. "x" recorta ao longo do último eixo (normalmente largura), "y" ao longo do penúltimo eixo (normalmente altura) e "t" ao longo do antepenúltimo eixo (normalmente quadros em latentes de vídeo) | COMBO | Sim | "x"<br>"y"<br>"t" |
+| `índice` | A posição inicial para o corte (padrão: 0). Valores positivos contam a partir do início; valores negativos contam a partir do fim. O nó limita o índice para permanecer dentro do intervalo válido das amostras latentes | INT | Sim | -16384 a 16384 |
+| `quantidade` | O número de elementos a extrair ao longo da dimensão especificada (padrão: 1). Deve ser pelo menos 1. O nó reduz automaticamente esse valor se ele exceder os dados disponíveis após a posição inicial | INT | Sim | 1 a 16384 |
 
 Nota: Os valores de `index` e `amount` são ajustados para se adequar ao tamanho real do latente ao longo da dimensão selecionada. Se `index` for maior que o tamanho da dimensão, ele é limitado à última posição válida. Se `index` for negativo, ele é limitado ao tamanho da dimensão em termos absolutos, e `amount` é limitado para não ultrapassar o fim dos dados.
 

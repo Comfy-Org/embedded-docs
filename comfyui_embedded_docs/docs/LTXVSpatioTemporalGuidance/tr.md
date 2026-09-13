@@ -7,10 +7,10 @@ Bu düğüm, her örnekleme adımında fazladan bir geçiş çalıştırarak LTX
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Uzamsal-zamansal yönlendirmenin uygulanacağı temel model. Model klonlanır ve klona bir CFG sonrası yönlendirme işlevi eklenir. | MODEL | Evet | — |
-| `scale` | Gürültüsü giderilmiş sonuca uygulanan yönlendirmenin gücü. 0 olarak ayarlandığında yönlendirmenin etkisi olmaz. (varsayılan: 1.0) | FLOAT | Evet | 0.0 ile 100.0 (adım: 0.01) |
-| `blocks` | Bozulacak virgülle ayrılmış transformer blok indeksleri. Yalnızca sayısal değerler kullanılır; diğer tüm karakterler yok sayılır. (varsayılan: "29") | STRING | Evet | — |
-| `start_percent` | Yönlendirmenin başladığı örnekleme süreci oranı. Bu gelişmiş bir parametredir. (varsayılan: 0.0) | FLOAT | Evet | 0.0 ile 1.0 (adım: 0.001) |
-| `end_percent` | Yönlendirmenin bittiği örnekleme süreci oranı. Bu gelişmiş bir parametredir. (varsayılan: 1.0) | FLOAT | Evet | 0.0 ile 1.0 (adım: 0.001) |
+| `ölçek` | Gürültüsü giderilmiş sonuca uygulanan yönlendirmenin gücü. 0 olarak ayarlandığında yönlendirmenin etkisi olmaz. (varsayılan: 1.0) | FLOAT | Evet | 0.0 ile 100.0 (adım: 0.01) |
+| `bloklar` | Bozulacak virgülle ayrılmış transformer blok indeksleri. Yalnızca sayısal değerler kullanılır; diğer tüm karakterler yok sayılır. (varsayılan: "29") | STRING | Evet | — |
+| `başlangıç_yüzdesi` | Yönlendirmenin başladığı örnekleme süreci oranı. Bu gelişmiş bir parametredir. (varsayılan: 0.0) | FLOAT | Evet | 0.0 ile 1.0 (adım: 0.001) |
+| `bitiş_yüzdesi` | Yönlendirmenin bittiği örnekleme süreci oranı. Bu gelişmiş bir parametredir. (varsayılan: 1.0) | FLOAT | Evet | 0.0 ile 1.0 (adım: 0.001) |
 
 Not: Yönlendirme yalnızca `start_percent` ile `end_percent` arasındaki örnekleme aralığında uygulanır. Bu aralığın dışında, özgün gürültüsü giderilmiş sonuç değiştirilmeden döndürülür. `scale` 0 ise veya `blocks` herhangi bir sayısal değer içermiyorsa, yönlendirilmiş geçişin örnekleme süreci üzerinde etkisi olmaz.
 

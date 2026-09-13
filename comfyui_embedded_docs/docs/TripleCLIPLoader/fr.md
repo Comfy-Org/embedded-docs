@@ -8,9 +8,9 @@ Une recette courante pour SD3 est : clip-l, clip-g, t5.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `clip_name1` | Le premier modèle d’encodeur de texte à charger parmi les encodeurs de texte disponibles | COMBO | Oui | Plusieurs options disponibles (tous les fichiers du dossier text_encoders) |
-| `clip_name2` | Le deuxième modèle d’encodeur de texte à charger parmi les encodeurs de texte disponibles | COMBO | Oui | Plusieurs options disponibles (tous les fichiers du dossier text_encoders) |
-| `clip_name3` | Le troisième modèle d’encodeur de texte à charger parmi les encodeurs de texte disponibles | COMBO | Oui | Plusieurs options disponibles (tous les fichiers du dossier text_encoders) |
+| `nom_clip1` | Le premier modèle d’encodeur de texte à charger parmi les encodeurs de texte disponibles | COMBO | Oui | Plusieurs options disponibles (tous les fichiers du dossier text_encoders) |
+| `nom_clip2` | Le deuxième modèle d’encodeur de texte à charger parmi les encodeurs de texte disponibles | COMBO | Oui | Plusieurs options disponibles (tous les fichiers du dossier text_encoders) |
+| `nom_clip3` | Le troisième modèle d’encodeur de texte à charger parmi les encodeurs de texte disponibles | COMBO | Oui | Plusieurs options disponibles (tous les fichiers du dossier text_encoders) |
 
 **Remarque :** Les trois paramètres sont requis. Les options disponibles sont les fichiers d’encodeur de texte dans votre dossier text_encoders. Si un fichier sélectionné est introuvable, le nœud déclenche une erreur. Le nœud charge les trois modèles sélectionnés et les combine en un seul modèle CLIP.
 

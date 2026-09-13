@@ -8,13 +8,13 @@ O nó ElevenLabs Text to Dialogue gera um diálogo de áudio com vários falante
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `stability` | Estabilidade da voz. Valores mais baixos proporcionam uma amplitude emocional mais ampla; valores mais altos produzem fala mais consistente, mas potencialmente monótona. (padrão: 0.5) | FLOAT | Sim | 0.0 - 1.0 |
-| `apply_text_normalization` | Modo de normalização de texto. 'auto' deixa o sistema decidir, 'on' sempre aplica a normalização, 'off' ignora essa etapa. | COMBO | Sim | `"auto"`<br>`"on"`<br>`"off"` |
-| `model` | Modelo a ser usado para a geração de diálogo. | COMBO | Sim | `"eleven_v3"` |
-| `inputs` | Número de itens de diálogo. Selecionar um número cria essa quantidade de pares de entrada de texto e voz. | DYNAMIC_COMBO | Sim | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
-| `language_code` | Código de idioma ISO-639-1 ou ISO-639-3 (ex.: 'en', 'es', 'fra'). Deixe vazio para detecção automática. (padrão: vazio) | STRING | Sim | - |
-| `seed` | Semente para reprodutibilidade. (padrão: 1) | INT | Sim | 0 - 4294967295 |
-| `output_format` | Formato de saída de áudio. | COMBO | Sim | `"mp3_44100_192"`<br>`"opus_48000_192"` |
+| `estabilidade` | Estabilidade da voz. Valores mais baixos proporcionam uma amplitude emocional mais ampla; valores mais altos produzem fala mais consistente, mas potencialmente monótona. (padrão: 0.5) | FLOAT | Sim | 0.0 - 1.0 |
+| `aplicar_normalização_texto` | Modo de normalização de texto. 'auto' deixa o sistema decidir, 'on' sempre aplica a normalização, 'off' ignora essa etapa. | COMBO | Sim | `"auto"`<br>`"on"`<br>`"off"` |
+| `modelo` | Modelo a ser usado para a geração de diálogo. | COMBO | Sim | `"eleven_v3"` |
+| `entradas` | Número de itens de diálogo. Selecionar um número cria essa quantidade de pares de entrada de texto e voz. | DYNAMIC_COMBO | Sim | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
+| `código_idioma` | Código de idioma ISO-639-1 ou ISO-639-3 (ex.: 'en', 'es', 'fra'). Deixe vazio para detecção automática. (padrão: vazio) | STRING | Sim | - |
+| `semente` | Semente para reprodutibilidade. (padrão: 1) | INT | Sim | 0 - 4294967295 |
+| `formato_saida` | Formato de saída de áudio. | COMBO | Sim | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
 ### Entradas de Itens de Diálogo
 

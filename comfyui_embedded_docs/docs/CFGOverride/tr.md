@@ -8,8 +8,8 @@ CFG Override düğümü, örnekleme sürecinin bir yüzde (sigma) aralığı boy
 |-----------|-------------|-----------|----------|-------|
 | `model` | CFG geçersiz kılma işleminin uygulanacağı model. | MODEL | Evet | |
 | `cfg` | Geçersiz kılma aralığı boyunca kullanılacak sabit CFG ölçeği değeri. Varsayılan: 1.0. | FLOAT | Evet | 0.0 ile 100.0 (step: 0.1) |
-| `start_percent` | Geçersiz kılma aralığının, örnekleme sürecinin yüzdesi olarak başlangıç noktası. Varsayılan: 0.0. | FLOAT | Evet | 0.0 ile 1.0 (step: 0.001) |
-| `end_percent` | Geçersiz kılma aralığının, örnekleme sürecinin yüzdesi olarak bitiş noktası. Varsayılan: 1.0. | FLOAT | Evet | 0.0 ile 1.0 (step: 0.001) |
+| `başlangıç_yüzdesi` | Geçersiz kılma aralığının, örnekleme sürecinin yüzdesi olarak başlangıç noktası. Varsayılan: 0.0. | FLOAT | Evet | 0.0 ile 1.0 (step: 0.001) |
+| `bitiş_yüzdesi` | Geçersiz kılma aralığının, örnekleme sürecinin yüzdesi olarak bitiş noktası. Varsayılan: 1.0. | FLOAT | Evet | 0.0 ile 1.0 (step: 0.001) |
 
 ## Çıktılar
 

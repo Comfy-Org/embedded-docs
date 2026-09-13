@@ -8,10 +8,10 @@
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 要改變光線的影像。上傳影像前會先移除任何 alpha 通道。 | IMAGE | 是 | - |
-| `light_type` | 要套用的光線氛圍。 | COMBO | 是 | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
-| `light_direction` | 光線來源的方向。硬光氛圍（例如 midday、spotlight on subject 與 harsh studio lighting）對其反應最為明顯。 | COMBO | 是 | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
-| `moderation` | 審核設定。選擇 `"true"` 會顯示審核選項，選擇 `"false"` 則不啟用這些選項。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
+| `影像` | 要改變光線的影像。上傳影像前會先移除任何 alpha 通道。 | IMAGE | 是 | - |
+| `光線類型` | 要套用的光線氛圍。 | COMBO | 是 | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
+| `光線方向` | 光線來源的方向。硬光氛圍（例如 midday、spotlight on subject 與 harsh studio lighting）對其反應最為明顯。 | COMBO | 是 | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
+| `內容審核` | 審核設定。選擇 `"true"` 會顯示審核選項，選擇 `"false"` 則不啟用這些選項。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
 
 ### 審核輸入
 

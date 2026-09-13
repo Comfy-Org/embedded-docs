@@ -7,13 +7,13 @@ LTXV Reference Audio, bir referans ses klibindeki konuşmacının ses kimliğini
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Kimlik rehberliğiyle yamalanacak model. | MODEL | Evet | - |
-| `positive` | Pozitif koşullandırma girdisi. | CONDITIONING | Evet | - |
-| `negative` | Negatif koşullandırma girdisi. | CONDITIONING | Evet | - |
-| `reference_audio` | Konuşmacı kimliği aktarılacak referans ses klibi. ~5 saniye önerilir (eğitim süresi). Daha kısa veya daha uzun klipler ses kimliği aktarımını bozabilir. | AUDIO | Evet | - |
+| `pozitif` | Pozitif koşullandırma girdisi. | CONDITIONING | Evet | - |
+| `negatif` | Negatif koşullandırma girdisi. | CONDITIONING | Evet | - |
+| `referans_ses` | Konuşmacı kimliği aktarılacak referans ses klibi. ~5 saniye önerilir (eğitim süresi). Daha kısa veya daha uzun klipler ses kimliği aktarımını bozabilir. | AUDIO | Evet | - |
 | `audio_vae` | Kodlama için LTXV Audio VAE. | VAE | Evet | - |
-| `identity_guidance_scale` | Kimlik rehberliğinin gücü. Konuşmacı kimliğini güçlendirmek için her adımda referans olmadan ekstra bir ileri geçiş çalıştırır. Devre dışı bırakmak için 0 yapın (ekstra geçiş yok). (varsayılan: 3.0) | FLOAT | Evet | 0.0 - 100.0 |
-| `start_percent` | Kimlik rehberliğinin etkin olduğu sigma aralığının başlangıcı. (varsayılan: 0.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `end_percent` | Kimlik rehberliğinin etkin olduğu sigma aralığının sonu. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `kimlik_rehberliği_ölçeği` | Kimlik rehberliğinin gücü. Konuşmacı kimliğini güçlendirmek için her adımda referans olmadan ekstra bir ileri geçiş çalıştırır. Devre dışı bırakmak için 0 yapın (ekstra geçiş yok). (varsayılan: 3.0) | FLOAT | Evet | 0.0 - 100.0 |
+| `başlangıç_yüzdesi` | Kimlik rehberliğinin etkin olduğu sigma aralığının başlangıcı. (varsayılan: 0.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bitiş_yüzdesi` | Kimlik rehberliğinin etkin olduğu sigma aralığının sonu. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 
 Not: Kimlik rehberliği yalnızca `identity_guidance_scale` 0'dan büyük olduğunda ve geçerli örnekleme adımı `start_percent` ile `end_percent` tarafından tanımlanan aralıkta olduğunda uygulanır. İkisi farklıysa referans ses, ses VAE'sinin örnekleme hızına yeniden örneklenir.
 

@@ -6,7 +6,7 @@ Le nœud Custom Combo vous permet de définir votre propre liste d'options textu
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `choice` | L'option textuelle sélectionnée dans le menu déroulant personnalisé. La liste des options disponibles est définie par l'utilisateur dans l'interface frontend du nœud. | COMBO | Oui | Défini par l'utilisateur |
+| `choix` | L'option textuelle sélectionnée dans le menu déroulant personnalisé. La liste des options disponibles est définie par l'utilisateur dans l'interface frontend du nœud. | COMBO | Oui | Défini par l'utilisateur |
 | `index` | Une valeur entière pouvant servir à spécifier un index. Valeur par défaut : 0. | INT | Non | Tout entier (défaut : 0) |
 
 **Remarque :** La validation des entrées de ce nœud est intentionnellement désactivée. Cela vous permet de saisir n'importe quelles options textuelles personnalisées dans le frontend, sans que le backend ne vérifie si votre sélection correspond à une liste prédéfinie. Les widgets autres que le menu déroulant combo sont entièrement définis dans le frontend. Ce nœud est marqué comme expérimental.

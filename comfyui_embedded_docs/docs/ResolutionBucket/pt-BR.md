@@ -6,8 +6,8 @@ Este nó organiza uma lista de imagens latentes e seus dados de condicionamento 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `latents` | Lista de dicionários latentes a serem agrupados por resolução. | LATENT | Sim | N/A |
-| `conditioning` | Lista de listas de condicionamento (deve corresponder ao comprimento de `latents`). | CONDITIONING | Sim | N/A |
+| `latentes` | Lista de dicionários latentes a serem agrupados por resolução. | LATENT | Sim | N/A |
+| `condicionamento` | Lista de listas de condicionamento (deve corresponder ao comprimento de `latents`). | CONDITIONING | Sim | N/A |
 
 **Nota:** Ambas as entradas são do tipo lista, o que significa que o nó recebe uma lista de itens para cada uma. O número de itens na lista `latents` deve corresponder exatamente ao número de itens na lista `conditioning`; se as contagens não corresponderem, o nó gera um erro. Cada dicionário latente pode conter um lote de amostras, e a lista de condicionamento correspondente deve conter um número correspondente de itens de condicionamento para esse lote, pois cada amostra no lote é pareada com sua própria entrada de condicionamento. Amostras latentes podem ter um formato de (B, C, H, W) para imagens ou (B, T, C, H, W) para vídeos; o nó as agrupa apenas por altura e largura.
 

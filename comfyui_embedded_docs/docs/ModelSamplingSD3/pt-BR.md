@@ -6,8 +6,8 @@ Este nó aplica configurações de amostragem no estilo Stable Diffusion 3 a um 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo de entrada ao qual aplicar os parâmetros de amostragem do SD3 | MODEL | Sim | - |
-| `shift` | Controla o parâmetro de deslocamento de amostragem (padrão: 3.0) | FLOAT | Sim | 0.0 - 100.0 (passo: 0.01) |
+| `modelo` | O modelo de entrada ao qual aplicar os parâmetros de amostragem do SD3 | MODEL | Sim | - |
+| `deslocamento` | Controla o parâmetro de deslocamento de amostragem (padrão: 3.0) | FLOAT | Sim | 0.0 - 100.0 (passo: 0.01) |
 
 Observação: O valor `shift` é aplicado junto com um multiplicador interno fixo de 1000. Se o modelo original tiver uma configuração de escala de ruído, esse valor será transferido para o modelo modificado. O modelo original não é alterado; uma cópia clonada e com patch é retornada.
 

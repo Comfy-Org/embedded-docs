@@ -6,9 +6,9 @@ Attache un latent et une valeur degrade_sigma à un CONDITIONING afin qu'il puis
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `positive` | Les données de conditionnement auxquelles attacher le latent et le sigma de dégradation. | CONDITIONING | Oui | - |
+| `positif` | Les données de conditionnement auxquelles attacher le latent et le sigma de dégradation. | CONDITIONING | Oui | - |
 | `latent` | Le latent (issu de VAEEncode ou d'un KSampler) à attacher au conditionnement. | LATENT | Oui | - |
-| `latent_format` | Format du latent. Les latents Flux1 (16 canaux) et Flux2 (128 canaux) sont détectés automatiquement à partir de la dimension des canaux lorsque `"flux"` est sélectionné. Pour SD3 (16 canaux), SDXL (4 canaux) ou QwenImage (16 canaux), sélectionnez manuellement (par défaut : `"flux"`). | COMBO | Oui | `"flux"`<br>`"sd3"`<br>`"sdxl"`<br>`"qwenimage"` |
+| `format latent` | Format du latent. Les latents Flux1 (16 canaux) et Flux2 (128 canaux) sont détectés automatiquement à partir de la dimension des canaux lorsque `"flux"` est sélectionné. Pour SD3 (16 canaux), SDXL (4 canaux) ou QwenImage (16 canaux), sélectionnez manuellement (par défaut : `"flux"`). | COMBO | Oui | `"flux"`<br>`"sd3"`<br>`"sdxl"`<br>`"qwenimage"` |
 | `degrade_sigma` | Quantité de dégradation à appliquer. 0 signifie un latent propre. Augmentez cette valeur pour débruiter des sorties latentes corrompues (par défaut : 0.0). | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
 
 Remarque : Lorsque `latent_format` est défini sur `"flux"`, le nœud détecte automatiquement le type de latent à partir de la dimension des canaux : les 128 canaux sont traités comme des latents Flux2, tandis que les 16 canaux sont traités comme des latents Flux1.

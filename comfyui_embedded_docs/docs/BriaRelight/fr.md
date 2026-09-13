@@ -11,7 +11,7 @@ Ce nœud modifie l’ambiance et la direction de l’éclairage d’une image à
 | `image` | L’image dont l’éclairage est modifié. Tout canal alpha est supprimé avant le téléversement de l’image. | IMAGE | Oui | - |
 | `light_type` | Ambiance d’éclairage à appliquer. | COMBO | Oui | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
 | `light_direction` | Provenance de la lumière. Les ambiances à lumière dure telles que midday, spotlight on subject et harsh studio lighting y réagissent le plus. | COMBO | Oui | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
-| `moderation` | Paramètres de modération. Sélectionnez `"true"` pour afficher les options de modération, ou `"false"` pour exécuter sans celles-ci. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
+| `modération` | Paramètres de modération. Sélectionnez `"true"` pour afficher les options de modération, ou `"false"` pour exécuter sans celles-ci. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
 
 ### Entrées de modération
 

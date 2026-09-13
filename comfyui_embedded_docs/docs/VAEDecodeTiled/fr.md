@@ -6,12 +6,12 @@ Le nœud VAEDecodeTiled décode les représentations latentes en images à l'aid
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `samples` | La représentation latente à décoder en images | LATENT | Oui | - |
+| `échantillons` | La représentation latente à décoder en images | LATENT | Oui | - |
 | `vae` | Le modèle VAE utilisé pour décoder les échantillons latents | VAE | Oui | - |
-| `tile_size` | La taille de chaque tuile pour le traitement (par défaut : 512) | INT | Oui | 64-4096 (pas : 32) |
-| `overlap` | La quantité de chevauchement entre les tuiles adjacentes (par défaut : 64) | INT | Oui | 0-4096 (pas : 32) |
-| `temporal_size` | Utilisé uniquement pour les VAE vidéo : nombre d'images à décoder à la fois (par défaut : 64) | INT | Oui | 8-4096 (pas : 4) |
-| `temporal_overlap` | Utilisé uniquement pour les VAE vidéo : nombre d'images à faire se chevaucher (par défaut : 8) | INT | Oui | 4-4096 (pas : 4) |
+| `taille_de_tuile` | La taille de chaque tuile pour le traitement (par défaut : 512) | INT | Oui | 64-4096 (pas : 32) |
+| `chevauchement` | La quantité de chevauchement entre les tuiles adjacentes (par défaut : 64) | INT | Oui | 0-4096 (pas : 32) |
+| `taille_temporelle` | Utilisé uniquement pour les VAE vidéo : nombre d'images à décoder à la fois (par défaut : 64) | INT | Oui | 8-4096 (pas : 4) |
+| `chevauchement_temporel` | Utilisé uniquement pour les VAE vidéo : nombre d'images à faire se chevaucher (par défaut : 8) | INT | Oui | 4-4096 (pas : 4) |
 
 **Remarque :** Les entrées `tile_size`, `overlap`, `temporal_size` et `temporal_overlap` sont marquées comme paramètres avancés.
 

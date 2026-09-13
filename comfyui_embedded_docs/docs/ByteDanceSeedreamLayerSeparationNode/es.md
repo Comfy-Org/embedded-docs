@@ -6,13 +6,13 @@ ByteDance Seedream 5.0 Pro Layer Separation descompone una imagen en una placa d
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `image` | La imagen a separar. Exactamente una imagen, de al menos 512x512 píxeles, con relación de aspecto entre 1:16 y 16:1. Las entradas mayores de aproximadamente 4 MP se reducen antes de la carga. | IMAGE | Sí | Imagen única |
+| `imagen` | La imagen a separar. Exactamente una imagen, de al menos 512x512 píxeles, con relación de aspecto entre 1:16 y 16:1. Las entradas mayores de aproximadamente 4 MP se reducen antes de la carga. | IMAGE | Sí | Imagen única |
 | `prompt` | Cómo separar la imagen. Déjelo vacío para detectar y separar automáticamente todos los elementos principales. Describa los elementos en lenguaje natural para controlar la separación, o apunte a regiones exactas con etiquetas `<bbox>left top right bottom</bbox>` (coordenadas de 0-1000 por mil). Predeterminado: cadena vacía. | STRING | Sí | Texto multilínea |
-| `size` | Nivel de resolución de salida. "auto" sigue el tamaño de la imagen de entrada (limitado al rango 1K-2K). Predeterminado: "auto". | COMBO | Sí | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
-| `seed` | Semilla que se usará para la generación. Predeterminado: 0. | INT | Sí | 0 a 2147483647 |
-| `prompt_optimization` | Modo de optimización de prompt: "standard" ofrece mayor calidad, "fast" menor tiempo de generación. Predeterminado: "standard". | COMBO | No | "standard"<br>"fast" |
-| `watermark` | Si se debe añadir una marca de agua "AI generated" a las imágenes. Predeterminado: false. | BOOLEAN | No | false<br>true |
-| `crop_layers` | Geometría de las salidas por lotes de capas/máscaras (`layer_stack` no se ve afectada y siempre está ajustada). Lienzo completo: cada capa sobre un lienzo del tamaño de la base en la posición de su cuadro delimitador; recomponga directamente con ImageCompositeMasked. Tamaño mínimo: cada capa recortada a su cuadro delimitador (rellenada hasta la capa más grande para el procesamiento por lotes); tensores mucho más pequeños; reconstruya la colocación con Layers From Bounding Boxes usando la salida `bboxes`. Predeterminado: false (lienzo completo). | BOOLEAN | No | false (lienzo completo)<br>true (tamaño mínimo) |
+| `tamaño` | Nivel de resolución de salida. "auto" sigue el tamaño de la imagen de entrada (limitado al rango 1K-2K). Predeterminado: "auto". | COMBO | Sí | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
+| `semilla` | Semilla que se usará para la generación. Predeterminado: 0. | INT | Sí | 0 a 2147483647 |
+| `optimización_prompt` | Modo de optimización de prompt: "standard" ofrece mayor calidad, "fast" menor tiempo de generación. Predeterminado: "standard". | COMBO | No | "standard"<br>"fast" |
+| `marca_de_agua` | Si se debe añadir una marca de agua "AI generated" a las imágenes. Predeterminado: false. | BOOLEAN | No | false<br>true |
+| `recortar_capas` | Geometría de las salidas por lotes de capas/máscaras (`layer_stack` no se ve afectada y siempre está ajustada). Lienzo completo: cada capa sobre un lienzo del tamaño de la base en la posición de su cuadro delimitador; recomponga directamente con ImageCompositeMasked. Tamaño mínimo: cada capa recortada a su cuadro delimitador (rellenada hasta la capa más grande para el procesamiento por lotes); tensores mucho más pequeños; reconstruya la colocación con Layers From Bounding Boxes usando la salida `bboxes`. Predeterminado: false (lienzo completo). | BOOLEAN | No | false (lienzo completo)<br>true (tamaño mínimo) |
 
 Nota: La entrada `image` debe ser una sola imagen; no se admiten lotes. La imagen debe tener al menos 512x512 píxeles con una relación de aspecto entre 1:16 y 16:1.
 

@@ -6,10 +6,10 @@ Le nœud `BasicScheduler` est conçu pour calculer une séquence de valeurs sigm
 
 | Paramètre | Description métaphorique | Type de données | Type d’entrée | Défaut | Plage | Objectif technique |
 | --- | --- | --- | --- | --- | --- | --- |
-| `model` | **Type de toile** : Différents matériaux de toile nécessitent différentes formules de peinture | MODEL | Entrée | - | - | Objet de modèle de diffusion, détermine la base de calcul des sigmas |
-| `scheduler` | **Technique de mélange** : Choisissez la manière dont la concentration de peinture évolue | COMBO[STRING] | Widget | - | 9 options | Algorithme de planification, contrôle le mode de décroissance du bruit |
-| `steps` | **Nombre de mélanges** : 20 mélanges vs 50 mélanges, différence de précision | INT | Widget | 20 | 1-10000 | Étapes d’échantillonnage, affecte la qualité et la vitesse de génération |
-| `denoise` | **Intensité de création** : Niveau de contrôle, du réglage fin à la repeinture complète | FLOAT | Widget | 1.0 | 0.0-1.0 | Force de débruitage, prend en charge les scénarios de repeinture partielle |
+| `modèle` | **Type de toile** : Différents matériaux de toile nécessitent différentes formules de peinture | MODEL | Entrée | - | - | Objet de modèle de diffusion, détermine la base de calcul des sigmas |
+| `planificateur` | **Technique de mélange** : Choisissez la manière dont la concentration de peinture évolue | COMBO[STRING] | Widget | - | 9 options | Algorithme de planification, contrôle le mode de décroissance du bruit |
+| `étapes` | **Nombre de mélanges** : 20 mélanges vs 50 mélanges, différence de précision | INT | Widget | 20 | 1-10000 | Étapes d’échantillonnage, affecte la qualité et la vitesse de génération |
+| `débruitage` | **Intensité de création** : Niveau de contrôle, du réglage fin à la repeinture complète | FLOAT | Widget | 1.0 | 0.0-1.0 | Force de débruitage, prend en charge les scénarios de repeinture partielle |
 
 ### Types de planificateurs
 

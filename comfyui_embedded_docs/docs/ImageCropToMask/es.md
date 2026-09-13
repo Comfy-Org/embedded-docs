@@ -6,13 +6,13 @@ Recorta una imagen al cuadro delimitador de su máscara, produciendo un sujeto c
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `images` | La imagen de entrada o lote de imágenes que se va a recortar. | IMAGE | Sí | — |
-| `masks` | La máscara o lote de máscaras que define el área del sujeto. Se aplica una sola máscara a todas las imágenes; de lo contrario, el tamaño del lote de máscaras debe coincidir con el tamaño del lote de imágenes. Si la resolución de la máscara difiere de la resolución de la imagen, la máscara se redimensiona automáticamente para coincidir. | MASK | Sí | — |
-| `width` | Ancho de salida en píxeles. (predeterminado: 1024) | INT | Sí | 64 a 4096 (paso 8) |
-| `height` | Alto de salida en píxeles. (predeterminado: 1024) | INT | Sí | 64 a 4096 (paso 8) |
+| `imágenes` | La imagen de entrada o lote de imágenes que se va a recortar. | IMAGE | Sí | — |
+| `máscaras` | La máscara o lote de máscaras que define el área del sujeto. Se aplica una sola máscara a todas las imágenes; de lo contrario, el tamaño del lote de máscaras debe coincidir con el tamaño del lote de imágenes. Si la resolución de la máscara difiere de la resolución de la imagen, la máscara se redimensiona automáticamente para coincidir. | MASK | Sí | — |
+| `ancho` | Ancho de salida en píxeles. (predeterminado: 1024) | INT | Sí | 64 a 4096 (paso 8) |
+| `alto` | Alto de salida en píxeles. (predeterminado: 1024) | INT | Sí | 64 a 4096 (paso 8) |
 | `pad_factor` | Margen adicional alrededor del cuadro delimitador de la máscara como multiplicador. (predeterminado: 1.0) | FLOAT | Sí | 1.0 a 2.0 (paso 0.01) |
 | `grow_mask` | Expande o contrae la máscara en esta cantidad de píxeles antes de recortar. Los valores positivos expanden la máscara; los valores negativos la contraen. (predeterminado: 0) | INT | Sí | -32 a 32 (paso 1) |
-| `background` | Color de fondo detrás del sujeto enmascarado. (predeterminado: #000000) | COLOR | Sí | — |
+| `fondo` | Color de fondo detrás del sujeto enmascarado. (predeterminado: #000000) | COLOR | Sí | — |
 
 Nota: La región de recorte se centra en el cuadro delimitador de la máscara y su relación de aspecto coincide con `width` / `height`. El nodo detecta y corrige automáticamente una máscara invertida (píxeles en primer plano a lo largo del borde, fondo en el centro). Si la máscara no contiene píxeles en primer plano, el nodo prueba con la máscara invertida; si esa también está vacía, registra una advertencia y recorta la imagen completa. Se genera un error cuando el tamaño del lote de máscaras no coincide con el tamaño del lote de imágenes y no es una sola máscara.
 

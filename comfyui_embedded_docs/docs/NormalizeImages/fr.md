@@ -7,8 +7,8 @@ Ce nœud normalise les couleurs d'une image d'entrée en ajustant ses valeurs de
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------|----------|-------|
 | `image` | Image d'entrée à normaliser. | IMAGE | Oui | - |
-| `mean` | Valeur moyenne pour la normalisation (par défaut : 0.5). | FLOAT | Non | 0.0 - 1.0 |
-| `std` | Écart-type pour la normalisation (par défaut : 0.5). | FLOAT | Non | 0.001 - 1.0 |
+| `moyenne` | Valeur moyenne pour la normalisation (par défaut : 0.5). | FLOAT | Non | 0.0 - 1.0 |
+| `écart_type` | Écart-type pour la normalisation (par défaut : 0.5). | FLOAT | Non | 0.001 - 1.0 |
 
 Les paramètres `mean` et `std` contrôlent la normalisation appliquée à l'image d'entrée. La valeur par défaut des deux paramètres est 0.5.
 

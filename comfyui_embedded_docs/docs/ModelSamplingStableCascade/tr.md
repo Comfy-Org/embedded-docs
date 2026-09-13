@@ -7,7 +7,7 @@ ModelSamplingStableCascade düğümü, örnekleme parametrelerine bir shift değ
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Stable Cascade örneklemesinin uygulanacağı girdi modeli | MODEL | Evet | - |
-| `shift` | Örnekleme parametrelerine uygulanan shift değeri (varsayılan: 2.0) | FLOAT | Evet | 0.0 - 100.0 (adım: 0.01) |
+| `kaydırma` | Örnekleme parametrelerine uygulanan shift değeri (varsayılan: 2.0) | FLOAT | Evet | 0.0 - 100.0 (adım: 0.01) |
 
 ## Çıktılar
 

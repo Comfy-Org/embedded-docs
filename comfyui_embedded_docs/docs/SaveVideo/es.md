@@ -9,9 +9,9 @@ El nodo Save Video guarda el video de entrada en tu directorio de salida de Comf
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `video` | El video a guardar. | VIDEO | Sí | - |
-| `filename_prefix` | El prefijo para el archivo a guardar. Puede incluir información de formato como `%date:yyyy-MM-dd%` o `%Empty Latent Image.width%` para incluir valores de los nodos (predeterminado: `video/ComfyUI`). | STRING | Sí | - |
-| `format` | El contenedor de salida. `auto` usa MP4 para `auto`/H.264 y WebM para AV1. MP4, MKV y WebM seleccionan un contenedor específico. Seleccionar un formato también determina qué opciones de códec están disponibles (predeterminado: `auto`). | DYNAMIC_COMBO | Sí | `"auto"`<br>`"mp4"`<br>`"mkv"`<br>`"webm"` |
-| `codec` | El códec de video de salida. `auto` conserva un flujo de origen compatible. La recodificación H.264 y AV1 admite SDR, HDR (HLG) y HDR PQ. Este selector está anidado bajo el formato elegido (predeterminado: `auto`). | DYNAMIC_COMBO | No | `"auto"`<br>`"h264"`<br>`"av1"` (no disponible con el formato `webm`) |
+| `prefijo_nombre_archivo` | El prefijo para el archivo a guardar. Puede incluir información de formato como `%date:yyyy-MM-dd%` o `%Empty Latent Image.width%` para incluir valores de los nodos (predeterminado: `video/ComfyUI`). | STRING | Sí | - |
+| `formato` | El contenedor de salida. `auto` usa MP4 para `auto`/H.264 y WebM para AV1. MP4, MKV y WebM seleccionan un contenedor específico. Seleccionar un formato también determina qué opciones de códec están disponibles (predeterminado: `auto`). | DYNAMIC_COMBO | Sí | `"auto"`<br>`"mp4"`<br>`"mkv"`<br>`"webm"` |
+| `códec` | El códec de video de salida. `auto` conserva un flujo de origen compatible. La recodificación H.264 y AV1 admite SDR, HDR (HLG) y HDR PQ. Este selector está anidado bajo el formato elegido (predeterminado: `auto`). | DYNAMIC_COMBO | No | `"auto"`<br>`"h264"`<br>`"av1"` (no disponible con el formato `webm`) |
 
 ### Entradas de H.264
 

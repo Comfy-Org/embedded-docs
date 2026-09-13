@@ -6,7 +6,7 @@ Este nodo crea una operación latente que aplica mapeo tonal Reinhard a vectores
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `multiplier` | Controla la intensidad del efecto de mapeo tonal (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 100.0 (paso 0.01) |
+| `multiplicador` | Controla la intensidad del efecto de mapeo tonal (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 100.0 (paso 0.01) |
 
 ## Salidas
 

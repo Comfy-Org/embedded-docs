@@ -7,7 +7,7 @@
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `clip` | Değiştirilecek CLIP modeli | CLIP | Evet | - |
-| `stop_at_clip_layer` | Hangi katmanda durulacağını belirtir. -1 değeri tüm katmanları kullanır, -24 ise yalnızca ilk katmanı kullanır (varsayılan: -1). Bu gelişmiş bir parametredir. | INT | Evet | -24 to -1 (step: 1) |
+| `clip_katmanında_dur` | Hangi katmanda durulacağını belirtir. -1 değeri tüm katmanları kullanır, -24 ise yalnızca ilk katmanı kullanır (varsayılan: -1). Bu gelişmiş bir parametredir. | INT | Evet | -24 to -1 (step: 1) |
 
 Değerler negatiftir ve modelin sonundan geriye doğru sayılır: -1 son (en derin) katmanı, -24 ise ilk (en sığ) katmanı belirtir; izin verilen aralığın yalnızca -24 ile -1 arasını kapsamasının nedeni budur.
 

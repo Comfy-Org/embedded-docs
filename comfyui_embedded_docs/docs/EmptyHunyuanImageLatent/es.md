@@ -6,9 +6,9 @@ El nodo EmptyHunyuanImageLatent crea un espacio latente en blanco, con todos los
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `width` | El ancho de la imagen latente generada en píxeles (predeterminado: 2048, paso: 32) | INT | Sí | 64 a MAX_RESOLUTION |
-| `height` | El alto de la imagen latente generada en píxeles (predeterminado: 2048, paso: 32) | INT | Sí | 64 a MAX_RESOLUTION |
-| `batch_size` | El número de muestras latentes que se generarán en un lote (predeterminado: 1) | INT | Sí | 1 a 4096 |
+| `ancho` | El ancho de la imagen latente generada en píxeles (predeterminado: 2048, paso: 32) | INT | Sí | 64 a MAX_RESOLUTION |
+| `alto` | El alto de la imagen latente generada en píxeles (predeterminado: 2048, paso: 32) | INT | Sí | 64 a MAX_RESOLUTION |
+| `tamaño_lote` | El número de muestras latentes que se generarán en un lote (predeterminado: 1) | INT | Sí | 1 a 4096 |
 
 ## Salidas
 

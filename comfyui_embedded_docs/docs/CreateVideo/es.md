@@ -6,7 +6,7 @@ El nodo Create Video combina una secuencia de imágenes en un video. Puedes esta
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|----------|-------|
-| `images` | Las imágenes a partir de las cuales crear un video. | IMAGE | Sí | - |
+| `imágenes` | Las imágenes a partir de las cuales crear un video. | IMAGE | Sí | - |
 | `fps` | Los fotogramas por segundo para la velocidad de reproducción del video (predeterminado: 30.0). | FLOAT | Sí | 1.0 - 120.0 |
 | `audio` | El audio que se agregará al video. | AUDIO | No | - |
 | `bit_depth` | La opción `"auto"` usa 8 bits para sRGB y 10 bits para HDR y HDR PQ. Las opciones explícitas de 8 bits y 10 bits son independientes del espacio de color. (predeterminado: "auto") | COMBO | No | `"auto"`<br>8<br>10 |

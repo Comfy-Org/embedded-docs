@@ -6,7 +6,7 @@ Le nœud ModelPatchLoader charge un fichier de patch de modèle depuis le dossie
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `name` | Le nom de fichier du patch de modèle à charger depuis le dossier `model_patches`. Sélectionnez l'un des fichiers de patch disponibles dans la liste. | COMBO | Oui | Liste générée dynamiquement de tous les fichiers de patch de modèle trouvés dans le dossier `model_patches` |
+| `nom` | Le nom de fichier du patch de modèle à charger depuis le dossier `model_patches`. Sélectionnez l'un des fichiers de patch disponibles dans la liste. | COMBO | Oui | Liste générée dynamiquement de tous les fichiers de patch de modèle trouvés dans le dossier `model_patches` |
 
 Remarque : Ce nœud est marqué comme expérimental. Le type de patch est détecté automatiquement à partir du contenu du fichier, aucune sélection manuelle du type n'est donc requise. Le nœud lit les métadonnées du checkpoint et inspecte les clés de poids pour déterminer l'architecture à construire (par exemple Qwen Image block-wise ControlNet, Z-Image ControlNet, Wan Uni3C ControlNet, MiniMax H3 Fun ControlNet, projection de caractéristiques SigLIP, tête de durée Lightricks, Anima LLLite, MultiTalk ou SUPIR). Les poids sont chargés avec le chargement sécurisé activé, et le modèle est placé sur le périphérique de déchargement à l'intérieur d'un `CoreModelPatcher`, afin de pouvoir être appliqué ultérieurement à un autre modèle.
 

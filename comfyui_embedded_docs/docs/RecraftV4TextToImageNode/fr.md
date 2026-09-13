@@ -8,11 +8,11 @@ Génère des images à partir de prompts textuels à l’aide des modèles Recra
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle à utiliser pour la génération. Les modèles recraftv4_styles sont conçus pour une génération cohérente en matière de style et nécessitent toujours un style_id ou style_references. | DYNAMIC_COMBO | Oui | "recraftv4_1"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `modèle` | Le modèle à utiliser pour la génération. Les modèles recraftv4_styles sont conçus pour une génération cohérente en matière de style et nécessitent toujours un style_id ou style_references. | DYNAMIC_COMBO | Oui | "recraftv4_1"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `prompt` | Prompt pour la génération d’images. Maximum 10 000 caractères. | STRING | Oui | 1 à 10000 caractères |
-| `negative_prompt` | Cette entrée est ignorée : le prompt négatif n’est pas pris en charge par les modèles Recraft V4 et V4.1. | STRING | Oui | N/A |
+| `prompt_négatif` | Cette entrée est ignorée : le prompt négatif n’est pas pris en charge par les modèles Recraft V4 et V4.1. | STRING | Oui | N/A |
 | `n` | Le nombre d’images à générer (par défaut : 1). | INT | Oui | 1 à 6 |
-| `seed` | Graine permettant de déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). | INT | Oui | 0 à 18446744073709551615 |
+| `graine` | Graine permettant de déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). | INT | Oui | 0 à 18446744073709551615 |
 | `recraft_controls` | Contrôles supplémentaires facultatifs sur la génération via le nœud Recraft Controls. | CUSTOM | Non | N/A |
 | `style_id` | UUID d’un style Recraft V4 à appliquer, par ex. depuis le nœud Recraft V4 Create Style ou la sortie style_id d’une exécution précédente. Ne peut pas être combiné avec style_references (par défaut : vide). | STRING | Non | Chaîne UUID valide |
 | `style_match` | Degré de fidélité au style : precise le reproduit en détail, flexible correspond à l’apparence générale. Utilisé uniquement lorsqu’un style est fourni (par défaut : "precise"). | COMBO | Non | "precise"<br>"flexible" |

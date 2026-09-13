@@ -14,7 +14,7 @@ LTXVImgToVideo convertit une image d'entrée en une représentation latente vid�
 | `height` | Hauteur de la vidéo de sortie en pixels (par défaut : 512, pas : 32) | INT | Oui | 64 à MAX_RESOLUTION |
 | `length` | Nombre d'images dans la vidéo générée (par défaut : 97, pas : 8) | INT | Oui | 9 à MAX_RESOLUTION |
 | `batch_size` | Nombre de vidéos à générer simultanément (par défaut : 1) | INT | Oui | 1 à 4096 |
-| `strength` | Contrôle la proportion du contenu de l'image d'origine préservée dans les premières images de la vidéo générée. Une valeur de 1.0 préserve complètement l'image d'origine, tandis qu'une valeur de 0.0 permet une modification maximale (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 |
+| `force` | Contrôle la proportion du contenu de l'image d'origine préservée dans les premières images de la vidéo générée. Une valeur de 1.0 préserve complètement l'image d'origine, tandis qu'une valeur de 0.0 permet une modification maximale (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 |
 
 Remarque : `width` et `height` changent par pas de 32 pixels, et `length` change par pas de 8 images, ce qui correspond à la compression latente vidéo (32x dans les dimensions spatiales et 8x dans la dimension temporelle). Le latent vidéo contient ((length - 1) // 8) + 1 images. L'image d'entrée est redimensionnée à `width` x `height` à l'aide d'une mise à l'échelle bilinéaire avec recadrage centré, et seuls les trois premiers canaux sont utilisés pour l'encodage.
 

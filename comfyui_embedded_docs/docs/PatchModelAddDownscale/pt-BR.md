@@ -6,14 +6,14 @@ PatchModelAddDownscale (Kohya Deep Shrink) aplica a técnica Kohya Deep Shrink a
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo ao qual aplicar o patch de redução | MODEL | Sim | - |
-| `block_number` | O número específico do bloco onde a redução será aplicada (padrão: 3) | INT | Sim | 1-32 |
-| `downscale_factor` | O fator pelo qual as features serão reduzidas (padrão: 2.0) | FLOAT | Sim | 0.1-9.0 |
-| `start_percent` | O ponto inicial do processo de denoising onde a redução começa (padrão: 0.0) | FLOAT | Sim | 0.0-1.0 |
-| `end_percent` | O ponto final do processo de denoising onde a redução para (padrão: 0.35) | FLOAT | Sim | 0.0-1.0 |
-| `downscale_after_skip` | Se a redução deve ser aplicada após as skip connections (padrão: True) | BOOLEAN | Sim | - |
-| `downscale_method` | O método de interpolação usado nas operações de redução (padrão: "bicubic") | COMBO | Sim | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
-| `upscale_method` | O método de interpolação usado nas operações de ampliação (padrão: "bicubic") | COMBO | Sim | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `modelo` | O modelo ao qual aplicar o patch de redução | MODEL | Sim | - |
+| `número_do_bloco` | O número específico do bloco onde a redução será aplicada (padrão: 3) | INT | Sim | 1-32 |
+| `fator_de_redução` | O fator pelo qual as features serão reduzidas (padrão: 2.0) | FLOAT | Sim | 0.1-9.0 |
+| `percentual_inicial` | O ponto inicial do processo de denoising onde a redução começa (padrão: 0.0) | FLOAT | Sim | 0.0-1.0 |
+| `percentual_final` | O ponto final do processo de denoising onde a redução para (padrão: 0.35) | FLOAT | Sim | 0.0-1.0 |
+| `reduzir_após_pular` | Se a redução deve ser aplicada após as skip connections (padrão: True) | BOOLEAN | Sim | - |
+| `método_de_redução` | O método de interpolação usado nas operações de redução (padrão: "bicubic") | COMBO | Sim | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `método_de_ampliação` | O método de interpolação usado nas operações de ampliação (padrão: "bicubic") | COMBO | Sim | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 
 O patch de redução é aplicado somente quando o passo atual de denoising está dentro do intervalo definido por `start_percent` e `end_percent`, e apenas no bloco selecionado por `block_number`. Quando `downscale_after_skip` está habilitado, o patch é aplicado após a skip connection; quando desabilitado, é aplicado antes da skip connection. As features são redimensionadas de volta ao tamanho original em seguida, mas apenas quando o tamanho atual das features não corresponde mais ao tamanho registrado antes da redução.
 

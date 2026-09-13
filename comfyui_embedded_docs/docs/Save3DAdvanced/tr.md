@@ -6,13 +6,13 @@ Bir 3D modeli ComfyUI çıktı dizinindeki bir dosyaya kaydeder ve kaydedilen sa
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|---------|--------|
-| `model_3d` | Yukarı akış 3D düğümünden gelen 3D model dosyası. | FILE3D | Evet | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ<br>Any |
-| `filename_prefix` | Kaydedilen dosya adı için kullanılan ön ek (varsayılan: "3d/ComfyUI"). | STRING | Evet | Serbest metin |
-| `viewport_state` | Kamera ve model yerleşim bilgilerini içeren görüntü alanı durumu; genellikle bir Load 3D düğümünden gelir. | LOAD3D | Evet | - |
-| `model_3d_info` | Sahnede her modelin yerleşimi: konum, dönüş ve ölçek (Y-up dünya uzayı). Bağlandığında `viewport_state` içinde saklanan model yerleşiminin yerine geçer. | LOAD3DMODELINFO | Hayır | - |
-| `camera_info` | Görüntü alanı kamera bilgileri: konum, bakış hedefi, yakınlaştırma ve tür. Bağlandığında `viewport_state` içinde saklanan kamera bilgilerinin yerine geçer. | LOAD3DCAMERA | Hayır | - |
-| `width` | Görüntü alanının piksel cinsinden render genişliği (varsayılan: 1024). | INT | Evet | 1 ila 4096 |
-| `height` | Görüntü alanının piksel cinsinden render yüksekliği (varsayılan: 1024). | INT | Evet | 1 ila 4096 |
+| `3D model` | Yukarı akış 3D düğümünden gelen 3D model dosyası. | FILE3D | Evet | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ<br>Any |
+| `dosya adı ön eki` | Kaydedilen dosya adı için kullanılan ön ek (varsayılan: "3d/ComfyUI"). | STRING | Evet | Serbest metin |
+| `görünüm durumu` | Kamera ve model yerleşim bilgilerini içeren görüntü alanı durumu; genellikle bir Load 3D düğümünden gelir. | LOAD3D | Evet | - |
+| `3D model bilgisi` | Sahnede her modelin yerleşimi: konum, dönüş ve ölçek (Y-up dünya uzayı). Bağlandığında `viewport_state` içinde saklanan model yerleşiminin yerine geçer. | LOAD3DMODELINFO | Hayır | - |
+| `kamera bilgisi` | Görüntü alanı kamera bilgileri: konum, bakış hedefi, yakınlaştırma ve tür. Bağlandığında `viewport_state` içinde saklanan kamera bilgilerinin yerine geçer. | LOAD3DCAMERA | Hayır | - |
+| `genişlik` | Görüntü alanının piksel cinsinden render genişliği (varsayılan: 1024). | INT | Evet | 1 ila 4096 |
+| `yükseklik` | Görüntü alanının piksel cinsinden render yüksekliği (varsayılan: 1024). | INT | Evet | 1 ila 4096 |
 
 Not: `model_3d_info` ve `camera_info` isteğe bağlıdır. Girdilerden biri bağlı olmadığında, düğüm `viewport_state` içinde saklanan karşılık gelen değerlere geri döner.
 

@@ -6,13 +6,13 @@ ZImageFunControlnet aplica un parche de red de control a un modelo base para que
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo base utilizado para el proceso de generación. | MODEL | Sí | - |
-| `model_patch` | Un modelo de parche especializado que aplica la guía de la red de control. | MODEL_PATCH | Sí | - |
+| `modelo` | El modelo base utilizado para el proceso de generación. | MODEL | Sí | - |
+| `parche_de_modelo` | Un modelo de parche especializado que aplica la guía de la red de control. | MODEL_PATCH | Sí | - |
 | `vae` | El Autoencoder Variacional usado para codificar y decodificar imágenes. | VAE | Sí | - |
-| `strength` | La fuerza de la influencia de la red de control. Los valores positivos aplican el efecto, mientras que los valores negativos pueden invertirlo (predeterminado: 1.0). | FLOAT | Sí | -10.0 a 10.0 (paso 0.01) |
-| `image` | Una imagen base opcional para guiar el proceso de generación. | IMAGE | No | - |
-| `inpaint_image` | Una imagen opcional usada específicamente para inpainting en áreas definidas por una máscara. | IMAGE | No | - |
-| `mask` | Una máscara opcional que define qué áreas de una imagen deben editarse o someterse a inpainting. | MASK | No | - |
+| `fuerza` | La fuerza de la influencia de la red de control. Los valores positivos aplican el efecto, mientras que los valores negativos pueden invertirlo (predeterminado: 1.0). | FLOAT | Sí | -10.0 a 10.0 (paso 0.01) |
+| `imagen` | Una imagen base opcional para guiar el proceso de generación. | IMAGE | No | - |
+| `imagen_relleno` | Una imagen opcional usada específicamente para inpainting en áreas definidas por una máscara. | IMAGE | No | - |
+| `máscara` | Una máscara opcional que define qué áreas de una imagen deben editarse o someterse a inpainting. | MASK | No | - |
 
 **Nota:** El parámetro `inpaint_image` se suele usar junto con una `mask` para especificar el contenido para inpainting. El comportamiento del nodo puede cambiar según qué entradas opcionales se proporcionen (p. ej., usar `image` como guía o usar `image`, `mask` e `inpaint_image` para inpainting).
 

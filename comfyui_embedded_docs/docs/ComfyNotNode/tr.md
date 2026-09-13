@@ -6,7 +6,7 @@ Not düğümü, herhangi bir girdi değeri üzerinde mantıksal NOT işlemi ger�
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `value` | Ters çevrilecek girdi değeri. Herhangi bir veri türü kabul edilir ve Python'un doğruluk kuralları kullanılarak değerlendirilir. | ANY | Evet | Herhangi bir değer |
+| `değer` | Ters çevrilecek girdi değeri. Herhangi bir veri türü kabul edilir ve Python'un doğruluk kuralları kullanılarak değerlendirilir. | ANY | Evet | Herhangi bir değer |
 
 ## Çıktılar
 

@@ -6,14 +6,14 @@ PatchModelAddDownscale (Kohya Deep Shrink) aplica la técnica Kohya Deep Shrink 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo al que se aplicará el parche de reducción de escala | MODEL | Sí | - |
-| `block_number` | El número de bloque específico donde se aplicará la reducción de escala (predeterminado: 3) | INT | Sí | 1-32 |
-| `downscale_factor` | El factor por el cual reducir la escala de las características (predeterminado: 2.0) | FLOAT | Sí | 0.1-9.0 |
-| `start_percent` | El punto de inicio en el proceso de eliminación de ruido donde comienza la reducción de escala (predeterminado: 0.0) | FLOAT | Sí | 0.0-1.0 |
-| `end_percent` | El punto final en el proceso de eliminación de ruido donde se detiene la reducción de escala (predeterminado: 0.35) | FLOAT | Sí | 0.0-1.0 |
-| `downscale_after_skip` | Indica si se debe aplicar la reducción de escala después de las conexiones de salto (predeterminado: True) | BOOLEAN | Sí | - |
-| `downscale_method` | El método de interpolación utilizado para las operaciones de reducción de escala (predeterminado: "bicubic") | COMBO | Sí | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
-| `upscale_method` | El método de interpolación utilizado para las operaciones de aumento de escala (predeterminado: "bicubic") | COMBO | Sí | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `modelo` | El modelo al que se aplicará el parche de reducción de escala | MODEL | Sí | - |
+| `numero_de_bloque` | El número de bloque específico donde se aplicará la reducción de escala (predeterminado: 3) | INT | Sí | 1-32 |
+| `factor_de_reducción` | El factor por el cual reducir la escala de las características (predeterminado: 2.0) | FLOAT | Sí | 0.1-9.0 |
+| `porcentaje_inicial` | El punto de inicio en el proceso de eliminación de ruido donde comienza la reducción de escala (predeterminado: 0.0) | FLOAT | Sí | 0.0-1.0 |
+| `porcentaje_final` | El punto final en el proceso de eliminación de ruido donde se detiene la reducción de escala (predeterminado: 0.35) | FLOAT | Sí | 0.0-1.0 |
+| `reducción_después_de_omitir` | Indica si se debe aplicar la reducción de escala después de las conexiones de salto (predeterminado: True) | BOOLEAN | Sí | - |
+| `método_de_reducción` | El método de interpolación utilizado para las operaciones de reducción de escala (predeterminado: "bicubic") | COMBO | Sí | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `método_de_ampliación` | El método de interpolación utilizado para las operaciones de aumento de escala (predeterminado: "bicubic") | COMBO | Sí | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 
 El parche de reducción de escala se aplica solo cuando el paso actual de eliminación de ruido cae dentro del rango definido por `start_percent` y `end_percent`, y solo en el bloque seleccionado por `block_number`. Cuando `downscale_after_skip` está habilitado, el parche se aplica después de la conexión de salto; cuando está deshabilitado, se aplica antes. Después, las características se escalan de nuevo a su tamaño original, pero solo cuando el tamaño actual de las características ya no coincide con el tamaño registrado antes de la reducción de escala.
 

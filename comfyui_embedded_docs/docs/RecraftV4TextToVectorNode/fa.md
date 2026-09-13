@@ -8,12 +8,12 @@
 
 | پارامتر | توضیحات | نوع داده | الزامی | محدوده |
 |-----------|-------------|-----------|----------|-------|
-| `model` | مدل مورد استفاده برای تولید. مدل‌های recraftv4_styles برای تولید سازگار با سبک ساخته شده‌اند و همیشه به `style_id` یا `style_references` نیاز دارند. انتخاب مدل، گزینه‌های `size` موجود را تغییر می‌دهد. | DYNAMIC_COMBO | بله | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
-| `prompt` | پرامپت برای تولید تصویر. حداکثر 10,000 کاراکتر. | STRING | بله | N/A |
-| `negative_prompt` | این ورودی نادیده گرفته می‌شود: پرامپت منفی توسط مدل‌های Recraft V4 و V4.1 پشتیبانی نمی‌شود. | STRING | بله | N/A |
-| `n` | تعداد تصاویر برای تولید (پیش‌فرض: 1). | INT | بله | 1 تا 6 |
-| `seed` | Seed برای تعیین اینکه گره باید دوباره اجرا شود؛ نتایج واقعی بدون توجه به seed غیرقطعی هستند (پیش‌فرض: 0). | INT | بله | 0 تا 18446744073709551615 |
-| `recraft_controls` | کنترل‌های اضافی اختیاری روی تولید از طریق گره Recraft Controls. | CUSTOM | خیر | N/A |
+| `مدل` | مدل مورد استفاده برای تولید. مدل‌های recraftv4_styles برای تولید سازگار با سبک ساخته شده‌اند و همیشه به `style_id` یا `style_references` نیاز دارند. انتخاب مدل، گزینه‌های `size` موجود را تغییر می‌دهد. | DYNAMIC_COMBO | بله | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
+| `پرامپت` | پرامپت برای تولید تصویر. حداکثر 10,000 کاراکتر. | STRING | بله | N/A |
+| `پرامپت منفی` | این ورودی نادیده گرفته می‌شود: پرامپت منفی توسط مدل‌های Recraft V4 و V4.1 پشتیبانی نمی‌شود. | STRING | بله | N/A |
+| `تعداد` | تعداد تصاویر برای تولید (پیش‌فرض: 1). | INT | بله | 1 تا 6 |
+| `بذر` | Seed برای تعیین اینکه گره باید دوباره اجرا شود؛ نتایج واقعی بدون توجه به seed غیرقطعی هستند (پیش‌فرض: 0). | INT | بله | 0 تا 18446744073709551615 |
+| `کنترل‌های Recraft` | کنترل‌های اضافی اختیاری روی تولید از طریق گره Recraft Controls. | CUSTOM | خیر | N/A |
 | `style_id` | UUID یک سبک برداری Recraft V4 برای اعمال، مثلاً از گره Recraft V4 Create Style یا خروجی `style_id` یک اجرای قبلی. نمی‌تواند با `style_references` ترکیب شود. | STRING | خیر | N/A |
 | `style_match` | میزان پیروی دقیق از سبک: `"precise"` آن را با جزئیات بازتولید می‌کند، `"flexible"` با ظاهر کلی مطابقت می‌کند. فقط زمانی استفاده می‌شود که سبکی ارائه شده باشد (پیش‌فرض: `"precise"`). | COMBO | خیر | `"precise"`<br>`"flexible"` |
 

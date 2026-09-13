@@ -6,16 +6,16 @@ Le nœud WanFunInpaintToVideo prépare les données de conditionnement et de lat
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `positive` | Invites de conditionnement positives pour la génération vidéo | CONDITIONING | Oui | - |
-| `negative` | Invites de conditionnement négatives à éviter dans la génération vidéo | CONDITIONING | Oui | - |
+| `positif` | Invites de conditionnement positives pour la génération vidéo | CONDITIONING | Oui | - |
+| `négatif` | Invites de conditionnement négatives à éviter dans la génération vidéo | CONDITIONING | Oui | - |
 | `vae` | Modèle VAE utilisé pour l'encodage et le décodage des images vidéo | VAE | Oui | - |
-| `width` | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `height` | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `length` | Nombre d'images dans la séquence vidéo (par défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
-| `batch_size` | Nombre de vidéos à générer par lot (par défaut : 1) | INT | Oui | 1 à 4096 |
+| `largeur` | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `hauteur` | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `longueur` | Nombre d'images dans la séquence vidéo (par défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
+| `taille_du_lot` | Nombre de vidéos à générer par lot (par défaut : 1) | INT | Oui | 1 à 4096 |
 | `clip_vision_output` | Sortie de vision CLIP facultative utilisée comme conditionnement pour l'image de début | CLIP_VISION_OUTPUT | Non | - |
-| `start_image` | Image de début facultative pour la génération vidéo | IMAGE | Non | - |
-| `end_image` | Image de fin facultative pour la génération vidéo | IMAGE | Non | - |
+| `image_de_départ` | Image de début facultative pour la génération vidéo | IMAGE | Non | - |
+| `image_de_fin` | Image de fin facultative pour la génération vidéo | IMAGE | Non | - |
 
 ## Sorties
 

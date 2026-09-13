@@ -6,7 +6,7 @@ PreviewAny, herhangi bir girdi değerini inceleyebilmeniz için okunabilir metne
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `source` | Önizleme gösterimi için herhangi bir girdi veri türünü kabul eder. Bir değer sağlanmazsa, önizleme 'None' gösterir. | ANY | Evet | Herhangi bir veri türü |
+| `kaynak` | Önizleme gösterimi için herhangi bir girdi veri türünü kabul eder. Bir değer sağlanmazsa, önizleme 'None' gösterir. | ANY | Evet | Herhangi bir veri türü |
 
 **Dönüştürme davranışı**
 

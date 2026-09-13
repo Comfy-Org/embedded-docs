@@ -7,8 +7,8 @@ El nodo Frame Interpolate crea nuevos fotogramas entre los existentes en una sec
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `interp_model` | El modelo de interpolación de fotogramas que se utilizará para generar fotogramas intermedios | INTERP_MODEL | Sí | - |
-| `images` | Un lote de imágenes consecutivas (fotogramas) entre las que interpolar. Requiere al menos 2 imágenes. Si se proporcionan menos de 2 fotogramas, el nodo devuelve las imágenes de entrada sin cambios. | IMAGE | Sí | - |
-| `multiplier` | El número de veces que se multiplicará la cantidad de fotogramas. Por ejemplo, un multiplicador de 2 duplica el número de fotogramas. (predeterminado: 2) | INT | Sí | 2 a 16 |
+| `imágenes` | Un lote de imágenes consecutivas (fotogramas) entre las que interpolar. Requiere al menos 2 imágenes. Si se proporcionan menos de 2 fotogramas, el nodo devuelve las imágenes de entrada sin cambios. | IMAGE | Sí | - |
+| `multiplicador` | El número de veces que se multiplicará la cantidad de fotogramas. Por ejemplo, un multiplicador de 2 duplica el número de fotogramas. (predeterminado: 2) | INT | Sí | 2 a 16 |
 
 **Nota:** El nodo requiere al menos 2 fotogramas de entrada y un `multiplier` de al menos 2. Si no se cumple alguna de estas condiciones, las imágenes de entrada se devuelven sin cambios.
 

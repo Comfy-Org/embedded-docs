@@ -7,7 +7,7 @@ Le nœud LTXVCropGuides supprime les données de guidage de keyframe d’un flux
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `positive` | L’entrée de conditionnement positif contenant les informations de guidage pour la génération. Le nombre de keyframes qu’elle contient détermine le nombre de trames découpées dans le latent. | CONDITIONING | Oui | - |
-| `negative` | L’entrée de conditionnement négatif contenant les informations de guidage sur ce qu’il faut éviter lors de la génération. Ses données de keyframe sont effacées en même temps que celles du conditionnement positif. | CONDITIONING | Oui | - |
+| `négatif` | L’entrée de conditionnement négatif contenant les informations de guidage sur ce qu’il faut éviter lors de la génération. Ses données de keyframe sont effacées en même temps que celles du conditionnement positif. | CONDITIONING | Oui | - |
 | `latent` | La représentation latente contenant les échantillons d’image et les données de masque de bruit. Lorsque des keyframes sont présentes, les trames de keyframe finales sont supprimées des échantillons et du masque de bruit. | LATENT | Oui | - |
 
 Remarque : Le découpage ne se produit que lorsque des indices de keyframe sont détectés dans le conditionnement positif. Si aucune keyframe n’est détectée, les conditionnements positif et négatif sont renvoyés inchangés, tandis que le latent est tout de même renvoyé avec une copie du tenseur d’échantillons et un masque de bruit explicite (un masque composé uniquement de 1 est créé si le latent d’entrée n’en possède aucun).

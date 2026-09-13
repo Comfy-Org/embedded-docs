@@ -6,9 +6,9 @@ El nodo EmptyChromaRadianceLatentImage crea una imagen latente en blanco con las
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `width` | El ancho de la imagen latente en píxeles (predeterminado: 1024) | INT | Sí | 16 a MAX_RESOLUTION |
-| `height` | La altura de la imagen latente en píxeles (predeterminado: 1024) | INT | Sí | 16 a MAX_RESOLUTION |
-| `batch_size` | El número de imágenes latentes a generar en un lote (predeterminado: 1) | INT | Sí | 1 a 4096 |
+| `ancho` | El ancho de la imagen latente en píxeles (predeterminado: 1024) | INT | Sí | 16 a MAX_RESOLUTION |
+| `alto` | La altura de la imagen latente en píxeles (predeterminado: 1024) | INT | Sí | 16 a MAX_RESOLUTION |
+| `tamaño_lote` | El número de imágenes latentes a generar en un lote (predeterminado: 1) | INT | Sí | 1 a 4096 |
 
 Nota: `width` y `height` se definen con un paso de 16, por lo que los valores se ajustan en múltiplos de 16.
 

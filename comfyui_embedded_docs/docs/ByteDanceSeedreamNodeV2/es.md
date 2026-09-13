@@ -8,10 +8,10 @@ Este nodo genera o edita imágenes usando los modelos Seedream de ByteDance (ver
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `model` | La versión del modelo Seedream que se usará para la generación. Cada modelo tiene capacidades y precios diferentes. | DYNAMIC_COMBO | Sí | `"seedream 5.0 pro"`<br>`"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
+| `modelo` | La versión del modelo Seedream que se usará para la generación. Cada modelo tiene capacidades y precios diferentes. | DYNAMIC_COMBO | Sí | `"seedream 5.0 pro"`<br>`"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
 | `prompt` | Indicación de texto para crear o editar una imagen (predeterminado: cadena vacía). | STRING | Sí | N/A |
-| `seed` | Semilla que se usará para la generación (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
-| `watermark` | Indica si se debe agregar una marca de agua "AI generated" a la imagen (predeterminado: False). | BOOLEAN | Sí | True / False |
+| `semilla` | Semilla que se usará para la generación (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
+| `marca de agua` | Indica si se debe agregar una marca de agua "AI generated" a la imagen (predeterminado: False). | BOOLEAN | Sí | True / False |
 | `thinking` | Habilita el razonamiento de optimización de la indicación ('thinking') del modelo para un mejor cumplimiento. Puede aumentar sustancialmente el tiempo de generación —especialmente en Seedream 5.0 Pro. Solo se puede desactivar para texto a imagen (no cuando se proporcionan imágenes de referencia) (predeterminado: True). | BOOLEAN | No | True / False |
 
 ### Entradas de `seedream 5.0 pro`

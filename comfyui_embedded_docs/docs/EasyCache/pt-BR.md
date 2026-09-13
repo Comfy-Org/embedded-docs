@@ -6,11 +6,11 @@ O nó EasyCache adiciona um sistema de cache nativo a um modelo de difusão que 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo ao qual adicionar o EasyCache. | MODEL | Sim | - |
-| `reuse_threshold` | O limite para reutilizar etapas em cache (padrão: 0.2). | FLOAT | Sim | 0.0 - 3.0 |
-| `start_percent` | A etapa relativa de amostragem para iniciar o uso do EasyCache (padrão: 0.15). | FLOAT | Sim | 0.0 - 1.0 |
-| `end_percent` | A etapa relativa de amostragem para encerrar o uso do EasyCache (padrão: 0.95). | FLOAT | Sim | 0.0 - 1.0 |
-| `verbose` | Se deve registrar informações detalhadas (padrão: False). | BOOLEAN | Sim | - |
+| `modelo` | O modelo ao qual adicionar o EasyCache. | MODEL | Sim | - |
+| `limite_de_reutilização` | O limite para reutilizar etapas em cache (padrão: 0.2). | FLOAT | Sim | 0.0 - 3.0 |
+| `percentual_inicial` | A etapa relativa de amostragem para iniciar o uso do EasyCache (padrão: 0.15). | FLOAT | Sim | 0.0 - 1.0 |
+| `percentual_final` | A etapa relativa de amostragem para encerrar o uso do EasyCache (padrão: 0.95). | FLOAT | Sim | 0.0 - 1.0 |
+| `detalhado` | Se deve registrar informações detalhadas (padrão: False). | BOOLEAN | Sim | - |
 
 ## Saídas
 

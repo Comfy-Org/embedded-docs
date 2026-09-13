@@ -6,8 +6,8 @@ O nó InstructPixToPixConditioning prepara dados de condicionamento para ediçã
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `positive` | Dados de condicionamento positivo contendo prompts de texto e configurações para as características desejadas da imagem | CONDITIONING | Sim | - |
-| `negative` | Dados de condicionamento negativo contendo prompts de texto e configurações para as características indesejadas da imagem | CONDITIONING | Sim | - |
+| `positivo` | Dados de condicionamento positivo contendo prompts de texto e configurações para as características desejadas da imagem | CONDITIONING | Sim | - |
+| `negativo` | Dados de condicionamento negativo contendo prompts de texto e configurações para as características indesejadas da imagem | CONDITIONING | Sim | - |
 | `vae` | Modelo VAE usado para codificar imagens de entrada em representações latentes | VAE | Sim | - |
 | `pixels` | Imagem de entrada a ser processada e codificada no espaço latente | IMAGE | Sim | - |
 

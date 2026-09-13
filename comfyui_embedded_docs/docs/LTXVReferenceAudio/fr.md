@@ -6,14 +6,14 @@ LTXV Reference Audio transfère l'identité vocale d'un locuteur depuis un clip 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle auquel appliquer le patch avec le guidage d'identité. | MODEL | Oui | - |
-| `positive` | L'entrée de conditionnement positive. | CONDITIONING | Oui | - |
-| `negative` | L'entrée de conditionnement négative. | CONDITIONING | Oui | - |
-| `reference_audio` | Clip audio de référence dont l'identité du locuteur doit être transférée. ~5 secondes recommandées (durée d'entraînement). Des clips plus courts ou plus longs peuvent dégrader le transfert de l'identité vocale. | AUDIO | Oui | - |
+| `modèle` | Le modèle auquel appliquer le patch avec le guidage d'identité. | MODEL | Oui | - |
+| `positif` | L'entrée de conditionnement positive. | CONDITIONING | Oui | - |
+| `négatif` | L'entrée de conditionnement négative. | CONDITIONING | Oui | - |
+| `audio_de_référence` | Clip audio de référence dont l'identité du locuteur doit être transférée. ~5 secondes recommandées (durée d'entraînement). Des clips plus courts ou plus longs peuvent dégrader le transfert de l'identité vocale. | AUDIO | Oui | - |
 | `audio_vae` | VAE audio LTXV pour l'encodage. | VAE | Oui | - |
-| `identity_guidance_scale` | Force du guidage d'identité. Exécute une passe avant supplémentaire sans la référence à chaque étape pour amplifier l'identité du locuteur. Réglez sur 0 pour désactiver (aucune passe supplémentaire). (par défaut : 3.0) | FLOAT | Oui | 0.0 - 100.0 |
-| `start_percent` | Début de la plage sigma où le guidage d'identité est actif. (par défaut : 0.0) | FLOAT | Oui | 0.0 - 1.0 |
-| `end_percent` | Fin de la plage sigma où le guidage d'identité est actif. (par défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
+| `échelle_guidage_identité` | Force du guidage d'identité. Exécute une passe avant supplémentaire sans la référence à chaque étape pour amplifier l'identité du locuteur. Réglez sur 0 pour désactiver (aucune passe supplémentaire). (par défaut : 3.0) | FLOAT | Oui | 0.0 - 100.0 |
+| `pourcentage_début` | Début de la plage sigma où le guidage d'identité est actif. (par défaut : 0.0) | FLOAT | Oui | 0.0 - 1.0 |
+| `pourcentage_fin` | Fin de la plage sigma où le guidage d'identité est actif. (par défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
 
 Remarque : Le guidage d'identité n'est appliqué que lorsque `identity_guidance_scale` est supérieur à 0 et que l'étape d'échantillonnage actuelle se situe dans la plage définie par `start_percent` et `end_percent`. L'audio de référence est rééchantillonné au taux d'échantillonnage du VAE audio si les deux diffèrent.
 

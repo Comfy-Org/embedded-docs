@@ -10,9 +10,9 @@ Ces entrées sont toujours visibles.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `video` | Vidéo à améliorer. La résolution source doit être au maximum de 2560x1440 (2K) ; la taille de sortie est définie par l'entrée de résolution. | VIDEO | Oui | Au maximum 2560x1440 (2K) |
+| `vidéo` | Vidéo à améliorer. La résolution source doit être au maximum de 2560x1440 (2K) ; la taille de sortie est définie par l'entrée de résolution. | VIDEO | Oui | Au maximum 2560x1440 (2K) |
 | `tool_version` | 'standard' équilibre la vitesse et la qualité avec plus de 10 algorithmes d'amélioration. 'professional' utilise plus de 30 algorithmes pour une restauration de niveau cinématographique, prend environ 3 fois plus de temps et coûte 10 fois plus cher. | DYNAMIC_COMBO | Oui | "standard"<br>"professional" |
-| `resolution` | Résolution de sortie. Le côté court est défini sur le niveau choisi et le côté long suit le rapport d'aspect de la source. 'source' conserve la taille source, 'custom' définit le côté court en pixels. Les sources plus larges ou plus hautes qu'environ 2,2:1 sont facturées un niveau de résolution supérieur. | DYNAMIC_COMBO | Oui | "720p"<br>"1080p"<br>"2k"<br>"4k"<br>"8k"<br>"source"<br>"custom" |
+| `résolution` | Résolution de sortie. Le côté court est défini sur le niveau choisi et le côté long suit le rapport d'aspect de la source. 'source' conserve la taille source, 'custom' définit le côté court en pixels. Les sources plus larges ou plus hautes qu'environ 2,2:1 sont facturées un niveau de résolution supérieur. | DYNAMIC_COMBO | Oui | "720p"<br>"1080p"<br>"2k"<br>"4k"<br>"8k"<br>"source"<br>"custom" |
 | `fps` | Fréquence d'images de sortie. Une fréquence plus élevée que celle de la source active l'interpolation d'images par IA ; une fréquence plus faible supprime des images. 'source' conserve la fréquence source, jusqu'à 120 fps. Les fréquences supérieures à 30 fps coûtent 2x, et supérieures à 60 fps, 4x. (par défaut : "source") | COMBO | Oui | "source" (par défaut)<br>Fréquences d'images numériques jusqu'à 120 fps |
 | `bitrate_level` | Débit binaire cible du fichier livré, mis à l'échelle selon la résolution et la fréquence d'images de sortie. (par défaut : "medium") | COMBO | Oui | "low"<br>"medium"<br>"high" |
 

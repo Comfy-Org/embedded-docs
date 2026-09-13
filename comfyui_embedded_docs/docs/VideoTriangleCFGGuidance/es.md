@@ -6,7 +6,7 @@ El nodo VideoTriangleCFGGuidance aplica un patrón de escalado de guía libre de
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de video al que se aplicará la guía CFG triangular. | MODEL | Sí | - |
+| `modelo` | El modelo de video al que se aplicará la guía CFG triangular. | MODEL | Sí | - |
 | `min_cfg` | El valor mínimo de escala CFG para el patrón triangular. Este parámetro se muestra en la sección avanzada de la interfaz del nodo (predeterminado: 1.0). | FLOAT | Sí | 0.0 - 100.0 (paso: 0.5, redondeo: 0.01) |
 
 ## Salidas

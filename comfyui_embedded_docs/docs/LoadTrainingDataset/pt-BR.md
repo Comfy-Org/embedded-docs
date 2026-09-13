@@ -6,7 +6,7 @@ Este nó carrega um dataset de treinamento codificado (latents e condicionamento
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `folder_name` | Dataset salvo a ser carregado, do diretório datasets. | COMBO | Sim | Uma opção por pasta de dataset encontrada no diretório datasets |
+| `nome_da_pasta` | Dataset salvo a ser carregado, do diretório datasets. | COMBO | Sim | Uma opção por pasta de dataset encontrada no diretório datasets |
 
 Nota: As opções de `folder_name` são criadas automaticamente ao escanear o diretório datasets. Uma subpasta é listada como um dataset quando contém um arquivo `metadata.json` ou pelo menos um arquivo `.safetensors` (a varredura não entra em uma pasta que corresponda a esse critério). A pasta de dataset selecionada é pesquisada em todos os diretórios raiz de datasets configurados, e o nome da pasta deve resolver para uma subpasta dentro de um desses diretórios raiz. O nó lê todos os arquivos chamados `shard_*.pkl` na pasta selecionada, em ordem classificada, e gera um erro se nenhum arquivo shard for encontrado ou se a pasta não puder ser localizada.
 

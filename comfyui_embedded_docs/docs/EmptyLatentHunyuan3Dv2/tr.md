@@ -6,8 +6,8 @@ Bu düğüm, Hunyuan3Dv2 3B üretim modelleri için biçimlendirilmiş boş (tam
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `resolution` | Oluşturulacak latent uzayının çözünürlük boyutu (varsayılan: 3072) | INT | Evet | 1 - 8192 |
-| `batch_size` | Toplu işteki latent görüntü sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `çözünürlük` | Oluşturulacak latent uzayının çözünürlük boyutu (varsayılan: 3072) | INT | Evet | 1 - 8192 |
+| `toplu_boyut` | Toplu işteki latent görüntü sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
 
 ## Çıktılar
 

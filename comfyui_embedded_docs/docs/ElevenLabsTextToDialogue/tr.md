@@ -8,13 +8,13 @@ ElevenLabs Text to Dialogue düğümü, metinden çok konuşmacılı bir sesli d
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `stability` | Ses kararlılığı. Düşük değerler daha geniş bir duygusal aralık sağlar; yüksek değerler daha tutarlı ancak potansiyel olarak monoton bir konuşma üretir. (varsayılan: 0.5) | FLOAT | Evet | 0.0 - 1.0 |
-| `apply_text_normalization` | Metin normalleştirme modu. 'auto' sistemin karar vermesini sağlar, 'on' normalleştirmeyi her zaman uygular, 'off' bunu atlar. | COMBO | Evet | `"auto"`<br>`"on"`<br>`"off"` |
+| `kararlılık` | Ses kararlılığı. Düşük değerler daha geniş bir duygusal aralık sağlar; yüksek değerler daha tutarlı ancak potansiyel olarak monoton bir konuşma üretir. (varsayılan: 0.5) | FLOAT | Evet | 0.0 - 1.0 |
+| `metin normalizasyonunu uygula` | Metin normalleştirme modu. 'auto' sistemin karar vermesini sağlar, 'on' normalleştirmeyi her zaman uygular, 'off' bunu atlar. | COMBO | Evet | `"auto"`<br>`"on"`<br>`"off"` |
 | `model` | Diyalog oluşturma için kullanılacak model. | COMBO | Evet | `"eleven_v3"` |
-| `inputs` | Diyalog öğesi sayısı. Bir sayı seçmek, o sayıda metin ve ses girdi çifti oluşturur. | DYNAMIC_COMBO | Evet | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
-| `language_code` | ISO-639-1 veya ISO-639-3 dil kodu (örn., 'en', 'es', 'fra'). Otomatik algılama için boş bırakın. (varsayılan: boş) | STRING | Evet | - |
-| `seed` | Yeniden üretilebilirlik için tohum. (varsayılan: 1) | INT | Evet | 0 - 4294967295 |
-| `output_format` | Ses çıktısı biçimi. | COMBO | Evet | `"mp3_44100_192"`<br>`"opus_48000_192"` |
+| `girdiler` | Diyalog öğesi sayısı. Bir sayı seçmek, o sayıda metin ve ses girdi çifti oluşturur. | DYNAMIC_COMBO | Evet | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
+| `dil_kodu` | ISO-639-1 veya ISO-639-3 dil kodu (örn., 'en', 'es', 'fra'). Otomatik algılama için boş bırakın. (varsayılan: boş) | STRING | Evet | - |
+| `tohum` | Yeniden üretilebilirlik için tohum. (varsayılan: 1) | INT | Evet | 0 - 4294967295 |
+| `çıktı_formatı` | Ses çıktısı biçimi. | COMBO | Evet | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
 ### Diyalog Öğesi Girdileri
 

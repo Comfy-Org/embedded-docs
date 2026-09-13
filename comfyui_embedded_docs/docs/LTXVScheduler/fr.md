@@ -6,10 +6,10 @@ Le nœud LTXVScheduler génère des valeurs sigma pour un processus d'échantill
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `steps` | Nombre d'étapes d'échantillonnage (par défaut : 20) | INT | Oui | 1-10000 |
-| `max_shift` | Valeur de décalage maximale utilisée dans le calcul des sigma (par défaut : 2.05) | FLOAT | Oui | 0.0-100.0 (pas : 0.01) |
-| `base_shift` | Valeur de décalage de base utilisée dans le calcul des sigma (par défaut : 0.95) | FLOAT | Oui | 0.0-100.0 (pas : 0.01) |
-| `stretch` | Étire les sigmas pour qu'ils soient dans l'intervalle [terminal, 1] (par défaut : True) | BOOLEAN | Oui | True/False |
+| `étapes` | Nombre d'étapes d'échantillonnage (par défaut : 20) | INT | Oui | 1-10000 |
+| `décalage_max` | Valeur de décalage maximale utilisée dans le calcul des sigma (par défaut : 2.05) | FLOAT | Oui | 0.0-100.0 (pas : 0.01) |
+| `décalage_base` | Valeur de décalage de base utilisée dans le calcul des sigma (par défaut : 0.95) | FLOAT | Oui | 0.0-100.0 (pas : 0.01) |
+| `étirement` | Étire les sigmas pour qu'ils soient dans l'intervalle [terminal, 1] (par défaut : True) | BOOLEAN | Oui | True/False |
 | `terminal` | Valeur terminale des sigmas après étirement (par défaut : 0.1). Utilisée uniquement lorsque `stretch` est activé. | FLOAT | Oui | 0.0-0.99 (pas : 0.01) |
 | `latent` | Entrée latent optionnelle utilisée pour calculer le nombre de tokens pour l'ajustement des sigma. Lorsqu'elle n'est pas fournie, un nombre de tokens par défaut de 4096 est utilisé. | LATENT | Non | - |
 

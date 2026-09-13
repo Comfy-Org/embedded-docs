@@ -6,9 +6,9 @@ Bu düğüm, Latent Consistency Model (LCM) örneklemesini aşamalı görüntü 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `scale_ratio` | Büyütme sırasında uygulanacak toplam ölçekleme faktörü. 1.0 değeri orijinal çözünürlüğü korur (varsayılan: 1.0) | FLOAT | Evet | 0.1 - 20.0 |
-| `scale_steps` | Büyütme işlemi için kullanılacak adım sayısı. Örnekleme çizelgesine göre otomatik hesaplama için -1 kullanın (varsayılan: -1) | INT | Evet | -1 - 1000 |
-| `upscale_method` | Her büyütme adımında görüntüyü büyütmek için kullanılan interpolasyon yöntemi (varsayılan: "bislerp") | COMBO | Evet | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" |
+| `ölçek_oranı` | Büyütme sırasında uygulanacak toplam ölçekleme faktörü. 1.0 değeri orijinal çözünürlüğü korur (varsayılan: 1.0) | FLOAT | Evet | 0.1 - 20.0 |
+| `ölçek_adımları` | Büyütme işlemi için kullanılacak adım sayısı. Örnekleme çizelgesine göre otomatik hesaplama için -1 kullanın (varsayılan: -1) | INT | Evet | -1 - 1000 |
+| `büyütme_yöntemi` | Her büyütme adımında görüntüyü büyütmek için kullanılan interpolasyon yöntemi (varsayılan: "bislerp") | COMBO | Evet | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" |
 
 `scale_ratio` ve `scale_steps` gelişmiş parametrelerdir. Görüntü, büyütme adımları boyunca orijinal boyutundan hedef `scale_ratio` değerine kademeli olarak büyütülür. `scale_steps` -1 olduğunda, büyütme adımlarının sayısı otomatik olarak örnekleme adımlarının sayısının yaklaşık yarısı kadar hesaplanır ve en az 2 olur; pozitif bir değer verildiğinde ise düğüm bunu dahili olarak ayarlar ve toplam örnekleme adımı sayısına göre sınırlar.
 

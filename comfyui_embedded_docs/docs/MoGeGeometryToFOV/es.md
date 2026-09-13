@@ -7,8 +7,8 @@ Este nodo deriva el campo de visión y la longitud focal a partir de los intrín
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
 | `moge_geometry` | El objeto de geometría MoGe. Debe contener una matriz de intrínsecos y al menos uno de los datos `image`, `points` o `depth`, que se usa para leer la altura en píxeles para la conversión de longitud focal. | MOGE_GEOMETRY | Sí | — |
-| `axis` | El eje a lo largo del cual se calcula el FOV: "vertical" (fov_y), "horizontal" (fov_x) o "diagonal" (predeterminado: "vertical"). | COMBO | Sí | "vertical"<br>"horizontal"<br>"diagonal" |
-| `unit` | Unidad de salida para el FOV (predeterminado: "degrees"). | COMBO | Sí | "degrees"<br>"radians" |
+| `eje` | El eje a lo largo del cual se calcula el FOV: "vertical" (fov_y), "horizontal" (fov_x) o "diagonal" (predeterminado: "vertical"). | COMBO | Sí | "vertical"<br>"horizontal"<br>"diagonal" |
+| `unidad` | Unidad de salida para el FOV (predeterminado: "degrees"). | COMBO | Sí | "degrees"<br>"radians" |
 
 Nota: El nodo genera un error si `moge_geometry` no contiene intrínsecos (la geometría de panorama no tiene ninguno) o si no contiene datos de `image`, `points` ni `depth`.
 

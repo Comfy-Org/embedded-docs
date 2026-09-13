@@ -6,12 +6,12 @@ ZImageFunControlnet applique un patch de réseau de contrôle à un modèle de b
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle de base utilisé pour le processus de génération. | MODEL | Oui | - |
-| `model_patch` | Un modèle de patch spécialisé qui applique le guidage du réseau de contrôle. | MODEL_PATCH | Oui | - |
+| `modèle` | Le modèle de base utilisé pour le processus de génération. | MODEL | Oui | - |
+| `modèle_patch` | Un modèle de patch spécialisé qui applique le guidage du réseau de contrôle. | MODEL_PATCH | Oui | - |
 | `vae` | L'auto-encodeur variationnel utilisé pour l'encodage et le décodage des images. | VAE | Oui | - |
-| `strength` | La force de l'influence du réseau de contrôle. Les valeurs positives appliquent l'effet, tandis que les valeurs négatives peuvent l'inverser (par défaut : 1.0). | FLOAT | Oui | -10.0 à 10.0 (pas de 0.01) |
+| `force` | La force de l'influence du réseau de contrôle. Les valeurs positives appliquent l'effet, tandis que les valeurs négatives peuvent l'inverser (par défaut : 1.0). | FLOAT | Oui | -10.0 à 10.0 (pas de 0.01) |
 | `image` | Une image de base facultative pour guider le processus de génération. | IMAGE | Non | - |
-| `inpaint_image` | Une image facultative utilisée spécifiquement pour l'inpainting des zones définies par un masque. | IMAGE | Non | - |
+| `image_de_repeinture` | Une image facultative utilisée spécifiquement pour l'inpainting des zones définies par un masque. | IMAGE | Non | - |
 | `mask` | Un masque facultatif qui définit les zones d'une image à modifier ou à inpaint. | MASK | Non | - |
 
 **Note :** Le paramètre `inpaint_image` est généralement utilisé conjointement avec un `mask` pour spécifier le contenu à inpaint. Le comportement du nœud peut changer selon les entrées facultatives fournies (par exemple, utiliser `image` pour le guidage ou utiliser `image`, `mask` et `inpaint_image` pour l'inpainting).

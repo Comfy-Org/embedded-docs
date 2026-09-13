@@ -6,7 +6,7 @@ Este nodo serializa una malla en un objeto de archivo GLB que puede pasarse a lo
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `mesh` | La malla que se convertirá en un archivo GLB, incluidos UVs, colores, normales, textura, mapas de normales/oclusión/emisión y material. Solo se admite un elemento por lote; si un lote contiene varios elementos, se utiliza el primero. | MESH | Sí | Malla única |
+| `malla` | La malla que se convertirá en un archivo GLB, incluidos UVs, colores, normales, textura, mapas de normales/oclusión/emisión y material. Solo se admite un elemento por lote; si un lote contiene varios elementos, se utiliza el primero. | MESH | Sí | Malla única |
 
 Nota: El nodo admite solo un elemento por lote. Si la malla de entrada contiene más de un elemento en su lote, se registra una advertencia y se utiliza el primer elemento. La malla debe contener al menos un vértice y una cara; una malla vacía genera un error.
 

@@ -8,9 +8,9 @@ Este nodo elimina de una imagen un objeto descrito en texto plano usando Bria. B
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `image` | La imagen de la cual debe eliminarse el objeto indicado. | IMAGE | Sí | - |
+| `imagen` | La imagen de la cual debe eliminarse el objeto indicado. | IMAGE | Sí | - |
 | `object_name` | Nombre del objeto a eliminar, como 'the lamp'. Se pueden nombrar varios objetos a la vez, como 'the phone and the pencils'. Nombrar algo que no está en la imagen igualmente devuelve una imagen vuelta a renderizar, y la solicitud se sigue facturando. Debe tener al menos 1 carácter de longitud (por defecto: vacío). | STRING | Sí | - |
-| `moderation` | Configuración de moderación. Selecciona si se muestran los controles de moderación opcionales. | DYNAMIC_COMBO | Sí | `"false"`<br>`"true"` |
+| `moderación` | Configuración de moderación. Selecciona si se muestran los controles de moderación opcionales. | DYNAMIC_COMBO | Sí | `"false"`<br>`"true"` |
 
 ### Entradas de moderación
 

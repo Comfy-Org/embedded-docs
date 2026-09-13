@@ -8,7 +8,7 @@ Le nœud CLIPLoader charge un modèle d'encodeur de texte (CLIP, T5 ou similaire
 |-----------|-------------|-----------------|--------|-------|
 | `clip_name` | Le nom de fichier du modèle d'encodeur de texte à charger. Il doit s'agir d'un fichier situé dans le répertoire `ComfyUI/models/text_encoders/`. | STRING | Oui | Liste des fichiers trouvés dans le dossier `text_encoders` |
 | `type` | Le type d'architecture du modèle en cours de chargement. Cela détermine la variante d'encodeur spécifique à utiliser (par défaut : `"stable_diffusion"`). | COMBO | Oui | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
-| `device` | L'appareil sur lequel charger le modèle. `"default"` utilise le GPU s'il est disponible, tandis que `"cpu"` force le chargement sur CPU. Il s'agit d'une option avancée (par défaut : `"default"`). | COMBO | Non | `"default"`<br>`"cpu"` |
+| `appareil` | L'appareil sur lequel charger le modèle. `"default"` utilise le GPU s'il est disponible, tandis que `"cpu"` force le chargement sur CPU. Il s'agit d'une option avancée (par défaut : `"default"`). | COMBO | Non | `"default"`<br>`"cpu"` |
 
 ### Correspondances prises en charge entre type et encodeur
 

@@ -9,7 +9,7 @@ Bria Increase Resolution amplia a resolução de uma imagem de entrada em 2x ou 
 | `image` | A imagem de entrada a ser ampliada. | IMAGE | Sim | Imagem única |
 | `desired_increase` | Multiplicador de resolução. A saída deve ter no máximo 8192 pixels em cada lado. | COMBO | Sim | "2"<br>"4" |
 | `auto_downscale` | Reduz automaticamente o multiplicador e reduz a escala da imagem de entrada se isso ainda não for suficiente, quando a saída excederia o limite. (padrão: False) | BOOLEAN | Sim | True<br>False |
-| `moderation` | Configurações de moderação. Quando definido como "true", habilita as subopções `visual_input_moderation` e `visual_output_moderation`, ambas com padrão False. | DYNAMIC_COMBO | Sim | "false"<br>"true" |
+| `moderação` | Configurações de moderação. Quando definido como "true", habilita as subopções `visual_input_moderation` e `visual_output_moderation`, ambas com padrão False. | DYNAMIC_COMBO | Sim | "false"<br>"true" |
 
 Notas:
 - Quando `moderation` é definido como "true", as subopções `visual_input_moderation` e `visual_output_moderation` ficam disponíveis, ambas com padrão False. Elas controlam a moderação do conteúdo da imagem de entrada e da imagem de saída.

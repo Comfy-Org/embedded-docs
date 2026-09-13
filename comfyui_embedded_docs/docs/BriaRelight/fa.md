@@ -8,10 +8,10 @@
 
 | پارامتر | توضیحات | نوع داده | الزامی | بازه |
 |-----------|-------------|-----------|----------|-------|
-| `image` | تصویری که نورپردازی آن تغییر می‌کند. هر کانال آلفا پیش از بارگذاری تصویر حذف می‌شود. | IMAGE | بله | - |
-| `light_type` | فضای نورپردازی برای اعمال. | COMBO | بله | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
-| `light_direction` | جهتی که نور از آن می‌آید. فضاهای نورپردازی سخت مانند midday، spotlight on subject و harsh studio lighting بیشترین واکنش را به آن نشان می‌دهند. | COMBO | بله | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
-| `moderation` | تنظیمات بازبینی محتوا. برای نمایش گزینه‌های بازبینی، `"true"` را انتخاب کنید، یا برای اجرا بدون آن‌ها `"false"` را انتخاب کنید. | DYNAMIC_COMBO | بله | `"false"`<br>`"true"` |
+| `تصویر` | تصویری که نورپردازی آن تغییر می‌کند. هر کانال آلفا پیش از بارگذاری تصویر حذف می‌شود. | IMAGE | بله | - |
+| `نوع نور` | فضای نورپردازی برای اعمال. | COMBO | بله | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
+| `جهت نور` | جهتی که نور از آن می‌آید. فضاهای نورپردازی سخت مانند midday، spotlight on subject و harsh studio lighting بیشترین واکنش را به آن نشان می‌دهند. | COMBO | بله | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
+| `تعدیل محتوا` | تنظیمات بازبینی محتوا. برای نمایش گزینه‌های بازبینی، `"true"` را انتخاب کنید، یا برای اجرا بدون آن‌ها `"false"` را انتخاب کنید. | DYNAMIC_COMBO | بله | `"false"`<br>`"true"` |
 
 ### ورودی‌های بازبینی محتوا
 

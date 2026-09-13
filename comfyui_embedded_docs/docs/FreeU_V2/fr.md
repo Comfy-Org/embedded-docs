@@ -6,7 +6,7 @@ FreeU_V2 améliore la qualité de génération d’images en appliquant des modi
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle de diffusion auquel appliquer l’amélioration FreeU | MODEL | Oui | - |
+| `modèle` | Le modèle de diffusion auquel appliquer l’amélioration FreeU | MODEL | Oui | - |
 | `b1` | Facteur d’échelle des caractéristiques du backbone pour le premier bloc (par défaut : 1.3) | FLOAT | Oui | 0.0 - 10.0 |
 | `b2` | Facteur d’échelle des caractéristiques du backbone pour le second bloc (par défaut : 1.4) | FLOAT | Oui | 0.0 - 10.0 |
 | `s1` | Facteur d’échelle des caractéristiques de connexion skip pour le premier bloc (par défaut : 0.9) | FLOAT | Oui | 0.0 - 10.0 |

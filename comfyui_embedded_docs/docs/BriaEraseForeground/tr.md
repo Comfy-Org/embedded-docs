@@ -10,8 +10,8 @@ Bu, Bria'nın hizmeti üzerinde çalışan ücretli bir API düğümüdür, bu n
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Ön planı kaldırılan ve yerine oluşturulmuş bir arka plan konulan görüntü. Yalnızca renk kanalları gönderilir; varsa alfa kanalı yüklemeden önce atılır. | IMAGE | Evet | - |
-| `moderation` | Moderasyon ayarları. Görüntüyü moderasyon bayrakları olmadan göndermek için `"false"` seçeneğini veya aşağıdaki içerik moderasyonu anahtarlarını göstermek için `"true"` seçeneğini seçin. Varsayılan: `"false"`. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
+| `görüntü` | Ön planı kaldırılan ve yerine oluşturulmuş bir arka plan konulan görüntü. Yalnızca renk kanalları gönderilir; varsa alfa kanalı yüklemeden önce atılır. | IMAGE | Evet | - |
+| `moderasyon` | Moderasyon ayarları. Görüntüyü moderasyon bayrakları olmadan göndermek için `"false"` seçeneğini veya aşağıdaki içerik moderasyonu anahtarlarını göstermek için `"true"` seçeneğini seçin. Varsayılan: `"false"`. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
 
 ### `"false"` Girdileri
 

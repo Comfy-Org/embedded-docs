@@ -6,10 +6,10 @@ Reemplaza el fondo de una imagen según el prompt proporcionado. Este nodo utili
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `image` | La imagen de entrada que se va a procesar | IMAGE | Sí | - |
+| `imagen` | La imagen de entrada que se va a procesar | IMAGE | Sí | - |
 | `prompt` | Prompt para la generación de la imagen (predeterminado: vacío) | STRING | Sí | - |
 | `n` | El número de imágenes que se van a generar (predeterminado: 1) | INT | Sí | 1-6 |
-| `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0) | INT | Sí | 0-18446744073709551615 |
+| `semilla` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0) | INT | Sí | 0-18446744073709551615 |
 | `recraft_style` | Selección de estilo opcional para el fondo generado. Si no se proporciona, el valor predeterminado es el estilo `realistic_image` | STYLEV3 | No | - |
 | `negative_prompt` | Descripción de texto opcional de elementos no deseados en una imagen (predeterminado: vacío) | STRING | No | - |
 

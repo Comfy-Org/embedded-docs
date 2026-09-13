@@ -8,25 +8,25 @@ Bu düğüm, Kling V3 modeliyle video üretir. Metinden videoya (bir metin açı
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `multi_shot` | Her biri kendi istemi ve süresine sahip bir dizi video segmenti üretir. Bir storyboard seçeneğine ayarlandığında, her storyboard'un istemi ve süresi için ek girdiler görünür. | DYNAMIC_COMBO | Evet | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | Etkinleştirildiğinde düğüm, video için ses üretir. Not: `"kling-3.0-turbo"` her zaman yerel ses üretir, bu nedenle o model için ses geçişi yok sayılır. Varsayılan True'dur. | BOOLEAN | Evet | True<br>False |
+| `çoklu çekim` | Her biri kendi istemi ve süresine sahip bir dizi video segmenti üretir. Bir storyboard seçeneğine ayarlandığında, her storyboard'un istemi ve süresi için ek girdiler görünür. | DYNAMIC_COMBO | Evet | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `ses oluştur` | Etkinleştirildiğinde düğüm, video için ses üretir. Not: `"kling-3.0-turbo"` her zaman yerel ses üretir, bu nedenle o model için ses geçişi yok sayılır. Varsayılan True'dur. | BOOLEAN | Evet | True<br>False |
 | `model` | Model ve üretim ayarları. Bir model seçildiğinde çözünürlük ve en-boy oranı alt parametreleri görünür. | DYNAMIC_COMBO | Evet | `"kling-v3"`<br>`"kling-3.0-turbo"` |
-| `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan 0'dır. | INT | Evet | 0 ila 2147483647 |
-| `start_frame` | İsteğe bağlı başlangıç kare görüntüsü. Bağlandığında görüntüden videoya moduna geçer. | IMAGE | Hayır | - |
+| `tohum` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan 0'dır. | INT | Evet | 0 ila 2147483647 |
+| `başlangıç karesi` | İsteğe bağlı başlangıç kare görüntüsü. Bağlandığında görüntüden videoya moduna geçer. | IMAGE | Hayır | - |
 
 ### kling-v3 Girdileri
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model.resolution` | Üretilen video için çözünürlük. Varsayılan `"1080p"`. | COMBO | Evet | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | Üretilen video için en-boy oranı. Görüntüden videoya modunda yok sayılır. | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `çözünürlük` | Üretilen video için çözünürlük. Varsayılan `"1080p"`. | COMBO | Evet | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `en boy oranı` | Üretilen video için en-boy oranı. Görüntüden videoya modunda yok sayılır. | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
 ### kling-3.0-turbo Girdileri
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model.resolution` | Üretilen video için çözünürlük. Varsayılan `"720p"`. | COMBO | Evet | `"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | Üretilen video için en-boy oranı. Görüntüden videoya modunda yok sayılır. | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `çözünürlük` | Üretilen video için çözünürlük. Varsayılan `"720p"`. | COMBO | Evet | `"1080p"`<br>`"720p"` |
+| `en boy oranı` | Üretilen video için en-boy oranı. Görüntüden videoya modunda yok sayılır. | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
 ### Çoklu Çekim Girdileri
 

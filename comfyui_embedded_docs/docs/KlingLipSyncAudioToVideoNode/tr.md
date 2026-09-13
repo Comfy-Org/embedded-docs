@@ -7,8 +7,8 @@ Kling Lip Sync Audio to Video Düğümü, bir video dosyasındaki ağız hareket
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `video` | Dudak senkronizasyonu yapılacak yüzü içeren video dosyası | VIDEO | Evet | - |
-| `audio` | Video ile senkronize edilecek vokalleri içeren ses dosyası | AUDIO | Evet | - |
-| `voice_language` | Ses dosyasındaki sesin dili (varsayılan: "en") | COMBO | Evet | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` |
+| `ses` | Video ile senkronize edilecek vokalleri içeren ses dosyası | AUDIO | Evet | - |
+| `ses_dili` | Ses dosyasındaki sesin dili (varsayılan: "en") | COMBO | Evet | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` |
 
 **Önemli Kısıtlamalar:**
 

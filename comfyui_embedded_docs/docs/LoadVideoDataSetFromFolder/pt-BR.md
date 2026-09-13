@@ -6,7 +6,7 @@ Carrega um conjunto de dados de vídeos de uma pasta selecionada dentro do diret
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `folder` | A pasta que contém os arquivos de vídeo. | COMBO | Sim | Todas as subpastas disponíveis no diretório de entrada do ComfyUI (preenchidas dinamicamente) |
+| `pasta` | A pasta que contém os arquivos de vídeo. | COMBO | Sim | Todas as subpastas disponíveis no diretório de entrada do ComfyUI (preenchidas dinamicamente) |
 
 **Observação:** A pasta selecionada deve ser uma subpasta do diretório de entrada do ComfyUI e deve conter pelo menos um arquivo de vídeo suportado. As extensões suportadas são MP4, AVI, MOV, WEBM, MKV e FLV. Se nenhum arquivo de vídeo suportado for encontrado, ou se o caminho da pasta for resolvido fora do diretório de entrada, o nó lança um erro.
 

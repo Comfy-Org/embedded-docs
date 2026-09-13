@@ -6,13 +6,13 @@ El nodo Grok Image Edit modifica una imagen existente basándose en un prompt de
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | El modelo de IA específico que se utilizará para la edición de imágenes. | COMBO | Sí | `"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"` |
-| `image` | La(s) imagen(es) de entrada que se va(n) a editar. | IMAGE | Sí |  |
-| `prompt` | El prompt de texto utilizado para generar la imagen. Texto multilínea; debe contener al menos un carácter que no sea un espacio en blanco. | STRING | Sí |  |
-| `resolution` | La resolución de la imagen de salida. | COMBO | Sí | `"1K"`<br>`"2K"` |
-| `number_of_images` | Número de imágenes editadas que se van a generar (predeterminado: 1). | INT | Sí | 1 a 10 |
-| `seed` | Semilla que determina si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
-| `aspect_ratio` | La relación de aspecto de la imagen de salida. Solo se permite cuando hay varias imágenes conectadas a la entrada `image` (predeterminado: "auto"). | COMBO | No | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
+| `modelo` | El modelo de IA específico que se utilizará para la edición de imágenes. | COMBO | Sí | `"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"` |
+| `imagen` | La(s) imagen(es) de entrada que se va(n) a editar. | IMAGE | Sí |  |
+| `indicación` | El prompt de texto utilizado para generar la imagen. Texto multilínea; debe contener al menos un carácter que no sea un espacio en blanco. | STRING | Sí |  |
+| `resolución` | La resolución de la imagen de salida. | COMBO | Sí | `"1K"`<br>`"2K"` |
+| `número de imágenes` | Número de imágenes editadas que se van a generar (predeterminado: 1). | INT | Sí | 1 a 10 |
+| `semilla` | Semilla que determina si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
+| `relación de aspecto` | La relación de aspecto de la imagen de salida. Solo se permite cuando hay varias imágenes conectadas a la entrada `image` (predeterminado: "auto"). | COMBO | No | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
 
 **Restricciones importantes:**
 - La entrada `image` admite hasta 3 imágenes, excepto cuando se utiliza el modelo `grok-imagine-image-pro`, que admite solo 1 imagen de entrada.

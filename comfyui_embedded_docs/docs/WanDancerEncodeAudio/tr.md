@@ -6,9 +6,9 @@ Bu düğüm bir ses klibini analiz eder ve onu bir video üretim modeline yön v
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `audio` | Analiz edilecek ve kodlanacak ses girdisi. Ses birden çok kanala sahipse, özellik çıkarımından önce kanalların ortalaması alınarak mono hale getirilir. | AUDIO | Evet | - |
-| `video_frames` | Hedef videodaki kare sayısı. Senkronizasyon için kare hızını hesaplamak üzere kullanılır (varsayılan: 149). | INT | Evet | Min: 1, Maks: 16384 (MAX_RESOLUTION), Adım: 4 |
-| `audio_inject_scale` | Ses özelliklerinin video modeline enjekte edilirken kullanılacak ölçek (varsayılan: 1.0). | FLOAT | Evet | Min: 0.0, Maks: 10.0, Adım: 0.01 |
+| `ses` | Analiz edilecek ve kodlanacak ses girdisi. Ses birden çok kanala sahipse, özellik çıkarımından önce kanalların ortalaması alınarak mono hale getirilir. | AUDIO | Evet | - |
+| `video_kareleri` | Hedef videodaki kare sayısı. Senkronizasyon için kare hızını hesaplamak üzere kullanılır (varsayılan: 149). | INT | Evet | Min: 1, Maks: 16384 (MAX_RESOLUTION), Adım: 4 |
+| `ses_enjeksiyon_ölçeği` | Ses özelliklerinin video modeline enjekte edilirken kullanılacak ölçek (varsayılan: 1.0). | FLOAT | Evet | Min: 0.0, Maks: 10.0, Adım: 0.01 |
 
 ## Çıktılar
 

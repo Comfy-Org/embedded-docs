@@ -6,7 +6,7 @@ Calcula normais suaves por vértice para uma malha e as anexa. Malhas sem normai
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `mesh` | A malha de entrada a ser processada. | MESH | Sim | - |
+| `malha` | A malha de entrada a ser processada. | MESH | Sim | - |
 | `crease_angle` | Arestas cujo ângulo diedral excede este valor (graus) permanecem duras (os vértices são divididos). 180 = totalmente suave; valores menores preservam arestas afiadas (por exemplo, ~30-60 para hard-surface). Padrão: 180.0. | FLOAT | Sim | 0.0 a 180.0 (passo 1.0) |
 
 Quando `crease_angle` é 180 ou maior, a topologia da malha permanece inalterada. Quando definido abaixo de 180, os vértices são divididos ao longo de arestas duras, o que pode aumentar a contagem de vértices. Quando os vértices são divididos, os dados por vértice (cores, UVs e tangentes) são duplicados para corresponder ao novo layout de vértices, e a malha resultante é reconstruída como um lote de tamanho variável.

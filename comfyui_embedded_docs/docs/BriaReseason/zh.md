@@ -8,9 +8,9 @@
 
 | 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 要移动到另一个季节的图像。发送图像前会移除任何 Alpha 通道。 | IMAGE | 是 | - |
-| `season` | 要应用的季节。 | COMBO | 是 | `"spring"`<br>`"summer"`<br>`"autumn"`<br>`"winter"` |
-| `moderation` | 审核设置。选择是否为此请求配置内容审核选项。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
+| `图像` | 要移动到另一个季节的图像。发送图像前会移除任何 Alpha 通道。 | IMAGE | 是 | - |
+| `季节` | 要应用的季节。 | COMBO | 是 | `"spring"`<br>`"summer"`<br>`"autumn"`<br>`"winter"` |
+| `内容审核` | 审核设置。选择是否为此请求配置内容审核选项。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
 
 ### 审核输入
 

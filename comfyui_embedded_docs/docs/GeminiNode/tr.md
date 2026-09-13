@@ -6,7 +6,7 @@ Bu düğüm, kullanıcıların metin yanıtları oluşturmak için Google'ın Ge
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Modele verilen metin girdileri, bir yanıt oluşturmak için kullanılır. Modele ayrıntılı talimatlar, sorular veya bağlam ekleyebilirsiniz. Varsayılan: boş dize. | STRING | Evet | - |
+| `istek` | Modele verilen metin girdileri, bir yanıt oluşturmak için kullanılır. Modele ayrıntılı talimatlar, sorular veya bağlam ekleyebilirsiniz. Varsayılan: boş dize. | STRING | Evet | - |
 | `model` | Yanıt oluşturmak için kullanılacak Gemini modeli. Varsayılan: gemini-3-1-pro. | COMBO | Evet | "gemini-2.5-pro"<br>"gemini-2.5-flash"<br>"gemini-3-pro-preview"<br>"gemini-3-1-pro"<br>"gemini-3-1-flash-lite" |
 | `seed` | seed belirli bir değere sabitlendiğinde, model tekrarlanan istekler için aynı yanıtı sağlamak üzere elinden geleni yapar. Deterministik çıktı garanti edilmez. Ayrıca modeli veya sıcaklık gibi parametre ayarlarını değiştirmek, aynı seed değerini kullansanız bile yanıtta farklılıklara neden olabilir. Varsayılan olarak rastgele bir seed değeri kullanılır. Varsayılan: 42. | INT | Evet | 0 - 18446744073709551615 |
 | `images` | Model için bağlam olarak kullanılacak isteğe bağlı görsel(ler). Birden fazla görsel eklemek için Batch Images düğümünü kullanabilirsiniz. Varsayılan: Yok. | IMAGE | Hayır | - |

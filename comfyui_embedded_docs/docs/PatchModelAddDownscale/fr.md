@@ -6,14 +6,14 @@ PatchModelAddDownscale (Kohya Deep Shrink) applique la technique Kohya Deep Shri
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle auquel appliquer le patch de réduction d'échelle | MODEL | Oui | - |
-| `block_number` | Le numéro de bloc spécifique où la réduction d'échelle sera appliquée (par défaut : 3) | INT | Oui | 1-32 |
-| `downscale_factor` | Le facteur par lequel réduire l'échelle des caractéristiques (par défaut : 2.0) | FLOAT | Oui | 0.1-9.0 |
-| `start_percent` | Le point de départ dans le processus de débruitage où commence la réduction d'échelle (par défaut : 0.0) | FLOAT | Oui | 0.0-1.0 |
-| `end_percent` | Le point de fin dans le processus de débruitage où la réduction d'échelle s'arrête (par défaut : 0.35) | FLOAT | Oui | 0.0-1.0 |
-| `downscale_after_skip` | Indique s'il faut appliquer la réduction d'échelle après les connexions de saut (par défaut : True) | BOOLEAN | Oui | - |
-| `downscale_method` | La méthode d'interpolation utilisée pour les opérations de réduction d'échelle (par défaut : "bicubic") | COMBO | Oui | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
-| `upscale_method` | La méthode d'interpolation utilisée pour les opérations d'agrandissement d'échelle (par défaut : "bicubic") | COMBO | Oui | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `modèle` | Le modèle auquel appliquer le patch de réduction d'échelle | MODEL | Oui | - |
+| `numéro de bloc` | Le numéro de bloc spécifique où la réduction d'échelle sera appliquée (par défaut : 3) | INT | Oui | 1-32 |
+| `facteur de réduction` | Le facteur par lequel réduire l'échelle des caractéristiques (par défaut : 2.0) | FLOAT | Oui | 0.1-9.0 |
+| `pourcentage de départ` | Le point de départ dans le processus de débruitage où commence la réduction d'échelle (par défaut : 0.0) | FLOAT | Oui | 0.0-1.0 |
+| `pourcentage de fin` | Le point de fin dans le processus de débruitage où la réduction d'échelle s'arrête (par défaut : 0.35) | FLOAT | Oui | 0.0-1.0 |
+| `réduction après saut` | Indique s'il faut appliquer la réduction d'échelle après les connexions de saut (par défaut : True) | BOOLEAN | Oui | - |
+| `méthode de réduction` | La méthode d'interpolation utilisée pour les opérations de réduction d'échelle (par défaut : "bicubic") | COMBO | Oui | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `méthode d'agrandissement` | La méthode d'interpolation utilisée pour les opérations d'agrandissement d'échelle (par défaut : "bicubic") | COMBO | Oui | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 
 Le patch de réduction d'échelle est appliqué uniquement lorsque l'étape de débruitage actuelle se situe dans la plage définie par `start_percent` et `end_percent`, et uniquement au bloc sélectionné par `block_number`. Lorsque `downscale_after_skip` est activé, le patch est appliqué après la connexion de saut ; lorsqu'il est désactivé, il est appliqué avant la connexion de saut. Les caractéristiques sont ensuite redimensionnées à leur taille d'origine, mais uniquement lorsque la taille actuelle des caractéristiques ne correspond plus à la taille enregistrée avant la réduction d'échelle.
 

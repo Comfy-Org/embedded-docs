@@ -9,9 +9,9 @@ SamplerDPMPP_SDE, örnekleme sürecinde kullanılmak üzere bir DPM++ SDE (Stoka
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `eta` | Örnekleme sürecinin stokastikliğini kontrol eder (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 100.0 |
-| `s_noise` | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 100.0 |
+| `s_gürültü` | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 100.0 |
 | `r` | Örnekleme davranışını etkileyen bir parametredir (varsayılan: 0.5) | FLOAT | Evet | 0.0 - 100.0 |
-| `noise_device` | Gürültü hesaplamalarının gerçekleştirileceği aygıtı seçer. "cpu" olarak ayarlandığında `dpmpp_sde` örnekleyicisi oluşturulur; "gpu" olarak ayarlandığında `dpmpp_sde_gpu` örnekleyicisi oluşturulur (varsayılan: "gpu") | COMBO | Evet | "gpu"<br>"cpu" |
+| `gürültü_cihazı` | Gürültü hesaplamalarının gerçekleştirileceği aygıtı seçer. "cpu" olarak ayarlandığında `dpmpp_sde` örnekleyicisi oluşturulur; "gpu" olarak ayarlandığında `dpmpp_sde_gpu` örnekleyicisi oluşturulur (varsayılan: "gpu") | COMBO | Evet | "gpu"<br>"cpu" |
 
 Not: Tüm girdiler gelişmiş parametreler olarak işaretlenmiştir. `noise_device` seçimi, hangi örnekleyici varyantının oluşturulacağını değiştirir: "cpu" `dpmpp_sde` ile eşleşir ve "gpu" `dpmpp_sde_gpu` ile eşleşir.
 

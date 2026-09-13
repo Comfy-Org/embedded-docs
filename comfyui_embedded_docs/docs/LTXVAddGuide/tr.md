@@ -6,13 +6,13 @@ LTXVAddGuide düğümü, giriş görüntülerini veya videolarını bir VAE kodl
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Anahtar kare kılavuzlaması ile değiştirilecek pozitif koşullandırma girişi. | CONDITIONING | Evet | - |
-| `negative` | Anahtar kare kılavuzlaması ile değiştirilecek negatif koşullandırma girişi. | CONDITIONING | Evet | - |
+| `pozitif` | Anahtar kare kılavuzlaması ile değiştirilecek pozitif koşullandırma girişi. | CONDITIONING | Evet | - |
+| `negatif` | Anahtar kare kılavuzlaması ile değiştirilecek negatif koşullandırma girişi. | CONDITIONING | Evet | - |
 | `vae` | Giriş görüntü/video karelerini kodlamak için kullanılan VAE modeli. | VAE | Evet | - |
-| `latent` | Koşullandırma karelerini alacak giriş latent dizisi. | LATENT | Evet | - |
-| `image` | Latent videoyu koşullandırmak için kullanılacak görüntü veya video. 8*n + 1 kare olmalıdır. Video 8*n + 1 kare değilse, en yakın 8*n + 1 kareye kırpılır. | IMAGE | Evet | - |
-| `frame_idx` | Koşullandırmanın başlatılacağı kare indeksi. Tek karelik görüntüler veya 1-8 karelik videolar için herhangi bir frame_idx değeri kabul edilebilir. 9+ kareli videolar için frame_idx 8'e bölünebilir olmalıdır; aksi takdirde en yakın 8'in katına aşağı yuvarlanır. Negatif değerler videonun sonundan itibaren sayılır. Varsayılan: 0. | INT | Evet | -9999 ile 9999 |
-| `strength` | Koşullandırma etkisinin gücü; 1.0 tam koşullandırma uygular ve 0.0 hiç koşullandırma uygulamaz. Varsayılan: 1.0. | FLOAT | Evet | 0.0 ile 10.0 |
+| `gizli` | Koşullandırma karelerini alacak giriş latent dizisi. | LATENT | Evet | - |
+| `görüntü` | Latent videoyu koşullandırmak için kullanılacak görüntü veya video. 8*n + 1 kare olmalıdır. Video 8*n + 1 kare değilse, en yakın 8*n + 1 kareye kırpılır. | IMAGE | Evet | - |
+| `kare_indeksi` | Koşullandırmanın başlatılacağı kare indeksi. Tek karelik görüntüler veya 1-8 karelik videolar için herhangi bir frame_idx değeri kabul edilebilir. 9+ kareli videolar için frame_idx 8'e bölünebilir olmalıdır; aksi takdirde en yakın 8'in katına aşağı yuvarlanır. Negatif değerler videonun sonundan itibaren sayılır. Varsayılan: 0. | INT | Evet | -9999 ile 9999 |
+| `güç` | Koşullandırma etkisinin gücü; 1.0 tam koşullandırma uygular ve 0.0 hiç koşullandırma uygulamaz. Varsayılan: 1.0. | FLOAT | Evet | 0.0 ile 10.0 |
 | `attention_mask` | İsteğe bağlı piksel uzayı uzamsal maskesi. Öz-dikkat yoluyla bölge başına koşullandırma etkisini kontrol eder; strength ile çarpılır. | MASK | Hayır | - |
 | `iclora_parameters` | Bir Get IC-LoRA Parameters düğümünden isteğe bağlı IC-LoRA parametreleri. Belirli IC-LoRA'ların gerektirdiği şekilde kılavuz işlemeyi ayarlamak için kullanılır (örn. reference_downscale_factor > 1 olanlar). Zincirlendiğinde, her LTXVAddGuide yalnızca kendisine bağlanan parametreleri kullanır. | IC_LORA_PARAMETERS | Hayır | - |
 

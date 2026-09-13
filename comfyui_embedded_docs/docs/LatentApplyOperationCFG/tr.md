@@ -7,7 +7,7 @@ The LatentApplyOperationCFG düğümü, bir modelin örnekleme sürecinin sını
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | CFG işleminin uygulanacağı model | MODEL | Evet | - |
-| `operation` | CFG örnekleme sürecinde uygulanacak latent işlemi | LATENT_OPERATION | Evet | - |
+| `işlem` | CFG örnekleme sürecinde uygulanacak latent işlemi | LATENT_OPERATION | Evet | - |
 
 Not: Bu düğüm deneysel olarak işaretlenmiştir. İşlem, CFG örnekleme sürecinde modelin koşullandırma çıktılarına uygulanır. İki koşullandırma çıktısı mevcut olduğunda, işlem birinci ve ikinci çıktı arasındaki farka uygulanır ve ikinci çıktı sonuca geri eklenir. Yalnızca bir koşullandırma çıktısı mevcut olduğunda, işlem doğrudan ona uygulanır.
 

@@ -9,9 +9,9 @@ SamplerDPMPP_SDE crée un échantillonneur DPM++ SDE (équation différentielle 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `eta` | Contrôle le caractère stochastique du processus d'échantillonnage (par défaut : 1.0) | FLOAT | Oui | 0.0 - 100.0 |
-| `s_noise` | Contrôle la quantité de bruit ajoutée pendant l'échantillonnage (par défaut : 1.0) | FLOAT | Oui | 0.0 - 100.0 |
+| `s_bruit` | Contrôle la quantité de bruit ajoutée pendant l'échantillonnage (par défaut : 1.0) | FLOAT | Oui | 0.0 - 100.0 |
 | `r` | Un paramètre qui influence le comportement d'échantillonnage (par défaut : 0.5) | FLOAT | Oui | 0.0 - 100.0 |
-| `noise_device` | Sélectionne le périphérique sur lequel les calculs de bruit sont effectués. Lorsqu'il est défini sur "cpu", l'échantillonneur `dpmpp_sde` est créé ; lorsqu'il est défini sur "gpu", l'échantillonneur `dpmpp_sde_gpu` est créé (par défaut : "gpu") | COMBO | Oui | "gpu"<br>"cpu" |
+| `appareil_bruit` | Sélectionne le périphérique sur lequel les calculs de bruit sont effectués. Lorsqu'il est défini sur "cpu", l'échantillonneur `dpmpp_sde` est créé ; lorsqu'il est défini sur "gpu", l'échantillonneur `dpmpp_sde_gpu` est créé (par défaut : "gpu") | COMBO | Oui | "gpu"<br>"cpu" |
 
 Remarque : Toutes les entrées sont marquées comme paramètres avancés. La sélection `noise_device` change la variante d'échantillonneur créée : "cpu" correspond à `dpmpp_sde` et "gpu" correspond à `dpmpp_sde_gpu`.
 

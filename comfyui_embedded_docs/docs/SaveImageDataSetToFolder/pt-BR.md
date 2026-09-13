@@ -6,10 +6,10 @@ Este nó salva uma lista de imagens em uma pasta especificada dentro do diretór
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `images` | Lista de imagens a salvar. | IMAGE | Sim | N/A |
-| `folder_name` | Nome da pasta para salvar as imagens (dentro do diretório de saída). Padrão: "dataset". | STRING | Não | N/A |
-| `filename_prefix` | Prefixo para os nomes dos arquivos de imagem salvos. Padrão: "image". Parâmetro avançado. | STRING | Não | N/A |
-| `mode` | Se deve sobrescrever arquivos existentes ou incrementar os nomes de arquivo para evitar sobrescrita. Padrão: "overwrite". | COMBO | Não | "overwrite"<br>"increment" |
+| `imagens` | Lista de imagens a salvar. | IMAGE | Sim | N/A |
+| `nome_da_pasta` | Nome da pasta para salvar as imagens (dentro do diretório de saída). Padrão: "dataset". | STRING | Não | N/A |
+| `prefixo_do_arquivo` | Prefixo para os nomes dos arquivos de imagem salvos. Padrão: "image". Parâmetro avançado. | STRING | Não | N/A |
+| `modo` | Se deve sobrescrever arquivos existentes ou incrementar os nomes de arquivo para evitar sobrescrita. Padrão: "overwrite". | COMBO | Não | "overwrite"<br>"increment" |
 
 **Notas:**
 

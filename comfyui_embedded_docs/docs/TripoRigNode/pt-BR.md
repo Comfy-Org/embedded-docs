@@ -6,7 +6,7 @@ Este nó recebe um modelo 3D Tripo existente e cria uma versão com rig dele, ou
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `original_model_task_id` | O ID da tarefa do modelo 3D original a receber rig. Normalmente é o ID produzido por um nó anterior de geração de modelo Tripo. | MODEL_TASK_ID | Sim | - |
+| `id_da_tarefa_do_modelo_original` | O ID da tarefa do modelo 3D original a receber rig. Normalmente é o ID produzido por um nó anterior de geração de modelo Tripo. | MODEL_TASK_ID | Sim | - |
 | `model_version` | Versão do modelo de rig a usar. v1.0: apenas personagens humanoides (bípedes), mais de 90 presets de animação. v2.5: criaturas não humanoides (quadrúpedes, hexápodes, octópodes, aviárias, serpentinas, aquáticas). Padrão: `v1.0-20240301`. | COMBO | Não | "v1.0-20240301"<br>"v2.5-20260210" |
 | `rig_type` | Tipo de esqueleto. "auto" executa primeiro a verificação gratuita de rig da Tripo e usa o tipo recomendado. Padrão: "auto". | COMBO | Não | "auto"<br>"biped"<br>"quadruped"<br>"hexapod"<br>"octopod"<br>"avian"<br>"serpentine"<br>"aquatic" |
 | `spec` | Nomenclatura dos ossos: nativa da Tripo ou compatível com Mixamo. A Tripo não consegue fazer retarget de seus presets de animação em um rig v1.0 criado com a especificação mixamo; use tripo para o Tripo: Retarget rigged model. Padrão: "tripo". | COMBO | Não | "tripo"<br>"mixamo" |

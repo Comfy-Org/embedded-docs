@@ -9,7 +9,7 @@ ByteDance Seedream 4.5 y 5.0 genera imágenes a partir de un prompt de texto (te
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt de texto para crear o editar una imagen. No debe estar vacío después de recortar los espacios en blanco. | STRING | Sí | Texto multilínea |
-| `model` | Selecciona el modelo Seedream a usar. Cada modelo expone su propio conjunto de subparámetros y límites a continuación. | DYNAMIC_COMBO | Sí | "seedream 5.0 pro"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
+| `modelo` | Selecciona el modelo Seedream a usar. Cada modelo expone su propio conjunto de subparámetros y límites a continuación. | DYNAMIC_COMBO | Sí | "seedream 5.0 pro"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
 
 ### Entradas de Seedream 5.0 Pro (seedream 5.0 pro)
 

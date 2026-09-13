@@ -6,20 +6,20 @@ Le nœud WanSCAILToVideo prépare le conditionnement et un espace latent vide po
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `positive` | L'entrée de conditionnement positive. | CONDITIONING | Oui | - |
-| `negative` | L'entrée de conditionnement négative. | CONDITIONING | Oui | - |
+| `positif` | L'entrée de conditionnement positive. | CONDITIONING | Oui | - |
+| `négatif` | L'entrée de conditionnement négative. | CONDITIONING | Oui | - |
 | `vae` | Le modèle VAE utilisé pour encoder les images et les trames vidéo. | VAE | Oui | - |
-| `width` | La largeur de la vidéo de sortie en pixels (par défaut : 512). Les valeurs augmentent par pas de 32. | INT | Oui | 32 à MAX_RESOLUTION |
-| `height` | La hauteur de la vidéo de sortie en pixels (par défaut : 896). Les valeurs augmentent par pas de 32. | INT | Oui | 32 à MAX_RESOLUTION |
-| `length` | Le nombre de trames dans la vidéo (par défaut : 81). Les valeurs augmentent par pas de 4. | INT | Oui | 1 à MAX_RESOLUTION |
-| `batch_size` | Le nombre de vidéos à générer dans un lot (par défaut : 1). | INT | Oui | 1 à 4096 |
-| `pose_video` | Vidéo utilisée pour le conditionnement de pose. Sera réduite à la moitié de la résolution de la vidéo principale. | IMAGE | Non | - |
+| `largeur` | La largeur de la vidéo de sortie en pixels (par défaut : 512). Les valeurs augmentent par pas de 32. | INT | Oui | 32 à MAX_RESOLUTION |
+| `hauteur` | La hauteur de la vidéo de sortie en pixels (par défaut : 896). Les valeurs augmentent par pas de 32. | INT | Oui | 32 à MAX_RESOLUTION |
+| `longueur` | Le nombre de trames dans la vidéo (par défaut : 81). Les valeurs augmentent par pas de 4. | INT | Oui | 1 à MAX_RESOLUTION |
+| `taille_du_lot` | Le nombre de vidéos à générer dans un lot (par défaut : 1). | INT | Oui | 1 à 4096 |
+| `vidéo_de_pose` | Vidéo utilisée pour le conditionnement de pose. Sera réduite à la moitié de la résolution de la vidéo principale. | IMAGE | Non | - |
 | `pose_video_mask` | SCAIL-2 uniquement. Vidéo de masque SAM3 coloré par identité à la même résolution que `pose_video`. | IMAGE | Non | - |
 | `replacement_mode` | SCAIL-2 uniquement. False = Mode Animation (`pose_video_mask` doit avoir un fond noir). True = Mode Remplacement (`pose_video_mask` doit avoir un fond blanc). (par défaut : False) | BOOLEAN | Non | - |
-| `pose_strength` | Force du latent de pose. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 10.0 |
-| `pose_start` | Étape de début du conditionnement de pose. (par défaut : 0.0) | FLOAT | Oui | 0.0 à 1.0 |
-| `pose_end` | Étape de fin du conditionnement de pose. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 |
-| `reference_image` | Image de référence. La première image est la référence principale (y composer toutes les identités). SCAIL-2 : les images supplémentaires du lot sont utilisées comme vues additionnelles (vue arrière, gros plan, arrière-plan occulté), chacune nécessitant un `reference_image_mask` correspondant dans la couleur de cette identité. | IMAGE | Non | - |
+| `force_de_pose` | Force du latent de pose. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 10.0 |
+| `début_de_pose` | Étape de début du conditionnement de pose. (par défaut : 0.0) | FLOAT | Oui | 0.0 à 1.0 |
+| `fin_de_pose` | Étape de fin du conditionnement de pose. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 |
+| `image_de_référence` | Image de référence. La première image est la référence principale (y composer toutes les identités). SCAIL-2 : les images supplémentaires du lot sont utilisées comme vues additionnelles (vue arrière, gros plan, arrière-plan occulté), chacune nécessitant un `reference_image_mask` correspondant dans la couleur de cette identité. | IMAGE | Non | - |
 | `reference_image_mask` | SCAIL-2 uniquement. Masque de référence coloré, lot correspondant à `reference_image` (le premier = masque de référence principal, les autres = masques d'identité pour les images `reference_image` supplémentaires). | IMAGE | Non | - |
 | `clip_vision_output` | Caractéristiques de vision CLIP pour le conditionnement. Le modèle est entraîné avec un redimensionnement étiré selon le rapport d'aspect. | CLIP_VISION_OUTPUT | Non | - |
 | `video_frame_offset` | Trame de sortie cumulée à laquelle ce bloc commence. À connecter depuis la sortie `video_frame_offset` du bloc précédent. (par défaut : 0) | INT | Oui | 0 à MAX_RESOLUTION |

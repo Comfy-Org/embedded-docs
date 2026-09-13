@@ -6,8 +6,8 @@ O nó LTXVCropGuides remove dados de orientação de keyframe de um fluxo de tra
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `positive` | A entrada de condicionamento positivo contendo informações de orientação para a geração. O número de keyframes que ela contém determina quantos quadros são recortados do latent. | CONDITIONING | Sim | - |
-| `negative` | A entrada de condicionamento negativo contendo informações de orientação sobre o que evitar na geração. Seus dados de keyframe são limpos junto com o condicionamento positivo. | CONDITIONING | Sim | - |
+| `positivo` | A entrada de condicionamento positivo contendo informações de orientação para a geração. O número de keyframes que ela contém determina quantos quadros são recortados do latent. | CONDITIONING | Sim | - |
+| `negativo` | A entrada de condicionamento negativo contendo informações de orientação sobre o que evitar na geração. Seus dados de keyframe são limpos junto com o condicionamento positivo. | CONDITIONING | Sim | - |
 | `latent` | A representação latente contendo amostras de imagem e dados de máscara de ruído. Quando keyframes estão presentes, os quadros do keyframe final são removidos tanto das amostras quanto da máscara de ruído. | LATENT | Sim | - |
 
 Nota: O recorte só ocorre quando índices de keyframe são detectados no condicionamento positivo. Se nenhum keyframe for detectado, os condicionamentos positivo e negativo são retornados sem alterações, enquanto o latent ainda é retornado com um tensor de amostra clonado e uma máscara de ruído explícita (uma máscara preenchida com uns é criada se o latent de entrada não tiver nenhuma).

@@ -6,12 +6,12 @@ El nodo LTXVScheduler genera valores sigma para un proceso de muestreo personali
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `steps` | Número de pasos de muestreo (predeterminado: 20) | INT | Sí | 1-10000 |
-| `max_shift` | Valor de desplazamiento máximo utilizado en el cálculo de sigma (predeterminado: 2.05) | FLOAT | Sí | 0.0-100.0 (paso: 0.01) |
-| `base_shift` | Valor de desplazamiento base utilizado en el cálculo de sigma (predeterminado: 0.95) | FLOAT | Sí | 0.0-100.0 (paso: 0.01) |
-| `stretch` | Estira los valores sigma para que estén en el rango [terminal, 1] (predeterminado: True) | BOOLEAN | Sí | True/False |
+| `pasos` | Número de pasos de muestreo (predeterminado: 20) | INT | Sí | 1-10000 |
+| `max_desplazamiento` | Valor de desplazamiento máximo utilizado en el cálculo de sigma (predeterminado: 2.05) | FLOAT | Sí | 0.0-100.0 (paso: 0.01) |
+| `base_desplazamiento` | Valor de desplazamiento base utilizado en el cálculo de sigma (predeterminado: 0.95) | FLOAT | Sí | 0.0-100.0 (paso: 0.01) |
+| `estiramiento` | Estira los valores sigma para que estén en el rango [terminal, 1] (predeterminado: True) | BOOLEAN | Sí | True/False |
 | `terminal` | El valor terminal de los valores sigma después del estiramiento (predeterminado: 0.1). Se usa solo cuando `stretch` está habilitado. | FLOAT | Sí | 0.0-0.99 (paso: 0.01) |
-| `latent` | Entrada `latent` opcional utilizada para calcular el recuento de tokens para el ajuste de sigma. Cuando no se proporciona, se usa un recuento de tokens predeterminado de 4096. | LATENT | No | - |
+| `latente` | Entrada `latent` opcional utilizada para calcular el recuento de tokens para el ajuste de sigma. Cuando no se proporciona, se usa un recuento de tokens predeterminado de 4096. | LATENT | No | - |
 
 **Nota:** Cuando `stretch` está habilitado, los valores sigma distintos de cero se reescalan para que el último valor sigma distinto de cero sea igual al valor `terminal`.
 

@@ -6,7 +6,7 @@ El nodo AudioEncoderEncode convierte audio en una representación codificada uti
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `audio_encoder` | El modelo de codificador de audio utilizado para procesar la entrada de audio | AUDIO_ENCODER | Sí | - |
+| `codificador_audio` | El modelo de codificador de audio utilizado para procesar la entrada de audio | AUDIO_ENCODER | Sí | - |
 | `audio` | Los datos de audio que contienen la información de la forma de onda y la frecuencia de muestreo | AUDIO | Sí | - |
 
 ## Salidas

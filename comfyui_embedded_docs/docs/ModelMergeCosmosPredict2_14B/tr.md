@@ -37,17 +37,17 @@ ModelMergeCosmosPredict2_14B düğümü, iki AI modelini eşleşen iç bileşenl
 | `blocks.22.` | Blok 22 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.23.` | Blok 23 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `blocks.24.` | Blok 24 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.25.` | Blok 25 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.26.` | Blok 26 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.27.` | Blok 27 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.28.` | Blok 28 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.29.` | Blok 29 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.30.` | Blok 30 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.31.` | Blok 31 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.32.` | Blok 32 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.33.` | Blok 33 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.34.` | Blok 34 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `blocks.35.` | Blok 35 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.25.` | Blok 25 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.26.` | Blok 26 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.27.` | Blok 27 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.28.` | Blok 28 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.29.` | Blok 29 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.30.` | Blok 30 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.31.` | Blok 31 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.32.` | Blok 32 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.33.` | Blok 33 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.34.` | Blok 34 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `bloklar.35.` | Blok 35 karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `final_layer.` | Son katman karıştırma ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 
 **Not:** Tüm karıştırma ağırlığı parametreleri 0.0 ile 1.0 arasında 0.01 adımlarla değer kabul eder; burada 0.0 ilgili bileşen için model2'den hiç katkı olmadığı, 1.0 ise model2'den tam katkı olduğu anlamına gelir.

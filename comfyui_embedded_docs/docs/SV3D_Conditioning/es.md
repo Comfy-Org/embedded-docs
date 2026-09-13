@@ -7,12 +7,12 @@ SV3D_Conditioning prepara datos de condicionamiento para la generación de video
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `clip_vision` | El modelo CLIP vision usado para codificar la imagen de entrada | CLIP_VISION | Sí | - |
-| `init_image` | La imagen inicial que sirve como punto de partida para la generación de video 3D | IMAGE | Sí | - |
+| `imagen_inicial` | La imagen inicial que sirve como punto de partida para la generación de video 3D | IMAGE | Sí | - |
 | `vae` | El modelo VAE usado para codificar la imagen en el espacio latente | VAE | Sí | - |
-| `width` | El ancho de salida para los fotogramas de video generados (predeterminado: 576, paso de 8) | INT | Sí | 16 a MAX_RESOLUTION |
-| `height` | La altura de salida para los fotogramas de video generados (predeterminado: 576, paso de 8) | INT | Sí | 16 a MAX_RESOLUTION |
-| `video_frames` | El número de fotogramas a generar para la secuencia de video (predeterminado: 21) | INT | Sí | 1 a 4096 |
-| `elevation` | El ángulo de elevación de la cámara en grados para la vista 3D (predeterminado: 0.0, paso de 0.1) | FLOAT | Sí | -90.0 a 90.0 |
+| `ancho` | El ancho de salida para los fotogramas de video generados (predeterminado: 576, paso de 8) | INT | Sí | 16 a MAX_RESOLUTION |
+| `altura` | La altura de salida para los fotogramas de video generados (predeterminado: 576, paso de 8) | INT | Sí | 16 a MAX_RESOLUTION |
+| `cuadros_de_video` | El número de fotogramas a generar para la secuencia de video (predeterminado: 21) | INT | Sí | 1 a 4096 |
+| `elevación` | El ángulo de elevación de la cámara en grados para la vista 3D (predeterminado: 0.0, paso de 0.1) | FLOAT | Sí | -90.0 a 90.0 |
 
 Nota: El acimut de la cámara comienza en 0 grados y aumenta una cantidad constante en cada fotograma, de modo que la cámara completa una órbita completa de 360 grados alrededor del objeto a lo largo de los fotogramas generados. El incremento por fotograma se calcula como 360 dividido por (`video_frames` - 1), usando un divisor mínimo de 2 cuando solo se solicita un fotograma. El valor de `elevation` permanece constante para cada fotograma.
 

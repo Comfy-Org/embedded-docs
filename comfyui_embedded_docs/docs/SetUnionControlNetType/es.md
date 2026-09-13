@@ -6,8 +6,8 @@ El nodo SetUnionControlNetType permite elegir qué tipo de control utiliza una r
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `control_net` | La red de control que se modificará con una nueva configuración de tipo | CONTROL_NET | Sí | - |
-| `type` | El tipo de red de control que se aplicará. Use `"auto"` para la detección automática de tipo o seleccione un tipo de red de control específico entre las opciones disponibles (predeterminado: `"auto"`) | COMBO | Sí | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/softedge"`<br>`"canny"`<br>`"scribble"`<br>`"seg"`<br>`"tile"`<br>`"inpaint"`<br>`"lineart"`<br>`"blur"`<br>`"mlsd"`<br>`"normalbae"`<br>`"mask"` |
+| `controlnet` | La red de control que se modificará con una nueva configuración de tipo | CONTROL_NET | Sí | - |
+| `tipo` | El tipo de red de control que se aplicará. Use `"auto"` para la detección automática de tipo o seleccione un tipo de red de control específico entre las opciones disponibles (predeterminado: `"auto"`) | COMBO | Sí | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/softedge"`<br>`"canny"`<br>`"scribble"`<br>`"seg"`<br>`"tile"`<br>`"inpaint"`<br>`"lineart"`<br>`"blur"`<br>`"mlsd"`<br>`"normalbae"`<br>`"mask"` |
 
 Cuando `type` se establece en `"auto"`, el nodo borra el tipo de control almacenado para que el tipo pueda detectarse automáticamente. Cuando se selecciona un tipo específico, el nodo almacena el tipo de control correspondiente en la red de control copiada. La red de control de entrada nunca se modifica en el lugar; en su lugar, se devuelve una copia modificada.
 

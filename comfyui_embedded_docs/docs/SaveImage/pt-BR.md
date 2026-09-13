@@ -6,8 +6,8 @@ O nó SaveImage salva as imagens de entrada como arquivos PNG no seu diretório 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `images` | As imagens a salvar. | IMAGE | Sim | - |
-| `filename_prefix` | O prefixo do arquivo a ser salvo. Isso pode incluir informações de formatação, como `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%`, para incluir valores de nós (padrão: "ComfyUI"). | STRING | Sim | - |
+| `imagens` | As imagens a salvar. | IMAGE | Sim | - |
+| `prefixo_do_arquivo` | O prefixo do arquivo a ser salvo. Isso pode incluir informações de formatação, como `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%`, para incluir valores de nós (padrão: "ComfyUI"). | STRING | Sim | - |
 
 O nó também recebe duas entradas ocultas, `prompt` e `extra_pnginfo`, que são preenchidas automaticamente pelo ComfyUI com o prompt do workflow e informações PNG extras. Quando os metadados estão habilitados, essas informações são incorporadas como metadados de texto em cada arquivo PNG salvo.
 

@@ -6,11 +6,11 @@ O nó SamplerCustomAdvanced realiza amostragem avançada no espaço latente usan
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `noise` | O gerador de ruído que fornece o padrão de ruído inicial e a seed para o processo de amostragem | NOISE | Sim | - |
-| `guider` | O modelo de orientação que direciona o processo de amostragem em direção à saída desejada | GUIDER | Sim | - |
-| `sampler` | O algoritmo de amostragem que define como o espaço latente é percorrido durante a geração | SAMPLER | Sim | - |
+| `ruído` | O gerador de ruído que fornece o padrão de ruído inicial e a seed para o processo de amostragem | NOISE | Sim | - |
+| `guia` | O modelo de orientação que direciona o processo de amostragem em direção à saída desejada | GUIDER | Sim | - |
+| `amostrador` | O algoritmo de amostragem que define como o espaço latente é percorrido durante a geração | SAMPLER | Sim | - |
 | `sigmas` | O agendamento de sigma que controla os níveis de ruído ao longo das etapas de amostragem | SIGMAS | Sim | - |
-| `latent_image` | A representação latente inicial que serve como ponto de partida para a amostragem. Suporta uma chave opcional `noise_mask` para remoção seletiva de ruído e chaves opcionais `downscale_ratio_spacial` e `downscale_ratio_temporal` para manipulação avançada do latente | LATENT | Sim | - |
+| `imagem_latente` | A representação latente inicial que serve como ponto de partida para a amostragem. Suporta uma chave opcional `noise_mask` para remoção seletiva de ruído e chaves opcionais `downscale_ratio_spacial` e `downscale_ratio_temporal` para manipulação avançada do latente | LATENT | Sim | - |
 
 ## Saídas
 

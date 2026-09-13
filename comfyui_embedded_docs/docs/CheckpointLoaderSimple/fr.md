@@ -6,7 +6,7 @@ Charge un fichier de checkpoint de modèle de diffusion et le divise en trois co
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `ckpt_name` | Le nom du checkpoint (modèle) à charger. Sélectionnez le nom du fichier de modèle de checkpoint, qui détermine le modèle d’IA utilisé pour la génération d’images suivante. | COMBO | Oui | Tous les fichiers de modèle trouvés dans le dossier des checkpoints |
+| `nom_ckpt` | Le nom du checkpoint (modèle) à charger. Sélectionnez le nom du fichier de modèle de checkpoint, qui détermine le modèle d’IA utilisé pour la génération d’images suivante. | COMBO | Oui | Tous les fichiers de modèle trouvés dans le dossier des checkpoints |
 
 **Remarque :** Si de nouveaux fichiers de modèle sont ajoutés pendant que ComfyUI est en cours d’exécution, vous devez actualiser le navigateur (Ctrl+R) pour voir les nouveaux fichiers dans la liste déroulante.
 

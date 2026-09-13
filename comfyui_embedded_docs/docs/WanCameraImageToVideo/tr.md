@@ -6,16 +6,16 @@ WanCameraImageToVideo düğümü, görüntülerden kamera kontrollü video üret
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `positive` | Video üretimi için pozitif koşullandırma istemleri | CONDITIONING | Evet | - |
-| `negative` | Video üretiminde kaçınılacak negatif koşullandırma istemleri | CONDITIONING | Evet | - |
+| `pozitif` | Video üretimi için pozitif koşullandırma istemleri | CONDITIONING | Evet | - |
+| `negatif` | Video üretiminde kaçınılacak negatif koşullandırma istemleri | CONDITIONING | Evet | - |
 | `vae` | Görüntüleri latent uzaya kodlamak için VAE modeli | VAE | Evet | - |
-| `width` | Çıktı video genişliği piksel cinsinden (varsayılan: 832, adım: 16) | INT | Evet | 16 - MAX_RESOLUTION |
-| `height` | Çıktı video yüksekliği piksel cinsinden (varsayılan: 480, adım: 16) | INT | Evet | 16 - MAX_RESOLUTION |
-| `length` | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 - MAX_RESOLUTION |
-| `batch_size` | Aynı anda üretilecek video sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
-| `clip_vision_output` | Ek koşullandırma için isteğe bağlı CLIP görü çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
-| `start_image` | Video dizisini başlatmak için isteğe bağlı başlangıç görüntüsü. Sağlandığında, yalnızca ilk `length` kare kullanılır ve görüntü belirtilen `width` ile `height` değerlerine uyacak şekilde yeniden boyutlandırılır. Dizinin ilk kareleri latent içine kodlanır ve başlangıç karelerini üretilen içerikle harmanlamak için bir maske uygulanır. | IMAGE | Hayır | - |
-| `camera_conditions` | Video üretimi için isteğe bağlı kamera gömme koşulları. Sağlandığında, bu koşullar hem pozitif hem de negatif koşullandırmaya uygulanır. | WAN_CAMERA_EMBEDDING | Hayır | - |
+| `genişlik` | Çıktı video genişliği piksel cinsinden (varsayılan: 832, adım: 16) | INT | Evet | 16 - MAX_RESOLUTION |
+| `yükseklik` | Çıktı video yüksekliği piksel cinsinden (varsayılan: 480, adım: 16) | INT | Evet | 16 - MAX_RESOLUTION |
+| `uzunluk` | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 - MAX_RESOLUTION |
+| `toplu_iş_boyutu` | Aynı anda üretilecek video sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `clip_vision_çıktısı` | Ek koşullandırma için isteğe bağlı CLIP görü çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
+| `başlangıç_görüntüsü` | Video dizisini başlatmak için isteğe bağlı başlangıç görüntüsü. Sağlandığında, yalnızca ilk `length` kare kullanılır ve görüntü belirtilen `width` ile `height` değerlerine uyacak şekilde yeniden boyutlandırılır. Dizinin ilk kareleri latent içine kodlanır ve başlangıç karelerini üretilen içerikle harmanlamak için bir maske uygulanır. | IMAGE | Hayır | - |
+| `kamera_koşulları` | Video üretimi için isteğe bağlı kamera gömme koşulları. Sağlandığında, bu koşullar hem pozitif hem de negatif koşullandırmaya uygulanır. | WAN_CAMERA_EMBEDDING | Hayır | - |
 
 **Not:** `start_image` sağlandığında, düğüm hem `positive` hem de `negative` koşullandırmasında `concat_latent_image` ve `concat_mask` değerlerini ayarlar. `camera_conditions` ve `clip_vision_output` parametreleri isteğe bağlıdır, ancak sağlandıklarında hem pozitif hem de negatif istemler için koşullandırmayı değiştirir.
 

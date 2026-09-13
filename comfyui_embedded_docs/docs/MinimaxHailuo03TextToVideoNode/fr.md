@@ -8,9 +8,9 @@ Ce nœud génère une vidéo à partir d'une invite textuelle en utilisant la fa
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser pour la génération de vidéo (par défaut : « MiniMax H3 »). La sélection d'un modèle affiche également les paramètres spécifiques au modèle décrits dans les sections ci-dessous. | DYNAMIC_COMBO | Oui | "MiniMax H3"<br>"MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
-| `seed` | Graine aléatoire. La même requête avec la même graine donne des résultats similaires, mais pas nécessairement identiques (par défaut : 42). | INT | Oui | 0 à 4294967295 |
-| `watermark` | Indique s'il faut ajouter un filigrane AIGC à la vidéo (par défaut : false). Lorsqu'il est activé, seul le modèle « MiniMax H3 » est pris en charge. | BOOLEAN | Non | true<br>false |
+| `modèle` | Modèle à utiliser pour la génération de vidéo (par défaut : « MiniMax H3 »). La sélection d'un modèle affiche également les paramètres spécifiques au modèle décrits dans les sections ci-dessous. | DYNAMIC_COMBO | Oui | "MiniMax H3"<br>"MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `graine` | Graine aléatoire. La même requête avec la même graine donne des résultats similaires, mais pas nécessairement identiques (par défaut : 42). | INT | Oui | 0 à 4294967295 |
+| `filigrane` | Indique s'il faut ajouter un filigrane AIGC à la vidéo (par défaut : false). Lorsqu'il est activé, seul le modèle « MiniMax H3 » est pris en charge. | BOOLEAN | Non | true<br>false |
 
 ### Entrées MiniMax H3
 

@@ -10,8 +10,8 @@ Este es un nodo de API de pago que se ejecuta en el servicio de Bria, por lo que
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `image` | La imagen cuyo primer plano se elimina y se reemplaza con un fondo generado. Solo se envían los canales de color; cualquier canal alfa se descarta antes de la carga. | IMAGE | Sí | - |
-| `moderation` | Configuración de moderación. Selecciona `"false"` para enviar la imagen sin indicadores de moderación, o `"true"` para mostrar las opciones de moderación de contenido que aparecen a continuación. Predeterminado: `"false"`. | DYNAMIC_COMBO | Sí | `"false"`<br>`"true"` |
+| `imagen` | La imagen cuyo primer plano se elimina y se reemplaza con un fondo generado. Solo se envían los canales de color; cualquier canal alfa se descarta antes de la carga. | IMAGE | Sí | - |
+| `moderación` | Configuración de moderación. Selecciona `"false"` para enviar la imagen sin indicadores de moderación, o `"true"` para mostrar las opciones de moderación de contenido que aparecen a continuación. Predeterminado: `"false"`. | DYNAMIC_COMBO | Sí | `"false"`<br>`"true"` |
 
 ### Entradas de `"false"`
 

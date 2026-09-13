@@ -6,10 +6,10 @@ El nodo ModelSamplingLTXV aplica parámetros de muestreo avanzados a un modelo s
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de entrada al que se aplicarán los parámetros de muestreo. | MODEL | Sí | - |
-| `max_shift` | El valor de desplazamiento máximo utilizado en el cálculo de interpolación lineal (predeterminado: 2.05). | FLOAT | Sí | 0.0 a 100.0 (paso: 0.01) |
-| `base_shift` | El valor de desplazamiento base utilizado en el cálculo de interpolación lineal (predeterminado: 0.95). | FLOAT | Sí | 0.0 a 100.0 (paso: 0.01) |
-| `latent` | Entrada latente opcional utilizada para determinar el recuento de tokens para el cálculo del desplazamiento. Si no se proporciona, se utiliza un recuento de tokens predeterminado de 4096. | LATENT | No | - |
+| `modelo` | El modelo de entrada al que se aplicarán los parámetros de muestreo. | MODEL | Sí | - |
+| `desplazamiento_max` | El valor de desplazamiento máximo utilizado en el cálculo de interpolación lineal (predeterminado: 2.05). | FLOAT | Sí | 0.0 a 100.0 (paso: 0.01) |
+| `desplazamiento_base` | El valor de desplazamiento base utilizado en el cálculo de interpolación lineal (predeterminado: 0.95). | FLOAT | Sí | 0.0 a 100.0 (paso: 0.01) |
+| `latente` | Entrada latente opcional utilizada para determinar el recuento de tokens para el cálculo del desplazamiento. Si no se proporciona, se utiliza un recuento de tokens predeterminado de 4096. | LATENT | No | - |
 
 El valor de desplazamiento se calcula interpolando entre `base_shift` a 1024 tokens y `max_shift` a 4096 tokens. Cuando se proporciona `latent`, el recuento de tokens es el producto de todas las dimensiones después de las dos primeras en las muestras latentes (las dimensiones espaciales/temporales). Si no se proporciona `latent`, el recuento de tokens predeterminado es 4096.
 

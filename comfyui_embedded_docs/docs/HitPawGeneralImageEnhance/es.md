@@ -6,10 +6,10 @@ Este nodo mejora imágenes de baja resolución al escalarlas a superresolución 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | El modelo de mejora a usar. El modelo `generative_portrait` está optimizado para retratos, mientras que `generative` es un modelo de propósito general. | COMBO | Sí | `"generative_portrait"`<br>`"generative"` |
-| `image` | La imagen de entrada que se va a mejorar. | IMAGE | Sí | - |
-| `upscale_factor` | El factor por el que se escalan las dimensiones de la imagen. Un factor de 1 significa que no hay escalado, 2 duplica las dimensiones y 4 las cuadruplica. | COMBO | Sí | `1`<br>`2`<br>`4` |
-| `auto_downscale` | Reduce automáticamente la escala de la imagen de entrada si la salida superara el límite. (predeterminado: `False`) | BOOLEAN | No | - |
+| `modelo` | El modelo de mejora a usar. El modelo `generative_portrait` está optimizado para retratos, mientras que `generative` es un modelo de propósito general. | COMBO | Sí | `"generative_portrait"`<br>`"generative"` |
+| `imagen` | La imagen de entrada que se va a mejorar. | IMAGE | Sí | - |
+| `factor de escalado` | El factor por el que se escalan las dimensiones de la imagen. Un factor de 1 significa que no hay escalado, 2 duplica las dimensiones y 4 las cuadruplica. | COMBO | Sí | `1`<br>`2`<br>`4` |
+| `reducción automática` | Reduce automáticamente la escala de la imagen de entrada si la salida superara el límite. (predeterminado: `False`) | BOOLEAN | No | - |
 
 **Nota:** El nodo lanza un error si el tamaño de salida calculado (ancho de entrada × `upscale_factor` × alto de entrada × `upscale_factor`) supera los 32.000.000 píxeles (32MP) y `auto_downscale` está deshabilitado. Cuando `auto_downscale` está habilitado, el nodo reduce automáticamente el tamaño de la imagen de entrada o el factor de escalado (o ambos) para que la salida quepa dentro del límite de 32MP. El `model` seleccionado y el `upscale_factor` se combinan en el nombre del modelo enviado al servicio.
 

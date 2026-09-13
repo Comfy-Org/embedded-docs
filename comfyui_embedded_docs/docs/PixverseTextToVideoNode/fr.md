@@ -7,13 +7,13 @@ Génère des vidéos à partir d'un prompt textuel en utilisant l'API PixVerse. 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
 | `prompt` | Prompt pour la génération de la vidéo (par défaut : "") | STRING | Oui | Doit contenir au moins 1 caractère |
-| `aspect_ratio` | Rapport d'aspect de la vidéo générée | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `quality` | Réglage de la qualité vidéo (par défaut : "540p") | COMBO | Oui | `"540p"`<br>`"1080p"` |
-| `duration_seconds` | Durée de la vidéo générée en secondes | COMBO | Oui | `"5"`<br>`"10"` |
-| `motion_mode` | Style de mouvement pour la génération vidéo | COMBO | Oui | `"normal"`<br>`"fast"` |
-| `seed` | Graine pour la génération vidéo (par défaut : 0) | INT | Oui | 0 à 2147483647 |
-| `negative_prompt` | Description textuelle facultative des éléments non souhaités sur une image (par défaut : "") | STRING | Non | - |
-| `pixverse_template` | Modèle facultatif pour influencer le style de génération, créé par le nœud PixVerse Template | CUSTOM | Non | - |
+| `rapport d'aspect` | Rapport d'aspect de la vidéo générée | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `qualité` | Réglage de la qualité vidéo (par défaut : "540p") | COMBO | Oui | `"540p"`<br>`"1080p"` |
+| `durée (secondes)` | Durée de la vidéo générée en secondes | COMBO | Oui | `"5"`<br>`"10"` |
+| `mode de mouvement` | Style de mouvement pour la génération vidéo | COMBO | Oui | `"normal"`<br>`"fast"` |
+| `graine` | Graine pour la génération vidéo (par défaut : 0) | INT | Oui | 0 à 2147483647 |
+| `prompt négatif` | Description textuelle facultative des éléments non souhaités sur une image (par défaut : "") | STRING | Non | - |
+| `modèle PixVerse` | Modèle facultatif pour influencer le style de génération, créé par le nœud PixVerse Template | CUSTOM | Non | - |
 
 **Remarque :** Le `prompt` doit contenir au moins 1 caractère. Lorsque la qualité 1080p est sélectionnée, le mode de mouvement est automatiquement défini sur `normal` et la durée est limitée à 5 secondes. Pour toute durée autre que 5 secondes, le mode de mouvement est également automatiquement défini sur `normal`.
 

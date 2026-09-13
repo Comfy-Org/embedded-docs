@@ -6,15 +6,15 @@ Le nœud Wan22FunControlToVideo prépare les données de conditionnement et un t
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `positive` | Entrée de conditionnement positive pour guider la génération vidéo | CONDITIONING | Oui | - |
-| `negative` | Entrée de conditionnement négative pour guider la génération vidéo | CONDITIONING | Oui | - |
+| `positif` | Entrée de conditionnement positive pour guider la génération vidéo | CONDITIONING | Oui | - |
+| `négatif` | Entrée de conditionnement négative pour guider la génération vidéo | CONDITIONING | Oui | - |
 | `vae` | Modèle VAE utilisé pour encoder les images dans l'espace latent | VAE | Oui | - |
-| `width` | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `height` | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `length` | Nombre d'images dans la séquence vidéo (par défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
-| `batch_size` | Nombre de séquences vidéo à générer (par défaut : 1) | INT | Oui | 1 à 4096 |
-| `ref_image` | Image de référence optionnelle qui fournit une indication visuelle pour la génération | IMAGE | Non | - |
-| `control_video` | Vidéo de contrôle optionnelle qui guide le processus de génération | IMAGE | Non | - |
+| `largeur` | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `hauteur` | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `longueur` | Nombre d'images dans la séquence vidéo (par défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
+| `taille_du_lot` | Nombre de séquences vidéo à générer (par défaut : 1) | INT | Oui | 1 à 4096 |
+| `image_de_référence` | Image de référence optionnelle qui fournit une indication visuelle pour la génération | IMAGE | Non | - |
+| `vidéo_de_contrôle` | Vidéo de contrôle optionnelle qui guide le processus de génération | IMAGE | Non | - |
 
 **Remarque :** Le paramètre `length` est traité par pas de 4 images, et le nœud applique automatiquement une mise à l'échelle temporelle lors de la construction de l'espace latent. Lorsque `ref_image` est fourni, seule sa première image est encodée (redimensionnée à `width` x `height`) et attachée au conditionnement comme latents de référence. Lorsque `control_video` est fourni, il est rogné à `length` images, redimensionné, encodé et placé dans le latent concaténé utilisé par le conditionnement. Le latent concaténé est dupliqué le long de la dimension des canaux et sa disposition des canaux dépend du nombre de canaux latents du VAE (48 canaux utilise le format Wan 2.2, sinon le format Wan 2.1). Le paramètre `start_image` est référencé dans la logique d'exécution mais n'est pas exposé dans le schéma d'entrée du nœud, il ne peut donc pas être défini depuis l'interface du nœud.
 

@@ -9,8 +9,8 @@ El nodo T5TokenizerOptions configura los ajustes del tokenizer para varios tipos
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `clip` | El modelo CLIP para el que se configurarán las opciones del tokenizer | CLIP | Sí | - |
-| `min_padding` | Valor mínimo de padding a establecer para todos los tipos de modelo T5 (predeterminado: 0) | INT | Sí | 0 a 10000 |
-| `min_length` | Valor mínimo de longitud a establecer para todos los tipos de modelo T5 (predeterminado: 0) | INT | Sí | 0 a 10000 |
+| `mín_relleno` | Valor mínimo de padding a establecer para todos los tipos de modelo T5 (predeterminado: 0) | INT | Sí | 0 a 10000 |
+| `mín_longitud` | Valor mínimo de longitud a establecer para todos los tipos de modelo T5 (predeterminado: 0) | INT | Sí | 0 a 10000 |
 
 Nota: Este nodo está marcado como experimental en ComfyUI. La configuración se aplica a todas las variantes T5 compatibles a la vez: t5xxl, pile_t5xl, t5base, mt5xl y umt5xxl. La entrada `clip` se clona antes de la modificación, por lo que el CLIP original no se altera.
 

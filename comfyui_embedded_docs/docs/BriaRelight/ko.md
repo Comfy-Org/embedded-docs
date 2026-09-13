@@ -8,10 +8,10 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 조명을 변경할 이미지입니다. 이미지를 업로드하기 전에 모든 알파 채널이 제거됩니다. | IMAGE | 예 | - |
+| `이미지` | 조명을 변경할 이미지입니다. 이미지를 업로드하기 전에 모든 알파 채널이 제거됩니다. | IMAGE | 예 | - |
 | `light_type` | 적용할 조명 분위기입니다. | COMBO | 예 | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
 | `light_direction` | 빛이 들어오는 방향입니다. midday, spotlight on subject, harsh studio lighting과 같은 하드 라이트 분위기가 이 설정에 가장 민감하게 반응합니다. | COMBO | 예 | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
-| `moderation` | 모데레이션 설정입니다. `"true"`를 선택하면 모데레이션 옵션이 표시되고, `"false"`를 선택하면 해당 옵션 없이 실행됩니다. | DYNAMIC_COMBO | 예 | `"false"`<br>`"true"` |
+| `검토` | 모데레이션 설정입니다. `"true"`를 선택하면 모데레이션 옵션이 표시되고, `"false"`를 선택하면 해당 옵션 없이 실행됩니다. | DYNAMIC_COMBO | 예 | `"false"`<br>`"true"` |
 
 ### 모데레이션 입력
 

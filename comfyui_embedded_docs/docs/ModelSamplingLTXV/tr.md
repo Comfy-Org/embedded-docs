@@ -7,9 +7,9 @@ ModelSamplingLTXV düğümü, token sayısına bağlı olarak bir modele gelişm
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Örnekleme parametrelerinin uygulanacağı girdi modeli. | MODEL | Evet | - |
-| `max_shift` | Doğrusal enterpolasyon hesaplamasında kullanılan maksimum shift değeri (varsayılan: 2.05). | FLOAT | Evet | 0.0 ile 100.0 (step: 0.01) |
-| `base_shift` | Doğrusal enterpolasyon hesaplamasında kullanılan temel shift değeri (varsayılan: 0.95). | FLOAT | Evet | 0.0 ile 100.0 (step: 0.01) |
-| `latent` | Shift hesaplaması için token sayısını belirlemek üzere kullanılan isteğe bağlı latent girdisi. Sağlanmazsa, varsayılan 4096 token sayısı kullanılır. | LATENT | Hayır | - |
+| `maks_kaydırma` | Doğrusal enterpolasyon hesaplamasında kullanılan maksimum shift değeri (varsayılan: 2.05). | FLOAT | Evet | 0.0 ile 100.0 (step: 0.01) |
+| `temel_kaydırma` | Doğrusal enterpolasyon hesaplamasında kullanılan temel shift değeri (varsayılan: 0.95). | FLOAT | Evet | 0.0 ile 100.0 (step: 0.01) |
+| `gizli` | Shift hesaplaması için token sayısını belirlemek üzere kullanılan isteğe bağlı latent girdisi. Sağlanmazsa, varsayılan 4096 token sayısı kullanılır. | LATENT | Hayır | - |
 
 Shift değeri, 1024 token'da `base_shift` ile 4096 token'da `max_shift` arasında enterpolasyon yapılarak hesaplanır. `latent` sağlandığında, token sayısı latent örneklerindeki ilk iki boyuttan sonraki tüm boyutların çarpımıdır (uzamsal/zamansal boyutlar). `latent` sağlanmazsa, token sayısı varsayılan olarak 4096 olur.
 

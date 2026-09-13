@@ -7,7 +7,7 @@ Bu düğüm, bir girdi görüntüsünün renklerini, piksel değerlerini belirti
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `image` | Normalleştirilecek girdi görüntüsü. | IMAGE | Evet | - |
-| `mean` | Normalleştirme için ortalama değeri (varsayılan: 0.5). | FLOAT | Hayır | 0.0 - 1.0 |
+| `ortalama` | Normalleştirme için ortalama değeri (varsayılan: 0.5). | FLOAT | Hayır | 0.0 - 1.0 |
 | `std` | Normalleştirme için standart sapma (varsayılan: 0.5). | FLOAT | Hayır | 0.001 - 1.0 |
 
 `mean` ve `std` parametreleri, girdi görüntüsüne uygulanan normalleştirmeyi kontrol eder. Her iki parametrenin varsayılan değeri 0.5'tir.

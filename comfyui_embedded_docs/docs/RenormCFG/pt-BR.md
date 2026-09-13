@@ -6,7 +6,7 @@ O nó RenormCFG modifica o processo de orientação sem classificador (CFG) em m
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo de difusão ao qual aplicar o CFG renormalizado | MODEL | Sim | - |
+| `modelo` | O modelo de difusão ao qual aplicar o CFG renormalizado | MODEL | Sim | - |
 | `cfg_trunc` | Limite de timestep para aplicar o escalonamento do CFG. Quando o timestep atual estiver abaixo deste valor, o escalonamento e a renormalização do CFG são aplicados; caso contrário, apenas a previsão condicional é usada (padrão: 100.0) | FLOAT | Não | 0.0 - 100.0 (passo 0.01) |
 | `renorm_cfg` | Fator de renormalização que limita a norma máxima da previsão escalonada pelo CFG em relação à previsão condicional original. Um valor de 0.0 desativa a renormalização (padrão: 1.0) | FLOAT | Não | 0.0 - 100.0 (passo 0.01) |
 

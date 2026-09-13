@@ -6,13 +6,13 @@ Este nó prepara uma configuração de geração de imagem para vídeo para mode
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo de vídeo AR a ser usado para geração. | MODEL | Sim | - |
+| `modelo` | O modelo de vídeo AR a ser usado para geração. | MODEL | Sim | - |
 | `vae` | O modelo VAE usado para codificar a imagem inicial no espaço latente. | VAE | Sim | - |
-| `start_image` | A imagem inicial que servirá como primeiro quadro do vídeo gerado. Apenas a primeira imagem do lote de entrada é usada, e apenas seus canais RGB são codificados. | IMAGE | Sim | - |
-| `width` | A largura dos quadros do vídeo gerado (padrão: 832). | INT | Sim | 16 a 8192 (passo: 16) |
-| `height` | A altura dos quadros do vídeo gerado (padrão: 480). | INT | Sim | 16 a 8192 (passo: 16) |
-| `length` | O número total de quadros do vídeo gerado (padrão: 81). | INT | Sim | 1 a 1024 (passo: 4) |
-| `batch_size` | O número de sequências de vídeo a serem geradas em um único lote (padrão: 1). | INT | Sim | 1 a 64 |
+| `imagem_inicial` | A imagem inicial que servirá como primeiro quadro do vídeo gerado. Apenas a primeira imagem do lote de entrada é usada, e apenas seus canais RGB são codificados. | IMAGE | Sim | - |
+| `largura` | A largura dos quadros do vídeo gerado (padrão: 832). | INT | Sim | 16 a 8192 (passo: 16) |
+| `altura` | A altura dos quadros do vídeo gerado (padrão: 480). | INT | Sim | 16 a 8192 (passo: 16) |
+| `duração` | O número total de quadros do vídeo gerado (padrão: 81). | INT | Sim | 1 a 1024 (passo: 4) |
+| `tamanho_do_lote` | O número de sequências de vídeo a serem geradas em um único lote (padrão: 1). | INT | Sim | 1 a 64 |
 
 Observação: A imagem inicial é redimensionada para a `width` e a `height` especificadas antes de ser codificada. A dimensão temporal latente é calculada como `((length - 1) // 4) + 1`, e as dimensões espaciais latentes são `height / 8` e `width / 8`.
 

@@ -6,14 +6,14 @@ O nó WanPhantomSubjectToVideo prepara dados de condicionamento e um latent para
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `positive` | Entrada de condicionamento positiva para orientar a geração de vídeo | CONDITIONING | Sim | - |
-| `negative` | Entrada de condicionamento negativa para evitar determinadas características | CONDITIONING | Sim | - |
+| `positivo` | Entrada de condicionamento positiva para orientar a geração de vídeo | CONDITIONING | Sim | - |
+| `negativo` | Entrada de condicionamento negativa para evitar determinadas características | CONDITIONING | Sim | - |
 | `vae` | Modelo VAE usado para codificar as imagens de referência quando fornecidas | VAE | Sim | - |
-| `width` | Largura do vídeo de saída em pixels (padrão: 832) | INT | Sim | 16 to MAX_RESOLUTION (passo: 16) |
-| `height` | Altura do vídeo de saída em pixels (padrão: 480) | INT | Sim | 16 to MAX_RESOLUTION (passo: 16) |
-| `length` | Número de quadros no vídeo gerado (padrão: 81) | INT | Sim | 1 to MAX_RESOLUTION (passo: 4) |
-| `batch_size` | Número de vídeos a serem gerados simultaneamente (padrão: 1) | INT | Sim | 1 a 4096 |
-| `images` | Imagens de referência opcionais usadas como orientação visual na dimensão temporal | IMAGE | Não | - |
+| `largura` | Largura do vídeo de saída em pixels (padrão: 832) | INT | Sim | 16 to MAX_RESOLUTION (passo: 16) |
+| `altura` | Altura do vídeo de saída em pixels (padrão: 480) | INT | Sim | 16 to MAX_RESOLUTION (passo: 16) |
+| `comprimento` | Número de quadros no vídeo gerado (padrão: 81) | INT | Sim | 1 to MAX_RESOLUTION (passo: 4) |
+| `tamanho_do_lote` | Número de vídeos a serem gerados simultaneamente (padrão: 1) | INT | Sim | 1 a 4096 |
+| `imagens` | Imagens de referência opcionais usadas como orientação visual na dimensão temporal | IMAGE | Não | - |
 
 **Nota:** Quando `images` são fornecidas, elas são automaticamente redimensionadas para corresponder à `width` e `height` especificadas, e apenas as primeiras `length` imagens são usadas para processamento. Cada imagem é codificada com o `vae` e concatenada ao longo da dimensão temporal, e apenas os canais RGB de cada imagem são usados. Quando `images` não são fornecidas, todas as três saídas de condicionamento são retornadas inalteradas a partir dos condicionamentos de entrada.
 

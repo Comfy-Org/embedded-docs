@@ -6,9 +6,9 @@ OptimalStepsScheduler düğümü, difüzyon örneklemesi sırasında kullanılma
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model_type` | Gürültü seviyesi hesaplaması için kullanılacak difüzyon modeli türü. Her seçenek kendi önceden tanımlanmış gürültü seviyesi tablosunu kullanır. | COMBO | Evet | "FLUX"<br>"Wan"<br>"Chroma" |
-| `steps` | Hesaplanacak toplam örnekleme adımı sayısı (varsayılan: 20). | INT | Evet | 3 - 1000 |
-| `denoise` | Gürültü giderme gücünü kontrol eder; bu güç, etkin adım sayısını ayarlar (varsayılan: 1.0). | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
+| `model_türü` | Gürültü seviyesi hesaplaması için kullanılacak difüzyon modeli türü. Her seçenek kendi önceden tanımlanmış gürültü seviyesi tablosunu kullanır. | COMBO | Evet | "FLUX"<br>"Wan"<br>"Chroma" |
+| `adımlar` | Hesaplanacak toplam örnekleme adımı sayısı (varsayılan: 20). | INT | Evet | 3 - 1000 |
+| `gürültü_azaltma` | Gürültü giderme gücünü kontrol eder; bu güç, etkin adım sayısını ayarlar (varsayılan: 1.0). | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
 
 **Not:** Seçilen `model_type` için temel gürültü seviyesi tablosu, uzunluğu `steps + 1` değerine eşit olmadığında log-doğrusal enterpolasyonla yeniden örneklenir; böylece çıktı her zaman istenen adım sayısıyla eşleşir.
 

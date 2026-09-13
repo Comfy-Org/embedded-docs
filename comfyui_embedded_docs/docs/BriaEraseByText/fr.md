@@ -10,7 +10,7 @@ Ce nœud supprime d’une image un objet décrit en texte brut à l’aide de Br
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L’image de laquelle l’objet nommé doit être supprimé. | IMAGE | Oui | - |
 | `object_name` | Nom de l’objet à supprimer, par exemple 'the lamp'. Plusieurs objets peuvent être nommés en même temps, par exemple 'the phone and the pencils'. Nommer un élément qui n’est pas dans l’image renvoie tout de même une image re-rendue, et la requête est quand même facturée. Doit contenir au moins 1 caractère (par défaut : vide). | STRING | Oui | - |
-| `moderation` | Paramètres de modération. Détermine si les contrôles de modération facultatifs sont affichés. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
+| `modération` | Paramètres de modération. Détermine si les contrôles de modération facultatifs sont affichés. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
 
 ### Entrées de modération
 

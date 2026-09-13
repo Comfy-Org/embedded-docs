@@ -7,13 +7,13 @@ PatchModelAddDownscale (Kohya Deep Shrink), seçilen bir bloktaki ara özellikle
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Ölçek küçültme yamasının uygulanacağı model | MODEL | Evet | - |
-| `block_number` | Ölçek küçültmenin uygulanacağı belirli blok numarası (varsayılan: 3) | INT | Evet | 1-32 |
-| `downscale_factor` | Özelliklerin ölçek küçültme faktörü (varsayılan: 2.0) | FLOAT | Evet | 0.1-9.0 |
-| `start_percent` | Gürültü giderme sürecinde ölçek küçültmenin başladığı başlangıç noktası (varsayılan: 0.0) | FLOAT | Evet | 0.0-1.0 |
-| `end_percent` | Gürültü giderme sürecinde ölçek küçültmenin durduğu bitiş noktası (varsayılan: 0.35) | FLOAT | Evet | 0.0-1.0 |
-| `downscale_after_skip` | Ölçek küçültmenin atlama bağlantılarından sonra uygulanıp uygulanmayacağı (varsayılan: True) | BOOLEAN | Evet | - |
-| `downscale_method` | Ölçek küçültme işlemleri için kullanılan interpolasyon yöntemi (varsayılan: "bicubic") | COMBO | Evet | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
-| `upscale_method` | Ölçek büyütme işlemleri için kullanılan interpolasyon yöntemi (varsayılan: "bicubic") | COMBO | Evet | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `blok_numarası` | Ölçek küçültmenin uygulanacağı belirli blok numarası (varsayılan: 3) | INT | Evet | 1-32 |
+| `küçültme_faktörü` | Özelliklerin ölçek küçültme faktörü (varsayılan: 2.0) | FLOAT | Evet | 0.1-9.0 |
+| `başlangıç_yüzdesi` | Gürültü giderme sürecinde ölçek küçültmenin başladığı başlangıç noktası (varsayılan: 0.0) | FLOAT | Evet | 0.0-1.0 |
+| `bitiş_yüzdesi` | Gürültü giderme sürecinde ölçek küçültmenin durduğu bitiş noktası (varsayılan: 0.35) | FLOAT | Evet | 0.0-1.0 |
+| `atlamadan_sonra_küçült` | Ölçek küçültmenin atlama bağlantılarından sonra uygulanıp uygulanmayacağı (varsayılan: True) | BOOLEAN | Evet | - |
+| `küçültme_yöntemi` | Ölçek küçültme işlemleri için kullanılan interpolasyon yöntemi (varsayılan: "bicubic") | COMBO | Evet | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `büyütme_yöntemi` | Ölçek büyütme işlemleri için kullanılan interpolasyon yöntemi (varsayılan: "bicubic") | COMBO | Evet | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 
 Ölçek küçültme yaması yalnızca geçerli gürültü giderme adımı `start_percent` ve `end_percent` tarafından tanımlanan aralığa girdiğinde ve yalnızca `block_number` ile seçilen blokta uygulanır. `downscale_after_skip` etkinleştirildiğinde yama atlama bağlantısından sonra uygulanır; devre dışı bırakıldığında atlama bağlantısından önce uygulanır. Özellikler daha sonra orijinal boyutlarına geri ölçeklenir, ancak yalnızca geçerli özellik boyutu ölçek küçültmeden önce kaydedilen boyutla artık eşleşmediğinde.
 

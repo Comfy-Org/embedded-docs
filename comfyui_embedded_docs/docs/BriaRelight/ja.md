@@ -8,10 +8,10 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | ライティングを変更する画像。画像がアップロードされる前に、アルファチャンネルは破棄されます。 | IMAGE | はい | - |
+| `画像` | ライティングを変更する画像。画像がアップロードされる前に、アルファチャンネルは破棄されます。 | IMAGE | はい | - |
 | `light_type` | 適用するライティングの雰囲気。 | COMBO | はい | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
 | `light_direction` | 光がどこから来るか。midday、spotlight on subject、harsh studio lighting などのハードライトの雰囲気は、これに最も反応します。 | COMBO | はい | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
-| `moderation` | モデレーション設定。`"true"` を選択するとモデレーションオプションが表示され、`"false"` を選択するとそれらを使用せずに実行します。 | DYNAMIC_COMBO | はい | `"false"`<br>`"true"` |
+| `モデレーション` | モデレーション設定。`"true"` を選択するとモデレーションオプションが表示され、`"false"` を選択するとそれらを使用せずに実行します。 | DYNAMIC_COMBO | はい | `"false"`<br>`"true"` |
 
 ### モデレーション入力
 

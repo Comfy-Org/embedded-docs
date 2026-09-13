@@ -6,10 +6,10 @@ Este nodo prepara datos para entrenamiento mediante la codificación de imágene
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `images` | Lista de imágenes para codificar. | IMAGE | Sí | N/A |
+| `imágenes` | Lista de imágenes para codificar. | IMAGE | Sí | N/A |
 | `vae` | Modelo VAE para codificar imágenes a latentes. | VAE | Sí | N/A |
 | `clip` | Modelo CLIP para codificar texto a condicionamiento. | CLIP | Sí | N/A |
-| `texts` | Lista de leyendas de texto. Puede tener longitud n (coincidente con las imágenes), 1 (se repite para todas) u omitirse (usa una cadena vacía). | STRING | No | 0, 1 o n elementos (n = número de imágenes) |
+| `textos` | Lista de leyendas de texto. Puede tener longitud n (coincidente con las imágenes), 1 (se repite para todas) u omitirse (usa una cadena vacía). | STRING | No | 0, 1 o n elementos (n = número de imágenes) |
 
 **Restricciones de parámetros:**
 

@@ -6,9 +6,9 @@ Flux Video Upscale aumenta la escala de un clip de video entre 1.5 y 3 veces med
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `video` | Clip de origen de 1 a 20 segundos con una relación de aspecto entre 1:4 y 4:1. La salida se renderiza a 24 fps y se limita a aproximadamente 14.4 megapíxeles por fotograma. | VIDEO | Sí | 1 a 20 segundos de duración; relación de aspecto entre 1:4 y 4:1; mínimo 64x64 píxeles |
+| `vídeo` | Clip de origen de 1 a 20 segundos con una relación de aspecto entre 1:4 y 4:1. La salida se renderiza a 24 fps y se limita a aproximadamente 14.4 megapíxeles por fotograma. | VIDEO | Sí | 1 a 20 segundos de duración; relación de aspecto entre 1:4 y 4:1; mínimo 64x64 píxeles |
 | `upscale_factor` | Tamaño de salida relativo a la fuente. Las fuentes muy grandes se amplían menos que el factor solicitado debido al límite por fotograma. (predeterminado: 2.0) | FLOAT | Sí | 1.5 a 3.0 (paso 0.1) |
-| `mode` | 'creative' restaura e inventa detalles finos, ideal para metraje generado, texturas y paisajes. 'precise' mejora la nitidez de la fuente sin modificarla, para rostros, productos y metraje real. (predeterminado: "creative") | COMBO | Sí | "creative"<br>"precise" |
+| `modo` | 'creative' restaura e inventa detalles finos, ideal para metraje generado, texturas y paisajes. 'precise' mejora la nitidez de la fuente sin modificarla, para rostros, productos y metraje real. (predeterminado: "creative") | COMBO | Sí | "creative"<br>"precise" |
 | `prompt` | Descripción opcional del clip que guía el detalle mejorado. Déjelo vacío para un aumento de escala neutro. (predeterminado: vacío) | STRING | Sí | Texto multilínea |
 | `auto_downscale` | Reduce automáticamente la escala de fuentes con un área mayor a 3840x2160 píxeles para ajustarse al límite de entrada. Se conserva la relación de aspecto; los videos más pequeños no se modifican. (predeterminado: true) | BOOLEAN | Sí | true<br>false |
 | `safety_tolerance` | Tolerancia de moderación; 0 es la más estricta. (predeterminado: 2, parámetro avanzado) | INT | Sí | 0 a 4 |

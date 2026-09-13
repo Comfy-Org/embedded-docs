@@ -6,10 +6,10 @@ Le nœud EmptyLTXVLatentVideo crée un tenseur latent vidéo vide (rempli de zé
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `width` | La largeur du tenseur latent vidéo (par défaut : 768, pas : 32) | INT | Oui | 64 à MAX_RESOLUTION |
-| `height` | La hauteur du tenseur latent vidéo (par défaut : 512, pas : 32) | INT | Oui | 64 à MAX_RESOLUTION |
-| `length` | Le nombre d'images dans la vidéo latente (par défaut : 97, pas : 8) | INT | Oui | 1 à MAX_RESOLUTION |
-| `batch_size` | Le nombre de vidéos latentes à générer dans un lot (par défaut : 1) | INT | Oui | 1 à 4096 |
+| `largeur` | La largeur du tenseur latent vidéo (par défaut : 768, pas : 32) | INT | Oui | 64 à MAX_RESOLUTION |
+| `hauteur` | La hauteur du tenseur latent vidéo (par défaut : 512, pas : 32) | INT | Oui | 64 à MAX_RESOLUTION |
+| `longueur` | Le nombre d'images dans la vidéo latente (par défaut : 97, pas : 8) | INT | Oui | 1 à MAX_RESOLUTION |
+| `taille_du_lot` | Le nombre de vidéos latentes à générer dans un lot (par défaut : 1) | INT | Oui | 1 à 4096 |
 
 Remarque : la vidéo latente est compressée par rapport aux dimensions demandées : les dimensions spatiales (`width` et `height`) sont divisées par 32, et le nombre d'images (`length`) est divisé par 8 puis arrondi à l'entier supérieur. Les valeurs de pas pour `width`, `height` et `length` aident à conserver ces divisions entières.
 

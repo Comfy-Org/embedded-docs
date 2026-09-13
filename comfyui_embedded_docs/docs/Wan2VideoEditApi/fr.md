@@ -8,11 +8,11 @@ Le nœud Wan 2.7 Video Edit édite une vidéo à l'aide d'instructions textuelle
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle à utiliser pour l'édition vidéo. Chaque option expose son propre ensemble de sous-paramètres. | DYNAMIC_COMBO | Oui | `"wan2.7-videoedit"` |
-| `video` | La vidéo à éditer. | VIDEO | Oui | - |
-| `seed` | Graine à utiliser pour la génération. (par défaut : 0) | INT | Oui | 0 à 2147483647 |
-| `audio_setting` | 'auto' : le modèle décide s'il faut régénérer l'audio en fonction du prompt. 'origin' : conserver l'audio d'origine de la vidéo d'entrée. (par défaut : "auto") | COMBO | Oui | `"auto"`<br>`"origin"` |
-| `watermark` | Indique s'il faut ajouter un filigrane généré par IA au résultat. (par défaut : False) | BOOLEAN | Oui | - |
+| `modèle` | Le modèle à utiliser pour l'édition vidéo. Chaque option expose son propre ensemble de sous-paramètres. | DYNAMIC_COMBO | Oui | `"wan2.7-videoedit"` |
+| `vidéo` | La vidéo à éditer. | VIDEO | Oui | - |
+| `graine` | Graine à utiliser pour la génération. (par défaut : 0) | INT | Oui | 0 à 2147483647 |
+| `paramètre audio` | 'auto' : le modèle décide s'il faut régénérer l'audio en fonction du prompt. 'origin' : conserver l'audio d'origine de la vidéo d'entrée. (par défaut : "auto") | COMBO | Oui | `"auto"`<br>`"origin"` |
+| `filigrane` | Indique s'il faut ajouter un filigrane généré par IA au résultat. (par défaut : False) | BOOLEAN | Oui | - |
 
 ### Entrées wan2.7-videoedit
 

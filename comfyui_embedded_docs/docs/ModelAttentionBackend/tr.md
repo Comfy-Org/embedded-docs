@@ -7,7 +7,7 @@ Bu düğüm, bir model için yoğun attention uygulamasını seçer, modeli klon
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Yamalanacak model. | MODEL | Evet |  |
-| `attention` | Uygulanacak yoğun attention arka ucu. Comfy Kitchen attention, nicemlenmiş INT8 attention kullanır ve yalnızca Nvidia ve AMD GPU'larda kullanılabilir. Varsayılan: "pytorch attention". Seçilen arka uç kullanılamıyorsa, geri dönüş olarak PyTorch attention kullanılır. | COMBO | Evet | "pytorch attention"<br>"comfy kitchen attention" |
+| `dikkat` | Uygulanacak yoğun attention arka ucu. Comfy Kitchen attention, nicemlenmiş INT8 attention kullanır ve yalnızca Nvidia ve AMD GPU'larda kullanılabilir. Varsayılan: "pytorch attention". Seçilen arka uç kullanılamıyorsa, geri dönüş olarak PyTorch attention kullanılır. | COMBO | Evet | "pytorch attention"<br>"comfy kitchen attention" |
 
 Not: "comfy kitchen attention" seçeneği yalnızca mevcut ortamda Comfy Kitchen INT8 attention modülü kullanılabilir olduğunda listelenir.
 

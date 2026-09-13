@@ -6,8 +6,8 @@ Ce nœud crée un lot d’échantillons latents vides (tous à zéro) formatés 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `resolution` | La dimension de résolution de l’espace latent à créer (par défaut : 3072) | INT | Oui | 1 - 8192 |
-| `batch_size` | Le nombre d’images latentes dans le lot (par défaut : 1) | INT | Oui | 1 - 4096 |
+| `résolution` | La dimension de résolution de l’espace latent à créer (par défaut : 3072) | INT | Oui | 1 - 8192 |
+| `taille_du_lot` | Le nombre d’images latentes dans le lot (par défaut : 1) | INT | Oui | 1 - 4096 |
 
 ## Sorties
 

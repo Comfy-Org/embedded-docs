@@ -6,9 +6,9 @@ EmptySD3LatentImage crea una imagen latente en blanco (todo ceros) con la dispos
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `width` | El ancho de la imagen latente en píxeles (predeterminado: 1024). Los valores se incrementan en pasos de 16. | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) |
-| `height` | El alto de la imagen latente en píxeles (predeterminado: 1024). Los valores se incrementan en pasos de 16. | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) |
-| `batch_size` | La cantidad de imágenes latentes a generar en el lote (predeterminado: 1). | INT | Sí | 1 a 4096 |
+| `ancho` | El ancho de la imagen latente en píxeles (predeterminado: 1024). Los valores se incrementan en pasos de 16. | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) |
+| `altura` | El alto de la imagen latente en píxeles (predeterminado: 1024). Los valores se incrementan en pasos de 16. | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) |
+| `tamaño_del_lote` | La cantidad de imágenes latentes a generar en el lote (predeterminado: 1). | INT | Sí | 1 a 4096 |
 
 ## Salidas
 

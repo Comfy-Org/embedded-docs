@@ -8,13 +8,13 @@ O nó TextGenerateLTX2Prompt expande um prompt curto do usuário em uma descriç
 | --- | --- | --- | --- | --- |
 | `clip` | O modelo CLIP usado para codificação de texto. O nó verifica o nome do tokenizador do modelo para selecionar as instruções correspondentes: modelos baseados no Gemma 4 usam o formato LTX-2.4, enquanto outros modelos usam o formato LTX-2 (Gemma 3). | CLIP | Sim |  |
 | `prompt` | A entrada de texto bruta que descreve a cena ou conceito a ser expandido em um prompt detalhado de geração de vídeo. | STRING | Sim |  |
-| `max_length` | O número máximo de tokens que o modelo de linguagem tem permissão para gerar. | INT | Sim |  |
-| `sampling_mode` | A estratégia de amostragem usada para selecionar o próximo token durante a geração de texto. | COMBO | Sim | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` |
-| `image` | Uma imagem de entrada opcional usada como o primeiro quadro do vídeo. Quando fornecida, o nó muda para o modo imagem para vídeo e usa um prompt de sistema que expande o prompt do usuário com base no conteúdo da imagem. | IMAGE | Não |  |
-| `thinking` | Quando habilitado, o modelo é instruído a raciocinar antes de responder. Qualquer bloco de raciocínio é removido da saída retornada (padrão: False). | BOOLEAN | Não |  |
+| `comprimento_máximo` | O número máximo de tokens que o modelo de linguagem tem permissão para gerar. | INT | Sim |  |
+| `modo_de_amostragem` | A estratégia de amostragem usada para selecionar o próximo token durante a geração de texto. | COMBO | Sim | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` |
+| `imagem` | Uma imagem de entrada opcional usada como o primeiro quadro do vídeo. Quando fornecida, o nó muda para o modo imagem para vídeo e usa um prompt de sistema que expande o prompt do usuário com base no conteúdo da imagem. | IMAGE | Não |  |
+| `pensando` | Quando habilitado, o modelo é instruído a raciocinar antes de responder. Qualquer bloco de raciocínio é removido da saída retornada (padrão: False). | BOOLEAN | Não |  |
 | `use_default_template` | Quando habilitado, o nó usa o template de chat padrão para formatação (padrão: True). | BOOLEAN | Não |  |
-| `video` | Uma entrada de vídeo opcional que pode ser usada como contexto adicional para a geração. | VIDEO | Não |  |
-| `audio` | Uma entrada de áudio opcional que pode ser usada como contexto adicional para a geração. | AUDIO | Não |  |
+| `vídeo` | Uma entrada de vídeo opcional que pode ser usada como contexto adicional para a geração. | VIDEO | Não |  |
+| `áudio` | Uma entrada de áudio opcional que pode ser usada como contexto adicional para a geração. | AUDIO | Não |  |
 
 **Nota:** O comportamento do nó muda com base nas suas entradas:
 

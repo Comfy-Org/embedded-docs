@@ -8,9 +8,9 @@ Ce nœud génère une vidéo mettant en scène une personne ou un objet à parti
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle spécifique à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | "wan2.7-r2v" |
-| `seed` | Graine à utiliser pour la génération, ce qui aide à contrôler le caractère aléatoire de la sortie (par défaut : 0). | INT | Oui | 0 à 2147483647 |
-| `watermark` | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : False). Il s'agit d'un paramètre avancé. | BOOLEAN | Oui | True<br>False |
+| `modèle` | Le modèle spécifique à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | "wan2.7-r2v" |
+| `graine` | Graine à utiliser pour la génération, ce qui aide à contrôler le caractère aléatoire de la sortie (par défaut : 0). | INT | Oui | 0 à 2147483647 |
+| `filigrane` | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : False). Il s'agit d'un paramètre avancé. | BOOLEAN | Oui | True<br>False |
 
 ### Entrées wan2.7-r2v
 

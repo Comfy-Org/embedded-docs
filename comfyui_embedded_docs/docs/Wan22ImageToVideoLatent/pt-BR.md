@@ -7,11 +7,11 @@ Wan22ImageToVideoLatent cria representações latentes de vídeo a partir de ima
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `vae` | O modelo VAE usado para codificar a imagem inicial no espaço latente | VAE | Sim | - |
-| `width` | A largura do vídeo de saída em pixels (padrão: 1280, passo: 32) | INT | Sim | 32 a MAX_RESOLUTION |
-| `height` | A altura do vídeo de saída em pixels (padrão: 704, passo: 32) | INT | Sim | 32 a MAX_RESOLUTION |
-| `length` | O número de quadros na sequência de vídeo (padrão: 49, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
-| `batch_size` | O número de latentes de vídeo a gerar (padrão: 1) | INT | Sim | 1 a 4096 |
-| `start_image` | Sequência de imagens inicial opcional a ser codificada nos primeiros quadros do latente de vídeo (usa os primeiros `length` quadros) | IMAGE | Não | - |
+| `largura` | A largura do vídeo de saída em pixels (padrão: 1280, passo: 32) | INT | Sim | 32 a MAX_RESOLUTION |
+| `altura` | A altura do vídeo de saída em pixels (padrão: 704, passo: 32) | INT | Sim | 32 a MAX_RESOLUTION |
+| `duração` | O número de quadros na sequência de vídeo (padrão: 49, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
+| `tamanho_do_lote` | O número de latentes de vídeo a gerar (padrão: 1) | INT | Sim | 1 a 4096 |
+| `imagem_inicial` | Sequência de imagens inicial opcional a ser codificada nos primeiros quadros do latente de vídeo (usa os primeiros `length` quadros) | IMAGE | Não | - |
 
 **Nota:** Quando `start_image` é fornecido, a sequência de imagens é ampliada para a `width` e a `height` de destino, codificada com o VAE e colocada nos primeiros quadros do latente. A máscara de ruído para esses quadros é definida como 0 (preservados), enquanto os quadros restantes têm um valor de máscara 1 (para ter o ruído removido). O latente sempre tem 48 canais, dimensões espaciais de `height / 16` por `width / 16` e uma dimensão temporal de `((length - 1) // 4) + 1`. `width` e `height` devem ser divisíveis por 16 (garantido pelo passo de 32), e `length` aumenta a dimensão temporal em passos de 4.
 

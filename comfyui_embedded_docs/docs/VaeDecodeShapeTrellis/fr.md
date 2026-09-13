@@ -6,7 +6,7 @@ Ce nœud décode les représentations latentes de forme Trellis2 en un maillage 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `samples` | Les échantillons latents à décoder, incluant le tenseur d'échantillons et les données de coordonnées éparses. Le dictionnaire latent peut également contenir des champs facultatifs : `coord_counts` pour les formes par lots, `coord_resolution` pour contrôler la résolution du maillage, et `model_frame` pour l'orientation des coordonnées. | LATENT | Oui | Aucune |
+| `échantillons` | Les échantillons latents à décoder, incluant le tenseur d'échantillons et les données de coordonnées éparses. Le dictionnaire latent peut également contenir des champs facultatifs : `coord_counts` pour les formes par lots, `coord_resolution` pour contrôler la résolution du maillage, et `model_frame` pour l'orientation des coordonnées. | LATENT | Oui | Aucune |
 | `vae` | Le modèle VAE utilisé pour décoder le latent de forme en un maillage. | VAE | Oui | Aucune |
 
 ### Notes sur `samples`

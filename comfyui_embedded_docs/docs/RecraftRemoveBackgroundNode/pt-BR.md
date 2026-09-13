@@ -6,7 +6,7 @@ Este nó remove o fundo de imagens usando o serviço Recraft API. Ele processa c
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A(s) imagem(ns) de entrada a processar para remoção de fundo. Cada imagem no lote é processada individualmente. | IMAGE | Sim | - |
+| `imagem` | A(s) imagem(ns) de entrada a processar para remoção de fundo. Cada imagem no lote é processada individualmente. | IMAGE | Sim | - |
 
 ## Saídas
 

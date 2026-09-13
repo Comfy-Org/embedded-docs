@@ -8,11 +8,11 @@ Bu düğüm, bir görüntünün arka planını Bria tarafından oluşturulan yen
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Arka planı değiştirilecek girdi görüntüsü. | IMAGE | Evet | |
-| `background` | Yeni arka planı bir prompt ile tanımlayın veya referans görüntülerle yönlendirin. | DYNAMIC_COMBO | Evet | `"prompt"`<br>`"reference images"` |
+| `görüntü` | Arka planı değiştirilecek girdi görüntüsü. | IMAGE | Evet | |
+| `arka plan` | Yeni arka planı bir prompt ile tanımlayın veya referans görüntülerle yönlendirin. | DYNAMIC_COMBO | Evet | `"prompt"`<br>`"reference images"` |
 | `original_quality` | Sonucu yaklaşık 1 megapiksele ölçeklendirmek yerine girdinin tam piksel boyutunu döndürür. Büyük bir girdi bu durumda büyük bir görüntü döndürür. (varsayılan: false) | BOOLEAN | Hayır | `true`<br>`false` |
 | `seed` | Aynı seed genellikle aynı arka planı döndürür; otomatik prompt iyileştirmesi yine de bunu değiştirebilir. (varsayılan: 42) | INT | Hayır | 0 - 2147483647 |
-| `moderation` | Moderasyon ayarları. (varsayılan: "false") | DYNAMIC_COMBO | Hayır | `"false"`<br>`"true"` |
+| `moderasyon` | Moderasyon ayarları. (varsayılan: "false") | DYNAMIC_COMBO | Hayır | `"false"`<br>`"true"` |
 
 ### Prompt Girdileri
 

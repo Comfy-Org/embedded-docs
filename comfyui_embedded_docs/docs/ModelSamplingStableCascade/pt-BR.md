@@ -6,8 +6,8 @@ O nó ModelSamplingStableCascade aplica configurações de amostragem do stable 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo de entrada ao qual aplicar a amostragem do stable cascade | MODEL | Sim | - |
-| `shift` | O valor de deslocamento aplicado aos parâmetros de amostragem (padrão: 2.0) | FLOAT | Sim | 0.0 - 100.0 (passo 0.01) |
+| `modelo` | O modelo de entrada ao qual aplicar a amostragem do stable cascade | MODEL | Sim | - |
+| `deslocamento` | O valor de deslocamento aplicado aos parâmetros de amostragem (padrão: 2.0) | FLOAT | Sim | 0.0 - 100.0 (passo 0.01) |
 
 ## Saídas
 

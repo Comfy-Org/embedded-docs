@@ -8,7 +8,7 @@ Le nœud Frame Interpolate crée de nouvelles trames entre celles existantes dan
 | --- | --- | --- | --- | --- |
 | `interp_model` | Le modèle d'interpolation de trames à utiliser pour générer des trames intermédiaires | INTERP_MODEL | Oui | - |
 | `images` | Un lot d'images consécutives (trames) entre lesquelles interpoler. Nécessite au moins 2 images. Si moins de 2 trames sont fournies, le nœud renvoie les images d'entrée inchangées. | IMAGE | Oui | - |
-| `multiplier` | Le facteur multiplicatif à appliquer au nombre de trames. Par exemple, un multiplicateur de 2 double le nombre de trames. (par défaut : 2) | INT | Oui | 2 à 16 |
+| `multiplicateur` | Le facteur multiplicatif à appliquer au nombre de trames. Par exemple, un multiplicateur de 2 double le nombre de trames. (par défaut : 2) | INT | Oui | 2 à 16 |
 
 **Remarque :** Le nœud nécessite au moins 2 trames d'entrée et un `multiplier` d'au moins 2. Si l'une de ces conditions n'est pas remplie, les images d'entrée sont renvoyées inchangées.
 

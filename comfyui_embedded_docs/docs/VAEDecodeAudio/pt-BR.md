@@ -6,7 +6,7 @@ Este nó converte uma representação latente de áudio de volta em uma forma de
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `samples` | As amostras de áudio codificadas no espaço latente que serão decodificadas de volta para uma forma de onda de áudio. Se as amostras tiverem sua própria taxa de amostragem, esse valor será usado para a saída. | LATENT | Sim | - |
+| `amostras` | As amostras de áudio codificadas no espaço latente que serão decodificadas de volta para uma forma de onda de áudio. Se as amostras tiverem sua própria taxa de amostragem, esse valor será usado para a saída. | LATENT | Sim | - |
 | `vae` | O modelo Autoencoder Variacional usado para decodificar as amostras latentes em áudio. Sua taxa de amostragem de saída de áudio (padrão 44100 Hz) determina a taxa de amostragem da forma de onda resultante quando as amostras de entrada não especificam uma. | VAE | Sim | - |
 
 ## Saídas

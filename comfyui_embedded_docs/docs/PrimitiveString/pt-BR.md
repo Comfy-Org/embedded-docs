@@ -6,7 +6,7 @@ O nó Text oferece uma maneira simples de inserir e repassar dados de texto no s
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `value` | A string de texto a ser repassada pelo nó | STRING | Sim | Qualquer texto |
+| `valor` | A string de texto a ser repassada pelo nó | STRING | Sim | Qualquer texto |
 
 ## Saídas
 

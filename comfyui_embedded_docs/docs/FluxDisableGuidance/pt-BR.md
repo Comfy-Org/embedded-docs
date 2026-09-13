@@ -6,7 +6,7 @@ Este nó desativa completamente o embed de guidance em modelos Flux e similares 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Os dados de condicionamento a serem processados e dos quais o guidance será removido | CONDITIONING | Sim | - |
+| `condicionamento` | Os dados de condicionamento a serem processados e dos quais o guidance será removido | CONDITIONING | Sim | - |
 
 ## Saídas
 

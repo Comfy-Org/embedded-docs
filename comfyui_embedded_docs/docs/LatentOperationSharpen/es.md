@@ -6,9 +6,9 @@ El nodo LatentOperationSharpen crea una operación de nitidez para representacio
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `sharpen_radius` | El radio del kernel de nitidez, que controla el tamaño del área utilizada para el enfoque (predeterminado: 9) | INT | Sí | 1-31 |
+| `radio_afilado` | El radio del kernel de nitidez, que controla el tamaño del área utilizada para el enfoque (predeterminado: 9) | INT | Sí | 1-31 |
 | `sigma` | La desviación estándar del kernel gaussiano utilizado para construir el kernel de nitidez (predeterminado: 1.0) | FLOAT | Sí | 0.1-10.0 |
-| `alpha` | El factor de intensidad del enfoque; valores más altos producen un efecto de nitidez más fuerte (predeterminado: 0.1) | FLOAT | Sí | 0.0-5.0 |
+| `alfa` | El factor de intensidad del enfoque; valores más altos producen un efecto de nitidez más fuerte (predeterminado: 0.1) | FLOAT | Sí | 0.0-5.0 |
 
 Las tres entradas son parámetros avanzados y tienen valores predeterminados, por lo que el nodo se puede usar sin modificarlos. Este nodo está marcado como experimental.
 

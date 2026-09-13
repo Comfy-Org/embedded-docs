@@ -6,8 +6,8 @@ O nó FluxKontextMultiReferenceLatentMethod atualiza dados de condicionamento ar
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Os dados de condicionamento a serem modificados com o método de latentes de referência | CONDITIONING | Sim | - |
-| `reference_latents_method` | O método usado para o processamento de latentes de referência. Se um valor contendo "uxo" ou "uso" for selecionado, ele é convertido para "uxo" antes de ser armazenado. Este parâmetro está marcado como avançado. | COMBO | Sim | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
+| `condicionamento` | Os dados de condicionamento a serem modificados com o método de latentes de referência | CONDITIONING | Sim | - |
+| `método_de_latent_de_referência` | O método usado para o processamento de latentes de referência. Se um valor contendo "uxo" ou "uso" for selecionado, ele é convertido para "uxo" antes de ser armazenado. Este parâmetro está marcado como avançado. | COMBO | Sim | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
 
 ## Saídas
 

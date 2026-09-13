@@ -10,9 +10,9 @@ Renderiza dados de pose corporal 3D em uma imagem usando um estilo selecionável
 |-----------|-----------|---------------|-------------|-----------|
 | `render_style` | Modo de renderização. 'mesh' = malha MHR 3D rasterizada através da câmera. 'silhouette' = máscara binária da malha. 'openpose_2d' = esqueleto 2D plano. 'openpose_3d' = esqueleto OpenPose como modelo 3D com sombreamento plano. 'scail' = cápsulas 3D SCAIL. (padrão: "mesh") | DYNAMIC_COMBO | Sim | "mesh"<br>"silhouette"<br>"openpose_2d"<br>"openpose_3d"<br>"scail" |
 | `pose_data` | Dados de pose MHR, ou dados de pose de rig Y-up externo (KimodoSample). Todos os estilos de renderização funcionam para rigs externos que carregam mapas de articulações OpenPose em seu `_skeleton_override` (KimodoSample faz isso). | MHR_POSE_DATA ou KIMODO_POSE_DATA | Sim | — |
-| `background` | Fundo por quadro. Omitido = canvas preto. | IMAGE | Não | — |
-| `width` | Largura de saída em pixels. 0 = usar o image_size nativo dos dados de pose. Se apenas um entre width/height for definido, o outro será derivado preservando a proporção original. (padrão: 0) | INT | Não | 0 a 16384, passo 8 |
-| `height` | Altura de saída em pixels. 0 = usar o image_size nativo dos dados de pose. Se apenas um entre width/height for definido, o outro será derivado preservando a proporção original. (padrão: 0) | INT | Não | 0 a 16384, passo 8 |
+| `fundo` | Fundo por quadro. Omitido = canvas preto. | IMAGE | Não | — |
+| `largura` | Largura de saída em pixels. 0 = usar o image_size nativo dos dados de pose. Se apenas um entre width/height for definido, o outro será derivado preservando a proporção original. (padrão: 0) | INT | Não | 0 a 16384, passo 8 |
+| `altura` | Altura de saída em pixels. 0 = usar o image_size nativo dos dados de pose. Se apenas um entre width/height for definido, o outro será derivado preservando a proporção original. (padrão: 0) | INT | Não | 0 a 16384, passo 8 |
 | `camera_info` | Substituição de câmera 6DOF livre. Quando conectada, a pose é reprojetada através desta câmera (posição/alvo/zoom/rotação/FoV) em vez da prevista. | LOAD_3D_CAMERA | Não | — |
 
 ### Entradas de malha

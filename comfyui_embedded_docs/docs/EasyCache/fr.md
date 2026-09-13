@@ -6,11 +6,11 @@ Le nœud EasyCache ajoute un système de mise en cache natif à un modèle de di
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle auquel ajouter EasyCache. | MODEL | Oui | - |
-| `reuse_threshold` | Seuil de réutilisation des étapes mises en cache (par défaut : 0,2). | FLOAT | Oui | 0.0 - 3.0 |
-| `start_percent` | Étape d’échantillonnage relative à partir de laquelle commencer à utiliser EasyCache (par défaut : 0,15). | FLOAT | Oui | 0.0 - 1.0 |
-| `end_percent` | Étape d’échantillonnage relative à laquelle arrêter d’utiliser EasyCache (par défaut : 0,95). | FLOAT | Oui | 0.0 - 1.0 |
-| `verbose` | Indique s’il faut journaliser des informations détaillées (par défaut : False). | BOOLEAN | Oui | - |
+| `modèle` | Le modèle auquel ajouter EasyCache. | MODEL | Oui | - |
+| `seuil_de_réutilisation` | Seuil de réutilisation des étapes mises en cache (par défaut : 0,2). | FLOAT | Oui | 0.0 - 3.0 |
+| `pourcentage_de_départ` | Étape d’échantillonnage relative à partir de laquelle commencer à utiliser EasyCache (par défaut : 0,15). | FLOAT | Oui | 0.0 - 1.0 |
+| `pourcentage_de_fin` | Étape d’échantillonnage relative à laquelle arrêter d’utiliser EasyCache (par défaut : 0,95). | FLOAT | Oui | 0.0 - 1.0 |
+| `verbeux` | Indique s’il faut journaliser des informations détaillées (par défaut : False). | BOOLEAN | Oui | - |
 
 ## Sorties
 

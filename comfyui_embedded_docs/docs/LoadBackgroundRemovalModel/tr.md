@@ -6,7 +6,7 @@ Bir dosyadan arka plan kaldırma modeli yükler. Bu düğüm, modeli görüntül
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `bg_removal_name` | Görüntülerdeki arka planları kaldırmak için kullanılan model. Kullanılabilir arka plan kaldırma model dosyaları listesinden seçin. | COMBO | Evet | Kullanılabilir model dosyalarının listesi (alfabetik olarak sıralanmış) |
+| `arka_plan_kaldırma_adı` | Görüntülerdeki arka planları kaldırmak için kullanılan model. Kullanılabilir arka plan kaldırma model dosyaları listesinden seçin. | COMBO | Evet | Kullanılabilir model dosyalarının listesi (alfabetik olarak sıralanmış) |
 
 Not: Seçilen dosya geçerli bir arka plan kaldırma modeli içermiyorsa, düğüm bir RuntimeError oluşturur.
 

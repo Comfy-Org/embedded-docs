@@ -8,15 +8,15 @@ Tripo P1 metinden 3B'ye. Bu düğüm, Tripo P1 API'sini kullanarak bir metin aç
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `output_mode` | Oluşturulan modelin yalnızca geometri mi yoksa renk/PBR dokularını da mı içereceğini kontrol eder. `"Geometry only"` doku içermeyen bir mesh döndürür. `"Textured"` renk/PBR haritaları ekler ve aşağıdaki doku seçeneklerini gösterir. | DYNAMIC_COMBO | Evet | `"Geometry only"`<br>`"Textured"` |
-| `prompt` | Oluşturmak istediğiniz 3B modelin metin açıklaması. En fazla 1024 karakter. Gereklidir ve boş olamaz. | STRING | Evet | Up to 1024 characters |
-| `negative_prompt` | Oluşturulan modelde istemediğiniz şeylerin metin açıklaması. En fazla 255 karakter. Varsayılan: ayarlanmamış. | STRING | Hayır | Up to 255 characters |
-| `image_seed` | Rastgeleliği kontrol etmek için kullanılan bir tohum değeri. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 |
-| `face_limit` | Hedef yüz sayısı, 48-20000. -1, Tripo'nun uyarlamalı olarak seçmesini sağlar. Varsayılan: -1. | INT | Hayır | -1 ile 20000 |
-| `model_seed` | Rastgeleliği kontrol etmek için kullanılan bir tohum değeri. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 |
-| `auto_size` | Çıktıyı gerçek dünya metrelerine yaklaşık olacak şekilde ölçeklendirir. Varsayılan: False. | BOOLEAN | Hayır | True / False |
-| `export_uv` | Oluşturma sırasında UV açılımı yapar. Daha hızlı yalnızca geometri çalışmaları için kapatın. Varsayılan: True. | BOOLEAN | Hayır | True / False |
-| `compress_geometry` | meshopt geometri sıkıştırması uygular (EXT_meshopt_compression). Daha küçük dosyalar, ancak ComfyUI'nin 3B önizlemesi bunları görüntüleyemez; düzenlemeden önce sıkıştırmayı açın. Varsayılan: False. | BOOLEAN | Hayır | True / False |
+| `çıktı_modu` | Oluşturulan modelin yalnızca geometri mi yoksa renk/PBR dokularını da mı içereceğini kontrol eder. `"Geometry only"` doku içermeyen bir mesh döndürür. `"Textured"` renk/PBR haritaları ekler ve aşağıdaki doku seçeneklerini gösterir. | DYNAMIC_COMBO | Evet | `"Geometry only"`<br>`"Textured"` |
+| `istem` | Oluşturmak istediğiniz 3B modelin metin açıklaması. En fazla 1024 karakter. Gereklidir ve boş olamaz. | STRING | Evet | Up to 1024 characters |
+| `negatif_istem` | Oluşturulan modelde istemediğiniz şeylerin metin açıklaması. En fazla 255 karakter. Varsayılan: ayarlanmamış. | STRING | Hayır | Up to 255 characters |
+| `görüntü_tohumu` | Rastgeleliği kontrol etmek için kullanılan bir tohum değeri. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 |
+| `yüz_sınırı` | Hedef yüz sayısı, 48-20000. -1, Tripo'nun uyarlamalı olarak seçmesini sağlar. Varsayılan: -1. | INT | Hayır | -1 ile 20000 |
+| `model_tohumu` | Rastgeleliği kontrol etmek için kullanılan bir tohum değeri. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 |
+| `otomatik_boyut` | Çıktıyı gerçek dünya metrelerine yaklaşık olacak şekilde ölçeklendirir. Varsayılan: False. | BOOLEAN | Hayır | True / False |
+| `uv_dışa_aktar` | Oluşturma sırasında UV açılımı yapar. Daha hızlı yalnızca geometri çalışmaları için kapatın. Varsayılan: True. | BOOLEAN | Hayır | True / False |
+| `geometriyi_sıkıştır` | meshopt geometri sıkıştırması uygular (EXT_meshopt_compression). Daha küçük dosyalar, ancak ComfyUI'nin 3B önizlemesi bunları görüntüleyemez; düzenlemeden önce sıkıştırmayı açın. Varsayılan: False. | BOOLEAN | Hayır | True / False |
 
 ### Yalnızca Geometri Girdileri
 

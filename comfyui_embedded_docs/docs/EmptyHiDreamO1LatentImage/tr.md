@@ -6,8 +6,8 @@ Bu düğüm, HiDream-O1-Image modeli için piksel uzayında boş bir latent gör
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `width` | Latent görüntünün piksel cinsinden genişliği. Varsayılan: 2048. Değer 32'nin katı olmalıdır. Model yaklaşık 4 megapikselde eğitilmiştir; daha düşük çözünürlükler kaliteyi belirgin şekilde düşürebilir. | INT | Evet | 64 ile 4096 arası (adım: 32) |
-| `height` | Latent görüntünün piksel cinsinden yüksekliği. Varsayılan: 2048. Değer 32'nin katı olmalıdır. Model yaklaşık 4 megapikselde eğitilmiştir; daha düşük çözünürlükler kaliteyi belirgin şekilde düşürebilir. | INT | Evet | 64 ile 4096 arası (adım: 32) |
+| `genişlik` | Latent görüntünün piksel cinsinden genişliği. Varsayılan: 2048. Değer 32'nin katı olmalıdır. Model yaklaşık 4 megapikselde eğitilmiştir; daha düşük çözünürlükler kaliteyi belirgin şekilde düşürebilir. | INT | Evet | 64 ile 4096 arası (adım: 32) |
+| `yükseklik` | Latent görüntünün piksel cinsinden yüksekliği. Varsayılan: 2048. Değer 32'nin katı olmalıdır. Model yaklaşık 4 megapikselde eğitilmiştir; daha düşük çözünürlükler kaliteyi belirgin şekilde düşürebilir. | INT | Evet | 64 ile 4096 arası (adım: 32) |
 | `batch_size` | Tek bir grupta oluşturulacak latent görüntü sayısı. Varsayılan: 1. | INT | Evet | 1 ile 64 arası |
 
 ## Çıktılar

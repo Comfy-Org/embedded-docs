@@ -6,13 +6,13 @@ Bu düğüm, bir görüntünün veya bir görüntü grubunun üzerine metin çiz
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `images` | Üzerine metin çizilecek girdi görüntüsü veya görüntü grubu | IMAGE | Evet | |
-| `text` | Görüntünün üzerine bindirilecek metin (varsayılan: ""). Çok satırı destekler: `\n` ve `\t` kaçış dizileri yeni satır ve sekme karakterlerine dönüştürülür ve uzun satırlar görüntü genişliğine sığacak şekilde otomatik olarak kaydırılır. | STRING | Evet | |
-| `font_size` | Görüntü yüksekliğinin yüzdesi olarak yazı tipi boyutu (varsayılan: 5.0) | FLOAT | Evet | 0.5 - 50.0 (adım 0.5) |
-| `color` | Metnin rengi (varsayılan: "#ffffff") | COLOR | Evet | |
-| `position` | Metnin görüntü üzerindeki dikey konumu (varsayılan: "top") | COMBO | Evet | "top"<br>"bottom" |
-| `align` | Metnin yatay hizalaması (varsayılan: "left") | COMBO | Evet | "left"<br>"center"<br>"right" |
-| `outline` | Metnin çevresine siyah dış çizgi çizer (varsayılan: True) | BOOLEAN | Evet | |
+| `görüntüler` | Üzerine metin çizilecek girdi görüntüsü veya görüntü grubu | IMAGE | Evet | |
+| `metin` | Görüntünün üzerine bindirilecek metin (varsayılan: ""). Çok satırı destekler: `\n` ve `\t` kaçış dizileri yeni satır ve sekme karakterlerine dönüştürülür ve uzun satırlar görüntü genişliğine sığacak şekilde otomatik olarak kaydırılır. | STRING | Evet | |
+| `yazı tipi boyutu` | Görüntü yüksekliğinin yüzdesi olarak yazı tipi boyutu (varsayılan: 5.0) | FLOAT | Evet | 0.5 - 50.0 (adım 0.5) |
+| `renk` | Metnin rengi (varsayılan: "#ffffff") | COLOR | Evet | |
+| `konum` | Metnin görüntü üzerindeki dikey konumu (varsayılan: "top") | COMBO | Evet | "top"<br>"bottom" |
+| `hizalama` | Metnin yatay hizalaması (varsayılan: "left") | COMBO | Evet | "left"<br>"center"<br>"right" |
+| `dış çizgi` | Metnin çevresine siyah dış çizgi çizer (varsayılan: True) | BOOLEAN | Evet | |
 
 Not: `text` boşsa veya yalnızca boşluk karakterleri içeriyorsa, düğüm girdi görüntülerini değiştirmeden döndürür. Metin katmanı bir kez oluşturulur ve gruptaki her görüntüye uygulanır. Oluşturulan metin bloğu kullanılabilir görüntü alanından daha yüksekse, sığana veya minimum boyuta ulaşana kadar yazı tipi boyutu otomatik olarak küçültülür.
 

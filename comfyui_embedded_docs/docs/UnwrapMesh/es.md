@@ -6,11 +6,11 @@ Genera un atlas UV para una malla 3D. La superficie de la malla se divide en isl
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `mesh` | La malla de entrada a desplegar. Acepta una sola malla o un lote de mallas; los lotes se procesan de a un elemento a la vez. | MESH | Sí | — |
-| `segmenter` | Algoritmo de generación de islas a usar. `pec`: generación de islas rápida mediante colapso de aristas paralelas en GPU. `adaptive`: CPU, más lento. (por defecto: "pec") | COMBO | Sí | "pec"<br>"adaptive" |
-| `resolution` | Resolución objetivo del atlas para el autoescalado de densidad de texeles (0 = ajustar al contenido). (por defecto: 1024) | INT | Sí | 0 a 8192 (paso: 256) |
-| `padding` | Relleno de texeles entre islas. (por defecto: 1) | INT | Sí | 0 a 16 |
-| `weld_distance` | Radio de fusión de vértices coincidentes como fracción de la extensión de la malla (0 = automático). Aumentar a ~0.001 si se obtienen islas por triángulo (entrada sin soldar). (por defecto: 0.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.0001) |
+| `malla` | La malla de entrada a desplegar. Acepta una sola malla o un lote de mallas; los lotes se procesan de a un elemento a la vez. | MESH | Sí | — |
+| `segmentador` | Algoritmo de generación de islas a usar. `pec`: generación de islas rápida mediante colapso de aristas paralelas en GPU. `adaptive`: CPU, más lento. (por defecto: "pec") | COMBO | Sí | "pec"<br>"adaptive" |
+| `resolución` | Resolución objetivo del atlas para el autoescalado de densidad de texeles (0 = ajustar al contenido). (por defecto: 1024) | INT | Sí | 0 a 8192 (paso: 256) |
+| `relleno` | Relleno de texeles entre islas. (por defecto: 1) | INT | Sí | 0 a 16 |
+| `distancia de soldadura` | Radio de fusión de vértices coincidentes como fracción de la extensión de la malla (0 = automático). Aumentar a ~0.001 si se obtienen islas por triángulo (entrada sin soldar). (por defecto: 0.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.0001) |
 
 Nota: si la malla de entrada contiene vértices sin soldar, el nodo puede advertir que la adyacencia de caras es baja y producir islas UV por cara; aumentar `weld_distance` fusiona los vértices coincidentes antes de desplegar. Las caras degeneradas (caras que reutilizan el mismo índice de vértice) se descartan durante el procesamiento.
 

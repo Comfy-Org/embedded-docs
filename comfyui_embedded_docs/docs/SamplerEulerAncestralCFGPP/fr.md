@@ -7,7 +7,7 @@ Le nœud SamplerEulerAncestralCFG++ crée un échantillonneur qui utilise la mé
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `eta` | Contrôle la taille du pas pendant l'échantillonnage ; des valeurs plus élevées entraînent des mises à jour plus agressives (valeur par défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
-| `s_noise` | Ajuste la quantité de bruit ajoutée pendant le processus d'échantillonnage (valeur par défaut : 1.0) | FLOAT | Oui | 0.0 - 10.0 |
+| `s_bruit` | Ajuste la quantité de bruit ajoutée pendant le processus d'échantillonnage (valeur par défaut : 1.0) | FLOAT | Oui | 0.0 - 10.0 |
 
 ## Sorties
 

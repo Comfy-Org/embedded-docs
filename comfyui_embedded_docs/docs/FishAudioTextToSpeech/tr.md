@@ -8,7 +8,7 @@ Bu düğüm, Fish Audio metinden konuşmaya modellerini kullanarak yazılı metn
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `text` | Sese dönüştürülecek metin. İki veya daha fazla ses bağlandığında, konuşmacı değişikliklerini @Voice1, @Voice2, vb. ile işaretleyin. (varsayılan: boş) | STRING | Evet | Herhangi bir boş olmayan metin |
+| `metin` | Sese dönüştürülecek metin. İki veya daha fazla ses bağlandığında, konuşmacı değişikliklerini @Voice1, @Voice2, vb. ile işaretleyin. (varsayılan: boş) | STRING | Evet | Herhangi bir boş olmayan metin |
 | `model` | Metinden konuşmaya dönüştürme için kullanılacak model. | DYNAMIC_COMBO | Evet | "s2.1-pro"<br>"s1" |
 | `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. (varsayılan: 42) | INT | Evet | 0 - 2147483647 |
 

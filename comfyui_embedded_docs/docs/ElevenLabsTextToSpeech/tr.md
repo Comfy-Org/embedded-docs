@@ -9,13 +9,13 @@ ElevenLabs Text to Speech düğümü, yazılı metni ElevenLabs API'sini kullana
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Metinden konuşmaya dönüştürme için kullanılacak model. Bir model seçildiğinde, o modele özgü parametreler görünür. | DYNAMIC_COMBO | Hayır | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
-| `voice` | Konuşma sentezi için kullanılacak ses. Voice Selector veya Instant Voice Clone'dan bağlayın. | CUSTOM | Evet | N/A |
-| `text` | Konuşmaya dönüştürülecek metin. En az bir karakter içermelidir. | STRING | Evet | N/A |
-| `stability` | Ses kararlılığı. Düşük değerler daha geniş duygusal aralık sağlar, yüksek değerler daha tutarlı ancak potansiyel olarak monoton konuşma üretir (varsayılan: 0.5). | FLOAT | Hayır | 0.0 - 1.0 |
-| `apply_text_normalization` | Metin normalleştirme modu. 'auto' sistemin karar vermesini sağlar, 'on' normalleştirmeyi her zaman uygular, 'off' ise atlar. | COMBO | Hayır | `"auto"`<br>`"on"`<br>`"off"` |
-| `language_code` | ISO-639-1 veya ISO-639-3 dil kodu (örn. 'en', 'es', 'fra'). Otomatik algılama için boş bırakın (varsayılan: ""). | STRING | Hayır | N/A |
-| `seed` | Yeniden üretilebilirlik için tohum (determinizm garanti edilmez) (varsayılan: 1). | INT | Hayır | 0 - 2147483647 |
-| `output_format` | Ses çıktısı biçimi. | COMBO | Hayır | `"mp3_44100_192"`<br>`"opus_48000_192"` |
+| `ses` | Konuşma sentezi için kullanılacak ses. Voice Selector veya Instant Voice Clone'dan bağlayın. | CUSTOM | Evet | N/A |
+| `metin` | Konuşmaya dönüştürülecek metin. En az bir karakter içermelidir. | STRING | Evet | N/A |
+| `kararlılık` | Ses kararlılığı. Düşük değerler daha geniş duygusal aralık sağlar, yüksek değerler daha tutarlı ancak potansiyel olarak monoton konuşma üretir (varsayılan: 0.5). | FLOAT | Hayır | 0.0 - 1.0 |
+| `metin normalizasyonunu uygula` | Metin normalleştirme modu. 'auto' sistemin karar vermesini sağlar, 'on' normalleştirmeyi her zaman uygular, 'off' ise atlar. | COMBO | Hayır | `"auto"`<br>`"on"`<br>`"off"` |
+| `dil_kodu` | ISO-639-1 veya ISO-639-3 dil kodu (örn. 'en', 'es', 'fra'). Otomatik algılama için boş bırakın (varsayılan: ""). | STRING | Hayır | N/A |
+| `tohum` | Yeniden üretilebilirlik için tohum (determinizm garanti edilmez) (varsayılan: 1). | INT | Hayır | 0 - 2147483647 |
+| `çıktı_formatı` | Ses çıktısı biçimi. | COMBO | Hayır | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
 ### eleven_multilingual_v2 Girdileri
 

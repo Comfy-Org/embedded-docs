@@ -6,10 +6,10 @@ EmptyLTXVLatentVideo düğümü, belirttiğiniz genişlik, yükseklik, uzunluk v
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `width` | Latent video tensörünün genişliği (varsayılan: 768, adım: 32) | INT | Evet | 64 ile MAX_RESOLUTION arası |
-| `height` | Latent video tensörünün yüksekliği (varsayılan: 512, adım: 32) | INT | Evet | 64 ile MAX_RESOLUTION arası |
-| `length` | Latent videodaki kare sayısı (varsayılan: 97, adım: 8) | INT | Evet | 1 ile MAX_RESOLUTION arası |
-| `batch_size` | Bir toplu işte oluşturulacak latent video sayısı (varsayılan: 1) | INT | Evet | 1 ile 4096 arası |
+| `genişlik` | Latent video tensörünün genişliği (varsayılan: 768, adım: 32) | INT | Evet | 64 ile MAX_RESOLUTION arası |
+| `yükseklik` | Latent video tensörünün yüksekliği (varsayılan: 512, adım: 32) | INT | Evet | 64 ile MAX_RESOLUTION arası |
+| `uzunluk` | Latent videodaki kare sayısı (varsayılan: 97, adım: 8) | INT | Evet | 1 ile MAX_RESOLUTION arası |
+| `toplu_boyut` | Bir toplu işte oluşturulacak latent video sayısı (varsayılan: 1) | INT | Evet | 1 ile 4096 arası |
 
 Not: Latent video, istenen boyutlara kıyasla sıkıştırılır: uzamsal boyutlar (genişlik ve yükseklik) 32'ye bölünür ve kare sayısı (uzunluk) 8'e bölünüp bir üst tam sayıya yuvarlanır. Genişlik, yükseklik ve uzunluk için adım değerleri bu bölümlerin tam sayı çıkmasına yardımcı olur.
 

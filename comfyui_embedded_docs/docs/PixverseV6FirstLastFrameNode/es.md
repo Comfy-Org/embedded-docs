@@ -10,7 +10,7 @@ PixVerse V6 First-Last-Frame to Video genera un video que hace una transición d
 |-----------|-------------|-----------|----------|-------|
 | `first_frame` | La imagen inicial del video. | IMAGE | Sí | — |
 | `last_frame` | La imagen final del video. | IMAGE | Sí | — |
-| `model` | Modelo y ajustes de generación. Selecciona el modelo de PixVerse y muestra sus parámetros de generación. | DYNAMIC_COMBO | Sí | "PixVerse V6" |
+| `modelo` | Modelo y ajustes de generación. Selecciona el modelo de PixVerse y muestra sus parámetros de generación. | DYNAMIC_COMBO | Sí | "PixVerse V6" |
 
 ### Entradas de PixVerse V6
 

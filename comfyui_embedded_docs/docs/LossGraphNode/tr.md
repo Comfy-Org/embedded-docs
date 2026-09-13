@@ -6,8 +6,8 @@ LossGraphNode, eğitim kaybı değerlerinin eğitim adımlarına göre çizgi gr
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `loss` | Eğitim düğümünden gelen kayıp haritası. Sayısal kayıp değerlerinden oluşan bir liste içeren bir `loss` anahtarı içermelidir. | LOSS_MAP | Evet | - |
-| `filename_prefix` | Kaydedilen kayıp grafiği görüntüsü için önek. (varsayılan: "loss_graph") | STRING | Evet | - |
+| `kayıp` | Eğitim düğümünden gelen kayıp haritası. Sayısal kayıp değerlerinden oluşan bir liste içeren bir `loss` anahtarı içermelidir. | LOSS_MAP | Evet | - |
+| `dosya_adı_ön_eki` | Kaydedilen kayıp grafiği görüntüsü için önek. (varsayılan: "loss_graph") | STRING | Evet | - |
 
 ## Çıktılar
 

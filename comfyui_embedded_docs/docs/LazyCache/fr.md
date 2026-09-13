@@ -6,11 +6,11 @@ LazyCache est une version expérimentale et non officielle d'EasyCache qui ajout
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle auquel ajouter LazyCache. | MODEL | Oui | - |
-| `reuse_threshold` | Seuil de réutilisation des étapes mises en cache. Par défaut : 0.2. | FLOAT | Oui | 0.0 - 3.0 (pas: 0.01) |
-| `start_percent` | Étape d'échantillonnage relative à laquelle commencer l'utilisation de LazyCache. Par défaut : 0.15. | FLOAT | Oui | 0.0 - 1.0 (pas: 0.01) |
-| `end_percent` | Étape d'échantillonnage relative à laquelle terminer l'utilisation de LazyCache. Par défaut : 0.95. | FLOAT | Oui | 0.0 - 1.0 (pas: 0.01) |
-| `verbose` | Indique s'il faut consigner des informations détaillées. Par défaut : False. | BOOLEAN | Oui | - |
+| `modèle` | Le modèle auquel ajouter LazyCache. | MODEL | Oui | - |
+| `seuil_réutilisation` | Seuil de réutilisation des étapes mises en cache. Par défaut : 0.2. | FLOAT | Oui | 0.0 - 3.0 (pas: 0.01) |
+| `pourcentage_début` | Étape d'échantillonnage relative à laquelle commencer l'utilisation de LazyCache. Par défaut : 0.15. | FLOAT | Oui | 0.0 - 1.0 (pas: 0.01) |
+| `pourcentage_fin` | Étape d'échantillonnage relative à laquelle terminer l'utilisation de LazyCache. Par défaut : 0.95. | FLOAT | Oui | 0.0 - 1.0 (pas: 0.01) |
+| `verbeux` | Indique s'il faut consigner des informations détaillées. Par défaut : False. | BOOLEAN | Oui | - |
 
 Remarque : `reuse_threshold`, `start_percent`, `end_percent` et `verbose` sont marqués comme entrées avancées.
 

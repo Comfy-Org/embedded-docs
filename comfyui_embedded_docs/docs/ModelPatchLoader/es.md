@@ -6,7 +6,7 @@ El nodo ModelPatchLoader carga un archivo de parche de modelo desde la carpeta `
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `name` | El nombre de archivo del parche de modelo que se va a cargar desde la carpeta `model_patches`. Seleccione uno de los archivos de parche disponibles en la lista. | COMBO | Sí | Lista generada dinámicamente con todos los archivos de parche de modelo encontrados en la carpeta `model_patches` |
+| `nombre` | El nombre de archivo del parche de modelo que se va a cargar desde la carpeta `model_patches`. Seleccione uno de los archivos de parche disponibles en la lista. | COMBO | Sí | Lista generada dinámicamente con todos los archivos de parche de modelo encontrados en la carpeta `model_patches` |
 
 Nota: Este nodo está marcado como experimental. El tipo de parche se detecta automáticamente a partir del contenido del archivo, por lo que no se requiere seleccionar el tipo manualmente. El nodo lee los metadatos del checkpoint e inspecciona las claves de los pesos para decidir qué arquitectura construir (por ejemplo, Qwen Image block-wise ControlNet, Z-Image ControlNet, Wan Uni3C ControlNet, MiniMax H3 Fun ControlNet, SigLIP feature projection, Lightricks duration head, Anima LLLite, MultiTalk o SUPIR). Los pesos se cargan con la carga segura habilitada y el modelo se coloca en el dispositivo de offload dentro de un `CoreModelPatcher`, de modo que posteriormente pueda aplicarse a otro modelo.
 

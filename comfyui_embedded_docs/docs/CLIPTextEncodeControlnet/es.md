@@ -7,8 +7,8 @@ El nodo CLIP Text Encode (Controlnet) codifica un prompt de texto con un modelo 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `clip` | El modelo CLIP usado para la tokenización y codificación de texto | CLIP | Sí | - |
-| `conditioning` | Datos de condicionamiento existentes que se combinarán con la codificación de texto de CLIP | CONDITIONING | Sí | - |
-| `text` | El prompt de texto que procesará el modelo CLIP. Admite texto multilínea y prompts dinámicos | STRING | Sí | - |
+| `condicionamiento` | Datos de condicionamiento existentes que se combinarán con la codificación de texto de CLIP | CONDITIONING | Sí | - |
+| `texto` | El prompt de texto que procesará el modelo CLIP. Admite texto multilínea y prompts dinámicos | STRING | Sí | - |
 
 **Nota:** Las tres entradas (`clip`, `conditioning` y `text`) son necesarias para que este nodo funcione. La entrada `text` admite texto multilínea y prompts dinámicos para un procesamiento de texto flexible. Este nodo está marcado como experimental en el código fuente.
 

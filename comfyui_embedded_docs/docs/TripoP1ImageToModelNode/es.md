@@ -10,14 +10,14 @@ Estos parámetros están siempre disponibles.
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `output_mode` | Elige el tipo de resultado. "Geometry only" devuelve una malla sin textura; "Textured" agrega mapas de color/PBR y muestra ajustes de textura adicionales. | DYNAMIC_COMBO | Sí | `"Geometry only"`<br>`"Textured"` |
-| `image` | La imagen 2D de origen utilizada para generar el modelo 3D. Se requiere una sola imagen; el nodo genera un error si no se proporciona ninguna. | IMAGE | Sí | - |
-| `enable_image_autofix` | Preprocesa la imagen de entrada para mejorar la calidad de generación. (predeterminado: False) | BOOLEAN | No | True<br>False |
-| `face_limit` | Cantidad objetivo de caras, 48-20000. -1 permite que Tripo elija de forma adaptativa. (predeterminado: -1) | INT | No | -1 a 20000 |
-| `model_seed` | Semilla utilizada para la generación de geometría para que los resultados puedan reproducirse. (predeterminado: 42) | INT | No | 0 a 2147483647 |
-| `auto_size` | Escala la salida para aproximarla a metros del mundo real. (predeterminado: False) | BOOLEAN | No | True<br>False |
-| `export_uv` | Desenvolver UV durante la generación. Desactívalo para ejecuciones de solo geometría más rápidas. (predeterminado: True) | BOOLEAN | No | True<br>False |
-| `compress_geometry` | Aplica compresión de geometría meshopt (EXT_meshopt_compression). Archivos más pequeños, pero la vista previa 3D de ComfyUI no puede mostrarlos; descomprímelos antes de editar. (predeterminado: False) | BOOLEAN | No | True<br>False |
+| `modo_de_salida` | Elige el tipo de resultado. "Geometry only" devuelve una malla sin textura; "Textured" agrega mapas de color/PBR y muestra ajustes de textura adicionales. | DYNAMIC_COMBO | Sí | `"Geometry only"`<br>`"Textured"` |
+| `imagen` | La imagen 2D de origen utilizada para generar el modelo 3D. Se requiere una sola imagen; el nodo genera un error si no se proporciona ninguna. | IMAGE | Sí | - |
+| `activar_autocorrección_imagen` | Preprocesa la imagen de entrada para mejorar la calidad de generación. (predeterminado: False) | BOOLEAN | No | True<br>False |
+| `límite_de_caras` | Cantidad objetivo de caras, 48-20000. -1 permite que Tripo elija de forma adaptativa. (predeterminado: -1) | INT | No | -1 a 20000 |
+| `semilla_modelo` | Semilla utilizada para la generación de geometría para que los resultados puedan reproducirse. (predeterminado: 42) | INT | No | 0 a 2147483647 |
+| `auto_escala` | Escala la salida para aproximarla a metros del mundo real. (predeterminado: False) | BOOLEAN | No | True<br>False |
+| `exportar_uv` | Desenvolver UV durante la generación. Desactívalo para ejecuciones de solo geometría más rápidas. (predeterminado: True) | BOOLEAN | No | True<br>False |
+| `comprimir_geometría` | Aplica compresión de geometría meshopt (EXT_meshopt_compression). Archivos más pequeños, pero la vista previa 3D de ComfyUI no puede mostrarlos; descomprímelos antes de editar. (predeterminado: False) | BOOLEAN | No | True<br>False |
 
 ### Entradas de solo geometría
 

@@ -6,7 +6,7 @@ Le nœud PhotoMakerLoader charge un modèle PhotoMaker à partir des fichiers de
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `photomaker_model_name` | Le nom du fichier de modèle PhotoMaker à charger. Les options disponibles sont déterminées par les fichiers de modèle présents dans le dossier `photomaker`. | COMBO | Oui | Plusieurs options disponibles (remplies dynamiquement à partir du dossier `photomaker`) |
+| `nom_du_modèle_photomaker` | Le nom du fichier de modèle PhotoMaker à charger. Les options disponibles sont déterminées par les fichiers de modèle présents dans le dossier `photomaker`. | COMBO | Oui | Plusieurs options disponibles (remplies dynamiquement à partir du dossier `photomaker`) |
 
 ## Sorties
 

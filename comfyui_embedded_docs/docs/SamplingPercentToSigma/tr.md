@@ -7,8 +7,8 @@ Bir örnekleme yüzdesini, seçili modelin örnekleme ayarlarını kullanarak e�
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Dönüştürme için kullanılan örnekleme parametrelerini içeren model | MODEL | Evet | - |
-| `sampling_percent` | Sigma değerine dönüştürülecek örnekleme yüzdesi (varsayılan: 0.0) | FLOAT | Evet | 0.0 ile 1.0 (step: 0.0001) |
-| `return_actual_sigma` | Aralık kontrolleri için kullanılan değer yerine gerçek sigma değerini döndürür. Bu yalnızca 0.0 ve 1.0'daki sonuçları etkiler. (varsayılan: False) | BOOLEAN | Evet | - |
+| `örnekleme_yüzdesi` | Sigma değerine dönüştürülecek örnekleme yüzdesi (varsayılan: 0.0) | FLOAT | Evet | 0.0 ile 1.0 (step: 0.0001) |
+| `gerçek_sigma_değerini_döndür` | Aralık kontrolleri için kullanılan değer yerine gerçek sigma değerini döndürür. Bu yalnızca 0.0 ve 1.0'daki sonuçları etkiler. (varsayılan: False) | BOOLEAN | Evet | - |
 
 `return_actual_sigma` etkinleştirildiğinde, 0.0 değerinde bir `sampling_percent`, modelin maksimum sigma değerini (sigma_max) döndürür; 1.0 değerinde bir `sampling_percent` ise minimum sigma değerini (sigma_min) döndürür. Diğer tüm yüzdeler için sonuç, bu seçenek etkin olsun veya olmasın aynıdır.
 

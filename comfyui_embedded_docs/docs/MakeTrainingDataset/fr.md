@@ -9,7 +9,7 @@ Ce nœud prépare les données pour l'entraînement en encodant les images et le
 | `images` | Liste d'images à encoder. | IMAGE | Oui | N/A |
 | `vae` | Modèle VAE pour encoder les images en latents. | VAE | Oui | N/A |
 | `clip` | Modèle CLIP pour encoder le texte en conditionnement. | CLIP | Oui | N/A |
-| `texts` | Liste de légendes textuelles. Peut être de longueur n (correspondant aux images), 1 (répétée pour toutes), ou omise (utilise une chaîne vide). | STRING | Non | 0, 1 ou n éléments (n = nombre d'images) |
+| `textes` | Liste de légendes textuelles. Peut être de longueur n (correspondant aux images), 1 (répétée pour toutes), ou omise (utilise une chaîne vide). | STRING | Non | 0, 1 ou n éléments (n = nombre d'images) |
 
 **Contraintes des paramètres :**
 

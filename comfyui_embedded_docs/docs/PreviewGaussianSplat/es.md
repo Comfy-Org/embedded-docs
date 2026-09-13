@@ -6,12 +6,12 @@ El nodo PreviewGaussianSplat muestra un archivo de gaussian splat 3D en una vent
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `model_3d` | Un archivo de gaussian splat 3D. | FILE3D | Sí | splat<br>ply<br>spz<br>ksplat |
-| `model_3d_info` | Información de metadatos opcional sobre el modelo 3D. Cuando no está conectado, el nodo usa la información del modelo de `viewport_state`. | LOAD3DMODELINFO | No | - |
-| `viewport_state` | El estado actual del viewport 3D, incluida la información de la cámara y del modelo. | LOAD3D | Sí | - |
-| `camera_info` | Información de cámara opcional para la vista previa. Cuando no está conectado, el nodo usa la información de cámara de `viewport_state`. | LOAD3DCAMERA | No | - |
-| `width` | El ancho del renderizado de la vista previa en píxeles (predeterminado: 1024). | INT | Sí | 1 a 4096 |
-| `height` | La altura del renderizado de la vista previa en píxeles (predeterminado: 1024). | INT | Sí | 1 a 4096 |
+| `modelo_3d` | Un archivo de gaussian splat 3D. | FILE3D | Sí | splat<br>ply<br>spz<br>ksplat |
+| `info_modelo_3d` | Información de metadatos opcional sobre el modelo 3D. Cuando no está conectado, el nodo usa la información del modelo de `viewport_state`. | LOAD3DMODELINFO | No | - |
+| `estado_de_vista` | El estado actual del viewport 3D, incluida la información de la cámara y del modelo. | LOAD3D | Sí | - |
+| `info_cámara` | Información de cámara opcional para la vista previa. Cuando no está conectado, el nodo usa la información de cámara de `viewport_state`. | LOAD3DCAMERA | No | - |
+| `ancho` | El ancho del renderizado de la vista previa en píxeles (predeterminado: 1024). | INT | Sí | 1 a 4096 |
+| `alto` | La altura del renderizado de la vista previa en píxeles (predeterminado: 1024). | INT | Sí | 1 a 4096 |
 
 Nota: Cuando no se proporcionan `camera_info` o `model_3d_info`, el nodo recurre a la información de cámara y modelo almacenada en `viewport_state`. Si `viewport_state` no es un objeto de estado de viewport válido, se trata como vacío.
 

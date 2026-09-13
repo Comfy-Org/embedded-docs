@@ -6,7 +6,7 @@ Carrega um modelo de remoção de fundo a partir de um arquivo. Este nó prepara
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `bg_removal_name` | O modelo usado para remover fundos de imagens. Selecione na lista de arquivos de modelo de remoção de fundo disponíveis. | COMBO | Sim | Lista de arquivos de modelo disponíveis (ordenados alfabeticamente) |
+| `nome_remoção_fundo` | O modelo usado para remover fundos de imagens. Selecione na lista de arquivos de modelo de remoção de fundo disponíveis. | COMBO | Sim | Lista de arquivos de modelo disponíveis (ordenados alfabeticamente) |
 
 Nota: Se o arquivo selecionado não contiver um modelo de remoção de fundo válido, o nó lançará um RuntimeError.
 

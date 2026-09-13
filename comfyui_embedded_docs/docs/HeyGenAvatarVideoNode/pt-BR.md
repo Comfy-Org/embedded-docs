@@ -10,11 +10,11 @@ Gere um vídeo de apresentador falante a partir de um avatar da HeyGen. Este nó
 |-----------|-------------|-----------|----------|-------|
 | `engine` | Motor de renderização; cada opção lista apenas os avatares que o suportam. "auto" oferece todos os avatares e escolhe o melhor motor para cada um (Avatar IV preferido). O Avatar V tem a maior fidelidade, o Avatar III é o mais acessível. | DYNAMIC_COMBO | Sim | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
 | `custom_avatar_id` | ID de aparência de avatar da HeyGen opcional. Quando definido, substitui o avatar selecionado acima. Qualquer uma das mais de 3000 aparências públicas da HeyGen (ou seus avatares privados) pode ser usada. Padrão: `""`. | STRING | Não |  |
-| `speech` | Conduza o avatar com um roteiro de texto (text-to-speech da HeyGen) ou com seu próprio áudio. Nome de exibição: "speech source". | DYNAMIC_COMBO | Sim | `"script"`<br>`"audio"` |
-| `resolution` | Resolução do vídeo de saída. Padrão: `"1080p"`. | COMBO | Não | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Proporção de aspecto da saída. "auto" segue a filmagem de origem do avatar. Padrão: `"auto"`. | COMBO | Não | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `background_color` | Cor de fundo sólida opcional como código hexadecimal (por exemplo, `"#00ff00"`). Deixe vazio para usar o fundo do próprio avatar. Se fornecida, o valor deve começar com `#`. Padrão: `""`. | STRING | Não |  |
-| `seed` | Não é enviado à HeyGen; altere-o para forçar uma nova execução. Padrão: `42`. | INT | Não | Mín: 0<br>Máx: 2147483647 |
+| `fala` | Conduza o avatar com um roteiro de texto (text-to-speech da HeyGen) ou com seu próprio áudio. Nome de exibição: "speech source". | DYNAMIC_COMBO | Sim | `"script"`<br>`"audio"` |
+| `resolução` | Resolução do vídeo de saída. Padrão: `"1080p"`. | COMBO | Não | `"720p"`<br>`"1080p"` |
+| `proporção` | Proporção de aspecto da saída. "auto" segue a filmagem de origem do avatar. Padrão: `"auto"`. | COMBO | Não | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `cor_de_fundo` | Cor de fundo sólida opcional como código hexadecimal (por exemplo, `"#00ff00"`). Deixe vazio para usar o fundo do próprio avatar. Se fornecida, o valor deve começar com `#`. Padrão: `""`. | STRING | Não |  |
+| `semente` | Não é enviado à HeyGen; altere-o para forçar uma nova execução. Padrão: `42`. | INT | Não | Mín: 0<br>Máx: 2147483647 |
 
 ### Entradas do `auto`
 

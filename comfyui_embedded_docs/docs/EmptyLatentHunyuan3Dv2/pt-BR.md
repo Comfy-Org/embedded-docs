@@ -6,8 +6,8 @@ Este nó cria um lote de amostras latentes vazias (preenchidas com zeros) format
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `resolution` | A dimensão de resolução do espaço latente a ser criada (padrão: 3072) | INT | Sim | 1 - 8192 |
-| `batch_size` | O número de imagens latentes no lote (padrão: 1) | INT | Sim | 1 - 4096 |
+| `resolução` | A dimensão de resolução do espaço latente a ser criada (padrão: 3072) | INT | Sim | 1 - 8192 |
+| `tamanho_do_lote` | O número de imagens latentes no lote (padrão: 1) | INT | Sim | 1 - 4096 |
 
 ## Saídas
 

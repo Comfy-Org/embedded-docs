@@ -6,9 +6,9 @@ Este nodo configura la pasada de muestreo de la etapa de textura para la generac
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | El condicionamiento positivo utilizado para la pasada de generación de textura. Se le adjuntan los metadatos de la etapa de textura. | CONDITIONING | Sí | - |
-| `negative` | El condicionamiento negativo utilizado para la pasada de generación de textura. Se le adjuntan los metadatos de la etapa de textura. | CONDITIONING | Sí | - |
-| `shape_latent` | El diccionario latente producido por Trellis2ShapeStage o Trellis2UpsampleStage. Debe contener `coords` (el diseño de coordenadas, forma [N, 4]) y `samples` (el latente de forma por vóxel); `coord_resolution` y `model_frame` son opcionales. | LATENT | Sí | - |
+| `positivo` | El condicionamiento positivo utilizado para la pasada de generación de textura. Se le adjuntan los metadatos de la etapa de textura. | CONDITIONING | Sí | - |
+| `negativo` | El condicionamiento negativo utilizado para la pasada de generación de textura. Se le adjuntan los metadatos de la etapa de textura. | CONDITIONING | Sí | - |
+| `latent de forma` | El diccionario latente producido por Trellis2ShapeStage o Trellis2UpsampleStage. Debe contener `coords` (el diseño de coordenadas, forma [N, 4]) y `samples` (el latente de forma por vóxel); `coord_resolution` y `model_frame` son opcionales. | LATENT | Sí | - |
 
 Notas:
 - `shape_latent` debe ser la salida de Trellis2ShapeStage o Trellis2UpsampleStage; proporciona el diseño de coordenadas y el latente de forma por vóxel utilizados por la pasada de textura.

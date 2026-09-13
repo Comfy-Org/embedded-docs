@@ -7,9 +7,9 @@ Smooth SAM3D Body Pose Data, bir 3B gövde poz dizisinde kareler arası titremey
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `mhr_pose_data` | Yumuşatılacak MHR poz verisi dizisi; model parametreleri, şekil parametreleri, ifade parametreleri, MHR70 anahtar nokta düzeni ve ilgili ağ verilerini içerir. | MHR_POSE_DATA | Evet | — |
-| `strength` | Yumuşatma gücü. 0 = ham, 1 = yumuşatılmış. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım 0.05) |
-| `method` | gaussian: simetrik ağırlıklı ortalama, en iyi genel amaçlı yumuşatıcı.<br>savgol: kayan polinom uyumu, keskin zirveleri korur. (varsayılan: "savgol") | COMBO | Evet | "gaussian"<br>"savgol" |
-| `window` | Kare cinsinden zamansal pencere (tek değerler). (varsayılan: 7) | INT | Evet | 1 - 51 (tek değerler, adım 2) |
+| `güç` | Yumuşatma gücü. 0 = ham, 1 = yumuşatılmış. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım 0.05) |
+| `yöntem` | gaussian: simetrik ağırlıklı ortalama, en iyi genel amaçlı yumuşatıcı.<br>savgol: kayan polinom uyumu, keskin zirveleri korur. (varsayılan: "savgol") | COMBO | Evet | "gaussian"<br>"savgol" |
+| `pencere` | Kare cinsinden zamansal pencere (tek değerler). (varsayılan: 7) | INT | Evet | 1 - 51 (tek değerler, adım 2) |
 | `rotation_threshold_degrees` | Hızlı dönüşleri korumak için bu kök dönüş hızında (derece/kare) yumuşatmayı devre dışı bırakır. 30° çoğu içerik için uygundur; düşük değerler sıradan titremelerde yumuşatmayı devre dışı bırakabilir ve kaliteyi sessizce etkiler. 0 = devre dışı. (varsayılan: 30.0) | FLOAT | Evet | 0.0 - 90.0 (adım 1.0) |
 
 Not: `strength` 0.0 veya daha düşük olduğunda ya da `window` 1 veya daha düşük olduğunda, düğüm girdi verilerini değiştirmeden döndürür. Girdi en az 2 kare ve anahtar nokta verisi içermelidir; aksi takdirde düğüm girdi verilerini değiştirmeden döndürür. `rotation_threshold_degrees` 0.0 olduğunda, dönüş tabanlı yumuşatma geri çekilmesi devre dışı bırakılır.

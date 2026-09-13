@@ -8,7 +8,7 @@ Este nodo codifica una imagen de entrada con el codificador de imágenes DINOv3 
 |-----------|-------------|---------------|-------------|-------|
 | `clip_vision` | Codificador de imágenes DINOv3 ViT-H/16+ | CLIP_VISION | Sí | - |
 | `vae` | Flux2 VAE | VAE | Sí | - |
-| `image` | La imagen de entrada que se va a codificar | IMAGE | Sí | - |
+| `imagen` | La imagen de entrada que se va a codificar | IMAGE | Sí | - |
 
 ## Salidas
 

@@ -6,7 +6,7 @@ PaintMesh recebe uma malha 3D e um campo de cores de voxel. Ele atribui a cada v
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `mesh` | A malha a ser pintada. | MESH | Sim | N/A |
+| `malha` | A malha a ser pintada. | MESH | Sim | N/A |
 | `voxel_colors` | Campo de voxels contendo dados de cor usados para pintura. Apenas os canais RGB de cor base são usados do campo. | VOXEL | Sim | N/A |
 
 Observação: Quando as coordenadas do campo de voxels incluem um canal de índice de lote e a malha de entrada contém vários itens de malha, o nó aplica as cores separadamente a cada item de malha no lote. Se um determinado item de malha não tiver voxels correspondentes, ele receberá cores de vértice padrão zero (preto). As cores amostradas são convertidas de sRGB para RGB linear para a malha de saída, já que o campo de voxels pode carregar dados PBR completos, mas apenas o RGB da cor base é usado para as cores de vértice.

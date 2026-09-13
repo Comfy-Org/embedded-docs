@@ -8,10 +8,10 @@
 
 | Параметр | Описание | Тип данных | Обязательный | Диапазон |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Изображение, освещение которого изменяется. Любой альфа-канал отбрасывается перед загрузкой изображения. | IMAGE | Да | - |
+| `изображение` | Изображение, освещение которого изменяется. Любой альфа-канал отбрасывается перед загрузкой изображения. | IMAGE | Да | - |
 | `light_type` | Атмосфера освещения, которую нужно применить. | COMBO | Да | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
 | `light_direction` | Откуда исходит свет. Атмосферы с жёстким светом, такие как «midday», «spotlight on subject» и «harsh studio lighting», реагируют на это сильнее всего. | COMBO | Да | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
-| `moderation` | Настройки модерации. Выберите `"true"`, чтобы показать параметры модерации, или `"false"`, чтобы запустить без них. | DYNAMIC_COMBO | Да | `"false"`<br>`"true"` |
+| `модерация` | Настройки модерации. Выберите `"true"`, чтобы показать параметры модерации, или `"false"`, чтобы запустить без них. | DYNAMIC_COMBO | Да | `"false"`<br>`"true"` |
 
 ### Входы модерации
 

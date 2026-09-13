@@ -8,9 +8,9 @@ Image Compare düğümü, sürüklenebilir bir kaydırıcı kullanarak iki gör�
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `image_a` | Karşılaştırılacak ilk görüntü. | IMAGE | Hayır | - |
-| `image_b` | Karşılaştırılacak ikinci görüntü. | IMAGE | Hayır | - |
-| `compare_view` | Kullanıcı arayüzünde kaydırıcılı karşılaştırma görünümünü etkinleştiren kontrol. | IMAGECOMPARE | Evet | - |
+| `görüntü_a` | Karşılaştırılacak ilk görüntü. | IMAGE | Hayır | - |
+| `görüntü_b` | Karşılaştırılacak ikinci görüntü. | IMAGE | Hayır | - |
+| `karşılaştırma_görünümü` | Kullanıcı arayüzünde kaydırıcılı karşılaştırma görünümünü etkinleştiren kontrol. | IMAGECOMPARE | Evet | - |
 
 **Not:** Bu düğüm bir çıktı düğümüdür. `image_a` ve `image_b` isteğe bağlı olsa da düğümün görünür bir etkisi olması için en az bir görüntü sağlanmalıdır. Düğüm, bağlı olmayan her görüntü girişi için boş bir alan görüntüler. Sağlanan her görüntü grubu, sırasıyla `comfy.compare.a` ve `comfy.compare.b` önekleri altında geçici depolamaya kaydedilir ve ardından kaydırıcı görünümünde gösterilir.
 

@@ -7,7 +7,7 @@ ModelSave düğümü, bir MODEL'i bilgisayarınızın depolama alanına `.safete
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Diske kaydedilecek model | MODEL | Evet | - |
-| `filename_prefix` | Kaydedilen model dosyası için dosya adı ve yol öneki (varsayılan: "diffusion_models/ComfyUI") | STRING | Evet | - |
+| `dosyaadı_öneki` | Kaydedilen model dosyası için dosya adı ve yol öneki (varsayılan: "diffusion_models/ComfyUI") | STRING | Evet | - |
 | `prompt` | İş akışı istem bilgisi (otomatik olarak sağlanır) | PROMPT | Hayır | - |
 | `extra_pnginfo` | Ek iş akışı meta verileri (otomatik olarak sağlanır) | EXTRA_PNGINFO | Hayır | - |
 

@@ -8,9 +8,9 @@ Este nó gera um vídeo usando os modelos MiniMax H3, condicionado a imagens, v�
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-----------|---------------|-------------|-----------|
-| `model` | Modelo a ser usado para geração de vídeo (padrão: "MiniMax H3"). Selecionar "MiniMax H3" fornece as entradas de geração e referência do MiniMax H3 abaixo. Selecionar "MiniMax H3 Max" fornece as entradas de geração e referência do MiniMax H3 Max abaixo. | DYNAMIC_COMBO | Sim | "MiniMax H3"<br>"MiniMax H3 Max" |
-| `seed` | Semente aleatória. A mesma solicitação com a mesma semente fornece resultados semelhantes, mas não garantidamente idênticos (padrão: 42). | INT | Sim | 0 a 4294967295 |
-| `watermark` | Se deve adicionar uma marca d'água AIGC ao vídeo (padrão: false). Suportado apenas pelo modelo MiniMax H3. | BOOLEAN | Não | true<br>false |
+| `modelo` | Modelo a ser usado para geração de vídeo (padrão: "MiniMax H3"). Selecionar "MiniMax H3" fornece as entradas de geração e referência do MiniMax H3 abaixo. Selecionar "MiniMax H3 Max" fornece as entradas de geração e referência do MiniMax H3 Max abaixo. | DYNAMIC_COMBO | Sim | "MiniMax H3"<br>"MiniMax H3 Max" |
+| `semente` | Semente aleatória. A mesma solicitação com a mesma semente fornece resultados semelhantes, mas não garantidamente idênticos (padrão: 42). | INT | Sim | 0 a 4294967295 |
+| `marca d'água` | Se deve adicionar uma marca d'água AIGC ao vídeo (padrão: false). Suportado apenas pelo modelo MiniMax H3. | BOOLEAN | Não | true<br>false |
 
 ### Entradas do MiniMax H3
 

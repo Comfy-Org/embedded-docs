@@ -6,7 +6,7 @@ Weld Vertices fusionne les sommets coïncidents dans un maillage 3D, de sorte qu
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `mesh` | Le maillage 3D d'entrée dont les sommets coïncidents seront fusionnés. | MESH | Oui | - |
+| `maillage` | Le maillage 3D d'entrée dont les sommets coïncidents seront fusionnés. | MESH | Oui | - |
 | `epsilon_rel` | Tolérance de soudage (fraction de la diagonale de la boîte englobante). 1e-5 pour la déduplication de flottants ; 1e-3 pour les sommets visiblement proches mais distincts. Défaut : 1e-5. | FLOAT | Oui | 0.0 à illimité (pas 1e-6) |
 | `epsilon_abs` | Tolérance de soudage absolue (remplace epsilon_rel lorsque > 0). Défaut : 0.0. | FLOAT | Oui | 0.0 à illimité (pas 1e-6) |
 

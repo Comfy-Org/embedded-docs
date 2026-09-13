@@ -8,11 +8,11 @@ Le nœud Recraft V4 Text to Vector génère des illustrations Scalable Vector Gr
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle à utiliser pour la génération. Les modèles recraftv4_styles sont conçus pour une génération cohérente en style et nécessitent toujours un `style_id` ou des `style_references`. La sélection d'un modèle modifie les options `size` disponibles. | DYNAMIC_COMBO | Oui | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
+| `modèle` | Le modèle à utiliser pour la génération. Les modèles recraftv4_styles sont conçus pour une génération cohérente en style et nécessitent toujours un `style_id` ou des `style_references`. La sélection d'un modèle modifie les options `size` disponibles. | DYNAMIC_COMBO | Oui | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
 | `prompt` | Prompt pour la génération d'image. Maximum 10 000 caractères. | STRING | Oui | N/A |
-| `negative_prompt` | Cette entrée est ignorée : le prompt négatif n'est pas pris en charge par les modèles Recraft V4 et V4.1. | STRING | Oui | N/A |
+| `prompt_négatif` | Cette entrée est ignorée : le prompt négatif n'est pas pris en charge par les modèles Recraft V4 et V4.1. | STRING | Oui | N/A |
 | `n` | Le nombre d'images à générer (par défaut : 1). | INT | Oui | 1 à 6 |
-| `seed` | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). | INT | Oui | 0 à 18446744073709551615 |
+| `graine` | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). | INT | Oui | 0 à 18446744073709551615 |
 | `recraft_controls` | Contrôles supplémentaires facultatifs sur la génération via le nœud Recraft Controls. | CUSTOM | Non | N/A |
 | `style_id` | UUID d'un style vectoriel Recraft V4 à appliquer, par exemple depuis le nœud Recraft V4 Create Style ou la sortie `style_id` d'une exécution précédente. Ne peut pas être combiné avec `style_references`. | STRING | Non | N/A |
 | `style_match` | Degré de fidélité au style : precise le reproduit en détail, flexible correspond à l'aspect général. Utilisé uniquement lorsqu'un style est fourni (par défaut : "precise"). | COMBO | Non | `"precise"`<br>`"flexible"` |

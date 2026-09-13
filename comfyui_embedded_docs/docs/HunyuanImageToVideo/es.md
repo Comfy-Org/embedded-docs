@@ -6,14 +6,14 @@ El nodo HunyuanImageToVideo convierte imágenes en representaciones latentes de 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `positive` | Entrada de condicionamiento positivo para guiar la generación de video | CONDITIONING | Sí | - |
+| `positivo` | Entrada de condicionamiento positivo para guiar la generación de video | CONDITIONING | Sí | - |
 | `vae` | Modelo VAE utilizado para codificar imágenes en el espacio latente | VAE | Sí | - |
-| `width` | Ancho del video de salida en píxeles (predeterminado: 848, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `height` | Alto del video de salida en píxeles (predeterminado: 480, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `length` | Número de fotogramas del video de salida (predeterminado: 53, paso: 4) | INT | Sí | 1 a MAX_RESOLUTION |
-| `batch_size` | Número de videos a generar simultáneamente (predeterminado: 1) | INT | Sí | 1 a 4096 |
-| `guidance_type` | Método para incorporar la imagen inicial en la generación de video (predeterminado: "v1 (concat)"). Opción avanzada | COMBO | Sí | "v1 (concat)"<br>"v2 (replace)"<br>"custom" |
-| `start_image` | Imagen inicial opcional (o secuencia de imágenes) para inicializar la generación de video. Solo se utilizan los primeros `length` fotogramas y los primeros 3 canales de color | IMAGE | No | - |
+| `ancho` | Ancho del video de salida en píxeles (predeterminado: 848, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
+| `altura` | Alto del video de salida en píxeles (predeterminado: 480, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
+| `longitud` | Número de fotogramas del video de salida (predeterminado: 53, paso: 4) | INT | Sí | 1 a MAX_RESOLUTION |
+| `tamaño_del_lote` | Número de videos a generar simultáneamente (predeterminado: 1) | INT | Sí | 1 a 4096 |
+| `tipo_de_orientación` | Método para incorporar la imagen inicial en la generación de video (predeterminado: "v1 (concat)"). Opción avanzada | COMBO | Sí | "v1 (concat)"<br>"v2 (replace)"<br>"custom" |
+| `imagen_inicial` | Imagen inicial opcional (o secuencia de imágenes) para inicializar la generación de video. Solo se utilizan los primeros `length` fotogramas y los primeros 3 canales de color | IMAGE | No | - |
 
 **Nota:** Cuando se proporciona `start_image`, el nodo utiliza diferentes métodos de guía según el `guidance_type` seleccionado:
 

@@ -6,8 +6,8 @@ Este nodo establece el latente guía para un modelo de edición. Toma datos de c
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Los datos de condicionamiento que se modificarán con información de latente de referencia | CONDITIONING | Sí | - |
-| `latent` | Datos latentes opcionales que se usarán como referencia para el modelo de edición. Si no se proporciona, el condicionamiento se devuelve sin cambios | LATENT | No | - |
+| `condicionamiento` | Los datos de condicionamiento que se modificarán con información de latente de referencia | CONDITIONING | Sí | - |
+| `latente` | Datos latentes opcionales que se usarán como referencia para el modelo de edición. Si no se proporciona, el condicionamiento se devuelve sin cambios | LATENT | No | - |
 
 ## Salidas
 

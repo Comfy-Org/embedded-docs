@@ -6,8 +6,8 @@ Este nodo ajusta la escala de ruido utilizada durante el muestreo del modelo. Cr
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo al que se aplicará el ajuste de escala de ruido. | MODEL | Sí | - |
-| `noise_scale` | Escala de ruido absoluta de entrenamiento. Por ejemplo, HiDream-O1 base: 8.0, dev: 7.5. (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 64.0 (paso: 0.01) |
+| `modelo` | El modelo al que se aplicará el ajuste de escala de ruido. | MODEL | Sí | - |
+| `escala_ruido` | Escala de ruido absoluta de entrenamiento. Por ejemplo, HiDream-O1 base: 8.0, dev: 7.5. (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 64.0 (paso: 0.01) |
 
 ## Salidas
 

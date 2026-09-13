@@ -6,10 +6,10 @@ Este nodo ancla una imagen, un clip corto, audio, o un clip con su banda sonora 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `positive` | El condicionamiento al que se adjunta el fotograma clave de guía. | CONDITIONING | Sí | - |
+| `positivo` | El condicionamiento al que se adjunta el fotograma clave de guía. | CONDITIONING | Sí | - |
 | `vae` | VAE de video, necesario cuando se conecta una imagen. | VAE | No | - |
 | `audio_vae` | VAE de audio, necesario cuando se conecta un audio. | VAE | No | - |
-| `latent` | El latent de audio-video de MiniMax H3 que define el video objetivo. Debe ser un latent AV de MiniMax H3 (anidado, con dos tensores 5D, y el tensor de video con 24 canales). | LATENT | Sí | - |
+| `latente` | El latent de audio-video de MiniMax H3 que define el video objetivo. Debe ser un latent AV de MiniMax H3 (anidado, con dos tensores 5D, y el tensor de video con 24 canales). | LATENT | Sí | - |
 | `image` | Imagen o fotogramas de video para anclar. Los lotes de varios fotogramas se anclan como un clip y se recortan a las longitudes de clip válidas del modelo: 5, 22, 39... (17k + 5) fotogramas. Los lotes de menos de 5 fotogramas usan solo la primera imagen. | IMAGE | No | - |
 | `audio` | Banda sonora para anclar comenzando en el mismo índice de fotograma, recortada a la duración restante del video. | AUDIO | No | - |
 | `frame_idx` | Índice de fotograma en el que anclar la imagen o el primer fotograma del clip. Los valores negativos se cuentan desde el final del video. (predeterminado: 0) | INT | Sí | -9999 a 9999 |

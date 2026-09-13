@@ -6,10 +6,10 @@ O nó EmptyLTXVLatentVideo cria um tensor de vídeo latente vazio (preenchido co
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `width` | A largura do tensor de vídeo latente (padrão: 768, passo: 32) | INT | Sim | 64 a MAX_RESOLUTION |
-| `height` | A altura do tensor de vídeo latente (padrão: 512, passo: 32) | INT | Sim | 64 a MAX_RESOLUTION |
-| `length` | O número de quadros no vídeo latente (padrão: 97, passo: 8) | INT | Sim | 1 a MAX_RESOLUTION |
-| `batch_size` | O número de vídeos latentes a gerar em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
+| `largura` | A largura do tensor de vídeo latente (padrão: 768, passo: 32) | INT | Sim | 64 a MAX_RESOLUTION |
+| `altura` | A altura do tensor de vídeo latente (padrão: 512, passo: 32) | INT | Sim | 64 a MAX_RESOLUTION |
+| `comprimento` | O número de quadros no vídeo latente (padrão: 97, passo: 8) | INT | Sim | 1 a MAX_RESOLUTION |
+| `tamanho_do_lote` | O número de vídeos latentes a gerar em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
 
 Observação: O vídeo latente é comprimido em comparação com as dimensões solicitadas: as dimensões espaciais (`width` e `height`) são divididas por 32, e a contagem de quadros (`length`) é dividida por 8 e arredondada para cima até o número inteiro mais próximo. Os valores de passo para `width`, `height` e `length` ajudam a manter essas divisões exatas.
 

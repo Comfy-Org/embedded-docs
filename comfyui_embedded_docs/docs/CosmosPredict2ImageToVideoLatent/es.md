@@ -7,12 +7,12 @@ Crea latentes de video para el flujo de trabajo de imagen a video de Cosmos Pred
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `vae` | El modelo VAE utilizado para codificar las imágenes inicial y final en el espacio latente | VAE | Sí | - |
-| `width` | Ancho del video de salida en píxeles (predeterminado: 848, debe ser múltiplo de 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `height` | Altura del video de salida en píxeles (predeterminado: 480, debe ser múltiplo de 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `length` | Número de fotogramas en la secuencia de video (predeterminado: 93) | INT | Sí | 1 a MAX_RESOLUTION |
-| `batch_size` | Número de secuencias de video a generar (predeterminado: 1) | INT | Sí | 1 a 4096 |
-| `start_image` | Imagen inicial opcional para la secuencia de video | IMAGE | No | - |
-| `end_image` | Imagen final opcional para la secuencia de video | IMAGE | No | - |
+| `ancho` | Ancho del video de salida en píxeles (predeterminado: 848, debe ser múltiplo de 16) | INT | Sí | 16 a MAX_RESOLUTION |
+| `alto` | Altura del video de salida en píxeles (predeterminado: 480, debe ser múltiplo de 16) | INT | Sí | 16 a MAX_RESOLUTION |
+| `longitud` | Número de fotogramas en la secuencia de video (predeterminado: 93) | INT | Sí | 1 a MAX_RESOLUTION |
+| `tamaño_del_lote` | Número de secuencias de video a generar (predeterminado: 1) | INT | Sí | 1 a 4096 |
+| `imagen_inicial` | Imagen inicial opcional para la secuencia de video | IMAGE | No | - |
+| `imagen_final` | Imagen final opcional para la secuencia de video | IMAGE | No | - |
 
 **Nota:** Cuando no se proporciona ni `start_image` ni `end_image`, el nodo simplemente devuelve un latente vacío del tamaño y la longitud solicitados. Cuando se proporciona una o ambas imágenes, se redimensionan a `width` y `height`, se codifican con el `vae` y se colocan al principio y/o al final de la secuencia latente. Las regiones correspondientes se marcan en la máscara de ruido para que se conserven durante la generación. Los latentes codificados se convierten con el formato latente de Wan 2.1, y el latente y la máscara resultantes se repiten `batch_size` veces.
 

@@ -6,14 +6,14 @@ Le nœud Wan Text to Image génère des images à partir de descriptions textuel
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser (par défaut : "wan2.5-t2i-preview") | STRING | Oui | "wan2.5-t2i-preview" |
-| `prompt` | Prompt décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois (par défaut : vide) | STRING | Oui | - |
-| `negative_prompt` | Prompt négatif décrivant ce qu'il faut éviter (par défaut : vide) | STRING | Non | - |
-| `width` | Largeur de l'image en pixels (par défaut : 1024, pas : 32) | INT | Non | 768-1440 |
-| `height` | Hauteur de l'image en pixels (par défaut : 1024, pas : 32) | INT | Non | 768-1440 |
-| `seed` | Graine à utiliser pour la génération (par défaut : 0) | INT | Non | 0-2147483647 |
-| `prompt_extend` | Indique s'il faut améliorer le prompt avec l'assistance de l'IA (par défaut : True) | BOOLEAN | Non | - |
-| `watermark` | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : False) | BOOLEAN | Non | - |
+| `modèle` | Modèle à utiliser (par défaut : "wan2.5-t2i-preview") | STRING | Oui | "wan2.5-t2i-preview" |
+| `invite` | Prompt décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois (par défaut : vide) | STRING | Oui | - |
+| `invite négative` | Prompt négatif décrivant ce qu'il faut éviter (par défaut : vide) | STRING | Non | - |
+| `largeur` | Largeur de l'image en pixels (par défaut : 1024, pas : 32) | INT | Non | 768-1440 |
+| `hauteur` | Hauteur de l'image en pixels (par défaut : 1024, pas : 32) | INT | Non | 768-1440 |
+| `graine` | Graine à utiliser pour la génération (par défaut : 0) | INT | Non | 0-2147483647 |
+| `extension d'invite` | Indique s'il faut améliorer le prompt avec l'assistance de l'IA (par défaut : True) | BOOLEAN | Non | - |
+| `filigrane` | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : False) | BOOLEAN | Non | - |
 
 ## Sorties
 

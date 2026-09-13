@@ -6,7 +6,7 @@ Bu düğüm, bir görüntüyü "crisp upscale" aracını kullanarak senkron olar
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Büyütülecek girdi görüntüsü. Bir görüntü grubunu kabul eder; her görüntü bağımsız olarak işlenir. | IMAGE | Evet | — |
+| `görüntü` | Büyütülecek girdi görüntüsü. Bir görüntü grubunu kabul eder; her görüntü bağımsız olarak işlenir. | IMAGE | Evet | — |
 
 ## Çıktılar
 

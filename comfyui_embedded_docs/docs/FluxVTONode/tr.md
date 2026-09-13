@@ -6,10 +6,10 @@ Bu düğüm, sağlanan bir giysi görselini bir kişiye giydirerek sanal prova g
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `person` | Giydirilecek kişinin görseli. | IMAGE | Evet | - |
-| `garment` | Uygulanacak giysinin görseli. | IMAGE | Evet | - |
-| `prompt` | İsteğe bağlı doğal dilde stil talimatı (örn. giysinin nasıl oturması gerektiği). Varsayılan boş bir dizedir. | STRING | Hayır | - |
-| `seed` | Gürültüyü oluşturmak için kullanılan rastgele tohum. Varsayılan: 0. | INT | Hayır | 0 ile 18446744073709551615 |
+| `kişi` | Giydirilecek kişinin görseli. | IMAGE | Evet | - |
+| `giysi` | Uygulanacak giysinin görseli. | IMAGE | Evet | - |
+| `istem` | İsteğe bağlı doğal dilde stil talimatı (örn. giysinin nasıl oturması gerektiği). Varsayılan boş bir dizedir. | STRING | Hayır | - |
+| `tohum` | Gürültüyü oluşturmak için kullanılan rastgele tohum. Varsayılan: 0. | INT | Hayır | 0 ile 18446744073709551615 |
 
 ## Çıktılar
 

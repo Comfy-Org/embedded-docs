@@ -6,9 +6,9 @@ Empty Flux 2 Latent düğümü, sıfırlarla doldurulmuş boş bir latent temsil
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `width` | Oluşturulacak nihai görüntünün genişliği. Latent genişliği bu değerin 16'ya bölünmüş hali olacaktır. Varsayılan değer 1024'tür. | INT | Evet | 16 ile 16384 |
-| `height` | Oluşturulacak nihai görüntünün yüksekliği. Latent yüksekliği bu değerin 16'ya bölünmüş hali olacaktır. Varsayılan değer 1024'tür. | INT | Evet | 16 ile 16384 |
-| `batch_size` | Tek bir partide oluşturulacak latent örnek sayısı. Varsayılan değer 1'dir. | INT | Hayır | 1 ile 4096 |
+| `genişlik` | Oluşturulacak nihai görüntünün genişliği. Latent genişliği bu değerin 16'ya bölünmüş hali olacaktır. Varsayılan değer 1024'tür. | INT | Evet | 16 ile 16384 |
+| `yükseklik` | Oluşturulacak nihai görüntünün yüksekliği. Latent yüksekliği bu değerin 16'ya bölünmüş hali olacaktır. Varsayılan değer 1024'tür. | INT | Evet | 16 ile 16384 |
+| `toplu_boyut` | Tek bir partide oluşturulacak latent örnek sayısı. Varsayılan değer 1'dir. | INT | Hayır | 1 ile 4096 |
 
 **Not:** `width` ve `height` girdileri 16 adımlı kullanır, bu nedenle 16'ya bölünebilir olmalıdır. Bunun nedeni, düğümün latent boyutları oluşturmak için bu değerleri bu faktöre bölmesidir.
 

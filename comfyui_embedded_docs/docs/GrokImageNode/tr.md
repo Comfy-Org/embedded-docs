@@ -7,12 +7,12 @@ Grok Image düğümü, Grok AI modelini kullanarak bir metin açıklamasından b
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Görsel üretimi için kullanılacak belirli Grok modeli. Farklı modeller değişen kalite, hız veya özellikler sunabilir. | COMBO | Evet | `"grok-imagine-image-2.0"`<br>`"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"` |
-| `prompt` | Görseli üretmek için kullanılan metin istemi. Bu açıklama, yapay zekâya ne oluşturacağı konusunda rehberlik eder. En az 1 karakter uzunluğunda olmalıdır (yalnızca boşluk içeren metin kabul edilmez). | STRING | Evet | N/A |
-| `aspect_ratio` | Üretilen görsel için istenen genişlik-yükseklik oranı. | COMBO | Evet | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
-| `number_of_images` | Üretilecek görsel sayısı (varsayılan: 1). | INT | Evet | 1 ile 10 |
-| `seed` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirlemek için tohum değeri; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Evet | 0 ile 2147483647 |
-| `resolution` | Üretilen görseller için istenen çıktı çözünürlüğü (varsayılan: "1K"). | COMBO | Hayır | `"1K"`<br>`"2K"` |
-| `quality` | Kalite düzeyi; yalnızca `grok-imagine-image-2.0` modeli tarafından desteklenir (varsayılan: "medium"; "low" mevcut seçeneklerden biridir). Diğer tüm modeller için bu ayar yok sayılır. | COMBO | Hayır | Birden çok seçenek mevcut |
+| `istem` | Görseli üretmek için kullanılan metin istemi. Bu açıklama, yapay zekâya ne oluşturacağı konusunda rehberlik eder. En az 1 karakter uzunluğunda olmalıdır (yalnızca boşluk içeren metin kabul edilmez). | STRING | Evet | N/A |
+| `en boy oranı` | Üretilen görsel için istenen genişlik-yükseklik oranı. | COMBO | Evet | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
+| `görüntü sayısı` | Üretilecek görsel sayısı (varsayılan: 1). | INT | Evet | 1 ile 10 |
+| `tohum` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirlemek için tohum değeri; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Evet | 0 ile 2147483647 |
+| `çözünürlük` | Üretilen görseller için istenen çıktı çözünürlüğü (varsayılan: "1K"). | COMBO | Hayır | `"1K"`<br>`"2K"` |
+| `kalite` | Kalite düzeyi; yalnızca `grok-imagine-image-2.0` modeli tarafından desteklenir (varsayılan: "medium"; "low" mevcut seçeneklerden biridir). Diğer tüm modeller için bu ayar yok sayılır. | COMBO | Hayır | Birden çok seçenek mevcut |
 
 **Not:** `seed` parametresi öncelikle düğümün bir iş akışı içinde ne zaman yeniden yürütüleceğini kontrol etmek için kullanılır. Harici yapay zekâ hizmetinin doğası gereği, üretilen görseller aynı tohumla bile çalıştırmalar arasında yeniden üretilebilir veya aynı olmayacaktır.
 

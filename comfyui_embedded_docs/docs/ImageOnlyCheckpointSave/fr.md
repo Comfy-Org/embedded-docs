@@ -6,10 +6,10 @@ Ce nœud enregistre un fichier checkpoint qui regroupe un modèle avec son encod
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle à enregistrer dans le checkpoint | MODEL | Oui | - |
+| `modèle` | Le modèle à enregistrer dans le checkpoint | MODEL | Oui | - |
 | `clip_vision` | L'encodeur visuel CLIP à enregistrer dans le checkpoint | CLIP_VISION | Oui | - |
 | `vae` | Le VAE (autoencodeur variationnel) à enregistrer dans le checkpoint | VAE | Oui | - |
-| `filename_prefix` | Le préfixe du nom de fichier de sortie (par défaut : "checkpoints/ComfyUI") | STRING | Oui | - |
+| `préfixe_de_nom_de_fichier` | Le préfixe du nom de fichier de sortie (par défaut : "checkpoints/ComfyUI") | STRING | Oui | - |
 | `prompt` | Paramètre masqué qui reçoit les données de prompt du workflow | PROMPT | Non | - |
 | `extra_pnginfo` | Paramètre masqué qui reçoit des métadonnées PNG supplémentaires | EXTRA_PNGINFO | Non | - |
 

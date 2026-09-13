@@ -7,11 +7,11 @@ El nodo TextGenerateLTX2Prompt expande un prompt breve del usuario a una descrip
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `clip` | El modelo CLIP utilizado para la codificación de texto. El nodo comprueba el nombre del tokenizador del modelo para seleccionar las instrucciones correspondientes: los modelos basados en Gemma 4 usan el formato LTX-2.4, mientras que los demás modelos usan el formato LTX-2 (Gemma 3). | CLIP | Sí |  |
-| `prompt` | La entrada de texto sin procesar que describe la escena o el concepto que se expandirá en un prompt detallado para generación de video. | STRING | Sí |  |
-| `max_length` | El número máximo de tokens que el modelo de lenguaje puede generar. | INT | Sí |  |
-| `sampling_mode` | La estrategia de muestreo utilizada para seleccionar el siguiente token durante la generación de texto. | COMBO | Sí | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` |
-| `image` | Una imagen de entrada opcional utilizada como primer fotograma del video. Cuando se proporciona, el nodo cambia al modo imagen a video y usa un prompt de sistema que expande el prompt del usuario a partir del contenido de la imagen. | IMAGE | No |  |
-| `thinking` | Cuando está habilitado, se indica al modelo que razone antes de responder. Cualquier bloque de razonamiento se elimina de la salida devuelta (predeterminado: False). | BOOLEAN | No |  |
+| `mensaje` | La entrada de texto sin procesar que describe la escena o el concepto que se expandirá en un prompt detallado para generación de video. | STRING | Sí |  |
+| `longitud_máxima` | El número máximo de tokens que el modelo de lenguaje puede generar. | INT | Sí |  |
+| `modo_de_muestreo` | La estrategia de muestreo utilizada para seleccionar el siguiente token durante la generación de texto. | COMBO | Sí | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` |
+| `imagen` | Una imagen de entrada opcional utilizada como primer fotograma del video. Cuando se proporciona, el nodo cambia al modo imagen a video y usa un prompt de sistema que expande el prompt del usuario a partir del contenido de la imagen. | IMAGE | No |  |
+| `pensando` | Cuando está habilitado, se indica al modelo que razone antes de responder. Cualquier bloque de razonamiento se elimina de la salida devuelta (predeterminado: False). | BOOLEAN | No |  |
 | `use_default_template` | Cuando está habilitado, el nodo usa la plantilla de chat predeterminada para el formateo (predeterminado: True). | BOOLEAN | No |  |
 | `video` | Una entrada de video opcional que se puede usar como contexto adicional para la generación. | VIDEO | No |  |
 | `audio` | Una entrada de audio opcional que se puede usar como contexto adicional para la generación. | AUDIO | No |  |

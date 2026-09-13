@@ -8,8 +8,8 @@ Le nœud Save Video enregistre la vidéo d'entrée dans votre répertoire de sor
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `video` | La vidéo à enregistrer. | VIDEO | Oui | - |
-| `filename_prefix` | Le préfixe du fichier à enregistrer. Il peut inclure des informations de formatage telles que `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%` pour inclure des valeurs provenant des nœuds (par défaut : `video/ComfyUI`). | STRING | Oui | - |
+| `vidéo` | La vidéo à enregistrer. | VIDEO | Oui | - |
+| `préfixe_nom_fichier` | Le préfixe du fichier à enregistrer. Il peut inclure des informations de formatage telles que `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%` pour inclure des valeurs provenant des nœuds (par défaut : `video/ComfyUI`). | STRING | Oui | - |
 | `format` | Le conteneur de sortie. Auto utilise MP4 pour Auto/H.264 et WebM pour AV1. MP4, MKV et WebM sélectionnent un conteneur spécifique. La sélection d'un format détermine également quelles options de codec sont disponibles (par défaut : `auto`). | DYNAMIC_COMBO | Oui | `"auto"`<br>`"mp4"`<br>`"mkv"`<br>`"webm"` |
 | `codec` | Le codec vidéo de sortie. Auto préserve un flux source compatible. Le réencodage H.264 et AV1 prend en charge SDR, HDR (HLG) et HDR PQ. Ce sélecteur est imbriqué sous le format choisi (par défaut : `auto`). | DYNAMIC_COMBO | Non | `"auto"`<br>`"h264"`<br>`"av1"` (non disponible avec le format `webm`) |
 

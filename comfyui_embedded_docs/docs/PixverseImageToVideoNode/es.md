@@ -6,14 +6,14 @@ Genera un video a partir de una imagen fija y un prompt de texto usando PixVerse
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `image` | Imagen de entrada para transformar en video | IMAGE | Sí | - |
+| `imagen` | Imagen de entrada para transformar en video | IMAGE | Sí | - |
 | `prompt` | Prompt para la generación del video (predeterminado: cadena vacía) | STRING | Sí | - |
-| `quality` | Configuración de calidad del video (predeterminado: res_540p) | COMBO | Sí | `res_540p`<br>`res_1080p` |
-| `duration_seconds` | Duración del video generado en segundos | COMBO | Sí | `dur_2`<br>`dur_5`<br>`dur_10` |
-| `motion_mode` | Estilo de movimiento aplicado a la generación del video | COMBO | Sí | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` |
-| `seed` | Semilla para la generación del video (predeterminado: 0) | INT | Sí | 0-2147483647 |
-| `negative_prompt` | Descripción de texto opcional de elementos no deseados en una imagen (predeterminado: cadena vacía) | STRING | No | - |
-| `pixverse_template` | Plantilla opcional para influir en el estilo de la generación, creada por el nodo PixVerse Template | CUSTOM | No | - |
+| `calidad` | Configuración de calidad del video (predeterminado: res_540p) | COMBO | Sí | `res_540p`<br>`res_1080p` |
+| `duración_en_segundos` | Duración del video generado en segundos | COMBO | Sí | `dur_2`<br>`dur_5`<br>`dur_10` |
+| `modo_de_movimiento` | Estilo de movimiento aplicado a la generación del video | COMBO | Sí | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` |
+| `semilla` | Semilla para la generación del video (predeterminado: 0) | INT | Sí | 0-2147483647 |
+| `prompt_negativo` | Descripción de texto opcional de elementos no deseados en una imagen (predeterminado: cadena vacía) | STRING | No | - |
+| `plantilla_pixverse` | Plantilla opcional para influir en el estilo de la generación, creada por el nodo PixVerse Template | CUSTOM | No | - |
 
 **Nota:** Cuando se usa calidad 1080p, el modo de movimiento se establece automáticamente en normal y la duración se limita a 5 segundos. Para duraciones distintas de 5 segundos, el modo de movimiento también se establece automáticamente en normal.
 

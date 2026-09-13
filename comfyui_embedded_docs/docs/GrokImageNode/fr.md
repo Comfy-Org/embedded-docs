@@ -6,13 +6,13 @@ Le nœud Grok Image génère une ou plusieurs images à partir d’une descripti
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `model` | Le modèle Grok spécifique à utiliser pour la génération d’images. Différents modèles peuvent offrir une qualité, une vitesse ou des fonctionnalités variables. | COMBO | Oui | `"grok-imagine-image-2.0"`<br>`"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"` |
-| `prompt` | Le prompt textuel utilisé pour générer l’image. Cette description guide l’IA sur ce qu’elle doit créer. Doit comporter au moins 1 caractère (un texte composé uniquement d’espaces n’est pas accepté). | STRING | Oui | N/A |
-| `aspect_ratio` | Le rapport largeur-hauteur souhaité pour l’image générée. | COMBO | Oui | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
-| `number_of_images` | Nombre d’images à générer (par défaut : 1). | INT | Oui | 1 à 10 |
-| `seed` | Graine permettant de déterminer si le nœud doit être réexécuté ; les résultats réels ne sont pas déterministes quelle que soit la graine (par défaut : 0). | INT | Oui | 0 à 2147483647 |
-| `resolution` | La résolution de sortie souhaitée pour les images générées (par défaut : "1K"). | COMBO | Non | `"1K"`<br>`"2K"` |
-| `quality` | Niveau de qualité, pris en charge uniquement par le modèle `grok-imagine-image-2.0` (par défaut : "medium" ; "low" fait partie des options disponibles). Pour tous les autres modèles, ce paramètre est ignoré. | COMBO | Non | Plusieurs options disponibles |
+| `modèle` | Le modèle Grok spécifique à utiliser pour la génération d’images. Différents modèles peuvent offrir une qualité, une vitesse ou des fonctionnalités variables. | COMBO | Oui | `"grok-imagine-image-2.0"`<br>`"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"` |
+| `invite` | Le prompt textuel utilisé pour générer l’image. Cette description guide l’IA sur ce qu’elle doit créer. Doit comporter au moins 1 caractère (un texte composé uniquement d’espaces n’est pas accepté). | STRING | Oui | N/A |
+| `rapport d'aspect` | Le rapport largeur-hauteur souhaité pour l’image générée. | COMBO | Oui | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
+| `nombre d'images` | Nombre d’images à générer (par défaut : 1). | INT | Oui | 1 à 10 |
+| `graine` | Graine permettant de déterminer si le nœud doit être réexécuté ; les résultats réels ne sont pas déterministes quelle que soit la graine (par défaut : 0). | INT | Oui | 0 à 2147483647 |
+| `résolution` | La résolution de sortie souhaitée pour les images générées (par défaut : "1K"). | COMBO | Non | `"1K"`<br>`"2K"` |
+| `qualité` | Niveau de qualité, pris en charge uniquement par le modèle `grok-imagine-image-2.0` (par défaut : "medium" ; "low" fait partie des options disponibles). Pour tous les autres modèles, ce paramètre est ignoré. | COMBO | Non | Plusieurs options disponibles |
 
 **Remarque :** Le paramètre `seed` est principalement utilisé pour contrôler le moment où le nœud se réexécute dans un workflow. En raison de la nature du service d’IA externe, les images générées ne seront pas reproductibles ni identiques d’une exécution à l’autre, même avec une graine identique.
 

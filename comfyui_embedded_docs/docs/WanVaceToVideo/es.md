@@ -6,17 +6,17 @@ El nodo WanVaceToVideo prepara datos de condicionamiento de video para modelos d
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `positive` | Entrada de condicionamiento positivo para guiar la generación | CONDITIONING | Sí | - |
-| `negative` | Entrada de condicionamiento negativo para guiar la generación | CONDITIONING | Sí | - |
+| `positivo` | Entrada de condicionamiento positivo para guiar la generación | CONDITIONING | Sí | - |
+| `negativo` | Entrada de condicionamiento negativo para guiar la generación | CONDITIONING | Sí | - |
 | `vae` | Modelo VAE utilizado para codificar imágenes y fotogramas de video | VAE | Sí | - |
-| `width` | Ancho del video de salida en píxeles (predeterminado: 832, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `height` | Alto del video de salida en píxeles (predeterminado: 480, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `length` | Número de fotogramas en el video (predeterminado: 81, paso: 4) | INT | Sí | 1 a MAX_RESOLUTION |
-| `batch_size` | Número de videos a generar simultáneamente (predeterminado: 1) | INT | Sí | 1 a 4096 |
-| `strength` | Fuerza de condicionamiento para el control VACE (predeterminado: 1.0, paso: 0.01). Esto no es una fuerza de LoRA. Los pesos LoRA se aplican a través de nodos LoRA independientes. | FLOAT | Sí | 0.0 a 1000.0 |
+| `ancho` | Ancho del video de salida en píxeles (predeterminado: 832, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
+| `alto` | Alto del video de salida en píxeles (predeterminado: 480, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
+| `longitud` | Número de fotogramas en el video (predeterminado: 81, paso: 4) | INT | Sí | 1 a MAX_RESOLUTION |
+| `tamaño_lote` | Número de videos a generar simultáneamente (predeterminado: 1) | INT | Sí | 1 a 4096 |
+| `fuerza` | Fuerza de condicionamiento para el control VACE (predeterminado: 1.0, paso: 0.01). Esto no es una fuerza de LoRA. Los pesos LoRA se aplican a través de nodos LoRA independientes. | FLOAT | Sí | 0.0 a 1000.0 |
 | `control_video` | Video de entrada opcional usado para condicionamiento de control. Si no se proporciona, se crea automáticamente un video de gris neutro. | IMAGE | No | - |
-| `control_masks` | Máscaras opcionales que determinan qué partes del video de control están activas. Si no se proporcionan, se usa una máscara blanca completa. | MASK | No | - |
-| `reference_image` | Imagen de referencia opcional para condicionamiento adicional. Cuando se proporciona, se codifica y se antepone a la secuencia latente. Solo se usa la primera imagen. | IMAGE | No | - |
+| `máscaras_de_control` | Máscaras opcionales que determinan qué partes del video de control están activas. Si no se proporcionan, se usa una máscara blanca completa. | MASK | No | - |
+| `imagen_de_referencia` | Imagen de referencia opcional para condicionamiento adicional. Cuando se proporciona, se codifica y se antepone a la secuencia latente. Solo se usa la primera imagen. | IMAGE | No | - |
 
 **Nota:** Cuando se proporciona `control_video`, se trunca a `length` fotogramas y se escala a las dimensiones `width` y `height` especificadas; si tiene menos fotogramas que `length`, los fotogramas faltantes se rellenan con gris neutro (valor 0.5). Cuando no se proporciona, se crea automáticamente un video de gris neutro de `length` fotogramas. Las `control_masks` se escalan a las dimensiones `width` y `height` especificadas, se truncan a `length` fotogramas y se rellenan con valor 1.0 si tienen menos fotogramas. La máscara separa el video de control en partes inactivas y reactivas; cada una se codifica con VAE y se concatena a lo largo de la dimensión de canales; la máscara también se submuestrea a la resolución latente. Cuando se proporciona `reference_image`, su primera imagen se codifica con VAE y se antepone a la secuencia latente, y `trim_latent` informa el número de fotogramas latentes agregados. El recuento de fotogramas latentes se calcula como `((length - 1) // 4) + 1`, y las dimensiones espaciales latentes son `height / 8` y `width / 8`.
 

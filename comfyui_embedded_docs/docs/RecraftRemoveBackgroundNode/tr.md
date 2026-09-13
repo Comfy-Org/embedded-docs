@@ -6,7 +6,7 @@ Bu düğüm, Recraft API hizmetini kullanarak görüntülerin arka planını kal
 
 | Parametre | Açıklama | Veri Tipi | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Arka plan kaldırma için işlenecek girdi görüntü(ler)i. Gruptaki her görüntü ayrı ayrı işlenir. | IMAGE | Evet | - |
+| `görüntü` | Arka plan kaldırma için işlenecek girdi görüntü(ler)i. Gruptaki her görüntü ayrı ayrı işlenir. | IMAGE | Evet | - |
 
 ## Çıktılar
 

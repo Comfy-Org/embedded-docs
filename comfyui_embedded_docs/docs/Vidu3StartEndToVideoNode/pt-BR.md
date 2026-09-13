@@ -8,11 +8,11 @@ Este nó gera um vídeo criando uma transição entre um frame inicial e um fram
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a ser usado para geração de vídeo. Selecionar uma opção revela parâmetros de configuração adicionais para `resolution`, `duration` e `audio`. | DYNAMIC_COMBO | Sim | `"viduq3-pro"`<br>`"viduq3-turbo"` |
-| `first_frame` | A imagem inicial da sequência de vídeo. | IMAGE | Sim | - |
-| `end_frame` | A imagem final da sequência de vídeo. | IMAGE | Sim | - |
+| `modelo` | Modelo a ser usado para geração de vídeo. Selecionar uma opção revela parâmetros de configuração adicionais para `resolution`, `duration` e `audio`. | DYNAMIC_COMBO | Sim | `"viduq3-pro"`<br>`"viduq3-turbo"` |
+| `quadro inicial` | A imagem inicial da sequência de vídeo. | IMAGE | Sim | - |
+| `quadro final` | A imagem final da sequência de vídeo. | IMAGE | Sim | - |
 | `prompt` | Descrição do prompt (máx. 2000 caracteres). | STRING | Sim | Até 2000 caracteres |
-| `seed` | Valor de seed usado para controlar a aleatoriedade da geração. Possui uma opção de controle após geração (padrão: 1). | INT | Sim | 0 a 2147483647 |
+| `semente` | Valor de seed usado para controlar a aleatoriedade da geração. Possui uma opção de controle após geração (padrão: 1). | INT | Sim | 0 a 2147483647 |
 
 ### Entradas do viduq3-pro e viduq3-turbo
 

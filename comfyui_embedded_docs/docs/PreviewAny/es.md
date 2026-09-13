@@ -6,7 +6,7 @@ PreviewAny convierte cualquier valor de entrada en texto legible para que puedas
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `source` | Acepta cualquier tipo de datos de entrada para su visualización en la vista previa. Si no se proporciona un valor, la vista previa muestra 'None'. | ANY | Sí | Cualquier tipo de datos |
+| `fuente` | Acepta cualquier tipo de datos de entrada para su visualización en la vista previa. Si no se proporciona un valor, la vista previa muestra 'None'. | ANY | Sí | Cualquier tipo de datos |
 
 **Comportamiento de conversión**
 

@@ -6,13 +6,13 @@ Este nodo prepara una configuración de generación de imagen a video para model
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de video AR que se utilizará para la generación. | MODEL | Sí | - |
+| `modelo` | El modelo de video AR que se utilizará para la generación. | MODEL | Sí | - |
 | `vae` | El modelo VAE que se utiliza para codificar la imagen inicial en el espacio latente. | VAE | Sí | - |
-| `start_image` | La imagen inicial que servirá como primer fotograma del video generado. Solo se utiliza la primera imagen del lote de entrada y solo se codifican sus canales RGB. | IMAGE | Sí | - |
-| `width` | El ancho de los fotogramas del video generado (predeterminado: 832). | INT | Sí | 16 a 8192 (paso: 16) |
-| `height` | La altura de los fotogramas del video generado (predeterminado: 480). | INT | Sí | 16 a 8192 (paso: 16) |
-| `length` | El número total de fotogramas del video generado (predeterminado: 81). | INT | Sí | 1 a 1024 (paso: 4) |
-| `batch_size` | El número de secuencias de video a generar en un solo lote (predeterminado: 1). | INT | Sí | 1 a 64 |
+| `imagen_inicial` | La imagen inicial que servirá como primer fotograma del video generado. Solo se utiliza la primera imagen del lote de entrada y solo se codifican sus canales RGB. | IMAGE | Sí | - |
+| `ancho` | El ancho de los fotogramas del video generado (predeterminado: 832). | INT | Sí | 16 a 8192 (paso: 16) |
+| `alto` | La altura de los fotogramas del video generado (predeterminado: 480). | INT | Sí | 16 a 8192 (paso: 16) |
+| `longitud` | El número total de fotogramas del video generado (predeterminado: 81). | INT | Sí | 1 a 1024 (paso: 4) |
+| `tamaño_de_lote` | El número de secuencias de video a generar en un solo lote (predeterminado: 1). | INT | Sí | 1 a 64 |
 
 Nota: La imagen inicial se redimensiona a los valores especificados de `width` y `height` antes de codificarse. La dimensión temporal latente se calcula como `((length - 1) // 4) + 1`, y las dimensiones espaciales latentes son `height / 8` y `width / 8`.
 

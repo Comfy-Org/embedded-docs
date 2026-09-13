@@ -6,7 +6,7 @@ Este nodo elimina el fondo de las imágenes utilizando el servicio de API de Rec
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `image` | La imagen o imágenes de entrada a procesar para la eliminación del fondo. Cada imagen del lote se procesa individualmente. | IMAGE | Sí | - |
+| `imagen` | La imagen o imágenes de entrada a procesar para la eliminación del fondo. Cada imagen del lote se procesa individualmente. | IMAGE | Sí | - |
 
 ## Salidas
 

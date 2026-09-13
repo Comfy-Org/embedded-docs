@@ -9,10 +9,10 @@ Bu düğüm, ByteDance'in Seedream modellerini (4.0, 4.5, 5.0 Lite ve 5.0 Pro s�
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Üretim için kullanılacak Seedream model sürümü. Her modelin farklı yetenekleri ve fiyatlandırması vardır. | DYNAMIC_COMBO | Evet | `"seedream 5.0 pro"`<br>`"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
-| `prompt` | Görüntü oluşturmak veya düzenlemek için metin istemi (varsayılan: boş dize). | STRING | Evet | N/A |
-| `seed` | Üretim için kullanılacak tohum (varsayılan: 0). | INT | Evet | 0 - 2147483647 |
-| `watermark` | Görüntüye "AI generated" filigranı eklenip eklenmeyeceği (varsayılan: False). | BOOLEAN | Evet | True / False |
-| `thinking` | Daha iyi uyum için modelin istem optimizasyonu akıl yürütmesini ('thinking') etkinleştirir. Üretim süresini önemli ölçüde artırabilir — özellikle Seedream 5.0 Pro'da. Yalnızca metinden görüntü üretimi için devre dışı bırakılabilir (referans görüntüler sağlandığında değil) (varsayılan: True). | BOOLEAN | Hayır | True / False |
+| `istem` | Görüntü oluşturmak veya düzenlemek için metin istemi (varsayılan: boş dize). | STRING | Evet | N/A |
+| `tohum` | Üretim için kullanılacak tohum (varsayılan: 0). | INT | Evet | 0 - 2147483647 |
+| `filigran` | Görüntüye "AI generated" filigranı eklenip eklenmeyeceği (varsayılan: False). | BOOLEAN | Evet | True / False |
+| `düşünme` | Daha iyi uyum için modelin istem optimizasyonu akıl yürütmesini ('thinking') etkinleştirir. Üretim süresini önemli ölçüde artırabilir — özellikle Seedream 5.0 Pro'da. Yalnızca metinden görüntü üretimi için devre dışı bırakılabilir (referans görüntüler sağlandığında değil) (varsayılan: True). | BOOLEAN | Hayır | True / False |
 
 ### `seedream 5.0 pro` Girdileri
 

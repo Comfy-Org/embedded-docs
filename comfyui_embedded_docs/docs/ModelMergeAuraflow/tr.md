@@ -9,9 +9,9 @@ ModelMergeAuraflow düğümü, iki Auraflow modelini modelin her bir parçasına
 | `model1` | Birleştirilecek ilk model | MODEL | Evet | - |
 | `model2` | Birleştirilecek ikinci model | MODEL | Evet | - |
 | `init_x_linear.` | Başlangıç doğrusal dönüşümü için harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `positional_encoding` | Konumsal kodlama bileşenleri için harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `konumsal_kodlama` | Konumsal kodlama bileşenleri için harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `cond_seq_linear.` | Koşullu dizi doğrusal katmanları için harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
-| `register_tokens` | Token kayıt bileşenleri için harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `kayıt_jetonları` | Token kayıt bileşenleri için harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `t_embedder.` | Zaman gömme bileşenleri için harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `double_layers.0.` | Çift katman grubu 0 için harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `double_layers.1.` | Çift katman grubu 1 için harmanlama ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |

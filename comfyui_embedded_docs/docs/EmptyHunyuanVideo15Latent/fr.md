@@ -6,10 +6,10 @@ Ce nœud crée un tenseur latent vide spécialement formaté pour être utilisé
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `width` | La largeur de la trame vidéo en pixels. | INT | Oui | - |
-| `height` | La hauteur de la trame vidéo en pixels. | INT | Oui | - |
-| `length` | Le nombre de trames dans la séquence vidéo. | INT | Oui | - |
-| `batch_size` | Le nombre d'échantillons vidéo à générer dans un lot (par défaut : 1). | INT | Non | - |
+| `largeur` | La largeur de la trame vidéo en pixels. | INT | Oui | - |
+| `hauteur` | La hauteur de la trame vidéo en pixels. | INT | Oui | - |
+| `longueur` | Le nombre de trames dans la séquence vidéo. | INT | Oui | - |
+| `taille_lot` | Le nombre d'échantillons vidéo à générer dans un lot (par défaut : 1). | INT | Non | - |
 
 **Remarque :** Les dimensions spatiales du tenseur latent généré sont calculées en divisant les entrées `width` et `height` par 16 (ce nœud utilise un facteur d'échelle spatial de 16 plutôt que 8). La dimension temporelle (trames) est calculée comme `((length - 1) // 4) + 1`. Ces calculs utilisent une division entière, donc `width` et `height` doivent être des multiples de 16 pour éviter toute troncature.
 

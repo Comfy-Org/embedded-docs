@@ -7,9 +7,9 @@ Bu düğüm, bir modeli CLIP görüntü kodlayıcısı ve VAE'siyle birlikte pak
 | Parametre | Açıklama | Veri Tipi | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Checkpoint'e kaydedilecek model | MODEL | Evet | - |
-| `clip_vision` | Checkpoint'e kaydedilecek CLIP görüntü kodlayıcısı | CLIP_VISION | Evet | - |
+| `clip_görü` | Checkpoint'e kaydedilecek CLIP görüntü kodlayıcısı | CLIP_VISION | Evet | - |
 | `vae` | Checkpoint'e kaydedilecek VAE (Varyasyonel Otomatik Kodlayıcı) | VAE | Evet | - |
-| `filename_prefix` | Çıktı dosya adı için önek (varsayılan: "checkpoints/ComfyUI") | STRING | Evet | - |
+| `dosyaadı_öneki` | Çıktı dosya adı için önek (varsayılan: "checkpoints/ComfyUI") | STRING | Evet | - |
 | `prompt` | İş akışı istem verisini alan gizli parametre | PROMPT | Hayır | - |
 | `extra_pnginfo` | Ek PNG meta verisini alan gizli parametre | EXTRA_PNGINFO | Hayır | - |
 

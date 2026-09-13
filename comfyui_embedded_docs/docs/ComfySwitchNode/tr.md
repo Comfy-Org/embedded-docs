@@ -6,9 +6,9 @@ If/Else Switch düğümü, bir boolean koşula göre iki olası girdi arasında 
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `switch` | Çıktıya hangi girdinin aktarılacağını belirleyen bir boolean koşul. Etkinleştirildiğinde (true), `on_true` girdisi seçilir. Devre dışı bırakıldığında (false), `on_false` girdisi seçilir. | BOOLEAN | Evet |  |
-| `on_false` | `switch` devre dışı bırakıldığında (false) çıktıya aktarılacak veri. Bu girdi yalnızca `switch` false olduğunda istenir. | MATCH_TYPE | Hayır |  |
-| `on_true` | `switch` etkinleştirildiğinde (true) çıktıya aktarılacak veri. Bu girdi yalnızca `switch` true olduğunda istenir. | MATCH_TYPE | Hayır |  |
+| `anahtar` | Çıktıya hangi girdinin aktarılacağını belirleyen bir boolean koşul. Etkinleştirildiğinde (true), `on_true` girdisi seçilir. Devre dışı bırakıldığında (false), `on_false` girdisi seçilir. | BOOLEAN | Evet |  |
+| `yanlışta` | `switch` devre dışı bırakıldığında (false) çıktıya aktarılacak veri. Bu girdi yalnızca `switch` false olduğunda istenir. | MATCH_TYPE | Hayır |  |
+| `doğruda` | `switch` etkinleştirildiğinde (true) çıktıya aktarılacak veri. Bu girdi yalnızca `switch` true olduğunda istenir. | MATCH_TYPE | Hayır |  |
 
 **Girdi Gereksinimleri Hakkında Not:** `on_false` ve `on_true` girdileri koşullu olarak istenir. Düğüm, `on_true` girdisini yalnızca `switch` true olduğunda ister; `on_false` girdisini ise yalnızca `switch` false olduğunda ister. Her iki girdi de aynı veri türünde olmalıdır ve bu tür çıktı veri türüyle eşleşmelidir. Seçilen girdi bağlı değilse düğüm herhangi bir değer çıktılamaz.
 

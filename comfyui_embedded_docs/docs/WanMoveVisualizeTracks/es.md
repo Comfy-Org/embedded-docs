@@ -6,12 +6,12 @@ El nodo WanMoveVisualizeTracks superpone datos de seguimiento de movimiento sobr
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `images` | La secuencia de imágenes de entrada o fotogramas de video sobre los que se visualizarán las pistas. | IMAGE | Sí | - |
-| `tracks` | Los datos de seguimiento de movimiento que contienen las trayectorias de puntos y la información de visibilidad. Si no se proporcionan, las imágenes de entrada se pasan sin cambios. | TRACKS | No | - |
-| `line_resolution` | El número de fotogramas anteriores que se usarán al dibujar la línea de trayectoria de estela para cada pista (predeterminado: 24). | INT | Sí | 1 - 1024 |
-| `circle_size` | El tamaño del círculo dibujado en la posición actual de cada pista (predeterminado: 12). Marcado como parámetro avanzado. | INT | Sí | 1 - 128 |
-| `opacity` | La opacidad de las superposiciones de pistas dibujadas (predeterminado: 0.75). | FLOAT | Sí | 0.0 - 1.0 |
-| `line_width` | El ancho de las líneas usadas para dibujar las trayectorias de las pistas (predeterminado: 16). Marcado como parámetro avanzado. | INT | Sí | 1 - 128 |
+| `imágenes` | La secuencia de imágenes de entrada o fotogramas de video sobre los que se visualizarán las pistas. | IMAGE | Sí | - |
+| `pistas` | Los datos de seguimiento de movimiento que contienen las trayectorias de puntos y la información de visibilidad. Si no se proporcionan, las imágenes de entrada se pasan sin cambios. | TRACKS | No | - |
+| `resolución_de_línea` | El número de fotogramas anteriores que se usarán al dibujar la línea de trayectoria de estela para cada pista (predeterminado: 24). | INT | Sí | 1 - 1024 |
+| `tamaño_círculo` | El tamaño del círculo dibujado en la posición actual de cada pista (predeterminado: 12). Marcado como parámetro avanzado. | INT | Sí | 1 - 128 |
+| `opacidad` | La opacidad de las superposiciones de pistas dibujadas (predeterminado: 0.75). | FLOAT | Sí | 0.0 - 1.0 |
+| `ancho_de_línea` | El ancho de las líneas usadas para dibujar las trayectorias de las pistas (predeterminado: 16). Marcado como parámetro avanzado. | INT | Sí | 1 - 128 |
 
 **Nota:** Si el número de imágenes de entrada no coincide con el número de fotogramas de los datos de `tracks` proporcionados, la secuencia de imágenes se repetirá para coincidir con la longitud de las pistas.
 

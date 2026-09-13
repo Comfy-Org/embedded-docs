@@ -6,7 +6,7 @@ Le nœud Seed fournit une valeur entière pouvant être utilisée comme graine p
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `seed` | La valeur de graine à utiliser. L'option de contrôle après génération détermine si la valeur reste fixe ou change après chaque génération ; dans ce nœud, elle est définie sur fixe. | INT | Oui | 0 à 9223372036854775807 |
+| `graine` | La valeur de graine à utiliser. L'option de contrôle après génération détermine si la valeur reste fixe ou change après chaque génération ; dans ce nœud, elle est définie sur fixe. | INT | Oui | 0 à 9223372036854775807 |
 
 ## Sorties
 

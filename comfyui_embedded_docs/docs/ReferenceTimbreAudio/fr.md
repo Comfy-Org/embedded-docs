@@ -6,7 +6,7 @@ Ce nœud définit l'audio de référence pour le processus « ace step 1.5 ». I
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Les données de conditionnement auxquelles les informations d'audio de référence seront attachées. | CONDITIONING | Oui |  |
+| `conditionnement` | Les données de conditionnement auxquelles les informations d'audio de référence seront attachées. | CONDITIONING | Oui |  |
 | `latent` | Une représentation latente facultative de l'audio de référence (par défaut : None). Lorsqu'elle est fournie, ses échantillons sont ajoutés au conditionnement en tant que latents de timbre audio de référence. | LATENT | Non |  |
 
 ## Sorties

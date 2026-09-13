@@ -6,8 +6,8 @@ SaveImage düğümü, giriş görüntülerini ComfyUI çıktı dizininize PNG do
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `images` | Kaydedilecek görüntüler. | IMAGE | Evet | - |
-| `filename_prefix` | Kaydedilecek dosyanın ön eki. Düğümlerden değerleri dahil etmek için `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme bilgileri içerebilir (varsayılan: "ComfyUI"). | STRING | Evet | - |
+| `görüntüler` | Kaydedilecek görüntüler. | IMAGE | Evet | - |
+| `dosyaadı_öneki` | Kaydedilecek dosyanın ön eki. Düğümlerden değerleri dahil etmek için `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme bilgileri içerebilir (varsayılan: "ComfyUI"). | STRING | Evet | - |
 
 Düğüm ayrıca, ComfyUI tarafından iş akışı istemi ve ek PNG bilgileriyle otomatik olarak doldurulan `prompt` ve `extra_pnginfo` adlı iki gizli giriş alır. Meta veriler etkinleştirildiğinde, bu bilgiler kaydedilen her PNG dosyasına metin meta verisi olarak gömülür.
 

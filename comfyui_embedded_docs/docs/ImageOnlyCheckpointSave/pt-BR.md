@@ -6,10 +6,10 @@ Este nó salva um arquivo checkpoint que agrupa um modelo junto com seu codifica
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo a ser salvo no checkpoint | MODEL | Sim | - |
+| `modelo` | O modelo a ser salvo no checkpoint | MODEL | Sim | - |
 | `clip_vision` | O codificador de visão CLIP a ser salvo no checkpoint | CLIP_VISION | Sim | - |
 | `vae` | O VAE (Variational Autoencoder) a ser salvo no checkpoint | VAE | Sim | - |
-| `filename_prefix` | O prefixo para o nome do arquivo de saída (padrão: "checkpoints/ComfyUI") | STRING | Sim | - |
+| `prefixo_do_arquivo` | O prefixo para o nome do arquivo de saída (padrão: "checkpoints/ComfyUI") | STRING | Sim | - |
 | `prompt` | Parâmetro oculto que recebe os dados do prompt do fluxo de trabalho | PROMPT | Não | - |
 | `extra_pnginfo` | Parâmetro oculto que recebe metadados PNG adicionais | EXTRA_PNGINFO | Não | - |
 

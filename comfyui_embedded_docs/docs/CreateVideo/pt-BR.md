@@ -6,9 +6,9 @@ O nó Create Video combina uma sequência de imagens em um vídeo. Você pode de
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `images` | As imagens a partir das quais criar um vídeo. | IMAGE | Sim | - |
+| `imagens` | As imagens a partir das quais criar um vídeo. | IMAGE | Sim | - |
 | `fps` | A taxa de quadros por segundo para a velocidade de reprodução do vídeo (padrão: 30.0). | FLOAT | Sim | 1.0 - 120.0 |
-| `audio` | O áudio a ser adicionado ao vídeo. | AUDIO | Não | - |
+| `áudio` | O áudio a ser adicionado ao vídeo. | AUDIO | Não | - |
 | `bit_depth` | A opção `"auto"` usa 8 bits para sRGB e 10 bits para HDR e HDR PQ. As escolhas explícitas de 8 bits e 10 bits são independentes do espaço de cores. (padrão: "auto") | COMBO | Não | `"auto"`<br>8<br>10 |
 | `color_space` | Espaço de cores das imagens de entrada. HDR seleciona BT.2020/HLG e HDR PQ seleciona BT.2020/PQ. (padrão: "sRGB") | COMBO | Não | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"` |
 | `codec` | Opcionalmente, codifica o vídeo imediatamente. `"none"` mantém as imagens em formato de tensor; `"auto"` usa H.264. (padrão: "none") | COMBO | Não | `"none"`<br>Opções de codec de vídeo disponíveis na lista de codecs de vídeo (por exemplo, `"auto"` e outros codecs suportados) |

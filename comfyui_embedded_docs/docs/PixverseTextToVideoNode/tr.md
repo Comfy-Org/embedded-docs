@@ -6,14 +6,14 @@ PixVerse API'sini kullanarak bir metin isteminden videolar üretir. Bu düğüm,
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Video üretimi için istem (varsayılan: "") | STRING | Evet | En az 1 karakter içermelidir |
-| `aspect_ratio` | Üretilen video için en-boy oranı | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `quality` | Video kalitesi ayarı (varsayılan: "540p") | COMBO | Evet | `"540p"`<br>`"1080p"` |
-| `duration_seconds` | Üretilen videonun saniye cinsinden süresi | COMBO | Evet | `"5"`<br>`"10"` |
-| `motion_mode` | Video üretimi için hareket stili | COMBO | Evet | `"normal"`<br>`"fast"` |
-| `seed` | Video üretimi için tohum (varsayılan: 0) | INT | Evet | 0 ile 2147483647 |
-| `negative_prompt` | Bir görüntüdeki istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: "") | STRING | Hayır | - |
-| `pixverse_template` | Üretim stilini etkilemek için PixVerse Template düğümü tarafından oluşturulan isteğe bağlı şablon | CUSTOM | Hayır | - |
+| `istem` | Video üretimi için istem (varsayılan: "") | STRING | Evet | En az 1 karakter içermelidir |
+| `en_boy_oranı` | Üretilen video için en-boy oranı | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `kalite` | Video kalitesi ayarı (varsayılan: "540p") | COMBO | Evet | `"540p"`<br>`"1080p"` |
+| `süre_saniye` | Üretilen videonun saniye cinsinden süresi | COMBO | Evet | `"5"`<br>`"10"` |
+| `hareket_modu` | Video üretimi için hareket stili | COMBO | Evet | `"normal"`<br>`"fast"` |
+| `tohum` | Video üretimi için tohum (varsayılan: 0) | INT | Evet | 0 ile 2147483647 |
+| `negatif_istem` | Bir görüntüdeki istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: "") | STRING | Hayır | - |
+| `pixverse_şablonu` | Üretim stilini etkilemek için PixVerse Template düğümü tarafından oluşturulan isteğe bağlı şablon | CUSTOM | Hayır | - |
 
 **Not:** `prompt` en az 1 karakter içermelidir. 1080p kalitesi seçildiğinde, hareket modu otomatik olarak `normal` olarak ayarlanır ve süre 5 saniye ile sınırlandırılır. 5 saniye dışındaki herhangi bir süre için hareket modu da otomatik olarak `normal` olarak ayarlanır.
 

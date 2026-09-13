@@ -6,7 +6,7 @@ Ce nœud prend un modèle 3D Tripo existant et en crée une version riggée, c'e
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `original_model_task_id` | L'ID de tâche du modèle 3D original à rigger. Il s'agit généralement de l'ID produit par un nœud de génération de modèle Tripo antérieur. | MODEL_TASK_ID | Oui | - |
+| `ID_tâche_modèle_original` | L'ID de tâche du modèle 3D original à rigger. Il s'agit généralement de l'ID produit par un nœud de génération de modèle Tripo antérieur. | MODEL_TASK_ID | Oui | - |
 | `model_version` | Version du modèle de rig à utiliser. v1.0 : personnages humanoïdes (bipèdes) uniquement, plus de 90 préréglages d'animation. v2.5 : créatures non humanoïdes (quadrupèdes, hexapodes, octopodes, aviaires, serpentines, aquatiques). Par défaut : `v1.0-20240301`. | COMBO | Non | "v1.0-20240301"<br>"v2.5-20260210" |
 | `rig_type` | Type de squelette. « auto » exécute d'abord la vérification gratuite du rig de Tripo et utilise le type recommandé. Par défaut : « auto ». | COMBO | Non | "auto"<br>"biped"<br>"quadruped"<br>"hexapod"<br>"octopod"<br>"avian"<br>"serpentine"<br>"aquatic" |
 | `spec` | Nommage des os : natif Tripo ou compatible Mixamo. Tripo ne peut pas réaffecter ses préréglages d'animation sur un rig v1.0 créé avec la spécification « mixamo » ; utilisez « tripo » pour Tripo: Retarget rigged model. Par défaut : « tripo ». | COMBO | Non | "tripo"<br>"mixamo" |

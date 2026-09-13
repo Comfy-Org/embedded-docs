@@ -6,10 +6,10 @@ Génère un atlas UV pour un maillage 3D. La surface du maillage est divisée en
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `mesh` | Le maillage d'entrée à déplier. Accepte un maillage unique ou un lot de maillages ; les lots sont traités un élément à la fois. | MESH | Oui | — |
-| `segmenter` | Algorithme de découpage en chartes à utiliser. `pec` : découpage rapide par effondrement d'arêtes parallèles sur GPU. `adaptive` : CPU, plus lent. (par défaut : "pec") | COMBO | Oui | "pec"<br>"adaptive" |
-| `resolution` | Résolution cible de l'atlas pour la mise à l'échelle automatique de la densité de texels (0 = ajuster au contenu). (par défaut : 1024) | INT | Oui | 0 à 8192 (pas 256) |
-| `padding` | Marge de texels entre les chartes. (par défaut : 1) | INT | Oui | 0 à 16 |
+| `maillage` | Le maillage d'entrée à déplier. Accepte un maillage unique ou un lot de maillages ; les lots sont traités un élément à la fois. | MESH | Oui | — |
+| `segmenteur` | Algorithme de découpage en chartes à utiliser. `pec` : découpage rapide par effondrement d'arêtes parallèles sur GPU. `adaptive` : CPU, plus lent. (par défaut : "pec") | COMBO | Oui | "pec"<br>"adaptive" |
+| `résolution` | Résolution cible de l'atlas pour la mise à l'échelle automatique de la densité de texels (0 = ajuster au contenu). (par défaut : 1024) | INT | Oui | 0 à 8192 (pas 256) |
+| `marge` | Marge de texels entre les chartes. (par défaut : 1) | INT | Oui | 0 à 16 |
 | `weld_distance` | Rayon de fusion des sommets coïncidents, exprimé comme une fraction de l'étendue du maillage (0 = automatique). Augmentez à ~0.001 si vous obtenez des chartes par triangle (entrée non soudée). (par défaut : 0.0) | FLOAT | Oui | 0.0 à 1.0 (pas 0.0001) |
 
 Remarque : si le maillage d'entrée contient des sommets non soudés, le nœud peut avertir que l'adjacence des faces est faible et produire des chartes UV par face ; augmenter `weld_distance` fusionne les sommets coïncidents avant le dépliage. Les faces dégénérées (faces qui réutilisent le même index de sommet) sont supprimées pendant le traitement.

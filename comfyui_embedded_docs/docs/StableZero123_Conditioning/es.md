@@ -6,14 +6,14 @@ El nodo StableZero123_Conditioning procesa una imagen de entrada y ángulos de c
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `clip_vision` | El modelo de visión CLIP utilizado para codificar las características de la imagen | CLIP_VISION | Sí | - |
-| `init_image` | La imagen de entrada que se procesará y codificará | IMAGE | Sí | - |
+| `visión_clip` | El modelo de visión CLIP utilizado para codificar las características de la imagen | CLIP_VISION | Sí | - |
+| `imagen_inicial` | La imagen de entrada que se procesará y codificará | IMAGE | Sí | - |
 | `vae` | El modelo VAE utilizado para codificar píxeles al espacio latente | VAE | Sí | - |
-| `width` | Ancho de salida para la representación latente (predeterminado: 256, paso: 8) | INT | Sí | 16 a MAX_RESOLUTION |
-| `height` | Altura de salida para la representación latente (predeterminado: 256, paso: 8) | INT | Sí | 16 a MAX_RESOLUTION |
-| `batch_size` | Número de muestras a generar en el lote (predeterminado: 1) | INT | Sí | 1 a 4096 |
-| `elevation` | Ángulo de elevación de la cámara en grados (predeterminado: 0.0, paso: 0.1) | FLOAT | Sí | -180.0 a 180.0 |
-| `azimuth` | Ángulo de acimut de la cámara en grados (predeterminado: 0.0, paso: 0.1) | FLOAT | Sí | -180.0 a 180.0 |
+| `ancho` | Ancho de salida para la representación latente (predeterminado: 256, paso: 8) | INT | Sí | 16 a MAX_RESOLUTION |
+| `altura` | Altura de salida para la representación latente (predeterminado: 256, paso: 8) | INT | Sí | 16 a MAX_RESOLUTION |
+| `tamaño_del_lote` | Número de muestras a generar en el lote (predeterminado: 1) | INT | Sí | 1 a 4096 |
+| `elevación` | Ángulo de elevación de la cámara en grados (predeterminado: 0.0, paso: 0.1) | FLOAT | Sí | -180.0 a 180.0 |
+| `acimut` | Ángulo de acimut de la cámara en grados (predeterminado: 0.0, paso: 0.1) | FLOAT | Sí | -180.0 a 180.0 |
 
 **Nota:** Los parámetros `width` y `height` usan un paso de 8, por lo que los valores se establecen en incrementos de 8. El nodo los divide entre 8 para determinar las dimensiones de la representación latente. La imagen se reescala a los `width` y `height` dados usando escalado bilineal con recorte central antes de la codificación VAE.
 

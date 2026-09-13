@@ -6,15 +6,15 @@ O nó Wan22FunControlToVideo prepara dados de condicionamento e um tensor latent
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `positive` | Entrada de condicionamento positivo para guiar a geração de vídeo | CONDITIONING | Sim | - |
-| `negative` | Entrada de condicionamento negativo para guiar a geração de vídeo | CONDITIONING | Sim | - |
+| `positivo` | Entrada de condicionamento positivo para guiar a geração de vídeo | CONDITIONING | Sim | - |
+| `negativo` | Entrada de condicionamento negativo para guiar a geração de vídeo | CONDITIONING | Sim | - |
 | `vae` | Modelo VAE usado para codificar imagens no espaço latente | VAE | Sim | - |
-| `width` | Largura do vídeo de saída em pixels (padrão: 832, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
-| `height` | Altura do vídeo de saída em pixels (padrão: 480, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
-| `length` | Número de quadros na sequência de vídeo (padrão: 81, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
-| `batch_size` | Número de sequências de vídeo a gerar (padrão: 1) | INT | Sim | 1 a 4096 |
-| `ref_image` | Imagem de referência opcional que fornece orientação visual para a geração | IMAGE | Não | - |
-| `control_video` | Vídeo de controle opcional que guia o processo de geração | IMAGE | Não | - |
+| `largura` | Largura do vídeo de saída em pixels (padrão: 832, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
+| `altura` | Altura do vídeo de saída em pixels (padrão: 480, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
+| `duração` | Número de quadros na sequência de vídeo (padrão: 81, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
+| `tamanho_do_lote` | Número de sequências de vídeo a gerar (padrão: 1) | INT | Sim | 1 a 4096 |
+| `imagem_de_referência` | Imagem de referência opcional que fornece orientação visual para a geração | IMAGE | Não | - |
+| `vídeo_de_controle` | Vídeo de controle opcional que guia o processo de geração | IMAGE | Não | - |
 
 **Nota:** O parâmetro `length` é processado em passos de 4 quadros, e o nó aplica automaticamente escala temporal ao construir o espaço latente. Quando `ref_image` é fornecido, apenas seu primeiro quadro é codificado (redimensionado para `width` x `height`) e anexado ao condicionamento como latentes de referência. Quando `control_video` é fornecido, ele é cortado para `length` quadros, redimensionado, codificado e colocado no latente concatenado usado pelo condicionamento. O latente concatenado é duplicado ao longo da dimensão de canais e seu layout de canais depende da contagem de canais latentes do VAE (48 canais usa o formato Wan 2.2, caso contrário, o formato Wan 2.1). O parâmetro `start_image` é referenciado na lógica de execução, mas não é exposto no esquema de entrada do nó, portanto, não pode ser definido pela interface do nó.
 

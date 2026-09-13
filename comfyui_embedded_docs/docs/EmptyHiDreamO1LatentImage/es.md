@@ -6,9 +6,9 @@ Este nodo crea una imagen latente vacía en el espacio de píxeles para el model
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `width` | El ancho de la imagen latente en píxeles. Valor predeterminado: 2048. El valor debe ser un múltiplo de 32. El modelo fue entrenado a aproximadamente 4 megapíxeles; las resoluciones más bajas pueden reducir la calidad de forma notable. | INT | Sí | 64 a 4096 (paso: 32) |
-| `height` | La altura de la imagen latente en píxeles. Valor predeterminado: 2048. El valor debe ser un múltiplo de 32. El modelo fue entrenado a aproximadamente 4 megapíxeles; las resoluciones más bajas pueden reducir la calidad de forma notable. | INT | Sí | 64 a 4096 (paso: 32) |
-| `batch_size` | El número de imágenes latentes que se generarán en un solo lote. Valor predeterminado: 1. | INT | Sí | 1 a 64 |
+| `ancho` | El ancho de la imagen latente en píxeles. Valor predeterminado: 2048. El valor debe ser un múltiplo de 32. El modelo fue entrenado a aproximadamente 4 megapíxeles; las resoluciones más bajas pueden reducir la calidad de forma notable. | INT | Sí | 64 a 4096 (paso: 32) |
+| `alto` | La altura de la imagen latente en píxeles. Valor predeterminado: 2048. El valor debe ser un múltiplo de 32. El modelo fue entrenado a aproximadamente 4 megapíxeles; las resoluciones más bajas pueden reducir la calidad de forma notable. | INT | Sí | 64 a 4096 (paso: 32) |
+| `tamaño_lote` | El número de imágenes latentes que se generarán en un solo lote. Valor predeterminado: 1. | INT | Sí | 1 a 64 |
 
 ## Salidas
 

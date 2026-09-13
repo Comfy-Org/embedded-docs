@@ -7,7 +7,7 @@ Bu düğüm, model örneklemesi sırasında kullanılan gürültü ölçeğini a
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Gürültü ölçeği ayarının uygulanacağı model. | MODEL | Evet | - |
-| `noise_scale` | Mutlak eğitim gürültü ölçeği. Örneğin HiDream-O1 base: 8.0, dev: 7.5. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 64.0 (adım: 0.01) |
+| `gürültü_ölçeği` | Mutlak eğitim gürültü ölçeği. Örneğin HiDream-O1 base: 8.0, dev: 7.5. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 64.0 (adım: 0.01) |
 
 ## Çıktılar
 

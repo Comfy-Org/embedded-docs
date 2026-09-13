@@ -6,7 +6,7 @@ ManualSigmas düğümü, örnekleme işlemi için özel bir gürültü seviyeler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `sigmas` | Sigma değerlerini içeren bir dize. Düğüm bu dizedeki tüm sayıları, ondalık ve negatif değerler dahil olmak üzere ayıklar. Örneğin, "1, 0.5, 0.1" veya "1 0.5 0.1". Varsayılan: "1, 0.5". | STRING | Evet | Virgülle veya boşlukla ayrılmış herhangi bir sayısal değerler |
+| `sigmalar` | Sigma değerlerini içeren bir dize. Düğüm bu dizedeki tüm sayıları, ondalık ve negatif değerler dahil olmak üzere ayıklar. Örneğin, "1, 0.5, 0.1" veya "1 0.5 0.1". Varsayılan: "1, 0.5". | STRING | Evet | Virgülle veya boşlukla ayrılmış herhangi bir sayısal değerler |
 
 Not: Bu düğüm deneysel olarak işaretlenmiştir.
 

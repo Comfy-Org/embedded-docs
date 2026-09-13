@@ -9,11 +9,11 @@ Le nœud StableZero123_Conditioning traite une image d'entrée et des angles de 
 | `clip_vision` | Le modèle de vision CLIP utilisé pour encoder les caractéristiques de l'image | CLIP_VISION | Oui | - |
 | `init_image` | L'image d'entrée à traiter et à encoder | IMAGE | Oui | - |
 | `vae` | Le modèle VAE utilisé pour encoder les pixels vers l'espace latent | VAE | Oui | - |
-| `width` | Largeur de sortie pour la représentation latente (par défaut : 256, pas : 8) | INT | Oui | 16 à MAX_RESOLUTION |
-| `height` | Hauteur de sortie pour la représentation latente (par défaut : 256, pas : 8) | INT | Oui | 16 à MAX_RESOLUTION |
-| `batch_size` | Nombre d'échantillons à générer dans le lot (par défaut : 1) | INT | Oui | 1 à 4096 |
-| `elevation` | Angle d'élévation de la caméra en degrés (par défaut : 0.0, pas : 0.1) | FLOAT | Oui | -180.0 à 180.0 |
-| `azimuth` | Angle d'azimut de la caméra en degrés (par défaut : 0.0, pas : 0.1) | FLOAT | Oui | -180.0 à 180.0 |
+| `largeur` | Largeur de sortie pour la représentation latente (par défaut : 256, pas : 8) | INT | Oui | 16 à MAX_RESOLUTION |
+| `hauteur` | Hauteur de sortie pour la représentation latente (par défaut : 256, pas : 8) | INT | Oui | 16 à MAX_RESOLUTION |
+| `taille_lot` | Nombre d'échantillons à générer dans le lot (par défaut : 1) | INT | Oui | 1 à 4096 |
+| `élévation` | Angle d'élévation de la caméra en degrés (par défaut : 0.0, pas : 0.1) | FLOAT | Oui | -180.0 à 180.0 |
+| `azimut` | Angle d'azimut de la caméra en degrés (par défaut : 0.0, pas : 0.1) | FLOAT | Oui | -180.0 à 180.0 |
 
 **Remarque :** Les paramètres `width` et `height` utilisent un pas de 8, donc les valeurs sont définies par incréments de 8. Le nœud les divise par 8 pour déterminer les dimensions de la représentation latente. L'image est redimensionnée à la `width` et à la `height` données à l'aide d'un suréchantillonnage bilinéaire avec recadrage central avant l'encodage VAE.
 

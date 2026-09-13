@@ -7,8 +7,8 @@ USOStyleReference düğümü, CLIP görüntü özelliklerini bir model yamasıyl
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Stil referansı yamasının uygulandığı temel model. | MODEL | Evet | - |
-| `model_patch` | Referans görüntü özelliklerini kodlamak için kullanılan projeksiyon modelini içeren model yaması. | MODEL_PATCH | Evet | - |
-| `clip_vision_output` | Referans görüntünün CLIP görüntü işlemesinden çıkarılan kodlanmış görsel özellikler. | CLIP_VISION_OUTPUT | Evet | - |
+| `model_yama` | Referans görüntü özelliklerini kodlamak için kullanılan projeksiyon modelini içeren model yaması. | MODEL_PATCH | Evet | - |
+| `clip_vision_çıktısı` | Referans görüntünün CLIP görüntü işlemesinden çıkarılan kodlanmış görsel özellikler. | CLIP_VISION_OUTPUT | Evet | - |
 
 Not: `clip_vision_output`, tam gizli durumları ve sondan bir önceki gizli durumu sağlayan bir CLIP görüntü modelinden gelmelidir. Düğüm, sondan 20., sondan 11. ve sondan bir önceki gizli durumları stil gömülmesinde birleştirir. `model_patch`, bu görüntü özelliklerini stil gömülmesine dönüştüren bir projeksiyon modelini `model` özniteliği aracılığıyla sunmalıdır. Örnekleme sırasında stil gömülmesi, üretimi etkileyebilmesi için metin koşullandırmasının başına eklenir ve eşleşen sıfır konumlu metin kimlikleri, tanımlayıcı dizisi genişletilmiş koşullandırmayla hizalı kalacak şekilde metin kimliklerinin başına eklenir.
 

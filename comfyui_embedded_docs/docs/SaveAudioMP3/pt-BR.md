@@ -6,9 +6,9 @@ O nó SaveAudioMP3 salva dados de áudio como um arquivo MP3. Ele recebe uma ent
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `audio` | Os dados de áudio a serem salvos como um arquivo MP3 | AUDIO | Sim | - |
-| `filename_prefix` | O prefixo do nome do arquivo de saída (padrão: "audio/ComfyUI") | STRING | Não | - |
-| `quality` | A configuração de qualidade de áudio para o arquivo MP3 (padrão: "V0") | COMBO | Não | `"V0"`<br>`"128k"`<br>`"320k"` |
+| `áudio` | Os dados de áudio a serem salvos como um arquivo MP3 | AUDIO | Sim | - |
+| `prefixo_do_arquivo` | O prefixo do nome do arquivo de saída (padrão: "audio/ComfyUI") | STRING | Não | - |
+| `qualidade` | A configuração de qualidade de áudio para o arquivo MP3 (padrão: "V0") | COMBO | Não | `"V0"`<br>`"128k"`<br>`"320k"` |
 | `prompt` | Dados internos de prompt, fornecidos automaticamente pelo sistema | PROMPT | Não | - |
 | `extra_pnginfo` | Informações PNG adicionais, fornecidas automaticamente pelo sistema | EXTRA_PNGINFO | Não | - |
 

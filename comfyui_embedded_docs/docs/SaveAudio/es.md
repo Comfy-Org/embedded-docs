@@ -7,7 +7,7 @@ Este nodo guarda datos de audio en un archivo en formato FLAC. Toma una entrada 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
 | `audio` | Los datos de audio que se van a guardar | AUDIO | Sí | - |
-| `filename_prefix` | El prefijo para el nombre del archivo de salida (predeterminado: "audio/ComfyUI") | STRING | No | - |
+| `prefijo_nombre_archivo` | El prefijo para el nombre del archivo de salida (predeterminado: "audio/ComfyUI") | STRING | No | - |
 
 *Nota: Los parámetros `prompt` y `extra_pnginfo` están ocultos y son gestionados automáticamente por el sistema.*
 

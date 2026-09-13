@@ -8,10 +8,10 @@ Remesh Mesh reconstruit un maillage avec une tessellation propre et uniforme en 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `mesh` | Le maillage d'entrée à remailler. | MESH | Oui | — |
-| `resolution` | Résolution de la grille de voxels (densité de sortie). 256 ~ 100k faces, 512 ~ 1M. Pour un nombre exact de faces, faites suivre avec Decimate Mesh. (par défaut : 512) | INT | Oui | 32 - 2048 |
+| `maillage` | Le maillage d'entrée à remailler. | MESH | Oui | — |
+| `résolution` | Résolution de la grille de voxels (densité de sortie). 256 ~ 100k faces, 512 ~ 1M. Pour un nombre exact de faces, faites suivre avec Decimate Mesh. (par défaut : 512) | INT | Oui | 32 - 2048 |
 | `sign_mode` | Mode d'extraction de surface. « udf » est robuste aux entrées désordonnées/non-manifold ; « sdf » produit une surface unique propre avec récupération des arêtes vives par QEF (Quadratic Error Function), mais nécessite un enroulement cohérent. La sélection d'un mode révèle ses sous-options spécifiques. (par défaut : « udf ») | DYNAMIC_COMBO | Oui | "udf"<br>"sdf" |
-| `band` | Largeur de la bande étroite en unités de voxel. En mode UDF, décale également la surface. (avancé, par défaut : 1.0) | FLOAT | Oui | 0.5 - 4.0 |
+| `bande` | Largeur de la bande étroite en unités de voxel. En mode UDF, décale également la surface. (avancé, par défaut : 1.0) | FLOAT | Oui | 0.5 - 4.0 |
 | `project_back` | Interpole linéairement les sommets vers la surface d'origine (0 = DC pur, 1 = accroché). (avancé, par défaut : 0.0) | FLOAT | Oui | 0.0 - 1.0 |
 | `fix_poles` | Fusionne les paires de sommets de valence 3 (artefact de jonction en T du DC). (avancé, par défaut : false) | BOOLEAN | Oui | true / false |
 | `smooth_iters` | Itérations de lissage de Taubin (0 = désactivé). 2-3 nettoie les artefacts en escalier du DC ; une valeur plus élevée lisse excessivement les arêtes QEF. (par défaut : 0) | INT | Oui | 0 - 20 |

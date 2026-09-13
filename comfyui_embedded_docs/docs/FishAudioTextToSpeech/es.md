@@ -8,9 +8,9 @@ Este nodo convierte texto escrito en audio hablado mediante modelos de texto a v
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `text` | El texto que se va a convertir en voz. Cuando haya dos o más voces conectadas, marque los cambios de hablante con @Voice1, @Voice2, etc. (predeterminado: vacío) | STRING | Sí | Cualquier texto no vacío |
-| `model` | Modelo que se utilizará para texto a voz. | DYNAMIC_COMBO | Sí | "s2.1-pro"<br>"s1" |
-| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. (predeterminado: 42) | INT | Sí | 0 a 2147483647 |
+| `texto` | El texto que se va a convertir en voz. Cuando haya dos o más voces conectadas, marque los cambios de hablante con @Voice1, @Voice2, etc. (predeterminado: vacío) | STRING | Sí | Cualquier texto no vacío |
+| `modelo` | Modelo que se utilizará para texto a voz. | DYNAMIC_COMBO | Sí | "s2.1-pro"<br>"s1" |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. (predeterminado: 42) | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de s2.1-pro
 

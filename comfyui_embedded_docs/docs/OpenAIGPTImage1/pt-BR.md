@@ -8,13 +8,13 @@ Gera imagens de forma síncrona por meio do endpoint GPT Image da OpenAI. Ele po
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt de texto para o GPT Image (padrão: "") | STRING | Sim | - |
 | `seed` | Semente aleatória para geração; ainda não implementada no backend (padrão: 0) | INT | Não | 0 a 2147483647 |
-| `quality` | Qualidade da imagem; afeta o custo e o tempo de geração (padrão: "low") | COMBO | Não | "low"<br>"medium"<br>"high" |
-| `background` | Retorna a imagem com ou sem fundo (padrão: "auto") | COMBO | Não | "auto"<br>"opaque"<br>"transparent" |
-| `size` | Tamanho da imagem. Selecione "Custom" para usar a largura e a altura personalizadas (somente GPT Image 2) (padrão: "auto") | COMBO | Não | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" |
+| `qualidade` | Qualidade da imagem; afeta o custo e o tempo de geração (padrão: "low") | COMBO | Não | "low"<br>"medium"<br>"high" |
+| `fundo` | Retorna a imagem com ou sem fundo (padrão: "auto") | COMBO | Não | "auto"<br>"opaque"<br>"transparent" |
+| `tamanho` | Tamanho da imagem. Selecione "Custom" para usar a largura e a altura personalizadas (somente GPT Image 2) (padrão: "auto") | COMBO | Não | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" |
 | `n` | Quantidade de imagens a gerar (padrão: 1) | INT | Não | 1 a 8 |
-| `image` | Imagem de referência opcional para edição de imagem | IMAGE | Não | - |
+| `imagem` | Imagem de referência opcional para edição de imagem | IMAGE | Não | - |
 | `mask` | Máscara opcional para inpainting (áreas brancas serão substituídas) | MASK | Não | - |
-| `model` | Modelo GPT Image a usar (padrão: "gpt-image-2") | COMBO | Não | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" |
+| `modelo` | Modelo GPT Image a usar (padrão: "gpt-image-2") | COMBO | Não | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" |
 | `custom_width` | Usado apenas quando `size` for "Custom". Deve ser um múltiplo de 16 (somente GPT Image 2) (padrão: 1024) | INT | Não | 1024 a 3840, passo 16 |
 | `custom_height` | Usado apenas quando `size` for "Custom". Deve ser um múltiplo de 16 (somente GPT Image 2) (padrão: 1024) | INT | Não | 1024 a 3840, passo 16 |
 

@@ -7,8 +7,8 @@ Le nœud Meshy: Rig Model prend un modèle 3D issu d’une tâche Meshy précéd
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `meshy_task_id` | L’ID de tâche unique provenant d’une opération Meshy précédente (par ex., text-to-3D ou image-to-3D) ayant généré le modèle à rigger. | MESHY_TASK_ID | Oui | N/A |
-| `height_meters` | La hauteur approximative du modèle de personnage en mètres. Cela contribue à la précision de la mise à l’échelle et du rigging (valeur par défaut : 1.7). | FLOAT | Oui | 0.1 à 15.0 |
-| `texture_image` | L’image de texture de couleur de base du modèle, dépliée en UV. | IMAGE | Non | N/A |
+| `hauteur_mètres` | La hauteur approximative du modèle de personnage en mètres. Cela contribue à la précision de la mise à l’échelle et du rigging (valeur par défaut : 1.7). | FLOAT | Oui | 0.1 à 15.0 |
+| `image_texture` | L’image de texture de couleur de base du modèle, dépliée en UV. | IMAGE | Non | N/A |
 
 **Remarque :** Le processus de rigging automatique n’est actuellement pas adapté aux maillages non texturés, aux ressources non humanoïdes, ni aux ressources humanoïdes dont la structure des membres et du corps n’est pas claire.
 

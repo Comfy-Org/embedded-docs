@@ -4,7 +4,7 @@
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `folder` | Le dossier contenant les fichiers vidéo. | COMBO | Oui | Tous les sous-dossiers disponibles dans le répertoire d'entrée de ComfyUI (remplis dynamiquement) |
+| `dossier` | Le dossier contenant les fichiers vidéo. | COMBO | Oui | Tous les sous-dossiers disponibles dans le répertoire d'entrée de ComfyUI (remplis dynamiquement) |
 
 **Remarque :** Le dossier sélectionné doit être un sous-dossier du répertoire d'entrée de ComfyUI et doit contenir au moins un fichier vidéo pris en charge. Les extensions prises en charge sont MP4, AVI, MOV, WEBM, MKV et FLV. Si aucun fichier vidéo pris en charge n'est trouvé, ou si le chemin du dossier se résout en dehors du répertoire d'entrée, le nœud génère une erreur.
 

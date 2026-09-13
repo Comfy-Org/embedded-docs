@@ -8,9 +8,9 @@ O nó **Save Image (Advanced)** salva as imagens de entrada no diretório de sa�
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `images` | As imagens a salvar. | IMAGE | Sim | - |
-| `filename_prefix` | O prefixo do arquivo a salvar. Pode incluir tokens de formatação, como `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%`. (padrão: "ComfyUI") | STRING | Sim | - |
-| `format` | O formato de arquivo no qual salvar a imagem. Selecionar um formato revela opções adicionais para esse formato. | DYNAMIC_COMBO | Sim | `"png"`<br>`"exr"`<br>`"avif"` |
+| `imagens` | As imagens a salvar. | IMAGE | Sim | - |
+| `prefixo_do_nome_do_arquivo` | O prefixo do arquivo a salvar. Pode incluir tokens de formatação, como `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%`. (padrão: "ComfyUI") | STRING | Sim | - |
+| `formato` | O formato de arquivo no qual salvar a imagem. Selecionar um formato revela opções adicionais para esse formato. | DYNAMIC_COMBO | Sim | `"png"`<br>`"exr"`<br>`"avif"` |
 
 ### Entradas de PNG
 

@@ -6,8 +6,8 @@ Le nœud FluxKontextMultiReferenceLatentMethod met à jour les données de condi
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Les données de conditionnement à modifier avec la méthode de latents de référence | CONDITIONING | Oui | - |
-| `reference_latents_method` | La méthode utilisée pour le traitement des latents de référence. Si une valeur contenant "uxo" ou "uso" est sélectionnée, elle est convertie en "uxo" avant d'être stockée. Ce paramètre est marqué comme avancé. | COMBO | Oui | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
+| `conditionnement` | Les données de conditionnement à modifier avec la méthode de latents de référence | CONDITIONING | Oui | - |
+| `méthode_des_latents_de_référence` | La méthode utilisée pour le traitement des latents de référence. Si une valeur contenant "uxo" ou "uso" est sélectionnée, elle est convertie en "uxo" avant d'être stockée. Ce paramètre est marqué comme avancé. | COMBO | Oui | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
 
 ## Sorties
 

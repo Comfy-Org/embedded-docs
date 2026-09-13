@@ -7,10 +7,10 @@ EasyCache düğümü, bir difüzyon modeline, her adımı yeniden hesaplamak yer
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | EasyCache'in ekleneceği model. | MODEL | Evet | - |
-| `reuse_threshold` | Önbelleğe alınmış adımların yeniden kullanılması için eşik (varsayılan: 0.2). | FLOAT | Evet | 0.0 - 3.0 |
-| `start_percent` | EasyCache kullanımının başlayacağı göreli örnekleme adımı (varsayılan: 0.15). | FLOAT | Evet | 0.0 - 1.0 |
-| `end_percent` | EasyCache kullanımının sona ereceği göreli örnekleme adımı (varsayılan: 0.95). | FLOAT | Evet | 0.0 - 1.0 |
-| `verbose` | Ayrıntılı bilgilerin günlüğe kaydedilip kaydedilmeyeceği (varsayılan: False). | BOOLEAN | Evet | - |
+| `yeniden_kullanım_eşiği` | Önbelleğe alınmış adımların yeniden kullanılması için eşik (varsayılan: 0.2). | FLOAT | Evet | 0.0 - 3.0 |
+| `başlangıç_yüzdesi` | EasyCache kullanımının başlayacağı göreli örnekleme adımı (varsayılan: 0.15). | FLOAT | Evet | 0.0 - 1.0 |
+| `bitiş_yüzdesi` | EasyCache kullanımının sona ereceği göreli örnekleme adımı (varsayılan: 0.95). | FLOAT | Evet | 0.0 - 1.0 |
+| `ayrıntılı` | Ayrıntılı bilgilerin günlüğe kaydedilip kaydedilmeyeceği (varsayılan: False). | BOOLEAN | Evet | - |
 
 ## Çıktılar
 

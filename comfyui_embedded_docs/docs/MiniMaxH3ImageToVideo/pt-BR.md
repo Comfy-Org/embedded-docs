@@ -9,11 +9,11 @@ Este nó prepara o condicionamento e o latent vazio necessários para gerar um v
 | `clip` | Modelo CLIP usado para tokenizar o prompt e codificar as imagens de keyframe em condicionamento. | CLIP | Sim |  |
 | `vae` | Modelo VAE usado para codificar as imagens de keyframe no espaço latente quando imagens de keyframe são fornecidas. | VAE | Sim |  |
 | `prompt` | Prompt de texto descrevendo o vídeo a gerar. Compatível com múltiplas linhas e prompts dinâmicos. | STRING | Sim |  |
-| `width` | Largura do vídeo em pixels (padrão: 1344). | INT | Sim | 32 a MAX_RESOLUTION (passo 32) |
-| `height` | Altura do vídeo em pixels (padrão: 768). | INT | Sim | 32 a MAX_RESOLUTION (passo 32) |
-| `length` | Contagem de quadros a 24 fps, ajustada para cima para a grade 17k+5 do modelo (124 = ~5s; o intervalo treinado é ~124-362; valores maiores não foram testados) (padrão: 124). | INT | Sim | 5 a 3600 (passo 17) |
-| `first_frame` | Imagem opcional usada como o primeiro quadro do vídeo. Ela é esticada para o tamanho total da tela, então sua proporção não é preservada. Apenas a primeira imagem do lote de entrada é usada. | IMAGE | Não |  |
-| `last_frame` | Imagem opcional usada como o último quadro do vídeo. Ela é cortada para cobrir a tela enquanto preserva sua proporção. Apenas a primeira imagem do lote de entrada é usada. | IMAGE | Não |  |
+| `largura` | Largura do vídeo em pixels (padrão: 1344). | INT | Sim | 32 a MAX_RESOLUTION (passo 32) |
+| `altura` | Altura do vídeo em pixels (padrão: 768). | INT | Sim | 32 a MAX_RESOLUTION (passo 32) |
+| `duração` | Contagem de quadros a 24 fps, ajustada para cima para a grade 17k+5 do modelo (124 = ~5s; o intervalo treinado é ~124-362; valores maiores não foram testados) (padrão: 124). | INT | Sim | 5 a 3600 (passo 17) |
+| `primeiro_quadro` | Imagem opcional usada como o primeiro quadro do vídeo. Ela é esticada para o tamanho total da tela, então sua proporção não é preservada. Apenas a primeira imagem do lote de entrada é usada. | IMAGE | Não |  |
+| `último_quadro` | Imagem opcional usada como o último quadro do vídeo. Ela é cortada para cobrir a tela enquanto preserva sua proporção. Apenas a primeira imagem do lote de entrada é usada. | IMAGE | Não |  |
 
 Quando `first_frame` e/ou `last_frame` são fornecidos, as imagens de keyframe são codificadas com o VAE e anexadas ao condicionamento no quadro 0 e no quadro final, respectivamente. Quando nenhum deles é fornecido, o nó trabalha apenas com o prompt. O `length` solicitado é ajustado para cima para a contagem de quadros válida mais próxima (17k + 5), então a contagem efetiva de quadros pode ser ligeiramente maior que a solicitada.
 

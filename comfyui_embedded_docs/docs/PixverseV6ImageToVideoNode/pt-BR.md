@@ -8,8 +8,8 @@ Este nó anima uma imagem de entrada com o modelo PixVerse V6 e retorna um víde
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A imagem de entrada a ser animada. | IMAGE | Sim | Imagem única |
-| `model` | Modelo e configurações de geração. | DYNAMIC_COMBO | Sim | "PixVerse V6" |
+| `imagem` | A imagem de entrada a ser animada. | IMAGE | Sim | Imagem única |
+| `modelo` | Modelo e configurações de geração. | DYNAMIC_COMBO | Sim | "PixVerse V6" |
 
 ### Entradas do PixVerse V6
 

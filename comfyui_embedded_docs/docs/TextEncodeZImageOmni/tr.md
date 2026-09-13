@@ -7,13 +7,13 @@ TextEncodeZImageOmni, bir metin istemini en fazla üç isteğe bağlı referans 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `clip` | Metin istemini tokenize etmek ve kodlamak için kullanılan CLIP modeli. | CLIP | Evet |  |
-| `image_encoder` | İsteğe bağlı bir görüntü kodlayıcı modeli. Sağlanırsa, giriş görüntülerini kodlamak için kullanılır ve elde edilen gömme vektörleri koşullandırmaya eklenir. | CLIP_VISION | Hayır |  |
-| `prompt` | Kodlanacak metin istemi. Çok satırlı girişi ve dinamik istemleri destekler. | STRING | Evet |  |
-| `auto_resize_images` | Etkinleştirildiğinde (varsayılan: True), giriş görüntüleri VAE kodlamasından önce otomatik olarak yeniden boyutlandırılır, böylece toplam piksel alanları 1024x1024'e yakın olur ve boyutlar 8'in katlarına yuvarlanır. | BOOLEAN | Evet | True<br>False |
+| `görüntü_kodlayıcı` | İsteğe bağlı bir görüntü kodlayıcı modeli. Sağlanırsa, giriş görüntülerini kodlamak için kullanılır ve elde edilen gömme vektörleri koşullandırmaya eklenir. | CLIP_VISION | Hayır |  |
+| `istem` | Kodlanacak metin istemi. Çok satırlı girişi ve dinamik istemleri destekler. | STRING | Evet |  |
+| `görüntüleri_otomatik_yeniden_boyutlandır` | Etkinleştirildiğinde (varsayılan: True), giriş görüntüleri VAE kodlamasından önce otomatik olarak yeniden boyutlandırılır, böylece toplam piksel alanları 1024x1024'e yakın olur ve boyutlar 8'in katlarına yuvarlanır. | BOOLEAN | Evet | True<br>False |
 | `vae` | İsteğe bağlı bir VAE modeli. Sağlanırsa, giriş görüntülerini latent temsillere kodlamak için kullanılır ve bunlar koşullandırmaya referans latentleri olarak eklenir. | VAE | Hayır |  |
-| `image1` | Birinci isteğe bağlı referans görüntüsü. | IMAGE | Hayır |  |
-| `image2` | İkinci isteğe bağlı referans görüntüsü. | IMAGE | Hayır |  |
-| `image3` | Üçüncü isteğe bağlı referans görüntüsü. | IMAGE | Hayır |  |
+| `görüntü1` | Birinci isteğe bağlı referans görüntüsü. | IMAGE | Hayır |  |
+| `görüntü2` | İkinci isteğe bağlı referans görüntüsü. | IMAGE | Hayır |  |
+| `görüntü3` | Üçüncü isteğe bağlı referans görüntüsü. | IMAGE | Hayır |  |
 
 **Not:** Düğüm en fazla üç görüntü (`image1`, `image2`, `image3`) kabul eder. `image_encoder` ve `vae` girişleri yalnızca en az bir görüntü sağlandığında kullanılır; her ikisi de bağlandığında, her görüntü ikisi tarafından da işlenir. `auto_resize_images` True olduğunda ve bir `vae` bağlı olduğunda, görüntüler kodlamadan önce toplam piksel alanları 1024x1024'e yakın olacak şekilde yeniden boyutlandırılır. Hiç görüntü sağlanmazsa, yalnızca metin istemi kodlanır.
 

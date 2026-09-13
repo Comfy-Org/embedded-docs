@@ -8,9 +8,9 @@ Ce nœud génère une vidéo à l'aide des modèles MiniMax H3, conditionnée pa
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser pour la génération vidéo (par défaut : « MiniMax H3 »). Sélectionner « MiniMax H3 » fournit les entrées de génération et de référence MiniMax H3 ci-dessous. Sélectionner « MiniMax H3 Max » fournit les entrées de génération et de référence MiniMax H3 Max ci-dessous. | DYNAMIC_COMBO | Oui | "MiniMax H3"<br>"MiniMax H3 Max" |
-| `seed` | Graine aléatoire. La même requête avec la même graine donne des résultats similaires, mais non garantis identiques (par défaut : 42). | INT | Oui | 0 à 4294967295 |
-| `watermark` | Indique s'il faut ajouter un filigrane AIGC à la vidéo (par défaut : false). Pris en charge uniquement par le modèle MiniMax H3. | BOOLEAN | Non | true<br>false |
+| `modèle` | Modèle à utiliser pour la génération vidéo (par défaut : « MiniMax H3 »). Sélectionner « MiniMax H3 » fournit les entrées de génération et de référence MiniMax H3 ci-dessous. Sélectionner « MiniMax H3 Max » fournit les entrées de génération et de référence MiniMax H3 Max ci-dessous. | DYNAMIC_COMBO | Oui | "MiniMax H3"<br>"MiniMax H3 Max" |
+| `graine` | Graine aléatoire. La même requête avec la même graine donne des résultats similaires, mais non garantis identiques (par défaut : 42). | INT | Oui | 0 à 4294967295 |
+| `filigrane` | Indique s'il faut ajouter un filigrane AIGC à la vidéo (par défaut : false). Pris en charge uniquement par le modèle MiniMax H3. | BOOLEAN | Non | true<br>false |
 
 ### Entrées MiniMax H3
 

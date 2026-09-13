@@ -9,7 +9,7 @@ Save Video düğümü, giriş videosunu ComfyUI çıktı dizininize kaydeder. Do
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `video` | Kaydedilecek video. | VIDEO | Evet | - |
-| `filename_prefix` | Kaydedilecek dosyanın ön eki. Düğümlerden gelen değerleri dahil etmek için `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme bilgileri içerebilir (varsayılan: `video/ComfyUI`). | STRING | Evet | - |
+| `dosyaadı_öneki` | Kaydedilecek dosyanın ön eki. Düğümlerden gelen değerleri dahil etmek için `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme bilgileri içerebilir (varsayılan: `video/ComfyUI`). | STRING | Evet | - |
 | `format` | Çıktı kapsayıcısı. Otomatik, Otomatik/H.264 için MP4 ve AV1 için WebM kullanır. MP4, MKV ve WebM belirli bir kapsayıcı seçer. Bir biçim seçmek, hangi kodek seçeneklerinin kullanılabilir olduğunu da belirler (varsayılan: `auto`). | DYNAMIC_COMBO | Evet | `"auto"`<br>`"mp4"`<br>`"mkv"`<br>`"webm"` |
 | `codec` | Çıktı video kodeği. Otomatik, uyumlu bir kaynak akışını korur. H.264 ve AV1 yeniden kodlama SDR, HDR (HLG) ve HDR PQ'yu destekler. Bu seçici, seçilen biçimin altında iç içe yer alır (varsayılan: `auto`). | DYNAMIC_COMBO | Hayır | `"auto"`<br>`"h264"`<br>`"av1"` (`webm` biçiminde kullanılamaz) |
 

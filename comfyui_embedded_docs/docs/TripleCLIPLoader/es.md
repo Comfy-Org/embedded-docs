@@ -8,9 +8,9 @@ Una receta común para SD3 es: clip-l, clip-g, t5.
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `clip_name1` | El primer modelo de codificador de texto que se cargará de entre los codificadores de texto disponibles | COMBO | Sí | Múltiples opciones disponibles (todos los archivos en la carpeta text_encoders) |
-| `clip_name2` | El segundo modelo de codificador de texto que se cargará de entre los codificadores de texto disponibles | COMBO | Sí | Múltiples opciones disponibles (todos los archivos en la carpeta text_encoders) |
-| `clip_name3` | El tercer modelo de codificador de texto que se cargará de entre los codificadores de texto disponibles | COMBO | Sí | Múltiples opciones disponibles (todos los archivos en la carpeta text_encoders) |
+| `nombre_clip1` | El primer modelo de codificador de texto que se cargará de entre los codificadores de texto disponibles | COMBO | Sí | Múltiples opciones disponibles (todos los archivos en la carpeta text_encoders) |
+| `nombre_clip2` | El segundo modelo de codificador de texto que se cargará de entre los codificadores de texto disponibles | COMBO | Sí | Múltiples opciones disponibles (todos los archivos en la carpeta text_encoders) |
+| `nombre_clip3` | El tercer modelo de codificador de texto que se cargará de entre los codificadores de texto disponibles | COMBO | Sí | Múltiples opciones disponibles (todos los archivos en la carpeta text_encoders) |
 
 **Nota:** Los tres parámetros son obligatorios. Las opciones disponibles son los archivos de codificador de texto en tu carpeta text_encoders. Si no se puede encontrar un archivo seleccionado, el nodo genera un error. El nodo carga los tres modelos seleccionados y los combina en un único modelo CLIP.
 

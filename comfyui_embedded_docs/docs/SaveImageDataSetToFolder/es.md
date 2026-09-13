@@ -9,7 +9,7 @@ Este nodo guarda una lista de imágenes en una carpeta especificada dentro del d
 | `images` | Lista de imágenes para guardar. | IMAGE | Sí | N/A |
 | `folder_name` | Nombre de la carpeta en la que se guardarán las imágenes (dentro del directorio de salida). Predeterminado: "dataset". | STRING | No | N/A |
 | `filename_prefix` | Prefijo para los nombres de archivo de las imágenes guardadas. Predeterminado: "image". Parámetro avanzado. | STRING | No | N/A |
-| `mode` | Indica si se deben sobrescribir los archivos existentes o incrementar los nombres de archivo para evitar sobrescribirlos. Predeterminado: "overwrite". | COMBO | No | "overwrite"<br>"increment" |
+| `modo` | Indica si se deben sobrescribir los archivos existentes o incrementar los nombres de archivo para evitar sobrescribirlos. Predeterminado: "overwrite". | COMBO | No | "overwrite"<br>"increment" |
 
 **Notas:**
 

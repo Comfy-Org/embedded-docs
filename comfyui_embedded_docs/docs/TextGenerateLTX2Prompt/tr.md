@@ -7,14 +7,14 @@ TextGenerateLTX2Prompt düğümü, kısa bir kullanıcı istemini LTX-2 serisi v
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `clip` | Metin kodlama için kullanılan CLIP modeli. Düğüm, eşleşen talimatları seçmek için modelin tokenizer adını kontrol eder: Gemma 4 tabanlı modeller LTX-2.4 biçimini kullanır, diğer modeller ise LTX-2 (Gemma 3) biçimini kullanır. | CLIP | Evet |  |
-| `prompt` | Ayrıntılı bir video üretim istemine genişletilecek sahneyi veya kavramı açıklayan ham metin girdisi. | STRING | Evet |  |
-| `max_length` | Dil modelinin üretmesine izin verilen maksimum token sayısı. | INT | Evet |  |
-| `sampling_mode` | Metin üretimi sırasında bir sonraki tokeni seçmek için kullanılan örnekleme stratejisi. | COMBO | Evet | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` |
-| `image` | Videonun ilk karesi olarak kullanılan isteğe bağlı giriş görüntüsü. Sağlandığında düğüm, görüntüden videoya moduna geçer ve kullanıcı istemini görüntünün içeriğine göre genişleten bir sistem istemi kullanır. | IMAGE | Hayır |  |
-| `thinking` | Etkinleştirildiğinde modelin yanıtlamadan önce akıl yürütmesi istenir. Döndürülen çıktıdan tüm akıl yürütme bloğu kaldırılır (varsayılan: False). | BOOLEAN | Hayır |  |
+| `istem` | Ayrıntılı bir video üretim istemine genişletilecek sahneyi veya kavramı açıklayan ham metin girdisi. | STRING | Evet |  |
+| `maksimum_uzunluk` | Dil modelinin üretmesine izin verilen maksimum token sayısı. | INT | Evet |  |
+| `örnekleme_modu` | Metin üretimi sırasında bir sonraki tokeni seçmek için kullanılan örnekleme stratejisi. | COMBO | Evet | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` |
+| `görsel` | Videonun ilk karesi olarak kullanılan isteğe bağlı giriş görüntüsü. Sağlandığında düğüm, görüntüden videoya moduna geçer ve kullanıcı istemini görüntünün içeriğine göre genişleten bir sistem istemi kullanır. | IMAGE | Hayır |  |
+| `düşünme` | Etkinleştirildiğinde modelin yanıtlamadan önce akıl yürütmesi istenir. Döndürülen çıktıdan tüm akıl yürütme bloğu kaldırılır (varsayılan: False). | BOOLEAN | Hayır |  |
 | `use_default_template` | Etkinleştirildiğinde düğüm, biçimlendirme için varsayılan sohbet şablonunu kullanır (varsayılan: True). | BOOLEAN | Hayır |  |
 | `video` | Üretim için ek bağlam olarak kullanılabilecek isteğe bağlı video girdisi. | VIDEO | Hayır |  |
-| `audio` | Üretim için ek bağlam olarak kullanılabilecek isteğe bağlı ses girdisi. | AUDIO | Hayır |  |
+| `ses` | Üretim için ek bağlam olarak kullanılabilecek isteğe bağlı ses girdisi. | AUDIO | Hayır |  |
 
 **Not:** Düğümün davranışı girdilerine göre değişir:
 

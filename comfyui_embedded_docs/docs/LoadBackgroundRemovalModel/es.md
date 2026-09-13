@@ -6,7 +6,7 @@ Carga un modelo de eliminación de fondos desde un archivo. Este nodo prepara el
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `bg_removal_name` | El modelo utilizado para eliminar fondos de las imágenes. Seleccione de la lista de archivos de modelos de eliminación de fondos disponibles. | COMBO | Sí | Lista de archivos de modelos disponibles (ordenados alfabéticamente) |
+| `nombre_del_modelo_de_eliminación_de_fondo` | El modelo utilizado para eliminar fondos de las imágenes. Seleccione de la lista de archivos de modelos de eliminación de fondos disponibles. | COMBO | Sí | Lista de archivos de modelos disponibles (ordenados alfabéticamente) |
 
 Nota: Si el archivo seleccionado no contiene un modelo de eliminación de fondos válido, el nodo genera un RuntimeError.
 

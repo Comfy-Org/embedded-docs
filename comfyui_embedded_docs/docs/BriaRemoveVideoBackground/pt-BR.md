@@ -6,9 +6,9 @@ Este nó remove o fundo de um vídeo usando o serviço Bria AI. Ele processa o v
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `video` | O arquivo de vídeo de entrada do qual o fundo será removido. | VIDEO | Sim | N/A |
-| `background_color` | Cor de fundo para o vídeo de saída. | COMBO | Sim | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` |
-| `seed` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed. (padrão: 0) | INT | Sim | 0 a 2147483647 |
+| `vídeo` | O arquivo de vídeo de entrada do qual o fundo será removido. | VIDEO | Sim | N/A |
+| `cor de fundo` | Cor de fundo para o vídeo de saída. | COMBO | Sim | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` |
+| `semente` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed. (padrão: 0) | INT | Sim | 0 a 2147483647 |
 
 **Nota:** O vídeo de entrada deve ter duração de 60 segundos ou menos. Os resultados são não determinísticos mesmo se o valor da seed não for alterado.
 

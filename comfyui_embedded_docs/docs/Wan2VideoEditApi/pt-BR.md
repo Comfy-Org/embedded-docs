@@ -8,11 +8,11 @@ O nó Wan 2.7 Video Edit edita um vídeo usando instruções de texto, imagens d
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo a ser usado para edição de vídeo. Cada opção expõe seu próprio conjunto de subparâmetros. | DYNAMIC_COMBO | Sim | `"wan2.7-videoedit"` |
-| `video` | O vídeo a ser editado. | VIDEO | Sim | - |
-| `seed` | Seed a ser usada para geração. (padrão: 0) | INT | Sim | 0 a 2147483647 |
-| `audio_setting` | 'auto': o modelo decide se deve regenerar o áudio com base no prompt. 'origin': preserva o áudio original do vídeo de entrada. (padrão: "auto") | COMBO | Sim | `"auto"`<br>`"origin"` |
-| `watermark` | Se deve adicionar uma marca d'água gerada por IA ao resultado. (padrão: False) | BOOLEAN | Sim | - |
+| `modelo` | O modelo a ser usado para edição de vídeo. Cada opção expõe seu próprio conjunto de subparâmetros. | DYNAMIC_COMBO | Sim | `"wan2.7-videoedit"` |
+| `vídeo` | O vídeo a ser editado. | VIDEO | Sim | - |
+| `semente` | Seed a ser usada para geração. (padrão: 0) | INT | Sim | 0 a 2147483647 |
+| `configuração_de_áudio` | 'auto': o modelo decide se deve regenerar o áudio com base no prompt. 'origin': preserva o áudio original do vídeo de entrada. (padrão: "auto") | COMBO | Sim | `"auto"`<br>`"origin"` |
+| `marca_d'água` | Se deve adicionar uma marca d'água gerada por IA ao resultado. (padrão: False) | BOOLEAN | Sim | - |
 
 ### Entradas do wan2.7-videoedit
 

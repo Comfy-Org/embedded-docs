@@ -6,7 +6,7 @@ Este nodo aumenta la escala de una imagen de forma sincrónica utilizando la her
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `image` | La imagen de entrada que se va a escalar. Acepta un lote de imágenes; cada imagen se procesa de forma independiente. | IMAGE | Sí | — |
+| `imagen` | La imagen de entrada que se va a escalar. Acepta un lote de imágenes; cada imagen se procesa de forma independiente. | IMAGE | Sí | — |
 
 ## Salidas
 

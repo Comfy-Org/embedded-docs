@@ -6,7 +6,7 @@ MergeMeshes, birden çok mesh girdisini; köşe noktalarını, yüzlerini, UV ko
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `meshes` | Genişletilebilir yuva: 2 ila 50 arasında mesh nesnesi bağlayın (`mesh_1`, `mesh_2`, ..., `mesh_50` olarak adlandırılır). Bağlanan tüm mesh'ler tek bir çıktı mesh'inde birleştirilir. | MESH | Evet | 2 ila 50 mesh |
+| `mesh'ler` | Genişletilebilir yuva: 2 ila 50 arasında mesh nesnesi bağlayın (`mesh_1`, `mesh_2`, ..., `mesh_50` olarak adlandırılır). Bağlanan tüm mesh'ler tek bir çıktı mesh'inde birleştirilir. | MESH | Evet | 2 ila 50 mesh |
 
 **Not:** En az bir mesh sağlanmalıdır; aksi takdirde düğüm bir hata verir. Her girdi mesh'inin grubundan yalnızca ilk mesh öğesi kullanılır. Girdi mesh'leri birleştirme öncesinde CPU'ya taşınır. Herhangi bir girdi mesh'i UV verisine sahipse çıktı UV'leri içerir ve UV'si olmayan mesh'ler sıfırla doldurulmuş UV değerleri alır. Herhangi bir girdi mesh'i köşe renklerine sahipse çıktı köşe renklerini içerir; renkleri olmayan mesh'ler beyaz (değer 1) renkler alır ve renk kanalları, girdiler arasında bulunan en büyük kanal sayısına doldurulur. Yalnızca bir doku sağlayan ilk girdiden gelen doku tutulur; ek dokular atılır.
 

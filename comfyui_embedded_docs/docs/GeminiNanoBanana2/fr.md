@@ -7,15 +7,15 @@ Le nœud Nano Banana 2 génère ou modifie des images de manière synchrone via 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `prompt` | Invite textuelle décrivant l'image à générer ou les modifications à appliquer. Incluez toutes contraintes, styles ou détails que le modèle doit suivre. Ne peut pas être vide ni composé uniquement d'espaces. (par défaut : vide) | STRING | Oui | N/A |
-| `model` | Le modèle Gemini à utiliser pour la génération d'images. | COMBO | Oui | "Nano Banana 2 (Gemini 3.1 Flash Image)" |
-| `seed` | Lorsque la graine est fixée à une valeur spécifique, le modèle fait de son mieux pour fournir la même réponse pour des requêtes répétées. Une sortie déterministe n'est pas garantie. De plus, modifier le modèle ou les paramètres, comme la température, peut entraîner des variations dans la réponse même si vous utilisez la même valeur de graine. Par défaut, une valeur de graine aléatoire est utilisée. (par défaut : 42) | INT | Oui | 0 à 18446744073709551615 |
-| `aspect_ratio` | Si défini sur 'auto', correspond au rapport d'aspect de votre image d'entrée ; si aucune image n'est fournie, un format 16:9 est généralement généré. (par défaut : "auto") | COMBO | Oui | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"4:5"<br>"5:4"<br>"9:16"<br>"16:9"<br>"21:9" |
-| `resolution` | Résolution de sortie cible. Pour 2K/4K, l'upscaler natif de Gemini est utilisé. | COMBO | Oui | "1K"<br>"2K"<br>"4K" |
-| `response_modalities` | Détermine le type de contenu renvoyé par le modèle : "IMAGE" renvoie uniquement une image, "IMAGE+TEXT" renvoie également du texte. (avancé) | COMBO | Oui | "IMAGE"<br>"IMAGE+TEXT" |
-| `thinking_level` | Contrôle la profondeur du processus de raisonnement du modèle. | COMBO | Oui | "MINIMAL"<br>"HIGH" |
+| `modèle` | Le modèle Gemini à utiliser pour la génération d'images. | COMBO | Oui | "Nano Banana 2 (Gemini 3.1 Flash Image)" |
+| `graine` | Lorsque la graine est fixée à une valeur spécifique, le modèle fait de son mieux pour fournir la même réponse pour des requêtes répétées. Une sortie déterministe n'est pas garantie. De plus, modifier le modèle ou les paramètres, comme la température, peut entraîner des variations dans la réponse même si vous utilisez la même valeur de graine. Par défaut, une valeur de graine aléatoire est utilisée. (par défaut : 42) | INT | Oui | 0 à 18446744073709551615 |
+| `rapport d’aspect` | Si défini sur 'auto', correspond au rapport d'aspect de votre image d'entrée ; si aucune image n'est fournie, un format 16:9 est généralement généré. (par défaut : "auto") | COMBO | Oui | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"4:5"<br>"5:4"<br>"9:16"<br>"16:9"<br>"21:9" |
+| `résolution` | Résolution de sortie cible. Pour 2K/4K, l'upscaler natif de Gemini est utilisé. | COMBO | Oui | "1K"<br>"2K"<br>"4K" |
+| `modalités de réponse` | Détermine le type de contenu renvoyé par le modèle : "IMAGE" renvoie uniquement une image, "IMAGE+TEXT" renvoie également du texte. (avancé) | COMBO | Oui | "IMAGE"<br>"IMAGE+TEXT" |
+| `niveau de réflexion` | Contrôle la profondeur du processus de raisonnement du modèle. | COMBO | Oui | "MINIMAL"<br>"HIGH" |
 | `images` | Image(s) de référence facultative(s). Pour inclure plusieurs images, utilisez le nœud Batch Images (jusqu'à 14). | IMAGE | Non | 1 à 14 images |
-| `files` | Fichier(s) facultatif(s) à utiliser comme contexte pour le modèle. Accepte les entrées du nœud Gemini Generate Content Input Files. | CUSTOM | Non | N/A |
-| `system_prompt` | Instructions fondamentales qui dictent le comportement d'une IA. (par défaut : une invite prédéfinie qui demande au modèle de toujours produire une image) (avancé) | STRING | Non | N/A |
+| `fichiers` | Fichier(s) facultatif(s) à utiliser comme contexte pour le modèle. Accepte les entrées du nœud Gemini Generate Content Input Files. | CUSTOM | Non | N/A |
+| `invite système` | Instructions fondamentales qui dictent le comportement d'une IA. (par défaut : une invite prédéfinie qui demande au modèle de toujours produire une image) (avancé) | STRING | Non | N/A |
 
 **Remarque :** L'entrée `images` prend en charge un maximum de 14 images. Si davantage sont fournies, le nœud génère une erreur. L'entrée `prompt` ne doit pas être vide ni composée uniquement d'espaces.
 

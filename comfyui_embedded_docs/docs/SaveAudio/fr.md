@@ -7,7 +7,7 @@ Ce nœud enregistre les données audio dans un fichier au format FLAC. Il prend 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `audio` | Les données audio à enregistrer | AUDIO | Oui | - |
-| `filename_prefix` | Le préfixe du nom de fichier de sortie (par défaut : "audio/ComfyUI") | STRING | Non | - |
+| `préfixe_du_nom_de_fichier` | Le préfixe du nom de fichier de sortie (par défaut : "audio/ComfyUI") | STRING | Non | - |
 
 *Note : Les paramètres `prompt` et `extra_pnginfo` sont masqués et gérés automatiquement par le système.*
 

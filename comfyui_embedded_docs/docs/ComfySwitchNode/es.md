@@ -6,9 +6,9 @@ El nodo If/Else Switch selecciona entre dos posibles entradas según una condici
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `switch` | Una condición booleana que determina qué entrada se pasa a la salida. Cuando está habilitada (true), se selecciona la entrada `on_true`. Cuando está deshabilitada (false), se selecciona la entrada `on_false`. | BOOLEAN | Sí |  |
-| `on_false` | Los datos que se pasarán a la salida cuando `switch` esté deshabilitado (false). Esta entrada se solicita solo cuando `switch` es false. | MATCH_TYPE | No |  |
-| `on_true` | Los datos que se pasarán a la salida cuando `switch` esté habilitado (true). Esta entrada se solicita solo cuando `switch` es true. | MATCH_TYPE | No |  |
+| `interruptor` | Una condición booleana que determina qué entrada se pasa a la salida. Cuando está habilitada (true), se selecciona la entrada `on_true`. Cuando está deshabilitada (false), se selecciona la entrada `on_false`. | BOOLEAN | Sí |  |
+| `en_falso` | Los datos que se pasarán a la salida cuando `switch` esté deshabilitado (false). Esta entrada se solicita solo cuando `switch` es false. | MATCH_TYPE | No |  |
+| `en_verdadero` | Los datos que se pasarán a la salida cuando `switch` esté habilitado (true). Esta entrada se solicita solo cuando `switch` es true. | MATCH_TYPE | No |  |
 
 **Nota sobre los requisitos de entrada:** Las entradas `on_false` y `on_true` se solicitan de forma condicional. El nodo solicita `on_true` solo cuando `switch` es true, y solicita `on_false` solo cuando `switch` es false. Ambas entradas deben ser del mismo tipo de datos, y ese tipo debe coincidir con el tipo de datos de la salida. Si la entrada seleccionada no está conectada, el nodo no genera ningún valor.
 

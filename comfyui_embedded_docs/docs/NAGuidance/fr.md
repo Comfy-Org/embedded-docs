@@ -6,10 +6,10 @@ Le nœud NAGuidance applique le guidage d'attention normalisé à un modèle. Ce
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle auquel appliquer le guidage d'attention normalisé. | MODEL | Oui | - |
-| `nag_scale` | Le facteur d'échelle de guidage. Des valeurs plus élevées éloignent davantage la génération du prompt négatif. (par défaut : 5.0) | FLOAT | Oui | 0.0 - 50.0 |
-| `nag_alpha` | Le facteur de mélange pour l'attention normalisée. Une valeur de 1.0 remplace entièrement l'attention d'origine, tandis qu'une valeur de 0.0 n'a aucun effet. (par défaut : 0.5) | FLOAT | Oui | 0.0 - 1.0 |
-| `nag_tau` | Un facteur d'échelle utilisé pour limiter le rapport de normalisation. (par défaut : 1.5) | FLOAT | Oui | 1.0 - 10.0 |
+| `modèle` | Le modèle auquel appliquer le guidage d'attention normalisé. | MODEL | Oui | - |
+| `facteur_nag` | Le facteur d'échelle de guidage. Des valeurs plus élevées éloignent davantage la génération du prompt négatif. (par défaut : 5.0) | FLOAT | Oui | 0.0 - 50.0 |
+| `alpha_nag` | Le facteur de mélange pour l'attention normalisée. Une valeur de 1.0 remplace entièrement l'attention d'origine, tandis qu'une valeur de 0.0 n'a aucun effet. (par défaut : 0.5) | FLOAT | Oui | 0.0 - 1.0 |
+| `tau_nag` | Un facteur d'échelle utilisé pour limiter le rapport de normalisation. (par défaut : 1.5) | FLOAT | Oui | 1.0 - 10.0 |
 
 ## Sorties
 

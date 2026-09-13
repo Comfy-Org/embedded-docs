@@ -7,10 +7,10 @@ O nó ExtendIntermediateSigmas recebe uma sequência existente de valores sigma 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `sigmas` | A sequência de sigma de entrada a ser estendida com valores intermediários | SIGMAS | Sim | - |
-| `steps` | Controla o número de valores sigma intermediários inseridos entre cada par de sigmas existentes. O intervalo entre dois sigmas é dividido em `steps` partes, produzindo `steps - 1` novos valores por par (padrão: 2, o que insere um valor por par) | INT | Sim | 1 a 100 |
-| `start_at_sigma` | Limite superior de sigma para extensão. Apenas intervalos de sigma cujo sigma inicial seja menor ou igual a este valor são estendidos. Quando definido como -1.0, é tratado como infinito, o que significa que nenhum limite superior é aplicado. Padrão: -1.0 | FLOAT | Sim | -1.0 a 20000.0 |
-| `end_at_sigma` | Limite inferior de sigma para extensão. Apenas intervalos de sigma cujo sigma inicial seja maior ou igual a este valor são estendidos. Padrão: 12.0 | FLOAT | Sim | 0.0 a 20000.0 |
-| `spacing` | O método de interpolação para espaçar os valores sigma intermediários (padrão: "linear") | COMBO | Sim | `"linear"`<br>`"cosine"`<br>`"sine"` |
+| `passos` | Controla o número de valores sigma intermediários inseridos entre cada par de sigmas existentes. O intervalo entre dois sigmas é dividido em `steps` partes, produzindo `steps - 1` novos valores por par (padrão: 2, o que insere um valor por par) | INT | Sim | 1 a 100 |
+| `iniciar_em_sigma` | Limite superior de sigma para extensão. Apenas intervalos de sigma cujo sigma inicial seja menor ou igual a este valor são estendidos. Quando definido como -1.0, é tratado como infinito, o que significa que nenhum limite superior é aplicado. Padrão: -1.0 | FLOAT | Sim | -1.0 a 20000.0 |
+| `terminar_em_sigma` | Limite inferior de sigma para extensão. Apenas intervalos de sigma cujo sigma inicial seja maior ou igual a este valor são estendidos. Padrão: 12.0 | FLOAT | Sim | 0.0 a 20000.0 |
+| `espaçamento` | O método de interpolação para espaçar os valores sigma intermediários (padrão: "linear") | COMBO | Sim | `"linear"`<br>`"cosine"`<br>`"sine"` |
 
 **Nota:** O nó só insere sigmas intermediários para intervalos de sigma cujo sigma inicial seja menor ou igual a `start_at_sigma` e maior ou igual a `end_at_sigma`. Quando `start_at_sigma` é definido como -1.0, ele é tratado como infinito, portanto apenas o limite inferior `end_at_sigma` se aplica.
 

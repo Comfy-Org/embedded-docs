@@ -6,10 +6,10 @@ Le nœud CFG Override remplace l'échelle CFG (Classifier-Free Guidance) par une
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle auquel appliquer le remplacement du CFG. | MODEL | Oui | |
+| `modèle` | Le modèle auquel appliquer le remplacement du CFG. | MODEL | Oui | |
 | `cfg` | La valeur fixe de l'échelle CFG à utiliser pendant la plage de remplacement. Par défaut : 1.0. | FLOAT | Oui | 0.0 à 100.0 (pas : 0.1) |
-| `start_percent` | Le point de départ de la plage de remplacement en pourcentage du processus d'échantillonnage. Par défaut : 0.0. | FLOAT | Oui | 0.0 à 1.0 (pas : 0.001) |
-| `end_percent` | Le point de fin de la plage de remplacement en pourcentage du processus d'échantillonnage. Par défaut : 1.0. | FLOAT | Oui | 0.0 à 1.0 (pas : 0.001) |
+| `pourcentage_début` | Le point de départ de la plage de remplacement en pourcentage du processus d'échantillonnage. Par défaut : 0.0. | FLOAT | Oui | 0.0 à 1.0 (pas : 0.001) |
+| `pourcentage_fin` | Le point de fin de la plage de remplacement en pourcentage du processus d'échantillonnage. Par défaut : 1.0. | FLOAT | Oui | 0.0 à 1.0 (pas : 0.001) |
 
 ## Sorties
 

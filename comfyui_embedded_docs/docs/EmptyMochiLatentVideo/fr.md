@@ -6,10 +6,10 @@ EmptyMochiLatentVideo crée un tenseur vidéo latent vide avec les dimensions qu
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `width` | La largeur de la vidéo latente en pixels (valeur par défaut : 848, les valeurs augmentent par pas de 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `height` | La hauteur de la vidéo latente en pixels (valeur par défaut : 480, les valeurs augmentent par pas de 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `length` | Le nombre d’images dans la vidéo latente (valeur par défaut : 25, les valeurs augmentent par pas de 6, à partir de 7) | INT | Oui | 7 à MAX_RESOLUTION |
-| `batch_size` | Le nombre de vidéos latentes à générer dans un lot (valeur par défaut : 1) | INT | Non | 1 à 4096 |
+| `largeur` | La largeur de la vidéo latente en pixels (valeur par défaut : 848, les valeurs augmentent par pas de 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `hauteur` | La hauteur de la vidéo latente en pixels (valeur par défaut : 480, les valeurs augmentent par pas de 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `longueur` | Le nombre d’images dans la vidéo latente (valeur par défaut : 25, les valeurs augmentent par pas de 6, à partir de 7) | INT | Oui | 7 à MAX_RESOLUTION |
+| `taille_du_lot` | Le nombre de vidéos latentes à générer dans un lot (valeur par défaut : 1) | INT | Non | 1 à 4096 |
 
 **Note :** Les dimensions latentes réelles sont calculées comme width/8 et height/8, la dimension temporelle est calculée comme `((length - 1) // 6) + 1`, et le tenseur comporte 12 canaux. Comme `length` avance par pas de 6 à partir de 7, les valeurs valides sont 7, 13, 19, 25, etc.
 

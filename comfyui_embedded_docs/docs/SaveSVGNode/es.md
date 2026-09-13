@@ -7,7 +7,7 @@ Guarda archivos SVG en disco. Este nodo toma datos SVG como entrada y los escrib
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `svg` | Los datos SVG que se guardarán en disco | SVG | Sí | - |
-| `filename_prefix` | El prefijo del archivo que se guardará. Puede incluir información de formato, como %date:yyyy-MM-dd% o %Empty Latent Image.width%, para incluir valores de los nodos. (predeterminado: "svg/ComfyUI") | STRING | Sí | - |
+| `prefijo_nombre_archivo` | El prefijo del archivo que se guardará. Puede incluir información de formato, como %date:yyyy-MM-dd% o %Empty Latent Image.width%, para incluir valores de los nodos. (predeterminado: "svg/ComfyUI") | STRING | Sí | - |
 
 ## Salidas
 

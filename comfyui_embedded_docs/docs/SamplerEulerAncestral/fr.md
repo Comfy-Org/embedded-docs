@@ -7,7 +7,7 @@ Le nœud SamplerEulerAncestral crée un échantillonneur Euler Ancestral qui peu
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `eta` | Contrôle la taille du pas et le caractère stochastique du processus d'échantillonnage (par défaut : 1.0). Il s'agit d'un paramètre avancé. | FLOAT | Oui | 0.0 - 100.0 |
-| `s_noise` | Contrôle la quantité de bruit ajoutée pendant l'échantillonnage (par défaut : 1.0). Il s'agit d'un paramètre avancé. | FLOAT | Oui | 0.0 - 100.0 |
+| `s_bruit` | Contrôle la quantité de bruit ajoutée pendant l'échantillonnage (par défaut : 1.0). Il s'agit d'un paramètre avancé. | FLOAT | Oui | 0.0 - 100.0 |
 
 ## Sorties
 

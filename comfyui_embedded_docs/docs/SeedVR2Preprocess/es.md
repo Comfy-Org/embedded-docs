@@ -6,7 +6,7 @@ Este nodo prepara una imagen o un vídeo redimensionados para el modelo SeedVR2 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `resized_images` | La imagen redimensionada que se va a procesar. | IMAGE | Sí | - |
+| `imágenes_redimensionadas` | La imagen redimensionada que se va a procesar. | IMAGE | Sí | - |
 
 Nota: La entrada puede ser un solo fotograma, una secuencia de fotogramas o un lote de vídeos (tensores IMAGE en 4-D o 5-D). Si tiene más de 3 canales, el canal alfa se descarta y solo se conserva RGB. El lado más corto de la entrada debe medir al menos 2 píxeles. El relleno espacial se hace con negro (valor 0), y los números de fotogramas válidos siguen un patrón 4n+1 (1, 5, 9, 13, ...).
 

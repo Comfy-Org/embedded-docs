@@ -6,10 +6,10 @@ Ce nœud améliore les images à basse résolution en les agrandissant en super-
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle d'amélioration à utiliser. Le modèle `generative_portrait` est optimisé pour les portraits, tandis que `generative` est un modèle polyvalent. | COMBO | Oui | `"generative_portrait"`<br>`"generative"` |
+| `modèle` | Le modèle d'amélioration à utiliser. Le modèle `generative_portrait` est optimisé pour les portraits, tandis que `generative` est un modèle polyvalent. | COMBO | Oui | `"generative_portrait"`<br>`"generative"` |
 | `image` | L'image d'entrée à améliorer. | IMAGE | Oui | - |
-| `upscale_factor` | Le facteur d'agrandissement des dimensions de l'image. Un facteur de 1 signifie aucun agrandissement, 2 double les dimensions et 4 les quadruple. | COMBO | Oui | `1`<br>`2`<br>`4` |
-| `auto_downscale` | Réduit automatiquement l'échelle de l'image d'entrée si la sortie dépasserait la limite. (par défaut : `False`) | BOOLEAN | Non | - |
+| `facteur_d’agrandissement` | Le facteur d'agrandissement des dimensions de l'image. Un facteur de 1 signifie aucun agrandissement, 2 double les dimensions et 4 les quadruple. | COMBO | Oui | `1`<br>`2`<br>`4` |
+| `réduction_automatique` | Réduit automatiquement l'échelle de l'image d'entrée si la sortie dépasserait la limite. (par défaut : `False`) | BOOLEAN | Non | - |
 
 **Remarque :** Le nœud génère une erreur si la taille de sortie calculée (largeur d'entrée × upscale_factor × hauteur d'entrée × upscale_factor) dépasse 32 000 000 pixels (32 MP) et que `auto_downscale` est désactivé. Lorsque `auto_downscale` est activé, le nœud réduit automatiquement la taille de l'image d'entrée ou le facteur d'agrandissement (ou les deux) afin que la sortie respecte la limite de 32 MP. Le `model` et le `upscale_factor` sélectionnés sont combinés dans le nom du modèle envoyé au service.
 

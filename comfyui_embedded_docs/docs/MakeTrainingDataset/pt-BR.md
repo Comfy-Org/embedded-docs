@@ -6,10 +6,10 @@ Este nó prepara dados para treinamento codificando imagens e texto. Ele recebe 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `images` | Lista de imagens a codificar. | IMAGE | Sim | N/A |
+| `imagens` | Lista de imagens a codificar. | IMAGE | Sim | N/A |
 | `vae` | Modelo VAE para codificar imagens em latentes. | VAE | Sim | N/A |
 | `clip` | Modelo CLIP para codificar texto em condicionamento. | CLIP | Sim | N/A |
-| `texts` | Lista de legendas de texto. Pode ter comprimento n (correspondendo a `images`), 1 (repetida para todas) ou ser omitida (usa string vazia). | STRING | Não | 0, 1 ou n itens (n = número de imagens) |
+| `textos` | Lista de legendas de texto. Pode ter comprimento n (correspondendo a `images`), 1 (repetida para todas) ou ser omitida (usa string vazia). | STRING | Não | 0, 1 ou n itens (n = número de imagens) |
 
 **Restrições dos parâmetros:**
 

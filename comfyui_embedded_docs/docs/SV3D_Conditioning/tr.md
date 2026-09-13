@@ -6,13 +6,13 @@ SV3D_Conditioning, SV3D modelini kullanarak 3D video oluşturma için koşulland
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `clip_vision` | Girdi görüntüsünü kodlamak için kullanılan CLIP vision modeli | CLIP_VISION | Evet | - |
-| `init_image` | 3D video oluşturma için başlangıç noktası olarak hizmet eden başlangıç görüntüsü | IMAGE | Evet | - |
+| `clip_görü` | Girdi görüntüsünü kodlamak için kullanılan CLIP vision modeli | CLIP_VISION | Evet | - |
+| `başlangıç_görüntüsü` | 3D video oluşturma için başlangıç noktası olarak hizmet eden başlangıç görüntüsü | IMAGE | Evet | - |
 | `vae` | Görüntüyü latent uzaya kodlamak için kullanılan VAE modeli | VAE | Evet | - |
-| `width` | Oluşturulan video kareleri için çıktı genişliği (varsayılan: 576, adım: 8) | INT | Evet | 16 to MAX_RESOLUTION |
-| `height` | Oluşturulan video kareleri için çıktı yüksekliği (varsayılan: 576, adım: 8) | INT | Evet | 16 to MAX_RESOLUTION |
-| `video_frames` | Video dizisi için oluşturulacak kare sayısı (varsayılan: 21) | INT | Evet | 1 ile 4096 |
-| `elevation` | 3D görünüm için kamera yükselti açısı, derece cinsinden (varsayılan: 0.0, adım: 0.1) | FLOAT | Evet | -90.0 ile 90.0 |
+| `genişlik` | Oluşturulan video kareleri için çıktı genişliği (varsayılan: 576, adım: 8) | INT | Evet | 16 to MAX_RESOLUTION |
+| `yükseklik` | Oluşturulan video kareleri için çıktı yüksekliği (varsayılan: 576, adım: 8) | INT | Evet | 16 to MAX_RESOLUTION |
+| `video_kareleri` | Video dizisi için oluşturulacak kare sayısı (varsayılan: 21) | INT | Evet | 1 ile 4096 |
+| `yükseklik` | 3D görünüm için kamera yükselti açısı, derece cinsinden (varsayılan: 0.0, adım: 0.1) | FLOAT | Evet | -90.0 ile 90.0 |
 
 Not: Kamera azimutu 0 dereceden başlar ve her karede sabit bir miktar artarak kamera, oluşturulan kareler boyunca nesnenin etrafında tam 360 derecelik bir yörünge tamamlar. Kare başına artış, 360'ın (`video_frames` - 1) değerine bölünmesiyle hesaplanır; yalnızca bir kare istendiğinde minimum bölen 2 kullanılır. `elevation` değeri her kare için sabit kalır.
 

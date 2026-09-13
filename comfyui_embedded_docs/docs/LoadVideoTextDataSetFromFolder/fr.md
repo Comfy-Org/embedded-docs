@@ -6,7 +6,7 @@ Ce nœud charge des fichiers vidéo et leurs légendes textuelles correspondante
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `folder` | Le dossier contenant les fichiers vidéo et les légendes `.txt`. | COMBO | Oui | Liste dynamiquement tous les sous-dossiers à l’intérieur du répertoire d’entrée de ComfyUI |
+| `dossier` | Le dossier contenant les fichiers vidéo et les légendes `.txt`. | COMBO | Oui | Liste dynamiquement tous les sous-dossiers à l’intérieur du répertoire d’entrée de ComfyUI |
 
 Le dossier sélectionné doit être un sous-dossier du répertoire d’entrée de ComfyUI ; un nom de dossier qui se résout en dehors de ce répertoire génère une erreur. Si le dossier sélectionné ne contient aucun fichier avec une extension vidéo prise en charge (MP4, AVI, MOV, WEBM, MKV, FLV), le nœud génère une erreur. Pour les dossiers imbriqués dont le nom commence par un nombre suivi d’un trait de soulignement (par exemple `5_classname`), chaque vidéo de ce dossier est incluse dans le jeu de données le nombre de fois indiqué par ce préfixe. La légende de chaque vidéo est lue depuis un fichier `.txt` portant le même nom de base ; si aucun fichier `.txt` correspondant n’existe, la légende est une chaîne vide.
 

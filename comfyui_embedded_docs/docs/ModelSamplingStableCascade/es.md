@@ -6,8 +6,8 @@ El nodo ModelSamplingStableCascade aplica la configuración de muestreo de Stabl
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de entrada al que se aplicará el muestreo de Stable Cascade | MODEL | Sí | - |
-| `shift` | El valor de desplazamiento aplicado a los parámetros de muestreo (predeterminado: 2.0) | FLOAT | Sí | 0.0 - 100.0 (paso 0.01) |
+| `modelo` | El modelo de entrada al que se aplicará el muestreo de Stable Cascade | MODEL | Sí | - |
+| `desplazamiento` | El valor de desplazamiento aplicado a los parámetros de muestreo (predeterminado: 2.0) | FLOAT | Sí | 0.0 - 100.0 (paso 0.01) |
 
 ## Salidas
 

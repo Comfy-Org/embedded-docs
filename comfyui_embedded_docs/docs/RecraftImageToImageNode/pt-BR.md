@@ -6,13 +6,13 @@ Este nó modifica uma imagem existente com base em um prompt de texto e uma conf
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A imagem de entrada a ser modificada. Quando um lote de imagens é fornecido, cada imagem é processada individualmente. | IMAGE | Sim | - |
+| `imagem` | A imagem de entrada a ser modificada. Quando um lote de imagens é fornecido, cada imagem é processada individualmente. | IMAGE | Sim | - |
 | `prompt` | Prompt para a geração da imagem. Padrão: string vazia. Comprimento máximo: 1000 caracteres. | STRING | Sim | - |
 | `n` | O número de imagens a gerar. Padrão: 1. | INT | Sim | 1-6 |
-| `strength` | Define a diferença em relação à imagem original; deve estar em [0, 1], onde 0 significa quase idêntica e 1 significa similaridade mínima. Padrão: 0.5. | FLOAT | Sim | 0.0-1.0 (passo 0.01) |
-| `seed` | Semente para determinar se o nó deve ser reexecutado; os resultados reais são não determinísticos independentemente da semente. Padrão: 0. | INT | Sim | 0-18446744073709551615 |
+| `intensidade` | Define a diferença em relação à imagem original; deve estar em [0, 1], onde 0 significa quase idêntica e 1 significa similaridade mínima. Padrão: 0.5. | FLOAT | Sim | 0.0-1.0 (passo 0.01) |
+| `semente` | Semente para determinar se o nó deve ser reexecutado; os resultados reais são não determinísticos independentemente da semente. Padrão: 0. | INT | Sim | 0-18446744073709551615 |
 | `recraft_style` | Seleção de estilo opcional para a geração da imagem. Se não for fornecida, o padrão é `realistic_image`. | STYLEV3 | Não | - |
-| `negative_prompt` | Descrição de texto opcional de elementos indesejados em uma imagem. Padrão: string vazia. Fornecida como um soquete de entrada. | STRING | Não | - |
+| `prompt_negativo` | Descrição de texto opcional de elementos indesejados em uma imagem. Padrão: string vazia. Fornecida como um soquete de entrada. | STRING | Não | - |
 | `recraft_controls` | Controles adicionais opcionais sobre a geração por meio do nó Recraft Controls. | CONTROLS | Não | - |
 
 **Nota:** O parâmetro `seed` apenas dispara a reexecução do nó, mas não garante resultados determinísticos. O parâmetro `strength` é arredondado para 2 casas decimais internamente. O `prompt` é validado e não deve exceder 1000 caracteres. Um `negative_prompt` vazio é tratado como ausência de prompt negativo. Se `recraft_style` não for fornecido, o nó usa o estilo `realistic_image` por padrão. Se você usar um `style_id` da Infinite Style Library, certifique-se de que ele não seja um estilo Vector art, pois isso pode fazer o nó receber dados SVG em vez de uma imagem, resultando em erro. Quando a `image` de entrada é um lote, cada imagem do lote é processada individualmente e todos os resultados são retornados juntos.

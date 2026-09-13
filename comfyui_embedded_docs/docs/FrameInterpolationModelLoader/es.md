@@ -6,7 +6,7 @@ Este nodo carga un archivo de modelo de interpolación de fotogramas y lo prepar
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model_name` | Selecciona un modelo de interpolación de fotogramas para cargar. Los modelos deben colocarse en la carpeta `frame_interpolation`. | COMBO | Sí | Lista de archivos de modelo en la carpeta `frame_interpolation` |
+| `nombre del modelo` | Selecciona un modelo de interpolación de fotogramas para cargar. Los modelos deben colocarse en la carpeta `frame_interpolation`. | COMBO | Sí | Lista de archivos de modelo en la carpeta `frame_interpolation` |
 
 Nota: El nodo admite formatos de modelo FILM y RIFE. Si el archivo seleccionado no es un formato reconocido, se genera un error.
 

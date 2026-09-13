@@ -8,10 +8,10 @@ Este nodo inserta un objeto descrito en texto plano dentro de una imagen usando 
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `image` | La imagen a la que se agrega el objeto descrito. El canal alfa se elimina antes de subir la imagen. | IMAGE | Sí | - |
-| `instruction` | Qué agregar y dónde, por ejemplo, 'Coloca un jarrón rojo con flores sobre la mesa'. No debe estar vacío. Predeterminado: "" (cadena vacía). | STRING | Sí | - |
-| `seed` | Bria no recibe ninguna semilla aquí y reimagina la edición en cada llamada, por lo que las ejecuciones repetidas pueden variar. El valor nunca se envía: solo cambia la clave de caché de este nodo, de modo que un grafo que por lo demás sea idéntico ejecute la edición de nuevo en lugar de devolver el resultado en caché. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
-| `moderation` | Ajustes de moderación. Elige "true" para revelar las opciones de moderación a continuación. | DYNAMIC_COMBO | Sí | "false"<br>"true" |
+| `imagen` | La imagen a la que se agrega el objeto descrito. El canal alfa se elimina antes de subir la imagen. | IMAGE | Sí | - |
+| `instrucción` | Qué agregar y dónde, por ejemplo, 'Coloca un jarrón rojo con flores sobre la mesa'. No debe estar vacío. Predeterminado: "" (cadena vacía). | STRING | Sí | - |
+| `semilla` | Bria no recibe ninguna semilla aquí y reimagina la edición en cada llamada, por lo que las ejecuciones repetidas pueden variar. El valor nunca se envía: solo cambia la clave de caché de este nodo, de modo que un grafo que por lo demás sea idéntico ejecute la edición de nuevo en lugar de devolver el resultado en caché. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
+| `moderación` | Ajustes de moderación. Elige "true" para revelar las opciones de moderación a continuación. | DYNAMIC_COMBO | Sí | "false"<br>"true" |
 
 ### Entradas con moderación habilitada
 

@@ -8,8 +8,8 @@ Este nodo anima una imagen de entrada con el modelo PixVerse V6 y devuelve un v�
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `image` | La imagen de entrada que se va a animar. | IMAGE | Sí | Imagen única |
-| `model` | Ajustes del modelo y de generación. | DYNAMIC_COMBO | Sí | "PixVerse V6" |
+| `imagen` | La imagen de entrada que se va a animar. | IMAGE | Sí | Imagen única |
+| `modelo` | Ajustes del modelo y de generación. | DYNAMIC_COMBO | Sí | "PixVerse V6" |
 
 ### Entradas de PixVerse V6
 

@@ -6,12 +6,12 @@ Substitua o fundo da imagem com base no prompt fornecido. Este nó usa a API Rec
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A imagem de entrada a ser processada | IMAGE | Sim | - |
+| `imagem` | A imagem de entrada a ser processada | IMAGE | Sim | - |
 | `prompt` | Prompt para a geração da imagem (padrão: vazio) | STRING | Sim | - |
 | `n` | O número de imagens a serem geradas (padrão: 1) | INT | Sim | 1-6 |
-| `seed` | Semente para determinar se o nó deve ser reexecutado; os resultados reais são não determinísticos independentemente da semente (padrão: 0) | INT | Sim | 0-18446744073709551615 |
+| `semente` | Semente para determinar se o nó deve ser reexecutado; os resultados reais são não determinísticos independentemente da semente (padrão: 0) | INT | Sim | 0-18446744073709551615 |
 | `recraft_style` | Seleção opcional de estilo para o fundo gerado. Se não for fornecida, o padrão é o estilo "realistic_image" | STYLEV3 | Não | - |
-| `negative_prompt` | Uma descrição de texto opcional de elementos indesejados em uma imagem (padrão: vazio) | STRING | Não | - |
+| `prompt_negativo` | Uma descrição de texto opcional de elementos indesejados em uma imagem (padrão: vazio) | STRING | Não | - |
 
 **Notas:**
 - O parâmetro `seed` controla quando o nó é reexecutado, mas não garante resultados determinísticos devido à natureza da API externa.

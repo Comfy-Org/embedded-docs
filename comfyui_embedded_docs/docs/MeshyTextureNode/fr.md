@@ -6,12 +6,12 @@ Le nœud Meshy: Texture Model applique des textures générées par IA à un mod
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Version du modèle IA à utiliser pour la texturation. | COMBO | Oui | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `modèle` | Version du modèle IA à utiliser pour la texturation. | COMBO | Oui | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `meshy_task_id` | Identifiant unique (ID de tâche) provenant d'une précédente tâche Meshy de génération ou de conversion 3D. Fournit le modèle 3D de base à texturer. | MESHY_TASK_ID | Oui | - |
-| `enable_original_uv` | Utiliser l'UV d'origine du modèle au lieu de générer de nouveaux UV. Lorsque cette option est activée (valeur par défaut : `True`), Meshy préserve les textures existantes du modèle téléversé. Si le modèle n'a pas d'UV d'origine, la qualité de la sortie risque de ne pas être aussi bonne. Il s'agit d'une option avancée. | BOOLEAN | Oui | true / false |
+| `activer_uv_original` | Utiliser l'UV d'origine du modèle au lieu de générer de nouveaux UV. Lorsque cette option est activée (valeur par défaut : `True`), Meshy préserve les textures existantes du modèle téléversé. Si le modèle n'a pas d'UV d'origine, la qualité de la sortie risque de ne pas être aussi bonne. Il s'agit d'une option avancée. | BOOLEAN | Oui | true / false |
 | `pbr` | Active la sortie de matériau PBR (rendu basé sur la physique) pour le modèle texturé (valeur par défaut : `False`). Il s'agit d'une option avancée. | BOOLEAN | Oui | true / false |
-| `text_style_prompt` | Décrivez le style de texture souhaité pour l'objet à l'aide de texte (valeur par défaut : chaîne vide). Maximum 600 caractères. Ce paramètre ne peut pas être utilisé en même temps que `image_style`. | STRING | Oui | - |
-| `image_style` | Une image 2D pour guider le processus de texturation. Ne peut pas être utilisée en même temps que `text_style_prompt`. | IMAGE | Non | - |
+| `invite_style_texte` | Décrivez le style de texture souhaité pour l'objet à l'aide de texte (valeur par défaut : chaîne vide). Maximum 600 caractères. Ce paramètre ne peut pas être utilisé en même temps que `image_style`. | STRING | Oui | - |
+| `style_image` | Une image 2D pour guider le processus de texturation. Ne peut pas être utilisée en même temps que `text_style_prompt`. | IMAGE | Non | - |
 | `texture_resolution` | Résolution de la texture de couleur de base. Des résolutions plus élevées capturent davantage de détails de surface. | COMBO | Oui | `"2k"`<br>`"4k"`<br>`"8k"` |
 
 **Contraintes des paramètres :**

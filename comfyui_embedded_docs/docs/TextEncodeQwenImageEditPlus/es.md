@@ -9,9 +9,9 @@ El nodo TextEncodeQwenImageEditPlus procesa un prompt de texto y hasta tres imá
 | `clip` | El modelo CLIP utilizado para la tokenización y codificación | CLIP | Sí | - |
 | `prompt` | Instrucción de texto que describe la modificación de imagen deseada (admite entrada multilínea y prompts dinámicos) | STRING | Sí | - |
 | `vae` | Modelo VAE opcional para generar latentes de referencia a partir de las imágenes de entrada | VAE | No | - |
-| `image1` | Primera imagen de entrada opcional para análisis y modificación | IMAGE | No | - |
-| `image2` | Segunda imagen de entrada opcional para análisis y modificación | IMAGE | No | - |
-| `image3` | Tercera imagen de entrada opcional para análisis y modificación | IMAGE | No | - |
+| `imagen1` | Primera imagen de entrada opcional para análisis y modificación | IMAGE | No | - |
+| `imagen2` | Segunda imagen de entrada opcional para análisis y modificación | IMAGE | No | - |
+| `imagen3` | Tercera imagen de entrada opcional para análisis y modificación | IMAGE | No | - |
 
 **Nota:** Cuando se proporciona una VAE, el nodo genera latentes de referencia a partir de todas las imágenes de entrada proporcionadas. Se pueden procesar hasta tres imágenes a la vez. Las imágenes se escalan a un área objetivo de 384x384 píxeles (relación de aspecto preservada) para el procesamiento de visión-lenguaje, y a dimensiones divisibles por 8 (con un área objetivo de 1024x1024 píxeles) para la codificación VAE.
 

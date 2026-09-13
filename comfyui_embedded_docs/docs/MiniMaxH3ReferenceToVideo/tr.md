@@ -10,14 +10,14 @@ MiniMax H3 Reference to Video, MiniMax H3 referanstan videoya üretimi için ger
 | `vae` | Video VAE. Bu olmadan referans görseller/videolar yalnızca metin kodlayıcıyı koşullandırır. | VAE | Hayır | |
 | `audio_vae` | Ses VAE. Bu olmadan referans ses yalnızca metin kodlayıcıyı koşullandırır. | VAE | Hayır | |
 | `prompt` | Video için metin istemi. Referans medyaya `<Picture i>`, `<Video k>` ve `<Audio j>` etiketleriyle atıfta bulunulabilir (her tür için 1 tabanlı). Çok satırlı ve dinamik istemleri destekler. | STRING | Evet | |
-| `width` | Oluşturulan videonun piksel cinsinden genişliği (varsayılan: 1344). | INT | Evet | 32 ile 16384 (adım: 32) |
-| `height` | Oluşturulan videonun piksel cinsinden yüksekliği (varsayılan: 768). | INT | Evet | 32 ile 16384 (adım: 32) |
-| `length` | 24 fps'te kare sayısı, (124 = ~5 sn, eğitilmiş aralık ~124-362) (varsayılan: 124). | INT | Evet | 5 ile 3600 (adım: 17) |
-| `ref_image_size` | Referans görsel boyutlandırma. `match`, her referansı (yalnızca küçültme, en boy oranını koruyarak) üretimin piksel alanına ölçekler; `max`, en iyi kimlik sadakati için referans işlem hattının 2048 piksel kısa kenarını kullanır. Referans tokenları her örnekleme adımından geçer, bu nedenle `max` birkaç kat daha yavaş olabilir (varsayılan: `match`). | COMBO | Evet | `"match"`<br>`"max"` |
-| `ref_images` | Genişletilebilir yuva: 9 adede kadar referans görsel bağlayın (`ref_image_1` ... `ref_image_9`). Referans görsel (daha büyükse 2048 kısa kenara küçültülür, asla büyütülmez). | IMAGE | Hayır | 0 ile 9 |
-| `ref_videos` | Genişletilebilir yuva: 3 adede kadar referans video bağlayın (`ref_video_1` ... `ref_video_3`). 24 fps'te referans video kareleri (2-15 sn). | IMAGE | Hayır | 0 ile 3 |
-| `ref_video_audios` | Genişletilebilir yuva: 3 adede kadar ses parçası bağlayın (`ref_video_audio_1` ... `ref_video_audio_3`). Aynı numaralı referans videonun ses parçası. | AUDIO | Hayır | 0 ile 3 |
-| `ref_audios` | Genişletilebilir yuva: 3 adede kadar bağımsız referans ses klibi bağlayın (`ref_audio_1` ... `ref_audio_3`). Bağımsız referans sesi. | AUDIO | Hayır | 0 ile 3 |
+| `genişlik` | Oluşturulan videonun piksel cinsinden genişliği (varsayılan: 1344). | INT | Evet | 32 ile 16384 (adım: 32) |
+| `yükseklik` | Oluşturulan videonun piksel cinsinden yüksekliği (varsayılan: 768). | INT | Evet | 32 ile 16384 (adım: 32) |
+| `uzunluk` | 24 fps'te kare sayısı, (124 = ~5 sn, eğitilmiş aralık ~124-362) (varsayılan: 124). | INT | Evet | 5 ile 3600 (adım: 17) |
+| `ref_görüntü_boyutu` | Referans görsel boyutlandırma. `match`, her referansı (yalnızca küçültme, en boy oranını koruyarak) üretimin piksel alanına ölçekler; `max`, en iyi kimlik sadakati için referans işlem hattının 2048 piksel kısa kenarını kullanır. Referans tokenları her örnekleme adımından geçer, bu nedenle `max` birkaç kat daha yavaş olabilir (varsayılan: `match`). | COMBO | Evet | `"match"`<br>`"max"` |
+| `ref_görüntüler` | Genişletilebilir yuva: 9 adede kadar referans görsel bağlayın (`ref_image_1` ... `ref_image_9`). Referans görsel (daha büyükse 2048 kısa kenara küçültülür, asla büyütülmez). | IMAGE | Hayır | 0 ile 9 |
+| `ref_videolar` | Genişletilebilir yuva: 3 adede kadar referans video bağlayın (`ref_video_1` ... `ref_video_3`). 24 fps'te referans video kareleri (2-15 sn). | IMAGE | Hayır | 0 ile 3 |
+| `ref_video_sesleri` | Genişletilebilir yuva: 3 adede kadar ses parçası bağlayın (`ref_video_audio_1` ... `ref_video_audio_3`). Aynı numaralı referans videonun ses parçası. | AUDIO | Hayır | 0 ile 3 |
+| `ref_sesler` | Genişletilebilir yuva: 3 adede kadar bağımsız referans ses klibi bağlayın (`ref_audio_1` ... `ref_audio_3`). Bağımsız referans sesi. | AUDIO | Hayır | 0 ile 3 |
 
 Notlar:
 

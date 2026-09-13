@@ -7,11 +7,11 @@ Este nodo genera un video que sigue una pista de audio usando el modelo LTX 2.5.
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
 | `audio` | Pista de audio que impulsa el video. Su duración (2-20 segundos) establece la duración del video. | AUDIO | Sí | 2-20 segundos |
-| `model` | La versión del modelo LTX 2.5 a usar. Seleccionar un modelo también revela la subopción `resolution` para ese modelo. | COMBO | Sí | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
+| `modelo` | La versión del modelo LTX 2.5 a usar. Seleccionar un modelo también revela la subopción `resolution` para ese modelo. | COMBO | Sí | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
 | `resolution` | La resolución de salida del video generado. Esta subopción se muestra bajo el `model` seleccionado (predeterminado: "1920x1080"). Ambos modelos ofrecen las mismas opciones de resolución. | COMBO | Sí | "1920x1080"<br>"1080x1920" |
 | `prompt` | Una descripción de texto que guía el contenido del video generado (predeterminado: ""). Debe contener al menos 1 carácter y como máximo 10000 caracteres. | STRING | Sí | 1-10000 caracteres |
-| `seed` | Un número que controla la aleatoriedad de la generación. La misma semilla produce el mismo resultado (predeterminado: 42). | INT | Sí | Cualquier entero |
-| `image` | Primer fotograma opcional que se usará para el video. Solo se admite una imagen. | IMAGE | No | Una sola imagen |
+| `semilla` | Un número que controla la aleatoriedad de la generación. La misma semilla produce el mismo resultado (predeterminado: 42). | INT | Sí | Cualquier entero |
+| `imagen` | Primer fotograma opcional que se usará para el video. Solo se admite una imagen. | IMAGE | No | Una sola imagen |
 
 Notas sobre las restricciones:
 - La duración del audio debe estar entre 2 y 20 segundos; el nodo genera un error si está fuera de este rango.

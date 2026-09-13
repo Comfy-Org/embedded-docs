@@ -6,15 +6,15 @@ WanHuMoImageToVideo düğümü, Wan HuMo video üretim hattı için koşullandı
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `positive` | Video oluşturmayı istenen içeriğe doğru yönlendiren pozitif koşullandırma girdisi. | CONDITIONING | Evet | - |
-| `negative` | Video oluşturmayı istenmeyen içerikten uzaklaştıran negatif koşullandırma girdisi. | CONDITIONING | Evet | - |
+| `pozitif` | Video oluşturmayı istenen içeriğe doğru yönlendiren pozitif koşullandırma girdisi. | CONDITIONING | Evet | - |
+| `negatif` | Video oluşturmayı istenmeyen içerikten uzaklaştıran negatif koşullandırma girdisi. | CONDITIONING | Evet | - |
 | `vae` | Referans görüntülerini latent uzaya kodlamak için kullanılan VAE modeli. | VAE | Evet | - |
-| `width` | Çıktı video karelerinin piksel cinsinden genişliği. Varsayılan: 832. | INT | Evet | 16 - MAX_RESOLUTION, adım 16 |
-| `height` | Çıktı video karelerinin piksel cinsinden yüksekliği. Varsayılan: 480. | INT | Evet | 16 - MAX_RESOLUTION, adım 16 |
-| `length` | Oluşturulan video dizisindeki kare sayısı. Varsayılan: 97. | INT | Evet | 1 - MAX_RESOLUTION, adım 4 |
-| `batch_size` | Aynı anda oluşturulacak video dizisi sayısı. Varsayılan: 1. | INT | Evet | 1 - 4096 |
-| `audio_encoder_output` | Ses içeriğine göre video oluşturmayı etkileyebilen isteğe bağlı ses kodlama verisi. | AUDIOENCODEROUTPUT | Hayır | - |
-| `ref_image` | Video oluşturmanın stilini ve içeriğini yönlendirmek için kullanılan isteğe bağlı referans görüntüsü. Gruptaki yalnızca ilk görüntü kullanılır. | IMAGE | Hayır | - |
+| `genişlik` | Çıktı video karelerinin piksel cinsinden genişliği. Varsayılan: 832. | INT | Evet | 16 - MAX_RESOLUTION, adım 16 |
+| `yükseklik` | Çıktı video karelerinin piksel cinsinden yüksekliği. Varsayılan: 480. | INT | Evet | 16 - MAX_RESOLUTION, adım 16 |
+| `uzunluk` | Oluşturulan video dizisindeki kare sayısı. Varsayılan: 97. | INT | Evet | 1 - MAX_RESOLUTION, adım 4 |
+| `toplu_iş_boyutu` | Aynı anda oluşturulacak video dizisi sayısı. Varsayılan: 1. | INT | Evet | 1 - 4096 |
+| `ses_kodlayıcı_çıktısı` | Ses içeriğine göre video oluşturmayı etkileyebilen isteğe bağlı ses kodlama verisi. | AUDIOENCODEROUTPUT | Hayır | - |
+| `referans_görsel` | Video oluşturmanın stilini ve içeriğini yönlendirmek için kullanılan isteğe bağlı referans görüntüsü. Gruptaki yalnızca ilk görüntü kullanılır. | IMAGE | Hayır | - |
 
 **Not:** Bir referans görüntüsü sağlandığında, gruptaki ilk görüntü bilineer interpolasyon kullanılarak istenen `width` ve `height` değerlerine büyütülür ve VAE ile kodlanır. Bu referans latent, pozitif koşullandırmaya eklenir; aynı şekle sahip sıfırla doldurulmuş bir latent ise negatif koşullandırmaya eklenir. `audio_encoder_output` sağlandığında, ses gömme vektörleri enterpolasyon yapılır ve pozitif koşullandırmaya eklenir; sıfırla doldurulmuş bir ses gömme vektörü ise negatif koşullandırmaya eklenir. İsteğe bağlı girdilerden biri atlanırsa, sıfırla doldurulmuş yer tutucu tensörler kullanılır: `[batch_size, 16, 1, height // 8, width // 8]` şeklinde sıfır bir referans latent ve/veya `[batch_size, latent_t + 1, 8, 5, 1280]` şeklinde sıfır ses gömme vektörleri; burada `latent_t = ((length - 1) // 4) + 1`.
 

@@ -6,10 +6,10 @@ Este nodo guarda un archivo de checkpoint que empaqueta un modelo junto con su c
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo que se guardará en el checkpoint | MODEL | Sí | - |
+| `modelo` | El modelo que se guardará en el checkpoint | MODEL | Sí | - |
 | `clip_vision` | El codificador de visión CLIP que se guardará en el checkpoint | CLIP_VISION | Sí | - |
 | `vae` | El VAE (autoencoder variacional) que se guardará en el checkpoint | VAE | Sí | - |
-| `filename_prefix` | El prefijo para el nombre del archivo de salida (predeterminado: "checkpoints/ComfyUI") | STRING | Sí | - |
+| `prefijo_nombre_archivo` | El prefijo para el nombre del archivo de salida (predeterminado: "checkpoints/ComfyUI") | STRING | Sí | - |
 | `prompt` | Parámetro oculto que recibe los datos del prompt del flujo de trabajo | PROMPT | No | - |
 | `extra_pnginfo` | Parámetro oculto que recibe metadatos PNG adicionales | EXTRA_PNGINFO | No | - |
 

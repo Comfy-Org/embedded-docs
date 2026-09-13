@@ -6,7 +6,7 @@ Bir difüzyon modeli checkpoint dosyasını yükler ve onu üç temel bileşene 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `ckpt_name` | Yüklenecek checkpoint (model) adı. Sonraki görüntü üretiminde kullanılacak AI modelini belirleyen checkpoint model dosyası adını seçin. | COMBO | Evet | checkpoints klasöründe bulunan tüm model dosyaları |
+| `ckpt_adı` | Yüklenecek checkpoint (model) adı. Sonraki görüntü üretiminde kullanılacak AI modelini belirleyen checkpoint model dosyası adını seçin. | COMBO | Evet | checkpoints klasöründe bulunan tüm model dosyaları |
 
 **Not:** ComfyUI çalışırken yeni model dosyaları eklenirse, açılır listede yeni dosyaları görebilmek için tarayıcıyı yenilemeniz (Ctrl+R) gerekir.
 

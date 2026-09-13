@@ -6,20 +6,20 @@ O nó WanSCAILToVideo prepara o condicionamento e um espaço latente vazio para 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | A entrada de condicionamento positivo. | CONDITIONING | Sim | - |
-| `negative` | A entrada de condicionamento negativo. | CONDITIONING | Sim | - |
+| `positivo` | A entrada de condicionamento positivo. | CONDITIONING | Sim | - |
+| `negativo` | A entrada de condicionamento negativo. | CONDITIONING | Sim | - |
 | `vae` | O modelo VAE usado para codificar imagens e quadros de vídeo. | VAE | Sim | - |
-| `width` | A largura do vídeo de saída em pixels (padrão: 512). Os valores variam em incrementos de 32. | INT | Sim | 32 a MAX_RESOLUTION |
-| `height` | A altura do vídeo de saída em pixels (padrão: 896). Os valores variam em incrementos de 32. | INT | Sim | 32 a MAX_RESOLUTION |
-| `length` | O número de quadros no vídeo (padrão: 81). Os valores variam em incrementos de 4. | INT | Sim | 1 a MAX_RESOLUTION |
-| `batch_size` | O número de vídeos a gerar em um lote (padrão: 1). | INT | Sim | 1 a 4096 |
-| `pose_video` | Vídeo usado para condicionamento de pose. Será reduzido à metade da resolução do vídeo principal. | IMAGE | Não | - |
+| `largura` | A largura do vídeo de saída em pixels (padrão: 512). Os valores variam em incrementos de 32. | INT | Sim | 32 a MAX_RESOLUTION |
+| `altura` | A altura do vídeo de saída em pixels (padrão: 896). Os valores variam em incrementos de 32. | INT | Sim | 32 a MAX_RESOLUTION |
+| `duração` | O número de quadros no vídeo (padrão: 81). Os valores variam em incrementos de 4. | INT | Sim | 1 a MAX_RESOLUTION |
+| `tamanho_do_lote` | O número de vídeos a gerar em um lote (padrão: 1). | INT | Sim | 1 a 4096 |
+| `vídeo_de_pose` | Vídeo usado para condicionamento de pose. Será reduzido à metade da resolução do vídeo principal. | IMAGE | Não | - |
 | `pose_video_mask` | Apenas SCAIL-2. Vídeo de máscara SAM3 colorida por identidade na mesma resolução que `pose_video`. | IMAGE | Não | - |
 | `replacement_mode` | Apenas SCAIL-2. False = Modo Animação (`pose_video_mask` deve ter fundo preto). True = Modo Substituição (`pose_video_mask` deve ter fundo branco). (padrão: False) | BOOLEAN | Não | - |
-| `pose_strength` | Força do latente de pose. (padrão: 1.0) | FLOAT | Sim | 0.0 a 10.0 |
-| `pose_start` | Etapa inicial do condicionamento de pose. (padrão: 0.0) | FLOAT | Sim | 0.0 a 1.0 |
-| `pose_end` | Etapa final do condicionamento de pose. (padrão: 1.0) | FLOAT | Sim | 0.0 a 1.0 |
-| `reference_image` | Imagem de referência. A primeira imagem é a referência primária (compõe todas as identidades sobre ela). SCAIL-2: imagens extras no lote são usadas como vistas adicionais (vista traseira, close-up, fundo ocluído), cada uma precisando de uma `reference_image_mask` correspondente na cor daquela identidade. | IMAGE | Não | - |
+| `força_da_pose` | Força do latente de pose. (padrão: 1.0) | FLOAT | Sim | 0.0 a 10.0 |
+| `início_da_pose` | Etapa inicial do condicionamento de pose. (padrão: 0.0) | FLOAT | Sim | 0.0 a 1.0 |
+| `fim_da_pose` | Etapa final do condicionamento de pose. (padrão: 1.0) | FLOAT | Sim | 0.0 a 1.0 |
+| `imagem_de_referência` | Imagem de referência. A primeira imagem é a referência primária (compõe todas as identidades sobre ela). SCAIL-2: imagens extras no lote são usadas como vistas adicionais (vista traseira, close-up, fundo ocluído), cada uma precisando de uma `reference_image_mask` correspondente na cor daquela identidade. | IMAGE | Não | - |
 | `reference_image_mask` | Apenas SCAIL-2. Máscara de referência colorida, com lote correspondente a `reference_image` (primeira = máscara de referência primária, restantes = máscaras de identidade para as `reference_image` adicionais). | IMAGE | Não | - |
 | `clip_vision_output` | Recursos de visão CLIP para condicionamento. O modelo é treinado com redimensionamento por alongamento para a proporção de aspecto. | CLIP_VISION_OUTPUT | Não | - |
 | `video_frame_offset` | Quadro de saída cumulativo no qual este bloco começa. Conecte a partir da saída `video_frame_offset` do bloco anterior. (padrão: 0) | INT | Sim | 0 a MAX_RESOLUTION |

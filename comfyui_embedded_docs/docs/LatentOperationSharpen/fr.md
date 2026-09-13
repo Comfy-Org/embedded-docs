@@ -6,7 +6,7 @@ Le nœud `LatentOperationSharpen` crée une opération d’accentuation pour les
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `sharpen_radius` | Le rayon du noyau d’accentuation, qui contrôle la taille de la zone utilisée pour l’accentuation (par défaut : 9) | INT | Oui | 1-31 |
+| `rayon_d'affûtage` | Le rayon du noyau d’accentuation, qui contrôle la taille de la zone utilisée pour l’accentuation (par défaut : 9) | INT | Oui | 1-31 |
 | `sigma` | L’écart type du noyau gaussien utilisé pour construire le noyau d’accentuation (par défaut : 1.0) | FLOAT | Oui | 0.1-10.0 |
 | `alpha` | Le facteur d’intensité de l’accentuation ; des valeurs plus élevées produisent un effet d’accentuation plus fort (par défaut : 0.1) | FLOAT | Oui | 0.0-5.0 |
 

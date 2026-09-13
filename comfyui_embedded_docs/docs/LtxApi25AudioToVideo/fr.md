@@ -7,7 +7,7 @@ Ce nœud génère une vidéo qui suit une piste audio à l'aide du modèle LTX 2
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `audio` | Piste audio qui pilote la vidéo. Sa durée (2-20 secondes) définit la durée de la vidéo. | AUDIO | Oui | 2-20 secondes |
-| `model` | Version du modèle LTX 2.5 à utiliser. La sélection d'un modèle révèle également la sous-option `resolution` pour ce modèle. | COMBO | Oui | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
+| `modèle` | Version du modèle LTX 2.5 à utiliser. La sélection d'un modèle révèle également la sous-option `resolution` pour ce modèle. | COMBO | Oui | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
 | `resolution` | Résolution de sortie de la vidéo générée. Cette sous-option est affichée sous le `model` sélectionné (par défaut : "1920x1080"). Les deux modèles offrent les mêmes options de résolution. | COMBO | Oui | "1920x1080"<br>"1080x1920" |
 | `prompt` | Description textuelle qui guide le contenu de la vidéo générée (par défaut : ""). Doit contenir au moins 1 caractère et au plus 10000 caractères. | STRING | Oui | 1-10000 caractères |
 | `seed` | Un nombre qui contrôle le caractère aléatoire de la génération. La même graine produit le même résultat (par défaut : 42). | INT | Oui | Tout entier |

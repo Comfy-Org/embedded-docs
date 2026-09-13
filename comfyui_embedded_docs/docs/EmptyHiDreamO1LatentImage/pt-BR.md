@@ -6,9 +6,9 @@ Este nó cria uma imagem latente vazia no espaço de pixels para o modelo HiDrea
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `width` | A largura da imagem latente em pixels. Padrão: 2048. O valor deve ser múltiplo de 32. O modelo foi treinado com cerca de 4 megapixels; resoluções menores podem reduzir a qualidade de forma perceptível. | INT | Sim | 64 a 4096 (step: 32) |
-| `height` | A altura da imagem latente em pixels. Padrão: 2048. O valor deve ser múltiplo de 32. O modelo foi treinado com cerca de 4 megapixels; resoluções menores podem reduzir a qualidade de forma perceptível. | INT | Sim | 64 a 4096 (step: 32) |
-| `batch_size` | O número de imagens latentes a serem geradas em um único lote. Padrão: 1. | INT | Sim | 1 a 64 |
+| `largura` | A largura da imagem latente em pixels. Padrão: 2048. O valor deve ser múltiplo de 32. O modelo foi treinado com cerca de 4 megapixels; resoluções menores podem reduzir a qualidade de forma perceptível. | INT | Sim | 64 a 4096 (step: 32) |
+| `altura` | A altura da imagem latente em pixels. Padrão: 2048. O valor deve ser múltiplo de 32. O modelo foi treinado com cerca de 4 megapixels; resoluções menores podem reduzir a qualidade de forma perceptível. | INT | Sim | 64 a 4096 (step: 32) |
+| `tamanho_do_lote` | O número de imagens latentes a serem geradas em um único lote. Padrão: 1. | INT | Sim | 1 a 64 |
 
 ## Saídas
 

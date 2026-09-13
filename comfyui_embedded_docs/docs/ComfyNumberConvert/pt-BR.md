@@ -6,7 +6,7 @@ O nó Number Convert transforma vários tipos de dados de entrada em valores num
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `value` | O valor a ser convertido em saídas numéricas. Aceita um número inteiro, um número de ponto flutuante, uma string de texto ou um booleano true/false. | INT, FLOAT, STRING, BOOLEAN | Sim | N/A |
+| `valor` | O valor a ser convertido em saídas numéricas. Aceita um número inteiro, um número de ponto flutuante, uma string de texto ou um booleano true/false. | INT, FLOAT, STRING, BOOLEAN | Sim | N/A |
 
 **Observação:** Quando a entrada é uma string, ela não pode estar vazia e deve conter uma representação válida de um número (por exemplo, `"123"`, `"3.14"`). O nó gerará um erro para strings vazias, texto que não puder ser interpretado como número ou valores que não forem finitos (como `"inf"` ou `"nan"`). Para entradas booleanas, `true` é convertido para 1.0 (FLOAT) e 1 (INT), enquanto `false` é convertido para 0.0 (FLOAT) e 0 (INT). Para entradas de ponto flutuante e para strings que contêm um número decimal, a saída INT é obtida truncando a parte decimal.
 

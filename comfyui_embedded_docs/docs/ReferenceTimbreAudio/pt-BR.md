@@ -6,8 +6,8 @@ Este nó define o áudio de referência para o processo "ace step 1.5". Ele rece
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Os dados de condicionamento aos quais as informações de áudio de referência serão anexadas. | CONDITIONING | Sim |  |
-| `latent` | Uma representação latente opcional do áudio de referência (padrão: None). Quando fornecida, suas amostras são anexadas ao condicionamento como latents de timbre de áudio de referência. | LATENT | Não |  |
+| `condicionamento` | Os dados de condicionamento aos quais as informações de áudio de referência serão anexadas. | CONDITIONING | Sim |  |
+| `latente` | Uma representação latente opcional do áudio de referência (padrão: None). Quando fornecida, suas amostras são anexadas ao condicionamento como latents de timbre de áudio de referência. | LATENT | Não |  |
 
 ## Saídas
 

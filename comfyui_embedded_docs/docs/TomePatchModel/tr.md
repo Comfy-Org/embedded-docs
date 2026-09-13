@@ -7,7 +7,7 @@ TomePatchModel, çıkarım sırasında hesaplama maliyetini azaltmak için bir d
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Token birleştirmenin uygulanacağı difüzyon modeli | MODEL | Evet | - |
-| `ratio` | Birleştirilecek token oranı (varsayılan: 0.3). Daha yüksek değerler daha fazla token birleştirir; bu daha büyük hızlanma sağlayabilir ancak potansiyel olarak kaliteyi düşürebilir. | FLOAT | Evet | 0.0 - 1.0 |
+| `oran` | Birleştirilecek token oranı (varsayılan: 0.3). Daha yüksek değerler daha fazla token birleştirir; bu daha büyük hızlanma sağlayabilir ancak potansiyel olarak kaliteyi düşürebilir. | FLOAT | Evet | 0.0 - 1.0 |
 
 Not: Bir dikkat bloğundaki token sayısı, alt örnekleme gerekmeyecek kadar küçükse, birleştirme işlevleri no-op'larla değiştirilir ve model o blok için değişmeden çalışır.
 

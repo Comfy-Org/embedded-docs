@@ -7,8 +7,8 @@ Este nodo normaliza los colores de una imagen de entrada ajustando sus valores d
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
 | `image` | La imagen de entrada que se va a normalizar. | IMAGE | Sí | - |
-| `mean` | Valor de la media para la normalización (predeterminado: 0.5). | FLOAT | No | 0.0 - 1.0 |
-| `std` | Desviación estándar para la normalización (predeterminado: 0.5). | FLOAT | No | 0.001 - 1.0 |
+| `media` | Valor de la media para la normalización (predeterminado: 0.5). | FLOAT | No | 0.0 - 1.0 |
+| `desviación estándar` | Desviación estándar para la normalización (predeterminado: 0.5). | FLOAT | No | 0.001 - 1.0 |
 
 Los parámetros `mean` y `std` controlan la normalización aplicada a la imagen de entrada. El valor predeterminado para ambos parámetros es 0.5.
 

@@ -8,15 +8,15 @@ Düz metinle açıklanan farklı bir nesneyle bir görüntüdeki nesneyi değiş
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Değiştirilecek nesneyi içeren görüntü. Görüntü yüklenmeden önce alfa kanalı kaldırılır. | IMAGE | Evet | - |
-| `instruction` | Neyin neyle değiştirileceği, örneğin "Kırmızı elmayı yeşil bir armutla değiştir". En az 1 karakter uzunluğunda olmalıdır. | STRING | Evet | Çok satırlı metin; varsayılan: "" (boş) |
+| `görüntü` | Değiştirilecek nesneyi içeren görüntü. Görüntü yüklenmeden önce alfa kanalı kaldırılır. | IMAGE | Evet | - |
+| `talimat` | Neyin neyle değiştirileceği, örneğin "Kırmızı elmayı yeşil bir armutla değiştir". En az 1 karakter uzunluğunda olmalıdır. | STRING | Evet | Çok satırlı metin; varsayılan: "" (boş) |
 | `seed` | Bria burada seed kabul etmez ve düzenlemeyi her çağrıda yeniden yorumlar; bu nedenle tekrarlanan çalıştırmalar farklılık gösterebilir. Değer hiçbir zaman gönderilmez: yalnızca bu düğümün önbellek anahtarını değiştirir; böylece aksi halde aynı olan bir grafik, önbelleğe alınmış sonucu döndürmek yerine düzenlemeyi yeniden çalıştırır. | INT | Evet | 0 ile 2147483647 arası, adım 1; varsayılan: 42; oluşturma sonrası denetim etkin |
 
 ### Moderasyon Girdileri
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `moderation` | Moderasyon ayarları. "true" seçildiğinde, aksi halde gösterilmeyen aşağıdaki moderasyon alt seçenekleri görünür. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
+| `moderasyon` | Moderasyon ayarları. "true" seçildiğinde, aksi halde gösterilmeyen aşağıdaki moderasyon alt seçenekleri görünür. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
 | `visual_input_moderation` | Girdi görüntüsünün moderasyonunu etkinleştirir. Yalnızca `moderation` "true" olarak ayarlandığında kullanılabilir. | BOOLEAN | Hayır | `true` / `false`; varsayılan: false |
 | `visual_output_moderation` | Oluşturulan çıktı görüntüsünün moderasyonunu etkinleştirir. Yalnızca `moderation` "true" olarak ayarlandığında kullanılabilir. | BOOLEAN | Hayır | `true` / `false`; varsayılan: false |
 

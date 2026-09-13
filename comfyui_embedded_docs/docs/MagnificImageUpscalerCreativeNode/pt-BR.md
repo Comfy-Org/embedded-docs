@@ -6,16 +6,16 @@ Este nó usa o serviço Magnific AI para ampliar e aprimorar criativamente uma i
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A imagem de entrada a ser ampliada e aprimorada. | IMAGE | Sim | - |
+| `imagem` | A imagem de entrada a ser ampliada e aprimorada. | IMAGE | Sim | - |
 | `prompt` | Uma descrição textual para orientar o aprimoramento criativo da imagem. O padrão é uma string vazia (nesse caso, nenhum prompt é enviado). | STRING | Sim | - |
-| `scale_factor` | O fator pelo qual as dimensões da imagem serão ampliadas. | COMBO | Sim | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` |
-| `optimized_for` | O estilo ou tipo de conteúdo para o qual otimizar o processo de aprimoramento. | COMBO | Sim | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` |
-| `creativity` | Controla o nível de interpretação criativa aplicada à imagem (padrão: 0). | INT | Sim | -10 a 10 |
+| `fator de escala` | O fator pelo qual as dimensões da imagem serão ampliadas. | COMBO | Sim | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` |
+| `otimizado para` | O estilo ou tipo de conteúdo para o qual otimizar o processo de aprimoramento. | COMBO | Sim | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` |
+| `criatividade` | Controla o nível de interpretação criativa aplicada à imagem (padrão: 0). | INT | Sim | -10 a 10 |
 | `hdr` | O nível de definição e detalhe (padrão: 0). | INT | Sim | -10 a 10 |
-| `resemblance` | O nível de semelhança com a imagem original (padrão: 0). | INT | Sim | -10 a 10 |
-| `fractality` | A força do prompt e a complexidade por pixel quadrado (padrão: 0). | INT | Sim | -10 a 10 |
+| `semelhança` | O nível de semelhança com a imagem original (padrão: 0). | INT | Sim | -10 a 10 |
+| `fractalidade` | A força do prompt e a complexidade por pixel quadrado (padrão: 0). | INT | Sim | -10 a 10 |
 | `engine` | O mecanismo de IA específico a ser usado para o processamento. Este é um parâmetro avançado. | COMBO | Sim | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` |
-| `auto_downscale` | Reduz automaticamente a escala da imagem de entrada se a saída exceder o limite máximo de pixels (padrão: False). Este é um parâmetro avançado. | BOOLEAN | Sim | - |
+| `redução automática` | Reduz automaticamente a escala da imagem de entrada se a saída exceder o limite máximo de pixels (padrão: False). Este é um parâmetro avançado. | BOOLEAN | Sim | - |
 
 **Restrições:**
 

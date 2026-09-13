@@ -6,10 +6,10 @@ Bu düğüm, HunyuanVideo 1.5 modeliyle kullanılmak üzere özel olarak biçiml
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `width` | Video karesinin piksel cinsinden genişliği. | INT | Evet | - |
-| `height` | Video karesinin piksel cinsinden yüksekliği. | INT | Evet | - |
-| `length` | Video dizisindeki kare sayısı. | INT | Evet | - |
-| `batch_size` | Bir toplu işte oluşturulacak video örneği sayısı (varsayılan: 1). | INT | Hayır | - |
+| `genişlik` | Video karesinin piksel cinsinden genişliği. | INT | Evet | - |
+| `yükseklik` | Video karesinin piksel cinsinden yüksekliği. | INT | Evet | - |
+| `uzunluk` | Video dizisindeki kare sayısı. | INT | Evet | - |
+| `toplu_boyut` | Bir toplu işte oluşturulacak video örneği sayısı (varsayılan: 1). | INT | Hayır | - |
 
 **Not:** Oluşturulan latent tensörün uzamsal boyutları, `width` ve `height` girdilerinin 16'ya bölünmesiyle hesaplanır (bu düğüm 8 yerine 16 uzamsal ölçek faktörü kullanır). Zamansal boyut (kareler) `((length - 1) // 4) + 1` olarak hesaplanır. Bu hesaplamalar tamsayı bölmesi kullanır; bu nedenle kesilme olmaması için `width` ve `height` 16'nın katları olmalıdır.
 

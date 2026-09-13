@@ -7,10 +7,10 @@ ChromaRadianceOptions düğümü, Chroma Radiance modeli için gelişmiş ayarla
 | Parametre | Açıklama | Veri Tipi | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Chroma Radiance seçeneklerinin uygulanacağı model | MODEL | Evet | - |
-| `preserve_wrapper` | Etkinleştirildiğinde, varsa mevcut bir model işlevi sarmalayıcısına devreder. Genellikle etkin bırakılmalıdır. (varsayılan: True) | BOOLEAN | Hayır | - |
-| `start_sigma` | Bu seçeneklerin etkili olacağı ilk sigma. (varsayılan: 1.0) | FLOAT | Hayır | 0.0 - 1.0 |
-| `end_sigma` | Bu seçeneklerin etkili olacağı son sigma. (varsayılan: 0.0) | FLOAT | Hayır | 0.0 - 1.0 |
-| `nerf_tile_size` | Varsayılan NeRF döşeme boyutunun geçersiz kılınmasına olanak tanır. -1, varsayılanı (32) kullan anlamına gelir. 0, döşemesiz modu kullan anlamına gelir (çok fazla VRAM gerektirebilir). (varsayılan: -1) | INT | Hayır | -1 ve üzeri |
+| `sarmalayıcıyı koru` | Etkinleştirildiğinde, varsa mevcut bir model işlevi sarmalayıcısına devreder. Genellikle etkin bırakılmalıdır. (varsayılan: True) | BOOLEAN | Hayır | - |
+| `başlangıç sigma` | Bu seçeneklerin etkili olacağı ilk sigma. (varsayılan: 1.0) | FLOAT | Hayır | 0.0 - 1.0 |
+| `bitiş sigma` | Bu seçeneklerin etkili olacağı son sigma. (varsayılan: 0.0) | FLOAT | Hayır | 0.0 - 1.0 |
+| `nerf döşeme boyutu` | Varsayılan NeRF döşeme boyutunun geçersiz kılınmasına olanak tanır. -1, varsayılanı (32) kullan anlamına gelir. 0, döşemesiz modu kullan anlamına gelir (çok fazla VRAM gerektirebilir). (varsayılan: -1) | INT | Hayır | -1 ve üzeri |
 | `force_sequential_txt_ids` | Sıfırlar yerine sıralı metin token kimliklerinin kullanımını zorlar. 2026-05-22 ile 2026-06-01 arasındaki, bu şekilde eğitilmiş ancak state dict içinde __sequential__ anahtarını içermeyen checkpoint'ler için kullanılmalıdır. (varsayılan: False) | BOOLEAN | Hayır | - |
 
 **Not:** Chroma Radiance seçenekleri yalnızca geçerli sigma değeri `end_sigma` ile `start_sigma` arasında (dahil) olduğunda etkili olur. `nerf_tile_size` seçeneği yalnızca 0 veya daha yüksek bir değere ayarlandığında uygulanır (-1 değeri varsayılan 32 döşeme boyutunu kullanır ve herhangi bir geçersiz kılma saklamaz). `force_sequential_txt_ids` seçeneği yalnızca True olarak ayarlandığında uygulanır. `nerf_tile_size` -1 olduğunda ve `force_sequential_txt_ids` False olduğunda, hiçbir seçenek yapılandırılmaz ve model herhangi bir sarmalayıcı uygulanmadan değiştirilmeden döndürülür.

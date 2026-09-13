@@ -8,8 +8,8 @@ Este nó repara fotografias antigas ou danificadas por meio da API da Bria. Ele 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A fotografia a ser reparada. O canal alfa é descartado antes do upload. | IMAGE | Sim | - |
-| `moderation` | Configurações de moderação para a solicitação. Selecionar `"true"` revela dois controles booleanos adicionais; selecionar `"false"` não envia sinalizadores de moderação. Padrão: `"false"`. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
+| `imagem` | A fotografia a ser reparada. O canal alfa é descartado antes do upload. | IMAGE | Sim | - |
+| `moderação` | Configurações de moderação para a solicitação. Selecionar `"true"` revela dois controles booleanos adicionais; selecionar `"false"` não envia sinalizadores de moderação. Padrão: `"false"`. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
 
 ### Entradas de moderação
 

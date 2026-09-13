@@ -7,7 +7,7 @@ Le nœud SplitSigmasDenoise divise une séquence de valeurs sigma en deux partie
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `sigmas` | La séquence d'entrée de valeurs sigma représentant le programme de bruit | SIGMAS | Oui | - |
-| `denoise` | Le facteur de force de débruitage qui détermine où diviser la séquence sigma (par défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas : 0.01) |
+| `réduction_du_bruit` | Le facteur de force de débruitage qui détermine où diviser la séquence sigma (par défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas : 0.01) |
 
 ## Sorties
 

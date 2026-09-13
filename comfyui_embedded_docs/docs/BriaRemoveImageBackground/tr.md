@@ -10,9 +10,9 @@ Bu düğüm, Bria RMBG 2.0 hizmetini kullanarak bir görüntünün arka planın�
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Arka planın kaldırılacağı giriş görüntüsü. | IMAGE | Evet | - |
-| `moderation` | Moderasyon ayarları. `"true"` olarak ayarlandığında ek moderasyon seçenekleri kullanılabilir hale gelir. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
-| `seed` | `seed`, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. Varsayılan: `0`. | INT | Evet | 0 - 2147483647 |
+| `görsel` | Arka planın kaldırılacağı giriş görüntüsü. | IMAGE | Evet | - |
+| `moderasyon` | Moderasyon ayarları. `"true"` olarak ayarlandığında ek moderasyon seçenekleri kullanılabilir hale gelir. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
+| `tohum` | `seed`, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. Varsayılan: `0`. | INT | Evet | 0 - 2147483647 |
 
 ### Moderasyon "true" Girdileri
 

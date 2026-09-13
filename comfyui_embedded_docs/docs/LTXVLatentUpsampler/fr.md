@@ -6,8 +6,8 @@ Le nœud LTXVLatentUpsampler augmente la résolution spatiale d'une représentat
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
-| `samples` | Représentation latente d'entrée de la vidéo à agrandir. | LATENT | Oui |  |
-| `upscale_model` | Le modèle chargé utilisé pour effectuer l'agrandissement 2x sur les données latentes. | LATENT_UPSCALE_MODEL | Oui |  |
+| `échantillons` | Représentation latente d'entrée de la vidéo à agrandir. | LATENT | Oui |  |
+| `modèle_d’agrandissement` | Le modèle chargé utilisé pour effectuer l'agrandissement 2x sur les données latentes. | LATENT_UPSCALE_MODEL | Oui |  |
 | `vae` | Le modèle VAE utilisé pour dénormaliser les latents d'entrée avant l'agrandissement et pour normaliser les latents de sortie ensuite. | VAE | Oui |  |
 
 Remarque : Ce nœud est marqué comme expérimental dans ComfyUI.

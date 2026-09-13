@@ -8,7 +8,7 @@ Este nó codifica uma imagem de entrada com o codificador de imagem DINOv3 e o V
 |-----------|-------------|-----------|----------|-------|
 | `clip_vision` | Codificador de imagem DINOv3 ViT-H/16+ | CLIP_VISION | Sim | - |
 | `vae` | VAE Flux2 | VAE | Sim | - |
-| `image` | A imagem de entrada a ser codificada | IMAGE | Sim | - |
+| `imagem` | A imagem de entrada a ser codificada | IMAGE | Sim | - |
 
 ## Saídas
 

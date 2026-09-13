@@ -6,14 +6,14 @@ WanPhantomSubjectToVideo düğümü, Wan video oluşturma için koşullandırma 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `positive` | Video oluşturmayı yönlendirmek için pozitif koşullandırma girdisi | CONDITIONING | Evet | - |
-| `negative` | Belirli özelliklerden kaçınmak için negatif koşullandırma girdisi | CONDITIONING | Evet | - |
+| `pozitif` | Video oluşturmayı yönlendirmek için pozitif koşullandırma girdisi | CONDITIONING | Evet | - |
+| `negatif` | Belirli özelliklerden kaçınmak için negatif koşullandırma girdisi | CONDITIONING | Evet | - |
 | `vae` | Referans görüntüler sağlandığında bunları kodlamak için kullanılan VAE modeli | VAE | Evet | - |
-| `width` | Çıktı video genişliği piksel cinsinden (varsayılan: 832) | INT | Evet | 16 - MAX_RESOLUTION (adım 16) |
-| `height` | Çıktı video yüksekliği piksel cinsinden (varsayılan: 480) | INT | Evet | 16 - MAX_RESOLUTION (adım 16) |
-| `length` | Oluşturulan videodaki kare sayısı (varsayılan: 81) | INT | Evet | 1 - MAX_RESOLUTION (adım 4) |
-| `batch_size` | Aynı anda oluşturulacak video sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
-| `images` | Zaman boyutlu görsel kılavuz olarak kullanılan isteğe bağlı referans görüntüler | IMAGE | Hayır | - |
+| `genişlik` | Çıktı video genişliği piksel cinsinden (varsayılan: 832) | INT | Evet | 16 - MAX_RESOLUTION (adım 16) |
+| `yükseklik` | Çıktı video yüksekliği piksel cinsinden (varsayılan: 480) | INT | Evet | 16 - MAX_RESOLUTION (adım 16) |
+| `uzunluk` | Oluşturulan videodaki kare sayısı (varsayılan: 81) | INT | Evet | 1 - MAX_RESOLUTION (adım 4) |
+| `toplu_iş_boyutu` | Aynı anda oluşturulacak video sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `görseller` | Zaman boyutlu görsel kılavuz olarak kullanılan isteğe bağlı referans görüntüler | IMAGE | Hayır | - |
 
 **Not:** `images` sağlandığında, belirtilen `width` ve `height` ile eşleşecek şekilde otomatik olarak ölçeklenir ve işleme için yalnızca ilk `length` görüntü kullanılır. Her görüntü `vae` ile kodlanır ve zaman boyutunda birleştirilir; ayrıca her görüntünün yalnızca RGB kanalları kullanılır. `images` sağlanmadığında, üç koşullandırma çıktısının tümü girdi koşullandırmalarından değiştirilmeden döndürülür.
 

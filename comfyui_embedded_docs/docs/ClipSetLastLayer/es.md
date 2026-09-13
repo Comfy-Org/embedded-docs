@@ -7,7 +7,7 @@
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `clip` | El modelo CLIP que se va a modificar | CLIP | Sí | - |
-| `stop_at_clip_layer` | Especifica en qué capa detenerse. Un valor de -1 usa todas las capas, mientras que -24 usa solo la primera capa (predeterminado: -1). Este es un parámetro avanzado. | INT | Sí | -24 a -1 (paso: 1) |
+| `detener_en_capa_clip` | Especifica en qué capa detenerse. Un valor de -1 usa todas las capas, mientras que -24 usa solo la primera capa (predeterminado: -1). Este es un parámetro avanzado. | INT | Sí | -24 a -1 (paso: 1) |
 
 Los valores son negativos y se cuentan hacia atrás desde el final del modelo: -1 se refiere a la última capa (la más profunda) y -24 a la primera capa (la más superficial), por lo que el rango permitido solo abarca de -24 a -1.
 

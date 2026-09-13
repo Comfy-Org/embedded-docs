@@ -6,8 +6,8 @@ El nodo LatentApplyOperationCFG aplica una operación latente dentro del paso de
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo al que se aplicará la operación CFG | MODEL | Sí | - |
-| `operation` | La operación latente que se aplicará durante el proceso de muestreo CFG | LATENT_OPERATION | Sí | - |
+| `modelo` | El modelo al que se aplicará la operación CFG | MODEL | Sí | - |
+| `operación` | La operación latente que se aplicará durante el proceso de muestreo CFG | LATENT_OPERATION | Sí | - |
 
 Nota: Este nodo está marcado como experimental. La operación se aplica a las salidas de condicionamiento del modelo durante el proceso de muestreo CFG. Cuando hay dos salidas de condicionamiento, la operación se aplica a la diferencia entre la primera y la segunda salida, y la segunda salida se vuelve a sumar al resultado. Cuando solo hay una salida de condicionamiento, la operación se aplica directamente a ella.
 

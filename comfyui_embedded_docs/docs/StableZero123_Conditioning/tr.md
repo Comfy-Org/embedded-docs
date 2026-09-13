@@ -6,14 +6,14 @@ StableZero123_Conditioning düğümü, 3D model üretimi için koşullandırma v
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `clip_vision` | Görüntü özelliklerini kodlamak için kullanılan CLIP vision modeli | CLIP_VISION | Evet | - |
-| `init_image` | İşlenecek ve kodlanacak giriş görüntüsü | IMAGE | Evet | - |
+| `clip_görü` | Görüntü özelliklerini kodlamak için kullanılan CLIP vision modeli | CLIP_VISION | Evet | - |
+| `başlangıç_görüntüsü` | İşlenecek ve kodlanacak giriş görüntüsü | IMAGE | Evet | - |
 | `vae` | Pikselleri latent uzaya kodlamak için kullanılan VAE modeli | VAE | Evet | - |
-| `width` | Latent temsil için çıktı genişliği (varsayılan: 256, adım: 8) | INT | Evet | 16 - MAX_RESOLUTION |
-| `height` | Latent temsil için çıktı yüksekliği (varsayılan: 256, adım: 8) | INT | Evet | 16 - MAX_RESOLUTION |
-| `batch_size` | Partide üretilecek örnek sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
-| `elevation` | Derece cinsinden kamera elevasyon açısı (varsayılan: 0.0, adım: 0.1) | FLOAT | Evet | -180.0 - 180.0 |
-| `azimuth` | Derece cinsinden kamera azimut açısı (varsayılan: 0.0, adım: 0.1) | FLOAT | Evet | -180.0 - 180.0 |
+| `genişlik` | Latent temsil için çıktı genişliği (varsayılan: 256, adım: 8) | INT | Evet | 16 - MAX_RESOLUTION |
+| `yükseklik` | Latent temsil için çıktı yüksekliği (varsayılan: 256, adım: 8) | INT | Evet | 16 - MAX_RESOLUTION |
+| `toplu_boyut` | Partide üretilecek örnek sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `yükseklik` | Derece cinsinden kamera elevasyon açısı (varsayılan: 0.0, adım: 0.1) | FLOAT | Evet | -180.0 - 180.0 |
+| `azimut` | Derece cinsinden kamera azimut açısı (varsayılan: 0.0, adım: 0.1) | FLOAT | Evet | -180.0 - 180.0 |
 
 **Not:** `width` ve `height` parametreleri 8'lik adım kullanır, bu nedenle değerler 8'in katları olarak ayarlanır. Düğüm, latent temsil boyutlarını belirlemek için bunları 8'e böler. Görüntü, VAE kodlamasından önce merkez kırpma ile bilineer üst ölçekleme kullanılarak verilen `width` ve `height` değerlerine yeniden ölçeklendirilir.
 

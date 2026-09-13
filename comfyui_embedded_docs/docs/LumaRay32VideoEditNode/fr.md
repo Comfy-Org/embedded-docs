@@ -8,10 +8,10 @@ Ce nœud effectue un nouveau rendu d'une vidéo existante avec un nouveau prompt
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `video` | Vidéo source à éditer. Jusqu'à 18 secondes. | VIDEO | Oui | - |
+| `vidéo` | Vidéo source à éditer. Jusqu'à 18 secondes. | VIDEO | Oui | - |
 | `prompt` | Décrit l'édition souhaitée. | STRING | Oui | - |
-| `resolution` | La résolution de sortie pour la vidéo éditée. (par défaut : "720p") | COMBO | Oui | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
-| `strength` | Dans quelle mesure préserver ou réinterpréter la source. "auto" laisse Ray 3.2 choisir ; adhere_* préserve le plus, flex_* est équilibré, reimagine_* modifie le plus. (par défaut : "auto") | COMBO | Oui | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
+| `résolution` | La résolution de sortie pour la vidéo éditée. (par défaut : "720p") | COMBO | Oui | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+| `intensité` | Dans quelle mesure préserver ou réinterpréter la source. "auto" laisse Ray 3.2 choisir ; adhere_* préserve le plus, flex_* est équilibré, reimagine_* modifie le plus. (par défaut : "auto") | COMBO | Oui | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
 | `seed` | Graine pour la reproductibilité. | INT | Oui | - |
 
 **Remarque :** Le `prompt` doit comporter entre 1 et 6000 caractères. La vidéo source ne doit pas dépasser 18 secondes de durée.

@@ -6,17 +6,17 @@ OpenAI'nin GPT Image uç noktası aracılığıyla eşzamanlı olarak görüntü
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | GPT Image için metin istemi (varsayılan: "") | STRING | Evet | - |
-| `seed` | Üretim için rastgele tohum; arka uçta henüz uygulanmadı (varsayılan: 0) | INT | Hayır | 0 - 2147483647 |
-| `quality` | Görüntü kalitesi, maliyeti ve üretim süresini etkiler (varsayılan: "low") | COMBO | Hayır | "low"<br>"medium"<br>"high" |
-| `background` | Görüntüyü arka planlı veya arka plansız döndürür (varsayılan: "auto") | COMBO | Hayır | "auto"<br>"opaque"<br>"transparent" |
-| `size` | Görüntü boyutu. Özel genişlik ve yüksekliği kullanmak için "Custom" seçin (yalnızca GPT Image 2) (varsayılan: "auto") | COMBO | Hayır | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" |
+| `istem` | GPT Image için metin istemi (varsayılan: "") | STRING | Evet | - |
+| `tohum` | Üretim için rastgele tohum; arka uçta henüz uygulanmadı (varsayılan: 0) | INT | Hayır | 0 - 2147483647 |
+| `kalite` | Görüntü kalitesi, maliyeti ve üretim süresini etkiler (varsayılan: "low") | COMBO | Hayır | "low"<br>"medium"<br>"high" |
+| `arka_plan` | Görüntüyü arka planlı veya arka plansız döndürür (varsayılan: "auto") | COMBO | Hayır | "auto"<br>"opaque"<br>"transparent" |
+| `boyut` | Görüntü boyutu. Özel genişlik ve yüksekliği kullanmak için "Custom" seçin (yalnızca GPT Image 2) (varsayılan: "auto") | COMBO | Hayır | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" |
 | `n` | Kaç görüntü üretileceği (varsayılan: 1) | INT | Hayır | 1 - 8 |
-| `image` | Görüntü düzenleme için isteğe bağlı referans görüntüsü | IMAGE | Hayır | - |
-| `mask` | Inpainting için isteğe bağlı maske (beyaz alanlar değiştirilir) | MASK | Hayır | - |
+| `görüntü` | Görüntü düzenleme için isteğe bağlı referans görüntüsü | IMAGE | Hayır | - |
+| `maske` | Inpainting için isteğe bağlı maske (beyaz alanlar değiştirilir) | MASK | Hayır | - |
 | `model` | Kullanılacak GPT Image modeli (varsayılan: "gpt-image-2") | COMBO | Hayır | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" |
-| `custom_width` | Yalnızca `size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır (yalnızca GPT Image 2) (varsayılan: 1024) | INT | Hayır | 1024 - 3840, adım 16 |
-| `custom_height` | Yalnızca `size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır (yalnızca GPT Image 2) (varsayılan: 1024) | INT | Hayır | 1024 - 3840, adım 16 |
+| `özel_genişlik` | Yalnızca `size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır (yalnızca GPT Image 2) (varsayılan: 1024) | INT | Hayır | 1024 - 3840, adım 16 |
+| `özel_yükseklik` | Yalnızca `size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır (yalnızca GPT Image 2) (varsayılan: 1024) | INT | Hayır | 1024 - 3840, adım 16 |
 
 **Parametre Kısıtlamaları:**
 

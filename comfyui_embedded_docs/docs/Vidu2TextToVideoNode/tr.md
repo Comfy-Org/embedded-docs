@@ -7,12 +7,12 @@ Vidu2 Metinden Videoya Üretim düğümü, bir metin açıklamasından video olu
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Video üretimi için kullanılacak AI modeli. Şu anda yalnızca bir model mevcuttur. | COMBO | Evet | `"viduq2"` |
-| `prompt` | Video üretimi için metinsel açıklama; en fazla 2000 karakter uzunluğundadır. | STRING | Evet | - |
-| `duration` | Üretilen videonun saniye cinsinden uzunluğu. Değer bir kaydırıcı kullanılarak ayarlanabilir (varsayılan: 5). | INT | Hayır | 1 ila 10 |
-| `seed` | Üretimin rastgeleliğini kontrol etmek için kullanılan ve yeniden üretilebilir sonuçlara olanak tanıyan sayı. Üretimden sonra kontrol edilebilir (varsayılan: 1). | INT | Hayır | 0 ila 2147483647 |
-| `aspect_ratio` | Videonun genişliği ile yüksekliği arasındaki oransal ilişki. | COMBO | Hayır | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
-| `resolution` | Üretilen videonun piksel boyutları. Bu gelişmiş bir parametredir. | COMBO | Hayır | `"720p"`<br>`"1080p"` |
-| `background_music` | Üretilen videoya arka plan müziği eklenip eklenmeyeceği (varsayılan: False). Bu gelişmiş bir parametredir. | BOOLEAN | Hayır | - |
+| `komut_istemi` | Video üretimi için metinsel açıklama; en fazla 2000 karakter uzunluğundadır. | STRING | Evet | - |
+| `süre` | Üretilen videonun saniye cinsinden uzunluğu. Değer bir kaydırıcı kullanılarak ayarlanabilir (varsayılan: 5). | INT | Hayır | 1 ila 10 |
+| `tohum` | Üretimin rastgeleliğini kontrol etmek için kullanılan ve yeniden üretilebilir sonuçlara olanak tanıyan sayı. Üretimden sonra kontrol edilebilir (varsayılan: 1). | INT | Hayır | 0 ila 2147483647 |
+| `en-boy_oranı` | Videonun genişliği ile yüksekliği arasındaki oransal ilişki. | COMBO | Hayır | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
+| `çözünürlük` | Üretilen videonun piksel boyutları. Bu gelişmiş bir parametredir. | COMBO | Hayır | `"720p"`<br>`"1080p"` |
+| `arka_plan_müziği` | Üretilen videoya arka plan müziği eklenip eklenmeyeceği (varsayılan: False). Bu gelişmiş bir parametredir. | BOOLEAN | Hayır | - |
 
 ## Çıktılar
 

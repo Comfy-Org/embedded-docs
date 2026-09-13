@@ -6,9 +6,9 @@ Convertit un pourcentage d'échantillonnage en valeur sigma correspondante à l'
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle contenant les paramètres d'échantillonnage utilisés pour la conversion | MODEL | Oui | - |
-| `sampling_percent` | Le pourcentage d'échantillonnage à convertir en valeur sigma (par défaut : 0.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.0001) |
-| `return_actual_sigma` | Renvoie la valeur sigma réelle au lieu de la valeur utilisée pour les vérifications d'intervalle. Cela n'affecte que les résultats à 0.0 et 1.0. (par défaut : False) | BOOLEAN | Oui | - |
+| `modèle` | Le modèle contenant les paramètres d'échantillonnage utilisés pour la conversion | MODEL | Oui | - |
+| `pourcent_échantillonnage` | Le pourcentage d'échantillonnage à convertir en valeur sigma (par défaut : 0.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.0001) |
+| `retourner_sigma_réel` | Renvoie la valeur sigma réelle au lieu de la valeur utilisée pour les vérifications d'intervalle. Cela n'affecte que les résultats à 0.0 et 1.0. (par défaut : False) | BOOLEAN | Oui | - |
 
 Lorsque `return_actual_sigma` est activé, un `sampling_percent` de 0.0 renvoie la valeur sigma maximale du modèle (sigma_max), et un `sampling_percent` de 1.0 renvoie la valeur sigma minimale (sigma_min). Pour tous les autres pourcentages, le résultat est identique, que cette option soit activée ou non.
 

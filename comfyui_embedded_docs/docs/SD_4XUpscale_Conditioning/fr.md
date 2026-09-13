@@ -8,9 +8,9 @@ Le nœud SD_4XUpscale_Conditioning prépare les données de conditionnement pour
 | --- | --- | --- | --- | --- |
 | `images` | Images d'entrée à agrandir. | IMAGE | Oui | - |
 | `positive` | Données de conditionnement positives qui guident la génération vers le contenu souhaité. | CONDITIONING | Oui | - |
-| `negative` | Données de conditionnement négatives qui éloignent la génération du contenu indésirable. | CONDITIONING | Oui | - |
-| `scale_ratio` | Multiplicateur appliqué aux dimensions de l'image d'entrée lors de la préparation du conditionnement et du latent agrandis (par défaut : 4.0). | FLOAT | Oui | 0.0 - 10.0 (pas 0.01) |
-| `noise_augmentation` | Quantité de bruit à ajouter pendant le processus d'agrandissement (par défaut : 0.0). | FLOAT | Oui | 0.0 - 1.0 (pas 0.001) |
+| `négatif` | Données de conditionnement négatives qui éloignent la génération du contenu indésirable. | CONDITIONING | Oui | - |
+| `ratio_d'échelle` | Multiplicateur appliqué aux dimensions de l'image d'entrée lors de la préparation du conditionnement et du latent agrandis (par défaut : 4.0). | FLOAT | Oui | 0.0 - 10.0 (pas 0.01) |
+| `augmentation_du_bruit` | Quantité de bruit à ajouter pendant le processus d'agrandissement (par défaut : 0.0). | FLOAT | Oui | 0.0 - 1.0 (pas 0.001) |
 
 Remarque : `noise_augmentation` est un paramètre avancé, affiché dans l'interface du nœud sous l'option « Advanced ».
 

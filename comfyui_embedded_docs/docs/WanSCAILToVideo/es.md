@@ -6,20 +6,20 @@ El nodo WanSCAILToVideo prepara el condicionamiento y un espacio latente vacío 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `positive` | La entrada de condicionamiento positivo. | CONDITIONING | Sí | - |
-| `negative` | La entrada de condicionamiento negativo. | CONDITIONING | Sí | - |
+| `positivo` | La entrada de condicionamiento positivo. | CONDITIONING | Sí | - |
+| `negativo` | La entrada de condicionamiento negativo. | CONDITIONING | Sí | - |
 | `vae` | El modelo VAE utilizado para codificar imágenes y fotogramas de video. | VAE | Sí | - |
-| `width` | El ancho del video de salida en píxeles (predeterminado: 512). Los valores aumentan en pasos de 32. | INT | Sí | 32 a MAX_RESOLUTION |
-| `height` | El alto del video de salida en píxeles (predeterminado: 896). Los valores aumentan en pasos de 32. | INT | Sí | 32 a MAX_RESOLUTION |
-| `length` | La cantidad de fotogramas del video (predeterminado: 81). Los valores aumentan en pasos de 4. | INT | Sí | 1 a MAX_RESOLUTION |
-| `batch_size` | La cantidad de videos a generar en un lote (predeterminado: 1). | INT | Sí | 1 a 4096 |
-| `pose_video` | Video utilizado para el condicionamiento de pose. Se reducirá a la mitad de la resolución del video principal. | IMAGE | No | - |
+| `ancho` | El ancho del video de salida en píxeles (predeterminado: 512). Los valores aumentan en pasos de 32. | INT | Sí | 32 a MAX_RESOLUTION |
+| `alto` | El alto del video de salida en píxeles (predeterminado: 896). Los valores aumentan en pasos de 32. | INT | Sí | 32 a MAX_RESOLUTION |
+| `longitud` | La cantidad de fotogramas del video (predeterminado: 81). Los valores aumentan en pasos de 4. | INT | Sí | 1 a MAX_RESOLUTION |
+| `tamaño_lote` | La cantidad de videos a generar en un lote (predeterminado: 1). | INT | Sí | 1 a 4096 |
+| `video_pose` | Video utilizado para el condicionamiento de pose. Se reducirá a la mitad de la resolución del video principal. | IMAGE | No | - |
 | `pose_video_mask` | Solo SCAIL-2. Video de máscara SAM3 coloreada por identidad a la misma resolución que `pose_video`. | IMAGE | No | - |
 | `replacement_mode` | Solo SCAIL-2. False = Modo de animación (`pose_video_mask` debe tener fondo negro). True = Modo de reemplazo (`pose_video_mask` debe tener fondo blanco). (predeterminado: False) | BOOLEAN | No | - |
-| `pose_strength` | Intensidad del latente de pose. (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 10.0 |
-| `pose_start` | Paso inicial del condicionamiento de pose. (predeterminado: 0.0) | FLOAT | Sí | 0.0 a 1.0 |
-| `pose_end` | Paso final del condicionamiento de pose. (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
-| `reference_image` | Imagen de referencia. La primera imagen es la referencia principal (se componen todas las identidades sobre ella). SCAIL-2: las imágenes adicionales del lote se utilizan como vistas adicionales (vista trasera, primer plano, fondo ocluido), y cada una necesita una `reference_image_mask` coincidente del color de esa identidad. | IMAGE | No | - |
+| `fuerza_pose` | Intensidad del latente de pose. (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 10.0 |
+| `inicio_pose` | Paso inicial del condicionamiento de pose. (predeterminado: 0.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `fin_pose` | Paso final del condicionamiento de pose. (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `imagen_referencia` | Imagen de referencia. La primera imagen es la referencia principal (se componen todas las identidades sobre ella). SCAIL-2: las imágenes adicionales del lote se utilizan como vistas adicionales (vista trasera, primer plano, fondo ocluido), y cada una necesita una `reference_image_mask` coincidente del color de esa identidad. | IMAGE | No | - |
 | `reference_image_mask` | Solo SCAIL-2. Máscara de referencia coloreada, lote que coincide con `reference_image` (la primera = máscara de referencia principal, el resto = máscaras de identidad para las `reference_image` adicionales). | IMAGE | No | - |
 | `clip_vision_output` | Características de visión CLIP para el condicionamiento. El modelo se entrena con redimensionamiento por estiramiento a la relación de aspecto. | CLIP_VISION_OUTPUT | No | - |
 | `video_frame_offset` | Fotograma de salida acumulativo en el que comienza este fragmento. Conéctalo desde la salida `video_frame_offset` del fragmento anterior. (predeterminado: 0) | INT | Sí | 0 a MAX_RESOLUTION |

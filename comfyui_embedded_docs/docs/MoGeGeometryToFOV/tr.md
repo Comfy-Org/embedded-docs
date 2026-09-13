@@ -7,8 +7,8 @@ Bu düğüm, bir MoGe geometri nesnesinde saklanan kamera içsel parametrelerind
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `moge_geometry` | MoGe geometri nesnesi. Bir içsel parametreler matrisi ve odak uzaklığı dönüşümü için piksel yüksekliğini okumak üzere kullanılan `image`, `points` veya `depth` verilerinden en az birini içermelidir. | MOGE_GEOMETRY | Evet | — |
-| `axis` | FOV'un hesaplandığı eksen: "vertical" (fov_y), "horizontal" (fov_x) veya "diagonal" (varsayılan: "vertical"). | COMBO | Evet | "vertical"<br>"horizontal"<br>"diagonal" |
-| `unit` | FOV için çıktı birimi (varsayılan: "degrees"). | COMBO | Evet | "degrees"<br>"radians" |
+| `eksen` | FOV'un hesaplandığı eksen: "vertical" (fov_y), "horizontal" (fov_x) veya "diagonal" (varsayılan: "vertical"). | COMBO | Evet | "vertical"<br>"horizontal"<br>"diagonal" |
+| `birim` | FOV için çıktı birimi (varsayılan: "degrees"). | COMBO | Evet | "degrees"<br>"radians" |
 
 Not: Düğüm, `moge_geometry` hiç içsel parametre içermiyorsa (panorama geometrisinde hiç yoktur) veya ne `image`, ne `points`, ne de `depth` verisi içeriyorsa hata verir.
 

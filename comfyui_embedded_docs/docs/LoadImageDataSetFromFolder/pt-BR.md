@@ -6,7 +6,7 @@ Este nó carrega várias imagens de uma subpasta selecionada dentro do diretóri
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `folder` | A pasta de onde carregar as imagens. As opções são as subpastas presentes no diretório principal de entrada do ComfyUI. | COMBO | Sim | Várias opções disponíveis |
+| `pasta` | A pasta de onde carregar as imagens. As opções são as subpastas presentes no diretório principal de entrada do ComfyUI. | COMBO | Sim | Várias opções disponíveis |
 
 Observação: A pasta selecionada deve ser uma subpasta do diretório principal de entrada do ComfyUI; qualquer valor que resolva para fora dele (por exemplo, usando `..`, caminhos absolutos, letras de unidade ou links simbólicos) é rejeitado. Apenas arquivos com as extensões .png, .jpg, .jpeg ou .webp são carregados, e a verificação da extensão não diferencia maiúsculas de minúsculas. As imagens carregadas são convertidas para RGB e dimensionadas para o intervalo de 0 a 1. Se a pasta selecionada não contiver arquivos de imagem válidos, o nó gera um erro. Este nó está marcado como experimental.
 

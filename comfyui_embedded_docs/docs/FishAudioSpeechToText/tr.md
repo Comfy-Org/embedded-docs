@@ -6,8 +6,8 @@ Bu düğüm, Fish Audio konuşmadan metne hizmetini kullanarak sesi metne dönü
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `audio` | Metne dönüştürülecek ses. | AUDIO | Evet | — |
-| `language` | ISO 639-1 dil ipucu (örn. 'en', 'zh'). Dil, ipucundan bağımsız olarak otomatik algılanır. Varsayılan: "" (boş dize). | STRING | Hayır | Herhangi bir ISO 639-1 dil kodu, örn. `en`, `zh`; otomatik algılama için boş dize |
+| `ses` | Metne dönüştürülecek ses. | AUDIO | Evet | — |
+| `dil` | ISO 639-1 dil ipucu (örn. 'en', 'zh'). Dil, ipucundan bağımsız olarak otomatik algılanır. Varsayılan: "" (boş dize). | STRING | Hayır | Herhangi bir ISO 639-1 dil kodu, örn. `en`, `zh`; otomatik algılama için boş dize |
 | `precise_timestamps` | Kelime düzeyinde zaman damgalı segmentler döndürür. Varsayılan: false. | BOOLEAN | Hayır | true veya false |
 
 Not: `language` parametresi yalnızca bir ipucudur — dil her zaman sesten otomatik olarak algılanır. `precise_timestamps` false (varsayılan) olduğunda, kelime düzeyinde zaman damgaları döndürülmez; true olduğunda, çıktı segmentleri kelime düzeyinde zaman damgaları içerir.

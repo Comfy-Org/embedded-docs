@@ -6,7 +6,7 @@ Le nœud SetUnionControlNetType vous permet de choisir le type de contrôle util
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `control_net` | Le réseau de contrôle à modifier avec un nouveau réglage de type | CONTROL_NET | Oui | - |
+| `réseau_de_contrôle` | Le réseau de contrôle à modifier avec un nouveau réglage de type | CONTROL_NET | Oui | - |
 | `type` | Le type de réseau de contrôle à appliquer. Utilisez « auto » pour la détection automatique du type ou sélectionnez un type de réseau de contrôle spécifique parmi les options disponibles (par défaut : « auto ») | COMBO | Oui | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/softedge"`<br>`"canny"`<br>`"scribble"`<br>`"seg"`<br>`"tile"`<br>`"inpaint"`<br>`"lineart"`<br>`"blur"`<br>`"mlsd"`<br>`"normalbae"`<br>`"mask"` |
 
 Lorsque `type` est défini sur `"auto"`, le nœud efface le type de contrôle stocké afin que le type puisse être détecté automatiquement. Lorsqu'un type spécifique est sélectionné, le nœud stocke le type de contrôle correspondant dans le réseau de contrôle copié. Le réseau de contrôle d'entrée n'est jamais modifié sur place ; une copie modifiée est renvoyée à la place.

@@ -6,11 +6,11 @@ O HyperTile aplica uma técnica de tiling ao mecanismo de atenção dentro de mo
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo de difusão ao qual aplicar a otimização do HyperTile | MODEL | Sim | - |
-| `tile_size` | O tamanho do tile de destino para processamento (padrão: 256). Internamente, o valor é limitado a um mínimo de 32 e depois dividido por 8 para obter o tamanho efetivo do tile. | INT | Sim | 1 - 2048 |
-| `swap_size` | Controla como os tiles são reorganizados durante o processamento para melhorar a eficiência. Valores maiores permitem mais variação nos tamanhos dos tiles (padrão: 2) | INT | Sim | 1 - 128 |
-| `max_depth` | O nível máximo de profundidade (escala de resolução) para aplicar o tiling. Um valor de 0 aplica o tiling apenas na resolução mais alta (padrão: 0) | INT | Sim | 0 - 10 |
-| `scale_depth` | Quando ativado, o tamanho do tile é escalado proporcionalmente em níveis mais profundos. Isso pode ajudar a manter a qualidade em resoluções mais baixas (padrão: False) | BOOLEAN | Sim | True / False |
+| `modelo` | O modelo de difusão ao qual aplicar a otimização do HyperTile | MODEL | Sim | - |
+| `tamanho_do_tile` | O tamanho do tile de destino para processamento (padrão: 256). Internamente, o valor é limitado a um mínimo de 32 e depois dividido por 8 para obter o tamanho efetivo do tile. | INT | Sim | 1 - 2048 |
+| `tamanho_da_troca` | Controla como os tiles são reorganizados durante o processamento para melhorar a eficiência. Valores maiores permitem mais variação nos tamanhos dos tiles (padrão: 2) | INT | Sim | 1 - 128 |
+| `profundidade_máxima` | O nível máximo de profundidade (escala de resolução) para aplicar o tiling. Um valor de 0 aplica o tiling apenas na resolução mais alta (padrão: 0) | INT | Sim | 0 - 10 |
+| `escala_de_profundidade` | Quando ativado, o tamanho do tile é escalado proporcionalmente em níveis mais profundos. Isso pode ajudar a manter a qualidade em resoluções mais baixas (padrão: False) | BOOLEAN | Sim | True / False |
 
 Observação: `tile_size`, `swap_size`, `max_depth` e `scale_depth` são marcados como entradas avançadas, portanto só são exibidos quando as opções avançadas estão ativadas na interface.
 

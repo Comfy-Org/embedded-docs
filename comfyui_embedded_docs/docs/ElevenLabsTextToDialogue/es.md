@@ -8,13 +8,13 @@ El nodo ElevenLabs Text to Dialogue genera un diálogo de audio con múltiples h
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `stability` | Estabilidad de la voz. Los valores más bajos ofrecen un rango emocional más amplio; los valores más altos producen un habla más consistente pero potencialmente monótona. (valor predeterminado: 0.5) | FLOAT | Sí | 0.0 - 1.0 |
-| `apply_text_normalization` | Modo de normalización de texto. 'auto' deja que el sistema decida, 'on' siempre aplica la normalización, 'off' la omite. | COMBO | Sí | `"auto"`<br>`"on"`<br>`"off"` |
-| `model` | Modelo que se usará para la generación de diálogo. | COMBO | Sí | `"eleven_v3"` |
-| `inputs` | Número de entradas de diálogo. Al seleccionar un número, se crea esa cantidad de pares de entrada de texto y voz. | DYNAMIC_COMBO | Sí | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
-| `language_code` | Código de idioma ISO-639-1 o ISO-639-3 (p. ej., 'en', 'es', 'fra'). Déjelo vacío para la detección automática. (valor predeterminado: vacío) | STRING | Sí | - |
-| `seed` | Semilla para la reproducibilidad. (valor predeterminado: 1) | INT | Sí | 0 - 4294967295 |
-| `output_format` | Formato de salida de audio. | COMBO | Sí | `"mp3_44100_192"`<br>`"opus_48000_192"` |
+| `estabilidad` | Estabilidad de la voz. Los valores más bajos ofrecen un rango emocional más amplio; los valores más altos producen un habla más consistente pero potencialmente monótona. (valor predeterminado: 0.5) | FLOAT | Sí | 0.0 - 1.0 |
+| `aplicar_normalización_de_texto` | Modo de normalización de texto. 'auto' deja que el sistema decida, 'on' siempre aplica la normalización, 'off' la omite. | COMBO | Sí | `"auto"`<br>`"on"`<br>`"off"` |
+| `modelo` | Modelo que se usará para la generación de diálogo. | COMBO | Sí | `"eleven_v3"` |
+| `entradas` | Número de entradas de diálogo. Al seleccionar un número, se crea esa cantidad de pares de entrada de texto y voz. | DYNAMIC_COMBO | Sí | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
+| `código_de_idioma` | Código de idioma ISO-639-1 o ISO-639-3 (p. ej., 'en', 'es', 'fra'). Déjelo vacío para la detección automática. (valor predeterminado: vacío) | STRING | Sí | - |
+| `semilla` | Semilla para la reproducibilidad. (valor predeterminado: 1) | INT | Sí | 0 - 4294967295 |
+| `formato_de_salida` | Formato de salida de audio. | COMBO | Sí | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
 ### Entradas por entrada de diálogo
 

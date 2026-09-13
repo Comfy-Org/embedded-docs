@@ -8,10 +8,10 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 要改变光照的图像。图像上传前会丢弃任何 alpha 通道。 | IMAGE | 是 | - |
+| `图像` | 要改变光照的图像。图像上传前会丢弃任何 alpha 通道。 | IMAGE | 是 | - |
 | `light_type` | 要应用的光照氛围。 | COMBO | 是 | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
 | `light_direction` | 光线来源方向。诸如 midday、spotlight on subject 和 harsh studio lighting 等硬光氛围对此反应最明显。 | COMBO | 是 | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
-| `moderation` | 审核设置。选择 `"true"` 可显示审核选项，选择 `"false"` 则可在不启用这些选项的情况下运行。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
+| `内容审核` | 审核设置。选择 `"true"` 可显示审核选项，选择 `"false"` 则可在不启用这些选项的情况下运行。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
 
 ### 审核输入
 

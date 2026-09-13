@@ -6,9 +6,9 @@ VoxelToMesh düğümü, 3B voksel verisini belirtilen bir eşik değerinde yüze
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `voxel` | Mesh geometrisine dönüştürülecek girdi voksel verisi | VOXEL | Evet | - |
-| `algorithm` | Yüzey çıkarma için kullanılan algoritma. "surface net" daha pürüzsüz mesh'ler üretirken, "basic" basit kutu benzeri yüzler oluşturur (varsayılan: "surface net") | COMBO | Evet | `"surface net"`<br>`"basic"` |
-| `threshold` | Yüzey çıkarma için eşik değeri. Değerleri bu eşiğin üzerinde olan vokseller katı kabul edilir (varsayılan: 0.6) | FLOAT | Evet | -1.0 ile 1.0 |
+| `voksel` | Mesh geometrisine dönüştürülecek girdi voksel verisi | VOXEL | Evet | - |
+| `algoritma` | Yüzey çıkarma için kullanılan algoritma. "surface net" daha pürüzsüz mesh'ler üretirken, "basic" basit kutu benzeri yüzler oluşturur (varsayılan: "surface net") | COMBO | Evet | `"surface net"`<br>`"basic"` |
+| `eşik` | Yüzey çıkarma için eşik değeri. Değerleri bu eşiğin üzerinde olan vokseller katı kabul edilir (varsayılan: 0.6) | FLOAT | Evet | -1.0 ile 1.0 |
 
 ## Çıktılar
 

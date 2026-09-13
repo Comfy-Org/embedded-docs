@@ -7,8 +7,8 @@ Le nœud SaveAudioMP3 sauvegarde les données audio dans un fichier MP3. Il pren
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `audio` | Les données audio à sauvegarder dans un fichier MP3 | AUDIO | Oui | - |
-| `filename_prefix` | Le préfixe du nom de fichier de sortie (par défaut : "audio/ComfyUI") | STRING | Non | - |
-| `quality` | Le réglage de qualité audio du fichier MP3 (par défaut : "V0") | COMBO | Non | `"V0"`<br>`"128k"`<br>`"320k"` |
+| `préfixe_nom_fichier` | Le préfixe du nom de fichier de sortie (par défaut : "audio/ComfyUI") | STRING | Non | - |
+| `qualité` | Le réglage de qualité audio du fichier MP3 (par défaut : "V0") | COMBO | Non | `"V0"`<br>`"128k"`<br>`"320k"` |
 | `prompt` | Données de prompt internes, fournies automatiquement par le système | PROMPT | Non | - |
 | `extra_pnginfo` | Informations PNG supplémentaires, fournies automatiquement par le système | EXTRA_PNGINFO | Non | - |
 

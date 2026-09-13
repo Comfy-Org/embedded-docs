@@ -12,7 +12,7 @@ Ce nœud génère une vidéo à partir d'une description textuelle en utilisant 
 | `duration` | La longueur de la vidéo en secondes (par défaut : 5). | INT | Oui | 3 à 15 secondes |
 | `resolution` | La qualité ou la résolution en pixels de la vidéo (par défaut : `"1080p"`). Correspond en interne à une qualité standard, pro ou 4k. | COMBO | Non | `"4k"`<br>`"1080p"`<br>`"720p"` |
 | `storyboards` | Générer une série de segments vidéo avec des prompts et des durées individuels. Ignoré pour le modèle o1. | DYNAMIC_COMBO | Non | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | Indique s'il faut générer de l'audio pour la vidéo (par défaut : False). | BOOLEAN | Non | True / False |
+| `générer l'audio` | Indique s'il faut générer de l'audio pour la vidéo (par défaut : False). | BOOLEAN | Non | True / False |
 | `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine (par défaut : 0). | INT | Non | 0 à 2147483647 |
 
 ### Sous-entrées de storyboard

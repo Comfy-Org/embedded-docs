@@ -6,7 +6,7 @@ O nó LTXV Audio VAE Loader carrega um modelo pré-treinado de Autoencoder Varia
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `ckpt_name` | Checkpoint do VAE de áudio a ser carregado. Esta é uma lista suspensa preenchida com todos os arquivos encontrados no diretório `checkpoints` do seu ComfyUI. | COMBO | Sim | Todos os arquivos na pasta `checkpoints`. A lista é gerada em tempo de execução. |
+| `nome_ckpt` | Checkpoint do VAE de áudio a ser carregado. Esta é uma lista suspensa preenchida com todos os arquivos encontrados no diretório `checkpoints` do seu ComfyUI. | COMBO | Sim | Todos os arquivos na pasta `checkpoints`. A lista é gerada em tempo de execução. |
 
 O arquivo selecionado deve ser um checkpoint válido de VAE de áudio LTXV. O nó mantém apenas os pesos do VAE de áudio e do vocoder do arquivo e gera um erro se o modelo carregado não for um VAE válido.
 

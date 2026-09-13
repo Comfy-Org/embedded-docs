@@ -6,12 +6,12 @@ LTXVScheduler düğümü, özel bir örnekleme süreci için sigma değerleri ü
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `steps` | Örnekleme adımı sayısı (varsayılan: 20) | INT | Evet | 1-10000 |
-| `max_shift` | Sigma hesaplamasında kullanılan maksimum kaydırma değeri (varsayılan: 2.05) | FLOAT | Evet | 0.0-100.0 (step: 0.01) |
-| `base_shift` | Sigma hesaplamasında kullanılan temel kaydırma değeri (varsayılan: 0.95) | FLOAT | Evet | 0.0-100.0 (step: 0.01) |
-| `stretch` | Sigma değerlerini [terminal, 1] aralığında olacak şekilde gerin (varsayılan: True) | BOOLEAN | Evet | True/False |
+| `adımlar` | Örnekleme adımı sayısı (varsayılan: 20) | INT | Evet | 1-10000 |
+| `maks_kaydırma` | Sigma hesaplamasında kullanılan maksimum kaydırma değeri (varsayılan: 2.05) | FLOAT | Evet | 0.0-100.0 (step: 0.01) |
+| `temel_kaydırma` | Sigma hesaplamasında kullanılan temel kaydırma değeri (varsayılan: 0.95) | FLOAT | Evet | 0.0-100.0 (step: 0.01) |
+| `uzatma` | Sigma değerlerini [terminal, 1] aralığında olacak şekilde gerin (varsayılan: True) | BOOLEAN | Evet | True/False |
 | `terminal` | Gerinme sonrasında sigma değerlerinin terminal değeri (varsayılan: 0.1). Yalnızca `stretch` etkinleştirildiğinde kullanılır. | FLOAT | Evet | 0.0-0.99 (step: 0.01) |
-| `latent` | Sigma ayarı için token sayısını hesaplamakta kullanılan isteğe bağlı latent girdisi. Sağlanmadığında varsayılan 4096 token sayısı kullanılır. | LATENT | Hayır | - |
+| `gizli` | Sigma ayarı için token sayısını hesaplamakta kullanılan isteğe bağlı latent girdisi. Sağlanmadığında varsayılan 4096 token sayısı kullanılır. | LATENT | Hayır | - |
 
 **Not:** `stretch` etkinleştirildiğinde, sıfır olmayan sigma değerleri yeniden ölçeklendirilir; böylece son sıfır olmayan sigma değeri, `terminal` değerine eşit olur.
 

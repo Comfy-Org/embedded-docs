@@ -6,7 +6,7 @@ PhotoMakerLoader düğümü, mevcut model dosyaları arasından bir PhotoMaker m
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `photomaker_model_name` | Yüklenecek PhotoMaker model dosyasının adı. Kullanılabilir seçenekler `photomaker` klasöründe bulunan model dosyalarına göre belirlenir. | COMBO | Evet | Birden çok seçenek mevcut (`photomaker` klasöründen dinamik olarak doldurulur) |
+| `photomaker_model_adı` | Yüklenecek PhotoMaker model dosyasının adı. Kullanılabilir seçenekler `photomaker` klasöründe bulunan model dosyalarına göre belirlenir. | COMBO | Evet | Birden çok seçenek mevcut (`photomaker` klasöründen dinamik olarak doldurulur) |
 
 ## Çıktılar
 

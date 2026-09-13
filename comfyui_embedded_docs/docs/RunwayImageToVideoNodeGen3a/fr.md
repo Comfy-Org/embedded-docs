@@ -7,10 +7,10 @@ Le nœud Runway Image to Video (Gen3a Turbo) génère une vidéo à partir d’u
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `prompt` | Invite textuelle pour la génération (par défaut : "") | STRING | Oui | N/A |
-| `start_frame` | Image de départ à utiliser pour la vidéo | IMAGE | Oui | N/A |
-| `duration` | Durée de la vidéo générée, en secondes (par défaut : "5") | COMBO | Oui | `"5"`<br>`"10"` |
+| `image_début` | Image de départ à utiliser pour la vidéo | IMAGE | Oui | N/A |
+| `durée` | Durée de la vidéo générée, en secondes (par défaut : "5") | COMBO | Oui | `"5"`<br>`"10"` |
 | `ratio` | Rapport d’aspect de la vidéo générée (par défaut : "768:1280") | COMBO | Oui | `"768:1280"`<br>`"1280:768"` |
-| `seed` | Graine aléatoire pour la génération (par défaut : 0) | INT | Oui | 0 à 4294967295 |
+| `graine` | Graine aléatoire pour la génération (par défaut : 0) | INT | Oui | 0 à 4294967295 |
 
 **Contraintes des paramètres :**
 

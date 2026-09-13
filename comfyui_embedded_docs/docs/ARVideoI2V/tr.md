@@ -8,11 +8,11 @@ Bu düğüm, Causal Forcing veya Self-Forcing kullanan AR (Otoregresif) video mo
 | --- | --- | --- | --- | --- |
 | `model` | Üretim için kullanılacak AR video modeli. | MODEL | Evet | - |
 | `vae` | Başlangıç görüntüsünü latent uzaya kodlamak için kullanılan VAE modeli. | VAE | Evet | - |
-| `start_image` | Oluşturulan videonun ilk karesi olarak hizmet edecek başlangıç görüntüsü. Girdi toplu işindeki yalnızca ilk görüntü kullanılır ve yalnızca RGB kanalları kodlanır. | IMAGE | Evet | - |
-| `width` | Oluşturulan video karelerinin genişliği (varsayılan: 832). | INT | Evet | 16 - 8192 (adım: 16) |
-| `height` | Oluşturulan video karelerinin yüksekliği (varsayılan: 480). | INT | Evet | 16 - 8192 (adım: 16) |
-| `length` | Oluşturulan videonun toplam kare sayısı (varsayılan: 81). | INT | Evet | 1 - 1024 (adım: 4) |
-| `batch_size` | Tek bir toplu işte oluşturulacak video dizisi sayısı (varsayılan: 1). | INT | Evet | 1 - 64 |
+| `başlangıç_görseli` | Oluşturulan videonun ilk karesi olarak hizmet edecek başlangıç görüntüsü. Girdi toplu işindeki yalnızca ilk görüntü kullanılır ve yalnızca RGB kanalları kodlanır. | IMAGE | Evet | - |
+| `genişlik` | Oluşturulan video karelerinin genişliği (varsayılan: 832). | INT | Evet | 16 - 8192 (adım: 16) |
+| `yükseklik` | Oluşturulan video karelerinin yüksekliği (varsayılan: 480). | INT | Evet | 16 - 8192 (adım: 16) |
+| `uzunluk` | Oluşturulan videonun toplam kare sayısı (varsayılan: 81). | INT | Evet | 1 - 1024 (adım: 4) |
+| `toplu_boyut` | Tek bir toplu işte oluşturulacak video dizisi sayısı (varsayılan: 1). | INT | Evet | 1 - 64 |
 
 Not: Başlangıç görüntüsü, kodlanmadan önce belirtilen `width` ve `height` değerlerine yeniden boyutlandırılır. Latent zamansal boyut `((length - 1) // 4) + 1` olarak hesaplanır; latent uzamsal boyutlar ise `height / 8` ve `width / 8`'dir.
 

@@ -6,7 +6,7 @@ El nodo ImageRGBToYUV convierte una imagen RGB en componentes de color de estilo
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `image` | La imagen RGB de entrada que se va a convertir en los componentes Y, U y V. Si la imagen contiene un canal alfa, solo se utilizan los tres primeros canales (RGB). | IMAGE | Sí | - |
+| `imagen` | La imagen RGB de entrada que se va a convertir en los componentes Y, U y V. Si la imagen contiene un canal alfa, solo se utilizan los tres primeros canales (RGB). | IMAGE | Sí | - |
 
 ## Salidas
 

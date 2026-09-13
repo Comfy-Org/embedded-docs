@@ -6,9 +6,9 @@ El nodo USOStyleReference aplica una referencia de estilo a un modelo combinando
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo base al que se aplica el parche de referencia de estilo. | MODEL | Sí | - |
-| `model_patch` | El parche de modelo que contiene el modelo de proyección utilizado para codificar las características de la imagen de referencia. | MODEL_PATCH | Sí | - |
-| `clip_vision_output` | Las características visuales codificadas extraídas del procesamiento de visión CLIP de la imagen de referencia. | CLIP_VISION_OUTPUT | Sí | - |
+| `modelo` | El modelo base al que se aplica el parche de referencia de estilo. | MODEL | Sí | - |
+| `parche_del_modelo` | El parche de modelo que contiene el modelo de proyección utilizado para codificar las características de la imagen de referencia. | MODEL_PATCH | Sí | - |
+| `salida_de_visión_clip` | Las características visuales codificadas extraídas del procesamiento de visión CLIP de la imagen de referencia. | CLIP_VISION_OUTPUT | Sí | - |
 
 Nota: El `clip_vision_output` debe provenir de un modelo de visión CLIP que proporcione los estados ocultos completos y el penúltimo estado oculto. El nodo combina el vigésimo desde el final, el undécimo desde el final y el penúltimo estado oculto en el embedding de estilo. El `model_patch` debe exponer un modelo de proyección a través de su atributo `model` que convierta estas características de imagen en el embedding de estilo. Durante el muestreo, el embedding de estilo se antepone al condicionamiento de texto para que pueda influir en la generación, y los IDs de texto de posición cero coincidentes se anteponen a los IDs de texto para que la secuencia de identificadores permanezca alineada con el condicionamiento extendido.
 

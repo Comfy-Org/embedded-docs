@@ -6,16 +6,16 @@ SamplerDPMAdaptative düğümü, örnekleme işlemi sırasında adım boyutları
 
 | Parametre | Açıklama | Veri Tipi | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `order` | Örnekleyici yönteminin derecesi (varsayılan: 3) | INT | Evet | 2-3 |
+| `sıra` | Örnekleyici yönteminin derecesi (varsayılan: 3) | INT | Evet | 2-3 |
 | `rtol` | Hata kontrolü için göreli tolerans (varsayılan: 0.05) | FLOAT | Evet | 0.0-100.0 |
 | `atol` | Hata kontrolü için mutlak tolerans (varsayılan: 0.0078) | FLOAT | Evet | 0.0-100.0 |
-| `h_init` | Başlangıç adım boyutu (varsayılan: 0.05) | FLOAT | Evet | 0.0-100.0 |
-| `pcoeff` | Adım boyutu kontrolü için oransal katsayı (varsayılan: 0.0) | FLOAT | Evet | 0.0-100.0 |
-| `icoeff` | Adım boyutu kontrolü için integral katsayısı (varsayılan: 1.0) | FLOAT | Evet | 0.0-100.0 |
-| `dcoeff` | Adım boyutu kontrolü için türev katsayısı (varsayılan: 0.0) | FLOAT | Evet | 0.0-100.0 |
-| `accept_safety` | Adım kabulü için güvenlik faktörü (varsayılan: 0.81) | FLOAT | Evet | 0.0-100.0 |
+| `h_başlangıç` | Başlangıç adım boyutu (varsayılan: 0.05) | FLOAT | Evet | 0.0-100.0 |
+| `pkatsayı` | Adım boyutu kontrolü için oransal katsayı (varsayılan: 0.0) | FLOAT | Evet | 0.0-100.0 |
+| `ikatsayı` | Adım boyutu kontrolü için integral katsayısı (varsayılan: 1.0) | FLOAT | Evet | 0.0-100.0 |
+| `dkatsayı` | Adım boyutu kontrolü için türev katsayısı (varsayılan: 0.0) | FLOAT | Evet | 0.0-100.0 |
+| `kabul_güvenliği` | Adım kabulü için güvenlik faktörü (varsayılan: 0.81) | FLOAT | Evet | 0.0-100.0 |
 | `eta` | Rastgelelik parametresi (varsayılan: 0.0) | FLOAT | Evet | 0.0-100.0 |
-| `s_noise` | Gürültü ölçekleme faktörü (varsayılan: 1.0) | FLOAT | Evet | 0.0-100.0 |
+| `s_gürültü` | Gürültü ölçekleme faktörü (varsayılan: 1.0) | FLOAT | Evet | 0.0-100.0 |
 
 Tüm girdiler, uyarlamalı örnekleme davranışını ince ayarlamak için kullanılan gelişmiş parametrelerdir. `order` dışında tüm sayısal girdiler ondalık değerlere izin verir ve en az 0.0 ile en fazla 100.0 değerlerini kabul eder; `order` ise yalnızca 2 veya 3 tam sayı değerleriyle sınırlıdır.
 

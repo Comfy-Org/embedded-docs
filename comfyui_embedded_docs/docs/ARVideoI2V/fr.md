@@ -6,13 +6,13 @@ Ce nœud prépare une configuration de génération image-vers-vidéo pour les m
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle vidéo AR à utiliser pour la génération. | MODEL | Oui | - |
+| `modèle` | Le modèle vidéo AR à utiliser pour la génération. | MODEL | Oui | - |
 | `vae` | Le modèle VAE utilisé pour encoder l'image de départ dans l'espace latent. | VAE | Oui | - |
-| `start_image` | L'image initiale qui servira de première image de la vidéo générée. Seule la première image du lot d'entrée est utilisée, et seuls ses canaux RVB sont encodés. | IMAGE | Oui | - |
-| `width` | La largeur des images de la vidéo générée (par défaut : 832). | INT | Oui | 16 à 8192 (pas : 16) |
-| `height` | La hauteur des images de la vidéo générée (par défaut : 480). | INT | Oui | 16 à 8192 (pas : 16) |
-| `length` | Le nombre total d'images de la vidéo générée (par défaut : 81). | INT | Oui | 1 à 1024 (pas : 4) |
-| `batch_size` | Le nombre de séquences vidéo à générer dans un seul lot (par défaut : 1). | INT | Oui | 1 à 64 |
+| `image_de_départ` | L'image initiale qui servira de première image de la vidéo générée. Seule la première image du lot d'entrée est utilisée, et seuls ses canaux RVB sont encodés. | IMAGE | Oui | - |
+| `largeur` | La largeur des images de la vidéo générée (par défaut : 832). | INT | Oui | 16 à 8192 (pas : 16) |
+| `hauteur` | La hauteur des images de la vidéo générée (par défaut : 480). | INT | Oui | 16 à 8192 (pas : 16) |
+| `longueur` | Le nombre total d'images de la vidéo générée (par défaut : 81). | INT | Oui | 1 à 1024 (pas : 4) |
+| `taille_du_lot` | Le nombre de séquences vidéo à générer dans un seul lot (par défaut : 1). | INT | Oui | 1 à 64 |
 
 Remarque : l'image de départ est redimensionnée aux valeurs `width` et `height` spécifiées avant d'être encodée. La dimension temporelle latente est calculée comme `((length - 1) // 4) + 1`, et les dimensions spatiales latentes sont `height / 8` et `width / 8`.
 

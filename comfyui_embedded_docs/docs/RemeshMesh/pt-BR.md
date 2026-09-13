@@ -8,10 +8,10 @@ Remesh Mesh reconstrói uma malha com uma tesselação limpa e uniforme, amostra
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `mesh` | A malha de entrada a ser remalhada. | MESH | Sim | — |
-| `resolution` | Resolução da grade de voxels (densidade de saída). 256 ~ 100 mil faces, 512 ~ 1M. Para uma contagem exata de faces, prossiga com Decimate Mesh. (padrão: 512) | INT | Sim | 32 - 2048 |
+| `malha` | A malha de entrada a ser remalhada. | MESH | Sim | — |
+| `resolução` | Resolução da grade de voxels (densidade de saída). 256 ~ 100 mil faces, 512 ~ 1M. Para uma contagem exata de faces, prossiga com Decimate Mesh. (padrão: 512) | INT | Sim | 32 - 2048 |
 | `sign_mode` | Modo de extração de superfície. "udf" é robusto para entradas bagunçadas/não-manifold; "sdf" produz uma superfície única limpa com recuperação de características nítidas por QEF (Função de Erro Quadrático), mas exige ordem de winding consistente. Selecionar um modo revela suas subopções específicas. (padrão: "udf") | DYNAMIC_COMBO | Sim | "udf"<br>"sdf" |
-| `band` | Largura da banda estreita em unidades de voxel. No modo UDF, também desloca a superfície. (avançado, padrão: 1.0) | FLOAT | Sim | 0.5 - 4.0 |
+| `banda` | Largura da banda estreita em unidades de voxel. No modo UDF, também desloca a superfície. (avançado, padrão: 1.0) | FLOAT | Sim | 0.5 - 4.0 |
 | `project_back` | Interpola linearmente os vértices em direção à superfície original (0 = DC puro, 1 = ajustado). (avançado, padrão: 0.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `fix_poles` | Colapsa pares de vértices de valência 3 (artefato de junção em T do DC). (avançado, padrão: false) | BOOLEAN | Sim | true / false |
 | `smooth_iters` | Iterações de suavização de Taubin (0 = desativado). 2-3 limpam artefatos semelhantes a escadas do DC; valores mais altos suavizam demais as arestas QEF. (padrão: 0) | INT | Sim | 0 - 20 |

@@ -6,7 +6,7 @@ Bu düğüm, deneysel Stable Cascade grubunun bir parçasıdır. Bir girdi gör�
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `image` | Süper çözünürlük için işlenecek girdi görüntüsü. Kodlama için görüntünün yalnızca ilk 3 renk kanalı (RGB) kullanılır. | IMAGE | Evet | - |
+| `görüntü` | Süper çözünürlük için işlenecek girdi görüntüsü. Kodlama için görüntünün yalnızca ilk 3 renk kanalı (RGB) kullanılır. | IMAGE | Evet | - |
 | `vae` | Girdi görüntüsünü kodlamak için kullanılan VAE modeli | VAE | Evet | - |
 
 ## Çıktılar

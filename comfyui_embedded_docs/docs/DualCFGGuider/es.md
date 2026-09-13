@@ -6,13 +6,13 @@ El nodo Dual CFG Guider crea un sistema de guía para el muestreo que utiliza do
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo que se utilizará para la guía | MODEL | Sí | - |
+| `modelo` | El modelo que se utilizará para la guía | MODEL | Sí | - |
 | `cond1` | La primera entrada de condicionamiento positivo | CONDITIONING | Sí | - |
 | `cond2` | La segunda entrada de condicionamiento, utilizada como referencia entre el primer condicionamiento positivo y el condicionamiento negativo | CONDITIONING | Sí | - |
-| `negative` | La entrada de condicionamiento negativo | CONDITIONING | Sí | - |
+| `negativo` | La entrada de condicionamiento negativo | CONDITIONING | Sí | - |
 | `cfg_conds` | Escala de guía aplicada al primer condicionamiento positivo (predeterminado: 8.0) | FLOAT | Sí | 0.0 - 100.0 |
-| `cfg_cond2_negative` | Escala de guía aplicada entre el segundo condicionamiento y el condicionamiento negativo (predeterminado: 8.0) | FLOAT | Sí | 0.0 - 100.0 |
-| `style` | El estilo de guía que se aplicará (predeterminado: "regular"). Cuando se establece en "nested", la guía se aplica de forma anidada | COMBO | Sí | "regular"<br>"nested" |
+| `cfg_cond2_negativo` | Escala de guía aplicada entre el segundo condicionamiento y el condicionamiento negativo (predeterminado: 8.0) | FLOAT | Sí | 0.0 - 100.0 |
+| `estilo` | El estilo de guía que se aplicará (predeterminado: "regular"). Cuando se establece en "nested", la guía se aplica de forma anidada | COMBO | Sí | "regular"<br>"nested" |
 
 Nota: En el estilo `regular`, `cfg_cond2_negative` se aplica entre `cond2` y `negative`, y `cfg_conds` se aplica entre `cond1` y `cond2`. En el estilo `nested`, `cfg_conds` se aplica primero entre `cond1` y `cond2`, y la predicción resultante luego se guía para alejarse de `negative` usando `cfg_cond2_negative`.
 

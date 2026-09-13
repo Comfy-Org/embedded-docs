@@ -6,14 +6,14 @@ El nodo Wan Text to Image genera imágenes a partir de descripciones de texto. U
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo que se va a usar (predeterminado: "wan2.5-t2i-preview") | STRING | Sí | "wan2.5-t2i-preview" |
-| `prompt` | Prompt que describe los elementos y las características visuales. Admite inglés y chino (predeterminado: vacío) | STRING | Sí | - |
-| `negative_prompt` | Prompt negativo que describe lo que se debe evitar (predeterminado: vacío) | STRING | No | - |
-| `width` | Ancho de la imagen en píxeles (predeterminado: 1024, paso: 32) | INT | No | 768-1440 |
-| `height` | Alto de la imagen en píxeles (predeterminado: 1024, paso: 32) | INT | No | 768-1440 |
-| `seed` | Semilla que se va a usar para la generación (predeterminado: 0) | INT | No | 0-2147483647 |
-| `prompt_extend` | Indica si se debe mejorar el prompt con asistencia de IA (predeterminado: True) | BOOLEAN | No | - |
-| `watermark` | Indica si se debe agregar una marca de agua generada por IA al resultado (predeterminado: False) | BOOLEAN | No | - |
+| `modelo` | Modelo que se va a usar (predeterminado: "wan2.5-t2i-preview") | STRING | Sí | "wan2.5-t2i-preview" |
+| `texto_entrada` | Prompt que describe los elementos y las características visuales. Admite inglés y chino (predeterminado: vacío) | STRING | Sí | - |
+| `texto_negativo` | Prompt negativo que describe lo que se debe evitar (predeterminado: vacío) | STRING | No | - |
+| `ancho` | Ancho de la imagen en píxeles (predeterminado: 1024, paso: 32) | INT | No | 768-1440 |
+| `alto` | Alto de la imagen en píxeles (predeterminado: 1024, paso: 32) | INT | No | 768-1440 |
+| `semilla` | Semilla que se va a usar para la generación (predeterminado: 0) | INT | No | 0-2147483647 |
+| `extender_texto` | Indica si se debe mejorar el prompt con asistencia de IA (predeterminado: True) | BOOLEAN | No | - |
+| `marca_agua` | Indica si se debe agregar una marca de agua generada por IA al resultado (predeterminado: False) | BOOLEAN | No | - |
 
 ## Salidas
 

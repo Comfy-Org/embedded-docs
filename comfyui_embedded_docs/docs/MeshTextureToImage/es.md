@@ -6,7 +6,7 @@ Este nodo extrae las texturas horneadas de una malla y las devuelve como imágen
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `mesh` | La malla cuyas texturas horneadas se extraen. La malla debe tener una textura de color base; las mallas que solo tienen colores de vértice (por ejemplo, después de un nodo PaintMesh) no contienen una textura y provocan un error. | MESH | Sí | — |
+| `malla` | La malla cuyas texturas horneadas se extraen. La malla debe tener una textura de color base; las mallas que solo tienen colores de vértice (por ejemplo, después de un nodo PaintMesh) no contienen una textura y provocan un error. | MESH | Sí | — |
 
 Nota: La malla debe tener una textura de color base horneada. Si no la tiene, el nodo genera un error y recomienda ejecutar BakeTextureFromVoxel primero. Cuando falta la textura de metallic-roughness, las salidas `metallic` y `roughness` son negras (0). La salida `occlusion` es blanca a menos que la malla contenga oclusión ambiental horneada (está activado el indicador occlusion-in-metallic-roughness de la malla). La salida `normal_map` es un azul neutro plano cuando no se horneó ningún mapa de normales.
 

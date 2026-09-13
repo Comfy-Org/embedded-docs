@@ -10,10 +10,10 @@ Bria Expand Image étend une image au-delà de ses bordures d'origine en génér
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image d'entrée à étendre. | IMAGE | Oui | — |
 | `expand_mode` | Forme cible de l'image étendue : un rapport d'aspect prédéfini, un rapport personnalisé, ou un placement manuel de l'image d'origine sur un canevas. Le mode manuel est le seul qui puisse atteindre un canevas plus haut qu'un rapport 1:2. Sélectionner `custom_ratio` révèle `ratio_width` et `ratio_height`. Sélectionner `manual` révèle les paramètres de canevas et de placement de l'image. | DYNAMIC_COMBO | Oui | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"custom_ratio"`<br>`"manual"` |
-| `prompt` | Description facultative de la scène étendue ; lorsqu'elle est vide, Bria en génère une à partir de l'image. Valeur par défaut : chaîne vide. | STRING | Oui | Toute chaîne |
+| `texte d’invite` | Description facultative de la scène étendue ; lorsqu'elle est vide, Bria en génère une à partir de l'image. Valeur par défaut : chaîne vide. | STRING | Oui | Toute chaîne |
 | `negative_prompt` | Un prompt négatif facultatif pour l'extension. Valeur par défaut : chaîne vide. | STRING | Oui | Toute chaîne |
-| `seed` | Graine pour le processus de génération aléatoire. Valeur par défaut : 42. | INT | Oui | 1–2147483647 |
-| `moderation` | Paramètres de modération. Lorsqu'il est défini sur `true`, des options de modération supplémentaires sont affichées. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
+| `graine` | Graine pour le processus de génération aléatoire. Valeur par défaut : 42. | INT | Oui | 1–2147483647 |
+| `modération` | Paramètres de modération. Lorsqu'il est défini sur `true`, des options de modération supplémentaires sont affichées. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
 
 ### Entrées de ratio personnalisé
 

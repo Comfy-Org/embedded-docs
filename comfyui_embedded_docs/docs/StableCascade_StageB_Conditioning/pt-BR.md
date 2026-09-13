@@ -6,7 +6,7 @@ O nó StableCascade_StageB_Conditioning prepara dados de condicionamento para a 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Os dados de condicionamento a serem modificados com a informação prévia do Stage C. Cada entrada na lista é copiada e recebe as amostras do Stage C. | CONDITIONING | Sim | - |
+| `condicionamento` | Os dados de condicionamento a serem modificados com a informação prévia do Stage C. Cada entrada na lista é copiada e recebe as amostras do Stage C. | CONDITIONING | Sim | - |
 | `stage_c` | A representação latente do Stage C. Seu valor `samples` é usado como a informação prévia adicionada ao condicionamento. | LATENT | Sim | - |
 
 ## Saídas

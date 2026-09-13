@@ -8,8 +8,8 @@ The **Save Image (Advanced)** node saves the input images to your ComfyUI output
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `images` | Kaydedilecek görüntüler. | IMAGE | Evet | - |
-| `filename_prefix` | Kaydedilecek dosya için ön ek. `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme belirteçleri içerebilir. (varsayılan: "ComfyUI") | STRING | Evet | - |
+| `görüntüler` | Kaydedilecek görüntüler. | IMAGE | Evet | - |
+| `dosya_adı_ön_eki` | Kaydedilecek dosya için ön ek. `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme belirteçleri içerebilir. (varsayılan: "ComfyUI") | STRING | Evet | - |
 | `format` | Görüntünün kaydedileceği dosya biçimi. Bir biçim seçildiğinde o biçime yönelik ek seçenekler görünür. | DYNAMIC_COMBO | Evet | `"png"`<br>`"exr"`<br>`"avif"` |
 
 ### PNG Girdileri

@@ -6,8 +6,8 @@ Este nó salva dados de áudio em um arquivo no formato FLAC. Ele recebe uma ent
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Range |
 |-----------|-------------|-----------|----------|-------|
-| `audio` | Os dados de áudio a serem salvos | AUDIO | Sim | - |
-| `filename_prefix` | O prefixo para o nome do arquivo de saída (padrão: "audio/ComfyUI") | STRING | Não | - |
+| `áudio` | Os dados de áudio a serem salvos | AUDIO | Sim | - |
+| `prefixo_do_arquivo` | O prefixo para o nome do arquivo de saída (padrão: "audio/ComfyUI") | STRING | Não | - |
 
 *Nota: Os parâmetros `prompt` e `extra_pnginfo` são ocultos e gerenciados automaticamente pelo sistema.*
 

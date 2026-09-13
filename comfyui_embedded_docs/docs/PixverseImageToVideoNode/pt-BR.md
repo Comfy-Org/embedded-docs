@@ -6,13 +6,13 @@ Gera um vídeo a partir de uma imagem estática e um prompt de texto usando PixV
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Imagem de entrada a ser transformada em vídeo | IMAGE | Sim | - |
+| `imagem` | Imagem de entrada a ser transformada em vídeo | IMAGE | Sim | - |
 | `prompt` | Prompt para a geração do vídeo (padrão: string vazia) | STRING | Sim | - |
-| `quality` | Configuração de qualidade do vídeo (padrão: res_540p) | COMBO | Sim | `res_540p`<br>`res_1080p` |
-| `duration_seconds` | Duração do vídeo gerado em segundos | COMBO | Sim | `dur_2`<br>`dur_5`<br>`dur_10` |
-| `motion_mode` | Estilo de movimento aplicado à geração do vídeo | COMBO | Sim | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` |
-| `seed` | Semente para a geração do vídeo (padrão: 0) | INT | Sim | 0-2147483647 |
-| `negative_prompt` | Uma descrição textual opcional de elementos indesejados em uma imagem (padrão: string vazia) | STRING | Não | - |
+| `qualidade` | Configuração de qualidade do vídeo (padrão: res_540p) | COMBO | Sim | `res_540p`<br>`res_1080p` |
+| `duração_segundos` | Duração do vídeo gerado em segundos | COMBO | Sim | `dur_2`<br>`dur_5`<br>`dur_10` |
+| `modo_de_movimento` | Estilo de movimento aplicado à geração do vídeo | COMBO | Sim | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` |
+| `semente` | Semente para a geração do vídeo (padrão: 0) | INT | Sim | 0-2147483647 |
+| `prompt_negativo` | Uma descrição textual opcional de elementos indesejados em uma imagem (padrão: string vazia) | STRING | Não | - |
 | `pixverse_template` | Um template opcional para influenciar o estilo da geração, criado pelo nó PixVerse Template | CUSTOM | Não | - |
 
 **Nota:** Ao usar a qualidade 1080p, o modo de movimento é automaticamente definido como normal e a duração é limitada a 5 segundos. Para durações diferentes de 5 segundos, o modo de movimento também é automaticamente definido como normal.

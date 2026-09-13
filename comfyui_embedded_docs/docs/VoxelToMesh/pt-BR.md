@@ -7,8 +7,8 @@ O nó VoxelToMesh converte dados de voxel 3D em geometria de malha extraindo uma
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `voxel` | Os dados de voxel de entrada a serem convertidos em geometria de malha | VOXEL | Sim | - |
-| `algorithm` | O algoritmo usado para extração de superfície. "surface net" produz malhas mais suaves, enquanto "basic" cria faces simples semelhantes a caixas (padrão: "surface net") | COMBO | Sim | `"surface net"`<br>`"basic"` |
-| `threshold` | O valor de limiar para extração de superfície. Voxels com valores acima deste limiar são considerados sólidos (padrão: 0.6) | FLOAT | Sim | -1.0 a 1.0 |
+| `algoritmo` | O algoritmo usado para extração de superfície. "surface net" produz malhas mais suaves, enquanto "basic" cria faces simples semelhantes a caixas (padrão: "surface net") | COMBO | Sim | `"surface net"`<br>`"basic"` |
+| `limiar` | O valor de limiar para extração de superfície. Voxels com valores acima deste limiar são considerados sólidos (padrão: 0.6) | FLOAT | Sim | -1.0 a 1.0 |
 
 ## Saídas
 

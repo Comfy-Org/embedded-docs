@@ -6,11 +6,11 @@ El nodo SamplerCustomAdvanced realiza un muestreo avanzado en el espacio latente
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `noise` | El generador de ruido que proporciona el patrón de ruido inicial y la semilla para el proceso de muestreo | NOISE | Sí | - |
-| `guider` | El modelo de guiado que dirige el proceso de muestreo hacia la salida deseada | GUIDER | Sí | - |
-| `sampler` | El algoritmo de muestreo que define cómo se recorre el espacio latente durante la generación | SAMPLER | Sí | - |
+| `ruido` | El generador de ruido que proporciona el patrón de ruido inicial y la semilla para el proceso de muestreo | NOISE | Sí | - |
+| `guía` | El modelo de guiado que dirige el proceso de muestreo hacia la salida deseada | GUIDER | Sí | - |
+| `muestreador` | El algoritmo de muestreo que define cómo se recorre el espacio latente durante la generación | SAMPLER | Sí | - |
 | `sigmas` | El programa de sigmas que controla los niveles de ruido a lo largo de los pasos de muestreo | SIGMAS | Sí | - |
-| `latent_image` | La representación latente inicial que sirve como punto de partida para el muestreo. Admite una clave opcional `noise_mask` para el desruidado selectivo, y claves opcionales `downscale_ratio_spacial` y `downscale_ratio_temporal` para un manejo avanzado del latente | LATENT | Sí | - |
+| `imagen_latente` | La representación latente inicial que sirve como punto de partida para el muestreo. Admite una clave opcional `noise_mask` para el desruidado selectivo, y claves opcionales `downscale_ratio_spacial` y `downscale_ratio_temporal` para un manejo avanzado del latente | LATENT | Sí | - |
 
 ## Salidas
 

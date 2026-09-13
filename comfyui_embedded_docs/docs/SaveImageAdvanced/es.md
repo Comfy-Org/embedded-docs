@@ -8,9 +8,9 @@ El nodo **Save Image (Advanced)** guarda las imágenes de entrada en tu director
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `images` | Las imágenes que se van a guardar. | IMAGE | Sí | - |
-| `filename_prefix` | El prefijo del archivo que se va a guardar. Puede incluir tokens de formato como `%date:yyyy-MM-dd%` o `%Empty Latent Image.width%`. (predeterminado: "ComfyUI") | STRING | Sí | - |
-| `format` | El formato de archivo en el que se guardará la imagen. Al seleccionar un formato, se muestran opciones adicionales para ese formato. | DYNAMIC_COMBO | Sí | `"png"`<br>`"exr"`<br>`"avif"` |
+| `imágenes` | Las imágenes que se van a guardar. | IMAGE | Sí | - |
+| `prefijo_nombre_archivo` | El prefijo del archivo que se va a guardar. Puede incluir tokens de formato como `%date:yyyy-MM-dd%` o `%Empty Latent Image.width%`. (predeterminado: "ComfyUI") | STRING | Sí | - |
+| `formato` | El formato de archivo en el que se guardará la imagen. Al seleccionar un formato, se muestran opciones adicionales para ese formato. | DYNAMIC_COMBO | Sí | `"png"`<br>`"exr"`<br>`"avif"` |
 
 ### Entradas de PNG
 

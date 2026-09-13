@@ -6,8 +6,8 @@ SplitSigmasDenoise düğümü, bir sigma değerleri dizisini, bir gürültü gid
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `sigmas` | Gürültü çizelgesini temsil eden girdi sigma değerleri dizisi | SIGMAS | Evet | - |
-| `denoise` | Sigma dizisinin nerede bölüneceğini belirleyen gürültü giderme gücü faktörü (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
+| `sigmalar` | Gürültü çizelgesini temsil eden girdi sigma değerleri dizisi | SIGMAS | Evet | - |
+| `gürültü_azaltma` | Sigma dizisinin nerede bölüneceğini belirleyen gürültü giderme gücü faktörü (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
 
 ## Çıktılar
 

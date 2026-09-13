@@ -7,7 +7,7 @@ SVG dosyalarını diske kaydeder. Bu düğüm, girdi olarak SVG verisi alır ve 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `svg` | Diske kaydedilecek SVG verisi | SVG | Evet | - |
-| `filename_prefix` | Kaydedilecek dosyanın ön eki. Düğümlerden değerleri dahil etmek için %date:yyyy-MM-dd% veya %Empty Latent Image.width% gibi biçimlendirme bilgileri içerebilir. (varsayılan: "svg/ComfyUI") | STRING | Evet | - |
+| `dosya_adı_ön_eki` | Kaydedilecek dosyanın ön eki. Düğümlerden değerleri dahil etmek için %date:yyyy-MM-dd% veya %Empty Latent Image.width% gibi biçimlendirme bilgileri içerebilir. (varsayılan: "svg/ComfyUI") | STRING | Evet | - |
 
 ## Çıktılar
 

@@ -6,8 +6,8 @@ StableCascade_StageB_Conditioning düğümü, mevcut koşullandırma bilgisini S
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Stage C önceki bilgisiyle değiştirilecek koşullandırma verisi. Listedeki her giriş kopyalanır ve ona Stage C örnekleri atanır. | CONDITIONING | Evet | - |
-| `stage_c` | Stage C'den gelen latent temsili. `samples` değeri, koşullandırmaya eklenen önceki bilgi olarak kullanılır. | LATENT | Evet | - |
+| `koşullandırma` | Stage C önceki bilgisiyle değiştirilecek koşullandırma verisi. Listedeki her giriş kopyalanır ve ona Stage C örnekleri atanır. | CONDITIONING | Evet | - |
+| `aşama_c` | Stage C'den gelen latent temsili. `samples` değeri, koşullandırmaya eklenen önceki bilgi olarak kullanılır. | LATENT | Evet | - |
 
 ## Çıktılar
 

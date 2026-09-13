@@ -8,7 +8,7 @@ Bu düğüm, TripoSplat modeli için pozitif ve negatif koşullandırma verisi �
 |-----------|-------------|-----------|----------|-------|
 | `clip_vision` | DINOv3 ViT-H/16+ görüntü kodlayıcısı | CLIP_VISION | Evet | - |
 | `vae` | Flux2 VAE | VAE | Evet | - |
-| `image` | Kodlanacak giriş görüntüsü | IMAGE | Evet | - |
+| `görsel` | Kodlanacak giriş görüntüsü | IMAGE | Evet | - |
 
 ## Çıktılar
 

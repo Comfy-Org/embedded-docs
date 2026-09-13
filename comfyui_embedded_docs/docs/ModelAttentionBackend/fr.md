@@ -6,7 +6,7 @@ Ce nœud sélectionne l'implémentation d'attention dense pour un modèle, clone
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle à patcher. | MODEL | Oui |  |
+| `modèle` | Le modèle à patcher. | MODEL | Oui |  |
 | `attention` | Le backend d'attention dense à appliquer. L'attention Comfy Kitchen utilise une attention INT8 quantifiée et n'est disponible que sur les GPU Nvidia et AMD. Par défaut : "pytorch attention". Si le backend sélectionné n'est pas disponible, l'attention PyTorch est utilisée comme solution de repli. | COMBO | Oui | "pytorch attention"<br>"comfy kitchen attention" |
 
 Remarque : l'option "comfy kitchen attention" n'est listée que lorsque le module d'attention INT8 Comfy Kitchen est disponible dans l'environnement actuel.

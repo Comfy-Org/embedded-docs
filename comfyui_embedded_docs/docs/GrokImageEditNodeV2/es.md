@@ -8,9 +8,9 @@ Modifica una o más imágenes existentes basándose en un prompt de texto. El no
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | El modelo de imagen de Grok que se va a usar. Los subparámetros que se muestran a continuación cambian según el modelo seleccionado. | DYNAMIC_COMBO | Sí | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
+| `modelo` | El modelo de imagen de Grok que se va a usar. Los subparámetros que se muestran a continuación cambian según el modelo seleccionado. | DYNAMIC_COMBO | Sí | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
 | `prompt` | El prompt de texto utilizado para generar la imagen. (predeterminado: "") | STRING | Sí | N/A |
-| `seed` | Semilla que determina si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla. (predeterminado: 0) | INT | Sí | 0 a 2147483647 |
+| `semilla` | Semilla que determina si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla. (predeterminado: 0) | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de grok-imagine-image-2.0
 

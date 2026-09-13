@@ -7,12 +7,12 @@ Le nœud LTXVAddGuide encode les images ou vidéos d'entrée via un encodeur VAE
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `positive` | Entrée de conditionnement positif à modifier avec le guidage par images clés. | CONDITIONING | Oui | - |
-| `negative` | Entrée de conditionnement négatif à modifier avec le guidage par images clés. | CONDITIONING | Oui | - |
+| `négatif` | Entrée de conditionnement négatif à modifier avec le guidage par images clés. | CONDITIONING | Oui | - |
 | `vae` | Modèle VAE utilisé pour encoder les trames d'image/vidéo d'entrée. | VAE | Oui | - |
 | `latent` | Séquence latente d'entrée qui recevra les trames de conditionnement. | LATENT | Oui | - |
 | `image` | Image ou vidéo à utiliser pour conditionner la vidéo latente. Doit comporter 8*n + 1 trames. Si la vidéo ne comporte pas 8*n + 1 trames, elle sera recadrée au nombre de trames 8*n + 1 le plus proche. | IMAGE | Oui | - |
-| `frame_idx` | Indice de trame auquel commencer le conditionnement. Pour les images à trame unique ou les vidéos de 1 à 8 trames, toute valeur de `frame_idx` est acceptable. Pour les vidéos de 9 trames ou plus, `frame_idx` doit être divisible par 8, sinon il sera arrondi au multiple de 8 inférieur le plus proche. Les valeurs négatives sont comptées depuis la fin de la vidéo. Par défaut : 0. | INT | Oui | -9999 à 9999 |
-| `strength` | Force de l'influence du conditionnement : 1.0 applique un conditionnement complet et 0.0 n'applique aucun conditionnement. Par défaut : 1.0. | FLOAT | Oui | 0.0 à 10.0 |
+| `indice_de_l'image` | Indice de trame auquel commencer le conditionnement. Pour les images à trame unique ou les vidéos de 1 à 8 trames, toute valeur de `frame_idx` est acceptable. Pour les vidéos de 9 trames ou plus, `frame_idx` doit être divisible par 8, sinon il sera arrondi au multiple de 8 inférieur le plus proche. Les valeurs négatives sont comptées depuis la fin de la vidéo. Par défaut : 0. | INT | Oui | -9999 à 9999 |
+| `force` | Force de l'influence du conditionnement : 1.0 applique un conditionnement complet et 0.0 n'applique aucun conditionnement. Par défaut : 1.0. | FLOAT | Oui | 0.0 à 10.0 |
 | `attention_mask` | Masque spatial facultatif dans l'espace pixel. Contrôle l'influence du conditionnement par région via l'auto-attention, multipliée par la force. | MASK | Non | - |
 | `iclora_parameters` | Paramètres IC-LoRA facultatifs provenant d'un nœud Get IC-LoRA Parameters. Utilisés pour ajuster le traitement des guides comme requis par certains IC-LoRA (par ex., ceux avec un reference_downscale_factor > 1). Lorsqu'ils sont chaînés, chaque LTXVAddGuide utilise uniquement les paramètres qui lui sont connectés. | IC_LORA_PARAMETERS | Non | - |
 

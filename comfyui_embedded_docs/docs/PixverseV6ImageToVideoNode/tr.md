@@ -8,7 +8,7 @@ Bu düğüm, bir giriş görüntüsünü PixVerse V6 modeliyle canlandırır ve 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Canlandırılacak giriş görüntüsü. | IMAGE | Evet | Tek görüntü |
+| `görüntü` | Canlandırılacak giriş görüntüsü. | IMAGE | Evet | Tek görüntü |
 | `model` | Model ve oluşturma ayarları. | DYNAMIC_COMBO | Evet | "PixVerse V6" |
 
 ### PixVerse V6 Girdileri

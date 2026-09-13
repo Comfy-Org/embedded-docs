@@ -6,11 +6,11 @@ Este nodo escala un latente de forma de resolución 512 a coordenadas dispersas 
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | El condicionamiento positivo al que se adjuntan los metadatos de forma de la etapa de escalado. | CONDITIONING | Sí | |
-| `negative` | El condicionamiento negativo al que se adjuntan los metadatos de forma de la etapa de escalado. | CONDITIONING | Sí | |
-| `shape_latent` | El latente de forma de resolución 512 generado por el primer KSampler de la etapa de forma. | LATENT | Sí | |
+| `positivo` | El condicionamiento positivo al que se adjuntan los metadatos de forma de la etapa de escalado. | CONDITIONING | Sí | |
+| `negativo` | El condicionamiento negativo al que se adjuntan los metadatos de forma de la etapa de escalado. | CONDITIONING | Sí | |
+| `latent de forma` | El latente de forma de resolución 512 generado por el primer KSampler de la etapa de forma. | LATENT | Sí | |
 | `vae` | El VAE de Trellis2 utilizado para decodificar el latente de forma en coordenadas dispersas de alta resolución. | VAE | Sí | |
-| `target_resolution` | Resolución de vóxel de la forma escalada. Mayor = más detalle, más VRAM. Predeterminado: 1024. | INT | Sí | 1024 - 2048 (paso 128) |
+| `resolución objetivo` | Resolución de vóxel de la forma escalada. Mayor = más detalle, más VRAM. Predeterminado: 1024. | INT | Sí | 1024 - 2048 (paso 128) |
 
 ## Salidas
 

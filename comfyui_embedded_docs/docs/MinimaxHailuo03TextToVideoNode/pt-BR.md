@@ -8,9 +8,9 @@ Este nó gera um vídeo a partir de um prompt de texto usando a família de mode
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a ser usado para geração de vídeo (padrão: "MiniMax H3"). Selecionar um modelo também exibe as configurações específicas do modelo descritas nas seções abaixo. | DYNAMIC_COMBO | Sim | "MiniMax H3"<br>"MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
-| `seed` | Semente aleatória. A mesma solicitação com a mesma semente fornece resultados semelhantes, mas não garante resultados idênticos (padrão: 42). | INT | Sim | 0 a 4294967295 |
-| `watermark` | Se deve adicionar uma marca d'água AIGC ao vídeo (padrão: false). Quando ativado, apenas o modelo "MiniMax H3" é compatível. | BOOLEAN | Não | true<br>false |
+| `modelo` | Modelo a ser usado para geração de vídeo (padrão: "MiniMax H3"). Selecionar um modelo também exibe as configurações específicas do modelo descritas nas seções abaixo. | DYNAMIC_COMBO | Sim | "MiniMax H3"<br>"MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `semente` | Semente aleatória. A mesma solicitação com a mesma semente fornece resultados semelhantes, mas não garante resultados idênticos (padrão: 42). | INT | Sim | 0 a 4294967295 |
+| `marca d'água` | Se deve adicionar uma marca d'água AIGC ao vídeo (padrão: false). Quando ativado, apenas o modelo "MiniMax H3" é compatível. | BOOLEAN | Não | true<br>false |
 
 ### Entradas do MiniMax H3
 

@@ -6,7 +6,7 @@ O Get Mesh Info informa o número de vértices e faces em uma malha, junto com o
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `mesh` | A malha a ser inspecionada. O nó conta seus vértices e faces, detecta quais atributos estão presentes e repassa a malha sem alterações. | MESH | Sim | — |
+| `malha` | A malha a ser inspecionada. O nó conta seus vértices e faces, detecta quais atributos estão presentes e repassa a malha sem alterações. | MESH | Sim | — |
 
 Observação: Quando a entrada contém várias malhas (um lote), o relatório mostra contagens totais de vértices e faces para todo o lote, além de um detalhamento por malha. Para lotes preenchidos com zeros (zero-padded), são usadas as contagens por item armazenadas nos dados da malha.
 

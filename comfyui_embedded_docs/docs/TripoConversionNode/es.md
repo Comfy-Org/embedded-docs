@@ -6,12 +6,12 @@ Este nodo convierte un modelo 3D existente de Tripo a otro formato de archivo 3D
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `original_model_task_id` | ID de tarea del modelo de Tripo que se va a convertir. Debe provenir de una tarea anterior de generación de modelo, rigging, retargeting o segmentación de Tripo. Si el ID falta o está vacío, el nodo genera un error. | STRING | Sí | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID<br>SEGMENT_TASK_ID |
-| `format` | Formato de archivo de destino para el modelo 3D convertido. | COMBO | Sí | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF |
-| `quad` | Convertir triángulos en cuadriláteros (quads) cuando está habilitado (predeterminado: False). | BOOLEAN | No | True or False |
-| `face_limit` | Número máximo de caras en el modelo convertido. Establezca -1 para no limitar (predeterminado: -1). | INT | No | -1 a 2000000 |
-| `texture_size` | Resolución de las texturas de salida en píxeles (predeterminado: 4096). | INT | No | 128 a 8192 |
-| `texture_format` | Formato de archivo usado para las texturas exportadas (predeterminado: JPEG). | COMBO | No | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP |
+| `id_tarea_modelo_original` | ID de tarea del modelo de Tripo que se va a convertir. Debe provenir de una tarea anterior de generación de modelo, rigging, retargeting o segmentación de Tripo. Si el ID falta o está vacío, el nodo genera un error. | STRING | Sí | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID<br>SEGMENT_TASK_ID |
+| `formato` | Formato de archivo de destino para el modelo 3D convertido. | COMBO | Sí | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF |
+| `cuadrangular` | Convertir triángulos en cuadriláteros (quads) cuando está habilitado (predeterminado: False). | BOOLEAN | No | True or False |
+| `límite_caras` | Número máximo de caras en el modelo convertido. Establezca -1 para no limitar (predeterminado: -1). | INT | No | -1 a 2000000 |
+| `tamaño_textura` | Resolución de las texturas de salida en píxeles (predeterminado: 4096). | INT | No | 128 a 8192 |
+| `formato_textura` | Formato de archivo usado para las texturas exportadas (predeterminado: JPEG). | COMBO | No | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP |
 | `force_symmetry` | Forzar que el modelo sea simétrico cuando está habilitado (predeterminado: False). | BOOLEAN | No | True or False |
 | `flatten_bottom` | Aplanar la parte inferior del modelo cuando está habilitado (predeterminado: False). | BOOLEAN | No | True or False |
 | `flatten_bottom_threshold` | Profundidad de aplanado usada con `flatten_bottom` (predeterminado: 0.01). Este valor solo se aplica cuando `flatten_bottom` está habilitado. | FLOAT | No | 0.01 a 1.0 |

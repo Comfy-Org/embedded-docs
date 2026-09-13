@@ -9,8 +9,8 @@ T5TokenizerOptions düğümü, çeşitli T5 model türleri için tokenizer ayarl
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `clip` | Tokenizer seçeneklerinin yapılandırılacağı CLIP modeli | CLIP | Evet | - |
-| `min_padding` | Tüm T5 model türleri için ayarlanacak minimum dolgu değeri (varsayılan: 0) | INT | Evet | 0 ile 10000 |
-| `min_length` | Tüm T5 model türleri için ayarlanacak minimum uzunluk değeri (varsayılan: 0) | INT | Evet | 0 ile 10000 |
+| `min_dolgu` | Tüm T5 model türleri için ayarlanacak minimum dolgu değeri (varsayılan: 0) | INT | Evet | 0 ile 10000 |
+| `min_uzunluk` | Tüm T5 model türleri için ayarlanacak minimum uzunluk değeri (varsayılan: 0) | INT | Evet | 0 ile 10000 |
 
 Not: Bu düğüm ComfyUI'de deneysel olarak işaretlenmiştir. Ayarlar, desteklenen tüm T5 varyantlarına tek seferde uygulanır: t5xxl, pile_t5xl, t5base, mt5xl ve umt5xxl. `clip` girdisi değişiklikten önce klonlanır, böylece orijinal CLIP değiştirilmez.
 

@@ -6,12 +6,12 @@ O nó Meshy: Texture Model aplica texturas geradas por IA a um modelo 3D existen
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | A versão do modelo de IA a ser usada para texturização. | COMBO | Sim | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `modelo` | A versão do modelo de IA a ser usada para texturização. | COMBO | Sim | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `meshy_task_id` | O identificador exclusivo (ID da tarefa) de uma tarefa anterior de geração ou conversão 3D do Meshy. Ele fornece o modelo 3D base a ser texturizado. | MESHY_TASK_ID | Sim | - |
-| `enable_original_uv` | Usa o UV original do modelo em vez de gerar novos UVs. Quando habilitado (padrão: `True`), o Meshy preserva texturas existentes do modelo enviado. Se o modelo não tiver UV original, a qualidade da saída pode não ser tão boa. Esta é uma opção avançada. | BOOLEAN | Sim | true / false |
+| `habilitar_uv_original` | Usa o UV original do modelo em vez de gerar novos UVs. Quando habilitado (padrão: `True`), o Meshy preserva texturas existentes do modelo enviado. Se o modelo não tiver UV original, a qualidade da saída pode não ser tão boa. Esta é uma opção avançada. | BOOLEAN | Sim | true / false |
 | `pbr` | Habilita a saída de material com Renderização Baseada em Física (PBR) para o modelo texturizado (padrão: `False`). Esta é uma opção avançada. | BOOLEAN | Sim | true / false |
-| `text_style_prompt` | Descreva o estilo de textura desejado para o objeto usando texto (padrão: string vazia). Máximo de 600 caracteres. Não pode ser usado ao mesmo tempo que `image_style`. | STRING | Sim | - |
-| `image_style` | Uma imagem 2D para orientar o processo de texturização. Não pode ser usada ao mesmo tempo que `text_style_prompt`. | IMAGE | Não | - |
+| `prompt_de_estilo_textual` | Descreva o estilo de textura desejado para o objeto usando texto (padrão: string vazia). Máximo de 600 caracteres. Não pode ser usado ao mesmo tempo que `image_style`. | STRING | Sim | - |
+| `estilo_de_imagem` | Uma imagem 2D para orientar o processo de texturização. Não pode ser usada ao mesmo tempo que `text_style_prompt`. | IMAGE | Não | - |
 | `texture_resolution` | Resolução da textura de cor base. Resoluções mais altas capturam mais detalhes da superfície. | COMBO | Sim | `"2k"`<br>`"4k"`<br>`"8k"` |
 
 **Restrições de parâmetros:**

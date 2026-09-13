@@ -6,10 +6,10 @@ StableCascade_EmptyLatentImage düğümü, Stable Cascade modelleri için boş l
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `width` | Çıktı görüntüsünün piksel cinsinden genişliği (varsayılan: 1024, adım: 8) | INT | Evet | 256 - MAX_RESOLUTION |
-| `height` | Çıktı görüntüsünün piksel cinsinden yüksekliği (varsayılan: 1024, adım: 8) | INT | Evet | 256 - MAX_RESOLUTION |
-| `compression` | Stage C için latent boyutlarını belirleyen sıkıştırma faktörü (varsayılan: 42, adım: 1). Bu gelişmiş bir parametredir. | INT | Evet | 4 - 128 |
-| `batch_size` | Bir grupta oluşturulacak latent örnek sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `genişlik` | Çıktı görüntüsünün piksel cinsinden genişliği (varsayılan: 1024, adım: 8) | INT | Evet | 256 - MAX_RESOLUTION |
+| `yükseklik` | Çıktı görüntüsünün piksel cinsinden yüksekliği (varsayılan: 1024, adım: 8) | INT | Evet | 256 - MAX_RESOLUTION |
+| `sıkıştırma` | Stage C için latent boyutlarını belirleyen sıkıştırma faktörü (varsayılan: 42, adım: 1). Bu gelişmiş bir parametredir. | INT | Evet | 4 - 128 |
+| `toplu_boyut` | Bir grupta oluşturulacak latent örnek sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
 
 Not: `compression` değeri stage C latent boyutunu kontrol eder: yüksekliği ve genişliği, girdi `height` ve `width` değerlerinin `compression` değerine bölümüdür. Stage B latent her zaman sabit 4 sıkıştırması kullanır.
 

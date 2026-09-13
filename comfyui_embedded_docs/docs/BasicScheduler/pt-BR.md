@@ -6,10 +6,10 @@ O nó `BasicScheduler` é projetado para calcular uma sequência de valores sigm
 
 | Parâmetro | Descrição metafórica | Tipo de dados | Tipo de entrada | Padrão | Intervalo | Propósito técnico |
 | --- | --- | --- | --- | --- | --- | --- |
-| `model` | **Tipo de tela**: Diferentes materiais de tela precisam de diferentes fórmulas de tinta | MODEL | Entrada | - | - | Objeto de modelo de difusão, determina a base de cálculo de sigma |
-| `scheduler` | **Técnica de mistura**: Escolha como a concentração da tinta muda | COMBO[STRING] | Widget | - | 9 opções | Algoritmo de agendamento, controla o modo de decaimento do ruído |
-| `steps` | **Número de misturas**: diferença de precisão entre 20 misturas e 50 misturas | INT | Widget | 20 | 1-10000 | Etapas de amostragem, afeta a qualidade e a velocidade da geração |
-| `denoise` | **Intensidade de criação**: nível de controle de ajuste fino até repintura | FLOAT | Widget | 1.0 | 0.0-1.0 | Força de remoção de ruído, suporta cenários de repintura parcial |
+| `modelo` | **Tipo de tela**: Diferentes materiais de tela precisam de diferentes fórmulas de tinta | MODEL | Entrada | - | - | Objeto de modelo de difusão, determina a base de cálculo de sigma |
+| `agendador` | **Técnica de mistura**: Escolha como a concentração da tinta muda | COMBO[STRING] | Widget | - | 9 opções | Algoritmo de agendamento, controla o modo de decaimento do ruído |
+| `etapas` | **Número de misturas**: diferença de precisão entre 20 misturas e 50 misturas | INT | Widget | 20 | 1-10000 | Etapas de amostragem, afeta a qualidade e a velocidade da geração |
+| `reduzir_ruído` | **Intensidade de criação**: nível de controle de ajuste fino até repintura | FLOAT | Widget | 1.0 | 0.0-1.0 | Força de remoção de ruído, suporta cenários de repintura parcial |
 
 ### Tipos de agendador
 

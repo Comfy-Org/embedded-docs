@@ -15,7 +15,7 @@ O nó Kling Image Generation gera imagens a partir de prompts de texto com a op�
 | `aspect_ratio` | Proporção de aspecto para imagens geradas (padrão: "16:9") | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` |
 | `n` | Número de imagens geradas (padrão: 1) | INT | Sim | 1 - 9 |
 | `image` | Imagem de referência opcional | IMAGE | Não | - |
-| `seed` | A seed controla se o nó deve ser executado novamente; os resultados não são determinísticos independentemente da seed (padrão: 0) | INT | Não | 0 - 2147483647 |
+| `semente` | A seed controla se o nó deve ser executado novamente; os resultados não são determinísticos independentemente da seed (padrão: 0) | INT | Não | 0 - 2147483647 |
 
 **Restrições dos parâmetros:**
 

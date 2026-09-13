@@ -6,12 +6,12 @@ O nó VAEDecodeTiled decodifica representações latentes em imagens usando uma 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `samples` | A representação latente a ser decodificada em imagens | LATENT | Sim | - |
+| `amostras` | A representação latente a ser decodificada em imagens | LATENT | Sim | - |
 | `vae` | O modelo VAE usado para decodificar as amostras latentes | VAE | Sim | - |
-| `tile_size` | O tamanho de cada bloco para processamento (padrão: 512) | INT | Sim | 64-4096 (step: 32) |
-| `overlap` | A quantidade de sobreposição entre blocos adjacentes (padrão: 64) | INT | Sim | 0-4096 (step: 32) |
-| `temporal_size` | Usado apenas para VAEs de vídeo: quantidade de quadros a decodificar por vez (padrão: 64) | INT | Sim | 8-4096 (step: 4) |
-| `temporal_overlap` | Usado apenas para VAEs de vídeo: quantidade de quadros a sobrepor (padrão: 8) | INT | Sim | 4-4096 (step: 4) |
+| `tamanho_do_bloco` | O tamanho de cada bloco para processamento (padrão: 512) | INT | Sim | 64-4096 (step: 32) |
+| `sobreposição` | A quantidade de sobreposição entre blocos adjacentes (padrão: 64) | INT | Sim | 0-4096 (step: 32) |
+| `tamanho_temporal` | Usado apenas para VAEs de vídeo: quantidade de quadros a decodificar por vez (padrão: 64) | INT | Sim | 8-4096 (step: 4) |
+| `sobreposição_temporal` | Usado apenas para VAEs de vídeo: quantidade de quadros a sobrepor (padrão: 8) | INT | Sim | 4-4096 (step: 4) |
 
 **Nota:** As entradas `tile_size`, `overlap`, `temporal_size` e `temporal_overlap` estão marcadas como configurações avançadas.
 

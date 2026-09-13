@@ -6,8 +6,8 @@ Bu düğüm, ses verilerini FLAC formatında bir dosyaya kaydeder. Bir ses giri�
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `audio` | Kaydedilecek ses verileri | AUDIO | Evet | - |
-| `filename_prefix` | Çıktı dosya adı için ön ek (varsayılan: "audio/ComfyUI") | STRING | Hayır | - |
+| `ses` | Kaydedilecek ses verileri | AUDIO | Evet | - |
+| `dosyaadı_öneki` | Çıktı dosya adı için ön ek (varsayılan: "audio/ComfyUI") | STRING | Hayır | - |
 
 *Not: `prompt` ve `extra_pnginfo` parametreleri gizlidir ve sistem tarafından otomatik olarak işlenir.*
 

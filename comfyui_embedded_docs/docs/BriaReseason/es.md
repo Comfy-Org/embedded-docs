@@ -8,9 +8,9 @@ Este nodo mueve una imagen a una estación diferente usando Bria. Toda la escena
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `image` | La imagen que se va a mover a otra estación. Cualquier canal alfa se elimina antes de enviar la imagen. | IMAGE | Sí | - |
-| `season` | Estación que se aplicará. | COMBO | Sí | `"spring"`<br>`"summer"`<br>`"autumn"`<br>`"winter"` |
-| `moderation` | Configuración de moderación. Selecciona si las opciones de moderación de contenido se configuran para esta solicitud. | DYNAMIC_COMBO | Sí | `"false"`<br>`"true"` |
+| `imagen` | La imagen que se va a mover a otra estación. Cualquier canal alfa se elimina antes de enviar la imagen. | IMAGE | Sí | - |
+| `estación` | Estación que se aplicará. | COMBO | Sí | `"spring"`<br>`"summer"`<br>`"autumn"`<br>`"winter"` |
+| `moderación` | Configuración de moderación. Selecciona si las opciones de moderación de contenido se configuran para esta solicitud. | DYNAMIC_COMBO | Sí | `"false"`<br>`"true"` |
 
 ### Entradas de moderación
 

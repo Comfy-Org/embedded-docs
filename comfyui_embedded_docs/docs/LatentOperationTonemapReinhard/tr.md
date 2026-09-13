@@ -6,7 +6,7 @@ Bu düğüm, latent vektörlere Reinhard ton eşlemesi uygulayan bir latent işl
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `multiplier` | Ton eşleme etkisinin yoğunluğunu kontrol eder (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 100.0 (adım 0.01) |
+| `çarpan` | Ton eşleme etkisinin yoğunluğunu kontrol eder (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 100.0 (adım 0.01) |
 
 ## Çıktılar
 

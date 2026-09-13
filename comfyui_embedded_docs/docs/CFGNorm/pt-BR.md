@@ -6,8 +6,8 @@ CFGNorm ajusta como a orientação livre de classificador (CFG) é aplicada em m
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo de difusão ao qual aplicar a normalização de CFG | MODEL | Sim | - |
-| `strength` | Controla a intensidade do efeito de normalização aplicado ao escalonamento CFG (padrão: 1.0) | FLOAT | Sim | 0.0 a 100.0 (passo 0.01) |
+| `modelo` | O modelo de difusão ao qual aplicar a normalização de CFG | MODEL | Sim | - |
+| `força` | Controla a intensidade do efeito de normalização aplicado ao escalonamento CFG (padrão: 1.0) | FLOAT | Sim | 0.0 a 100.0 (passo 0.01) |
 | `pre_cfg` | Se true, reescalona o ruído combinado ANTES da combinação CFG do amostrador, sem clamping (pode amplificar). Corresponde ao CFG com escala por norma usado por modelos como Lens. O padrão false mantém o comportamento original pós-CFG no espaço x0 de apenas atenuação. (padrão: False) | BOOLEAN | Não | true / false |
 
 Observação: Este nó está marcado como experimental.

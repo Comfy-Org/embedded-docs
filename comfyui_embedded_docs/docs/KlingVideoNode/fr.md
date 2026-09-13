@@ -9,24 +9,24 @@ Ce nœud génère des vidéos avec le modèle Kling V3. Il prend en charge le te
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `multi_shot` | Générer une série de segments vidéo avec des invites et des durées individuelles. Lorsqu'il est défini sur une option de storyboard, des entrées supplémentaires pour l'invite et la durée de chaque storyboard apparaissent. | DYNAMIC_COMBO | Oui | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | Lorsqu'activé, le nœud génère de l'audio pour la vidéo. Remarque : `"kling-3.0-turbo"` génère toujours de l'audio natif, donc l'option audio est ignorée pour ce modèle. La valeur par défaut est True. | BOOLEAN | Oui | True<br>False |
-| `model` | Modèle et paramètres de génération. La sélection d'un modèle révèle ses sous-paramètres de résolution et de rapport d'aspect. | DYNAMIC_COMBO | Oui | `"kling-v3"`<br>`"kling-3.0-turbo"` |
+| `générer audio` | Lorsqu'activé, le nœud génère de l'audio pour la vidéo. Remarque : `"kling-3.0-turbo"` génère toujours de l'audio natif, donc l'option audio est ignorée pour ce modèle. La valeur par défaut est True. | BOOLEAN | Oui | True<br>False |
+| `modèle` | Modèle et paramètres de génération. La sélection d'un modèle révèle ses sous-paramètres de résolution et de rapport d'aspect. | DYNAMIC_COMBO | Oui | `"kling-v3"`<br>`"kling-3.0-turbo"` |
 | `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. La valeur par défaut est 0. | INT | Oui | 0 à 2147483647 |
-| `start_frame` | Image de début facultative. Lorsqu'elle est connectée, bascule en mode image-vers-vidéo. | IMAGE | Non | - |
+| `image de départ` | Image de début facultative. Lorsqu'elle est connectée, bascule en mode image-vers-vidéo. | IMAGE | Non | - |
 
 ### Entrées kling-v3
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model.resolution` | La résolution de la vidéo générée. La valeur par défaut est `"1080p"`. | COMBO | Oui | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | Le rapport d'aspect de la vidéo générée. Ignoré en mode image-vers-vidéo. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `résolution` | La résolution de la vidéo générée. La valeur par défaut est `"1080p"`. | COMBO | Oui | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `ratio d’aspect` | Le rapport d'aspect de la vidéo générée. Ignoré en mode image-vers-vidéo. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
 ### Entrées kling-3.0-turbo
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model.resolution` | La résolution de la vidéo générée. La valeur par défaut est `"720p"`. | COMBO | Oui | `"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | Le rapport d'aspect de la vidéo générée. Ignoré en mode image-vers-vidéo. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `résolution` | La résolution de la vidéo générée. La valeur par défaut est `"720p"`. | COMBO | Oui | `"1080p"`<br>`"720p"` |
+| `ratio d’aspect` | Le rapport d'aspect de la vidéo générée. Ignoré en mode image-vers-vidéo. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
 ### Entrées multi-plans
 

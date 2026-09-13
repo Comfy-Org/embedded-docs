@@ -6,7 +6,7 @@ O nó LatentUpscaleModelLoader carrega um modelo especializado em upscale de rep
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model_name` | O nome do arquivo de modelo de upscale latente a ser carregado. As opções disponíveis são preenchidas dinamicamente a partir dos arquivos presentes no diretório `latent_upscale_models` do ComfyUI. | COMBO | Sim | Todos os arquivos na pasta `latent_upscale_models` |
+| `nome_do_modelo` | O nome do arquivo de modelo de upscale latente a ser carregado. As opções disponíveis são preenchidas dinamicamente a partir dos arquivos presentes no diretório `latent_upscale_models` do ComfyUI. | COMBO | Sim | Todos os arquivos na pasta `latent_upscale_models` |
 
 ## Saídas
 

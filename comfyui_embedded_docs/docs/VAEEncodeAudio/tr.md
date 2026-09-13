@@ -6,7 +6,7 @@ VAE Encode Audio düğümü, ses verilerini bir Varyasyonel Otomatik Kodlayıcı
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `audio` | Kodlanacak ses verisi; dalga formu ve örnekleme hızı bilgilerini içerir | AUDIO | Evet | - |
+| `ses` | Kodlanacak ses verisi; dalga formu ve örnekleme hızı bilgilerini içerir | AUDIO | Evet | - |
 | `vae` | Sesi gizli uzaya kodlamak için kullanılan Varyasyonel Otomatik Kodlayıcı modeli | VAE | Evet | - |
 
 **Not:** Orijinal örnekleme hızı bu değerden farklıysa, ses girdisi VAE'nin beklediği örnekleme hızıyla (varsayılan: 44100 Hz) eşleşecek şekilde otomatik olarak yeniden örneklenir. Girdi sesi None ise (örneğin, kaynak videoda ses parçası yoksa), düğüm bir hata verir.

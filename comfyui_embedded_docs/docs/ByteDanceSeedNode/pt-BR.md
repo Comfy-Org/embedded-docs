@@ -9,9 +9,9 @@ Gere respostas de texto com os modelos Seed 2.0 da ByteDance. Forneça um prompt
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Entrada de texto para o modelo. (padrão: "") | STRING | Sim | N/A |
-| `model` | O modelo Seed usado para gerar a resposta. Este seletor também expõe os subparâmetros do modelo. | DYNAMIC_COMBO | Sim | `"Seed 2.0 Pro"`<br>`"Seed 2.0 Lite"`<br>`"Seed 2.0 Mini"` |
+| `modelo` | O modelo Seed usado para gerar a resposta. Este seletor também expõe os subparâmetros do modelo. | DYNAMIC_COMBO | Sim | `"Seed 2.0 Pro"`<br>`"Seed 2.0 Lite"`<br>`"Seed 2.0 Mini"` |
 | `seed` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed. (padrão: 0) | INT | Sim | 0 a 2147483647 |
-| `system_prompt` | Instruções fundamentais que determinam o comportamento do modelo. (padrão: "") | STRING | Não | N/A |
+| `prompt do sistema` | Instruções fundamentais que determinam o comportamento do modelo. (padrão: "") | STRING | Não | N/A |
 
 ### Entradas do modelo (compartilhadas por Seed 2.0 Pro, Seed 2.0 Lite e Seed 2.0 Mini)
 

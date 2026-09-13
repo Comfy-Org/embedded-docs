@@ -6,7 +6,7 @@ Este nodo desactiva por completo el embed de guía en Flux y en modelos similare
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Los datos de condicionamiento que se procesarán para eliminar la guía | CONDITIONING | Sí | - |
+| `acondicionamiento` | Los datos de condicionamiento que se procesarán para eliminar la guía | CONDITIONING | Sí | - |
 
 ## Salidas
 

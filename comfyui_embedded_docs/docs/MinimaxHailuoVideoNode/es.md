@@ -6,12 +6,12 @@ Genera videos a partir de prompts de texto utilizando el modelo MiniMax Hailuo-0
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `prompt_text` | Prompt de texto para guiar la generación del video (predeterminado: vacío). | STRING | Sí | - |
-| `seed` | La semilla aleatoria utilizada para crear el ruido (predeterminado: 0). | INT | No | 0 a 18446744073709551615 |
-| `first_frame_image` | Imagen opcional para usar como primer fotograma al generar un video. | IMAGE | No | - |
-| `prompt_optimizer` | Optimiza el prompt para mejorar la calidad de la generación cuando sea necesario (predeterminado: True). | BOOLEAN | No | True<br>False |
-| `duration` | La duración del video de salida en segundos (predeterminado: 6). | COMBO | No | 6<br>10 |
-| `resolution` | Las dimensiones de visualización del video. 1080p es 1920x1080, 768p es 1366x768 (predeterminado: "768P"). | COMBO | No | "768P"<br>"1080P" |
+| `texto_del_prompt` | Prompt de texto para guiar la generación del video (predeterminado: vacío). | STRING | Sí | - |
+| `semilla` | La semilla aleatoria utilizada para crear el ruido (predeterminado: 0). | INT | No | 0 a 18446744073709551615 |
+| `imagen_primer_fotograma` | Imagen opcional para usar como primer fotograma al generar un video. | IMAGE | No | - |
+| `optimizador_de_prompt` | Optimiza el prompt para mejorar la calidad de la generación cuando sea necesario (predeterminado: True). | BOOLEAN | No | True<br>False |
+| `duración` | La duración del video de salida en segundos (predeterminado: 6). | COMBO | No | 6<br>10 |
+| `resolución` | Las dimensiones de visualización del video. 1080p es 1920x1080, 768p es 1366x768 (predeterminado: "768P"). | COMBO | No | "768P"<br>"1080P" |
 
 **Nota:** Cuando `resolution` se establece en "1080P", `duration` se limita a 6 segundos. Cuando no se proporciona `first_frame_image`, `prompt_text` no debe estar vacío.
 

@@ -7,9 +7,9 @@ Bu düğüm, düşük çözünürlüklü görüntüleri artefaktları ve gürül
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Kullanılacak iyileştirme modeli. `generative_portrait` modeli portreler için optimize edilmiştir, `generative` ise genel amaçlı bir modeldir. | COMBO | Evet | `"generative_portrait"`<br>`"generative"` |
-| `image` | İyileştirilecek girdi görüntüsü. | IMAGE | Evet | - |
-| `upscale_factor` | Görüntünün boyutlarının ölçeklendirileceği faktör. 1 değeri ölçeklendirme olmadığı anlamına gelir, 2 boyutları ikiye katlar ve 4 boyutları dörde katlar. | COMBO | Evet | `1`<br>`2`<br>`4` |
-| `auto_downscale` | Çıktı sınırı aşacaksa girdi görüntüsünü otomatik olarak küçültür. (varsayılan: `False`) | BOOLEAN | Hayır | - |
+| `görüntü` | İyileştirilecek girdi görüntüsü. | IMAGE | Evet | - |
+| `büyütme_oranı` | Görüntünün boyutlarının ölçeklendirileceği faktör. 1 değeri ölçeklendirme olmadığı anlamına gelir, 2 boyutları ikiye katlar ve 4 boyutları dörde katlar. | COMBO | Evet | `1`<br>`2`<br>`4` |
+| `otomatik_küçültme` | Çıktı sınırı aşacaksa girdi görüntüsünü otomatik olarak küçültür. (varsayılan: `False`) | BOOLEAN | Hayır | - |
 
 **Not:** Hesaplanan çıktı boyutu (girdi genişliği × `upscale_factor` × girdi yüksekliği × `upscale_factor`) 32.000.000 pikseli (32MP) aşarsa ve `auto_downscale` devre dışıysa düğüm bir hata verir. `auto_downscale` etkinleştirildiğinde, düğüm çıktının 32MP sınırına sığması için girdi görüntüsü boyutunu veya ölçekleme faktörünü (ya da her ikisini) otomatik olarak azaltır. Seçilen `model` ve `upscale_factor`, hizmete gönderilen model adında birleştirilir.
 

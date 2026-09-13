@@ -6,10 +6,10 @@
 
 | Parâmetro | Descrição | Tipo de dado | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | A versão do modelo Seedream a ser usada para geração. Cada modelo tem capacidades e preços diferentes. | DYNAMIC_COMBO | Sim | `"seedream 5.0 pro"`<br>`"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
+| `modelo` | A versão do modelo Seedream a ser usada para geração. Cada modelo tem capacidades e preços diferentes. | DYNAMIC_COMBO | Sim | `"seedream 5.0 pro"`<br>`"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
 | `prompt` | Prompt de texto para criar ou editar uma imagem (padrão: string vazia). | STRING | Sim | N/A |
-| `seed` | Semente a ser usada para geração (padrão: 0). | INT | Sim | 0 a 2147483647 |
-| `watermark` | Indica se deve adicionar uma marca d'água "AI generated" à imagem (padrão: False). | BOOLEAN | Sim | True / False |
+| `semente` | Semente a ser usada para geração (padrão: 0). | INT | Sim | 0 a 2147483647 |
+| `marca d'água` | Indica se deve adicionar uma marca d'água "AI generated" à imagem (padrão: False). | BOOLEAN | Sim | True / False |
 | `thinking` | Ativa o raciocínio de otimização de prompt do modelo ('thinking') para melhor aderência. Pode aumentar substancialmente o tempo de geração — notavelmente no Seedream 5.0 Pro. Só pode ser desativado para texto-para-imagem (não quando imagens de referência são fornecidas) (padrão: True). | BOOLEAN | Não | True / False |
 
 ### Entradas do `seedream 5.0 pro`

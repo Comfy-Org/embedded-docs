@@ -6,7 +6,7 @@ Ce nœud convertit une représentation latente audio en une forme d'onde audio l
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `samples` | Les échantillons audio encodés dans l'espace latent qui seront décodés pour redevenir une forme d'onde audio. Si les échantillons portent leur propre taux d'échantillonnage, cette valeur est utilisée pour la sortie. | LATENT | Oui | - |
+| `échantillons` | Les échantillons audio encodés dans l'espace latent qui seront décodés pour redevenir une forme d'onde audio. Si les échantillons portent leur propre taux d'échantillonnage, cette valeur est utilisée pour la sortie. | LATENT | Oui | - |
 | `vae` | Le modèle d'auto-encodeur variationnel utilisé pour décoder les échantillons latents en audio. Son taux d'échantillonnage de sortie audio (44100 Hz par défaut) détermine le taux d'échantillonnage de la forme d'onde résultante lorsque les échantillons d'entrée n'en spécifient pas. | VAE | Oui | - |
 
 ## Sorties

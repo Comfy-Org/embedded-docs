@@ -6,7 +6,7 @@ O nó Get Video Components extrai todos os elementos principais de um arquivo de
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `video` | O vídeo do qual extrair os componentes. | VIDEO | Sim | - |
+| `vídeo` | O vídeo do qual extrair os componentes. | VIDEO | Sim | - |
 
 ## Saídas
 

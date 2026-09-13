@@ -7,14 +7,14 @@ Le nœud WanImageToVideo prépare les représentations de conditionnement et lat
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `positive` | Entrée de conditionnement positive utilisée pour guider la génération | CONDITIONING | Oui | - |
-| `negative` | Entrée de conditionnement négative utilisée pour guider la génération | CONDITIONING | Oui | - |
+| `négatif` | Entrée de conditionnement négative utilisée pour guider la génération | CONDITIONING | Oui | - |
 | `vae` | Modèle VAE utilisé pour encoder les images dans l’espace latent | VAE | Oui | - |
-| `width` | Largeur de la vidéo générée (par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `height` | Hauteur de la vidéo générée (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `length` | Nombre d’images dans la vidéo (par défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
-| `batch_size` | Nombre de vidéos à générer dans un lot (par défaut : 1) | INT | Oui | 1 à 4096 |
-| `clip_vision_output` | Sortie de vision CLIP facultative ajoutée comme conditionnement supplémentaire aux entrées positive et négative | CLIP_VISION_OUTPUT | Non | - |
-| `start_image` | Image de départ facultative utilisée pour initialiser la vidéo. Lorsqu’elle est fournie, elle est redimensionnée aux `width` et `height` spécifiés et placée au début de la séquence d’images ; toutes les images au-delà de `length` sont ignorées. Les images restantes sont remplies avec des valeurs de gris neutre (0,5). | IMAGE | Non | - |
+| `largeur` | Largeur de la vidéo générée (par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `hauteur` | Hauteur de la vidéo générée (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `longueur` | Nombre d’images dans la vidéo (par défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
+| `taille_du_lot` | Nombre de vidéos à générer dans un lot (par défaut : 1) | INT | Oui | 1 à 4096 |
+| `sortie_vision_clip` | Sortie de vision CLIP facultative ajoutée comme conditionnement supplémentaire aux entrées positive et négative | CLIP_VISION_OUTPUT | Non | - |
+| `image_de_départ` | Image de départ facultative utilisée pour initialiser la vidéo. Lorsqu’elle est fournie, elle est redimensionnée aux `width` et `height` spécifiés et placée au début de la séquence d’images ; toutes les images au-delà de `length` sont ignorées. Les images restantes sont remplies avec des valeurs de gris neutre (0,5). | IMAGE | Non | - |
 
 **Remarque :** Lorsque `start_image` est fournie, la séquence d’images est encodée avec le VAE et un masque est appliqué au conditionnement. Le masque est défini à 0 pour les images couvertes par l’image de départ et à 1 pour les images restantes, afin que la génération se poursuive à partir de l’image fournie. Seuls les trois premiers canaux de couleur (RVB) de l’image sont utilisés lors de l’encodage. Les conditionnements positif et négatif reçoivent tous deux la même image latente concaténée, le masque et (si fournie) la sortie de vision CLIP.
 

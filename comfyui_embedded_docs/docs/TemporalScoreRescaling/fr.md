@@ -6,7 +6,7 @@ Ce nœud applique le Temporal Score Rescaling (TSR) à un modèle de diffusion. 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle de diffusion auquel appliquer le patch de la fonction TSR. | MODEL | Oui | - |
+| `modèle` | Le modèle de diffusion auquel appliquer le patch de la fonction TSR. | MODEL | Oui | - |
 | `tsr_k` | Contrôle l'intensité de la remise à l'échelle. Un k plus faible produit des résultats plus détaillés ; un k plus élevé produit des résultats plus lisses en génération d'images. Définir k = 1 désactive la remise à l'échelle. (défaut : 0.95) | FLOAT | Oui | 0.01 - 100.0 |
 | `tsr_sigma` | Contrôle la précocité de l'activation de la remise à l'échelle. Des valeurs plus grandes prennent effet plus tôt. (défaut : 1.0) | FLOAT | Oui | 0.01 - 100.0 |
 

@@ -6,7 +6,7 @@ Este nodo aplica el Reescalado Temporal de Puntuaciones (Temporal Score Rescalin
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de difusión al que se aplicará el parche con la función TSR. | MODEL | Sí | - |
+| `modelo` | El modelo de difusión al que se aplicará el parche con la función TSR. | MODEL | Sí | - |
 | `tsr_k` | Controla la intensidad del reescalado. Un valor de k más bajo produce resultados más detallados; un valor de k más alto produce resultados más suaves en la generación de imágenes. Establecer k = 1 desactiva el reescalado. (predeterminado: 0.95) | FLOAT | Sí | 0.01 - 100.0 |
 | `tsr_sigma` | Controla con qué antelación surte efecto el reescalado. Los valores más grandes surten efecto antes. (predeterminado: 1.0) | FLOAT | Sí | 0.01 - 100.0 |
 

@@ -6,13 +6,13 @@ SAM3'ün bellek tabanlı izleyicisini kullanarak nesneleri video kareleri boyunc
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `images` | Toplu görüntüler olarak video kareleri | IMAGE | Evet | Toplu video kareleri |
+| `görüntüler` | Toplu görüntüler olarak video kareleri | IMAGE | Evet | Toplu video kareleri |
 | `model` | İzleme için kullanılacak SAM3 modeli | MODEL | Evet | SAM3 modeli |
-| `initial_mask` | İzlenecek ilk kare için maskeler (nesne başına bir tane) | MASK | Hayır | Nesne başına bir maske |
-| `conditioning` | İzleme sırasında yeni nesneleri algılamak için metin koşullandırması | CONDITIONING | Hayır | Metin koşullandırması |
-| `detection_threshold` | Metin istemiyle algılama için puan eşiği (varsayılan: 0.5) | FLOAT | Hayır | 0.0 ile 1.0 arası (adım 0.01) |
-| `max_objects` | Maksimum izlenen nesne sayısı. Başlangıç maskeleri bu sınıra dahildir. 0, dahili 64 üst sınırını kullanır. (varsayılan: 4) | INT | Hayır | 0 ile 64 arası |
-| `detect_interval` | Algılamayı her N karede bir çalıştır (1=her kare). Daha yüksek değerler hesaplamadan tasarruf sağlar. (varsayılan: 1) | INT | Hayır | 1 veya daha yüksek |
+| `ilk_maske` | İzlenecek ilk kare için maskeler (nesne başına bir tane) | MASK | Hayır | Nesne başına bir maske |
+| `koşullandırma` | İzleme sırasında yeni nesneleri algılamak için metin koşullandırması | CONDITIONING | Hayır | Metin koşullandırması |
+| `tespit_eşiği` | Metin istemiyle algılama için puan eşiği (varsayılan: 0.5) | FLOAT | Hayır | 0.0 ile 1.0 arası (adım 0.01) |
+| `maks_nesne` | Maksimum izlenen nesne sayısı. Başlangıç maskeleri bu sınıra dahildir. 0, dahili 64 üst sınırını kullanır. (varsayılan: 4) | INT | Hayır | 0 ile 64 arası |
+| `tespit_aralığı` | Algılamayı her N karede bir çalıştır (1=her kare). Daha yüksek değerler hesaplamadan tasarruf sağlar. (varsayılan: 1) | INT | Hayır | 1 veya daha yüksek |
 
 **Not:** `initial_mask` veya `conditioning` alanlarından biri sağlanmalıdır. İkisi de belirtilmezse düğüm bir hata verir.
 

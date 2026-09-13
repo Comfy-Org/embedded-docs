@@ -8,11 +8,11 @@ Ce nœud génère une vidéo en créant une transition entre une image de début
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser pour la génération vidéo. La sélection d'une option révèle des paramètres de configuration supplémentaires pour `resolution`, `duration` et `audio`. | DYNAMIC_COMBO | Oui | `"viduq3-pro"`<br>`"viduq3-turbo"` |
-| `first_frame` | L'image de départ de la séquence vidéo. | IMAGE | Oui | - |
-| `end_frame` | L'image de fin de la séquence vidéo. | IMAGE | Oui | - |
-| `prompt` | Description du prompt (max 2000 caractères). | STRING | Oui | Jusqu'à 2000 caractères |
-| `seed` | Valeur de graine utilisée pour contrôler l'aléatoire de la génération. Dispose d'une option de contrôle après génération (par défaut : 1). | INT | Oui | 0 à 2147483647 |
+| `modèle` | Modèle à utiliser pour la génération vidéo. La sélection d'une option révèle des paramètres de configuration supplémentaires pour `resolution`, `duration` et `audio`. | DYNAMIC_COMBO | Oui | `"viduq3-pro"`<br>`"viduq3-turbo"` |
+| `image de début` | L'image de départ de la séquence vidéo. | IMAGE | Oui | - |
+| `image de fin` | L'image de fin de la séquence vidéo. | IMAGE | Oui | - |
+| `invite` | Description du prompt (max 2000 caractères). | STRING | Oui | Jusqu'à 2000 caractères |
+| `graine` | Valeur de graine utilisée pour contrôler l'aléatoire de la génération. Dispose d'une option de contrôle après génération (par défaut : 1). | INT | Oui | 0 à 2147483647 |
 
 ### Entrées viduq3-pro et viduq3-turbo
 

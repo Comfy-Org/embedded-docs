@@ -18,9 +18,9 @@ La salida final es una imagen en blanco y negro, donde las partes blancas son la
 
 | Nombre del parámetro | Descripción de la función | Tipo de datos | Tipo de entrada | Predeterminado | Rango |
 | --- | --- | --- | --- | --- | --- |
-| `image` | Foto original que necesita extracción de bordes | IMAGE | Entrada | - | - |
-| `low_threshold` | Umbral bajo, determina qué tan débiles son los bordes que se ignoran. Los valores más bajos conservan más detalles, pero pueden producir ruido | FLOAT | Widget | 0.4 | 0.01-0.99 |
-| `high_threshold` | Umbral alto, determina qué tan fuertes son los bordes que se conservan. Los valores más altos solo mantienen las líneas de contorno más obvias | FLOAT | Widget | 0.8 | 0.01-0.99 |
+| `imagen` | Foto original que necesita extracción de bordes | IMAGE | Entrada | - | - |
+| `umbral_bajo` | Umbral bajo, determina qué tan débiles son los bordes que se ignoran. Los valores más bajos conservan más detalles, pero pueden producir ruido | FLOAT | Widget | 0.4 | 0.01-0.99 |
+| `umbral_alto` | Umbral alto, determina qué tan fuertes son los bordes que se conservan. Los valores más altos solo mantienen las líneas de contorno más obvias | FLOAT | Widget | 0.8 | 0.01-0.99 |
 
 ## Salidas
 

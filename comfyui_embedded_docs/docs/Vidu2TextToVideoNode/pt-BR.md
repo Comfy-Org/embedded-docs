@@ -6,13 +6,13 @@ O nó Vidu2 Text-to-Video Generation cria um vídeo a partir de uma descrição 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo de IA a ser usado para geração de vídeo. Atualmente, apenas um modelo está disponível. | COMBO | Sim | `"viduq2"` |
+| `modelo` | O modelo de IA a ser usado para geração de vídeo. Atualmente, apenas um modelo está disponível. | COMBO | Sim | `"viduq2"` |
 | `prompt` | Uma descrição textual para geração de vídeo, com comprimento máximo de 2000 caracteres. | STRING | Sim | - |
-| `duration` | A duração do vídeo gerado em segundos. O valor pode ser ajustado usando um controle deslizante (padrão: 5). | INT | Não | 1 a 10 |
-| `seed` | Um número usado para controlar a aleatoriedade da geração, permitindo resultados reproduzíveis. Pode ser controlado após a geração (padrão: 1). | INT | Não | 0 a 2147483647 |
-| `aspect_ratio` | A relação proporcional entre a largura e a altura do vídeo. | COMBO | Não | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
-| `resolution` | As dimensões em pixels do vídeo gerado. Este é um parâmetro avançado. | COMBO | Não | `"720p"`<br>`"1080p"` |
-| `background_music` | Define se deve adicionar música de fundo ao vídeo gerado (padrão: False). Este é um parâmetro avançado. | BOOLEAN | Não | - |
+| `duração` | A duração do vídeo gerado em segundos. O valor pode ser ajustado usando um controle deslizante (padrão: 5). | INT | Não | 1 a 10 |
+| `semente` | Um número usado para controlar a aleatoriedade da geração, permitindo resultados reproduzíveis. Pode ser controlado após a geração (padrão: 1). | INT | Não | 0 a 2147483647 |
+| `proporção` | A relação proporcional entre a largura e a altura do vídeo. | COMBO | Não | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
+| `resolução` | As dimensões em pixels do vídeo gerado. Este é um parâmetro avançado. | COMBO | Não | `"720p"`<br>`"1080p"` |
+| `música_de_fundo` | Define se deve adicionar música de fundo ao vídeo gerado (padrão: False). Este é um parâmetro avançado. | BOOLEAN | Não | - |
 
 ## Saídas
 

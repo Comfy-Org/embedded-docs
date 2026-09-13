@@ -8,13 +8,13 @@ Genera un video de presentador que habla a partir de un avatar de HeyGen. Este n
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `engine` | Motor de renderizado; cada opción lista solo los avatares que lo admiten. `"auto"` ofrece todos los avatares y elige su mejor motor (se prefiere Avatar IV). Avatar V es el de mayor fidelidad, Avatar III es el más económico. | DYNAMIC_COMBO | Sí | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
+| `motor` | Motor de renderizado; cada opción lista solo los avatares que lo admiten. `"auto"` ofrece todos los avatares y elige su mejor motor (se prefiere Avatar IV). Avatar V es el de mayor fidelidad, Avatar III es el más económico. | DYNAMIC_COMBO | Sí | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
 | `custom_avatar_id` | ID de apariencia de avatar de HeyGen opcional. Cuando se establece, anula el avatar seleccionado arriba. Se puede usar cualquiera de las más de 3000 apariencias públicas de HeyGen (o tus avatares privados). Predeterminado: `""`. | STRING | No |  |
-| `speech` | Controla el avatar con un guion de texto (texto a voz de HeyGen) o con tu propio audio. Nombre para mostrar: "speech source". | DYNAMIC_COMBO | Sí | `"script"`<br>`"audio"` |
-| `resolution` | Resolución del video de salida. Predeterminado: `"1080p"`. | COMBO | No | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Relación de aspecto de salida. `"auto"` sigue el metraje de origen del avatar. Predeterminado: `"auto"`. | COMBO | No | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `background_color` | Color de fondo sólido opcional como código hexadecimal (p. ej. `"#00ff00"`). Déjalo vacío para usar el fondo propio del avatar. Si se proporciona, el valor debe comenzar con `#`. Predeterminado: `""`. | STRING | No |  |
-| `seed` | No se envía a HeyGen; cámbialo para forzar una nueva ejecución. Predeterminado: `42`. | INT | No | Mín.: 0<br>Máx.: 2147483647 |
+| `voz` | Controla el avatar con un guion de texto (texto a voz de HeyGen) o con tu propio audio. Nombre para mostrar: "speech source". | DYNAMIC_COMBO | Sí | `"script"`<br>`"audio"` |
+| `resolución` | Resolución del video de salida. Predeterminado: `"1080p"`. | COMBO | No | `"720p"`<br>`"1080p"` |
+| `relación de aspecto` | Relación de aspecto de salida. `"auto"` sigue el metraje de origen del avatar. Predeterminado: `"auto"`. | COMBO | No | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `color de fondo` | Color de fondo sólido opcional como código hexadecimal (p. ej. `"#00ff00"`). Déjalo vacío para usar el fondo propio del avatar. Si se proporciona, el valor debe comenzar con `#`. Predeterminado: `""`. | STRING | No |  |
+| `semilla` | No se envía a HeyGen; cámbialo para forzar una nueva ejecución. Predeterminado: `42`. | INT | No | Mín.: 0<br>Máx.: 2147483647 |
 
 ### Entradas de `auto`
 

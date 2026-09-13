@@ -6,8 +6,8 @@ Este nodo fusiona dos modelos de imagen Qwen al mezclar sus componentes individu
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model1` | El primer modelo a fusionar | MODEL | Sí | - |
-| `model2` | El segundo modelo a fusionar | MODEL | Sí | - |
+| `modelo1` | El primer modelo a fusionar | MODEL | Sí | - |
+| `modelo2` | El segundo modelo a fusionar | MODEL | Sí | - |
 | `pos_embeds.` | Peso para la mezcla de embeddings posicionales (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
 | `img_in.` | Peso para la mezcla del procesamiento de entrada de imagen (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
 | `txt_norm.` | Peso para la mezcla de normalización de texto (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |

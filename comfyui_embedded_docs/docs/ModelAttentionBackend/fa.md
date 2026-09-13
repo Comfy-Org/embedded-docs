@@ -6,7 +6,7 @@
 
 | پارامتر | توضیحات | نوع داده | الزامی | محدوده |
 |-----------|-------------|-----------|----------|-------|
-| `model` | مدلی که باید وصله شود. | MODEL | بله |  |
+| `مدل` | مدلی که باید وصله شود. | MODEL | بله |  |
 | `attention` | بک‌اند attention متراکم برای اعمال. Comfy Kitchen attention از attention کوانتیزه‌شده INT8 استفاده می‌کند و فقط روی GPUهای Nvidia و AMD در دسترس است. پیش‌فرض: "pytorch attention". اگر بک‌اند انتخاب‌شده در دسترس نباشد، attention PyTorch به‌عنوان جایگزین استفاده می‌شود. | COMBO | بله | "pytorch attention"<br>"comfy kitchen attention" |
 
 توجه: گزینه "comfy kitchen attention" فقط زمانی فهرست می‌شود که ماژول attention INT8 مربوط به Comfy Kitchen در محیط فعلی موجود باشد.

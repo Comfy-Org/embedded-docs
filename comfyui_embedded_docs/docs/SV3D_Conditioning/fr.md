@@ -9,10 +9,10 @@ SV3D_Conditioning prépare les données de conditionnement pour la génération 
 | `clip_vision` | Modèle de vision CLIP utilisé pour encoder l'image d'entrée | CLIP_VISION | Oui | - |
 | `init_image` | Image initiale servant de point de départ à la génération de vidéo 3D | IMAGE | Oui | - |
 | `vae` | Modèle VAE utilisé pour encoder l'image dans l'espace latent | VAE | Oui | - |
-| `width` | Largeur de sortie des images vidéo générées (par défaut : 576, pas de 8) | INT | Oui | 16 à MAX_RESOLUTION |
-| `height` | Hauteur de sortie des images vidéo générées (par défaut : 576, pas de 8) | INT | Oui | 16 à MAX_RESOLUTION |
-| `video_frames` | Nombre d'images à générer pour la séquence vidéo (par défaut : 21) | INT | Oui | 1 à 4096 |
-| `elevation` | Angle d'élévation de la caméra en degrés pour la vue 3D (par défaut : 0.0, pas de 0.1) | FLOAT | Oui | -90.0 à 90.0 |
+| `largeur` | Largeur de sortie des images vidéo générées (par défaut : 576, pas de 8) | INT | Oui | 16 à MAX_RESOLUTION |
+| `hauteur` | Hauteur de sortie des images vidéo générées (par défaut : 576, pas de 8) | INT | Oui | 16 à MAX_RESOLUTION |
+| `cadres_vidéo` | Nombre d'images à générer pour la séquence vidéo (par défaut : 21) | INT | Oui | 1 à 4096 |
+| `élévation` | Angle d'élévation de la caméra en degrés pour la vue 3D (par défaut : 0.0, pas de 0.1) | FLOAT | Oui | -90.0 à 90.0 |
 
 Remarque : L'azimut de la caméra commence à 0 degré et augmente d'une quantité constante à chaque image, de sorte que la caméra effectue une orbite complète de 360 degrés autour de l'objet sur l'ensemble des images générées. L'incrément par image est calculé comme 360 divisé par (`video_frames` - 1), avec un diviseur minimum de 2 lorsqu'une seule image est demandée. La valeur `elevation` reste constante pour chaque image.
 

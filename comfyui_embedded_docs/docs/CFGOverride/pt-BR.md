@@ -6,10 +6,10 @@ O nó CFG Override substitui a escala CFG (Classifier-Free Guidance) por um valo
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-----------|---------------|-------------|-----------|
-| `model` | O modelo ao qual aplicar a substituição de CFG. | MODEL | Sim | |
+| `modelo` | O modelo ao qual aplicar a substituição de CFG. | MODEL | Sim | |
 | `cfg` | O valor fixo da escala CFG a ser usado durante o intervalo de substituição. Padrão: 1.0. | FLOAT | Sim | 0.0 a 100.0 (passo: 0.1) |
-| `start_percent` | O ponto inicial do intervalo de substituição como porcentagem do processo de amostragem. Padrão: 0.0. | FLOAT | Sim | 0.0 a 1.0 (passo: 0.001) |
-| `end_percent` | O ponto final do intervalo de substituição como porcentagem do processo de amostragem. Padrão: 1.0. | FLOAT | Sim | 0.0 a 1.0 (passo: 0.001) |
+| `percentual_inicial` | O ponto inicial do intervalo de substituição como porcentagem do processo de amostragem. Padrão: 0.0. | FLOAT | Sim | 0.0 a 1.0 (passo: 0.001) |
+| `percentual_final` | O ponto final do intervalo de substituição como porcentagem do processo de amostragem. Padrão: 1.0. | FLOAT | Sim | 0.0 a 1.0 (passo: 0.001) |
 
 ## Saídas
 

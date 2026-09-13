@@ -6,8 +6,8 @@ El nodo WanMoveTracksFromCoords crea pistas de movimiento a partir de una cadena
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `track_coords` | Una cadena con formato JSON que contiene los datos de coordenadas para las pistas. El valor predeterminado es una lista vacía (`"[]"`). Esta entrada es una entrada forzada, por lo que debe conectarse en la interfaz de usuario. | STRING | No | N/A |
-| `track_mask` | Una máscara opcional. Cuando se proporciona, el nodo la usa para determinar la visibilidad de las pistas por fotograma: las pistas son visibles en los fotogramas donde la máscara contiene algún píxel distinto de cero. Cuando no se proporciona, todas las pistas son visibles en todos los fotogramas. | MASK | No | N/A |
+| `coordenadas_de_pista` | Una cadena con formato JSON que contiene los datos de coordenadas para las pistas. El valor predeterminado es una lista vacía (`"[]"`). Esta entrada es una entrada forzada, por lo que debe conectarse en la interfaz de usuario. | STRING | No | N/A |
+| `máscara_de_pista` | Una máscara opcional. Cuando se proporciona, el nodo la usa para determinar la visibilidad de las pistas por fotograma: las pistas son visibles en los fotogramas donde la máscara contiene algún píxel distinto de cero. Cuando no se proporciona, todas las pistas son visibles en todos los fotogramas. | MASK | No | N/A |
 
 **Nota:** La entrada `track_coords` espera una estructura JSON específica. Debe ser una lista de pistas, donde cada pista es una lista de fotogramas y cada fotograma es un objeto con coordenadas `x` e `y`. El número de fotogramas debe ser consistente en todas las pistas, y se debe proporcionar al menos una pista.
 

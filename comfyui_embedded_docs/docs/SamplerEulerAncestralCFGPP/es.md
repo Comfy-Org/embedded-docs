@@ -7,7 +7,7 @@ El nodo SamplerEulerAncestralCFG++ crea un sampler que utiliza el método Euler 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `eta` | Controla el tamaño del paso durante el muestreo; valores más altos producen actualizaciones más agresivas (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `s_noise` | Ajusta la cantidad de ruido añadido durante el proceso de muestreo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 10.0 |
+| `s_ruido` | Ajusta la cantidad de ruido añadido durante el proceso de muestreo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 10.0 |
 
 ## Salidas
 

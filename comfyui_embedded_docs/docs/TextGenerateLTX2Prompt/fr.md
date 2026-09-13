@@ -7,13 +7,13 @@ Le nœud TextGenerateLTX2Prompt développe un court prompt utilisateur en une de
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `clip` | Le modèle CLIP utilisé pour l'encodage de texte. Le nœud vérifie le nom du tokenizer du modèle pour sélectionner les instructions correspondantes : les modèles basés sur Gemma 4 utilisent le format LTX-2.4, tandis que les autres modèles utilisent le format LTX-2 (Gemma 3). | CLIP | Oui |  |
-| `prompt` | L'entrée texte brute décrivant la scène ou le concept à développer en un prompt détaillé de génération vidéo. | STRING | Oui |  |
-| `max_length` | Le nombre maximal de tokens que le modèle de langage est autorisé à générer. | INT | Oui |  |
-| `sampling_mode` | La stratégie d'échantillonnage utilisée pour sélectionner le prochain token lors de la génération de texte. | COMBO | Oui | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` |
+| `invite` | L'entrée texte brute décrivant la scène ou le concept à développer en un prompt détaillé de génération vidéo. | STRING | Oui |  |
+| `longueur_maximale` | Le nombre maximal de tokens que le modèle de langage est autorisé à générer. | INT | Oui |  |
+| `mode_d'échantillonnage` | La stratégie d'échantillonnage utilisée pour sélectionner le prochain token lors de la génération de texte. | COMBO | Oui | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` |
 | `image` | Une image d'entrée facultative utilisée comme première image de la vidéo. Lorsqu'elle est fournie, le nœud bascule en mode image-vers-vidéo et utilise un prompt système qui développe le prompt utilisateur en fonction du contenu de l'image. | IMAGE | Non |  |
-| `thinking` | Lorsque cette option est activée, le modèle reçoit l'instruction de raisonner avant de répondre. Tout bloc de raisonnement est supprimé de la sortie renvoyée (par défaut : False). | BOOLEAN | Non |  |
-| `use_default_template` | Lorsque cette option est activée, le nœud utilise le template de chat par défaut pour le formatage (par défaut : True). | BOOLEAN | Non |  |
-| `video` | Une entrée vidéo facultative pouvant être utilisée comme contexte supplémentaire pour la génération. | VIDEO | Non |  |
+| `réflexion` | Lorsque cette option est activée, le modèle reçoit l'instruction de raisonner avant de répondre. Tout bloc de raisonnement est supprimé de la sortie renvoyée (par défaut : False). | BOOLEAN | Non |  |
+| `utiliser le modèle par défaut` | Lorsque cette option est activée, le nœud utilise le template de chat par défaut pour le formatage (par défaut : True). | BOOLEAN | Non |  |
+| `vidéo` | Une entrée vidéo facultative pouvant être utilisée comme contexte supplémentaire pour la génération. | VIDEO | Non |  |
 | `audio` | Une entrée audio facultative pouvant être utilisée comme contexte supplémentaire pour la génération. | AUDIO | Non |  |
 
 **Remarque :** Le comportement du nœud change en fonction de ses entrées :

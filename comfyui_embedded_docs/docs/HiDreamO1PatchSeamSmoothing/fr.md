@@ -6,13 +6,13 @@ Ce nœud réduit les coutures visibles dans les images générées par le modèl
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle auquel appliquer le lissage des coutures. | MODEL | Oui | - |
-| `start_percent` | Progression de l'échantillonnage (0=début, 1=fin) à laquelle le mélange s'active. par défaut : 0.8 | FLOAT | Oui | 0.0 à 1.0 (step: 0.01) |
-| `end_percent` | Progression de l'échantillonnage à laquelle le mélange se désactive. par défaut : 1.0 | FLOAT | Oui | 0.0 à 1.0 (step: 0.01) |
-| `pattern` | Disposition des décalages. `single_shift` : une passe sur la grille de patchs naturelle + les autres décalées. `symmetric` : toutes les passes hors grille, les décalages répartis autour de l'origine. par défaut : "single_shift" | COMBO | Oui | `"single_shift"`<br>`"symmetric"` |
+| `modèle` | Le modèle auquel appliquer le lissage des coutures. | MODEL | Oui | - |
+| `pourcentage_début` | Progression de l'échantillonnage (0=début, 1=fin) à laquelle le mélange s'active. par défaut : 0.8 | FLOAT | Oui | 0.0 à 1.0 (step: 0.01) |
+| `pourcentage_fin` | Progression de l'échantillonnage à laquelle le mélange se désactive. par défaut : 1.0 | FLOAT | Oui | 0.0 à 1.0 (step: 0.01) |
+| `motif` | Disposition des décalages. `single_shift` : une passe sur la grille de patchs naturelle + les autres décalées. `symmetric` : toutes les passes hors grille, les décalages répartis autour de l'origine. par défaut : "single_shift" | COMBO | Oui | `"single_shift"`<br>`"symmetric"` |
 | `passes` | Nombre de passes par étape conditionnée. `2`/`4` = fixe. `ramp_*` : le nombre de passes augmente à mesure que l'échantillonnage approche de la fin (davantage de lissage là où les coutures sont les plus visibles). par défaut : "2" | COMBO | Oui | `"2"`<br>`"4"`<br>`"ramp_2_4"`<br>`"ramp_2_4_8"` |
-| `blend` | `average` : moyenne à poids égaux. `window` : pondération par fenêtre de Hann favorisant chaque passe à distance de ses limites de patchs. `median` : médiane par pixel, rejette les passes aberrantes de type repliement. par défaut : "average" | COMBO | Oui | `"average"`<br>`"window"`<br>`"median"` |
-| `strength` | Interpolation entre la prédiction sur grille naturelle (0) et le résultat moyenné (1). par défaut : 1.0 | FLOAT | Oui | 0.0 à 1.0 (step: 0.01) |
+| `mélange` | `average` : moyenne à poids égaux. `window` : pondération par fenêtre de Hann favorisant chaque passe à distance de ses limites de patchs. `median` : médiane par pixel, rejette les passes aberrantes de type repliement. par défaut : "average" | COMBO | Oui | `"average"`<br>`"window"`<br>`"median"` |
+| `force` | Interpolation entre la prédiction sur grille naturelle (0) et le résultat moyenné (1). par défaut : 1.0 | FLOAT | Oui | 0.0 à 1.0 (step: 0.01) |
 
 **Remarque sur les contraintes des paramètres :**
 - L'effet de lissage n'est pas appliqué si `strength` vaut 0.0 ou moins, ou si `end_percent` est inférieur ou égal à `start_percent`. Dans ces cas, le nœud renvoie le modèle inchangé.

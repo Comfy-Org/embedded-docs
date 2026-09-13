@@ -6,11 +6,11 @@ Bu düğüm, tek bir görünümü ışın izleme (ray-casting) ile işleyerek bi
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|---------|--------|
-| `mesh` | İşlenecek 3B mesh. | MESH | Evet | — |
-| `mode` | Neyin işleneceği. auto: varsa doku, yoksa vertex renkleri, yoksa gölgeli kil. (varsayılan: "auto") | COMBO | Evet | `"auto"`<br>`"texture"`<br>`"vertex colors"`<br>`"solid"`<br>`"normal"`<br>`"depth"` |
-| `width` | İşlenen görüntünün piksel cinsinden genişliği. (varsayılan: 1024) | INT | Evet | 64 - 4096 (adım 8) |
-| `height` | İşlenen görüntünün piksel cinsinden yüksekliği. (varsayılan: 1024) | INT | Evet | 64 - 4096 (adım 8) |
-| `background` | Mesh'in kapsamadığı pikseller için kullanılan arka plan rengi. (varsayılan: "#000000") | COLOR | Evet | — |
+| `ağ` | İşlenecek 3B mesh. | MESH | Evet | — |
+| `mod` | Neyin işleneceği. auto: varsa doku, yoksa vertex renkleri, yoksa gölgeli kil. (varsayılan: "auto") | COMBO | Evet | `"auto"`<br>`"texture"`<br>`"vertex colors"`<br>`"solid"`<br>`"normal"`<br>`"depth"` |
+| `genişlik` | İşlenen görüntünün piksel cinsinden genişliği. (varsayılan: 1024) | INT | Evet | 64 - 4096 (adım 8) |
+| `yükseklik` | İşlenen görüntünün piksel cinsinden yüksekliği. (varsayılan: 1024) | INT | Evet | 64 - 4096 (adım 8) |
+| `arka plan` | Mesh'in kapsamadığı pikseller için kullanılan arka plan rengi. (varsayılan: "#000000") | COLOR | Evet | — |
 | `model_3d_info` | Aynı Load3D / Preview3D görüntüleyicisinden gelen model dönüşümü. Görüntüleyici çerçevelemesiyle eşleşmesi için `camera_info` ile bağlayın. | LOAD3D_MODEL_INFO | Hayır | — |
 | `camera_info` | Bir Load3D / Preview3D görüntüleyicisinden veya bir Create Camera Info düğümünden gelen kamera. Hiçbiri bağlı değilse varsayılan bir önden görünüm otomatik olarak çerçevelenir. | LOAD3D_CAMERA | Hayır | — |
 

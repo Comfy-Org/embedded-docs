@@ -39,7 +39,7 @@ ModelMergeLTXV düğümü, iki LTXV modelini eşleşen bileşenlerini harmanlaya
 | `transformer_blocks.25.` | Transformer bloğu 25 için enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
 | `transformer_blocks.26.` | Transformer bloğu 26 için enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
 | `transformer_blocks.27.` | Transformer bloğu 27 için enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
-| `scale_shift_table` | Ölçek kaydırma tablosu için enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
+| `ölçek_kaydırma_tablosu` | Ölçek kaydırma tablosu için enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
 | `proj_out.` | Projeksiyon çıktı katmanları için enterpolasyon ağırlığı (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
 
 ## Çıktılar

@@ -8,10 +8,10 @@ Meshy: Texture Model düğümü, yapay zekâ tarafından oluşturulan dokuları 
 | --- | --- | --- | --- | --- |
 | `model` | Doku kaplama için kullanılacak AI model sürümü. | COMBO | Evet | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `meshy_task_id` | Önceki bir Meshy 3D üretim veya dönüştürme görevinden alınan benzersiz tanımlayıcı (görev kimliği). Bu, doku kaplanacak temel 3D modeli sağlar. | MESHY_TASK_ID | Evet | - |
-| `enable_original_uv` | Modelin yeni UV'leri oluşturulmak yerine özgün UV'sini kullanın. Etkinleştirildiğinde (varsayılan: `True`), Meshy yüklenen modeldeki mevcut dokuları korur. Modelin özgün UV'si yoksa çıktının kalitesi o kadar iyi olmayabilir. Bu gelişmiş bir seçenektir. | BOOLEAN | Evet | true / false |
+| `orijinal UV'yi etkinleştir` | Modelin yeni UV'leri oluşturulmak yerine özgün UV'sini kullanın. Etkinleştirildiğinde (varsayılan: `True`), Meshy yüklenen modeldeki mevcut dokuları korur. Modelin özgün UV'si yoksa çıktının kalitesi o kadar iyi olmayabilir. Bu gelişmiş bir seçenektir. | BOOLEAN | Evet | true / false |
 | `pbr` | Doku kaplanmış model için Fiziksel Tabanlı İşleme (PBR) malzeme çıktısını etkinleştirir (varsayılan: `False`). Bu gelişmiş bir seçenektir. | BOOLEAN | Evet | true / false |
-| `text_style_prompt` | Metin kullanarak nesne için istediğiniz doku stilini tanımlayın (varsayılan: boş dize). En fazla 600 karakter. `image_style` ile aynı anda kullanılamaz. | STRING | Evet | - |
-| `image_style` | Doku kaplama sürecini yönlendirmek için 2D görsel. `text_style_prompt` ile aynı anda kullanılamaz. | IMAGE | Hayır | - |
+| `metin stil istemi` | Metin kullanarak nesne için istediğiniz doku stilini tanımlayın (varsayılan: boş dize). En fazla 600 karakter. `image_style` ile aynı anda kullanılamaz. | STRING | Evet | - |
+| `görsel stil` | Doku kaplama sürecini yönlendirmek için 2D görsel. `text_style_prompt` ile aynı anda kullanılamaz. | IMAGE | Hayır | - |
 | `texture_resolution` | Temel renk doku çözünürlüğü. Daha yüksek çözünürlükler daha fazla yüzey ayrıntısı yakalar. | COMBO | Evet | `"2k"`<br>`"4k"`<br>`"8k"` |
 
 **Parametre Kısıtlamaları:**

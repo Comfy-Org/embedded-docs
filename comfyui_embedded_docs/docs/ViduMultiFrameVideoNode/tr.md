@@ -9,10 +9,10 @@ Bu düğüm, birden çok anahtar kare arasında geçişler oluşturarak bir vide
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Video oluşturma için kullanılacak Vidu modeli. | COMBO | Evet | "viduq2-pro"<br>"viduq2-turbo" |
-| `start_image` | Başlangıç kare görüntüsü. En-boy oranı 1:4 ile 4:1 arasında olmalıdır. | IMAGE | Evet | En-boy oranı 1:4 ila 4:1 |
+| `başlangıç_görüntüsü` | Başlangıç kare görüntüsü. En-boy oranı 1:4 ile 4:1 arasında olmalıdır. | IMAGE | Evet | En-boy oranı 1:4 ila 4:1 |
 | `seed` | Yeniden üretilebilir sonuçları sağlamak için rastgele sayı üretimine yönelik tohum değeri (varsayılan: 1). | INT | Evet | 0 - 2147483647 |
-| `resolution` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | "720p"<br>"1080p" |
-| `frames` | Anahtar kare geçişlerinin sayısı (2-9). Bir değer seçmek, her kare için gerekli girdileri dinamik olarak gösterir. | DYNAMIC_COMBO | Evet | "2"<br>"3"<br>"4"<br>"5"<br>"6"<br>"7"<br>"8"<br>"9" |
+| `çözünürlük` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | "720p"<br>"1080p" |
+| `kareler` | Anahtar kare geçişlerinin sayısı (2-9). Bir değer seçmek, her kare için gerekli girdileri dinamik olarak gösterir. | DYNAMIC_COMBO | Evet | "2"<br>"3"<br>"4"<br>"5"<br>"6"<br>"7"<br>"8"<br>"9" |
 
 ### Kare Girdileri (tüm kare sayısı seçenekleri tarafından paylaşılır)
 

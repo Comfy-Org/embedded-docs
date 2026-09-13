@@ -6,7 +6,7 @@ MergeMeshes combina várias entradas de malha em uma única malha, empilhando se
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `meshes` | Slot expansível: conecte de 2 a 50 objetos de malha (nomeados `mesh_1`, `mesh_2`, ..., `mesh_50`). Todas as malhas conectadas são mescladas em uma malha de saída. | MESH | Sim | 2 a 50 malhas |
+| `malhas` | Slot expansível: conecte de 2 a 50 objetos de malha (nomeados `mesh_1`, `mesh_2`, ..., `mesh_50`). Todas as malhas conectadas são mescladas em uma malha de saída. | MESH | Sim | 2 a 50 malhas |
 
 **Nota:** Pelo menos uma malha deve ser fornecida; caso contrário, o nó gera um erro. Apenas o primeiro item de malha do lote de cada malha de entrada é usado. As malhas de entrada são movidas para a CPU antes da mesclagem. Se alguma malha de entrada tiver dados UV, a saída incluirá UVs, e malhas sem UVs receberão valores UV preenchidos com zero. Se alguma malha de entrada tiver cores de vértice, a saída incluirá cores de vértice; malhas sem cores receberão cores brancas (valor 1), e os canais de cor serão preenchidos até a maior contagem de canais encontrada entre as entradas. Apenas a textura da primeira entrada que fornecer uma é mantida; texturas adicionais são descartadas.
 

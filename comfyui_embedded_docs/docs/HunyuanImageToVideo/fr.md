@@ -8,12 +8,12 @@ Le nœud HunyuanImageToVideo convertit les images en représentations latentes v
 | --- | --- | --- | --- | --- |
 | `positive` | Entrée de conditionnement positive pour guider la génération vidéo | CONDITIONING | Oui | - |
 | `vae` | Modèle VAE utilisé pour encoder les images dans l'espace latent | VAE | Oui | - |
-| `width` | Largeur de la vidéo de sortie en pixels (par défaut : 848, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `height` | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `length` | Nombre de trames dans la vidéo de sortie (par défaut : 53, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
-| `batch_size` | Nombre de vidéos à générer simultanément (par défaut : 1) | INT | Oui | 1 à 4096 |
-| `guidance_type` | Méthode d'incorporation de l'image de départ dans la génération vidéo (par défaut : "v1 (concat)"). Option avancée | COMBO | Oui | "v1 (concat)"<br>"v2 (replace)"<br>"custom" |
-| `start_image` | Image de départ facultative (ou séquence d'images) pour initialiser la génération vidéo. Seules les `length` premières trames et les 3 premiers canaux de couleur sont utilisés | IMAGE | Non | - |
+| `largeur` | Largeur de la vidéo de sortie en pixels (par défaut : 848, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `hauteur` | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `longueur` | Nombre de trames dans la vidéo de sortie (par défaut : 53, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
+| `taille_du_lot` | Nombre de vidéos à générer simultanément (par défaut : 1) | INT | Oui | 1 à 4096 |
+| `type_de_guidage` | Méthode d'incorporation de l'image de départ dans la génération vidéo (par défaut : "v1 (concat)"). Option avancée | COMBO | Oui | "v1 (concat)"<br>"v2 (replace)"<br>"custom" |
+| `image_de_départ` | Image de départ facultative (ou séquence d'images) pour initialiser la génération vidéo. Seules les `length` premières trames et les 3 premiers canaux de couleur sont utilisés | IMAGE | Non | - |
 
 **Remarque :** Lorsque `start_image` est fourni, le nœud utilise différentes méthodes de guidage selon le `guidance_type` sélectionné :
 

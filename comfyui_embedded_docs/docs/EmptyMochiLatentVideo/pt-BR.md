@@ -6,10 +6,10 @@ EmptyMochiLatentVideo cria um tensor de vídeo latente vazio com as dimensões q
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `width` | A largura do vídeo latente em pixels (padrão: 848, os valores aumentam em incrementos de 16) | INT | Sim | 16 a MAX_RESOLUTION |
-| `height` | A altura do vídeo latente em pixels (padrão: 480, os valores aumentam em incrementos de 16) | INT | Sim | 16 a MAX_RESOLUTION |
-| `length` | O número de quadros no vídeo latente (padrão: 25, os valores aumentam em incrementos de 6, começando em 7) | INT | Sim | 7 a MAX_RESOLUTION |
-| `batch_size` | O número de vídeos latentes a gerar em um lote (padrão: 1) | INT | Não | 1 a 4096 |
+| `largura` | A largura do vídeo latente em pixels (padrão: 848, os valores aumentam em incrementos de 16) | INT | Sim | 16 a MAX_RESOLUTION |
+| `altura` | A altura do vídeo latente em pixels (padrão: 480, os valores aumentam em incrementos de 16) | INT | Sim | 16 a MAX_RESOLUTION |
+| `comprimento` | O número de quadros no vídeo latente (padrão: 25, os valores aumentam em incrementos de 6, começando em 7) | INT | Sim | 7 a MAX_RESOLUTION |
+| `tamanho_do_lote` | O número de vídeos latentes a gerar em um lote (padrão: 1) | INT | Não | 1 a 4096 |
 
 **Observação:** As dimensões latentes reais são calculadas como width/8 e height/8, a dimensão temporal é calculada como `((length - 1) // 6) + 1`, e o tensor tem 12 canais. Como `length` avança em incrementos de 6 começando em 7, os valores válidos são 7, 13, 19, 25 e assim por diante.
 

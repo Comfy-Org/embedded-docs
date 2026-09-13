@@ -7,8 +7,8 @@ O nó Frame Interpolate cria novos quadros entre quadros existentes em uma sequ�
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `interp_model` | O modelo de interpolação de quadros a ser usado para gerar quadros intermediários | INTERP_MODEL | Sim | - |
-| `images` | Um lote de imagens consecutivas (quadros) entre as quais interpolar. Requer pelo menos 2 imagens. Se menos de 2 quadros forem fornecidos, o nó retorna as imagens de entrada sem alterações. | IMAGE | Sim | - |
-| `multiplier` | O número de vezes para multiplicar a contagem de quadros. Por exemplo, um multiplier de 2 dobra o número de quadros. (padrão: 2) | INT | Sim | 2 a 16 |
+| `imagens` | Um lote de imagens consecutivas (quadros) entre as quais interpolar. Requer pelo menos 2 imagens. Se menos de 2 quadros forem fornecidos, o nó retorna as imagens de entrada sem alterações. | IMAGE | Sim | - |
+| `multiplicador` | O número de vezes para multiplicar a contagem de quadros. Por exemplo, um multiplier de 2 dobra o número de quadros. (padrão: 2) | INT | Sim | 2 a 16 |
 
 **Observação:** O nó exige pelo menos 2 quadros de entrada e um `multiplier` de pelo menos 2. Se qualquer uma dessas condições não for atendida, as imagens de entrada serão retornadas sem alterações.
 

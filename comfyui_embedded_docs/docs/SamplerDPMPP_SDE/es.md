@@ -9,9 +9,9 @@ SamplerDPMPP_SDE crea un sampler DPM++ SDE (Ecuación Diferencial Estocástica) 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `eta` | Controla la estocasticidad del proceso de muestreo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 100.0 |
-| `s_noise` | Controla la cantidad de ruido añadido durante el muestreo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 100.0 |
+| `s_ruido` | Controla la cantidad de ruido añadido durante el muestreo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 100.0 |
 | `r` | Un parámetro que influye en el comportamiento del muestreo (predeterminado: 0.5) | FLOAT | Sí | 0.0 - 100.0 |
-| `noise_device` | Selecciona el dispositivo donde se realizan los cálculos de ruido. Cuando se establece en "cpu", se crea el sampler `dpmpp_sde`; cuando se establece en "gpu", se crea el sampler `dpmpp_sde_gpu` (predeterminado: "gpu") | COMBO | Sí | "gpu"<br>"cpu" |
+| `dispositivo_ruido` | Selecciona el dispositivo donde se realizan los cálculos de ruido. Cuando se establece en "cpu", se crea el sampler `dpmpp_sde`; cuando se establece en "gpu", se crea el sampler `dpmpp_sde_gpu` (predeterminado: "gpu") | COMBO | Sí | "gpu"<br>"cpu" |
 
 Nota: Todas las entradas están marcadas como parámetros avanzados. La selección de `noise_device` cambia la variante de sampler que se crea: "cpu" corresponde a `dpmpp_sde` y "gpu" corresponde a `dpmpp_sde_gpu`.
 

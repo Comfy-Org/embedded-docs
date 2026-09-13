@@ -6,7 +6,7 @@ This node loads video files and their matching text captions from a folder insid
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `folder` | A pasta que contém arquivos de vídeo e legendas .txt. | COMBO | Sim | Lista dinamicamente todas as subpastas dentro do diretório de entrada do ComfyUI |
+| `pasta` | A pasta que contém arquivos de vídeo e legendas .txt. | COMBO | Sim | Lista dinamicamente todas as subpastas dentro do diretório de entrada do ComfyUI |
 
 A pasta selecionada deve ser uma subpasta do diretório de entrada do ComfyUI; um nome de pasta que resolve para fora desse diretório gera um erro. Se a pasta selecionada não contiver nenhum arquivo com uma extensão de vídeo suportada (MP4, AVI, MOV, WEBM, MKV, FLV), o nó gera um erro. Para pastas aninhadas cujo nome começa com um número seguido de um sublinhado (por exemplo, `5_classname`), cada vídeo dentro dessa pasta é incluído no conjunto de dados o número de vezes indicado por esse prefixo. A legenda de cada vídeo é lida de um arquivo `.txt` com o mesmo nome base; se não existir um arquivo `.txt` correspondente, a legenda será uma string vazia.
 

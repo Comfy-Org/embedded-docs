@@ -6,7 +6,7 @@ El nodo And realiza una operación lógica AND sobre un grupo de valores de entr
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `values` | Un grupo ampliable de valores que se van a evaluar. El nodo comienza con una ranura y puedes agregar más haciendo clic en el botón "+" del nodo. Acepta cualquier tipo de datos. | ANY | Sí | Mínimo 1 (sin máximo) |
+| `valores` | Un grupo ampliable de valores que se van a evaluar. El nodo comienza con una ranura y puedes agregar más haciendo clic en el botón "+" del nodo. Acepta cualquier tipo de datos. | ANY | Sí | Mínimo 1 (sin máximo) |
 
 **Nota:** Esta entrada es un grupo de ranuras ampliable. Las ranuras se agregan individualmente (por ejemplo, `value_1`, `value_2`, etc.), y debe haber al menos una ranura.
 

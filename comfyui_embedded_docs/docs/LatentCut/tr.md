@@ -6,10 +6,10 @@ LatentCut düğümü, seçilen bir boyut boyunca latent örneklerinden belirli b
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `samples` | Çıkarılacak giriş latent örnekleri | LATENT | Evet | - |
-| `dim` | Latent örneklerinin kesileceği boyut. "x" son eksen boyunca (tipik olarak genişlik), "y" sondan ikinci eksen boyunca (tipik olarak yükseklik) ve "t" sondan üçüncü eksen boyunca (video latentlerinde tipik olarak kareler) keser | COMBO | Evet | "x"<br>"y"<br>"t" |
-| `index` | Kesme için başlangıç konumu (varsayılan: 0). Pozitif değerler başlangıçtan, negatif değerler sondan sayılır. Düğüm, indeksi latent örneklerinin geçerli aralığı içinde kalacak şekilde sınırlar | INT | Evet | -16384 ile 16384 |
-| `amount` | Belirtilen boyut boyunca çıkarılacak öğe sayısı (varsayılan: 1). En az 1 olmalıdır. Başlangıç indeksinin ötesinde mevcut veriyi aşacaksa düğüm bu değeri otomatik olarak azaltır | INT | Evet | 1 ile 16384 |
+| `örnekler` | Çıkarılacak giriş latent örnekleri | LATENT | Evet | - |
+| `boyut` | Latent örneklerinin kesileceği boyut. "x" son eksen boyunca (tipik olarak genişlik), "y" sondan ikinci eksen boyunca (tipik olarak yükseklik) ve "t" sondan üçüncü eksen boyunca (video latentlerinde tipik olarak kareler) keser | COMBO | Evet | "x"<br>"y"<br>"t" |
+| `dizin` | Kesme için başlangıç konumu (varsayılan: 0). Pozitif değerler başlangıçtan, negatif değerler sondan sayılır. Düğüm, indeksi latent örneklerinin geçerli aralığı içinde kalacak şekilde sınırlar | INT | Evet | -16384 ile 16384 |
+| `miktar` | Belirtilen boyut boyunca çıkarılacak öğe sayısı (varsayılan: 1). En az 1 olmalıdır. Başlangıç indeksinin ötesinde mevcut veriyi aşacaksa düğüm bu değeri otomatik olarak azaltır | INT | Evet | 1 ile 16384 |
 
 Not: `index` ve `amount` değerleri, seçilen boyut boyunca latentin gerçek boyutuna uyacak şekilde ayarlanır. `index`, boyut büyüklüğünden büyükse son geçerli konuma sabitlenir. `index` negatifse, mutlak değer açısından boyut büyüklüğüne sabitlenir ve `amount`, verinin sonunu geçmeyecek şekilde sınırlandırılır.
 

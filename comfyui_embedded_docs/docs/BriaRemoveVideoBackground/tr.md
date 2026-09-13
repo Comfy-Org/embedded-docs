@@ -7,8 +7,8 @@ Bu düğüm, Bria AI hizmetini kullanarak bir videonun arka planını kaldırır
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `video` | Arka planının kaldırılacağı girdi video dosyası. | VIDEO | Evet | N/A |
-| `background_color` | Çıktı videosu için arka plan rengi. | COMBO | Evet | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` |
-| `seed` | `seed`, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar `seed` değerinden bağımsız olarak deterministik değildir. (varsayılan: 0) | INT | Evet | 0 ile 2147483647 |
+| `arka plan rengi` | Çıktı videosu için arka plan rengi. | COMBO | Evet | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` |
+| `tohum` | `seed`, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar `seed` değerinden bağımsız olarak deterministik değildir. (varsayılan: 0) | INT | Evet | 0 ile 2147483647 |
 
 **Not:** Girdi videosunun süresi 60 saniye veya daha kısa olmalıdır. `seed` değeri değişmese bile sonuçlar deterministik değildir.
 

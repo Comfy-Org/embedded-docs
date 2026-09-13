@@ -7,9 +7,9 @@ Bu düğüm, mevcut bir videoyu metin istemine dayalı olarak düzenlemek için 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Video düzenleme için kullanılacak AI modeli (varsayılan: "grok-imagine-video"). | COMBO | Evet | "grok-imagine-video" |
-| `prompt` | İstenen videonun metin açıklaması. | STRING | Evet | Yok |
+| `istem` | İstenen videonun metin açıklaması. | STRING | Evet | Yok |
 | `video` | Düzenlenecek giriş videosu. Desteklenen maksimum süre 8,7 saniye ve dosya boyutu 50 MB'tır. | VIDEO | Evet | Yok |
-| `seed` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirlemek için tohum; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Hayır | 0 - 2147483647 |
+| `tohum` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirlemek için tohum; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Hayır | 0 - 2147483647 |
 
 **Kısıtlamalar:**
 

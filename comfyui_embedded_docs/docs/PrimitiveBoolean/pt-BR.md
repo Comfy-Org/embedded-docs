@@ -6,7 +6,7 @@ O nó Boolean passa um valor booleano (true/false) pelo seu fluxo de trabalho. E
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `value` | O valor booleano a ser passado pelo nó | BOOLEAN | Sim | true<br>false |
+| `valor` | O valor booleano a ser passado pelo nó | BOOLEAN | Sim | true<br>false |
 
 ## Saídas
 

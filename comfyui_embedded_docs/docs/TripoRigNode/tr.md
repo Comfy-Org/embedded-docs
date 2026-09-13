@@ -6,7 +6,7 @@ Bu düğüm, mevcut bir Tripo 3D modelini alır ve onun iskeletli bir sürümün
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `original_model_task_id` | İskeletlendirilecek özgün 3D modelin görev kimliği. Bu genellikle daha önceki bir Tripo model oluşturma düğümü tarafından üretilen kimliktir. | MODEL_TASK_ID | Evet | - |
+| `orijinal_model_görev_id` | İskeletlendirilecek özgün 3D modelin görev kimliği. Bu genellikle daha önceki bir Tripo model oluşturma düğümü tarafından üretilen kimliktir. | MODEL_TASK_ID | Evet | - |
 | `model_version` | Kullanılacak rig model sürümü. v1.0: yalnızca insansı (iki ayaklı) karakterler, 90+ animasyon ön ayarı. v2.5: insansı olmayan canlılar (dört ayaklı, altı ayaklı, sekiz ayaklı, kuşsu, yılansı, sucul). Varsayılan: `v1.0-20240301`. | COMBO | Hayır | "v1.0-20240301"<br>"v2.5-20260210" |
 | `rig_type` | İskelet türü. "auto", önce Tripo'nun ücretsiz rig kontrolünü çalıştırır ve önerilen türü kullanır. Varsayılan: "auto". | COMBO | Hayır | "auto"<br>"biped"<br>"quadruped"<br>"hexapod"<br>"octopod"<br>"avian"<br>"serpentine"<br>"aquatic" |
 | `spec` | Kemik adlandırma: Tripo yerel veya Mixamo uyumlu. Tripo, animasyon ön ayarlarını mixamo spec ile oluşturulmuş bir v1.0 rig üzerine yeniden hedefleyemez; Tripo: Retarget rigged model için tripo kullanın. Varsayılan: "tripo". | COMBO | Hayır | "tripo"<br>"mixamo" |

@@ -6,7 +6,7 @@ El nodo Text proporciona una forma sencilla de introducir y transmitir datos de 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `value` | La cadena de texto que se transmitirá a través del nodo | STRING | Sí | Cualquier texto |
+| `valor` | La cadena de texto que se transmitirá a través del nodo | STRING | Sí | Cualquier texto |
 
 ## Salidas
 

@@ -8,11 +8,11 @@ O nó Recraft V4 Text to Vector gera ilustrações em Scalable Vector Graphics (
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo a ser usado para geração. Os modelos recraftv4_styles são feitos para geração com estilo consistente e sempre exigem um `style_id` ou `style_references`. Selecionar um modelo altera as opções disponíveis de `size`. | DYNAMIC_COMBO | Sim | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
+| `modelo` | O modelo a ser usado para geração. Os modelos recraftv4_styles são feitos para geração com estilo consistente e sempre exigem um `style_id` ou `style_references`. Selecionar um modelo altera as opções disponíveis de `size`. | DYNAMIC_COMBO | Sim | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
 | `prompt` | Prompt para a geração da imagem. Máximo de 10.000 caracteres. | STRING | Sim | N/A |
-| `negative_prompt` | Esta entrada é ignorada: o prompt negativo não é suportado pelos modelos Recraft V4 e V4.1. | STRING | Sim | N/A |
+| `prompt_negativo` | Esta entrada é ignorada: o prompt negativo não é suportado pelos modelos Recraft V4 e V4.1. | STRING | Sim | N/A |
 | `n` | O número de imagens a gerar (padrão: 1). | INT | Sim | 1 a 6 |
-| `seed` | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente (padrão: 0). | INT | Sim | 0 a 18446744073709551615 |
+| `semente` | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente (padrão: 0). | INT | Sim | 0 a 18446744073709551615 |
 | `recraft_controls` | Controles adicionais opcionais sobre a geração por meio do nó Recraft Controls. | CUSTOM | Não | N/A |
 | `style_id` | UUID de um estilo vetorial Recraft V4 a ser aplicado, por exemplo, do nó Recraft V4 Create Style ou da saída `style_id` de uma execução anterior. Não pode ser combinado com `style_references`. | STRING | Não | N/A |
 | `style_match` | Quão fielmente seguir o estilo: precise reproduz em detalhes; flexible corresponde à aparência geral. Usado apenas quando um estilo é fornecido (padrão: "precise"). | COMBO | Não | `"precise"`<br>`"flexible"` |

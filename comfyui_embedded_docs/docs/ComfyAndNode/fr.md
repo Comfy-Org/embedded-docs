@@ -6,7 +6,7 @@ Le nœud And effectue une opération logique AND sur un groupe de valeurs d'entr
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `values` | Un groupe extensible de valeurs à évaluer. Le nœud commence avec un emplacement et vous pouvez en ajouter d'autres en cliquant sur le bouton « + » du nœud. Accepte tout type de données. | ANY | Oui | Minimum 1 (pas de maximum) |
+| `valeurs` | Un groupe extensible de valeurs à évaluer. Le nœud commence avec un emplacement et vous pouvez en ajouter d'autres en cliquant sur le bouton « + » du nœud. Accepte tout type de données. | ANY | Oui | Minimum 1 (pas de maximum) |
 
 **Remarque :** Cette entrée est un groupe d'emplacements extensible. Les emplacements sont ajoutés individuellement (par exemple `value_1`, `value_2`, etc.), et au moins un emplacement doit être présent.
 

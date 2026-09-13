@@ -8,12 +8,12 @@ Ce nœud prépare le conditionnement et le latent vide nécessaires pour génér
 |-----------|-------------|-----------------|--------|-------|
 | `clip` | Modèle CLIP utilisé pour tokeniser le prompt et encoder les images clés dans le conditionnement. | CLIP | Oui |  |
 | `vae` | Modèle VAE utilisé pour encoder les images clés dans l'espace latent lorsque des images clés sont fournies. | VAE | Oui |  |
-| `prompt` | Prompt texte décrivant la vidéo à générer. Prend en charge plusieurs lignes et les prompts dynamiques. | STRING | Oui |  |
-| `width` | Largeur de la vidéo en pixels (par défaut : 1344). | INT | Oui | 32 à MAX_RESOLUTION (pas 32) |
-| `height` | Hauteur de la vidéo en pixels (par défaut : 768). | INT | Oui | 32 à MAX_RESOLUTION (pas 32) |
-| `length` | Nombre de trames à 24 fps, arrondi au supérieur sur la grille 17k+5 du modèle (124 = ~5 s ; plage d'entraînement ~124-362, au-delà non testé) (par défaut : 124). | INT | Oui | 5 à 3600 (pas 17) |
-| `first_frame` | Image facultative utilisée comme première image de la vidéo. Elle est étirée à la taille totale du canevas, donc son rapport d'aspect n'est pas préservé. Seule la première image du lot d'entrée est utilisée. | IMAGE | Non |  |
-| `last_frame` | Image facultative utilisée comme dernière image de la vidéo. Elle est recadrée pour couvrir le canevas tout en préservant son rapport d'aspect. Seule la première image du lot d'entrée est utilisée. | IMAGE | Non |  |
+| `invite` | Prompt texte décrivant la vidéo à générer. Prend en charge plusieurs lignes et les prompts dynamiques. | STRING | Oui |  |
+| `largeur` | Largeur de la vidéo en pixels (par défaut : 1344). | INT | Oui | 32 à MAX_RESOLUTION (pas 32) |
+| `hauteur` | Hauteur de la vidéo en pixels (par défaut : 768). | INT | Oui | 32 à MAX_RESOLUTION (pas 32) |
+| `longueur` | Nombre de trames à 24 fps, arrondi au supérieur sur la grille 17k+5 du modèle (124 = ~5 s ; plage d'entraînement ~124-362, au-delà non testé) (par défaut : 124). | INT | Oui | 5 à 3600 (pas 17) |
+| `première_image` | Image facultative utilisée comme première image de la vidéo. Elle est étirée à la taille totale du canevas, donc son rapport d'aspect n'est pas préservé. Seule la première image du lot d'entrée est utilisée. | IMAGE | Non |  |
+| `dernière_image` | Image facultative utilisée comme dernière image de la vidéo. Elle est recadrée pour couvrir le canevas tout en préservant son rapport d'aspect. Seule la première image du lot d'entrée est utilisée. | IMAGE | Non |  |
 
 Lorsque `first_frame` et/ou `last_frame` sont fournis, les images clés sont encodées avec le VAE et attachées au conditionnement respectivement à la trame 0 et à la trame finale. Lorsque aucun des deux n'est fourni, le nœud fonctionne uniquement à partir du prompt. La `length` demandée est arrondie au supérieur au nombre de trames valide le plus proche (17k + 5), de sorte que le nombre effectif de trames peut être légèrement supérieur à celui demandé.
 

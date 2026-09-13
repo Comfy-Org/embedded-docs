@@ -7,10 +7,10 @@ HyperTile, görüntü üretimi sırasında bellek kullanımını azaltmak için 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | HyperTile optimizasyonunun uygulanacağı difüzyon modeli | MODEL | Evet | - |
-| `tile_size` | İşleme için hedef döşeme boyutu (varsayılan: 256). Dahili olarak değer en az 32 olacak şekilde sınırlandırılır ve ardından etkin döşeme boyutunu elde etmek için 8'e bölünür. | INT | Evet | 1 - 2048 |
-| `swap_size` | İşleme sırasında döşemelerin verimliliği artırmak için nasıl yeniden düzenlendiğini kontrol eder. Daha büyük değerler döşeme boyutlarında daha fazla çeşitliliğe izin verir (varsayılan: 2) | INT | Evet | 1 - 128 |
-| `max_depth` | Döşemenin uygulanacağı maksimum derinlik düzeyi (çözünürlük ölçeği). 0 değeri döşemeyi yalnızca en yüksek çözünürlükte uygular (varsayılan: 0) | INT | Evet | 0 - 10 |
-| `scale_depth` | Etkinleştirildiğinde, döşeme boyutu daha derin derinlik düzeylerinde orantılı olarak ölçeklenir. Bu, daha düşük çözünürlüklerde kaliteyi korumaya yardımcı olabilir (varsayılan: False) | BOOLEAN | Evet | True / False |
+| `döşeme_boyutu` | İşleme için hedef döşeme boyutu (varsayılan: 256). Dahili olarak değer en az 32 olacak şekilde sınırlandırılır ve ardından etkin döşeme boyutunu elde etmek için 8'e bölünür. | INT | Evet | 1 - 2048 |
+| `değiştirme_boyutu` | İşleme sırasında döşemelerin verimliliği artırmak için nasıl yeniden düzenlendiğini kontrol eder. Daha büyük değerler döşeme boyutlarında daha fazla çeşitliliğe izin verir (varsayılan: 2) | INT | Evet | 1 - 128 |
+| `maks_derinlik` | Döşemenin uygulanacağı maksimum derinlik düzeyi (çözünürlük ölçeği). 0 değeri döşemeyi yalnızca en yüksek çözünürlükte uygular (varsayılan: 0) | INT | Evet | 0 - 10 |
+| `ölçek_derinliği` | Etkinleştirildiğinde, döşeme boyutu daha derin derinlik düzeylerinde orantılı olarak ölçeklenir. Bu, daha düşük çözünürlüklerde kaliteyi korumaya yardımcı olabilir (varsayılan: False) | BOOLEAN | Evet | True / False |
 
 Not: `tile_size`, `swap_size`, `max_depth` ve `scale_depth` gelişmiş girdiler olarak işaretlenmiştir, bu nedenle yalnızca arayüzde gelişmiş seçenekler etkinleştirildiğinde gösterilirler.
 

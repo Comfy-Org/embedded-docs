@@ -8,15 +8,15 @@ Substitui um objeto em uma imagem por outro descrito em texto simples, usando a 
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A imagem que contém o objeto a ser substituído. O canal alfa é descartado antes de a imagem ser enviada. | IMAGE | Sim | - |
-| `instruction` | O que substituir e por o quê, como "Substitua a maçã vermelha por uma pera verde". Deve ter pelo menos 1 caractere. | STRING | Sim | Texto multilinha; padrão: "" (vazio) |
-| `seed` | A Bria não usa seed aqui e recria a edição a cada chamada, portanto execuções repetidas podem diferir. O valor nunca é enviado: ele apenas altera a chave de cache deste nó, de modo que um grafo de outro modo idêntico execute a edição novamente em vez de retornar o resultado em cache. | INT | Sim | 0 a 2147483647, passo 1; padrão: 42; controle após gerar habilitado |
+| `imagem` | A imagem que contém o objeto a ser substituído. O canal alfa é descartado antes de a imagem ser enviada. | IMAGE | Sim | - |
+| `instrução` | O que substituir e por o quê, como "Substitua a maçã vermelha por uma pera verde". Deve ter pelo menos 1 caractere. | STRING | Sim | Texto multilinha; padrão: "" (vazio) |
+| `semente` | A Bria não usa seed aqui e recria a edição a cada chamada, portanto execuções repetidas podem diferir. O valor nunca é enviado: ele apenas altera a chave de cache deste nó, de modo que um grafo de outro modo idêntico execute a edição novamente em vez de retornar o resultado em cache. | INT | Sim | 0 a 2147483647, passo 1; padrão: 42; controle após gerar habilitado |
 
 ### Entradas de moderação
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `moderation` | Configurações de moderação. Selecionar `"true"` revela as subopções de moderação abaixo, que de outra forma não são exibidas. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
+| `moderação` | Configurações de moderação. Selecionar `"true"` revela as subopções de moderação abaixo, que de outra forma não são exibidas. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
 | `visual_input_moderation` | Habilita a moderação da imagem de entrada. Disponível apenas quando `moderation` está definido como `"true"`. | BOOLEAN | Não | `true` / `false`; padrão: false |
 | `visual_output_moderation` | Habilita a moderação da imagem de saída gerada. Disponível apenas quando `moderation` está definido como `"true"`. | BOOLEAN | Não | `true` / `false`; padrão: false |
 

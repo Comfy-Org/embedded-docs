@@ -10,11 +10,11 @@ Estas entradas son siempre visibles.
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `video` | Video que se va a mejorar. La resolución de origen debe ser como máximo 2560x1440 (2K); el tamaño de salida lo establece la entrada de resolución. | VIDEO | Sí | Como máximo 2560x1440 (2K) |
-| `tool_version` | 'standard' equilibra velocidad y calidad con más de 10 algoritmos de mejora. 'professional' usa más de 30 algoritmos para restauración de calidad cinematográfica, tarda aproximadamente 3 veces más y cuesta 10 veces más. | DYNAMIC_COMBO | Sí | "standard"<br>"professional" |
-| `resolution` | Resolución de salida. El lado corto se establece al nivel elegido y el lado largo sigue la relación de aspecto del origen. 'source' mantiene el tamaño del origen, 'custom' establece el lado corto en píxeles. Los orígenes más anchos o más altos que aproximadamente 2.2:1 se facturan un nivel de resolución superior. | DYNAMIC_COMBO | Sí | "720p"<br>"1080p"<br>"2k"<br>"4k"<br>"8k"<br>"source"<br>"custom" |
+| `vídeo` | Video que se va a mejorar. La resolución de origen debe ser como máximo 2560x1440 (2K); el tamaño de salida lo establece la entrada de resolución. | VIDEO | Sí | Como máximo 2560x1440 (2K) |
+| `versión_de_herramienta` | 'standard' equilibra velocidad y calidad con más de 10 algoritmos de mejora. 'professional' usa más de 30 algoritmos para restauración de calidad cinematográfica, tarda aproximadamente 3 veces más y cuesta 10 veces más. | DYNAMIC_COMBO | Sí | "standard"<br>"professional" |
+| `resolución` | Resolución de salida. El lado corto se establece al nivel elegido y el lado largo sigue la relación de aspecto del origen. 'source' mantiene el tamaño del origen, 'custom' establece el lado corto en píxeles. Los orígenes más anchos o más altos que aproximadamente 2.2:1 se facturan un nivel de resolución superior. | DYNAMIC_COMBO | Sí | "720p"<br>"1080p"<br>"2k"<br>"4k"<br>"8k"<br>"source"<br>"custom" |
 | `fps` | Velocidad de fotogramas de salida. Una velocidad mayor que la del origen habilita la interpolación de fotogramas por IA; una menor descarta fotogramas. 'source' mantiene la velocidad del origen, hasta 120 fps. Las velocidades superiores a 30 fps cuestan 2x, y las superiores a 60 fps, 4x. (predeterminado: "source") | COMBO | Sí | "source" (predeterminado)<br>Velocidades de fotogramas numéricas hasta 120 fps |
-| `bitrate_level` | Tasa de bits objetivo del archivo entregado, escalada a la resolución y velocidad de fotogramas de salida. (predeterminado: "medium") | COMBO | Sí | "low"<br>"medium"<br>"high" |
+| `nivel_de_tasa_de_bits` | Tasa de bits objetivo del archivo entregado, escalada a la resolución y velocidad de fotogramas de salida. (predeterminado: "medium") | COMBO | Sí | "low"<br>"medium"<br>"high" |
 
 ### Entradas estándar
 

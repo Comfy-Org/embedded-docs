@@ -6,10 +6,10 @@ Le nœud Hunyuan3Dv2ConditioningMultiView combine les sorties CLIP vision de jus
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `front` | Sortie CLIP vision pour la vue de face. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
-| `left` | Sortie CLIP vision pour la vue de gauche. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
-| `back` | Sortie CLIP vision pour la vue arrière. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
-| `right` | Sortie CLIP vision pour la vue de droite. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
+| `avant` | Sortie CLIP vision pour la vue de face. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
+| `gauche` | Sortie CLIP vision pour la vue de gauche. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
+| `arrière` | Sortie CLIP vision pour la vue arrière. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
+| `droite` | Sortie CLIP vision pour la vue de droite. Entrée de vue facultative. | CLIP_VISION_OUTPUT | Non | - |
 
 **Remarque :** Au moins une entrée de vue doit être fournie pour que le nœud fonctionne. Le nœud ne traite que les vues contenant des données de sortie CLIP vision valides et ignore les vues qui ne sont pas connectées. Chaque vue reçoit un encodage positionnel fixe en fonction de son emplacement (`front`, `left`, `back`, `right`), et les embeddings traités de toutes les vues fournies sont assemblés le long de la dimension de séquence.
 

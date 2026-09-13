@@ -8,9 +8,9 @@ Gere imagens usando o modelo Flux.2 [pro] ou Flux.2 [max] a partir de um prompt 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | A versão do modelo Flux.2 a ser usada. Selecionar um modelo desbloqueia parâmetros adicionais de largura, altura e imagens de referência opcionais. | DYNAMIC_COMBO | Sim | "Flux.2 [pro]"<br>"Flux.2 [max]" |
+| `modelo` | A versão do modelo Flux.2 a ser usada. Selecionar um modelo desbloqueia parâmetros adicionais de largura, altura e imagens de referência opcionais. | DYNAMIC_COMBO | Sim | "Flux.2 [pro]"<br>"Flux.2 [max]" |
 | `prompt` | Prompt para a geração ou edição da imagem (padrão: string vazia). | STRING | Sim | N/A |
-| `seed` | A semente aleatória usada para criar o ruído (padrão: 0). Suporta a opção control-after-generate para randomizar o valor após cada execução. | INT | Sim | 0 a 18446744073709551615 |
+| `semente` | A semente aleatória usada para criar o ruído (padrão: 0). Suporta a opção control-after-generate para randomizar o valor após cada execução. | INT | Sim | 0 a 18446744073709551615 |
 
 ### Entradas do Flux.2 [pro] e do Flux.2 [max]
 
@@ -18,8 +18,8 @@ Compartilhado por ambos os modelos — os conjuntos de parâmetros são idêntic
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model.width` | A largura da imagem gerada em pixels (padrão: 1024). | INT | Sim | 256 a 2048 (passo 32) |
-| `model.height` | A altura da imagem gerada em pixels (padrão: 768). | INT | Sim | 256 a 2048 (passo 32) |
+| `largura` | A largura da imagem gerada em pixels (padrão: 1024). | INT | Sim | 256 a 2048 (passo 32) |
+| `altura` | A altura da imagem gerada em pixels (padrão: 768). | INT | Sim | 256 a 2048 (passo 32) |
 
 ### Entradas de referência
 

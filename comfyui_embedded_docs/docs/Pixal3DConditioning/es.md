@@ -7,7 +7,7 @@ El nodo Pixal3DConditioning prepara el acondicionamiento de imagen para el pipel
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
 | `clip_vision_model` | DINOv3 ViT-L/16 ClipVision. | CLIP_VISION | Sí | — |
-| `image` | Imagen preprocesada de ImageCropToMask (pad_factor=1.1 para Pixal3D). | IMAGE | Sí | — |
+| `imagen` | Imagen preprocesada de ImageCropToMask (pad_factor=1.1 para Pixal3D). | IMAGE | Sí | — |
 | `camera_angle_x` | FOV horizontal en grados (mostrado como `fov`). Conecte un MoGeGeometryToFOV (axis='horizontal', unit='degrees') para un FoV por imagen (coincide con el valor predeterminado original). Predeterminado: 49.13. | FLOAT | Sí | 1.0 – 170.0 (paso 0.01) |
 
 ## Salidas

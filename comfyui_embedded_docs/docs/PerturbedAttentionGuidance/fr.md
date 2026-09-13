@@ -6,8 +6,8 @@ Le nœud PerturbedAttentionGuidance applique un guidage d'attention perturbé à
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle de diffusion auquel appliquer le guidage d'attention perturbé | MODEL | Oui | - |
-| `scale` | La force de l'effet de guidage d'attention perturbé (par défaut : 3.0). Lorsque cette valeur est définie sur 0, le nœud n'a aucun effet et renvoie le résultat débruité d'origine inchangé. | FLOAT | Oui | 0.0 - 100.0 (pas : 0.01) |
+| `modèle` | Le modèle de diffusion auquel appliquer le guidage d'attention perturbé | MODEL | Oui | - |
+| `échelle` | La force de l'effet de guidage d'attention perturbé (par défaut : 3.0). Lorsque cette valeur est définie sur 0, le nœud n'a aucun effet et renvoie le résultat débruité d'origine inchangé. | FLOAT | Oui | 0.0 - 100.0 (pas : 0.01) |
 
 ## Sorties
 

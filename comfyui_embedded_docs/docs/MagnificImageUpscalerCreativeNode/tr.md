@@ -6,16 +6,16 @@ Bu düğüm, bir görüntüyü büyütmek ve yaratıcı biçimde iyileştirmek i
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Büyütülecek ve iyileştirilecek giriş görüntüsü. | IMAGE | Evet | - |
+| `görüntü` | Büyütülecek ve iyileştirilecek giriş görüntüsü. | IMAGE | Evet | - |
 | `prompt` | Görüntünün yaratıcı iyileştirmesini yönlendirmek için bir metin açıklaması. Varsayılan boş bir dizedir (bu durumda hiçbir istem gönderilmez). | STRING | Evet | - |
-| `scale_factor` | Görüntünün boyutlarının büyütüleceği katsayı. | COMBO | Evet | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` |
-| `optimized_for` | İyileştirme sürecinin optimize edileceği stil veya içerik türü. | COMBO | Evet | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` |
-| `creativity` | Görüntüye uygulanan yaratıcı yorumlama düzeyini kontrol eder (varsayılan: 0). | INT | Evet | -10 - 10 |
+| `ölçek_faktörü` | Görüntünün boyutlarının büyütüleceği katsayı. | COMBO | Evet | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` |
+| `için_optimize_edildi` | İyileştirme sürecinin optimize edileceği stil veya içerik türü. | COMBO | Evet | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` |
+| `yaratıcılık` | Görüntüye uygulanan yaratıcı yorumlama düzeyini kontrol eder (varsayılan: 0). | INT | Evet | -10 - 10 |
 | `hdr` | Netlik ve ayrıntı düzeyi (varsayılan: 0). | INT | Evet | -10 - 10 |
-| `resemblance` | Orijinal görüntüye benzerlik düzeyi (varsayılan: 0). | INT | Evet | -10 - 10 |
-| `fractality` | İstemin gücü ve kare piksel başına karmaşıklık (varsayılan: 0). | INT | Evet | -10 - 10 |
-| `engine` | İşleme için kullanılacak belirli yapay zeka motoru. Bu gelişmiş bir parametredir. | COMBO | Evet | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` |
-| `auto_downscale` | Çıktı maksimum piksel sınırını aşacaksa giriş görüntüsünü otomatik olarak küçültür (varsayılan: False). Bu gelişmiş bir parametredir. | BOOLEAN | Evet | - |
+| `benzerlik` | Orijinal görüntüye benzerlik düzeyi (varsayılan: 0). | INT | Evet | -10 - 10 |
+| `fraktalite` | İstemin gücü ve kare piksel başına karmaşıklık (varsayılan: 0). | INT | Evet | -10 - 10 |
+| `motor` | İşleme için kullanılacak belirli yapay zeka motoru. Bu gelişmiş bir parametredir. | COMBO | Evet | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` |
+| `otomatik_küçültme` | Çıktı maksimum piksel sınırını aşacaksa giriş görüntüsünü otomatik olarak küçültür (varsayılan: False). Bu gelişmiş bir parametredir. | BOOLEAN | Evet | - |
 
 **Kısıtlamalar:**
 

@@ -9,10 +9,10 @@ Bu düğüm, bir başlangıç karesi ile bir bitiş karesi arasında geçiş olu
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Video üretimi için kullanılacak model. Bir seçenek seçildiğinde `resolution`, `duration` ve `audio` için ek yapılandırma parametreleri görünür. | DYNAMIC_COMBO | Evet | `"viduq3-pro"`<br>`"viduq3-turbo"` |
-| `first_frame` | Video dizisinin başlangıç görüntüsü. | IMAGE | Evet | - |
-| `end_frame` | Video dizisinin bitiş görüntüsü. | IMAGE | Evet | - |
-| `prompt` | İstem açıklaması (en fazla 2000 karakter). | STRING | Evet | En fazla 2000 karakter |
-| `seed` | Üretimin rastgeleliğini kontrol etmek için kullanılan seed değeri. Üretim sonrası kontrol seçeneği vardır (varsayılan: 1). | INT | Evet | 0 - 2147483647 |
+| `ilk kare` | Video dizisinin başlangıç görüntüsü. | IMAGE | Evet | - |
+| `bitiş karesi` | Video dizisinin bitiş görüntüsü. | IMAGE | Evet | - |
+| `komut istemi` | İstem açıklaması (en fazla 2000 karakter). | STRING | Evet | En fazla 2000 karakter |
+| `tohum` | Üretimin rastgeleliğini kontrol etmek için kullanılan seed değeri. Üretim sonrası kontrol seçeneği vardır (varsayılan: 1). | INT | Evet | 0 - 2147483647 |
 
 ### viduq3-pro ve viduq3-turbo Girdileri
 

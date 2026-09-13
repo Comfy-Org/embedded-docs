@@ -6,7 +6,7 @@ El nodo FreeU aplica modificaciones en el dominio de la frecuencia a los bloques
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo al que se aplicarán las modificaciones de FreeU | MODEL | Sí | - |
+| `modelo` | El modelo al que se aplicarán las modificaciones de FreeU | MODEL | Sí | - |
 | `b1` | Factor de escalado del backbone aplicado a mapas de características con model_channels × 4 canales (predeterminado: 1.1). Marcado como configuración avanzada. | FLOAT | Sí | 0.0 - 10.0 |
 | `b2` | Factor de escalado del backbone aplicado a mapas de características con model_channels × 2 canales (predeterminado: 1.2). Marcado como configuración avanzada. | FLOAT | Sí | 0.0 - 10.0 |
 | `s1` | Factor de escalado de conexión de salto aplicado a mapas de características con model_channels × 4 canales (predeterminado: 0.9). Marcado como configuración avanzada. | FLOAT | Sí | 0.0 - 10.0 |

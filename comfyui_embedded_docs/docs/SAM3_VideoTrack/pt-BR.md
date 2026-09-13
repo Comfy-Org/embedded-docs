@@ -6,13 +6,13 @@ Rastreie objetos em frames de vídeo usando o rastreador baseado em memória do 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `images` | Frames de vídeo como imagens em lote | IMAGE | Sim | Frames de vídeo em lote |
+| `imagens` | Frames de vídeo como imagens em lote | IMAGE | Sim | Frames de vídeo em lote |
 | `model` | O modelo SAM3 a ser usado para rastreamento | MODEL | Sim | Modelo SAM3 |
-| `initial_mask` | Máscara(s) para o primeiro frame a ser rastreado (uma por objeto) | MASK | Não | Uma máscara por objeto |
-| `conditioning` | Condicionamento de texto para detectar novos objetos durante o rastreamento | CONDITIONING | Não | Condicionamento de texto |
-| `detection_threshold` | Limite de pontuação para detecção com prompt de texto (padrão: 0.5) | FLOAT | Não | 0.0 a 1.0 (passo 0.01) |
-| `max_objects` | Máximo de objetos rastreados. Máscaras iniciais contam para este limite. 0 usa o limite interno de 64. (padrão: 4) | INT | Não | 0 a 64 |
-| `detect_interval` | Executa a detecção a cada N frames (1=a cada frame). Valores mais altos economizam processamento. (padrão: 1) | INT | Não | 1 ou maior |
+| `máscara_inicial` | Máscara(s) para o primeiro frame a ser rastreado (uma por objeto) | MASK | Não | Uma máscara por objeto |
+| `condicionamento` | Condicionamento de texto para detectar novos objetos durante o rastreamento | CONDITIONING | Não | Condicionamento de texto |
+| `limiar_de_deteccao` | Limite de pontuação para detecção com prompt de texto (padrão: 0.5) | FLOAT | Não | 0.0 a 1.0 (passo 0.01) |
+| `máximo_de_objetos` | Máximo de objetos rastreados. Máscaras iniciais contam para este limite. 0 usa o limite interno de 64. (padrão: 4) | INT | Não | 0 a 64 |
+| `intervalo_de_deteccao` | Executa a detecção a cada N frames (1=a cada frame). Valores mais altos economizam processamento. (padrão: 1) | INT | Não | 1 ou maior |
 
 **Observação:** É necessário fornecer `initial_mask` ou `conditioning`. Se ambos forem omitidos, o nó gera um erro.
 

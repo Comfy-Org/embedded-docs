@@ -6,8 +6,8 @@ El nodo LTXVLatentUpsampler aumenta la resolución espacial de una representaci�
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `samples` | La representación latente de entrada del video que se va a escalar. | LATENT | Sí |  |
-| `upscale_model` | El modelo cargado que se utiliza para realizar el escalado 2x sobre los datos latentes. | LATENT_UPSCALE_MODEL | Sí |  |
+| `muestras` | La representación latente de entrada del video que se va a escalar. | LATENT | Sí |  |
+| `modelo_de_escalado` | El modelo cargado que se utiliza para realizar el escalado 2x sobre los datos latentes. | LATENT_UPSCALE_MODEL | Sí |  |
 | `vae` | El modelo VAE que se utiliza para desnormalizar los latentes de entrada antes del escalado y para normalizar los latentes de salida después. | VAE | Sí |  |
 
 Nota: Este nodo está marcado como experimental en ComfyUI.

@@ -6,7 +6,7 @@ Charge un modèle de suppression d'arrière-plan depuis un fichier. Ce nœud pr�
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `bg_removal_name` | Le modèle utilisé pour supprimer les arrière-plans des images. Sélectionnez-le dans la liste des fichiers de modèle de suppression d'arrière-plan disponibles. | COMBO | Oui | Liste des fichiers de modèle disponibles (triés par ordre alphabétique) |
+| `nom_du_modèle_de_suppression_arrière-plan` | Le modèle utilisé pour supprimer les arrière-plans des images. Sélectionnez-le dans la liste des fichiers de modèle de suppression d'arrière-plan disponibles. | COMBO | Oui | Liste des fichiers de modèle disponibles (triés par ordre alphabétique) |
 
 Remarque : Si le fichier sélectionné ne contient pas un modèle de suppression d'arrière-plan valide, le nœud déclenche une RuntimeError.
 

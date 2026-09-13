@@ -8,10 +8,10 @@ Le nœud Grok Video Extend étend une vidéo existante avec une continuation flu
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `model` | Le modèle à utiliser pour l’extension vidéo. La sélection de l’option `"grok-imagine-video"` révèle ses paramètres spécifiques au modèle. | DYNAMIC_COMBO | Oui | `"grok-imagine-video"` |
-| `prompt` | Description textuelle de ce qui doit se produire ensuite dans la vidéo. | STRING | Oui | N/A |
-| `video` | Vidéo source à étendre. Format MP4, 2 à 15 secondes. | VIDEO | Oui | MP4, 2 à 15 secondes, maximum 50 Mo |
-| `seed` | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). | INT | Oui | 0 à 2147483647 |
+| `modèle` | Le modèle à utiliser pour l’extension vidéo. La sélection de l’option `"grok-imagine-video"` révèle ses paramètres spécifiques au modèle. | DYNAMIC_COMBO | Oui | `"grok-imagine-video"` |
+| `invite` | Description textuelle de ce qui doit se produire ensuite dans la vidéo. | STRING | Oui | N/A |
+| `vidéo` | Vidéo source à étendre. Format MP4, 2 à 15 secondes. | VIDEO | Oui | MP4, 2 à 15 secondes, maximum 50 Mo |
+| `graine` | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). | INT | Oui | 0 à 2147483647 |
 
 ### Entrées grok-imagine-video
 

@@ -6,9 +6,9 @@ Ce nœud fournit une méthode d'échantillonnage spécialisée qui combine l'éc
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
-| `scale_ratio` | Le facteur d'échelle total à appliquer pendant l'agrandissement. Une valeur de 1.0 conserve la résolution d'origine (par défaut : 1.0) | FLOAT | Oui | 0.1 - 20.0 |
-| `scale_steps` | Le nombre d'étapes à utiliser pour le processus d'agrandissement. Utilisez -1 pour un calcul automatique basé sur le programme d'échantillonnage (par défaut : -1) | INT | Oui | -1 - 1000 |
-| `upscale_method` | La méthode d'interpolation utilisée pour agrandir l'image à chaque étape d'agrandissement (par défaut : "bislerp") | COMBO | Oui | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" |
+| `ratio_échelle` | Le facteur d'échelle total à appliquer pendant l'agrandissement. Une valeur de 1.0 conserve la résolution d'origine (par défaut : 1.0) | FLOAT | Oui | 0.1 - 20.0 |
+| `étapes_échelle` | Le nombre d'étapes à utiliser pour le processus d'agrandissement. Utilisez -1 pour un calcul automatique basé sur le programme d'échantillonnage (par défaut : -1) | INT | Oui | -1 - 1000 |
+| `méthode_agrandissement` | La méthode d'interpolation utilisée pour agrandir l'image à chaque étape d'agrandissement (par défaut : "bislerp") | COMBO | Oui | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" |
 
 `scale_ratio` et `scale_steps` sont des paramètres avancés. L'image est agrandie progressivement depuis sa taille d'origine jusqu'au `scale_ratio` cible au fil des étapes d'agrandissement. Lorsque `scale_steps` vaut -1, le nombre d'étapes d'agrandissement est calculé automatiquement comme environ la moitié du nombre d'étapes d'échantillonnage, avec un minimum de 2 ; lorsqu'une valeur positive est fournie, le nœud l'ajuste en interne et la limite en fonction du nombre total d'étapes d'échantillonnage.
 

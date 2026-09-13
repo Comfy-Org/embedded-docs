@@ -6,12 +6,12 @@ WanMoveVisualizeTracks düğümü, hareket izleme verilerini bir görüntü veya
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `images` | İzlerin görselleştirileceği giriş görüntüleri veya video kareleri dizisi. | IMAGE | Evet | - |
-| `tracks` | Nokta yollarını ve görünürlük bilgilerini içeren hareket izleme verileri. Sağlanmazsa, giriş görüntüleri değiştirilmeden geçirilir. | TRACKS | Hayır | - |
-| `line_resolution` | Her iz için kuyruk yol çizgisi çizilirken kullanılacak önceki kare sayısı (varsayılan: 24). | INT | Evet | 1 - 1024 |
-| `circle_size` | Her izin mevcut konumunda çizilen dairenin boyutu (varsayılan: 12). Gelişmiş parametre olarak işaretlenmiştir. | INT | Evet | 1 - 128 |
-| `opacity` | Çizilen iz kaplamalarının opaklığı (varsayılan: 0.75). | FLOAT | Evet | 0.0 - 1.0 |
-| `line_width` | İz yollarını çizmek için kullanılan çizgilerin genişliği (varsayılan: 16). Gelişmiş parametre olarak işaretlenmiştir. | INT | Evet | 1 - 128 |
+| `görseller` | İzlerin görselleştirileceği giriş görüntüleri veya video kareleri dizisi. | IMAGE | Evet | - |
+| `izler` | Nokta yollarını ve görünürlük bilgilerini içeren hareket izleme verileri. Sağlanmazsa, giriş görüntüleri değiştirilmeden geçirilir. | TRACKS | Hayır | - |
+| `çizgi_çözünürlüğü` | Her iz için kuyruk yol çizgisi çizilirken kullanılacak önceki kare sayısı (varsayılan: 24). | INT | Evet | 1 - 1024 |
+| `daire_boyutu` | Her izin mevcut konumunda çizilen dairenin boyutu (varsayılan: 12). Gelişmiş parametre olarak işaretlenmiştir. | INT | Evet | 1 - 128 |
+| `opaklık` | Çizilen iz kaplamalarının opaklığı (varsayılan: 0.75). | FLOAT | Evet | 0.0 - 1.0 |
+| `çizgi_kalınlığı` | İz yollarını çizmek için kullanılan çizgilerin genişliği (varsayılan: 16). Gelişmiş parametre olarak işaretlenmiştir. | INT | Evet | 1 - 128 |
 
 **Not:** Giriş görüntülerinin sayısı, sağlanan `tracks` verisindeki kare sayısıyla eşleşmiyorsa, görüntü dizisi iz uzunluğuyla eşleşecek şekilde yinelenir.
 

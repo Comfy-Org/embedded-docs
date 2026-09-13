@@ -6,9 +6,9 @@ Le nœud USOStyleReference applique une référence de style à un modèle en co
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle de base auquel le patch de référence de style est appliqué. | MODEL | Oui | - |
-| `model_patch` | Le patch de modèle contenant le modèle de projection utilisé pour encoder les caractéristiques de l'image de référence. | MODEL_PATCH | Oui | - |
-| `clip_vision_output` | Les caractéristiques visuelles encodées extraites du traitement de vision CLIP de l'image de référence. | CLIP_VISION_OUTPUT | Oui | - |
+| `modèle` | Le modèle de base auquel le patch de référence de style est appliqué. | MODEL | Oui | - |
+| `correctif_modèle` | Le patch de modèle contenant le modèle de projection utilisé pour encoder les caractéristiques de l'image de référence. | MODEL_PATCH | Oui | - |
+| `sortie_vision_clip` | Les caractéristiques visuelles encodées extraites du traitement de vision CLIP de l'image de référence. | CLIP_VISION_OUTPUT | Oui | - |
 
 Remarque : le `clip_vision_output` doit provenir d'un modèle de vision CLIP qui fournit les états cachés complets et l'avant-dernier état caché. Le nœud combine le 20e en partant de la fin, le 11e en partant de la fin et l'avant-dernier état caché pour former l'embedding de style. Le `model_patch` doit exposer un modèle de projection via son attribut `model`, qui convertit ces caractéristiques d'image en embedding de style. Pendant l'échantillonnage, l'embedding de style est ajouté au début du conditionnement textuel afin qu'il puisse influencer la génération, et les ID de texte à position zéro correspondants sont ajoutés au début des ID de texte afin que la séquence d'identifiants reste alignée avec le conditionnement étendu.
 

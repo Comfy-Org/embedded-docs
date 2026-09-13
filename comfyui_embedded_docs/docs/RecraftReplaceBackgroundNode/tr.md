@@ -6,12 +6,12 @@ Bir görselin arka planını, sağlanan istem temelinde değiştirir. Bu düğü
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | İşlenecek girdi görseli | IMAGE | Evet | - |
-| `prompt` | Görsel oluşturma için istem (varsayılan: boş) | STRING | Evet | - |
+| `görüntü` | İşlenecek girdi görseli | IMAGE | Evet | - |
+| `istem` | Görsel oluşturma için istem (varsayılan: boş) | STRING | Evet | - |
 | `n` | Oluşturulacak görsel sayısı (varsayılan: 1) | INT | Evet | 1-6 |
-| `seed` | Düğümün yeniden çalışıp çalışmayacağını belirleyen tohum; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0) | INT | Evet | 0-18446744073709551615 |
-| `recraft_style` | Oluşturulan arka plan için isteğe bağlı stil seçimi. Sağlanmazsa varsayılan olarak "realistic_image" stiline geçer | STYLEV3 | Hayır | - |
-| `negative_prompt` | Bir görselde istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: boş) | STRING | Hayır | - |
+| `tohum` | Düğümün yeniden çalışıp çalışmayacağını belirleyen tohum; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0) | INT | Evet | 0-18446744073709551615 |
+| `recraft_stili` | Oluşturulan arka plan için isteğe bağlı stil seçimi. Sağlanmazsa varsayılan olarak "realistic_image" stiline geçer | STYLEV3 | Hayır | - |
+| `negatif_istem` | Bir görselde istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: boş) | STRING | Hayır | - |
 
 **Notlar:**
 - `seed` parametresi düğümün ne zaman yeniden yürütüleceğini kontrol eder ancak harici API'nin doğası gereği deterministik sonuçları garanti etmez.

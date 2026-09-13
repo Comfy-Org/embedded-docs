@@ -6,7 +6,7 @@ Este nodo convierte una representación latente de audio de vuelta en una forma 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `samples` | Las muestras de audio codificadas en el espacio latente que se decodificarán de nuevo en una forma de onda de audio. Si las muestras tienen su propia frecuencia de muestreo, se usa ese valor para la salida. | LATENT | Sí | - |
+| `muestras` | Las muestras de audio codificadas en el espacio latente que se decodificarán de nuevo en una forma de onda de audio. Si las muestras tienen su propia frecuencia de muestreo, se usa ese valor para la salida. | LATENT | Sí | - |
 | `vae` | El modelo de autoencoder variacional (VAE) que se usa para decodificar las muestras latentes en audio. Su frecuencia de muestreo de salida de audio (44100 Hz por defecto) determina la frecuencia de muestreo de la forma de onda resultante cuando las muestras de entrada no especifican una. | VAE | Sí | - |
 
 ## Salidas

@@ -9,7 +9,7 @@ Ce nœud fait passer une image vers une autre saison à l'aide de Bria. Toute la
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image à faire passer vers une autre saison. Tout canal alpha est supprimé avant que l'image ne soit envoyée. | IMAGE | Oui | - |
-| `season` | Saison à appliquer. | COMBO | Oui | `"spring"`<br>`"summer"`<br>`"autumn"`<br>`"winter"` |
+| `saison` | Saison à appliquer. | COMBO | Oui | `"spring"`<br>`"summer"`<br>`"autumn"`<br>`"winter"` |
 | `moderation` | Paramètres de modération. Détermine si les options de modération de contenu sont configurées pour cette requête. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
 
 ### Entrées de modération

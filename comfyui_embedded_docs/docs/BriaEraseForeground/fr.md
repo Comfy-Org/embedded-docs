@@ -11,7 +11,7 @@ Il s'agit d'un nœud API payant qui s'exécute sur le service de Bria, donc vos 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image dont le premier plan est supprimé et remplacé par un arrière-plan généré. Seuls les canaux de couleur sont envoyés ; tout canal alpha est ignoré avant l'envoi. | IMAGE | Oui | - |
-| `moderation` | Paramètres de modération. Sélectionnez `"false"` pour envoyer l'image sans indicateurs de modération, ou `"true"` pour révéler les options de modération de contenu ci-dessous. Par défaut : `"false"`. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
+| `modération` | Paramètres de modération. Sélectionnez `"false"` pour envoyer l'image sans indicateurs de modération, ou `"true"` pour révéler les options de modération de contenu ci-dessous. Par défaut : `"false"`. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
 
 ### Entrées `"false"`
 

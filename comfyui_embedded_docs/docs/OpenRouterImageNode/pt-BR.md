@@ -8,7 +8,7 @@ Este nó gera ou edita imagens por meio do OpenRouter usando os modelos MAI-Imag
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo de imagem do OpenRouter usado para gerar a imagem. Selecionar um modelo revela as opções específicas do modelo listadas abaixo. | DYNAMIC_COMBO | Sim | `microsoft/mai-image-2.6`<br>`microsoft/mai-image-2.6-flash` |
+| `modelo` | O modelo de imagem do OpenRouter usado para gerar a imagem. Selecionar um modelo revela as opções específicas do modelo listadas abaixo. | DYNAMIC_COMBO | Sim | `microsoft/mai-image-2.6`<br>`microsoft/mai-image-2.6-flash` |
 
 ### Entradas do Mai Image 2.6 e do Mai Image 2.6 Flash
 

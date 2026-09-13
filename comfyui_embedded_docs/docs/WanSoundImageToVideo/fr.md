@@ -6,17 +6,17 @@ Le nœud WanSoundImageToVideo prépare le conditionnement et un tenseur latent v
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `positive` | Prompts de conditionnement positif qui guident le contenu à faire apparaître dans la vidéo générée | CONDITIONING | Oui | - |
-| `negative` | Prompts de conditionnement négatif qui spécifient le contenu à éviter dans la vidéo générée | CONDITIONING | Oui | - |
+| `positif` | Prompts de conditionnement positif qui guident le contenu à faire apparaître dans la vidéo générée | CONDITIONING | Oui | - |
+| `négatif` | Prompts de conditionnement négatif qui spécifient le contenu à éviter dans la vidéo générée | CONDITIONING | Oui | - |
 | `vae` | Modèle VAE utilisé pour encoder les images de référence, les références de mouvement et les images de la vidéo de contrôle en représentations latentes | VAE | Oui | - |
-| `width` | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `height` | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `length` | Nombre d'images dans la vidéo générée (par défaut : 77, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
-| `batch_size` | Nombre de vidéos à générer simultanément (par défaut : 1) | INT | Oui | 1 à 4096 |
-| `audio_encoder_output` | Encodage audio facultatif pouvant influencer la génération vidéo en fonction des caractéristiques sonores. Lorsqu'il est fourni, les caractéristiques audio sont interpolées et utilisées pour conditionner la génération vidéo. | AUDIO_ENCODER_OUTPUT | Non | - |
-| `ref_image` | Image de référence facultative qui fournit un guidage visuel pour le contenu de la vidéo. L'image est agrandie pour correspondre à la largeur et à la hauteur spécifiées, puis encodée en une représentation latente. Seule la première image de l'entrée est utilisée comme référence. | IMAGE | Non | - |
-| `control_video` | Vidéo de contrôle facultative qui guide le mouvement et la structure de la vidéo générée. La vidéo est agrandie et encodée, puis utilisée pour conditionner la sortie. Seules les `length` premières images sont utilisées. | IMAGE | Non | - |
-| `ref_motion` | Référence de mouvement facultative qui fournit un guidage pour les motifs de mouvement dans la vidéo. Si l'entrée comporte plus de 73 images, seules les 73 dernières sont utilisées. Si moins de 73 images sont fournies, la séquence est complétée par des images neutres. | IMAGE | Non | - |
+| `largeur` | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `hauteur` | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `longueur` | Nombre d'images dans la vidéo générée (par défaut : 77, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
+| `taille_lot` | Nombre de vidéos à générer simultanément (par défaut : 1) | INT | Oui | 1 à 4096 |
+| `sortie_encodeur_audio` | Encodage audio facultatif pouvant influencer la génération vidéo en fonction des caractéristiques sonores. Lorsqu'il est fourni, les caractéristiques audio sont interpolées et utilisées pour conditionner la génération vidéo. | AUDIO_ENCODER_OUTPUT | Non | - |
+| `image_référence` | Image de référence facultative qui fournit un guidage visuel pour le contenu de la vidéo. L'image est agrandie pour correspondre à la largeur et à la hauteur spécifiées, puis encodée en une représentation latente. Seule la première image de l'entrée est utilisée comme référence. | IMAGE | Non | - |
+| `vidéo de contrôle` | Vidéo de contrôle facultative qui guide le mouvement et la structure de la vidéo générée. La vidéo est agrandie et encodée, puis utilisée pour conditionner la sortie. Seules les `length` premières images sont utilisées. | IMAGE | Non | - |
+| `mouvement de référence` | Référence de mouvement facultative qui fournit un guidage pour les motifs de mouvement dans la vidéo. Si l'entrée comporte plus de 73 images, seules les 73 dernières sont utilisées. Si moins de 73 images sont fournies, la séquence est complétée par des images neutres. | IMAGE | Non | - |
 
 Remarque : Toutes les entrées facultatives peuvent être utilisées indépendamment ou ensemble. Le nœud modifie les conditionnements `positive` et `negative` fournis en fonction des entrées facultatives connectées.
 

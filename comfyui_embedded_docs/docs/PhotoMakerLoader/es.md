@@ -6,7 +6,7 @@ El nodo PhotoMakerLoader carga un modelo PhotoMaker desde los archivos de modelo
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `photomaker_model_name` | El nombre del archivo de modelo PhotoMaker que se va a cargar. Las opciones disponibles están determinadas por los archivos de modelo presentes en la carpeta `photomaker`. | COMBO | Sí | Múltiples opciones disponibles (pobladas dinámicamente desde la carpeta `photomaker`) |
+| `nombre_del_modelo_photomaker` | El nombre del archivo de modelo PhotoMaker que se va a cargar. Las opciones disponibles están determinadas por los archivos de modelo presentes en la carpeta `photomaker`. | COMBO | Sí | Múltiples opciones disponibles (pobladas dinámicamente desde la carpeta `photomaker`) |
 
 ## Salidas
 

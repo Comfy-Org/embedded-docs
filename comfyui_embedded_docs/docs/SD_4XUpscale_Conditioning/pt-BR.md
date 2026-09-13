@@ -6,11 +6,11 @@ O nó SD_4XUpscale_Conditioning prepara dados de condicionamento para ampliar im
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `images` | Imagens de entrada a serem ampliadas. | IMAGE | Sim | - |
-| `positive` | Dados de condicionamento positivo que orientam a geração em direção ao conteúdo desejado. | CONDITIONING | Sim | - |
-| `negative` | Dados de condicionamento negativo que afastam a geração de conteúdo indesejado. | CONDITIONING | Sim | - |
-| `scale_ratio` | Multiplicador aplicado às dimensões da imagem de entrada ao preparar o condicionamento ampliado e o latent (padrão: 4.0). | FLOAT | Sim | 0.0 - 10.0 (passo 0.01) |
-| `noise_augmentation` | Quantidade de ruído a ser adicionada durante o processo de ampliação (padrão: 0.0). | FLOAT | Sim | 0.0 - 1.0 (passo 0.001) |
+| `imagens` | Imagens de entrada a serem ampliadas. | IMAGE | Sim | - |
+| `positivo` | Dados de condicionamento positivo que orientam a geração em direção ao conteúdo desejado. | CONDITIONING | Sim | - |
+| `negativo` | Dados de condicionamento negativo que afastam a geração de conteúdo indesejado. | CONDITIONING | Sim | - |
+| `fator_de_escala` | Multiplicador aplicado às dimensões da imagem de entrada ao preparar o condicionamento ampliado e o latent (padrão: 4.0). | FLOAT | Sim | 0.0 - 10.0 (passo 0.01) |
+| `aumento_de_ruído` | Quantidade de ruído a ser adicionada durante o processo de ampliação (padrão: 0.0). | FLOAT | Sim | 0.0 - 1.0 (passo 0.001) |
 
 Observação: `noise_augmentation` é um parâmetro avançado, exibido na interface do nó sob a opção "Avançado".
 

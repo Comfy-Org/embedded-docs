@@ -6,9 +6,9 @@ LatentOperationSharpen düğümü, Gauss tabanlı bir çekirdek kullanarak laten
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `sharpen_radius` | Keskinleştirme çekirdeğinin yarıçapı; keskinleştirme için kullanılan alanın boyutunu kontrol eder (varsayılan: 9) | INT | Evet | 1-31 |
+| `keskinleştirme_yarıçapı` | Keskinleştirme çekirdeğinin yarıçapı; keskinleştirme için kullanılan alanın boyutunu kontrol eder (varsayılan: 9) | INT | Evet | 1-31 |
 | `sigma` | Keskinleştirme çekirdeğini oluşturmak için kullanılan Gauss çekirdeğinin standart sapması (varsayılan: 1.0) | FLOAT | Evet | 0.1-10.0 |
-| `alpha` | Keskinleştirme yoğunluk faktörü; daha yüksek değerler daha güçlü bir keskinleştirme etkisi üretir (varsayılan: 0.1) | FLOAT | Evet | 0.0-5.0 |
+| `alfa` | Keskinleştirme yoğunluk faktörü; daha yüksek değerler daha güçlü bir keskinleştirme etkisi üretir (varsayılan: 0.1) | FLOAT | Evet | 0.0-5.0 |
 
 Üç girdinin tümü gelişmiş parametrelerdir ve varsayılan değerlere sahiptir; bu nedenle düğüm, bunlar değiştirilmeden kullanılabilir. Bu düğüm deneysel olarak işaretlenmiştir.
 

@@ -6,13 +6,13 @@ Ce nœud prolonge un clip vidéo existant avec FLUX 3 : le nouveau clip reprend 
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `video` | Le clip à prolonger. | VIDEO | Oui | Clip vidéo unique |
+| `vidéo` | Le clip à prolonger. | VIDEO | Oui | Clip vidéo unique |
 | `prompt` | Ce que la suite doit montrer ; le prompt est interprété et développé avant la génération. (par défaut : "") | STRING | Oui | Texte non vide (minimum 1 caractère) |
-| `aspect_ratio` | Format d'image de sortie. 'auto' en sélectionne un à partir du prompt et des entrées. (par défaut : "auto") | COMBO | Oui | "auto" (par défaut)<br>Plusieurs options prédéfinies |
-| `duration` | Durée du clip en secondes. 'auto' adapte la durée au contenu. (par défaut : "auto") | COMBO | Oui | "auto" (par défaut)<br>Valeurs numériques en secondes |
-| `resolution` | Résolution de sortie. (par défaut : "720p") | COMBO | Oui | "720p" (par défaut)<br>"1080p"<br>Autres options prédéfinies |
-| `generate_audio` | Générer un audio synchronisé (ambiance, voix, effets). Désactivé produit une vidéo sans piste audio. (par défaut : true) | BOOLEAN | Oui | true<br>false |
-| `safety_tolerance` | Tolérance de modération, 0 est la plus stricte. Les requêtes qui envoient des images ou une vidéo sont plafonnées à 2 quelle que soit la valeur définie ici. (paramètre avancé, par défaut : 2) | INT | Oui | 0 - 4 (maximum effectif : 2 pour les requêtes vidéo) |
+| `rapport d'aspect` | Format d'image de sortie. 'auto' en sélectionne un à partir du prompt et des entrées. (par défaut : "auto") | COMBO | Oui | "auto" (par défaut)<br>Plusieurs options prédéfinies |
+| `durée` | Durée du clip en secondes. 'auto' adapte la durée au contenu. (par défaut : "auto") | COMBO | Oui | "auto" (par défaut)<br>Valeurs numériques en secondes |
+| `résolution` | Résolution de sortie. (par défaut : "720p") | COMBO | Oui | "720p" (par défaut)<br>"1080p"<br>Autres options prédéfinies |
+| `générer l'audio` | Générer un audio synchronisé (ambiance, voix, effets). Désactivé produit une vidéo sans piste audio. (par défaut : true) | BOOLEAN | Oui | true<br>false |
+| `tolérance de sécurité` | Tolérance de modération, 0 est la plus stricte. Les requêtes qui envoient des images ou une vidéo sont plafonnées à 2 quelle que soit la valeur définie ici. (paramètre avancé, par défaut : 2) | INT | Oui | 0 - 4 (maximum effectif : 2 pour les requêtes vidéo) |
 | `seed` | Graine permettant de déterminer si le nœud doit être réexécuté ; FLUX 3 choisit sa propre graine, donc les résultats réels sont non déterministes quelle que soit cette valeur. (par défaut : 42) | INT | Oui | 0 - 4294967295 (0xFFFFFFFF) |
 
 ### Remarques

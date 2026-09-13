@@ -6,7 +6,7 @@ Weld Vertices mescla vértices coincidentes em uma malha 3D, de modo que faces q
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `mesh` | A malha 3D de entrada cujos vértices coincidentes serão mesclados. | MESH | Sim | - |
+| `malha` | A malha 3D de entrada cujos vértices coincidentes serão mesclados. | MESH | Sim | - |
 | `epsilon_rel` | Tolerância de soldagem (fração da diagonal da caixa delimitadora (bbox)). 1e-5 para deduplicação de float; 1e-3 para vértices visivelmente próximos, mas distintos. Padrão: 1e-5. | FLOAT | Sim | 0.0 a ilimitado (passo 1e-6) |
 | `epsilon_abs` | Tolerância de soldagem absoluta (substitui epsilon_rel quando > 0). Padrão: 0.0. | FLOAT | Sim | 0.0 a ilimitado (passo 1e-6) |
 

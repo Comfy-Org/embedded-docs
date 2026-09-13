@@ -6,11 +6,11 @@ El nodo SD_4XUpscale_Conditioning prepara datos de condicionamiento para aumenta
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `images` | Imágenes de entrada que se van a escalar. | IMAGE | Sí | - |
-| `positive` | Datos de condicionamiento positivo que guían la generación hacia el contenido deseado. | CONDITIONING | Sí | - |
-| `negative` | Datos de condicionamiento negativo que alejan la generación del contenido no deseado. | CONDITIONING | Sí | - |
-| `scale_ratio` | Multiplicador aplicado a las dimensiones de la imagen de entrada al preparar el condicionamiento y el latente escalados (predeterminado: 4.0). | FLOAT | Sí | 0.0 - 10.0 (paso 0.01) |
-| `noise_augmentation` | Cantidad de ruido que se añadirá durante el proceso de escalado (predeterminado: 0.0). | FLOAT | Sí | 0.0 - 1.0 (paso 0.001) |
+| `imágenes` | Imágenes de entrada que se van a escalar. | IMAGE | Sí | - |
+| `positivo` | Datos de condicionamiento positivo que guían la generación hacia el contenido deseado. | CONDITIONING | Sí | - |
+| `negativo` | Datos de condicionamiento negativo que alejan la generación del contenido no deseado. | CONDITIONING | Sí | - |
+| `relación_escala` | Multiplicador aplicado a las dimensiones de la imagen de entrada al preparar el condicionamiento y el latente escalados (predeterminado: 4.0). | FLOAT | Sí | 0.0 - 10.0 (paso 0.01) |
+| `aumento_ruido` | Cantidad de ruido que se añadirá durante el proceso de escalado (predeterminado: 0.0). | FLOAT | Sí | 0.0 - 1.0 (paso 0.001) |
 
 Nota: `noise_augmentation` es un parámetro avanzado, que se muestra en la interfaz del nodo bajo el conmutador "Advanced".
 

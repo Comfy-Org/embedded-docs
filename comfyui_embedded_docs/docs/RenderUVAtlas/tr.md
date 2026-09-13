@@ -6,8 +6,8 @@ Bir mesh'in UV düzenini görüntü olarak render eder. Bağlı her UV bölgesi 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `mesh` | UV düzeninin render edileceği 3D mesh. Mesh'in UV koordinatları olmalıdır; aksi takdirde düğüm "mesh has no UVs to render. Run UnwrapMesh first." hatasını verir. | MESH | Evet | - |
-| `resolution` | Render edilen kare görüntünün piksel cinsinden genişliği ve yüksekliği (varsayılan: 1024). | INT | Evet | 64 ile 4096 arası (adım 64) |
+| `ağ` | UV düzeninin render edileceği 3D mesh. Mesh'in UV koordinatları olmalıdır; aksi takdirde düğüm "mesh has no UVs to render. Run UnwrapMesh first." hatasını verir. | MESH | Evet | - |
+| `çözünürlük` | Render edilen kare görüntünün piksel cinsinden genişliği ve yüksekliği (varsayılan: 1024). | INT | Evet | 64 ile 4096 arası (adım 64) |
 
 Not: Mesh bir batch boyutu içeriyorsa (3D UV veya yüz dizileri), batch içindeki yalnızca ilk öğe render edilir.
 

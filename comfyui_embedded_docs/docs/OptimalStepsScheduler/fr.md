@@ -7,8 +7,8 @@ Le nœud OptimalStepsScheduler crée un programme de bruit (une séquence de val
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `model_type` | Type de modèle de diffusion à utiliser pour le calcul des niveaux de bruit. Chaque option utilise sa propre table prédéfinie de niveaux de bruit. | COMBO | Oui | "FLUX"<br>"Wan"<br>"Chroma" |
-| `steps` | Nombre total d'étapes d'échantillonnage à calculer (par défaut : 20). | INT | Oui | 3 à 1000 |
-| `denoise` | Contrôle la force du débruitage, ce qui ajuste le nombre effectif d'étapes (par défaut : 1.0). | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
+| `étapes` | Nombre total d'étapes d'échantillonnage à calculer (par défaut : 20). | INT | Oui | 3 à 1000 |
+| `réduction du bruit` | Contrôle la force du débruitage, ce qui ajuste le nombre effectif d'étapes (par défaut : 1.0). | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
 
 **Remarque :** La table des niveaux de bruit de base pour le `model_type` sélectionné est rééchantillonnée avec une interpolation log-linéaire lorsque sa longueur n'est pas égale à `steps + 1`, de sorte que la sortie corresponde toujours au nombre d'étapes demandé.
 

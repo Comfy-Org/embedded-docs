@@ -6,7 +6,7 @@ Le nœud RenormCFG modifie le processus de guidage sans classifieur (CFG) dans l
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle de diffusion auquel appliquer le CFG renormalisé | MODEL | Oui | - |
+| `modèle` | Le modèle de diffusion auquel appliquer le CFG renormalisé | MODEL | Oui | - |
 | `cfg_trunc` | Seuil de pas de temps pour appliquer la mise à l'échelle CFG. Lorsque le pas de temps actuel est inférieur à cette valeur, la mise à l'échelle CFG et la renormalisation sont appliquées ; sinon, seule la prédiction conditionnelle est utilisée (valeur par défaut : 100.0) | FLOAT | Non | 0.0 - 100.0 (pas 0.01) |
 | `renorm_cfg` | Facteur de renormalisation qui limite la norme maximale de la prédiction mise à l'échelle par CFG par rapport à la prédiction conditionnelle d'origine. Une valeur de 0.0 désactive la renormalisation (valeur par défaut : 1.0) | FLOAT | Non | 0.0 - 100.0 (pas 0.01) |
 

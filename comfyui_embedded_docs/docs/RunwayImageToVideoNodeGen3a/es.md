@@ -7,10 +7,10 @@ El nodo Runway Image to Video (Gen3a Turbo) genera un video a partir de un únic
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
 | `prompt` | Prompt de texto para la generación (predeterminado: "") | STRING | Sí | N/A |
-| `start_frame` | Fotograma inicial que se utilizará para el video | IMAGE | Sí | N/A |
-| `duration` | Duración del video generado, en segundos (predeterminado: "5") | COMBO | Sí | `"5"`<br>`"10"` |
-| `ratio` | Relación de aspecto del video generado (predeterminado: "768:1280") | COMBO | Sí | `"768:1280"`<br>`"1280:768"` |
-| `seed` | Semilla aleatoria para la generación (predeterminado: 0) | INT | Sí | 0 a 4294967295 |
+| `fotograma_inicial` | Fotograma inicial que se utilizará para el video | IMAGE | Sí | N/A |
+| `duración` | Duración del video generado, en segundos (predeterminado: "5") | COMBO | Sí | `"5"`<br>`"10"` |
+| `relación` | Relación de aspecto del video generado (predeterminado: "768:1280") | COMBO | Sí | `"768:1280"`<br>`"1280:768"` |
+| `semilla` | Semilla aleatoria para la generación (predeterminado: 0) | INT | Sí | 0 a 4294967295 |
 
 **Restricciones de los parámetros:**
 

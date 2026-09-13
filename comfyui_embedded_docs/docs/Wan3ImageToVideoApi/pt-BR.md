@@ -8,11 +8,11 @@ Este nó gera um vídeo a partir de uma imagem do primeiro quadro usando o model
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Seleciona a variante do modelo Wan 3.0 a ser usada e determina quais configurações específicas do modelo são exibidas abaixo. | DYNAMIC_COMBO | Sim | "wan3.0-video"<br>"wan3.0-video-prime" |
+| `Modelo` | Seleciona a variante do modelo Wan 3.0 a ser usada e determina quais configurações específicas do modelo são exibidas abaixo. | DYNAMIC_COMBO | Sim | "wan3.0-video"<br>"wan3.0-video-prime" |
 | `first_frame` | Imagem do primeiro quadro. É necessário exatamente uma imagem. | IMAGE | Sim | Imagem única |
 | `last_frame` | Imagem do último quadro. O modelo gera um vídeo com transição do primeiro para o último quadro. Opcional; se fornecida, é necessário exatamente uma imagem. | IMAGE | Não | Imagem única |
-| `seed` | Semente a ser usada para geração (padrão: 42). | INT | Sim | 0 - 2147483647 |
-| `watermark` | Se deve adicionar uma marca d'água gerada por IA ao resultado (padrão: false). | BOOLEAN | Sim | true<br>false |
+| `Semente` | Semente a ser usada para geração (padrão: 42). | INT | Sim | 0 - 2147483647 |
+| `Marca-d'água` | Se deve adicionar uma marca d'água gerada por IA ao resultado (padrão: false). | BOOLEAN | Sim | true<br>false |
 
 ### Entradas do wan3.0-video e do wan3.0-video-prime
 

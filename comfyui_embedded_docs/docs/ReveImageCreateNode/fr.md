@@ -8,11 +8,11 @@ Le nœud Reve Image Create génère des images à partir d'une description textu
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Version du modèle à utiliser pour la génération. | DYNAMIC_COMBO | Oui | `"reve-create@20250915"` |
+| `modèle` | Version du modèle à utiliser pour la génération. | DYNAMIC_COMBO | Oui | `"reve-create@20250915"` |
 | `prompt` | Description textuelle de l'image souhaitée. Maximum 2560 caractères. Par défaut : "" (vide). | STRING | Oui | 1 à 2560 caractères |
-| `upscale` | Augmente la résolution de l'image générée. Peut entraîner un coût supplémentaire. Par défaut : "disabled". | DYNAMIC_COMBO | Non | `"disabled"`<br>`"enabled"` |
-| `remove_background` | Supprime l'arrière-plan de l'image générée. Peut entraîner un coût supplémentaire. Par défaut : False. | BOOLEAN | Non | N/A |
-| `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. Par défaut : 0. | INT | Non | 0 à 2147483647 |
+| `agrandir` | Augmente la résolution de l'image générée. Peut entraîner un coût supplémentaire. Par défaut : "disabled". | DYNAMIC_COMBO | Non | `"disabled"`<br>`"enabled"` |
+| `supprimer l’arrière-plan` | Supprime l'arrière-plan de l'image générée. Peut entraîner un coût supplémentaire. Par défaut : False. | BOOLEAN | Non | N/A |
+| `graine` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. Par défaut : 0. | INT | Non | 0 à 2147483647 |
 
 ### Entrées reve-create@20250915
 

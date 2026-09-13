@@ -7,7 +7,7 @@ SamplerEulerAncestral düğümü, görüntü oluşturma sırasında kullanılabi
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `eta` | Örnekleme sürecinin adım boyutunu ve stokastikliğini kontrol eder (varsayılan: 1.0). Bu gelişmiş bir parametredir. | FLOAT | Evet | 0.0 - 100.0 |
-| `s_noise` | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0). Bu gelişmiş bir parametredir. | FLOAT | Evet | 0.0 - 100.0 |
+| `s_gürültü` | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0). Bu gelişmiş bir parametredir. | FLOAT | Evet | 0.0 - 100.0 |
 
 ## Çıktılar
 

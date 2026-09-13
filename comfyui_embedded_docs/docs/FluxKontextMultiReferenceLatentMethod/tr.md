@@ -6,8 +6,8 @@ FluxKontextMultiReferenceLatentMethod düğümü, koşullandırma verisini için
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Referans latent yöntemiyle değiştirilecek koşullandırma verisi | CONDITIONING | Evet | - |
-| `reference_latents_method` | Referans latent işleme için kullanılan yöntem. "uxo" veya "uso" içeren bir değer seçilirse, saklanmadan önce "uxo" olarak dönüştürülür. Bu parametre gelişmiş olarak işaretlenmiştir. | COMBO | Evet | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
+| `koşullandırma` | Referans latent yöntemiyle değiştirilecek koşullandırma verisi | CONDITIONING | Evet | - |
+| `referans_gizli_yöntemi` | Referans latent işleme için kullanılan yöntem. "uxo" veya "uso" içeren bir değer seçilirse, saklanmadan önce "uxo" olarak dönüştürülür. Bu parametre gelişmiş olarak işaretlenmiştir. | COMBO | Evet | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
 
 ## Çıktılar
 

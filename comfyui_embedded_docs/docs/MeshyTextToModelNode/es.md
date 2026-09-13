@@ -6,16 +6,16 @@ El nodo Meshy: Text to Model utiliza la API de Meshy para generar un modelo 3D a
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Especifica la versión del modelo de IA que se usará para la generación. | COMBO | Sí | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `modelo` | Especifica la versión del modelo de IA que se usará para la generación. | COMBO | Sí | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `prompt` | La descripción de texto del modelo 3D que deseas generar. Debe tener entre 1 y 600 caracteres. El valor predeterminado es una cadena vacía. | STRING | Sí | 1 - 600 caracteres |
-| `style` | El estilo artístico para el modelo 3D generado. | COMBO | Sí | `"realistic"` |
-| `should_remesh` | Cuando se establece en "false", devuelve una malla triangular sin procesar. Seleccionar "true" revela parámetros adicionales para la topología y el número objetivo de polígonos. | DYNAMIC_COMBO | Sí | `"true"`<br>`"false"` |
+| `estilo` | El estilo artístico para el modelo 3D generado. | COMBO | Sí | `"realistic"` |
+| `debe_remallar` | Cuando se establece en "false", devuelve una malla triangular sin procesar. Seleccionar "true" revela parámetros adicionales para la topología y el número objetivo de polígonos. | DYNAMIC_COMBO | Sí | `"true"`<br>`"false"` |
 | `topology` | El tipo de polígono objetivo para el modelo remallado. Este parámetro solo está disponible cuando `should_remesh` se establece en "true". | COMBO | No* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | El número objetivo de polígonos para el modelo remallado. El valor predeterminado es 300000. Este parámetro solo está disponible cuando `should_remesh` se establece en "true". | INT | No* | 100 - 300000 |
-| `symmetry_mode` | Controla la simetría en el modelo generado. Este es un parámetro avanzado. Las opciones son `"auto"`, `"on"` y `"off"`. | COMBO | Sí | `"auto"`<br>`"on"`<br>`"off"` |
-| `pose_mode` | Especifica el modo de pose para el modelo generado. Una cadena vacía significa que no se solicita ninguna pose específica. Este es un parámetro avanzado. | COMBO | Sí | `""`<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | `seed` controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. El valor predeterminado es 0. | INT | Sí | 0 - 2147483647 |
-| `ultra_mode` | Ejecuta una pasada de refinamiento adicional para obtener una geometría de mayor fidelidad con un detalle de superficie más fino. El valor predeterminado es false. | BOOLEAN | Sí | true<br>false |
+| `modo_simetría` | Controla la simetría en el modelo generado. Este es un parámetro avanzado. Las opciones son `"auto"`, `"on"` y `"off"`. | COMBO | Sí | `"auto"`<br>`"on"`<br>`"off"` |
+| `modo_pose` | Especifica el modo de pose para el modelo generado. Una cadena vacía significa que no se solicita ninguna pose específica. Este es un parámetro avanzado. | COMBO | Sí | `""`<br>`"A-pose"`<br>`"T-pose"` |
+| `semilla` | `seed` controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. El valor predeterminado es 0. | INT | Sí | 0 - 2147483647 |
+| `modo ultra` | Ejecuta una pasada de refinamiento adicional para obtener una geometría de mayor fidelidad con un detalle de superficie más fino. El valor predeterminado es false. | BOOLEAN | Sí | true<br>false |
 
 *Nota: Los parámetros `topology` y `target_polycount` están disponibles de forma condicional. Solo aparecen cuando el parámetro `should_remesh` se establece en "true".
 

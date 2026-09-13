@@ -6,9 +6,9 @@ GITSScheduler düğümü, GITS (Generative Iterative Time Steps) örnekleme yön
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `coeff` | Gelişmiş parametre. Gürültü çizelgesi eğrisini kontrol eden katsayı değeri (varsayılan: 1.20). Değer iki ondalık basamağa yuvarlanır ve hangi önceden tanımlanmış gürültü seviyesi tablosunun kullanılacağını seçer. | FLOAT | Evet | 0.80 - 1.50 (adım 0.05) |
-| `steps` | Sigma değerlerinin üretileceği toplam örnekleme adımı sayısı (varsayılan: 10). | INT | Evet | 2 - 1000 |
-| `denoise` | Kullanılan adım sayısını azaltan gürültü giderme faktörü (varsayılan: 1.0). | FLOAT | Evet | 0.0 - 1.0 (adım 0.01) |
+| `katsayı` | Gelişmiş parametre. Gürültü çizelgesi eğrisini kontrol eden katsayı değeri (varsayılan: 1.20). Değer iki ondalık basamağa yuvarlanır ve hangi önceden tanımlanmış gürültü seviyesi tablosunun kullanılacağını seçer. | FLOAT | Evet | 0.80 - 1.50 (adım 0.05) |
+| `adımlar` | Sigma değerlerinin üretileceği toplam örnekleme adımı sayısı (varsayılan: 10). | INT | Evet | 2 - 1000 |
+| `gürültü_azaltma` | Kullanılan adım sayısını azaltan gürültü giderme faktörü (varsayılan: 1.0). | FLOAT | Evet | 0.0 - 1.0 (adım 0.01) |
 
 **Not:** `denoise` 0.0 veya daha az olduğunda, düğüm boş bir tensör döndürür. `denoise` 1.0'den küçük olduğunda, kullanılan gerçek adım sayısı `round(steps * denoise)` olarak hesaplanır ve çizelgenin yalnızca buna karşılık gelen son kısmı korunur. 2 ile 20 arasındaki adımlar için düğüm, eşleşen önceden tanımlanmış bir gürültü çizelgesi seçer. 20'den büyük adımlar için düğüm, önceden tanımlanmış gürültü seviyelerini istenen adım sayısına genişletmek üzere log-doğrusal interpolasyon kullanır.
 

@@ -6,10 +6,10 @@ El nodo `BasicScheduler` está diseñado para calcular una secuencia de valores 
 
 | Parámetro | Descripción metafórica | Tipo de datos | Tipo de entrada | Predeterminado | Rango | Propósito técnico |
 | --- | --- | --- | --- | --- | --- | --- |
-| `model` | **Tipo de lienzo**: Diferentes materiales de lienzo necesitan diferentes fórmulas de pintura | MODEL | Entrada | - | - | Objeto de modelo de difusión, determina la base de cálculo de sigma |
-| `scheduler` | **Técnica de mezcla**: Elige cómo cambia la concentración de pintura | COMBO[STRING] | Widget | - | 9 opciones | Algoritmo de planificación, controla el modo de decaimiento del ruido |
-| `steps` | **Cantidad de mezclas**: Diferencia de precisión entre 20 mezclas y 50 mezclas | INT | Widget | 20 | 1-10000 | Pasos de muestreo, afecta la calidad y la velocidad de generación |
-| `denoise` | **Intensidad de creación**: Nivel de control desde ajuste fino hasta repintado | FLOAT | Widget | 1.0 | 0.0-1.0 | Fuerza de eliminación de ruido, admite escenarios de repintado parcial |
+| `modelo` | **Tipo de lienzo**: Diferentes materiales de lienzo necesitan diferentes fórmulas de pintura | MODEL | Entrada | - | - | Objeto de modelo de difusión, determina la base de cálculo de sigma |
+| `programador` | **Técnica de mezcla**: Elige cómo cambia la concentración de pintura | COMBO[STRING] | Widget | - | 9 opciones | Algoritmo de planificación, controla el modo de decaimiento del ruido |
+| `pasos` | **Cantidad de mezclas**: Diferencia de precisión entre 20 mezclas y 50 mezclas | INT | Widget | 20 | 1-10000 | Pasos de muestreo, afecta la calidad y la velocidad de generación |
+| `desruido` | **Intensidad de creación**: Nivel de control desde ajuste fino hasta repintado | FLOAT | Widget | 1.0 | 0.0-1.0 | Fuerza de eliminación de ruido, admite escenarios de repintado parcial |
 
 ### Tipos de planificador
 

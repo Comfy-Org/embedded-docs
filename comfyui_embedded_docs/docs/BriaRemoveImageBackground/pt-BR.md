@@ -10,9 +10,9 @@ O seletor `moderation` revela opções adicionais de moderação quando definido
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A imagem de entrada da qual o fundo será removido. | IMAGE | Sim | - |
-| `moderation` | Configurações de moderação. Quando definido como `"true"`, opções adicionais de moderação ficam disponíveis. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
-| `seed` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: `0`. | INT | Sim | 0 a 2147483647 |
+| `imagem` | A imagem de entrada da qual o fundo será removido. | IMAGE | Sim | - |
+| `moderação` | Configurações de moderação. Quando definido como `"true"`, opções adicionais de moderação ficam disponíveis. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
+| `semente` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: `0`. | INT | Sim | 0 a 2147483647 |
 
 ### Entradas de moderação "true"
 

@@ -9,11 +9,11 @@ Ce nœud génère des objets ou des éléments de décor à l'intérieur d'une r
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image d'entrée à modifier. | IMAGE | Oui | - |
-| `mask` | Les zones blanches sont remplies avec le contenu généré, les zones noires sont préservées. Le masque est binarisé avant envoi avec un seuil de 50 % : seules les zones peintes à plus de 50 % d'opacité sont considérées comme blanches. Doit avoir le même rapport d'aspect que l'image. | MASK | Oui | - |
-| `prompt` | Description de ce qu'il faut générer à l'intérieur de la région masquée. Doit contenir au moins 1 caractère. (par défaut : "") | STRING | Oui | - |
+| `masque` | Les zones blanches sont remplies avec le contenu généré, les zones noires sont préservées. Le masque est binarisé avant envoi avec un seuil de 50 % : seules les zones peintes à plus de 50 % d'opacité sont considérées comme blanches. Doit avoir le même rapport d'aspect que l'image. | MASK | Oui | - |
+| `texte d’invite` | Description de ce qu'il faut générer à l'intérieur de la région masquée. Doit contenir au moins 1 caractère. (par défaut : "") | STRING | Oui | - |
 | `negative_prompt` | Un prompt décrivant le contenu à éviter dans le résultat généré. S'il est laissé vide, il n'est pas envoyé à l'API. (par défaut : "") | STRING | Oui | - |
 | `refine_prompt` | Ajuste automatiquement le prompt pour de meilleurs résultats ; désactivez cette option pour utiliser le prompt exactement tel qu'il est écrit. (par défaut : true) | BOOLEAN | Oui | true<br>false |
-| `seed` | Graine pour le processus de génération. (par défaut : 42) | INT | Oui | 1 à 2147483647 |
+| `graine` | Graine pour le processus de génération. (par défaut : 42) | INT | Oui | 1 à 2147483647 |
 | `moderation` | Paramètres de modération. Lorsqu'ils sont définis sur "true", les options de modération ci-dessous sont appliquées. (par défaut : "false") | DYNAMIC_COMBO | Oui | "false"<br>"true" |
 
 ### Entrées de modération (lorsque `moderation` = "true")

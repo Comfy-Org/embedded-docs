@@ -8,7 +8,7 @@ Le nœud Remove Background génère un masque de premier plan qui sépare le suj
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `bg_removal_model` | Modèle de suppression d'arrière-plan utilisé pour générer le masque | BACKGROUND_REMOVAL_MODEL | Oui | N/A |
+| `modèle_de_suppression_arrière-plan` | Modèle de suppression d'arrière-plan utilisé pour générer le masque | BACKGROUND_REMOVAL_MODEL | Oui | N/A |
 | `image` | Image d'entrée dont il faut supprimer l'arrière-plan | IMAGE | Oui | N/A |
 
 ## Sorties

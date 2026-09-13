@@ -10,12 +10,12 @@ Le nœud Tripo: Texture model (Legacy) ajoute des textures à un modèle 3D Trip
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model_task_id` | ID de tâche Tripo du modèle à texturer. Accepte les ID de tâche de modèle et les ID de tâche de segmentation. | MODEL_TASK_ID, SEGMENT_TASK_ID | Oui | - |
+| `modèle_id_tâche` | ID de tâche Tripo du modèle à texturer. Accepte les ID de tâche de modèle et les ID de tâche de segmentation. | MODEL_TASK_ID, SEGMENT_TASK_ID | Oui | - |
 | `texture` | Ignoré : ce nœud génère toujours des textures. Conservé pour les anciens workflows. (par défaut : True) | BOOLEAN | Non | true<br>false |
 | `pbr` | Cartes de matériau PBR (couleur de base, métallique, rugosité, normale) ; désactivé donne une texture de couleur unie. (par défaut : True) | BOOLEAN | Non | true<br>false |
-| `texture_seed` | Graine aléatoire pour la génération de textures. (par défaut : 42) | INT | Non | 0 – 2147483647 |
-| `texture_quality` | Qualité de résolution des textures : detailed = textures HD, extreme = textures 8K Ultra. (par défaut : "standard"). Coût approximatif : standard $0.10, detailed $0.20, extreme $0.30. | COMBO | Non | "standard"<br>"detailed"<br>"extreme" |
-| `texture_alignment` | Méthode utilisée pour aligner les textures générées sur le modèle. (par défaut : "original_image") | COMBO | Non | "original_image"<br>"geometry" |
+| `texture_graine` | Graine aléatoire pour la génération de textures. (par défaut : 42) | INT | Non | 0 – 2147483647 |
+| `qualité_texture` | Qualité de résolution des textures : detailed = textures HD, extreme = textures 8K Ultra. (par défaut : "standard"). Coût approximatif : standard $0.10, detailed $0.20, extreme $0.30. | COMBO | Non | "standard"<br>"detailed"<br>"extreme" |
+| `alignement_texture` | Méthode utilisée pour aligner les textures générées sur le modèle. (par défaut : "original_image") | COMBO | Non | "original_image"<br>"geometry" |
 | `texture_prompt` | Consigne textuelle facultative pour la texturation. En pratique, requis pour les modèles importés (Tripo: Import Model), qui ne comportent aucune image source à partir de laquelle déduire les couleurs. Ne peut pas être combiné avec des images de référence. (par défaut : "") | STRING | Non | - |
 | `model_version` | Modèle de texture : v3.0 pour les maillages générés avec v3.x, v2.5 pour les maillages générés avec v2.5. (par défaut : v3.0_20250812) | COMBO | Non | Plusieurs options disponibles |
 | `style_image` | Image de référence pour le style artistique des textures. Utilisée uniquement avec `texture_prompt`. | IMAGE | Non | - |

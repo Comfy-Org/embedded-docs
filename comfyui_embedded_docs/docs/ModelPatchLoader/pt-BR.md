@@ -6,7 +6,7 @@ O nó ModelPatchLoader carrega um arquivo de patch de modelo da pasta `model_pat
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `name` | O nome do arquivo do patch de modelo a ser carregado da pasta `model_patches`. Selecione um dos arquivos de patch disponíveis na lista. | COMBO | Sim | Lista gerada dinamicamente de todos os arquivos de patch de modelo encontrados na pasta `model_patches` |
+| `nome` | O nome do arquivo do patch de modelo a ser carregado da pasta `model_patches`. Selecione um dos arquivos de patch disponíveis na lista. | COMBO | Sim | Lista gerada dinamicamente de todos os arquivos de patch de modelo encontrados na pasta `model_patches` |
 
 Observação: Este nó está marcado como experimental. O tipo de patch é detectado automaticamente a partir do conteúdo do arquivo, portanto, nenhuma seleção manual de tipo é necessária. O nó lê os metadados do checkpoint e inspeciona as chaves de peso para decidir qual arquitetura construir (por exemplo, Qwen Image block-wise ControlNet, Z-Image ControlNet, Wan Uni3C ControlNet, MiniMax H3 Fun ControlNet, SigLIP feature projection, Lightricks duration head, Anima LLLite, MultiTalk ou SUPIR). Os pesos são carregados com carregamento seguro habilitado, e o modelo é colocado no dispositivo de offload dentro de um `CoreModelPatcher` para que possa posteriormente ser aplicado a outro modelo.
 

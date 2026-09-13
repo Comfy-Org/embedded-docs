@@ -12,7 +12,7 @@ Vidu Video Extension düğümü, mevcut bir videonun uzunluğunu uzatmak için e
 | `video` | Uzatılacak kaynak video. | VIDEO | Evet | - |
 | `prompt` | Uzatılmış video için isteğe bağlı metin istemi (en fazla 2000 karakter; varsayılan: boş). | STRING | Evet | - |
 | `seed` | Üretimin rastgeleliğini kontrol etmek için bir tohum değeri (varsayılan: 1). | INT | Evet | 0 - 2147483647 |
-| `end_frame` | Uzatma için hedef bitiş karesi olarak kullanılacak isteğe bağlı görüntü. | IMAGE | Hayır | - |
+| `bitiş karesi` | Uzatma için hedef bitiş karesi olarak kullanılacak isteğe bağlı görüntü. | IMAGE | Hayır | - |
 
 ### viduq2-pro ve viduq2-turbo Girdileri
 

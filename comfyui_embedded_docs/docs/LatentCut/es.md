@@ -6,10 +6,10 @@ El nodo LatentCut extrae una sección específica de las muestras latentes a lo 
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `samples` | Las muestras latentes de entrada de las que se extraerá | LATENT | Sí | - |
-| `dim` | La dimensión a lo largo de la cual recortar las muestras latentes. "x" recorta a lo largo del último eje (normalmente el ancho), "y" a lo largo del penúltimo eje (normalmente el alto) y "t" a lo largo del antepenúltimo eje (normalmente fotogramas en latentes de video) | COMBO | Sí | "x"<br>"y"<br>"t" |
-| `index` | La posición inicial para el recorte (predeterminado: 0). Los valores positivos cuentan desde el inicio, los negativos desde el final. El nodo limita el índice para que se mantenga dentro del rango válido de las muestras latentes | INT | Sí | -16384 a 16384 |
-| `amount` | El número de elementos que se extraerán a lo largo de la dimensión especificada (predeterminado: 1). Debe ser al menos 1. El nodo reduce automáticamente este valor si excediera los datos disponibles más allá del índice inicial | INT | Sí | 1 a 16384 |
+| `muestras` | Las muestras latentes de entrada de las que se extraerá | LATENT | Sí | - |
+| `dimensión` | La dimensión a lo largo de la cual recortar las muestras latentes. "x" recorta a lo largo del último eje (normalmente el ancho), "y" a lo largo del penúltimo eje (normalmente el alto) y "t" a lo largo del antepenúltimo eje (normalmente fotogramas en latentes de video) | COMBO | Sí | "x"<br>"y"<br>"t" |
+| `índice` | La posición inicial para el recorte (predeterminado: 0). Los valores positivos cuentan desde el inicio, los negativos desde el final. El nodo limita el índice para que se mantenga dentro del rango válido de las muestras latentes | INT | Sí | -16384 a 16384 |
+| `cantidad` | El número de elementos que se extraerán a lo largo de la dimensión especificada (predeterminado: 1). Debe ser al menos 1. El nodo reduce automáticamente este valor si excediera los datos disponibles más allá del índice inicial | INT | Sí | 1 a 16384 |
 
 Nota: Los valores de `index` y `amount` se ajustan para adaptarse al tamaño real del latente a lo largo de la dimensión seleccionada. Si `index` es mayor que el tamaño de la dimensión, se limita a la última posición válida. Si `index` es negativo, se limita al tamaño de la dimensión en valor absoluto, y `amount` se limita para que no sobrepase el final de los datos.
 

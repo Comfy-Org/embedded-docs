@@ -10,7 +10,7 @@ Pense nisso como se comunicar com um artista que fala um idioma diferente. O mod
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `text` | O texto a ser codificado. Suporta entrada multilinha e prompts dinâmicos. | STRING | Sim | Qualquer texto |
+| `texto` | O texto a ser codificado. Suporta entrada multilinha e prompts dinâmicos. | STRING | Sim | Qualquer texto |
 | `clip` | O modelo CLIP usado para codificar o texto. | CLIP | Sim | Modelos CLIP carregados |
 
 Observação: Se a entrada `clip` for None (por exemplo, quando ela vem de um carregador de checkpoint cujo checkpoint não contém um modelo CLIP ou codificador de texto válido), o nó gera um erro.

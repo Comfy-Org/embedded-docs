@@ -8,10 +8,10 @@ Bu düğüm, Bria kullanarak bir görüntünün ışık atmosferini ve yönünü
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Işığı değiştirilecek görüntü. Görüntü yüklenmeden önce varsa alfa kanalı kaldırılır. | IMAGE | Evet | - |
+| `görüntü` | Işığı değiştirilecek görüntü. Görüntü yüklenmeden önce varsa alfa kanalı kaldırılır. | IMAGE | Evet | - |
 | `light_type` | Uygulanacak ışık atmosferi. | COMBO | Evet | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
 | `light_direction` | Işığın nereden geldiği. midday, spotlight on subject ve harsh studio lighting gibi sert ışık atmosferleri buna en çok tepki verir. | COMBO | Evet | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
-| `moderation` | Moderasyon ayarları. Moderasyon seçeneklerini göstermek için `"true"` seçin veya moderasyon olmadan çalıştırmak için `"false"` seçin. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
+| `moderasyon` | Moderasyon ayarları. Moderasyon seçeneklerini göstermek için `"true"` seçin veya moderasyon olmadan çalıştırmak için `"false"` seçin. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
 
 ### Moderasyon Girdileri
 

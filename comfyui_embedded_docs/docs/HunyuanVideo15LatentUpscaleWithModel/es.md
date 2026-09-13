@@ -6,12 +6,12 @@ El nodo Hunyuan Video 1.5 Latent Upscale With Model aumenta la resolución de un
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de escalado latente de Hunyuan Video 1.5 usado para refinar las muestras escaladas. | LATENT_UPSCALE_MODEL | Sí | N/A |
-| `samples` | La representación latente de imagen que se va a escalar. | LATENT | Sí | N/A |
-| `upscale_method` | El algoritmo de interpolación usado para el paso de escalado inicial (predeterminado: `"bilinear"`). | COMBO | Sí | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"bislerp"` |
-| `width` | El ancho objetivo para el latente escalado, en píxeles. Un valor de 0 calculará el ancho automáticamente según la altura objetivo y la relación de aspecto original. El ancho de salida final será un múltiplo de 16 (predeterminado: 1280). | INT | Sí | 0 a 16384 (paso: 8) |
-| `height` | La altura objetivo para el latente escalado, en píxeles. Un valor de 0 calculará la altura automáticamente según el ancho objetivo y la relación de aspecto original. La altura de salida final será un múltiplo de 16 (predeterminado: 720). | INT | Sí | 0 a 16384 (paso: 8) |
-| `crop` | Determina cómo se recorta el latente escalado para ajustarse a las dimensiones objetivo. | COMBO | Sí | `"disabled"`<br>`"center"` |
+| `modelo` | El modelo de escalado latente de Hunyuan Video 1.5 usado para refinar las muestras escaladas. | LATENT_UPSCALE_MODEL | Sí | N/A |
+| `muestras` | La representación latente de imagen que se va a escalar. | LATENT | Sí | N/A |
+| `método_de_escalado` | El algoritmo de interpolación usado para el paso de escalado inicial (predeterminado: `"bilinear"`). | COMBO | Sí | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"bislerp"` |
+| `ancho` | El ancho objetivo para el latente escalado, en píxeles. Un valor de 0 calculará el ancho automáticamente según la altura objetivo y la relación de aspecto original. El ancho de salida final será un múltiplo de 16 (predeterminado: 1280). | INT | Sí | 0 a 16384 (paso: 8) |
+| `alto` | La altura objetivo para el latente escalado, en píxeles. Un valor de 0 calculará la altura automáticamente según el ancho objetivo y la relación de aspecto original. La altura de salida final será un múltiplo de 16 (predeterminado: 720). | INT | Sí | 0 a 16384 (paso: 8) |
+| `recorte` | Determina cómo se recorta el latente escalado para ajustarse a las dimensiones objetivo. | COMBO | Sí | `"disabled"`<br>`"center"` |
 
 **Nota sobre las dimensiones:** Si tanto `width` como `height` se establecen en 0, el nodo devuelve las `samples` de entrada sin cambios. Si solo una dimensión se establece en 0, la otra dimensión se calcula para preservar la relación de aspecto original. Ambos valores se limitan a un mínimo de 64, y el objetivo de escalado pasado al paso de interpolación es `width // 16` por `height // 16`, por lo que las dimensiones solicitadas se redondean efectivamente hacia abajo a múltiplos de 16.
 

@@ -7,8 +7,8 @@ El nodo VoxelToMesh convierte datos de vóxeles 3D en una geometría de malla me
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `voxel` | Los datos de vóxeles de entrada que se convertirán en geometría de malla | VOXEL | Sí | - |
-| `algorithm` | El algoritmo utilizado para la extracción de superficie. "surface net" produce mallas más suaves, mientras que "basic" crea caras simples similares a cajas (predeterminado: "surface net") | COMBO | Sí | `"surface net"`<br>`"basic"` |
-| `threshold` | El valor de umbral para la extracción de superficie. Los vóxeles con valores por encima de este umbral se consideran sólidos (predeterminado: 0.6) | FLOAT | Sí | -1.0 a 1.0 |
+| `algoritmo` | El algoritmo utilizado para la extracción de superficie. "surface net" produce mallas más suaves, mientras que "basic" crea caras simples similares a cajas (predeterminado: "surface net") | COMBO | Sí | `"surface net"`<br>`"basic"` |
+| `umbral` | El valor de umbral para la extracción de superficie. Los vóxeles con valores por encima de este umbral se consideran sólidos (predeterminado: 0.6) | FLOAT | Sí | -1.0 a 1.0 |
 
 ## Salidas
 

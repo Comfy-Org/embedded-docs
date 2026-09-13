@@ -9,8 +9,8 @@ Bir metin istemine dayanarak bir veya daha fazla mevcut görüntüyü değiştir
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Kullanılacak Grok görüntü modeli. Aşağıda gösterilen alt parametreler seçilen modele göre değişir. | DYNAMIC_COMBO | Evet | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
-| `prompt` | Görüntüyü oluşturmak için kullanılan metin istemi. (varsayılan: "") | STRING | Evet | N/A |
-| `seed` | Düğümün yeniden çalışıp çalışmayacağını belirleyen tohum; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: 0) | INT | Evet | 0 ile 2147483647 |
+| `istem` | Görüntüyü oluşturmak için kullanılan metin istemi. (varsayılan: "") | STRING | Evet | N/A |
+| `tohum` | Düğümün yeniden çalışıp çalışmayacağını belirleyen tohum; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: 0) | INT | Evet | 0 ile 2147483647 |
 
 ### grok-imagine-image-2.0 Girdileri
 

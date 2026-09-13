@@ -6,14 +6,14 @@ O nó HunyuanImageToVideo converte imagens em representações latentes de víde
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `positive` | Entrada de condicionamento positivo para orientar a geração do vídeo | CONDITIONING | Sim | - |
+| `positivo` | Entrada de condicionamento positivo para orientar a geração do vídeo | CONDITIONING | Sim | - |
 | `vae` | Modelo VAE usado para codificar imagens no espaço latente | VAE | Sim | - |
-| `width` | Largura do vídeo de saída em pixels (padrão: 848, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
-| `height` | Altura do vídeo de saída em pixels (padrão: 480, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
-| `length` | Número de quadros no vídeo de saída (padrão: 53, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
-| `batch_size` | Número de vídeos a serem gerados simultaneamente (padrão: 1) | INT | Sim | 1 a 4096 |
-| `guidance_type` | Método para incorporar a imagem inicial na geração do vídeo (padrão: "v1 (concat)"). Opção avançada | COMBO | Sim | "v1 (concat)"<br>"v2 (replace)"<br>"custom" |
-| `start_image` | Imagem inicial opcional (ou sequência de imagens) para inicializar a geração do vídeo. Apenas os primeiros `length` quadros e os primeiros 3 canais de cor são usados | IMAGE | Não | - |
+| `largura` | Largura do vídeo de saída em pixels (padrão: 848, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
+| `altura` | Altura do vídeo de saída em pixels (padrão: 480, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
+| `duração` | Número de quadros no vídeo de saída (padrão: 53, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
+| `tamanho_do_lote` | Número de vídeos a serem gerados simultaneamente (padrão: 1) | INT | Sim | 1 a 4096 |
+| `tipo_de_guia` | Método para incorporar a imagem inicial na geração do vídeo (padrão: "v1 (concat)"). Opção avançada | COMBO | Sim | "v1 (concat)"<br>"v2 (replace)"<br>"custom" |
+| `imagem_inicial` | Imagem inicial opcional (ou sequência de imagens) para inicializar a geração do vídeo. Apenas os primeiros `length` quadros e os primeiros 3 canais de cor são usados | IMAGE | Não | - |
 
 **Nota:** Quando `start_image` é fornecido, o nó usa métodos de orientação diferentes com base no `guidance_type` selecionado:
 

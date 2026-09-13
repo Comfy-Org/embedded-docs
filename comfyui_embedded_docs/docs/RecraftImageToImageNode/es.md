@@ -6,11 +6,11 @@ Este nodo modifica una imagen existente a partir de un prompt de texto y un ajus
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `image` | La imagen de entrada que se va a modificar. Cuando se proporciona un lote de imágenes, cada imagen se procesa individualmente. | IMAGE | Sí | - |
+| `imagen` | La imagen de entrada que se va a modificar. Cuando se proporciona un lote de imágenes, cada imagen se procesa individualmente. | IMAGE | Sí | - |
 | `prompt` | Prompt para la generación de la imagen. Predeterminado: cadena vacía. Longitud máxima: 1000 caracteres. | STRING | Sí | - |
 | `n` | El número de imágenes a generar. Predeterminado: 1. | INT | Sí | 1-6 |
-| `strength` | Define la diferencia con la imagen original; debe estar en [0, 1], donde 0 significa casi idéntica y 1 significa una similitud muy baja. Predeterminado: 0.5. | FLOAT | Sí | 0.0-1.0 (paso: 0.01) |
-| `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla. Predeterminado: 0. | INT | Sí | 0-18446744073709551615 |
+| `intensidad` | Define la diferencia con la imagen original; debe estar en [0, 1], donde 0 significa casi idéntica y 1 significa una similitud muy baja. Predeterminado: 0.5. | FLOAT | Sí | 0.0-1.0 (paso: 0.01) |
+| `semilla` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla. Predeterminado: 0. | INT | Sí | 0-18446744073709551615 |
 | `recraft_style` | Selección opcional de estilo para la generación de la imagen. Si no se proporciona, se usa `realistic_image` de forma predeterminada. | STYLEV3 | No | - |
 | `negative_prompt` | Descripción de texto opcional de elementos no deseados en una imagen. Predeterminado: cadena vacía. Se proporciona como un conector de entrada. | STRING | No | - |
 | `recraft_controls` | Controles adicionales opcionales sobre la generación mediante el nodo Recraft Controls. | CONTROLS | No | - |

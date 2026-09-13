@@ -6,15 +6,15 @@ Bu düğüm, bir başlangıç görüntüsünden LTX 2.5 modeli kullanarak profes
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Video için kullanılacak ilk kare. | IMAGE | Evet | Tam olarak bir görüntü |
+| `görsel` | Video için kullanılacak ilk kare. | IMAGE | Evet | Tam olarak bir görüntü |
 | `model` | Model ayarları grubu. Kullanılacak LTX 2.5 model varyantını seçer. | COMBO | Evet | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
-| `model.duration` | Üretilen videonun saniye cinsinden uzunluğu. | INT | Evet | Tamsayı |
-| `model.resolution` | Üretilen videonun çözünürlüğü. Kullanılabilir seçenekler seçilen modele bağlı olabilir. | COMBO | Evet | "1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840" |
-| `model.fps` | Üretilen videonun kare hızı. | INT | Evet | Tamsayı (varsayılan: 25) |
-| `model.generate_audio` | Video için ses üretilip üretilmeyeceği. | BOOLEAN | Evet | True<br>False (varsayılan: True) |
+| `süre` | Üretilen videonun saniye cinsinden uzunluğu. | INT | Evet | Tamsayı |
+| `çözünürlük` | Üretilen videonun çözünürlüğü. Kullanılabilir seçenekler seçilen modele bağlı olabilir. | COMBO | Evet | "1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840" |
+| `fps` | Üretilen videonun kare hızı. | INT | Evet | Tamsayı (varsayılan: 25) |
+| `ses_oluştur` | Video için ses üretilip üretilmeyeceği. | BOOLEAN | Evet | True<br>False (varsayılan: True) |
 | `prompt` | Üretilecek video içeriğinin metin açıklaması. 1 ile 10000 karakter arasında olmalıdır. | STRING | Evet | 1 ile 10000 karakter |
-| `seed` | Tekrarlanabilir üretim için tohum değeri. Aynı ayarlarla aynı tohumun kullanılması aynı sonucu üretir. | INT | Evet | Tamsayı (varsayılan: 42) |
-| `last_frame` | Video için kullanılacak son kare. | IMAGE | Hayır | Tam olarak bir görüntü |
+| `tohum` | Tekrarlanabilir üretim için tohum değeri. Aynı ayarlarla aynı tohumun kullanılması aynı sonucu üretir. | INT | Evet | Tamsayı (varsayılan: 42) |
+| `son_kare` | Video için kullanılacak son kare. | IMAGE | Hayır | Tam olarak bir görüntü |
 
 **Not:** `image` için yalnızca bir görüntü desteklenir. `last_frame` sağlanırsa, bunun da tam olarak bir görüntü içermesi gerekir. Kullanılabilir `model.resolution` seçenekleri, seçilen `model` varyantına bağlı olarak değişebilir. Bir çalıştırmanın fiyatı seçilen `model`, `model.duration` ve `model.resolution` değerlerine bağlıdır.
 

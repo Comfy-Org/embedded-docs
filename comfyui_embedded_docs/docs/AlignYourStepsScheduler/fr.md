@@ -6,9 +6,9 @@ Le nœud AlignYourStepsScheduler génère des valeurs sigma (niveaux de bruit) p
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model_type` | Spécifie le type de modèle à utiliser pour le calcul des sigma (par défaut : "SD1") | COMBO | Oui | `"SD1"`<br>`"SDXL"`<br>`"SVD"` |
-| `steps` | Nombre total d'étapes d'échantillonnage à générer (par défaut : 10) | INT | Oui | 1 à 10000 |
-| `denoise` | Contrôle le niveau de débruitage de l'image, où 1.0 utilise toutes les étapes et des valeurs plus faibles en utilisent moins (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
+| `type_de_modèle` | Spécifie le type de modèle à utiliser pour le calcul des sigma (par défaut : "SD1") | COMBO | Oui | `"SD1"`<br>`"SDXL"`<br>`"SVD"` |
+| `étapes` | Nombre total d'étapes d'échantillonnage à générer (par défaut : 10) | INT | Oui | 1 à 10000 |
+| `débruitage` | Contrôle le niveau de débruitage de l'image, où 1.0 utilise toutes les étapes et des valeurs plus faibles en utilisent moins (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
 
 Remarque : Chaque type de modèle possède un programme de niveaux de bruit intégré contenant 11 valeurs sigma (pour 10 étapes). Lorsque `denoise` vaut 0.0, le nœud renvoie un tenseur sigma vide. Lorsque `denoise` est compris entre 0.0 et 1.0, le nombre effectif d'étapes est calculé comme `round(steps × denoise)`, et seule la partie finale correspondante du programme sigma est utilisée. Si la valeur `steps` demandée ne correspond pas à la longueur du programme intégré, les niveaux de bruit sont interpolés de façon log-linéaire pour correspondre au nombre d'étapes demandé. La valeur sigma finale est toujours définie sur 0.
 

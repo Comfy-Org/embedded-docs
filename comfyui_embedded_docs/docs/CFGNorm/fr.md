@@ -6,8 +6,8 @@ CFGNorm ajuste la manière dont le guidage sans classificateur (CFG) est appliqu
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle de diffusion auquel appliquer la normalisation CFG | MODEL | Oui | - |
-| `strength` | Contrôle l'intensité de l'effet de normalisation appliqué à la mise à l'échelle CFG (par défaut : 1.0) | FLOAT | Oui | 0.0 à 100.0 (pas 0.01) |
+| `modèle` | Le modèle de diffusion auquel appliquer la normalisation CFG | MODEL | Oui | - |
+| `intensité` | Contrôle l'intensité de l'effet de normalisation appliqué à la mise à l'échelle CFG (par défaut : 1.0) | FLOAT | Oui | 0.0 à 100.0 (pas 0.01) |
 | `pre_cfg` | Si true, remet à l'échelle le bruit combiné AVANT la combinaison CFG de l'échantillonneur, sans écrêtage (peut amplifier). Correspond au CFG mis à l'échelle par norme utilisé par des modèles comme Lens. La valeur par défaut false conserve le comportement d'origine d'atténuation uniquement dans l'espace x0 après CFG. (par défaut : False) | BOOLEAN | Non | true / false |
 
 Remarque : Ce nœud est marqué comme expérimental.

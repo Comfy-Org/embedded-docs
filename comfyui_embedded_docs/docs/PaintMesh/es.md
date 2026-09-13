@@ -6,7 +6,7 @@ PaintMesh toma una malla 3D y un campo de color de vóxeles. Asigna a cada vért
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `mesh` | La malla que se va a pintar. | MESH | Sí | N/A |
+| `malla` | La malla que se va a pintar. | MESH | Sí | N/A |
 | `voxel_colors` | Campo de vóxeles que contiene los datos de color usados para pintar. Del campo solo se utilizan los canales RGB del color base. | VOXEL | Sí | N/A |
 
 Nota: Cuando las coordenadas del campo de vóxeles incluyen un canal de índice de lote y la malla de entrada contiene varios elementos de malla, el nodo aplica los colores por separado a cada elemento de malla del lote. Si un elemento de malla dado no tiene vóxeles coincidentes, recibe colores de vértice predeterminados en cero (negro). Los colores muestreados se convierten de sRGB a RGB lineal para la malla de salida, ya que el campo de vóxeles puede contener datos PBR completos, pero para los colores de vértice solo se utiliza el RGB del color base.

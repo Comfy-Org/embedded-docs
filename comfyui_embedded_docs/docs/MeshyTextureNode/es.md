@@ -6,13 +6,13 @@ El nodo Meshy: Texture Model aplica texturas generadas por IA a un modelo 3D exi
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | La versión del modelo de IA que se utilizará para texturizar. | COMBO | Sí | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `modelo` | La versión del modelo de IA que se utilizará para texturizar. | COMBO | Sí | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `meshy_task_id` | El identificador único (ID de tarea) de una tarea anterior de generación o conversión 3D de Meshy. Proporciona el modelo 3D base que se va a texturizar. | MESHY_TASK_ID | Sí | - |
-| `enable_original_uv` | Usar el UV original del modelo en lugar de generar UV nuevos. Cuando está habilitado (predeterminado: `True`), Meshy conserva las texturas existentes del modelo cargado. Si el modelo no tiene UV original, la calidad de la salida podría no ser tan buena. Esta es una opción avanzada. | BOOLEAN | Sí | true / false |
+| `habilitar_uv_original` | Usar el UV original del modelo en lugar de generar UV nuevos. Cuando está habilitado (predeterminado: `True`), Meshy conserva las texturas existentes del modelo cargado. Si el modelo no tiene UV original, la calidad de la salida podría no ser tan buena. Esta es una opción avanzada. | BOOLEAN | Sí | true / false |
 | `pbr` | Habilita la salida de material con renderizado basado en física (PBR) para el modelo texturizado (predeterminado: `False`). Esta es una opción avanzada. | BOOLEAN | Sí | true / false |
-| `text_style_prompt` | Describe el estilo de textura deseado del objeto usando texto (predeterminado: cadena vacía). Máximo 600 caracteres. No se puede usar al mismo tiempo que `image_style`. | STRING | Sí | - |
-| `image_style` | Una imagen 2D para guiar el proceso de texturizado. No se puede usar al mismo tiempo que `text_style_prompt`. | IMAGE | No | - |
-| `texture_resolution` | Resolución de la textura de color base. Las resoluciones más altas capturan más detalle de la superficie. | COMBO | Sí | `"2k"`<br>`"4k"`<br>`"8k"` |
+| `estilo_texto` | Describe el estilo de textura deseado del objeto usando texto (predeterminado: cadena vacía). Máximo 600 caracteres. No se puede usar al mismo tiempo que `image_style`. | STRING | Sí | - |
+| `estilo_imagen` | Una imagen 2D para guiar el proceso de texturizado. No se puede usar al mismo tiempo que `text_style_prompt`. | IMAGE | No | - |
+| `resolución de textura` | Resolución de la textura de color base. Las resoluciones más altas capturan más detalle de la superficie. | COMBO | Sí | `"2k"`<br>`"4k"`<br>`"8k"` |
 
 **Restricciones de los parámetros:**
 

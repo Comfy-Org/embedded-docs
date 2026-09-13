@@ -6,7 +6,7 @@ Bu düğüm, "ace step 1.5" işlemi için referans sesi ayarlar. Bir `conditioni
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Referans ses bilgisinin ekleneceği conditioning verisi. | CONDITIONING | Evet |  |
+| `koşullandırma` | Referans ses bilgisinin ekleneceği conditioning verisi. | CONDITIONING | Evet |  |
 | `latent` | Referans sesin isteğe bağlı latent gösterimi (varsayılan: None). Sağlandığında, örnekleri conditioning'e referans ses tını latentleri olarak eklenir. | LATENT | Hayır |  |
 
 ## Çıktılar

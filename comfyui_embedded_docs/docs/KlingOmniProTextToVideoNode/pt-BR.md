@@ -12,8 +12,8 @@ Este nó gera um vídeo a partir de uma descrição de texto usando o modelo mai
 | `duration` | A duração do vídeo em segundos (padrão: 5). | INT | Sim | 3 a 15 segundos |
 | `resolution` | A qualidade ou resolução em pixels do vídeo (padrão: `"1080p"`). Internamente, mapeia para qualidade standard, pro ou 4k. | COMBO | Não | `"4k"`<br>`"1080p"`<br>`"720p"` |
 | `storyboards` | Gera uma série de segmentos de vídeo com prompts e durações individuais. Ignorado para o modelo o1. | DYNAMIC_COMBO | Não | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `generate_audio` | Se deve gerar áudio para o vídeo (padrão: False). | BOOLEAN | Não | True / False |
-| `seed` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed (padrão: 0). | INT | Não | 0 a 2147483647 |
+| `gerar_áudio` | Se deve gerar áudio para o vídeo (padrão: False). | BOOLEAN | Não | True / False |
+| `semente` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed (padrão: 0). | INT | Não | 0 a 2147483647 |
 
 ### Subentradas do storyboard
 

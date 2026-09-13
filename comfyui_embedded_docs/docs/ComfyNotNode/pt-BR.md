@@ -6,7 +6,7 @@ O nó Not executa uma operação lógica NOT em qualquer valor de entrada. Ele r
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `value` | O valor de entrada a ser invertido. Qualquer tipo de dados é aceito e avaliado usando as regras de veracidade do Python. | ANY | Sim | Qualquer valor |
+| `valor` | O valor de entrada a ser invertido. Qualquer tipo de dados é aceito e avaliado usando as regras de veracidade do Python. | ANY | Sim | Qualquer valor |
 
 ## Saídas
 

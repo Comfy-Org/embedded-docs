@@ -6,7 +6,7 @@ O nó Seed fornece um valor inteiro que pode ser usado como semente para control
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `seed` | O valor de semente a ser usado. A opção control after generate determina se o valor permanece fixo ou muda após cada geração; neste nó, ela está definida como fixed. | INT | Sim | 0 a 9223372036854775807 |
+| `semente` | O valor de semente a ser usado. A opção control after generate determina se o valor permanece fixo ou muda após cada geração; neste nó, ela está definida como fixed. | INT | Sim | 0 a 9223372036854775807 |
 
 ## Saídas
 

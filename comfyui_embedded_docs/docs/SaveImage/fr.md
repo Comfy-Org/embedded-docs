@@ -7,7 +7,7 @@ Le nœud SaveImage enregistre les images d'entrée sous forme de fichiers PNG da
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `images` | Les images à enregistrer. | IMAGE | Oui | - |
-| `filename_prefix` | Le préfixe du fichier à enregistrer. Il peut inclure des informations de formatage telles que `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%` pour inclure des valeurs provenant de nœuds (par défaut : "ComfyUI"). | STRING | Oui | - |
+| `préfixe_du_nom_de_fichier` | Le préfixe du fichier à enregistrer. Il peut inclure des informations de formatage telles que `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%` pour inclure des valeurs provenant de nœuds (par défaut : "ComfyUI"). | STRING | Oui | - |
 
 Le nœud reçoit également deux entrées masquées, `prompt` et `extra_pnginfo`, qui sont automatiquement renseignées par ComfyUI avec le prompt du workflow et les informations PNG supplémentaires. Lorsque les métadonnées sont activées, ces informations sont intégrées sous forme de métadonnées textuelles dans chaque fichier PNG enregistré.
 

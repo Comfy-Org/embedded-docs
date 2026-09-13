@@ -6,13 +6,13 @@ Bu düğüm, sağladığınız başlangıç ve bitiş görüntüleri arasında g
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `start_frame` | Referans Görüntü - URL veya Base64 ile kodlanmış dize, 10MB'ı aşamaz, çözünürlük 300*300px'ten az olamaz, en-boy oranı 1:2.5 ~ 2.5:1 arasında olmalıdır. Base64, data:image ön ekini içermemelidir. | IMAGE | Evet | - |
-| `end_frame` | Referans Görüntü - Bitiş karesi kontrolü. URL veya Base64 ile kodlanmış dize, 10MB'ı aşamaz, çözünürlük 300*300px'ten az olamaz. Base64, data:image ön ekini içermemelidir. | IMAGE | Evet | - |
-| `prompt` | Pozitif metin istemi. Boş olmamalıdır ve 500 karakteri aşamaz. | STRING | Evet | - |
-| `negative_prompt` | Negatif metin istemi. 500 karakteri aşamaz. Boş bırakılırsa istekten çıkarılır. | STRING | Evet | - |
-| `cfg_scale` | İstem yönlendirmesinin gücünü kontrol eder (varsayılan: 0.5). | FLOAT | Evet | 0.0-1.0 |
-| `aspect_ratio` | Oluşturulan video için en-boy oranı (varsayılan: "16:9"). | COMBO | Evet | "16:9"<br>"9:16"<br>"1:1" |
-| `mode` | Video oluşturma için kullanılacak yapılandırma, şu biçimde: mod / süre / model_adı. (varsayılan: "pro mode / 5s duration / kling-v2-5-turbo") | COMBO | Evet | "pro mode / 5s duration / kling-v2-5-turbo"<br>"pro mode / 10s duration / kling-v2-5-turbo" |
+| `başlangıç_karesi` | Referans Görüntü - URL veya Base64 ile kodlanmış dize, 10MB'ı aşamaz, çözünürlük 300*300px'ten az olamaz, en-boy oranı 1:2.5 ~ 2.5:1 arasında olmalıdır. Base64, data:image ön ekini içermemelidir. | IMAGE | Evet | - |
+| `bitiş_karesi` | Referans Görüntü - Bitiş karesi kontrolü. URL veya Base64 ile kodlanmış dize, 10MB'ı aşamaz, çözünürlük 300*300px'ten az olamaz. Base64, data:image ön ekini içermemelidir. | IMAGE | Evet | - |
+| `istem` | Pozitif metin istemi. Boş olmamalıdır ve 500 karakteri aşamaz. | STRING | Evet | - |
+| `negatif_istem` | Negatif metin istemi. 500 karakteri aşamaz. Boş bırakılırsa istekten çıkarılır. | STRING | Evet | - |
+| `cfg_ölçeği` | İstem yönlendirmesinin gücünü kontrol eder (varsayılan: 0.5). | FLOAT | Evet | 0.0-1.0 |
+| `en_boy_oranı` | Oluşturulan video için en-boy oranı (varsayılan: "16:9"). | COMBO | Evet | "16:9"<br>"9:16"<br>"1:1" |
+| `mod` | Video oluşturma için kullanılacak yapılandırma, şu biçimde: mod / süre / model_adı. (varsayılan: "pro mode / 5s duration / kling-v2-5-turbo") | COMBO | Evet | "pro mode / 5s duration / kling-v2-5-turbo"<br>"pro mode / 10s duration / kling-v2-5-turbo" |
 
 **Görüntü Kısıtlamaları:**
 

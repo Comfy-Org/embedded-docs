@@ -8,13 +8,13 @@ The SamplerSASolver düğümü, difüzyon modelleri için özel bir örnekleyici
 | --- | --- | --- | --- | --- |
 | `model` | Örnekleyiciyi oluşturmak için örnekleme çizelgesi kullanılan difüzyon modeli | MODEL | Evet | - |
 | `eta` | SDE çözücüsünün adım boyutu ölçekleme faktörünü kontrol eder (varsayılan: 1.0) | FLOAT | Hayır | 0.0 - 10.0 |
-| `sde_start_percent` | Stokastik (SDE) bileşeninin başladığı örnekleme sürecinin başlangıç yüzdesi; modelin çizelgesi kullanılarak bir sigma değerine dönüştürülür (varsayılan: 0.2) | FLOAT | Hayır | 0.0 - 1.0 |
-| `sde_end_percent` | Stokastik (SDE) bileşeninin durduğu örnekleme sürecinin bitiş yüzdesi; modelin çizelgesi kullanılarak bir sigma değerine dönüştürülür (varsayılan: 0.8) | FLOAT | Hayır | 0.0 - 1.0 |
-| `s_noise` | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0) | FLOAT | Hayır | 0.0 - 100.0 |
-| `predictor_order` | Çözücüdeki tahmin edici bileşenin mertebesi (varsayılan: 3) | INT | Hayır | 1 - 6 |
-| `corrector_order` | Çözücüdeki düzeltici bileşenin mertebesi (varsayılan: 4) | INT | Hayır | 0 - 6 |
-| `use_pece` | PECE (Predict-Evaluate-Correct-Evaluate) yöntemini etkinleştirir (varsayılan: devre dışı) | BOOLEAN | Hayır | - |
-| `simple_order_2` | Basitleştirilmiş ikinci mertebe hesaplamalarını etkinleştirir (varsayılan: devre dışı) | BOOLEAN | Hayır | - |
+| `sde_başlangıç_yüzdesi` | Stokastik (SDE) bileşeninin başladığı örnekleme sürecinin başlangıç yüzdesi; modelin çizelgesi kullanılarak bir sigma değerine dönüştürülür (varsayılan: 0.2) | FLOAT | Hayır | 0.0 - 1.0 |
+| `sde_bitiş_yüzdesi` | Stokastik (SDE) bileşeninin durduğu örnekleme sürecinin bitiş yüzdesi; modelin çizelgesi kullanılarak bir sigma değerine dönüştürülür (varsayılan: 0.8) | FLOAT | Hayır | 0.0 - 1.0 |
+| `s_gürültü` | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0) | FLOAT | Hayır | 0.0 - 100.0 |
+| `tahminci_sırası` | Çözücüdeki tahmin edici bileşenin mertebesi (varsayılan: 3) | INT | Hayır | 1 - 6 |
+| `düzeltici_sırası` | Çözücüdeki düzeltici bileşenin mertebesi (varsayılan: 4) | INT | Hayır | 0 - 6 |
+| `pece_kullan` | PECE (Predict-Evaluate-Correct-Evaluate) yöntemini etkinleştirir (varsayılan: devre dışı) | BOOLEAN | Hayır | - |
+| `basit_sıra_2` | Basitleştirilmiş ikinci mertebe hesaplamalarını etkinleştirir (varsayılan: devre dışı) | BOOLEAN | Hayır | - |
 
 Tüm isteğe bağlı girdiler arayüzde gelişmiş olarak işaretlenmiştir.
 

@@ -8,11 +8,11 @@ El nodo Reve Image Create genera imágenes a partir de una descripción textual 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | Versión del modelo que se usará para la generación. | DYNAMIC_COMBO | Sí | `"reve-create@20250915"` |
+| `modelo` | Versión del modelo que se usará para la generación. | DYNAMIC_COMBO | Sí | `"reve-create@20250915"` |
 | `prompt` | Descripción textual de la imagen deseada. Máximo 2560 caracteres. Valor predeterminado: "" (vacío). | STRING | Sí | 1 a 2560 caracteres |
-| `upscale` | Amplía la imagen generada. Puede agregar un costo adicional. Valor predeterminado: "disabled". | DYNAMIC_COMBO | No | `"disabled"`<br>`"enabled"` |
-| `remove_background` | Elimina el fondo de la imagen generada. Puede agregar un costo adicional. Valor predeterminado: False. | BOOLEAN | No | N/A |
-| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Valor predeterminado: 0. | INT | No | 0 a 2147483647 |
+| `escalar` | Amplía la imagen generada. Puede agregar un costo adicional. Valor predeterminado: "disabled". | DYNAMIC_COMBO | No | `"disabled"`<br>`"enabled"` |
+| `eliminar_fondo` | Elimina el fondo de la imagen generada. Puede agregar un costo adicional. Valor predeterminado: False. | BOOLEAN | No | N/A |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Valor predeterminado: 0. | INT | No | 0 a 2147483647 |
 
 ### Entradas de reve-create@20250915
 

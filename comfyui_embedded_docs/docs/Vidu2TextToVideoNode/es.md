@@ -6,13 +6,13 @@ El nodo Vidu2 Text-to-Video Generation crea un video a partir de una descripció
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de IA que se utilizará para la generación de video. Actualmente, solo hay un modelo disponible. | COMBO | Sí | `"viduq2"` |
+| `modelo` | El modelo de IA que se utilizará para la generación de video. Actualmente, solo hay un modelo disponible. | COMBO | Sí | `"viduq2"` |
 | `prompt` | Una descripción textual para la generación de video, con una longitud máxima de 2000 caracteres. | STRING | Sí | - |
-| `duration` | La duración del video generado en segundos. El valor se puede ajustar mediante un control deslizante (predeterminado: 5). | INT | No | 1 a 10 |
-| `seed` | Un número que se utiliza para controlar la aleatoriedad de la generación y permitir resultados reproducibles. Se puede controlar después de la generación (predeterminado: 1). | INT | No | 0 a 2147483647 |
-| `aspect_ratio` | La relación proporcional entre el ancho y el alto del video. | COMBO | No | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
-| `resolution` | Las dimensiones en píxeles del video generado. Este es un parámetro avanzado. | COMBO | No | `"720p"`<br>`"1080p"` |
-| `background_music` | Indica si se debe añadir música de fondo al video generado (predeterminado: False). Este es un parámetro avanzado. | BOOLEAN | No | - |
+| `duración` | La duración del video generado en segundos. El valor se puede ajustar mediante un control deslizante (predeterminado: 5). | INT | No | 1 a 10 |
+| `semilla` | Un número que se utiliza para controlar la aleatoriedad de la generación y permitir resultados reproducibles. Se puede controlar después de la generación (predeterminado: 1). | INT | No | 0 a 2147483647 |
+| `relación_de_aspecto` | La relación proporcional entre el ancho y el alto del video. | COMBO | No | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
+| `resolución` | Las dimensiones en píxeles del video generado. Este es un parámetro avanzado. | COMBO | No | `"720p"`<br>`"1080p"` |
+| `música_de_fondo` | Indica si se debe añadir música de fondo al video generado (predeterminado: False). Este es un parámetro avanzado. | BOOLEAN | No | - |
 
 ## Salidas
 

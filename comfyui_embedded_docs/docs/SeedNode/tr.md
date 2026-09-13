@@ -6,7 +6,7 @@ Seed düğümü, diğer düğümlerdeki rastgele işlemlerin yeniden üretilebil
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `seed` | Kullanılacak tohum değeri. Üretim sonrası kontrol seçeneği, değerin sabit kalıp kalmayacağını veya her üretimden sonra değişip değişmeyeceğini belirler; bu düğümde sabit olarak ayarlanmıştır. | INT | Evet | 0 ile 9223372036854775807 |
+| `tohum` | Kullanılacak tohum değeri. Üretim sonrası kontrol seçeneği, değerin sabit kalıp kalmayacağını veya her üretimden sonra değişip değişmeyeceğini belirler; bu düğümde sabit olarak ayarlanmıştır. | INT | Evet | 0 ile 9223372036854775807 |
 
 ## Çıktılar
 

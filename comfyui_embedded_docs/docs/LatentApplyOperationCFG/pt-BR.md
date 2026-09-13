@@ -6,8 +6,8 @@ O nó LatentApplyOperationCFG aplica uma operação latente dentro da etapa de c
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo ao qual a operação CFG será aplicada | MODEL | Sim | - |
-| `operation` | A operação latente a ser aplicada durante o processo de amostragem CFG | LATENT_OPERATION | Sim | - |
+| `modelo` | O modelo ao qual a operação CFG será aplicada | MODEL | Sim | - |
+| `operação` | A operação latente a ser aplicada durante o processo de amostragem CFG | LATENT_OPERATION | Sim | - |
 
 Nota: Este nó está marcado como experimental. A operação é aplicada às saídas de condicionamento do modelo durante o processo de amostragem CFG. Quando duas saídas de condicionamento estão presentes, a operação é aplicada à diferença entre a primeira e a segunda saída, e a segunda saída é adicionada de volta ao resultado. Quando apenas uma saída de condicionamento está presente, a operação é aplicada diretamente a ela.
 

@@ -9,7 +9,7 @@ Bu düğüm, bir görüntü listesini ComfyUI'nin çıktı dizini içindeki beli
 | `images` | Kaydedilecek görüntülerin listesi. | IMAGE | Evet | N/A |
 | `folder_name` | Görüntülerin kaydedileceği klasörün adı (çıktı dizini içinde). Varsayılan: "dataset". | STRING | Hayır | N/A |
 | `filename_prefix` | Kaydedilen görüntü dosya adları için önek. Varsayılan: "image". Gelişmiş parametre. | STRING | Hayır | N/A |
-| `mode` | Mevcut dosyaların üzerine yazılıp yazılmayacağı veya üzerine yazmayı önlemek için dosya adlarının artırılıp artırılmayacağı. Varsayılan: "overwrite". | COMBO | Hayır | "overwrite"<br>"increment" |
+| `mod` | Mevcut dosyaların üzerine yazılıp yazılmayacağı veya üzerine yazmayı önlemek için dosya adlarının artırılıp artırılmayacağı. Varsayılan: "overwrite". | COMBO | Hayır | "overwrite"<br>"increment" |
 
 **Notlar:**
 

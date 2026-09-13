@@ -6,8 +6,8 @@ Bu düğüm, birden çok görüntü katmanını tek bir bileşik görüntüde bi
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `layers` | Birleştirilecek katman yığını; Add Layer ile oluşturun. Öğeler z_index'e göre yığılır, bir öğe içindeki toplu kareler ardışık katmanlara genişler ve öğe yerleşimi, opaklığı ve karışım modu başlangıç kompozisyonunu tanımlar. Açık bir belge tuvali olmadan boyut, yerleştirilen katmanların en iyi çaba ile hesaplanan maksimum kapsamıdır. Geçerli girdilerle eşleşen kaydedilmiş bir kompozisyon öncelik alır. | LAYERS | Evet | Maksimum 50 katman |
-| `compositor` | Compositor editörü tarafından kaydedilmiş katmanlı kompozisyon. | COMPOSITOR | Hayır | Yok |
+| `katmanlar` | Birleştirilecek katman yığını; Add Layer ile oluşturun. Öğeler z_index'e göre yığılır, bir öğe içindeki toplu kareler ardışık katmanlara genişler ve öğe yerleşimi, opaklığı ve karışım modu başlangıç kompozisyonunu tanımlar. Açık bir belge tuvali olmadan boyut, yerleştirilen katmanların en iyi çaba ile hesaplanan maksimum kapsamıdır. Geçerli girdilerle eşleşen kaydedilmiş bir kompozisyon öncelik alır. | LAYERS | Evet | Maksimum 50 katman |
+| `kompozitör` | Compositor editörü tarafından kaydedilmiş katmanlı kompozisyon. | COMPOSITOR | Hayır | Yok |
 
 **Kısıtlamalarla ilgili notlar:**
 

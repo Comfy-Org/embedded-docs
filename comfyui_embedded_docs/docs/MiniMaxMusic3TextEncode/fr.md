@@ -8,8 +8,8 @@ MiniMax Music3 Text Encode utilise un modèle CLIP MiniMax Music3 pour convertir
 |-----------|-------------|-----------------|--------|-------|
 | `clip` | Le modèle CLIP MiniMax Music3, utilisé pour l'encodage de texte et la génération de séquence de conditionnement. | CLIP | Oui | - |
 | `caption` | Texte décrivant la musique à générer. Prend en charge le texte multiligne et les prompts dynamiques. | STRING | Oui | - |
-| `lyrics` | Le texte des paroles à utiliser pour générer la musique. Prend en charge le texte multiligne et les prompts dynamiques. | STRING | Oui | - |
-| `seed` | Graine aléatoire reproductible pour le processus de génération. Valeur par défaut : 0. Un widget de contrôle après génération est fourni. | INT | Oui | 0 à 18446744073709551615 (0xffffffffffffffff) |
+| `paroles` | Le texte des paroles à utiliser pour générer la musique. Prend en charge le texte multiligne et les prompts dynamiques. | STRING | Oui | - |
+| `graine` | Graine aléatoire reproductible pour le processus de génération. Valeur par défaut : 0. Un widget de contrôle après génération est fourni. | INT | Oui | 0 à 18446744073709551615 (0xffffffffffffffff) |
 | `max_duration` | Durée maximale en secondes ; le modèle peut terminer la chanson plus tôt. Valeur par défaut : 120.0. | FLOAT | Oui | 0.04 à la durée audio maximale du modèle (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND), pas de 0.04 |
 | `cfg_scale` | Échelle de guidage sans classificateur. Valeur par défaut : constante du modèle CFG_SCALE. Paramètre avancé. | FLOAT | Oui | 0.0 à 100.0, pas de 0.1 (conserve 2 décimales) |
 | `top_k` | Valeur d'échantillonnage top-k utilisée pour la sélection des tokens acoustiques. Valeur par défaut : constante du modèle CFG_TOP_K. Paramètre avancé. | INT | Oui | 1 à la taille du vocabulaire du modèle (C0_VOCAB_SIZE) |

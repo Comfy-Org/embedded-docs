@@ -6,12 +6,12 @@ LTXV Generated Keyframes to Guides düğümü, önceki bir aşamada oluşturulan
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Anahtar kare kılavuzlarının ekleneceği pozitif koşullandırma. | CONDITIONING | Evet | |
-| `negative` | Anahtar kare kılavuzlarının ekleneceği negatif koşullandırma. | CONDITIONING | Evet | |
+| `pozitif` | Anahtar kare kılavuzlarının ekleneceği pozitif koşullandırma. | CONDITIONING | Evet | |
+| `negatif` | Anahtar kare kılavuzlarının ekleneceği negatif koşullandırma. | CONDITIONING | Evet | |
 | `vae` | Yeniden boyutlandırma gerekirse anahtar kareleri çözmek için kullanılan VAE. | VAE | Evet | |
 | `latent` | Kılavuzların ekleneceği hedef video latent değeri; örn. zamansal olarak ölçeklendirilmiş olan. | LATENT | Evet | |
-| `keyframes` | LTXV Separate Generated Keyframes düğümünün, her anahtar karenin üretildiği piksel kare indeksini taşıyan keyframes çıktısı. | LATENT | Evet | |
-| `strength` | Kılavuz gücü. 1.0 katı bir sabitlemedir; daha düşük değerler gevşetir. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 10.0 (adım 0.01) |
+| `anahtar kareler` | LTXV Separate Generated Keyframes düğümünün, her anahtar karenin üretildiği piksel kare indeksini taşıyan keyframes çıktısı. | LATENT | Evet | |
+| `güç` | Kılavuz gücü. 1.0 katı bir sabitlemedir; daha düşük değerler gevşetir. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 10.0 (adım 0.01) |
 | `override_frame_indices` | İsteğe bağlı — kaydedilen (veya otomatik ölçeklenen) konumlar yerine bu piksel karelerine sabitleyin. Her anahtar kare için bir indeks sağlayın. Kaydedilen konumları yeniden kullanmak veya hedef tuval farklı uzunluktaysa (örn. zamansal x2 sonrası) bunları ölçeklemek için boş bırakın. (varsayılan: "") | STRING | Hayır | |
 
 ## Çıktılar

@@ -9,7 +9,7 @@
 | `clip` | Um modelo CLIP que suporta a arquitetura Flux, incluindo ambos os codificadores CLIP-L e T5XXL. | CLIP | Sim | - |
 | `clip_l` | Entrada de texto processada pelo codificador CLIP-L. Adequada para descrições concisas por palavras-chave, como estilo ou tema. Suporta entrada multilinha e prompts dinâmicos. | STRING | Sim | - |
 | `t5xxl` | Entrada de texto processada pelo codificador T5XXL. Adequada para descrições detalhadas em linguagem natural, expressando cenas e detalhes complexos. Suporta entrada multilinha e prompts dinâmicos. | STRING | Sim | - |
-| `guidance` | Controla a influência das condições de texto no processo de geração. Valores mais altos significam aderência mais estrita ao texto. Padrão: 3.5. Ajustável em incrementos de 0.1. | FLOAT | Sim | 0.0 - 100.0 |
+| `orientação` | Controla a influência das condições de texto no processo de geração. Valores mais altos significam aderência mais estrita ao texto. Padrão: 3.5. Ajustável em incrementos de 0.1. | FLOAT | Sim | 0.0 - 100.0 |
 
 ## Saídas
 

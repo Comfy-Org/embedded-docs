@@ -6,9 +6,9 @@ El nodo AlignYourStepsScheduler genera valores sigma (niveles de ruido) para el 
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model_type` | Especifica el tipo de modelo que se utilizará para el cálculo de sigma (predeterminado: "SD1") | COMBO | Sí | `"SD1"`<br>`"SDXL"`<br>`"SVD"` |
-| `steps` | El número total de pasos de muestreo que se generarán (predeterminado: 10) | INT | Sí | 1 a 10000 |
-| `denoise` | Controla cuánto eliminar el ruido de la imagen, donde 1.0 utiliza todos los pasos y los valores más bajos utilizan menos pasos (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
+| `tipo_modelo` | Especifica el tipo de modelo que se utilizará para el cálculo de sigma (predeterminado: "SD1") | COMBO | Sí | `"SD1"`<br>`"SDXL"`<br>`"SVD"` |
+| `pasos` | El número total de pasos de muestreo que se generarán (predeterminado: 10) | INT | Sí | 1 a 10000 |
+| `desruido` | Controla cuánto eliminar el ruido de la imagen, donde 1.0 utiliza todos los pasos y los valores más bajos utilizan menos pasos (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
 
 Nota: Cada tipo de modelo tiene una programación integrada de niveles de ruido que contiene 11 valores sigma (para 10 pasos). Cuando `denoise` es 0.0, el nodo devuelve un tensor sigma vacío. Cuando `denoise` está entre 0.0 y 1.0, el número efectivo de pasos se calcula como `round(steps × denoise)`, y solo se utiliza la parte final correspondiente de la programación de sigma. Si el valor de `steps` solicitado no coincide con la longitud de la programación integrada, los niveles de ruido se interpolan de forma log-lineal para coincidir con el número de pasos solicitado. El valor sigma final siempre se establece en 0.
 

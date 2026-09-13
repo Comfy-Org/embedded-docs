@@ -7,8 +7,8 @@ Este nó gera uma imagem a partir de um prompt de texto usando o modelo Z-Image 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt de texto descrevendo a imagem a ser gerada. Aceita entrada multilinha e é aparado antes do envio. Não pode estar vazio após a remoção de espaços. Padrão: "" (vazio). | STRING | Sim | 1 - 4096 caracteres |
-| `seed` | Semente aleatória usada para controlar a reprodutibilidade da geração. Alterá-la produz uma variação diferente. Inclui uma opção de controle após a geração. Padrão: 42. | INT | Não | 0 - 18446744073709551615 |
-| `aspect_ratio` | Proporção da imagem gerada. Padrão: "1:1". | COMBO | Não | "1:1"<br>"3:4"<br>"2:3"<br>"3:2"<br>"4:3"<br>"16:9"<br>"9:16"<br>"21:9" |
+| `semente` | Semente aleatória usada para controlar a reprodutibilidade da geração. Alterá-la produz uma variação diferente. Inclui uma opção de controle após a geração. Padrão: 42. | INT | Não | 0 - 18446744073709551615 |
+| `proporção_de_aspecto` | Proporção da imagem gerada. Padrão: "1:1". | COMBO | Não | "1:1"<br>"3:4"<br>"2:3"<br>"3:2"<br>"4:3"<br>"16:9"<br>"9:16"<br>"21:9" |
 | `megapixels` | Orçamento total de pixels. 1.0 equivale a aproximadamente 1024x1024 em proporção quadrada. Padrão: 1.0. | FLOAT | Não | 0.1 - 16.0<br>(passo de 0.1) |
 
 Nota: Os valores de entrada são validados antes do envio da geração. O `prompt` deve conter entre 1 e 4.096 caracteres após a remoção de espaços em branco, `aspect_ratio` deve ser uma das opções listadas, e `megapixels` deve ser informado em incrementos de 0.1.

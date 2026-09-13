@@ -6,11 +6,11 @@ SD_4XUpscale_Conditioning düğümü, görüntüleri difüzyon modelleriyle büy
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `images` | Büyütülecek girdi görüntüleri. | IMAGE | Evet | - |
-| `positive` | Üretimi istenen içeriğe yönlendiren pozitif koşullandırma verisi. | CONDITIONING | Evet | - |
-| `negative` | Üretimi istenmeyen içerikten uzaklaştıran negatif koşullandırma verisi. | CONDITIONING | Evet | - |
-| `scale_ratio` | Büyütülmüş koşullandırma ve latent hazırlanırken girdi görüntü boyutlarına uygulanan çarpan (varsayılan: 4.0). | FLOAT | Evet | 0.0 - 10.0 (adım 0.01) |
-| `noise_augmentation` | Büyütme işlemi sırasında eklenecek gürültü miktarı (varsayılan: 0.0). | FLOAT | Evet | 0.0 - 1.0 (adım 0.001) |
+| `görüntüler` | Büyütülecek girdi görüntüleri. | IMAGE | Evet | - |
+| `pozitif` | Üretimi istenen içeriğe yönlendiren pozitif koşullandırma verisi. | CONDITIONING | Evet | - |
+| `negatif` | Üretimi istenmeyen içerikten uzaklaştıran negatif koşullandırma verisi. | CONDITIONING | Evet | - |
+| `ölçek_oranı` | Büyütülmüş koşullandırma ve latent hazırlanırken girdi görüntü boyutlarına uygulanan çarpan (varsayılan: 4.0). | FLOAT | Evet | 0.0 - 10.0 (adım 0.01) |
+| `gürültü_artırımı` | Büyütme işlemi sırasında eklenecek gürültü miktarı (varsayılan: 0.0). | FLOAT | Evet | 0.0 - 1.0 (adım 0.001) |
 
 Not: `noise_augmentation` gelişmiş bir parametredir ve düğüm arayüzünde "Gelişmiş" anahtarının altında gösterilir.
 

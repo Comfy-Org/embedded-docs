@@ -6,7 +6,7 @@ Este nó cria uma operação latente que aplica mapeamento de tons de Reinhard a
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `multiplier` | Controla a intensidade do efeito de mapeamento de tons (padrão: 1.0) | FLOAT | Sim | 0.0 a 100.0 (passo 0.01) |
+| `multiplicador` | Controla a intensidade do efeito de mapeamento de tons (padrão: 1.0) | FLOAT | Sim | 0.0 a 100.0 (passo 0.01) |
 
 ## Saídas
 

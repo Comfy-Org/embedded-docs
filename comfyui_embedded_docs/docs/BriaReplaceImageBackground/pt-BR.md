@@ -9,10 +9,10 @@ Este nó substitui o plano de fundo de uma imagem por um novo gerado pela Bria. 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `image` | A imagem de entrada cujo plano de fundo será substituído. | IMAGE | Sim | |
-| `background` | Descreva o novo plano de fundo com um prompt ou guie-o com imagens de referência. | DYNAMIC_COMBO | Sim | `"prompt"`<br>`"reference images"` |
+| `fundo` | Descreva o novo plano de fundo com um prompt ou guie-o com imagens de referência. | DYNAMIC_COMBO | Sim | `"prompt"`<br>`"reference images"` |
 | `original_quality` | Retorna o tamanho exato em pixels da entrada em vez de dimensionar o resultado para cerca de 1 megapixel. Uma entrada grande, então, retorna uma imagem grande. (padrão: false) | BOOLEAN | Não | `true`<br>`false` |
-| `seed` | A mesma seed geralmente retorna o mesmo plano de fundo; o refinamento automático do prompt ainda pode variá-lo. (padrão: 42) | INT | Não | 0 a 2147483647 |
-| `moderation` | Configurações de moderação. (padrão: "false") | DYNAMIC_COMBO | Não | `"false"`<br>`"true"` |
+| `semente` | A mesma seed geralmente retorna o mesmo plano de fundo; o refinamento automático do prompt ainda pode variá-lo. (padrão: 42) | INT | Não | 0 a 2147483647 |
+| `moderação` | Configurações de moderação. (padrão: "false") | DYNAMIC_COMBO | Não | `"false"`<br>`"true"` |
 
 ### Entradas do prompt
 

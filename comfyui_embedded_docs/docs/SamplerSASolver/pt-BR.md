@@ -6,15 +6,15 @@ O nó SamplerSASolver cria e configura um amostrador personalizado para modelos 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo de difusão cujo cronograma de amostragem é usado para construir o amostrador | MODEL | Sim | - |
+| `modelo` | O modelo de difusão cujo cronograma de amostragem é usado para construir o amostrador | MODEL | Sim | - |
 | `eta` | Controla o fator de escala do tamanho do passo do solucionador SDE (padrão: 1.0) | FLOAT | Não | 0.0 - 10.0 |
-| `sde_start_percent` | Percentual inicial do processo de amostragem em que o componente estocástico (SDE) começa; convertido em um valor sigma usando o cronograma do modelo (padrão: 0.2) | FLOAT | Não | 0.0 - 1.0 |
-| `sde_end_percent` | Percentual final do processo de amostragem em que o componente estocástico (SDE) para; convertido em um valor sigma usando o cronograma do modelo (padrão: 0.8) | FLOAT | Não | 0.0 - 1.0 |
+| `percentual_inicial_sde` | Percentual inicial do processo de amostragem em que o componente estocástico (SDE) começa; convertido em um valor sigma usando o cronograma do modelo (padrão: 0.2) | FLOAT | Não | 0.0 - 1.0 |
+| `percentual_final_sde` | Percentual final do processo de amostragem em que o componente estocástico (SDE) para; convertido em um valor sigma usando o cronograma do modelo (padrão: 0.8) | FLOAT | Não | 0.0 - 1.0 |
 | `s_noise` | Controla a quantidade de ruído adicionada durante a amostragem (padrão: 1.0) | FLOAT | Não | 0.0 - 100.0 |
-| `predictor_order` | A ordem do componente preditor no solucionador (padrão: 3) | INT | Não | 1 - 6 |
-| `corrector_order` | A ordem do componente corretor no solucionador (padrão: 4) | INT | Não | 0 - 6 |
-| `use_pece` | Habilita o método PECE (Predict-Evaluate-Correct-Evaluate) (padrão: desabilitado) | BOOLEAN | Não | - |
-| `simple_order_2` | Habilita cálculos simplificados de segunda ordem (padrão: desabilitado) | BOOLEAN | Não | - |
+| `ordem_do_preditor` | A ordem do componente preditor no solucionador (padrão: 3) | INT | Não | 1 - 6 |
+| `ordem_do_corretor` | A ordem do componente corretor no solucionador (padrão: 4) | INT | Não | 0 - 6 |
+| `usar_pece` | Habilita o método PECE (Predict-Evaluate-Correct-Evaluate) (padrão: desabilitado) | BOOLEAN | Não | - |
+| `ordem_simples_2` | Habilita cálculos simplificados de segunda ordem (padrão: desabilitado) | BOOLEAN | Não | - |
 
 Todas as entradas opcionais estão marcadas como avançadas na interface.
 

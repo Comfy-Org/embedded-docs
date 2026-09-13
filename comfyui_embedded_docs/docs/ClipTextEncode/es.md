@@ -10,7 +10,7 @@ Piénsalo como comunicarte con un artista que habla un idioma diferente. El mode
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `text` | El texto que se va a codificar. Admite entrada multilínea y prompts dinámicos. | STRING | Sí | Cualquier texto |
+| `texto` | El texto que se va a codificar. Admite entrada multilínea y prompts dinámicos. | STRING | Sí | Cualquier texto |
 | `clip` | El modelo CLIP utilizado para codificar el texto. | CLIP | Sí | Modelos CLIP cargados |
 
 Nota: Si la entrada `clip` es None (por ejemplo, cuando proviene de un cargador de checkpoint cuyo checkpoint no contiene un modelo CLIP o codificador de texto válido), el nodo genera un error.

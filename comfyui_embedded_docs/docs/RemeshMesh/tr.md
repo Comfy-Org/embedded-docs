@@ -9,7 +9,7 @@ Remesh Mesh, orijinal yüzeyin çevresindeki dar bantlı bir mesafe alanını ö
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `mesh` | Yeniden oluşturulacak giriş ağı. | MESH | Evet | — |
-| `resolution` | Voksel ızgara çözünürlüğü (çıktı yoğunluğu). 256 ~ 100k yüz, 512 ~ 1M. Tam bir yüz sayısı için ardından Decimate Mesh kullanın. (varsayılan: 512) | INT | Evet | 32 - 2048 |
+| `çözünürlük` | Voksel ızgara çözünürlüğü (çıktı yoğunluğu). 256 ~ 100k yüz, 512 ~ 1M. Tam bir yüz sayısı için ardından Decimate Mesh kullanın. (varsayılan: 512) | INT | Evet | 32 - 2048 |
 | `sign_mode` | Yüzey çıkarma modu. "udf", dağınık/manifold olmayan girdilere karşı dayanıklıdır; "sdf", QEF (Quadratic Error Function) keskin özellik kurtarma ile temiz tek bir yüzey üretir, ancak tutarlı sarım gerektirir. Bir mod seçildiğinde o moda özgü alt seçenekler görünür. (varsayılan: "udf") | DYNAMIC_COMBO | Evet | "udf"<br>"sdf" |
 | `band` | Voksel birimleri cinsinden dar bant genişliği. UDF modunda yüzeyi de kaydırır. (gelişmiş, varsayılan: 1.0) | FLOAT | Evet | 0.5 - 4.0 |
 | `project_back` | Köşeleri orijinal yüzeye doğru doğrusal olarak interpole eder (0 = saf DC, 1 = oturtulmuş). (gelişmiş, varsayılan: 0.0) | FLOAT | Evet | 0.0 - 1.0 |

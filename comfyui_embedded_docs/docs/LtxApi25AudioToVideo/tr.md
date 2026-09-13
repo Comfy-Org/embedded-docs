@@ -6,12 +6,12 @@ Bu düğüm, LTX 2.5 modelini kullanarak bir ses parçasını takip eden bir vid
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `audio` | Videoyu yönlendiren ses parçası. Uzunluğu (2-20 saniye) video süresini belirler. | AUDIO | Evet | 2-20 saniye |
+| `ses` | Videoyu yönlendiren ses parçası. Uzunluğu (2-20 saniye) video süresini belirler. | AUDIO | Evet | 2-20 saniye |
 | `model` | Kullanılacak LTX 2.5 model sürümü. Bir model seçildiğinde, o model için `resolution` alt seçeneği de görünür. | COMBO | Evet | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
 | `resolution` | Oluşturulan videonun çıktı çözünürlüğü. Bu alt seçenek, seçilen `model` altında gösterilir (varsayılan: "1920x1080"). Her iki model de aynı çözünürlük seçeneklerini sunar. | COMBO | Evet | "1920x1080"<br>"1080x1920" |
 | `prompt` | Oluşturulan videonun içeriğini yönlendiren metin açıklaması (varsayılan: ""). En az 1, en fazla 10000 karakter içermelidir. | STRING | Evet | 1-10000 karakter |
-| `seed` | Üretimin rastgeleliğini kontrol eden bir sayı. Aynı seed aynı sonucu üretir (varsayılan: 42). | INT | Evet | Herhangi bir tam sayı |
-| `image` | Video için kullanılacak isteğe bağlı ilk kare. Yalnızca bir görsel desteklenir. | IMAGE | Hayır | Tek görsel |
+| `tohum` | Üretimin rastgeleliğini kontrol eden bir sayı. Aynı seed aynı sonucu üretir (varsayılan: 42). | INT | Evet | Herhangi bir tam sayı |
+| `görsel` | Video için kullanılacak isteğe bağlı ilk kare. Yalnızca bir görsel desteklenir. | IMAGE | Hayır | Tek görsel |
 
 Kısıtlamalara ilişkin notlar:
 - Ses süresi 2 ile 20 saniye arasında olmalıdır; bu aralığın dışındaysa düğüm bir hata verir.

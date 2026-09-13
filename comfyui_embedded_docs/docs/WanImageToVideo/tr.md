@@ -6,15 +6,15 @@ WanImageToVideo düğümü, video üretimi için koşullandırma ve latent temsi
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `positive` | Üretimi yönlendirmek için kullanılan pozitif koşullandırma girdisi | CONDITIONING | Evet | - |
-| `negative` | Üretimi yönlendirmek için kullanılan negatif koşullandırma girdisi | CONDITIONING | Evet | - |
+| `pozitif` | Üretimi yönlendirmek için kullanılan pozitif koşullandırma girdisi | CONDITIONING | Evet | - |
+| `negatif` | Üretimi yönlendirmek için kullanılan negatif koşullandırma girdisi | CONDITIONING | Evet | - |
 | `vae` | Görüntüleri latent uzayına kodlamak için kullanılan VAE modeli | VAE | Evet | - |
-| `width` | Üretilen videonun genişliği (varsayılan: 832, adım: 16) | INT | Evet | 16 - MAX_RESOLUTION |
-| `height` | Üretilen videonun yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 - MAX_RESOLUTION |
-| `length` | Videodaki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 - MAX_RESOLUTION |
-| `batch_size` | Tek bir toplu işte üretilecek video sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
-| `clip_vision_output` | Hem pozitif hem de negatif girdilere ek koşullandırma olarak eklenen isteğe bağlı CLIP görü çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
-| `start_image` | Videoyu başlatmak için kullanılan isteğe bağlı başlangıç görüntüsü. Sağlandığında, belirtilen `width` ve `height` boyutlarına yeniden boyutlandırılır ve kare dizisinin başına yerleştirilir; `length` değerinin ötesindeki kareler yok sayılır. Kalan kareler nötr gri (0.5) değerleriyle doldurulur. | IMAGE | Hayır | - |
+| `genişlik` | Üretilen videonun genişliği (varsayılan: 832, adım: 16) | INT | Evet | 16 - MAX_RESOLUTION |
+| `yükseklik` | Üretilen videonun yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 - MAX_RESOLUTION |
+| `uzunluk` | Videodaki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 - MAX_RESOLUTION |
+| `toplu_boyut` | Tek bir toplu işte üretilecek video sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `clip_görü_çıktısı` | Hem pozitif hem de negatif girdilere ek koşullandırma olarak eklenen isteğe bağlı CLIP görü çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
+| `başlangıç_görüntüsü` | Videoyu başlatmak için kullanılan isteğe bağlı başlangıç görüntüsü. Sağlandığında, belirtilen `width` ve `height` boyutlarına yeniden boyutlandırılır ve kare dizisinin başına yerleştirilir; `length` değerinin ötesindeki kareler yok sayılır. Kalan kareler nötr gri (0.5) değerleriyle doldurulur. | IMAGE | Hayır | - |
 
 **Not:** `start_image` sağlandığında, kare dizisi VAE ile kodlanır ve koşullandırmaya bir maske uygulanır. Maske, başlangıç görüntüsünün kapsadığı kareler için 0, kalan kareler için 1 olarak ayarlanır; böylece üretim sağlanan görüntüden devam eder. Kodlama sırasında görüntünün yalnızca ilk üç renk kanalı (RGB) kullanılır. Hem pozitif hem de negatif koşullandırma aynı birleştirilmiş latent görüntüyü, maskeyi ve (sağlanmışsa) CLIP görü çıktısını alır.
 

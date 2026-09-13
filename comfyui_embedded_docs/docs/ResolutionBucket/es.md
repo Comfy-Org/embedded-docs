@@ -6,8 +6,8 @@ Este nodo organiza una lista de imágenes latentes y sus datos de condicionamien
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `latents` | Lista de diccionarios de latentes para agrupar por resolución. | LATENT | Sí | N/A |
-| `conditioning` | Lista de listas de condicionamiento (debe coincidir con la longitud de `latents`). | CONDITIONING | Sí | N/A |
+| `latentes` | Lista de diccionarios de latentes para agrupar por resolución. | LATENT | Sí | N/A |
+| `condicionamiento` | Lista de listas de condicionamiento (debe coincidir con la longitud de `latents`). | CONDITIONING | Sí | N/A |
 
 **Nota:** Ambas entradas son entradas de tipo lista, lo que significa que el nodo recibe una lista de elementos para cada una. El número de elementos de la lista `latents` debe coincidir exactamente con el número de elementos de la lista `conditioning`; si las cantidades no coinciden, el nodo genera un error. Cada diccionario latente puede contener un lote de muestras, y la lista de condicionamiento correspondiente debe contener un número coincidente de elementos de condicionamiento para ese lote, ya que cada muestra del lote está emparejada con su propia entrada de condicionamiento. Las muestras latentes pueden tener una forma de (B, C, H, W) para imágenes o (B, T, C, H, W) para videos; el nodo las agrupa solo por altura y anchura.
 

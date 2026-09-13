@@ -6,9 +6,9 @@ EmptySD3LatentImage, Stable Diffusion 3 modellerinin beklediği düzende boş (t
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `width` | Latent görüntünün piksel cinsinden genişliği (varsayılan: 1024). Değerler 16'lık artışlarla adımlanır. | INT | Evet | 16 - MAX_RESOLUTION (adım: 16) |
-| `height` | Latent görüntünün piksel cinsinden yüksekliği (varsayılan: 1024). Değerler 16'lık artışlarla adımlanır. | INT | Evet | 16 - MAX_RESOLUTION (adım: 16) |
-| `batch_size` | Toplu işlemde oluşturulacak latent görüntü sayısı (varsayılan: 1). | INT | Evet | 1 - 4096 |
+| `genişlik` | Latent görüntünün piksel cinsinden genişliği (varsayılan: 1024). Değerler 16'lık artışlarla adımlanır. | INT | Evet | 16 - MAX_RESOLUTION (adım: 16) |
+| `yükseklik` | Latent görüntünün piksel cinsinden yüksekliği (varsayılan: 1024). Değerler 16'lık artışlarla adımlanır. | INT | Evet | 16 - MAX_RESOLUTION (adım: 16) |
+| `toplu_boyut` | Toplu işlemde oluşturulacak latent görüntü sayısı (varsayılan: 1). | INT | Evet | 1 - 4096 |
 
 ## Çıktılar
 

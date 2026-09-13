@@ -6,9 +6,9 @@ Le nœud ModelSamplingLTXV applique des paramètres d'échantillonnage avancés 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle d'entrée auquel appliquer les paramètres d'échantillonnage. | MODEL | Oui | - |
-| `max_shift` | La valeur de décalage maximale utilisée dans le calcul d'interpolation linéaire (par défaut : 2.05). | FLOAT | Oui | 0.0 à 100.0 (pas : 0.01) |
-| `base_shift` | La valeur de décalage de base utilisée dans le calcul d'interpolation linéaire (par défaut : 0.95). | FLOAT | Oui | 0.0 à 100.0 (pas : 0.01) |
+| `modèle` | Le modèle d'entrée auquel appliquer les paramètres d'échantillonnage. | MODEL | Oui | - |
+| `décalage_max` | La valeur de décalage maximale utilisée dans le calcul d'interpolation linéaire (par défaut : 2.05). | FLOAT | Oui | 0.0 à 100.0 (pas : 0.01) |
+| `décalage_base` | La valeur de décalage de base utilisée dans le calcul d'interpolation linéaire (par défaut : 0.95). | FLOAT | Oui | 0.0 à 100.0 (pas : 0.01) |
 | `latent` | Entrée `latent` facultative utilisée pour déterminer le nombre de tokens pour le calcul du décalage. Si elle n'est pas fournie, un nombre de tokens par défaut de 4096 est utilisé. | LATENT | Non | - |
 
 La valeur de décalage est calculée en interpolant entre `base_shift` à 1024 tokens et `max_shift` à 4096 tokens. Lorsque `latent` est fourni, le nombre de tokens est le produit de toutes les dimensions après les deux premières dans les échantillons latents (les dimensions spatiales/temporelles). Si aucun `latent` n'est fourni, le nombre de tokens est par défaut de 4096.

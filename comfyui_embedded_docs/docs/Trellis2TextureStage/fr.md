@@ -6,8 +6,8 @@ Ce nœud configure la passe d’échantillonnage de l’étape de texture pour l
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `positive` | Le conditionnement positif utilisé pour la passe de génération de texture. Les métadonnées de l’étape de texture y sont attachées. | CONDITIONING | Oui | - |
-| `negative` | Le conditionnement négatif utilisé pour la passe de génération de texture. Les métadonnées de l’étape de texture y sont attachées. | CONDITIONING | Oui | - |
+| `positif` | Le conditionnement positif utilisé pour la passe de génération de texture. Les métadonnées de l’étape de texture y sont attachées. | CONDITIONING | Oui | - |
+| `négatif` | Le conditionnement négatif utilisé pour la passe de génération de texture. Les métadonnées de l’étape de texture y sont attachées. | CONDITIONING | Oui | - |
 | `shape_latent` | Le dictionnaire latent produit par Trellis2ShapeStage ou Trellis2UpsampleStage. Il doit contenir `coords` (la disposition des coordonnées, forme [N, 4]) et `samples` (le latent de forme par voxel) ; `coord_resolution` et `model_frame` sont facultatifs. | LATENT | Oui | - |
 
 Remarques :

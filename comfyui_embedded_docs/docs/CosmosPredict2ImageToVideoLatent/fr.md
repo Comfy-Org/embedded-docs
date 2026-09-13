@@ -7,12 +7,12 @@ Crée des latents vidéo pour le workflow image-vers-vidéo de Cosmos Predict2. 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `vae` | Modèle VAE utilisé pour encoder les images de début et de fin dans l'espace latent | VAE | Oui | - |
-| `width` | Largeur de la vidéo de sortie en pixels (par défaut : 848, doit être un multiple de 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `height` | Hauteur de la vidéo de sortie en pixels (par défaut : 480, doit être un multiple de 16) | INT | Oui | 16 à MAX_RESOLUTION |
-| `length` | Nombre de trames dans la séquence vidéo (par défaut : 93) | INT | Oui | 1 à MAX_RESOLUTION |
-| `batch_size` | Nombre de séquences vidéo à générer (par défaut : 1) | INT | Oui | 1 à 4096 |
-| `start_image` | Image de début facultative pour la séquence vidéo | IMAGE | Non | - |
-| `end_image` | Image de fin facultative pour la séquence vidéo | IMAGE | Non | - |
+| `largeur` | Largeur de la vidéo de sortie en pixels (par défaut : 848, doit être un multiple de 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `hauteur` | Hauteur de la vidéo de sortie en pixels (par défaut : 480, doit être un multiple de 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `longueur` | Nombre de trames dans la séquence vidéo (par défaut : 93) | INT | Oui | 1 à MAX_RESOLUTION |
+| `taille_du_lot` | Nombre de séquences vidéo à générer (par défaut : 1) | INT | Oui | 1 à 4096 |
+| `image_de_départ` | Image de début facultative pour la séquence vidéo | IMAGE | Non | - |
+| `image_de_fin` | Image de fin facultative pour la séquence vidéo | IMAGE | Non | - |
 
 **Remarque :** Lorsque ni `start_image` ni `end_image` ne sont fournis, le nœud renvoie simplement un latent vide de la taille et de la longueur demandées. Lorsqu'une ou les deux images sont fournies, elles sont redimensionnées à `width` et `height`, encodées avec le `vae`, puis placées au début et/ou à la fin de la séquence latente. Les régions correspondantes sont marquées dans le masque de bruit afin qu'elles soient préservées pendant la génération. Les latents encodés sont convertis avec le format latent Wan 2.1, et le latent et le masque résultants sont répétés `batch_size` fois.
 

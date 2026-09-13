@@ -10,8 +10,8 @@ Ce nœud insère un objet décrit en texte brut dans une image à l'aide de Bria
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image à laquelle l'objet décrit est ajouté. Le canal alpha est supprimé avant le téléversement de l'image. | IMAGE | Oui | - |
 | `instruction` | Ce qu'il faut ajouter et où, par exemple « Placez un vase rouge avec des fleurs sur la table ». Ne doit pas être vide. Par défaut : "" (chaîne vide). | STRING | Oui | - |
-| `seed` | Bria n'utilise aucun seed ici et réimagine la modification à chaque appel, de sorte que des exécutions répétées peuvent différer. La valeur n'est jamais envoyée : elle modifie uniquement la clé de cache de ce nœud, afin qu'un graphe par ailleurs identique relance la modification au lieu de renvoyer le résultat mis en cache. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
-| `moderation` | Paramètres de modération. Choisissez "true" pour afficher les options de modération ci-dessous. | DYNAMIC_COMBO | Oui | "false"<br>"true" |
+| `graine` | Bria n'utilise aucun seed ici et réimagine la modification à chaque appel, de sorte que des exécutions répétées peuvent différer. La valeur n'est jamais envoyée : elle modifie uniquement la clé de cache de ce nœud, afin qu'un graphe par ailleurs identique relance la modification au lieu de renvoyer le résultat mis en cache. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
+| `modération` | Paramètres de modération. Choisissez "true" pour afficher les options de modération ci-dessous. | DYNAMIC_COMBO | Oui | "false"<br>"true" |
 
 ### Entrées activées par la modération
 

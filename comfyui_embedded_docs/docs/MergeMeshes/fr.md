@@ -6,7 +6,7 @@ MergeMeshes combine plusieurs entrées de maillage en un seul maillage en empila
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `meshes` | Emplacement extensible : connectez 2 à 50 objets de maillage (nommés `mesh_1`, `mesh_2`, ..., `mesh_50`). Tous les maillages connectés sont fusionnés en un seul maillage de sortie. | MESH | Oui | 2 à 50 maillages |
+| `maillages` | Emplacement extensible : connectez 2 à 50 objets de maillage (nommés `mesh_1`, `mesh_2`, ..., `mesh_50`). Tous les maillages connectés sont fusionnés en un seul maillage de sortie. | MESH | Oui | 2 à 50 maillages |
 
 **Note :** Au moins un maillage doit être fourni ; sinon, le nœud génère une erreur. Seul le premier élément de maillage de chaque lot d'entrée de maillage est utilisé. Les maillages d'entrée sont déplacés vers le CPU avant la fusion. Si un maillage d'entrée possède des données UV, la sortie inclut les UV, et les maillages sans UV reçoivent des valeurs UV remplies de zéros. Si un maillage d'entrée possède des couleurs de sommets, la sortie inclut les couleurs de sommets ; les maillages sans couleurs reçoivent des couleurs blanches (valeur 1), et les canaux de couleur sont complétés jusqu'au plus grand nombre de canaux trouvé parmi les entrées. Seule la texture de la première entrée qui en fournit une est conservée ; les textures supplémentaires sont supprimées.
 

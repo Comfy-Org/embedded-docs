@@ -6,8 +6,8 @@ El nodo NAGuidance aplica Orientación de Atención Normalizada a un modelo. Est
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo al que se aplicará Orientación de Atención Normalizada. | MODEL | Sí | - |
-| `nag_scale` | El factor de escala de orientación. Valores más altos empujan la generación más lejos del prompt negativo. (predeterminado: 5.0) | FLOAT | Sí | 0.0 - 50.0 |
+| `modelo` | El modelo al que se aplicará Orientación de Atención Normalizada. | MODEL | Sí | - |
+| `escala_nag` | El factor de escala de orientación. Valores más altos empujan la generación más lejos del prompt negativo. (predeterminado: 5.0) | FLOAT | Sí | 0.0 - 50.0 |
 | `nag_alpha` | El factor de mezcla para la atención normalizada. Un valor de 1.0 reemplaza completamente la atención original, mientras que 0.0 no tiene efecto. (predeterminado: 0.5) | FLOAT | Sí | 0.0 - 1.0 |
 | `nag_tau` | Un factor de escala utilizado para limitar la relación de normalización. (predeterminado: 1.5) | FLOAT | Sí | 1.0 - 10.0 |
 

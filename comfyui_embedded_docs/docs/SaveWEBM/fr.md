@@ -7,7 +7,7 @@ Le nœud SaveWEBM enregistre une séquence d’images dans un fichier vidéo WEB
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `images` | Les images RGBA sont enregistrées avec leur canal alpha comme transparence (codec VP9 uniquement). | IMAGE | Oui | - |
-| `filename_prefix` | Préfixe du nom de fichier de sortie (par défaut : "ComfyUI"). | STRING | Non | - |
+| `préfixe_de_nom_de_fichier` | Préfixe du nom de fichier de sortie (par défaut : "ComfyUI"). | STRING | Non | - |
 | `codec` | Codec vidéo à utiliser pour l’encodage. | COMBO | Oui | "vp9"<br>"av1" |
 | `fps` | Fréquence d’images de la vidéo de sortie (par défaut : 24.0). | FLOAT | Non | 0.01-1000.0 |
 | `crf` | Un crf plus élevé signifie une qualité inférieure avec une taille de fichier plus petite ; un crf plus faible signifie une qualité supérieure avec une taille de fichier plus grande (par défaut : 32.0). | FLOAT | Non | 0-63.0 |

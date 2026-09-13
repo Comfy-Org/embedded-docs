@@ -7,7 +7,7 @@ El nodo SamplerEulerAncestral crea un muestreador Euler Ancestral que se puede u
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `eta` | Controla el tamaño de paso y la estocasticidad del proceso de muestreo (predeterminado: 1.0). Este es un parámetro avanzado. | FLOAT | Sí | 0.0 - 100.0 |
-| `s_noise` | Controla la cantidad de ruido añadido durante el muestreo (predeterminado: 1.0). Este es un parámetro avanzado. | FLOAT | Sí | 0.0 - 100.0 |
+| `s_ruido` | Controla la cantidad de ruido añadido durante el muestreo (predeterminado: 1.0). Este es un parámetro avanzado. | FLOAT | Sí | 0.0 - 100.0 |
 
 ## Salidas
 

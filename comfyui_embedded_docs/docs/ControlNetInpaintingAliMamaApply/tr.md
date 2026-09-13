@@ -6,15 +6,15 @@ ControlNetInpaintingAliMamaApply düğümü, pozitif ve negatif koşullandırmay
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `positive` | Üretimi istenen içeriğe yönlendiren pozitif koşullandırma | CONDITIONING | Evet | - |
-| `negative` | Üretimi istenmeyen içerikten uzaklaştıran negatif koşullandırma | CONDITIONING | Evet | - |
-| `control_net` | Üretim üzerinde ek kontrol sağlayan ControlNet modeli | CONTROL_NET | Evet | - |
+| `pozitif` | Üretimi istenen içeriğe yönlendiren pozitif koşullandırma | CONDITIONING | Evet | - |
+| `negatif` | Üretimi istenmeyen içerikten uzaklaştıran negatif koşullandırma | CONDITIONING | Evet | - |
+| `kontrol_ağı` | Üretim üzerinde ek kontrol sağlayan ControlNet modeli | CONTROL_NET | Evet | - |
 | `vae` | Görüntüleri kodlamak ve kodunu çözmek için kullanılan VAE (Variational Autoencoder) | VAE | Evet | - |
-| `image` | ControlNet için kontrol rehberi olarak hizmet eden giriş görüntüsü | IMAGE | Evet | - |
-| `mask` | Görüntünün hangi alanlarının inpaint edileceğini tanımlayan maske | MASK | Evet | - |
-| `strength` | ControlNet etkisinin gücü (varsayılan: 1.0, adım: 0.01) | FLOAT | Evet | 0.0 ile 10.0 |
-| `start_percent` | Gelişmiş parametre. Üretim sırasında ControlNet etkisinin başladığı anın başlangıç noktası (yüzde olarak) (varsayılan: 0.0, adım: 0.001) | FLOAT | Evet | 0.0 ile 1.0 |
-| `end_percent` | Gelişmiş parametre. Üretim sırasında ControlNet etkisinin durduğu anın bitiş noktası (yüzde olarak) (varsayılan: 1.0, adım: 0.001) | FLOAT | Evet | 0.0 ile 1.0 |
+| `görüntü` | ControlNet için kontrol rehberi olarak hizmet eden giriş görüntüsü | IMAGE | Evet | - |
+| `maske` | Görüntünün hangi alanlarının inpaint edileceğini tanımlayan maske | MASK | Evet | - |
+| `güç` | ControlNet etkisinin gücü (varsayılan: 1.0, adım: 0.01) | FLOAT | Evet | 0.0 ile 10.0 |
+| `başlangıç_yüzdesi` | Gelişmiş parametre. Üretim sırasında ControlNet etkisinin başladığı anın başlangıç noktası (yüzde olarak) (varsayılan: 0.0, adım: 0.001) | FLOAT | Evet | 0.0 ile 1.0 |
+| `bitiş_yüzdesi` | Gelişmiş parametre. Üretim sırasında ControlNet etkisinin durduğu anın bitiş noktası (yüzde olarak) (varsayılan: 1.0, adım: 0.001) | FLOAT | Evet | 0.0 ile 1.0 |
 
 **Not:** ControlNet'te `concat_mask` etkinleştirildiğinde, maske ters çevrilir ve işleme öncesinde görüntüye uygulanır; ters çevrilmiş maske, ControlNet'e gönderilen ek birleştirme verisine dahil edilir.
 

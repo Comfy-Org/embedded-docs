@@ -8,8 +8,8 @@ Remove Background düğümü, bir giriş görüntüsünün ana öznesini arka pl
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `bg_removal_model` | Maskeyi oluşturmak için kullanılan arka plan kaldırma modeli | BACKGROUND_REMOVAL_MODEL | Evet | N/A |
-| `image` | Arka planın kaldırılacağı giriş görüntüsü | IMAGE | Evet | N/A |
+| `arka_plan_kaldırma_modeli` | Maskeyi oluşturmak için kullanılan arka plan kaldırma modeli | BACKGROUND_REMOVAL_MODEL | Evet | N/A |
+| `görsel` | Arka planın kaldırılacağı giriş görüntüsü | IMAGE | Evet | N/A |
 
 ## Çıktılar
 

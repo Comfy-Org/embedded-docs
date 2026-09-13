@@ -6,8 +6,8 @@ Bu düğüm, bir düzenleme modeli için yol gösterici latentı ayarlar. Koşul
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Referans latent bilgisiyle değiştirilecek koşullandırma verisi | CONDITIONING | Evet | - |
-| `latent` | Düzenleme modeli için referans olarak kullanılacak isteğe bağlı latent verisi. Sağlanmazsa, koşullandırma değiştirilmeden döndürülür | LATENT | Hayır | - |
+| `koşullandırma` | Referans latent bilgisiyle değiştirilecek koşullandırma verisi | CONDITIONING | Evet | - |
+| `gizli değişken` | Düzenleme modeli için referans olarak kullanılacak isteğe bağlı latent verisi. Sağlanmazsa, koşullandırma değiştirilmeden döndürülür | LATENT | Hayır | - |
 
 ## Çıktılar
 

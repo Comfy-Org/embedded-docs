@@ -7,7 +7,7 @@ CFGNorm, difüzyon modellerinde sınıflandırıcısız yönlendirmenin (CFG) na
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | CFG normalizasyonunun uygulanacağı difüzyon modeli | MODEL | Evet | - |
-| `strength` | CFG ölçeklemesine uygulanan normalizasyon etkisinin yoğunluğunu kontrol eder (varsayılan: 1.0) | FLOAT | Evet | 0.0 ile 100.0 arası (adım 0.01) |
+| `güç` | CFG ölçeklemesine uygulanan normalizasyon etkisinin yoğunluğunu kontrol eder (varsayılan: 1.0) | FLOAT | Evet | 0.0 ile 100.0 arası (adım 0.01) |
 | `pre_cfg` | True ise, örnekleyicinin CFG birleştirmesinden ÖNCE birleştirilmiş gürültüyü sınırlama olmadan yeniden ölçeklendirir (güçlendirebilir). Lens gibi modeller tarafından kullanılan normla ölçeklenmiş CFG ile eşleşir. Varsayılan false, özgün CFG sonrası x0-uzayındaki yalnızca zayıflatma davranışını korur. (varsayılan: False) | BOOLEAN | Hayır | true / false |
 
 Not: Bu düğüm deneysel olarak işaretlenmiştir.

@@ -6,7 +6,7 @@ El nodo RenormCFG modifica el proceso de guía libre de clasificador (CFG) en mo
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de difusión al que se aplicará la CFG renormalizada | MODEL | Sí | - |
+| `modelo` | El modelo de difusión al que se aplicará la CFG renormalizada | MODEL | Sí | - |
 | `cfg_trunc` | Umbral de timestep para aplicar el escalado de CFG. Cuando el timestep actual está por debajo de este valor, se aplican el escalado de CFG y la renormalización; de lo contrario, solo se usa la predicción condicional (predeterminado: 100.0) | FLOAT | No | 0.0 - 100.0 (paso 0.01) |
 | `renorm_cfg` | Factor de renormalización que limita la norma máxima de la predicción escalada por CFG en relación con la predicción condicional original. Un valor de 0.0 desactiva la renormalización (predeterminado: 1.0) | FLOAT | No | 0.0 - 100.0 (paso 0.01) |
 

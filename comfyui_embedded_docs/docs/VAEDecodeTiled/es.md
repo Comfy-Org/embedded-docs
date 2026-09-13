@@ -6,12 +6,12 @@ El nodo VAEDecodeTiled decodifica representaciones latentes en imágenes utiliza
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `samples` | La representación latente que se decodificará en imágenes | LATENT | Sí | - |
+| `muestras` | La representación latente que se decodificará en imágenes | LATENT | Sí | - |
 | `vae` | El modelo VAE utilizado para decodificar las muestras latentes | VAE | Sí | - |
-| `tile_size` | El tamaño de cada mosaico para el procesamiento (predeterminado: 512) | INT | Sí | 64-4096 (paso: 32) |
-| `overlap` | La cantidad de superposición entre mosaicos adyacentes (predeterminado: 64) | INT | Sí | 0-4096 (paso: 32) |
-| `temporal_size` | Solo se utiliza para VAE de video: Cantidad de fotogramas a decodificar a la vez (predeterminado: 64) | INT | Sí | 8-4096 (paso: 4) |
-| `temporal_overlap` | Solo se utiliza para VAE de video: Cantidad de fotogramas a superponer (predeterminado: 8) | INT | Sí | 4-4096 (paso: 4) |
+| `tamaño_mosaico` | El tamaño de cada mosaico para el procesamiento (predeterminado: 512) | INT | Sí | 64-4096 (paso: 32) |
+| `superposición` | La cantidad de superposición entre mosaicos adyacentes (predeterminado: 64) | INT | Sí | 0-4096 (paso: 32) |
+| `tamaño_temporal` | Solo se utiliza para VAE de video: Cantidad de fotogramas a decodificar a la vez (predeterminado: 64) | INT | Sí | 8-4096 (paso: 4) |
+| `superposición_temporal` | Solo se utiliza para VAE de video: Cantidad de fotogramas a superponer (predeterminado: 8) | INT | Sí | 4-4096 (paso: 4) |
 
 **Nota:** Las entradas `tile_size`, `overlap`, `temporal_size` y `temporal_overlap` están marcadas como configuraciones avanzadas.
 

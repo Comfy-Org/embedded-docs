@@ -6,9 +6,9 @@ El nodo LTXVCropGuides elimina los datos de guía de fotogramas clave de un fluj
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `positive` | La entrada de condicionamiento positivo que contiene información de guía para la generación. La cantidad de fotogramas clave que contiene determina cuántos fotogramas se recortan del latente. | CONDITIONING | Sí | - |
-| `negative` | La entrada de condicionamiento negativo que contiene información de guía sobre qué evitar en la generación. Sus datos de fotogramas clave se borran junto con el condicionamiento positivo. | CONDITIONING | Sí | - |
-| `latent` | La representación latente que contiene muestras de imagen y datos de máscara de ruido. Cuando hay fotogramas clave presentes, los fotogramas de los fotogramas clave finales se eliminan tanto de las muestras como de la máscara de ruido. | LATENT | Sí | - |
+| `positivo` | La entrada de condicionamiento positivo que contiene información de guía para la generación. La cantidad de fotogramas clave que contiene determina cuántos fotogramas se recortan del latente. | CONDITIONING | Sí | - |
+| `negativo` | La entrada de condicionamiento negativo que contiene información de guía sobre qué evitar en la generación. Sus datos de fotogramas clave se borran junto con el condicionamiento positivo. | CONDITIONING | Sí | - |
+| `latente` | La representación latente que contiene muestras de imagen y datos de máscara de ruido. Cuando hay fotogramas clave presentes, los fotogramas de los fotogramas clave finales se eliminan tanto de las muestras como de la máscara de ruido. | LATENT | Sí | - |
 
 Nota: El recorte solo ocurre cuando se detectan índices de fotogramas clave en el condicionamiento positivo. Si no se detectan fotogramas clave, el condicionamiento positivo y negativo se devuelven sin cambios, mientras que el latente aún se devuelve con un tensor de muestras clonado y una máscara de ruido explícita (se crea una máscara de todos unos si el latente de entrada no tiene ninguna).
 

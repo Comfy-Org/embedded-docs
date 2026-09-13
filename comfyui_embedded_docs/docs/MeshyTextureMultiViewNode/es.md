@@ -6,12 +6,12 @@ Este nodo texturiza un modelo 3D creado previamente usando de 1 a 4 vistas de re
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | El modelo de IA utilizado para el trabajo de texturizado. Actualmente solo está disponible `"meshy-7"`. | COMBO | Sí | `"meshy-7"` |
-| `meshy_task_id` | El ID de tarea del modelo 3D creado previamente que se va a texturizar. | MESHY_TASK_ID | Sí | — |
-| `multiview_images` | Vistas de referencia del mismo objeto. La primera imagen es la vista principal (frontal); el orden de las vistas restantes no importa. Ranura ampliable: conecta de 1 a 4 imágenes (`image_1` a `image_4`). | IMAGE | Sí | 1 a 4 imágenes |
-| `enable_original_uv` | Usar el UV original del modelo en lugar de generar nuevos UV. Cuando está habilitado, Meshy conserva las texturas existentes del modelo subido. Si el modelo no tiene UV original, la calidad de la salida podría no ser tan buena. (predeterminado: True; opción avanzada) | BOOLEAN | No | True / False |
+| `modelo` | El modelo de IA utilizado para el trabajo de texturizado. Actualmente solo está disponible `"meshy-7"`. | COMBO | Sí | `"meshy-7"` |
+| `ID de tarea de Meshy` | El ID de tarea del modelo 3D creado previamente que se va a texturizar. | MESHY_TASK_ID | Sí | — |
+| `imágenes multivista` | Vistas de referencia del mismo objeto. La primera imagen es la vista principal (frontal); el orden de las vistas restantes no importa. Ranura ampliable: conecta de 1 a 4 imágenes (`image_1` a `image_4`). | IMAGE | Sí | 1 a 4 imágenes |
+| `usar UV original` | Usar el UV original del modelo en lugar de generar nuevos UV. Cuando está habilitado, Meshy conserva las texturas existentes del modelo subido. Si el modelo no tiene UV original, la calidad de la salida podría no ser tan buena. (predeterminado: True; opción avanzada) | BOOLEAN | No | True / False |
 | `pbr` | Habilita la generación de texturas PBR (renderizado basado en física). (predeterminado: False; opción avanzada) | BOOLEAN | No | True / False |
-| `texture_resolution` | Resolución de la textura de color base. Las resoluciones más altas capturan más detalle de la superficie. | COMBO | Sí | `"2k"`<br>`"4k"`<br>`"8k"` |
+| `resolución de textura` | Resolución de la textura de color base. Las resoluciones más altas capturan más detalle de la superficie. | COMBO | Sí | `"2k"`<br>`"4k"`<br>`"8k"` |
 
 **Nota:** `multiview_images` debe contener entre 1 y 4 imágenes. El nodo valida esto en tiempo de ejecución y genera un error si el recuento está fuera de este rango. Si una imagen conectada contiene un lote de varias imágenes, cada imagen del lote cuenta para el límite. La primera imagen se usa como vista principal (frontal); el orden de las imágenes restantes no importa.
 

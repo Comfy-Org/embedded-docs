@@ -6,12 +6,12 @@
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
-| `model` | النموذج المستخدم للتوليد. نماذج recraftv4_styles مصممة للتوليد المتسق مع النمط وتتطلب دائمًا style_id أو style_references. يؤدي اختيار نموذج إلى تغيير خيارات `size` المتاحة. | DYNAMIC_COMBO | نعم | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
-| `prompt` | الوصف النصي لتوليد الصورة. الحد الأقصى 10,000 حرف. | STRING | نعم | N/A |
-| `negative_prompt` | يتم تجاهل هذا المدخل: لا يدعم الوصف النصي السلبي في نماذج Recraft V4 وV4.1. | STRING | نعم | N/A |
-| `n` | عدد الصور المطلوب توليدها (الافتراضي: 1). | INT | نعم | 1 إلى 6 |
-| `seed` | البذرة المستخدمة لتحديد ما إذا كان ينبغي إعادة تشغيل العقدة؛ النتائج الفعلية غير حتمية بغض النظر عن البذرة (الافتراضي: 0). | INT | نعم | 0 إلى 18446744073709551615 |
-| `recraft_controls` | عناصر تحكم إضافية اختيارية على التوليد عبر عقدة Recraft Controls. | CUSTOM | لا | N/A |
+| `النموذج` | النموذج المستخدم للتوليد. نماذج recraftv4_styles مصممة للتوليد المتسق مع النمط وتتطلب دائمًا style_id أو style_references. يؤدي اختيار نموذج إلى تغيير خيارات `size` المتاحة. | DYNAMIC_COMBO | نعم | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
+| `المطالبة` | الوصف النصي لتوليد الصورة. الحد الأقصى 10,000 حرف. | STRING | نعم | N/A |
+| `المطالبة السلبية` | يتم تجاهل هذا المدخل: لا يدعم الوصف النصي السلبي في نماذج Recraft V4 وV4.1. | STRING | نعم | N/A |
+| `عدد الصور` | عدد الصور المطلوب توليدها (الافتراضي: 1). | INT | نعم | 1 إلى 6 |
+| `البذرة` | البذرة المستخدمة لتحديد ما إذا كان ينبغي إعادة تشغيل العقدة؛ النتائج الفعلية غير حتمية بغض النظر عن البذرة (الافتراضي: 0). | INT | نعم | 0 إلى 18446744073709551615 |
+| `عناصر تحكم Recraft` | عناصر تحكم إضافية اختيارية على التوليد عبر عقدة Recraft Controls. | CUSTOM | لا | N/A |
 | `style_id` | معرّف UUID لنمط متجهي من Recraft V4 المراد تطبيقه، مثلًا من عقدة Recraft V4 Create Style أو مخرج style_id من تشغيل سابق. لا يمكن دمجه مع style_references. | STRING | لا | N/A |
 | `style_match` | مدى الالتزام بالنمط: precise يعيد إنتاجه بتفصيل دقيق، flexible يطابق المظهر العام. يُستخدم فقط عند توفير نمط (الافتراضي: "precise"). | COMBO | لا | `"precise"`<br>`"flexible"` |
 

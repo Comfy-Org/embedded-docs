@@ -8,11 +8,11 @@ Gera imagens a partir de prompts de texto usando os modelos Recraft V4 e V4.1. E
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo a usar para geração. Os modelos recraftv4_styles são projetados para geração com estilo consistente e sempre exigem um style_id ou style_references. | DYNAMIC_COMBO | Sim | "recraftv4_1"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `modelo` | O modelo a usar para geração. Os modelos recraftv4_styles são projetados para geração com estilo consistente e sempre exigem um style_id ou style_references. | DYNAMIC_COMBO | Sim | "recraftv4_1"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `prompt` | Prompt para a geração da imagem. Máximo de 10.000 caracteres. | STRING | Sim | 1 a 10000 caracteres |
-| `negative_prompt` | Esta entrada é ignorada: o prompt negativo não é compatível com os modelos Recraft V4 e V4.1. | STRING | Sim | N/A |
+| `prompt_negativo` | Esta entrada é ignorada: o prompt negativo não é compatível com os modelos Recraft V4 e V4.1. | STRING | Sim | N/A |
 | `n` | O número de imagens a gerar (padrão: 1). | INT | Sim | 1 a 6 |
-| `seed` | Seed para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da seed (padrão: 0). | INT | Sim | 0 a 18446744073709551615 |
+| `semente` | Seed para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da seed (padrão: 0). | INT | Sim | 0 a 18446744073709551615 |
 | `recraft_controls` | Controles adicionais opcionais sobre a geração por meio do nó Recraft Controls. | CUSTOM | Não | N/A |
 | `style_id` | UUID de um estilo Recraft V4 a aplicar, por exemplo, a partir do nó Recraft V4 Create Style ou da saída style_id de uma execução anterior. Não pode ser combinado com style_references (padrão: vazio). | STRING | Não | String UUID válida |
 | `style_match` | Quão fielmente seguir o estilo: precise reproduz os detalhes, flexible corresponde à aparência geral. Usado apenas quando um estilo é fornecido (padrão: "precise"). | COMBO | Não | "precise"<br>"flexible" |

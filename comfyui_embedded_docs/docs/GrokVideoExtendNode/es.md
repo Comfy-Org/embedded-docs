@@ -8,10 +8,10 @@ El nodo Grok Video Extend extiende un video existente con una continuación flui
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `model` | El modelo que se usará para la extensión de video. Seleccionar la opción `"grok-imagine-video"` revela su configuración específica del modelo. | DYNAMIC_COMBO | Sí | `"grok-imagine-video"` |
+| `modelo` | El modelo que se usará para la extensión de video. Seleccionar la opción `"grok-imagine-video"` revela su configuración específica del modelo. | DYNAMIC_COMBO | Sí | `"grok-imagine-video"` |
 | `prompt` | Descripción de texto de lo que debería suceder a continuación en el video. | STRING | Sí | N/A |
 | `video` | Video de origen que se extenderá. Formato MP4, 2-15 segundos. | VIDEO | Sí | MP4, 2-15 segundos, máximo 50MB |
-| `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
+| `semilla` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de grok-imagine-video
 

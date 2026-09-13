@@ -6,9 +6,9 @@ LTXVCropGuides düğümü, bir video oluşturma iş akışından anahtar kare y�
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `positive` | Üretim için yönlendirme bilgilerini içeren pozitif koşullandırma girdisi. İçerdiği anahtar kare sayısı, latentten kaç karenin kırpılacağını belirler. | CONDITIONING | Evet | - |
-| `negative` | Üretimde kaçınılacak şeylere ilişkin yönlendirme bilgilerini içeren negatif koşullandırma girdisi. Anahtar kare verileri, pozitif koşullandırmayla birlikte temizlenir. | CONDITIONING | Evet | - |
-| `latent` | Görüntü örneklerini ve gürültü maskesi verilerini içeren latent temsili. Anahtar kareler mevcut olduğunda, son anahtar kareler hem örneklerden hem de gürültü maskesinden kaldırılır. | LATENT | Evet | - |
+| `pozitif` | Üretim için yönlendirme bilgilerini içeren pozitif koşullandırma girdisi. İçerdiği anahtar kare sayısı, latentten kaç karenin kırpılacağını belirler. | CONDITIONING | Evet | - |
+| `negatif` | Üretimde kaçınılacak şeylere ilişkin yönlendirme bilgilerini içeren negatif koşullandırma girdisi. Anahtar kare verileri, pozitif koşullandırmayla birlikte temizlenir. | CONDITIONING | Evet | - |
+| `gizli` | Görüntü örneklerini ve gürültü maskesi verilerini içeren latent temsili. Anahtar kareler mevcut olduğunda, son anahtar kareler hem örneklerden hem de gürültü maskesinden kaldırılır. | LATENT | Evet | - |
 
 Not: Kırpma yalnızca pozitif koşullandırmada anahtar kare indeksleri algılandığında gerçekleşir. Hiç anahtar kare algılanmazsa, pozitif ve negatif koşullandırma değiştirilmeden döndürülür; latent ise yine klonlanmış bir örnek tensörü ve açık bir gürültü maskesiyle döndürülür (girdi latentinde yoksa tümü birlerden oluşan bir maske oluşturulur).
 

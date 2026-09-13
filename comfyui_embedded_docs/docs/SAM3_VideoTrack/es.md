@@ -6,13 +6,13 @@ Rastrea objetos a través de fotogramas de video usando el rastreador basado en 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `images` | Fotogramas de video como imágenes por lotes | IMAGE | Sí | Fotogramas de video por lotes |
-| `model` | El modelo SAM3 que se usará para el rastreo | MODEL | Sí | Modelo SAM3 |
-| `initial_mask` | Máscara(s) para el primer fotograma a rastrear (una por objeto) | MASK | No | Una máscara por objeto |
-| `conditioning` | Condicionamiento de texto para detectar nuevos objetos durante el rastreo | CONDITIONING | No | Condicionamiento de texto |
-| `detection_threshold` | Umbral de puntuación para la detección con prompts de texto (predeterminado: 0.5) | FLOAT | No | 0.0 a 1.0 (paso 0.01) |
-| `max_objects` | Máximo de objetos rastreados. Las máscaras iniciales cuentan para este límite. 0 usa el límite interno de 64. (predeterminado: 4) | INT | No | 0 a 64 |
-| `detect_interval` | Ejecutar la detección cada N fotogramas (1=cada fotograma). Los valores más altos ahorran cómputo. (predeterminado: 1) | INT | No | 1 o más |
+| `imágenes` | Fotogramas de video como imágenes por lotes | IMAGE | Sí | Fotogramas de video por lotes |
+| `modelo` | El modelo SAM3 que se usará para el rastreo | MODEL | Sí | Modelo SAM3 |
+| `máscara_inicial` | Máscara(s) para el primer fotograma a rastrear (una por objeto) | MASK | No | Una máscara por objeto |
+| `condicionamiento` | Condicionamiento de texto para detectar nuevos objetos durante el rastreo | CONDITIONING | No | Condicionamiento de texto |
+| `umbral_de_detección` | Umbral de puntuación para la detección con prompts de texto (predeterminado: 0.5) | FLOAT | No | 0.0 a 1.0 (paso 0.01) |
+| `máx_objetos` | Máximo de objetos rastreados. Las máscaras iniciales cuentan para este límite. 0 usa el límite interno de 64. (predeterminado: 4) | INT | No | 0 a 64 |
+| `intervalo_de_detección` | Ejecutar la detección cada N fotogramas (1=cada fotograma). Los valores más altos ahorran cómputo. (predeterminado: 1) | INT | No | 1 o más |
 
 **Nota:** Se debe proporcionar `initial_mask` o `conditioning`. Si se omiten ambos, el nodo genera un error.
 
