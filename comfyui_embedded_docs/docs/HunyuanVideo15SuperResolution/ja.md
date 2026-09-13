@@ -20,8 +20,8 @@ HunyuanVideo15SuperResolution ノードは、ビデオ超解像プロセス用�
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `ポジティブ` | 連結された潜在変数、ノイズ増強、およびオプションのCLIPビジョンデータを含む、変更されたポジティブコンディショニング。 | CONDITIONING |
-| `ネガティブ` | 連結された潜在変数、ノイズ増強、およびオプションのCLIPビジョンデータを含む、変更されたネガティブコンディショニング。 | CONDITIONING |
+| `positive` | 連結された潜在変数、ノイズ増強、およびオプションのCLIPビジョンデータを含む、変更されたポジティブコンディショニング。 | CONDITIONING |
+| `negative` | 連結された潜在変数、ノイズ増強、およびオプションのCLIPビジョンデータを含む、変更されたネガティブコンディショニング。 | CONDITIONING |
 | `潜在` | 入力潜在変数はそのまま通過します。 | LATENT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15SuperResolution/ja.md)

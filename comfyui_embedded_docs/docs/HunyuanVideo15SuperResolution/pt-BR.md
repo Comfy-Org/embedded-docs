@@ -20,8 +20,8 @@ O nó HunyuanVideo15SuperResolution prepara dados de condicionamento para um pro
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `positivo` | O condicionamento positivo modificado, agora contendo o latente concatenado, o aumento de ruído e os dados opcionais de visão do CLIP. | CONDITIONING |
-| `negativo` | O condicionamento negativo modificado, agora contendo o latente concatenado, o aumento de ruído e os dados opcionais de visão do CLIP. | CONDITIONING |
+| `positive` | O condicionamento positivo modificado, agora contendo o latente concatenado, o aumento de ruído e os dados opcionais de visão do CLIP. | CONDITIONING |
+| `negative` | O condicionamento negativo modificado, agora contendo o latente concatenado, o aumento de ruído e os dados opcionais de visão do CLIP. | CONDITIONING |
 | `latente` | O latente de entrada é repassado inalterado. | LATENT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15SuperResolution/pt-BR.md)
