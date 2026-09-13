@@ -7,11 +7,16 @@ Este nodo genera notación ABC para una canción basada en una descripción de e
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
 | `clip` | El modelo YuE2 utilizado para tokenizar el estilo y la letra y generar la notación ABC. | CLIP | Sí | - |
-| `style` | Texto que describe el estilo musical de la canción. | STRING | Sí | - |
-| `lyrics` | Texto que contiene la letra de la canción. | STRING | Sí | - |
-| `seed` | Semilla aleatoria utilizada para la generación. Cambiarla produce resultados diferentes. Predeterminado: 0. | INT | Sí | 0 a 18446744073709551615 |
-| `mode` | full: genera melodía y acordes; melody: genera solo melodía, recomendado para covers. | COMBO | Sí | "full"<br>"melody" |
-| `max_abc_tokens` | Número máximo de tokens generados para la notación ABC. Predeterminado: 8192. | INT | Sí | 1 a 20000 |
+| `style` | Texto que describe el estilo musical de la canción. Admite entrada multilínea y prompts dinámicos. | STRING | Sí | - |
+| `lyrics` | Texto que contiene la letra de la canción. Admite entrada multilínea y prompts dinámicos. | STRING | Sí | - |
+| `semilla` | Semilla aleatoria utilizada para la generación. Cambiarla produce resultados diferentes. Predeterminado: 0. | INT | Sí | 0 a 18446744073709551615 |
+| `modo` | full: genera melodía y acordes; melody: genera solo melodía, recomendado para covers. | COMBO | Sí | "full"<br>"melody" |
+| `max_abc_tokens` | Número máximo de tokens generados para la notación ABC. Predeterminado: 8192. Ajuste avanzado. | INT | Sí | 1 a 20000 |
+| `temperature` | Controla la aleatoriedad de los tokens generados. Valores más altos producen salidas más variadas. Predeterminado: 0.7. Ajuste avanzado. | FLOAT | Sí | 0.0 a 5.0 |
+| `top_p` | Umbral de muestreo nucleus; solo se consideran los tokens cuya probabilidad acumulada está dentro de este umbral. Predeterminado: 0.9. Ajuste avanzado. | FLOAT | Sí | 0.01 a 1.0 |
+| `top_k` | Limita la selección de tokens a los K más probables. Predeterminado: 30. Ajuste avanzado. | INT | Sí | 1 a 32768 |
+| `repetition_penalty` | Penalización aplicada a los tokens repetidos durante la generación. Predeterminado: 1.005. Ajuste avanzado. | FLOAT | Sí | 0.01 a 10.0 |
+| `penalty_window` | Número de tokens ABC recientes usados para penalizar la repetición. Predeterminado: 100. Ajuste avanzado. | INT | Sí | 1 a 20000 |
 
 ## Salidas
 
@@ -22,4 +27,4 @@ Este nodo genera notación ABC para una canción basada en una descripción de e
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/YuE2GenerateABC/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `3e06f980a53e90b750f4190a95199e0e5ed1bd8c54d4dbf8485602ff1af00102`
+**Source fingerprint (SHA-256):** `2c1bf0841a044724ff0477f920972d70bbd97de49b56fbe6213a9ac134797130`

@@ -7,11 +7,16 @@
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | 用于对风格和歌词进行分词并生成 ABC 记谱的 YuE2 模型。 | CLIP | 是 | - |
-| `style` | 描述歌曲音乐风格的文本。 | STRING | 是 | - |
-| `lyrics` | 包含歌曲歌词的文本。 | STRING | 是 | - |
+| `style` | 描述歌曲音乐风格的文本。支持多行输入和动态提示词。 | STRING | 是 | - |
+| `lyrics` | 包含歌曲歌词的文本。支持多行输入和动态提示词。 | STRING | 是 | - |
 | `种子` | 用于生成的随机种子。更改它会产生不同的结果。默认值：0。 | INT | 是 | 0 到 18446744073709551615 |
 | `模式` | full：生成旋律与和弦；melody：仅生成旋律，推荐用于翻唱。 | COMBO | 是 | "full"<br>"melody" |
-| `max_abc_tokens` | 为 ABC 记谱生成的最大 token 数量。默认值：8192。 | INT | 是 | 1 到 20000 |
+| `max_abc_tokens` | 为 ABC 记谱生成的最大 token 数量。默认值：8192。高级设置。 | INT | 是 | 1 到 20000 |
+| `temperature` | 控制生成 token 的随机性。值越高，输出越多样。默认值：0.7。高级设置。 | FLOAT | 是 | 0.0 到 5.0 |
+| `top_p` | 核采样阈值；仅考虑累计概率在该阈值内的 token。默认值：0.9。高级设置。 | FLOAT | 是 | 0.01 到 1.0 |
+| `top_k` | 将 token 选择限制为概率最高的 K 个。默认值：30。高级设置。 | INT | 是 | 1 到 32768 |
+| `repetition_penalty` | 生成过程中对重复 token 施加的惩罚。默认值：1.005。高级设置。 | FLOAT | 是 | 0.01 到 10.0 |
+| `penalty_window` | 用于惩罚重复的最近 ABC token 数量。默认值：100。高级设置。 | INT | 是 | 1 到 20000 |
 
 ## 输出
 
@@ -22,4 +27,4 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/YuE2GenerateABC/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `3e06f980a53e90b750f4190a95199e0e5ed1bd8c54d4dbf8485602ff1af00102`
+**Source fingerprint (SHA-256):** `2c1bf0841a044724ff0477f920972d70bbd97de49b56fbe6213a9ac134797130`
