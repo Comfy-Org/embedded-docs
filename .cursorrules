@@ -68,7 +68,7 @@ Data types should be represented using plain text, not styled text.
 ### Translation Principles
 - Only translate when explicitly requested by the user
 - **Parameter names in Inputs table**: Use ComfyUI frontend translations when available (e.g. FR: `texte`, JA: `テキスト`) — this ensures docs match what users see in the UI
-- **Output names in Outputs table**: Keep in English (programmatic identifiers, do not translate)
+- **Output names in Outputs table**: Follow the ComfyUI frontend per language (`docs-generation/data/node_translations.json`, `outputs.<index>.name`). The frontend itself localizes semantic outputs (e.g. zh: `正面条件`, es: `positivo`) while keeping technical identifiers English (e.g. `task_id`, `GLB`, `part_names`, `mask`) — mirror exactly what users see in the UI. When the frontend has no entry for an output, keep the English name
 - Keep data types in English
 - Maintain document structure consistency
 - Ensure metaphors are appropriate for the target language
