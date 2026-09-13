@@ -7,11 +7,16 @@ This node generates ABC notation for a song based on a style description and lyr
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | The YuE2 model used to tokenize the style and lyrics and generate the ABC notation. | CLIP | Yes | - |
-| `style` | Text describing the musical style of the song. | STRING | Yes | - |
-| `lyrics` | Text containing the lyrics of the song. | STRING | Yes | - |
+| `style` | Text describing the musical style of the song. Supports multiline input and dynamic prompts. | STRING | Yes | - |
+| `lyrics` | Text containing the lyrics of the song. Supports multiline input and dynamic prompts. | STRING | Yes | - |
 | `seed` | Random seed used for generation. Changing it produces different results. Default: 0. | INT | Yes | 0 to 18446744073709551615 |
 | `mode` | full: generates melody and chords; melody: generates melody only, recommended for covers. | COMBO | Yes | "full"<br>"melody" |
-| `max_abc_tokens` | Maximum number of tokens generated for the ABC notation. Default: 8192. | INT | Yes | 1 to 20000 |
+| `max_abc_tokens` | Maximum number of tokens generated for the ABC notation. Default: 8192. Advanced setting. | INT | Yes | 1 to 20000 |
+| `temperature` | Controls the randomness of the generated tokens. Higher values produce more varied output. Default: 0.7. Advanced setting. | FLOAT | Yes | 0.0 to 5.0 |
+| `top_p` | Nucleus sampling threshold; only tokens within this cumulative probability are considered. Default: 0.9. Advanced setting. | FLOAT | Yes | 0.01 to 1.0 |
+| `top_k` | Limits token selection to the K most likely tokens. Default: 30. Advanced setting. | INT | Yes | 1 to 32768 |
+| `repetition_penalty` | Penalty applied to repeated tokens during generation. Default: 1.005. Advanced setting. | FLOAT | Yes | 0.01 to 10.0 |
+| `penalty_window` | Number of recent ABC tokens used to penalize repetition. Default: 100. Advanced setting. | INT | Yes | 1 to 20000 |
 
 ## Outputs
 
@@ -22,4 +27,4 @@ This node generates ABC notation for a song based on a style description and lyr
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/YuE2GenerateABC/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `3e06f980a53e90b750f4190a95199e0e5ed1bd8c54d4dbf8485602ff1af00102`
+**Source fingerprint (SHA-256):** `2c1bf0841a044724ff0477f920972d70bbd97de49b56fbe6213a9ac134797130`
