@@ -1,6 +1,8 @@
 # Google Gemini
 
-Generate text responses with Google's Gemini models. Provide a text prompt and, optionally, one or more images, audio clips, videos, or files as multimodal context.
+Generate text responses with Google's Gemini models. Provide a text prompt and, optionally, one or more images, audio clips, videos, or files as multimodal context. The node sends the prompt and any attached media to the selected model and returns the model's text answer.
+
+**Note:** This node is marked as deprecated in the source code.
 
 ## Inputs
 
@@ -8,8 +10,8 @@ Generate text responses with Google's Gemini models. Provide a text prompt and, 
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The Gemini model used to generate the response. | DYNAMIC_COMBO | Yes | `"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
-| `prompt` | Text input to the model. Include detailed instructions, questions, or context. Must contain at least one non-whitespace character. (default: "") | STRING | Yes |  |
+| `model` | The Gemini model used to generate the response. Selecting a model reveals its own set of inputs below. | DYNAMIC_COMBO | Yes | `"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `prompt` | Text input to the model. Include detailed instructions, questions, or context. (default: "") | STRING | Yes | Must contain at least one non-whitespace character |
 | `seed` | Seed for sampling. Set to 0 for a random seed. Deterministic output isn't guaranteed. (default: 42) | INT | Yes | 0 to 2147483647 |
 | `system_prompt` | Foundational instructions that dictate the model's behavior. (default: "") | STRING | No |  |
 
@@ -90,4 +92,4 @@ The following inputs are shared by all models and appear alongside the model-spe
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiNodeV2/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `98a19d1b29e80907477d24d813593950a028021ee8bcf634f505e11a15daa383`
+**Source fingerprint (SHA-256):** `8ae14c6465569695e1e99b0040cb2c745e5f3d9ddcd3b03013530dc7e7135b87`
