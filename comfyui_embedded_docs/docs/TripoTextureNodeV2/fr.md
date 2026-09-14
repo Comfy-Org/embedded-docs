@@ -48,7 +48,7 @@ Affichées lorsque `reference` est défini sur "multiview".
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|------------------|
-| `ID de tâche du modèle` | ID de tâche de l’opération de texturation, qui peut être transmis à d’autres nœuds Tripo. | MODEL_TASK_ID |
+| `model task_id` | ID de tâche de l’opération de texturation, qui peut être transmis à d’autres nœuds Tripo. | MODEL_TASK_ID |
 | `GLB` | Modèle texturé au format GLB. Vide lorsque la source est un maillage quadrangulaire ou un import FBX. | FILE_3D_GLB |
 | `FBX` | Modèle texturé au format FBX. Tripo renvoie du FBX pour les maillages quadrangulaires et les imports FBX ; vide sinon. | FILE_3D_FBX |
 

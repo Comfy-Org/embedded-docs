@@ -48,7 +48,7 @@
 
 | 輸出名稱 | 描述 | 資料類型 |
 |-------------|-------------|-----------|
-| `模型 task_id` | 紋理操作的任務 ID，可傳遞給其他 Tripo 節點。 | MODEL_TASK_ID |
+| `model task_id` | 紋理操作的任務 ID，可傳遞給其他 Tripo 節點。 | MODEL_TASK_ID |
 | `GLB` | GLB 格式的已貼圖模型。當來源是四邊形網格或 FBX 匯入時為空。 | FILE_3D_GLB |
 | `FBX` | FBX 格式的已貼圖模型。Tripo 會為四邊形網格與 FBX 匯入回傳 FBX；其他情況為空。 | FILE_3D_FBX |
 

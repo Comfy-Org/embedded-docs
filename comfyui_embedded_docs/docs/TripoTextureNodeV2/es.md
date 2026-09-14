@@ -48,7 +48,7 @@ Se muestran cuando `reference` se establece en "multiview".
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `task_id del modelo` | ID de tarea de la operación de texturizado, que se puede pasar a otros nodos de Tripo. | MODEL_TASK_ID |
+| `model task_id` | ID de tarea de la operación de texturizado, que se puede pasar a otros nodos de Tripo. | MODEL_TASK_ID |
 | `GLB` | Modelo texturizado en formato GLB. Vacío cuando el origen es una malla de cuadriláteros o una importación FBX. | FILE_3D_GLB |
 | `FBX` | Modelo texturizado en formato FBX. Tripo devuelve FBX para mallas de cuadriláteros e importaciones FBX; vacío en caso contrario. | FILE_3D_FBX |
 

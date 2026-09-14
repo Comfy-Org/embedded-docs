@@ -48,7 +48,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `模型 task_id` | 纹理操作的任务 ID，可以传递给其他 Tripo 节点。 | MODEL_TASK_ID |
+| `model task_id` | 纹理操作的任务 ID，可以传递给其他 Tripo 节点。 | MODEL_TASK_ID |
 | `GLB` | GLB 格式的带纹理模型。当源为四边形网格或 FBX 导入时为空。 | FILE_3D_GLB |
 | `FBX` | FBX 格式的带纹理模型。Tripo 对四边形网格和 FBX 导入返回 FBX；否则为空。 | FILE_3D_FBX |
 
