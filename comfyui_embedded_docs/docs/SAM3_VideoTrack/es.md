@@ -1,26 +1,26 @@
 # SAM3 Video Track
 
-Rastrea objetos a través de fotogramas de video utilizando el rastreador basado en memoria de SAM3. Este nodo procesa una secuencia de fotogramas de video y mantiene identidades de objetos a lo largo de los fotogramas, usando máscaras iniciales o indicaciones de texto para definir qué rastrear.
+Rastrea objetos a través de fotogramas de video usando el rastreador basado en memoria de SAM3. El nodo procesa una secuencia de fotogramas de video y mantiene las identidades de los objetos entre fotogramas, usando máscaras iniciales o prompts de texto para definir qué rastrear, y puede detectar nuevos objetos en el proceso usando condicionamiento de texto.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `imágenes` | Fotogramas de video como imágenes por lotes | IMAGE | Sí | Fotogramas de video por lotes |
-| `modelo` | El modelo SAM3 a utilizar para el seguimiento | MODEL | Sí | Modelo SAM3 |
-| `máscara_inicial` | Máscara(s) del primer fotograma para rastrear (una por objeto) | MASK | No | Una máscara por objeto |
-| `condicionamiento` | Condicionamiento de texto para detectar nuevos objetos durante el seguimiento | CONDITIONING | No | Condicionamiento de texto |
-| `umbral_de_detección` | Umbral de puntuación para la detección mediante indicaciones de texto (predeterminado: 0.5) | FLOAT | No | 0.0 a 1.0 |
+| `modelo` | El modelo SAM3 que se usará para el rastreo | MODEL | Sí | Modelo SAM3 |
+| `máscara_inicial` | Máscara(s) para el primer fotograma a rastrear (una por objeto) | MASK | No | Una máscara por objeto |
+| `condicionamiento` | Condicionamiento de texto para detectar nuevos objetos durante el rastreo | CONDITIONING | No | Condicionamiento de texto |
+| `umbral_de_detección` | Umbral de puntuación para la detección con prompts de texto (predeterminado: 0.5) | FLOAT | No | 0.0 a 1.0 (paso 0.01) |
 | `máx_objetos` | Máximo de objetos rastreados. Las máscaras iniciales cuentan para este límite. 0 usa el límite interno de 64. (predeterminado: 4) | INT | No | 0 a 64 |
-| `intervalo_de_detección` | Ejecutar la detección cada N fotogramas (1=todos los fotogramas). Los valores más altos ahorran cómputo. (predeterminado: 1) | INT | No | 1 o superior |
+| `intervalo_de_detección` | Ejecutar la detección cada N fotogramas (1=cada fotograma). Los valores más altos ahorran cómputo. (predeterminado: 1) | INT | No | 1 o más |
 
-**Nota:** Debe proporcionarse `initial_mask` o `conditioning`. Si se omiten ambos, el nodo genera un error.
+**Nota:** Se debe proporcionar `initial_mask` o `conditioning`. Si se omiten ambos, el nodo genera un error.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `datos_de_rastreo` | Datos de seguimiento que contienen máscaras de objetos y metadatos de todos los fotogramas del video | SAM3TrackData |
+| `track_data` | Datos de rastreo que contienen máscaras de objetos y metadatos a lo largo de todos los fotogramas de video | SAM3_TRACK_DATA |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_VideoTrack/es.md)
 

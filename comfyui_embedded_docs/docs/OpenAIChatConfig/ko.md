@@ -1,23 +1,23 @@
 # OpenAI ChatGPT 고급 옵션
 
-OpenAIChatConfig 노드를 사용하면 OpenAI Chat 노드가 응답을 생성하는 방식을 제어하는 고급 옵션을 정의할 수 있습니다. 절단(truncation) 전략을 설정하고, 출력 토큰 수를 제한하고, 사용자 지정 지침을 제공하며, 모델이 응답하기 전에 추론할 양을 선택할 수 있습니다.
+OpenAIChatConfig 노드는 OpenAI Chat 노드가 응답을 생성하는 방식을 제어하는 고급 옵션을 정의합니다. 이를 통해 잘림(truncation) 전략을 설정하고, 출력 토큰 수를 제한하며, 사용자 지정 지침을 제공하고, 모델이 답변하기 전에 적용할 추론 노력(reasoning effort) 수준을 선택할 수 있습니다.
 
 ## 입력
 
-| 매개변수 | 설명 | 데이터 유형 | 필수 여부 | 범위 |
+| 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `트렁케이션` | 모델 응답에 사용할 절단 전략입니다. auto: 현재 응답과 이전 응답들의 컨텍스트가 모델의 컨텍스트 창 크기를 초과하면, 모델은 대화 중간의 입력 항목을 생략하여 응답을 컨텍스트 창에 맞게 절단합니다. disabled: 모델 응답이 해당 모델의 컨텍스트 창 크기를 초과하면 요청이 400 오류와 함께 실패합니다. (기본값: "auto") | COMBO | 예 | "auto"<br>"disabled" |
-| `최대 출력 토큰` | 응답에 대해 생성할 수 있는 토큰 수의 상한입니다. 여기에는 표시되는 출력 토큰과 추론 토큰이 포함됩니다. (기본값: 4096) | INT | 아니요 | 16~16384 |
+| `트렁케이션` | 모델 응답에 사용할 잘림 전략입니다. auto: 이 응답과 이전 응답의 컨텍스트가 모델의 컨텍스트 창 크기를 초과하면, 모델은 대화 중간의 입력 항목을 삭제하여 컨텍스트 창에 맞게 응답을 잘라냅니다. disabled: 모델 응답이 모델의 컨텍스트 창 크기를 초과하게 되면 요청이 400 오류와 함께 실패합니다. (기본값: "auto") | COMBO | 예 | "auto"<br>"disabled" |
+| `최대 출력 토큰` | 응답을 위해 생성될 수 있는 토큰 수의 상한입니다. 여기에는 표시되는 출력 토큰과 추론 토큰이 포함됩니다. (기본값: 4096) | INT | 아니요 | 16  ~  16384 |
 | `지침` | 모델이 응답을 생성하는 방법에 대한 지침입니다. (여러 줄 입력 지원) | STRING | 아니요 | - |
-| `reasoning_effort` | 모델이 응답하기 전에 추론하는 정도입니다. "default"는 모델이 스스로 결정하도록 둡니다. 지원되는 수준은 모델마다 다릅니다: GPT-6 Astra는 low-max, GPT-5.6은 none-max(minimal 수준 없음), GPT-5.5는 none-xhigh, GPT-5.5 Pro는 medium-xhigh, GPT-5는 minimal-high, o-series는 low-high이며, GPT-4.1은 추론을 지원하지 않습니다. 지원되지 않는 수준은 요청이 전송되기 전에 거부됩니다. (기본값: "default") | COMBO | 아니요 | "default"<br>"none"<br>"minimal"<br>"low"<br>"medium"<br>"high"<br>"xhigh"<br>"max" |
+| `reasoning_effort` | 모델이 답변하기 전에 추론하는 정도입니다. "default"는 선택을 모델에 맡깁니다. 지원되는 수준은 모델마다 다릅니다: GPT-6 Astra low-max, GPT-5.6 none-max (minimal 없음), GPT-5.5 none-xhigh, GPT-5.5 Pro medium-xhigh, GPT-5 minimal-high, o-series low-high; GPT-4.1은 추론을 지원하지 않습니다. 지원되지 않는 수준은 요청이 전송되기 전에 거부됩니다. (기본값: "default") | COMBO | 아니요 | "default"<br>"none"<br>"minimal"<br>"low"<br>"medium"<br>"high"<br>"xhigh"<br>"max" |
 
-참고: `top_p`와 `temperature`는 API 사양에 속성으로 명시되어 있지만 모든 모델에서 지원되는 것은 아니므로 입력으로 노출되지 않습니다.
+참고: `top_p`와 `temperature`는 API 명세에 속성으로 나열되어 있지만, 모든 모델에서 지원되는 것은 아니므로 입력으로 노출되지 않습니다.
 
 ## 출력
 
-| 출력 이름 | 설명 | 데이터 유형 |
+| 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `OPENAI_CHAT_CONFIG` | OpenAI Chat 노드에서 사용할 지정된 설정이 포함된 구성 객체입니다. | OPENAI_CHAT_CONFIG |
+| `OPENAI_CHAT_CONFIG` | 지정된 고급 설정을 포함하는 구성 객체로, OpenAI Chat 노드와 함께 사용합니다. | OPENAI_CHAT_CONFIG |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/ko.md)
 

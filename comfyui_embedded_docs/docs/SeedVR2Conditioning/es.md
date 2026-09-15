@@ -1,15 +1,15 @@
 # Aplicar Condicionamiento SeedVR2
 
-Este nodo construye un condicionamiento positivo y negativo a partir de un latent de VAE para usarlo con el modelo SeedVR2. Valida la forma del latent de entrada y la estructura del modelo, y luego produce tanto el condicionamiento positivo como el negativo que guían el muestreo de imágenes o vídeos.
+Construye condicionamiento positivo y negativo a partir de un latente VAE para usarlo con el modelo SeedVR2. Valida el latente de entrada y la estructura del modelo, agrega un canal de máscara al latente y devuelve ambas salidas de condicionamiento.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
 | `model` | El modelo SeedVR2. | MODEL | Sí | - |
-| `vae_conditioning` | El latent de VAE de SeedVR2 a partir del cual construir el condicionamiento (nombre mostrado: latent). | LATENT | Sí | - |
+| `vae_conditioning` | El latente del VAE de SeedVR2 a partir del cual construir el condicionamiento (nombre para mostrar: latent). | LATENT | Sí | - |
 
-Nota: el latent `vae_conditioning` debe ser un tensor de 5 dimensiones en el diseño de canales primero de Comfy (B, C, T, H, W), donde C es el número de canales esperado para el VAE de SeedVR2. El nodo genera un error si el latent no tiene 5 dimensiones, si su número de canales no coincide, o si parece estar en un diseño de canales al final. La entrada `model` debe ser un modelo con la estructura esperada de SeedVR2. Internamente, el nodo añade un canal de máscara constante al latent y adjunta la condición resultante a los grupos de condicionamiento positivo y negativo.
+Nota: El latente `vae_conditioning` debe ser un tensor 5-D con el diseño channel-first de Comfy (B, C, T, H, W), donde C es la cantidad esperada de canales del VAE de SeedVR2. El nodo lanza un error si el latente no es 5-D, si la cantidad de canales no coincide o si el tensor parece estar en el diseño channel-last. La entrada `model` debe tener la estructura esperada de SeedVR2; el nodo resuelve su modelo de difusión interno y lee su condicionamiento positivo y negativo. Internamente, el nodo añade un canal de máscara constante al latente y adjunta la condición resultante tanto a la salida de condicionamiento positiva como a la negativa.
 
 ## Salidas
 

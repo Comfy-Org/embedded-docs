@@ -1,34 +1,33 @@
 # Model Cihazı Seç
 
-## Genel Bakış
-
-SelectModelDevice düğümü, bir difüzyon modelinin hangi aygıtta (CPU veya belirli bir GPU) çalışacağını elle seçmenizi sağlar. Modeli farklı bir aygıta taşıyabilir ve diğer çoklu GPU düğümleriyle çakışmaları otomatik olarak yönetir.
+Select Model Device düğümü, bir difüzyon modelinin hangi cihazda (CPU veya belirli bir GPU) çalışacağını manuel olarak seçmenizi sağlar. Bir modeli farklı bir cihaza taşıyabilir ve diğer çoklu GPU düğümleriyle olan çakışmaları otomatik olarak yönetir. `"default"` seçildiğinde, model yükleyici tarafından seçilen özgün cihaz geri yüklenir.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Belirli bir aygıta yerleştirilecek difüzyon modeli. | MODEL | Evet |  |
-| `device` | Model için hedef aygıt. Seçenekler, kullanılabilir GPU'lara göre dinamik olarak oluşturulur. (varsayılan: "default") | COMBO | Evet | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>... (algılanan her GPU için bir `"gpu:N"` girişi) |
+| `model` | Belirli bir cihaza yerleştirilecek difüzyon modeli. | MODEL | Evet |  |
+| `device` | Model için hedef cihaz. Seçenekler, geçerli makinede kullanılabilir cihazlara göre dinamik olarak oluşturulur. (varsayılan: `"default"`) | COMBO | Evet | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>... (algılanan her GPU için bir `"gpu:N"` girdisi) |
 
 **Parametre Ayrıntıları:**
-- `"default"`: Önceki bir SelectModelDevice düğümü değiştirmiş olsa bile, model yükleyicinin atadığı aygıtı geri yükler.
-- `"cpu"`: Hem yükleme hem boşaltma aygıtını CPU'ya sabitler.
-- `"gpu:N"`: Yükleme aygıtını N. kullanılabilir GPU'ya sabitler (ör. ilk GPU için `"gpu:0"`). Boşaltma aygıtı, yükleyicinin orijinal seçimine geri yüklenir.
+- `"default"`: Daha önce bir Select Model Device çağrısı yapılmış olsa bile, model yükleyici tarafından atanan yükleme ve boşaltma cihazlarını geri yükler.
+- `"cpu"`: Hem yükleme hem de boşaltma cihazını CPU'ya sabitler.
+- `"gpu:N"`: Yükleme cihazını mevcut N. GPU'ya sabitler (örneğin, ilk GPU için `"gpu:0"`). Boşaltma cihazı, yükleyicinin özgün seçimine geri yüklenir.
 
 **Önemli Notlar:**
-- İstenen aygıt mevcut makinede yoksa (ör. 2 GPU'lu bir makinede oluşturulan bir iş akışı 1 GPU'lu bir makinede açılırsa), düğüm hataya düşmek yerine modeli değiştirmeden iletir ve bir mesaj günlüğe kaydeder.
-- Model zaten istenen aygıttaysa, düğüm hızlı yolu kullanır ve modeli yeniden yüklemez.
-- Model yükleyici çoklu GPU'yu desteklemiyorsa (yeniden yükleme fabrikası yoksa), düğüm modeli değiştirmeden iletir ve bir uyarı kaydeder.
-- Bir MultiGPU CFG Split kopyası seçilen aygıtı zaten kaplıyorsa, iki model aynı aygıta bağlanmasın diye bu kopya budanır.
-- Belirli bir aygıt seçildiğinde, düğüm ayrıca modelin hesaplama dtype'ını o aygıt tarafından desteklenen bir türe ayarlar.
-- Bu düğümü, modeli zaten tüketen bir düğümden (ör. bir KSampler) *sonra* yerleştirmek önerilmez; aygıt orijinalle eşleşiyorsa, önceki düğümün değiştirdiği durum gözlemlenir.
+- İstenen cihaz geçerli makinede yoksa (örneğin, 2 GPU'lu bir makinede oluşturulan bir iş akışı 1 GPU'lu bir makinede açılırsa), düğüm modeli değiştirmeden geçirir ve başarısız olmak yerine bir ileti günlüğe kaydeder. Taşınabilir iş akışlarının erkenden hata vermemesi için girdi doğrulaması sırasında bilinmeyen `gpu:N` değerlerine izin verilir.
+- Model zaten istenen cihazdaysa, düğüm hızlı bir yol kullanır ve modeli yeniden yüklemez.
+- İstenen cihaz, girdi modelinin zaten bulunduğu cihazdan farklı olduğunda, yeni patcher'ın yeni cihazda bağımsız ağırlıklara sahip olması için yükleyicinin yeniden yükleme fabrikası kullanılarak yeni bir model oluşturulur.
+- Model yükleyici çoklu GPU'yu desteklemiyorsa (yeniden yükleme fabrikası yoksa), düğüm modeli değiştirmeden geçirir ve bir uyarı günlüğe kaydeder.
+- Bir MultiGPU CFG Split klonu seçilen cihazı zaten kaplıyorsa, iki modelin aynı cihaza bağlanmaması için o klon budanır.
+- Varsayılan olmayan bir cihaz (CPU veya GPU) seçildiğinde, düğüm ayrıca modelin hesaplama dtype'ını o cihaz tarafından desteklenen bir dtype'a ayarlar.
+- Bu düğümün, modeli zaten tüketmiş bir düğümden (örneğin, bir KSampler) sonra yerleştirilmesi önerilmez, çünkü cihaz özgün cihazla eşleşirse önceki düğüm tarafından değiştirilen herhangi bir durum gözlemlenecektir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model` | Seçilen aygıta yerleştirilmiş difüzyon modeli. Aygıt geçersiz veya kullanılamıyorsa, model değiştirilmeden iletilir. | MODEL |
+| `model` | Seçilen cihaza yerleştirilmiş difüzyon modeli. Cihaz geçersiz veya kullanılamaz durumdaysa, model değiştirilmeden geçirilir. | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectModelDevice/tr.md)
 

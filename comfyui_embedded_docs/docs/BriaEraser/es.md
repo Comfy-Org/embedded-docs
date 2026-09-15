@@ -1,30 +1,30 @@
-# BriaEraser
+# Borrador Bria
 
-Bria Eraser elimina objetos o áreas de una imagen mediante la API de Bria. Debes proporcionar una imagen y una máscara que delimite las regiones a eliminar; el nodo sube ambas a Bria, ejecuta el trabajo de borrado, espera a que se complete y devuelve la imagen editada con las áreas enmascaradas eliminadas.
+Bria Eraser elimina objetos o áreas de una imagen mediante la API de Bria. Se proporcionan una imagen y una máscara que delimita las regiones que se eliminarán; el nodo carga ambas en Bria, ejecuta el trabajo de borrado, espera a que finalice y devuelve la imagen editada con las áreas enmascaradas borradas.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `image` | La imagen de entrada que contiene los objetos o áreas a eliminar. | IMAGE | Sí | - |
-| `mask` | Las áreas blancas se borran; las áreas negras se conservan. La máscara se binariza antes de enviarse, por lo que las áreas parcialmente pintadas se consideran blancas. Debe tener la misma relación de aspecto que la imagen. | MASK | Sí | - |
-| `mask_type` | Selecciona cómo se creó la máscara. "manual" es para máscaras dibujadas a mano o con pincel; "automatic" es para máscaras producidas por modelos de segmentación como SAM. | COMBO | Sí | "manual"<br>"automatic" |
-| `moderation` | Configuración de moderación. Establezca "true" para habilitar la moderación de contenido visual en las imágenes de entrada y/o salida. | DYNAMIC_COMBO | Sí | "false"<br>"true" |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `image` | La imagen de entrada que contiene los objetos o áreas que se eliminarán. | IMAGE | Sí | - |
+| `mask` | Las áreas blancas se borran, las áreas negras se conservan. La máscara se binariza antes de enviarse con un umbral de corte del 50 %: solo las áreas pintadas por encima del 50 % de opacidad cuentan como blancas. Debe tener la misma relación de aspecto que la imagen. | MASK | Sí | - |
+| `mask_type` | El tipo de origen de la máscara. "manual" es para máscaras dibujadas a mano o con pincel; "automatic" es para máscaras producidas por modelos de segmentación como SAM. | COMBO | Sí | "manual"<br>"automatic" |
+| `moderation` | Configuración de moderación. Establecer en "true" para habilitar la moderación de contenido visual en las imágenes de entrada y/o salida. | DYNAMIC_COMBO | Sí | "false"<br>"true" |
 
-Nota: cuando `moderation` se establece en "true", dos ajustes booleanos adicionales están disponibles:
+Cuando `moderation` se establece en "true", dos ajustes booleanos adicionales quedan disponibles:
 
-- `visual_input_moderation`: aplica moderación de contenido visual a la imagen de entrada (predeterminado: false)
-- `visual_output_moderation`: aplica moderación de contenido visual a la imagen de salida (predeterminado: false)
+- `visual_input_moderation` — aplica moderación de contenido visual a la imagen de entrada (predeterminado: false)
+- `visual_output_moderation` — aplica moderación de contenido visual a la imagen de salida (predeterminado: false)
 
-La máscara debe coincidir con la relación de aspecto de la imagen; de lo contrario, la solicitud falla. La máscara se convierte en una máscara binaria (blanco y negro) antes de enviarse a la API: las áreas pintadas con menos de la mitad de opacidad se ignoran y las áreas parcialmente pintadas se tratan como blancas y se borrarán. La máscara debe contener al menos alguna área blanca; una máscara vacía hace que la solicitud falle porque no hay nada que borrar.
+Nota: La máscara debe coincidir con la relación de aspecto de la imagen; de lo contrario, la solicitud falla. La máscara se convierte en una máscara binaria (blanco y negro) antes de enviarse a la API: las áreas pintadas con menos de la mitad de opacidad se ignoran, y las áreas pintadas parcialmente se tratan como blancas y se borrarán. La máscara debe contener al menos algo de área blanca; una máscara vacía hace que la solicitud falle porque no hay nada que borrar.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `image` | La imagen editada con los objetos o áreas enmascaradas eliminados. | IMAGE |
+| `image` | La imagen editada con los objetos o áreas enmascarados eliminados. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaEraser/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `557272ecb0e6487796184ce88217ff318de4a5728a82e903aeb3fa3a0d24a664`
+**Source fingerprint (SHA-256):** `5528b7a3cb4d0a7b1b28acbc642a8bd21e2eacf5aa225403d6344c29f0cdba80`

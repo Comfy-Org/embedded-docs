@@ -1,18 +1,18 @@
 # ManualSigmas
 
-El nodo ManualSigmas le permite definir manualmente una secuencia personalizada de niveles de ruido (sigmas) para el proceso de muestreo. Usted ingresa una lista de números como una cadena, y el nodo los convierte en un tensor que puede ser utilizado por otros nodos de muestreo. Esto es útil para probar o crear programas de ruido específicos.
+El nodo ManualSigmas te permite definir manualmente una secuencia personalizada de niveles de ruido (sigmas) para el proceso de muestreo. Ingresas una lista de números como una cadena de texto, y el nodo los convierte en un tensor SIGMAS que puede ser utilizado por otros nodos de muestreo. Esto es útil para realizar pruebas o crear programaciones de ruido específicas.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `sigmas` | Una cadena que contiene los valores sigma. El nodo extrae todos los números de esta cadena, incluidos decimales y valores negativos. Por ejemplo, "1, 0.5, 0.1" o "1 0.5 0.1". Valor por defecto: "1, 0.5". | STRING | Sí | Cualquier valor numérico separado por comas o espacios |
+| `sigmas` | Una cadena de texto que contiene los valores sigma. El nodo extrae todos los números de esta cadena, incluidos los decimales y los valores negativos. Por ejemplo, "1, 0.5, 0.1" o "1 0.5 0.1". Valor predeterminado: "1, 0.5". | STRING | Sí | Cualquier valor numérico separado por comas o espacios |
 
 Nota: Este nodo está marcado como experimental.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
 | `sigmas` | Un tensor que contiene la secuencia de valores sigma extraídos de la cadena de entrada. | SIGMAS |
 

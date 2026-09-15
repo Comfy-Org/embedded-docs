@@ -6,20 +6,20 @@ Tripo: Image to Model 节点使用 Tripo 的图像到模型服务，将单张参
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 用于生成 3D 模型的参考图像。 | IMAGE | 是 | — |
-| `model_version` | 用于生成的模型版本。如果未设置，节点将回退到 Tripo 的 v3.1（20260211）版本。 | COMBO | 否 | Tripo 模型版本列表 |
-| `texture` | 生成纹理贴图。关闭时返回裸几何体并忽略 `pbr`（默认：true）。 | BOOLEAN | 否 | true<br>false |
+| `图像` | 用于生成 3D 模型的参考图像。 | IMAGE | 是 | — |
+| `模型版本` | 用于生成的模型版本。如果未设置，节点将回退到 Tripo 的 v3.1（20260211）版本。 | COMBO | 否 | Tripo 模型版本列表 |
+| `纹理` | 生成纹理贴图。关闭时返回裸几何体并忽略 `pbr`（默认：true）。 | BOOLEAN | 否 | true<br>false |
 | `pbr` | PBR 材质贴图（基础色、金属度、粗糙度、法线）。需要启用 `texture`（默认：true）。 | BOOLEAN | 否 | true<br>false |
-| `model_seed` | 用于几何体生成步骤的种子（默认：42）。 | INT | 否 | 0 到 2147483647 |
-| `orientation` | 应用于生成模型的朝向设置（默认：DEFAULT）。 | COMBO | 否 | Tripo 朝向选项，默认 `DEFAULT` |
-| `texture_seed` | 用于纹理生成步骤的种子（默认：42）。 | INT | 否 | 0 到 2147483647 |
-| `texture_quality` | detailed = HD 纹理，extreme = 8K Ultra 纹理（默认："standard"）。 | COMBO | 否 | "standard"<br>"detailed"<br>"extreme" |
-| `texture_alignment` | 纹理在生成几何体上的对齐方式（默认："original_image"）。 | COMBO | 否 | "original_image"<br>"geometry" |
-| `face_limit` | 最大面数。-1 让 Tripo 自适应选择（v3.x standard 下约 140 万面，detailed 下约 200 万面）。Tripo 会静默限制：v2.5 为 500,000，四边面网格为 150,000（默认：-1）。 | INT | 否 | -1 到 2000000 |
-| `quad` | 输出四边面网格。Tripo 以 FBX 形式提供四边面网格，因此结果会出现在 FBX 输出上，而 GLB 输出保持为空（默认：false）。 | BOOLEAN | 否 | true<br>false |
-| `geometry_quality` | 生成几何体的质量级别（默认："standard"）。 | COMBO | 否 | "standard"<br>"detailed" |
-| `smart_low_poly` | 具有干净、手工风格拓扑的低多边形网格（500-20,000 面，四边面为 500-10,000）。最适合简单主体；复杂主体可能会失败（默认：false）。 | BOOLEAN | 否 | true<br>false |
-| `auto_size` | 将带纹理的模型缩放到其真实世界尺寸（以米为单位）。Tripo 会将该尺寸存储为模型的场景变换，并在模型转换、绑定或重定向时烘焙进去；未启用纹理时忽略（默认：true）。 | BOOLEAN | 否 | true<br>false |
+| `模型种子` | 用于几何体生成步骤的种子（默认：42）。 | INT | 否 | 0 到 2147483647 |
+| `方向` | 应用于生成模型的朝向设置（默认：DEFAULT）。 | COMBO | 否 | Tripo 朝向选项，默认 `DEFAULT` |
+| `纹理种子` | 用于纹理生成步骤的种子（默认：42）。 | INT | 否 | 0 到 2147483647 |
+| `纹理质量` | detailed = HD 纹理，extreme = 8K Ultra 纹理（默认："standard"）。 | COMBO | 否 | "standard"<br>"detailed"<br>"extreme" |
+| `纹理对齐` | 纹理在生成几何体上的对齐方式（默认："original_image"）。 | COMBO | 否 | "original_image"<br>"geometry" |
+| `面数上限` | 最大面数。-1 让 Tripo 自适应选择（v3.x standard 下约 140 万面，detailed 下约 200 万面）。Tripo 会静默限制：v2.5 为 500,000，四边面网格为 150,000（默认：-1）。 | INT | 否 | -1 到 2000000 |
+| `四边形` | 输出四边面网格。Tripo 以 FBX 形式提供四边面网格，因此结果会出现在 FBX 输出上，而 GLB 输出保持为空（默认：false）。 | BOOLEAN | 否 | true<br>false |
+| `几何质量` | 生成几何体的质量级别（默认："standard"）。 | COMBO | 否 | "standard"<br>"detailed" |
+| `智能低模` | 具有干净、手工风格拓扑的低多边形网格（500-20,000 面，四边面为 500-10,000）。最适合简单主体；复杂主体可能会失败（默认：false）。 | BOOLEAN | 否 | true<br>false |
+| `自动尺寸` | 将带纹理的模型缩放到其真实世界尺寸（以米为单位）。Tripo 会将该尺寸存储为模型的场景变换，并在模型转换、绑定或重定向时烘焙进去；未启用纹理时忽略（默认：true）。 | BOOLEAN | 否 | true<br>false |
 
 **注意：**
 

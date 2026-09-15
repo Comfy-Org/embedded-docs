@@ -1,62 +1,62 @@
 # Grok Image Edit
 
-Este nodo edita una o más imágenes existentes a partir de un prompt de texto. Envía la(s) imagen(es) de referencia conectada(s) y el prompt a la API de edición de imágenes de Grok utilizando el modelo seleccionado y, a continuación, devuelve la(s) imagen(es) editada(s).
+Modifica una o más imágenes existentes basándose en un prompt de texto. El nodo envía la(s) imagen(es) de referencia conectada(s) y el prompt a la API de edición de imágenes de Grok usando el modelo seleccionado, y luego devuelve la(s) imagen(es) editada(s).
 
 ## Entradas
 
 ### Entradas comunes
 
-| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
-| `modelo` | El modelo de imagen de Grok a utilizar. Los subparámetros que se muestran a continuación cambian según el modelo seleccionado. | DYNAMIC_COMBO | Sí | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
-| `prompt` | El prompt de texto utilizado para generar la imagen. (por defecto: "") | STRING | Sí | N/A |
-| `semilla` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla. (por defecto: 0) | INT | Sí | 0 a 2147483647 |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `modelo` | El modelo de imagen de Grok que se va a usar. Los subparámetros que se muestran a continuación cambian según el modelo seleccionado. | DYNAMIC_COMBO | Sí | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
+| `prompt` | El prompt de texto utilizado para generar la imagen. (predeterminado: "") | STRING | Sí | N/A |
+| `semilla` | Semilla que determina si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla. (predeterminado: 0) | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de grok-imagine-image-2.0
 
-| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
 | `resolution` | Resolución de salida de las imágenes editadas. | COMBO | Sí | "1K"<br>"2K" |
-| `number_of_images` | Número de imágenes editadas a generar. (por defecto: 1) | INT | Sí | 1 a 10 |
+| `number_of_images` | Número de imágenes editadas que se van a generar. (predeterminado: 1) | INT | Sí | 1 a 10 |
 | `quality` | Nivel de calidad de las imágenes generadas. | COMBO | Sí | "medium"<br>"low" |
-| `aspect_ratio` | Relación de aspecto de la imagen editada. (por defecto: "auto") | COMBO | Sí | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
+| `aspect_ratio` | Relación de aspecto de la imagen editada. (predeterminado: "auto") | COMBO | Sí | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
 
 ### Entradas de grok-imagine-image-quality y grok-imagine-image
 
 Compartidas por grok-imagine-image-quality y grok-imagine-image.
 
-| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
 | `resolution` | Resolución de salida de las imágenes editadas. | COMBO | Sí | "1K"<br>"2K" |
-| `number_of_images` | Número de imágenes editadas a generar. (por defecto: 1) | INT | Sí | 1 a 10 |
-| `aspect_ratio` | Solo se permite cuando están conectadas varias imágenes. (por defecto: "auto") | COMBO | Sí | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
+| `number_of_images` | Número de imágenes editadas que se van a generar. (predeterminado: 1) | INT | Sí | 1 a 10 |
+| `aspect_ratio` | Solo se permite cuando hay varias imágenes conectadas. (predeterminado: "auto") | COMBO | Sí | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
 
 ### Entradas de grok-imagine-image-pro
 
-| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
 | `resolution` | Resolución de salida de las imágenes editadas. | COMBO | Sí | "1K"<br>"2K" |
-| `number_of_images` | Número de imágenes editadas a generar. (por defecto: 1) | INT | Sí | 1 a 10 |
+| `number_of_images` | Número de imágenes editadas que se van a generar. (predeterminado: 1) | INT | Sí | 1 a 10 |
 
 ### Entradas de referencia
 
-| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
-| `images` | Ranura ampliable: conecte 1 o más imágenes de referencia para editar. La primera ranura es `image`, las ranuras adicionales son `image_1`, `image_2`, etc. El número máximo de imágenes depende del modelo seleccionado. | IMAGE | Sí | 1 imagen para `grok-imagine-image-pro`<br>1 a 3 imágenes para `grok-imagine-image-2.0`, `grok-imagine-image-quality` y `grok-imagine-image` |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `images` | Ranura ampliable: conecte de 1 a N imágenes de referencia para editar. Las ranuras usan los nombres de plantilla `image_1`, `image_2`, `image_3`; el número máximo de ranuras depende del modelo seleccionado. | IMAGE | Sí | 1 imagen para `grok-imagine-image-pro`<br>1 a 3 imágenes para `grok-imagine-image-2.0`, `grok-imagine-image-quality` y `grok-imagine-image` |
 
-**Nota sobre las restricciones:**
-
-- `prompt` debe contener al menos 1 carácter que no sea un espacio en blanco.
-- Se requiere al menos una imagen de referencia para la edición; el nodo genera un error si no se conecta ninguna imagen.
-- El número máximo de imágenes de entrada es 1 para `grok-imagine-image-pro` y 3 para `grok-imagine-image-2.0`, `grok-imagine-image-quality` y `grok-imagine-image`. Conectar más imágenes de las que el modelo admite genera un error.
+**Nota sobre restricciones:**
+- `prompt` debe contener al menos 1 carácter que no sea espacio en blanco.
+- Se requiere al menos una imagen de referencia para editar; el nodo genera un error si no hay ninguna imagen conectada.
+- El número máximo de imágenes de entrada es 1 para `grok-imagine-image-pro` y 3 para `grok-imagine-image-2.0`, `grok-imagine-image-quality` y `grok-imagine-image`. Conectar más imágenes de las que admite el modelo genera un error.
+- El límite de imágenes cuenta cada imagen de las entradas conectadas, por lo que un lote que contiene varias imágenes cuenta como varias imágenes para el límite.
 - Para `grok-imagine-image-quality` y `grok-imagine-image`, un `aspect_ratio` personalizado (cualquier valor distinto de "auto") solo se permite cuando hay varias imágenes conectadas. Con una sola imagen, `aspect_ratio` debe ser "auto".
-- Para `grok-imagine-image-2.0`, `aspect_ratio` puede configurarse libremente incluso con una sola imagen.
+- Para `grok-imagine-image-2.0`, `aspect_ratio` se puede establecer libremente incluso con una sola imagen.
 - El subparámetro `quality` solo está disponible con `grok-imagine-image-2.0`.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
-|-------------|-------------|-----------|
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
 | `IMAGE` | La(s) imagen(es) editada(s) devuelta(s) por la API de Grok. Si se genera una sola imagen, se devuelve directamente. Si se generan varias imágenes, se concatenan en un único tensor de lote. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokImageEditNodeV2/es.md)

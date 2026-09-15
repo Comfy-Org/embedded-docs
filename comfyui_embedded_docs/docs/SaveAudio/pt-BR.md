@@ -1,23 +1,23 @@
 # Salvar Áudio (FLAC)
 
-Este nó salva dados de áudio em um arquivo no formato FLAC. Ele recebe uma entrada de áudio e a grava no diretório de saída usando o prefixo de nome de arquivo especificado. Este nó está obsoleto e deve ser substituído pelo nó Save Audio atual.
+Este nó salva dados de áudio em um arquivo no formato FLAC. Ele recebe uma entrada de áudio e a grava no diretório de saída usando o prefixo de nome de arquivo especificado, além de repassar o áudio para sua saída. Este nó está obsoleto e deve ser substituído pelo nó Save Audio atual.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Range |
 |-----------|-------------|-----------|----------|-------|
 | `áudio` | Os dados de áudio a serem salvos | AUDIO | Sim | - |
 | `prefixo_do_arquivo` | O prefixo para o nome do arquivo de saída (padrão: "audio/ComfyUI") | STRING | Não | - |
 
-*Nota: Os parâmetros `prompt` e `extra_pnginfo` são ocultos e tratados automaticamente pelo sistema.*
+*Nota: Os parâmetros `prompt` e `extra_pnginfo` são ocultos e gerenciados automaticamente pelo sistema.*
 
-Se a entrada `audio` não receber dados (por exemplo, quando o vídeo de origem não possui trilha de áudio), o nó gera um erro e nenhum arquivo é salvo.
+Se a entrada `audio` não receber dados (por exemplo, quando o vídeo de origem não tiver faixa de áudio), o nó gera um erro e nenhum arquivo é salvo.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
-|-------------|-------------|-----------|
-| `áudio` | Os dados de áudio fornecidos à entrada, repassados após o arquivo ser salvo | AUDIO |
+|-------------|-----------|-----------|
+| `audio` | Os dados de áudio fornecidos à entrada, repassados após o arquivo ser salvo | AUDIO |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAudio/pt-BR.md)
 

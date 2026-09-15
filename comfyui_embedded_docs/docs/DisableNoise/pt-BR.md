@@ -1,6 +1,6 @@
 # Desativar Ruído
 
-O nó DisableNoise fornece uma configuração de ruído vazia que pode ser usada para desabilitar a geração de ruído em processos de amostragem. Ele retorna um objeto de ruído especial que não contém dados de ruído, permitindo que outros nós pulem operações relacionadas a ruído quando conectados a esta saída. O nó também pode ser pesquisado pelo alias "zero noise".
+Este nó fornece uma configuração de ruído vazia que desabilita a geração de ruído durante a amostragem. Ele produz um objeto de ruído especial que não contém dados de ruído, então qualquer nó conectado a ele ignora operações relacionadas a ruído. Ele também é pesquisável sob o alias "zero noise".
 
 ## Entradas
 

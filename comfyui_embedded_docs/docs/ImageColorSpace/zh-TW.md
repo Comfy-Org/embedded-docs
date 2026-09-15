@@ -1,33 +1,31 @@
-# Convert Image Color Space
+# 轉換影像色彩空間
 
-## 概述
-
-ImageColorSpace 節點將圖像在不同的顏色空間之間進行轉換，包括 sRGB、HDR（Rec.2020 HLG）和 HDR PQ（Rec.2020 PQ）。它支持在批次中縮窄過度亮度並壓縮超出顏色範圍的顏色，僅在 RGB 通道上運作，alpha 通道則保持不變。
+ImageColorSpace 節點可在 sRGB (Rec.709)、linear Rec.709、HDR (Rec.2020 HLG) 與 HDR PQ (Rec.2020 PQ) 色彩空間之間轉換影像。當轉換為 SDR 輸出，或從 HDR PQ 轉換為 HDR 時，會對整個批次中超出範圍的亮度進行色調映射，並壓縮超出色域的顏色；linear 輸出與 linear-to-HDR 轉換則會保留擴展值，不進行色調映射。轉換以 float32 計算，且任何 alpha 通道都會原樣傳遞。
 
 ## 輸入
 
-| 參數 | 描述 | 資料類型 | 必要 | 范圍 |
+| 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 要轉換的輸入圖像。 | IMAGE | 是 | 任何有效的圖像格式。 |
-| `source` | 輸入像素的顏色空間。 | COMBO | 是 | <br> "sRGB" <br> "HDR" <br> "HDR PQ" |
-| `destination` | 輸出像素的顏色空間。 | COMBO | 是 | <br> "sRGB" <br> "HDR" <br> "HDR PQ" |
+| `image` | 要轉換的輸入影像。 | IMAGE | 是 | 任何有效影像。 |
+| `source` | 輸入像素的色彩空間。預設值："sRGB"。 | COMBO | 是 | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"`<br>`"linear"` |
+| `destination` | 輸出像素的色彩空間。請將儲存節點設為相同的色彩空間。預設值："sRGB"。 | COMBO | 是 | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"`<br>`"linear"` |
 
 ## 輸出
 
-| 輸出名 | 描述 | 資料類型 |
+| 輸出名稱 | 說明 | 資料類型 |
 |-------------|-------------|-----------|
-| `image` | 在指定輸出顏色空間中的轉換後圖像。 | IMAGE |
+| `image` | 轉換後、位於指定目標色彩空間的影像。 | IMAGE |
 
-## 註釋
+## 備註
 
-- 此節點使用 203-nit SDR 白色和 1000-nit HLG 參考顯示器進行轉換。
-- 轉換是在 float32 上計算的，並返回中間設備和數據類型。
-- 直接 alpha 不會進行顏色轉換。
-- 此節點支持 sRGB、HDR（Rec.2020 HLG）和 HDR PQ（Rec.2020 PQ）顏色空間之間的轉換。
-- 此節點進行縮窄調色映射並壓縮超出顏色範圍的顏色，以確保轉換的準確性。
-- 轉換僅使用 RGB 通道，alpha 通道（如果存在）則保持不變。
+- Linear 1.0 使用與 sRGB 相同的 203-nit 參考白；HLG 使用 1000-nit 參考顯示器。
+- linear 輸出與 linear-to-HDR 轉換會保留擴展值，不進行色調映射。
+- SDR 輸出與 PQ-to-HLG 轉換會對整個批次中超出範圍的亮度進行色調映射（共用同一個白點，因此曝光不會逐幀改變），並壓縮超出色域的顏色。
+- 轉換以 float32 計算，並傳回中間裝置與 dtype。
+- Straight alpha 不會進行色彩轉換；只有 RGB 通道會被轉換。
+- 若 `source` 與 `destination` 相同，則不會套用任何色彩轉換——影像只會被移至中間裝置與 dtype。
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageColorSpace/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `f0d38c6f5b524752a99d51b1a87f0e65c07f3ba36ecb0066d8d10c5b5032d36f`
+**Source fingerprint (SHA-256):** `04ae447a9f9805341e31755ad0fa56746ac0371fa2cb9bda95df3879c9dbead7`

@@ -1,18 +1,19 @@
 # Sonilo Texto para Música
 
-O nó Sonilo Text to Music gera música a partir de uma descrição em texto usando o modelo de IA da Sonilo. Você fornece um prompt descrevendo a música desejada, e o nó envia uma solicitação ao serviço Sonilo para criar um arquivo de áudio. Você pode definir uma duração alvo para o clipe gerado.
+O nó Sonilo Text to Music gera música a partir de uma descrição de texto usando o modelo de IA da Sonilo. Você fornece um prompt descrevendo a música desejada, e o nó envia uma solicitação ao serviço Sonilo para criar um arquivo de áudio. Você pode definir uma duração desejada para o clipe gerado.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Prompt de texto descrevendo a música a ser gerada. Deve conter de 1 a 1000 caracteres após a remoção de espaços em branco. | STRING | Sim | N/A |
-| `duration` | Duração alvo em segundos. Máximo: 6 minutos. Padrão: 30. | INT | Não | 1 a 360 |
+| `prompt` | Prompt de texto descrevendo a música a ser gerada. Deve conter de 1 a 1000 caracteres após remover espaços em branco. | STRING | Sim | 1 a 1000 caracteres |
+| `duration` | Duração desejada em segundos. Máximo: 6 minutos. Padrão: 30. | INT | Não | 1 a 360 |
 | `seed` | Semente para reprodutibilidade. Atualmente ignorada pelo serviço Sonilo, mas mantida para consistência do grafo. Padrão: 0. | INT | Não | 0 a 18446744073709551615 |
 
 **Observações:**
-- A entrada `seed` é fornecida para consistência do fluxo de trabalho, mas atualmente não afeta a saída do serviço Sonilo.
-- O uso é cobrado a $0,0025 por segundo da `duration` solicitada.
+- A entrada `seed` é fornecida para consistência do workflow, mas atualmente não afeta a saída do serviço Sonilo.
+- A entrada `prompt` é obrigatória e deve ser não vazia; o nó valida que ela contém pelo menos 1 caractere (após remover espaços em branco) e no máximo 1000 caracteres.
+- O uso é cobrado a $0.0025 por segundo da `duration` solicitada.
 
 ## Saídas
 

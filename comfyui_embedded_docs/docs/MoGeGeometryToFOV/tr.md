@@ -1,21 +1,23 @@
-# MoGeGeometryToFOV
+# MoGe Geometrisinden FoV Al
+
+Bu düğüm, bir MoGe geometri nesnesinde saklanan kamera içsel parametrelerinden görüş alanını ve odak uzaklığını türetir. Dikey, yatay veya çapraz FOV'u derece veya radyan cinsinden döndürebilir. Dikey FOV çıktısı, örneğin SAM3DBody_Predict düğümünü beslemek için kullanılabilir.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `moge_geometry` | MoGe geometri nesnesi. İç parametre matrisi ve görüntü, nokta veya derinlik verisinden en az birini içermelidir; bu veri, odak uzaklığı dönüşümü için piksel yüksekliğini okumak amacıyla kullanılır. | MOGE_GEOMETRY | Evet | — |
+| `moge_geometry` | MoGe geometri nesnesi. Bir içsel parametreler matrisi ve odak uzaklığı dönüşümü için piksel yüksekliğini okumak üzere kullanılan `image`, `points` veya `depth` verilerinden en az birini içermelidir. | MOGE_GEOMETRY | Evet | — |
 | `eksen` | FOV'un hesaplandığı eksen: "vertical" (fov_y), "horizontal" (fov_x) veya "diagonal" (varsayılan: "vertical"). | COMBO | Evet | "vertical"<br>"horizontal"<br>"diagonal" |
-| `birim` | FOV çıktı birimi (varsayılan: "degrees"). | COMBO | Evet | "degrees"<br>"radians" |
+| `birim` | FOV için çıktı birimi (varsayılan: "degrees"). | COMBO | Evet | "degrees"<br>"radians" |
 
-Not: `moge_geometry` iç parametre içermiyorsa (panorama geometrisinde iç parametre bulunmaz) veya görüntü, nokta ya da derinlik verisinden hiçbirini içermiyorsa düğüm hata verir.
+Not: Düğüm, `moge_geometry` hiç içsel parametre içermiyorsa (panorama geometrisinde hiç yoktur) veya ne `image`, ne `points`, ne de `depth` verisi içeriyorsa hata verir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `fov` | Seçilen eksen boyunca görüş alanı, seçilen birim cinsinden (derece veya radyan). | FLOAT |
-| `focal_pixels` | Dikey iç parametre ve piksel yüksekliğinden türetilen, piksel cinsinden mercek odak uzaklığı. | FLOAT |
+| `fov` | Seçilen eksen boyunca, seçilen birimde (derece veya radyan) görüş alanı. | FLOAT |
+| `focal_pixels` | Piksel cinsinden lens odak uzaklığı; dikey içsel parametreden ve piksel yüksekliğinden türetilir. | FLOAT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MoGeGeometryToFOV/tr.md)
 

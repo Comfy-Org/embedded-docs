@@ -1,26 +1,28 @@
 # Mejorar imagen con Topaz
 
-El nodo Topaz Image Enhance proporciona escalado y mejora de imágenes estándar de la industria. Procesa una única imagen de entrada utilizando un modelo de IA basado en la nube para mejorar la calidad, el detalle y la resolución. El nodo ofrece un control detallado sobre el proceso de mejora, incluyendo opciones para guía creativa, enfoque en el sujeto y preservación facial.
+El nodo Topaz Image Enhance proporciona escalado y mejora de imágenes de estándar industrial. Procesa una única imagen de entrada mediante un modelo de IA basado en la nube para mejorar la calidad, el detalle y la resolución. El nodo ofrece un control detallado sobre el proceso de mejora, incluyendo opciones para guía creativa, enfoque del sujeto y preservación facial.
+
+Este nodo es una versión heredada y está marcado como obsoleto en la interfaz.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `modelo` | El modelo de IA que se utilizará para la mejora de imágenes. | COMBO | Sí | `"Reimagine"` |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `modelo` | El modelo de IA que se usará para la mejora de la imagen. | COMBO | Sí | `"Reimagine"` |
 | `imagen` | La imagen de entrada que se va a mejorar. Solo se admite una imagen. | IMAGE | Sí | - |
-| `prompt` | Indicación de texto opcional para guiar el escalado creativo (por defecto: vacío). | STRING | No | - |
-| `detección_de_sujetos` | Controla en qué parte de la imagen se centra la mejora (por defecto: "All"). | COMBO | No | `"All"`<br>`"Foreground"`<br>`"Background"` |
-| `mejora_de_rostros` | Mejora los rostros (si están presentes) durante el procesamiento (por defecto: True). | BOOLEAN | No | - |
-| `creatividad_mejora_rostros` | Establece el nivel de creatividad para la mejora de rostros (por defecto: 0.0). | FLOAT | No | 0.0 - 1.0 |
-| `intensidad_mejora_rostros` | Controla la nitidez de los rostros mejorados en relación con el fondo (por defecto: 1.0). | FLOAT | No | 0.0 - 1.0 |
-| `recortar_para_ajustar` | De forma predeterminada, la imagen se ajusta con barras negras cuando la relación de aspecto de salida difiere. Actívalo para recortar la imagen y rellenar las dimensiones de salida (por defecto: False). | BOOLEAN | No | - |
-| `ancho_de_salida` | Un valor de cero significa que se calcula automáticamente (normalmente será el tamaño original u output_height si se especifica) (por defecto: 0). | INT | No | 0 - 32000 |
-| `alto_de_salida` | Un valor de cero significa generar con la misma altura que la original o con output width (por defecto: 0). | INT | No | 0 - 32000 |
-| `creatividad` | Controla el nivel general de creatividad de la mejora (por defecto: 3). | INT | No | 1 - 9 |
-| `preservación_de_rostros` | Preserva la identidad facial de los sujetos (por defecto: True). | BOOLEAN | No | - |
-| `preservación_de_color` | Preserva los colores originales (por defecto: True). | BOOLEAN | No | - |
+| `prompt` | Prompt de texto opcional para guiar el escalado creativo (predeterminado: vacío). | STRING | No | - |
+| `detección_de_sujetos` | Controla en qué parte de la imagen se centra la mejora (predeterminado: "All"). | COMBO | No | `"All"`<br>`"Foreground"`<br>`"Background"` |
+| `mejora_de_rostros` | Mejora los rostros (si los hay) durante el procesamiento (predeterminado: True). | BOOLEAN | No | - |
+| `creatividad_mejora_rostros` | Establece el nivel de creatividad para la mejora de rostros (predeterminado: 0.0). | FLOAT | No | 0.0 - 1.0 |
+| `intensidad_mejora_rostros` | Controla cuán nítidos son los rostros mejorados en relación con el fondo (predeterminado: 1.0). | FLOAT | No | 0.0 - 1.0 |
+| `recortar_para_ajustar` | De forma predeterminada, la imagen se muestra con barras negras cuando la relación de aspecto de salida difiere. Actívelo para recortar la imagen y llenar las dimensiones de salida (predeterminado: False). | BOOLEAN | No | - |
+| `ancho_de_salida` | Un valor de cero significa calcular automáticamente (normalmente será el tamaño original o output_height si se especifica) (predeterminado: 0). | INT | No | 0 - 32000 |
+| `alto_de_salida` | Un valor de cero significa generar con la misma altura que la original o el ancho de salida (predeterminado: 0). | INT | No | 0 - 32000 |
+| `creatividad` | Controla el nivel general de creatividad de la mejora (predeterminado: 3). | INT | No | 1 - 9 |
+| `preservación_de_rostros` | Preserva la identidad facial de los sujetos (predeterminado: True). | BOOLEAN | No | - |
+| `preservación_de_color` | Preserva los colores originales (predeterminado: True). | BOOLEAN | No | - |
 
-**Nota:** Este nodo solo puede procesar una única imagen de entrada. Proporcionar un lote de varias imágenes provocará un error.
+**Nota:** Este nodo solo puede procesar una única imagen de entrada. Proporcionar un lote de varias imágenes dará como resultado un error.
 
 ## Salidas
 

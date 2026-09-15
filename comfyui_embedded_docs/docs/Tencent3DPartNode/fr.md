@@ -7,7 +7,7 @@ Ce nœud utilise l'API Tencent Hunyuan3D pour identifier et générer automatiqu
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `modèle_3d` | Modèle 3D au format FBX. Le modèle doit comporter moins de 30 000 faces. | FILE3D | Oui | FBX, Any |
-| `graine` | Le seed contrôle si le nœud doit se relancer ; les résultats sont non déterministes quel que soit le seed. (par défaut : 0) | INT | Non | 0 à 2147483647 |
+| `graine` | Le seed contrôle si le nœud doit se relancer ; les résultats sont non déterministes quel que soit le seed. (par défaut : 0) | INT | Oui | 0 à 2147483647 |
 
 **Remarque :** L'entrée `model_3d` ne prend en charge que les fichiers au format FBX. Si un autre format de fichier 3D est fourni, le nœud générera une erreur.
 

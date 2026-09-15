@@ -1,18 +1,18 @@
 # FluxDisableGuidance
 
-Este nó desativa completamente o embedding de orientação em modelos Flux e semelhantes ao Flux. Ele recebe dados de condicionamento como entrada e remove o componente de orientação definindo-o como None, desativando efetivamente o condicionamento baseado em orientação para o processo de geração.
+Este nó desativa completamente o embed de guidance em modelos Flux e similares ao Flux. Ele recebe dados de condicionamento como entrada e define seu valor de guidance como None, efetivamente desativando o condicionamento baseado em guidance para o processo de geração.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `condicionamento` | Os dados de condicionamento a processar e dos quais remover a orientação | CONDITIONING | Sim | - |
+| `condicionamento` | Os dados de condicionamento a serem processados e dos quais o guidance será removido | CONDITIONING | Sim | - |
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `conditioning` | Os dados de condicionamento modificados com a orientação desativada | CONDITIONING |
+| `conditioning` | Os dados de condicionamento modificados com o guidance desativado | CONDITIONING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxDisableGuidance/pt-BR.md)
 

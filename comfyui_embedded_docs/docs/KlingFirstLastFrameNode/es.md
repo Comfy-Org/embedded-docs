@@ -8,19 +8,19 @@ Este nodo utiliza el modelo Kling 3.0 para generar un video. Crea el video basad
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `modelo` | Configuración del modelo y de generación. Seleccionar esta opción revela un parámetro anidado `resolution`. | DYNAMIC_COMBO | No | `"kling-v3"` |
+| `modelo` | Configuración del modelo y de generación. Seleccionar esta opción revela un parámetro anidado `resolution`. | DYNAMIC_COMBO | Sí | `"kling-v3"` |
 | `prompt` | La descripción de texto que guía la generación del video. Debe tener entre 1 y 2500 caracteres. | STRING | Sí | N/A |
-| `duración` | La duración del video en segundos (predeterminado: 5). | INT | No | 3 a 15 |
+| `duración` | La duración del video en segundos (predeterminado: 5). | INT | Sí | 3 a 15 |
 | `primer_fotograma` | La imagen inicial del video. Debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. | IMAGE | Sí | N/A |
 | `último_fotograma` | La imagen final del video. Debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. | IMAGE | Sí | N/A |
-| `generar_audio` | Controla si se genera audio para el video (predeterminado: True). | BOOLEAN | No | N/A |
-| `semilla` | Seed controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). | INT | No | 0 a 2147483647 |
+| `generar_audio` | Controla si se genera audio para el video (predeterminado: True). | BOOLEAN | Sí | N/A |
+| `semilla` | Seed controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de Kling V3
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `resolution` | La resolución del video generado (predeterminado: `"1080p"`). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `resolution` | La resolución del video generado (predeterminado: `"1080p"`). | COMBO | Sí | `"4k"`<br>`"1080p"`<br>`"720p"` |
 
 **Nota:** Las imágenes `first_frame` y `end_frame` deben tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1 para que el nodo funcione correctamente. El `prompt` debe tener entre 1 y 2500 caracteres. La opción `resolution` se corresponde con un modo de generación de Kling: `"4k"`, `"1080p"` (pro) y `"720p"` (estándar).
 

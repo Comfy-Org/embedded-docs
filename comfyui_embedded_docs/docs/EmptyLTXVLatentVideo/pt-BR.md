@@ -1,23 +1,23 @@
 # EmptyLTXVLatentVideo
 
-O nó EmptyLTXVLatentVideo cria um tensor latente vazio para processamento de vídeo. Ele gera um ponto de partida em branco com a largura, altura, comprimento e tamanho de lote especificados, que pode ser usado como entrada para fluxos de trabalho de geração de vídeo. O nó produz uma representação latente preenchida com zeros, cujas dimensões espaciais são 32 vezes menores que a largura e a altura configuradas, e cujo número de quadros é comprimido por um fator de 8.
+O nó EmptyLTXVLatentVideo cria um tensor de vídeo latente vazio (preenchido com zeros) usando `width`, `height`, `length` e `batch_size` que você especifica. Ele fornece um ponto de partida em branco para fluxos de trabalho de geração de vídeo LTXV, com as dimensões latentes automaticamente comprimidas em relação ao tamanho de vídeo solicitado.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `largura` | A largura do tensor latente de vídeo (padrão: 768, passo: 32) | INT | Sim | 64 a MAX_RESOLUTION |
-| `altura` | A altura do tensor latente de vídeo (padrão: 512, passo: 32) | INT | Sim | 64 a MAX_RESOLUTION |
+| `largura` | A largura do tensor de vídeo latente (padrão: 768, passo: 32) | INT | Sim | 64 a MAX_RESOLUTION |
+| `altura` | A altura do tensor de vídeo latente (padrão: 512, passo: 32) | INT | Sim | 64 a MAX_RESOLUTION |
 | `comprimento` | O número de quadros no vídeo latente (padrão: 97, passo: 8) | INT | Sim | 1 a MAX_RESOLUTION |
-| `tamanho_do_lote` | O número de vídeos latentes a serem gerados em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
+| `tamanho_do_lote` | O número de vídeos latentes a gerar em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
 
-Observação: O vídeo latente é comprimido em comparação às dimensões de entrada: as dimensões espaciais (largura e altura) são divididas por 32, e o número de quadros (comprimento) é dividido por 8 e arredondado para cima para o número inteiro mais próximo. Os valores de passo para largura, altura e comprimento ajudam a manter essas divisões uniformes.
+Observação: O vídeo latente é comprimido em comparação com as dimensões solicitadas: as dimensões espaciais (`width` e `height`) são divididas por 32, e a contagem de quadros (`length`) é dividida por 8 e arredondada para cima até o número inteiro mais próximo. Os valores de passo para `width`, `height` e `length` ajudam a manter essas divisões exatas.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `samples` | O tensor latente vazio gerado com valores zero nas dimensões especificadas, juntamente com uma proporção de redução espacial de 32 | LATENT |
+| `samples` | O tensor latente vazio gerado com valores zero nas dimensões especificadas, juntamente com uma taxa de redução espacial de 32 | LATENT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyLTXVLatentVideo/pt-BR.md)
 

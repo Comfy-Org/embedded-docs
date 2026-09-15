@@ -1,13 +1,15 @@
 # CLIP Birleştirme Ekle
 
-CLIPMergeAdd düğümü, ikinci modelden gelen yamaları birinci modele ekleyerek iki CLIP modelini birleştirir. İlk CLIP modelinin bir kopyasını oluşturur ve ikinci modelden konum kimlikleri ile logit ölçeği parametrelerini hariç tutarak anahtar yamaları seçici bir şekilde dahil eder. Bu, temel modelin yapısını koruyarak CLIP model bileşenlerini birleştirmenize olanak tanır.
+CLIPMergeAdd düğümü, ikinci modeldeki yamaları birinci modele ekleyerek iki CLIP modelini birleştirir. Birinci CLIP modelinin bir kopyasını oluşturur ve ikinci modeldeki anahtar yamaları seçerek dahil eder; konum kimliklerini ve logit ölçeği parametrelerini hariç tutar. Bu, temel modelin yapısını korurken CLIP model bileşenlerini birleştirmenize olanak tanır.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
 | `clip1` | Birleştirme için temel olarak kullanılacak ve klonlanacak temel CLIP modeli | CLIP | Evet | - |
 | `clip2` | Temel modele eklenecek anahtar yamaları sağlayan ikincil CLIP modeli | CLIP | Evet | - |
+
+`clip2` içinde `.position_ids` veya `.logit_scale` ile biten anahtarlar atlanır; böylece bu parametreler `clip1` değerlerini korur.
 
 ## Çıktılar
 

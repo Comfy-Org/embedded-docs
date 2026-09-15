@@ -1,16 +1,16 @@
 # FluxDisableGuidance
 
-Este nodo desactiva por completo la incrustación de guía en modelos Flux y similares. Toma datos de condicionamiento como entrada y elimina el componente de guía estableciéndolo en None, desactivando efectivamente el condicionamiento basado en guía para el proceso de generación.
+Este nodo desactiva por completo el embed de guía en Flux y en modelos similares a Flux. Toma datos de condicionamiento como entrada y establece su valor de guía en None, lo que desactiva efectivamente el condicionamiento basado en guía para el proceso de generación.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `acondicionamiento` | Los datos de condicionamiento que se procesarán y a los que se les eliminará la guía | CONDITIONING | Sí | - |
+| `acondicionamiento` | Los datos de condicionamiento que se procesarán para eliminar la guía | CONDITIONING | Sí | - |
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
 | `conditioning` | Los datos de condicionamiento modificados con la guía desactivada | CONDITIONING |
 

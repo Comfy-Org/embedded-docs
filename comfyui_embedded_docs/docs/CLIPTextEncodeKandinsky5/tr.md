@@ -1,20 +1,20 @@
 # CLIPTextEncodeKandinsky5
 
-CLIP Text Encode (Kandinsky 5) düğümü, Kandinsky 5 modeliyle kullanım için metin istemlerini hazırlar. İki ayrı metin girdisi alır, bunları sağlanan bir CLIP modeli kullanarak tokenleştirir ve tek bir conditioning çıktısında birleştirir. Bu çıktı, görüntü oluşturma sürecini yönlendirmek için kullanılır.
+CLIP Text Encode (Kandinsky 5) düğümü, Kandinsky 5 modeliyle kullanılmak üzere metin istemlerini hazırlar. İki ayrı metin girdisi alır, bunları sağlanan bir CLIP modeliyle tokenize eder ve görüntü oluşturma sürecini yönlendiren tek bir koşullandırma çıktısında birleştirir.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `clip` | Metin istemlerini tokenleştirmek ve kodlamak için kullanılan CLIP modeli. | CLIP | Evet |  |
-| `clip_l` | Birincil metin istemi. Bu girdi çok satırlı metin ve dinamik istemleri destekler. | STRING | Evet |  |
-| `qwen25_7b` | İkincil metin istemi. Bu girdi çok satırlı metin ve dinamik istemleri destekler. | STRING | Evet |  |
+| `clip` | Metin istemlerini tokenize etmek ve kodlamak için kullanılan CLIP modeli. | CLIP | Evet |  |
+| `clip_l` | Birincil metin istemi. Bu girdi çok satırlı metni ve dinamik istemleri destekler. | STRING | Evet |  |
+| `qwen25_7b` | İkincil metin istemi. Bu girdi çok satırlı metni ve dinamik istemleri destekler. | STRING | Evet |  |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `CONDITIONING` | Her iki metin isteminden üretilen ve görüntü oluşturma için bir Kandinsky 5 modeline beslenmeye hazır birleşik conditioning verisi. | CONDITIONING |
+| `CONDITIONING` | Her iki metin isteminden üretilen birleştirilmiş koşullandırma verisi; görüntü oluşturma için bir Kandinsky 5 modeline beslenmeye hazırdır. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeKandinsky5/tr.md)
 

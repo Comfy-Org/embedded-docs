@@ -8,9 +8,9 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model_task_id` | 이전 Tripo 노드(모델 생성 또는 모델 분할)에서 생성된 소스 모델의 작업 ID입니다. | MODEL_TASK_ID / SEGMENT_TASK_ID | 예 | - |
+| `모델 task_id` | 이전 Tripo 노드(모델 생성 또는 모델 분할)에서 생성된 소스 모델의 작업 ID입니다. | MODEL_TASK_ID / SEGMENT_TASK_ID | 예 | - |
 | `pbr` | PBR 재질 맵(베이스 컬러, 메탈릭, 러프니스, 노멀)입니다. 끄면 단색 텍스처를 생성합니다. (기본값: true) | BOOLEAN | 아니요 | true<br>false |
-| `texture_seed` | 텍스처 생성에 사용되는 시드입니다. (기본값: 42) 고급 입력입니다. | INT | 아니요 | 0 ~ 2147483647 |
+| `텍스처 시드` | 텍스처 생성에 사용되는 시드입니다. (기본값: 42) 고급 입력입니다. | INT | 아니요 | 0 ~ 2147483647 |
 | `texture_quality` | 생성된 텍스처의 품질입니다. `detailed` = HD 텍스처, `extreme` = 8K Ultra 텍스처입니다. (기본값: "standard") 고급 입력입니다. | COMBO | 아니요 | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | 텍스처가 모델에 정렬되는 방식입니다. (기본값: "original_image") 고급 입력입니다. | COMBO | 아니요 | "original_image"<br>"geometry" |
 | `texture_prompt` | 텍스처링을 위한 선택적 텍스트 안내입니다. 색상을 추론할 소스 이미지가 없는 가져온 모델(Tripo: Import Model)에는 실제로 필요합니다. 참조 이미지와 함께 사용할 수 없습니다. (기본값: 비어 있음) | STRING | 아니요 | - |

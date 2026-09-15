@@ -1,36 +1,38 @@
 # Wan 2.7 Referanstan Videoya
 
+Bu düğüm, sağlanan referans materyallerine dayalı olarak bir kişi veya nesneyi içeren bir video üretir. Metin isteminden videolar oluşturmak için Wan 2.7 modelini kullanır; tek karakterli performansları ve çok karakterli etkileşimleri destekler. Üretimin çalışması için en az bir referans video veya referans görsel sağlamalısınız.
+
 ## Girdiler
 
 ### Ortak Girdiler
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Video oluşturma için kullanılacak belirli model. | DYNAMIC_COMBO | Evet | "wan2.7-r2v" |
-| `seed` | Oluşturma için kullanılacak tohum (seed); çıktının rastgeleliğini kontrol etmeye yardımcı olur (varsayılan: 0). | INT | Evet | 0 ile 2147483647 |
-| `watermark` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). Bu gelişmiş bir ayardır. | BOOLEAN | Evet | True<br>False |
+| `model` | Video üretimi için kullanılacak belirli model. | DYNAMIC_COMBO | Evet | "wan2.7-r2v" |
+| `seed` | Üretim için kullanılacak tohum değeri; çıktının rastgeleliğini kontrol etmeye yardımcı olur (varsayılan: 0). | INT | Evet | 0 - 2147483647 |
+| `watermark` | Sonuca yapay zekâ tarafından oluşturulmuş filigran eklenip eklenmeyeceği (varsayılan: False). Bu gelişmiş bir ayardır. | BOOLEAN | Evet | True<br>False |
 
 ### wan2.7-r2v Girdileri
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `prompt` | Videoyu tanımlayan istem. Referans karakterlere atıfta bulunmak için 'character1' ve 'character2' gibi tanımlayıcılar kullanın. En az bir karakter içermelidir. | STRING | Evet | - |
+| `prompt` | Videoyu tanımlayan istem. Referans karakterlere atıfta bulunmak için 'character1' ve 'character2' gibi tanımlayıcıları kullanın. En az bir karakter içermelidir. | STRING | Evet | - |
 | `negative_prompt` | Kaçınılması gerekenleri tanımlayan negatif istem (varsayılan: boş). | STRING | Hayır | - |
 | `resolution` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | "720P"<br>"1080P" |
 | `ratio` | Çıktı videosunun en-boy oranı. | COMBO | Evet | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
-| `duration` | Oluşturulan videonun saniye cinsinden uzunluğu (varsayılan: 5). | INT | Evet | 2 ile 10 |
+| `duration` | Oluşturulan videonun saniye cinsinden uzunluğu (varsayılan: 5). | INT | Evet | 2 - 10 |
 
 ### Referans Girdileri
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `reference_videos` | Genişletilebilir yuva: 3 adede kadar referans videosu bağlayın (`video1` ile `video3` arasındaki yuvalar). Genel olarak en az bir referans videosu veya görseli gereklidir. | VIDEO | Hayır | 0 ile 3 öğe |
-| `reference_images` | Genişletilebilir yuva: 5 adede kadar referans görseli bağlayın (`image1` ile `image5` arasındaki yuvalar). Genel olarak en az bir referans videosu veya görseli gereklidir. | IMAGE | Hayır | 0 ile 5 öğe |
+| `reference_videos` | Genişletilebilir yuva: en fazla 3 referans video bağlayın (`video1` ile `video3` yuvaları). Toplamda en az bir referans video veya görsel gereklidir. | VIDEO | Hayır | 0 - 3 öğe |
+| `reference_images` | Genişletilebilir yuva: en fazla 5 referans görsel bağlayın (`image1` ile `image5` yuvaları). Toplamda en az bir referans video veya görsel gereklidir. | IMAGE | Hayır | 0 - 5 öğe |
 
 **Önemli Kısıtlamalar:**
 
-* `reference_videos` veya `reference_images` girdilerinde en az bir referans videosu veya referans görseli sağlamalısınız.
-* Referans videoları ve referans görsellerinin toplam birleşik sayısı 5'i aşamaz.
+* `reference_videos` veya `reference_images` girdilerinde en az bir referans video ya da referans görsel sağlamalısınız. Aksi halde düğüm bir hata oluşturur.
+* Referans videolarının ve referans görsellerinin toplam birleşik sayısı 5'i aşamaz.
 * `prompt` girdisi en az bir karakter içermelidir.
 
 ## Çıktılar

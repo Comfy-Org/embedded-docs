@@ -1,20 +1,20 @@
 # Flux Prueba virtual de ropa
 
-Este nodo realiza un probador virtual vistiendo a una persona con una imagen de prenda proporcionada. Utiliza la API BFL Flux VTO para generar una imagen realista de la persona usando la prenda especificada.
+Este nodo realiza una prueba virtual de ropa al vestir a una persona con una imagen de prenda proporcionada. Envía las imágenes de la persona y de la prenda al servicio BFL Flux VTO, que genera una imagen realista de la persona usando la prenda. Se puede usar una instrucción de texto opcional para describir cómo debería quedar o verse la prenda.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
-|-----------|-------------|--------------|-----------|-------|
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
 | `persona` | Imagen de la persona a vestir. | IMAGE | Sí | - |
 | `prenda` | Imagen de la prenda a aplicar. | IMAGE | Sí | - |
-| `instrucción` | Instrucción opcional de estilo en lenguaje natural (p. ej., cómo debe ajustarse la prenda). (predeterminado: vacío) | STRING | No | - |
-| `semilla` | La semilla aleatoria utilizada para crear el ruido. (predeterminado: 0) | INT | No | 0 a 18446744073709551615 |
+| `instrucción` | Instrucción opcional de estilo en lenguaje natural (p. ej., cómo debería quedar la prenda). El valor predeterminado es una cadena vacía. | STRING | No | - |
+| `semilla` | La semilla aleatoria utilizada para crear el ruido. Predeterminado: 0. | INT | No | 0 a 18446744073709551615 |
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
-|------------------|-------------|--------------|
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
 | `image` | La imagen resultante que muestra a la persona usando la prenda proporcionada. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxVTONode/es.md)

@@ -1,22 +1,22 @@
 # 切换
 
-Switch 节点根据布尔条件在两个可能的输入之间进行选择。当 `switch` 启用（为 true）时，它会把 `on_true` 输入传递到输出；当禁用（为 false）时，则传递 `on_false`。仅对所选分支进行求值，因此另一个输入不需要连接。
+If/Else Switch 节点根据布尔条件在两个可能的输入之间进行选择。当 `switch` 启用（true）时，它将 `on_true` 输入传递到输出；当禁用（false）时，它传递 `on_false`。这些输入是惰性的，因此只会对所选分支进行求值，另一个输入无需连接。
 
 ## 输入
 
-| 参数 | 描述 | 数据类型 | 必填 | 范围 |
+| 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
 | --- | --- | --- | --- | --- |
-| `切换` | 决定传递哪个输入的布尔条件。启用（true）时选择 `on_true` 输入；禁用（false）时选择 `on_false` 输入。 | BOOLEAN | 是 |  |
-| `为假时` | 当 `switch` 禁用（false）时传递到输出的数据。仅当 `switch` 为 false 时才需要此输入。 | MATCH_TYPE | 否 |  |
-| `为真时` | 当 `switch` 启用（true）时传递到输出的数据。仅当 `switch` 为 true 时才需要此输入。 | MATCH_TYPE | 否 |  |
+| `切换` | 一个布尔条件，用于决定将哪个输入传递到输出。当启用（true）时，选择 `on_true` 输入。当禁用（false）时，选择 `on_false` 输入。 | BOOLEAN | 是 |  |
+| `为假时` | 当 `switch` 禁用（false）时要传递到输出的数据。仅当 `switch` 为 false 时才会请求此输入。 | MATCH_TYPE | 否 |  |
+| `为真时` | 当 `switch` 启用（true）时要传递到输出的数据。仅当 `switch` 为 true 时才会请求此输入。 | MATCH_TYPE | 否 |  |
 
-**输入要求说明：** `on_false` 和 `on_true` 输入是条件必填的。节点仅在 `switch` 为 true 时要求 `on_true` 输入，并且仅在 `switch` 为 false 时要求 `on_false` 输入。两个输入必须具有相同的数据类型，并且必须与输出的数据类型一致。如果所选输入未连接，节点将不输出任何值。
+**输入要求说明：** `on_false` 和 `on_true` 输入是按条件请求的。仅当 `switch` 为 true 时，节点才会请求 `on_true`；仅当 `switch` 为 false 时，节点才会请求 `on_false`。两个输入的数据类型必须相同，并且该类型必须与输出数据类型一致。如果所选的输入未连接，则节点不输出任何值。
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `输出` | 被选中的数据。当 `switch` 为 true 时，它是来自 `on_true` 输入的值；当 `switch` 为 false 时，它是来自 `on_false` 输入的值。 | MATCH_TYPE |
+| `output` | 所选择的数据：当 `switch` 为 true 时，为来自 `on_true` 的值；当 `switch` 为 false 时，为来自 `on_false` 的值。 | MATCH_TYPE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfySwitchNode/zh.md)
 

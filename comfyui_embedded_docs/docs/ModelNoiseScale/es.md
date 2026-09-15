@@ -1,15 +1,13 @@
 # Escala de Ruido del Modelo
 
-## Descripción general
-
-Este nodo ajusta la escala de ruido utilizada durante el muestreo del modelo. Permite establecer un valor específico de escala de ruido, que controla la cantidad de ruido aplicado al proceso de muestreo del modelo.
+Este nodo ajusta la escala de ruido utilizada durante el muestreo del modelo. Crea una copia del modelo de entrada, aplica la escala de ruido especificada a su configuración de muestreo y devuelve el modelo modificado.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo al que se le aplica el ajuste de escala de ruido. | MODEL | Sí | - |
-| `escala_ruido` | Escala de ruido de entrenamiento absoluta. Por ejemplo, HiDream-O1 base: 8.0, dev: 7.5. (valor predeterminado: 1.0) | FLOAT | Sí | 0.0 a 64.0 (step: 0.01) |
+| `modelo` | El modelo al que se aplicará el ajuste de escala de ruido. | MODEL | Sí | - |
+| `escala_ruido` | Escala de ruido absoluta de entrenamiento. Por ejemplo, HiDream-O1 base: 8.0, dev: 7.5. (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 64.0 (paso: 0.01) |
 
 ## Salidas
 

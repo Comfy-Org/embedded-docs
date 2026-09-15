@@ -1,22 +1,22 @@
 # Salvar Nó SVG
 
-Salva arquivos SVG no disco. Este nó recebe dados SVG como entrada e os salva no seu diretório de saída com incorporação opcional de metadados. O nó gerencia automaticamente a nomeação de arquivos com sufixos contadores e pode incorporar informações do prompt do fluxo de trabalho diretamente no arquivo SVG.
+Salva arquivos SVG no disco. Este nó recebe dados SVG como entrada e os grava no diretório de saída do ComfyUI, gerenciando automaticamente a nomenclatura dos arquivos com sufixos de contador. Quando informações de prompt do fluxo de trabalho estão disponíveis, elas são incorporadas diretamente ao arquivo SVG como um elemento de metadados.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `svg` | Os dados SVG a serem salvos no disco | SVG | Sim | - |
-| `prefixo_do_arquivo` | O prefixo para o arquivo a ser salvo. Pode incluir informações de formatação, como %date:yyyy-MM-dd% ou %Empty Latent Image.width%, para incluir valores de nós. (padrão: "svg/ComfyUI") | STRING | Sim | - |
+| `prefixo_do_arquivo` | O prefixo do arquivo a ser salvo. Pode incluir informações de formatação, como %date:yyyy-MM-dd% ou %Empty Latent Image.width%, para incluir valores de nós. (padrão: "svg/ComfyUI") | STRING | Sim | - |
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `svg` | Os dados SVG originais, passados adiante após o salvamento | SVG |
+| `svg` | Os dados SVG originais, repassados após o salvamento | SVG |
 | `ui` | Informações do arquivo salvo, incluindo nome do arquivo, subpasta e tipo, para exibição na interface do ComfyUI | DICT |
 
-**Nota:** Este nó incorpora automaticamente metadados do fluxo de trabalho (prompt e informações extras de PNG) no arquivo SVG quando disponíveis. Os metadados são inseridos como uma seção CDATA dentro do elemento de metadados do SVG. Os arquivos são salvos usando o padrão `filename_prefix_00001_.svg`; ao processar um lote, `%batch_num%` no prefixo é substituído pelo índice do item atual do lote.
+**Nota:** Este nó incorpora automaticamente metadados do fluxo de trabalho (prompt e informações extras de PNG) ao arquivo SVG quando disponíveis. Os metadados são inseridos como uma seção CDATA dentro do elemento de metadados do SVG. Os arquivos são salvos usando o padrão `filename_prefix_00001_.svg`; ao processar um lote, `%batch_num%` no prefixo é substituído pelo índice do item atual do lote. O nó é um nó de saída, portanto produz um resultado salvo na pasta de saída mesmo que o arquivo em si não seja exibido como uma pré-visualização de imagem.
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveSVGNode/pt-BR.md)
 

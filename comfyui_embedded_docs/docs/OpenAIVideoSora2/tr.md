@@ -1,31 +1,32 @@
 # OpenAI Sora - Video
 
-OpenAIVideoSora2 düğümü, OpenAI'nin Sora modellerini kullanarak videolar oluşturur. Bir metin istemine ve isteğe bağlı bir referans giriş görseline dayalı olarak video içeriği üretir ve ardından oluşturulan videoyu çıktı olarak sunar. Düğüm, seçilen modele bağlı olarak farklı video sürelerini ve çözünürlüklerini destekler.
+OpenAIVideoSora2 düğümü, OpenAI'nin Sora modelleriyle video üretir. Bir metin istemi ile isteğe bağlı tek bir referans görseli alır, isteği OpenAI'ye gönderir, üretimin tamamlanmasını bekler ve ortaya çıkan videoyu döndürür. Desteklenen süreler ve çözünürlükler seçilen modele bağlıdır.
 
-**KULLANIMDAN KALDIRMA BİLDİRİMİ:** OpenAI, Eylül 2026'da Sora v2 API'sine hizmet vermeyi durduracaktır. Bu düğüm, o tarihte ComfyUI'dan kaldırılacaktır.
+**KULLANIMDAN KALDIRMA UYARISI:** OpenAI, Sora v2 API'sini sunmayı Eylül 2026'da durduracaktır. Bu düğüm o zaman ComfyUI'dan kaldırılacaktır.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Video oluşturma için kullanılacak OpenAI Sora modeli (varsayılan: "sora-2") | COMBO | Evet | "sora-2"<br>"sora-2-pro" |
-| `komut istemi` | Yönlendirici metin; bir giriş görseli mevcutsa boş olabilir (varsayılan: boş) | STRING | Evet | - |
+| `model` | Video üretimi için kullanılacak OpenAI Sora modeli (varsayılan: "sora-2") | COMBO | Evet | "sora-2"<br>"sora-2-pro" |
+| `komut istemi` | Yönlendirici metin; bir girdi görseli varsa boş olabilir (varsayılan: boş dize) | STRING | Evet | - |
 | `boyut` | Oluşturulan videonun çözünürlüğü (varsayılan: "1280x720") | COMBO | Evet | "720x1280"<br>"1280x720"<br>"1024x1792"<br>"1792x1024" |
 | `süre` | Oluşturulan videonun saniye cinsinden süresi (varsayılan: 8) | COMBO | Evet | 4<br>8<br>12 |
-| `görsel` | Video oluşturma için kullanılan isteğe bağlı referans giriş görseli (fit, karakter, sahne referansı vb.); yalnızca tek bir görsel desteklenir | IMAGE | Hayır | - |
-| `tohum` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen seed değeri; gerçek sonuçlar seed değerinden bağımsız olarak deterministik değildir (varsayılan: 0) | INT | Hayır | 0 - 2147483647 |
+| `görsel` | Video üretimi için kullanılan isteğe bağlı girdi referans görseli; yalnızca tek bir görsel desteklenir | IMAGE | Hayır | - |
+| `tohum` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirlemek için tohum; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0) | INT | Hayır | 0 - 2147483647 |
 
-**Sınırlamalar ve Kısıtlamalar:**
+**Kısıtlamalar ve Sınırlamalar:**
 
-- "sora-2" modeli yalnızca "720x1280" ve "1280x720" çözünürlüklerini destekler; "1024x1792" ve "1792x1024" seçenekleri yalnızca "sora-2-pro" modeliyle geçerlidir
-- Bir görsel bağlandığında, tam olarak bir görsel içermelidir; birden fazla görsel bağlamak hata oluşturur
-- Sonuçlar, seed değeri ne olursa olsun deterministik değildir
+- "sora-2" modeli yalnızca "720x1280" ve "1280x720" boyutlarını destekler; "sora-2" ile "1024x1792" veya "1792x1024" seçmek hata verir. Daha büyük boyutlar yalnızca "sora-2-pro" ile kullanılabilir.
+- Bir görsel bağlandığında, tam olarak bir görsel içermelidir; birden fazla görsel bağlamak hata verir.
+- Sonuçlar, tohum değerinden bağımsız olarak deterministik değildir.
+- Görüntülenen fiyat tahmini seçilen `model`, `size` ve `duration` değerlerine bağlıdır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | OpenAI Sora tarafından oluşturulan video dosyası | VIDEO |
+| `output` | OpenAI Sora tarafından oluşturulan video | VIDEO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIVideoSora2/tr.md)
 

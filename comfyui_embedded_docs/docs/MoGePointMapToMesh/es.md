@@ -1,22 +1,22 @@
 # MoGe Point Map a Malla
 
-Este nodo convierte un mapa de puntos MoGe en una malla 3D. Toma los datos de geometría generados por un nodo de estimación de profundidad MoGe y los triangula en una malla con coordenadas UV y una textura opcional.
+Este nodo convierte un mapa de puntos de MoGe en una malla 3D. Toma datos de geometría producidos por un nodo de estimación de profundidad de MoGe y los triangula en una malla con coordenadas UV y una textura opcional.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `moge_geometry` | Los datos de geometría MoGe que contienen mapas de puntos, profundidad y, opcionalmente, la imagen de origen. | MOGE_GEOMETRY | Sí | N/D |
-| `batch_index` | Qué imagen de una geometría MoGe por lotes se va a mallar. El número de vértices por imagen difiere, por lo que los lotes no se pueden apilar en una sola MESH (predeterminado: 0). | INT | Sí | 0 a 4096 |
-| `decimation` | Paso de vértice; 1 = resolución completa (predeterminado: 1). | INT | Sí | 1 a 8 |
-| `discontinuity_threshold` | Descarta píxeles cuyo rango de profundidad 3x3 supere esta fracción. 0 = desactivado (predeterminado: 0.04). | FLOAT | Sí | 0.0 a 1.0 |
-| `texture` | Transmite la imagen de origen como textura baseColor (predeterminado: True). | BOOLEAN | Sí | True/False |
+| `moge_geometry` | Los datos de geometría de MoGe que contienen mapas de puntos, profundidad y, opcionalmente, la imagen de origen. | MOGE_GEOMETRY | Sí | N/A |
+| `batch_index` | Qué imagen de una geometría de MoGe por lotes se convertirá en malla. Los recuentos de vértices por imagen difieren, por lo que los lotes no se pueden apilar en una única MESH (predeterminado: 0). | INT | Sí | 0 a 4096 |
+| `decimation` | Paso de vértices; 1 = resolución completa (predeterminado: 1). | INT | Sí | 1 a 8 |
+| `discontinuity_threshold` | Descarta los píxeles cuyo rango de profundidad 3x3 supere esta fracción. 0 = desactivado (predeterminado: 0.04). | FLOAT | Sí | 0.0 a 1.0 |
+| `texture` | Conserva la imagen de origen como la textura baseColor (predeterminado: True). | BOOLEAN | Sí | True/False |
 
-Nota: `batch_index` debe ser menor que el tamaño del lote de la `moge_geometry` de entrada; si se selecciona un índice fuera de rango, se genera un error. Si la triangulación produce una malla vacía, el nodo genera un error; establecer `discontinuity_threshold` en 0 desactiva el filtro de discontinuidad de profundidad. La malla de salida se convierte a coordenadas glTF: los datos MoGe en perspectiva (X derecha, Y abajo, Z hacia adelante) se invierten para coincidir con glTF (Y arriba, Z hacia atrás), y los datos panorámicos se rotan en consecuencia. Cuando `texture` está habilitado, la imagen de origen de `moge_geometry` se usa como textura baseColor.
+Nota: `batch_index` debe ser menor que el tamaño de lote de la entrada `moge_geometry`; seleccionar un índice fuera de rango genera un error. La entrada debe contener una salida de puntos; de lo contrario, el nodo genera un error. Si la triangulación produce una malla vacía, el nodo genera un error — establecer `discontinuity_threshold` en 0 desactiva el filtro de discontinuidad de profundidad. La malla de salida se convierte a coordenadas glTF: los datos de MoGe en perspectiva (X derecha, Y abajo, Z adelante) se voltean para coincidir con glTF (Y arriba, Z atrás), y los datos panorámicos (geometría sin parámetros intrínsecos) se rotan en consecuencia con el sentido de giro corregido. Cuando `texture` está habilitado, la imagen de origen de `moge_geometry` se usa como la textura baseColor.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
 | `MESH` | Una malla 3D con vértices, caras, coordenadas UV y una textura baseColor opcional de la imagen de origen. | MESH |
 

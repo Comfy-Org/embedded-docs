@@ -4,26 +4,26 @@ O nó SamplerDPMAdaptative implementa um amostrador DPM (Modelo Probabilístico 
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `ordem` | A ordem do método do amostrador (padrão: 3) | INT | Sim | 2-3 |
 | `rtol` | Tolerância relativa para controle de erro (padrão: 0.05) | FLOAT | Sim | 0.0-100.0 |
 | `atol` | Tolerância absoluta para controle de erro (padrão: 0.0078) | FLOAT | Sim | 0.0-100.0 |
-| `h_init` | Tamanho inicial do passo (padrão: 0.05) | FLOAT | Sim | 0.0-100.0 |
+| `h_init` | Tamanho de passo inicial (padrão: 0.05) | FLOAT | Sim | 0.0-100.0 |
 | `pcoeff` | Coeficiente proporcional para controle do tamanho do passo (padrão: 0.0) | FLOAT | Sim | 0.0-100.0 |
 | `icoeff` | Coeficiente integral para controle do tamanho do passo (padrão: 1.0) | FLOAT | Sim | 0.0-100.0 |
 | `dcoeff` | Coeficiente derivativo para controle do tamanho do passo (padrão: 0.0) | FLOAT | Sim | 0.0-100.0 |
-| `aceitar_segurança` | Fator de segurança para aceitação de passos (padrão: 0.81) | FLOAT | Sim | 0.0-100.0 |
+| `aceitar_segurança` | Fator de segurança para aceitação do passo (padrão: 0.81) | FLOAT | Sim | 0.0-100.0 |
 | `eta` | Parâmetro de estocasticidade (padrão: 0.0) | FLOAT | Sim | 0.0-100.0 |
-| `s_ruído` | Fator de escalonamento de ruído (padrão: 1.0) | FLOAT | Sim | 0.0-100.0 |
+| `s_ruído` | Fator de escala de ruído (padrão: 1.0) | FLOAT | Sim | 0.0-100.0 |
 
-Todas as entradas são parâmetros avançados usados para ajustar finamente o comportamento da amostragem adaptativa.
+Todas as entradas são parâmetros avançados usados para ajustar finamente o comportamento da amostragem adaptativa. Todas as entradas numéricas permitem valores decimais e aceitam um mínimo de 0.0 e um máximo de 100.0, exceto `order`, que é limitado aos valores inteiros 2 ou 3.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
+| Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `sampler` | Retorna uma instância de amostrador DPM adaptativo configurada | SAMPLER |
+| `sampler` | Retorna uma instância configurada do amostrador DPM adaptativo | SAMPLER |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerDPMAdaptative/pt-BR.md)
 

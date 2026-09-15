@@ -1,6 +1,6 @@
 # BoşAceAdımGizliSes
 
-Empty Ace Step 1.0 Latent Audio düğümü, belirtilen sürede boş latent ses örnekleri oluşturur. Girdi saniyeleri ve ses işleme parametrelerine göre hesaplanan uzunlukta, sıfırlarla doldurulmuş sessiz ses latentlerinden oluşan bir grup oluşturur. Bu düğüm, latent temsiller gerektiren ses işleme iş akışlarını başlatmak için kullanışlıdır.
+Empty Ace Step 1.0 Latent Audio düğümü, seçilen süre için boş latent ses örnekleri oluşturur. Bir grup sessiz (tamamen sıfır) ses latentini doldurur; uzunluk, ses işleme parametreleri kullanılarak `seconds` girdisinden hesaplanır. Bu genellikle başlangıç noktası olarak bir latent gösterimine ihtiyaç duyan ses iş akışlarını başlatmak için kullanılır.
 
 ## Girdiler
 
@@ -13,7 +13,7 @@ Empty Ace Step 1.0 Latent Audio düğümü, belirtilen sürede boş latent ses �
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | Sıfırlarla dolu boş latent ses örnekleri döndürür. Çıktı, bir `samples` tensörü ve "audio" olarak ayarlanmış bir `type` alanı içerir. | LATENT |
+| `output` | Sıfırlarla doldurulmuş boş latent ses örneklerini döndürür. Çıktı, bir `samples` tensörü ve "audio" olarak ayarlanmış bir `type` alanı içerir. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyAceStepLatentAudio/tr.md)
 

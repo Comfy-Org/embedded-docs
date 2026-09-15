@@ -1,18 +1,18 @@
 # Tohum
 
-Seed düğümü, diğer düğümlerdeki rastgele işlemlerin tekrarlanabilirliğini kontrol etmek için tohum olarak kullanılabilecek bir tamsayı değeri sağlar. Tutarlı bir başlangıç değeri sağlayarak, gerektiğinde üretilen sonuçların tekrarlanabilir kalmasına yardımcı olur.
+Seed düğümü, diğer düğümlerdeki rastgele işlemlerin yeniden üretilebilirliğini kontrol etmek için tohum olarak kullanılabilecek bir tam sayı değeri sağlar. Tutarlı bir başlangıç değeri sağlayarak, gerektiğinde üretilen sonuçların yinelenebilir kalmasına yardımcı olur.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `tohum` | Kullanılacak tohum değeri. Üretimden sonra kontrol seçeneği, değerin her üretimden sonra sabit mi kalacağını yoksa değişeceğini belirler; bu düğümde sabit olarak ayarlanmıştır. | INT | Evet | 0 ile 9223372036854775807 |
+| `tohum` | Kullanılacak tohum değeri. Üretim sonrası kontrol seçeneği, değerin sabit kalıp kalmayacağını veya her üretimden sonra değişip değişmeyeceğini belirler; bu düğümde sabit olarak ayarlanmıştır. | INT | Evet | 0 ile 9223372036854775807 |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
-|-------------|-----------|-----------|
-| `tohum` | Üretilen tohum değeri. | INT |
+| Çıktı Adı | Açıklama | Veri Türü |
+|-------------|-------------|-----------|
+| `seed` | Üretilen tohum değeri. | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SeedNode/tr.md)
 

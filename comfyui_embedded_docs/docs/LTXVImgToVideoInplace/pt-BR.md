@@ -9,8 +9,8 @@ LTXVImgToVideoInplace codifica uma imagem de entrada no espaço latente e coloca
 | `vae` | O modelo VAE usado para codificar a imagem de entrada no espaço latente. | VAE | Sim | - |
 | `image` | A imagem de entrada a ser codificada e usada para condicionar o vídeo latente. | IMAGE | Sim | - |
 | `latent` | A representação de vídeo latente de destino a ser modificada. | LATENT | Sim | - |
-| `strength` | Controla a força com que a imagem codificada condiciona os quadros iniciais do latente. Um valor de 1.0 condiciona totalmente os quadros iniciais com a imagem codificada, enquanto valores menores os condicionam com menos intensidade. A máscara de ruído para os quadros iniciais é definida como `1.0 - strength`. (padrão: 1.0) | FLOAT | Não | 0.0 - 1.0 |
-| `bypass` | Ignora o condicionamento. Quando habilitado, o nó retorna o latente de entrada inalterado. (padrão: False) | BOOLEAN | Não | True or False |
+| `strength` | Controla a força com que a imagem codificada condiciona os quadros iniciais do latente. Um valor de 1.0 condiciona totalmente os quadros iniciais com a imagem codificada, enquanto valores menores os condicionam com menos intensidade. A máscara de ruído para os quadros iniciais é definida como `1.0 - strength`. (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `bypass` | Ignora o condicionamento. Quando habilitado, o nó retorna o latente de entrada inalterado. (padrão: False) | BOOLEAN | Sim | True or False |
 
 **Nota:** A `image` será redimensionada automaticamente para corresponder às dimensões espaciais exigidas pelo `vae` para codificação, com base na largura e altura do latente de entrada `latent`. Somente os canais RGB da `image` são usados para codificação.
 

@@ -1,13 +1,13 @@
 # Backend de Atenção do Modelo
 
-Este nó seleciona o backend de atenção densa que um modelo usa para seus cálculos de atenção. Ele clona o modelo fornecido, aplica o backend escolhido e retorna o clone modificado. Quando usado com Block Sparse Attention, esse backend é utilizado sempre que a atenção esparsa estiver inativa ou não for suportada. Se o backend selecionado não estiver disponível, o nó recorre automaticamente à atenção PyTorch.
+Este nó seleciona a implementação de atenção densa para um modelo, clona o modelo, aplica o backend escolhido e retorna o clone com patch. Quando usado com Block Sparse Attention, esse backend é usado sempre que a atenção esparsa estiver inativa ou não for suportada. Se o backend selecionado estiver indisponível, o nó recorre automaticamente à atenção PyTorch.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo a ser modificado. | MODEL | Sim |  |
-| `attention` | O backend de atenção densa a ser aplicado (padrão: "pytorch attention"). A atenção do Comfy Kitchen usa atenção INT8 quantizada e está disponível apenas em GPUs Nvidia e AMD. Se o backend selecionado não estiver disponível, a atenção PyTorch é usada como alternativa. | COMBO | Sim | "pytorch attention"<br>"comfy kitchen attention" |
+| `model` | O modelo a receber o patch. | MODEL | Sim |  |
+| `attention` | O backend de atenção densa a aplicar. A atenção do Comfy Kitchen usa atenção INT8 quantizada e está disponível apenas em GPUs NVIDIA e AMD. Padrão: "pytorch attention". Se o backend selecionado estiver indisponível, a atenção PyTorch será usada como fallback. | COMBO | Sim | "pytorch attention"<br>"comfy kitchen attention" |
 
 Nota: A opção "comfy kitchen attention" só é listada quando o módulo de atenção INT8 do Comfy Kitchen está disponível no ambiente atual.
 

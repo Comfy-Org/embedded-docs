@@ -1,22 +1,22 @@
 # Cargar Punto de Control
 
-Carga un archivo de checkpoint de modelo de difusión y lo descompone en tres componentes principales: el modelo principal utilizado para eliminar el ruido de los latentes, el codificador de texto CLIP y el codificador/decodificador de imágenes VAE. Este nodo detecta automáticamente todos los archivos de modelo en la carpeta `ComfyUI/models/checkpoints` y cualquier ruta adicional configurada en su archivo `extra_model_paths.yaml`.
+Carga un archivo de checkpoint de modelo de difusión y lo divide en tres componentes principales: el modelo principal usado para la eliminación de ruido de los latentes, el codificador de texto CLIP y el codificador/decodificador de imágenes VAE. El nodo detecta automáticamente todos los archivos de modelo en la carpeta `ComfyUI/models/checkpoints` y cualquier ruta adicional configurada en tu archivo `extra_model_paths.yaml`.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `nombre_ckpt` | El nombre del checkpoint (modelo) a cargar. Seleccione el nombre del archivo de checkpoint, que determina el modelo de IA utilizado para la generación posterior de imágenes. | COMBO | Sí | Todos los archivos de modelo en la carpeta de checkpoints |
+| `nombre_ckpt` | El nombre del checkpoint (modelo) a cargar. Selecciona el nombre del archivo de modelo de checkpoint, que determina el modelo de IA usado para la generación de imágenes posterior. | COMBO | Sí | Todos los archivos de modelo encontrados en la carpeta de checkpoints |
 
-**Nota:** Si se añaden nuevos archivos de modelo mientras ComfyUI está en ejecución, debe actualizar el navegador (Ctrl+R) para ver los nuevos archivos en la lista desplegable.
+**Nota:** Si se agregan nuevos archivos de modelo mientras ComfyUI está en ejecución, necesitas actualizar el navegador (Ctrl+R) para ver los nuevos archivos en la lista desplegable.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `MODEL` | El modelo utilizado para eliminar el ruido de los latentes. Este es el modelo de difusión principal utilizado para la generación de imágenes. | MODEL |
-| `CLIP` | El modelo CLIP utilizado para codificar las indicaciones de texto, convirtiendo las descripciones de texto en información que la IA puede entender. | CLIP |
-| `VAE` | El modelo VAE utilizado para codificar y decodificar imágenes hacia y desde el espacio latente. | VAE |
+| `MODEL` | El modelo usado para la eliminación de ruido de los latentes. Este es el modelo de difusión central usado para la generación de imágenes. | MODEL |
+| `CLIP` | El modelo CLIP usado para codificar prompts de texto, convirtiendo descripciones de texto en información que la IA puede entender. | CLIP |
+| `VAE` | El modelo VAE usado para codificar y decodificar imágenes hacia y desde el espacio latente. | VAE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointLoaderSimple/es.md)
 

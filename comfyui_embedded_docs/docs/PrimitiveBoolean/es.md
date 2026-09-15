@@ -1,6 +1,6 @@
 # Booleano
 
-El nodo Boolean ofrece una forma sencilla de pasar valores booleanos (verdadero/falso) a través de su flujo de trabajo. Toma un valor booleano de entrada y emite el mismo valor sin cambios, lo que le permite controlar parámetros booleanos en otros nodos.
+El nodo Boolean pasa un valor booleano (true/false) a través de tu flujo de trabajo. Toma una entrada booleana y devuelve el mismo valor sin cambios, por lo que puedes introducir un ajuste true/false en otros nodos que necesiten uno.
 
 ## Entradas
 

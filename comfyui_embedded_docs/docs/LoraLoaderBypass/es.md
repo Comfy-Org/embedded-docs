@@ -1,18 +1,20 @@
 # Cargar LoRA (Bypass) (Para depuración)
 
-El nodo LoraLoaderBypass aplica una LoRA (Adaptación de Bajo Rango) a un modelo de difusión y a un modelo CLIP en un modo especial de «bypass». A diferencia de un cargador de LoRA estándar, este método no modifica permanentemente los pesos del modelo base. En su lugar, calcula la salida añadiendo el efecto de la LoRA al paso hacia adelante normal del modelo, lo cual es útil para el entrenamiento o cuando se trabaja con modelos cuyos pesos se han descargado.
+El nodo LoraLoaderBypass aplica una LoRA (Low-Rank Adaptation) a un modelo de difusión y a un modelo CLIP en un modo especial "bypass". A diferencia de un cargador de LoRA estándar, este método no modifica permanentemente los pesos del modelo base. En su lugar, calcula el resultado sumando la contribución de la LoRA a la pasada hacia adelante normal del modelo, lo cual es útil para entrenamiento o cuando se trabaja con modelos cuyos pesos están descargados de memoria.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `model` | El modelo de difusión al que se aplicará la LoRA. | MODEL | Sí | - |
 | `clip` | El modelo CLIP al que se aplicará la LoRA. | CLIP | Sí | - |
 | `lora_name` | El nombre de la LoRA. Los archivos LoRA disponibles se cargan desde la carpeta `loras`. | COMBO | Sí | Lista de archivos LoRA disponibles |
-| `strength_model` | Cuánto modificar el modelo de difusión. Este valor puede ser negativo (por defecto: 1.0). | FLOAT | Sí | -100.0 a 100.0 (paso: 0.01) |
-| `strength_clip` | Cuánto modificar el modelo CLIP. Este valor puede ser negativo (por defecto: 1.0). | FLOAT | Sí | -100.0 a 100.0 (paso: 0.01) |
+| `strength_model` | Intensidad con la que se modifica el modelo de difusión. Este valor puede ser negativo (predeterminado: 1.0). | FLOAT | Sí | -100.0 a 100.0 (paso: 0.01) |
+| `strength_clip` | Intensidad con la que se modifica el modelo CLIP. Este valor puede ser negativo (predeterminado: 1.0). | FLOAT | Sí | -100.0 a 100.0 (paso: 0.01) |
 
-**Nota:** Si tanto `strength_model` como `strength_clip` se establecen en 0, el nodo devuelve las entradas `model` y `clip` originales sin procesar.
+**Nota:** Si tanto `strength_model` como `strength_clip` se establecen en 0, el nodo devuelve las entradas originales `model` y `clip` sin modificar y sin procesamiento.
+
+**Nota:** El archivo LoRA seleccionado se almacena en caché después de cargarse por primera vez. Solo se vuelve a leer desde el disco cuando se elige un `lora_name` diferente.
 
 ## Salidas
 

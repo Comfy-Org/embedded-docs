@@ -1,14 +1,21 @@
 # Guardar Texto
 
-El nodo Save Text escribe contenido de texto en un archivo en el directorio de salida. Admite guardar en formato .txt, .csv, .md o .json, y maneja automáticamente el formato JSON cuando se proporciona JSON válido.
+El nodo Save Text escribe contenido de texto en un archivo del directorio de salida. Admite guardar en formato .txt, .csv, .md o .json, y maneja automáticamente el formateo de JSON cuando se proporciona JSON válido.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `text` | El contenido de texto que se guardará en un archivo. Esta entrada debe estar conectada desde otro nodo. | STRING | Sí | - |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `text` | El contenido de texto que se guardará en un archivo. Esta entrada debe conectarse desde otro nodo. | STRING | Sí | - |
 | `filename_prefix` | Prefijo para el nombre del archivo de salida. Se añade un contador de 5 dígitos para evitar sobrescribir archivos existentes (predeterminado: "ComfyUI"). | STRING | No | - |
-| `format` | Formato de archivo en el que se guardará el texto (predeterminado: "txt"). Cuando se selecciona "json", el texto JSON válido se imprime con sangría de 2 espacios; de lo contrario, el texto se guarda tal cual. | COMBO | No | `"txt"`<br>`"csv"`<br>`"md"`<br>`"json"` |
+| `format` | El formato de archivo en el que se guardará el texto (predeterminado: "txt"). Cuando se selecciona `"json"`, el texto JSON válido se formatea con sangría de 2 espacios; de lo contrario, el texto se guarda tal cual. | COMBO | No | `"txt"`<br>`"csv"`<br>`"md"`<br>`"json"` |
+
+### Notas
+
+- `text` es una entrada forzada y debe conectarse a otro nodo; no se puede escribir directamente.
+- El archivo guardado se llama `<filename_prefix>_<5-digit counter>.<extension>` y se escribe en el directorio de salida de ComfyUI (en una subcarpeta derivada del prefijo).
+- Seleccionar el formato `"json"` intenta analizar el texto como JSON. Si el análisis tiene éxito, el contenido se escribe formateado con sangría de 2 espacios; si falla, se escribe el texto sin cambios.
+- El nodo informa el archivo guardado a la interfaz para que aparezca junto con los demás archivos de salida generados.
 
 ## Salidas
 

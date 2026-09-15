@@ -1,25 +1,25 @@
 # Hunyuan Video 15 Latent Upscale With Model
 
-El nodo Hunyuan Video 15 Latent Upscale With Model aumenta la resolución de una representación de imagen latente. Primero amplía las muestras latentes a un tamaño específico usando un método de interpolación elegido, luego refina el resultado ampliado usando un modelo de ampliación especializado Hunyuan Video 1.5 para mejorar la calidad.
+El nodo Hunyuan Video 1.5 Latent Upscale With Model aumenta la resolución de una representación latente de imagen. Primero escala las muestras latentes a un tamaño especificado usando un método de interpolación elegido y, luego, refina el resultado escalado usando un modelo especializado de escalado de Hunyuan Video 1.5 para mejorar la calidad.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo de ampliación latente Hunyuan Video 1.5 utilizado para refinar las muestras ampliadas. | LATENT_UPSCALE_MODEL | Sí | N/D |
-| `muestras` | La representación de imagen latente que se va a ampliar. | LATENT | Sí | N/D |
-| `método_de_escalado` | El algoritmo de interpolación utilizado para el paso de ampliación inicial (predeterminado: `"bilinear"`). | COMBO | No | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"bislerp"` |
-| `ancho` | El ancho objetivo para el latente ampliado, en píxeles. Un valor de 0 calcula el ancho automáticamente según la altura objetivo y la relación de aspecto original. El ancho final de salida será un múltiplo de 16 (predeterminado: 1280). | INT | No | 0 a 16384 (paso: 8) |
-| `alto` | La altura objetivo para el latente ampliado, en píxeles. Un valor de 0 calcula la altura automáticamente según el ancho objetivo y la relación de aspecto original. La altura final de salida será un múltiplo de 16 (predeterminado: 720). | INT | No | 0 a 16384 (paso: 8) |
-| `recorte` | Determina cómo se recorta el latente ampliado para ajustarse a las dimensiones objetivo. | COMBO | No | `"disabled"`<br>`"center"` |
+| `modelo` | El modelo de escalado latente de Hunyuan Video 1.5 usado para refinar las muestras escaladas. | LATENT_UPSCALE_MODEL | Sí | N/A |
+| `muestras` | La representación latente de imagen que se va a escalar. | LATENT | Sí | N/A |
+| `método_de_escalado` | El algoritmo de interpolación usado para el paso de escalado inicial (predeterminado: `"bilinear"`). | COMBO | Sí | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"bislerp"` |
+| `ancho` | El ancho objetivo para el latente escalado, en píxeles. Un valor de 0 calculará el ancho automáticamente según la altura objetivo y la relación de aspecto original. El ancho de salida final será un múltiplo de 16 (predeterminado: 1280). | INT | Sí | 0 a 16384 (paso: 8) |
+| `alto` | La altura objetivo para el latente escalado, en píxeles. Un valor de 0 calculará la altura automáticamente según el ancho objetivo y la relación de aspecto original. La altura de salida final será un múltiplo de 16 (predeterminado: 720). | INT | Sí | 0 a 16384 (paso: 8) |
+| `recorte` | Determina cómo se recorta el latente escalado para ajustarse a las dimensiones objetivo. | COMBO | Sí | `"disabled"`<br>`"center"` |
 
-**Nota sobre las dimensiones:** Si tanto `width` como `height` se establecen en 0, el nodo devuelve las `samples` de entrada sin cambios. Si solo una dimensión se establece en 0, la otra se calcula para preservar la relación de aspecto original. Las dimensiones finales siempre se ajustan para ser al menos 64 píxeles y divisibles por 16.
+**Nota sobre las dimensiones:** Si tanto `width` como `height` se establecen en 0, el nodo devuelve las `samples` de entrada sin cambios. Si solo una dimensión se establece en 0, la otra dimensión se calcula para preservar la relación de aspecto original. Ambos valores se limitan a un mínimo de 64, y el objetivo de escalado pasado al paso de interpolación es `width // 16` por `height // 16`, por lo que las dimensiones solicitadas se redondean efectivamente hacia abajo a múltiplos de 16.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `LATENT` | La representación de imagen latente ampliada y refinada por el modelo. | LATENT |
+| `LATENT` | La representación latente de imagen escalada y refinada por el modelo, devuelta como un tensor float en la CPU. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15LatentUpscaleWithModel/es.md)
 

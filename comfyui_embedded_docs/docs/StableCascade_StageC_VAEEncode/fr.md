@@ -8,7 +8,7 @@ Le nœud StableCascade_StageC_VAEEncode traite une image d'entrée via un encode
 | --- | --- | --- | --- | --- |
 | `image` | L'image d'entrée à encoder dans l'espace latent | IMAGE | Oui | - |
 | `vae` | Le modèle VAE utilisé pour encoder l'image | VAE | Oui | - |
-| `compression` | Le facteur de compression appliqué à l'image avant l'encodage. Les dimensions de l'image sont divisées par cette valeur, puis multipliées par le ratio de sous-échantillonnage du VAE. Ceci est un paramètre avancé. (par défaut : 42) | INT | Non | 4-128 |
+| `compression` | Le facteur de compression appliqué à l'image avant l'encodage. Les dimensions de l'image sont divisées par cette valeur, puis multipliées par le ratio de sous-échantillonnage du VAE. Ceci est un paramètre avancé. (par défaut : 42) | INT | Oui | 4-128 |
 
 ## Sorties
 

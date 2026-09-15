@@ -11,7 +11,7 @@ El nodo Runway First-Last-Frame to Video genera un video utilizando un fotograma
 | `fotograma_final` | Fotograma final que se utilizará para el video. Solo compatible con gen3a_turbo. | IMAGE | Sí | N/A |
 | `duración` | Duración del video generado en segundos. La duración más larga de 10 s ofrece a la generación más tiempo para transicionar suavemente entre el fotograma inicial y el final (por defecto: "5"). | COMBO | Sí | `"5"`<br>`"10"` |
 | `relación` | Relación de aspecto del video generado (por defecto: "768:1280") | COMBO | Sí | `"768:1280"`<br>`"1280:768"` |
-| `semilla` | Semilla aleatoria para la generación. Establézcala en 0 para una semilla aleatoria (por defecto: 0). | INT | No | 0 a 4294967295 |
+| `semilla` | Semilla aleatoria para la generación. Establézcala en 0 para una semilla aleatoria (por defecto: 0). | INT | Sí | 0 a 4294967295 |
 
 **Restricciones de parámetros:**
 

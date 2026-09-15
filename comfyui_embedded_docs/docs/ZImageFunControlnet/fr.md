@@ -1,6 +1,6 @@
 # ZImageFunControlnet
 
-ZImageFunControlnet applique un réseau de contrôle spécialisé pour influencer le processus de génération ou d'édition d'images. Il utilise un modèle de base, un patch de modèle et un VAE, ce qui vous permet d'ajuster la force de l'effet de contrôle. Ce nœud peut fonctionner avec une image de base, une image d'inpainting et un masque pour des modifications plus ciblées.
+ZImageFunControlnet applique un patch de réseau de contrôle à un modèle de base afin qu'il puisse guider le processus de génération ou d'édition d'image. Il combine un modèle, un patch de modèle et un VAE, et vous permet de contrôler l'intensité avec laquelle l'effet de contrôle influence le résultat. Les entrées facultatives image, image d'inpainting et masque permettent des modifications plus ciblées.
 
 ## Entrées
 
@@ -8,13 +8,13 @@ ZImageFunControlnet applique un réseau de contrôle spécialisé pour influence
 | --- | --- | --- | --- | --- |
 | `modèle` | Le modèle de base utilisé pour le processus de génération. | MODEL | Oui | - |
 | `modèle_patch` | Un modèle de patch spécialisé qui applique le guidage du réseau de contrôle. | MODEL_PATCH | Oui | - |
-| `vae` | L'autoencodeur variationnel utilisé pour encoder et décoder les images. | VAE | Oui | - |
-| `force` | La force de l'influence du réseau de contrôle. Les valeurs positives appliquent l'effet, tandis que les valeurs négatives peuvent l'inverser (défaut : 1.0). | FLOAT | Oui | -10.0 à 10.0 |
+| `vae` | L'auto-encodeur variationnel utilisé pour l'encodage et le décodage des images. | VAE | Oui | - |
+| `force` | La force de l'influence du réseau de contrôle. Les valeurs positives appliquent l'effet, tandis que les valeurs négatives peuvent l'inverser (par défaut : 1.0). | FLOAT | Oui | -10.0 à 10.0 (pas de 0.01) |
 | `image` | Une image de base facultative pour guider le processus de génération. | IMAGE | Non | - |
-| `image_de_repeinture` | Une image facultative utilisée spécifiquement pour l'inpainting de zones définies par un masque. | IMAGE | Non | - |
-| `mask` | Un masque facultatif qui définit les zones d'une image à modifier ou à traiter par inpainting. | MASK | Non | - |
+| `image_de_repeinture` | Une image facultative utilisée spécifiquement pour l'inpainting des zones définies par un masque. | IMAGE | Non | - |
+| `mask` | Un masque facultatif qui définit les zones d'une image à modifier ou à inpaint. | MASK | Non | - |
 
-**Remarque :** Le paramètre `inpaint_image` est généralement utilisé en conjonction avec un `mask` pour spécifier le contenu de l'inpainting. Le comportement du nœud peut changer selon les entrées facultatives fournies (par exemple, utiliser `image` comme guide ou utiliser `image`, `mask` et `inpaint_image` pour l'inpainting).
+**Note :** Le paramètre `inpaint_image` est généralement utilisé conjointement avec un `mask` pour spécifier le contenu à inpaint. Le comportement du nœud peut changer selon les entrées facultatives fournies (par exemple, utiliser `image` pour le guidage ou utiliser `image`, `mask` et `inpaint_image` pour l'inpainting).
 
 ## Sorties
 

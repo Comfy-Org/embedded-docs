@@ -1,20 +1,22 @@
 # FusionarModeloQwenImage
 
-ModelMergeQwenImage fusiona dos modelos de IA combinando sus componentes con pesos ajustables. Permite mezclar partes específicas de los modelos de imagen Qwen, incluidos bloques de transformador, incrustaciones posicionales y componentes de procesamiento de texto. Puedes controlar cuánta influencia tiene cada modelo en diferentes secciones del resultado fusionado.
+Este nodo fusiona dos modelos de imagen Qwen al mezclar sus componentes individuales con pesos ajustables. Cada peso controla cuánto contribuye la parte correspondiente del segundo modelo al resultado fusionado, lo que te permite mezclar embeddings posicionales, capas de procesamiento de texto, capas de entrada de imagen, los 60 bloques transformer y la proyección de salida por separado. El resultado final es un único MODEL que puedes usar dondequiera que se espere un modelo normal.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `modelo1` | El primer modelo a fusionar | MODEL | Sí | - |
 | `modelo2` | El segundo modelo a fusionar | MODEL | Sí | - |
-| `pos_embeds.` | Peso para la combinación de incrustaciones posicionales (por defecto: 1.0) | FLOAT | Sí | 0.0 a 1.0 (step: 0.01) |
-| `img_in.` | Peso para la combinación del procesamiento de entrada de imagen (por defecto: 1.0) | FLOAT | Sí | 0.0 a 1.0 (step: 0.01) |
-| `txt_norm.` | Peso para la combinación de la normalización de texto (por defecto: 1.0) | FLOAT | Sí | 0.0 a 1.0 (step: 0.01) |
-| `txt_in.` | Peso para la combinación del procesamiento de entrada de texto (por defecto: 1.0) | FLOAT | Sí | 0.0 a 1.0 (step: 0.01) |
-| `time_text_embed.` | Peso para la combinación de incrustaciones de tiempo y texto (por defecto: 1.0) | FLOAT | Sí | 0.0 a 1.0 (step: 0.01) |
-| `transformer_blocks.0.` a `transformer_blocks.59.` | Peso para la combinación de cada bloque de transformador (por defecto: 1.0) | FLOAT | Sí | 0.0 a 1.0 (step: 0.01) |
-| `proj_out.` | Peso para la combinación de la proyección de salida (por defecto: 1.0) | FLOAT | Sí | 0.0 a 1.0 (step: 0.01) |
+| `pos_embeds.` | Peso para la mezcla de embeddings posicionales (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
+| `img_in.` | Peso para la mezcla del procesamiento de entrada de imagen (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
+| `txt_norm.` | Peso para la mezcla de normalización de texto (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
+| `txt_in.` | Peso para la mezcla del procesamiento de entrada de texto (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
+| `time_text_embed.` | Peso para la mezcla de embeddings de tiempo y texto (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
+| `transformer_blocks.0.` a `transformer_blocks.59.` | Peso para la mezcla de cada bloque transformer (predeterminado: 1.0). El nodo expone un peso para cada uno de los 60 bloques transformer. | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
+| `proj_out.` | Peso para la mezcla de la proyección de salida (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
+
+Nota: Todas las entradas de peso son obligatorias y comparten los mismos límites: un valor predeterminado de 1.0 con un rango válido de 0.0 a 1.0, ajustable en pasos de 0.01.
 
 ## Salidas
 

@@ -1,33 +1,31 @@
-# Convert Image Color Space
+# 이미지 색 공간 변환
 
-## 개요
-
-ImageColorSpace 노드는 이미지를 다양한 색 공간 사이로 변환합니다. 이를 통해 sRGB, HDR (Rec.2020 HLG),HDR PQ (Rec.2020 PQ)와 같은 색 공간을 포함합니다. 이 노드는 배치 전체의 과잉 밝기를 줄이고 범위 밖의 색상을 압축하여 정확한 변환을 보장하며, RGB 채널만을 사용하고 알파 채널은 변경되지 않도록 전달합니다.
+ImageColorSpace 노드는 이미지를 sRGB(Rec.709), 선형 Rec.709, HDR(Rec.2020 HLG), HDR PQ(Rec.2020 PQ) 색 공간 간에 변환합니다. SDR 출력으로 변환하거나 HDR PQ에서 HDR로 변환할 때는 배치 전체에 걸쳐 초과 휘도를 톤 매핑하고 색역을 벗어난 색상을 압축합니다. 선형 출력 및 선형→HDR 변환은 톤 매핑 없이 확장 값을 보존합니다. 변환은 float32로 계산되며, 모든 알파 채널은 변경 없이 전달됩니다.
 
 ## 입력
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 변환할 입력 이미지. | IMAGE | 예 | 모든 유효한 이미지 형식. |
-| `source` | 입력 픽셀의 색 공간. | COMBO | 예 | <br> "sRGB" <br> "HDR" <br> "HDR PQ" |
-| `destination` | 출력 픽셀의 색 공간. | COMBO | 예 | <br> "sRGB" <br> "HDR" <br> "HDR PQ" |
+| `image` | 변환할 입력 이미지입니다. | IMAGE | 예 | 유효한 모든 이미지. |
+| `source` | 입력 픽셀의 색 공간입니다. 기본값: "sRGB". | COMBO | 예 | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"`<br>`"linear"` |
+| `destination` | 출력 픽셀의 색 공간입니다. 저장 노드를 이와 동일한 색 공간으로 설정하세요. 기본값: "sRGB". | COMBO | 예 | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"`<br>`"linear"` |
 
 ## 출력
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `image` | 지정된 출력 색 공간에서 변환된 이미지. | IMAGE |
+| `image` | 지정된 대상 색 공간으로 변환된 이미지입니다. | IMAGE |
 
-## 주의사항
+## 참고
 
-- 이 노드는 203-nit SDR 화이트와 1000-nit HLG 참조 디스플레이를 사용하여 변환합니다.
-- 변환은 float32에서 계산되며 중간 장치와 데이터 타입을 반환합니다.
-- 직접 알파는 색 변환되지 않습니다.
-- 이 노드는 sRGB, HDR (Rec.2020 HLG), HDR PQ (Rec.2020 PQ) 색 공간 간의 변환을 지원합니다.
-- 이 노드는 톤 맵을 줄이고 범위 밖의 색상을 압축하여 정확한 변환을 보장합니다.
-- 변환은 RGB 채널을 사용하며, 알파 채널(만약 존재하면)은 변경되지 않도록 전달됩니다.
+- 선형 1.0은 sRGB와 동일한 203-nit 기준 흰색을 사용합니다. HLG는 1000-nit 기준 디스플레이를 사용합니다.
+- 선형 출력 및 선형→HDR 변환은 톤 매핑 없이 확장 값을 보존합니다.
+- SDR 출력 및 PQ→HLG 변환은 배치 전체에 걸쳐 초과 휘도를 톤 매핑하고(프레임마다 노출이 변하지 않도록 하나의 화이트 포인트를 공유) 색역을 벗어난 색상을 압축합니다.
+- 변환은 float32로 계산되며 중간 장치와 dtype을 반환합니다.
+- 스트레이트 알파는 색상 변환되지 않으며, RGB 채널만 변환됩니다.
+- `source`와 `destination`이 같으면 색상 변환이 적용되지 않으며, 이미지는 중간 장치와 dtype으로만 이동됩니다.
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageColorSpace/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `f0d38c6f5b524752a99d51b1a87f0e65c07f3ba36ecb0066d8d10c5b5032d36f`
+**Source fingerprint (SHA-256):** `04ae447a9f9805341e31755ad0fa56746ac0371fa2cb9bda95df3879c9dbead7`

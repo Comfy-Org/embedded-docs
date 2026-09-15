@@ -1,23 +1,25 @@
 # ChromaRadianceSeçenekleri
 
-ChromaRadianceOptions düğümü, Chroma Radiance modeli için gelişmiş ayarları yapılandırmanıza olanak tanır. Mevcut bir modeli sarar ve sigma değerlerine dayalı olarak gürültü giderme işlemi sırasında belirli seçenekleri uygulayarak NeRF döşeme boyutu ve diğer radiance ile ilgili parametreler üzerinde ince ayarlı kontrol sağlar.
+ChromaRadianceOptions düğümü, Chroma Radiance modeli için gelişmiş ayarları yapılandırmanıza olanak tanır. Mevcut bir modele bir sarmalayıcı ekler ve seçilen seçenekleri, yalnızca geçerli sigma değeri yapılandırılan aralığa düştüğünde gürültü giderme işlemi sırasında uygular; böylece NeRF döşeme boyutu ve metin token kimliği işleme üzerinde kontrol sağlar.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Tipi | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Chroma Radiance seçeneklerinin uygulanacağı model | MODEL | Evet | - |
-| `sarmalayıcıyı koru` | Etkinleştirildiğinde, varsa mevcut model işlev sarmalayıcısına devreder. Genellikle etkin bırakılmalıdır. (varsayılan: True) | BOOLEAN | Hayır | - |
-| `başlangıç sigma` | Bu seçeneklerin geçerli olacağı ilk sigma. (varsayılan: 1.0) | FLOAT | Hayır | 0.0 ile 1.0 |
-| `bitiş sigma` | Bu seçeneklerin geçerli olacağı son sigma. (varsayılan: 0.0) | FLOAT | Hayır | 0.0 ile 1.0 |
-| `nerf döşeme boyutu` | Varsayılan NeRF döşeme boyutunu geçersiz kılmayı sağlar. -1 varsayılanı (32) kullanmak anlamına gelir. 0, döşemesiz modu kullanmak anlamına gelir (çok fazla VRAM gerektirebilir). (varsayılan: -1) | INT | Hayır | -1 and above |
-| `force_sequential_txt_ids` | Sıfırlar yerine sıralı metin belirteci kimliklerinin kullanımını zorlar. Bu şekilde eğitilmiş ancak durum sözlüğünde __sequential__ anahtarını içermeyen 2026-05-22 ile 2026-06-01 tarihleri arasındaki kontrol noktaları için kullanılmalıdır. (varsayılan: False) | BOOLEAN | Hayır | - |
+| `sarmalayıcıyı koru` | Etkinleştirildiğinde, varsa mevcut bir model işlevi sarmalayıcısına devreder. Genellikle etkin bırakılmalıdır. (varsayılan: True) | BOOLEAN | Hayır | - |
+| `başlangıç sigma` | Bu seçeneklerin etkili olacağı ilk sigma. (varsayılan: 1.0) | FLOAT | Hayır | 0.0 - 1.0 |
+| `bitiş sigma` | Bu seçeneklerin etkili olacağı son sigma. (varsayılan: 0.0) | FLOAT | Hayır | 0.0 - 1.0 |
+| `nerf döşeme boyutu` | Varsayılan NeRF döşeme boyutunun geçersiz kılınmasına olanak tanır. -1, varsayılanı (32) kullan anlamına gelir. 0, döşemesiz modu kullan anlamına gelir (çok fazla VRAM gerektirebilir). (varsayılan: -1) | INT | Hayır | -1 ve üzeri |
+| `force_sequential_txt_ids` | Sıfırlar yerine sıralı metin token kimliklerinin kullanımını zorlar. 2026-05-22 ile 2026-06-01 arasındaki, bu şekilde eğitilmiş ancak state dict içinde __sequential__ anahtarını içermeyen checkpoint'ler için kullanılmalıdır. (varsayılan: False) | BOOLEAN | Hayır | - |
 
-**Not:** Chroma Radiance seçenekleri yalnızca geçerli sigma değeri `end_sigma` ile `start_sigma` arasında olduğunda (uç değerler dahil) etkili olur. `nerf_tile_size` parametresi yalnızca 0 veya daha yüksek değerlere ayarlandığında uygulanır. `force_sequential_txt_ids` parametresi yalnızca True olarak ayarlandığında uygulanır. `nerf_tile_size` -1 ve `force_sequential_txt_ids` False olduğunda hiçbir seçenek yapılandırılmaz ve model herhangi bir sarmalayıcı uygulanmadan değiştirilmemiş olarak döndürülür.
+**Not:** Chroma Radiance seçenekleri yalnızca geçerli sigma değeri `end_sigma` ile `start_sigma` arasında (dahil) olduğunda etkili olur. `nerf_tile_size` seçeneği yalnızca 0 veya daha yüksek bir değere ayarlandığında uygulanır (-1 değeri varsayılan 32 döşeme boyutunu kullanır ve herhangi bir geçersiz kılma saklamaz). `force_sequential_txt_ids` seçeneği yalnızca True olarak ayarlandığında uygulanır. `nerf_tile_size` -1 olduğunda ve `force_sequential_txt_ids` False olduğunda, hiçbir seçenek yapılandırılmaz ve model herhangi bir sarmalayıcı uygulanmadan değiştirilmeden döndürülür.
+
+**Not:** `model` dışındaki tüm girdiler gelişmiş seçeneklerdir.
 
 ## Çıktılar
 
-| Çıktı Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Tipi |
 |-------------|-------------|-----------|
 | `model` | Chroma Radiance seçenekleri uygulanmış model veya hiçbir seçenek etkin değilse değiştirilmemiş model | MODEL |
 

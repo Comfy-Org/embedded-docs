@@ -1,6 +1,6 @@
 # ByteDance Seed
 
-Gere respostas de texto usando os modelos Seed 2.0 da ByteDance. Forneça um prompt de texto e, opcionalmente, inclua imagens ou vídeos para contexto multimodal.
+Gere respostas de texto com os modelos Seed 2.0 da ByteDance. Forneça um prompt de texto e, opcionalmente, conecte imagens ou vídeos para dar ao modelo contexto extra. O modelo é escolhido entre as variantes disponíveis do Seed 2.0, e o nó retorna a resposta de texto do modelo.
 
 ## Entradas
 
@@ -8,9 +8,9 @@ Gere respostas de texto usando os modelos Seed 2.0 da ByteDance. Forneça um pro
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `modelo` | O modelo Seed usado para gerar a resposta. | DYNAMIC_COMBO | Sim | `"Seed 2.0 Pro"`<br>`"Seed 2.0 Lite"`<br>`"Seed 2.0 Mini"` |
-| `prompt` | Texto de entrada para o modelo. (padrão: "") | STRING | Sim | N/A |
-| `seed` | A semente (seed) controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente. (padrão: 0) | INT | Sim | 0 a 2147483647 |
+| `prompt` | Entrada de texto para o modelo. (padrão: "") | STRING | Sim | N/A |
+| `modelo` | O modelo Seed usado para gerar a resposta. Este seletor também expõe os subparâmetros do modelo. | DYNAMIC_COMBO | Sim | `"Seed 2.0 Pro"`<br>`"Seed 2.0 Lite"`<br>`"Seed 2.0 Mini"` |
+| `seed` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed. (padrão: 0) | INT | Sim | 0 a 2147483647 |
 | `prompt do sistema` | Instruções fundamentais que determinam o comportamento do modelo. (padrão: "") | STRING | Não | N/A |
 
 ### Entradas do modelo (compartilhadas por Seed 2.0 Pro, Seed 2.0 Lite e Seed 2.0 Mini)
@@ -19,16 +19,21 @@ Todos os três modelos Seed expõem os mesmos subparâmetros quando selecionados
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `temperature` | Controla a aleatoriedade. 0.0 é determinístico, valores maiores são mais aleatórios. (padrão: 1.0) | FLOAT | Sim | 0.0 a 2.0 (passo: 0.01) |
+| `temperature` | Controla a aleatoriedade. 0.0 é determinístico, valores mais altos são mais aleatórios. (padrão: 1.0) | FLOAT | Sim | 0.0 a 2.0 (passo: 0.01) |
 
 ### Entradas de referência
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `images` | Imagem(ns) opcional(is) para usar como contexto para o modelo. Até 20 imagens. Slot expansível: conecte de 1 a 20 itens, ex.: `image_1` a `image_20`. | IMAGE | Não | 0 a 20 imagens |
-| `videos` | Vídeo(s) opcional(is) para usar como contexto para o modelo. Até 4 vídeos. Slot expansível: conecte de 1 a 4 itens, ex.: `video_1` a `video_4`. | VIDEO | Não | 0 a 4 vídeos |
+| `images` | Imagens opcionais para usar como contexto para o modelo. Até 20 imagens. Slot expansível: conecte 1..20 itens, por exemplo, `image_1` até `image_20`. | IMAGE | Não | 0 a 20 imagens |
+| `videos` | Vídeos opcionais para usar como contexto para o modelo. Até 4 vídeos. Slot expansível: conecte 1..4 itens, por exemplo, `video_1` até `video_4`. | VIDEO | Não | 0 a 4 vídeos |
 
-**Nota:** O parâmetro `model` é uma combinação dinâmica que expõe os subparâmetros de referência e temperatura quando um modelo é selecionado. Você pode conectar entradas de imagem e vídeo a este parâmetro para fornecer contexto multimodal. Há suporte para no máximo 20 imagens e 4 vídeos por solicitação, e `prompt` é obrigatório e deve conter pelo menos um caractere sem espaço em branco.
+**Nota:** O parâmetro `model` é um combo dinâmico que revela os subparâmetros de referência e temperatura quando um modelo é selecionado. Os slots `images` e `videos` são expansíveis, então você pode conectar várias entradas para contexto multimodal.
+
+- `prompt` é obrigatório e deve conter pelo menos um caractere que não seja espaço em branco; caso contrário, um erro é gerado.
+- No máximo 20 imagens são suportadas por solicitação. Esse limite conta todas as imagens em todos os lotes conectados.
+- No máximo 4 vídeos são suportados por solicitação.
+- Um erro é gerado se o modelo retornar uma resposta vazia, ou se o modelo se recusar a responder (o texto da recusa é informado).
 
 ## Saídas
 

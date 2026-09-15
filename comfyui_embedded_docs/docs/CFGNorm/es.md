@@ -1,22 +1,22 @@
 # CFGNorm
 
-CFGNorm aplica una técnica de normalización al proceso de guía sin clasificador (CFG) en los modelos de difusión. Ajusta la escala de la predicción de eliminación de ruido comparando las normas de las salidas condicionales e incondicionales, y luego aplica un multiplicador de intensidad para controlar el efecto. De forma predeterminada, la normalización solo atenúa la salida de guía, pero habilitar `pre_cfg` reescala el ruido combinado antes de la combinación CFG del muestreador, sin limitarlo, lo que puede amplificarlo.
+CFGNorm ajusta cómo se aplica la guía libre de clasificador (CFG) en modelos de difusión al comparar el tamaño (norma) de la predicción condicional con la predicción guiada y reescalar el resultado. Un valor de `strength` controla cuánto del ajuste se aplica. De forma predeterminada, el escalado solo atenúa la salida de la guía, mientras que habilitar `pre_cfg` hace que se reescale el ruido combinado antes de la combinación CFG del muestreador, sin limitación, lo que puede amplificar el resultado.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo de difusión al que se le aplica la normalización de CFG | MODEL | Sí | - |
-| `intensidad` | Controla la intensidad del efecto de normalización aplicado a la escala de CFG (por defecto: 1.0) | FLOAT | Sí | 0.0 a 100.0 |
-| `pre_cfg` | Si es true, reescala el ruido combinado ANTES de la combinación CFG del muestreador, sin limitarlo (puede amplificarlo). Coincide con la CFG de escala por norma utilizada por modelos como Lens. El valor false predeterminado mantiene el comportamiento original posterior a CFG de solo atenuación en el espacio x0. (por defecto: false) | BOOLEAN | No | true / false |
+| `modelo` | El modelo de difusión al que se aplicará la normalización CFG | MODEL | Sí | - |
+| `intensidad` | Controla la intensidad del efecto de normalización aplicado al escalado de CFG (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 100.0 (paso 0.01) |
+| `pre_cfg` | Si es verdadero, reescala el ruido combinado ANTES de la combinación CFG del muestreador, sin limitación (puede amplificar). Coincide con la CFG escalada por norma que usan modelos como Lens. El valor predeterminado (falso) conserva el comportamiento original posterior a CFG en el espacio x0, de solo atenuación. (predeterminado: falso) | BOOLEAN | No | true / false |
 
 Nota: Este nodo está marcado como experimental.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `modelo_parcheado` | Devuelve el modelo modificado con la normalización de CFG aplicada a su proceso de muestreo | MODEL |
+| `patched_model` | Devuelve el modelo modificado con la normalización CFG aplicada a su proceso de muestreo | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGNorm/es.md)
 

@@ -1,8 +1,10 @@
 # Luma Ray 3.2 Fotograma Clave
 
-Este nodo ancla una imagen guía a una posición específica en la línea de tiempo del video de salida de Luma Ray 3.2. Conecta este nodo a la entrada `"keyframes"` del nodo Luma Ray 3.2 Keyframes to Video, y encadena varios keyframes conectando la entrada opcional `"keyframes"`.
+Este nodo ancla una imagen guía a una posición específica en la línea de tiempo del video de salida de Luma Ray 3.2. Conecte este nodo a la entrada "keyframes" del nodo Luma Ray 3.2 Keyframes to Video, y encadene varios keyframes conectando la entrada opcional "keyframes".
 
 ## Entradas
+
+### Entradas comunes
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
@@ -10,17 +12,25 @@ Este nodo ancla una imagen guía a una posición específica en la línea de tie
 | `position` | Cómo colocar esta imagen en la línea de tiempo del video de salida. | DYNAMIC_COMBO | Sí | "Fraction of duration (0.0-1.0)"<br>"Absolute time (seconds)" |
 | `keyframes` | Keyframes anteriores opcionales para encadenar con este. | LUMA_RAY32_KEYFRAME | No | - |
 
-El parámetro `position` determina qué valor se utiliza para colocar la imagen en la línea de tiempo.
+### Entradas de Fraction of duration (0.0-1.0)
 
-Cuando se selecciona "Fraction of duration (0.0-1.0)" para el parámetro `position`, puedes especificar un valor `fraction` (predeterminado: 0.0, rango: 0.0 a 1.0, paso: 0.01) que determina en qué parte del video de salida se aplica esta imagen (0.0 = inicio, 1.0 = final).
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `fraction` | Dónde se aplica esta imagen en el video de salida (0.0 = inicio, 1.0 = final). Predeterminado: 0.0. | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
 
-Cuando se selecciona "Absolute time (seconds)" para el parámetro `position`, puedes especificar un valor `seconds` (predeterminado: 0.0, rango: 0.0 a 10.0, paso: 0.1) que determina el tiempo en segundos desde el inicio del video de salida donde se aplica esta imagen.
+### Entradas de Absolute time (seconds)
+
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
+| `seconds` | Tiempo en segundos desde el inicio del video de salida donde se aplica esta imagen. Predeterminado: 0.0. | FLOAT | Sí | 0.0 a 10.0 (paso: 0.1) |
+
+El parámetro `position` determina qué valor se usa para colocar la imagen en la línea de tiempo. Solo se muestra y se usa el subparámetro que pertenece a la opción seleccionada: `fraction` para "Fraction of duration (0.0-1.0)" y `seconds` para "Absolute time (seconds)".
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `keyframes` | Una cadena de keyframes que incluye el nuevo keyframe combinado con cualquier keyframe anterior opcional. | LUMA_RAY32_KEYFRAME |
+| `keyframes` | Una cadena de keyframes que incluye el nuevo keyframe combinado con los keyframes anteriores opcionales. | LUMA_RAY32_KEYFRAME |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32KeyframeNode/es.md)
 

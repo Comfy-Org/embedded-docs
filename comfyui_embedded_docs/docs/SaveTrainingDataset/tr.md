@@ -1,21 +1,19 @@
 # Eğitim Veri Setini Kaydet
 
-Bu düğüm, eğitim sırasında verimli yükleme için kodlanmış bir eğitim veri kümesini diske kaydeder. Görüntü latentlerini ve bunlarla eşleşen metin conditioning verilerini alır, bunları shard adı verilen daha küçük dosyalara böler ve datasets dizini içindeki bir klasöre depolar. Ayrıca veri kümesini tanımlayan bir metadata dosyası da yazar.
-
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `latents` | MakeTrainingDataset'ten latent sözlüklerinin listesi. | LATENT | Evet | YOK |
-| `conditioning` | MakeTrainingDataset'ten conditioning listelerinin listesi. | CONDITIONING | Evet | YOK |
-| `folder_name` | Veri kümesinin kaydedileceği, datasets dizini içindeki klasörün adı. 'project/run1' gibi alt klasörlere izin verilir. (varsayılan: "training_dataset") | STRING | Evet | YOK |
-| `shard_size` | Shard dosyası başına örnek sayısı. (varsayılan: 1000) | INT | Evet | 1 ile 100000 arası |
+| `latents` | MakeTrainingDataset'ten gelen latent sözlüklerinin listesi. | LATENT | Evet | N/A |
+| `conditioning` | MakeTrainingDataset'ten gelen conditioning listelerinin listesi. | CONDITIONING | Evet | N/A |
+| `folder_name` | Veri kümesinin kaydedileceği klasörün adı; datasets dizini içinde. 'project/run1' gibi alt klasörlere izin verilir. (varsayılan: "training_dataset") | STRING | Evet | N/A |
+| `shard_size` | Parça dosyası başına örnek sayısı. (varsayılan: 1000) | INT | Evet | 1 - 100000 |
 
-**Not:** `latents` içindeki öğe sayısı, `conditioning` içindeki öğe sayısıyla tam olarak eşleşmelidir; bu sayılar eşleşmezse düğüm bir hata verir. `folder_name`, datasets dizininin bir alt klasörünü adlandırmalıdır (örneğin `my_dataset`) — datasets dizininin kendisi olamaz ve datasets dizini dışına çözümlenen klasör adları reddedilir.
+**Not:** `latents` içindeki öğe sayısı, `conditioning` içindeki öğe sayısıyla tam olarak eşleşmelidir; bu sayılar eşleşmezse düğüm hata verir. `folder_name`, datasets dizininin bir alt klasörünü adlandırmalıdır (örneğin `my_dataset`) — datasets dizininin kendisi olamaz ve datasets dizini dışında bir yol oluşturacak klasör adları reddedilir. `shard_size` parametresi gelişmiş bir ayardır.
 
 ## Çıktılar
 
-Bu düğüm herhangi bir çıktı verisi üretmez. İşlevi, dosyaları diskinize kaydetmektir. Her shard, seçilen klasöre `shard_XXXX.pkl` dosyası olarak kaydedilir ve bir `metadata.json` dosyası toplam örnek sayısını, shard sayısını ve shard boyutunu kaydeder.
+Bu düğüm herhangi bir çıktı verisi üretmez. İşlevi, diskinize dosya kaydetmektir. Her parça, seçilen klasörde `shard_XXXX.pkl` dosyası olarak kaydedilir ve bir `metadata.json` dosyası toplam örnek sayısını, parça sayısını ve parça boyutunu kaydeder.
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveTrainingDataset/tr.md)
 

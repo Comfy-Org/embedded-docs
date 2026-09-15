@@ -1,14 +1,14 @@
 # Charger un Jeu de Données d'Images depuis un Dossier
 
-Ce nœud charge plusieurs images depuis un sous-dossier sélectionné dans le répertoire d’entrée principal de ComfyUI et les retourne sous forme de liste. Il analyse le dossier choisi pour rechercher des fichiers image aux formats PNG, JPG, JPEG ou WEBP, ce qui le rend utile pour le traitement par lots ou la préparation de jeux de données d’images.
+Ce nœud charge plusieurs images à partir d'un sous-dossier sélectionné dans le répertoire d'entrée principal de ComfyUI et les renvoie sous forme de liste. Il parcourt le dossier choisi à la recherche de fichiers image aux formats PNG, JPG, JPEG ou WEBP, ce qui est utile pour le traitement par lots ou la préparation de jeux de données d'images.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `folder` | Le dossier à partir duquel charger les images. Les options sont les sous-dossiers présents dans le répertoire d’entrée principal de ComfyUI. | COMBO | Oui | Plusieurs options disponibles |
+| `folder` | Le dossier à partir duquel charger les images. Les options correspondent aux sous-dossiers présents dans le répertoire d'entrée principal de ComfyUI. | COMBO | Oui | Plusieurs options disponibles |
 
-Remarque : Le dossier sélectionné doit être un sous-dossier du répertoire d’entrée principal de ComfyUI ; toute valeur qui pointe en dehors de celui-ci est rejetée. Seuls les fichiers portant les extensions .png, .jpg, .jpeg ou .webp sont chargés, et la vérification de l’extension est insensible à la casse. Si le dossier sélectionné ne contient aucun fichier image valide, le nœud génère une erreur. Ce nœud est marqué comme expérimental.
+Remarque : Le dossier sélectionné doit être un sous-dossier du répertoire d'entrée principal de ComfyUI ; toute valeur qui se résout en dehors de celui-ci (par exemple, en utilisant `..`, des chemins absolus, des lettres de lecteur ou des liens symboliques) est rejetée. Seuls les fichiers ayant les extensions .png, .jpg, .jpeg ou .webp sont chargés, et la vérification de l'extension est insensible à la casse. Les images chargées sont converties en RGB et mises à l'échelle dans la plage 0-1. Si le dossier sélectionné ne contient aucun fichier image valide, le nœud génère une erreur. Ce nœud est marqué comme expérimental.
 
 ## Sorties
 

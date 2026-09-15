@@ -1,33 +1,31 @@
-# Convert Image Color Space
+# Görüntü Renk Uzayını Dönüştür
 
-## Genel Bakış
-
-ImageColorSpace düğümü, sRGB, HDR (Rec.2020 HLG) ve HDR PQ (Rec.2020 PQ) gibi farklı renk alanları arasında görselleri dönüştürür. Bu düğüm, toplu içinde aşırı parlaklığı daraltma ve gam-out renkleri sıkıştırma gibi işlevleri destekler ve yalnızca RGB kanallarında çalışır, alpha kanalları değişmeden geçirilir.
+ImageColorSpace düğümü, görüntüleri sRGB (Rec.709), doğrusal Rec.709, HDR (Rec.2020 HLG) ve HDR PQ (Rec.2020 PQ) renk uzayları arasında dönüştürür. SDR çıktısına veya HDR PQ'dan HDR'a dönüştürme yaparken, toplu iş genelinde aşırı luminansı ton eşlemesiyle işler ve gamut dışı renkleri sıkıştırır; doğrusal çıktı ve doğrusaldan HDR'a dönüşümler, ton eşlemesi olmadan genişletilmiş değerleri korur. Dönüşümler float32'de hesaplanır ve herhangi bir alfa kanalı değiştirilmeden geçirilir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
-|-----------|-----------|-----------|----------|-------|
-| `image` | Dönüştürülecek giriş görseli. | GÖRSEL | Evet | Herhangi geçerli görsel biçimi. |
-| `source` | Giriş piksellerinin renk alanı. | COMBO | Evet | <br> "sRGB" <br> "HDR" <br> "HDR PQ" |
-| `destination` | Çıkış piksellerinin renk alanı. | COMBO | Evet | <br> "sRGB" <br> "HDR" <br> "HDR PQ" |
+|-----------|-------------|-----------|----------|-------|
+| `image` | Dönüştürülecek giriş görüntüsü. | IMAGE | Evet | Herhangi bir geçerli görüntü. |
+| `source` | Giriş piksellerinin renk uzayı. Varsayılan: "sRGB". | COMBO | Evet | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"`<br>`"linear"` |
+| `destination` | Çıkış piksellerinin renk uzayı. Kaydetme düğümünü de aynı renk uzayına ayarlayın. Varsayılan: "sRGB". | COMBO | Evet | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"`<br>`"linear"` |
 
 ## Çıktılar
 
-| Çıkış Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `image` | Belirtilen çıkış renk alanında dönüştürülen görsel. | GÖRSEL |
+| `image` | Belirtilen hedef renk uzayında dönüştürülmüş görüntü. | IMAGE |
 
 ## Notlar
 
-- Bu düğüm, dönüştürmeler için 203 nit SDR beyaz ve 1000 nit HLG referans ekranı kullanır.
-- Dönüşümler float32'de hesaplanır ve aracı cihaz ve dtype'yi döner.
-- Doğrudan alpha renk dönüşümünden geçirilmez.
-- Bu düğüm, sRGB, HDR (Rec.2020 HLG) ve HDR PQ (Rec.2020 PQ) renk alanları arasında dönüşümleri destekler.
-- Bu düğüm, doğru dönüşümler sağlamak için ton-mapping daraltma ve gam-out renkleri sıkıştırma işlemleri gerçekleştirir.
-- Dönüşümler RGB kanallarında yapılır ve varsa alpha kanalı değişmeden geçirilir.
+- Doğrusal 1.0, sRGB ile aynı 203-nit referans beyazını kullanır; HLG ise 1000-nit referans ekran kullanır.
+- Doğrusal çıktı ve doğrusaldan HDR'a dönüşümler, ton eşlemesi olmadan genişletilmiş değerleri korur.
+- SDR çıktısı ve PQ'dan HLG'ye dönüşüm, toplu iş genelinde aşırı luminansı ton eşlemesiyle işler (pozlamanın kare kare değişmemesi için tek bir beyaz noktası paylaşır) ve gamut dışı renkleri sıkıştırır.
+- Dönüşümler float32'de hesaplanır ve ara cihazı ve dtype'ı döndürür.
+- Düz alfa renk dönüşümüne uğramaz; yalnızca RGB kanalları dönüştürülür.
+- `source` ve `destination` aynıysa, renk dönüşümü uygulanmaz — görüntü yalnızca ara cihaza ve dtype'a taşınır.
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageColorSpace/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `f0d38c6f5b524752a99d51b1a87f0e65c07f3ba36ecb0066d8d10c5b5032d36f`
+**Source fingerprint (SHA-256):** `04ae447a9f9805341e31755ad0fa56746ac0371fa2cb9bda95df3879c9dbead7`

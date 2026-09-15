@@ -1,6 +1,6 @@
 # StabilKaskad_SüperÇözünürlükKontrolAğı
 
-StableCascade_SuperResolutionControlnet düğümü, Stable Cascade süper çözünürlük işlemi için girdileri hazırlar. Girdi görüntüsünü alır ve controlnet girdisi oluşturmak için bir VAE kullanarak kodlar; ayrıca Stable Cascade hattının C ve B aşamaları için yer tutucu latent temsiller üretir.
+Bu düğüm, deneysel Stable Cascade grubunun bir parçasıdır. Bir girdi görüntüsünü VAE ile kodlayarak bir ControlNet girdisi oluşturur ve Stable Cascade işlem hattının C aşaması ile B aşaması için boş (sıfırlarla doldurulmuş) latent yer tutucuları üretir; böylece Stable Cascade süper çözünürlük işlemesi için girdileri hazırlar.
 
 ## Girdiler
 
@@ -13,9 +13,9 @@ StableCascade_SuperResolutionControlnet düğümü, Stable Cascade süper çöz�
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `kontrol_ağı_girişi` | Controlnet girdisi için uygun, VAE ile kodlanmış görüntü temsili | IMAGE |
-| `aşama_c` | Stable Cascade işleminin C aşaması için yer tutucu (sıfır dolu) latent temsil; 16 kanallıdır ve boyutları girdi görüntü boyutunun 16'ya bölünmesine dayanır | LATENT |
-| `aşama_b` | Stable Cascade işleminin B aşaması için yer tutucu (sıfır dolu) latent temsil; 4 kanallıdır ve boyutları girdi görüntü boyutunun 2'ye bölünmesine dayanır | LATENT |
+| `controlnet_input` | ControlNet girdisi için uygun, VAE ile kodlanmış görüntü temsili | IMAGE |
+| `stage_c` | Stable Cascade işlemesinin C aşaması için yer tutucu (sıfırlarla doldurulmuş) latent temsili; 16 kanallıdır ve boyutları girdi görüntü boyutunun 16'ya bölünmesine dayanır | LATENT |
+| `stage_b` | Stable Cascade işlemesinin B aşaması için yer tutucu (sıfırlarla doldurulmuş) latent temsili; 4 kanallıdır ve boyutları girdi görüntü boyutunun 2'ye bölünmesine dayanır | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_SuperResolutionControlnet/tr.md)
 

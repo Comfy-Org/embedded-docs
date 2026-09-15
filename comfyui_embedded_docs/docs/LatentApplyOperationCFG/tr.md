@@ -1,15 +1,15 @@
 # GizliİşlemUygulaCFG
 
-LatentApplyOperationCFG düğümü, bir modeldeki koşullandırma yönlendirme sürecini değiştirmek için bir latent işlem uygular. Sınıflandırıcısız yönlendirme (CFG) örnekleme süreci sırasında koşullandırma çıktılarını yakalayarak çalışır ve belirtilen işlemi, üretimde kullanılmadan önce latent gösterimlere uygular. Örnekleyici iki koşullandırma çıktısı ürettiğinde, işlem bunlar arasındaki farka uygulanır ve ardından ikinci çıktı sonuca geri eklenir.
+The LatentApplyOperationCFG düğümü, bir modelin örnekleme sürecinin sınıflandırıcıdan bağımsız yönlendirme (CFG) adımında latent bir işlem uygular. CFG'den önce üretilen koşullandırma çıktılarını yakalar, bağlı işlemi latent değerlere uygular ve bu değiştirilmiş örnekleme davranışına sahip modeli döndürür.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | CFG işleminin uygulanacağı model | MODEL | Evet | - |
-| `işlem` | CFG örnekleme sürecinde uygulanacak latent işlem | LATENT_OPERATION | Evet | - |
+| `işlem` | CFG örnekleme sürecinde uygulanacak latent işlemi | LATENT_OPERATION | Evet | - |
 
-Not: Bu düğüm deneysel olarak işaretlenmiştir. İşlem, CFG örnekleme süreci sırasında modelin koşullandırma çıktılarına uygulanır. İki koşullandırma çıktısı mevcut olduğunda, işlem birinci ve ikinci çıktı arasındaki farka uygulanır ve ikinci çıktı geri eklenir. Yalnızca bir koşullandırma çıktısı mevcut olduğunda, işlem doğrudan bu çıktıya uygulanır.
+Not: Bu düğüm deneysel olarak işaretlenmiştir. İşlem, CFG örnekleme sürecinde modelin koşullandırma çıktılarına uygulanır. İki koşullandırma çıktısı mevcut olduğunda, işlem birinci ve ikinci çıktı arasındaki farka uygulanır ve ikinci çıktı sonuca geri eklenir. Yalnızca bir koşullandırma çıktısı mevcut olduğunda, işlem doğrudan ona uygulanır.
 
 ## Çıktılar
 

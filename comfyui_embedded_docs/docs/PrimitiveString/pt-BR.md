@@ -1,16 +1,16 @@
 # Texto
 
-O nó String fornece uma maneira simples de inserir e transmitir dados de texto no seu fluxo de trabalho. Ele recebe uma string de texto como entrada e produz a mesma string sem alterações, sendo útil para fornecer entradas de texto para outros nós que exigem parâmetros de string.
+O nó Text oferece uma maneira simples de inserir e repassar dados de texto no seu fluxo de trabalho. Ele recebe uma string de texto como entrada e gera a mesma string sem alterações, o que é útil para fornecer entradas de texto a outros nós que exigem parâmetros do tipo string.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `valor` | A string de texto a ser transmitida pelo nó | STRING | Sim | Qualquer texto |
+| `valor` | A string de texto a ser repassada pelo nó | STRING | Sim | Qualquer texto |
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dados |
+| Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
 | `output` | A mesma string de texto fornecida como entrada | STRING |
 

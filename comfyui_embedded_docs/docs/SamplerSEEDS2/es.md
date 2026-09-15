@@ -1,18 +1,18 @@
 # SamplerSEEDS2
 
-Este nodo proporciona un muestreador configurable para la generación de imágenes. Implementa el algoritmo SEEDS-2, que es un solucionador de ecuaciones diferenciales estocásticas (SDE). Al ajustar sus parámetros, puede configurarlo para que se comporte como varios muestreadores específicos, incluidos `seeds_2`, `exp_heun_2_x0` y `exp_heun_2_x0_sde`.
+Este nodo proporciona un muestreador configurable para la generación de imágenes. Está basado en un solucionador de ecuaciones diferenciales estocásticas (SDE) y puede comportarse como varios muestreadores específicos según su configuración, incluidos `seeds_2`, `exp_heun_2_x0` y `exp_heun_2_x0_sde`.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `solver_type` | Selecciona el algoritmo de solucionador subyacente para el muestreador. | COMBO | Sí | "phi_1"<br>"phi_2" |
 | `eta` | Intensidad estocástica (predeterminado: 1.0). | FLOAT | No | 0.0 - 100.0 |
 | `s_noise` | Multiplicador de ruido SDE (predeterminado: 1.0). | FLOAT | No | 0.0 - 100.0 |
 | `r` | Tamaño de paso relativo para la etapa intermedia (nodo c2) (predeterminado: 0.5). | FLOAT | No | 0.01 - 1.0 |
 
-**Nota:** La descripción del nodo define los siguientes ajustes preestablecidos de muestreador:
-- `seeds_2`: configuración predeterminada
+**Nota:** La descripción del nodo define los siguientes preajustes de muestreador:
+- `seeds_2`: ajustes predeterminados
 - `exp_heun_2_x0`: `solver_type` = "phi_2", `r` = 1.0, `eta` = 0.0
 - `exp_heun_2_x0_sde`: `solver_type` = "phi_2", `r` = 1.0, `eta` = 1.0, `s_noise` = 1.0
 
@@ -20,7 +20,7 @@ Este nodo proporciona un muestreador configurable para la generación de imágen
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `sampler` | Un objeto de muestreador configurado que se puede pasar a otros nodos de muestreo. | SAMPLER |
+| `sampler` | Un objeto muestreador configurado que se puede pasar a otros nodos de muestreo. | SAMPLER |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerSEEDS2/es.md)
 

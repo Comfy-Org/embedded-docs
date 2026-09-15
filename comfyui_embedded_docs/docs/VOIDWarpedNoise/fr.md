@@ -1,19 +1,21 @@
 # VOIDWarpedNoise
 
-Génère un bruit corrélé temporellement pour la deuxième passe du processus d'affinement vidéo VOID. Il prend la vidéo de sortie de la passe 1 et déforme le bruit gaussien le long des vecteurs de flux optique, créant un bruit qui se déplace de manière cohérente avec le contenu vidéo. Ce bruit déformé est utilisé comme latent de départ pour la passe 2, ce qui améliore la cohérence temporelle de la sortie finale.
+Génère un bruit corrélé temporellement pour la seconde passe du processus d'affinage vidéo VOID. Il prend la vidéo de sortie de la passe 1 et déforme le bruit gaussien le long des vecteurs de flux optique, afin que le bruit se déplace de manière cohérente avec le contenu de la vidéo. Le bruit déformé résultant est utilisé comme latent de départ pour la passe 2, ce qui améliore la cohérence temporelle dans la sortie finale.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `optical_flow` | Modèle de flux optique provenant d'OpticalFlowLoader (RAFT-large). | OPTICAL_FLOW | Oui | - |
-| `video` | Images vidéo de sortie de la passe 1 [T, H, W, 3]. | IMAGE | Oui | - |
-| `width` | Largeur du latent de sortie (défaut : 672). | INT | Oui | 16 à MAX_RESOLUTION (step 8) |
-| `height` | Hauteur du latent de sortie (défaut : 384). | INT | Oui | 16 à MAX_RESOLUTION (step 8) |
-| `length` | Nombre de frames pixel. Arrondi à l'inférieur pour que `latent_t` soit pair (exigence `patch_size_t=2`), par ex. 49 → 45 (défaut : 45). | INT | Oui | 1 à MAX_RESOLUTION (step 1) |
-| `batch_size` | Nombre de séquences de bruit identiques à générer (défaut : 1). | INT | Oui | 1 à 64 |
+| `optical_flow` | Modèle de flux optique issu de OpticalFlowLoader (RAFT-large). | OPTICAL_FLOW | Oui | - |
+| `video` | Trames vidéo de sortie de la passe 1 [T, H, W, 3]. | IMAGE | Oui | - |
+| `width` | Largeur cible en pixels (par défaut : 672). La vidéo d'entrée est mise à l'échelle à cette largeur avant la génération du bruit, et la largeur latente est dérivée comme width ÷ 8. | INT | Oui | 16 à MAX_RESOLUTION (pas 8) |
+| `height` | Hauteur cible en pixels (par défaut : 384). La vidéo d'entrée est mise à l'échelle à cette hauteur avant la génération du bruit, et la hauteur latente est dérivée comme height ÷ 8. | INT | Oui | 16 à MAX_RESOLUTION (pas 8) |
+| `length` | Nombre de trames en pixels. Arrondi à l'inférieur pour rendre latent_t pair (exigence patch_size_t=2), par ex. 49 à 45 (par défaut : 45). | INT | Oui | 1 à MAX_RESOLUTION (pas 1) |
+| `batch_size` | Nombre de séquences de bruit déformé identiques à produire (par défaut : 1). Le bruit généré est répété ce nombre de fois le long de la dimension de lot. | INT | Oui | 1 à 64 |
 
-**Note sur le paramètre `length` :** La valeur de `length` est automatiquement arrondie à l'inférieur vers la valeur valide la plus proche qui produit une dimension `latent_t` paire. Cette exigence est imposée par la contrainte `patch_size_t=2` du modèle CogVideoX-Fun-V1.5. Un avertissement est consigné en cas d'arrondi.
+**Remarque sur le paramètre `length` :** La valeur de `length` est automatiquement arrondie à l'inférieur à la valeur la plus proche produisant une dimension `latent_t` paire, comme l'exige la contrainte `patch_size_t=2` du modèle CogVideoX-Fun-V1.5 (par exemple, 49 devient 45). Le nœud journalise un avertissement lorsque cet arrondi se produit. Les trames au-delà du `length` ajusté sont ignorées, et le bruit est rééchantillonné selon le nombre de trames latentes résultant.
+
+**Remarque sur `width` et `height` :** Ces valeurs sont utilisées à la fois pour redimensionner les trames vidéo entrantes (bilinéaire, recadrage centré) et pour déterminer la résolution latente finale (divisée par 8). Si le bruit généré ne correspond pas à la taille latente demandée, il est redimensionné pour s'adapter.
 
 ## Sorties
 

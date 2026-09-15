@@ -1,19 +1,19 @@
 # BoşGizliHunyuan3Dv2
 
-The EmptyLatentHunyuan3Dv2 düğümü, Hunyuan3Dv2 3B üretim modelleri için özel olarak biçimlendirilmiş boş latent tensörler oluşturur. Hunyuan3Dv2 mimarisinin gerektirdiği doğru boyutlara ve yapıya sahip boş latent uzaylar üretir ve 3B üretim iş akışlarına sıfırdan başlamanızı sağlar. Düğüm, sonraki 3B üretim süreçlerinin temelini oluşturan sıfırlarla doldurulmuş latent tensörler üretir.
+Bu düğüm, Hunyuan3Dv2 3B üretim modelleri için biçimlendirilmiş boş (tamamı sıfır) latent örneklerinden oluşan bir toplu iş oluşturur. 3B üretim iş akışları için başlangıç noktası görevi gören doğru şekle sahip latent tensörünü üretir; latent, "hunyuan3dv2" türüyle etiketlenir.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Tipi | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `çözünürlük` | Gizli uzay için çözünürlük boyutu (varsayılan: 3072) | INT | Evet | 1 - 8192 |
-| `toplu_boyut` | Partideki gizli görüntü sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
+| `çözünürlük` | Oluşturulacak latent uzayının çözünürlük boyutu (varsayılan: 3072) | INT | Evet | 1 - 8192 |
+| `toplu_boyut` | Toplu işteki latent görüntü sayısı (varsayılan: 1) | INT | Evet | 1 - 4096 |
 
 ## Çıktılar
 
-| Çıktı Adı | Açıklama | Veri Tipi |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `LATENT` | Hunyuan3Dv2 3B üretimi için biçimlendirilmiş, "hunyuan3dv2" türüyle etiketlenmiş boş örnekler içeren bir latent tensör döndürür | LATENT |
+| `LATENT` | [batch_size, 64, resolution] şeklinde, sıfırla doldurulmuş örnekler içeren boş bir latent tensörü; "hunyuan3dv2" türüyle etiketlenmiştir | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyLatentHunyuan3Dv2/tr.md)
 

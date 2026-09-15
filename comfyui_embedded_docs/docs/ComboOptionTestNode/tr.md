@@ -1,20 +1,20 @@
 # ComboOptionTestNode
 
-ComboOptionTestNode, açılır kutu seçimlerini test etmek ve geçirmek için tasarlanmış bir mantık düğümüdür. Her biri önceden tanımlanmış bir dizi seçeneğe sahip iki açılır kutu girdisi alır ve seçilen değerleri doğrudan değişiklik yapmadan çıktı olarak verir.
+Bu düğüm, iki açılır kutu seçimini alır ve bunları değiştirmeden doğrudan çıktılarına aktarır.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Tipi | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `combo` | Üç test seçeneğinden oluşan bir kümeden yapılan ilk seçim. | COMBO | Evet | `"option1"`<br>`"option2"`<br>`"option3"` |
-| `combo2` | Üç test seçeneğinden oluşan farklı bir kümeden yapılan ikinci seçim. | COMBO | Evet | `"option4"`<br>`"option5"`<br>`"option6"` |
+| `combo` | İlk seçim; üç test seçeneğinden oluşan bir kümeden seçilir. | COMBO | Evet | `"option1"`<br>`"option2"`<br>`"option3"` |
+| `combo2` | İkinci seçim; üç test seçeneğinden oluşan farklı bir kümeden seçilir. | COMBO | Evet | `"option4"`<br>`"option5"`<br>`"option6"` |
 
 ## Çıktılar
 
-| Çıktı Adı | Açıklama | Veri Tipi |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output_1` | İlk açılır kutudan (`combo`) seçilen değeri çıktı olarak verir. | COMBO |
-| `output_2` | İkinci açılır kutudan (`combo2`) seçilen değeri çıktı olarak verir. | COMBO |
+| `output_1` | İlk açılır kutuda (`combo`) seçilen değeri değiştirmeden döndürür. | COMBO |
+| `output_2` | İkinci açılır kutuda (`combo2`) seçilen değeri değiştirmeden döndürür. | COMBO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComboOptionTestNode/tr.md)
 

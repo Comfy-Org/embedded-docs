@@ -7,7 +7,7 @@ Bu düğüm, Tencent Hunyuan3D API'sini kullanarak 3D modelin bileşenlerini yap
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model_3d` | FBX formatında 3D model. Modelin 30000'den az yüzü olmalıdır. | FILE3D | Evet | FBX, Any |
-| `seed` | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: 0) | INT | Hayır | 0 ile 2147483647 |
+| `seed` | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: 0) | INT | Evet | 0 ile 2147483647 |
 
 **Not:** `model_3d` girdisi yalnızca FBX formatındaki dosyaları destekler. Farklı bir 3D dosya formatı sağlanırsa düğüm hata verir.
 

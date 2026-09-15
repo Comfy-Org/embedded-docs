@@ -7,9 +7,9 @@ Este nodo **Rodin 3D Regular** genera activos 3D utilizando la API de Rodin. Tom
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `Imágenes` | Imágenes de entrada utilizadas para la generación del modelo 3D. Se pueden proporcionar múltiples imágenes. | IMAGE | Sí | - |
-| `Semilla` | Valor de semilla aleatoria para obtener resultados reproducibles. | INT | Sí | - |
-| `Tipo_Material` | Tipo de material que se aplicará al modelo 3D. | STRING | Sí | - |
-| `Recuento_Polígonos` | Cantidad objetivo de polígonos para el modelo 3D generado. Este parámetro determina el modo de calidad y la complejidad de la malla. | STRING | Sí | - |
+| `Semilla` | Valor de semilla aleatoria para obtener resultados reproducibles. | INT | No | - |
+| `Tipo_Material` | Tipo de material que se aplicará al modelo 3D. | STRING | No | - |
+| `Recuento_Polígonos` | Cantidad objetivo de polígonos para el modelo 3D generado. Este parámetro determina el modo de calidad y la complejidad de la malla. | STRING | No | - |
 
 ## Salidas
 

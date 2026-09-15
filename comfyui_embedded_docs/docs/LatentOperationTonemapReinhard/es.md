@@ -1,12 +1,12 @@
 # OperaciónTonemapReinhardLatente
 
-El nodo LatentOperationTonemapReinhard aplica el mapeo tonal de Reinhard a los vectores latentes. Esta técnica normaliza los vectores latentes y ajusta su magnitud mediante un enfoque estadístico basado en la media y la desviación estándar, con la intensidad controlada por un parámetro multiplicador. Este nodo está actualmente marcado como experimental.
+Este nodo crea una operación latente que aplica mapeo tonal Reinhard a vectores latentes. Normaliza cada vector latente, mide la distribución de magnitud general (media y desviación estándar) y luego comprime las magnitudes extremas usando la curva de Reinhard, con la intensidad general controlada por un multiplicador. El nodo está marcado como experimental (también se puede buscar como "hdr latent").
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `multiplicador` | Controla la intensidad del efecto de mapeo tonal (por defecto: 1.0) | FLOAT | Sí | 0.0 a 100.0 (step 0.01) |
+| `multiplicador` | Controla la intensidad del efecto de mapeo tonal (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 100.0 (paso 0.01) |
 
 ## Salidas
 

@@ -1,17 +1,17 @@
 # Salvar Conjunto de Dados de Treinamento
 
-Este nó salva um conjunto de dados de treinamento codificado em disco para carregamento eficiente durante o treinamento. Ele recebe os latentes de imagem e o respectivo condicionamento de texto, divide-os em arquivos menores chamados shards e os armazena em uma pasta dentro do diretório datasets. Ele também grava um arquivo de metadados que descreve o conjunto de dados.
+Este nó salva um conjunto de dados de treinamento codificado no disco para carregamento eficiente durante o treinamento. Ele recebe latentes de imagem e seu condicionamento de texto correspondente, divide-os em arquivos menores chamados shards e os armazena em uma pasta dentro do diretório datasets. Ele também grava um arquivo de metadados que descreve o conjunto de dados.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `latents` | Lista de dicionários latentes do MakeTrainingDataset. | LATENT | Sim | N/A |
-| `condicionamento` | Lista de listas de condicionamento do MakeTrainingDataset. | CONDITIONING | Sim | N/A |
-| `nome_da_pasta` | Nome da pasta para salvar o conjunto de dados, dentro do diretório datasets. Subpastas como 'project/run1' são permitidas. (padrão: "training_dataset") | STRING | Sim | N/A |
+| `latents` | Lista de dicionários de latentes de MakeTrainingDataset. | LATENT | Sim | N/A |
+| `condicionamento` | Lista de listas de condicionamento de MakeTrainingDataset. | CONDITIONING | Sim | N/A |
+| `nome_da_pasta` | Nome da pasta na qual salvar o conjunto de dados, dentro do diretório datasets. Subpastas como 'project/run1' são permitidas. (padrão: "training_dataset") | STRING | Sim | N/A |
 | `tamanho_do_fragmento` | Número de amostras por arquivo de shard. (padrão: 1000) | INT | Sim | 1 a 100000 |
 
-**Nota:** O número de itens em `latents` deve corresponder exatamente ao número de itens em `conditioning`; o nó gera um erro se essas contagens não coincidirem. O `folder_name` deve nomear uma subpasta do diretório datasets (por exemplo, `my_dataset`) — não pode ser o próprio diretório datasets, e nomes de pasta que resultariam em um caminho fora do diretório datasets são rejeitados.
+**Observação:** O número de itens em `latents` deve corresponder exatamente ao número de itens em `conditioning`; o nó gera um erro se essas contagens não corresponderem. O `folder_name` deve nomear uma subpasta do diretório datasets (por exemplo, `my_dataset`) — ele não pode ser o próprio diretório datasets, e nomes de pasta que seriam resolvidos fora do diretório datasets são rejeitados. O parâmetro `shard_size` é uma configuração avançada.
 
 ## Saídas
 

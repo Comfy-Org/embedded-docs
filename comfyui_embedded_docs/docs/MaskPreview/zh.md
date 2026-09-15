@@ -1,23 +1,23 @@
 # 预览遮罩
 
-MaskPreview 节点直接在 ComfyUI 界面中显示遮罩数据的视觉预览，而不会将其保存到输出目录。这让您可以在工作流的任意阶段检查遮罩，同时遮罩也会原样通过该节点，以便在下游继续使用。
+The MaskPreview 节点直接在 ComfyUI 界面中显示遮罩数据的可视化预览，而不会将其保存到输出目录。这让你可以在工作流中的任意位置检查遮罩，同时该遮罩还会原样通过该节点，以便继续在下游使用。
 
 ## 输入
 
-| 参数 | 描述 | 数据类型 | 必需 | 范围 |
+| 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
 | `遮罩` | 要预览的遮罩数据 | MASK | 是 | - |
-| `filename_prefix` | 用于预览的文件名前缀（默认为 "ComfyUI"） | STRING | 否 | - |
-| `prompt` | 用于元数据的提示信息（由系统自动提供） | PROMPT | 否 | - |
-| `extra_pnginfo` | 用于元数据的额外 PNG 信息（由系统自动提供） | EXTRA_PNGINFO | 否 | - |
+| `filename_prefix` | 用于预览的文件名前缀（默认："ComfyUI"） | STRING | 否 | - |
+| `prompt` | 用于元数据的提示词信息（自动提供） | PROMPT | 否 | - |
+| `extra_pnginfo` | 用于元数据的额外 PNG 信息（自动提供） | EXTRA_PNGINFO | 否 | - |
 
-只有 `mask` 是可见输入，需要进行连接。`filename_prefix`、`prompt` 和 `extra_pnginfo` 参数由系统提供：`filename_prefix` 会回退到其默认值，而 `prompt` 和 `extra_pnginfo` 是隐藏的，由 ComfyUI 运行时自动提供。
+只有 `mask` 是需要连接的可见输入。`filename_prefix`、`prompt` 和 `extra_pnginfo` 参数由系统提供：`filename_prefix` 回退到其默认值，而 `prompt` 和 `extra_pnginfo` 是隐藏的，由 ComfyUI 运行时自动提供。
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `mask` | 已预览的相同遮罩数据，原样返回，以便在工作流中的其他位置使用 | MASK |
+| `mask` | 所预览的同一遮罩数据，原样返回，以便可在工作流中的其他位置使用 | MASK |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MaskPreview/zh.md)
 

@@ -12,7 +12,7 @@ Le nœud HunyuanVideo15SuperResolution prépare les données de conditionnement 
 | `image_de_départ` | Une image de départ facultative pour guider la super-résolution. Si fournie, elle est agrandie et encodée dans le latent de conditionnement. | IMAGE | Non | N/A |
 | `clip_vision_output` | Embeddings CLIP vision facultatifs à ajouter au conditionnement. | CLIP_VISION_OUTPUT | Non | N/A |
 | `latent` | La représentation latente vidéo d'entrée qui est incorporée dans le conditionnement. | LATENT | Oui | N/A |
-| `augmentation_du_bruit` | La force de l'augmentation de bruit à appliquer au conditionnement (par défaut : 0,70). C'est un paramètre avancé. | FLOAT | Non | 0.0 - 1.0 (pas 0.01) |
+| `augmentation_du_bruit` | La force de l'augmentation de bruit à appliquer au conditionnement (par défaut : 0,70). C'est un paramètre avancé. | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
 
 **Remarque :** Si vous fournissez une `start_image`, vous devez également connecter un `vae` pour pouvoir l'encoder. L'`start_image` est automatiquement agrandie à 16 fois les dimensions spatiales (largeur et hauteur) du `latent` d'entrée, puis encodée et placée dans le latent de conditionnement. Seuls les canaux RVB de l'`start_image` sont utilisés pour l'encodage.
 
@@ -20,8 +20,8 @@ Le nœud HunyuanVideo15SuperResolution prépare les données de conditionnement 
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `positif` | Le conditionnement positif modifié, contenant désormais le latent concaténé, l'augmentation de bruit et les éventuelles données CLIP vision. | CONDITIONING |
-| `négatif` | Le conditionnement négatif modifié, contenant désormais le latent concaténé, l'augmentation de bruit et les éventuelles données CLIP vision. | CONDITIONING |
+| `positive` | Le conditionnement positif modifié, contenant désormais le latent concaténé, l'augmentation de bruit et les éventuelles données CLIP vision. | CONDITIONING |
+| `negative` | Le conditionnement négatif modifié, contenant désormais le latent concaténé, l'augmentation de bruit et les éventuelles données CLIP vision. | CONDITIONING |
 | `latent` | Le latent d'entrée est transmis tel quel, sans modification. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15SuperResolution/fr.md)

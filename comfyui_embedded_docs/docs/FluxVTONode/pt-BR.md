@@ -1,15 +1,15 @@
 # Flux Prova Virtual de Roupas
 
-Este nó realiza prova virtual de roupas, vestindo uma pessoa com uma imagem de vestuário fornecida. Ele usa a API BFL Flux VTO para gerar uma imagem realista da pessoa usando a peça de vestuário especificada.
+Este nó realiza uma prova virtual, vestindo uma pessoa com uma imagem de peça de vestuário fornecida. Ele envia as imagens da pessoa e da peça de vestuário para o serviço BFL Flux VTO, que gera uma imagem realista da pessoa vestindo a peça. Uma instrução de texto opcional pode descrever como a peça deve se ajustar ou ficar.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `pessoa` | Imagem da pessoa a ser vestida. | IMAGE | Sim | - |
-| `roupa` | Imagem da peça de vestuário a ser aplicada. | IMAGE | Sim | - |
-| `prompt` | Instrução de estilo opcional em linguagem natural (por exemplo, como a peça deve se ajustar). (padrão: vazio) | STRING | Não | - |
-| `semente` | A semente aleatória usada para gerar o ruído. (padrão: 0) | INT | Não | 0 a 18446744073709551615 |
+| `pessoa` | Imagem da pessoa a vestir. | IMAGE | Sim | - |
+| `roupa` | Imagem da peça de vestuário a aplicar. | IMAGE | Sim | - |
+| `prompt` | Instrução de estilização opcional em linguagem natural (ex.: como a peça deve se ajustar). O padrão é uma string vazia. | STRING | Não | - |
+| `semente` | A semente aleatória usada para criar o ruído. Padrão: 0. | INT | Não | 0 a 18446744073709551615 |
 
 ## Saídas
 

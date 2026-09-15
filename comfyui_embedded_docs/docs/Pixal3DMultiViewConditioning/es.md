@@ -1,34 +1,32 @@
-# Pixal3DMultiViewConditioning
+# Pixal3D Acondicionamiento multivista
 
-## Resumen
-
-El nodo Pixal3D Multi-View Conditioning es una estructura de órbita fija que genera vistas frontales, laterales, traseras y laterales de un objeto a intervalos de 90 grados. Se utiliza para crear vistas enmarcadas para aplicaciones Pixal3D, donde el objeto abarca aproximadamente 1/1.1 de la imagen en su anchura máxima, manteniendo la misma escala en cada vista.
+El nodo Pixal3D Multi-View Conditioning construye datos de condicionamiento a partir de un rig de cámara en órbita fijo: vistas frontal, izquierda, trasera y derecha colocadas a 90 grados entre sí, utilizadas exactamente tal como están encuadradas. Conecta al menos una vista cuadrada del objeto y prepara el condicionamiento positivo y negativo correspondiente para los modelos Pixal3D.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
-|-----------|-------------|-----------|----------|-------|
-| `clip_vision_model` | DINOv3 ViT-L/16 ClipVision con pesos NAF incluidos. | MODEL | Sí | N/A |
-| `fov` | FOV horizontal en grados de las vistas enmarcadas. | FLOAT | Sí | 1.0 - 170.0 |
-| `frontal` | Vista cuadrada del lado frontal del objeto, con alpha o en un fondo negro. | IMAGE | Sí | N/A |
-| `izquierda` | Vista cuadrada del lado izquierdo del objeto, con alpha o en un fondo negro. | IMAGE | Opcional | N/A |
-| `trasera` | Vista cuadrada del lado trasero del objeto, con alpha o en un fondo negro. | IMAGE | Opcional | N/A |
-| `derecha` | Vista cuadrada del lado derecho del objeto, con alpha o en un fondo negro. | IMAGE | Opcional | N/A |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+|-----------|-------------|--------------|-------------|-------|
+| `clip_vision_model` | DINOv3 ViT-L/16 ClipVision con pesos NAF incluidos. | CLIP_VISION | Sí | N/A |
+| `fov` | FOV horizontal en grados de las vistas tal como están encuadradas: 20 para renders de rig y la mayoría de generadores multivista, o MoGeGeometryToFOV en una de las vistas para fotografías. Predeterminado: 20.0. | FLOAT | Sí | 1.0 - 170.0 |
+| `frontal` | Vista cuadrada del lado frontal del objeto, con alfa o sobre un fondo negro, encuadrada como el rig: el objeto abarca aproximadamente 1/1.1 del encuadre en su punto más ancho, con la misma escala en cada vista. La primera vista conectada (en orden frontal, izquierda, trasera, derecha) es el frente al que se posa la malla. | IMAGE | No | N/A |
+| `izquierda` | Vista cuadrada del lado izquierdo del objeto, con alfa o sobre un fondo negro, encuadrada como el rig: el objeto abarca aproximadamente 1/1.1 del encuadre en su punto más ancho, con la misma escala en cada vista. La primera vista conectada (en orden frontal, izquierda, trasera, derecha) es el frente al que se posa la malla. | IMAGE | No | N/A |
+| `trasera` | Vista cuadrada del lado trasero del objeto, con alfa o sobre un fondo negro, encuadrada como el rig: el objeto abarca aproximadamente 1/1.1 del encuadre en su punto más ancho, con la misma escala en cada vista. La primera vista conectada (en orden frontal, izquierda, trasera, derecha) es el frente al que se posa la malla. | IMAGE | No | N/A |
+| `derecha` | Vista cuadrada del lado derecho del objeto, con alfa o sobre un fondo negro, encuadrada como el rig: el objeto abarca aproximadamente 1/1.1 del encuadre en su punto más ancho, con la misma escala en cada vista. La primera vista conectada (en orden frontal, izquierda, trasera, derecha) es el frente al que se posa la malla. | IMAGE | No | N/A |
+
+### Notas
+
+- Se debe conectar al menos una vista; el nodo genera un error si las cuatro entradas de vista están vacías.
+- La primera vista conectada, en el orden frontal, izquierda, trasera, derecha, se trata como el frente, y la malla se posa en esa vista. Si la primera vista conectada no es `front`, se registra una advertencia indicando que la malla se posará con esa vista como su frente.
+- Las vistas se leen en el orden frontal, izquierda, trasera, derecha, y se colocan en la órbita en sus acimuts fijos relativos a la primera vista conectada.
+- Las vistas de entrada con un canal alfa tienen el alfa aplicado sobre negro. Las vistas que no son de 1024 x 1024 se redimensionan a 1024 x 1024.
+- El tamaño de lote se toma de la primera vista conectada. Si las vistas conectadas tienen tamaños de lote diferentes, las más pequeñas se ciclan para coincidir.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
-|-------------|-------------|-----------|
-| `positivo` | La salida de condicionamiento positivo para el nodo Pixal3D Multi-View Conditioning. | CONDITIONING |
-| `negativo` | La salida de condicionamiento negativo para el nodo Pixal3D Multi-View Conditioning. | CONDITIONING |
-
-## Notas
-
-- El parámetro `fov` controla el campo de visión horizontal de las vistas enmarcadas. Un valor de 20 grados es típico para renders de estructuras y la mayoría de los generadores de vistas múltiples.
-- La primera vista conectada (orden frontal, izquierdo, trasero, derecho) se considera frontal, y la malla se coloca en esta vista.
-- Si no se proporciona una vista frontal, se genera un aviso y la malla se coloca con la primera vista conectada como su frontal.
-- El nodo asume que las vistas son cuadradas y enmarcadas como la estructura. El objeto debe abarcar aproximadamente 1/1.1 de la imagen en su anchura máxima, y la misma escala debe mantenerse en cada vista.
-- El nodo genera dos objetos de condicionamiento, uno para el condicionamiento positivo y otro para el negativo. Estos pueden utilizarse para condicionar modelos Pixal3D u otros nodos que acepten entradas de condicionamiento.
+| Nombre de salida | Descripción | Tipo de dato |
+|------------------|-------------|--------------|
+| `positive` | La salida de condicionamiento positivo, construida a partir de las vistas codificadas y sus características proyectadas. | CONDITIONING |
+| `negative` | La salida de condicionamiento negativo, construida a partir de embeddings puestos a cero con las mismas características proyectadas. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Pixal3DMultiViewConditioning/es.md)
 

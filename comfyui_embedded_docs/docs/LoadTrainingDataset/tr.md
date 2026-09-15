@@ -1,21 +1,21 @@
 # Eğitim Verisetini Yükle
 
-Bu düğüm, daha önce diske kaydedilmiş kodlanmış bir eğitim veri kümesini (latentler ve koşullandırma) yükler. Veri kümeleri dizinindeki seçili veri kümesi klasöründeki tüm veri parçası dosyalarını okur ve eğitim iş akışlarında kullanılmak üzere birleştirilmiş latent vektörlerini ve koşullandırma verilerini döndürür.
+Bu düğüm, daha önce diske kaydedilmiş kodlanmış bir eğitim veri kümesini (latentler ve koşullandırma) yükler. Veri kümeleri dizinindeki seçili bir veri kümesi klasöründen tüm `shard_*.pkl` veri parçası dosyalarını okur ve eğitim iş akışlarında kullanılmak üzere birleştirilmiş latent vektörlerini ve koşullandırma verilerini döndürür.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `folder_name` | Veri kümeleri dizininden yüklenecek kaydedilmiş veri kümesi. | COMBO | Evet | Veri kümeleri dizininde bulunan her veri kümesi klasörü için bir seçenek |
+| `folder_name` | Veri kümeleri dizininden yüklenecek kayıtlı veri kümesi. | COMBO | Evet | Veri kümeleri dizininde bulunan her veri kümesi klasörü için bir seçenek |
 
-Not: `folder_name` seçenekleri, veri kümeleri dizini taranarak otomatik olarak oluşturulur. Bir alt klasör, bir `metadata.json` dosyası veya en az bir `.safetensors` dosyası içerdiğinde veri kümesi olarak listelenir. Seçili veri kümesi klasörü, yapılandırılmış tüm veri kümesi kök dizinlerinde aranır. Bu düğüm, seçili klasördeki `shard_*.pkl` adlı tüm dosyaları okur ve hiçbir parça dosyası bulunmazsa bir hata verir.
+Not: `folder_name` seçenekleri, veri kümeleri dizini taranarak otomatik olarak oluşturulur. Bir alt klasör, bir `metadata.json` dosyası veya en az bir `.safetensors` dosyası içerdiğinde veri kümesi olarak listelenir (tarama, eşleşen bir klasörün içine girmez). Seçilen veri kümesi klasörü, yapılandırılmış tüm veri kümesi kök dizinlerinde aranır ve klasör adı bu köklerden birinin içindeki bir alt klasöre çözümlenmelidir. Düğüm, seçilen klasördeki `shard_*.pkl` adlı tüm dosyaları sıralı düzende okur ve hiç parça dosyası bulunamazsa veya klasör bulunamazsa bir hata verir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `latents` | Her biri bir `"samples"` anahtarı ve bir tensör içeren latent sözlüklerinin listesi. | LATENT |
-| `conditioning` | Her bir iç liste, ilgili örnek için koşullandırma verilerini içeren koşullandırma listelerinin listesi. | CONDITIONING |
+| `latents` | Her biri tensör içeren bir `"samples"` anahtarı barındıran latent sözlüklerinin listesi (çıktı listesi). | LATENT |
+| `conditioning` | Koşullandırma listelerinin listesi (çıktı listesi); burada her iç liste, karşılık gelen örnek için koşullandırma verilerini içerir. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/tr.md)
 

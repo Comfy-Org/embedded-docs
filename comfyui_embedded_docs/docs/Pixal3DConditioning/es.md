@@ -1,6 +1,6 @@
 # Pixal3DConditioning
 
-Este nodo prepara el acondicionamiento de imagen para el proceso de generación 3D de Trellis2. Extrae características visuales de la imagen de entrada con un modelo de visión DINOv3 en dos resoluciones, las organiza en mapas de características por etapa (opcionalmente mejorados con un modelo NAF) y las combina con los datos de cámara derivados del campo de visión horizontal. Genera un par de acondicionamientos positivo y negativo, donde el negativo utiliza características puestas a cero para la guía sin clasificador.
+El nodo Pixal3DConditioning prepara el acondicionamiento de imagen para el pipeline de generación 3D Trellis2. Utiliza un modelo de visión DINOv3 para extraer características visuales de la imagen de entrada en dos resoluciones (512 y 1024), y luego las organiza en mapas de características por etapa que pueden mejorarse opcionalmente mediante un modelo NAF. La información de cámara se deriva del campo de visión horizontal para construir la matriz de transformación de proyección, y el nodo genera un par de acondicionamiento positivo (características derivadas de la imagen más datos de proyección) y un par de acondicionamiento negativo (tensores de características en cero) para la guía libre de clasificador.
 
 ## Entradas
 
@@ -8,16 +8,16 @@ Este nodo prepara el acondicionamiento de imagen para el proceso de generación 
 |-----------|-------------|---------------|-------------|-------|
 | `clip_vision_model` | DINOv3 ViT-L/16 ClipVision. | CLIP_VISION | Sí | — |
 | `imagen` | Imagen preprocesada de ImageCropToMask (pad_factor=1.1 para Pixal3D). | IMAGE | Sí | — |
-| `camera_angle_x` | Campo de visión horizontal en grados (nombre visible: fov). Conecta un MoGeGeometryToFOV (axis='horizontal', unit='degrees') para obtener un FoV por imagen (coincide con el valor predeterminado del nodo anterior). Valor predeterminado: 49.13. | FLOAT | Sí | 1.0 – 170.0 |
-
-Nota: El valor de `camera_angle_x` se convierte internamente a radianes y se utiliza para calcular la distancia de la cámara para la matriz de transformación de proyección. Cuando el modelo de visión suministrado incluye un componente NAF, el nodo produce además mapas de características de alta resolución para las etapas de forma y textura.
+| `camera_angle_x` | FOV horizontal en grados (mostrado como `fov`). Conecte un MoGeGeometryToFOV (axis='horizontal', unit='degrees') para un FoV por imagen (coincide con el valor predeterminado original). Predeterminado: 49.13. | FLOAT | Sí | 1.0 – 170.0 (paso 0.01) |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `positivo` | Acondicionamiento positivo que contiene los mapas de características derivados de la imagen y los datos de proyección para la generación de Trellis2. | CONDITIONING |
-| `negativo` | Acondicionamiento negativo con tensores de características puestos a cero, utilizado para la guía sin clasificador. | CONDITIONING |
+| `positive` | La salida de acondicionamiento positiva que contiene los mapas de características derivados de la imagen y los datos de proyección para la generación de Trellis2. | CONDITIONING |
+| `negative` | La salida de acondicionamiento negativa con tensores de características en cero, utilizada para la guía libre de clasificador. | CONDITIONING |
+
+Nota: El valor de `camera_angle_x` se convierte internamente de grados a radianes, y la distancia de la cámara se calcula a partir de él para construir la matriz de transformación de proyección. Cuando el modelo de visión proporcionado incluye un componente NAF, el nodo también produce mapas de características de alta resolución para las etapas de forma y textura.
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Pixal3DConditioning/es.md)
 

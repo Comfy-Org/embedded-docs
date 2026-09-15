@@ -1,30 +1,30 @@
 # Kandinsky5ImageToVideo
 
-El nodo Kandinsky5ImageToVideo prepara los datos de condicionamiento y espacio latente para la generación de videos utilizando el modelo Kandinsky. Crea un tensor latente de video vacío y, opcionalmente, puede codificar una imagen inicial para guiar los primeros fotogramas del video generado, modificando el condicionamiento positivo y negativo en consecuencia.
+El nodo Kandinsky5ImageToVideo prepara datos de condicionamiento y latentes para la generación de video usando el modelo Kandinsky. Crea un latente de video vacío con el tamaño de ancho, alto, longitud y tamaño de lote solicitados, y opcionalmente puede codificar una imagen inicial para guiar los fotogramas iniciales del video generado actualizando el condicionamiento positivo y negativo.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `positivo` | Las indicaciones de condicionamiento positivo que guían la generación del video. | CONDITIONING | Sí | N/A |
-| `negativo` | Las indicaciones de condicionamiento negativo para alejar la generación del video de ciertos conceptos. | CONDITIONING | Sí | N/A |
-| `vae` | El modelo VAE utilizado para codificar la imagen inicial opcional en el espacio latente. | VAE | Sí | N/A |
-| `ancho` | El ancho del video de salida en píxeles (predeterminado: 768). | INT | Sí | 16 a 16384 (step 16) |
-| `alto` | El alto del video de salida en píxeles (predeterminado: 512). | INT | Sí | 16 a 16384 (step 16) |
-| `duración` | El número de fotogramas del video (predeterminado: 121). | INT | Sí | 1 a 16384 (step 4) |
+| `positivo` | Los prompts de condicionamiento positivo para guiar la generación de video. | CONDITIONING | Sí | N/A |
+| `negativo` | Los prompts de condicionamiento negativo para alejar la generación de video de ciertos conceptos. | CONDITIONING | Sí | N/A |
+| `vae` | El modelo VAE usado para codificar la imagen inicial opcional en el espacio latente. | VAE | Sí | N/A |
+| `ancho` | El ancho del video de salida en píxeles (predeterminado: 768). | INT | Sí | 16 a 16384 (paso 16) |
+| `alto` | El alto del video de salida en píxeles (predeterminado: 512). | INT | Sí | 16 a 16384 (paso 16) |
+| `duración` | El número de fotogramas del video (predeterminado: 121). | INT | Sí | 1 a 16384 (paso 4) |
 | `tamaño_lote` | El número de secuencias de video a generar simultáneamente (predeterminado: 1). | INT | Sí | 1 a 4096 |
-| `imagen_inicial` | Una imagen inicial opcional o un lote de fotogramas. Si se proporciona, se codifica y se utiliza para reemplazar el inicio ruidoso de los latentes de salida del modelo. | IMAGE | No | N/A |
+| `imagen_inicial` | Una imagen inicial opcional o lote de fotogramas. Si se proporciona, se codifica y se usa para reemplazar el inicio ruidoso de los latentes de salida del modelo. | IMAGE | No | N/A |
 
-**Nota:** Cuando se proporciona una `start_image`, se redimensiona automáticamente para que coincida con las dimensiones `width` y `height` especificadas mediante interpolación bilineal. Solo los primeros `length` fotogramas del lote de imágenes se utilizan para la codificación; cualquier fotograma adicional se ignora. Si el lote de imágenes tiene menos de `length` fotogramas, solo se utilizan esos fotogramas. Solo se codifican los canales RGB de la imagen. El latente codificado se inyecta tanto en el condicionamiento `positive` como en el `negative` para guiar la apariencia inicial del video, y los fotogramas codificados limpios reemplazan el inicio ruidoso de los latentes de salida del modelo.
+**Nota:** Cuando se proporciona una `start_image`, se redimensiona automáticamente para coincidir con el `width` y el `height` especificados usando interpolación bilineal. Solo se usan los primeros `length` fotogramas del lote de imágenes para la codificación; cualquier fotograma adicional se ignora. Si el lote de imágenes tiene menos de `length` fotogramas, solo se usan esos fotogramas. Solo se codifican los canales RGB de la imagen. Luego, el latente codificado se inyecta tanto en el condicionamiento `positive` como en el `negative` para guiar la apariencia inicial del video, y los fotogramas codificados limpios reemplazan el inicio ruidoso de los latentes de salida del modelo.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `positivo` | El condicionamiento positivo modificado, potencialmente actualizado con los datos de la imagen inicial codificada. | CONDITIONING |
-| `negativo` | El condicionamiento negativo modificado, potencialmente actualizado con los datos de la imagen inicial codificada. | CONDITIONING |
-| `latente` | Latente de video vacío. Un tensor latente lleno de ceros, con la forma de las dimensiones especificadas. | LATENT |
-| `latente_cond` | Imágenes iniciales codificadas limpias, utilizadas para reemplazar el inicio ruidoso de los latentes de salida del modelo. Vacío cuando no se proporciona una `start_image`. | LATENT |
+| `positive` | El condicionamiento positivo modificado, actualizado con datos de imagen inicial codificados cuando se proporciona una `start_image`. | CONDITIONING |
+| `negative` | El condicionamiento negativo modificado, actualizado con datos de imagen inicial codificados cuando se proporciona una `start_image`. | CONDITIONING |
+| `latent` | Latente de video vacío. Un tensor latente lleno de ceros, con la forma de las dimensiones especificadas. | LATENT |
+| `cond_latent` | Imágenes iniciales codificadas limpias, usadas para reemplazar el inicio ruidoso de los latentes de salida del modelo. Vacío cuando no se proporciona una `start_image`. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Kandinsky5ImageToVideo/es.md)
 

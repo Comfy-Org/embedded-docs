@@ -1,26 +1,28 @@
 # SamplerSASolver
 
-El nodo SamplerSASolver implementa un algoritmo de muestreo personalizado para modelos de difusión. Utiliza un enfoque predictor-corrector con ajustes de orden configurables y parámetros de ecuación diferencial estocástica (SDE) para generar muestras a partir del modelo de entrada.
+El nodo SamplerSASolver crea y configura un sampler personalizado para modelos de difusión. Utiliza el algoritmo de muestreo `sa_solver` con un esquema predictor-corrector configurable y ajustes de ecuación diferencial estocástica (SDE), y devuelve un objeto sampler que se puede conectar a un nodo de muestreo. Los valores `sde_start_percent` y `sde_end_percent` se convierten en valores sigma usando el programa de muestreo del modelo conectado para definir el intervalo en el que se aplica el componente estocástico.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo de difusión que se utilizará para el muestreo | MODEL | Sí | - |
-| `eta` | Controla el factor de escala del tamaño de paso (por defecto: 1.0) | FLOAT | No | 0.0 - 10.0 |
-| `porcentaje_inicio_sde` | El porcentaje inicial para el muestreo SDE (por defecto: 0.2) | FLOAT | No | 0.0 - 1.0 |
-| `porcentaje_fin_sde` | El porcentaje final para el muestreo SDE (por defecto: 0.8) | FLOAT | No | 0.0 - 1.0 |
-| `s_ruido` | Controla la cantidad de ruido añadido durante el muestreo (por defecto: 1.0) | FLOAT | No | 0.0 - 100.0 |
-| `orden_predictor` | El orden del componente predictor en el solver (por defecto: 3) | INT | No | 1 - 6 |
-| `orden_corrector` | El orden del componente corrector en el solver (por defecto: 4) | INT | No | 0 - 6 |
-| `usar_pece` | Activa o desactiva el método PECE (Predict-Evaluate-Correct-Evaluate) | BOOLEAN | No | - |
-| `orden_simple_2` | Activa o desactiva los cálculos simplificados de segundo orden | BOOLEAN | No | - |
+| `modelo` | El modelo de difusión cuyo programa de muestreo se usa para construir el sampler | MODEL | Sí | - |
+| `eta` | Controla el factor de escala del tamaño de paso del solucionador SDE (predeterminado: 1.0) | FLOAT | No | 0.0 - 10.0 |
+| `porcentaje_inicio_sde` | Porcentaje inicial del proceso de muestreo donde comienza el componente estocástico (SDE); se convierte en un valor sigma usando el programa del modelo (predeterminado: 0.2) | FLOAT | No | 0.0 - 1.0 |
+| `porcentaje_fin_sde` | Porcentaje final del proceso de muestreo donde se detiene el componente estocástico (SDE); se convierte en un valor sigma usando el programa del modelo (predeterminado: 0.8) | FLOAT | No | 0.0 - 1.0 |
+| `s_ruido` | Controla la cantidad de ruido añadido durante el muestreo (predeterminado: 1.0) | FLOAT | No | 0.0 - 100.0 |
+| `orden_predictor` | El orden del componente predictor en el solucionador (predeterminado: 3) | INT | No | 1 - 6 |
+| `orden_corrector` | El orden del componente corrector en el solucionador (predeterminado: 4) | INT | No | 0 - 6 |
+| `usar_pece` | Habilita el método PECE (Predict-Evaluate-Correct-Evaluate) (predeterminado: deshabilitado) | BOOLEAN | No | - |
+| `orden_simple_2` | Habilita cálculos simplificados de segundo orden (predeterminado: deshabilitado) | BOOLEAN | No | - |
+
+Todas las entradas opcionales están marcadas como avanzadas en la interfaz.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `sampler` | Un objeto sampler configurado que se puede utilizar con modelos de difusión | SAMPLER |
+| `sampler` | Un objeto sampler configurado (usando el algoritmo `sa_solver`) que pueden usar los nodos de muestreo | SAMPLER |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerSASolver/es.md)
 

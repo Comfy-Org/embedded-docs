@@ -1,10 +1,10 @@
 # FluxProImageNode
 
-Génère des images de manière synchrone en fonction du prompt et de la résolution. Ce nœud crée des images à l'aide du modèle Flux 1.1 Pro en envoyant des requêtes à un point de terminaison API et en attendant la réponse complète avant de renvoyer l'image générée.
+Génère des images de manière synchrone en fonction du prompt et de la résolution. Ce nœud crée des images à l'aide du modèle Flux 1.1 Pro en envoyant des requêtes à un point de terminaison d'API et en attendant la réponse complète avant de renvoyer l'image générée.
 
 ## Entrées
 
-| Paramètre | Description | Type de données | Requis | Plage |
+| Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
 | `prompt` | Prompt pour la génération d'image (par défaut : chaîne vide) | STRING | Oui | - |
 | `prompt_upsampling` | Indique s'il faut effectuer un suréchantillonnage du prompt. Si activé, modifie automatiquement le prompt pour une génération plus créative, mais les résultats sont non déterministes (la même graine ne produira pas exactement le même résultat). (par défaut : False) | BOOLEAN | Oui | - |

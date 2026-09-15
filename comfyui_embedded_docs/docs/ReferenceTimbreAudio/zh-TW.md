@@ -1,19 +1,19 @@
 # ReferenceTimbreAudio
 
-此節點設定參考音色，用於「ace step 1.5」流程。它藉由接收 `conditioning` 輸入，並可選擇接收音訊的潛在表示（latent），然後將該潛在資料附加到 `conditioning` 上，供工作流程中的後續節點使用。此節點目前標記為實驗性。
+此節點會為「ace step 1.5」流程設定參考音訊。它接收一個 `conditioning` 輸入，並可選擇性地接收音訊的 latent 表示，然後將該 latent 資料附加到 `conditioning`，讓後續節點可將其用作參考音訊音色 latent。此節點標記為實驗性。
 
 ## 輸入
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `條件` | 將被附加參考音色資訊的 conditioning 資料。 | CONDITIONING | 是 |  |
-| `latent` | 可選的參考音訊潛在表示。若提供，其樣本將被添加（附加）到 conditioning 中，以便用作參考音色潛在表示。 | LATENT | No |  |
+| `條件` | 要附加參考音訊資訊的 conditioning 資料。 | CONDITIONING | 是 |  |
+| `latent` | 參考音訊的選用 latent 表示（預設：None）。提供時，其樣本會作為參考音訊音色 latent 附加到 conditioning。 | LATENT | 否 |  |
 
 ## 輸出
 
-| 輸出名 | 描述 | 資料類型 |
+| 輸出名稱 | 描述 | 資料類型 |
 | --- | --- | --- |
-| `conditioning` | 修改後的 conditioning 資料，若提供了可選的 `latent` 輸入，則現在包含參考音色潛在表示。 | CONDITIONING |
+| `conditioning` | 修改後的 conditioning 資料；若提供了選用的 `latent` 輸入，現在會包含參考音訊音色 latent。 | CONDITIONING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceTimbreAudio/zh-TW.md)
 

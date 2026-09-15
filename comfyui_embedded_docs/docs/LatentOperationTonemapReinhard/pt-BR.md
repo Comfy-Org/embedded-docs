@@ -1,18 +1,18 @@
 # LatentOperationTonemapReinhard
 
-O nó LatentOperationTonemapReinhard aplica mapeamento de tom de Reinhard a vetores latentes. Essa técnica normaliza os vetores latentes e ajusta sua magnitude usando uma abordagem estatística baseada em média e desvio padrão, com a intensidade controlada por um parâmetro multiplicador. Este nó está atualmente marcado como experimental.
+Este nó cria uma operação latente que aplica mapeamento de tons de Reinhard a vetores latentes. Ele normaliza cada vetor latente, mede a distribuição geral de magnitude (média e desvio padrão) e, em seguida, comprime magnitudes extremas usando a curva de Reinhard, com a força geral controlada por um multiplicador. O nó está marcado como experimental (também pesquisável como "hdr latent").
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `multiplicador` | Controla a intensidade do efeito de mapeamento de tom (padrão: 1.0) | FLOAT | Sim | 0.0 a 100.0 (passo 0.01) |
+| `multiplicador` | Controla a intensidade do efeito de mapeamento de tons (padrão: 1.0) | FLOAT | Sim | 0.0 a 100.0 (passo 0.01) |
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `operation` | Retorna uma operação de mapeamento de tom que pode ser aplicada a vetores latentes | LATENT_OPERATION |
+| `operation` | Retorna uma operação de mapeamento de tons que pode ser aplicada a vetores latentes | LATENT_OPERATION |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentOperationTonemapReinhard/pt-BR.md)
 

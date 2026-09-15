@@ -1,23 +1,25 @@
 # SamplerDPMPP_SDE
 
-SamplerDPMPP_SDE 建立一個用於取樣過程的 DPM++ SDE（隨機微分方程）取樣器。此取樣器提供具有可配置雜訊參數和裝置選擇的隨機取樣方法。它回傳一個可用於取樣管線的取樣器物件。
+## 概覽
+
+SamplerDPMPP_SDE 建立一個 DPM++ SDE（隨機微分方程）取樣器，供取樣流程使用。此取樣器提供一種隨機取樣方法，可設定雜訊參數並選擇裝置。它會傳回一個可在取樣流程中使用的取樣器物件。
 
 ## 輸入
 
-| 參數 | 描述 | 資料類型 | 必要 | 範圍 |
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `eta` | 控制取樣過程的隨機性（預設值：1.0） | FLOAT | 是 | 0.0 - 100.0 |
-| `s_noise` | 控制取樣期間加入的雜訊量（預設值：1.0） | FLOAT | 是 | 0.0 - 100.0 |
-| `r` | 影響取樣行為的參數（預設值：0.5） | FLOAT | 是 | 0.0 - 100.0 |
-| `noise_device` | 選擇執行雜訊計算的裝置。設為 "cpu" 時，會建立 `dpmpp_sde` 取樣器；設為 "gpu" 時，會建立 `dpmpp_sde_gpu` 取樣器（預設值："gpu"） | COMBO | 是 | "gpu"<br>"cpu" |
+| `eta` | 控制取樣過程的隨機性（預設：1.0） | FLOAT | 是 | 0.0 - 100.0 |
+| `s_noise` | 控制取樣期間加入的雜訊量（預設：1.0） | FLOAT | 是 | 0.0 - 100.0 |
+| `r` | 影響取樣行為的參數（預設：0.5） | FLOAT | 是 | 0.0 - 100.0 |
+| `noise_device` | 選擇執行雜訊計算的裝置。設為 "cpu" 時，會建立 `dpmpp_sde` 取樣器；設為 "gpu" 時，會建立 `dpmpp_sde_gpu` 取樣器（預設："gpu"） | COMBO | 是 | "gpu"<br>"cpu" |
 
-注意：所有輸入均標記為進階參數。`noise_device` 的選擇會改變建立的取樣器變體：「cpu」對應 `dpmpp_sde`，「gpu」對應 `dpmpp_sde_gpu`。
+備註：所有輸入都標記為進階參數。`noise_device` 的選擇會改變所建立的取樣器變體："cpu" 對應至 `dpmpp_sde`，"gpu" 對應至 `dpmpp_sde_gpu`。
 
 ## 輸出
 
-| 輸出名 | 描述 | 資料類型 |
+| 輸出名稱 | 描述 | 資料類型 |
 | --- | --- | --- |
-| `sampler` | 回傳一個配置好的 DPM++ SDE 取樣器物件，用於取樣管線 | SAMPLER |
+| `sampler` | 傳回已設定的 DPM++ SDE 取樣器物件，供取樣流程使用 | SAMPLER |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerDPMPP_SDE/zh-TW.md)
 

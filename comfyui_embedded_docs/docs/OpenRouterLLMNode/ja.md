@@ -13,7 +13,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 | `prompt` | モデルへのテキスト入力。 | STRING | はい | N/A |
 | `model` | 応答の生成に使用される OpenRouter モデル。 | DYNAMIC_COMBO | はい | 選択可能な複数のオプションがあります（下記のモデルセクションを参照） |
 | `seed` | サンプリング用のシード。0 を指定すると省略されます。ほとんどのモデルではヒントとしてのみ扱われます。（デフォルト: 0） | INT | はい | 0〜2147483647 |
-| `system_prompt` | モデルの動作を決定する基本指示。（デフォルト: ""） | STRING | No | N/A |
+| `system_prompt` | モデルの動作を決定する基本指示。（デフォルト: ""） | STRING | いいえ | N/A |
 
 ### Anthropic Claude モデル入力
 
@@ -21,7 +21,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | No | "off"<br>"low"<br>"medium"<br>"high" |
+| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | いいえ | "off"<br>"low"<br>"medium"<br>"high" |
 
 これらのモデルは最大20個の参照画像をサポートしています（参照入力を参照）。
 
@@ -31,7 +31,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | No | "off"<br>"low"<br>"medium"<br>"high" |
+| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | いいえ | "off"<br>"low"<br>"medium"<br>"high" |
 
 これらのモデルは最大20個の参照画像をサポートしています（参照入力を参照）。
 
@@ -39,7 +39,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | No | "off"<br>"low"<br>"medium"<br>"high" |
+| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | いいえ | "off"<br>"low"<br>"medium"<br>"high" |
 
 このモデルは最大20個の参照画像と最大4個の参照ビデオをサポートしています（参照入力を参照）。
 
@@ -49,7 +49,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | No | "off"<br>"low"<br>"medium"<br>"high" |
+| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | いいえ | "off"<br>"low"<br>"medium"<br>"high" |
 
 これらのモデルは最大20個の参照画像をサポートしています（参照入力を参照）。
 
@@ -59,7 +59,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | No | "off"<br>"low"<br>"medium"<br>"high" |
+| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | いいえ | "off"<br>"low"<br>"medium"<br>"high" |
 
 テキストのみ対応のモデルです。参照画像や参照ビデオは使用できません。
 
@@ -67,7 +67,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | No | "off"<br>"low"<br>"medium"<br>"high" |
+| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | いいえ | "off"<br>"low"<br>"medium"<br>"high" |
 
 テキストのみ対応のモデルです。参照画像や参照ビデオは使用できません。
 
@@ -77,7 +77,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | No | "off"<br>"low"<br>"medium"<br>"high" |
+| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | いいえ | "off"<br>"low"<br>"medium"<br>"high" |
 
 これらのモデルは最大10個の参照画像と最大4個の参照ビデオをサポートしています（参照入力を参照）。
 
@@ -89,7 +89,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | No | "off"<br>"low"<br>"medium"<br>"high" |
+| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | いいえ | "off"<br>"low"<br>"medium"<br>"high" |
 
 このモデルは最大8個の参照画像をサポートしています（参照入力を参照）。
 
@@ -99,7 +99,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | No | "off"<br>"low"<br>"medium"<br>"high" |
+| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | いいえ | "off"<br>"low"<br>"medium"<br>"high" |
 
 テキストのみ対応のモデルです。参照画像や参照ビデオは使用できません。
 
@@ -109,7 +109,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | No | "off"<br>"low"<br>"medium"<br>"high" |
+| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | いいえ | "off"<br>"low"<br>"medium"<br>"high" |
 
 これらのモデルは最大10個の参照画像をサポートしています（参照入力を参照）。
 
@@ -117,7 +117,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | No | "off"<br>"low"<br>"medium"<br>"high" |
+| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | いいえ | "off"<br>"low"<br>"medium"<br>"high" |
 
 テキストのみ対応のモデルです。参照画像や参照ビデオは使用できません。
 
@@ -125,7 +125,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `search_context_size` | 取得するWeb検索コンテキストの量。大きいほど根拠が確かになりますが、速度が遅くなりコストも高くなります。（デフォルト: "medium"） | COMBO | No | "low"<br>"medium"<br>"high" |
+| `search_context_size` | 取得するWeb検索コンテキストの量。大きいほど根拠が確かになりますが、速度が遅くなりコストも高くなります。（デフォルト: "medium"） | COMBO | いいえ | "low"<br>"medium"<br>"high" |
 
 テキストのみ対応のモデルです。参照画像や参照ビデオは使用できません。
 
@@ -135,8 +135,8 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `search_context_size` | 取得するWeb検索コンテキストの量。大きいほど根拠が確かになりますが、速度が遅くなりコストも高くなります。（デフォルト: "medium"） | COMBO | No | "low"<br>"medium"<br>"high" |
-| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | No | "off"<br>"low"<br>"medium"<br>"high" |
+| `search_context_size` | 取得するWeb検索コンテキストの量。大きいほど根拠が確かになりますが、速度が遅くなりコストも高くなります。（デフォルト: "medium"） | COMBO | いいえ | "low"<br>"medium"<br>"high" |
+| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | いいえ | "off"<br>"low"<br>"medium"<br>"high" |
 
 テキストのみ対応のモデルです。参照画像や参照ビデオは使用できません。
 
@@ -144,8 +144,8 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `images` | オプションの参照画像です。URLとして送信されます。拡張可能スロット：1..N 個の画像入力（`image_1`、`image_2`、...）を接続できます。数の上限は選択したモデルによって異なります（モデルセクションを参照）。 | IMAGE | No | 0〜20 (モデル依存: 8, 10, or 20) |
-| `videos` | オプションの参照ビデオです。URLとして送信されます。拡張可能スロット：1..N 個のビデオ入力（`video_1`、`video_2`、...）を接続できます。数の上限は選択したモデルによって異なります（モデルセクションを参照）。 | VIDEO | No | 0〜4 (モデル依存) |
+| `images` | オプションの参照画像です。URLとして送信されます。拡張可能スロット：1..N 個の画像入力（`image_1`、`image_2`、...）を接続できます。数の上限は選択したモデルによって異なります（モデルセクションを参照）。 | IMAGE | いいえ | 0〜20 (モデル依存: 8, 10, or 20) |
+| `videos` | オプションの参照ビデオです。URLとして送信されます。拡張可能スロット：1..N 個のビデオ入力（`video_1`、`video_2`、...）を接続できます。数の上限は選択したモデルによって異なります（モデルセクションを参照）。 | VIDEO | いいえ | 0〜4 (モデル依存) |
 
 **注記：**
 

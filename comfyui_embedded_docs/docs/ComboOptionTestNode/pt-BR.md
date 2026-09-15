@@ -1,20 +1,20 @@
 # ComboOptionTestNode
 
-O ComboOptionTestNode é um nó lógico projetado para testar e repassar seleções de caixa de combinação. Ele recebe duas entradas de caixa de combinação, cada uma com um conjunto predefinido de opções, e gera os valores selecionados diretamente, sem modificação.
+Este nó recebe duas seleções de caixa de combinação e as repassa diretamente para suas saídas sem alterá-las.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `combo` | A primeira seleção de um conjunto de três opções de teste. | COMBO | Sim | `"option1"`<br>`"option2"`<br>`"option3"` |
-| `combo2` | A segunda seleção de um conjunto diferente de três opções de teste. | COMBO | Sim | `"option4"`<br>`"option5"`<br>`"option6"` |
+| `combo` | A primeira seleção, escolhida de um conjunto de três opções de teste. | COMBO | Sim | `"option1"`<br>`"option2"`<br>`"option3"` |
+| `combo2` | A segunda seleção, escolhida de um conjunto diferente de três opções de teste. | COMBO | Sim | `"option4"`<br>`"option5"`<br>`"option6"` |
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `output_1` | Gera o valor selecionado na primeira caixa de combinação (`combo`). | COMBO |
-| `output_2` | Gera o valor selecionado na segunda caixa de combinação (`combo2`). | COMBO |
+| `output_1` | Retorna o valor selecionado na primeira caixa de combinação (`combo`), sem alterações. | COMBO |
+| `output_2` | Retorna o valor selecionado na segunda caixa de combinação (`combo2`), sem alterações. | COMBO |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComboOptionTestNode/pt-BR.md)
 

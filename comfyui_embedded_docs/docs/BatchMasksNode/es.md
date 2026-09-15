@@ -1,24 +1,22 @@
 # Procesar máscaras por lotes
 
-El nodo Combinar Máscaras combina múltiples entradas de máscaras individuales en un solo lote. Toma un número variable de entradas de máscaras y las genera como un único tensor de máscaras agrupadas, lo que permite el procesamiento por lotes de máscaras en nodos posteriores.
+El nodo Batch Masks combina múltiples entradas de máscara individuales en un único lote. Toma un número variable de entradas de máscara y las devuelve como un único tensor de máscara por lotes, lo que permite el procesamiento por lotes de máscaras en nodos posteriores. Si las máscaras de entrada tienen tamaños diferentes, se redimensionan automáticamente para coincidir con las dimensiones de la primera máscara.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `mask_0` | La primera entrada de máscara. | MASK | Sí | - |
-| `mask_1` | La segunda entrada de máscara. | MASK | Sí | - |
-| `mask_2` a `mask_49` | Entradas de máscara adicionales opcionales. El nodo puede aceptar un mínimo de 2 y un máximo de 50 máscaras en total. | MASK | No | - |
+| `mask` | Las entradas de máscara que se combinarán en un lote. Se requiere al menos una máscara. Puedes añadir hasta 50 máscaras en total haciendo clic en el botón "+" del nodo. Si las máscaras tienen tamaños diferentes, se redimensionan automáticamente para coincidir con las dimensiones de la primera máscara. | MASK | Sí | 1 a 50 máscaras |
 
-**Nota:** Este nodo utiliza una plantilla de entrada de crecimiento automático. Debes conectar al menos dos máscaras (`mask_0` y `mask_1`). Puedes agregar hasta 48 entradas de máscara opcionales adicionales (`mask_2` a `mask_49`) para un total de 50 máscaras. Todas las máscaras conectadas se combinarán en un solo lote.
+**Nota:** Este nodo utiliza una plantilla de entrada de crecimiento automático. Debes conectar al menos una máscara. Puedes añadir hasta 49 entradas de máscara más para un total de 50 máscaras. Todas las máscaras conectadas se combinarán en un único lote. Si las máscaras tienen alturas o anchos diferentes, se redimensionan automáticamente para coincidir con las dimensiones de la primera máscara mediante interpolación bilineal.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `output` | Un único lote de máscaras que contiene todas las máscaras de entrada apiladas juntas. | MASK |
+| `output` | Una única máscara por lotes que contiene todas las máscaras de entrada apiladas. Si no se proporciona ninguna máscara, devuelve None. | MASK |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BatchMasksNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `8eb7a2a2d8108b619387b049d92348b8e9fc6d5e94e78c856c8520b88cdf77f2`
+**Source fingerprint (SHA-256):** `7e9bc4be72c7fa8fceab2cf167c72b7e1ff858c0281d977f2ad3ab433d9d58d6`

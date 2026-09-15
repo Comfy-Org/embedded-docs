@@ -1,31 +1,32 @@
 # Katmanlı Görsel Oluştur
 
-Bu düğüm, birden çok görüntü katmanını tek bir birleşik görüntüde birleştirir. Add Layer düğümüyle oluşturulan katman yığınını alır ve isteğe bağlı olarak compositor düzenleyicisinden kaydedilmiş kompozisyon ayarlarını uygulayarak katmanları; yerleşim, boyut, dönüş, opaklık ve karıştırma moduna göre harmanlar.
+Bu düğüm, birden çok görüntü katmanını tek bir bileşik görüntüde birleştirir. Add Layer düğümüyle oluşturulmuş bir katman yığınını alır ve isteğe bağlı olarak compositor editöründen kaydedilmiş kompozisyon ayarlarını uygular; katmanları yerleşimlerine, boyutlarına, döndürmelerine, opaklıklarına ve karışım modlarına göre harmanlar. Geçerli girdilerle eşleşen kaydedilmiş bir kompozisyon öncelik alır; aksi halde düğüm katman özelliklerinden kompozisyon oluşturur ve kaydedilmiş durumu bayat olarak işaretler.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `katmanlar` | Birleştirilecek katman yığını; Add Layer ile oluşturun. Öğeler z_index’e göre yığılır, bir öğe içindeki toplu kareler ardışık katmanlara genişler ve öğe yerleşimi, opaklığı ve karıştırma modu ilk kompozisyonu tanımlar. Belirli bir belge tuvali yoksa boyut, yerleştirilen katmanların olabildiğince geniş kapsamı olarak belirlenir. Geçerli girdilerle eşleşen kayıtlı bir kompozisyon önceliğe sahiptir. | LAYERS | Evet | En fazla 50 katman |
-| `kompozitör` | Compositor düzenleyicisi tarafından kaydedilmiş katmanlı kompozisyon. | COMPOSITOR | Hayır | Yok |
+| `katmanlar` | Birleştirilecek katman yığını; Add Layer ile oluşturun. Öğeler z_index'e göre yığılır, bir öğe içindeki toplu kareler ardışık katmanlara genişler ve öğe yerleşimi, opaklığı ve karışım modu başlangıç kompozisyonunu tanımlar. Açık bir belge tuvali olmadan boyut, yerleştirilen katmanların en iyi çaba ile hesaplanan maksimum kapsamıdır. Geçerli girdilerle eşleşen kaydedilmiş bir kompozisyon öncelik alır. | LAYERS | Evet | Maksimum 50 katman |
+| `kompozitör` | Compositor editörü tarafından kaydedilmiş katmanlı kompozisyon. | COMPOSITOR | Hayır | Yok |
 
 **Kısıtlamalarla ilgili notlar:**
 
-- Katman yığını en fazla 50 katmanı (genişletilmiş kareler) destekler; daha fazla sağlanırsa hata oluşturur.
-- Şu anda yalnızca raster katmanlar desteklenir; diğer katman öğesi türleri hata oluşturur.
-- `layers` belge sürümü 1 olmalıdır; diğer sürümler hata oluşturur.
-- Kaydedilmiş `compositor` durumu yalnızca, kaydedilen girdi parmak izleri geçerli katman yığınıyla eşleştiğinde yeniden uygulanır. Eşleşmezse düğüm, katman özelliklerinden kompozisyon oluşturmaya geri döner ve kaydedilmiş durumu geçerliliğini yitirmiş olarak işaretler.
+- Katman yığını en fazla 50 genişletilmiş katmanı destekler; daha fazlasını sağlamak hata verir.
+- Şu anda yalnızca raster katman öğeleri desteklenir; diğer öğe türleri hata verir.
+- `layers` belge sürümü 1 olmalıdır; diğer sürümler hata verir.
+- Kaydedilmiş `compositor` durumu yalnızca kaydedilen girdi parmak izleri geçerli katman yığınıyla eşleştiğinde yeniden oynatılır. Eşleşmezlerse düğüm, katman özelliklerinden kompozisyon oluşturmaya geri döner ve kaydedilmiş durumu bayat olarak işaretler.
 - Katman opaklığı 0.0 ile 1.0 aralığına sınırlandırılır.
-- Katmanın yatay/dikey yerleşimi (`x`, `y`) maksimum çözünürlük sınırına kısıtlanır.
-- Katman genişliği ve yüksekliği, sıfır veya daha düşük ayarlandığında doğal görüntü boyutuna geri döner ve maksimum çözünürlük sınırıyla sınırlandırılır.
+- Katman yatay ve dikey yerleşimi (`x`, `y`) maksimum çözünürlük sınırına sınırlandırılır.
+- Katman genişliği ve yüksekliği sıfır veya daha az olarak ayarlandığında doğal görüntü boyutuna geri döner ve maksimum çözünürlük sınırıyla sınırlandırılır.
 - Birleştirilmiş tuval boyutu maksimum çözünürlük sınırını aşmamalıdır.
+- Katman sağlanmadığında 64x64 yer tutucu görüntü döndürülür.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `IMAGE` | Birleştirilmiş görüntü. Birleşik görüntüde şeffaf alanlar varsa (ör. gizli arka plan) bir alfa kanalı taşır; aksi takdirde yalnızca RGB. | IMAGE |
-| `MASK` | Birleşik görüntünün şeffaflığı (1 = tamamen şeffaf). Birleşik görüntü opak olduğunda tüm değerler sıfırdır. | MASK |
+| `IMAGE` | Birleştirilmiş görüntü. Kompozitin saydam alanları olduğunda (örn. gizli arka plan) alfa kanalı taşır; aksi halde düz RGB'dir. | IMAGE |
+| `MASK` | Kompozitin saydamlığı (1 = tamamen saydam). Kompozit opak olduğunda tamamen sıfırdır. | MASK |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageCompositor/tr.md)
 

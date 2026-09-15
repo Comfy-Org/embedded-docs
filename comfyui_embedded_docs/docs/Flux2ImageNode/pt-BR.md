@@ -1,8 +1,6 @@
 # Flux.2 Image
 
-Flux.2 Image
-
-Gere imagens usando o modelo Flux.2 [pro] ou Flux.2 [max] a partir de um prompt de texto e imagens de referência opcionais. Este nó envia sua solicitação para a API BFL, consulta o resultado e retorna a imagem gerada como um tensor.
+Gere imagens usando o modelo Flux.2 [pro] ou Flux.2 [max] a partir de um prompt de texto e imagens de referência opcionais. O nó envia a solicitação para a API BFL, faz polling até que o resultado esteja pronto e retorna a imagem gerada.
 
 ## Entradas
 
@@ -10,11 +8,11 @@ Gere imagens usando o modelo Flux.2 [pro] ou Flux.2 [max] a partir de um prompt 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `modelo` | A versão do modelo Flux.2 a ser usada. Selecionar um modelo desbloqueia parâmetros adicionais para largura, altura e imagens de referência opcionais. | DYNAMIC_COMBO | Sim | "Flux.2 [pro]"<br>"Flux.2 [max]" |
+| `modelo` | A versão do modelo Flux.2 a ser usada. Selecionar um modelo desbloqueia parâmetros adicionais de largura, altura e imagens de referência opcionais. | DYNAMIC_COMBO | Sim | "Flux.2 [pro]"<br>"Flux.2 [max]" |
 | `prompt` | Prompt para a geração ou edição da imagem (padrão: string vazia). | STRING | Sim | N/A |
-| `semente` | A semente aleatória usada para criar o ruído. Pode ser configurada para randomizar após cada geração (padrão: 0). | INT | Sim | 0 a 18446744073709551615 |
+| `semente` | A semente aleatória usada para criar o ruído (padrão: 0). Suporta a opção control-after-generate para randomizar o valor após cada execução. | INT | Sim | 0 a 18446744073709551615 |
 
-### Entradas do Flux.2 [pro] e Flux.2 [max]
+### Entradas do Flux.2 [pro] e do Flux.2 [max]
 
 Compartilhado por ambos os modelos — os conjuntos de parâmetros são idênticos.
 
@@ -27,11 +25,12 @@ Compartilhado por ambos os modelos — os conjuntos de parâmetros são idêntic
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model.images` | Imagem(ns) de referência opcional(is) para geração imagem-para-imagem. Até 8 imagens. Slot expansível: conecte de 1 a 8 itens (`image_1`...`image_8`). | IMAGE | Não | 0 a 8 imagens |
+| `model.images` | Imagem(ns) de referência opcional(is) para geração imagem para imagem. Até 8 imagens. Slot expansível: conecte 1..8 itens (`image_1`...`image_8`). | IMAGE | Não | 0 a 8 imagens |
 
-**Observação:**
-- O número máximo de imagens de referência é 8. Se mais de 8 imagens forem fornecidas, um erro será gerado.
-- Os valores de `model.width` e `model.height` afetam o custo da geração. O custo também depende do modelo selecionado e se imagens de referência são fornecidas.
+**Nota:**
+- O número máximo de imagens de referência é 8. Se mais de 8 imagens forem fornecidas, um erro será gerado. Imagens em lote contam para esse limite, pois cada imagem em um lote é contada individualmente.
+- As imagens de referência são redimensionadas para que a contagem total de pixels não exceda 2048 x 2048 antes de serem enviadas para a API.
+- Os valores de `model.width` e `model.height` afetam o custo de geração. O custo também depende do modelo selecionado e de se imagens de referência são fornecidas.
 
 ## Saídas
 

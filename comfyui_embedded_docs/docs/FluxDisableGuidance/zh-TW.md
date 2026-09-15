@@ -1,16 +1,16 @@
 # FluxDisableGuidance
 
-此節點完全停用 Flux 及類似 Flux 模型上的 guidance embed。它接收 conditioning 資料作為輸入，並透過將 guidance 元件設為 None 來移除它，從而有效地關閉生成過程中基於 guidance 的 conditioning。
+此節點會完全停用 Flux 及類 Flux 模型上的 guidance 嵌入。它會接收 conditioning 資料作為輸入，並將其 guidance 值設為 None，藉此有效關閉生成過程中基於 guidance 的 conditioning。
 
 ## 輸入
 
-| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
+| 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `條件設定` | 要處理並從中移除 guidance 的 conditioning 資料 | CONDITIONING | 是 | - |
+| `條件設定` | 要處理並移除 guidance 的 conditioning 資料 | CONDITIONING | 是 | - |
 
 ## 輸出
 
-| 輸出名稱 | 描述 | 資料類型 |
+| 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
 | `conditioning` | 已停用 guidance 的修改後 conditioning 資料 | CONDITIONING |
 

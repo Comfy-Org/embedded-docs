@@ -1,19 +1,19 @@
 # ReferenceTimbreAudio
 
-Bu düğüm, "ace step 1.5" sürecinde kullanılmak üzere bir referans ses tınısı ayarlar. Bir conditioning girdisi ve isteğe bağlı olarak bir sesin latent temsilini alır; ardından bu latent veriyi conditioning'e ekleyerek iş akışındaki sonraki düğümler tarafından kullanılmasını sağlar. Bu düğüm şu anda deneysel olarak işaretlenmiştir.
+Bu düğüm, "ace step 1.5" işlemi için referans sesi ayarlar. Bir `conditioning` girdisi ve isteğe bağlı olarak sesin bir latent gösterimini alır, ardından bu latent verisini conditioning'e ekler; böylece sonraki düğümler bunu referans ses tını latentleri olarak kullanabilir. Bu düğüm deneysel olarak işaretlenmiştir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `koşullandırma` | Referans ses bilgisinin ekleneceği conditioning verisi. | CONDITIONING | Evet |  |
-| `latent` | Referans sesin isteğe bağlı latent temsili. Sağlandığında, örnekleri conditioning'e eklenir ve referans ses tınısı latentleri olarak kullanılabilir. | LATENT | Hayır |  |
+| `latent` | Referans sesin isteğe bağlı latent gösterimi (varsayılan: None). Sağlandığında, örnekleri conditioning'e referans ses tını latentleri olarak eklenir. | LATENT | Hayır |  |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `conditioning` | İsteğe bağlı `latent` girdisi sağlandıysa, artık referans ses tınısı latentlerini içeren değiştirilmiş conditioning verisi. | CONDITIONING |
+| `conditioning` | Değiştirilmiş conditioning verisi; isteğe bağlı `latent` girdisi sağlanmışsa artık referans ses tını latentlerini içerir. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceTimbreAudio/tr.md)
 

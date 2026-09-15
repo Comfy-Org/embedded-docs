@@ -1,22 +1,22 @@
 # Kontrol Noktası Yükle
 
-Bir difüzyon modeli kontrol noktası (checkpoint) dosyası yükler ve bunu üç temel bileşene ayırır: gürültü giderme (denoising) için kullanılan ana model, CLIP metin kodlayıcı ve VAE görüntü kodlayıcı/kod çözücü. Bu düğüm, `ComfyUI/models/checkpoints` klasöründeki tüm model dosyalarını ve `extra_model_paths.yaml` dosyanızda yapılandırılmış ek yolları otomatik olarak algılar.
+Bir difüzyon modeli checkpoint dosyasını yükler ve onu üç temel bileşene ayırır: latentleri gürültüden arındırmak için kullanılan ana model, CLIP metin kodlayıcı ve VAE görüntü kodlayıcı/kod çözücü. Düğüm, `ComfyUI/models/checkpoints` klasöründeki tüm model dosyalarını ve `extra_model_paths.yaml` dosyanızda yapılandırılmış ek yolları otomatik olarak algılar.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `ckpt_adı` | Yüklenecek kontrol noktasının (model) adı. Sonraki görüntü üretiminde kullanılacak AI modelini belirleyen kontrol noktası model dosya adını seçin. | COMBO | Evet | Kontrol noktaları klasöründeki tüm model dosyaları |
+| `ckpt_adı` | Yüklenecek checkpoint (model) adı. Sonraki görüntü üretiminde kullanılacak AI modelini belirleyen checkpoint model dosyası adını seçin. | COMBO | Evet | checkpoints klasöründe bulunan tüm model dosyaları |
 
-**Not:** ComfyUI çalışırken yeni model dosyaları eklenirse, açılır listede yeni dosyaları görmek için tarayıcıyı yenilemeniz (Ctrl+R) gerekir.
+**Not:** ComfyUI çalışırken yeni model dosyaları eklenirse, açılır listede yeni dosyaları görebilmek için tarayıcıyı yenilemeniz (Ctrl+R) gerekir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `MODEL` | Gürültü giderme için kullanılan model. Bu, görüntü üretimi için kullanılan çekirdek difüzyon modelidir. | MODEL |
-| `CLIP` | Metin istemlerini kodlamak için kullanılan CLIP modeli, metin açıklamalarını yapay zekanın anlayabileceği bilgilere dönüştürür. | CLIP |
-| `VAE` | Görüntüleri latent uzaya kodlamak ve latent uzaydan çözmek için kullanılan VAE modeli. | VAE |
+| `MODEL` | Latentleri gürültüden arındırmak için kullanılan model. Görüntü üretimi için kullanılan temel difüzyon modelidir. | MODEL |
+| `CLIP` | Metin istemlerini kodlamak için kullanılan CLIP modeli; metin açıklamalarını AI'nın anlayabileceği bilgiye dönüştürür. | CLIP |
+| `VAE` | Görüntüleri latent uzaya kodlamak ve latent uzaydan kodunu çözmek için kullanılan VAE modeli. | VAE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointLoaderSimple/tr.md)
 

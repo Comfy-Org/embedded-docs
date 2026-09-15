@@ -1,15 +1,15 @@
 # ModelÖrneklemeSD3
 
-The ModelSamplingSD3 düğümü, bir modele Stable Diffusion 3 örnekleme parametrelerini uygular. Modelin örnekleme davranışını, örnekleme dağılımı özelliklerini kontrol eden `shift` parametresini ayarlayarak değiştirir. Düğüm, belirtilen örnekleme yapılandırması uygulanmış girdi modelinin değiştirilmiş bir kopyasını oluşturur.
+Bu düğüm, bir modele Stable Diffusion 3 tarzı örnekleme ayarlarını uygular. Modelin bir kopyasını oluşturur ve örnekleme yöntemini, verilen `shift` değerini kullanan akış tabanlı bir örnekleme yapılandırmasıyla değiştirir; bu değer, örnekleme dağılımının nasıl şekillendirileceğini kontrol eder.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | SD3 örnekleme parametrelerinin uygulanacağı girdi modeli | MODEL | Evet | - |
-| `kaydırma` | Örnekleme shift parametresini kontrol eder (varsayılan: 3.0) | FLOAT | Evet | 0.0 - 100.0 (adım: 0.01) |
+| `model` | SD3 örnekleme parametrelerinin uygulanacağı giriş modeli | MODEL | Evet | - |
+| `kaydırma` | Örnekleme kaydırma parametresini kontrol eder (varsayılan: 3.0) | FLOAT | Evet | 0.0 - 100.0 (adım: 0.01) |
 
-Not: Düğüm, `shift` değerini sabit bir dahili çarpan olan 1000 ile uygular. Orijinal modelde bir gürültü ölçeği ayarı varsa, değiştirilmiş modelde korunur.
+Not: `shift` değeri, 1000 sabit iç çarpanıyla birlikte uygulanır. Özgün modelde bir gürültü ölçeği ayarı varsa, bu değer değiştirilen modele aktarılır. Özgün model değiştirilmez; klonlanmış ve yamalanmış bir kopya döndürülür.
 
 ## Çıktılar
 
@@ -20,4 +20,4 @@ Not: Düğüm, `shift` değerini sabit bir dahili çarpan olan 1000 ile uygular.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingSD3/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `46d44786422c2efea78c1fe7e1183cebc9bf51d4f13861da04d5a974b5b6da7d`
+**Source fingerprint (SHA-256):** `a77e38c2cebf6f21f841a953ec5c59096eaf60ffc205c24f34f635e54c5718cb`

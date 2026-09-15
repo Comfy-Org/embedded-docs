@@ -1,18 +1,18 @@
 # CacheParesseux
 
-LazyCache est une version maison d'EasyCache qui offre une implémentation encore plus simple. Il fonctionne avec n’importe quel modèle dans ComfyUI et ajoute une fonctionnalité de cache pour réduire le calcul pendant l’échantillonnage. Bien qu’il soit généralement moins performant qu’EasyCache, il peut être plus efficace dans certains cas rares et offre une compatibilité universelle.
+LazyCache est une version expérimentale et non officielle d'EasyCache qui ajoute une mise en cache pendant l'échantillonnage afin de réduire les calculs. Elle est conçue pour une compatibilité universelle avec les modèles dans ComfyUI, bien qu'elle soit généralement moins performante qu'EasyCache et qu'elle puisse mieux fonctionner uniquement dans de rares cas.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `modèle` | Le modèle auquel ajouter LazyCache. | MODEL | Oui | - |
-| `seuil_réutilisation` | Le seuil pour réutiliser les étapes mises en cache (défaut : 0.2). | FLOAT | Non | 0.0 - 3.0 |
-| `pourcentage_début` | L’étape d’échantillonnage relative pour commencer à utiliser LazyCache (défaut : 0.15). | FLOAT | Non | 0.0 - 1.0 |
-| `pourcentage_fin` | L’étape d’échantillonnage relative pour arrêter d’utiliser LazyCache (défaut : 0.95). | FLOAT | Non | 0.0 - 1.0 |
-| `verbeux` | Indique si des informations détaillées doivent être consignées (défaut : False). | BOOLEAN | Non | - |
+| `seuil_réutilisation` | Seuil de réutilisation des étapes mises en cache. Par défaut : 0.2. | FLOAT | Oui | 0.0 - 3.0 (pas: 0.01) |
+| `pourcentage_début` | Étape d'échantillonnage relative à laquelle commencer l'utilisation de LazyCache. Par défaut : 0.15. | FLOAT | Oui | 0.0 - 1.0 (pas: 0.01) |
+| `pourcentage_fin` | Étape d'échantillonnage relative à laquelle terminer l'utilisation de LazyCache. Par défaut : 0.95. | FLOAT | Oui | 0.0 - 1.0 (pas: 0.01) |
+| `verbeux` | Indique s'il faut consigner des informations détaillées. Par défaut : False. | BOOLEAN | Oui | - |
 
-Remarque : `reuse_threshold`, `start_percent`, `end_percent` et `verbose` sont des options avancées facultatives.
+Remarque : `reuse_threshold`, `start_percent`, `end_percent` et `verbose` sont marqués comme entrées avancées.
 
 ## Sorties
 

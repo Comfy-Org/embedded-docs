@@ -1,24 +1,24 @@
 # CachéPerezoso
 
-LazyCache es una versión casera de EasyCache que ofrece una implementación aún más fácil. Funciona con cualquier modelo en ComfyUI y añade funcionalidad de caché para reducir el cómputo durante el muestreo. Aunque generalmente rinde peor que EasyCache, puede ser más eficaz en algunos casos raros y ofrece compatibilidad universal.
+LazyCache es una versión experimental y casera de EasyCache que agrega almacenamiento en caché durante el muestreo para reducir el cómputo. Está diseñada para tener compatibilidad universal con los modelos en ComfyUI, aunque generalmente funciona peor que EasyCache y puede funcionar mejor solo en casos raros.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo al que añadir LazyCache. | MODEL | Sí | - |
-| `umbral_reutilización` | El umbral para reutilizar pasos almacenados en caché (predeterminado: 0.2). | FLOAT | No | 0.0 - 3.0 |
-| `porcentaje_inicio` | El paso de muestreo relativo para comenzar a usar LazyCache (predeterminado: 0.15). | FLOAT | No | 0.0 - 1.0 |
-| `porcentaje_fin` | El paso de muestreo relativo para finalizar el uso de LazyCache (predeterminado: 0.95). | FLOAT | No | 0.0 - 1.0 |
-| `detallado` | Si se registra información detallada (predeterminado: False). | BOOLEAN | No | - |
+| `modelo` | El modelo al que se le agregará LazyCache. | MODEL | Sí | - |
+| `umbral_reutilización` | El umbral para reutilizar pasos en caché. Predeterminado: 0.2. | FLOAT | Sí | 0.0 - 3.0 (paso 0.01) |
+| `porcentaje_inicio` | El paso de muestreo relativo para comenzar a usar LazyCache. Predeterminado: 0.15. | FLOAT | Sí | 0.0 - 1.0 (paso 0.01) |
+| `porcentaje_fin` | El paso de muestreo relativo para finalizar el uso de LazyCache. Predeterminado: 0.95. | FLOAT | Sí | 0.0 - 1.0 (paso 0.01) |
+| `detallado` | Si se debe registrar información detallada. Predeterminado: False. | BOOLEAN | Sí | - |
 
-Nota: `reuse_threshold`, `start_percent`, `end_percent` y `verbose` son opciones avanzadas opcionales.
+Nota: `reuse_threshold`, `start_percent`, `end_percent` y `verbose` están marcados como entradas avanzadas.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `model` | El modelo con la funcionalidad de LazyCache añadida. | MODEL |
+| `model` | El modelo con la funcionalidad LazyCache agregada. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LazyCache/es.md)
 

@@ -11,13 +11,13 @@
 | `model_task_id` | 由先前 Tripo 節點（模型生成或模型分割）產生的來源模型任務 ID。 | MODEL_TASK_ID / SEGMENT_TASK_ID | 是 | - |
 | `pbr` | PBR 材質貼圖（基礎色、金屬度、粗糙度、法線）；關閉時會產生純色紋理。（預設：true） | BOOLEAN | 否 | true<br>false |
 | `texture_seed` | 用於紋理生成的種子。（預設：42）進階輸入。 | INT | 否 | 0 至 2147483647 |
-| `texture_quality` | 生成紋理的品質。`detailed` = HD 紋理，`extreme` = 8K Ultra 紋理。（預設："standard"）進階輸入。 | COMBO | 否 | "standard"<br>"detailed"<br>"extreme" |
-| `texture_alignment` | 紋理對齊模型的方式。（預設："original_image"）進階輸入。 | COMBO | 否 | "original_image"<br>"geometry" |
-| `texture_prompt` | 用於紋理生成的選用文字引導。對於匯入的模型（Tripo：Import Model）實務上為必填，因為這些模型沒有可用來推斷顏色的來源影像。不能與參考影像合併使用。（預設：空） | STRING | 否 | - |
-| `model_version` | 紋理模型：v3.0 用於以 v3.x 生成的網格，v2.5 用於以 v2.5 生成的網格。（預設：v3_0_20250812） | COMBO | 否 | Tripo 紋理模型版本，預設 "v3_0_20250812" |
-| `style_image` | 用於紋理藝術風格的參考影像。僅與 `texture_prompt` 一起使用。 | IMAGE | 否 | - |
-| `reference` | 引導紋理的參考影像。不能與 `texture_prompt` 或 `style_image` 合併使用。（預設："none"） | DYNAMIC_COMBO | 否 | "none"<br>"image"<br>"multiview" |
-| `part_names` | 來自 Tripo：Segment Model 的逗號分隔部件名稱，用於指定要貼圖的部件。空值會為每個部件貼圖。（預設：空）進階輸入。 | STRING | 否 | - |
+| `紋理品質` | 生成紋理的品質。`detailed` = HD 紋理，`extreme` = 8K Ultra 紋理。（預設："standard"）進階輸入。 | COMBO | 否 | "standard"<br>"detailed"<br>"extreme" |
+| `紋理對齊` | 紋理對齊模型的方式。（預設："original_image"）進階輸入。 | COMBO | 否 | "original_image"<br>"geometry" |
+| `紋理提示詞` | 用於紋理生成的選用文字引導。對於匯入的模型（Tripo：Import Model）實務上為必填，因為這些模型沒有可用來推斷顏色的來源影像。不能與參考影像合併使用。（預設：空） | STRING | 否 | - |
+| `模型版本` | 紋理模型：v3.0 用於以 v3.x 生成的網格，v2.5 用於以 v2.5 生成的網格。（預設：v3_0_20250812） | COMBO | 否 | Tripo 紋理模型版本，預設 "v3_0_20250812" |
+| `風格影像` | 用於紋理藝術風格的參考影像。僅與 `texture_prompt` 一起使用。 | IMAGE | 否 | - |
+| `參考影像` | 引導紋理的參考影像。不能與 `texture_prompt` 或 `style_image` 合併使用。（預設："none"） | DYNAMIC_COMBO | 否 | "none"<br>"image"<br>"multiview" |
+| `零件名稱` | 來自 Tripo：Segment Model 的逗號分隔部件名稱，用於指定要貼圖的部件。空值會為每個部件貼圖。（預設：空）進階輸入。 | STRING | 否 | - |
 
 ### 影像參考輸入
 

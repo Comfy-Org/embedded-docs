@@ -1,21 +1,21 @@
 # PixVerse Texto para Vídeo
 
-Gera vídeos com base em um prompt de texto e diversos parâmetros de geração. Este nó cria conteúdo de vídeo usando a API PixVerse, permitindo controle sobre proporção de aspecto, qualidade, duração, estilo de movimento e muito mais.
+Gera vídeos a partir de um prompt de texto usando a API PixVerse. O nó permite controlar a forma, a qualidade, a duração e o estilo de movimento do vídeo e, opcionalmente, aplicar um modelo de estilo salvo. Ele envia a solicitação, aguarda a conclusão da geração e retorna o vídeo finalizado.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Prompt para a geração de vídeo (padrão: "") | STRING | Sim | - |
+| `prompt` | Prompt para a geração do vídeo (padrão: "") | STRING | Sim | Deve conter pelo menos 1 caractere |
 | `aspect_ratio` | Proporção de aspecto para o vídeo gerado | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 | `quality` | Configuração de qualidade do vídeo (padrão: "540p") | COMBO | Sim | `"540p"`<br>`"1080p"` |
 | `duration_seconds` | Duração do vídeo gerado em segundos | COMBO | Sim | `"5"`<br>`"10"` |
-| `motion_mode` | Estilo de movimento para a geração de vídeo | COMBO | Sim | `"normal"`<br>`"fast"` |
+| `motion_mode` | Estilo de movimento para a geração do vídeo | COMBO | Sim | `"normal"`<br>`"fast"` |
 | `seed` | Semente para geração de vídeo (padrão: 0) | INT | Sim | 0 a 2147483647 |
-| `negative_prompt` | Uma descrição textual opcional de elementos indesejados na imagem (padrão: "") | STRING | Não | - |
-| `pixverse_template` | Um modelo (template) opcional para influenciar o estilo da geração, criado pelo nó PixVerse Template | CUSTOM | Não | - |
+| `negative_prompt` | Uma descrição de texto opcional de elementos indesejados em uma imagem (padrão: "") | STRING | Não | - |
+| `pixverse_template` | Um template opcional para influenciar o estilo da geração, criado pelo nó PixVerse Template | CUSTOM | Não | - |
 
-**Observação:** O `prompt` deve conter pelo menos 1 caractere. Ao usar qualidade 1080p, o modo de movimento é automaticamente definido como `normal` e a duração é limitada a 5 segundos. Para durações diferentes de 5 segundos, o modo de movimento também é automaticamente definido como `normal`.
+**Observação:** O `prompt` deve conter pelo menos 1 caractere. Quando a qualidade 1080p é selecionada, o modo de movimento é definido automaticamente como `normal` e a duração é limitada a 5 segundos. Para qualquer duração diferente de 5 segundos, o modo de movimento também é definido automaticamente como `normal`.
 
 ## Saídas
 

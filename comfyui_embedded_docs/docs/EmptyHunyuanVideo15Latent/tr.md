@@ -1,6 +1,6 @@
 # Boş HunyuanVideo 1.5 Latent
 
-Bu düğüm, HunyuanVideo 1.5 modeliyle kullanım için özel olarak biçimlendirilmiş boş bir latent tensör oluşturur. Modelin latent uzayı için doğru kanal sayısı ve uzamsal boyutlarla sıfırlardan oluşan bir tensör tahsis ederek video üretimi için boş bir başlangıç noktası oluşturur.
+Bu düğüm, HunyuanVideo 1.5 modeliyle kullanılmak üzere özel olarak biçimlendirilmiş boş bir latent tensör oluşturur. Modelin latent uzayı için doğru kanal sayısı ve uzamsal boyutlara sahip sıfırlardan oluşan bir tensör ayırarak video üretimi için boş bir başlangıç noktası oluşturur.
 
 ## Girdiler
 
@@ -9,15 +9,15 @@ Bu düğüm, HunyuanVideo 1.5 modeliyle kullanım için özel olarak biçimlendi
 | `genişlik` | Video karesinin piksel cinsinden genişliği. | INT | Evet | - |
 | `yükseklik` | Video karesinin piksel cinsinden yüksekliği. | INT | Evet | - |
 | `uzunluk` | Video dizisindeki kare sayısı. | INT | Evet | - |
-| `toplu_boyut` | Bir yığında oluşturulacak video örneklerinin sayısı (varsayılan: 1). | INT | Hayır | - |
+| `toplu_boyut` | Bir toplu işte oluşturulacak video örneği sayısı (varsayılan: 1). | INT | Hayır | - |
 
-**Not:** Oluşturulan latent tensörün uzamsal boyutları, girdi `width` ve `height` değerlerinin 16'ya bölünmesiyle hesaplanır. Zamansal boyut (kareler) `((length - 1) // 4) + 1` olarak hesaplanır. Bu hesaplamalar tam sayı bölmesi kullanır, bu nedenle kırpılmayı önlemek için `width` ve `height` değerleri 16'nın katı olmalıdır.
+**Not:** Oluşturulan latent tensörün uzamsal boyutları, `width` ve `height` girdilerinin 16'ya bölünmesiyle hesaplanır (bu düğüm 8 yerine 16 uzamsal ölçek faktörü kullanır). Zamansal boyut (kareler) `((length - 1) // 4) + 1` olarak hesaplanır. Bu hesaplamalar tamsayı bölmesi kullanır; bu nedenle kesilme olmaması için `width` ve `height` 16'nın katları olmalıdır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `samples` | HunyuanVideo 1.5 modeli için uygun boyutlara sahip boş bir latent tensör. Tensör `[batch_size, 32, frames, height//16, width//16]` şeklindedir. Çıktı ayrıca 16 değerinde bir `downscale_ratio_spacial` değeri içerir. | LATENT |
+| `samples` | HunyuanVideo 1.5 modeli için uygun boyutlara sahip boş bir latent tensör. Tensör `[batch_size, 32, ((length - 1) // 4) + 1, height // 16, width // 16]` şeklindedir. Çıktı ayrıca 16 değerinde bir `downscale_ratio_spacial` değeri içerir. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyHunyuanVideo15Latent/tr.md)
 

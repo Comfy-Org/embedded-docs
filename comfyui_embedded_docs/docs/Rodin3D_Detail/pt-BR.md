@@ -7,9 +7,9 @@ O nó **Rodin 3D Detail** gera ativos 3D detalhados usando a API Rodin. Ele rece
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
 | `Imagens` | Imagens de entrada usadas para a geração do modelo 3D. Múltiplas imagens podem ser fornecidas. | IMAGE | Sim | - |
-| `Semente` | Valor de semente aleatório para resultados reproduzíveis | INT | Sim | - |
-| `Tipo de Material` | Tipo de material a ser aplicado ao modelo 3D | STRING | Sim | - |
-| `Contagem de Polígonos` | Contagem de polígonos alvo para o modelo 3D gerado. Determina o nível de qualidade da malha. | STRING | Sim | - |
+| `Semente` | Valor de semente aleatório para resultados reproduzíveis | INT | Não | - |
+| `Tipo de Material` | Tipo de material a ser aplicado ao modelo 3D | STRING | Não | - |
+| `Contagem de Polígonos` | Contagem de polígonos alvo para o modelo 3D gerado. Determina o nível de qualidade da malha. | STRING | Não | - |
 
 ## Saídas
 

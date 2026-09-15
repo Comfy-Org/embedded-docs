@@ -1,25 +1,26 @@
-# Convertir DA3 Geometry en Maillage
+# Convertir la géométrie DA3 en maillage
 
-Ce nœud convertit un paquet DA3_GEOMETRY en un maillage 3D en déprojetant la carte de profondeur et en triangulant le nuage de points résultant. Il traite une seule image d'un lot et produit un maillage texturé ou non texturé adapté au rendu 3D.
+Ce nœud convertit un paquet DA3_GEOMETRY en un maillage 3D en déprojetant la carte de profondeur et en triangulant le nuage de points résultant. Il traite une seule image d’un lot et produit un maillage texturé ou non texturé adapté au rendu 3D.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `da3_geometry` | Le paquet DA3_GEOMETRY contenant la carte de profondeur, la carte de confiance optionnelle, la carte de ciel optionnelle et l'image source | DA3_GEOMETRY | Oui | - |
-| `batch_index` | Quelle image d'un lot convertir. Les nombres de sommets par image diffèrent, donc les lots ne peuvent pas être empilés (par défaut : 0). Doit être inférieur à la taille du lot de la géométrie d'entrée, sinon une erreur est générée | INT | Oui | 0 à 4096 |
-| `decimation` | Pas de sommet. 1 = pleine résolution, 2 = moitié, etc. (par défaut : 1) | INT | Oui | 1 à 8 |
-| `discontinuity_threshold` | Supprimer les triangles dont l'étendue de profondeur 3x3 dépasse cette fraction. 0 = désactivé (par défaut : 0,04) | FLOAT | Oui | 0,0 à 1,0 |
-| `confidence_threshold` | Exclure les pixels dont la confiance normalisée par image est inférieure à cette valeur. 0 = tout conserver, 1 = ne conserver que le pixel le plus fiable. Utilisé lorsque la géométrie possède une carte de confiance (modèles Small/Base) (par défaut : 0,1) | FLOAT | Oui | 0,0 à 1,0 |
-| `use_sky_mask` | Exclure les pixels de probabilité de ciel (ciel >= 0,5) du maillage. Utilisé lorsque la géométrie possède une carte de ciel (modèles Mono/Metric) (par défaut : Vrai) | BOOLEAN | Oui | Vrai ou Faux |
-| `texture` | Utiliser l'image source comme texture de couleur de base (par défaut : Vrai) | BOOLEAN | Oui | Vrai ou Faux |
-Les pixels dont les valeurs de profondeur sont non finies, nulles ou négatives sont toujours exclus du maillage. Une erreur est générée si le maillage résultant est vide ; le message d'erreur suggère d'augmenter `discontinuity_threshold`, de réduire `confidence_threshold` ou de désactiver `use_sky_mask`.
+| `da3_geometry` | Le paquet DA3_GEOMETRY contenant la carte de profondeur, une carte de confiance facultative, une carte du ciel facultative et l’image source | DA3_GEOMETRY | Oui | - |
+| `batch_index` | Quelle image d’un lot convertir. Le nombre de sommets par image diffère, donc les lots ne peuvent pas être empilés (par défaut : 0). Doit être inférieur à la taille du lot de la géométrie d’entrée, sinon une erreur est levée | INT | Oui | 0 à 4096 |
+| `decimation` | Pas des sommets. 1 = pleine résolution, 2 = moitié, etc. (par défaut : 1) | INT | Oui | 1 à 8 |
+| `discontinuity_threshold` | Supprime les triangles dont l’étendue de profondeur 3x3 dépasse cette fraction. 0 = désactivé (par défaut : 0.04) | FLOAT | Oui | 0.0 à 1.0 |
+| `confidence_threshold` | Exclut les pixels dont la confiance normalisée par image est inférieure à cette valeur. 0 = tout conserver, 1 = ne conserver que le seul pixel le plus confiant. Utilisé lorsque la géométrie possède une carte de confiance (modèles Small/Base) (par défaut : 0.1) | FLOAT | Oui | 0.0 à 1.0 |
+| `use_sky_mask` | Exclut du maillage les pixels de probabilité de ciel (ciel >= 0.5). Utilisé lorsque la géométrie possède une carte du ciel (modèles Mono/Metric) (par défaut : True) | BOOLEAN | Oui | True ou False |
+| `texture` | Utilise l’image source comme texture de couleur de base (par défaut : True) | BOOLEAN | Oui | True ou False |
+
+Les pixels dont les valeurs de profondeur sont non finies, nulles ou négatives sont toujours exclus du maillage. Une erreur est levée si le maillage résultant est vide ; le message d’erreur suggère d’augmenter `discontinuity_threshold`, de diminuer `confidence_threshold` ou de désactiver `use_sky_mask`.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `MESH` | Un maillage 3D triangulé avec sommets, faces, coordonnées UV et texture optionnelle | MESH |
+| `MESH` | Un maillage 3D triangulé avec des sommets, des faces, des coordonnées UV et une texture facultative | MESH |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DA3GeometryToMesh/fr.md)
 

@@ -1,30 +1,30 @@
 # LTXVImgToVideo
 
-LTXVImgToVideo convierte una imagen de entrada en una representación latente de video para modelos de generación de video. Redimensiona la imagen al ancho y alto solicitados, la codifica con el VAE y coloca los fotogramas codificados al inicio de un latente de video lleno de ceros. El control de fuerza (strength) determina cuánto del contenido de la imagen original se conserva frente a lo que se modifica durante la generación del video.
+LTXVImgToVideo convierte una imagen de entrada en una representación latente de vídeo para modelos de generación de vídeo. Redimensiona la imagen al ancho y alto solicitados, la codifica con el VAE y coloca los fotogramas codificados al inicio de un latente del tamaño del vídeo lleno de ceros. El control de intensidad determina cuánto del contenido de la imagen original se conserva en comparación con cuánto se modifica durante la generación del vídeo.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `positivo` | Condicionamientos positivos para guiar la generación del video | CONDITIONING | Sí | - |
-| `negativo` | Condicionamientos negativos para evitar ciertos elementos en el video | CONDITIONING | Sí | - |
+| `positivo` | Prompts de condicionamiento positivo para guiar la generación de vídeo | CONDITIONING | Sí | - |
+| `negativo` | Prompts de condicionamiento negativo para evitar ciertos elementos en el vídeo | CONDITIONING | Sí | - |
 | `vae` | Modelo VAE utilizado para codificar la imagen de entrada en el espacio latente | VAE | Sí | - |
-| `imagen` | Imagen de entrada que se convertirá en fotogramas de video | IMAGE | Sí | - |
-| `ancho` | Ancho del video de salida en píxeles (predeterminado: 768, paso: 32) | INT | No | 64 a MAX_RESOLUTION |
-| `altura` | Alto del video de salida en píxeles (predeterminado: 512, paso: 32) | INT | No | 64 a MAX_RESOLUTION |
-| `longitud` | Número de fotogramas en el video generado (predeterminado: 97, paso: 8) | INT | No | 9 a MAX_RESOLUTION |
-| `tamaño_lote` | Número de videos a generar simultáneamente (predeterminado: 1) | INT | No | 1 a 4096 |
-| `fuerza` | Control sobre cuánto del contenido de la imagen original se conserva en los primeros fotogramas del video generado. Un valor de 1.0 conserva la imagen original por completo, mientras que 0.0 permite la modificación máxima (predeterminado: 1.0) | FLOAT | No | 0.0 a 1.0 |
+| `imagen` | Imagen de entrada que se convertirá en fotogramas de vídeo | IMAGE | Sí | - |
+| `ancho` | Ancho del vídeo de salida en píxeles (predeterminado: 768, paso: 32) | INT | Sí | 64 a MAX_RESOLUTION |
+| `altura` | Alto del vídeo de salida en píxeles (predeterminado: 512, paso: 32) | INT | Sí | 64 a MAX_RESOLUTION |
+| `longitud` | Número de fotogramas en el vídeo generado (predeterminado: 97, paso: 8) | INT | Sí | 9 a MAX_RESOLUTION |
+| `tamaño_lote` | Número de vídeos a generar simultáneamente (predeterminado: 1) | INT | Sí | 1 a 4096 |
+| `fuerza` | Control sobre cuánto del contenido de la imagen original se conserva en los primeros fotogramas del vídeo generado. Un valor de 1.0 conserva la imagen original por completo, mientras que 0.0 permite la modificación máxima (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
 
-Nota: `width` y `height` cambian en pasos de 32 píxeles, y `length` cambia en pasos de 8 fotogramas, lo que corresponde a la compresión del latente de video (32x en las dimensiones espaciales y 8x en la dimensión temporal). El latente de video contiene ((length - 1) // 8) + 1 fotogramas.
+Nota: `width` y `height` cambian en pasos de 32 píxeles, y `length` cambia en pasos de 8 fotogramas, lo que coincide con la compresión del latente de vídeo (32x en las dimensiones espaciales y 8x en la dimensión temporal). El latente de vídeo contiene ((length - 1) // 8) + 1 fotogramas. La imagen de entrada se redimensiona a `width` x `height` mediante escalado bilineal con recorte central, y solo se utilizan los primeros tres canales para la codificación.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `positivo` | El condicionamiento positivo se transmite sin cambios para usarse con el latente generado | CONDITIONING |
-| `negativo` | El condicionamiento negativo se transmite sin cambios para usarse con el latente generado | CONDITIONING |
-| `latente` | Representación latente de video que contiene los fotogramas de imagen codificados y una máscara de ruido que controla la intensidad con la que se aplica el condicionamiento durante la generación del video | LATENT |
+| `positive` | El condicionamiento positivo se pasa sin cambios para su uso con el latente generado | CONDITIONING |
+| `negative` | El condicionamiento negativo se pasa sin cambios para su uso con el latente generado | CONDITIONING |
+| `latent` | Representación latente de vídeo que contiene los fotogramas de imagen codificados y una máscara de ruido que controla con qué intensidad se aplica el condicionamiento durante la generación del vídeo | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVImgToVideo/es.md)
 

@@ -1,34 +1,32 @@
-# Pixal3DMultiViewConditioning
+# Pixal3D Conditionnement multi-vues
 
-## Aperçu
-
-Le nœud Pixal3D Multi-View Conditioning est un cadre d'orbitation fixe qui génère des vues avant, gauche, arrière et droite d'un objet à des intervalles de 90 degrés. Il est utilisé pour créer des vues encadrées pour les applications Pixal3D, où l'objet occupe environ 1/1.1 de la frame à son plus large, en maintenant la même échelle dans chaque vue.
+Le nœud Pixal3D Multi-View Conditioning construit des données de conditionnement à partir d’un rig de caméra à orbite fixe : vues avant, gauche, arrière et droite placées à 90 degrés d’écart, utilisées exactement telles qu’elles sont cadrées. Connectez au moins une vue carrée de l’objet et il prépare un conditionnement positif et négatif correspondant pour les modèles Pixal3D.
 
 ## Entrées
 
-| Paramètre | Description | Type de données | Obligatoire | Gamme |
-|-----------|-------------|-----------|----------|-------|
-| `clip_vision_model` | DINOv3 ViT-L/16 ClipVision avec des poids NAF inclus. | MODEL | Oui | N/A |
-| `fov` | Champ de vision horizontal en degrés des vues encadrées. | FLOAT | Oui | 1.0 - 170.0 |
-| `front` | Vue carrée du côté avant de l'objet, avec alpha ou sur un fond noir. | IMAGE | Oui | N/A |
-| `left` | Vue carrée du côté gauche de l'objet, avec alpha ou sur un fond noir. | IMAGE | Facultatif | N/A |
-| `back` | Vue carrée du côté arrière de l'objet, avec alpha ou sur un fond noir. | IMAGE | Facultatif | N/A |
-| `right` | Vue carrée du côté droit de l'objet, avec alpha ou sur un fond noir. | IMAGE | Facultatif | N/A |
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `clip_vision_model` | DINOv3 ViT-L/16 ClipVision avec poids NAF intégrés. | CLIP_VISION | Oui | N/A |
+| `fov` | FOV horizontal en degrés des vues telles qu’elles sont cadrées : 20 pour les rendus de rig et la plupart des générateurs multi-vues, ou MoGeGeometryToFOV sur l’une des vues pour les photos. Par défaut : 20.0. | FLOAT | Oui | 1.0 - 170.0 |
+| `front` | Vue carrée du côté avant de l’objet, avec canal alpha ou sur fond noir, cadrée comme le rig : l’objet occupe environ 1/1.1 de la largeur de l’image à son point le plus large, à la même échelle dans chaque vue. La première vue connectée (dans l’ordre avant, gauche, arrière, droite) est l’avant vers lequel le maillage est orienté. | IMAGE | Non | N/A |
+| `left` | Vue carrée du côté gauche de l’objet, avec canal alpha ou sur fond noir, cadrée comme le rig : l’objet occupe environ 1/1.1 de la largeur de l’image à son point le plus large, à la même échelle dans chaque vue. La première vue connectée (dans l’ordre avant, gauche, arrière, droite) est l’avant vers lequel le maillage est orienté. | IMAGE | Non | N/A |
+| `back` | Vue carrée du côté arrière de l’objet, avec canal alpha ou sur fond noir, cadrée comme le rig : l’objet occupe environ 1/1.1 de la largeur de l’image à son point le plus large, à la même échelle dans chaque vue. La première vue connectée (dans l’ordre avant, gauche, arrière, droite) est l’avant vers lequel le maillage est orienté. | IMAGE | Non | N/A |
+| `right` | Vue carrée du côté droit de l’objet, avec canal alpha ou sur fond noir, cadrée comme le rig : l’objet occupe environ 1/1.1 de la largeur de l’image à son point le plus large, à la même échelle dans chaque vue. La première vue connectée (dans l’ordre avant, gauche, arrière, droite) est l’avant vers lequel le maillage est orienté. | IMAGE | Non | N/A |
+
+### Remarques
+
+- Au moins une vue doit être connectée ; le nœud lève une erreur si les quatre entrées de vue sont vides.
+- La première vue connectée, dans l’ordre avant, gauche, arrière, droite, est traitée comme l’avant, et le maillage est orienté vers cette vue. Si la première vue connectée n’est pas `front`, un avertissement est consigné indiquant que le maillage sera orienté avec cette vue comme avant.
+- Les vues sont lues dans l’ordre avant, gauche, arrière, droite et sont placées sur l’orbite à leurs azimuts fixes par rapport à la première vue connectée.
+- Les vues d’entrée avec un canal alpha voient leur canal alpha appliqué sur du noir. Les vues qui ne sont pas en 1024 x 1024 sont redimensionnées en 1024 x 1024.
+- La taille de lot est reprise de la première vue connectée. Si les vues connectées ont des tailles de lot différentes, les plus petites sont répétées en boucle pour correspondre.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
-|-------------|-------------|-----------|
-| `positive` | La sortie de conditionnement positive pour le nœud Pixal3D Multi-View Conditioning. | CONDITIONING |
-| `negative` | La sortie de conditionnement négative pour le nœud Pixal3D Multi-View Conditioning. | CONDITIONING |
-
-## Notes
-
-- Le paramètre `fov` contrôle le champ de vision horizontal des vues encadrées. Une valeur de 20 degrés est typique pour les rendus de cadre et la plupart des générateurs de vue multi-vues.
-- La première vue connectée (avant, gauche, arrière, droite dans cet ordre) est considérée comme la vue avant, et le maillage est posé pour cette vue.
-- Si aucune vue avant n'est fournie, un avertissement est enregistré, et le maillage sera posé avec la première vue connectée comme sa vue avant.
-- Le nœud suppose que les vues sont carrées et encadrées comme le cadre. L'objet devrait occuper environ 1/1.1 de la frame à son plus large, et la même échelle devrait être maintenue dans chaque vue.
-- Le nœud produit deux objets de conditionnement, l'un pour le conditionnement positif et l'autre pour le conditionnement négatif. Ces derniers peuvent être utilisés pour conditionner des modèles Pixal3D ou d'autres nœuds qui acceptent des entrées de conditionnement.
+|---------------|-------------|-----------------|
+| `positive` | La sortie de conditionnement positive, construite à partir des vues encodées et de leurs caractéristiques projetées. | CONDITIONING |
+| `negative` | La sortie de conditionnement négative, construite à partir d’embeddings mis à zéro avec les mêmes caractéristiques projetées. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Pixal3DMultiViewConditioning/fr.md)
 

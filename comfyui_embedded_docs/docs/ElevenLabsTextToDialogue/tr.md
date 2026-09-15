@@ -1,26 +1,37 @@
 # ElevenLabs Metinden Diyaloğa
 
-ElevenLabs Text to Dialogue düğümü, metinden çok konuşmacılı sesli diyalog oluşturur. Her katılımcı için farklı metin satırları ve ayrı sesler belirleyerek bir konuşma oluşturmanıza olanak tanır. Düğüm, diyalog isteğini ElevenLabs API'sine gönderir ve oluşturulan sesi döndürür.
+ElevenLabs Text to Dialogue düğümü, metinden çok konuşmacılı bir sesli diyalog oluşturur. Her katılımcı için farklı metin satırları ve ayrı sesler belirterek bir konuşma oluşturmanıza olanak tanır. Düğüm, diyalog isteğini ElevenLabs API'sine gönderir ve oluşturulan sesi döndürür.
 
 ## Girdiler
 
+### Ortak Girdiler
+
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `kararlılık` | Ses stabilitesi. Düşük değerler daha geniş duygusal aralık sağlar, yüksek değerler daha tutarlı ancak potansiyel olarak tekdüze konuşma üretir. (varsayılan: 0.5) | FLOAT | Hayır | 0.0 - 1.0 |
-| `metin normalizasyonunu uygula` | Metin normalizasyon modu. 'auto' sistemin karar vermesini sağlar, 'on' normalizasyonu her zaman uygular, 'off' ise normalizasyonu atlar. | COMBO | Hayır | `"auto"`<br>`"on"`<br>`"off"` |
-| `model` | Diyalog oluşturma için kullanılacak model. | COMBO | Hayır | `"eleven_v3"` |
-| `girdiler` | Diyalog girişi sayısı. Bir sayı seçmek, o sayıda metin ve ses giriş alanı oluşturur. | DYNAMIC_COMBO | Evet | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
-| `dil_kodu` | ISO-639-1 veya ISO-639-3 dil kodu (ör. 'en', 'es', 'fra'). Otomatik algılama için boş bırakın. (varsayılan: boş) | STRING | Hayır | - |
-| `tohum` | Tekrarlanabilirlik için tohum. (varsayılan: 1) | INT | Hayır | 0 - 4294967295 |
-| `çıktı_formatı` | Ses çıktı formatı. | COMBO | Hayır | `"mp3_44100_192"`<br>`"opus_48000_192"` |
+| `kararlılık` | Ses kararlılığı. Düşük değerler daha geniş bir duygusal aralık sağlar; yüksek değerler daha tutarlı ancak potansiyel olarak monoton bir konuşma üretir. (varsayılan: 0.5) | FLOAT | Evet | 0.0 - 1.0 |
+| `metin normalizasyonunu uygula` | Metin normalleştirme modu. 'auto' sistemin karar vermesini sağlar, 'on' normalleştirmeyi her zaman uygular, 'off' bunu atlar. | COMBO | Evet | `"auto"`<br>`"on"`<br>`"off"` |
+| `model` | Diyalog oluşturma için kullanılacak model. | COMBO | Evet | `"eleven_v3"` |
+| `girdiler` | Diyalog öğesi sayısı. Bir sayı seçmek, o sayıda metin ve ses girdi çifti oluşturur. | DYNAMIC_COMBO | Evet | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
+| `dil_kodu` | ISO-639-1 veya ISO-639-3 dil kodu (örn., 'en', 'es', 'fra'). Otomatik algılama için boş bırakın. (varsayılan: boş) | STRING | Evet | - |
+| `tohum` | Yeniden üretilebilirlik için tohum. (varsayılan: 1) | INT | Evet | 0 - 4294967295 |
+| `çıktı_formatı` | Ses çıktısı biçimi. | COMBO | Evet | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
-**Not:** `inputs` parametresi dinamiktir. Bir sayı seçtiğinizde (ör. "3"), düğüm ilgili üç `text` ve `voice` giriş alanını görüntüler (ör. `text1`, `voice1`, `text2`, `voice2`, `text3`, `voice3`). Her `text` alanı en az bir karakter içermelidir. Her `voice` alanı, bir Voice Selector veya Instant Voice Clone düğümünden bağlanan bir ses bekler.
+### Diyalog Öğesi Girdileri
+
+Tüm `inputs` seçenekleri tarafından paylaşılır.
+
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `text1` ... `text10` | İlgili diyalog öğesi için metin içeriği. Düğüm, seçilen her diyalog öğesi için bir `text` alanı oluşturur. Her metin değeri en az bir karakter içermelidir. | STRING | Evet | - |
+| `voice1` ... `voice10` | İlgili diyalog öğesi için ses. Bir Voice Selector veya Instant Voice Clone düğümünden bağlayın. Düğüm, seçilen her diyalog öğesi için bir `voice` alanı oluşturur. | ELEVENLABS_VOICE | Evet | - |
+
+**Not:** `inputs` seçicisi en fazla 10 diyalog öğesi oluşturabilir. Her öğe hem bir `text` alanı hem de bir `voice` alanı gerektirir. `text` değeri boş olamaz. `voice` girdisi, uyumlu bir ElevenLabs ses düğümü tarafından sağlanan bir ses kimliği bekler.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `audio` | Seçilen çıktı formatında oluşturulan çok konuşmacılı diyalog sesi. | AUDIO |
+| `audio` | Seçilen çıktı biçiminde oluşturulan çok konuşmacılı diyalog sesi. | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToDialogue/tr.md)
 

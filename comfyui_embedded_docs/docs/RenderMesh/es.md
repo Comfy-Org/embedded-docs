@@ -1,25 +1,25 @@
-# RenderMesh
+# Renderizar malla
 
-Este nodo renderiza una malla 3D en una imagen 2D mediante el lanzamiento de rayos desde una única vista. Puede generar la malla con textura, los colores de vértices, una superficie sombreada sólida, las normales de superficie o la profundidad. La cámara y la transformación de modelo opcional pueden provenir de un visor Load3D / Preview3D; si no hay ninguna cámara conectada, se encuadra automáticamente una vista frontal predeterminada.
+Este nodo renderiza una malla 3D en una imagen 2D mediante el trazado de rayos de una sola vista. Puede generar como salida la malla texturizada, los colores de vértices, una superficie sólida sombreada, las normales de superficie o la profundidad. La cámara y la transformación de modelo opcional pueden provenir de un visor Load3D / Preview3D; si no se conecta ninguna cámara, se encuadra automáticamente una vista frontal predeterminada.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
 | `mesh` | La malla 3D que se va a renderizar. | MESH | Sí | — |
-| `mode` | Qué renderizar. auto: textura si está presente, si no, colores de vértices, si no, arcilla sombreada. (predeterminado: "auto") | COMBO | Sí | `"auto"`<br>`"texture"`<br>`"vertex colors"`<br>`"solid"`<br>`"normal"`<br>`"depth"` |
-| `width` | Ancho de la imagen renderizada en píxeles. (predeterminado: 1024) | INT | Sí | 64 a 4096 (step 8) |
-| `height` | Altura de la imagen renderizada en píxeles. (predeterminado: 1024) | INT | Sí | 64 a 4096 (step 8) |
-| `background` | Color de fondo utilizado para los píxeles que la malla no cubre. (predeterminado: "#000000") | COLOR | Sí | — |
-| `model_3d_info` | Transformación de modelo del mismo visor Load3D / Preview3D. Conéctelo con `camera_info` para coincidir con el encuadre del visor. | LOAD3D_MODEL_INFO | No | — |
-| `camera_info` | Cámara de un visor Load3D / Preview3D o de un nodo Create Camera Info. Si no hay ninguna conectada, se encuadra automáticamente una vista frontal predeterminada. | LOAD3D_CAMERA | No | — |
+| `mode` | Qué se debe renderizar. auto: textura si está presente; si no, colores de vértices; si no, arcilla sombreada. (predeterminado: "auto") | COMBO | Sí | `"auto"`<br>`"texture"`<br>`"vertex colors"`<br>`"solid"`<br>`"normal"`<br>`"depth"` |
+| `width` | Ancho de la imagen renderizada en píxeles. (predeterminado: 1024) | INT | Sí | 64 a 4096 (paso 8) |
+| `height` | Alto de la imagen renderizada en píxeles. (predeterminado: 1024) | INT | Sí | 64 a 4096 (paso 8) |
+| `background` | Color de fondo usado para los píxeles que la malla no cubre. (predeterminado: "#000000") | COLOR | Sí | — |
+| `model_3d_info` | Transformación de modelo del mismo visor Load3D / Preview3D. Conéctala con camera_info para coincidir con el encuadre del visor. | LOAD3D_MODEL_INFO | No | — |
+| `camera_info` | Cámara de un visor Load3D / Preview3D o de un nodo Create Camera Info. Si no se conecta ninguna, se encuadra automáticamente una vista frontal predeterminada. | LOAD3D_CAMERA | No | — |
 
-Nota: Solo se renderiza el primer elemento de una malla por lotes — si el lote de mallas contiene más de un elemento, el nodo registra una advertencia y utiliza el primero. El modo `texture` requiere que la malla tenga tanto textura como UVs, y el modo `vertex colors` requiere colores de vértices; si los datos para el modo seleccionado no están disponibles, el nodo recurre al renderizado sombreado sólido. `model_3d_info` y `camera_info` están pensados para conectarse juntos desde el mismo visor Load3D / Preview3D de modo que el renderizado coincida con el encuadre del visor.
+Nota: Solo se renderiza el primer elemento de una malla por lotes; si el lote de mallas contiene más de un elemento, el nodo registra una advertencia y usa el primero. El modo `texture` requiere que la malla tenga tanto una textura como UVs, y el modo `vertex colors` requiere colores de vértices; si los datos para el modo seleccionado no están disponibles, el nodo recurre al render sólido sombreado. El modo `normal` usa las normales suaves de vértices de la malla cuando están presentes; de lo contrario, usa la normal por cara. En el modo `depth`, las superficies más cercanas aparecen más brillantes (cerca = blanco) y los píxeles no cubiertos por la malla permanecen negros. Se pretende que `model_3d_info` y `camera_info` se conecten juntos desde el mismo visor Load3D / Preview3D para que el render coincida con el encuadre del visor.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
-|------------------|-------------|---------------|
+|-------------|-------------|-----------|
 | `image` | La imagen renderizada de la malla. | IMAGE |
 | `mask` | Una máscara que es 1.0 donde se renderizó la malla y 0.0 en el resto. | MASK |
 

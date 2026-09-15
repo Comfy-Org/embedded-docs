@@ -1,32 +1,32 @@
-# MiniMaxH3AddGuide
+# Añadir guía para MiniMax H3
 
-Este nodo fija una imagen, un clip corto, audio o un clip con su banda sonora en cualquier fotograma elegido de un video MiniMax H3. Añade un fotograma clave guía al condicionamiento en el índice de fotograma especificado, y puede encadenar varios de estos nodos para fijar varios fotogramas en el mismo video.
+Este nodo ancla una imagen, un clip corto, audio, o un clip con su banda sonora en cualquier fotograma de un video de MiniMax H3. Agrega un fotograma clave de guía al condicionamiento en el índice de fotograma elegido, y puedes encadenar varios de estos nodos para anclar varios fotogramas en el mismo video.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `positivo` | El condicionamiento al que se adjunta el fotograma clave guía. | CONDITIONING | Sí | - |
-| `latente` | El latent de audio-video MiniMax H3 que define el video objetivo. Debe ser un latent AV MiniMax H3 (anidado, con dos tensores 5D de 24 canales cada uno). | LATENT | Sí | - |
-| `frame_idx` | Índice de fotograma en el que anclar la imagen o el primer fotograma del clip. Los valores negativos se cuentan desde el final del video. (por defecto: 0) | INT | Sí | -9999 a 9999 |
+| `positivo` | El condicionamiento al que se adjunta el fotograma clave de guía. | CONDITIONING | Sí | - |
 | `vae` | VAE de video, necesario cuando se conecta una imagen. | VAE | No | - |
 | `audio_vae` | VAE de audio, necesario cuando se conecta un audio. | VAE | No | - |
-| `image` | Imagen o fotogramas de video para anclar. Los lotes de múltiples fotogramas se anclan como un clip y se recortan a las longitudes de clip válidas del modelo: 5, 22, 39... (17k + 5) fotogramas. Los lotes de menos de 5 fotogramas usan solo la primera imagen. | IMAGE | No | - |
-| `audio` | Banda sonora para anclar a partir del mismo índice de fotograma, recortada a la duración restante del video. | AUDIO | No | - |
+| `latente` | El latent de audio-video de MiniMax H3 que define el video objetivo. Debe ser un latent AV de MiniMax H3 (anidado, con dos tensores 5D, y el tensor de video con 24 canales). | LATENT | Sí | - |
+| `image` | Imagen o fotogramas de video para anclar. Los lotes de varios fotogramas se anclan como un clip y se recortan a las longitudes de clip válidas del modelo: 5, 22, 39... (17k + 5) fotogramas. Los lotes de menos de 5 fotogramas usan solo la primera imagen. | IMAGE | No | - |
+| `audio` | Banda sonora para anclar comenzando en el mismo índice de fotograma, recortada a la duración restante del video. | AUDIO | No | - |
+| `frame_idx` | Índice de fotograma en el que anclar la imagen o el primer fotograma del clip. Los valores negativos se cuentan desde el final del video. (predeterminado: 0) | INT | Sí | -9999 a 9999 |
 
 **Restricciones:**
-- Debe proporcionarse al menos uno de `image` o `audio`; de lo contrario, el nodo genera un error.
-- `vae` es obligatorio cuando se conecta `image`.
-- `audio_vae` es obligatorio cuando se conecta `audio`.
+- Se debe proporcionar al menos uno de `image` o `audio`; de lo contrario, el nodo genera un error.
+- `vae` es obligatorio cuando `image` está conectado.
+- `audio_vae` es obligatorio cuando `audio` está conectado.
 - Los lotes de `image` con menos de 5 fotogramas usan solo la primera imagen; los lotes de 5 o más fotogramas se recortan a una longitud de clip válida (5, 22, 39, etc.).
-- `frame_idx` debe colocar la guía dentro del rango de fotogramas del video, y un clip de múltiples fotogramas debe caber completamente en el video; de lo contrario, el nodo genera un error.
-- Cuando se conecta audio, el índice de fotograma no debe estar más allá del final de la pista de audio del video.
+- `frame_idx` debe colocar la guía dentro del rango de fotogramas del video, y un clip de varios fotogramas debe caber por completo en el video; de lo contrario, el nodo genera un error.
+- Cuando se conecta audio, el índice de fotograma no debe superar el final de la pista de audio del video.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `positive` | El condicionamiento con el fotograma clave guía añadido, que contiene el índice de fotograma resuelto y, cuando se proporcionan, los latents codificados de imagen o audio. | CONDITIONING |
+| `positive` | El condicionamiento con el fotograma clave de guía añadido, que contiene el índice de fotograma resuelto y, cuando se proporcionan, los latents de imagen o audio codificados. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MiniMaxH3AddGuide/es.md)
 

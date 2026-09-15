@@ -1,26 +1,28 @@
 # Guía Dual CFG
 
-El nodo DualCFGGuider crea un sistema de guía para el muestreo de guía dual sin clasificador. Combina dos entradas de condicionamiento con una entrada de condicionamiento negativa y aplica dos escalas de guía separadas para controlar cuán fuertemente influye cada condicionamiento en la salida generada. Admite dos estilos de combinar estas escalas de guía: "regular" y "nested".
+El nodo Dual CFG Guider crea un sistema de guía para el muestreo que utiliza dos entradas de condicionamiento junto con una entrada de condicionamiento negativo. Aplica dos escalas de guía separadas para controlar con qué fuerza influye cada condicionamiento en el resultado generado, y admite dos formas de combinar esas escalas: "regular" y "nested".
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo a utilizar para la guía | MODEL | Sí | - |
-| `cond1` | La primera entrada de condicionamiento positiva | CONDITIONING | Sí | - |
+| `modelo` | El modelo que se utilizará para la guía | MODEL | Sí | - |
+| `cond1` | La primera entrada de condicionamiento positivo | CONDITIONING | Sí | - |
 | `cond2` | La segunda entrada de condicionamiento, utilizada como referencia entre el primer condicionamiento positivo y el condicionamiento negativo | CONDITIONING | Sí | - |
-| `negativo` | La entrada de condicionamiento negativa | CONDITIONING | Sí | - |
-| `cfg_conds` | Escala de guía aplicada al primer condicionamiento positivo (valor predeterminado: 8.0) | FLOAT | Sí | 0.0 - 100.0 |
-| `cfg_cond2_negativo` | Escala de guía aplicada entre el segundo condicionamiento y el condicionamiento negativo (valor predeterminado: 8.0) | FLOAT | Sí | 0.0 - 100.0 |
-| `estilo` | El estilo de guía a aplicar (valor predeterminado: "regular"). Cuando se establece en "nested", la guía se aplica de forma anidada | COMBO | Sí | "regular"<br>"nested" |
+| `negativo` | La entrada de condicionamiento negativo | CONDITIONING | Sí | - |
+| `cfg_conds` | Escala de guía aplicada al primer condicionamiento positivo (predeterminado: 8.0) | FLOAT | Sí | 0.0 - 100.0 |
+| `cfg_cond2_negativo` | Escala de guía aplicada entre el segundo condicionamiento y el condicionamiento negativo (predeterminado: 8.0) | FLOAT | Sí | 0.0 - 100.0 |
+| `estilo` | El estilo de guía que se aplicará (predeterminado: "regular"). Cuando se establece en "nested", la guía se aplica de forma anidada | COMBO | Sí | "regular"<br>"nested" |
 
-Nota: En el estilo `regular`, `cfg_cond2_negative` se aplica entre `cond2` y `negative`, y `cfg_conds` se aplica entre `cond1` y `cond2`. En el estilo `nested`, `cfg_conds` se aplica primero entre `cond1` y `cond2`, y la predicción resultante se guía para alejarse de `negative` utilizando `cfg_cond2_negative`.
+Nota: En el estilo `regular`, `cfg_cond2_negative` se aplica entre `cond2` y `negative`, y `cfg_conds` se aplica entre `cond1` y `cond2`. En el estilo `nested`, `cfg_conds` se aplica primero entre `cond1` y `cond2`, y la predicción resultante luego se guía para alejarse de `negative` usando `cfg_cond2_negative`.
+
+Nota: En el estilo `regular`, cuando `cfg_cond2_negative` es igual a 1.0, se omite el condicionamiento negativo, y cuando `cfg_conds` también es igual a 1.0, también se omite el segundo condicionamiento. Esto reduce la cantidad de evaluaciones del modelo realizadas.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `GUIDER` | Un sistema de guía configurado listo para usar con muestreo | GUIDER |
+| `GUIDER` | Un sistema de guía configurado, listo para usarse con el muestreo | GUIDER |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DualCFGGuider/es.md)
 

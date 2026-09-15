@@ -1,6 +1,6 @@
 # Génération de vidéo multi-images Vidu
 
-Ce nœud génère une vidéo en créant des transitions entre plusieurs images clés. Il commence à partir d'une image initiale et anime une séquence d'images de fin et de prompts définis par l'utilisateur, produisant un fichier vidéo unique en sortie.
+Ce nœud génère une vidéo en créant des transitions entre plusieurs images clés. Il part d'une image initiale et anime une séquence d'images finales et de prompts définis par l'utilisateur, produisant un seul fichier vidéo en sortie.
 
 ## Entrées
 
@@ -8,28 +8,29 @@ Ce nœud génère une vidéo en créant des transitions entre plusieurs images c
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `modèle` | Le modèle Vidu à utiliser pour la génération de vidéos. | COMBO | Oui | "viduq2-pro"<br>"viduq2-turbo" |
-| `image_de_départ` | L'image de départ. Le ratio d'aspect doit être compris entre 1:4 et 4:1. | IMAGE | Oui | Ratio d'aspect de 1:4 à 4:1 |
-| `graine` | Une valeur de graine (seed) pour la génération de nombres aléatoires afin d'assurer des résultats reproductibles (par défaut : 1). | INT | Oui | 0 à 2147483647 |
+| `modèle` | Le modèle Vidu à utiliser pour la génération vidéo. | COMBO | Oui | "viduq2-pro"<br>"viduq2-turbo" |
+| `image_de_départ` | L'image de trame de départ. Le rapport d'aspect doit être compris entre 1:4 et 4:1. | IMAGE | Oui | Rapport d'aspect 1:4 à 4:1 |
+| `graine` | Une valeur de graine pour la génération de nombres aléatoires afin de garantir des résultats reproductibles (par défaut : 1). | INT | Oui | 0 à 2147483647 |
 | `résolution` | La résolution de la vidéo de sortie. | COMBO | Oui | "720p"<br>"1080p" |
-| `images` | Nombre de transitions entre images clés (2-9). La sélection d'une valeur révèle dynamiquement les entrées requises pour chaque image. | DYNAMIC_COMBO | Oui | "2"<br>"3"<br>"4"<br>"5"<br>"6"<br>"7"<br>"8"<br>"9" |
+| `images` | Nombre de transitions entre images clés (2-9). La sélection d'une valeur révèle dynamiquement les entrées requises pour chaque trame. | DYNAMIC_COMBO | Oui | "2"<br>"3"<br>"4"<br>"5"<br>"6"<br>"7"<br>"8"<br>"9" |
 
-### Entrées de frame (partagées par toutes les options de nombre de frames)
+### Entrées de trame (partagées par toutes les options de nombre de trames)
 
-Lorsque `frames` est défini sur un nombre, les trois entrées suivantes sont affichées pour chaque frame `i` de 1 à ce nombre. Par exemple, le choix de « 3 » ajoute `prompt1` / `end_image1` / `duration1`, `prompt2` / `end_image2` / `duration2`, et `prompt3` / `end_image3` / `duration3`.
+Lorsque `frames` est défini sur un nombre, les trois entrées suivantes sont affichées pour chaque trame `i`, de 1 à ce nombre. Par exemple, choisir "3" ajoute `prompt1` / `end_image1` / `duration1`, `prompt2` / `end_image2` / `duration2` et `prompt3` / `end_image3` / `duration3`.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `prompt{i}` | Prompt textuel pour la transition de la frame {i}. Champ de texte multiligne. Maximum 2000 caractères. | STRING | Oui | Jusqu'à 2000 caractères |
-| `end_image{i}` | Image de fin de frame pour le segment {i}. Le ratio d'aspect doit être compris entre 1:4 et 4:1. | IMAGE | Oui | Ratio d'aspect de 1:4 à 4:1 |
+| `prompt{i}` | Prompt textuel pour la transition de la trame {i}. Champ de texte multiligne. Maximum 2000 caractères. | STRING | Oui | Jusqu'à 2000 caractères |
+| `end_image{i}` | Image de trame de fin pour le segment {i}. Le rapport d'aspect doit être compris entre 1:4 et 4:1. | IMAGE | Oui | Rapport d'aspect 1:4 à 4:1 |
 | `duration{i}` | Durée du segment {i} en secondes (par défaut : 4). | INT | Oui | 2 à 7 |
 
-**Remarques :**
+**Notes :**
 
-- Toutes les entrées sont requises. `seed` a une valeur par défaut mais reste une entrée requise.
-- `start_image` et chaque `end_image{i}` doivent avoir un ratio d'aspect compris entre 1:4 et 4:1.
+- Toutes les entrées sont requises. `seed` possède une valeur par défaut mais reste une entrée requise.
+- `start_image` et chaque `end_image{i}` doivent avoir un rapport d'aspect compris entre 1:4 et 4:1.
 - Chaque `prompt{i}` a une longueur maximale de 2000 caractères.
-- Chaque `duration{i}` doit être compris entre 2 et 7 secondes.
+- Chaque `duration{i}` doit être comprise entre 2 et 7 secondes.
+- Le nombre de trames peut être compris entre 2 et 9, donc les indices de trame possibles vont de 1 à 9.
 
 ## Sorties
 

@@ -1,6 +1,6 @@
 # Sigmas Manuais
 
-O nó **ManualSigmas** permite que você defina manualmente uma sequência personalizada de níveis de ruído (sigmas) para o processo de amostragem. Você insere uma lista de números como uma string, e o nó a converte em um tensor que pode ser usado por outros nós de amostragem. Isso é útil para testar ou criar agendamentos de ruído específicos.
+O nó ManualSigmas permite que você defina manualmente uma sequência personalizada de níveis de ruído (sigmas) para o processo de amostragem. Você insere uma lista de números como uma string, e o nó os converte em um tensor SIGMAS que pode ser usado por outros nós de amostragem. Isso é útil para testes ou para criar cronogramas de ruído específicos.
 
 ## Entradas
 

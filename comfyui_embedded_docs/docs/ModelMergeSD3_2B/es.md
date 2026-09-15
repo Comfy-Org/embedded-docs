@@ -1,6 +1,6 @@
 # ModelMergeSD3_2B
 
-El nodo ModelMergeSD3_2B permite fusionar dos modelos Stable Diffusion 3 2B combinando sus componentes con pesos ajustables. Proporciona control individual sobre las capas de incrustación (embedding) y los bloques del transformador, lo que permite combinaciones de modelos finamente ajustadas para tareas de generación especializadas.
+El nodo ModelMergeSD3_2B permite fusionar dos modelos Stable Diffusion 3 2B mezclando sus componentes con pesos ajustables. Proporciona control individual sobre las capas de embedding, los bloques transformer y la capa final, lo que permite combinaciones ajustadas de dos modelos.
 
 ## Entradas
 
@@ -8,11 +8,11 @@ El nodo ModelMergeSD3_2B permite fusionar dos modelos Stable Diffusion 3 2B comb
 | --- | --- | --- | --- | --- |
 | `model1` | El primer modelo a fusionar | MODEL | Sí | - |
 | `model2` | El segundo modelo a fusionar | MODEL | Sí | - |
-| `pos_embed.` | Peso de interpolación de la incrustación de posición (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `x_embedder.` | Peso de interpolación de la incrustación de entrada (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `context_embedder.` | Peso de interpolación de la incrustación de contexto (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `y_embedder.` | Peso de interpolación de la incrustación Y (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `t_embedder.` | Peso de interpolación de la incrustación de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `pos_embed.` | Peso de interpolación del embedding de posición (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `x_embedder.` | Peso de interpolación del embedding de entrada (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `context_embedder.` | Peso de interpolación del embedding de contexto (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `y_embedder.` | Peso de interpolación del embedding Y (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `t_embedder.` | Peso de interpolación del embedding de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `joint_blocks.0.` | Peso de interpolación del bloque conjunto 0 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `joint_blocks.1.` | Peso de interpolación del bloque conjunto 1 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `joint_blocks.2.` | Peso de interpolación del bloque conjunto 2 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |

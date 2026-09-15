@@ -1,23 +1,25 @@
 # Google Gemini
 
-Este nodo permite a los usuarios interactuar con los modelos de IA Gemini de Google para generar respuestas de texto. Puede proporcionar múltiples tipos de entradas, incluyendo texto, imágenes, audio, video y archivos como contexto para que el modelo genere respuestas más relevantes y significativas. El nodo maneja automáticamente toda la comunicación con la API y el procesamiento de las respuestas.
+Este nodo permite a los usuarios interactuar con los modelos de IA Gemini de Google para generar respuestas de texto. Puedes proporcionar varios tipos de entradas, como texto, imágenes, audio, video y archivos, como contexto para que el modelo genere respuestas más relevantes y significativas. El nodo gestiona automáticamente toda la comunicación con la API y el análisis de respuestas.
 
 **Nota:** Este nodo está marcado como obsoleto en el código fuente.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `prompt` | Entradas de texto para el modelo, utilizadas para generar una respuesta. Puede incluir instrucciones detalladas, preguntas o contexto para el modelo. Por defecto: cadena vacía. | STRING | Sí | - |
-| `modelo` | El modelo Gemini a utilizar para generar respuestas. Por defecto: gemini-3-1-pro. | COMBO | Sí | "gemini-2.5-pro"<br>"gemini-2.5-flash"<br>"gemini-3-pro-preview"<br>"gemini-3-1-pro"<br>"gemini-3-1-flash-lite" |
-| `semilla` | Cuando la semilla se fija a un valor específico, el modelo hace un mejor esfuerzo para proporcionar la misma respuesta para solicitudes repetidas. La salida determinista no está garantizada. Además, cambiar el modelo o los ajustes de parámetros, como la temperatura, puede causar variaciones en la respuesta incluso cuando se usa el mismo valor de semilla. Por defecto, se usa un valor de semilla aleatorio. Por defecto: 42. | INT | Sí | 0 a 18446744073709551615 |
-| `imágenes` | Imagen(es) opcional(es) para usar como contexto para el modelo. Para incluir múltiples imágenes, puede usar el nodo Batch Images. Por defecto: Ninguna. | IMAGE | No | - |
-| `audio` | Audio opcional para usar como contexto para el modelo. Por defecto: Ninguno. | AUDIO | No | - |
-| `video` | Video opcional para usar como contexto para el modelo. Por defecto: Ninguno. | VIDEO | No | - |
-| `archivos` | Archivo(s) opcional(es) para usar como contexto para el modelo. Acepta entradas del nodo Gemini Generate Content Input Files. Por defecto: Ninguno. | GEMINI_INPUT_FILES | No | - |
-| `system_prompt` | Instrucciones fundamentales que dictan el comportamiento de una IA. Por defecto: cadena vacía. Este es un parámetro avanzado. | STRING | No | - |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `prompt` | Entradas de texto para el modelo, utilizadas para generar una respuesta. Puedes incluir instrucciones detalladas, preguntas o contexto para el modelo. Predeterminado: cadena vacía. | STRING | Sí | - |
+| `modelo` | El modelo Gemini que se utilizará para generar respuestas. Predeterminado: gemini-3-1-pro. | COMBO | Sí | "gemini-2.5-pro"<br>"gemini-2.5-flash"<br>"gemini-3-pro-preview"<br>"gemini-3-1-pro"<br>"gemini-3-1-flash-lite" |
+| `semilla` | Cuando `seed` se fija a un valor específico, el modelo hace su mejor esfuerzo para proporcionar la misma respuesta en solicitudes repetidas. La salida determinista no está garantizada. Además, cambiar el modelo o la configuración de parámetros, como la temperatura, puede causar variaciones en la respuesta incluso cuando usas el mismo valor de `seed`. De forma predeterminada, se usa un valor de semilla aleatorio. Predeterminado: 42. | INT | Sí | 0 a 18446744073709551615 |
+| `imágenes` | Imagen(es) opcional(es) para usar como contexto del modelo. Para incluir varias imágenes, puedes usar el nodo Batch Images. Predeterminado: Ninguno. | IMAGE | No | - |
+| `audio` | Audio opcional para usar como contexto del modelo. Predeterminado: Ninguno. | AUDIO | No | - |
+| `video` | Video opcional para usar como contexto del modelo. Predeterminado: Ninguno. | VIDEO | No | - |
+| `archivos` | Archivo(s) opcional(es) para usar como contexto del modelo. Acepta entradas del nodo Gemini Generate Content Input Files. Predeterminado: Ninguno. | GEMINI_INPUT_FILES | No | - |
+| `system_prompt` | Instrucciones fundamentales que determinan el comportamiento de una IA. Predeterminado: cadena vacía. Este es un parámetro avanzado. | STRING | No | - |
 
-Todas las imágenes conectadas se utilizan como contexto. Cuando se proporcionan más de 10 imágenes, las primeras 10 se cargan como referencias de archivo y las imágenes restantes se envían en línea a la API.
+Todas las imágenes conectadas se usan como contexto. Cuando se proporcionan más de 10 imágenes, las primeras 10 se cargan como referencias de archivo y las imágenes restantes se envían en línea a la API.
+
+El nodo usa el nombre del modelo seleccionado tal como se indica en la lista; algunas entradas se asignan internamente a sus identificadores de modelo actuales de la API antes de enviar la solicitud.
 
 ## Salidas
 

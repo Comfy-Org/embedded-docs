@@ -1,34 +1,42 @@
-# LTXVSeparateGeneratedKeyframes
+# LTXV Separar fotogramas clave generados
 
-## Resumen
+## Descripción general
 
-El nodo LTXV Separar Claves Generadas elimina las claves generadas de un latente muestreado y la condición, permitiendo su manejo separado antes de escalar espacialmente el latente del video. Está diseñado para usarse antes de la escalada espacial y no debe ejecutarse después de LTXV Recortar Guías, ya que trata las claves generadas como guías desechables y las elimina.
+El nodo LTXV Separate Generated Keyframes separa de nuevo los fotogramas clave generados añadidos por LTXV Add Generated Keyframes de un latent muestreado y los elimina del condicionamiento. Úselo antes de realizar el escalado espacial del latent de vídeo. No ejecute primero LTXV Crop Guides, ya que trata los fotogramas clave generados como guías desechables y los descarta.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Condición positiva con los metadatos de claves generadas eliminados. | CONDITIONING | Sí | N/A |
-| `negative` | Condición negativa con los metadatos de claves generadas eliminados. | CONDITIONING | Sí | N/A |
-| `latent` | Latente del video con las claves generadas eliminadas. | LATENT | Sí | N/A |
-| `keyframes_to_batch` | Devolver las claves como un lote de latentes de un solo cuadro. Dejarlo sin usar para obtener un latente multiframente, que es lo que esperan el escalador de latentes y el más tarde Agregar Claves Generadas. | BOOLEAN | No | predeterminado: Falso |
+| `positive` | Condicionamiento positivo que contiene los metadatos de los fotogramas clave generados. Los metadatos se eliminan de él en la salida. | CONDITIONING | Sí | N/A |
+| `negative` | Condicionamiento negativo que contiene los metadatos de los fotogramas clave generados. Los metadatos se eliminan de él en la salida. | CONDITIONING | Sí | N/A |
+| `latent` | Latent de vídeo que contiene los fotogramas clave generados. Los fotogramas clave se eliminan de él en la salida. | LATENT | Sí | N/A |
+| `keyframes_to_batch` | Devuelve los fotogramas clave como un lote de latents de un solo fotograma. Déjelo desactivado para obtenerlos como un único latent de varios fotogramas, que es lo que esperan el escalador de latent y un posterior Add Generated Keyframes. | BOOLEAN | No | predeterminado: False |
+
+### Notas sobre las entradas
+
+- `positive` debe contener metadatos de fotogramas clave generados; de lo contrario, el nodo lanza un error que indica que primero debe añadirlos con LTXV Add Generated Keyframes.
+- `latent` debe ser un latent de vídeo simple (un tensor 5D). Si los latents de vídeo y audio aún están combinados, sepárelos primero con Separate AV Latent.
+- El número de tokens por fotograma de latent registrado cuando se añadieron los fotogramas clave debe coincidir con los tokens por fotograma del `latent` proporcionado. Si el latent se reescaló después de añadir los fotogramas clave, ya no se alinean y el nodo lanza un error; sepárelos antes de escalar el latent.
+- El rango de fotogramas registrado para los fotogramas clave debe caber dentro del `latent` proporcionado; de lo contrario, el nodo lanza un error de que los fotogramas clave se registraron con un latent diferente.
+- El índice de la entrada de atención de guía registrado debe seguir existiendo en el condicionamiento. Si el condicionamiento se reconstruyó después de añadir los fotogramas clave, el nodo lanza un error.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Datos |
+| Nombre de salida | Descripción | Tipo de dato |
 |-------------|-------------|-----------|
-| `positive` | Condición positiva con los metadatos de claves generadas eliminados. | CONDITIONING |
-| `negative` | Condición negativa con los metadatos de claves generadas eliminados. | CONDITIONING |
-| `latent` | Latente del video con las claves generadas eliminadas. | LATENT |
-| `keyframes` | Las claves despojadas, etiquetadas con generated_keyframe_indices y generated_keyframe_num_frames. Alimentar estas a un más tarde Agregar Claves Generadas para inicializar nuevos espacios, o a Claves Generadas a Guías para fijarlas como guías de imagen congelada (los índices se reasignan si cambia la longitud del lienzo). | LATENT |
+| `positive` | Condicionamiento positivo con los metadatos de fotogramas clave generados eliminados. | CONDITIONING |
+| `negative` | Condicionamiento negativo con los metadatos de fotogramas clave generados eliminados. | CONDITIONING |
+| `latent` | Latent de vídeo con los fotogramas clave generados eliminados. | LATENT |
+| `keyframes` | Los fotogramas clave extraídos, etiquetados con generated_keyframe_indices y generated_keyframe_num_frames. Aliméntelos a un Add Generated Keyframes posterior para inicializar nuevas ranuras, o a Generated Keyframes To Guides para fijarlos como guías de imagen congeladas (los índices se reasignan si la longitud del lienzo cambió). | LATENT |
 
 ## Notas
 
-- El parámetro `keyframes_to_batch` determina si las claves se devuelven como un lote de latentes de un solo cuadro o como un latente multiframente.
-- El nodo asegura que las claves generadas se eliminen de la condición y el latente antes de cualquier procesamiento adicional.
-- La salida `keyframes` se puede usar para inicializar nuevos espacios para las claves generadas o para fijarlas como guías de imagen congelada.
-- El nodo lanza un `ValueError` si el latente no contiene claves generadas o si las claves no coinciden con el formato esperado.
-- El nodo asume que las claves generadas se agregaron usando el nodo LTXV Agregar Claves Generadas y que son compatibles con el latente actual.
+- El parámetro `keyframes_to_batch` determina si los fotogramas clave se devuelven como un lote de latents de un solo fotograma o como un único latent de varios fotogramas.
+- El nodo garantiza que los fotogramas clave generados se eliminen del condicionamiento y del latent antes de cualquier otro procesamiento.
+- La salida `keyframes` se puede usar para inicializar nuevas ranuras para fotogramas clave generados o para fijarlos como guías de imagen congeladas.
+- El nodo lanza un `ValueError` si el latent no contiene fotogramas clave generados o si los fotogramas clave no coinciden con el formato esperado.
+- El nodo asume que los fotogramas clave generados se añadieron con el nodo LTXV Add Generated Keyframes y que son compatibles con el latent actual.
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVSeparateGeneratedKeyframes/es.md)
 

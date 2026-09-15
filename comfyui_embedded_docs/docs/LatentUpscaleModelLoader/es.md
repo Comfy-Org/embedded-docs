@@ -1,18 +1,18 @@
 # Cargar modelo de escalado Latent
 
-El nodo LatentUpscaleModelLoader carga un modelo especializado en ampliar la escala de representaciones latentes desde un archivo almacenado en la carpeta `latent_upscale_models` de ComfyUI. Detecta automáticamente el tipo de modelo (720p, 1080p u otro upsampler latente) a partir del contenido del archivo y configura la arquitectura interna correspondiente, dejando el modelo cargado listo para ser utilizado por otros nodos.
+El nodo LatentUpscaleModelLoader carga un modelo especializado en escalar representaciones latentes desde un archivo almacenado en la carpeta `latent_upscale_models` de ComfyUI. Detecta automáticamente la arquitectura del modelo a partir del contenido del archivo (Hunyuan Video 720p, Hunyuan Video 1080p o un Latent Upsampler) y configura el modelo interno correspondiente, de modo que el resultado queda listo para ser usado por otros nodos.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model_name` | El nombre del archivo de modelo de upscaling latente a cargar. Las opciones disponibles se completan dinámicamente a partir de los archivos presentes en el directorio `latent_upscale_models` de ComfyUI. | COMBO | Sí | Todos los archivos en la carpeta `latent_upscale_models` |
+| `model_name` | El nombre del archivo de modelo de escalado latente que se va a cargar. Las opciones disponibles se rellenan dinámicamente a partir de los archivos presentes en el directorio `latent_upscale_models` de ComfyUI. | COMBO | Sí | Todos los archivos de la carpeta `latent_upscale_models` |
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `model` | El modelo de upscaling latente cargado, configurado y listo para usar. | LATENT_UPSCALE_MODEL |
+| `model` | El modelo de escalado latente cargado, configurado y listo para usar. Según el contenido detectado del archivo, puede ser un escalador de Hunyuan Video 720p, un escalador de Hunyuan Video 1080p o un modelo Latent Upsampler envuelto. | LATENT_UPSCALE_MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentUpscaleModelLoader/es.md)
 

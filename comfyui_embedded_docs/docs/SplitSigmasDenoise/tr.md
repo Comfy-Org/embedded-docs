@@ -1,20 +1,20 @@
 # SigmalarıGürültüAzaltmaBöl
 
-SplitSigmasDenoise düğümü, bir sigma değerleri dizisini gürültü giderme gücü parametresine göre iki parçaya böler. Girdi sigmalarını yüksek ve düşük sigma dizileri olarak ayırır; ayırma noktası, toplam adımların denoise faktörüyle çarpılmasıyla belirlenir. Bu sayede gürültü zamanlaması, özel işlemler için farklı yoğunluk aralıklarına ayrılabilir.
+SplitSigmasDenoise düğümü, bir sigma değerleri dizisini, bir gürültü giderme gücü parametresine göre iki parçaya böler. Girdi sigmalarını yüksek ve düşük sigma dizileri olarak ayırır; bölünme noktası, toplam adım sayısının (sigma değeri sayısından bir eksik) `denoise` faktörüyle çarpılmasıyla belirlenir. Bu, gürültü çizelgesini özel işleme için farklı yoğunluk aralıklarına ayırmayı sağlar.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `sigmalar` | Gürültü zamanlamasını temsil eden sigma değerlerinden oluşan girdi dizisi | SIGMAS | Evet | - |
-| `gürültü_azaltma` | Sigma dizisinin nereden bölüneceğini belirleyen gürültü giderme gücü faktörü (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
+| `sigmalar` | Gürültü çizelgesini temsil eden girdi sigma değerleri dizisi | SIGMAS | Evet | - |
+| `gürültü_azaltma` | Sigma dizisinin nerede bölüneceğini belirleyen gürültü giderme gücü faktörü (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `yüksek_sigma` | Daha yüksek sigma değerleri içeren sigma dizisinin ilk bölümü | SIGMAS |
-| `düşük_sigma` | Daha düşük sigma değerleri içeren sigma dizisinin ikinci bölümü | SIGMAS |
+| `high_sigmas` | Sigma dizisinin ilk kısmı; bölünme noktasına kadar olan daha yüksek sigma değerlerini içerir | SIGMAS |
+| `low_sigmas` | Sigma dizisinin ikinci kısmı; bölünme noktasından itibaren daha düşük sigma değerlerini içerir | SIGMAS |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmasDenoise/tr.md)
 

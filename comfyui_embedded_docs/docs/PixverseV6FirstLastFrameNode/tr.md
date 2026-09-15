@@ -1,6 +1,6 @@
 # PixVerse V6 İlk ve Son Kareden Videoya
 
-PixVerse V6 First-Last-Frame to Video, PixVerse kullanarak ilk kareden son kareye geçiş yapan bir video oluşturur; isteğe bağlı olarak yerleşik ses içerir. Verilen iki görsel, PixVerse API'sine gönderilir; API geçiş videosunu üretir ve bunu bir video dosyası olarak döndürür. Çıktı, ilk karenin en-boy oranını korur.
+PixVerse V6 İlk-Son Kare'den Videoya, PixVerse kullanarak isteğe bağlı yerel ses ile bir ilk kareden son kareye geçiş yapan bir video üretir. Sağlanan iki görsel PixVerse API'sine gönderilir; API geçiş videosunu üretir ve video dosyası olarak döndürür. Çıktı, ilk karenin en boy oranını korur.
 
 ## Girdiler
 
@@ -16,21 +16,21 @@ PixVerse V6 First-Last-Frame to Video, PixVerse kullanarak ilk kareden son karey
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Geçişi tanımlayan istem. | STRING | Evet | En fazla 5000 karakter |
+| `prompt` | Geçişi açıklayan istem. | STRING | Evet | En fazla 5000 karakter |
 | `quality` | Çıktı çözünürlüğü. Uzun kenarı ayarlar: 360p 640px, 540p 1024px, 720p 1280px, 1080p 1920px. (varsayılan: 720p) | COMBO | Evet | "360p"<br>"540p"<br>"720p"<br>"1080p" |
-| `duration_seconds` | Oluşturulan videonun saniye cinsinden uzunluğu. (varsayılan: 5) | INT | Evet | 1 ile 15 |
-| `generate_audio` | Video ile birlikte yerleşik bir ses parçası oluşturur. (varsayılan: true) | BOOLEAN | Evet | true<br>false |
-| `seed` | Video üretimi için seed. PixVerse bunu kaydeder ancak bu değerden bir çalıştırmayı yeniden üretmez. (varsayılan: 42) | INT | Evet | 0 ile 2147483647 |
-| `negative_prompt` | Videoda istenmeyen öğelere ilişkin isteğe bağlı bir metin açıklaması. | STRING | Hayır | En fazla 2048 karakter |
-| `style` | Videonun tamamına uygulanan isteğe bağlı bir görsel stil. (varsayılan: none) | COMBO | Hayır | Birden fazla seçenek mevcuttur (varsayılan: "none") |
+| `duration_seconds` | Üretilen videonun saniye cinsinden uzunluğu. (varsayılan: 5) | INT | Evet | 1 - 15 |
+| `generate_audio` | Video ile birlikte yerel bir ses parçası üret. (varsayılan: true) | BOOLEAN | Evet | true<br>false |
+| `seed` | Video üretimi için seed. PixVerse bunu kaydeder ancak bundan bir çalıştırmayı yeniden üretmez. (varsayılan: 42) | INT | Evet | 0 - 2147483647 |
+| `negative_prompt` | Videoda istenmeyen öğelerin isteğe bağlı metin açıklaması. | STRING | Hayır | En fazla 2048 karakter |
+| `style` | Tüm videoya uygulanan isteğe bağlı görsel stil. (varsayılan: none) | COMBO | Hayır | Birden çok seçenek mevcut (varsayılan: "none") |
 
-Not: İstem, boşluk karakterleri çıkarıldıktan sonra boş olmamalıdır ve 5000 karakterle sınırlıdır. Negatif istem sağlandığında 2048 karakterle sınırlıdır. Süre 1 ile 15 saniye arasında olmalıdır. Çıktı videosu ilk karenin en-boy oranını korur.
+Not: İstem, boşluklar kaldırıldıktan sonra boş olmamalıdır ve 5000 karakterle sınırlıdır. Negatif istem sağlandığında 2048 karakterle sınırlıdır. Süre 1 ile 15 saniye arasında olmalıdır. Çıktı videosu ilk karenin en boy oranını korur.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `output` | İlk kareden son kareye geçiş yapan, `generate_audio` etkinleştirildiğinde bir ses parçası da içeren oluşturulan video. | VIDEO |
+| `video` | İlk kareden son kareye geçiş yapan, `generate_audio` etkinleştirildiğinde bir ses parçası içeren üretilmiş video. | VIDEO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PixverseV6FirstLastFrameNode/tr.md)
 

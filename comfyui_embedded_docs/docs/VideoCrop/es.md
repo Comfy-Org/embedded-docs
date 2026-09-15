@@ -1,20 +1,20 @@
-# VideoCrop
+# Recortar vídeo
 
-Este nodo recorta un video a una región rectangular seleccionada, conservando solo la parte dentro de ese rectángulo. También crea una vista previa del video recortado para que puedas ver el resultado. Si el ancho y el alto del recorte son cero, se conserva el video completo sin cambios.
+Este nodo recorta un video a una región rectangular definida en píxeles, conservando solo el área dentro de ese rectángulo. Guarda una vista previa temporal en MP4 del resultado recortado y produce como salida el video recortado.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
-|-----------|-------------|--------------|-----------|-------|
-| `video` | El video fuente que se recortará. | VIDEO | Sí | Cualquier video |
-| `crop` | Región de recorte en píxeles. Un ancho/alto de cero conserva el fotograma completo. El rectángulo de recorte proporciona los valores `x`, `y`, `width` y `height`, todos con un valor predeterminado de 0. | VIDEO_EDIT | Sí | `x` ≥ 0<br>`y` ≥ 0<br>`width` ≥ 0<br>`height` ≥ 0<br>Todos los valores tienen un valor predeterminado de 0 |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `video` | El video de origen que se recortará. | VIDEO | Sí | Cualquier video |
+| `crop` | Región de recorte en píxeles. Un ancho/alto de cero conserva el fotograma completo. El rectángulo de recorte proporciona valores `x`, `y`, `width` y `height`, todos con un valor predeterminado de 0. | VIDEO_EDIT | Sí | `x` ≥ 0<br>`y` ≥ 0<br>`width` ≥ 0<br>`height` ≥ 0<br>Todos los valores tienen un valor predeterminado de 0 |
 
-Nota: La región de recorte se describe en coordenadas de píxeles. Cuando el ancho y el alto son 0, no se aplica ningún recorte y el nodo emite el video de entrada completo.
+Nota: La región de recorte se describe en coordenadas de píxeles. Cuando el ancho y el alto son 0, no se aplica ningún recorte y el nodo produce como salida el video de entrada completo.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
-|------------------|-------------|--------------|
+| Nombre de salida | Descripción | Tipo de datos |
+|-------------|-------------|-----------|
 | `video` | El video recortado a la región rectangular seleccionada. Cuando el ancho y el alto del recorte son 0, la salida es el video de entrada completo. El resultado recortado también se guarda como un archivo MP4 temporal y se muestra como una vista previa de video. | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoCrop/es.md)

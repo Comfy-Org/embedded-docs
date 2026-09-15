@@ -12,7 +12,7 @@ HunyuanVideo15SuperResolution düğümü, video süper çözünürlük süreci i
 | `başlangıç_görseli` | Süper çözünürlük sürecini yönlendirmek için isteğe bağlı bir başlangıç görüntüsü. Sağlanırsa, büyütülür ve koşullandırma latentine kodlanır. | IMAGE | Hayır | N/A |
 | `clip_vision_output` | Koşullandırmaya eklenecek isteğe bağlı CLIP görüş yerleştirmeleri. | CLIP_VISION_OUTPUT | Hayır | N/A |
 | `latent` | Koşullandırmaya dahil edilen girdi latent video temsili. | LATENT | Evet | N/A |
-| `gürültü_artırımı` | Koşullandırmaya uygulanacak gürültü artırımının gücü (varsayılan: 0.70). Bu, gelişmiş bir parametredir. | FLOAT | Hayır | 0.0 - 1.0 (step 0.01) |
+| `gürültü_artırımı` | Koşullandırmaya uygulanacak gürültü artırımının gücü (varsayılan: 0.70). Bu, gelişmiş bir parametredir. | FLOAT | Evet | 0.0 - 1.0 (step 0.01) |
 
 **Not:** Bir `start_image` sağlarsanız, kodlanabilmesi için bir `vae` de bağlamanız gerekir. `start_image`, girdi `latent`inin uzamsal boyutlarının (genişlik ve yükseklik) 16 katına otomatik olarak büyütülür, ardından kodlanır ve koşullandırma latentine yerleştirilir. Kodlama için `start_image`in yalnızca RGB kanalları kullanılır.
 

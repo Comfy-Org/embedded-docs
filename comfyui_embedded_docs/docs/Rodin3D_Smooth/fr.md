@@ -11,9 +11,9 @@ Le nœud Rodin 3D Smooth génère des actifs 3D en utilisant l'API Rodin, en tra
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `Images` | Images d'entrée à utiliser pour la génération du modèle 3D. Plusieurs images peuvent être fournies. | IMAGE | Oui | - |
-| `Graine` | Valeur de graine aléatoire pour la cohérence de la génération. | INT | Oui | - |
-| `Type de matériau` | Type de matériau à appliquer au modèle 3D. | STRING | Oui | - |
-| `Nombre de polygones` | Nombre de polygones cible pour le modèle 3D généré. Détermine la qualité du maillage et le niveau de détail. | STRING | Oui | - |
+| `Graine` | Valeur de graine aléatoire pour la cohérence de la génération. | INT | Non | - |
+| `Type de matériau` | Type de matériau à appliquer au modèle 3D. | STRING | Non | - |
+| `Nombre de polygones` | Nombre de polygones cible pour le modèle 3D généré. Détermine la qualité du maillage et le niveau de détail. | STRING | Non | - |
 
 ## Sorties
 

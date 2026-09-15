@@ -1,26 +1,26 @@
 # Kling Metinden Videoya
 
-Kling Metinden Video düğümü, Kling video üretim API'sini kullanarak metin açıklamalarından videolar üretir. İstemi (prompt) ve ayarları (en-boy oranı, üretim modu ve CFG ölçeği) API'ye gönderir, üretim görevinin tamamlanmasını bekler ve ardından oluşan videoyu kimliği ve süresiyle birlikte döndürür.
+Kling Text to Video düğümü, Kling video oluşturma API'sini kullanarak metin açıklamalarından videolar oluşturur. İstemi ve ayarları (en-boy oranı, oluşturma modu ve CFG ölçeği) API'ye gönderir, oluşturma görevinin tamamlanmasını bekler ve ardından elde edilen videoyu kimliği ve süresiyle birlikte döndürür.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Tipi | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `istem` | İstenen video içeriğini tanımlayan olumlu metin istemi | STRING | Evet | Maksimum 2500 karakter |
-| `negatif_istem` | Videoda kaçınılması gerekenleri tanımlayan olumsuz metin istemi | STRING | Hayır | Maksimum 2500 karakter |
-| `cfg_ölçeği` | Videonun istemi ne kadar yakından takip ettiğini kontrol eden yapılandırma ölçeği değeri (varsayılan: 1.0) | FLOAT | Hayır | 0.0 ile 1.0 arası |
+| `istem` | Pozitif metin istemi | STRING | Evet | Maksimum 2500 karakter |
+| `negatif_istem` | Negatif metin istemi | STRING | Hayır | Maksimum 2500 karakter |
+| `cfg_ölçeği` | Videonun istemi ne kadar yakından takip edeceğini kontrol eden yapılandırma ölçeği değeri (varsayılan: 1.0) | FLOAT | Hayır | 0.0 ile 1.0 |
 | `en_boy_oranı` | Video en-boy oranı ayarı (varsayılan: "16:9") | COMBO | Hayır | "16:9"<br>"9:16"<br>"1:1" |
-| `mod` | Şu biçimi izleyen video üretimi için kullanılacak yapılandırma: mode / duration / model_name (varsayılan: "pro mode / 5s duration / kling-v2-5-turbo") | COMBO | Hayır | "pro mode / 5s duration / kling-v2-5-turbo"<br>"pro mode / 10s duration / kling-v2-5-turbo" |
+| `mod` | Video oluşturma için kullanılacak yapılandırma, şu biçime göre: mode / duration / model_name (varsayılan: "pro mode / 5s duration / kling-v2-5-turbo") | COMBO | Hayır | "pro mode / 5s duration / kling-v2-5-turbo"<br>"pro mode / 10s duration / kling-v2-5-turbo" |
 
-Not: `prompt` parametresi gereklidir ve boş bırakılmamalıdır. Hem `prompt` hem de `negative_prompt` en fazla 2500 karakterle sınırlıdır.
+Not: `prompt` parametresi gereklidir ve boş olmamalıdır. Hem `prompt` hem de `negative_prompt` en fazla 2500 karakterle sınırlıdır. 10 saniyelik `mode` seçeneği, 5 saniyelik seçenekten daha pahalıdır.
 
 ## Çıktılar
 
-| Çıktı Adı | Açıklama | Veri Tipi |
+| Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `output` | Üretilen video çıktısı | VIDEO |
-| `video_kimliği` | Üretilen video için benzersiz tanımlayıcı | STRING |
-| `süre` | Üretilen videonun süre bilgisi | STRING |
+| `output` | Oluşturulan video çıktısı | VIDEO |
+| `video_id` | Oluşturulan videonun benzersiz tanımlayıcısı | STRING |
+| `duration` | Oluşturulan videonun süre bilgisi | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingTextToVideoNode/tr.md)
 

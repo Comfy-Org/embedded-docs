@@ -1,14 +1,14 @@
 # Sigmas manuels
 
-Le nœud ManualSigmas vous permet de définir manuellement une séquence personnalisée de niveaux de bruit (sigmas) pour le processus d'échantillonnage. Vous saisissez une liste de nombres sous forme de chaîne, et le nœud les convertit en un tenseur pouvant être utilisé par d'autres nœuds d'échantillonnage. Cela est utile pour tester ou créer des programmes de bruit spécifiques.
+Le nœud ManualSigmas vous permet de définir manuellement une séquence personnalisée de niveaux de bruit (sigmas) pour le processus d'échantillonnage. Vous saisissez une liste de nombres sous forme de chaîne, et le nœud les convertit en un tenseur SIGMAS utilisable par d'autres nœuds d'échantillonnage. Cela est utile pour tester ou créer des programmes de bruit spécifiques.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `sigmas` | Une chaîne contenant les valeurs sigma. Le nœud extrait tous les nombres de cette chaîne, y compris les décimales et les valeurs négatives. Par exemple, « 1, 0.5, 0.1 » ou « 1 0.5 0.1 ». Par défaut : « 1, 0.5 ». | STRING | Oui | Toute valeur numérique séparée par des virgules ou des espaces |
+| `sigmas` | Une chaîne contenant les valeurs sigma. Le nœud extrait tous les nombres de cette chaîne, y compris les décimales et les valeurs négatives. Par exemple, « 1, 0.5, 0.1 » ou « 1 0.5 0.1 ». Par défaut : « 1, 0.5 ». | STRING | Oui | Toutes valeurs numériques séparées par des virgules ou des espaces |
 
-Remarque : Ce nœud est marqué comme expérimental.
+Remarque : ce nœud est marqué comme expérimental.
 
 ## Sorties
 

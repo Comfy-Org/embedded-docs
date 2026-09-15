@@ -1,20 +1,20 @@
 # 모델 패치 로더
 
-ModelPatchLoader 노드는 `model_patches` 폴더에서 모델 패치 파일을 불러와 워크플로우에서 사용할 수 있도록 준비합니다. 파일에 포함된 패치 유형을 자동으로 감지하고, 해당하는 아키텍처를 구축한 다음 저장된 가중치를 불러와 모든 것을 모델 패처에 감싸서 다른 모델에 적용할 수 있게 합니다. 추가 ControlNet 브랜치, 특징 임베더 모델, 어댑터 및 유사한 모듈을 포함한 다양한 특수 패치 형식을 지원합니다.
+ModelPatchLoader 노드는 `model_patches` 폴더에서 모델 패치 파일을 불러와 워크플로에서 사용할 수 있도록 준비합니다. 파일에 포함된 패치 유형을 자동으로 감지하고, 일치하는 아키텍처를 구축한 뒤, 저장된 가중치를 로드하고, 모든 것을 모델 패처로 감싸 다른 모델에 적용할 수 있게 합니다. 추가 ControlNet 분기, feature embedder 모델, 어댑터, 애니메이션/LLLite 가이던스 모듈 및 유사한 모듈을 포함한 다양한 특수 패치 형식을 지원합니다.
 
 ## 입력
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `이름` | model_patches 디렉터리에서 불러올 모델 패치의 파일 이름입니다. 목록에서 사용 가능한 패치 파일 중 하나를 선택하십시오. | COMBO | 예 | `model_patches` 폴더에서 발견된 모든 모델 패치 파일의 동적 생성 목록 |
+| `이름` | `model_patches` 폴더에서 불러올 모델 패치의 파일 이름입니다. 목록에서 사용 가능한 패치 파일 중 하나를 선택합니다. | COMBO | 예 | `model_patches` 폴더에서 발견된 모든 모델 패치 파일의 동적 생성 목록 |
 
-참고: 이 노드는 실험적 기능으로 표시되어 있습니다. 패치 유형은 파일 내용에서 자동으로 감지되므로 수동으로 유형을 선택할 필요가 없습니다.
+참고: 이 노드는 실험 단계로 표시되어 있습니다. 패치 유형은 파일 내용에서 자동으로 감지되므로 수동으로 유형을 선택할 필요가 없습니다. 이 노드는 체크포인트 메타데이터를 읽고 가중치 키를 검사하여 어떤 아키텍처를 구축할지 결정합니다(예: Qwen Image block-wise ControlNet, Z-Image ControlNet, Wan Uni3C ControlNet, MiniMax H3 Fun ControlNet, SigLIP feature projection, Lightricks duration head, Anima LLLite, MultiTalk 또는 SUPIR). 가중치는 안전 로딩이 활성화된 상태로 로드되며, 모델은 나중에 다른 모델에 적용할 수 있도록 `CoreModelPatcher` 내부의 오프로드 장치에 배치됩니다.
 
 ## 출력
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `MODEL_PATCH` | 로드된 모델 패치를 ModelPatcher로 감싼 것으로, 워크플로우의 모델에 적용할 준비가 된 상태입니다. | MODEL_PATCH |
+| `MODEL_PATCH` | 모델 패처로 감싼 로드된 모델 패치로, 워크플로의 모델에 적용할 준비가 되어 있습니다 | MODEL_PATCH |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelPatchLoader/ko.md)
 

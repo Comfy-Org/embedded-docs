@@ -1,6 +1,6 @@
 # Vidu Video Uzatma
 
-ViduExtendVideoNode, mevcut bir videonun uzunluğunu uzatmak için ek kareler oluşturur. Kaynak videoya ve isteğe bağlı bir metin istemine dayalı olarak kesintisiz bir devam oluşturmak için belirtilen bir yapay zeka modeli kullanır.
+Vidu Video Extension düğümü, mevcut bir videonun uzunluğunu uzatmak için ek kareler üretir. Kaynak videoya ve isteğe bağlı bir metin istemine dayalı bir devam oluşturmak için belirtilen bir yapay zekâ modelini kullanır.
 
 ## Girdiler
 
@@ -8,28 +8,28 @@ ViduExtendVideoNode, mevcut bir videonun uzunluğunu uzatmak için ek kareler ol
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Video uzatma için kullanılacak model. Bir model seçmek, modele özgü süre ve çözünürlük ayarlarını ortaya çıkarır. | DYNAMIC_COMBO | Evet | `"viduq2-pro"`<br>`"viduq2-turbo"` |
+| `model` | Video uzatma için kullanılacak model. Bir model seçildiğinde, o modele özgü süre ve çözünürlük ayarları gösterilir. | DYNAMIC_COMBO | Evet | `"viduq2-pro"`<br>`"viduq2-turbo"` |
 | `video` | Uzatılacak kaynak video. | VIDEO | Evet | - |
-| `prompt` | Uzatılmış video için isteğe bağlı metin istemi (en fazla 2000 karakter, varsayılan: boş). | STRING | Hayır | - |
-| `seed` | Üretimin rastgeleliğini kontrol etmek için kullanılan tohum değeri (varsayılan: 1). | INT | Hayır | 0 ile 2147483647 arası |
-| `bitiş karesi` | Uzatma için hedef bitiş karesi olarak kullanılacak isteğe bağlı bir görsel. | IMAGE | Hayır | - |
+| `prompt` | Uzatılmış video için isteğe bağlı metin istemi (en fazla 2000 karakter; varsayılan: boş). | STRING | Evet | - |
+| `seed` | Üretimin rastgeleliğini kontrol etmek için bir tohum değeri (varsayılan: 1). | INT | Evet | 0 - 2147483647 |
+| `bitiş karesi` | Uzatma için hedef bitiş karesi olarak kullanılacak isteğe bağlı görüntü. | IMAGE | Hayır | - |
 
 ### viduq2-pro ve viduq2-turbo Girdileri
 
-Bu ayarlar her iki model tarafından da paylaşılır.
+Bu ayarlar her iki modelde de ortaktır.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `süre` | Uzatılmış videonun süresi (saniye cinsinden, varsayılan: 4). Bu ayar, bir model seçtikten sonra görünür. | INT | Evet | 1 ile 7 arası |
-| `çözünürlük` | Çıktı videosunun çözünürlüğü. Bu ayar, bir model seçtikten sonra görünür. | COMBO | Evet | `"720p"`<br>`"1080p"` |
+| `duration` | Uzatılan videonun saniye cinsinden süresi (varsayılan: 4). Bu ayar, bir model seçildikten sonra görünür. | INT | Evet | 1 - 7 |
+| `resolution` | Çıktı videosunun çözünürlüğü. Bu ayar, bir model seçildikten sonra görünür. | COMBO | Evet | `"720p"`<br>`"1080p"` |
 
-**Not:** Kaynak `video` 4 ila 55 saniye arasında bir süreye sahip olmalıdır. `end_frame` sağlanmışsa, en-boy oranı 1:4 ile 4:1 arasında olmalı ve genişliği ile yüksekliği en az 128 piksel olmalıdır.
+**Not:** Kaynak `video`, 4 ile 55 saniye arasında bir süreye sahip olmalıdır. `end_frame` sağlanırsa, en-boy oranı 1:4 ile 4:1 arasında olmalı ve genişliğinin ve yüksekliğinin her biri en az 128 piksel olmalıdır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `output` | Uzatılmış görüntüyü içeren yeni oluşturulan video dosyası. | VIDEO |
+| `output` | Uzatılmış görüntüleri içeren yeni üretilmiş video dosyası. | VIDEO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduExtendVideoNode/tr.md)
 

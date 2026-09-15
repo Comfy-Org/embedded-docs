@@ -1,19 +1,21 @@
 # VOIDWarpedNoise
 
-Genera ruido temporalmente correlacionado para la segunda pasada del proceso de refinamiento de video VOID. Toma el video de salida de la Pasada 1 y deforma el ruido gaussiano a lo largo de los vectores de flujo óptico, creando ruido que se mueve de manera coherente con el contenido del video. Este ruido deformado se utiliza como latente inicial para la Pasada 2, lo que mejora la consistencia temporal en el resultado final.
+Genera ruido correlacionado temporalmente para la segunda pasada del proceso de refinamiento de video VOID. Toma el video de salida de la Pasada 1 y deforma ruido gaussiano a lo largo de vectores de flujo óptico, de modo que el ruido se mueve de forma consistente con el contenido del video. El ruido deformado resultante se utiliza como latente inicial para la Pasada 2, lo que mejora la consistencia temporal en la salida final.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `optical_flow` | Modelo de flujo óptico de OpticalFlowLoader (RAFT-large). | OPTICAL_FLOW | Sí | - |
 | `video` | Fotogramas de video de salida de la Pasada 1 [T, H, W, 3]. | IMAGE | Sí | - |
-| `width` | Ancho del latente de salida (por defecto: 672). | INT | Sí | 16 a MAX_RESOLUTION (paso 8) |
-| `height` | Alto del latente de salida (por defecto: 384). | INT | Sí | 16 a MAX_RESOLUTION (paso 8) |
-| `length` | Número de fotogramas de píxeles. Se redondea hacia abajo para que `latent_t` sea par (requisito de `patch_size_t=2`), p. ej. 49 → 45 (por defecto: 45). | INT | Sí | 1 a MAX_RESOLUTION (paso 1) |
-| `batch_size` | Número de secuencias de ruido idénticas a generar (por defecto: 1). | INT | Sí | 1 a 64 |
+| `width` | Ancho objetivo en píxeles (predeterminado: 672). El video de entrada se escala a este ancho antes de generar el ruido, y el ancho latente se deriva como width ÷ 8. | INT | Sí | 16 a MAX_RESOLUTION (paso 8) |
+| `height` | Alto objetivo en píxeles (predeterminado: 384). El video de entrada se escala a esta altura antes de generar el ruido, y la altura latente se deriva como height ÷ 8. | INT | Sí | 16 a MAX_RESOLUTION (paso 8) |
+| `length` | Número de fotogramas de píxeles. Se redondea hacia abajo para que latent_t sea par (requisito de patch_size_t=2), p. ej., 49 pasa a 45 (predeterminado: 45). | INT | Sí | 1 a MAX_RESOLUTION (paso 1) |
+| `batch_size` | Número de secuencias idénticas de ruido deformado a producir (predeterminado: 1). El ruido generado se repite esta cantidad de veces a lo largo de la dimensión de lote. | INT | Sí | 1 a 64 |
 
-**Nota sobre el parámetro `length`:** El valor de `length` se redondea automáticamente hacia abajo al valor válido más cercano que produzca una dimensión `latent_t` par. Esto es requerido por la restricción `patch_size_t=2` del modelo CogVideoX-Fun-V1.5. Se registra una advertencia cuando se produce el redondeo.
+**Nota sobre el parámetro `length`:** El valor de `length` se redondea automáticamente hacia abajo al valor más cercano que produce una dimensión `latent_t` par, tal como lo requiere la restricción `patch_size_t=2` del modelo CogVideoX-Fun-V1.5 (por ejemplo, 49 se convierte en 45). El nodo registra una advertencia cuando ocurre este redondeo. Los fotogramas más allá del `length` ajustado se ignoran, y el ruido se remuestrea al número de fotogramas latentes resultante.
+
+**Nota sobre `width` y `height`:** Estos valores se usan tanto para redimensionar los fotogramas de video entrantes (bilineal, recorte central) como para determinar la resolución latente final (dividida entre 8). Si el ruido generado no coincide con el tamaño latente solicitado, se redimensiona para ajustarlo.
 
 ## Salidas
 

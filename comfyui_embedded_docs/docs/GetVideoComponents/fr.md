@@ -1,20 +1,20 @@
 # Obtenir les composants vidéo
 
-Le nœud Get Video Components extrait tous les éléments principaux d'un fichier vidéo. Il sépare la vidéo en images individuelles, extrait la piste audio et fournit la fréquence d'images, la profondeur de bits et l'espace colorimétrique de la vidéo. Cela vous permet de travailler avec chaque composant indépendamment pour un traitement ou une analyse ultérieure.
+Le nœud Get Video Components extrait tous les éléments principaux d'un fichier vidéo. Il sépare la vidéo en trames individuelles, extrait la piste audio et fournit la fréquence d'images, la profondeur de bits et l'espace colorimétrique de la vidéo. Cela vous permet de travailler avec chaque composant indépendamment pour un traitement ou une analyse ultérieure.
 
 ## Entrées
 
-| Paramètre | Description | Type de données | Requis | Plage |
-|-----------|-------------|-----------------|--------|-------|
+| Paramètre | Description | Type de données | Obligatoire | Plage |
+|-----------|-------------|-----------------|-------------|-------|
 | `vidéo` | La vidéo à partir de laquelle extraire les composants. | VIDEO | Oui | - |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `images` | Les images individuelles extraites de la vidéo sous forme d'images séparées. | IMAGE |
+| `images` | Les trames individuelles extraites de la vidéo sous forme d'images distinctes. | IMAGE |
 | `audio` | La piste audio extraite de la vidéo. | AUDIO |
-| `ips` | La fréquence d'images de la vidéo en images par seconde. | FLOAT |
+| `fps` | La fréquence d'images de la vidéo en images par seconde. | FLOAT |
 | `bit_depth` | La profondeur de bits de la vidéo. | COMBO |
 | `color_space` | L'espace colorimétrique de la vidéo. | COMBO |
 

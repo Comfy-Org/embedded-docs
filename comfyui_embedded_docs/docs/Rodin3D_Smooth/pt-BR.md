@@ -7,9 +7,9 @@ O nó Rodin 3D Smooth gera ativos 3D usando a API Rodin, processando imagens de 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `Imagens` | Imagens de entrada para usar na geração do modelo 3D. Várias imagens podem ser fornecidas. | IMAGE | Sim | - |
-| `Semente` | Valor de semente aleatório para consistência na geração. | INT | Sim | - |
-| `Tipo de Material` | Tipo de material a ser aplicado ao modelo 3D. | STRING | Sim | - |
-| `Contagem de Polígonos` | Contagem de polígonos alvo para o modelo 3D gerado. Determina a qualidade da malha e o nível de detalhe. | STRING | Sim | - |
+| `Semente` | Valor de semente aleatório para consistência na geração. | INT | Não | - |
+| `Tipo de Material` | Tipo de material a ser aplicado ao modelo 3D. | STRING | Não | - |
+| `Contagem de Polígonos` | Contagem de polígonos alvo para o modelo 3D gerado. Determina a qualidade da malha e o nível de detalhe. | STRING | Não | - |
 
 ## Saídas
 

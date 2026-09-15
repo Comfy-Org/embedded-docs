@@ -1,20 +1,20 @@
 # Carregar Conjunto de Imagens da Pasta
 
-Este nó carrega várias imagens de uma subpasta selecionada no diretório de entrada principal do ComfyUI e as retorna como uma lista. Ele verifica a pasta escolhida em busca de arquivos de imagem nos formatos PNG, JPG, JPEG ou WEBP, o que o torna útil para processamento em lote ou preparação de conjuntos de dados de imagens.
+Este nó carrega várias imagens de uma subpasta selecionada dentro do diretório principal de entrada do ComfyUI e as retorna como uma lista. Ele verifica a pasta escolhida em busca de arquivos de imagem nos formatos PNG, JPG, JPEG ou WEBP, o que o torna útil para processamento em lote ou preparação de conjuntos de dados de imagens.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `pasta` | A pasta de onde carregar as imagens. As opções são as subpastas presentes no diretório de entrada principal do ComfyUI. | COMBO | Sim | Múltiplas opções disponíveis |
+| `pasta` | A pasta de onde carregar as imagens. As opções são as subpastas presentes no diretório principal de entrada do ComfyUI. | COMBO | Sim | Várias opções disponíveis |
 
-Observação: A pasta selecionada deve ser uma subpasta do diretório de entrada principal do ComfyUI; qualquer valor que resolva para fora dele é rejeitado. Somente arquivos com as extensões .png, .jpg, .jpeg ou .webp são carregados, e a verificação de extensão não diferencia maiúsculas de minúsculas. Se a pasta selecionada não contiver arquivos de imagem válidos, o nó gera um erro. Este nó é marcado como experimental.
+Observação: A pasta selecionada deve ser uma subpasta do diretório principal de entrada do ComfyUI; qualquer valor que resolva para fora dele (por exemplo, usando `..`, caminhos absolutos, letras de unidade ou links simbólicos) é rejeitado. Apenas arquivos com as extensões .png, .jpg, .jpeg ou .webp são carregados, e a verificação da extensão não diferencia maiúsculas de minúsculas. As imagens carregadas são convertidas para RGB e dimensionadas para o intervalo de 0 a 1. Se a pasta selecionada não contiver arquivos de imagem válidos, o nó gera um erro. Este nó está marcado como experimental.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `imagens` | Lista de imagens carregadas. O nó carrega todos os arquivos de imagem válidos (PNG, JPG, JPEG, WEBP) encontrados na pasta selecionada. | IMAGE |
+| `images` | Lista de imagens carregadas. O nó carrega todos os arquivos de imagem válidos (PNG, JPG, JPEG, WEBP) encontrados na pasta selecionada. | IMAGE |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageDataSetFromFolder/pt-BR.md)
 

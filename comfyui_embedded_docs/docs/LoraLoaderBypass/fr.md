@@ -1,6 +1,6 @@
 # Charger LoRA (Bypass) (Pour le débogage)
 
-Le nœud LoraLoaderBypass applique un LoRA (Adaptation de bas rang) à un modèle de diffusion et à un modèle CLIP dans un mode « bypass » spécial. Contrairement à un chargeur LoRA standard, cette méthode ne modifie pas de manière permanente les poids du modèle de base. Au lieu de cela, elle calcule la sortie en ajoutant l'effet du LoRA au passage normal du modèle, ce qui est utile pour l'entraînement ou pour travailler avec des modèles dont les poids sont déchargés.
+Le nœud LoraLoaderBypass applique un LoRA (Low-Rank Adaptation) à un modèle de diffusion et à un modèle CLIP dans un mode « bypass » spécial. Contrairement à un chargeur LoRA standard, cette méthode ne modifie pas de façon permanente les poids du modèle de base. Au lieu de cela, elle calcule le résultat en ajoutant la contribution du LoRA à la passe avant normale du modèle, ce qui est utile pour l'entraînement ou lorsque l'on travaille avec des modèles dont les poids sont déchargés.
 
 ## Entrées
 
@@ -9,10 +9,12 @@ Le nœud LoraLoaderBypass applique un LoRA (Adaptation de bas rang) à un modèl
 | `model` | Le modèle de diffusion auquel le LoRA sera appliqué. | MODEL | Oui | - |
 | `clip` | Le modèle CLIP auquel le LoRA sera appliqué. | CLIP | Oui | - |
 | `lora_name` | Le nom du LoRA. Les fichiers LoRA disponibles sont chargés depuis le dossier `loras`. | COMBO | Oui | Liste des fichiers LoRA disponibles |
-| `strength_model` | À quel point modifier le modèle de diffusion. Cette valeur peut être négative (par défaut : 1.0). | FLOAT | Oui | -100.0 à 100.0 (pas : 0.01) |
-| `strength_clip` | À quel point modifier le modèle CLIP. Cette valeur peut être négative (par défaut : 1.0). | FLOAT | Oui | -100.0 à 100.0 (pas : 0.01) |
+| `strength_model` | Dans quelle mesure modifier le modèle de diffusion. Cette valeur peut être négative (par défaut : 1.0). | FLOAT | Oui | -100.0 à 100.0 (pas : 0.01) |
+| `strength_clip` | Dans quelle mesure modifier le modèle CLIP. Cette valeur peut être négative (par défaut : 1.0). | FLOAT | Oui | -100.0 à 100.0 (pas : 0.01) |
 
-**Remarque :** Si `strength_model` et `strength_clip` sont tous deux définis à 0, le nœud renvoie les entrées `model` et `clip` d'origine, non modifiées, sans traitement.
+**Remarque :** Si `strength_model` et `strength_clip` sont tous deux définis sur 0, le nœud renvoie les entrées `model` et `clip` d'origine, non modifiées, sans traitement.
+
+**Remarque :** Le fichier LoRA sélectionné est mis en cache après son premier chargement. Il n'est relu depuis le disque que lorsqu'un `lora_name` différent est choisi.
 
 ## Sorties
 

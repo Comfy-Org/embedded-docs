@@ -1,20 +1,20 @@
 # EmptySD3LatentImage
 
-EmptySD3LatentImage crée un tenseur d'image latente vide, spécifiquement formaté pour les modèles Stable Diffusion 3. Il génère un tenseur rempli de zéros ayant les dimensions et la structure correctes attendues par les pipelines SD3. Il est couramment utilisé comme point de départ pour les flux de travail de génération d'images.
+EmptySD3LatentImage crée une image latente vide (entièrement nulle) dans la disposition attendue par les modèles Stable Diffusion 3. Comme le latent est vide, il est normalement utilisé comme point de départ qu’un workflow de génération remplit avec une image. Les valeurs de largeur et de hauteur que vous choisissez déterminent la taille de l’image finale.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `largeur` | La largeur de l'image latente de sortie en pixels (défaut : 1024) | INT | Oui | 16 à MAX_RESOLUTION (pas : 16) |
-| `hauteur` | La hauteur de l'image latente de sortie en pixels (défaut : 1024) | INT | Oui | 16 à MAX_RESOLUTION (pas : 16) |
-| `taille_du_lot` | Le nombre d'images latentes à générer dans un lot (défaut : 1) | INT | Oui | 1 à 4096 |
+| `largeur` | La largeur de l’image latente en pixels (par défaut : 1024). Les valeurs sont incrémentées par pas de 16. | INT | Oui | 16 à MAX_RESOLUTION (pas : 16) |
+| `hauteur` | La hauteur de l’image latente en pixels (par défaut : 1024). Les valeurs sont incrémentées par pas de 16. | INT | Oui | 16 à MAX_RESOLUTION (pas : 16) |
+| `taille_du_lot` | Le nombre d’images latentes à générer dans le lot (par défaut : 1). | INT | Oui | 1 à 4096 |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `LATENT` | Un tenseur latent contenant des échantillons vides avec des dimensions compatibles SD3. Le tenseur possède 16 canaux et est réduit spatialement par un facteur de 8 par rapport à la largeur et la hauteur d'entrée. | LATENT |
+| `LATENT` | Un tenseur latent contenant des échantillons vides (entièrement nuls) au format compatible avec SD3. Le tenseur possède 16 canaux, est réduit d’un facteur 8 par rapport à `width` et `height`, et possède un ratio de réduction spatiale de 8. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptySD3LatentImage/fr.md)
 

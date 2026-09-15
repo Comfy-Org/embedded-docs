@@ -1,22 +1,22 @@
 # LTX 2.5 Imagen a Video
 
-Este nodo genera un video de calidad profesional a partir de una imagen inicial utilizando un modelo LTX 2.5. Usted describe el contenido del video con un prompt de texto, selecciona una variante del modelo y ajusta la duración, la resolución, la frecuencia de fotogramas y la generación de audio. Opcionalmente, se puede proporcionar un fotograma final para definir el final del video.
+Este nodo genera un video con calidad profesional a partir de una imagen inicial usando un modelo LTX 2.5. Describes el contenido del video con un prompt de texto, seleccionas una variante del modelo y ajustas la duración, la resolución, la velocidad de fotogramas y la generación de audio. Se puede proporcionar un fotograma final opcional para definir el final del video.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `imagen` | Primer fotograma que se utilizará para el video. | IMAGE | Sí | Exactamente una imagen |
-| `modelo` | Grupo de ajustes del modelo. Selecciona la variante del modelo LTX 2.5 a utilizar. | COMBO | Sí | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `imagen` | Fotograma inicial que se usará para el video. | IMAGE | Sí | Exactamente una imagen |
+| `modelo` | Grupo de ajustes del modelo. Selecciona la variante del modelo LTX 2.5 que se usará. | COMBO | Sí | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
 | `duración` | Duración del video generado en segundos. | INT | Sí | Entero |
 | `resolución` | Resolución del video generado. Las opciones disponibles pueden depender del modelo seleccionado. | COMBO | Sí | "1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840" |
-| `fps` | Frecuencia de fotogramas del video generado. | INT | Sí | Entero (predeterminado: 25) |
+| `fps` | Velocidad de fotogramas del video generado. | INT | Sí | Entero (predeterminado: 25) |
 | `generar_audio` | Indica si se debe generar audio para el video. | BOOLEAN | Sí | True<br>False (predeterminado: True) |
-| `prompt` | Descripción de texto del contenido del video a generar. Debe tener entre 1 y 10000 caracteres. | STRING | Sí | De 1 a 10000 caracteres |
-| `semilla` | Valor de semilla para la generación reproducible. Usar la misma semilla con los mismos ajustes produce el mismo resultado. | INT | Sí | Entero (predeterminado: 42) |
-| `último_fotograma` | Último fotograma que se utilizará para el video. | IMAGE | No | Exactamente una imagen |
+| `prompt` | Descripción de texto del contenido del video que se va a generar. Debe tener entre 1 y 10000 caracteres. | STRING | Sí | 1 a 10000 caracteres |
+| `semilla` | Valor de semilla para una generación reproducible. Usar la misma semilla con los mismos ajustes produce el mismo resultado. | INT | Sí | Entero (predeterminado: 42) |
+| `último_fotograma` | Fotograma final que se usará para el video. | IMAGE | No | Exactamente una imagen |
 
-**Nota:** Solo se admite una imagen para `image`. Si se proporciona `last_frame`, también debe contener exactamente una imagen. Las opciones disponibles de `model.resolution` pueden variar según la variante de `model` seleccionada.
+**Nota:** Solo se admite una imagen para `image`. Si se proporciona `last_frame`, también debe contener exactamente una imagen. Las opciones disponibles de `model.resolution` pueden variar según la variante de `model` seleccionada. El precio de una ejecución depende del `model`, `model.duration` y `model.resolution` seleccionados.
 
 ## Salidas
 

@@ -1,22 +1,22 @@
 # Empty Flux 2 Latent
 
-O nó Empty Flux 2 Latent cria uma representação latente vazia e em branco. Ele gera um tensor preenchido com zeros, que serve como ponto de partida para o processo de remoção de ruído (denoising) do modelo Flux. As dimensões do latente são determinadas pela largura e altura de entrada, reduzidas por um fator de 16.
+O nó Empty Flux 2 Latent cria uma representação latente vazia preenchida com zeros. Ele é usado como ponto de partida para o processo de remoção de ruído do modelo Flux. As dimensões latentes são obtidas a partir dos valores de entrada `width` e `height`, cada um dividido por 16.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
+| Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `largura` | A largura da imagem final a ser gerada. A largura do latente será este valor dividido por 16. O valor padrão é 1024. | INT | Sim | 16 a 8192 |
-| `altura` | A altura da imagem final a ser gerada. A altura do latente será este valor dividido por 16. O valor padrão é 1024. | INT | Sim | 16 a 8192 |
+| `largura` | A largura da imagem final a ser gerada. A largura latente será este valor dividido por 16. O valor padrão é 1024. | INT | Sim | 16 a 16384 |
+| `altura` | A altura da imagem final a ser gerada. A altura latente será este valor dividido por 16. O valor padrão é 1024. | INT | Sim | 16 a 16384 |
 | `tamanho_do_lote` | O número de amostras latentes a serem geradas em um único lote. O valor padrão é 1. | INT | Não | 1 a 4096 |
 
-**Nota:** As entradas `width` e `height` devem ser divisíveis por 16, pois o nó as divide internamente por esse fator para criar as dimensões do latente.
+**Observação:** As entradas `width` e `height` usam um passo de 16, portanto devem ser divisíveis por 16. Isso ocorre porque o nó as divide por esse fator para criar as dimensões latentes.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
+| Nome da saída | Descrição | Tipo de dados |
 | --- | --- | --- |
-| `samples` | Um tensor latente preenchido com zeros. O formato é `[batch_size, 128, height // 16, width // 16]`. | LATENT |
+| `samples` | Um tensor latente preenchido com zeros. A forma é `[batch_size, 128, height // 16, width // 16]`. | LATENT |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyFlux2LatentImage/pt-BR.md)
 

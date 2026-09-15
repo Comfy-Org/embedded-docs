@@ -1,18 +1,18 @@
 # FreeU
 
-FreeU düğümü, görüntü üretim kalitesini artırmak için bir modelin çıktı bloklarına frekans alanı değişiklikleri uygular. Farklı kanal gruplarını ölçekleyerek ve belirli özellik haritalarına Fourier filtrelemesi uygulayarak çalışır; bu sayede üretim süreci sırasında modelin davranışı üzerinde ince ayarlı kontrol sağlar.
+FreeU düğümü, görüntü oluşturma kalitesini artırmak için bir modelin çıktı bloklarına frekans alanı değişiklikleri uygular. Farklı kanal gruplarını ölçeklendirerek ve belirli özellik haritalarına Fourier filtresi uygulayarak çalışır; bu, üretim süreci sırasında modelin davranışı üzerinde ince ayarlı kontrol sağlar.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | FreeU değişikliklerinin uygulanacağı model | MODEL | Evet | - |
-| `b1` | model_channels × 4 özellikleri için omurga ölçekleme faktörü (varsayılan: 1.1) | FLOAT | Evet | 0.0 - 10.0 |
-| `b2` | model_channels × 2 özellikleri için omurga ölçekleme faktörü (varsayılan: 1.2) | FLOAT | Evet | 0.0 - 10.0 |
-| `s1` | model_channels × 4 özellikleri için atlama bağlantısı ölçekleme faktörü (varsayılan: 0.9) | FLOAT | Evet | 0.0 - 10.0 |
-| `s2` | model_channels × 2 özellikleri için atlama bağlantısı ölçekleme faktörü (varsayılan: 0.2) | FLOAT | Evet | 0.0 - 10.0 |
+| `b1` | model_channels × 4 kanallı özellik haritalarına uygulanan backbone ölçekleme faktörü (varsayılan: 1,1). Gelişmiş ayar olarak işaretlenmiştir. | FLOAT | Evet | 0.0 - 10.0 |
+| `b2` | model_channels × 2 kanallı özellik haritalarına uygulanan backbone ölçekleme faktörü (varsayılan: 1,2). Gelişmiş ayar olarak işaretlenmiştir. | FLOAT | Evet | 0.0 - 10.0 |
+| `s1` | model_channels × 4 kanallı özellik haritalarına uygulanan atlamalı bağlantı ölçekleme faktörü (varsayılan: 0,9). Gelişmiş ayar olarak işaretlenmiştir. | FLOAT | Evet | 0.0 - 10.0 |
+| `s2` | model_channels × 2 kanallı özellik haritalarına uygulanan atlamalı bağlantı ölçekleme faktörü (varsayılan: 0,2). Gelişmiş ayar olarak işaretlenmiştir. | FLOAT | Evet | 0.0 - 10.0 |
 
-Not: FreeU ayarlamaları yalnızca kanal sayısı model_channels × 4 (`b1` ve `s1` kullanılarak) veya model_channels × 2 (`b2` ve `s2` kullanılarak) olan özellik haritalarına uygulanır. Fourier filtresi, atlama bağlantısı özellik haritalarının yalnızca merkezi düşük frekanslı bölgesini ölçekler; diğer tüm frekans bileşenleri değişmeden kalır.
+Not: FreeU ayarlamaları yalnızca kanal sayısı model_channels × 4 olan (`b1` ve `s1` kullanılarak) veya model_channels × 2 olan (`b2` ve `s2` kullanılarak) özellik haritalarına uygulanır. Fourier filtresi, atlamalı bağlantı özellik haritalarının yalnızca merkezi düşük frekanslı bölgesini (eşik değeri 1) ölçeklendirir; diğer tüm frekans bileşenleri değişmeden kalır. Dört ölçekleme parametresinin tümü 0,0 ile 10,0 arasında 0,01 adımlarla değer kabul eder.
 
 ## Çıktılar
 

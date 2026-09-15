@@ -7,9 +7,9 @@ Le nœud **Rodin 3D Regular** génère des actifs 3D en utilisant l'API Rodin. I
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `Images` | Images d'entrée utilisées pour la génération du modèle 3D. Plusieurs images peuvent être fournies. | IMAGE | Oui | - |
-| `Graine` | Valeur de graine aléatoire pour des résultats reproductibles. | INT | Oui | - |
-| `Type_Matériau` | Type de matériau à appliquer au modèle 3D. | STRING | Oui | - |
-| `Nombre_Polygones` | Nombre de polygones cible pour le modèle 3D généré. Ce paramètre détermine le mode de qualité et la complexité du maillage. | STRING | Oui | - |
+| `Graine` | Valeur de graine aléatoire pour des résultats reproductibles. | INT | Non | - |
+| `Type_Matériau` | Type de matériau à appliquer au modèle 3D. | STRING | Non | - |
+| `Nombre_Polygones` | Nombre de polygones cible pour le modèle 3D généré. Ce paramètre détermine le mode de qualité et la complexité du maillage. | STRING | Non | - |
 
 ## Sorties
 

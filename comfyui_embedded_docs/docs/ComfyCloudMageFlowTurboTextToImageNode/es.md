@@ -1,16 +1,16 @@
-# ComfyCloudMageFlowTurboTextToImageNode
+# Comfy Cloud Mage Flow Turbo Texto a imagen [BETA]
 
-Este nodo de Comfy Cloud genera una imagen a partir de un prompt de texto utilizando el flujo de trabajo Mage-Flow Turbo (`mage-flow-turbo/text-to-image`). Ejecuta una versión destilada del modelo Mage-Flow que genera la imagen en 4 pasos con un valor de cfg de 1, lo que requiere aproximadamente una séptima parte del tiempo de GPU de una pasada completa de Mage-Flow, lo que lo convierte en la variante pensada para la iteración rápida.
+Este nodo de Comfy Cloud genera una imagen a partir de un prompt de texto usando el flujo de trabajo Mage-Flow Turbo (`mage-flow-turbo/text-to-image`). Ejecuta una versión destilada del modelo Mage-Flow que produce la imagen en 4 pasos con un valor cfg de 1, tomando aproximadamente una séptima parte del tiempo de GPU de una pasada completa de Mage-Flow, lo que lo convierte en la variante pensada para iteración rápida.
 
 ## Entradas
 
-La clase del nodo en sí no declara widgets de entrada en el código fuente disponible; su esquema de entrada se hereda de la clase base compartida `_ComfyCloudMageFlowNode`, cuya definición no está incluida en el snapshot del código fuente. Según el resumen del nodo y el nombre del flujo de trabajo de texto a imagen, el nodo recibe un prompt de texto que describe la imagen a generar.
+La clase del nodo en sí no declara widgets de entrada en la fuente disponible; su esquema de entrada se hereda de la clase base compartida `_ComfyCloudMageFlowNode`, cuya definición no está incluida en la instantánea de la fuente. Según el resumen del nodo y el nombre del flujo de trabajo de texto a imagen, el nodo recibe un prompt de texto que describe la imagen a generar.
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | El prompt de texto que describe la imagen a generar. El nombre exacto del parámetro lo establece el esquema base heredado `_ComfyCloudMageFlowNode` y puede diferir de esta etiqueta. | STRING | Sí | Texto libre |
 
-Nota: Pueden existir parámetros de entrada adicionales en la definición del nodo base heredado, que no está disponible en el código fuente proporcionado.
+Nota: pueden existir parámetros de entrada adicionales en la definición heredada del nodo base, que no está disponible en la fuente proporcionada.
 
 ## Salidas
 

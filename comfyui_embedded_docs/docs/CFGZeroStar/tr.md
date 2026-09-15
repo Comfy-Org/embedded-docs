@@ -6,7 +6,7 @@ CFGZeroStar düğümü, difüzyon modellerine özel bir yönlendirme ölçekleme
 
 | Parametre | Açıklama | Veri Türü | Giriş Türü | Varsayılan | Aralık |
 | --- | --- | --- | --- | --- | --- |
-| `model` | CFGZeroStar yönlendirme ölçekleme tekniği ile değiştirilecek difüzyon modeli | MODEL | zorunlu | - | - |
+| `model` | CFGZeroStar yönlendirme ölçekleme tekniği ile değiştirilecek difüzyon modeli | MODEL | Evet | - | - |
 
 ## Çıktılar
 

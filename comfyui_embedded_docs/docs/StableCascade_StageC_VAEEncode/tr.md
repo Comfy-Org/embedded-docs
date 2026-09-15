@@ -8,7 +8,7 @@ The StableCascade_StageC_VAEEncode düğümü, Stable Cascade modeli için gizli
 | --- | --- | --- | --- | --- |
 | `görüntü` | Gizli uzaya kodlanacak girdi görüntüsü | IMAGE | Evet | - |
 | `vae` | Görüntüyü kodlamak için kullanılan VAE modeli | VAE | Evet | - |
-| `sıkıştırma` | Kodlamadan önce görüntüye uygulanan sıkıştırma faktörü. Görüntü boyutları bu değere bölünür ve ardından VAE'nin alt örnekleme oranıyla çarpılır. Bu gelişmiş bir parametredir. (varsayılan: 42) | INT | Hayır | 4-128 |
+| `sıkıştırma` | Kodlamadan önce görüntüye uygulanan sıkıştırma faktörü. Görüntü boyutları bu değere bölünür ve ardından VAE'nin alt örnekleme oranıyla çarpılır. Bu gelişmiş bir parametredir. (varsayılan: 42) | INT | Evet | 4-128 |
 
 ## Çıktılar
 

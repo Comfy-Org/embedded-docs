@@ -1,17 +1,17 @@
 # StableCascade_EmptyLatentImage
 
-Le nœud StableCascade_EmptyLatentImage crée des tenseurs latents vides pour les modèles Stable Cascade. Il génère deux représentations latentes distinctes — une pour l'étape C et une pour l'étape B — avec des dimensions appropriées basées sur la résolution d'entrée et les paramètres de compression. Ce nœud fournit le point de départ du pipeline de génération Stable Cascade.
+Le nœud StableCascade_EmptyLatentImage crée des tenseurs latents vides pour les modèles Stable Cascade. Il génère deux représentations latentes distinctes — une pour l'étape C et une autre pour l'étape B — avec des dimensions calculées à partir de la résolution d'entrée et des paramètres de compression. Ce nœud fournit un point de départ pour le pipeline de génération Stable Cascade.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `largeur` | La largeur de l'image de sortie en pixels (défaut : 1024, pas : 8) | INT | Oui | 256 à MAX_RESOLUTION |
-| `hauteur` | La hauteur de l'image de sortie en pixels (défaut : 1024, pas : 8) | INT | Oui | 256 à MAX_RESOLUTION |
-| `compression` | Le facteur de compression qui détermine les dimensions latentes de l'étape C (défaut : 42, pas : 1). Il s'agit d'un paramètre avancé. | INT | Oui | 4 à 128 |
-| `taille_du_lot` | Le nombre d'échantillons latents à générer dans un lot (défaut : 1) | INT | Non | 1 à 4096 |
+| `largeur` | La largeur de l'image de sortie en pixels (par défaut : 1024, pas : 8) | INT | Oui | 256 à MAX_RESOLUTION |
+| `hauteur` | La hauteur de l'image de sortie en pixels (par défaut : 1024, pas : 8) | INT | Oui | 256 à MAX_RESOLUTION |
+| `compression` | Le facteur de compression qui détermine les dimensions latentes pour l'étape C (par défaut : 42, pas : 1). Il s'agit d'un paramètre avancé. | INT | Oui | 4 à 128 |
+| `taille_du_lot` | Le nombre d'échantillons latents à générer dans un lot (par défaut : 1) | INT | Oui | 1 à 4096 |
 
-Remarque : La valeur de `compression` contrôle la taille du latent de l'étape C : sa hauteur et sa largeur correspondent à la `height` et à la `width` d'entrée divisées par `compression`. Le latent de l'étape B utilise toujours une compression fixe de 4.
+Remarque : la valeur de `compression` contrôle la taille latente de l'étape C : sa hauteur et sa largeur correspondent aux valeurs d'entrée `height` et `width` divisées par `compression`. Le latent de l'étape B utilise toujours une compression fixe de 4.
 
 ## Sorties
 

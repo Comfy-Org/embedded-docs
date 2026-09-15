@@ -1,28 +1,28 @@
 # ZImageFunControlnet
 
-ZImageFunControlnet, görüntü oluşturma veya düzenleme sürecini etkilemek için özel bir kontrol ağı uygular. Kontrol etkisinin gücünü ayarlamanıza olanak tanıyan bir taban model, bir yama modeli ve bir VAE kullanır. Bu düğüm, daha hedefli düzenlemeler için bir taban görüntü, bir inpainting görüntüsü ve bir maske ile çalışabilir.
+ZImageFunControlnet, görüntü oluşturma veya düzenleme sürecine rehberlik edebilmesi için temel modele bir kontrol ağı yaması uygular. Bir modeli, bir model yamasını ve bir VAE'yi birleştirir ve kontrol etkisinin sonucu ne kadar güçlü etkileyeceğini denetlemenizi sağlar. İsteğe bağlı görüntü, iç boyama görüntüsü ve maske girdileri daha hedefli düzenlemelere olanak tanır.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Oluşturma sürecinde kullanılan taban model. | MODEL | Evet | - |
-| `model_patch` | Kontrol ağının yönlendirmesini uygulayan özel bir yama modeli. | MODEL_PATCH | Evet | - |
-| `vae` | Görüntüleri kodlamak ve kodunu çözmek için kullanılan Varyasyonel Otomatik Kodlayıcı (VAE). | VAE | Evet | - |
-| `güç` | Kontrol ağının etkisinin gücü. Pozitif değerler etkiyi uygular, negatif değerler ise etkiyi tersine çevirebilir (varsayılan: 1.0). | FLOAT | Evet | -10.0 ile 10.0 |
-| `görsel` | Oluşturma sürecine yön vermek için kullanılan isteğe bağlı taban görüntü. | IMAGE | Hayır | - |
-| `boyanacak_görsel` | Bir maske ile tanımlanan alanlara inpainting uygulamak için özel olarak kullanılan isteğe bağlı görüntü. | IMAGE | Hayır | - |
-| `mask` | Bir görüntünün hangi alanlarının düzenleneceğini veya inpainting uygulanacağını tanımlayan isteğe bağlı maske. | MASK | Hayır | - |
+| `model` | Üretim süreci için kullanılan temel model. | MODEL | Evet | - |
+| `model_patch` | Kontrol ağının rehberliğini uygulayan özelleşmiş yama modeli. | MODEL_PATCH | Evet | - |
+| `vae` | Görüntüleri kodlamak ve kodunu çözmek için kullanılan Varyasyonel Otokodlayıcı (VAE). | VAE | Evet | - |
+| `güç` | Kontrol ağının etkisinin gücü. Pozitif değerler etkiyi uygular, negatif değerler ise onu tersine çevirebilir (varsayılan: 1.0). | FLOAT | Evet | -10.0 ile 10.0 arası (adım 0.01) |
+| `görsel` | Üretim sürecine rehberlik etmek için isteğe bağlı temel görüntü. | IMAGE | Hayır | - |
+| `boyanacak_görsel` | Bir maske tarafından tanımlanan alanların iç boyaması için özel olarak kullanılan isteğe bağlı görüntü. | IMAGE | Hayır | - |
+| `mask` | Bir görüntünün hangi alanlarının düzenleneceğini veya iç boyanacağını tanımlayan isteğe bağlı maske. | MASK | Hayır | - |
 
-**Not:** `inpaint_image` parametresi, inpainting için içeriği belirtmek amacıyla tipik olarak bir `mask` ile birlikte kullanılır. Düğümün davranışı, hangi isteğe bağlı girdilerin sağlandığına bağlı olarak değişebilir (örn. yönlendirme için `image` kullanımı veya inpainting için `image`, `mask` ve `inpaint_image` kullanımı).
+**Not:** `inpaint_image` parametresi tipik olarak iç boyama için içeriği belirtmek üzere bir `mask` ile birlikte kullanılır. Düğümün davranışı, hangi isteğe bağlı girdilerin sağlandığına bağlı olarak değişebilir (örn. rehberlik için `image` kullanılması veya iç boyama için `image`, `mask` ve `inpaint_image` kullanılması).
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model` | Kontrol ağı yaması uygulanmış, örnekleme hattında kullanıma hazır model. | MODEL |
-| `positive` | Kontrol ağı girdileri tarafından değiştirilmiş olabilen pozitif koşullandırma. | CONDITIONING |
-| `negative` | Kontrol ağı girdileri tarafından değiştirilmiş olabilen negatif koşullandırma. | CONDITIONING |
+| `model` | Kontrol ağı yaması uygulanmış model; örnekleme hattında kullanıma hazır. | MODEL |
+| `positive` | Kontrol ağı girdileri tarafından potansiyel olarak değiştirilmiş pozitif koşullandırma. | CONDITIONING |
+| `negative` | Kontrol ağı girdileri tarafından potansiyel olarak değiştirilmiş negatif koşullandırma. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ZImageFunControlnet/tr.md)
 

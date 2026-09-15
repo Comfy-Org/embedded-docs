@@ -1,12 +1,12 @@
 # Değil
 
-Not düğümü, herhangi bir girdi değeri üzerinde mantıksal DEĞİL (NOT) işlemi gerçekleştirir. Girdi değeri falsy kabul ediliyorsa (0, boş dize, None, False gibi) True; truthy kabul ediliyorsa False döndürür. Python'ın standart doğruluk kurallarını kullanır.
+Not düğümü, herhangi bir girdi değeri üzerinde mantıksal NOT işlemi gerçekleştirir. Python'un standart doğruluk kurallarını izleyerek, girdi değeri falsy (0, boş dize, None veya False gibi) kabul edildiğinde True, truthy olduğunda ise False döndürür.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `değer` | Tersine çevrilecek girdi değeri. Her tür veri kabul edilir ve Python'ın doğruluk kurallarına göre değerlendirilir. | ANY | Evet | Herhangi bir değer |
+| `değer` | Ters çevrilecek girdi değeri. Herhangi bir veri türü kabul edilir ve Python'un doğruluk kuralları kullanılarak değerlendirilir. | ANY | Evet | Herhangi bir değer |
 
 ## Çıktılar
 

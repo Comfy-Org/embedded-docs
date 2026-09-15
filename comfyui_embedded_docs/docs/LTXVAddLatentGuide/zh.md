@@ -1,8 +1,6 @@
-# LTXVAddLatentGuide
+# LTXV 添加潜空间引导
 
-## 概述
-
-LTXV 添加潜在引导节点将已编码的潜在变量作为引导，允许使用来自早期阶段的引导而不是图像。此节点避免了 VAE 解码/编码往返，并且可以将空间上较小的引导扩展到稀疏网格上，以覆盖目标画布。
+LTXV Add Latent Guide 节点将已编码的 latent 固定为引导，适用于引导来自较早阶段而非图像的情况。它的效果与 LTXV Add Guide 相同，但无需 VAE 解码/编码往返。空间上小于目标（IC-LoRA 或细节参考）的引导会被扩张到稀疏网格上，其 RoPE 结束位置按相同比例扩展，从而覆盖目标画布，而不是仅处理其左上角。
 
 ## 输入
 
@@ -10,27 +8,27 @@ LTXV 添加潜在引导节点将已编码的潜在变量作为引导，允许使
 |-----------|-------------|-----------|----------|-------|
 | `positive` | 正向条件输入。 | CONDITIONING | 是 | N/A |
 | `negative` | 负向条件输入。 | CONDITIONING | 是 | N/A |
-| `vae` | 要使用的 VAE 模型。 | MODEL | 是 | N/A |
-| `latent` | 引导附加到的目标视频潜在变量。 | LATENT | 是 | N/A |
-| `guiding_latent` | 引导潜在变量。其空间大小必须在两个轴上都能被目标的大小整除相同的整数；相同大小则按原样固定，半大小被视为 x2 IC-LoRA 参考。 | LATENT | 是 | N/A |
-| `latent_idx` | 从中开始引导的潜在帧索引，按潜在帧计算，而不是像素帧。负值将引导放置在潜在变量开始之前的帧上，而不是从其末尾回退计算。 | INT | 是 | -9999 到 9999 |
-| `strength` | 限制在 1.0。扩展的引导使用负去噪掩码标记其填充位置，以便模型丢弃它们；超过 1.0 的值会使保留的位置变为负数，整个引导将被丢弃。使用 attention_mask 替代放大超过 1.0 的值。 | FLOAT | 是 | 0.0 到 1.0，步长 0.01 |
-| `attention_mask` | 可选的像素空间空间掩码。通过自注意力控制每个区域的条件影响，乘以强度。 | MASK | 否 | N/A |
+| `vae` | 用于读取帧放置的降采样索引公式的 VAE 模型。 | VAE | 是 | N/A |
+| `latent` | 引导所固定到的目标视频 latent。 | LATENT | 是 | N/A |
+| `guiding_latent` | 引导 latent。其空间尺寸必须在两个轴上都以相同的整数整除目标的空间尺寸；尺寸相等时按原样固定，尺寸减半时视为 x2 IC-LoRA 参考。 | LATENT | 是 | N/A |
+| `latent_idx` | 引导开始的 latent 帧索引，以 latent 帧而非像素帧计数。负值将引导放置在 latent 开始之前的帧上，而不是从其末尾倒数。默认值：0。 | INT | 是 | -9999 到 9999 |
+| `strength` | 上限为 1.0。扩张后的引导会用负去噪掩码标记其填充位置，以便模型丢弃它们；高于 1.0 时，保留位置也会变为负值，整个引导都会被丢弃。若要超过 1.0 进行放大，请改用 `attention_mask`。默认值：1.0。 | FLOAT | 是 | 0.0 到 1.0, step 0.01 |
+| `attention_mask` | 可选的像素空间空间掩码。通过自注意力控制逐区域的条件影响，并乘以 `strength`。 | MASK | 否 | N/A |
+
+### 说明
+
+- `latent` 和 `guiding_latent` 都必须是 5D 视频 latent，形状为 (batch, channels, frames, height, width)。
+- 引导必须适配在目标 latent 内部：引导的帧数加上 `latent_idx` 不得超过目标 latent 的末尾。允许使用负的 `latent_idx` 值，这会将引导放置在 latent 开始之前。
+- 引导的空间尺寸必须在高度和宽度两个轴上都以整数整除目标的空间尺寸。
+- 高度比率和宽度比率必须相同（正方形比率）。非正方形比率会引发错误，因为扩张和 RoPE 放置对两个轴使用单一降采样因子。
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `positive` | 正向条件输出。 | CONDITIONING |
-| `negative` | 负向条件输出。 | CONDITIONING |
-| `latent` | 应用了引导的潜在变量输出。 | LATENT |
-
-## 注意事项
-
-- `guiding_latent` 的空间大小必须在两个轴上都能被 `latent` 的大小整除相同的整数。
-- `latent_idx` 参数允许在潜在帧内精确放置引导。
-- `strength` 参数控制引导的强度，值超过 1.0 需要使用 `attention_mask` 以避免出现负数位置。
-- `attention_mask` 参数是可选的，但可用于微调图像特定区域的引导影响。
+| `positive` | 附加了引导的正向条件。 | CONDITIONING |
+| `negative` | 附加了引导的负向条件。 | CONDITIONING |
+| `latent` | 应用了引导的 latent 输出，包括更新后的 `noise_mask`。 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddLatentGuide/zh.md)
 

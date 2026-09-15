@@ -1,21 +1,21 @@
 # Cargar conjunto de datos de entrenamiento
 
-Este nodo carga un dataset de entrenamiento codificado (latentes y condicionamiento) que se guardó previamente en disco. Lee todos los archivos de fragmentos de datos de una carpeta de dataset seleccionada en el directorio de datasets y devuelve los vectores latentes combinados y los datos de condicionamiento para su uso en flujos de trabajo de entrenamiento.
+Este nodo carga un conjunto de datos de entrenamiento codificado (latentes y condicionamiento) que se guardó previamente en disco. Lee todos los archivos de datos fragmentados `shard_*.pkl` de una carpeta de conjunto de datos seleccionada en el directorio datasets y devuelve los vectores latentes y los datos de condicionamiento combinados para su uso en flujos de trabajo de entrenamiento.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `folder_name` | Dataset guardado para cargar, desde el directorio de datasets. | COMBO | Sí | Una opción por carpeta de dataset encontrada en el directorio de datasets |
+| `folder_name` | Conjunto de datos guardado que se va a cargar, del directorio datasets. | COMBO | Sí | Una opción por cada carpeta de conjunto de datos encontrada en el directorio datasets |
 
-Nota: Las opciones de `folder_name` se construyen automáticamente escaneando el directorio de datasets. Una subcarpeta se lista como dataset cuando contiene un archivo `metadata.json` o al menos un archivo `.safetensors`. La carpeta de dataset seleccionada se busca en todos los directorios raíz de datasets configurados. El nodo lee todos los archivos llamados `shard_*.pkl` en la carpeta seleccionada y genera un error si no se encuentran archivos de fragmentos.
+Nota: Las opciones de `folder_name` se generan automáticamente al escanear el directorio datasets. Una subcarpeta se lista como conjunto de datos cuando contiene un archivo `metadata.json` o al menos un archivo `.safetensors` (el escaneo no desciende a una carpeta que coincida). La carpeta de conjunto de datos seleccionada se busca en todos los directorios raíz de conjuntos de datos configurados, y el nombre de la carpeta debe resolverse a una subcarpeta dentro de uno de esos directorios raíz. El nodo lee todos los archivos llamados `shard_*.pkl` en la carpeta seleccionada, en orden de clasificación, y genera un error si no se encuentra ningún archivo de fragmento o si no se puede localizar la carpeta.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `latents` | Lista de diccionarios de latentes, donde cada diccionario contiene una clave `"samples"` con un tensor. | LATENT |
-| `conditioning` | Lista de listas de condicionamiento, donde cada lista interna contiene datos de condicionamiento para la muestra correspondiente. | CONDITIONING |
+| `latents` | Lista de diccionarios de latentes (lista de salida), donde cada diccionario contiene una clave `"samples"` con un tensor. | LATENT |
+| `conditioning` | Lista de listas de condicionamiento (lista de salida), donde cada lista interna contiene datos de condicionamiento para la muestra correspondiente. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/es.md)
 

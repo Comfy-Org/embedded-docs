@@ -1,19 +1,19 @@
-# TripoRigCheckNode
+# Tripo : Vérification d’armature
 
-Ce nœud envoie l’identifiant d’une tâche Tripo 3D terminée à l’API Tripo et vérifie si ce modèle peut être armaturé (riggé). Il attend la fin de la vérification, puis renvoie un résultat oui/non ainsi que le type de squelette recommandé par Tripo pour le modèle.
+Ce nœud envoie l'ID d'une tâche de modèle 3D Tripo terminée à l'API Tripo et vérifie si ce modèle peut être riggé. Il attend la fin de la vérification, puis renvoie un résultat oui/non ainsi que le type de squelette recommandé par Tripo pour le modèle.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model_task_id` | L’identifiant de tâche Tripo du modèle à analyser. Il identifie un modèle précédemment généré, importé ou autrement créé via une tâche Tripo. | STRING | Oui | N/A |
+| `model_task_id` | L'ID de tâche Tripo du modèle à analyser. Il identifie un modèle qui a été précédemment généré, importé ou autrement créé via une tâche Tripo. | MODEL_TASK_ID | Oui | N/A |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `riggable` | Indique si le modèle peut être armaturé. | BOOLEAN |
-| `rig_type` | Squelette recommandé : biped, quadruped, hexapod, octopod, avian, serpentine ou aquatic ; « others » lorsque le modèle ne peut pas être armaturé. | STRING |
+| `riggable` | Indique si le modèle peut être riggé. | BOOLEAN |
+| `rig_type` | Squelette recommandé : biped, quadruped, hexapod, octopod, avian, serpentine ou aquatic ; 'others' lorsque le modèle n'est pas riggable. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRigCheckNode/fr.md)
 

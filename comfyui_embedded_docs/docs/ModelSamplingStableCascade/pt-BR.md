@@ -1,19 +1,19 @@
 # ModelSamplingStableCascade
 
-O nó ModelSamplingStableCascade aplica amostragem stable cascade a um modelo, ajustando os parâmetros de amostragem com um valor de deslocamento (shift). Ele cria uma cópia corrigida do modelo de entrada com uma configuração personalizada de amostragem stable cascade, deixando o modelo original inalterado.
+O nó ModelSamplingStableCascade aplica configurações de amostragem do stable cascade a um modelo, aplicando um valor de deslocamento aos parâmetros de amostragem. Ele retorna uma cópia corrigida do modelo de entrada com a configuração personalizada de amostragem do stable cascade, deixando o modelo original inalterado.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `modelo` | O modelo de entrada ao qual aplicar a amostragem stable cascade | MODEL | Sim | - |
-| `deslocamento` | O valor de deslocamento a ser aplicado aos parâmetros de amostragem (padrão: 2,0) | FLOAT | Sim | 0,0 - 100,0 (passo 0,01) |
+| `modelo` | O modelo de entrada ao qual aplicar a amostragem do stable cascade | MODEL | Sim | - |
+| `deslocamento` | O valor de deslocamento aplicado aos parâmetros de amostragem (padrão: 2.0) | FLOAT | Sim | 0.0 - 100.0 (passo 0.01) |
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `model` | O modelo modificado com a amostragem stable cascade aplicada | MODEL |
+| `model` | O modelo modificado com a amostragem do stable cascade aplicada | MODEL |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingStableCascade/pt-BR.md)
 

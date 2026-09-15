@@ -1,36 +1,34 @@
-# LTXVAddLatentGuide
+# LTXV Latent Kılavuzu Ekle
 
-## Özet
-
-LTXV Add Latent rehberi, zaten kodlanmış bir gizli latenti bir rehber olarak sabitler ve daha erken bir aşamadan gelen bir rehber kullanmayı sağlar. Bu node, VAE decode/encode turunu önler ve daha küçük bir rehberi genişleterek hedef canvas'ı kapsayan bir azaltılmış ızgara üzerine yerleştirir.
+LTXV Add Latent Guide düğümü, önceden kodlanmış bir latentı kılavuz olarak sabitler; bu, kılavuz bir görüntüden değil de daha erken bir aşamadan geldiğinde kullanılır. VAE çözme/kodlama gidiş-dönüşü olmadan LTXV Add Guide ile aynı etkiye sahiptir. Hedeften uzamsal olarak daha küçük olan bir kılavuz (bir IC-LoRA veya ayrıntılandırma referansı) seyrek bir ızgara üzerine genişletilir ve RoPE bitiş konumları aynı oranda genişletilir; böylece yalnızca sol üst köşesini adreslemek yerine hedef tuvalin tamamını kaplar.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Pozitif koşullandırma girdisi. | KOŞULLANDIRMA | Evet | N/A |
-| `negative` | Negatif koşullandırma girdisi. | KOŞULLANDIRMA | Evet | N/A |
-| `vae` | Kullanılacak VAE modeli. | MODEL | Evet | N/A |
-| `latent` | Rehberin sabitleneceği hedef video gizli latenti. | LATENT | Evet | N/A |
-| `guiding_latent` | Rehber latenti. Uzay boyutu, hedefin her iki eksende de aynı tam sayı ile bölünmelidir; eşit boyutta sabitlenir, yarım boyutta x2 IC-LoRA referans olarak işlenir. | LATENT | Evet | N/A |
-| `latent_idx` | Rehberin başlayacağı latent çerçeve indeksi, latent çerçeveler olarak sayılır. Negatif değerler, gizli latentin sonundan geri sayılmadan başlangıçtan önceki çerçevelere yerleştirir. | INT | Evet | -9999 ile 9999 arasında |
-| `strength` | 1.0 ile sınırlı. Genişletilmiş bir rehber, dolgu pozisyonlarını negatif denoising mask ile işaretler ve model bunları atar; 1.0'dan büyük değerler, tutulan pozisyonlar negatif olacaktır ve tüm rehber atılacaktır. 1.0'dan büyük artışları dikkat maskesi ile artırın. | FLOAT | Evet | 0.0 ile 1.0 arasında, adım 0.01 |
-| `attention_mask` | Opsiyonel piksel alanı spesifik maskesi. Her bölgeye özel koşullandırma etkisini kendiliğinden dikkat ile çarpıp artırır. | MASK | Hayır | N/A |
+| `positive` | Pozitif koşullandırma girdisi. | CONDITIONING | Evet | Yok |
+| `negative` | Negatif koşullandırma girdisi. | CONDITIONING | Evet | Yok |
+| `vae` | Kare yerleşimi için küçültme indeksi formülünü okumak üzere kullanılan VAE modeli. | VAE | Evet | Yok |
+| `latent` | Kılavuzun üzerine sabitlendiği hedef video latentı. | LATENT | Evet | Yok |
+| `guiding_latent` | Kılavuz latentı. Uzamsal boyutu, hedefin uzamsal boyutunu her iki eksende de aynı tam sayıya bölmelidir; eşit boyut olduğu gibi sabitlenir, yarım boyut x2 IC-LoRA referansı olarak değerlendirilir. | LATENT | Evet | Yok |
+| `latent_idx` | Kılavuzun başlatılacağı latent kare indeksi; piksel kareleri yerine latent kareleriyle sayılır. Negatif değerler kılavuzu latentin başlangıcından önceki karelere yerleştirir, sonundan geriye doğru sayılmaz. Varsayılan: 0. | INT | Evet | -9999 ile 9999 |
+| `strength` | 1.0 ile sınırlandırılmıştır. Genişletilmiş bir kılavuz, dolgu konumlarını negatif bir gürültü giderme maskesiyle işaretler, böylece model onları atar; 1.0'ın üzerinde tutulan konumlar da negatife düşer ve kılavuzun tamamı atılırdı. 1.0'ın ötesine çıkarmak için bunun yerine `attention_mask` kullanın. Varsayılan: 1.0. | FLOAT | Evet | 0.0 ile 1.0, adım 0.01 |
+| `attention_mask` | İsteğe bağlı piksel uzayı uzamsal maskesi. Bölge başına koşullandırma etkisini öz-dikkat yoluyla kontrol eder, `strength` ile çarpılır. | MASK | Hayır | Yok |
+
+### Notlar
+
+- Hem `latent` hem de `guiding_latent`, (batch, channels, frames, height, width) şeklinde 5 boyutlu video latentları olmalıdır.
+- Kılavuz hedef latentın içine sığmalıdır: kılavuzun kare sayısı ile `latent_idx` toplamı hedef latentın sonunu geçmemelidir. Negatif `latent_idx` değerlerine izin verilir ve kılavuzu latentin başlangıcından önceye yerleştirir.
+- Kılavuzun uzamsal boyutu, hedefin uzamsal boyutunu hem yükseklik hem de genişlik ekseninde bir tam sayıya bölmelidir.
+- Yükseklik oranı ve genişlik oranı aynı değer olmalıdır (kare oran). Kare olmayan oran bir hata verir, çünkü genişletme ve RoPE yerleşimi her iki eksen için tek bir küçültme faktörü kullanır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `positive` | Pozitif koşullandırma çıktısı. | KOŞULLANDIRMA |
-| `negative` | Negatif koşullandırma çıktısı. | KOŞULLANDIRMA |
-| `latent` | Rehber uygulanmış latent çıktısı. | LATENT |
-
-## Notlar
-
-- `guiding_latent` uzay boyutu, `latent` boyutunu her iki eksende de aynı tam sayı ile bölünmelidir.
-- `latent_idx` parametresi, rehberin latent çerçeveler içindeki yerleşimini kesin olarak belirler.
-- `strength` parametresi, rehberin yoğunluğunu kontrol eder, 1.0'dan büyük değerler `attention_mask` kullanılarak kaçınılmalıdır.
-- `attention_mask` parametresi opsiyoneldir ancak resmin belirli bölgelerindeki rehber etkisini ince ayarlamak için kullanılabilir.
+| `positive` | Kılavuzun eklendiği pozitif koşullandırma. | CONDITIONING |
+| `negative` | Kılavuzun eklendiği negatif koşullandırma. | CONDITIONING |
+| `latent` | Kılavuzun uygulandığı, güncellenmiş `noise_mask` dahil latent çıktısı. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddLatentGuide/tr.md)
 

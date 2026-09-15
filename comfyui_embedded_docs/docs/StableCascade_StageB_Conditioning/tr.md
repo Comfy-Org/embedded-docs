@@ -1,19 +1,19 @@
 # StabilKaskad_AşamaB_Koşullandırma
 
-StableCascade_StageB_Conditioning düğümü, mevcut conditioning bilgilerini Stage C'den gelen önceki latent temsillerle birleştirerek Stable Cascade Stage B üretimi için conditioning verisi hazırlar. Her conditioning girdisini kopyalar ve Stage C latent örneklerini içine ekleyerek üretim sürecinin daha tutarlı çıktılar için önceki bilgilerden yararlanmasını sağlar.
+StableCascade_StageB_Conditioning düğümü, mevcut koşullandırma bilgisini Stage C tarafından üretilen önceki latent temsiliyle birleştirerek Stable Cascade Stage B üretimi için koşullandırma verisini hazırlar. Her koşullandırma girişini kopyalar ve Stage C latent örneklerini içine kaydeder; böylece sonraki üretim adımları daha tutarlı sonuçlar için bu önceki bilgiyi kullanabilir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `koşullandırma` | Stage C önceki bilgileriyle değiştirilecek conditioning verisi | CONDITIONING | Evet | - |
-| `aşama_c` | Conditioning için önceki örnekleri içeren Stage C latent temsili | LATENT | Evet | - |
+| `koşullandırma` | Stage C önceki bilgisiyle değiştirilecek koşullandırma verisi. Listedeki her giriş kopyalanır ve ona Stage C örnekleri atanır. | CONDITIONING | Evet | - |
+| `aşama_c` | Stage C'den gelen latent temsili. `samples` değeri, koşullandırmaya eklenen önceki bilgi olarak kullanılır. | LATENT | Evet | - |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `CONDITIONING` | Stage C önceki bilgileri entegre edilmiş, değiştirilmiş conditioning verisi | CONDITIONING |
+| `CONDITIONING` | Stage C önceki bilgisi entegre edilmiş değiştirilmiş koşullandırma verisi. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_StageB_Conditioning/tr.md)
 

@@ -7,9 +7,9 @@ El nodo **Rodin 3D Detail** genera activos 3D detallados utilizando la API de Ro
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `Imágenes` | Imágenes de entrada utilizadas para la generación del modelo 3D. Se pueden proporcionar múltiples imágenes. | IMAGE | Sí | - |
-| `Semilla` | Valor de semilla aleatoria para obtener resultados reproducibles | INT | Sí | - |
-| `Tipo_Material` | Tipo de material que se aplicará al modelo 3D | STRING | Sí | - |
-| `Recuento_Polígonos` | Cantidad objetivo de polígonos para el modelo 3D generado. Determina el nivel de calidad de la malla. | STRING | Sí | - |
+| `Semilla` | Valor de semilla aleatoria para obtener resultados reproducibles | INT | No | - |
+| `Tipo_Material` | Tipo de material que se aplicará al modelo 3D | STRING | No | - |
+| `Recuento_Polígonos` | Cantidad objetivo de polígonos para el modelo 3D generado. Determina el nivel de calidad de la malla. | STRING | No | - |
 
 ## Salidas
 

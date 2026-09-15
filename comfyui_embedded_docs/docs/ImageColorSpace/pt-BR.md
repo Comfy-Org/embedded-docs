@@ -1,33 +1,31 @@
-# Convert Image Color Space
+# Converter Espaço de Cor da Imagem
 
-## Visão Geral
-
-O nó ImageColorSpace converte imagens entre diferentes espaços de cores, incluindo sRGB, HDR (Rec.2020 HLG) e HDR PQ (Rec.2020 PQ). Ele suporta a redução de excesso de luminância em mapas de tons ao longo do lote e a compressão de cores fora do gamut, operando apenas nos canais RGB, com os canais alpha passados inalterados.
+O nó ImageColorSpace converte imagens entre os espaços de cor sRGB (Rec.709), Rec.709 linear, HDR (Rec.2020 HLG) e HDR PQ (Rec.2020 PQ). Ao converter para saída SDR, ou de HDR PQ para HDR, ele faz mapeamento de tons da luminância excedente em todo o lote e comprime cores fora do gamut; a saída linear e as conversões de linear para HDR preservam valores estendidos sem mapeamento de tons. As conversões são calculadas em float32, e qualquer canal alfa é repassado sem alterações.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A imagem de entrada a ser convertida. | IMAGE | Sim | Qualquer formato de imagem válido. |
-| `source` | O espaço de cores dos pixels de entrada. | COMBO | Sim | <br> "sRGB" <br> "HDR" <br> "HDR PQ" |
-| `destination` | O espaço de cores dos pixels de saída. | COMBO | Sim | <br> "sRGB" <br> "HDR" <br> "HDR PQ" |
+| `image` | A imagem de entrada a ser convertida. | IMAGE | Sim | Qualquer imagem válida. |
+| `source` | Espaço de cor dos pixels de entrada. Padrão: "sRGB". | COMBO | Sim | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"`<br>`"linear"` |
+| `destination` | Espaço de cor dos pixels de saída. Configure o nó de salvamento para este mesmo espaço de cor. Padrão: "sRGB". | COMBO | Sim | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"`<br>`"linear"` |
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 |-------------|-------------|-----------|
-| `image` | A imagem convertida no espaço de cores de saída especificado. | IMAGE |
+| `image` | A imagem convertida no espaço de cor de destino especificado. | IMAGE |
 
 ## Notas
 
-- O nó usa um branco SDR de 203 nit e uma referência de exibição HLG de 1000 nit para conversões.
-- As conversões são calculadas em float32 e retornam o dispositivo e o dtype intermediário.
-- O canal alpha é passado inalterado sem transformação de cor.
-- O nó suporta conversões entre os espaços de cores sRGB, HDR (Rec.2020 HLG) e HDR PQ (Rec.2020 PQ).
-- O nó realiza a redução de mapas de tons e comprime cores fora do gamut para garantir conversões precisas.
-- Os canais RGB são usados para conversões, e o canal alpha (se presente) é passado inalterado.
+- Linear 1.0 usa o mesmo branco de referência de 203 nits que sRGB; HLG usa um monitor de referência de 1000 nits.
+- A saída linear e as conversões de linear para HDR preservam valores estendidos sem mapeamento de tons.
+- A saída SDR e a conversão de PQ para HLG fazem mapeamento de tons da luminância excedente em todo o lote (compartilhando um ponto de branco para que a exposição não mude quadro a quadro) e comprimem cores fora do gamut.
+- As conversões são calculadas em float32 e retornadas no dispositivo e dtype intermediários.
+- O alfa straight não passa por transformação de cor; apenas os canais RGB são convertidos.
+- Se `source` e `destination` forem iguais, nenhuma transformação de cor é aplicada — a imagem é apenas movida para o dispositivo e dtype intermediários.
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageColorSpace/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `f0d38c6f5b524752a99d51b1a87f0e65c07f3ba36ecb0066d8d10c5b5032d36f`
+**Source fingerprint (SHA-256):** `04ae447a9f9805341e31755ad0fa56746ac0371fa2cb9bda95df3879c9dbead7`

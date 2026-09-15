@@ -1,20 +1,18 @@
 # VOIDWarpedNoiseSource
 
-## Aperçu
-
-Ce nœud convertit un LATENT (tel que la sortie du nœud VOIDWarpedNoise) en une source de bruit (NOISE). Cela vous permet d'utiliser le bruit déformé avec le nœud SamplerCustomAdvanced pour une génération d'images plus contrôlée.
+Ce nœud convertit un LATENT (tel que la sortie du nœud VOIDWarpedNoise) en une source NOISE. Cela vous permet de fournir un bruit déformé précalculé à des nœuds qui attendent une source de bruit, tels que SamplerCustomAdvanced.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `warped_noise` | Bruit déformé latent provenant de VOIDWarpedNoise | LATENT | Oui | N/A |
+| `warped_noise` | Latent de bruit déformé provenant de VOIDWarpedNoise | LATENT | Oui | N/A |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `NOISE` | Une source de bruit pouvant être utilisée avec SamplerCustomAdvanced | NOISE |
+| `NOISE` | Une source de bruit encapsulant le latent fourni, utilisable avec SamplerCustomAdvanced | NOISE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDWarpedNoiseSource/fr.md)
 

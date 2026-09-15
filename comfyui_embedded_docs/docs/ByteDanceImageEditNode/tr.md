@@ -1,23 +1,23 @@
 # ByteDanceImageEditNode
 
-ByteDance Image Edit düğümü, ByteDance'in yapay zeka modellerini bir API aracılığıyla kullanarak görselleri değiştirmenize olanak tanır. Bir giriş görseli ve istenen değişiklikleri açıklayan bir metin istemi sağlarsınız; düğüm, görseli talimatlarınıza göre işler. Düğüm, API iletişimini otomatik olarak yönetir ve düzenlenmiş görseli döndürür.
+ByteDance Image Edit düğümü, ByteDance'in yapay zeka modellerini bir API aracılığıyla kullanarak görüntüleri değiştirmenize olanak tanır. İstediğiniz değişiklikleri açıklayan bir metin istemi ve bir girdi görüntüsü sağlarsınız; düğüm, görüntüyü talimatlarınıza göre işler. Düğüm, API iletişimini otomatik olarak yönetir ve düzenlenmiş görüntüyü döndürür.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Giriş Türü | Varsayılan | Aralık |
+| Parametre | Açıklama | Veri Türü | Girdi Türü | Varsayılan | Aralık |
 | --- | --- | --- | --- | --- | --- |
 | `model` | Model adı | MODEL | COMBO | seededit_3 | Image2ImageModelName seçenekleri |
-| `image` | Düzenlenecek temel görsel | GÖRSEL | GÖRSEL | - | - |
-| `prompt` | Görseli düzenleme talimatı | METİN | METİN | "" | - |
-| `seed` | Üretim için kullanılacak tohum değeri | TAMSAYI | TAMSAYI | 0 | 0-2147483647 |
-| `guidance_scale` | Daha yüksek değer, görselin istemi daha yakından takip etmesini sağlar | ONDALIK | ONDALIK | 5.5 | 1.0-10.0 |
-| `watermark` | Görsele "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği | MANTIKSAL | MANTIKSAL | True | - |
+| `image` | Düzenlenecek temel görüntü | IMAGE | IMAGE | - | - |
+| `prompt` | Görüntüyü düzenleme talimatı | STRING | STRING | "" | - |
+| `seed` | Üretim için kullanılacak tohum değeri | INT | INT | 0 | 0-2147483647 |
+| `guidance_scale` | Daha yüksek bir değer, görüntünün istemi daha yakından takip etmesini sağlar | FLOAT | FLOAT | 5.5 | 1.0-10.0 |
+| `watermark` | Görüntüye "AI generated" filigranı eklenip eklenmeyeceği | BOOLEAN | BOOLEAN | True | - |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `GÖRSEL` | ByteDance API'sinden döndürülen düzenlenmiş görsel | GÖRSEL |
+| `IMAGE` | ByteDance API'sinden döndürülen düzenlenmiş görüntü | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceImageEditNode/tr.md)
 

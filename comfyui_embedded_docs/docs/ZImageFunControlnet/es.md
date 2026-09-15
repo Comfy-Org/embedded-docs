@@ -1,20 +1,20 @@
 # ZImageFunControlnet
 
-ZImageFunControlnet aplica una red de control especializada para influir en el proceso de generación o edición de imágenes. Utiliza un modelo base, un parche de modelo y un VAE, lo que permite ajustar la intensidad del efecto de control. Este nodo puede trabajar con una imagen base, una imagen de inpainting y una máscara para realizar ediciones más específicas.
+ZImageFunControlnet aplica un parche de red de control a un modelo base para que pueda guiar el proceso de generación o edición de imágenes. Combina un modelo, un parche de modelo y un VAE, y te permite controlar con qué intensidad el efecto de control influye en el resultado. Las entradas opcionales de imagen, imagen de inpainting y máscara permiten ediciones más específicas.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `modelo` | El modelo base utilizado para el proceso de generación. | MODEL | Sí | - |
 | `parche_de_modelo` | Un modelo de parche especializado que aplica la guía de la red de control. | MODEL_PATCH | Sí | - |
-| `vae` | El Autoencoder Variacional (VAE) utilizado para codificar y decodificar imágenes. | VAE | Sí | - |
-| `fuerza` | La intensidad de la influencia de la red de control. Los valores positivos aplican el efecto, mientras que los valores negativos pueden invertirlo (por defecto: 1.0). | FLOAT | Sí | -10.0 a 10.0 |
+| `vae` | El Autoencoder Variacional usado para codificar y decodificar imágenes. | VAE | Sí | - |
+| `fuerza` | La fuerza de la influencia de la red de control. Los valores positivos aplican el efecto, mientras que los valores negativos pueden invertirlo (predeterminado: 1.0). | FLOAT | Sí | -10.0 a 10.0 (paso 0.01) |
 | `imagen` | Una imagen base opcional para guiar el proceso de generación. | IMAGE | No | - |
-| `imagen_relleno` | Una imagen opcional utilizada específicamente para realizar inpainting en las áreas definidas por una máscara. | IMAGE | No | - |
-| `máscara` | Una máscara opcional que define qué áreas de una imagen deben editarse o procesarse con inpainting. | MASK | No | - |
+| `imagen_relleno` | Una imagen opcional usada específicamente para inpainting en áreas definidas por una máscara. | IMAGE | No | - |
+| `máscara` | Una máscara opcional que define qué áreas de una imagen deben editarse o someterse a inpainting. | MASK | No | - |
 
-**Nota:** El parámetro `inpaint_image` se usa normalmente junto con una `mask` para especificar el contenido del inpainting. El comportamiento del nodo puede cambiar según las entradas opcionales proporcionadas (por ejemplo, usar `image` como guía o usar `image`, `mask` e `inpaint_image` para inpainting).
+**Nota:** El parámetro `inpaint_image` se suele usar junto con una `mask` para especificar el contenido para inpainting. El comportamiento del nodo puede cambiar según qué entradas opcionales se proporcionen (p. ej., usar `image` como guía o usar `image`, `mask` e `inpaint_image` para inpainting).
 
 ## Salidas
 

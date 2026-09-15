@@ -9,8 +9,8 @@ LTXVImgToVideoInplace encode une image d'entrée dans l'espace latent et place c
 | `vae` | Le modèle VAE utilisé pour encoder l'image d'entrée dans l'espace latent. | VAE | Oui | - |
 | `image` | L'image d'entrée à encoder et utilisée pour conditionner le latent vidéo. | IMAGE | Oui | - |
 | `latent` | La représentation vidéo latente cible à modifier. | LATENT | Oui | - |
-| `force` | Contrôle la force avec laquelle l'image encodée conditionne les trames initiales du latent. Une valeur de 1,0 conditionne entièrement les trames initiales avec l'image encodée, tandis que des valeurs plus faibles les conditionnent moins fortement. Le masque de bruit pour les trames initiales est défini sur `1.0 - strength`. (défaut : 1,0) | FLOAT | Non | 0.0 - 1.0 |
-| `contournement` | Contourne le conditionnement. Lorsqu'il est activé, le nœud retourne le latent d'entrée inchangé. (défaut : False) | BOOLEAN | Non | True or False |
+| `force` | Contrôle la force avec laquelle l'image encodée conditionne les trames initiales du latent. Une valeur de 1,0 conditionne entièrement les trames initiales avec l'image encodée, tandis que des valeurs plus faibles les conditionnent moins fortement. Le masque de bruit pour les trames initiales est défini sur `1.0 - strength`. (défaut : 1,0) | FLOAT | Oui | 0.0 - 1.0 |
+| `contournement` | Contourne le conditionnement. Lorsqu'il est activé, le nœud retourne le latent d'entrée inchangé. (défaut : False) | BOOLEAN | Oui | True or False |
 
 **Remarque :** L'`image` sera automatiquement redimensionnée pour correspondre aux dimensions spatiales requises par le `vae` pour l'encodage, en fonction de la largeur et de la hauteur de l'entrée `latent`. Seuls les canaux RVB de l'`image` sont utilisés pour l'encodage.
 

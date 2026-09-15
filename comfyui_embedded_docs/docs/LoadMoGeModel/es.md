@@ -1,12 +1,12 @@
 # Cargar modelo MoGe
 
-Carga un modelo MoGe (Geometría Monocular) desde un archivo y lo prepara para su uso en tareas de estimación de geometría. Este nodo lee un archivo de modelo de la carpeta `geometry_estimation` e inicializa el modelo MoGe con sus pesos entrenados.
+Carga un modelo MoGe (Geometría Monocular) desde un archivo y lo prepara para su uso en tareas de estimación de geometría. El nodo lee el archivo de modelo seleccionado desde la carpeta `geometry_estimation` e inicializa el modelo MoGe con sus pesos almacenados.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model_name` | El nombre del archivo de modelo MoGe a cargar. Seleccione entre los archivos de modelo disponibles en su instalación de ComfyUI. | COMBO | Sí | Lista de archivos de modelo disponibles en la carpeta `geometry_estimation` |
+| `model_name` | El nombre del archivo de modelo MoGe que se va a cargar. Seleccione entre los archivos de modelo disponibles en la carpeta `geometry_estimation` de su instalación de ComfyUI. | COMBO | Sí | Lista de archivos de modelo disponibles en la carpeta `geometry_estimation` |
 
 ## Salidas
 

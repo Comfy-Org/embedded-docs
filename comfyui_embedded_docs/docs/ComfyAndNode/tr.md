@@ -1,20 +1,22 @@
 # Ve
 
-And düğümü, bir dizi girdi değeri üzerinde mantıksal VE işlemi gerçekleştirir. Yalnızca sağlanan tüm değerler Python'un doğruluk değerlendirme kurallarına göre doğru kabul ediliyorsa `true` döndürür. Bu düğüm, devam etmeden önce birden fazla koşulun tamamının karşılandığını kontrol etmek için kullanışlıdır.
+And düğümü, bir girdi değerleri grubu üzerinde mantıksal AND işlemi gerçekleştirir. Yalnızca bağlı her değer Python'un doğruluk (truthiness) kurallarına göre doğru kabul edildiğinde `true` döndürür; bu da birkaç koşulun aynı anda karşılandığını kontrol etmek için kullanışlıdır.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Tipi | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `değerler` | Değerlendirilecek bir değer. Düğüm en az bir değer kabul eder; düğüm üzerindeki "+" düğmesine tıklayarak daha fazla değer ekleyebilirsiniz. Her tür veriyi kabul eder. | ANY | Evet | 1 veya daha fazla (üst sınır yok) |
+| `değerler` | Değerlendirilecek büyütülebilir bir değer grubu. Düğüm tek bir yuva ile başlar ve düğümdeki "+" düğmesine tıklayarak daha fazla ekleyebilirsiniz. Herhangi bir veri türünü kabul eder. | ANY | Evet | Minimum 1 (maksimum yok) |
 
-**Not:** Düğüm, bir değerin `true` mu yoksa `false` mı olduğunu belirlemek için Python'un doğruluk değerlendirme kurallarını kullanır. Örneğin, boş bir dize, 0 sayısı, boş bir liste ve `None` değerleri `false` olarak kabul edilir. Diğer tüm değerler `true` olarak kabul edilir.
+**Not:** Bu girdi büyütülebilir bir yuva grubudur. Yuvalar tek tek eklenir (örneğin `value_1`, `value_2` ve benzeri) ve en az bir yuva bulunmalıdır.
+
+**Not:** Düğüm, bir değerin `true` mu `false` mu olduğuna karar vermek için Python'un doğruluk kurallarını kullanır. Örneğin, boş bir dize, 0 sayısı, boş bir liste ve `None` değerlerinin tümü `false` olarak değerlendirilir. Diğer tüm değerler `true` olarak değerlendirilir.
 
 ## Çıktılar
 
-| Çıktı Adı | Açıklama | Veri Tipi |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `BOOLEAN` | Tüm girdi değerleri doğru kabul ediliyorsa `true`, aksi takdirde `false` döndürür. | BOOLEAN |
+| `BOOLEAN` | Tüm girdi değerleri doğru kabul edilirse `true`, aksi halde `false` döndürür. | BOOLEAN |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfyAndNode/tr.md)
 

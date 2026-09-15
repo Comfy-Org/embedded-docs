@@ -1,14 +1,14 @@
 # SamplerLCM
 
-Le nœud SamplerLCM fournit un échantillonneur LCM (modèle de cohérence latente) avec des paramètres de bruit par étape réglables. Il vous permet de contrôler le bruit appliqué à chaque étape du processus d'échantillonnage ; `s_noise` est un multiplicateur de l'échelle de bruit d'entraînement du modèle.
+Ce nœud fournit un échantillonneur LCM (Latent Consistency Model) avec bruit ajustable par étape. Il vous permet de contrôler la quantité de bruit appliquée pendant l'échantillonnage : `s_noise` agit comme un multiplicateur sur l'échelle de bruit d'entraînement du modèle, et le niveau de bruit peut varier de la première à la dernière étape. L'échantillonneur configuré peut ensuite être intégré à un flux de travail d'échantillonnage.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `s_noise` | Multiplicateur de bruit par étape à la première étape (1.0 = correspond à l'entraînement). (défaut : 1.0) | FLOAT | Oui | 0.0 à 64.0 (step: 0.01) |
-| `s_noise_end` | Multiplicateur de bruit par étape à la dernière étape. Définissez-le égal à `s_noise` pour un programme de bruit constant. (défaut : 1.0) | FLOAT | Oui | 0.0 à 64.0 (step: 0.01) |
-| `noise_clip_std` | Limite le bruit par étape à +/- N*écart-type. 0 désactive. (défaut : 0.0) | FLOAT | Oui | 0.0 à 10.0 (step: 0.01) |
+| `s_noise` | Multiplicateur de bruit par étape à la première étape (1.0 = correspond à l'entraînement). Par défaut : 1.0. | FLOAT | Oui | 0.0 à 64.0 (pas : 0.01) |
+| `s_noise_end` | Multiplicateur de bruit par étape à la dernière étape. Définir une valeur égale à `s_noise` pour une planification constante. Par défaut : 1.0. | FLOAT | Oui | 0.0 à 64.0 (pas : 0.01) |
+| `noise_clip_std` | Limite le bruit par étape à +/- N*std. 0 désactive. Par défaut : 0.0. | FLOAT | Oui | 0.0 à 10.0 (pas : 0.01) |
 
 ## Sorties
 

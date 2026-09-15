@@ -1,6 +1,6 @@
 # Booleano
 
-O nó Boolean fornece uma maneira simples de passar valores booleanos (verdadeiro/falso) através do seu fluxo de trabalho. Ele recebe um valor de entrada booleano e gera o mesmo valor inalterado, permitindo que você controle parâmetros booleanos em outros nós.
+O nó Boolean passa um valor booleano (true/false) pelo seu fluxo de trabalho. Ele recebe uma entrada booleana e retorna o mesmo valor sem alterações, para que você possa fornecer uma configuração true/false a outros nós que precisem dela.
 
 ## Entradas
 

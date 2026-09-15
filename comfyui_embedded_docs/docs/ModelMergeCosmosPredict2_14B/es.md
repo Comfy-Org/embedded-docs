@@ -1,17 +1,17 @@
 # ModelMergeCosmosPredict2_14B
 
-El nodo ModelMergeCosmosPredict2_14B fusiona dos modelos de IA combinando sus componentes internos. Ofrece un control preciso sobre cuánto influye cada parte del segundo modelo en el resultado final fusionado, mediante valores de peso ajustables para capas y componentes específicos.
+El nodo ModelMergeCosmosPredict2_14B combina dos modelos de IA en uno solo mediante la mezcla de sus componentes internos correspondientes. Permite controlar cuánto del segundo modelo se mezcla con el primero ajustando un peso independiente para cada embedder, bloque y la capa final.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo1` | El modelo base con el que se realizará la fusión | MODEL | Sí | - |
-| `modelo2` | El modelo secundario que se fusiona en el modelo base | MODEL | Sí | - |
-| `pos_embedder.` | Peso de mezcla del codificador de posición (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `x_embedder.` | Peso de mezcla del codificador de entrada (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `t_embedder.` | Peso de mezcla del codificador de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `t_embedding_norm.` | Peso de mezcla de la normalización de la incrustación temporal (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `modelo1` | El modelo base con el que se fusionará | MODEL | Sí | - |
+| `modelo2` | El modelo secundario que se fusionará en el modelo base | MODEL | Sí | - |
+| `pos_embedder.` | Peso de mezcla del embedder de posición (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `x_embedder.` | Peso de mezcla del embedder de entrada (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `t_embedder.` | Peso de mezcla del embedder de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `t_embedding_norm.` | Peso de mezcla de la normalización de embedding de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `bloques.0.` | Peso de mezcla del bloque 0 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `bloques.1.` | Peso de mezcla del bloque 1 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `bloques.2.` | Peso de mezcla del bloque 2 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
@@ -50,7 +50,7 @@ El nodo ModelMergeCosmosPredict2_14B fusiona dos modelos de IA combinando sus co
 | `bloques.35.` | Peso de mezcla del bloque 35 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `final_layer.` | Peso de mezcla de la capa final (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 
-**Nota:** Todos los parámetros de peso de mezcla aceptan valores entre 0.0 y 1.0 en incrementos de 0.01, donde 0.0 significa que model2 no contribuye y 1.0 significa que model2 contribuye por completo para ese componente específico.
+**Nota:** Todos los parámetros de peso de mezcla aceptan valores entre 0.0 y 1.0 en incrementos de 0.01, donde 0.0 significa ninguna contribución de model2 y 1.0 significa contribución total de model2 para ese componente específico.
 
 ## Salidas
 

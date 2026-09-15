@@ -1,13 +1,14 @@
 # ModelÖrneklemeAuraFlow
 
-ModelSamplingAuraFlow düğümü, özellikle AuraFlow model mimarileri için tasarlanmış özel bir örnekleme yapılandırmasını difüzyon modellerine uygular. Örnekleme dağılımını ayarlayan bir kaydırma değeri uygulayarak modelin örnekleme davranışını değiştirir. Bu düğüm, SD3 model örnekleme çerçevesinden türetilir ve örnekleme süreci üzerinde ince kontrol sağlar.
+ModelSamplingAuraFlow düğümü, difüzyon modellerine özelleşmiş bir örnekleme yapılandırması uygular; bu yapılandırma özellikle AuraFlow model mimarileri için tasarlanmıştır. Modelin örnekleme davranışını, örnekleme dağılımını ayarlayan bir kaydırma değeri uygulayarak değiştirir. Bu düğüm, SD3 model örnekleme çerçevesinden devralır ve örnekleme süreci üzerinde ince kontrol sağlar.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | AuraFlow örnekleme yapılandırmasının uygulanacağı difüzyon modeli | MODEL | Evet | - |
 | `kaydırma` | Örnekleme dağılımına uygulanacak kaydırma değeri (varsayılan: 1.73, adım: 0.01) | FLOAT | Evet | 0.0 - 100.0 |
+| `sampling` | Model yamalanırken kullanılan örnekleme modu (varsayılan: "flow"). Gelişmiş seçenek olarak işaretlenmiştir. | COMBO | Hayır | "flow"<br>"img_to_img_velocity" |
 
 ## Çıktılar
 
@@ -18,4 +19,4 @@ ModelSamplingAuraFlow düğümü, özellikle AuraFlow model mimarileri için tas
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingAuraFlow/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `7ca35632ae73517c78aa31a528492427c9af37862322ff7335f895c597ee1709`
+**Source fingerprint (SHA-256):** `5c1381d2dec9ac84a7ee6cd134de444ab50f657eafd960263c63a055d0a139d6`

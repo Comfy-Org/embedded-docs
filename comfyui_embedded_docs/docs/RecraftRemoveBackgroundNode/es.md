@@ -1,19 +1,19 @@
 # Recraft Remove Background
 
-Este nodo elimina el fondo de las imágenes mediante el servicio de la API de Recraft. Procesa cada imagen del lote de entrada y devuelve tanto las imágenes procesadas con fondos transparentes como las máscaras alfa correspondientes que indican las áreas de fondo eliminadas.
+Este nodo elimina el fondo de las imágenes utilizando el servicio de API de Recraft. Procesa cada imagen del lote de entrada individualmente y devuelve tanto las imágenes procesadas con fondos transparentes como las máscaras alfa correspondientes que indican las áreas de fondo eliminadas.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `imagen` | Las imágenes de entrada que se procesarán para eliminar el fondo. Cada imagen del lote se procesa individualmente. | IMAGE | Sí | - |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `imagen` | La imagen o imágenes de entrada a procesar para la eliminación del fondo. Cada imagen del lote se procesa individualmente. | IMAGE | Sí | - |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
 | `image` | Imágenes procesadas con fondos transparentes (formato RGBA) | IMAGE |
-| `mask` | Máscaras de canal alfa que indican las áreas de fondo eliminadas, en formato B,H,W | MASK |
+| `mask` | Máscaras del canal alfa que indican las áreas de fondo eliminadas, en formato B,H,W | MASK |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftRemoveBackgroundNode/es.md)
 

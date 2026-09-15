@@ -1,29 +1,29 @@
-# OpenAI DALL·E 2
+# OpenAIDalle2
 
-Generates images synchronously via OpenAI's DALL·E 2 endpoint.
+OpenAI'nin DALL·E 2 uç noktası aracılığıyla senkron olarak görseller oluşturur. Düğüm, bir metin istemini OpenAI'nin DALL·E 2 API'sine gönderir ve elde edilen görsel(leri) ComfyUI'ye döndürür. Ayrıca hem bir `image` hem de bir `mask` birlikte sağlandığında mevcut bir görseli düzenleyebilir.
 
 ## Nasıl Çalışır
 
-Bu düğüm, metin açıklamalarına dayalı görüntüler oluşturmak için OpenAI'ın DALL·E 2 API'sine bağlanır. Bir metin istemi sağladığınızda, düğüm bunu OpenAI sunucularına gönderir; sunucular ilgili görüntüleri üretir ve ComfyUI'ye geri döndürür. Düğüm iki modda çalışabilir: yalnızca metin istemi kullanan standart görüntü üretimi veya hem bir görüntü hem de maske sağlandığında görüntü düzenleme modu. Düzenleme modunda, orijinal görüntünün hangi bölümlerinin değiştirileceğini belirlemek için maskeyi kullanır; diğer alanlar ise değişmeden kalır.
+Bu düğüm, metin açıklamalarına dayalı görseller oluşturmak için OpenAI'nin DALL·E 2 API'sine bağlanır. Bir metin istemi sağladığınızda düğüm bunu OpenAI'nin sunucularına gönderir; sunucular karşılık gelen görselleri oluşturur ve ComfyUI'ye döndürür. Düğüm iki modda çalışabilir: yalnızca bir metin istemi kullanan standart görsel oluşturma veya hem bir görsel hem de maske sağlandığında görsel düzenleme modu. Düzenleme modunda, orijinal görselin hangi bölümlerinin değiştirilmesi gerektiğini belirlemek için maskeyi kullanır ve diğer alanları değiştirmeden bırakır.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `istem` | DALL·E için metin istemi (varsayılan: boş) | STRING | Evet | - |
-| `tohum` | Arka uçta henüz uygulanmadı (varsayılan: 0) | INT | Hayır | 0 ila 2147483647 |
-| `boyut` | Görüntü boyutu (varsayılan: "1024x1024") | COMBO | Hayır | "256x256"<br>"512x512"<br>"1024x1024" |
-| `n` | Üretilecek görüntü sayısı (varsayılan: 1) | INT | Hayır | 1 ila 8 |
-| `görüntü` | Görüntü düzenleme için isteğe bağlı referans görüntüsü. | IMAGE | Hayır | - |
-| `maske` | İnpainting için isteğe bağlı maske (beyaz alanlar değiştirilir) | MASK | Hayır | - |
+| `prompt` | DALL·E için metin istemi (varsayılan: boş) | STRING | Evet | - |
+| `seed` | arka uçta henüz uygulanmadı (varsayılan: 0) | INT | Hayır | 0 ile 2147483647 |
+| `size` | Görsel boyutu (varsayılan: "1024x1024") | COMBO | Hayır | "256x256"<br>"512x512"<br>"1024x1024" |
+| `n` | Kaç görsel oluşturulacağı (varsayılan: 1) | INT | Hayır | 1 ile 8 |
+| `image` | Görsel düzenleme için isteğe bağlı referans görseli. | IMAGE | Hayır | - |
+| `mask` | Inpainting için isteğe bağlı maske (beyaz alanlar değiştirilecektir) | MASK | Hayır | - |
 
-**Not:** Görüntü düzenleme modu yalnızca hem `image` hem de `mask` birlikte sağlandığında etkinleştirilir. Yalnızca biri sağlandığında hata oluşur. `mask`, `image` ile aynı boyutta olmalıdır; aksi halde hata oluşur. Düzenleme modunda, maskenin beyaz alanları değiştirilecek bölgeleri belirtir.
+**Not:** Görsel düzenleme modu yalnızca `image` ve `mask` birlikte sağlandığında etkinleştirilir. Bunlardan yalnızca biri sağlanırsa hata verilir. `mask`, `image` ile aynı boyutta olmalıdır; aksi halde hata verilir. Düzenleme modunda, maskenin beyaz alanları değiştirilecek bölgeleri belirtir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `IMAGE` | DALL·E 2 tarafından üretilen veya düzenlenen görüntü(ler) | IMAGE |
+| `IMAGE` | DALL·E 2'den oluşturulan veya düzenlenen görsel(ler) | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIDalle2/tr.md)
 

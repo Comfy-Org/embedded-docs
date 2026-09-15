@@ -1,22 +1,22 @@
 # ExtendIntermediateSigmas
 
-El nodo ExtendIntermediateSigmas toma una secuencia existente de valores sigma e inserta valores sigma intermedios adicionales entre ellos. Permite especificar cuántos pasos adicionales añadir, el método de espaciado para la interpolación, y límites opcionales de sigma inicial y final para controlar dónde ocurre la extensión dentro de la secuencia de sigma.
+El nodo ExtendIntermediateSigmas toma una secuencia existente de valores sigma e inserta valores sigma intermedios adicionales entre ellos. Permite especificar cuántos pasos adicionales agregar, el método de espaciado para la interpolación y límites opcionales de sigma de inicio y fin para controlar dónde ocurre la extensión dentro de la secuencia de sigma.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `sigmas` | La secuencia de sigma de entrada para extender con valores intermedios | SIGMAS | Sí | - |
-| `pasos` | Controla el número de valores sigma intermedios insertados entre cada par de sigmas existentes. El intervalo entre dos sigmas se divide en `steps` partes, produciendo `steps - 1` valores nuevos por par (predeterminado: 2, que inserta un valor por par) | INT | Sí | 1 a 100 |
-| `comenzar_en_sigma` | Límite superior de sigma para la extensión: solo extiende sigmas por debajo de este valor (predeterminado: -1.0, que significa infinito) | FLOAT | Sí | -1.0 a 20000.0 |
-| `terminar_en_sigma` | Límite inferior de sigma para la extensión: solo extiende sigmas por encima de este valor (predeterminado: 12.0) | FLOAT | Sí | 0.0 a 20000.0 |
+| `sigmas` | La secuencia de sigma de entrada que se extenderá con valores intermedios | SIGMAS | Sí | - |
+| `pasos` | Controla el número de valores sigma intermedios insertados entre cada par de sigmas existentes. El intervalo entre dos sigmas se divide en `steps` partes, lo que produce `steps - 1` valores nuevos por par (predeterminado: 2, que inserta un valor por par) | INT | Sí | 1 a 100 |
+| `comenzar_en_sigma` | Límite superior de sigma para la extensión. Solo se extienden los intervalos de sigma cuyo sigma inicial sea menor o igual a este valor. Cuando se establece en -1.0, se trata como infinito, lo que significa que no se aplica límite superior. Predeterminado: -1.0 | FLOAT | Sí | -1.0 a 20000.0 |
+| `terminar_en_sigma` | Límite inferior de sigma para la extensión. Solo se extienden los intervalos de sigma cuyo sigma inicial sea mayor o igual a este valor. Predeterminado: 12.0 | FLOAT | Sí | 0.0 a 20000.0 |
 | `espaciado` | El método de interpolación para espaciar los valores sigma intermedios (predeterminado: "linear") | COMBO | Sí | `"linear"`<br>`"cosine"`<br>`"sine"` |
 
-**Nota:** El nodo solo inserta sigmas intermedios entre pares de sigmas existentes donde el sigma actual es menor o igual a `start_at_sigma` y mayor o igual a `end_at_sigma`. Cuando `start_at_sigma` se establece en -1.0, se trata como infinito, lo que significa que solo se aplica el límite inferior `end_at_sigma`.
+**Nota:** El nodo solo inserta sigmas intermedios para los intervalos de sigma donde el sigma inicial sea menor o igual a `start_at_sigma` y mayor o igual a `end_at_sigma`. Cuando `start_at_sigma` se establece en -1.0, se trata como infinito, por lo que solo se aplica el límite inferior `end_at_sigma`.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
 | `sigmas` | La secuencia de sigma extendida con valores intermedios adicionales insertados | SIGMAS |
 

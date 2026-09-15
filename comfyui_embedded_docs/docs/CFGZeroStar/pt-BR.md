@@ -8,7 +8,7 @@ O nó CFGZeroStar aplica uma técnica especializada de escalonamento de orienta�
 
 | Parâmetro | Descrição | Tipo de Dado | Tipo de Entrada | Padrão | Intervalo |
 | --- | --- | --- | --- | --- | --- |
-| `modelo` | O modelo de difusão a ser modificado com a técnica de escalonamento de orientação CFGZeroStar | MODEL | obrigatório | - | - |
+| `modelo` | O modelo de difusão a ser modificado com a técnica de escalonamento de orientação CFGZeroStar | MODEL | Sim | - | - |
 
 ## Saídas
 

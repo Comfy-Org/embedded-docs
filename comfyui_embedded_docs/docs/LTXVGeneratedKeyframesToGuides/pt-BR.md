@@ -1,42 +1,38 @@
-# LTXVGeneratedKeyframesToGuides
+# LTXV Keyframes Gerados para Guias
 
-## Visão Geral
-
-O nó LTXV Gerados Keyframes para Guias fixa os keyframes gerados em uma etapa anterior como guias de imagem congelados em um canvas posterior. Ele decodifica os keyframes como quadros independentes, redimensiona-os se necessário e os escreve com uma máscara de ruído de 0 para evitar denoising adicional. Os índices registrados são escalados do canvas onde foram gerados para o canvas alvo, e você pode sobrescrever os índices de quadro para definir posições explicitamente.
+O nó LTXV Generated Keyframes to Guides fixa keyframes gerados de um estágio anterior como guias de imagem congeladas em um canvas posterior. Ele decodifica os keyframes como frames independentes, redimensiona-os se necessário e os grava com uma máscara de ruído 0 para que não passem por denoising novamente. Após um upscale temporal, os índices registrados são reescalados do canvas em que foram gerados para este; use `override_frame_indices` para definir posições explicitamente.
 
 ## Entradas
 
-| Parâmetro                 | Descrição                                                                 | Tipo de Dados | Obrigatório | Intervalo |
-|---------------------------|-----------------------------------------------------------------------------|-----------|----------|-------|
-| `positive`                | Condicionamento positivo com os keyframes fixados como guias de imagem.             | CONDITIONING | Sim      |       |
-| `negative`                | Condicionamento negativo com os keyframes fixados como guias de imagem.             | CONDITIONING | Sim      |       |
-| `vae`                     | O modelo VAE a ser usado para decodificar os keyframes.                           | MODEL      | Sim      |       |
-| `latent`                  | O vídeo latente alvo para adicionar os guias, por exemplo, o temporariamente escalado. | LATENT     | Sim      |       |
-| `keyframes`               | Saída de keyframes do LTXV Separar Gerados Keyframes, que carrega o índice de quadro de pixel em que cada keyframe foi gerado. | LATENT     | Sim      |       |
-| `strength`                | Força do guia. 1.0 é um pin rígido; valores mais baixos relaxam.                   | FLOAT      | Sim      | 0.0 - 10.0 |
-| `override_frame_indices` | Opcional — fixe em esses quadros de pixel em vez das posições registradas (ou escaladas) automaticamente. Forneça um índice por keyframe. Deixe em branco para reutilizar posições registradas ou para escalá-las quando o canvas alvo tiver um comprimento diferente (por exemplo, após temporal x2). | STRING    | Não      |       |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `positive` | Condicionamento positivo ao qual adicionar as guias de keyframes. | CONDITIONING | Sim | |
+| `negative` | Condicionamento negativo ao qual adicionar as guias de keyframes. | CONDITIONING | Sim | |
+| `vae` | A VAE usada para decodificar os keyframes se for necessário redimensionamento. | VAE | Sim | |
+| `latent` | O latent de vídeo de destino ao qual adicionar as guias, por exemplo, o que passou por upscale temporal. | LATENT | Sim | |
+| `keyframes` | A saída keyframes de LTXV Separate Generated Keyframes, que carrega o índice do frame em pixels no qual cada keyframe foi gerado. | LATENT | Sim | |
+| `strength` | Força da guia. 1.0 é uma fixação rígida; valores menores a relaxam. (padrão: 1.0) | FLOAT | Sim | 0.0 - 10.0 (passo 0.01) |
+| `override_frame_indices` | Opcional — fixar nesses frames em pixels em vez das posições registradas (ou escaladas automaticamente). Forneça um índice por keyframe. Deixe vazio para reutilizar as posições registradas ou para escalá-las quando o canvas de destino tiver um comprimento diferente (por exemplo, após x2 temporal). (padrão: "") | STRING | Não | |
 
 ## Saídas
 
-| Nome da Saída | Descrição                                                                 | Tipo de Dados |
-|-------------|-----------------------------------------------------------------------------|-----------|
-| `positive`  | Condicionamento positivo com os keyframes fixados como guias de imagem.             | CONDITIONING |
-| `negative`  | Condicionamento negativo com os keyframes fixados como guias de imagem.             | CONDITIONING |
-| `latent`    | Vídeo latente alvo com os keyframes adicionados como guias congelados.               | LATENT     |
+| Nome da Saída | Descrição | Tipo de Dados |
+|-------------|-----------|-----------|
+| `positive` | Condicionamento positivo com os keyframes fixados como guias de imagem. | CONDITIONING |
+| `negative` | Condicionamento negativo com os keyframes fixados como guias de imagem. | CONDITIONING |
+| `latent` | Latent de vídeo de destino com os keyframes adicionados como guias congeladas. | LATENT |
 
 ## Notas
 
-- O parâmetro `strength` controla a força com que os keyframes são fixados como guias. Um valor de 1.0 cria um pin rígido, enquanto valores mais baixos relaxam o pinning.
-- O parâmetro `override_frame_indices` permite que você especifique os quadros de pixel exatos onde os keyframes devem ser fixados. Se deixado em branco, o nó usará as posições registradas ou as escalonará se necessário.
-- O nó assume que o latente `keyframes` contém o índice de quadro de pixel para cada keyframe. Se isso não for o caso, o nó levantará um `ValueError`.
-- O nó suporta apenas um tamanho de lote de 1. Cada guia é codificada a partir de uma imagem, então não pode diferir entre elementos do lote.
-- O nó levantará um `ValueError` se o tensor `samples` na entrada `latent` não for um tensor 5D ou se o tamanho do lote não for 1.
-- O nó levantará um `ValueError` se o tensor `samples` na entrada `keyframes` não for um tensor 5D ou se o tamanho do lote não for 1.
-- O nó levantará um `ValueError` se a forma do tensor `samples` na entrada `keyframes` não coincidir com a forma do tensor `samples` na entrada `latent` após o redimensionamento.
-- O nó levantará um `ValueError` se o parâmetro `strength` estiver fora do intervalo de 0.0 a 10.0.
-- O nó levantará um `ValueError` se o parâmetro `override_frame_indices` não for uma lista de inteiros separados por vírgula ou se o número de índices não coincidir com o número de keyframes.
-- O nó levantará um `ValueError` se algum dos índices no parâmetro `override_frame_indices` estiver fora do intervalo de 1 a o número de quadros de pixel no canvas alvo.
-- O nó levantará um `ValueError` se o índice máximo no parâmetro `override_frame_indices` for maior que o número de quadros de pixel no canvas alvo.
+- A entrada `keyframes` deve estar conectada à saída keyframes de LTXV Separate Generated Keyframes. O nó gera um erro se o latent não carregar posições de keyframes gerados.
+- As entradas de condicionamento `positive` e `negative` devem vir das saídas positive e negative de LTXV Separate Generated Keyframes. O nó gera um erro se o condicionamento positivo ainda carregar keyframes gerados.
+- A entrada `latent` deve ser um latent de vídeo simples (tensor 5D). As guias devem ser adicionadas antes de mesclar os latents de vídeo e áudio com Concat AV Latent.
+- Apenas tamanho de lote 1 é suportado. Cada guia é codificada a partir de uma imagem, portanto não pode variar entre elementos do lote.
+- O número de keyframes no latent `keyframes` deve corresponder ao número de posições registradas; caso contrário, um erro será gerado.
+- Se `override_frame_indices` for deixado vazio, as posições registradas serão usadas. Se o canvas de destino tiver um número de frames diferente do canvas em que os keyframes foram gerados, os índices registrados serão escalados automaticamente.
+- Se `override_frame_indices` for fornecido, ele deve conter um índice inteiro por keyframe, separado por vírgulas ou espaços. Os índices devem ser únicos e estar entre 1 e (número de frames em pixels no latent de destino - 1). Caso contrário, um erro será gerado.
+- Se qualquer índice final de keyframe for maior ou igual ao número de frames em pixels no latent de destino, o nó gera um erro. Isso pode acontecer quando o destino foi redimensionado temporalmente após os keyframes serem gerados.
+- O parâmetro `strength` tem um mínimo de 0.0 e um máximo de 10.0.
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVGeneratedKeyframesToGuides/pt-BR.md)
 

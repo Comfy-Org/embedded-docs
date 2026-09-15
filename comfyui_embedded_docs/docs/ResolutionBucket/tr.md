@@ -1,22 +1,24 @@
 # Çözünürlük Kovası
 
-Bu düğüm, bir latent görüntü listesini ve bunlara karşılık gelen conditioning verilerini çözünürlüklerine göre düzenler. Aynı yükseklik ve genişliğe sahip öğeleri gruplandırarak her benzersiz çözünürlük için ayrı gruplar (batch) oluşturur. Bu işlem, modellerin aynı boyuttaki birden çok öğeyi birlikte işlemesine olanak tanıdığından, verimli eğitim için veri hazırlamada kullanışlıdır.
+Bu düğüm, latent görüntülerden oluşan bir listeyi ve bunlara karşılık gelen koşullandırma verilerini çözünürlüklerine göre düzenler. Aynı yükseklik ve genişliği paylaşan öğeleri bir araya gruplar ve her benzersiz çözünürlük için ayrı batch’ler oluşturur. Bu işlem, verileri verimli eğitim için hazırlamada kullanışlıdır; çünkü modellerin aynı boyuttaki birden çok öğeyi birlikte işlemesine olanak tanır.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Tipi | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `latentler` | Çözünürlüğe göre gruplanacak latent sözlüklerinin listesi. | LATENT | Evet | N/A |
-| `koşullandırma` | Conditioning listelerinin listesi (`latents` uzunluğuyla eşleşmelidir). | CONDITIONING | Evet | N/A |
+| `latentler` | Çözünürlüğe göre gruplandırılacak latent sözlükleri listesi. | LATENT | Evet | N/A |
+| `koşullandırma` | Koşullandırma listeleri listesi (`latents` uzunluğuyla eşleşmelidir). | CONDITIONING | Evet | N/A |
 
-**Not:** `latents` listesindeki öğe sayısı, `conditioning` listesindeki öğe sayısıyla tam olarak eşleşmelidir. Sayılar eşleşmezse düğüm bir hata verir. Her latent sözlüğü bir grup örnek içerebilir ve ilgili conditioning listesi, bu grup için eşleşen sayıda conditioning öğesi içermelidir. Latent örnekleri, görüntüler için (B, C, H, W) veya videolar için (B, T, C, H, W) şeklinde olabilir; düğüm bunları yalnızca yükseklik ve genişliğe göre gruplar.
+**Not:** Her iki girdi de liste türünde girdilerdir; yani düğüm her biri için bir öğe listesi alır. `latents` listesindeki öğe sayısı, `conditioning` listesindeki öğe sayısıyla tam olarak eşleşmelidir; sayılar eşleşmezse düğüm hata verir. Her latent sözlüğü bir örneklem batch’i içerebilir ve ilgili koşullandırma listesi bu batch için eşleşen sayıda koşullandırma öğesi içermelidir; çünkü batch’teki her örneklem kendi koşullandırma girdisiyle eşleştirilir. Latent örneklemleri görüntüler için (B, C, H, W) veya videolar için (B, T, C, H, W) şeklinde olabilir; düğüm bunları yalnızca yükseklik ve genişliğe göre gruplar.
 
 ## Çıktılar
 
-| Çıktı Adı | Açıklama | Veri Tipi |
+| Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `latentler` | Çözünürlük grubu başına bir tane olacak şekilde gruplandırılmış latent sözlüklerinin listesi. | LATENT |
-| `koşullandırma` | Çözünürlük grubu başına bir tane olacak şekilde conditioning listelerinin listesi. | CONDITIONING |
+| `latents` | Çözünürlük grubu başına bir tane olacak şekilde, batch’lenmiş latent sözlükleri listesi. | LATENT |
+| `conditioning` | Çözünürlük grubu başına bir tane olacak şekilde, koşullandırma listeleri listesi. | CONDITIONING |
+
+**Not:** Her iki çıktı da liste türünde çıktılardır. Her çıktı listesi, girdide bulunan her benzersiz çözünürlük (yükseklik ve genişlik) için bir giriş içerir; bu girişler çözünürlüklerin ilk karşılaşılma sırasına göredir. Her gruptaki latentler yeni bir batch boyutu boyunca yığılır.
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionBucket/tr.md)
 

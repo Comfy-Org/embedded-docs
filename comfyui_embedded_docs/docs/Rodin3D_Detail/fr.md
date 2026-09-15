@@ -7,9 +7,9 @@ Le nœud Rodin 3D Detail génère des actifs 3D détaillés à l'aide de l'API R
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `Images` | Images d'entrée utilisées pour la génération du modèle 3D. Plusieurs images peuvent être fournies. | IMAGE | Oui | - |
-| `Graine` | Valeur de graine aléatoire pour des résultats reproductibles | INT | Oui | - |
-| `Type_Matériau` | Type de matériau à appliquer au modèle 3D | STRING | Oui | - |
-| `Nombre_Polygones` | Nombre de polygones cible pour le modèle 3D généré. Détermine le niveau de qualité du maillage. | STRING | Oui | - |
+| `Graine` | Valeur de graine aléatoire pour des résultats reproductibles | INT | Non | - |
+| `Type_Matériau` | Type de matériau à appliquer au modèle 3D | STRING | Non | - |
+| `Nombre_Polygones` | Nombre de polygones cible pour le modèle 3D généré. Détermine le niveau de qualité du maillage. | STRING | Non | - |
 
 ## Sorties
 

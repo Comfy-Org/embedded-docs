@@ -1,19 +1,17 @@
 # WanMoveConcatTrack
 
-WanMoveConcatTrack düğümü, iki hareket takibi veri kümesini tek ve daha uzun bir dizi halinde birleştirir. Bu, girdi izlerindeki iz yollarını ve görünürlük maskelerini ilgili boyutları boyunca birleştirerek çalışır. Yalnızca bir iz girdisi sağlanırsa, veriyi değiştirmeden doğrudan çıktıya iletir.
-
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `tracks_1` | Birleştirilecek ilk hareket takibi veri kümesi. | TRACKS | Evet |  |
-| `tracks_2` | İsteğe bağlı ikinci hareket takibi veri kümesi. Sağlanmazsa, `tracks_1` doğrudan çıktıya iletilir. | TRACKS | Hayır |  |
+| `tracks_1` | Birleştirilecek ilk hareket izleme verisi kümesi. | TRACKS | Evet |  |
+| `tracks_2` | İsteğe bağlı ikinci hareket izleme verisi kümesi. Sağlanmazsa, `tracks_1` doğrudan çıktıya geçirilir. | TRACKS | Hayır |  |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `tracks` | Girdilerden birleştirilmiş `track_path` ve `track_visibility` içeren birleştirilmiş hareket takibi verisi. | TRACKS |
+| `tracks` | Girişlerden gelen birleştirilmiş `track_path` ve `track_visibility` değerlerini içeren birleştirilmiş hareket izleme verisi. `tracks_2` bağlı olmadığında `tracks_1` değerini değiştirmeden döndürür. | TRACKS |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveConcatTrack/tr.md)
 

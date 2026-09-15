@@ -1,34 +1,35 @@
 # Nano Banana Pro (Google Gemini Image)
 
-GeminiImage2Node, Google Vertex AI Gemini modelini kullanarak görüntüler oluşturur veya düzenler. Bir metin istemi ve isteğe bağlı olarak referans görüntüler veya dosyalar sağlarsınız; düğüm bunları API'ye gönderir ve oluşturulan görüntüyü, istendiğinde ayrıca bir metin yanıtını döndürür.
+Google Vertex AI Gemini API'si aracılığıyla görselleri eşzamanlı olarak oluşturun veya düzenleyin. Bir metin istemi sağlarsınız ve isteğe bağlı olarak referans görseller veya Gemini girdi dosyaları ekleyebilirsiniz. Düğüm, oluşturulan görseli ve seçilen yanıt moduna bağlı olarak bir metin yanıtı döndürür.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Oluşturulacak görüntüyü veya uygulanacak düzenlemeleri tanımlayan metin istemi. Modelin izlemesi gereken kısıtlamaları, stilleri veya ayrıntıları ekleyin. İstem, boşluk karakterleri kaldırıldıktan sonra en az bir karakter içermelidir. | STRING | Evet | N/A |
-| `model` | Oluşturma için kullanılacak belirli Gemini modeli. "Nano Banana 2 (Gemini 3.1 Flash Image)" seçeneği dahili olarak `gemini-3.1-flash-image` modeline, "gemini-3-pro-image-preview" ise `gemini-3-pro-image` modeline eşlenir. | COMBO | Evet | `"gemini-3-pro-image-preview"`<br>`"Nano Banana 2 (Gemini 3.1 Flash Image)"` |
-| `seed` | Tohum (seed) belirli bir değere sabitlendiğinde, model tekrarlanan istekler için aynı yanıtı sağlamaya çalışır. Belirleyici (deterministik) çıktı garanti edilmez. Ayrıca, modeli veya sıcaklık gibi parametre ayarlarını değiştirmek, aynı tohum değerini kullansanız bile yanıtta farklılıklara neden olabilir. Varsayılan olarak rastgele bir tohum değeri kullanılır. Varsayılan: 42. | INT | Evet | 0 ile 18446744073709551615 |
-| `aspect_ratio` | 'auto' olarak ayarlanırsa, girdi görüntünüzün en-boy oranıyla eşleşir; hiçbir görüntü sağlanmazsa, genellikle 16:9 en-boy oranında bir görüntü oluşturulur. Varsayılan: "auto". | COMBO | Evet | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"21:9"` |
-| `resolution` | Hedef çıktı çözünürlüğü. 2K/4K için yerel Gemini büyütücü kullanılır. | COMBO | Evet | `"1K"`<br>`"2K"`<br>`"4K"` |
-| `response_modalities` | Yalnızca görüntü çıktısı için 'IMAGE' veya hem oluşturulan görüntüyü hem de metin yanıtını döndürmek için 'IMAGE+TEXT' seçeneğini belirleyin. | COMBO | Evet | `"IMAGE+TEXT"`<br>`"IMAGE"` |
-| `images` | İsteğe bağlı referans görüntü(ler)i. Birden fazla görüntü eklemek için Batch Images düğümünü kullanın (en fazla 14). | IMAGE | Hayır | N/A |
+| `prompt` | Oluşturulacak görseli veya uygulanacak düzenlemeleri açıklayan metin istemi. Modelin uyması gereken tüm kısıtlamaları, stilleri veya ayrıntıları ekleyin. Boşluklar kaldırıldıktan sonra istem en az bir karakter içermelidir. | STRING | Evet | N/A |
+| `model` | Oluşturma için kullanılacak Gemini modeli. "Nano Banana 2 (Gemini 3.1 Flash Image)" seçeneği `gemini-3.1-flash-image` olarak gönderilir; "gemini-3-pro-image-preview" ise `gemini-3-pro-image` olarak gönderilir. | COMBO | Evet | "gemini-3-pro-image-preview"<br>"Nano Banana 2 (Gemini 3.1 Flash Image)" |
+| `seed` | Seed belirli bir değere sabitlendiğinde, model yinelenen istekler için aynı yanıtı sağlamak adına elinden geleni yapar. Deterministik çıktı garanti edilmez. Ayrıca, sıcaklık gibi model veya parametre ayarlarının değiştirilmesi, aynı seed değerini kullansanız bile yanıtta değişikliklere neden olabilir. Varsayılan olarak rastgele bir seed değeri kullanılır. Varsayılan: 42. | INT | Evet | 0 ile 18446744073709551615 |
+| `aspect_ratio` | Eğer 'auto' olarak ayarlanırsa, girdi görselinizin en-boy oranıyla eşleşir; görsel sağlanmazsa genellikle 16:9 kare oluşturulur. Varsayılan: "auto". | COMBO | Evet | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"4:5"<br>"5:4"<br>"9:16"<br>"16:9"<br>"21:9" |
+| `resolution` | Hedef çıktı çözünürlüğü. 2K/4K için yerel Gemini büyütücüsü kullanılır. | COMBO | Evet | "1K"<br>"2K"<br>"4K" |
+| `response_modalities` | Yalnızca görsel çıktısı için 'IMAGE' veya hem oluşturulan görseli hem de metin yanıtını döndürmek için 'IMAGE+TEXT' seçin. Gelişmiş ayar. | COMBO | Evet | "IMAGE+TEXT"<br>"IMAGE" |
+| `images` | İsteğe bağlı referans görsel(ler). Birden fazla görsel eklemek için Batch Images düğümünü kullanın (en fazla 14). | IMAGE | Hayır | N/A |
 | `files` | Model için bağlam olarak kullanılacak isteğe bağlı dosya(lar). Gemini Generate Content Input Files düğümünden girdi kabul eder. | GEMINI_INPUT_FILES | Hayır | N/A |
-| `system_prompt` | Bir yapay zekanın davranışını belirleyen temel yönergeler. Varsayılan: Görüntü üretimi için önceden tanımlanmış bir sistem istemi. | STRING | Hayır | N/A |
+| `system_prompt` | Bir yapay zekânın davranışını belirleyen temel talimatlar. Varsayılan: görsel oluşturma için önceden tanımlanmış bir sistem istemi. Gelişmiş ayar. | STRING | Hayır | N/A |
 
 **Kısıtlamalar:**
 
-* `images` girdisi en fazla 14 görüntü destekler. Daha fazlası sağlanırsa bir hata oluşturulur.
-* 10'dan fazla görüntü sağlandığında, ilk 10'u URL referansları olarak yüklenir ve kalan görüntüler istekte satır içi (inline) olarak gönderilir.
-* `files` girdisi, `GEMINI_INPUT_FILES` veri türünü çıktı olarak veren bir düğüme bağlanmalıdır.
-* `response_modalities` "IMAGE" olarak ayarlandığında, yalnızca görüntü döndürülür ve metin çıktısı boş olur.
+* `images` girdisi en fazla 14 görseli destekler. Daha fazlası sağlanırsa bir hata oluşur.
+* 10'dan fazla görsel sağlandığında, ilk 10 görsel URL referansı olarak yüklenir ve kalan görseller istekte satır içi olarak gönderilir.
+* `files` girdisi, `GEMINI_INPUT_FILES` veri türünü çıkaran bir düğüme bağlanmalıdır.
+* `response_modalities` `"IMAGE"` olarak ayarlandığında, yalnızca görsel döndürülür ve metin çıktısı boş olur.
+* `prompt` girdisi doğrulanır ve boşluklar kaldırıldıktan sonra en az bir karakter içermelidir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `image` | Gemini modeli tarafından oluşturulan veya düzenlenen görüntü. | IMAGE |
-| `string` | Modelden gelen metin yanıtı. `response_modalities` "IMAGE" olarak ayarlanırsa bu çıktı boş olur. | STRING |
+| `image` | Gemini modeli tarafından oluşturulan veya düzenlenen görsel. | IMAGE |
+| `string` | Modelden gelen metin yanıtı. `response_modalities` `"IMAGE"` olarak ayarlanırsa bu çıktı boş olur. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiImage2Node/tr.md)
 

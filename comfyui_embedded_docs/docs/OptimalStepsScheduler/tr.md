@@ -1,22 +1,24 @@
 # OptimalAdımlarZamanlayıcı
 
-OptimalStepsScheduler düğümü, difüzyon örneklemesi sırasında kullanılmak üzere bir gürültü takvimi (bir sigma değerleri dizisi) oluşturur. Temel gürültü seviyelerini seçilen model türünden alır, denoising kısmen uygulandığında takvimi ayarlar ve döndürülen sigmaların istenen adım sayısıyla eşleşmesi için seviyeleri enterpolasyon yapar.
+OptimalStepsScheduler düğümü, difüzyon örneklemesi sırasında kullanılmak üzere bir gürültü çizelgesi (bir sigma değerleri dizisi) oluşturur. Seçilen model türünden temel gürültü seviyelerini seçer, gürültü giderme yalnızca kısmen uygulandığında çizelgeyi ayarlar ve döndürülen sigmaların istenen adım sayısıyla eşleşmesi için seviyeleri enterpolasyonla hesaplar.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model_türü` | Gürültü seviyesi hesaplaması için kullanılacak difüzyon modelinin türü. | COMBO | Evet | "FLUX"<br>"Wan"<br>"Chroma" |
-| `adımlar` | Hesaplanacak toplam örnekleme adımı sayısı (varsayılan: 20). | INT | Evet | 3 ile 1000 |
-| `gürültü_azaltma` | Denoising gücünü kontrol eder, efektif adım sayısını ayarlar (varsayılan: 1.0). | FLOAT | Evet | 0.0 ile 1.0 (step: 0.01) |
+| `model_türü` | Gürültü seviyesi hesaplaması için kullanılacak difüzyon modeli türü. Her seçenek kendi önceden tanımlanmış gürültü seviyesi tablosunu kullanır. | COMBO | Evet | "FLUX"<br>"Wan"<br>"Chroma" |
+| `adımlar` | Hesaplanacak toplam örnekleme adımı sayısı (varsayılan: 20). | INT | Evet | 3 - 1000 |
+| `gürültü_azaltma` | Gürültü giderme gücünü kontrol eder; bu güç, etkin adım sayısını ayarlar (varsayılan: 1.0). | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
 
-**Not:** `denoise` değeri 1.0'dan küçük olduğunda, düğüm toplam efektif adım sayısı olarak `round(steps * denoise)` kullanır. `denoise` 0.0 ise, düğüm boş bir tensör döndürür.
+**Not:** Seçilen `model_type` için temel gürültü seviyesi tablosu, uzunluğu `steps + 1` değerine eşit olmadığında log-doğrusal enterpolasyonla yeniden örneklenir; böylece çıktı her zaman istenen adım sayısıyla eşleşir.
+
+**Not:** `denoise` 1.0'den küçük olduğunda, düğüm `round(steps * denoise)` değerini toplam etkin adım sayısı olarak kullanır ve çizelgenin yalnızca eşleşen kuyruk kısmını tutar. `denoise` 0.0 veya daha düşükse, düğüm boş bir tensör döndürür.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `sigmas` | Difüzyon örneklemesi için gürültü takvimini temsil eden sigma değerleri dizisi. | SIGMAS |
+| `sigmas` | Difüzyon örneklemesi için gürültü çizelgesini temsil eden sigma değerleri dizisi. Dizideki son değer her zaman 0 olarak ayarlanır. | SIGMAS |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OptimalStepsScheduler/tr.md)
 

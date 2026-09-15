@@ -1,38 +1,38 @@
 # Wan 2.7 Referencia a Video
 
-Este nodo genera un video que muestra a una persona u objeto basado en los materiales de referencia proporcionados. Utiliza el modelo Wan 2.7 para crear videos a partir de una indicación de texto, admitiendo actuaciones de un solo personaje e interacciones de múltiples personajes. Debe proporcionar al menos un video o imagen de referencia para que la generación funcione.
+Este nodo genera un video que muestra a una persona o un objeto basándose en los materiales de referencia proporcionados. Utiliza el modelo Wan 2.7 para crear videos a partir de un prompt de texto, y admite actuaciones de un solo personaje e interacciones entre varios personajes. Debes proporcionar al menos un video de referencia o una imagen de referencia para que la generación funcione.
 
 ## Entradas
 
 ### Entradas comunes
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo específico a utilizar para la generación de videos. | DYNAMIC_COMBO | Sí | "wan2.7-r2v" |
-| `semilla` | Semilla a utilizar para la generación, que ayuda a controlar la aleatoriedad del resultado (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
-| `marca_de_agua` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False). Este es un ajuste avanzado. | BOOLEAN | Sí | True<br>False |
+| `modelo` | El modelo específico que se usará para la generación de video. | DYNAMIC_COMBO | Sí | "wan2.7-r2v" |
+| `semilla` | Semilla que se usará para la generación, lo que ayuda a controlar la aleatoriedad del resultado (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
+| `marca_de_agua` | Indica si se debe agregar una marca de agua generada por IA al resultado (predeterminado: False). Esta es una configuración avanzada. | BOOLEAN | Sí | True<br>False |
 
 ### Entradas de wan2.7-r2v
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `prompt` | Indicación que describe el video. Utilice identificadores como 'character1' y 'character2' para referirse a los personajes de referencia. Debe contener al menos un personaje. | STRING | Sí | - |
-| `negative_prompt` | Indicación negativa que describe lo que se debe evitar (predeterminado: vacío). | STRING | No | - |
+| `prompt` | Prompt que describe el video. Usa identificadores como 'character1' y 'character2' para referirte a los personajes de referencia. Debe contener al menos un personaje. | STRING | Sí | - |
+| `negative_prompt` | Prompt negativo que describe lo que se debe evitar (predeterminado: vacío). | STRING | No | - |
 | `resolution` | La resolución del video de salida. | COMBO | Sí | "720P"<br>"1080P" |
 | `ratio` | La relación de aspecto del video de salida. | COMBO | Sí | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
 | `duration` | La duración del video generado en segundos (predeterminado: 5). | INT | Sí | 2 a 10 |
 
 ### Entradas de referencia
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `reference_videos` | Espacio ampliable: conecte hasta 3 videos de referencia (espacios `video1` a `video3`). Se requiere al menos un video o imagen de referencia en total. | VIDEO | No | 0 a 3 elementos |
-| `reference_images` | Espacio ampliable: conecte hasta 5 imágenes de referencia (espacios `image1` a `image5`). Se requiere al menos un video o imagen de referencia en total. | IMAGE | No | 0 a 5 elementos |
+| `reference_videos` | Ranura ampliable: conecta hasta 3 videos de referencia (ranuras `video1` a `video3`). En total, se requiere al menos un video o una imagen de referencia. | VIDEO | No | 0 a 3 items |
+| `reference_images` | Ranura ampliable: conecta hasta 5 imágenes de referencia (ranuras `image1` a `image5`). En total, se requiere al menos un video o una imagen de referencia. | IMAGE | No | 0 a 5 items |
 
 **Restricciones importantes:**
 
-* Debe proporcionar al menos un video o imagen de referencia en las entradas `reference_videos` o `reference_images`.
-* El número total combinado de videos e imágenes de referencia no puede superar 5.
+* Debes proporcionar al menos un video de referencia o una imagen de referencia en las entradas `reference_videos` o `reference_images`. De lo contrario, el nodo genera un error.
+* El número total combinado de videos de referencia e imágenes de referencia no puede superar los 5.
 * La entrada `prompt` debe contener al menos un personaje.
 
 ## Salidas

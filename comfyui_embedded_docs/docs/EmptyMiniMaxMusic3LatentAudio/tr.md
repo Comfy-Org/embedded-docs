@@ -1,21 +1,21 @@
-# EmptyMiniMaxMusic3LatentAudio
+# Boş MiniMax Music3 Latent Ses
 
-Bu düğüm, MiniMax Music3 modeli için boş (sıfırlarla doldurulmuş) bir ses latent tensörü oluşturur. İstenen süreyi saniye cinsinden karşılık gelen ses çerçevelerine dönüştürür ve doğru boyutta boş bir latent tensör üretir; bu tensör, müzik üretimi için başlangıç noktası olarak kullanılmaya hazırdır.
+Bu düğüm, MiniMax Music3 modeli için boş (sıfırlarla doldurulmuş) bir ses latenti oluşturur. Saniye cinsinden istenen süreyi karşılık gelen ses çerçevesi sayısına dönüştürür ve müzik üretimi için başlangıç noktası olarak kullanılmaya hazır, doğru boyutta boş bir latent tensörü üretir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `seconds` | Ses latent süresi (saniye cinsinden; varsayılan: 120.0). Değer, ses çerçevelerine dönüştürülür ve modelin desteklediği süre sınırlarına kırpılır. | FLOAT | Evet | 0.04 to (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND), step 0.04 |
-| `batch_size` | Bir batch içinde oluşturulacak ses latent sayısı (varsayılan: 1). | INT | Evet | 1 ile 4096 |
+| `seconds` | Ses latentinin saniye cinsinden süresi (varsayılan: 120.0). Değer, ses çerçevelerine dönüştürülür ve modelin desteklediği süre sınırlarına sınırlandırılır. | FLOAT | Evet | 0.04 ile (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND) arası, adım 0.04 |
+| `batch_size` | Tek bir partide üretilecek ses latenti sayısı (varsayılan: 1). | INT | Evet | 1 ile 4096 |
 
-Not: `seconds` değeri en yakın ses çerçevesine yuvarlanır ve minimum 1 çerçeve ile maksimum `MAX_AUDIO_FRAMES` çerçeve arasında sınırlanır; bu nedenle gerçek latent uzunluğu, girilen tam değerden biraz farklı olabilir.
+Not: `seconds` değeri en yakın ses çerçevesine yuvarlanır ve en az 1 çerçeve, en fazla `MAX_AUDIO_FRAMES` çerçeve olacak şekilde sınırlandırılır; bu nedenle gerçek latent uzunluğu girilen kesin değerden biraz farklı olabilir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `LATENT` | Şekli (batch_size, 128, latent_length) olan sıfırlarla doldurulmuş bir ses latent tensörü. Örneği, 512 zamansal alt örnekleme oranıyla ses verisi olarak işaretleyen meta veriler içerir. | LATENT |
+| `LATENT` | (batch_size, 128, latent_length) şeklinde sıfırlarla doldurulmuş bir ses latent tensörü. Örneği 512 zamansal küçültme oranıyla ses verisi olarak işaretleyen meta verileri içerir. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyMiniMaxMusic3LatentAudio/tr.md)
 

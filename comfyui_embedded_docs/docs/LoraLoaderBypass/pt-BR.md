@@ -1,22 +1,24 @@
 # Carregar LoRA (Bypass) (Para depuração)
 
-O nó LoraLoaderBypass aplica uma LoRA (Low-Rank Adaptation) a um modelo de difusão e a um modelo CLIP em um modo especial de "bypass". Diferentemente de um carregador de LoRA padrão, este método não modifica permanentemente os pesos do modelo base. Em vez disso, ele calcula a saída adicionando o efeito da LoRA à passagem direta normal do modelo, o que é útil para treinamento ou para trabalhar com modelos cujos pesos foram descarregados (offloaded).
+O nó LoraLoaderBypass aplica um LoRA (Low-Rank Adaptation) a um modelo de difusão e a um modelo CLIP em um modo especial de "bypass". Diferentemente de um carregador LoRA padrão, este método não modifica permanentemente os pesos do modelo base. Em vez disso, ele calcula o resultado adicionando a contribuição do LoRA à passagem direta normal do modelo, o que é útil para treinamento ou ao trabalhar com modelos que têm seus pesos descarregados.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo de difusão ao qual a LoRA será aplicada. | MODEL | Sim | - |
-| `clip` | O modelo CLIP ao qual a LoRA será aplicada. | CLIP | Sim | - |
-| `lora_name` | O nome da LoRA. Os arquivos de LoRA disponíveis são carregados da pasta `loras`. | COMBO | Sim | Lista de arquivos LoRA disponíveis |
-| `strength_model` | O quanto modificar o modelo de difusão. Este valor pode ser negativo (padrão: 1.0). | FLOAT | Sim | -100.0 a 100.0 (passo: 0.01) |
-| `strength_clip` | O quanto modificar o modelo CLIP. Este valor pode ser negativo (padrão: 1.0). | FLOAT | Sim | -100.0 a 100.0 (passo: 0.01) |
+| `model` | O modelo de difusão ao qual o LoRA será aplicado. | MODEL | Sim | - |
+| `clip` | O modelo CLIP ao qual o LoRA será aplicado. | CLIP | Sim | - |
+| `lora_name` | O nome do LoRA. Os arquivos LoRA disponíveis são carregados da pasta `loras`. | COMBO | Sim | Lista de arquivos LoRA disponíveis |
+| `strength_model` | Com que intensidade modificar o modelo de difusão. Este valor pode ser negativo (padrão: 1.0). | FLOAT | Sim | -100.0 a 100.0 (passo: 0.01) |
+| `strength_clip` | Com que intensidade modificar o modelo CLIP. Este valor pode ser negativo (padrão: 1.0). | FLOAT | Sim | -100.0 a 100.0 (passo: 0.01) |
 
-**Nota:** Se ambos `strength_model` e `strength_clip` forem definidos como 0, o nó retorna as entradas `model` e `clip` originais, sem modificação, sem processamento.
+**Nota:** Se tanto `strength_model` quanto `strength_clip` forem definidos como 0, o nó retorna as entradas `model` e `clip` originais e não modificadas, sem processamento.
+
+**Nota:** O arquivo LoRA selecionado é armazenado em cache após ser carregado pela primeira vez. Ele só é lido novamente do disco quando um `lora_name` diferente é escolhido.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
+| Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
 | `MODEL` | O modelo de difusão modificado. | MODEL |
 | `CLIP` | O modelo CLIP modificado. | CLIP |

@@ -1,19 +1,19 @@
-# TripoRigCheckNode
+# Tripo: Comprobación de rig
 
-Este nodo envía el ID de una tarea de modelo 3D de Tripo completada a la API de Tripo y comprueba si a ese modelo se le puede aplicar rigging. Espera a que finalice la comprobación y, a continuación, devuelve un resultado de sí/no junto con el tipo de esqueleto que Tripo recomienda para el modelo.
+Este nodo envía el ID de una tarea completada de modelo 3D de Tripo a la API de Tripo y comprueba si se le puede aplicar rigging a ese modelo. Espera a que finalice la comprobación y luego devuelve un resultado de sí/no junto con el tipo de esqueleto que Tripo recomienda para el modelo.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model_task_id` | El ID de la tarea de Tripo del modelo a analizar. Identifica un modelo que fue previamente generado, importado o creado de otra manera mediante una tarea de Tripo. | STRING | Sí | N/A |
+| `model_task_id` | El ID de tarea de Tripo del modelo que se va a analizar. Identifica un modelo que se generó previamente, se importó o se creó de otro modo mediante una tarea de Tripo. | MODEL_TASK_ID | Sí | N/A |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `riggable` | Si el modelo puede recibir rigging. | BOOLEAN |
-| `rig_type` | Esqueleto recomendado: biped, quadruped, hexapod, octopod, avian, serpentine o aquatic; 'others' cuando el modelo no puede recibir rigging. | STRING |
+| `riggable` | Indica si se le puede aplicar rigging al modelo. | BOOLEAN |
+| `rig_type` | Esqueleto recomendado: biped, quadruped, hexapod, octopod, avian, serpentine o aquatic; 'others' cuando el modelo no admite rigging. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRigCheckNode/es.md)
 

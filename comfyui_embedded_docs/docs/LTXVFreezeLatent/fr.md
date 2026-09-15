@@ -1,31 +1,24 @@
-# LTXVFreezeLatent
+# LTXV Figer le latent
 
-## Aperçu
-
-Le nœud LTXV Freeze Latent est conçu pour définir le noise_mask sur 0 pour un latent donné, assurant ainsi que le latent reste propre pendant l'échantillonnage. Il est particulièrement utile pour geler les latents audio ou vidéo pour éviter le débruitage, qui peut être appliqué avant la concaténation audio et vidéo pour l'attention croisée ou pour tout latent qui ne devrait pas être débruité.
+Le nœud LTXV Freeze Latent définit le masque de bruit d'un latent à zéro, ce qui garde ce latent propre et inchangé pendant l'exécution de l'échantillonnage. Il fonctionne à la fois sur les latents vidéo et audio, de sorte qu'un latent peut être figé avant d'être concaténé avec d'autres ou lorsqu'il ne doit pas du tout être débruité.
 
 ## Entrées
 
-| Paramètre | Description | Type de données | Obligatoire | Gamme |
-|-----------|-------------|-----------|----------|-------|
-| `latent` | Latent vidéo ou audio à geler. L'audio est 4D ; la vidéo est 5D. | LATENT | Oui | N/A |
-| `samples` | Le tenseur contenant les échantillons latents. | TENSOR | Oui | Audio : 4D (batch, channels, frames, samples) ; Vidéo : 5D (batch, channels, height, width, frames) |
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `latent` | Latent vidéo ou audio à figer. L'audio est en 4D ; la vidéo est en 5D. | LATENT | Oui | N/A |
+
+### Contraintes
+
+- Le latent doit contenir un tenseur simple. Un latent audio-vidéo concaténé n'est pas accepté ; il doit d'abord être séparé avec le nœud Separate AV Latent.
+- Seuls les latents 4D (audio) et 5D (vidéo) sont pris en charge. Toute autre forme provoque une erreur.
+- Le masque de bruit généré est créé avec des zéros en utilisant le même dispositif que le tenseur d'entrée. Pour les latents vidéo, le masque a la forme (batch, 1, frames, 1, 1) ; pour les latents audio, il a la forme (batch, 1, frames, 1).
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
-|-------------|-------------|-----------|
-| `latent` | Le latent avec un noise_mask défini sur 0, assurant ainsi qu'il reste propre pendant l'échantillonnage. | LATENT |
-
-## Notes
-
-- Le tenseur `samples` doit être un tenseur simple et non un latent audio-video concaténé. Si c'est un latent concaténé, il doit être divisé à l'aide du nœud Séparer le latent audio-video en premier.
-- La sortie `latent` aura un noise_mask de zéros, ce qui empêche le débruitage pour le latent spécifié.
-- Le nœud prend en charge à la fois les latents audio et vidéo, avec des formes de tenseurs différentes pour chacun.
-- Si la forme du tenseur `samples` ne correspond pas à la forme audio ou vidéo attendue, une ValueError sera levée.
-```
-
-**Note:** La mise en œuvre réelle peut avoir des contraintes ou des comportements supplémentaires non explicitement documentés ici. Toujours vous référer au code source le plus récent pour obtenir les informations les plus précises.
+|---------------|-------------|-----------------|
+| `latent` | Le latent d'entrée avec un masque de bruit de zéros ajouté, afin qu'il reste propre pendant l'échantillonnage. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVFreezeLatent/fr.md)
 

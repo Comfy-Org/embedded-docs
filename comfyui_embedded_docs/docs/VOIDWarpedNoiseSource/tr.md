@@ -1,20 +1,18 @@
 # VOIDWarpedNoiseSource
 
-## Genel Bakış
-
-Bu düğüm, bir LATENT'i (VOIDWarpedNoise düğümünün çıktısı gibi) bir NOISE kaynağına dönüştürür. Bu, çarpıtılmış gürültüyü SamplerCustomAdvanced düğümüyle kullanarak daha kontrollü görüntü üretimi yapmanızı sağlar.
+Bu düğüm, bir LATENT'i (örneğin VOIDWarpedNoise düğümünün çıktısı gibi) bir NOISE kaynağına dönüştürür. Bu, önceden hesaplanmış warped noise'ı, SamplerCustomAdvanced gibi bir gürültü kaynağı bekleyen düğümlere beslemenizi sağlar.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `warped_noise` | VOIDWarpedNoise düğümünden alınan çarpıtılmış gürültü latent'i | LATENT | Evet | N/A |
+| `warped_noise` | VOIDWarpedNoise düğümünden alınan warped noise latent'i | LATENT | Evet | N/A |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `NOISE` | SamplerCustomAdvanced ile kullanılabilen bir gürültü kaynağı | NOISE |
+| `NOISE` | Sağlanan latent'i saran ve SamplerCustomAdvanced ile kullanılabilen bir gürültü kaynağı | NOISE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDWarpedNoiseSource/tr.md)
 

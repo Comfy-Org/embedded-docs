@@ -1,28 +1,29 @@
-# LTXV Texto a Video
+# LtxvApiTextToVideo
 
-El nodo LTXV Text To Video genera videos de calidad profesional a partir de una descripción de texto. Se conecta a una API externa para crear videos con duración, resolución y tasa de fotogramas personalizables. También puede optar por añadir al video audio generado por IA.
+El nodo LTXV Text To Video genera videos de calidad profesional a partir de una descripción de texto. Se conecta a una API externa para crear videos con duración, resolución y velocidad de fotogramas personalizables. También puedes elegir que se agregue audio generado por IA al video.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo de IA a utilizar para la generación de video. "LTX-2 (Pro)" ofrece mayor calidad, mientras que "LTX-2 (Fast)" está optimizado para la velocidad. | COMBO | Sí | `"LTX-2 (Pro)"`<br>`"LTX-2 (Fast)"` |
-| `prompt` | La descripción de texto que la IA utilizará para generar el video. Este campo admite varias líneas de texto y debe contener entre 1 y 10 000 caracteres. | STRING | Sí | - |
-| `duración` | La duración del video generado en segundos (por defecto: 8). | COMBO | Sí | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` |
-| `resolución` | Las dimensiones en píxeles (ancho x alto) del video de salida. | COMBO | Sí | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` |
-| `fps` | Los fotogramas por segundo del video (por defecto: 25). | COMBO | Sí | `25`<br>`50` |
-| `generar_audio` | Cuando es verdadero, el video generado incluirá audio generado por IA que coincida con la escena (por defecto: False). Esta es una configuración opcional avanzada. | BOOLEAN | No | - |
+| `model` | El modelo de IA que se usará para la generación de video. "LTX-2 (Pro)" ofrece mayor calidad, mientras que "LTX-2 (Fast)" está optimizado para la velocidad. | COMBO | Sí | `"LTX-2 (Pro)"`<br>`"LTX-2 (Fast)"` |
+| `prompt` | La descripción de texto que la IA usará para generar el video. Este campo admite varias líneas de texto y debe contener entre 1 y 10,000 caracteres. Predeterminado: "" (vacío). | STRING | Sí | - |
+| `duration` | La duración del video generado en segundos (predeterminado: 8). | COMBO | Sí | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` |
+| `resolution` | Las dimensiones en píxeles (ancho x alto) del video de salida. | COMBO | Sí | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` |
+| `fps` | Los fotogramas por segundo del video (predeterminado: 25). | COMBO | Sí | `25`<br>`50` |
+| `generate_audio` | Cuando es true, el video generado incluirá audio generado por IA que coincida con la escena (predeterminado: False). Esta es una configuración opcional avanzada. | BOOLEAN | No | - |
 
 **Restricciones importantes:**
 
-* El `prompt` debe tener entre 1 y 10 000 caracteres de longitud.
-* Si selecciona una `duration` mayor de 10 segundos, también debe usar el modelo `"LTX-2 (Fast)"`, una resolución de `"1920x1080"` y un `fps` de `25`. Esta combinación es necesaria para videos más largos.
+* El `prompt` debe tener entre 1 y 10,000 caracteres.
+* Si seleccionas una `duration` mayor de 10 segundos, también debes usar el modelo `"LTX-2 (Fast)"`, una resolución de `"1920x1080"` y un `fps` de `25`. Esta combinación es obligatoria para videos más largos.
+* El precio depende del `model`, la `duration` y la `resolution` seleccionados.
 
 **Nota:** Este nodo está obsoleto.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
 | `output` | El archivo de video generado. | VIDEO |
 

@@ -1,6 +1,6 @@
 # WanMoveConcatTrack
 
-O nó WanMoveConcatTrack combina dois conjuntos de dados de rastreamento de movimento em uma única sequência mais longa. Ele funciona unindo os caminhos das trilhas e as máscaras de visibilidade das trilhas de entrada ao longo de suas respectivas dimensões. Se apenas uma entrada de trilhas for fornecida, ele simplesmente transmite esses dados sem alterações.
+O nó WanMoveConcatTrack combina dois conjuntos de dados de rastreamento de movimento em uma única sequência mais longa. Ele funciona unindo os caminhos de rastreamento e as máscaras de visibilidade dos rastreamentos de entrada ao longo de suas respectivas dimensões. Se apenas uma entrada de rastreamento for fornecida, ele simplesmente repassa esses dados sem alteração.
 
 ## Entradas
 
@@ -13,7 +13,7 @@ O nó WanMoveConcatTrack combina dois conjuntos de dados de rastreamento de movi
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `tracks` | Os dados de rastreamento de movimento concatenados, contendo o `track_path` e a `track_visibility` combinados das entradas. | TRACKS |
+| `tracks` | Os dados de rastreamento de movimento concatenados, contendo o `track_path` e o `track_visibility` combinados das entradas. Retorna `tracks_1` inalterado quando `tracks_2` não está conectado. | TRACKS |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveConcatTrack/pt-BR.md)
 

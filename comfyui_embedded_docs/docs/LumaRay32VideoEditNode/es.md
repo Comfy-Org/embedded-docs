@@ -1,24 +1,26 @@
-# LumaRay32VideoEditNode
+# Luma Ray 3.2 Edición de video
 
-Este nodo vuelve a renderizar un video existente bajo un nuevo prompt utilizando Luma Ray 3.2, permitiéndote cambiar el estilo, la iluminación, añadir o eliminar elementos mientras se conserva el movimiento original. El video fuente puede tener hasta 18 segundos, y el video editado mantiene la duración original del video fuente.
+## Descripción general
+
+Este nodo vuelve a renderizar un video existente bajo un nuevo prompt usando Luma Ray 3.2, lo que te permite cambiar el estilo, la iluminación, agregar o eliminar elementos mientras se mantiene el movimiento original. El video de origen puede tener hasta 18 segundos, y el video editado conserva la duración original de la fuente.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
-|-----------|-------------|--------------|-----------|-------|
-| `video` | Video fuente a editar. Hasta 18 segundos. | VIDEO | Sí | - |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+|-----------|-------------|--------------|-------------|-------|
+| `video` | Video de origen que se va a editar. Hasta 18 segundos. | VIDEO | Sí | - |
 | `prompt` | Describe la edición deseada. | STRING | Sí | - |
-| `resolution` | La resolución de salida para el video editado. | COMBO | Sí | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
-| `strength` | Qué tan fuertemente preservar vs. reinventar la fuente. "auto" permite que Ray 3.2 elija; adhere_* preserva más, flex_* es equilibrado, reimagine_* cambia más. (por defecto: "auto") | COMBO | Sí | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
+| `resolution` | La resolución de salida para el video editado. (predeterminado: "720p") | COMBO | Sí | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+| `strength` | Con qué fuerza preservar frente a reimaginar la fuente. "auto" permite que Ray 3.2 elija; adhere_* conserva más, flex_* es equilibrado, reimagine_* cambia más. (predeterminado: "auto") | COMBO | Sí | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
 | `seed` | Semilla para reproducibilidad. | INT | Sí | - |
 
-| `resolution` | La resolución de salida para el video editado. (predeterminado: "720p") | COMBO | Sí | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+**Nota:** El `prompt` debe tener entre 1 y 6000 caracteres. El video de origen no debe superar los 18 segundos de duración.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de dato |
 |------------------|-------------|--------------|
-| `generation_id` | El video editado de salida. | VIDEO |
+| `VIDEO` | El video editado de salida. | VIDEO |
 | `generation_id` | El identificador único para la solicitud de generación. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32VideoEditNode/es.md)

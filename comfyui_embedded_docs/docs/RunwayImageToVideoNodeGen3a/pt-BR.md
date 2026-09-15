@@ -1,6 +1,6 @@
 # Runway Imagem para Vídeo (Gen3a Turbo)
 
-O nó Runway Image to Video (Gen3a Turbo) gera um vídeo a partir de um único quadro inicial usando o modelo Gen3a Turbo da Runway. Ele recebe um prompt de texto e um quadro de imagem inicial e cria uma sequência de vídeo com base na duração e na proporção de aspecto especificadas. Este nó se conecta à API da Runway para processar a geração remotamente. A Runway recomenda revisar o guia de melhores práticas antes de gerar: https://help.runwayml.com/hc/en-us/articles/33927968552339-Creating-with-Act-One-on-Gen-3-Alpha-and-Turbo. Este nó está marcado como obsoleto.
+O nó Runway Image to Video (Gen3a Turbo) gera um vídeo a partir de um único quadro inicial usando o modelo Gen3a Turbo da Runway. Ele recebe um prompt de texto e um quadro de imagem inicial e, em seguida, cria uma sequência de vídeo com base na duração e na proporção de aspecto especificadas. A geração é processada remotamente por meio da API da Runway. Este nó está marcado como obsoleto.
 
 ## Entradas
 
@@ -8,16 +8,16 @@ O nó Runway Image to Video (Gen3a Turbo) gera um vídeo a partir de um único q
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt de texto para a geração (padrão: "") | STRING | Sim | N/A |
 | `quadro_inicial` | Quadro inicial a ser usado para o vídeo | IMAGE | Sim | N/A |
-| `duração` | Duração do vídeo em segundos (padrão: "5") | COMBO | Sim | `"5"`<br>`"10"` |
+| `duração` | Duração do vídeo gerado, em segundos (padrão: "5") | COMBO | Sim | `"5"`<br>`"10"` |
 | `proporção` | Proporção de aspecto do vídeo gerado (padrão: "768:1280") | COMBO | Sim | `"768:1280"`<br>`"1280:768"` |
-| `semente` | Semente aleatória para a geração (padrão: 0) | INT | Sim | 0 a 4294967295 |
+| `semente` | Semente aleatória para geração (padrão: 0) | INT | Sim | 0 a 4294967295 |
 
 **Restrições dos parâmetros:**
 
-- O `start_frame` não deve exceder as dimensões de 7999x7999 pixels.
-- O `start_frame` deve ter uma proporção de aspecto entre 0,5 e 2,0.
-- O `start_frame` aceita uma única imagem (máximo de 1).
 - O `prompt` deve conter pelo menos um caractere (não pode estar vazio).
+- O `start_frame` aceita uma única imagem (máximo de 1).
+- O `start_frame` não deve exceder 7999 x 7999 pixels em dimensões.
+- O `start_frame` deve ter uma proporção de aspecto entre 1:2 e 2:1 (0,5 a 2,0).
 
 ## Saídas
 

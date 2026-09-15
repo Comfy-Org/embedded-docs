@@ -1,20 +1,20 @@
 # Procesar latents por lotes
 
-El nodo Batch Latents combina múltiples entradas latentes en un solo lote. Toma un número variable de muestras latentes y las fusiona a lo largo de la dimensión del lote para que puedan procesarse juntas mediante nodos posteriores. El nodo también fusiona los metadatos del índice de lote de todas las entradas en la salida combinada.
+El nodo Batch Latents combina múltiples entradas latentes en un solo lote. Toma un número variable de muestras latentes y las fusiona a lo largo de la dimensión de lote para que puedan procesarse juntas por nodos posteriores. El nodo también fusiona los metadatos de índice de lote de todas las entradas en la salida combinada.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `latents` | Un conjunto de muestras latentes que se combinarán en un solo lote. Debe proporcionar al menos un latente, y puede agregar hasta 50. El nodo crea automáticamente ranuras de entrada a medida que conecta más latentes. | LATENT | Sí | 1 a 50 entradas |
+| `latents` | Un conjunto de muestras latentes que se combinarán en un solo lote. Debes proporcionar al menos un latente, y puedes añadir hasta 50. El nodo crea automáticamente ranuras de entrada (`latent_1`, `latent_2`, etc.) a medida que conectas más latentes. | LATENT | Sí | 1 a 50 entradas |
 
-**Nota:** Debe proporcionar al menos una entrada latente para que el nodo funcione. El nodo crea automáticamente ranuras de entrada a medida que conecta más latentes, hasta un máximo de 50. Cada latente de entrada se reformatea para que coincida con la forma de muestra del primer latente antes de combinarse, y cualquier latente sin metadatos de índice de lote recibe un índice de lote secuencial.
+**Nota:** Debes proporcionar al menos una entrada latente para que el nodo funcione. El nodo crea automáticamente ranuras de entrada a medida que conectas más latentes, hasta un máximo de 50. Cada latente de entrada se reforma para coincidir con la forma de muestra del primer latente antes de combinarse, y a cualquier latente que no tenga metadatos de índice de lote se le asigna un índice de lote secuencial. Los latentes de entrada se unen a lo largo de la dimensión de lote para producir el resultado combinado.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `output` | Una única salida latente que contiene todas las entradas latentes combinadas en un lote, junto con sus metadatos de índice de lote fusionados. | LATENT |
+| `output` | Una única salida latente que contiene todos los latentes de entrada combinados en un solo lote, junto con sus metadatos de índice de lote fusionados. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BatchLatentsNode/es.md)
 

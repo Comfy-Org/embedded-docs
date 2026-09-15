@@ -1,21 +1,21 @@
 # ByteDanceImageEditNode
 
-El nodo ByteDance Image Edit permite modificar imágenes utilizando los modelos de IA de ByteDance a través de una API. Debes proporcionar una imagen de entrada y un mensaje de texto que describa los cambios deseados, y el nodo procesará la imagen según tus instrucciones. El nodo maneja automáticamente la comunicación con la API y devuelve la imagen editada.
+El nodo ByteDance Image Edit te permite modificar imágenes usando los modelos de IA de ByteDance a través de una API. Proporcionas una imagen de entrada y un prompt de texto que describe los cambios deseados, y el nodo procesa la imagen según tus instrucciones. El nodo gestiona la comunicación con la API automáticamente y devuelve la imagen editada.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango |
+| Parámetro | Descripción | Tipo de datos | Tipo de entrada | Predeterminado | Rango |
 | --- | --- | --- | --- | --- | --- |
 | `model` | Nombre del modelo | MODEL | COMBO | seededit_3 | Opciones de Image2ImageModelName |
-| `image` | La imagen base a editar | IMAGE | IMAGE | - | - |
+| `image` | La imagen base que se va a editar | IMAGE | IMAGE | - | - |
 | `prompt` | Instrucción para editar la imagen | STRING | STRING | "" | - |
-| `seed` | Semilla a utilizar para la generación | INT | INT | 0 | 0-2147483647 |
-| `guidance_scale` | Un valor más alto hace que la imagen siga el mensaje con mayor precisión | FLOAT | FLOAT | 5.5 | 1.0-10.0 |
-| `watermark` | Indica si se debe añadir una marca de agua "Generado por IA" a la imagen | BOOLEAN | BOOLEAN | True | - |
+| `seed` | Semilla que se usará para la generación | INT | INT | 0 | 0-2147483647 |
+| `guidance_scale` | Un valor más alto hace que la imagen siga el prompt con mayor fidelidad | FLOAT | FLOAT | 5.5 | 1.0-10.0 |
+| `watermark` | Indica si se debe agregar una marca de agua de "AI generated" a la imagen | BOOLEAN | BOOLEAN | True | - |
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
 | `IMAGE` | La imagen editada devuelta por la API de ByteDance | IMAGE |
 

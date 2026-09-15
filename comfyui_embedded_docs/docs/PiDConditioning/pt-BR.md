@@ -1,23 +1,25 @@
 # PiD Condicionamento
 
-Anexa uma imagem latente e um valor de sigma de degradação a um dado CONDITIONING. Isso é usado para decodificação PiD (Pixel-in-Detail) ou upscaling, permitindo controlar o quanto o latente é degradado antes do processamento.
+Anexa um `latent` e um valor `degrade_sigma` a um CONDITIONING para que possa ser usado para decodificação ou upscaling de PiD. Isso permite controlar o quanto o `latent` é degradado antes de ser processado.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `positivo` | Os dados de condicionamento aos quais anexar o latente e o sigma de degradação. | CONDITIONING | Sim | - |
-| `latent` | O latente (de VAEEncode ou um KSampler) para anexar ao condicionamento. | LATENT | Sim | - |
-| `formato do latent` | O formato do latente. Latentes Flux1 (16 canais) e Flux2 (128 canais) são detectados automaticamente pela dimensão de canais em `"flux"`. Para SD3 (16 canais), SDXL (4 canais) ou QwenImage (16 canais), selecione manualmente (padrão: `"flux"`). | COMBO | Sim | `"flux"`<br>`"sd3"`<br>`"sdxl"`<br>`"qwenimage"` |
-| `degrade_sigma` | A quantidade de degradação a aplicar. 0 significa um latente limpo. Aumente esse valor para remover ruído de saídas latentes corrompidas (padrão: 0.0). | FLOAT | Sim | 0.0 a 1.0 (passo: 0.01) |
+| `positivo` | Os dados de condicionamento aos quais anexar o `latent` e o `degrade_sigma`. | CONDITIONING | Sim | - |
+| `latent` | O `latent` (de VAEEncode ou de um KSampler) a ser anexado ao condicionamento. | LATENT | Sim | - |
+| `formato do latent` | O formato do `latent`. Latents Flux1 (16 canais) e Flux2 (128 canais) são detectados automaticamente a partir da dimensão de canais na opção `"flux"`. Para SD3 (16 canais), SDXL (4 canais) ou QwenImage (16 canais), selecione manualmente (padrão: `"flux"`). | COMBO | Sim | `"flux"`<br>`"sd3"`<br>`"sdxl"`<br>`"qwenimage"` |
+| `degrade_sigma` | A quantidade de degradação a aplicar. 0 significa um `latent` limpo. Aumente este valor para remover ruído de saídas `latent` corrompidas (padrão: 0.0). | FLOAT | Sim | 0.0 a 1.0 (step: 0.01) |
 
-Nota: Quando `latent_format` está definido como `"flux"`, o nó detecta automaticamente o tipo de latente a partir da dimensão do canal: 128 canais são tratados como latentes Flux2, enquanto 16 canais são tratados como latentes Flux1.
+Observação: quando `latent_format` é definido como `"flux"`, o nó detecta automaticamente o tipo de `latent` a partir da dimensão de canais: 128 canais são tratados como latents Flux2, enquanto 16 canais são tratados como latents Flux1.
+
+Observação: um valor não suportado de `latent_format` gera um erro, mas todas as opções disponíveis são tratadas pelo nó.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
+| Nome da Saída | Descrição | Tipo de Dados |
 |-------------|-------------|-----------|
-| `CONDITIONING` | Os dados de condicionamento originais com o latente e os valores de sigma de degradação anexados. | CONDITIONING |
+| `CONDITIONING` | Os dados de condicionamento originais com o `latent` e o valor `degrade_sigma` anexados. | CONDITIONING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PiDConditioning/pt-BR.md)
 

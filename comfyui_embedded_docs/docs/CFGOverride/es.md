@@ -1,21 +1,21 @@
 # Anulación de CFG
 
-El nodo CFG Override permite establecer un valor fijo de escala CFG (Classifier-Free Guidance) para un rango específico del proceso de muestreo, definido como un porcentaje del total de pasos. Cuando se conectan varios nodos CFG Override, el más cercano al muestreador en la cadena tiene prioridad para los rangos superpuestos.
+El nodo CFG Override sobrescribe la escala CFG (Guía libre de clasificador) a un valor fijo durante un rango porcentual (sigma) del proceso de muestreo. Cuando se utilizan varios nodos CFG Override, la sobrescritura más cercana al muestreador prevalece en los rangos superpuestos.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
-|-----------|-------------|--------------|-----------|-------|
-| `modelo` | El modelo al que se aplica la anulación de CFG | MODEL | Sí | |
-| `cfg` | El valor fijo de escala CFG que se usará durante el rango de anulación (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 100.0 |
-| `porcentaje_inicio` | El punto de inicio del rango de anulación como porcentaje del proceso de muestreo (predeterminado: 0.0) | FLOAT | Sí | 0.0 a 1.0 |
-| `porcentaje_fin` | El punto de finalización del rango de anulación como porcentaje del proceso de muestreo (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `modelo` | El modelo al que se aplicará la sobrescritura de CFG. | MODEL | Sí | |
+| `cfg` | El valor fijo de escala CFG que se usará durante el rango de sobrescritura. Predeterminado: 1.0. | FLOAT | Sí | 0.0 a 100.0 (paso: 0.1) |
+| `porcentaje_inicio` | El punto de inicio del rango de sobrescritura como porcentaje del proceso de muestreo. Predeterminado: 0.0. | FLOAT | Sí | 0.0 a 1.0 (paso: 0.001) |
+| `porcentaje_fin` | El punto final del rango de sobrescritura como porcentaje del proceso de muestreo. Predeterminado: 1.0. | FLOAT | Sí | 0.0 a 1.0 (paso: 0.001) |
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
-|------------------|-------------|--------------|
-| `MODEL` | El modelo con el envoltorio de anulación de CFG aplicado | MODEL |
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `MODEL` | El modelo con el wrapper de sobrescritura de CFG aplicado. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGOverride/es.md)
 

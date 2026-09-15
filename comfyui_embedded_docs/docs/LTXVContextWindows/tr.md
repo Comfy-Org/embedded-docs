@@ -1,23 +1,23 @@
 # LTXV Bağlam Pencereleri
 
-Bu düğüm, örnekleme sırasında LTXV benzeri modeller için bağlam pencereleri ayarlar. Video oluşturma sürecini çakışan pencerelere bölerek bellek kullanımını yönetir ve zamansal tutarlılığı artırır.
+Bu düğüm, örnekleme sırasında LTXV benzeri modeller için bağlam pencerelerini ayarlar. Üretimi, bellek kullanımını yönetmeye yardımcı olmak ve zamansal tutarlılığı iyileştirmek için örtüşen pencerelere böler.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Örnekleme sırasında bağlam pencerelerinin uygulanacağı model. | MODEL | Evet | - |
-| `context_length` | Bağlam penceresinin gerçek kareler cinsinden uzunluğu. 8*n + 1 olmalıdır. (varsayılan: 145) | INT | Evet | Minimum: 1<br>Maksimum: nodes.MAX_RESOLUTION<br>Adım: 8 |
-| `context_overlap` | Bağlam penceresinin gerçek kareler cinsinden çakışma miktarı. (varsayılan: 40) | INT | Evet | Minimum: 0<br>Adım: 8 |
-| `context_schedule` | Bağlam pencereleri için adıma bağlı zamanlama algoritması. (varsayılan: UNIFORM_STANDARD) | COMBO | Evet | `STATIC_STANDARD`<br>`UNIFORM_STANDARD`<br>`UNIFORM_LOOPED`<br>`BATCHED` |
-| `context_stride` | Bağlam penceresinin adımı; yalnızca tekdüze zamanlamalar için geçerlidir. (varsayılan: 1) | INT | Hayır | Minimum: 1 |
-| `closed_loop` | Bağlam penceresi döngüsünün kapatılıp kapatılmayacağı; yalnızca döngülü zamanlamalar için geçerlidir. (varsayılan: False) | BOOLEAN | Hayır | True<br>False |
-| `fuse_method` | Bağlam pencerelerini birleştirmek için kullanılacak yöntem. (varsayılan: PYRAMID) | COMBO | Evet | Options from comfy.context_windows.ContextFuseMethods.LIST_STATIC |
-| `freenoise` | FreeNoise gürültü karıştırmanın uygulanıp uygulanmayacağı; pencere harmanlamasını iyileştirir. (varsayılan: True) | BOOLEAN | Hayır | True<br>False |
-| `retain_first_frame` | Her bağlam penceresinde ilk latent kareyi korur (başlangıç referansının korunmasına yardımcı olabilir). (varsayılan: False) | BOOLEAN | Hayır | True<br>False |
-| `split_conds_to_windows` | Birden fazla koşullandırmanın (ConditionCombine tarafından oluşturulan) bölge indeksine göre her pencereye bölünüp bölünmeyeceği. (varsayılan: False) | BOOLEAN | Hayır | True<br>False |
+| `context_length` | Bağlam penceresinin gerçek kare cinsinden uzunluğu. 8*n + 1 olmalıdır. (varsayılan: 145) | INT | Evet | Minimum: 1<br>Maksimum: nodes.MAX_RESOLUTION<br>Adım: 8 |
+| `context_overlap` | Bağlam penceresinin gerçek kare cinsinden örtüşmesi. (varsayılan: 40) | INT | Evet | Minimum: 0<br>Adım: 8 |
+| `context_schedule` | Bağlam pencereleri için adıma bağlı zamanlama algoritması. (varsayılan: "UNIFORM_STANDARD") | COMBO | Evet | `"STATIC_STANDARD"`<br>`"UNIFORM_STANDARD"`<br>`"UNIFORM_LOOPED"`<br>`"BATCHED"` |
+| `context_stride` | Bağlam penceresinin adım aralığı; yalnızca tekdüze zamanlamalar için geçerlidir. (varsayılan: 1) | INT | Evet | Minimum: 1 |
+| `closed_loop` | Bağlam penceresi döngüsünün kapatılıp kapatılmayacağı; yalnızca döngülü zamanlamalar için geçerlidir. (varsayılan: False) | BOOLEAN | Evet | True<br>False |
+| `fuse_method` | Bağlam pencerelerini birleştirmek için kullanılacak yöntem. Kullanılabilir seçenekler `ContextFuseMethods.LIST_STATIC` tarafından tanımlanır. (varsayılan: "PYRAMID") | COMBO | Evet | `ContextFuseMethods.LIST_STATIC` tarafından tanımlanır |
+| `freenoise` | FreeNoise gürültü karıştırmasının uygulanıp uygulanmayacağı; pencere harmanlamayı iyileştirir. (varsayılan: True) | BOOLEAN | Evet | True<br>False |
+| `retain_first_frame` | Her bağlam penceresinde ilk latent kareyi korur (başlangıç referansını korumaya yardımcı olabilir). (varsayılan: False) | BOOLEAN | Evet | True<br>False |
+| `split_conds_to_windows` | Bölge indeksine göre her pencereye birden çok koşullandırmanın (ConditionCombine tarafından oluşturulan) bölünüp bölünmeyeceği. (varsayılan: False) | BOOLEAN | Evet | True<br>False |
 
-**Not:** `context_length` parametresi 8*n + 1 formülüne uymalıdır; burada n pozitif bir tam sayıdır. Düğüm, gerçek kareleri latent karelere dönüştürerek bu gereksinimi karşılamak için değeri otomatik olarak ayarlar. `context_overlap` da gerçek karelerden latent karelere dönüştürülür (8'e bölünür).
+**Not:** `context_length` değeri gerçek kare cinsinden verilir ve dahili olarak `((context_length - 1) // 8) + 1` formülü kullanılarak latent karelere dönüştürülür; minimum değeri 1'dir. `context_overlap` değeri de gerçek kare cinsinden verilir ve 8'e tam sayı bölmesi kullanılarak latent karelere dönüştürülür; minimum değeri 0'dır. `context_length` için araç ipucu, 8*n + 1 desenini izlemesi gerektiğini belirtir.
 
 ## Çıktılar
 

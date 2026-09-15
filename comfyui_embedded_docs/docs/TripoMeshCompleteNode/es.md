@@ -4,17 +4,17 @@ Completa las partes de un modelo 3D segmentado y repara las regiones faltantes o
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
-|-----------|-------------|---------------|-------------|-------|
-| `segment_task_id` | ID de tarea de una tarea de segmentación de malla de Tripo. Se completan las partes del modelo segmentado de esta tarea. Conecta la salida SEGMENT_TASK_ID de un nodo de segmentación de malla de Tripo anterior. | SEGMENT_TASK_ID | Sí | ID de tarea único |
-| `part_names` | Nombres de partes separados por comas que se van a completar. Si está vacío, completa todas las partes. Valor predeterminado: cadena vacía. Los espacios adicionales alrededor de los nombres se eliminan y los nombres duplicados se ignoran. | STRING | No | Texto libre o vacío |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+|-----------|-------------|--------------|-------------|-------|
+| `segment_task_id` | ID de tarea de una tarea de segmentación de malla de Tripo. Se completan las partes del modelo segmentado de esta tarea. Conecta la salida SEGMENT_TASK_ID de un nodo anterior de segmentación de malla de Tripo. | SEGMENT_TASK_ID | Sí | ID de tarea único |
+| `part_names` | Nombres de partes separados por comas que se van a completar. Si está vacío, completa todas las partes. Predeterminado: cadena vacía. Los espacios adicionales alrededor de los nombres se eliminan y los nombres duplicados se ignoran. | STRING | No | Texto libre o vacío |
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
-|-------------|-------------|---------------|
-| `model_file` | Nombre de archivo del modelo completado. Esta salida existe solo por compatibilidad hacia atrás. | STRING |
-| `task_id de modelo` | ID de tarea de la tarea de completado de malla de Tripo completada. Puede usarse como entrada por otros nodos de Tripo que esperan un ID de tarea de modelo. | MODEL_TASK_ID |
+| Nombre de salida | Descripción | Tipo de dato |
+|------------------|-------------|--------------|
+| `model_file` | Nombre de archivo del modelo completado. Esta salida existe solo por compatibilidad con versiones anteriores. | STRING |
+| `model task_id` | ID de tarea de la tarea de completado de malla de Tripo completada. Puede usarse como entrada por otros nodos de Tripo que esperan un ID de tarea de modelo. | MODEL_TASK_ID |
 | `GLB` | El modelo 3D completado con las partes reparadas, descargado como un archivo GLB. | GLB |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoMeshCompleteNode/es.md)

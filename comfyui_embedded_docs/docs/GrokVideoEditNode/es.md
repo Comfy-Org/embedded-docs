@@ -1,21 +1,23 @@
 # Edición de video Grok
 
-Este nodo utiliza la API de Grok para editar un video existente basado en un prompt de texto. Carga tu video, envía una solicitud al modelo de IA para modificarlo según tu descripción y devuelve el video recién generado.
+Este nodo utiliza la API de Grok para editar un video existente a partir de un prompt de texto. Carga tu video, envía una solicitud al modelo de IA para modificarlo según tu descripción y devuelve el video recién generado.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
-|-----------|-------------|---------------|-----------|-------|
-| `modelo` | El modelo de IA a utilizar para la edición de video (predeterminado: "grok-imagine-video"). | COMBO | Sí | "grok-imagine-video" |
-| `indicación` | Descripción de texto del video deseado. | STRING | Sí | N/A |
-| `video` | El video de entrada que se va a editar. La duración máxima admitida es de 8.7 segundos y un tamaño de archivo de 50 MB. | VIDEO | Sí | N/A |
-| `semilla` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0). | INT | No | 0 a 2147483647 |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `modelo` | El modelo de IA que se utilizará para la edición de video (valor predeterminado: "grok-imagine-video"). | COMBO | Sí | "grok-imagine-video" |
+| `indicación` | Descripción textual del video deseado. | STRING | Sí | N/A |
+| `video` | El video de entrada que se va a editar. La duración máxima admitida es de 8.7 segundos y el tamaño de archivo máximo es de 50 MB. | VIDEO | Sí | N/A |
+| `semilla` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla (valor predeterminado: 0). | INT | No | 0 a 2147483647 |
 
 **Restricciones:**
 
 * El `prompt` no debe estar vacío.
 * El `video` de entrada debe tener una duración entre 1 y 8.7 segundos.
-* El tamaño del archivo del `video` de entrada no debe exceder los 50 MB.
+* El tamaño del archivo del `video` de entrada no debe superar los 50 MB.
+
+**Nota:** Este nodo es un nodo de API y requiere una cuenta de Comfy.org y una clave de API para ejecutarse. El uso se factura a aproximadamente $0.06 por segundo de video.
 
 ## Salidas
 

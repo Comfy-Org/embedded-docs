@@ -1,6 +1,6 @@
 # LTX 2.5 Görselden Videoya
 
-Bu düğüm, bir LTX 2.5 modeli kullanarak başlangıç görüntüsünden profesyonel kalitede bir video üretir. Video içeriğini bir metin istemiyle tanımlar, bir model varyantı seçer ve süre, çözünürlük, kare hızı ve ses üretimini ayarlarsınız. Videonun sonunu tanımlamak için isteğe bağlı bir son kare sağlanabilir.
+Bu düğüm, bir başlangıç görüntüsünden LTX 2.5 modeli kullanarak profesyonel kalitede video üretir. Video içeriğini bir metin istemiyle tanımlarsınız, bir model varyantı seçersiniz ve süre, çözünürlük, kare hızı ile ses üretimini ayarlarsınız. Videonun sonunu tanımlamak için isteğe bağlı bir son kare sağlanabilir.
 
 ## Girdiler
 
@@ -8,15 +8,15 @@ Bu düğüm, bir LTX 2.5 modeli kullanarak başlangıç görüntüsünden profes
 |-----------|-------------|-----------|----------|-------|
 | `görsel` | Video için kullanılacak ilk kare. | IMAGE | Evet | Tam olarak bir görüntü |
 | `model` | Model ayarları grubu. Kullanılacak LTX 2.5 model varyantını seçer. | COMBO | Evet | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
-| `süre` | Üretilen videonun saniye cinsinden uzunluğu. | INT | Evet | Tam sayı |
-| `çözünürlük` | Üretilen videonun çözünürlüğü. Kullanılabilir seçenekler seçilen modele bağlı olarak değişebilir. | COMBO | Evet | "1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840" |
-| `fps` | Üretilen videonun kare hızı. | INT | Evet | Tam sayı (varsayılan: 25) |
+| `süre` | Üretilen videonun saniye cinsinden uzunluğu. | INT | Evet | Tamsayı |
+| `çözünürlük` | Üretilen videonun çözünürlüğü. Kullanılabilir seçenekler seçilen modele bağlı olabilir. | COMBO | Evet | "1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840" |
+| `fps` | Üretilen videonun kare hızı. | INT | Evet | Tamsayı (varsayılan: 25) |
 | `ses_oluştur` | Video için ses üretilip üretilmeyeceği. | BOOLEAN | Evet | True<br>False (varsayılan: True) |
-| `prompt` | Üretilecek video içeriğinin metin açıklaması. 1 ile 10000 karakter arasında olmalıdır. | STRING | Evet | 1 ila 10000 karakter |
-| `tohum` | Tekrarlanabilir üretim için tohum değeri. Aynı ayarlarla aynı tohumun kullanılması aynı sonucu üretir. | INT | Evet | Tam sayı (varsayılan: 42) |
+| `prompt` | Üretilecek video içeriğinin metin açıklaması. 1 ile 10000 karakter arasında olmalıdır. | STRING | Evet | 1 ile 10000 karakter |
+| `tohum` | Tekrarlanabilir üretim için tohum değeri. Aynı ayarlarla aynı tohumun kullanılması aynı sonucu üretir. | INT | Evet | Tamsayı (varsayılan: 42) |
 | `son_kare` | Video için kullanılacak son kare. | IMAGE | Hayır | Tam olarak bir görüntü |
 
-**Not:** `image` için yalnızca bir görüntü desteklenir. `last_frame` sağlanmışsa, o da tam olarak bir görüntü içermelidir. Kullanılabilir `model.resolution` seçenekleri, seçilen `model` varyantına bağlı olarak değişebilir.
+**Not:** `image` için yalnızca bir görüntü desteklenir. `last_frame` sağlanırsa, bunun da tam olarak bir görüntü içermesi gerekir. Kullanılabilir `model.resolution` seçenekleri, seçilen `model` varyantına bağlı olarak değişebilir. Bir çalıştırmanın fiyatı seçilen `model`, `model.duration` ve `model.resolution` değerlerine bağlıdır.
 
 ## Çıktılar
 

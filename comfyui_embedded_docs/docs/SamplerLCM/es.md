@@ -1,18 +1,18 @@
 # SamplerLCM
 
-El nodo SamplerLCM proporciona un muestreador LCM (Modelo de Consistencia Latente) con parámetros de ruido ajustables por paso. Permite controlar el ruido aplicado en cada paso del proceso de muestreo; `s_noise` es un multiplicador sobre la escala de ruido de entrenamiento del modelo.
+Este nodo proporciona un muestreador LCM (modelo de consistencia latente) con ruido ajustable por paso. Te permite controlar cuánto ruido se aplica durante el muestreo: `s_noise` actúa como un multiplicador sobre la escala de ruido de entrenamiento del modelo, y el nivel de ruido puede variar desde el primer paso hasta el último paso. El muestreador configurado se puede conectar a un flujo de trabajo de muestreo.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `s_noise` | Multiplicador de ruido por paso en el primer paso (1.0 = igual al entrenamiento). (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 64.0 (paso: 0.01) |
-| `s_noise_end` | Multiplicador de ruido por paso en el último paso. Establézcalo igual a `s_noise` para un programa de ruido constante. (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 64.0 (paso: 0.01) |
-| `noise_clip_std` | Limita el ruido de cada paso a ± N*std. 0 lo desactiva. (predeterminado: 0.0) | FLOAT | Sí | 0.0 a 10.0 (paso: 0.01) |
+| `s_noise` | Multiplicador de ruido por paso en el primer paso (1.0 = coincide con el entrenamiento). Predeterminado: 1.0. | FLOAT | Sí | 0.0 a 64.0 (paso: 0.01) |
+| `s_noise_end` | Multiplicador de ruido por paso en el último paso. Se establece igual a `s_noise` para una programación constante. Predeterminado: 1.0. | FLOAT | Sí | 0.0 a 64.0 (paso: 0.01) |
+| `noise_clip_std` | Limita el ruido por paso a +/- N*std. 0 lo desactiva. Predeterminado: 0.0. | FLOAT | Sí | 0.0 a 10.0 (paso: 0.01) |
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
 | `SAMPLER` | El objeto muestreador LCM configurado, listo para usarse en un flujo de trabajo de muestreo. | SAMPLER |
 

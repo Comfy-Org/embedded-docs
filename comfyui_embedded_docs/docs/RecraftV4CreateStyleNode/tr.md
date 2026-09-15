@@ -4,18 +4,18 @@ Bu düğüm, 1 ila 10 referans görüntüden yeniden kullanılabilir bir Recraft
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Stilin oluşturulduğu model. Standard ve Pro tek bir stil havuzunu paylaşır: raster stiller tüm Recraft V4 ve V4.1 raster modelleriyle, vektör stiller (*_vector) ise tüm V4 ve V4.1 vektör modelleriyle çalışır. | COMBO | Evet | "recraftv4_styles"<br>"recraftv4_styles_vector"<br>"recraftv4_styles_pro"<br>"recraftv4_styles_pro_vector" |
-| `images` | Stili tanımlayan referans görüntüler. Benzer referanslar eşleşmeyi keskinleştirir, çeşitli referanslar ise onu genişletir. Genişletilebilir yuva: 1 ila 10 görüntü bağlayın (`image_1` ile `image_10` arasında). | IMAGE | Evet | 1 ila 10 görüntü |
+| `model` | Stilin oluşturulacağı model. Standard ve Pro aynı stil havuzunu paylaşır: raster stiller her Recraft V4 ve V4.1 raster modeliyle, vektör stilleri (*_vector) ise her V4 ve V4.1 vektör modeliyle çalışır. | COMBO | Evet | "recraftv4_styles"<br>"recraftv4_styles_vector"<br>"recraftv4_styles_pro"<br>"recraftv4_styles_pro_vector" |
+| `images` | Stili tanımlayan referans görüntüler. Benzer referanslar eşleşmeyi keskinleştirir, çeşitli referanslar eşleşmeyi genişletir. Büyütülebilir yuva: 1 ila 10 görüntü bağlayın (`image_1` ile `image_10` arası). | IMAGE | Evet | 1 ila 10 görüntü |
 
 ### Notlar
 
-- En az bir referans görüntü gereklidir; hiçbir görüntü sağlanmazsa düğüm hata verir.
-- En fazla 10 referans görüntüye izin verilir; daha fazlası sağlanırsa düğüm hata verir.
-- Tüm referans görüntülerin toplam kodlanmış boyutu 10 MB'ı aşmamalıdır; sınır aşılırsa düğüm hata verir.
-- Her referans görüntü, Recraft API'ye gönderilmeden önce en fazla 2048×2048 piksele küçültülür ve WebP olarak kodlanır.
-- `_vector` ile biten modeller vektör stilleri oluşturur; diğer seçenekler raster stiller oluşturur. Standard ve Pro modeller, her çıktı türü içinde aynı stil havuzlarını paylaşır.
+- En az bir referans görüntü gereklidir; hiçbiri sağlanmazsa düğüm bir hata verir.
+- En fazla 10 referans görüntüye izin verilir; daha fazlası sağlanırsa düğüm bir hata verir.
+- Tüm referans görüntülerin toplam kodlanmış boyutu 10 MB'ı aşmamalıdır; sınır aşılırsa düğüm bir hata verir.
+- Her referans görüntü, Recraft API'sine gönderilmeden önce en fazla 2048×2048 piksele küçültülür ve WebP olarak kodlanır.
+- `_vector` ile biten modeller vektör stilleri oluşturur; diğer seçenekler raster stiller oluşturur. Standard ve Pro modelleri, her çıktı türünde aynı stil havuzlarını paylaşır.
 
 ## Çıktılar
 

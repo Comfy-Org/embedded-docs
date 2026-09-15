@@ -1,29 +1,31 @@
 # Google Gemini
 
-Este nó permite que os usuários interajam com os modelos de IA Gemini do Google para gerar respostas em texto. Você pode fornecer vários tipos de entradas, incluindo texto, imagens, áudio, vídeo e arquivos como contexto para o modelo gerar respostas mais relevantes e significativas. O nó lida automaticamente com toda a comunicação com a API e o processamento das respostas.
+Este nó permite que os usuários interajam com os modelos de IA Gemini do Google para gerar respostas de texto. Você pode fornecer vários tipos de entradas, incluindo texto, imagens, áudio, vídeo e arquivos como contexto para o modelo gerar respostas mais relevantes e significativas. O nó lida com toda a comunicação com a API e a análise das respostas automaticamente.
 
-**Observação:** Este nó está marcado como obsoleto no código-fonte.
+**Nota:** Este nó está marcado como obsoleto no código-fonte.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Entradas de texto para o modelo, usadas para gerar uma resposta. Você pode incluir instruções detalhadas, perguntas ou contexto para o modelo. Padrão: string vazia. | STRING | Sim | - |
 | `modelo` | O modelo Gemini a ser usado para gerar respostas. Padrão: gemini-3-1-pro. | COMBO | Sim | "gemini-2.5-pro"<br>"gemini-2.5-flash"<br>"gemini-3-pro-preview"<br>"gemini-3-1-pro"<br>"gemini-3-1-flash-lite" |
-| `semente` | Quando o seed é fixado em um valor específico, o modelo faz o melhor esforço para fornecer a mesma resposta para solicitações repetidas. A saída determinística não é garantida. Além disso, alterar o modelo ou as configurações de parâmetros, como a temperatura, pode causar variações na resposta mesmo quando você usa o mesmo valor de seed. Por padrão, um valor de seed aleatório é usado. Padrão: 42. | INT | Sim | 0 a 18446744073709551615 |
-| `imagens` | Imagem(ns) opcional(is) para usar como contexto para o modelo. Para incluir várias imagens, você pode usar o nó Batch Images. Padrão: Nenhuma. | IMAGE | Não | - |
-| `áudio` | Áudio opcional para usar como contexto para o modelo. Padrão: Nenhum. | AUDIO | Não | - |
-| `vídeo` | Vídeo opcional para usar como contexto para o modelo. Padrão: Nenhum. | VIDEO | Não | - |
-| `arquivos` | Arquivo(s) opcional(is) para usar como contexto para o modelo. Aceita entradas do nó Gemini Generate Content Input Files. Padrão: Nenhum. | GEMINI_INPUT_FILES | Não | - |
-| `system_prompt` | Instruções fundamentais que determinam o comportamento de uma IA. Padrão: string vazia. Este é um parâmetro avançado. | STRING | Não | - |
+| `semente` | Quando `seed` é fixado em um valor específico, o modelo faz o possível para fornecer a mesma resposta para solicitações repetidas. Saída determinística não é garantida. Além disso, alterar o modelo ou as configurações de parâmetros, como a temperatura, pode causar variações na resposta mesmo quando você usa o mesmo valor de `seed`. Por padrão, um valor de `seed` aleatório é usado. Padrão: 42. | INT | Sim | 0 a 18446744073709551615 |
+| `imagens` | Imagem(ns) opcional(is) para usar como contexto para o modelo. Para incluir várias imagens, você pode usar o nó Batch Images. Padrão: None. | IMAGE | Não | - |
+| `áudio` | Áudio opcional para usar como contexto para o modelo. Padrão: None. | AUDIO | Não | - |
+| `vídeo` | Vídeo opcional para usar como contexto para o modelo. Padrão: None. | VIDEO | Não | - |
+| `arquivos` | Arquivo(s) opcional(is) para usar como contexto para o modelo. Aceita entradas do nó Gemini Generate Content Input Files. Padrão: None. | GEMINI_INPUT_FILES | Não | - |
+| `system_prompt` | Instruções fundamentais que ditam o comportamento de uma IA. Padrão: string vazia. Este é um parâmetro avançado. | STRING | Não | - |
 
 Todas as imagens conectadas são usadas como contexto. Quando mais de 10 imagens são fornecidas, as 10 primeiras são enviadas como referências de arquivo e as imagens restantes são enviadas inline para a API.
+
+O nó usa o nome do modelo selecionado conforme fornecido na lista; algumas entradas são mapeadas internamente para seus identificadores de modelo atuais da API antes do envio da solicitação.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 |-------------|-------------|-----------|
-| `STRING` | A resposta em texto gerada pelo modelo Gemini. Se o modelo não produzir texto, o nó retorna "Empty response from Gemini model...". | STRING |
+| `STRING` | A resposta de texto gerada pelo modelo Gemini. Se o modelo não produzir texto, o nó retorna "Empty response from Gemini model...". | STRING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiNode/pt-BR.md)
 

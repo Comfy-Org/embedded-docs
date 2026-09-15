@@ -7,9 +7,9 @@ O nó Rodin 3D Regular gera ativos 3D usando a API Rodin. Ele recebe imagens de 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
 | `Imagens` | Imagens de entrada usadas para geração do modelo 3D. Múltiplas imagens podem ser fornecidas. | IMAGE | Sim | - |
-| `Semente` | Valor de semente aleatório para resultados reproduzíveis. | INT | Sim | - |
-| `Tipo de Material` | Tipo de material a ser aplicado ao modelo 3D. | STRING | Sim | - |
-| `Contagem de Polígonos` | Contagem de polígonos alvo para o modelo 3D gerado. Este parâmetro determina o modo de qualidade e a complexidade da malha. | STRING | Sim | - |
+| `Semente` | Valor de semente aleatório para resultados reproduzíveis. | INT | Não | - |
+| `Tipo de Material` | Tipo de material a ser aplicado ao modelo 3D. | STRING | Não | - |
+| `Contagem de Polígonos` | Contagem de polígonos alvo para o modelo 3D gerado. Este parâmetro determina o modo de qualidade e a complexidade da malha. | STRING | Não | - |
 
 ## Saídas
 

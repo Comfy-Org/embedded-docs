@@ -1,6 +1,6 @@
 # ModelMergeSD3_2B
 
-O nó ModelMergeSD3_2B permite mesclar dois modelos Stable Diffusion 3 2B combinando seus componentes com pesos ajustáveis. Ele fornece controle individual sobre as camadas de embedding e os blocos transformadores, permitindo combinações de modelos finamente ajustadas para tarefas especializadas de geração.
+O nó ModelMergeSD3_2B permite mesclar dois modelos Stable Diffusion 3 2B combinando seus componentes com pesos ajustáveis. Ele oferece controle individual sobre camadas de embedding, blocos transformer e camada final, possibilitando combinações refinadas de dois modelos.
 
 ## Entradas
 
@@ -8,11 +8,11 @@ O nó ModelMergeSD3_2B permite mesclar dois modelos Stable Diffusion 3 2B combin
 | --- | --- | --- | --- | --- |
 | `model1` | O primeiro modelo a mesclar | MODEL | Sim | - |
 | `model2` | O segundo modelo a mesclar | MODEL | Sim | - |
-| `pos_embed.` | Peso de interpolação do embedding posicional (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `pos_embed.` | Peso de interpolação do embedding de posição (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `x_embedder.` | Peso de interpolação do embedding de entrada (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `context_embedder.` | Peso de interpolação do embedding de contexto (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `y_embedder.` | Peso de interpolação do embedding Y (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
-| `t_embedder.` | Peso de interpolação do embedding temporal (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `t_embedder.` | Peso de interpolação do embedding de tempo (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `joint_blocks.0.` | Peso de interpolação do bloco conjunto 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `joint_blocks.1.` | Peso de interpolação do bloco conjunto 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 | `joint_blocks.2.` | Peso de interpolação do bloco conjunto 2 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
@@ -43,7 +43,7 @@ O nó ModelMergeSD3_2B permite mesclar dois modelos Stable Diffusion 3 2B combin
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `model` | O modelo mesclado que combina características de ambos os modelos de entrada | MODEL |
+| `model` | O modelo mesclado combinando características de ambos os modelos de entrada | MODEL |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD3_2B/pt-BR.md)
 

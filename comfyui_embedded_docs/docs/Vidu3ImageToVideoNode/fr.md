@@ -1,6 +1,6 @@
 # Génération d’image en vidéo Vidu Q3
 
-Le nœud Vidu Q3 Image-to-Video Generation crée une séquence vidéo à partir d’une image d’entrée. Il utilise un modèle Vidu Q3 pour animer l’image, éventuellement guidé par une invite de texte, et produit un fichier vidéo.
+Le nœud Vidu Q3 Image-to-Video Generation crée une séquence vidéo à partir d'une image d'entrée. Il utilise un modèle Vidu Q3 pour animer l'image, éventuellement guidé par un prompt textuel, et produit un fichier vidéo.
 
 ## Entrées
 
@@ -9,27 +9,27 @@ Le nœud Vidu Q3 Image-to-Video Generation crée une séquence vidéo à partir 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `modèle` | Modèle à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | `"viduq3-pro"`<br>`"viduq3-turbo"` |
-| `image` | Image à utiliser comme image initiale de la vidéo générée. | IMAGE | Oui | - |
-| `invite` | Invite de texte facultative pour la génération vidéo (2000 caractères maximum) (défaut : vide). | STRING | Oui | - |
-| `graine` | Valeur de départ (seed) permettant de contrôler le caractère aléatoire de la génération (défaut : 1). Prend en charge le contrôle après génération. | INT | Oui | 0 à 2147483647 |
+| `image` | Une image à utiliser comme image de départ de la vidéo générée. | IMAGE | Oui | - |
+| `invite` | Un prompt textuel facultatif pour la génération vidéo (2000 caractères maximum) (valeur par défaut : vide). | STRING | Oui | - |
+| `graine` | Valeur de graine utilisée pour contrôler le caractère aléatoire de la génération (valeur par défaut : 1). | INT | Oui | 0 à 2147483647 |
 
-### viduq3-pro Entrées
+### Entrées viduq3-pro
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `resolution` | Résolution de la vidéo de sortie. | COMBO | Oui | `"720p"`<br>`"1080p"`<br>`"2K"` |
-| `duration` | Durée de la vidéo de sortie en secondes (défaut : 5). | INT | Oui | 1 à 16 |
-| `audio` | Lorsque activé, produit une vidéo avec son (y compris dialogues et effets sonores) (défaut : False). | BOOLEAN | Oui | `True`<br>`False` |
+| `duration` | Durée de la vidéo de sortie en secondes (valeur par défaut : 5). | INT | Oui | 1 à 16 |
+| `audio` | Lorsque cette option est activée, produit une vidéo avec son (y compris les dialogues et les effets sonores) (valeur par défaut : False). | BOOLEAN | Oui | `True`<br>`False` |
 
-### viduq3-turbo Entrées
+### Entrées viduq3-turbo
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `resolution` | Résolution de la vidéo de sortie. | COMBO | Oui | `"720p"`<br>`"1080p"` |
-| `duration` | Durée de la vidéo de sortie en secondes (défaut : 5). | INT | Oui | 1 à 16 |
-| `audio` | Lorsque activé, produit une vidéo avec son (y compris dialogues et effets sonores) (défaut : False). | BOOLEAN | Oui | `True`<br>`False` |
+| `duration` | Durée de la vidéo de sortie en secondes (valeur par défaut : 5). | INT | Oui | 1 à 16 |
+| `audio` | Lorsque cette option est activée, produit une vidéo avec son (y compris les dialogues et les effets sonores) (valeur par défaut : False). | BOOLEAN | Oui | `True`<br>`False` |
 
-**Remarque :** L’`image` doit avoir un rapport hauteur/largeur compris entre 1:4 et 4:1 (du portrait au paysage). Le `prompt` est facultatif mais ne peut pas dépasser 2000 caractères. Les options de résolution dépendent du modèle sélectionné : `"viduq3-pro"` prend en charge `"720p"`, `"1080p"` et `"2K"` ; `"viduq3-turbo"` prend en charge `"720p"` et `"1080p"`.
+**Note :** La valeur `image` doit avoir un rapport d'aspect compris entre 1:4 et 4:1 (du portrait au paysage). Le `prompt` est facultatif mais ne peut pas dépasser 2000 caractères. Les options de `resolution` disponibles dépendent du modèle sélectionné : `"viduq3-pro"` prend en charge `"720p"`, `"1080p"` et `"2K"` ; `"viduq3-turbo"` prend en charge `"720p"` et `"1080p"`.
 
 ## Sorties
 

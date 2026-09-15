@@ -5,9 +5,9 @@
 | Parametre | Açıklama | Veri Tipi | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Adaptif projeksiyonlu kılavuzun uygulanacağı difüzyon modeli | MODEL | Evet | - |
-| `eta` | Paralel kılavuz vektörünün ölçeğini kontrol eder. 1 ayarında varsayılan CFG davranışı (varsayılan: 1.0). | FLOAT | Evet | -10.0 ile 10.0 |
-| `norm_threshold` | Kılavuz vektörünü bu değere normalleştirir; 0 ayarında normalleştirme devre dışıdır (varsayılan: 5.0). | FLOAT | Evet | 0.0 ile 50.0 |
-| `momentum` | Difüzyon sırasında kılavuzun hareketli ortalamasını kontrol eder; 0 ayarında devre dışıdır (varsayılan: 0.0). | FLOAT | Evet | -5.0 ile 1.0 |
+| `eta` | Paralel kılavuz vektörünün ölçeğini kontrol eder. 1 ayarında varsayılan CFG davranışı (varsayılan: 1.0). | FLOAT | Hayır | -10.0 ile 10.0 |
+| `norm_threshold` | Kılavuz vektörünü bu değere normalleştirir; 0 ayarında normalleştirme devre dışıdır (varsayılan: 5.0). | FLOAT | Hayır | 0.0 ile 50.0 |
+| `momentum` | Difüzyon sırasında kılavuzun hareketli ortalamasını kontrol eder; 0 ayarında devre dışıdır (varsayılan: 0.0). | FLOAT | Hayır | -5.0 ile 1.0 |
 
 Not: Örnekleme sırasında gürültü seviyesi (`sigma`) arttığında, momentum hareketli ortalaması sıfıra sıfırlanır. Model yalnızca tek bir koşullandırma çıktısı sağlıyorsa (ayrı bir koşulsuz koşullandırma yoksa), kılavuz ayarlaması atlanır ve koşullandırma değiştirilmeden bırakılır.
 

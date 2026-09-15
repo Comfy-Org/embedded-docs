@@ -1,23 +1,23 @@
 # LTXV Audio Latente Vacío
 
-El nodo LTXV Empty Latent Audio crea un lote de tensores de audio latente vacíos (rellenos con ceros). Utiliza la configuración de un modelo Audio VAE proporcionado para determinar las dimensiones correctas del espacio latente, como el número de canales y contenedores de frecuencia, y calcula el número de latentes de audio a partir del número de fotogramas y la velocidad de fotogramas. Este latente vacío sirve como punto de partida para flujos de trabajo de generación o manipulación de audio dentro de ComfyUI.
+El nodo LTXV Empty Latent Audio crea un lote de tensores latentes de audio vacíos (rellenos de ceros). Lee la configuración de un modelo Audio VAE conectado para determinar las dimensiones latentes correctas, como el número de canales y los bins de frecuencia, y calcula cuántos latentes de audio se necesitan a partir del número de fotogramas y la velocidad de fotogramas. El latente vacío resultante se puede usar como punto de partida para flujos de trabajo de generación o manipulación de audio.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `frames_number` | Número de fotogramas. El valor predeterminado es 97. | INT | Sí | 1 a 1000 |
-| `frame_rate` | Número de fotogramas por segundo. El valor predeterminado es 25.0. Acepta valores FLOAT o INT. | FLOAT | Sí | 1.0 a 1000.0 |
+| `frame_rate` | Número de fotogramas por segundo. El valor predeterminado es 25.0. Esta entrada acepta valores FLOAT o INT. | FLOAT | Sí | 1.0 a 1000.0 |
 | `batch_size` | El número de muestras de audio latente en el lote. El valor predeterminado es 1. | INT | Sí | 1 a 4096 |
-| `audio_vae` | El modelo Audio VAE del que se obtiene la configuración. Este parámetro es obligatorio. | VAE | Sí | N/D |
+| `audio_vae` | El modelo Audio VAE del que obtener la configuración. Se muestra como «Audio VAE». | VAE | Sí | N/A |
 
-**Nota:** La entrada `audio_vae` es obligatoria. El nodo generará un error si no se proporciona.
+**Nota:** La entrada `audio_vae` es obligatoria. El nodo genera un error si no se proporciona.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `Latent` | Un tensor de audio latente vacío con la estructura (batch_size, z_channels, num_audio_latents, audio_freq) configurado para coincidir con el Audio VAE de entrada. La salida también incluye un campo `type` establecido en "audio". | LATENT |
+| `Latent` | Un tensor de audio latente vacío con la forma (batch_size, z_channels, num_audio_latents, audio_freq), donde el número de canales y los bins de frecuencia provienen del Audio VAE y el número de latentes de audio se deriva de `frames_number` y `frame_rate`. La salida también incluye un campo `type` establecido en "audio". | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVEmptyLatentAudio/es.md)
 

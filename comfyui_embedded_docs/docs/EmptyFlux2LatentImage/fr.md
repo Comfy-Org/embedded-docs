@@ -1,16 +1,16 @@
 # Flux vide vers latent
 
-Le nœud Empty Flux 2 Latent crée une représentation latente vide. Il génère un tenseur rempli de zéros, qui sert de point de départ au processus de débruitage du modèle Flux. Les dimensions de la représentation latente sont déterminées par la largeur et la hauteur d'entrée, réduites d'un facteur 16.
+Le nœud Empty Flux 2 Latent crée une représentation latente vierge remplie de zéros. Il est utilisé comme point de départ pour le processus de débruitage du modèle Flux. Les dimensions latentes sont dérivées des entrées `width` et `height`, chacune divisée par 16.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `largeur` | La largeur de l'image finale à générer. La largeur latente sera cette valeur divisée par 16. La valeur par défaut est 1024. | INT | Oui | 16 à 8192 |
-| `hauteur` | La hauteur de l'image finale à générer. La hauteur latente sera cette valeur divisée par 16. La valeur par défaut est 1024. | INT | Oui | 16 à 8192 |
+| `largeur` | La largeur de l'image finale à générer. La largeur latente correspond à cette valeur divisée par 16. La valeur par défaut est 1024. | INT | Oui | 16 à 16384 |
+| `hauteur` | La hauteur de l'image finale à générer. La hauteur latente correspond à cette valeur divisée par 16. La valeur par défaut est 1024. | INT | Oui | 16 à 16384 |
 | `taille_lot` | Le nombre d'échantillons latents à générer dans un seul lot. La valeur par défaut est 1. | INT | Non | 1 à 4096 |
 
-**Remarque :** Les entrées `width` et `height` doivent être divisibles par 16, car le nœud les divise en interne par ce facteur pour créer les dimensions latentes.
+**Note :** Les entrées `width` et `height` utilisent un pas de 16, elles doivent donc être divisibles par 16. En effet, le nœud les divise par ce facteur pour créer les dimensions latentes.
 
 ## Sorties
 

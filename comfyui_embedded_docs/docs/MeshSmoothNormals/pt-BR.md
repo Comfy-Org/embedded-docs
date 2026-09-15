@@ -1,21 +1,21 @@
-# MeshSmoothNormals
+# Suavizar normais da malha
 
-Calcule normais suaves por vértice para uma malha e anexe-as. Malhas sem normais são sombreadas de forma plana (por face) pelos visualizadores glTF; este nó faz com que sejam sombreadas suavemente. Com um ângulo de vinco abaixo de 180, arestas mais nítidas que o limite são mantidas duras, dividindo os vértices ao longo delas.
+Calcula normais suaves por vértice para uma malha e as anexa. Malhas sem normais são sombreadas de forma plana (por face) por visualizadores glTF; este nó faz com que sejam sombreadas suavemente. Com um ângulo de vinco abaixo de 180, arestas mais afiadas que o limite são mantidas duras, dividindo os vértices ao longo delas.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `malha` | A malha de entrada a ser processada. | MESH | Sim | - |
-| `crease_angle` | Arestas cujo ângulo diedro excede este valor (em graus) permanecem duras (os vértices são divididos). 180 = totalmente suave; valores menores preservam arestas afiadas (por exemplo, ~30-60 para superfícies rígidas). Padrão: 180.0. | FLOAT | Sim | 0.0 a 180.0 (passo 1.0) |
+| `crease_angle` | Arestas cujo ângulo diedral excede este valor (graus) permanecem duras (os vértices são divididos). 180 = totalmente suave; valores menores preservam arestas afiadas (por exemplo, ~30-60 para hard-surface). Padrão: 180.0. | FLOAT | Sim | 0.0 a 180.0 (passo 1.0) |
 
-Quando `crease_angle` é 180 ou mais, a topologia da malha permanece inalterada. Quando definido abaixo de 180, os vértices são divididos ao longo das arestas duras, o que pode aumentar a contagem de vértices.
+Quando `crease_angle` é 180 ou maior, a topologia da malha permanece inalterada. Quando definido abaixo de 180, os vértices são divididos ao longo de arestas duras, o que pode aumentar a contagem de vértices. Quando os vértices são divididos, os dados por vértice (cores, UVs e tangentes) são duplicados para corresponder ao novo layout de vértices, e a malha resultante é reconstruída como um lote de tamanho variável.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 |-------------|-------------|-----------|
-| `malha` | A malha de entrada com dados de normais suaves anexados, ou com vértices e normais divididos quando um ângulo de vinco é definido. | MESH |
+| `mesh` | A malha de entrada com dados de normais suaves anexados, ou com vértices divididos e normais quando um ângulo de vinco é definido. | MESH |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshSmoothNormals/pt-BR.md)
 

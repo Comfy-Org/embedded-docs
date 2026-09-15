@@ -1,16 +1,18 @@
 # HiperDöşeme
 
-HyperTile düğümü, görüntü üretimi sırasında bellek kullanımını optimize etmek için difüzyon modellerindeki dikkat mekanizmasına bir döşeme (tile) tekniği uygular. Gizli uzayı daha küçük döşemelere böler ve bunları ayrı ayrı işler, ardından sonuçları yeniden birleştirir. Bu sayede bellek tükenmesi yaşanmadan daha büyük görüntü boyutlarıyla çalışmayı sağlar.
+HyperTile, görüntü üretimi sırasında bellek kullanımını azaltmak için difüzyon modellerinin içindeki dikkat mekanizmasına bir döşeme tekniği uygular. Latent uzayını daha küçük döşemelere böler, her döşeme için dikkati ayrı ayrı işler ve ardından sonuçları yeniden birleştirir. Bu, bellek tükenmeden daha büyük görüntü boyutlarıyla çalışmayı mümkün kılar.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | HyperTile optimizasyonunun uygulanacağı difüzyon modeli | MODEL | Evet | - |
-| `döşeme_boyutu` | İşleme için hedef döşeme boyutu (varsayılan: 256). Dahili olarak değer, minimum 32 olacak şekilde sınırlandırılır ve ardından etkin döşeme boyutunu elde etmek için 8'e bölünür. | INT | Evet | 1 - 2048 |
-| `değiştirme_boyutu` | İşlem sırasında döşemelerin verimliliği artırmak için nasıl yeniden düzenleneceğini kontrol eder. Daha büyük değerler, döşeme boyutlarında daha fazla çeşitlilik sağlar (varsayılan: 2) | INT | Evet | 1 - 128 |
-| `maks_derinlik` | Döşemenin uygulanacağı maksimum derinlik seviyesi (çözünürlük ölçeği). 0 değeri, döşemeyi yalnızca en yüksek çözünürlükte uygular (varsayılan: 0) | INT | Evet | 0 - 10 |
-| `ölçek_derinliği` | Etkinleştirildiğinde, daha derin seviyelerde döşeme boyutu orantılı olarak ölçeklenir. Bu, daha düşük çözünürlüklerde kalitenin korunmasına yardımcı olabilir (varsayılan: False) | BOOLEAN | Evet | True / False |
+| `döşeme_boyutu` | İşleme için hedef döşeme boyutu (varsayılan: 256). Dahili olarak değer en az 32 olacak şekilde sınırlandırılır ve ardından etkin döşeme boyutunu elde etmek için 8'e bölünür. | INT | Evet | 1 - 2048 |
+| `değiştirme_boyutu` | İşleme sırasında döşemelerin verimliliği artırmak için nasıl yeniden düzenlendiğini kontrol eder. Daha büyük değerler döşeme boyutlarında daha fazla çeşitliliğe izin verir (varsayılan: 2) | INT | Evet | 1 - 128 |
+| `maks_derinlik` | Döşemenin uygulanacağı maksimum derinlik düzeyi (çözünürlük ölçeği). 0 değeri döşemeyi yalnızca en yüksek çözünürlükte uygular (varsayılan: 0) | INT | Evet | 0 - 10 |
+| `ölçek_derinliği` | Etkinleştirildiğinde, döşeme boyutu daha derin derinlik düzeylerinde orantılı olarak ölçeklenir. Bu, daha düşük çözünürlüklerde kaliteyi korumaya yardımcı olabilir (varsayılan: False) | BOOLEAN | Evet | True / False |
+
+Not: `tile_size`, `swap_size`, `max_depth` ve `scale_depth` gelişmiş girdiler olarak işaretlenmiştir, bu nedenle yalnızca arayüzde gelişmiş seçenekler etkinleştirildiğinde gösterilirler.
 
 ## Çıktılar
 

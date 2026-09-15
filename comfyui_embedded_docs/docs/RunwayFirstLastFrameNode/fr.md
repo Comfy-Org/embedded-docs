@@ -11,7 +11,7 @@ Le nœud Runway First-Last-Frame to Video génère une vidéo à partir d'une im
 | `image_fin` | Image de fin à utiliser pour la vidéo. Prise en charge uniquement pour gen3a_turbo. | IMAGE | Oui | N/A |
 | `durée` | Durée de la vidéo générée en secondes. La durée plus longue de 10 s laisse plus de temps à la génération pour effectuer une transition fluide entre les images de début et de fin (par défaut : « 5 »). | COMBO | Oui | `"5"`<br>`"10"` |
 | `ratio` | Ratio d'aspect pour la vidéo générée (par défaut : « 768:1280 ») | COMBO | Oui | `"768:1280"`<br>`"1280:768"` |
-| `graine` | Graine aléatoire pour la génération. Définissez 0 pour une graine aléatoire (par défaut : 0). | INT | Non | 0 à 4294967295 |
+| `graine` | Graine aléatoire pour la génération. Définissez 0 pour une graine aléatoire (par défaut : 0). | INT | Oui | 0 à 4294967295 |
 
 **Contraintes des paramètres :**
 

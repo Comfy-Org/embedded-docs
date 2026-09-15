@@ -1,21 +1,23 @@
 # PatchModelAddDownscale (Kohya Deep Shrink)
 
-PatchModelAddDownscale (Kohya Deep Shrink) implementa la técnica Kohya Deep Shrink aplicando operaciones de reducción y aumento de escala a bloques específicos de un modelo. Reduce la resolución de las características intermedias durante el procesamiento y luego las restaura a su tamaño original, lo que puede mejorar el rendimiento mientras se mantiene la calidad. El nodo permite un control preciso sobre cuándo y cómo se producen estas operaciones de escalado durante la ejecución del modelo.
+PatchModelAddDownscale (Kohya Deep Shrink) aplica la técnica Kohya Deep Shrink a un modelo reduciendo las características intermedias en un bloque elegido y luego escalándolas de nuevo a su tamaño original. La reducción solo ocurre durante una parte seleccionada del proceso de eliminación de ruido, lo que puede reducir el costo de procesamiento mientras mantiene el resultado final cercano al original.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo al que se le aplicará el parche de reducción de escala | MODEL | Sí | - |
+| `modelo` | El modelo al que se aplicará el parche de reducción de escala | MODEL | Sí | - |
 | `numero_de_bloque` | El número de bloque específico donde se aplicará la reducción de escala (predeterminado: 3) | INT | Sí | 1-32 |
-| `factor_de_reducción` | El factor por el cual se reducirá la escala de las características (predeterminado: 2.0) | FLOAT | Sí | 0.1-9.0 |
+| `factor_de_reducción` | El factor por el cual reducir la escala de las características (predeterminado: 2.0) | FLOAT | Sí | 0.1-9.0 |
 | `porcentaje_inicial` | El punto de inicio en el proceso de eliminación de ruido donde comienza la reducción de escala (predeterminado: 0.0) | FLOAT | Sí | 0.0-1.0 |
 | `porcentaje_final` | El punto final en el proceso de eliminación de ruido donde se detiene la reducción de escala (predeterminado: 0.35) | FLOAT | Sí | 0.0-1.0 |
-| `reducción_después_de_omitir` | Si se aplica la reducción de escala después de las conexiones de salto (predeterminado: True) | BOOLEAN | Sí | - |
-| `método_de_reducción` | El método de interpolación utilizado para las operaciones de reducción de escala | COMBO | Sí | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
-| `método_de_ampliación` | El método de interpolación utilizado para las operaciones de aumento de escala | COMBO | Sí | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `reducción_después_de_omitir` | Indica si se debe aplicar la reducción de escala después de las conexiones de salto (predeterminado: True) | BOOLEAN | Sí | - |
+| `método_de_reducción` | El método de interpolación utilizado para las operaciones de reducción de escala (predeterminado: "bicubic") | COMBO | Sí | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `método_de_ampliación` | El método de interpolación utilizado para las operaciones de aumento de escala (predeterminado: "bicubic") | COMBO | Sí | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 
-El parche de reducción de escala se aplica solo cuando el paso actual de eliminación de ruido se encuentra dentro del rango definido por `start_percent` y `end_percent`, y solo en el bloque seleccionado por `block_number`. Cuando `downscale_after_skip` está habilitado, el parche se aplica después de la conexión de salto; cuando está deshabilitado, se aplica antes de la conexión de salto.
+El parche de reducción de escala se aplica solo cuando el paso actual de eliminación de ruido cae dentro del rango definido por `start_percent` y `end_percent`, y solo en el bloque seleccionado por `block_number`. Cuando `downscale_after_skip` está habilitado, el parche se aplica después de la conexión de salto; cuando está deshabilitado, se aplica antes. Después, las características se escalan de nuevo a su tamaño original, pero solo cuando el tamaño actual de las características ya no coincide con el tamaño registrado antes de la reducción de escala.
+
+Los parámetros `block_number`, `start_percent`, `end_percent` y `downscale_after_skip` están marcados como opciones avanzadas en la interfaz del nodo.
 
 ## Salidas
 

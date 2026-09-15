@@ -7,9 +7,9 @@ Rodina 3D Düzgün düğümü, Rodin API'sini kullanarak giriş görüntülerini
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
 | `Görüntüler` | 3D model üretimi için kullanılacak giriş görüntüleri. Birden fazla görüntü sağlanabilir. | IMAGE | Evet | - |
-| `Tohum` | Üretim tutarlılığı için rastgele tohum değeri. | INT | Evet | - |
-| `Malzeme_Türü` | 3D modele uygulanacak malzeme türü. | STRING | Evet | - |
-| `Çokgen_Sayısı` | Oluşturulan 3D model için hedef çokgen sayısı. Ağ kalitesini ve detay seviyesini belirler. | STRING | Evet | - |
+| `Tohum` | Üretim tutarlılığı için rastgele tohum değeri. | INT | Hayır | - |
+| `Malzeme_Türü` | 3D modele uygulanacak malzeme türü. | STRING | Hayır | - |
+| `Çokgen_Sayısı` | Oluşturulan 3D model için hedef çokgen sayısı. Ağ kalitesini ve detay seviyesini belirler. | STRING | Hayır | - |
 
 ## Çıktılar
 

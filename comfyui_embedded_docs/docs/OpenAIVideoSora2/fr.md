@@ -1,31 +1,32 @@
 # OpenAI Sora - Vidéo
 
-Le nœud OpenAIVideoSora2 génère des vidéos à l'aide des modèles Sora d'OpenAI. Il crée du contenu vidéo à partir d'un texte d'invite et d'une image de référence d'entrée facultative, puis fournit la vidéo générée comme sortie. Le nœud prend en charge différentes durées et résolutions vidéo selon le modèle sélectionné.
+Le nœud OpenAIVideoSora2 génère des vidéos avec les modèles Sora d'OpenAI. Il prend une invite textuelle ainsi qu'une seule image de référence facultative, envoie la requête à OpenAI, attend la fin de la génération, puis renvoie la vidéo résultante. Les durées et résolutions prises en charge dépendent du modèle sélectionné.
 
-**AVIS D'OBSOLESCENCE :** OpenAI cessera de fournir l'API Sora v2 en septembre 2026. Ce nœud sera retiré de ComfyUI à ce moment-là.
+**AVIS DE DÉPRÉCIATION :** OpenAI cessera de fournir l'API Sora v2 en septembre 2026. Ce nœud sera supprimé de ComfyUI à cette date.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `modèle` | Le modèle OpenAI Sora à utiliser pour la génération vidéo (défaut : "sora-2") | COMBO | Oui | "sora-2"<br>"sora-2-pro" |
-| `invite` | Texte d'orientation ; peut être vide si une image d'entrée est présente (défaut : vide) | STRING | Oui | - |
-| `taille` | La résolution de la vidéo générée (défaut : "1280x720") | COMBO | Oui | "720x1280"<br>"1280x720"<br>"1024x1792"<br>"1792x1024" |
-| `durée` | La durée de la vidéo générée en secondes (défaut : 8) | COMBO | Oui | 4<br>8<br>12 |
-| `image` | Image de référence d'entrée facultative utilisée pour la génération vidéo (référence de tenue, de personnage, de scène, etc.) ; une seule image est prise en charge | IMAGE | Non | - |
-| `graine` | Valeur seed pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la valeur seed (défaut : 0) | INT | Non | 0 à 2147483647 |
+| `modèle` | Modèle Sora d'OpenAI à utiliser pour la génération de vidéo (par défaut : "sora-2") | COMBO | Oui | "sora-2"<br>"sora-2-pro" |
+| `invite` | Texte de guidage ; peut être vide si une image d'entrée est présente (par défaut : chaîne vide) | STRING | Oui | - |
+| `taille` | Résolution de la vidéo générée (par défaut : "1280x720") | COMBO | Oui | "720x1280"<br>"1280x720"<br>"1024x1792"<br>"1792x1024" |
+| `durée` | Durée de la vidéo générée en secondes (par défaut : 8) | COMBO | Oui | 4<br>8<br>12 |
+| `image` | Image de référence d'entrée facultative utilisée pour la génération de vidéo ; une seule image est prise en charge | IMAGE | Non | - |
+| `graine` | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0) | INT | Non | 0 à 2147483647 |
 
-**Contraintes et limites :**
+**Contraintes et limitations :**
 
-- Le modèle « sora-2 » ne prend en charge que les résolutions « 720x1280 » et « 1280x720 » ; les options « 1024x1792 » et « 1792x1024 » ne sont valides qu'avec le modèle « sora-2-pro »
-- Lorsqu'une image est connectée, elle doit contenir exactement une image ; la connexion de plus d'une image génère une erreur
-- Les résultats sont non déterministes quelle que soit la valeur seed
+- Le modèle "sora-2" ne prend en charge que les tailles "720x1280" et "1280x720" ; sélectionner "1024x1792" ou "1792x1024" avec "sora-2" provoque une erreur. Les tailles plus grandes ne sont disponibles qu'avec "sora-2-pro".
+- Lorsqu'une image est connectée, une seule image doit être fournie ; en connecter plusieurs déclenche une erreur.
+- Les résultats sont non déterministes quelle que soit la valeur de la graine.
+- L'estimation de prix affichée dépend des paramètres `model`, `size` et `duration` sélectionnés.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `output` | Le fichier vidéo généré par OpenAI Sora | VIDEO |
+| `output` | Vidéo générée par OpenAI Sora | VIDEO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIVideoSora2/fr.md)
 

@@ -1,17 +1,19 @@
 # Modelo de Parche Tome
 
-TomePatchModel aplica Token Merging (ToMe) a un modelo de difusión para reducir los requisitos computacionales durante la inferencia. Funciona fusionando selectivamente tokens similares en el mecanismo de atención, lo que permite al modelo procesar menos tokens mientras mantiene la calidad de imagen. Esta técnica ayuda a acelerar la generación sin una pérdida significativa de calidad.
+TomePatchModel aplica Token Merging (ToMe) a un modelo de difusión para reducir el costo computacional durante la inferencia. Funciona fusionando tokens similares dentro del mecanismo de atención del modelo, de modo que este procesa menos tokens mientras mantiene en gran medida la calidad de la salida.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo de difusión al que se le aplicará la fusión de tokens | MODEL | Sí | - |
-| `ratio` | La proporción de tokens a fusionar (predeterminado: 0.3). Los valores más altos fusionan más tokens, lo que resulta en una mayor aceleración pero potencialmente menor calidad. | FLOAT | Sí | 0.0 - 1.0 |
+| `modelo` | El modelo de difusión al que se aplicará la fusión de tokens | MODEL | Sí | - |
+| `ratio` | La proporción de tokens a fusionar (predeterminado: 0.3). Los valores más altos fusionan más tokens, lo que puede proporcionar una mayor aceleración pero potencialmente una menor calidad. | FLOAT | Sí | 0.0 - 1.0 |
+
+Nota: Si la cantidad de tokens en un bloque de atención es lo suficientemente pequeña como para que no se necesite reducción de resolución, las funciones de fusión se reemplazan por operaciones nulas y el modelo se ejecuta sin cambios para ese bloque.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de la salida | Descripción | Tipo de datos |
 | --- | --- | --- |
 | `model` | El modelo modificado con la fusión de tokens aplicada | MODEL |
 

@@ -1,13 +1,13 @@
 # SesKodlayıcıKodla
 
-AudioEncoderEncode düğümü, bir ses kodlayıcı modeli kullanarak ses verisini kodlanmış bir temsiline dönüştürür. Bir ses kodlayıcı ve ham ses girdisi alır, ardından sesten dalga biçimini ve örnekleme hızını çıkararak koşullandırma hattında daha fazla işleme uygun kodlanmış bir çıktı üretir.
+AudioEncoderEncode düğümü, bir ses kodlayıcı modeli kullanarak sesi kodlanmış bir temsile dönüştürür. Bir ses kodlayıcı ve bir ses girdisi alır, ardından ses dalga formunu ve örnekleme oranını ses verisinden çıkarır ve kodlanmış çıktı üretmek için bunları kodlayıcıya aktarır.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `ses_kodlayıcı` | Ses girdisini işlemek için kullanılan ses kodlayıcı modeli | AUDIO_ENCODER | Evet | - |
-| `ses` | Dalga biçimi ve örnekleme hızı bilgisi içeren ses verisi | AUDIO | Evet | - |
+| `ses` | Dalga formu ve örnekleme oranı bilgilerini içeren ses verisi | AUDIO | Evet | - |
 
 ## Çıktılar
 

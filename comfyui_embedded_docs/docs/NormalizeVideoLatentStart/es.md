@@ -1,16 +1,16 @@
 # NormalizeVideoLatentStart
 
-Este nodo ajusta los primeros fotogramas de un latente de video para que se parezcan más a los fotogramas posteriores. Calcula el promedio y la variación a partir de un conjunto de fotogramas de referencia posteriores en el video y aplica esas mismas características a los fotogramas iniciales. Esto ayuda a crear una transición visual más suave y consistente al comienzo de un video.
+Este nodo ajusta los primeros fotogramas de un latente de video para que se parezcan más a los fotogramas que vienen después. Calcula el promedio y la variación a partir de un conjunto de fotogramas de referencia posteriores en el video y aplica esas mismas características a los fotogramas iniciales. Esto ayuda a reducir las diferencias entre los fotogramas iniciales y el resto del video, creando una transición más fluida y consistente.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `latent` | La representación latente de video a procesar. | LATENT | Sí | - |
-| `start_frame_count` | Número de fotogramas latentes a normalizar, contados desde el inicio (predeterminado: 4). | INT | Sí | 1 a 16384 (resolución máxima) |
-| `reference_frame_count` | Número de fotogramas latentes después de los fotogramas iniciales que se usarán como referencia (predeterminado: 5). | INT | Sí | 1 a 16384 (resolución máxima) |
+| `latent` | La representación latente del video que se va a procesar. | LATENT | Sí | - |
+| `start_frame_count` | Número de fotogramas latentes que se van a normalizar, contados desde el inicio (predeterminado: 4). | INT | Sí | 1 a 16384 (resolución máxima) |
+| `reference_frame_count` | Número de fotogramas latentes posteriores a los fotogramas iniciales que se usarán como referencia (predeterminado: 5). | INT | Sí | 1 a 16384 (resolución máxima) |
 
-**Nota:** El `reference_frame_count` se limita automáticamente al número de fotogramas disponibles después de los fotogramas iniciales. Si el latente de video tiene solo 1 fotograma de duración, no se realiza ninguna normalización y se devuelve el latente original sin cambios.
+**Nota:** Los fotogramas de referencia se toman justo después de los fotogramas de `start_frame_count`. Si hay menos fotogramas disponibles que los solicitados por `reference_frame_count`, el nodo usa tantos como haya disponibles (como máximo uno menos que el recuento total de fotogramas del latente). Si el latente de video tiene solo 1 fotograma, no se realiza ninguna normalización y se devuelve el latente original sin cambios.
 
 ## Salidas
 

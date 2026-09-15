@@ -11,7 +11,7 @@ Runway First-Last-Frame to Video düğümü, bir başlangıç karesi, bir bitiş
 | `bitiş_karesi` | Video için kullanılacak bitiş karesi. Yalnızca gen3a_turbo için desteklenir. | IMAGE | Evet | N/A |
 | `süre` | Oluşturulan videonun saniye cinsinden süresi. Daha uzun olan 10s süre, oluşturma işlemine başlangıç ve bitiş kareleri arasında yumuşak geçiş için daha fazla zaman tanır (varsayılan: "5"). | COMBO | Evet | `"5"`<br>`"10"` |
 | `oran` | Oluşturulan video için en-boy oranı (varsayılan: "768:1280") | COMBO | Evet | `"768:1280"`<br>`"1280:768"` |
-| `tohum` | Oluşturma için rastgele tohum (seed). Rastgele tohum için 0 olarak ayarlayın (varsayılan: 0). | INT | Hayır | 0 ile 4294967295 |
+| `tohum` | Oluşturma için rastgele tohum (seed). Rastgele tohum için 0 olarak ayarlayın (varsayılan: 0). | INT | Evet | 0 ile 4294967295 |
 
 **Parametre Kısıtlamaları:**
 

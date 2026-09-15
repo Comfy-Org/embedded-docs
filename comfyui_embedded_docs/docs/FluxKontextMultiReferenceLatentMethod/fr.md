@@ -1,13 +1,13 @@
 # Méthode latente multi-référence FluxKontext
 
-Le nœud FluxKontextMultiReferenceLatentMethod modifie les données de conditionnement en définissant une méthode spécifique de latents de référence. Il ajoute la méthode choisie à l'entrée de conditionnement, ce qui affecte la manière dont les latents de référence sont traités lors des étapes de génération suivantes. Ce nœud est marqué comme expérimental et fait partie du système de conditionnement Flux.
+Le nœud FluxKontextMultiReferenceLatentMethod met à jour les données de conditionnement en y stockant une méthode de latents de référence choisie. La méthode stockée est ensuite utilisée lorsque les latents de référence sont traités lors des étapes de génération ultérieures. Ce nœud est marqué comme expérimental et appartient au système de conditionnement Flux.
 
 ## Entrées
 
-| Paramètre | Description | Type de données | Requis | Plage |
+| Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
 | `conditionnement` | Les données de conditionnement à modifier avec la méthode de latents de référence | CONDITIONING | Oui | - |
-| `méthode_des_latents_de_référence` | La méthode à utiliser pour le traitement des latents de référence. Si « uxo » ou « uso » est sélectionné, il sera converti en « uxo ». Ce paramètre est marqué comme avancé. | COMBO | Oui | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
+| `méthode_des_latents_de_référence` | La méthode utilisée pour le traitement des latents de référence. Si une valeur contenant "uxo" ou "uso" est sélectionnée, elle est convertie en "uxo" avant d'être stockée. Ce paramètre est marqué comme avancé. | COMBO | Oui | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
 
 ## Sorties
 

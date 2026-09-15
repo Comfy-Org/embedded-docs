@@ -1,20 +1,22 @@
 # Kare Enterpolasyonu
 
-Frame Interpolate düğümü, bir görüntü dizisindeki mevcut kareler arasında yeni kareler oluşturarak kare hızını etkili bir şekilde artırır. Ara karelerin nasıl görünmesi gerektiğini tahmin etmek için bir yapay zeka modeli kullanır; bu, akıcı ağır çekim efektleri oluşturmak veya bir videonun akıcılığını artırmak için kullanılabilir.
+Frame Interpolate düğümü, bir görüntü dizisindeki mevcut kareler arasında yeni kareler oluşturarak kare hızını etkili biçimde artırır. Ara karelerin nasıl görünmesi gerektiğini tahmin etmek için bir yapay zeka modeli kullanır; bu, akıcı ağır çekim efektleri oluşturmak veya bir videonun akıcılığını artırmak için kullanılabilir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `enterpolasyon_modeli` | Ara karelerin oluşturulması için kullanılacak kare interpolasyon modeli | INTERP_MODEL | Evet | - |
-| `görseller` | Aralarında interpolasyon yapılacak ardışık görüntülerden (karelerden) oluşan bir küme. En az 2 görüntü gerektirir. 2'den az kare sağlanırsa, düğüm girdi görüntülerini değiştirmeden döndürür. | IMAGE | Evet | - |
-| `çarpan` | Kare sayısının kaç katına çıkarılacağını belirtir. Örneğin, 2 çarpanı kare sayısını iki katına çıkarır. (varsayılan: 2) | INT | Evet | 2 ila 16 |
+| `enterpolasyon_modeli` | Ara kareleri oluşturmak için kullanılacak kare enterpolasyon modeli | INTERP_MODEL | Evet | - |
+| `görseller` | Aralarında enterpolasyon yapılacak ardışık görüntü (kare) grubu. En az 2 görüntü gerektirir. 2'den az kare sağlanırsa düğüm, giriş görüntülerini değiştirmeden döndürür. | IMAGE | Evet | - |
+| `çarpan` | Kare sayısının kaç katına çıkarılacağı. Örneğin, 2 çarpanı kare sayısını iki katına çıkarır. (varsayılan: 2) | INT | Evet | 2 ile 16 |
+
+**Not:** Düğüm, en az 2 giriş karesi ve `multiplier` için en az 2 değeri gerektirir. Bu koşullardan biri karşılanmazsa, giriş görüntüleri değiştirilmeden döndürülür.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `IMAGE` | Orijinal karelerin arasına interpolasyon karelerinin eklenmesiyle oluşan ve daha akıcı bir sekans sağlayan yeni görüntü kümesi. Toplam çıktı karesi sayısı `(number of input frames - 1) * multiplier + 1` formülüyle hesaplanır. | IMAGE |
+| `IMAGE` | Orijinal karelerin arasına enterpolasyonlu kareler eklenmiş yeni bir görüntü grubu; bu, daha akıcı bir dizi oluşturur. Toplam çıktı karesi sayısı `(number of input frames - 1) * multiplier + 1` olur. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FrameInterpolate/tr.md)
 

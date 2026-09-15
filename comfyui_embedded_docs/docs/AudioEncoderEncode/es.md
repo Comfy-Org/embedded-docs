@@ -1,19 +1,19 @@
 # CodificadorAudioCodificar
 
-El nodo AudioEncoderEncode convierte datos de audio en una representación codificada utilizando un modelo de codificador de audio. Toma un codificador de audio y una entrada de audio sin procesar, luego extrae la forma de onda y la frecuencia de muestreo del audio para producir una salida codificada adecuada para su posterior procesamiento en el pipeline de condicionamiento.
+El nodo AudioEncoderEncode convierte audio en una representación codificada utilizando un modelo de codificador de audio. Toma un codificador de audio y una entrada de audio, luego extrae la forma de onda y la frecuencia de muestreo del audio y las pasa al codificador para producir una salida codificada.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `codificador_audio` | El modelo de codificador de audio utilizado para procesar la entrada de audio | AUDIO_ENCODER | Sí | - |
-| `audio` | Los datos de audio que contienen información de forma de onda y frecuencia de muestreo | AUDIO | Sí | - |
+| `audio` | Los datos de audio que contienen la información de la forma de onda y la frecuencia de muestreo | AUDIO | Sí | - |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `output` | La representación de audio codificada generada por el codificador de audio | AUDIO_ENCODER_OUTPUT |
+| `output` | La representación de audio codificada producida por el codificador de audio | AUDIO_ENCODER_OUTPUT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioEncoderEncode/es.md)
 

@@ -1,26 +1,27 @@
-# SCAIL2ColoredMask
+# Criar Máscara Colorida SCAIL-2
 
-Este nó renderiza dados de rastreamento do SAM3 em máscaras coloridas que são consumidas pelo nó WanSCAILToVideo. Ele processa dados de rastreamento de um vídeo de pose condutor e opcionalmente uma imagem de referência, atribuindo cores consistentes a cada pessoa rastreada em ambas as saídas.
+Este nó renderiza dados de rastreamento SAM3 em máscaras coloridas que são consumidas pelo nó WanSCAILToVideo. Ele processa dados de rastreamento de um vídeo de pose de condução e, opcionalmente, de uma imagem de referência, atribuindo cores consistentes a cada pessoa rastreada em ambas as saídas.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
-|-----------|-----------|--------------|-------------|-------|
-| `dados_de_rastreamento_driving` | Rastreamento SAM3 do vídeo de pose condutor. Será renderizado na saída pose_video_mask. | SAM3_TRACK_DATA | Sim | - |
-| `dados_de_rastreamento_referência` | Rastreamento SAM3 da imagem de referência. | SAM3_TRACK_DATA | Não | - |
-| `índices_de_objetos` | Lista separada por vírgulas de índices de pessoas a incluir (ex.: '0,2,3'). Aplicado tanto às máscaras de referência quanto às do vídeo de pose. Vazio = todas. | STRING | Sim | - |
-| `ordenar_por` | Ordem na qual as cores da paleta são atribuídas aos objetos rastreados (aplicado tanto à referência quanto ao vídeo de pose para que cada identidade mantenha a mesma cor). left_to_right = objeto mais à esquerda (pelo centróide do primeiro quadro) recebe a primeira cor; area = objeto maior (pela área da máscara do primeiro quadro) recebe a primeira cor; none = manter a ordem do SAM3. (padrão: "left_to_right") | COMBO | Sim | `"none"`<br>`"left_to_right"`<br>`"area"` |
-| `modo_de_substituição` | Falso = Modo Animação (pose_video_mask tem fundo preto, reference_image_mask tem fundo branco). Verdadeiro = Modo Substituição (pose_video_mask tem fundo branco, reference_image_mask tem fundo preto). (padrão: Falso) | BOOLEAN | Sim | Falso<br>Verdadeiro |
-Observação: `object_indices` aceita apenas dígitos separados por vírgula; entradas não numéricas e índices fora do intervalo são ignorados. Quando `ref_track_data` não é fornecido, a saída `reference_image_mask` é um preenchimento sólido usando a cor de fundo de referência (branco no Modo Animação, preto no Modo Substituição).
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `dados_de_rastreamento_driving` | Rastreamento SAM3 do vídeo de pose de condução. Será renderizado na saída pose_video_mask. | SAM3_TRACK_DATA | Sim | - |
+| `dados_de_rastreamento_referência` | Rastreamento SAM3 da(s) imagem(ns) de referência (uma identidade por objeto, colorida na ordem do lote), ou uma MASK simples do sujeito de referência (renderizada como uma única identidade). | SAM3_TRACK_DATA ou MASK | Não | - |
+| `índices_de_objetos` | Lista separada por vírgulas de índices de pessoas a incluir (ex.: '0,2,3'). Aplicada tanto às máscaras de referência quanto às do vídeo de pose. Vazio = todos. (padrão: "") | STRING | Sim | - |
+| `ordenar_por` | Ordem na qual as cores da paleta são atribuídas aos objetos rastreados (aplicada tanto à referência quanto ao vídeo de pose para que cada identidade mantenha a mesma cor). Objetos que aparecem em quadros anteriores sempre vêm primeiro; dentro de um quadro, left_to_right = o objeto mais à esquerda (pelo centroide na primeira aparição) recebe a primeira cor, area = o maior objeto (pela área da máscara na primeira aparição) recebe a primeira cor; none = mantém a ordem do SAM3. (padrão: "left_to_right") | COMBO | Sim | `"none"`<br>`"left_to_right"`<br>`"area"` |
+| `modo_de_substituição` | False = Modo de Animação (pose_video_mask tem fundo preto, reference_image_mask tem fundo branco). True = Modo de Substituição (pose_video_mask tem fundo branco, reference_image_mask tem fundo preto). (padrão: False) | BOOLEAN | Sim | False<br>True |
+
+Nota: `object_indices` aceita apenas dígitos separados por vírgulas; entradas não numéricas e índices fora do intervalo são ignorados. Quando `ref_track_data` não é fornecido, a saída `reference_image_mask` é um preenchimento sólido usando a cor de fundo de referência (branco no Modo de Animação, preto no Modo de Substituição).
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
-|---------------|-----------|--------------|
-| `pose_video_mask` | Máscara colorida renderizada a partir dos dados de rastreamento do vídeo de pose condutor. A cor de fundo segue a configuração de replacement_mode. | IMAGE |
-| `reference_image_mask` | Máscara colorida renderizada a partir dos dados de rastreamento da imagem de referência. Sempre renderizada com fundo preto conforme convenção do modelo. | IMAGE |
+| Nome da Saída | Descrição | Tipo de Dados |
+|-------------|-------------|-----------|
+| `pose_video_mask` | Máscara colorida renderizada a partir dos dados de rastreamento do vídeo de pose de condução. A cor de fundo segue a configuração replacement_mode. | IMAGE |
+| `reference_image_mask` | Máscara colorida renderizada a partir dos dados de rastreamento da imagem de referência. O fundo é preto no Modo de Substituição e branco no Modo de Animação. Se nenhum dado de referência for fornecido, retorna um preenchimento sólido correspondente à cor de fundo de referência. | IMAGE |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SCAIL2ColoredMask/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `c9f6d87410b8bd4082ffb06ef1cf973829566ed222be643db3528cbc241d3c14`
+**Source fingerprint (SHA-256):** `ce0669ad0ed3c76cc18ef0ee7b620f5aa6eaa1e5b96c189941c0a5b744c3351f`

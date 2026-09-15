@@ -7,9 +7,9 @@ El nodo **Rodin 3D Smooth** genera activos 3D utilizando la API de Rodin, proces
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `Imágenes` | Imágenes de entrada para usar en la generación del modelo 3D. Se pueden proporcionar múltiples imágenes. | IMAGE | Sí | - |
-| `Semilla` | Valor de semilla aleatoria para la consistencia de la generación. | INT | Sí | - |
-| `Tipo_de_Material` | Tipo de material que se aplicará al modelo 3D. | STRING | Sí | - |
-| `Recuento_de_Polígonos` | Número objetivo de polígonos para el modelo 3D generado. Determina la calidad de la malla y el nivel de detalle. | STRING | Sí | - |
+| `Semilla` | Valor de semilla aleatoria para la consistencia de la generación. | INT | No | - |
+| `Tipo_de_Material` | Tipo de material que se aplicará al modelo 3D. | STRING | No | - |
+| `Recuento_de_Polígonos` | Número objetivo de polígonos para el modelo 3D generado. Determina la calidad de la malla y el nivel de detalle. | STRING | No | - |
 
 ## Salidas
 

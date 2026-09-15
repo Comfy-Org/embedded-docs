@@ -1,16 +1,14 @@
 # Charger un modèle d’interpolation d’images
 
-## Aperçu
-
-Ce nœud charge un modèle d'interpolation de trames depuis un fichier et le prépare pour une utilisation dans le workflow. Il détecte automatiquement si le fichier est un modèle FILM ou RIFE et configure le modèle pour des performances optimales sur votre matériel.
+Ce nœud charge un fichier de modèle d'interpolation de trames et le prépare pour une utilisation dans le flux de travail. Il détecte automatiquement si le fichier est un modèle FILM ou RIFE et configure le modèle pour le matériel disponible.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `nom_du_modèle` | Sélectionnez un modèle d'interpolation de trames à charger. Les modèles doivent être placés dans le dossier « frame_interpolation ». | COMBO | Oui | Liste des fichiers de modèles dans le dossier `frame_interpolation` |
+| `nom_du_modèle` | Sélectionnez un modèle d'interpolation de trames à charger. Les modèles doivent être placés dans le dossier 'frame_interpolation'. | COMBO | Oui | Liste des fichiers de modèle dans le dossier `frame_interpolation` |
 
-Remarque : Le nœud prend en charge les formats de modèles FILM et RIFE. Si le fichier sélectionné n'est pas un format reconnu, une erreur est générée.
+Remarque : Le nœud prend en charge les formats de modèle FILM et RIFE. Si le fichier sélectionné n'est pas dans un format reconnu, une erreur est générée.
 
 ## Sorties
 

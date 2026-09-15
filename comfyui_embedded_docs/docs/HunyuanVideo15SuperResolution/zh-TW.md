@@ -12,7 +12,7 @@ HunyuanVideo15SuperResolution 節點為影片超解析度過程準備 conditioni
 | `起始影像` | 可選的起始影像，用於引導超解析度。若提供，該影像會被放大並編碼到 conditioning 潛在表示中。 | IMAGE | 否 | N/A |
 | `clip_vision_output` | 可選的 CLIP 視覺嵌入，用於添加到 conditioning 中。 | CLIP_VISION_OUTPUT | 否 | N/A |
 | `latent` | 輸入的潛在影片表示，會併入 conditioning 中。 | LATENT | 是 | N/A |
-| `雜訊增強` | 要套用於 conditioning 的雜訊增強強度（預設值：0.70）。這是一個進階參數。 | FLOAT | 否 | 0.0 - 1.0 (step 0.01) |
+| `雜訊增強` | 要套用於 conditioning 的雜訊增強強度（預設值：0.70）。這是一個進階參數。 | FLOAT | 是 | 0.0 - 1.0 (step 0.01) |
 
 **注意：** 若您提供 `start_image`，則必須同時連接 `vae` 以便進行編碼。`start_image` 會自動放大至輸入 `latent` 空間尺寸（寬與高）的 16 倍，然後編碼並放入 conditioning 潛在表示中。編碼時僅使用 `start_image` 的 RGB 通道。
 

@@ -7,7 +7,7 @@ Este nodo utiliza la API Tencent Hunyuan3D para identificar y generar automátic
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
 | `modelo_3d` | Modelo 3D en formato FBX. El modelo debe tener menos de 30000 caras. | FILE3D | Sí | FBX, Any |
-| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados son no deterministas independientemente de la semilla. (predeterminado: 0) | INT | No | 0 a 2147483647 |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados son no deterministas independientemente de la semilla. (predeterminado: 0) | INT | Sí | 0 a 2147483647 |
 
 **Nota:** La entrada `model_3d` solo admite archivos en formato FBX. Si se proporciona un formato de archivo 3D diferente, el nodo generará un error.
 

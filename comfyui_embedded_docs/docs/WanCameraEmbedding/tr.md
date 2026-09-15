@@ -1,31 +1,31 @@
 # WanKameraYerleştirme
 
-WanCameraEmbedding düğümü, kamera hareket parametrelerine dayalı Plücker embedding'lerini kullanarak kamera yörünge embedding'leri üretir. Farklı kamera hareketlerini simüle eden bir dizi kamera pozu oluşturur ve bunları video üretim hatlarına uygun embedding tensörlerine dönüştürür.
+Bu düğüm, seçtiğiniz kamera yolu için Plücker gömlemelerini kullanarak bir kamera yörüngesi gömme tensörü üretir. Kaydırma, yakınlaştırma veya döndürme gibi hareketleri simüle eden bir kamera pozları dizisi oluşturur ve bunları video üretim işlem hatlarında kullanılabilecek bir gömme tensörüne dönüştürür.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `kamera_pozisyonu` | Simüle edilecek kamera hareketinin türü (varsayılan: "Static") | COMBO | Evet | "Static"<br>"Pan Up"<br>"Pan Down"<br>"Pan Left"<br>"Pan Right"<br>"Zoom In"<br>"Zoom Out"<br>"Anti Clockwise (ACW)"<br>"ClockWise (CW)" |
-| `genişlik` | Çıktının piksel cinsinden genişliği (varsayılan: 832, adım: 16) | INT | Evet | 16 ile MAX_RESOLUTION arası |
-| `yükseklik` | Çıktının piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 ile MAX_RESOLUTION arası |
-| `uzunluk` | Kamera yörünge dizisinin uzunluğu (varsayılan: 81, adım: 4) | INT | Evet | 1 ile MAX_RESOLUTION arası |
-| `hız` | Kamera hareketinin hızı (varsayılan: 1.0, adım: 0.1) | FLOAT | Hayır | 0.0 ile 10.0 arası |
-| `fx` | Odak uzaklığı x parametresi (varsayılan: 0.5, adım: 0.000000001) | FLOAT | Hayır | 0.0 ile 1.0 arası |
-| `fy` | Odak uzaklığı y parametresi (varsayılan: 0.5, adım: 0.000000001) | FLOAT | Hayır | 0.0 ile 1.0 arası |
-| `cx` | Asal nokta x koordinatı (varsayılan: 0.5, adım: 0.01) | FLOAT | Hayır | 0.0 ile 1.0 arası |
-| `cy` | Asal nokta y koordinatı (varsayılan: 0.5, adım: 0.01) | FLOAT | Hayır | 0.0 ile 1.0 arası |
+| `kamera_pozisyonu` | Simüle edilecek kamera hareketi türü (varsayılan: "Static") | COMBO | Evet | "Static"<br>"Pan Up"<br>"Pan Down"<br>"Pan Left"<br>"Pan Right"<br>"Zoom In"<br>"Zoom Out"<br>"Anti Clockwise (ACW)"<br>"ClockWise (CW)" |
+| `genişlik` | Çıktının piksel cinsinden genişliği (varsayılan: 832, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
+| `yükseklik` | Çıktının piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
+| `uzunluk` | Kamera yörünge dizisinin uzunluğu (varsayılan: 81, adım: 4) | INT | Evet | 1 to MAX_RESOLUTION |
+| `hız` | Kamera hareketinin hızı (varsayılan: 1.0, adım: 0.1) | FLOAT | Hayır | 0.0 ile 10.0 |
+| `fx` | Odak uzaklığı x parametresi (varsayılan: 0.5, adım: 0.000000001) | FLOAT | Hayır | 0.0 ile 1.0 |
+| `fy` | Odak uzaklığı y parametresi (varsayılan: 0.5, adım: 0.000000001) | FLOAT | Hayır | 0.0 ile 1.0 |
+| `cx` | Ana nokta x koordinatı (varsayılan: 0.5, adım: 0.01) | FLOAT | Hayır | 0.0 ile 1.0 |
+| `cy` | Ana nokta y koordinatı (varsayılan: 0.5, adım: 0.01) | FLOAT | Hayır | 0.0 ile 1.0 |
 
-Not: `fx`, `fy`, `cx` ve `cy` gelişmiş kamera iç parametreleridir. `speed` parametresi, seçilen kamera hareketinin dönüş açısını ve öteleme mesafesini ölçekler.
+Not: `fx`, `fy`, `cx` ve `cy` gelişmiş kamera içsel parametreleridir. `speed` parametresi, seçilen kamera hareketinin dönüş açısını ve öteleme mesafesini ölçekler.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `kamera_yerleştirme` | Yörünge dizisini içeren oluşturulmuş kamera embedding tensörü | TENSOR |
-| `genişlik` | İşleme için kullanılan genişlik değeri | INT |
-| `yükseklik` | İşleme için kullanılan yükseklik değeri | INT |
-| `uzunluk` | İşleme için kullanılan uzunluk değeri | INT |
+| `camera_embedding` | Yörünge dizisini içeren üretilmiş kamera gömme tensörü | TENSOR |
+| `width` | İşleme için kullanılan genişlik değeri | INT |
+| `height` | İşleme için kullanılan yükseklik değeri | INT |
+| `length` | İşleme için kullanılan uzunluk değeri | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraEmbedding/tr.md)
 

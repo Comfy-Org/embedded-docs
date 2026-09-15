@@ -1,19 +1,18 @@
 # AperçuAudio
 
-Le nœud Preview Audio vous permet d'écouter l'audio directement dans l'interface de ComfyUI, sans avoir à l'enregistrer dans le répertoire de sortie. Il prend des données audio en entrée, vérifie qu'elles sont présentes, puis les transmet tout en affichant un lecteur audio temporaire afin que vous puissiez entendre le résultat.
+Le nœud Preview Audio vous permet d’écouter l’audio directement dans ComfyUI sans l’enregistrer dans le répertoire de sortie. Il reçoit une entrée audio, vérifie que les données audio sont réellement présentes, puis les lit via un lecteur de prévisualisation dans l’interface tout en transmettant le même audio en sortie.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `audio` | Les données audio à prévisualiser. Le nœud lève une ValueError si l'entrée est None, ce qui peut se produire lorsque la vidéo source ne comporte pas de piste audio. | AUDIO | Oui | - |
+| `audio` | Les données audio à prévisualiser. Si cette entrée est None, le nœud lève une ValueError, ce qui peut se produire lorsque la vidéo source ne contient aucune piste audio. | AUDIO | Oui | - |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `audio` | Les données audio transmises telles quelles depuis l'entrée. | AUDIO |
-| `ui` | Affiche un widget lecteur audio dans l'interface pour prévisualiser l'audio. | UI |
+| `audio` | Les données audio transmises sans modification depuis l’entrée, afin que le nœud puisse être placé au milieu d’un workflow. | AUDIO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewAudio/fr.md)
 

@@ -1,24 +1,24 @@
 # LTXV Dual CFG Guider
 
-Este nó cria um objeto de amostragem guiada (guia de CFG) para modelos LTXV-AV. Ele aplica uma escala de orientação separada para a parte de vídeo e a parte de áudio do latente empacotado, permitindo que você controle a influência do condicionamento em cada modalidade de forma independente. Se as duas escalas forem iguais, ou se o latente não contiver componentes separados de vídeo e áudio, uma única escala geral é usada.
+Este nó cria um objeto de amostragem guiada (CFG guider) para modelos LTXV-AV. Ele aplica uma escala de orientação separada à parte de vídeo e à parte de áudio de um latente LTXV-AV empacotado, permitindo controlar a influência do condicionamento em cada modalidade independentemente. Se as duas escalas forem iguais, ou se o latente não contiver componentes separados de vídeo e áudio, uma única escala geral será usada em vez disso.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo a ser usado na amostragem. | MODEL | Sim | - |
-| `positive` | Condicionamento positivo para direcionar a geração. | CONDITIONING | Sim | - |
-| `negative` | Condicionamento negativo para afastar a geração. | CONDITIONING | Sim | - |
+| `model` | O modelo a ser usado durante a amostragem. | MODEL | Sim | - |
+| `positive` | Condicionamento positivo para orientar a geração em direção a ele. | CONDITIONING | Sim | - |
+| `negative` | Condicionamento negativo para afastar a geração dele. | CONDITIONING | Sim | - |
 | `video_cfg` | Força de orientação aplicada à modalidade de vídeo do latente (padrão: 3.0). | FLOAT | Sim | 0.0 a 100.0 |
 | `audio_cfg` | Força de orientação aplicada à modalidade de áudio do latente (padrão: 7.0). | FLOAT | Sim | 0.0 a 100.0 |
 
-Nota: Quando `video_cfg` e `audio_cfg` são iguais ou muito próximos em valor, o guia usa esse valor como uma única escala de CFG para todo o latente. Se o latente não for um latente LTXV-AV empacotado, apenas o valor de `video_cfg` é usado.
+Observação: Quando `video_cfg` e `audio_cfg` são iguais (ou muito próximos em valor), o guia usa esse valor como uma única escala CFG para todo o latente. Se o latente não for um latente LTXV-AV empacotado, apenas o valor de `video_cfg` será usado.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 |-------------|-------------|-----------|
-| `guider` | O guia de CFG configurado para ser passado a um nó de amostragem. | GUIDER |
+| `guider` | O guia CFG configurado a ser passado para um nó de amostragem. | GUIDER |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVDualCFGGuider/pt-BR.md)
 

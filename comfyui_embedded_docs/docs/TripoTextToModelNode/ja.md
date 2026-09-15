@@ -7,20 +7,20 @@
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | 生成する 3D モデルのテキスト記述（複数行）。このパラメータは必須であり、空にすることはできません。 | STRING | はい | - |
-| `negative_prompt` | 生成されたモデルに含めたくない内容を記述するテキスト（複数行）。最大 255 文字。空でない場合にのみ API に送信されます。 | STRING | No | Up to 255 characters |
-| `model_version` | 生成に使用する Tripo モデルのバージョン（デフォルト: v3_1_20260211）。 | COMBO | No | Multiple options available |
-| `style` | Tripo ではサポートされなくなり、無視されます。古いワークフロー向けに保持されています（デフォルト: "None"）。 | COMBO | No | Multiple options available |
-| `texture` | テクスチャマップを生成します。オフにするとベアジオメトリを返し、`pbr` は無視されます（デフォルト: True）。 | BOOLEAN | No | true / false |
-| `pbr` | PBR マテリアルマップ（ベースカラー、メタリック、ラフネス、ノーマル）。`texture` が必要で、`texture` がオフの場合は強制的にオフになります（デフォルト: True）。 | BOOLEAN | No | true / false |
-| `image_seed` | 画像生成段階で使用されるシード（デフォルト: 42）。 | INT | No | 0〜2147483647 |
-| `model_seed` | モデル生成段階で使用されるシード（デフォルト: 42）。 | INT | No | 0〜2147483647 |
-| `texture_seed` | テクスチャ生成段階で使用されるシード（デフォルト: 42）。 | INT | No | 0〜2147483647 |
-| `texture_quality` | 生成されるテクスチャの品質。detailed = HD テクスチャ、extreme = 8K ウルトラテクスチャ（デフォルト: standard）。 | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
-| `face_limit` | 最大フェイス数。-1 を指定すると Tripo が適応的に選択します（v3.x standard では約 140 万フェイス、detailed では 200 万フェイス）。Tripo は通知なくクランプします。v2.5 は 500,000、クアッドメッシュは 150,000 です。（デフォルト: -1） | INT | No | -1〜2000000 |
-| `quad` | クアッドメッシュを出力します。Tripo はクアッドメッシュを FBX として配信するため、結果は FBX 出力に格納され、GLB 出力は空のままです。（デフォルト: False） | BOOLEAN | No | true / false |
-| `ジオメトリ品質` | 生成されるジオメトリの品質（デフォルト: standard）。 | COMBO | No | "standard"<br>"detailed" |
-| `smart_low_poly` | クリーンで手作業によるスタイルのトポロジーを持つローポリメッシュ（500～20,000 フェイス、クアッドでは 500～10,000）。シンプルな被写体に最適で、複雑な被写体では失敗する場合があります。（デフォルト: False） | BOOLEAN | No | true / false |
-| `auto_size` | テクスチャ付きモデルを実世界のサイズ（メートル単位）にスケーリングします。Tripo はサイズをモデルのシーントランスフォームとして保存し、モデルが変換、リギング、またはリターゲティングされる際にベイクします。テクスチャがない場合は無視されます。（デフォルト: True） | BOOLEAN | No | true / false |
+| `negative_prompt` | 生成されたモデルに含めたくない内容を記述するテキスト（複数行）。最大 255 文字。空でない場合にのみ API に送信されます。 | STRING | いいえ | Up to 255 characters |
+| `model_version` | 生成に使用する Tripo モデルのバージョン（デフォルト: v3_1_20260211）。 | COMBO | いいえ | Multiple options available |
+| `style` | Tripo ではサポートされなくなり、無視されます。古いワークフロー向けに保持されています（デフォルト: "None"）。 | COMBO | いいえ | Multiple options available |
+| `texture` | テクスチャマップを生成します。オフにするとベアジオメトリを返し、`pbr` は無視されます（デフォルト: True）。 | BOOLEAN | いいえ | true / false |
+| `pbr` | PBR マテリアルマップ（ベースカラー、メタリック、ラフネス、ノーマル）。`texture` が必要で、`texture` がオフの場合は強制的にオフになります（デフォルト: True）。 | BOOLEAN | いいえ | true / false |
+| `image_seed` | 画像生成段階で使用されるシード（デフォルト: 42）。 | INT | いいえ | 0〜2147483647 |
+| `model_seed` | モデル生成段階で使用されるシード（デフォルト: 42）。 | INT | いいえ | 0〜2147483647 |
+| `texture_seed` | テクスチャ生成段階で使用されるシード（デフォルト: 42）。 | INT | いいえ | 0〜2147483647 |
+| `texture_quality` | 生成されるテクスチャの品質。detailed = HD テクスチャ、extreme = 8K ウルトラテクスチャ（デフォルト: standard）。 | COMBO | いいえ | "standard"<br>"detailed"<br>"extreme" |
+| `face_limit` | 最大フェイス数。-1 を指定すると Tripo が適応的に選択します（v3.x standard では約 140 万フェイス、detailed では 200 万フェイス）。Tripo は通知なくクランプします。v2.5 は 500,000、クアッドメッシュは 150,000 です。（デフォルト: -1） | INT | いいえ | -1〜2000000 |
+| `quad` | クアッドメッシュを出力します。Tripo はクアッドメッシュを FBX として配信するため、結果は FBX 出力に格納され、GLB 出力は空のままです。（デフォルト: False） | BOOLEAN | いいえ | true / false |
+| `ジオメトリ品質` | 生成されるジオメトリの品質（デフォルト: standard）。 | COMBO | いいえ | "standard"<br>"detailed" |
+| `smart_low_poly` | クリーンで手作業によるスタイルのトポロジーを持つローポリメッシュ（500～20,000 フェイス、クアッドでは 500～10,000）。シンプルな被写体に最適で、複雑な被写体では失敗する場合があります。（デフォルト: False） | BOOLEAN | いいえ | true / false |
+| `auto_size` | テクスチャ付きモデルを実世界のサイズ（メートル単位）にスケーリングします。Tripo はサイズをモデルのシーントランスフォームとして保存し、モデルが変換、リギング、またはリターゲティングされる際にベイクします。テクスチャがない場合は無視されます。（デフォルト: True） | BOOLEAN | いいえ | true / false |
 
 **注記:**
 - このノードは非推奨であり、レガシーノードとしてマークされています。古いワークフローとの後方互換性のために保持されています。

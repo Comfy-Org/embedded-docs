@@ -9,8 +9,8 @@ LTXVImgToVideoInplace, bir girdi görüntüsünü latent uzaya kodlar ve bu kodl
 | `vae` | Girdi görüntüsünü latent uzaya kodlamak için kullanılan VAE modeli. | VAE | Evet | - |
 | `görüntü` | Kodlanacak ve video latentini koşullandırmak için kullanılacak girdi görüntüsü. | IMAGE | Evet | - |
 | `latent` | Değiştirilecek hedef latent video temsili. | LATENT | Evet | - |
-| `güç` | Kodlanmış görüntünün latentin ilk karelerini ne kadar güçlü koşullandırdığını kontrol eder. 1.0 değeri ilk kareleri tamamen kodlanmış görüntüyle koşullandırırken, daha düşük değerler daha az güçlü koşullandırır. İlk kareler için gürültü maskesi `1.0 - strength` olarak ayarlanır. (varsayılan: 1.0) | FLOAT | Hayır | 0.0 - 1.0 |
-| `atla` | Koşullandırmayı atlar. Etkinleştirildiğinde düğüm girdi latentini değiştirmeden döndürür. (varsayılan: False) | BOOLEAN | Hayır | True or False |
+| `güç` | Kodlanmış görüntünün latentin ilk karelerini ne kadar güçlü koşullandırdığını kontrol eder. 1.0 değeri ilk kareleri tamamen kodlanmış görüntüyle koşullandırırken, daha düşük değerler daha az güçlü koşullandırır. İlk kareler için gürültü maskesi `1.0 - strength` olarak ayarlanır. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
+| `atla` | Koşullandırmayı atlar. Etkinleştirildiğinde düğüm girdi latentini değiştirmeden döndürür. (varsayılan: False) | BOOLEAN | Evet | True or False |
 
 **Not:** `image`, `latent` girdisinin genişlik ve yüksekliğine bağlı olarak `vae` tarafından kodlama için gereken uzamsal boyutlarla eşleşecek şekilde otomatik olarak yeniden boyutlandırılır. Görüntünün yalnızca RGB kanalları kodlama için kullanılır.
 

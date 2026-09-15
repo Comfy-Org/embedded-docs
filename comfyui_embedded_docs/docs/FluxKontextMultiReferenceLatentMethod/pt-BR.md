@@ -1,13 +1,13 @@
 # Editar Método de Referência do Modelo
 
-O nó FluxKontextMultiReferenceLatentMethod modifica os dados de condicionamento ao definir um método específico de latentes de referência. Ele anexa o método escolhido à entrada de condicionamento, o que afeta como os latentes de referência são processados nas etapas de geração subsequentes. Este nó é marcado como experimental e faz parte do sistema de condicionamento Flux.
+O nó FluxKontextMultiReferenceLatentMethod atualiza dados de condicionamento armazenando um método de latentes de referência escolhido dentro deles. O método armazenado é então usado quando latentes de referência são processados em etapas de geração posteriores. Este nó está marcado como experimental e pertence ao sistema de condicionamento Flux.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `condicionamento` | Os dados de condicionamento a serem modificados com o método de latentes de referência | CONDITIONING | Sim | - |
-| `método_de_latent_de_referência` | O método a ser usado para o processamento de latentes de referência. Se "uxo" ou "uso" for selecionado, ele será convertido para "uxo". Este parâmetro é marcado como avançado. | COMBO | Sim | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
+| `método_de_latent_de_referência` | O método usado para o processamento de latentes de referência. Se um valor contendo "uxo" ou "uso" for selecionado, ele é convertido para "uxo" antes de ser armazenado. Este parâmetro está marcado como avançado. | COMBO | Sim | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
 
 ## Saídas
 

@@ -1,8 +1,6 @@
 # ModelNoiseScale
 
-## Genel Bakış
-
-Bu düğüm, model örnekleme sırasında kullanılan gürültü ölçeğini ayarlar. Modelin örnekleme sürecine uygulanan gürültü miktarını kontrol eden belirli bir gürültü ölçeği değeri belirlemenizi sağlar.
+Bu düğüm, model örneklemesi sırasında kullanılan gürültü ölçeğini ayarlar. Girdi modelinin bir kopyasını oluşturur, belirtilen gürültü ölçeğini örnekleme yapılandırmasına uygular ve değiştirilmiş modeli döndürür.
 
 ## Girdiler
 

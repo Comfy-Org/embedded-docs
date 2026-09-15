@@ -1,25 +1,23 @@
 # FluxProImageNode
 
-## Genel Bakış
-
-Bu düğüm, metin istemi ve çözünürlüğe göre eşzamanlı olarak görseller oluşturur. Flux 1.1 Pro modelini kullanarak bir API uç noktasına istek gönderir ve oluşturulan görseli döndürmeden önce tam yanıtı bekler.
+İstem ve çözünürlüğe göre görüntüleri eşzamanlı olarak oluşturur. Bu düğüm, bir API uç noktasına istekler göndererek ve oluşturulan görüntüyü döndürmeden önce tam yanıtı bekleyerek Flux 1.1 Pro modelini kullanarak görüntüler oluşturur.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `prompt` | Görsel oluşturma için metin istemi (varsayılan: boş dize) | STRING | Evet | - |
-| `prompt_upsampling` | Metin isteminde yukarı örnekleme yapılıp yapılmayacağı. Etkinleştirilirse, daha yaratıcı üretim için metin istemi otomatik olarak değiştirilir, ancak sonuçlar deterministik değildir (aynı tohum değeri tam olarak aynı sonucu üretmez). (varsayılan: False) | BOOLEAN | Evet | - |
-| `width` | Piksel cinsinden görsel genişliği (varsayılan: 1024, adım: 32) | INT | Evet | 256-1440 |
-| `height` | Piksel cinsinden görsel yüksekliği (varsayılan: 768, adım: 32) | INT | Evet | 256-1440 |
-| `seed` | Gürültü oluşturmak için kullanılan rastgele tohum değeri. (varsayılan: 0) | INT | Evet | 0-18446744073709551615 |
-| `image_prompt` | Üretimi yönlendirmek için isteğe bağlı referans görseli | IMAGE | Hayır | - |
+| `prompt` | Görüntü oluşturma istemi (varsayılan: boş dize) | STRING | Evet | - |
+| `prompt_upsampling` | İstem üzerinde üst örnekleme yapılıp yapılmayacağı. Etkinse, daha yaratıcı oluşturma için istemi otomatik olarak değiştirir, ancak sonuçlar deterministik değildir (aynı tohum tam olarak aynı sonucu üretmez). (varsayılan: False) | BOOLEAN | Evet | - |
+| `width` | Piksel cinsinden görüntü genişliği (varsayılan: 1024, adım: 32) | INT | Evet | 256-1440 |
+| `height` | Piksel cinsinden görüntü yüksekliği (varsayılan: 768, adım: 32) | INT | Evet | 256-1440 |
+| `seed` | Gürültüyü oluşturmak için kullanılan rastgele tohum. (varsayılan: 0) | INT | Evet | 0-18446744073709551615 |
+| `image_prompt` | Oluşturmayı yönlendirmek için isteğe bağlı referans görüntüsü | IMAGE | Hayır | - |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | API'den döndürülen oluşturulmuş görsel | IMAGE |
+| `output` | API'den döndürülen oluşturulmuş görüntü | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxProImageNode/tr.md)
 

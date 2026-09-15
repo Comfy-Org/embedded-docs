@@ -1,15 +1,13 @@
 # Escala de Ruído do Modelo
 
-## Visão Geral
-
-Este nó ajusta a escala de ruído usada durante a amostragem do modelo. Ele permite definir um valor específico para a escala de ruído, que controla a quantidade de ruído aplicada ao processo de amostragem do modelo.
+Este nó ajusta a escala de ruído usada durante a amostragem do modelo. Ele cria uma cópia do modelo de entrada, aplica a escala de ruído especificada à sua configuração de amostragem e retorna o modelo modificado.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `modelo` | O modelo ao qual aplicar o ajuste de escala de ruído. | MODEL | Sim | - |
-| `escala_de_ruído` | Escala de ruído absoluta de treinamento. Por exemplo, HiDream-O1 base: 8.0, dev: 7.5. (padrão: 1.0) | FLOAT | Sim | 0.0 a 64.0 (passo: 0.01) |
+| `modelo` | O modelo no qual aplicar o ajuste da escala de ruído. | MODEL | Sim | - |
+| `escala_de_ruído` | Escala de ruído de treinamento absoluta. Por exemplo, HiDream-O1 base: 8.0, dev: 7.5. (padrão: 1.0) | FLOAT | Sim | 0.0 a 64.0 (passo: 0.01) |
 
 ## Saídas
 

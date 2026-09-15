@@ -1,71 +1,71 @@
 # Temel Zamanlayıcı
 
-`BasicScheduler` düğümü, sağlanan zamanlayıcı, model ve gürültü giderme parametrelerine dayanarak difüzyon modelleri için bir dizi sigma değeri hesaplamak üzere tasarlanmıştır. Gürültü giderme (denoise) faktörüne bağlı olarak toplam adım sayısını dinamik olarak ayarlayarak difüzyon sürecini ince ayarlar ve hassas kontrol gerektiren gelişmiş örnekleme süreçlerinde (çok aşamalı örnekleme gibi) farklı aşamalar için hassas "tarifler" sağlar.
+`BasicScheduler` düğümü, sağlanan zamanlayıcı, model ve gürültü giderme parametrelerine dayalı olarak difüzyon modelleri için bir sigma değerleri dizisi hesaplamak üzere tasarlanmıştır. Gürültü giderme faktörüne göre toplam adım sayısını dinamik olarak ayarlayarak difüzyon sürecini ince ayarlar ve hassas kontrol gerektiren gelişmiş örnekleme süreçlerindeki (çok aşamalı örnekleme gibi) farklı aşamalar için kesin "tarifler" sunar.
 
-## Girişler
+## Girdiler
 
-| Parametre | Metafor Açıklaması | Veri Türü | Giriş Türü | Varsayılan | Aralık | Teknik Amaç |
+| Parametre | Metafor Açıklaması | Veri Türü | Girdi Türü | Varsayılan | Aralık | Teknik Amaç |
 | --- | --- | --- | --- | --- | --- | --- |
-| `model` | **Tuval Türü**: Farklı tuval malzemeleri farklı boya formülleri gerektirir | MODEL | Giriş | - | - | Difüzyon modeli nesnesi, sigma hesaplama temelini belirler |
-| `zamanlayıcı` | **Karıştırma Tekniği**: Boya konsantrasyonunun nasıl değişeceğini seçin | COMBO[STRING] | Widget | - | 9 seçenek | Zamanlama algoritması, gürültü azalma modunu kontrol eder |
-| `adımlar` | **Karıştırma Sayısı**: 20 karıştırma ile 50 karıştırma arasındaki hassasiyet farkı | INT | Widget | 20 | 1-10000 | Örnekleme adımları, üretim kalitesini ve hızını etkiler |
-| `gürültü_azaltma` | **Yaratım Yoğunluğu**: İnce ayardan yeniden boyamaya kadar kontrol seviyesi | FLOAT | Widget | 1.0 | 0.0-1.0 | Gürültü giderme gücü, kısmi yeniden boyama senaryolarını destekler |
+| `model` | **Tuval Türü**: Farklı tuval malzemeleri farklı boya formülleri gerektirir | MODEL | Girdi | - | - | Difüzyon modeli nesnesi, sigma hesaplamasının temelini belirler |
+| `zamanlayıcı` | **Karıştırma Tekniği**: Boya yoğunluğunun nasıl değişeceğini seçin | COMBO[STRING] | Widget | - | 9 seçenek | Zamanlama algoritması, gürültü azalma modunu kontrol eder |
+| `adımlar` | **Karıştırma Sayısı**: 20 karışım ile 50 karışım arasındaki hassasiyet farkı | INT | Widget | 20 | 1-10000 | Örnekleme adımları, üretim kalitesini ve hızını etkiler |
+| `gürültü_azaltma` | **Oluşturma Yoğunluğu**: İnce ayardan yeniden boyamaya kadar kontrol düzeyi | FLOAT | Widget | 1.0 | 0.0-1.0 | Gürültü giderme gücü, kısmi yeniden boyama senaryolarını destekler |
 
 ### Zamanlayıcı Türleri
 
-Kaynak kod `comfy.samplers.SCHEDULER_NAMES` temel alınarak aşağıdaki 9 zamanlayıcı desteklenir:
+Kaynak kodundaki `comfy.samplers.SCHEDULER_NAMES` temel alınarak aşağıdaki 9 zamanlayıcıyı destekler:
 
-| Zamanlayıcı Adı       | Özellikler           | Kullanım Alanları                | Gürültü Azalma Modeli         |
-| --------------------- | -------------------- | -------------------------------- | ----------------------------- |
-| **normal**            | Standart doğrusal    | Genel senaryolar, dengeli        | Tekdüze azalma                |
-| **karras**            | Yumuşak geçiş        | Yüksek kalite, detay zengini     | Yumuşak doğrusal olmayan azalma |
-| **exponential**       | Üstel azalma         | Hızlı üretim, verimlilik         | Üstel hızlı azalma            |
-| **sgm_uniform**       | SGM tekdüze          | Belirli model optimizasyonu      | SGM optimize azalma           |
-| **simple**            | Basit zamanlama      | Hızlı test, temel kullanım       | Basitleştirilmiş azalma       |
-| **ddim_uniform**      | DDIM tekdüze         | DDIM örnekleme optimizasyonu     | DDIM'e özgü azalma            |
-| **beta**              | Beta dağılımı        | Özel dağılım ihtiyaçları         | Beta fonksiyonu azalması      |
-| **linear_quadratic**  | Doğrusal ikinci derece| Karmaşık senaryo optimizasyonu  | İkinci derece fonksiyon azalması |
-| **kl_optimal**        | KL optimal           | Teorik optimizasyon              | KL diverjansı optimize azalma |
+| Zamanlayıcı Adı | Özellikler | Kullanım Alanları | Gürültü Azalma Deseni |
+| --- | --- | --- | --- |
+| **normal** | Standart doğrusal | Genel senaryolar, dengeli | Tekdüze azalma |
+| **karras** | Yumuşak geçiş | Yüksek kalite, ayrıntı zengini | Yumuşak doğrusal olmayan azalma |
+| **exponential** | Üstel azalma | Hızlı üretim, verimlilik | Üstel hızlı azalma |
+| **sgm_uniform** | SGM tekdüze | Belirli model optimizasyonu | SGM için optimize edilmiş azalma |
+| **simple** | Basit zamanlama | Hızlı test, temel kullanım | Basitleştirilmiş azalma |
+| **ddim_uniform** | DDIM tekdüze | DDIM örnekleme optimizasyonu | DDIM'e özgü azalma |
+| **beta** | Beta dağılımı | Özel dağılım ihtiyaçları | Beta fonksiyonu azalması |
+| **linear_quadratic** | Doğrusal ikinci dereceden | Karmaşık senaryo optimizasyonu | İkinci dereceden fonksiyon azalması |
+| **kl_optimal** | KL optimal | Teorik optimizasyon | KL sapması için optimize edilmiş azalma |
 
 ## Çıktılar
 
-| Parametre | Metafor Açıklaması | Veri Türü | Çıktı Türü | Teknik Anlamı |
+| Parametre | Metafor Açıklaması | Veri Türü | Çıktı Türü | Teknik Anlam |
 | --- | --- | --- | --- | --- |
-| `sigmas` | **Boya Tarifi Tablosu**: Adım adım kullanım için ayrıntılı boya konsantrasyonu listesi | SIGMAS | Çıktı | Gürültü seviyesi dizisi, difüzyon modelinin gürültü giderme sürecini yönlendirir |
+| `sigmas` | **Boya Tarifi Tablosu**: Adım adım kullanım için ayrıntılı boya yoğunluğu listesi | SIGMAS | Çıktı | Gürültü seviyesi dizisi, difüzyon modelinin gürültü giderme sürecine rehberlik eder |
 
-## Düğümün Rolü: Sanatçının Renk Karıştırma Asistanı
+## Düğüm Rolü: Sanatçının Renk Karıştırma Asistanı
 
-Kendinizi, kaotik bir boya (gürültü) karışımından net bir görüntü oluşturan bir sanatçı olarak hayal edin. `BasicScheduler`, bir dizi hassas boya konsantrasyonu tarifi hazırlamakla görevli **profesyonel renk karıştırma asistanınız** gibi davranır:
+Kaotik bir boya karışımından (gürültü) net bir görüntü oluşturan bir sanatçı olduğunuzu hayal edin. `BasicScheduler`, görevi bir dizi kesin boya yoğunluğu tarifi hazırlamak olan **profesyonel renk karıştırma asistanınız** gibi davranır:
 
 ### İş Akışı
 
-- **Adım 1**: %90 konsantrasyonlu boya kullanın (yüksek gürültü seviyesi)
-- **Adım 2**: %80 konsantrasyonlu boya kullanın
-- **Adım 3**: %70 konsantrasyonlu boya kullanın
+- **Adım 1**: %90 yoğunlukta boya kullanın (yüksek gürültü seviyesi)
+- **Adım 2**: %80 yoğunlukta boya kullanın  
+- **Adım 3**: %70 yoğunlukta boya kullanın
 - **...**
-- **Son Adım**: %0 konsantrasyon kullanın (temiz tuval, gürültü yok)
+- **Son Adım**: %0 yoğunluk kullanın (temiz tuval, gürültü yok)
 
-### Renk Asistanının Özel Yetenekleri
+### Renk Asistanının Özel Becerileri
 
-**Farklı karıştırma yöntemleri (zamanlayıcı)**:
+**Farklı karıştırma yöntemleri (`scheduler`)**:
 
-- **"karras" karıştırma yöntemi**: Boya konsantrasyonu, profesyonel bir sanatçının gradyan tekniği gibi çok yumuşak bir şekilde değişir
-- **"exponential" karıştırma yöntemi**: Boya konsantrasyonu hızla azalır, hızlı yaratım için uygundur
-- **"linear" karıştırma yöntemi**: Boya konsantrasyonu eşit şekilde azalır, kararlı ve kontrol edilebilir
+- **"karras" karıştırma yöntemi**: Boya yoğunluğu, profesyonel bir sanatçının gradyan tekniği gibi çok yumuşak değişir
+- **"exponential" karıştırma yöntemi**: Boya yoğunluğu hızla azalır, hızlı oluşturma için uygundur
+- **"linear" karıştırma yöntemi**: Boya yoğunluğu tekdüze azalır, kararlı ve kontrol edilebilir
 
-**Hassas kontrol (adımlar)**:
+**İnce kontrol (`steps`)**:
 
-- **20 karıştırma**: Hızlı çizim, verimlilik öncelikli
-- **50 karıştırma**: İnce çizim, kalite öncelikli
+- **20 karışım**: Hızlı boyama, verimlilik öncelikli
+- **50 karışım**: İnce boyama, kalite öncelikli
 
-**Yaratım yoğunluğu (gürültü giderme)**:
+**Oluşturma yoğunluğu (`denoise`)**:
 
-- **1.0 = Tamamen yeni yaratım**: Tamamen boş bir tuvalden başlayın
+- **1.0 = Tamamen yeni oluşturma**: Tamamen boş tuvalden başlayın
 - **0.5 = Yarı dönüşüm**: Orijinal resmin yarısını koruyun, yarısını dönüştürün
 - **0.2 = İnce ayar**: Orijinal resimde yalnızca küçük ayarlamalar yapın
 
 ### Diğer Düğümlerle İş Birliği
 
-`BasicScheduler` (Renk Asistanı) → Tarifi Hazırla → `SamplerCustom` (Sanatçı) → Gerçek Çizim → Tamamlanmış Eser
+`BasicScheduler` (Renk Asistanı) → Tarif Hazırla → `SamplerCustom` (Sanatçı) → Gerçek Boyama → Tamamlanmış Eser
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BasicScheduler/tr.md)

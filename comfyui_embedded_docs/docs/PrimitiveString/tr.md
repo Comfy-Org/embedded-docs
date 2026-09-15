@@ -1,10 +1,10 @@
 # String
 
-String düğümü, iş akışınızda metin verisi girmek ve aktarmak için basit bir yol sağlar. Girdi olarak bir metin dizesi alır ve aynı dizeyi değiştirmeden çıktı olarak verir; bu da onu, dize parametreleri gerektiren diğer düğümlere metin girdileri sağlamak için kullanışlı hale getirir.
+Text düğümü, iş akışınızda metin verilerini girmenin ve iletmenin basit bir yolunu sunar. Girdi olarak bir metin dizesi alır ve aynı dizeyi değiştirmeden çıktı olarak verir; bu, dize parametreleri gerektiren diğer düğümlere metin girdileri sağlamak için kullanışlıdır.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `değer` | Düğümden geçirilecek metin dizesi | STRING | Evet | Herhangi bir metin |
 
@@ -12,7 +12,7 @@ String düğümü, iş akışınızda metin verisi girmek ve aktarmak için basi
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | Girdi olarak sağlanan metin dizesinin aynısı | STRING |
+| `output` | Girdi olarak sağlanan aynı metin dizesi | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrimitiveString/tr.md)
 

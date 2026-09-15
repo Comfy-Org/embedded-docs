@@ -1,22 +1,23 @@
-# LTXV Texto para Vídeo
+# LtxvApiTextToVideo
 
-O nó LTXV Text To Video gera vídeos de qualidade profissional a partir de uma descrição em texto. Ele se conecta a uma API externa para criar vídeos com duração, resolução e taxa de quadros personalizáveis. Você também pode optar por adicionar áudio gerado por IA ao vídeo.
+O nó LTXV Text To Video gera vídeos de qualidade profissional a partir de uma descrição de texto. Ele se conecta a uma API externa para criar vídeos com duração, resolução e taxa de quadros personalizáveis. Você também pode optar por adicionar áudio gerado por IA ao vídeo.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `modelo` | O modelo de IA a ser usado para geração de vídeo. "LTX-2 (Pro)" oferece maior qualidade, enquanto "LTX-2 (Fast)" é otimizado para velocidade. | COMBO | Sim | `"LTX-2 (Pro)"`<br>`"LTX-2 (Fast)"` |
-| `prompt` | A descrição em texto que a IA usará para gerar o vídeo. Este campo aceita múltiplas linhas de texto e deve conter de 1 a 10.000 caracteres. | STRING | Sim | - |
-| `duração` | A duração do vídeo gerado em segundos (padrão: 8). | COMBO | Sim | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` |
-| `resolução` | As dimensões em pixels (largura x altura) do vídeo de saída. | COMBO | Sim | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` |
-| `fps` | Os quadros por segundo do vídeo (padrão: 25). | COMBO | Sim | `25`<br>`50` |
-| `gerar_áudio` | Quando verdadeiro, o vídeo gerado incluirá áudio gerado por IA que corresponde à cena (padrão: Falso). Esta é uma configuração opcional avançada. | BOOLEAN | Não | - |
+| `model` | O modelo de IA a ser usado para geração de vídeo. "LTX-2 (Pro)" oferece maior qualidade, enquanto "LTX-2 (Fast)" é otimizado para velocidade. | COMBO | Sim | `"LTX-2 (Pro)"`<br>`"LTX-2 (Fast)"` |
+| `prompt` | A descrição de texto que a IA usará para gerar o vídeo. Este campo oferece suporte a várias linhas de texto e deve conter de 1 a 10.000 caracteres. Padrão: "" (vazio). | STRING | Sim | - |
+| `duration` | A duração do vídeo gerado em segundos (padrão: 8). | COMBO | Sim | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` |
+| `resolution` | As dimensões em pixels (largura x altura) do vídeo de saída. | COMBO | Sim | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` |
+| `fps` | A taxa de quadros por segundo do vídeo (padrão: 25). | COMBO | Sim | `25`<br>`50` |
+| `generate_audio` | Quando true, o vídeo gerado incluirá áudio gerado por IA correspondente à cena (padrão: False). Esta é uma configuração opcional avançada. | BOOLEAN | Não | - |
 
-**Restrições Importantes:**
+**Restrições importantes:**
 
 * O `prompt` deve ter entre 1 e 10.000 caracteres.
-* Se você selecionar uma `duration` maior que 10 segundos, também deve usar o modelo `"LTX-2 (Fast)"`, uma resolução de `"1920x1080"` e um `fps` de `25`. Essa combinação é necessária para vídeos mais longos.
+* Se você selecionar uma `duration` maior que 10 segundos, também deverá usar o modelo `"LTX-2 (Fast)"`, uma resolução de `"1920x1080"` e um `fps` de `25`. Essa combinação é obrigatória para vídeos mais longos.
+* O preço depende do `model`, `duration` e `resolution` selecionados.
 
 **Nota:** Este nó está obsoleto.
 

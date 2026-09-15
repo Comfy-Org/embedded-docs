@@ -1,22 +1,22 @@
 # LTXVLatentUpsampler
 
-LTXVLatentUpsampler düğümü, bir video gizli temsilinin uzamsal çözünürlüğünü iki katına çıkarır. Gizli verileri işlemek için özel bir yükseltme modeli kullanır; bu veriler, sağlanan VAE'nin kanal istatistikleri kullanılarak önce normalizasyondan geçirilir ve ardından yeniden normalize edilir. Bu düğüm, gizli uzaydaki video iş akışları için tasarlanmıştır.
+LTXVLatentUpsampler düğümü, bir video latent temsilinin uzamsal çözünürlüğünü iki katına çıkarır. Latent verisini işlemek için özel bir büyütme modeli kullanır; bu veri önce normalizasyondan çıkarılır ve ardından sağlanan VAE'nin kanal istatistikleri kullanılarak yeniden normalize edilir. Bu düğüm, latent uzayı içindeki video iş akışları için tasarlanmıştır.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Tipi | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `örnekler` | Yükseltilecek videonun girdi gizli temsili. | LATENT | Evet |  |
-| `büyütme_modeli` | Gizli veriler üzerinde 2 kat yükseltme işlemini gerçekleştirmek için kullanılan yüklenmiş model. | LATENT_UPSCALE_MODEL | Evet |  |
-| `vae` | Yükseltmeden önce girdi gizli değişkenlerinin normalizasyonunu kaldırmak ve yükseltme sonrasında çıktı gizli değişkenlerini normalize etmek için kullanılan VAE modeli. | VAE | Evet |  |
+| `örnekler` | Büyütülecek videonun girdi latent temsili. | LATENT | Evet |  |
+| `büyütme_modeli` | Latent verisi üzerinde 2x büyütme gerçekleştirmek için kullanılan yüklenmiş model. | LATENT_UPSCALE_MODEL | Evet |  |
+| `vae` | Büyütmeden önce girdi latentlerini normalizasyondan çıkarmak ve sonrasında çıktı latentlerini normalize etmek için kullanılan VAE modeli. | VAE | Evet |  |
 
 Not: Bu düğüm ComfyUI'de deneysel olarak işaretlenmiştir.
 
 ## Çıktılar
 
-| Çıktı Adı | Açıklama | Veri Türü |
+| Çıktı Adı | Açıklama | Veri Tipi |
 | --- | --- | --- |
-| `LATENT` | Uzamsal boyutları girdiye kıyasla iki katına çıkarılmış, yükseltilmiş gizli temsil. Çıktı gizli değişkeni, girdiyle aynı parti boyutuna, kanal sayısına ve zamansal uzunluğa sahiptir. Girdide bulunan `noise_mask` (varsa) çıktıdan kaldırılır. | LATENT |
+| `LATENT` | Girdiye kıyasla uzamsal boyutları iki katına çıkarılmış latent temsili. Çıktı latent, girdiyle aynı batch boyutuna, kanal sayısına ve zamansal uzunluğa sahiptir. Girdide varsa `noise_mask` çıktıdan kaldırılır. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVLatentUpsampler/tr.md)
 

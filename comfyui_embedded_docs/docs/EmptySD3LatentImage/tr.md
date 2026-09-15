@@ -1,20 +1,20 @@
 # BoşSD3GizliGörüntü
 
-EmptySD3LatentImage, Stable Diffusion 3 modelleri için özel olarak biçimlendirilmiş boş bir latent görüntü tensörü oluşturur. SD3 işlem hatlarının beklediği doğru boyutlara ve yapıya sahip, sıfırlarla dolu bir tensör üretir. Bu, görüntü oluşturma iş akışları için genellikle başlangıç noktası olarak kullanılır.
+EmptySD3LatentImage, Stable Diffusion 3 modellerinin beklediği düzende boş (tamamen sıfır) bir latent görüntü oluşturur. Latent boş olduğundan, normalde bir üretim iş akışının bir görüntüyle dolduracağı başlangıç noktası olarak kullanılır. Seçtiğiniz genişlik ve yükseklik, nihai görüntünün boyutunu belirler.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `genişlik` | Çıktı latent görüntüsünün piksel cinsinden genişliği (varsayılan: 1024) | INT | Evet | 16 to MAX_RESOLUTION (step: 16) |
-| `yükseklik` | Çıktı latent görüntüsünün piksel cinsinden yüksekliği (varsayılan: 1024) | INT | Evet | 16 to MAX_RESOLUTION (step: 16) |
-| `toplu_boyut` | Bir toplu işlemde (batch) oluşturulacak latent görüntü sayısı (varsayılan: 1) | INT | Evet | 1 ile 4096 |
+| `genişlik` | Latent görüntünün piksel cinsinden genişliği (varsayılan: 1024). Değerler 16'lık artışlarla adımlanır. | INT | Evet | 16 - MAX_RESOLUTION (adım: 16) |
+| `yükseklik` | Latent görüntünün piksel cinsinden yüksekliği (varsayılan: 1024). Değerler 16'lık artışlarla adımlanır. | INT | Evet | 16 - MAX_RESOLUTION (adım: 16) |
+| `toplu_boyut` | Toplu işlemde oluşturulacak latent görüntü sayısı (varsayılan: 1). | INT | Evet | 1 - 4096 |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `LATENT` | SD3 ile uyumlu boyutlara sahip boş örnekler içeren bir latent tensör. Tensör, 16 kanala sahiptir ve girdi genişlik ve yüksekliğine kıyasla uzamsal olarak 8 kat küçültülmüştür. | LATENT |
+| `LATENT` | SD3 uyumlu biçimde boş (tamamen sıfır) örnekler içeren bir latent tensörü. Tensör 16 kanallıdır, `width` ve `height` değerlerine göre 8 kat küçültülmüştür ve 8'lik bir uzamsal küçültme oranı taşır. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptySD3LatentImage/tr.md)
 

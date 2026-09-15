@@ -1,12 +1,12 @@
 # ModelMergeCosmosPredict2_14B
 
-Le nœud ModelMergeCosmosPredict2_14B fusionne deux modèles d'IA en mélangeant leurs composants internes. Il vous offre un contrôle précis sur la mesure dans laquelle chaque partie du second modèle influence le résultat fusionné final, en utilisant des valeurs de poids réglables pour des couches et composants spécifiques.
+Le nœud ModelMergeCosmosPredict2_14B combine deux modèles IA en un seul en mélangeant leurs composants internes correspondants. Il vous permet de contrôler la proportion du second modèle mélangée dans le premier en ajustant un poids distinct pour chaque embedder, bloc et la couche finale.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `modèle1` | Le modèle de base à fusionner | MODEL | Oui | - |
+| `modèle1` | Le modèle de base avec lequel fusionner | MODEL | Oui | - |
 | `modèle2` | Le modèle secondaire à fusionner dans le modèle de base | MODEL | Oui | - |
 | `pos_embedder.` | Poids de mélange de l'embedder de position (par défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
 | `x_embedder.` | Poids de mélange de l'embedder d'entrée (par défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
@@ -50,7 +50,7 @@ Le nœud ModelMergeCosmosPredict2_14B fusionne deux modèles d'IA en mélangeant
 | `blocs.35.` | Poids de mélange du bloc 35 (par défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
 | `final_layer.` | Poids de mélange de la couche finale (par défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
 
-**Remarque :** Tous les paramètres de poids de mélange acceptent des valeurs comprises entre 0.0 et 1.0 par pas de 0.01, où 0.0 signifie aucune contribution de model2 et 1.0 signifie une contribution complète de model2 pour ce composant spécifique.
+**Remarque :** Tous les paramètres de poids de mélange acceptent des valeurs comprises entre 0,0 et 1,0 par pas de 0,01, où 0,0 signifie aucune contribution de `model2` et 1,0 signifie une contribution totale de `model2` pour ce composant spécifique.
 
 ## Sorties
 

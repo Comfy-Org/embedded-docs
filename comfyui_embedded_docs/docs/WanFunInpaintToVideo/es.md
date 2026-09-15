@@ -1,29 +1,29 @@
 # WanFunInpaintToVideo
 
-El nodo WanFunInpaintToVideo crea secuencias de video mediante la técnica de inpainting entre las imágenes de inicio y fin. Acepta condicionamientos positivos y negativos junto con imágenes de cuadro opcionales para generar latentes de video. El nodo maneja la generación de video con dimensiones y parámetros de longitud configurables.
+El nodo WanFunInpaintToVideo prepara los datos de condicionamiento y latentes para la generación de video con estilo de inpainting, utilizando una imagen inicial y una imagen final opcionales para guiar el resultado. Funciona pasando el condicionamiento, el VAE y los fotogramas de imagen proporcionados a través de la misma lógica que se usa para la generación de video con primer y último fotograma, y devuelve el condicionamiento actualizado junto con un latente vacío para el muestreo.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `positivo` | Condicionamiento positivo para la generación de video | CONDITIONING | Sí | - |
-| `negativo` | Condicionamiento negativo para evitar en la generación de video | CONDITIONING | Sí | - |
-| `vae` | Modelo VAE para operaciones de codificación/decodificación | VAE | Sí | - |
-| `ancho` | Ancho del video de salida en píxeles (por defecto: 832, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `alto` | Alto del video de salida en píxeles (por defecto: 480, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
-| `longitud` | Número de cuadros en la secuencia de video (por defecto: 81, paso: 4) | INT | Sí | 1 a MAX_RESOLUTION |
-| `tamaño_de_lote` | Número de videos a generar en un lote (por defecto: 1) | INT | Sí | 1 a 4096 |
-| `clip_vision_output` | Salida de visión CLIP opcional utilizada como condicionamiento para la imagen de inicio | CLIP_VISION_OUTPUT | No | - |
-| `imagen_inicial` | Imagen de cuadro inicial opcional para la generación de video | IMAGE | No | - |
-| `imagen_final` | Imagen de cuadro final opcional para la generación de video | IMAGE | No | - |
+| `positivo` | Prompts de condicionamiento positivo para la generación de video | CONDITIONING | Sí | - |
+| `negativo` | Prompts de condicionamiento negativo que se deben evitar en la generación de video | CONDITIONING | Sí | - |
+| `vae` | Modelo VAE utilizado para codificar y decodificar los fotogramas de video | VAE | Sí | - |
+| `ancho` | Ancho del video de salida en píxeles (predeterminado: 832, paso: 16) | INT | Sí | 16 to MAX_RESOLUTION |
+| `alto` | Altura del video de salida en píxeles (predeterminado: 480, paso: 16) | INT | Sí | 16 to MAX_RESOLUTION |
+| `longitud` | Número de fotogramas en la secuencia de video (predeterminado: 81, paso: 4) | INT | Sí | 1 to MAX_RESOLUTION |
+| `tamaño_de_lote` | Número de videos a generar en un lote (predeterminado: 1) | INT | Sí | 1 a 4096 |
+| `clip_vision_output` | Salida de visión CLIP opcional utilizada como condicionamiento para la imagen inicial | CLIP_VISION_OUTPUT | No | - |
+| `imagen_inicial` | Imagen del fotograma inicial opcional para la generación de video | IMAGE | No | - |
+| `imagen_final` | Imagen del fotograma final opcional para la generación de video | IMAGE | No | - |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `positivo` | Salida de condicionamiento positivo procesado | CONDITIONING |
-| `negativo` | Salida de condicionamiento negativo procesado | CONDITIONING |
-| `latente` | Representación latente de video generada | LATENT |
+| `positive` | Salida de condicionamiento positivo procesada | CONDITIONING |
+| `negative` | Salida de condicionamiento negativo procesada | CONDITIONING |
+| `latent` | Representación latente del video generado | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFunInpaintToVideo/es.md)
 

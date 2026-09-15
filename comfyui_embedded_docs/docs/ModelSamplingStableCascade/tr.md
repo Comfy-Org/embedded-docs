@@ -1,13 +1,13 @@
 # ModelÖrneklemeStabilKaskad
 
-ModelSamplingStableCascade düğümü, örnekleme parametrelerini bir shift değeriyle ayarlayarak bir modele Stable Cascade örneklemesi uygular. Orijinal modeli değiştirmeden, girdi modelinin özel bir Stable Cascade örnekleme yapılandırmasıyla yamalı bir kopyasını oluşturur.
+ModelSamplingStableCascade düğümü, örnekleme parametrelerine bir shift değeri uygulayarak bir modele Stable Cascade örnekleme ayarlarını uygular. Orijinal modeli değiştirmeden, özel Stable Cascade örnekleme yapılandırmasına sahip girdi modelinin yamalı bir kopyasını döndürür.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Stable Cascade örneklemesinin uygulanacağı girdi modeli | MODEL | Evet | - |
-| `kaydırma` | Örnekleme parametrelerine uygulanacak shift değeri (varsayılan: 2.0) | FLOAT | Evet | 0.0 - 100.0 (adım 0.01) |
+| `kaydırma` | Örnekleme parametrelerine uygulanan shift değeri (varsayılan: 2.0) | FLOAT | Evet | 0.0 - 100.0 (adım: 0.01) |
 
 ## Çıktılar
 

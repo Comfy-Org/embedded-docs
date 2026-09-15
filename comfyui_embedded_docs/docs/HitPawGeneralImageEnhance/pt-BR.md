@@ -1,17 +1,17 @@
 # HitPaw General Image Enhance
 
-Este nó melhora imagens de baixa resolução, ampliando-as para super-resolução, removendo artefatos e ruído. Ele utiliza uma API externa para processar a imagem e pode ajustar automaticamente o tamanho da entrada para permanecer dentro dos limites de processamento. O tamanho máximo permitido para a saída é de 32 megapixels.
+Este nó aprimora imagens de baixa resolução ao aumentá-las para super-resolução, removendo artefatos e ruído. Ele envia a imagem para uma API externa para processamento e pode ajustar automaticamente o tamanho da entrada para permanecer dentro do limite de saída permitido. O tamanho máximo de saída permitido é 32 megapixels.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `modelo` | O modelo de aprimoramento a ser usado. O modelo `generative_portrait` é otimizado para retratos, enquanto `generative` é um modelo de uso geral. | COMBO | Sim | `"generative_portrait"`<br>`"generative"` |
 | `imagem` | A imagem de entrada a ser aprimorada. | IMAGE | Sim | - |
-| `fator_de_upscale` | O fator pelo qual as dimensões da imagem serão ampliadas. Um fator de 1 significa nenhuma ampliação, 2 dobra as dimensões e 4 quadruplica. | COMBO | Sim | `1`<br>`2`<br>`4` |
-| `auto_redimensionar` | Reduzir automaticamente a escala da imagem de entrada se a saída exceder o limite. (padrão: `False`) | BOOLEAN | Não | - |
+| `fator_de_upscale` | O fator pelo qual aumentar as dimensões da imagem. Um fator de 1 significa sem aumento, 2 dobra as dimensões e 4 as quadruplica. | COMBO | Sim | `1`<br>`2`<br>`4` |
+| `auto_redimensionar` | Reduz automaticamente a escala da imagem de entrada se a saída exceder o limite. (padrão: `False`) | BOOLEAN | Não | - |
 
-**Nota:** O nó gera um erro se o tamanho de saída calculado (largura da entrada × fator de ampliação × altura da entrada × fator de ampliação) exceder 32.000.000 pixels (32MP) e `auto_downscale` estiver desabilitado. Quando `auto_downscale` está habilitado, o nó reduz automaticamente o tamanho da imagem de entrada ou o fator de ampliação (ou ambos) para que a saída caiba dentro do limite de 32MP.
+**Observação:** O nó gera um erro se o tamanho de saída calculado (largura de entrada × upscale_factor × altura de entrada × upscale_factor) exceder 32.000.000 pixels (32MP) e `auto_downscale` estiver desabilitado. Quando `auto_downscale` está habilitado, o nó reduz automaticamente o tamanho da imagem de entrada ou o fator de upscale (ou ambos) para que a saída caiba dentro do limite de 32MP. O `model` e o `upscale_factor` selecionados são combinados no nome do modelo enviado ao serviço.
 
 ## Saídas
 
