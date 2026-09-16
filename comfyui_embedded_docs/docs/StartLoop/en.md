@@ -9,7 +9,7 @@ The Start Loop node starts a looping structure inside a workflow. It runs the co
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `mode` | The loop iteration mode (default: "simple"). The selected mode determines which additional parameters are shown. | DYNAMIC_COMBO | Yes | `"simple"`<br>`"For"`<br>`"List"` |
-| `cache_iterations` | Reuse unchanged iteration results from previous executions. Disable to execute every iteration again. Default: false. | BOOLEAN | No | true<br>false |
+| `cache_iterations` | Reuse unchanged iteration results from previous executions. Disable to execute every iteration again. Default: false. | BOOLEAN | Yes | true<br>false |
 | `parent_iteration` | Connect iteration_index from an outer Start Loop to nest this loop. This input is force-input only (a link is required). | INT | No | Any integer |
 | `initial_iteration_value` | Value exposed as current_iteration_value on the first iteration. | ANY (type-matched) | No | Any value |
 
@@ -53,4 +53,4 @@ Notes:
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StartLoop/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `2584af9fd623f4762f440a043679e47aeef25ad0d571cfac11506cb513dd1b98`
+**Source fingerprint (SHA-256):** `be34fedd4db9d4f4cc795855c87f6489f294e029da316b5dc66e5af7dff004a9`
