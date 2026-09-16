@@ -29,7 +29,6 @@ Gera imagens de forma síncrona por meio do endpoint GPT Image da OpenAI. Ele po
 - A aresta mais longa de uma resolução personalizada deve ser 3840 ou menos.
 - A proporção da resolução personalizada não deve exceder 3:1.
 - O total de pixels da resolução personalizada deve estar entre 655.360 e 8.294.400.
-- O fundo transparente não é suportado pelo modelo `gpt-image-2`.
 - Os modelos `gpt-image-1` e `gpt-image-1.5` suportam apenas os tamanhos `auto`, `1024x1024`, `1024x1536` e `1536x1024`. Outros tamanhos são suportados apenas pelo modelo `gpt-image-2`.
 
 ## Saídas

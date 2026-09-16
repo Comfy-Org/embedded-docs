@@ -28,8 +28,7 @@ OpenAI'nin GPT Image uç noktası aracılığıyla eşzamanlı olarak görüntü
 - Özel genişlik ve yükseklik 16'nın katı olmalıdır.
 - Özel bir çözünürlüğün en uzun kenarı 3840 veya daha az olmalıdır.
 - Özel çözünürlük en-boy oranı 3:1'i aşmamalıdır.
-- Özel çözünürlüğün toplam piksel sayısı 655,360 ile 8,294,400 arasında olmalıdır.
-- `gpt-image-2` modeli için saydam arka plan desteklenmez.
+- Özel çözünürlüğün toplam piksel sayısı 655.360 ile 8.294.400 arasında olmalıdır.
 - `gpt-image-1` ve `gpt-image-1.5` modelleri yalnızca `auto`, `1024x1024`, `1024x1536` ve `1536x1024` boyutlarını destekler. Diğer boyutlar yalnızca `gpt-image-2` modeli tarafından desteklenir.
 
 ## Çıktılar

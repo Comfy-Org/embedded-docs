@@ -29,7 +29,6 @@ Génère des images de manière synchrone via le point de terminaison GPT Image 
 - Le bord le plus long d'une résolution personnalisée ne doit pas dépasser 3840.
 - Le rapport d'aspect d'une résolution personnalisée ne doit pas dépasser 3:1.
 - Le nombre total de pixels d'une résolution personnalisée doit être compris entre 655 360 et 8 294 400.
-- L'arrière-plan transparent n'est pas pris en charge par le modèle `gpt-image-2`.
 - Les modèles `gpt-image-1` et `gpt-image-1.5` ne prennent en charge que les tailles `auto`, `1024x1024`, `1024x1536` et `1536x1024`. Les autres tailles ne sont prises en charge que par le modèle `gpt-image-2`.
 
 ## Sorties

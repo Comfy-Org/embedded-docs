@@ -29,7 +29,6 @@ Generates images synchronously through OpenAI's GPT Image endpoint. It can creat
 - The longest edge of a custom resolution must be 3840 or less.
 - Custom resolution aspect ratio must not exceed 3:1.
 - Custom resolution total pixels must be between 655,360 and 8,294,400.
-- Transparent background is not supported for the `gpt-image-2` model.
 - The `gpt-image-1` and `gpt-image-1.5` models only support the sizes `auto`, `1024x1024`, `1024x1536`, and `1536x1024`. Other sizes are only supported by the `gpt-image-2` model.
 
 ## Outputs
