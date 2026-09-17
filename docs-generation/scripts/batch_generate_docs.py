@@ -40,6 +40,48 @@ MAX_RETRIES = int(os.getenv('MAX_RETRIES', '3'))
 DELAY_BETWEEN_REQUESTS = int(os.getenv('DELAY_BETWEEN_REQUESTS', '2'))
 
 
+def _extract_signature(text: str) -> dict:
+    """Extract structural facts from a doc: params, types, required flags, ranges, outputs.
+
+    Two versions of a doc with the same signature convey the same factual content;
+    differing prose is only wording. Used to detect rewording-only churn.
+    """
+    import re as _re
+    sig = {"rows": [], "note_facts": set()}
+    for line in text.splitlines():
+        s = line.strip()
+        if s.startswith("|") and not _re.match(r"^\|[\s:`\-]+\|$", s):
+            cells = [c.strip().strip("`") for c in s.split("|")[1:-1]]
+            if not cells:
+                continue
+            first = cells[0]
+            if _re.match(r"^(参数|パラメータ|파라미터|Param|Parameter|Parámetro|Paramètre|Параметр|معامل|매개변수)$", first, _re.I):
+                continue  # header
+            if all(set(c) <= {"-", ":", " "} for c in cells):
+                continue  # separator
+            # row signature: name + type + required + range (description excluded)
+            sig["rows"].append(tuple(cells[:1] + cells[2:4] if len(cells) >= 4 else cells))
+    return sig
+
+
+def _is_rewording_only(old_text: str, new_text: str) -> bool:
+    """True when new_text has identical structure/params/types/required/ranges
+    as old_text but different prose (pure rewording churn)."""
+    old_sig = _extract_signature(old_text)
+    new_sig = _extract_signature(new_text)
+    if not old_sig["rows"] or old_sig["rows"] != new_sig["rows"]:
+        return False
+    # headings must match too
+    def heads(t):
+        return [l.strip() for l in t.splitlines() if l.strip().startswith("#") and not l.strip().startswith("# ")]
+    # ignore H1 title differences only if identical otherwise; require all ## headings equal
+    def h2(t):
+        return [l.strip() for l in t.splitlines() if l.startswith("## ")]
+    if h2(old_text) != h2(new_text):
+        return False
+    return True
+
+
 def _strip_markdown_output_fence(text: str) -> str:
     """Remove an outer ```markdown ... ``` fence that some LLMs wrap around
     the entire generated document (sometimes right after the H1). Only strips
@@ -190,7 +232,7 @@ class AIDocGenerator:
             else:
                 raise e
     
-    def save_doc(self, node_name: str, content: str) -> bool:
+    def save_doc(self, node_name: str, content: str, original_doc: str | None = None) -> bool:
         """Save generated documentation with disclaimer at the bottom of the file."""
         try:
             # Create node documentation directory
@@ -211,6 +253,20 @@ class AIDocGenerator:
 
             body = ensure_doc_title(strip_leading_h1(content), node_name, "en")
             final_content = compose_document(body, disclaimer, footer)
+            
+            # Churn guard (update mode only): if the AI rewrite carries the same
+            # params/types/required/ranges as the existing doc and only rewords prose,
+            # keep the original file. Wording-only churn creates 100s of wasted diff
+            # lines and translation debt (2026-09 Loop-node refresh lesson).
+            if original_doc is not None:
+                old_final = compose_document(
+                    ensure_doc_title(strip_leading_h1(original_doc), node_name, "en"),
+                    disclaimer, footer)
+                if final_content != old_final and _is_rewording_only(old_final, final_content):
+                    final_content = old_final
+                    self.logger.log(
+                        f"🔇 {node_name}: AI output was rewording-only; kept existing en.md",
+                        "SKIP")
             
             # Save English documentation
             doc_file = doc_dir / "en.md"
@@ -237,7 +293,12 @@ class AIDocGenerator:
             + "1. Reflects any parameter additions, removals, or type changes visible in the new source code above.\n"
             + "2. Keeps all human-written descriptions, notes, and extra sections that are still accurate.\n"
             + "3. Does NOT discard or rewrite content just because it was not derived from the source code — "
-            + "only remove content that is factually incorrect given the new source.\n\n"
+            + "only remove content that is factually incorrect given the new source.\n"
+            + "4. MINIMAL DIFF IS MANDATORY: copy the existing en.md verbatim as your starting point and change ONLY "
+            + "the specific lines that the new source code requires. Do NOT rephrase, reorder, or 'improve' any "
+            + "sentence whose meaning is unchanged. Do NOT restructure headings, tables, or sections. Do NOT "
+            + "unify terminology or change wording style. A line with unchanged meaning must appear byte-identical "
+            + "in your output. Rewording-only changes are treated as pipeline defects.\n\n"
             + "```markdown\n"
             + existing_doc
             + "\n```\n"
@@ -271,7 +332,7 @@ class AIDocGenerator:
             content = self.generate_doc(node_name, prompt)
 
             if content:
-                if self.save_doc(node_name, content):
+                if self.save_doc(node_name, content, original_doc=existing_doc if force else None):
                     self.logger.log_success(node_name)
                     return True
 
