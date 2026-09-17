@@ -1,6 +1,6 @@
 # MoGe Panorama Çıkarımı
 
-Bu düğüm, eşdikdörtgen (equirectangular) panorama görüntüleri üzerinde derinlik tahmini gerçekleştirir. Panaromu 12 perspektif görünüme böler, her görünümde MoGe derinlik tahmini modelini çalıştırır ve görünüm başına sonuçları tam panoramayı kapsayan tek bir derinlik haritasında birleştirir. Görünüm başına tahmin edilen normaller ve metrik ölçek yok sayılır, çünkü görünüm başına ölçekler örtüşme dikişleri boyunca hizalanmaz.
+Bu düğüm, eşdikdörtgen (equirectangular) panorama görüntüleri üzerinde derinlik tahmini gerçekleştirir. Panoramayı 12 perspektif görünüme böler, her görünümde MoGe derinlik tahmini modelini çalıştırır ve görünüm başına sonuçları tam panoramayı kapsayan tek bir derinlik haritasında birleştirir. Görünüm başına tahmin edilen normaller ve metrik ölçek yok sayılır, çünkü görünüm başına ölçekler örtüşme dikişleri boyunca hizalanmaz.
 
 ## Girdiler
 
@@ -10,7 +10,7 @@ Bu düğüm, eşdikdörtgen (equirectangular) panorama görüntüleri üzerinde 
 | `image` | Eşdikdörtgen panorama (herhangi bir en-boy oranı). Düğüm yalnızca tek bir görüntü kabul eder; bir görüntü yığını iletilmesi hata verir. Yalnızca ilk 3 renk kanalı (RGB) kullanılır. | IMAGE | Evet |  |
 | `resolution_level` | Görünüm başına ayrıntı (0 = en hızlı, 9 = en ayrıntılı) (varsayılan: 9). | INT | Evet | 0 ile 9 arası |
 | `split_resolution` | Her perspektif bölünmesinin çözünürlüğü (varsayılan: 512). | INT | Evet | 256 ile 1024 arası |
-| `merge_resolution` | Birleştirilmiş equirect mesafe haritasının uzun kenar çözünürlüğü (varsayılan: 1920). | INT | Evet | 256 ile 8192 arası |
+| `merge_resolution` | Birleştirilmiş eşdikdörtgen (equirectangular) mesafe haritasının uzun kenar çözünürlüğü (varsayılan: 1920). | INT | Evet | 256 ile 8192 arası |
 | `batch_size` | Çıkarım yığını başına görünüm sayısı (toplam 12 bölünme) (varsayılan: 4). | INT | Evet | 1 ile 12 arası |
 | `refine_steps` | Yalnızca MoGe-3: tahmin edilen derinlik üzerinde seyrek hacimsel iyileştirme geçişleri. Daha fazla geçiş, ince ayrıntıyı ve kenarları yaklaşık doğrusal bir maliyetle keskinleştirir. 0, iyileştirmeyi devre dışı bırakır. MoGe-1 / MoGe-2 tarafından yok sayılır (varsayılan: 3). | INT | Evet | 0 ile 8 arası |
 

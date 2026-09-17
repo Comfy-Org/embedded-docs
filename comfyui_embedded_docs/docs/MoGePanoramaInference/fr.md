@@ -7,7 +7,7 @@ Ce nœud effectue une estimation de profondeur sur des images panoramiques équi
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `moge_model` | Le modèle MoGe à utiliser pour l'inférence. | MOGE_MODEL | Oui |  |
-| `image` | Panorama équirectangulaire (tout format d'image). Le nœud accepte uniquement une seule image ; passer un lot d'images déclenche une erreur. Seuls les 3 premiers canaux de couleur (RVB) sont utilisés. | IMAGE | Oui |  |
+| `image` | Panorama équirectangulaire (tout rapport d'aspect). Le nœud accepte uniquement une seule image ; passer un lot d'images déclenche une erreur. Seuls les 3 premiers canaux de couleur (RVB) sont utilisés. | IMAGE | Oui |  |
 | `resolution_level` | Niveau de détail par vue (0 = le plus rapide, 9 = le plus détaillé) (par défaut : 9). | INT | Oui | 0 à 9 |
 | `split_resolution` | Résolution de chaque découpe en perspective (par défaut : 512). | INT | Oui | 256 à 1024 |
 | `merge_resolution` | Résolution du côté long de la carte de distance équirectangulaire fusionnée (par défaut : 1920). | INT | Oui | 256 à 8192 |

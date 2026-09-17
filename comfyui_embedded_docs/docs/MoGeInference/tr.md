@@ -1,6 +1,6 @@
 # MoGe Çıkarımı
 
-Derinlik ve geometriyi tahmin etmek için MoGe'yi tek bir görüntü üzerinde çalıştırın. Bu düğüm, bir girdi görüntüsünü MoGe modeli üzerinden işleyerek 3B nokta bulutu, derinlik haritası, kamera iç parametreleri, maske ve yüzey normalleri üretir.
+Derinlik ve geometriyi tahmin etmek için MoGe'yi görüntüler üzerinde çalıştırın. Bu düğüm, bir girdi görüntüsünü MoGe modeli üzerinden işleyerek 3B nokta bulutu, derinlik haritası, kamera iç parametreleri, maske ve yüzey normalleri üretir.
 
 ## Girdiler
 

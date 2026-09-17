@@ -1,6 +1,6 @@
 # Inférence MoGe
 
-Exécutez MoGe sur une image unique pour estimer la profondeur et la géométrie. Ce nœud traite une image d’entrée avec le modèle MoGe afin de générer un nuage de points 3D, une carte de profondeur, les paramètres intrinsèques de la caméra, un masque et les normales de surface.
+Exécutez MoGe sur des images pour estimer la profondeur et la géométrie. Ce nœud traite une image d’entrée avec le modèle MoGe afin de générer un nuage de points 3D, une carte de profondeur, les paramètres intrinsèques de la caméra, un masque et les normales de surface.
 
 ## Entrées
 

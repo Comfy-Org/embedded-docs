@@ -1,6 +1,6 @@
 # Inferencia MoGe
 
-Ejecuta MoGe en una sola imagen para estimar profundidad y geometría. Este nodo procesa una imagen de entrada a través del modelo MoGe para generar una nube de puntos 3D, un mapa de profundidad, intrínsecos de cámara, una máscara y normales de superficie.
+Ejecuta MoGe en imágenes para estimar profundidad y geometría. Este nodo procesa una imagen de entrada a través del modelo MoGe para generar una nube de puntos 3D, un mapa de profundidad, intrínsecos de cámara, una máscara y normales de superficie.
 
 ## Entradas
 

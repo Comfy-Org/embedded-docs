@@ -1,6 +1,6 @@
 # Inferência MoGe
 
-Execute o MoGe em uma única imagem para estimar profundidade e geometria. Este nó processa uma imagem de entrada através do modelo MoGe para gerar uma nuvem de pontos 3D, mapa de profundidade, intrínsecos da câmera, uma máscara e normais de superfície.
+Execute o MoGe em imagens para estimar profundidade e geometria. Este nó processa uma imagem de entrada através do modelo MoGe para gerar uma nuvem de pontos 3D, mapa de profundidade, intrínsecos da câmera, uma máscara e normais de superfície.
 
 ## Entradas
 
