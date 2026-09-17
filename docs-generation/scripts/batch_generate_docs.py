@@ -40,6 +40,68 @@ MAX_RETRIES = int(os.getenv('MAX_RETRIES', '3'))
 DELAY_BETWEEN_REQUESTS = int(os.getenv('DELAY_BETWEEN_REQUESTS', '2'))
 
 
+def _extract_signature(text: str) -> dict:
+    """Extract every source-derived fact from a doc, for churn detection.
+
+    Per table: header names + each row's non-prose cells (name, type,
+    required, default, range — everything except description columns).
+    Plus H2/H3 headings and bullet/paragraph facts (with backtick
+    identifiers normalized) so source-driven notes are covered too.
+    """
+    import re as _re
+    sig = {"rows": [], "notes": []}
+    header_cells = None
+    PROSE_RE = _re.compile(r"(描述|説明|설명|описание|descripción|descri|说明)", _re.I)
+    for line in text.splitlines():
+        s = line.strip()
+        if s.startswith("## ") or s.startswith("### "):
+            header_cells = None
+            sig["notes"].append(s.lower())
+            continue
+        if not s.startswith("|"):
+            if s.startswith(">") or not s:
+                continue
+            # bullets and body sentences: normalize backtick ids, keep first 80 chars
+            sig["notes"].append(_re.sub(r"`[^`]+`", "`ID`", s)[:80])
+            continue
+        if _re.match(r"^\|[\s:`\-]+\|$", s):
+            continue  # separator row
+        cells = [c.strip().strip("`") for c in s.split("|")[1:-1]]
+        if not cells:
+            continue
+        first = cells[0]
+        if PROSE_RE.search(first) or first.lower() in (
+            "parameter", "param", "parámetro", "paramètre", "параметр",
+            "output name", "输出名称", "输出名", "nombre", "نام", "출력 이름",
+        ):
+            header_cells = [c.lower() for c in cells]
+            continue
+        if header_cells is None:
+            continue
+        row = []
+        for name, cell in zip(header_cells, cells):
+            if PROSE_RE.search(name):
+                continue  # description column: prose, excluded
+            row.append(f"{name}={cell}")
+        sig["rows"].append(tuple(row))
+    return sig
+
+
+def _is_rewording_only(old_text: str, new_text: str) -> bool:
+    """True only when the rewrite changes prose but keeps every
+    source-derived fact: table rows (all non-prose columns), H2/H3
+    headings, and note facts. Any factual difference returns False so
+    the AI version is kept (never restore stale facts)."""
+    old_sig = _extract_signature(old_text)
+    new_sig = _extract_signature(new_text)
+    if not old_sig["rows"] or old_sig["rows"] != new_sig["rows"]:
+        return False
+    if old_sig["notes"] != new_sig["notes"]:
+        return False
+    return True
+
+
+
 def _strip_markdown_output_fence(text: str) -> str:
     """Remove an outer ```markdown ... ``` fence that some LLMs wrap around
     the entire generated document (sometimes right after the H1). Only strips
@@ -190,7 +252,7 @@ class AIDocGenerator:
             else:
                 raise e
     
-    def save_doc(self, node_name: str, content: str) -> bool:
+    def save_doc(self, node_name: str, content: str, original_doc: str | None = None) -> bool:
         """Save generated documentation with disclaimer at the bottom of the file."""
         try:
             # Create node documentation directory
@@ -211,6 +273,20 @@ class AIDocGenerator:
 
             body = ensure_doc_title(strip_leading_h1(content), node_name, "en")
             final_content = compose_document(body, disclaimer, footer)
+            
+            # Churn guard (update mode only): if the AI rewrite carries the same
+            # params/types/required/ranges as the existing doc and only rewords prose,
+            # keep the original file. Wording-only churn creates 100s of wasted diff
+            # lines and translation debt (2026-09 Loop-node refresh lesson).
+            if original_doc is not None:
+                old_final = compose_document(
+                    ensure_doc_title(strip_leading_h1(original_doc), node_name, "en"),
+                    disclaimer, footer)
+                if final_content != old_final and _is_rewording_only(old_final, final_content):
+                    final_content = old_final
+                    self.logger.log(
+                        f"🔇 {node_name}: AI output was rewording-only; kept existing en.md",
+                        "SKIP")
             
             # Save English documentation
             doc_file = doc_dir / "en.md"
@@ -237,7 +313,12 @@ class AIDocGenerator:
             + "1. Reflects any parameter additions, removals, or type changes visible in the new source code above.\n"
             + "2. Keeps all human-written descriptions, notes, and extra sections that are still accurate.\n"
             + "3. Does NOT discard or rewrite content just because it was not derived from the source code — "
-            + "only remove content that is factually incorrect given the new source.\n\n"
+            + "only remove content that is factually incorrect given the new source.\n"
+            + "4. MINIMAL DIFF IS MANDATORY: copy the existing en.md verbatim as your starting point and change ONLY "
+            + "the specific lines that the new source code requires. Do NOT rephrase, reorder, or 'improve' any "
+            + "sentence whose meaning is unchanged. Do NOT restructure headings, tables, or sections. Do NOT "
+            + "unify terminology or change wording style. A line with unchanged meaning must appear byte-identical "
+            + "in your output. Rewording-only changes are treated as pipeline defects.\n\n"
             + "```markdown\n"
             + existing_doc
             + "\n```\n"
@@ -262,6 +343,7 @@ class AIDocGenerator:
 
             # If an existing doc is present and we are force-regenerating, send it
             # to the AI as context so human edits are preserved.
+            existing_doc = None
             if force and doc_file.exists():
                 with open(doc_file, 'r', encoding='utf-8') as f:
                     existing_doc = strip_ai_disclaimer(strip_source_hash_footer(f.read()))
@@ -271,7 +353,7 @@ class AIDocGenerator:
             content = self.generate_doc(node_name, prompt)
 
             if content:
-                if self.save_doc(node_name, content):
+                if self.save_doc(node_name, content, original_doc=existing_doc if force else None):
                     self.logger.log_success(node_name)
                     return True
 
