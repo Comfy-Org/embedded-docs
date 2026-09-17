@@ -8,7 +8,7 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用於生成回應的 Gemini 模型。所選模型決定了會顯示哪些額外輸入。 | DYNAMIC_COMBO | 是 | `"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `模型` | 用於生成回應的 Gemini 模型。所選模型決定了會顯示哪些額外輸入。 | DYNAMIC_COMBO | 是 | `"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
 
 ### 媒體輸入
 

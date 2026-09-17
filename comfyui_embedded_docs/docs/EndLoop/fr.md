@@ -8,8 +8,8 @@ End Loop marque la fin d’un bloc de boucle. Il collecte la valeur produite par
 |-----------|-------------|-----------------|--------|-------|
 | `output_value` | Valeur renvoyée par End Loop. Renvoie l’itération finale ou toutes les itérations selon `accumulate`. | ANY | Non | Tout type de valeur |
 | `next_iteration_value` | Valeur envoyée de End Loop à Start Loop pour l’itération suivante. | ANY | Non | Tout type de valeur |
-| `accumulate` | Renvoie `output_value` à chaque itération lorsqu’activé ; sinon, renvoie uniquement l’itération finale. | BOOLEAN | Non | `true`<br>`false` (par défaut : `false`) |
-| `terminations` | Connectez les sorties qui doivent s’exécuter à chaque itération. Leurs valeurs ne sont pas renvoyées. Emplacements extensibles nommés `termination_1`, `termination_2`, etc. | ANY | Non | 0 à 50 emplacements |
+| `accumuler` | Renvoie `output_value` à chaque itération lorsqu’activé ; sinon, renvoie uniquement l’itération finale. | BOOLEAN | Non | `true`<br>`false` (par défaut : `false`) |
+| `terminaisons` | Connectez les sorties qui doivent s’exécuter à chaque itération. Leurs valeurs ne sont pas renvoyées. Emplacements extensibles nommés `termination_1`, `termination_2`, etc. | ANY | Non | 0 à 50 emplacements |
 
 Remarque : `terminations` est une liste extensible d’emplacements avec un minimum de 0 et un maximum de 50 connexions. Les valeurs connectées ici forcent l’exécution à chaque itération, mais ne font pas partie du résultat renvoyé.
 

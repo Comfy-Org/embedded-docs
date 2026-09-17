@@ -8,7 +8,7 @@ El nodo Start Loop inicia una estructura de bucle dentro de un flujo de trabajo.
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `mode` | El modo de iteración del bucle (predeterminado: "simple"). El modo seleccionado determina qué parámetros adicionales se muestran. | DYNAMIC_COMBO | Sí | `"simple"`<br>`"For"`<br>`"List"` |
+| `modo` | El modo de iteración del bucle (predeterminado: "simple"). El modo seleccionado determina qué parámetros adicionales se muestran. | DYNAMIC_COMBO | Sí | `"simple"`<br>`"For"`<br>`"List"` |
 | `cache_iterations` | Reutiliza los resultados de iteraciones sin cambios de ejecuciones anteriores. Desactívalo para volver a ejecutar cada iteración. Predeterminado: false. | BOOLEAN | Sí | true<br>false |
 | `parent_iteration` | Conecta iteration_index desde un Start Loop externo para anidar este bucle. Esta entrada es solo de entrada forzada (se requiere un enlace). | INT | No | Cualquier entero |
 | `initial_iteration_value` | Valor expuesto como current_iteration_value en la primera iteración. | ANY (tipo coincidente) | No | Cualquier valor |

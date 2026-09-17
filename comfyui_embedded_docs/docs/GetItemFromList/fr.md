@@ -6,7 +6,7 @@ Ce nœud renvoie un seul élément d'une liste, sélectionné par sa position. V
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `list` | La liste de valeurs dans laquelle sélectionner. Comme ce nœud est marqué comme prenant une entrée de type liste, la valeur connectée est traitée comme un groupe d'éléments. | Tout type | Oui | Toute liste de valeurs |
+| `liste` | La liste de valeurs dans laquelle sélectionner. Comme ce nœud est marqué comme prenant une entrée de type liste, la valeur connectée est traitée comme un groupe d'éléments. | Tout type | Oui | Toute liste de valeurs |
 | `index` | La position de l'élément à renvoyer. La valeur commence à 0, donc `0` renvoie le premier élément, `1` renvoie le deuxième élément, et ainsi de suite (par défaut : 0). | INT | Oui | Tout index entier |
 
 ## Sorties

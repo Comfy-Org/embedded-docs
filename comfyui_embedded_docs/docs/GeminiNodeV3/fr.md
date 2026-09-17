@@ -8,7 +8,7 @@ Générez des réponses textuelles avec les modèles Gemini de Google. Fournisse
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle Gemini utilisé pour générer la réponse. Le modèle sélectionné détermine quelles entrées supplémentaires sont affichées. | DYNAMIC_COMBO | Oui | `"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `modèle` | Le modèle Gemini utilisé pour générer la réponse. Le modèle sélectionné détermine quelles entrées supplémentaires sont affichées. | DYNAMIC_COMBO | Oui | `"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
 
 ### Entrées multimédias
 

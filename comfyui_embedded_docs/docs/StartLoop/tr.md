@@ -8,7 +8,7 @@ Start Loop düğümü, bir iş akışı içinde döngü yapısı başlatır. Ba�
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `mode` | Döngü yineleme modu (varsayılan: "simple"). Seçilen mod, hangi ek parametrelerin gösterileceğini belirler. | DYNAMIC_COMBO | Evet | `"simple"`<br>`"For"`<br>`"List"` |
+| `mod` | Döngü yineleme modu (varsayılan: "simple"). Seçilen mod, hangi ek parametrelerin gösterileceğini belirler. | DYNAMIC_COMBO | Evet | `"simple"`<br>`"For"`<br>`"List"` |
 | `cache_iterations` | Önceki çalıştırmalardan değişmemiş yineleme sonuçlarını yeniden kullanın. Her yinelemeyi yeniden çalıştırmak için devre dışı bırakın. Varsayılan: false. | BOOLEAN | Evet | true<br>false |
 | `parent_iteration` | Bu döngüyü iç içe yerleştirmek için bir dış Start Loop'tan iteration_index'i bağlayın. Bu girdi yalnızca zorunlu girdidir (bir bağlantı gereklidir). | INT | Hayır | Herhangi bir tam sayı |
 | `initial_iteration_value` | İlk yinelemede current_iteration_value olarak sunulan değer. | ANY (type-matched) | Hayır | Herhangi bir değer |
