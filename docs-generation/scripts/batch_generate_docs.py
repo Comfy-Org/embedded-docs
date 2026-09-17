@@ -41,45 +41,65 @@ DELAY_BETWEEN_REQUESTS = int(os.getenv('DELAY_BETWEEN_REQUESTS', '2'))
 
 
 def _extract_signature(text: str) -> dict:
-    """Extract structural facts from a doc: params, types, required flags, ranges, outputs.
+    """Extract every source-derived fact from a doc, for churn detection.
 
-    Two versions of a doc with the same signature convey the same factual content;
-    differing prose is only wording. Used to detect rewording-only churn.
+    Per table: header names + each row's non-prose cells (name, type,
+    required, default, range — everything except description columns).
+    Plus H2/H3 headings and bullet/paragraph facts (with backtick
+    identifiers normalized) so source-driven notes are covered too.
     """
     import re as _re
-    sig = {"rows": [], "note_facts": set()}
+    sig = {"rows": [], "notes": []}
+    header_cells = None
+    PROSE_RE = _re.compile(r"(描述|説明|설명|описание|descripción|descri|说明)", _re.I)
     for line in text.splitlines():
         s = line.strip()
-        if s.startswith("|") and not _re.match(r"^\|[\s:`\-]+\|$", s):
-            cells = [c.strip().strip("`") for c in s.split("|")[1:-1]]
-            if not cells:
+        if s.startswith("## ") or s.startswith("### "):
+            header_cells = None
+            sig["notes"].append(s.lower())
+            continue
+        if not s.startswith("|"):
+            if s.startswith(">") or not s:
                 continue
-            first = cells[0]
-            if _re.match(r"^(参数|パラメータ|파라미터|Param|Parameter|Parámetro|Paramètre|Параметр|معامل|매개변수)$", first, _re.I):
-                continue  # header
-            if all(set(c) <= {"-", ":", " "} for c in cells):
-                continue  # separator
-            # row signature: name + type + required + range (description excluded)
-            sig["rows"].append(tuple(cells[:1] + cells[2:4] if len(cells) >= 4 else cells))
+            # bullets and body sentences: normalize backtick ids, keep first 80 chars
+            sig["notes"].append(_re.sub(r"`[^`]+`", "`ID`", s)[:80])
+            continue
+        if _re.match(r"^\|[\s:`\-]+\|$", s):
+            continue  # separator row
+        cells = [c.strip().strip("`") for c in s.split("|")[1:-1]]
+        if not cells:
+            continue
+        first = cells[0]
+        if PROSE_RE.search(first) or first.lower() in (
+            "parameter", "param", "parámetro", "paramètre", "параметр",
+            "output name", "输出名称", "输出名", "nombre", "نام", "출력 이름",
+        ):
+            header_cells = [c.lower() for c in cells]
+            continue
+        if header_cells is None:
+            continue
+        row = []
+        for name, cell in zip(header_cells, cells):
+            if PROSE_RE.search(name):
+                continue  # description column: prose, excluded
+            row.append(f"{name}={cell}")
+        sig["rows"].append(tuple(row))
     return sig
 
 
 def _is_rewording_only(old_text: str, new_text: str) -> bool:
-    """True when new_text has identical structure/params/types/required/ranges
-    as old_text but different prose (pure rewording churn)."""
+    """True only when the rewrite changes prose but keeps every
+    source-derived fact: table rows (all non-prose columns), H2/H3
+    headings, and note facts. Any factual difference returns False so
+    the AI version is kept (never restore stale facts)."""
     old_sig = _extract_signature(old_text)
     new_sig = _extract_signature(new_text)
     if not old_sig["rows"] or old_sig["rows"] != new_sig["rows"]:
         return False
-    # headings must match too
-    def heads(t):
-        return [l.strip() for l in t.splitlines() if l.strip().startswith("#") and not l.strip().startswith("# ")]
-    # ignore H1 title differences only if identical otherwise; require all ## headings equal
-    def h2(t):
-        return [l.strip() for l in t.splitlines() if l.startswith("## ")]
-    if h2(old_text) != h2(new_text):
+    if old_sig["notes"] != new_sig["notes"]:
         return False
     return True
+
 
 
 def _strip_markdown_output_fence(text: str) -> str:
@@ -323,6 +343,7 @@ class AIDocGenerator:
 
             # If an existing doc is present and we are force-regenerating, send it
             # to the AI as context so human edits are preserved.
+            existing_doc = None
             if force and doc_file.exists():
                 with open(doc_file, 'r', encoding='utf-8') as f:
                     existing_doc = strip_ai_disclaimer(strip_source_hash_footer(f.read()))
