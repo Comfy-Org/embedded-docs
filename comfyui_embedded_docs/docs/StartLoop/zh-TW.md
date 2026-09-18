@@ -8,7 +8,7 @@ Start Loop 節點會在工作流程內啟動迴圈結構。它會在每次迭代
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `mode` | 迴圈迭代模式（預設："simple"）。所選模式決定會顯示哪些額外參數。 | DYNAMIC_COMBO | 是 | `"simple"`<br>`"For"`<br>`"List"` |
+| `模式` | 迴圈迭代模式（預設："simple"）。所選模式決定會顯示哪些額外參數。 | DYNAMIC_COMBO | 是 | `"simple"`<br>`"For"`<br>`"List"` |
 | `cache_iterations` | 重複使用先前執行中未變更的迭代結果。停用以再次執行每次迭代。預設：false。 | BOOLEAN | 是 | true<br>false |
 | `parent_iteration` | 連接外部 Start Loop 的 `iteration_index` 以巢狀化此迴圈。此輸入僅限強制輸入（必須有連結）。 | INT | 否 | Any integer |
 | `initial_iteration_value` | 第一次迭代時作為 `current_iteration_value` 曝露的值。 | ANY (type-matched) | 否 | Any value |

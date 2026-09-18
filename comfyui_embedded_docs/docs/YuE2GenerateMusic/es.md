@@ -1,33 +1,34 @@
 # YuE2 Generar música
 
-Genera tokens de música y condicionamiento acústico a partir de un estilo, una letra y una notación ABC. Devuelve el condicionamiento y la duración generada en segundos, que debe proporcionarse al nodo Empty YuE2 Latent Audio. Si la entrada ABC se deja vacía, se ignora el modo seleccionado y se usa automáticamente el modo off.
+Genera tokens musicales y condicionamiento acústico a partir de un estilo, una letra y una notación ABC. Devuelve el condicionamiento y la duración generada en segundos, que deben proporcionarse al nodo Empty YuE2 Latent Audio. Si la entrada ABC se deja vacía, se ignora el modo seleccionado y se usa automáticamente el modo off.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `clip` | El modelo CLIP utilizado para tokenizar y codificar las entradas de música. | CLIP | Sí | - |
-| `estilo` | Texto que describe el estilo musical. Admite entrada de varias líneas y prompts dinámicos. | STRING | Sí | Texto multilínea |
-| `letra` | Letra para la música generada. Admite entrada de varias líneas y prompts dinámicos. | STRING | Sí | Texto multilínea |
-| `abc` | Conecte el generador ABC o proporcione una partitura editada. Déjelo vacío para usar automáticamente el modo off. predeterminado: "" | STRING | Sí | Texto multilínea |
+| `clip` | El modelo CLIP utilizado para tokenizar y codificar las entradas musicales. | CLIP | Sí | - |
+| `estilo` | Texto que describe el estilo musical. Admite entrada multilínea y prompts dinámicos. | STRING | Sí | Texto multilínea |
+| `letra` | Letra para la música generada. Admite entrada multilínea y prompts dinámicos. | STRING | Sí | Texto multilínea |
+| `abc` | Conecte el generador ABC o proporcione una partitura editada. Déjelo vacío para usar el modo off automáticamente. predeterminado: "" | STRING | Sí | Texto multilínea |
 | `semilla` | Semilla aleatoria para la generación. predeterminado: 0 | INT | Sí | 0 a 18446744073709551615 |
-| `modo` | full: genera melodía y acordes; melody: genera solo melodía, recomendado para versiones cover. predeterminado: "full" | COMBO | Sí | "full"<br>"melody" |
+| `modo` | full: genera melodía y acordes; melody: genera solo la melodía, recomendado para covers. predeterminado: "full" | COMBO | Sí | "full"<br>"melody" |
 | `max_duration` | Duración máxima en segundos. Se reduce automáticamente para prompts largos; la generación puede detenerse antes. predeterminado: 360.0 | FLOAT | Sí | 0.04 a 900.0 |
 | `temperatura` | Temperatura de muestreo para la generación. predeterminado: 1.0 (avanzado) | FLOAT | Sí | 0.0 a 5.0 |
-| `top_p` | Umbral de probabilidad de muestreo de núcleo. predeterminado: 0.95 (avanzado) | FLOAT | Sí | 0.01 a 1.0 |
+| `top_p` | Umbral de probabilidad del muestreo de núcleo. predeterminado: 0.95 (avanzado) | FLOAT | Sí | 0.01 a 1.0 |
 | `top_k` | Límite de muestreo top-k. predeterminado: 100 (avanzado) | INT | Sí | 1 a 32768 |
 | `repetition_penalty` | Penalización aplicada a los tokens repetidos. predeterminado: 1.2 (avanzado) | FLOAT | Sí | 0.01 a 10.0 |
+| `cfg_scale` | Guía autorregresiva para el estilo y la letra. 1.0 desactiva CFG, coincidiendo con el flujo de trabajo ABC. Use 1.01 para coincidir con la guía original del modo off. predeterminado: 1.0 (avanzado, opcional) | FLOAT | No | 0.0 a 100.0 |
 
-Nota: Si `abc` está vacío o contiene solo espacios en blanco, se ignora la selección de `mode` y se usa automáticamente el modo off.
+Nota: Si `abc` está vacío o contiene solo espacios en blanco, se ignora la selección de `mode` y se usa el modo off automáticamente.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `CONDITIONING` | Condicionamiento acústico generado a partir de los tokens de música. | CONDITIONING |
+| `CONDITIONING` | Condicionamiento acústico generado a partir de los tokens musicales. | CONDITIONING |
 | `seconds` | La duración del audio generado en segundos. Proporcione este valor al nodo Empty YuE2 Latent Audio. | FLOAT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/YuE2GenerateMusic/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `54f5d46cf083726bdf97c86e5683b2727840f75bb553bddf9525cfbf5affa44c`
+**Source fingerprint (SHA-256):** `5a88e185d2998c51acff7f0c76c8c35ca30b80b88cb541d97f9ab91566b5a3ed`

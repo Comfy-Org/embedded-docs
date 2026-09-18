@@ -6,8 +6,8 @@ Bu düğüm, bir listeden konumuna göre seçilen tek bir öğe döndürür. İs
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `list` | Seçim yapılacak değerler listesi. Bu düğüm liste girdisi aldığı için bağlanan değer bir öğe grubu olarak işlenir. | Herhangi Bir Tür | Evet | Herhangi bir değer listesi |
-| `index` | Döndürülecek öğenin konumu. Değer 0'dan başlar, yani `0` ilk öğeyi, `1` ikinci öğeyi döndürür ve bu şekilde devam eder (varsayılan: 0). | INT | Evet | Herhangi bir tam sayı indeksi |
+| `liste` | Seçim yapılacak değerler listesi. Bu düğüm liste girdisi aldığı için bağlanan değer bir öğe grubu olarak işlenir. | Herhangi Bir Tür | Evet | Herhangi bir değer listesi |
+| `indeks` | Döndürülecek öğenin konumu. Değer 0'dan başlar, yani `0` ilk öğeyi, `1` ikinci öğeyi döndürür ve bu şekilde devam eder (varsayılan: 0). | INT | Evet | Herhangi bir tam sayı indeksi |
 
 ## Çıktılar
 

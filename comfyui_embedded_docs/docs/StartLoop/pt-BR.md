@@ -8,7 +8,7 @@ O nó Start Loop inicia uma estrutura de repetição dentro de um workflow. Ele 
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `mode` | O modo de iteração do loop (padrão: "simple"). O modo selecionado determina quais parâmetros adicionais são exibidos. | DYNAMIC_COMBO | Sim | `"simple"`<br>`"For"`<br>`"List"` |
+| `modo` | O modo de iteração do loop (padrão: "simple"). O modo selecionado determina quais parâmetros adicionais são exibidos. | DYNAMIC_COMBO | Sim | `"simple"`<br>`"For"`<br>`"List"` |
 | `cache_iterations` | Reutiliza resultados de iterações inalteradas de execuções anteriores. Desative para executar cada iteração novamente. Padrão: false. | BOOLEAN | Sim | true<br>false |
 | `parent_iteration` | Conecte iteration_index de um Start Loop externo para aninhar este loop. Esta entrada é somente force-input (um link é necessário). | INT | Não | Qualquer inteiro |
 | `initial_iteration_value` | Valor exposto como current_iteration_value na primeira iteração. | ANY (tipo correspondente) | Não | Qualquer valor |

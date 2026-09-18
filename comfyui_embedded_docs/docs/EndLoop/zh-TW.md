@@ -8,7 +8,7 @@ End Loop 標誌著迴圈區塊的結束。它會收集迴圈主體中最後一�
 |-----------|-------------|-----------|----------|-------|
 | `output_value` | 由 End Loop 傳回的值。它會根據 `accumulate` 傳回最終迭代的值或所有迭代的值。 | ANY | 否 | 任意值類型 |
 | `next_iteration_value` | 由 End Loop 傳回 Start Loop 的值，用於下一次迭代。 | ANY | 否 | 任意值類型 |
-| `accumulate` | 啟用時，從每次迭代傳回 `output_value`；否則只傳回最終迭代的值。 | BOOLEAN | 否 | `true`<br>`false`（預設：`false`） |
+| `累積` | 啟用時，從每次迭代傳回 `output_value`；否則只傳回最終迭代的值。 | BOOLEAN | 否 | `true`<br>`false`（預設：`false`） |
 | `terminations` | 連接必須在每次迭代中執行的輸出。這些值不會被傳回。可增長的插槽，命名為 `termination_1`、`termination_2`，依此類推。 | ANY | 否 | 0 到 50 個插槽 |
 
 注意：`terminations` 是一個可增長的插槽清單，最少 0 個、最多 50 個連接。連接至此的值會強制在每次迭代中執行，但不屬於傳回結果的一部分。

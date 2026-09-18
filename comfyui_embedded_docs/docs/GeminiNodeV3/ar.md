@@ -8,7 +8,7 @@
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
-| `model` | نموذج Gemini المستخدم لإنشاء الاستجابة. يحدد النموذج المختار المدخلات الإضافية التي تظهر. | DYNAMIC_COMBO | نعم | `"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `النموذج` | نموذج Gemini المستخدم لإنشاء الاستجابة. يحدد النموذج المختار المدخلات الإضافية التي تظهر. | DYNAMIC_COMBO | نعم | `"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
 
 ### المدخلات الوسائطية
 
