@@ -53,15 +53,31 @@ VALID_TYPES = {
 }
 
 ROW_RE = re.compile(r"^\|")
-FENCE_OPEN_RE = re.compile(r"^```markdown\s*$", re.M)
+FENCE_LINE_RE = re.compile(r"^\s*(`{3,}|~{3,})")
+
+
+def has_outer_fence(body: str) -> bool:
+    """True when a fence wraps the whole body (any info string: ```, ```md, ```markdown).
+
+    Inner fenced blocks are legitimate body content and are allowed; only a
+    wrapper around the entire body is rejected.
+    """
+    lines = [l for l in body.splitlines() if l.strip()]
+    if len(lines) < 2:
+        return False
+    first, last = lines[0].strip(), lines[-1].strip()
+    opens = FENCE_LINE_RE.match(lines[0]) is not None
+    closes = FENCE_LINE_RE.match(lines[-1]) is not None and last in ("```", "~~~") \
+        or last.startswith("```") or last.startswith("~~~")
+    return opens and closes
 
 
 def validate(body: str, node_name: str) -> list[str]:
     """Return a list of problems; empty means the body is saveable."""
     problems: list[str] = []
 
-    if FENCE_OPEN_RE.search(body):
-        problems.append("body contains a ```markdown fence (strip it)")
+    if has_outer_fence(body):
+        problems.append("body is wrapped in a code fence (strip the outer fence)")
 
     if "## Inputs" not in body:
         problems.append("missing '## Inputs' section")
@@ -108,8 +124,10 @@ def validate(body: str, node_name: str) -> list[str]:
         problems.append("no output rows found")
 
     h1s = re.findall(r"^# .+", body, re.M)
-    if len(h1s) > 1:
-        problems.append(f"{len(h1s)} H1 headings in body (write the body without an H1)")
+    if h1s:
+        problems.append(
+            f"{len(h1s)} H1 heading(s) in body (the script injects the title; "
+            f"write the body without any H1)")
 
     return problems
 
@@ -151,8 +169,9 @@ def main() -> int:
     doc_dir = DOCS_OUTPUT_PATH / node
     doc_file = doc_dir / "en.md"
     if args.dry_run:
-        print(f"✅ {node}: validation passed ({len(final)} bytes)"
-              f"{' [dry-run, not written]' if True else ''}")
+        print(f"✅ {node}: validation passed ({len(final)} bytes) [dry-run, not written]")
+        print("-" * 70)
+        print(final)
         return 0
 
     doc_dir.mkdir(parents=True, exist_ok=True)
