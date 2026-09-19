@@ -23,7 +23,7 @@ Generates a low-poly 3D model with clean topology from a text prompt using Tripo
 | `model.model_seed` | Seed for the geometry (default: 42). | INT | Yes | 0 to 2147483647 |
 | `model.image_seed` | Seed for the image Tripo draws from the prompt before modeling (default: 42). Advanced setting. | INT | Yes | 0 to 2147483647 |
 | `model.texture_seed` | Seed for the textures (default: 42). Advanced setting. | INT | Yes | 0 to 2147483647 |
-| `model.auto_size` | Scale the model to its real-world size in meters through its scene transform (default: False). Advanced setting. | BOOLEAN | Yes | True/False |
+| `model.auto_size` | Scale the model to its real-world size in meters through its scene transform. Ignored when `model.texture` is `"none"` (default: False). Advanced setting. | BOOLEAN | Yes | True/False |
 | `model.export_uv` | UV unwrap the mesh when it is untextured. Textured meshes are always unwrapped (default: True). Advanced setting. | BOOLEAN | Yes | True/False |
 | `model.compress_geometry` | Apply meshopt geometry compression: much smaller files, but ComfyUI's 3D preview cannot display them. Ignored for quad meshes (default: False). Advanced setting. | BOOLEAN | Yes | True/False |
 

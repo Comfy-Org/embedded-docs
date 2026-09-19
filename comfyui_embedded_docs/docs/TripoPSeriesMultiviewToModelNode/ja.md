@@ -26,7 +26,7 @@ Tripo の P2 モデルを使用して、同じ被写体の複数ビューから�
 | `テクスチャ位置合わせ` | 入力画像の色に一致させるか、生成されたジオメトリにテクスチャを合わせます。`model.texture` が `"none"` の場合は無視されます（デフォルト: `"original_image"`）。詳細設定。 | COMBO | はい | `"original_image"`<br>`"geometry"` |
 | `orientation` | `"align_image"` はモデルを入力画像の視点に回転させます。`model.texture` が `"none"` の場合は無視されます（デフォルト: `"default"`）。詳細設定。 | COMBO | はい | `"default"`<br>`"align_image"` |
 | `テクスチャシード` | テクスチャのシード（デフォルト: 42）。詳細設定。 | INT | はい | 0〜2147483647 |
-| `auto_size` | シーンのトランスフォームを通じて、モデルを実世界のメートル単位のサイズにスケーリングします（デフォルト: False）。詳細設定。 | BOOLEAN | はい | True/False |
+| `auto_size` | シーンのトランスフォームを通じて、モデルを実世界のメートル単位のサイズにスケーリングします。`model.texture` が `"none"` の場合は無視されます（デフォルト: False）。詳細設定。 | BOOLEAN | はい | True/False |
 | `export_uv` | メッシュがテクスチャなしの場合に UV 展開します。テクスチャ付きメッシュは常に展開されます（デフォルト: True）。詳細設定。 | BOOLEAN | はい | True/False |
 | `compress_geometry` | meshopt ジオメトリ圧縮を適用します。ファイルは大幅に小さくなりますが、ComfyUI の 3D プレビューでは表示できません。四角形メッシュでは無視されます（デフォルト: False）。詳細設定。 | BOOLEAN | はい | True/False |
 

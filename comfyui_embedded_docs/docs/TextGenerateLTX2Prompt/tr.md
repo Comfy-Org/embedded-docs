@@ -25,7 +25,7 @@ TextGenerateLTX2Prompt düğümü, kısa bir kullanıcı istemini LTX-2 serisi v
 | --- | --- | --- | --- | --- |
 | `temperature` | Çıktının rastgeleliğini kontrol eder. Düşük değerler çıktıyı daha öngörülebilir, yüksek değerler daha yaratıcı yapar (varsayılan: 0.7). | FLOAT | Evet | 0.01 ile 2.0 arası |
 | `top_k` | Örnekleme havuzunu, olasılığı en yüksek ilk K sonraki token ile sınırlar. 0 değeri bu filtreyi devre dışı bırakır (varsayılan: 64). | INT | Evet | 0 ile 1000 arası |
-| `top_p` | Nucleus örneklemesi kullanır; seçenekleri kümülatif olasılığı bu değerden küçük olan token'larla sınırlar (varsayılan: 0.95). | FLOAT | Evet | 0.0 ile 1.0 arası |
+| `top_p` | Çekirdek örnekleme kullanır: kümülatif olasılığı bu değere ulaşan en olası tokenların en küçük kümesini tutar. (varsayılan: 0.95) | FLOAT | Evet | 0.0 ile 1.0 arası |
 | `min_p` | Dikkate alınacak token'lar için minimum olasılık eşiği belirler (varsayılan: 0.05). | FLOAT | Evet | 0.0 ile 1.0 arası |
 | `repetition_penalty` | Tekrarı azaltmak için zaten üretilmiş token'ları cezalandırır. 1.0 değeri hiçbir ceza uygulamaz (varsayılan: 1.05). | FLOAT | Evet | 0.0 ile 5.0 arası |
 | `seed` | Yeniden üretilebilir sonuçlar için rastgele sayı üretecini başlatmak üzere kullanılan bir sayı (varsayılan: 0). | INT | Evet | 0 ile 18446744073709551615 arası |

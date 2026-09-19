@@ -24,7 +24,7 @@ Gera um modelo 3D low-poly com topologia limpa a partir de uma única imagem usa
 | `orientation` | `"align_image"` gira o modelo para o ponto de vista da imagem de entrada. Ignorado quando `model.texture` é `"none"` (padrão: `"default"`). Configuração avançada. | COMBO | Sim | `"default"`<br>`"align_image"` |
 | `enable_image_autofix` | Permite que a Tripo melhore uma imagem de baixa resolução ou baixa qualidade antes da modelagem (padrão: False). Configuração avançada. | BOOLEAN | Sim | True/False |
 | `texture_seed` | Semente para as texturas (padrão: 42). Configuração avançada. | INT | Sim | 0 a 2147483647 |
-| `auto_size` | Escala o modelo para seu tamanho real em metros por meio de sua transformação de cena (padrão: False). Configuração avançada. | BOOLEAN | Sim | True/False |
+| `auto_size` | Escala o modelo para seu tamanho real em metros por meio de sua transformação de cena. Ignorado quando `model.texture` é `"none"` (padrão: False). Configuração avançada. | BOOLEAN | Sim | True/False |
 | `export_uv` | Desdobra a malha em UV quando ela não tem textura. Malhas com textura são sempre desdobradas (padrão: True). Configuração avançada. | BOOLEAN | Sim | True/False |
 | `compress_geometry` | Aplica compressão de geometria meshopt: arquivos muito menores, mas a pré-visualização 3D do ComfyUI não consegue exibi-los. Ignorado para malhas de quads (padrão: False). Configuração avançada. | BOOLEAN | Sim | True/False |
 

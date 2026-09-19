@@ -25,7 +25,7 @@ El nodo TextGenerate usa un modelo CLIP para crear texto basado en el prompt del
 | --- | --- | --- | --- | --- |
 | `temperature` | Controla la aleatoriedad de la salida. Valores más bajos hacen la salida más predecible, valores más altos la hacen más creativa. El valor predeterminado es 0.7. | FLOAT | Sí | 0.01 a 2.0 |
 | `top_k` | Limita el grupo de muestreo a los K tokens siguientes más probables. Un valor de 0 desactiva este filtro. El valor predeterminado es 64. | INT | Sí | 0 a 1000 |
-| `top_p` | Usa muestreo de núcleo, limitando las opciones a tokens cuya probabilidad acumulada sea menor que este valor. El valor predeterminado es 0.95. | FLOAT | Sí | 0.0 a 1.0 |
+| `top_p` | Usa muestreo de núcleo: conserva el conjunto más pequeño de tokens más probables cuya probabilidad acumulada alcanza este valor. El valor predeterminado es 0.95. | FLOAT | Sí | 0.0 a 1.0 |
 | `min_p` | Establece un umbral mínimo de probabilidad para que los tokens sean considerados. El valor predeterminado es 0.05. | FLOAT | Sí | 0.0 a 1.0 |
 | `repetition_penalty` | Penaliza los tokens que ya se han generado para reducir la repetición. Un valor de 1.0 no aplica penalización. El valor predeterminado es 1.05. | FLOAT | Sí | 0.0 a 5.0 |
 | `seed` | Un número usado para inicializar el generador de números aleatorios para obtener resultados reproducibles. El valor predeterminado es 0. | INT | Sí | 0 a 18446744073709551615 |

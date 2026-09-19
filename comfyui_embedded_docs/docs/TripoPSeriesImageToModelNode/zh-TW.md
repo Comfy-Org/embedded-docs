@@ -24,7 +24,7 @@
 | `方向` | `"align_image"` 會將模型旋轉至輸入影像的視角。當 `model.texture` 為 `"none"` 時忽略（預設：`"default"`）。進階設定。 | COMBO | 是 | `"default"`<br>`"align_image"` |
 | `enable_image_autofix` | 讓 Tripo 在建模前增強低解析度或低品質的影像（預設：False）。進階設定。 | BOOLEAN | 是 | True/False |
 | `texture_seed` | 紋理的種子（預設：42）。進階設定。 | INT | 是 | 0 至 2147483647 |
-| `auto_size` | 透過場景變換將模型縮放至其以公尺為單位的真實世界尺寸（預設：False）。進階設定。 | BOOLEAN | 是 | True/False |
+| `auto_size` | 透過場景變換將模型縮放至其以公尺為單位的真實世界尺寸，當 `model.texture` 為 `"none"` 時忽略（預設：False）。進階設定。 | BOOLEAN | 是 | True/False |
 | `export_uv` | 當網格無紋理時，對其進行 UV 展開。有紋理的網格一律會展開（預設：True）。進階設定。 | BOOLEAN | 是 | True/False |
 | `compress_geometry` | 套用 meshopt 幾何壓縮：檔案會小得多，但 ComfyUI 的 3D 預覽無法顯示它們。對四邊形網格無效（預設：False）。進階設定。 | BOOLEAN | 是 | True/False |
 

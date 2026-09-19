@@ -26,7 +26,7 @@ Tripo'nun P2 modelini kullanarak aynı öznenin birkaç görünümünden temiz t
 | `texture_alignment` | Girdi görüntülerinin renklerini eşleştirir veya dokuları oluşturulan geometriye uydurur. `model.texture` `"none"` olduğunda yok sayılır (varsayılan: `"original_image"`). Gelişmiş ayar. | COMBO | Evet | `"original_image"`<br>`"geometry"` |
 | `orientation` | `"align_image"` modeli girdi görüntülerinin bakış açısına döndürür. `model.texture` `"none"` olduğunda yok sayılır (varsayılan: `"default"`). Gelişmiş ayar. | COMBO | Evet | `"default"`<br>`"align_image"` |
 | `texture_seed` | Dokular için tohum (varsayılan: 42). Gelişmiş ayar. | INT | Evet | 0 - 2147483647 |
-| `auto_size` | Modeli sahne dönüşümü aracılığıyla metre cinsinden gerçek dünya boyutuna ölçekler (varsayılan: False). Gelişmiş ayar. | BOOLEAN | Evet | True/False |
+| `auto_size` | Modeli sahne dönüşümü aracılığıyla metre cinsinden gerçek dünya boyutuna ölçekler. `model.texture` `"none"` olduğunda yok sayılır (varsayılan: False). Gelişmiş ayar. | BOOLEAN | Evet | True/False |
 | `export_uv` | Ağ dokusuz olduğunda UV açılımını uygular. Dokulu ağlar her zaman açılır (varsayılan: True). Gelişmiş ayar. | BOOLEAN | Evet | True/False |
 | `compress_geometry` | Meshopt geometri sıkıştırması uygular: çok daha küçük dosyalar, ancak ComfyUI'nin 3D önizlemesi bunları görüntüleyemez. Dörtgen ağlar için yok sayılır (varsayılan: False). Gelişmiş ayar. | BOOLEAN | Evet | True/False |
 

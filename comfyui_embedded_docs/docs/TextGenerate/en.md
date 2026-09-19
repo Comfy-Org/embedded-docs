@@ -25,7 +25,7 @@ The TextGenerate node uses a CLIP model to create text based on a user's prompt.
 | --- | --- | --- | --- | --- |
 | `temperature` | Controls the randomness of the output. Lower values make the output more predictable, higher values make it more creative. The default value is 0.7. | FLOAT | Yes | 0.01 to 2.0 |
 | `top_k` | Limits the sampling pool to the top K most likely next tokens. A value of 0 disables this filter. The default value is 64. | INT | Yes | 0 to 1000 |
-| `top_p` | Uses nucleus sampling, limiting choices to tokens whose cumulative probability is less than this value. The default value is 0.95. | FLOAT | Yes | 0.0 to 1.0 |
+| `top_p` | Uses nucleus sampling: it keeps the smallest set of most likely tokens whose cumulative probability reaches this value. The default value is 0.95. | FLOAT | Yes | 0.0 to 1.0 |
 | `min_p` | Sets a minimum probability threshold for tokens to be considered. The default value is 0.05. | FLOAT | Yes | 0.0 to 1.0 |
 | `repetition_penalty` | Penalizes tokens that have already been generated to reduce repetition. A value of 1.0 applies no penalty. The default value is 1.05. | FLOAT | Yes | 0.0 to 5.0 |
 | `seed` | A number used to initialize the random number generator for reproducible results. The default value is 0. | INT | Yes | 0 to 18446744073709551615 |

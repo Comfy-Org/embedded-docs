@@ -24,7 +24,7 @@ Tripo'nun P2 modelini kullanarak tek bir görüntüden temiz topolojili düşük
 | `orientation` | `"align_image"`, modeli girdi görüntüsünün bakış açısına döndürür. `model.texture` `"none"` olduğunda yok sayılır (varsayılan: `"default"`). Gelişmiş ayar. | COMBO | Evet | `"default"`<br>`"align_image"` |
 | `enable_image_autofix` | Tripo'nun modellemeden önce düşük çözünürlüklü veya düşük kaliteli bir görüntüyü geliştirmesine izin verir (varsayılan: False). Gelişmiş ayar. | BOOLEAN | Evet | True/False |
 | `texture_seed` | Dokular için rastgelelik tohumu (varsayılan: 42). Gelişmiş ayar. | INT | Evet | 0 ile 2147483647 arası |
-| `auto_size` | Modeli sahne dönüşümü aracılığıyla metre cinsinden gerçek dünya boyutuna ölçekler (varsayılan: False). Gelişmiş ayar. | BOOLEAN | Evet | True/False |
+| `auto_size` | Modeli sahne dönüşümü aracılığıyla metre cinsinden gerçek dünya boyutuna ölçekler. `model.texture` `"none"` olduğunda yok sayılır (varsayılan: False). Gelişmiş ayar. | BOOLEAN | Evet | True/False |
 | `export_uv` | Ağ dokusuz olduğunda UV açılımı uygular. Dokulu ağlara her zaman UV açılımı uygulanır (varsayılan: True). Gelişmiş ayar. | BOOLEAN | Evet | True/False |
 | `compress_geometry` | meshopt geometri sıkıştırmasını uygular: çok daha küçük dosyalar, ancak ComfyUI'nin 3B önizlemesi bunları görüntüleyemez. Dörtgen ağlar için yok sayılır (varsayılan: False). Gelişmiş ayar. | BOOLEAN | Evet | True/False |
 

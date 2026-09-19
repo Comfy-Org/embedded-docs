@@ -24,7 +24,7 @@
 | `orientation` | `"align_image"` 将模型旋转到输入图像的视角。当 `model.texture` 为 `"none"` 时忽略（默认：`"default"`）。高级设置。 | COMBO | 是 | `"default"`<br>`"align_image"` |
 | `enable_image_autofix` | 让 Tripo 在建模前增强低分辨率或低质量图像（默认：False）。高级设置。 | BOOLEAN | 是 | True/False |
 | `texture_seed` | 纹理的种子（默认：42）。高级设置。 | INT | 是 | 0 到 2147483647 |
-| `auto_size` | 通过场景变换将模型缩放到其以米为单位的真实世界尺寸（默认：False）。高级设置。 | BOOLEAN | 是 | True/False |
+| `auto_size` | 通过场景变换将模型缩放到其以米为单位的真实世界尺寸，当 `model.texture` 为 `"none"` 时忽略（默认：False）。高级设置。 | BOOLEAN | 是 | True/False |
 | `export_uv` | 当网格无纹理时对其进行 UV 展开。带纹理的网格始终会展开 UV（默认：True）。高级设置。 | BOOLEAN | 是 | True/False |
 | `compress_geometry` | 应用 meshopt 几何压缩：文件会小很多，但 ComfyUI 的 3D 预览无法显示它们。对四边形网格忽略（默认：False）。高级设置。 | BOOLEAN | 是 | True/False |
 

@@ -26,7 +26,7 @@ Génère un modèle 3D low-poly avec une topologie propre à partir de plusieurs
 | `texture_alignment` | Faire correspondre les couleurs des images d'entrée, ou adapter les textures à la géométrie générée. Ignoré lorsque `model.texture` vaut `"none"` (par défaut : `"original_image"`). Paramètre avancé. | COMBO | Oui | `"original_image"`<br>`"geometry"` |
 | `orientation` | `"align_image"` fait pivoter le modèle vers le point de vue des images d'entrée. Ignoré lorsque `model.texture` vaut `"none"` (par défaut : `"default"`). Paramètre avancé. | COMBO | Oui | `"default"`<br>`"align_image"` |
 | `texture_seed` | Graine pour les textures (par défaut : 42). Paramètre avancé. | INT | Oui | 0 à 2147483647 |
-| `auto_size` | Mettre le modèle à l'échelle de sa taille réelle en mètres via la transformation de sa scène (par défaut : False). Paramètre avancé. | BOOLEAN | Oui | True/False |
+| `auto_size` | Mettre le modèle à l'échelle de sa taille réelle en mètres via la transformation de sa scène. Ignoré lorsque `model.texture` vaut `"none"` (par défaut : False). Paramètre avancé. | BOOLEAN | Oui | True/False |
 | `export_uv` | Effectuer un dépliage UV du maillage lorsqu'il n'est pas texturé. Les maillages texturés sont toujours dépliés (par défaut : True). Paramètre avancé. | BOOLEAN | Oui | True/False |
 | `compress_geometry` | Appliquer la compression de géométrie meshopt : fichiers beaucoup plus petits, mais l'aperçu 3D de ComfyUI ne peut pas les afficher. Ignoré pour les maillages quadrilatéraux (par défaut : False). Paramètre avancé. | BOOLEAN | Oui | True/False |
 

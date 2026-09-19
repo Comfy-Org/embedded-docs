@@ -25,7 +25,7 @@ TextGenerate düğümü, kullanıcının istemine dayalı metin oluşturmak içi
 | --- | --- | --- | --- | --- |
 | `temperature` | Çıktının rastgeleliğini kontrol eder. Düşük değerler çıktıyı daha öngörülebilir, yüksek değerler daha yaratıcı yapar. Varsayılan değer 0.7'dir. | FLOAT | Evet | 0.01 - 2.0 |
 | `top_k` | Örnekleme havuzunu en olası sonraki K token ile sınırlar. 0 değeri bu filtreyi devre dışı bırakır. Varsayılan değer 64'tür. | INT | Evet | 0 - 1000 |
-| `top_p` | Çekirdek örnekleme kullanır; seçenekleri kümülatif olasılığı bu değerden düşük olan tokenlarla sınırlar. Varsayılan değer 0.95'tir. | FLOAT | Evet | 0.0 - 1.0 |
+| `top_p` | Çekirdek örnekleme kullanır: kümülatif olasılığı bu değere ulaşan en olası tokenların en küçük kümesini tutar. Varsayılan değer 0.95'tir. | FLOAT | Evet | 0.0 - 1.0 |
 | `min_p` | Tokenların dikkate alınması için minimum olasılık eşiği belirler. Varsayılan değer 0.05'tir. | FLOAT | Evet | 0.0 - 1.0 |
 | `repetition_penalty` | Tekrarı azaltmak için zaten oluşturulmuş tokenları cezalandırır. 1.0 değeri hiçbir ceza uygulamaz. Varsayılan değer 1.05'tir. | FLOAT | Evet | 0.0 - 5.0 |
 | `seed` | Yinelenebilir sonuçlar için rastgele sayı üretecini başlatmak üzere kullanılan sayı. Varsayılan değer 0'dır. | INT | Evet | 0 - 18446744073709551615 |

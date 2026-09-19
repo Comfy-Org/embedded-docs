@@ -26,7 +26,7 @@ Gera um modelo 3D low-poly com topologia limpa a partir de várias vistas do mes
 | `texture_alignment` | Fazer com que as cores correspondam às das imagens de entrada, ou ajustar as texturas à geometria gerada. Ignorado quando `model.texture` é `"none"` (padrão: `"original_image"`). Configuração avançada. | COMBO | Sim | `"original_image"`<br>`"geometry"` |
 | `orientation` | `"align_image"` rotaciona o modelo para o ponto de vista das imagens de entrada. Ignorado quando `model.texture` é `"none"` (padrão: `"default"`). Configuração avançada. | COMBO | Sim | `"default"`<br>`"align_image"` |
 | `texture_seed` | Semente para as texturas (padrão: 42). Configuração avançada. | INT | Sim | 0 a 2147483647 |
-| `auto_size` | Dimensiona o modelo para seu tamanho real em metros por meio da transformação de cena (padrão: False). Configuração avançada. | BOOLEAN | Sim | True/False |
+| `auto_size` | Dimensiona o modelo para seu tamanho real em metros por meio da transformação de cena. Ignorado quando `model.texture` é `"none"` (padrão: False). Configuração avançada. | BOOLEAN | Sim | True/False |
 | `export_uv` | Desdobra UV da malha quando ela não tem textura. Malhas texturizadas são sempre desdobradas (padrão: True). Configuração avançada. | BOOLEAN | Sim | True/False |
 | `compress_geometry` | Aplica compressão de geometria meshopt: arquivos muito menores, mas a pré-visualização 3D do ComfyUI não consegue exibi-los. Ignorado para malhas de quads (padrão: False). Configuração avançada. | BOOLEAN | Sim | True/False |
 

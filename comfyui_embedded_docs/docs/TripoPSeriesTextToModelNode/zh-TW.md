@@ -23,7 +23,7 @@
 | `model_seed` | 幾何的種子（預設：42）。 | INT | 是 | 0 到 2147483647 |
 | `image_seed` | Tripo 在建模前根據提示所生成影像的種子（預設：42）。進階設定。 | INT | 是 | 0 到 2147483647 |
 | `texture_seed` | 貼圖的種子（預設：42）。進階設定。 | INT | 是 | 0 到 2147483647 |
-| `auto_size` | 透過場景變換將模型縮放至以公尺為單位的實際尺寸（預設：False）。進階設定。 | BOOLEAN | 是 | True/False |
+| `auto_size` | 透過場景變換將模型縮放至以公尺為單位的實際尺寸，當 `model.texture` 為 `"none"` 時忽略（預設：False）。進階設定。 | BOOLEAN | 是 | True/False |
 | `export_uv` | 當網格無貼圖時，對其進行 UV 展開。有貼圖的網格一律會展開（預設：True）。進階設定。 | BOOLEAN | 是 | True/False |
 | `compress_geometry` | 套用 meshopt 幾何壓縮：檔案會小很多，但 ComfyUI 的 3D 預覽無法顯示它們。四邊形網格會忽略此設定（預設：False）。進階設定。 | BOOLEAN | 是 | True/False |
 

@@ -25,7 +25,7 @@ El nodo TextGenerateLTX2Prompt expande un prompt corto del usuario en una descri
 | --- | --- | --- | --- | --- |
 | `temperature` | Controla la aleatoriedad de la salida. Los valores más bajos hacen que la salida sea más predecible; los valores más altos, más creativa (predeterminado: 0.7). | FLOAT | Sí | 0.01 a 2.0 |
 | `top_k` | Limita el conjunto de muestreo a los K tokens siguientes más probables. Un valor de 0 deshabilita este filtro (predeterminado: 64). | INT | Sí | 0 a 1000 |
-| `top_p` | Usa muestreo de núcleo, limitando las opciones a los tokens cuya probabilidad acumulada sea menor que este valor (predeterminado: 0.95). | FLOAT | Sí | 0.0 a 1.0 |
+| `top_p` | Usa muestreo de núcleo: conserva el conjunto más pequeño de tokens más probables cuya probabilidad acumulada alcanza este valor. (predeterminado: 0.95) | FLOAT | Sí | 0.0 a 1.0 |
 | `min_p` | Establece un umbral de probabilidad mínimo para que los tokens se consideren (predeterminado: 0.05). | FLOAT | Sí | 0.0 a 1.0 |
 | `repetition_penalty` | Penaliza los tokens que ya se han generado para reducir la repetición. Un valor de 1.0 no aplica ninguna penalización (predeterminado: 1.05). | FLOAT | Sí | 0.0 a 5.0 |
 | `seed` | Un número usado para inicializar el generador de números aleatorios y obtener resultados reproducibles (predeterminado: 0). | INT | Sí | 0 a 18446744073709551615 |

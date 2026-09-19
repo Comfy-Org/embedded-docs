@@ -26,7 +26,7 @@ Genera un modelo 3D low-poly con topología limpia a partir de varias vistas del
 | `texture_alignment` | Hace coincidir los colores de las imágenes de entrada o ajusta las texturas a la geometría generada. Se ignora cuando `model.texture` es `"none"` (predeterminado: `"original_image"`). Ajuste avanzado. | COMBO | Sí | `"original_image"`<br>`"geometry"` |
 | `orientation` | `"align_image"` rota el modelo al punto de vista de las imágenes de entrada. Se ignora cuando `model.texture` es `"none"` (predeterminado: `"default"`). Ajuste avanzado. | COMBO | Sí | `"default"`<br>`"align_image"` |
 | `texture_seed` | Semilla para las texturas (predeterminado: 42). Ajuste avanzado. | INT | Sí | 0 a 2147483647 |
-| `auto_size` | Escala el modelo a su tamaño real en metros mediante su transformación de escena (predeterminado: False). Ajuste avanzado. | BOOLEAN | Sí | True/False |
+| `auto_size` | Escala el modelo a su tamaño real en metros mediante su transformación de escena. Se ignora cuando `model.texture` es `"none"` (predeterminado: False). Ajuste avanzado. | BOOLEAN | Sí | True/False |
 | `export_uv` | Despliega UV de la malla cuando no tiene textura. Las mallas texturizadas siempre se despliegan (predeterminado: True). Ajuste avanzado. | BOOLEAN | Sí | True/False |
 | `compress_geometry` | Aplica compresión de geometría meshopt: archivos mucho más pequeños, pero la vista previa 3D de ComfyUI no puede mostrarlos. Se ignora para mallas de cuadriláteros (predeterminado: False). Ajuste avanzado. | BOOLEAN | Sí | True/False |
 

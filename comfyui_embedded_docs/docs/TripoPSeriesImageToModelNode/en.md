@@ -24,7 +24,7 @@ Generates a low-poly 3D model with clean topology from a single image using Trip
 | `model.orientation` | `"align_image"` rotates the model to the viewpoint of the input image. Ignored when `model.texture` is `"none"` (default: `"default"`). Advanced setting. | COMBO | Yes | `"default"`<br>`"align_image"` |
 | `model.enable_image_autofix` | Let Tripo enhance a low-resolution or low-quality image before modeling (default: False). Advanced setting. | BOOLEAN | Yes | True/False |
 | `model.texture_seed` | Seed for the textures (default: 42). Advanced setting. | INT | Yes | 0 to 2147483647 |
-| `model.auto_size` | Scale the model to its real-world size in meters through its scene transform (default: False). Advanced setting. | BOOLEAN | Yes | True/False |
+| `model.auto_size` | Scale the model to its real-world size in meters through its scene transform. Ignored when `model.texture` is `"none"` (default: False). Advanced setting. | BOOLEAN | Yes | True/False |
 | `model.export_uv` | UV unwrap the mesh when it is untextured. Textured meshes are always unwrapped (default: True). Advanced setting. | BOOLEAN | Yes | True/False |
 | `model.compress_geometry` | Apply meshopt geometry compression: much smaller files, but ComfyUI's 3D preview cannot display them. Ignored for quad meshes (default: False). Advanced setting. | BOOLEAN | Yes | True/False |
 

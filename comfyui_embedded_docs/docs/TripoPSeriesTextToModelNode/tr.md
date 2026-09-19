@@ -23,7 +23,7 @@ Metinden bir istem kullanarak Tripo'nun P2 modeliyle temiz topolojiye sahip dü�
 | `model_seed` | Geometri için tohum (varsayılan: 42). | INT | Evet | 0 - 2147483647 |
 | `image_seed` | Modellemeden önce Tripo'nun istemden çizdiği görüntü için tohum (varsayılan: 42). Gelişmiş ayar. | INT | Evet | 0 - 2147483647 |
 | `texture_seed` | Dokular için tohum (varsayılan: 42). Gelişmiş ayar. | INT | Evet | 0 - 2147483647 |
-| `auto_size` | Modeli sahne dönüşümü aracılığıyla metre cinsinden gerçek dünya boyutuna ölçekler (varsayılan: False). Gelişmiş ayar. | BOOLEAN | Evet | True/False |
+| `auto_size` | Modeli sahne dönüşümü aracılığıyla metre cinsinden gerçek dünya boyutuna ölçekler. `model.texture` `"none"` olduğunda yok sayılır (varsayılan: False). Gelişmiş ayar. | BOOLEAN | Evet | True/False |
 | `export_uv` | Ağ dokusuz olduğunda UV açılımı uygular. Dokulu ağlara her zaman UV açılımı uygulanır (varsayılan: True). Gelişmiş ayar. | BOOLEAN | Evet | True/False |
 | `compress_geometry` | meshopt geometri sıkıştırması uygular: çok daha küçük dosyalar, ancak ComfyUI'nin 3B önizlemesi bunları görüntüleyemez. Quad ağlar için yok sayılır (varsayılan: False). Gelişmiş ayar. | BOOLEAN | Evet | True/False |
 

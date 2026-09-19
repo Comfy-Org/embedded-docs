@@ -26,7 +26,7 @@
 | `texture_alignment` | 匹配输入图像的颜色，或使纹理适配生成的几何体。当 `model.texture` 为 `"none"` 时忽略（默认：`"original_image"`）。高级设置。 | COMBO | 是 | `"original_image"`<br>`"geometry"` |
 | `orientation` | `"align_image"` 将模型旋转到输入图像的视角。当 `model.texture` 为 `"none"` 时忽略（默认：`"default"`）。高级设置。 | COMBO | 是 | `"default"`<br>`"align_image"` |
 | `texture_seed` | 纹理种子（默认：42）。高级设置。 | INT | 是 | 0 到 2147483647 |
-| `auto_size` | 通过其场景变换将模型缩放为其以米为单位的真实世界尺寸（默认：False）。高级设置。 | BOOLEAN | 是 | True/False |
+| `auto_size` | 通过其场景变换将模型缩放为其以米为单位的真实世界尺寸，当 `model.texture` 为 `"none"` 时忽略（默认：False）。高级设置。 | BOOLEAN | 是 | True/False |
 | `export_uv` | 当网格无纹理时对其进行 UV 展开。有纹理的网格始终会展开（默认：True）。高级设置。 | BOOLEAN | 是 | True/False |
 | `compress_geometry` | 应用 meshopt 几何压缩：文件小得多，但 ComfyUI 的 3D 预览无法显示它们。对四边形网格忽略（默认：False）。高级设置。 | BOOLEAN | 是 | True/False |
 

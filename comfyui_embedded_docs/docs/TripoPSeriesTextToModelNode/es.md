@@ -23,7 +23,7 @@ Genera un modelo 3D low-poly con topología limpia a partir de un prompt de text
 | `model_seed` | Semilla para la geometría (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
 | `image_seed` | Semilla para la imagen que Tripo dibuja a partir del prompt antes del modelado (predeterminado: 42). Ajuste avanzado. | INT | Sí | 0 a 2147483647 |
 | `texture_seed` | Semilla para las texturas (predeterminado: 42). Ajuste avanzado. | INT | Sí | 0 a 2147483647 |
-| `auto_size` | Escala el modelo a su tamaño real en metros mediante la transformación de su escena (predeterminado: False). Ajuste avanzado. | BOOLEAN | Sí | True/False |
+| `auto_size` | Escala el modelo a su tamaño real en metros mediante la transformación de su escena. Se ignora cuando `model.texture` es `"none"` (predeterminado: False). Ajuste avanzado. | BOOLEAN | Sí | True/False |
 | `export_uv` | Desenvuelve las coordenadas UV de la malla cuando no tiene textura. Las mallas con textura siempre se desenvuelven (predeterminado: True). Ajuste avanzado. | BOOLEAN | Sí | True/False |
 | `compress_geometry` | Aplica compresión de geometría meshopt: archivos mucho más pequeños, pero la vista previa 3D de ComfyUI no puede mostrarlos. Se ignora para mallas de cuadriláteros (predeterminado: False). Ajuste avanzado. | BOOLEAN | Sí | True/False |
 

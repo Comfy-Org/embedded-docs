@@ -25,7 +25,7 @@ Le nœud TextGenerate utilise un modèle CLIP pour créer du texte à partir du 
 | --- | --- | --- | --- | --- |
 | `temperature` | Contrôle le caractère aléatoire de la sortie. Des valeurs plus faibles rendent la sortie plus prévisible, des valeurs plus élevées la rendent plus créative. La valeur par défaut est 0.7. | FLOAT | Oui | 0.01 à 2.0 |
 | `top_k` | Limite le pool d'échantillonnage aux K tokens suivants les plus probables. Une valeur de 0 désactive ce filtre. La valeur par défaut est 64. | INT | Oui | 0 à 1000 |
-| `top_p` | Utilise l'échantillonnage par noyau (nucleus sampling), limitant les choix aux tokens dont la probabilité cumulée est inférieure à cette valeur. La valeur par défaut est 0.95. | FLOAT | Oui | 0.0 à 1.0 |
+| `top_p` | Utilise l'échantillonnage par noyau (nucleus sampling) : conserve le plus petit ensemble de jetons les plus probables dont la probabilité cumulée atteint cette valeur. La valeur par défaut est 0.95. | FLOAT | Oui | 0.0 à 1.0 |
 | `min_p` | Définit un seuil de probabilité minimal pour que les tokens soient pris en compte. La valeur par défaut est 0.05. | FLOAT | Oui | 0.0 à 1.0 |
 | `repetition_penalty` | Pénalise les tokens déjà générés afin de réduire les répétitions. Une valeur de 1.0 n'applique aucune pénalité. La valeur par défaut est 1.05. | FLOAT | Oui | 0.0 à 5.0 |
 | `seed` | Un nombre utilisé pour initialiser le générateur de nombres aléatoires afin d'obtenir des résultats reproductibles. La valeur par défaut est 0. | INT | Oui | 0 à 18446744073709551615 |

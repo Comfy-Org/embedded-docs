@@ -26,7 +26,7 @@ Generates a low-poly 3D model with clean topology from several views of the same
 | `model.texture_alignment` | Match the colors of the input images, or fit the textures to the generated geometry. Ignored when `model.texture` is `"none"` (default: `"original_image"`). Advanced setting. | COMBO | Yes | `"original_image"`<br>`"geometry"` |
 | `model.orientation` | `"align_image"` rotates the model to the viewpoint of the input images. Ignored when `model.texture` is `"none"` (default: `"default"`). Advanced setting. | COMBO | Yes | `"default"`<br>`"align_image"` |
 | `model.texture_seed` | Seed for the textures (default: 42). Advanced setting. | INT | Yes | 0 to 2147483647 |
-| `model.auto_size` | Scale the model to its real-world size in meters through its scene transform (default: False). Advanced setting. | BOOLEAN | Yes | True/False |
+| `model.auto_size` | Scale the model to its real-world size in meters through its scene transform. Ignored when `model.texture` is `"none"` (default: False). Advanced setting. | BOOLEAN | Yes | True/False |
 | `model.export_uv` | UV unwrap the mesh when it is untextured. Textured meshes are always unwrapped (default: True). Advanced setting. | BOOLEAN | Yes | True/False |
 | `model.compress_geometry` | Apply meshopt geometry compression: much smaller files, but ComfyUI's 3D preview cannot display them. Ignored for quad meshes (default: False). Advanced setting. | BOOLEAN | Yes | True/False |
 

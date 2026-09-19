@@ -24,7 +24,7 @@ Génère un modèle 3D low-poly avec une topologie propre à partir d'une seule 
 | `orientation` | `"align_image"` fait pivoter le modèle selon le point de vue de l'image d'entrée. Ignoré lorsque `model.texture` est `"none"` (par défaut : `"default"`). Paramètre avancé. | COMBO | Oui | `"default"`<br>`"align_image"` |
 | `enable_image_autofix` | Laisse Tripo améliorer une image de faible résolution ou de faible qualité avant la modélisation (par défaut : False). Paramètre avancé. | BOOLEAN | Oui | True/False |
 | `texture_seed` | Graine pour les textures (par défaut : 42). Paramètre avancé. | INT | Oui | 0 à 2147483647 |
-| `auto_size` | Redimensionne le modèle à sa taille réelle en mètres via sa transformation de scène (par défaut : False). Paramètre avancé. | BOOLEAN | Oui | True/False |
+| `auto_size` | Redimensionne le modèle à sa taille réelle en mètres via sa transformation de scène. Ignoré lorsque `model.texture` est `"none"` (par défaut : False). Paramètre avancé. | BOOLEAN | Oui | True/False |
 | `export_uv` | Déplie les UV du maillage lorsqu'il n'est pas texturé. Les maillages texturés sont toujours dépliés (par défaut : True). Paramètre avancé. | BOOLEAN | Oui | True/False |
 | `compress_geometry` | Applique la compression de géométrie meshopt : des fichiers beaucoup plus petits, mais l'aperçu 3D de ComfyUI ne peut pas les afficher. Ignoré pour les maillages quadrangulaires (par défaut : False). Paramètre avancé. | BOOLEAN | Oui | True/False |
 

@@ -17,7 +17,7 @@ O nó TextGenerate usa um modelo CLIP para criar texto com base no prompt do usu
 | `comprimento_máximo` | O número máximo de tokens que o modelo gerará. O valor padrão é 512. | INT | Sim | 1 a 32768 |
 | `pensando` | Opera em modo de pensamento se o modelo oferecer suporte a isso. O valor padrão é False. | BOOLEAN | Não | True or False |
 | `use_default_template` | Usa o prompt de sistema/template integrado se o modelo tiver um. O valor padrão é True. Este é um parâmetro avançado. | BOOLEAN | Não | True or False |
-| `mtp` | Decodificação especulativa com o cabeçalho de previsão multítoken do checkpoint. Não tem efeito sem pesos MTP. `"auto"` adapta a profundidade do rascunho; `"2"` a `"5"` fixam-na. A saída amostrada permanece corretamente distribuída, mas difere da saída sem MTP para a mesma seed (padrão: `"auto"`). | COMBO | Não | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
+| `mtp` | Decodificação especulativa com o cabeça de previsão multítoken do checkpoint. Não tem efeito sem pesos MTP. `"auto"` adapta a profundidade do rascunho; `"2"` a `"5"` fixam-na. A saída amostrada permanece corretamente distribuída, mas difere da saída sem MTP para a mesma seed (padrão: `"auto"`). | COMBO | Não | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
 
 ### Parâmetros de amostragem (quando `sampling_mode` está definido como "on")
 
@@ -25,7 +25,7 @@ O nó TextGenerate usa um modelo CLIP para criar texto com base no prompt do usu
 | --- | --- | --- | --- | --- |
 | `temperature` | Controla a aleatoriedade da saída. Valores menores tornam a saída mais previsível; valores maiores a tornam mais criativa. O valor padrão é 0.7. | FLOAT | Sim | 0.01 a 2.0 |
 | `top_k` | Limita o conjunto de amostragem aos K tokens mais prováveis a seguir. Um valor de 0 desativa este filtro. O valor padrão é 64. | INT | Sim | 0 a 1000 |
-| `top_p` | Usa amostragem por núcleo, limitando as escolhas a tokens cuja probabilidade acumulada seja menor que este valor. O valor padrão é 0.95. | FLOAT | Sim | 0.0 a 1.0 |
+| `top_p` | Usa amostragem por núcleo: mantém o menor conjunto de tokens mais prováveis cuja probabilidade acumulada atinge este valor. O valor padrão é 0.95. | FLOAT | Sim | 0.0 a 1.0 |
 | `min_p` | Define um limiar mínimo de probabilidade para que os tokens sejam considerados. O valor padrão é 0.05. | FLOAT | Sim | 0.0 a 1.0 |
 | `repetition_penalty` | Penaliza tokens que já foram gerados para reduzir repetições. Um valor de 1.0 não aplica penalidade. O valor padrão é 1.05. | FLOAT | Sim | 0.0 a 5.0 |
 | `seed` | Um número usado para inicializar o gerador de números aleatórios para resultados reproduzíveis. O valor padrão é 0. | INT | Sim | 0 a 18446744073709551615 |

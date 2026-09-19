@@ -26,7 +26,7 @@
 | `texture_alignment` | 입력 이미지의 색상과 일치시키거나 생성된 지오메트리에 텍스처를 맞춥니다. `model.texture`가 `"none"`일 때는 무시됩니다(기본값: `"original_image"`). 고급 설정입니다. | COMBO | 예 | `"original_image"`<br>`"geometry"` |
 | `방향` | `"align_image"`는 입력 이미지의 시점에 맞게 모델을 회전합니다. `model.texture`가 `"none"`일 때는 무시됩니다(기본값: `"default"`). 고급 설정입니다. | COMBO | 예 | `"default"`<br>`"align_image"` |
 | `texture_seed` | 텍스처용 시드입니다(기본값: 42). 고급 설정입니다. | INT | 예 | 0~2147483647 |
-| `auto_size` | 씬 변환을 통해 모델을 실제 크기(미터)로 조정합니다(기본값: False). 고급 설정입니다. | BOOLEAN | 예 | True/False |
+| `auto_size` | 씬 변환을 통해 모델을 실제 크기(미터)로 조정합니다. `model.texture`가 `"none"`일 때는 무시됩니다 (기본값: False). 고급 설정입니다. | BOOLEAN | 예 | True/False |
 | `export_uv` | 메시에 텍스처가 없을 때 UV 언랩합니다. 텍스처가 있는 메시는 항상 언랩됩니다(기본값: True). 고급 설정입니다. | BOOLEAN | 예 | True/False |
 | `compress_geometry` | meshopt 지오메트리 압축을 적용합니다. 파일 크기가 훨씬 작아지지만 ComfyUI의 3D 미리보기에서는 표시할 수 없습니다. 쿼드 메시에는 무시됩니다(기본값: False). 고급 설정입니다. | BOOLEAN | 예 | True/False |
 

@@ -23,7 +23,7 @@ Tripo의 P2 모델을 사용하여 텍스트 프롬프트로부터 깔끔한 토
 | `model_seed` | 지오메트리용 시드입니다(기본값: 42). | INT | 예 | 0~2147483647 |
 | `image_seed` | 모델링 전에 Tripo가 프롬프트로부터 생성하는 이미지용 시드입니다(기본값: 42). 고급 설정입니다. | INT | 예 | 0~2147483647 |
 | `texture_seed` | 텍스처용 시드입니다(기본값: 42). 고급 설정입니다. | INT | 예 | 0~2147483647 |
-| `auto_size` | 씬 변환을 통해 모델을 실제 크기(미터)로 조정합니다(기본값: False). 고급 설정입니다. | BOOLEAN | 예 | True/False |
+| `auto_size` | 씬 변환을 통해 모델을 실제 크기(미터)로 조정합니다. `model.texture`가 `"none"`일 때는 무시됩니다 (기본값: False). 고급 설정입니다. | BOOLEAN | 예 | True/False |
 | `export_uv` | 텍스처가 없는 메시의 경우 UV 언랩을 수행합니다. 텍스처가 있는 메시는 항상 언랩됩니다(기본값: True). 고급 설정입니다. | BOOLEAN | 예 | True/False |
 | `compress_geometry` | meshopt 지오메트리 압축을 적용합니다. 파일 크기가 훨씬 작아지지만 ComfyUI의 3D 미리보기에서는 표시할 수 없습니다. 쿼드 메시에는 무시됩니다(기본값: False). 고급 설정입니다. | BOOLEAN | 예 | True/False |
 
