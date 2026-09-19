@@ -1,35 +1,52 @@
 # TextGenerateLTX2Prompt
 
-El nodo TextGenerateLTX2Prompt expande un prompt breve del usuario a una descripción audiovisual detallada, adecuada para generar video con la serie LTX-2 de modelos de video. Agrega automáticamente instrucciones de sistema específicas de la tarea, envía el prompt formateado a un modelo de lenguaje y devuelve el texto mejorado. Cuando se proporciona una imagen de referencia opcional, el nodo cambia al modo imagen a video y expande el prompt a partir del contenido de esa imagen.
+El nodo TextGenerateLTX2Prompt expande un prompt corto del usuario en una descripción audiovisual detallada adecuada para generar video con la serie de modelos de video LTX-2. Agrega automáticamente instrucciones de sistema específicas de la tarea, envía el prompt formateado a un modelo de lenguaje y devuelve el texto mejorado. Cuando se proporciona una imagen de referencia opcional, el nodo cambia al modo imagen a video y expande el prompt a partir del contenido de esa imagen.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+### Entradas comunes
+
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `clip` | El modelo CLIP utilizado para la codificación de texto. El nodo comprueba el nombre del tokenizador del modelo para seleccionar las instrucciones correspondientes: los modelos basados en Gemma 4 usan el formato LTX-2.4, mientras que los demás modelos usan el formato LTX-2 (Gemma 3). | CLIP | Sí |  |
-| `mensaje` | La entrada de texto sin procesar que describe la escena o el concepto que se expandirá en un prompt detallado para generación de video. | STRING | Sí |  |
-| `longitud_máxima` | El número máximo de tokens que el modelo de lenguaje puede generar. | INT | Sí |  |
-| `modo_de_muestreo` | La estrategia de muestreo utilizada para seleccionar el siguiente token durante la generación de texto. | COMBO | Sí | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` |
-| `imagen` | Una imagen de entrada opcional utilizada como primer fotograma del video. Cuando se proporciona, el nodo cambia al modo imagen a video y usa un prompt de sistema que expande el prompt del usuario a partir del contenido de la imagen. | IMAGE | No |  |
-| `pensando` | Cuando está habilitado, se indica al modelo que razone antes de responder. Cualquier bloque de razonamiento se elimina de la salida devuelta (predeterminado: False). | BOOLEAN | No |  |
-| `use_default_template` | Cuando está habilitado, el nodo usa la plantilla de chat predeterminada para el formateo (predeterminado: True). | BOOLEAN | No |  |
-| `video` | Una entrada de video opcional que se puede usar como contexto adicional para la generación. | VIDEO | No |  |
-| `audio` | Una entrada de audio opcional que se puede usar como contexto adicional para la generación. | AUDIO | No |  |
+| `clip` | El modelo CLIP utilizado para la codificación de texto. El nodo verifica el nombre del tokenizador del modelo para seleccionar las instrucciones correspondientes: los modelos basados en Gemma 4 usan el formato LTX-2.4, mientras que otros modelos usan el formato LTX-2 (Gemma 3). | CLIP | Sí | - |
+| `mensaje` | El texto de entrada sin procesar que describe la escena o el concepto que se expandirá en un prompt detallado para la generación de video. | STRING | Sí | - |
+| `imagen` | Una imagen de entrada opcional que se usa como primer fotograma del video. Cuando se proporciona, el nodo cambia al modo imagen a video y usa un prompt de sistema que expande el prompt del usuario según el contenido de la imagen. | IMAGE | No | - |
+| `video` | Una entrada de video opcional que se usa como contexto adicional. Se pasa al modelo de lenguaje como un lote de imágenes; se asume que está a 24 FPS y se somete a submuestreo a 1 FPS internamente. | IMAGE | No | - |
+| `audio` | Una entrada de audio opcional que se puede usar como contexto adicional para la generación. | AUDIO | No | - |
+| `longitud_máxima` | El número máximo de tokens que el modelo de lenguaje puede generar (predeterminado: 512). | INT | Sí | 1 a 32768 |
+| `modo_de_muestreo` | Controla si se usa muestreo aleatorio durante la generación de texto. Cuando se establece en `"on"`, los parámetros de muestreo a continuación quedan disponibles; con `"off"`, el nodo genera texto sin muestreo aleatorio. | DYNAMIC_COMBO | Sí | `"on"`<br>`"off"` |
+| `pensando` | Cuando está habilitado, se le indica al modelo que razone antes de responder. Cualquier bloque de razonamiento se elimina de la salida devuelta (predeterminado: False). | BOOLEAN | No | True/False |
+| `use_default_template` | Cuando está habilitado, el nodo usa la plantilla de chat predeterminada para el formato (predeterminado: True). Configuración avanzada. | BOOLEAN | No | True/False |
+| `mtp` | Decodificación especulativa con la cabeza de predicción de múltiples tokens del checkpoint. No tiene efecto sin los pesos MTP. `"auto"` adapta la profundidad del borrador; `"2"` a `"5"` la fijan. La salida muestreada permanece correctamente distribuida, pero difiere de la salida sin MTP para la misma semilla (predeterminado: `"auto"`). | COMBO | No | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
+
+### Parámetros de muestreo (cuando `sampling_mode` es "on")
+
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `temperature` | Controla la aleatoriedad de la salida. Los valores más bajos hacen que la salida sea más predecible; los valores más altos, más creativa (predeterminado: 0.7). | FLOAT | Sí | 0.01 a 2.0 |
+| `top_k` | Limita el conjunto de muestreo a los K tokens siguientes más probables. Un valor de 0 deshabilita este filtro (predeterminado: 64). | INT | Sí | 0 a 1000 |
+| `top_p` | Usa muestreo de núcleo, limitando las opciones a los tokens cuya probabilidad acumulada sea menor que este valor (predeterminado: 0.95). | FLOAT | Sí | 0.0 a 1.0 |
+| `min_p` | Establece un umbral de probabilidad mínimo para que los tokens se consideren (predeterminado: 0.05). | FLOAT | Sí | 0.0 a 1.0 |
+| `repetition_penalty` | Penaliza los tokens que ya se han generado para reducir la repetición. Un valor de 1.0 no aplica ninguna penalización (predeterminado: 1.05). | FLOAT | Sí | 0.0 a 5.0 |
+| `seed` | Un número usado para inicializar el generador de números aleatorios y obtener resultados reproducibles (predeterminado: 0). | INT | Sí | 0 a 18446744073709551615 |
+| `presence_penalty` | Penaliza los tokens nuevos según si ya aparecieron en el texto hasta el momento, lo que incentiva al modelo a hablar de temas nuevos (predeterminado: 0.0). | FLOAT | No | 0.0 a 5.0 |
+
+**Nota:** Los parámetros de muestreo anteriores solo están activos y visibles en la interfaz del nodo cuando `sampling_mode` se establece en "on". Cuando se establece en "off", no hay parámetros de muestreo disponibles y el nodo genera texto sin muestreo aleatorio.
 
 **Nota:** El comportamiento del nodo cambia según sus entradas:
 
-- Si se proporciona una `image`, el prompt generado se formatea para una tarea de imagen a video usando un prompt de sistema que describe cómo expandir el prompt a partir del contenido de la imagen. Si no se proporciona una imagen, el formato es para una tarea de texto a video usando un prompt de sistema que expande el prompt en una descripción detallada para generación de video.
-- Si el nombre del tokenizador de CLIP contiene "gemma4", el nodo usa los prompts de sistema de LTX-2.4 y el formato de chat de Gemma 4. De lo contrario, usa los prompts de sistema y el formato de chat de LTX-2 (Gemma 3).
-- Cuando `thinking` está habilitado con un modelo Gemma 4, el modelo se abre en su canal de razonamiento; cuando está deshabilitado, el modelo se abre directamente en el canal de respuesta final. Para los modelos que no son Gemma 4, `thinking` se pasa al paso de generación subyacente.
+- Si se proporciona una `image`, el prompt generado se formatea para una tarea de imagen a video usando un prompt de sistema que describe cómo expandir el prompt según el contenido de la imagen. Si no se proporciona una imagen, el formato es para una tarea de texto a video usando un prompt de sistema que expande el prompt en una descripción detallada para la generación de video.
+- Si el nombre del tokenizador de CLIP contiene "gemma4", el nodo usa los prompts de sistema de LTX-2.4 y el formato de chat de Gemma 4. De lo contrario, usa los prompts de sistema de LTX-2 (Gemma 3) y el formato de chat.
+- Cuando `thinking` está habilitado con un modelo Gemma 4, el modelo se abre en su canal de razonamiento; cuando está deshabilitado, el modelo se abre directamente en el canal de respuesta final. Para modelos que no son Gemma 4, `thinking` se pasa al paso de generación subyacente.
 - Si el modelo de lenguaje no produce texto utilizable después de eliminar los bloques de razonamiento, el nodo devuelve el `prompt` original en su lugar.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de datos |
+| Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `output` | El prompt mejorado para generación de video producido por el modelo de lenguaje, con cualquier bloque de razonamiento eliminado. Si el resultado está vacío, se devuelve el prompt original del usuario. | STRING |
+| `generated_text` | El prompt de generación de video mejorado producido por el modelo de lenguaje, con cualquier bloque de razonamiento eliminado. Si el resultado está vacío, se devuelve el prompt original del usuario. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerateLTX2Prompt/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `8f524ea60a247217dde8a1edaf7a689e253ae05acc9eb52ad47b91e879dba1df`
+**Source fingerprint (SHA-256):** `1da4a388b7c358e5649b4746b9b8d288977ec6fbed3eedc4c8709187c9f7b943`
