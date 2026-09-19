@@ -32,7 +32,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from lib.doc_disclaimer import compose_document, create_en_disclaimer, strip_ai_disclaimer
+from lib.doc_disclaimer import (
+    compose_document,
+    create_en_disclaimer,
+    strip_ai_disclaimer,
+)
 from lib.doc_title import ensure_doc_title, strip_leading_h1
 from lib.hash_footer import (
     format_source_hash_footer,
@@ -60,16 +64,19 @@ def has_outer_fence(body: str) -> bool:
     """True when a fence wraps the whole body (any info string: ```, ```md, ```markdown).
 
     Inner fenced blocks are legitimate body content and are allowed; only a
-    wrapper around the entire body is rejected.
+    wrapper around the entire body is rejected. Per CommonMark the closing fence
+    must use the same marker character, be at least as long as the opener, and
+    carry nothing but spaces or tabs after it.
     """
     lines = [l for l in body.splitlines() if l.strip()]
     if len(lines) < 2:
         return False
-    first, last = lines[0].strip(), lines[-1].strip()
-    opens = FENCE_LINE_RE.match(lines[0]) is not None
-    closes = FENCE_LINE_RE.match(lines[-1]) is not None and last in ("```", "~~~") \
-        or last.startswith("```") or last.startswith("~~~")
-    return opens and closes
+    opener = FENCE_LINE_RE.match(lines[0])
+    if opener is None:
+        return False
+    marker = opener.group(1)
+    closer = re.fullmatch(rf"[ \t]{{0,3}}{re.escape(marker[0])}{{{len(marker)},}}[ \t]*", lines[-1])
+    return closer is not None
 
 
 def validate(body: str, node_name: str) -> list[str]:
@@ -123,7 +130,7 @@ def validate(body: str, node_name: str) -> list[str]:
     if output_rows == 0:
         problems.append("no output rows found")
 
-    h1s = re.findall(r"^# .+", body, re.M)
+    h1s = re.findall(r"^# .+", body, re.MULTILINE)
     if h1s:
         problems.append(
             f"{len(h1s)} H1 heading(s) in body (the script injects the title; "
