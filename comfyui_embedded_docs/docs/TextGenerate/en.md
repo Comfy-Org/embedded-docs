@@ -17,6 +17,7 @@ The TextGenerate node uses a CLIP model to create text based on a user's prompt.
 | `max_length` | The maximum number of tokens the model will generate. The default value is 512. | INT | Yes | 1 to 32768 |
 | `thinking` | Operate in thinking mode if the model supports it. The default value is False. | BOOLEAN | No | True or False |
 | `use_default_template` | Use the built in system prompt/template if the model has one. The default value is True. This is an advanced parameter. | BOOLEAN | No | True or False |
+| `mtp` | Speculative decoding with the checkpoint's multi-token-prediction head. Has no effect without MTP weights. `"auto"` adapts the draft depth, `"2"` to `"5"` pin it. Sampled output stays correctly distributed but differs from non-MTP output for the same seed (default: `"auto"`). | COMBO | No | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
 
 ### Sampling Parameters (when `sampling_mode` is "on")
 
@@ -41,4 +42,4 @@ The TextGenerate node uses a CLIP model to create text based on a user's prompt.
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `6274a2db7c9a963304daf6df494b2b20879155e918d73429fd2ce7f3b5b9da02`
+**Source fingerprint (SHA-256):** `7d9f6aee19e076aa0afb4d57060b09474206ecf2492c0944762965fabac92c51`

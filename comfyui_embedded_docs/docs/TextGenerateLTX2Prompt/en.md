@@ -15,6 +15,7 @@ The TextGenerateLTX2Prompt node expands a short user prompt into a detailed, aud
 | `use_default_template` | When enabled, the node uses the default chat template for formatting (default: True). | BOOLEAN | No |  |
 | `video` | An optional video input that can be used as additional context for generation. | VIDEO | No |  |
 | `audio` | An optional audio input that can be used as additional context for generation. | AUDIO | No |  |
+| `mtp` | Speculative decoding with the checkpoint's multi-token-prediction head. Has no effect without MTP weights. `"auto"` adapts the draft depth, `"2"` to `"5"` pin it. Sampled output stays correctly distributed but differs from non-MTP output for the same seed (default: `"auto"`). | COMBO | No | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
 
 **Note:** The behavior of the node changes based on its inputs:
 
@@ -32,4 +33,4 @@ The TextGenerateLTX2Prompt node expands a short user prompt into a detailed, aud
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerateLTX2Prompt/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `8f524ea60a247217dde8a1edaf7a689e253ae05acc9eb52ad47b91e879dba1df`
+**Source fingerprint (SHA-256):** `1da4a388b7c358e5649b4746b9b8d288977ec6fbed3eedc4c8709187c9f7b943`
