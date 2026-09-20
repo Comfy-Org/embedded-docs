@@ -16,7 +16,7 @@ Le nœud Meshy: Text to Model utilise l'API Meshy pour générer un modèle 3D �
 | `mode_pose` | Spécifie le mode de pose du modèle généré. Une chaîne vide signifie qu'aucune pose spécifique n'est demandée. Il s'agit d'un paramètre avancé. | COMBO | Oui | `""`<br>`"A-pose"`<br>`"T-pose"` |
 | `graine` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. La valeur par défaut est 0. | INT | Oui | 0 - 2147483647 |
 | `ultra_mode` | Exécute une passe de raffinement supplémentaire pour une géométrie de plus haute fidélité avec des détails de surface plus fins. La valeur par défaut est false. | BOOLEAN | Oui | true<br>false |
-| `ultra_resolution` | Résolution de la passe ultra : `"2k"` l'exécute en 2048³, `"4k"` en 4096³ pour le détail de surface le plus fin. `"4k"` nécessite le modèle `"meshy-7.1"` ou `"latest"`. Utilisé uniquement lorsque `ultra_mode` est activé (par défaut : `"2k"`). | COMBO | Non | `"2k"`<br>`"4k"` |
+| `ultra_resolution` | Résolution de la passe ultra : `"2k"` l'exécute en 2048³, `"4k"` en 4096³ pour le détail de surface le plus fin. `"4k"` nécessite le modèle `"meshy-7.1"` ou `"latest"`. Utilisée uniquement lorsque `ultra_mode` est activé (par défaut : `"2k"`). | COMBO | Non | `"2k"`<br>`"4k"` |
 
 *Remarque : Les paramètres `topology` et `target_polycount` sont disponibles conditionnellement. Ils n'apparaissent que lorsque le paramètre `should_remesh` est défini sur "true".
 

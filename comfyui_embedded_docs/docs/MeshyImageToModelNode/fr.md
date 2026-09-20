@@ -20,7 +20,7 @@ Le nœud Meshy: Image to Model utilise l'API Meshy pour générer un modèle 3D 
 | `pose_mode` | Spécifie le mode de pose du modèle généré. Il s'agit d'un paramètre avancé. | COMBO | Oui | `""` (vide)<br>`"A-pose"`<br>`"T-pose"` |
 | `seed` | La graine détermine si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine. Défaut : 0. | INT | Oui | 0 - 2147483647 |
 | `ultra_mode` | Exécute une passe de raffinement supplémentaire pour une géométrie plus fidèle avec des détails de surface plus fins. Défaut : `False`. | BOOLEAN | Oui | - |
-| `ultra_resolution` | Résolution de la passe ultra : `"2k"` l'exécute en 2048³, `"4k"` en 4096³ pour le détail de surface le plus fin. `"4k"` nécessite le modèle `"meshy-7.1"` ou `"latest"`. Utilisé uniquement lorsque `ultra_mode` est activé (par défaut : `"2k"`). | COMBO | Non | `"2k"`<br>`"4k"` |
+| `ultra_resolution` | Résolution de la passe ultra : `"2k"` l'exécute en 2048³, `"4k"` en 4096³ pour le détail de surface le plus fin. `"4k"` nécessite le modèle `"meshy-7.1"` ou `"latest"`. Utilisée uniquement lorsque `ultra_mode` est activé (par défaut : `"2k"`). | COMBO | Non | `"2k"`<br>`"4k"` |
 
 **Remarque concernant les contraintes des paramètres :**
 
