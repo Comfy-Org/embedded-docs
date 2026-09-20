@@ -19,9 +19,9 @@ El latente vacío de salida se dimensiona según la primera imagen de referencia
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `positivo` | Condicionamiento codificado para el prompt, que transporta los latentes de referencia cuando se conecta un VAE. | CONDITIONING |
-| `negativo` | Condicionamiento codificado para el prompt negativo, con los mismos latentes de referencia. | CONDITIONING |
-| `latente` | Latente vacío con el tamaño de la primera imagen de referencia, o 1024 x 1024 cuando no se conecta ninguna imagen de referencia. | LATENT |
+| `positive` | Condicionamiento codificado para el prompt, que transporta los latentes de referencia cuando se conecta un VAE. | CONDITIONING |
+| `negative` | Condicionamiento codificado para el prompt negativo, con los mismos latentes de referencia. | CONDITIONING |
+| `latent` | Latente vacío con el tamaño de la primera imagen de referencia, o 1024 x 1024 cuando no se conecta ninguna imagen de referencia. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeQwenImage21/es.md)
 
