@@ -8,12 +8,13 @@ Este nodo utiliza la API de Meshy para generar un modelo 3D a partir de múltipl
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | Especifica la versión del modelo de IA a utilizar. | COMBO | Sí | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `modelo` | Especifica la versión del modelo de IA a utilizar. | COMBO | Sí | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `remallar` | Determina si la malla generada se procesa. Cuando se establece en `"false"`, el nodo devuelve una malla triangular sin procesar. Cuando se establece en `"true"`, se muestran los ajustes de remallado siguientes. | DYNAMIC_COMBO | Sí | `"true"`<br>`"false"` |
 | `modo de simetría` | Controla si se aplica simetría al modelo generado. | COMBO | Sí | `"auto"`<br>`"on"`<br>`"off"` |
 | `texturizar` | Determina si se generan texturas. Establecerlo en `"false"` omite la fase de texturizado y devuelve una malla sin texturas. Cuando se establece en `"true"`, se muestran los ajustes de texturizado siguientes. | DYNAMIC_COMBO | Sí | `"true"`<br>`"false"` |
 | `modo de pose` | Especifica el modo de pose para el modelo generado. | COMBO | Sí | `""` (vacío)<br>`"A-pose"`<br>`"T-pose"` |
 | `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. (predeterminado: 0) | INT | Sí | 0 a 2147483647 |
+| `ultra_mode` | Ejecuta una pasada de refinamiento adicional a 2048³ para obtener una geometría de mayor fidelidad con un detalle de superficie más fino. Requiere el modelo `"meshy-7.1"`, `"meshy-7"` o `"latest"` (predeterminado: `False`). | BOOLEAN | No | `True`<br>`False` |
 
 ### Configuración de remallado (visible cuando `should_remesh` es `"true"`)
 
@@ -44,6 +45,7 @@ Este nodo utiliza la API de Meshy para generar un modelo 3D a partir de múltipl
 * Los parámetros `enable_pbr`, `texture_prompt`, `texture_image` y `texture_resolution` solo están activos cuando `should_texture` está establecido en `"true"`.
 * `texture_prompt` y `texture_image` son mutuamente excluyentes; no se pueden usar ambos al mismo tiempo. `texture_prompt` está limitado a 600 caracteres.
 * El valor de `seed` no hace que los resultados sean deterministas; cambiarlo simplemente hace que el nodo vuelva a ejecutar la tarea de generación.
+* `ultra_mode` requiere el modelo `"meshy-7.1"`, `"meshy-7"` o `"latest"`; cualquier otro modelo lanza un error.
 
 ## Salidas
 
@@ -57,4 +59,4 @@ Este nodo utiliza la API de Meshy para generar un modelo 3D a partir de múltipl
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyMultiImageToModelNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `a8b2fc23ef8a8a4af097489c15beb3e0ed205dfdc8309afc95207d7a5616d37a`
+**Source fingerprint (SHA-256):** `9475279c0990fc069b4fef2bf0e2e20218ca1a9591a261ce6d33a2b651782ddb`

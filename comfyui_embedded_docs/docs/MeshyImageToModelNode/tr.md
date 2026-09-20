@@ -6,7 +6,7 @@ Meshy: Image to Model düğümü, tek bir girdi görüntüsünden 3D model oluş
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Üretim için kullanılacak AI model sürümünü belirtir. | COMBO | Evet | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `model` | Üretim için kullanılacak AI model sürümünü belirtir. | COMBO | Evet | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `image` | 3D modele dönüştürülecek girdi görüntüsü. | IMAGE | Evet | - |
 | `should_remesh` | `"false"` olarak ayarlandığında, işlenmemiş üçgen bir ağ döndürür. | DYNAMIC_COMBO | Evet | `"true"`<br>`"false"` |
 | `topology` | Yeniden ağ oluşturulmuş model için hedef çokgen topolojisi. Bu girdi yalnızca `should_remesh` `"true"` olarak ayarlandığında kullanılabilir. | COMBO | Hayır* | `"triangle"`<br>`"quad"` |
@@ -20,6 +20,7 @@ Meshy: Image to Model düğümü, tek bir girdi görüntüsünden 3D model oluş
 | `pose_mode` | Oluşturulan model için poz modunu belirtin. Bu gelişmiş bir parametredir. | COMBO | Evet | `""` (boş)<br>`"A-pose"`<br>`"T-pose"` |
 | `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan: 0. | INT | Evet | 0 - 2147483647 |
 | `ultra_mode` | Daha ince yüzey detayıyla daha yüksek doğrulukta geometri için ek bir iyileştirme geçişi çalıştırın. Varsayılan: `False`. | BOOLEAN | Evet | - |
+| `ultra_resolution` | Ultra geçişinin çözünürlüğü: `"2k"` bunu 2048³'te, `"4k"` ise en ince yüzey ayrıntısı için 4096³'te çalıştırır. `"4k"` için `"meshy-7.1"` veya `"latest"` modeli gerekir. Yalnızca `ultra_mode` etkinleştirildiğinde kullanılır (varsayılan: `"2k"`). | COMBO | Hayır | `"2k"`<br>`"4k"` |
 
 **Parametre Kısıtlamaları Hakkında Not:**
 
@@ -27,7 +28,7 @@ Meshy: Image to Model düğümü, tek bir girdi görüntüsünden 3D model oluş
 * `enable_pbr`, `texture_prompt`, `texture_image` ve `texture_resolution` girdileri yalnızca `should_texture` `"true"` olarak ayarlandığında kullanılabilir.
 * `should_texture` `"true"` olarak ayarlandığında, `texture_prompt` ve `texture_image` aynı anda kullanılamaz. Her ikisi de sağlanırsa düğüm bir hata verir.
 * `texture_prompt` maksimum 600 karakter uzunluğundadır.
-* `ultra_mode`, `"meshy-7"` veya `"latest"` modelini gerektirir. `ultra_mode` `"meshy-6"` modeliyle etkinleştirilirse düğüm bir hata verir.
+* `ultra_mode` etkinleştirildiğinde, `model` parametresi `"meshy-7.1"`, `"meshy-7"` veya `"latest"` olarak ayarlanmalıdır; başka bir model seçilirse hata verilir. `"meshy-7"` ile ultra geçiş her zaman 2048³'te çalışır ve `"4k"` ultra çözünürlüğü `"meshy-7.1"` veya `"latest"` gerektirir.
 
 ## Çıktılar
 
@@ -41,4 +42,4 @@ Meshy: Image to Model düğümü, tek bir girdi görüntüsünden 3D model oluş
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `689828ad52de4493e1039aecc408e18af4122d2c0e2511fd254ba0f1d56bad14`
+**Source fingerprint (SHA-256):** `38528b48c3f792a459008a52f65fae248ef1dadafb37fe4dc6b697d25bc89f4f`

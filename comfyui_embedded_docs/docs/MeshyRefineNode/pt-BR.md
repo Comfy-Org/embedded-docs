@@ -6,7 +6,7 @@ O nó Meshy: Refine Draft Model recebe um modelo 3D de rascunho de uma tarefa Me
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `modelo` | O modelo de IA usado para refinar o modelo de rascunho. | COMBO | Sim | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `modelo` | O modelo de IA usado para refinar o modelo de rascunho. | COMBO | Sim | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `meshy_task_id` | O ID exclusivo da tarefa do modelo de rascunho que você deseja refinar. | MESHY_TASK_ID | Sim | - |
 | `habilitar_pbr` | Gera Mapas PBR (metálico, rugosidade, normal) além da cor base. Nota: isso deve ser definido como falso ao usar o estilo Sculpture, pois o estilo Sculpture gera seu próprio conjunto de mapas PBR. (padrão: False) | BOOLEAN | Sim | - |
 | `prompt_de_textura` | Forneça um prompt de texto para orientar o processo de texturização. Máximo de 600 caracteres. Não pode ser usado ao mesmo tempo que `texture_image`. (padrão: string vazia) | STRING | Sim | - |
@@ -27,4 +27,4 @@ O nó Meshy: Refine Draft Model recebe um modelo 3D de rascunho de uma tarefa Me
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRefineNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `73c9d712c4fd9fdd2792600ce874916ce9447d386407353c886f624641fa0e0f`
+**Source fingerprint (SHA-256):** `d9aac584e6abf9688c97bf01ea515bca13844d08c93923a672fb2853266926c8`

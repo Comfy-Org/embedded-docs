@@ -8,12 +8,13 @@ Este nó usa a API Meshy para gerar um modelo 3D a partir de múltiplas imagens 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `modelo` | Especifica a versão do modelo de IA a ser usada. | COMBO | Sim | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `modelo` | Especifica a versão do modelo de IA a ser usada. | COMBO | Sim | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `refazer_malha` | Determina se a malha gerada é processada. Quando definido como `"false"`, o nó retorna uma malha triangular não processada. Quando definido como `"true"`, as configurações de remesh abaixo são exibidas. | DYNAMIC_COMBO | Sim | `"true"`<br>`"false"` |
 | `modo_de_simetria` | Controla se a simetria é aplicada ao modelo gerado. | COMBO | Sim | `"auto"`<br>`"on"`<br>`"off"` |
 | `gerar_textura` | Determina se as texturas são geradas. Definir como `"false"` pula a etapa de texturização e retorna uma malha sem texturas. Quando definido como `"true"`, as configurações de textura abaixo são exibidas. | DYNAMIC_COMBO | Sim | `"true"`<br>`"false"` |
 | `modo_de_pose` | Especifica o modo de pose do modelo gerado. | COMBO | Sim | `""` (vazio)<br>`"A-pose"`<br>`"T-pose"` |
 | `semente` | A semente controla se o nó deve ser executado novamente; os resultados não são determinísticos, independentemente da semente. (padrão: 0) | INT | Sim | 0 a 2147483647 |
+| `ultra_mode` | Executa uma passagem extra de refinamento a 2048³ para geometria de maior fidelidade com detalhes de superfície mais finos. Requer o modelo `"meshy-7.1"`, `"meshy-7"` ou `"latest"` (padrão: `False`). | BOOLEAN | Não | `True`<br>`False` |
 
 ### Configurações de remesh (visíveis quando `should_remesh` for `"true"`)
 
@@ -44,6 +45,7 @@ Este nó usa a API Meshy para gerar um modelo 3D a partir de múltiplas imagens 
 * Os parâmetros `enable_pbr`, `texture_prompt`, `texture_image` e `texture_resolution` só são ativados quando `should_texture` estiver definido como `"true"`.
 * `texture_prompt` e `texture_image` são mutuamente exclusivos; você não pode usar ambos ao mesmo tempo. `texture_prompt` é limitado a 600 caracteres.
 * O valor de `seed` não torna os resultados determinísticos; alterá-lo simplesmente faz com que o nó execute novamente a tarefa de geração.
+* `ultra_mode` requer o modelo `"meshy-7.1"`, `"meshy-7"` ou `"latest"`; qualquer outro modelo gera um erro.
 
 ## Saídas
 
@@ -57,4 +59,4 @@ Este nó usa a API Meshy para gerar um modelo 3D a partir de múltiplas imagens 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyMultiImageToModelNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `a8b2fc23ef8a8a4af097489c15beb3e0ed205dfdc8309afc95207d7a5616d37a`
+**Source fingerprint (SHA-256):** `9475279c0990fc069b4fef2bf0e2e20218ca1a9591a261ce6d33a2b651782ddb`

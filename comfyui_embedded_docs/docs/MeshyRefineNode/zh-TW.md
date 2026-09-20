@@ -6,7 +6,7 @@ Meshy：Refine Draft Model 節點接收來自先前 Meshy 任務的 3D 草稿模
 
 | 參數 | 描述 | 資料型別 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用於精修草稿模型的 AI 模型。 | COMBO | 是 | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `model` | 用於精修草稿模型的 AI 模型。 | COMBO | 是 | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `meshy_task_id` | 您要精修的草稿模型的唯一任務 ID。 | MESHY_TASK_ID | 是 | - |
 | `enable_pbr` | 在基礎顏色之外，生成 PBR 貼圖（金屬度、粗糙度、法線）。請注意：使用 Sculpture 風格時應將其設為 false，因為 Sculpture 風格會生成自己的一套 PBR 貼圖。（預設：False） | BOOLEAN | 是 | - |
 | `texture_prompt` | 提供文字提示以引導紋理生成過程。最多 600 個字元。不能與 `texture_image` 同時使用。（預設：空字串） | STRING | 是 | - |
@@ -27,4 +27,4 @@ Meshy：Refine Draft Model 節點接收來自先前 Meshy 任務的 3D 草稿模
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRefineNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `73c9d712c4fd9fdd2792600ce874916ce9447d386407353c886f624641fa0e0f`
+**Source fingerprint (SHA-256):** `d9aac584e6abf9688c97bf01ea515bca13844d08c93923a672fb2853266926c8`

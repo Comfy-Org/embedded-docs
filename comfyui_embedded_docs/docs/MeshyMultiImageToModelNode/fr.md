@@ -8,12 +8,13 @@ Ce nœud utilise l'API Meshy pour générer un modèle 3D à partir de plusieurs
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Spécifie la version du modèle IA à utiliser. | COMBO | Oui | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `model` | Spécifie la version du modèle IA à utiliser. | COMBO | Oui | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `should_remesh` | Détermine si le maillage généré est traité. Lorsqu'il est défini sur `"false"`, le nœud renvoie un maillage triangulaire non traité. Lorsqu'il est défini sur `"true"`, les paramètres de remaillage ci-dessous sont affichés. | DYNAMIC_COMBO | Oui | `"true"`<br>`"false"` |
 | `symmetry_mode` | Contrôle si une symétrie est appliquée au modèle généré. | COMBO | Oui | `"auto"`<br>`"on"`<br>`"off"` |
 | `should_texture` | Détermine si les textures sont générées. Le définir sur `"false"` ignore la phase de texturation et renvoie un maillage sans textures. Lorsqu'il est défini sur `"true"`, les paramètres de texture ci-dessous sont affichés. | DYNAMIC_COMBO | Oui | `"true"`<br>`"false"` |
 | `pose_mode` | Spécifie le mode de pose pour le modèle généré. | COMBO | Oui | `""` (vide)<br>`"A-pose"`<br>`"T-pose"` |
 | `seed` | Le seed contrôle si le nœud doit se relancer ; les résultats sont non déterministes quel que soit le seed. (défaut : 0) | INT | Oui | 0 à 2147483647 |
+| `ultra_mode` | Exécute une passe de raffinement supplémentaire en 2048³ pour une géométrie de plus haute fidélité avec des détails de surface plus fins. Nécessite le modèle `"meshy-7.1"`, `"meshy-7"` ou `"latest"` (par défaut : `False`). | BOOLEAN | Non | `True`<br>`False` |
 
 ### Paramètres de remaillage (visibles lorsque `should_remesh` est `"true"`)
 
@@ -44,6 +45,7 @@ Ce nœud utilise l'API Meshy pour générer un modèle 3D à partir de plusieurs
 * Les paramètres `enable_pbr`, `texture_prompt`, `texture_image` et `texture_resolution` ne sont actifs que lorsque `should_texture` est défini sur `"true"`.
 * `texture_prompt` et `texture_image` sont mutuellement exclusifs ; vous ne pouvez pas utiliser les deux en même temps. `texture_prompt` est limité à 600 caractères.
 * La valeur `seed` ne rend pas les résultats déterministes ; la modifier fait simplement que le nœud relance la tâche de génération.
+* `ultra_mode` nécessite le modèle `"meshy-7.1"`, `"meshy-7"` ou `"latest"` ; tout autre modèle génère une erreur.
 
 ## Sorties
 
@@ -57,4 +59,4 @@ Ce nœud utilise l'API Meshy pour générer un modèle 3D à partir de plusieurs
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyMultiImageToModelNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `a8b2fc23ef8a8a4af097489c15beb3e0ed205dfdc8309afc95207d7a5616d37a`
+**Source fingerprint (SHA-256):** `9475279c0990fc069b4fef2bf0e2e20218ca1a9591a261ce6d33a2b651782ddb`

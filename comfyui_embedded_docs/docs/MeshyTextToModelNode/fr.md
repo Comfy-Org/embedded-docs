@@ -6,7 +6,7 @@ Le nœud Meshy: Text to Model utilise l'API Meshy pour générer un modèle 3D �
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `modèle` | Spécifie la version du modèle d'IA à utiliser pour la génération. | COMBO | Oui | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `modèle` | Spécifie la version du modèle d'IA à utiliser pour la génération. | COMBO | Oui | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `invite` | Description textuelle du modèle 3D que vous souhaitez générer. Doit contenir entre 1 et 600 caractères. La valeur par défaut est une chaîne vide. | STRING | Oui | 1 - 600 caractères |
 | `style` | Le style artistique du modèle 3D généré. | COMBO | Oui | `"realistic"` |
 | `doit_remesher` | Lorsqu'il est défini sur false, renvoie un maillage triangulaire non traité. Sélectionner "true" révèle des paramètres supplémentaires pour la topologie et le nombre de polygones cible. | DYNAMIC_COMBO | Oui | `"true"`<br>`"false"` |
@@ -16,10 +16,11 @@ Le nœud Meshy: Text to Model utilise l'API Meshy pour générer un modèle 3D �
 | `mode_pose` | Spécifie le mode de pose du modèle généré. Une chaîne vide signifie qu'aucune pose spécifique n'est demandée. Il s'agit d'un paramètre avancé. | COMBO | Oui | `""`<br>`"A-pose"`<br>`"T-pose"` |
 | `graine` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. La valeur par défaut est 0. | INT | Oui | 0 - 2147483647 |
 | `ultra_mode` | Exécute une passe de raffinement supplémentaire pour une géométrie de plus haute fidélité avec des détails de surface plus fins. La valeur par défaut est false. | BOOLEAN | Oui | true<br>false |
+| `ultra_resolution` | Résolution de la passe ultra : `"2k"` l'exécute en 2048³, `"4k"` en 4096³ pour le détail de surface le plus fin. `"4k"` nécessite le modèle `"meshy-7.1"` ou `"latest"`. Utilisé uniquement lorsque `ultra_mode` est activé (par défaut : `"2k"`). | COMBO | Non | `"2k"`<br>`"4k"` |
 
 *Remarque : Les paramètres `topology` et `target_polycount` sont disponibles conditionnellement. Ils n'apparaissent que lorsque le paramètre `should_remesh` est défini sur "true".
 
-Lorsque `ultra_mode` est activé, le paramètre `model` doit être défini sur `"meshy-7"` ou `"latest"`. Si un autre modèle est sélectionné avec `ultra_mode`, le nœud génère une erreur.
+Lorsque `ultra_mode` est activé, le paramètre `model` doit être défini sur `"meshy-7.1"`, `"meshy-7"` ou `"latest"` ; tout autre modèle génère une erreur. Avec `"meshy-7"`, la passe ultra s'exécute toujours en 2048³, et la résolution ultra `"4k"` nécessite `"meshy-7.1"` ou `"latest"`.
 
 ## Sorties
 
@@ -33,4 +34,4 @@ Lorsque `ultra_mode` est activé, le paramètre `model` doit être défini sur `
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `131f17bfb788f206e15c1d48c877e822114902fadf073a6f9fb25e8340421122`
+**Source fingerprint (SHA-256):** `a02a5ae28bcae343c628d11ba3efa952b61b8bdf867669f58f1beb0f7c9e49f9`
