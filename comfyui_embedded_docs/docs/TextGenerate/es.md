@@ -18,6 +18,7 @@ El nodo TextGenerate usa un modelo CLIP para crear texto basado en el prompt del
 | `pensando` | Opera en modo de pensamiento si el modelo lo admite. El valor predeterminado es False. | BOOLEAN | No | True or False |
 | `use_default_template` | Usa el prompt de sistema/plantilla integrado si el modelo tiene uno. El valor predeterminado es True. Este es un parámetro avanzado. | BOOLEAN | No | True or False |
 | `mtp` | Decodificación especulativa con la cabeza de predicción multi-token del checkpoint. No tiene efecto sin pesos MTP. `"auto"` adapta la profundidad del borrador; `"2"` a `"5"` la fijan. La salida muestreada se mantiene correctamente distribuida, pero difiere de la salida sin MTP para la misma semilla (predeterminado: `"auto"`). | COMBO | No | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
+| `system_prompt` | Reemplaza el prompt de sistema en la plantilla de chat del modelo. Se ignora cuando no se usa la plantilla predeterminada. Conecta una entrada STRING en lugar de escribirlo en el nodo (predeterminado: vacío). | STRING | No | N/A |
 
 ### Parámetros de muestreo (cuando `sampling_mode` está en "on")
 
@@ -33,13 +34,16 @@ El nodo TextGenerate usa un modelo CLIP para crear texto basado en el prompt del
 
 **Nota:** Los parámetros de muestreo anteriores solo están activos y visibles en la interfaz del nodo cuando `sampling_mode` está establecido en "on". Cuando `sampling_mode` está establecido en "off", no hay parámetros de muestreo disponibles y el nodo genera texto sin muestreo aleatorio.
 
+**Nota:** Cuando el texto generado contiene un bloque de razonamiento (empieza con `<think>` o el prompt termina con él), el razonamiento se devuelve por separado: `generated_text` lleva la respuesta y `thinking` lleva el razonamiento sin la etiqueta de apertura. En caso contrario, `generated_text` lleva todo lo que produjo el modelo y `thinking` queda vacío.
+
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `generated_text` | El texto generado por el modelo basado en el prompt de entrada y la imagen, video o audio opcionales. | STRING |
+| `generated_text` | El texto generado por el modelo basado en el prompt de entrada y la imagen, video o audio opcionales, con cualquier bloque de razonamiento separado en la salida `thinking`. | STRING |
+| `thinking` | El bloque de razonamiento que produjo el modelo, sin la etiqueta de apertura `<think>`. Vacío si el modelo no produjo ningún bloque de razonamiento. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `7d9f6aee19e076aa0afb4d57060b09474206ecf2492c0944762965fabac92c51`
+**Source fingerprint (SHA-256):** `80813781c06dfb0c3b59ee72c8bd6ebced69a4de8152de916ebc15153a0757fa`

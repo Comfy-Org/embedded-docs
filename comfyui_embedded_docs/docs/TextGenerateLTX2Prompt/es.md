@@ -15,9 +15,10 @@ El nodo TextGenerateLTX2Prompt expande un prompt corto del usuario en una descri
 | `audio` | Una entrada de audio opcional que se puede usar como contexto adicional para la generación. | AUDIO | No | - |
 | `longitud_máxima` | El número máximo de tokens que el modelo de lenguaje puede generar (predeterminado: 512). | INT | Sí | 1 a 32768 |
 | `modo_de_muestreo` | Controla si se usa muestreo aleatorio durante la generación de texto. Cuando se establece en `"on"`, los parámetros de muestreo a continuación quedan disponibles; con `"off"`, el nodo genera texto sin muestreo aleatorio. | DYNAMIC_COMBO | Sí | `"on"`<br>`"off"` |
-| `pensando` | Cuando está habilitado, se le indica al modelo que razone antes de responder. Cualquier bloque de razonamiento se elimina de la salida devuelta (predeterminado: False). | BOOLEAN | No | True/False |
+| `pensando` | Cuando está habilitado, se le indica al modelo que razone antes de responder. Cualquier bloque de razonamiento se devuelve en la salida `thinking` en lugar de en `generated_text` (predeterminado: False). | BOOLEAN | No | True/False |
 | `use_default_template` | Cuando está habilitado, el nodo usa la plantilla de chat predeterminada para el formato (predeterminado: True). Configuración avanzada. | BOOLEAN | No | True/False |
 | `mtp` | Decodificación especulativa con la cabeza de predicción de múltiples tokens del checkpoint. No tiene efecto sin los pesos MTP. `"auto"` adapta la profundidad del borrador; `"2"` a `"5"` la fijan. La salida muestreada permanece correctamente distribuida, pero difiere de la salida sin MTP para la misma semilla (predeterminado: `"auto"`). | COMBO | No | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
+| `system_prompt` | Reemplaza el prompt de sistema integrado de LTX-2. Si se deja vacío, el nodo usa sus propias instrucciones: el prompt de imagen a video cuando hay una `image` conectada, y si no el de texto a video. Conecta una entrada STRING en lugar de escribirlo en el nodo (predeterminado: vacío). | STRING | No | - |
 
 ### Parámetros de muestreo (cuando `sampling_mode` es "on")
 
@@ -38,15 +39,18 @@ El nodo TextGenerateLTX2Prompt expande un prompt corto del usuario en una descri
 - Si se proporciona una `image`, el prompt generado se formatea para una tarea de imagen a video usando un prompt de sistema que describe cómo expandir el prompt según el contenido de la imagen. Si no se proporciona una imagen, el formato es para una tarea de texto a video usando un prompt de sistema que expande el prompt en una descripción detallada para la generación de video.
 - Si el nombre del tokenizador de CLIP contiene "gemma4", el nodo usa los prompts de sistema de LTX-2.4 y el formato de chat de Gemma 4. De lo contrario, usa los prompts de sistema de LTX-2 (Gemma 3) y el formato de chat.
 - Cuando `thinking` está habilitado con un modelo Gemma 4, el modelo se abre en su canal de razonamiento; cuando está deshabilitado, el modelo se abre directamente en el canal de respuesta final. Para modelos que no son Gemma 4, `thinking` se pasa al paso de generación subyacente.
-- Si el modelo de lenguaje no produce texto utilizable después de eliminar los bloques de razonamiento, el nodo devuelve el `prompt` original en su lugar.
+- Un `system_prompt` reemplaza las instrucciones integradas del modo seleccionado (imagen a video o texto a video); cuando está vacío, se usa el prompt integrado.
+- Cualquier bloque de razonamiento se devuelve en la salida `thinking` en lugar de en `generated_text`.
+- Si el modelo de lenguaje no produce texto utilizable, el nodo devuelve el `prompt` original en su lugar.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `generated_text` | El prompt de generación de video mejorado producido por el modelo de lenguaje, con cualquier bloque de razonamiento eliminado. Si el resultado está vacío, se devuelve el prompt original del usuario. | STRING |
+| `generated_text` | El prompt de generación de video mejorado producido por el modelo de lenguaje, con cualquier bloque de razonamiento separado en la salida `thinking`. Si el resultado está vacío, se devuelve el prompt original del usuario. | STRING |
+| `thinking` | El bloque de razonamiento que produjo el modelo, sin la etiqueta de apertura `<think>`. Vacío si el modelo no produjo ningún bloque de razonamiento; en los modelos Gemma 4 solo se espera un bloque de razonamiento cuando `thinking` está habilitado. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerateLTX2Prompt/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `1da4a388b7c358e5649b4746b9b8d288977ec6fbed3eedc4c8709187c9f7b943`
+**Source fingerprint (SHA-256):** `a601a8bff65e8ee148d09f04ac0afc201dbc9ba5e09a65856400e9be37e085bb`

@@ -18,6 +18,7 @@ Le nœud TextGenerate utilise un modèle CLIP pour créer du texte à partir du 
 | `réflexion` | Active le mode réflexion si le modèle le prend en charge. La valeur par défaut est False. | BOOLEAN | Non | True ou False |
 | `utiliser le modèle par défaut` | Utilise le prompt système/gabarit intégré si le modèle en possède un. La valeur par défaut est True. Il s'agit d'un paramètre avancé. | BOOLEAN | Non | True ou False |
 | `mtp` | Décodage spéculatif avec la tête de prédiction multi-token du checkpoint. N'a aucun effet sans poids MTP. `"auto"` adapte la profondeur de brouillon, `"2"` à `"5"` la fixent. La sortie échantillonnée reste correctement distribuée mais diffère de la sortie non-MTP pour la même graine (par défaut : `"auto"`). | COMBO | Non | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
+| `system_prompt` | Remplace l'invite système dans le gabarit de chat du modèle. Ignoré lorsque le gabarit par défaut n'est pas utilisé. Connectez une entrée STRING au lieu de la saisir dans le nœud (par défaut : vide). | STRING | Non | N/A |
 
 ### Paramètres d'échantillonnage (lorsque `sampling_mode` est défini sur "on")
 
@@ -33,13 +34,16 @@ Le nœud TextGenerate utilise un modèle CLIP pour créer du texte à partir du 
 
 **Note :** Les paramètres d'échantillonnage ci-dessus ne sont actifs et visibles dans l'interface du nœud que lorsque `sampling_mode` est défini sur "on". Lorsque `sampling_mode` est défini sur "off", aucun paramètre d'échantillonnage n'est disponible et le nœud génère du texte sans échantillonnage aléatoire.
 
+**Remarque :** Lorsque le texte généré contient un bloc de raisonnement (il commence par `<think>` ou l'invite se termine par celui-ci), le raisonnement est renvoyé séparément : `generated_text` contient la réponse et `thinking` contient le raisonnement sans la balise d'ouverture. Sinon, `generated_text` contient tout ce que le modèle a produit et `thinking` reste vide.
+
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `generated_text` | Le texte généré par le modèle en fonction du prompt d'entrée et éventuellement de l'image, de la vidéo ou de l'audio. | STRING |
+| `generated_text` | Le texte généré par le modèle en fonction de l'invite d'entrée et éventuellement de l'image, de la vidéo ou de l'audio, tout bloc de raisonnement étant séparé dans la sortie `thinking`. | STRING |
+| `thinking` | Le bloc de raisonnement produit par le modèle, sans la balise d'ouverture `<think>`. Vide si le modèle n'a produit aucun bloc de raisonnement. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `7d9f6aee19e076aa0afb4d57060b09474206ecf2492c0944762965fabac92c51`
+**Source fingerprint (SHA-256):** `80813781c06dfb0c3b59ee72c8bd6ebced69a4de8152de916ebc15153a0757fa`
