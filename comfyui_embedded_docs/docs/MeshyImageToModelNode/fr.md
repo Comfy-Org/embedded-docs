@@ -6,7 +6,7 @@ Le nœud Meshy: Image to Model utilise l'API Meshy pour générer un modèle 3D 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Spécifie la version du modèle d'IA à utiliser pour la génération. | COMBO | Oui | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `model` | Spécifie la version du modèle d'IA à utiliser pour la génération. | COMBO | Oui | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `image` | L'image d'entrée à convertir en modèle 3D. | IMAGE | Oui | - |
 | `should_remesh` | Lorsque défini sur `"false"`, renvoie un maillage triangulaire non traité. | DYNAMIC_COMBO | Oui | `"true"`<br>`"false"` |
 | `topology` | La topologie polygonale cible pour le modèle remaillé. Cette entrée n'est disponible que lorsque `should_remesh` est défini sur `"true"`. | COMBO | Non* | `"triangle"`<br>`"quad"` |
@@ -20,6 +20,7 @@ Le nœud Meshy: Image to Model utilise l'API Meshy pour générer un modèle 3D 
 | `pose_mode` | Spécifie le mode de pose du modèle généré. Il s'agit d'un paramètre avancé. | COMBO | Oui | `""` (vide)<br>`"A-pose"`<br>`"T-pose"` |
 | `seed` | La graine détermine si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine. Défaut : 0. | INT | Oui | 0 - 2147483647 |
 | `ultra_mode` | Exécute une passe de raffinement supplémentaire pour une géométrie plus fidèle avec des détails de surface plus fins. Défaut : `False`. | BOOLEAN | Oui | - |
+| `ultra_resolution` | Résolution de la passe ultra : `"2k"` l'exécute en 2048³, `"4k"` en 4096³ pour le détail de surface le plus fin. `"4k"` nécessite le modèle `"meshy-7.1"` ou `"latest"`. Utilisée uniquement lorsque `ultra_mode` est activé (par défaut : `"2k"`). | COMBO | Non | `"2k"`<br>`"4k"` |
 
 **Remarque concernant les contraintes des paramètres :**
 
@@ -27,7 +28,7 @@ Le nœud Meshy: Image to Model utilise l'API Meshy pour générer un modèle 3D 
 * Les entrées `enable_pbr`, `texture_prompt`, `texture_image` et `texture_resolution` ne sont disponibles que lorsque `should_texture` est défini sur `"true"`.
 * Lorsque `should_texture` est défini sur `"true"`, `texture_prompt` et `texture_image` ne peuvent pas être utilisés en même temps. Si les deux sont fournis, le nœud génère une erreur.
 * `texture_prompt` a une longueur maximale de 600 caractères.
-* `ultra_mode` nécessite le modèle `"meshy-7"` ou `"latest"`. Si `ultra_mode` est activé avec le modèle `"meshy-6"`, le nœud génère une erreur.
+* Lorsque `ultra_mode` est activé, le paramètre `model` doit être défini sur `"meshy-7.1"`, `"meshy-7"` ou `"latest"` ; tout autre modèle génère une erreur. Avec `"meshy-7"`, la passe ultra s'exécute toujours en 2048³, et la résolution ultra `"4k"` nécessite `"meshy-7.1"` ou `"latest"`.
 
 ## Sorties
 
@@ -41,4 +42,4 @@ Le nœud Meshy: Image to Model utilise l'API Meshy pour générer un modèle 3D 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `689828ad52de4493e1039aecc408e18af4122d2c0e2511fd254ba0f1d56bad14`
+**Source fingerprint (SHA-256):** `38528b48c3f792a459008a52f65fae248ef1dadafb37fe4dc6b697d25bc89f4f`

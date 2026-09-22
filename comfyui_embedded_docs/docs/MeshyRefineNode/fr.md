@@ -6,7 +6,7 @@ Le nœud Meshy: Refine Draft Model prend un modèle 3D provisoire issu d'une tâ
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `modèle` | Le modèle IA utilisé pour affiner le modèle provisoire. | COMBO | Oui | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `modèle` | Le modèle IA utilisé pour affiner le modèle provisoire. | COMBO | Oui | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `meshy_task_id` | L'identifiant unique de la tâche du modèle provisoire que vous souhaitez affiner. | MESHY_TASK_ID | Oui | - |
 | `activer_pbr` | Génère des cartes PBR (métallique, rugosité, normale) en plus de la couleur de base. Remarque : cette option doit être définie sur false lors de l'utilisation du style Sculpture, car ce style génère son propre ensemble de cartes PBR. (par défaut : False) | BOOLEAN | Oui | - |
 | `invite_texture` | Fournissez une invite de texte pour guider le processus de texturation. 600 caractères maximum. Ne peut pas être utilisé en même temps que `texture_image`. (par défaut : chaîne vide) | STRING | Oui | - |
@@ -27,4 +27,4 @@ Le nœud Meshy: Refine Draft Model prend un modèle 3D provisoire issu d'une tâ
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRefineNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `73c9d712c4fd9fdd2792600ce874916ce9447d386407353c886f624641fa0e0f`
+**Source fingerprint (SHA-256):** `d9aac584e6abf9688c97bf01ea515bca13844d08c93923a672fb2853266926c8`

@@ -6,7 +6,7 @@ El nodo Meshy: Text to Model utiliza la API de Meshy para generar un modelo 3D a
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `modelo` | Especifica la versión del modelo de IA que se usará para la generación. | COMBO | Sí | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `modelo` | Especifica la versión del modelo de IA que se usará para la generación. | COMBO | Sí | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `prompt` | La descripción de texto del modelo 3D que deseas generar. Debe tener entre 1 y 600 caracteres. El valor predeterminado es una cadena vacía. | STRING | Sí | 1 - 600 caracteres |
 | `estilo` | El estilo artístico para el modelo 3D generado. | COMBO | Sí | `"realistic"` |
 | `debe_remallar` | Cuando se establece en "false", devuelve una malla triangular sin procesar. Seleccionar "true" revela parámetros adicionales para la topología y el número objetivo de polígonos. | DYNAMIC_COMBO | Sí | `"true"`<br>`"false"` |
@@ -16,10 +16,11 @@ El nodo Meshy: Text to Model utiliza la API de Meshy para generar un modelo 3D a
 | `modo_pose` | Especifica el modo de pose para el modelo generado. Una cadena vacía significa que no se solicita ninguna pose específica. Este es un parámetro avanzado. | COMBO | Sí | `""`<br>`"A-pose"`<br>`"T-pose"` |
 | `semilla` | `seed` controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. El valor predeterminado es 0. | INT | Sí | 0 - 2147483647 |
 | `modo ultra` | Ejecuta una pasada de refinamiento adicional para obtener una geometría de mayor fidelidad con un detalle de superficie más fino. El valor predeterminado es false. | BOOLEAN | Sí | true<br>false |
+| `ultra_resolution` | Resolución de la pasada ultra: `"2k"` la ejecuta a 2048³ y `"4k"` a 4096³ para obtener el detalle de superficie más fino. `"4k"` requiere el modelo `"meshy-7.1"` o `"latest"`. Solo se usa cuando `ultra_mode` está habilitado (predeterminado: `"2k"`). | COMBO | No | `"2k"`<br>`"4k"` |
 
 *Nota: Los parámetros `topology` y `target_polycount` están disponibles de forma condicional. Solo aparecen cuando el parámetro `should_remesh` se establece en "true".
 
-Cuando `ultra_mode` está habilitado, el parámetro `model` debe establecerse en `"meshy-7"` o `"latest"`. Si se selecciona cualquier otro modelo junto con `ultra_mode`, el nodo lanza un error.
+Cuando `ultra_mode` está habilitado, el parámetro `model` debe establecerse en `"meshy-7.1"`, `"meshy-7"` o `"latest"`; cualquier otro modelo lanza un error. Con `"meshy-7"` la pasada ultra siempre se ejecuta a 2048³, y la resolución ultra `"4k"` requiere `"meshy-7.1"` o `"latest"`.
 
 ## Salidas
 
@@ -33,4 +34,4 @@ Cuando `ultra_mode` está habilitado, el parámetro `model` debe establecerse en
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `131f17bfb788f206e15c1d48c877e822114902fadf073a6f9fb25e8340421122`
+**Source fingerprint (SHA-256):** `a02a5ae28bcae343c628d11ba3efa952b61b8bdf867669f58f1beb0f7c9e49f9`

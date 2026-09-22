@@ -6,7 +6,7 @@ O nó Meshy: Image to Model usa a API Meshy para gerar um modelo 3D a partir de 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `modelo` | Especifica a versão do modelo de IA a ser usada para a geração. | COMBO | Sim | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `modelo` | Especifica a versão do modelo de IA a ser usada para a geração. | COMBO | Sim | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `imagem` | A imagem de entrada para converter em um modelo 3D. | IMAGE | Sim | - |
 | `refazer_malha` | Quando definido como `"false"`, retorna uma malha triangular não processada. | DYNAMIC_COMBO | Sim | `"true"`<br>`"false"` |
 | `topology` | A topologia de polígonos alvo para o modelo remalhado. Esta entrada está disponível somente quando `should_remesh` está definido como `"true"`. | COMBO | Não* | `"triangle"`<br>`"quad"` |
@@ -20,6 +20,7 @@ O nó Meshy: Image to Model usa a API Meshy para gerar um modelo 3D a partir de 
 | `modo_de_pose` | Especifica o modo de pose para o modelo gerado. Este é um parâmetro avançado. | COMBO | Sim | `""` (vazio)<br>`"A-pose"`<br>`"T-pose"` |
 | `semente` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 0. | INT | Sim | 0 - 2147483647 |
 | `ultra_mode` | Executa uma etapa extra de refinamento para uma geometria de maior fidelidade com detalhes de superfície mais finos. Padrão: `False`. | BOOLEAN | Sim | - |
+| `ultra_resolution` | Resolução da passagem ultra: `"2k"` a executa em 2048³ e `"4k"` em 4096³ para o detalhe de superfície mais fino. `"4k"` requer o modelo `"meshy-7.1"` ou `"latest"`. Usado apenas quando `ultra_mode` está habilitado (padrão: `"2k"`). | COMBO | Não | `"2k"`<br>`"4k"` |
 
 **Nota sobre as restrições de parâmetros:**
 
@@ -27,7 +28,7 @@ O nó Meshy: Image to Model usa a API Meshy para gerar um modelo 3D a partir de 
 * As entradas `enable_pbr`, `texture_prompt`, `texture_image` e `texture_resolution` estão disponíveis somente quando `should_texture` está definido como `"true"`.
 * Quando `should_texture` está definido como `"true"`, `texture_prompt` e `texture_image` não podem ser usados ao mesmo tempo. Se ambos forem fornecidos, o nó gera um erro.
 * `texture_prompt` tem comprimento máximo de 600 caracteres.
-* `ultra_mode` requer o modelo `"meshy-7"` ou `"latest"`. Se `ultra_mode` estiver habilitado com o modelo `"meshy-6"`, o nó gera um erro.
+* Quando `ultra_mode` está habilitado, o parâmetro `model` deve ser definido como `"meshy-7.1"`, `"meshy-7"` ou `"latest"`; qualquer outro modelo gera um erro. Com `"meshy-7"` a passagem ultra sempre é executada em 2048³, e a resolução ultra `"4k"` requer `"meshy-7.1"` ou `"latest"`.
 
 ## Saídas
 
@@ -41,4 +42,4 @@ O nó Meshy: Image to Model usa a API Meshy para gerar um modelo 3D a partir de 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `689828ad52de4493e1039aecc408e18af4122d2c0e2511fd254ba0f1d56bad14`
+**Source fingerprint (SHA-256):** `38528b48c3f792a459008a52f65fae248ef1dadafb37fe4dc6b697d25bc89f4f`

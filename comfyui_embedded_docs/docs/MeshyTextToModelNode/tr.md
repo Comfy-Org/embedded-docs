@@ -6,7 +6,7 @@ Meshy: Text to Model düğümü, bir metin açıklamasından 3B model oluşturma
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Oluşturma için kullanılacak yapay zeka model sürümünü belirtir. | COMBO | Evet | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `model` | Oluşturma için kullanılacak yapay zeka model sürümünü belirtir. | COMBO | Evet | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
 | `prompt` | Oluşturmak istediğiniz 3B modelin metin açıklaması. 1 ile 600 karakter arasında olmalıdır. Varsayılan değer boş bir dizedir. | STRING | Evet | 1 - 600 karakter |
 | `style` | Oluşturulan 3B model için sanatsal stil. | COMBO | Evet | `"realistic"` |
 | `should_remesh` | false olarak ayarlandığında, işlenmemiş bir üçgen ağ döndürür. "true" seçildiğinde topoloji ve hedef poligon sayısı için ek parametreler görünür. | DYNAMIC_COMBO | Evet | `"true"`<br>`"false"` |
@@ -16,10 +16,11 @@ Meshy: Text to Model düğümü, bir metin açıklamasından 3B model oluşturma
 | `pose_mode` | Oluşturulan model için poz modunu belirtin. Boş bir dize, belirli bir poz istenmediği anlamına gelir. Bu gelişmiş bir parametredir. | COMBO | Evet | `""`<br>`"A-pose"`<br>`"T-pose"` |
 | `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan değer 0'dır. | INT | Evet | 0 - 2147483647 |
 | `ultra_mode` | Daha ince yüzey ayrıntısıyla daha yüksek sadakatli geometri için ek bir iyileştirme geçişi çalıştırır. Varsayılan değer false'tur. | BOOLEAN | Evet | true<br>false |
+| `ultra_resolution` | Ultra geçişinin çözünürlüğü: `"2k"` bunu 2048³'te, `"4k"` ise en ince yüzey ayrıntısı için 4096³'te çalıştırır. `"4k"` için `"meshy-7.1"` veya `"latest"` modeli gerekir. Yalnızca `ultra_mode` etkinleştirildiğinde kullanılır (varsayılan: `"2k"`). | COMBO | Hayır | `"2k"`<br>`"4k"` |
 
 *Not: `topology` ve `target_polycount` parametreleri koşullu olarak kullanılabilir. Yalnızca `should_remesh` parametresi "true" olarak ayarlandığında görünürler.
 
-`ultra_mode` etkinleştirildiğinde, `model` parametresi `"meshy-7"` veya `"latest"` olarak ayarlanmalıdır. `ultra_mode` ile birlikte başka bir model seçilirse düğüm bir hata verir.
+`ultra_mode` etkinleştirildiğinde, `model` parametresi `"meshy-7.1"`, `"meshy-7"` veya `"latest"` olarak ayarlanmalıdır; başka bir model seçilirse hata verilir. `"meshy-7"` ile ultra geçiş her zaman 2048³'te çalışır ve `"4k"` ultra çözünürlüğü `"meshy-7.1"` veya `"latest"` gerektirir.
 
 ## Çıktılar
 
@@ -33,4 +34,4 @@ Meshy: Text to Model düğümü, bir metin açıklamasından 3B model oluşturma
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `131f17bfb788f206e15c1d48c877e822114902fadf073a6f9fb25e8340421122`
+**Source fingerprint (SHA-256):** `a02a5ae28bcae343c628d11ba3efa952b61b8bdf867669f58f1beb0f7c9e49f9`

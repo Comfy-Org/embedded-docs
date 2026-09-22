@@ -1,23 +1,23 @@
 # JSON'dan Dize Çıkar
 
-JsonExtractString düğümü, JSON verisi içeren bir metin dizesini okur ve belirli bir anahtarla ilişkili değeri çıkarır. Çıkarılan değeri bir dizeye dönüştürür. JSON geçersizse, anahtar bulunamazsa veya değer null ise, düğüm boş bir dize döndürür.
+JsonExtractString düğümü, bir metin dizesini tarayarak ilk geçerli JSON nesnesini bulur ve belirli bir anahtarla ilişkili değeri dizeye dönüştürerek çıkarır. JSON nesnesinin öncesindeki veya sonrasındaki tüm metin yok sayılır; böylece düğüm Markdown kod bloklarında ve JSON'u ek metinle saran model yanıtlarında da çalışır. Geçerli bir JSON nesnesi bulunamazsa, anahtar bulunamazsa veya değer null ise düğüm boş bir dize döndürür.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `json_string` | Ayrıştırılacak JSON verisini içeren metin. | STRING | Evet | Yok |
-| `key` | JSON nesnesinden dize değerini çıkarmak istediğiniz belirli anahtar. | STRING | Evet | Yok |
+| `json_string` | JSON nesnesini aramak için kullanılacak metin. Bu alan çok satırlı girişi destekler ve çevresinde düz metin veya Markdown kod çitleri bulunabilir. | STRING | Evet | N/A |
+| `key` | JSON nesnesinden değerini çıkarmak istediğiniz belirli anahtar. Bu alan yalnızca tek satırlı girişi destekler. | STRING | Evet | N/A |
 
-**Not:** Düğüm yalnızca JSON nesnelerinden (sözlükler) değer çıkarır. Ayrıştırılan JSON bir nesne değilse veya belirtilen anahtar bu nesne içinde mevcut değilse, çıktı boş bir dize olacaktır.
+**Not:** Düğüm, değerleri yalnızca JSON nesnelerinden (sözlüklerden) çıkarır. Girdideki her `{` işaretini sırayla dener ve geçerli bir JSON nesnesi üreten ilk konumdan itibaren çözümler; böylece baştaki veya sondaki metin atlanır. Hiçbir JSON nesnesi çözümlenemezse veya belirtilen anahtar bunun içinde yoksa çıktı boş bir dizedir. Anahtarla ilişkili değer `null` ise düğüm yine boş bir dize döndürür. Dize olmayan değerler, dize gösterimleri olarak döndürülür.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | JSON'dan belirtilen anahtar için çıkarılan dize değeri veya çıkarma başarısız olursa boş bir dize. | STRING |
+| `output` | Belirtilen anahtar için JSON'dan çıkarılan dize değeri veya çıkarma başarısız olursa boş bir dize. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/JsonExtractString/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `f05e2d9fd4888870a844c85ac7543d6c38c1c56f2ef22a402fc93ee716743612`
+**Source fingerprint (SHA-256):** `ca697fd3bd2d4de764372470ad1102b345d9d60f6df1c151fa0573e85fab2382`
