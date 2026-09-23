@@ -1,77 +1,83 @@
 # Anthropic Claude
 
-从 Anthropic 的 Claude 模型生成文本响应。提供一个文本提示词，并可选地提供一张或多张图像作为多模态上下文，节点将返回模型生成的文本响应。
+Generate text responses from Anthropic's Claude models. Provide a text prompt and optionally one or more images for multimodal context, and the node returns the model's generated text response.
+
+从 Anthropic 的 Claude 模型生成文本回复。提供一个文本提示词，并可选择性地提供一张或多张图像作为多模态上下文，节点将返回模型生成的文本回复。
 
 ## 输入
+
 输入分为通用设置、选择模型后出现的模型专属设置，以及可选的参考图像。
 
 ### 通用输入
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用于生成响应的 Claude 模型。选择模型后，下方会显示该模型专属的设置。 | DYNAMIC_COMBO | 是 | `"Opus 5"`<br>`"Opus 4.8"`<br>`"Fable 5"`<br>`"Sonnet 5"`<br>`"Opus 4.7"`<br>`"Opus 4.6"`<br>`"Sonnet 4.6"`<br>`"Sonnet 4.5"`<br>`"Haiku 4.5"` |
+| `model` | 用于生成回复的 Claude 模型。选择模型后会在下方显示该模型的专属设置。 | DYNAMIC_COMBO | 是 | `"Opus 5.5"`<br>`"Opus 5"`<br>`"Opus 4.8"`<br>`"Fable 5.1"`<br>`"Fable 5"`<br>`"Sonnet 5"`<br>`"Opus 4.7"`<br>`"Opus 4.6"`<br>`"Sonnet 4.6"`<br>`"Sonnet 4.5"`<br>`"Haiku 4.5"` |
 | `prompt` | 输入给模型的文本。（默认值：空字符串） | STRING | 是 | N/A |
-| `seed` | 种子控制节点是否应重新运行；无论种子取值如何，结果都是非确定性的。（默认值：0） | INT | 是 | 0 到 2147483647 |
-| `system_prompt` | 决定模型行为的基础性指令。（默认值：空字符串） | STRING | 否 | N/A |
+| `seed` | 种子用于控制节点是否重新运行；无论种子为何，结果都是非确定性的。（默认值：0） | INT | 是 | 0 到 2147483647 |
+| `system_prompt` | 决定模型行为的基础指令。（默认值：空字符串） | STRING | 否 | N/A |
 
-### Opus 5 与 Fable 5 输入
+### Opus 5.5、Opus 5、Fable 5.1 和 Fable 5 输入
 
-这两个模型共享相同的设置。它们不提供 `temperature` 设置，并且始终启用推理。
-
-| 参数 | 描述 | 数据类型 | 必填 | 范围 |
-|-----------|-------------|-----------|----------|-------|
-| `max_tokens` | 要生成的最大 token 数（启用时包含推理 token）。（默认值：32768） | INT | 是 | 4096 到 64000 |
-| `reasoning_effort` | 扩展思考强度。该模型始终启用推理。（默认值："high"） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
-
-### Opus 4.8 与 Sonnet 5 输入
-
-这两个模型共享相同的设置。它们不提供 `temperature` 设置。
+这四个模型共用相同的设置。它们不提供温度设置，并且始终启用推理。
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `max_tokens` | 要生成的最大 token 数（启用时包含推理 token）。（默认值：32768） | INT | 是 | 4096 到 64000 |
-| `reasoning_effort` | 扩展思考强度。`"off"` 表示禁用推理。（默认值："off"） | COMBO | 是 | `"off"`<br>`"low"`<br>`"medium"`<br>`"high"` |
+| `max_tokens` | 生成的最大 token 数量（启用推理时包含推理 token）。（默认值：32768） | INT | 是 | 4096 到 64000 |
+| `reasoning_effort` | 扩展思考强度。此模型的推理始终启用。（默认值："high"） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 
-### Opus 4.7、Opus 4.6、Sonnet 4.6 与 Sonnet 4.5 输入
+### Opus 4.8 和 Sonnet 5 输入
 
-这四个模型共享相同的设置。
+这两个模型共用相同的设置。它们不提供温度设置。
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `max_tokens` | 要生成的最大 token 数（启用时包含推理 token）。（默认值：32768） | INT | 是 | 4096 到 64000 |
-| `temperature` | 控制随机性。0.0 为确定性输出，1.0 为随机性最强。对于 Opus 4.7 以及任何设置了 `reasoning_effort` 的模型，此参数将被忽略。（默认值：1.0） | FLOAT | 是 | 0.0 到 1.0 (step: 0.01) |
-| `reasoning_effort` | 扩展思考强度。`"off"` 表示禁用推理。（默认值："off"） | COMBO | 是 | `"off"`<br>`"low"`<br>`"medium"`<br>`"high"` |
+| `max_tokens` | 生成的最大 token 数量（启用推理时包含推理 token）。（默认值：32768） | INT | 是 | 4096 到 64000 |
+| `reasoning_effort` | 扩展思考强度。`"off"` 会禁用推理。（默认值："off"） | COMBO | 是 | `"off"`<br>`"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+
+### Opus 4.7、Opus 4.6、Sonnet 4.6 和 Sonnet 4.5 输入
+
+这四个模型共用相同的设置。
+
+| 参数 | 描述 | 数据类型 | 必填 | 范围 |
+|-----------|-------------|-----------|----------|-------|
+| `max_tokens` | 生成的最大 token 数量（启用推理时包含推理 token）。（默认值：32768） | INT | 是 | 4096 到 64000 |
+| `temperature` | 控制随机性。0.0 为确定性输出，1.0 为最随机。对 Opus 4.7 以及设置了 `reasoning_effort` 的任何模型都会被忽略。（默认值：1.0） | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
+| `reasoning_effort` | 扩展思考强度。`"off"` 会禁用推理。（默认值："off"） | COMBO | 是 | `"off"`<br>`"low"`<br>`"medium"`<br>`"high"` |
+
+`reasoning_effort` 在这四个模型上都提供 `"off"`、`"low"`、`"medium"` 和 `"high"`。Opus 4.7、Opus 4.6 和 Sonnet 4.6 还额外接受 `"max"`，而 Opus 4.7 还接受 `"xhigh"`。
 
 ### Haiku 4.5 输入
 
-该模型不提供 `reasoning_effort` 设置。
+此模型不提供 `reasoning_effort` 设置。
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `max_tokens` | 要生成的最大 token 数（启用时包含推理 token）。（默认值：32768） | INT | 是 | 4096 到 64000 |
-| `temperature` | 控制随机性。0.0 为确定性输出，1.0 为随机性最强。对于 Opus 4.7 以及任何设置了 `reasoning_effort` 的模型，此参数将被忽略。（默认值：1.0） | FLOAT | 是 | 0.0 到 1.0 (step: 0.01) |
+| `max_tokens` | 生成的最大 token 数量（启用推理时包含推理 token）。（默认值：32768） | INT | 是 | 4096 到 64000 |
+| `temperature` | 控制随机性。0.0 为确定性输出，1.0 为最随机。对 Opus 4.7 以及设置了 `reasoning_effort` 的任何模型都会被忽略。（默认值：1.0） | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
 
 ### 参考输入
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `images` | 可选图像（一张或多张），用作模型的上下文。最多 20 张图像。可增长插槽：可连接 1 到 20 个项目（`image_1` ... `image_20`）。 | IMAGE | 否 | 0 到 20 images |
+| `images` | 可选的图像，用作模型的上下文。最多 20 张图像。可扩展槽位：连接 1 到 20 项（`image_1` ... `image_20`）。 | IMAGE | 否 | 0 到 20 张图像 |
 
 ### 参数约束
 
-- **图像限制：** 每个请求最多可提供 20 张图像。连接超过 20 张图像会引发错误。
-- **提示词必填：** 提示词必须至少包含一个非空白字符。空提示词会引发验证错误。
-- **`temperature` 处理：** 当启用思考时，Anthropic API 要求不设置 `temperature`（其默认值为 1.0）。Opus 5、Opus 4.8、Fable 5 和 Sonnet 5 不提供 `temperature` 设置。Opus 4.7 会忽略 `temperature`，任何将 `reasoning_effort` 设置为 `"low"`、`"medium"` 或 `"high"` 的模型也会忽略该参数。
-- **推理/思考行为：** `reasoning_effort` 设置控制是否启用思考。Opus 5 和 Fable 5 始终启用推理。Haiku 4.5 不支持推理。启用思考时，节点会为所选模型使用相应的思考模式，即自适应模式或基于预算的模式。在预算模式下，推理 token 预算设有上限，以至少为实际响应保留 1024 个 token。
-- **安全拒绝：** 如果 Claude 出于安全原因拒绝回答请求，节点将引发错误，要求您改写提示词或尝试其他模型。
-- **输出文本：** 输出中不包含思考块和推理块；仅返回生成的文本。
+- **图像数量上限：** 每次请求最多可提供 20 张图像。连接超过 20 张图像会引发错误。
+- **提示词必填：** 提示词必须包含至少一个非空白字符。空提示词会引发验证错误。
+- **温度处理：** 当启用思考时，Anthropic API 要求不设置温度（默认值为 1.0）。Opus 5.5、Opus 5、Opus 4.8、Fable 5.1、Fable 5 和 Sonnet 5 不提供温度设置。Opus 4.7 会忽略 `temperature`，任何将 `reasoning_effort` 设置为 `"off"` 以外值的模型也会忽略它。
+- **推理/思考行为：** `reasoning_effort` 设置控制是否启用思考。Opus 5.5、Opus 5、Fable 5.1 和 Fable 5 始终启用推理。Haiku 4.5 不支持推理。当启用思考时，节点会针对所选模型使用相应的思考模式，即自适应模式或基于预算的模式。在预算模式下，推理 token 预算会被限制，以便为实际回复保留至少 1024 个 token。
+- **安全拒绝：** 如果 Claude 出于安全原因拒绝回答请求，节点会引发错误，提示你重新表述提示词或尝试其他模型。
+- **输出文本：** 思考和推理块不会包含在输出中；只返回生成的文本。
 
 ## 输出
+
 | 输出名称 | 描述 | 数据类型 |
-|-----------|-------------|-----------|
-| `output` | Claude 模型生成的文本响应。不包含思考/推理块。如果未生成任何文本，则返回 "Empty response from Claude model."。 | STRING |
+|-------------|-------------|-----------|
+| `output` | Claude 模型生成的文本回复。不包含思考/推理块。如果未生成任何文本，则返回 "Empty response from Claude model."。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClaudeNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `b0381e7981e5886d66b6976c7ddcad3f142bdd803271a6ac8567293dcddaa98a`
+**Source fingerprint (SHA-256):** `f6d9353025598bbed1aca7bdeb56ac59f5e4c26dd5b8e29359e97ef29e35bee7`

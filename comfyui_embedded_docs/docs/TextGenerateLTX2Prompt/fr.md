@@ -18,7 +18,7 @@ Le nœud TextGenerateLTX2Prompt développe une courte invite utilisateur en une 
 | `réflexion` | Lorsque cette option est activée, le modèle reçoit l'instruction de raisonner avant de répondre. Tout bloc de raisonnement est renvoyé sur la sortie `thinking` plutôt que dans `generated_text` (par défaut : False). | BOOLEAN | Non | True/False |
 | `utiliser le modèle par défaut` | Lorsque cette option est activée, le nœud utilise le gabarit de chat par défaut pour le formatage (par défaut : True). Paramètre avancé. | BOOLEAN | Non | True/False |
 | `mtp` | Décodage spéculatif avec la tête de prédiction multi-token du checkpoint. N’a aucun effet sans les poids MTP. `"auto"` adapte la profondeur du brouillon ; `"2"` à `"5"` la fixent. La sortie échantillonnée reste correctement distribuée mais diffère de la sortie non-MTP pour la même graine (par défaut : `"auto"`). | COMBO | Non | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
-| `system_prompt` | Remplace l'invite système LTX-2 intégrée. Si elle est laissée vide, le nœud utilise ses propres instructions : l'invite image-vers-vidéo lorsqu'une `image` est connectée, sinon l'invite texte-vers-vidéo. Connectez une entrée STRING au lieu de la saisir dans le nœud (par défaut : vide). | STRING | Non | - |
+| `invite système` | Remplace l'invite système LTX-2 intégrée. Si elle est laissée vide, le nœud utilise ses propres instructions : l'invite image-vers-vidéo lorsqu'une `image` est connectée, sinon l'invite texte-vers-vidéo. Connectez une entrée STRING au lieu de la saisir dans le nœud (par défaut : vide). | STRING | Non | - |
 
 ### Paramètres d’échantillonnage (lorsque `sampling_mode` est "on")
 

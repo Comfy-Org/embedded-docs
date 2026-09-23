@@ -8,7 +8,7 @@ El nodo Tencent HY Image: Edit edita o combina imágenes de referencia a partir 
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `model` | El modelo utilizado para editar. El modelo seleccionado determina qué entradas adicionales se muestran. | DYNAMIC_COMBO | Sí | `"hy-image-3.5-preview"` |
+| `modelo` | El modelo utilizado para editar. El modelo seleccionado determina qué entradas adicionales se muestran. | DYNAMIC_COMBO | Sí | `"hy-image-3.5-preview"` |
 
 ### Entradas de hy-image-3.5-preview
 

@@ -54,6 +54,8 @@ VALID_TYPES = {
     "BOUNDING_BOX", "FILE3D", "FILE3DGLB", "FILE3DFBX", "PROMPT", "EXTRA_PNGINFO",
     "WEBCAM", "GUIDER", "SAMPLER", "SIGMAS", "NOISE", "ANY", "PK_HOOK", "MESH",
     "AUTO_TRIGGER", "IC_LORA_PARAMETERS", "MODEL_TASK_ID", "IMAGE_TASK_ID",
+    # Custom (IO.Custom) widget types used by partner nodes, e.g. Recraft Controls.
+    "CUSTOM",
 }
 
 ROW_RE = re.compile(r"^\|")

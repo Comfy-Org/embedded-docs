@@ -1,26 +1,27 @@
 # Quiver Texto a SVG
 
-El nodo Quiver Text to SVG genera una imagen de Gráfico Vectorial Escalable (SVG) a partir de una descripción textual utilizando los modelos de Quiver AI. Opcionalmente, puedes proporcionar imágenes de referencia e instrucciones de estilo para guiar el proceso de generación.
+El nodo Quiver Text to SVG genera una imagen de gráfico vectorial escalable (SVG) a partir de una descripción de texto usando los modelos de Quiver AI. De manera opcional, puedes proporcionar imágenes de referencia e instrucciones de estilo para guiar el proceso de generación.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
-| `prompt` | Descripción textual del resultado SVG deseado. Esta es la instrucción principal sobre qué generar. | STRING | Sí | N/A |
-| `instrucciones` | Orientación adicional sobre estilo o formato. Este es un parámetro opcional y avanzado. | STRING | No | N/A |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Descripción de texto de la salida SVG deseada. Esta es la instrucción principal sobre qué generar. | STRING | Sí | N/A |
+| `instrucciones` | Indicaciones adicionales de estilo o formato. Este es un parámetro opcional y avanzado. | STRING | No | N/A |
 | `imágenes_de_referencia` | Hasta 4 imágenes de referencia para guiar la generación. Esta es una entrada opcional. | IMAGE | No | 0 a 4 imágenes |
-| `modelo` | Modelo a utilizar para la generación de SVG. Las opciones disponibles están determinadas por la API de Quiver. | COMBO | Sí | `"Quiver SVG v1"`<br>`"Quiver SVG v1 Max"`<br>`"Quiver SVG v1 Preview"` |
-| `semilla` | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla. Valor predeterminado: 0. | INT | Sí | 0 a 2147483647 |
+| `modelo` | Modelo a usar para la generación de SVG. Al seleccionar un modelo se revelan parámetros adicionales específicos de ese modelo: `temperature`, `top_p` y `presence_penalty`. | DYNAMIC_COMBO | Sí | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `semilla` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla. Predeterminado: 0. | INT | Sí | 0 a 2147483647 |
+| `reasoning_effort` | Cantidad de razonamiento que el modelo dedica antes de dibujar. Los niveles más altos mejoran el detalle y cuestan más tokens. Solo lo usan los modelos Arrow 2 (predeterminado: "high"). | COMBO | No | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
 
-**Nota:** La entrada `reference_images` acepta un máximo de 4 imágenes. Si se proporcionan más, el nodo generará un error.
+**Nota:** La entrada `reference_images` acepta un máximo de 4 imágenes.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-| --- | --- | --- |
-| `SVG` | La imagen de Gráfico Vectorial Escalable (SVG) generada. | SVG |
+| Nombre de salida | Descripción | Tipo de datos |
+|-------------|-------------|-----------|
+| `SVG` | La imagen de gráfico vectorial escalable (SVG) generada. | SVG |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverTextToSVGNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `634758797a59e5a409424deee808e1d8b5b5852a86eac4bccd7f2634a19fb743`
+**Source fingerprint (SHA-256):** `8b6f21c26748f48eddf2eddaed785a2331a29364744edf30e86e420b0c117e49`

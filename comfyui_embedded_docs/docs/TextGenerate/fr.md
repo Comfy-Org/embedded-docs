@@ -18,7 +18,7 @@ Le nœud TextGenerate utilise un modèle CLIP pour créer du texte à partir du 
 | `réflexion` | Active le mode réflexion si le modèle le prend en charge. La valeur par défaut est False. | BOOLEAN | Non | True ou False |
 | `utiliser le modèle par défaut` | Utilise le prompt système/gabarit intégré si le modèle en possède un. La valeur par défaut est True. Il s'agit d'un paramètre avancé. | BOOLEAN | Non | True ou False |
 | `mtp` | Décodage spéculatif avec la tête de prédiction multi-token du checkpoint. N'a aucun effet sans poids MTP. `"auto"` adapte la profondeur de brouillon, `"2"` à `"5"` la fixent. La sortie échantillonnée reste correctement distribuée mais diffère de la sortie non-MTP pour la même graine (par défaut : `"auto"`). | COMBO | Non | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
-| `system_prompt` | Remplace l'invite système dans le gabarit de chat du modèle. Ignoré lorsque le gabarit par défaut n'est pas utilisé. Connectez une entrée STRING au lieu de la saisir dans le nœud (par défaut : vide). | STRING | Non | N/A |
+| `invite système` | Remplace l'invite système dans le gabarit de chat du modèle. Ignoré lorsque le gabarit par défaut n'est pas utilisé. Connectez une entrée STRING au lieu de la saisir dans le nœud (par défaut : vide). | STRING | Non | N/A |
 
 ### Paramètres d'échantillonnage (lorsque `sampling_mode` est défini sur "on")
 

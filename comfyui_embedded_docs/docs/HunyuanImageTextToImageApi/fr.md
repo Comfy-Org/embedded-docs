@@ -8,7 +8,7 @@ Le nœud Tencent HY Image: Text to Image génère une image à partir d'une desc
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `model` | Le modèle utilisé pour la génération. Le modèle sélectionné détermine quelles entrées supplémentaires sont affichées. | DYNAMIC_COMBO | Oui | `"hy-image-3.5-preview"` |
+| `modèle` | Le modèle utilisé pour la génération. Le modèle sélectionné détermine quelles entrées supplémentaires sont affichées. | DYNAMIC_COMBO | Oui | `"hy-image-3.5-preview"` |
 
 ### Entrées hy-image-3.5-preview
 

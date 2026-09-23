@@ -8,7 +8,7 @@ Tencent HY Image: Text to Image 節點會使用騰訊的 Hunyuan Image 模型，
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用於生成的模型。所選模型決定會顯示哪些額外輸入。 | DYNAMIC_COMBO | 是 | `"hy-image-3.5-preview"` |
+| `模型` | 用於生成的模型。所選模型決定會顯示哪些額外輸入。 | DYNAMIC_COMBO | 是 | `"hy-image-3.5-preview"` |
 
 ### hy-image-3.5-preview 輸入
 

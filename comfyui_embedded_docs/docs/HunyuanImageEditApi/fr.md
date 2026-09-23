@@ -8,7 +8,7 @@ Le nœud Tencent HY Image: Edit modifie ou combine des images de référence à 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle utilisé pour l’édition. Le modèle sélectionné détermine quelles entrées supplémentaires sont affichées. | DYNAMIC_COMBO | Oui | `"hy-image-3.5-preview"` |
+| `modèle` | Le modèle utilisé pour l’édition. Le modèle sélectionné détermine quelles entrées supplémentaires sont affichées. | DYNAMIC_COMBO | Oui | `"hy-image-3.5-preview"` |
 
 ### Entrées hy-image-3.5-preview
 

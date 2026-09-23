@@ -8,7 +8,7 @@ Tencent HY Image: Edit ノードは、Tencent の Hunyuan Image モデルを使�
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 編集に使用するモデル。選択したモデルによって、表示される追加入力が決まります。 | DYNAMIC_COMBO | はい | `"hy-image-3.5-preview"` |
+| `モデル` | 編集に使用するモデル。選択したモデルによって、表示される追加入力が決まります。 | DYNAMIC_COMBO | はい | `"hy-image-3.5-preview"` |
 
 ### hy-image-3.5-preview 入力
 

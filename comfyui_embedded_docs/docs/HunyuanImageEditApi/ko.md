@@ -8,7 +8,7 @@ Tencent HY Image: Edit 노드는 Tencent의 Hunyuan Image 모델을 사용하여
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 편집에 사용되는 모델입니다. 선택한 모델에 따라 표시되는 추가 입력이 결정됩니다. | DYNAMIC_COMBO | 예 | `"hy-image-3.5-preview"` |
+| `모델` | 편집에 사용되는 모델입니다. 선택한 모델에 따라 표시되는 추가 입력이 결정됩니다. | DYNAMIC_COMBO | 예 | `"hy-image-3.5-preview"` |
 
 ### hy-image-3.5-preview 입력
 

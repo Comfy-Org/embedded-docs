@@ -8,7 +8,7 @@ The Tencent HY Image: Text to Image ノードは、Tencent の Hunyuan Image モ
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 生成に使用するモデルです。選択したモデルによって、表示される追加入力が決まります。 | DYNAMIC_COMBO | はい | `"hy-image-3.5-preview"` |
+| `モデル` | 生成に使用するモデルです。選択したモデルによって、表示される追加入力が決まります。 | DYNAMIC_COMBO | はい | `"hy-image-3.5-preview"` |
 
 ### hy-image-3.5-preview 入力
 
