@@ -18,6 +18,7 @@ TextGenerate 節點使用 CLIP 模型根據使用者的提示詞產生文字。�
 | `思考模式` | 若模型支援，則以思考模式運作。預設值為 False。 | BOOLEAN | 否 | True or False |
 | `use_default_template` | 若模型有內建的系統提示詞/範本，則使用它。預設值為 True。這是進階參數。 | BOOLEAN | 否 | True or False |
 | `mtp` | 使用檢查點的多 token 預測頭進行推測解碼。沒有 MTP 權重時無效。`"auto"` 會調整草稿深度，`"2"` 到 `"5"` 則固定該深度。取樣輸出仍保持正確的分布，但相同 `seed` 下會與非 MTP 輸出不同（預設：`"auto"`）。 | COMBO | 否 | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
+| `系統提示詞` | 取代模型聊天範本中的系統提示詞。未使用預設範本時會被忽略。以 STRING 輸入連接，而不是在節點中輸入（預設值：空）。 | STRING | 否 | N/A |
 
 ### 取樣參數（當 `sampling_mode` 為 "on" 時）
 
@@ -33,13 +34,16 @@ TextGenerate 節點使用 CLIP 模型根據使用者的提示詞產生文字。�
 
 **注意：** 只有在 `sampling_mode` 設為 "on" 時，上述取樣參數才會在節點介面中生效並顯示。當 `sampling_mode` 設為 "off" 時，沒有可用的取樣參數，節點會在不進行隨機取樣的情況下產生文字。
 
+**注意：** 當產生的文字包含推理區塊時（文字以 `<think>` 開頭，或提示詞以它結尾），推理內容會單獨傳回：`generated_text` 帶有答案，`thinking` 帶有移除開頭標籤後的推理內容。否則 `generated_text` 帶有模型產生的全部內容，而 `thinking` 為空。
+
 ## 輸出
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `generated_text` | 模型根據輸入提示詞及可選的圖像、影片或音訊所產生的文字。 | STRING |
+| `generated_text` | 模型根據輸入提示詞及可選的圖像、影片或音訊所產生的文字，推理區塊會單獨輸出至 `thinking`。 | STRING |
+| `thinking` | 模型產生的推理區塊，已移除開頭的 `<think>` 標籤。模型未產生推理區塊時為空。 | STRING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `7d9f6aee19e076aa0afb4d57060b09474206ecf2492c0944762965fabac92c51`
+**Source fingerprint (SHA-256):** `80813781c06dfb0c3b59ee72c8bd6ebced69a4de8152de916ebc15153a0757fa`

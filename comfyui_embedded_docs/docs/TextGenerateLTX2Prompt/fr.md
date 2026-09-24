@@ -15,9 +15,10 @@ Le nœud TextGenerateLTX2Prompt développe une courte invite utilisateur en une 
 | `audio` | Une entrée audio facultative pouvant être utilisée comme contexte supplémentaire pour la génération. | AUDIO | Non | - |
 | `longueur_maximale` | Le nombre maximal de tokens que le modèle de langage est autorisé à générer (par défaut : 512). | INT | Oui | 1 à 32768 |
 | `mode_d'échantillonnage` | Contrôle si un échantillonnage aléatoire est utilisé pendant la génération de texte. Lorsqu’il est défini sur `"on"`, les paramètres d’échantillonnage ci-dessous deviennent disponibles ; avec `"off"`, le nœud génère du texte sans échantillonnage aléatoire. | DYNAMIC_COMBO | Oui | `"on"`<br>`"off"` |
-| `réflexion` | Lorsque cette option est activée, le modèle reçoit l’instruction de raisonner avant de répondre. Tout bloc de raisonnement est supprimé de la sortie renvoyée (par défaut : False). | BOOLEAN | Non | True/False |
+| `réflexion` | Lorsque cette option est activée, le modèle reçoit l'instruction de raisonner avant de répondre. Tout bloc de raisonnement est renvoyé sur la sortie `thinking` plutôt que dans `generated_text` (par défaut : False). | BOOLEAN | Non | True/False |
 | `utiliser le modèle par défaut` | Lorsque cette option est activée, le nœud utilise le gabarit de chat par défaut pour le formatage (par défaut : True). Paramètre avancé. | BOOLEAN | Non | True/False |
 | `mtp` | Décodage spéculatif avec la tête de prédiction multi-token du checkpoint. N’a aucun effet sans les poids MTP. `"auto"` adapte la profondeur du brouillon ; `"2"` à `"5"` la fixent. La sortie échantillonnée reste correctement distribuée mais diffère de la sortie non-MTP pour la même graine (par défaut : `"auto"`). | COMBO | Non | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
+| `invite système` | Remplace l'invite système LTX-2 intégrée. Si elle est laissée vide, le nœud utilise ses propres instructions : l'invite image-vers-vidéo lorsqu'une `image` est connectée, sinon l'invite texte-vers-vidéo. Connectez une entrée STRING au lieu de la saisir dans le nœud (par défaut : vide). | STRING | Non | - |
 
 ### Paramètres d’échantillonnage (lorsque `sampling_mode` est "on")
 
@@ -38,15 +39,18 @@ Le nœud TextGenerateLTX2Prompt développe une courte invite utilisateur en une 
 - Si une `image` est fournie, l’invite générée est formatée pour une tâche image-vers-vidéo à l’aide d’une invite système qui décrit comment développer l’invite en fonction du contenu de l’image. Si aucune image n’est fournie, le formatage est destiné à une tâche texte-vers-vidéo à l’aide d’une invite système qui développe l’invite en une description détaillée de génération vidéo.
 - Si le nom du tokenizer du CLIP contient "gemma4", le nœud utilise les invites système LTX-2.4 et le format de chat Gemma 4. Sinon, il utilise les invites système LTX-2 (Gemma 3) et le format de chat.
 - Lorsque `thinking` est activé avec un modèle Gemma 4, le modèle est ouvert sur son canal de raisonnement ; lorsqu’il est désactivé, le modèle est ouvert directement sur le canal de réponse finale. Pour les modèles non-Gemma 4, `thinking` est transmis à l’étape de génération sous-jacente.
-- Si le modèle de langage ne produit aucun texte utilisable après suppression des blocs de raisonnement, le nœud renvoie le `prompt` d’origine à la place.
+- Un `system_prompt` remplace les instructions intégrées du mode sélectionné (image-vers-vidéo ou texte-vers-vidéo) ; lorsqu'il est vide, l'invite intégrée est utilisée.
+- Tout bloc de raisonnement est renvoyé sur la sortie `thinking` plutôt que dans `generated_text`.
+- Si le modèle de langage ne produit aucun texte utilisable, le nœud renvoie le `prompt` d'origine à la place.
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `generated_text` | L’invite de génération vidéo améliorée produite par le modèle de langage, avec tout bloc de raisonnement supprimé. Si le résultat est vide, l’invite utilisateur d’origine est renvoyée. | STRING |
+| `generated_text` | L'invite de génération vidéo améliorée produite par le modèle de langage, tout bloc de raisonnement étant séparé dans la sortie `thinking`. Si le résultat est vide, l'invite utilisateur d'origine est renvoyée. | STRING |
+| `thinking` | Le bloc de raisonnement produit par le modèle, sans la balise d'ouverture `<think>`. Vide si le modèle n'a produit aucun bloc de raisonnement ; avec les modèles Gemma 4, un bloc de raisonnement n'est attendu que si `thinking` est activé. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerateLTX2Prompt/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `1da4a388b7c358e5649b4746b9b8d288977ec6fbed3eedc4c8709187c9f7b943`
+**Source fingerprint (SHA-256):** `a601a8bff65e8ee148d09f04ac0afc201dbc9ba5e09a65856400e9be37e085bb`

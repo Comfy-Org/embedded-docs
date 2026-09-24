@@ -15,9 +15,10 @@
 | `音訊` | 選用的音訊輸入，可作為生成的額外上下文。 | AUDIO | 否 | - |
 | `最大長度` | 允許語言模型生成的 token 數量上限（預設值：512）。 | INT | 是 | 1 至 32768 |
 | `取樣模式` | 控制文字生成期間是否使用隨機取樣。設為 `"on"` 時，下方取樣參數會變為可用；設為 `"off"` 時，此節點會在不進行隨機取樣的情況下生成文字。 | DYNAMIC_COMBO | 是 | `"on"`<br>`"off"` |
-| `思考模式` | 啟用時，會指示模型在回答前進行推理。任何推理區塊都會從傳回的輸出中移除（預設值：False）。 | BOOLEAN | 否 | True/False |
+| `思考模式` | 啟用時，會指示模型在回答前進行推理。任何推理區塊會傳回到 `thinking` 輸出，而不是放在 `generated_text` 中（預設值：False）。 | BOOLEAN | 否 | True/False |
 | `use_default_template` | 啟用時，此節點會使用預設聊天範本進行格式化（預設值：True）。進階設定。 | BOOLEAN | 否 | True/False |
 | `mtp` | 使用檢查點的多 token 預測頭進行推測解碼。沒有 MTP 權重時不會有作用。`"auto"` 會調適草稿深度，`"2"` 至 `"5"` 則將其固定。取樣輸出會保持正確分佈，但在相同 `seed` 下與非 MTP 輸出不同（預設值：`"auto"`）。 | COMBO | 否 | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
+| `系統提示詞` | 取代內建的 LTX-2 系統提示。留空時，此節點使用自身的指示：連接 `image` 時使用圖像轉影片提示，否則使用文字轉影片提示。以 STRING 輸入連接，而不是在節點中輸入（預設值：空）。 | STRING | 否 | - |
 
 ### 取樣參數（當 `sampling_mode` 為 "on" 時）
 
@@ -38,15 +39,18 @@
 - 如果提供 `image`，所生成的提示會針對圖像轉影片任務進行格式化，並使用描述如何根據圖像內容擴展提示的系統提示。如果未提供圖像，則會針對文字轉影片任務進行格式化，並使用將提示擴展為詳細影片生成描述的系統提示。
 - 如果 CLIP 分詞器的名稱包含 "gemma4"，此節點會使用 LTX-2.4 系統提示與 Gemma 4 聊天格式。否則，會使用 LTX-2 (Gemma 3) 系統提示與聊天格式。
 - 當 Gemma 4 模型啟用 `thinking` 時，模型會在其推理通道上開啟；停用時，模型會直接在最終答案通道上開啟。對於非 Gemma 4 模型，`thinking` 會傳遞至底層生成步驟。
-- 如果語言模型在移除推理區塊後未產生任何可用文字，此節點會改為傳回原始 `prompt`。
+- `system_prompt` 會取代所選模式（圖像轉影片或文字轉影片）的內建指示；為空時使用內建提示。
+- 任何推理區塊會傳回到 `thinking` 輸出，而不是 `generated_text`。
+- 如果語言模型未產生任何可用文字，此節點會改為傳回原始 `prompt`。
 
 ## 輸出
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `generated_text` | 由語言模型產生的增強影片生成提示，並已移除任何推理區塊。如果結果為空，則傳回原始使用者提示。 | STRING |
+| `generated_text` | 由語言模型產生的增強影片生成提示，推理區塊會單獨輸出至 `thinking`。如果結果為空，則傳回原始使用者提示。 | STRING |
+| `thinking` | 模型產生的推理區塊，已移除開頭的 `<think>` 標籤。模型未產生推理區塊時為空；對於 Gemma 4 模型，只有啟用 `thinking` 時才預期會有推理區塊。 | STRING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerateLTX2Prompt/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `1da4a388b7c358e5649b4746b9b8d288977ec6fbed3eedc4c8709187c9f7b943`
+**Source fingerprint (SHA-256):** `a601a8bff65e8ee148d09f04ac0afc201dbc9ba5e09a65856400e9be37e085bb`

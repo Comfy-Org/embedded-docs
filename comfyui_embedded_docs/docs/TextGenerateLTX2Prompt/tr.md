@@ -15,9 +15,10 @@ TextGenerateLTX2Prompt düğümü, kısa bir kullanıcı istemini LTX-2 serisi v
 | `ses` | Üretim için ek bağlam olarak kullanılabilen isteğe bağlı ses girdisi. | AUDIO | Hayır | - |
 | `maksimum_uzunluk` | Dil modelinin üretebileceği maksimum token sayısı (varsayılan: 512). | INT | Evet | 1 ile 32768 arası |
 | `örnekleme_modu` | Metin üretimi sırasında rastgele örnekleme kullanılıp kullanılmayacağını kontrol eder. `"on"` olarak ayarlandığında aşağıdaki örnekleme parametreleri kullanılabilir hale gelir; `"off"` ile düğüm, rastgele örnekleme olmadan metin üretir. | DYNAMIC_COMBO | Evet | `"on"`<br>`"off"` |
-| `düşünme` | Etkinleştirildiğinde, modelin yanıtlamadan önce akıl yürütmesi talimatı verilir. Döndürülen çıktıdan tüm akıl yürütme bloğu çıkarılır (varsayılan: False). | BOOLEAN | Hayır | True/False |
+| `düşünme` | Etkinleştirildiğinde, modelin yanıtlamadan önce akıl yürütmesi talimatı verilir. Akıl yürütme bloğu `generated_text` yerine `thinking` çıktısında döndürülür (varsayılan: False). | BOOLEAN | Hayır | True/False |
 | `use_default_template` | Etkinleştirildiğinde, düğüm biçimlendirme için varsayılan sohbet şablonunu kullanır (varsayılan: True). Gelişmiş ayar. | BOOLEAN | Hayır | True/False |
 | `mtp` | Checkpoint'in çoklu token tahmini başlığıyla spekülatif kod çözme. MTP ağırlıkları olmadan etkisi yoktur. `"auto"` taslak derinliğini uyarlar, `"2"` ile `"5"` bunu sabitler. Örneklenen çıktı doğru dağılımda kalır ancak aynı seed için MTP olmayan çıktıdan farklıdır (varsayılan: `"auto"`). | COMBO | Hayır | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
+| `system_prompt` | Yerleşik LTX-2 sistem istemini değiştirir. Boş bırakılırsa düğüm kendi talimatlarını kullanır: `image` bağlıysa görüntüden videoya istemi, aksi halde metinden videoya istemi. Düğümde yazmak yerine bir STRING girdisi bağlayın (varsayılan: boş). | STRING | Hayır | - |
 
 ### Örnekleme Parametreleri (`sampling_mode` "on" olduğunda)
 
@@ -38,15 +39,18 @@ TextGenerateLTX2Prompt düğümü, kısa bir kullanıcı istemini LTX-2 serisi v
 - Bir `image` sağlanırsa, üretilen istem, istemin görüntünün içeriğine göre nasıl genişletileceğini açıklayan bir sistem istemi kullanılarak görüntüden videoya görevi için biçimlendirilir. Görüntü sağlanmazsa, biçimlendirme, istemi ayrıntılı bir video üretim açıklamasına genişleten bir sistem istemi kullanılarak metinden videoya görevi için yapılır.
 - CLIP tokenizer'ının adı "gemma4" içeriyorsa, düğüm LTX-2.4 sistem istemlerini ve Gemma 4 sohbet biçimini kullanır. Aksi takdirde LTX-2 (Gemma 3) sistem istemlerini ve sohbet biçimini kullanır.
 - `thinking`, bir Gemma 4 modeliyle etkinleştirildiğinde model akıl yürütme kanalında açılır; devre dışı bırakıldığında model doğrudan son yanıt kanalında açılır. Gemma 4 olmayan modeller için `thinking`, temel üretim adımına iletilir.
-- Dil modeli, akıl yürütme blokları çıkarıldıktan sonra kullanılabilir metin üretmezse, düğüm bunun yerine özgün `prompt` değerini döndürür.
+- Bir `system_prompt`, seçilen modun (görüntüden videoya veya metinden videoya) yerleşik talimatlarını değiştirir; boş olduğunda yerleşik istem kullanılır.
+- Akıl yürütme bloğu `generated_text` yerine `thinking` çıktısında döndürülür.
+- Dil modeli kullanılabilir metin üretmezse, düğüm bunun yerine özgün `prompt` değerini döndürür.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `generated_text` | Dil modeli tarafından üretilen, tüm akıl yürütme blokları çıkarılmış geliştirilmiş video üretim istemi. Sonuç boşsa, özgün kullanıcı istemi döndürülür. | STRING |
+| `generated_text` | Dil modeli tarafından üretilen geliştirilmiş video üretim istemi; akıl yürütme bloğu `thinking` çıktısına ayrılır. Sonuç boşsa, özgün kullanıcı istemi döndürülür. | STRING |
+| `thinking` | Modelin ürettiği akıl yürütme bloğu; açılış `<think>` etiketi çıkarılmıştır. Model akıl yürütme bloğu üretmediyse boştur; Gemma 4 modellerinde akıl yürütme bloğu yalnızca `thinking` etkinleştirildiğinde beklenir. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerateLTX2Prompt/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `1da4a388b7c358e5649b4746b9b8d288977ec6fbed3eedc4c8709187c9f7b943`
+**Source fingerprint (SHA-256):** `a601a8bff65e8ee148d09f04ac0afc201dbc9ba5e09a65856400e9be37e085bb`
