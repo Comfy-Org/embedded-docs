@@ -29,7 +29,7 @@ ByteDance Seedream 5.0 Layer Separation 會將一張影像分解成一個背景�
 |-----------|-------------|-----------|----------|-------|
 | `prompt_optimization` | 提示詞最佳化模式："standard" 可提供更高品質，"fast" 則縮短生成時間。僅適用於 Seedream 5.0 Pro。預設值："standard"。 | COMBO | 是 | "standard"<br>"fast" |
 
-**注意：** 輸入 `image` 必須是單一影像；不支援批次。影像必須至少 512x512 像素，且長寬比介於 1:16 與 16:1 之間。Seedream 5.0 Flash 一律使用標準提示詞最佳化。
+**注意：** 輸入 `image` 必須是單一影像；不支援批次。影像必須至少 512x512 像素，且長寬比介於 1:16 與 16:1 之間。Seedream 5.0 Flash 沒有 `prompt_optimization` 輸入。
 
 ## 輸出
 

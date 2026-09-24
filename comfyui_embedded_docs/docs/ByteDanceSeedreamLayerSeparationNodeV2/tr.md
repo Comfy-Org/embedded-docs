@@ -29,7 +29,7 @@ Bu girdiler her iki modelde de kullanılabilir.
 |-----------|-------------|-----------|----------|-------|
 | `prompt_optimization` | İstem optimizasyonu modu: "standard" daha yüksek kalite, "fast" daha kısa üretim süresi verir. Yalnızca Seedream 5.0 Pro ile kullanılabilir. Varsayılan: "standard". | COMBO | Evet | "standard"<br>"fast" |
 
-**Not:** `image` girdisi tek bir görüntü olmalıdır; toplu işlemler desteklenmez. Görüntü en az 512x512 piksel olmalı ve en-boy oranı 1:16 ile 16:1 arasında olmalıdır. Seedream 5.0 Flash her zaman standart istem optimizasyonunu kullanır.
+**Not:** `image` girdisi tek bir görüntü olmalıdır; toplu işlemler desteklenmez. Görüntü en az 512x512 piksel olmalı ve en-boy oranı 1:16 ile 16:1 arasında olmalıdır. Seedream 5.0 Flash'ta `prompt_optimization` girişi yoktur.
 
 ## Çıktılar
 

@@ -29,7 +29,7 @@ ByteDance Seedream 5.0 Layer Separation 将图像分解为一个背景底板以�
 |-----------|-------------|-----------|----------|-------|
 | `prompt_optimization` | 提示优化模式："standard" 提供更高质量，"fast" 缩短生成时间。仅在 Seedream 5.0 Pro 中可用。默认："standard"。 | COMBO | 是 | "standard"<br>"fast" |
 
-**注意：** 输入 `image` 必须是单张图像；不支持批次。图像必须至少为 512x512 像素，宽高比在 1:16 到 16:1 之间。Seedream 5.0 Flash 始终使用标准提示优化。
+**注意：** 输入 `image` 必须是单张图像；不支持批次。图像必须至少为 512x512 像素，宽高比在 1:16 到 16:1 之间。Seedream 5.0 Flash 没有 `prompt_optimization` 输入。
 
 ## 输出
 

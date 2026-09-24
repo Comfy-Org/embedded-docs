@@ -29,7 +29,7 @@ Estas entradas están disponibles con ambos modelos.
 |-----------|-------------|-----------|----------|-------|
 | `prompt_optimization` | Modo de optimización de prompt: "standard" ofrece mayor calidad, "fast" un tiempo de generación más corto. Solo disponible con Seedream 5.0 Pro. Predeterminado: "standard". | COMBO | Sí | "standard"<br>"fast" |
 
-**Nota:** La entrada `image` debe ser una sola imagen; no se admiten lotes. La imagen debe tener al menos 512x512 píxeles y una relación de aspecto entre 1:16 y 16:1. Seedream 5.0 Flash siempre usa la optimización de prompt estándar.
+**Nota:** La entrada `image` debe ser una sola imagen; no se admiten lotes. La imagen debe tener al menos 512x512 píxeles y una relación de aspecto entre 1:16 y 16:1. Seedream 5.0 Flash no tiene la entrada `prompt_optimization`.
 
 ## Salidas
 
