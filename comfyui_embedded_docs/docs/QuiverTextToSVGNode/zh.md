@@ -11,7 +11,7 @@ Quiver Text to SVG 节点使用 Quiver AI 的模型，根据文本描述生成�
 | `reference_images` | 最多 4 张参考图像用于引导生成。这是一个可选输入。 | IMAGE | 否 | 0 到 4 images |
 | `model` | 用于 SVG 生成的模型。选择模型会显示该模型特有的额外参数：`temperature`、`top_p` 和 `presence_penalty`。 | DYNAMIC_COMBO | 是 | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
 | `seed` | 用于确定节点是否应重新运行的种子；无论种子如何，实际结果都是不确定的。默认值：0。 | INT | 是 | 0 到 2147483647 |
-| `reasoning_effort` | 模型在绘制前花费多少推理。更高级别可提高细节并消耗更多 token。仅由 Arrow 2 模型使用（默认值："high"）。 | COMBO | 否 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
+| `推理强度` | 模型在绘制前花费多少推理。更高级别可提高细节并消耗更多 token。仅由 Arrow 2 模型使用（默认值："high"）。 | COMBO | 否 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
 
 **注意：** `reference_images` 输入最多接受 4 张图像。
 

@@ -18,7 +18,7 @@ TextGenerateLTX2Prompt 节点可将简短的用户提示词扩展为详细的音
 | `思考模式` | 启用后，模型会被指示在回答前先进行推理。任何推理块会返回到 `thinking` 输出，而不是放在 `generated_text` 中（默认：False）。 | BOOLEAN | 否 | True/False |
 | `use_default_template` | 启用后，节点使用默认聊天模板进行格式化（默认：True）。高级设置。 | BOOLEAN | 否 | True/False |
 | `mtp` | 使用检查点的多 token 预测头进行投机解码。没有 MTP 权重时无效。`"auto"` 会自适应草稿深度，`"2"` 到 `"5"` 则固定草稿深度。采样输出仍保持正确分布，但对于相同种子与非 MTP 输出不同（默认：`"auto"`）。 | COMBO | 否 | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
-| `system_prompt` | 替换内置的 LTX-2 系统提示。留空时，节点使用自身的指令：连接 `image` 时使用图生视频提示，否则使用文生视频提示。以 STRING 输入连接，而不是在节点中输入（默认值：空）。 | STRING | 否 | - |
+| `系统提示词` | 替换内置的 LTX-2 系统提示。留空时，节点使用自身的指令：连接 `image` 时使用图生视频提示，否则使用文生视频提示。以 STRING 输入连接，而不是在节点中输入（默认值：空）。 | STRING | 否 | - |
 
 ### 采样参数（当 `sampling_mode` 为 "on" 时）
 
