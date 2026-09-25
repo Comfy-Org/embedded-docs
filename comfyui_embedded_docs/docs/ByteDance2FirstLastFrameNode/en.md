@@ -8,7 +8,7 @@ This node generates a video from a required first frame image and an optional la
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Seedance 2.5 for the newest model, videos up to 30 seconds and mp4/mov output; Seedance 2.5 Draft for a fast 480p preview whose `draft_task_id` output renders the 1080p final in the ByteDance Seedance 2.5 Draft to Final Video node; Seedance 2.0 for maximum quality and 4k; Fast for speed optimization; Mini for the fastest, lowest-cost generation. Selecting a model reveals model-specific inputs below. | DYNAMIC_COMBO | Yes | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `model` | Seedance 2.5 for the newest model, videos up to 30 seconds and mp4 output; Seedance 2.5 Draft for a fast 480p preview whose `draft_task_id` output renders the 1080p final in the ByteDance Seedance 2.5 Draft to Final Video node; Seedance 2.0 for maximum quality and 4k; Fast for speed optimization; Mini for the fastest, lowest-cost generation. Selecting a model reveals model-specific inputs below. | DYNAMIC_COMBO | Yes | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `first_frame` | First frame image for the video. | IMAGE | No | - |
 | `last_frame` | Last frame image for the video. | IMAGE | No | - |
 | `first_frame_asset_id` | Seedance asset_id to use as the first frame. Mutually exclusive with the `first_frame` image input. Default is an empty string. | STRING | No | - |
@@ -62,7 +62,7 @@ Shared by `Seedance 2.0 Fast` and `Seedance 2.0 Mini`.
 - The `last_frame` and `last_frame_asset_id` inputs are optional, but you cannot provide both for the same frame.
 - Asset IDs must reference existing, active Seedance Image assets.
 - The `prompt` input is required and cannot be empty.
-- The `draft_task_id` output is only produced by `Seedance 2.5 Draft`; with any other model it must be left unconnected, otherwise the run fails.
+- Every run returns its task ID as `draft_task_id`, but only a `Seedance 2.5 Draft` run's ID can be rendered by the ByteDance Seedance 2.5 Draft to Final Video node. With any other model the output must be left unconnected, otherwise the run fails.
 - With `Seedance 2.5`, the output aspect ratio is always adaptive and follows the first frame's own aspect ratio, so no `ratio` input is shown.
 - With Seedance 2.0 family models and local frame images, the images are center-cropped and resized to the target output resolution and ratio before generation. When `ratio` is `adaptive`, the nearest supported ratio to the input image is used.
 - Local frame images are validated for supported aspect ratio and dimensions; oversized images are downscaled.
@@ -72,7 +72,7 @@ Shared by `Seedance 2.0 Fast` and `Seedance 2.0 Mini`.
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
 | `output` | The generated video. | VIDEO |
-| `draft_task_id` | Task ID of the draft run. Only the Seedance 2.5 Draft model produces it; connect it to the ByteDance Seedance 2.5 Draft to Final Video node to render the 1080p final. | STRING |
+| `draft_task_id` | Task ID returned by the run. Only a `Seedance 2.5 Draft` run produces a draft that the ByteDance Seedance 2.5 Draft to Final Video node can render; with any other model the output must be left unconnected, otherwise the run fails. | STRING |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/en.md)
 

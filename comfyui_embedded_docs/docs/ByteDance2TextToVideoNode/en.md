@@ -8,7 +8,7 @@ This node generates a video from a text prompt using ByteDance's Seedance 2.5 or
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The Seedance model to use for video generation. Seedance 2.5 is the newest model, supporting videos up to 30 seconds and mp4/mov output; Seedance 2.5 Draft renders a fast 480p preview whose `draft_task_id` output renders the 1080p final in the ByteDance Seedance 2.5 Draft to Final Video node; Seedance 2.0 is for maximum quality and 4k; Seedance 2.0 Fast is for speed optimization; Seedance 2.0 Mini is for the fastest, lowest-cost generation. Selecting a model reveals additional inputs for the prompt, resolution, aspect ratio, duration, and audio generation. | DYNAMIC_COMBO | Yes | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `model` | The Seedance model to use for video generation. Seedance 2.5 is the newest model, supporting videos up to 30 seconds and mp4 output; Seedance 2.5 Draft renders a fast 480p preview whose `draft_task_id` output renders the 1080p final in the ByteDance Seedance 2.5 Draft to Final Video node; Seedance 2.0 is for maximum quality and 4k; Seedance 2.0 Fast is for speed optimization; Seedance 2.0 Mini is for the fastest, lowest-cost generation. Selecting a model reveals additional inputs for the prompt, resolution, aspect ratio, duration, and audio generation. | DYNAMIC_COMBO | Yes | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `seed` | Controls whether the node should re-run; results are non-deterministic regardless of seed. (default: 0) | INT | No | 0 to 2147483647 |
 | `watermark` | Whether to add a watermark to the video. (default: False) This is an advanced setting. | BOOLEAN | No | True / False |
 
@@ -49,14 +49,14 @@ Shared by Seedance 2.0 Fast and Seedance 2.0 Mini; both models expose the same p
 | `duration` | Duration of the output video in seconds. (default: 7) | INT | Yes | 4 to 15 |
 | `generate_audio` | Enable audio generation for the output video. (default: True) | BOOLEAN | Yes | True / False |
 
-**Note:** The `model` selector is dynamic; the inputs shown under each model section appear when that model is selected. The prompt must be at least 1 character long after removing whitespace. Resolution and duration limits depend on the selected model: Seedance 2.5 supports 480p/720p/1080p and 4 to 30 seconds, Seedance 2.0 supports 480p/720p/1080p/4k and 4 to 15 seconds, and Seedance 2.0 Fast and Seedance 2.0 Mini support only 480p/720p and 4 to 15 seconds; Seedance 2.5 Draft supports 480p only and 4 to 30 seconds. The `draft_task_id` output is only produced by Seedance 2.5 Draft, so with any other model it must be left unconnected, otherwise the run fails. The `seed` value only controls whether the node re-runs; it does not make results deterministic.
+**Note:** The `model` selector is dynamic; the inputs shown under each model section appear when that model is selected. The prompt must be at least 1 character long after removing whitespace. Resolution and duration limits depend on the selected model: Seedance 2.5 supports 480p/720p/1080p and 4 to 30 seconds, Seedance 2.0 supports 480p/720p/1080p/4k and 4 to 15 seconds, and Seedance 2.0 Fast and Seedance 2.0 Mini support only 480p/720p and 4 to 15 seconds; Seedance 2.5 Draft supports 480p only and 4 to 30 seconds. Every run returns its task ID as `draft_task_id`, but only a `Seedance 2.5 Draft` run's ID can be rendered by the ByteDance Seedance 2.5 Draft to Final Video node, so with any other model the output must be left unconnected, otherwise the run fails. The `seed` value only controls whether the node re-runs; it does not make results deterministic.
 
 ## Outputs
 
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
 | `video` | The generated video file. | VIDEO |
-| `draft_task_id` | Task ID of the draft run. Only the Seedance 2.5 Draft model produces it; connect it to the ByteDance Seedance 2.5 Draft to Final Video node to render the 1080p final. | STRING |
+| `draft_task_id` | Task ID returned by the run. Only a `Seedance 2.5 Draft` run produces a draft that the ByteDance Seedance 2.5 Draft to Final Video node can render; with any other model the output must be left unconnected, otherwise the run fails. | STRING |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2TextToVideoNode/en.md)
 

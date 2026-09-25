@@ -6,7 +6,7 @@ This node renders the 1080p final video of a Seedance 2.5 Draft. A draft is a fa
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `draft_task_id` | The `draft_task_id` output of a Seedance 2.5 node run with the Seedance 2.5 Draft model, or a pasted draft task ID. Set that node's seed control to fixed, otherwise the next run generates a new draft instead of reusing the one you reviewed. | STRING | Yes | - |
+| `draft_task_id` | The `draft_task_id` output of a Seedance 2.5 node run with the Seedance 2.5 Draft model, or a pasted draft task ID. When you rerun the producer node, set its seed control to fixed, otherwise the next run generates a new draft instead of reusing the one you reviewed. | STRING | Yes | - |
 | `watermark` | Whether to add a watermark to the video. Default is False. This is an advanced setting. | BOOLEAN | No | True / False |
 
 ## Outputs
