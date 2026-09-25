@@ -18,7 +18,7 @@ TextGenerate 节点使用 CLIP 模型根据用户提示词生成文本。它可�
 | `思考模式` | 如果模型支持，则在思考模式下运行。默认值为 False。 | BOOLEAN | 否 | True or False |
 | `use_default_template` | 如果模型有内置系统提示词/模板，则使用它。默认值为 True。这是一个高级参数。 | BOOLEAN | 否 | True or False |
 | `mtp` | 使用 checkpoint 的多 token 预测头进行投机解码。没有 MTP 权重时没有效果。`"auto"` 会自适应草稿深度，`"2"` 到 `"5"` 会将其固定。采样输出仍保持正确分布，但在相同 `seed` 下会与非 MTP 输出不同（默认值：`"auto"`）。 | COMBO | 否 | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
-| `system_prompt` | 替换模型聊天模板中的系统提示词。未使用默认模板时会被忽略。以 STRING 输入连接，而不是在节点中输入（默认值：空）。 | STRING | 否 | N/A |
+| `系统提示词` | 替换模型聊天模板中的系统提示词。未使用默认模板时会被忽略。以 STRING 输入连接，而不是在节点中输入（默认值：空）。 | STRING | 否 | N/A |
 
 ### 采样参数（当 `sampling_mode` 为 "on" 时）
 

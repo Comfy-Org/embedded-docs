@@ -10,7 +10,7 @@
 | `auto_crop` | 自动裁剪到主要主体（默认：False）。 | BOOLEAN | 是 | True<br>False |
 | `model` | 用于 SVG 矢量化的模型。选择模型后会显示该模型特有的附加参数：`target_size`（以像素为单位的方形缩放目标；0 保持源图像尺寸，否则为 128 到 4096）、`temperature`、`top_p` 和 `presence_penalty`。 | DYNAMIC_COMBO | 是 | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
 | `seed` | 用于确定节点是否应重新运行的种子；无论种子值如何，实际结果都是不确定的。此参数具有“生成后控制”功能（默认：0）。 | INT | 是 | 0 到 2147483647 |
-| `reasoning_effort` | 模型在绘制前花费多少推理。更高级别会提升细节并消耗更多 token。仅由 Arrow 2 模型使用（默认："high"）。 | COMBO | 否 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
+| `推理强度` | 模型在绘制前花费多少推理。更高级别会提升细节并消耗更多 token。仅由 Arrow 2 模型使用（默认："high"）。 | COMBO | 否 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
 
 ## 输出
 

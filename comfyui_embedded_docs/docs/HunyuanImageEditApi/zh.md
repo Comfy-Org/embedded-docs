@@ -8,7 +8,7 @@ Tencent HY Image: Edit 节点使用腾讯的 Hunyuan Image 模型，根据文本
 
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用于编辑的模型。所选模型决定显示哪些额外输入。 | DYNAMIC_COMBO | 是 | `"hy-image-3.5-preview"` |
+| `模型` | 用于编辑的模型。所选模型决定显示哪些额外输入。 | DYNAMIC_COMBO | 是 | `"hy-image-3.5-preview"` |
 
 ### hy-image-3.5-preview 输入
 

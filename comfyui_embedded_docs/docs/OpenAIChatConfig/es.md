@@ -1,25 +1,25 @@
 # Opciones Avanzadas de OpenAI ChatGPT
 
-El nodo OpenAIChatConfig define opciones avanzadas que controlan cómo el nodo OpenAI Chat genera respuestas. Permite establecer la estrategia de truncamiento, limitar el número de tokens de salida, proporcionar instrucciones personalizadas y elegir cuánto esfuerzo de razonamiento debe aplicar el modelo antes de responder.
+El nodo OpenAIChatConfig define opciones avanzadas que controlan cómo el nodo OpenAI Chat genera respuestas. Permite establecer la estrategia de truncamiento, limitar la cantidad de tokens de salida, proporcionar instrucciones personalizadas y elegir cuánto esfuerzo de razonamiento debe aplicar el modelo antes de responder.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
-|-----------|-------------|---------------|-------------|-------|
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|---------------|-----------|-------|
 | `truncamiento` | La estrategia de truncamiento que se usará para la respuesta del modelo. auto: si el contexto de esta respuesta y las anteriores supera el tamaño de la ventana de contexto del modelo, el modelo truncará la respuesta para ajustarla a la ventana de contexto eliminando elementos de entrada en medio de la conversación. disabled: si una respuesta del modelo supera el tamaño de la ventana de contexto de un modelo, la solicitud fallará con un error 400 (predeterminado: "auto") | COMBO | Sí | "auto"<br>"disabled" |
-| `tokens_salida_max` | Un límite superior para la cantidad de tokens que se pueden generar en una respuesta, incluidos los tokens de salida visibles y los tokens de razonamiento (predeterminado: 4096) | INT | No | 16 a 16384 |
+| `tokens_salida_max` | Un límite superior para la cantidad de tokens que se pueden generar para una respuesta, incluidos los tokens de salida visibles y los tokens de razonamiento (predeterminado: 4096) | INT | No | 16 a 16384 |
 | `instrucciones` | Instrucciones para el modelo sobre cómo generar la respuesta (se admite entrada multilínea) | STRING | No | - |
-| `reasoning_effort` | Cuánto razona el modelo antes de responder. "default" deja la elección al modelo. Los niveles admitidos varían según el modelo: GPT-6 Astra low-max, GPT-5.6 none-max (sin minimal), GPT-5.5 none-xhigh, GPT-5.5 Pro medium-xhigh, GPT-5 minimal-high, serie o low-high; GPT-4.1 no tiene razonamiento. Los niveles no admitidos se rechazan antes de enviar la solicitud. (predeterminado: "default") | COMBO | No | "default"<br>"none"<br>"minimal"<br>"low"<br>"medium"<br>"high"<br>"xhigh"<br>"max" |
+| `reasoning_effort` | Cuánto razona el modelo antes de responder. "default" deja la elección al modelo. Los niveles admitidos varían según el modelo: GPT-6 Astra low-max, GPT-6 Sol/Luna y GPT-5.6 none-max (sin minimal), GPT-5.5 none-xhigh, GPT-5.5 Pro medium-xhigh, GPT-5 minimal-high, o-series low-high; GPT-4.1 no tiene razonamiento. Los niveles no admitidos se rechazan antes de enviar la solicitud. (predeterminado: "default") | COMBO | No | "default"<br>"none"<br>"minimal"<br>"low"<br>"medium"<br>"high"<br>"xhigh"<br>"max" |
 
-Nota: aunque `top_p` y `temperature` figuran como propiedades en la especificación de la API, no son compatibles con todos los modelos y, por lo tanto, no se exponen como entradas.
+Nota: Aunque `top_p` y `temperature` se enumeran como propiedades en la especificación de la API, no son compatibles con todos los modelos y, por lo tanto, no se exponen como entradas.
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `OPENAI_CHAT_CONFIG` | Objeto de configuración que contiene los ajustes avanzados especificados, para usar con nodos OpenAI Chat | OPENAI_CHAT_CONFIG |
+| `OPENAI_CHAT_CONFIG` | Objeto de configuración que contiene las opciones avanzadas especificadas, para usarlo con los nodos OpenAI Chat | OPENAI_CHAT_CONFIG |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `37d18a13b9d5bb36359603e5bab5918e7fea200ac552ea8439fff1488a88263c`
+**Source fingerprint (SHA-256):** `4237ad464230c464223c184eab38c7d707a29ba5f47da04c2ec2034cd4347207`
