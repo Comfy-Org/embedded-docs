@@ -13,7 +13,7 @@ El nodo `ConditioningTimestepsRange` crea tres rangos de pasos de tiempo distint
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `ANTES_DE_RANGO` | El rango principal de pasos de tiempo definido por start_percent y end_percent | TIMESTEPS_RANGE |
+| `TIMESTEPS_RANGE` | El rango principal de pasos de tiempo definido por start_percent y end_percent | TIMESTEPS_RANGE |
 | `ANTES_DE_RANGO` | El rango de pasos de tiempo desde 0.0 hasta start_percent | TIMESTEPS_RANGE |
 | `DESPUÉS_DE_RANGO` | El rango de pasos de tiempo desde end_percent hasta 1.0 | TIMESTEPS_RANGE |
 
