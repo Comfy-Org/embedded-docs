@@ -2,11 +2,13 @@
 
 Le nœud ByteDance Seedream 4.5 & 5.0 offre des capacités unifiées de génération texte-image et d'édition précise par phrase unique, avec une résolution allant jusqu'à 4K. Il peut créer de nouvelles images à partir de descriptions textuelles ou modifier des images existantes à l'aide d'instructions textuelles. Le nœud prend en charge à la fois la génération d'images uniques et la génération séquentielle de plusieurs images connexes.
 
+**Remarque :** Ce nœud est marqué comme obsolète dans le code source.
+
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle Seedream à utiliser pour la génération. Les modèles disponibles incluent les variantes seedream-4-0, seedream-4-5 et seedream-5-0. | STRING | Oui | Voir Description |
+| `model` | Le modèle Seedream à utiliser pour la génération. Les modèles disponibles incluent les variantes seedream-4-0, seedream-4-5 et seedream-5-0. | STRING | Oui | "seedream 5.0 pro"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
 | `prompt` | Description textuelle pour créer ou modifier une image. Doit comporter au moins 1 caractère. | STRING | Oui | - |
 | `image` | Image(s) d'entrée pour la génération image-à-image. Image(s) de référence pour la génération à référence unique ou multiple. Maximum de 10 images de référence pour la plupart des modèles, ou 14 pour seedream-5-0-260128. | IMAGE | Non | - |
 | `size_preset` | Choisissez une taille recommandée. Sélectionnez Personnalisé pour utiliser la largeur et la hauteur ci-dessous. Par défaut : premier préréglage de RECOMMENDED_PRESETS_SEEDREAM_4. | STRING | Non | Plusieurs options disponibles |
@@ -34,4 +36,4 @@ Le nœud ByteDance Seedream 4.5 & 5.0 offre des capacités unifiées de généra
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `ce130246026e0f5036e137bea4e193f51097e0812459586dcbeb87ef01975630`
+**Source fingerprint (SHA-256):** `78086df431c887c241796ddb5db1ebbfe5b57faab0839da842be81480f1e113b`

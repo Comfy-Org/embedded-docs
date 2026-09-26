@@ -15,7 +15,7 @@ ConditioningTimestepsRange 節點會建立三個不同的時間步長範圍，�
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `範圍之前` | 由 start_percent 和 end_percent 定義的主要時間步長範圍 | TIMESTEPS_RANGE |
+| `TIMESTEPS_RANGE` | 由 start_percent 和 end_percent 定義的主要時間步長範圍 | TIMESTEPS_RANGE |
 | `範圍之前` | 從 0.0 到 start_percent 的時間步長範圍 | TIMESTEPS_RANGE |
 | `範圍之後` | 從 end_percent 到 1.0 的時間步長範圍 | TIMESTEPS_RANGE |
 

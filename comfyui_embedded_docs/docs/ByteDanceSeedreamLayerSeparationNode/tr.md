@@ -1,18 +1,20 @@
-# ByteDance Seedream 5.0 Pro Katman Ayrıştırma
+# ByteDance Seedream 5.0 Pro Katman Ayrıştırma (Eski)
 
 ByteDance Seedream 5.0 Pro Layer Separation, bir görüntüyü bir arka plan plakası ve yeniden konumlandırılabilir en fazla 16 şeffaf katmana ayırır; her katmanın yığın sırası, sınırlayıcı kutusu, adı ve açıklaması vardır. Arka planı, maskelerle birlikte katman başına görüntüleri, yerleştirme kutularını ve düzenlemeye hazır bir katman yığınını döndürür.
+
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `görüntü` | Ayrıştırılacak görüntü. Tam olarak bir görüntü, en az 512x512 piksel, en-boy oranı 1:16 ile 16:1 arasında. Yaklaşık 4MP'den büyük girdiler yüklemeden önce küçültülür. | IMAGE | Evet | Single image |
-| `istem` | Görüntünün nasıl ayrıştırılacağı. Tüm ana öğeleri otomatik algılamak ve ayırmak için boş bırakın. Ayrıştırmayı kontrol etmek için öğeleri doğal dille tanımlayın veya `<bbox>left top right bottom</bbox>` etiketleriyle (0-1000 binde bir koordinatlar) tam bölgeleri hedefleyin. Varsayılan: boş dize. | STRING | Evet | Multiline text |
+| `görüntü` | Ayrıştırılacak görüntü. Tam olarak bir görüntü, en az 512x512 piksel, en-boy oranı 1:16 ile 16:1 arasında. Yaklaşık 4MP'den büyük girdiler yüklemeden önce küçültülür. | IMAGE | Evet | Tek görüntü |
+| `istem` | Görüntünün nasıl ayrıştırılacağı. Tüm ana öğeleri otomatik algılamak ve ayırmak için boş bırakın. Ayrıştırmayı kontrol etmek için öğeleri doğal dille tanımlayın veya `<bbox>left top right bottom</bbox>` etiketleriyle (0-1000 binde bir koordinatlar) tam bölgeleri hedefleyin. Varsayılan: boş dize. | STRING | Evet | Çok satırlı metin |
 | `boyut` | Çıktı çözünürlük düzeyi. "auto" girdi görüntü boyutunu izler (1K-2K aralığına sınırlandırılır). Varsayılan: "auto". | COMBO | Evet | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
-| `tohum` | Üretim için kullanılacak tohum. Varsayılan: 0. | INT | Evet | 0 to 2147483647 |
+| `tohum` | Üretim için kullanılacak tohum. Varsayılan: 0. | INT | Evet | 0 ile 2147483647 arası |
 | `istem_optimizasyonu` | İstem optimizasyonu modu: "standard" daha yüksek kalite, "fast" daha kısa üretim süresi verir. Varsayılan: "standard". | COMBO | Hayır | "standard"<br>"fast" |
 | `filigran` | Görüntülere "AI generated" filigranı eklenip eklenmeyeceği. Varsayılan: false. | BOOLEAN | Hayır | false<br>true |
-| `katmanları_kırp` | Katmanlar/maskeler toplu çıktılarının geometrisi (`layer_stack` etkilenmez ve her zaman sıkı kırpılmıştır). Tam tuval: her katman, taban boyutunda bir tuval üzerinde sınırlayıcı kutusu konumunda - ImageCompositeMasked ile doğrudan yeniden birleştirin. Minimum boyut: her katman sınırlayıcı kutusuna kırpılır (toplu işlem için en büyük katmana kadar doldurulur) - çok daha küçük tensörler; `bboxes` çıktısını kullanarak Layers From Bounding Boxes ile yerleşimi yeniden oluşturun. Varsayılan: false (tam tuval). | BOOLEAN | Hayır | false (full canvas)<br>true (minimal size) |
+| `katmanları_kırp` | Katmanlar/maskeler toplu çıktılarının geometrisi (`layer_stack` etkilenmez ve her zaman sıkı kırpılmıştır). Tam tuval: her katman, taban boyutunda bir tuval üzerinde sınırlayıcı kutusu konumunda - ImageCompositeMasked ile doğrudan yeniden birleştirin. Minimum boyut: her katman sınırlayıcı kutusuna kırpılır (toplu işlem için en büyük katmana kadar doldurulur) - çok daha küçük tensörler; `bboxes` çıktısını kullanarak Layers From Bounding Boxes ile yerleşimi yeniden oluşturun. Varsayılan: false (tam tuval). | BOOLEAN | Hayır | false (tam tuval)<br>true (minimum boyut) |
 
 Not: `image` girdisi tek bir görüntü olmalıdır; toplu işlemler desteklenmez. Görüntü en az 512x512 piksel olmalı ve en-boy oranı 1:16 ile 16:1 arasında olmalıdır.
 
@@ -30,4 +32,4 @@ Not: `image` girdisi tek bir görüntü olmalıdır; toplu işlemler desteklenme
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `5062760f2930333f8ed7d8b09dff2492c23fdf906ef71b111348687bef572821`
+**Source fingerprint (SHA-256):** `7c0d8ca76ee4b8d6a34fec2edbb753982a05160540ae1d1867efb79c9f9c5498`

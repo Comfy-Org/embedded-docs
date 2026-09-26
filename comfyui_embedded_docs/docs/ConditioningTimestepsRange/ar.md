@@ -13,7 +13,7 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `قبل النطاق` | النطاق الزمني الرئيسي المحدد بواسطة start_percent و end_percent | TIMESTEPS_RANGE |
+| `TIMESTEPS_RANGE` | النطاق الزمني الرئيسي المحدد بواسطة start_percent و end_percent | TIMESTEPS_RANGE |
 | `قبل النطاق` | النطاق الزمني من 0.0 إلى start_percent | TIMESTEPS_RANGE |
 | `بعد النطاق` | النطاق الزمني من end_percent إلى 1.0 | TIMESTEPS_RANGE |
 
