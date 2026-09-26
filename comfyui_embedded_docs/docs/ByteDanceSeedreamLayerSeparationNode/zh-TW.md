@@ -1,6 +1,8 @@
-# ByteDance Seedream 5.0 Pro 圖層分離
+# ByteDance Seedream 5.0 Pro 圖層分離（舊版）
 
 ByteDance Seedream 5.0 Pro Layer Separation 會將影像分解為一個背景底板，以及最多 16 個可重新定位的透明圖層；每個圖層都有堆疊順序、邊界框、名稱與描述。它會傳回背景、帶遮罩的各圖層影像、放置框，以及可直接編輯的圖層堆疊。
+
+**注意：** 此節點在原始碼中標記為已棄用。
 
 ## 輸入
 
@@ -30,4 +32,4 @@ ByteDance Seedream 5.0 Pro Layer Separation 會將影像分解為一個背景底
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `5062760f2930333f8ed7d8b09dff2492c23fdf906ef71b111348687bef572821`
+**Source fingerprint (SHA-256):** `7c0d8ca76ee4b8d6a34fec2edbb753982a05160540ae1d1867efb79c9f9c5498`

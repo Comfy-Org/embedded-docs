@@ -2,6 +2,8 @@
 
 El nodo ByteDance Seedream 4.5 y 5.0 proporciona capacidades unificadas de generación de texto a imagen y edición precisa por oración individual en resoluciones de hasta 4K. Puede crear nuevas imágenes a partir de descripciones textuales o editar imágenes existentes mediante instrucciones de texto. El nodo admite tanto la generación de una sola imagen como la generación secuencial de múltiples imágenes relacionadas.
 
+**Nota:** Este nodo está marcado como obsoleto en el código fuente.
+
 ## Entradas
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
@@ -34,4 +36,4 @@ El nodo ByteDance Seedream 4.5 y 5.0 proporciona capacidades unificadas de gener
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `ce130246026e0f5036e137bea4e193f51097e0812459586dcbeb87ef01975630`
+**Source fingerprint (SHA-256):** `78086df431c887c241796ddb5db1ebbfe5b57faab0839da842be81480f1e113b`

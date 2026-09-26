@@ -2,6 +2,8 @@
 
 ByteDance Seedream 4.5 和 5.0 節點提供統一的文字轉圖像生成功能，以及高達 4K 解析度的精確單句編輯能力。它可以根據文字提示建立新圖像，或使用文字指令編輯現有圖像。該節點支援單張圖像生成和多張相關圖像的序列生成。
 
+**注意：** 此節點在原始碼中標記為已棄用。
+
 ## 輸入
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
@@ -34,4 +36,4 @@ ByteDance Seedream 4.5 和 5.0 節點提供統一的文字轉圖像生成功能�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `ce130246026e0f5036e137bea4e193f51097e0812459586dcbeb87ef01975630`
+**Source fingerprint (SHA-256):** `78086df431c887c241796ddb5db1ebbfe5b57faab0839da842be81480f1e113b`

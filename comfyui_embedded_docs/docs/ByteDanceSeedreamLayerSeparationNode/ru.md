@@ -1,6 +1,8 @@
-# ByteDance Seedream 5.0 Pro Разделение Слоёв
+# ByteDance Seedream 5.0 Pro Разделение Слоёв (устаревшая версия)
 
 ByteDance Seedream 5.0 Pro Layer Separation разлагает изображение на фоновую подложку и до 16 перемещаемых прозрачных слоёв, каждый с порядком наложения, ограничивающей рамкой, именем и описанием. Узел возвращает фон, изображения отдельных слоёв с масками, рамки размещения и готовый к редактированию стек слоёв.
+
+**Примечание:** В исходном коде этот узел помечен как устаревший.
 
 ## Входы
 
@@ -30,4 +32,4 @@ ByteDance Seedream 5.0 Pro Layer Separation разлагает изображе�
 > Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNode/ru.md)
 
 ---
-**Source fingerprint (SHA-256):** `5062760f2930333f8ed7d8b09dff2492c23fdf906ef71b111348687bef572821`
+**Source fingerprint (SHA-256):** `7c0d8ca76ee4b8d6a34fec2edbb753982a05160540ae1d1867efb79c9f9c5498`

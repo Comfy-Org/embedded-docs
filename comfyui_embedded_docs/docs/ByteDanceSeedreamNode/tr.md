@@ -2,6 +2,8 @@
 
 ByteDance Seedream 4.5 & 5.0 düğümü, 4K çözünürlüğe kadar birleşik metin-görüntü oluşturma ve hassas tek cümle düzenleme yetenekleri sağlar. Metin istemlerinden yeni görüntüler oluşturabilir veya metin talimatlarını kullanarak mevcut görüntüleri düzenleyebilir. Düğüm, hem tek görüntü oluşturmayı hem de birden çok ilgili görüntünün sıralı oluşturulmasını destekler.
 
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
+
 ## Girişler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
@@ -34,4 +36,4 @@ ByteDance Seedream 4.5 & 5.0 düğümü, 4K çözünürlüğe kadar birleşik me
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `ce130246026e0f5036e137bea4e193f51097e0812459586dcbeb87ef01975630`
+**Source fingerprint (SHA-256):** `78086df431c887c241796ddb5db1ebbfe5b57faab0839da842be81480f1e113b`

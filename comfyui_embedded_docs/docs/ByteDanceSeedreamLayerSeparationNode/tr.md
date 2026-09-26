@@ -1,6 +1,8 @@
-# ByteDance Seedream 5.0 Pro Katman Ayrıştırma
+# ByteDance Seedream 5.0 Pro Katman Ayrıştırma (Eski)
 
 ByteDance Seedream 5.0 Pro Layer Separation, bir görüntüyü bir arka plan plakası ve yeniden konumlandırılabilir en fazla 16 şeffaf katmana ayırır; her katmanın yığın sırası, sınırlayıcı kutusu, adı ve açıklaması vardır. Arka planı, maskelerle birlikte katman başına görüntüleri, yerleştirme kutularını ve düzenlemeye hazır bir katman yığınını döndürür.
+
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
 
 ## Girdiler
 
@@ -30,4 +32,4 @@ Not: `image` girdisi tek bir görüntü olmalıdır; toplu işlemler desteklenme
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `5062760f2930333f8ed7d8b09dff2492c23fdf906ef71b111348687bef572821`
+**Source fingerprint (SHA-256):** `7c0d8ca76ee4b8d6a34fec2edbb753982a05160540ae1d1867efb79c9f9c5498`
