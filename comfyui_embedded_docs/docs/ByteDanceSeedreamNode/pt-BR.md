@@ -8,7 +8,7 @@ O nó ByteDance Seedream 4.5 e 5.0 oferece geração unificada de texto para ima
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo Seedream a ser usado para geração. Os modelos disponíveis incluem variantes seedream-4-0, seedream-4-5 e seedream-5-0. | STRING | Sim | Ver Descrição |
+| `model` | O modelo Seedream a ser usado para geração. Os modelos disponíveis incluem variantes seedream-4-0, seedream-4-5 e seedream-5-0. | STRING | Sim | "seedream 5.0 pro"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
 | `prompt` | Prompt de texto para criar ou editar uma imagem. Deve ter pelo menos 1 caractere. | STRING | Sim | - |
 | `image` | Imagem(ns) de entrada para geração imagem-para-imagem. Imagem(ns) de referência para geração de referência única ou múltipla. Máximo de 10 imagens de referência para a maioria dos modelos, ou 14 para seedream-5-0-260128. | IMAGE | Não | - |
 | `size_preset` | Escolha um tamanho recomendado. Selecione Personalizado para usar a largura e altura abaixo. Padrão: primeiro predefinido de RECOMMENDED_PRESETS_SEEDREAM_4. | STRING | Não | Múltiplas opções disponíveis |

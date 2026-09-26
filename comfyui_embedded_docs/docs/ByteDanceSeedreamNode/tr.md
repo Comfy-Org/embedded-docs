@@ -8,7 +8,7 @@ ByteDance Seedream 4.5 & 5.0 düğümü, 4K çözünürlüğe kadar birleşik me
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Oluşturma için kullanılacak Seedream modeli. Mevcut modeller arasında seedream-4-0, seedream-4-5 ve seedream-5-0 varyantları bulunur. | STRING | Evet | Açıklamaya Bakın |
+| `model` | Oluşturma için kullanılacak Seedream modeli. Mevcut modeller arasında seedream-4-0, seedream-4-5 ve seedream-5-0 varyantları bulunur. | STRING | Evet | "seedream 5.0 pro"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
 | `prompt` | Görüntü oluşturma veya düzenleme için metin istemi. En az 1 karakter uzunluğunda olmalıdır. | STRING | Evet | - |
 | `görüntü` | Görüntüden görüntüye oluşturma için giriş görüntüsü/görüntüleri. Tek veya çoklu referans oluşturma için referans görüntüsü/görüntüleri. Çoğu model için maksimum 10 referans görüntüsü veya seedream-5-0-260128 için 14 referans görüntüsü. | IMAGE | Hayır | - |
 | `boyut önayarı` | Önerilen bir boyut seçin. Aşağıdaki genişlik ve yüksekliği kullanmak için Özel'i seçin. Varsayılan: RECOMMENDED_PRESETS_SEEDREAM_4'ten ilk ön ayar. | STRING | Hayır | Birden çok seçenek mevcut |

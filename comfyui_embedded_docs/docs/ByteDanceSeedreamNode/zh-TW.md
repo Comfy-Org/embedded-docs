@@ -8,7 +8,7 @@ ByteDance Seedream 4.5 和 5.0 節點提供統一的文字轉圖像生成功能�
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `model` | 用於生成的 Seedream 模型。可用的模型包括 seedream-4-0、seedream-4-5 和 seedream-5-0 變體。 | STRING | 是 | 請參閱說明 |
+| `model` | 用於生成的 Seedream 模型。可用的模型包括 seedream-4-0、seedream-4-5 和 seedream-5-0 變體。 | STRING | 是 | "seedream 5.0 pro"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
 | `prompt` | 用於建立或編輯圖像的文字提示。長度必須至少為 1 個字元。 | STRING | 是 | - |
 | `image` | 用於圖像到圖像生成的輸入圖像。用於單一或多重參考生成的參考圖像。大多數模型最多 10 張參考圖像，seedream-5-0-260128 最多 14 張。 | IMAGE | 否 | - |
 | `size_preset` | 選擇建議的尺寸。選擇「自訂」以使用下方的寬度和高度。預設值：RECOMMENDED_PRESETS_SEEDREAM_4 中的第一個預設值。 | STRING | 否 | 多個選項可用 |
