@@ -9,7 +9,7 @@ ByteDance Seedream 5.0 Pro 图层分离功能可将图像分解为一个背景�
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
 | `image` | 要分离的图像。必须恰好一张图像，至少 512x512 像素，宽高比在 1:16 到 16:1 之间。大于约 4MP 的输入在上传前会缩小。 | IMAGE | 是 | Single image |
-| `prompt` | 如何分离图像。留空则自动检测并分离所有主要元素。用自然语言描述元素以控制分离，或使用 `<bbox>left top right bottom</bbox>` 标签（0-1000 千分比坐标）指定精确区域。默认值：空字符串。 | STRING | 是 | Multiline text |
+| `prompt` | 如何分离图像。留空则自动检测并分离所有主要元素。用自然语言描述元素以控制分离，或使用 `<bbox>left top right bottom</bbox>` 标签（0-1000 千分比坐标）指定精确区域。默认值：空字符串。 | STRING | 是 | 多行文本 |
 | `size` | 输出分辨率级别。"auto" 跟随输入图像尺寸（限制在 1K-2K 范围内）。默认值："auto"。 | COMBO | 是 | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
 | `seed` | 用于生成的种子。默认值：0。 | INT | 是 | 0 到 2147483647 |
 | `prompt_optimization` | 提示优化模式："standard" 提供更高质量，"fast" 缩短生成时间。默认值："standard"。 | COMBO | 否 | "standard"<br>"fast" |
