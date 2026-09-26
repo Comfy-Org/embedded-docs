@@ -8,13 +8,13 @@ ByteDance Seedream 5.0 Pro Layer Separation 會將影像分解為一個背景底
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `圖片` | 要分離的影像。僅限一張影像，至少 512x512 像素，長寬比介於 1:16 與 16:1 之間。大約超過 4MP 的輸入會在的上傳前被縮小。 | IMAGE | 是 | Single image |
+| `圖片` | 要分離的影像。僅限一張影像，至少 512x512 像素，長寬比介於 1:16 與 16:1 之間。大約超過 4MP 的輸入會在的上傳前被縮小。 | IMAGE | 是 | 單張圖像 |
 | `提示詞` | 如何分離影像。留空以自動偵測並分離所有主要元素。以自然語言描述元素以控制分離，或使用 `<bbox>left top right bottom</bbox>` 標籤指定精確區域（0-1000 千分比座標）。預設：空字串。 | STRING | 是 | 多行文字 |
 | `尺寸` | 輸出解析度等級。"auto" 會跟隨輸入影像大小（限制在 1K-2K 範圍內）。預設："auto"。 | COMBO | 是 | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
 | `種子` | 生成時使用的種子。預設：0。 | INT | 是 | 0 至 2147483647 |
 | `提示詞優化` | 提示詞最佳化模式："standard" 提供較高品質，"fast" 縮短生成時間。預設："standard"。 | COMBO | 否 | "standard"<br>"fast" |
 | `浮水印` | 是否在影像中加入「AI generated」浮水印。預設：false。 | BOOLEAN | 否 | false<br>true |
-| `裁切圖層` | `layers`/`masks` 批次輸出的幾何形式（`layer_stack` 不受影響，且一律為緊密裁切）。完整畫布：每個圖層位於與基礎影像同尺寸的畫布上，並置於其邊界框位置——可直接搭配 ImageCompositeMasked 重新合成。最小尺寸：每個圖層裁切至其邊界框（為批次處理而補齊至最大圖層）——張量小得多；使用 bboxes 輸出，透過 Layers From Bounding Boxes 重建放置位置。預設：false（完整畫布）。 | BOOLEAN | 否 | false (full canvas)<br>true (minimal size) |
+| `裁切圖層` | `layers`/`masks` 批次輸出的幾何形式（`layer_stack` 不受影響，且一律為緊密裁切）。完整畫布：每個圖層位於與基礎影像同尺寸的畫布上，並置於其邊界框位置——可直接搭配 ImageCompositeMasked 重新合成。最小尺寸：每個圖層裁切至其邊界框（為批次處理而補齊至最大圖層）——張量小得多；使用 bboxes 輸出，透過 Layers From Bounding Boxes 重建放置位置。預設：false（完整畫布）。 | BOOLEAN | 否 | false（完整畫布）<br>true（最小尺寸） |
 
 注意：輸入 `image` 必須是單一影像；不支援批次。影像必須至少 512x512 像素，且長寬比介於 1:16 與 16:1 之間。
 
