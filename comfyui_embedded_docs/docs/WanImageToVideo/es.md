@@ -14,9 +14,10 @@ El nodo WanImageToVideo prepara representaciones de condicionamiento y latentes 
 | `longitud` | Número de fotogramas del video (predeterminado: 81, paso: 4) | INT | Sí | 1 a MAX_RESOLUTION |
 | `tamaño_del_lote` | Número de videos que se generarán en un lote (predeterminado: 1) | INT | Sí | 1 a 4096 |
 | `salida_de_vision_clip` | Salida de visión CLIP opcional añadida como condicionamiento adicional tanto a las entradas positiva como negativa | CLIP_VISION_OUTPUT | No | - |
-| `imagen_inicial` | Imagen inicial opcional utilizada para inicializar el video. Cuando se proporciona, se redimensiona al `width` y `height` especificados y se coloca al principio de la secuencia de fotogramas; los fotogramas más allá de `length` se ignoran. Los fotogramas restantes se rellenan con valores de gris neutro (0.5). | IMAGE | No | - |
+| `imagen_inicial` | Imagen inicial opcional utilizada para inicializar el video. Cuando se proporciona, se redimensiona al `width` y `height` especificados y se coloca al principio de la secuencia de fotogramas; los fotogramas más allá de `length` se ignoran. Los fotogramas restantes se rellenan con valores de gris neutro (0.5), a menos que se proporcione `ref_pad_image`. | IMAGE | No | - |
+| `ref_pad_image` | Imagen de referencia opcional cuyo primer fotograma sustituye el relleno de gris neutro de la secuencia de fotogramas. Se redimensiona al `width` y `height` especificados y solo se utiliza la primera imagen del lote. Solo tiene efecto cuando también se proporciona `start_image`. | IMAGE | No | - |
 
-**Nota:** Cuando se proporciona `start_image`, la secuencia de fotogramas se codifica con el VAE y se aplica una máscara al condicionamiento. La máscara se establece en 0 para los fotogramas cubiertos por la imagen inicial y en 1 para los fotogramas restantes, de modo que la generación continúa desde la imagen proporcionada. Durante la codificación solo se utilizan los primeros tres canales de color (RGB) de la imagen. Tanto el condicionamiento positivo como el negativo reciben la misma imagen latente concatenada, la máscara y (si se proporciona) la salida de visión CLIP.
+**Nota:** Cuando se proporciona `start_image`, la secuencia de fotogramas se codifica con el VAE y se aplica una máscara al condicionamiento. La máscara se establece en 0 para los fotogramas cubiertos por la imagen inicial y en 1 para los fotogramas restantes, de modo que la generación continúa desde la imagen proporcionada. Durante la codificación solo se utilizan los primeros tres canales de color (RGB) de la imagen. Tanto el condicionamiento positivo como el negativo reciben la misma imagen latente concatenada, la máscara y (si se proporciona) la salida de visión CLIP. Cuando se proporciona `ref_pad_image` junto con `start_image`, su primer fotograma se redimensiona al `width` y `height` y se escribe en los canales RGB de los fotogramas de relleno antes de colocar encima la imagen inicial, de modo que el relleno lleva la imagen de referencia en lugar de gris plano. Se trata de un relleno anti-deriva estilo SVI, utilizado por modelos como ID-V2V.
 
 ## Salidas
 
@@ -29,4 +30,4 @@ El nodo WanImageToVideo prepara representaciones de condicionamiento y latentes 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideo/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `46779f9f2f3da16826b7b547761a96597a3b6b43ce51a9c13367987642f3d5b7`
+**Source fingerprint (SHA-256):** `3000c1c816d2c123fc5bc46ea1f193c52c0f81a2f8c4a9110d8a4fa909185aea`

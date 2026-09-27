@@ -14,9 +14,10 @@ WanImageToVideo 節點會準備用於影片生成的條件與潛在表示。它�
 | `長度` | 影片中的影格數（預設：81，步長：4） | INT | 是 | 1 to MAX_RESOLUTION |
 | `批次大小` | 一次批次中生成的影片數量（預設：1） | INT | 是 | 1 至 4096 |
 | `clip_vision_output` | 可選的 CLIP vision 輸出，會作為額外條件加入 `positive` 與 `negative` 輸入 | CLIP_VISION_OUTPUT | 否 | - |
-| `起始影像` | 可選的起始影像，用於初始化影片。提供時，會將其縮放至指定的 `width` 與 `height`，並放置在影格序列的開頭；超過 `length` 的影格會被忽略。其餘影格會以中性灰（0.5）值填充。 | IMAGE | 否 | - |
+| `起始影像` | 可選的起始影像，用於初始化影片。提供時，會將其縮放至指定的 `width` 與 `height`，並放置在影格序列的開頭；超過 `length` 的影格會被忽略。其餘影格會以中性灰（0.5）值填充，除非提供了 `ref_pad_image`。 | IMAGE | 否 | - |
+| `ref_pad_image` | 可選的參考影像，其首格會取代影格序列的中性灰填充。它會縮放至指定的 `width` 與 `height`，且僅使用批次中的第一張影像。僅在同時提供 `start_image` 時生效。 | IMAGE | 否 | - |
 
-**注意：** 當提供 `start_image` 時，影格序列會使用 VAE 編碼，並對條件套用遮罩。遮罩在起始影像涵蓋的影格設為 0，其餘影格設為 1，因此生成會從提供的影像繼續。編碼期間只會使用影像的前三個色彩通道（RGB）。`positive` 與 `negative` 條件都會接收相同的串接潛在影像、遮罩，以及（若有提供）CLIP vision 輸出。
+**注意：** 當提供 `start_image` 時，影格序列會使用 VAE 編碼，並對條件套用遮罩。遮罩在起始影像涵蓋的影格設為 0，其餘影格設為 1，因此生成會從提供的影像繼續。編碼期間只會使用影像的前三個色彩通道（RGB）。`positive` 與 `negative` 條件都會接收相同的串接潛在影像、遮罩，以及（若有提供）CLIP vision 輸出。 當 `ref_pad_image` 與 `start_image` 一同提供時，其首格會縮放至 `width` 與 `height`，並在放置起始影像之前寫入填充影格的 RGB 通道，因此填充部分承載的是參考影像而非純灰色。這是 SVI 風格的抗漂移填充，供 ID-V2V 等模型使用。
 
 ## 輸出
 
@@ -29,4 +30,4 @@ WanImageToVideo 節點會準備用於影片生成的條件與潛在表示。它�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideo/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `46779f9f2f3da16826b7b547761a96597a3b6b43ce51a9c13367987642f3d5b7`
+**Source fingerprint (SHA-256):** `3000c1c816d2c123fc5bc46ea1f193c52c0f81a2f8c4a9110d8a4fa909185aea`
