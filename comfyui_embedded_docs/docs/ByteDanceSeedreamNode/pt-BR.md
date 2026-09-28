@@ -2,11 +2,13 @@
 
 O nó ByteDance Seedream 4.5 e 5.0 oferece geração unificada de texto para imagem e capacidades precisas de edição de frase única em resoluções de até 4K. Ele pode criar novas imagens a partir de prompts de texto ou editar imagens existentes usando instruções textuais. O nó suporta tanto a geração de uma única imagem quanto a geração sequencial de múltiplas imagens relacionadas.
 
+**Nota:** Este nó está marcado como obsoleto no código-fonte.
+
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo Seedream a ser usado para geração. Os modelos disponíveis incluem variantes seedream-4-0, seedream-4-5 e seedream-5-0. | STRING | Sim | Ver Descrição |
+| `model` | O modelo Seedream a ser usado para geração. Os modelos disponíveis incluem variantes seedream-4-0, seedream-4-5 e seedream-5-0. | STRING | Sim | "seedream 5.0 pro"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
 | `prompt` | Prompt de texto para criar ou editar uma imagem. Deve ter pelo menos 1 caractere. | STRING | Sim | - |
 | `image` | Imagem(ns) de entrada para geração imagem-para-imagem. Imagem(ns) de referência para geração de referência única ou múltipla. Máximo de 10 imagens de referência para a maioria dos modelos, ou 14 para seedream-5-0-260128. | IMAGE | Não | - |
 | `size_preset` | Escolha um tamanho recomendado. Selecione Personalizado para usar a largura e altura abaixo. Padrão: primeiro predefinido de RECOMMENDED_PRESETS_SEEDREAM_4. | STRING | Não | Múltiplas opções disponíveis |
@@ -34,4 +36,4 @@ O nó ByteDance Seedream 4.5 e 5.0 oferece geração unificada de texto para ima
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `ce130246026e0f5036e137bea4e193f51097e0812459586dcbeb87ef01975630`
+**Source fingerprint (SHA-256):** `78086df431c887c241796ddb5db1ebbfe5b57faab0839da842be81480f1e113b`

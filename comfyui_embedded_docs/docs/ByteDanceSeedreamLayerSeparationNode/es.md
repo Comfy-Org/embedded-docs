@@ -1,6 +1,8 @@
-# ByteDance Seedream 5.0 Pro Separación de Capas
+# ByteDance Seedream 5.0 Pro Separación de Capas (Heredado)
 
 ByteDance Seedream 5.0 Pro Layer Separation descompone una imagen en una placa de fondo más hasta 16 capas transparentes reposicionables, cada una con orden de apilamiento, cuadro delimitador, nombre y descripción. Devuelve el fondo, imágenes por capa con máscaras, cajas de colocación y una pila de capas lista para editar.
+
+**Nota:** Este nodo está marcado como obsoleto en el código fuente.
 
 ## Entradas
 
@@ -30,4 +32,4 @@ Nota: La entrada `image` debe ser una sola imagen; no se admiten lotes. La image
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `5062760f2930333f8ed7d8b09dff2492c23fdf906ef71b111348687bef572821`
+**Source fingerprint (SHA-256):** `7c0d8ca76ee4b8d6a34fec2edbb753982a05160540ae1d1867efb79c9f9c5498`

@@ -1,6 +1,8 @@
-# ByteDance Seedream 5.0 Pro Séparation de Couches
+# ByteDance Seedream 5.0 Pro Séparation de Couches (hérité)
 
 ByteDance Seedream 5.0 Pro Layer Separation décompose une image en une plaque de fond plus jusqu'à 16 calques transparents repositionnables, chacun avec un ordre d'empilement, une boîte englobante, un nom et une description. Il renvoie le fond, les images par calque avec masques, les boîtes de placement et une pile de calques prête à être modifiée.
+
+**Remarque :** Ce nœud est marqué comme obsolète dans le code source.
 
 ## Entrées
 
@@ -30,4 +32,4 @@ Remarque : l'entrée `image` doit être une image unique ; les lots ne sont pas 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `5062760f2930333f8ed7d8b09dff2492c23fdf906ef71b111348687bef572821`
+**Source fingerprint (SHA-256):** `7c0d8ca76ee4b8d6a34fec2edbb753982a05160540ae1d1867efb79c9f9c5498`

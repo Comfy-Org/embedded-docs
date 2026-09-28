@@ -1,6 +1,8 @@
-# ByteDance Seedream ۵.۰ Pro جداسازی لایه
+# ByteDance Seedream ۵.۰ Pro جداسازی لایه (قدیمی)
 
 ByteDance Seedream 5.0 Pro Layer Separation یک تصویر را به یک پلیت پس‌زمینه به‌همراه حداکثر ۱۶ لایهٔ شفاف قابل جابه‌جایی تجزیه می‌کند؛ هر لایه دارای ترتیب چیدمان، کادر محدودکننده، نام و توضیحات است. خروجی آن شامل پس‌زمینه، تصاویر هر لایه همراه با ماسک‌ها، کادرهای جای‌گذاری و یک پشتهٔ لایهٔ آمادهٔ ویرایش است.
+
+**نکته:** این گره در کد منبع به‌عنوان منسوخ‌شده علامت‌گذاری شده است.
 
 ## ورودی‌ها
 
@@ -30,4 +32,4 @@ ByteDance Seedream 5.0 Pro Layer Separation یک تصویر را به یک پل�
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `5062760f2930333f8ed7d8b09dff2492c23fdf906ef71b111348687bef572821`
+**Source fingerprint (SHA-256):** `7c0d8ca76ee4b8d6a34fec2edbb753982a05160540ae1d1867efb79c9f9c5498`

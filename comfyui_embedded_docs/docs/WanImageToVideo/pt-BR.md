@@ -14,9 +14,10 @@ O nó WanImageToVideo prepara condicionamento e representações latentes para g
 | `duração` | Número de quadros no vídeo (padrão: 81, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
 | `tamanho_do_lote` | Número de vídeos a gerar em um lote (padrão: 1) | INT | Sim | 1 a 4096 |
 | `clip_vision_output` | Saída de visão CLIP opcional adicionada como condicionamento extra tanto às entradas positiva quanto negativa | CLIP_VISION_OUTPUT | Não | - |
-| `imagem_inicial` | Imagem inicial opcional usada para inicializar o vídeo. Quando fornecida, ela é redimensionada para a `width` e a `height` especificadas e colocada no início da sequência de quadros; quaisquer quadros além de `length` são ignorados. Os quadros restantes são preenchidos com valores de cinza neutro (0.5). | IMAGE | Não | - |
+| `imagem_inicial` | Imagem inicial opcional usada para inicializar o vídeo. Quando fornecida, ela é redimensionada para a `width` e a `height` especificadas e colocada no início da sequência de quadros; quaisquer quadros além de `length` são ignorados. Os quadros restantes são preenchidos com valores de cinza neutro (0.5), a menos que `ref_pad_image` seja fornecido. | IMAGE | Não | - |
+| `ref_pad_image` | Imagem de referência opcional cujo primeiro quadro substitui o preenchimento de cinza neutro da sequência de quadros. Ela é redimensionada para a `width` e a `height` especificadas, e apenas a primeira imagem do lote é usada. Só tem efeito quando `start_image` também é fornecido. | IMAGE | Não | - |
 
-**Nota:** Quando `start_image` é fornecida, a sequência de quadros é codificada com o VAE e uma máscara é aplicada ao condicionamento. A máscara é definida como 0 para os quadros cobertos pela imagem inicial e como 1 para os quadros restantes, para que a geração continue a partir da imagem fornecida. Apenas os três primeiros canais de cor (RGB) da imagem são usados durante a codificação. Tanto o condicionamento positivo quanto o negativo recebem a mesma imagem latente concatenada, a máscara e, se fornecida, a saída de visão CLIP.
+**Nota:** Quando `start_image` é fornecida, a sequência de quadros é codificada com o VAE e uma máscara é aplicada ao condicionamento. A máscara é definida como 0 para os quadros cobertos pela imagem inicial e como 1 para os quadros restantes, para que a geração continue a partir da imagem fornecida. Apenas os três primeiros canais de cor (RGB) da imagem são usados durante a codificação. Tanto o condicionamento positivo quanto o negativo recebem a mesma imagem latente concatenada, a máscara e, se fornecida, a saída de visão CLIP. Quando `ref_pad_image` é fornecido junto com `start_image`, seu primeiro quadro é redimensionado para a `width` e a `height` e gravado nos canais RGB dos quadros de preenchimento antes que a imagem inicial seja colocada por cima, de modo que o preenchimento carrega a imagem de referência em vez de cinza uniforme. Trata-se de um preenchimento anti-deriva no estilo SVI, usado por modelos como o ID-V2V.
 
 ## Saídas
 
@@ -29,4 +30,4 @@ O nó WanImageToVideo prepara condicionamento e representações latentes para g
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideo/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `46779f9f2f3da16826b7b547761a96597a3b6b43ce51a9c13367987642f3d5b7`
+**Source fingerprint (SHA-256):** `3000c1c816d2c123fc5bc46ea1f193c52c0f81a2f8c4a9110d8a4fa909185aea`

@@ -1,6 +1,8 @@
-# ByteDance Seedream 5.0 Pro Separação de Camadas
+# ByteDance Seedream 5.0 Pro Separação de Camadas (Legado)
 
 ByteDance Seedream 5.0 Pro Layer Separation decompõe uma imagem em uma imagem de fundo base mais até 16 camadas transparentes reposicionáveis, cada uma com ordem de empilhamento, caixa delimitadora, nome e descrição. Retorna o fundo, imagens por camada com máscaras, caixas de posicionamento e uma pilha de camadas pronta para edição.
+
+**Nota:** Este nó está marcado como obsoleto no código-fonte.
 
 ## Entradas
 
@@ -30,4 +32,4 @@ Nota: A entrada `image` deve ser uma única imagem; lotes não são suportados. 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `5062760f2930333f8ed7d8b09dff2492c23fdf906ef71b111348687bef572821`
+**Source fingerprint (SHA-256):** `7c0d8ca76ee4b8d6a34fec2edbb753982a05160540ae1d1867efb79c9f9c5498`

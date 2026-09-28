@@ -1,6 +1,8 @@
-# ByteDance Seedream 5.0 Pro فصل الطبقات
+# ByteDance Seedream 5.0 Pro فصل الطبقات (قديم)
 
 يقوم ByteDance Seedream 5.0 Pro Layer Separation بتفكيك صورة إلى لوحة خلفية بالإضافة إلى ما يصل إلى 16 طبقة شفافة قابلة لإعادة التموضع، لكل منها ترتيب تكديس ومربع محيط واسم ووصف. يُرجع الخلفية، وصورًا لكل طبقة مع أقنعة، ومربعات تموضع، ومكدس طبقات جاهزًا للتحرير.
+
+**ملاحظة:** تم وضع علامة على هذه العقدة على أنها مهملة في الكود المصدري.
 
 ## المدخلات
 
@@ -30,4 +32,4 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `5062760f2930333f8ed7d8b09dff2492c23fdf906ef71b111348687bef572821`
+**Source fingerprint (SHA-256):** `7c0d8ca76ee4b8d6a34fec2edbb753982a05160540ae1d1867efb79c9f9c5498`

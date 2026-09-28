@@ -14,9 +14,10 @@ Le nœud WanImageToVideo prépare les représentations de conditionnement et lat
 | `longueur` | Nombre d’images dans la vidéo (par défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
 | `taille_du_lot` | Nombre de vidéos à générer dans un lot (par défaut : 1) | INT | Oui | 1 à 4096 |
 | `sortie_vision_clip` | Sortie de vision CLIP facultative ajoutée comme conditionnement supplémentaire aux entrées positive et négative | CLIP_VISION_OUTPUT | Non | - |
-| `image_de_départ` | Image de départ facultative utilisée pour initialiser la vidéo. Lorsqu’elle est fournie, elle est redimensionnée aux `width` et `height` spécifiés et placée au début de la séquence d’images ; toutes les images au-delà de `length` sont ignorées. Les images restantes sont remplies avec des valeurs de gris neutre (0,5). | IMAGE | Non | - |
+| `image_de_départ` | Image de départ facultative utilisée pour initialiser la vidéo. Lorsqu’elle est fournie, elle est redimensionnée aux `width` et `height` spécifiés et placée au début de la séquence d’images ; toutes les images au-delà de `length` sont ignorées. Les images restantes sont remplies avec des valeurs de gris neutre (0,5), sauf si `ref_pad_image` est fournie. | IMAGE | Non | - |
+| `ref_pad_image` | Image de référence facultative dont la première image remplace le remplissage en gris neutre de la séquence d’images. Elle est redimensionnée aux `width` et `height` spécifiés, et seule la première image du lot est utilisée. N’a d’effet que si `start_image` est également fournie. | IMAGE | Non | - |
 
-**Remarque :** Lorsque `start_image` est fournie, la séquence d’images est encodée avec le VAE et un masque est appliqué au conditionnement. Le masque est défini à 0 pour les images couvertes par l’image de départ et à 1 pour les images restantes, afin que la génération se poursuive à partir de l’image fournie. Seuls les trois premiers canaux de couleur (RVB) de l’image sont utilisés lors de l’encodage. Les conditionnements positif et négatif reçoivent tous deux la même image latente concaténée, le masque et (si fournie) la sortie de vision CLIP.
+**Remarque :** Lorsque `start_image` est fournie, la séquence d’images est encodée avec le VAE et un masque est appliqué au conditionnement. Le masque est défini à 0 pour les images couvertes par l’image de départ et à 1 pour les images restantes, afin que la génération se poursuive à partir de l’image fournie. Seuls les trois premiers canaux de couleur (RVB) de l’image sont utilisés lors de l’encodage. Les conditionnements positif et négatif reçoivent tous deux la même image latente concaténée, le masque et (si fournie) la sortie de vision CLIP. Lorsque `ref_pad_image` est fournie en même temps que `start_image`, sa première image est redimensionnée aux `width` et `height` et écrite dans les canaux RVB des images de remplissage avant que l’image de départ ne soit placée par-dessus, de sorte que le remplissage porte l’image de référence au lieu d’un gris uniforme. Il s’agit d’un remplissage anti-dérive de style SVI, utilisé par des modèles tels que ID-V2V.
 
 ## Sorties
 
@@ -29,4 +30,4 @@ Le nœud WanImageToVideo prépare les représentations de conditionnement et lat
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideo/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `46779f9f2f3da16826b7b547761a96597a3b6b43ce51a9c13367987642f3d5b7`
+**Source fingerprint (SHA-256):** `3000c1c816d2c123fc5bc46ea1f193c52c0f81a2f8c4a9110d8a4fa909185aea`
