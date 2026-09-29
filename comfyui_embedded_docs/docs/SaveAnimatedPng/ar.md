@@ -21,4 +21,4 @@
 | --- | --- | --- |
 | `الصور` | يوفر مكون واجهة مستخدم يعرض صور PNG المتحركة المُنشأة، ويُشير إلى ما إذا كانت الرسوم المتحركة ذات إطار واحد أو متعددة الإطارات. | غير متاح |
 
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedPNG/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedPng/ar.md)

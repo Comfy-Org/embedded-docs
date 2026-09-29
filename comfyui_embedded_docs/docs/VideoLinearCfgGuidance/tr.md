@@ -15,4 +15,4 @@ VideoLinearCFGGuidance düğümü, bir video modeline doğrusal koşullandırma 
 | --- | --- | --- |
 | `model` | Çıktı, doğrusal CFG yönlendirme ölçeğinin uygulandığı, giriş modelinin değiştirilmiş bir sürümüdür. Bu ayarlanmış model, belirtilen yönlendirme ölçeğine bağlı olarak, değişen derecelerde koşullandırma ile çıktılar üretebilir. | MODEL |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCFGGuidance/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCfgGuidance/tr.md)

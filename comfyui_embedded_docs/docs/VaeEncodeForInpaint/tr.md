@@ -17,4 +17,4 @@ Bu düğüm, görüntüleri iç boyama (inpainting) görevlerine uygun bir gizli
 | --- | --- | --- |
 | `latent` | Çıktı, görüntünün kodlanmış gizli temsilini (latent representation) ve bir gürültü maskesini (noise mask) içerir; her ikisi de sonraki iç boyama görevleri için kritik öneme sahiptir. | `LATENT` |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEEncodeForInpaint/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeEncodeForInpaint/tr.md)

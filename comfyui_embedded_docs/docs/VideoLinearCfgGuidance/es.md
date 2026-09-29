@@ -15,4 +15,4 @@ El nodo VideoLinearCFGGuidance aplica una escala de guía de condicionamiento li
 | --- | --- | --- |
 | `modelo` | La salida es una versión modificada del modelo de entrada, con la escala de guía CFG lineal aplicada. Este modelo ajustado es capaz de generar resultados con distintos grados de condicionamiento, según la escala de guía especificada. | MODEL |
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCFGGuidance/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCfgGuidance/es.md)

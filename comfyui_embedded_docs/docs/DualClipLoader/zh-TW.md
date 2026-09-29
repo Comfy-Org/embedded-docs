@@ -20,4 +20,4 @@ DualCLIPLoader 節點專為同時載入兩個 CLIP 模型而設計，便於執�
 | --- | --- | --- |
 | `clip` | 輸出為一個組合後的 CLIP 模型，該模型整合了兩個指定 CLIP 模型的特徵或功能。 | CLIP |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DualCLIPLoader/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DualClipLoader/zh-TW.md)

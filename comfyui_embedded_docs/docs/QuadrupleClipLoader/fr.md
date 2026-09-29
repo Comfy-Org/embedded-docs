@@ -10,4 +10,4 @@ Ce nœud détectera les modèles situés dans le dossier `ComfyUI/models/text_en
  et lira également les modèles à partir de chemins supplémentaires configurés dans le fichier extra_model_paths.yaml.
  Parfois, après avoir ajouté des modèles, vous devrez peut-être **recharger l'interface ComfyUI** pour lui permettre de lire les fichiers de modèles dans le dossier correspondant.
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleCLIPLoader/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleClipLoader/fr.md)

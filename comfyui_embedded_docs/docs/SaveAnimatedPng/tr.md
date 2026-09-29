@@ -17,4 +17,4 @@ SaveAnimatedPNG düğümü, bir dizi kareden oluşan hareketli PNG görüntüler
 | --- | --- | --- |
 | `images` | Oluşturulan hareketli PNG görüntülerini gösteren ve animasyonun tek kareli mi yoksa çok kareli mi olduğunu belirten bir kullanıcı arayüzü bileşeni sağlar. | Yok |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedPNG/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedPng/tr.md)

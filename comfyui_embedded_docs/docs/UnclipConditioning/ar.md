@@ -17,4 +17,4 @@
 | --- | --- | --- |
 | `التكييف` | بيانات التكييف المُثراة، والتي تحتوي الآن على مخرجات رؤية CLIP المدمجة مع تطبيق القوة وزيادة الضوضاء. | `CONDITIONING` |
 
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPConditioning/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnclipConditioning/ar.md)

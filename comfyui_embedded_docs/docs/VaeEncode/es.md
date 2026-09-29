@@ -15,4 +15,4 @@ Este nodo está diseñado para codificar imágenes en una representación de esp
 | --- | --- | --- |
 | `latent` | La salida es una representación del espacio latente de la imagen de entrada, que encapsula sus características esenciales en una forma comprimida. | `LATENT` |
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEEncode/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeEncode/es.md)

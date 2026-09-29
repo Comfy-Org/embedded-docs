@@ -21,4 +21,4 @@
 | --- | --- | --- |
 | `conditioning` | 增強後的條件約束輸出，包含原始條件約束資料以及新附加的文字框參數和編碼後的文字資訊。它用於引導生成模型產生具有上下文感知能力的輸出。 | `CONDITIONING` |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLIGENTextBoxApply/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GligenTextBoxApply/zh-TW.md)

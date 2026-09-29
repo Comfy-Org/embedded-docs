@@ -16,4 +16,4 @@ Le nœud VAELoader est conçu pour charger des modèles d'autoencodeur variation
 | --- | --- | --- |
 | `vae` | Renvoie le modèle VAE chargé, prêt pour d'autres opérations telles que l'encodage ou le décodage. La sortie est un objet modèle encapsulant l'état du modèle chargé. | `VAE` |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAELoader/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeLoader/fr.md)

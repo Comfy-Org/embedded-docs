@@ -17,4 +17,4 @@ Ce nœud est conçu pour intégrer les sorties de la vision CLIP dans le process
 | --- | --- | --- |
 | `conditionnement` | Les données de conditionnement enrichies, contenant désormais les sorties intégrées de la vision CLIP avec la force et l'augmentation du bruit appliquées. | `CONDITIONING` |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPConditioning/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnclipConditioning/fr.md)

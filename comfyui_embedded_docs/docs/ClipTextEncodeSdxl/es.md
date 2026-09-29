@@ -22,4 +22,4 @@ Este nodo está diseñado para codificar texto de entrada utilizando un modelo C
 | --- | --- | --- |
 | `CONDITIONING` | Contiene el texto codificado y la información condicional necesaria para la generación de imágenes. | CONDITIONING |
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXL/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipTextEncodeSdxl/es.md)

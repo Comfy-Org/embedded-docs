@@ -14,4 +14,4 @@ Bu düğüm, `ComfyUI/models/clip_vision` klasöründe bulunan modelleri ve `ext
 | --- | --- | --- |
 | `clip_vision` | Yüklenmiş CLIP Vision modeli, görüntü kodlama veya diğer görüntüyle ilgili görevler için hazırdır. | CLIP_VISION |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPVisionLoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipVisionLoader/tr.md)

@@ -21,4 +21,4 @@
 | --- | --- | --- |
 | `conditioning` | مخرجات التكييف المُثراة، والتي تتضمن بيانات التكييف الأصلية بالإضافة إلى معاملات مربع النص المضافة حديثاً والمعلومات النصية المشفرة. يُستخدم لتوجيه النموذج التوليدي لإنتاج مخرجات واعية بالسياق. | `CONDITIONING` |
 
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLIGENTextBoxApply/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GligenTextBoxApply/ar.md)

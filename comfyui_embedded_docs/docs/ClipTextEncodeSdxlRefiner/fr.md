@@ -39,4 +39,4 @@ Le Refiner peut être utilisé de deux manières :
 4. Le modèle Refiner se concentre sur l'amélioration des détails et de la qualité de l'image, donc les invites textuelles doivent mettre l'accent sur les effets visuels souhaités plutôt que sur le contenu de la scène
 5. En pratique, le Refiner est généralement utilisé dans les dernières étapes de la génération (environ les 20% d'étapes restantes), en se concentrant sur l'optimisation des détails
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXLRefiner/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipTextEncodeSdxlRefiner/fr.md)

@@ -16,4 +16,4 @@
 | --- | --- | --- |
 | `sigmas` | سلسلة من قيم سيغما تم توليدها بناءً على النموذج والخطوات ومستوى إزالة التشويش المُحددة. هذه القيم ضرورية للتحكم في عملية إزالة التشويش أثناء توليد الصور. | `SIGMAS` |
 
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDTurboScheduler/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SdTurboScheduler/ar.md)

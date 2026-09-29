@@ -17,4 +17,4 @@
 | --- | --- | --- | --- |
 | `модель` | Улучшенная модель с интегрированными возможностями непрерывного сэмплирования EDM, готовая к дальнейшему использованию в задачах генерации. | MODEL | `torch.nn.Module` |
 
-> Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousEDM/ru.md)
+> Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousEdm/ru.md)

@@ -16,4 +16,4 @@
 | --- | --- | --- |
 | `gligen` | 已載入的 GLIGEN 模型，可用於生成任務，代表從指定路徑載入的完整初始化模型。 | `GLIGEN` |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLIGENLoader/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GligenLoader/zh-TW.md)

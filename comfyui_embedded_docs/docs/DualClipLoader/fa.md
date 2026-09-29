@@ -20,4 +20,4 @@
 | --- | --- | --- |
 | `clip` | خروجی یک مدل CLIP ترکیبی است که ویژگی‌ها یا قابلیت‌های دو مدل CLIP مشخص‌شده را یکپارچه می‌کند. | CLIP |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DualCLIPLoader/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DualClipLoader/fa.md)

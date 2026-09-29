@@ -19,4 +19,4 @@ unCLIPCheckpointLoader 節點專為載入針對 unCLIP 模型量身打造的檢�
 | `vae` | 代表從檢查點載入的 VAE 模組（如果有的話）。 | `VAE` | `torch.nn.Module` |
 | `clip_vision` | 代表從檢查點載入的 CLIP 視覺模組（如果有的話）。 | `CLIP_VISION` | `torch.nn.Module` |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPCheckpointLoader/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnclipCheckpointLoader/zh-TW.md)

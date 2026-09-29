@@ -16,4 +16,4 @@ SDTurboScheduler برای تولید یک دنباله از مقادیر سیگ�
 | --- | --- | --- |
 | `sigmas` | دنباله‌ای از مقادیر سیگما که بر اساس مدل، گام‌ها و سطح نویززدایی مشخص‌شده تولید شده است. این مقادیر برای کنترل فرآیند نویززدایی در تولید تصویر ضروری هستند. | `SIGMAS` |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDTurboScheduler/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SdTurboScheduler/fa.md)

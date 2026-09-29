@@ -16,4 +16,4 @@
 | --- | --- | --- |
 | `gligen` | نموذج GLIGEN المُحمّل، الجاهز للاستخدام في مهام التوليد، ويمثل النموذج المُهيأ بالكامل والمُحمّل من المسار المحدد. | `GLIGEN` |
 
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLIGENLoader/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GligenLoader/ar.md)

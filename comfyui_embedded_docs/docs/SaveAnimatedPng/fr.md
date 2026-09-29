@@ -17,4 +17,4 @@ Le nœud SaveAnimatedPNG est conçu pour créer et enregistrer des images PNG an
 | --- | --- | --- |
 | `images` | Fournit un composant d'interface utilisateur affichant les images PNG animées générées et indiquant si l'animation est mono-image ou multi-images. | N/A |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedPNG/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedPng/fr.md)

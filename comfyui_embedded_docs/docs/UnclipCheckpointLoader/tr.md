@@ -19,4 +19,4 @@ unCLIPCheckpointLoader düğümü, özellikle unCLIP modelleri için uyarlanmı�
 | `vae` | Varsa, kontrol noktasından yüklenen VAE modülünü temsil eder. | `VAE` | `torch.nn.Module` |
 | `clip_vision` | Varsa, kontrol noktasından yüklenen CLIP görüş modülünü temsil eder. | `CLIP_VISION` | `torch.nn.Module` |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPCheckpointLoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnclipCheckpointLoader/tr.md)

@@ -16,4 +16,4 @@ Este nodo está diseñado para ajustar el aspecto temporal del condicionamiento 
 | --- | --- | --- |
 | `CONDITIONING` | La salida es el condicionamiento modificado con el rango de pasos de tiempo especificado aplicado, listo para su posterior procesamiento o generación. | CONDITIONING |
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetTimestepRange/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSettimestepRange/es.md)

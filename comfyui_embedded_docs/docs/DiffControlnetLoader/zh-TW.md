@@ -17,4 +17,4 @@ DiffControlNetLoader 節點專門用於載入差分控制網路，這是一種�
 | --- | --- | --- |
 | `control_net` | 已載入並準備好套用至基礎模型以進行行為修改的差分控制網路。 | `CONTROL_NET` |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DiffControlNetLoader/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DiffControlnetLoader/zh-TW.md)

@@ -16,4 +16,4 @@ SDTurboScheduler, görüntü örneklemesi için bir sigma değerleri dizisi olu�
 | --- | --- | --- |
 | `sigmas` | Belirtilen model, adımlar ve arındırma seviyesine göre oluşturulan sigma değerleri dizisi. Bu değerler, görüntü oluşturmada arındırma sürecini kontrol etmek için gereklidir. | `SIGMAS` |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDTurboScheduler/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SdTurboScheduler/tr.md)

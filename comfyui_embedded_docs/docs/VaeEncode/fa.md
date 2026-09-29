@@ -15,4 +15,4 @@
 | --- | --- | --- |
 | `latent` | خروجی یک نمایش فضای نهفته از تصویر ورودی است که ویژگی‌های اساسی آن را به صورت فشرده دربرمی‌گیرد. | `LATENT` |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEEncode/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeEncode/fa.md)

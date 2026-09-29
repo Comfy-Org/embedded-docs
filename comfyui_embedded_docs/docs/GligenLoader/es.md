@@ -16,4 +16,4 @@ El nodo `GLIGENLoader` está diseñado para cargar modelos GLIGEN, que son model
 | --- | --- | --- |
 | `gligen` | El modelo GLIGEN cargado, listo para su uso en tareas generativas, representando el modelo completamente inicializado cargado desde la ruta especificada. | `GLIGEN` |
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLIGENLoader/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GligenLoader/es.md)

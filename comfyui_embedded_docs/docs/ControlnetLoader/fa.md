@@ -16,4 +16,4 @@
 | --- | --- | --- |
 | `control_net` | مدل ControlNet بارگذاری‌شده را بازمی‌گرداند که برای کنترل یا تغییر فرآیندهای تولید محتوا آماده استفاده است. | `CONTROL_NET` |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetLoader/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlnetLoader/fa.md)

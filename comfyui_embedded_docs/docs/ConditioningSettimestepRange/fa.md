@@ -18,4 +18,4 @@
 | --- | --- | --- |
 | `CONDITIONING` | خروجی، شرطی‌سازی اصلاح‌شده با محدوده گام زمانی مشخص شده است که برای پردازش یا تولید بیشتر آماده می‌باشد. | CONDITIONING |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetTimestepRange/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSettimestepRange/fa.md)

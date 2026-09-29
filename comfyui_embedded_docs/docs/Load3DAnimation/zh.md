@@ -1,7 +1,6 @@
 # Load3DAnimation
 
-```markdown
-# Load3DAnimation 节点文档
+## Load3DAnimation 节点文档
 
 ## 概述
 

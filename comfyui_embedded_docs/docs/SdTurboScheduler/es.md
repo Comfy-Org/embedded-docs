@@ -16,4 +16,4 @@ SDTurboScheduler está diseñado para generar una secuencia de valores sigma par
 | --- | --- | --- |
 | `sigmas` | Una secuencia de valores sigma generados según el modelo, los pasos y el nivel de eliminación de ruido especificados. Estos valores son esenciales para controlar el proceso de eliminación de ruido en la generación de imágenes. | `SIGMAS` |
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDTurboScheduler/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SdTurboScheduler/es.md)

@@ -16,4 +16,4 @@ Bu düğüm, `ComfyUI/models/gligen` klasöründe bulunan modelleri tespit eder 
 | --- | --- | --- |
 | `gligen` | Yüklenen GLIGEN modeli. Üretken görevlerde kullanıma hazırdır ve belirtilen yoldan yüklenen, tamamen başlatılmış modeli temsil eder. | `GLIGEN` |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLIGENLoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GligenLoader/tr.md)

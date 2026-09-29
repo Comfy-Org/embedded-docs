@@ -1,6 +1,5 @@
 # Créer un Avatar HeyGen
 
-```markdown
 Créez un avatar HeyGen réutilisable à partir d'une photo d'une personne ou d'un prompt textuel décrivant un personnage à générer. L'`avatar_id` résultant peut être utilisé avec le nœud HeyGen Avatar Video, et doit être enregistré pour réutiliser l'avatar dans de futurs workflows.
 
 ## Entrées

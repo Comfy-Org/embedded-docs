@@ -17,4 +17,4 @@ O nó SaveAnimatedPNG é projetado para criar e salvar imagens PNG animadas a pa
 | --- | --- | --- |
 | `imagens` | Fornece um componente de interface do usuário exibindo as imagens PNG animadas geradas e indicando se a animação é de quadro único ou múltiplos quadros. | N/A |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedPNG/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedPng/pt-BR.md)

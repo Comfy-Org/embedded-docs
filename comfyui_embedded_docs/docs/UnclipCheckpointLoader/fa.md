@@ -19,4 +19,4 @@
 | `vae` | نشان‌دهنده ماژول VAE بارگذاری‌شده از نقطه بازبینی (در صورت وجود) است. | `VAE` | `torch.nn.Module` |
 | `clip_vision` | نشان‌دهنده ماژول vision CLIP بارگذاری‌شده از نقطه بازبینی (در صورت وجود) است. | `CLIP_VISION` | `torch.nn.Module` |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPCheckpointLoader/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnclipCheckpointLoader/fa.md)

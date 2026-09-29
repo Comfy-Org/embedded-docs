@@ -17,4 +17,4 @@
 | --- | --- | --- |
 | `條件設定` | 經過強化的條件化數據，現已包含整合後的 CLIP 視覺輸出，並應用了指定的強度與噪聲增強。 | `CONDITIONING` |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPConditioning/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnclipConditioning/zh-TW.md)

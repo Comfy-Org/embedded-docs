@@ -14,4 +14,4 @@ Este nó detecta automaticamente os modelos localizados na pasta `ComfyUI/models
 | --- | --- | --- |
 | `clip_vision` | Modelo CLIP Vision carregado, pronto para codificar imagens ou outras tarefas relacionadas à visão computacional. | CLIP_VISION |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPVisionLoader/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipVisionLoader/pt-BR.md)

@@ -8,4 +8,4 @@ Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/text_enc
  y también leerá modelos desde rutas adicionales configuradas en el archivo extra_model_paths.yaml.
  En ocasiones, después de agregar modelos, es posible que necesites **recargar la interfaz de ComfyUI** para que pueda leer los archivos de modelo en la carpeta correspondiente.
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleCLIPLoader/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleClipLoader/es.md)

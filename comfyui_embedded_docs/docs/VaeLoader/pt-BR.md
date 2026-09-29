@@ -16,4 +16,4 @@ O nó VAELoader foi projetado para carregar modelos de Autoencoder Variacional (
 | --- | --- | --- |
 | `vae` | Retorna o modelo VAE carregado, pronto para operações adicionais, como codificação ou decodificação. A saída é um objeto de modelo que encapsula o estado do modelo carregado. | `VAE` |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAELoader/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeLoader/pt-BR.md)

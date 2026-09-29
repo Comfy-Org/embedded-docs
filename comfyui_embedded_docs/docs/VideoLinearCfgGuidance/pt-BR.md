@@ -15,4 +15,4 @@ O nó VideoLinearCFGGuidance aplica uma escala de orientação de condicionament
 | --- | --- | --- |
 | `model` | A saída é uma versão modificada do modelo de entrada, com a escala de orientação CFG linear aplicada. Este modelo ajustado é capaz de gerar saídas com diferentes graus de condicionamento, com base na escala de orientação especificada. | MODEL |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCFGGuidance/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCfgGuidance/pt-BR.md)

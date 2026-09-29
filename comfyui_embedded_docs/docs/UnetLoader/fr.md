@@ -17,4 +17,4 @@ Ce nœud détectera les modèles situés dans le dossier `ComfyUI/models/diffusi
 | --- | --- | --- |
 | `model` | Renvoie le modèle U-Net chargé, permettant son utilisation pour un traitement ultérieur ou une inférence au sein du système. | MODEL |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UNETLoader/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnetLoader/fr.md)

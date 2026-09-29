@@ -19,4 +19,4 @@
 | `vae` | Представляет модуль VAE, загруженный из контрольной точки (если доступен). | `VAE` | `torch.nn.Module` |
 | `clip_vision` | Представляет модуль CLIP vision, загруженный из контрольной точки (если доступен). | `CLIP_VISION` | `torch.nn.Module` |
 
-> Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPCheckpointLoader/ru.md)
+> Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnclipCheckpointLoader/ru.md)

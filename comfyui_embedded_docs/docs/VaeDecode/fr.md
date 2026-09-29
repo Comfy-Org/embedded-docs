@@ -15,4 +15,4 @@ Le nœud VAEDecode est conçu pour décoder des représentations latentes en ima
 | --- | --- | --- |
 | `image` | La sortie est une image reconstruite à partir de la représentation latente fournie, en utilisant le modèle VAE spécifié. | `IMAGE` |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecode/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeDecode/fr.md)

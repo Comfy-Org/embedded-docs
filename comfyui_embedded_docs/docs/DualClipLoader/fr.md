@@ -20,4 +20,4 @@ Ce nœud détectera les modèles situés dans le dossier `ComfyUI/models/text_en
 | --- | --- | --- |
 | `clip` | La sortie est un modèle CLIP combiné qui intègre les caractéristiques ou fonctionnalités des deux modèles CLIP spécifiés. | CLIP |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DualCLIPLoader/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DualClipLoader/fr.md)

@@ -16,4 +16,4 @@ VideoLinearCFGGuidance 節點對影片模型應用線性條件引導比例，在
 | --- | --- | --- |
 | `model` | 輸出為輸入模型的修改版本，已套用線性 CFG 引導比例。此調整後的模型能夠根據指定的引導比例，生成具有不同程度條件影響的輸出。 | MODEL |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCFGGuidance/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCfgGuidance/zh-TW.md)

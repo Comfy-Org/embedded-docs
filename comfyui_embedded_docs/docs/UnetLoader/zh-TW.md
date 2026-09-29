@@ -19,4 +19,4 @@ UNETLoader 節點專為依名稱載入 U-Net 模型而設計，便於在系統�
 | --- | --- | --- |
 | `model` | 傳回已載入的 U-Net 模型，使其能夠在系統中用於進一步處理或推論。 | MODEL |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UNETLoader/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnetLoader/zh-TW.md)

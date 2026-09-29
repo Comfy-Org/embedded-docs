@@ -17,4 +17,4 @@
 | --- | --- | --- |
 | `تصاویر` | یک مؤلفه رابط کاربری ارائه می‌دهد که تصاویر PNG پویانمایی تولید شده را نمایش می‌دهد و مشخص می‌کند که پویانمایی تک‌فریمی است یا چندفریمی. | نامشخص |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedPNG/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedPng/fa.md)

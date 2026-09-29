@@ -22,4 +22,4 @@
 | `positive` | Положительные данные conditioning, обработанные ControlNet, могут быть переданы на следующий узел ControlNet или K Sampler | `CONDITIONING` |
 | `negative` | Отрицательные данные conditioning, обработанные ControlNet, могут быть переданы на следующий узел ControlNet или K Sampler | `CONDITIONING` |
 
-> Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/ru.md)
+> Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlnetApply/ru.md)

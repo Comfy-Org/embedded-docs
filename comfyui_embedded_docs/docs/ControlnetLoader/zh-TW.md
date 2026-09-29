@@ -16,4 +16,4 @@ ControlNetLoader 節點旨在從指定路徑載入 ControlNet 模型。它在初
 | --- | --- | --- |
 | `control_net` | 回傳已載入的 ControlNet 模型，準備好用於控制或修改內容生成流程。 | `CONTROL_NET` |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetLoader/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlnetLoader/zh-TW.md)

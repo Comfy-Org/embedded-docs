@@ -39,4 +39,4 @@ SDXL Refiner هو نموذج تحسين متخصص يركز على تحسين ت
 4. يركز نموذج Refiner على تحسين تفاصيل الصورة وجودتها، لذا يجب أن تركز النصوص الوصفية على التأثيرات البصرية المرغوبة بدلاً من محتوى المشهد
 5. في الاستخدام العملي، يُستخدم Refiner عادةً في المراحل المتأخرة من التوليد (حوالي آخر 20% من الخطوات)، مع التركيز على تحسين التفاصيل
 
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXLRefiner/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipTextEncodeSdxlRefiner/ar.md)

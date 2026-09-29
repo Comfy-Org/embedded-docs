@@ -17,4 +17,4 @@
 | --- | --- | --- | --- |
 | `النموذج` | النموذج المُعزز بقدرات أخذ العينات المستمرة القائمة على نماذج الانتشار المعتمدة على الطاقة (EDM)، وجاهز للاستخدام في مهام التوليد. | MODEL | `torch.nn.Module` |
 
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousEDM/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousEdm/ar.md)

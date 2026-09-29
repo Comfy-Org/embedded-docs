@@ -2,7 +2,7 @@
 
 Voici la traduction en français de la documentation du nœud SAM3 Detect :
 
-# Nœud SAM3 Detect
+## Nœud SAM3 Detect
 
 ## Aperçu
 

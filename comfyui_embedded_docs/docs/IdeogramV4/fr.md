@@ -2,7 +2,7 @@
 
 Voici la traduction en français de la documentation du nœud ComfyUI « Ideogram V4 », conforme à vos règles :
 
-# Ideogram V4
+## Ideogram V4
 
 Génère des images à l'aide du modèle Ideogram 4.0 à partir d'une invite textuelle. Ce nœud envoie votre description textuelle à l'API Ideogram et retourne l'image générée sous forme de tenseur de sortie.
 

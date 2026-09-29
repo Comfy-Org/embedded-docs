@@ -17,4 +17,4 @@
 | --- | --- | --- |
 | `شرط‌گذاری` | داده‌های شرطی‌سازی غنی‌شده که اکنون شامل خروجی‌های بینایی CLIP ادغام‌شده با شدت و نویزافزایی اعمال‌شده است. | `CONDITIONING` |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPConditioning/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnclipConditioning/fa.md)

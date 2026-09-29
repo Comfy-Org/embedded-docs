@@ -17,4 +17,4 @@ DiffControlNetLoader düğümü, diferansiyel kontrol ağlarını yüklemek içi
 | --- | --- | --- |
 | `control_net` | Yüklenmiş ve davranış değişikliği için bir temel modele uygulanmaya hazır bir diferansiyel kontrol ağı. | `CONTROL_NET` |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DiffControlNetLoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DiffControlnetLoader/tr.md)

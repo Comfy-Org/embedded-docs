@@ -12,4 +12,4 @@ QuadrupleCLIPLoader — один из основных узлов ComfyUI, вп�
 а также считывает модели из дополнительных путей, настроенных в файле extra_model_paths.yaml.
 Иногда после добавления моделей может потребоваться **перезагрузить интерфейс ComfyUI**, чтобы он смог прочитать файлы моделей в соответствующей папке.
 
-> Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleCLIPLoader/ru.md)
+> Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleClipLoader/ru.md)

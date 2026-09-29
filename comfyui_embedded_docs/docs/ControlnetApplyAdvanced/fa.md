@@ -21,4 +21,4 @@
 | `مثبت` | داده شرطی‌سازی مثبت اصلاح‌شده پس از اعمال تبدیل‌های شبکه کنترل که نشان‌دهنده بهبودهای اعمال‌شده بر اساس پارامترهای ورودی است. | `CONDITIONING` |
 | `منفی` | داده شرطی‌سازی منفی اصلاح‌شده پس از اعمال تبدیل‌های شبکه کنترل که نشان‌دهنده سرکوب یا حذف ویژگی‌های خاص بر اساس پارامترهای ورودی است. | `CONDITIONING` |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplyAdvanced/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlnetApplyAdvanced/fa.md)

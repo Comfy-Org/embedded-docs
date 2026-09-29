@@ -16,4 +16,4 @@ O nó ControlNetLoader foi projetado para carregar um modelo ControlNet a partir
 | --- | --- | --- |
 | `control_net` | Retorna o modelo ControlNet carregado, pronto para uso no controle ou modificação de processos de geração de conteúdo. | `CONTROL_NET` |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetLoader/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlnetLoader/pt-BR.md)

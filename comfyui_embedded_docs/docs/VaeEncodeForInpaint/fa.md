@@ -17,4 +17,4 @@
 | --- | --- | --- |
 | `latent` | خروجی شامل نمایش نهفته رمزگذاری‌شده تصویر و یک ماسک نویز است که هر دو برای کارهای بعدی ترمیم تصویر ضروری هستند. | `LATENT` |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEEncodeForInpaint/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeEncodeForInpaint/fa.md)

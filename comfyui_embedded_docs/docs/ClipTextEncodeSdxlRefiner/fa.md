@@ -39,4 +39,4 @@ SDXL Refiner یک مدل تخصصی Refinement است که بر بهبود جز�
 4. مدل Refiner بر بهبود جزئیات و کیفیت تصویر تمرکز دارد، بنابراین پرامپت‌های متنی باید بر جلوه‌های بصری مطلوب تأکید کنند نه محتوای صحنه
 5. در استفاده عملی، Refiner معمولاً در مراحل پایانی تولید (تقریباً 20٪ آخر مراحل) استفاده می‌شود و بر بهینه‌سازی جزئیات تمرکز دارد
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXLRefiner/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipTextEncodeSdxlRefiner/fa.md)

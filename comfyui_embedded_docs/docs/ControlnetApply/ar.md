@@ -22,4 +22,4 @@
 | `positive` | `CONDITIONING` | بيانات التوجيه الإيجابي المعالجة بواسطة ControlNet، يمكن إخراجها إلى عقد ControlNet التالية أو عقد أخذ العينات K |
 | `negative` | `CONDITIONING` | بيانات التوجيه السلبي المعالجة بواسطة ControlNet، يمكن إخراجها إلى عقد ControlNet التالية أو عقد أخذ العينات K |
 
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlnetApply/ar.md)

@@ -21,4 +21,4 @@
 | --- | --- | --- |
 | `conditioning` | Orijinal koşullandırma verileri ile yeni eklenen metin kutusu parametrelerini ve kodlanmış metin bilgisini içeren zenginleştirilmiş koşullandırma çıktısıdır. Üretken modele bağlam bilincine sahip çıktılar üretmede rehberlik etmek için kullanılır. | `CONDITIONING` |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLIGENTextBoxApply/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GligenTextBoxApply/tr.md)

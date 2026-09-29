@@ -16,4 +16,4 @@
 | --- | --- | --- |
 | `vae` | مدل VAE بارگذاری‌شده را بازمی‌گرداند که برای عملیات بعدی مانند رمزگذاری یا رمزگشایی آماده است. خروجی یک شیء مدل است که وضعیت مدل بارگذاری‌شده را در خود دارد. | `VAE` |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAELoader/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeLoader/fa.md)

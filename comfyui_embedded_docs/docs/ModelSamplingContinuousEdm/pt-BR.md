@@ -17,4 +17,4 @@ Este nó foi projetado para aprimorar as capacidades de amostragem de um modelo,
 | --- | --- | --- | --- |
 | `modelo` | O modelo aprimorado com capacidades contínuas de amostragem EDM integradas, pronto para uso em tarefas de geração. | MODEL | `torch.nn.Module` |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousEDM/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousEdm/pt-BR.md)

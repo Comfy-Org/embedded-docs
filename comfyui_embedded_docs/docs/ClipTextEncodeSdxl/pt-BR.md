@@ -22,4 +22,4 @@ Este nó foi projetado para codificar entrada de texto usando um modelo CLIP esp
 | --- | --- | --- |
 | `CONDITIONING` | Contém o texto codificado e as informações condicionais necessárias para a geração da imagem. | CONDITIONING |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXL/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipTextEncodeSdxl/pt-BR.md)

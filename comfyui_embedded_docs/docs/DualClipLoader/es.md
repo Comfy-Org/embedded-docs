@@ -20,4 +20,4 @@ Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/text_enc
 | --- | --- | --- |
 | `clip` | La salida es un modelo CLIP combinado que integra las características o funcionalidades de los dos modelos CLIP especificados. | CLIP |
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DualCLIPLoader/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DualClipLoader/es.md)

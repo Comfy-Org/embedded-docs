@@ -16,4 +16,4 @@
 | --- | --- | --- |
 | `gligen` | مدل GLIGEN بارگذاری‌شده، آماده برای استفاده در وظایف مولد، نمایانگر مدل کاملاً مقداردهی‌اولیه‌شده بارگذاری‌شده از مسیر مشخص‌شده. | `GLIGEN` |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLIGENLoader/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GligenLoader/fa.md)

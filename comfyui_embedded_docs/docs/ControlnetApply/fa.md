@@ -22,4 +22,4 @@
 | `positive` | `CONDITIONING` | داده‌های شرطی‌سازی مثبت پردازش‌شده توسط ControlNet، قابل خروجی به گره‌های ControlNet بعدی یا نمونه‌بردار K |
 | `negative` | `CONDITIONING` | داده‌های شرطی‌سازی منفی پردازش‌شده توسط ControlNet، قابل خروجی به گره‌های ControlNet بعدی یا نمونه‌بردار K |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlnetApply/fa.md)

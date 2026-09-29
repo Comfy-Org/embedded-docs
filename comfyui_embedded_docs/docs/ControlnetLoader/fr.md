@@ -16,4 +16,4 @@ Le nœud ControlNetLoader est conçu pour charger un modèle ControlNet à parti
 | --- | --- | --- |
 | `control_net` | Renvoie le modèle ControlNet chargé, prêt à être utilisé pour contrôler ou modifier les processus de génération de contenu. | `CONTROL_NET` |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetLoader/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlnetLoader/fr.md)

@@ -8,4 +8,4 @@ Este nó detectará os modelos localizados na pasta `ComfyUI/models/text_encoder
  e também lerá modelos de caminhos adicionais configurados no arquivo *extra_model_paths.yaml*.
  Às vezes, após adicionar modelos, pode ser necessário **recarregar a interface do ComfyUI** para permitir que ele leia os arquivos de modelo na pasta correspondente.
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleCLIPLoader/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleClipLoader/pt-BR.md)

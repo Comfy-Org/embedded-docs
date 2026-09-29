@@ -15,4 +15,4 @@
 | --- | --- | --- |
 | `model` | خروجی، نسخه اصلاح‌شده‌ای از مدل ورودی است که مقیاس راهنمایی CFG خطی بر روی آن اعمال شده است. این مدل تنظیم‌شده قادر به تولید خروجی‌هایی با درجات مختلف شرطی‌سازی بر اساس مقیاس راهنمایی مشخص‌شده می‌باشد. | MODEL |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCFGGuidance/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCfgGuidance/fa.md)
