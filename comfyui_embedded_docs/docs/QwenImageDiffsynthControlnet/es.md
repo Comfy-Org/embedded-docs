@@ -1,27 +1,29 @@
 # QwenImageDiffsynthControlnet
 
-QwenImageDiffsynthControlnet aplica un parche de red de control de síntesis de difusión a un modelo base. Utiliza una imagen de entrada y una máscara opcional para guiar el proceso de generación del modelo con una fuerza ajustable, produciendo un modelo parcheado que incorpora la influencia de la red de control para una síntesis de imágenes más controlada.
+QwenImageDiffsynthControlnet aplica un parche de red de control de síntesis por difusión a un modelo base. Utiliza una imagen de entrada y una máscara opcional para guiar el proceso de generación del modelo con una intensidad ajustable, produciendo un modelo parcheado que incorpora la influencia de la red de control para una síntesis de imagen más controlada.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `modelo` | El modelo base que se parcheará con la red de control | MODEL | Sí | - |
-| `parche_del_modelo` | El modelo de parche de la red de control que se aplicará al modelo base | MODEL_PATCH | Sí | - |
-| `vae` | El VAE (Autoencoder Variacional) utilizado en el proceso de difusión | VAE | Sí | - |
-| `imagen` | La imagen de entrada utilizada para guiar la red de control. Solo se utilizan los primeros tres canales de color (RGB); cualquier canal adicional se descarta | IMAGE | Sí | - |
-| `intensidad` | La fuerza de la influencia de la red de control (por defecto: 1.0) | FLOAT | Sí | -10.0 a 10.0 |
-| `máscara` | Máscara opcional que define las áreas donde se debe aplicar la red de control. La máscara se invierte internamente antes de su uso | MASK | No | - |
+| `modelo` | El modelo base al que se aplicará el parche de la red de control | MODEL | Sí | - |
+| `parche_del_modelo` | El modelo de parche de red de control que se aplicará al modelo base | MODEL_PATCH | Sí | - |
+| `vae` | El VAE (autoencoder variacional) utilizado en el proceso de difusión | VAE | Sí | - |
+| `imagen` | La imagen de entrada utilizada para guiar la red de control. Solo se utilizan los tres primeros canales de color (RGB); los canales adicionales se descartan | IMAGE | Sí | - |
+| `intensidad` | La intensidad de la influencia de la red de control (predeterminado: 1.0) | FLOAT | Sí | -10.0 a 10.0 (paso 0.01) |
+| `máscara` | Máscara opcional que define las áreas donde se debe aplicar la red de control. Para los parches DiffSynth y Z-Image, la máscara se invierte internamente antes de usarla | MASK | No | - |
+| `start_percent` | El punto en el proceso de eliminación de ruido, como fracción del total de pasos de muestreo, donde la red de control comienza a tener efecto (predeterminado: 0.0) | FLOAT | No | 0.0 a 1.0 (paso 0.001) |
+| `end_percent` | El punto en el proceso de eliminación de ruido donde la red de control deja de tener efecto (predeterminado: 1.0) | FLOAT | No | 0.0 a 1.0 (paso 0.001) |
 
-**Nota:** Cuando se proporciona una máscara, se invierte automáticamente (1.0 - máscara) y se reforma para que coincida con las dimensiones esperadas para el procesamiento de la red de control. El nodo utiliza diferentes métodos de procesamiento interno dependiendo de si el parche del modelo es de tipo ZImage Control o una red de control DiffSynth estándar. Este nodo está marcado como experimental.
+**Nota:** Los valores `start_percent` y `end_percent` restringen la red de control a una ventana del proceso de eliminación de ruido; fuera de esa ventana, el modelo se muestrea sin el parche. Si `strength` se establece en 0, el nodo devuelve el modelo base sin cambios. Cuando se proporciona una máscara, se invierte (1.0 - mask) y se remodela para las rutas Z-Image Control y DiffSynth estándar, mientras que un parche Qwen Image 2.1 Fun ControlNet utiliza la máscara tal como se proporciona. El nodo elige su implementación interna de parche a partir del parche de modelo cargado, por lo que las mismas entradas se comportan de manera ligeramente diferente para Z-Image Control, Qwen Image 2.1 Fun ControlNet y los checkpoints DiffSynth estándar. Este nodo está marcado como experimental.
 
 ## Salidas
 
-| Nombre de salida | Descripción | Tipo de dato |
+| Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
-| `model` | El modelo modificado con el parche de red de control de síntesis de difusión aplicado | MODEL |
+| `model` | El modelo modificado con el parche de red de control de síntesis por difusión aplicado | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageDiffsynthControlnet/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `56739c098933cb70d3bcb8d6b251da33e7879b464b2e8a7296da085aefc15698`
+**Source fingerprint (SHA-256):** `7be42c001c2937af7ca5c2d45aa8a529574aa9117b4740c62da822910041d231`

@@ -1,27 +1,29 @@
 # QwenImageDiffsynthControlnet
 
-QwenImageDiffsynthControlnet, temel bir modele difüzyon sentezi kontrol ağı yaması uygular. Giriş görüntüsü ve isteğe bağlı bir maske kullanarak modelin üretim sürecini ayarlanabilir güçle yönlendirir; kontrol ağının etkisini içeren yamalı bir model üretir ve böylece daha kontrollü görüntü sentezi sağlar.
+QwenImageDiffsynthControlnet, bir temel modele difüzyon sentez kontrol ağı yaması uygular. Ayarlanabilir güçle modelin üretim sürecine yol göstermek için bir giriş görüntüsü ve isteğe bağlı bir maske kullanır; daha kontrollü görüntü sentezi için kontrol ağının etkisini içeren yamalı bir model üretir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Kontrol ağı ile yamalanacak temel model | MODEL | Evet | - |
+| `model` | Kontrol ağıyla yamalanacak temel model | MODEL | Evet | - |
 | `model_yaması` | Temel modele uygulanacak kontrol ağı yama modeli | MODEL_PATCH | Evet | - |
 | `vae` | Difüzyon sürecinde kullanılan VAE (Varyasyonel Otomatik Kodlayıcı) | VAE | Evet | - |
-| `görsel` | Kontrol ağını yönlendirmek için kullanılan giriş görüntüsü. Yalnızca ilk üç renk kanalı (RGB) kullanılır; ek kanallar atılır | IMAGE | Evet | - |
-| `güç` | Kontrol ağı etkisinin gücü (varsayılan: 1.0) | FLOAT | Evet | -10.0 ile 10.0 |
-| `maske` | Kontrol ağının uygulanacağı alanları tanımlayan isteğe bağlı maske. Maske kullanımdan önce dahili olarak ters çevrilir | MASK | Hayır | - |
+| `görsel` | Kontrol ağına yol göstermek için kullanılan giriş görüntüsü. Yalnızca ilk üç renk kanalı (RGB) kullanılır; ilave kanallar atılır | IMAGE | Evet | - |
+| `güç` | Kontrol ağı etkisinin gücü (varsayılan: 1.0) | FLOAT | Evet | -10.0 ila 10.0 (adım 0.01) |
+| `maske` | Kontrol ağının uygulanacağı alanları tanımlayan isteğe bağlı maske. DiffSynth ve Z-Image yamaları için maske kullanılmadan önce dahili olarak ters çevrilir | MASK | Hayır | - |
+| `start_percent` | Toplam örnekleme adımlarının bir kesri olarak, kontrol ağının etkili olmaya başladığı gürültü giderme sürecindeki nokta (varsayılan: 0.0) | FLOAT | Hayır | 0.0 ila 1.0 (adım 0.001) |
+| `end_percent` | Kontrol ağının etkili olmayı bıraktığı gürültü giderme sürecindeki nokta (varsayılan: 1.0) | FLOAT | Hayır | 0.0 ila 1.0 (adım 0.001) |
 
-**Not:** Maske sağlandığında, maske otomatik olarak ters çevrilir (1.0 - maske) ve kontrol ağı işleme için beklenen boyutlara yeniden şekillendirilir. Düğüm, model yamasının bir ZImage Kontrol tipi mi yoksa standart bir DiffSynth kontrol ağı mı olduğuna bağlı olarak farklı dahili işleme yöntemleri kullanır. Bu düğüm deneysel olarak işaretlenmiştir.
+**Not:** `start_percent` ve `end_percent` değerleri kontrol ağını gürültü giderme sürecinin bir penceresiyle sınırlar; bu pencerenin dışında model yama olmadan örneklenir. `strength` 0 olarak ayarlanırsa düğüm temel modeli değişmeden döndürür. Bir maske sağlandığında, Z-Image Control ve standart DiffSynth yolları için maske ters çevrilir (1.0 - mask) ve yeniden şekillendirilir; Qwen Image 2.1 Fun ControlNet yaması ise maskeyi verildiği gibi kullanır. Düğüm, dahili yama uygulamasını yüklenen model yamasından seçer; bu nedenle aynı girdiler Z-Image Control, Qwen Image 2.1 Fun ControlNet ve standart DiffSynth checkpoint'leri için biraz farklı davranır. Bu düğüm deneysel olarak işaretlenmiştir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model` | Difüzyon sentezi kontrol ağı yaması uygulanmış değiştirilmiş model | MODEL |
+| `model` | Difüzyon sentez kontrol ağı yaması uygulanmış değiştirilmiş model | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageDiffsynthControlnet/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `56739c098933cb70d3bcb8d6b251da33e7879b464b2e8a7296da085aefc15698`
+**Source fingerprint (SHA-256):** `7be42c001c2937af7ca5c2d45aa8a529574aa9117b4740c62da822910041d231`
