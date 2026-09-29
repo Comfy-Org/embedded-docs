@@ -17,4 +17,4 @@ Este nó foi projetado para integrar as saídas de visão do CLIP no processo de
 | --- | --- | --- |
 | `condicionamento` | Os dados de condicionamento enriquecidos, agora contendo saídas de visão do CLIP integradas com intensidade e aumento de ruído aplicados. | `CONDITIONING` |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPConditioning/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnclipConditioning/pt-BR.md)

@@ -19,4 +19,4 @@
 | `vae` | يُمثل وحدة VAE المُحمّلة من نقطة التفتيش، إن وُجدت. | `VAE` | `torch.nn.Module` |
 | `clip_vision` | يُمثل وحدة CLIP البصرية المُحمّلة من نقطة التفتيش، إن وُجدت. | `CLIP_VISION` | `torch.nn.Module` |
 
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPCheckpointLoader/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnclipCheckpointLoader/ar.md)

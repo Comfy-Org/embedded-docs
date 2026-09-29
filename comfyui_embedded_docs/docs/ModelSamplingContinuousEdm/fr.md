@@ -17,4 +17,4 @@ Ce nœud est conçu pour améliorer les capacités d'échantillonnage d'un modè
 | --- | --- | --- | --- |
 | `modèle` | Le modèle amélioré avec des capacités d'échantillonnage EDM continu intégrées, prêt à être utilisé dans des tâches de génération. | MODEL | `torch.nn.Module` |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousEDM/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousEdm/fr.md)

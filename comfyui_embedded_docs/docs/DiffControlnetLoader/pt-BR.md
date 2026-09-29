@@ -17,4 +17,4 @@ O nó DiffControlNetLoader foi projetado para carregar redes de controle diferen
 | --- | --- | --- |
 | `control_net` | Uma rede de controle diferencial que foi carregada e está pronta para ser aplicada a um modelo base para modificação de comportamento. | `CONTROL_NET` |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DiffControlNetLoader/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DiffControlnetLoader/pt-BR.md)

@@ -15,4 +15,4 @@ El nodo VAEDecode está diseñado para decodificar representaciones latentes en 
 | --- | --- | --- |
 | `image` | La salida es una imagen reconstruida a partir de la representación latente proporcionada, utilizando el modelo VAE especificado. | `IMAGE` |
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecode/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeDecode/es.md)

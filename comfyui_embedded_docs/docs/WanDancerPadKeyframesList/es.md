@@ -1,5 +1,7 @@
 # WanDancerPadKeyframesList
 
+## Descripción general
+
 Este nodo toma una secuencia de imágenes y una pista de audio opcional, y las divide en un número especificado de segmentos rellenados. Está diseñado para preparar secuencias de fotogramas clave para generación de video, donde cada segmento se rellena a una longitud uniforme y se crea una máscara correspondiente para indicar qué fotogramas son válidos.
 
 ## Entradas

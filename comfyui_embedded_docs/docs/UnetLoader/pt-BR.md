@@ -17,4 +17,4 @@ Este nó detectará modelos localizados na pasta `ComfyUI/models/diffusion_model
 | --- | --- | --- |
 | `model` | Retorna o modelo U-Net carregado, permitindo que ele seja utilizado para processamento adicional ou inferência dentro do sistema. | MODEL |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UNETLoader/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnetLoader/pt-BR.md)

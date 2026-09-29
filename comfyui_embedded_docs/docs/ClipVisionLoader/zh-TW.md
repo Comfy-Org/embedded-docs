@@ -14,4 +14,4 @@
 | --- | --- | --- |
 | `clip_vision` | 已載入的 CLIP Vision 模型，可用於編碼影像或其他與視覺相關的任務。 | CLIP_VISION |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPVisionLoader/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipVisionLoader/zh-TW.md)

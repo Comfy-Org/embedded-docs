@@ -15,4 +15,4 @@ Este nó foi projetado para codificar imagens em uma representação de espaço 
 | --- | --- | --- |
 | `latent` | A saída é uma representação no espaço latente da imagem de entrada, encapsulando suas características essenciais em uma forma compactada. | `LATENT` |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEEncode/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeEncode/pt-BR.md)

@@ -39,4 +39,4 @@ Refiner iki şekilde kullanılabilir:
 4. Refiner modeli, görüntü ayrıntılarını ve kalitesini geliştirmeye odaklanır, bu nedenle metin istemleri sahne içeriğinden ziyade istenen görsel efektleri vurgulamalıdır
 5. Pratik kullanımda, Refiner tipik olarak üretimin sonraki aşamalarında (yaklaşık son %20'lik adım) kullanılır ve ayrıntı optimizasyonuna odaklanır
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXLRefiner/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipTextEncodeSdxlRefiner/tr.md)

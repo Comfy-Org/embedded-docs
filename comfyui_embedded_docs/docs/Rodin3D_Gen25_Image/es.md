@@ -1,5 +1,7 @@
 # Rodin 3D Gen-2.5 - Imagen a 3D
 
+## Descripción general
+
 Este nodo genera un modelo 3D a partir de una a cinco imágenes de referencia utilizando la API de Rodin Gen-2.5. Puedes elegir entre los modos de calidad Rápido, Regular o Ultra-Alta para equilibrar la velocidad de generación y el costo.
 
 ## Entradas

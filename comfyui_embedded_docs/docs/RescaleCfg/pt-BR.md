@@ -15,4 +15,4 @@ O nó RescaleCFG foi projetado para ajustar as escalas de condicionamento e não
 | --- | --- | --- |
 | `modelo` | O modelo modificado com escalas de condicionamento e não condicionamento ajustadas. Espera-se que este modelo produza saídas com características potencialmente aprimoradas devido ao redimensionamento aplicado. | MODEL |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RescaleCFG/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RescaleCfg/pt-BR.md)

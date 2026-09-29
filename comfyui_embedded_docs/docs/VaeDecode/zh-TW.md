@@ -16,4 +16,4 @@ VAEDecode 節點專門用於使用指定的變分自編碼器（VAE）將潛在�
 | --- | --- | --- |
 | `image` | 輸出是使用指定的 VAE 模型從提供的潛在表示重建的圖像。 | `IMAGE` |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecode/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeDecode/zh-TW.md)

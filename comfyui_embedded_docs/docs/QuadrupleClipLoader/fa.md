@@ -6,4 +6,4 @@
 
 این گره مدل‌های موجود در پوشه `ComfyUI/models/text_encoders` را شناسایی می‌کند و همچنین مدل‌های موجود در مسیرهای اضافی تعریف‌شده در فایل extra_model_paths.yaml را نیز بارگذاری می‌کند. گاهی اوقات، پس از افزودن مدل‌ها، لازم است **رابط کاربری ComfyUI را مجدداً بارگذاری کنید** تا بتواند فایل‌های مدل را در پوشه مربوطه بخواند.
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleCLIPLoader/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleClipLoader/fa.md)

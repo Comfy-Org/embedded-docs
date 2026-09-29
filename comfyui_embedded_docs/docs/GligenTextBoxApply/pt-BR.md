@@ -21,4 +21,4 @@ O nó `GLIGENTextBoxApply` foi projetado para integrar condicionamento baseado e
 | --- | --- | --- |
 | `conditioning` | A saída de condicionamento enriquecida, que inclui os dados de condicionamento originais juntamente com os parâmetros da caixa de texto recém-anexados e as informações textuais codificadas. É usada para orientar o modelo generativo na produção de saídas conscientes do contexto. | `CONDITIONING` |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLIGENTextBoxApply/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GligenTextBoxApply/pt-BR.md)

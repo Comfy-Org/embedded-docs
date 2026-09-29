@@ -15,4 +15,4 @@ Ce nœud est conçu pour encoder des images dans une représentation d'espace la
 | --- | --- | --- |
 | `latent` | La sortie est une représentation dans l'espace latent de l'image d'entrée, encapsulant ses caractéristiques essentielles sous une forme compressée. | `LATENT` |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEEncode/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeEncode/fr.md)

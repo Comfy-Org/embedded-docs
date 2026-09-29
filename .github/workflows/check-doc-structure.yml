@@ -1,0 +1,37 @@
+name: Check Localized Doc Structure
+
+on:
+  pull_request:
+    paths:
+      - 'comfyui_embedded_docs/docs/**/*.md'
+      - '.github/scripts/check_doc_structure.py'
+      - '.github/workflows/check-doc-structure.yml'
+  schedule:
+    # Weekly full-repo scan: pre-existing defects on main are reported, not fatal.
+    - cron: '0 22 * * 5'
+
+permissions:
+  contents: read
+
+jobs:
+  check-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0  # the checker needs a merge-base for the A...B diff
+          persist-credentials: false  # the checker runs on PR-controlled content
+      - name: Set up Python
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+      - name: Fetch base ref for changed-files scope
+        if: github.event_name == 'pull_request'
+        run: git fetch --no-tags origin main:refs/remotes/origin/main
+      - name: Compare changed translations with their English source
+        if: github.event_name == 'pull_request'
+        run: |
+          python .github/scripts/check_doc_structure.py --changed-only --base origin/main
+      - name: Weekly full scan
+        if: github.event_name == 'schedule'
+        run: |
+          python .github/scripts/check_doc_structure.py || echo "::warning::Pre-existing structure defects on main - run check_doc_structure.py --fix"

@@ -22,4 +22,4 @@ L'utilisation de ControlNet nécessite un prétraitement des images d'entrée. �
 | `positive` | `CONDITIONING` | Données de conditionnement positives traitées par ControlNet, peuvent être transmises au nœud ControlNet suivant ou aux nœuds K Sampler |
 | `negative` | `CONDITIONING` | Données de conditionnement négatives traitées par ControlNet, peuvent être transmises au nœud ControlNet suivant ou aux nœuds K Sampler |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlnetApply/fr.md)

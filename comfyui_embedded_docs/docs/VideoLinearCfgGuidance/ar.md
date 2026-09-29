@@ -15,4 +15,4 @@
 | --- | --- | --- |
 | `النموذج` | المخرج هو نسخة معدلة من النموذج المدخل، مع تطبيق مقياس التوجيه التبايني الخطي. هذا النموذج المعدّل قادر على توليد مخرجات بدرجات متفاوتة من التوجيه، بناءً على مقياس التوجيه المحدد. | MODEL |
 
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCFGGuidance/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCfgGuidance/ar.md)

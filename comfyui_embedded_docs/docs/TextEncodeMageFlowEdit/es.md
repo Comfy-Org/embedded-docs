@@ -1,5 +1,7 @@
 # TextEncodeMageFlowEdit
 
+## Descripción general
+
 Este nodo codifica una instrucción de edición (prompt) junto con una o más imágenes de referencia para el modelo Mage-Flow-Edit. Redimensiona todas las imágenes de referencia a la resolución de salida objetivo, las codifica en el espacio latente si se proporciona un VAE, y adjunta los latentes de referencia a la salida de condicionamiento. También se genera un tensor latente en blanco con las dimensiones correctas para el muestreo, garantizando que el tamaño coincida siempre con el ancho y alto de salida.
 
 ## Entradas

@@ -19,4 +19,4 @@ El nodo unCLIPCheckpointLoader está diseñado para cargar puntos de control (ch
 | `vae` | Representa el módulo VAE cargado desde el punto de control, si está disponible. | `VAE` | `torch.nn.Module` |
 | `clip_vision` | Representa el módulo CLIP vision cargado desde el punto de control, si está disponible. | `CLIP_VISION` | `torch.nn.Module` |
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPCheckpointLoader/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnclipCheckpointLoader/es.md)

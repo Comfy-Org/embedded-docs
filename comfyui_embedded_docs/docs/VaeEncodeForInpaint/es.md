@@ -17,4 +17,4 @@ Este nodo está diseñado para codificar imágenes en una representación latent
 | --- | --- | --- |
 | `latent` | La salida incluye la representación latente codificada de la imagen y una máscara de ruido, ambas cruciales para las tareas posteriores de inpainting. | `LATENT` |
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEEncodeForInpaint/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeEncodeForInpaint/es.md)

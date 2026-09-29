@@ -19,4 +19,4 @@
 | --- | --- | --- |
 | `تصاویر` | یک مؤلفه رابط کاربری ارائه می‌دهد که تصاویر WEBP پویانمایی ذخیره‌شده را همراه با فراداده‌های آن‌ها نمایش می‌دهد و نشان می‌دهد که آیا پویانمایی فعال است یا خیر. | N/A |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedWEBP/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedWebp/fa.md)

@@ -16,4 +16,4 @@ ControlNetLoader düğümü, belirtilen bir yoldan bir ControlNet modeli yüklem
 | --- | --- | --- |
 | `control_net` | Yüklenen ControlNet modelini döndürür; içerik oluşturma süreçlerini kontrol etmek veya değiştirmek için kullanıma hazırdır. | `CONTROL_NET` |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetLoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlnetLoader/tr.md)

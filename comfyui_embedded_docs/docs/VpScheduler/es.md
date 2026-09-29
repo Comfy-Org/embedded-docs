@@ -17,4 +17,4 @@ El nodo VPScheduler está diseñado para generar una secuencia de niveles de rui
 | --- | --- | --- |
 | `sigmas` | Una secuencia de niveles de ruido (sigmas) generada según el método de programación VP, utilizada para guiar el proceso de eliminación de ruido en modelos de difusión. | SIGMAS |
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VPScheduler/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VpScheduler/es.md)

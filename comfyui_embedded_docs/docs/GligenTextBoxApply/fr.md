@@ -21,4 +21,4 @@ Le nœud `GLIGENTextBoxApply` est conçu pour intégrer un conditionnement basé
 | --- | --- | --- |
 | `conditioning` | La sortie de conditionnement enrichie, qui inclut les données de conditionnement d’origine ainsi que les nouveaux paramètres de zone de texte et les informations textuelles encodées. Elle est utilisée pour guider le modèle génératif afin de produire des résultats contextuels. | `CONDITIONING` |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLIGENTextBoxApply/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GligenTextBoxApply/fr.md)

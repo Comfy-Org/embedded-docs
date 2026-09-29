@@ -16,4 +16,4 @@ VAELoader 節點專門用於載入變分自編碼器（VAE）模型，特別針�
 | --- | --- | --- |
 | `vae` | 回傳已載入的 VAE 模型，準備好進行編碼或解碼等後續操作。輸出是一個封裝了已載入模型狀態的模型物件。 | `VAE` |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAELoader/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeLoader/zh-TW.md)

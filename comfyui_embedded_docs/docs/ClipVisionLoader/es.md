@@ -14,4 +14,4 @@ Este nodo detecta automáticamente los modelos ubicados en la carpeta `ComfyUI/m
 | --- | --- | --- |
 | `clip_vision` | Modelo CLIP Vision cargado, listo para codificar imágenes u otras tareas relacionadas con la visión. | CLIP_VISION |
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPVisionLoader/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipVisionLoader/es.md)

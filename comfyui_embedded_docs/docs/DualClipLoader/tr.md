@@ -20,4 +20,4 @@ Bu düğüm, `ComfyUI/models/text_encoders` klasöründe bulunan modelleri algı
 | --- | --- | --- |
 | `clip` | Çıktı, belirtilen iki CLIP modelinin özelliklerini veya işlevlerini entegre eden birleşik bir CLIP modelidir. | CLIP |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DualCLIPLoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DualClipLoader/tr.md)

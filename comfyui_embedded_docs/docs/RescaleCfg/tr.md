@@ -15,4 +15,4 @@ RescaleCFG düğümü, bir model çıktısının koşullu ve koşulsuz ölçekle
 | --- | --- | --- |
 | `model` | Koşullu ve koşulsuz ölçekleri ayarlanmış değiştirilmiş model. Bu modelin, uygulanan yeniden ölçeklendirme sayesinde potansiyel olarak gelişmiş özelliklere sahip çıktılar üretmesi beklenir. | MODEL |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RescaleCFG/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RescaleCfg/tr.md)

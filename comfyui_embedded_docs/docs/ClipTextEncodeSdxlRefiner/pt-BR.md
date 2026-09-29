@@ -39,4 +39,4 @@ O Refiner pode ser usado de duas maneiras:
 4. O modelo Refiner foca em melhorar detalhes e qualidade da imagem, portanto, os prompts de texto devem enfatizar os efeitos visuais desejados, em vez do conteúdo da cena
 5. No uso prático, o Refiner é tipicamente usado nas etapas finais da geração (aproximadamente os últimos 20% das etapas), focando na otimização de detalhes
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXLRefiner/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipTextEncodeSdxlRefiner/pt-BR.md)

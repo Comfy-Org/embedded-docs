@@ -15,4 +15,4 @@ Le nœud VideoLinearCFGGuidance applique une échelle de guidage conditionnel li
 | --- | --- | --- |
 | `modèle` | La sortie est une version modifiée du modèle d'entrée, avec l'échelle de guidage CFG linéaire appliquée. Ce modèle ajusté est capable de générer des sorties avec différents degrés de conditionnement, en fonction de l'échelle de guidage spécifiée. | MODEL |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCFGGuidance/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCfgGuidance/fr.md)

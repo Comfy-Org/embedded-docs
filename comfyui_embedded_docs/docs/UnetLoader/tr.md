@@ -17,4 +17,4 @@ Bu düğüm, `ComfyUI/models/diffusion_models` klasöründe bulunan modelleri al
 | --- | --- | --- |
 | `model` | Yüklenen U-Net modelini döndürür ve sistem içinde daha ileri işleme veya çıkarım için kullanılmasına olanak tanır. | MODEL |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UNETLoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnetLoader/tr.md)

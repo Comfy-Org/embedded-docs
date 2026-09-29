@@ -16,4 +16,4 @@ Ce nœud est conçu pour ajuster l'aspect temporel du conditionnement en défini
 | --- | --- | --- |
 | `CONDITIONING` | La sortie est le conditionnement modifié avec la plage d'étapes temporelles spécifiée appliquée, prêt pour un traitement ou une génération ultérieure. | CONDITIONING |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetTimestepRange/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSettimestepRange/fr.md)

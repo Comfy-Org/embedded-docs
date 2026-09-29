@@ -21,4 +21,4 @@
 | --- | --- | --- |
 | `conditioning` | خروجی شرطی‌سازی غنی‌شده که شامل داده‌های شرطی‌سازی اصلی به همراه پارامترهای جعبه متن و اطلاعات متنی رمزگذاری‌شده جدید است. برای هدایت مدل مولد در تولید خروجی‌های آگاهانه از زمینه استفاده می‌شود. | `CONDITIONING` |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLIGENTextBoxApply/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GligenTextBoxApply/fa.md)

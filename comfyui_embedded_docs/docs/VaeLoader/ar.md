@@ -16,4 +16,4 @@
 | --- | --- | --- |
 | `vae` | يُرجع نموذج VAE المحمّل، جاهزًا لمزيد من العمليات مثل الترميز أو فك الترميز. المخرجات عبارة عن كائن نموذج يغلف حالة النموذج المحمّل. | `VAE` |
 
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAELoader/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeLoader/ar.md)

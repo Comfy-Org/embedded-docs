@@ -21,4 +21,4 @@ Este nó aplica transformações avançadas de rede de controle aos dados de con
 | `positivo` | Os dados de condicionamento positivo modificados após a aplicação das transformações da rede de controle, refletindo os aprimoramentos feitos com base nos parâmetros de entrada. | `CONDITIONING` |
 | `negativo` | Os dados de condicionamento negativo modificados após a aplicação das transformações da rede de controle, refletindo a supressão ou remoção de características específicas com base nos parâmetros de entrada. | `CONDITIONING` |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplyAdvanced/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlnetApplyAdvanced/pt-BR.md)

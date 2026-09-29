@@ -17,4 +17,4 @@ Este nó foi projetado para codificar imagens em uma representação latente ade
 | --- | --- | --- |
 | `latent` | A saída inclui a representação latente codificada da imagem e uma máscara de ruído, ambos cruciais para tarefas subsequentes de inpaint. | `LATENT` |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEEncodeForInpaint/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeEncodeForInpaint/pt-BR.md)

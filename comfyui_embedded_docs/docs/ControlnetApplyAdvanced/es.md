@@ -21,4 +21,4 @@ Este nodo aplica transformaciones avanzadas de red de control a datos de condici
 | `positivo` | Los datos de condicionamiento positivo modificados tras la aplicación de las transformaciones de la red de control, reflejando las mejoras realizadas según los parámetros de entrada. | `CONDITIONING` |
 | `negativo` | Los datos de condicionamiento negativo modificados tras la aplicación de las transformaciones de la red de control, reflejando la supresión o eliminación de características específicas según los parámetros de entrada. | `CONDITIONING` |
 
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplyAdvanced/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlnetApplyAdvanced/es.md)

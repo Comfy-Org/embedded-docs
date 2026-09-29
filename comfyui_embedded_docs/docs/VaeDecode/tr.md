@@ -15,4 +15,4 @@ VAEDecode düğümü, belirtilen bir Varyasyonel Otomatik Kodlayıcı (VAE) kull
 | --- | --- | --- |
 | `image` | Çıktı, belirtilen VAE modeli kullanılarak sağlanan gizli temsilden yeniden oluşturulan bir görüntüdür. | `IMAGE` |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeDecode/tr.md)

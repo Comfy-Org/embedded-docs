@@ -22,4 +22,4 @@ Bu düğüm, SDXL mimarisi için özel olarak uyarlanmış bir CLIP modeli kulla
 | --- | --- | --- |
 | `CONDITIONING` | Görüntü üretimi için gereken kodlanmış metin ve koşul bilgilerini içerir. | CONDITIONING |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXL/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipTextEncodeSdxl/tr.md)

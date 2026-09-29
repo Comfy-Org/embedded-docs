@@ -39,4 +39,4 @@ Refiner 有兩種使用方式：
 4.  Refiner 模型專注於增強影像細節與品質，因此文字提示應強調期望的視覺效果，而非場景內容。
 5.  在實際使用中，Refiner 通常用於生成的後期階段（約最後 20% 的步驟），專注於細節最佳化。
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXLRefiner/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipTextEncodeSdxlRefiner/zh-TW.md)

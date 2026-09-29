@@ -16,4 +16,4 @@ VAELoader düğümü, Varyasyonel Otomatik Kodlayıcı (VAE) modellerini yüklem
 | --- | --- | --- |
 | `vae` | Kodlama veya kod çözme gibi daha ileri işlemler için hazır, yüklenmiş VAE modelini döndürür. Çıktı, yüklenen modelin durumunu kapsayan bir model nesnesidir. | `VAE` |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAELoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VaeLoader/tr.md)

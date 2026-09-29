@@ -22,4 +22,4 @@
 | `positive` | 經 ControlNet 處理後的正向條件資料，可輸出至下一個 ControlNet 或 K 取樣器節點 | `CONDITIONING` |
 | `negative` | 經 ControlNet 處理後的負向條件資料，可輸出至下一個 ControlNet 或 K 取樣器節點 | `CONDITIONING` |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlnetApply/zh-TW.md)

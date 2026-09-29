@@ -1,5 +1,7 @@
 # SAM3 Track to Mask
 
+## Visão geral
+
 Seleciona objetos rastreados específicos de uma sessão de rastreamento SAM3 por seus números de índice e os combina em uma única máscara de saída. Isso permite que você escolha quais objetos manter e quais ignorar dos resultados do rastreamento.
 
 ## Entradas

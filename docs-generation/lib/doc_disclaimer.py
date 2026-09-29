@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 from lib.hash_footer import strip_source_hash_footer
 
 # Substrings that identify the AI disclaimer blockquote (any supported language).
@@ -36,6 +38,32 @@ _EDIT_LINK_HINTS = (
     "github 上",
     "github'da",
 )
+
+
+
+def resolve_doc_dir(node_name: str, docs_root=None) -> str:
+    """Directory that holds this node's docs.
+
+    Node class names do not always match the directory: migrations renamed some
+    directories to title case (``CLIPMergeSimple`` -> ``ClipMergeSimple``), so a
+    link built from the class name 404s.  Resolve case-insensitively against the
+    docs tree and fall back to the given name.
+    """
+    if docs_root is None:
+        from lib.paths import embedded_docs_dir
+
+        docs_root = embedded_docs_dir()
+    root = Path(docs_root)
+    if not root.is_dir():
+        return node_name
+    # List the directory instead of probing `(root / name).is_dir()`: on a
+    # case-insensitive filesystem (macOS) that probe succeeds for the wrong
+    # casing and the link keeps the class name.
+    names = {entry.name for entry in root.iterdir() if entry.is_dir()}
+    if node_name in names:
+        return node_name
+    folded = {name.casefold(): name for name in names}
+    return folded.get(node_name.casefold(), node_name)
 
 
 def is_disclaimer_line(line: str) -> bool:
@@ -81,10 +109,11 @@ def strip_ai_disclaimer(content: str) -> str:
     return "\n".join(lines).rstrip()
 
 
-def create_en_disclaimer(node_name: str) -> str:
+def create_en_disclaimer(node_name: str, docs_root=None) -> str:
+    doc_dir = resolve_doc_dir(node_name, docs_root)
     github_link = (
         f"https://github.com/Comfy-Org/embedded-docs/blob/main/"
-        f"comfyui_embedded_docs/docs/{node_name}/en.md"
+        f"comfyui_embedded_docs/docs/{doc_dir}/en.md"
     )
     return (
         "> This documentation was AI-generated. If you find any errors or have suggestions "
@@ -92,10 +121,11 @@ def create_en_disclaimer(node_name: str) -> str:
     )
 
 
-def create_translated_disclaimer(target_lang: str, node_name: str, lang_config: dict) -> str:
+def create_translated_disclaimer(target_lang: str, node_name: str, lang_config: dict, docs_root=None) -> str:
+    doc_dir = resolve_doc_dir(node_name, docs_root)
     github_link = (
         f"https://github.com/Comfy-Org/embedded-docs/blob/main/"
-        f"comfyui_embedded_docs/docs/{node_name}/{target_lang}.md"
+        f"comfyui_embedded_docs/docs/{doc_dir}/{target_lang}.md"
     )
     disclaimer_text = lang_config.get("disclaimer", "This documentation was AI-generated.")
     edit_text = {

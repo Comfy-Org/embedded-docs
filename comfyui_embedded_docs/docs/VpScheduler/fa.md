@@ -17,4 +17,4 @@
 | --- | --- | --- |
 | `sigmas` | دنباله‌ای از سطوح نویز (sigmaها) که بر اساس روش زمان‌بندی VP تولید شده و برای هدایت فرآیند نویززدایی در مدل‌های انتشار استفاده می‌شود. | SIGMAS |
 
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VPScheduler/fa.md)
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VpScheduler/fa.md)

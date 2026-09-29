@@ -22,4 +22,4 @@ Ce nœud est conçu pour encoder une entrée textuelle à l'aide d'un modèle CL
 | --- | --- | --- |
 | `CONDITIONING` | Contient le texte encodé et les informations conditionnelles nécessaires à la génération d'images. | CONDITIONING |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXL/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipTextEncodeSdxl/fr.md)

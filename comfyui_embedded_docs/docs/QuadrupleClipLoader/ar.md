@@ -8,4 +8,4 @@
 وستقرأ أيضًا النماذج من المسارات الإضافية المُهيأة في ملف extra_model_paths.yaml.
 في بعض الأحيان، بعد إضافة النماذج، قد تحتاج إلى **إعادة تحميل واجهة ComfyUI** للسماح لها بقراءة ملفات النموذج في المجلد المُناظر.
 
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleCLIPLoader/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleClipLoader/ar.md)

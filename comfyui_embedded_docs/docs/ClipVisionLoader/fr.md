@@ -14,4 +14,4 @@ Ce nœud détecte automatiquement les modèles situés dans le dossier `ComfyUI/
 | --- | --- | --- |
 | `clip_vision` | Modèle CLIP Vision chargé, prêt pour l'encodage d'images ou d'autres tâches liées à la vision. | CLIP_VISION |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPVisionLoader/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipVisionLoader/fr.md)

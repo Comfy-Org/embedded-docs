@@ -17,4 +17,4 @@ Bu düğüm, sürekli EDM (Enerji Tabanlı Difüzyon Modelleri) örnekleme tekni
 | --- | --- | --- | --- |
 | `model` | Entegre sürekli EDM örnekleme yetenekleriyle geliştirilmiş model. Üretim görevlerinde kullanıma hazırdır. | MODEL | `torch.nn.Module` |
 
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousEDM/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousEdm/tr.md)

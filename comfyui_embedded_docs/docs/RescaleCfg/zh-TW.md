@@ -15,4 +15,4 @@ RescaleCFG 節點旨在根據指定的乘數調整模型輸出的條件與非條
 | --- | --- | --- |
 | `model` | 經過調整條件與非條件比例的修改後模型。由於應用了重新調整，此模型預期能產出具有潛在增強特性的輸出。 | MODEL |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RescaleCFG/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RescaleCfg/zh-TW.md)

@@ -1,5 +1,7 @@
 # Nodo Aleph2 de Video a Video de Runway
 
+## Descripción general
+
 Este nodo edita un video utilizando una instrucción de texto con el modelo Aleph2 de Runway. Transforma tu metraje mediante cambios de estilo, iluminación, adición o eliminación de elementos, o modificación del punto de vista, preservando el movimiento y la sincronización originales.
 
 ## Entradas

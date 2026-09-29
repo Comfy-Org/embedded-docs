@@ -1,5 +1,7 @@
 # Runway Aleph2 Video’dan Video’ya Düğümü
 
+## Genel bakış
+
 Bu düğüm, Runway’in Aleph2 modelini kullanarak bir metin istemiyle videoyu düzenler. Orijinal hareketi ve zamanlamayı korurken, görüntülerinizi yeniden stilize ederek, yeniden aydınlatarak, öğeler ekleyerek veya çıkararak ya da bakış açısını değiştirerek dönüştürür.
 
 ## Girişler

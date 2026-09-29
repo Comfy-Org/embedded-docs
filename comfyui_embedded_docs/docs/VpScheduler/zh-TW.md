@@ -17,4 +17,4 @@ VPScheduler 節點旨在根據變異數保持（VP）排程方法生成一系列
 | --- | --- | --- |
 | `sigmas` | 基於 VP 排程方法生成的一系列噪聲級別（sigmas），用於引導擴散模型中的去噪過程。 | SIGMAS |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VPScheduler/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VpScheduler/zh-TW.md)

@@ -17,4 +17,4 @@
 | --- | --- | --- |
 | `sigmas` | سلسلة من مستويات الضوضاء (سيجمات) مُولَّدة بناءً على طريقة الجدولة الحافظة للتباين (VP)، تُستخدم لتوجيه عملية إزالة الضوضاء في نماذج الانتشار. | SIGMAS |
 
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VPScheduler/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VpScheduler/ar.md)

@@ -19,4 +19,4 @@ O nó unCLIPCheckpointLoader foi projetado para carregar checkpoints especificam
 | `vae` | Representa o módulo VAE carregado do checkpoint, se disponível. | `VAE` | `torch.nn.Module` |
 | `clip_vision` | Representa o módulo CLIP vision carregado do checkpoint, se disponível. | `CLIP_VISION` | `torch.nn.Module` |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPCheckpointLoader/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnclipCheckpointLoader/pt-BR.md)

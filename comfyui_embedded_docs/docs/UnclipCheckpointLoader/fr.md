@@ -19,4 +19,4 @@ Le nœud unCLIPCheckpointLoader est conçu pour charger des points de contrôle 
 | `vae` | Représente le module VAE chargé depuis le point de contrôle, s'il est disponible. | `VAE` | `torch.nn.Module` |
 | `clip_vision` | Représente le module CLIP vision chargé depuis le point de contrôle, s'il est disponible. | `CLIP_VISION` | `torch.nn.Module` |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPCheckpointLoader/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UnclipCheckpointLoader/fr.md)

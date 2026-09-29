@@ -16,4 +16,4 @@ SDTurboScheduler 旨在生成用於影像取樣的 sigma 值序列，並根據�
 | --- | --- | --- |
 | `sigmas` | 根據指定的 model、steps 與 denoise 程度所產生的 sigma 值序列。這些數值對於控制影像生成中的去噪過程至關重要。 | `SIGMAS` |
 
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDTurboScheduler/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SdTurboScheduler/zh-TW.md)

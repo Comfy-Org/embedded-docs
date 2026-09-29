@@ -16,4 +16,4 @@ Este nó foi projetado para ajustar o aspecto temporal do condicionamento, defin
 | --- | --- | --- |
 | `CONDITIONING` | A saída é o condicionamento modificado com o intervalo de etapas de tempo especificado aplicado, pronto para processamento ou geração adicional. | CONDITIONING |
 
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetTimestepRange/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSettimestepRange/pt-BR.md)

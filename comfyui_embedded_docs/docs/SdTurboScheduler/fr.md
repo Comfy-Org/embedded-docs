@@ -16,4 +16,4 @@ SDTurboScheduler est conçu pour générer une séquence de valeurs sigma pour l
 | --- | --- | --- |
 | `sigmas` | Une séquence de valeurs sigma générées en fonction du modèle, des étapes et du niveau de débruitage spécifiés. Ces valeurs sont essentielles pour contrôler le processus de débruitage dans la génération d'images. | `SIGMAS` |
 
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDTurboScheduler/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SdTurboScheduler/fr.md)
