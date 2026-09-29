@@ -43,12 +43,13 @@ TRANSLATED_TYPES = {
     "模型", "图像", "字符串", "遮罩", "蒙版",
 }
 
-# --- output identifiers must stay English ---
-TRANSLATED_OUTPUTS = {
-    "positivo", "negativo", "positif", "négatif", "salida", "salidas",
-    "позитивный", "негативный", "ポジティブ", "ネガティブ",
-    "긍정", "부정", "正向", "负向",
-}
+# NOTE: parameter and output NAMES in the Inputs/Outputs tables are deliberately
+# localized. update_param_translations.py writes the names exported from the
+# frontend's nodeDefs.json into the first column of those tables ("Update
+# parameter names in documentation to match frontend translations"), and
+# sync_frontend_translations.py exports them. A translated first column is
+# therefore expected in translated docs and is NOT an error. Only the Data Type
+# column carries schema names, which stay English (see TRANSLATED_TYPES).
 
 # Languages whose Required column must NOT contain English Yes/No.
 # (es "No", fr "Non", pt-BR "Não" are valid localizations.)
@@ -202,18 +203,6 @@ def check_file(path: Path):
                                   f"'{cell.strip()}' (keep English schema names)")
                     reported_lines.add(i)
                     break
-
-    # 3. translated output identifiers in Outputs tables
-    in_outputs = False
-    for i, line in unfenced:
-        if line.startswith("## "):
-            in_outputs = is_outputs_heading(line[3:].strip())
-            continue
-        if in_outputs and line.startswith("|"):
-            cells = [c.strip().strip("`") for c in line.split("|")[1:-1]]
-            if cells and cells[0] in TRANSLATED_OUTPUTS:
-                errors.append(f"{rel}: translated output identifier "
-                              f"'{cells[0]}' (keep English programmatic names)")
 
     # 4. duplicate H1 (unfenced headings only)
     h1s = [line for _, line in unfenced if re.match(r"^# .+", line)]

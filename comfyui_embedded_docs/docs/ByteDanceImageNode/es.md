@@ -21,7 +21,7 @@ El nodo ByteDance Image genera imágenes utilizando modelos de ByteDance a trav�
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `IMAGE` | La imagen generada devuelta por la API de ByteDance como un tensor. | IMAGEN |
+| `IMAGE` | La imagen generada devuelta por la API de ByteDance como un tensor. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceImageNode/es.md)
 
