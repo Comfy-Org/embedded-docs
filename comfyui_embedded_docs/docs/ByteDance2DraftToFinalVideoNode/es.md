@@ -7,7 +7,7 @@ Este nodo renderiza el video final en 1080p de un borrador de Seedance 2.5. Un b
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `draft_task_id` | La salida `draft_task_id` de un nodo Seedance 2.5 ejecutado con el modelo Seedance 2.5 Draft, o un ID de tarea de borrador pegado. Cuando vuelvas a ejecutar el nodo productor, establece su control de semilla en fijo; de lo contrario, la siguiente ejecución generará un nuevo borrador en lugar de reutilizar el que revisaste. | STRING | Sí | - |
-| `watermark` | Indica si se debe agregar una marca de agua al video. El valor predeterminado es False. Esta es una configuración avanzada. | BOOLEAN | No | True / False |
+| `marca de agua` | Indica si se debe agregar una marca de agua al video. El valor predeterminado es False. Esta es una configuración avanzada. | BOOLEAN | No | True / False |
 
 ## Salidas
 
