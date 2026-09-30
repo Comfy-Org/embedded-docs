@@ -12,7 +12,7 @@ Girdiler ortak ayarlar, bir model seçildiğinde görünen modele özgü ayarlar
 |-----------|-------------|-----------|----------|-------|
 | `model` | Yanıtı oluşturmak için kullanılan Claude modeli. Bir model seçildiğinde aşağıda modele özgü ayarlar görünür. | DYNAMIC_COMBO | Evet | `"Opus 5.5"`<br>`"Opus 5"`<br>`"Opus 4.8"`<br>`"Fable 5.1"`<br>`"Fable 5"`<br>`"Sonnet 5.5"`<br>`"Sonnet 5"`<br>`"Opus 4.7"`<br>`"Opus 4.6"`<br>`"Sonnet 4.6"`<br>`"Sonnet 4.5"`<br>`"Haiku 4.5"` |
 | `istem` | Modele metin girdisi. (varsayılan: boş dize) | STRING | Evet | N/A |
-| `tohum` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. (varsayılan: 0) | INT | Evet | 0 ile 2147483647 |
+| `tohum` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. (varsayılan: 0) | INT | Evet | 0 ile 2147483647 arası |
 | `sistem_istemi` | Modelin davranışını belirleyen temel talimatlar. (varsayılan: boş dize) | STRING | Hayır | N/A |
 
 ### Opus 5.5, Opus 5, Fable 5.1 ve Fable 5 Girdileri
@@ -21,7 +21,7 @@ Bu dört model aynı ayarları paylaşır. Bir sıcaklık ayarı sunmazlar ve ak
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `max_tokens` | Oluşturulacak maksimum token sayısı (etkinleştirildiğinde akıl yürütme token'larını içerir). (varsayılan: 32768) | INT | Evet | 1024 ile 64000 (Opus 5.5)<br>4096 ile 64000 (Opus 5, Fable 5.1, Fable 5) |
+| `max_tokens` | Oluşturulacak maksimum token sayısı (etkinleştirildiğinde akıl yürütme token'larını içerir). (varsayılan: 32768) | INT | Evet | 1024 ile 64000 arası (Opus 5.5)<br>4096 ile 64000 arası (Opus 5, Fable 5.1, Fable 5) |
 | `reasoning_effort` | Genişletilmiş düşünme çabası. Bu modelde akıl yürütme her zaman etkindir. (varsayılan: "high") | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 
 ### Opus 4.8, Sonnet 5.5 ve Sonnet 5 Girdileri
@@ -30,7 +30,7 @@ Bu üç model aynı ayarları paylaşır. Bir sıcaklık ayarı sunmazlar.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `max_tokens` | Oluşturulacak maksimum token sayısı (etkinleştirildiğinde akıl yürütme token'larını içerir). (varsayılan: 32768) | INT | Evet | 1024 ile 64000 (Sonnet 5.5)<br>4096 ile 64000 (Opus 4.8, Sonnet 5) |
+| `max_tokens` | Oluşturulacak maksimum token sayısı (etkinleştirildiğinde akıl yürütme token'larını içerir). (varsayılan: 32768) | INT | Evet | 1024 ile 64000 arası (Sonnet 5.5)<br>4096 ile 64000 arası (Opus 4.8, Sonnet 5) |
 | `reasoning_effort` | Genişletilmiş düşünme çabası. `"off"` akıl yürütmeyi devre dışı bırakır. (varsayılan: "off") | COMBO | Evet | `"off"`<br>`"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 
 ### Opus 4.7, Opus 4.6, Sonnet 4.6 ve Sonnet 4.5 Girdileri
@@ -39,7 +39,7 @@ Bu dört model aynı ayarları paylaşır.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `max_tokens` | Oluşturulacak maksimum token sayısı (etkinleştirildiğinde akıl yürütme token'larını içerir). (varsayılan: 32768) | INT | Evet | 4096 ile 64000 |
+| `max_tokens` | Oluşturulacak maksimum token sayısı (etkinleştirildiğinde akıl yürütme token'larını içerir). (varsayılan: 32768) | INT | Evet | 4096 ile 64000 arası |
 | `temperature` | Rastgeleliği kontrol eder. 0.0 deterministiktir, 1.0 en rastgeledir. Opus 4.7 için ve `reasoning_effort` ayarlandığında herhangi bir model için yok sayılır. (varsayılan: 1.0) | FLOAT | Evet | 0.0 ile 1.0 (adım: 0.01) |
 | `reasoning_effort` | Genişletilmiş düşünme çabası. `"off"` akıl yürütmeyi devre dışı bırakır. (varsayılan: "off") | COMBO | Evet | `"off"`<br>`"low"`<br>`"medium"`<br>`"high"` |
 
@@ -51,7 +51,7 @@ Bu model bir `reasoning_effort` ayarı sunmaz.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `max_tokens` | Oluşturulacak maksimum token sayısı (etkinleştirildiğinde akıl yürütme token'larını içerir). (varsayılan: 32768) | INT | Evet | 4096 ile 64000 |
+| `max_tokens` | Oluşturulacak maksimum token sayısı (etkinleştirildiğinde akıl yürütme token'larını içerir). (varsayılan: 32768) | INT | Evet | 4096 ile 64000 arası |
 | `temperature` | Rastgeleliği kontrol eder. 0.0 deterministiktir, 1.0 en rastgeledir. Opus 4.7 için ve `reasoning_effort` ayarlandığında herhangi bir model için yok sayılır. (varsayılan: 1.0) | FLOAT | Evet | 0.0 ile 1.0 (adım: 0.01) |
 
 ### Referans Girdileri
