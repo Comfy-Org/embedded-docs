@@ -16,7 +16,7 @@ Générez des images à partir d'un prompt textuel avec Ideogram 4.5. Le prompt 
 ### Contraintes des paramètres
 
 - **Prompt requis :** le prompt doit contenir au moins un caractère autre qu'un espace blanc et au plus 10000 caractères. Définissez `magic_prompt` sur `"off"` lorsque vous fournissez votre propre légende JSON ou une formulation exacte.
-- **Taille :** `"auto"` laisse le modèle choisir. Les préréglages `(2K)` font environ 2048 px sur le grand côté et les préréglages `(1K)` environ 1024 px ; le rapport d'aspect du préréglage est respecté. Seule la partie correspondant à la taille en pixels du préréglage est envoyée à l'API.
+- **Taille :** `"auto"` laisse le modèle choisir. Les préréglages `(2K)` font environ 3 à 4 mégapixels et les préréglages `(1K)` environ 1 mégapixel : l'étiquette du niveau décrit le budget de pixels et non un grand côté fixe ; le rapport d'aspect du préréglage est respecté. Seule la partie correspondant à la taille en pixels du préréglage est envoyée à l'API.
 - **Reproductibilité :** avec `magic_prompt` défini sur `"auto"` ou `"on"`, le prompt est réécrit à chaque exécution, donc la même graine peut tout de même produire une image différente. Pour reproduire une image, réinjectez son `final_prompt` avec `magic_prompt` défini sur `"off"` et la même graine.
 - **Sécurité du contenu :** si le filtre de sécurité du contenu d'Ideogram bloque la génération, le nœud lève une erreur au lieu de renvoyer une image.
 

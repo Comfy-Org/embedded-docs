@@ -7,14 +7,14 @@ Ideogram 4.5 hassas düzenleme ile bir görseli metin istemi kılavuzluğunda d�
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Kullanılacak model. (varsayılan: `"ideogram-4.5"`) | DYNAMIC_COMBO | Evet | `"ideogram-4.5"` |
-| `images` | Genişletilebilir yuva: görsel 1 düzenlenecek görseldir ve görsel 2 ile 5 isteğe bağlı referanslardır (`image_1` ... `image_5`). İstemde bunlara @Image1, @Image2, ... olarak başvurun; toplu bir girdi her görsel için bir kez sayılır. Her görselin en-boy oranı 1:6 ile 6:1 arasında olmalıdır. | IMAGE | Evet | 1 ile 5 görsel |
+| `images` | Genişletilebilir yuva: görsel 1 düzenlenecek görseldir ve 2'den 5'e kadar olan görseller isteğe bağlı referanslardır (`image_1` ... `image_5`). İstemde bunlara @Image1, @Image2, ... olarak başvurun; toplu bir girdi her görsel için bir kez sayılır. Her görselin en-boy oranı 1:6 ile 6:1 arasında olmalıdır. | IMAGE | Evet | 1 ile 5 görsel |
 | `prompt` | Düzenleme talimatları. Bağlı görsellere @Image1 tarzı başvuruları destekler. (varsayılan: boş dize) | STRING | Evet | 1 ile 10000 karakter |
 | `quality` | Kalite kademesi. Daha yüksek kademeler daha pahalıdır ve daha uzun sürer. (varsayılan: `"medium"`) | COMBO | Evet | `"very_low"`<br>`"low"`<br>`"medium"`<br>`"high"` |
 | `seed` | Üretim için tohum. Aynı görseller, istem, ayarlar ve tohum aynı sonucu verir. (varsayılan: 42) | INT | Evet | 0 ile 2147483647 |
 
 ### Parametre Kısıtlamaları
 
-- **Görsel sayısı:** en az 1, en fazla 5 görsel; toplu bir girdi her görsel için bir kez sayılır. Görsel 1 düzenlenecek görseldir ve görsel 2 ile 5 referanstır.
+- **Görsel sayısı:** en az 1, en fazla 5 görsel; toplu bir girdi her görsel için bir kez sayılır. Görsel 1 düzenlenecek görseldir ve 2'den 5'e kadar olan görseller referanstır.
 - **Çıktı boyutu:** sonuç görsel 1'in boyutunu korur, bu nedenle bu düğümde boyut, genişlik veya yükseklik girdisi yoktur.
 - **Görsel en-boy oranı:** her görsel, yüksekliğinin 6 katından daha geniş ve genişliğinin 6 katından daha uzun olmamalıdır (1:6 ile 6:1 arasında).
 - **İstem etiketleri:** `@ImageN` büyük/küçük harfe duyarsız olarak eşleştirilir ve bağlı görsel sayısını aşmamalıdır; istem yalnızca boşluklardan oluşmamalı ve en fazla 10000 karakter olmalıdır.

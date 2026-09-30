@@ -16,7 +16,7 @@ Gere imagens a partir de um prompt de texto com o Ideogram 4.5. O prompt também
 ### Restrições dos parâmetros
 
 - **Prompt obrigatório:** o prompt deve conter pelo menos um caractere que não seja espaço em branco e no máximo 10000 caracteres. Defina `magic_prompt` como `"off"` ao fornecer sua própria legenda JSON ou texto exato.
-- **Tamanho:** `"auto"` permite que o modelo escolha. Presets `(2K)` têm cerca de 2048 px no lado maior e presets `(1K)` cerca de 1024 px; a proporção de aspecto do preset é respeitada. Apenas a parte do tamanho em pixels do preset é enviada para a API.
+- **Tamanho:** `"auto"` permite que o modelo escolha. Presets `(2K)` têm cerca de 3 a 4 megapixels e presets `(1K)` cerca de 1 megapixel, então o rótulo do nível descreve o orçamento de pixels em vez de um lado maior fixo; a proporção de aspecto do preset é respeitada. Apenas a parte do tamanho em pixels do preset é enviada para a API.
 - **Reprodutibilidade:** com `magic_prompt` definido como `"auto"` ou `"on"`, o prompt é reescrito a cada execução, então a mesma semente ainda pode produzir uma imagem diferente. Para reproduzir uma imagem, envie seu `final_prompt` de volta com `magic_prompt` definido como `"off"` e a mesma semente.
 - **Segurança de conteúdo:** se o filtro de segurança de conteúdo do Ideogram bloquear a geração, o nó lança um erro em vez de retornar uma imagem.
 

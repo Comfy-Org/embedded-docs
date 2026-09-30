@@ -16,7 +16,7 @@ Generate images from a text prompt with Ideogram 4.5. The prompt also accepts an
 ### Parameter Constraints
 
 - **Prompt required:** the prompt must contain at least one non-whitespace character and at most 10000 characters. Set `magic_prompt` to `"off"` when supplying your own JSON caption or exact wording.
-- **Size:** `"auto"` lets the model choose. `(2K)` presets are around 2048 px on the long side and `(1K)` presets around 1024 px; the preset's aspect ratio is respected. Only the pixel size part of the preset is sent to the API.
+- **Size:** `"auto"` lets the model choose. `(2K)` presets are about 3 to 4 megapixels and `(1K)` presets about 1 megapixel, so the tier label describes the pixel budget rather than a fixed long side; the preset's aspect ratio is respected. Only the pixel size part of the preset is sent to the API.
 - **Reproducibility:** with `magic_prompt` set to `"auto"` or `"on"` the prompt is rewritten on every run, so the same seed can still produce a different image. To reproduce an image, feed its `final_prompt` back with `magic_prompt` set to `"off"` and the same seed.
 - **Content safety:** if Ideogram's content safety filter blocks the generation, the node raises an error instead of returning an image.
 
