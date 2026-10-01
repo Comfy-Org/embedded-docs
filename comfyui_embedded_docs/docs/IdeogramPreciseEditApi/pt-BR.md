@@ -6,7 +6,7 @@ Edite uma imagem com a orientação de um prompt de texto usando a edição prec
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a usar. (padrão: `"ideogram-4.5"`) | DYNAMIC_COMBO | Sim | `"ideogram-4.5"` |
+| `modelo` | Modelo a usar. (padrão: `"ideogram-4.5"`) | DYNAMIC_COMBO | Sim | `"ideogram-4.5"` |
 | `images` | Slot expansível: a imagem 1 é a imagem a ser editada e as imagens 2 a 5 são referências opcionais (`image_1` ... `image_5`). Faça referência a elas no prompt como @Image1, @Image2, ...; uma entrada em lote conta uma vez por imagem. Cada imagem deve ter uma proporção de aspecto entre 1:6 e 6:1. | IMAGE | Sim | 1 a 5 imagens |
 | `prompt` | Instruções de edição. Suporta referências no estilo @Image1 para as imagens conectadas. (padrão: string vazia) | STRING | Sim | 1 a 10000 caracteres |
 | `quality` | Nível de qualidade. Níveis mais altos custam mais e demoram mais. (padrão: `"medium"`) | COMBO | Sim | `"very_low"`<br>`"low"`<br>`"medium"`<br>`"high"` |

@@ -6,7 +6,7 @@ Edita una imagen usando como guía un prompt de texto con la edición precisa de
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Modelo a usar. (predeterminado: `"ideogram-4.5"`) | DYNAMIC_COMBO | Sí | `"ideogram-4.5"` |
+| `modelo` | Modelo a usar. (predeterminado: `"ideogram-4.5"`) | DYNAMIC_COMBO | Sí | `"ideogram-4.5"` |
 | `images` | Ranura ampliable: la imagen 1 es la imagen que se va a editar y las imágenes 2 a 5 son referencias opcionales (`image_1` ... `image_5`). Refiérase a ellas en el prompt como @Image1, @Image2, ...; una entrada en lote cuenta una vez por imagen. Cada imagen debe tener una relación de aspecto entre 1:6 y 6:1. | IMAGE | Sí | 1 a 5 imágenes |
 | `prompt` | Instrucciones de edición. Admite referencias al estilo @Image1 para las imágenes conectadas. (predeterminado: cadena vacía) | STRING | Sí | 1 a 10000 caracteres |
 | `quality` | Nivel de calidad. Los niveles más altos cuestan más y tardan más. (predeterminado: `"medium"`) | COMBO | Sí | `"very_low"`<br>`"low"`<br>`"medium"`<br>`"high"` |
