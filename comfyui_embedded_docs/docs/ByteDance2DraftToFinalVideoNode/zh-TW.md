@@ -7,7 +7,7 @@
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `draft_task_id` | 以 Seedance 2.5 Draft 模型執行 Seedance 2.5 節點所產生的 `draft_task_id` 輸出，或貼上的草稿任務 ID。當你重新執行產生該草稿的節點時，請將其 `seed` 控制項設為 fixed，否則下一次執行會產生新的草稿，而不是重複使用你已檢閱的草稿。 | STRING | 是 | - |
-| `watermark` | 是否要在影片中加入浮水印。預設值為 False。這是進階設定。 | BOOLEAN | 否 | True / False |
+| `浮水印` | 是否要在影片中加入浮水印。預設值為 False。這是進階設定。 | BOOLEAN | 否 | True / False |
 
 ## 輸出
 

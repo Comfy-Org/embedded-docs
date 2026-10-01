@@ -8,7 +8,7 @@ ByteDance Seedream 5.0 Layer Separation descompone una imagen en una placa de fo
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `model` | El modelo Seedream usado para la separación. "seedream 5.0 pro" (predeterminado) ofrece la mayor calidad de separación y también expone un control `prompt_optimization`; "seedream 5.0 flash" es más rápido y más económico y no tiene control de optimización de prompt. | DYNAMIC_COMBO | Sí | "seedream 5.0 pro"<br>"seedream 5.0 flash" |
+| `modelo` | El modelo Seedream usado para la separación. "seedream 5.0 pro" (predeterminado) ofrece la mayor calidad de separación y también expone un control `prompt_optimization`; "seedream 5.0 flash" es más rápido y más económico y no tiene control de optimización de prompt. | DYNAMIC_COMBO | Sí | "seedream 5.0 pro"<br>"seedream 5.0 flash" |
 
 ### Entradas de Seedream 5.0 Pro y 5.0 Flash
 

@@ -8,7 +8,7 @@ ByteDance Seedream 5.0 Layer Separation 會將一張影像分解成一個背景�
 
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用於分離的 Seedream 模型。"seedream 5.0 pro"（預設）可提供最高的分離品質，並且會額外提供 `prompt_optimization` 控制項；"seedream 5.0 flash" 則更快速、成本更低，且沒有提示詞最佳化控制項。 | DYNAMIC_COMBO | 是 | "seedream 5.0 pro"<br>"seedream 5.0 flash" |
+| `模型` | 用於分離的 Seedream 模型。"seedream 5.0 pro"（預設）可提供最高的分離品質，並且會額外提供 `prompt_optimization` 控制項；"seedream 5.0 flash" 則更快速、成本更低，且沒有提示詞最佳化控制項。 | DYNAMIC_COMBO | 是 | "seedream 5.0 pro"<br>"seedream 5.0 flash" |
 
 ### Seedream 5.0 Pro 與 5.0 Flash 輸入
 

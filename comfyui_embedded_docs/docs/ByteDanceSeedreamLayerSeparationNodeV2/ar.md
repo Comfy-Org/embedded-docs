@@ -8,7 +8,7 @@
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
-| `model` | نموذج Seedream المستخدم للفصل. يمنح "seedream 5.0 pro" (الافتراضي) أعلى جودة فصل ويكشف أيضًا عن عنصر تحكم `prompt_optimization`؛ أما "seedream 5.0 flash" فهو أسرع وأرخص وليس لديه عنصر تحكم بتحسين الموجّه. | DYNAMIC_COMBO | نعم | "seedream 5.0 pro"<br>"seedream 5.0 flash" |
+| `نموذج` | نموذج Seedream المستخدم للفصل. يمنح "seedream 5.0 pro" (الافتراضي) أعلى جودة فصل ويكشف أيضًا عن عنصر تحكم `prompt_optimization`؛ أما "seedream 5.0 flash" فهو أسرع وأرخص وليس لديه عنصر تحكم بتحسين الموجّه. | DYNAMIC_COMBO | نعم | "seedream 5.0 pro"<br>"seedream 5.0 flash" |
 
 ### مدخلات Seedream 5.0 Pro و5.0 Flash
 
