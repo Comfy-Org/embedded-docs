@@ -2,6 +2,8 @@
 
 Gera vídeos de forma síncrona com base em um prompt de texto e configurações de saída. Este nó cria conteúdo de vídeo usando descrições textuais e diversos parâmetros de geração, produzindo o vídeo final assim que o processo de geração é concluído.
 
+**Nota:** Este nó está marcado como obsoleto no código-fonte.
+
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
@@ -26,4 +28,4 @@ Gera vídeos de forma síncrona com base em um prompt de texto e configurações
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaVideoNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `44482bc91c3df2cc9ac22d06197668af45849e8bfde8bd435905f11f2593342c`
+**Source fingerprint (SHA-256):** `86ebb2d035d35f142709546566d1041b66765ae3e0c2751e71c05df138a5ecf2`

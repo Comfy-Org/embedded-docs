@@ -4,6 +4,8 @@
 
 テキストプロンプトと出力設定に基づいて、同期的に動画を生成します。このノードは、テキストによる説明と様々な生成パラメータを使用して動画コンテンツを作成し、生成プロセスが完了すると最終的な動画を出力します。
 
+**注：** このノードはソースコード上で非推奨としてマークされています。
+
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
@@ -28,4 +30,4 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaVideoNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `44482bc91c3df2cc9ac22d06197668af45849e8bfde8bd435905f11f2593342c`
+**Source fingerprint (SHA-256):** `86ebb2d035d35f142709546566d1041b66765ae3e0c2751e71c05df138a5ecf2`

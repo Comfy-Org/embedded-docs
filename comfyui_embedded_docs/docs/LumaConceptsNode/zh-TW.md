@@ -4,6 +4,8 @@
 
 用於保存一個或多個攝影機概念，以配合 Luma 文字轉影片和 Luma 圖片轉影片節點使用。此節點允許您選擇最多四個攝影機概念，並可選擇性地將它們與現有的概念鏈結合。
 
+**注意：** 此節點在原始碼中標記為已棄用。
+
 ## 輸入
 
 | 參數 | 說明 | 資料類型 | 必要 | 範圍 |
@@ -25,4 +27,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaConceptsNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `d0e334104884eadab86987f188dff079e11ee4a3de05d2537d88fa9d2a30534a`
+**Source fingerprint (SHA-256):** `fc9da6288e29d89519f13e2412381ad8d689fc48353a80546a380dbe8f979037`

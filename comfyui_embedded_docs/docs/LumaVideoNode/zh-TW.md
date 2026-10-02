@@ -2,6 +2,8 @@
 
 根據文字提示和輸出設定同步生成影片。此節點使用文字描述和各種生成參數來建立影片內容，並在生成過程完成後產生最終的影片輸出。
 
+**注意：** 此節點在原始碼中標記為已棄用。
+
 ## 輸入
 
 | 參數 | 說明 | 資料類型 | 必要 | 範圍 |
@@ -26,4 +28,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaVideoNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `44482bc91c3df2cc9ac22d06197668af45849e8bfde8bd435905f11f2593342c`
+**Source fingerprint (SHA-256):** `86ebb2d035d35f142709546566d1041b66765ae3e0c2751e71c05df138a5ecf2`

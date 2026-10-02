@@ -1,5 +1,7 @@
 # تبدیل متن به ویدیو لاما
 
+**نکته:** این گره در کد منبع به‌عنوان منسوخ‌شده علامت‌گذاری شده است.
+
 ## ورودی‌ها
 
 | پارامتر | توضیحات | نوع داده | الزامی | محدوده |
@@ -24,4 +26,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaVideoNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `44482bc91c3df2cc9ac22d06197668af45849e8bfde8bd435905f11f2593342c`
+**Source fingerprint (SHA-256):** `86ebb2d035d35f142709546566d1041b66765ae3e0c2751e71c05df138a5ecf2`
