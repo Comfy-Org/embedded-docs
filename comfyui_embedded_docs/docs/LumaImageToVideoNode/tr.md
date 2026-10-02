@@ -2,6 +2,8 @@
 
 Bir metin istemi ve isteğe bağlı başlangıç/bitiş görsellerine dayanarak eşzamanlı olarak videolar oluşturur. Bu düğüm, video içeriğini bir istem aracılığıyla tanımlamanıza ve isteğe bağlı olarak videonun yapısını kontrol etmek için ilk ve/veya son kareyi belirtmenize olanak tanıyan Luma API'sini kullanır.
 
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
+
 ## Girişler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
@@ -27,4 +29,4 @@ Bir metin istemi ve isteğe bağlı başlangıç/bitiş görsellerine dayanarak 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageToVideoNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `210286ad38cecc5b3b0689f470ff473e996abfd251f88a45bcac936751ae2674`
+**Source fingerprint (SHA-256):** `c69d09286aba39062faa292e054d313833d977888a3cc7188a5ea8fdc9e66913`

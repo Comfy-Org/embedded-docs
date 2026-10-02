@@ -2,6 +2,8 @@
 
 Armazena um ou mais Conceitos de Câmera para uso com os nós Luma Texto para Vídeo e Luma Imagem para Vídeo. Este nó permite selecionar até quatro conceitos de câmera e, opcionalmente, combiná-los com cadeias de conceitos existentes.
 
+**Nota:** Este nó está marcado como obsoleto no código-fonte.
+
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
@@ -23,4 +25,4 @@ Armazena um ou mais Conceitos de Câmera para uso com os nós Luma Texto para V�
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaConceptsNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `d0e334104884eadab86987f188dff079e11ee4a3de05d2537d88fa9d2a30534a`
+**Source fingerprint (SHA-256):** `fc9da6288e29d89519f13e2412381ad8d689fc48353a80546a380dbe8f979037`

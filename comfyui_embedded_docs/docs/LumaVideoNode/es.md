@@ -2,6 +2,8 @@
 
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
+**Nota:** Este nodo está marcado como obsoleto en el código fuente.
+
 ## Reglas de Traducción
 
 1. **Contenido que NO debe traducirse:**
@@ -54,4 +56,4 @@ Genera videos de forma síncrona basándose en un texto de instrucción y config
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaVideoNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `44482bc91c3df2cc9ac22d06197668af45849e8bfde8bd435905f11f2593342c`
+**Source fingerprint (SHA-256):** `86ebb2d035d35f142709546566d1041b66765ae3e0c2751e71c05df138a5ecf2`

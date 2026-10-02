@@ -4,6 +4,8 @@
 
 保存一个或多个相机概念，用于 Luma 文本转视频和 Luma 图像转视频节点。此节点允许您选择最多四个相机概念，并可选择将其与现有概念链组合。
 
+**注意：** 此节点在源代码中已被标记为弃用。
+
 ## 输入
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
@@ -25,4 +27,4 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaConceptsNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `d0e334104884eadab86987f188dff079e11ee4a3de05d2537d88fa9d2a30534a`
+**Source fingerprint (SHA-256):** `fc9da6288e29d89519f13e2412381ad8d689fc48353a80546a380dbe8f979037`
