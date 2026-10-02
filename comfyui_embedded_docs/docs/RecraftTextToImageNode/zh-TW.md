@@ -20,7 +20,7 @@
 
 **注意：**如果您使用 Infinite Style Library 中的 `style_id`，請確保它不是向量藝術（Vector art）樣式，因為這會回傳 SVG 資料而非影像，並導致錯誤。
 
-**注意：**這是一個付費 API 節點。每個生成影像的費用為 $0.04 美元，取決於 `n` 值。
+**注意：**這是一個付費 API 節點。每個生成影像的費用為 $0.0572 美元，取決於 `n` 值。
 
 ## 輸出
 
@@ -31,4 +31,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftTextToImageNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `d75b7dd2d8cee70c3bc1d2c64fb07ce814a3672619e8647f4c4c2cdc2635945c`
+**Source fingerprint (SHA-256):** `d0955cb57c93c752b19379b4c4f9c85dc72cdf6309bc433024f115fa7b996f4d`

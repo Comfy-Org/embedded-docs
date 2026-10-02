@@ -6,7 +6,7 @@ Animez une image pour en faire une vidéo avec un dialogue et un son synchronis�
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Version du modèle utilisée pour la génération. (par défaut : `"heygen-video-1"`) | DYNAMIC_COMBO | Oui | `"heygen-video-1"` |
+| `modèle` | Version du modèle utilisée pour la génération. (par défaut : `"heygen-video-1"`) | DYNAMIC_COMBO | Oui | `"heygen-video-1"` |
 | `image` | Première image de la vidéo. Exactement une image est requise ; un lot est rejeté. Recadrez l’image pour modifier la forme de la vidéo, car la sortie conserve le rapport d’aspect de cette image. | IMAGE | Oui | 1 image, rapport d’aspect 1:4 à 4:1 |
 | `prompt` | Description de ce qui se passe dans la vidéo, y compris tout dialogue. (par défaut : chaîne vide) | STRING | Oui | 1 à 32000 caractères |
 | `duration` | Durée de la vidéo de sortie en secondes. (par défaut : 5) | INT | Oui | 5 à 15 |

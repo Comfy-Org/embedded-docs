@@ -6,7 +6,7 @@ Modifiez une image guidée par un prompt textuel grâce à l'édition précise d
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser. (par défaut : `"ideogram-4.5"`) | DYNAMIC_COMBO | Oui | `"ideogram-4.5"` |
+| `modèle` | Modèle à utiliser. (par défaut : `"ideogram-4.5"`) | DYNAMIC_COMBO | Oui | `"ideogram-4.5"` |
 | `images` | Emplacement extensible : l'image 1 est l'image à modifier et les images 2 à 5 sont des références facultatives (`image_1` ... `image_5`). Référencez-les dans le prompt sous la forme @Image1, @Image2, ... ; une entrée groupée compte une fois par image. Chaque image doit avoir un rapport d'aspect compris entre 1:6 et 6:1. | IMAGE | Oui | 1 à 5 images |
 | `prompt` | Instructions de modification. Prend en charge les références de style @Image1 vers les images connectées. (par défaut : chaîne vide) | STRING | Oui | 1 à 10000 caractères |
 | `quality` | Niveau de qualité. Les niveaux plus élevés coûtent plus cher et prennent plus de temps. (par défaut : `"medium"`) | COMBO | Oui | `"very_low"`<br>`"low"`<br>`"medium"`<br>`"high"` |

@@ -6,7 +6,7 @@ Anima una imagen para convertirla en un video con diálogo y sonido sincronizado
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Versión del modelo utilizada para la generación. (predeterminado: `"heygen-video-1"`) | DYNAMIC_COMBO | Sí | `"heygen-video-1"` |
+| `modelo` | Versión del modelo utilizada para la generación. (predeterminado: `"heygen-video-1"`) | DYNAMIC_COMBO | Sí | `"heygen-video-1"` |
 | `image` | Primer fotograma del video. Se requiere exactamente una imagen; se rechaza un lote. Recorta la imagen para cambiar la forma del video, porque la salida conserva la relación de aspecto de esta imagen. | IMAGE | Sí | 1 imagen, relación de aspecto 1:4 a 4:1 |
 | `prompt` | Descripción de lo que sucede en el video, incluido cualquier diálogo. (predeterminado: cadena vacía) | STRING | Sí | 1 a 32000 caracteres |
 | `duration` | Duración del video de salida en segundos. (predeterminado: 5) | INT | Sí | 5 a 15 |

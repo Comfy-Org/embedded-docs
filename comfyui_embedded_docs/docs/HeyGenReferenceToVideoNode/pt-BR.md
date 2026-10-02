@@ -6,7 +6,7 @@ Gere um vídeo com diálogo e som sincronizados a partir de um prompt de texto u
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Versão do modelo usada para geração. (padrão: `"heygen-video-1"`) | DYNAMIC_COMBO | Sim | `"heygen-video-1"` |
+| `modelo` | Versão do modelo usada para geração. (padrão: `"heygen-video-1"`) | DYNAMIC_COMBO | Sim | `"heygen-video-1"` |
 | `prompt` | Descrição do vídeo, incluindo qualquer diálogo. Consulte as referências conectadas como @Image1, @Video1, @Audio1, numeradas por tipo na ordem de entrada. (padrão: string vazia) | STRING | Sim | 1 a 32000 caracteres |
 | `duration` | Duração do vídeo de saída em segundos. (padrão: 5) | INT | Sim | 5 a 15 |
 | `resolution` | Resolução de saída. (padrão: `"768p"`) | COMBO | Sim | `"768p"`<br>`"480p"` |

@@ -6,7 +6,7 @@
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的模型。（默认值：`"ideogram-4.5"`） | DYNAMIC_COMBO | 是 | `"ideogram-4.5"` |
+| `模型` | 要使用的模型。（默认值：`"ideogram-4.5"`） | DYNAMIC_COMBO | 是 | `"ideogram-4.5"` |
 | `images` | 可扩展插槽：image 1 是要编辑的图像，images 2 到 5 是可选参考图（`image_1` ... `image_5`）。在提示词中用 @Image1、@Image2……来引用它们；批量输入按每张图像各计一次。每张图像的宽高比必须在 1:6 到 6:1 之间。 | IMAGE | 是 | 1 到 5 张图像 |
 | `prompt` | 编辑指令。支持使用 @Image1 风格的引用来指向已连接的图像。（默认值：空字符串） | STRING | 是 | 1 到 10000 个字符 |
 | `quality` | 质量等级。等级越高，消耗越大、耗时越长。（默认值：`"medium"`） | COMBO | 是 | `"very_low"`<br>`"low"`<br>`"medium"`<br>`"high"` |

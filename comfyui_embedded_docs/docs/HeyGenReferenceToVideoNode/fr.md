@@ -6,7 +6,7 @@ Générez une vidéo avec un dialogue et un son synchronisés à partir d'un pro
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Version du modèle utilisée pour la génération. (par défaut : `"heygen-video-1"`) | DYNAMIC_COMBO | Oui | `"heygen-video-1"` |
+| `modèle` | Version du modèle utilisée pour la génération. (par défaut : `"heygen-video-1"`) | DYNAMIC_COMBO | Oui | `"heygen-video-1"` |
 | `prompt` | Description de la vidéo, y compris tout dialogue. Référez-vous aux références connectées sous la forme @Image1, @Video1, @Audio1, numérotées par type dans l'ordre des entrées. (par défaut : chaîne vide) | STRING | Oui | 1 à 32000 caractères |
 | `duration` | Durée de la vidéo de sortie en secondes. (par défaut : 5) | INT | Oui | 5 à 15 |
 | `resolution` | Résolution de sortie. (par défaut : `"768p"`) | COMBO | Oui | `"768p"`<br>`"480p"` |

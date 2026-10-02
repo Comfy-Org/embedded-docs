@@ -20,7 +20,7 @@ Génère des images de manière synchrone en fonction du prompt et de la résolu
 
 **Remarque :** Si vous utilisez un `style_id` provenant de l'Infinite Style Library, assurez-vous qu'il ne s'agit pas d'un style d'art vectoriel, car cela renverrait des données SVG au lieu d'une image et provoquerait une erreur.
 
-**Remarque :** Ce nœud utilise une API payante. Le coût est de $0.04 par image générée, selon la valeur de `n`.
+**Remarque :** Ce nœud utilise une API payante. Le coût est de $0.0572 par image générée, selon la valeur de `n`.
 
 ## Sorties
 
@@ -31,4 +31,4 @@ Génère des images de manière synchrone en fonction du prompt et de la résolu
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftTextToImageNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d75b7dd2d8cee70c3bc1d2c64fb07ce814a3672619e8647f4c4c2cdc2635945c`
+**Source fingerprint (SHA-256):** `d0955cb57c93c752b19379b4c4f9c85dc72cdf6309bc433024f115fa7b996f4d`

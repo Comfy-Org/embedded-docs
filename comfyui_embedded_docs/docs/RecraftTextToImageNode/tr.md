@@ -20,7 +20,7 @@
 
 **Not:** Infinite Style Library'den bir `style_id` kullanıyorsanız, bunun Vector art stili olmadığından emin olun; aksi halde görüntü yerine SVG verisi döner ve hataya neden olur.
 
-**Not:** Bu, ücretli bir API düğümüdür. Maliyet, `n` değerine bağlı olarak oluşturulan görüntü başına 0,04 $'dır.
+**Not:** Bu, ücretli bir API düğümüdür. Maliyet, `n` değerine bağlı olarak oluşturulan görüntü başına 0,0572 $'dır.
 
 ## Çıktılar
 
@@ -31,4 +31,4 @@
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftTextToImageNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d75b7dd2d8cee70c3bc1d2c64fb07ce814a3672619e8647f4c4c2cdc2635945c`
+**Source fingerprint (SHA-256):** `d0955cb57c93c752b19379b4c4f9c85dc72cdf6309bc433024f115fa7b996f4d`

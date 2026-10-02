@@ -27,7 +27,7 @@ Estas opções aparecem quando `format` está definido como `"exr"`.
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `bit_depth` | A profundidade de bits para o arquivo EXR salvo. (padrão: "32-bit float") | COMBO | Sim (condicional) | `"32-bit float"` |
+| `bit_depth` | A profundidade de bits para o arquivo EXR salvo. (padrão: "16-bit float") | COMBO | Sim (condicional) | `"16-bit float"`<br>`"32-bit float"` |
 | `input_color_space` | Espaço de cor do tensor de entrada. O EXR é sempre gravado como linear de cena no gamut correspondente.<br>`"sRGB"` — a entrada é Rec.709 codificada em sRGB; a EOTF sRGB inversa é aplicada.<br>`"HDR"` — a entrada é Rec.2020 codificada em HLG (BT.2100); a OETF HLG inversa é aplicada para obter luz linear de cena.<br>`"linear"` — a entrada já é linear de cena (primárias Rec.709); gravada sem alterações. Use isto para saída de renderizador/compositor. (padrão: "sRGB") | COMBO | Sim (condicional) | `"sRGB"`<br>`"HDR"`<br>`"linear"` |
 
 ### Entradas de AVIF
@@ -53,7 +53,7 @@ Estas opções aparecem quando `save_mode` está definido como `"animated"`.
 **Notas sobre dependências de parâmetros:**
 - Os parâmetros específicos de formato (`bit_depth`, `input_color_space` e, para AVIF, também `crf` e `save_mode`) só ficam disponíveis quando um `format` específico é selecionado.
 - Para o formato PNG, apenas as profundidades de bits "8-bit" e "16-bit" estão disponíveis, e apenas o espaço de cor "sRGB".
-- Para o formato EXR, apenas a profundidade de bits "32-bit float" está disponível, com espaços de cor "sRGB", "HDR" ou "linear".
+- Para o formato EXR, as profundidades de bits "16-bit float" e "32-bit float" estão disponíveis, com espaços de cor "sRGB", "HDR" ou "linear". "16-bit float" é o padrão e gera arquivos menores.
 - Para o formato AVIF, `fps` e `loop_count` só ficam disponíveis quando `save_mode` está definido como `"animated"`.
 - Imagens PNG e EXR devem ter 1 (escala de cinza), 3 (RGB) ou 4 (RGBA) canais; outras contagens de canais não são suportadas e geram um erro.
 - AVIF suporta apenas imagens de 1 canal em escala de cinza e 3 canais RGB; imagens RGBA (alfa) não são suportadas e geram um erro.
@@ -67,4 +67,4 @@ Estas opções aparecem quando `save_mode` está definido como `"animated"`.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageAdvanced/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `d3df3caca99d58d973d0bc2ff7c22c4626185d390ec2acf870d4014331c4c335`
+**Source fingerprint (SHA-256):** `a0f7fccb3b25ffa814bf5d2a970c41fd4114368eb9a9998880b1108a272a41bb`

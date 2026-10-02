@@ -1,6 +1,6 @@
 # Görüntüyü Kaydet (Gelişmiş)
 
-The **Save Image (Advanced)** node saves the input images to your ComfyUI output directory with advanced control over file format, bit depth, and color space. It supports saving as PNG, EXR, or AVIF files (including animated AVIF) and can embed workflow metadata into the saved files.
+**Save Image (Advanced)** düğümü, giriş görüntülerini gelişmiş dosya biçimi, bit derinliği ve renk uzayı denetimiyle ComfyUI çıktı dizinine kaydeder. PNG, EXR veya AVIF dosyaları (animasyonlu AVIF dahil) olarak kaydetmeyi destekler ve kaydedilen dosyalara iş akışı üst verilerini gömebilir.
 
 ## Girdiler
 
@@ -27,7 +27,7 @@ Bu seçenekler `format` `"exr"` olarak ayarlandığında görünür.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `bit_depth` | Kaydedilen EXR dosyası için bit derinliği. (varsayılan: "32-bit float") | COMBO | Evet (koşullu) | `"32-bit float"` |
+| `bit_depth` | Kaydedilen EXR dosyası için bit derinliği. (varsayılan: "16-bit float") | COMBO | Evet (koşullu) | `"16-bit float"`<br>`"32-bit float"` |
 | `input_color_space` | Giriş tensörünün renk uzayı. EXR, eşleşen renk gamında her zaman sahne-doğrusal olarak yazılır.<br>`"sRGB"` — giriş sRGB kodlu Rec.709'dur; ters sRGB EOTF uygulanır.<br>`"HDR"` — giriş HLG kodlu Rec.2020'dir (BT.2100); sahne-doğrusal ışık elde etmek için ters HLG OETF uygulanır.<br>`"linear"` — giriş zaten sahne-doğrusaldır (Rec.709 ana renkleri); değiştirilmeden yazılır. Bunu renderer/compositor çıktısı için kullanın. (varsayılan: "sRGB") | COMBO | Evet (koşullu) | `"sRGB"`<br>`"HDR"`<br>`"linear"` |
 
 ### AVIF Girdileri
@@ -53,7 +53,7 @@ Bu seçenekler `save_mode` `"animated"` olarak ayarlandığında görünür.
 **Parametre Bağımlılıklarıyla İlgili Notlar:**
 - Biçime özgü parametreler (`bit_depth`, `input_color_space` ve AVIF için ayrıca `crf` ile `save_mode`), yalnızca belirli bir `format` seçildiğinde kullanılabilir.
 - PNG biçimi için yalnızca "8-bit" ve "16-bit" bit derinlikleri ve yalnızca "sRGB" renk uzayı kullanılabilir.
-- EXR biçimi için yalnızca "32-bit float" bit derinliği kullanılabilir; "sRGB", "HDR" veya "linear" renk uzaylarıyla birlikte.
+- EXR biçimi için "16-bit float" ve "32-bit float" bit derinlikleri kullanılabilir; "sRGB", "HDR" veya "linear" renk uzaylarıyla birlikte. "16-bit float" varsayılandır ve daha küçük dosyalar üretir.
 - AVIF biçimi için `fps` ve `loop_count`, yalnızca `save_mode` `"animated"` olarak ayarlandığında kullanılabilir.
 - PNG ve EXR görüntüleri 1 (gri tonlama), 3 (RGB) veya 4 (RGBA) kanala sahip olmalıdır; diğer kanal sayıları desteklenmez ve hata verir.
 - AVIF yalnızca 1 kanallı gri tonlamalı ve 3 kanallı RGB görüntüleri destekler; RGBA (alfa) görüntüler desteklenmez ve hata verir.
@@ -67,4 +67,4 @@ Bu seçenekler `save_mode` `"animated"` olarak ayarlandığında görünür.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageAdvanced/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d3df3caca99d58d973d0bc2ff7c22c4626185d390ec2acf870d4014331c4c335`
+**Source fingerprint (SHA-256):** `a0f7fccb3b25ffa814bf5d2a970c41fd4114368eb9a9998880b1108a272a41bb`
