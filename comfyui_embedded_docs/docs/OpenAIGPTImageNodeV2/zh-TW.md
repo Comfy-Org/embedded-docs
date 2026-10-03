@@ -38,7 +38,7 @@
 | `尺寸` | 影像尺寸。選擇 "Custom" 以使用自訂寬度和高度（預設值：`"auto"`）。 | COMBO | 是 | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
 | `自訂寬度` | 僅當 `model.size` 為 "Custom" 時使用。必須是 16 的倍數（預設值：`1024`）。 | INT | 否 | 480 至 3840 (步進值 16) |
 | `自訂高度` | 僅當 `model.size` 為 "Custom" 時使用。必須是 16 的倍數（預設值：`1024`）。 | INT | 否 | 480 至 3840 (步進值 16) |
-| `背景` | 傳回帶背景或不帶背景的影像（預設值：`"auto"`）。 | COMBO | 是 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `背景` | 傳回帶背景或不帶背景的影像（預設值：`"auto"`）。 | COMBO | 是 | `"auto"`<br>`"opaque"` |
 | `品質` | 影像品質，會影響成本和生成時間（預設值：`"low"`）。 | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
 | `model.images` | 用於影像編輯的選用參考影像。最多 16 張影像。詳情請參閱參考輸入。 | IMAGE | 否 | 0 至 16 |
 | `model.mask` | 用於修補的選用遮罩（白色區域將被取代）。必須恰好有一張參考影像。 | MASK | 否 | N/A |
@@ -81,4 +81,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `804ea35d0e2aa0b2993a293cb10cb41e2f9c6a3732304306253f7f7b1eb59b8a`
+**Source fingerprint (SHA-256):** `9cf1a9fa3e2cd98aff6c42432164ac5e6c55b7bcdc9815043cb359c6968ac172`

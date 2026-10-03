@@ -10,9 +10,9 @@ O nó ElevenLabs Text to Dialogue gera um diálogo de áudio com vários falante
 |-----------|-------------|-----------|----------|-------|
 | `estabilidade` | Estabilidade da voz. Valores mais baixos proporcionam uma amplitude emocional mais ampla; valores mais altos produzem fala mais consistente, mas potencialmente monótona. (padrão: 0.5) | FLOAT | Sim | 0.0 - 1.0 |
 | `aplicar_normalização_texto` | Modo de normalização de texto. 'auto' deixa o sistema decidir, 'on' sempre aplica a normalização, 'off' ignora essa etapa. | COMBO | Sim | `"auto"`<br>`"on"`<br>`"off"` |
-| `modelo` | Modelo a ser usado para a geração de diálogo. | COMBO | Sim | `"eleven_v3"` |
+| `modelo` | Modelo a ser usado para a geração de diálogo. (padrão: `"eleven_v4"`) | COMBO | Sim | `"eleven_v3"`<br>`"eleven_v4"`<br>`"eleven_v4_turbo"` |
 | `entradas` | Número de itens de diálogo. Selecionar um número cria essa quantidade de pares de entrada de texto e voz. | DYNAMIC_COMBO | Sim | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
-| `código_idioma` | Código de idioma ISO-639-1 ou ISO-639-3 (ex.: 'en', 'es', 'fra'). Deixe vazio para detecção automática. (padrão: vazio) | STRING | Sim | - |
+| `código_idioma` | Código de idioma ISO 639-1 (ex.: 'en', 'es', 'ja'). Deixe vazio para detecção automática. (padrão: vazio) | STRING | Sim | - |
 | `semente` | Semente para reprodutibilidade. (padrão: 1) | INT | Sim | 0 - 4294967295 |
 | `formato_saida` | Formato de saída de áudio. | COMBO | Sim | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
@@ -36,4 +36,4 @@ Compartilhado por todas as opções de `inputs`.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToDialogue/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `95b16143391a2282c58ebc66561b85338a8ce1f87e0ec769405225599d2c76ae`
+**Source fingerprint (SHA-256):** `bff737be0c828990d7286de4372e995295a4716febd388d7cc02c2a9987a6c80`

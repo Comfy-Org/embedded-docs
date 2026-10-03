@@ -38,7 +38,7 @@ Bu girdiler, `model` değeri `gpt-image-2` olarak ayarlandığında görünür.
 | `boyut` | Görüntü boyutu. Özel genişlik ve yüksekliği kullanmak için "Custom" seçeneğini seçin (varsayılan: `"auto"`). | COMBO | Evet | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
 | `özel_genişlik` | Yalnızca `model.size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır (varsayılan: `1024`). | INT | Hayır | 480 - 3840 (adım 16) |
 | `özel_yükseklik` | Yalnızca `model.size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır (varsayılan: `1024`). | INT | Hayır | 480 - 3840 (adım 16) |
-| `arka_plan` | Görüntüyü arka planlı veya arka plansız döndür (varsayılan: `"auto"`). | COMBO | Evet | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `arka_plan` | Görüntüyü arka planlı veya arka plansız döndür (varsayılan: `"auto"`). | COMBO | Evet | `"auto"`<br>`"opaque"` |
 | `kalite` | Görüntü kalitesi, maliyeti ve üretim süresini etkiler (varsayılan: `"low"`). | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"` |
 | `model.images` | Görüntü düzenleme için isteğe bağlı referans görüntü(ler). En fazla 16 görüntü. Ayrıntılar için Referans Girdileri bölümüne bakın. | IMAGE | Hayır | 0 - 16 |
 | `model.mask` | Inpainting için isteğe bağlı maske (beyaz alanlar değiştirilir). Tam olarak bir referans görüntü gerektirir. | MASK | Hayır | N/A |
@@ -81,4 +81,4 @@ Bu girdiler, `model` değeri `gpt-image-1.5` veya `gpt-image-1` olarak ayarland�
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `804ea35d0e2aa0b2993a293cb10cb41e2f9c6a3732304306253f7f7b1eb59b8a`
+**Source fingerprint (SHA-256):** `9cf1a9fa3e2cd98aff6c42432164ac5e6c55b7bcdc9815043cb359c6968ac172`

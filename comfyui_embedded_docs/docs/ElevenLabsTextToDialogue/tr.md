@@ -10,9 +10,9 @@ ElevenLabs Text to Dialogue düğümü, metinden çok konuşmacılı bir sesli d
 |-----------|-------------|-----------|----------|-------|
 | `kararlılık` | Ses kararlılığı. Düşük değerler daha geniş bir duygusal aralık sağlar; yüksek değerler daha tutarlı ancak potansiyel olarak monoton bir konuşma üretir. (varsayılan: 0.5) | FLOAT | Evet | 0.0 - 1.0 |
 | `metin normalizasyonunu uygula` | Metin normalleştirme modu. 'auto' sistemin karar vermesini sağlar, 'on' normalleştirmeyi her zaman uygular, 'off' bunu atlar. | COMBO | Evet | `"auto"`<br>`"on"`<br>`"off"` |
-| `model` | Diyalog oluşturma için kullanılacak model. | COMBO | Evet | `"eleven_v3"` |
+| `model` | Diyalog oluşturma için kullanılacak model. (varsayılan: `"eleven_v4"`) | COMBO | Evet | `"eleven_v3"`<br>`"eleven_v4"`<br>`"eleven_v4_turbo"` |
 | `girdiler` | Diyalog öğesi sayısı. Bir sayı seçmek, o sayıda metin ve ses girdi çifti oluşturur. | DYNAMIC_COMBO | Evet | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
-| `dil_kodu` | ISO-639-1 veya ISO-639-3 dil kodu (örn., 'en', 'es', 'fra'). Otomatik algılama için boş bırakın. (varsayılan: boş) | STRING | Evet | - |
+| `dil_kodu` | ISO 639-1 dil kodu (örn., 'en', 'es', 'ja'). Otomatik algılama için boş bırakın. (varsayılan: boş) | STRING | Evet | - |
 | `tohum` | Yeniden üretilebilirlik için tohum. (varsayılan: 1) | INT | Evet | 0 - 4294967295 |
 | `çıktı_formatı` | Ses çıktısı biçimi. | COMBO | Evet | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
@@ -36,4 +36,4 @@ Tüm `inputs` seçenekleri tarafından paylaşılır.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToDialogue/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `95b16143391a2282c58ebc66561b85338a8ce1f87e0ec769405225599d2c76ae`
+**Source fingerprint (SHA-256):** `bff737be0c828990d7286de4372e995295a4716febd388d7cc02c2a9987a6c80`

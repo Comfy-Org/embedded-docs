@@ -10,9 +10,9 @@ El nodo ElevenLabs Text to Dialogue genera un diálogo de audio con múltiples h
 |-----------|-------------|--------------|-------------|-------|
 | `estabilidad` | Estabilidad de la voz. Los valores más bajos ofrecen un rango emocional más amplio; los valores más altos producen un habla más consistente pero potencialmente monótona. (valor predeterminado: 0.5) | FLOAT | Sí | 0.0 - 1.0 |
 | `aplicar_normalización_de_texto` | Modo de normalización de texto. 'auto' deja que el sistema decida, 'on' siempre aplica la normalización, 'off' la omite. | COMBO | Sí | `"auto"`<br>`"on"`<br>`"off"` |
-| `modelo` | Modelo que se usará para la generación de diálogo. | COMBO | Sí | `"eleven_v3"` |
+| `modelo` | Modelo que se usará para la generación de diálogo. (valor predeterminado: `"eleven_v4"`) | COMBO | Sí | `"eleven_v3"`<br>`"eleven_v4"`<br>`"eleven_v4_turbo"` |
 | `entradas` | Número de entradas de diálogo. Al seleccionar un número, se crea esa cantidad de pares de entrada de texto y voz. | DYNAMIC_COMBO | Sí | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
-| `código_de_idioma` | Código de idioma ISO-639-1 o ISO-639-3 (p. ej., 'en', 'es', 'fra'). Déjelo vacío para la detección automática. (valor predeterminado: vacío) | STRING | Sí | - |
+| `código_de_idioma` | Código de idioma ISO 639-1 (p. ej., 'en', 'es', 'ja'). Déjelo vacío para la detección automática. (valor predeterminado: vacío) | STRING | Sí | - |
 | `semilla` | Semilla para la reproducibilidad. (valor predeterminado: 1) | INT | Sí | 0 - 4294967295 |
 | `formato_de_salida` | Formato de salida de audio. | COMBO | Sí | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
@@ -36,4 +36,4 @@ Compartidas por todas las opciones de `inputs`.
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToDialogue/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `95b16143391a2282c58ebc66561b85338a8ce1f87e0ec769405225599d2c76ae`
+**Source fingerprint (SHA-256):** `bff737be0c828990d7286de4372e995295a4716febd388d7cc02c2a9987a6c80`
