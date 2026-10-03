@@ -38,7 +38,7 @@ Ces entrées apparaissent lorsque `model` est défini sur `gpt-image-2`.
 | `taille` | Taille de l'image. Sélectionnez « Custom » pour utiliser la largeur et la hauteur personnalisées (valeur par défaut : `"auto"`). | COMBO | Oui | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
 | `largeur_personnalisée` | Utilisé uniquement lorsque `model.size` est défini sur « Custom ». Doit être un multiple de 16 (valeur par défaut : `1024`). | INT | Non | 480 à 3840 (pas 16) |
 | `hauteur_personnalisée` | Utilisé uniquement lorsque `model.size` est défini sur « Custom ». Doit être un multiple de 16 (valeur par défaut : `1024`). | INT | Non | 480 à 3840 (pas 16) |
-| `arrière-plan` | Renvoie l'image avec ou sans arrière-plan (valeur par défaut : `"auto"`). | COMBO | Oui | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `arrière-plan` | Renvoie l'image avec ou sans arrière-plan (valeur par défaut : `"auto"`). | COMBO | Oui | `"auto"`<br>`"opaque"` |
 | `qualité` | Qualité de l'image, affecte le coût et le temps de génération (valeur par défaut : `"low"`). | COMBO | Oui | `"low"`<br>`"medium"`<br>`"high"` |
 | `model.images` | Image(s) de référence facultative(s) pour l'édition d'image. Jusqu'à 16 images. Voir Entrées de référence pour plus de détails. | IMAGE | Non | 0 à 16 |
 | `model.mask` | Masque facultatif pour l'inpainting (les zones blanches seront remplacées). Nécessite exactement une image de référence. | MASK | Non | N/A |
@@ -81,4 +81,4 @@ Ces entrées apparaissent lorsque `model` est défini sur `gpt-image-1.5` ou `gp
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `804ea35d0e2aa0b2993a293cb10cb41e2f9c6a3732304306253f7f7b1eb59b8a`
+**Source fingerprint (SHA-256):** `9cf1a9fa3e2cd98aff6c42432164ac5e6c55b7bcdc9815043cb359c6968ac172`

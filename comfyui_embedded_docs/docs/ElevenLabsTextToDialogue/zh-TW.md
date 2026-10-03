@@ -10,9 +10,9 @@ ElevenLabs Text to Dialogue 節點會從文字生成多說話者音訊對話。�
 |-----------|-------------|-----------|----------|-------|
 | `穩定性` | 語音穩定性。較低的值會帶來更廣泛的情緒範圍，較高的值會產生更一致但可能較單調的語音。（預設：0.5） | FLOAT | 是 | 0.0 - 1.0 |
 | `套用文字正規化` | 文字正規化模式。'auto' 讓系統自行決定，'on' 一律套用正規化，'off' 則略過。 | COMBO | 是 | `"auto"`<br>`"on"`<br>`"off"` |
-| `模型` | 用於對話生成的模型。 | COMBO | 是 | `"eleven_v3"` |
+| `模型` | 用於對話生成的模型。（預設值：`"eleven_v4"`） | COMBO | 是 | `"eleven_v3"`<br>`"eleven_v4"`<br>`"eleven_v4_turbo"` |
 | `對話項目數` | 對話條目數量。選取數字會建立對應數量的 `text` 與 `voice` 輸入配對。 | DYNAMIC_COMBO | 是 | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
-| `語言代碼` | ISO-639-1 或 ISO-639-3 語言代碼（例如 'en'、'es'、'fra'）。留空以自動偵測。（預設：空） | STRING | 是 | - |
+| `語言代碼` | ISO 639-1 語言代碼（例如 'en'、'es'、'ja'）。留空以自動偵測。（預設：空） | STRING | 是 | - |
 | `隨機種子` | 用於重現結果的種子。（預設：1） | INT | 是 | 0 - 4294967295 |
 | `輸出格式` | 音訊輸出格式。 | COMBO | 是 | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
@@ -36,4 +36,4 @@ ElevenLabs Text to Dialogue 節點會從文字生成多說話者音訊對話。�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToDialogue/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `95b16143391a2282c58ebc66561b85338a8ce1f87e0ec769405225599d2c76ae`
+**Source fingerprint (SHA-256):** `bff737be0c828990d7286de4372e995295a4716febd388d7cc02c2a9987a6c80`
