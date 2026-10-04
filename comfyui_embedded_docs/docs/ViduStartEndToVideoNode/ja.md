@@ -1,7 +1,5 @@
 # Vidu 開始終了からビデオ生成
 
-以下、ご依頼いただいた内容を翻訳ルールに従い日本語に翻訳いたします。
-
 > このドキュメントはAIによって生成されました。誤りや改善のためのご提案がございましたら、ぜひご貢献ください！ [GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduStartEndToVideoNode/en.md)
 
 Vidu Start End To Video Generation ノードは、開始フレームと終了フレームの間のフレームを生成することで動画を作成します。テキストプロンプトを使用して動画生成プロセスをガイドし、さまざまな解像度や動きの設定に対応した複数の動画モデルをサポートしています。このノードは、処理を開始する前に開始フレームと終了フレームのアスペクト比が互換性があることを検証します。
