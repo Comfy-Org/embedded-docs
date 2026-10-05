@@ -1,9 +1,5 @@
 # QuadrupleCLIPLoader
 
-以下は、ご指定の翻訳ルールに従った日本語訳です。
-
----
-
 Quadruple CLIP Loader（QuadrupleCLIPLoader）は、ComfyUI のコアノードの1つであり、HiDream I1 バージョンモデルをサポートするために初めて追加されました。このノードが見つからない場合は、ComfyUI を最新バージョンに更新して、ノードがサポートされていることを確認してください。
 
 このノードは4つのCLIPモデルを必要とし、パラメータ `clip_name1`、`clip_name2`、`clip_name3`、`clip_name4` に対応します。また、後続のノードにCLIPモデルの出力を提供します。

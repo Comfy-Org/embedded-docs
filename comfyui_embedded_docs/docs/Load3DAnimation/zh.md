@@ -1,7 +1,5 @@
 # Load3DAnimation
 
-## Load3DAnimation 节点文档
-
 ## 概述
 
 Load3DAnimation 节点是用于加载和处理 3D 模型文件的核心节点。加载节点时，它会自动从 `ComfyUI/input/3d/` 目录中检索可用的 3D 资源。您也可以使用上传功能上传支持的 3D 文件进行预览。
