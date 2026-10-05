@@ -1,7 +1,5 @@
 # Rodin 3D Générer - Génération Lisse
 
-Voici la traduction en français de la documentation du nœud Rodin 3D Smooth, en respectant vos règles :
-
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Smooth/en.md)
 
 Le nœud Rodin 3D Smooth génère des actifs 3D en utilisant l'API Rodin, en traitant des images d'entrée et en les convertissant en modèles 3D lisses. Il prend plusieurs images en entrée et produit un fichier de modèle 3D téléchargeable. Le nœud gère l'ensemble du processus de génération, y compris la création de tâches, la vérification périodique de l'état et le téléchargement automatique des fichiers.

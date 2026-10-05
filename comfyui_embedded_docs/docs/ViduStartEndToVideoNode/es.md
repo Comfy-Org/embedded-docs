@@ -1,31 +1,5 @@
 # Generación de Video Vidu de Inicio a Fin
 
-Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
-
-## Reglas de Traducción
-
-1. **Contenido que NO debe traducirse:**
-   - Nombres de parámetros entre comillas invertidas: `image`, `seed`, `model`
-   - Tipos de datos en MAYÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.
-   - Valores en columna Range: números, "auto", nombres de opciones
-   - Código, rutas de archivos
-
-2. **Contenido que SÍ debe traducirse:**
-   - Títulos de secciones: ## Descripción general, ## Entradas, ## Salidas
-   - Todo el texto descriptivo y explicativo
-   - Descripciones de parámetros
-
-3. **Calidad de traducción:**
-   - Usar español estándar y neutral
-   - Mantener tono profesional pero accesible
-   - Asegurar precisión técnica
-   - Usar terminología técnica estándar en español
-
-4. **Formato:**
-   - Mantener todo el formato Markdown
-   - Preservar estructura de tablas
-   - No agregar ninguna nota o enlace al inicio del documento (será agregado automáticamente)
-
 Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
 
 El nodo Vidu Start End To Video Generation crea un video generando fotogramas entre un fotograma inicial y un fotograma final. Utiliza un prompt de texto para guiar el proceso de generación del video y admite varios modelos de video con diferentes configuraciones de resolución y movimiento. El nodo valida que los fotogramas inicial y final tengan relaciones de aspecto compatibles antes de procesarlos.

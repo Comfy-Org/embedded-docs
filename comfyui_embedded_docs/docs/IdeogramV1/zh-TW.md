@@ -1,7 +1,5 @@
 # Ideogram V1
 
-此文件由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！[在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramV1/en.md)
-
 IdeogramV1 節點透過 API 使用 Ideogram V1 模型生成圖像。它接收文字提示和各種生成設定，根據您的輸入創建一個或多個圖像。該節點支援不同的寬高比和生成模式，以自訂輸出結果。
 
 ## 輸入

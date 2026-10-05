@@ -1,7 +1,5 @@
 # SAM3 Suivi vers Masque
 
-Voici la traduction en français de la documentation du nœud ComfyUI `SAM3_TrackToMask` :
-
 ## Aperçu
 
 Sélectionne des objets suivis spécifiques à partir d'une session de suivi SAM3 en fonction de leurs numéros d'index et les combine en un seul masque de sortie. Cela vous permet de choisir les objets à conserver et ceux à ignorer parmi les résultats du suivi.

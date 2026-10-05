@@ -1,9 +1,5 @@
 # GeminiImage
 
-Voici la traduction en français de la documentation du nœud GeminiImage, en respectant vos règles de traduction.
-
----
-
 Le nœud GeminiImage génère des réponses textuelles et visuelles à partir des modèles d'IA Gemini de Google. Il permet de fournir des entrées multimodales, notamment des invites textuelles, des images et des fichiers, pour créer des sorties textuelles et visuelles cohérentes. Le nœud gère toutes les communications avec l'API et l'analyse des réponses des derniers modèles Gemini.
 
 ## Entrées

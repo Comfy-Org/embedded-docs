@@ -129,38 +129,30 @@ def strip_markdown_output_fence(text: str) -> str:
 
 
 def strip_ai_preamble(content: str, lang: str) -> str:
-    """Remove translation preamble that the AI sometimes prepends.
+    """Remove a leaked preamble / prompt block sitting under the H1 title.
 
-    The AI sometimes adds a sentence like 'Here is the translation into Russian:'
-    before the actual node description. This function detects and removes it.
+    The previous implementation inspected only the first non-empty line, but this
+    runs before ``strip_leading_h1``, so that line is the H1 itself and no pattern
+    ever matched. Every leaked preamble therefore shipped to the site (128 ja/ko/zh
+    pages cleaned in PR #167, far more in the other locales).
 
-    The preamble is expected to be the first paragraph after the H1 title
-    (which is already stripped by strip_leading_h1 before this is called).
+    Delegates to fix_translation_preamble.strip_leak, the single implementation
+    shared with the CI gate, which covers all known shapes: preamble sentence,
+    whole prompt block, descriptive sentence, displaced disclaimer, leftover
+    separator.
     """
-    patterns = _PREAMBLE_PATTERNS.get(lang, [])
-    if not patterns:
-        return content
+    try:
+        from fix_translation_preamble import strip_leak
+    except ImportError:  # script run from another cwd
+        import pathlib as _pathlib
+        import sys as _sys
+        _sys.path.insert(0, str(_pathlib.Path(__file__).resolve().parent))
+        from fix_translation_preamble import strip_leak
 
-    lines = content.split('\n')
-    # Find the first non-empty line
-    first_content_idx = 0
-    while first_content_idx < len(lines) and not lines[first_content_idx].strip():
-        first_content_idx += 1
-
-    if first_content_idx >= len(lines):
-        return content
-
-    first_line = lines[first_content_idx].strip()
-    for pat in patterns:
-        if re.search(pat, first_line):
-            # Remove the preamble line and any following blank lines up to actual content
-            del lines[first_content_idx]
-            # Remove trailing blank lines after preamble
-            while first_content_idx < len(lines) and not lines[first_content_idx].strip():
-                del lines[first_content_idx]
-            break
-
-    return '\n'.join(lines)
+    cleaned, removed = strip_leak(content, lang)
+    if removed:
+        logger.info("Stripped %d leaked preamble line(s) from %s", removed, lang)
+    return cleaned
 
 def _extract_table_data_rows(table_text: str) -> list[str]:
     """Return the data rows of a markdown table (lines starting with '|'),

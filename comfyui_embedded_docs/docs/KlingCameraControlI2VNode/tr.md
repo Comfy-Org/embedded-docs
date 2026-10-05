@@ -1,31 +1,5 @@
 # Kling Görüntüden Videoya (Kamera Kontrolü)
 
-ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
-
-## Çeviri Kuralları
-
-1. **Çevrilmemesi gereken içerik:**
-   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
-   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
-   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
-   - Kod, dosya yolları
-
-2. **Çevrilmesi gereken içerik:**
-   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
-   - Tüm açıklayıcı metinler
-   - Parametre açıklamaları
-
-3. **Çeviri kalitesi:**
-   - Standart Türkçe kullanın
-   - Profesyonel ama anlaşılır bir üslup koruyun
-   - Teknik doğruluğu sağlayın
-   - Standart Türkçe teknik terminolojiyi kullanın
-
-4. **Format:**
-   - Tüm Markdown biçimlendirmesini koruyun
-   - Tablo yapısını koruyun
-   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
-
 Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
 
 Kling Görüntüden Videoya Kamera Kontrol Düğümü, hareketsiz görüntüleri profesyonel kamera hareketleriyle sinematik videolara dönüştürür. Bu özel görüntüden videoya düğümü, orijinal görüntünüze odaklanmayı korurken yakınlaştırma, döndürme, kaydırma, eğme ve birinci şahıs görüşü dahil olmak üzere sanal kamera eylemlerini kontrol etmenizi sağlar. Kamera kontrolü şu anda yalnızca kling-v1-5 modeliyle 5 saniyelik sürede pro modunda desteklenmektedir.

@@ -1,7 +1,5 @@
 # ChargerAudio
 
-Voici la traduction de la documentation du nœud LoadAudio, conforme à vos règles :
-
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadAudio/en.md)
 
 Le nœud LoadAudio charge des fichiers audio depuis le répertoire d'entrée et les convertit dans un format pouvant être traité par d'autres nœuds audio dans ComfyUI. Il lit les fichiers audio et extrait à la fois les données de forme d'onde et la fréquence d'échantillonnage, les rendant disponibles pour les tâches de traitement audio en aval.

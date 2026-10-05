@@ -1,31 +1,5 @@
 # Luma Imagen a Imagen
 
-Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
-
-## Reglas de Traducción
-
-1. **Contenido que NO debe traducirse:**
-   - Nombres de parámetros entre comillas invertidas: `image`, `seed`, `model`
-   - Tipos de datos en MAYÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.
-   - Valores en columna Range: números, "auto", nombres de opciones
-   - Código, rutas de archivos
-
-2. **Contenido que SÍ debe traducirse:**
-   - Títulos de secciones: ## Descripción general, ## Entradas, ## Salidas
-   - Todo el texto descriptivo y explicativo
-   - Descripciones de parámetros
-
-3. **Calidad de traducción:**
-   - Usar español estándar y neutral
-   - Mantener tono profesional pero accesible
-   - Asegurar precisión técnica
-   - Usar terminología técnica estándar en español
-
-4. **Formato:**
-   - Mantener todo el formato Markdown
-   - Preservar estructura de tablas
-   - No agregar ninguna nota o enlace al inicio del documento (será agregado automáticamente)
-
 Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
 
 Modifica imágenes de forma síncrona basándose en un prompt de texto y la relación de aspecto de la imagen original. Este nodo toma una imagen de entrada y la transforma de acuerdo con el prompt proporcionado, utilizando un peso de imagen configurable para controlar cuánto se altera la imagen original.

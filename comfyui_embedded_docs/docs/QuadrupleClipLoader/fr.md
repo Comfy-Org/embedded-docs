@@ -1,7 +1,5 @@
 # QuadrupleCLIPLoader
 
-Voici la traduction en français de la documentation du nœud Quadruple CLIP Loader :
-
 Le Chargeur CLIP Quadruple, QuadrupleCLIPLoader, est l'un des nœuds fondamentaux de ComfyUI, initialement ajouté pour prendre en charge le modèle HiDream I1 version. Si ce nœud est manquant, essayez de mettre à jour ComfyUI vers la dernière version pour garantir la prise en charge du nœud.
 
 Il nécessite 4 modèles CLIP, correspondant aux paramètres `clip_name1`, `clip_name2`, `clip_name3` et `clip_name4`, et fournira une sortie de modèle CLIP pour les nœuds suivants.

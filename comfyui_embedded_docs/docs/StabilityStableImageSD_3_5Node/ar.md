@@ -1,7 +1,5 @@
 # Stability AI صورة Stable Diffusion 3.5
 
-هذه الوثيقة تم إنشاؤها بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StabilityStableImageSD_3_5Node/en.md)
-
 تقوم هذه العقدة بتوليد الصور بشكل متزامن باستخدام نموذج Stable Diffusion 3.5 من Stability AI. تنشئ الصور بناءً على النصوص التوجيهية، ويمكنها أيضًا تعديل الصور الموجودة عند تقديمها كمدخلات. تدعم العقدة نسب أبعاد متنوعة وإعدادات أنماط مسبقة لتخصيص المخرجات.
 
 ## المدخلات

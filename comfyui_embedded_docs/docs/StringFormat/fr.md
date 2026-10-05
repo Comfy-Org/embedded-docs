@@ -1,7 +1,5 @@
 # Formater le texte
 
-Voici la traduction en français de la documentation du nœud ComfyUI, en respectant vos règles :
-
 ## Aperçu
 
 Ce nœud formate du texte en utilisant la méthode de formatage de chaîne de Python. Il fonctionne comme un modèle où vous définissez un motif de texte avec des espaces réservés, puis fournissez des valeurs pour remplir ces espaces réservés. Il prend en charge toutes les options et fonctionnalités de formatage de Python.

@@ -1,7 +1,5 @@
 # Rodin 3D Gen-2.5 - Image vers 3D
 
-Voici la traduction en français de la documentation technique du nœud ComfyUI :
-
 ## Aperçu
 
 Ce nœud génère un modèle 3D à partir d'une à cinq images de référence en utilisant l'API Rodin Gen-2.5. Vous pouvez choisir entre les modes de qualité Rapide, Standard ou Extrême-Haute pour équilibrer la vitesse de génération et le coût.

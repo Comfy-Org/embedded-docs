@@ -1,9 +1,5 @@
 # Tripo : Modèle de raffinement d'ébauche
 
-Voici la traduction en français de la documentation technique du nœud ComfyUI **TripoRefineNode** :
-
----
-
 Le TripoRefineNode affine les modèles 3D bruts créés spécifiquement par les modèles Tripo v1.4. Il prend un identifiant de tâche de modèle et le traite via l'API Tripo pour générer une version améliorée du modèle. Ce nœud est conçu pour fonctionner exclusivement avec les modèles bruts produits par les modèles Tripo v1.4.
 
 ## Entrées

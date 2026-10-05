@@ -1,31 +1,5 @@
 # Painter
 
-ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
-
-## Çeviri Kuralları
-
-1. **Çevrilmemesi gereken içerik:**
-   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
-   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
-   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
-   - Kod, dosya yolları
-
-2. **Çevrilmesi gereken içerik:**
-   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
-   - Tüm açıklayıcı metinler
-   - Parametre açıklamaları
-
-3. **Çeviri kalitesi:**
-   - Standart Türkçe kullanın
-   - Profesyonel ama anlaşılır bir üslup koruyun
-   - Teknik doğruluğu sağlayın
-   - Standart Türkçe teknik terminolojiyi kullanın
-
-4. **Format:**
-   - Tüm Markdown biçimlendirmesini koruyun
-   - Tablo yapısını koruyun
-   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
-
 Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
 
 Painter düğümü, ComfyUI içinde doğrudan görüntü veya maske oluşturmak veya düzenlemek için etkileşimli bir tuval sağlar. Boş bir tuvalle veya mevcut bir görüntüyle başlamanıza, bir fırça aracı kullanarak üzerine çizim yapmanıza ve hem sonuç görüntüsünü hem de karşılık gelen bir alfa maskesini çıktı olarak vermenize olanak tanır. Maske, boyanan alanları tanımlar ve bu alanlar daha sonra temel görüntü veya arka plan rengi üzerine birleştirilir.

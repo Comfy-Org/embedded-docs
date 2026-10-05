@@ -1,7 +1,5 @@
 # ImageVide
 
-Voici la traduction en français de la documentation du nœud EmptyImage :
-
 ## Description de la fonction
 
 Le nœud EmptyImage est utilisé pour créer des images vierges avec des dimensions et des couleurs spécifiées. Il peut générer des images d'arrière-plan de couleur unie, couramment utilisées comme points de départ ou images d'arrière-plan pour les workflows de traitement d'image.

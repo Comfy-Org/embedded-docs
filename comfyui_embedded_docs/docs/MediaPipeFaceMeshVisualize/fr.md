@@ -1,7 +1,5 @@
 # Visualisation du maillage facial MediaPipe
 
-Voici la traduction en français de la documentation du nœud MediaPipeFaceMeshVisualize :
-
 ## Aperçu
 
 Dessine les points de repère du visage et les lignes de connexion (un maillage facial) sur une image d'entrée. Ce nœud utilise les données de repères produites par un nœud de détection faciale pour visualiser les caractéristiques faciales détectées, telles que les yeux, le nez, la bouche et le contour du visage.

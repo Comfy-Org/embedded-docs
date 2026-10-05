@@ -1,31 +1,5 @@
 # MoonvalleyImg2VideoNode
 
-Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
-
-## Reglas de Traducción
-
-1. **Contenido que NO debe traducirse:**
-   - Nombres de parámetros entre comillas invertidas: `image`, `seed`, `model`
-   - Tipos de datos en MAYÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.
-   - Valores en columna Range: números, "auto", nombres de opciones
-   - Código, rutas de archivos
-
-2. **Contenido que SÍ debe traducirse:**
-   - Títulos de secciones: ## Descripción general, ## Entradas, ## Salidas
-   - Todo el texto descriptivo y explicativo
-   - Descripciones de parámetros
-
-3. **Calidad de traducción:**
-   - Usar español estándar y neutral
-   - Mantener tono profesional pero accesible
-   - Asegurar precisión técnica
-   - Usar terminología técnica estándar en español
-
-4. **Formato:**
-   - Mantener todo el formato Markdown
-   - Preservar estructura de tablas
-   - No agregar ninguna nota o enlace al inicio del documento (será agregado automáticamente)
-
 Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
 
 El nodo Moonvalley Marey Imagen a Video transforma una imagen de referencia en un video utilizando la API de Moonvalley. Toma una imagen de entrada y un prompt de texto para generar un video con resolución, ajustes de calidad y controles creativos especificados. El nodo gestiona todo el proceso, desde la carga de la imagen hasta la generación y descarga del video.

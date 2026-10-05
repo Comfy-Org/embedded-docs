@@ -1,7 +1,5 @@
 # VOIDQuadmaskPreprocess
 
-Voici la traduction de la documentation du nœud VOIDQuadmaskPreprocess :
-
 ## Aperçu
 
 Le nœud VOIDQuadmaskPreprocess prépare un masque pour l'infilling VOID en le convertissant en un « quadrimasque » spécial à quatre niveaux. Il prend un masque d'entrée, dilate éventuellement la région principale, puis quantifie les valeurs du masque en quatre niveaux distincts représentant différentes zones sémantiques (objet principal, chevauchement, zone affectée et arrière-plan). Enfin, il inverse et normalise le masque afin que les valeurs de sortie soient comprises dans l'intervalle [0, 1], où 1,0 indique la zone à supprimer et 0,0 la zone à conserver.
