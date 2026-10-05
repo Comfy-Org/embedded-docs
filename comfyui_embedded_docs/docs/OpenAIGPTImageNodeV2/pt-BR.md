@@ -38,7 +38,7 @@ Essas entradas aparecem quando `model` está definido como `gpt-image-2`.
 | `tamanho` | Tamanho da imagem. Selecione "Custom" para usar a largura e a altura personalizadas (padrão: `"auto"`). | COMBO | Sim | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
 | `largura_personalizada` | Usado somente quando `model.size` é "Custom". Deve ser múltiplo de 16 (padrão: `1024`). | INT | Não | 480 a 3840 (passo 16) |
 | `altura_personalizada` | Usado somente quando `model.size` é "Custom". Deve ser múltiplo de 16 (padrão: `1024`). | INT | Não | 480 a 3840 (passo 16) |
-| `fundo` | Retorna a imagem com ou sem fundo (padrão: `"auto"`). | COMBO | Sim | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `fundo` | Retorna a imagem com ou sem fundo (padrão: `"auto"`). | COMBO | Sim | `"auto"`<br>`"opaque"` |
 | `qualidade` | Qualidade da imagem; afeta o custo e o tempo de geração (padrão: `"low"`). | COMBO | Sim | `"low"`<br>`"medium"`<br>`"high"` |
 | `model.images` | Imagem(ns) de referência opcional(is) para edição de imagem. Até 16 imagens. Consulte Entradas de referência para obter detalhes. | IMAGE | Não | 0 a 16 |
 | `model.mask` | Máscara opcional para inpainting (áreas brancas serão substituídas). Requer exatamente uma imagem de referência. | MASK | Não | N/A |
@@ -81,4 +81,4 @@ Essas entradas aparecem quando `model` está definido como `gpt-image-1.5` ou `g
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `804ea35d0e2aa0b2993a293cb10cb41e2f9c6a3732304306253f7f7b1eb59b8a`
+**Source fingerprint (SHA-256):** `9cf1a9fa3e2cd98aff6c42432164ac5e6c55b7bcdc9815043cb359c6968ac172`

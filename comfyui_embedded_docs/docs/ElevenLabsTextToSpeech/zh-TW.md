@@ -8,12 +8,12 @@ ElevenLabs Text to Speech 節點使用 ElevenLabs API 將書面文字轉換為�
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `模型` | 用於文字轉語音的模型。選擇模型後會顯示其特定參數。 | DYNAMIC_COMBO | 否 | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
+| `模型` | 用於文字轉語音的模型。選擇模型後會顯示其特定參數。 | DYNAMIC_COMBO | 否 | `"eleven_v4"`<br>`"eleven_v4_turbo"`<br>`"eleven_multilingual_v2"`<br>`"eleven_v3"` |
 | `語音` | 用於語音合成的語音。從 Voice Selector 或 Instant Voice Clone 連接。 | CUSTOM | 是 | N/A |
 | `文字` | 要轉換為語音的文字。必須至少包含一個字元。 | STRING | 是 | N/A |
 | `穩定性` | 語音穩定性。較低的值會提供更廣泛的情感範圍，較高的值會產生更一致但可能更單調的語音（預設值：0.5）。 | FLOAT | 否 | 0.0 - 1.0 |
 | `套用文字正規化` | 文字正規化模式。'auto' 讓系統決定，'on' 一律套用正規化，'off' 則略過。 | COMBO | 否 | `"auto"`<br>`"on"`<br>`"off"` |
-| `語言代碼` | ISO-639-1 或 ISO-639-3 語言代碼（例如 'en'、'es'、'fra'）。留空以自動偵測（預設值：""）。 | STRING | 否 | N/A |
+| `語言代碼` | ISO 639-1 語言代碼（例如 'en'、'es'、'ja'）。留空以自動偵測（預設值：""）。 | STRING | 否 | N/A |
 | `種子值` | 用於再現性的種子（不保證確定性）（預設值：1）。 | INT | 否 | 0 - 2147483647 |
 | `輸出格式` | 音訊輸出格式。 | COMBO | 否 | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
@@ -23,7 +23,7 @@ ElevenLabs Text to Speech 節點使用 ElevenLabs API 將書面文字轉換為�
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `speed` | 語音速度。1.0 為正常，<1.0 較慢，>1.0 較快（預設值：1.0）。 | FLOAT | 否 | 0.7 - 1.3 |
+| `speed` | 語音速度。1.0 為正常，<1.0 較慢，>1.0 較快（預設值：1.0）。 | FLOAT | 否 | 0.7 - 1.2 |
 | `similarity_boost` | 相似度增強。較高的值會讓語音更接近原始語音（預設值：0.75）。 | FLOAT | 否 | 0.0 - 1.0 |
 | `use_speaker_boost` | 增強與原始說話者語音的相似度（預設值：False）。 | BOOLEAN | 否 | True / False |
 | `style` | 風格誇飾。較高的值會增加風格表現，但可能降低穩定性（預設值：0.0）。 | FLOAT | 否 | 0.0 - 0.2 |
@@ -37,6 +37,14 @@ ElevenLabs Text to Speech 節點使用 ElevenLabs API 將書面文字轉換為�
 | `speed` | 語音速度。1.0 為正常，<1.0 較慢，>1.0 較快（預設值：1.0）。 | FLOAT | 否 | 0.7 - 1.3 |
 | `similarity_boost` | 相似度增強。較高的值會讓語音更接近原始語音（預設值：0.75）。 | FLOAT | 否 | 0.0 - 1.0 |
 
+### eleven_v4 和 eleven_v4_turbo 輸入
+
+當 `model` 設為 `"eleven_v4"` 或 `"eleven_v4_turbo"` 時，這些參數會變為可用。
+
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
+|-----------|-------------|-----------|----------|-------|
+| `similarity_boost` | 相似度增強。較高的值會讓語音更接近原始語音（預設值：0.75）。 | FLOAT | 否 | 0.0 - 1.0 |
+
 ## 輸出
 
 | 輸出名稱 | 描述 | 資料類型 |
@@ -46,4 +54,4 @@ ElevenLabs Text to Speech 節點使用 ElevenLabs API 將書面文字轉換為�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToSpeech/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `78ed1c6af2d0b1cc0293d725492a8b104b6d0c6bc18d9971b75047db946cdd33`
+**Source fingerprint (SHA-256):** `2f8aadca9f4fee9614ce4488aa206119ecf714518b7c0c340b1bfa766f59672e`
