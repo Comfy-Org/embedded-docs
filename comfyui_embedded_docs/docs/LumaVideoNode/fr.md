@@ -1,8 +1,8 @@
 # Luma Texte vers Vidéo
 
-Voici la traduction en français de la documentation du nœud LumaVideoNode :
-
 Génère des vidéos de manière synchrone à partir d'une invite textuelle et de paramètres de sortie. Ce nœud crée du contenu vidéo en utilisant des descriptions textuelles et divers paramètres de génération, produisant la vidéo finale une fois le processus de génération terminé.
+
+**Remarque :** Ce nœud est marqué comme obsolète dans le code source.
 
 ## Entrées
 
@@ -28,4 +28,4 @@ Génère des vidéos de manière synchrone à partir d'une invite textuelle et d
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaVideoNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `44482bc91c3df2cc9ac22d06197668af45849e8bfde8bd435905f11f2593342c`
+**Source fingerprint (SHA-256):** `86ebb2d035d35f142709546566d1041b66765ae3e0c2751e71c05df138a5ecf2`

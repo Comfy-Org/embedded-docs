@@ -2,6 +2,8 @@
 
 根據文字提示和可選的起始/結束影像同步生成影片。此節點使用 Luma API 來建立影片，讓您可以透過提示詞定義影片內容，並可選擇性地指定第一幀和/或最後一幀來控制影片結構。
 
+**注意：** 此節點在原始碼中標記為已棄用。
+
 ## 輸入
 
 | 參數 | 說明 | 資料類型 | 必要 | 範圍 |
@@ -27,4 +29,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageToVideoNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `210286ad38cecc5b3b0689f470ff473e996abfd251f88a45bcac936751ae2674`
+**Source fingerprint (SHA-256):** `c69d09286aba39062faa292e054d313833d977888a3cc7188a5ea8fdc9e66913`

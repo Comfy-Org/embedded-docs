@@ -2,6 +2,8 @@
 
 Genera videos de forma sincrónica basándose en un prompt de texto e imágenes de inicio/final opcionales. Este nodo utiliza la API de Luma para crear videos, permitiéndote definir el contenido del video mediante un prompt y, opcionalmente, especificar el primer y/o último fotograma para controlar la estructura del video.
 
+**Nota:** Este nodo está marcado como obsoleto en el código fuente.
+
 ## Entradas
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
@@ -27,4 +29,4 @@ Genera videos de forma sincrónica basándose en un prompt de texto e imágenes 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageToVideoNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `210286ad38cecc5b3b0689f470ff473e996abfd251f88a45bcac936751ae2674`
+**Source fingerprint (SHA-256):** `c69d09286aba39062faa292e054d313833d977888a3cc7188a5ea8fdc9e66913`

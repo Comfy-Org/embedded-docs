@@ -1,8 +1,8 @@
 # Luma Image to Video
 
-Voici la traduction en français de la documentation du nœud LumaImageToVideoNode :
-
 Génère des vidéos de manière synchrone à partir d'une invite textuelle et d'images de début/fin optionnelles. Ce nœud utilise l'API Luma pour créer des vidéos, vous permettant de définir le contenu de la vidéo via une invite et de spécifier éventuellement la première et/ou la dernière image pour contrôler la structure de la vidéo.
+
+**Remarque :** Ce nœud est marqué comme obsolète dans le code source.
 
 ## Entrées
 
@@ -29,4 +29,4 @@ Génère des vidéos de manière synchrone à partir d'une invite textuelle et d
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageToVideoNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `210286ad38cecc5b3b0689f470ff473e996abfd251f88a45bcac936751ae2674`
+**Source fingerprint (SHA-256):** `c69d09286aba39062faa292e054d313833d977888a3cc7188a5ea8fdc9e66913`
