@@ -6,7 +6,7 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `模式` | 如何定義相機：軌道角度、明確位置或位置加四元數。 | COMBO | 是 | `"orbit"`<br>`"look_at"`<br>`"quaternion"` |
+| `模式` | 如何定義相機：軌道角度、明確位置或位置加四元數。 | DYNAMIC_COMBO | 是 | `"orbit"`<br>`"look_at"`<br>`"quaternion"` |
 | `目標_x` | 注視點（軌道樞軸/目標點）。在軌道模式下，移動此參數可平移整個相機。在四元數模式下忽略。預設為原點。（預設值：0.0） | FLOAT | 否 | -1000.0 至 1000.0 |
 | `目標_y` | 目標點的 Y 分量。（預設值：0.0） | FLOAT | 否 | -1000.0 至 1000.0 |
 | `目標_z` | 目標點的 Z 分量。（預設值：0.0） | FLOAT | 否 | -1000.0 至 1000.0 |
@@ -56,4 +56,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `577c114130f72b753d5f15775fe05b3e1e734f5865cca32c576d042583f8e873`
+**Source fingerprint (SHA-256):** `5a9703e8e01ad2cd92a97da8d892c278765a9cef8bcd38e3336d1f73717d9895`

@@ -6,7 +6,7 @@ O nó Criar Informações da Câmera constrói uma estrutura de informações de
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `modo` | Como definir a câmera: ângulos de órbita, uma posição explícita ou uma posição + quaternion. | COMBO | Sim | `"orbit"`<br>`"look_at"`<br>`"quaternion"` |
+| `modo` | Como definir a câmera: ângulos de órbita, uma posição explícita ou uma posição + quaternion. | DYNAMIC_COMBO | Sim | `"orbit"`<br>`"look_at"`<br>`"quaternion"` |
 | `alvo_x` | Ponto de observação (pivô da órbita/alvo). No modo órbita, mova-o para panorâmica/transladar toda a câmera. Ignorado no modo quaternion. Padrão é a origem. (padrão: 0.0) | FLOAT | Não | -1000.0 a 1000.0 |
 | `alvo_y` | Componente Y do ponto alvo. (padrão: 0.0) | FLOAT | Não | -1000.0 a 1000.0 |
 | `alvo_z` | Componente Z do ponto alvo. (padrão: 0.0) | FLOAT | Não | -1000.0 a 1000.0 |
@@ -56,4 +56,4 @@ Quando `mode` está definido como `"quaternion"`, os seguintes parâmetros ficam
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `577c114130f72b753d5f15775fe05b3e1e734f5865cca32c576d042583f8e873`
+**Source fingerprint (SHA-256):** `5a9703e8e01ad2cd92a97da8d892c278765a9cef8bcd38e3336d1f73717d9895`

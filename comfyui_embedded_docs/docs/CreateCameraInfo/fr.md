@@ -6,7 +6,7 @@ Le nœud Créer les Informations de Caméra construit une structure d'informatio
 
 | Paramètre | Description | Type de Données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `mode` | Comment définir la caméra : angles d'orbite, une position explicite, ou une position + quaternion. | COMBO | Oui | `"orbit"`<br>`"look_at"`<br>`"quaternion"` |
+| `mode` | Comment définir la caméra : angles d'orbite, une position explicite, ou une position + quaternion. | DYNAMIC_COMBO | Oui | `"orbit"`<br>`"look_at"`<br>`"quaternion"` |
 | `target_x` | Point de visée (pivot d'orbite / cible). En mode orbite, le déplacer permet de panoramiquer/translater toute la caméra. Ignoré en mode quaternion. Par défaut à l'origine. (défaut : 0.0) | FLOAT | Non | -1000.0 à 1000.0 |
 | `target_y` | Composante Y du point cible. (défaut : 0.0) | FLOAT | Non | -1000.0 à 1000.0 |
 | `target_z` | Composante Z du point cible. (défaut : 0.0) | FLOAT | Non | -1000.0 à 1000.0 |
@@ -56,4 +56,4 @@ Lorsque `mode` est réglé sur `"quaternion"`, les paramètres suivants devienne
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `577c114130f72b753d5f15775fe05b3e1e734f5865cca32c576d042583f8e873`
+**Source fingerprint (SHA-256):** `5a9703e8e01ad2cd92a97da8d892c278765a9cef8bcd38e3336d1f73717d9895`
