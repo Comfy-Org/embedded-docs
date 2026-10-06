@@ -1,7 +1,5 @@
 # Krea 2 Référence de Style
 
-Voici la traduction en français de la documentation du nœud ComfyUI **Krea 2 Style Reference** :
-
 ## Aperçu
 
 Le nœud Krea 2 Style Reference vous permet d'ajouter une image de référence pour influencer le style d'une génération d'image Krea 2. Vous pouvez chaîner plusieurs références de style ensemble (jusqu'à 10 au total) et transmettre le résultat combiné à un nœud Krea 2 Image. Chaque image que vous fournissez est téléchargée vers le stockage ComfyAPI et transmise sous forme d'URL.

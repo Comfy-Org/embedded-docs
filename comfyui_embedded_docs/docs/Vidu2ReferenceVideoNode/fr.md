@@ -1,7 +1,5 @@
 # Génération de vidéo à partir de références Vidu2
 
-Voici la traduction en français de la documentation du nœud Vidu2 Reference-to-Video Generation :
-
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Vidu2ReferenceVideoNode/en.md)
 
 Le nœud Vidu2 de génération vidéo à partir de références crée une vidéo à partir d'une invite textuelle et de plusieurs images de référence. Vous pouvez définir jusqu'à sept sujets, chacun avec son propre ensemble d'images de référence, et les référencer dans l'invite en utilisant `@subject{subject_id}`. Le nœud génère une vidéo avec une durée, un rapport hauteur/largeur et un mouvement configurables.

@@ -1,7 +1,5 @@
 # WanDancerPadKeyframesList
 
-Voici la traduction en français de la documentation, en respectant vos règles :
-
 ## Aperçu
 
 Ce nœud prend une séquence d'images et une piste audio optionnelle, puis les divise en un nombre spécifié de segments rembourrés. Il est conçu pour préparer des séquences d'images clés pour la génération vidéo, où chaque segment est rembourré à une longueur uniforme et un masque correspondant est créé pour indiquer les images valides.

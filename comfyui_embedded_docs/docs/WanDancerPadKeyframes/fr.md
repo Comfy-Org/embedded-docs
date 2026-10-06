@@ -1,7 +1,5 @@
 # WanDancerPadKeyframes
 
-Voici la traduction de la documentation technique du nœud ComfyUI, en respectant les règles établies :
-
 ## Aperçu
 
 Ce nœud prépare une séquence d'images clés pour un segment spécifique d'un processus de génération vidéo plus long. Il prend un lot d'images d'entrée et une piste audio, calcule le nombre total d'images que la vidéo complète doit avoir en fonction de la durée audio, puis distribue les images d'entrée comme images clés sur le segment choisi, en complétant le reste avec des images vides. Il extrait également la portion correspondante de l'audio pour ce segment.

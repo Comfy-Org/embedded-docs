@@ -1,7 +1,5 @@
 # Krea 2 Image
 
-Voici la traduction en français de la documentation du nœud Krea2ImageNode :
-
 ## Aperçu
 
 Le nœud Krea 2 Image génère des images à l'aide du modèle d'IA Krea 2. Il prend en charge deux variantes de modèle : Medium pour les illustrations expressives et Large pour le photoréalisme expressif. Vous pouvez éventuellement inclure un moodboard et jusqu'à 10 références de style d'image pour influencer l'image générée.

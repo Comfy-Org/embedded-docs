@@ -1,31 +1,5 @@
 # Kling Texto a Video (Control de Cámara)
 
-Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
-
-## Reglas de Traducción
-
-1. **Contenido que NO debe traducirse:**
-   - Nombres de parámetros entre comillas invertidas: `image`, `seed`, `model`
-   - Tipos de datos en MAYÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.
-   - Valores en columna Range: números, "auto", nombres de opciones
-   - Código, rutas de archivos
-
-2. **Contenido que SÍ debe traducirse:**
-   - Títulos de secciones: ## Descripción general, ## Entradas, ## Salidas
-   - Todo el texto descriptivo y explicativo
-   - Descripciones de parámetros
-
-3. **Calidad de traducción:**
-   - Usar español estándar y neutral
-   - Mantener tono profesional pero accesible
-   - Asegurar precisión técnica
-   - Usar terminología técnica estándar en español
-
-4. **Formato:**
-   - Mantener todo el formato Markdown
-   - Preservar estructura de tablas
-   - No agregar ninguna nota o enlace al inicio del documento (será agregado automáticamente)
-
 Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
 
 El nodo de Control de Cámara para Video de Texto a Video de Kling transforma texto en videos cinematográficos con movimientos de cámara profesionales que simulan la cinematografía del mundo real. Este nodo permite controlar acciones de cámara virtual, incluyendo zoom, rotación, paneo, inclinación y vista en primera persona, manteniendo el enfoque en tu texto original. La duración, el modo y el nombre del modelo están codificados porque el control de cámara solo es compatible en modo profesional con el modelo kling-v1-5 a una duración de 5 segundos.

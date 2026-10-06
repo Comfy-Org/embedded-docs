@@ -9,7 +9,10 @@ translated document with its English source:
   "Edit on GitHub" link 404s;
 * section headings are written one level off (``# Inputs``, or a literal
   ``# ## Inputs``) where ``en.md`` writes ``## Inputs``;
-* a section the English source has (``## Overview``) is missing.
+* a section the English source has (``## Overview``) is missing;
+* the translation leaked its own preamble / prompt block under the H1 (the
+  pipeline's preamble detector ran while the H1 was still attached, so it read
+  the title and never matched; see PR #167 and ``fix_translation_preamble.py``).
 
 Usage:
     python docs-generation/scripts/check_doc_structure.py                     # whole tree
@@ -28,6 +31,13 @@ from pathlib import Path
 from pathlib import Path as _Path
 
 REPO_ROOT = _Path(__file__).resolve().parents[2]
+PIPELINE_SCRIPTS = REPO_ROOT / "docs-generation" / "scripts"
+if str(PIPELINE_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(PIPELINE_SCRIPTS))
+try:
+    from fix_translation_preamble import strip_leak as _strip_leaked_preamble
+except ImportError:  # pragma: no cover - pipeline scripts missing
+    _strip_leaked_preamble = None
 DEFAULT_DOCS_ROOT = REPO_ROOT / "comfyui_embedded_docs" / "docs"
 
 # Languages the documentation site publishes; other locales are translated in
@@ -186,6 +196,19 @@ def main() -> int:
                 continue
             original = path.read_text(encoding="utf-8")
             updated, notes = repair(original, doc_dir.name, lang, en_h2)
+
+            # Leaked translation preamble / prompt block under the H1.
+            if _strip_leaked_preamble is not None:
+                _, leaked_lines = _strip_leaked_preamble(updated, lang)
+                if leaked_lines:
+                    violations += 1
+                    print(f"leaked preamble: {doc_dir.name}/{lang}.md "
+                          f"({leaked_lines} line(s) under the H1; run "
+                          f"docs-generation/scripts/fix_translation_preamble.py --apply)")
+                    if args.fix:
+                        cleaned, _ = _strip_leaked_preamble(updated, lang)
+                        updated = cleaned
+                        repaired += 1
 
             enforced = lang == "en" or lang in ENFORCED_LANGS
             enforced = lang == "en" or lang in ENFORCED_LANGS

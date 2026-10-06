@@ -1,7 +1,5 @@
 # MediaPipe Face Landmarker
 
-Voici la traduction en français de la documentation du nœud ComfyUI, en respectant vos règles :
-
 ## Aperçu
 
 Détecte les visages dans une image et identifie 468 points de repère faciaux (points clés) sur chaque visage à l'aide des modèles BlazeFace et FaceMesh de MediaPipe. Il calcule également les coefficients de mélange de formes ARKit-52 pour l'analyse des expressions faciales. Le nœud peut traiter plusieurs images par lot et produit à la fois les données des points de repère et les boîtes englobantes pour chaque visage détecté.

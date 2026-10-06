@@ -1,7 +1,5 @@
 # Rodin 3D Gen-2.5 - Texte vers 3D
 
-Voici la traduction en français de la documentation technique du nœud ComfyUI Rodin Gen-2.5 Text :
-
 ## Aperçu
 
 Générez un modèle 3D à partir d'une invite textuelle en utilisant l'API Rodin Gen-2.5. Vous pouvez choisir entre différents modes de qualité (Rapide, Normal ou Très élevé) pour équilibrer la vitesse de génération et la qualité du résultat.

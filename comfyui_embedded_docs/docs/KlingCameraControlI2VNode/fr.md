@@ -1,7 +1,5 @@
 # Kling Image to Video (Contrôle de la caméra)
 
-Voici la traduction en français de la documentation du nœud ComfyUI **KlingCameraControlI2VNode** :
-
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControlI2VNode/en.md)
 
 Le nœud de contrôle de caméra Kling Image to Video transforme des images fixes en vidéos cinématographiques avec des mouvements de caméra professionnels. Ce nœud spécialisé image-vers-vidéo vous permet de contrôler des actions de caméra virtuelle, notamment le zoom, la rotation, le panoramique, l'inclinaison et la vue à la première personne, tout en conservant l'attention sur votre image d'origine. Le contrôle de la caméra est actuellement uniquement pris en charge en mode pro avec le modèle `kling-v1-5` pour une durée de 5 secondes.

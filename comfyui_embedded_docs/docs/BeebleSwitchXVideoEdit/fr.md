@@ -1,7 +1,5 @@
 # Beeble SwitchX Édition Vidéo
 
-Voici la traduction de la documentation technique du nœud ComfyUI **Beeble SwitchX Video Edit** :
-
 ## Beeble SwitchX Video Edit
 
 Modifiez une vidéo avec Beeble SwitchX. Ce nœud peut changer n'importe quel élément de la scène (arrière-plan, éclairage, costume) tout en préservant les pixels et le mouvement du sujet d'origine. Fournissez une image de référence et/ou une invite textuelle pour décrire le nouvel aspect souhaité.

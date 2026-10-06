@@ -1,7 +1,5 @@
 # MediaPipe Face Mask
 
-Voici la traduction en français de la documentation du nœud MediaPipeFaceMask :
-
 ## Aperçu
 
 Ce nœud crée un masque binaire (une image en noir et blanc) basé sur les points de repère faciaux détectés par MediaPipe. Il dessine des formes polygonales remplies pour chaque région faciale détectée, produisant un masque par image dans un lot. Lorsque plusieurs visages sont détectés dans la même image, leurs masques sont combinés en un seul masque.

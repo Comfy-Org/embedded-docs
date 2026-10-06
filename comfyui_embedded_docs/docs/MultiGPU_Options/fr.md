@@ -1,7 +1,5 @@
 # MultiGPU_Options
 
-Voici la traduction de la documentation du nœud ComfyUI :
-
 ## Aperçu
 
 Ce nœud vous permet de spécifier la performance relative de chaque GPU lorsque vous utilisez plusieurs cartes graphiques de vitesses différentes. Il crée un groupe d'options GPU pouvant être utilisé pour répartir le travail entre les périphériques, bien que la répartition réelle de la charge de travail basée sur la vitesse ne soit pas encore implémentée dans la version actuelle.

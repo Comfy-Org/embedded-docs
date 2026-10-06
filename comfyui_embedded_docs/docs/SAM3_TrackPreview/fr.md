@@ -1,7 +1,5 @@
 # Aperçu du suivi SAM3
 
-Voici la traduction en français de la documentation technique du nœud ComfyUI :
-
 ## Aperçu
 
 Ce nœud crée un aperçu vidéo des objets suivis, en dessinant chaque objet suivi avec une superposition de couleur distincte et une étiquette numérique. Il ne produit aucun tenseur d'image ou de vidéo — à la place, il enregistre directement la vidéo d'aperçu résultante dans un fichier temporaire.

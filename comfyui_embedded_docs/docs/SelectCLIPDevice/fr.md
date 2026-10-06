@@ -1,7 +1,5 @@
 # Sélectionner le périphérique CLIP
 
-Voici la traduction en français de la documentation du nœud SelectCLIPDevice :
-
 ## Aperçu
 
 Le nœud Select CLIP Device vous permet de choisir sur quel périphérique (CPU ou GPU spécifique) l'encodeur de texte CLIP s'exécute. Par défaut, le périphérique est attribué par le chargeur de modèle, mais vous pouvez le remplacer pour utiliser le CPU ou un GPU particulier. Si le périphérique demandé n'existe pas sur votre machine, le nœud transmet simplement le CLIP sans modification et enregistre un message au lieu de générer une erreur.
