@@ -1,8 +1,8 @@
 # Quiver Image to SVG
 
-Vectorisez une image matricielle en un graphique vectoriel évolutif (SVG) avec Quiver AI. L’image est envoyée à l’API de Quiver AI, qui renvoie le résultat vectorisé.
+Vectorisez une image raster en une image vectorielle évolutive (SVG) avec Quiver AI. L'image est envoyée à l'API de Quiver AI, qui renvoie le résultat vectorisé.
 
-La sélection d’un `model` affiche les paramètres spécifiques au modèle listés ci-dessous.
+La sélection d'un `model` révèle les paramètres spécifiques au modèle listés ci-dessous.
 
 ## Entrées
 
@@ -11,23 +11,23 @@ La sélection d’un `model` affiche les paramètres spécifiques au modèle lis
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `model` | Modèle à utiliser pour la vectorisation SVG. | DYNAMIC_COMBO | Oui | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
-| `image` | Image d’entrée à vectoriser. | IMAGE | Oui | N/A |
+| `image` | Image d'entrée à vectoriser. | IMAGE | Oui | N/A |
 | `auto_crop` | Recadre automatiquement sur le sujet dominant. Paramètre avancé (par défaut : False). | BOOLEAN | Oui | `True`<br>`False` |
-| `target_size` | Redimensionnement carré appliqué à l’image d’entrée avant la vectorisation, en pixels, de 128 à 4096. 0 conserve la taille source, ce qui donne une vectorisation plus propre que de forcer un redimensionnement. Cela ne définit pas le canevas de sortie ; utilisez `width` et `height` pour cela. Paramètre avancé (par défaut : 0). | INT | Oui | 0 à 4096 |
-| `width` | Largeur du canevas SVG de sortie (viewBox), en unités utilisateur. Définissez à la fois `width` et `height` pour contrôler la taille et le rapport d’aspect de sortie ; laissez l’un ou l’autre à 0 pour laisser le modèle choisir, ce qui donne généralement un canevas carré. Paramètre avancé (par défaut : 0). | INT | Oui | 0 à 8192 |
-| `height` | Hauteur du canevas SVG de sortie (viewBox), en unités utilisateur. Définissez à la fois `width` et `height` pour contrôler la taille et le rapport d’aspect de sortie ; laissez l’un ou l’autre à 0 pour laisser le modèle choisir, ce qui donne généralement un canevas carré. Paramètre avancé (par défaut : 0). | INT | Oui | 0 à 8192 |
-| `seed` | Graine permettant de déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la valeur de la graine. Ce paramètre dispose de la fonctionnalité « control after generate » (par défaut : 42). | INT | Oui | 0 à 2147483647 |
+| `target_size` | Redimensionnement carré appliqué à l'image d'entrée avant la vectorisation, en pixels. 0 conserve la taille source, ce qui vectorise plus proprement que de forcer un redimensionnement ; toute autre valeur inférieure à 128 est ramenée à 128. Cela ne définit pas le canevas de sortie ; utilisez `width` et `height` pour cela. Paramètre avancé (par défaut : 0). | INT | Oui | 0 à 4096 |
+| `width` | Largeur du canevas SVG de sortie (viewBox), en unités utilisateur. Définissez à la fois `width` et `height` pour contrôler la taille et le rapport d'aspect de la sortie ; laissez l'un ou l'autre à 0 pour laisser le modèle choisir, ce qui donne généralement un canevas carré. Paramètre avancé (par défaut : 0). | INT | Oui | 0 à 8192 |
+| `height` | Hauteur du canevas SVG de sortie (viewBox), en unités utilisateur. Définissez à la fois `width` et `height` pour contrôler la taille et le rapport d'aspect de la sortie ; laissez l'un ou l'autre à 0 pour laisser le modèle choisir, ce qui donne généralement un canevas carré. Paramètre avancé (par défaut : 0). | INT | Oui | 0 à 8192 |
+| `seed` | Graine permettant de déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la valeur de la graine. Ce paramètre dispose de la fonctionnalité « contrôle après génération » (par défaut : 42). | INT | Oui | 0 à 2147483647 |
 
 ### Entrées spécifiques au modèle
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `reasoning_effort` | Quantité de raisonnement que le modèle effectue avant de dessiner. Des niveaux plus élevés améliorent les détails et consomment plus de tokens. Utilisé uniquement par les modèles `"arrow-2"` et `"arrow-2-telos"` (par défaut : `"high"`). | COMBO | Oui | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
-| `temperature` | Contrôle de l’aléatoire. Des valeurs plus élevées augmentent l’aléatoire. Non utilisé par le modèle `"arrow-2-telos"`. Paramètre avancé (par défaut : 1.0). | FLOAT | Oui | 0.0 à 2.0 (pas 0.1) |
-| `top_p` | Paramètre d’échantillonnage nucleus. Non utilisé par le modèle `"arrow-2-telos"`. Paramètre avancé (par défaut : 1.0). | FLOAT | Oui | 0.05 à 1.0 (pas 0.05) |
-| `presence_penalty` | Pénalité de présence de token. Non utilisée par le modèle `"arrow-2-telos"`. Paramètre avancé (par défaut : 0.0). | FLOAT | Oui | -2.0 à 2.0 (pas 0.1) |
+| `temperature` | Contrôle de l'aléatoire. Des valeurs plus élevées augmentent l'aléatoire. Non utilisé par le modèle `"arrow-2-telos"`. Paramètre avancé (par défaut : 1.0). | FLOAT | Oui | 0.0 à 2.0 (pas de 0.1) |
+| `top_p` | Paramètre d'échantillonnage nucleus. Non utilisé par le modèle `"arrow-2-telos"`. Paramètre avancé (par défaut : 1.0). | FLOAT | Oui | 0.05 à 1.0 (pas de 0.05) |
+| `presence_penalty` | Pénalité de présence des tokens. Non utilisé par le modèle `"arrow-2-telos"`. Paramètre avancé (par défaut : 0.0). | FLOAT | Oui | -2.0 à 2.0 (pas de 0.1) |
 
-**Remarque :** `target_size` est appliqué avant la vectorisation et ne change pas le canevas de sortie. Laissez `width` ou `height` à 0 pour laisser le modèle choisir la taille du canevas.
+**Remarque :** `target_size` est appliqué avant la vectorisation et ne modifie pas le canevas de sortie. Laissez `width` ou `height` à 0 pour laisser le modèle choisir la taille du canevas.
 
 ## Sorties
 

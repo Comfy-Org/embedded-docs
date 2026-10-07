@@ -1,17 +1,17 @@
 # Kling Virtual Try-On
 
-Connectez une photo d’une personne et une photo du vêtement, et le nœud renvoie une nouvelle image de cette personne portant le vêtement.
+Habillez une personne avec un vêtement grâce à l'essayage virtuel de Kling. Connectez une photo d'une personne et une photo du vêtement, et le nœud renvoie une nouvelle image de cette personne portant le vêtement.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `person_image` | Photo d’une personne, idéalement de face ou en vue de trois-quarts. Les images dont un côté dépasse 2048 pixels sont d’abord réduites. | IMAGE | Oui | N/A |
-| `garment_image` | Le vêtement à enfiler : photo produit, à plat, sur mannequin ou portée par un modèle. Une photo portée par un modèle peut conserver le reste de cette tenue. Vêtements uniquement ; les chaussures, sacs et accessoires ne sont pas pris en charge. | IMAGE | Oui | N/A |
-| `keep_pose` | Désactivez cette option pour permettre à la pose de changer afin de mieux présenter la tenue. Paramètre avancé (par défaut : True). | BOOLEAN | Oui | `True`<br>`False` |
-| `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. Ce paramètre dispose de la fonctionnalité « contrôle après génération » (par défaut : 42). | INT | Oui | 0 à 2147483647 |
+| `person_image` | Photo d'une seule personne, idéalement de face ou de trois-quarts. Doit mesurer au moins 300x300 pixels ; les images dont un côté dépasse 2048 pixels sont d'abord réduites. | IMAGE | Oui | N/A |
+| `garment_image` | Le vêtement à enfiler : photo produit, à plat, sur mannequin ou porté par un mannequin. Une photo portée par un mannequin peut reprendre le reste de la tenue. Doit mesurer au moins 300x300 pixels. Vêtements uniquement ; les chaussures, sacs et accessoires ne sont pas pris en charge. | IMAGE | Oui | N/A |
+| `keep_pose` | Désactivez pour permettre à la pose de changer afin d'obtenir une meilleure présentation de la tenue. Paramètre avancé (par défaut : True). | BOOLEAN | Oui | `True`<br>`False` |
+| `seed` | La graine détermine si le nœud doit être réexécuté ; les résultats ne sont pas déterministes, quelle que soit la graine. Ce paramètre dispose de la fonctionnalité « contrôle après génération » (par défaut : 42). | INT | Oui | 0 à 2147483647 |
 
-**Note :** Le résultat a la même taille que `person_image`, plafonnée à 2048 pixels sur le côté le plus long. Les deux entrées sont téléversées vers l’API de Kling, ce qui peut prendre un moment.
+**Remarque :** Le résultat a la même taille que le `person_image`, plafonnée à 2048 pixels sur le côté le plus long. Les deux entrées sont téléversées vers l'API de Kling, ce qui peut prendre un instant.
 
 ## Sorties
 

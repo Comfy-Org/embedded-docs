@@ -1,8 +1,8 @@
 # Quiver Text to SVG
 
-Genera un gráfico vectorial escalable (SVG) a partir de un prompt de texto con Quiver AI. Las imágenes de referencia y las instrucciones de estilo opcionales pueden guiar la generación.
+Genera un gráfico vectorial escalable (SVG) a partir de un mensaje de texto con Quiver AI. Las imágenes de referencia y las instrucciones de estilo opcionales pueden guiar la generación.
 
-Al seleccionar un `model`, se muestran los parámetros específicos del modelo que se enumeran a continuación, y el número máximo de imágenes de referencia también depende del modelo seleccionado.
+Al seleccionar un `model` se muestran los parámetros específicos del modelo que se enumeran a continuación, y el número máximo de imágenes de referencia también depende del modelo seleccionado.
 
 ## Entradas
 
@@ -11,21 +11,21 @@ Al seleccionar un `model`, se muestran los parámetros específicos del modelo q
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
 | `model` | Modelo que se utilizará para la generación de SVG. | DYNAMIC_COMBO | Sí | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
-| `prompt` | Descripción textual de la salida SVG deseada. Debe contener al menos un carácter que no sea espacio en blanco (predeterminado: vacío). | STRING | Sí | Cualquier texto |
+| `prompt` | Descripción textual de la salida SVG deseada. Debe contener al menos un carácter (predeterminado: vacío). | STRING | Sí | Cualquier texto |
 | `instructions` | Instrucciones adicionales de estilo o formato. Parámetro avanzado opcional (predeterminado: vacío). | STRING | No | Cualquier texto |
 | `reference_images` | Ranura ampliable: conecta una o más imágenes de referencia opcionales (`ref_1`, `ref_2`, ...) que guían la generación. El número máximo de imágenes depende del modelo seleccionado. | IMAGE | No | Hasta 14<br>Hasta 4 |
-| `width` | Ancho del lienzo SVG de salida (viewBox), en unidades de usuario. Establece tanto `width` como `height` para controlar el tamaño y la relación de aspecto de la salida; deja cualquiera de los dos en 0 para que el modelo elija, lo que normalmente produce un lienzo cuadrado. Parámetro avanzado (predeterminado: 0). | INT | Sí | 0 a 8192 |
-| `height` | Alto del lienzo SVG de salida (viewBox), en unidades de usuario. Establece tanto `width` como `height` para controlar el tamaño y la relación de aspecto de la salida; deja cualquiera de los dos en 0 para que el modelo elija, lo que normalmente produce un lienzo cuadrado. Parámetro avanzado (predeterminado: 0). | INT | Sí | 0 a 8192 |
+| `width` | Ancho del lienzo SVG de salida (viewBox), en unidades de usuario. Establece tanto `width` como `height` para controlar el tamaño de salida y la relación de aspecto; deja cualquiera de los dos en 0 para que el modelo elija, lo que normalmente da un lienzo cuadrado. Parámetro avanzado (predeterminado: 0). | INT | Sí | 0 a 8192 |
+| `height` | Alto del lienzo SVG de salida (viewBox), en unidades de usuario. Establece tanto `width` como `height` para controlar el tamaño de salida y la relación de aspecto; deja cualquiera de los dos en 0 para que el modelo elija, lo que normalmente da un lienzo cuadrado. Parámetro avanzado (predeterminado: 0). | INT | Sí | 0 a 8192 |
 | `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente del valor de la semilla. Este parámetro tiene la funcionalidad de "control después de generar" (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
 
 ### Entradas específicas del modelo
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `reasoning_effort` | Cuánto razonamiento emplea el modelo antes de dibujar. Los niveles más altos mejoran el detalle y consumen más tokens. Solo lo utilizan los modelos `"arrow-2"` y `"arrow-2-telos"` (predeterminado: `"high"`). | COMBO | Sí | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
-| `temperature` | Control de aleatoriedad. Los valores más altos aumentan la aleatoriedad. No lo utiliza el modelo `"arrow-2-telos"`. Parámetro avanzado (predeterminado: 1.0). | FLOAT | Sí | 0.0 a 2.0 (paso 0.1) |
-| `top_p` | Parámetro de muestreo de núcleo. No lo utiliza el modelo `"arrow-2-telos"`. Parámetro avanzado (predeterminado: 1.0). | FLOAT | Sí | 0.05 a 1.0 (paso 0.05) |
-| `presence_penalty` | Penalización por presencia de tokens. No lo utiliza el modelo `"arrow-2-telos"`. Parámetro avanzado (predeterminado: 0.0). | FLOAT | Sí | -2.0 a 2.0 (paso 0.1) |
+| `reasoning_effort` | Cuánto razonamiento emplea el modelo antes de dibujar. Los niveles más altos mejoran el detalle y consumen más tokens. Solo lo usan los modelos `"arrow-2"` y `"arrow-2-telos"` (predeterminado: `"high"`). | COMBO | Sí | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
+| `temperature` | Control de aleatoriedad. Los valores más altos aumentan la aleatoriedad. No lo usa el modelo `"arrow-2-telos"`. Parámetro avanzado (predeterminado: 1.0). | FLOAT | Sí | 0.0 a 2.0 (paso 0.1) |
+| `top_p` | Parámetro de muestreo de núcleo. No lo usa el modelo `"arrow-2-telos"`. Parámetro avanzado (predeterminado: 1.0). | FLOAT | Sí | 0.05 a 1.0 (paso 0.05) |
+| `presence_penalty` | Penalización por presencia de tokens. No lo usa el modelo `"arrow-2-telos"`. Parámetro avanzado (predeterminado: 0.0). | FLOAT | Sí | -2.0 a 2.0 (paso 0.1) |
 
 **Nota:** El número máximo de `reference_images` es 14 para `"arrow-2"`, `"arrow-2-telos"` y `"arrow-1.1-max"`, y 4 para `"arrow-1.1"` y `"arrow-preview"`. Deja `width` o `height` en 0 para que el modelo elija el tamaño del lienzo.
 

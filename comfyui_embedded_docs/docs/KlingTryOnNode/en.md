@@ -6,8 +6,8 @@ Dress a person in a clothing item with Kling's virtual try-on. Connect a photo o
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `person_image` | Photo of one person, ideally front-facing or three-quarter view. Images with a side over 2048 pixels are downscaled first. | IMAGE | Yes | N/A |
-| `garment_image` | The clothing to put on: product photo, flat lay, mannequin, or on-model photo. An on-model photo can carry over the rest of that outfit. Clothing only; shoes, bags, and accessories are not supported. | IMAGE | Yes | N/A |
+| `person_image` | Photo of one person, ideally front-facing or three-quarter view. Must be at least 300x300 pixels; images with a side over 2048 pixels are downscaled first. | IMAGE | Yes | N/A |
+| `garment_image` | The clothing to put on: product photo, flat lay, mannequin, or on-model photo. An on-model photo can carry over the rest of that outfit. Must be at least 300x300 pixels. Clothing only; shoes, bags, and accessories are not supported. | IMAGE | Yes | N/A |
 | `keep_pose` | Turn off to allow the pose to change for a better outfit presentation. Advanced parameter (default: True). | BOOLEAN | Yes | `True`<br>`False` |
 | `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed. This parameter has "control after generate" functionality (default: 42). | INT | Yes | 0 to 2147483647 |
 

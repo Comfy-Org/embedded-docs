@@ -10,13 +10,13 @@ Selecionar um `model` revela os parâmetros específicos do modelo listados abai
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a ser usado para a geração de SVG. | DYNAMIC_COMBO | Sim | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
-| `prompt` | Descrição textual da saída SVG desejada. Deve conter pelo menos um caractere que não seja espaço em branco (padrão: vazio). | STRING | Sim | Qualquer texto |
+| `model` | Modelo a ser usado para geração de SVG. | DYNAMIC_COMBO | Sim | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `prompt` | Descrição textual da saída SVG desejada. Deve conter pelo menos um caractere (padrão: vazio). | STRING | Sim | Qualquer texto |
 | `instructions` | Orientação adicional de estilo ou formatação. Parâmetro avançado opcional (padrão: vazio). | STRING | Não | Qualquer texto |
 | `reference_images` | Slot expansível: conecte uma ou mais imagens de referência opcionais (`ref_1`, `ref_2`, ...) que orientam a geração. O número máximo de imagens depende do modelo selecionado. | IMAGE | Não | Até 14<br>Até 4 |
-| `width` | Largura do canvas SVG de saída (viewBox), em unidades de usuário. Defina `width` e `height` para controlar o tamanho e a proporção da saída; deixe qualquer um deles em 0 para permitir que o modelo escolha, o que geralmente resulta em um canvas quadrado. Parâmetro avançado (padrão: 0). | INT | Sim | 0 a 8192 |
-| `height` | Altura do canvas SVG de saída (viewBox), em unidades de usuário. Defina `width` e `height` para controlar o tamanho e a proporção da saída; deixe qualquer um deles em 0 para permitir que o modelo escolha, o que geralmente resulta em um canvas quadrado. Parâmetro avançado (padrão: 0). | INT | Sim | 0 a 8192 |
-| `seed` | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente do valor da semente. Este parâmetro tem a funcionalidade "control after generate" (padrão: 42). | INT | Sim | 0 a 2147483647 |
+| `width` | Largura da tela SVG de saída (viewBox), em unidades de usuário. Defina tanto `width` quanto `height` para controlar o tamanho e a proporção da saída; deixe qualquer um em 0 para permitir que o modelo escolha, o que geralmente resulta em uma tela quadrada. Parâmetro avançado (padrão: 0). | INT | Sim | 0 a 8192 |
+| `height` | Altura da tela SVG de saída (viewBox), em unidades de usuário. Defina tanto `width` quanto `height` para controlar o tamanho e a proporção da saída; deixe qualquer um em 0 para permitir que o modelo escolha, o que geralmente resulta em uma tela quadrada. Parâmetro avançado (padrão: 0). | INT | Sim | 0 a 8192 |
+| `seed` | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente do valor da semente. Este parâmetro tem a funcionalidade "controle após gerar" (padrão: 42). | INT | Sim | 0 a 2147483647 |
 
 ### Entradas específicas do modelo
 
@@ -24,10 +24,10 @@ Selecionar um `model` revela os parâmetros específicos do modelo listados abai
 |-----------|-------------|-----------|----------|-------|
 | `reasoning_effort` | Quanto raciocínio o modelo gasta antes de desenhar. Níveis mais altos melhoram o detalhe e consomem mais tokens. Usado apenas pelos modelos `"arrow-2"` e `"arrow-2-telos"` (padrão: `"high"`). | COMBO | Sim | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
 | `temperature` | Controle de aleatoriedade. Valores mais altos aumentam a aleatoriedade. Não usado pelo modelo `"arrow-2-telos"`. Parâmetro avançado (padrão: 1.0). | FLOAT | Sim | 0.0 a 2.0 (passo 0.1) |
-| `top_p` | Parâmetro de amostragem de núcleo. Não usado pelo modelo `"arrow-2-telos"`. Parâmetro avançado (padrão: 1.0). | FLOAT | Sim | 0.05 a 1.0 (passo 0.05) |
-| `presence_penalty` | Penalidade de presença de tokens. Não usado pelo modelo `"arrow-2-telos"`. Parâmetro avançado (padrão: 0.0). | FLOAT | Sim | -2.0 a 2.0 (passo 0.1) |
+| `top_p` | Parâmetro de amostragem nucleus. Não usado pelo modelo `"arrow-2-telos"`. Parâmetro avançado (padrão: 1.0). | FLOAT | Sim | 0.05 a 1.0 (passo 0.05) |
+| `presence_penalty` | Penalidade de presença de token. Não usado pelo modelo `"arrow-2-telos"`. Parâmetro avançado (padrão: 0.0). | FLOAT | Sim | -2.0 a 2.0 (passo 0.1) |
 
-**Nota:** O número máximo de `reference_images` é 14 para `"arrow-2"`, `"arrow-2-telos"` e `"arrow-1.1-max"`, e 4 para `"arrow-1.1"` e `"arrow-preview"`. Deixe `width` ou `height` em 0 para permitir que o modelo escolha o tamanho do canvas.
+**Nota:** O número máximo de `reference_images` é 14 para `"arrow-2"`, `"arrow-2-telos"` e `"arrow-1.1-max"`, e 4 para `"arrow-1.1"` e `"arrow-preview"`. Deixe `width` ou `height` em 0 para permitir que o modelo escolha o tamanho da tela.
 
 ## Saídas
 

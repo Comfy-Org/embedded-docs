@@ -11,7 +11,7 @@ Selecting a `model` reveals the model-specific parameters listed below, and the 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Model to use for SVG generation. | DYNAMIC_COMBO | Yes | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
-| `prompt` | Text description of the desired SVG output. Must contain at least one non-whitespace character (default: empty). | STRING | Yes | Any text |
+| `prompt` | Text description of the desired SVG output. Must contain at least one character (default: empty). | STRING | Yes | Any text |
 | `instructions` | Additional style or formatting guidance. Optional advanced parameter (default: empty). | STRING | No | Any text |
 | `reference_images` | Growable slot: connect one or more optional reference images (`ref_1`, `ref_2`, ...) that guide the generation. The maximum number of images depends on the selected model. | IMAGE | No | Up to 14<br>Up to 4 |
 | `width` | Width of the output SVG canvas (viewBox), in user units. Set both `width` and `height` to control the output size and aspect ratio; leave either at 0 to let the model choose, which usually gives a square canvas. Advanced parameter (default: 0). | INT | Yes | 0 to 8192 |
