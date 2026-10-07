@@ -1,6 +1,8 @@
-# Quiver تحويل نص إلى SVG
+# Quiver تحويل نص إلى SVG (قديم)
 
 تقوم عقدة Quiver Text to SVG بإنشاء صورة SVG (رسوميات متجهية قابلة للتحجيم) من وصف نصي باستخدام نماذج Quiver AI. يمكنك اختياريًا تقديم صور مرجعية وتعليمات نمط لتوجيه عملية التوليد.
+
+**ملاحظة:** تم وضع علامة على هذه العقدة على أنها مهملة في الكود المصدري.
 
 ## المدخلات
 
@@ -24,4 +26,5 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverTextToSVGNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `8b6f21c26748f48eddf2eddaed785a2331a29364744edf30e86e420b0c117e49`
+---
+**Source fingerprint (SHA-256):** `e03e130a4aedbf003e898300b3a83e343fdfa5b3da35df20d55876d437bf5426`
