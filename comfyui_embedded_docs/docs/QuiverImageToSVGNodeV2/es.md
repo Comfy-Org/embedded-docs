@@ -1,0 +1,41 @@
+# Quiver Image to SVG
+
+Vectoriza una imagen ráster en un gráfico vectorial escalable (SVG) con Quiver AI. La imagen se envía a la API de Quiver AI, que devuelve el resultado vectorizado.
+
+Al seleccionar un `model`, se revelan los parámetros específicos del modelo que se enumeran a continuación.
+
+## Entradas
+
+### Entradas comunes
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `model` | Modelo que se usará para la vectorización a SVG. | DYNAMIC_COMBO | Sí | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `image` | Imagen de entrada que se va a vectorizar. | IMAGE | Sí | N/A |
+| `auto_crop` | Recorta automáticamente al sujeto dominante. Parámetro avanzado (predeterminado: False). | BOOLEAN | Sí | `True`<br>`False` |
+| `target_size` | Redimensionamiento cuadrado aplicado a la imagen de entrada antes de vectorizar, en píxeles, de 128 a 4096. 0 conserva el tamaño de origen, lo que produce una vectorización más limpia que forzar un redimensionamiento. Esto no establece el lienzo de salida; use `width` y `height` para eso. Parámetro avanzado (predeterminado: 0). | INT | Sí | 0 a 4096 |
+| `width` | Ancho del lienzo SVG de salida (viewBox), en unidades de usuario. Establezca tanto `width` como `height` para controlar el tamaño y la relación de aspecto de la salida; deje cualquiera de los dos en 0 para que el modelo elija, lo que normalmente da un lienzo cuadrado. Parámetro avanzado (predeterminado: 0). | INT | Sí | 0 a 8192 |
+| `height` | Alto del lienzo SVG de salida (viewBox), en unidades de usuario. Establezca tanto `width` como `height` para controlar el tamaño y la relación de aspecto de la salida; deje cualquiera de los dos en 0 para que el modelo elija, lo que normalmente da un lienzo cuadrado. Parámetro avanzado (predeterminado: 0). | INT | Sí | 0 a 8192 |
+| `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente del valor de la semilla. Este parámetro tiene la funcionalidad «control después de generar» (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
+
+### Entradas específicas del modelo
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `reasoning_effort` | Cuánto razonamiento dedica el modelo antes de dibujar. Los niveles más altos mejoran el detalle y consumen más tokens. Solo lo usan los modelos `"arrow-2"` y `"arrow-2-telos"` (predeterminado: `"high"`). | COMBO | Sí | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
+| `temperature` | Control de aleatoriedad. Valores más altos aumentan la aleatoriedad. No lo usa el modelo `"arrow-2-telos"`. Parámetro avanzado (predeterminado: 1.0). | FLOAT | Sí | 0.0 a 2.0 (paso 0.1) |
+| `top_p` | Parámetro de muestreo de núcleo. No lo usa el modelo `"arrow-2-telos"`. Parámetro avanzado (predeterminado: 1.0). | FLOAT | Sí | 0.05 a 1.0 (paso 0.05) |
+| `presence_penalty` | Penalización por presencia de tokens. No lo usa el modelo `"arrow-2-telos"`. Parámetro avanzado (predeterminado: 0.0). | FLOAT | Sí | -2.0 a 2.0 (paso 0.1) |
+
+**Nota:** `target_size` se aplica antes de vectorizar y no cambia el lienzo de salida. Deje `width` o `height` en 0 para que el modelo elija el tamaño del lienzo.
+
+## Salidas
+
+| Nombre de salida | Descripción | Tipo de datos |
+|-------------|-------------|-----------|
+| `SVG` | La salida SVG vectorizada. | SVG |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverImageToSVGNodeV2/es.md)
+
+---
+**Source fingerprint (SHA-256):** `186769b09bef2d2dbbfc26102f375ff80f8b324a24cd593da20afcea9cc2095b`
