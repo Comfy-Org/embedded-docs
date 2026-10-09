@@ -58,6 +58,9 @@ VALID_TYPES = {
     "ARRAY",
     # Custom (IO.Custom) widget types used by partner nodes, e.g. Recraft Controls.
     "CUSTOM",
+    # Repeating row groups (IO.DynamicGroup.Input -> io_type COMFY_DYNAMICGROUP_V3),
+    # e.g. the loras stack in LoadLoraModel / LoadLoraTextEncoder.
+    "DYNAMIC_GROUP",
 }
 
 ROW_RE = re.compile(r"^\|")
