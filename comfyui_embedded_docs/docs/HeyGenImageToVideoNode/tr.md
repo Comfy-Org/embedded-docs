@@ -10,7 +10,7 @@ HeyGen Video 1.0 kullanarak bir görseli senkronize diyalog ve sesle videoya can
 | `image` | Videonun ilk karesi. Tam olarak bir görsel gereklidir; bir toplu grup reddedilir. Çıktı bu görselin en-boy oranını koruduğu için videonun şeklini değiştirmek üzere görseli kırpın. | IMAGE | Evet | 1 görsel, en-boy oranı 1:4 - 4:1 |
 | `prompt` | Videoda ne olduğunun açıklaması, herhangi bir diyalog dahil. (varsayılan: boş dize) | STRING | Evet | 1 - 32000 karakter |
 | `duration` | Çıktı videosunun saniye cinsinden süresi. (varsayılan: 5) | INT | Evet | 5 - 15 |
-| `resolution` | Çıktı çözünürlüğü. (varsayılan: `"768p"`) | COMBO | Evet | `"768p"`<br>`"480p"` |
+| `resolution` | Çıktı çözünürlüğü. (varsayılan: `"768p"`) | COMBO | Evet | `"768p"`<br>`"480p"`<br>`"2k"` |
 | `seed` | Oluşturma için seed. Sonuçlar aynı seed ile çalıştırmalar arasında yine de değişebilir. (varsayılan: 42) | INT | Evet | 0 - 4294967295 |
 
 ### Parametre Kısıtlamaları
@@ -29,4 +29,4 @@ HeyGen Video 1.0 kullanarak bir görseli senkronize diyalog ve sesle videoya can
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenImageToVideoNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `1de530dcc98f2324f6ef4e2cfe309a717a12116382e9885aca14a8ae0be4de39`
+**Source fingerprint (SHA-256):** `e15def8ce378572247be7dd197ac469fb655bcecf76521c8e9495bbad34e0284`

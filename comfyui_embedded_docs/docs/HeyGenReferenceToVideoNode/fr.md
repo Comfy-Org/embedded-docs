@@ -9,7 +9,7 @@ Générez une vidéo avec un dialogue et un son synchronisés à partir d'un pro
 | `modèle` | Version du modèle utilisée pour la génération. (par défaut : `"heygen-video-1"`) | DYNAMIC_COMBO | Oui | `"heygen-video-1"` |
 | `prompt` | Description de la vidéo, y compris tout dialogue. Référez-vous aux références connectées sous la forme @Image1, @Video1, @Audio1, numérotées par type dans l'ordre des entrées. (par défaut : chaîne vide) | STRING | Oui | 1 à 32000 caractères |
 | `duration` | Durée de la vidéo de sortie en secondes. (par défaut : 5) | INT | Oui | 5 à 15 |
-| `resolution` | Résolution de sortie. (par défaut : `"768p"`) | COMBO | Oui | `"768p"`<br>`"480p"` |
+| `resolution` | Résolution de sortie. 2k nécessite un rapport d'aspect 16:9 ou 9:16 ; `"auto"` ne fonctionne en 2k que sans référence. (par défaut : `"768p"`) | COMBO | Oui | `"768p"`<br>`"480p"`<br>`"2k"` |
 | `aspect_ratio` | Rapport d'aspect de sortie. `"auto"` correspond à 16:9 lorsqu'aucune référence n'est connectée ; sinon, il suit la première image de référence, ou la première vidéo de référence lorsqu'aucune image n'est connectée. (par défaut : `"auto"`) | COMBO | Oui | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"` |
 | `seed` | Graine pour la génération. Les résultats peuvent encore varier entre les exécutions avec la même graine. (par défaut : 42) | INT | Oui | 0 à 4294967295 |
 | `reference_images` | Emplacement extensible : images de personnes, de produits ou de lieux à utiliser dans la vidéo (`image_1` ... `image_9`) ; référencez-les sous la forme @Image1, @Image2, ... Chaque entrée doit contenir exactement une image, et chaque image doit avoir un rapport d'aspect compris entre 1:4 et 4:1. | IMAGE | Non | 0 à 9 images |
@@ -23,6 +23,7 @@ Générez une vidéo avec un dialogue et un son synchronisés à partir d'un pro
 - **Règles relatives aux images de référence :** chaque entrée `reference_images` doit contenir exactement une image (un lot est rejeté), et chaque image doit avoir un rapport d'aspect compris entre 1:4 et 4:1.
 - **Balises de prompt :** `@ImageN`, `@VideoN` et `@AudioN` sont mises en correspondance sans tenir compte de la casse. Le numéro ne doit pas dépasser le nombre de références connectées de ce type, et le prompt doit être non vide après suppression des espaces blancs.
 - **Mode :** avec au moins une image ou une vidéo de référence, la requête est une exécution référence-vers-vidéo ; sans aucune, il s'agit d'une exécution texte-vers-vidéo simple.
+- **Résolution 2k :** `resolution` `"2k"` exige `aspect_ratio` `"16:9"` ou `"9:16"` ; `"auto"` n'est accepté en 2k que lorsqu'aucune image ni aucune vidéo de référence n'est connectée.
 - **Graine :** la graine détermine uniquement si le nœud se réexécute ; les résultats ne sont pas reproductibles avec la même graine.
 
 ## Sorties
@@ -34,4 +35,4 @@ Générez une vidéo avec un dialogue et un son synchronisés à partir d'un pro
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenReferenceToVideoNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `44de381703821043aa1399e58c9132f9b6a2b0ac5dbf47197dffed0438ea7ad7`
+**Source fingerprint (SHA-256):** `f3fae5dce59c90d65ad8eff2c992819f29a71e3a3e13fa91c1e7479a9cd6fcdc`

@@ -9,7 +9,7 @@ Genere un video con diálogo y sonido sincronizados a partir de un prompt de tex
 | `modelo` | Versión del modelo utilizada para la generación. (predeterminado: `"heygen-video-1"`) | DYNAMIC_COMBO | Sí | `"heygen-video-1"` |
 | `prompt` | Descripción del video, incluido cualquier diálogo. Haga referencia a las referencias conectadas como @Image1, @Video1, @Audio1, numeradas por tipo en el orden de las entradas. (predeterminado: cadena vacía) | STRING | Sí | 1 a 32000 caracteres |
 | `duration` | Duración del video de salida en segundos. (predeterminado: 5) | INT | Sí | 5 a 15 |
-| `resolution` | Resolución de salida. (predeterminado: `"768p"`) | COMBO | Sí | `"768p"`<br>`"480p"` |
+| `resolution` | Resolución de salida. 2k requiere una relación de aspecto de 16:9 o 9:16; `"auto"` solo funciona a 2k sin referencias. (predeterminado: `"768p"`) | COMBO | Sí | `"768p"`<br>`"480p"`<br>`"2k"` |
 | `aspect_ratio` | Relación de aspecto de salida. `"auto"` es 16:9 cuando no hay referencias conectadas; de lo contrario, sigue la primera imagen de referencia o el primer video de referencia cuando no hay imágenes conectadas. (predeterminado: `"auto"`) | COMBO | Sí | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"` |
 | `seed` | Semilla para la generación. Los resultados aún pueden variar entre ejecuciones con la misma semilla. (predeterminado: 42) | INT | Sí | 0 a 4294967295 |
 | `reference_images` | Ranura ampliable: imágenes de personas, productos o lugares para usar en el video (`image_1` ... `image_9`); haga referencia a ellas como @Image1, @Image2, ... Cada entrada debe contener exactamente una imagen, y cada imagen debe tener una relación de aspecto entre 1:4 y 4:1. | IMAGE | No | 0 a 9 imágenes |
@@ -23,6 +23,7 @@ Genere un video con diálogo y sonido sincronizados a partir de un prompt de tex
 - **Reglas de las imágenes de referencia:** cada entrada de `reference_images` debe contener exactamente una imagen (se rechaza un lote), y cada imagen debe tener una relación de aspecto entre 1:4 y 4:1.
 - **Etiquetas del prompt:** `@ImageN`, `@VideoN` y `@AudioN` se comparan sin distinguir mayúsculas y minúsculas. El número no debe superar la cantidad de referencias conectadas de ese tipo, y el prompt no debe estar vacío después de recortar los espacios en blanco.
 - **Modo:** con al menos una imagen o un video de referencia, la solicitud es una ejecución de referencia a video; sin ninguna, es una ejecución simple de texto a video.
+- **Resolución 2k:** `resolution` `"2k"` requiere `aspect_ratio` `"16:9"` o `"9:16"`; `"auto"` solo se acepta a 2k cuando no hay ninguna imagen ni ningún video de referencia conectado.
 - **Semilla:** la semilla solo decide si el nodo se vuelve a ejecutar; los resultados no son reproducibles con la misma semilla.
 
 ## Salidas
@@ -34,4 +35,4 @@ Genere un video con diálogo y sonido sincronizados a partir de un prompt de tex
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenReferenceToVideoNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `44de381703821043aa1399e58c9132f9b6a2b0ac5dbf47197dffed0438ea7ad7`
+**Source fingerprint (SHA-256):** `f3fae5dce59c90d65ad8eff2c992819f29a71e3a3e13fa91c1e7479a9cd6fcdc`

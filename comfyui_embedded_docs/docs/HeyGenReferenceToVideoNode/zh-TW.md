@@ -9,7 +9,7 @@
 | `模型` | 用於生成的模型版本。（預設：`"heygen-video-1"`） | DYNAMIC_COMBO | 是 | `"heygen-video-1"` |
 | `prompt` | 影片的描述，包含任何對話。將已連接的參考稱為 @Image1、@Video1、@Audio1，並依輸入順序按類型編號。（預設：空字串） | STRING | 是 | 1 到 32000 個字元 |
 | `duration` | 輸出影片的長度，以秒為單位。（預設：5） | INT | 是 | 5 到 15 |
-| `resolution` | 輸出解析度。（預設：`"768p"`） | COMBO | 是 | `"768p"`<br>`"480p"` |
+| `resolution` | 輸出解析度。2k 要求 16:9 或 9:16 長寬比；`"auto"` 僅在未連接任何參考時可用於 2k。（預設：`"768p"`） | COMBO | 是 | `"768p"`<br>`"480p"`<br>`"2k"` |
 | `aspect_ratio` | 輸出長寬比。在未連接任何參考時，`"auto"` 為 16:9；否則會跟隨第一張參考圖像，或在未連接圖像時跟隨第一段參考影片。（預設：`"auto"`） | COMBO | 是 | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"` |
 | `seed` | 用於生成的種子。即使使用相同的種子，每次執行的結果仍可能有所不同。（預設：42） | INT | 是 | 0 到 4294967295 |
 | `reference_images` | 可擴充插槽：要在影片中使用的人物、產品或地點圖像（`image_1` ... `image_9`）；將它們稱為 @Image1、@Image2、...。每個輸入必須恰好包含一張圖像，且每張圖像的長寬比必須介於 1:4 與 4:1 之間。 | IMAGE | 否 | 0 到 9 張圖像 |
@@ -23,6 +23,7 @@
 - **參考圖像規則：** 每個 `reference_images` 輸入必須恰好包含一張圖像（批次會被拒絕），且每張圖像的長寬比必須介於 1:4 與 4:1 之間。
 - **提示標籤：** `@ImageN`、`@VideoN` 和 `@AudioN` 的比對不區分大小寫。編號不得超過該類型已連接參考的數量，且提示在修剪空白後必須為非空。
 - **模式：** 在至少有一個參考圖像或影片時，請求會是參考轉影片生成；在沒有任何參考時，則是一般的文字轉影片生成。
+- **2k 解析度：** `resolution` 為 `"2k"` 時要求 `aspect_ratio` 為 `"16:9"` 或 `"9:16"`；只有在未連接參考圖像和參考影片時才接受 `"auto"`。
 - **`seed`：** 種子只決定此節點是否重新執行；使用相同種子無法重現結果。
 
 ## 輸出
@@ -34,4 +35,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenReferenceToVideoNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `44de381703821043aa1399e58c9132f9b6a2b0ac5dbf47197dffed0438ea7ad7`
+**Source fingerprint (SHA-256):** `f3fae5dce59c90d65ad8eff2c992819f29a71e3a3e13fa91c1e7479a9cd6fcdc`

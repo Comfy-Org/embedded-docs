@@ -10,7 +10,7 @@ Animez une image pour en faire une vidéo avec un dialogue et un son synchronis�
 | `image` | Première image de la vidéo. Exactement une image est requise ; un lot est rejeté. Recadrez l’image pour modifier la forme de la vidéo, car la sortie conserve le rapport d’aspect de cette image. | IMAGE | Oui | 1 image, rapport d’aspect 1:4 à 4:1 |
 | `prompt` | Description de ce qui se passe dans la vidéo, y compris tout dialogue. (par défaut : chaîne vide) | STRING | Oui | 1 à 32000 caractères |
 | `duration` | Durée de la vidéo de sortie en secondes. (par défaut : 5) | INT | Oui | 5 à 15 |
-| `resolution` | Résolution de sortie. (par défaut : `"768p"`) | COMBO | Oui | `"768p"`<br>`"480p"` |
+| `resolution` | Résolution de sortie. (par défaut : `"768p"`) | COMBO | Oui | `"768p"`<br>`"480p"`<br>`"2k"` |
 | `seed` | Graine pour la génération. Les résultats peuvent encore varier entre les exécutions avec la même graine. (par défaut : 42) | INT | Oui | 0 à 4294967295 |
 
 ### Contraintes des paramètres
@@ -29,4 +29,4 @@ Animez une image pour en faire une vidéo avec un dialogue et un son synchronis�
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenImageToVideoNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `1de530dcc98f2324f6ef4e2cfe309a717a12116382e9885aca14a8ae0be4de39`
+**Source fingerprint (SHA-256):** `e15def8ce378572247be7dd197ac469fb655bcecf76521c8e9495bbad34e0284`
