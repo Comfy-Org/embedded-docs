@@ -29,7 +29,7 @@ Cada linha repete os seguintes campos, e cada campo é obrigatório dentro de um
 
 | Nome da Saída | Descrição | Tipo de Dado |
 | --- | --- | --- |
-| `CLIP` | O codificador de texto CLIP com todas as linhas de LoRA habilitadas aplicadas. | CLIP |
+| `CLIP` | O codificador de texto CLIP após aplicar as linhas de LoRA que não são ignoradas. | CLIP |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLoraTextEncoder/pt-BR.md)
 

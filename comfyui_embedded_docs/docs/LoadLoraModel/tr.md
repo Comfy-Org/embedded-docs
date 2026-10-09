@@ -29,7 +29,7 @@ Her satır aşağıdaki alanları yineler ve gönderilen bir satırda her alan z
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `MODEL` | Etkinleştirilmiş her LoRA satırı uygulanmış difüzyon modeli. | MODEL |
+| `MODEL` | Atlanmayan LoRA satırları uygulandıktan sonraki difüzyon modeli. | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLoraModel/tr.md)
 

@@ -29,7 +29,7 @@ Chaque ligne reprend les champs suivants, et chaque champ est requis dans une li
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `CLIP` | L'encodeur de texte CLIP avec chaque ligne de LoRA activée appliquée. | CLIP |
+| `CLIP` | L'encodeur de texte CLIP après application des lignes de LoRA qui ne sont pas ignorées. | CLIP |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLoraTextEncoder/fr.md)
 

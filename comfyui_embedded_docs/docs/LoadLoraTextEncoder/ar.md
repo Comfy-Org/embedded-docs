@@ -29,7 +29,7 @@
 
 | اسم المخرَج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `CLIP` | مشفّر نصوص CLIP مع تطبيق كل صف LoRA مُمكّن. | CLIP |
+| `CLIP` | مُشفّر نصوص CLIP بعد تطبيق صفوف LoRA التي لم يتم تخطيها. | CLIP |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLoraTextEncoder/ar.md)
 

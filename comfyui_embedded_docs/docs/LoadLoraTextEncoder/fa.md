@@ -29,7 +29,7 @@
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `CLIP` | رمزگذار متن CLIP با همهٔ سطرهای LoRA فعال اعمال‌شده. | CLIP |
+| `CLIP` | رمزگذار متن CLIP پس از اعمال سطرهای LoRA که نادیده گرفته نشده‌اند. | CLIP |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLoraTextEncoder/fa.md)
 

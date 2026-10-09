@@ -29,7 +29,7 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `MODEL` | 已套用每個啟用的 LoRA 行的擴散模型。 | MODEL |
+| `MODEL` | 已套用所有未被略過的 LoRA 列後的擴散模型。 | MODEL |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLoraModel/zh-TW.md)
 

@@ -29,7 +29,7 @@ Chaque ligne répète les champs suivants, et chaque champ est requis dans une l
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `MODEL` | Le modèle de diffusion avec chaque ligne de LoRA activée appliquée. | MODEL |
+| `MODEL` | Le modèle de diffusion après application des lignes de LoRA qui ne sont pas ignorées. | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLoraModel/fr.md)
 

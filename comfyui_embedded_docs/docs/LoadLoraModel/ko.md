@@ -29,7 +29,7 @@ diffusion 모델에 LoRA 스택을 단일 노드에서 적용합니다. `loras`�
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `MODEL` | 활성화된 모든 LoRA 행이 적용된 diffusion 모델입니다. | MODEL |
+| `MODEL` | 건너뛰지 않은 LoRA 행이 적용된 확산 모델입니다. | MODEL |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLoraModel/ko.md)
 

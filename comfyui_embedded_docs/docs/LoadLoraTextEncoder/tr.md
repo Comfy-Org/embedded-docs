@@ -29,7 +29,7 @@ Her satır aşağıdaki alanları yineler ve gönderilen bir satırda her alan g
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `CLIP` | Etkinleştirilmiş her LoRA satırı uygulanmış CLIP metin kodlayıcısı. | CLIP |
+| `CLIP` | Atlanmayan LoRA satırları uygulandıktan sonraki CLIP metin kodlayıcısı. | CLIP |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLoraTextEncoder/tr.md)
 

@@ -29,7 +29,7 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `CLIP` | 有効な LoRA 行がすべて適用された CLIP テキストエンコーダーです。 | CLIP |
+| `CLIP` | スキップされなかった LoRA 行が適用された CLIP テキストエンコーダーです。 | CLIP |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLoraTextEncoder/ja.md)
 

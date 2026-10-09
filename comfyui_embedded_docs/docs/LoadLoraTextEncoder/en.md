@@ -29,7 +29,7 @@ Every row repeats the following fields, and each field is required within a subm
 
 | Output Name | Description | Data Type |
 | --- | --- | --- |
-| `CLIP` | The CLIP text encoder with every enabled LoRA row applied. | CLIP |
+| `CLIP` | The CLIP text encoder after the LoRA rows that are not skipped have been applied. | CLIP |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLoraTextEncoder/en.md)
 

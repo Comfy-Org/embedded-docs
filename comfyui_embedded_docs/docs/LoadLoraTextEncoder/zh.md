@@ -29,7 +29,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `CLIP` | 应用了每个已启用 LoRA 行后的 CLIP 文本编码器。 | CLIP |
+| `CLIP` | 已应用所有未被跳过的 LoRA 行后的 CLIP 文本编码器。 | CLIP |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLoraTextEncoder/zh.md)
 

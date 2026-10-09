@@ -29,7 +29,7 @@ Cada linha repete os seguintes campos, e cada campo é obrigatório dentro de um
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `MODEL` | O modelo de difusão com cada linha de LoRA habilitada aplicada. | MODEL |
+| `MODEL` | O modelo de difusão após aplicar as linhas de LoRA que não são ignoradas. | MODEL |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLoraModel/pt-BR.md)
 

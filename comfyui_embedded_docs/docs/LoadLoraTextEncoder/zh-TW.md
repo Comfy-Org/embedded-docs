@@ -29,7 +29,7 @@
 
 | 輸出名稱 | 描述 | 資料類型 |
 | --- | --- | --- |
-| `CLIP` | 已套用每個啟用 LoRA 列的 CLIP 文字編碼器。 | CLIP |
+| `CLIP` | 已套用所有未被略過的 LoRA 列後的 CLIP 文字編碼器。 | CLIP |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadLoraTextEncoder/zh-TW.md)
 
