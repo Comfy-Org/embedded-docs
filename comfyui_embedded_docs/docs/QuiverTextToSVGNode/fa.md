@@ -1,6 +1,8 @@
-# تبدیل متن Quiver به SVG
+# تبدیل متن Quiver به SVG (قدیمی)
 
 گره Quiver Text to SVG یک تصویر گرافیک برداری مقیاس‌پذیر (SVG) را از توضیح متنی و با استفاده از مدل‌های Quiver AI تولید می‌کند. می‌توانید به‌صورت اختیاری تصاویر مرجع و دستورالعمل‌های سبک ارائه دهید تا فرآیند تولید را هدایت کنید.
+
+**نکته:** این گره در کد منبع به‌عنوان منسوخ‌شده علامت‌گذاری شده است.
 
 ## ورودی‌ها
 
@@ -24,4 +26,5 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverTextToSVGNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `8b6f21c26748f48eddf2eddaed785a2331a29364744edf30e86e420b0c117e49`
+---
+**Source fingerprint (SHA-256):** `e03e130a4aedbf003e898300b3a83e343fdfa5b3da35df20d55876d437bf5426`

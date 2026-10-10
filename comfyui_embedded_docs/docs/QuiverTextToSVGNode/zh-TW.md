@@ -1,6 +1,8 @@
-# Quiver 文字轉 SVG
+# Quiver 文字轉 SVG（舊版）
 
 Quiver Text to SVG 節點使用 Quiver AI 的模型，從文字描述生成可縮放向量圖形 (SVG) 影像。您可以選擇性提供參考影像和風格指示來引導生成過程。
+
+**注意：** 此節點在原始碼中標記為已棄用。
 
 ## 輸入
 
@@ -24,4 +26,5 @@ Quiver Text to SVG 節點使用 Quiver AI 的模型，從文字描述生成可�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverTextToSVGNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `8b6f21c26748f48eddf2eddaed785a2331a29364744edf30e86e420b0c117e49`
+---
+**Source fingerprint (SHA-256):** `e03e130a4aedbf003e898300b3a83e343fdfa5b3da35df20d55876d437bf5426`

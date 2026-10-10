@@ -1,6 +1,8 @@
-# Quiver 圖像轉 SVG
+# Quiver 圖像轉 SVG（舊版）
 
 此節點使用 Quiver AI 的向量化模型，將點陣圖像轉換為可縮放向量圖形（SVG）。它會將圖像傳送至外部 API，由該 API 處理並傳回向量化結果。
+
+**注意：** 此節點在原始碼中標記為已棄用。
 
 ## 輸入
 
@@ -21,4 +23,5 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverImageToSVGNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `d32225207ede8f15fd54780778c6b23b1ce1880be8cb416c341e73afbd9b8aa0`
+---
+**Source fingerprint (SHA-256):** `3f5b97794fa4c2e87d954d98f966d4ef0fddd1c3b1054fba552e282d6ac21c83`

@@ -1,6 +1,8 @@
-# Quiver Texto para SVG
+# Quiver Texto para SVG (Legado)
 
 O nó Quiver Text to SVG gera uma imagem SVG (Scalable Vector Graphic) a partir de uma descrição textual usando os modelos da Quiver AI. Opcionalmente, você pode fornecer imagens de referência e instruções de estilo para orientar o processo de geração.
+
+**Nota:** Este nó está marcado como obsoleto no código-fonte.
 
 ## Entradas
 
@@ -24,4 +26,5 @@ O nó Quiver Text to SVG gera uma imagem SVG (Scalable Vector Graphic) a partir 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverTextToSVGNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `8b6f21c26748f48eddf2eddaed785a2331a29364744edf30e86e420b0c117e49`
+---
+**Source fingerprint (SHA-256):** `e03e130a4aedbf003e898300b3a83e343fdfa5b3da35df20d55876d437bf5426`

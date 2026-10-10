@@ -1,6 +1,8 @@
-# Quiver Imagem para SVG
+# Quiver Imagem para SVG (Legado)
 
 Este nó converte uma imagem raster em um gráfico vetorial escalável (SVG) usando os modelos de vetorização da Quiver AI. Ele envia a imagem para uma API externa, que a processa e retorna o resultado vetorizado.
+
+**Nota:** Este nó está marcado como obsoleto no código-fonte.
 
 ## Entradas
 
@@ -21,4 +23,5 @@ Este nó converte uma imagem raster em um gráfico vetorial escalável (SVG) usa
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverImageToSVGNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `d32225207ede8f15fd54780778c6b23b1ce1880be8cb416c341e73afbd9b8aa0`
+---
+**Source fingerprint (SHA-256):** `3f5b97794fa4c2e87d954d98f966d4ef0fddd1c3b1054fba552e282d6ac21c83`

@@ -1,6 +1,8 @@
-# Quiver Görselden SVG'ye
+# Quiver Görselden SVG'ye (Eski)
 
 Bu düğüm, Quiver AI'nin vektörleştirme modellerini kullanarak bir raster görüntüyü ölçeklenebilir bir vektör grafiğe (SVG) dönüştürür. Görüntüyü, işleyip vektörleştirilmiş sonucu döndüren harici bir API'ye gönderir.
+
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
 
 ## Girdiler
 
@@ -21,4 +23,5 @@ Bu düğüm, Quiver AI'nin vektörleştirme modellerini kullanarak bir raster g�
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverImageToSVGNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d32225207ede8f15fd54780778c6b23b1ce1880be8cb416c341e73afbd9b8aa0`
+---
+**Source fingerprint (SHA-256):** `3f5b97794fa4c2e87d954d98f966d4ef0fddd1c3b1054fba552e282d6ac21c83`

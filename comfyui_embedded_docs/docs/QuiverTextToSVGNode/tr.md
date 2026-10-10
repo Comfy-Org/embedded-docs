@@ -1,6 +1,8 @@
-# Quiver Metinden SVG'ye
+# Quiver Metinden SVG'ye (Eski)
 
 Quiver Text to SVG düğümü, Quiver AI'nin modellerini kullanarak bir metin açıklamasından Ölçeklenebilir Vektör Grafiği (SVG) görüntüsü oluşturur. Oluşturma sürecine yön vermek için isteğe bağlı olarak referans görüntüler ve stil talimatları sağlayabilirsiniz.
+
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
 
 ## Girdiler
 
@@ -24,4 +26,5 @@ Quiver Text to SVG düğümü, Quiver AI'nin modellerini kullanarak bir metin a�
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverTextToSVGNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `8b6f21c26748f48eddf2eddaed785a2331a29364744edf30e86e420b0c117e49`
+---
+**Source fingerprint (SHA-256):** `e03e130a4aedbf003e898300b3a83e343fdfa5b3da35df20d55876d437bf5426`

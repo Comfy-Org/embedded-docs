@@ -1,6 +1,8 @@
-# Quiver Text to SVG
+# Quiver Text to SVG (устаревшая версия)
 
 Узел Quiver Text to SVG создаёт изображение Scalable Vector Graphic (SVG) из текстового описания с использованием моделей Quiver AI. При необходимости можно предоставить эталонные изображения и инструкции по стилю, чтобы управлять процессом генерации.
+
+**Примечание:** В исходном коде этот узел помечен как устаревший.
 
 ## Входы
 
@@ -24,4 +26,5 @@
 > Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverTextToSVGNode/ru.md)
 
 ---
-**Source fingerprint (SHA-256):** `8b6f21c26748f48eddf2eddaed785a2331a29364744edf30e86e420b0c117e49`
+---
+**Source fingerprint (SHA-256):** `e03e130a4aedbf003e898300b3a83e343fdfa5b3da35df20d55876d437bf5426`
