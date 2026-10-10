@@ -10,7 +10,7 @@ Anima una imagen para convertirla en un video con diálogo y sonido sincronizado
 | `image` | Primer fotograma del video. Se requiere exactamente una imagen; se rechaza un lote. Recorta la imagen para cambiar la forma del video, porque la salida conserva la relación de aspecto de esta imagen. | IMAGE | Sí | 1 imagen, relación de aspecto 1:4 a 4:1 |
 | `prompt` | Descripción de lo que sucede en el video, incluido cualquier diálogo. (predeterminado: cadena vacía) | STRING | Sí | 1 a 32000 caracteres |
 | `duration` | Duración del video de salida en segundos. (predeterminado: 5) | INT | Sí | 5 a 15 |
-| `resolution` | Resolución de salida. (predeterminado: `"768p"`) | COMBO | Sí | `"768p"`<br>`"480p"` |
+| `resolution` | Resolución de salida. (predeterminado: `"768p"`) | COMBO | Sí | `"768p"`<br>`"480p"`<br>`"2k"` |
 | `seed` | Semilla para la generación. Los resultados aún pueden variar entre ejecuciones con la misma semilla. (predeterminado: 42) | INT | Sí | 0 a 4294967295 |
 
 ### Restricciones de los parámetros
@@ -29,4 +29,4 @@ Anima una imagen para convertirla en un video con diálogo y sonido sincronizado
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenImageToVideoNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `1de530dcc98f2324f6ef4e2cfe309a717a12116382e9885aca14a8ae0be4de39`
+**Source fingerprint (SHA-256):** `e15def8ce378572247be7dd197ac469fb655bcecf76521c8e9495bbad34e0284`

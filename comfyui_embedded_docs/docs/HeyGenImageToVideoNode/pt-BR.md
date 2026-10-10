@@ -10,7 +10,7 @@ Anime uma imagem em um vídeo com diálogo e som sincronizados usando o HeyGen V
 | `image` | Primeiro quadro do vídeo. É necessária exatamente uma imagem; um lote é rejeitado. Recorte a imagem para alterar o formato do vídeo, pois a saída mantém a proporção desta imagem. | IMAGE | Sim | 1 imagem, proporção de 1:4 a 4:1 |
 | `prompt` | Descrição do que acontece no vídeo, incluindo qualquer diálogo. (padrão: string vazia) | STRING | Sim | 1 a 32000 caracteres |
 | `duration` | Duração do vídeo de saída em segundos. (padrão: 5) | INT | Sim | 5 a 15 |
-| `resolution` | Resolução de saída. (padrão: `"768p"`) | COMBO | Sim | `"768p"`<br>`"480p"` |
+| `resolution` | Resolução de saída. (padrão: `"768p"`) | COMBO | Sim | `"768p"`<br>`"480p"`<br>`"2k"` |
 | `seed` | Semente para a geração. Os resultados ainda podem variar entre execuções com a mesma seed. (padrão: 42) | INT | Sim | 0 a 4294967295 |
 
 ### Restrições dos parâmetros
@@ -29,4 +29,4 @@ Anime uma imagem em um vídeo com diálogo e som sincronizados usando o HeyGen V
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenImageToVideoNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `1de530dcc98f2324f6ef4e2cfe309a717a12116382e9885aca14a8ae0be4de39`
+**Source fingerprint (SHA-256):** `e15def8ce378572247be7dd197ac469fb655bcecf76521c8e9495bbad34e0284`

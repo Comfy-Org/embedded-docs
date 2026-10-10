@@ -10,7 +10,7 @@
 | `image` | 影片的第一幀。必須剛好一張圖像；批次會被拒絕。裁切圖像可變更影片形狀，因為輸出會保留此圖像的長寬比。 | IMAGE | 是 | 1 張影像，長寬比 1:4 至 4:1 |
 | `prompt` | 影片中發生內容的描述，包括任何對話。（預設：空字串） | STRING | 是 | 1 至 32000 個字元 |
 | `duration` | 輸出影片的持續時間，以秒為單位。（預設：5） | INT | 是 | 5 至 15 |
-| `resolution` | 輸出解析度。（預設：`"768p"`） | COMBO | 是 | `"768p"`<br>`"480p"` |
+| `resolution` | 輸出解析度。（預設：`"768p"`） | COMBO | 是 | `"768p"`<br>`"480p"`<br>`"2k"` |
 | `seed` | 用於生成的 `seed`。即使使用相同的 `seed`，不同次執行的結果仍可能不同。（預設：42） | INT | 是 | 0 至 4294967295 |
 
 ### 參數限制
@@ -29,4 +29,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenImageToVideoNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `1de530dcc98f2324f6ef4e2cfe309a717a12116382e9885aca14a8ae0be4de39`
+**Source fingerprint (SHA-256):** `e15def8ce378572247be7dd197ac469fb655bcecf76521c8e9495bbad34e0284`
