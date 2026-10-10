@@ -6,7 +6,7 @@ Kamera Bilgisi Oluştur düğümü, 3D görüntüleme için bir kamera bilgi yap
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|----------|-----------|----------|--------|
-| `mod` | Kameranın nasıl tanımlanacağı: yörünge açıları, açık bir konum veya konum + dördül. | COMBO | Evet | `"orbit"`<br>`"look_at"`<br>`"quaternion"` |
+| `mod` | Kameranın nasıl tanımlanacağı: yörünge açıları, açık bir konum veya konum + dördül. | DYNAMIC_COMBO | Evet | `"orbit"`<br>`"look_at"`<br>`"quaternion"` |
 | `hedef_x` | Bakış noktası (yörünge dönüş merkezi / nişan). Yörünge modunda, tüm kamerayı kaydırmak/taşımak için hareket ettirin. Dördül modunda yok sayılır. Varsayılan olarak orijin noktasıdır. (varsayılan: 0.0) | FLOAT | Hayır | -1000.0 ile 1000.0 arası |
 | `hedef_y` | Hedef noktasının Y bileşeni. (varsayılan: 0.0) | FLOAT | Hayır | -1000.0 ile 1000.0 arası |
 | `hedef_z` | Hedef noktasının Z bileşeni. (varsayılan: 0.0) | FLOAT | Hayır | -1000.0 ile 1000.0 arası |
@@ -56,4 +56,4 @@ Kamera Bilgisi Oluştur düğümü, 3D görüntüleme için bir kamera bilgi yap
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `577c114130f72b753d5f15775fe05b3e1e734f5865cca32c576d042583f8e873`
+**Source fingerprint (SHA-256):** `5a9703e8e01ad2cd92a97da8d892c278765a9cef8bcd38e3336d1f73717d9895`
