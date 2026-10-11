@@ -2,22 +2,22 @@
 
 Genera videos de forma síncrona basándose en un texto de instrucción y configuraciones de salida. Este nodo crea contenido de video utilizando descripciones textuales y diversos parámetros de generación, produciendo el video final una vez que el proceso de generación se completa.
 
-**Nota:** Este nodo está marcado como obsoleto en el código fuente.
+**Nota:** Este nodo está marcado como obsoleto en el código fuente. Luma elimina los endpoints que llama este nodo el 24 de octubre de 2026, así que utiliza en su lugar los nodos de Luma Ray 3.2.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `prompt` | Instrucción para la generación del video (por defecto: cadena vacía). Debe tener al menos 3 caracteres. | STRING | Sí | - |
-| `modelo` | El modelo de generación de video a utilizar. | COMBO | Sí | `"ray_1_6"`<br>`"ray_2"` |
+| `modelo` | El modelo de generación de video a utilizar. | COMBO | Sí | `"ray-1-6"`<br>`"ray-2"` |
 | `relación de aspecto` | La relación de aspecto para el video generado (por defecto: "16:9"). | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` |
-| `resolución` | La resolución de salida del video (por defecto: "540p"). Este parámetro se ignora al usar el modelo `ray_1_6`. | COMBO | Sí | `"540p"`<br>`"720p"`<br>`"1080p"` |
-| `duración` | La duración del video generado. Este parámetro se ignora al usar el modelo `ray_1_6`. | COMBO | Sí | `"5s"`<br>`"9s"` |
+| `resolución` | La resolución de salida del video (por defecto: "540p"). Este parámetro se ignora al usar el modelo `ray-1-6`. | COMBO | Sí | `"540p"`<br>`"720p"`<br>`"1080p"` |
+| `duración` | La duración del video generado. Este parámetro se ignora al usar el modelo `ray-1-6`. | COMBO | Sí | `"5s"`<br>`"9s"` |
 | `bucle` | Si el video debe reproducirse en bucle (por defecto: Falso). | BOOLEAN | Sí | - |
 | `semilla` | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla (por defecto: 0). | INT | Sí | 0 a 18446744073709551615 |
 | `luma_concepts` | Conceptos de cámara opcionales para dictar el movimiento de la cámara a través del nodo Luma Concepts. | CUSTOM | No | - |
 
-**Nota:** Al usar el modelo `ray_1_6`, los parámetros `duration` y `resolution` se ignoran automáticamente y no afectan la generación.
+**Nota:** Al usar el modelo `ray-1-6`, los parámetros `duration` y `resolution` se ignoran automáticamente y no afectan la generación.
 
 ## Salidas
 

@@ -2,22 +2,22 @@
 
 Bir metin istemi ve çıktı ayarlarına dayalı olarak eşzamanlı şekilde videolar oluşturur. Bu düğüm, metin açıklamaları ve çeşitli oluşturma parametreleri kullanarak video içeriği oluşturur ve oluşturma işlemi tamamlandığında nihai video çıktısını üretir.
 
-**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir. Luma, bu düğümün çağırdığı uç noktaları 24 Ekim 2026 tarihinde kaldırıyor; bu nedenle bunun yerine Luma Ray 3.2 düğümlerini kullanın.
 
 ## Girişler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
 | `istem` | Video oluşturma için istem (varsayılan: boş dize). En az 3 karakter uzunluğunda olmalıdır. | STRING | Evet | - |
-| `model` | Kullanılacak video oluşturma modeli. | COMBO | Evet | `"ray_1_6"`<br>`"ray_2"` |
+| `model` | Kullanılacak video oluşturma modeli. | COMBO | Evet | `"ray-1-6"`<br>`"ray-2"` |
 | `en_boy_oranı` | Oluşturulan video için en boy oranı (varsayılan: "16:9"). | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` |
-| `çözünürlük` | Video için çıktı çözünürlüğü (varsayılan: "540p"). Bu parametre `ray_1_6` modeli kullanılırken yok sayılır. | COMBO | Evet | `"540p"`<br>`"720p"`<br>`"1080p"` |
-| `süre` | Oluşturulan videonun süresi. Bu parametre `ray_1_6` modeli kullanılırken yok sayılır. | COMBO | Evet | `"5s"`<br>`"9s"` |
+| `çözünürlük` | Video için çıktı çözünürlüğü (varsayılan: "540p"). Bu parametre `ray-1-6` modeli kullanılırken yok sayılır. | COMBO | Evet | `"540p"`<br>`"720p"`<br>`"1080p"` |
+| `süre` | Oluşturulan videonun süresi. Bu parametre `ray-1-6` modeli kullanılırken yok sayılır. | COMBO | Evet | `"5s"`<br>`"9s"` |
 | `döngü` | Videonun döngüye girip girmeyeceği (varsayılan: Yanlış). | BOOLEAN | Evet | - |
 | `tohum` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Evet | 0 ile 18446744073709551615 arası |
 | `luma_kavramları` | Luma Concepts düğümü aracılığıyla kamera hareketini belirlemek için isteğe bağlı Kamera Kavramları. | CUSTOM | Hayır | - |
 
-**Not:** `ray_1_6` modeli kullanılırken `duration` ve `resolution` parametreleri otomatik olarak yok sayılır ve oluşturmayı etkilemez.
+**Not:** `ray-1-6` modeli kullanılırken `duration` ve `resolution` parametreleri otomatik olarak yok sayılır ve oluşturmayı etkilemez.
 
 ## Çıktılar
 
