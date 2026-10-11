@@ -2,14 +2,14 @@
 
 Gera vídeos de forma síncrona com base em um prompt de texto e imagens opcionais de início/fim. Este nó utiliza a API Luma para criar vídeos, permitindo definir o conteúdo do vídeo através de um prompt e, opcionalmente, especificar o primeiro e/ou último quadro para controlar a estrutura do vídeo.
 
-**Nota:** Este nó está marcado como obsoleto no código-fonte.
+**Nota:** Este nó está marcado como obsoleto no código-fonte. A Luma remove os endpoints que este nó chama em 24 de outubro de 2026, então use os nós Luma Ray 3.2 em vez disso.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
 | `prompt` | Prompt para a geração do vídeo (padrão: "") | STRING | Sim | - |
-| `model` | Seleciona o modelo de geração de vídeo dentre os modelos Luma disponíveis | COMBO | Sim | Múltiplas opções disponíveis |
+| `model` | Seleciona o modelo de geração de vídeo dentre os modelos Luma disponíveis | COMBO | Sim | `"ray-1-6"`<br>`"ray-2"` |
 | `resolução` | Resolução de saída do vídeo gerado (padrão: "540p"). Este parâmetro é ignorado ao usar o modelo `ray-1-6`. | COMBO | Sim | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duração` | Duração do vídeo gerado. Este parâmetro é ignorado ao usar o modelo `ray-1-6`. | COMBO | Sim | `"5s"`<br>`"9s"` |
 | `loop` | Se o vídeo gerado deve ser em loop (padrão: Falso) | BOOLEAN | Sim | - |

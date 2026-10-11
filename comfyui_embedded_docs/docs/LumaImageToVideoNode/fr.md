@@ -2,14 +2,14 @@
 
 Génère des vidéos de manière synchrone à partir d'une invite textuelle et d'images de début/fin optionnelles. Ce nœud utilise l'API Luma pour créer des vidéos, vous permettant de définir le contenu de la vidéo via une invite et de spécifier éventuellement la première et/ou la dernière image pour contrôler la structure de la vidéo.
 
-**Remarque :** Ce nœud est marqué comme obsolète dans le code source.
+**Remarque :** Ce nœud est marqué comme obsolète dans le code source. Luma supprime les points de terminaison appelés par ce nœud le 24 octobre 2026 ; utilisez plutôt les nœuds Luma Ray 3.2.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `prompt` | Invite pour la génération vidéo (par défaut : "") | STRING | Oui | - |
-| `modèle` | Sélectionne le modèle de génération vidéo parmi les modèles Luma disponibles | COMBO | Oui | Plusieurs options disponibles |
+| `modèle` | Sélectionne le modèle de génération vidéo parmi les modèles Luma disponibles | COMBO | Oui | `"ray-1-6"`<br>`"ray-2"` |
 | `résolution` | Résolution de sortie pour la vidéo générée (par défaut : "540p"). Ce paramètre est ignoré lors de l'utilisation du modèle `ray-1-6`. | COMBO | Oui | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `durée` | Durée de la vidéo générée. Ce paramètre est ignoré lors de l'utilisation du modèle `ray-1-6`. | COMBO | Oui | `"5s"`<br>`"9s"` |
 | `boucle` | Indique si la vidéo générée doit boucler (par défaut : False) | BOOLEAN | Oui | - |

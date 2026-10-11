@@ -2,14 +2,14 @@
 
 Bir metin istemi ve isteğe bağlı başlangıç/bitiş görsellerine dayanarak eşzamanlı olarak videolar oluşturur. Bu düğüm, video içeriğini bir istem aracılığıyla tanımlamanıza ve isteğe bağlı olarak videonun yapısını kontrol etmek için ilk ve/veya son kareyi belirtmenize olanak tanıyan Luma API'sini kullanır.
 
-**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir. Luma, bu düğümün çağırdığı uç noktaları 24 Ekim 2026 tarihinde kaldırıyor; bu nedenle bunun yerine Luma Ray 3.2 düğümlerini kullanın.
 
 ## Girişler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
 | `istem` | Video oluşturma için istem (varsayılan: "") | STRING | Evet | - |
-| `model` | Mevcut Luma modelleri arasından video oluşturma modelini seçer | COMBO | Evet | Birden çok seçenek mevcut |
+| `model` | Mevcut Luma modelleri arasından video oluşturma modelini seçer | COMBO | Evet | `"ray-1-6"`<br>`"ray-2"` |
 | `çözünürlük` | Oluşturulan video için çıktı çözünürlüğü (varsayılan: "540p"). Bu parametre `ray-1-6` modeli kullanılırken dikkate alınmaz. | COMBO | Evet | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `süre` | Oluşturulan videonun süresi. Bu parametre `ray-1-6` modeli kullanılırken dikkate alınmaz. | COMBO | Evet | `"5s"`<br>`"9s"` |
 | `döngü` | Oluşturulan videonun döngüye girip girmeyeceği (varsayılan: False) | BOOLEAN | Evet | - |
