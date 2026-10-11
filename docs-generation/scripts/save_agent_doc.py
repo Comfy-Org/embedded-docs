@@ -61,6 +61,9 @@ VALID_TYPES = {
     # Repeating row groups (IO.DynamicGroup.Input -> io_type COMFY_DYNAMICGROUP_V3),
     # e.g. the loras stack in LoadLoraModel / LoadLoraTextEncoder.
     "DYNAMIC_GROUP",
+    # Latent operation handles passed between the latent operation nodes
+    # (e.g. the `operation` output of LatentOperationBlend).
+    "LATENT_OPERATION",
 }
 
 ROW_RE = re.compile(r"^\|")
