@@ -140,6 +140,9 @@ def create_translated_disclaimer(target_lang: str, node_name: str, lang_config: 
         "tr": "GitHub'da Düzenle",
         "pt-BR": "Editar no GitHub",
         "fa": "ویرایش در GitHub",
+        "de": "Auf GitHub bearbeiten",
+        "he": "עריכה ב-GitHub",
+        "it": "Modifica su GitHub",
     }.get(target_lang, "Edit on GitHub")
     return f"> {disclaimer_text} [{edit_text}]({github_link})"
 

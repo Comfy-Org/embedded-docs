@@ -55,6 +55,9 @@ ALL_LANGS = (
     "ar",
     "tr",
     "fa",
+    "de",
+    "he",
+    "it",
 )
 
 # Localized "## Overview" headings.
@@ -70,6 +73,9 @@ OVERVIEW_HEADING = {
     "ar": "نظرة عامة",
     "tr": "Genel bakış",
     "fa": "نمای کلی",
+    "de": "Übersicht",
+    "he": "סקירה כללית",
+    "it": "Panoramica",
 }
 
 FENCE_RE = re.compile(r"^\s*(```|~~~)")

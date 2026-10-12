@@ -66,7 +66,7 @@ Usage
   # Force retranslate existing docs (batches from missing report unless --force-all-translation-nodes)
   python3 main.py --translate --lang zh --mode all --force
 
-  # Supported languages: zh, zh-TW, es, fr, ja, ko, ru, ar, tr, pt-BR, fa
+  # Supported languages: zh, zh-TW, es, fr, ja, ko, ru, ar, tr, pt-BR, fa, de, he, it
 
 Options
 -------
@@ -82,7 +82,7 @@ Options
   --also-translate-all  Only with --mode regenerate-all: after English, run all-languages translation (mode=all, force)
   --translate  Run translation workflow instead of generation
   --lang       Target language (required with --translate)
-  --all-languages  Translate to all 11 languages
+  --all-languages  Translate to all 14 languages
   --force-all-translation-nodes  Only with --translate: batch every node with en.md (prepare_translation --force-all-nodes)
   --retranslate-all-languages    Shorthand: all langs + mode all + force + force-all-translation-nodes
 
@@ -104,11 +104,12 @@ load_dotenv()
 from datetime import datetime
 
 # Supported languages for translation
-LANGUAGES = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa']
+LANGUAGES = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa', 'de', 'he', 'it']
 LANG_NAMES = {
     'zh': '简体中文', 'zh-TW': '繁體中文', 'es': 'Español', 'fr': 'Français',
     'ja': '日本語', 'ko': '한국어', 'ru': 'Русский', 'ar': 'العربية',
     'tr': 'Türkçe', 'pt-BR': 'Português (BR)', 'fa': 'فارسی',
+    'de': 'Deutsch', 'he': 'עברית', 'it': 'Italiano',
 }
 
 
@@ -358,7 +359,7 @@ class DocumentationWorkflow:
     def run_all_languages_translation(self, mode: str = "test", count: int = 10, force: bool = False, force_all_nodes: bool = False, node_name: str = None, concurrency: int = 1):
         """Run translation workflow for all supported languages"""
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        languages = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa']
+        languages = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa', 'de', 'he', 'it']
 
         print("\n" + "=" * 80)
         print("ComfyUI Documentation Translation - ALL LANGUAGES")
@@ -552,7 +553,7 @@ class DocumentationWorkflow:
         if changed_nodes:
             print(f"\n🌐 Step 4: Re-translating {len(changed_nodes)} changed nodes for all languages...")
             node_list_str = ",".join(n["name"] if isinstance(n, dict) else n for n in changed_nodes)
-            languages = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa']
+            languages = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa', 'de', 'he', 'it']
 
             # Sync frontend translations first
             print("\n🔄 Syncing frontend translations...")
@@ -847,7 +848,7 @@ def run_interactive(workflow: DocumentationWorkflow) -> bool:
             print("\nAvailable languages:")
             for i, lang in enumerate(LANGUAGES, 1):
                 print(f"  {i:2}) {lang}  {LANG_NAMES.get(lang, '')}")
-            lang_idx = _prompt_int("Language number (1-11)", 1)
+            lang_idx = _prompt_int(f"Language number (1-{len(LANGUAGES)})", 1)
             if not (1 <= lang_idx <= len(LANGUAGES)):
                 print("  Invalid number.")
                 continue
@@ -1053,7 +1054,7 @@ Examples:
   python3 main.py --translate --lang zh --mode all
   python3 main.py --translate --lang es --count 20 --force
   
-  # Translate all languages at once (zh, zh-TW, es, fr, ja, ko, ru, ar, tr, pt-BR, fa)
+  # Translate all languages at once (zh, zh-TW, es, fr, ja, ko, ru, ar, tr, pt-BR, fa, de, he, it)
   # This will automatically sync frontend translations and update parameter names
   python3 main.py --translate --all-languages --count 10
   python3 main.py --translate --all-languages --mode all
@@ -1167,14 +1168,14 @@ Examples:
     parser.add_argument(
         '--lang',
         type=str,
-        choices=['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa'],
+        choices=['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa', 'de', 'he', 'it'],
         help='Target language for translation (required with --translate)'
     )
     
     parser.add_argument(
         '--all-languages',
         action='store_true',
-        help='Translate to all supported languages (zh, zh-TW, es, fr, ja, ko, ru, ar, tr, pt-BR, fa)'
+        help='Translate to all supported languages (zh, zh-TW, es, fr, ja, ko, ru, ar, tr, pt-BR, fa, de, he, it)'
     )
 
     parser.add_argument(
@@ -1266,7 +1267,7 @@ Examples:
     
     if args.translate and not args.lang and not args.all_languages:
         print("❌ Error: --lang or --all-languages is required when using --translate")
-        print("Available languages: zh, zh-TW, es, fr, ja, ko, ru, ar, tr, pt-BR, fa")
+        print("Available languages: zh, zh-TW, es, fr, ja, ko, ru, ar, tr, pt-BR, fa, de, he, it")
         parser.print_help()
         sys.exit(1)
     

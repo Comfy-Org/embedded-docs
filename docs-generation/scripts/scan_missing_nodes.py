@@ -266,7 +266,7 @@ class DocumentationChecker:
     def check_doc_completeness(self, node_name: str) -> Dict[str, bool]:
         """Check documentation completeness for a single node"""
         node_dir = self.docs_path / node_name
-        languages = ['en', 'zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa']
+        languages = ['en', 'zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa', 'de', 'he', 'it']
         
         completeness = {}
         for lang in languages:
