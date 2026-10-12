@@ -1,0 +1,20 @@
+# PrimitiveBoolean
+
+צומת Boolean מעביר ערך בוליאני (true/false) דרך תהליך העבודה שלך. הוא מקבל קלט בוליאני ומחזיר את אותו הערך ללא שינוי, כך שתוכל להזין הגדרה של true/false לצמתים אחרים שזקוקים לכך.
+
+## קלטים
+
+| פרמטר | תיאור | סוג נתונים | חובה | טווח |
+| --- | --- | --- | --- | --- |
+| `value` | הערך הבוליאני שיועבר דרך הצומת | BOOLEAN | כן | true<br>false |
+
+## פלטים
+
+| שם פלט | תיאור | סוג נתונים |
+| --- | --- | --- |
+| `output` | אותו ערך בוליאני שסופק כקלט | BOOLEAN |
+
+> מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrimitiveBoolean/he.md)
+
+---
+**Source fingerprint (SHA-256):** `2f4bd009a927f0c7f511db3455e74d3dfc7eb54f642cda1aa3159d495b6452db`
