@@ -1,4 +1,4 @@
-# JoinImageWithAlpha
+# Bild mit Alpha zusammenführen
 
 Dieser Node ist für Compositing-Operationen konzipiert, insbesondere um ein Bild mit seiner zugehörigen Alpha-Maske zu einem einzelnen Ausgabebild zusammenzufügen. Er kombiniert visuellen Inhalt effektiv mit Transparenzinformationen, wodurch Bilder erstellt werden können, bei denen bestimmte Bereiche transparent oder halbtransparent sind.
 

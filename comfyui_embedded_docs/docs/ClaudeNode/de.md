@@ -1,4 +1,4 @@
-# ClaudeNode
+# Anthropic Claude
 
 Erzeugt Textantworten von den Claude-Modellen von Anthropic. Geben Sie einen Text-Prompt und optional ein oder mehrere Bilder für multimodalen Kontext an; der Node gibt die vom Modell generierte Textantwort zurück.
 

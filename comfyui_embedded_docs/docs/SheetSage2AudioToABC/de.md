@@ -1,4 +1,4 @@
-# SheetSage2AudioToABC
+# SheetSage2-Audio zu ABC
 
 Dieser Node transkribiert Gesangs- und Instrumentalmelodien aus Musik in ABC-Notation, ein textbasiertes Format zum Aufschreiben von Musikpartituren. Er analysiert das verbundene Audio und gibt die resultierende Notation als Text zurück; diese kann dann mit dem passenden Modus in den Node YuE2 Generate Music eingespeist werden.
 

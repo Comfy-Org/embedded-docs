@@ -1,4 +1,4 @@
-# AddTextPrefix
+# Textpräfix hinzufügen (VERALTET)
 
 Der Node „Add Text Prefix“ ändert Text, indem er jedem Eingabetext eine angegebene Zeichenkette am Anfang hinzufügt. Er nimmt den Text und ein Präfix als Eingabe entgegen und gibt dann das kombinierte Ergebnis zurück.
 

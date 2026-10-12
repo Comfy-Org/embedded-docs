@@ -1,4 +1,4 @@
-# TencentSmartTopologyNode
+# Hunyuan3D: Intelligente Topologie
 
 Dieser Node führt eine intelligente Retopologie an einem 3D-Modell durch und erzeugt automatisch ein neues, saubereres Mesh mit optimierter Polygonanzahl. Er stellt eine Verbindung zu einer Tencent Hunyuan 3D API her, um das Modell zu verarbeiten, und unterstützt die Dateiformate GLB und OBJ bis zu 200 MB. Der Node gibt das verarbeitete Modell als OBJ-Datei zurück.
 

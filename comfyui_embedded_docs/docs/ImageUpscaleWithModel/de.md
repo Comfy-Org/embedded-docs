@@ -1,4 +1,4 @@
-# ImageUpscaleWithModel
+# Bild hochskalieren (mit Modell)
 
 Dieser Node ist für das Hochskalieren von Bildern unter Verwendung eines angegebenen Upscale-Modells konzipiert. Er verwaltet den Upscaling-Prozess effizient, indem er das Bild an das geeignete Gerät anpasst, die Speichernutzung optimiert und das Upscale-Modell in gekachelter Weise anwendet, um potenzielle Fehler aufgrund von Speichermangel zu vermeiden.
 

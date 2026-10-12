@@ -1,4 +1,4 @@
-# CreateHookLoraModelOnly
+# Hook-LoRA erstellen (MO)
 
 Dieser Node erstellt einen LoRA-Hook (Low-Rank-Adaption), der nur auf die Modellkomponente angewendet wird und die CLIP-Komponente vollständig unverändert lässt. Er lädt eine LoRA-Datei und wendet sie mit einer angegebenen Stärke auf das Modell an, während die CLIP-Stärke auf null gesetzt wird. Der Node kann mit vorherigen Hooks verkettet werden, um komplexe Modifikationspipelines aufzubauen.
 

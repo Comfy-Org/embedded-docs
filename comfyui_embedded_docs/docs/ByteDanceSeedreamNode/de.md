@@ -1,4 +1,4 @@
-# ByteDanceSeedreamNode
+# ByteDance Seedream 4.5 & 5.0
 
 Der ByteDance Seedream 4.5 & 5.0-Node bietet eine einheitliche Text-zu-Bild-Generierung und präzise Bearbeitung mit einem einzigen Satz bei bis zu 4K-Auflösung. Er kann neue Bilder aus Text-Prompts erstellen oder vorhandene Bilder mithilfe von Textanweisungen bearbeiten. Der Node unterstützt sowohl die Generierung eines einzelnen Bildes als auch die sequenzielle Generierung mehrerer zusammenhängender Bilder.
 

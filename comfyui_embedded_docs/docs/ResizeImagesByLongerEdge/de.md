@@ -1,4 +1,4 @@
-# ResizeImagesByLongerEdge
+# Bilder nach längerer Kante skalieren (VERALTET)
 
 Der Node Resize Images by Longer Edge skaliert ein oder mehrere Bilder so, dass ihre längste Seite einer angegebenen Ziellänge entspricht. Er ermittelt automatisch, ob die Breite oder die Höhe länger ist, und skaliert die andere Dimension proportional, um das ursprüngliche Seitenverhältnis beizubehalten. Dieser Node ist veraltet und wurde durch den Node Resize Image/Mask mit dem auf "scale longer dimension" gesetzten Resize-Typ ersetzt.
 

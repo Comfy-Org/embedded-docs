@@ -1,4 +1,4 @@
-# IdeogramPreciseEditApi
+# Ideogram 4.5 Präzises Bearbeiten
 
 Bearbeiten Sie ein Bild anhand eines Text-Prompts mit der präzisen Bearbeitung von Ideogram 4.5: Nur das, was der Prompt verlangt, ändert sich, unberührte Pixel bleiben identisch, und die Ausgabe behält die Größe von Bild 1. Bild 1 ist das zu bearbeitende Bild, und bis zu 4 weitere Bilder können als Referenzen verbunden werden.
 

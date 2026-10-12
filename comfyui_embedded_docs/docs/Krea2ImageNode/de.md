@@ -1,4 +1,4 @@
-# Krea2ImageNode
+# Krea 2 Bild
 
 ## Überblick
 

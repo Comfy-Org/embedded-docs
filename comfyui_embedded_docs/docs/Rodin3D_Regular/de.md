@@ -1,4 +1,4 @@
-# Rodin3D_Regular
+# Rodin 3D-Generierung – Reguläre Generierung
 
 Der Node Rodin 3D Regular erzeugt 3D-Assets mithilfe der Rodin API. Er nimmt Eingabebilder entgegen und verarbeitet sie über den Rodin-Dienst, um 3D-Modelle zu erstellen. Der Node übernimmt den gesamten Workflow von der Aufgabenerstellung bis zum Herunterladen der endgültigen 3D-Modelldateien.
 

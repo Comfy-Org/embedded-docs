@@ -1,4 +1,4 @@
-# MinimaxTextToVideoNode
+# MiniMax Text to Video
 
 Erzeugt synchron Videos basierend auf einem Text-Prompt und optionalen Parametern über die API von MiniMax. Dieser Node erstellt Videoinhalte aus Textbeschreibungen, indem er eine Verbindung zum Text-zu-Video-Dienst von MiniMax herstellt.
 

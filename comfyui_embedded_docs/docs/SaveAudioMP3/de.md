@@ -1,4 +1,4 @@
-# SaveAudioMP3
+# Audio speichern (MP3) (VERALTET)
 
 Der Node SaveAudioMP3 speichert Audiodaten als MP3-Datei. Er nimmt eine Audio-Eingabe entgegen und exportiert sie in das Ausgabeverzeichnis, mit anpassbarem Dateinamen und Qualitätseinstellung; dabei werden Dateibenennung und MP3-Formatkonvertierung automatisch übernommen. **Dieser Node ist veraltet und könnte in zukünftigen Versionen entfernt werden.**
 

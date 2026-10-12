@@ -1,4 +1,4 @@
-# StyleModelApply
+# Style Model anwenden
 
 Dieser Node wendet ein Stilmodell auf eine gegebene Konditionierung an und verbessert oder verändert deren Stil basierend auf der Ausgabe eines CLIP-Vision-Modells. Er integriert die Konditionierung des Stilmodells in die vorhandene Konditionierung, wodurch eine nahtlose Mischung von Stilen im Generierungsprozess ermöglicht wird.
 

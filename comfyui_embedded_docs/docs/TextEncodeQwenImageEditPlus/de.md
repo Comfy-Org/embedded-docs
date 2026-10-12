@@ -1,4 +1,4 @@
-# TextEncodeQwenImageEditPlus
+# Text kodieren Qwen Image Edit Plus
 
 Der Node TextEncodeQwenImageEditPlus verarbeitet einen Text-Prompt und bis zu drei optionale Bilder, um Conditioning-Daten für Bildgenerierungs- oder Bildbearbeitungsaufgaben zu erzeugen. Er verwendet eine spezialisierte Vorlage, die das Modell zunächst auffordert, die wichtigsten Merkmale der Eingabebilder zu beschreiben, und dann zu erklären, wie die Textanweisung des Benutzers sie verändern soll, sodass das kodierte Ergebnis sowohl die Bilder als auch die gewünschte Änderung versteht. Wenn ein VAE bereitgestellt wird, erstellt der Node außerdem Referenz-Latents aus den Eingabebildern.
 

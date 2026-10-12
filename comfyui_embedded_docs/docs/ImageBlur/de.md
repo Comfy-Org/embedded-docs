@@ -1,4 +1,4 @@
-# ImageBlur
+# Bild weichzeichnen
 
 Der Node `ImageBlur` wendet einen Gaußschen Weichzeichner auf ein Bild an, wodurch Kanten weicher werden und Details sowie Rauschen reduziert werden. Er bietet über Parameter Kontrolle über Intensität und Ausbreitung der Weichzeichnung.
 

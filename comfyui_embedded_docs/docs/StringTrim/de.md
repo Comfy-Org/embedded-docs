@@ -1,4 +1,4 @@
-# StringTrim
+# Text bereinigen
 
 Der Node StringTrim entfernt Leerzeichen (wie Leerzeichen, Tabulatoren und Zeilenumbrüche) am Anfang, am Ende oder auf beiden Seiten einer Textzeichenfolge. Sie können wählen, ob Sie vom linken Rand, rechten Rand oder beiden Seiten der Zeichenfolge trimmen möchten. Dies ist nützlich, um Texteingaben durch Entfernen unerwünschter Leerzeichen zu bereinigen.
 

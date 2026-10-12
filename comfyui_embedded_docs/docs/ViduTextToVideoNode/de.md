@@ -1,4 +1,4 @@
-# ViduTextToVideoNode
+# Vidu Text-zu-Video-Generierung
 
 Der Node „Vidu Text To Video Generation“ erstellt Videos aus Textbeschreibungen. Er verwendet das Vidu-Videogenerierungsmodell, um Ihre Text-Prompts in Videoinhalte mit anpassbaren Einstellungen für Dauer, Seitenverhältnis und visuellen Stil umzuwandeln.
 

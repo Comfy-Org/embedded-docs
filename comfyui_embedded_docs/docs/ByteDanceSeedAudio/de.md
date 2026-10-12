@@ -1,6 +1,6 @@
-# ByteDanceSeedAudio
+# ByteDance Seed Audio 1.0
 
-Generate speech, music, sound effects and multi-speaker dialogue from a single prompt with ByteDance Seed Audio 1.0. Describe the voice(s), emotion, ambience, background music and sound effects in the prompt, and include the lines to speak. Optionally pick a built-in preset voice, clone voices from up to 3 reference clips (tagged @Audio1-3 in the prompt), or derive a voice from a character image. Up to 2 minutes of audio per run. The multilingual model supports 20 languages and timestamp-based timing control.
+Generiert Sprache, Musik, Soundeffekte und Dialoge mit mehreren Sprechern aus einem einzelnen Prompt mit ByteDance Seed Audio 1.0. Beschreiben Sie die Stimme(n), Emotionen, Atmosphäre, Hintergrundmusik und Soundeffekte im Prompt und geben Sie die zu sprechenden Zeilen an. Wählen Sie optional eine integrierte voreingestellte Stimme, klonen Sie Stimmen aus bis zu 3 Referenzclips (im Prompt mit @Audio1-3 markiert) oder leiten Sie eine Stimme aus einem Charakterbild ab. Bis zu 2 Minuten Audio pro Ausführung. Das mehrsprachige Modell unterstützt 20 Sprachen und zeitstempelbasierte Zeitsteuerung.
 
 ## Eingaben
 

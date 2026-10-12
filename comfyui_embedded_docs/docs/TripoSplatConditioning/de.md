@@ -1,4 +1,4 @@
-# TripoSplatConditioning
+# TripoSplat-Konditionierung
 
 Dieser Node kodiert ein Eingabebild mit dem DINOv3-Bildencoder und dem Flux2-VAE, um positive und negative Conditioning-Daten für das TripoSplat-Modell zu erzeugen. Außerdem wird ein Rauschziel fester Größe (Latent plus Kameradaten) erstellt, das als Ausgangspunkt für den KSampler dient.
 

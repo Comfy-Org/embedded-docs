@@ -1,4 +1,4 @@
-# Rodin3D_Gen25_Image
+# Rodin 3D Gen-2.5 – Bild zu 3D
 
 ## Übersicht
 

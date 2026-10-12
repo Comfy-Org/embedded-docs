@@ -1,4 +1,4 @@
-# ByteDance2ReferenceNode
+# ByteDance Seedance 2.5 Referenz zu Video (Legacy)
 
 Dieser Node generiert, bearbeitet oder erweitert Videos mithilfe der KI-Modelle Seedance 2.5 oder Seedance 2.0 von ByteDance. Sie beschreiben das Video in einem Text-Prompt und können Referenzbilder, -videos und -audios anhängen, um das Ergebnis zu steuern; unterstützt werden multimodale Referenzen, Videobearbeitung und Videoerweiterung. Dies ist die Legacy-Version des Seedance-Referenz-zu-Video-Nodes; sie ist veraltet und wird nicht mehr empfohlen.
 

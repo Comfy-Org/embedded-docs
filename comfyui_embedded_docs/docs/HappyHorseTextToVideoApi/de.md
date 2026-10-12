@@ -1,4 +1,4 @@
-# HappyHorseTextToVideoApi
+# HappyHorse Text zu Video
 
 Erzeugt ein Video basierend auf einem Text-Prompt unter Verwendung des HappyHorse-Modells. Dieser Node sendet Ihren Prompt und Ihre Einstellungen an die HappyHorse-API, wartet auf die Generierung des Videos und lädt anschließend das Ergebnis herunter.
 

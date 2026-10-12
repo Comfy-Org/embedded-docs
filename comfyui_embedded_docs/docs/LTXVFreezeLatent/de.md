@@ -1,4 +1,4 @@
-# LTXVFreezeLatent
+# LTXV Latent einfrieren
 
 Der Node LTXV Freeze Latent setzt die Rauschmaske eines Latents auf null, wodurch dieses Latent sauber und unverändert bleibt, während das Sampling läuft. Er funktioniert sowohl mit Video- als auch mit Audio-Latents, sodass ein Latent eingefroren werden kann, bevor es mit anderen verkettet wird oder wenn es überhaupt nicht entrauscht werden soll.
 

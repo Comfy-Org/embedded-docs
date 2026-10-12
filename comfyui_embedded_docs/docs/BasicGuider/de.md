@@ -1,4 +1,4 @@
-# BasicGuider
+# Einfacher Guider
 
 Der BasicGuider-Node erstellt einen einfachen Guidance-Mechanismus für den Sampling-Prozess. Er verwendet ein Modell und Konditionierungsdaten als Eingaben und erzeugt ein Guider-Objekt, das verwendet werden kann, um den Generierungsprozess während des Samplings zu steuern. Dieser Node bietet die grundlegende Guidance-Funktionalität, die für eine kontrollierte Generierung erforderlich ist.
 

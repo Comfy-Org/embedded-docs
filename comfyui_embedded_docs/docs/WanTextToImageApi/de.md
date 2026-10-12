@@ -1,4 +1,4 @@
-# WanTextToImageApi
+# Wan Text zu Bild
 
 Der Wan Text to Image-Node generiert Bilder auf Grundlage von Textbeschreibungen. Er verwendet KI-Modelle, um visuelle Inhalte aus geschriebenen Prompts zu erstellen, und unterstützt sowohl englische als auch chinesische Texteingaben. Der Node bietet verschiedene Steuerelemente, um Bildgröße, Qualität und Stilvorgaben der Ausgabe anzupassen.
 

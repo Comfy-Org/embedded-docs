@@ -1,4 +1,4 @@
-# ReferenceTimbreAudio
+# Referenzaudio festlegen
 
 Dieser Node legt das Referenzaudio für den Prozess „ace step 1.5“ fest. Er nimmt eine Konditionierungseingabe und optional eine latente Repräsentation von Audio entgegen und hängt dann diese latenten Daten an die Konditionierung an, sodass spätere Nodes sie als Referenzaudio-Timbre-Latents verwenden können. Dieser Node ist als experimentell gekennzeichnet.
 

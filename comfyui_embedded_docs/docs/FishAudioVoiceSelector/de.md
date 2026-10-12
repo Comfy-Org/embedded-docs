@@ -1,4 +1,4 @@
-# FishAudioVoiceSelector
+# Fish Audio Stimmenauswahl
 
 Der Fish Audio Voice Selector-Node wählt eine Stimme aus der Fish Audio-Bibliothek für die Text-zu-Sprache-Generierung aus. Sie können eine der integrierten Voreinstellungen wählen oder "custom" auswählen, um eine beliebige Voice-Modell-ID von fish.audio einzugeben.
 

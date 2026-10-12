@@ -1,4 +1,4 @@
-# MiniMaxH3ImageToVideo
+# MiniMax H3 Bild zu Video
 
 Dieser Node bereitet die Konditionierung und das leere Latent vor, die zur Generierung eines Videos mit dem MiniMax H3-Modell benötigt werden. Er nimmt einen Text-Prompt sowie optional Bilder für den ersten und/oder letzten Frame des Videos entgegen und wandelt sie in Modelleingaben um. Keyframe-Bilder werden skaliert, kodiert und an die Konditionierung am Anfang und Ende des Videos angehängt.
 

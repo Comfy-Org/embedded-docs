@@ -1,4 +1,4 @@
-# LTXVPreprocess
+# LTXV-Vorverarbeitung
 
 Der Node LTXVPreprocess wendet eine Videokomprimierungs-Vorverarbeitung auf Bilder an. Er simuliert den Qualitätsverlust der Videokompression, indem ein Bild als Einzelbild-MP4-Video codiert und anschließend wieder decodiert wird, wodurch Sie die Komprimierungsstufe steuern können.
 

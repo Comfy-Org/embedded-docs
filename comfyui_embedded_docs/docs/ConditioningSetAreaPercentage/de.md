@@ -1,4 +1,4 @@
-# ConditioningSetAreaPercentage
+# Konditionierung (Bereich mit Prozentsatz festlegen)
 
 Der Node ConditioningSetAreaPercentage ist darauf spezialisiert, den Einflussbereich von Conditioning-Elementen anhand prozentualer Werte anzupassen. Er ermöglicht die Angabe der Abmessungen und Position des Bereichs als Prozentsätze der Gesamtbildgröße sowie einen `strength`-Parameter, um die Intensität des Conditioning-Effekts zu modulieren.
 

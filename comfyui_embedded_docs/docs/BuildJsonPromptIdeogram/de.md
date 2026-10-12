@@ -1,4 +1,4 @@
-# BuildJsonPromptIdeogram
+# JSON-Prompt erstellen (Ideogram)
 
 Dieser Node erstellt einen strukturierten JSON-Prompt, der speziell für das Ideogram 4-Bildgenerierungsmodell formatiert ist. Er organisiert Ihre Textanweisungen, Stilpräferenzen, Kamera- oder Kunstdetails, Beleuchtung, Medium und optionale Farbpalette in die erforderliche JSON-Struktur, die das Modell erwartet.
 

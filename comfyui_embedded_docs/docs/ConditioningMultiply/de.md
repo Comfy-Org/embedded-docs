@@ -1,4 +1,4 @@
-# ConditioningMultiply
+# Konditionierung (Multiplizieren)
 
 Dieser Node multipliziert die Konditionierungswerte mit einem angegebenen Faktor, sodass Sie den Einfluss der Konditionierung auf den Generierungsprozess skalieren können. Dazu wird der Multiplikator sowohl auf den Haupt-Konditionierungstensor als auch auf die gepoolten Ausgabewerte angewendet.
 

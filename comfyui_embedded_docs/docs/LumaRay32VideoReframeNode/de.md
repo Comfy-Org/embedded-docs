@@ -1,4 +1,4 @@
-# LumaRay32VideoReframeNode
+# Luma Ray 3.2 Video neu einrahmen
 
 Dieser Node ändert das Seitenverhältnis eines vorhandenen Videos mit Luma Ray 3.2, wodurch die neu freigelegten Leinwandbereiche mit generierten Inhalten gefüllt werden. Das Quellvideo kann bis zu 30 Sekunden lang sein, und die Abrechnung erfolgt pro Sekunde der Ausgabe.
 

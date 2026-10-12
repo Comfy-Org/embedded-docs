@@ -1,4 +1,4 @@
-# CustomCombo
+# Benutzerdefinierte Auswahl
 
 Der Custom Combo-Node ermöglicht es Ihnen, Ihre eigene Liste von Textoptionen für ein Dropdown-Menü zu definieren, anstatt aus festen Werten auszuwählen. Es ist ein frontend-orientierter Node, der auch eine Backend-Darstellung besitzt, sodass Workflows, die ihn enthalten, kompatibel bleiben. Wenn Sie eine Option auswählen, gibt der Node den ausgewählten Text und seine Indexposition aus.
 

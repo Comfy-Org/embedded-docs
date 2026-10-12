@@ -1,4 +1,4 @@
-# MoGeGeometryToFOV
+# FoV aus MoGe-Geometrie abrufen
 
 Dieser Node leitet das Sichtfeld und die Brennweite aus den Kamera-Intrinsics ab, die in einem MoGe-Geometrieobjekt gespeichert sind. Er kann den vertikalen, horizontalen oder diagonalen FOV zurückgeben, in Grad oder Bogenmaß. Die vertikale FOV-Ausgabe kann beispielsweise verwendet werden, um den Node SAM3DBody_Predict zu versorgen.
 

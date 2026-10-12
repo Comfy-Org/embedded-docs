@@ -1,4 +1,4 @@
-# ByteDanceImageToVideoNode
+# ByteDance Bild zu Video
 
 Der Node „ByteDance Image to Video“ generiert über eine API Videos mit ByteDance-Modellen auf Basis eines Eingabebilds und eines Text-Prompts. Er nimmt ein Startbild als erstes Frame und erstellt eine Videosequenz, die der bereitgestellten Beschreibung folgt. Der Node bietet verschiedene Anpassungsoptionen für Videoauflösung, Seitenverhältnis, Dauer und andere Generierungsparameter.
 

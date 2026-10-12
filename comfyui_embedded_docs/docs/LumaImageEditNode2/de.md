@@ -1,4 +1,4 @@
-# LumaImageEditNode2
+# Luma UNI-1 Image Edit
 
 Dieser Node bearbeitet ein vorhandenes Bild mithilfe eines Text-Prompts, unterstützt durch das Luma UNI-1-Modell. Er nimmt ein Quellbild und eine Beschreibung der gewünschten Änderung entgegen und erzeugt anschließend eine neue bearbeitete Version des Bildes. Sie können zwischen den Modellen `uni-1` und `uni-1-max` wählen, den Stil anpassen, die Websuche aktivieren und optional bis zu 8 Referenzbilder bereitstellen.
 

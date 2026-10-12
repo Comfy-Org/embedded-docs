@@ -1,4 +1,4 @@
-# LumaImageNode
+# Luma Text to Image
 
 Erzeugt Bilder synchron anhand eines Text-Prompts und eines Seitenverhältnisses. Dieser Node erstellt Bilder mithilfe von Textbeschreibungen und ermöglicht es Ihnen, die Bildabmessungen und den Stil über verschiedene Referenzeingaben zu steuern, einschließlich Charakter- und Stilbildern.
 

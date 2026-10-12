@@ -1,4 +1,4 @@
-# Video Slice
+# Video zuschneiden
 
 Der Node „Video Slice“ ermöglicht es Ihnen, einen bestimmten Abschnitt aus einem Video zu extrahieren. Sie können eine Startzeit und eine Dauer festlegen, um das Video zuzuschneiden, oder einfach die Anfangsframes überspringen. Wenn die angeforderte Dauer länger als das verbleibende Video ist, kann der Node entweder den verfügbaren Teil zurückgeben oder einen Fehler auslösen.
 

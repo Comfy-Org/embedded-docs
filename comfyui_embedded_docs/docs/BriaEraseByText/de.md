@@ -1,4 +1,4 @@
-# BriaEraseByText
+# Bria Per Text löschen
 
 Dieser Node entfernt mit Bria ein in Klartext beschriebenes Objekt aus einem Bild. Bria rendert das gesamte Bild mit etwa 1 Megapixel neu, sodass das Ergebnis nicht pixelgenau am Eingangsbild ausgerichtet ist.
 

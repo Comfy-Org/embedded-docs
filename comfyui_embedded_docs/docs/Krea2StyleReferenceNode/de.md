@@ -1,4 +1,4 @@
-# Krea2StyleReferenceNode
+# Krea 2 Stilreferenz
 
 Der Node Krea 2 Style Reference ermöglicht es Ihnen, ein Referenzbild hinzuzufügen, um den Stil einer Krea 2-Bildgenerierung zu beeinflussen. Sie können mehrere Stilreferenzen miteinander verketten (bis zu insgesamt 10) und das kombinierte Ergebnis in einen Krea 2 Image-Node einspeisen. Jedes von Ihnen bereitgestellte Bild wird in den ComfyAPI-Speicher hochgeladen und als URL übergeben.
 

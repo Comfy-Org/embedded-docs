@@ -1,4 +1,4 @@
-# MeshyImageToModelNode
+# Meshy: Bild zu Modell
 
 Der Node Meshy: Image to Model verwendet die Meshy-API, um aus einem einzelnen Eingabebild ein 3D-Modell zu generieren. Er lädt Ihr Bild hoch, übermittelt eine Verarbeitungsaufgabe und gibt die generierten 3D-Modelldateien (GLB und FBX) zusammen mit der Task-ID zur Referenz zurück.
 

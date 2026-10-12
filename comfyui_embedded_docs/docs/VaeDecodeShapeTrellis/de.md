@@ -1,4 +1,4 @@
-# VaeDecodeShapeTrellis
+# Trellis2 VAE-Formdekodierung
 
 Dieser Node dekodiert Trellis2-Shape-Latent-Repräsentationen in ein 3D-Mesh. Er verwendet ein VAE, um Sparse-Shape-Latent-Daten in Mesh-Geometrie umzuwandeln, und gibt außerdem Shape-Unterteilungsdaten aus, die während der Dekodierung erzeugt werden. Der Node unterstützt sowohl einzelne als auch gebatchte Latent-Eingaben und passt die Mesh-Ausrichtung automatisch an das erwartete Koordinatensystem an.
 

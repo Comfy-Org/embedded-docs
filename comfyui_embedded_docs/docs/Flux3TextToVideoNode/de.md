@@ -1,4 +1,4 @@
-# Flux3TextToVideoNode
+# Flux 3 Text zu Video
 
 Erzeugt ein Video mit synchronisiertem Audio aus einem Text-Prompt unter Verwendung von FLUX 3. Der Node sendet Ihren Prompt an den FLUX 3-Dienst, wartet, bis die Generierung abgeschlossen ist, und gibt den fertigen Videoclip zurück.
 

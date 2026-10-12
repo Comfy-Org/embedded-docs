@@ -1,4 +1,4 @@
-# LoadTrainingDataset
+# Trainingsdatensatz laden
 
 Dieser Node lädt einen codierten Trainingsdatensatz (Latents und Conditioning), der zuvor auf der Festplatte gespeichert wurde. Er liest alle `shard_*.pkl`-Datenshard-Dateien aus einem ausgewählten Datensatzordner im datasets-Verzeichnis und gibt die kombinierten Latent-Vektoren und Conditioning-Daten zur Verwendung in Trainings-Workflows zurück.
 

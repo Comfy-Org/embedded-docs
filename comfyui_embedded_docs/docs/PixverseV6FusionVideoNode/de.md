@@ -1,4 +1,4 @@
-# PixverseV6FusionVideoNode
+# PixVerse V6 Fusion (Referenz zu Video)
 
 PixVerse V6 Fusion (Referenz zu Video) erstellt mit PixVerse ein Video aus Referenzsubjekten, Referenzhintergründen und Referenzvideos. Platzieren Sie eine Referenz in der Szene, indem Sie sie im Prompt benennen, zum Beispiel '@Subject1 walks through @Background1'. Das Verbinden eines Referenzvideos schaltet das Modell in den Omni-Modus um, in dem die Ausgabelänge dem längsten Referenzvideo entspricht.
 

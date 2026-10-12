@@ -1,4 +1,4 @@
-# VideoTemporalCrop
+# Video zuschneiden (temporal)
 
 Dieser Node schneidet einen fortlaufenden Bereich von Frames aus einem Video aus. Er arbeitet vollständig lazy, d. h. er verarbeitet nur den ausgewählten Teil des Videos, wenn er später im Workflow benötigt wird.
 

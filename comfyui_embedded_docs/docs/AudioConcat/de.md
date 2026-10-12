@@ -1,4 +1,4 @@
-# AudioConcat
+# Audio zusammenführen
 
 Der AudioConcat-Node kombiniert zwei Audio-Eingaben, indem er sie aneinanderfügt. Er nimmt zwei Audio-Eingaben entgegen und verbindet sie in der von Ihnen angegebenen Reihenfolge, wobei die zweite Audio-Eingabe entweder vor oder nach der ersten Audio-Eingabe platziert wird. Der Node verarbeitet automatisch unterschiedliche Audioformate, indem er Mono-Audio in Stereo umwandelt und die Abtastraten der beiden Eingaben aneinander angleicht.
 

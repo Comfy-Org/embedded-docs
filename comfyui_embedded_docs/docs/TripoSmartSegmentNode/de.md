@@ -1,4 +1,4 @@
-# TripoSmartSegmentNode
+# Tripo: Intelligente Segmentierung
 
 Zerlegt ein 3D-Modell in semantisch sinnvolle Teile und gibt jedem Teil einen Namen. Es kann entweder ein vorhandenes Modell segmentieren (das über eine Task-ID bereitgestellt wird) oder zuerst ein Modell aus einem Bild generieren und es dann segmentieren. Die resultierende `segment task_id` kann von anderen Tripo-Nodes wie Complete Mesh Parts, Retopology, Texture model und Convert model auf dieselbe Weise verwendet werden wie ein Tripo: Segment Model-Ergebnis.
 

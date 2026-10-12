@@ -1,4 +1,4 @@
-# HitPawGeneralImageEnhance
+# HitPaw Allgemeine Bildverbesserung
 
 Dieser Node verbessert niedrig aufgelöste Bilder, indem er sie auf Superauflösung hochskaliert und dabei Artefakte und Rauschen entfernt. Er sendet das Bild zur Verarbeitung an eine externe API und kann die Eingabegröße automatisch anpassen, um innerhalb des zulässigen Ausgabelimits zu bleiben. Die maximal zulässige Ausgabegröße beträgt 32 Megapixel.
 

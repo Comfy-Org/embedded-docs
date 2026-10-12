@@ -1,4 +1,4 @@
-# EmptyHunyuanVideo15Latent
+# Leeres Hunyuan Video 1.5 Latent
 
 Dieser Node erstellt einen leeren latenten Tensor, der speziell für die Verwendung mit dem HunyuanVideo 1.5-Modell formatiert ist. Er erzeugt einen leeren Ausgangspunkt für die Videogenerierung, indem er einen Tensor aus Nullen mit der richtigen Kanalanzahl und den räumlichen Dimensionen für den latenten Raum des Modells zuweist.
 

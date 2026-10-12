@@ -1,4 +1,4 @@
-# EmptyMiniMaxMusic3LatentAudio
+# Leeres MiniMax Music3 Audio-Latent
 
 Dieser Node erstellt ein leeres (mit Nullen gefülltes) Audio-Latent für das MiniMax Music3-Modell. Er wandelt die angeforderte Dauer in Sekunden in die entsprechende Anzahl an Audioframes um und erzeugt einen leeren Latent-Tensor der richtigen Größe, der als Ausgangspunkt für die Musikgenerierung verwendet werden kann.
 

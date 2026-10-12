@@ -1,4 +1,4 @@
-# HeyGenCreateAvatarNode
+# HeyGen-Avatar erstellen
 
 Erstellen Sie einen wiederverwendbaren HeyGen-Avatar aus einem Foto einer Person oder aus einem Text-Prompt, der eine zu generierende Figur beschreibt. Die resultierende `avatar_id` kann mit dem HeyGen Avatar Video-Node verwendet werden und sollte gespeichert werden, um den Avatar in zukünftigen Workflows wiederzuverwenden.
 

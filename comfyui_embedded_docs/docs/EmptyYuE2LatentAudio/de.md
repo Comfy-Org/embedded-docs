@@ -1,4 +1,4 @@
-# EmptyYuE2LatentAudio
+# Leeres YuE2-Latent-Audio
 
 Dieser Node erstellt ein leeres Audio-Latent für YuE2, dimensioniert auf eine gewählte Dauer und Batch-Anzahl. Er erzeugt stille Platzhalter-Audiodaten, die spätere Nodes während der Audiogenerierung füllen können.
 

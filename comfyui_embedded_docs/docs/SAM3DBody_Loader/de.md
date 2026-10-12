@@ -1,4 +1,4 @@
-# SAM3DBody_Loader
+# SAM3D-Körpermodell laden
 
 Lädt ein SAM3D-Body-Modell aus einer im Detection-Ordner gespeicherten Checkpoint-Datei und bereitet es für die Verwendung zur 3D-Körpererkennung vor. Der Node lädt die Modellgewichte, erkennt und wendet Quantisierungseinstellungen an, falls vorhanden, und umhüllt das Modell für die automatische Speicherverwaltung.
 

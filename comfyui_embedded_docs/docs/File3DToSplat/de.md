@@ -1,4 +1,4 @@
-# File3DToSplat
+# Splat abrufen
 
 Dieser Node wandelt eine 3D-Datei mit Gaussian-Splat-Daten in ein Gaussian-Splat-Format um, das im Node-Graph verwendet werden kann. Er unterstützt die Dateiformate PLY, SPLAT, KSPLAT und SPZ, wobei das Dateiformat automatisch aus dem Dateiinhalt erkannt wird.
 

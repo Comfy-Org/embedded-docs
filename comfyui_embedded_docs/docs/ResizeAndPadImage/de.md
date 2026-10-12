@@ -1,4 +1,4 @@
-# ResizeAndPadImage
+# Bild skalieren und auffüllen
 
 Der Node ResizeAndPadImage ändert die Größe eines Bildes, sodass es in vorgegebene Abmessungen passt, während das ursprüngliche Seitenverhältnis erhalten bleibt. Er skaliert das Bild proportional herunter, um in die Zielbreite und -höhe zu passen, und fügt anschließend an den Rändern Padding hinzu, um verbleibenden Platz auszufüllen. Die Padding-Farbe und die Interpolationsmethode können angepasst werden, um das Erscheinungsbild der aufgefüllten Bereiche und die Qualität der Größenänderung zu steuern.
 

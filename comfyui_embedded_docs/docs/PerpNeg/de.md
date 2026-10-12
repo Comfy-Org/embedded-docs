@@ -1,4 +1,4 @@
-# PerpNeg
+# Perp-Neg (VERALTET – durch Perp-Neg Guider ersetzt)
 
 Der PerpNeg-Node wendet senkrechte negative Guidance auf den Sampling-Prozess eines Modells an. Dieser Node ändert die Konfigurationsfunktion des Modells, um Rauschvorhersagen mithilfe negativer Konditionierung und Skalierungsfaktoren anzupassen. Er ist veraltet und wurde durch den PerpNegGuider-Node mit verbesserter Funktionalität ersetzt.
 

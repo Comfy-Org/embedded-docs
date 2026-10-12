@@ -1,4 +1,4 @@
-# TripoRetopologyNode
+# Tripo: Retopologie
 
 Tripo: Retopology nimmt ein hochauflösendes 3D-Modell, das von einem früheren Tripo-Node generiert wurde, und erstellt daraus eine niedrig aufgelöste Version mit sauberer Topologie. Es übermittelt das Modell an den Tripo-Retopology-Dienst, wartet auf den Abschluss der Aufgabe, lädt anschließend das fertige Modell herunter und stellt dessen Task-ID für die Verwendung durch andere Tripo-Nodes bereit.
 
@@ -16,7 +16,7 @@ Hinweis: Wenn `face_limit` auf -1 gesetzt ist, entscheidet Tripo die Flächenanz
 
 ## Ausgaben
 
-| Output Name | Beschreibung | Datentyp |
+| Ausgabename | Beschreibung | Datentyp |
 |-------------|-------------|-----------|
 | `model_file` | Abwärtskompatible Ausgabe, die die fertige Modelldatei identifiziert. Neuere Workflows sollten stattdessen die GLB- oder FBX-Ausgaben verwenden. | STRING |
 | `model task_id` | Task-ID des fertigen Retopology-Ergebnisses. Kann an andere Tripo-Nodes übergeben werden, um auf dieses Modell zu verweisen. | STRING |

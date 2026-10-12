@@ -1,4 +1,4 @@
-# DA3Render
+# Depth Anything 3 rendern
 
 Dieser Node rendert eine Visualisierung aus Depth Anything 3-Geometriedaten. Je nach ausgewähltem Ausgabemodus können Tiefenkarten, Konfidenzkarten oder Himmelsmasken ausgegeben werden.
 

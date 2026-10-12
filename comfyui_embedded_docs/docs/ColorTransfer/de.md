@@ -1,4 +1,4 @@
-# ColorTransfer
+# Farbe übertragen
 
 Der Node ColorTransfer passt die Farbpalette eines Zielbilds an die Farben eines Referenzbilds an. Er verwendet verschiedene mathematische Algorithmen, um die Farbeigenschaften wie Helligkeit, Kontrast und Farbtonverteilung vom Referenzbild auf das Zielbild zu analysieren und zu übertragen. Dies ist nützlich, um visuelle Konsistenz über mehrere Bilder hinweg zu erzeugen oder ein bestimmtes Color Grading anzuwenden.
 

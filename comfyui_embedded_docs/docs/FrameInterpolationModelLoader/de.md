@@ -1,4 +1,4 @@
-# FrameInterpolationModelLoader
+# Frame-Interpolationsmodell laden
 
 Dieser Node lädt eine Datei eines Frame-Interpolationsmodells und bereitet sie für die Verwendung im Workflow vor. Er erkennt automatisch, ob es sich bei der Datei um ein FILM- oder RIFE-Modell handelt, und konfiguriert das Modell für die verfügbare Hardware.
 

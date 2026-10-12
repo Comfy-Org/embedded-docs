@@ -1,4 +1,4 @@
-# ConditioningSetProperties
+# Kond.-Eigenschaften festlegen
 
 Der Node ConditioningSetProperties ändert die Eigenschaften von Conditioning-Daten, indem er die Stärke, Bereichseinstellungen anpasst und optionale Masken, Hooks oder Zeitschrittbereiche anwendet. Er ermöglicht Ihnen zu steuern, wie Conditioning den Generierungsprozess beeinflusst, indem Sie spezifische Parameter festlegen, die die Anwendung von Conditioning-Daten während der Bilderzeugung beeinflussen.
 

@@ -1,4 +1,4 @@
-# CreateBoundingBoxes
+# Bounding Boxes erstellen
 
 Dieser Node stellt eine Canvas-Oberfläche zum Zeichnen von Bounding-Boxen um Objekte oder Textbereiche in einem Bild bereit. Er gibt die Koordinaten der Bounding-Boxen im Pixelraum, strukturierte Elementdaten, die mit der Ideogram-Prompt-Formatierung kompatibel sind, und ein Vorschaubild aus, das die gezeichneten Boxen mit Beschriftungen und Farbpaletten zeigt.
 

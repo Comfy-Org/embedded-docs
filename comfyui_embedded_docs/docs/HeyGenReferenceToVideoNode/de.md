@@ -1,4 +1,4 @@
-# HeyGenReferenceToVideoNode
+# HeyGen Video 1.0 Referenz zu Video
 
 Erzeugen Sie mit HeyGen Video 1.0 ein Video mit synchronisiertem Dialog und Ton aus einem Text-Prompt, optional durch verbundenes Referenzmaterial geleitet. Bilder von Personen, Produkten oder Orten, Videos zur Wiederverwendung und Audioclips, die eine Stimme bereitstellen, können alle als Referenzen verwendet werden. Erwähnen Sie jede Referenz im Prompt als @Image1, @Video1 oder @Audio1, nummeriert pro Typ in der Reihenfolge, in der die Eingaben verbunden sind: Diese Tags werden in die von HeyGen erwarteten Labels umgeschrieben, und ein Tag, das auf eine nicht verbundene Referenz verweist, löst einen Fehler aus. Ohne Referenzbild oder -video läuft der Node als Text-zu-Video-Generierung.
 

@@ -1,4 +1,4 @@
-# GetImageSize
+# Bildgröße abrufen
 
 GetImageSize liest ein Eingabebild und gibt dessen Breite, Höhe und Batch-Größe zurück. Der Node zeigt diese gemessenen Werte auch direkt auf der Node-Oberfläche an.
 

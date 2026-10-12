@@ -1,4 +1,4 @@
-# RenderSplat
+# Splat rendern
 
 Rendern Sie einen Gaussian-Splat als Bild mithilfe eines anisotropen EWA-Rasterizers mit orientierten elliptischen Splats, Antialiasing und tiefensortiertem Front-to-Back-Rendering. Die Kamera stammt aus einer `camera_info`-Eingabe, oder Sie lassen sie leer, um den Splat automatisch einzupassen. Setzen Sie `frames` größer als 1 für einen Turntable-Batch von Bildern, der einen Video-Node speist.
 

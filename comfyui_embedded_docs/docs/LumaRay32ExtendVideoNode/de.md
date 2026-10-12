@@ -1,4 +1,4 @@
-# LumaRay32ExtendVideoNode
+# Luma Ray 3.2 Video erweitern
 
 Luma Ray 3.2 Extend Video setzt eine vorherige Luma Ray 3.2-Videogenerierung fort, indem ein neues 5-Sekunden-Segment entweder nach dem ursprünglichen Clip (Vorwärts) oder davor (Rückwärts) erstellt wird. Verbinden Sie die `generation_id`-Ausgabe eines früheren Luma Ray 3.2-Nodes, um diesen Clip als Startframe (Vorwärts) oder Endframe (Rückwärts) der Erweiterung zu verwenden. Erweiterungen sind immer 5 Sekunden lang.
 

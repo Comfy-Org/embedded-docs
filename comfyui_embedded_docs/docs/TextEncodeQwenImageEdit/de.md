@@ -1,4 +1,4 @@
-# TextEncodeQwenImageEdit
+# Text kodieren Qwen Image Edit
 
 Der TextEncodeQwenImageEdit-Node wandelt Text-Prompts und optionale Bilder in Conditioning-Daten für die Bilderzeugung oder Bildbearbeitung um. Er verwendet ein CLIP-Modell, um die Eingabe zu tokenisieren, und kann optional Referenzbilder mit einem VAE kodieren, um Referenz-Latents zu erzeugen. Wenn ein Bild bereitgestellt wird, wird es automatisch skaliert, um einen konsistenten Verarbeitungsmaßstab beizubehalten.
 

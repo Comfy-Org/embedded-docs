@@ -1,4 +1,4 @@
-# SaveLatent
+# Latent speichern
 
 SaveLatent speichert latente Tensoren als `.latent`-Dateien auf der Festplatte, damit sie später wiederverwendet oder geteilt werden können. Es nimmt latente Samples entgegen, schreibt sie mit einem automatisch generierten Namen in den Ausgabeordner und kann Workflow-Metadaten wie den Prompt in die gespeicherte Datei einbetten. Dieselben latenten Samples werden außerdem unverändert für die weitere Verarbeitung durchgereicht.
 

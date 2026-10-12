@@ -1,4 +1,4 @@
-# BatchMasksNode
+# Masken bündeln
 
 Der Node „Batch Masks“ kombiniert mehrere einzelne Maskeneingaben zu einem einzigen Batch. Er nimmt eine variable Anzahl von Maskeneingaben entgegen und gibt sie als einen einzelnen gebatchten Maskentensor aus, wodurch die Batch-Verarbeitung von Masken in nachfolgenden Nodes ermöglicht wird. Wenn die Eingabemasken unterschiedliche Größen haben, werden sie automatisch an die Abmessungen der ersten Maske angepasst.
 

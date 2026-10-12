@@ -1,4 +1,4 @@
-# ImageSharpen
+# Bild schärfen
 
 Der ImageSharpen-Node verbessert die Klarheit eines Bildes, indem er dessen Kanten und Details betont. Er wendet einen Schärfungsfilter auf das Bild an, dessen Intensität und Radius angepasst werden können, wodurch das Bild definierter und schärfer erscheint.
 

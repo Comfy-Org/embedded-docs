@@ -1,4 +1,4 @@
-# LumaRay32ImageToVideoNode
+# Luma Ray 3.2 Bild zu Video
 
 Erzeugen Sie ein Video aus einem Start- und/oder Endframe mit dem Ray 3.2-Modell von Luma. Bildverankerte Generierungen haben immer eine Dauer von 5 Sekunden.
 

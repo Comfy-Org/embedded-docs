@@ -1,4 +1,4 @@
-# StableCascade_StageC_VAEEncode
+# Stable Cascade Stage C VAE-Kodierung
 
 Der Node StableCascade_StageC_VAEEncode verarbeitet ein Eingabebild durch einen VAE-Encoder, um latente Repräsentationen für das Stable-Cascade-Modell zu erzeugen. Zunächst wird die Größe des Bildes basierend auf einem Komprimierungsfaktor und dem Downscale-Verhältnis des VAE angepasst, anschließend wird das angepasste Bild codiert. Der Node gibt zwei latente Tensoren aus: einen für Stage C (das tatsächliche codierte Ergebnis) und einen für Stage B (einen mit Nullen gefüllten Platzhalter).
 

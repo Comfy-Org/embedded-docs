@@ -1,4 +1,4 @@
-# HunyuanVideo15SuperResolution
+# Hunyuan Video 1.5 Super Resolution
 
 Der Node HunyuanVideo15SuperResolution bereitet Conditioning-Daten für einen Video-Super-Resolution-Prozess vor. Er nimmt eine latente Repräsentation eines Videos und optional ein Startbild entgegen und verpackt sie zusammen mit Rausch-Augmentierung und CLIP-Vision-Daten in ein Format, das von einem Modell verwendet werden kann, um eine Ausgabe mit höherer Auflösung zu erzeugen.
 

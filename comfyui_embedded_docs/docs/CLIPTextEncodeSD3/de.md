@@ -1,4 +1,4 @@
-# CLIPTextEncodeSD3
+# CLIP-Textkodierung (SD3)
 
 CLIPTextEncodeSD3 verarbeitet Texteingaben für Stable Diffusion 3-Modelle, indem es mehrere Text-Prompts mit verschiedenen CLIP-Modellen kodiert. Der Node verarbeitet drei separate Texteingaben (`clip_g`, `clip_l` und `t5xxl`) und bietet Optionen zur Verwaltung von leerem Text-Padding. Der Node stellt die korrekte Token-Ausrichtung zwischen den verschiedenen Texteingaben sicher und gibt Conditioning-Daten zurück, die für SD3-Generierungspipelines geeignet sind.
 

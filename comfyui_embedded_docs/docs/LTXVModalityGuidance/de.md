@@ -1,4 +1,4 @@
-# LTXVModalityGuidance
+# LTXV Modalitätssteuerung (A/V-Kopplung)
 
 Dieser Node wendet eine modalitätsübergreifende (Audio-Video-)Führung auf ein LTXV-AV-Modell an. Während des Samplings führt er pro Schritt einen zusätzlichen Forward-Pass aus, bei dem die Cross-Attention-Verbindungen von Audio zu Video und Video zu Audio deaktiviert sind, und treibt anschließend das Ergebnis in Richtung der gekoppelten Vorhersage, um die audio-visuelle Synchronisation, etwa Lip-Sync, zu verstärken. Der Referenzstandardwert für `modality_scale` ist 3.0; wird er auf 1.0 gesetzt, deaktiviert dies den zusätzlichen Pass, und er lässt sich mit dem Dual-CFG-Guider und STG kombinieren.
 

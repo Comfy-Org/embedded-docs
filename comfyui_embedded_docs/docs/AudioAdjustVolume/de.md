@@ -1,4 +1,4 @@
-# AudioAdjustVolume
+# Audiolautstärke anpassen
 
 Der AudioAdjustVolume-Node modifiziert die Lautstärke von Audio durch Anwendung von Lautstärkeanpassungen in Dezibel (dB). Er nimmt einen Audio-Eingang entgegen und wendet einen Verstärkungsfaktor basierend auf dem angegebenen Lautstärkepegel an, wobei positive Werte die Lautstärke erhöhen und negative Werte sie verringern. Der Node gibt das modifizierte Audio mit derselben Abtastrate wie das Original zurück.
 

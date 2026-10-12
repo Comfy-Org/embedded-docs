@@ -1,4 +1,4 @@
-# ConditioningSetAreaPercentageVideo
+# Konditionierung (Bereich mit Prozentsatz für Video festlegen)
 
 Der Node ConditioningSetAreaPercentageVideo modifiziert Konditionierungsdaten, indem er einen bestimmten räumlichen Bereich und zeitlichen Abschnitt für die Videogenerierung definiert. Er verwendet Prozentwerte relativ zu den Gesamtabmessungen, um Position, Größe und Dauer des Bereichs festzulegen, in dem die Konditionierung angewendet wird. Dies ist nützlich, um die Generierung auf bestimmte Teile einer Videosequenz zu fokussieren.
 

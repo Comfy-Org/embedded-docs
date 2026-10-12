@@ -1,4 +1,4 @@
-# RecraftV4TextToImageNode
+# Recraft V4 Text zu Bild
 
 Erzeugt Bilder aus Text-Prompts mit den Modellen Recraft V4 und V4.1. Es sendet den Prompt und die ausgewählten Einstellungen an die Recraft API und gibt das generierte Bild oder die generierten Bilder zurück. Wenn Stilreferenzbilder verwendet werden, wird auch die erzeugte Stil-ID zurückgegeben.
 

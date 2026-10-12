@@ -1,4 +1,4 @@
-# ShuffleImageTextDataset
+# Bild-Text-Paare mischen
 
 Dieser Node mischt eine Liste von Bildern und eine Liste von Texten gemeinsam, wobei deren Paarungen intakt bleiben. Er verwendet einen Zufalls-Seed, um die Mischreihenfolge zu bestimmen, sodass dieselben Eingabelisten bei erneuter Verwendung des Seeds jedes Mal auf dieselbe Weise gemischt werden.
 

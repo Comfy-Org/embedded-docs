@@ -1,4 +1,4 @@
-# TransformSplat
+# Transform Splat
 
 Der Node Transform Splat wendet Translation, Rotation und Skalierung auf einen Gaussian Splat an. Er verschiebt, dreht und skaliert den gesamten Splat als einzelnes Objekt und formt bei nicht-uniformer Skalierung zusätzlich jeden einzelnen Gaussian Splat neu, um präzise Ergebnisse zu erzielen.
 

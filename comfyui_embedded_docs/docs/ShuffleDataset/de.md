@@ -1,4 +1,4 @@
-# ShuffleDataset
+# Bilderliste mischen
 
 Der Node Shuffle Dataset nimmt eine Liste von Bildern entgegen und ändert deren Reihenfolge zufällig. Er verwendet einen Seed-Wert, um die Zufälligkeit zu steuern, wodurch sichergestellt wird, dass dieselbe Shuffle-Reihenfolge reproduziert werden kann. Dies ist nützlich, um die Reihenfolge der Bilder in einem Dataset vor der Verarbeitung zu randomisieren.
 

@@ -1,4 +1,4 @@
-# KlingTextToVideoWithAudio
+# Kling 2.6 Text zu Video mit Audio
 
 Der Node „Kling Text to Video with Audio“ generiert ein kurzes Video aus einer Textbeschreibung. Er sendet eine Anfrage an den Kling AI-Dienst, der den Prompt verarbeitet und eine Videodatei zurückgibt. Der Node kann außerdem begleitendes Audio für das Video basierend auf dem Text generieren.
 

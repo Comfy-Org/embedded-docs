@@ -1,4 +1,4 @@
-# RecraftImageToImageNode
+# Recraft V3 Bild zu Bild
 
 Dieser Node modifiziert ein vorhandenes Bild basierend auf einem Text-Prompt und einer Strength-Einstellung. Er sendet das Bild an die Recraft V3 API und gibt ein neues Bild zurück, das dem Prompt folgt und je nach Strength-Wert mehr oder weniger dem Original ähnelt.
 

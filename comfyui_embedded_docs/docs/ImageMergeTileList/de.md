@@ -1,4 +1,4 @@
-# ImageMergeTileList
+# Kachelliste zu Bild zusammenführen
 
 Dieser Node nimmt eine Liste von Bildkacheln entgegen und fügt sie wieder zu einem einzelnen, größeren Bild zusammen. Er wurde entwickelt, um ein Bild zu rekonstruieren, das zuvor in ein Raster aus überlappenden Kacheln aufgeteilt wurde, wobei eine gewichtete Mischtechnik verwendet wird, um ein nahtloses Endergebnis zu erzeugen.
 

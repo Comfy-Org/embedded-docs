@@ -1,4 +1,4 @@
-# ByteDance2TextToVideoNode
+# ByteDance Seedance 2.5 Text zu Video
 
 Dieser Node erzeugt ein Video aus einem Text-Prompt unter Verwendung der Modelle Seedance 2.5 oder 2.0 von ByteDance. Er sendet den Prompt an das ausgewählte Modell, wartet, bis die Videoverarbeitung abgeschlossen ist, und gibt die resultierende Videodatei zurück. Wenn Sie das Modell `Seedance 2.5 Draft` auswählen, wird stattdessen eine schnelle 480p-Vorschau gerendert; verbinden Sie die resultierende `draft_task_id` mit dem ByteDance Seedance 2.5 Draft to Final Video Node, um das 1080p-Finale zu rendern.
 

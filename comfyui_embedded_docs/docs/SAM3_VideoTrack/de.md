@@ -1,4 +1,4 @@
-# SAM3_VideoTrack
+# SAM3-Video-Tracking ausführen
 
 Verfolgen Sie Objekte über Videoframes hinweg mit dem speicherbasierten Tracker von SAM3. Der Node verarbeitet eine Sequenz von Videoframes und behält Objektidentitäten über Frames hinweg bei, wobei entweder initiale Masken oder Text-Prompts verwendet werden, um festzulegen, was verfolgt werden soll, und kann dabei neue Objekte mithilfe von Textkonditionierung erkennen.
 

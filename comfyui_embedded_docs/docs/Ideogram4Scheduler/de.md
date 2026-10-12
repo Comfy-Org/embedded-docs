@@ -1,4 +1,4 @@
-# Ideogram4Scheduler
+# Ideogram 4 Scheduler
 
 Der Node Ideogram 4 Scheduler erzeugt eine Sequenz von Sigma-Werten (Rauschpegeln) für den Diffusions-Sampling-Prozess, basierend auf dem Ideogram-4-Referenzzeitplan. Er erstellt einen benutzerdefinierten Rauschplan, der sich an die Bildabmessungen anpasst und eine Feinabstimmung über statistische Parameter ermöglicht.
 

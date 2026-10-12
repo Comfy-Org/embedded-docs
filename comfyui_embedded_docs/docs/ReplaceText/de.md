@@ -1,4 +1,4 @@
-# ReplaceText
+# Text ersetzen (VERALTET)
 
 Der Replace Text-Node führt eine einfache Textersetzung durch. Er sucht in der Eingabe nach einem angegebenen Textstück und ersetzt jedes Vorkommen durch ein neues Textstück. Der Vorgang wird auf alle Text-Eingaben angewendet, die dem Node bereitgestellt werden.
 

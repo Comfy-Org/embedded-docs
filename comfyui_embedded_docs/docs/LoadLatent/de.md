@@ -1,4 +1,4 @@
-# LoadLatent
+# Latent laden
 
 Der LoadLatent-Node lädt zuvor gespeicherte latente Repräsentationen aus .latent-Dateien im Eingabeverzeichnis. Er liest die latenten Tensor-Daten aus der ausgewählten Datei und wendet alle erforderlichen Skalierungsanpassungen an, bevor er die latenten Daten zur Verwendung in anderen Nodes zurückgibt.
 

@@ -1,4 +1,4 @@
-# TripoRigCheckNode
+# Tripo: Rig-Prüfung
 
 Dieser Node sendet die ID einer abgeschlossenen Tripo-3D-Modellaufgabe an die Tripo-API und prüft, ob dieses Modell geriggt werden kann. Er wartet, bis die Prüfung abgeschlossen ist, und gibt dann ein Ja/Nein-Ergebnis sowie den von Tripo empfohlenen Skeletttyp für das Modell zurück.
 

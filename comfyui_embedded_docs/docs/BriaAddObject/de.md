@@ -1,4 +1,4 @@
-# BriaAddObject
+# Bria Objekt hinzufügen
 
 Dieser Node fügt ein in Klartext beschriebenes Objekt mithilfe von Bria in ein Bild ein. Bria rendert das gesamte Bild mit etwa 1 Megapixel neu, sodass das Ergebnis nicht pixelgenau zum Eingabebild ausgerichtet ist.
 

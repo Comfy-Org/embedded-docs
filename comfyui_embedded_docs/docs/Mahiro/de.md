@@ -1,4 +1,4 @@
-# Mahiro
+# Positiv gewichtete Guidance
 
 Der Mahiro-Node modifiziert die Guidance-Funktion, um stärker auf die Richtung des positiven Prompts zu fokussieren, anstatt auf die Differenz zwischen positivem und negativem Prompt. Er erstellt ein gepatchtes Modell, das einen benutzerdefinierten Guidance-Skalierungsansatz unter Verwendung der Kosinusähnlichkeit zwischen normalisierten bedingten und unbedingten entrauschten Ausgaben anwendet. Dieser experimentelle Node hilft dabei, die Generierung stärker in die beabsichtigte Richtung des positiven Prompts zu lenken.
 

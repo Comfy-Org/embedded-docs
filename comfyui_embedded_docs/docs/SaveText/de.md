@@ -1,4 +1,4 @@
-# SaveText
+# Text speichern
 
 Der Node „Save Text“ schreibt Textinhalt in eine Datei im Ausgabeverzeichnis. Er unterstützt das Speichern im Format .txt, .csv, .md oder .json und übernimmt automatisch die JSON-Formatierung, wenn gültiges JSON bereitgestellt wird.
 
@@ -13,7 +13,7 @@ Der Node „Save Text“ schreibt Textinhalt in eine Datei im Ausgabeverzeichnis
 ### Hinweise
 
 - `text` ist eine erzwungene Eingabe und muss mit einem anderen Node verbunden werden; sie kann nicht direkt eingegeben werden.
-- Die gespeicherte Datei heißt `<filename_prefix>_<5-stelliger Zähler>.<Dateiendung>` und wird in das ComfyUI-Ausgabeverzeichnis geschrieben (in einen Unterordner, der vom Präfix abgeleitet wird).
+- Die gespeicherte Datei heißt `<filename_prefix>_<5-digit counter>.<extension>` und wird in das ComfyUI-Ausgabeverzeichnis geschrieben (in einen Unterordner, der vom Präfix abgeleitet wird).
 - Wenn das Format `"json"` ausgewählt wird, wird versucht, den Text als JSON zu parsen. Wenn das Parsen erfolgreich ist, wird der Inhalt mit einer Einrückung von 2 Leerzeichen formatiert geschrieben; wenn das Parsen fehlschlägt, wird der unveränderte Text geschrieben.
 - Der Node meldet die gespeicherte Datei an die Oberfläche zurück, sodass sie zusammen mit den anderen generierten Ausgabedateien angezeigt wird.
 

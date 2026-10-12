@@ -1,4 +1,4 @@
-# TemporalScoreRescaling
+# TSR – Zeitliche Score-Neuskalierung
 
 Dieser Knoten wendet Temporal Score Rescaling (TSR) auf ein Diffusionsmodell an. Er patcht das Modell so, dass während des Samplings der vorhergesagte Score oder das Rauschen neu skaliert wird, um die Vielfalt der generierten Ergebnisse zu steuern. Dies ist als Post-CFG-Funktion (Classifier-Free Guidance) implementiert.
 

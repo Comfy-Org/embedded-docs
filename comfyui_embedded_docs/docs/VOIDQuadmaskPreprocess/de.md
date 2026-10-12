@@ -1,4 +1,4 @@
-# VOIDQuadmaskPreprocess
+# VOID-Quadmask-Vorverarbeitung
 
 ## Überblick
 

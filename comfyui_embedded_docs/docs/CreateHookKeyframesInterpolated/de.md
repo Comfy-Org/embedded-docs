@@ -1,4 +1,4 @@
-# CreateHookKeyframesInterpolated
+# Hook-Keyframes interpoliert erstellen
 
 Erzeugt eine Sequenz von Hook-Keyframes mit interpolierten Stärkewerten zwischen einem Start- und Endpunkt. Der Node generiert mehrere Keyframes, die den Stärke-Parameter über einen angegebenen Prozentbereich des Generierungsprozesses sanft übergehen lassen, wobei verschiedene Interpolationsmethoden zur Steuerung der Übergangskurve verwendet werden.
 

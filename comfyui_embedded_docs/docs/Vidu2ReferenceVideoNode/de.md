@@ -1,4 +1,4 @@
-# Vidu2ReferenceVideoNode
+# Vidu2 Referenz-zu-Video-Generierung
 
 Der Node „Vidu2 Reference-to-Video Generation“ erstellt ein Video aus einem Text-Prompt und mehreren Referenzbildern. Sie können bis zu sieben Subjekte definieren, jedes mit einem eigenen Satz von Referenzbildern, und sie im Prompt mit `@subject{subject_id}` referenzieren. Der Node generiert ein Video mit konfigurierbarer Dauer, Seitenverhältnis und Bewegung.
 

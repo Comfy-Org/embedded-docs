@@ -1,4 +1,4 @@
-# ConvertArrayToString
+# Array in Zeichenfolge konvertieren
 
 Der Node „Convert Array to String“ nimmt ein Array (eine Liste) von Elementen und konvertiert es in einen formatierten JSON-String. Dies ist nützlich, wenn Sie Array-Daten für die Anzeige, Protokollierung oder Weitergabe an andere Systeme serialisieren müssen, die eine Zeichenketteneingabe erwarten.
 

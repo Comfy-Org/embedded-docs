@@ -1,4 +1,4 @@
-# EmptyHunyuanLatentVideo
+# Leeres Hunyuan Video 1.0 Latent
 
 Der Node `EmptyHunyuanLatentVideo` ähnelt dem Node `EmptyLatentImage`. Man kann ihn als leere Leinwand für die Videogenerierung betrachten, wobei Breite, Höhe und Länge die Eigenschaften der Leinwand definieren und die Batch-Größe die Anzahl der zu erstellenden Leinwände bestimmt. Dieser Node erstellt leere Leinwände, die für nachfolgende Videogenerierungsaufgaben bereit sind.
 

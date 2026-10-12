@@ -1,4 +1,4 @@
-# RecraftStyleV3RealisticImage
+# Recraft Style – Realistisches Bild
 
 Dieser Node erstellt eine Stilkonfiguration zur Generierung realistischer Bilder über die Recraft-API. Er wählt den Stil `realistic_image` aus und ermöglicht Ihnen, einen optionalen Substil auszuwählen, um das Erscheinungsbild der Ausgabe fein abzustimmen.
 

@@ -1,4 +1,4 @@
-# FluxVideoEditNode
+# Flux Video Edit
 
 Bearbeitet einen vorhandenen Videoclip anhand einer schriftlichen Anweisung. Sie können Objekte entfernen, hinzufügen oder ersetzen, die Umgebung ändern, das Material neu gestalten, Text im Bild ändern oder den gesprochenen Dialog ersetzen. Länge, Bildaufbau, Kamerabewegung und Audio stammen aus dem Quellclip; alles, was Sie im Prompt nicht erwähnen, soll daher unverändert bleiben.
 

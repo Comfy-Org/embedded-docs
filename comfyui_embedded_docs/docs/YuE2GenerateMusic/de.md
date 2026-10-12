@@ -1,4 +1,4 @@
-# YuE2GenerateMusic
+# YuE2 Musik generieren
 
 Erzeugt Musik-Tokens und akustische Konditionierung aus einem Stil, Liedtext und einer ABC-Notation. Es gibt die Konditionierung und die erzeugte Dauer in Sekunden zurück, die an den Empty YuE2 Latent Audio-Node übergeben werden sollten. Wenn die ABC-Eingabe leer bleibt, wird der ausgewählte Modus ignoriert und automatisch der Off-Modus verwendet.
 

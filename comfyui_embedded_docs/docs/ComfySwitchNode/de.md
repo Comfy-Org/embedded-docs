@@ -1,4 +1,4 @@
-# ComfySwitchNode
+# Wenn/Sonst-Schalter
 
 Der If/Else Switch-Node wählt anhand einer booleschen Bedingung zwischen zwei möglichen Eingaben aus. Wenn `switch` aktiviert (true) ist, wird die Eingabe `on_true` an den Ausgang weitergegeben; wenn deaktiviert (false), wird `on_false` weitergegeben. Die Eingaben werden lazy ausgewertet, sodass nur der ausgewählte Zweig ausgewertet wird und die andere Eingabe nicht verbunden werden muss.
 

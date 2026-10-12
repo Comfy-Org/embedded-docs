@@ -1,4 +1,4 @@
-# TripleCLIPLoader
+# CLIP laden (dreifach)
 
 TripleCLIPLoader lädt drei Text-Encoder-Modelle gleichzeitig und kombiniert sie zu einem einzelnen CLIP-Modell. Er wird für Workflows verwendet, die mehrere zusammenarbeitende Text-Encoder benötigen, wie etwa SD3, das die Modelle clip-l, clip-g und t5 verwendet.
 

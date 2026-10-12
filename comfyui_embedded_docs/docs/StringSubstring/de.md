@@ -1,4 +1,4 @@
-# StringSubstring
+# Teilzeichenfolge
 
 Der StringSubstring-Node extrahiert einen Teil eines Textes aus einer größeren Zeichenkette. Er verwendet eine Startposition und eine Endposition, um den Abschnitt zu definieren, den Sie extrahieren möchten, und gibt anschließend den Text zwischen diesen beiden Positionen zurück.
 

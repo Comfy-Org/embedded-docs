@@ -1,4 +1,4 @@
-# RecraftStyleV3InfiniteStyleLibrary
+# Recraft Style – Infinite Style Library
 
 Dieser Node ermöglicht es Ihnen, einen Stil aus Recrafts Infinite Style Library mithilfe einer vorhandenen UUID auszuwählen. Er ruft die Stilinformationen anhand der bereitgestellten Stil-ID ab und gibt sie zur Verwendung in anderen Recraft-Nodes zurück.
 

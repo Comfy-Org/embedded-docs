@@ -1,4 +1,4 @@
-# ComfyAndNode
+# Und
 
 Der And-Node führt eine logische UND-Operation auf einer Gruppe von Eingabewerten aus. Er gibt nur dann `true` zurück, wenn jeder verbundene Wert gemäß den Truthiness-Regeln von Python als wahr gilt. Dadurch eignet er sich, um zu prüfen, ob mehrere Bedingungen gleichzeitig erfüllt sind.
 

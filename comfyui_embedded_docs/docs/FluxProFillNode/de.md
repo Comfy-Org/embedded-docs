@@ -1,4 +1,4 @@
-# FluxProFillNode
+# Flux.1 Bild füllen
 
 Führt Inpainting an einem Bild basierend auf Maske und Prompt durch. Dieser Node verwendet das Flux.1-Modell, um maskierte Bereiche eines Bildes gemäß der bereitgestellten Textbeschreibung zu füllen und neuen Inhalt zu erzeugen, der zum umgebenden Bild passt.
 

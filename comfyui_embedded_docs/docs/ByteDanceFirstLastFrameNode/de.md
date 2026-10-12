@@ -1,4 +1,4 @@
-# ByteDanceFirstLastFrameNode
+# ByteDance Erstes/letztes Frame zu Video
 
 Dieser Node erzeugt ein Video mithilfe eines Text-Prompts sowie Bildern für das erste und letzte Frame. Dabei verwendet er Ihre Beschreibung und die beiden Keyframes, um eine vollständige Videosequenz zu erstellen, die zwischen ihnen übergeht. Der Node bietet verschiedene Optionen zur Steuerung der Auflösung, des Seitenverhältnisses, der Dauer und weiterer Generierungsparameter des Videos.
 

@@ -1,4 +1,4 @@
-# MeshyAnimateModelNode
+# Meshy: Modell animieren
 
 Dieser Node wendet eine bestimmte Animationsaktion auf einen zuvor geriggten 3D-Charakter unter Verwendung des Meshy-Dienstes an. Er nimmt eine Aufgaben-ID aus einem früheren Rigging-Vorgang und eine Aktions-ID entgegen, um die gewünschte Animation aus der Bibliothek auszuwählen, und gibt anschließend das animierte Modell sowohl im GLB- als auch im FBX-Dateiformat zurück.
 

@@ -1,4 +1,4 @@
-# Tencent3DTextureEditNode
+# Hunyuan3D: 3D-Textur bearbeiten
 
 Dieser Node verwendet die Tencent Hunyuan3D API, um die Texturen eines 3D-Modells zu bearbeiten. Sie stellen ein 3D-Modell und eine Textbeschreibung der gewünschten Änderungen bereit, und der Node gibt eine neue Version des Modells zurück, bei der die Texturen gemäß Ihrem Prompt neu gezeichnet wurden.
 

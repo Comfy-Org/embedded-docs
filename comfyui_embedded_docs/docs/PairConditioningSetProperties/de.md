@@ -1,4 +1,4 @@
-# PairConditioningSetProperties
+# Cond-Paar-Eigenschaften festlegen
 
 Der **PairConditioningSetProperties**-Node ermöglicht es Ihnen, Eigenschaften sowohl von positiven als auch negativen Conditioning-Paaren gleichzeitig zu ändern. Er wendet Stärkeanpassungen, Einstellungen für den Conditioning-Bereich sowie optionale Maskierungs- oder Timing-Steuerungen auf beide Conditioning-Eingaben an und gibt die geänderten positiven und negativen Conditioning-Daten zurück.
 

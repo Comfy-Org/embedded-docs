@@ -1,4 +1,4 @@
-# VAEDecodeAudio
+# VAE-Audio dekodieren
 
 Dieser Node wandelt eine latente Audiodarstellung mithilfe eines Variational Autoencoder (VAE) wieder in eine abspielbare Audiowellenform um. Er nimmt die kodierten Samples, dekodiert sie durch das ausgewählte VAE und normalisiert anschließend die resultierende Wellenform, damit der Gesamtlautstärkepegel konsistent bleibt. Das Ausgangsaudio verwendet die Audio-Abtastrate des VAE (standardmäßig 44100 Hz) oder die in den Eingabe-Samples gespeicherte Abtastrate, sofern eine vorhanden ist.
 

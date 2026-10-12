@@ -98,14 +98,38 @@ def is_outputs_heading(text: str) -> bool:
 
 
 # Localized "Required" table-header words observed in the repo.
-REQUIRED_HEADERS = {"required", "必填", "必需", "必須", "обязательный",
-                    "obligatorio", "obrigatório", "requis", "zorunlu",
-                    "الإلزامية", "إلزامي", "필수"}
+# Header cells that name the "Required" column, per locale. Matched as
+# substrings of the normalized cell (lowercased, spaces stripped, trailing
+# punctuation removed), so suffixed/prefixed forms like zh "是否必填",
+# ko "필수 여부", ru "Обязательность" and es "¿Requerido?" all resolve to the
+# same column. Without the localized stems — de "Erforderlich" especially —
+# the column is never located and the residue check below silently passes.
+REQUIRED_HEADERS = {
+    # en
+    "required",
+    # zh / zh-TW
+    "必填", "必需", "必要",
+    # ja / ko
+    "必須", "필수",
+    # ru
+    "обязательн",
+    # es / pt-BR / fr / it / de
+    "requerid", "requis", "obligatorio", "obrigatóri", "obligatoire",
+    "obbligator", "richiest", "erforderlich",
+    # tr
+    "zorunlu", "gerekli",
+    # ar
+    "إلزامي", "إجباري", "مطلوب", "الإلزامية",
+    # fa
+    "الزامی", "اجباری", "ضروری",
+    # he
+    "נדרש",
+}
 
 
 def _is_required_header(cell: str) -> bool:
-    c = cell.strip().lower()
-    return c in REQUIRED_HEADERS or "required" in c
+    c = cell.strip().lower().replace(" ", "").rstrip("?؟:：")
+    return any(word in c for word in REQUIRED_HEADERS)
 
 FENCE_INFO_RE = re.compile(r"^\s*(`{3,}|~{3,})")
 

@@ -1,4 +1,4 @@
-# SeedVR2PostProcessing
+# SeedVR2-Ausgabe nachbearbeiten
 
 Dieser Node richtet das generierte Bild am ursprünglichen skalierten Bild aus und wendet eine optionale Farbkorrektur an. Er nimmt die Ausgabe eines SeedVR2-Upscaling-Prozesses und passt sie an Farben und Dimensionen des ursprünglichen Referenzbilds an.
 

@@ -1,4 +1,4 @@
-# MetaMuseImageEditApi
+# Meta Muse Bildbearbeitung
 
 Bearbeitet oder kombiniert bis zu 10 Referenzbilder mithilfe eines Text-Prompts und Metas Muse Image-Modell. Beschreiben Sie die gewünschte Bearbeitung im Prompt und verweisen Sie bei Bedarf auf die Referenzbilder als `@Image1`, `@Image2` usw. Der Node lädt die Referenzbilder hoch, ruft die Meta Muse Image API auf und gibt das bearbeitete Ergebnis als Bild zurück.
 

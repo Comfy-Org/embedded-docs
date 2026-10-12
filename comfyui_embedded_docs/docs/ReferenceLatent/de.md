@@ -1,4 +1,4 @@
-# ReferenceLatent
+# Referenz-Latent festlegen
 
 Dieser Node legt das leitende Latent für ein Editiermodell fest. Er nimmt Conditioning-Daten und eine optionale Latent-Eingabe entgegen und modifiziert dann die Conditioning-Daten, um Referenz-Latent-Informationen aufzunehmen. Wenn das Modell dies unterstützt, können Sie mehrere Nodes vom Typ Set Reference Latent verketten, um mehrere Referenzbilder festzulegen.
 

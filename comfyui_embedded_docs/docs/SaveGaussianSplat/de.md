@@ -1,4 +1,4 @@
-# SaveGaussianSplat
+# Splat speichern
 
 Dieser Node speichert eine Gaussian-Splat-3D-Datei im Ausgabeverzeichnis. Er übernimmt den Speichervorgang der Datei und stellt Vorschaudaten für den 3D-Viewport bereit.
 

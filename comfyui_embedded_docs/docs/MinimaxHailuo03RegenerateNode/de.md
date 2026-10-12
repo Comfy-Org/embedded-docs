@@ -1,4 +1,4 @@
-# MinimaxHailuo03RegenerateNode
+# MiniMax H3 Erneut generieren in 2K
 
 Dieser Node rendert eine MiniMax H3 768P-Videoausgabe erneut in 2K-Auflösung. Er lädt das unveränderte 768P-Video und den exakten Prompt hoch, der zu seiner Generierung verwendet wurde, startet einen MiniMax H3-Neugenerierungsjob und gibt das neu gerenderte 2K-Video zurück. Wenn bei der ursprünglichen Generierung erste oder letzte Frames oder Referenzmedien verwendet wurden, verbinden Sie dieselben Eingaben.
 

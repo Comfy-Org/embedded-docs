@@ -1,4 +1,4 @@
-# MergeMeshes
+# Meshes zusammenführen
 
 MergeMeshes kombiniert mehrere Mesh-Eingaben zu einem einzigen Mesh, indem deren Vertices, Faces, UV-Koordinaten und Vertexfarben gestapelt und die Face-Indizes versetzt werden, sodass alle Teile korrekt zu einem durchgehenden Mesh verbunden werden.
 

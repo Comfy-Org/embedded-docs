@@ -1,4 +1,4 @@
-# SeedVR2Preprocess
+# SeedVR2-Eingabe vorverarbeiten
 
 Dieser Node bereitet ein in der Größe angepasstes Bild oder Video für das SeedVR2-Modell vor, indem er es auf die Form auffüllt, die das Modell erwartet. Pixelwerte werden auf den Bereich 0–1 begrenzt, Höhe und Breite werden auf Vielfache von 16 aufgefüllt, und die Frame-Anzahl wird durch Wiederholen des letzten Frames aufgefüllt, bis sie einem 4n+1-Muster (1, 5, 9, 13, ...) folgt. Der Alpha-Kanal wird während der Verarbeitung entfernt; der zugehörige Node Post-Process SeedVR2 Output stellt ihn später aus dem ursprünglichen, in der Größe angepassten Bild wieder her.
 

@@ -1,4 +1,4 @@
-# RebatchLatents
+# Latents neu bündeln
 
 Der Node RebatchLatents ist darauf ausgelegt, einen Batch latenter Repräsentationen auf Grundlage einer angegebenen Batch-Größe in eine neue Batch-Konfiguration umzuorganisieren. Er stellt sicher, dass die latenten Samples entsprechend gruppiert werden, wobei Variationen in Dimensionen und Größen berücksichtigt werden, um die weitere Verarbeitung oder Modellinferenz zu erleichtern.
 

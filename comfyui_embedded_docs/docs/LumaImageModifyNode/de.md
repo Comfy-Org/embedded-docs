@@ -1,4 +1,4 @@
-# LumaImageModifyNode
+# Luma Image to Image
 
 Modifiziert Bilder synchron basierend auf einem Text-Prompt und dem Seitenverhältnis des Originalbilds. Dieser Node nimmt ein Eingabebild entgegen und transformiert es gemäß dem bereitgestellten Prompt, wobei eine konfigurierbare Bildgewichtung verwendet wird, um zu steuern, wie stark das Originalbild verändert wird.
 

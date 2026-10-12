@@ -1,4 +1,4 @@
-# StableCascade_EmptyLatentImage
+# Leeres Stable Cascade Latent-Bild
 
 Der Node StableCascade_EmptyLatentImage erzeugt leere latente Tensoren für Stable-Cascade-Modelle. Er generiert zwei separate latente Repräsentationen – eine für Stufe C und eine für Stufe B – deren Dimensionen aus der Eingabeauflösung und den Kompressionseinstellungen berechnet werden. Dieser Node bietet einen Ausgangspunkt für die Stable-Cascade-Generierungspipeline.
 

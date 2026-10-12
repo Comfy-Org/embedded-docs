@@ -1,4 +1,4 @@
-# LumaRay32KeyframeNode
+# Luma Ray 3.2 Keyframe
 
 Dieser Node verankert ein Referenzbild an einer bestimmten Position auf der Zeitachse des Ausgabevideos von Luma Ray 3.2. Verbinden Sie diesen Node mit dem Eingang "keyframes" des Nodes Luma Ray 3.2 Keyframes to Video und verketten Sie mehrere Keyframes miteinander, indem Sie den optionalen Eingang "keyframes" anschließen.
 

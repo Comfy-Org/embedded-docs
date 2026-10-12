@@ -1,4 +1,4 @@
-# EmptyHunyuanImageLatent
+# Leeres Hunyuan Bild-Latent
 
 Der Node EmptyHunyuanImageLatent erzeugt einen leeren, vollständig mit Nullen gefüllten Latent-Raum für Hunyuan-Bildgenerierungsmodelle. Er erstellt ein leeres Ausgangs-Latent mit der angegebenen Breite, Höhe und Batch-Größe, das anschließend an nachgelagerte Nodes im Workflow weitergegeben werden kann. Der Latent-Tensor enthält 64 Kanäle, und jede räumliche Dimension entspricht der jeweiligen Pixel-Dimension geteilt durch 32.
 
@@ -12,7 +12,7 @@ Der Node EmptyHunyuanImageLatent erzeugt einen leeren, vollständig mit Nullen g
 
 ## Ausgaben
 
-| Output Name | Beschreibung | Datentyp |
+| Ausgabename | Beschreibung | Datentyp |
 |-------------|-------------|-----------|
 | `LATENT` | Ein leerer Latent-Tensor mit 64 Kanälen und Dimensionen von Höhe ÷ 32 mal Breite ÷ 32, bereit für die Hunyuan-Bildverarbeitung | LATENT |
 

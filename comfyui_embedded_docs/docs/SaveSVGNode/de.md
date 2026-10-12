@@ -1,4 +1,4 @@
-# SaveSVGNode
+# SVG speichern
 
 SVG-Dateien auf der Festplatte speichern. Dieser Node nimmt SVG-Daten als Eingabe entgegen und schreibt sie in das ComfyUI-Ausgabeverzeichnis, wobei die Dateibenennung mit Zählersuffixen automatisch übernommen wird. Wenn Workflow-Prompt-Informationen verfügbar sind, werden sie direkt als Metadaten-Element in die SVG-Datei eingebettet.
 

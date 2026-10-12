@@ -1,4 +1,4 @@
-# SolidMask
+# Einfarbige Maske erstellen
 
 Der SolidMask-Node erzeugt eine gleichmäßige Maske mit einem angegebenen Wert über ihre gesamte Fläche. Er wurde entwickelt, um Masken mit bestimmten Abmessungen und Intensität zu erstellen, was bei verschiedenen Bildverarbeitungs- und Maskierungsaufgaben nützlich ist.
 

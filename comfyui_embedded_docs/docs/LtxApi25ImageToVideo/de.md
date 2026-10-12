@@ -1,4 +1,4 @@
-# LtxApi25ImageToVideo
+# LTX 2.5 Image To Video
 
 Dieser Node erzeugt aus einem Startbild ein Video in professioneller Qualität mithilfe eines LTX 2.5-Modells. Sie beschreiben den Videoinhalt mit einem Text-Prompt, wählen eine Modellvariante aus und passen Dauer, Auflösung, Bildrate und Audiogenerierung an. Optional kann ein letztes Einzelbild angegeben werden, um das Ende des Videos festzulegen.
 

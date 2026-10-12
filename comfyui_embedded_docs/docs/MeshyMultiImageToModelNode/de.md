@@ -1,4 +1,4 @@
-# MeshyMultiImageToModelNode
+# Meshy: Mehrere Bilder zu Modell
 
 Dieser Node verwendet die Meshy-API, um aus mehreren Eingabebildern ein 3D-Modell zu generieren. Er lädt die bereitgestellten Bilder hoch, reicht eine Verarbeitungsaufgabe ein und gibt die resultierenden 3D-Modell-Dateien (GLB und FBX) zusammen mit der Aufgaben-ID zur Referenz zurück.
 

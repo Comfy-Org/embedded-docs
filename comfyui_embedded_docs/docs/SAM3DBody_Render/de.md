@@ -1,4 +1,4 @@
-# SAM3DBody_Render
+# 3D-Körperpose rendern
 
 Rendert 3D-Körperpose-Daten mit einem auswählbaren Stil in ein Bild. Der Node akzeptiert Pose-Daten vom SAM3D Body Tracker (MHR) oder von einem externen Y-up-Rig wie Kimodo und kann das Ergebnis über ein optionales Hintergrundbild (oder eine schwarze Leinwand, wenn keines bereitgestellt wird) komponieren. Verfügbare Render-Stile sind ein schattiertes 3D-Mesh, eine binäre Silhouette, 2D- und 3D-OpenPose-Skelette sowie Körperkapseln im SCAIL-Stil.
 

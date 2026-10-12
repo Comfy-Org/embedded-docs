@@ -1,4 +1,4 @@
-# RandomCropImages
+# Bild zuschneiden (zufällig)
 
 Der Node Random Crop Images wählt zufällig einen rechteckigen Bereich aus jedem Eingabebild aus und schneidet ihn auf eine angegebene Breite und Höhe zu. Dies wird üblicherweise für die Datenaugmentierung verwendet, um Variationen von Trainingsbildern zu erzeugen. Die zufällige Position für den Zuschnitt wird durch einen Seed-Wert bestimmt, wodurch sichergestellt wird, dass derselbe Zuschnitt reproduziert werden kann.
 

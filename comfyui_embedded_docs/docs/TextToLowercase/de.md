@@ -1,4 +1,4 @@
-# TextToLowercase
+# Text in Kleinbuchstaben umwandeln (VERALTET)
 
 Der Node „Text to Lowercase“ nimmt eine Textzeichenfolge als Eingabe entgegen und wandelt alle Zeichen in Kleinbuchstaben um. Es ist ein einfaches Hilfsmittel zur Vereinheitlichung der Groß-/Kleinschreibung von Text.
 

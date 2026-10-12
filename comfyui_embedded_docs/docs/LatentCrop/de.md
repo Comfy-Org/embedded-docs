@@ -1,4 +1,4 @@
-# LatentCrop
+# latent zuschneiden
 
 Der LatentCrop-Node ist dafür ausgelegt, Zuschneideoperationen an latenten Repräsentationen von Bildern durchzuführen. Er ermöglicht die Angabe der Zuschneideabmessungen und -position, wodurch gezielte Änderungen des latenten Raums möglich sind.
 

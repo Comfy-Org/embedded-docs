@@ -1,4 +1,4 @@
-# KlingMotionControl
+# Kling Bewegungssteuerung
 
 Der Kling Motion Control-Node erzeugt ein Video, indem er Bewegung, Gesichtsausdrücke und Kamerabewegungen aus einem Referenzvideo auf einen Charakter anwendet, der durch ein Referenzbild und einen Text-Prompt definiert wird. Er ermöglicht Ihnen zu steuern, ob die endgültige Ausrichtung des Charakters aus dem Referenzvideo oder dem Referenzbild stammt.
 

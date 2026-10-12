@@ -1,4 +1,4 @@
-# MeshSmoothNormals
+# Mesh-Normalen glätten
 
 Berechnen Sie glatte Normalen pro Vertex für ein Mesh und hängen Sie diese an. Meshes ohne Normalen werden von glTF-Viewern flach (pro Fläche) schattiert; dieser Node sorgt dafür, dass sie glatt schattiert werden. Bei einem Knickwinkel unter 180 werden Kanten, die schärfer als der Schwellenwert sind, hart gehalten, indem Vertices entlang dieser geteilt werden.
 

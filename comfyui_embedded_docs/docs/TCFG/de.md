@@ -1,4 +1,4 @@
-# TCFG
+# CFG mit tangentialer Dämpfung
 
 TCFG (Tangential Damping CFG) verfeinert die unbedingten (negativen) Vorhersagen, um sie während des Sampling-Prozesses besser an den bedingten (positiven) Vorhersagen auszurichten. Diese Technik verbessert die Ausgabequalität, indem sie eine tangentiale Dämpfung auf die unbedingte Führung anwendet, basierend auf dem Forschungspapier 2503.18137. Der Node ändert das Sampling-Verhalten des Modells, indem er anpasst, wie unbedingte Vorhersagen während der Classifier-Free-Guidance verarbeitet werden.
 

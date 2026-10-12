@@ -1,4 +1,4 @@
-# RecraftTextToVectorNode
+# Recraft V3 Text zu Vektor
 
 Erzeugt synchron SVG-Vektorillustrationen basierend auf einem Text-Prompt und einer Auflösung. Dieser Node sendet Ihren Prompt an die Recraft API und gibt den generierten SVG-Inhalt zurück.
 

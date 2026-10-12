@@ -1,4 +1,4 @@
-# ComfyOrNode
+# Oder
 
 Der Or-Node führt eine logische ODER-Operation für eine Gruppe von Eingabewerten aus. Er gibt `true` zurück, wenn mindestens einer der bereitgestellten Werte gemäß den standardmäßigen Truthiness-Regeln von Python als truthy gilt.
 

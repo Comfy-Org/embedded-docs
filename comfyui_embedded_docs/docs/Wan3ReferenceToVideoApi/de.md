@@ -1,4 +1,4 @@
-# Wan3ReferenceToVideoApi
+# Wan 3.0 Referenz-zu-Video
 
 Dieser Node erzeugt mit dem Wan 3.0-Modell ein Video aus einem Text-Prompt und optionalen Referenzbildern, -videos und -audios. Referenzmedien können frei kombiniert und im Prompt als @Image1, @Video1 und @Audio1 referenziert werden. Der Node übermittelt die Generierungsanfrage an die Wan-API und gibt das fertige Video zurück.
 

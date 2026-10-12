@@ -1,4 +1,4 @@
-# CreateHookLora
+# Hook-LoRA erstellen
 
 Der Node Create Hook LoRA erzeugt Hook-Objekte zum Anwenden von LoRA-Modifikationen (Low-Rank Adaptation) auf Modelle. Er lädt eine angegebene LoRA-Datei und erstellt Hooks, die die Modell- und CLIP-Stärken anpassen können, und kombiniert diese Hooks anschließend mit allen ihm übergebenen vorhandenen Hooks. Der Node verwaltet das Laden von LoRA effizient, indem er zuvor geladene LoRA-Dateien zwischenspeichert, um redundante Operationen zu vermeiden.
 

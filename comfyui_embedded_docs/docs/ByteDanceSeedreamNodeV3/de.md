@@ -1,4 +1,4 @@
-# ByteDanceSeedreamNodeV3
+# ByteDance Seedream 4.5 & 5.0
 
 ByteDance Seedream 4.5 & 5.0 erzeugt Bilder aus einem Text-Prompt (Text-zu-Bild) oder generiert/bearbeitet Bilder, die durch optionale Referenzbilder gesteuert werden, unter Verwendung der Modelle ByteDance Seedream 4.0, 4.5 und 5.0 mit bis zu 4K-Auflösung. Der Node sendet den Prompt und alle Referenzbilder an die ByteDance-API, wartet, bis die Generierungsaufgabe abgeschlossen ist, und gibt den resultierenden Bildtensor oder die resultierenden Tensoren zurück.
 

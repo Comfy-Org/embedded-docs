@@ -1,4 +1,4 @@
-# GrokImageEditNode
+# Grok Image Edit
 
 Der Grok Image Edit-Node modifiziert ein vorhandenes Bild basierend auf einem Text-Prompt. Er sendet die Eingabebilder und Ihre Beschreibung an die Grok-API und gibt ein oder mehrere neu generierte Bilder zurück, die dem Prompt folgen. Dieser Node ist als veraltet gekennzeichnet.
 

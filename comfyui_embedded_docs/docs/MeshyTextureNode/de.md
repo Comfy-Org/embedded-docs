@@ -1,4 +1,4 @@
-# MeshyTextureNode
+# Meshy: Modell texturieren
 
 Der Node „Meshy: Texture Model“ wendet KI-generierte Texturen auf ein vorhandenes 3D-Modell an. Er verwendet eine Task-ID aus einer vorherigen Meshy-3D-Generierungs- oder -Konvertierungsaufgabe und steuert den Texturierungsprozess entweder mit einem Textstil-Prompt oder einem Referenzbild. Der Node gibt das texturierte Modell in den Dateiformaten GLB und FBX zurück.
 

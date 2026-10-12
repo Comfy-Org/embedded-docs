@@ -1,4 +1,4 @@
-# StartLoop
+# Loop starten
 
 Der Start Loop-Node startet eine Schleifenstruktur innerhalb eines Workflows. Er führt den verbundenen Schleifenkörper einmal pro Iteration aus und kann Iterationen auf drei Arten zählen: eine feste Anzahl von Wiederholungen (simple), einen numerischen Indexbereich (For) oder einen Durchlauf pro Element in einer Liste (List). Jeder Durchlauf stellt den aktuellen Index, First/Last-Flags und einen optionalen mitgeführten Wert bereit, der von einer Iteration zur nächsten weitergegeben werden kann.
 

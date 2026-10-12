@@ -1,4 +1,4 @@
-# ConditioningCombine
+# Konditionierung (Kombinieren)
 
 Dieser Node kombiniert zwei Conditioning-Eingaben zu einer einzigen Ausgabe und führt deren Informationen effektiv zusammen. Die beiden Bedingungen werden mittels Listenverkettung kombiniert.
 

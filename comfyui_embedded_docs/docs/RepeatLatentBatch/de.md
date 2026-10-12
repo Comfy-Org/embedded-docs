@@ -1,4 +1,4 @@
-# RepeatLatentBatch
+# Latent-Batch wiederholen
 
 Der Node RepeatLatentBatch ist darauf ausgelegt, einen bestimmten Batch latenter Repräsentationen eine festgelegte Anzahl von Malen zu replizieren, möglicherweise einschließlich zusätzlicher Daten wie Rauschmasken und Batch-Indizes. Diese Funktionalität ist entscheidend für Vorgänge, die mehrere Instanzen derselben latenten Daten erfordern, wie Daten-Augmentierung oder bestimmte generative Aufgaben.
 

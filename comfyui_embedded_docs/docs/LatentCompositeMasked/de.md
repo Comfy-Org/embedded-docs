@@ -1,4 +1,4 @@
-# LatentCompositeMasked
+# Maskierte Latent-Komposition
 
 Der Node LatentCompositeMasked ist dafür ausgelegt, zwei latente Repräsentationen an angegebenen Koordinaten miteinander zu kombinieren, optional unter Verwendung einer Maske für ein kontrollierteres Zusammensetzen. Dieser Node ermöglicht die Erstellung komplexer latenter Bilder, indem Teile eines Bildes über ein anderes gelegt werden, wobei die Quellbildgröße für eine perfekte Passform angepasst werden kann.
 

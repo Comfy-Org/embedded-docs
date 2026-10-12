@@ -1,4 +1,4 @@
-# Vidu2StartEndToVideoNode
+# Vidu2 Start-/Endbild-zu-Video-Generierung
 
 Dieser Node erzeugt ein Video, indem er zwischen einem bereitgestellten Startbild und einem Endbild interpoliert, gesteuert durch einen Text-Prompt. Er verwendet ein angegebenes Vidu-Modell, um über eine festgelegte Dauer einen fließenden Übergang zwischen den beiden Bildern zu erzeugen.
 

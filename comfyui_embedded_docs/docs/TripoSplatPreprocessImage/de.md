@@ -1,4 +1,4 @@
-# TripoSplatPreprocessImage
+# TripoSplat-Bildvorverarbeitung
 
 Dieser Node schneidet jedes Eingabebild auf ein zentriertes Quadrat auf schwarzem Hintergrund zu und fügt Padding hinzu, um die angegebene Ausgabegröße zu erreichen. Er ist darauf ausgelegt, Bilder für das TripoSplat-3D-Modell vorzubereiten, indem er eine einheitliche quadratische Rahmung und eine optionale Erosion der Alpha-Matte gewährleistet, um Randartefakte zu vermeiden.
 

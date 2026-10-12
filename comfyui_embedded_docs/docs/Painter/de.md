@@ -1,4 +1,4 @@
-# Painter
+# Maler
 
 Der Painter-Node bietet eine interaktive Leinwand zum Erstellen oder Bearbeiten von Bildern und Masken direkt in ComfyUI. Er ermöglicht es Ihnen, mit einer leeren Leinwand oder einem vorhandenen Bild zu beginnen, mit einem Pinselwerkzeug darauf zu malen und sowohl das resultierende Bild als auch eine entsprechende Alpha-Maske auszugeben. Die Maske definiert die bemalten Bereiche, die dann über das Basisbild oder die Hintergrundfarbe gelegt werden.
 

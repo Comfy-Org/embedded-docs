@@ -1,4 +1,4 @@
-# SaveVideo
+# Video speichern
 
 Der Node Save Video speichert das eingegebene Video im Ausgabeverzeichnis von ComfyUI. Sie können das Dateinamenpräfix, das Containerformat, den Videocodec und Kodierungsoptionen wie die Qualität wählen. Der Node generiert automatisch einen eindeutigen Dateinamen mithilfe eines Zählers und kann Workflow-Metadaten in die gespeicherte Datei einbetten.
 

@@ -1,4 +1,4 @@
-# VideoRandomTemporalCrop
+# Video zuschneiden (zeitlich zufällig)
 
 Schneidet auf zufällige Weise einen fortlaufenden Bereich von Frames aus einem Eingabevideo heraus. Die Anzahl der beizubehaltenden Frames wird durch den Parameter `length` festgelegt, und die Startposition wird mithilfe des Parameters `seed` zufällig gewählt. Der Node arbeitet lazy, was bedeutet, dass das gesamte Video nicht verarbeitet wird, bis die Ausgabe nachgelagert verwendet wird.
 

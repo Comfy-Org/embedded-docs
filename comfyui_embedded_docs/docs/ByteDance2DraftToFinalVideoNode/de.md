@@ -1,4 +1,4 @@
-# ByteDance2DraftToFinalVideoNode
+# ByteDance Seedance 2.5 Draft in finales Video
 
 Dieser Node rendert das finale 1080p-Video eines Seedance 2.5 Drafts. Ein Draft ist eine schnelle 480p-Vorschau: In einem Seedance 2.5-Video-Node (Text-zu-Video, First-Last-Frame-zu-Video oder Referenz-zu-Video) setzen Sie `model` auf `Seedance 2.5 Draft`, führen Sie ihn aus und verbinden Sie dessen `draft_task_id`-Ausgabe hier. Das finale Video behält die Szene und die Bewegung des Drafts bei und verwendet den Prompt, die Referenzen, die Dauer, das Seitenverhältnis und die Audioeinstellung wieder, mit denen der Draft erzeugt wurde.
 

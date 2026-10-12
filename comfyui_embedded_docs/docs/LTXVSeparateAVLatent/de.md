@@ -1,4 +1,4 @@
-# LTXVSeparateAVLatent
+# AV-Latent trennen
 
 Der Node LTXVSeparateAVLatent teilt einen kombinierten audio-visuellen Latent in zwei separate Latents auf: einen mit den Videodaten und einen mit den Audiodaten. Dies funktioniert mit jedem audio-visuellen Modell, wie z. B. LTXV oder MiniMax H3. Der `samples`-Tensor wird entlang seiner ersten Dimension aufgeteilt, wobei das erste Element zum Video-Latent und das zweite Element zum Audio-Latent wird; falls eine `noise_mask` vorhanden ist, wird sie auf die gleiche Weise aufgeteilt.
 

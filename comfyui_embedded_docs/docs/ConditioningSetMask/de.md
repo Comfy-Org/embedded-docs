@@ -1,4 +1,4 @@
-# ConditioningSetMask
+# Konditionierung (Maske festlegen)
 
 Dieser Node dient dazu, das Conditioning eines generativen Modells zu verändern, indem eine Maske mit einer bestimmten Stärke auf bestimmte Bereiche angewendet wird. Er ermöglicht gezielte Anpassungen innerhalb des Conditionings und erlaubt eine präzisere Steuerung des Generierungsprozesses.
 

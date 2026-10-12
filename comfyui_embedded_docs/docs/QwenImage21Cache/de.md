@@ -1,4 +1,4 @@
-# QwenImage21Cache
+# Qwen Image 2.1 Cache
 
 Der QwenImage21Cache-Node konfiguriert den KV-Präfix-Cache des Qwen-Image 2.1-Modells: wo die zwischengespeicherten Keys und Values gespeichert werden und mit welcher Präzision. Text- und Referenz-Tokens werden einmal berechnet und über Sampling-Schritte hinweg wiederverwendet, was den Großteil der Geschwindigkeitssteigerung bei Edit-Workflows ausmacht. Mit diesem Node können Sie Speicher gegen Geschwindigkeit eintauschen oder den Cache vollständig deaktivieren. Dieser Node ist als experimentell gekennzeichnet.
 

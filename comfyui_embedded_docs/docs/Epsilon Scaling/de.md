@@ -1,4 +1,4 @@
-# Epsilon Scaling
+# Epsilon-Skalierung
 
 Dieser Node implementiert die Epsilon-Skalierungsmethode aus dem Forschungspapier „Elucidating the Exposure Bias in Diffusion Models“ (arxiv.org/2308.15321v6). Sie funktioniert, indem das vorhergesagte Rauschen während des Sampling-Prozesses skaliert wird, um Exposure-Bias zu reduzieren, was zu einer verbesserten Qualität der generierten Bilder führen kann. Diese Implementierung verwendet den im Forschungspapier empfohlenen „uniform schedule“ aufgrund seiner Praktikabilität und Wirksamkeit.
 

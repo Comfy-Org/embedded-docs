@@ -1,4 +1,4 @@
-# TripoPSeriesMultiviewToModelNode
+# Tripo P2: Mehransicht zu Modell
 
 Erzeugt ein Low-Poly-3D-Modell mit sauberer Topologie aus mehreren Ansichten desselben Motivs unter Verwendung von Tripos P2-Modell. Die Vorderansicht ist erforderlich, und ein bis drei der Ansichten links, hinten und rechts können hinzugefügt werden, um das Ergebnis zu verbessern. Das Modell wird als Dreiecksnetz (GLB) zurückgegeben oder, wenn `model.quad` aktiviert ist, als quad-dominantes Netz (FBX).
 

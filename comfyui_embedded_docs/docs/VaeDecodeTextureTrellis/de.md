@@ -1,4 +1,4 @@
-# VaeDecodeTextureTrellis
+# Trellis2 VAE-Texturdekodierung
 
 Dieser Node dekodiert ein Trellis2-Textur-Latent mithilfe eines VAE in Voxelfarben. Das eingegebene Latent enthält sparse Feature-Stichproben mit Koordinaten; der Node rekonstruiert die Farbe für jeden Voxel und gibt das Ergebnis als Voxelgitter zurück, das nachgelagerte Nodes wie PaintMesh verwenden können, um ein 3D-Mesh einzufärben.
 

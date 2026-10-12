@@ -1,4 +1,4 @@
-# LatentComposite
+# Latent-Komposition
 
 Der LatentComposite-Node dient dazu, zwei Latent-Repräsentationen zu einer einzigen Ausgabe zu mischen oder zusammenzuführen. Dieser Prozess ist essenziell, um zusammengesetzte Bilder oder Merkmale zu erstellen, indem die Eigenschaften der Eingabe-Latents auf kontrollierte Weise kombiniert werden.
 

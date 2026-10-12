@@ -1,4 +1,4 @@
-# Pixal3DMultiViewConditioning
+# Pixal3D Multi-View-Conditioning
 
 Der Node Pixal3D Multi-View Conditioning erstellt Conditioning-Daten aus einem festen Orbit-Kamera-Rig: Vorder-, linke, hintere und rechte Ansichten, die in 90-Grad-Schritten angeordnet sind und genau so verwendet werden, wie sie gerahmt sind. Verbinden Sie mindestens eine quadratische Ansicht des Objekts, und er bereitet passende positive und negative Conditioning-Daten für Pixal3D-Modelle vor.
 

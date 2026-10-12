@@ -1,4 +1,4 @@
-# ImageCropV2
+# Bild zuschneiden
 
 Der Node Crop Image extrahiert einen rechteckigen Bereich aus einem Eingabebild. Sie definieren den beizubehaltenden Bereich, indem Sie die Koordinaten der oberen linken Ecke sowie Breite und Höhe angeben. Der Node gibt anschließend den zugeschnittenen Teil des Originalbilds zurück.
 

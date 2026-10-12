@@ -1,4 +1,4 @@
-# ContextWindowsManual
+# Kontextfenster (manuell)
 
 Der Node Context Windows (Manual) ermöglicht es Ihnen, Kontextfenster für ein Modell während des Samplings manuell zu konfigurieren. Dabei werden überlappende Kontextsegmente mit einer angegebenen Länge, Überlappung und einem Scheduling-Muster erzeugt, sodass Daten in handhabbaren Blöcken verarbeitet werden und gleichzeitig die Kontinuität zwischen den Segmenten erhalten bleibt. Er bietet erweiterte Optionen zur Steuerung, wie Kontextfenster angewendet werden, einschließlich Noise-Shuffling, Beibehaltung von Conditioning und Korrekturen für kausale Fenster. Dieser Node ist experimentell.
 

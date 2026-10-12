@@ -1,4 +1,4 @@
-# RTDETR_detect
+# Echtzeiterkennung ausführen (RT-DETR)
 
 Der Node RT-DETR Detect führt eine Objekterkennung auf Eingabebildern mithilfe eines RT-DETR-Modells durch. Er identifiziert Objekte, gibt Bounding Boxes um sie herum zurück und kennzeichnet sie gemäß den Klassen des COCO-Datensatzes. Sie können die Ergebnisse nach Konfidenzwert und Objektklasse filtern und die Gesamtzahl der Erkennungen begrenzen.
 

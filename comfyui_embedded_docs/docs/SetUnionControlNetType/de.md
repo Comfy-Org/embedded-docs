@@ -1,4 +1,4 @@
-# SetUnionControlNetType
+# Union-ControlNet-Typ festlegen
 
 Der Node SetUnionControlNetType ermöglicht es Ihnen, auszuwählen, welchen Steuerungstyp ein Steuerungsnetzwerk verwendet. Er nimmt ein vorhandenes Steuerungsnetzwerk entgegen und erstellt eine geänderte Kopie mit dem ausgewählten Steuerungstyp, wobei das ursprüngliche Steuerungsnetzwerk unverändert bleibt. Wenn „auto“ ausgewählt ist, wird der gespeicherte Steuerungstyp gelöscht, damit der Typ automatisch erkannt werden kann.
 

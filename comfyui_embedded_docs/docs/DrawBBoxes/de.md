@@ -1,4 +1,4 @@
-# DrawBBoxes
+# Bounding Boxes zeichnen
 
 Der Node DrawBBoxes visualisiert Ergebnisse der Objekterkennung, indem er Bounding-Boxen, Beschriftungen und Konfidenzwerte auf ein Bild zeichnet. Wenn kein Eingabebild bereitgestellt wird, erstellt er eine leere Zeichenfläche, die groß genug ist, um alle gezeichneten Boxen aufzunehmen. Er unterstützt Stapelverarbeitung, sodass Sie verschiedene Erkennungssätze für mehrere Bilder zeichnen oder dieselben Erkennungen über einen Stapel hinweg wiederholen können.
 

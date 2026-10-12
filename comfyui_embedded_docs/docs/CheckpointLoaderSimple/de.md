@@ -1,4 +1,4 @@
-# CheckpointLoaderSimple
+# Checkpoint laden
 
 Lädt eine Diffusion-Modell-Checkpoint-Datei und teilt sie in drei Kernkomponenten auf: das Hauptmodell, das zum Denoising von Latents verwendet wird, den CLIP-Textencoder und den VAE-Bildencoder/-decoder. Der Node erkennt automatisch alle Modelldateien im Ordner `ComfyUI/models/checkpoints` sowie alle zusätzlichen Pfade, die in Ihrer `extra_model_paths.yaml`-Datei konfiguriert sind.
 

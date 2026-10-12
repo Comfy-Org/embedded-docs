@@ -1,4 +1,4 @@
-# ImageBatch
+# Bilder stapeln (VERALTET)
 
 Der Node `ImageBatch` ist darauf ausgelegt, zwei Bilder zu einem einzigen Batch zusammenzufassen. Wenn die Abmessungen der Bilder nicht übereinstimmen, skaliert er das zweite Bild automatisch auf die Abmessungen des ersten Bildes, bevor er sie zusammenfügt.
 

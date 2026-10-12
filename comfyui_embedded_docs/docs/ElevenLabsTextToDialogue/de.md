@@ -1,4 +1,4 @@
-# ElevenLabsTextToDialogue
+# ElevenLabs Text zu Dialog
 
 Der ElevenLabs Text to Dialogue-Node erzeugt aus Text einen Audio-Dialog mit mehreren Sprechern. Er ermöglicht es Ihnen, eine Konversation zu erstellen, indem Sie verschiedene Textzeilen und eigene Stimmen für jeden Teilnehmer angeben. Der Node sendet die Dialoganfrage an die ElevenLabs API und gibt das generierte Audio zurück.
 

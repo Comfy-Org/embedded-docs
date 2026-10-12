@@ -1,4 +1,4 @@
-# TopazVideoEnhance
+# Topaz Video Enhance (Legacy)
 
 Der Node Topaz Video Enhance verleiht Videos mit leistungsstarker Upscaling- und Wiederherstellungstechnologie neues Leben und nutzt eine externe API zur Verbesserung der Videoqualität. Er kann die Videoauflösung hochskalieren, die Bildrate durch Interpolation erhöhen und Kompression anwenden. Der Node verarbeitet ein eingehendes MP4-Video und gibt eine verbesserte Version basierend auf den ausgewählten Einstellungen zurück. Dieser Node ist als veraltet (Legacy) markiert.
 

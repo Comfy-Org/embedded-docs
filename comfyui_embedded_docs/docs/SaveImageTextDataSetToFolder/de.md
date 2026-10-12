@@ -1,4 +1,4 @@
-# SaveImageTextDataSetToFolder
+# Bild-Text speichern (in Ordner)
 
 Save Image-Text (to Folder) speichert einen Datensatz aus Paaren von Bildern und Textbeschriftungen in einem Ordner innerhalb des Ausgabeverzeichnisses von ComfyUI. Jedes Bild wird als PNG-Datei gespeichert, und die zugehörige Beschriftung wird als TXT-Datei mit demselben Basisdateinamen gespeichert, sodass jedes Bild mit seiner Beschreibung gepaart wird.
 

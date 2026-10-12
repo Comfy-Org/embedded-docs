@@ -1,4 +1,4 @@
-# RecraftCrispUpscaleNode
+# Recraft Crisp Bild-Upscale
 
 Dieser Node skaliert ein Bild synchron mit dem Tool „crisp upscale“ hoch. Er verbessert ein gegebenes Rasterbild, indem er dessen Auflösung erhöht, wodurch das Bild schärfer und sauberer wird. Wenn ein Stapel von Bildern bereitgestellt wird, wird jedes Bild unabhängig verarbeitet und die hochskalierten Ergebnisse werden als Stapel zurückgegeben.
 

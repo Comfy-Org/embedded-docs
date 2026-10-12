@@ -1,4 +1,4 @@
-# Flux3ImageToVideoNode
+# Flux 3 Bild zu Video
 
 Flux 3 Image to Video animiert 1 bis 10 Bilder mit FLUX 3. Jedes Bild wird zu einem Frame des Clips: Ein Bild eröffnet ihn, zwei morphen vom ersten zum zweiten, und weitere werden über ihn verteilt oder an von Ihnen gewählte Zeitpunkte angeheftet.
 

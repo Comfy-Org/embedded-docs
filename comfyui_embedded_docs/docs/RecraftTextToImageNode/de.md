@@ -1,4 +1,4 @@
-# RecraftTextToImageNode
+# Recraft V3 Text zu Bild
 
 Erzeugt Bilder synchron auf Basis von Prompt und Auflösung. Dieser Node verbindet sich mit der Recraft API, um Bilder aus Textbeschreibungen mit angegebenen Abmessungen sowie optionalen Stil- und Steuerparametern zu erstellen.
 

@@ -1,4 +1,4 @@
-# DualModelGuider
+# Dualer Modell-CFG-Guider
 
 Dieser Node ermöglicht die Verwendung von zwei unterschiedlichen Modellen während des geführten CFG-Sampling-Prozesses: ein Modell für den positiven (bedingten) Durchlauf und ein separates Modell für den negativen (unbedingten) Durchlauf. Wenn kein negatives Modell angegeben wird, verhält er sich wie ein Standard-CFG-Guider, der ein einzelnes Modell verwendet.
 

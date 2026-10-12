@@ -1,4 +1,4 @@
-# TripoSegmentNode
+# Tripo: Segment Model
 
 Dieser Node zerlegt ein 3D-Modell in einzelne Teile. Er sendet das Modell an den Tripo-Segmentierungsdienst, wartet, bis der Auftrag abgeschlossen ist, und gibt das segmentierte Modell im GLB-Format zusammen mit einer kommagetrennten Liste von Teilnamen zurück. Diese Teilnamen speisen nachgelagerte Schritte wie Tripo: Complete Mesh Parts, Tripo: Retopology und Tripo: Convert model.
 

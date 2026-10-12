@@ -1,4 +1,4 @@
-# GetItemFromList
+# Element aus Liste abrufen
 
 Dieser Node gibt ein einzelnes Element aus einer Liste zurück, ausgewählt anhand seiner Position. Sie geben die Liste und die Indexnummer des gewünschten Elements an, und der Node gibt dieses Element aus. Dadurch eignet er sich, um ein bestimmtes Element aus einer Gruppe von Werten auszuwählen, beispielsweise ein bestimmtes Bild aus einem Batch.
 

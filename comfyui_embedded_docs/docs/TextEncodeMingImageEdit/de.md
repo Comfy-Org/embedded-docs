@@ -1,4 +1,4 @@
-# TextEncodeMingImageEdit
+# Text kodieren Ming Image Edit
 
 Text Encode Ming Image Edit kodiert einen Text-Prompt in Conditioning für die Ming-Bildbearbeitung und mischt optional Referenzbilder ein. Der Prompt und die Referenzbilder werden von einem CLIP-Modell tokenisiert, und wenn ein VAE verbunden ist, werden die Referenzbilder zusätzlich in latente Frames kodiert, die an das Conditioning angehängt werden.
 

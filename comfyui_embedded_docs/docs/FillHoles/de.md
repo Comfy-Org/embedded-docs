@@ -1,4 +1,4 @@
-# FillHoles
+# Löcher füllen
 
 Dieser Node füllt Löcher in einem 3D-Mesh, indem er offene Randkanten erkennt und neue Flächen erstellt, um sie zu schließen. Er läuft auf der GPU, bewahrt vorhandene Geometrie und UVs und kann einzelne Meshes, Listen von Meshes oder Batches von Meshes verarbeiten.
 

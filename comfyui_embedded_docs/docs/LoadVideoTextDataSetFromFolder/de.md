@@ -1,4 +1,4 @@
-# LoadVideoTextDataSetFromFolder
+# Video-Text laden (aus Ordner)
 
 Dieser Node lädt Videodateien und die zugehörigen Textbeschriftungen aus einem Ordner innerhalb des ComfyUI-Eingabeverzeichnisses und gibt sie als zwei Listen zurück: Videos und Beschriftungen. Die Videoeinträge sind Lazy-Referenzen, sodass Frames erst dekodiert werden, wenn ein nachgelagerter Node sie benötigt. Unterstützte Formate sind MP4, AVI, MOV, WEBM, MKV und FLV; verschachtelte Ordner mit einem Präfix für die Wiederholungsanzahl (zum Beispiel `5_classname/`, wie es von Tools wie kohya-ss/sd-scripts verwendet wird) werden ebenfalls unterstützt.
 

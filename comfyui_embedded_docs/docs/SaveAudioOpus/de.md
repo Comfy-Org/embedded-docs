@@ -1,4 +1,4 @@
-# SaveAudioOpus
+# Audio speichern (Opus) (VERALTET)
 
 Der Node SaveAudioOpus speichert Audiodaten in einer Datei im Opus-Format, wobei Sie die Kodierungsqualität (Bitrate) und das Dateinamenpräfix für die exportierte Datei wählen können. Dieser Node ist veraltet und könnte in zukünftigen Versionen entfernt werden.
 

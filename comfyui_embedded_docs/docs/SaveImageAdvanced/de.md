@@ -1,4 +1,4 @@
-# SaveImageAdvanced
+# Bild speichern (Erweitert)
 
 Der **Save Image (Advanced)**-Node speichert die Eingabebilder in Ihrem ComfyUI-Ausgabeverzeichnis mit erweiterter Kontrolle über Dateiformat, Bittiefe und Farbraum. Er unterstützt das Speichern als PNG-, EXR- oder AVIF-Dateien (einschließlich animiertem AVIF) und kann Workflow-Metadaten in die gespeicherten Dateien einbetten.
 

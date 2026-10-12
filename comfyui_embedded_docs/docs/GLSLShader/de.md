@@ -1,4 +1,4 @@
-# GLSLShader
+# GLSL Shader
 
 Der **GLSL Shader**-Node ermöglicht es Ihnen, benutzerdefinierte Fragment-Shader in **GLSL ES 3.00** (WebGL-2.0-kompatibel) zu schreiben, um Bilder direkt auf der GPU zu verarbeiten. Sie können Bildeffekte wie Weichzeichnen, Farbkorrektur, Filmkorn, Glow und vieles mehr erstellen – alles mit GPU-Geschwindigkeit.
 

@@ -1,4 +1,4 @@
-# VAEDecodeHunyuan3D
+# Hunyuan 3D VAE-Dekodierung
 
 Der VAEDecodeHunyuan3D-Node wandelt latente Repräsentationen mithilfe eines VAE-Decoders in 3D-Voxeldaten um. Er verarbeitet die latenten Samples durch das VAE-Modell mit konfigurierbaren Chunking- und Auflösungseinstellungen, um volumetrische Daten zu erzeugen, die für 3D-Anwendungen geeignet sind.
 

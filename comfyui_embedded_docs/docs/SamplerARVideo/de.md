@@ -1,4 +1,4 @@
-# SamplerARVideo
+# Sampler AR Video
 
 Der Node „Sampler AR Video“ bietet eine spezialisierte Sampling-Methode für autoregressive Videomodelle, beispielsweise für Modelle, die Causal-Forcing- oder Self-Forcing-Techniken verwenden. Er verwaltet alle Parameter, die mit der autoregressiven (AR-)Schleife zusammenhängen, direkt im Workflow, sodass sich einfach konfigurieren lässt, wie das Modell Videoframes Schritt für Schritt generiert.
 

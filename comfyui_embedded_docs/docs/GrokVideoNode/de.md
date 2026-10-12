@@ -1,4 +1,4 @@
-# GrokVideoNode
+# Grok Video
 
 Der Node Grok Video erzeugt ein kurzes Video aus einer Textbeschreibung. Er kann mithilfe eines Prompts ein Video von Grund auf neu erstellen oder aus einem einzelnen Eingabebild ein Video generieren. Der Node sendet die Anfrage an eine externe API und gibt das generierte Video zurück.
 

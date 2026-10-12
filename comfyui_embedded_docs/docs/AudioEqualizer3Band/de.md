@@ -1,4 +1,4 @@
-# AudioEqualizer3Band
+# Audio-Equalizer (3-Band)
 
 Der Node Audio Equalizer (3-Band) ermöglicht es Ihnen, die Bass-, Mitten- und Höhenfrequenzen einer Audio-Wellenform anzupassen. Er wendet drei separate Filter an: einen Low-Shelf für den Bass, einen Peaking-Filter für die Mitten und einen High-Shelf für die Höhen. Jedes Band kann unabhängig über Einstellungen für Verstärkung, Frequenz und Bandbreite gesteuert werden.
 

@@ -1,4 +1,4 @@
-# Tencent3DPartNode
+# Hunyuan3D: 3D-Teil
 
 Dieser Node verwendet die Tencent Hunyuan3D API, um Komponenten eines 3D-Modells anhand seiner Struktur automatisch zu identifizieren und zu generieren. Er akzeptiert ein FBX-Modell, verarbeitet es und gibt eine neue FBX-Datei zurück.
 

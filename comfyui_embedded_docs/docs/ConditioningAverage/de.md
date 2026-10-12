@@ -1,4 +1,4 @@
-# ConditioningAverage
+# Konditionierung (Durchschnitt)
 
 Der Node `ConditioningAverage` wird verwendet, um zwei unterschiedliche Sätze von Conditioning (z. B. Text-Prompts) gemäß einem angegebenen Gewicht zu mischen und daraus einen neuen Conditioning-Vektor zu erzeugen, der zwischen beiden liegt. Durch Anpassen des Gewichtsparameters können Sie den Einfluss der jeweiligen Konditionierung auf das Endergebnis flexibel steuern. Dies eignet sich besonders für Prompt-Interpolation, Stilfusion und andere fortgeschrittene Anwendungsfälle.
 

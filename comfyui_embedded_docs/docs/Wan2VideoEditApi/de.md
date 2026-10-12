@@ -1,4 +1,4 @@
-# Wan2VideoEditApi
+# Wan 2.7 Videobearbeitung
 
 Der Node Wan 2.7 Video Edit bearbeitet ein Video mithilfe von Textanweisungen, Referenzbildern oder Stilübertragung. Er sendet das Eingabevideo (sowie etwaige Referenzbilder) an den Wan 2.7 Video-Edit-Dienst und gibt ein neu generiertes Video basierend auf den gewählten Einstellungen für Auflösung, Seitenverhältnis und Dauer zurück.
 

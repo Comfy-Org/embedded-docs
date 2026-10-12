@@ -1,4 +1,4 @@
-# DisableNoise
+# Rauschen deaktivieren
 
 Dieser Node stellt eine leere Rauschkonfiguration bereit, die die Rauschgenerierung während des Samplings deaktiviert. Er gibt ein spezielles Noise-Objekt aus, das keine Rauschdaten enthält, sodass jeder damit verbundene Node rauschbezogene Operationen überspringt. Er ist außerdem unter dem Alias „zero noise“ auffindbar.
 

@@ -1,4 +1,4 @@
-# RecraftV4TextToVectorNode
+# Recraft V4 Text zu Vektor
 
 Der Node Recraft V4 Text to Vector erzeugt Scalable Vector Graphics (SVG)-Illustrationen aus einer Textbeschreibung unter Verwendung der Modelle Recraft V4 und V4.1. Er verbindet sich mit der Recraft API, um basierend auf Ihrem Prompt eine oder mehrere SVG-Dateien zu erzeugen, und kann einen vorhandenen Vektorstil anwenden oder aus Referenzbildern einen neuen erstellen – wenn Referenzbilder verwendet werden, wird der erstellte Stil als `style_id` zur Wiederverwendung zurückgegeben.
 

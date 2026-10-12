@@ -1,4 +1,4 @@
-# MeshyRefineNode
+# Meshy: Entwurfsmodell verfeinern
 
 Der Node Meshy: Refine Draft Model nimmt ein 3D-Entwurfsmodell aus einer vorherigen Meshy-Aufgabe entgegen und verbessert es; optional können Texturen mithilfe eines Text-Prompts oder eines Referenzbilds hinzugefügt werden. Er übermittelt den Verfeinerungsauftrag an die Meshy-API und gibt das fertige Modell nach Abschluss der Aufgabe als GLB- und FBX-Dateien zurück.
 

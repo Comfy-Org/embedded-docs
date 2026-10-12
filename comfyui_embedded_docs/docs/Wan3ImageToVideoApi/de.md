@@ -1,4 +1,4 @@
-# Wan3ImageToVideoApi
+# Wan 3.0 Bild-zu-Video
 
 Dieser Node generiert mithilfe des Wan 3.0-Modells ein Video aus einem Startbild. Optional können Sie ein Endbild angeben, um zu steuern, wie das Video endet; das Modell erstellt dann ein Video, das vom ersten zum letzten Frame übergeht.
 

@@ -1,4 +1,4 @@
-# SAM3DBody_Predict
+# SAM3D-Körpervorhersage ausführen
 
 SAM3D Body Prediction führt eine 3D-Körper- und Handposenschätzung an Eingabebildern durch und erkennt dabei eine oder mehrere Personen pro Frame. Tracking-Daten oder Bounding-Boxes können zur Verbesserung der Erkennung bereitgestellt werden; wenn keines von beiden angegeben wird, fällt der Node auf die Einzelpersonenerkennung im Vollbild zurück.
 

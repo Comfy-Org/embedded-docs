@@ -1,4 +1,4 @@
-# KSamplerAdvanced
+# KSampler (Erweitert)
 
 Der Node KSamplerAdvanced wurde entwickelt, um den Sampling-Prozess durch erweiterte Konfigurationen und Techniken zu verbessern. Er soll anspruchsvollere Optionen für die Generierung von Samples aus einem Modell bieten und die grundlegenden Funktionen des KSampler erweitern.
 

@@ -1,4 +1,4 @@
-# CreateHookKeyframe
+# Hook-Keyframe erstellen
 
 Der Node „Create Hook Keyframe“ ermöglicht es Ihnen, bestimmte Punkte in einem Generierungsprozess zu definieren, an denen sich das Hook-Verhalten ändert. Er erstellt Keyframes, die die Stärke von Hooks bei bestimmten Prozentwerten des Generierungsfortschritts ändern. Diese Keyframes können miteinander verkettet werden, um komplexe Planungsmuster zu erstellen.
 

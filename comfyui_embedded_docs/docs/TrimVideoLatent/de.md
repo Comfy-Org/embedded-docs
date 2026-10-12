@@ -1,4 +1,4 @@
-# TrimVideoLatent
+# Video-latent kürzen
 
 Der Knoten TrimVideoLatent entfernt Frames vom Anfang einer latenten Videodarstellung. Er nimmt eine latente Videostichprobe entgegen und schneidet eine angegebene Anzahl von Frames vom Anfang ab, wobei der verbleibende Teil des Videos zurückgegeben wird. Dadurch können Videosequenzen verkürzt werden, indem die Anfangsframes entfernt werden.
 

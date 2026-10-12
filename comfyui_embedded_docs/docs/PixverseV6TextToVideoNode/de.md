@@ -1,4 +1,4 @@
-# PixverseV6TextToVideoNode
+# PixVerse V6 Text to Video
 
 Der Node PixVerse V6 Text to Video erzeugt ein Video aus einem Text-Prompt unter Verwendung des PixVerse-V6-Modells. Der Node sendet den Prompt zusammen mit dem gewählten Seitenverhältnis, der Auflösung, der Dauer und anderen Einstellungen an PixVerse, wartet, bis die Generierung abgeschlossen ist, und gibt anschließend das resultierende Video zurück – einschließlich einer nativen Audiospur, wenn die Audiogenerierung aktiviert ist.
 

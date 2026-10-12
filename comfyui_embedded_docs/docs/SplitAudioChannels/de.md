@@ -1,4 +1,4 @@
-# SplitAudioChannels
+# Audiokanäle aufteilen
 
 Der Node SplitAudioChannels trennt Stereo-Audio in einzelne linke und rechte Kanäle. Er nimmt einen Stereo-Audio-Eingang mit zwei Kanälen entgegen und gibt zwei separate Audio-Streams aus, einen für den linken Kanal und einen für den rechten Kanal.
 

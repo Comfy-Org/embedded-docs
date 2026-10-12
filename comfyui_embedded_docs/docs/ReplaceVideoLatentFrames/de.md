@@ -1,4 +1,4 @@
-# ReplaceVideoLatentFrames
+# Video-Latent-Frames ersetzen
 
 ReplaceVideoLatentFrames ersetzt eine Reihe von Frames in einem Ziel-Latent-Video durch Frames aus einem Quell-Latent-Video, beginnend bei einem angegebenen Frame-Index. Wenn kein Quell-Latent bereitgestellt wird, wird das Ziel-Latent unverändert zurückgegeben. Der Node unterstützt negative Indizes und protokolliert eine Warnung, wenn die Quell-Frames nicht in das Ziel passen.
 

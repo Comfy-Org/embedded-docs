@@ -1,4 +1,4 @@
-# MoGePanoramaInference
+# MoGe-Panorama-Inferenz ausführen
 
 Dieser Node führt eine Tiefenschätzung auf equirektangularen Panoramabildern durch. Er teilt das Panorama in 12 perspektivische Ansichten auf, führt das MoGe-Tiefenschätzungsmodell auf jeder Ansicht aus und führt die Ergebnisse pro Ansicht wieder zu einer einzelnen Tiefenkarte zusammen, die das gesamte Panorama abdeckt. Die pro Ansicht vorhergesagten Normalen und der metrische Maßstab werden ignoriert, da die Maßstäbe pro Ansicht an den Überlappungsnähten nicht ausgerichtet werden könnten.
 

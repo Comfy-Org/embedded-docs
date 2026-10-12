@@ -1,4 +1,4 @@
-# ByteDanceCreateVideoAsset
+# ByteDance Video-Asset erstellen
 
 Dieser Node erstellt ein persönliches Video-Asset für Seedance 2.0. Er lädt Ihr Eingabevideo hoch und registriert es in einer angegebenen Asset-Gruppe. Wenn Sie keine Gruppen-ID angeben, führt er Sie durch einen Echtpersonen-Verifizierungsprozess in Ihrem Browser, um zuerst eine neue Gruppe zu erstellen.
 

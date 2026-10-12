@@ -1,4 +1,4 @@
-# TrainLoraNode
+# LoRA trainieren
 
 Der TrainLoraNode erstellt und trainiert ein LoRA-Modell (Low-Rank Adaptation) auf einem Diffusionsmodell unter Verwendung der bereitgestellten Latents und Conditioning-Daten. Er ermöglicht das Fine-Tuning eines Modells mit benutzerdefinierten Trainingsparametern, Optimierern und Verlustfunktionen. Der Node gibt die trainierten LoRA-Gewichte, eine Loss-Verlauf-Map und die insgesamt abgeschlossenen Trainingsschritte aus.
 

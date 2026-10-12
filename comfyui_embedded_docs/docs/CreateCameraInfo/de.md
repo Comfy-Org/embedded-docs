@@ -1,4 +1,4 @@
-# CreateCameraInfo
+# Kamera-Info erstellen
 
 Der Node Create Camera Info erstellt eine Kamerainformationsstruktur für 3D-Rendering. Er unterstützt drei Modi zum Definieren der Kamera: Orbit (Yaw/Pitch/Distance um ein Ziel), look_at (explizite Weltposition) und Quaternion (Position plus Rotation). Das Koordinatensystem ist rechtshändig mit Y als Hochachse.
 

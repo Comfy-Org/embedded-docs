@@ -1,6 +1,6 @@
-# PixverseV6ExtendVideoNode
+# PixVerse V6 Video erweitern
 
-This node continues an existing video using the PixVerse V6 model, optionally generating a native audio track alongside the continuation. The source video must be shorter than 40 seconds and no larger than 1920 pixels on either side. The output keeps the source video's resolution, so the quality setting controls how well the continuation is rendered rather than the frame size.
+Dieser Node setzt ein vorhandenes Video mit dem PixVerse V6-Modell fort und kann dabei optional eine native Audiospur erzeugen. Das Quellvideo muss kürzer als 40 Sekunden und darf an keiner Seite größer als 1920 Pixel sein. Die Ausgabe behält die Auflösung des Quellvideos bei, sodass die Qualitätseinstellung steuert, wie gut die Fortsetzung gerendert wird, und nicht die Framegröße.
 
 ## Eingaben
 

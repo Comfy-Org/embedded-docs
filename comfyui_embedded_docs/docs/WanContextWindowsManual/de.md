@@ -1,4 +1,4 @@
-# WanContextWindowsManual
+# Wan-Kontextfenster
 
 Der Node WAN Context Windows (Manual) ermöglicht es Ihnen, Kontextfenster für Videomodelle im Wan-Stil manuell zu konfigurieren. Er wendet diese Einstellungen während des Samplings an und gibt Ihnen Kontrolle über die Fensterlänge, die Überlappung, die Zeitplanung und die Fusionsmethode, die verwendet werden, während das Modell das Video verarbeitet. Kontextlänge und Überlappung werden in echten Frames angegeben und intern für die 2D-Verarbeitung des Modells umgerechnet.
 

@@ -1,4 +1,4 @@
-# MinimaxImageToVideoNode
+# MiniMax Bild zu Video
 
 Erzeugt synchron Videos auf Basis eines Bildes und eines Prompts sowie optionaler Parameter unter Verwendung der MiniMax-API. Dieser Node nimmt ein Eingabebild und eine Textbeschreibung entgegen, um eine Videosequenz zu erstellen; dabei stehen verschiedene Modelloptionen und Konfigurationseinstellungen zur Verfügung.
 

@@ -1,4 +1,4 @@
-# TripoTextureNodeV2
+# Tripo: Modell texturieren
 
 Dieser Node fügt einem vorhandenen 3D-Modell aus einem Tripo-Workflow Texturen hinzu, das über eine Task-ID aus einem vorherigen Generierungsschritt identifiziert wird. Er kann PBR-Materialkarten oder eine einfarbige Textur erzeugen; das Ergebnis kann durch einen Textprompt, ein Stilbild oder Referenzbilder gesteuert werden.
 

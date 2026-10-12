@@ -1,4 +1,4 @@
-# SaveImageDataSetToFolder
+# Bild speichern (in Ordner) (VERALTET)
 
 Dieser Node speichert eine Liste von Bildern in einem angegebenen Ordner innerhalb des Ausgabeverzeichnisses von ComfyUI. Er schreibt jedes Bild als PNG-Datei auf die Festplatte und verwendet dabei ein konfigurierbares Dateinamenpräfix. Dieser Node ist veraltet und wird durch vorhandene Save-Image-Nodes ersetzt, bei denen der Zielordner im Dateinamenpräfix angegeben werden kann.
 

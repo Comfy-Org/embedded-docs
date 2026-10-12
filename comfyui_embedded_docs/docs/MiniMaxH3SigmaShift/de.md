@@ -1,4 +1,4 @@
-# MiniMaxH3SigmaShift
+# ModelSamplingMiniMaxH3
 
 Setzt die Video- und Audio-Flow-Shift-Werte für ein MiniMax H3-Modell. Der Video-Shift steuert den Sigma-Zeitplan des Samplers, und beide Shift-Werte werden an den internen Transformer des Modells übergeben, der sie verwendet, um den Audio-Zeitplan aus dem gemeinsamen Basisraster abzuleiten.
 

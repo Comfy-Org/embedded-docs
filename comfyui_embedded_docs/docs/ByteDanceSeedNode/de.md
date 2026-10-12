@@ -1,4 +1,4 @@
-# ByteDanceSeedNode
+# ByteDance Seed
 
 Generieren Sie Textantworten mit den Seed 2.0-Modellen von ByteDance. Geben Sie einen Text-Prompt an und verbinden Sie optional Bilder oder Videos, um dem Modell zusätzlichen Kontext zu geben. Das Modell wird aus den verfügbaren Seed 2.0-Varianten ausgewählt, und der Node gibt die Textantwort des Modells zurück.
 

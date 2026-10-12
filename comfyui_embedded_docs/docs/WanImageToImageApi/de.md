@@ -1,4 +1,4 @@
-# WanImageToImageApi
+# Wan Bild zu Bild
 
 Der Wan Image to Image-Node erzeugt ein Bild aus einem oder zwei Eingabebildern und einem Text-Prompt. Er transformiert Ihre Eingabebilder basierend auf der von Ihnen bereitgestellten Beschreibung und erstellt ein neues Bild, das das Seitenverhältnis Ihres ursprünglichen Eingabebilds beibehält. Das Ausgabebild ist unabhängig von der Eingabegröße fest auf 1,6 Megapixel eingestellt.
 

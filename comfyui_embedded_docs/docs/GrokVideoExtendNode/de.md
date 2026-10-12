@@ -1,4 +1,4 @@
-# GrokVideoExtendNode
+# Grok Video erweitern
 
 Der Node Grok Video Extend erweitert ein vorhandenes Video um eine nahtlose Fortsetzung basierend auf einem Text-Prompt. Geben Sie ein kurzes Quellvideo an und beschreiben Sie, was als Nächstes passieren soll; der Node gibt einen neuen Videoclip zurück, der das Original fortsetzt.
 

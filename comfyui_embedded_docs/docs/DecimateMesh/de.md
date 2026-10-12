@@ -1,4 +1,4 @@
-# DecimateMesh
+# Mesh reduzieren
 
 Vereinfacht ein 3D-Mesh auf eine Zielanzahl von Flächen mithilfe der QEM-Vereinfachung (Quadric Error Metric), wobei die Berechnung auf dem aktiven Compute-Gerät ausgeführt wird. Der Platzierungsmodus `"midpoint"` ist die cumesh-faithful-Voreinstellung, die die beste Qualität bietet und dünne Merkmale wie Haare bewahrt, während `"qem"` Vertices an der QEM-optimalen Position platziert, mit optionalen Linien- und Feature-Edge-Steuerungen. Das Ausgabe-Mesh bleibt verschweißt.
 

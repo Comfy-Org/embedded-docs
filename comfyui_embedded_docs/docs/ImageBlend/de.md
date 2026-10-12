@@ -1,4 +1,4 @@
-# ImageBlend
+# Bilder überblenden
 
 Der Node `ImageBlend` dient dazu, zwei Bilder basierend auf einem angegebenen Mischmodus und Mischfaktor miteinander zu mischen. Er unterstützt verschiedene Mischmodi wie normal, multiply, screen, overlay, soft light und difference und ermöglicht so vielseitige Bildmanipulations- und Compositing-Techniken. Dieser Node ist unerlässlich, um zusammengesetzte Bilder zu erstellen, indem die visuelle Interaktion zwischen zwei Bildebenen angepasst wird.
 

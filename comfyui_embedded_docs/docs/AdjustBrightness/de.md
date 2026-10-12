@@ -1,4 +1,4 @@
-# AdjustBrightness
+# Helligkeit anpassen
 
 Der Node „Adjust Brightness“ ändert, wie hell ein Bild erscheint. Er multipliziert die Farbwerte des Bildes mit einem `factor` und hält die Ergebnisse im gültigen Bereich von 0.0 bis 1.0. Ein Faktor von 1.0 lässt das Bild unverändert, Werte unter 1.0 machen es dunkler und Werte über 1.0 heller.
 

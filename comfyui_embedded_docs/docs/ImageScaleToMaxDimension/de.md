@@ -1,4 +1,4 @@
-# ImageScaleToMaxDimension
+# Bild auf maximale Abmessung skalieren
 
 Der Node ImageScaleToMaxDimension ändert die Größe von Bildern, sodass sie in eine angegebene maximale Dimension passen, während das ursprüngliche Seitenverhältnis beibehalten wird. Er ermittelt, ob das Bild im Hoch- oder Querformat vorliegt, und skaliert dann die größere Dimension auf die Zielgröße, während die kleinere Dimension proportional angepasst wird. Der Node unterstützt mehrere Hochskalierungsmethoden für unterschiedliche Anforderungen an Qualität und Leistung.
 

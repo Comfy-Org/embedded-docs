@@ -1,4 +1,4 @@
-# LoadImageTextDataSetFromFolder
+# Bild-Text laden (aus Ordner)
 
 Dieser Node lädt einen Datensatz aus Bild-Text-Bildbeschreibungspaaren aus einem ausgewählten Ordner und gibt sie als Liste zurück. Er unterstützt PNG-, JPG-, JPEG- und WEBP-Bilder und sucht für jedes Bild nach einer Bildbeschreibung in einer `.txt`-Datei mit demselben Basisnamen. Der Node unterstützt außerdem die Ordnerstruktur von kohya-ss/sd-scripts, bei der ein Unterordnername, der mit einer Zahl beginnt (z. B. `10_cats`), die Bilder in diesem Unterordner entsprechend oft in der Ausgabe wiederholt.
 

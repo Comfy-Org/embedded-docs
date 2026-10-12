@@ -1,4 +1,4 @@
-# LoadAudio
+# Audio laden
 
 Der LoadAudio-Node lädt Audiodateien aus dem Eingabeverzeichnis und konvertiert sie in ein Format, das von anderen Audio-Nodes in ComfyUI verarbeitet werden kann. Er liest Audiodateien und extrahiert sowohl die Wellenformdaten als auch die Abtastrate, wodurch diese für nachgelagerte Audioverarbeitungsaufgaben verfügbar werden.
 

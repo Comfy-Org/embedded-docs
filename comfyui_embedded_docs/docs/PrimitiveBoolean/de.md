@@ -1,4 +1,4 @@
-# PrimitiveBoolean
+# Boolean
 
 Der Boolean-Node gibt einen booleschen (true/false) Wert durch Ihren Workflow weiter. Er nimmt einen booleschen Eingabewert entgegen und gibt denselben Wert unverändert zurück, sodass Sie eine true/false-Einstellung an andere Nodes übergeben können, die eine benötigen.
 

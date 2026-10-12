@@ -1,4 +1,4 @@
-# MoGePointMapToMesh
+# MoGe-Punktkarte in Mesh umwandeln
 
 Dieser Node konvertiert eine MoGe-Punktkarte in ein 3D-Mesh. Er nimmt Geometriedaten, die von einem MoGe-Node zur Tiefenschätzung erzeugt wurden, und trianguliert sie zu einem Mesh mit UV-Koordinaten und einer optionalen Textur.
 

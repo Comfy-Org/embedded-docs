@@ -1,4 +1,4 @@
-# RecraftImageInpaintingNode
+# Recraft Bild-Inpainting
 
 Dieser Node ändert bestimmte Bereiche eines Bildes basierend auf einem Text-Prompt und einer Maske. Er verwendet die Recraft API, um nur die maskierten Bereiche intelligent zu bearbeiten, während der Rest des Bildes unverändert bleibt.
 

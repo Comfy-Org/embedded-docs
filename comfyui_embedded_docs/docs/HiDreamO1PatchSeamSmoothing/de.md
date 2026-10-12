@@ -1,4 +1,4 @@
-# HiDreamO1PatchSeamSmoothing
+# HiDream-O1 Patch-Nahtglättung
 
 Dieser Node reduziert sichtbare Nahtstellen in Bildern, die vom HiDream-O1-Modell erzeugt werden, indem die Modellausgabe über mehrere verschobene Patch-Grid-Positionen während des späteren Teils des Sampling-Prozesses gemittelt wird. Er führt das Modell mehrmals mit leicht unterschiedlichen Bildausrichtungen aus und mischt die Ergebnisse zusammen, was dabei hilft, die gitterartigen Artefakte zu eliminieren, die an Patch-Grenzen auftreten können.
 

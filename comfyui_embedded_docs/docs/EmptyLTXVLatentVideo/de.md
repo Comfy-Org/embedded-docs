@@ -1,4 +1,4 @@
-# EmptyLTXVLatentVideo
+# Leeres LTXV Latent-Video
 
 Der Node EmptyLTXVLatentVideo erstellt einen leeren (mit Nullen gefüllten) latenten Video-Tensor unter Verwendung der von Ihnen angegebenen Werte für Breite, Höhe, Länge und Batch-Größe. Er bietet einen leeren Ausgangspunkt für LTXV-Videogenerierungs-Workflows, wobei die latenten Dimensionen im Verhältnis zur angeforderten Videogröße automatisch komprimiert werden.
 

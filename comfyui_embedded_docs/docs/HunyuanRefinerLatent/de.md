@@ -1,4 +1,4 @@
-# HunyuanRefinerLatent
+# Hunyuan-Latent-Verfeinerer
 
 Der Node HunyuanRefinerLatent bereitet Conditioning- und Latent-Daten für den Hunyuan-Video-Verfeinerungsprozess vor. Er hängt die eingegebenen latenten Bilddaten sowohl an das positive als auch an das negative Conditioning an, wendet einen Rausch-Augmentierungswert auf beide an und erstellt ein neues, mit Nullen gefülltes Latent mit 32 Kanälen für die weitere Verarbeitung.
 

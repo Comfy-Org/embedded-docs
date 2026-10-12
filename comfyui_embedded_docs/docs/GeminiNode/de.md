@@ -1,4 +1,4 @@
-# GeminiNode
+# Google Gemini
 
 Dieser Node ermöglicht es Benutzern, mit den Gemini-KI-Modellen von Google zu interagieren, um Textantworten zu generieren. Sie können verschiedene Eingabetypen bereitstellen, darunter Text, Bilder, Audio, Video und Dateien, die als Kontext für das Modell dienen, damit es relevantere und aussagekräftigere Antworten generieren kann. Der Node übernimmt die gesamte API-Kommunikation und das Parsen der Antworten automatisch.
 

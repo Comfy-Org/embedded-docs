@@ -1,4 +1,4 @@
-# TripoImageToModelNode
+# Tripo: Bild zu Modell (veraltet)
 
 Generiert synchron 3D-Modelle basierend auf einem einzelnen Bild unter Verwendung der Tripo-API. Stellen Sie ein Eingabebild bereit, und der Node erstellt daraus ein fertiges 3D-Modell, mit optionalen Steuerungen für Modellversion, Texturgenerierung, Detailgrad und Ausgabeformat. Dies ist die Legacy-Version des Bild-zu-Modell-Nodes, die für ältere Workflows beibehalten wurde.
 

@@ -1,4 +1,4 @@
-# BriaTransparentVideoBackground
+# Bria Videohintergrund entfernen (transparent)
 
 Dieser Node entfernt den Hintergrund aus einem Video mithilfe des KI-Dienstes von Bria und gibt die freigestellten Frames zusammen mit einer Alpha-Maske aus. Verbinden Sie beide Ausgaben mit einem Compositing-Node oder führen Sie sie einem Save WEBM-Node zu, um ein transparentes Video zu schreiben.
 

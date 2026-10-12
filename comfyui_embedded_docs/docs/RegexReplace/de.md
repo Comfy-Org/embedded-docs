@@ -1,4 +1,4 @@
-# RegexReplace
+# Text ersetzen (Regex)
 
 Der RegexReplace-Node sucht und ersetzt Text in Zeichenketten mithilfe von Mustern regulärer Ausdrücke. Er ermöglicht die Suche nach Textmustern und deren Ersetzung durch neuen Text, mit Optionen zur Steuerung der Mustererkennung, einschließlich Groß-/Kleinschreibung, Mehrzeilenübereinstimmung und Begrenzung der Anzahl der Ersetzungen.
 

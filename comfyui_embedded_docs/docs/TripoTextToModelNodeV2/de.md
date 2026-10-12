@@ -1,4 +1,4 @@
-# TripoTextToModelNodeV2
+# Tripo: Text zu Modell
 
 Erzeugt mithilfe des Tripo-Dienstes ein 3D-Modell aus einer Textbeschreibung. Der Node sendet den Prompt und die Einstellungen an Tripo, wartet auf den Abschluss der Generierungsaufgabe und gibt die fertige 3D-Datei zusammen mit der Aufgabenkennung zurück.
 

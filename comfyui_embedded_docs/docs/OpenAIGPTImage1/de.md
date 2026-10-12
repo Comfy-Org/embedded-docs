@@ -1,4 +1,4 @@
-# OpenAIGPTImage1
+# OpenAI GPT Image 2
 
 Erzeugt Bilder synchron über den GPT Image-Endpunkt von OpenAI. Es kann neue Bilder aus einem Text-Prompt erstellen oder vorhandene Bilder bearbeiten, wenn ein Eingabebild und eine optionale Maske bereitgestellt werden. Der Node unterstützt die Modelle `gpt-image-1`, `gpt-image-1.5` und `gpt-image-2` und ist als veraltet markiert.
 

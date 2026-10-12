@@ -1,4 +1,4 @@
-# GetSplatCount
+# Splat-Anzahl abrufen
 
 Der Node Get Splat Count gibt die Gesamtzahl der Splats (Gauß-Punkte) in einem Splat-Batch zurück, summiert über alle Elemente im Batch. Er leitet die ursprünglichen Splat-Daten unverändert weiter und stellt gleichzeitig eine Zählung bereit, wie viele einzelne Splats enthalten sind.
 

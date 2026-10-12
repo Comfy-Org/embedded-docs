@@ -1,4 +1,4 @@
-# BriaRestorePhoto
+# Bria Foto restaurieren
 
 Dieser Node repariert alte oder beschädigte Fotografien über die Bria API. Er entfernt Korn, Kratzer und Unschärfe, neutralisiert altersbedingte Farbstiche, kann Kartonpassepartouts und Studioränder wegschneiden und Gesichter neu zeichnen. Das Ergebnis wird mit etwa 1 Megapixel neu gerendert, daher ist es nicht pixelgenau am Eingang ausgerichtet.
 

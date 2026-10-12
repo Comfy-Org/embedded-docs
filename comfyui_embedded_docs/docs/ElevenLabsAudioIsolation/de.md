@@ -1,4 +1,4 @@
-# ElevenLabsAudioIsolation
+# ElevenLabs Voice Isolation
 
 Der ElevenLabs Voice Isolation-Node entfernt Hintergrundgeräusche aus einer Audiodatei und isoliert die Stimme bzw. Sprache. Er sendet das Audio zur Verarbeitung an die ElevenLabs-API und gibt das bereinigte Audio zurück.
 

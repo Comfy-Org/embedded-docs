@@ -1,4 +1,4 @@
-# BeebleSwitchXImageEdit
+# Beeble SwitchX-Bildbearbeitung
 
 Bearbeiten Sie ein einzelnes Bild mit Beeble SwitchX. Dieser Node kann alles in der Szene austauschen (Hintergrund, Beleuchtung, Kostüm), während die Pixel des ursprünglichen Motivs erhalten bleiben. Geben Sie ein Referenzbild und/oder einen Text-Prompt an, um das neue Aussehen zu beschreiben. Die maximale Auflösung beträgt etwa 2,77 Megapixel.
 

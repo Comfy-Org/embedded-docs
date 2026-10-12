@@ -1,4 +1,4 @@
-# EmptyLatentHunyuan3Dv2
+# Leeres Hunyuan 3D v2 Latent
 
 Dieser Node erstellt einen Batch leerer (ausschließlich aus Nullen bestehender) Latent-Samples, die für Hunyuan3Dv2-3D-Generierungsmodelle formatiert sind. Er erzeugt den korrekt geformten Latent-Tensor, der als Ausgangspunkt für 3D-Generierungsworkflows dient, wobei das Latent mit dem Typ „hunyuan3dv2“ gekennzeichnet ist.
 

@@ -1,4 +1,4 @@
-# ElevenLabsVoiceSelector
+# ElevenLabs-Stimmenauswahl
 
 Der ElevenLabs Voice Selector-Node ermöglicht es Ihnen, eine bestimmte Stimme aus einer vordefinierten Liste von ElevenLabs-Text-to-Speech-Stimmen auszuwählen. Er nimmt einen Stimmennamen als Eingabe entgegen und gibt die entsprechende Stimmenkennung aus, die für die Audiogenerierung benötigt wird. Dieser Node vereinfacht den Prozess der Auswahl einer kompatiblen Stimme für die Verwendung mit anderen ElevenLabs-Audio-Nodes.
 

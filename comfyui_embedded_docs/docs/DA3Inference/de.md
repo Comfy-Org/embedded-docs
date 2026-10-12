@@ -1,4 +1,4 @@
-# DA3Inference
+# Depth Anything 3 ausführen
 
 Dieser Node führt das Depth Anything 3-Modell auf einem Bild aus, um Tiefen- und Geometrieinformationen zu schätzen. Im Multiview-Modus werden mehrere Bilder gemeinsam als separate Ansichten derselben Szene verarbeitet, um geometrisch konsistente Tiefenkarten und Kameraposen zu erzeugen.
 

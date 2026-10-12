@@ -1,4 +1,4 @@
-# Veo3FirstLastFrameNode
+# Google Veo 3 Erstes und letztes Frame zu Video
 
 Der Veo3FirstLastFrameNode verwendet das Veo 3-Modell von Google, um anhand eines Text-Prompts ein Video zu generieren, wobei ein bereitgestelltes erstes und letztes Frame den Anfang und das Ende der Videosequenz definieren.
 

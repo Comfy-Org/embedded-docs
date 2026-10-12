@@ -1,4 +1,4 @@
-# Pixal3DConditioning
+# Pixal3D-Konditionierung
 
 Der Node Pixal3DConditioning bereitet die Bildkonditionierung für die Trellis2-3D-Generierungspipeline vor. Er verwendet ein DINOv3-Vision-Modell, um visuelle Merkmale aus dem Eingabebild in zwei Auflösungen (512 und 1024) zu extrahieren, und organisiert sie anschließend in Feature-Maps pro Stufe, die optional durch ein NAF-Modell verbessert werden können. Kamerainformationen werden aus dem horizontalen Sichtfeld abgeleitet, um die Projektions-Transformationsmatrix zu erstellen, und der Node gibt ein positives Conditioning-Paar (aus dem Bild abgeleitete Merkmale plus Projektionsdaten) sowie ein negatives Conditioning-Paar (genullte Feature-Tensoren) für Classifier-Free-Guidance aus.
 

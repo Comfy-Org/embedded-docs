@@ -1,4 +1,4 @@
-# BakeAmbientOcclusion
+# Ambient Occlusion backen
 
 Backt eine Ambient-Occlusion-Map aus einem High-Poly-Mesh in das UV-Layout eines Low-Poly-Mesh. Die Ausgabe ist ein Graustufenbild, in dem weiße Texel offen und dunkle Texel in Vertiefungen liegen; es ist für den `occlusion`-Eingang des Nodes Apply Texture To Mesh gedacht. Verbinden Sie das UV-entfaltete Low-Poly-Mesh und das High-Poly-Mesh, aus dem es durch Dezimierung erzeugt wurde.
 

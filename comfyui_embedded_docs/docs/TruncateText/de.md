@@ -1,4 +1,4 @@
-# TruncateText
+# Text kürzen
 
 Dieser Node kürzt Text, indem er ihn bei einer angegebenen maximalen Länge abschneidet. Er nimmt einen beliebigen Eingabetext entgegen und gibt nur den ersten Teil bis zur eingestellten Zeichenanzahl zurück. Dies ist eine einfache Möglichkeit, um sicherzustellen, dass Text eine bestimmte Größe nicht überschreitet.
 

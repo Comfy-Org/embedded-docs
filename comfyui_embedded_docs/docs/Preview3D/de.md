@@ -1,4 +1,4 @@
-# Preview3D
+# 3D & Animation Vorschau (VERALTET)
 
 Der Preview3D-Node dient hauptsächlich zur Vorschau von 3D-Modellausgaben. Dieser Node nimmt zwei Eingaben entgegen: eine ist die `camera_info` vom Load3D-Node, die andere ist der Pfad zur 3D-Modelldatei. Der Pfad zur Modelldatei muss sich im Ordner `ComfyUI/output` befinden.
 

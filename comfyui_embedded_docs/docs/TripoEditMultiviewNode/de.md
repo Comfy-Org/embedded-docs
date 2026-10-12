@@ -1,4 +1,4 @@
-# TripoEditMultiviewNode
+# Tripo: Multiview bearbeiten
 
 Bearbeitet die Ansichten eines Ergebnisses von Tripo: Image to Multiview mithilfe einer separaten Textanweisung für jede Ansicht. Ansichten ohne Anweisung bleiben unverändert. Die bearbeiteten Bilder sind dafür gedacht, mit Tripo: Multiview to Model verbunden zu werden, um ein 3D-Modell zu erstellen; ein bearbeitetes Multiview-Set kann nicht erneut bearbeitet werden.
 

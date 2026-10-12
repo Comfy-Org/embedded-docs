@@ -1,4 +1,4 @@
-# ShuffleVideoDataset
+# Videoliste mischen
 
 Dieser Node nimmt eine Liste von Videos entgegen und ordnet sie zufällig neu an. Er verwendet einen Zufalls-Seed, um die Mischung reproduzierbar zu machen, sodass derselbe Seed stets dieselbe Ausgabereihenfolge erzeugt.
 

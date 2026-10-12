@@ -1,4 +1,4 @@
-# LoopIteration
+# Schleifeniteration
 
 Dieser Node stellt Iterations-Metadaten für Workflows im Schleifenstil bereit. Er empfängt listenbasierte Eingaben und reicht das erste Element jeder Liste durch, sodass eine Schleife den aktuellen Index, ob es sich um den ersten oder letzten Schritt handelt, das aktuelle Listenelement und einen beliebigen laufenden Iterationswert verfolgen kann. Das Cache-Verhalten wird durch das `reuse_cache`-Flag gesteuert. Dieser Node ist als nur für Entwickler gekennzeichnet.
 

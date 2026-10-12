@@ -1,4 +1,4 @@
-# CropMask
+# Maske zuschneiden
 
 Der CropMask-Node dient zum Zuschneiden eines angegebenen Bereichs aus einer gegebenen Maske. Er ermöglicht es Benutzern, den gewünschten Bereich durch Angabe von Koordinaten und Abmessungen zu definieren und so einen Teil der Maske für die weitere Verarbeitung oder Analyse zu extrahieren.
 

@@ -1,4 +1,4 @@
-# KlingOmniProVideoToVideoNode
+# Kling 3.0 Omni Video zu Video
 
 Dieser Node verwendet das Kling-KI-Modell, um basierend auf einem Eingabevideo und optionalen Referenzbildern ein neues Video zu generieren. Sie geben einen Text-Prompt an, der den gewünschten Inhalt beschreibt, und der Node transformiert das Referenzvideo entsprechend. Er kann außerdem bis zu vier zusätzliche Referenzbilder einbeziehen, um Stil und Inhalt der Ausgabe zu steuern.
 

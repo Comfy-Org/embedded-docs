@@ -1,4 +1,4 @@
-# PixverseV6ImageToVideoNode
+# PixVerse V6 Bild zu Video
 
 Dieser Node animiert ein Eingabebild mit dem PixVerse V6-Modell und gibt ein Video zurück, optional mit einer nativen Audiospur. Das Ausgabevideo behält das Seitenverhältnis des Eingabebilds bei.
 

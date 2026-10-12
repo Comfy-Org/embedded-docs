@@ -1,4 +1,4 @@
-# MagnificImageUpscalerPreciseV2Node
+# Magnific-Bild-Upscale (Präzise V2)
 
 Der Magnific Image Upscale (Precise V2)-Node führt eine hochgenaue Bild-Hochskalierung mit feiner Kontrolle über Schärfe, Körnung und Detailverbesserung durch. Er verarbeitet Bilder über eine externe API und unterstützt eine maximale Ausgabeauflösung von 10060×10060 Pixeln. Der Node bietet verschiedene Verarbeitungsstile und kann die Eingabe automatisch herunterskalieren, wenn die angeforderte Ausgabe die maximal zulässige Größe überschreiten würde.
 

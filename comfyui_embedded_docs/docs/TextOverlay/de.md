@@ -1,4 +1,4 @@
-# TextOverlay
+# Textüberlagerung zeichnen
 
 Dieser Node zeichnet Text über ein Bild oder einen Batch von Bildern. Er erstellt ein Text-Overlay mit konfigurierbarer Schriftgröße, Farbe, vertikaler Position, horizontaler Ausrichtung und optionaler schwarzer Kontur und kombiniert das Overlay anschließend mit den Originalbildpixeln.
 

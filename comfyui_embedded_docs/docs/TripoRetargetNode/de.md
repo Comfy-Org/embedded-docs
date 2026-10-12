@@ -1,4 +1,4 @@
-# TripoRetargetNode
+# Tripo: Geriggtes Modell retargeten
 
 Der TripoRetargetNode wendet eine Preset-Animation auf ein vorhandenes geriggtes 3D-Modell an. Er verwendet die Task-ID eines zuvor geriggten Modells, sendet eine Retargeting-Anfrage an die Tripo-API und lädt die resultierende animierte Datei herunter. Das animierte Modell kann als GLB oder FBX zurückgegeben werden, mit optionaler Mesh-Geometrie und optionaler In-Place-Wiedergabe.
 

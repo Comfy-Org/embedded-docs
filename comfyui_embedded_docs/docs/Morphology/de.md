@@ -1,4 +1,4 @@
-# Morphology
+# Morphologie anwenden
 
 Der Morphology-Knoten wendet verschiedene morphologische Operationen auf Bilder an. Dabei handelt es sich um mathematische Operationen, die verwendet werden, um Formen in Bildern zu verarbeiten und zu analysieren. Er kann Operationen wie Erosion, Dilatation, Öffnen, Schließen und weitere ausführen, wobei eine anpassbare Kernel-Größe die Stärke des Effekts steuert.
 

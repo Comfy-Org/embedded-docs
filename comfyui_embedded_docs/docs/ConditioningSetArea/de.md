@@ -1,4 +1,4 @@
-# ConditioningSetArea
+# Konditionierung (Bereich festlegen)
 
 Dieser Node dient dazu, die Konditionierungsinformationen zu ändern, indem bestimmte Bereiche innerhalb des Konditionierungskontexts festgelegt werden. Er ermöglicht die präzise räumliche Manipulation von Konditionierungselementen, wodurch gezielte Anpassungen und Verbesserungen basierend auf angegebenen Dimensionen und Stärke möglich sind.
 

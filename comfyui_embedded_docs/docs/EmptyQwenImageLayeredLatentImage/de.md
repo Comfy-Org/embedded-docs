@@ -1,4 +1,4 @@
-# EmptyQwenImageLayeredLatentImage
+# Leeres Qwen Image Layered Latent
 
 Empty Qwen Image Layered Latent bereitet die leere Leinwand vor, auf die das Qwen-Image-Layered-Modell malt. Stellen Sie es sich wie einen Stapel sauberer Transparentpapierbögen vor, die in Reihenfolge zusammengeklammert sind: Das Modell füllt den ersten Bogen mit dem vollständigen Bild und jeden weiteren Bogen mit einem Teil dieses Bildes. Dieser Node entscheidet, wie groß die Bögen sind und wie viele es gibt. Er zeichnet selbst nichts.
 

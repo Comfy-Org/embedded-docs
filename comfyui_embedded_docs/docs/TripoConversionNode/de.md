@@ -1,4 +1,4 @@
-# TripoConversionNode
+# Tripo: Modell konvertieren
 
 Dieser Node konvertiert ein vorhandenes Tripo-3D-Modell in ein anderes 3D-Dateiformat. Er nimmt die Task-ID eines Modells, das zuvor durch eine Tripo-Operation erstellt oder verarbeitet wurde (z. B. Modellgenerierung, Rigging, Retargeting oder Segmentierung), übermittelt eine Konvertierungsaufgabe an die Tripo-API, wartet, bis diese Aufgabe abgeschlossen ist, und gibt anschließend die konvertierte Modelldatei zurück.
 

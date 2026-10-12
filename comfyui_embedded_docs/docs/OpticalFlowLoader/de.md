@@ -1,4 +1,4 @@
-# OpticalFlowLoader
+# Optical-Flow-Modell laden
 
 Lädt ein Optical-Flow-Modell aus dem Ordner `models/optical_flow/`. Derzeit wird nur das RAFT-large-Format von torchvision unterstützt, also das Modell, das vom Node VOIDWarpedNoise verwendet wird. ComfyUI lädt Optical-Flow-Gewichte nicht automatisch herunter; Sie müssen die Checkpoint-Datei manuell im Verzeichnis `models/optical_flow/` ablegen.
 

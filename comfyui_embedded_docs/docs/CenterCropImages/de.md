@@ -1,4 +1,4 @@
-# CenterCropImages
+# Bild zuschneiden (zentriert)
 
 Der Node „Center Crop Images“ schneidet ein Bild von der Mitte auf eine angegebene Breite und Höhe zu. Er berechnet den zentralen Bereich des Eingabebilds und extrahiert einen rechteckigen Bereich mit den definierten Abmessungen. Ist die angeforderte Zuschnittgröße größer als das Bild, wird der Zuschnitt auf die Grenzen des Bildes beschränkt.
 

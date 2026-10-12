@@ -1,4 +1,4 @@
-# MediaPipeFaceMeshVisualize
+# Gesichtslandmarken visualisieren (MediaPipe)
 
 ## Überblick
 

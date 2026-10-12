@@ -1,4 +1,4 @@
-# TripoSplatSamplingPreview
+# TripoSplat-Sampling-Vorschau
 
 Dieser Node patcht ein TripoSplat-Modell, sodass bei Verwendung mit dem standardmäßigen KSampler-Node bei jedem Sampling-Schritt eine Live-Vorschau des dekodierten Gaussian Splat angezeigt wird. Er funktioniert, indem der Callback des Samplers umschlossen wird, um die Ausgabe des Modells nach jedem Schritt in ein Vorschaubild zu dekodieren.
 

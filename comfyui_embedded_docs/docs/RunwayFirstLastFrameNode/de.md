@@ -1,4 +1,4 @@
-# RunwayFirstLastFrameNode
+# Runway First-Last-Frame to Video
 
 Der Node „Runway First-Last-Frame to Video“ erzeugt ein Video unter Verwendung eines Start-Frames, eines End-Frames und eines Text-Prompts. Er erstellt mithilfe des gen3a_turbo-Modells von Runway einen sanften Übergang zwischen den beiden bereitgestellten Keyframes. Er ist besonders nützlich für komplexe Übergänge, bei denen sich der End-Frame vollständig vom Start-Frame unterscheidet.
 

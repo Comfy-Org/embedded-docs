@@ -1,4 +1,4 @@
-# KlingVideoNode
+# Kling 3.0 Video
 
 Dieser Node erzeugt Videos mit dem Kling V3-Modell. Er unterstützt Text-zu-Video, wobei ein Video aus einer Textbeschreibung erstellt wird, und Bild-zu-Video, wobei ein vorhandenes Bild animiert wird. Er kann außerdem mehrsegmentige Videos mithilfe von Storyboard-Prompts erstellen und optional Audio generieren.
 

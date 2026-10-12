@@ -1,4 +1,4 @@
-# MagnificImageUpscalerCreativeNode
+# Magnific-Bild-Upscale (Kreativ)
 
 Dieser Node verwendet den Magnific AI-Dienst, um ein Bild hochzuskalieren und kreativ zu verbessern. Sie können die Verbesserung mit einem Text-Prompt steuern, einen bestimmten Stil auswählen, für den optimiert werden soll, und verschiedene Aspekte des kreativen Prozesses wie Detailgrad, Ähnlichkeit zum Original und Stilisierungsstärke kontrollieren. Der Node gibt ein hochskaliertes Bild mit dem gewählten Faktor (2x, 4x, 8x oder 16x) aus, wobei die maximale Ausgabegröße 25,3 Megapixel beträgt.
 

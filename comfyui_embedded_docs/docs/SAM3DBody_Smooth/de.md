@@ -1,4 +1,4 @@
-# SAM3DBody_Smooth
+# SAM3D-Körperposendaten glätten
 
 Smooth SAM3D Body Pose Data reduziert Frame-zu-Frame-Jitter in einer Sequenz von 3D-Körperposen durch zeitliche Mittelung der Bewegung. Kamera- und Erscheinungsdaten werden vollständig geglättet, während die Mesh-Geometrie weniger geglättet wird, wenn sich das Subjekt schnell dreht, damit schnelle Drehungen nicht abgeflacht werden.
 

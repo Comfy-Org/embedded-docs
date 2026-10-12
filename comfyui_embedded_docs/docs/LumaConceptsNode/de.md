@@ -1,4 +1,4 @@
-# LumaConceptsNode
+# Luma Concepts
 
 Enthält ein oder mehrere Kamera-Konzepte zur Verwendung mit den Nodes Luma Text to Video und Luma Image to Video. Dieser Node ermöglicht es Ihnen, bis zu vier Kamera-Konzepte auszuwählen und sie optional mit vorhandenen Konzeptketten zu kombinieren.
 

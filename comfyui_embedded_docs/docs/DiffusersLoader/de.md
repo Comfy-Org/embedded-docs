@@ -1,4 +1,4 @@
-# DiffusersLoader
+# Diffusers-Modell laden (VERALTET)
 
 The DiffusersLoader-Node lädt vortrainierte Modelle, die im Diffusers-Format gespeichert wurden. Er durchsucht die konfigurierten `diffusers`-Ordner nach Verzeichnissen, die eine `model_index.json`-Datei enthalten, ermöglicht die Auswahl eines Verzeichnisses und lädt es als MODEL-, CLIP- und VAE-Komponenten, die in der Pipeline verwendet werden. Dieser Node ist veraltet, bleibt jedoch aus Kompatibilitätsgründen mit Hugging Face Diffusers-Modellen verfügbar.
 

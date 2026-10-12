@@ -1,4 +1,4 @@
-# LTXVConcatAVLatent
+# AV-Latent zusammenführen
 
 Dieser Node führt ein Video-Latent und ein Audio-Latent zu einem einzigen gemeinsamen Audio-Video-Latent (AV-Latent) zusammen, das für AV-Modelle wie LTXV oder MiniMax H3 bereit ist. Wenn die Videoeingabe bereits ein AV-Latent ist, wird ihr Videostream beibehalten und nur der Audiostream durch das bereitgestellte Audio-Latent ersetzt.
 

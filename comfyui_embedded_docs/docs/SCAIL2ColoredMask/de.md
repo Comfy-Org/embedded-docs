@@ -1,4 +1,4 @@
-# SCAIL2ColoredMask
+# SCAIL-2-Farbmaske erstellen
 
 Dieser Node rendert SAM3-Tracking-Daten in farbige Masken, die vom WanSCAILToVideo-Node verwendet werden. Er verarbeitet Tracking-Daten aus einem Driving-Pose-Video und optional einem Referenzbild und weist jeder verfolgten Person über beide Ausgaben hinweg konsistente Farben zu.
 

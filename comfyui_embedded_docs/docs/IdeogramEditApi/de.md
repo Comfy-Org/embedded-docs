@@ -1,4 +1,4 @@
-# IdeogramEditApi
+# Ideogram 4.5 Bearbeiten
 
 Bearbeiten oder kombinieren Sie mit Ideogram 4.5 bis zu 5 Bilder, gesteuert durch einen Text-Prompt. Bild 1 ist das zu bearbeitende Bild, die folgenden Bilder sind optionale Referenzen. Das gesamte Bild wird neu gerendert, daher können sich Größe oder Seitenverhältnis des Ergebnisses ändern; verwenden Sie stattdessen Ideogram 4.5 Precise Edit, um unveränderte Pixel unverändert zu lassen.
 

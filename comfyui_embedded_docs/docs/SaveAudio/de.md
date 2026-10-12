@@ -1,4 +1,4 @@
-# SaveAudio
+# Audio speichern (FLAC) (VERALTET)
 
 Dieser Node speichert Audiodaten in einer Datei im FLAC-Format. Er nimmt eine Audio-Eingabe entgegen und schreibt sie unter Verwendung des angegebenen Dateinamenpräfixes in das Ausgabeverzeichnis. Außerdem reicht er die Audiodaten an seinen Ausgang weiter. Dieser Node ist veraltet und sollte durch den aktuellen Save Audio-Node ersetzt werden.
 

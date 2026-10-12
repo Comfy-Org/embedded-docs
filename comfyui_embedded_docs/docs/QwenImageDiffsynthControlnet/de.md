@@ -1,4 +1,4 @@
-# QwenImageDiffsynthControlnet
+# Qwen Image DiffSynth ControlNet anwenden
 
 QwenImageDiffsynthControlnet wendet einen Diffusionssynthese-Kontrollnetzwerk-Patch auf ein Basismodell an. Es verwendet ein Eingabebild und eine optionale Maske, um den Generierungsprozess des Modells mit einstellbarer Stärke zu steuern, und erzeugt ein gepatchtes Modell, das den Einfluss des Kontrollnetzwerks für eine kontrolliertere Bildsynthese integriert.
 

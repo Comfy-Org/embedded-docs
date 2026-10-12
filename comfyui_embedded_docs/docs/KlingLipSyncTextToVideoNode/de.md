@@ -1,4 +1,4 @@
-# KlingLipSyncTextToVideoNode
+# Kling Lip-Sync-Video mit Text
 
 Der Kling Lip Sync Text to Video Node synchronisiert Lippenbewegungen in einer Videodatei mit einem Text-Prompt. Er nimmt ein Eingabevideo entgegen und generiert ein neues Video, bei dem die Lippenbewegungen der Figur mit dem bereitgestellten Text abgeglichen werden. Der Node verwendet Stimmsynthese, um eine natürlich wirkende Sprachsynchronisation zu erzeugen.
 

@@ -1,4 +1,4 @@
-# MaskToImage
+# Maske in Bild umwandeln
 
 Der Node `MaskToImage` dient dazu, eine Maske in ein Bildformat umzuwandeln. Diese Transformation ermöglicht die Visualisierung und Weiterverarbeitung von Masken als Bilder und schlägt eine Brücke zwischen maskenbasierten Operationen und bildbasierten Anwendungen.
 

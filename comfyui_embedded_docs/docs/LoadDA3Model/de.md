@@ -1,4 +1,4 @@
-# LoadDA3Model
+# Depth Anything 3 laden
 
 Der Node **Load Depth Anything 3** lädt ein Depth Anything 3-Modell aus einer Datei und bereitet es für Tiefenschätzungsaufgaben vor. Sie können die Modelldatei auswählen und optional die numerische Genauigkeit (den Datentyp) für die Gewichte des Modells festlegen.
 

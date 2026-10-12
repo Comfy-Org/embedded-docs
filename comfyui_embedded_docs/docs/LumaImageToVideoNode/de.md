@@ -1,4 +1,4 @@
-# LumaImageToVideoNode
+# Luma Bild zu Video
 
 Erzeugt Videos synchron auf Basis eines Text-Prompts und optionaler Start-/Endbilder. Dieser Node verwendet die Luma API, um Videos zu erstellen. Sie können den Inhalt des Videos über einen Prompt definieren und optional das erste und/oder letzte Einzelbild angeben, um die Struktur des Videos zu steuern.
 

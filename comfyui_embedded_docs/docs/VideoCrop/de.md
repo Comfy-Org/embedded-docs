@@ -1,4 +1,4 @@
-# VideoCrop
+# Video zuschneiden
 
 Dieser Node schneidet ein Video auf einen in Pixeln definierten rechteckigen Bereich zu und behält nur den Bereich innerhalb dieses Rechtecks bei. Er speichert eine temporäre MP4-Vorschau des zugeschnittenen Ergebnisses und gibt das zugeschnittene Video aus.
 

@@ -1,4 +1,4 @@
-# AudioMerge
+# Audio zusammenführen
 
 Der AudioMerge-Node kombiniert zwei Audiospuren, indem er ihre Wellenformen überlagert. Er gleicht automatisch die Abtastraten beider Audioeingaben an und passt ihre Längen an, sodass sie vor dem Zusammenführen gleich lang sind. Der Node bietet mehrere mathematische Methoden zum Kombinieren der Audiosignale und stellt sicher, dass die Ausgabe innerhalb akzeptabler Lautstärkepegel bleibt.
 

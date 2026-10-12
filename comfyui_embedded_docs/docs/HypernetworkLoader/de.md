@@ -1,4 +1,4 @@
-# HypernetworkLoader
+# Hypernetwork laden
 
 Dieser Node erkennt Modelle im Ordner `ComfyUI/models/hypernetworks` und liest außerdem Modelle aus zusätzlichen Pfaden, die in der Datei extra_model_paths.yaml konfiguriert sind. Manchmal müssen Sie möglicherweise **die ComfyUI-Oberfläche aktualisieren**, damit sie die Modelldateien aus dem entsprechenden Ordner einlesen kann.
 

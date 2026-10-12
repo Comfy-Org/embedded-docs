@@ -1,4 +1,4 @@
-# SAM3DBody_FaceExpression
+# Gesichtsausdruck zu SAM3D-Körper
 
 Dieser Node fügt einem SAM3D-Körper Gesichtsausdrücke hinzu, indem er mit dem MediaPipe Face Landmarker Gesichter in einem Bild erkennt, jedes erkannte Gesicht einer verfolgten Person zuordnet und die 52 ARKit-Blendshapes auf die 72-Achsen-Ausdrucksparameter von MHR abbildet. Anschließend führt er das Körpermodell erneut aus, sodass die Mesh-Vertices und Keypoints der Ausgabe den neuen Ausdruck widerspiegeln.
 

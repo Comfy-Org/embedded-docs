@@ -1,4 +1,4 @@
-# InvertMask
+# Maske invertieren
 
 Der InvertMask-Node dient dazu, die Werte einer gegebenen Maske zu invertieren, wodurch maskierte und nicht maskierte Bereiche effektiv vertauscht werden. Dieser Vorgang ist grundlegend für Bildverarbeitungsaufgaben, bei denen der Fokus des Interesses zwischen Vordergrund und Hintergrund gewechselt werden muss.
 

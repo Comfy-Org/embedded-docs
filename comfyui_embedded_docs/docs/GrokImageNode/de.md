@@ -1,4 +1,4 @@
-# GrokImageNode
+# Grok Image
 
 Der Grok Image-Node generiert ein oder mehrere Bilder aus einer Textbeschreibung mithilfe des Grok-KI-Modells. Er sendet Ihren Prompt an einen externen Dienst und gibt die generierten Bilder als Tensoren zurück, die in Ihrem Workflow verwendet werden können.
 

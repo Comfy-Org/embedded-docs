@@ -1,4 +1,4 @@
-# ControlNetInpaintingAliMamaApply
+# ControlNet-Inpainting anwenden (AliMama)
 
 Der Node ControlNetInpaintingAliMamaApply wendet ControlNet-Konditionierung für Inpainting-Aufgaben an, indem er positive und negative Konditionierung mit einem Steuerbild und einer Maske kombiniert. Er verarbeitet das Eingabebild und die Maske, um modifizierte Konditionierung zu erzeugen, die den Generierungsprozess lenkt und Kontrolle darüber ermöglicht, welche Bereiche des Bildes per Inpainting bearbeitet werden. Der Node unterstützt Stärkeanpassung und Zeitsteuerung, um den Einfluss des ControlNet in verschiedenen Phasen des Generierungsprozesses fein abzustimmen.
 

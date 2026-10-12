@@ -1,4 +1,4 @@
-# GenerateTracks
+# Videospuren generieren
 
 Der Node `GenerateTracks` erzeugt mehrere parallele Bewegungsbahnen (Tracks) für die Videogenerierung. Er definiert einen Hauptpfad von einer Startposition zu einer Endposition und generiert dann eine Reihe von Tracks, die parallel zu diesem Pfad verlaufen und gleichmäßig voneinander beabstandet sind. Sie können die Form des Pfads (gerade Linie oder Bezier-Kurve), die Geschwindigkeit der Bewegung entlang des Pfads und die Frames steuern, in denen die Tracks sichtbar sind.
 

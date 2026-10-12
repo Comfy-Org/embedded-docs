@@ -1,4 +1,4 @@
-# LoadVideo
+# Video laden
 
 Der Load Video-Node lädt Videodateien aus dem Eingabeverzeichnis und stellt sie für die Verarbeitung im Workflow bereit. Er liest Videodateien aus dem festgelegten Eingabeordner und gibt sie als Videodaten aus, die mit anderen Video-Verarbeitungs-Nodes verbunden werden können.
 

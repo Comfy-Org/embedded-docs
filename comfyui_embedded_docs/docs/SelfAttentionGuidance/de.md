@@ -1,4 +1,4 @@
-# SelfAttentionGuidance
+# Self-Attention-Führung
 
 Der Knoten Self-Attention Guidance wendet Guidance auf Diffusionsmodelle an, indem er den Attention-Mechanismus während des Sampling-Prozesses modifiziert. Er erfasst Attention-Scores aus unbedingten Denoising-Schritten und verwendet sie, um unscharfe Guidance-Karten zu erstellen, die die endgültige Ausgabe beeinflussen. Diese Technik hilft, den Generierungsprozess zu steuern, indem sie die eigenen Attention-Muster des Modells nutzt.
 

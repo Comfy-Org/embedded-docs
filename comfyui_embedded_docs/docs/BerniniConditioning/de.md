@@ -1,4 +1,4 @@
-# BerniniConditioning
+# Bernini Conditioning
 
 Der BerniniConditioning-Node bereitet Video- und Bildkonditionierungsdaten für das Modell Wan2.2-A14B vor. Er kodiert Quellvideos, Referenzvideos und Referenzbilder mit dem bereitgestellten VAE und hängt sie dann als In-Context-Tokens an die Konditionierungsdaten an. Die Aufgabe wird automatisch daraus abgeleitet, welche Eingaben verbunden sind.
 

@@ -1,4 +1,4 @@
-# TripoMeshCompleteNode
+# Tripo: Mesh-Teile vervollständigen
 
 Vervollständigt die Teile eines segmentierten 3D-Modells und repariert fehlende oder beschädigte Bereiche des Meshes. Es übernimmt die Task-ID eines Tripo-Mesh-Segmentierungsergebnisses, fordert den Vervollständigungsjob bei Tripo an und wartet, bis er abgeschlossen ist. Optional können Sie die Arbeit auf bestimmte Teilnamen beschränken. Das vervollständigte Modell wird als GLB-Datei zurückgegeben.
 

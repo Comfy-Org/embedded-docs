@@ -1,4 +1,4 @@
-# LoadMoGeModel
+# MoGe-Modell laden
 
 Lädt ein MoGe-Modell (Monokulare Geometrie) aus einer Datei und bereitet es für die Verwendung in Aufgaben zur Geometrieschätzung vor. Der Node liest die ausgewählte Modelldatei aus dem Ordner `geometry_estimation` und initialisiert das MoGe-Modell mit den darin gespeicherten Gewichten.
 

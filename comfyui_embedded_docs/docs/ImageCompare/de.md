@@ -1,4 +1,4 @@
-# ImageCompare
+# Bilder vergleichen
 
 ## Überblick
 

@@ -1,4 +1,4 @@
-# VideoTriangleCFGGuidance
+# Video-Dreiecks-CFG-Führung
 
 Der VideoTriangleCFGGuidance-Node wendet ein dreieckiges Skalierungsmuster für Classifier-Free-Guidance (CFG) auf ein Videomodell an. Er variiert die Conditioning-Skala mithilfe einer Dreieckswelle, die zwischen `min_cfg` und der ursprünglichen Conditioning-Skala des Modells oszilliert. Dadurch entsteht ein dynamisches Guidance-Muster, das dazu beitragen kann, die Konsistenz und Qualität der Videogenerierung zu verbessern.
 

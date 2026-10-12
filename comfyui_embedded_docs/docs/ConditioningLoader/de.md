@@ -1,4 +1,4 @@
-# ConditioningLoader
+# Conditioning laden
 
 Dieser Node lädt eine Konditionierung, die zuvor mit dem Node „Save Conditioning“ gespeichert wurde, oder eine beliebige safetensors-Datei, die einen `conditioning`-Tensor enthält, aus dem Embeddings-Ordner. Außerdem werden alle zusätzlichen Optionen und nummerierten Listenwerte wiederhergestellt, die zusammen mit der Konditionierung gespeichert wurden.
 

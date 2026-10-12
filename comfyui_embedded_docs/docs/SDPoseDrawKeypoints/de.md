@@ -1,4 +1,4 @@
-# SDPoseDrawKeypoints
+# SDPose Keypoints zeichnen
 
 Der Node SDPoseDrawKeypoints nimmt Pose-Schätzungsdaten (Keypoints) entgegen und zeichnet sie als visuelles Skelett auf eine leere Zeichenfläche. Er ermöglicht es Ihnen, verschiedene Teile der Pose selektiv zu zeichnen, wie Körper, Kopf, Hände, Gesicht und Füße, mit anpassbaren Linienbreiten und Punktgrößen. Das resultierende Bild kann zur Visualisierung oder als Eingabe für andere Nodes verwendet werden, die ein Pose-Bild erfordern.
 

@@ -1,4 +1,4 @@
-# TripoImageToModelNodeV2
+# Tripo: Bild zu Modell
 
 Der Node Tripo: Image to Model wandelt ein einzelnes Referenzbild mithilfe des Bild-zu-Modell-Dienstes von Tripo in ein 3D-Modell um. Er lädt das Bild hoch, übermittelt einen Generierungsauftrag, wartet auf dessen Abschluss und gibt die resultierende 3D-Datei zusammen mit der Task-ID zurück. Dies ist ein API-Node, daher ist ein gültiger Comfy-API-Schlüssel erforderlich.
 

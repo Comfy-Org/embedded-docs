@@ -1,4 +1,4 @@
-# LoopProgress
+# Schleifenfortschritt
 
 LoopProgress ist ein Hilfsknoten, der nur für die Entwicklung gedacht ist und den Fortschritt einer Schleife an die ComfyUI-Server-Schnittstelle meldet. Bei jeder Ausführung sendet er den Text "Iteration X / Y" an den Client und gibt die aktuelle Iterationsposition unverändert zurück, wodurch er inline in einer Schleife platziert werden kann, ohne den Datenfluss zu verändern.
 

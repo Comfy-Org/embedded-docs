@@ -1,4 +1,4 @@
-# HeyGenVideoTranslateNode
+# HeyGen Videoübersetzung
 
 Übersetzen Sie ein gesprochenes Video mit Voice-Cloning und Lip-Sync in eine andere Sprache. Dieser Node klont die Stimme des ursprünglichen Sprechers und animiert den Mund neu, damit er zur übersetzten Sprachausgabe passt, wodurch ein natürlich wirkendes Ergebnis entsteht.
 

@@ -1,4 +1,4 @@
-# LTXVSpatioTemporalGuidance
+# LTXV Raumzeitführung (STG)
 
 Dieser Node verbessert die räumlichen Details und die Bewegungskohärenz der LTXV-Videogenerierung, indem bei jedem Sampling-Schritt ein zusätzlicher Durchlauf ausgeführt wird. Während dieses Durchlaufs wird die Self-Attention der ausgewählten Transformer-Blöcke zu einem Value-Passthrough degradiert, und die Generierung wird von diesem degradierten Ergebnis weg gelenkt.
 

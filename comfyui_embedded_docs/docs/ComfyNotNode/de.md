@@ -1,4 +1,4 @@
-# ComfyNotNode
+# Nicht
 
 Der Not-Node führt eine logische NOT-Operation für jeden Eingabewert aus. Er gibt True zurück, wenn der Eingabewert als falsy gilt (z. B. 0, ein leerer String, None oder False), und gibt False zurück, wenn der Eingabewert truthy ist; dabei folgt er Pythons Standardregeln für Wahrheitswerte.
 

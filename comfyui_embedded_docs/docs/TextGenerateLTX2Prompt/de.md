@@ -1,4 +1,4 @@
-# TextGenerateLTX2Prompt
+# LTX2-Prompt generieren
 
 Der Node TextGenerateLTX2Prompt erweitert einen kurzen Benutzer-Prompt zu einer detaillierten audiovisuellen Beschreibung, die zur Videogenerierung mit der LTX-2-Serie von Videomodellen geeignet ist. Er fügt automatisch aufgabenspezifische Systemanweisungen hinzu, sendet den formatierten Prompt an ein Sprachmodell und gibt den erweiterten Text zurück. Wenn ein optionales Referenzbild bereitgestellt wird, wechselt der Node in den Bild-zu-Video-Modus und erweitert den Prompt ausgehend vom Inhalt dieses Bildes.
 

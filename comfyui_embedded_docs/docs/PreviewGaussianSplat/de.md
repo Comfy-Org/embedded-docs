@@ -1,4 +1,4 @@
-# PreviewGaussianSplat
+# Splat-Vorschau
 
 Der Knoten PreviewGaussianSplat zeigt eine 3D-Gaussian-Splat-Datei in einem Vorschaufenster an, ohne sie im ComfyUI-Ausgabeverzeichnis zu speichern. Er akzeptiert eine 3D-Modelldatei in verschiedenen Gaussian-Splat-Formaten, speichert eine temporäre Kopie für die Vorschau und reicht die Modelldaten für die weitere Verarbeitung im Workflow durch. Dieser Knoten ist als experimentell gekennzeichnet und fungiert als Ausgabeknoten.
 

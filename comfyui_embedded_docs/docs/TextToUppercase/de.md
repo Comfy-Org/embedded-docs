@@ -1,4 +1,4 @@
-# TextToUppercase
+# Text in Großbuchstaben umwandeln (VERALTET)
 
 Der Node „Text to Uppercase“ nimmt eine Texteingabe entgegen und wandelt alle Zeichen in Großbuchstaben um. Es ist ein einfaches Hilfsmittel zur Textverarbeitung, das die Groß-/Kleinschreibung der bereitgestellten Zeichenkette ändert.
 

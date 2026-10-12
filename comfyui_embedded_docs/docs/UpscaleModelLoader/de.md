@@ -1,4 +1,4 @@
-# UpscaleModelLoader
+# Upscale-Modell laden
 
 Dieser Node erkennt Modelle, die sich im Ordner `ComfyUI/models/upscale_models` befinden, und liest außerdem Modelle aus zusätzlichen Pfaden, die in der Datei extra_model_paths.yaml konfiguriert sind. Manchmal müssen Sie die **ComfyUI-Oberfläche aktualisieren**, damit sie die Modelldateien aus dem entsprechenden Ordner lesen kann.
 

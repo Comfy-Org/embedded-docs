@@ -1,4 +1,4 @@
-# MinimaxHailuoVideoNode
+# MiniMax Hailuo 02 Video
 
 Erzeugt Videos aus Text-Prompts mithilfe des MiniMax Hailuo-02-Modells. Optional können Sie ein Startbild angeben, das als erstes Einzelbild verwendet wird; dadurch entsteht ein Video, das von diesem Bild aus fortgesetzt wird.
 

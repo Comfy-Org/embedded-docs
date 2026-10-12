@@ -1,4 +1,4 @@
-# ConditioningConcat
+# Konditionierung (Verketten)
 
 Der Node ConditioningConcat ist dafür ausgelegt, Conditioning-Vektoren zu verketten, insbesondere den Vektor 'conditioning_from' in den Vektor 'conditioning_to' einzufügen. Diese Operation ist grundlegend in Szenarien, in denen die Conditioning-Informationen aus zwei Quellen zu einer einzigen, vereinheitlichten Repräsentation kombiniert werden müssen.
 

@@ -1,4 +1,4 @@
-# AddLayer
+# Ebene hinzufügen
 
 Der Node „Add Layer“ wandelt ein Eingabebild in eine Ebene um und platziert es auf einer Leinwand, wobei entweder ein neuer Ebenenstapel begonnen oder ein vorhandener erweitert wird. Sie können den Namen, die Position, die Größe, die Rotation, die Deckkraft, den Mischmodus, die Stapelreihenfolge sowie horizontales oder vertikales Spiegeln der Ebene festlegen. Dieser Node ist als experimentell gekennzeichnet.
 

@@ -1,4 +1,4 @@
-# MeshTextureToImage
+# Mesh-Textur zu Bild
 
 Dieser Node extrahiert die gebackenen Texturen eines Meshes und gibt sie als separate Bilder zurück: Grundfarbe, Metallic, Roughness, Occlusion und Normal Map. Texturkanäle, die nicht gebacken wurden, werden als neutrale Standardwerte zurückgegeben – Weiß für Occlusion und ein flaches Blau für die Normal Map.
 

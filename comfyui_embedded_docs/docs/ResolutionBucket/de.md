@@ -1,4 +1,4 @@
-# ResolutionBucket
+# Auflösungs-Bucket
 
 Dieser Node organisiert eine Liste von latenten Bildern und ihre zugehörigen Conditioning-Daten nach ihrer Auflösung. Er gruppiert Elemente mit derselben Höhe und Breite und erstellt separate Batches für jede eindeutige Auflösung. Dieser Prozess ist nützlich, um Daten für effizientes Training vorzubereiten, da er Modellen ermöglicht, mehrere Elemente derselben Größe zusammen zu verarbeiten.
 

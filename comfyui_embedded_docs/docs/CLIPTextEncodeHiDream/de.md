@@ -1,4 +1,4 @@
-# CLIPTextEncodeHiDream
+# CLIP-Textkodierung (HiDream)
 
 Der CLIPTextEncodeHiDream-Node verarbeitet vier separate Texteingaben mithilfe verschiedener Sprachmodelle (CLIP-L, CLIP-G, T5-XXL und LLaMA) und kombiniert sie zu einer einzelnen Conditioning-Ausgabe. Er tokenisiert jede Texteingabe mit ihrem entsprechenden Modell und kodiert sie gemeinsam mithilfe eines zeitplanbasierten Kodierungsansatzes, wodurch eine anspruchsvollere Textkonditionierung durch die gleichzeitige Nutzung mehrerer Sprachmodelle ermöglicht wird.
 

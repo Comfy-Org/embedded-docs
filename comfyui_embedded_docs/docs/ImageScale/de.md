@@ -1,4 +1,4 @@
-# ImageScale
+# Bild hochskalieren
 
 Der ImageScale-Node dient der Größenänderung von Bildern auf bestimmte Abmessungen. Er bietet eine Auswahl an Upscale-Methoden und die Möglichkeit, das skalierte Bild zuzuschneiden. Er abstrahiert die Komplexität von Bild-Upscaling und Zuschneiden und stellt eine unkomplizierte Schnittstelle bereit, um Bildabmessungen gemäß benutzerdefinierter Parameter zu ändern.
 

@@ -1,4 +1,4 @@
-# SaveTrainingDataset
+# Trainingsdatensatz speichern
 
 Dieser Node speichert einen kodierten Trainingsdatensatz zur effizienten Ladung während des Trainings auf der Festplatte. Er nimmt Bild-Latents und die dazu passende Textkonditionierung entgegen, teilt sie in kleinere Dateien namens Shards auf und speichert sie in einem Ordner innerhalb des datasets-Verzeichnisses. Außerdem schreibt er eine Metadatendatei, die den Datensatz beschreibt.
 

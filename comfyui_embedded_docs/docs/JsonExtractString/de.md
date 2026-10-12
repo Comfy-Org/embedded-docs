@@ -1,4 +1,4 @@
-# JsonExtractString
+# Text aus JSON extrahieren
 
 Der Node JsonExtractString durchsucht eine Textzeichenkette nach dem ersten gültigen JSON-Objekt und extrahiert den Wert, der einem bestimmten Schlüssel zugeordnet ist, als Zeichenkette. Beliebiger Text vor oder nach dem JSON-Objekt wird ignoriert, sodass der Node auch mit Markdown-Codeblöcken und Modellantworten funktioniert, die das JSON in zusätzlichen Fließtext einbetten. Wenn kein gültiges JSON-Objekt gefunden wird, der Schlüssel nicht gefunden wird oder der Wert null ist, gibt der Node eine leere Zeichenkette zurück.
 

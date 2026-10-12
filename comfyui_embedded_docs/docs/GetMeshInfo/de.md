@@ -1,4 +1,4 @@
-# GetMeshInfo
+# Mesh-Info abrufen
 
 Get Mesh Info gibt die Anzahl der Vertices und Faces in einem Mesh sowie die enthaltenen Attribute an (wie UVs, Vertexfarben, Normalen und Texturen). Der Bericht wird auf dem Node angezeigt und als Textausgabe zurückgegeben, während das Mesh selbst unverändert weitergegeben wird.
 

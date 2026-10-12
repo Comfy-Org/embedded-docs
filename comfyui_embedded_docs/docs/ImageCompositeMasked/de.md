@@ -1,4 +1,4 @@
-# ImageCompositeMasked
+# Maskierte Bildkomposition
 
 Der `ImageCompositeMasked`-Node ist für das Compositing von Bildern konzipiert. Er ermöglicht das Überlagern eines Quellbilds auf ein Zielbild an angegebenen Koordinaten, mit optionaler Größenänderung und Maskierung.
 

@@ -1,4 +1,4 @@
-# Save3DAdvanced
+# 3D speichern (Erweitert)
 
 Speichert ein 3D-Modell in einer Datei im Ausgabeverzeichnis von ComfyUI und erzeugt eine Vorschau der gespeicherten Szene. Außerdem werden das 3D-Modell, seine Platzierung in der Szene, Kamerainformationen und Viewport-Abmessungen an nachgelagerte Nodes weitergegeben. Wenn Modellplatzierung oder Kamerainformationen nicht verbunden sind, verwendet der Node die im Viewport-Status gespeicherten Werte.
 

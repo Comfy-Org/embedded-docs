@@ -1,4 +1,4 @@
-# HiDreamO1ReferenceImages
+# HiDream-O1 Referenzbilder
 
 Dieser Node hängt Referenzbilder sowohl an die positive als auch an die negative Konditionierung an, sodass nachgelagerte Nodes sie zur Steuerung der Generierung verwenden können. Referenzbilder werden in numerischer Reihenfolge ihrer Eingabe-Sockets angewendet. Wenn keine Referenzbilder verbunden sind, werden die positive und die negative Konditionierung unverändert weitergegeben.
 

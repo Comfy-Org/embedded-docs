@@ -1,4 +1,4 @@
-# ConvertDictionaryToString
+# Wörterbuch in Zeichenfolge konvertieren
 
 Dieser Node wandelt ein Dictionary (eine Sammlung von Schlüssel-Wert-Paaren) in einen Text-String im JSON-Format um. Sie können die Einrückungsebene steuern, um die Ausgabe lesbarer oder kompakter zu machen.
 

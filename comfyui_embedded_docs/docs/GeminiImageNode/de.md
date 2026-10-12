@@ -1,4 +1,4 @@
-# GeminiImageNode
+# Nano Banana (Google Gemini Image)
 
 Der GeminiImage-Node erzeugt Text- und Bildantworten von den Gemini-KI-Modellen von Google. Er ermöglicht die Bereitstellung multimodaler Eingaben, einschließlich Text-Prompts, Bildern und Dateien, um kohärente Text- und Bildausgaben zu erzeugen. Der Node übernimmt die gesamte API-Kommunikation und das Antwortparsing mit den neuesten Gemini-Modellen.
 

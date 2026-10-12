@@ -1,4 +1,4 @@
-# SplitImageToTileList
+# Bild in Liste von Kacheln aufteilen
 
 Der Node „Split Image into List of Tiles“ unterteilt ein einzelnes Eingabebild in eine Reihe kleinerer, überlappender rechteckiger Bereiche, sogenannte Kacheln. Er erzeugt eine Batch-Liste dieser Kacheln, die von anderen Nodes einzeln verarbeitet werden können. Die Größe jeder Kachel und der Überlappungsgrad zwischen ihnen können angegeben werden.
 

@@ -1,4 +1,4 @@
-# MarigoldV2PostProcess
+# Marigold V2-Nachbearbeitung
 
 Dieser Node konvertiert eine dekodierte Marigold V2-Vorhersage in ein anzeigbares Bild. Er nimmt den rohen Vorhersage-Tensor und formatiert ihn abhängig davon, um welche Art von Vorhersage es sich handelt: normalisierte Tiefe (nahe Objekte erscheinen hell), Oberflächennormalen mit Einheitslänge oder sRGB-Albedo.
 

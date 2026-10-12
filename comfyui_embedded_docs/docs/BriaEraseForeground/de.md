@@ -1,4 +1,4 @@
-# BriaEraseForeground
+# Bria Vordergrund entfernen
 
 Dieser Node entfernt den Vordergrund eines Bildes mit Bria und generiert an dessen Stelle einen neuen Hintergrund. Alles, was Bria als Vordergrund identifiziert, wird entfernt, nicht nur Personen, und die unberührten Pixel bleiben erhalten. Das Ergebnis wird in einer Standardgröße von etwa 1 Megapixel neu gerendert.
 

@@ -1,4 +1,4 @@
-# VAEDecodeTiled
+# VAE dekodieren (gekachelt)
 
 Der Node VAEDecodeTiled dekodiert latente Repräsentationen mithilfe eines gekachelten Ansatzes in Bilder, um große Bilder effizient zu verarbeiten. Er verarbeitet die Eingabe in kleineren Kacheln, um den Speicherverbrauch zu steuern und gleichzeitig die Bildqualität zu erhalten. Der Node unterstützt außerdem Video-VAEs, indem er temporale Frames in Blöcken mit Überlappung für sanfte Übergänge verarbeitet.
 

@@ -1,4 +1,4 @@
-# PreviewPointCloud
+# Punktwolkenvorschau
 
 Der Node Preview Point Cloud ermöglicht es Ihnen, eine 3D-Punktwolkendatei in der ComfyUI-Oberfläche anzuzeigen, ohne sie im ComfyUI-Ausgabeverzeichnis zu speichern. Er speichert die Punktwolke an einem temporären Speicherort und zeigt sie in einem 3D-Vorschaufenster an; gleichzeitig reicht er die Modelldaten, Modellinformationen, Kamerainformationen und Vorschauabmessungen für die weitere Verarbeitung weiter.
 

@@ -1,4 +1,4 @@
-# CreateHookKeyframesFromFloats
+# Hook-Keyframes aus Floats erstellen
 
 Dieser Node erzeugt Hook-Keyframes aus einer Liste von Gleitkomma-Stärkewerten und verteilt sie gleichmäßig zwischen angegebenen Start- und End-Prozentsätzen. Er erzeugt eine Sequenz von Keyframes, bei der jeder Stärkewert einer bestimmten Prozentposition in der Animationszeitleiste zugewiesen wird. Der Node kann entweder eine neue Keyframe-Gruppe erstellen oder zu einer vorhandenen hinzufügen, mit einer Option, die erzeugten Keyframes zu Debugging-Zwecken auszugeben.
 

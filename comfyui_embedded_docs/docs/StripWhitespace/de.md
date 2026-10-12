@@ -1,4 +1,4 @@
-# StripWhitespace
+# Leerzeichen entfernen (VERALTET)
 
 Dieser Node entfernt zusätzliche Leerzeichen, Tabulatoren oder Zeilenumbrüche am Anfang und Ende einer Textzeichenkette. Er nimmt eine Texteingabe entgegen und gibt eine bereinigte Version zurück, bei der der führende und nachfolgende Leerraum entfernt wurde.
 

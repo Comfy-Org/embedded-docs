@@ -1,4 +1,4 @@
-# BakeNormalMapFromMesh
+# Normal Map aus Mesh backen
 
 Dieser Node backt eine Tangentenraum-Normalmap von einem High-Poly-Mesh auf das UV-Layout eines Low-Poly-Meshs und erfasst dabei Oberflächendetails, die während der Dezimierung verloren gingen. Verbinden Sie das UV-entfaltete Low-Poly-Mesh und das High-Poly-Mesh, aus dem es hervorgegangen ist; der Node gibt ein Bild aus, das für den `normal_map`-Eingang von Apply Texture To Mesh bereit ist.
 

@@ -1,4 +1,4 @@
-# LoopResult
+# Schleifenergebnis
 
 LoopResult ist ein nur für Entwickler vorgesehener Ausgabeknoten, der den Schlusspunkt eines Schleifenblocks markiert. Er sammelt die an ihn übergebenen Werte in ihrer Reihenfolge (benannt als `output0`, `output1` usw.) und gibt den externen Ausführungsblock frei, der durch eine Close-ID identifiziert wird. Da die Eingabe-Fingerabdruckbildung immer NaN zurückgibt, wird der Knoten als immer geändert behandelt und bei jedem Lauf erneut ausgeführt.
 

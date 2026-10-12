@@ -1,4 +1,4 @@
-# ImageAddNoise
+# Rauschen zum Bild hinzufügen
 
 Der ImageAddNoise-Node fügt einem Eingabebild zufälliges Rauschen hinzu. Er verwendet einen angegebenen zufälligen Seed, um konsistente Rauschmuster zu erzeugen, und ermöglicht die Steuerung der Intensität des Rauscheffekts. Das resultierende Bild behält dieselben Abmessungen wie die Eingabe, weist jedoch eine zusätzliche visuelle Textur auf.
 

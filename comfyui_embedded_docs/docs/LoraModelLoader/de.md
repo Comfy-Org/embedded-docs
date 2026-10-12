@@ -1,4 +1,4 @@
-# LoraModelLoader
+# LoRA-Modell laden
 
 Der Node LoraModelLoader wendet trainierte LoRA-Gewichte (Low-Rank Adaptation) auf ein Diffusionsmodell an. Er modifiziert das Basismodell, indem er LoRA-Gewichte aus einem trainierten LoRA-Modell lädt und deren Einflussstärke anpasst. Dadurch können Sie das Verhalten von Diffusionsmodellen anpassen, ohne sie von Grund auf neu zu trainieren, einschließlich eines Bypass-Modus, der die Gewichte des Basismodells unverändert lässt.
 

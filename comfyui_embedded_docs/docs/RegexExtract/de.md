@@ -1,4 +1,4 @@
-# RegexExtract
+# Text extrahieren
 
 Der RegexExtract-Node sucht mithilfe regulärer Ausdrücke nach Mustern in Text. Er kann den ersten Treffer, alle Treffer, bestimmte Gruppen aus Treffern oder alle Gruppen über mehrere Treffer hinweg finden. Der Node unterstützt verschiedene Regex-Flags für Groß-/Kleinschreibung, mehrzeiliges Matching und Dotall-Verhalten.
 

@@ -1,4 +1,4 @@
-# SDPoseKeypointExtractor
+# SDPose-Keypoint-Extraktor
 
 Der SDPoseKeypointExtractor-Node erkennt menschliche Pose-Keypoints aus Eingabebildern mithilfe des SDPose-Modells. Er kann vollständige Bilder oder bestimmte, durch Begrenzungsrahmen definierte Regionen verarbeiten und gibt die erkannten Keypoints im OpenPose-Format aus, das die Koordinaten für jede Person und einen Konfidenzwert für jeden Keypoint enthält.
 

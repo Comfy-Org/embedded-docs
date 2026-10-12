@@ -1,4 +1,4 @@
-# AddTextSuffix
+# Textsuffix hinzufügen (VERALTET)
 
 Dieser Node hängt ein angegebenes Suffix an das Ende einer Eingabetextzeichenfolge an. Er nimmt den Originaltext und das Suffix als Eingaben entgegen und gibt anschließend das kombinierte Ergebnis zurück. **Dieser Node ist veraltet** und wird durch den Node „Concatenate Text“ ersetzt.
 

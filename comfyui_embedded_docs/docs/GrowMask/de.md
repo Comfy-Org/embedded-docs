@@ -1,4 +1,4 @@
-# GrowMask
+# Maske erweitern
 
 Der Node `GrowMask` dient dazu, die Größe einer gegebenen Maske zu ändern, indem er sie entweder erweitert oder verkleinert und optional einen Verjüngungseffekt auf die Ecken anwendet. Diese Funktionalität ist entscheidend für die dynamische Anpassung von Maskengrenzen in Bildverarbeitungsaufgaben und ermöglicht eine flexiblere und präzisere Steuerung des interessierenden Bereichs.
 

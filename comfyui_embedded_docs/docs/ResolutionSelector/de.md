@@ -1,4 +1,4 @@
-# ResolutionSelector
+# Auflösungsauswahl
 
 Der Node „Resolution Selector“ berechnet die Pixelbreite und -höhe basierend auf einem ausgewählten Seitenverhältnis und einer Ziel-Gesamtauflösung in Megapixeln. Er ist nützlich, um konsistente Abmessungen für andere Nodes zu erzeugen, wie z. B. für den Node „Empty Latent Image“.
 

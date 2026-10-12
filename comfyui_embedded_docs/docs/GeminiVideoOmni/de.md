@@ -1,4 +1,4 @@
-# GeminiVideoOmni
+# Google Gemini Omni (Video)
 
 Erzeugen Sie mit dem Gemini Omni Flash-Modell von Google ein Video mit Audio aus einem Text-Prompt. Optional können Sie Referenzbilder und/oder -videos bereitstellen, um das Ergebnis zu steuern oder zu bearbeiten. Beschreiben Sie die gewünschte Länge (3–10 s) und das Seitenverhältnis (16:9 oder 9:16) direkt im Prompt.
 

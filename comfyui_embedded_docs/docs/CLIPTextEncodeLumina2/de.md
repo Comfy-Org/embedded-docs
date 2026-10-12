@@ -1,4 +1,4 @@
-# CLIPTextEncodeLumina2
+# CLIP-Textkodierung (Lumina 2)
 
 Dieser Node kodiert einen System-Prompt und einen User-Prompt mithilfe eines CLIP-Modells in ein Embedding, das zur Steuerung des Diffusionsmodells verwendet werden kann, um die Generierung spezifischer Bilder zu lenken. Er kombiniert einen vordefinierten Lumina 2 System-Prompt mit Ihrem benutzerdefinierten Text-Prompt und verarbeitet beide durch das CLIP-Modell, um Conditioning-Daten für die Bildgenerierung zu erzeugen.
 

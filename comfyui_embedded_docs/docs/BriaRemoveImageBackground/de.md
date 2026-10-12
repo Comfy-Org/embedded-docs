@@ -1,4 +1,4 @@
-# BriaRemoveImageBackground
+# Bria Bildhintergrund entfernen
 
 Dieser Node entfernt den Hintergrund aus einem Bild mithilfe des Dienstes Bria RMBG 2.0. Er sendet das Bild zur Verarbeitung an eine externe API und gibt das Ergebnis mit entferntem Hintergrund zurück.
 

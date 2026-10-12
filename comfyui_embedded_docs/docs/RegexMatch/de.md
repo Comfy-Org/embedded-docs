@@ -1,4 +1,4 @@
-# RegexMatch
+# Text abgleichen
 
 Der RegexMatch-Node prüft, ob eine Textzeichenfolge eine Übereinstimmung für ein gegebenes Muster eines regulären Ausdrucks enthält. Er durchsucht die Eingabezeichenfolge und gibt ein einfaches Ja/Nein-Ergebnis zurück, das angibt, ob das Muster irgendwo im Text gefunden wurde. Sie können die Funktionsweise der Suche anpassen, indem Sie Optionen wie die Suche ohne Berücksichtigung der Groß-/Kleinschreibung oder den Multiline-Modus aktivieren.
 

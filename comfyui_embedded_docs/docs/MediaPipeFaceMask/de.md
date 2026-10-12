@@ -1,4 +1,4 @@
-# MediaPipeFaceMask
+# Gesichtsmaske zeichnen (MediaPipe)
 
 ## Überblick
 

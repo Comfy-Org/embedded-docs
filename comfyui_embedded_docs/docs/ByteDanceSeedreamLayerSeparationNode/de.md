@@ -1,4 +1,4 @@
-# ByteDanceSeedreamLayerSeparationNode
+# ByteDance Seedream 5.0 Pro Ebenentrennung (Legacy)
 
 ByteDance Seedream 5.0 Pro Layer Separation zerlegt ein Bild in eine Hintergrundplatte plus bis zu 16 neu positionierbare transparente Ebenen, jede mit Stapelreihenfolge, Bounding-Box, Name und Beschreibung. Es gibt den Hintergrund, Bilder pro Ebene mit Masken, Platzierungsboxen und einen sofort bearbeitbaren Ebenenstapel zurück.
 

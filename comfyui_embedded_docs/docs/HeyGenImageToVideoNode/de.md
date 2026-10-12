@@ -1,4 +1,4 @@
-# HeyGenImageToVideoNode
+# HeyGen Video 1.0 Bild zu Video
 
 Animieren Sie ein Bild mit synchronisiertem Dialog und Ton mithilfe von HeyGen Video 1.0 in ein Video. Das verbundene Bild wird als erstes Einzelbild verwendet, und das generierte Video behält das Seitenverhältnis des Bildes bei. Beschreiben Sie im Prompt, was geschehen soll, einschließlich eventueller Dialogzeilen. Der Node lädt das Bild hoch, erstellt den Video-Job, wartet auf dessen Fertigstellung und gibt das resultierende Video zurück.
 

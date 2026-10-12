@@ -1,4 +1,4 @@
-# FeatherMask
+# Maske weichzeichnen
 
 Der Node `FeatherMask` wendet einen Feathering-Effekt auf die Ränder einer gegebenen Maske an und sorgt für einen weichen Übergang der Maskenränder, indem deren Deckkraft basierend auf angegebenen Abständen zu jedem Rand angepasst wird. Dadurch entsteht ein weicherer, stärker vermischter Randeffekt.
 

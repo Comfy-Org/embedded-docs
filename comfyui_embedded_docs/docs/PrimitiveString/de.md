@@ -1,4 +1,4 @@
-# PrimitiveString
+# Text
 
 Der Text-Node bietet eine einfache Möglichkeit, Textdaten in Ihren Workflow einzugeben und weiterzugeben. Er nimmt eine Textzeichenfolge als Eingabe entgegen und gibt dieselbe Zeichenfolge unverändert aus. Das ist nützlich, um anderen Nodes, die String-Parameter benötigen, Texteingaben bereitzustellen.
 

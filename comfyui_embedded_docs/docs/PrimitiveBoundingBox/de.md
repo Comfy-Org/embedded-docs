@@ -1,4 +1,4 @@
-# PrimitiveBoundingBox
+# Bounding Box
 
 Der Node PrimitiveBoundingBox erstellt einen einfachen rechteckigen Bereich, der durch seine Position und Größe definiert ist. Er verwendet X- und Y-Koordinaten für die obere linke Ecke sowie Werte für Breite und Höhe und gibt eine Bounding-Box-Datenstruktur aus, die von anderen Nodes in einem Workflow verwendet werden kann.
 

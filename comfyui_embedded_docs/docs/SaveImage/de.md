@@ -1,4 +1,4 @@
-# SaveImage
+# Bild speichern
 
 Der SaveImage-Node speichert die Eingabebilder als PNG-Dateien in Ihrem ComfyUI-Ausgabeverzeichnis. Er kann Workflow-Metadaten wie den Prompt in jede gespeicherte Datei einbetten und gibt die Bilder unverändert zurück, sodass sie weiterhin von anderen Nodes verwendet werden können.
 

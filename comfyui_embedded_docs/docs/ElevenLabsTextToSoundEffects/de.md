@@ -1,4 +1,4 @@
-# ElevenLabsTextToSoundEffects
+# ElevenLabs Text zu Soundeffekten
 
 Der ElevenLabs Text to Sound Effects-Node erzeugt Audio-Klangeffekte aus einer Textbeschreibung. Er verwendet die ElevenLabs-API, um Klangeffekte basierend auf Ihrem Prompt zu erstellen, sodass Sie die Dauer, das Schleifenverhalten und die Genauigkeit, mit der der Klang dem Text folgt, steuern können.
 

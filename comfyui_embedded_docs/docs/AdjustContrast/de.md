@@ -1,4 +1,4 @@
-# AdjustContrast
+# Kontrast anpassen
 
 Der Node „Adjust Contrast“ passt den Kontrast eines Eingabebilds an, indem er die Differenz zwischen hellen und dunklen Bereichen um den Mittelpunkt des Farbbereichs skaliert. Ein Faktor von 1.0 lässt das Bild unverändert, Werte unter 1.0 verringern den Kontrast, Werte über 1.0 erhöhen den Kontrast.
 

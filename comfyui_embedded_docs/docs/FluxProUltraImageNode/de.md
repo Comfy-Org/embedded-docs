@@ -1,4 +1,4 @@
-# FluxProUltraImageNode
+# Flux 1.1 [pro] Ultra Image
 
 Erzeugt Bilder mit Flux Pro 1.1 Ultra über eine API basierend auf Prompt und Auflösung. Dieser Node verbindet sich mit einem externen Dienst, um Bilder gemäß Ihrer Textbeschreibung und den angegebenen Dimensionen zu erstellen.
 

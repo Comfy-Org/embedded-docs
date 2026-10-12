@@ -1,4 +1,4 @@
-# RecraftV4CreateStyleNode
+# Recraft V4 Stil erstellen
 
 Dieser Node erstellt einen wiederverwendbaren Recraft V4-Stil aus 1 bis 10 Referenzbildern. Die zurückgegebene Stil-ID funktioniert mit jedem Recraft V4- und V4.1-Modell desselben Ausgabetyps (Raster oder Vektor) und kann in späteren Bildgenerierungsschritten wiederverwendet werden. Die Gesamtgröße aller Referenzbilder ist auf 10 MB begrenzt.
 

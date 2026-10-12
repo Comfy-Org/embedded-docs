@@ -1,4 +1,4 @@
-# MeshyTextToModelNode
+# Meshy: Text zu Modell
 
 Der Node Meshy: Text to Model verwendet die Meshy-API, um aus einer Textbeschreibung ein 3D-Modell zu generieren. Er sendet eine Anfrage mit Ihrem Prompt und Ihren Einstellungen an die API, wartet dann, bis die Generierung abgeschlossen ist, und lädt die resultierenden Modelldateien herunter.
 

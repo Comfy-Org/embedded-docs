@@ -1,4 +1,4 @@
-# ImageDeduplication
+# Doppelte Bilder entfernen
 
 Dieser Node entfernt doppelte oder sehr ähnliche Bilder aus einem Batch. Er funktioniert, indem er für jedes Bild einen perzeptuellen Hash erstellt – einen einfachen numerischen Fingerabdruck, der auf dessen visuellem Inhalt basiert – und diese dann vergleicht. Bilder, deren Hashes ähnlicher sind als ein festgelegter Schwellenwert, gelten als Duplikate und werden herausgefiltert.
 
