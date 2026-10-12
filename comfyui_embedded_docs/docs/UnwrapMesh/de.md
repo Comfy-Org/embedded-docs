@@ -1,4 +1,4 @@
-# UnwrapMesh
+# Mesh-UVs entpacken
 
 Erzeugt einen UV-Atlas für ein 3D-Mesh. Die Mesh-Oberfläche wird in Charts aufgeteilt, jedes Chart wird in zwei Dimensionen abgeflacht, und die abgeflachten Charts werden in einen UV-Atlas im Bereich [0,1] gepackt. Vertices an Chart-Nähten werden dupliziert (eine Kopie pro Chart, gleiche Position, eigene UV), sodass das Ausgabe-Mesh mehr Vertices als das Eingabe-Mesh enthalten kann und die Anzahl der Ausgabe-Faces von der Eingabe abweichen kann.
 
