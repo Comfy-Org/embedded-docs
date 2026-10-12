@@ -116,10 +116,21 @@ class DescriptionExtractionTests(unittest.TestCase):
         )
 
     def test_truncation_keeps_versions_intact(self):
-        # A period inside "2.5" is not a sentence ender.
-        content = "It supports Seedance 2.5, 2.5 Draft, 2.0 and 2.1 with reference images for video."
+        # A period inside "2.5" is not a sentence ender, even when the text is
+        # long enough to be truncated.
+        content = (
+            "It supports Seedance 2.5, 2.5 Draft, 2.0 and 2.1 with reference images "
+            * 4
+        ).strip()
         desc = sc.get_description_from_content(content)
-        self.assertNotIn("2.", desc[-2:])
+        self.assertLessEqual(len(desc), sc.MAX_DESCRIPTION_CHARS)
+        self.assertGreater(len(content), len(desc))
+        self.assertFalse(desc.endswith("2."))
+
+    def test_latest_clause_separator_wins(self):
+        # A semicolon later than the last comma must win the clause cut.
+        content = "A, " + "B" * 100 + "; " + "C" * 60
+        self.assertEqual(sc.get_description_from_content(content), "A, " + "B" * 100)
 
     def test_earliest_sentence_boundary_wins(self):
         # A localized sentence boundary must not lose to a later English one.

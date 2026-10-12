@@ -841,10 +841,16 @@ def _trim_to_length(text: str, limit: int = MAX_DESCRIPTION_CHARS) -> str:
     ]
     if endings and max(endings) > _MIN_DESCRIPTION_CHARS:
         return text[: max(endings)].strip()
-    for ender in (",", "，", ";", "；", "、"):
-        i = text.rfind(ender, 0, limit)
-        if i > _MIN_DESCRIPTION_CHARS:
-            return text[:i].strip()
+    # The latest clause boundary wins, whichever separator it uses.
+    clause = max(
+        (
+            text.rfind(ender, 0, limit)
+            for ender in (",", "，", ";", "；", "、")  # noqa: RUF001 — CJK separators
+        ),
+        default=-1,
+    )
+    if clause > _MIN_DESCRIPTION_CHARS:
+        return text[:clause].strip()
     words = text[:limit].rsplit(" ", 1)[0].strip(" ,;:").split()
     while words and words[-1].lower().strip(",;:") in _DANGLING_WORDS:
         words.pop()
