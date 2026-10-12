@@ -1,4 +1,4 @@
-# EmptyYuE2LatentAudio
+# Audio Latent YuE2 vuoto
 
 Questo nodo crea un latente audio vuoto per YuE2, dimensionato su una durata e un numero di batch scelti. Produce dati audio segnaposto silenziosi che i nodi successivi possono riempire durante la generazione audio.
 

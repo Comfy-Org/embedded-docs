@@ -1,4 +1,4 @@
-# WanContextWindowsManual
+# Wan Context Windows
 
 Il nodo WAN Context Windows (Manual) consente di configurare manualmente le finestre di contesto per i modelli video in stile Wan. Applica queste impostazioni durante il campionamento, offrendo controllo su lunghezza della finestra, sovrapposizione, pianificazione e metodo di fusione usati mentre il modello elabora il video. La lunghezza del contesto e la sovrapposizione sono specificate in frame reali e vengono convertite internamente per l'elaborazione 2D del modello.
 

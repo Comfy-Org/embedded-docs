@@ -1,4 +1,4 @@
-# IdeogramTextToImageApi
+# Ideogram 4.5 da testo a immagine
 
 Genera immagini da un prompt testuale con Ideogram 4.5. Il prompt accetta anche una didascalia JSON strutturata di Ideogram, ad esempio il `final_prompt` restituito da un'esecuzione precedente, che offre un controllo esatto su stringhe di testo, colori e layout. Il nodo restituisce l'immagine o le immagini generate insieme alla didascalia da cui è stata effettivamente generata.
 

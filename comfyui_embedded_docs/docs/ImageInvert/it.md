@@ -1,4 +1,4 @@
-# ImageInvert
+# Inverti colori immagine
 
 Il nodo `ImageInvert` è progettato per invertire i colori di un'immagine, trasformando efficacemente il valore di colore di ogni pixel nel suo colore complementare sulla ruota dei colori. Questa operazione è utile per creare immagini negative o per effetti visivi che richiedono l'inversione dei colori.
 

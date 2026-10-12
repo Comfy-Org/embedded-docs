@@ -1,4 +1,4 @@
-# PaintMesh
+# Dipingi mesh
 
 PaintMesh prende una mesh 3D e un campo di colori voxel. Assegna a ciascun vertice il colore del voxel più vicino nel campo e restituisce la mesh con quei colori dei vertici applicati. Se il campo voxel è vuoto, la mesh viene colorata con colori dei vertici predefiniti a zero (nero).
 

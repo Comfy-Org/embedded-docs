@@ -1,4 +1,4 @@
-# LatentOperationSharpen
+# Affila Latent
 
 Il nodo LatentOperationSharpen crea un'operazione di nitidezza per rappresentazioni latenti utilizzando un kernel basato su gaussiana. Normalizza i dati latenti, applica un kernel di nitidezza personalizzato tramite convoluzione e poi ripristina la luminanza originale, migliorando dettagli e bordi nella rappresentazione dello spazio latente.
 

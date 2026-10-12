@@ -1,4 +1,4 @@
-# EmptyLTXVLatentVideo
+# Video latent LTXV vuoto
 
 Il nodo EmptyLTXVLatentVideo crea un tensore latente video vuoto (riempito di zeri) usando larghezza, altezza, lunghezza e dimensione batch specificate. Fornisce un punto di partenza vuoto per i flussi di lavoro di generazione video LTXV, con le dimensioni latenti compresse automaticamente rispetto alla dimensione video richiesta.
 

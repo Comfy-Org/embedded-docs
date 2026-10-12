@@ -1,4 +1,4 @@
-# SeedNode
+# Seed
 
 Il nodo Seed fornisce un valore intero che può essere usato come seed per controllare la riproducibilità delle operazioni casuali in altri nodi. Fornendo un valore iniziale coerente, aiuta a mantenere i risultati generati ripetibili quando necessario.
 

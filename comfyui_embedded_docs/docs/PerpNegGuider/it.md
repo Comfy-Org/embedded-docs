@@ -1,4 +1,4 @@
-# PerpNegGuider
+# Perp-Neg Guider
 
 Il nodo PerpNegGuider crea un sistema di guida per controllare la generazione di immagini utilizzando il condizionamento negativo perpendicolare. Riceve in ingresso condizionamenti positivo, negativo e vuoto e applica un algoritmo di guida specializzato che calcola tutte e tre le predizioni di rumore in un singolo batch per efficienza. Questo nodo è progettato per test sperimentali e offre un controllo fine sulla forza della guida e sulla scala negativa.
 

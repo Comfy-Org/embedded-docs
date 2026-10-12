@@ -1,4 +1,4 @@
-# HeyGenReferenceToVideoNode
+# HeyGen Video 1.0 da riferimento a video
 
 Genera un video con dialogo e audio sincronizzati a partire da un prompt testuale usando HeyGen Video 1.0, facoltativamente guidato da materiale di riferimento collegato. Immagini di persone, prodotti o luoghi, video da riutilizzare e clip audio che forniscono una voce possono essere usati come riferimenti. Menziona ogni riferimento nel prompt come @Image1, @Video1 o @Audio1, numerati per tipo nell'ordine in cui gli input vengono collegati: questi tag vengono riscritti nelle etichette che HeyGen si aspetta, e un tag che punta a un riferimento non collegato genera un errore. Senza alcuna immagine o video di riferimento, il nodo funziona come generazione text-to-video.
 

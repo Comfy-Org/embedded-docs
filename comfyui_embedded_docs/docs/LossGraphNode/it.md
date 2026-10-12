@@ -1,4 +1,4 @@
-# LossGraphNode
+# Traccia grafico della perdita
 
 Il nodo LossGraphNode crea un grafico a linee dei valori di loss di addestramento nel corso degli step di addestramento e lo mostra come immagine di anteprima. Legge i valori di loss da un nodo di addestramento, li traccia su un grafico con assi etichettati e valori di loss minimo/massimo, e restituisce il grafico come anteprima immagine nell'interfaccia utente. Questo nodo è contrassegnato come sperimentale ed è un nodo di output.
 

@@ -1,4 +1,4 @@
-# VOIDQuadmaskPreprocess
+# Preprocessore Quadmask VOID
 
 ## Panoramica
 

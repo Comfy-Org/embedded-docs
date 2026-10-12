@@ -1,4 +1,4 @@
-# Morphology
+# Applica Morfologia
 
 Il nodo Morphology applica varie operazioni morfologiche alle immagini, ovvero operazioni matematiche utilizzate per elaborare e analizzare le forme nelle immagini. Può eseguire operazioni come erosione, dilatazione, apertura, chiusura e altre, utilizzando una dimensione del kernel personalizzabile per controllare l'intensità dell'effetto.
 

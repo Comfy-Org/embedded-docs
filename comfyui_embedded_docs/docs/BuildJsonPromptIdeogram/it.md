@@ -1,4 +1,4 @@
-# BuildJsonPromptIdeogram
+# Crea Prompt JSON (Ideogram)
 
 This node constructs a structured JSON prompt specifically formatted for the Ideogram 4 image generation model. It organizes your text instructions, style preferences, camera or art details, lighting, medium, and optional color palette into the required JSON structure that the model expects.
 

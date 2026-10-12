@@ -1,4 +1,4 @@
-# CheckpointLoaderSimple
+# Carica Checkpoint
 
 Carica un file checkpoint di modello diffusion e lo suddivide in tre componenti principali: il modello principale usato per il denoising dei latenti, l'encoder di testo CLIP e l'encoder/decoder di immagini VAE. Il nodo rileva automaticamente tutti i file di modello nella cartella `ComfyUI/models/checkpoints` e in eventuali percorsi aggiuntivi configurati nel file `extra_model_paths.yaml`.
 

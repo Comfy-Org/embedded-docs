@@ -1,4 +1,4 @@
-# ViduMultiFrameVideoNode
+# Generazione Video Multi-Frame Vidu
 
 Questo nodo genera un video creando transizioni tra più keyframe. Parte da un'immagine iniziale e anima una sequenza di immagini finali e prompt definiti dall'utente, producendo come output un singolo file video.
 

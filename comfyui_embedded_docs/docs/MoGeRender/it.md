@@ -1,4 +1,4 @@
-# MoGeRender
+# Renderizza Geometria MoGe
 
 Questo nodo riceve un pacchetto MOGE_GEOMETRY (prodotto da un nodo di stima depth/normal MoGe) e lo renderizza in un formato immagine standard. È possibile scegliere di produrre in output una mappa di profondità, una mappa di profondità colorata, una mappa delle normali o una maschera.
 

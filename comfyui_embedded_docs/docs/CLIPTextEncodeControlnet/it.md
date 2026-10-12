@@ -1,4 +1,4 @@
-# CLIPTextEncodeControlnet
+# CLIP Text Encode (Controlnet)
 
 Il nodo CLIP Text Encode (Controlnet) codifica un prompt testuale con un modello CLIP e aggiunge la codifica testuale risultante ai dati di condizionamento esistenti. Memorizza gli embedding testuali come parametri cross-attention di controlnet all'interno di ogni voce di condizionamento, così il condizionamento restituito porta con sé queste informazioni controlnet aggiuntive.
 

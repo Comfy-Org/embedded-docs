@@ -1,4 +1,4 @@
-# LatentFromBatch
+# Ottieni Latent da Batch
 
 Questo nodo è progettato per estrarre un sottoinsieme specifico di campioni latenti da un batch dato, in base all'indice batch e alla lunghezza specificati. Consente l'elaborazione selettiva dei campioni latenti, facilitando le operazioni su segmenti più piccoli del batch per efficienza o manipolazione mirata.
 

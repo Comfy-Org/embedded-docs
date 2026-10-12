@@ -1,4 +1,4 @@
-# BriaImageEditNode
+# Bria FIBO Image Edit
 
 Il nodo Bria FIBO Image Edit modifica un'immagine esistente utilizzando un'istruzione testuale. Invia l'immagine e il prompt all'API Bria, dove il modello FIBO crea una versione modificata. Una maschera opzionale può limitare le modifiche a un'area specifica.
 

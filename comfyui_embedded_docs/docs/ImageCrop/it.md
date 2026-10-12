@@ -1,4 +1,4 @@
-# ImageCrop
+# Ritaglia Immagine (DEPRECATO)
 
 Il nodo `ImageCrop` è progettato per ritagliare le immagini a una larghezza e un'altezza specificate, partendo da una determinata coordinata x e y. Questa funzionalità è essenziale per concentrarsi su regioni specifiche di un'immagine o per adattare le dimensioni dell'immagine a determinati requisiti.
 

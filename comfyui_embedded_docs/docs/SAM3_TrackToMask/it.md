@@ -1,4 +1,4 @@
-# SAM3_TrackToMask
+# SAM3 Traccia in Maschera
 
 ## Panoramica
 

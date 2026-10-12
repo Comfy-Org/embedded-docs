@@ -1,4 +1,4 @@
-# Wan2VideoEditApi
+# Wan 2.7 Modifica Video
 
 Il nodo Wan 2.7 Video Edit modifica un video utilizzando istruzioni testuali, immagini di riferimento o trasferimento di stile. Invia il video di input (più eventuali immagini di riferimento) al servizio di modifica video Wan 2.7 e restituisce un video appena generato in base alle impostazioni scelte di risoluzione, rapporto d'aspetto e durata.
 

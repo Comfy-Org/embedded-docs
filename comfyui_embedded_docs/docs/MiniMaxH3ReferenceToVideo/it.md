@@ -1,4 +1,4 @@
-# MiniMaxH3ReferenceToVideo
+# MiniMax H3 Riferimento a Video
 
 MiniMax H3 Reference to Video crea il condizionamento testuale e il latente audio-video vuoto necessari per la generazione reference-to-video di MiniMax H3. Fornisci un prompt più immagini, video e clip audio di riferimento opzionali, e il nodo codifica questi riferimenti in un condizionamento che il modello può usare durante la generazione. Il prompt fa riferimento ai riferimenti con i tag `<Picture i>`, `<Video k>` e `<Audio j>`.
 

@@ -1,4 +1,4 @@
-# SaveAudioOpus
+# Salva Audio (Opus) (DEPRECATO)
 
 Il nodo SaveAudioOpus salva i dati audio in un file nel formato Opus, consentendoti di scegliere la qualità di codifica (bitrate) e il prefisso del nome file per il file esportato. Questo nodo è deprecato e potrebbe essere rimosso nelle versioni future.
 

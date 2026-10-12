@@ -1,4 +1,4 @@
-# CreateHookModelAsLora
+# Crea Hook Modello come LoRA
 
 Questo nodo crea un modello hook come LoRA (Low-Rank Adaptation) caricando i pesi del checkpoint e applicando regolazioni di intensità sia al modello sia ai componenti CLIP. Consente di applicare modifiche in stile LoRA ai modelli esistenti tramite un approccio basato su hook, abilitando fine-tuning e adattamento senza modifiche permanenti al modello. Il nodo può combinarsi con hook precedenti e memorizza nella cache i pesi caricati per efficienza.
 

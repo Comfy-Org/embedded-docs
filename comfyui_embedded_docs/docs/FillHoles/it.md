@@ -1,4 +1,4 @@
-# FillHoles
+# Riempi buchi
 
 Questo nodo riempie i buchi in una mesh 3D rilevando i bordi di confine aperti e creando nuove facce per chiuderli. Viene eseguito sulla GPU, preserva la geometria e gli UV esistenti e può elaborare mesh singole, elenchi di mesh o batch di mesh.
 

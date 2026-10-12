@@ -1,4 +1,4 @@
-# ResizeImageMaskNode
+# Ridimensiona Immagine/Maschera
 
 The Resize Image/Mask node fornisce molteplici metodi per modificare le dimensioni di un'immagine o maschera di input. Può ridimensionare tramite un moltiplicatore, impostare dimensioni specifiche, corrispondere alla dimensione di un altro input oppure adattarsi in base al numero di pixel, utilizzando diversi metodi di interpolazione per la qualità.
 

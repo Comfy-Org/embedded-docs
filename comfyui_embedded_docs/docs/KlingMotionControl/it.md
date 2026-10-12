@@ -1,4 +1,4 @@
-# KlingMotionControl
+# Kling Motion Control
 
 Il nodo Kling Motion Control genera un video applicando il movimento, le espressioni e i movimenti di camera da un video di riferimento a un personaggio definito da un'immagine di riferimento e da un prompt testuale. Consente di controllare se l'orientamento finale del personaggio proviene dal video di riferimento o dall'immagine di riferimento.
 

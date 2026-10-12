@@ -1,4 +1,4 @@
-# FeatherMask
+# Maschera Sfumata
 
 Il nodo `FeatherMask` applica un effetto di sfumatura ai bordi di una maschera specificata, rendendo gradualmente più morbidi i bordi della maschera regolando la loro opacità in base alle distanze specificate da ciascun bordo. Questo crea un effetto bordo più morbido e uniformemente sfumato.
 

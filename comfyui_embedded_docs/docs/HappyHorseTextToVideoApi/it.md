@@ -1,4 +1,4 @@
-# HappyHorseTextToVideoApi
+# HappyHorse Testo in Video
 
 Genera un video basato su un prompt testuale utilizzando il modello HappyHorse. Questo nodo invia il prompt e le impostazioni all'API HappyHorse, attende che il video venga generato e quindi scarica il risultato.
 

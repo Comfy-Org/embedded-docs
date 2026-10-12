@@ -1,4 +1,4 @@
-# PixverseV6ImageToVideoNode
+# PixVerse V6 da immagine a video
 
 Questo nodo anima un'immagine di input con il modello PixVerse V6 e restituisce un video, facoltativamente con una traccia audio nativa. Il video di output mantiene le proporzioni dell'immagine di input.
 

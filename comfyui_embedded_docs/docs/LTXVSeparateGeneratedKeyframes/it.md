@@ -1,4 +1,4 @@
-# LTXVSeparateGeneratedKeyframes
+# LTXV Separa fotogrammi chiave generati
 
 ## Panoramica
 

@@ -1,4 +1,4 @@
-# SetUnionControlNetType
+# Imposta Tipo Union ControlNet
 
 Il nodo SetUnionControlNetType consente di scegliere quale tipo di controllo utilizza una rete di controllo. Prende una rete di controllo esistente e crea una copia modificata con il tipo di controllo selezionato, lasciando invariata la rete di controllo originale. Quando viene selezionato "auto", il tipo di controllo memorizzato viene cancellato in modo che il tipo possa essere rilevato automaticamente.
 

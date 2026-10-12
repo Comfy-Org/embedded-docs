@@ -1,4 +1,4 @@
-# ControlNetApplySD3
+# Applica ControlNet con VAE
 
 Questo nodo applica la guida ControlNet al condizionamento di Stable Diffusion 3. Riceve in input i condizionamenti positive e negative insieme a un modello ControlNet e a un'immagine, quindi applica la guida di controllo con parametri regolabili di forza e temporizzazione per influenzare il processo di generazione.
 

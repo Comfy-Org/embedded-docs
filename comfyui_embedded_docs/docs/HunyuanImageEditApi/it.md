@@ -1,4 +1,4 @@
-# HunyuanImageEditApi
+# Tencent HY Image: Modifica
 
 Il nodo Tencent HY Image: Edit modifica o combina immagini di riferimento a partire da un'istruzione testuale con il modello Hunyuan Image di Tencent. Collega da una a cinque immagini, descrivi la modifica nel prompt e fai riferimento alle immagini come `@Image1`, `@Image2` e così via. Il nodo carica le immagini di riferimento, invia la richiesta all'API e restituisce il risultato modificato.
 

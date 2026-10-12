@@ -1,4 +1,4 @@
-# ResolutionBucket
+# Bucket di Risoluzione
 
 Questo nodo organizza un elenco di immagini latenti e i relativi dati di condizionamento in base alla loro risoluzione. Raggruppa insieme gli elementi che condividono la stessa altezza e larghezza, creando batch separati per ogni risoluzione unica. Questo processo è utile per preparare i dati a un addestramento efficiente, poiché consente ai modelli di elaborare insieme più elementi della stessa dimensione.
 

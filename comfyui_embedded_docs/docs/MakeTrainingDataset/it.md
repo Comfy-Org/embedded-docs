@@ -1,4 +1,4 @@
-# MakeTrainingDataset
+# Crea Dataset di Addestramento
 
 Questo nodo prepara i dati per l'addestramento codificando immagini e testo. Riceve un elenco di immagini e un elenco corrispondente di didascalie testuali, quindi utilizza un modello VAE per convertire le immagini in rappresentazioni latenti e un modello CLIP per convertire il testo in dati di condizionamento. I latenti e il condizionamento accoppiati risultanti vengono restituiti come liste, pronti per l'uso nei flussi di lavoro di addestramento.
 

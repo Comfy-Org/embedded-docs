@@ -1,4 +1,4 @@
-# LTXVDurationPredictor
+# LTXV Duration Predictor
 
 Questo nodo prevede la durata naturale dell'inquadratura per un prompt testuale usando un head di durata LTX 2.4 caricato con ModelPatchLoader, quindi allinea il risultato alla griglia di frame 8k+1 del VAE. La previsione viene convertita in un numero di frame utilizzando il frame rate selezionato e i limiti di durata minimo e massimo.
 

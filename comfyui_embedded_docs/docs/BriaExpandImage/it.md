@@ -1,4 +1,4 @@
-# BriaExpandImage
+# Bria Espandi immagine
 
 Bria Expand Image espande un'immagine oltre i suoi bordi originali generando nuovi contenuti con Bria. Ti consente di scegliere un rapporto d'aspetto target, un rapporto personalizzato oppure di definire una tela con posizionamento manuale dell'immagine originale. L'espansione può essere guidata con un prompt testuale e Bria ne genererà uno automaticamente se il prompt viene lasciato vuoto.
 

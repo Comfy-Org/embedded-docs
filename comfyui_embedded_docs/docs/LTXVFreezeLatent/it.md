@@ -1,4 +1,4 @@
-# LTXVFreezeLatent
+# LTXV Congela latent
 
 Il nodo LTXV Freeze Latent imposta a zero la maschera di rumore di un latent, il che mantiene quel latent pulito e invariato durante l'esecuzione del campionamento. Funziona sia su latent video che audio, quindi un latent può essere congelato prima che venga concatenato con altri o quando non dovrebbe essere denoizzato affatto.
 

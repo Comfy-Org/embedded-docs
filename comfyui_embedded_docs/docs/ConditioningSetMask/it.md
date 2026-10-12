@@ -1,4 +1,4 @@
-# ConditioningSetMask
+# Conditioning (Imposta Maschera)
 
 Questo nodo è progettato per modificare il condizionamento di un modello generativo applicando una maschera con una forza specificata a determinate aree. Consente regolazioni mirate all'interno del condizionamento, offrendo un controllo più preciso sul processo di generazione.
 

@@ -1,4 +1,4 @@
-# SoniloVideoToMusic
+# Sonilo Video in Musica
 
 Genera musica da un video utilizzando il modello AI di Sonilo. Questo nodo analizza il contenuto di un video in input e crea un brano musicale corrispondente. Utilizza un servizio AI esterno per elaborare il video e generare l'audio.
 

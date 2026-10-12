@@ -1,4 +1,4 @@
-# PatchModelAddDownscale
+# PatchModelAddDownscale (Kohya Deep Shrink)
 
 PatchModelAddDownscale (Kohya Deep Shrink) applica la tecnica Kohya Deep Shrink a un modello riducendo le feature intermedie a un blocco scelto e poi riportandole alla loro dimensione originale. La riduzione avviene solo durante una parte selezionata del processo di denoising, il che può ridurre il costo di elaborazione mantenendo il risultato finale vicino all'originale.
 

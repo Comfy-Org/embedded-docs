@@ -1,4 +1,4 @@
-# CLIPTextEncodeKandinsky5
+# CLIP Text Encode (Kandinsky 5)
 
 Il nodo CLIP Text Encode (Kandinsky 5) prepara i prompt testuali per l'uso con il modello Kandinsky 5. Prende due input testuali separati, li tokenizza con un modello CLIP fornito e li combina in un unico output di condizionamento che guida il processo di generazione dell'immagine.
 

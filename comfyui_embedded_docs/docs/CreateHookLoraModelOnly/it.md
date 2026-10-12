@@ -1,4 +1,4 @@
-# CreateHookLoraModelOnly
+# Crea Hook LoRA (Solo Modello)
 
 Questo nodo crea un hook LoRA (Low-Rank Adaptation) che si applica solo alla componente modello, lasciando la componente CLIP completamente invariata. Carica un file LoRA e lo applica con una forza specificata al modello, impostando la forza CLIP a zero. Il nodo può essere concatenato con hook precedenti per costruire pipeline di modifica complesse.
 

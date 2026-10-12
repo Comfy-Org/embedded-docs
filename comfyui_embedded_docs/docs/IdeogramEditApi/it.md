@@ -1,4 +1,4 @@
-# IdeogramEditApi
+# Ideogram 4.5 Modifica
 
 Modifica o combina fino a 5 immagini guidate da un prompt testuale con Ideogram 4.5. L'immagine 1 è l'immagine da modificare e le immagini successive sono riferimenti opzionali. L'intera immagine viene renderizzata di nuovo, quindi le dimensioni o il rapporto d'aspetto del risultato possono cambiare; usa Ideogram 4.5 Precise Edit per mantenere invariati i pixel non toccati.
 

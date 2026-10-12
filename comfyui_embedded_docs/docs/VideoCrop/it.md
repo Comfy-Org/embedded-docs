@@ -1,4 +1,4 @@
-# VideoCrop
+# Ritaglia video
 
 Questo nodo ritaglia un video in una regione rettangolare definita in pixel, mantenendo solo l'area all'interno di quel rettangolo. Salva un'anteprima MP4 temporanea del risultato ritagliato e restituisce in output il video ritagliato.
 

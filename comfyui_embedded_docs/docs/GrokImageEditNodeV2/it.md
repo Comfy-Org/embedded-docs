@@ -1,4 +1,4 @@
-# GrokImageEditNodeV2
+# Grok Image Edit
 
 Modifica una o più immagini esistenti in base a un prompt testuale. Il nodo invia le immagini di riferimento collegate e il prompt all'API di modifica immagini Grok utilizzando il modello selezionato, quindi restituisce le immagini modificate.
 

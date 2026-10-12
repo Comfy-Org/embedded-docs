@@ -1,4 +1,4 @@
-# TrainLoraNode
+# Addestra LoRA
 
 Il nodo TrainLoraNode crea e addestra un modello LoRA (Low-Rank Adaptation) su un modello di diffusione utilizzando i latenti e i dati di condizionamento forniti. Consente di mettere a punto un modello con parametri di addestramento personalizzati, ottimizzatori e funzioni di perdita. Il nodo restituisce in output i pesi LoRA addestrati, una mappa della cronologia della perdita e il numero totale di passi di addestramento completati.
 

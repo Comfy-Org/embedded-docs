@@ -1,4 +1,4 @@
-# ComfyCloudMageFlowTextToImageNode
+# Comfy Cloud Mage Flow Da testo a immagine [BETA]
 
 Questo nodo genera un'immagine da un prompt testuale inviando la richiesta al workflow text-to-image di Mage-Flow in Comfy Cloud. Esegue il passaggio di generazione completo a 30 step invece del più veloce passaggio turbo distillato e accetta un prompt negativo, così puoi descrivere i contenuti che non vuoi nell'immagine finale. Il prompt negativo è supportato in questa modalità a 30 step; secondo il riepilogo del nodo, la variante turbo distillata non è in grado di sfruttarlo adeguatamente.
 

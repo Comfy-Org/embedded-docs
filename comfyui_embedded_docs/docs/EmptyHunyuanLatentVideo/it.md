@@ -1,4 +1,4 @@
-# EmptyHunyuanLatentVideo
+# Video latent Hunyuan 1.0 vuoto
 
 Il nodo `EmptyHunyuanLatentVideo` è simile al nodo `EmptyLatentImage`. Puoi considerarlo come una tela vuota per la generazione video, in cui larghezza, altezza e lunghezza definiscono le proprietà della tela, mentre la dimensione del batch determina il numero di tele da creare. Questo nodo crea tele vuote pronte per le successive attività di generazione video.
 

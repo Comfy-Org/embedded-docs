@@ -1,4 +1,4 @@
-# ImageBlur
+# Sfoca Immagine
 
 Il nodo `ImageBlur` applica una sfocatura gaussiana a un'immagine, consentendo l'ammorbidimento dei bordi e la riduzione dei dettagli e del rumore. Offre il controllo su intensità e diffusione della sfocatura tramite parametri.
 

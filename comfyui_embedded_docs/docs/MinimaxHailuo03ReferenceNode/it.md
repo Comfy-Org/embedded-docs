@@ -1,4 +1,4 @@
-# MinimaxHailuo03ReferenceNode
+# MiniMax H3 Riferimento a Video
 
 Questo nodo genera un video utilizzando i modelli MiniMax H3, condizionato da immagini, video e audio di riferimento. I riferimenti sono indicati nel prompt in base al loro ordine di connessione: "Image 1", "Image 2", "Video 1", "Audio 1", e così via. Sono disponibili due modelli: "MiniMax H3" e "MiniMax H3 Max".
 

@@ -1,4 +1,4 @@
-# StringSubstring
+# Sottostringa
 
 Il nodo StringSubstring estrae una porzione di testo da una stringa più grande. Richiede una posizione iniziale e una posizione finale per definire la sezione da estrarre, quindi restituisce il testo compreso tra queste due posizioni.
 

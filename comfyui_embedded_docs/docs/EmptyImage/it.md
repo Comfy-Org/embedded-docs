@@ -1,4 +1,4 @@
-# EmptyImage
+# Immagine Vuota
 
 ## Descrizione della funzione
 

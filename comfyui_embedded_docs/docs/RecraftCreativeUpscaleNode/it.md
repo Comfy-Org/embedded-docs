@@ -1,4 +1,4 @@
-# RecraftCreativeUpscaleNode
+# Recraft Upscale Creativo Immagine
 
 Il nodo Recraft Creative Upscale Image migliora un'immagine raster aumentandone la risoluzione. Utilizza un processo di "creative upscale" che si concentra sul miglioramento dei piccoli dettagli e dei volti all'interno dell'immagine. Questa operazione viene eseguita in modo sincrono tramite un'API esterna.
 

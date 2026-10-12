@@ -1,4 +1,4 @@
-# GetImageSize
+# Ottieni Dimensione Immagine
 
 GetImageSize legge un'immagine di input e restituisce la sua larghezza, altezza e dimensione del batch. Il nodo visualizza inoltre questi valori misurati direttamente sull'interfaccia del nodo.
 

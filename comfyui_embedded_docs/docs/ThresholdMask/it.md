@@ -1,4 +1,4 @@
-# ThresholdMask
+# Maschera di Soglia
 
 Il nodo ThresholdMask converte una maschera in una maschera binaria applicando un valore di soglia. Confronta ogni pixel della maschera di input con il valore di soglia specificato e crea una nuova maschera in cui i pixel sopra la soglia diventano 1 (bianco) e i pixel inferiori o uguali alla soglia diventano 0 (nero).
 

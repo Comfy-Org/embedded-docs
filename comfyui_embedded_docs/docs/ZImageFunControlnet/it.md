@@ -1,4 +1,4 @@
-# ZImageFunControlnet
+# Applica Fun ControlNet
 
 ZImageFunControlnet applica una patch di rete di controllo a un modello base, così da poter guidare il processo di generazione o modifica delle immagini. Combina un modello, una patch del modello e un VAE e consente di controllare quanto fortemente l'effetto di controllo influenza il risultato. Gli input opzionali `image`, `inpaint_image` e `mask` permettono modifiche più mirate. Il nodo funziona con le patch Z-Image ControlNet e con le patch Qwen Image 2.1 Fun ControlNet caricate tramite il nodo Load Model Patch.
 

@@ -1,4 +1,4 @@
-# BerniniConditioning
+# Bernini Conditioning
 
 Il nodo BerniniConditioning prepara i dati di condizionamento video e immagine per il modello Wan2.2-A14B. Codifica video sorgente, video di riferimento e immagini di riferimento usando il VAE fornito, quindi li collega ai dati di condizionamento come token in-context. Il task viene dedotto automaticamente da quali input sono collegati.
 

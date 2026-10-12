@@ -1,4 +1,4 @@
-# CreateList
+# Crea Lista
 
 Il nodo Create List combina più input in un'unica lista sequenziale. Accetta un numero qualsiasi di slot di input che condividono lo stesso tipo di dato e concatena i loro elementi nell'ordine in cui gli slot sono collegati. Il risultato è un'unica lista contenente tutti gli elementi collegati.
 

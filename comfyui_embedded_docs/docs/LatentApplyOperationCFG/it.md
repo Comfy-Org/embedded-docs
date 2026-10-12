@@ -1,4 +1,4 @@
-# LatentApplyOperationCFG
+# Applica Operazione Latent CFG
 
 Il nodo LatentApplyOperationCFG applica un'operazione latente all'interno del passaggio di classifier-free guidance (CFG) del processo di campionamento di un modello. Intercetta gli output di condizionamento prodotti prima del CFG, applica l'operazione connessa ai valori latenti e restituisce il modello con questo comportamento di campionamento modificato.
 

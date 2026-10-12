@@ -1,4 +1,4 @@
-# TripoSplatConditioning
+# TripoSplat Conditioning
 
 Questo nodo codifica un'immagine di input con l'encoder di immagini DINOv3 e il VAE Flux2 per produrre dati di condizionamento positivi e negativi per il modello TripoSplat. Crea inoltre un target di rumore a dimensione fissa (latente più dati della camera) che funge da punto di partenza per il KSampler.
 

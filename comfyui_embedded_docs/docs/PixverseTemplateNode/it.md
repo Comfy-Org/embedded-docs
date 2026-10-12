@@ -1,4 +1,4 @@
-# PixverseTemplateNode
+# PixVerse Template
 
 Il nodo PixVerse Template consente di selezionare tra i template disponibili per la generazione video PixVerse. Converte il nome del template selezionato nell'ID template corrispondente richiesto dall'API PixVerse per la creazione del video.
 

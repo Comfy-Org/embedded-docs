@@ -1,4 +1,4 @@
-# MetaMuseImageEditApi
+# Meta Muse Image Modifica
 
 Modifica o combina fino a 10 immagini di riferimento utilizzando un prompt testuale e il modello Muse Image di Meta. Descrivi la modifica desiderata nel prompt e, quando necessario, fai riferimento alle immagini di riferimento come `@Image1`, `@Image2`, e così via. Il nodo carica le immagini di riferimento, chiama l'API Meta Muse Image e restituisce il risultato modificato come immagine.
 

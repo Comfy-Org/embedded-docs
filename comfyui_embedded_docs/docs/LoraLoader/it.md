@@ -1,4 +1,4 @@
-# LoraLoader
+# Carica LoRA (Modello e CLIP)
 
 Questo nodo rileva automaticamente i modelli situati nella cartella LoRA (incluse le sottocartelle), il cui percorso modello corrispondente è `ComfyUI\models\loras`. Per ulteriori informazioni, consulta Installazione dei modelli LoRA
 

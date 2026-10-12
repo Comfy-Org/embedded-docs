@@ -1,4 +1,4 @@
-# ImageColorSpace
+# Converti spazio colore dell'immagine
 
 Il nodo ImageColorSpace converte le immagini tra gli spazi colore sRGB (Rec.709), Rec.709 lineare, HDR (Rec.2020 HLG), HDR PQ (Rec.2020 PQ), HDR LogC3 e HDR ACEScct. LogC3 utilizza la curva EI 800 con primari Rec.709 e codici limitati a [0, 1]; ACEScct utilizza primari AP1 e bianco D60, con adattamento Bradford a D65. Quando converte verso l'output SDR, o da HDR PQ a HDR, applica il tone mapping alla luminanza in eccesso sull'intero batch e comprime i colori fuori gamut; gli output lineari e ACEScct, e le conversioni da lineare a HDR, preservano i valori estesi. Gli output HLG e PQ applicano il clipping ai canali negativi. Le conversioni sono calcolate in float32 e qualsiasi canale alfa viene passato invariato.
 

@@ -1,4 +1,4 @@
-# LumaConceptsNode
+# Luma Concepts
 
 Contiene uno o più concetti di camera da usare con i nodi Luma Text to Video e Luma Image to Video. Questo nodo consente di selezionare fino a quattro concetti di camera e, facoltativamente, di combinarli con catene di concetti esistenti.
 

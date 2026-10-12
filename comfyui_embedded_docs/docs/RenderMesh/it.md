@@ -1,4 +1,4 @@
-# RenderMesh
+# Renderizza mesh
 
 Questo nodo renderizza una mesh 3D in un'immagine 2D tramite ray-casting da una singola vista. Può restituire la mesh texturizzata, i colori dei vertici, una superficie solida ombreggiata, le normali di superficie o la profondità. La camera e la trasformazione opzionale del modello possono provenire da un visualizzatore Load3D / Preview3D; se non è collegata alcuna camera, viene automaticamente inquadrata una vista frontale predefinita.
 

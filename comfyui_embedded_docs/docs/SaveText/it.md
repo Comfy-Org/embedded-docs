@@ -1,4 +1,4 @@
-# SaveText
+# Salva Testo
 
 Il nodo Save Text scrive contenuto testuale in un file nella directory di output. Supporta il salvataggio nei formati .txt, .csv, .md o .json e gestisce automaticamente la formattazione leggibile del JSON quando viene fornito JSON valido.
 

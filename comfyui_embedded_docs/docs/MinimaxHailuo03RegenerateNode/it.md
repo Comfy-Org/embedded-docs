@@ -1,4 +1,4 @@
-# MinimaxHailuo03RegenerateNode
+# Rigenera MiniMax H3 in 2K
 
 Questo nodo esegue nuovamente il rendering di un output video MiniMax H3 768P a risoluzione 2K. Carica il video 768P non modificato e il prompt esatto utilizzato per generarlo, avvia un processo di rigenerazione MiniMax H3 e restituisce il video 2K ri-renderizzato. Se la generazione originale utilizzava frame iniziali o finali o media di riferimento, allegare gli stessi input.
 

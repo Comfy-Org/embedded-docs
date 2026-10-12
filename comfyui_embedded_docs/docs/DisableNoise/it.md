@@ -1,4 +1,4 @@
-# DisableNoise
+# Disabilita Rumore
 
 Questo nodo fornisce una configurazione di rumore vuota che disabilita la generazione di rumore durante il campionamento. Restituisce un oggetto rumore speciale che non contiene dati di rumore, quindi qualsiasi nodo a esso collegato salta le operazioni relative al rumore. È inoltre individuabile tramite l'alias "zero noise".
 

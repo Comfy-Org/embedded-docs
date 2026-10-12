@@ -1,4 +1,4 @@
-# Wan3ImageToVideoApi
+# Wan 3.0 Da immagine a video
 
 Questo nodo genera un video a partire da un'immagine di primo fotogramma utilizzando il modello Wan 3.0. È possibile fornire facoltativamente un'immagine di ultimo fotogramma per controllare come termina il video; il modello crea quindi un video che esegue la transizione dal primo fotogramma all'ultimo fotogramma.
 

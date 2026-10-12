@@ -1,4 +1,4 @@
-# DualCFGGuider
+# Dual CFG Guider
 
 Il nodo Dual CFG Guider crea un sistema di guida per il campionamento che utilizza due input di condizionamento insieme a un input di condizionamento negativo. Applica due scale di guida separate per controllare quanto fortemente ciascun condizionamento influenza il risultato generato e supporta due modi di combinare tali scale: "regular" e "nested".
 

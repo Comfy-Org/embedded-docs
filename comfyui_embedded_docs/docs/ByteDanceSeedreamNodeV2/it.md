@@ -1,4 +1,4 @@
-# ByteDanceSeedreamNodeV2
+# ByteDance Seedream 4.5 & 5.0 (Legacy)
 
 Questo nodo genera o modifica immagini utilizzando i modelli Seedream di ByteDance (versioni 4.0, 4.5, 5.0 Lite e 5.0 Pro). Fornisce generazione testo-immagine unificata e modifica precisa di immagini a partire da una singola frase, fino a risoluzione 4K. Questa è la versione legacy (V2) del nodo Seedream.
 

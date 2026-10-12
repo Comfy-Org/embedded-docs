@@ -1,4 +1,4 @@
-# LatentConcat
+# Concatena Latent
 
 Il nodo LatentConcat combina due campioni latenti unendoli lungo una dimensione scelta. Riceve due input latenti e li concatena lungo l'asse x, y o t, con l'opzione di controllare quale campione viene prima. Il nodo adatta automaticamente la dimensione del batch del secondo input per farla corrispondere al primo prima di eseguire la concatenazione.
 

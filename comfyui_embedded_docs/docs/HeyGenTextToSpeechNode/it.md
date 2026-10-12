@@ -1,4 +1,4 @@
-# HeyGenTextToSpeechNode
+# HeyGen Text to Speech
 
 Sintetizza audio vocale dal testo utilizzando il motore TTS Starfish di HeyGen. Questo nodo include le voci più popolari di HeyGen in 17 lingue.
 

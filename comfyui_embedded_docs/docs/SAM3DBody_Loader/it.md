@@ -1,4 +1,4 @@
-# SAM3DBody_Loader
+# Carica modello corpo SAM3D
 
 Carica un modello SAM3D Body da un file di checkpoint archiviato nella cartella detection e lo prepara per l'uso nel rilevamento 3D del corpo. Il nodo carica i pesi del modello, rileva e applica le impostazioni di quantizzazione, se presenti, e incapsula il modello per la gestione automatica della memoria.
 

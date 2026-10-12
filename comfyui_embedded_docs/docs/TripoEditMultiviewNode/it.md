@@ -1,4 +1,4 @@
-# TripoEditMultiviewNode
+# Tripo: Modifica multivista
 
 Modifica le viste di un risultato Tripo: Image to Multiview utilizzando un'istruzione testuale separata per ciascuna vista. Le viste senza un'istruzione rimangono invariate. Le immagini modificate sono pensate per essere collegate a Tripo: Multiview to Model per creare un modello 3D; un set multiview modificato non può essere modificato di nuovo.
 

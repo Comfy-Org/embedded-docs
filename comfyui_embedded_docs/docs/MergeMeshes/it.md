@@ -1,4 +1,4 @@
-# MergeMeshes
+# Unisci mesh
 
 MergeMeshes combina più mesh di input in un'unica mesh impilando i loro vertici, facce, coordinate UV e colori dei vertici, e applicando un offset agli indici delle facce in modo che tutte le parti si uniscano correttamente in un'unica mesh continua.
 

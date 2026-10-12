@@ -1,4 +1,4 @@
-# MiniMaxMusic3TextEncode
+# Codifica testo MiniMax Music3
 
 MiniMax Music3 Text Encode utilizza un modello CLIP MiniMax Music3 per convertire didascalie testuali e testi cantati in una sequenza di condizionamento acustico per la generazione musicale. Il nodo restituisce i dati CONDITIONING risultanti, insieme alla durata audio effettiva in secondi calcolata dalla durata massima di input.
 

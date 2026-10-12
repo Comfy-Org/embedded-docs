@@ -1,4 +1,4 @@
-# PreviewPointCloud
+# Anteprima Point Cloud
 
 Il nodo Preview Point Cloud consente di visualizzare un file di nuvola di punti 3D nell'interfaccia di ComfyUI senza salvarlo nella directory di output di ComfyUI. Salva la nuvola di punti in una posizione temporanea e la visualizza in una finestra di anteprima 3D, passando anche i dati del modello, le informazioni sul modello, le informazioni sulla fotocamera e le dimensioni dell'anteprima per ulteriori elaborazioni.
 

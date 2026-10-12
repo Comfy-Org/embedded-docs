@@ -1,4 +1,4 @@
-# SaveAudioMP3
+# Salva Audio (MP3) (DEPRECATO)
 
 Il nodo SaveAudioMP3 salva i dati audio come file MP3. Riceve un input audio e lo esporta nella directory di output con un nome file e un'impostazione di qualità personalizzabili, gestendo automaticamente la denominazione dei file e la conversione nel formato MP3. **Questo nodo è deprecato e potrebbe essere rimosso nelle versioni future.**
 

@@ -1,4 +1,4 @@
-# LatentUpscale
+# Ingrandisci Latent
 
 Il nodo LatentUpscale è progettato per ingrandire le rappresentazioni latenti delle immagini. Consente di regolare le dimensioni dell'immagine di output e il metodo di ingrandimento, offrendo flessibilità nel migliorare la risoluzione delle immagini latenti.
 

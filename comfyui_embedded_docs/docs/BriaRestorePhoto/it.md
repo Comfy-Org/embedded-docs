@@ -1,4 +1,4 @@
-# BriaRestorePhoto
+# Bria Ripristina foto
 
 Questo nodo ripara fotografie vecchie o danneggiate tramite l'API Bria. Rimuove grana, graffi e sfocatura, neutralizza le dominanti di colore legate all'invecchiamento, può ritagliare via supporti in cartoncino e bordi da studio, e ridisegna i volti. Il risultato viene renderizzato nuovamente a circa 1 megapixel, quindi non è allineato al pixel con l'input.
 

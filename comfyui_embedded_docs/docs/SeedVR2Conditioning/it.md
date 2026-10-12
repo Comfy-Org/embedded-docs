@@ -1,4 +1,4 @@
-# SeedVR2Conditioning
+# Applica SeedVR2 Conditioning
 
 Costruisce il condizionamento positivo e negativo da un latente VAE da utilizzare con il modello SeedVR2. Convalida la struttura del latente e del modello in input, aggiunge un canale di maschera al latente e restituisce entrambi gli output di condizionamento.
 

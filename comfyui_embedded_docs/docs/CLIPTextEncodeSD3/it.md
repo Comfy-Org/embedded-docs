@@ -1,4 +1,4 @@
-# CLIPTextEncodeSD3
+# CLIP Text Encode (SD3)
 
 CLIPTextEncodeSD3 elabora input di testo per i modelli Stable Diffusion 3 codificando più prompt di testo utilizzando modelli CLIP diversi. Gestisce tre input di testo separati (`clip_g`, `clip_l` e `t5xxl`) e fornisce opzioni per la gestione del padding del testo vuoto. Il nodo garantisce un corretto allineamento dei token tra i diversi input di testo e restituisce dati di condizionamento adatti alle pipeline di generazione SD3.
 

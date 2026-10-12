@@ -1,4 +1,4 @@
-# CreateHookModelAsLoraModelOnly
+# Crea Hook Modello come LoRA (Solo Modello)
 
 Questo nodo crea un hook che applica un modello LoRA (Low-Rank Adaptation) per modificare solo il componente del modello di una rete neurale. Carica un file checkpoint e lo applica con un'intensità specificata al modello, lasciando invariato il componente CLIP. Si tratta di un nodo sperimentale che estende la funzionalità della classe base CreateHookModelAsLora.
 

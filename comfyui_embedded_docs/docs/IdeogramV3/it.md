@@ -1,4 +1,4 @@
-# IdeogramV3
+# Ideogram V3
 
 Il nodo Ideogram V3 genera immagini utilizzando il modello Ideogram V3. Supporta sia la generazione standard di immagini da prompt testuali sia la modifica di immagini quando vengono fornite sia un'immagine sia una maschera. Il nodo offre vari controlli per rapporto d'aspetto, risoluzione, velocità di generazione e immagini di riferimento opzionali per personaggi.
 

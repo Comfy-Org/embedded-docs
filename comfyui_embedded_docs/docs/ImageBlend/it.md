@@ -1,4 +1,4 @@
-# ImageBlend
+# Fondi Immagini
 
 Il nodo `ImageBlend` è progettato per fondere due immagini in base a una modalità di fusione e a un fattore di fusione specificati. Supporta varie modalità di fusione come normal, multiply, screen, overlay, soft light e difference, consentendo tecniche versatili di manipolazione e compositing delle immagini. Questo nodo è essenziale per creare immagini composite regolando l'interazione visiva tra due livelli immagine.
 

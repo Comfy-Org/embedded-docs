@@ -1,4 +1,4 @@
-# DifferentialDiffusion
+# Diffusione Differenziale
 
 Il nodo Differential Diffusion modifica il processo di denoising applicando una maschera binaria basata su soglie di timestep. Crea una maschera che fonde la maschera di denoising originale con una maschera binaria basata su soglia, consentendo una regolazione controllata dell'intensità del processo di diffusione.
 

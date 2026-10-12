@@ -1,4 +1,4 @@
-# Rodin3D_Smooth
+# Rodin 3D Genera - Generazione Morbida
 
 Il nodo Rodin 3D Smooth genera asset 3D utilizzando l'API Rodin, elaborando immagini di input e convertendole in modelli 3D levigati. Accetta più immagini come input e produce un file di modello 3D scaricabile. Il nodo gestisce automaticamente l'intero processo di generazione, inclusi la creazione dell'attività, il polling dello stato e il download dei file.
 

@@ -1,4 +1,4 @@
-# LatentFlip
+# Ribalta Latent
 
 Il nodo LatentFlip è progettato per manipolare le rappresentazioni latenti capovolgendole verticalmente o orizzontalmente. Questa operazione consente la trasformazione dello spazio latente, rivelando potenzialmente nuove variazioni o prospettive all'interno dei dati.
 

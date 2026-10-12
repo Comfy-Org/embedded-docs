@@ -1,4 +1,4 @@
-# ByteDance2DraftToFinalVideoNode
+# ByteDance Seedance 2.5 Draft in Video finale
 
 Questo nodo esegue il rendering del video finale a 1080p di una bozza Seedance 2.5. Una bozza è un'anteprima veloce a 480p: in un nodo video Seedance 2.5 (text to video, first-last-frame to video o reference to video), imposta `model` su `Seedance 2.5 Draft`, eseguilo e collega qui il suo output `draft_task_id`. Il risultato finale mantiene la scena e il movimento della bozza e riutilizza il prompt, i riferimenti, la durata, le proporzioni e l'impostazione audio che hanno prodotto la bozza.
 

@@ -1,4 +1,4 @@
-# SoniloTextToMusic
+# Sonilo Testo in Musica
 
 Il nodo Sonilo Text to Music genera musica da una descrizione testuale utilizzando il modello AI di Sonilo. Fornisci un prompt che descrive la musica desiderata e il nodo invia una richiesta al servizio Sonilo per creare un file audio. Puoi impostare una durata target per il clip generato.
 

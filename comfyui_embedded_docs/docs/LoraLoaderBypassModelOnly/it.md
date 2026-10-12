@@ -1,4 +1,4 @@
-# LoraLoaderBypassModelOnly
+# Carica LoRA (Bypass, solo modello) (per debug)
 
 Questo nodo applica una LoRA (Low-Rank Adaptation) a un modello per modificarne il comportamento, ma influisce solo sulla componente del modello stessa. Carica un file LoRA specificato e regola i pesi del modello in base a una determinata intensità, lasciando invariati altri componenti come il codificatore di testo CLIP.
 

@@ -1,4 +1,4 @@
-# LTXVPreprocess
+# LTXV Preprocess
 
 Il nodo LTXVPreprocess applica una preelaborazione di compressione video alle immagini. Simula la perdita di qualità della compressione video codificando un'immagine come video MP4 a fotogramma singolo e decodificandola di nuovo, consentendo di controllare il livello di compressione.
 

@@ -1,4 +1,4 @@
-# MiniMaxH3FunControlNetApply
+# Applica MiniMax H3 Fun ControlNet
 
 Questo nodo applica un MiniMax H3 Fun ControlNet a un modello text-to-video come patch del modello. Può usare un video di controllo opzionale e una maschera opzionale per guidare la generazione, e restituisce una copia patchata del modello per il campionamento successivo. Quando la forza è impostata su 0, oppure quando non viene fornito né un video di controllo né una maschera, il modello di input viene restituito invariato.
 

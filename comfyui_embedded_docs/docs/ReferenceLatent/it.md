@@ -1,4 +1,4 @@
-# ReferenceLatent
+# Imposta Latent di Riferimento
 
 Questo nodo imposta il latent guida per un modello di modifica. Riceve dati di condizionamento e un input latent opzionale, quindi modifica il conditioning per includere le informazioni del latent di riferimento. Se il modello lo supporta, è possibile concatenare più nodi Set Reference Latent per impostare più immagini di riferimento.
 

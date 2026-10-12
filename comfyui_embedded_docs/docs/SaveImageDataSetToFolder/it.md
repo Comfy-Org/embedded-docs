@@ -1,4 +1,4 @@
-# SaveImageDataSetToFolder
+# Salva Immagine (in Cartella) (DEPRECATO)
 
 Questo nodo salva un elenco di immagini in una cartella specificata all'interno della directory di output di ComfyUI. Scrive ogni immagine su disco come file PNG utilizzando un prefisso del nome file configurabile. Questo nodo è deprecato e sostituito dai nodi Save Image esistenti, dove la cartella di destinazione può essere specificata nel prefisso del nome file.
 

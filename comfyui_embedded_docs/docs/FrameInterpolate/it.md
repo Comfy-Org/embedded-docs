@@ -1,4 +1,4 @@
-# FrameInterpolate
+# Esegui Modello di Interpolazione Frame
 
 Il nodo Frame Interpolate crea nuovi frame tra quelli esistenti in una sequenza di immagini, aumentando di fatto la frequenza dei fotogrammi. Utilizza un modello AI per prevedere l'aspetto che dovrebbero avere i frame intermedi, il che può essere usato per creare effetti al rallentatore fluidi o per aumentare la fluidità di un video.
 

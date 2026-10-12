@@ -1,4 +1,4 @@
-# NormalizeVideoLatentStart
+# NormalizzaInizioLatenteVideo
 
 Questo nodo regola i primi frame di un latent video per renderli più simili ai frame che seguono. Calcola la media e la variazione da un insieme di frame di riferimento più avanti nel video e applica le stesse caratteristiche ai frame iniziali. Ciò aiuta a ridurre le differenze tra i frame iniziali e il resto del video, creando una transizione più fluida e coerente.
 

@@ -1,4 +1,4 @@
-# SplitImageToTileList
+# Dividi Immagine in Elenco di Tasselli
 
 Il nodo Split Image into List of Tiles divide una singola immagine di input in una serie di sezioni rettangolari più piccole e sovrapposte chiamate tile. Crea una lista in batch di queste tile, che possono essere elaborate singolarmente da altri nodi. È possibile specificare la dimensione di ciascuna tile e la quantità di sovrapposizione tra esse.
 

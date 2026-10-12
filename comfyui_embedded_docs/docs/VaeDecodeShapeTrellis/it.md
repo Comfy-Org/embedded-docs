@@ -1,4 +1,4 @@
-# VaeDecodeShapeTrellis
+# Decodifica forma VAE Trellis2
 
 Questo nodo decodifica le rappresentazioni latenti di forma di Trellis2 in una mesh 3D. Utilizza un VAE per convertire dati latenti sparsi di forma in geometria mesh e restituisce anche i dati di suddivisione della forma generati durante la decodifica. Il nodo supporta input latenti singoli e in batch e regola automaticamente l'orientamento della mesh al sistema di coordinate previsto.
 

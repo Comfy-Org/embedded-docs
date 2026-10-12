@@ -1,4 +1,4 @@
-# SeedVR2TemporalChunk
+# Dividi Latent SeedVR2
 
 Questo nodo suddivide un latent video SeedVR2 in chunk temporali più piccoli che possono essere elaborati uno alla volta entro la VRAM disponibile. Calcola automaticamente la dimensione ottimale dei chunk in base alla memoria della GPU oppure consente di specificare manualmente la dimensione del chunk, e restituisce i chunk in ordine sequenziale per l'elaborazione.
 

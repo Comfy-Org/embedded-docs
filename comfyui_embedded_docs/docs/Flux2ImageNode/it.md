@@ -1,4 +1,4 @@
-# Flux2ImageNode
+# Flux.2 Immagine
 
 Genera immagini utilizzando il modello Flux.2 [pro] o Flux.2 [max] a partire da un prompt testuale e immagini di riferimento opzionali. Il nodo invia la richiesta all'API BFL, esegue il polling finché il risultato non è pronto e restituisce l'immagine generata.
 

@@ -1,4 +1,4 @@
-# MeshSmoothNormals
+# Smussa normali mesh
 
 Calcola normali morbide per vertice per una mesh e le allega. Le mesh senza normali vengono ombreggiate in modo piatto (per faccia) dai visualizzatori glTF; questo nodo le fa ombreggiare in modo morbido. Con un angolo di piega inferiore a 180, i bordi più netti della soglia vengono mantenuti duri dividendo i vertici lungo di essi.
 

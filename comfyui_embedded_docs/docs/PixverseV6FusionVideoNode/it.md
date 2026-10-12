@@ -1,4 +1,4 @@
-# PixverseV6FusionVideoNode
+# PixVerse V6 Fusione (Riferimento a video)
 
 PixVerse V6 Fusion (Reference to Video) compone un video a partire da soggetti, sfondi e video di riferimento con PixVerse. Colloca un riferimento nella scena nominandolo nel prompt, ad esempio '@Subject1 cammina attraverso @Background1'. Il collegamento di un video di riferimento commuta il modello in modalità Omni, in cui la durata dell'output corrisponde al video di riferimento più lungo.
 

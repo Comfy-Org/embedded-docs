@@ -1,4 +1,4 @@
-# WavespeedImageUpscaleNode
+# WaveSpeed Image Upscale
 
 Il nodo WaveSpeed Image Upscale utilizza un servizio AI esterno per aumentare la risoluzione e la qualità di un'immagine. Prende in input una singola foto e la ingrandisce fino a una risoluzione target superiore, come 2K, 4K o 8K, producendo un risultato più nitido e dettagliato.
 

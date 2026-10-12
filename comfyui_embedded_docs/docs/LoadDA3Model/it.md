@@ -1,4 +1,4 @@
-# LoadDA3Model
+# Carica Depth Anything 3
 
 Il nodo **Load Depth Anything 3** carica un modello Depth Anything 3 da un file, preparandolo per le attività di stima della profondità. È possibile selezionare il file del modello e, facoltativamente, scegliere la precisione numerica (tipo di dati) per i pesi del modello.
 

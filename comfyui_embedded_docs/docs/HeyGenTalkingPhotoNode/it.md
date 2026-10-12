@@ -1,4 +1,4 @@
-# HeyGenTalkingPhotoNode
+# HeyGen Talking Photo
 
 Anima un'immagine fissa di una persona trasformandola in un video parlante con sincronizzazione labiale tramite la tecnologia Avatar IV di HeyGen. Puoi guidare l'animazione con uno script testuale che HeyGen converte in parlato, oppure fornire il tuo audio affinché l'avatar sincronizzi il labiale.
 

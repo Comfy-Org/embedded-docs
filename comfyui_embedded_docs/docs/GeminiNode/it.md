@@ -1,4 +1,4 @@
-# GeminiNode
+# Google Gemini
 
 This node allows users to interact with Google's Gemini AI models to generate text responses. You can provide multiple types of inputs including text, images, audio, video, and files as context for the model to generate more relevant and meaningful responses. The node handles all API communication and response parsing automatically.
 

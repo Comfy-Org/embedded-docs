@@ -1,4 +1,4 @@
-# Pixal3DMultiViewConditioning
+# Pixal3D Condizionamento multi-vista
 
 Il nodo Pixal3D Multi-View Conditioning costruisce dati di condizionamento da un rig di camere con orbita fissa: viste frontale, sinistra, posteriore e destra posizionate a 90 gradi l'una dall'altra, utilizzate esattamente come inquadrate. Collega almeno una vista quadrata dell'oggetto e prepara dati di condizionamento positivo e negativo corrispondenti per i modelli Pixal3D.
 

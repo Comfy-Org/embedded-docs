@@ -1,4 +1,4 @@
-# LumaImageEditNode2
+# Luma UNI-1 Modifica Immagine
 
 Questo nodo modifica un'immagine esistente usando un prompt testuale, tramite il modello Luma UNI-1. Prende un'immagine di origine e una descrizione della modifica desiderata, quindi genera una nuova versione modificata dell'immagine. Puoi scegliere tra i modelli `uni-1` e `uni-1-max`, regolare lo stile, abilitare la ricerca sul web e fornire facoltativamente fino a 8 immagini di riferimento.
 

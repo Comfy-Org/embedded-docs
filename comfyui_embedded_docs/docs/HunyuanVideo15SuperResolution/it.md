@@ -1,4 +1,4 @@
-# HunyuanVideo15SuperResolution
+# Hunyuan Video 1.5 Super Risoluzione
 
 Il nodo HunyuanVideo15SuperResolution prepara i dati di condizionamento per un processo di super-risoluzione video. Prende una rappresentazione latente di un video e, facoltativamente, un'immagine iniziale, e li assembla insieme ai dati di aumento del rumore e ai dati CLIP vision in un formato che può essere utilizzato da un modello per generare un output a risoluzione più elevata.
 

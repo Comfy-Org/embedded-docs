@@ -1,4 +1,4 @@
-# FluxKontextImageScale
+# FluxKontextRidimensionaImmagine
 
 Questo nodo ridimensiona l'immagine di input a una dimensione ottimale utilizzata durante l'addestramento del modello Flux Kontext tramite l'algoritmo di Lanczos, in base alle proporzioni dell'immagine di input. Questo nodo è particolarmente utile quando si inseriscono immagini di grandi dimensioni, poiché input sovradimensionati possono portare a una qualità dell'output del modello degradata o a problemi come la comparsa di più soggetti nell'output.
 

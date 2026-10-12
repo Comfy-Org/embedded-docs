@@ -1,4 +1,4 @@
-# KlingVideoNode
+# Kling 3.0 Video
 
 Questo nodo genera video con il modello Kling V3. Supporta la generazione da testo a video (text-to-video), in cui un video viene creato da una descrizione testuale, e da immagine a video (image-to-video), in cui un'immagine esistente viene animata. Può anche creare video multi-segmento utilizzando prompt storyboard e, opzionalmente, generare audio.
 

@@ -1,4 +1,4 @@
-# RecraftReplaceBackgroundNode
+# Recraft Sostituisci Sfondo
 
 Sostituisce lo sfondo dell'immagine, in base al prompt fornito. Questo nodo utilizza l'API Recraft per generare nuovi sfondi per le tue immagini in base alla tua descrizione testuale, consentendoti di trasformare completamente lo sfondo mantenendo intatto il soggetto principale. Ogni immagine nel batch di input viene elaborata separatamente e i risultati vengono combinati in un unico batch di output.
 

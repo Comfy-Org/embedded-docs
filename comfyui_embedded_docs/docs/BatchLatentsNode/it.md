@@ -1,4 +1,4 @@
-# BatchLatentsNode
+# Batch Latent
 
 Il nodo Batch Latents combina più input latenti in un unico batch. Accetta un numero variabile di campioni latenti e li unisce lungo la dimensione batch, in modo che possano essere elaborati insieme dai nodi successivi. Il nodo unisce inoltre i metadati dell'indice di batch di tutti gli input nell'output combinato.
 

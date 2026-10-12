@@ -1,4 +1,4 @@
-# LatentUpscaleModelLoader
+# Carica Modello di Ingrandimento Latent
 
 Il nodo LatentUpscaleModelLoader carica un modello specializzato nell'upscaling delle rappresentazioni latenti da un file memorizzato nella cartella `latent_upscale_models` di ComfyUI. Rileva automaticamente l'architettura del modello dal contenuto del file (Hunyuan Video 720p, Hunyuan Video 1080p o un Latent Upsampler) e configura il modello interno corrispondente, così il risultato è pronto per essere utilizzato da altri nodi.
 

@@ -1,4 +1,4 @@
-# PixverseTextToVideoNode
+# PixVerse Da Testo a Video
 
 Genera video da un prompt testuale utilizzando l'API di PixVerse. Il nodo consente di controllare forma, qualità, durata e stile di movimento del video e può facoltativamente applicare un modello di stile salvato. Invia la richiesta, attende il completamento della generazione e restituisce il video finito.
 

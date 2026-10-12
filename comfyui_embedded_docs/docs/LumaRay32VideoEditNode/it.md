@@ -1,4 +1,4 @@
-# LumaRay32VideoEditNode
+# Luma Ray 3.2 Modifica Video
 
 ## Panoramica
 

@@ -1,4 +1,4 @@
-# SAM3_VideoTrack
+# Esegui Tracciamento Video SAM3
 
 Traccia oggetti attraverso fotogrammi video utilizzando il tracker basato su memoria di SAM3. Il nodo elabora una sequenza di fotogrammi video e mantiene le identità degli oggetti attraverso i fotogrammi, utilizzando maschere iniziali o prompt testuali per definire cosa tracciare, e può rilevare nuovi oggetti lungo il percorso utilizzando il condizionamento testuale.
 

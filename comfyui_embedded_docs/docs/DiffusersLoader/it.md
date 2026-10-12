@@ -1,4 +1,4 @@
-# DiffusersLoader
+# Carica Modello Diffusers (DEPRECATO)
 
 Il nodo DiffusersLoader carica modelli pre-addestrati salvati nel formato diffusers. Cerca nelle cartelle `diffusers` configurate le directory che contengono un file `model_index.json`, consente di selezionarne una e la carica come componenti MODEL, CLIP e VAE utilizzati nella pipeline. Questo nodo è deprecato, ma rimane disponibile per la compatibilità con i modelli diffusers di Hugging Face.
 

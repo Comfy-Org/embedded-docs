@@ -1,4 +1,4 @@
-# EmptyMiniMaxMusic3LatentAudio
+# Audio latente MiniMax Music3 vuoto
 
 Questo nodo crea un latente audio vuoto (riempito di zeri) per il modello MiniMax Music3. Converte la durata richiesta in secondi nel numero corrispondente di frame audio e produce un tensore latente vuoto della dimensione corretta, pronto per essere usato come punto di partenza per la generazione musicale.
 

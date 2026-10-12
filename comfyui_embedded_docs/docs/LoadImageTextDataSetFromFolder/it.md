@@ -1,4 +1,4 @@
-# LoadImageTextDataSetFromFolder
+# Carica Immagine-Testo (da Cartella)
 
 Questo nodo carica un dataset di coppie immagine-didascalia da una cartella selezionata e le restituisce come lista. Supporta immagini PNG, JPG, JPEG e WEBP e, per ogni immagine, cerca una didascalia in un file `.txt` con lo stesso nome base. Il nodo supporta anche la struttura di cartelle di kohya-ss/sd-scripts, in cui un nome di sottocartella che inizia con un numero (ad esempio `10_cats`) ripete le immagini contenute in quella sottocartella quel numero di volte nell'output.
 

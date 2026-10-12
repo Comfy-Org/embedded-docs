@@ -1,4 +1,4 @@
-# Get3DComponents
+# Ottieni componenti 3D
 
 Get3DComponents analizza un file di modello 3D (GLB, GLTF, OBJ o STL) e lo converte in una mesh modificabile che può essere utilizzata da nodi di elaborazione mesh come decimate, remesh, UV unwrap e bake. Tutti i nodi e le primitive della scena vengono uniti in un'unica mesh con le rispettive trasformazioni applicate, mentre texture e impostazioni del materiale provengono dal primo materiale. È la controparte del nodo MeshToFile3D.
 

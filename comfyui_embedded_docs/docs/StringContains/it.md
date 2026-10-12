@@ -1,4 +1,4 @@
-# StringContains
+# Contiene Testo
 
 Il nodo StringContains verifica se una determinata stringa contiene una sottostringa specificata. Può eseguire questo controllo con corrispondenza sensibile o non sensibile alle maiuscole/minuscole, restituendo un risultato booleano che indica se la sottostringa è stata trovata all'interno della stringa principale.
 

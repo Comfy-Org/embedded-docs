@@ -1,4 +1,4 @@
-# SDPoseKeypointExtractor
+# SDPose Estrazione Keypoint
 
 Il nodo SDPoseKeypointExtractor rileva i keypoint della posa umana dalle immagini di input usando il modello SDPose. Può elaborare immagini complete o regioni specifiche definite da bounding box e restituisce in output i keypoint rilevati nel formato OpenPose, che include le coordinate per ogni persona e un punteggio di confidenza per ciascun keypoint.
 

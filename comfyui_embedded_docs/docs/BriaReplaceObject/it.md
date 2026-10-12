@@ -1,4 +1,4 @@
-# BriaReplaceObject
+# Bria Sostituisci oggetto
 
 Sostituisce un oggetto in un'immagine con un altro descritto in testo semplice, utilizzando la modifica delle immagini guidata dal testo di Bria. Bria renderizza nuovamente l'intero fotogramma a circa 1 megapixel, quindi il risultato non è allineato a livello di pixel con l'input.
 

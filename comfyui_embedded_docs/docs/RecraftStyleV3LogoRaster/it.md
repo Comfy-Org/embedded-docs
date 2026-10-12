@@ -1,4 +1,4 @@
-# RecraftStyleV3LogoRaster
+# Recraft Stile - Logo Raster
 
 Questo nodo seleziona lo stile raster del logo e un sottostile specifico per la generazione di immagini di logo. È specializzato nella creazione di design di logo con trattamenti visivi di tipo raster. Lo stile scelto viene restituito come impostazione di stile Recraft che può essere passata ad altri nodi Recraft.
 

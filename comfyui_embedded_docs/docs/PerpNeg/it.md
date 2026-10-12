@@ -1,4 +1,4 @@
-# PerpNeg
+# Perp-Neg (DEPRECATO da Perp-Neg Guider)
 
 Il nodo PerpNeg applica una guida negativa perpendicolare al processo di campionamento di un modello. Questo nodo modifica la funzione di configurazione del modello per regolare le previsioni del rumore utilizzando condizionamento negativo e fattori di scala. È stato deprecato e sostituito dal nodo PerpNegGuider per funzionalità migliorate.
 

@@ -1,4 +1,4 @@
-# DualModelGuider
+# Dual Model CFG Guider
 
 Questo nodo consente di utilizzare due modelli diversi durante il processo di campionamento CFG guidato: un modello per il passaggio positivo (condizionale) e un modello separato per il passaggio negativo (non condizionale). Quando non viene fornito alcun modello negativo, si comporta come un guider CFG standard che utilizza un singolo modello.
 

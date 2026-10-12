@@ -1,4 +1,4 @@
-# LoadVideo
+# Carica Video
 
 Il nodo Load Video carica i file video dalla directory di input e li rende disponibili per l'elaborazione nel flusso di lavoro. Legge i file video dalla cartella di input designata e li restituisce come dati video che possono essere collegati ad altri nodi di elaborazione video.
 

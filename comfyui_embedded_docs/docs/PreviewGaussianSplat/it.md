@@ -1,4 +1,4 @@
-# PreviewGaussianSplat
+# Anteprima Splat
 
 Il nodo PreviewGaussianSplat visualizza un file 3D gaussian splat in una finestra di anteprima senza salvarlo nella directory di output di ComfyUI. Accetta un file di modello 3D in vari formati gaussian splat, salva una copia temporanea per l'anteprima e passa i dati del modello per ulteriori elaborazioni nel workflow. Questo nodo è contrassegnato come sperimentale e funge da nodo di output.
 

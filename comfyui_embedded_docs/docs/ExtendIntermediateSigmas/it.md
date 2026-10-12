@@ -1,4 +1,4 @@
-# ExtendIntermediateSigmas
+# Estendi Sigmas Intermedi
 
 Il nodo ExtendIntermediateSigmas prende una sequenza esistente di valori sigma e inserisce ulteriori valori sigma intermedi tra di essi. Consente di specificare quanti passaggi aggiuntivi aggiungere, il metodo di spaziatura per l'interpolazione e i limiti opzionali di sigma iniziale e finale per controllare dove avviene l'estensione all'interno della sequenza sigma.
 

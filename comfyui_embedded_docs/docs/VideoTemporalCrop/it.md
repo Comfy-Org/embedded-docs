@@ -1,4 +1,4 @@
-# VideoTemporalCrop
+# Ritaglia Video (Temporale)
 
 Questo nodo ritaglia un intervallo continuo di fotogrammi da un video. Funziona in modalità completamente lazy, ovvero elabora solo la porzione selezionata del video quando serve più avanti nel workflow.
 

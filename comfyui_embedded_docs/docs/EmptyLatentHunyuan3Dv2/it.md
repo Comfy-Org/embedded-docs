@@ -1,4 +1,4 @@
-# EmptyLatentHunyuan3Dv2
+# Latent Hunyuan 3D v2 vuoto
 
 Questo nodo crea un batch di campioni latenti vuoti (tutti zero) formattati per i modelli di generazione 3D Hunyuan3Dv2. Produce il tensore latente con la forma corretta che funge da punto di partenza per i flussi di lavoro di generazione 3D, con il latente etichettato come tipo "hunyuan3dv2".
 

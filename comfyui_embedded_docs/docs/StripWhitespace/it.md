@@ -1,4 +1,4 @@
-# StripWhitespace
+# Rimuovi spazi bianchi (DEPRECATO)
 
 Questo nodo rimuove eventuali spazi, tabulazioni o caratteri di nuova riga superflui all'inizio e alla fine di una stringa di testo. Riceve in input un testo e restituisce una versione ripulita, con gli spazi bianchi iniziali e finali rimossi.
 

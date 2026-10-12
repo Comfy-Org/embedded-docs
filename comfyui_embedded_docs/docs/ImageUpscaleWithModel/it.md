@@ -1,4 +1,4 @@
-# ImageUpscaleWithModel
+# Ingrandisci Immagine (con Modello)
 
 Questo nodo è progettato per eseguire l'upscaling delle immagini utilizzando un modello di upscale specificato. Gestisce in modo efficiente il processo di upscaling adattando l'immagine al dispositivo appropriato, ottimizzando l'utilizzo della memoria e applicando il modello di upscale in modalità a tasselli per prevenire potenziali errori di memoria esaurita.
 

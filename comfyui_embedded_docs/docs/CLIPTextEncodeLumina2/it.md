@@ -1,4 +1,4 @@
-# CLIPTextEncodeLumina2
+# CLIP Text Encode (Lumina 2)
 
 Questo nodo codifica un prompt di sistema e un prompt utente usando un modello CLIP in un embedding che può essere utilizzato per guidare il modello di diffusione verso la generazione di immagini specifiche. Combina un prompt di sistema Lumina 2 predefinito con il tuo prompt testuale personalizzato e li elabora tramite il modello CLIP per creare dati di condizionamento per la generazione di immagini.
 

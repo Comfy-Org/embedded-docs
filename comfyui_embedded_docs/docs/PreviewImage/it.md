@@ -1,4 +1,4 @@
-# PreviewImage
+# Anteprima Immagine
 
 Il nodo PreviewImage è progettato per creare immagini di anteprima temporanee. Genera automaticamente un nome file temporaneo univoco per ogni immagine, comprime l'immagine a un livello specificato e la salva in una directory temporanea. Questa funzionalità è particolarmente utile per generare anteprime delle immagini durante l'elaborazione senza modificare i file originali.
 

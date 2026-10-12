@@ -1,4 +1,4 @@
-# GetItemFromList
+# Ottieni elemento dall'elenco
 
 Questo nodo restituisce un singolo elemento da un elenco, selezionato in base alla sua posizione. Fornisci l'elenco e il numero di indice dell'elemento desiderato, e il nodo restituisce quell'elemento. È utile per scegliere un elemento specifico da un gruppo di valori, ad esempio una particolare immagine da un batch.
 

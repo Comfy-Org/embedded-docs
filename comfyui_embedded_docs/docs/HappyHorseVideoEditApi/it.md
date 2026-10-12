@@ -1,4 +1,4 @@
-# HappyHorseVideoEditApi
+# HappyHorse Modifica Video
 
 Modifica un video usando istruzioni testuali o immagini di riferimento con il modello HappyHorse. La durata dell'output è di 3-15 secondi e corrisponde al video di input; gli input più lunghi di 15 secondi vengono troncati.
 

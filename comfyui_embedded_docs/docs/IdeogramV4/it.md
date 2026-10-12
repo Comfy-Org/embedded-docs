@@ -1,4 +1,4 @@
-# IdeogramV4
+# Ideogram V4
 
 Genera immagini utilizzando il modello Ideogram 4.0 da un prompt testuale. Questo nodo invia la descrizione testuale all'API di Ideogram e restituisce l'immagine generata come tensore di output.
 

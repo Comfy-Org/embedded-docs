@@ -1,4 +1,4 @@
-# SaveVideo
+# Salva Video
 
 Il nodo Save Video salva il video di input nella directory di output di ComfyUI. È possibile scegliere il prefisso del nome file, il formato del contenitore, il codec video e le opzioni di codifica come la qualità. Il nodo genera automaticamente un nome file univoco usando un contatore e può incorporare i metadati del workflow nel file salvato.
 

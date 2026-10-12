@@ -1,4 +1,4 @@
-# ConditioningSetAreaStrength
+# Conditioning (Imposta Intensità Area)
 
 Questo nodo è progettato per modificare l'attributo strength di un determinato set di conditioning, consentendo la regolazione dell'influenza o dell'intensità del conditioning sul processo di generazione.
 

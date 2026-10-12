@@ -1,4 +1,4 @@
-# TextOverlay
+# Disegna Sovrapposizione Testo
 
 Questo nodo disegna testo sopra un'immagine o un batch di immagini. Crea una sovrapposizione di testo utilizzando dimensione del carattere, colore, posizione verticale, allineamento orizzontale e contorno nero opzionale configurabili, quindi combina la sovrapposizione con i pixel dell'immagine originale.
 

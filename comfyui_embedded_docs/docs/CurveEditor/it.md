@@ -1,4 +1,4 @@
-# CurveEditor
+# Editor Curve
 
 Il nodo Curve Editor fornisce un'interfaccia visiva per regolare e ottimizzare una curva. È possibile modificare la forma di una curva di input direttamente nell'interfaccia del nodo e, facoltativamente, visualizzare un istogramma accanto ad essa come riferimento visivo. Il nodo supporta l'output intermedio durante la modifica, consentendo di vedere i risultati in tempo reale mentre si apportano modifiche, e restituisce la curva modificata per l'utilizzo in altre parti del workflow.
 

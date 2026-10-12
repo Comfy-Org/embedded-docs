@@ -1,4 +1,4 @@
-# LoraModelLoader
+# Carica modello LoRA
 
 Il nodo LoraModelLoader applica pesi LoRA (Low-Rank Adaptation) addestrati a un modello di diffusione. Modifica il modello base caricando i pesi LoRA da un modello LoRA addestrato e regolandone la forza di influenza. Ciò consente di personalizzare il comportamento dei modelli di diffusione senza riaddestrarli da zero, includendo una modalità bypass che lascia invariati i pesi del modello base.
 

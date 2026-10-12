@@ -1,4 +1,4 @@
-# BriaReseason
+# Bria Cambia stagione
 
 Questo nodo sposta un'immagine in una stagione diversa utilizzando Bria. L'intera scena viene renderizzata nuovamente, quindi lo scenario può cambiare oltre alla stagione stessa. Bria renderizza nuovamente l'intero fotogramma a circa 1 megapixel, quindi il risultato non è allineato a livello di pixel con l'input.
 

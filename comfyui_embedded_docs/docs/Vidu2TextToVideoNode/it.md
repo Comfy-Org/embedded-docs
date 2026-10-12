@@ -1,4 +1,4 @@
-# Vidu2TextToVideoNode
+# Vidu2 Generazione Video da Testo
 
 Il nodo Vidu2 Text-to-Video Generation crea un video da una descrizione testuale. Si connette a un'API esterna per generare contenuti video basati sul prompt, consentendo di controllare la lunghezza, lo stile visivo e il formato del video.
 

@@ -1,4 +1,4 @@
-# HappyHorseReferenceVideoApi
+# HappyHorse Riferimento in Video
 
 Questo nodo genera un video che ritrae una persona o un oggetto a partire da immagini di riferimento utilizzando il modello HappyHorse. Supporta performance con un singolo personaggio e interazioni tra più personaggi. Le immagini di riferimento vengono caricate e utilizzate per rappresentare i personaggi nel video generato.
 

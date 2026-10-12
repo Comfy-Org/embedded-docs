@@ -1,4 +1,4 @@
-# QwenImageDiffsynthControlnet
+# Applica Qwen Image DiffSynth ControlNet
 
 QwenImageDiffsynthControlnet applica una patch della rete di controllo di sintesi diffusiva a un modello di base. Utilizza un'immagine di input e una maschera opzionale per guidare il processo di generazione del modello con una forza regolabile, producendo un modello con patch che incorpora l'influenza della rete di controllo per una sintesi di immagini più controllata.
 

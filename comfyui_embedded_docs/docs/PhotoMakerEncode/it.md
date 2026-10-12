@@ -1,4 +1,4 @@
-# PhotoMakerEncode
+# PhotoMaker Encode
 
 Il nodo PhotoMakerEncode combina un'immagine di riferimento con un prompt testuale per creare dati di condizionamento per la generazione di immagini. Quando il testo contiene la parola "photomaker", il nodo utilizza il modello PhotoMaker per inserire l'identità visiva dell'immagine di riferimento nel condizionamento in quella posizione del prompt.
 

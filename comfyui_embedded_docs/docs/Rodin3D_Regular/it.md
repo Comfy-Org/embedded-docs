@@ -1,4 +1,4 @@
-# Rodin3D_Regular
+# Rodin 3D Genera - Generazione Regolare
 
 Il nodo Rodin 3D Regular genera asset 3D utilizzando l'API Rodin. Prende in input delle immagini e le elabora tramite il servizio Rodin per creare modelli 3D. Il nodo gestisce l'intero flusso di lavoro dalla creazione dell'attività al download dei file del modello 3D finale.
 

@@ -1,4 +1,4 @@
-# CheckpointSave
+# Salva Checkpoint
 
 Il nodo `Save Checkpoint` è progettato per salvare un modello Stable Diffusion completo (inclusi i componenti UNet, CLIP e VAE) come file checkpoint in formato **.safetensors**.
 

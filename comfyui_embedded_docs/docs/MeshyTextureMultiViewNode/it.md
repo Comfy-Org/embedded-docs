@@ -1,4 +1,4 @@
-# MeshyTextureMultiViewNode
+# Meshy: Texture modello (multi-vista)
 
 Questo nodo applica texture a un modello 3D creato in precedenza usando da 1 a 4 viste di riferimento dello stesso oggetto. Fornisci l'ID attività del modello originale e le immagini di riferimento; il nodo le invia al servizio Meshy, attende il completamento del processo e restituisce il modello con texture come file GLB e FBX.
 

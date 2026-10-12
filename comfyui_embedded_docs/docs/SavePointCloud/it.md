@@ -1,4 +1,4 @@
-# SavePointCloud
+# Salva Point Cloud
 
 Il nodo Save Point Cloud salva un file di nuvola di punti 3D nella directory di output e, facoltativamente, fornisce dati di anteprima per il visualizzatore 3D. Gestisce la denominazione e il salvataggio dei file, passando anche le informazioni su camera e modello per scopi di visualizzazione.
 

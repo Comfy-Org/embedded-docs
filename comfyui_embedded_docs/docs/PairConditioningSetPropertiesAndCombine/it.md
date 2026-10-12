@@ -1,4 +1,4 @@
-# PairConditioningSetPropertiesAndCombine
+# Cond Pair Set Props Combine
 
 Il nodo PairConditioningSetPropertiesAndCombine modifica e combina coppie di condizionamento applicando nuovi dati di condizionamento agli input di condizionamento positivo e negativo esistenti. Consente di regolare la forza del condizionamento applicato e di controllare come viene impostata l'area di condizionamento. Questo nodo è particolarmente utile nei flussi di lavoro avanzati di manipolazione del condizionamento, dove è necessario fondere insieme più sorgenti di condizionamento.
 

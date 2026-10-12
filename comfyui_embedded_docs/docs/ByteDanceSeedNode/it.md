@@ -1,4 +1,4 @@
-# ByteDanceSeedNode
+# ByteDance Seed
 
 Genera risposte testuali con i modelli Seed 2.0 di ByteDance. Fornisci un prompt testuale e, facoltativamente, collega immagini o video per fornire al modello un contesto aggiuntivo. Il modello viene scelto tra le varianti Seed 2.0 disponibili e il nodo restituisce la risposta testuale del modello.
 

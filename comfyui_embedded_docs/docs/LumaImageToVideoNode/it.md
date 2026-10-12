@@ -1,4 +1,4 @@
-# LumaImageToVideoNode
+# Luma Da Immagine a Video
 
 Genera video in modo sincrono in base a un prompt testuale e a immagini opzionali di inizio/fine. Questo nodo utilizza l'API Luma per creare video, consentendoti di definire il contenuto del video tramite un prompt e, facoltativamente, di specificare il primo e/o l'ultimo fotogramma per controllare la struttura del video.
 

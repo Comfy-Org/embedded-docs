@@ -1,4 +1,4 @@
-# LatentBatchSeedBehavior
+# Comportamento Seed Batch Latent
 
 Il nodo LatentBatchSeedBehavior è progettato per modificare il comportamento del seed di un batch di campioni latenti. Consente di randomizzare o fissare il seed per l'intero batch, influenzando così il processo di generazione introducendo variabilità o mantenendo coerenza negli output generati.
 

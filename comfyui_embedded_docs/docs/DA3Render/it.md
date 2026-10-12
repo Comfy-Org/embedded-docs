@@ -1,4 +1,4 @@
-# DA3Render
+# Renderizza Depth Anything 3
 
 Questo nodo genera una visualizzazione dai dati di geometria di Depth Anything 3. Può restituire mappe di profondità, mappe di confidenza o maschere del cielo a seconda della modalità di output selezionata.
 

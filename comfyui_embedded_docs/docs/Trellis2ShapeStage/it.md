@@ -1,4 +1,4 @@
-# Trellis2ShapeStage
+# Fase forma Trellis2
 
 Questo nodo configura il primo passaggio di campionamento per la generazione della forma della pipeline Trellis2. Prende il voxel a struttura densa prodotto da VaeDecodeStructureTrellis2, estrae le coordinate sparse dei voxel riempiti, crea un latent sparso vuoto e allega i metadati di campionamento al condizionamento in modo che il modello possa leggerli durante il campionamento. Per il secondo passaggio della forma dopo l'upsampling, usare invece Trellis2UpsampleStage, che combina la cascata e la configurazione dello stadio del secondo passaggio.
 

@@ -1,4 +1,4 @@
-# ConditioningSetProperties
+# Proprietà Set Cond
 
 Il nodo ConditioningSetProperties modifica le proprietà dei dati di condizionamento regolando `strength`, le impostazioni dell'area e applicando `mask`, hook o intervalli di timestep opzionali. Consente di controllare in che modo il condizionamento influenza il processo di generazione impostando parametri specifici che agiscono sull'applicazione dei dati di condizionamento durante la generazione delle immagini.
 

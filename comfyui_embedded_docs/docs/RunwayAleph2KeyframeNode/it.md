@@ -1,4 +1,4 @@
-# RunwayAleph2KeyframeNode
+# Runway Aleph2 Keyframe
 
 Il nodo Runway Aleph2 Keyframe ancora un'immagine di guida a un momento specifico del video di input, così il modello Aleph2 indirizza la modifica in quel punto del filmato. Collega questo nodo all'input "keyframes" del nodo Runway Aleph2 Video to Video e concatenane diversi insieme (fino a 5) tramite l'input opzionale "keyframes".
 

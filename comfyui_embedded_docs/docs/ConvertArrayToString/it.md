@@ -1,4 +1,4 @@
-# ConvertArrayToString
+# Converti Array in Stringa
 
 Il nodo Convert Array to String prende un array (lista) di elementi e lo converte in una stringa JSON formattata. È utile quando è necessario serializzare i dati di un array per la visualizzazione, la registrazione o il passaggio ad altri sistemi che prevedono input di tipo stringa.
 

@@ -1,4 +1,4 @@
-# TextEncodeQwenImageEditPlus
+# Codifica testo Qwen Image Edit Plus
 
 Il nodo TextEncodeQwenImageEditPlus elabora un prompt testuale e fino a tre immagini opzionali per produrre dati di condizionamento per attività di generazione o modifica di immagini. Utilizza un template specializzato che chiede prima al modello di descrivere le caratteristiche principali delle immagini di input e poi di spiegare come l'istruzione testuale dell'utente dovrebbe modificarle, così che il risultato codificato comprenda sia le immagini sia la modifica richiesta. Quando viene fornito un VAE, il nodo crea anche latent di riferimento dalle immagini di input.
 

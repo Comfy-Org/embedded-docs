@@ -1,4 +1,4 @@
-# SplatToMesh
+# Estrai Mesh da Splat
 
 Questo nodo converte uno splat gaussiano 3D in una superficie mesh colorata. Funziona rasterizzando le gaussiane su una griglia di densità, estraendo una iso-superficie a un livello di densità scelto, quindi applicando smoothing e pulizia opzionali per produrre una mesh triangolare colorata e pulita.
 

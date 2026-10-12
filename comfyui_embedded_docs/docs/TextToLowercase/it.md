@@ -1,4 +1,4 @@
-# TextToLowercase
+# Converti Testo in Minuscolo (DEPRECATO)
 
 Il nodo Text to Lowercase accetta in input una stringa di testo e converte tutti i suoi caratteri in minuscolo. È un semplice strumento di utilità per standardizzare l'uso di maiuscole e minuscole nel testo.
 

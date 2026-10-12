@@ -1,4 +1,4 @@
-# ImageCompositor
+# Crea Immagine a Livelli
 
 Questo nodo combina più livelli immagine in un'unica immagine composita. Prende uno stack di livelli creato con il nodo Add Layer e, facoltativamente, applica le impostazioni di composizione salvate dall'editor del compositor, fondendo i livelli in base al loro posizionamento, dimensione, rotazione, opacità e modalità di fusione. Una composizione salvata che corrisponde agli input correnti ha la priorità; in caso contrario, il nodo compone dalle proprietà dei livelli e contrassegna lo stato salvato come obsoleto.
 

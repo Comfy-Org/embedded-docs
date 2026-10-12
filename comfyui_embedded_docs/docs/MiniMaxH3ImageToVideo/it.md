@@ -1,4 +1,4 @@
-# MiniMaxH3ImageToVideo
+# MiniMax H3 Immagine in Video
 
 Questo nodo prepara il condizionamento e il latente vuoto necessari per generare un video con il modello MiniMax H3. Riceve un prompt testuale e, facoltativamente, immagini per il primo e/o l'ultimo fotogramma del video, e le converte in input per il modello. Le immagini keyframe vengono ridimensionate, codificate e associate al condizionamento all'inizio e alla fine del video.
 

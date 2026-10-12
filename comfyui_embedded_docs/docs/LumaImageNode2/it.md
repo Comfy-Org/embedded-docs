@@ -1,4 +1,4 @@
-# LumaImageNode2
+# Luma UNI-1 Immagine
 
 Questo nodo genera immagini a partire da descrizioni testuali utilizzando il modello Luma UNI-1. Accetta un prompt testuale e impostazioni opzionali come rapporto d'aspetto e stile, quindi invia la richiesta all'API Luma per creare un'immagine. Sono disponibili due varianti del modello: `uni-1` e `uni-1-max`.
 

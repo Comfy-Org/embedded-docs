@@ -1,4 +1,4 @@
-# PreviewAny
+# Anteprima come Testo
 
 PreviewAny converte qualsiasi valore di input in testo leggibile, così da poterlo ispezionare. Le stringhe passano invariate, i numeri e i booleani diventano testo semplice, mentre gli altri tipi di dati vengono serializzati in JSON quando possibile (con fallback alla loro forma di stringa semplice se la serializzazione fallisce). Il testo risultante viene mostrato nell'interfaccia utente e restituito anche come output di tipo stringa per ulteriori elaborazioni.
 

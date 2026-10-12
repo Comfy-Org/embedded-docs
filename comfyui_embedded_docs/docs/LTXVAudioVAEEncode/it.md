@@ -1,4 +1,4 @@
-# LTXVAudioVAEEncode
+# LTXV Audio VAE Encode
 
 Il nodo LTXV Audio VAE Encode prende in input un audio e lo comprime in una rappresentazione latente più piccola usando uno specifico modello Audio VAE. Questo processo è essenziale per generare o manipolare audio all'interno di un flusso di lavoro con spazio latente, poiché converte i dati audio grezzi in un formato che gli altri nodi della pipeline possono comprendere ed elaborare.
 

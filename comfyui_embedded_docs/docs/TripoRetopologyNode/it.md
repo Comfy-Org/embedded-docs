@@ -1,4 +1,4 @@
-# TripoRetopologyNode
+# Tripo: Retopologia
 
 Tripo: Retopology prende un modello 3D ad alta poligonazione generato da un nodo Tripo precedente e lo ricostruisce come versione a bassa poligonazione con topologia pulita. Invia il modello al servizio di retopologia Tripo, attende il completamento dell'attività, quindi scarica il modello finito ed espone il suo ID attività per l'uso da parte di altri nodi Tripo.
 

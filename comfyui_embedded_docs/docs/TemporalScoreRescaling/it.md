@@ -1,4 +1,4 @@
-# TemporalScoreRescaling
+# TSR - Temporal Score Rescaling
 
 Questo nodo applica il Temporal Score Rescaling (TSR) a un modello di diffusione. Applica una patch al modello affinché, durante il campionamento, lo score previsto o il rumore venga riscalato per guidare la diversità dei risultati generati. Questo è implementato come funzione post-CFG (Classifier-Free Guidance).
 

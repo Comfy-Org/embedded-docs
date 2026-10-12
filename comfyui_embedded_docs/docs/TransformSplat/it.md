@@ -1,4 +1,4 @@
-# TransformSplat
+# Trasforma Splat
 
 Il nodo Transform Splat applica trasformazioni di traslazione, rotazione e scala a uno splat gaussiano. Sposta, ruota e ridimensiona l'intero splat come un singolo oggetto e, quando viene applicata una scala non uniforme, rimodella anche ogni singolo splat gaussiano per ottenere risultati accurati.
 

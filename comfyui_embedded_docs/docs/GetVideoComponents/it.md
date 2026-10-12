@@ -1,4 +1,4 @@
-# GetVideoComponents
+# Estrai Componenti Video
 
 Il nodo Get Video Components estrae tutti gli elementi principali da un file video. Separa il video in singoli fotogrammi, estrae la traccia audio e fornisce la frequenza dei fotogrammi, la profondità di bit e lo spazio colore del video. Ciò consente di lavorare con ciascun componente in modo indipendente per ulteriori elaborazioni o analisi.
 

@@ -1,4 +1,4 @@
-# FluxKVCache
+# Flux KV Cache
 
 Il nodo Flux KV Cache abilita un'ottimizzazione della cache Key-Value (KV) per i modelli della famiglia Flux. Questa ottimizzazione migliora le prestazioni quando si utilizzano immagini di riferimento memorizzando nella cache alcuni calcoli, il che può accelerare il processo di generazione.
 

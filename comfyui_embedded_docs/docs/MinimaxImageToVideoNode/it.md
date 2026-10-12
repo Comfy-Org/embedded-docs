@@ -1,4 +1,4 @@
-# MinimaxImageToVideoNode
+# MiniMax Da Immagine a Video
 
 Genera video in modo sincrono a partire da un'immagine e un prompt, e da parametri opzionali, utilizzando l'API di MiniMax. Questo nodo riceve un'immagine di input e una descrizione testuale per creare una sequenza video, con varie opzioni di modello e impostazioni di configurazione disponibili.
 

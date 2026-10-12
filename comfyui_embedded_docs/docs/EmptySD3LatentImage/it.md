@@ -1,4 +1,4 @@
-# EmptySD3LatentImage
+# Immagine Latent Vuota SD3
 
 EmptySD3LatentImage crea un'immagine latente vuota (tutta a zero) nel layout che i modelli Stable Diffusion 3 si aspettano. Poiché il latente è vuoto, viene normalmente utilizzato come punto di partenza che un flusso di generazione riempie con un'immagine. La larghezza e l'altezza scelte determinano la dimensione dell'immagine finale.
 

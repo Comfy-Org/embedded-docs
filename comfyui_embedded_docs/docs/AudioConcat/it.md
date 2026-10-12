@@ -1,4 +1,4 @@
-# AudioConcat
+# Concatena Audio
 
 Il nodo AudioConcat combina due input audio unendoli insieme. Riceve due input audio e li connette nell'ordine specificato, posizionando il secondo audio prima o dopo il primo audio. Il nodo gestisce automaticamente formati audio diversi convertendo l'audio mono in stereo e allineando le frequenze di campionamento tra i due input.
 

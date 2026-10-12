@@ -1,4 +1,4 @@
-# ConditioningSetAreaPercentage
+# Conditioning (Imposta Area in Percentuale)
 
 Il nodo ConditioningSetAreaPercentage è specializzato nella regolazione dell'area di influenza per gli elementi di conditioning in base a valori percentuali. Consente di specificare le dimensioni e la posizione dell'area come percentuali della dimensione totale dell'immagine, insieme a un parametro `strength` per modulare l'intensità dell'effetto di conditioning.
 

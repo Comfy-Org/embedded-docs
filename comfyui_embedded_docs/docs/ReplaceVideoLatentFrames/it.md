@@ -1,4 +1,4 @@
-# ReplaceVideoLatentFrames
+# Sostituisci Frame Latent Video
 
 ReplaceVideoLatentFrames sostituisce un intervallo di fotogrammi in un video latente di destinazione con fotogrammi da un video latente sorgente, a partire da un indice di fotogramma specificato. Se non viene fornito alcun latente sorgente, il latente di destinazione viene restituito invariato. Il nodo supporta indici negativi e registra un avviso quando i fotogrammi sorgente non rientrano nella destinazione.
 

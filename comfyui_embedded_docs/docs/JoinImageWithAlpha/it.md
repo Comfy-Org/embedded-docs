@@ -1,4 +1,4 @@
-# JoinImageWithAlpha
+# Unisci Immagine con Alpha
 
 Questo nodo è progettato per operazioni di compositing, in particolare per unire un'immagine con la relativa maschera alpha e produrre un'unica immagine di output. Combina efficacemente il contenuto visivo con le informazioni di trasparenza, consentendo la creazione di immagini in cui determinate aree sono trasparenti o semi-trasparenti.
 

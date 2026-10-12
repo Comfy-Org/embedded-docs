@@ -1,4 +1,4 @@
-# MinimaxTextToVideoNode
+# MiniMax Da Testo a Video
 
 Genera video in modo sincrono basandosi su un prompt testuale e parametri opzionali utilizzando l'API di MiniMax. Questo nodo crea contenuti video a partire da descrizioni testuali connettendosi al servizio text-to-video di MiniMax.
 

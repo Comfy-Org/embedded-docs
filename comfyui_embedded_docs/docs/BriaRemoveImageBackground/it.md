@@ -1,4 +1,4 @@
-# BriaRemoveImageBackground
+# Bria Rimuovi Sfondo Immagine
 
 Questo nodo rimuove lo sfondo da un'immagine utilizzando il servizio Bria RMBG 2.0. Invia l'immagine a un'API esterna per l'elaborazione e restituisce il risultato con lo sfondo rimosso.
 

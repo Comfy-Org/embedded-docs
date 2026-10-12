@@ -1,4 +1,4 @@
-# RotateMesh
+# Ruota mesh
 
 Ruota una mesh 3D attorno agli assi globali usando angoli Euler XYZ (in gradi) oppure un quaternione. Nella modalità Euler XYZ, le rotazioni vengono applicate come X, poi Y, poi Z; nella modalità quaternion, il quaternione (w, x, y, z) viene normalizzato automaticamente. La rotazione viene applicata ai vertici della mesh; anche le normali e le tangenti vengono ruotate, così che illuminazione e ombreggiatura rimangano corrette.
 

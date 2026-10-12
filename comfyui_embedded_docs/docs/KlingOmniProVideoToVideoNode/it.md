@@ -1,4 +1,4 @@
-# KlingOmniProVideoToVideoNode
+# Kling 3.0 Omni Da Video a Video
 
 Questo nodo utilizza il modello Kling AI per generare un nuovo video basato su un video di input e immagini di riferimento opzionali. Fornisci un prompt testuale che descrive il contenuto desiderato e il nodo trasforma il video di riferimento di conseguenza. Può anche incorporare fino a quattro immagini di riferimento aggiuntive per guidare lo stile e il contenuto dell'output.
 

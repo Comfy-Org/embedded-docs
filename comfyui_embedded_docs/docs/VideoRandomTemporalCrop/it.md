@@ -1,4 +1,4 @@
-# VideoRandomTemporalCrop
+# Ritaglia Video (Casuale Temporale)
 
 Ritaglia casualmente un intervallo continuo di fotogrammi da un video di input. Il numero di fotogrammi da mantenere è impostato dal parametro `length`, e la posizione iniziale viene scelta casualmente usando il parametro `seed`. Il nodo opera in modalità lazy, ovvero non elabora l'intero video finché l'output non viene utilizzato a valle.
 

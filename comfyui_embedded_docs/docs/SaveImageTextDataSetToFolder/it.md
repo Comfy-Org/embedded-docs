@@ -1,4 +1,4 @@
-# SaveImageTextDataSetToFolder
+# Salva Immagine-Testo (in Cartella)
 
 Save Image-Text (to Folder) salva un dataset di coppie immagine-didascalia in una cartella all'interno della directory di output di ComfyUI. Ogni immagine viene scritta come file PNG, e la sua didascalia corrispondente viene scritta come file TXT con lo stesso nome base, così ogni immagine risulta abbinata alla sua descrizione.
 

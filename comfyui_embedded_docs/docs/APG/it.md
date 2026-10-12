@@ -1,4 +1,4 @@
-# APG
+# Adaptive Projected Guidance
 
 Il nodo APG (Adaptive Projected Guidance) modifica il processo di campionamento regolando il modo in cui la guida viene applicata durante la diffusione. Separa il vettore di guida in componenti parallele e ortogonali rispetto all'output condizionale, consentendo una generazione di immagini più controllata. Il nodo fornisce parametri per scalare la guida, normalizzarne l'ampiezza e applicare il momentum per transizioni più fluide tra i passaggi di diffusione.
 

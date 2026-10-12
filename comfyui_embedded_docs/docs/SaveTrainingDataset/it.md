@@ -1,4 +1,4 @@
-# SaveTrainingDataset
+# Salva Dataset di Addestramento
 
 Questo nodo salva su disco un dataset di addestramento codificato per consentirne un caricamento efficiente durante l'addestramento. Prende i latenti delle immagini e il relativo condizionamento testuale, li suddivide in file più piccoli chiamati shard e li archivia in una cartella all'interno della directory datasets. Scrive inoltre un file di metadati che descrive il dataset.
 

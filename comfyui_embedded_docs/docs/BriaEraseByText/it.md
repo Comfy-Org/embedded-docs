@@ -1,4 +1,4 @@
-# BriaEraseByText
+# Bria Cancella tramite testo
 
 Questo nodo rimuove da un'immagine un oggetto descritto in testo semplice utilizzando Bria. Bria esegue nuovamente il rendering dell'intero fotogramma a circa 1 megapixel, pertanto il risultato non è allineato a livello di pixel con l'input.
 

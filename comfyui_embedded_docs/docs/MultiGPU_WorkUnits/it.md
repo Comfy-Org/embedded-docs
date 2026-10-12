@@ -1,4 +1,4 @@
-# MultiGPU_WorkUnits
+# Divisione CFG MultiGPU
 
 ## Panoramica:
 

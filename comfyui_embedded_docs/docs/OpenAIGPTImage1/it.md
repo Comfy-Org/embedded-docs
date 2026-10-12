@@ -1,4 +1,4 @@
-# OpenAIGPTImage1
+# OpenAI GPT Image 2
 
 Genera immagini in modo sincrono tramite l'endpoint GPT Image di OpenAI. Può creare nuove immagini da un prompt testuale o modificare immagini esistenti quando vengono fornite un'immagine di input e una maschera opzionale. Il nodo supporta i modelli `gpt-image-1`, `gpt-image-1.5` e `gpt-image-2` ed è contrassegnato come deprecato.
 

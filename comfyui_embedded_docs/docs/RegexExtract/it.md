@@ -1,4 +1,4 @@
-# RegexExtract
+# Estrai Testo
 
 Il nodo RegexExtract cerca pattern nel testo usando espressioni regolari. Può trovare la prima corrispondenza, tutte le corrispondenze, gruppi specifici dalle corrispondenze o tutti i gruppi in più corrispondenze. Il nodo supporta vari flag regex per la distinzione tra maiuscole e minuscole, la corrispondenza multilinea e il comportamento dotall.
 

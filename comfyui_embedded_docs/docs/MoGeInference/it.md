@@ -1,4 +1,4 @@
-# MoGeInference
+# Esegui Inferenza MoGe
 
 Esegui MoGe sulle immagini per stimare profondità e geometria. Questo nodo elabora un'immagine di input tramite il modello MoGe per generare una nuvola di punti 3D, una mappa di profondità, i parametri intrinseci della camera, una maschera e le normali di superficie.
 

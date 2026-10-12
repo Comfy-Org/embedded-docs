@@ -1,4 +1,4 @@
-# TruncateText
+# Tronca testo
 
 Questo nodo accorcia il testo troncandolo a una lunghezza massima specificata. Prende qualsiasi testo in input e restituisce solo la prima parte, fino al numero di caratteri impostato. È un modo semplice per assicurarsi che il testo non superi una certa dimensione.
 

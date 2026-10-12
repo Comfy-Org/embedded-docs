@@ -1,4 +1,4 @@
-# LTXVAddGeneratedKeyframes
+# LTXV Aggiungi fotogrammi chiave generati
 
 Il nodo LTXV Add Generated Keyframes aggiunge keyframe di dettaglio a un latente video. Ogni keyframe è un frame latente di token posizionato su un singolo frame pixel; viene sottoposto a denoising insieme al video e non fa parte dell'output decodificato. Il posizionamento è uno slot ogni `interval_frames` pixel, saltando i frame I2V, le guide esistenti e i keyframe generati già presenti nel conditioning; estraili di nuovo con LTXV Separate Generated Keyframes. È richiesto un checkpoint addestrato per i keyframe generati (uno che contiene `keyframes_abs_pos_embedding`).
 

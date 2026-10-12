@@ -1,4 +1,4 @@
-# Wan2VideoContinuationApi
+# Wan 2.7 Continuazione Video
 
 Il nodo Wan 2.7 Video Continuation genera un nuovo segmento video che continua dalla fine di una clip video di input. Utilizza il modello Wan 2.7 per sintetizzare la continuazione basandosi su un prompt testuale e può facoltativamente guidare il finale verso un fotogramma target specifico.
 

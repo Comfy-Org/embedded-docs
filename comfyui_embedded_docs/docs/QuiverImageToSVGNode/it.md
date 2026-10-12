@@ -1,4 +1,4 @@
-# QuiverImageToSVGNode
+# Quiver Immagine in SVG
 
 Questo nodo converte un'immagine raster in una grafica vettoriale scalabile (SVG) utilizzando i modelli di vettorizzazione di Quiver AI. Invia l'immagine a un'API esterna che la elabora e restituisce il risultato vettorizzato.
 

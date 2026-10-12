@@ -1,4 +1,4 @@
-# ByteDanceFirstLastFrameNode
+# ByteDance Da Primo-Ultimo Frame a Video
 
 Questo nodo genera un video utilizzando un prompt testuale insieme alle immagini del primo e dell'ultimo fotogramma. Prende la tua descrizione e i due fotogrammi chiave per creare una sequenza video completa che esegue la transizione tra essi. Il nodo fornisce varie opzioni per controllare la risoluzione, il rapporto d'aspetto, la durata e altri parametri di generazione del video.
 

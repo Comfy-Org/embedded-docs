@@ -1,4 +1,4 @@
-# LoadMediaPipeFaceLandmarker
+# Carica Modello Rilevamento Volto (MediaPipe)
 
 Questo nodo carica un modello MediaPipe Face Landmarker v2, che rileva volti e landmark facciali (come occhi, naso e bocca) nelle immagini. Il modello caricato raggruppa due varianti di rilevamento (short-range e full-range) insieme a dati mesh condivisi, blendshapes e geometria canonica usati per l'analisi facciale.
 

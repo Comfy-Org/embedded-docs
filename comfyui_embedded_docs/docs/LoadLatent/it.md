@@ -1,4 +1,4 @@
-# LoadLatent
+# Carica Latent
 
 Il nodo LoadLatent carica rappresentazioni latenti salvate in precedenza da file .latent nella directory di input. Legge i dati del tensore latente dal file selezionato e applica eventuali regolazioni di scala necessarie prima di restituire i dati latenti per l'uso in altri nodi.
 

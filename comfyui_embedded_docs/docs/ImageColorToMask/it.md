@@ -1,4 +1,4 @@
-# ImageColorToMask
+# Converti Colore Immagine in Maschera
 
 Il nodo `ImageColorToMask` è progettato per convertire un colore specificato in un'immagine in una maschera. Elabora un'immagine e un colore di destinazione, generando una maschera in cui il colore specificato è evidenziato, facilitando operazioni come la segmentazione basata sul colore o l'isolamento di oggetti.
 

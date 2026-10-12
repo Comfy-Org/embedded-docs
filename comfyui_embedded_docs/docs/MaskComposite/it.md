@@ -1,4 +1,4 @@
-# MaskComposite
+# Combina Maschere
 
 Questo nodo è specializzato nel combinare due input di maschera attraverso una varietà di operazioni come addizione, sottrazione e operazioni logiche, per produrre una nuova maschera modificata. Gestisce in modo astratto la manipolazione dei dati delle maschere per ottenere effetti di mascheramento complessi, fungendo da componente cruciale nei flussi di lavoro di modifica ed elaborazione delle immagini basati su maschere.
 

@@ -1,4 +1,4 @@
-# RegexReplace
+# Sostituisci Testo (Regex)
 
 Il nodo RegexReplace trova e sostituisce testo nelle stringhe utilizzando espressioni regolari. Consente di cercare pattern di testo e sostituirli con nuovo testo, con opzioni per controllare il funzionamento della corrispondenza dei pattern, inclusi sensibilità alle maiuscole/minuscole, corrispondenza multilinea e limitazione del numero di sostituzioni.
 

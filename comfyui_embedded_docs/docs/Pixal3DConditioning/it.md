@@ -1,4 +1,4 @@
-# Pixal3DConditioning
+# Condizionamento Pixal3D
 
 Il nodo Pixal3DConditioning prepara il condizionamento delle immagini per la pipeline di generazione 3D Trellis2. Utilizza un modello di visione DINOv3 per estrarre feature visive dall'immagine di input a due risoluzioni (512 e 1024), quindi le organizza in mappe di feature per ogni stadio che possono essere opzionalmente potenziate da un modello NAF. Le informazioni sulla fotocamera sono derivate dal campo visivo orizzontale per costruire la matrice di trasformazione di proiezione, e il nodo restituisce una coppia di condizionamento positiva (feature derivate dall'immagine più dati di proiezione) e una coppia di condizionamento negativa (tensori di feature azzerati) per la guida senza classificatore.
 

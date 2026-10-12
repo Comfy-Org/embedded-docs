@@ -1,4 +1,4 @@
-# MeshyMultiImageToModelNode
+# Meshy: Da Immagini Multiple a Modello
 
 Questo nodo utilizza l'API Meshy per generare un modello 3D da più immagini di input. Carica le immagini fornite, invia un'attività di elaborazione e restituisce i file del modello 3D risultante (GLB e FBX) insieme all'ID attività per riferimento.
 

@@ -1,4 +1,4 @@
-# LumaRay32KeyframeNode
+# Luma Ray 3.2 Keyframe
 
 Questo nodo ancora un'immagine guida a una posizione specifica sulla timeline del video di output di Luma Ray 3.2. Collega questo nodo all'input "keyframes" del nodo Luma Ray 3.2 Keyframes to Video e concatena diversi keyframe collegando l'input opzionale "keyframes".
 

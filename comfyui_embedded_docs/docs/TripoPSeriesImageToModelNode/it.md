@@ -1,4 +1,4 @@
-# TripoPSeriesImageToModelNode
+# Tripo P2: da immagine a modello
 
 Genera un modello 3D low-poly con topologia pulita a partire da una singola immagine usando il modello P2 di Tripo. Il risultato viene restituito come mesh triangolare (GLB) o, quando `model.quad` è abilitato, come mesh a prevalenza di quad (FBX).
 

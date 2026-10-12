@@ -1,4 +1,4 @@
-# SAM3DBody_Render
+# Renderizza posa del corpo 3D
 
 Renders 3D body pose data into an image using a selectable style. The node accepts pose data from the SAM3D body tracker (MHR) or from an external Y-up rig such as Kimodo, and can composite the result over an optional background image (or a black canvas when none is provided). Available render styles include a shaded 3D mesh, a binary silhouette, 2D and 3D OpenPose-style skeletons, and SCAIL-style body capsules.
 

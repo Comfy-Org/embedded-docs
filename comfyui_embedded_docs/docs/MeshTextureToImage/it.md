@@ -1,4 +1,4 @@
-# MeshTextureToImage
+# Texture mesh in immagine
 
 Questo nodo estrae le texture precalcolate (baked) di una mesh e le restituisce come immagini separate: colore di base, metallico, rugosità, occlusione e normal map. I canali delle texture che non sono stati precalcolati vengono restituiti con valori predefiniti neutri: bianco per l'occlusione e un blu uniforme per la normal map.
 

@@ -1,4 +1,4 @@
-# PrimitiveBoundingBox
+# Rettangolo di Selezione
 
 Il nodo PrimitiveBoundingBox crea una semplice area rettangolare definita dalla sua posizione e dimensione. Accetta coordinate X e Y per l'angolo superiore sinistro, insieme ai valori di larghezza e altezza, e restituisce una struttura dati bounding box che può essere utilizzata da altri nodi in un workflow.
 

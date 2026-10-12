@@ -1,4 +1,4 @@
-# LtxApi25ImageToVideo
+# LTX 2.5 Image To Video
 
 Questo nodo genera un video di qualità professionale a partire da un'immagine iniziale utilizzando un modello LTX 2.5. Descrivi il contenuto del video con un prompt testuale, selezioni una variante del modello e regoli durata, risoluzione, frequenza dei fotogrammi e generazione audio. È possibile fornire un fotogramma finale opzionale per definire la fine del video.
 

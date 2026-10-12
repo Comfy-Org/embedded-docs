@@ -1,4 +1,4 @@
-# LoadImageMask
+# Carica Immagine (come Maschera)
 
 Il nodo LoadImageMask è progettato per caricare immagini e le relative maschere da un percorso specificato, elaborandole per garantirne la compatibilità con ulteriori attività di manipolazione o analisi delle immagini. Si concentra sulla gestione di vari formati e condizioni delle immagini, come la presenza di un canale alfa per le maschere, e prepara le immagini e le maschere per l'elaborazione a valle convertendole in un formato standardizzato.
 

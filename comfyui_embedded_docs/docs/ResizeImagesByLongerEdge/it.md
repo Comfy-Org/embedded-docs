@@ -1,4 +1,4 @@
-# ResizeImagesByLongerEdge
+# Ridimensiona Immagini per Lato Più Lungo (DEPRECATO)
 
 Il nodo Resize Images by Longer Edge ridimensiona una o più immagini in modo che il loro lato più lungo corrisponda a una lunghezza target specificata. Determina automaticamente se la larghezza o l'altezza è maggiore e ridimensiona proporzionalmente l'altra dimensione per preservare le proporzioni originali. Questo nodo è deprecato ed è stato sostituito dal nodo Resize Image/Mask con il tipo di ridimensionamento impostato su "scale longer dimension".
 

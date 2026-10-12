@@ -1,4 +1,4 @@
-# TripoTextureNode
+# Tripo: Modello texture (Legacy)
 
 Il nodo Tripo: Texture model (Legacy) aggiunge texture a un modello 3D Tripo esistente tramite l'API Tripo. Riceve l'ID attività di un modello creato da un altro nodo Tripo e restituisce un modello GLB o FBX texturizzato al termine del processo di texturing. È possibile controllare le mappe dei materiali, la qualità delle texture, l'allineamento e il seed, e guidare le texture con un prompt testuale, un'immagine di stile o immagini di riferimento. Questo nodo è una versione legacy dello strumento di texturing.
 

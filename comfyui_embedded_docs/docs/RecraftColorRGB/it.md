@@ -1,4 +1,4 @@
-# RecraftColorRGB
+# Recraft Colore RGB
 
 Crea un colore Recraft specificando singoli valori di rosso, verde e blu. Questo nodo accetta valori interi RGB (0-255) e li converte in un formato colore Recraft utilizzabile in altre operazioni Recraft. Puoi anche fornire opzionalmente una catena di colori Recraft esistente per estenderla con il nuovo colore.
 

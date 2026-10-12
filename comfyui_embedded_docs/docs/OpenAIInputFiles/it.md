@@ -1,4 +1,4 @@
-# OpenAIInputFiles
+# File di Input OpenAI ChatGPT
 
 Carica e formatta i file di input per l'API OpenAI. Questo nodo prepara file di testo (.txt) e PDF (.pdf) da includere come input di contesto per il nodo OpenAI Chat. I file verranno letti dal modello OpenAI durante la generazione di una risposta. Più nodi OpenAI Input Files possono essere concatenati per includere diversi file in un singolo messaggio.
 

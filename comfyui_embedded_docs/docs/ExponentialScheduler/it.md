@@ -1,4 +1,4 @@
-# ExponentialScheduler
+# Scheduler Esponenziale
 
 Il nodo `ExponentialScheduler` è progettato per generare una sequenza di valori sigma seguendo una schedulazione esponenziale per i processi di campionamento della diffusione. Fornisce un approccio personalizzabile per controllare i livelli di rumore applicati a ogni passo del processo di diffusione, consentendo di ottimizzare finemente il comportamento di campionamento.
 

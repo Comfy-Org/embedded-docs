@@ -1,4 +1,4 @@
-# CreateHookKeyframesInterpolated
+# Crea Keyframe Hook Interpolati
 
 Crea una sequenza di keyframe hook con valori di strength interpolati tra un punto iniziale e uno finale. Il nodo genera molteplici keyframe che effettuano una transizione fluida del parametro strength attraverso un intervallo percentuale specificato del processo di generazione, usando vari metodi di interpolazione per controllare la curva di transizione.
 

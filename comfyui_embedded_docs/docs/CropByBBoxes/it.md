@@ -1,4 +1,4 @@
-# CropByBBoxes
+# Ritaglia per riquadri di delimitazione
 
 Il nodo CropByBBoxes estrae e ridimensiona regioni rettangolari specifiche da un batch di immagini in input. Utilizza le coordinate dei bounding box fornite per definire l'area da ritagliare da ciascuna immagine. Le regioni ritagliate vengono poi ridimensionate a una dimensione di output specificata, con opzioni per allungare il ritaglio o aggiungere padding per preservarne le proporzioni originali.
 

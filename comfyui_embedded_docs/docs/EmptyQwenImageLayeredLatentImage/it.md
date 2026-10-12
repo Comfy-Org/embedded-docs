@@ -1,4 +1,4 @@
-# EmptyQwenImageLayeredLatentImage
+# Immagine Latent Stratificata Vuota Qwen
 
 Empty Qwen Image Layered Latent prepara la tela vuota su cui dipinge il modello Qwen-Image-Layered. Immaginalo come una pila di fogli da lucido puliti fissati insieme in ordine: il modello riempie il primo foglio con l'immagine completa, e ogni foglio successivo con una parte di quell'immagine. Questo nodo decide quanto sono grandi i fogli e quanti sono. Non disegna nulla da solo.
 

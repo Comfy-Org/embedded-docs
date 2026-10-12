@@ -1,4 +1,4 @@
-# StringReplace
+# Sostituisci Testo
 
 Il nodo StringReplace esegue operazioni di sostituzione di testo su stringhe di input. Cerca una sottostringa specificata all'interno del testo di input e sostituisce tutte le occorrenze con una sottostringa diversa. Questo nodo restituisce la stringa modificata con tutte le sostituzioni applicate.
 

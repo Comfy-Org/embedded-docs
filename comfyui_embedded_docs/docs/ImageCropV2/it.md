@@ -1,4 +1,4 @@
-# ImageCropV2
+# Ritaglia immagine
 
 Il nodo Crop Image estrae una sezione rettangolare da un'immagine di input. Si definisce la regione da mantenere specificando le coordinate del suo angolo superiore sinistro e la sua larghezza e altezza. Il nodo restituisce quindi la porzione ritagliata dell'immagine originale.
 

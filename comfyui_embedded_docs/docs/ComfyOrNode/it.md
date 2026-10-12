@@ -1,4 +1,4 @@
-# ComfyOrNode
+# O
 
 Il nodo Or esegue un'operazione logica OR su un insieme di valori di input. Restituisce `true` se uno qualsiasi dei valori forniti è considerato vero (truthy) secondo le regole standard di veridicità di Python.
 

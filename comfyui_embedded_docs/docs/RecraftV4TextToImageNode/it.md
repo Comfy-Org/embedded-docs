@@ -1,4 +1,4 @@
-# RecraftV4TextToImageNode
+# Recraft V4 Da Testo a Immagine
 
 Genera immagini da prompt testuali utilizzando i modelli Recraft V4 e V4.1. Invia il prompt e le impostazioni selezionate all'API Recraft e restituisce l'immagine o le immagini generate. Se vengono utilizzate immagini di riferimento di stile, viene restituito anche l'ID dello stile creato.
 

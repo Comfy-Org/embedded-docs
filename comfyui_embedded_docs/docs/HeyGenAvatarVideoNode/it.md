@@ -1,4 +1,4 @@
-# HeyGenAvatarVideoNode
+# Video Avatar HeyGen
 
 Genera un video con presentatore parlante da un avatar HeyGen. Questo nodo crea un video di un avatar AI che parla del testo fornito o esegue il lip-sync sul tuo audio, utilizzando i motori di rendering di HeyGen.
 

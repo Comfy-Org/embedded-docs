@@ -1,4 +1,4 @@
-# RecraftVectorizeImageNode
+# Recraft Vettorizza Immagine
 
 Genera grafica vettoriale SVG da un'immagine di input. Questo nodo converte immagini raster in formato vettoriale scalabile inviando ciascuna immagine all'API Recraft e combinando i risultati in un singolo output SVG.
 

@@ -1,4 +1,4 @@
-# KlingFirstLastFrameNode
+# Kling 3.0 Primo-Ultimo Frame in Video
 
 Questo nodo utilizza il modello Kling 3.0 per generare un video. Crea il video basandosi su un prompt testuale, una durata specificata e due immagini fornite: un fotogramma iniziale e un fotogramma finale. Il nodo può anche generare l'audio di accompagnamento per il video.
 

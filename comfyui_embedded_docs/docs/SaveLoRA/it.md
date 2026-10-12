@@ -1,4 +1,4 @@
-# SaveLoRA
+# Salva Pesi LoRA
 
 Il nodo SaveLoRA salva un modello LoRA (Low-Rank Adaptation) in un file. Prende in input un modello LoRA e lo scrive in un file `.safetensors` nella directory di output. È possibile specificare un prefisso del nome file e un conteggio opzionale degli step da includere nel nome file finale.
 

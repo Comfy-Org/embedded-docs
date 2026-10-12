@@ -1,4 +1,4 @@
-# EmptyHunyuanImageLatent
+# Latent immagine Hunyuan vuoto
 
 Il nodo EmptyHunyuanImageLatent crea uno spazio latente vuoto, composto interamente da zeri, per i modelli di generazione immagini Hunyuan. Produce un latente iniziale vuoto usando la larghezza, l'altezza e la dimensione batch fornite, che può poi essere passato ai nodi a valle nel workflow. Il tensore latente contiene 64 canali e ogni dimensione spaziale è pari alla corrispondente dimensione in pixel divisa per 32.
 

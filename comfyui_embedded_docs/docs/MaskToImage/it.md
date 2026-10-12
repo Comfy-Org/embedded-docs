@@ -1,4 +1,4 @@
-# MaskToImage
+# Converti Maschera in Immagine
 
 Il nodo `MaskToImage` è progettato per convertire una maschera in un formato immagine. Questa trasformazione consente la visualizzazione e l'ulteriore elaborazione delle maschere come immagini, facilitando un ponte tra le operazioni basate su maschere e le applicazioni basate su immagini.
 

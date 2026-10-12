@@ -1,4 +1,4 @@
-# HeyGenVideoTranslateNode
+# HeyGen Video Translate
 
 Traduce un video parlato in un'altra lingua con clonazione vocale e sincronizzazione labiale. Questo nodo clona la voce dell'oratore originale e rianima la bocca per adattarla al parlato tradotto, producendo un risultato dall'aspetto naturale.
 

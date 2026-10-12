@@ -1,4 +1,4 @@
-# PrimitiveInt
+# Intero
 
 Il nodo PrimitiveInt fornisce un modo semplice per lavorare con valori interi nel flusso di lavoro. Riceve in input un valore intero e restituisce lo stesso valore, rendendolo utile per passare parametri interi tra i nodi o per impostare valori numerici specifici per altre operazioni.
 

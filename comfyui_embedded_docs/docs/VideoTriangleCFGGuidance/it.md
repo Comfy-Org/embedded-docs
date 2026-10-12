@@ -1,4 +1,4 @@
-# VideoTriangleCFGGuidance
+# Video Triangle CFG Guidance
 
 Il nodo VideoTriangleCFGGuidance applica uno schema di scalatura triangolare della classifier-free guidance (CFG) a un modello video. Varia la scala di condizionamento usando un'onda triangolare che oscilla tra `min_cfg` e la scala di condizionamento originale del modello. Questo crea uno schema di guida dinamico che può aiutare a migliorare la coerenza e la qualità della generazione video.
 

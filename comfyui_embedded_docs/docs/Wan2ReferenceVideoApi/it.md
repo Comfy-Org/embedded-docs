@@ -1,4 +1,4 @@
-# Wan2ReferenceVideoApi
+# Wan 2.7 Da Riferimento a Video
 
 Questo nodo genera un video con una persona o un oggetto basandosi sui materiali di riferimento forniti. Utilizza il modello Wan 2.7 per creare video da un prompt testuale, supportando performance con singolo personaggio e interazioni multi-personaggio. È necessario fornire almeno un video o un'immagine di riferimento affinché la generazione funzioni.
 

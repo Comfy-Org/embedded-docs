@@ -1,4 +1,4 @@
-# TripoImageToModelNode
+# Tripo: da immagine a modello (legacy)
 
 Genera modelli 3D in modo sincrono basandosi su una singola immagine usando l'API di Tripo. Fornisci un'immagine di input e il nodo crea da essa un modello 3D completo, con controlli opzionali per versione del modello, generazione delle texture, livello di dettaglio e formato di output. Questa è la versione legacy del nodo image-to-model, mantenuta per i flussi di lavoro precedenti.
 

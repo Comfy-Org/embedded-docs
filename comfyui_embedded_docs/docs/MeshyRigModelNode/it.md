@@ -1,4 +1,4 @@
-# MeshyRigModelNode
+# Meshy: Rig Model
 
 Il nodo Meshy: Rig Model prende un modello 3D da una precedente attività Meshy e crea automaticamente uno scheletro per esso, producendo un personaggio riggato che può essere posizionato e animato. Il nodo restituisce il modello riggato sia nel formato file GLB sia nel formato FBX.
 

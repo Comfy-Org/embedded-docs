@@ -1,4 +1,4 @@
-# GrokImageNode
+# Grok Image
 
 Il nodo Grok Image genera una o più immagini da una descrizione testuale utilizzando il modello AI Grok. Invia il prompt a un servizio esterno e restituisce le immagini generate come tensori che possono essere utilizzati nel flusso di lavoro.
 

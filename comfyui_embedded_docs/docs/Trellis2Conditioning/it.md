@@ -1,4 +1,4 @@
-# Trellis2Conditioning
+# Condizionamento Trellis2
 
 Trellis2Conditioning converte un'immagine di input in dati di condizionamento per il modello TRELLIS.2. Utilizza un modello CLIP vision per codificare l'immagine in due insiemi di feature (alle scale 512 e 1024) e li impacchetta come coppia di condizionamento positiva, creando anche una coppia di condizionamento negativa riempita di zeri, corrispondente, che funge da riferimento vuoto.
 

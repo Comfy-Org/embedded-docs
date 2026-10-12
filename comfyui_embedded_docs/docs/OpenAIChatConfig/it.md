@@ -1,4 +1,4 @@
-# OpenAIChatConfig
+# Opzioni Avanzate OpenAI ChatGPT
 
 Il nodo OpenAIChatConfig definisce opzioni avanzate che controllano il modo in cui il nodo OpenAI Chat genera le risposte. Consente di impostare la strategia di troncamento, limitare il numero di token di output, fornire istruzioni personalizzate e scegliere quanto ragionamento il modello deve applicare prima di rispondere.
 

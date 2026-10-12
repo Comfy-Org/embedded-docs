@@ -1,4 +1,4 @@
-# StartLoop
+# Avvia ciclo
 
 Il nodo Start Loop avvia una struttura di ciclo all'interno di un workflow. Esegue il corpo del ciclo collegato una volta per iterazione e può contare le iterazioni in tre modi: un numero fisso di ripetizioni (simple), un intervallo di indici numerici (For) oppure un passaggio per ogni elemento di una lista (List). Ogni passaggio espone l'indice corrente, i flag first/last e un valore trasportato opzionale che può essere passato da un'iterazione alla successiva.
 

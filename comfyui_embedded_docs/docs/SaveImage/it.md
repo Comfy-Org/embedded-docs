@@ -1,4 +1,4 @@
-# SaveImage
+# Salva Immagine
 
 Il nodo SaveImage salva le immagini di input come file PNG nella directory di output di ComfyUI. Può incorporare metadati del workflow, come il prompt, in ciascun file salvato e restituisce le immagini invariate, così che possano ancora essere utilizzate da altri nodi.
 

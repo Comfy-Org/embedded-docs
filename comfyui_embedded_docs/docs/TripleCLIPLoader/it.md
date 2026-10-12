@@ -1,4 +1,4 @@
-# TripleCLIPLoader
+# Carica CLIP (Triplo)
 
 TripleCLIPLoader carica contemporaneamente tre modelli text encoder e li combina in un unico modello CLIP. È utilizzato per workflow che richiedono più text encoder che lavorano insieme, come SD3, che utilizza i modelli clip-l, clip-g e t5.
 

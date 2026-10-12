@@ -1,4 +1,4 @@
-# ModelAttentionBackend
+# Backend di attenzione del modello
 
 Questo nodo seleziona l'implementazione di attenzione densa per un modello, clona il modello, applica il backend scelto e restituisce il clone con patch. Se usato con Block Sparse Attention, questo backend viene utilizzato ogni volta che l'attenzione sparsa è inattiva o non supportata. Se il backend selezionato non è disponibile, il nodo esegue automaticamente il fallback all'attenzione PyTorch.
 

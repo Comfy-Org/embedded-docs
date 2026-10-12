@@ -1,4 +1,4 @@
-# RecraftV4CreateStyleNode
+# Recraft V4 Crea stile
 
 Questo nodo crea uno stile Recraft V4 riutilizzabile da 1 a 10 immagini di riferimento. L'ID dello stile restituito funziona con ogni modello Recraft V4 e V4.1 dello stesso tipo di output (raster o vettoriale) e può essere riutilizzato nei passaggi successivi di generazione delle immagini. La dimensione totale di tutte le immagini di riferimento è limitata a 10 MB.
 

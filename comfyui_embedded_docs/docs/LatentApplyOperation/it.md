@@ -1,4 +1,4 @@
-# LatentApplyOperation
+# Applica Operazione Latent
 
 Il nodo LatentApplyOperation applica un'operazione latente specificata ai campioni latenti. Prende in input dati latenti e un'operazione, elabora i campioni latenti utilizzando l'operazione fornita e restituisce i dati latenti modificati. Questo nodo consente di trasformare o manipolare le rappresentazioni latenti nel flusso di lavoro. Questo nodo è attualmente contrassegnato come sperimentale.
 

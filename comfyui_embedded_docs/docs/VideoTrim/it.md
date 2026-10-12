@@ -1,4 +1,4 @@
-# VideoTrim
+# Taglia video (avanzato)
 
 Questo nodo ritaglia un video in una finestra temporale scelta impostando un tempo di inizio e una durata. Offre anche una modalità rigorosa che genera un errore quando la durata richiesta non può essere raggiunta.
 

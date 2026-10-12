@@ -1,4 +1,4 @@
-# CropMask
+# Ritaglia Maschera
 
 Il nodo CropMask è progettato per ritagliare un'area specificata da una maschera data. Consente agli utenti di definire la regione di interesse specificando coordinate e dimensioni, estraendo di fatto una porzione della maschera per ulteriori elaborazioni o analisi.
 

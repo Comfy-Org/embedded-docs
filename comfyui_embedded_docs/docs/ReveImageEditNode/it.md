@@ -1,4 +1,4 @@
-# ReveImageEditNode
+# Reve Modifica Immagine
 
 Il nodo Reve Image Edit modifica un'immagine esistente in base a un'istruzione testuale in linguaggio naturale. Invia l'immagine di input e la tua istruzione all'API di Reve, che restituisce una nuova immagine con le modifiche richieste applicate.
 

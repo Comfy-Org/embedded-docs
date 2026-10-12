@@ -1,4 +1,4 @@
-# LumaVideoNode
+# Luma Text to Video
 
 Genera video in modo sincrono in base a un prompt testuale e alle impostazioni di output. Questo nodo crea contenuti video utilizzando descrizioni testuali e vari parametri di generazione, producendo il video finale una volta completato il processo di generazione.
 

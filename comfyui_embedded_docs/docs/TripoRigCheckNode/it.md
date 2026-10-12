@@ -1,4 +1,4 @@
-# TripoRigCheckNode
+# Tripo: Controllo rig
 
 Questo nodo invia l'ID di un'attività completata di modello 3D Tripo all'API Tripo e verifica se quel modello può essere riggato. Attende il completamento della verifica e restituisce un risultato sì/no insieme al tipo di scheletro consigliato da Tripo per il modello.
 

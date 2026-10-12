@@ -1,4 +1,4 @@
-# FluxVideoEditNode
+# Flux Video Edit
 
 Modifica una clip video esistente a partire da un'istruzione scritta. Puoi rimuovere, aggiungere o sostituire oggetti, cambiare l'ambientazione, rielaborare lo stile del filmato, modificare il testo a schermo o sostituire il dialogo parlato. La durata, l'inquadratura, il movimento della telecamera e l'audio provengono dalla clip di origine, quindi tutto ciò che non menzioni nel prompt rimarrà com'era.
 

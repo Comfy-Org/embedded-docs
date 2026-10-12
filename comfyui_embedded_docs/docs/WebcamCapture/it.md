@@ -1,4 +1,4 @@
-# WebcamCapture
+# Cattura Webcam
 
 Il nodo WebcamCapture acquisisce immagini da un dispositivo webcam e le converte in un formato utilizzabile all'interno dei flussi di lavoro ComfyUI. Eredita dal nodo LoadImage e fornisce opzioni per controllare le dimensioni e la tempistica di acquisizione. Quando è abilitato, il nodo può acquisire nuove immagini ogni volta che la coda del flusso di lavoro viene elaborata.
 

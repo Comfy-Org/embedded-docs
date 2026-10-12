@@ -1,4 +1,4 @@
-# GrokImageEditNode
+# Grok Image Edit
 
 Il nodo Grok Image Edit modifica un'immagine esistente in base a un prompt testuale. Invia l'immagine o le immagini di input e la descrizione all'API Grok e restituisce una o più immagini generate che seguono il prompt. Questo nodo è contrassegnato come deprecato.
 

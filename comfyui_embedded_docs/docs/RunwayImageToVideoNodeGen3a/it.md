@@ -1,4 +1,4 @@
-# RunwayImageToVideoNodeGen3a
+# Runway Immagine a Video (Gen3a Turbo)
 
 Il nodo Runway Image to Video (Gen3a Turbo) genera un video da un singolo fotogramma iniziale utilizzando il modello Gen3a Turbo di Runway. Riceve un prompt testuale e un fotogramma immagine iniziale, quindi crea una sequenza video in base alla durata e al rapporto d'aspetto specificati. La generazione viene elaborata in remoto tramite l'API di Runway. Questo nodo è contrassegnato come deprecato.
 

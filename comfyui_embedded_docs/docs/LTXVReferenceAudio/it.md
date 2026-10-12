@@ -1,4 +1,4 @@
-# LTXVReferenceAudio
+# LTXV Reference Audio (ID-LoRA)
 
 LTXV Reference Audio trasferisce l'identità vocale di un parlante da una clip audio di riferimento all'audio generato. Codifica l'audio di riferimento nel condizionamento e, facoltativamente, applica una patch al modello con la guida dell'identità, che esegue un passaggio forward aggiuntivo senza il riferimento a ogni step per amplificare l'effetto dell'identità del parlante.
 

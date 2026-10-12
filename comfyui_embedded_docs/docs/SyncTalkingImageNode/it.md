@@ -1,4 +1,4 @@
-# SyncTalkingImageNode
+# sync.so Talking Image
 
 Anima un ritratto statico trasformandolo in un video parlante guidato da audio vocale, usando il modello sync-3 di sync.so. La durata dell'output corrisponde alla durata dell'audio e il costo è proporzionale alla durata dell'output.
 

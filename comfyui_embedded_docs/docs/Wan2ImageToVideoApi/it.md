@@ -1,4 +1,4 @@
-# Wan2ImageToVideoApi
+# Wan 2.7 Da Immagine a Video
 
 Il nodo Wan 2.7 Image to Video genera un video partendo da un'immagine del primo frame. Puoi facoltativamente fornire un'immagine dell'ultimo frame per creare una transizione tra le due, oppure fornire un file audio per guidare il movimento e la temporizzazione del video. Il nodo usa un modello AI per animare la scena in base alla tua descrizione testuale.
 

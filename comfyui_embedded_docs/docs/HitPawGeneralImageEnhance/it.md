@@ -1,4 +1,4 @@
-# HitPawGeneralImageEnhance
+# HitPaw General Image Enhance
 
 Questo nodo migliora le immagini a bassa risoluzione ingrandendole fino alla super-risoluzione, rimuovendo al contempo artefatti e rumore. Invia l'immagine a un'API esterna per l'elaborazione e può regolare automaticamente la dimensione di input per rimanere entro il limite di output consentito. La dimensione massima consentita dell'output è 32 megapixel.
 

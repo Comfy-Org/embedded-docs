@@ -1,4 +1,4 @@
-# Rodin3D_Gen2
+# Rodin 3D Genera - Generazione Gen-2
 
 Il nodo Rodin3D_Gen2 genera asset 3D utilizzando l'API Rodin. Prende immagini di input e le converte in modelli 3D con vari tipi di materiale e conteggi poligonali. Il nodo gestisce automaticamente l'intero processo di generazione, inclusi la creazione dell'attività, il polling dello stato e il download dei file.
 

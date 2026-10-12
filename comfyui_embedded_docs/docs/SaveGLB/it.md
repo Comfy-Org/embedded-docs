@@ -1,4 +1,4 @@
-# SaveGLB
+# Salva Modello 3D
 
 Il nodo SaveGLB salva dati mesh 3D o input di file 3D nella directory di output. Accetta dati mesh e comuni formati di file 3D (GLB, GLTF, OBJ, FBX, STL, USDZ, PLY, SPLAT, SPZ, KSPLAT) e li esporta con il prefisso del nome file specificato. Gli input mesh vengono scritti come file GLB, uno per ogni elemento del batch, mentre gli input di file 3D vengono salvati nel loro formato originale.
 

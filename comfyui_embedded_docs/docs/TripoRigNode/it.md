@@ -1,4 +1,4 @@
-# TripoRigNode
+# Tripo: Rigga modello
 
 Questo nodo prende un modello 3D Tripo esistente e ne crea una versione riggata, ovvero il modello riceve uno scheletro per poter essere animato. Fornisci l'ID attività del modello da riggare, scegli la versione del rig, il tipo di scheletro, lo stile di denominazione delle ossa e il formato del file di output; il nodo invia il lavoro a Tripo, attende il completamento e restituisce il risultato scaricato.
 

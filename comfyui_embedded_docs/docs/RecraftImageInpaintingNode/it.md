@@ -1,4 +1,4 @@
-# RecraftImageInpaintingNode
+# Recraft Image Inpainting
 
 Questo nodo modifica aree specifiche di un'immagine in base a un prompt testuale e a una maschera. Utilizza l'API Recraft per modificare in modo intelligente solo le regioni mascherate, mantenendo invariato il resto dell'immagine.
 

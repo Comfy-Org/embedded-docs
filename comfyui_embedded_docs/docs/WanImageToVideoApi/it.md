@@ -1,4 +1,4 @@
-# WanImageToVideoApi
+# Wan Image to Video
 
 Il nodo Wan Image to Video genera un video a partire da una singola immagine di input e da un prompt testuale. Utilizza l'immagine fornita come primo fotogramma e crea una sequenza video basata sulla descrizione, con opzioni per risoluzione, durata, audio e altre impostazioni avanzate.
 

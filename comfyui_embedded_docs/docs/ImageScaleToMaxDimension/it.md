@@ -1,4 +1,4 @@
-# ImageScaleToMaxDimension
+# Scala Immagine alla Dimensione Massima
 
 Il nodo ImageScaleToMaxDimension ridimensiona le immagini per adattarle entro una dimensione massima specificata, mantenendo le proporzioni originali. Calcola se l'immagine è orientata verticalmente o orizzontalmente, quindi ridimensiona la dimensione maggiore per corrispondere alla dimensione target, adattando proporzionalmente la dimensione minore. Il nodo supporta molteplici metodi di upscaling per diversi requisiti di qualità e prestazioni.
 

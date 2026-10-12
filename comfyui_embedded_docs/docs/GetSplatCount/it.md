@@ -1,4 +1,4 @@
-# GetSplatCount
+# Ottieni Numero di Splats
 
 Il nodo Get Splat Count restituisce il numero totale di splat (punti gaussiani) in un batch di splat, sommato su tutti gli elementi del batch. Passa i dati splat originali invariati, fornendo al contempo un conteggio di quanti splat individuali contiene.
 

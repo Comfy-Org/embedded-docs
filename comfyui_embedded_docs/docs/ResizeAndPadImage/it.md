@@ -1,4 +1,4 @@
-# ResizeAndPadImage
+# Ridimensiona e Aggiungi Bordo all'Immagine
 
 Il nodo ResizeAndPadImage ridimensiona un'immagine per adattarla alle dimensioni specificate mantenendo le proporzioni originali. Ridimensiona l'immagine proporzionalmente verso il basso per adattarla alla larghezza e all'altezza di destinazione, quindi aggiunge padding attorno ai bordi per riempire lo spazio rimanente. Il colore del padding e il metodo di interpolazione possono essere personalizzati per controllare l'aspetto delle aree di padding e la qualità del ridimensionamento.
 

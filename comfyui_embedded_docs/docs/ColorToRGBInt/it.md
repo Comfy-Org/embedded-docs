@@ -1,4 +1,4 @@
-# ColorToRGBInt
+# Selettore Colore
 
 Il nodo **ColorToRGBInt** converte un colore fornito in formato esadecimale (come `#FF5733`) in un singolo valore intero RGB. Estrae le componenti rossa, verde e blu dalla stringa del colore, le combina in un unico intero e restituisce anche la rappresentazione esadecimale originale e il valore alfa (opacità).
 

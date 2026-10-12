@@ -1,4 +1,4 @@
-# HeyGenImageToVideoNode
+# HeyGen Video 1.0 da immagine a video
 
 Trasforma un'immagine in un video con dialogo e audio sincronizzati usando HeyGen Video 1.0. L'immagine collegata viene utilizzata come primo fotogramma e il video generato mantiene il suo rapporto d'aspetto. Descrivi nel prompt ciò che dovrebbe accadere, incluse eventuali battute parlate. Il nodo carica l'immagine, crea il job video, attende che finisca e restituisce il video risultante.
 

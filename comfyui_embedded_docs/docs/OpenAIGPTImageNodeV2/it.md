@@ -1,4 +1,4 @@
-# OpenAIGPTImageNodeV2
+# OpenAI GPT Image 2.5
 
 Questo nodo genera immagini usando l'API GPT Image di OpenAI. Supporta cinque modelli — `gpt-image-2.5-flare`, `gpt-image-2.5-sunburst`, `gpt-image-2`, `gpt-image-1.5` e `gpt-image-1` — consente di allegare immagini di riferimento per la modifica delle immagini e può usare una maschera per specificare quali parti di un'immagine sostituire.
 

@@ -1,4 +1,4 @@
-# ElevenLabsInstantVoiceClone
+# ElevenLabs Instant Voice Clone
 
 Il nodo ElevenLabs Instant Voice Clone crea un nuovo modello vocale unico analizzando da 1 a 8 registrazioni audio della voce di una persona. Invia questi campioni all'API ElevenLabs, che li elabora per generare un clone vocale utilizzabile per la sintesi text-to-speech.
 

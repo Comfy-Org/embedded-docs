@@ -1,4 +1,4 @@
-# ImageSharpen
+# Aumenta Nitidezza Immagine
 
 Il nodo ImageSharpen migliora la nitidezza di un'immagine accentuandone i bordi e i dettagli. Applica all'immagine un filtro di nitidezza, regolabile in intensità e raggio, rendendo così l'immagine più definita e nitida.
 

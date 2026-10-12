@@ -1,4 +1,4 @@
-# LTXVSpatioTemporalGuidance
+# LTXV Spatio-Temporal Guidance (STG)
 
 Questo nodo migliora il dettaglio spaziale e la coerenza del movimento della generazione video LTXV eseguendo un passaggio aggiuntivo a ogni passo di campionamento. Durante questo passaggio, l'auto-attenzione dei blocchi transformer selezionati viene degradata a un pass-through del valore, e la generazione viene guidata ad allontanarsi da quel risultato degradato.
 

@@ -1,4 +1,4 @@
-# RemeshMesh
+# Rigenera mesh (DC a banda stretta)
 
 Remesh Mesh ricostruisce una mesh con una tassellatura pulita e uniforme campionando un campo di distanza a banda stretta attorno alla superficie originale ed estraendolo con Dual Contouring. Questo normalizza topologie disordinate, non-manifold o auto-intersecanti ed è pensato per essere eseguito prima di Decimate Mesh per raggiungere un numero esatto di facce. L'elaborazione viene eseguita sul dispositivo di calcolo attivo e la mesh di output rimane saldata.
 

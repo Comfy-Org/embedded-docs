@@ -1,4 +1,4 @@
-# BasicScheduler
+# Scheduler Base
 
 Il nodo `BasicScheduler` è progettato per calcolare una sequenza di valori sigma per modelli di diffusione in base allo scheduler, al modello e ai parametri di denoising forniti. Adatta dinamicamente il numero totale di passaggi in base al fattore denoise per mettere a punto il processo di diffusione, fornendo "ricette" precise per diverse fasi nei processi di campionamento avanzati che richiedono un controllo fine (come il campionamento multi-stadio).
 

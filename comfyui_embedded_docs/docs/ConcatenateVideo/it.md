@@ -1,4 +1,4 @@
-# ConcatenateVideo
+# Concatena video
 
 Concatena più segmenti video in un unico video, preservando l'ordine in cui sono collegati. Gli input codificati compatibili vengono combinati senza essere decodificati, e una traccia audio separata opzionale può essere fornita per sostituire l'audio originale.
 

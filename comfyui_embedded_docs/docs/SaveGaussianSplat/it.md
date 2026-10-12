@@ -1,4 +1,4 @@
-# SaveGaussianSplat
+# Salva Splat
 
 Questo nodo salva un file Gaussian splat 3D nella directory di output. Gestisce il processo di salvataggio del file e fornisce dati di anteprima per il viewport 3D.
 

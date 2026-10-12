@@ -1,4 +1,4 @@
-# SheetSage2AudioToABC
+# SheetSage2 Audio in ABC
 
 Questo nodo trascrive melodie vocali e strumentali dalla musica in notazione ABC, un formato testuale per scrivere spartiti musicali. Analizza l'audio collegato e restituisce la notazione risultante come testo, che può poi essere fornita al nodo YuE2 Generate Music utilizzando la modalità corrispondente.
 

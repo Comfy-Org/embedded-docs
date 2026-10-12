@@ -1,4 +1,4 @@
-# Krea2StyleReferenceNode
+# Krea 2 Style Reference
 
 Il nodo Krea 2 Style Reference consente di aggiungere un'immagine di riferimento per influenzare lo stile di una generazione di immagini Krea 2. È possibile concatenare più riferimenti di stile insieme (fino a 10 in totale) e collegare il risultato combinato a un nodo Krea 2 Image. Ogni immagine fornita viene caricata nello storage ComfyAPI e passata come URL.
 

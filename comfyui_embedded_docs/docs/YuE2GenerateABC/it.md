@@ -1,4 +1,4 @@
-# YuE2GenerateABC
+# YuE2 Genera ABC
 
 Questo nodo genera una notazione ABC per un brano basandosi su una descrizione di stile e sulle parole, utilizzando un modello YuE2 per testo e testi. L'output `abc` risultante può essere collegato al nodo YuE2 Generate Music per produrre audio.
 

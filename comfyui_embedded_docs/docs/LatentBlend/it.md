@@ -1,4 +1,4 @@
-# LatentBlend
+# Fusione Latent
 
 Il nodo LatentBlend combina due campioni latenti miscelandoli insieme utilizzando un fattore di miscelazione specificato. Prende due input latenti e crea un nuovo output in cui il primo campione è ponderato in base al fattore di miscelazione e il secondo campione è ponderato in base all'inverso. Se i campioni di input hanno forme diverse, il secondo campione viene ridimensionato automaticamente per corrispondere alle dimensioni del primo campione.
 

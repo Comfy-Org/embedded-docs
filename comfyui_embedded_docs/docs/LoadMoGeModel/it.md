@@ -1,4 +1,4 @@
-# LoadMoGeModel
+# Carica Modello MoGe
 
 Carica un modello MoGe (Monocular Geometry) da un file e lo prepara per l'uso in attività di stima della geometria. Il nodo legge il file del modello selezionato dalla cartella `geometry_estimation` e inizializza il modello MoGe con i suoi pesi memorizzati.
 

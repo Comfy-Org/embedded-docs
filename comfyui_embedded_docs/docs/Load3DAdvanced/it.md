@@ -1,4 +1,4 @@
-# Load3DAdvanced
+# Carica 3D (Avanzato)
 
 Il nodo Load 3D (Advanced) carica un file di modello 3D dalla directory `input/3d` di ComfyUI e fornisce i dati del modello insieme al posizionamento del modello e alle informazioni sulla camera catturate nello stato del viewport del visualizzatore 3D. Supporta i formati di file 3D comuni e consente di impostare la larghezza e l'altezza di rendering del viewport in pixel. Questo nodo è sperimentale.
 

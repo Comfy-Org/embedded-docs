@@ -1,4 +1,4 @@
-# CreateVideo
+# Crea Video
 
 Il nodo Create Video combina una sequenza di immagini in un video. È possibile impostare la velocità di riproduzione in fotogrammi al secondo, aggiungere facoltativamente l'audio e scegliere il formato di compressione, la profondità di bit e lo spazio colore del video risultante.
 

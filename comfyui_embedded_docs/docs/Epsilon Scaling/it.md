@@ -1,4 +1,4 @@
-# Epsilon Scaling
+# Scalatura Epsilon
 
 Questo nodo implementa il metodo Epsilon Scaling descritto nell'articolo di ricerca "Elucidating the Exposure Bias in Diffusion Models" (arxiv.org/2308.15321v6). Funziona scalando il rumore previsto durante il processo di campionamento per contribuire a ridurre il bias di esposizione, il che può portare a una qualità migliore nelle immagini generate. Questa implementazione utilizza la "schedulazione uniforme" consigliata dall'articolo per la sua praticità ed efficacia.
 

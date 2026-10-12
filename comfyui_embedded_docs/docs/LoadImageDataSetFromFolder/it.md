@@ -1,4 +1,4 @@
-# LoadImageDataSetFromFolder
+# Carica Immagine (da Cartella)
 
 Questo nodo carica più immagini da una sottocartella selezionata all'interno della directory di input principale di ComfyUI e le restituisce come elenco. Scansiona la cartella scelta alla ricerca di file immagine in formato PNG, JPG, JPEG o WEBP, il che lo rende utile per l'elaborazione batch o per preparare dataset di immagini.
 

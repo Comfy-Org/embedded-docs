@@ -1,4 +1,4 @@
-# ClaudeNode
+# Anthropic Claude
 
 Genera risposte testuali dai modelli Claude di Anthropic. Fornisci un prompt testuale e, facoltativamente, una o più immagini per il contesto multimodale; il nodo restituisce la risposta testuale generata dal modello.
 

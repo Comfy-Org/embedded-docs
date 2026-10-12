@@ -1,4 +1,4 @@
-# QwenImage21Cache
+# Cache Qwen Image 2.1
 
 Il nodo QwenImage21Cache configura la cache del prefisso KV del modello Qwen-Image 2.1: dove vengono memorizzate le chiavi e i valori in cache e con quale precisione. I token di testo e di riferimento vengono calcolati una sola volta e riutilizzati tra i passaggi di campionamento, ed è da qui che deriva la maggior parte dell'accelerazione nei workflow di modifica; questo nodo consente di scambiare memoria con velocità oppure di escludere completamente la cache. Questo nodo è contrassegnato come sperimentale.
 

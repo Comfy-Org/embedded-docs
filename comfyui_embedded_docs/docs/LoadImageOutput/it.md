@@ -1,4 +1,4 @@
-# LoadImageOutput
+# Carica Immagine (da Output)
 
 Il nodo LoadImageOutput carica le immagini dalla cartella di output. Quando fai clic sul pulsante di aggiornamento, aggiorna l'elenco delle immagini disponibili e seleziona automaticamente la prima, rendendo facile scorrere le immagini generate.
 

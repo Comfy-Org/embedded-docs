@@ -1,4 +1,4 @@
-# WanTextToImageApi
+# Wan da Testo a Immagine
 
 Il nodo Wan Text to Image genera immagini basate su descrizioni testuali. Utilizza modelli di IA per creare contenuti visivi a partire da prompt scritti, supportando input testuali sia in inglese che in cinese. Il nodo fornisce vari controlli per regolare dimensioni, qualità e preferenze di stile dell'immagine di output.
 

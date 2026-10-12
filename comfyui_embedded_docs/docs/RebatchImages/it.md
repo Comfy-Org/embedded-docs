@@ -1,4 +1,4 @@
-# RebatchImages
+# Ribatch Immagini
 
 Il nodo RebatchImages è progettato per riorganizzare un batch di immagini in una nuova configurazione di batch, regolando la dimensione del batch come specificato. Questo processo è essenziale per gestire e ottimizzare l'elaborazione dei dati immagine nelle operazioni in batch, garantendo che le immagini siano raggruppate in base alla dimensione del batch desiderata per una gestione efficiente.
 

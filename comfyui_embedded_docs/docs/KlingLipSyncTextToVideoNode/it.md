@@ -1,4 +1,4 @@
-# KlingLipSyncTextToVideoNode
+# Kling Lip Sync Video con Testo
 
 Il nodo Kling Lip Sync Text to Video sincronizza i movimenti della bocca in un file video per adattarli a un prompt testuale. Prende in input un video e genera un nuovo video in cui i movimenti labiali del personaggio sono allineati al testo fornito. Il nodo utilizza la sintesi vocale per creare una sincronizzazione del parlato dall'aspetto naturale.
 

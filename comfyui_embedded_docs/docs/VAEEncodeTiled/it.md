@@ -1,4 +1,4 @@
-# VAEEncodeTiled
+# Codifica VAE (a blocchi)
 
 VAEEncodeTiled elabora le immagini suddividendole in tile più piccole e codificandole utilizzando un autoencoder variazionale. Questo approccio a tile permette di gestire immagini di grandi dimensioni che altrimenti potrebbero superare i limiti di memoria. Il nodo supporta sia VAE per immagini che VAE per video, con controlli di suddivisione in tile separati per le dimensioni spaziali e temporali.
 

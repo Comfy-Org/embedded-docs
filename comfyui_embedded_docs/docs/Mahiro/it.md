@@ -1,4 +1,4 @@
-# Mahiro
+# Guida con Bias Positivo
 
 Il nodo Mahiro modifica la funzione di guidance per concentrarsi maggiormente sulla direzione del prompt positivo anziché sulla differenza tra prompt positivi e negativi. Crea un modello patchato che applica un approccio personalizzato di scalatura della guidance usando la similarità coseno tra output denoizzati condizionati e non condizionati normalizzati. Questo nodo sperimentale aiuta a orientare la generazione con maggiore forza verso la direzione prevista dal prompt positivo.
 

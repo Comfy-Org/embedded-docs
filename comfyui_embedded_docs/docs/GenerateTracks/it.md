@@ -1,4 +1,4 @@
-# GenerateTracks
+# Genera Tracce Video
 
 Il nodo `GenerateTracks` crea molteplici percorsi di movimento paralleli (tracce) per la generazione video. Definisce un percorso principale da una posizione iniziale a una posizione finale, quindi genera un insieme di tracce che corrono parallele a questo percorso, distanziate uniformemente. È possibile controllare la forma del percorso (linea retta o curva di Bezier), la velocità di movimento lungo di esso e in quali fotogrammi le tracce sono visibili.
 

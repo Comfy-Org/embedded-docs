@@ -1,4 +1,4 @@
-# CheckpointLoader
+# Carica Checkpoint con Config (DEPRECATO)
 
 Il nodo CheckpointLoader carica un checkpoint di modello pre-addestrato insieme al relativo file di configurazione. Richiede in input un file di configurazione e un file checkpoint e restituisce i componenti del modello caricati — il modello principale, il modello CLIP e il modello VAE — per l'utilizzo nel workflow. Questo nodo è deprecato.
 

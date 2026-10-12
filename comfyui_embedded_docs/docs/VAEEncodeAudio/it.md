@@ -1,4 +1,4 @@
-# VAEEncodeAudio
+# Codifica VAE Audio
 
 Il nodo VAE Encode Audio converte i dati audio in una rappresentazione latente usando un Autoencoder Variazionale (VAE). Elabora l'audio in ingresso attraverso il VAE per produrre campioni latenti compressi che possono essere usati per ulteriori attività di generazione o manipolazione audio. Se la frequenza di campionamento dell'audio differisce da quella prevista dal VAE, l'audio viene ricampionato automaticamente prima della codifica.
 

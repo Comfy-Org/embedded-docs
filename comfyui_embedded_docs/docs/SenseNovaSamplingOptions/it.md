@@ -1,4 +1,4 @@
-# SenseNovaSamplingOptions
+# Opzioni di campionamento SenseNova
 
 SenseNova Sampling Options imposta il flow shift di SenseNova su un modello. Clona il modello di input, allega una configurazione di campionamento del modello SenseNova utilizzando il valore di flow shift scelto e restituisce il modello patchato da usare durante il campionamento.
 

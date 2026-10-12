@@ -1,4 +1,4 @@
-# RTDETR_detect
+# Esegui Rilevamento in Tempo Reale (RT-DETR)
 
 Il nodo RT-DETR Detect esegue il rilevamento di oggetti sulle immagini di input utilizzando un modello RT-DETR. Identifica gli oggetti, restituisce bounding box attorno a essi e assegna etichette in base alle classi del dataset COCO. È possibile filtrare i risultati per punteggio di confidenza, classe di oggetto e limitare il numero totale di rilevamenti.
 

@@ -1,4 +1,4 @@
-# MinimaxHailuoVideoNode
+# MiniMax Hailuo 02 Video
 
 Genera video da prompt testuali utilizzando il modello MiniMax Hailuo-02. Opzionalmente, puoi fornire un'immagine iniziale da utilizzare come primo fotogramma, creando un video che continua da quell'immagine.
 

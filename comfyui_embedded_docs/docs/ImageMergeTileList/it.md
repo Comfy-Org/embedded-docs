@@ -1,4 +1,4 @@
-# ImageMergeTileList
+# Unisci elenco di tile in immagine
 
 Questo nodo prende un elenco di tile di immagine e li unisce di nuovo in un'unica immagine più grande. È progettato per ricostruire un'immagine che era stata precedentemente suddivisa in una griglia di tile sovrapposti, utilizzando una tecnica di fusione ponderata per creare un risultato finale senza giunture.
 

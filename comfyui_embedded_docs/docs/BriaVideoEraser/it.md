@@ -1,4 +1,4 @@
-# BriaVideoEraser
+# Bria Video Eraser
 
 Cancella ciò che una maschera per fotogramma copre da un video con Bria e riempie lo spazio vuoto. La maschera deve essere bianca su ciò che deve essere rimosso e nera altrove. Bria accetta clip di al massimo 5,1 secondi a 20-30 fotogrammi al secondo con dimensioni in pixel pari; l'audio viene mantenuto per impostazione predefinita. La clip restituita può essere più corta di alcuni fotogrammi rispetto all'input.
 

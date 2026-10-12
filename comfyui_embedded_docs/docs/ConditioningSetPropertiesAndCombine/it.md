@@ -1,4 +1,4 @@
-# ConditioningSetPropertiesAndCombine
+# Combina Proprietà Set Cond
 
 Il nodo ConditioningSetPropertiesAndCombine modifica i dati di condizionamento applicando le proprietà di un nuovo input di condizionamento a un input di condizionamento esistente. Combina i due insiemi di condizionamento controllando l'intensità del nuovo condizionamento e specificando come deve essere applicata l'area di condizionamento.
 

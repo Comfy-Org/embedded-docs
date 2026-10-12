@@ -1,4 +1,4 @@
-# FluxEraseNode
+# Flux Cancella Immagine
 
 Rimuove l'oggetto mascherato da un'immagine e ricostruisce lo sfondo. Dipingi la maschera su ciò che desideri cancellare e il nodo riempie l'area con un contenuto di sfondo plausibile.
 

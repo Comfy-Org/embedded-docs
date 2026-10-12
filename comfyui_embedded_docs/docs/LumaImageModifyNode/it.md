@@ -1,4 +1,4 @@
-# LumaImageModifyNode
+# Luma Da Immagine a Immagine
 
 Modifica le immagini in modo sincrono in base a un prompt testuale e al rapporto d'aspetto dell'immagine originale. Questo nodo riceve un'immagine di input e la trasforma in base al prompt fornito, usando un peso immagine configurabile per controllare quanto l'immagine originale venga alterata.
 

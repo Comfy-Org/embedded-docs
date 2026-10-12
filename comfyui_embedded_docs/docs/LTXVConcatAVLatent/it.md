@@ -1,4 +1,4 @@
-# LTXVConcatAVLatent
+# Concatena AV Latent
 
 Questo nodo unisce un latent video e un latent audio in un unico latent audio-video (AV) congiunto, pronto per modelli AV come LTXV o MiniMax H3. Se l'input video è già un latent AV, il suo stream video viene mantenuto e solo lo stream audio viene sostituito con il latent audio fornito.
 

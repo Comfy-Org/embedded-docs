@@ -1,4 +1,4 @@
-# SolidMask
+# Crea Maschera Solida
 
 Il nodo SolidMask genera una maschera uniforme con un valore specificato sull'intera area. È progettato per creare maschere di dimensioni e intensità specifiche, utili in varie attività di elaborazione delle immagini e di mascheramento.
 

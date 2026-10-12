@@ -1,4 +1,4 @@
-# OpenRouterImageNode
+# Immagine OpenRouter
 
 Questo nodo genera o modifica immagini tramite OpenRouter utilizzando i modelli MAI-Image-2.6 di Microsoft. Supporta la generazione da testo a immagine e la modifica guidata da immagini con un massimo di cinque immagini di riferimento, in sette rapporti d'aspetto a risoluzione 1K o 1.5K.
 

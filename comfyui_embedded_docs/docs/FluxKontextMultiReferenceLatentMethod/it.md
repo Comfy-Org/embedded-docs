@@ -1,4 +1,4 @@
-# FluxKontextMultiReferenceLatentMethod
+# Modifica Metodo di Riferimento Modello
 
 Il nodo FluxKontextMultiReferenceLatentMethod aggiorna i dati di condizionamento memorizzando al loro interno un metodo scelto per i latenti di riferimento. Il metodo memorizzato viene poi utilizzato quando i latenti di riferimento vengono gestiti nelle fasi di generazione successive. Questo nodo è contrassegnato come sperimentale e appartiene al sistema di condizionamento Flux.
 

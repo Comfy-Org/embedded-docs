@@ -1,4 +1,4 @@
-# MediaPipeFaceLandmarker
+# Rileva Punti di Riferimento del Viso (MediaPipe)
 
 ## Panoramica
 

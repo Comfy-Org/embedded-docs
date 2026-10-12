@@ -1,4 +1,4 @@
-# RenderSplat
+# Render Splat
 
 Renderizza un gaussian splat come immagine utilizzando un rasterizzatore EWA anisotropico con splat ellittici orientati, antialiasing e rendering front-to-back ordinato per profondità. La camera proviene da un input camera_info, oppure puoi lasciarlo vuoto per inquadrare automaticamente lo splat. Imposta frames maggiore di 1 per un batch di immagini a giostra da fornire a un nodo Video.
 

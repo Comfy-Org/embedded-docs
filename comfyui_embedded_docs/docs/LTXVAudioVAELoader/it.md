@@ -1,4 +1,4 @@
-# LTXVAudioVAELoader
+# Carica LTXV Audio VAE
 
 Il nodo LTXV Audio VAE Loader carica un modello Audio Variational Autoencoder (VAE) pre-addestrato da un file checkpoint. Legge il checkpoint specificato, conserva i pesi dell'audio VAE e del vocoder e prepara il modello per l'uso in flussi di lavoro di generazione o elaborazione audio all'interno di ComfyUI.
 

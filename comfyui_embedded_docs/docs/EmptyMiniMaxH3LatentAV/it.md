@@ -1,4 +1,4 @@
-# EmptyMiniMaxH3LatentAV
+# MiniMax H3 AV Latent Vuoto
 
 Questo nodo crea un latente vuoto che combina sia informazioni video sia audio per il modello MiniMax H3. Si definiscono larghezza, altezza e lunghezza del contenuto, e il nodo produce un latente vuoto che il modello può usare come punto di partenza per la generazione. La durata (`length`) viene regolata automaticamente per adattarsi alla griglia di fotogrammi richiesta dal modello, pari a 17k+5 fotogrammi a 24 fps.
 

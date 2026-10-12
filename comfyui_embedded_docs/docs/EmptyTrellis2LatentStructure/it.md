@@ -1,4 +1,4 @@
-# EmptyTrellis2LatentStructure
+# Struttura latent Trellis2 vuota
 
 Questo nodo crea una struttura latente vuota per il modello Trellis2, in cui tutti i valori sono impostati a zero. Produce un tensore latente 3D vuoto con 32 canali a una risoluzione di 16×16×16, dimensionato per il numero specificato di elementi nel batch.
 

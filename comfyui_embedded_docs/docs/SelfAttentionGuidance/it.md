@@ -1,4 +1,4 @@
-# SelfAttentionGuidance
+# Self-Attention Guidance
 
 Il nodo Self-Attention Guidance applica una guida ai modelli di diffusione modificando il meccanismo di attenzione durante il processo di campionamento. Cattura i punteggi di attenzione dai passaggi di denoising incondizionato e li usa per creare mappe di guida sfocate che influenzano l'output finale. Questa tecnica aiuta a guidare il processo di generazione sfruttando i pattern di attenzione del modello stesso.
 

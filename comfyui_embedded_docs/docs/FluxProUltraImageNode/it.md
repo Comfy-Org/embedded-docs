@@ -1,4 +1,4 @@
-# FluxProUltraImageNode
+# Flux 1.1 [pro] Ultra Image
 
 Genera immagini utilizzando Flux Pro 1.1 Ultra tramite API, in base a prompt e risoluzione. Questo nodo si connette a un servizio esterno per creare immagini in base alla tua descrizione testuale e alle dimensioni specificate.
 

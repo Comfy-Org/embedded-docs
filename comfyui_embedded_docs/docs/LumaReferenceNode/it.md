@@ -1,4 +1,4 @@
-# LumaReferenceNode
+# Luma Reference
 
 Questo nodo contiene un'immagine e un valore di peso da usare con il nodo Luma Generate Image. Crea una catena di riferimento che può essere passata ad altri nodi Luma per influenzare la generazione delle immagini. Il nodo può iniziare una nuova catena di riferimento oppure aggiungersi a una esistente.
 

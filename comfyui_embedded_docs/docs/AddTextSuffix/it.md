@@ -1,4 +1,4 @@
-# AddTextSuffix
+# Aggiungi Suffisso Testo (DEPRECATO)
 
 Questo nodo aggiunge un suffisso specificato alla fine di una stringa di testo di input. Prende il testo originale e il suffisso come input, quindi restituisce il risultato combinato. **Questo nodo è deprecato** ed è sostituito dal nodo Concatenate Text.
 

@@ -1,4 +1,4 @@
-# LoraSave
+# Estrai e salva LoRA
 
 Il nodo LoraSave estrae e salva file LoRA (Low-Rank Adaptation) dalle differenze tra modelli. Può elaborare differenze di modelli di diffusione, differenze di text encoder, o entrambe, convertendole in formato LoRA con rango e tipo specificati. Il file LoRA risultante viene salvato nella directory di output per utilizzarlo in seguito.
 

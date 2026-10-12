@@ -1,4 +1,4 @@
-# MoGePanoramaInference
+# Esegui Inferenza Panorama MoGe
 
 Questo nodo esegue la stima della profondità su immagini panoramiche equirettangolari. Suddivide il panorama in 12 viste prospettiche, esegue il modello di stima della profondità MoGe su ciascuna vista e unisce i risultati per vista in un'unica mappa di profondità che copre l'intero panorama. Le normali previste per vista e la scala metrica vengono ignorate, poiché le scale per vista non sarebbero allineate lungo le giunzioni di sovrapposizione.
 

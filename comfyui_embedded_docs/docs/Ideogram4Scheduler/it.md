@@ -1,4 +1,4 @@
-# Ideogram4Scheduler
+# Ideogram 4 Scheduler
 
 Il nodo Ideogram 4 Scheduler genera una sequenza di valori sigma (livelli di rumore) per il processo di campionamento della diffusione, basandosi sulla schedulazione di riferimento di Ideogram 4. Crea una schedulazione del rumore personalizzata che si adatta alle dimensioni dell'immagine e consente una messa a punto tramite parametri statistici.
 

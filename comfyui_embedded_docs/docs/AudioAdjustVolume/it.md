@@ -1,4 +1,4 @@
-# AudioAdjustVolume
+# Regola Volume Audio
 
 Il nodo AudioAdjustVolume modifica il volume dell'audio applicando regolazioni di volume in decibel (dB). Riceve un input audio e applica un fattore di guadagno in base al livello di volume specificato, dove i valori positivi aumentano il volume e quelli negativi lo diminuiscono. Il nodo restituisce l'audio modificato con la stessa frequenza di campionamento dell'originale.
 

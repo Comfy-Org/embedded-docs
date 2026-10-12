@@ -1,4 +1,4 @@
-# BriaRelight
+# Bria Rilluminazione
 
 Questo nodo modifica l'atmosfera e la direzione dell'illuminazione di un'immagine utilizzando Bria. L'immagine viene ri-renderizzata da Bria, quindi il risultato non è allineato pixel per pixel con l'input; l'intero fotogramma viene rigenerato a circa 1 megapixel.
 

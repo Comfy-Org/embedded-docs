@@ -1,4 +1,4 @@
-# PrimitiveBoolean
+# Booleano
 
 Il nodo Boolean trasmette un valore booleano (true/false) nel tuo workflow. Accetta un input booleano e restituisce lo stesso valore invariato, così puoi fornire un'impostazione true/false ad altri nodi che ne hanno bisogno.
 

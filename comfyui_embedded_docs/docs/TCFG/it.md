@@ -1,4 +1,4 @@
-# TCFG
+# Tangential Damping CFG
 
 TCFG (Tangential Damping CFG) affina le predizioni incondizionate (negative) per allinearle meglio alle predizioni condizionate (positive) durante il processo di campionamento. Questa tecnica migliora la qualità dell'output applicando uno smorzamento tangenziale alla guida incondizionata, basandosi sul paper di ricerca 2503.18137. Il nodo modifica il comportamento di campionamento del modello regolando il modo in cui le predizioni incondizionate vengono elaborate durante il classifier-free guidance.
 

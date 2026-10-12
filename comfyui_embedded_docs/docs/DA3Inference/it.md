@@ -1,4 +1,4 @@
-# DA3Inference
+# Esegui Depth Anything 3
 
 Questo nodo esegue il modello Depth Anything 3 su un'immagine per stimare informazioni di profondità e geometria. In modalità multiview, più immagini vengono elaborate insieme come viste separate della stessa scena per produrre mappe di profondità e pose della camera geometricamente coerenti.
 

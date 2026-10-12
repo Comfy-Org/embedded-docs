@@ -1,4 +1,4 @@
-# BuildPoseFile
+# Crea file di animazione 3D
 
 Questo nodo crea un file di animazione 3D pronto per il salvataggio a partire dai dati di posa. È possibile esportare un GLB animato in diversi stili visivi — una mesh completa del corpo, un'anteprima delle sole articolazioni, uno scheletro OpenPose o un rig a capsule SCAIL — oppure salvare invece una clip motion-capture BVH. L'output si collega a un nodo di salvataggio file come Save 3D Model per scrivere il file su disco.
 

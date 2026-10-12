@@ -1,4 +1,4 @@
-# MergeImageLists
+# Unisci Liste di Immagini (DEPRECATO)
 
 Il nodo Merge Image Lists combina più liste separate di immagini in un'unica lista continua. Funziona prendendo tutte le immagini da ciascun input collegato e concatenandole nell'ordine in cui vengono ricevute. È utile per organizzare o raggruppare in batch immagini provenienti da fonti diverse per ulteriori elaborazioni.
 

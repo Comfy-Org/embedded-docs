@@ -1,4 +1,4 @@
-# SelectModelDevice
+# Seleziona Dispositivo Modello
 
 Il nodo Select Model Device consente di scegliere manualmente su quale dispositivo (CPU o una GPU specifica) viene eseguito un modello di diffusione. Può spostare un modello su un dispositivo diverso e gestisce automaticamente i conflitti con altri nodi multi-GPU. Selezionando `"default"` si ripristina il dispositivo originale scelto dal caricatore del modello.
 

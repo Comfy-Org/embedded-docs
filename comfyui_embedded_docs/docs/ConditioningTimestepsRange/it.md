@@ -1,4 +1,4 @@
-# ConditioningTimestepsRange
+# Intervallo Passi Temporali
 
 Il nodo ConditioningTimestepsRange crea tre intervalli di timestep distinti per controllare quando gli effetti di condizionamento vengono applicati durante il processo di generazione. Accetta valori percentuali di inizio e fine e divide l'intero intervallo di timestep (da 0.0 a 1.0) in tre segmenti: l'intervallo principale compreso tra le percentuali specificate, l'intervallo precedente alla percentuale iniziale e l'intervallo successivo alla percentuale finale.
 

@@ -1,4 +1,4 @@
-# NormalizeImages
+# Normalizza Colori Immagine
 
 Questo nodo normalizza i colori di un'immagine di input regolando i valori dei pixel in base a una media e a una deviazione standard specificate. A ogni pixel viene sottratta la media e il risultato viene poi diviso per la deviazione standard; si tratta di un passaggio comune per standardizzare i dati delle immagini prima di altre elaborazioni.
 

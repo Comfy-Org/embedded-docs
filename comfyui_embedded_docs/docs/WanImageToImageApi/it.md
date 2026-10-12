@@ -1,4 +1,4 @@
-# WanImageToImageApi
+# Wan Da Immagine a Immagine
 
 Il nodo Wan Image to Image genera un'immagine da una o due immagini di input e da un prompt testuale. Trasforma le immagini di input in base alla descrizione fornita, creando una nuova immagine che mantiene le proporzioni dell'input originale. L'immagine di output è fissata a 1,6 megapixel indipendentemente dalla dimensione dell'input.
 

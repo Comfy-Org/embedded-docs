@@ -1,4 +1,4 @@
-# ConditioningConcat
+# Conditioning (Concatena)
 
 Il nodo ConditioningConcat è progettato per concatenare vettori di condizionamento, fondendo nello specifico il vettore 'conditioning_from' nel vettore 'conditioning_to'. Questa operazione è fondamentale negli scenari in cui le informazioni di condizionamento provenienti da due origini devono essere combinate in un'unica rappresentazione unificata.
 

@@ -1,4 +1,4 @@
-# FishAudioSpeechToText
+# Da parlato a testo Fish Audio
 
 Questo nodo trascrive l'audio in testo usando il servizio speech-to-text di Fish Audio. Rileva automaticamente la lingua dell'audio e può restituire facoltativamente segmenti con timestamp a livello di parola in formato JSON.
 

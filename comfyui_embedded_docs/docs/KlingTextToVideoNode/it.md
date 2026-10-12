@@ -1,4 +1,4 @@
-# KlingTextToVideoNode
+# Kling Da Testo a Video
 
 Il nodo Kling Text to Video genera video a partire da descrizioni testuali usando l'API di generazione video Kling. Invia il prompt e le impostazioni (proporzioni, modalità di generazione e scala CFG) all'API, attende il completamento dell'attività di generazione e restituisce il video risultante insieme al relativo ID e alla durata.
 

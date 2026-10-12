@@ -1,4 +1,4 @@
-# BakeTextureFromVoxel
+# Baking della texture dal voxel
 
 Questo nodo esegue il baking di texture PBR su una mesh 3D usando il layout UV esistente della mesh. Rasterizza la mesh nello spazio UV e campiona colore e attributi materiale da un volume voxel sparso su ciascun texel, restituendo un'immagine di colore base più le mappe metallic e roughness. Non esegue l'unwrap della mesh, quindi un nodo di unwrap UV deve essere collegato a monte; le immagini risultanti sono pensate per essere abbinate alla stessa mesh in ApplyTextureToMesh per il salvataggio come GLB.
 

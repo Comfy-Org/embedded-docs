@@ -1,4 +1,4 @@
-# PixverseImageToVideoNode
+# PixVerse Da Immagine a Video
 
 Genera un video da un'immagine fissa e un prompt testuale utilizzando PixVerse. Il nodo carica l'immagine di input, applica le impostazioni di qualità, durata e movimento selezionate, quindi restituisce il video risultante una volta completata la generazione.
 

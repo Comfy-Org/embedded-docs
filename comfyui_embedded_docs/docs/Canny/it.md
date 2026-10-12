@@ -1,4 +1,4 @@
-# Canny
+# Rileva Bordi (Canny)
 
 Estrae tutte le linee di contorno dalle foto, come usare una penna per delineare una foto, tracciando i contorni e i confini dei dettagli degli oggetti.
 

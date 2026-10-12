@@ -1,4 +1,4 @@
-# BeebleSwitchXImageEdit
+# Beeble SwitchX Modifica Immagine
 
 Modifica una singola immagine con Beeble SwitchX. Questo nodo può cambiare qualsiasi elemento della scena (sfondo, illuminazione, costume) preservando i pixel originali del soggetto. Fornisci un'immagine di riferimento e/o un prompt testuale per descrivere il nuovo aspetto. La risoluzione massima è di circa 2,77 megapixel.
 

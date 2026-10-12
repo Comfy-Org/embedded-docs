@@ -1,4 +1,4 @@
-# KSamplerAdvanced
+# KSampler (Avanzato)
 
 Il nodo KSamplerAdvanced è progettato per migliorare il processo di campionamento fornendo configurazioni e tecniche avanzate. Mira a offrire opzioni più sofisticate per generare campioni da un modello, migliorando le funzionalità di base di KSampler.
 

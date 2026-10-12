@@ -1,4 +1,4 @@
-# CreateBoundingBoxes
+# Crea Bounding Boxes
 
 Questo nodo fornisce un'interfaccia canvas per disegnare bounding box attorno a oggetti o regioni di testo in un'immagine. Restituisce le coordinate delle bounding box nello spazio in pixel, dati strutturati degli elementi compatibili con la formattazione dei prompt di Ideogram e un'immagine di anteprima che mostra le caselle disegnate con etichette e palette di colori.
 

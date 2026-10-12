@@ -1,4 +1,4 @@
-# TextEncodeQwenImage21
+# Codifica testo Qwen Image 2.1
 
 Il nodo TextEncodeQwenImage21 codifica un prompt e un negative prompt per il modello Qwen-Image 2.1, allegando facoltativamente immagini di riferimento. Le immagini di riferimento vengono viste dal text encoder e, quando è collegato un VAE, vengono anche codificate come latent che sono inseriti nella sequenza, così il conditioning trasporta sia l'istruzione testuale sia il riferimento visivo. Il nodo restituisce il conditioning positive e negative insieme a un latent vuoto dimensionato sulla prima immagine di riferimento, pronto per il campionamento.
 

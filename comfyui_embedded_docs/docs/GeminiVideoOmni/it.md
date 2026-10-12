@@ -1,4 +1,4 @@
-# GeminiVideoOmni
+# Google Gemini Omni (Video)
 
 Genera un video con audio da un prompt testuale usando il modello Gemini Omni Flash di Google. Facoltativamente, fornisci immagini e/o video di riferimento per guidare o modificare il risultato. Descrivi la lunghezza desiderata (3-10 s) e le proporzioni (16:9 o 9:16) direttamente nel prompt.
 

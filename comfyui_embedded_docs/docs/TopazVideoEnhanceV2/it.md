@@ -1,4 +1,4 @@
-# TopazVideoEnhanceV2
+# Topaz Video Enhance
 
 Il nodo **Topaz Video Enhance V2** dà nuova vita al video con una potente tecnologia di upscaling e recupero. Può aumentare la risoluzione di un video utilizzando diversi modelli di upscaler Topaz, regolare la frequenza dei fotogrammi tramite interpolazione dei fotogrammi e applicare impostazioni di potenziamento creative o realistiche.
 

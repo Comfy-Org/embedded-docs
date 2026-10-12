@@ -1,4 +1,4 @@
-# SaveConditioning
+# Salva Conditioning
 
 Questo nodo salva un singolo conditioning nella cartella di output come file safetensors. Il file salvato può essere spostato nella cartella models/embeddings e caricato successivamente con Load Conditioning, ad esempio per saltare il codificatore di testo. Il nodo lascia passare il conditioning invariato, così può ancora essere utilizzato successivamente nel workflow.
 

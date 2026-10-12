@@ -1,4 +1,4 @@
-# ImageQuantize
+# Quantizza Immagine
 
 Il nodo ImageQuantize è progettato per ridurre il numero di colori in un'immagine a un numero specificato, applicando opzionalmente tecniche di dithering per mantenerne la qualità visiva. Questo processo è utile per creare immagini basate su palette o per ridurre la complessità cromatica in determinate applicazioni.
 

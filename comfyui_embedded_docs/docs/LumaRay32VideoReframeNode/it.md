@@ -1,4 +1,4 @@
-# LumaRay32VideoReframeNode
+# Luma Ray 3.2 Riquadratura Video
 
 Questo nodo modifica il rapporto d'aspetto di un video esistente utilizzando Luma Ray 3.2, che riempie le nuove aree esposte della tela con contenuti generati. Il video di origine può durare fino a 30 secondi e la fatturazione è al secondo di output.
 

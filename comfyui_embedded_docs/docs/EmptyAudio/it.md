@@ -1,4 +1,4 @@
-# EmptyAudio
+# Audio Vuoto
 
 Il nodo EmptyAudio genera un clip audio silenzioso con durata, frequenza di campionamento e configurazione dei canali specificate. Crea una forma d'onda contenente tutti zeri, producendo silenzio completo per la durata indicata. Questo nodo è utile per creare audio segnaposto o generare segmenti silenziosi nei flussi di lavoro audio.
 

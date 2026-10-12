@@ -1,4 +1,4 @@
-# ImageOnlyCheckpointLoader
+# Carica solo immagine checkpoint (modello img2vid)
 
 Questo nodo rileva i modelli situati nella cartella `ComfyUI/models/checkpoints` e legge anche i modelli da percorsi aggiuntivi configurati nel file extra_model_paths.yaml. A volte potrebbe essere necessario **aggiornare l'interfaccia di ComfyUI** per consentirle di leggere i file dei modelli dalla cartella corrispondente.
 

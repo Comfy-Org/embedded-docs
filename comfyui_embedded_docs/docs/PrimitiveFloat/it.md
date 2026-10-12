@@ -1,4 +1,4 @@
-# PrimitiveFloat
+# Virgola Mobile
 
 Il nodo PrimitiveFloat crea un valore numerico in virgola mobile che può essere utilizzato nel flusso di lavoro. Accetta un singolo input numerico e restituisce in output lo stesso valore, consentendo di definire e passare valori float tra nodi diversi nella pipeline di ComfyUI.
 

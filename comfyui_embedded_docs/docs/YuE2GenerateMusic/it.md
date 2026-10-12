@@ -1,4 +1,4 @@
-# YuE2GenerateMusic
+# YuE2 Genera musica
 
 Genera token musicali e condizionamento acustico a partire da uno stile, da un testo e da una notazione ABC. Restituisce il condizionamento e la durata generata in secondi; quest'ultima deve essere fornita al nodo Empty YuE2 Latent Audio. Se l'input ABC viene lasciato vuoto, la modalità selezionata viene ignorata e viene usata automaticamente la modalità off.
 

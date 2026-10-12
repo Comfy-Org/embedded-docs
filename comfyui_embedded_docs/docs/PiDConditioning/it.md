@@ -1,4 +1,4 @@
-# PiDConditioning
+# PiD Conditioning
 
 Associa un latent e un valore degrade_sigma a un CONDITIONING, così può essere utilizzato per la decodifica PiD o l'upscaling. Questo consente di controllare quanto il latent viene degradato prima di essere elaborato.
 

@@ -1,4 +1,4 @@
-# AnimaLLLiteApply
+# Applica Anima LLLite
 
 AnimaLLLiteApply applica una patch di animazione leggera a un modello di diffusione, consentendo una generazione controllata da immagine a immagine con forza e tempistica regolabili. Integra una patch del modello preconfigurata con un'immagine di input e una maschera opzionale, modificando i layer di attenzione e MLP del modello per influenzare il processo di generazione.
 

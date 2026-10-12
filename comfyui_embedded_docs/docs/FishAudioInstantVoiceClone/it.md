@@ -1,4 +1,4 @@
-# FishAudioInstantVoiceClone
+# Clonazione vocale istantanea Fish Audio
 
 Questo nodo crea una voce clonata privata dalle tue registrazioni audio utilizzando l'API Fish Audio. Fornisci uno o più campioni audio e il nodo crea una voce personalizzata che può essere utilizzata immediatamente per la sintesi vocale. Accetta da 1 a 20 registrazioni, con una durata consigliata da 10 a 30 secondi ciascuna e un limite totale di 270 secondi.
 

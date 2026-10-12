@@ -1,4 +1,4 @@
-# BriaTransparentVideoBackground
+# Bria Rimuovi Sfondo Video (Trasparente)
 
 Questo nodo rimuove lo sfondo da un video utilizzando il servizio AI di Bria e restituisce i fotogrammi scontornati insieme a una maschera alpha. Collega entrambi gli output a un nodo di compositing, oppure passali a un nodo Save WEBM per salvare un video trasparente.
 

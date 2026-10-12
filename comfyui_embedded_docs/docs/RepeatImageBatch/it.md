@@ -1,4 +1,4 @@
-# RepeatImageBatch
+# Ripeti Batch Immagini
 
 Il nodo RepeatImageBatch è progettato per replicare una determinata immagine un numero specificato di volte, creando un batch di immagini identiche. Questa funzionalità è utile per operazioni che richiedono più istanze della stessa immagine, come l'elaborazione in batch o il data augmentation.
 

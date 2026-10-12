@@ -1,4 +1,4 @@
-# VoxelToMesh
+# Voxel to Mesh
 
 Il nodo VoxelToMesh converte dati voxel 3D in una geometria mesh estraendo una superficie a un valore di soglia specificato. Offre due algoritmi per l'estrazione della superficie: un metodo base che crea facce semplici simili a cubi, e un metodo surface net che produce mesh più levigate e dettagliate. Il nodo elabora ciascuna griglia voxel nell'input e genera vertici e facce che formano una rappresentazione mesh 3D.
 

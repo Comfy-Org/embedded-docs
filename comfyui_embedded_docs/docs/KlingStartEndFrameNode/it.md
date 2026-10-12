@@ -1,4 +1,4 @@
-# KlingStartEndFrameNode
+# Kling Da Immagine Iniziale a Finale in Video
 
 Questo nodo crea una sequenza video che esegue la transizione tra le immagini iniziale e finale fornite. Genera tutti i frame intermedi per produrre una trasformazione fluida dal primo frame all’ultimo. Questo nodo chiama l’API image-to-video ma supporta solo le opzioni di input compatibili con il campo della richiesta `image_tail`.
 

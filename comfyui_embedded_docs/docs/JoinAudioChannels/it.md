@@ -1,4 +1,4 @@
-# JoinAudioChannels
+# Unisci Canali Audio
 
 Il nodo Join Audio Channels combina due ingressi audio mono separati in un'unica uscita audio stereo. Prende un canale sinistro e un canale destro, assicura che abbiano frequenze di campionamento e lunghezze compatibili, e li unisce in una forma d'onda audio a due canali.
 

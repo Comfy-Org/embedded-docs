@@ -1,4 +1,4 @@
-# ConditioningZeroOut
+# Condizionamento Azzerato
 
 Questo nodo azzera elementi specifici all'interno della struttura dati di condizionamento, neutralizzandone di fatto l'influenza nei successivi passaggi di elaborazione. È progettato per operazioni di condizionamento avanzate in cui è richiesta la manipolazione diretta della rappresentazione interna del condizionamento.
 

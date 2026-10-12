@@ -1,4 +1,4 @@
-# TrimVideoLatent
+# Taglia Latent Video
 
 Il nodo TrimVideoLatent rimuove i frame dall'inizio di una rappresentazione latente video. Prende un campione video latente e taglia un numero specificato di frame dall'inizio, restituendo la porzione rimanente del video. Ciò consente di accorciare le sequenze video rimuovendo i frame iniziali.
 

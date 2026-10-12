@@ -1,4 +1,4 @@
-# Vidu3StartEndToVideoNode
+# Vidu Q3 Generazione Video da Frame Iniziale/Finale
 
 Questo nodo genera un video creando una transizione tra un fotogramma iniziale e un fotogramma finale, guidata da un prompt testuale. Utilizza il modello Vidu Q3 per interpolare tra le due immagini e produce un video con la durata e la risoluzione scelte.
 

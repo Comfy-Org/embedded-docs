@@ -1,4 +1,4 @@
-# DA3GeometryToMesh
+# Converti DA3 Geometry in Mesh
 
 Questo nodo converte un pacchetto DA3_GEOMETRY in una mesh 3D retroproiettando la mappa di profondità e triangolando la nuvola di punti risultante. Elabora una singola immagine da un batch e produce una mesh con texture o senza texture adatta al rendering 3D.
 

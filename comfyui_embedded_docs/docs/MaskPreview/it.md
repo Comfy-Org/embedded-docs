@@ -1,4 +1,4 @@
-# MaskPreview
+# Anteprima Maschera
 
 Il nodo MaskPreview visualizza un'anteprima visiva dei dati della maschera direttamente nell'interfaccia di ComfyUI, senza salvarla nella directory di output. Ciò consente di ispezionare la maschera in qualsiasi punto del workflow, mentre la maschera passa anche attraverso il nodo invariata, così da poter continuare a essere utilizzata nelle fasi successive.
 

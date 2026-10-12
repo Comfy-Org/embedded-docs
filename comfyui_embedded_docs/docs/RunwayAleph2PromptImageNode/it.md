@@ -1,4 +1,4 @@
-# RunwayAleph2PromptImageNode
+# Runway Aleph2 Prompt Image
 
 Questo nodo fissa un'immagine di guida a un momento specifico del video di output, controllando l'aspetto del video modificato in quel punto. Collega questo nodo all'input `prompt_images` del nodo Runway Aleph2 Video to Video e concatenane diversi (fino a 5) usando l'input opzionale `prompt_images`.
 

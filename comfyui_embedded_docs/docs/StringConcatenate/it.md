@@ -1,4 +1,4 @@
-# StringConcatenate
+# Concatena Testo
 
 Il nodo StringConcatenate combina due stringhe di testo in una sola unendole con un delimitatore specificato. Riceve in input due stringhe e un carattere o una stringa delimitatore, quindi restituisce in output un'unica stringa in cui i due input sono collegati con il delimitatore posto tra essi.
 

@@ -1,4 +1,4 @@
-# HypernetworkLoader
+# Carica Hypernetwork
 
 Questo nodo rileva i modelli presenti nella cartella `ComfyUI/models/hypernetworks` e legge anche i modelli da percorsi aggiuntivi configurati nel file extra_model_paths.yaml. In alcuni casi, potrebbe essere necessario **aggiornare l'interfaccia di ComfyUI** per consentirle di leggere i file dei modelli dalla cartella corrispondente.
 

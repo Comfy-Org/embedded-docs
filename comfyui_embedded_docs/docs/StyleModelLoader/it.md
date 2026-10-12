@@ -1,4 +1,4 @@
-# StyleModelLoader
+# Carica modello di stile
 
 Questo nodo rileva i modelli situati nella cartella `ComfyUI/models/style_models` e legge anche i modelli dai percorsi aggiuntivi configurati nel file extra_model_paths.yaml. A volte potrebbe essere necessario **aggiornare l'interfaccia di ComfyUI** per consentirle di leggere i file dei modelli dalla cartella corrispondente.
 

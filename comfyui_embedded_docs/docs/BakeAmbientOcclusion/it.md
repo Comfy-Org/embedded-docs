@@ -1,4 +1,4 @@
-# BakeAmbientOcclusion
+# Baking dell'occlusione ambientale
 
 Genera una mappa di occlusione ambientale da una mesh high-poly nel layout UV di una mesh low-poly. L'output è un'immagine in scala di grigi in cui i texel bianchi indicano aree esposte e i texel scuri indicano cavità; è pensata per l'input occlusion del nodo Apply Texture To Mesh. Collegare la mesh low-poly con UV srotolate e la mesh high-poly da cui è stata decimata.
 

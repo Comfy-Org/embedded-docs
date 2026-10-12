@@ -1,4 +1,4 @@
-# FluxProFillNode
+# Flux.1 Riempi Immagine
 
 Esegue l'inpainting di un'immagine in base alla maschera e al prompt. Questo nodo utilizza il modello Flux.1 per riempire le aree mascherate di un'immagine in base alla descrizione testuale fornita, generando nuovo contenuto che corrisponde all'immagine circostante.
 

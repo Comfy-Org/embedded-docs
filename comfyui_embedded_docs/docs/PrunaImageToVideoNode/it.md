@@ -1,4 +1,4 @@
-# PrunaImageToVideoNode
+# Pruna P-Video-2 da immagine a video
 
 Anima un'immagine trasformandola in un video con il modello P-Video-2 di Pruna. Il primo fotogramma è obbligatorio e fissa le proporzioni dell'output; un ultimo fotogramma opzionale fornisce al video un punto finale verso cui interpolare. Il prompt descrive come si muove la scena, e il nodo genera la propria colonna sonora oppure prende una clip audio che guida il movimento.
 

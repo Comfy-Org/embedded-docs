@@ -1,4 +1,4 @@
-# CFGOverride
+# Override CFG
 
 Il nodo CFG Override sovrascrive la scala CFG (Classifier-Free Guidance) impostandola su un valore fisso per un intervallo percentuale (sigma) del processo di campionamento. Quando si utilizzano più nodi CFG Override, l'override più vicino al sampler prevale sugli intervalli sovrapposti.
 

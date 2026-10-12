@@ -1,4 +1,4 @@
-# ConditioningMultiply
+# Conditioning (Moltiplica)
 
 Questo nodo moltiplica i valori di condizionamento per un fattore specificato, consentendo di scalare l'influenza del condizionamento sul processo di generazione. Funziona applicando il moltiplicatore sia al tensore di condizionamento principale che ai valori di output aggregati.
 

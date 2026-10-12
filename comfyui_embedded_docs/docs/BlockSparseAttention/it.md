@@ -1,4 +1,4 @@
-# BlockSparseAttention
+# Attenzione sparsa del modello
 
 Il nodo **Block Sparse Attention** modifica un modello affinché i suoi layer di attenzione si concentrino solo sulle parti più rilevanti dell'input invece che su tutto contemporaneamente, riducendo il lavoro di calcolo necessario per le sequenze lunghe. I risparmi aumentano con la lunghezza della sequenza, poiché le sequenze brevi sono di solito più veloci con l'attenzione normale (densa).
 

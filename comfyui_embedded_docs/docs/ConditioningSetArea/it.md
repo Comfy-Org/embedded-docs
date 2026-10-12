@@ -1,4 +1,4 @@
-# ConditioningSetArea
+# Conditioning (Imposta Area)
 
 Questo nodo è progettato per modificare le informazioni di condizionamento impostando aree specifiche all'interno del contesto di condizionamento. Consente la manipolazione spaziale precisa degli elementi di condizionamento, abilitando regolazioni e miglioramenti mirati in base alle dimensioni e alla forza specificate.
 

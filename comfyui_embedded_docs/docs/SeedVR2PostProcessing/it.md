@@ -1,4 +1,4 @@
-# SeedVR2PostProcessing
+# Post-Elaborazione Output SeedVR2
 
 Questo nodo allinea l'immagine generata con l'immagine originale ridimensionata e applica una correzione del colore opzionale. Prende l'output di un processo di upscaling SeedVR2 e lo adatta per corrispondere ai colori e alle dimensioni dell'immagine di riferimento originale.
 

@@ -1,4 +1,4 @@
-# LatentUpscaleBy
+# Ingrandisci Latent di
 
 Il nodo LatentUpscaleBy è progettato per l'upscaling delle rappresentazioni latenti delle immagini. Consente di regolare il fattore di scala e il metodo di upscaling, offrendo flessibilità nel miglioramento della risoluzione dei campioni latenti.
 

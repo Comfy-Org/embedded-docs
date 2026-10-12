@@ -1,4 +1,4 @@
-# HunyuanRefinerLatent
+# Hunyuan Latent Refiner
 
 Il nodo HunyuanRefinerLatent prepara i dati di condizionamento e latenti per il processo di raffinamento video Hunyuan. Collega i dati dell'immagine latente di input sia al condizionamento positivo sia a quello negativo, applica loro un valore di aumento del rumore e crea un nuovo latente riempito di zeri con 32 canali per ulteriori elaborazioni.
 

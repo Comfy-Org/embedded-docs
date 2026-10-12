@@ -1,4 +1,4 @@
-# RunwayImageToVideoNodeGen4
+# Runway Immagine a Video (Gen4 Turbo)
 
 Il nodo Runway Image to Video (Gen4 Turbo) genera un video da un singolo frame iniziale utilizzando il modello Gen4 Turbo di Runway. Riceve un prompt testuale e un frame immagine iniziale, quindi crea una sequenza video in base alle impostazioni di durata e rapporto d'aspetto fornite. Il nodo gestisce il caricamento del frame iniziale all'API di Runway e restituisce il video generato.
 

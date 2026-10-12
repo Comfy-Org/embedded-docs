@@ -1,4 +1,4 @@
-# GrowMask
+# Grow Mask
 
 Il nodo `GrowMask` è progettato per modificare le dimensioni di una maschera data, espandendola o contraendola, con la possibilità di applicare un effetto affusolato agli angoli. Questa funzionalità è cruciale per regolare dinamicamente i confini delle maschere nelle attività di elaborazione delle immagini, consentendo un controllo più flessibile e preciso sull'area di interesse.
 

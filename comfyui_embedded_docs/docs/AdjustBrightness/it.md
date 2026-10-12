@@ -1,4 +1,4 @@
-# AdjustBrightness
+# Regola Luminosità
 
 Il nodo Adjust Brightness modifica l'aspetto della luminosità di un'immagine. Moltiplica i valori di colore dell'immagine per un `factor` e mantiene i risultati all'interno dell'intervallo valido da 0.0 a 1.0. Un fattore di 1.0 lascia l'immagine invariata, i valori inferiori a 1.0 la rendono più scura e i valori superiori a 1.0 la rendono più luminosa.
 

@@ -1,4 +1,4 @@
-# SaveLatent
+# Salva Latent
 
 SaveLatent salva i tensori latenti su disco come file `.latent`, così possono essere riutilizzati o condivisi in seguito. Riceve campioni latenti, li scrive nella cartella di output con un nome generato automaticamente e può incorporare metadati del workflow, come il prompt, all'interno del file salvato. Gli stessi campioni latenti vengono anche passati invariati per ulteriori elaborazioni.
 

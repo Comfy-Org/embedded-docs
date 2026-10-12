@@ -1,4 +1,4 @@
-# Flux3ImageNode
+# Immagine Flux 3
 
 Flux 3 Image genera un'immagine con FLUX 3 a partire da un prompt, oppure modifica e combina immagini di riferimento. Scrivi ciò che desideri come istruzione, poi collega fino a 10 immagini di riferimento e fai riferimento a esse nel prompt come image 1, image 2 e così via. Il prompt viene interpretato ed espanso prima della generazione, e il risultato viene renderizzato con le proporzioni e la risoluzione scelte.
 

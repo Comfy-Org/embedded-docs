@@ -1,4 +1,4 @@
-# RecraftImageToImageNode
+# Recraft V3 Image to Image
 
 Questo nodo modifica un'immagine esistente in base a un prompt testuale e a un'impostazione di forza (strength). Invia l'immagine all'API Recraft V3 e restituisce una nuova immagine che segue il prompt mantenendosi più o meno simile all'originale, a seconda del valore di strength.
 

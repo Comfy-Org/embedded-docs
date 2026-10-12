@@ -1,4 +1,4 @@
-# ByteDanceSeedreamLayerSeparationNode
+# ByteDance Seedream 5.0 Pro Separazione livelli (legacy)
 
 ByteDance Seedream 5.0 Pro Layer Separation scompone un'immagine in una lastra di sfondo più fino a 16 livelli trasparenti riposizionabili, ciascuno con ordine di sovrapposizione, bounding box, nome e descrizione. Restituisce lo sfondo, le immagini per livello con maschere, i riquadri di posizionamento e uno stack di livelli pronto per la modifica.
 

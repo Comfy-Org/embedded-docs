@@ -1,4 +1,4 @@
-# SaveImageAdvanced
+# Salva Immagine (Avanzato)
 
 Il nodo **Save Image (Advanced)** salva le immagini di input nella directory di output di ComfyUI con controllo avanzato su formato file, profondità di bit e spazio colore. Supporta il salvataggio in file PNG, EXR o AVIF (inclusi AVIF animati) e può incorporare i metadati del workflow nei file salvati.
 

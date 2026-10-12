@@ -1,4 +1,4 @@
-# BriaAddObject
+# Bria Aggiungi oggetto
 
 Questo nodo inserisce in un'immagine un oggetto descritto in testo semplice usando Bria. Bria esegue nuovamente il rendering dell'intero frame a circa 1 megapixel, quindi il risultato non è allineato a livello di pixel con l'input.
 

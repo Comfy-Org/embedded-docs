@@ -1,4 +1,4 @@
-# MergeTextLists
+# Unisci Liste di Testi (DEPRECATO)
 
 Questo nodo unisce più elenchi di testo in un unico elenco combinato. È progettato per ricevere input di testo come elenchi e concatenarli insieme. Il nodo registra il numero totale di testi nell'elenco unito.
 

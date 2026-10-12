@@ -1,4 +1,4 @@
-# MagnificImageUpscalerPreciseV2Node
+# Ingrandimento Immagine Magnific (Preciso V2)
 
 Il nodo Magnific Image Upscale (Precise V2) esegue un upscaling delle immagini ad alta fedeltà con un controllo preciso su nitidezza, grana e miglioramento dei dettagli. Elabora le immagini tramite un'API esterna, supportando una risoluzione massima in output fino a 10060×10060 pixel. Il nodo offre diversi stili di elaborazione e può ridimensionare automaticamente l'input verso il basso se l'output richiesto supererebbe la dimensione massima consentita.
 

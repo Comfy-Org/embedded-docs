@@ -1,4 +1,4 @@
-# Flux3ImageToVideoNode
+# Flux 3 Da Immagine a Video
 
 Flux 3 Image to Video anima da 1 a 10 immagini con FLUX 3. Ogni immagine diventa un fotogramma della clip: un'immagine la apre, due eseguono un morphing dalla prima alla seconda, mentre un numero maggiore di immagini viene distribuito lungo la clip o fissato ai tempi scelti.
 

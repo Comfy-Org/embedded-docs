@@ -1,4 +1,4 @@
-# ByteDanceSeedreamNode
+# ByteDance Seedream 4.5 & 5.0
 
 Il nodo ByteDance Seedream 4.5 & 5.0 offre capacità unificate di generazione da testo a immagine e di modifica precisa tramite una singola frase, fino a una risoluzione di 4K. Può creare nuove immagini da prompt testuali o modificare immagini esistenti usando istruzioni testuali. Il nodo supporta sia la generazione di una singola immagine sia la generazione sequenziale di più immagini correlate.
 

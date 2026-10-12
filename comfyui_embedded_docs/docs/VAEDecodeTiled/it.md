@@ -1,4 +1,4 @@
-# VAEDecodeTiled
+# Decodifica VAE (a blocchi)
 
 Il nodo VAEDecodeTiled decodifica le rappresentazioni latenti in immagini utilizzando un approccio a tile per gestire in modo efficiente immagini di grandi dimensioni. Elabora l'input in tile più piccoli per gestire l'utilizzo della memoria mantenendo la qualità dell'immagine. Il nodo supporta anche i VAE video elaborando frame temporali in blocchi con sovrapposizione per transizioni fluide.
 

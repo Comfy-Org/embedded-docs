@@ -1,4 +1,4 @@
-# SDPoseFaceBBoxes
+# SDPose Riquadri Volti
 
 Il nodo SDPoseFaceBBoxes elabora i dati dei keypoint di posa per rilevare e generare bounding box attorno ai volti umani. Analizza i keypoint 2D del volto per ogni persona in un frame, calcola una bounding box basata su quei punti e può regolare dimensione e forma della box. Le bounding box risultanti sono formattate per essere compatibili con altri nodi del flusso di lavoro SDPose, come SDPoseKeypointExtractor.
 

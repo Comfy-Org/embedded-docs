@@ -1,4 +1,4 @@
-# BriaEraseForeground
+# Bria Cancella primo piano
 
 Questo nodo rimuove il primo piano di un'immagine con Bria e genera un nuovo sfondo al suo posto. Tutto ciò che Bria identifica come primo piano viene rimosso, non solo le persone, e i pixel non modificati vengono preservati. Il risultato viene renderizzato nuovamente a una dimensione standard vicina a 1 megapixel.
 

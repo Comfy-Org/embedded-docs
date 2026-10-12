@@ -1,4 +1,4 @@
-# BatchMasksNode
+# Batch Maschere
 
 Il nodo Batch Masks combina più input maschera individuali in un unico batch. Accetta un numero variabile di input maschera e li restituisce come un singolo tensore di maschera raggruppato in batch, consentendo l'elaborazione in batch delle maschere nei nodi successivi. Se le maschere di input hanno dimensioni diverse, vengono ridimensionate automaticamente per corrispondere alle dimensioni della prima maschera.
 

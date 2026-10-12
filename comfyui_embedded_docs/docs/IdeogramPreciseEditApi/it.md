@@ -1,4 +1,4 @@
-# IdeogramPreciseEditApi
+# Ideogram 4.5 Modifica precisa
 
 Modifica un'immagine guidata da un prompt testuale con la modifica precisa di Ideogram 4.5: cambia solo ciò che il prompt richiede, i pixel non toccati rimangono identici e l'output mantiene la dimensione dell'immagine 1. L'immagine 1 è l'immagine da modificare e fino a 4 ulteriori immagini possono essere collegate come riferimenti.
 

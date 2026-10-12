@@ -1,4 +1,4 @@
-# CreateCameraInfo
+# Crea Info Camera
 
 Il nodo Create Camera Info costruisce una struttura di informazioni della camera per il rendering 3D. Supporta tre modalità per definire la camera: orbita (imbardata/beccheggio/distanza attorno a un target), look_at (posizione esplicita nel mondo) e quaternione (posizione più rotazione). Il sistema di coordinate è destrorso con Y come asse verticale.
 

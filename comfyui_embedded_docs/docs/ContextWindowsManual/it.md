@@ -1,4 +1,4 @@
-# ContextWindowsManual
+# Finestre di contesto (Manuale)
 
 Il nodo Context Windows (Manual) consente di configurare manualmente le finestre di contesto per un modello durante il campionamento, creando segmenti di contesto sovrapposti con lunghezza, sovrapposizione e schema di pianificazione specificati, in modo che i dati vengano elaborati in blocchi gestibili mantenendo la continuità tra i segmenti. Offre opzioni avanzate per controllare come vengono applicate le finestre di contesto, tra cui shuffling del rumore, conservazione del conditioning e correzioni delle finestre causali. Questo nodo è sperimentale.
 

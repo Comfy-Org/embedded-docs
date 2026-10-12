@@ -1,4 +1,4 @@
-# MarigoldV2PostProcess
+# Post-elaborazione Marigold V2
 
 Questo nodo converte una previsione Marigold V2 decodificata in un'immagine visualizzabile. Prende il tensore di previsione grezzo e lo formatta in base al tipo di previsione: profondità normalizzata (gli oggetti vicini appaiono luminosi), normali di superficie a lunghezza unitaria oppure albedo sRGB.
 

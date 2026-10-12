@@ -1,4 +1,4 @@
-# GrokVideoReferenceNode
+# Grok Reference-to-Video
 
 Il nodo Grok Reference-to-Video genera un video da un prompt testuale, utilizzando fino a sette immagini di riferimento per guidare lo stile e il contenuto dell'output. Con il modello `grok-imagine-video-1.5`, puoi anche allegare fino a tre riferimenti vocali preimpostati e fare riferimento a immagini e voci direttamente nel prompt usando i tag `@ImageN` e `@AudioN`. Il nodo invia la richiesta a un'API esterna, attende il completamento della generazione e scarica il video risultante.
 

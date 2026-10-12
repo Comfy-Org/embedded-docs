@@ -1,4 +1,4 @@
-# Save3DAdvanced
+# Salva 3D (Avanzato)
 
 Salva un modello 3D in un file nella directory di output di ComfyUI e genera un'anteprima della scena salvata. Passa inoltre il modello 3D, il suo posizionamento nella scena, le informazioni sulla camera e le dimensioni del viewport ai nodi a valle. Quando il posizionamento del modello o le informazioni sulla camera non sono collegati, il nodo usa i valori memorizzati nello stato del viewport.
 

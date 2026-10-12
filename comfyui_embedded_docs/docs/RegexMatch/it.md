@@ -1,4 +1,4 @@
-# RegexMatch
+# Confronta Testo
 
 Il nodo RegexMatch verifica se una stringa di testo contiene una corrispondenza per un determinato pattern di espressione regolare. Cerca nella stringa di input e restituisce un semplice risultato sì/no che indica se il pattern è stato trovato in qualsiasi punto del testo. Puoi modificare il funzionamento della ricerca abilitando opzioni come la corrispondenza senza distinzione tra maiuscole e minuscole o la modalità multilinea.
 

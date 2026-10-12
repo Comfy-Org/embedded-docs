@@ -1,4 +1,4 @@
-# ConditioningSetAreaPercentageVideo
+# Conditioning (Imposta Area in Percentuale per Video)
 
 Il nodo ConditioningSetAreaPercentageVideo modifica i dati di conditioning definendo un'area specifica e una regione temporale per la generazione video. Utilizza valori percentuali relativi alle dimensioni complessive per impostare la posizione, le dimensioni e la durata dell'area in cui viene applicato il conditioning. Questo è utile per concentrare la generazione su parti specifiche di una sequenza video.
 

@@ -1,4 +1,4 @@
-# StyleModelApply
+# Applica modello di stile
 
 Questo nodo applica un modello di stile a un condizionamento fornito, migliorandone o alterandone lo stile in base all'output di un modello CLIP vision. Integra il condizionamento del modello di stile nel condizionamento esistente, consentendo una fusione uniforme degli stili nel processo di generazione.
 

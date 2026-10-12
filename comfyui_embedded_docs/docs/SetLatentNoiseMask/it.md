@@ -1,4 +1,4 @@
-# SetLatentNoiseMask
+# Imposta Maschera di Rumore Latente
 
 Questo nodo è progettato per applicare una maschera di rumore a un insieme di campioni latenti. Modifica i campioni di input integrando una maschera specificata, alterandone così le caratteristiche di rumore.
 

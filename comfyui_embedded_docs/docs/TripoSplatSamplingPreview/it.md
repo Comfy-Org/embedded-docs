@@ -1,4 +1,4 @@
-# TripoSplatSamplingPreview
+# TripoSplat Sampling Preview
 
 Questo nodo applica una patch a un modello TripoSplat in modo che, quando viene utilizzato con il nodo KSampler standard, mostri un'anteprima in tempo reale della gaussian splat decodificata a ogni passo di campionamento. Funziona avvolgendo la callback del sampler per decodificare l'output del modello in un'immagine di anteprima dopo ogni passo.
 

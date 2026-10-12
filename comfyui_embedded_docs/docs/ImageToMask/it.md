@@ -1,4 +1,4 @@
-# ImageToMask
+# Converti Immagine in Maschera
 
 Il nodo ImageToMask è progettato per convertire un'immagine in una maschera in base a un canale di colore specificato. Consente l'estrazione di livelli di maschera corrispondenti ai canali rosso, verde, blu o alpha di un'immagine, facilitando operazioni che richiedono mascheramento o elaborazione specifici per canale.
 

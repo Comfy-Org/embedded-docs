@@ -1,4 +1,4 @@
-# BriaReplaceImageBackground
+# Bria Sostituisci sfondo immagine
 
 Questo nodo sostituisce lo sfondo di un'immagine con uno nuovo generato da Bria. Il nuovo sfondo può essere descritto con un prompt testuale oppure guidato da immagini di riferimento. I pixel del soggetto vengono preservati mentre lo sfondo viene generato attorno ad essi.
 

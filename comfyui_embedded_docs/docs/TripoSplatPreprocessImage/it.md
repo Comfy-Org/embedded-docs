@@ -1,4 +1,4 @@
-# TripoSplatPreprocessImage
+# TripoSplat Preprocess Image
 
 Questo nodo ritaglia ciascuna immagine di input in un quadrato centrato su sfondo nero e aggiunge padding per raggiungere la dimensione di output specificata. È progettato per preparare le immagini al modello 3D TripoSplat garantendo un'inquadratura quadrata coerente e un'erosione opzionale del matte alpha per prevenire artefatti ai bordi.
 

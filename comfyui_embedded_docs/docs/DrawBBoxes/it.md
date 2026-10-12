@@ -1,4 +1,4 @@
-# DrawBBoxes
+# Disegna BBoxes
 
 Il nodo DrawBBoxes visualizza i risultati del rilevamento degli oggetti disegnando bounding box, etichette e punteggi di confidenza su un'immagine. Se non viene fornita un'immagine di input, crea una tela vuota sufficientemente grande da contenere tutte le bounding box disegnate. Supporta l'elaborazione in batch, consentendo di disegnare insiemi diversi di rilevamenti per più immagini o di ripetere gli stessi rilevamenti su un batch.
 

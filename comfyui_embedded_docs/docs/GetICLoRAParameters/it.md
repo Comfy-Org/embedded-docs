@@ -1,4 +1,4 @@
-# GetICLoRAParameters
+# Ottieni Parametri IC-LoRA
 
 Questo nodo legge i metadati da un modello caricato con LoRA per estrarre i parametri IC-LoRA, come il fattore di downscale di riferimento. Restituisce questi parametri come un oggetto strutturato che può essere collegato al nodo LTXVAddGuide quando un LoRA richiede una gestione speciale delle guide.
 

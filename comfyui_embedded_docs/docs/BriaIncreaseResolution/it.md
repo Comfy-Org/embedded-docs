@@ -1,4 +1,4 @@
-# BriaIncreaseResolution
+# Bria Aumenta risoluzione
 
 Bria Increase Resolution esegue l'upscaling di un'immagine di input di 2x o 4x usando il servizio di upscaling immagini di Bria, preservando il contenuto originale. Il nodo carica l'immagine, la invia per l'elaborazione al servizio Bria, attende il risultato e restituisce l'immagine sottoposta a upscaling.
 

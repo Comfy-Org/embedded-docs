@@ -1,4 +1,4 @@
-# ModelSave
+# Salva Modello
 
 Il nodo ModelSave salva un MODEL nell'archiviazione del computer come file di checkpoint `.safetensors`. Scrive il file nella directory di output di ComfyUI usando il prefisso del nome file fornito e incorpora le informazioni del prompt del workflow e i metadati del modello nel file salvato, quando disponibili.
 

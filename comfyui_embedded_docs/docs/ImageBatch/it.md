@@ -1,4 +1,4 @@
-# ImageBatch
+# Batch Immagini (DEPRECATO)
 
 Il nodo `ImageBatch` è progettato per combinare due immagini in un unico batch. Se le dimensioni delle immagini non corrispondono, ridimensiona automaticamente la seconda immagine per adattarla alle dimensioni della prima prima di combinarle.
 

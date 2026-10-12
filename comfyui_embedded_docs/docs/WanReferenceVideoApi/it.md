@@ -1,4 +1,4 @@
-# WanReferenceVideoApi
+# Wan Reference to Video
 
 Il nodo Wan Reference to Video utilizza l'aspetto visivo e la voce di uno o più video di riferimento in input, insieme a un prompt testuale, per generare un nuovo video. Mantiene la coerenza con i personaggi del materiale di riferimento mentre crea nuovi contenuti in base alla tua descrizione.
 

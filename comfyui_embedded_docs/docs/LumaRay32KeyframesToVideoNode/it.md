@@ -1,4 +1,4 @@
-# LumaRay32KeyframesToVideoNode
+# Luma Ray 3.2 Keyframes to Video
 
 Questo nodo genera un video che interpola attraverso una sequenza di immagini guida, ciascuna ancorata a una posizione specifica sulla timeline, utilizzando Luma Ray 3.2. Costruisci la sequenza di keyframe utilizzando i nodi Luma Ray 3.2 Keyframe, collegando almeno 2 keyframe per definire l'animazione.
 

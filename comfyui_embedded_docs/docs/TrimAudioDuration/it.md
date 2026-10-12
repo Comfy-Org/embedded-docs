@@ -1,4 +1,4 @@
-# TrimAudioDuration
+# Taglia Durata Audio
 
 Il nodo TrimAudioDuration consente di ritagliare un segmento temporale specifico da un file audio. È possibile specificare quando iniziare il ritaglio e quanto deve durare il clip audio risultante. Il nodo funziona convertendo i valori temporali in posizioni dei frame audio ed estraendo la porzione corrispondente della forma d'onda audio.
 

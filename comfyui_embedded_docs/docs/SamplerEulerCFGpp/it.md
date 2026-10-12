@@ -1,4 +1,4 @@
-# SamplerEulerCFGpp
+# SamplerEulerCFG++
 
 Il nodo SamplerEulerCFGpp fornisce un metodo di campionamento Euler CFG++ per generare output. Questo nodo offre due diverse versioni di implementazione del campionatore Euler CFG++ selezionabili in base alle preferenze dell'utente.
 

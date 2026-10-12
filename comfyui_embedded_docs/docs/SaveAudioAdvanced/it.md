@@ -1,4 +1,4 @@
-# SaveAudioAdvanced
+# Salva Audio (Avanzato)
 
 Salva l'audio di input nella directory di output di ComfyUI. Questo nodo consente di esportare l'audio in vari formati, tra cui FLAC, MP3 e Opus, con impostazioni di qualità configurabili.
 

@@ -1,4 +1,4 @@
-# ShuffleVideoTextDataset
+# Mescola Coppie Video-Testo
 
 Questo nodo mescola casualmente l'ordine delle coppie video-testo in un elenco, mantenendo ogni video abbinato al testo corrispondente. Prende due elenchi di uguale lunghezza e applica a entrambi la stessa permutazione casuale, garantendo che gli abbinamenti originali siano preservati dopo il mescolamento. Un valore di seed controlla l'ordine di mescolamento, così i risultati possono essere riprodotti.
 

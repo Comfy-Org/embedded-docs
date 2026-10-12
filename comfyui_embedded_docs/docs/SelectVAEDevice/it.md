@@ -1,4 +1,4 @@
-# SelectVAEDevice
+# Seleziona Dispositivo VAE
 
 ## Panoramica
 

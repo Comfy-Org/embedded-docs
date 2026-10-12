@@ -1,4 +1,4 @@
-# RenderUVAtlas
+# Renderizza atlante UV
 
 Renderizza il layout UV di una mesh come immagine. Ogni regione UV connessa (chart) viene riempita con un colore distinto, e i bordi di confine del chart sono delineati in nero su uno sfondo grigio scuro.
 

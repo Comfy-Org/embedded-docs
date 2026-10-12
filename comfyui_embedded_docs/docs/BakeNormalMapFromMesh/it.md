@@ -1,4 +1,4 @@
-# BakeNormalMapFromMesh
+# Baking della normal map dalla mesh
 
 Questo nodo esegue il baking di una normal map in spazio tangente da una mesh high-poly sul layout UV di una mesh low-poly, catturando il dettaglio di superficie perso durante la decimazione. Collega la mesh low-poly con UV unwrap e la mesh high-poly da cui deriva, e il nodo restituisce in output un'immagine pronta per l'input `normal_map` di Apply Texture To Mesh.
 

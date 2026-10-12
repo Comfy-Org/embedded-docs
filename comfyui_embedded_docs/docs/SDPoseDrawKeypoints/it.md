@@ -1,4 +1,4 @@
-# SDPoseDrawKeypoints
+# SDPose Disegna Keypoints
 
 Il nodo SDPoseDrawKeypoints riceve in input dati di stima della posa (keypoint) e li disegna come uno scheletro visivo su una tela vuota. Consente di disegnare selettivamente diverse parti della posa, come corpo, testa, mani, viso e piedi, con larghezze delle linee e dimensioni dei punti personalizzabili. L'immagine risultante può essere utilizzata per la visualizzazione o come input per altri nodi che richiedono un'immagine della posa.
 

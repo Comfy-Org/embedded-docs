@@ -1,4 +1,4 @@
-# ComfySwitchNode
+# Interruttore If/Else
 
 Il nodo If/Else Switch seleziona tra due possibili input in base a una condizione booleana. Quando `switch` è abilitato (true), passa l'input `on_true` all'output; quando è disabilitato (false), passa `on_false`. Gli input sono lazy, quindi viene valutato solo il ramo selezionato e l'altro input non deve essere connesso.
 

@@ -1,4 +1,4 @@
-# ResolutionSelector
+# Selettore di Risoluzione
 
 Il nodo Resolution Selector calcola la larghezza e l'altezza in pixel in base a un rapporto d'aspetto scelto e a una risoluzione totale target in megapixel. È utile per generare dimensioni coerenti per altri nodi, come il nodo Empty Latent Image.
 

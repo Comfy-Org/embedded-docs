@@ -1,4 +1,4 @@
-# GetMeshInfo
+# Ottieni informazioni sulla mesh
 
 Get Mesh Info riporta il numero di vertici e facce in una mesh, insieme agli attributi che contiene (come UV, colori dei vertici, normali e texture). Il report viene visualizzato sul nodo e restituito come output testuale, mentre la mesh stessa passa attraverso il nodo senza modifiche.
 

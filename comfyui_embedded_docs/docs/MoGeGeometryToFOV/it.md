@@ -1,4 +1,4 @@
-# MoGeGeometryToFOV
+# Ottieni FoV dalla geometria MoGe
 
 Questo nodo deriva il campo visivo e la lunghezza focale dai parametri intrinseci della fotocamera memorizzati in un oggetto geometria MoGe. Può restituire il FOV verticale, orizzontale o diagonale, in gradi o radianti. L'output FOV verticale può essere usato, ad esempio, per alimentare il nodo SAM3DBody_Predict.
 

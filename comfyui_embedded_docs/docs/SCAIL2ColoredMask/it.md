@@ -1,4 +1,4 @@
-# SCAIL2ColoredMask
+# Crea Maschera Colorata SCAIL-2
 
 Questo nodo renderizza i dati di tracking SAM3 in maschere colorate che vengono utilizzate dal nodo WanSCAILToVideo. Elabora i dati di tracking da un video della posa di guida e opzionalmente un'immagine di riferimento, assegnando colori coerenti a ciascuna persona tracciata in entrambi gli output.
 

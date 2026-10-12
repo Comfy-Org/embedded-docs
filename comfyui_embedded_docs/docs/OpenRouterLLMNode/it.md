@@ -1,4 +1,4 @@
-# OpenRouterLLMNode
+# OpenRouter LLM
 
 Il nodo OpenRouter LLM invia un prompt testuale a un insieme curato di modelli linguistici popolari disponibili tramite il servizio OpenRouter e restituisce la risposta testuale generata. Supporta modelli di Anthropic (Claude), OpenAI (GPT), Google (Gemini), xAI (Grok), DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) e Perplexity Sonar, e può includere facoltativamente immagini o video come input di riferimento nella richiesta.
 

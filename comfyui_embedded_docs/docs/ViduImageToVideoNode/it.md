@@ -1,4 +1,4 @@
-# ViduImageToVideoNode
+# Vidu Generazione Immagine-a-Video
 
 Il nodo Vidu Image To Video Generation crea un breve video a partire da un'immagine iniziale e da una descrizione testuale opzionale. Utilizza un modello AI per generare contenuto video che continua dal frame immagine fornito e restituisce il video risultante.
 

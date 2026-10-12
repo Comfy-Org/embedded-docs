@@ -1,4 +1,4 @@
-# CFGGuider
+# CFG Guider
 
 Il nodo CFG Guider crea un sistema di guida per controllare il processo di campionamento nella generazione di immagini. Riceve in input un modello insieme a input di condizionamento positivo e negativo, quindi applica una scala di guida classifier-free per indirizzare la generazione verso il contenuto desiderato evitando elementi indesiderati. Questo nodo restituisce in output un oggetto guider che può essere utilizzato dai nodi di campionamento per controllare la direzione della generazione dell'immagine.
 

@@ -1,4 +1,4 @@
-# EmptyCosmosLatentVideo
+# Video latent Cosmos vuoto
 
 EmptyCosmosLatentVideo crea un tensore video latente vuoto con le dimensioni specificate. Genera una rappresentazione latente riempita di zeri che può essere utilizzata come punto di partenza per flussi di lavoro di generazione video, con parametri configurabili `width`, `height`, `length` e `batch_size`.
 

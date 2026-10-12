@@ -1,4 +1,4 @@
-# StringFormat
+# Formatta Testo
 
 ## Panoramica
 

@@ -1,4 +1,4 @@
-# AddLayer
+# Aggiungi livello
 
 Il nodo Add Layer trasforma un'immagine di input in un livello e la posiziona su un canvas, iniziando un nuovo stack di livelli o aggiungendola a uno esistente. Puoi impostare il nome del livello, la posizione, la dimensione, la rotazione, l'opacità, la modalità di fusione, l'ordine di impilamento e il capovolgimento orizzontale o verticale. Questo nodo è contrassegnato come sperimentale.
 

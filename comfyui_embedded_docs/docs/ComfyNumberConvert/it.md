@@ -1,4 +1,4 @@
-# ComfyNumberConvert
+# Converti Numero
 
 Il nodo Number Convert trasforma vari tipi di dati di input in valori numerici. Accetta un singolo input di tipo intero, float, stringa o booleano e produce due output: un numero in virgola mobile e un intero. Questo è utile per convertire testo o valori logici in un formato utilizzabile da altri nodi matematici o di elaborazione nel flusso di lavoro.
 

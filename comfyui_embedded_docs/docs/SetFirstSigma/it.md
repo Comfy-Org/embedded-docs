@@ -1,4 +1,4 @@
-# SetFirstSigma
+# Imposta Primo Sigma
 
 Il nodo SetFirstSigma modifica una sequenza di sigma sostituendo solo il suo primo valore con un valore sigma personalizzato. Prende in input una sequenza di sigma esistente e un nuovo valore sigma, quindi restituisce una nuova sequenza di sigma in cui tutti i valori tranne il primo rimangono invariati.
 

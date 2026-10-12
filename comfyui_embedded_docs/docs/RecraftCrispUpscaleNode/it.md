@@ -1,4 +1,4 @@
-# RecraftCrispUpscaleNode
+# Recraft Crisp Upscale Image
 
 Questo nodo esegue l'upscaling di un'immagine in modo sincrono utilizzando lo strumento "crisp upscale". Migliora una data immagine raster aumentandone la risoluzione, rendendo l'immagine più nitida e pulita. Quando viene fornito un batch di immagini, ogni immagine viene elaborata indipendentemente e i risultati ottenuti dall'upscaling vengono restituiti come batch.
 

@@ -1,4 +1,4 @@
-# ConditioningAverage
+# Conditioning (Media)
 
 Il nodo `ConditioningAverage` viene utilizzato per fondere due diversi set di conditioning (come prompt testuali) in base a un peso specificato, generando un nuovo vettore di conditioning intermedio tra i due. Regolando il parametro del peso, è possibile controllare in modo flessibile l'influenza di ciascun conditioning sul risultato finale. È particolarmente adatto per l'interpolazione dei prompt, la fusione di stili e altri casi d'uso avanzati.
 

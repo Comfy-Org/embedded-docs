@@ -1,4 +1,4 @@
-# CreateHookKeyframesFromFloats
+# Crea Keyframe Hook da Float
 
 Questo nodo crea keyframe hook da un elenco di valori di forza in virgola mobile, distribuendoli uniformemente tra le percentuali di inizio e fine specificate. Genera una sequenza di keyframe in cui a ogni valore di forza è assegnata una posizione percentuale specifica nella timeline dell'animazione. Il nodo può creare un nuovo gruppo di keyframe oppure aggiungerli a uno esistente, con un'opzione per stampare i keyframe generati a scopo di debug.
 

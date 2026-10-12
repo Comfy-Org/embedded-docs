@@ -1,4 +1,4 @@
-# Trellis2UpsampleStage
+# Fase di upsample Trellis2
 
 Questo nodo esegue l'upscaling di un latent della forma a risoluzione 512 in coordinate sparse ad alta risoluzione e prepara il secondo passaggio di campionamento della fase della forma alla risoluzione target. Collega metadati per fase al condizionamento, così che il modello possa utilizzarli durante la generazione.
 

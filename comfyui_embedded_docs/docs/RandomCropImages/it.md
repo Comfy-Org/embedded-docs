@@ -1,4 +1,4 @@
-# RandomCropImages
+# Ritaglia Immagine (Casuale)
 
 Il nodo Random Crop Images seleziona casualmente una sezione rettangolare da ogni immagine di input e la ritaglia a una larghezza e un'altezza specificate. Questo è comunemente utilizzato per il data augmentation per creare varianti delle immagini di addestramento. La posizione casuale del ritaglio è determinata da un valore di seed, garantendo che lo stesso ritaglio possa essere riprodotto.
 

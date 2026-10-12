@@ -1,4 +1,4 @@
-# EndLoop
+# Fine ciclo
 
 End Loop contrassegna la fine di un blocco loop. Raccoglie il valore prodotto dall'ultimo nodo nel corpo del ciclo e restituisce solo l'iterazione finale oppure ogni iterazione, a seconda dell'impostazione `accumulate`, passando inoltre un valore a Start Loop in modo che possa iniziare l'iterazione successiva.
 

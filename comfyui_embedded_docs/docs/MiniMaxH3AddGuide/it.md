@@ -1,4 +1,4 @@
-# MiniMaxH3AddGuide
+# Aggiungi guida per MiniMax H3
 
 Questo nodo ancora un'immagine, una breve clip, un audio o una clip con la sua traccia audio in qualsiasi frame di un video MiniMax H3. Aggiunge un keyframe guida al conditioning all'indice di frame scelto, e puoi concatenare diversi di questi nodi per ancorare più frame nello stesso video.
 

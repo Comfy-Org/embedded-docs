@@ -1,4 +1,4 @@
-# TextGenerate
+# Genera Testo
 
 Il nodo TextGenerate usa un modello CLIP per creare testo basato sul prompt dell'utente. Può facoltativamente usare immagini, video o audio come contesto aggiuntivo per guidare la generazione del testo. Puoi controllare la lunghezza dell'output, abilitare una modalità thinking per i modelli supportati e scegliere se usare il campionamento casuale con varie impostazioni oppure generare testo senza campionamento.
 

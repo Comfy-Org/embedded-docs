@@ -1,4 +1,4 @@
-# LTXVDualCFGGuider
+# LTXV Dual CFG Guider
 
 Questo nodo crea un oggetto di campionamento guidato (CFG guider) per i modelli LTXV-AV. Applica una scala di guida separata alla parte video e alla parte audio di un latent LTXV-AV packed, consentendoti di controllare l'influenza del condizionamento su ciascuna modalità in modo indipendente. Se le due scale sono uguali, o se il latent non contiene componenti video e audio separati, viene invece usata un'unica scala complessiva.
 

@@ -1,4 +1,4 @@
-# VideoFrameSample
+# Campiona Frame Video
 
 Il nodo `VideoFrameSample` estrae un numero fisso di fotogrammi da un video utilizzando una delle quattro strategie. Per le strategie contigue "head" e "tail", l'output è un riferimento video lazy (i fotogrammi non vengono decodificati); per le strategie non contigue "uniform" e "random", vengono decodificati solo i fotogrammi selezionati.
 

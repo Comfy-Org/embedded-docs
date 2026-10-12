@@ -1,4 +1,4 @@
-# Trellis2TextureStage
+# Fase texture Trellis2
 
 Questo nodo imposta il passaggio di campionamento dello stadio texture per la generazione Trellis2. Legge il layout delle coordinate e il latent della forma per voxel dal latent della forma in ingresso, costruisce un latent sparso vuoto con 32 canali sullo stesso layout delle coordinate e allega i metadati richiesti dello stadio texture al condizionamento.
 

@@ -1,4 +1,4 @@
-# ImagePadForOutpaint
+# Aggiungi Margini per Outpainting
 
 Questo nodo è progettato per preparare le immagini al processo di outpainting aggiungendo padding attorno a esse. Regola le dimensioni dell'immagine per garantirne la compatibilità con gli algoritmi di outpainting, facilitando la generazione di aree estese oltre i confini originali.
 

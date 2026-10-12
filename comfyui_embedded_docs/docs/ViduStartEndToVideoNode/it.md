@@ -1,4 +1,4 @@
-# ViduStartEndToVideoNode
+# Generazione Video da Inizio e Fine Vidu
 
 Il nodo Vidu Start End To Video Generation crea un video generando frame tra un frame iniziale e un frame finale. Utilizza un prompt testuale per guidare il processo di generazione del video e supporta vari modelli video con impostazioni di risoluzione e movimento diverse. Il nodo verifica che i frame iniziale e finale abbiano rapporti d'aspetto compatibili prima dell'elaborazione.
 

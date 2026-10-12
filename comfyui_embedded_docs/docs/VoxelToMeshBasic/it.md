@@ -1,4 +1,4 @@
-# VoxelToMeshBasic
+# Voxel to Mesh (Basic) (DEPRECATO)
 
 Il nodo VoxelToMeshBasic converte i dati voxel 3D in geometria mesh. Elabora i volumi voxel applicando un valore di soglia per determinare quali parti del volume diventano superfici solide nella mesh risultante. Il nodo restituisce una struttura mesh completa con vertici e facce utilizzabile per il rendering e la modellazione 3D.
 

@@ -1,4 +1,4 @@
-# MagnificImageSkinEnhancerNode
+# Magnific Image Skin Enhancer
 
 Il nodo Magnific Image Skin Enhancer applica un'elaborazione AI specializzata alle immagini di ritratto per migliorare l'aspetto della pelle. Offre tre modalità distinte per diversi obiettivi di miglioramento: creative per effetti artistici, faithful per preservare l'aspetto originale e flexible per miglioramenti mirati come illuminazione o realismo. Il nodo carica l'immagine su un'API esterna per l'elaborazione e restituisce il risultato migliorato.
 

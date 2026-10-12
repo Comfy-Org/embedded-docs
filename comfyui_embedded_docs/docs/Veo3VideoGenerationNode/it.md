@@ -1,4 +1,4 @@
-# Veo3VideoGenerationNode
+# Google Veo 3 Generazione Video
 
 Genera video da prompt testuali usando l'API Veo 3 di Google. Questo nodo supporta più modelli Veo 3, incluse le varianti fast e lite, e consente di specificare risoluzione video, durata e generazione audio.
 

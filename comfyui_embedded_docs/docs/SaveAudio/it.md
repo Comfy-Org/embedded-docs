@@ -1,4 +1,4 @@
-# SaveAudio
+# Salva Audio (FLAC) (DEPRECATO)
 
 Questo nodo salva i dati audio in un file in formato FLAC. Prende un input audio e lo scrive nella directory di output utilizzando il prefisso del nome file specificato, inoltre passa l'audio al suo output. Questo nodo è deprecato e dovrebbe essere sostituito con il nodo Save Audio attuale.
 

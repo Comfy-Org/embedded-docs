@@ -1,4 +1,4 @@
-# LoadVideoDataSetFromFolder
+# Carica Video (da Cartella)
 
 Carica un dataset di video da una cartella selezionata all'interno della directory di input di ComfyUI e li restituisce come un elenco di riferimenti video lazy. Questo nodo carica un dataset di video: i frame vengono decodificati solo quando un altro nodo ne ha effettivamente bisogno. I formati supportati sono MP4, AVI, MOV, WEBM, MKV e FLV.
 

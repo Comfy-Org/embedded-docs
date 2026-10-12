@@ -1,4 +1,4 @@
-# NAGuidance
+# Guida Attenzione Normalizzata
 
 Il nodo NAGuidance applica la Normalized Attention Guidance a un modello. Questa tecnica consente di usare prompt negativi con modelli distillati o schnell modificando il meccanismo di attenzione del modello durante il processo di campionamento, per indirizzare la generazione lontano da concetti indesiderati.
 

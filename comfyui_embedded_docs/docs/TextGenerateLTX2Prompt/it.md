@@ -1,4 +1,4 @@
-# TextGenerateLTX2Prompt
+# Genera Prompt LTX2
 
 Il nodo TextGenerateLTX2Prompt espande un breve prompt utente in una descrizione audiovisiva dettagliata adatta a generare video con la serie LTX-2 di modelli video. Aggiunge automaticamente istruzioni di sistema specifiche per l'attività, invia il prompt formattato a un modello linguistico e restituisce il testo migliorato. Quando viene fornita un'immagine di riferimento opzionale, il nodo passa alla modalità da immagine a video ed espande il prompt partendo dal contenuto di quell'immagine.
 

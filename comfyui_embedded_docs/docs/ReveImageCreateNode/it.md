@@ -1,4 +1,4 @@
-# ReveImageCreateNode
+# Crea Immagine Reve
 
 Il nodo Reve Image Create genera immagini da una descrizione testuale utilizzando il modello Reve AI. Invia il prompt all'API di Reve e restituisce l'immagine risultante, con post-elaborazione opzionale per l'upscaling e la rimozione dello sfondo. Questo nodo è deprecato.
 

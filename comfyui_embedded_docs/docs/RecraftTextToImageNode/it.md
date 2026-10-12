@@ -1,4 +1,4 @@
-# RecraftTextToImageNode
+# Recraft V3 Da Testo a Immagine
 
 Genera immagini in modo sincrono in base al prompt e alla risoluzione. Questo nodo si connette all'API Recraft per creare immagini da descrizioni testuali con dimensioni specificate e parametri opzionali di stile e controllo.
 

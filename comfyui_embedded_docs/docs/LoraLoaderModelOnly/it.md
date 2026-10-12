@@ -1,4 +1,4 @@
-# LoraLoaderModelOnly
+# Carica LoRA
 
 Questo nodo rileva i modelli presenti nella cartella `ComfyUI/models/loras` e legge anche i modelli dai percorsi aggiuntivi configurati nel file extra_model_paths.yaml. A volte potrebbe essere necessario **aggiornare l'interfaccia di ComfyUI** affinché legga i file dei modelli dalla cartella corrispondente.
 

@@ -1,4 +1,4 @@
-# FluxVTONode
+# Flux Virtual Try-On
 
 Questo nodo esegue un virtual try-on vestendo una persona con un'immagine del capo fornita. Invia le immagini della persona e del capo al servizio BFL Flux VTO, che genera un'immagine realistica della persona che indossa il capo. Un'istruzione testuale opzionale può descrivere come il capo dovrebbe calzare o apparire.
 

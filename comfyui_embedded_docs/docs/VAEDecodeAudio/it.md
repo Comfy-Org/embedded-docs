@@ -1,4 +1,4 @@
-# VAEDecodeAudio
+# Decodifica audio VAE
 
 Questo nodo converte una rappresentazione latente audio in una forma d'onda audio riproducibile utilizzando un autoencoder variazionale (VAE). Prende i campioni codificati, li decodifica tramite il VAE selezionato e poi normalizza la forma d'onda risultante in modo che il livello di volume complessivo rimanga coerente. L'audio in output utilizza la frequenza di campionamento audio del VAE (44100 Hz per impostazione predefinita), oppure la frequenza di campionamento memorizzata nei campioni di input quando presente.
 

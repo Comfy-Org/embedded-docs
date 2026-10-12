@@ -1,4 +1,4 @@
-# Vidu2ReferenceVideoNode
+# Vidu2 Generazione da Riferimento a Video
 
 Il nodo Vidu2 Reference-to-Video Generation crea un video da un prompt testuale e più immagini di riferimento. Puoi definire fino a sette soggetti, ciascuno con il proprio insieme di immagini di riferimento, e fare riferimento a essi nel prompt usando `@subject{subject_id}`. Il nodo genera un video con durata, proporzioni e movimento configurabili.
 

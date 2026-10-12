@@ -1,4 +1,4 @@
-# AddTextPrefix
+# Aggiungi Prefisso Testo (DEPRECATO)
 
 Il nodo Add Text Prefix modifica il testo aggiungendo una stringa specificata all'inizio di ogni testo di input. Riceve in input il testo e un prefisso, quindi restituisce il risultato combinato.
 

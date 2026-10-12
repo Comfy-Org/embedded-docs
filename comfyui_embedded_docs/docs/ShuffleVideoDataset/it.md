@@ -1,4 +1,4 @@
-# ShuffleVideoDataset
+# Mescola Elenco Video
 
 Questo nodo prende un elenco di video e li riordina casualmente. Utilizza un seed casuale per rendere il mescolamento riproducibile, così lo stesso seed produce sempre lo stesso ordine di output.
 

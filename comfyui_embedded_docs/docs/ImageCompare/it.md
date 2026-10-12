@@ -1,4 +1,4 @@
-# ImageCompare
+# Confronta Immagini
 
 ## Panoramica
 

@@ -1,4 +1,4 @@
-# ImageHistogram
+# Istogramma immagine
 
 Il nodo ImageHistogram analizza la distribuzione cromatica di un'immagine in input. Calcola e restituisce diversi istogrammi, ovvero grafici che mostrano quanti pixel dell'immagine hanno ciascun possibile valore di intensità. Genera istogrammi separati per i canali di colore rosso, verde e blu, un istogramma RGB composito e un istogramma di luminanza basato su una formula standard di luminosità. Ogni istogramma contiene 256 bin, che coprono livelli di intensità da 0 a 255.
 

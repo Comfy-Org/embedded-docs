@@ -1,4 +1,4 @@
-# MergeSplat
+# Unisci Splats
 
 Il nodo Merge Splats combina più modelli di splat gaussiani in un unico splat concatenandone i dati. È utile per unire diverse decodifiche dello stesso latente generate con seed diversi, il che può densificare la superficie e migliorare la qualità durante la creazione di mesh 3D.
 

@@ -1,4 +1,4 @@
-# ReplaceText
+# Sostituisci Testo (DEPRECATO)
 
 Il nodo Replace Text esegue una semplice sostituzione di testo. Cerca una specifica porzione di testo all'interno dell'input e sostituisce ogni occorrenza con una nuova porzione di testo. L'operazione viene applicata a tutti gli input di testo forniti al nodo.
 

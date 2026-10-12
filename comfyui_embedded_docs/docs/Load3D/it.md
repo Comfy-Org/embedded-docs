@@ -1,4 +1,4 @@
-# Load3D
+# Carica 3D & Animazione
 
 Il nodo Load3D è un nodo principale per il caricamento e l'elaborazione di file di modelli 3D. Quando si carica il nodo, recupera automaticamente le risorse 3D disponibili da `ComfyUI/input/3d/`. È inoltre possibile caricare file 3D supportati per l'anteprima utilizzando la funzione di caricamento.
 

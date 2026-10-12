@@ -1,4 +1,4 @@
-# SAM3DBody_FaceExpression
+# Espressione facciale per corpo SAM3D
 
 Questo nodo aggiunge espressioni facciali a un corpo SAM3D rilevando i volti in un'immagine con il MediaPipe Face Landmarker, associando ciascun volto rilevato a una persona tracciata e mappando i 52 blendshape ARKit sui parametri di espressione a 72 assi di MHR. Poi riesegue il modello del corpo in modo che i vertici della mesh e i keypoint di output riflettano la nuova espressione.
 

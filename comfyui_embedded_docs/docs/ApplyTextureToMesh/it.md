@@ -1,4 +1,4 @@
-# ApplyTextureToMesh
+# Applica texture alla mesh
 
 Questo nodo collega le immagini delle texture precalcolate al layout UV di una mesh, in modo che possano essere esportate insieme alla mesh dal nodo SaveGLB. Fornisci la stessa mesh con UV srotolate da cui hai precalcolato le texture, insieme alle mappe immagine precalcolate. Le mappe opzionali metallic, roughness e occlusion vengono impacchettate in un'unica texture ORM; fornendo anche una normal map, vengono memorizzate le normali per vertice smooth e la base tangente necessarie per un'ombreggiatura corretta.
 

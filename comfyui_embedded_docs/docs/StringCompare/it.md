@@ -1,4 +1,4 @@
-# StringCompare
+# Confronta Testo
 
 Il nodo StringCompare confronta due stringhe di testo utilizzando diversi metodi di confronto. Può verificare se una stringa inizia con un'altra, termina con un'altra, oppure se entrambe le stringhe sono esattamente uguali. Il confronto può essere eseguito considerando o meno le differenze tra maiuscole e minuscole.
 

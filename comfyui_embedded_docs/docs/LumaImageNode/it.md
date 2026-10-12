@@ -1,4 +1,4 @@
-# LumaImageNode
+# Luma Da Testo a Immagine
 
 Genera immagini in modo sincrono in base a un prompt testuale e a un rapporto d'aspetto. Questo nodo crea immagini utilizzando descrizioni testuali e consente di controllare le dimensioni e lo stile dell'immagine tramite vari input di riferimento, incluse immagini di personaggi e di stile.
 

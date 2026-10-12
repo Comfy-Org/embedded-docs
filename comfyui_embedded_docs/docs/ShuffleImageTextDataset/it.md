@@ -1,4 +1,4 @@
-# ShuffleImageTextDataset
+# Mescola Coppie Immagine-Testo
 
 Questo nodo mescola insieme una lista di immagini e una lista di testi, mantenendone intatti gli abbinamenti. Utilizza un seed casuale per determinare l'ordine di mescolamento, garantendo che le stesse liste di input vengano mescolate allo stesso modo ogni volta che il seed viene riutilizzato.
 

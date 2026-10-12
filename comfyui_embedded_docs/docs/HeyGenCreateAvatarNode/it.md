@@ -1,4 +1,4 @@
-# HeyGenCreateAvatarNode
+# Crea Avatar HeyGen
 
 Crea un avatar HeyGen riutilizzabile da una foto di una persona o da un prompt testuale che descrive un personaggio da generare. Il `avatar_id` risultante può essere usato con il nodo HeyGen Avatar Video e dovrebbe essere salvato per riutilizzare l'avatar nei flussi di lavoro futuri.
 

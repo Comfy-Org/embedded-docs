@@ -1,4 +1,4 @@
-# ImageFromBatch
+# Ottieni immagine dal batch
 
 Il nodo `ImageFromBatch` è progettato per estrarre un segmento specifico di immagini da un batch in base all'indice e alla lunghezza forniti. Consente un controllo più granulare sulle immagini raggruppate in batch, abilitando operazioni su singole immagini o su sottoinsiemi di immagini all'interno di un batch più grande.
 

@@ -1,4 +1,4 @@
-# BasicGuider
+# Guida Base
 
 Il nodo BasicGuider crea un semplice meccanismo di guida per il processo di campionamento. Prende in input un modello e dati di condizionamento e produce un oggetto guider che può essere utilizzato per guidare il processo di generazione durante il campionamento. Questo nodo fornisce la funzionalità di guida fondamentale necessaria per la generazione controllata.
 

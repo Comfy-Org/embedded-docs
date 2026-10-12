@@ -1,4 +1,4 @@
-# TopazImageEnhanceV2
+# Topaz Image Enhance
 
 Topaz Image Enhance applica upscaling e miglioramento delle immagini secondo gli standard del settore a una singola immagine di input utilizzando i modelli Topaz. Invia l'immagine all'API Topaz, la elabora con il modello selezionato e restituisce il risultato migliorato. È possibile scegliere tra tre modelli: Reimagine, Bloom 2 e Wonder 3.5.
 

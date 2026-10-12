@@ -1,4 +1,4 @@
-# ConvertDictionaryToString
+# Converti Dizionario in Stringa
 
 Questo nodo converte un dizionario (una raccolta di coppie chiave-valore) in una stringa di testo in formato JSON. È possibile controllare il livello di indentazione per rendere l'output più leggibile o compatto.
 

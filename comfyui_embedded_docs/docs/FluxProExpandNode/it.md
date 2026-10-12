@@ -1,4 +1,4 @@
-# FluxProExpandNode
+# Flux.1 Espandi Immagine
 
 Esegue l'outpainting di un'immagine in base al prompt. Questo nodo espande un'immagine aggiungendo pixel in alto, in basso, a sinistra e a destra, generando al contempo nuovi contenuti che corrispondono alla descrizione testuale fornita.
 

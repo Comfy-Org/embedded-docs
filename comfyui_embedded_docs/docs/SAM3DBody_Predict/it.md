@@ -1,4 +1,4 @@
-# SAM3DBody_Predict
+# Esegui previsione corpo SAM3D
 
 SAM3D Body Prediction esegue la stima della posa 3D del corpo e delle mani sulle immagini di input, rilevando una o più persone per fotogramma. È possibile fornire dati di tracciamento o bounding box per migliorare il rilevamento; quando non viene fornito nessuno dei due, il nodo ricade sul rilevamento a persona singola sull'intero fotogramma.
 

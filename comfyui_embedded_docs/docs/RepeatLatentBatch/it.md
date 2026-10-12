@@ -1,4 +1,4 @@
-# RepeatLatentBatch
+# Ripeti Batch Latent
 
 Il nodo RepeatLatentBatch è progettato per replicare un determinato batch di rappresentazioni latenti un numero specificato di volte, includendo potenzialmente dati aggiuntivi come maschere di rumore e indici di batch. Questa funzionalità è cruciale per le operazioni che richiedono più istanze degli stessi dati latenti, come il data augmentation o specifiche attività generative.
 

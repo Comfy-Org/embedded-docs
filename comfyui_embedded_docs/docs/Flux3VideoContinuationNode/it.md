@@ -1,4 +1,4 @@
-# Flux3VideoContinuationNode
+# Flux 3 Continuazione Video
 
 This node continues an existing video clip with FLUX 3: the new clip carries on from the final frames of the video you provide. It uploads your source clip, sends the prompt and settings to the generation service, and returns the resulting continuation video once it is ready.
 

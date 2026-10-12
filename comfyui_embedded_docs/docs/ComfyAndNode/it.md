@@ -1,4 +1,4 @@
-# ComfyAndNode
+# E
 
 Il nodo And esegue un'operazione logica AND su un gruppo di valori di input. Restituisce `true` solo quando ogni valore connesso è considerato veritiero secondo le regole di verità di Python, il che lo rende utile per verificare che più condizioni siano tutte soddisfatte contemporaneamente.
 

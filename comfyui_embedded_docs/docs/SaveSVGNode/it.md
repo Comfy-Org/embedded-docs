@@ -1,4 +1,4 @@
-# SaveSVGNode
+# Salva SVG
 
 Salva i file SVG su disco. Questo nodo prende in input dati SVG e li scrive nella directory di output di ComfyUI, gestendo automaticamente la denominazione dei file con suffissi incrementali. Quando le informazioni di prompt del workflow sono disponibili, vengono incorporate direttamente nel file SVG come elemento di metadati.
 

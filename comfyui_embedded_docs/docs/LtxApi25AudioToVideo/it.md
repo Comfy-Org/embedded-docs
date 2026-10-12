@@ -1,4 +1,4 @@
-# LtxApi25AudioToVideo
+# LTX 2.5 Audio To Video
 
 Questo nodo genera un video che segue una traccia audio utilizzando il modello LTX 2.5. L'audio determina la durata del video (tra 2 e 20 secondi) e, facoltativamente, puoi fornire un'immagine da usare come primo fotogramma. Il video viene generato tramite il servizio API LTX 2.5.
 

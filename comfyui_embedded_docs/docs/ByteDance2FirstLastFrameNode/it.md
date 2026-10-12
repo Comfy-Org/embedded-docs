@@ -1,4 +1,4 @@
-# ByteDance2FirstLastFrameNode
+# ByteDance Seedance 2.0 Da Primo-Ultimo Frame a Video
 
 Questo nodo genera un video da un'immagine obbligatoria del primo fotogramma e un'immagine opzionale dell'ultimo fotogramma usando i modelli ByteDance Seedance. Descrivi il video con un prompt testuale; il primo fotogramma guida l'inizio del video e l'ultimo fotogramma ne guida la fine. Supporta Seedance 2.5 e la famiglia Seedance 2.0 (Seedance 2.0, Seedance 2.0 Fast e Seedance 2.0 Mini). Selezionando il modello `Seedance 2.5 Draft` viene invece renderizzata un'anteprima veloce a 480p; collega il `draft_task_id` risultante al nodo ByteDance Seedance 2.5 Draft to Final Video per renderizzare il finale a 1080p.
 

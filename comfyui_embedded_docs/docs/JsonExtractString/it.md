@@ -1,4 +1,4 @@
-# JsonExtractString
+# Estrai Testo da JSON
 
 Il nodo JsonExtractString analizza una stringa di testo alla ricerca del primo oggetto JSON valido ed estrae il valore associato a una chiave specifica, convertito in stringa. Qualsiasi testo prima o dopo l'oggetto JSON viene ignorato, quindi il nodo funziona anche con blocchi di codice Markdown e con risposte del modello che racchiudono il JSON in testo aggiuntivo. Se non viene trovato alcun oggetto JSON valido, se la chiave non viene trovata o se il valore è null, il nodo restituisce una stringa vuota.
 

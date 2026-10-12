@@ -1,4 +1,4 @@
-# TripoTextureNodeV2
+# Tripo: Modello texture
 
 Questo nodo aggiunge texture a un modello 3D esistente di un flusso di lavoro Tripo, identificato da un ID attività di un passaggio di generazione precedente. Può produrre mappe materiale PBR o una texture a tinta unita, e il risultato può essere guidato da un prompt testuale, un'immagine di stile o immagini di riferimento.
 

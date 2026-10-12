@@ -1,4 +1,4 @@
-# LumaRay32ImageToVideoNode
+# Luma Ray 3.2 Da Immagine a Video
 
 Genera un video da un frame iniziale e/o finale utilizzando il modello Ray 3.2 di Luma. Le generazioni ancorate a immagini hanno sempre una durata di 5 secondi.
 

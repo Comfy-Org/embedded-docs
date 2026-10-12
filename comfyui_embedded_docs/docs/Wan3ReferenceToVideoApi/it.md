@@ -1,4 +1,4 @@
-# Wan3ReferenceToVideoApi
+# Wan 3.0 Da riferimento a video
 
 Questo nodo genera un video da un prompt testuale e da immagini, video e audio di riferimento opzionali usando il modello Wan 3.0. I media di riferimento possono essere combinati liberamente e menzionati nel prompt come @Image1, @Video1 e @Audio1. Il nodo invia la richiesta di generazione all'API Wan e restituisce il video completato.
 

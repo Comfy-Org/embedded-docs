@@ -1,4 +1,4 @@
-# EmptyLatentImage
+# Immagine Latent Vuota
 
 Il nodo `EmptyLatentImage` è progettato per generare una rappresentazione vuota dello spazio latente con dimensioni e dimensione del batch specificate. Questo nodo costituisce un passo fondamentale nella generazione o manipolazione di immagini nello spazio latente, fornendo un punto di partenza per ulteriori processi di sintesi o modifica delle immagini.
 

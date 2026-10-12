@@ -1,4 +1,4 @@
-# StableCascade_StageC_VAEEncode
+# Codifica VAE fase C Stable Cascade
 
 Il nodo StableCascade_StageC_VAEEncode elabora un'immagine di input attraverso un encoder VAE per generare rappresentazioni latenti per il modello Stable Cascade. Prima ridimensiona l'immagine in base a un fattore di compressione e al rapporto di downscale del VAE, poi codifica l'immagine ridimensionata. Il nodo restituisce due tensori latenti: uno per lo stage C (il risultato codificato effettivo) e uno per lo stage B (un segnaposto riempito di zeri).
 

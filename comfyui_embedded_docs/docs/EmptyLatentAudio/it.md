@@ -1,4 +1,4 @@
-# EmptyLatentAudio
+# Audio Latent Vuoto
 
 Empty Latent Audio crea un tensore latente vuoto per l'elaborazione audio. Genera una rappresentazione latente audio vuota con una durata e una dimensione batch specificate, che può essere utilizzata come punto di partenza per flussi di lavoro di generazione o elaborazione audio. Il nodo calcola automaticamente le dimensioni latenti appropriate in base alla durata dell'audio e alla frequenza di campionamento.
 

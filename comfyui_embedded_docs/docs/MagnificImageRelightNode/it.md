@@ -1,4 +1,4 @@
-# MagnificImageRelightNode
+# Magnific Image Relight
 
 Il nodo Magnific Image Relight regola l'illuminazione di un'immagine di input. Può applicare un'illuminazione stilistica basata su un prompt testuale o trasferire le caratteristiche di illuminazione da un'immagine di riferimento opzionale. Il nodo offre vari controlli per mettere a punto luminosità, contrasto e atmosfera generale dell'output finale.
 

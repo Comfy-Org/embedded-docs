@@ -1,4 +1,4 @@
-# TripoMultiviewToModelNode
+# Tripo: Multiview a Modello
 
 Questo nodo genera modelli 3D in modo sincrono utilizzando l'API di Tripo, elaborando fino a quattro immagini che mostrano viste diverse di un oggetto (frontale, sinistra, posteriore, destra). Richiede un'immagine frontale e almeno una vista aggiuntiva (sinistra, posteriore o destra) per costruire il modello 3D. La texture, il materiale PBR, la qualità della geometria e il formato di output possono essere controllati dal nodo.
 

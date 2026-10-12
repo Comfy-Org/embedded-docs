@@ -1,4 +1,4 @@
-# KlingImage2VideoNode
+# Kling Immagine (Primo Frame) in Video
 
 Il nodo Kling Image to Video genera un breve video utilizzando un'immagine iniziale come primo fotogramma. Combina l'immagine con prompt testuali e impostazioni di generazione, quindi restituisce il video risultante insieme al suo ID e alla sua durata.
 

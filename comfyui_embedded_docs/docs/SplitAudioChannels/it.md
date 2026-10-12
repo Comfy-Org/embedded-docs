@@ -1,4 +1,4 @@
-# SplitAudioChannels
+# Dividi Canali Audio
 
 Il nodo SplitAudioChannels separa l'audio stereo nei singoli canali sinistro e destro. Riceve in input un audio stereo con due canali e restituisce due flussi audio separati, uno per il canale sinistro e uno per il canale destro.
 

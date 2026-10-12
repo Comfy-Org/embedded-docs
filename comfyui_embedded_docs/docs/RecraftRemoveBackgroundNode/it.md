@@ -1,4 +1,4 @@
-# RecraftRemoveBackgroundNode
+# Recraft Remove Background
 
 Questo nodo rimuove lo sfondo dalle immagini utilizzando il servizio API Recraft. Elabora ogni immagine del batch di input singolarmente e restituisce sia le immagini elaborate con sfondi trasparenti sia le maschere alpha corrispondenti che indicano le aree di sfondo rimosse.
 

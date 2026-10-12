@@ -1,4 +1,4 @@
-# TripoImageToMultiviewNode
+# Tripo: Da immagine a viste multiple
 
 Genera le viste frontale, sinistra, posteriore e destra del soggetto a partire da una singola immagine di input utilizzando l'API Tripo. L'immagine viene caricata, viene avviata un'attività di generazione multiview che viene monitorata fino al completamento, e le quattro viste risultanti vengono restituite insieme all'ID dell'attività. Questa è un'attività a pagamento dal costo di circa 0,10 USD.
 

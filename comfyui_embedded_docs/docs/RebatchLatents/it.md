@@ -1,4 +1,4 @@
-# RebatchLatents
+# Ribatch Latent
 
 Il nodo RebatchLatents è progettato per riorganizzare un batch di rappresentazioni latenti in una nuova configurazione di batch, in base a una dimensione del batch specificata. Assicura che i campioni latenti siano raggruppati in modo appropriato, gestendo variazioni nelle dimensioni e nelle grandezze, per facilitare ulteriori elaborazioni o l'inferenza del modello.
 

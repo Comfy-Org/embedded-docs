@@ -1,4 +1,4 @@
-# FrameInterpolationModelLoader
+# Carica Modello di Interpolazione Frame
 
 Questo nodo carica un file di modello per l'interpolazione dei frame e lo prepara per l'uso nel workflow. Rileva automaticamente se il file è un modello FILM o RIFE e configura il modello per l'hardware disponibile.
 

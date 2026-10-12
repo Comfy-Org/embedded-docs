@@ -1,4 +1,4 @@
-# CustomCombo
+# Combinazione Personalizzata
 
 Il nodo Custom Combo consente di definire un proprio elenco di opzioni testuali per un menu a discesa anziché scegliere tra valori fissi. È un nodo incentrato sul frontend che dispone anche di una rappresentazione backend, quindi i workflow che lo contengono rimangono compatibili. Quando si seleziona un'opzione, il nodo restituisce in output il testo selezionato e la sua posizione di indice.
 

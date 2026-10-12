@@ -1,4 +1,4 @@
-# ImageOnlyCheckpointSave
+# Salva Checkpoint Solo Immagine
 
 Questo nodo salva un file di checkpoint che raggruppa un modello insieme al suo encoder visivo CLIP e al VAE. Il file viene scritto in formato safetensors nella directory di output, usando il prefisso del nome file fornito, così i componenti relativi alle immagini di un modello possono essere archiviati come un singolo checkpoint.
 

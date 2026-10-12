@@ -1,4 +1,4 @@
-# USOStyleReference
+# Applica riferimento stile USO
 
 Il nodo USOStyleReference applica un riferimento di stile a un modello combinando le feature di visione CLIP con una patch del modello e restituisce una copia patchata del modello di input. Le informazioni di stile visivo vengono combinate con il condizionamento testuale del modello in modo che possano influenzare la generazione. Questo nodo è destinato ai modelli Flux ed è contrassegnato come sperimentale.
 

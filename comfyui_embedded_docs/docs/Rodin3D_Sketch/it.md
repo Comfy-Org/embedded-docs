@@ -1,4 +1,4 @@
-# Rodin3D_Sketch
+# Rodin 3D Genera - Generazione da Schizzo
 
 Questo nodo genera asset 3D utilizzando l'API Rodin. Prende in input immagini e le converte in modelli 3D tramite un servizio esterno. Il nodo gestisce l'intero processo, dalla creazione del task al download dei file finali del modello 3D.
 

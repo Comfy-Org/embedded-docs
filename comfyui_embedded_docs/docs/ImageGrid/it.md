@@ -1,4 +1,4 @@
-# ImageGrid
+# Crea griglia di immagini
 
 Il nodo Image Grid combina più immagini in un'unica griglia o collage organizzato. Prende un elenco di immagini e le dispone in un numero specificato di colonne, ridimensionando ciascuna immagine per adattarla a una dimensione di cella definita e aggiungendo un padding opzionale tra di esse. Il risultato è una singola nuova immagine contenente tutte le immagini di input disposte in una griglia.
 

@@ -1,4 +1,4 @@
-# LoadImage
+# Carica Immagine
 
 Il nodo LoadImage è progettato per caricare e preelaborare immagini da un percorso specificato. Gestisce formati immagine con più frame, applica le trasformazioni necessarie, come la rotazione basata sui dati EXIF, normalizza i valori dei pixel e genera facoltativamente una maschera per immagini con canale alfa. Questo nodo è essenziale per preparare le immagini a ulteriori elaborazioni o analisi all'interno di una pipeline.
 

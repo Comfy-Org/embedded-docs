@@ -1,4 +1,4 @@
-# TripoP1MultiviewToModelNode
+# Tripo P1: Multiview a Modello
 
 Questo nodo genera un modello 3D da due a quattro immagini di riferimento di un oggetto o personaggio. Fornisci la vista frontale più una qualsiasi combinazione delle viste sinistra, posteriore e destra; il nodo restituisce il soggetto ricostruito come mesh GLB.
 

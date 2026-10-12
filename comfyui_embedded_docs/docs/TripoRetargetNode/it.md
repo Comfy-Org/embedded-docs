@@ -1,4 +1,4 @@
-# TripoRetargetNode
+# Tripo: Retarget modello riggato
 
 Il nodo TripoRetargetNode applica un'animazione predefinita a un modello 3D riggato esistente. Prende l'ID attività di un modello precedentemente riggato, invia una richiesta di retargeting all'API Tripo e scarica il file animato risultante. Il modello animato può essere restituito in formato GLB o FBX, con geometria mesh opzionale e riproduzione in place opzionale.
 

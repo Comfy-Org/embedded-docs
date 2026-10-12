@@ -1,4 +1,4 @@
-# CLIPTextEncodePixArtAlpha
+# CLIP Text Encode (PixArt Alpha)
 
 Codifica il testo e imposta il condizionamento della risoluzione per PixArt Alpha. Questo nodo elabora l'input testuale e aggiunge informazioni di larghezza e altezza per creare dati di condizionamento specificamente per i modelli PixArt Alpha. Non si applica ai modelli PixArt Sigma.
 

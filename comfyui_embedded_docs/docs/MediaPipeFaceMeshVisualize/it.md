@@ -1,4 +1,4 @@
-# MediaPipeFaceMeshVisualize
+# Visualizza Punti di Riferimento del Viso (MediaPipe)
 
 ## Panoramica
 

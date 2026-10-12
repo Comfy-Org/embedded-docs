@@ -1,4 +1,4 @@
-# PreviewAudio
+# Anteprima Audio
 
 Il nodo Preview Audio consente di ascoltare l'audio direttamente all'interno di ComfyUI senza salvarlo nella directory di output. Riceve un input audio, verifica che i dati audio siano effettivamente presenti e poi lo riproduce tramite un lettore di anteprima nell'interfaccia, passando contemporaneamente lo stesso audio come output.
 

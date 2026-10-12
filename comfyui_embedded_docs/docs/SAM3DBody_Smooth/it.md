@@ -1,4 +1,4 @@
-# SAM3DBody_Smooth
+# Smussa i dati della posa del corpo SAM3D
 
 Smooth SAM3D Body Pose Data riduce il jitter frame-to-frame in una sequenza di pose corporee 3D mediando il movimento nel tempo. I dati di camera e aspetto vengono smussati completamente, mentre la geometria della mesh viene smussata meno quando il soggetto ruota rapidamente, così le rotazioni veloci non vengono appiattite.
 

@@ -1,4 +1,4 @@
-# TripoPSeriesMultiviewToModelNode
+# Tripo P2: da viste multiple a modello
 
 Genera un modello 3D low-poly con topologia pulita da diverse viste dello stesso soggetto utilizzando il modello P2 di Tripo. La vista frontale è obbligatoria e si possono aggiungere da una a tre viste tra sinistra, posteriore e destra per migliorare il risultato. Il modello viene restituito come mesh triangolare (GLB) o, quando `model.quad` è abilitato, come mesh a prevalenza quad (FBX).
 

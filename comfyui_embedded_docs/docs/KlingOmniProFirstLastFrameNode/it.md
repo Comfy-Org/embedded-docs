@@ -1,4 +1,4 @@
-# KlingOmniProFirstLastFrameNode
+# Kling 3.0 Omni Da Primo-Ultimo Frame a Video
 
 Questo nodo utilizza il modello Kling AI più recente per generare un video da un fotogramma iniziale, un fotogramma finale opzionale o immagini di riferimento. Può creare un singolo video o uno storyboard multi-inquadratura con prompt e durate individuali per ogni segmento. Il nodo elabora questi input per produrre un video di lunghezza e risoluzione specificate, con generazione audio opzionale.
 

@@ -1,4 +1,4 @@
-# ByteDanceCreateImageAsset
+# ByteDance Crea Asset Immagine
 
 Questo nodo crea un asset immagine personale per il servizio Seedance 2.0 di ByteDance. Carica un'immagine di input e la registra all'interno di un gruppo di asset specificato. Se non viene fornito alcun ID gruppo, avvierà nel browser un processo di autenticazione della persona reale per creare un nuovo gruppo prima di aggiungere l'asset.
 

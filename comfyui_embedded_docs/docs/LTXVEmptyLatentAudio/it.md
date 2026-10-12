@@ -1,4 +1,4 @@
-# LTXVEmptyLatentAudio
+# Audio latent LTXV vuoto
 
 Il nodo LTXV Empty Latent Audio crea un batch di tensori latenti audio vuoti (riempiti di zeri). Legge la configurazione di un modello Audio VAE collegato per determinare le dimensioni latenti corrette, come il numero di canali e i bin di frequenza, e calcola quanti latenti audio sono necessari dal conteggio dei frame e dal frame rate. Il latente vuoto risultante può essere utilizzato come punto di partenza per flussi di lavoro di generazione o manipolazione audio.
 

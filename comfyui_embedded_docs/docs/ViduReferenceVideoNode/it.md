@@ -1,4 +1,4 @@
-# ViduReferenceVideoNode
+# Generazione Video da Riferimenti Vidu
 
 Il nodo Vidu Reference Video genera video da più immagini di riferimento e un prompt testuale. Utilizza modelli di IA per creare contenuti video coerenti in base alle immagini e alla descrizione fornite. Il nodo supporta varie impostazioni video, tra cui durata, rapporto d'aspetto, risoluzione e controllo del movimento.
 

@@ -1,4 +1,4 @@
-# Vidu3TextToVideoNode
+# Vidu Q3 Generazione Testo-a-Video
 
 Il nodo Vidu Q3 Text-to-Video Generation crea un video a partire da una descrizione testuale. Utilizza il modello Vidu Q3 Pro o Q3 Turbo per generare contenuti video in base al tuo prompt, consentendoti di controllare la durata, la risoluzione, il rapporto d'aspetto e se include l'audio.
 

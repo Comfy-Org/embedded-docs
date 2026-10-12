@@ -1,4 +1,4 @@
-# FluxDisableGuidance
+# FluxDisabilitaGuida
 
 Questo nodo disabilita completamente l'embedding di guidance sui modelli Flux e simili a Flux. Riceve in input dati di conditioning e imposta il suo valore di guidance su None, disattivando di fatto il condizionamento basato sulla guidance per il processo di generazione.
 

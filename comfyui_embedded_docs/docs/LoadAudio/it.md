@@ -1,4 +1,4 @@
-# LoadAudio
+# Carica Audio
 
 Il nodo LoadAudio carica i file audio dalla directory di input e li converte in un formato che può essere elaborato da altri nodi audio di ComfyUI. Legge i file audio ed estrae sia i dati della forma d'onda sia la frequenza di campionamento, rendendoli disponibili per le attività di elaborazione audio a valle.
 

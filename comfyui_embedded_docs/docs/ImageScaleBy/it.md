@@ -1,4 +1,4 @@
-# ImageScaleBy
+# Ingrandisci Immagine di
 
 Il nodo ImageScaleBy è progettato per ingrandire le immagini di un fattore di scala specificato utilizzando vari metodi di interpolazione. Consente di regolare le dimensioni dell'immagine in modo flessibile, soddisfacendo diverse esigenze di ingrandimento.
 

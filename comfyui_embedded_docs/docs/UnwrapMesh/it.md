@@ -1,4 +1,4 @@
-# UnwrapMesh
+# Sviluppa gli UV della mesh
 
 Genera un atlante UV per una mesh 3D. La superficie della mesh viene suddivisa in chart, ogni chart viene appiattito in due dimensioni e i chart appiattiti vengono impacchettati in un atlante UV [0,1]. I vertici sulle giunzioni dei chart vengono duplicati (una copia per chart, stessa posizione, UV propri), quindi la mesh di output può contenere più vertici della mesh di input e le facce di output possono differire nel numero rispetto all'input.
 

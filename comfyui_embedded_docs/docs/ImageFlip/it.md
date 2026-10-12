@@ -1,4 +1,4 @@
-# ImageFlip
+# Ribalta immagine
 
 Il nodo ImageFlip ribalta le immagini lungo assi diversi. Può ribaltare le immagini verticalmente lungo l'asse x oppure orizzontalmente lungo l'asse y. Il nodo utilizza operazioni torch.flip per eseguire il ribaltamento in base al metodo selezionato.
 

@@ -1,4 +1,4 @@
-# LatentInterpolate
+# Interpolazione Latent
 
 Il nodo LatentInterpolate è progettato per eseguire l'interpolazione tra due insiemi di campioni latenti in base a un rapporto specificato, combinando le caratteristiche di entrambi gli insiemi per produrre un nuovo insieme intermedio di campioni latenti.
 

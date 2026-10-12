@@ -1,4 +1,4 @@
-# ImageDeduplication
+# Rimuovi immagini duplicate
 
 Questo nodo rimuove da un batch le immagini duplicate o molto simili. Funziona creando un hash percettivo per ogni immagine — una semplice impronta numerica basata sul suo contenuto visivo — e poi confrontandoli. Le immagini i cui hash risultano più simili di una soglia impostata vengono considerate duplicate e filtrate.
 

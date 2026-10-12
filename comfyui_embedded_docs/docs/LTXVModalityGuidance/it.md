@@ -1,4 +1,4 @@
-# LTXVModalityGuidance
+# LTXV Modality Guidance (accoppiamento A/V)
 
 Questo nodo applica una guida cross-modale (audio-video) a un modello LTXV-AV. Durante il campionamento, esegue un passaggio forward extra per ogni step con le connessioni cross-attention da audio a video e da video ad audio disabilitate, quindi spinge il risultato verso la previsione accoppiata per rafforzare la sincronizzazione audio-visiva, come il lip-sync. Il valore predefinito di riferimento per `modality_scale` è 3.0; impostandolo a 1.0 si disabilita il passaggio extra, e si combina con il guider dual-CFG e STG.
 

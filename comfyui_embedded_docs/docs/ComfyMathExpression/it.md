@@ -1,4 +1,4 @@
-# ComfyMathExpression
+# Espressione Matematica
 
 Il nodo ComfyMathExpression valuta una formula matematica scritta come testo. La formula può fare riferimento ai valori di input del nodo usando nomi di lettera come `a`, `b`, `c`, e puoi aggiungere tutti i valori di input necessari tramite il gruppo espandibile `values`. Il risultato del calcolo viene restituito contemporaneamente come numero in virgola mobile, numero intero e valore booleano.
 

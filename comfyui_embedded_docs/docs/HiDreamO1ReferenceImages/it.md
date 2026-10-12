@@ -1,4 +1,4 @@
-# HiDreamO1ReferenceImages
+# HiDream-O1 Reference Images
 
 Questo nodo collega le immagini di riferimento sia al conditioning positivo sia a quello negativo, in modo che i nodi a valle possano utilizzarle per guidare la generazione. Le immagini di riferimento vengono applicate nell'ordine numerico dei rispettivi socket di input. Se non è collegata alcuna immagine di riferimento, il conditioning positivo e quello negativo passano invariati.
 

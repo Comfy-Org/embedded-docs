@@ -1,4 +1,4 @@
-# BriaVideoGreenScreen
+# Bria Video Green Screen
 
 Questo nodo sostituisce lo sfondo di un video con uno schermo chroma-key a tinta unita utilizzando l'API Bria. Elabora il video di input e restituisce un nuovo video in cui lo sfondo originale è stato rimosso e sostituito con un colore a schermo verde o blu uniforme.
 

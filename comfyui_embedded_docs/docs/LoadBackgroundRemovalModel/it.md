@@ -1,4 +1,4 @@
-# LoadBackgroundRemovalModel
+# Carica Modello Rimozione Sfondo
 
 Carica un modello di rimozione dello sfondo da un file. Questo nodo prepara il modello in modo che possa essere utilizzato da altri nodi per rimuovere gli sfondi dalle immagini.
 

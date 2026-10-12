@@ -1,4 +1,4 @@
-# ImageAddNoise
+# Aggiungi Rumore all'Immagine
 
 Il nodo ImageAddNoise aggiunge rumore casuale a un'immagine di input. Utilizza un seed casuale specificato per generare pattern di rumore coerenti e consente di controllare l'intensità dell'effetto rumore. L'immagine risultante mantiene le stesse dimensioni dell'input, ma con una texture visiva aggiunta.
 

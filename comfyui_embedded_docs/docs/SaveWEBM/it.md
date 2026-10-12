@@ -1,4 +1,4 @@
-# SaveWEBM
+# Salva WEBM
 
 Il nodo SaveWEBM salva una sequenza di immagini come file video WEBM. Riceve più immagini di input e le codifica in un video utilizzando il codec VP9 o AV1 con impostazioni di qualità e frame rate configurabili. Il file video risultante viene salvato nella directory di output con metadati che includono le informazioni del prompt.
 

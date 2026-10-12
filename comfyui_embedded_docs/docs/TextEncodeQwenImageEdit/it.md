@@ -1,4 +1,4 @@
-# TextEncodeQwenImageEdit
+# Codifica testo Qwen Image Edit
 
 Il nodo TextEncodeQwenImageEdit converte prompt testuali e immagini opzionali in dati di condizionamento per la generazione o la modifica di immagini. Utilizza un modello CLIP per tokenizzare l'input e può codificare opzionalmente immagini di riferimento con un VAE per creare latent di riferimento. Quando viene fornita un'immagine, questa viene ridimensionata automaticamente per mantenere una scala di elaborazione coerente.
 

@@ -1,4 +1,4 @@
-# MeshyRefineNode
+# Meshy: Raffina Modello Bozza
 
 Il nodo Meshy: Refine Draft Model prende un modello 3D draft da un task Meshy precedente e lo migliora, aggiungendo facoltativamente texture tramite un prompt testuale o un'immagine di riferimento. Invia il job di rifinitura all'API Meshy e restituisce il modello finito come file GLB e FBX una volta completato il task.
 

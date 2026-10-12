@@ -1,4 +1,4 @@
-# BriaEraser
+# Gomma Bria
 
 Bria Eraser rimuove oggetti o aree da un'immagine utilizzando l'API Bria. Fornisci un'immagine e una maschera che delimita le regioni da rimuovere; il nodo carica entrambe su Bria, esegue il processo di cancellazione, attende il completamento e restituisce l'immagine modificata con le aree mascherate cancellate.
 

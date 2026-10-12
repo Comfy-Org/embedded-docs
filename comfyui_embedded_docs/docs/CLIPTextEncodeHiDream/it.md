@@ -1,4 +1,4 @@
-# CLIPTextEncodeHiDream
+# CLIP Text Encode (HiDream)
 
 Il nodo CLIPTextEncodeHiDream elabora quattro input di testo separati utilizzando modelli linguistici diversi (CLIP-L, CLIP-G, T5-XXL e LLaMA) e li combina in un unico output di conditioning. Tokenizza ogni input di testo con il modello corrispondente e li codifica insieme utilizzando un approccio di codifica pianificata, consentendo un condizionamento testuale più sofisticato sfruttando simultaneamente più modelli linguistici.
 

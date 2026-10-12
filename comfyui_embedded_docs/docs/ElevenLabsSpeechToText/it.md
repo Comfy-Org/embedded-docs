@@ -1,4 +1,4 @@
-# ElevenLabsSpeechToText
+# ElevenLabs Speech to Text
 
 Il nodo ElevenLabs Speech to Text trascrive l'audio in testo utilizzando l'API ElevenLabs. Supporta il rilevamento automatico della lingua, la diarizzazione dei parlanti (identificazione dei diversi parlanti) e l'etichettatura degli eventi audio (annotazione di suoni come risate o musica nella trascrizione).
 

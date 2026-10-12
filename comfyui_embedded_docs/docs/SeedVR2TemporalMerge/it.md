@@ -1,4 +1,4 @@
-# SeedVR2TemporalMerge
+# Unisci Latent SeedVR2
 
 Questo nodo ricombina i chunk temporali latent di SeedVR2 campionati in un unico latent a lunghezza completa. Quando viene specificata una sovrapposizione temporale, esegue un crossfade di ogni regione sovrapposta con una finestra di Hann per creare transizioni fluide tra i chunk; quando la sovrapposizione è 0, esegue una concatenazione semplice.
 

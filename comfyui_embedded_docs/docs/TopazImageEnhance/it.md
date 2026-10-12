@@ -1,4 +1,4 @@
-# TopazImageEnhance
+# Topaz Miglioramento Immagine (Legacy)
 
 Il nodo Topaz Image Enhance fornisce upscaling e miglioramento delle immagini conformi agli standard del settore. Elabora una singola immagine di input utilizzando un modello AI basato su cloud per migliorare qualità, dettaglio e risoluzione. Il nodo offre un controllo granulare sul processo di miglioramento, incluse opzioni per la guida creativa, il focus sul soggetto e la preservazione del volto.
 

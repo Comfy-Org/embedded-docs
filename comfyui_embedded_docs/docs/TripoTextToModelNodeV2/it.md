@@ -1,4 +1,4 @@
-# TripoTextToModelNodeV2
+# Tripo: Da testo a modello
 
 Genera un modello 3D da una descrizione testuale utilizzando il servizio Tripo. Il nodo invia il prompt e le impostazioni a Tripo, attende il completamento dell'attività di generazione e restituisce il file 3D finito insieme all'identificatore dell'attività.
 

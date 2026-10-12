@@ -1,4 +1,4 @@
-# QwenImageTextToImageApi
+# Qwen Image 3 Da Testo a Immagine
 
 Qwen Image 3 Text to Image genera una o più immagini da un prompt testuale utilizzando i modelli Qwen-Image 3.0. Si seleziona un modello e si fornisce un prompt; il nodo restituisce le immagini generate come batch.
 

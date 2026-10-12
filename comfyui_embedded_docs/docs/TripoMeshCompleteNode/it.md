@@ -1,4 +1,4 @@
-# TripoMeshCompleteNode
+# Tripo: Completa parti della mesh
 
 Completa le parti di un modello 3D segmentato e ripara le regioni mancanti o danneggiate della mesh. Prende il task ID di un risultato di segmentazione mesh Tripo, richiede a Tripo il job di completamento e attende che termini. Puoi facoltativamente limitare il lavoro a nomi di parti specifici. Il modello completato viene restituito come file GLB.
 

@@ -1,4 +1,4 @@
-# ControlNetInpaintingAliMamaApply
+# Applica ControlNet Inpainting (AliMama)
 
 Il nodo ControlNetInpaintingAliMamaApply applica il condizionamento ControlNet per attività di inpainting combinando il condizionamento positivo e negativo con un'immagine di controllo e una maschera. Elabora l'immagine e la maschera di input per creare un condizionamento modificato che guida il processo di generazione, consentendo di controllare quali aree dell'immagine vengono sottoposte a inpainting. Il nodo supporta la regolazione della forza e i controlli temporali per ottimizzare l'influenza del ControlNet durante le diverse fasi del processo di generazione.
 

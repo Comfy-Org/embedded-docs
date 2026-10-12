@@ -1,4 +1,4 @@
-# SetClipHooks
+# Imposta Hook CLIP
 
 Il nodo SetClipHooks consente di applicare hook personalizzati a un modello CLIP, abilitando modifiche avanzate al suo comportamento. Può applicare hook agli output di conditioning e, facoltativamente, abilitare la funzionalità di pianificazione clip. Questo nodo crea una copia clonata del modello CLIP di input con le configurazioni di hook specificate applicate.
 

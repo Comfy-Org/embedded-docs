@@ -1,4 +1,4 @@
-# ConditioningCombine
+# Conditioning (Combina)
 
 Questo nodo combina due input di condizionamento in un unico output, fondendone efficacemente le informazioni. Le due condizioni vengono combinate tramite concatenazione di liste.
 

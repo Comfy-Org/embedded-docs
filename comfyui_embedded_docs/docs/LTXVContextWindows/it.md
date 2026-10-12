@@ -1,4 +1,4 @@
-# LTXVContextWindows
+# Finestre di Contesto LTXV
 
 Questo nodo imposta finestre di contesto per modelli simili a LTXV durante il campionamento. Divide la generazione in finestre sovrapposte per aiutare a gestire l'uso della memoria e migliorare la coerenza temporale.
 

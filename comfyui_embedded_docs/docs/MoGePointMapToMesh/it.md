@@ -1,4 +1,4 @@
-# MoGePointMapToMesh
+# Converti Mappa Punti MoGe in Mesh
 
 Questo nodo converte una mappa di punti MoGe in una mesh 3D. Prende i dati geometrici prodotti da un nodo di stima della profondità MoGe e li triangola in una mesh con coordinate UV e una texture opzionale.
 

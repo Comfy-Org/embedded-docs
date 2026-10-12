@@ -1,4 +1,4 @@
-# ReferenceTimbreAudio
+# Imposta Audio di Riferimento
 
 Questo nodo imposta l'audio di riferimento per il processo "ace step 1.5". Riceve un input di condizionamento e, facoltativamente, una rappresentazione latente dell'audio, quindi associa quei dati latenti ai dati di condizionamento in modo che i nodi successivi possano usarli come latenti del timbro dell'audio di riferimento. Questo nodo è contrassegnato come sperimentale.
 

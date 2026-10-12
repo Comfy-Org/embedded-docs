@@ -1,4 +1,4 @@
-# LatentMultiply
+# Moltiplica Latent
 
 Il nodo LatentMultiply è progettato per scalare la rappresentazione latente dei campioni tramite un moltiplicatore specificato. Questa operazione consente di regolare l'intensità o l'ampiezza delle caratteristiche all'interno dello spazio latente, permettendo di ottimizzare con precisione il contenuto generato o di esplorare variazioni all'interno di una data direzione latente.
 

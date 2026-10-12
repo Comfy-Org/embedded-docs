@@ -1,4 +1,4 @@
-# AudioEqualizer3Band
+# Equalizzatore Audio (3 Bande)
 
 Il nodo Audio Equalizer (3-Band) consente di regolare le frequenze dei bassi, delle medie e degli alti di una forma d'onda audio. Applica tre filtri separati: un filtro low shelf per i bassi, un filtro peaking per le medie e un filtro high shelf per gli alti. Ogni banda può essere controllata in modo indipendente con impostazioni di guadagno, frequenza e larghezza di banda.
 

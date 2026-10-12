@@ -1,4 +1,4 @@
-# SelectCLIPDevice
+# Seleziona Dispositivo CLIP
 
 ## Panoramica
 

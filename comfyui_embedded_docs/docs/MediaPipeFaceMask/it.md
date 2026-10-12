@@ -1,4 +1,4 @@
-# MediaPipeFaceMask
+# Disegna Maschera Facciale (MediaPipe)
 
 ## Panoramica
 

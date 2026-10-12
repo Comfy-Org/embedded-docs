@@ -1,4 +1,4 @@
-# TripoTextToModelNode
+# Tripo: Da testo a modello (Legacy)
 
 Questo nodo legacy genera modelli 3D finiti a partire da una descrizione testuale utilizzando l'API di Tripo. Attende il completamento della generazione e restituisce il file del modello, opzionalmente con texture e materiali PBR. È contrassegnato come deprecato e viene mantenuto per i flussi di lavoro più datati.
 

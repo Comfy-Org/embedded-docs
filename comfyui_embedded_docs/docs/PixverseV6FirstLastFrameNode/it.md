@@ -1,4 +1,4 @@
-# PixverseV6FirstLastFrameNode
+# PixVerse V6 Dal primo all'ultimo fotogramma a video
 
 PixVerse V6 First-Last-Frame to Video genera un video che effettua una transizione dal primo all'ultimo fotogramma tramite PixVerse, opzionalmente con audio nativo. Le due immagini fornite vengono inviate all'API PixVerse, che produce il video di transizione e lo restituisce come file video. L'output mantiene il rapporto d'aspetto del primo fotogramma.
 

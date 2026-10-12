@@ -1,4 +1,4 @@
-# RecordAudio
+# Registra Audio
 
 Il nodo RecordAudio carica file audio registrati o selezionati tramite l'interfaccia di registrazione audio. Elabora il file audio e lo converte in un formato waveform utilizzabile da altri nodi di elaborazione audio nel workflow. Il nodo rileva automaticamente la frequenza di campionamento e prepara i dati audio per ulteriori manipolazioni.
 

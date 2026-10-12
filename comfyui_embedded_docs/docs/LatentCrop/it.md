@@ -1,4 +1,4 @@
-# LatentCrop
+# Ritaglia Latent
 
 Il nodo LatentCrop è progettato per eseguire operazioni di ritaglio sulle rappresentazioni latenti delle immagini. Consente di specificare le dimensioni e la posizione del ritaglio, permettendo modifiche mirate dello spazio latente.
 

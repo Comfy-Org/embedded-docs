@@ -1,4 +1,4 @@
-# MagnificImageStyleTransferNode
+# Trasferimento Stile Immagine Magnific
 
 This node applies the visual style from a reference image to your input image. It uses an external AI service to process the images, allowing you to control the strength of the style transfer and the preservation of the original image's structure.
 

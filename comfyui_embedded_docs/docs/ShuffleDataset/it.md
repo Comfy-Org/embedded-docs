@@ -1,4 +1,4 @@
-# ShuffleDataset
+# Mescola Elenco Immagini
 
 Il nodo Shuffle Dataset riceve un elenco di immagini e ne modifica casualmente l'ordine. Utilizza un valore seed per controllare la casualità, garantendo che lo stesso ordine di mescolamento possa essere riprodotto. Questo è utile per randomizzare la sequenza di immagini in un dataset prima dell'elaborazione.
 

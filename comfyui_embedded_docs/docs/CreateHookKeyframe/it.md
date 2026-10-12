@@ -1,4 +1,4 @@
-# CreateHookKeyframe
+# Crea Keyframe Hook
 
 Il nodo Create Hook Keyframe consente di definire punti specifici in un processo di generazione in cui il comportamento degli hook cambia. Crea keyframe che modificano la forza degli hook a determinate percentuali dell'avanzamento della generazione, e questi keyframe possono essere concatenati tra loro per creare schemi di pianificazione complessi.
 

@@ -1,4 +1,4 @@
-# HitPawVideoEnhance
+# HitPaw Video Enhance
 
 Il nodo HitPaw Video Enhance utilizza un'API esterna per migliorare la qualità dei video. Aumenta la risoluzione dei video a bassa risoluzione, rimuove artefatti visivi e riduce il rumore. Il costo di elaborazione viene calcolato per ogni secondo del video di input.
 

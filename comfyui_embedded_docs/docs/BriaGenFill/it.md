@@ -1,4 +1,4 @@
-# BriaGenFill
+# Riempimento generativo Bria
 
 Questo nodo genera oggetti o paesaggi all'interno di una regione mascherata di un'immagine utilizzando Bria. Carica l'immagine e la maschera, invia il prompt al servizio di riempimento generativo di Bria, attende il completamento dell'operazione e restituisce l'immagine modificata. Questa è un'operazione API a pagamento (0,0429 USD per richiesta).
 

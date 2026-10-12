@@ -1,4 +1,4 @@
-# GrokVideoEditNode
+# Grok Video Edit
 
 Questo nodo utilizza l'API Grok per modificare un video esistente in base a un prompt testuale. Carica il tuo video, invia una richiesta al modello AI per modificarlo in base alla tua descrizione e restituisce il video appena generato.
 

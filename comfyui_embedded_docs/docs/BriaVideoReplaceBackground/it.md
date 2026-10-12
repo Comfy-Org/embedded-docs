@@ -1,4 +1,4 @@
-# BriaVideoReplaceBackground
+# Bria Video Sostituisci Sfondo
 
 Questo nodo sostituisce lo sfondo di un video con un'immagine o un video forniti tramite l'API di Bria. L'output mantiene la risoluzione e la frequenza dei fotogrammi del video in primo piano; uno sfondo con un rapporto d'aspetto diverso viene allungato per adattarsi, quindi rapporti d'aspetto corrispondenti producono risultati non distorti.
 

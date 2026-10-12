@@ -1,4 +1,4 @@
-# ModelPatchLoader
+# Carica Patch Modello
 
 Il nodo ModelPatchLoader carica un file di patch del modello dalla cartella `model_patches` e lo prepara per l'uso in un workflow. Rileva automaticamente il tipo di patch contenuto nel file, costruisce l'architettura corrispondente, carica i pesi salvati e racchiude tutto in un model patcher, così può essere applicato ad altri modelli. Supporta molti formati di patch specializzati, inclusi rami ControlNet aggiuntivi, modelli feature embedder, adattatori, moduli di guida animation/LLLite e moduli simili.
 

@@ -1,4 +1,4 @@
-# SplatToFile3D
+# Crea File 3D (da Splat)
 
 Il nodo SplatToFile3D converte uno splat gaussiano in un oggetto File3D che può essere utilizzato con i nodi Save o Preview 3D. Supporta un solo elemento per batch e consente di scegliere tra diversi formati di file di output per i dati 3D esportati.
 

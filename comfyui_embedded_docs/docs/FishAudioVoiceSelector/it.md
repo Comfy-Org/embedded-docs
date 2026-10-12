@@ -1,4 +1,4 @@
-# FishAudioVoiceSelector
+# Selettore voce Fish Audio
 
 Il nodo Fish Audio Voice Selector seleziona una voce dalla libreria Fish Audio per la generazione di sintesi vocale. Puoi scegliere una delle voci preimpostate integrate, oppure selezionare `custom` per inserire qualsiasi ID di modello vocale da fish.audio.
 

@@ -1,4 +1,4 @@
-# HappyHorseImageToVideoApi
+# HappyHorse Immagine in Video
 
 Questo nodo genera un breve video a partire da una singola immagine iniziale utilizzando il modello HappyHorse. Si fornisce un'immagine del primo fotogramma e un prompt testuale che descrive il movimento e la scena desiderati; il nodo crea un video che continua da quell'immagine.
 

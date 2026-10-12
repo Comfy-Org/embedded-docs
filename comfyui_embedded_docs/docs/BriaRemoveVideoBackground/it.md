@@ -1,4 +1,4 @@
-# BriaRemoveVideoBackground
+# Bria Rimuovi Sfondo Video
 
 Questo nodo rimuove lo sfondo da un video utilizzando il servizio Bria AI. Elabora il video di input e sostituisce lo sfondo originale con un colore solido a tua scelta. L'operazione viene eseguita tramite un'API esterna e il risultato viene restituito come nuovo file video.
 

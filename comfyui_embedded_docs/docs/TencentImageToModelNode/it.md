@@ -1,4 +1,4 @@
-# TencentImageToModelNode
+# Hunyuan3D: Da Immagine/i a Modello
 
 Questo nodo utilizza l'API Hunyuan3D Pro di Tencent per generare un modello 3D da una o più immagini di input. Elabora le immagini, le invia all'API e restituisce i file del modello 3D generato nei formati GLB e OBJ, insieme a mappe di texture opzionali.
 

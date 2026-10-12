@@ -1,4 +1,4 @@
-# ChromaRadianceOptions
+# Opzioni ChromaRadiance
 
 Il nodo ChromaRadianceOptions consente di configurare impostazioni avanzate per il modello Chroma Radiance. Collega un wrapper a un modello esistente e applica le opzioni selezionate durante il processo di denoising solo quando il valore sigma corrente rientra nell'intervallo configurato, offrendo controllo sulla dimensione dei tile NeRF e sulla gestione degli ID dei token di testo.
 

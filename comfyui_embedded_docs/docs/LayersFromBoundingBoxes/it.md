@@ -1,4 +1,4 @@
-# LayersFromBoundingBoxes
+# Livelli da Riquadri di Selezione
 
 Questo nodo converte un batch di immagini e le relative bounding box in uno stack di livelli, creando un livello per ogni fotogramma e posizionando ciascun livello in base alla sua box corrispondente. Usalo quando un nodo restituisce livelli come batch, perché un batch porta con sé un solo posizionamento per ogni fotogramma e le posizioni individuali andrebbero altrimenti perse.
 

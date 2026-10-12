@@ -1,4 +1,4 @@
-# ResizeImagesByShorterEdge
+# Ridimensiona Immagini per Lato Più Corto (DEPRECATO)
 
 Questo nodo ridimensiona le immagini in modo che il lato più corto corrisponda a una lunghezza specificata, preservando le proporzioni originali. Calcola le nuove dimensioni in base alla lunghezza target per il lato più corto e restituisce l'immagine ridimensionata.
 

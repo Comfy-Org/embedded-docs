@@ -1,4 +1,4 @@
-# StringTrim
+# Rimuovi Spazi Testo
 
 Il nodo StringTrim rimuove gli spazi bianchi (come spazi, tabulazioni e ritorni a capo) dall'inizio, dalla fine o da entrambi i lati di una stringa di testo. È possibile scegliere di rimuoverli dal lato sinistro, dal lato destro o da entrambi i lati della stringa. Questo è utile per ripulire gli input di testo rimuovendo spazi bianchi indesiderati.
 

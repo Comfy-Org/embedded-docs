@@ -1,4 +1,4 @@
-# SamplerARVideo
+# Sampler AR Video
 
 Il nodo Sampler AR Video fornisce un metodo di campionamento specializzato per modelli video autoregressivi, come quelli che utilizzano tecniche Causal Forcing o Self-Forcing. Gestisce tutti i parametri relativi al ciclo autoregressivo (AR) direttamente all'interno del workflow, rendendo semplice configurare il modo in cui il modello genera i fotogrammi video un passo alla volta.
 

@@ -1,4 +1,4 @@
-# ImageCropToMask
+# Ritaglia immagine in base alla maschera
 
 Ritaglia un'immagine al bounding box della sua maschera, producendo un soggetto centrato su un colore di sfondo solido. Il nodo compone l'immagine mascherata sopra lo sfondo scelto e ridimensiona il risultato alle dimensioni di output specificate, rendendolo adatto a pipeline 3D che richiedono un soggetto centrato, privo di sfondo, a una risoluzione fissa.
 

@@ -1,4 +1,4 @@
-# Video Slice
+# Taglia Video
 
 Il nodo Video Slice consente di estrarre un segmento specifico da un video. È possibile definire un tempo di inizio e una durata per ritagliare il video, oppure saltare semplicemente i fotogrammi iniziali. Se la durata richiesta è maggiore del video rimanente, il nodo può restituire la parte disponibile oppure generare un errore.
 

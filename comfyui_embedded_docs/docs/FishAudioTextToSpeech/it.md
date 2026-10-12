@@ -1,4 +1,4 @@
-# FishAudioTextToSpeech
+# Fish Audio Testo in voce
 
 Questo nodo converte il testo scritto in audio parlato utilizzando i modelli text-to-speech di Fish Audio. Supporta indicazioni emotive incorporate nel testo ([happy], [whispering] su s2.1-pro; (happy) su s1) e dialoghi multi-voce tramite i tag @Voice1/@Voice2 quando sono collegate più voci. Sono disponibili due modelli: s2.1-pro, che supporta fino a cinque voci e dialoghi multi-voce, e s1, che utilizza un'unica voce opzionale.
 

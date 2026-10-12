@@ -1,4 +1,4 @@
-# TripoPSeriesTextToModelNode
+# Tripo P2: Testo in modello
 
 Genera un modello 3D low-poly con topologia pulita a partire da un prompt testuale usando il modello P2 di Tripo. Il risultato viene restituito come mesh triangolare (GLB) oppure, quando `model.quad` è abilitato, come mesh a dominanza di quad (FBX).
 

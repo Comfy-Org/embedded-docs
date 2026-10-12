@@ -1,4 +1,4 @@
-# WanUni3CControlnetApply
+# Applica Wan Uni3C ControlNet
 
 ## Panoramica
 

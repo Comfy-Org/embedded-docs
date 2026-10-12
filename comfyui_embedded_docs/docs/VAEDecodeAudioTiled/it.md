@@ -1,4 +1,4 @@
-# VAEDecodeAudioTiled
+# Decodifica audio VAE (a blocchi)
 
 Questo nodo converte una rappresentazione audio compressa (campioni latenti) nuovamente in una forma d'onda audio utilizzando un autoencoder variazionale (VAE). Elabora i dati in sezioni più piccole e sovrapposte (tile) per gestire l'uso della memoria, rendendolo adatto a gestire sequenze audio più lunghe. L'audio decodificato viene anche normalizzato per mantenere un livello di volume coerente.
 

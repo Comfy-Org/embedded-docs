@@ -1,4 +1,4 @@
-# OpenAIChatNode
+# OpenAI ChatGPT
 
 Questo nodo genera risposte testuali da un modello OpenAI. Invia il tuo prompt di testo, e opzionalmente immagini o file, a un modello OpenAI e restituisce la risposta testuale generata.
 

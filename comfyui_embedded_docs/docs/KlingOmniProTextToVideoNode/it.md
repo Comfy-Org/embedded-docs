@@ -1,4 +1,4 @@
-# KlingOmniProTextToVideoNode
+# Kling 3.0 Omni Da Testo a Video
 
 Questo nodo genera un video da una descrizione testuale utilizzando il modello Kling AI più recente. Invia il prompt a un'API remota e restituisce il video generato. Puoi controllare durata, formato e qualità del video e, facoltativamente, creare storyboard multi-inquadratura.
 

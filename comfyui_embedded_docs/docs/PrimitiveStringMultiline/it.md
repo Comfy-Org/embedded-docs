@@ -1,4 +1,4 @@
-# PrimitiveStringMultiline
+# Testo (Multilinea)
 
 Il nodo Text (Multiline) fornisce un campo di input di testo multilinea per inserire e passare valori stringa attraverso il flusso di lavoro. Accetta testo che si estende su più righe e restituisce in output lo stesso valore stringa invariato. Questo nodo è utile quando devi fornire contenuti di testo più lunghi o testo formattato su più righe.
 

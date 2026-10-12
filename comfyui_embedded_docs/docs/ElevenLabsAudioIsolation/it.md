@@ -1,4 +1,4 @@
-# ElevenLabsAudioIsolation
+# Isolamento Voce ElevenLabs
 
 Il nodo ElevenLabs Voice Isolation rimuove il rumore di fondo da un file audio, isolando la voce o il parlato. Invia l'audio all'API ElevenLabs per l'elaborazione e restituisce l'audio ripulito.
 

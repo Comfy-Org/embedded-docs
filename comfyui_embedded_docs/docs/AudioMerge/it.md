@@ -1,4 +1,4 @@
-# AudioMerge
+# Unisci Audio
 
 Il nodo AudioMerge combina due tracce audio sovrapponendo le loro forme d'onda. Adatta automaticamente le frequenze di campionamento di entrambi gli input audio e regola le loro lunghezze per renderle uguali prima dell'unione. Il nodo fornisce diversi metodi matematici per combinare i segnali audio e garantisce che l'output rimanga entro livelli di volume accettabili.
 

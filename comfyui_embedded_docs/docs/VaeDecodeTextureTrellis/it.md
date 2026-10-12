@@ -1,4 +1,4 @@
-# VaeDecodeTextureTrellis
+# Decodifica texture VAE Trellis2
 
 ## Input
 

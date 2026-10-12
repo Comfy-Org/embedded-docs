@@ -1,4 +1,4 @@
-# PrunaTextToVideoNode
+# Pruna P-Video-2 Testo in video
 
 Genera un video da un prompt testuale con il modello P-Video-2 di Pruna. Il prompt descrive la scena, il suo movimento e il suo suono, e il nodo genera una propria colonna sonora oppure prende una clip audio che guida il movimento e diventa la colonna sonora.
 

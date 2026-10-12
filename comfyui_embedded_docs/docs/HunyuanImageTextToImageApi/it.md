@@ -1,4 +1,4 @@
-# HunyuanImageTextToImageApi
+# Tencent HY Image: Da testo a immagine
 
 Il nodo Tencent HY Image: Text to Image genera un'immagine da una descrizione testuale con il modello Hunyuan Image di Tencent. Il prompt viene inviato all'API, che lo riscrive e lo espande prima del rendering, e l'immagine finale viene restituita come batch di immagini.
 

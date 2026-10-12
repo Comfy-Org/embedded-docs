@@ -1,4 +1,4 @@
-# SeedVR2Preprocess
+# Pre-elabora Input SeedVR2
 
 Questo nodo prepara un'immagine o un video ridimensionati per il modello SeedVR2 aggiungendo padding fino alla forma attesa dal modello. I valori dei pixel vengono limitati all'intervallo 0-1, altezza e larghezza vengono portate a multipli di 16 tramite padding, e il numero di frame viene aumentato ripetendo l'ultimo frame finché non segue uno schema 4n+1 (1, 5, 9, 13, ...). Il canale alpha viene eliminato durante l'elaborazione; il nodo abbinato Post-Process SeedVR2 Output lo ripristina successivamente dall'immagine ridimensionata originale.
 

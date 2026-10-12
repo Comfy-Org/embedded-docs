@@ -1,4 +1,4 @@
-# ImageStitch
+# Unisci Immagini
 
 Questo nodo consente di unire due immagini tra loro in una direzione specificata (up, down, left, right), con supporto per l'adattamento delle dimensioni e la spaziatura tra le immagini.
 

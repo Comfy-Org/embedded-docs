@@ -1,4 +1,4 @@
-# LoadTrainingDataset
+# Carica Dataset di Addestramento
 
 Questo nodo carica un dataset di addestramento codificato (latents e conditioning) precedentemente salvato su disco. Legge tutti i file di shard dati `shard_*.pkl` da una cartella dataset selezionata nella directory dei dataset e restituisce i vettori latenti e i dati di conditioning combinati per l'uso nei flussi di lavoro di addestramento.
 

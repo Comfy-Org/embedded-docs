@@ -1,4 +1,4 @@
-# WeldVertices
+# Salda vertici
 
 Weld Vertices unisce i vertici coincidenti in una mesh 3D, così le facce che prima avevano punti d'angolo separati finiscono per condividere gli stessi vertici. Raggruppa i vertici vicini usando la quantizzazione su griglia con una tolleranza basata sul bounding box della mesh e calcola la media dei colori dei vertici per ogni gruppo unito. Questo è utile quando una mesh arriva non saldata, cioè ogni faccia ha i propri vertici e nessun bordo condiviso, e può servire come pre-passaggio prima di operazioni che tengono conto della topologia come FillHoles o DecimateMesh.
 

@@ -1,4 +1,4 @@
-# Vidu2StartEndToVideoNode
+# Vidu2 Generazione Video da Frame Iniziale/Finale
 
 Questo nodo genera un video interpolando tra un frame iniziale e un frame finale forniti, guidato da un prompt testuale. Utilizza un modello Vidu specificato per creare una transizione fluida tra le due immagini per una durata impostata.
 

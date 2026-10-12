@@ -1,4 +1,4 @@
-# LTXVAddLatentGuide
+# LTXV Aggiungi guida latent
 
 Il nodo LTXV Add Latent Guide fissa un latente già codificato come guida, per quando la guida proviene da uno stadio precedente anziché da un'immagine. Ha lo stesso effetto di LTXV Add Guide senza il ciclo di decodifica/codifica VAE. Una guida spazialmente più piccola del target (un riferimento IC-LoRA o di dettaglio) viene dilatata su una griglia sparsa, e le sue posizioni finali RoPE vengono espanse dello stesso rapporto, in modo che copra il canvas di destinazione invece di indirizzare solo l'angolo in alto a sinistra.
 

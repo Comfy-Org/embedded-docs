@@ -1,4 +1,4 @@
-# LoadVideoTextDataSetFromFolder
+# Carica Video-Testo (da Cartella)
 
 Questo nodo carica file video e le relative didascalie testuali corrispondenti da una cartella all'interno della directory di input di ComfyUI, restituendoli come due liste: video e didascalie. Le voci video sono riferimenti lazy, quindi i fotogrammi vengono decodificati solo quando un nodo a valle ne ha bisogno. I formati supportati sono MP4, AVI, MOV, WEBM, MKV e FLV, e sono supportate anche cartelle annidate con un prefisso di conteggio delle ripetizioni (ad esempio `5_classname/`, come usato da strumenti come kohya-ss/sd-scripts).
 

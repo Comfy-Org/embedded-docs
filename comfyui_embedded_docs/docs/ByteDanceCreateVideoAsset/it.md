@@ -1,4 +1,4 @@
-# ByteDanceCreateVideoAsset
+# ByteDance Crea Asset Video
 
 Questo nodo crea un asset video personale per Seedance 2.0. Carica il video di input e lo registra all'interno di uno specifico gruppo di asset. Se non fornisci un ID gruppo, ti guiderà attraverso un processo di verifica dell'identità della persona reale nel browser per creare prima un nuovo gruppo.
 

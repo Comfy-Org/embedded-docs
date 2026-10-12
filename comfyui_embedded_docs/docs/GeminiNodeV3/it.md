@@ -1,4 +1,4 @@
-# GeminiNodeV3
+# Google Gemini
 
 Genera risposte testuali con i modelli Gemini di Google. Fornisci un prompt testuale e, facoltativamente, una o più immagini, clip audio, video o file come contesto multimodale. Il modello selezionato determina quali impostazioni aggiuntive vengono visualizzate.
 

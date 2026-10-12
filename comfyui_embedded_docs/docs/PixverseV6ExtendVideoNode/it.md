@@ -1,4 +1,4 @@
-# PixverseV6ExtendVideoNode
+# PixVerse V6 Estendi video
 
 Questo nodo continua un video esistente usando il modello PixVerse V6, generando facoltativamente una traccia audio nativa insieme alla continuazione. Il video di origine deve essere più corto di 40 secondi e non più grande di 1920 pixel su ciascun lato. L'output mantiene la risoluzione del video di origine, quindi l'impostazione quality controlla la qualità con cui viene renderizzata la continuazione, non la dimensione del fotogramma.
 

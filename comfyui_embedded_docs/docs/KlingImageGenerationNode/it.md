@@ -1,4 +1,4 @@
-# KlingImageGenerationNode
+# Kling 3.0 Immagine
 
 Il nodo Kling Image Generation genera immagini da prompt testuali con l'opzione di usare un'immagine di riferimento come guida. Crea una o più immagini in base alla descrizione testuale e alle impostazioni di riferimento, quindi restituisce le immagini generate come output.
 

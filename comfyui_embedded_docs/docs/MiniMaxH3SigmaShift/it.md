@@ -1,4 +1,4 @@
-# MiniMaxH3SigmaShift
+# ModelSamplingMiniMaxH3
 
 Imposta i valori di spostamento del flusso video e audio per un modello MiniMax H3. Lo spostamento video controlla il programma sigma del sampler, ed entrambi i valori di spostamento vengono passati al transformer interno del modello, che li usa per derivare il programma audio dalla griglia di base condivisa.
 

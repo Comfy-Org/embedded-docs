@@ -1,4 +1,4 @@
-# KlingTextToVideoWithAudio
+# Kling 2.6 Da Testo a Video con Audio
 
 Il nodo Kling Text to Video with Audio genera un breve video da una descrizione testuale. Invia una richiesta al servizio Kling AI, che elabora il prompt e restituisce un file video. Il nodo può anche generare l'audio di accompagnamento per il video in base al testo.
 

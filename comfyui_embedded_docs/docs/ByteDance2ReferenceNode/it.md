@@ -1,4 +1,4 @@
-# ByteDance2ReferenceNode
+# ByteDance Seedance 2.5 Da riferimento a video (Legacy)
 
 ## Input
 

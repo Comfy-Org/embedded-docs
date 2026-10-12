@@ -1,4 +1,4 @@
-# GeminiNanoBanana2V2
+# Nano Banana 2
 
 Questo nodo genera o modifica immagini inviando un prompt testuale all'API Vertex AI di Google tramite i modelli di immagini Gemini. Crea nuove immagini da una descrizione o modifica immagini esistenti usando immagini di riferimento opzionali.
 

@@ -1,4 +1,4 @@
-# LTXAVTextEncoderLoader
+# Carica codificatore testo audio LTXV
 
 Questo nodo carica un codificatore di testo specializzato per il modello audio LTXV. Combina un file di codificatore di testo con un file checkpoint per creare un modello CLIP utilizzato per il condizionamento testuale nella generazione audio. Secondo la descrizione del nodo, il codificatore di testo dovrebbe essere un modello Gemma 3 12B o un Gemma 4 corrispondente.
 

@@ -1,4 +1,4 @@
-# QwenImageEditApi
+# Qwen Image 3 Modifica
 
 Questo nodo utilizza i modelli Qwen-Image 3.0 per modificare o combinare fino a 3 immagini di riferimento guidate da un prompt testuale. Selezioni un modello, fornisci il prompt e le immagini di riferimento, e il nodo restituisce una o più immagini generate.
 

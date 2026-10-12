@@ -1,4 +1,4 @@
-# PairConditioningCombine
+# Cond Pair Combine
 
 Il nodo PairConditioningCombine unisce due coppie separate di condizionamento (ciascuna composta da un condizionamento positivo e uno negativo) in un'unica coppia combinata. Riceve il condizionamento positivo e negativo da due sorgenti diverse e li combina usando la logica interna di ComfyUI, restituendo un condizionamento positivo finale e un condizionamento negativo finale. Questo nodo è sperimentale ed è progettato per flussi di lavoro avanzati di manipolazione del condizionamento.
 

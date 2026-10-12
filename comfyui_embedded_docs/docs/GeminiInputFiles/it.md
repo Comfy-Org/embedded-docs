@@ -1,4 +1,4 @@
-# GeminiInputFiles
+# Gemini Input Files
 
 Carica e formatta i file di input per l'uso con l'API Gemini. Questo nodo consente agli utenti di includere file di testo (.txt) e PDF (.pdf) come contesto di input per il modello Gemini. I file vengono convertiti nel formato appropriato richiesto dall'API e possono essere concatenati per includere più file in un'unica richiesta.
 

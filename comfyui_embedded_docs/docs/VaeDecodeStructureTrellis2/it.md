@@ -1,4 +1,4 @@
-# VaeDecodeStructureTrellis2
+# Decodifica struttura VAE Trellis2
 
 Questo nodo converte i campioni latenti della struttura Trellis in una griglia voxel 3D utilizzando il decodificatore di struttura di un VAE. Legge solo i primi 8 canali del latente, ricostruisce l'occupazione dei voxel e regola la risoluzione di output a 32 o 64 come richiesto.
 

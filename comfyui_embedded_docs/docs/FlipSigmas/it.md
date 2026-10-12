@@ -1,4 +1,4 @@
-# FlipSigmas
+# Inverti Sigmas
 
 Il nodo `FlipSigmas` è progettato per manipolare la sequenza di valori sigma utilizzata nei modelli di diffusione, invertendone l'ordine e assicurando che il primo valore sia diverso da zero se originariamente zero. Questa operazione è cruciale per adattare i livelli di rumore in ordine inverso, facilitando il processo di generazione nei modelli che operano riducendo gradualmente il rumore dai dati.
 

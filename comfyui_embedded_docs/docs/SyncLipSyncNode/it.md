@@ -1,4 +1,4 @@
-# SyncLipSyncNode
+# sync.so Lip Sync
 
 Questo nodo risincronizza il movimento della bocca in un video con un nuovo audio del parlato utilizzando l'API sync.so. Gestisce automaticamente primi piani, profili e ostruzioni preservando l'espressione del parlante. Il costo è proporzionale alla durata dell'output.
 

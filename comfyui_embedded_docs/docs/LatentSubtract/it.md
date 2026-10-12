@@ -1,4 +1,4 @@
-# LatentSubtract
+# Sottrai Latent
 
 Il nodo LatentSubtract è progettato per sottrarre una rappresentazione latente da un'altra. Questa operazione può essere utilizzata per manipolare o modificare le caratteristiche degli output dei modelli generativi, rimuovendo efficacemente caratteristiche o attributi rappresentati in uno spazio latente da un altro.
 

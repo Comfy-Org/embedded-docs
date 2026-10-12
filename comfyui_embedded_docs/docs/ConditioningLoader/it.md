@@ -1,4 +1,4 @@
-# ConditioningLoader
+# Carica Conditioning
 
 Questo nodo carica dalla cartella embeddings un conditioning salvato in precedenza con il nodo Save Conditioning, oppure qualsiasi file safetensors che contenga un tensore `conditioning`. Ripristina inoltre eventuali opzioni extra e valori di liste numerate memorizzati insieme al conditioning.
 

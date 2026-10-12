@@ -1,4 +1,4 @@
-# LoraLoaderBypass
+# Carica LoRA (Bypass) (per debug)
 
 Il nodo LoraLoaderBypass applica un LoRA (Low-Rank Adaptation) a un modello di diffusione e a un modello CLIP in una speciale modalità "bypass". A differenza di un caricatore LoRA standard, questo metodo non modifica in modo permanente i pesi del modello base. Calcola invece il risultato aggiungendo il contributo del LoRA al normale passaggio forward del modello, il che è utile per l'addestramento o quando si lavora con modelli i cui pesi sono in offload.
 

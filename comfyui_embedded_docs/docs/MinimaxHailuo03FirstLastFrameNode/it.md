@@ -1,4 +1,4 @@
-# MinimaxHailuo03FirstLastFrameNode
+# MiniMax H3 Da Primo-Ultimo Frame a Video
 
 Questo nodo genera un video a partire da un'immagine del primo frame e, facoltativamente, da un'immagine dell'ultimo frame usando i modelli MiniMax H3. Il selettore `model` cambia quali impostazioni e vincoli di generazione si applicano, e il rapporto d'aspetto del video generato segue le immagini fornite.
 

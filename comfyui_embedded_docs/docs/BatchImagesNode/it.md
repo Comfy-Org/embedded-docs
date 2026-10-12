@@ -1,4 +1,4 @@
-# BatchImagesNode
+# Batch Immagini
 
 Il nodo Batch Images combina più immagini singole in un singolo batch. Riceve un numero variabile di input immagine e li restituisce come un unico tensore di immagini in batch, consentendo di elaborarli insieme nei nodi successivi.
 

@@ -1,4 +1,4 @@
-# Preview3DAdvanced
+# Anteprima 3D (Avanzata)
 
 Questo nodo mostra un'anteprima di un modello 3D nell'interfaccia utente senza salvare il file nella cartella di output di ComfyUI. Salva il modello in un file temporaneo e inoltra i dati del modello, le informazioni sul modello, le informazioni sulla camera e le dimensioni dell'anteprima per ulteriori elaborazioni a valle.
 

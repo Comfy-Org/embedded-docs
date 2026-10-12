@@ -1,4 +1,4 @@
-# SetHookKeyframes
+# Imposta Keyframe Hook
 
 Il nodo Set Hook Keyframes consente di applicare la schedulazione dei keyframe ai gruppi di hook esistenti. Riceve un gruppo di hook e, facoltativamente, applica informazioni di temporizzazione dei keyframe per controllare quando i diversi hook vengono eseguiti durante il processo di generazione. Quando vengono forniti dei keyframe, il nodo clona il gruppo di hook e imposta la temporizzazione dei keyframe su tutti gli hook all'interno del gruppo.
 

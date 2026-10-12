@@ -1,4 +1,4 @@
-# Preview3D
+# Anteprima 3D e animazione (DEPRECATO)
 
 Il nodo Preview3D è principalmente utilizzato per visualizzare in anteprima gli output di modelli 3D. Questo nodo accetta due input: uno è `camera_info` dal nodo Load3D, e l'altro è il percorso del file del modello 3D. Il percorso del file del modello deve trovarsi nella cartella `ComfyUI/output`.
 

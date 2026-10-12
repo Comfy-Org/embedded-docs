@@ -1,4 +1,4 @@
-# CenterCropImages
+# Ritaglia Immagine (Centro)
 
 Il nodo Center Crop Images ritaglia un'immagine dal centro secondo una larghezza e un'altezza specificate. Calcola la regione centrale dell'immagine di input ed estrae un'area rettangolare delle dimensioni definite. Se la dimensione di ritaglio richiesta è maggiore dell'immagine, il ritaglio verrà limitato ai bordi dell'immagine.
 

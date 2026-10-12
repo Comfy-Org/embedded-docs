@@ -1,4 +1,4 @@
-# ImageRGBToYUV
+# Converti Immagine da RGB a YUV
 
 Il nodo ImageRGBToYUV converte un'immagine RGB in componenti di colore in stile YUV usando una conversione di colore da RGB a YCbCr. Suddivide il risultato in tre immagini separate — Y (luminanza, o luminosità), U (crominanza della differenza blu) e V (crominanza della differenza rossa) — e restituisce ciascuna componente con la stessa larghezza e altezza dell'input.
 

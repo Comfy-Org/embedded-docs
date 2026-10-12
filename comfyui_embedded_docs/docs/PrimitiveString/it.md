@@ -1,4 +1,4 @@
-# PrimitiveString
+# Testo
 
 Il nodo Text offre un modo semplice per inserire e trasmettere dati testuali nel flusso di lavoro. Accetta una stringa di testo come input e restituisce la stessa stringa invariata, rendendolo utile per fornire input testuali ad altri nodi che richiedono parametri di tipo stringa.
 

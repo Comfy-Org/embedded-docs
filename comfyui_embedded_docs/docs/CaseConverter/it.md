@@ -1,4 +1,4 @@
-# CaseConverter
+# Converti Maiuscole/Minuscole
 
 Il nodo Case Converter trasforma le stringhe di testo in diversi formati di maiuscole/minuscole. Riceve una stringa di input e la converte in base alla modalità selezionata, producendo una stringa di output con la formattazione di maiuscole/minuscole specificata applicata. Il nodo supporta quattro diverse opzioni di conversione delle maiuscole/minuscole per modificare la capitalizzazione del testo.
 

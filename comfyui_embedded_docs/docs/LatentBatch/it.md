@@ -1,4 +1,4 @@
-# LatentBatch
+# Batch Latent (DEPRECATO)
 
 Il nodo LatentBatch è progettato per unire due insiemi di campioni latenti in un unico batch, ridimensionando potenzialmente un insieme per adattarlo alle dimensioni dell'altro prima della concatenazione. Questa operazione facilita la combinazione di diverse rappresentazioni latenti per ulteriori attività di elaborazione o generazione.
 

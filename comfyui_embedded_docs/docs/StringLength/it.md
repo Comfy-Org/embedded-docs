@@ -1,4 +1,4 @@
-# StringLength
+# Lunghezza Testo
 
 Il nodo StringLength calcola il numero di caratteri in una stringa di testo. Accetta qualsiasi input di testo e restituisce il conteggio totale dei caratteri, inclusi spazi e punteggiatura. È utile per misurare la lunghezza del testo o verificare i requisiti relativi alla dimensione della stringa.
 

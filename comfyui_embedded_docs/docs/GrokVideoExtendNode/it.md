@@ -1,4 +1,4 @@
-# GrokVideoExtendNode
+# Grok Video Extend
 
 Il nodo Grok Video Extend estende un video esistente con una continuazione fluida basata su un prompt testuale. Fornisci un breve video sorgente e descrivi cosa dovrebbe accadere successivamente; il nodo restituisce una nuova clip video che continua dall'originale.
 

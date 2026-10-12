@@ -1,4 +1,4 @@
-# TextToUppercase
+# Converti Testo in Maiuscolo (DEPRECATO)
 
 Il nodo Text to Uppercase accetta un input testuale e converte tutti i suoi caratteri in maiuscolo. È una semplice utilità di elaborazione del testo che modifica la capitalizzazione della stringa fornita.
 

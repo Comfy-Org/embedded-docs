@@ -1,4 +1,4 @@
-# PairConditioningSetProperties
+# Cond Pair Set Props
 
 Il nodo **PairConditioningSetProperties** consente di modificare contemporaneamente le proprietà delle coppie di condizionamento positivo e negativo. Applica regolazioni dell'intensità, impostazioni dell'area di condizionamento e controlli opzionali di mascheramento o temporizzazione a entrambi gli input di condizionamento, restituendo i dati di condizionamento positivo e negativo modificati.
 

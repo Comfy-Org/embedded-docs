@@ -1,4 +1,4 @@
-# DecimateMesh
+# Decima mesh
 
 Semplifica una mesh 3D a un numero target di facce usando la semplificazione QEM (quadric error metric), eseguendo il calcolo sul dispositivo di calcolo attivo. La modalità di posizionamento `"midpoint"` è il preset fedele a cumesh che offre la migliore qualità preservando al contempo le caratteristiche sottili come i capelli, mentre `"qem"` posiziona i vertici nella posizione ottimale secondo QEM con controlli opzionali per linee e bordi di feature. La mesh di output rimane saldata.
 

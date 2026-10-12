@@ -1,4 +1,4 @@
-# RemoveBackground
+# Rimuovi Sfondo
 
 ## Panoramica
 

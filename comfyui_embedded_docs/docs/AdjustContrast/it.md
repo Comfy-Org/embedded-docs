@@ -1,4 +1,4 @@
-# AdjustContrast
+# Regola Contrasto
 
 Il nodo Adjust Contrast regola il contrasto di un'immagine di input scalando la differenza tra le aree chiare e scure attorno al punto medio dell'intervallo di colore. Un fattore pari a 1.0 lascia l'immagine invariata, i valori inferiori a 1.0 riducono il contrasto, mentre i valori superiori a 1.0 aumentano il contrasto.
 

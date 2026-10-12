@@ -1,4 +1,4 @@
-# EmptyHiDreamO1LatentImage
+# Immagine Latent Vuota HiDream-O1
 
 Questo nodo crea un'immagine latente vuota nello spazio dei pixel per il modello HiDream-O1-Image. Genera un tensore vuoto di zeri che funge da punto di partenza per la generazione dell'immagine, con dimensioni definite dagli input width, height e batch_size.
 
