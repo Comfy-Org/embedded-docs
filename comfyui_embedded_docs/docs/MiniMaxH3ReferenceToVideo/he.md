@@ -1,4 +1,4 @@
-# MiniMaxH3ReferenceToVideo
+# MiniMax H3 Reference to Video
 
 MiniMax H3 Reference to Video יוצר את התניית הטקסט ואת ה-latent הריק של אודיו-וידאו הדרוש ליצירת וידאו לפי עזר (reference-to-video) של MiniMax H3. אתם מספקים פרומפט בתוספת תמונות, סרטונים וקטעי אודיו עזר אופציונליים, והצומת מקודד את ערכי העזר הללו להתניה שהמודל יכול להשתמש בה במהלך היצירה. הפרומפט מתייחס לערכי העזר באמצעות התגיות `<Picture i>`, `<Video k>` ו-`<Audio j>`.
 

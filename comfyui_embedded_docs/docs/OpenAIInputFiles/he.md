@@ -1,4 +1,4 @@
-# OpenAIInputFiles
+# OpenAI ChatGPT קבצי קלט
 
 טוען ומפרמט קובצי קלט עבור OpenAI API. צומת זה מכין קובצי טקסט (.txt) וקובצי PDF (.pdf) לשילוב כקלטי הקשר עבור צומת OpenAI Chat. המודל של OpenAI יקרא את הקבצים בעת יצירת תגובה. ניתן לשרשר יחד מספר צמתי OpenAI Input Files כדי לכלול מספר קבצים בהודעה אחת.
 

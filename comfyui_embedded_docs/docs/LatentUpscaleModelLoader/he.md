@@ -1,4 +1,4 @@
-# LatentUpscaleModelLoader
+# טעינת מודל הגדלת latent
 
 צומת `LatentUpscaleModelLoader` טוען מודל המתמחה בהגדלת ייצוגי latent מקובץ המאוחסן בתיקיית `latent_upscale_models` של ComfyUI. הוא מזהה אוטומטית את ארכיטקטורת המודל מתוך תוכן הקובץ (Hunyuan Video 720p, Hunyuan Video 1080p או Latent Upsampler) ומגדיר את המודל הפנימי המתאים, כך שהתוצאה מוכנה לשימוש על ידי צמתים אחרים.
 

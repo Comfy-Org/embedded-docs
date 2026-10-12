@@ -1,4 +1,4 @@
-# TemporalScoreRescaling
+# TSR - Temporal Score Rescaling
 
 צומת זה מחיל Temporal Score Rescaling (TSR) על מודל דיפוזיה. הוא מבצע patch למודל כך שבמהלך הדגימה, הציון או הרעש החזויים מכווננים מחדש (rescaled) כדי לכוונן את המגוון של התוצאות המיוצרות. הדבר מיושם כפונקציה מסוג post-CFG (Classifier-Free Guidance).
 

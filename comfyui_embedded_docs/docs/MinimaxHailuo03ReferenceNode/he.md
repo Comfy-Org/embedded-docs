@@ -1,4 +1,4 @@
-# MinimaxHailuo03ReferenceNode
+# MiniMax H3 רפרנס לווידאו
 
 צומת זה יוצר סרטון באמצעות מודלי MiniMax H3, בהתבסס על תמונות, סרטונים ואודיו כקלטי עזר. בפרומפט מפנים לקלטי העזר לפי סדר החיבור שלהם: "Image 1", "Image 2", "Video 1", "Audio 1", וכן הלאה. שני מודלים זמינים: "MiniMax H3" ו-"MiniMax H3 Max".
 

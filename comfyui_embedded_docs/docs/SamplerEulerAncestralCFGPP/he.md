@@ -1,4 +1,4 @@
-# SamplerEulerAncestralCFGPP
+# SamplerEulerAncestralCFG++
 
 הצומת SamplerEulerAncestralCFG++ יוצר סמפלר שמשתמש בשיטת Euler Ancestral עם הנחיה ללא מסווג (CFG++) ליצירת תמונות. סמפלר זה משלב טכניקות דגימה ancestral עם התניית הנחיה כדי לייצר וריאציות תמונה מגוונות תוך שמירה על קוהרנטיות, ומאפשר כוונון עדין באמצעות פרמטרים השולטים בהתאמות של רעש וגודל צעד.
 

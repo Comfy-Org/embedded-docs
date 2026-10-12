@@ -1,4 +1,4 @@
-# ZImageFunControlnet
+# החלת Fun ControlNet
 
 ZImageFunControlnet מחיל patch של רשת בקרה על מודל בסיס כדי שיוכל להנחות את תהליך יצירת התמונה או העריכה. הוא משלב מודל, patch של מודל ו-VAE, ומאפשר לשלוט בעוצמת ההשפעה של אפקט הבקרה על התוצאה. קלטים אופציונליים של תמונה, תמונת inpainting ומסכה מאפשרים עריכות ממוקדות יותר. הצומת עובד עם patches של Z-Image ControlNet ועם patches של Qwen Image 2.1 Fun ControlNet הנטענים דרך הצומת Load Model Patch.
 

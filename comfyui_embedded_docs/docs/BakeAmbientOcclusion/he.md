@@ -1,4 +1,4 @@
-# BakeAmbientOcclusion
+# אפיית חסימת אור סביבתית
 
 מבצע אפייה של מפת ambient-occlusion מרשת high-poly אל פריסת ה-UV של רשת low-poly. הפלט הוא תמונה בגווני אפור שבה טקסלים לבנים הם פתוחים וטקסלים כהים נמצאים בשקעים; היא מיועדת לקלט ה-occlusion של הצומת Apply Texture To Mesh. חברו את רשת ה-low-poly עם פריסת ה-UV ואת רשת ה-high-poly שממנה בוצע הפישוט (decimation).
 

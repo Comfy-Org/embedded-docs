@@ -1,4 +1,4 @@
-# ByteDance2ReferenceNodeV2
+# ByteDance Seedance 2.5 הפניה לווידאו
 
 ByteDance Seedance 2.5 Reference to Video יוצר, עורך או מאריך סרטונים באמצעות מודלים של ByteDance Seedance (Seedance 2.5, 2.5 Draft, 2.0, 2.0 Fast ו-2.0 Mini) בהנחיית פרומפט טקסטואלי ותמונות, סרטונים, אודיו או נכסי ספרייה שהועלו קודם לכן כקלטי עזר אופציונליים. הוא מעלה את קלטי העזר, שולח משימת יצירה, ממתין להשלמתה ומחזיר את קובץ הווידאו המוגמר. בחירת `Seedance 2.5 Draft` מרנדרת במקום זאת תצוגה מקדימה מהירה ב-480p; חברו את `draft_task_id` שמתקבל אל הצומת ByteDance Seedance 2.5 Draft to Final Video כדי לרנדר את התוצר הסופי ב-1080p.
 

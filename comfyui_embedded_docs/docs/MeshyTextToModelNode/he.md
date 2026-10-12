@@ -1,4 +1,4 @@
-# MeshyTextToModelNode
+# Meshy: Text to Model
 
 הצומת Meshy: Text to Model משתמש ב-API של Meshy כדי ליצור מודל תלת-ממדי מתיאור טקסטואלי. הוא שולח בקשה ל-API עם ההנחיה וההגדרות שלך, ואז ממתין להשלמת היצירה ומוריד את קבצי המודל שהתקבלו.
 

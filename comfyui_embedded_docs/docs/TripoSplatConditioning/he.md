@@ -1,4 +1,4 @@
-# TripoSplatConditioning
+# TripoSplat Conditioning
 
 צומת זה מקודד תמונת קלט באמצעות מקודד התמונות DINOv3 ו-VAE של Flux2 כדי להפיק נתוני התניה חיוביים ושליליים עבור מודל TripoSplat. הוא גם יוצר יעד רעש בגודל קבוע (latent בתוספת נתוני מצלמה) שמשמש כנקודת התחלה עבור KSampler.
 

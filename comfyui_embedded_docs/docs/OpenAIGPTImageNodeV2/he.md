@@ -1,4 +1,4 @@
-# OpenAIGPTImageNodeV2
+# OpenAI GPT Image 2.5
 
 צומת זה יוצר תמונות באמצעות ה-API של GPT Image מבית OpenAI. הוא תומך בחמישה מודלים — `gpt-image-2.5-flare`, `gpt-image-2.5-sunburst`, `gpt-image-2`, `gpt-image-1.5`, ו-`gpt-image-1` — מאפשר לצרף תמונות עזר לעריכת תמונות, ויכול להשתמש במסכה כדי לציין אילו חלקים מהתמונה להחליף.
 

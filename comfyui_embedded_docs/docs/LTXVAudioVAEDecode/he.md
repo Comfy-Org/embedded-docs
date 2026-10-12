@@ -1,4 +1,4 @@
-# LTXVAudioVAEDecode
+# LTXV Audio VAE Decode
 
 צומת LTXV Audio VAE Decode ממיר ייצוג לטנטי של אודיו בחזרה לצורת גל אודיו. הוא משתמש במודל Audio VAE ייעודי כדי לבצע את תהליך הפענוח, ומפיק פלט אודיו עם קצב הדגימה המשויך לו.
 

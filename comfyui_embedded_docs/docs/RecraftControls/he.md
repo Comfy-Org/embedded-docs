@@ -1,4 +1,4 @@
-# RecraftControls
+# Recraft בקרות
 
 יוצר Recraft Controls להתאמה אישית של יצירת Recraft. צומת זה מאפשר לך להגדיר הגדרות צבע שישמשו במהלך תהליך יצירת התמונה של Recraft.
 

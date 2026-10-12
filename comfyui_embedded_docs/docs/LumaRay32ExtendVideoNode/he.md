@@ -1,4 +1,4 @@
-# LumaRay32ExtendVideoNode
+# Luma Ray 3.2 הארכת וידאו
 
 Luma Ray 3.2 Extend Video ממשיך יצירת וידאו קודמת של Luma Ray 3.2 על ידי יצירת מקטע חדש באורך 5 שניות, או אחרי הקליפ המקורי (forward) או לפניו (backward). חבר את הפלט `generation_id` מצומת Luma Ray 3.2 קודם כדי להשתמש בקליפ הזה כפריים ההתחלתי (forward) או כפריים הסיום (backward) של ההארכה. ההארכות הן תמיד באורך 5 שניות.
 

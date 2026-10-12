@@ -1,4 +1,4 @@
-# PiDConditioning
+# PiD Conditioning
 
 מצרף latent וערך degrade_sigma ל-CONDITIONING כך שניתן להשתמש בו לפענוח PiD או להגדלה. זה מאפשר לך לשלוט במידת ההידרדרות של ה-latent לפני עיבודו.
 

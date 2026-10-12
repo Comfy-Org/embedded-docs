@@ -1,4 +1,4 @@
-# GrokVideoEditNode
+# Grok עריכת וידאו
 
 ## קלטים
 

@@ -1,4 +1,4 @@
-# CLIPTextEncodePixArtAlpha
+# קידוד טקסט CLIP (PixArt Alpha)
 
 מקודד טקסט ומגדיר את התניית הרזולוציה עבור PixArt Alpha. צומת זה מעבד קלט טקסט ומוסיף מידע של רוחב וגובה כדי ליצור נתוני התניה במיוחד עבור מודלים של PixArt Alpha. הוא אינו חל על מודלים של PixArt Sigma.
 

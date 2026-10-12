@@ -1,4 +1,4 @@
-# ModelAttentionBackend
+# מנגנון הקשב של המודל
 
 צומת זה בוחר את מימוש הקשב הצפוף (dense attention) עבור מודל, משכפל את המודל, מחיל את ה-backend שנבחר ומחזיר את השכפול המעודכן. כאשר משתמשים בו עם Block Sparse Attention, ה-backend הזה משמש בכל פעם שקשב sparse אינו פעיל או אינו נתמך. אם ה-backend שנבחר אינו זמין, הצומת עובר באופן אוטומטי ל-PyTorch attention.
 

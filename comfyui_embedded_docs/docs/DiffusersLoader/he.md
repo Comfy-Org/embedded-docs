@@ -1,4 +1,4 @@
-# DiffusersLoader
+# טען מודל Diffusers (לא בשימוש)
 
 The DiffusersLoader node טוען מודלים מאומנים מראש השמורים בפורמט diffusers. הוא מחפש בתיקיות `diffusers` המוגדרות אחר תיקיות המכילות קובץ `model_index.json`, מאפשר לבחור אחת מהן, וטוען אותה כרכיבי MODEL, CLIP ו-VAE המשמשים בתהליך העיבוד. צומת זה הוצא משימוש, אך נשאר זמין לתאימות עם מודלים של Hugging Face diffusers.
 

@@ -1,4 +1,4 @@
-# HypernetworkLoader
+# טעינת Hypernetwork
 
 צומת זה יזהה מודלים הממוקמים בתיקייה `ComfyUI/models/hypernetworks`, וכן יקרא מודלים מנתיבים נוספים המוגדרים בקובץ extra_model_paths.yaml. לעיתים, ייתכן שתצטרך **לרענן את ממשק ComfyUI** כדי לאפשר לו לקרוא את קבצי המודל מהתיקייה המתאימה.
 

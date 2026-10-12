@@ -1,4 +1,4 @@
-# GeminiVideoOmniV2
+# Google Gemini Omni (וידאו)
 
 Google Gemini Omni (Video) יוצר סרטון עם שמע מתוך פרומפט טקסט באמצעות מודלי Gemini Omni Flash של Google. ניתן לצרף תמונות ו/או סרטוני עזר כדי להנחות את התוצאה או לערוך חומר קיים. תארו את האורך הרצוי (3-10 שניות) ישירות בפרומפט.
 

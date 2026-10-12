@@ -1,4 +1,4 @@
-# MediaPipeFaceLandmarker
+# זיהוי נקודות פנים (MediaPipe)
 
 ## סקירה כללית
 

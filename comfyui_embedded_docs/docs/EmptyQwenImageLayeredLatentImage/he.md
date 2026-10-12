@@ -1,4 +1,4 @@
-# EmptyQwenImageLayeredLatentImage
+# Empty Qwen Image Layered Latent
 
 הצומת Empty Qwen Image Layered Latent מכין את הבד הריק שעליו מצייר המודל Qwen-Image-Layered. אפשר לחשוב עליו כעל ערימה של דפי שרטוט נקיים מהודקים יחד לפי סדר: המודל ממלא את הדף הראשון בתמונה השלמה, וכל דף אחריו בחלק אחד מאותה תמונה. הצומת הזה קובע כמה גדולים הדפים וכמה מהם יש. הוא עצמו אינו מצייר דבר.
 

@@ -1,4 +1,4 @@
-# HunyuanImageTextToImageApi
+# Tencent HY Image: טקסט לתמונה
 
 הצומת Tencent HY Image: Text to Image מייצר תמונה מתיאור טקסט באמצעות מודל Hunyuan Image של Tencent. ההנחיה נשלחת ל-API, שמשכתב ומרחיב אותה לפני הרינדור, והתמונה המוגמרת מוחזרת כמקבץ תמונות.
 

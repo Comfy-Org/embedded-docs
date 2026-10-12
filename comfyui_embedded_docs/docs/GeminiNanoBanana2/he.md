@@ -1,4 +1,4 @@
-# GeminiNanoBanana2
+# Nano Banana 2
 
 ## קלטים
 

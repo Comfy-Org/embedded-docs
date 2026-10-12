@@ -1,4 +1,4 @@
-# HeyGenTalkingPhotoNode
+# HeyGen Talking Photo
 
 ## קלטים
 

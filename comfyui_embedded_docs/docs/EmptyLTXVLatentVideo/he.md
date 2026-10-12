@@ -1,4 +1,4 @@
-# EmptyLTXVLatentVideo
+# וידאו latent ריק של LTXV
 
 הצומת EmptyLTXVLatentVideo יוצר טנזור וידאו סמוי (latent) ריק (מלא באפסים) באמצעות ה-`width`, ה-`height`, ה-`length` וגודל ה-batch (`batch_size`) שאתה מציין. הוא מספק נקודת התחלה ריקה לתהליכי יצירת וידאו LTXV, כאשר ממדי ה-latent נדחסים אוטומטית ביחס לגודל הווידאו המבוקש.
 

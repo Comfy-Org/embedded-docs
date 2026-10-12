@@ -1,4 +1,4 @@
-# PixverseTemplateNode
+# PixVerse Template
 
 צומת PixVerse Template מאפשר לך לבחור מבין התבניות הזמינות ליצירת וידאו של PixVerse. הוא ממיר את שם התבנית שנבחרה למזהה התבנית המתאים שנדרש על ידי PixVerse API ליצירת וידאו.
 

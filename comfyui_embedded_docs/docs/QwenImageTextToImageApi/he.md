@@ -1,4 +1,4 @@
-# QwenImageTextToImageApi
+# Qwen Image 3 Text to Image
 
 Qwen Image 3 Text to Image מייצר תמונה אחת או יותר מתוך הנחיית טקסט באמצעות המודלים Qwen-Image 3.0. אתם בוחרים מודל ומספקים הנחיה, והצומת מחזיר את התמונות שנוצרו כאצווה.
 

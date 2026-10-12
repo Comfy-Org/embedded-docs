@@ -1,4 +1,4 @@
-# VOIDQuadmaskPreprocess
+# מעבד קדם Quadmask של VOID
 
 ## סקירה
 

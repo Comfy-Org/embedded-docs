@@ -1,4 +1,4 @@
-# SelectVAEDevice
+# בחר התקן VAE
 
 ## סקירה כללית
 

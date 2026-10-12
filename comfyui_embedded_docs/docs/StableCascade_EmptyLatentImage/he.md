@@ -1,4 +1,4 @@
-# StableCascade_EmptyLatentImage
+# תמונת latent ריקה של stable cascade
 
 צומת StableCascade_EmptyLatentImage יוצר טנזורים לטנטיים ריקים עבור מודלים של Stable Cascade. הוא מייצר שני ייצוגים לטנטיים נפרדים - אחד עבור שלב C ואחד עבור שלב B - עם ממדים המחושבים מרזולוציית הקלט ומהגדרות הדחיסה. צומת זה מספק נקודת התחלה עבור צינור היצירה של Stable Cascade.
 

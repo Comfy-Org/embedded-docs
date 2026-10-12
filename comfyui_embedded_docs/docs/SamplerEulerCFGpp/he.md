@@ -1,4 +1,4 @@
-# SamplerEulerCFGpp
+# SamplerEulerCFG++
 
 הצומת SamplerEulerCFGpp מספק שיטת דגימה Euler CFG++ ליצירת פלטים. צומת זה מציע שתי גרסאות מימוש שונות של סמפלר Euler CFG++ שניתן לבחור לפי העדפת המשתמש.
 

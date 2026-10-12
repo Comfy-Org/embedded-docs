@@ -1,6 +1,6 @@
-# KlingOmniProTextToVideoNode
+# Kling 3.0 Omni טקסט לוידאו
 
-This node generates a video from a text description using the latest Kling AI model. It sends your prompt to a remote API and returns the generated video. You can control the video's length, shape, and quality, and optionally build multi-shot storyboards.
+צומת זה יוצר וידאו מתיאור טקסטואלי באמצעות מודל Kling AI העדכני ביותר. הוא שולח את הפרומפט שלך ל-API מרוחק ומחזיר את הווידאו שנוצר. באפשרותך לשלוט באורך, בצורה ובאיכות של הווידאו, ובאופן אופציונלי לבנות סטוריבורדים מרובי מקטעים.
 
 ## קלטים
 

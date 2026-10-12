@@ -1,4 +1,4 @@
-# CheckpointSave
+# שמירת Checkpoint
 
 הצומת `Save Checkpoint` מיועד לשמור מודל Stable Diffusion שלם (כולל רכיבי UNet, CLIP ו-VAE) כקובץ צ'קפוינט בפורמט **.safetensors**.
 

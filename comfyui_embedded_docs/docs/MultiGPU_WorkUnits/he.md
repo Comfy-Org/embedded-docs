@@ -1,4 +1,4 @@
-# MultiGPU_WorkUnits
+# פיצול תור CFG לריבוי GPU
 
 ## סקירה כללית:
 

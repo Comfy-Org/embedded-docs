@@ -1,4 +1,4 @@
-# ElevenLabsSpeechToSpeech
+# ElevenLabs דיבור לדיבור
 
 צומת ElevenLabs Speech to Speech ממיר קובץ אודיו קלט מקול אחד לקול אחר. הוא משתמש ב-API של ElevenLabs כדי להמיר דיבור תוך שמירה על התוכן המקורי והטון הרגשי של האודיו.
 

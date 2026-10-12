@@ -1,4 +1,4 @@
-# RecraftStyleV3InfiniteStyleLibrary
+# Recraft Style - ספריית סגנונות אינסופית
 
 צומת זה מאפשר לך לבחור סגנון מתוך ספריית הסגנונות האינסופית של Recraft (Infinite Style Library) באמצעות UUID קיים מראש. הוא מאחזר את פרטי הסגנון על סמך מזהה הסגנון שסופק ומחזיר אותם לשימוש בצמתי Recraft אחרים.
 

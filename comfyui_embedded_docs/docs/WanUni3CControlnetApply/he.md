@@ -1,4 +1,4 @@
-# WanUni3CControlnetApply
+# הפעלת Wan Uni3C ControlNet
 
 ## סקירה
 

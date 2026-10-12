@@ -1,4 +1,4 @@
-# SelectCLIPDevice
+# בחר התקן CLIP
 
 ## סקירה כללית
 

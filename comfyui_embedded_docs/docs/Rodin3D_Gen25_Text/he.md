@@ -1,4 +1,4 @@
-# Rodin3D_Gen25_Text
+# Rodin 3D Gen-2.5 - טקסט ל-3D
 
 ## סקירה כללית
 

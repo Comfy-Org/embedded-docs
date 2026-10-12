@@ -1,4 +1,4 @@
-# LTXVSeparateGeneratedKeyframes
+# LTXV הפרדת פריימים מרכזיים שנוצרו
 
 ## סקירה כללית
 

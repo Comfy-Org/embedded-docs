@@ -1,4 +1,4 @@
-# RecraftStyleV3DigitalIllustration
+# Recraft Style - איור דיגיטלי
 
 צומת זה מגדיר סגנון לשימוש עם Recraft API, ובאופן ספציפי בוחר את הסגנון `digital_illustration`. הוא מאפשר לבחור תת-סגנון אופציונלי כדי לחדד עוד יותר את הכיוון האמנותי של התמונה שנוצרת.
 

@@ -1,4 +1,4 @@
-# QuiverTextToSVGNode
+# Quiver Text ל-SVG
 
 צומת Quiver Text to SVG יוצר תמונת Scalable Vector Graphic (SVG) מתיאור טקסטואלי באמצעות המודלים של Quiver AI. באפשרותך לספק באופן אופציונלי תמונות עזר והוראות סגנון כדי להנחות את תהליך היצירה.
 

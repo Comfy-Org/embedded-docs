@@ -1,4 +1,4 @@
-# TripoSmartSegmentNode
+# Tripo: פילוח חכם
 
 מפצל מודל תלת-ממדי לחלקים בעלי משמעות סמנטית ונותן שם לכל חלק. הוא יכול לסגמנט מודל קיים (המסופק באמצעות מזהה משימה) או תחילה ליצור מודל מתמונה ואז לסגמנט אותו. ניתן להשתמש ב-`segment task_id` המתקבל בצמתי Tripo אחרים, כגון Complete Mesh Parts, Retopology, Texture model ו-Convert model, באותו אופן כמו תוצאת Tripo: Segment Model.
 

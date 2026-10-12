@@ -1,4 +1,4 @@
-# OpticalFlowLoader
+# טעינת מודל Optical Flow
 
 טוען מודל זרימה אופטית (optical flow) מתיקיית `models/optical_flow/`. נכון לעכשיו, נתמך רק פורמט RAFT-large של torchvision, שהוא המודל שבו משתמש הצומת VOIDWarpedNoise. ComfyUI לא מוריד משקולות זרימה אופטית באופן אוטומטי; עליך למקם את קובץ ה-checkpoint באופן ידני בתיקיית `models/optical_flow/`.
 

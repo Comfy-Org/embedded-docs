@@ -1,4 +1,4 @@
-# ReveImageCreateNode
+# יצירת תמונה ב-Reve
 
 ## קלטים
 

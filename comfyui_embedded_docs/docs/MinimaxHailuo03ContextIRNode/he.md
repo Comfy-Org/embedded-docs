@@ -1,4 +1,4 @@
-# MinimaxHailuo03ContextIRNode
+# MiniMax H3 Context IR (משפר פרומפט)
 
 ## סקירה כללית
 

@@ -1,4 +1,4 @@
-# ImageOnlyCheckpointLoader
+# טעינת Checkpoint תמונה בלבד (מודל img2vid)
 
 צומת זה יזהה מודלים הממוקמים בתיקייה `ComfyUI/models/checkpoints`, וכן יקרא מודלים מנתיבים נוספים המוגדרים בקובץ extra_model_paths.yaml. לעיתים ייתכן שתצטרך **לרענן את ממשק ComfyUI** כדי לאפשר לו לקרוא את קובצי המודל מהתיקייה המתאימה.
 

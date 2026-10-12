@@ -1,4 +1,4 @@
-# HunyuanVideo15LatentUpscaleWithModel
+# הגדלת latent של Hunyuan Video 1.5 באמצעות מודל
 
 הצומת Hunyuan Video 15 Latent Upscale With Model מגדיל את הרזולוציה של ייצוג תמונה לטנטי. תחילה הוא מגדיל את דגימות ה-latent לגודל מוגדר באמצעות שיטת אינטרפולציה נבחרת, ולאחר מכן מעדן את התוצאה המוגדלת באמצעות מודל הגדלה ייעודי של Hunyuan Video 1.5 לשיפור האיכות.
 

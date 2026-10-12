@@ -1,4 +1,4 @@
-# LTXVAudioVAELoader
+# טעינת LTXV Audio VAE
 
 צומת LTXV Audio VAE Loader טוען מודל Audio Variational Autoencoder (VAE) מאומן מראש מקובץ צ'קפוינט. הוא קורא את הצ'קפוינט שצוין, שומר את משקלי ה-Audio VAE וה-vocoder, ומכין את המודל לשימוש בזרימות עבודה של יצירה או עיבוד אודיו בתוך ComfyUI.
 

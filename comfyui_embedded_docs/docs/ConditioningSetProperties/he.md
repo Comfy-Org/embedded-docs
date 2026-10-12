@@ -1,4 +1,4 @@
-# ConditioningSetProperties
+# מאפייני סט תנאים
 
 ## קלטים
 

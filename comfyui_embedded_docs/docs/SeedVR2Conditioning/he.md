@@ -1,4 +1,4 @@
-# SeedVR2Conditioning
+# החלת SeedVR2 Conditioning
 
 בונה קונדישנינג חיובי ושלילי מ-latent של VAE לשימוש עם מודל SeedVR2. הוא מאמת את ה-latent של הקלט ואת מבנה המודל, מוסיף ערוץ מסכה ל-latent, ומחזיר את שני פלטי הקונדישנינג.
 

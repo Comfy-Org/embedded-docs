@@ -1,4 +1,4 @@
-# PixverseV6ImageToVideoNode
+# PixVerse V6 תמונה לווידאו
 
 ## קלטים
 

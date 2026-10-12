@@ -1,4 +1,4 @@
-# ConditioningLoader
+# טעינת התניה
 
 ## קלטים
 

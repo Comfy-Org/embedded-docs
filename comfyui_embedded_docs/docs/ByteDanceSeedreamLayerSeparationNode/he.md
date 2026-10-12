@@ -1,4 +1,4 @@
-# ByteDanceSeedreamLayerSeparationNode
+# ByteDance Seedream 5.0 Pro הפרדת שכבות (מדור קודם)
 
 ByteDance Seedream 5.0 Pro Layer Separation מפרק תמונה ללוחית רקע בתוספת עד 16 שכבות שקופות הניתנות למיקום מחדש, כאשר לכל אחת סדר ערימה, תיבה תוחמת, שם ותיאור. הוא מחזיר את הרקע, תמונות לכל שכבה עם מסכות, תיבות מיקום ומחסנית שכבות מוכנה לעריכה.
 

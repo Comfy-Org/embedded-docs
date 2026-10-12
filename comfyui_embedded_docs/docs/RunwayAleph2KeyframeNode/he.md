@@ -1,4 +1,4 @@
-# RunwayAleph2KeyframeNode
+# Runway Aleph2 Keyframe
 
 צומת Runway Aleph2 Keyframe מעגן תמונת הנחיה לרגע מסוים בסרטון הקלט שלך, כך שמודל Aleph2 מנווט את העריכה בנקודה זו בצילום שלך. חבר צומת זה לקלט `keyframes` של הצומת Runway Aleph2 Video to Video, ושרשר כמה צמתים יחד (עד 5) באמצעות קלט `keyframes` האופציונלי.
 

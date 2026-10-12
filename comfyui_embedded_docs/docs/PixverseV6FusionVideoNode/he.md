@@ -1,4 +1,4 @@
-# PixverseV6FusionVideoNode
+# PixVerse V6 Fusion (מייחוס לווידאו)
 
 PixVerse V6 Fusion (Reference to Video) מרכיב סרטון מנושאי עזר, רקעים וסרטוני עזר באמצעות PixVerse. ממקמים רפרנס בסצינה על ידי אזכור שמו בפרומפט, לדוגמה '@Subject1 walks through @Background1'. חיבור סרטון עזר מפעיל את המודל במצב Omni, שבו אורך הפלט תואם לסרטון העזר הארוך ביותר.
 

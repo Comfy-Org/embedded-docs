@@ -1,4 +1,4 @@
-# ByteDance2FirstLastFrameNode
+# ByteDance Seedance 2.0 מהפריים הראשון-לאחרון לווידאו
 
 ## קלטים
 

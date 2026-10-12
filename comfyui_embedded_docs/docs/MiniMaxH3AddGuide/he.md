@@ -1,4 +1,4 @@
-# MiniMaxH3AddGuide
+# הוספת הנחיה עבור MiniMax H3
 
 ## קלטים
 

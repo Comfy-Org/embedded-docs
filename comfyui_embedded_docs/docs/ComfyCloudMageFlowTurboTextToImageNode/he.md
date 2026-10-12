@@ -1,4 +1,4 @@
-# ComfyCloudMageFlowTurboTextToImageNode
+# Comfy Cloud Mage Flow Turbo טקסט לתמונה [BETA]
 
 צומת Comfy Cloud זה מייצר תמונה מתוך הנחיית טקסט באמצעות תהליך העבודה Mage-Flow Turbo (`mage-flow-turbo/text-to-image`). הוא מריץ גרסה מזוקקת של מודל Mage-Flow שמייצרת את התמונה ב-4 שלבים בערך cfg של 1, וצורך בערך שביעית מזמן ה-GPU של מעבר מלא של Mage-Flow, מה שהופך אותו לגרסה המיועדת לאיטרציה מהירה.
 

@@ -1,4 +1,4 @@
-# MagnificImageSkinEnhancerNode
+# Magnific Image Skin Enhancer
 
 הצומת Magnific Image Skin Enhancer מיישם עיבוד בינה מלאכותית ייעודי על תמונות פורטרט כדי לשפר את מראה העור. הוא מציע שלושה מצבים נפרדים למטרות שיפור שונות: creative לאפקטים אמנותיים, faithful לשימור המראה המקורי, ו-flexible לשיפורים ממוקדים כמו תאורה או ריאליזם. הצומת מעלה את התמונה ל-API חיצוני לעיבוד ומחזיר את התוצאה המשופרת.
 

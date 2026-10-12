@@ -1,4 +1,4 @@
-# ByteDance2TextToVideoNode
+# ByteDance Seedance 2.0 טקסט לווידאו
 
 צומת זה יוצר סרטון מפרומפט טקסטואלי באמצעות המודלים Seedance 2.5 או 2.0 של ByteDance. הוא שולח את הפרומפט למודל הנבחר, ממתין לסיום עיבוד הסרטון ומחזיר את קובץ הסרטון שנוצר. בחירת המודל `Seedance 2.5 Draft` מרנדרת במקום זאת תצוגה מקדימה מהירה באיכות 480p; חברו את `draft_task_id` המתקבל לצומת ByteDance Seedance 2.5 Draft to Final Video כדי לרנדר את הגרסה הסופית באיכות 1080p.
 

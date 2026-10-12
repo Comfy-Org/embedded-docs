@@ -1,4 +1,4 @@
-# FishAudioVoiceSelector
+# בורר קולות Fish Audio
 
 צומת Fish Audio Voice Selector בוחר קול מספריית Fish Audio להפקת דיבור מטקסט. באפשרותך לבחור אחד מהקולות המוגדרים מראש המובנים, או לבחור "custom" כדי להזין כל מזהה מודל קול מ-fish.audio.
 

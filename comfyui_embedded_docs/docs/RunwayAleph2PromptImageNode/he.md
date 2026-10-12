@@ -1,4 +1,4 @@
-# RunwayAleph2PromptImageNode
+# Runway Aleph2 Prompt Image
 
 צומת זה מעגן תמונת הנחיה לרגע מסוים בסרטון הפלט, ובכך שולט כיצד נראה הסרטון הערוך באותו רגע. חבר צומת זה לקלט `prompt_images` של צומת Runway Aleph2 Video to Video, ושרשר יחד מספר צמתים (עד 5) באמצעות קלט `prompt_images` האופציונלי.
 

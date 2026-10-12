@@ -1,4 +1,4 @@
-# EmptyFlux2LatentImage
+# Empty Flux 2 Latent
 
 הצומת Empty Flux 2 Latent יוצר ייצוג לטנטי ריק המלא באפסים. הוא משמש כנקודת התחלה עבור תהליך הסרת הרעש של מודל Flux. ממדי הלטנט נלקחים מהקלטים `width` ו-`height`, כאשר כל אחד מהם מחולק ב-16.
 

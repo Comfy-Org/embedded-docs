@@ -1,4 +1,4 @@
-# ReferenceLatent
+# הגדרת latent ייחוס
 
 צומת זה מגדיר את ה-latent המנחה עבור מודל עריכה. הוא מקבל נתוני conditioning וקלט latent אופציונלי, ואז משנה את ה-conditioning כך שיכלול מידע latent של עזר. אם המודל תומך בכך, ניתן לשרשר מספר צמתי Set Reference Latent כדי להגדיר מספר תמונות עזר.
 

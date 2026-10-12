@@ -1,4 +1,4 @@
-# MiniMaxMusic3TextEncode
+# MiniMax Music3 קידוד טקסט
 
 MiniMax Music3 Text Encode משתמש במודל MiniMax Music3 CLIP כדי להמיר כיתובי טקסט ומילות שיר לרצף התניה אקוסטי ליצירת מוזיקה. הצומת מחזיר את נתוני ה-CONDITIONING המתקבלים, יחד עם משך האודיו בפועל בשניות, המחושב מתוך משך הזמן המקסימלי שהוזן.
 

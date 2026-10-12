@@ -1,8 +1,8 @@
 # UnetLoader
 
-The UNETLoader node is designed for loading U-Net models by name, facilitating the use of pre-trained U-Net architectures within the system.
+צומת UNETLoader נועד לטעון מודלים של U-Net לפי שם, ומאפשר להשתמש בארכיטקטורות U-Net מאומנות מראש בתוך המערכת.
 
-This node will detect models located in the `ComfyUI/models/diffusion_models` folder.
+הצומת יזהה מודלים הממוקמים בתיקייה `ComfyUI/models/diffusion_models`.
 
 ## קלטים
 

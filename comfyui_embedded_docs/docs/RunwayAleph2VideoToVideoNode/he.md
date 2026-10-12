@@ -1,4 +1,4 @@
-# RunwayAleph2VideoToVideoNode
+# Runway Aleph2 וידאו לוידאו
 
 ## סקירה כללית
 

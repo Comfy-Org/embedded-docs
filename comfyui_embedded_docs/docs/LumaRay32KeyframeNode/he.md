@@ -1,4 +1,4 @@
-# LumaRay32KeyframeNode
+# Luma Ray 3.2 פריים מפתח
 
 צומת זה מעגן תמונת מדריך למיקום מסוים על ציר הזמן של סרטון הפלט של Luma Ray 3.2. חברו צומת זה לקלט "keyframes" של הצומת Luma Ray 3.2 Keyframes to Video, ושרשרו מספר פריימים מרכזיים יחד על ידי חיבור הקלט האופציונלי "keyframes".
 

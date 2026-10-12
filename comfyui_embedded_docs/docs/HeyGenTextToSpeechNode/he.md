@@ -1,4 +1,4 @@
-# HeyGenTextToSpeechNode
+# HeyGen Text to Speech
 
 סנתז אודיו של דיבור מתוך טקסט באמצעות מנוע Starfish TTS של HeyGen. צומת זה כולל את הקולות הפופולריים ביותר של HeyGen ב-17 שפות.
 

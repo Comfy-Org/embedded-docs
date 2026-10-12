@@ -1,4 +1,4 @@
-# MoGePanoramaInference
+# הרץ MoGe Panorama Inference
 
 ## קלטים
 

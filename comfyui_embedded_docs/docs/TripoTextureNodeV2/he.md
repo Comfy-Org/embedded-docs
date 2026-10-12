@@ -1,4 +1,4 @@
-# TripoTextureNodeV2
+# Tripo: הוספת מרקם למודל
 
 ## קלטים
 

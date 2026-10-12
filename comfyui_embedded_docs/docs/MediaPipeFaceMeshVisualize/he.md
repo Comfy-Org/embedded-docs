@@ -1,4 +1,4 @@
-# MediaPipeFaceMeshVisualize
+# הדמיית נקודות פנים (MediaPipe)
 
 ## סקירה כללית
 

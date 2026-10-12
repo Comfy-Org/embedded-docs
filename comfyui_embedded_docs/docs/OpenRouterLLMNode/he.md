@@ -1,4 +1,4 @@
-# OpenRouterLLMNode
+# OpenRouter LLM
 
 צומת OpenRouter LLM שולח הנחיית טקסט לקבוצה מובחרת של מודלי שפה פופולריים הזמינים דרך שירות OpenRouter ומחזיר את תגובת הטקסט שנוצרה. הוא תומך במודלים מבית Anthropic (Claude), OpenAI (GPT), Google (Gemini), xAI (Grok), DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) ו-Perplexity Sonar, ויכול לכלול באופן אופציונלי תמונות או סרטונים כקלטי עזר בבקשה.
 

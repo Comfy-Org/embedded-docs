@@ -1,4 +1,4 @@
-# MediaPipeFaceMask
+# ציור מסכת פנים (MediaPipe)
 
 ## סקירה כללית
 

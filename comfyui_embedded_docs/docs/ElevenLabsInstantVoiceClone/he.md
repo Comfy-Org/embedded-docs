@@ -1,4 +1,4 @@
-# ElevenLabsInstantVoiceClone
+# ElevenLabs שיבוט קול מיידי
 
 צומת ElevenLabs Instant Voice Clone יוצר מודל קולי חדש וייחודי על ידי ניתוח של בין 1 ל-8 הקלטות אודיו של קולו של אדם. הוא שולח דגימות אלה ל-API של ElevenLabs, שמעבד אותן כדי ליצור שיבוט קולי שניתן להשתמש בו לסינתזת טקסט לדיבור.
 

@@ -1,4 +1,4 @@
-# PatchModelAddDownscale
+# PatchModelAddDownscale (Kohya Deep Shrink)
 
 PatchModelAddDownscale (Kohya Deep Shrink) מיישם את טכניקת Kohya Deep Shrink על מודל על ידי כיווץ מאפייני ביניים בבלוק נבחר ואז החזרתם לגודלם המקורי. הכיווץ מתרחש רק במהלך חלק נבחר מתהליך הסרת הרעש, מה שיכול להפחית את עלות העיבוד תוך שמירה על התוצאה הסופית קרובה למקור.
 

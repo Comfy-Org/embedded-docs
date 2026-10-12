@@ -1,4 +1,4 @@
-# ElevenLabsAudioIsolation
+# בידוד קול ElevenLabs
 
 צומת ElevenLabs Voice Isolation מסיר רעשי רקע מקובץ אודיו, תוך בידוד הווקאל או הדיבור. הוא שולח את האודיו ל-API של ElevenLabs לעיבוד ומחזיר את האודיו הנקי.
 

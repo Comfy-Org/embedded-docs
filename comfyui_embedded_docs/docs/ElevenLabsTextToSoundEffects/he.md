@@ -1,4 +1,4 @@
-# ElevenLabsTextToSoundEffects
+# ElevenLabs טקסט לאפקטים קוליים
 
 הצומת ElevenLabs Text to Sound Effects מייצר אפקטי קול אודיו מתוך תיאור טקסטואלי. הוא משתמש ב־ElevenLabs API כדי ליצור אפקטי קול על בסיס ההנחיה שלך, ומאפשר לשלוט במשך, בהתנהגות הלופ ובמידת ההתאמה של הצליל לטקסט.
 
