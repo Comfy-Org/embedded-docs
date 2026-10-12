@@ -79,10 +79,47 @@ class DescriptionExtractionTests(unittest.TestCase):
         desc = sc.get_description_from_content("这是第一句话。第二句话。")
         self.assertEqual(desc, "这是第一句话。")
 
-    def test_truncation_aligned_to_180(self):
+    def test_truncation_stays_within_the_160_char_window(self):
         long = "Word " * 100
         desc = sc.get_description_from_content(long)
-        self.assertLessEqual(len(desc), 180)
+        self.assertLessEqual(len(desc), sc.MAX_DESCRIPTION_CHARS)
+        self.assertTrue(desc.endswith("Word"))
+
+    def test_truncation_does_not_end_mid_word(self):
+        # A single long sentence: the cut must land on a word boundary instead
+        # of slicing "Latent Apply Operation or La".
+        sentence = (
+            "This node creates a latent operation that blends a latent toward a reference latent, "
+            "and returns that operation so it can be plugged into the Latent Apply Operation node."
+        )
+        desc = sc.get_description_from_content(sentence)
+        self.assertLessEqual(len(desc), sc.MAX_DESCRIPTION_CHARS)
+        # The cut must land between words/clauses, never inside one.
+        self.assertFalse(sentence[len(desc)].isalnum())
+
+    def test_localized_sentence_break_without_ascii_uppercase(self):
+        # Korean starts the next sentence with a non-ASCII letter, which the
+        # uppercase lookahead never matched: the page fell through to a hard
+        # 180-char cut and lost the summary mid-sentence.
+        content = (
+            "이 노드는 레이턴트를 참조 레이턴트 쪽으로 블렌딩합니다. "
+            + "참조가 다른 공간 크기를 가질 경우 크기가 조정됩니다. " * 6
+        )
+        desc = sc.get_description_from_content(content)
+        self.assertEqual(desc, "이 노드는 레이턴트를 참조 레이턴트 쪽으로 블렌딩합니다.")
+        self.assertLessEqual(len(desc), sc.MAX_DESCRIPTION_CHARS)
+
+    def test_korean_disclaimer_is_skipped(self):
+        content = "> 이 문서는 AI가 생성했습니다.\n\n이 노드는 이미지의 밝기를 조정합니다."
+        self.assertEqual(
+            sc.get_description_from_content(content), "이 노드는 이미지의 밝기를 조정합니다."
+        )
+
+    def test_truncation_keeps_versions_intact(self):
+        # A period inside "2.5" is not a sentence ender.
+        content = "It supports Seedance 2.5, 2.5 Draft, 2.0 and 2.1 with reference images for video."
+        desc = sc.get_description_from_content(content)
+        self.assertNotIn("2.", desc[-2:])
 
 
 class PurgeNavTests(unittest.TestCase):
