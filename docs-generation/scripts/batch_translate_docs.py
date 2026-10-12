@@ -101,6 +101,11 @@ _PREAMBLE_PATTERNS: dict[str, list[str]] = {
     'tr': [r'^İşte çeviri', r'^Çeviri sonucu'],
     'pt-BR': [r'^Aqui está a tradução', r'^Esta é a tradução'],
     'fa': [r'^این ترجمه', r'^در زیر ترجمه'],
+    'de': [r'^Hier ist die Übersetzung', r'^Hier ist die deutsche',
+           r'^Übersetzung der', r'^Übersetzung:', r'^Deutsche Übersetzung'],
+    'he': [r'^הנה התרגום', r'^להלן התרגום', r'^הרי התרגום', r'^תרגום ה'],
+    'it': [r'^Ecco la traduzione', r'^Ecco il documento', r'^Traduzione di',
+           r'^Di seguito la traduzione'],
 }
 
 
@@ -200,7 +205,7 @@ def _fix_output_names_in_translation(translated_content: str, full_en: str) -> s
     # Match any known heading for "Outputs" in any language
     # (includes pt-BR "Saídas"; heading values come from translation_config.json)
     tr_outputs_match = re.search(
-        r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Saídas|Outputs|المخرجات|Çıktılar|خروجی‌ها)\s*\n(.*?)(?=\n##|\Z)',
+        r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Saídas|Ausgaben|פלטים|Outputs|Output|المخرجات|Çıktılar|خروجی‌ها)\s*\n(.*?)(?=\n##|\Z)',
         translated_content, re.DOTALL
     )
     if not tr_outputs_match:

@@ -29,7 +29,7 @@ TRANSLATIONS_FILE = NODE_TRANSLATIONS
 TRANSLATIONS_MAX_AGE_HOURS = 12
 
 # Supported languages
-SUPPORTED_LANGS = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa']
+SUPPORTED_LANGS = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa', 'de', 'he', 'it']
 
 # The shared node_translations.json is also consumed by lib/doc_title.py,
 # which relies on the English display_name as fallback. Always include 'en'
@@ -90,9 +90,9 @@ def extract_table_rows(content, table_type='inputs'):
     """Extract rows from Inputs or Outputs table"""
     # Find the table section
     if table_type == 'inputs':
-        pattern = r'##\s+(?:输入|輸入|入力|입력|Входы|Entradas|Entrées|Inputs|المدخلات|Girdiler|ورودی‌ها)\s*\n\n(.*?)(?=\n##|\Z)'
+        pattern = r'##\s+(?:输入|輸入|入力|입력|Входы|Entradas|Entrées|Eingaben|קלטים|Inputs|Input|المدخلات|Girdiler|ورودی‌ها)\s*\n\n(.*?)(?=\n##|\Z)'
     else:
-        pattern = r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Saídas|Outputs|المخرجات|Çıktılar|خروجی‌ها)\s*\n\n(.*?)(?=\n##|\Z)'
+        pattern = r'##\s+(?:输出|輸出|出力|출력|Выходы|Salidas|Sorties|Saídas|Ausgaben|פלטים|Outputs|Output|المخرجات|Çıktılar|خروجی‌ها)\s*\n\n(.*?)(?=\n##|\Z)'
     
     match = re.search(pattern, content, re.DOTALL)
     if not match:

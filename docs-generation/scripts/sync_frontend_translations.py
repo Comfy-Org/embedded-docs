@@ -29,7 +29,7 @@ load_dotenv()
 DOCS_ROOT = embedded_docs_dir()
 
 # Supported languages
-SUPPORTED_LANGS = ['en', 'zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa']
+SUPPORTED_LANGS = ['en', 'zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa', 'de', 'he', 'it']
 
 def load_frontend_translations(frontend_path, lang, use_remote=False):
     """Load translations for a language from the frontend repo (remote or local)"""

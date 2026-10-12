@@ -62,6 +62,12 @@ PREAMBLE_SENTENCES: dict[str, list[str]] = {
            r"^Elbette"],
     "pt-BR": [r"^Aqui está a tradução", r"^Esta é a tradução", r"^A seguir.*?tradução"],
     "fa": [r"^این ترجمه", r"^در زیر ترجمه", r"^ترجمه زیر", r"^در ادامه ترجمه"],
+    "de": [r"^Hier ist die Übersetzung", r"^Hier ist die deutsche", r"^Deutsche Übersetzung",
+           r"^Übersetzung der", r"^Übersetzung des", r"^Dies ist die Übersetzung"],
+    "he": [r"^הנה התרגום", r"^להלן התרגום", r"^הרי התרגום", r"^התרגום הבא",
+           r"^תרגום ה"],
+    "it": [r"^Ecco la traduzione", r"^Ecco il documento", r"^Traduzione di",
+           r"^Di seguito la traduzione", r"^Ecco la versione"],
 }
 
 # Shape B openers: expert-role lines
@@ -70,6 +76,8 @@ ROLE_LINES = [
     r"^あなたは", r"^당신은", r"^Ты .*?переводчик", r"^Вы .*?переводчик",
     r"^Sen .*?çevirmen", r"^Vous êtes", r"^Eres un experto", r"^你是一位", r"^你是一名",
     r"^ComfyUI düğüm belgelerini", r"^Como tradutor",
+    r"^Sie sind ein.*?(?:Übersetzer|Experte)", r"^Du bist ein.*?Übersetzer",
+    r"^Sei un.*?(?:traduttore|esperto)", r"^אתה מתרגם", r"^אתה מומחה",
 ]
 
 # Shape B: rules headings
@@ -77,6 +85,7 @@ RULES_HEADINGS = [
     "قواعد الترجمة", "قواعد ترجمه", "翻訳ルール", "翻译规则", "翻譯規則", "번역 규칙",
     "Правила перевода", "правила перевода", "Translation rules", "Çeviri kuralları",
     "Reglas de traducción", "Règles de traduction", "قوانین ترجمه", "翻譯規則：",
+    "Übersetzungsregeln", "Regole di traduzione", "כללי תרגום",
 ]
 
 # Shape B: closing instruction line
@@ -85,6 +94,8 @@ PLEASE_LINES = [
     "翻訳してください", "다음을 번역", "переведите следующий", "aşağıdaki metni çevir",
     "traduce el siguiente", "请翻译以下", "請翻譯以下", "please translate",
     "الرجاء ترجمة الوثيقة", "traduza o seguinte",
+    "bitte übersetze", "übersetzen sie den folgenden", "übersetze den folgenden",
+    "traduci il seguente", "traduci la seguente", "אנא תרגם", "תרגם את המסמך",
 ]
 
 COMPILED_SENTENCES = {lang: [re.compile(p) for p in pats] for lang, pats in PREAMBLE_SENTENCES.items()}
@@ -97,10 +108,13 @@ RULES_HEADING_RE = re.compile(
 DISCLAIMER_LINK_RE = re.compile(
     r"(Edit on GitHub|تحرير على GitHub|GitHub で編集|GitHub에서 편집|在 GitHub 上编辑|"
     r"在 GitHub 上編輯|Редактировать на GitHub|GitHub'ta düzenle|Editar en GitHub|"
-    r"Modifier sur GitHub|ویرایش در GitHub)", re.I)
+    r"Modifier sur GitHub|ویرایش در GitHub|Auf GitHub bearbeiten|Modifica su GitHub|"
+    r"עריכה ב-GitHub)", re.I)
 DISCLAIMER_MARK_RE = re.compile(
     r"(AI-generated|تم إنشاؤه|تم إنشاء|AI 生成|AI가 생성|AI에 의해 생성|Создано ИИ|"
-    r"generado por IA|généré par IA|AI によって生成|تولید شده توسط هوش مصنوعی|AI tarafından)", re.I)
+    r"generado por IA|généré par IA|AI によって生成|تولید شده توسط هوش مصنوعی|AI tarafından|"
+    r"von KI generiert|KI-generiert|generato dall'IA|generata dall'IA|"
+    r"נוצר על ידי בינה מלאכותית)", re.I)
 
 
 def _disclaimer_in_tail(lines: list[str]) -> bool:

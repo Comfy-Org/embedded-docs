@@ -32,7 +32,7 @@ from lib.paths import TRANSLATION_CONFIG, embedded_docs_dir, load_dotenv
 load_dotenv()
 
 DOCS_PATH = embedded_docs_dir()
-DOC_LANGS = ["en", "zh", "zh-TW", "es", "fr", "ja", "ko", "ru", "ar", "tr", "pt-BR", "fa"]
+DOC_LANGS = ["en", "zh", "zh-TW", "es", "fr", "ja", "ko", "ru", "ar", "tr", "pt-BR", "fa", "de", "he", "it"]
 
 
 def resolve_en_source_hex(node_name: str, hash_mode: HashMode) -> Optional[str]:

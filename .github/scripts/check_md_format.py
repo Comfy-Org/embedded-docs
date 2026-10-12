@@ -41,6 +41,14 @@ TRANSLATED_TYPES = {
     "モデル", "画像", "文字列", "整数", "マスク", "モデル",
     "이미지", "모델", "문자열", "정수", "마스크",
     "模型", "图像", "字符串", "遮罩", "蒙版",
+    # de
+    "BILD", "BILDER", "ZEICHENKETTE", "MASKE", "MODELL", "BEDINGUNG",
+    "KONDITIONIERUNG", "BOOLESCH", "GANZE ZAHL", "GLEITKOMMA",
+    # it
+    "IMMAGINE", "IMMAGINI", "STRINGA", "STRINGHE", "MASCHERA", "MODELLO",
+    "CONDIZIONAMENTO", "LATENTE", "BOOLEANO", "INTERO", "DECIMALE",
+    # he
+    "תמונה", "מחרוזת", "מסכה", "מודל", "התניה", "לטנט", "בוליאני",
 }
 
 # NOTE: parameter and output NAMES in the Inputs/Outputs tables are deliberately
@@ -53,7 +61,8 @@ TRANSLATED_TYPES = {
 
 # Languages whose Required column must NOT contain English Yes/No.
 # (es "No", fr "Non", pt-BR "Não" are valid localizations.)
-EN_RESIDUE_LANGS = {"zh", "zh-TW", "ja", "ko", "ru", "ar", "tr", "fa", "pt-BR"}
+EN_RESIDUE_LANGS = {"zh", "zh-TW", "ja", "ko", "ru", "ar", "tr", "fa", "pt-BR",
+                   "de", "he", "it"}
 
 FP_RE = re.compile(r"Source fingerprint[^\n]*`([a-f0-9]{64})`")
 
@@ -76,6 +85,8 @@ OUTPUTS_HEADINGS = {
     "Çıktılar",
     # fa
     "خروجی‌ها",
+    # de / he / it
+    "Ausgaben", "פלטים", "Output",
 }
 
 
