@@ -2,7 +2,7 @@
 
 Dieser Node ist darauf ausgelegt, CLIP-Vision-Ausgaben in den Konditionierungsprozess zu integrieren und den Einfluss dieser Ausgaben anhand angegebener Stärke- und Rausch-Augmentierungsparameter anzupassen. Er reichert die Konditionierung mit visuellem Kontext an und verbessert so den Generierungsprozess.
 
-## Inputs
+## Eingaben
 
 | Parameter | Beschreibung | Comfy dtype |
 | --- | --- | --- |
@@ -11,7 +11,7 @@ Dieser Node ist darauf ausgelegt, CLIP-Vision-Ausgaben in den Konditionierungspr
 | `strength` | Bestimmt die Intensität des Einflusses der CLIP-Vision-Ausgabe auf die Konditionierung. | `FLOAT` |
 | `noise_augmentation` | Gibt den Grad der Rausch-Augmentierung an, der auf die CLIP-Vision-Ausgabe angewendet wird, bevor sie in die Konditionierung integriert wird. | `FLOAT` |
 
-## Outputs
+## Ausgaben
 
 | Parameter | Beschreibung | Comfy dtype |
 | --- | --- | --- |
