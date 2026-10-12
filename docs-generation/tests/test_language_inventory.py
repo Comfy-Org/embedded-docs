@@ -17,6 +17,7 @@ from __future__ import annotations
 import importlib.util
 import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -148,6 +149,34 @@ class LocalizedHeadingTests(unittest.TestCase):
             with self.subTest(lang=lang):
                 rows, _ = upt.extract_table_rows(content, "inputs")
                 self.assertIsNotNone(rows, f"'## {entry['heading_inputs']}' not found")
+
+    def test_inputs_rename_reaches_the_table_for_every_locale(self):
+        """The rename loop is gated on the localized Inputs heading.
+
+        ``extract_table_rows`` knowing a heading is not enough: the loop that
+        rewrites parameter names opens the section with its own pattern, so a
+        locale missing from it keeps English parameter names while the step
+        still reports success.
+        """
+        for lang, entry in CONFIG.items():
+            with self.subTest(lang=lang), tempfile.TemporaryDirectory() as tmp:
+                doc = Path(tmp) / f"{lang}.md"
+                doc.write_text(
+                    f"## {entry['heading_inputs']}\n\n"
+                    "| Name | Data Type | Description |\n"
+                    "|------|-----------|-------------|\n"
+                    "| `model` | MODEL | localized |\n",
+                    encoding="utf-8",
+                )
+                frontend = {lang: {"KSampler": {"inputs": {"model": {"name": "renamed"}}}}}
+                updated, _ = upt.update_doc_with_translations(
+                    doc, "KSampler", lang, frontend, dry_run=False
+                )
+                self.assertTrue(
+                    updated,
+                    f"'## {entry['heading_inputs']}' did not open the Inputs section",
+                )
+                self.assertIn("| `renamed` |", doc.read_text(encoding="utf-8"))
 
 
 class RepoCheckerInventoryTests(unittest.TestCase):
