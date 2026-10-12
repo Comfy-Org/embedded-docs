@@ -1,4 +1,4 @@
-# LumaReferenceNode
+# Luma-Referenz
 
 Dieser Node enthält ein Bild und einen Gewichtungswert zur Verwendung mit dem Luma Generate Image-Node. Er erstellt eine Referenzkette, die an andere Luma-Nodes übergeben werden kann, um die Bilderzeugung zu beeinflussen. Der Node kann entweder eine neue Referenzkette starten oder einer vorhandenen hinzufügen.
 

@@ -1,4 +1,4 @@
-# GetVideoComponents
+# Videokomponenten abrufen
 
 Der Node „Get Video Components“ extrahiert alle wesentlichen Elemente aus einer Videodatei. Er trennt das Video in einzelne Frames auf, extrahiert die Audiospur und liefert die Bildrate, Bittiefe und den Farbraum des Videos. Dadurch können Sie jede Komponente unabhängig für die weitere Verarbeitung oder Analyse nutzen.
 

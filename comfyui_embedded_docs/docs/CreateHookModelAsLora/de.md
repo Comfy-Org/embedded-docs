@@ -1,4 +1,4 @@
-# CreateHookModelAsLora
+# Hook-Modell als LoRA erstellen
 
 Dieser Node erstellt ein Hook-Modell als LoRA (Low-Rank Adaptation), indem er Checkpoint-Gewichte lädt und Stärkeanpassungen sowohl auf die Modell- als auch auf die CLIP-Komponenten anwendet. Er ermöglicht LoRA-ähnliche Modifikationen an vorhandenen Modellen über einen Hook-basierten Ansatz, wodurch Feinabstimmung und Anpassung ohne dauerhafte Modelländerungen möglich sind. Der Node kann mit vorherigen Hooks kombiniert werden und speichert geladene Gewichte zwischen, um Effizienz zu steigern.
 

@@ -1,4 +1,4 @@
-# BriaImageEditNode
+# Bria FIBO-Bildbearbeitung
 
 Der Bria FIBO Image Edit-Node bearbeitet ein vorhandenes Bild anhand einer Textanweisung. Er sendet das Bild und Ihren Prompt an die Bria API, wo das FIBO-Modell eine bearbeitete Version erstellt. Eine optionale Maske kann die Änderungen auf einen bestimmten Bereich beschränken.
 

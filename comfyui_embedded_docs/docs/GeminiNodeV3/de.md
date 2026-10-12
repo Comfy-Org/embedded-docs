@@ -1,4 +1,4 @@
-# GeminiNodeV3
+# Google Gemini
 
 Erzeugen Sie Textantworten mit den Gemini-Modellen von Google. Geben Sie einen Text-Prompt und optional ein oder mehrere Bilder, Audio-Clips, Videos oder Dateien als multimodalen Kontext an. Das ausgewählte Modell bestimmt, welche zusätzlichen Einstellungen angezeigt werden.
 

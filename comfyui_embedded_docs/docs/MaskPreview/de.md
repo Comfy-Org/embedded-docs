@@ -1,4 +1,4 @@
-# MaskPreview
+# Maskenvorschau
 
 Der MaskPreview-Node zeigt eine visuelle Vorschau der Maskendaten direkt in der ComfyUI-Oberfläche an, ohne sie im Ausgabeverzeichnis zu speichern. So können Sie die Maske an jedem Punkt Ihres Workflows prüfen; gleichzeitig wird die Maske unverändert durch den Node geleitet, sodass sie weiterhin nachgelagert verwendet werden kann.
 

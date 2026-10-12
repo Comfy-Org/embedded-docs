@@ -1,4 +1,4 @@
-# LtxApi25TextToVideo
+# LTX 2.5 Text To Video
 
 LTX 2.5 Text To Video ist ein API-Node, der mithilfe des LTX 2.5-Modells Videos in professioneller Qualität aus einer Textbeschreibung generiert. Sie geben einen Prompt an und wählen Generierungseinstellungen wie Modellstufe, Dauer, Auflösung, Bildrate und ob Audio eingeschlossen werden soll; der Node übermittelt die Aufgabe an die LTX API und gibt das resultierende Video zurück.
 

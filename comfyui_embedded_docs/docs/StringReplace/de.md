@@ -1,4 +1,4 @@
-# StringReplace
+# Text ersetzen
 
 Der StringReplace-Node führt Textersetzungsoperationen auf Eingabezeichenfolgen aus. Er sucht nach einer angegebenen Teilzeichenfolge im Eingabetext und ersetzt alle Vorkommen durch eine andere Teilzeichenfolge. Dieser Node gibt die geänderte Zeichenfolge mit allen angewendeten Ersetzungen zurück.
 

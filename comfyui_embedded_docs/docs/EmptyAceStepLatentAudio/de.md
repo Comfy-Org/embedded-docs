@@ -1,4 +1,4 @@
-# EmptyAceStepLatentAudio
+# Leeres Ace Step 1.0 Latent Audio
 
 Der Node Empty Ace Step 1.0 Latent Audio erzeugt leere latente Audio-Samples für eine gewählte Dauer. Er füllt einen Batch stiller (ausschließlich aus Nullen bestehender) latenter Audiodaten, wobei die Länge anhand der Eingabe `seconds` unter Verwendung von Audioverarbeitungsparametern berechnet wird. Dies wird typischerweise verwendet, um Audio-Workflows zu initialisieren, die eine latente Repräsentation als Ausgangspunkt benötigen.
 

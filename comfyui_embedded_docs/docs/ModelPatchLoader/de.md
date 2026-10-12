@@ -1,4 +1,4 @@
-# ModelPatchLoader
+# Model-Patch laden
 
 Der Node ModelPatchLoader lädt eine Model-Patch-Datei aus dem Ordner `model_patches` und bereitet sie für die Verwendung in einem Workflow vor. Er erkennt automatisch den in der Datei enthaltenen Patch-Typ, erstellt die passende Architektur, lädt die gespeicherten Gewichte und verpackt alles in einem Model-Patcher, sodass es auf andere Modelle angewendet werden kann. Er unterstützt viele spezialisierte Patch-Formate, darunter zusätzliche ControlNet-Zweige, Feature-Embedder-Modelle, Adapter, Animations-/LLLite-Guidance-Module und ähnliche Module.
 

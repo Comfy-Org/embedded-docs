@@ -1,4 +1,4 @@
-# ImageInvert
+# Bildfarben invertieren
 
 Der `ImageInvert`-Node dient dazu, die Farben eines Bildes zu invertieren, indem jeder Pixel-Farbwert effektiv in seine Komplementärfarbe auf dem Farbkreis umgewandelt wird. Dieser Vorgang ist nützlich, um Negativbilder oder visuelle Effekte zu erzeugen, die eine Farbinvertierung erfordern.
 

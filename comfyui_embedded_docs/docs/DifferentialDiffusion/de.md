@@ -1,4 +1,4 @@
-# DifferentialDiffusion
+# Differenzielle Diffusion
 
 Der Node „Differential Diffusion“ modifiziert den Denoising-Prozess, indem er eine binäre Maske auf Basis von Zeitschritt-Schwellenwerten anwendet. Er erzeugt eine Maske, die zwischen der ursprünglichen Denoise-Maske und einer schwellenwertbasierten binären Maske überblendet, wodurch eine kontrollierte Anpassung der Stärke des Diffusionsprozesses ermöglicht wird.
 

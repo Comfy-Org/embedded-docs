@@ -1,4 +1,4 @@
-# MiniMaxH3FunControlNetApply
+# MiniMax H3 Fun ControlNet anwenden
 
 Dieser Node wendet einen MiniMax H3 Fun ControlNet als Modell-Patch auf ein Text-zu-Video-Modell an. Er kann ein optionales Steuervideo und eine optionale Maske verwenden, um die Generierung zu steuern, und gibt eine gepatchte Kopie des Modells für weiteres Sampling zurück. Wenn die Stärke auf 0 gesetzt ist oder weder ein Steuervideo noch eine Maske bereitgestellt wird, wird das Eingabemodell unverändert zurückgegeben.
 

@@ -1,4 +1,4 @@
-# MergeSplat
+# Splats zusammenführen
 
 Der Node „Merge Splats“ kombiniert mehrere Gaussian-Splat-Modelle zu einem einzelnen Splat, indem er ihre Daten aneinanderhängt. Dies ist nützlich, um mehrere Decodierungen desselben Latents, die mit unterschiedlichen Seeds erzeugt wurden, zusammenzuführen; dadurch kann die Oberfläche verdichtet und die Qualität bei der Erstellung von 3D-Meshes verbessert werden.
 

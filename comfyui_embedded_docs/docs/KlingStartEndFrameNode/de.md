@@ -1,4 +1,4 @@
-# KlingStartEndFrameNode
+# Kling Start-End-Frame zu Video
 
 Dieser Node erstellt eine Videosequenz, die zwischen Ihren bereitgestellten Start- und Endbildern übergeht. Er erzeugt alle dazwischenliegenden Frames, um eine sanfte Transformation vom ersten zum letzten Frame zu erzeugen. Dieser Node ruft die Bild-zu-Video-API auf, unterstützt jedoch nur die Eingabeoptionen, die mit dem `image_tail`-Anfragefeld funktionieren.
 

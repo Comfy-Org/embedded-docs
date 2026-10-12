@@ -1,4 +1,4 @@
-# PaintMesh
+# Mesh bemalen
 
 PaintMesh nimmt ein 3D-Mesh und ein Voxel-Farbfeld entgegen. Es weist jedem Vertex die Farbe des nächstgelegenen Voxels im Feld zu und gibt das Mesh mit diesen angewendeten Vertexfarben zurück. Wenn das Voxelfeld leer ist, wird das Mesh mit standardmäßigen Vertexfarben von null (Schwarz) eingefärbt.
 

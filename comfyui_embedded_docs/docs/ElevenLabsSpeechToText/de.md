@@ -1,4 +1,4 @@
-# ElevenLabsSpeechToText
+# ElevenLabs Sprache zu Text
 
 Der ElevenLabs Speech to Text-Node transkribiert Audio mithilfe der ElevenLabs API in Text. Er unterstützt automatische Spracherkennung, Sprecherdiarisierung (Identifizierung verschiedener Sprecher) und Audioereignis-Tagging (Annotation von Geräuschen wie Lachen oder Musik im Transkript).
 

@@ -1,4 +1,4 @@
-# KlingFirstLastFrameNode
+# Kling 3.0: Erstes und letztes Frame zu Video
 
 Dieser Node verwendet das Kling 3.0-Modell, um ein Video zu generieren. Er erstellt das Video basierend auf einem Text-Prompt, einer angegebenen Dauer und zwei bereitgestellten Bildern: einem Startbild und einem Endbild. Der Node kann außerdem begleitendes Audio für das Video generieren.
 

@@ -1,4 +1,4 @@
-# VoxelToMesh
+# Voxel zu Mesh
 
 Der VoxelToMesh-Node konvertiert 3D-Voxeldaten in eine Mesh-Geometrie, indem er eine Oberfläche bei einem angegebenen Schwellenwert extrahiert. Er bietet zwei Algorithmen zur Oberflächenextraktion: eine einfache Methode, die einfache kastenförmige Flächen erzeugt, und eine Surface-Net-Methode, die glattere, detailliertere Meshes erzeugt. Der Node verarbeitet jedes Voxelgitter in der Eingabe und erzeugt Vertices und Faces, die eine 3D-Mesh-Darstellung bilden.
 

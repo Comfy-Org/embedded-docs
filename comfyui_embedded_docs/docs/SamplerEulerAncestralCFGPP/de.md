@@ -1,4 +1,4 @@
-# SamplerEulerAncestralCFGPP
+# SamplerEulerAncestralCFG++
 
 Der Node SamplerEulerAncestralCFG++ erstellt einen Sampler, der die Euler-Ancestral-Methode mit Classifier-Free-Guidance (CFG++) für die Bildgenerierung verwendet. Dieser Sampler kombiniert Ancestral-Sampling-Techniken mit Guidance-Konditionierung, um vielfältige Bildvariationen bei gleichbleibender Kohärenz zu erzeugen, und ermöglicht eine Feinabstimmung über Parameter, die Rauschen und Schrittgrößenanpassungen steuern.
 

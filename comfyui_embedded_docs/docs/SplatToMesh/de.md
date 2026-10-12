@@ -1,4 +1,4 @@
-# SplatToMesh
+# Mesh aus Splat extrahieren
 
 Dieser Node wandelt einen 3D-Gaussian-Splat in eine farbige Mesh-Oberfläche um. Er funktioniert, indem die Gaussians auf ein Dichtegitter rasterisiert, eine Iso-Oberfläche bei einem gewählten Dichteschwellenwert extrahiert und anschließend optionale Glättung und Bereinigung angewendet werden, um ein sauberes, farbiges Dreiecksnetz zu erzeugen.
 

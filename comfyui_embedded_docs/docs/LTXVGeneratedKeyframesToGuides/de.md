@@ -1,4 +1,4 @@
-# LTXVGeneratedKeyframesToGuides
+# LTXV Generierte Keyframes zu Guides
 
 Der Node LTXV Generated Keyframes to Guides fixiert generierte Keyframes aus einer früheren Stufe als eingefrorene Bild-Guides auf einem späteren Canvas. Er dekodiert die Keyframes als eigenständige Frames, skaliert sie bei Bedarf und schreibt sie mit einer Rauschmaske von 0, sodass sie nicht erneut entrauscht werden. Nach einem zeitlichen Upscale werden aufgezeichnete Indizes von dem Canvas, auf dem sie generiert wurden, auf diesen Canvas skaliert; verwenden Sie `override_frame_indices`, um Positionen explizit festzulegen.
 

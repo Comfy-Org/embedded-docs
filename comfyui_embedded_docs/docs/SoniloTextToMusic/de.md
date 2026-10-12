@@ -1,4 +1,4 @@
-# SoniloTextToMusic
+# Sonilo Text zu Musik
 
 Der Node Sonilo Text to Music erzeugt Musik aus einer Textbeschreibung mithilfe von Sonilos KI-Modell. Sie geben einen Prompt an, der die gewünschte Musik beschreibt, und der Node sendet eine Anfrage an den Sonilo-Dienst, um eine Audiodatei zu erstellen. Sie können eine Zieldauer für den generierten Clip festlegen.
 

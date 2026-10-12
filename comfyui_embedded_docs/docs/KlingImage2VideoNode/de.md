@@ -1,4 +1,4 @@
-# KlingImage2VideoNode
+# Kling Bild (erstes Frame) zu Video
 
 Der Kling Image to Video Node erzeugt ein kurzes Video, wobei ein Ausgangsbild als erstes Frame verwendet wird. Er kombiniert das Bild mit Text-Prompts und Generierungseinstellungen und gibt anschließend das resultierende Video zusammen mit seiner ID und Dauer zurück.
 

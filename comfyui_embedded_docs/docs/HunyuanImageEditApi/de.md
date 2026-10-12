@@ -1,4 +1,4 @@
-# HunyuanImageEditApi
+# Tencent HY Image: Bearbeiten
 
 Der Node Tencent HY Image: Edit bearbeitet oder kombiniert Referenzbilder anhand einer Textanweisung mit dem Hunyuan-Image-Modell von Tencent. Verbinden Sie ein bis fünf Bilder, beschreiben Sie die Änderung im Prompt und verweisen Sie auf die Bilder als `@Image1`, `@Image2` und so weiter. Der Node lädt die Referenzbilder hoch, sendet die Anfrage an die API und gibt das bearbeitete Ergebnis zurück.
 

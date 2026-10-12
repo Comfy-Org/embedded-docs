@@ -1,4 +1,4 @@
-# LoraLoaderModelOnly
+# LoRA laden
 
 Dieser Node erkennt Modelle im Ordner `ComfyUI/models/loras` und liest zudem Modelle aus zusätzlichen Pfaden, die in der Datei extra_model_paths.yaml konfiguriert sind. Manchmal müssen Sie möglicherweise **die ComfyUI-Oberfläche aktualisieren**, damit die Modelldateien aus dem entsprechenden Ordner gelesen werden.
 

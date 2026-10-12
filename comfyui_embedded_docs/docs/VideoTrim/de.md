@@ -1,4 +1,4 @@
-# VideoTrim
+# Video trimmen (Erweitert)
 
 Dieser Node schneidet ein Video auf ein gewähltes Zeitfenster, indem eine Startzeit und eine Dauer festgelegt werden. Er bietet außerdem einen strikten Modus, der einen Fehler auslöst, wenn die angeforderte Dauer nicht erreicht werden kann.
 

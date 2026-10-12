@@ -1,4 +1,4 @@
-# PrunaImageToVideoNode
+# Pruna P-Video-2 Bild zu Video
 
 Animiert ein Bild mit dem P-Video-2-Modell von Pruna zu einem Video. Das erste Einzelbild ist erforderlich und legt das Seitenverhältnis der Ausgabe fest; ein optionales letztes Einzelbild gibt dem Video einen Endpunkt, zu dem interpoliert wird. Der Prompt beschreibt, wie sich die Szene bewegt, und der Node erzeugt entweder eine eigene Tonspur oder verwendet einen Audioclip, der die Bewegung antreibt.
 

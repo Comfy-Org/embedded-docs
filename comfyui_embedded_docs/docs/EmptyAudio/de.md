@@ -1,4 +1,4 @@
-# EmptyAudio
+# Leeres Audio
 
 Der EmptyAudio-Node erzeugt einen stillen Audio-Clip mit angegebener Dauer, Abtastrate und Kanalkonfiguration. Er erstellt eine Wellenform, die ausschließlich aus Nullen besteht, und erzeugt so vollständige Stille für die angegebene Dauer. Dieser Node ist nützlich, um Platzhalter-Audio zu erstellen oder stille Segmente in Audio-Workflows zu generieren.
 

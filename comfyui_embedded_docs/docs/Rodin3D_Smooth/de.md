@@ -1,4 +1,4 @@
-# Rodin3D_Smooth
+# Rodin 3D-Generierung – Glatte Generierung
 
 Der Rodin 3D Smooth-Node generiert 3D-Assets mithilfe der Rodin API, indem er Eingabebilder verarbeitet und sie in glatte 3D-Modelle umwandelt. Er nimmt mehrere Bilder als Eingabe entgegen und erzeugt eine herunterladbare 3D-Modell-Datei. Der Node übernimmt den gesamten Generierungsprozess, einschließlich Aufgabenerstellung, Statusabfrage und automatischem Dateidownload.
 

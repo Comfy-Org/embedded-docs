@@ -1,4 +1,4 @@
-# PorterDuffImageComposite
+# Porter-Duff-Bildkomposition
 
 Der Node `PorterDuffImageComposite` ist für die Durchführung von Bild-Compositing unter Verwendung der Porter-Duff-Compositing-Operatoren konzipiert. Er ermöglicht die Kombination von Quell- und Zielbildern gemäß verschiedenen Mischmodi, wodurch komplexe visuelle Effekte durch Manipulation der Bildtransparenz und kreatives Überlagern von Bildern erzeugt werden können.
 

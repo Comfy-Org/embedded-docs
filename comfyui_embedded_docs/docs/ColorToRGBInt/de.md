@@ -1,4 +1,4 @@
-# ColorToRGBInt
+# Farbauswahl
 
 Der **ColorToRGBInt**-Node konvertiert eine im Hexadezimalformat angegebene Farbe (wie `#FF5733`) in einen einzelnen RGB-Ganzzahlwert. Er extrahiert die Rot-, Grün- und Blau-Komponenten aus dem Farbstring, kombiniert sie zu einer einzelnen Ganzzahl und gibt außerdem die ursprüngliche hexadezimale Darstellung und den Alpha-Wert (Deckkraft) zurück.
 

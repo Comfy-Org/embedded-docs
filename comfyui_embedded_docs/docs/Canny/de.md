@@ -1,4 +1,4 @@
-# Canny
+# Kanten erkennen (Canny)
 
 Extrahiert alle Kantenlinien aus Fotos, ähnlich dem Nachzeichnen eines Fotos mit einem Stift, wodurch Konturen und Detailgrenzen von Objekten herausgearbeitet werden.
 

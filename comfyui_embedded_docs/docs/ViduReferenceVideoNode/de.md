@@ -1,4 +1,4 @@
-# ViduReferenceVideoNode
+# Vidu Referenz-zu-Video-Generierung
 
 Der Vidu Reference Video Node generiert Videos aus mehreren Referenzbildern und einem Text-Prompt. Er verwendet KI-Modelle, um konsistenten Videoinhalt auf Grundlage der bereitgestellten Bilder und Beschreibung zu erstellen. Der Node unterstützt verschiedene Videoeinstellungen, einschließlich Dauer, Seitenverhältnis, Auflösung und Bewegungssteuerung.
 

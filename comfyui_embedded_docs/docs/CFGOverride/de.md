@@ -1,4 +1,4 @@
-# CFGOverride
+# CFG-Überschreibung
 
 Der Node CFG Override überschreibt die CFG-Skala (Classifier-Free Guidance) über einen prozentualen (Sigma-)Bereich des Sampling-Prozesses mit einem festen Wert. Wenn mehrere CFG-Override-Nodes verwendet werden, gewinnt bei überlappenden Bereichen der Override, der dem Sampler am nächsten liegt.
 

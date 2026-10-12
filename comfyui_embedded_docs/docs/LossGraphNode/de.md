@@ -1,4 +1,4 @@
-# LossGraphNode
+# Loss-Graph darstellen
 
 Der LossGraphNode erstellt ein Liniendiagramm der Trainings-Loss-Werte über die Trainingsschritte und zeigt es als Vorschaubild an. Er liest Loss-Werte von einem Trainings-Node, stellt sie in einem Diagramm mit beschrifteten Achsen sowie minimalen/maximalen Loss-Werten dar und gibt das Diagramm als Bildvorschau in der UI zurück. Dieser Node ist als experimentell gekennzeichnet und ein Ausgabe-Node.
 

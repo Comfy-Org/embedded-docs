@@ -1,4 +1,4 @@
-# RemoveBackground
+# Hintergrund entfernen
 
 ## Übersicht
 

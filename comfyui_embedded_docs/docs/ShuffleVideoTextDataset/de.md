@@ -1,4 +1,4 @@
-# ShuffleVideoTextDataset
+# Video-Text-Paare mischen
 
 Dieser Node mischt die Reihenfolge von Paaren aus Video und Text in einer Liste zufällig, wobei jedes Video mit seinem zugehörigen Text gepaart bleibt. Er nimmt zwei Listen gleicher Länge und wendet dieselbe zufällige Permutation auf beide an, sodass die ursprünglichen Paarungen nach dem Mischen erhalten bleiben. Ein Seed-Wert steuert die Mischreihenfolge, sodass Ergebnisse reproduziert werden können.
 

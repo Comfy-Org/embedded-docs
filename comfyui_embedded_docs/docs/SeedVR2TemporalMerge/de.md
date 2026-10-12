@@ -1,4 +1,4 @@
-# SeedVR2TemporalMerge
+# SeedVR2-Latents zusammenführen
 
 Dieser Node rekombiniert gesampelte latente zeitliche SeedVR2-Chunks zu einem einzelnen Latent voller Länge. Wenn eine zeitliche Überlappung angegeben ist, überblendet er jeden überlappenden Bereich mit einem Hann-Fenster, um sanfte Übergänge zwischen den Chunks zu erzeugen; wenn die Überlappung 0 ist, führt er eine einfache Verkettung durch.
 

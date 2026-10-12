@@ -1,4 +1,4 @@
-# MinimaxHailuo03TextToVideoNode
+# MiniMax H3 Text zu Video
 
 Dieser Node generiert ein Video aus einem Text-Prompt unter Verwendung der MiniMax H3-Modellfamilie: MiniMax H3, MiniMax H3 Max und MiniMax H3 Max Turbo. Sie wählen das Modell aus, geben einen Text-Prompt ein und passen Einstellungen wie Auflösung, Seitenverhältnis und Dauer an. Der Node sendet die Anfrage an die MiniMax-API, wartet auf den Abschluss der Generierungsaufgabe und gibt das resultierende Video zurück.
 

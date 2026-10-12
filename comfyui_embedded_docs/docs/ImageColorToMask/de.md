@@ -1,4 +1,4 @@
-# ImageColorToMask
+# Bildfarbe in Maske umwandeln
 
 Der Node `ImageColorToMask` ist darauf ausgelegt, eine angegebene Farbe in einem Bild in eine Maske umzuwandeln. Er verarbeitet ein Bild und eine Zielfarbe und erzeugt eine Maske, in der die angegebene Farbe hervorgehoben wird, was Vorgänge wie farbbasierte Segmentierung oder Objektisolierung erleichtert.
 

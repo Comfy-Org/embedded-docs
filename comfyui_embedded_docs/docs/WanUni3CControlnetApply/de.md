@@ -1,4 +1,4 @@
-# WanUni3CControlnetApply
+# Wan Uni3C ControlNet anwenden
 
 ## Übersicht
 

@@ -1,4 +1,4 @@
-# PrimitiveFloat
+# Float
 
 Der PrimitiveFloat-Node erstellt einen Gleitkommazahlwert, der in Ihrem Workflow verwendet werden kann. Er nimmt einen einzelnen numerischen Eingabewert entgegen und gibt denselben Wert aus. Dadurch können Sie Float-Werte definieren und zwischen verschiedenen Nodes in Ihrer ComfyUI-Pipeline weitergeben.
 

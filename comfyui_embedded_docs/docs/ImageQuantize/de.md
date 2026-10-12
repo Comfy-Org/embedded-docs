@@ -1,4 +1,4 @@
-# ImageQuantize
+# Bild quantisieren
 
 Der Node ImageQuantize dient dazu, die Anzahl der Farben in einem Bild auf einen angegebenen Wert zu reduzieren, wobei optional Dithering-Techniken angewendet werden, um die visuelle Qualität zu erhalten. Dieser Prozess ist nützlich, um palettenbasierte Bilder zu erstellen oder die Farbkomplexität für bestimmte Anwendungen zu verringern.
 

@@ -1,4 +1,4 @@
-# EmptyLatentImage
+# Leeres latentes Bild
 
 Der Node `EmptyLatentImage` dient dazu, eine leere Darstellung im latenten Raum mit angegebenen Abmessungen und Batch-Größe zu erzeugen. Dieser Node bildet einen grundlegenden Schritt bei der Generierung oder Bearbeitung von Bildern im latenten Raum und bietet einen Ausgangspunkt für weitere Bildsynthese- oder Änderungsprozesse.
 

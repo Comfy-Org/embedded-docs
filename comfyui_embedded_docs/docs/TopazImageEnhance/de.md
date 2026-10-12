@@ -1,4 +1,4 @@
-# TopazImageEnhance
+# Topaz-Bildverbesserung (Legacy)
 
 Der Node **Topaz Image Enhance** bietet Upscaling und Bildverbesserung nach Industriestandard. Er verarbeitet ein einzelnes Eingabebild mithilfe eines cloudbasierten KI-Modells, um Qualität, Details und Auflösung zu verbessern. Der Node bietet eine fein abgestufte Kontrolle über den Verbesserungsprozess, einschließlich Optionen für kreative Steuerung, Motivfokus und Gesichtserhalt.
 

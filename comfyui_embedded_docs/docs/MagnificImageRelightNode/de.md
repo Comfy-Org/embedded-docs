@@ -1,4 +1,4 @@
-# MagnificImageRelightNode
+# Magnific Bild-Neubeleuchtung
 
 Der Magnific Image Relight-Node passt die Beleuchtung eines Eingabebildes an. Er kann eine stilistische Beleuchtung basierend auf einem Text-Prompt anwenden oder die Beleuchtungseigenschaften von einem optionalen Referenzbild übertragen. Der Node bietet verschiedene Steuerungsmöglichkeiten zur Feinabstimmung von Helligkeit, Kontrast und der Gesamtstimmung der endgültigen Ausgabe.
 

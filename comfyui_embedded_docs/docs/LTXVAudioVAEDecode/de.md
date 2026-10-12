@@ -1,4 +1,4 @@
-# LTXVAudioVAEDecode
+# LTXV Audio VAE dekodieren
 
 Der Node LTXV Audio VAE Decode wandelt eine latente Repräsentation von Audio zurück in eine Audio-Wellenform um. Er verwendet ein spezialisiertes Audio-VAE-Modell für diesen Dekodierungsprozess und erzeugt eine Audio-Ausgabe mit der zugehörigen Abtastrate.
 

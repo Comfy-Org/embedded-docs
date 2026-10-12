@@ -1,4 +1,4 @@
-# WanReferenceVideoApi
+# Wan-Referenz zu Video
 
 Der Node Wan Reference to Video verwendet die visuelle Erscheinung und Stimme aus einem oder mehreren eingegebenen Referenzvideos sowie einen Text-Prompt, um ein neues Video zu generieren. Er sorgt für Konsistenz mit den Charakteren aus dem Referenzmaterial und erstellt gleichzeitig neue Inhalte basierend auf Ihrer Beschreibung.
 

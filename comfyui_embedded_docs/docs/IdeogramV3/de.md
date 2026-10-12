@@ -1,4 +1,4 @@
-# IdeogramV3
+# Ideogram V3
 
 Der Ideogram V3-Node erzeugt Bilder mit dem Ideogram V3-Modell. Er unterstützt sowohl die reguläre Bilderzeugung aus Text-Prompts als auch die Bildbearbeitung, wenn sowohl ein Bild als auch eine Maske bereitgestellt werden. Der Node bietet verschiedene Steuerungsmöglichkeiten für Seitenverhältnis, Auflösung, Generierungsgeschwindigkeit und optionale Charakter-Referenzbilder.
 

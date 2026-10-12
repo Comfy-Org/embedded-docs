@@ -1,4 +1,4 @@
-# ReveImageCreateNode
+# Reve-Bild erstellen
 
 Der Node „Reve Image Create“ erzeugt Bilder aus einer Textbeschreibung mithilfe des Reve-KI-Modells. Er sendet den Prompt an die Reve-API und gibt das resultierende Bild zurück, mit optionaler Nachbearbeitung zum Hochskalieren und Entfernen des Hintergrunds. Dieser Node ist veraltet.
 

@@ -1,4 +1,4 @@
-# BakeTextureFromVoxel
+# Textur aus Voxel backen
 
 Dieser Node backt PBR-Texturen auf ein 3D-Mesh unter Verwendung des vorhandenen UV-Layouts des Meshes. Er rastert das Mesh im UV-Raum und tastet an jedem Texel Farb- und Materialattribute aus einem dünnbesetzten Voxelvolumen ab, wobei er ein Basisfarbbild sowie Metallic- und Roughness-Maps ausgibt. Er entpackt das Mesh nicht, daher muss ein UV-Unwrap-Node vorgeschaltet sein; die resultierenden Bilder sind dafür gedacht, in ApplyTextureToMesh mit demselben Mesh kombiniert zu werden, um als GLB gespeichert zu werden.
 

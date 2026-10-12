@@ -1,4 +1,4 @@
-# EmptyMiniMaxH3LatentAV
+# Leeres MiniMax H3 AV-Latent
 
 Dieser Node erstellt ein leeres Latent, das sowohl Video- als auch Audioinformationen für das MiniMax H3-Modell kombiniert. Sie legen Breite, Höhe und Länge des Inhalts fest, und der Node erzeugt ein leeres Latent, das das Modell als Ausgangspunkt für die Generierung verwenden kann. Die Dauer (Länge) wird automatisch angepasst, damit sie in das vom Modell geforderte Frame-Raster von 17k+5 Frames bei 24 fps passt.
 

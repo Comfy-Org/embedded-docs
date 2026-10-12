@@ -1,4 +1,4 @@
-# LoadMediaPipeFaceLandmarker
+# Gesichtserkennungsmodell laden (MediaPipe)
 
 Dieser Node lädt ein MediaPipe Face Landmarker v2-Modell, das Gesichter und Gesichtsmerkmale (wie Augen, Nase und Mund) in Bildern erkennt. Das geladene Modell bündelt zwei Erkennungsvarianten (Nahbereich und Vollbereich) zusammen mit gemeinsam genutzten Mesh-Daten, Blendshapes und kanonischer Geometrie, die für die Gesichtsanalyse verwendet werden.
 

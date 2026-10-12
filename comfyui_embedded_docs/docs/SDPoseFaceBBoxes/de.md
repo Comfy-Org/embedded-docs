@@ -1,4 +1,4 @@
-# SDPoseFaceBBoxes
+# SDPose Gesichts-Begrenzungsrahmen
 
 Der Node SDPoseFaceBBoxes verarbeitet Pose-Keypoint-Daten, um Bounding-Boxen um menschliche Gesichter zu erkennen und zu erzeugen. Er analysiert die 2D-Gesichts-Keypoints für jede Person in einem Frame, berechnet auf Basis dieser Punkte eine Bounding-Box und kann Größe und Form der Box anpassen. Die resultierenden Bounding-Boxen werden so formatiert, dass sie mit anderen Nodes im SDPose-Workflow kompatibel sind, z. B. mit dem SDPoseKeypointExtractor.
 

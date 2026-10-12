@@ -1,4 +1,4 @@
-# RecraftStyleV3DigitalIllustration
+# Recraft Style – Digitale Illustration
 
 Dieser Node konfiguriert einen Stil für die Verwendung mit der Recraft API und wählt dabei speziell den Stil „digital_illustration“ aus. Er ermöglicht die Auswahl eines optionalen Substils, um die künstlerische Ausrichtung des generierten Bildes weiter zu verfeinern.
 

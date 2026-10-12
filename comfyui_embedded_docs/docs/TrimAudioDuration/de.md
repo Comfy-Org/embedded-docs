@@ -1,4 +1,4 @@
-# TrimAudioDuration
+# Audiodauer kürzen
 
 Der Node TrimAudioDuration ermöglicht das Ausschneiden eines bestimmten Zeitsegments aus einer Audiodatei. Sie können angeben, wann der Schnitt beginnen soll und wie lang der resultierende Audioclip sein soll. Der Node funktioniert, indem er Zeitwerte in Audio-Frame-Positionen umwandelt und den entsprechenden Abschnitt der Audiowellenform extrahiert.
 

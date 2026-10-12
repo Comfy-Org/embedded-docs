@@ -1,4 +1,4 @@
-# MoGeRender
+# MoGe-Geometrie rendern
 
 Dieser Node nimmt ein MOGE_GEOMETRY-Paket (erzeugt von einem MoGe-Node zur Tiefen-/Normalenschätzung) und rendert es in ein Standardbildformat. Sie können eine Tiefenkarte, eine farbige Tiefenkarte, eine Normalenmap oder eine Maske ausgeben.
 

@@ -1,4 +1,4 @@
-# ModelAttentionBackend
+# Modell-Attention-Backend
 
 Dieser Node wählt die Dense-Attention-Implementierung für ein Modell aus, klont das Modell, wendet das ausgewählte Backend an und gibt den gepatchten Klon zurück. In Kombination mit Block Sparse Attention wird dieses Backend verwendet, wann immer Sparse Attention inaktiv oder nicht unterstützt ist. Wenn das ausgewählte Backend nicht verfügbar ist, fällt der Node automatisch auf PyTorch Attention zurück.
 

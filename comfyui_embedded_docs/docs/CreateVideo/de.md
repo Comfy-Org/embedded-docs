@@ -1,4 +1,4 @@
-# CreateVideo
+# Video erstellen
 
 Der Node „Create Video“ kombiniert eine Sequenz von Bildern zu einem Video. Sie können die Wiedergabegeschwindigkeit in Bildern pro Sekunde festlegen, optional Audio hinzufügen und das Komprimierungsformat, die Bittiefe sowie den Farbraum des resultierenden Videos wählen.
 

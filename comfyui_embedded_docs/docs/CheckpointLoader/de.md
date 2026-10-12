@@ -1,4 +1,4 @@
-# CheckpointLoader
+# Checkpoint mit Konfiguration laden (VERALTET)
 
 Der Node `CheckpointLoader` lädt einen vortrainierten Modell-Checkpoint zusammen mit seiner Konfigurationsdatei. Er nimmt eine Konfigurationsdatei und eine Checkpoint-Datei als Eingaben entgegen und gibt die geladenen Modellkomponenten zurück – das Hauptmodell, das CLIP-Modell und das VAE-Modell – zur Verwendung im Workflow. Dieser Node ist veraltet.
 

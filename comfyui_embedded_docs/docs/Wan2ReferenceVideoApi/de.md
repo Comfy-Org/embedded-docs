@@ -1,4 +1,4 @@
-# Wan2ReferenceVideoApi
+# Wan 2.7 Referenz zu Video
 
 Dieser Node generiert ein Video mit einer Person oder einem Objekt auf Grundlage der bereitgestellten Referenzmaterialien. Er verwendet das Wan 2.7-Modell, um Videos aus einem Text-Prompt zu erstellen, und unterstützt Darbietungen mit einem einzelnen Charakter sowie Interaktionen zwischen mehreren Charakteren. Sie müssen mindestens ein Referenzvideo oder ein Referenzbild bereitstellen, damit die Generierung funktioniert.
 

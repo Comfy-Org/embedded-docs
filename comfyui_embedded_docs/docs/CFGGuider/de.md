@@ -1,4 +1,4 @@
-# CFGGuider
+# CFG Guider
 
 Der CFG Guider-Node erstellt ein Guidance-System zur Steuerung des Sampling-Prozesses bei der Bilderzeugung. Er nimmt ein Modell zusammen mit positiven und negativen Conditioning-Eingaben entgegen und wendet dann eine Classifier-Free-Guidance-Skala an, um die Generierung in Richtung gewünschter Inhalte zu lenken und unerwünschte Elemente zu vermeiden. Dieser Node gibt ein Guider-Objekt aus, das von Sampling-Nodes verwendet werden kann, um die Richtung der Bilderzeugung zu steuern.
 

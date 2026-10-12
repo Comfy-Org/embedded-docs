@@ -1,4 +1,4 @@
-# LTXAVTextEncoderLoader
+# LTXV-Audio-Text-Encoder laden
 
 Dieser Node lädt einen spezialisierten Textencoder für das LTXV-Audiomodell. Er kombiniert eine Textencoder-Datei mit einer Checkpoint-Datei, um ein CLIP-Modell zu erstellen, das zur Textkonditionierung in der Audiogenerierung verwendet wird. Laut Beschreibung des Nodes sollte der Textencoder ein Gemma 3 12B- oder ein passendes Gemma 4-Modell sein.
 

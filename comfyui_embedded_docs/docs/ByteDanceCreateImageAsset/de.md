@@ -1,4 +1,4 @@
-# ByteDanceCreateImageAsset
+# ByteDance Bild-Asset erstellen
 
 Dieser Node erstellt ein persönliches Bild-Asset für den Seedance 2.0-Dienst von ByteDance. Er lädt ein Eingabebild hoch und registriert es in einer angegebenen Asset-Gruppe. Wenn keine Gruppen-ID angegeben wird, startet er einen Prozess zur Authentifizierung als reale Person in Ihrem Browser, um eine neue Gruppe zu erstellen, bevor das Asset hinzugefügt wird.
 

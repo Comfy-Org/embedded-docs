@@ -1,4 +1,4 @@
-# ApplyTextureToMesh
+# Textur auf Mesh anwenden
 
 Dieser Node hängt gebackene Texturbilder an das UV-Layout eines Meshes, sodass sie zusammen mit dem Mesh vom SaveGLB-Node exportiert werden können. Übergeben Sie ihm dasselbe UV-entfaltete Mesh, von dem Sie die Texturen gebacken haben, zusammen mit den gebackenen Bild-Maps. Optionale Metallic-, Roughness- und Occlusion-Maps werden in einer einzigen ORM-Textur gepackt, und wenn eine Normal-Map bereitgestellt wird, werden zusätzlich die glatten Vertex-Normalen und die für korrektes Shading erforderliche Tangentenbasis gespeichert.
 

@@ -1,4 +1,4 @@
-# RenderUVAtlas
+# UV-Atlas rendern
 
 Rendert das UV-Layout eines Meshes als Bild. Jede zusammenhängende UV-Region (Chart) wird mit einer jeweils eigenen Farbe gefüllt, und die Randkanten der Charts werden auf dunkelgrauem Hintergrund schwarz umrandet.
 

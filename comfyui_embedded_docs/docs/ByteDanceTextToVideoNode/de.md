@@ -1,4 +1,4 @@
-# ByteDanceTextToVideoNode
+# ByteDance Text zu Video
 
 Der ByteDance Text to Video-Node generiert mithilfe von ByteDance-Modellen über eine API basierend auf einem Text-Prompt ein Video. Sie geben einen Prompt an und wählen Einstellungen wie Modell, Auflösung, Seitenverhältnis und Dauer; der Node übermittelt die Generierungsanfrage und gibt das generierte Video zurück.
 

@@ -1,4 +1,4 @@
-# FluxVideoUpscaleNode
+# Flux Video Upscale
 
 Flux Video Upscale skaliert einen Videoclip mit FLUX-Superauflösung um das 1,5- bis 3-Fache hoch. Im Modus "creative" werden feine Details wiederhergestellt und erfunden; im Modus "precise" wird die Quelle geschärft, ohne sie zu verändern.
 

@@ -1,4 +1,4 @@
-# EmptyTrellis2LatentStructure
+# Leere Trellis2 Latent-Struktur
 
 Dieser Node erstellt eine leere latente Struktur für das Trellis2-Modell, bei der alle Werte auf null gesetzt sind. Er erzeugt einen leeren 3D-Latent-Tensor mit 32 Kanälen bei einer Auflösung von 16×16×16, dimensioniert für die angegebene Anzahl von Elementen im Batch.
 

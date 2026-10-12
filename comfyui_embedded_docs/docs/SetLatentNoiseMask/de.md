@@ -1,4 +1,4 @@
-# SetLatentNoiseMask
+# Latent-Rauschmaske festlegen
 
 Dieser Node ist darauf ausgelegt, eine Rauschmaske auf eine Gruppe latenter Samples anzuwenden. Er modifiziert die Eingabe-Samples durch Einbindung einer angegebenen Maske und verändert dadurch deren Rauscheigenschaften.
 

@@ -1,4 +1,4 @@
-# LTXVDurationPredictor
+# LTXV Duration Predictor
 
 Dieser Node sagt die natürliche Aufnahmedauer für einen Text-Prompt mithilfe eines LTX 2.4 Duration Head voraus, der mit ModelPatchLoader geladen wurde, und richtet das Ergebnis anschließend am 8k+1-Frame-Raster des VAE aus. Die Vorhersage wird mithilfe der ausgewählten Bildrate sowie der minimalen und maximalen Dauerlimits in eine Frame-Anzahl umgerechnet.
 

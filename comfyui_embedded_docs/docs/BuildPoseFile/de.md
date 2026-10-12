@@ -1,4 +1,4 @@
-# BuildPoseFile
+# 3D-Animationsdatei erstellen
 
 Dieser Node erstellt aus Pose-Daten eine speicherfertige 3D-Animationsdatei. Sie können eine animierte GLB in mehreren visuellen Stilen exportieren – ein vollständiges Körper-Mesh, eine Vorschau nur mit Gelenken, ein OpenPose-Skelett oder ein SCAIL-Kapsel-Rig – oder stattdessen einen BVH-Motion-Capture-Clip speichern. Die Ausgabe wird an einen dateispeichernden Node wie Save 3D Model angeschlossen, um die Datei auf die Festplatte zu schreiben.
 

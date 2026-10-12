@@ -1,4 +1,4 @@
-# CLIPTextEncodeControlnet
+# CLIP-Textkodierung (Controlnet)
 
 Der Node CLIP Text Encode (Controlnet) kodiert einen Text-Prompt mit einem CLIP-Modell und fügt die resultierende Textkodierung vorhandenen Conditioning-Daten hinzu. Er speichert die Text-Embeddings als ControlNet-Cross-Attention-Parameter innerhalb jedes Conditioning-Eintrags, sodass das zurückgegebene Conditioning diese zusätzlichen ControlNet-Informationen enthält.
 

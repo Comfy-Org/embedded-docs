@@ -1,4 +1,4 @@
-# ViduExtendVideoNode
+# Vidu-Videoerweiterung
 
 Der Vidu Video Extension-Node erzeugt zusätzliche Frames, um die Länge eines vorhandenen Videos zu verlängern. Er verwendet ein angegebenes KI-Modell, um basierend auf dem Quellvideo und einem optionalen Text-Prompt eine Fortsetzung zu erstellen.
 

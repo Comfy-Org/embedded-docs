@@ -1,4 +1,4 @@
-# HeyGenTalkingPhotoNode
+# HeyGen-Sprechendes Foto
 
 Animieren Sie ein Standbild einer Person mit der Avatar-IV-Technologie von HeyGen zu einem sprechenden Video mit Lippensynchronisation. Sie können die Animation mit einem Textskript steuern, das HeyGen in Sprache umwandelt, oder eigenes Audio bereitstellen, zu dem der Avatar lippensynchronisiert wird.
 

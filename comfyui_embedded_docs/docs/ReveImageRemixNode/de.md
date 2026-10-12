@@ -1,4 +1,4 @@
-# ReveImageRemixNode
+# Reve-Bildremix
 
 Der Reve Image Remix-Node verwendet die Reve-API, um ein neues Bild zu generieren. Er kombiniert ein oder mehrere Referenzbilder mit einem Text-Prompt, um ein neues, neu gemischtes Bild basierend auf der bereitgestellten Beschreibung zu erstellen.
 

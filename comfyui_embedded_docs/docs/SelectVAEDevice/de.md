@@ -1,4 +1,4 @@
-# SelectVAEDevice
+# VAE-Gerät auswählen
 
 ## Übersicht
 

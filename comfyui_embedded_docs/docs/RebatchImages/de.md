@@ -1,4 +1,4 @@
-# RebatchImages
+# Bilder neu bündeln
 
 Der RebatchImages-Node dient dazu, einen Batch von Bildern in eine neue Batch-Konfiguration umzuorganisieren und dabei die Batch-Größe wie angegeben anzupassen. Dieser Prozess ist wesentlich für die Verwaltung und Optimierung der Verarbeitung von Bilddaten in Batch-Operationen, damit Bilder entsprechend der gewünschten Batch-Größe gruppiert werden und effizient verarbeitet werden können.
 

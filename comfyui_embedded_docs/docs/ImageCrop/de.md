@@ -1,4 +1,4 @@
-# ImageCrop
+# Bild zuschneiden (VERALTET)
 
 Der `ImageCrop`-Node ist darauf ausgelegt, Bilder auf eine angegebene Breite und Höhe zuzuschneiden, beginnend bei einer gegebenen x- und y-Koordinate. Diese Funktionalität ist wichtig, um sich auf bestimmte Bereiche eines Bildes zu konzentrieren oder die Bildgröße an bestimmte Anforderungen anzupassen.
 

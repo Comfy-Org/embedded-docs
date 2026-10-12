@@ -1,4 +1,4 @@
-# SeedVR2TemporalChunk
+# SeedVR2-Latent aufteilen
 
 Dieser Node zerlegt einen SeedVR2-Video-Latent in kleinere zeitliche Chunks, die jeweils einzeln innerhalb des verfügbaren VRAM verarbeitet werden können. Er berechnet automatisch die optimale Chunk-Größe basierend auf Ihrem GPU-Speicher oder lässt Sie die Chunk-Größe manuell festlegen und gibt die Chunks in Reihenfolge zur Verarbeitung aus.
 

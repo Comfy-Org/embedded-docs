@@ -1,4 +1,4 @@
-# Get3DComponents
+# 3D-Komponenten abrufen
 
 Get3DComponents parst eine 3D-Modelldatei (GLB, GLTF, OBJ oder STL) in ein editierbares Mesh, das von Mesh-Verarbeitungs-Nodes wie Decimate, Remesh, UV Unwrap und Bake verwendet werden kann. Alle Szenen-Nodes und Primitive werden unter Anwendung ihrer Transformationen zu einem einzigen Mesh zusammengeführt; Texturen und Materialeinstellungen stammen vom ersten Material. Es ist das Gegenstück zum Node MeshToFile3D.
 

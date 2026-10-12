@@ -1,4 +1,4 @@
-# PixverseImageToVideoNode
+# PixVerse Image to Video
 
 Erzeugt ein Video aus einem Standbild und einem Text-Prompt mit PixVerse. Der Node lädt das Eingabebild hoch, wendet die ausgewählten Qualitäts-, Dauer- und Bewegungseinstellungen an und gibt anschließend das resultierende Video zurück, sobald die Generierung abgeschlossen ist.
 

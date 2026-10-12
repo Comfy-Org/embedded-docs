@@ -1,4 +1,4 @@
-# BeebleSwitchXVideoEdit
+# Beeble SwitchX Video Edit
 
 Bearbeiten Sie ein Video mit Beeble SwitchX. Dieser Node kann alles in der Szene austauschen (Hintergrund, Beleuchtung, Kostüm), während die Pixel und die Bewegung des ursprünglichen Motivs erhalten bleiben. Geben Sie ein Referenzbild und/oder einen Text-Prompt an, um das neue Aussehen zu beschreiben. Maximal 240 Frames, maximal ca. 2,77 Megapixel pro Frame.
 

@@ -1,4 +1,4 @@
-# Load3D
+# 3D & Animation laden
 
 Der Load3D-Node ist ein Kern-Node zum Laden und Verarbeiten von 3D-Modell-Dateien. Beim Laden des Nodes ruft er automatisch verfügbare 3D-Ressourcen aus `ComfyUI/input/3d/` ab. Sie können außerdem unterstützte 3D-Dateien über die Upload-Funktion zur Vorschau hochladen.
 

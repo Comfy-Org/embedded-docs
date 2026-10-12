@@ -1,4 +1,4 @@
-# MoGeInference
+# MoGe-Inferenz ausführen
 
 Führen Sie MoGe auf Bildern aus, um Tiefe und Geometrie zu schätzen. Dieser Node verarbeitet ein Eingabebild mit dem MoGe-Modell, um eine 3D-Punktwolke, eine Tiefenkarte, Kamera-Intrinsics, eine Maske und Oberflächennormalen zu erzeugen.
 

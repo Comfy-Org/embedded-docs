@@ -1,4 +1,4 @@
-# LTXVSeparateGeneratedKeyframes
+# LTXV Generierte Keyframes trennen
 
 ## Überblick
 

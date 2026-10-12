@@ -1,4 +1,4 @@
-# TextEncodeQwenImage21
+# Text kodieren Qwen Image 2.1
 
 Der Node TextEncodeQwenImage21 kodiert einen Prompt und einen Negativ-Prompt für das Modell Qwen-Image 2.1 und hängt optional Referenzbilder an. Referenzbilder werden vom Textencoder gesehen und, wenn ein VAE verbunden ist, zusätzlich als Latents kodiert, die in die Sequenz eingefügt werden. Dadurch trägt die Konditionierung sowohl die Textanweisung als auch die visuelle Referenz. Der Node gibt die positive und die negative Konditionierung zusammen mit einem leeren Latent zurück, das auf die Größe des ersten Referenzbilds dimensioniert und bereit für das Sampling ist.
 

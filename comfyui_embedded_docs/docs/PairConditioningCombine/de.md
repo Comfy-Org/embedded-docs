@@ -1,4 +1,4 @@
-# PairConditioningCombine
+# Cond-Paar kombinieren
 
 Der Node PairConditioningCombine führt zwei separate Konditionierungspaare (jeweils bestehend aus einer positiven und einer negativen Konditionierung) zu einem einzigen kombinierten Paar zusammen. Er nimmt die positive und negative Konditionierung aus zwei verschiedenen Quellen und kombiniert sie mithilfe der internen Logik von ComfyUI, wodurch eine finale positive und eine finale negative Konditionierung ausgegeben werden. Dieser Node ist experimentell und für fortgeschrittene Workflows zur Konditionierungsmanipulation gedacht.
 

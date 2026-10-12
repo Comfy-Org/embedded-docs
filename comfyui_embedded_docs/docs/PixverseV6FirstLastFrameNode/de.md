@@ -1,4 +1,4 @@
-# PixverseV6FirstLastFrameNode
+# PixVerse V6 Video aus erstem und letztem Frame
 
 PixVerse V6 First-Last-Frame to Video erzeugt mithilfe von PixVerse ein Video, das von einem ersten Frame zu einem letzten Frame übergeht, optional mit nativem Audio. Die beiden bereitgestellten Bilder werden an die PixVerse API gesendet, die das Übergangsvideo erzeugt und als Videodatei zurückgibt. Die Ausgabe behält das Seitenverhältnis des ersten Frames bei.
 

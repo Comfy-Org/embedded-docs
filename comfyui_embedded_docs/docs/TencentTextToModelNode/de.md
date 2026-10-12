@@ -1,4 +1,4 @@
-# TencentTextToModelNode
+# Hunyuan3D: Text zu Modell
 
 Dieser Node verwendet die Hunyuan3D Pro API von Tencent, um aus einer Textbeschreibung ein 3D-Modell zu erzeugen. Er sendet eine Anfrage zum Erstellen einer Generierungsaufgabe, fragt das Ergebnis wiederholt ab und lädt die endgültigen Modelldateien im GLB- und OBJ-Format herunter.
 

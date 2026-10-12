@@ -1,4 +1,4 @@
-# LumaImageNode2
+# Luma UNI-1 Image
 
 Dieser Node erzeugt Bilder aus Textbeschreibungen mithilfe des Luma UNI-1-Modells. Er nimmt einen Text-Prompt und optionale Einstellungen wie Seitenverhältnis und Stil entgegen und sendet dann die Anfrage an die Luma-API, um ein Bild zu erzeugen. Es sind zwei Modellvarianten verfügbar: `uni-1` und `uni-1-max`.
 

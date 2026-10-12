@@ -1,4 +1,4 @@
-# ImageRotate
+# Bild drehen
 
 Der Knoten ImageRotate rotiert ein Eingabebild um die angegebenen Winkel. Er unterstützt vier Rotationsoptionen: keine Drehung, 90 Grad im Uhrzeigersinn, 180 Grad und 270 Grad im Uhrzeigersinn. Die Drehung wird mithilfe effizienter Tensoroperationen durchgeführt, die die Integrität der Bilddaten erhalten.
 

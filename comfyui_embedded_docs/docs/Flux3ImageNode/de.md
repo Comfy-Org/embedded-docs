@@ -1,4 +1,4 @@
-# Flux3ImageNode
+# Flux 3 Bild
 
 Flux 3 Image erzeugt mit FLUX 3 aus einem Prompt ein Bild oder bearbeitet und kombiniert Referenzbilder. Schreiben Sie als Anweisung, was Sie möchten, verbinden Sie dann bis zu 10 Referenzbilder und verweisen Sie im Prompt mit image 1, image 2 usw. auf sie. Der Prompt wird vor der Generierung interpretiert und erweitert, und das Ergebnis wird im gewählten Seitenverhältnis und in der gewählten Auflösung gerendert.
 

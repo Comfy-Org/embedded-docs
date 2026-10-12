@@ -1,4 +1,4 @@
-# MagnificImageStyleTransferNode
+# Magnific Image Style Transfer
 
 Dieser Node wendet den visuellen Stil eines Referenzbildes auf Ihr Eingabebild an. Er verwendet einen externen KI-Dienst zur Verarbeitung der Bilder, sodass Sie die Stärke der Stilübertragung und die Beibehaltung der Struktur des Originalbildes steuern können.
 

@@ -1,4 +1,4 @@
-# HappyHorseReferenceVideoApi
+# HappyHorse Referenz zu Video
 
 Dieser Node erzeugt ein Video mit einer Person oder einem Objekt aus Referenzbildern unter Verwendung des HappyHorse-Modells. Er unterstützt Darbietungen mit einem einzelnen Charakter sowie Interaktionen zwischen mehreren Charakteren. Die Referenzbilder werden hochgeladen und verwendet, um die Charaktere im generierten Video darzustellen.
 

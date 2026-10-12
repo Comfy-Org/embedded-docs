@@ -1,4 +1,4 @@
-# USOStyleReference
+# USO-Stilreferenz anwenden
 
 Der Node `USOStyleReference` wendet eine Stilreferenz auf ein Modell an, indem CLIP-Vision-Merkmale mit einem Modell-Patch kombiniert werden, und gibt eine gepatchte Kopie des Eingabemodells zurück. Die visuellen Stilinformationen werden mit der Textkonditionierung des Modells kombiniert, sodass sie die Generierung beeinflussen können. Dieser Node ist für Flux-Modelle vorgesehen und als experimentell gekennzeichnet.
 

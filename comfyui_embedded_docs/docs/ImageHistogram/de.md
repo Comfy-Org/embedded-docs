@@ -1,4 +1,4 @@
-# ImageHistogram
+# Bildhistogramm
 
 Der Node ImageHistogram analysiert die Farbverteilung eines Eingabebilds. Er berechnet und gibt mehrere Histogramme aus, also Diagramme, die zeigen, wie viele Pixel im Bild jeden möglichen Intensitätswert haben. Er erzeugt separate Histogramme für die roten, grünen und blauen Farbkanäle, ein zusammengesetztes RGB-Histogramm und ein Luminanzhistogramm, das auf einer Standard-Helligkeitsformel basiert. Jedes Histogramm enthält 256 Bins und deckt Intensitätsstufen von 0 bis 255 ab.
 

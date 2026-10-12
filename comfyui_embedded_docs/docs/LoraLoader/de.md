@@ -1,4 +1,4 @@
-# LoraLoader
+# LoRA laden (Modell und CLIP)
 
 Dieser Node erkennt automatisch Modelle im LoRA-Ordner (einschließlich Unterordner), wobei der entsprechende Modellpfad `ComfyUI\models\loras` lautet. Weitere Informationen finden Sie unter Installieren von LoRA-Modellen.
 

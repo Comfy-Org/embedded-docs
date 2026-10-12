@@ -1,4 +1,4 @@
-# PreviewImage
+# Bildvorschau
 
 Der PreviewImage-Node ist für die Erstellung temporärer Vorschaubilder konzipiert. Er generiert automatisch einen eindeutigen temporären Dateinamen für jedes Bild, komprimiert das Bild auf einen angegebenen Grad und speichert es in einem temporären Verzeichnis. Diese Funktionalität ist besonders nützlich, um während der Verarbeitung Vorschaubilder von Bildern zu erzeugen, ohne die Originaldateien zu beeinflussen.
 

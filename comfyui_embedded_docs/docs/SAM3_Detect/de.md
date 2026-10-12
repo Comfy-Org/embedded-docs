@@ -1,4 +1,4 @@
-# SAM3_Detect
+# SAM3 Erkennung
 
 ## Überblick
 

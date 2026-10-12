@@ -1,4 +1,4 @@
-# QuiverImageToSVGNode
+# Quiver Bild zu SVG
 
 Dieser Node wandelt ein Rasterbild mithilfe der Vektorisierungsmodelle von Quiver AI in eine skalierbare Vektorgrafik (SVG) um. Er sendet das Bild an eine externe API, die es verarbeitet und das vektorisierte Ergebnis zurückgibt.
 

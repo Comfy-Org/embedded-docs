@@ -1,4 +1,4 @@
-# TripoPSeriesImageToModelNode
+# Tripo P2: Bild zu Modell
 
 Erzeugt aus einem einzelnen Bild mithilfe des P2-Modells von Tripo ein Low-Poly-3D-Modell mit sauberer Topologie. Das Ergebnis wird als Dreiecksnetz (GLB) oder, wenn `model.quad` aktiviert ist, als quad-dominantes Netz (FBX) zurückgegeben.
 

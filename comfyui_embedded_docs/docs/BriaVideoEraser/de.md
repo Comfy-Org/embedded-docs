@@ -1,4 +1,4 @@
-# BriaVideoEraser
+# Bria Video Eraser
 
 Löscht mit Bria alles aus einem Video, was eine Maske pro Frame abdeckt, und füllt die Lücke. Die Maske muss weiß für die Bereiche sein, die entfernt werden sollen, und ansonsten schwarz. Bria akzeptiert Clips von höchstens 5,1 Sekunden bei 20 bis 30 Bildern pro Sekunde mit geraden Pixelabmessungen; Audio wird standardmäßig beibehalten. Der zurückgegebene Clip kann einige Frames kürzer als die Eingabe sein.
 

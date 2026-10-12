@@ -1,4 +1,4 @@
-# SyncTalkingImageNode
+# sync.so Sprechendes Bild
 
 Animieren Sie ein Standporträt zu einem sprechenden Video, das durch Sprachaudio gesteuert wird, mithilfe des sync-3-Modells von sync.so. Die Ausgabedauer entspricht der Audiodauer, und die Kosten skalieren mit der Ausgabedauer.
 

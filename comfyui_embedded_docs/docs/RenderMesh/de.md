@@ -1,4 +1,4 @@
-# RenderMesh
+# Mesh rendern
 
 Dieser Node rendert ein 3D-Mesh durch Ray-Casting einer einzelnen Ansicht in ein 2D-Bild. Er kann das texturierte Mesh, Vertex-Farben, eine einfarbig schattierte Oberfläche, Oberflächennormalen oder Tiefe ausgeben. Die Kamera und die optionale Modelltransformation können aus einem Load3D-/Preview3D-Viewer stammen; wenn keine Kamera verbunden ist, wird automatisch eine Standard-Frontansicht eingepasst.
 

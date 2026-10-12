@@ -1,4 +1,4 @@
-# Rodin3D_Sketch
+# Rodin 3D-Generierung – Skizzengenerierung
 
 Dieser Node generiert 3D-Assets mithilfe der Rodin-API. Er nimmt Eingabebilder und konvertiert sie über einen externen Dienst in 3D-Modelle. Der Node übernimmt den gesamten Prozess von der Erstellung der Aufgabe bis zum Herunterladen der endgültigen 3D-Modelldateien.
 

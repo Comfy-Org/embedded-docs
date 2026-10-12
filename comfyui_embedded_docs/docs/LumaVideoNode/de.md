@@ -1,4 +1,4 @@
-# LumaVideoNode
+# Luma Text zu Video
 
 Generiert Videos synchron auf Grundlage eines Text-Prompts und der Ausgabeeinstellungen. Dieser Node erstellt Videoinhalte anhand von Textbeschreibungen und verschiedenen Generierungsparametern und erzeugt die endgültige Videoausgabe, sobald der Generierungsprozess abgeschlossen ist.
 

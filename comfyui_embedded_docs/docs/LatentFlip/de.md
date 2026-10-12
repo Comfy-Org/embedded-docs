@@ -1,4 +1,4 @@
-# LatentFlip
+# latent spiegeln
 
 Der LatentFlip-Node dient dazu, latente Repräsentationen durch vertikales oder horizontales Spiegeln zu manipulieren. Diese Operation ermöglicht die Transformation des latenten Raums und kann möglicherweise neue Variationen oder Perspektiven innerhalb der Daten aufdecken.
 

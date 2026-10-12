@@ -1,4 +1,4 @@
-# RunwayImageToVideoNodeGen3a
+# Runway Image zu Video (Gen3a Turbo)
 
 Der Node Runway Image to Video (Gen3a Turbo) erzeugt aus einem einzelnen Startbild ein Video mithilfe des Gen3a Turbo-Modells von Runway. Er nimmt einen Text-Prompt und ein initiales Bild entgegen und erstellt dann eine Videosequenz basierend auf der angegebenen Dauer und dem Seitenverhältnis. Die Generierung wird remote über die API von Runway verarbeitet. Dieser Node ist als veraltet markiert.
 

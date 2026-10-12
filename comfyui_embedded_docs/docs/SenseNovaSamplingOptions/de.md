@@ -1,4 +1,4 @@
-# SenseNovaSamplingOptions
+# SenseNova-Sampling-Optionen
 
 SenseNova Sampling Options legt den SenseNova-Flow-Shift für ein Modell fest. Es klont das Eingabemodell, fügt mit dem gewählten Flow-Shift-Wert eine Sampling-Konfiguration für das SenseNova-Modell hinzu und gibt das gepatchte Modell zur Verwendung während des Samplings zurück.
 

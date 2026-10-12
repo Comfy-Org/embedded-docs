@@ -1,4 +1,4 @@
-# LayersFromBoundingBoxes
+# Ebenen aus Bounding Boxes
 
 Dieser Node wandelt einen Bildstapel und seine Bounding-Boxen in einen Ebenenstapel um, erstellt eine Ebene pro Frame und platziert jede Ebene gemäß ihrer zugehörigen Box. Verwenden Sie ihn, wenn ein Node Ebenen als Batch ausgibt, denn ein Batch enthält nur eine einzige Platzierung für jeden Frame, und die einzelnen Positionen würden andernfalls verloren gehen.
 

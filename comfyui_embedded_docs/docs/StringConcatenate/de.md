@@ -1,4 +1,4 @@
-# StringConcatenate
+# Text verketten
 
 Der Node StringConcatenate kombiniert zwei Textzeichenfolgen zu einer, indem er sie mit einem angegebenen Trennzeichen verbindet. Er nimmt zwei Eingabezeichenfolgen sowie ein Trennzeichen (ein Zeichen oder eine Zeichenfolge) entgegen und gibt dann eine einzelne Zeichenfolge aus, in der die beiden Eingaben mit dem dazwischen eingefügten Trennzeichen verbunden sind.
 

@@ -1,4 +1,4 @@
-# GeminiInputFiles
+# Gemini-Eingabedateien
 
 Lädt Eingabedateien und formatiert sie für die Verwendung mit der Gemini API. Dieser Node ermöglicht es Benutzern, Text- (.txt) und PDF-Dateien (.pdf) als Eingabekontext für das Gemini-Modell einzubinden. Dateien werden in das von der API benötigte Format konvertiert und können verkettet werden, um mehrere Dateien in einer einzigen Anfrage einzubinden.
 

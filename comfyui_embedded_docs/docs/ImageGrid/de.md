@@ -1,4 +1,4 @@
-# ImageGrid
+# Bilderaster erstellen
 
 Der Image-Grid-Node kombiniert mehrere Bilder zu einem einzelnen, organisierten Raster oder einer Collage. Er nimmt eine Liste von Bildern entgegen und ordnet sie in einer festgelegten Anzahl von Spalten an, wobei er jedes Bild auf eine definierte Zellgröße skaliert und optional Abstand zwischen ihnen hinzufügt. Das Ergebnis ist ein einzelnes neues Bild, das alle Eingabebilder in einem Rasterlayout enthält.
 

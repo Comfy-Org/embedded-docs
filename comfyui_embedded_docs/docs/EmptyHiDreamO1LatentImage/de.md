@@ -1,4 +1,4 @@
-# EmptyHiDreamO1LatentImage
+# Leeres HiDream-O1-Latent-Bild
 
 Dieser Node erstellt ein leeres Latent-Bild im Pixelraum für das HiDream-O1-Image-Modell. Er erzeugt einen leeren Tensor aus Nullen, der als Ausgangspunkt für die Bilderzeugung dient, wobei die Abmessungen durch die Eingaben `width`, `height` und `batch_size` definiert werden.
 

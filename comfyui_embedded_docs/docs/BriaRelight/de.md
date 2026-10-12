@@ -1,4 +1,4 @@
-# BriaRelight
+# Bria Beleuchtung ändern
 
 Dieser Node ändert die Lichtatmosphäre und die Lichtrichtung eines Bildes mithilfe von Bria. Das Bild wird von Bria neu gerendert, daher ist das Ergebnis nicht pixelgenau zum Eingabebild; das gesamte Bild wird mit etwa 1 Megapixel neu erzeugt.
 

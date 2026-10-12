@@ -1,4 +1,4 @@
-# NormalizeImages
+# Bildfarben normalisieren
 
 Dieser Node normalisiert die Farben eines Eingabebildes, indem er seine Pixelwerte basierend auf einem angegebenen Mittelwert und einer angegebenen Standardabweichung anpasst. Von jedem Pixel wird der Mittelwert subtrahiert und anschließend durch die Standardabweichung dividiert. Dies ist ein üblicher Schritt, um Bilddaten vor der weiteren Verarbeitung zu standardisieren.
 

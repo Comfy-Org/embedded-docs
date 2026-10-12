@@ -1,4 +1,4 @@
-# GeminiNanoBanana2
+# Nano Banana 2
 
 Der Node Nano Banana 2 erzeugt oder bearbeitet Bilder synchron über die Google Vertex API unter Verwendung des Modells Gemini 3.1 Flash Image. Er sendet einen Text-Prompt zusammen mit optionalen Referenzbildern oder Dateien und gibt das generierte Bild, etwaigen begleitenden Text und optional ein Bild aus dem Denkprozess des Modells zurück. Dieser Node ist als veraltet markiert.
 

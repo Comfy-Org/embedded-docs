@@ -1,4 +1,4 @@
-# Wan2VideoContinuationApi
+# Wan 2.7 Videofortsetzung
 
 Der Wan 2.7 Video Continuation-Node erzeugt ein neues Videosegment, das an das Ende eines Eingabevideoclips anknüpft. Er verwendet das Wan 2.7-Modell, um die Fortsetzung basierend auf einem Text-Prompt zu synthetisieren, und kann optional das Ende auf einen bestimmten Ziel-Frame hinführen.
 

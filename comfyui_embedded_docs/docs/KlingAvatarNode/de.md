@@ -1,4 +1,4 @@
-# KlingAvatarNode
+# Kling Avatar 2.0
 
 Der Kling Avatar 2.0-Node erzeugt Digital-Human-Videos im Broadcast-Stil aus einem einzelnen Referenzfoto und einer Audiodatei. Er erstellt ein sprechendes Avatar-Video mit einem optionalen Text-Prompt, um die Aktionen, Emotionen und Kamerabewegungen des Avatars festzulegen.
 

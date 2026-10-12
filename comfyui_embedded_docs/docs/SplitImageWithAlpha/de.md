@@ -1,4 +1,4 @@
-# SplitImageWithAlpha
+# Bild mit Alpha aufteilen
 
 Der SplitImageWithAlpha-Node dient dazu, die Farb- und Alpha-Komponenten eines Bildes zu trennen. Er verarbeitet einen Eingabebild-Tensor, extrahiert die RGB-Kanäle als Farbkomponente und den Alpha-Kanal als Transparenzkomponente, wodurch Vorgänge erleichtert werden, die die Bearbeitung dieser unterschiedlichen Bildaspekte erfordern.
 

@@ -1,4 +1,4 @@
-# VideoFrameSample
+# Videoframe samplen
 
 Der `VideoFrameSample`-Node extrahiert eine feste Anzahl von Frames aus einem Video mithilfe einer von vier Strategien. Bei den zusammenhängenden Strategien "head" und "tail" ist die Ausgabe eine Lazy-Video-Referenz (Frames werden nicht dekodiert); bei den nicht zusammenhängenden Strategien "uniform" und "random" werden nur die ausgewählten Frames dekodiert.
 

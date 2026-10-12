@@ -1,4 +1,4 @@
-# KlingOmniProTextToVideoNode
+# Kling 3.0 Omni Text zu Video
 
 Dieser Node erzeugt ein Video aus einer Textbeschreibung mithilfe des neuesten Kling-KI-Modells. Er sendet Ihren Prompt an eine Remote-API und gibt das generierte Video zurück. Sie können die Länge, das Format und die Qualität des Videos steuern und optional Multi-Shot-Storyboards erstellen.
 

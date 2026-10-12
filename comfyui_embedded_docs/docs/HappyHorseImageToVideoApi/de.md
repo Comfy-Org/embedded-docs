@@ -1,4 +1,4 @@
-# HappyHorseImageToVideoApi
+# HappyHorse Bild zu Video
 
 Dieser Node erzeugt mit dem HappyHorse-Modell ein kurzes Video aus einem einzelnen Startbild. Sie geben ein Bild für das erste Frame und einen Text-Prompt an, der die gewünschte Bewegung und Szene beschreibt, und der Node erstellt ein Video, das von diesem Bild fortgesetzt wird.
 

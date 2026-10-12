@@ -1,4 +1,4 @@
-# AnimaLLLiteApply
+# Anima LLLite anwenden
 
 AnimaLLLiteApply wendet einen leichten Animations-Patch auf ein Diffusionsmodell an und ermöglicht so eine kontrollierte Bild-zu-Bild-Generierung mit anpassbarer Stärke und Zeitsteuerung. Es kombiniert einen vorkonfigurierten Modell-Patch mit einem Eingabebild und einer optionalen Maske und modifiziert die Attention- und MLP-Schichten des Modells, um den Generierungsprozess zu beeinflussen.
 

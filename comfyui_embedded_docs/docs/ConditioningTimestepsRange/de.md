@@ -1,4 +1,4 @@
-# ConditioningTimestepsRange
+# Zeitschrittbereich
 
 Der Knoten ConditioningTimestepsRange erstellt drei verschiedene Zeitschrittbereiche, um zu steuern, wann Conditioning-Effekte während des Generierungsprozesses angewendet werden. Er nimmt Start- und Endprozentwerte entgegen und unterteilt den gesamten Zeitschrittbereich (0.0 bis 1.0) in drei Segmente: den Hauptbereich zwischen den angegebenen Prozentwerten, den Bereich vor dem Startprozentwert und den Bereich nach dem Endprozentwert.
 

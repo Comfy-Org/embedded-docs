@@ -1,4 +1,4 @@
-# RecraftStyleV3LogoRaster
+# Recraft Style – Logo-Raster
 
 Dieser Node wählt den Logo-Raster-Stil und einen spezifischen Unterstil für die Generierung von Logobildern aus. Er ist auf die Erstellung von Logodesigns mit rasterbasierten visuellen Behandlungen spezialisiert. Der ausgewählte Stil wird als Recraft-Stileinstellung zurückgegeben, die an andere Recraft-Nodes übergeben werden kann.
 

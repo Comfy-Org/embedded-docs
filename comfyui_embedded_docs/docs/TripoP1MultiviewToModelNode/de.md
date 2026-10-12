@@ -1,4 +1,4 @@
-# TripoP1MultiviewToModelNode
+# Tripo P1: Mehransichten zu Modell
 
 Dieser Node generiert ein 3D-Modell aus zwei bis vier Referenzbildern eines Objekts oder Charakters. Stellen Sie die Vorderansicht sowie eine beliebige Kombination aus linker, hinterer und rechter Ansicht bereit, und der Node gibt das rekonstruierte Subjekt als GLB-Mesh zurück.
 

@@ -1,4 +1,4 @@
-# StyleModelLoader
+# Style Model laden
 
 Dieser Node erkennt Modelle im Ordner `ComfyUI/models/style_models` und liest außerdem Modelle aus zusätzlichen Pfaden, die in der Datei extra_model_paths.yaml konfiguriert sind. Manchmal müssen Sie die **ComfyUI-Oberfläche aktualisieren**, damit sie die Modelldateien aus dem entsprechenden Ordner lesen kann.
 

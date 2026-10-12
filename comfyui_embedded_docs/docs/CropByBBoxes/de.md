@@ -1,4 +1,4 @@
-# CropByBBoxes
+# Nach Bounding Boxes zuschneiden
 
 Der Node CropByBBoxes extrahiert und skaliert bestimmte rechteckige Bereiche aus einem Eingabe-Bildstapel. Er verwendet die bereitgestellten Bounding-Box-Koordinaten, um den Bereich zu definieren, der aus jedem Bild zugeschnitten werden soll. Die zugeschnittenen Bereiche werden anschließend auf eine angegebene Ausgabegröße skaliert, wobei die Option besteht, den Ausschnitt entweder zu strecken oder ihn mit Padding zu versehen, um sein ursprüngliches Seitenverhältnis beizubehalten.
 

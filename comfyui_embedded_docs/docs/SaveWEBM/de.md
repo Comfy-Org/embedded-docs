@@ -1,4 +1,4 @@
-# SaveWEBM
+# WEBM speichern
 
 Der SaveWEBM-Node speichert eine Bildsequenz als WEBM-Videodatei. Er nimmt mehrere Eingabebilder entgegen und kodiert sie mit dem VP9- oder AV1-Codec unter konfigurierbaren Qualitätseinstellungen und Bildrate zu einem Video. Die resultierende Videodatei wird im Ausgabeverzeichnis gespeichert, zusammen mit Metadaten, die Prompt-Informationen enthalten.
 

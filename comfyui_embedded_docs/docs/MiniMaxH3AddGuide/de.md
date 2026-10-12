@@ -1,4 +1,4 @@
-# MiniMaxH3AddGuide
+# Guide für MiniMax H3 hinzufügen
 
 Dieser Node verankert ein Bild, einen kurzen Clip, Audio oder einen Clip mit seinem Soundtrack an einem beliebigen Frame eines MiniMax H3-Videos. Er fügt dem Conditioning am gewählten Frame-Index ein Guide-Keyframe hinzu, und Sie können mehrere dieser Nodes verketten, um mehrere Frames im selben Video zu verankern.
 

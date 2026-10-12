@@ -1,4 +1,4 @@
-# OpenAIChatConfig
+# Erweiterte Optionen für OpenAI ChatGPT
 
 Der OpenAIChatConfig-Node definiert erweiterte Optionen, die steuern, wie der OpenAI Chat Node Antworten generiert. Er ermöglicht es Ihnen, die Kürzungsstrategie festzulegen, die Anzahl der Ausgabe-Tokens zu begrenzen, benutzerdefinierte Anweisungen bereitzustellen und auszuwählen, wie viel Reasoning-Aufwand das Modell vor der Antwort betreiben soll.
 

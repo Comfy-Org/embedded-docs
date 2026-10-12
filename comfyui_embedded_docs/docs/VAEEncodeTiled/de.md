@@ -1,4 +1,4 @@
-# VAEEncodeTiled
+# VAE kodieren (gekachelt)
 
 VAEEncodeTiled verarbeitet Bilder, indem es sie in kleinere Kacheln aufteilt und sie mit einem Variational Autoencoder kodiert. Dieser Kachelungsansatz ermöglicht die Verarbeitung großer Bilder, die andernfalls die Speichergrenzen überschreiten könnten. Der Node unterstützt sowohl Bild- als auch Video-VAEs, mit separaten Kachelungssteuerungen für räumliche und zeitliche Dimensionen.
 

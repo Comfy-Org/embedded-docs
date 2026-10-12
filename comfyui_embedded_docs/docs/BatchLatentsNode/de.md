@@ -1,4 +1,4 @@
-# BatchLatentsNode
+# Latents bündeln
 
 Der Node Batch Latents kombiniert mehrere Latent-Eingaben zu einem einzigen Batch. Er nimmt eine variable Anzahl von Latent-Stichproben entgegen und führt sie entlang der Batch-Dimension zusammen, damit sie von nachfolgenden Nodes gemeinsam verarbeitet werden können. Der Node führt außerdem die Batch-Index-Metadaten aller Eingaben in der kombinierten Ausgabe zusammen.
 

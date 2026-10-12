@@ -1,4 +1,4 @@
-# FrameInterpolate
+# Frame-Interpolationsmodell ausführen
 
 Der Node „Frame Interpolate“ erzeugt neue Frames zwischen vorhandenen Frames in einer Bildsequenz und erhöht dadurch effektiv die Bildrate. Er verwendet ein KI-Modell, um vorherzusagen, wie die Zwischenframes aussehen sollten. Dies kann verwendet werden, um flüssige Zeitlupeneffekte zu erzeugen oder die Flüssigkeit eines Videos zu erhöhen.
 

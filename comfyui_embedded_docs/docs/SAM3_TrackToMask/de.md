@@ -1,4 +1,4 @@
-# SAM3_TrackToMask
+# SAM3-Tracking zu Maske
 
 ## Übersicht
 

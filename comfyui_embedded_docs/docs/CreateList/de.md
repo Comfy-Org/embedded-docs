@@ -1,4 +1,4 @@
-# CreateList
+# Liste erstellen
 
 Der Node Create List kombiniert mehrere Eingaben zu einer einzigen, sequenziellen Liste. Er akzeptiert eine beliebige Anzahl von Eingabe-Slots, die denselben Datentyp verwenden, und verkettet ihre Elemente in der Reihenfolge, in der die Slots verbunden sind. Das Ergebnis ist eine Liste, die alle verbundenen Elemente enthält.
 

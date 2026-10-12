@@ -1,4 +1,4 @@
-# ImagePadForOutpaint
+# Bild für Outpainting auffüllen
 
 Dieser Node ist dafür konzipiert, Bilder für den Outpainting-Prozess vorzubereiten, indem er Padding um sie herum hinzufügt. Er passt die Bildabmessungen an, um die Kompatibilität mit Outpainting-Algorithmen sicherzustellen, und erleichtert so die Generierung erweiterter Bildbereiche über die ursprünglichen Grenzen hinaus.
 

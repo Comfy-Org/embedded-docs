@@ -1,4 +1,4 @@
-# RecraftRemoveBackgroundNode
+# Recraft Hintergrund entfernen
 
 Dieser Node entfernt den Hintergrund aus Bildern mithilfe des Recraft-API-Dienstes. Er verarbeitet jedes Bild im Eingabe-Batch einzeln und gibt sowohl die verarbeiteten Bilder mit transparentem Hintergrund als auch entsprechende Alpha-Masken zurück, die die entfernten Hintergrundbereiche anzeigen.
 

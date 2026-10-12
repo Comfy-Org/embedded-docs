@@ -1,4 +1,4 @@
-# CLIPTextEncodePixArtAlpha
+# CLIP-Textkodierung (PixArt Alpha)
 
 Kodiert Text und legt die Auflösungskonditionierung für PixArt Alpha fest. Dieser Node verarbeitet Texteingaben und fügt Breiten- und Höheninformationen hinzu, um Konditionierungsdaten speziell für PixArt-Alpha-Modelle zu erstellen. Er gilt nicht für PixArt-Sigma-Modelle.
 

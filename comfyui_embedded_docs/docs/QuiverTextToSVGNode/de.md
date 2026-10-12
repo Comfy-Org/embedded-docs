@@ -1,4 +1,4 @@
-# QuiverTextToSVGNode
+# Quiver Text zu SVG
 
 Der Node Quiver Text to SVG erzeugt aus einer Textbeschreibung mithilfe der Modelle von Quiver AI eine Scalable Vector Graphic (SVG). Optional können Sie Referenzbilder und Stilanweisungen bereitstellen, um den Generierungsprozess zu steuern.
 

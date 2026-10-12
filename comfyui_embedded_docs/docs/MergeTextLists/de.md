@@ -1,4 +1,4 @@
-# MergeTextLists
+# Textlisten zusammenführen (VERALTET)
 
 Dieser Node führt mehrere Textlisten zu einer einzigen, kombinierten Liste zusammen. Er ist darauf ausgelegt, Texteingaben als Listen zu empfangen und sie miteinander zu verketten. Der Node protokolliert die Gesamtzahl der Texte in der zusammengeführten Liste.
 

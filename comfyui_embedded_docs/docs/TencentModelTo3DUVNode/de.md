@@ -1,4 +1,4 @@
-# TencentModelTo3DUVNode
+# Hunyuan3D: Modell zu UV
 
 Dieser Node verwendet die Tencent Hunyuan3D API, um eine UV-Entfaltung an einem 3D-Modell durchzuführen. Er nimmt eine 3D-Modell-Datei als Eingabe entgegen, sendet sie zur Verarbeitung an die API und gibt das verarbeitete Modell in den Formaten OBJ und FBX sowie ein generiertes UV-Texturbild zurück. Das Eingabemodell muss weniger als 30.000 Flächen haben.
 

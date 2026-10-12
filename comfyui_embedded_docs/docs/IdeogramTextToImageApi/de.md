@@ -1,4 +1,4 @@
-# IdeogramTextToImageApi
+# Ideogram 4.5 Text zu Bild
 
 Erzeugen Sie Bilder aus einem Text-Prompt mit Ideogram 4.5. Der Prompt akzeptiert außerdem eine strukturierte JSON-Bildbeschriftung von Ideogram, zum Beispiel den `final_prompt`, der von einem früheren Durchlauf zurückgegeben wurde, wodurch Sie exakte Kontrolle über Textzeichenfolgen, Farben und Layout erhalten. Der Node gibt das/die generierte(n) Bild(er) zusammen mit der Bildbeschriftung zurück, aus der das Bild tatsächlich generiert wurde.
 

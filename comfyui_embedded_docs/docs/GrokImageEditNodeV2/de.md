@@ -1,4 +1,4 @@
-# GrokImageEditNodeV2
+# Grok Image Edit
 
 Ändert ein oder mehrere vorhandene Bilder basierend auf einem Text-Prompt. Der Node sendet die verbundenen Referenzbilder und den Prompt unter Verwendung des ausgewählten Modells an die Grok-Bildbearbeitungs-API und gibt anschließend die bearbeiteten Bilder zurück.
 

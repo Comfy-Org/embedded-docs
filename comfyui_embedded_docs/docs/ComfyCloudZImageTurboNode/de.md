@@ -1,4 +1,4 @@
-# ComfyCloudZImageTurboNode
+# Comfy Cloud Z-Image Turbo Text zu Bild [BETA]
 
 Dieser Node generiert ein Bild aus einem Text-Prompt mithilfe des Z-Image Turbo-Modells, das in nur 8 Schritten fertig wird. Die Generierung läuft remote auf Comfy Cloud GPUs und wird nach der Laufzeit abgerechnet, wodurch dies eine der schnellsten und günstigsten Optionen hier ist, um Bildideen zu iterieren. Sobald die Generierung abgeschlossen ist, lädt der Node das fertige Bild herunter, damit es in Ihrem Workflow verwendet werden kann. Dieser Node ist Teil des Comfy Cloud Node-Sets, das als BETA gekennzeichnet ist: Optionen können hinzugefügt oder entfernt werden und ein Workflow kann außer Betrieb genommen werden.
 

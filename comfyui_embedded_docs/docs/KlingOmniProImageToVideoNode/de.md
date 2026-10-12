@@ -1,4 +1,4 @@
-# KlingOmniProImageToVideoNode
+# Kling 3.0 Omni Image to Video
 
 Dieser Node verwendet das Kling-KI-Modell, um anhand eines Text-Prompts und bis zu sieben Referenzbildern ein Video zu generieren. Er ermöglicht die Steuerung von Seitenverhältnis, Dauer und Auflösung des Videos sowie optional die Verwendung von Storyboards oder die Generierung von Audio. Der Node sendet die Anfrage an eine externe API und gibt das generierte Video zurück.
 

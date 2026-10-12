@@ -1,4 +1,4 @@
-# MediaPipeFaceLandmarker
+# Gesichtslandmarken erkennen (MediaPipe)
 
 ## Überblick
 

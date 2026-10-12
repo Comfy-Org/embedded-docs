@@ -1,4 +1,4 @@
-# PixverseTextToVideoNode
+# PixVerse Text zu Video
 
 Generiert Videos aus einem Text-Prompt mithilfe der PixVerse API. Der Node ermöglicht es, Form, Qualität, Länge und Bewegungsstil des Videos zu steuern und optional eine gespeicherte Stilvorlage anzuwenden. Er übermittelt die Anfrage, wartet auf den Abschluss der Generierung und gibt das fertige Video zurück.
 

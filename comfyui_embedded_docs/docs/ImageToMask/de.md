@@ -1,4 +1,4 @@
-# ImageToMask
+# Bild in Maske umwandeln
 
 Der ImageToMask-Node dient dazu, ein Bild basierend auf einem festgelegten Farbkanal in eine Maske umzuwandeln. Er ermöglicht die Extraktion von Maskenebenen, die den Rot-, Grün-, Blau- oder Alpha-Kanälen eines Bildes entsprechen, und erleichtert Operationen, die kanalspezifische Maskierung oder Verarbeitung erfordern.
 

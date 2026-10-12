@@ -1,4 +1,4 @@
-# LoadImage
+# Bild laden
 
 Der LoadImage-Node dient zum Laden und Vorverarbeiten von Bildern von einem angegebenen Pfad. Er verarbeitet Bildformate mit mehreren Frames, wendet erforderliche Transformationen wie Drehung basierend auf EXIF-Daten an, normalisiert Pixelwerte und erzeugt optional eine Maske für Bilder mit einem Alphakanal. Dieser Node ist unerlässlich, um Bilder für die weitere Verarbeitung oder Analyse innerhalb einer Pipeline vorzubereiten.
 

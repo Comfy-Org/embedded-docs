@@ -1,4 +1,4 @@
-# LtxApi25AudioToVideo
+# LTX 2.5 Audio To Video
 
 Dieser Node erzeugt ein Video, das einer Audiospur folgt, unter Verwendung des LTX 2.5-Modells. Die Audiodauer bestimmt die Videolänge (zwischen 2 und 20 Sekunden); optional kann ein Bild als erstes Frame angegeben werden. Das Video wird über den LTX 2.5-API-Dienst generiert.
 

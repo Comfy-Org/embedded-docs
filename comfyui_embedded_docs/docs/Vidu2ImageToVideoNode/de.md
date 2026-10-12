@@ -1,4 +1,4 @@
-# Vidu2ImageToVideoNode
+# Vidu2 Bild-zu-Video-Generierung
 
 Der Node Vidu2 Image-to-Video Generation erstellt eine Videosequenz, die von einem einzelnen Eingabebild ausgeht. Er verwendet ein angegebenes Vidu2-Modell, um die Szene anhand eines optionalen Text-Prompts zu animieren, und steuert dabei die Länge, Auflösung und Bewegungsintensität des Videos.
 

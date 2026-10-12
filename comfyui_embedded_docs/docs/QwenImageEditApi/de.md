@@ -1,4 +1,4 @@
-# QwenImageEditApi
+# Qwen Image 3 bearbeiten
 
 Dieser Node verwendet die Qwen-Image 3.0-Modelle, um bis zu 3 Referenzbilder anhand eines Text-Prompts zu bearbeiten oder zu kombinieren. Sie wählen ein Modell aus, geben den Prompt und die Referenzbilder an, und der Node gibt ein oder mehrere generierte Bilder zurück.
 

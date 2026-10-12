@@ -1,4 +1,4 @@
-# ByteDance2ReferenceNodeV2
+# ByteDance Seedance 2.5 Referenz zu Video
 
 ByteDance Seedance 2.5 Reference to Video erzeugt, bearbeitet oder erweitert Videos mit ByteDance Seedance-Modellen (Seedance 2.5, 2.5 Draft, 2.0, 2.0 Fast und 2.0 Mini), gesteuert durch einen Text-Prompt und optionale Referenzbilder, -videos, -audios oder zuvor hochgeladene Bibliotheks-Assets. Der Node lädt die Referenzen hoch, übermittelt eine Generierungsaufgabe, wartet auf deren Abschluss und gibt die fertige Videodatei zurück. Wenn Sie `Seedance 2.5 Draft` auswählen, wird stattdessen eine schnelle 480p-Vorschau gerendert; verbinden Sie die resultierende `draft_task_id` mit dem Node ByteDance Seedance 2.5 Draft to Final Video, um das 1080p-Final zu rendern.
 

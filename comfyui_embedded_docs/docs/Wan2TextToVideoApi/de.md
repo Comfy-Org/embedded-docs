@@ -1,4 +1,4 @@
-# Wan2TextToVideoApi
+# Wan 2.7 Text zu Video
 
 Dieser Node generiert ein Video aus einer Textbeschreibung mithilfe des Wan-2.7-Modells. Er sendet Ihren Prompt an die Wan-Video-Generierungs-API, wartet, bis die Aufgabe abgeschlossen ist, und gibt das resultierende Video zurück. Optional können Sie einen Audioclip anschließen, um die Bewegung und das Timing des Videos zu beeinflussen; wenn kein Audio bereitgestellt wird, generiert das Modell automatisch passendes Audio.
 

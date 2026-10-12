@@ -1,4 +1,4 @@
-# LatentUpscaleModelLoader
+# Latent-Upscale-Modell laden
 
 Der Node LatentUpscaleModelLoader lädt ein Modell, das auf das Hochskalieren latenter Repräsentationen spezialisiert ist, aus einer Datei, die im Ordner `latent_upscale_models` von ComfyUI gespeichert ist. Er erkennt die Modellarchitektur automatisch anhand des Dateiinhalts (Hunyuan Video 720p, Hunyuan Video 1080p oder ein Latent Upsampler) und konfiguriert das passende interne Modell, sodass das Ergebnis von anderen Nodes verwendet werden kann.
 

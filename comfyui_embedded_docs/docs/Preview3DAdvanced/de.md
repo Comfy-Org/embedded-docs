@@ -1,4 +1,4 @@
-# Preview3DAdvanced
+# 3D-Vorschau (Erweitert)
 
 Dieser Node zeigt eine 3D-Modellvorschau in der Benutzeroberfläche an, ohne die Datei im ComfyUI-Ausgabeverzeichnis zu speichern. Er speichert das Modell in einer temporären Datei und gibt die Modelldaten, Modellinformationen, Kamerainformationen und Vorschauabmessungen für die weitere Verarbeitung in nachgelagerten Nodes weiter.
 

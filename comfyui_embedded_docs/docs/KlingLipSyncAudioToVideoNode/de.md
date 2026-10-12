@@ -1,4 +1,4 @@
-# KlingLipSyncAudioToVideoNode
+# Kling Lip-Sync-Video mit Audio
 
 Kling Lip Sync Audio to Video Node synchronisiert Mundbewegungen in einer Videodatei, damit sie zum Audioinhalt einer Audiodatei passen. Dieser Node analysiert die Stimm-/Sprachmuster im Audio und passt die Gesichtsbewegungen im Video an, um eine realistische Lippensynchronisation zu erzeugen. Der Prozess erfordert sowohl ein Video, das ein deutlich erkennbares Gesicht enthält, als auch eine Audiodatei mit klar unterscheidbaren Stimmen.
 

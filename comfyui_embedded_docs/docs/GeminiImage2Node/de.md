@@ -1,4 +1,4 @@
-# GeminiImage2Node
+# Nano Banana Pro (Google Gemini Image)
 
 Bilder synchron über die Google Vertex AI Gemini API generieren oder bearbeiten. Sie geben einen Text-Prompt an und können optional Referenzbilder oder Gemini-Eingabedateien anhängen. Der Node gibt das generierte Bild und, abhängig vom ausgewählten Antwortmodus, eine Textantwort zurück.
 

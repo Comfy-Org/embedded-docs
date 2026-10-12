@@ -1,4 +1,4 @@
-# T5TokenizerOptions
+# T5-Tokenizer-Optionen
 
 ## Überblick
 

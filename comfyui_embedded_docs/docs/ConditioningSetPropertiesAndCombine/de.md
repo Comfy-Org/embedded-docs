@@ -1,4 +1,4 @@
-# ConditioningSetPropertiesAndCombine
+# Kond.-Eigenschaften festlegen und kombinieren
 
 Der Node ConditioningSetPropertiesAndCombine ändert Konditionierungsdaten, indem er Eigenschaften von einer neuen Konditionierungseingabe auf eine vorhandene Konditionierungseingabe anwendet. Er kombiniert die beiden Konditionierungs-Sets, während er die Stärke der neuen Konditionierung steuert und festlegt, wie der Konditionierungsbereich angewendet werden soll.
 

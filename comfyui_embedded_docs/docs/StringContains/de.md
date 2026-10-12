@@ -1,4 +1,4 @@
-# StringContains
+# Text enthält
 
 Der Node StringContains prüft, ob ein gegebener String einen angegebenen Teilstring enthält. Er kann diese Prüfung entweder mit Beachtung oder ohne Beachtung der Groß-/Kleinschreibung durchführen und gibt ein boolesches Ergebnis zurück, das angibt, ob der Teilstring im Hauptstring gefunden wurde.
 

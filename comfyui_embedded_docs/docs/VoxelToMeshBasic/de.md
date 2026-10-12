@@ -1,4 +1,4 @@
-# VoxelToMeshBasic
+# Voxel zu Mesh (Basic) (VERALTET)
 
 Der Node VoxelToMeshBasic konvertiert 3D-Voxeldaten in Mesh-Geometrie. Er verarbeitet Voxelvolumen, indem er einen Schwellenwert anwendet, um zu bestimmen, welche Teile des Volumens zu festen Oberflächen im resultierenden Mesh werden. Der Node gibt eine vollständige Mesh-Struktur mit Eckpunkten und Flächen aus, die für 3D-Rendering und Modellierung verwendet werden kann.
 

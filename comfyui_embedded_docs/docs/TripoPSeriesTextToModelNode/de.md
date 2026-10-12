@@ -1,4 +1,4 @@
-# TripoPSeriesTextToModelNode
+# Tripo P2: Text zu Modell
 
 Erzeugt aus einem Text-Prompt ein Low-Poly-3D-Modell mit sauberer Topologie unter Verwendung des P2-Modells von Tripo. Das Ergebnis wird als Dreiecksnetz (GLB) zurückgegeben oder, wenn `model.quad` aktiviert ist, als quad-dominantes Netz (FBX).
 

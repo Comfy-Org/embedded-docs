@@ -1,4 +1,4 @@
-# MinimaxHailuo03FirstLastFrameNode
+# MiniMax H3 Erstes/letztes Frame zu Video
 
 Dieser Node generiert ein Video aus einem Bild für das erste Frame und optional einem Bild für das letzte Frame unter Verwendung der MiniMax H3-Modelle. Der `model`-Selektor ändert, welche Generierungseinstellungen und Einschränkungen gelten, und das Seitenverhältnis des generierten Videos folgt den bereitgestellten Bildern.
 

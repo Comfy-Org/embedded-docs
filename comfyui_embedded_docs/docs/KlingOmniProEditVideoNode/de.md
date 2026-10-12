@@ -1,4 +1,4 @@
-# KlingOmniProEditVideoNode
+# Kling 3.0 Omni Video bearbeiten
 
 Der Kling Omni Edit Video (Pro)-Node verwendet ein KI-Modell, um ein vorhandenes Video anhand einer Textbeschreibung zu bearbeiten. Sie geben ein Quellvideo und einen Prompt an, und der Node erzeugt ein neues Video derselben Länge mit den gewünschten Änderungen. Optional können Referenzbilder verwendet werden, um den Stil zu steuern, und das Original-Audio aus dem Quellvideo kann beibehalten werden.
 

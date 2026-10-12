@@ -1,4 +1,4 @@
-# GeminiNanoBanana2V2
+# Nano Banana 2
 
 Dieser Node generiert oder bearbeitet Bilder, indem er einen Text-Prompt über Gemini-Bildmodelle an die Vertex AI API von Google sendet. Er erstellt neue Bilder aus einer Beschreibung oder modifiziert vorhandene Bilder mithilfe optionaler Referenzbilder.
 

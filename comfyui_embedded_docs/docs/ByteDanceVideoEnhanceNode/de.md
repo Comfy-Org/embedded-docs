@@ -1,4 +1,4 @@
-# ByteDanceVideoEnhanceNode
+# ByteDance vCube Video verbessern
 
 Dieser Node skaliert und restauriert Videos mit ByteDance vCube. Er kann die Auflösung auf bis zu 8K erhöhen, Kompressionsartefakte und Rauschen entfernen, Farbe und Schärfe verbessern und optional Frames für eine höhere Bildrate interpolieren. Das Video wird auf den vCube-Dienst hochgeladen, mit dem ausgewählten Verbesserungs-Preset verarbeitet und als verbesserte Videodatei zurückgegeben.
 

@@ -1,4 +1,4 @@
-# MultiGPU_WorkUnits
+# MultiGPU cfg-Aufteilung
 
 ## Übersicht:
 

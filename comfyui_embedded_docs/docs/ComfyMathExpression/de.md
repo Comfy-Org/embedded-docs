@@ -1,4 +1,4 @@
-# ComfyMathExpression
+# Mathematischer Ausdruck
 
 Der Node `ComfyMathExpression` wertet eine mathematische Formel aus, die Sie als Text schreiben. Die Formel kann auf die Eingabewerte des Nodes über Buchstabennamen wie `a`, `b`, `c` verweisen, und Sie können über die erweiterbare Gruppe `values` beliebig viele Eingabewerte hinzufügen. Das Berechnungsergebnis wird gleichzeitig als Gleitkommazahl, Ganzzahl und boolescher Wert zurückgegeben.
 

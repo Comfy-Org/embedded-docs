@@ -1,4 +1,4 @@
-# KlingImageToVideoWithAudio
+# Kling 2.6 Bild (erstes Frame) zu Video mit Audio
 
 Der Node „Kling Image(First Frame) to Video with Audio“ verwendet das Kling AI-Modell, um aus einem einzelnen Startbild und einem Text-Prompt ein kurzes Video zu generieren. Er erzeugt eine Videosequenz, die mit dem bereitgestellten Bild beginnt und optional KI-generiertes Audio enthalten kann, das die visuellen Inhalte begleitet.
 

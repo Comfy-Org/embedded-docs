@@ -1,4 +1,4 @@
-# ElevenLabsInstantVoiceClone
+# ElevenLabs Instant Voice Clone
 
 Der ElevenLabs Instant Voice Clone-Node erstellt ein neues, einzigartiges Stimmmodell, indem er 1 bis 8 Audioaufnahmen der Stimme einer Person analysiert. Er sendet diese Proben an die ElevenLabs API, die sie verarbeitet, um einen Stimmklon zu erzeugen, der für die Text-zu-Sprache-Synthese verwendet werden kann.
 

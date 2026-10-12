@@ -1,4 +1,4 @@
-# MiniMaxMusic3TextEncode
+# MiniMax Music3 Text Encode
 
 MiniMax Music3 Text Encode verwendet ein MiniMax Music3 CLIP-Modell, um Textbeschreibungen und Liedtexte in eine akustische Konditionierungssequenz für die Musikgenerierung umzuwandeln. Der Node gibt die resultierenden CONDITIONING-Daten zusammen mit der tatsächlichen Audiodauer in Sekunden zurück, die aus der eingegebenen Maximaldauer berechnet wird.
 

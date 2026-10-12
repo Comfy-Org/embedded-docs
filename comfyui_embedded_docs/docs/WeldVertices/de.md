@@ -1,4 +1,4 @@
-# WeldVertices
+# Vertices verschweißen
 
 Weld Vertices führt das Zusammenführen von zusammenfallenden Vertices in einem 3D-Mesh durch, sodass Flächen, die zuvor separate Eckpunkte hatten, anschließend dieselben Vertices gemeinsam nutzen. Es gruppiert nahe gelegene Vertices mithilfe von Gitterquantisierung mit einer Toleranz basierend auf der Bounding Box des Meshes und mittelt die Vertexfarben für jede zusammengeführte Gruppe. Das ist nützlich, wenn ein Mesh unverschweißt ankommt, d. h. jede Fläche hat ihre eigenen Vertices und keine gemeinsamen Kanten, und kann als Vorverarbeitungsschritt vor topologiebewussten Operationen wie FillHoles oder DecimateMesh dienen.
 

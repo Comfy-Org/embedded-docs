@@ -1,4 +1,4 @@
-# FluxEraseNode
+# Flux Bild löschen
 
 Entfernt das maskierte Objekt aus einem Bild und rekonstruiert den Hintergrund. Malen Sie die Maske über den Bereich, den Sie entfernen möchten, und der Node füllt den Bereich mit plausiblen Hintergrundinhalten.
 

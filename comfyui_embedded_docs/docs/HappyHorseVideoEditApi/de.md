@@ -1,4 +1,4 @@
-# HappyHorseVideoEditApi
+# HappyHorse-Videobearbeitung
 
 Bearbeiten Sie ein Video mithilfe von Textanweisungen oder Referenzbildern mit dem HappyHorse-Modell. Die Ausgabedauer beträgt 3–15 Sekunden und entspricht dem Eingabevideo; Eingaben, die länger als 15 Sekunden sind, werden abgeschnitten.
 

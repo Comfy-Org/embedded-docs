@@ -1,4 +1,4 @@
-# WanImageToVideoApi
+# Wan Image to Video
 
 Der Wan Image to Video-Node generiert ein Video aus einem einzelnen Eingabebild und einem Text-Prompt. Er verwendet das bereitgestellte Bild als erstes Einzelbild und erstellt eine Videosequenz basierend auf der Beschreibung, mit Optionen für Auflösung, Dauer, Audio und weitere erweiterte Einstellungen.
 

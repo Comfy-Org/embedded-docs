@@ -1,4 +1,4 @@
-# PrunaTextToVideoNode
+# Pruna P-Video-2 Text zu Video
 
 Erzeugt ein Video aus einem Text-Prompt mit Prunas P-Video-2-Modell. Der Prompt beschreibt die Szene, ihre Bewegung und ihren Ton, und der Node erzeugt entweder einen eigenen Soundtrack oder verwendet einen Audio-Clip, der die Bewegung steuert und zum Soundtrack wird.
 

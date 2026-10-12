@@ -1,4 +1,4 @@
-# ComfyCloudMageFlowTurboTextToImageNode
+# Comfy Cloud Mage Flow Turbo Text zu Bild [BETA]
 
 Dieser Comfy-Cloud-Node erzeugt ein Bild aus einem Text-Prompt unter Verwendung des Mage-Flow-Turbo-Workflows (`mage-flow-turbo/text-to-image`). Er führt eine destillierte Version des Mage-Flow-Modells aus, die das Bild in 4 Schritten bei einem cfg-Wert von 1 erzeugt und etwa ein Siebtel der GPU-Zeit eines vollständigen Mage-Flow-Durchlaufs benötigt, was ihn zur Variante für schnelle Iterationen macht.
 

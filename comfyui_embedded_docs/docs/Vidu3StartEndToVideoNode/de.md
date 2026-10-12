@@ -1,4 +1,4 @@
-# Vidu3StartEndToVideoNode
+# Vidu Q3 Start-/Endbild-zu-Video-Generierung
 
 Dieser Node generiert ein Video, indem er einen Übergang zwischen einem Startbild und einem Endbild erzeugt, der durch einen Text-Prompt gesteuert wird. Er verwendet das Vidu-Q3-Modell, um zwischen den beiden Bildern zu interpolieren, und erzeugt ein Video mit der gewählten Dauer und Auflösung.
 

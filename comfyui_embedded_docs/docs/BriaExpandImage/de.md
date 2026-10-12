@@ -1,4 +1,4 @@
-# BriaExpandImage
+# Bria Bild erweitern
 
 Bria Expand Image erweitert ein Bild über seine ursprünglichen Ränder hinaus, indem mit Bria neue Inhalte generiert werden. Es ermöglicht Ihnen, ein Ziel-Seitenverhältnis, ein benutzerdefiniertes Verhältnis zu wählen oder eine Leinwand mit manueller Platzierung des Originalbilds zu definieren. Die Erweiterung kann mit einem Text-Prompt gesteuert werden; bleibt der Prompt leer, generiert Bria automatisch einen.
 

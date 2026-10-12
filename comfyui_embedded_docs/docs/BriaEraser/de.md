@@ -1,4 +1,4 @@
-# BriaEraser
+# Bria-Radierer
 
 Bria Eraser entfernt Objekte oder Bereiche aus einem Bild mithilfe der Bria API. Sie stellen ein Bild und eine Maske bereit, die die zu entfernenden Regionen umreißt; der Node lädt beide zu Bria hoch, führt den Erase-Job aus, wartet auf dessen Abschluss und gibt das bearbeitete Bild mit den entfernten maskierten Bereichen zurück.
 

@@ -1,4 +1,4 @@
-# MiniMaxH3ReferenceToVideo
+# MiniMax H3 Referenz zu Video
 
 MiniMax H3 Reference to Video erstellt das Text-Conditioning und das leere Audio-Video-Latent, die für die MiniMax H3 Referenz-zu-Video-Generierung benötigt werden. Sie geben einen Prompt sowie optionale Referenzbilder, -videos und -audioclips an, und der Node kodiert diese Referenzen in Conditioning, das das Modell während der Generierung verwenden kann. Der Prompt verweist mit den Tags `<Picture i>`, `<Video k>` und `<Audio j>` auf die Referenzen.
 

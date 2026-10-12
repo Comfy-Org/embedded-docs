@@ -1,4 +1,4 @@
-# FluxVTONode
+# Flux Virtuelle Anprobe
 
 Dieser Node führt eine virtuelle Anprobe durch, indem er eine Person mit einem bereitgestellten Bekleidungsbild ankleidet. Er sendet die Personen- und Bekleidungsbilder an den BFL Flux VTO-Dienst, der ein realistisches Bild der Person erzeugt, die das Kleidungsstück trägt. Eine optionale Textanweisung kann beschreiben, wie das Kleidungsstück sitzen oder aussehen soll.
 

@@ -1,4 +1,4 @@
-# LoraLoaderBypassModelOnly
+# LoRA laden (Bypass, nur Modell) (zur Fehlerbehebung)
 
 Dieser Node wendet eine LoRA (Low-Rank Adaptation) auf ein Modell an, um dessen Verhalten zu ändern, betrifft jedoch nur die Modellkomponente selbst. Er lädt eine angegebene LoRA-Datei und justiert die Gewichte des Modells mit einer bestimmten Stärke, während andere Komponenten wie der CLIP-Textencoder unverändert bleiben.
 

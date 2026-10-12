@@ -1,4 +1,4 @@
-# FluxKontextMultiReferenceLatentMethod
+# Referenzmethode für Bearbeitungsmodelle
 
 Der FluxKontextMultiReferenceLatentMethod-Node aktualisiert Konditionierungsdaten, indem eine ausgewählte Referenz-Latents-Methode darin gespeichert wird. Die gespeicherte Methode wird dann verwendet, wenn Referenz-Latents in späteren Generierungsschritten verarbeitet werden. Dieser Node ist als experimentell gekennzeichnet und gehört zum Flux-Conditioning-System.
 

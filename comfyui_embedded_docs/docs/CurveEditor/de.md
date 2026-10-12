@@ -1,4 +1,4 @@
-# CurveEditor
+# Kurveneditor
 
 Der Node Curve Editor bietet eine visuelle Oberfläche zum Anpassen und Feinabstimmen einer Kurve. Sie können die Form einer Eingabekurve direkt in der Oberfläche des Nodes ändern und optional ein Histogramm daneben als visuelle Referenz anzeigen. Der Node unterstützt Zwischenausgaben während der Bearbeitung, sodass Sie Live-Ergebnisse sehen können, während Sie Änderungen vornehmen, und gibt die geänderte Kurve zur Verwendung in anderen Teilen Ihres Workflows aus.
 

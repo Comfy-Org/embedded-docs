@@ -1,4 +1,4 @@
-# ZImageFunControlnet
+# Fun ControlNet anwenden
 
 ZImageFunControlnet wendet einen ControlNet-Patch auf ein Basismodell an, damit es den Bildgenerierungs- oder Bildbearbeitungsprozess steuern kann. Der Node kombiniert ein Modell, einen Modell-Patch und einen VAE und ermöglicht es Ihnen, zu steuern, wie stark der ControlNet-Effekt das Ergebnis beeinflusst. Optionale Eingaben für Bild, Inpainting-Bild und Maske ermöglichen gezieltere Bearbeitungen. Der Node funktioniert mit Z-Image-ControlNet-Patches und mit Qwen Image 2.1 Fun ControlNet-Patches, die über den Node „Load Model Patch“ geladen werden.
 

@@ -1,4 +1,4 @@
-# IdeogramV4
+# Ideogram V4
 
 Erzeugt Bilder mit dem Ideogram 4.0-Modell aus einem Text-Prompt. Dieser Node sendet Ihre Textbeschreibung an die Ideogram-API und gibt das generierte Bild als Ausgabe-Tensor zurück.
 

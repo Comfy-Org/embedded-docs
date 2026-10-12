@@ -1,4 +1,4 @@
-# TripoMultiviewToModelNode
+# Tripo: Mehransichten zu Modell
 
 Dieser Node generiert 3D-Modelle synchron mithilfe der Tripo-API, indem er bis zu vier Bilder verarbeitet, die verschiedene Ansichten eines Objekts zeigen (Vorderseite, linke Seite, Rückseite, rechte Seite). Er erfordert ein Frontbild und mindestens eine zusätzliche Ansicht (links, hinten oder rechts), um das 3D-Modell zu erstellen. Textur, PBR-Material, Geometriequalität und Ausgabeformat können im Node gesteuert werden.
 

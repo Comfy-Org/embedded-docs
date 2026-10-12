@@ -1,4 +1,4 @@
-# CLIPTextEncodeKandinsky5
+# CLIP-Textkodierung (Kandinsky 5)
 
 Der Node CLIP Text Encode (Kandinsky 5) bereitet Text-Prompts für die Verwendung mit dem Kandinsky 5-Modell vor. Er nimmt zwei separate Texteingaben entgegen, tokenisiert sie mit einem bereitgestellten CLIP-Modell und kombiniert sie zu einer einzelnen Conditioning-Ausgabe, die den Bildgenerierungsprozess steuert.
 

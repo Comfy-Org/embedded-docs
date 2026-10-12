@@ -1,4 +1,4 @@
-# OpenRouterImageNode
+# OpenRouter Image
 
 Dieser Node erzeugt oder bearbeitet Bilder über OpenRouter mithilfe der MAI-Image-2.6-Modelle von Microsoft. Er unterstützt die Text-zu-Bild-Generierung sowie bildgestützte Bearbeitung mit bis zu fünf Referenzbildern in sieben Seitenverhältnissen bei 1K- oder 1.5K-Auflösung.
 

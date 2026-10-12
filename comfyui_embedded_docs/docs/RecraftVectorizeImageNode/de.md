@@ -1,4 +1,4 @@
-# RecraftVectorizeImageNode
+# Recraft Bild vektorisieren
 
 Erzeugt SVG-Vektorgrafiken aus einem Eingabebild. Dieser Node konvertiert Rasterbilder in ein skalierbares Vektorformat, indem jedes Bild an die Recraft API gesendet und die Ergebnisse zu einer einzelnen SVG-Ausgabe zusammengeführt werden.
 

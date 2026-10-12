@@ -1,4 +1,4 @@
-# HeyGenAvatarVideoNode
+# HeyGen-Avatarvideo
 
 Erzeugt ein Talking-Presenter-Video aus einem HeyGen-Avatar. Dieser Node erstellt ein Video eines KI-Avatars, der Ihren bereitgestellten Text spricht oder Lippensynchronisation zu Ihrem eigenen Audio durchführt, unter Verwendung der Rendering-Engines von HeyGen.
 

@@ -1,4 +1,4 @@
-# ImageScaleBy
+# Bild um Faktor hochskalieren
 
 Der Node ImageScaleBy dient zum Hochskalieren von Bildern um einen angegebenen Skalierungsfaktor unter Verwendung verschiedener Interpolationsmethoden. Er ermöglicht eine flexible Anpassung der Bildgröße und deckt unterschiedliche Anforderungen beim Hochskalieren ab.
 

@@ -1,4 +1,4 @@
-# RunwayAleph2PromptImageNode
+# Runway Aleph2 Prompt Image
 
 Dieser Node verankert ein Führungsbild an einem bestimmten Zeitpunkt im Ausgabevideo und steuert, wie das bearbeitete Video an diesem Punkt aussieht. Verbinden Sie diesen Node mit der `prompt_images`-Eingabe des Runway Aleph2 Video to Video Node und verketten Sie mehrere davon (bis zu 5) über die optionale `prompt_images`-Eingabe.
 

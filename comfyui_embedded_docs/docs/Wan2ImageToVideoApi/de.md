@@ -1,4 +1,4 @@
-# Wan2ImageToVideoApi
+# Wan 2.7 Bild zu Video
 
 Der Wan 2.7 Image to Video-Node erzeugt ein Video ausgehend von einem Bild des ersten Frames. Optional können Sie ein Bild des letzten Frames bereitstellen, um einen Übergang zwischen beiden zu erzeugen, oder eine Audiodatei angeben, um die Bewegung und das Timing des Videos zu steuern. Der Node verwendet ein KI-Modell, um die Szene basierend auf Ihrer Textbeschreibung zu animieren.
 

@@ -1,4 +1,4 @@
-# LatentUpscale
+# latent hochskalieren
 
 Der LatentUpscale-Node ist für die Hochskalierung latenter Repräsentationen von Bildern konzipiert. Er ermöglicht die Anpassung der Abmessungen des Ausgabebilds und der Methode zur Hochskalierung, was Flexibilität bei der Verbesserung der Auflösung latenter Bilder bietet.
 

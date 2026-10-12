@@ -1,4 +1,4 @@
-# Flux3VideoContinuationNode
+# Flux 3 Videofortsetzung
 
 Dieser Node setzt einen vorhandenen Videoclip mit FLUX 3 fort: Der neue Clip knüpft an die letzten Frames des von Ihnen bereitgestellten Videos an. Er lädt Ihren Quellclip hoch, sendet den Prompt und die Einstellungen an den Generierungsdienst und gibt das resultierende Fortsetzungsvideo zurück, sobald es fertig ist.
 

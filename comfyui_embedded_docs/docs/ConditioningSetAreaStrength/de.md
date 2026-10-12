@@ -1,4 +1,4 @@
-# ConditioningSetAreaStrength
+# Konditionierung (Bereichsstärke festlegen)
 
 Dieser Node dient dazu, das Stärke-Attribut eines gegebenen Conditioning-Sets zu ändern, wodurch der Einfluss bzw. die Intensität der Konditionierung auf den Generierungsprozess angepasst werden kann.
 

@@ -1,4 +1,4 @@
-# APG
+# Adaptive projizierte Führung
 
 Der APG-Node (Adaptive Projected Guidance) modifiziert den Sampling-Prozess, indem er anpasst, wie Guidance während der Diffusion angewendet wird. Er trennt den Guidance-Vektor in parallele und orthogonale Komponenten relativ zur bedingten Ausgabe, was eine kontrolliertere Bilderzeugung ermöglicht. Der Node stellt Parameter bereit, um die Guidance zu skalieren, ihre Magnitude zu normalisieren und Momentum für sanftere Übergänge zwischen Diffusionsschritten anzuwenden.
 

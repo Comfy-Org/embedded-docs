@@ -1,4 +1,4 @@
-# RotateMesh
+# Mesh drehen
 
 Dreht ein 3D-Mesh um die Weltachsen, entweder mit Euler-XYZ-Winkeln (in Grad) oder mit einem Quaternion. Im Euler-XYZ-Modus werden die Rotationen als X, dann Y, dann Z angewendet; im Quaternion-Modus wird das (w, x, y, z)-Quaternion automatisch normalisiert. Die Rotation wird auf die Vertices des Meshes angewendet, und die Normalen und Tangenten werden ebenfalls gedreht, damit Beleuchtung und Schattierung korrekt bleiben.
 

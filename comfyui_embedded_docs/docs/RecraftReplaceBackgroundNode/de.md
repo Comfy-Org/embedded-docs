@@ -1,4 +1,4 @@
-# RecraftReplaceBackgroundNode
+# Recraft Hintergrund ersetzen
 
 Ersetzt den Hintergrund eines Bildes basierend auf dem angegebenen Prompt. Dieser Node verwendet die Recraft-API, um neue Hintergründe für Ihre Bilder gemäß Ihrer Textbeschreibung zu generieren. Dadurch können Sie den Hintergrund vollständig verändern, während das Hauptmotiv intakt bleibt. Jedes Bild im Eingabe-Batch wird separat verarbeitet, und die Ergebnisse werden zu einem einzigen Ausgabe-Batch zusammengefasst.
 

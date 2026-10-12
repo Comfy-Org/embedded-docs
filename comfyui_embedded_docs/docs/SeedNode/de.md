@@ -1,4 +1,4 @@
-# SeedNode
+# Seed
 
 Der Seed-Node stellt einen Ganzzahlwert bereit, der als Seed verwendet werden kann, um die Reproduzierbarkeit von Zufallsoperationen in anderen Nodes zu steuern. Durch die Bereitstellung eines konstanten Startwerts trägt er dazu bei, generierte Ergebnisse bei Bedarf wiederholbar zu halten.
 

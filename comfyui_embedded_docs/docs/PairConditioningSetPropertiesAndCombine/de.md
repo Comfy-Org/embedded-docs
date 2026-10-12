@@ -1,4 +1,4 @@
-# PairConditioningSetPropertiesAndCombine
+# Cond-Paar-Eigenschaften festlegen und kombinieren
 
 Der Node PairConditioningSetPropertiesAndCombine modifiziert und kombiniert Conditioning-Paare, indem er neue Conditioning-Daten auf bestehende positive und negative Conditioning-Eingaben anwendet. Er ermöglicht es Ihnen, die Stärke des angewendeten Conditionings anzupassen und zu steuern, wie der Conditioning-Bereich festgelegt wird. Dieser Node ist besonders nützlich für fortgeschrittene Workflows zur Conditioning-Manipulation, bei denen Sie mehrere Conditioning-Quellen miteinander vermischen müssen.
 

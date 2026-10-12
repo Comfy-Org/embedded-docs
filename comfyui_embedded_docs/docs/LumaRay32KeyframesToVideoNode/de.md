@@ -1,4 +1,4 @@
-# LumaRay32KeyframesToVideoNode
+# Luma Ray 3.2 Keyframes zu Video
 
 Dieser Node erzeugt ein Video, das durch eine Sequenz von Leitbildern interpoliert, wobei jedes an einer bestimmten Position auf der Zeitachse verankert ist, unter Verwendung von Luma Ray 3.2. Erstellen Sie die Keyframe-Sequenz mit Luma Ray 3.2 Keyframe-Nodes, indem Sie mindestens 2 Keyframes verbinden, um die Animation zu definieren.
 

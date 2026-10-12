@@ -1,4 +1,4 @@
-# MagnificImageSkinEnhancerNode
+# Magnific Image Hautverbesserung
 
 Der Node „Magnific Image Skin Enhancer“ wendet spezialisierte KI-Verarbeitung auf Porträtbilder an, um das Hautbild zu verbessern. Er bietet drei verschiedene Modi für unterschiedliche Verbesserungsziele: creative für künstlerische Effekte, faithful zur Bewahrung des ursprünglichen Aussehens und flexible für gezielte Verbesserungen wie Beleuchtung oder Realismus. Der Node lädt das Bild zur Verarbeitung auf eine externe API hoch und gibt das verbesserte Ergebnis zurück.
 

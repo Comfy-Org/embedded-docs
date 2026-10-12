@@ -1,4 +1,4 @@
-# BriaReseason
+# Bria Jahreszeit ändern
 
 Dieser Node versetzt ein Bild mithilfe von Bria in eine andere Jahreszeit. Die gesamte Szene wird neu gerendert, sodass sich die Umgebung über die Jahreszeit selbst hinaus ändern kann. Bria rendert das gesamte Bild mit etwa 1 Megapixel neu, daher ist das Ergebnis nicht pixelgenau am Eingabebild ausgerichtet.
 

@@ -1,4 +1,4 @@
-# FluxKVCache
+# Flux KV Cache
 
 Der Flux KV Cache-Node ermöglicht eine Key-Value-(KV-)Cache-Optimierung für Modelle der Flux-Familie. Diese Optimierung verbessert die Leistung bei der Verwendung von Referenzbildern, indem bestimmte Berechnungen zwischengespeichert werden, wodurch der Generierungsprozess beschleunigt werden kann.
 

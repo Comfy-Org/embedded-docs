@@ -1,4 +1,4 @@
-# LoadImageDataSetFromFolder
+# Bild laden (aus Ordner)
 
 Dieser Node lädt mehrere Bilder aus einem ausgewählten Unterordner innerhalb des Haupteingabeverzeichnisses von ComfyUI und gibt sie als Liste zurück. Er durchsucht den ausgewählten Ordner nach Bilddateien im Format PNG, JPG, JPEG oder WEBP, was ihn für die Stapelverarbeitung oder das Vorbereiten von Bilddatensätzen nützlich macht.
 

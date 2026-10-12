@@ -1,4 +1,4 @@
-# PrimitiveInt
+# Int
 
 Der PrimitiveInt-Node bietet eine einfache Möglichkeit, mit ganzzahligen Werten in Ihrem Workflow zu arbeiten. Er nimmt eine ganzzahlige Eingabe entgegen und gibt denselben Wert aus, was nützlich ist, um ganzzahlige Parameter zwischen Nodes weiterzugeben oder bestimmte numerische Werte für andere Operationen festzulegen.
 

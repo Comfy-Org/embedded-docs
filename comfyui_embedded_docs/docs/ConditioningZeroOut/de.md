@@ -1,4 +1,4 @@
-# ConditioningZeroOut
+# Konditionierung auf null setzen
 
 Dieser Node setzt bestimmte Elemente innerhalb der Conditioning-Datenstruktur auf null, wodurch ihr Einfluss in nachfolgenden Verarbeitungsschritten effektiv neutralisiert wird. Er ist für erweiterte Conditioning-Operationen konzipiert, bei denen eine direkte Manipulation der internen Repräsentation des Conditionings erforderlich ist.
 

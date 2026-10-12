@@ -1,4 +1,4 @@
-# TripoP1ImageToModelNode
+# Tripo P1: Bild zu Modell
 
 Tripo P1: Image to Model wandelt ein einzelnes 2D-Bild mithilfe der Tripo P1 API in ein 3D-Modell um. Es ist für die Erzeugung niedrigpolygonaler, spielbereiter Meshes optimiert und ermöglicht die Wahl zwischen einem reinen Geometrie-Mesh oder einem texturierten Modell mit PBR-Maps. Das fertige Modell wird als GLB-Datei zurückgegeben.
 

@@ -1,4 +1,4 @@
-# ByteDanceSeedreamLayerSeparationNodeV2
+# ByteDance Seedream 5.0 Ebenentrennung
 
 ByteDance Seedream 5.0 Layer Separation zerlegt ein Bild in eine Hintergrundplatte plus bis zu 16 repositionierbare transparente Ebenen, jede mit Stapelreihenfolge, Begrenzungsrahmen, Name und Beschreibung. Es gibt den Hintergrund, Bilder pro Ebene mit Masken, Platzierungsboxen und einen sofort editierbaren Ebenenstapel zurück. Die Auswahl `model` wählt zwischen Seedream 5.0 Pro und dem schnelleren Seedream 5.0 Flash.
 

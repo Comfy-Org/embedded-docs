@@ -1,4 +1,4 @@
-# GrokVideoReferenceNode
+# Grok Referenz-zu-Video
 
 Der Grok Reference-to-Video-Node erzeugt aus einem Text-Prompt ein Video und verwendet bis zu sieben Referenzbilder, um Stil und Inhalt der Ausgabe zu steuern. Mit dem Modell `grok-imagine-video-1.5` können Sie außerdem bis zu drei voreingestellte Stimmreferenzen anhängen und im Prompt mithilfe der Tags `@ImageN` und `@AudioN` direkt auf Bilder und Stimmen verweisen. Der Node sendet die Anfrage an eine externe API, wartet auf den Abschluss der Generierung und lädt das resultierende Video herunter.
 

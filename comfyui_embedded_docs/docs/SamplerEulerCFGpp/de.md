@@ -1,4 +1,4 @@
-# SamplerEulerCFGpp
+# SamplerEulerCFG++
 
 Der Node SamplerEulerCFGpp stellt eine Euler-CFG++-Sampling-Methode zur Generierung von Ausgaben bereit. Dieser Node bietet zwei verschiedene Implementierungsversionen des Euler-CFG++-Samplers, die nach Benutzerpräferenz ausgewählt werden können.
 

@@ -1,4 +1,4 @@
-# ComfyNumberConvert
+# Zahl konvertieren
 
 Der Node Number Convert wandelt verschiedene Eingabedatentypen in numerische Werte um. Er akzeptiert eine einzelne Eingabe vom Typ Ganzzahl, Fließkommazahl, Zeichenkette oder Boolean und erzeugt zwei Ausgaben: eine Fließkommazahl und eine Ganzzahl. Dies ist nützlich, um Text- oder logische Werte in ein Format umzuwandeln, das von anderen mathematischen oder verarbeitenden Nodes in Ihrem Workflow verwendet werden kann.
 

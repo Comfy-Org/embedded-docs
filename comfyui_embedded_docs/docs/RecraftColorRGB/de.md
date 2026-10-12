@@ -1,4 +1,4 @@
-# RecraftColorRGB
+# Recraft-Farbe RGB
 
 Erstellen Sie eine Recraft-Farbe, indem Sie einzelne Rot-, Grün- und Blauwerte angeben. Dieser Node nimmt ganzzahlige RGB-Werte (0-255) entgegen und konvertiert sie in ein Recraft-Farbformat, das in anderen Recraft-Operationen verwendet werden kann. Optional können Sie auch eine vorhandene Recraft-Farbkette bereitstellen, um sie um die neue Farbe zu erweitern.
 

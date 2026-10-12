@@ -1,4 +1,4 @@
-# OpenAIInputFiles
+# OpenAI ChatGPT-Eingabedateien
 
 Lädt Eingabedateien für die OpenAI API und formatiert sie. Dieser Node bereitet Text- (.txt) und PDF-Dateien (.pdf) darauf vor, als Kontext-Eingaben für den OpenAI Chat Node verwendet zu werden. Die Dateien werden vom OpenAI-Modell gelesen, wenn eine Antwort generiert wird. Mehrere Nodes vom Typ OpenAI Input Files können verkettet werden, um mehrere Dateien in einer einzigen Nachricht einzubinden.
 

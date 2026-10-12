@@ -1,4 +1,4 @@
-# ComfyCloudFlux2TextToImageNode
+# Comfy Cloud Flux 2 Text zu Bild [BETA]
 
 Führt das Flux 2 dev Text-zu-Bild-Modell auf einer Comfy Cloud GPU aus und gibt das generierte Bild zurück. Die Option `turbo` wendet das Turbo LoRA mit einem kurzen Zeitplan für einen deutlich schnelleren Lauf an, auf Kosten einer etwas geringeren Wiedergabetreue; wenn sie deaktiviert wird, wird der vollständige Dev-Durchlauf ohne das LoRA ausgeführt. Dies ist ein Beta-Node-Set, dessen Abrechnung auf der Laufzeit in Credits basiert.
 

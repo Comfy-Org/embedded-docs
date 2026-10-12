@@ -1,4 +1,4 @@
-# LoadImageMask
+# Bild laden (als mask)
 
 Der LoadImageMask-Node dient zum Laden von Bildern und den zugehörigen Masken von einem angegebenen Pfad. Er verarbeitet sie, um die Kompatibilität mit weiteren Bildbearbeitungs- oder Analyseaufgaben sicherzustellen. Der Schwerpunkt liegt auf der Handhabung verschiedener Bildformate und Bedingungen, wie z. B. dem Vorhandensein eines Alphakanals für Masken, und er bereitet die Bilder und Masken für die nachgelagerte Verarbeitung vor, indem er sie in ein standardisiertes Format konvertiert.
 

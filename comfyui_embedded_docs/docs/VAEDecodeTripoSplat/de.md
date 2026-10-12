@@ -1,4 +1,4 @@
-# VAEDecodeTripoSplat
+# TripoSplat dekodieren
 
 Dekodiert eine latente TripoSplat-Repräsentation in einen 3D-Gaussian-Splat. Dieser Node nimmt das gesampelte Latent aus einem TripoSplat-Modell und rekonstruiert es als eine Menge von 3D-Gaussians, deren Dichte durch Ändern der Anzahl der erzeugten Gaussians angepasst werden kann.
 

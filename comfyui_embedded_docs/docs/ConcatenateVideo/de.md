@@ -1,4 +1,4 @@
-# ConcatenateVideo
+# Videos zusammenfügen
 
 Fügt mehrere Videosegmente zu einem einzelnen Video zusammen und behält dabei die Reihenfolge bei, in der sie verbunden sind. Kompatible codierte Eingaben werden ohne Dekodierung kombiniert, und optional kann eine separate Audiospur bereitgestellt werden, um das ursprüngliche Audio zu ersetzen.
 

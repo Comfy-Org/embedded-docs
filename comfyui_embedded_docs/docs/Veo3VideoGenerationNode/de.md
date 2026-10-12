@@ -1,4 +1,4 @@
-# Veo3VideoGenerationNode
+# Google Veo 3 Videogenerierung
 
 Erzeugt Videos aus Text-Prompts mithilfe der Veo-3-API von Google. Dieser Node unterstützt mehrere Veo-3-Modelle, einschließlich Fast- und Lite-Varianten, und ermöglicht die Angabe von Videoauflösung, Dauer und Audioerzeugung.
 

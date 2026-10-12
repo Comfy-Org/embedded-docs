@@ -1,4 +1,4 @@
-# PixverseTemplateNode
+# PixVerse-Vorlage
 
 Der Node PixVerse Template ermöglicht die Auswahl aus verfügbaren Vorlagen für die PixVerse-Videogenerierung. Er wandelt den ausgewählten Vorlagennamen in die entsprechende Vorlagen-ID um, die die PixVerse-API für die Videoerstellung benötigt.
 

@@ -1,4 +1,4 @@
-# PixverseTransitionVideoNode
+# PixVerse Übergangsvideo
 
 Erzeugt ein Übergangsvideo zwischen zwei Eingabebildern mithilfe der PixVerse API. Sie geben ein Startbild und ein Endbild an, und der Node erstellt ein flüssiges Video, das vom einen zum anderen übergeht, gesteuert durch Ihren Text-Prompt und die ausgewählten Einstellungen.
 

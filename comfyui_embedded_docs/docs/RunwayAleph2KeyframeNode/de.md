@@ -1,4 +1,4 @@
-# RunwayAleph2KeyframeNode
+# Runway Aleph2 Keyframe
 
 Der Runway Aleph2 Keyframe-Node verankert ein Steuerungsbild an einem bestimmten Zeitpunkt Ihres Eingabevideos, sodass das Aleph2-Modell die Bearbeitung an dieser Stelle in Ihrem Material steuert. Verbinden Sie diesen Node mit dem Eingang "keyframes" des Runway Aleph2 Video to Video-Node und verketten Sie mehrere davon (bis zu 5) über den optionalen "keyframes"-Eingang.
 

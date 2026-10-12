@@ -1,4 +1,4 @@
-# LTXVContextWindows
+# LTXV-Kontextfenster
 
 Dieser Node legt Kontextfenster für LTXV-ähnliche Modelle während des Samplings fest. Er unterteilt die Generierung in überlappende Fenster, um den Speicherverbrauch zu verwalten und die zeitliche Kohärenz zu verbessern.
 

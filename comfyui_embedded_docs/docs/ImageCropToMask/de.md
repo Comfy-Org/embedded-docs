@@ -1,4 +1,4 @@
-# ImageCropToMask
+# Bild auf Maske zuschneiden
 
 Der Node schneidet ein Bild auf die Begrenzungsbox seiner Maske zu und erzeugt ein zentriertes Motiv vor einer einfarbigen Hintergrundfarbe. Der Node setzt das maskierte Bild über den gewählten Hintergrund zusammen und skaliert das Ergebnis auf die angegebenen Ausgabemaße, wodurch es für 3D-Pipelines geeignet ist, die ein zentriertes, hintergrundfreies Motiv in einer festen Auflösung erwarten.
 

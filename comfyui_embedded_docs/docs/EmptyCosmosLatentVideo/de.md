@@ -1,4 +1,4 @@
-# EmptyCosmosLatentVideo
+# Leeres Cosmos Latent-Video
 
 EmptyCosmosLatentVideo erstellt einen leeren latenten Video-Tensor mit den angegebenen Dimensionen. Er generiert eine mit Nullen gefüllte latente Repräsentation, die als Ausgangspunkt für Videogenerierungs-Workflows verwendet werden kann, mit konfigurierbaren Parametern für Breite, Höhe, Länge und Batch-Größe.
 

@@ -1,4 +1,4 @@
-# VAEDecodeAudioTiled
+# VAE-Audio dekodieren (gekachelt)
 
 Dieser Node wandelt eine komprimierte Audiodarstellung (latente Samples) mithilfe eines Variational Autoencoders (VAE) zurück in eine Audiowellenform um. Die Daten werden in kleinere, überlappende Abschnitte (Kacheln) aufgeteilt, um den Speicherverbrauch zu steuern, wodurch er für die Verarbeitung längerer Audiosequenzen geeignet ist. Das decodierte Audio wird zudem normalisiert, um eine konsistente Lautstärke beizubehalten.
 

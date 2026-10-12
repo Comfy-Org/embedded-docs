@@ -1,4 +1,4 @@
-# ThresholdMask
+# Schwellenwertmaske
 
 Der ThresholdMask-Node wandelt eine Maske in eine binäre Maske um, indem er einen Schwellenwert anwendet. Er vergleicht jedes Pixel in der Eingabemaske mit dem angegebenen Schwellenwert und erstellt eine neue Maske, in der Pixel oberhalb des Schwellenwerts 1 (weiß) werden und Pixel auf oder unterhalb des Schwellenwerts 0 (schwarz) werden.
 

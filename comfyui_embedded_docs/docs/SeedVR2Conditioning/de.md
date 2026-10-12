@@ -1,4 +1,4 @@
-# SeedVR2Conditioning
+# SeedVR2-Conditioning anwenden
 
 Erstellt positive und negative Konditionierung aus einem VAE-Latent zur Verwendung mit dem SeedVR2-Modell. Es validiert das Eingabe-Latent und die Modellstruktur, fügt dem Latent einen Maskenkanal hinzu und gibt beide Conditioning-Ausgaben zurück.
 

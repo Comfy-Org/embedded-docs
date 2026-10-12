@@ -1,4 +1,4 @@
-# DA3GeometryToMesh
+# DA3-Geometrie in Mesh konvertieren
 
 Dieser Node wandelt ein DA3_GEOMETRY-Paket in ein 3D-Mesh um, indem er die Tiefenkarte rückprojiziert und die resultierende Punktwolke trianguliert. Er verarbeitet ein einzelnes Bild aus einem Batch und erzeugt ein texturiertes oder untexturiertes Mesh, das für 3D-Rendering geeignet ist.
 

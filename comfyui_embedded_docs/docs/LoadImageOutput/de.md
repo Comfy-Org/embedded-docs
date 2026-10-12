@@ -1,4 +1,4 @@
-# LoadImageOutput
+# Bild laden (aus Ausgaben)
 
 Der LoadImageOutput-Node lädt Bilder aus dem Ausgabeordner. Wenn Sie auf die Aktualisierungsschaltfläche klicken, wird die Liste der verfügbaren Bilder aktualisiert und automatisch das erste ausgewählt, was die Iteration durch Ihre generierten Bilder erleichtert.
 

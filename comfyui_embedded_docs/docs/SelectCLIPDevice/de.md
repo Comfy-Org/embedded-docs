@@ -1,4 +1,4 @@
-# SelectCLIPDevice
+# CLIP-Gerät auswählen
 
 ## Überblick
 

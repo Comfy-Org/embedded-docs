@@ -1,4 +1,4 @@
-# BriaReplaceObject
+# Bria Objekt ersetzen
 
 Ersetzt ein Objekt in einem Bild durch ein anderes, das in Klartext beschrieben wird, unter Verwendung von Brias textgesteuerter Bildbearbeitung. Bria rendert das gesamte Bild mit etwa 1 Megapixel neu, daher ist das Ergebnis nicht pixelgenau am Eingabebild ausgerichtet.
 

@@ -1,4 +1,4 @@
-# ResizeImagesByShorterEdge
+# Bilder nach kürzerer Kante skalieren (VERALTET)
 
 Dieser Node skaliert Bilder so, dass die kürzere Kante einer angegebenen Länge entspricht, wobei das ursprüngliche Seitenverhältnis beibehalten wird. Er berechnet neue Abmessungen basierend auf der Ziellänge für die kürzere Seite und gibt das skalierte Bild zurück.
 

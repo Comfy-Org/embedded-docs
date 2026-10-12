@@ -1,4 +1,4 @@
-# PrimitiveStringMultiline
+# Text (mehrzeilig)
 
 Der Node „Text (Multiline)“ stellt ein mehrzeiliges Text-Eingabefeld bereit, mit dem Sie String-Werte in Ihren Workflow eingeben und weitergeben können. Er akzeptiert Text über mehrere Zeilen hinweg und gibt denselben String-Wert unverändert aus. Dieser Node ist nützlich, wenn Sie längere Textinhalte oder formatierten, mehrzeiligen Text bereitstellen möchten.
 

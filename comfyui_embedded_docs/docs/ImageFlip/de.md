@@ -1,4 +1,4 @@
-# ImageFlip
+# Bild spiegeln
 
 Der ImageFlip-Node spiegelt Bilder entlang verschiedener Achsen. Er kann Bilder vertikal entlang der x-Achse oder horizontal entlang der y-Achse spiegeln. Der Node verwendet torch.flip-Operationen, um die Spiegelung basierend auf der ausgewählten Methode durchzuführen.
 

@@ -1,4 +1,4 @@
-# LoadBackgroundRemovalModel
+# Hintergrundentfernungsmodell laden
 
 Lädt ein Hintergrundentfernungsmodell aus einer Datei. Dieser Node bereitet das Modell so vor, dass es von anderen Nodes verwendet werden kann, um Hintergründe aus Bildern zu entfernen.
 

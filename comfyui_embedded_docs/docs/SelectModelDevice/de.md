@@ -1,4 +1,4 @@
-# SelectModelDevice
+# Modellgerät auswählen
 
 Der Node Select Model Device ermöglicht es Ihnen, manuell auszuwählen, auf welchem Gerät (CPU oder eine bestimmte GPU) ein Diffusionsmodell ausgeführt wird. Er kann ein Modell auf ein anderes Gerät verschieben und behandelt Konflikte mit anderen Multi-GPU-Nodes automatisch. Die Auswahl von `"default"` stellt das ursprüngliche Gerät wieder her, das vom Modell-Loader gewählt wurde.
 

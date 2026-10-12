@@ -1,4 +1,4 @@
-# SavePointCloud
+# Punktwolke speichern
 
 Der Node „Save Point Cloud“ speichert eine 3D-Punktwolkendatei im Ausgabeverzeichnis und stellt optional Vorschaudaten für den 3D-Viewer bereit. Er übernimmt Dateibenennung und Speicherung und reicht gleichzeitig Kamera- und Modellinformationen für Anzeigezwecke weiter.
 

@@ -1,4 +1,4 @@
-# Trellis2UpsampleStage
+# Trellis2-Upsample-Stufe
 
 Dieser Node skaliert ein Shape-Latent mit 512-Auflösung in hochauflösende Sparse-Koordinaten hoch und bereitet den zweiten Sampling-Durchlauf der Shape-Stufe bei der Zielauflösung vor. Er hängt Metadaten pro Stufe an das Conditioning an, damit das Modell sie während der Generierung nutzen kann.
 

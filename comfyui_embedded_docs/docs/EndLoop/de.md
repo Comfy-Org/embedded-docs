@@ -1,4 +1,4 @@
-# EndLoop
+# Schleife beenden
 
 End Loop markiert das Ende eines Schleifenblocks. Er sammelt den Wert, der vom letzten Node im Schleifenkörper erzeugt wird, und gibt entweder nur die letzte Iteration oder jede Iteration zurück, abhängig von der Einstellung `accumulate`, während er außerdem einen Wert zurück an Start Loop übergibt, damit die nächste Iteration beginnen kann.
 

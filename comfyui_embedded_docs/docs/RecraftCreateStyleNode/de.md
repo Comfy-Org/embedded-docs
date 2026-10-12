@@ -1,4 +1,4 @@
-# RecraftCreateStyleNode
+# Recraft-Stil erstellen
 
 Dieser Node erstellt einen benutzerdefinierten Stil für die Bildgenerierung durch Hochladen von Referenzbildern. Sie können zwischen 1 und 5 Bilder hochladen, um den neuen Stil zu definieren, und der Node gibt eine eindeutige Stil-ID zurück, die mit anderen Recraft-Nodes verwendet werden kann. Die kombinierte Gesamtdateigröße aller hochgeladenen Bilder darf 5 MB nicht überschreiten.
 

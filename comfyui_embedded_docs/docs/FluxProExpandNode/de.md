@@ -1,4 +1,4 @@
-# FluxProExpandNode
+# Flux.1 Bild erweitern
 
 Erweitert ein Bild per Outpainting basierend auf dem Prompt. Dieser Node erweitert ein Bild, indem er Pixel oben, unten, links und rechts hinzufügt, während er neuen Inhalt generiert, der der angegebenen Textbeschreibung entspricht.
 
@@ -19,7 +19,7 @@ Erweitert ein Bild per Outpainting basierend auf dem Prompt. Dieser Node erweite
 
 ## Ausgaben
 
-| Output Name | Beschreibung | Datentyp |
+| Ausgabename | Beschreibung | Datentyp |
 |-------------|-------------|-----------|
 | `image` | Das erweiterte Ausgabebild | IMAGE |
 

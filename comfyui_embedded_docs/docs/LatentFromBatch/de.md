@@ -1,4 +1,4 @@
-# LatentFromBatch
+# latent aus Batch abrufen
 
 Dieser Node ist darauf ausgelegt, eine bestimmte Teilmenge von Latent-Samples aus einem gegebenen Batch basierend auf dem angegebenen Batch-Index und der Länge zu extrahieren. Er ermöglicht die selektive Verarbeitung von Latent-Samples und erleichtert Operationen an kleineren Segmenten des Batches für Effizienz oder gezielte Manipulation.
 

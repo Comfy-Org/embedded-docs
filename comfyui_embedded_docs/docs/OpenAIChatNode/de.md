@@ -1,4 +1,4 @@
-# OpenAIChatNode
+# OpenAI ChatGPT
 
 Dieser Node generiert Textantworten von einem OpenAI-Modell. Er sendet Ihren Text-Prompt und optional Bilder oder Dateien an ein OpenAI-Modell und gibt die generierte Textantwort zurück.
 

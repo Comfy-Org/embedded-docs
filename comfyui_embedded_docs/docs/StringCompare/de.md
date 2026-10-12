@@ -1,4 +1,4 @@
-# StringCompare
+# Text vergleichen
 
 Der Node StringCompare vergleicht zwei Textzeichenfolgen mithilfe verschiedener Vergleichsmethoden. Er kann prüfen, ob eine Zeichenfolge mit einer anderen beginnt, mit einer anderen endet oder ob beide Zeichenfolgen exakt gleich sind. Der Vergleich kann mit oder ohne Berücksichtigung von Groß-/Kleinschreibung durchgeführt werden.
 

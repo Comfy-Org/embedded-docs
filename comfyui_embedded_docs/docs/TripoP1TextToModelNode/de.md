@@ -1,4 +1,4 @@
-# TripoP1TextToModelNode
+# Tripo P1: Text zu Modell
 
 Tripo P1 Text-zu-3D. Dieser Node erzeugt mithilfe der Tripo P1 API ein 3D-Modell aus einer Textbeschreibung. Er ist für die Erstellung von spielfertigen Low-Poly-Meshes mit stabiler Topologie optimiert und eignet sich damit für Echtzeitanwendungen.
 

@@ -1,4 +1,4 @@
-# LoraLoaderBypass
+# LoRA laden (Bypass) (Zum Debuggen)
 
 Der Node LoraLoaderBypass wendet eine LoRA (Low-Rank Adaptation) auf ein Diffusionsmodell und ein CLIP-Modell in einem speziellen „Bypass“-Modus an. Im Gegensatz zu einem Standard-LoRA-Loader werden die Gewichte des Basismodells bei dieser Methode nicht dauerhaft verändert. Stattdessen wird das Ergebnis berechnet, indem der Beitrag der LoRA zum normalen Forward-Pass des Modells addiert wird. Das ist nützlich für das Training oder bei der Arbeit mit Modellen, deren Gewichte ausgelagert sind.
 

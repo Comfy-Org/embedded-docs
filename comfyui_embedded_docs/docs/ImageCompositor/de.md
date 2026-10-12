@@ -1,4 +1,4 @@
-# ImageCompositor
+# Bild mit Ebenen erstellen
 
 Dieser Node kombiniert mehrere Bildebenen zu einem einzelnen zusammengesetzten Bild. Er nimmt einen mit dem Add Layer-Node erstellten Ebenenstapel entgegen und wendet optional gespeicherte Kompositionseinstellungen aus dem Compositor-Editor an, wobei die Ebenen entsprechend ihrer Platzierung, Größe, Drehung, Deckkraft und ihrem Mischmodus zusammengefügt werden. Eine gespeicherte Komposition, die zu den aktuellen Eingaben passt, hat Vorrang; andernfalls setzt der Node die Komposition aus den Ebeneneigenschaften zusammen und markiert den gespeicherten Status als veraltet.
 

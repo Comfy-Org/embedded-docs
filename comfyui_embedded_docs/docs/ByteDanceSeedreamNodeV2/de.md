@@ -1,4 +1,4 @@
-# ByteDanceSeedreamNodeV2
+# ByteDance Seedream 4.5 & 5.0 (Legacy)
 
 Dieser Node erzeugt oder bearbeitet Bilder mit den Seedream-Modellen von ByteDance (Versionen 4.0, 4.5, 5.0 Lite und 5.0 Pro). Er bietet einheitliche Text-zu-Bild-Generierung und präzise Bildbearbeitung mit einem einzigen Satz bei bis zu 4K-Auflösung. Dies ist die Legacy-Version (V2) des Seedream-Nodes.
 

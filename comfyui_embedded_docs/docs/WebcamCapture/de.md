@@ -1,4 +1,4 @@
-# WebcamCapture
+# Webcam-Aufnahme
 
 Der Node WebcamCapture erfasst Bilder von einem Webcam-Gerät und konvertiert sie in ein Format, das innerhalb von ComfyUI-Workflows verwendet werden kann. Er erbt vom Node LoadImage und bietet Optionen zur Steuerung der Aufnahmeabmessungen und des Zeitpunkts. Wenn aktiviert, kann der Node bei jeder Verarbeitung der Workflow-Warteschlange neue Bilder erfassen.
 

@@ -1,4 +1,4 @@
-# LatentUpscaleBy
+# latent skalieren um
 
 Der Node LatentUpscaleBy ist für das Hochskalieren latenter Darstellungen von Bildern konzipiert. Er ermöglicht die Anpassung des Skalierungsfaktors und der Methode zum Hochskalieren und bietet dadurch Flexibilität bei der Verbesserung der Auflösung latenter Samples.
 

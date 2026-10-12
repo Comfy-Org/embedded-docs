@@ -1,4 +1,4 @@
-# ControlNetApplySD3
+# ControlNet mit VAE anwenden
 
 Dieser Node wendet ControlNet-Führung auf die Stable-Diffusion-3-Konditionierung an. Er nimmt positive und negative Konditionierungs-Eingaben zusammen mit einem ControlNet-Modell und einem Bild entgegen und wendet dann die Steuerungsführung mit anpassbarer Stärke und Zeitparametern an, um den Generierungsprozess zu beeinflussen.
 

@@ -1,4 +1,4 @@
-# LatentBatch
+# Latent-Batch (VERALTET)
 
 Der Node `LatentBatch` ist dafür konzipiert, zwei Sätze latenter Samples zu einem einzigen Batch zusammenzuführen, wobei ein Satz vor der Verkettung möglicherweise an die Abmessungen des anderen angepasst wird. Diese Operation erleichtert die Kombination unterschiedlicher latenter Repräsentationen für weitere Verarbeitungs- oder Generierungsaufgaben.
 

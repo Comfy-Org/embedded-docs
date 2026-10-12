@@ -1,4 +1,4 @@
-# MakeTrainingDataset
+# Trainingsdatensatz erstellen
 
 Dieser Node bereitet Daten für das Training vor, indem er Bilder und Text kodiert. Er nimmt eine Liste von Bildern und eine entsprechende Liste von Textbeschriftungen entgegen und verwendet dann ein VAE-Modell, um die Bilder in Latent-Darstellungen umzuwandeln, sowie ein CLIP-Modell, um den Text in Conditioning-Daten umzuwandeln. Die resultierenden gepaarten Latents und Conditioning-Daten werden als Listen ausgegeben und sind für die Verwendung in Trainings-Workflows bereit.
 

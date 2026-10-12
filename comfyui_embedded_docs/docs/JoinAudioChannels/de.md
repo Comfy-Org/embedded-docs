@@ -1,4 +1,4 @@
-# JoinAudioChannels
+# Audiokanäle zusammenführen
 
 Der Node „Join Audio Channels“ kombiniert zwei separate Mono-Audioeingänge zu einer einzelnen Stereo-Audioausgabe. Er nimmt einen linken Kanal und einen rechten Kanal entgegen, stellt sicher, dass sie kompatible Abtastraten und Längen haben, und führt sie zu einer zweikanaligen Audio-Wellenform zusammen.
 

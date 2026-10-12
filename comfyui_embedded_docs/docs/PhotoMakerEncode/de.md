@@ -1,4 +1,4 @@
-# PhotoMakerEncode
+# PhotoMaker Encode
 
 Der Knoten PhotoMakerEncode kombiniert ein Referenzbild mit einem Text-Prompt, um Conditioning-Daten für die Bilderzeugung zu erstellen. Wenn der Text das Wort „photomaker“ enthält, verwendet der Knoten das PhotoMaker-Modell, um die visuelle Identität des Referenzbildes an dieser Position im Prompt in die Conditioning-Daten einzufügen.
 

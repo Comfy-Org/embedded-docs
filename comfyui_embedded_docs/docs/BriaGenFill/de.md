@@ -1,4 +1,4 @@
-# BriaGenFill
+# Bria Generatives Füllen
 
 ## Eingaben
 

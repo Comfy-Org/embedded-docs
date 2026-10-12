@@ -1,4 +1,4 @@
-# TripoTextureNode
+# Tripo: Modell texturieren (veraltet)
 
 Der Node „Tripo: Texture model (Legacy)“ fügt einem vorhandenen Tripo-3D-Modell über die Tripo-API Texturen hinzu. Er verwendet die Task-ID eines von einem anderen Tripo-Node erstellten Modells und gibt nach Abschluss des Texturierungsjobs ein texturiertes GLB- oder FBX-Modell zurück. Sie können die Material-Maps, die Texturqualität, die Ausrichtung und den Seed steuern und die Texturen mit einem Text-Prompt, einem Stilbild oder Referenzbildern lenken. Dieser Node ist eine Legacy-Version des Texturwerkzeugs.
 

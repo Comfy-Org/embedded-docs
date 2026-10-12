@@ -1,4 +1,4 @@
-# TripoImageToMultiviewNode
+# Tripo: Bild zu Mehransicht
 
 Erzeugt Vorder-, linke, Rück- und rechte Ansichten des Motivs aus einem einzelnen Eingabebild mithilfe der Tripo-API. Das Bild wird hochgeladen, eine Multiview-Generierungsaufgabe gestartet und abgefragt, bis sie abgeschlossen ist, und die vier resultierenden Ansichten werden zusammen mit der Task-ID zurückgegeben. Dies ist eine kostenpflichtige Aufgabe, die mit etwa 0,10 USD abgerechnet wird.
 

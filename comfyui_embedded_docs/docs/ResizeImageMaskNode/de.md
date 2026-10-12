@@ -1,4 +1,4 @@
-# ResizeImageMaskNode
+# Bild/Maske skalieren
 
 Der Node „Resize Image/Mask“ bietet mehrere Methoden, um die Abmessungen eines Eingabebilds oder einer Eingabemaske zu ändern. Er kann um einen Multiplikator skalieren, bestimmte Abmessungen festlegen, an die Größe einer anderen Eingabe anpassen oder basierend auf der Pixelanzahl anpassen, wobei verschiedene Interpolationsmethoden für die Qualität verwendet werden.
 

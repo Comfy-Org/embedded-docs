@@ -1,4 +1,4 @@
-# StringLength
+# Textlänge
 
 Der StringLength-Node berechnet die Anzahl der Zeichen in einer Textzeichenkette. Er nimmt eine beliebige Texteingabe entgegen und gibt die Gesamtzahl der Zeichen zurück, einschließlich Leerzeichen und Satzzeichen. Dies ist nützlich, um die Textlänge zu messen oder Anforderungen an die Zeichenkettenlänge zu überprüfen.
 

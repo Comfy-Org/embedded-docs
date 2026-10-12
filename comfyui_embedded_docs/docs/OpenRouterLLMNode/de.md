@@ -1,4 +1,4 @@
-# OpenRouterLLMNode
+# OpenRouter LLM
 
 Der OpenRouter-LLM-Node sendet einen Text-Prompt an eine kuratierte Auswahl populärer Sprachmodelle, die über den OpenRouter-Dienst verfügbar sind, und gibt die generierte Textantwort zurück. Er unterstützt Modelle von Anthropic (Claude), OpenAI (GPT), Google (Gemini), xAI (Grok), DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) und Perplexity Sonar und kann optional Bilder oder Videos als Referenzeingaben in die Anfrage aufnehmen.
 

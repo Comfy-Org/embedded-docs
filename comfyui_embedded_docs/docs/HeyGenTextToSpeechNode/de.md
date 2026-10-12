@@ -1,4 +1,4 @@
-# HeyGenTextToSpeechNode
+# HeyGen Text-zu-Sprache
 
 Erzeugt Sprach-Audio aus Text mithilfe von HeyGens Starfish-TTS-Engine. Dieser Node enthält HeyGens beliebteste Stimmen in 17 Sprachen.
 

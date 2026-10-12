@@ -1,4 +1,4 @@
-# LTXVAddLatentGuide
+# LTXV Latent-Guide hinzufügen
 
 Der Node LTXV Add Latent Guide heftet ein bereits kodiertes Latent als Guide an, für den Fall, dass der Guide aus einer früheren Stufe statt aus einem Bild stammt. Er hat dieselbe Wirkung wie LTXV Add Guide, jedoch ohne den VAE-Decode/Encode-Roundtrip. Ein Guide, der räumlich kleiner als das Ziel ist (eine IC-LoRA- oder Detailreferenz), wird auf ein dünn besetztes Raster dilatiert, und seine RoPE-Endpositionen werden um dasselbe Verhältnis erweitert, sodass er den Ziel-Canvas abdeckt, anstatt nur dessen obere linke Ecke zu adressieren.
 

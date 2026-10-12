@@ -1,4 +1,4 @@
-# CaseConverter
+# Groß-/Kleinschreibung konvertieren
 
 Der Node „Case Converter“ wandelt Textzeichenfolgen in verschiedene Groß-/Kleinschreibungsformate um. Er nimmt eine Eingabezeichenfolge entgegen und wandelt sie basierend auf dem ausgewählten Modus um, wodurch eine Ausgabezeichenfolge mit der angegebenen Schreibweise erzeugt wird. Der Node unterstützt vier verschiedene Optionen zur Groß-/Kleinschreibungsumwandlung, um die Großschreibung Ihres Textes anzupassen.
 

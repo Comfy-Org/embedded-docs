@@ -1,4 +1,4 @@
-# VaeDecodeStructureTrellis2
+# Trellis2 VAE-Strukturdekodierung
 
 Dieser Node konvertiert latente Trellis-Struktur-Samples in ein 3D-Voxelgitter unter Verwendung des Struktur-Decoders eines VAE. Er liest nur die ersten 8 Kanäle des Latents, rekonstruiert die Voxel-Belegung und passt die Ausgabeauflösung nach Bedarf auf entweder 32 oder 64 an.
 

@@ -1,4 +1,4 @@
-# BriaVideoReplaceBackground
+# Bria Videohintergrund ersetzen
 
 Dieser Node ersetzt den Hintergrund eines Videos durch ein bereitgestelltes Bild oder Video mithilfe der Bria-API. Die Ausgabe behält die Auflösung und Bildrate des Vordergrundvideos bei; ein Hintergrund mit einem abweichenden Seitenverhältnis wird gestreckt, um zu passen. Daher liefern übereinstimmende Seitenverhältnisse unverzerrte Ergebnisse.
 

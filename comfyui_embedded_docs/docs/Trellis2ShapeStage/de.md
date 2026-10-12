@@ -1,4 +1,4 @@
-# Trellis2ShapeStage
+# Trellis2-Formphase
 
 Dieser Node richtet den ersten Sampling-Durchlauf der Shape-Generierung der Trellis2-Pipeline ein. Er nimmt das dichte Struktur-Voxel entgegen, das von VaeDecodeStructureTrellis2 erzeugt wurde, extrahiert die Sparse-Koordinaten der gefüllten Voxel, erstellt ein leeres Sparse-Latent und hängt die Sampling-Metadaten an die Konditionierung an, sodass das Modell sie während des Samplings lesen kann. Für den zweiten Shape-Durchlauf nach dem Upsampling verwenden Sie stattdessen Trellis2UpsampleStage, das die Kaskade und die Einrichtung der zweiten Stufe kombiniert.
 

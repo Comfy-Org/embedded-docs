@@ -1,4 +1,4 @@
-# LatentRotate
+# latent drehen
 
 Der LatentRotate-Node dient dazu, latente Repräsentationen von Bildern um bestimmte Winkel zu drehen. Er abstrahiert die Komplexität der Manipulation des latenten Raums, um Rotationseffekte zu erzielen, und ermöglicht es Anwendern, Bilder im latenten Raum eines generativen Modells auf einfache Weise zu transformieren.
 

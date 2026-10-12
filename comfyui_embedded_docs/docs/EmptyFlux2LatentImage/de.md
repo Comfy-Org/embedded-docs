@@ -1,4 +1,4 @@
-# EmptyFlux2LatentImage
+# Leeres flux 2 Latent
 
 Der Node Empty Flux 2 Latent erstellt eine leere latente Repräsentation, die mit Nullen gefüllt ist. Er wird als Ausgangspunkt für den Denoising-Prozess des Flux-Modells verwendet. Die latenten Dimensionen werden aus den Eingabeparametern `width` und `height` übernommen, jeweils geteilt durch 16.
 

@@ -1,4 +1,4 @@
-# YuE2GenerateABC
+# YuE2 ABC generieren
 
 Dieser Node erzeugt eine ABC-Notation für einen Song basierend auf einer Stilbeschreibung und Liedtexten unter Verwendung eines YuE2-Text-and-Lyrics-Modells. Die resultierende `abc`-Ausgabe kann mit dem YuE2 Generate Music Node verbunden werden, um Audio zu erzeugen.
 

@@ -1,4 +1,4 @@
-# RunwayTextToImageNode
+# Runway Text zu Bild
 
 Der Runway Text to Image-Node erzeugt Bilder aus Text-Prompts mithilfe von Runways Gen-4-Modell. Sie können eine Textbeschreibung angeben und optional ein Referenzbild einbeziehen, um den Bildgenerierungsprozess zu steuern. Der Node übernimmt die API-Kommunikation und gibt das generierte Bild zurück.
 

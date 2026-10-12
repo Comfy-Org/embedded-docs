@@ -1,4 +1,4 @@
-# PreviewAny
+# Vorschau als Text
 
 PreviewAny wandelt jeden Eingabewert in lesbaren Text um, damit Sie ihn überprüfen können. Zeichenketten werden unverändert übernommen, Zahlen und boolesche Werte werden in reinen Text umgewandelt, und andere Datentypen werden nach Möglichkeit zu JSON serialisiert (mit Rückfall auf ihre reine Zeichenkettenform, wenn die Serialisierung fehlschlägt). Der resultierende Text wird in der Benutzeroberfläche angezeigt und außerdem als Zeichenketten-Ausgabe für die weitere Verarbeitung zurückgegeben.
 

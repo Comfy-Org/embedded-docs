@@ -1,4 +1,4 @@
-# DualCFGGuider
+# Dualer CFG-Guider
 
 Der Node Dual CFG Guider erstellt ein Guidance-System für das Sampling, das zwei Konditionierungseingaben zusammen mit einer negativen Konditionierungseingabe verwendet. Er wendet zwei separate Guidance-Skalen an, um zu steuern, wie stark jede Konditionierung das generierte Ergebnis beeinflusst, und unterstützt zwei Arten der Kombination dieser Skalen: "regular" und "nested".
 

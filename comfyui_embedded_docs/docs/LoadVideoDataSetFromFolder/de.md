@@ -1,4 +1,4 @@
-# LoadVideoDataSetFromFolder
+# Video laden (aus Ordner)
 
 Lädt einen Datensatz von Videos aus einem ausgewählten Ordner im ComfyUI-Eingabeverzeichnis und gibt sie als Liste von Lazy-Video-Referenzen zurück. Dieser Node lädt einen Datensatz von Videos: Frames werden erst dekodiert, wenn ein anderer Node sie tatsächlich benötigt. Unterstützte Formate sind MP4, AVI, MOV, WEBM, MKV und FLV.
 

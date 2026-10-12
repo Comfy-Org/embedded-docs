@@ -1,4 +1,4 @@
-# StringFormat
+# Text formatieren
 
 ## Übersicht
 

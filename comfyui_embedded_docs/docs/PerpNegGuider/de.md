@@ -1,4 +1,4 @@
-# PerpNegGuider
+# Perp-Neg Guider
 
 Der PerpNegGuider-Node erstellt ein Führungssystem zur Steuerung der Bilderzeugung unter Verwendung von senkrechter negativer Konditionierung. Er akzeptiert positive, negative und leere Konditionierungseingaben und wendet einen spezialisierten Führungsalgorithmus an, der alle drei Rauschvorhersagen für mehr Effizienz in einem einzigen Batch berechnet. Dieser Node ist für experimentelle Tests gedacht und bietet feine Kontrolle über die Führungsstärke und die negative Skalierung.
 

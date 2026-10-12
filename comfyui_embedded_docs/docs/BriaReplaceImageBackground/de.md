@@ -1,4 +1,4 @@
-# BriaReplaceImageBackground
+# Bria Bildhintergrund ersetzen
 
 Dieser Node ersetzt den Hintergrund eines Bildes durch einen neuen, von Bria generierten Hintergrund. Der neue Hintergrund kann mit einem Text-Prompt beschrieben oder durch Referenzbilder gesteuert werden. Die Pixel des Motivs bleiben erhalten, während der Hintergrund um sie herum generiert wird.
 

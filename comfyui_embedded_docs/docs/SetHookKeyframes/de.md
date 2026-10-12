@@ -1,4 +1,4 @@
-# SetHookKeyframes
+# Hook-Keyframes festlegen
 
 Der Node Set Hook Keyframes ermöglicht es, Keyframe-Zeitplanung auf vorhandene Hook-Gruppen anzuwenden. Er nimmt eine Hook-Gruppe entgegen und wendet optional Timing-Informationen für Keyframes an, um zu steuern, wann verschiedene Hooks während des Generierungsprozesses ausgeführt werden. Wenn Keyframes bereitgestellt werden, klont der Node die Hook-Gruppe und legt das Keyframe-Timing für alle Hooks innerhalb der Gruppe fest.
 

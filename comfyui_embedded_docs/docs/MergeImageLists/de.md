@@ -1,4 +1,4 @@
-# MergeImageLists
+# Bildlisten zusammenführen (VERALTET)
 
 Der Node „Merge Image Lists“ kombiniert mehrere separate Bildlisten zu einer einzigen, fortlaufenden Liste. Er nimmt alle Bilder aus jedem verbundenen Eingang und hängt sie in der Reihenfolge aneinander, in der sie empfangen werden. Dies ist nützlich, um Bilder aus verschiedenen Quellen für die weitere Verarbeitung zu organisieren oder zu stapeln.
 

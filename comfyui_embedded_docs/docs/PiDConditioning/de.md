@@ -1,4 +1,4 @@
-# PiDConditioning
+# PiD Conditioning
 
 Fügt einem CONDITIONING einen Latent- und einen degrade_sigma-Wert hinzu, damit es für die PiD-Dekodierung oder -Hochskalierung verwendet werden kann. Dadurch können Sie steuern, wie stark das Latent vor der Verarbeitung degradiert wird.
 

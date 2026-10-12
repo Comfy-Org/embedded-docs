@@ -1,4 +1,4 @@
-# ReveImageEditNode
+# Reve-Bildbearbeitung
 
 Der Reve Image Edit-Node bearbeitet ein vorhandenes Bild basierend auf einer natürlichsprachigen Textanweisung. Er sendet das Eingabebild und Ihre Anweisung an die Reve-API, die ein neues Bild mit den angeforderten Änderungen zurückgibt.
 

@@ -1,4 +1,4 @@
-# SetClipHooks
+# CLIP-Hooks festlegen
 
 Der Node SetClipHooks ermöglicht es Ihnen, benutzerdefinierte Hooks auf ein CLIP-Modell anzuwenden, wodurch erweiterte Änderungen an dessen Verhalten möglich sind. Er kann Hooks auf Conditioning-Ausgaben anwenden und optional die CLIP-Scheduling-Funktionalität aktivieren. Dieser Node erstellt eine geklonte Kopie des eingegebenen CLIP-Modells mit den angegebenen Hook-Konfigurationen.
 

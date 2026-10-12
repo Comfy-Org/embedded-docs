@@ -1,4 +1,4 @@
-# TripoRigNode
+# Tripo: Modell riggen
 
 Dieser Node nimmt ein vorhandenes Tripo-3D-Modell und erstellt eine geriggte Version davon, das heißt, das Modell erhält ein Skelett, damit es animiert werden kann. Sie geben die Task-ID des zu riggenden Modells an, wählen Rig-Version, Skeletttyp, Knochenbenennungsstil und Ausgabedateiformat, und der Node sendet den Auftrag an Tripo, wartet, bis er abgeschlossen ist, und gibt anschließend das heruntergeladene Ergebnis zurück.
 

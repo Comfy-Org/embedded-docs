@@ -1,4 +1,4 @@
-# SyncLipSyncNode
+# sync.so Lippensynchronisation
 
 Dieser Node synchronisiert die Mundbewegung in einem Video mithilfe der sync.so API erneut mit neuem Sprach-Audio. Er behandelt automatisch Nahaufnahmen, Profile und Verdeckungen, während der Gesichtsausdruck des Sprechers erhalten bleibt. Die Kosten skalieren mit der Ausgabedauer.
 

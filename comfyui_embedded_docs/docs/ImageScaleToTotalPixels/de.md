@@ -1,4 +1,4 @@
-# ImageScaleToTotalPixels
+# Bild auf Gesamtpixelzahl skalieren
 
 Der Node ImageScaleToTotalPixels dient dazu, Bilder auf eine angegebene Gesamtzahl von Pixeln zu skalieren, während das Seitenverhältnis beibehalten wird. Er bietet verschiedene Methoden zum Hochskalieren des Bildes, um die gewünschte Pixelanzahl zu erreichen.
 

@@ -1,4 +1,4 @@
-# SaveGLB
+# 3D-Modell speichern
 
 Der Node SaveGLB speichert 3D-Mesh-Daten oder 3D-Dateieingaben im Ausgabeverzeichnis. Er akzeptiert Mesh-Daten und gängige 3D-Dateiformate (GLB, GLTF, OBJ, FBX, STL, USDZ, PLY, SPLAT, SPZ, KSPLAT) und exportiert sie mit dem angegebenen Dateinamenpräfix. Mesh-Eingaben werden als GLB-Dateien geschrieben, eine pro Batch-Element, während 3D-Dateieingaben im Originalformat gespeichert werden.
 

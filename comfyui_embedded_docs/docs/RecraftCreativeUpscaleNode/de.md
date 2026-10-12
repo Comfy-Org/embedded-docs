@@ -1,4 +1,4 @@
-# RecraftCreativeUpscaleNode
+# Recraft-Bild kreativ hochskalieren
 
 Der Node Recraft Creative Upscale Image verbessert ein Rasterbild, indem er seine Auflösung erhöht. Er verwendet einen Prozess zum „kreativen Upscaling“, der darauf abzielt, kleine Details und Gesichter im Bild zu verbessern. Dieser Vorgang wird synchron über eine externe API ausgeführt.
 

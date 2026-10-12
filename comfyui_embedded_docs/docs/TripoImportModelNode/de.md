@@ -1,4 +1,4 @@
-# TripoImportModelNode
+# Tripo: Modell importieren
 
 Dieser Node importiert ein externes 3D-Modell in Tripo, sodass Tripo-Nachbearbeitungs-Nodes wie Texture, Rig und Convert es verwenden können. Der Node lädt die Datei zu Tripo hoch und gibt eine Task-ID zurück, die das importierte Modell identifiziert, damit diese Nodes es verwenden können. GLB wird empfohlen, da Texturen nur erhalten bleiben, wenn sie in der Datei eingebettet sind, und das Texturieren eines importierten Modells erfordert einen Textur-Prompt. Dieser Node ist kostenlos nutzbar.
 

@@ -1,4 +1,4 @@
-# LoraSave
+# LoRA extrahieren und speichern
 
 Der LoraSave-Node extrahiert und speichert LoRA-Dateien (Low-Rank Adaptation) aus Modelldifferenzen. Er kann Differenzen von Diffusionsmodellen, Text-Encoder-Differenzen oder beides verarbeiten und sie in das LoRA-Format mit angegebenem Rang und Typ umwandeln. Die resultierende LoRA-Datei wird im Ausgabeverzeichnis zur späteren Verwendung gespeichert.
 

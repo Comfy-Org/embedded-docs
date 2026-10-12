@@ -1,4 +1,4 @@
-# KlingTextToVideoNode
+# Kling Text zu Video
 
 Der Node „Kling Text to Video“ generiert Videos aus Textbeschreibungen mithilfe der Kling-Videogenerierungs-API. Er sendet den Prompt und die Einstellungen (Seitenverhältnis, Generierungsmodus und CFG-Skalierung) an die API, wartet, bis die Generierungsaufgabe abgeschlossen ist, und gibt dann das resultierende Video zusammen mit seiner ID und Dauer zurück.
 

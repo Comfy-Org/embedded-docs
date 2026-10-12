@@ -1,4 +1,4 @@
-# ImageFromBatch
+# Bild aus Batch abrufen
 
 Der `ImageFromBatch`-Node ist dafür konzipiert, ein bestimmtes Segment von Bildern aus einem Batch basierend auf dem angegebenen Index und der Länge zu extrahieren. Er ermöglicht eine feinere Steuerung der gebündelten Bilder und erlaubt Operationen an einzelnen Bildern oder Teilmengen von Bildern innerhalb eines größeren Batches.
 

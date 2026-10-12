@@ -1,4 +1,4 @@
-# SaveConditioning
+# Conditioning speichern
 
 Dieser Node speichert ein einzelnes Conditioning als Safetensors-Datei im Ausgabeordner. Die gespeicherte Datei kann in den Ordner models/embeddings verschoben und später mit Load Conditioning geladen werden, um beispielsweise den Text-Encoder zu überspringen. Der Node reicht das Conditioning unverändert weiter, sodass es später im Workflow weiterhin verwendet werden kann.
 

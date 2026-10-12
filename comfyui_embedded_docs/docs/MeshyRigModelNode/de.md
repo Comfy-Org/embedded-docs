@@ -1,4 +1,4 @@
-# MeshyRigModelNode
+# Meshy: Modell riggen
 
 Der Node Meshy: Rig Model nimmt ein 3D-Modell aus einer vorherigen Meshy-Aufgabe und erstellt automatisch ein Skelett dafür, wodurch ein geriggter Charakter entsteht, der posiert und animiert werden kann. Der Node gibt das geriggte Modell sowohl im GLB- als auch im FBX-Dateiformat aus.
 

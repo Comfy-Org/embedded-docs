@@ -1,4 +1,4 @@
-# SaveLoRA
+# LoRA-Gewichte speichern
 
 Der SaveLoRA-Node speichert ein LoRA-(Low-Rank Adaptation)-Modell in einer Datei. Er nimmt ein LoRA-Modell als Eingabe entgegen und schreibt es in eine `.safetensors`-Datei im Ausgabeverzeichnis. Sie können ein Dateinamenpräfix und optional eine Schrittanzahl angeben, die in den endgültigen Dateinamen aufgenommen wird.
 

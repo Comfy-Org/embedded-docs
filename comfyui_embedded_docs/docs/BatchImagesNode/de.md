@@ -1,4 +1,4 @@
-# BatchImagesNode
+# Bilder bündeln
 
 Der Node „Batch Images“ kombiniert mehrere einzelne Bilder zu einem einzigen Batch. Er nimmt eine variable Anzahl von Bildeingaben entgegen und gibt sie als einen gebatchten Bildtensor aus, sodass sie in nachfolgenden Nodes gemeinsam verarbeitet werden können.
 

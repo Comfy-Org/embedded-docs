@@ -1,4 +1,4 @@
-# RecraftControls
+# Recraft-Steuerungen
 
 Erstellt Recraft Controls zum Anpassen der Recraft-Generierung. Dieser Node ermöglicht es Ihnen, Farbeinstellungen zu konfigurieren, die während des Recraft-Bildgenerierungsprozesses verwendet werden.
 

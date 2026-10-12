@@ -1,4 +1,4 @@
-# BriaVideoGreenScreen
+# Bria Video Greenscreen
 
 Dieser Node ersetzt den Hintergrund eines Videos durch einen einfarbigen Chroma-Key-Hintergrund mithilfe der Bria API. Er verarbeitet das eingegebene Video und gibt ein neues Video zurück, bei dem der ursprüngliche Hintergrund entfernt und durch eine einheitliche grüne oder blaue Bildschirmfarbe ersetzt wurde.
 

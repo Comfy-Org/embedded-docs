@@ -1,4 +1,4 @@
-# ImageStitch
+# Bilder zusammenfügen
 
 Dieser Node ermöglicht es Ihnen, zwei Bilder in einer angegebenen Richtung (oben, unten, links, rechts) zusammenzufügen, mit Unterstützung für Größenanpassung und Abstand zwischen den Bildern.
 

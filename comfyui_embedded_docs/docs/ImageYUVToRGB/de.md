@@ -1,4 +1,4 @@
-# ImageYUVToRGB
+# YUV-Bild in RGB umwandeln
 
 Der Node ImageYUVToRGB wandelt Bilder im YUV-Farbraum in den RGB-Farbraum um. Er nimmt drei separate Eingabebilder entgegen, die die Komponenten Y (Luma), U (Blauprojektion) und V (Rotprojektion) repräsentieren, und kombiniert sie zu einem einzelnen RGB-Bild.
 

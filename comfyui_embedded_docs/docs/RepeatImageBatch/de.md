@@ -1,4 +1,4 @@
-# RepeatImageBatch
+# Bild-Batch wiederholen
 
 Der Node RepeatImageBatch ist darauf ausgelegt, ein gegebenes Bild eine bestimmte Anzahl von Malen zu replizieren und so eine Batch identischer Bilder zu erzeugen. Diese Funktionalität ist nützlich für Vorgänge, die mehrere Instanzen desselben Bildes erfordern, wie Batch-Verarbeitung oder Datenaugmentierung.
 

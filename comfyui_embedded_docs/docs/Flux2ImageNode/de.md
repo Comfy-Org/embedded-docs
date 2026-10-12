@@ -1,4 +1,4 @@
-# Flux2ImageNode
+# Flux.2 Bild
 
 Generieren Sie Bilder mit dem Modell Flux.2 [pro] oder Flux.2 [max] aus einem Text-Prompt und optionalen Referenzbildern. Der Node sendet die Anfrage an die BFL API, fragt so lange ab, bis das Ergebnis bereit ist, und gibt das generierte Bild zurück.
 

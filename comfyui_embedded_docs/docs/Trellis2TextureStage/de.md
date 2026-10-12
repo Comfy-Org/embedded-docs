@@ -1,4 +1,4 @@
-# Trellis2TextureStage
+# Trellis2-Texturphase
 
 Dieser Node richtet den Sampling-Durchlauf der Texturphase für die Trellis2-Generierung ein. Er liest das Koordinatenlayout und das Shape-Latent pro Voxel aus dem eingehenden Shape-Latent, erstellt ein leeres Sparse-Latent mit 32 Kanälen im selben Koordinatenlayout und hängt die erforderlichen Metadaten der Texturphase an die Konditionierung an.
 

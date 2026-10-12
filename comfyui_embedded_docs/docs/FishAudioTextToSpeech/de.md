@@ -1,4 +1,4 @@
-# FishAudioTextToSpeech
+# Fish Audio Text zu Sprache
 
 Dieser Node wandelt geschriebenen Text mithilfe von Fish Audio Text-to-Speech-Modellen in gesprochenes Audio um. Er unterstützt Emotionshinweise, die in den Text eingebettet sind ([happy], [whispering] bei s2.1-pro; (happy) bei s1), sowie Multi-Speaker-Dialoge mit @Voice1/@Voice2-Tags, wenn mehrere Stimmen verbunden sind. Zwei Modelle sind verfügbar: s2.1-pro, das bis zu fünf Stimmen und Multi-Speaker-Dialoge unterstützt, und s1, das eine einzelne optionale Stimme verwendet.
 

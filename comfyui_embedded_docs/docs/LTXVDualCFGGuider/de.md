@@ -1,4 +1,4 @@
-# LTXVDualCFGGuider
+# LTXV Dual CFG Guider
 
 Dieser Node erstellt ein geführtes Sampling-Objekt (CFG-Guider) für LTXV-AV-Modelle. Er wendet eine separate Guidance-Skala auf den Videoteil und den Audioteil eines gepackten LTXV-AV-Latents an, sodass Sie den Einfluss der Konditionierung auf jede Modalität unabhängig steuern können. Wenn die beiden Skalen gleich sind oder das Latent keine getrennten Video- und Audiokomponenten enthält, wird stattdessen eine einzige Gesamtskala verwendet.
 

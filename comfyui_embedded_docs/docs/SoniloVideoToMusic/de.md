@@ -1,4 +1,4 @@
-# SoniloVideoToMusic
+# Sonilo Video zu Musik
 
 Erzeugen Sie Musik aus einem Video mit dem KI-Modell von Sonilo. Dieser Node analysiert den Inhalt eines Eingabevideos und erstellt ein dazu passendes Musikstück. Er verwendet einen externen KI-Dienst, um das Video zu verarbeiten und das Audio zu generieren.
 

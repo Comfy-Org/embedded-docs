@@ -1,4 +1,4 @@
-# LatentBlend
+# Latent-Mischung
 
 Der LatentBlend-Node kombiniert zwei latente Samples, indem er sie mithilfe eines angegebenen Blend-Faktors miteinander vermischt. Er nimmt zwei latente Eingaben entgegen und erzeugt eine neue Ausgabe, bei der das erste Sample mit dem Blend-Faktor und das zweite Sample mit dem Kehrwert gewichtet wird. Wenn die Eingabe-Samples unterschiedliche Formen haben, wird das zweite Sample automatisch angepasst, um den Abmessungen des ersten Samples zu entsprechen.
 

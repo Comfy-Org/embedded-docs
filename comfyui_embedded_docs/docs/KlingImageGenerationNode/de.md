@@ -1,4 +1,4 @@
-# KlingImageGenerationNode
+# Kling 3.0 Bild
 
 Der Kling Image Generation Node generiert Bilder aus Text-Prompts mit der Option, ein Referenzbild zur Orientierung zu verwenden. Er erstellt ein oder mehrere Bilder basierend auf Ihrer Textbeschreibung und den Referenzeinstellungen und gibt dann die generierten Bilder als Ausgabe zurück.
 

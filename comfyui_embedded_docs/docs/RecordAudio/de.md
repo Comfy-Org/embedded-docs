@@ -1,4 +1,4 @@
-# RecordAudio
+# Audio aufnehmen
 
 Der Node `RecordAudio` lädt Audiodateien, die über die Audioaufnahme-Schnittstelle aufgenommen oder ausgewählt wurden. Er verarbeitet die Audiodatei und wandelt sie in ein Wellenformformat um, das von anderen Audioverarbeitungs-Nodes im Workflow verwendet werden kann. Der Node erkennt automatisch die Abtastrate und bereitet die Audiodaten für die weitere Bearbeitung vor.
 

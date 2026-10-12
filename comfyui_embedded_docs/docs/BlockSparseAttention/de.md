@@ -1,4 +1,4 @@
-# BlockSparseAttention
+# Modell-Sparse-Attention
 
 Der **Block Sparse Attention**-Node modifiziert ein Modell so, dass seine Attention-Layer sich nur auf die relevantesten Teile der Eingabe konzentrieren, statt alles auf einmal zu berücksichtigen, wodurch der Rechenaufwand für lange Sequenzen verringert wird. Die Einsparungen wachsen mit der Sequenzlänge, da kurze Sequenzen mit normaler (dichter) Attention normalerweise schneller sind.
 

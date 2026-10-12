@@ -1,4 +1,4 @@
-# BriaRemoveVideoBackground
+# Bria Videohintergrund entfernen
 
 Dieser Node entfernt den Hintergrund aus einem Video mithilfe des Bria AI-Dienstes. Er verarbeitet das Eingabevideo und ersetzt den ursprünglichen Hintergrund durch eine Volltonfarbe Ihrer Wahl. Der Vorgang wird über eine externe API ausgeführt, und das Ergebnis wird als neue Videodatei zurückgegeben.
 

@@ -1,4 +1,4 @@
-# MaskComposite
+# Masken kombinieren
 
 Dieser Node ist auf die Kombination zweier Maskeneingaben durch verschiedene Operationen wie Addition, Subtraktion und logische Operationen spezialisiert, um eine neue, modifizierte Maske zu erzeugen. Er übernimmt abstrakt die Manipulation von Maskendaten, um komplexe Maskierungseffekte zu erzielen, und dient als entscheidende Komponente in maskenbasierten Bildbearbeitungs- und Verarbeitungsworkflows.
 

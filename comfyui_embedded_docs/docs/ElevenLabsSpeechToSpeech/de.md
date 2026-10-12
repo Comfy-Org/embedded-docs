@@ -1,4 +1,4 @@
-# ElevenLabsSpeechToSpeech
+# ElevenLabs Speech to Speech
 
 Der ElevenLabs Speech-to-Speech-Node wandelt eine Eingabe-Audiodatei von einer Stimme in eine andere um. Er verwendet die ElevenLabs-API, um Sprache umzuwandeln, wobei der ursprüngliche Inhalt und die emotionale Tonalität des Audios erhalten bleiben.
 

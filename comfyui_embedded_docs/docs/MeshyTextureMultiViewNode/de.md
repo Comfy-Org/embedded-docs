@@ -1,4 +1,4 @@
-# MeshyTextureMultiViewNode
+# Meshy: Modell texturieren (Multi-View)
 
 Dieser Node texturiert ein zuvor erstelltes 3D-Modell anhand von 1 bis 4 Referenzansichten desselben Objekts. Sie geben die Task-ID des ursprünglichen Modells und die Referenzbilder an; der Node sendet sie an den Meshy-Dienst, wartet, bis der Auftrag abgeschlossen ist, und gibt das texturierte Modell als GLB- und FBX-Dateien zurück.
 

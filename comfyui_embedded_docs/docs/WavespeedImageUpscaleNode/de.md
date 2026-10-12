@@ -1,4 +1,4 @@
-# WavespeedImageUpscaleNode
+# WaveSpeed-Bild-Upscaling
 
 Der WaveSpeed Image Upscale-Node verwendet einen externen KI-Dienst, um die Auflösung und Qualität eines Bildes zu erhöhen. Er nimmt ein einzelnes Eingabefoto entgegen und skaliert es auf eine höhere Zielauflösung wie 2K, 4K oder 8K hoch, wodurch ein schärferes und detaillierteres Ergebnis entsteht.
 
