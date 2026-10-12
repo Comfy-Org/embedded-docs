@@ -810,12 +810,17 @@ def _first_sentence(paragraph: str) -> str:
     # so "e.g." / "i.e." abbreviations survive. Localized pages (Korean, …)
     # start the next sentence with a non-ASCII letter, which the uppercase rule
     # never matched: those pages fell through to the hard cut and lost their
-    # summary mid-sentence.
-    m = re.search(r"\.\s+(?=[A-Z])", paragraph) or re.search(
-        r"\.\s+(?=[^\x00-\x7f])", paragraph
-    )
-    if m:
-        return paragraph[: m.end()].strip()
+    # summary mid-sentence. Whichever rule matches first wins.
+    boundaries = [
+        m.end()
+        for m in (
+            re.search(r"\.\s+(?=[A-Z])", paragraph),
+            re.search(r"\.\s+(?=[^\x00-\x7f])", paragraph),
+        )
+        if m
+    ]
+    if boundaries:
+        return paragraph[: min(boundaries)].strip()
     idx = paragraph.find("。")
     if idx != -1:
         return paragraph[: idx + 1].strip()
@@ -826,25 +831,24 @@ def _trim_to_length(text: str, limit: int = MAX_DESCRIPTION_CHARS) -> str:
     """Shorten ``text`` to ``limit`` characters without slicing through a word."""
     if len(text) <= limit:
         return text.strip()
-    head = text[:limit]
     # Prefer the last complete sentence, then the last clause, then the last
     # whole word — a hard character cut leaves search results ending in "or La".
-    # A period only ends a sentence when whitespace or the end follows, so
-    # versions and decimals ("2.5", "Rec.2020") do not win the search.
-    last_ender = max(
-        (m.end() for m in re.finditer(r"(?:[。！？]|[.!?](?=\s|$))", head)),
-        default=0,
-    )
-    if last_ender > _MIN_DESCRIPTION_CHARS:
-        return head[:last_ender].strip()
+    # Endings are looked up in the whole text so the lookahead can see what
+    # follows the period: "ver2.5" is not a sentence ending even when the limit
+    # lands right after the period.
+    endings = [
+        m.end() for m in re.finditer(r"(?:。|\.(?=\s|$))", text) if m.end() <= limit
+    ]
+    if endings and max(endings) > _MIN_DESCRIPTION_CHARS:
+        return text[: max(endings)].strip()
     for ender in (",", "，", ";", "；", "、"):
-        i = head.rfind(ender)
+        i = text.rfind(ender, 0, limit)
         if i > _MIN_DESCRIPTION_CHARS:
-            return head[:i].strip()
-    words = head.rsplit(" ", 1)[0].strip(" ,;:").split()
+            return text[:i].strip()
+    words = text[:limit].rsplit(" ", 1)[0].strip(" ,;:").split()
     while words and words[-1].lower().strip(",;:") in _DANGLING_WORDS:
         words.pop()
-    return " ".join(words) or head.strip()
+    return " ".join(words) or text[:limit].strip()
 
 
 def get_description_from_content(content: str) -> str:

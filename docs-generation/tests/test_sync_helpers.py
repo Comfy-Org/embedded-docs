@@ -121,6 +121,19 @@ class DescriptionExtractionTests(unittest.TestCase):
         desc = sc.get_description_from_content(content)
         self.assertNotIn("2.", desc[-2:])
 
+    def test_earliest_sentence_boundary_wins(self):
+        # A localized sentence boundary must not lose to a later English one.
+        content = "첫 번째 문장입니다. 두 번째 문장입니다. Third sentence follows."
+        self.assertEqual(sc.get_description_from_content(content), "첫 번째 문장입니다.")
+
+    def test_limit_inside_a_version_is_not_a_sentence_end(self):
+        # The period of "ver2." sits exactly on the limit boundary; the
+        # lookahead has to see the following digit to reject it.
+        content = "x" * 154 + " ver2.5 next words here"
+        desc = sc.get_description_from_content(content)
+        self.assertLessEqual(len(desc), sc.MAX_DESCRIPTION_CHARS)
+        self.assertFalse(desc.endswith("."))
+
 
 class PurgeNavTests(unittest.TestCase):
     def _fake_locale(self):
