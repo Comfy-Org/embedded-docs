@@ -792,6 +792,71 @@ def _migrate_toplevel_groups_to_wrapper(pages: list[Any], wrapper_label: str) ->
             wrapper.append(orphan)
 
 
+# Comfy-Org/docs AGENTS.md asks every page for a 40-160 character meta
+# description; the generated frontmatter uses the same window.
+MAX_DESCRIPTION_CHARS = 160
+_MIN_DESCRIPTION_CHARS = 40
+# Function words a shortened description may not end on, so the cut still
+# reads as a whole phrase.
+_DANGLING_WORDS = frozenset(
+    """a an the and or but nor for to of in on at by with from as such that this
+    these those it its their your our is are was were be been being""".split()
+)
+
+
+def _first_sentence(paragraph: str) -> str:
+    """Return the first sentence of ``paragraph`` (the whole text if it has none)."""
+    # English: ". " only ends a sentence when the next character is uppercase,
+    # so "e.g." / "i.e." abbreviations survive. Localized pages (Korean, …)
+    # start the next sentence with a non-ASCII letter, which the uppercase rule
+    # never matched: those pages fell through to the hard cut and lost their
+    # summary mid-sentence. Whichever rule matches first wins.
+    boundaries = [
+        m.end()
+        for m in (
+            re.search(r"\.\s+(?=[A-Z])", paragraph),
+            re.search(r"\.\s+(?=[^\x00-\x7f])", paragraph),
+        )
+        if m
+    ]
+    if boundaries:
+        return paragraph[: min(boundaries)].strip()
+    idx = paragraph.find("。")
+    if idx != -1:
+        return paragraph[: idx + 1].strip()
+    return paragraph.strip()
+
+
+def _trim_to_length(text: str, limit: int = MAX_DESCRIPTION_CHARS) -> str:
+    """Shorten ``text`` to ``limit`` characters without slicing through a word."""
+    if len(text) <= limit:
+        return text.strip()
+    # Prefer the last complete sentence, then the last clause, then the last
+    # whole word — a hard character cut leaves search results ending in "or La".
+    # Endings are looked up in the whole text so the lookahead can see what
+    # follows the period: "ver2.5" is not a sentence ending even when the limit
+    # lands right after the period.
+    endings = [
+        m.end() for m in re.finditer(r"(?:。|\.(?=\s|$))", text) if m.end() <= limit
+    ]
+    if endings and max(endings) > _MIN_DESCRIPTION_CHARS:
+        return text[: max(endings)].strip()
+    # The latest clause boundary wins, whichever separator it uses.
+    clause = max(
+        (
+            text.rfind(ender, 0, limit)
+            for ender in (",", "，", ";", "；", "、")  # noqa: RUF001 — CJK separators
+        ),
+        default=-1,
+    )
+    if clause > _MIN_DESCRIPTION_CHARS:
+        return text[:clause].strip()
+    words = text[:limit].rsplit(" ", 1)[0].strip(" ,;:").split()
+    while words and words[-1].lower().strip(",;:") in _DANGLING_WORDS:
+        words.pop()
+    return " ".join(words) or text[:limit].strip()
+
+
 def get_description_from_content(content: str) -> str:
     """Extract the first sentence from the first content paragraph.
 
@@ -820,21 +885,14 @@ def get_description_from_content(content: str) -> str:
             or "AI 生成" in line_stripped
             or "AI によって生成" in line_stripped
             or "AI에 의해 생성" in line_stripped
+            or "AI가 생성" in line_stripped
         ):
             continue
         first_para.append(line_stripped)
     paragraph = " ".join(first_para) if first_para else ""
-    # Return only the first sentence. For English, split on ". " only when the
-    # next char is uppercase (avoids cutting "e.g." / "i.e." abbreviations);
-    # CJK sentence ender "。" splits unconditionally.
-    m = re.search(r"\.\s+(?=[A-Z])", paragraph)
-    if m:
-        return paragraph[: m.end()]
-    idx = paragraph.find("。")
-    if idx != -1:
-        return paragraph[: idx + 1]
-    # Align fallback truncation with the 180-char frontmatter limit
-    return paragraph[:180] if paragraph else ""
+    if not paragraph:
+        return ""
+    return _trim_to_length(_first_sentence(paragraph))
 
 
 def find_local_asset_refs(content: str, doc_dir: Path) -> list[tuple[str, Path]]:
@@ -1010,9 +1068,10 @@ def build_frontmatter(node_name: str, description: str) -> str:
     seo_desc = (description or "").strip()
     if not seo_desc:
         seo_desc = f"Complete documentation for the {node_name} node in ComfyUI. Learn its inputs, outputs, parameters and usage."
-    # Keep meta descriptions reasonably short; strip markdown/backticks noise
+    # Keep meta descriptions within the docs-repo guideline (40-160 chars);
+    # strip markdown/backticks noise
     seo_desc = re.sub(r"[`*_#>]", "", seo_desc)
-    seo_desc = seo_desc[:180]
+    seo_desc = seo_desc[:MAX_DESCRIPTION_CHARS]
     seo_desc_escaped = _escape_frontmatter_description(seo_desc)
     return f"""---
 title: "{node_name} - ComfyUI Built-in Node Documentation"
