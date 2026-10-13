@@ -2,6 +2,8 @@
 
 Genera un gráfico vectorial escalable (SVG) a partir de un mensaje de texto con Quiver AI. Las imágenes de referencia y las instrucciones de estilo opcionales pueden guiar la generación.
 
+**Nota:** Quiver retira los modelos de la serie Arrow 1 el 16 de octubre de 2026, así que las opciones `arrow-1.1`, `arrow-1.1-max` y `arrow-preview` dejan de funcionar después de esa fecha. Utiliza en su lugar `arrow-2` o `arrow-2-telos`.
+
 Al seleccionar un `model` se muestran los parámetros específicos del modelo que se enumeran a continuación, y el número máximo de imágenes de referencia también depende del modelo seleccionado.
 
 ## Entradas

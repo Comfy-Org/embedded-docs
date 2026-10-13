@@ -2,7 +2,7 @@
 
 Este nodo convierte una imagen ráster en un gráfico vectorial escalable (SVG) mediante los modelos de vectorización de Quiver AI. Envía la imagen a una API externa que la procesa y devuelve el resultado vectorizado.
 
-**Nota:** Este nodo está marcado como obsoleto en el código fuente.
+**Nota:** Este nodo está marcado como obsoleto en el código fuente. Quiver retira los modelos de la serie Arrow 1 el 16 de octubre de 2026, así que las opciones `arrow-1.1`, `arrow-1.1-max` y `arrow-preview` dejan de funcionar después de esa fecha. Utiliza en su lugar `arrow-2` o `arrow-2-telos`.
 
 ## Entradas
 

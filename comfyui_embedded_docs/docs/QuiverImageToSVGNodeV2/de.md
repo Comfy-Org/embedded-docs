@@ -2,6 +2,8 @@
 
 Vektorisieren Sie ein Rasterbild mit Quiver AI in eine skalierbare Vektorgrafik (SVG). Das Bild wird an die API von Quiver AI gesendet, die das vektorisierte Ergebnis zurückgibt.
 
+**Hinweis:** Quiver stellt die Modelle der Arrow 1-Serie am 16. Oktober 2026 ein; danach funktionieren die Optionen `arrow-1.1`, `arrow-1.1-max` und `arrow-preview` nicht mehr. Verwenden Sie stattdessen `arrow-2` oder `arrow-2-telos`.
+
 Wenn Sie ein `model` auswählen, werden die unten aufgeführten modellspezifischen Parameter angezeigt.
 
 ## Eingaben

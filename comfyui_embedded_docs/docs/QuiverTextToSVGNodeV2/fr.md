@@ -2,6 +2,8 @@
 
 Générez un graphique vectoriel évolutif (SVG) à partir d'une invite textuelle avec Quiver AI. Des images de référence et des instructions de style facultatives peuvent guider la génération.
 
+**Remarque :** Quiver retire les modèles de la série Arrow 1 le 16 octobre 2026 ; les options `arrow-1.1`, `arrow-1.1-max` et `arrow-preview` cessent donc de fonctionner après cette date. Utilisez plutôt `arrow-2` ou `arrow-2-telos`.
+
 La sélection d'un `model` révèle les paramètres spécifiques au modèle listés ci-dessous, et le nombre maximal d'images de référence dépend également du modèle sélectionné.
 
 ## Entrées

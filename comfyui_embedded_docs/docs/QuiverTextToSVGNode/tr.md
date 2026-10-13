@@ -2,7 +2,7 @@
 
 Quiver Text to SVG düğümü, Quiver AI'nin modellerini kullanarak bir metin açıklamasından Ölçeklenebilir Vektör Grafiği (SVG) görüntüsü oluşturur. Oluşturma sürecine yön vermek için isteğe bağlı olarak referans görüntüler ve stil talimatları sağlayabilirsiniz.
 
-**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir. Quiver, Arrow 1 serisi modellerini 16 Ekim 2026 tarihinde kullanımdan kaldırıyor; bu tarihten sonra `arrow-1.1`, `arrow-1.1-max` ve `arrow-preview` seçenekleri çalışmaz. Bunun yerine `arrow-2` veya `arrow-2-telos` kullanın.
 
 ## Girdiler
 

@@ -2,6 +2,8 @@
 
 Quiver AI ile bir metin isteminden ölçeklenebilir vektör grafiği (SVG) oluşturun. İsteğe bağlı referans görüntüleri ve stil talimatları üretimi yönlendirebilir.
 
+**Not:** Quiver, Arrow 1 serisi modellerini 16 Ekim 2026 tarihinde kullanımdan kaldırıyor; bu tarihten sonra `arrow-1.1`, `arrow-1.1-max` ve `arrow-preview` seçenekleri çalışmaz. Bunun yerine `arrow-2` veya `arrow-2-telos` kullanın.
+
 Bir `model` seçmek, aşağıda listelenen modele özgü parametreleri ortaya çıkarır ve maksimum referans görüntü sayısı da seçilen modele bağlıdır.
 
 ## Girdiler

@@ -2,7 +2,7 @@
 
 O nó Quiver Text to SVG gera uma imagem SVG (Scalable Vector Graphic) a partir de uma descrição textual usando os modelos da Quiver AI. Opcionalmente, você pode fornecer imagens de referência e instruções de estilo para orientar o processo de geração.
 
-**Nota:** Este nó está marcado como obsoleto no código-fonte.
+**Nota:** Este nó está marcado como obsoleto no código-fonte. A Quiver descontinua os modelos da série Arrow 1 em 16 de outubro de 2026, então as opções `arrow-1.1`, `arrow-1.1-max` e `arrow-preview` param de funcionar após essa data. Use `arrow-2` ou `arrow-2-telos` no lugar.
 
 ## Entradas
 

@@ -2,7 +2,7 @@
 
 Dieser Node wandelt ein Rasterbild mithilfe der Vektorisierungsmodelle von Quiver AI in eine skalierbare Vektorgrafik (SVG) um. Er sendet das Bild an eine externe API, die es verarbeitet und das vektorisierte Ergebnis zurückgibt.
 
-**Hinweis:** Dieser Node ist im Quellcode als veraltet markiert.
+**Hinweis:** Dieser Node ist im Quellcode als veraltet markiert. Quiver stellt die Modelle der Arrow 1-Serie am 16. Oktober 2026 ein; danach funktionieren die Optionen `arrow-1.1`, `arrow-1.1-max` und `arrow-preview` nicht mehr. Verwenden Sie stattdessen `arrow-2` oder `arrow-2-telos`.
 
 ## Eingaben
 
