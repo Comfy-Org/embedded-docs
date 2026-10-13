@@ -2,6 +2,8 @@
 
 Quiver AI ile bir raster görüntüyü ölçeklenebilir vektör grafiğe (SVG) dönüştürün. Görüntü Quiver AI'nin API'sine gönderilir ve API vektörleştirilmiş sonucu döndürür.
 
+**Not:** Quiver, Arrow 1 serisi modellerini 16 Ekim 2026 tarihinde kullanımdan kaldırıyor; bu tarihten sonra `arrow-1.1`, `arrow-1.1-max` ve `arrow-preview` seçenekleri çalışmaz. Bunun yerine `arrow-2` veya `arrow-2-telos` kullanın.
+
 Bir `model` seçildiğinde, aşağıda listelenen modele özel parametreler görüntülenir.
 
 ## Girdiler

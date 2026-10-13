@@ -2,7 +2,7 @@
 
 Le nœud Quiver Text to SVG génère une image SVG (Scalable Vector Graphic) à partir d'une description textuelle en utilisant les modèles de Quiver AI. Vous pouvez éventuellement fournir des images de référence et des instructions de style pour guider le processus de génération.
 
-**Remarque :** Ce nœud est marqué comme obsolète dans le code source.
+**Remarque :** Ce nœud est marqué comme obsolète dans le code source. Quiver retire les modèles de la série Arrow 1 le 16 octobre 2026 ; les options `arrow-1.1`, `arrow-1.1-max` et `arrow-preview` cessent donc de fonctionner après cette date. Utilisez plutôt `arrow-2` ou `arrow-2-telos`.
 
 ## Entrées
 

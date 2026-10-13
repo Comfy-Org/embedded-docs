@@ -2,7 +2,7 @@
 
 Ce nœud convertit une image matricielle en une image vectorielle SVG à l'aide des modèles de vectorisation de Quiver AI. Il envoie l'image à une API externe qui la traite et renvoie le résultat vectorisé.
 
-**Remarque :** Ce nœud est marqué comme obsolète dans le code source.
+**Remarque :** Ce nœud est marqué comme obsolète dans le code source. Quiver retire les modèles de la série Arrow 1 le 16 octobre 2026 ; les options `arrow-1.1`, `arrow-1.1-max` et `arrow-preview` cessent donc de fonctionner après cette date. Utilisez plutôt `arrow-2` ou `arrow-2-telos`.
 
 ## Entrées
 

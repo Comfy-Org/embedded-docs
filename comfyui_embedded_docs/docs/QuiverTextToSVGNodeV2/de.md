@@ -2,6 +2,8 @@
 
 Erzeugen Sie mit Quiver AI eine skalierbare Vektorgrafik (SVG) aus einem Text-Prompt. Optionale Referenzbilder und Stilanweisungen können die Generierung steuern.
 
+**Hinweis:** Quiver stellt die Modelle der Arrow 1-Serie am 16. Oktober 2026 ein; danach funktionieren die Optionen `arrow-1.1`, `arrow-1.1-max` und `arrow-preview` nicht mehr. Verwenden Sie stattdessen `arrow-2` oder `arrow-2-telos`.
+
 Die Auswahl eines `model` blendet die unten aufgeführten modellspezifischen Parameter ein, und auch die maximale Anzahl der Referenzbilder hängt vom ausgewählten Modell ab.
 
 ## Eingaben

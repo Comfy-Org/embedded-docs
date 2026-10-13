@@ -2,6 +2,8 @@
 
 Vettorializza un'immagine raster in una grafica vettoriale scalabile (SVG) con Quiver AI. L'immagine viene inviata all'API di Quiver AI, che restituisce il risultato vettorializzato.
 
+**Nota:** Quiver ritira i modelli della serie Arrow 1 il 16 ottobre 2026, quindi le opzioni `arrow-1.1`, `arrow-1.1-max` e `arrow-preview` smettono di funzionare dopo tale data. Usa invece `arrow-2` o `arrow-2-telos`.
+
 Selezionando un `model` vengono mostrati i parametri specifici del modello elencati di seguito.
 
 ## Input

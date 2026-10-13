@@ -2,6 +2,8 @@
 
 使用 Quiver AI 將點陣影像向量化為可縮放向量圖形（SVG）。影像會傳送至 Quiver AI 的 API，並傳回向量化結果。
 
+**注意：** Quiver 將於 2026 年 10 月 16 日停用 Arrow 1 系列模型，因此 `arrow-1.1`、`arrow-1.1-max` 和 `arrow-preview` 選項在該日期之後將停止運作。請改用 `arrow-2` 或 `arrow-2-telos`。
+
 選擇 `model` 會顯示下列模型專用參數。
 
 ## 輸入
