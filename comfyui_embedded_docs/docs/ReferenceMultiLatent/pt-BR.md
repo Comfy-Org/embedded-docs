@@ -10,7 +10,7 @@ Este nó codifica uma ou mais imagens de referência e anexa seus latents ao con
 | --- | --- | --- | --- | --- |
 | `positive` | O condicionamento positivo a ser modificado com os latents de referência. | CONDITIONING | Sim | - |
 | `negative` | Condicionamento negativo opcional que recebe os mesmos latents de referência. Deixe-o desconectado para reutilizar o condicionamento positivo modificado na saída `negative`. | CONDITIONING | Não | - |
-| `vae` | O VAE usado para codificar as imagens de referência conectadas. Obrigatório sempre que pelo menos uma imagem estiver conectada; caso contrário, o nó gera um erro. | VAE | Não | - |
+| `vae` | O VAE usado para codificar as imagens de referência conectadas. Quando nenhum VAE está conectado, as imagens de referência são ignoradas. | VAE | Não | - |
 | `resolution` | Como cada imagem de referência é preparada antes da codificação. `"keep resolution"` codifica-a no tamanho de entrada; `"resize"` redimensiona-a para uma contagem alvo de megapixels enquanto preserva a proporção, o que revela `megapixels`. (padrão: "keep resolution") | DYNAMIC_COMBO | Sim | `"keep resolution"`<br>`"resize"` |
 | `images` | Slot expansível: conecte uma ou mais imagens de referência (`image_1`, `image_2`, ...) para usar como referências. As imagens são codificadas na ordem dos slots e anexadas ao condicionamento nessa ordem. | IMAGE | Não | 1 a 100 |
 
@@ -39,4 +39,4 @@ Estas opções aparecem quando `resolution` é definido como `"resize"`.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceMultiLatent/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `7416feb8ac81cbf7e2d424e0212e88ab60235958c64550b0ee8c303093673756`
+**Source fingerprint (SHA-256):** `06f98e7c21e8750a2bdf365cb80fac990bcf01246f183c60ef83bd195fc1225b`

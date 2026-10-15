@@ -7,7 +7,7 @@ CLIPLoader düğümü, bir metin kodlayıcı modelini (CLIP, T5 veya benzeri) bi
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|---------|--------|
 | `clip_adı` | Yüklenecek metin kodlayıcı modelinin dosya adı. Bu, `ComfyUI/models/text_encoders/` dizininde bulunan bir dosya olmalıdır. | STRING | Evet | `text_encoders` klasöründe bulunan dosyaların listesi |
-| `tür` | Yüklenen modelin mimari türü. Kullanılacak belirli kodlayıcı varyantını belirler (varsayılan: `"stable_diffusion"`). | COMBO | Evet | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
+| `tür` | Yüklenen modelin mimari türü. Kullanılacak belirli kodlayıcı varyantını belirler (varsayılan: `"stable_diffusion"`). | COMBO | Evet | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"` |
 | `cihaz` | Modelin yükleneceği aygıt. `"default"` varsa GPU'yu kullanır, `"cpu"` ise CPU'da yüklemeye zorlar. Bu gelişmiş bir seçenektir (varsayılan: `"default"`). | COMBO | Hayır | `"default"`<br>`"cpu"` |
 
 ### Desteklenen Tür-Kodlayıcı Eşlemeleri
@@ -41,4 +41,4 @@ CLIPLoader düğümü, bir metin kodlayıcı modelini (CLIP, T5 veya benzeri) bi
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipLoader/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `6df608d500520d9414acd82d9fd509b1e211a8385202cefd5579e8a8f397bc64`
+**Source fingerprint (SHA-256):** `4a410c9d0d06d9d9bfee263eaa10d72ede59c22899f104592f3baf75cd6ced98`

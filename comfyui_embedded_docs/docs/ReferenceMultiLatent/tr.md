@@ -10,7 +10,7 @@ Bu düğüm, bir veya daha fazla referans görüntüyü kodlar ve latentlerini b
 | --- | --- | --- | --- | --- |
 | `positive` | Referans latentleriyle değiştirilecek pozitif koşullandırma. | CONDITIONING | Evet | - |
 | `negative` | Aynı referans latentlerini alacak isteğe bağlı negatif koşullandırma. `negative` çıktısında değiştirilmiş pozitif koşullandırmayı yeniden kullanmak için bağlantısız bırakın. | CONDITIONING | Hayır | - |
-| `vae` | Bağlı referans görüntüleri kodlamak için kullanılan VAE. En az bir görüntü bağlı olduğunda gereklidir; aksi halde düğüm hata verir. | VAE | Hayır | - |
+| `vae` | Bağlı referans görüntüleri kodlamak için kullanılan VAE. Hiçbir VAE bağlı değilse referans görüntüler yok sayılır. | VAE | Hayır | - |
 | `resolution` | Her referans görüntünün kodlamadan önce nasıl hazırlanacağı. `"keep resolution"` görüntüyü geldiği boyutta kodlar; `"resize"` en boy oranını koruyarak hedef megapiksel sayısına ölçekler ve `megapixels` seçeneğini görünür kılar. (varsayılan: "keep resolution") | DYNAMIC_COMBO | Evet | `"keep resolution"`<br>`"resize"` |
 | `images` | Genişletilebilir yuva: referans olarak kullanmak için bir veya daha fazla referans görüntü (`image_1`, `image_2`, ...) bağlayın. Görüntüler yuva sırasına göre kodlanır ve koşullandırmaya aynı sırayla eklenir. | IMAGE | Hayır | 1 ile 100 arası |
 
@@ -39,4 +39,4 @@ Bu seçenekler `resolution` `"resize"` olarak ayarlandığında görünür.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceMultiLatent/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `7416feb8ac81cbf7e2d424e0212e88ab60235958c64550b0ee8c303093673756`
+**Source fingerprint (SHA-256):** `06f98e7c21e8750a2bdf365cb80fac990bcf01246f183c60ef83bd195fc1225b`

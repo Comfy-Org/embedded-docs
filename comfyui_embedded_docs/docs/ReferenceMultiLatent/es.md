@@ -10,7 +10,7 @@ Este nodo codifica una o más imágenes de referencia y añade sus latentes al c
 | --- | --- | --- | --- | --- |
 | `positive` | El condicionamiento positivo que se va a modificar con los latentes de referencia. | CONDITIONING | Sí | - |
 | `negative` | Condicionamiento negativo opcional que recibe los mismos latentes de referencia. Déjalo sin conectar para reutilizar el condicionamiento positivo modificado en la salida `negative`. | CONDITIONING | No | - |
-| `vae` | El VAE que se usa para codificar las imágenes de referencia conectadas. Obligatorio siempre que se conecte al menos una imagen; de lo contrario, el nodo genera un error. | VAE | No | - |
+| `vae` | El VAE que se usa para codificar las imágenes de referencia conectadas. Cuando no hay ningún VAE conectado, las imágenes de referencia se ignoran. | VAE | No | - |
 | `resolution` | Cómo se prepara cada imagen de referencia antes de codificarla. `"keep resolution"` la codifica con su tamaño de entrada; `"resize"` la escala a una cantidad objetivo de megapíxeles mientras conserva la relación de aspecto, lo que revela `megapixels`. (predeterminado: "keep resolution") | DYNAMIC_COMBO | Sí | `"keep resolution"`<br>`"resize"` |
 | `images` | Ranura ampliable: conecta una o más imágenes de referencia (`image_1`, `image_2`, ...) para usarlas como referencias. Las imágenes se codifican en el orden de las ranuras y se añaden al condicionamiento en ese orden. | IMAGE | No | 1 a 100 |
 
@@ -39,4 +39,4 @@ Estas opciones aparecen cuando `resolution` se establece en `"resize"`.
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceMultiLatent/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `7416feb8ac81cbf7e2d424e0212e88ab60235958c64550b0ee8c303093673756`
+**Source fingerprint (SHA-256):** `06f98e7c21e8750a2bdf365cb80fac990bcf01246f183c60ef83bd195fc1225b`
