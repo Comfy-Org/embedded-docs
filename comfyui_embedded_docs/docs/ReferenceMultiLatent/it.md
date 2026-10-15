@@ -1,0 +1,42 @@
+# Set Reference Multi Latent
+
+Questo nodo codifica una o più immagini di riferimento e aggiunge i loro latent al condizionamento che un modello di editing utilizza. È la controparte multi-immagine di Set Reference Latent: colleghi un VAE e un insieme di immagini di riferimento, e il nodo collega ogni latent codificato al condizionamento positivo e, quando è collegato un condizionamento negativo, anche a quello negativo. Usalo quando un modello prevede più immagini di riferimento contemporaneamente invece di un singolo latent.
+
+## Input
+
+### Input comuni
+
+| Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
+| --- | --- | --- | --- | --- |
+| `positive` | Il condizionamento positivo da modificare con i latent di riferimento. | CONDITIONING | Sì | - |
+| `negative` | Condizionamento negativo opzionale che riceve gli stessi latent di riferimento. Lascialo scollegato per riutilizzare il condizionamento positivo modificato sull'output `negative`. | CONDITIONING | No | - |
+| `vae` | Il VAE utilizzato per codificare le immagini di riferimento collegate. Necessario ogni volta che è collegata almeno un'immagine; in caso contrario, il nodo genera un errore. | VAE | No | - |
+| `resolution` | Come viene preparata ogni immagine di riferimento prima della codifica. `"keep resolution"` la codifica alle dimensioni in ingresso; `"resize"` la ridimensiona a un numero target di megapixel preservando le proporzioni, il che fa comparire `megapixels`. (predefinito: "keep resolution") | DYNAMIC_COMBO | Sì | `"keep resolution"`<br>`"resize"` |
+| `images` | Slot espandibile: collega una o più immagini di riferimento (`image_1`, `image_2`, ...) da usare come riferimenti. Le immagini vengono codificate nell'ordine degli slot e aggiunte al condizionamento in quell'ordine. | IMAGE | No | Da 1 a 100 |
+
+### Input di ridimensionamento
+
+Queste opzioni compaiono quando `resolution` è impostato su `"resize"`.
+
+| Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
+| --- | --- | --- | --- | --- |
+| `megapixels` | Dimensione target di ogni immagine di riferimento, preservando le proporzioni. 1.0 corrisponde a circa 1024 x 1024 pixel. (predefinito: 1.0) | FLOAT | Sì | Da 0.01 a 16.0 |
+
+## Output
+
+| Nome output | Descrizione | Tipo di dato |
+| --- | --- | --- |
+| `positive` | Il condizionamento positivo con i latent di riferimento codificati aggiunti. | CONDITIONING |
+| `negative` | Il condizionamento negativo con gli stessi latent di riferimento aggiunti. Restituisce l'output positivo quando non è collegato alcun condizionamento negativo. | CONDITIONING |
+| `empty_latent` | Il primo latent di riferimento moltiplicato per 0.0, pronto per inizializzare un sampler. Vuoto quando non è collegata alcuna immagine di riferimento. | LATENT |
+
+## Note
+
+- I latent vengono aggiunti anziché sostituiti, quindi concatenando diversi nodi Set Reference Multi Latent si accumulano riferimenti.
+- Ogni immagine collegata viene codificata singolarmente, quindi le immagini di riferimento non devono avere le stesse dimensioni.
+- Senza alcuna immagine collegata, `positive` e `negative` vengono restituiti invariati e `empty_latent` è vuoto.
+
+> Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceMultiLatent/it.md)
+
+---
+**Source fingerprint (SHA-256):** `7416feb8ac81cbf7e2d424e0212e88ab60235958c64550b0ee8c303093673756`
