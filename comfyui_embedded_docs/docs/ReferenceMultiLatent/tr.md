@@ -28,13 +28,13 @@ Bu seçenekler `resolution` `"resize"` olarak ayarlandığında görünür.
 | --- | --- | --- |
 | `positive` | Kodlanan referans latentlerinin eklendiği pozitif koşullandırma. | CONDITIONING |
 | `negative` | Aynı referans latentlerinin eklendiği negatif koşullandırma. Hiçbir negatif koşullandırma bağlı olmadığında pozitif çıktıyı döndürür. | CONDITIONING |
-| `empty_latent` | Bir örnekleyiciyi başlatmaya hazır, 0.0 ile çarpılmış ilk referans latenti. Hiçbir referans görüntü bağlı olmadığında boştur. | LATENT |
+| `empty_latent` | Bir örnekleyiciyi başlatmaya hazır, 0.0 ile çarpılmış ilk referans latenti. Hiçbir referans latenti üretilmediğinde, seçilen çözünürlükte kare bir boş latent döndürülür. | LATENT |
 
 ## Notlar
 
 - Latentler değiştirilmek yerine eklenir; bu nedenle birkaç Set Reference Multi Latent düğümünü zincirlemek referansları biriktirir.
 - Bağlı her görüntü kendi başına kodlanır; bu nedenle referans görüntülerin aynı boyutta olması gerekmez.
-- Hiçbir görüntü bağlı olmadığında `positive` ve `negative` değiştirilmeden döndürülür ve `empty_latent` boş olur.
+- Bir VAE bağlı değilse ya da hiçbir görüntü bağlı değilse, `positive` ve `negative` değiştirilmeden döndürülür ve `empty_latent` kare bir boş latenttir: 1024 x 1024 veya `resolution` `"resize"` olduğunda `megapixels` değerinden hesaplanan boyut.
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceMultiLatent/tr.md)
 

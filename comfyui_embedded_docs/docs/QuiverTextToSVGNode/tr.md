@@ -2,7 +2,7 @@
 
 Quiver Text to SVG düğümü, Quiver AI'nin modellerini kullanarak bir metin açıklamasından Ölçeklenebilir Vektör Grafiği (SVG) görüntüsü oluşturur. Oluşturma sürecine yön vermek için isteğe bağlı olarak referans görüntüler ve stil talimatları sağlayabilirsiniz.
 
-**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir. Quiver, Arrow 1 serisi modellerini 16 Ekim 2026 tarihinde kullanımdan kaldırıyor; bu tarihten sonra `arrow-1.1`, `arrow-1.1-max` ve `arrow-preview` seçenekleri çalışmaz. Bunun yerine `arrow-2` veya `arrow-2-telos` kullanın.
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
 
 ## Girdiler
 
@@ -11,7 +11,7 @@ Quiver Text to SVG düğümü, Quiver AI'nin modellerini kullanarak bir metin a�
 | `prompt` | İstenen SVG çıktısının metin açıklaması. Oluşturulacak şey için ana talimattır. | STRING | Evet | N/A |
 | `instructions` | Ek stil veya biçimlendirme rehberliği. Bu isteğe bağlı, gelişmiş bir parametredir. | STRING | Hayır | N/A |
 | `reference_images` | Oluşturmaya yön vermek için en fazla 4 referans görüntü. Bu isteğe bağlı bir girdidir. | IMAGE | Hayır | 0 - 4 görüntü |
-| `model` | SVG oluşturmak için kullanılacak model. Bir model seçildiğinde, o modele özgü ek parametreler görünür: `temperature`, `top_p` ve `presence_penalty`. | DYNAMIC_COMBO | Evet | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `model` | SVG oluşturmak için kullanılacak model. Bir model seçildiğinde, o modele özgü ek parametreler görünür: `temperature`, `top_p` ve `presence_penalty`. | DYNAMIC_COMBO | Evet | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `seed` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir. Varsayılan: 0. | INT | Evet | 0 ile 2147483647 arası |
 | `reasoning_effort` | Modelin çizim yapmadan önce ne kadar akıl yürütmeye harcadığı. Daha yüksek seviyeler ayrıntıyı iyileştirir ve daha fazla token maliyeti doğurur. Yalnızca Arrow 2 modelleri tarafından kullanılır (varsayılan: "high"). | COMBO | Hayır | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
 
@@ -27,4 +27,4 @@ Quiver Text to SVG düğümü, Quiver AI'nin modellerini kullanarak bir metin a�
 
 ---
 ---
-**Source fingerprint (SHA-256):** `e03e130a4aedbf003e898300b3a83e343fdfa5b3da35df20d55876d437bf5426`
+**Source fingerprint (SHA-256):** `9c85e3be6047e8621f4682aee2be43eee7d6a93d2851ef99ce7adb5ead1fec5e`

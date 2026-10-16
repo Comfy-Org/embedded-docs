@@ -2,9 +2,7 @@
 
 Quiver AI ile bir metin isteminden ölçeklenebilir vektör grafiği (SVG) oluşturun. İsteğe bağlı referans görüntüleri ve stil talimatları üretimi yönlendirebilir.
 
-**Not:** Quiver, Arrow 1 serisi modellerini 16 Ekim 2026 tarihinde kullanımdan kaldırıyor; bu tarihten sonra `arrow-1.1`, `arrow-1.1-max` ve `arrow-preview` seçenekleri çalışmaz. Bunun yerine `arrow-2` veya `arrow-2-telos` kullanın.
-
-Bir `model` seçmek, aşağıda listelenen modele özgü parametreleri ortaya çıkarır ve maksimum referans görüntü sayısı da seçilen modele bağlıdır.
+Bir `model` seçmek, aşağıda listelenen modele özgü parametreleri ortaya çıkarır.
 
 ## Girdiler
 
@@ -12,10 +10,10 @@ Bir `model` seçmek, aşağıda listelenen modele özgü parametreleri ortaya ç
 
 | Parametre | Açıklama | Veri Tipi | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | SVG oluşturmak için kullanılacak model. | DYNAMIC_COMBO | Evet | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `model` | SVG oluşturmak için kullanılacak model. | DYNAMIC_COMBO | Evet | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `prompt` | İstenen SVG çıktısının metin açıklaması. En az bir karakter içermelidir (varsayılan: boş). | STRING | Evet | Herhangi bir metin |
 | `instructions` | Ek stil veya biçimlendirme yönlendirmesi. İsteğe bağlı gelişmiş parametre (varsayılan: boş). | STRING | Hayır | Herhangi bir metin |
-| `reference_images` | Büyütülebilir yuva: üretimi yönlendiren bir veya daha fazla isteğe bağlı referans görüntüsünü (`ref_1`, `ref_2`, ...) bağlayın. Maksimum görüntü sayısı seçilen modele bağlıdır. | IMAGE | Hayır | En fazla 14<br>En fazla 4 |
+| `reference_images` | Büyütülebilir yuva: üretimi yönlendiren bir veya daha fazla isteğe bağlı referans görüntüsünü (`ref_1`, `ref_2`, ...) bağlayın. Maksimum görüntü sayısı 14'tür. | IMAGE | Hayır | En fazla 14 |
 | `width` | Çıktı SVG tuvalinin (viewBox) genişliği, kullanıcı birimleri cinsinden. Çıktı boyutunu ve en-boy oranını kontrol etmek için hem `width` hem de `height` değerini ayarlayın; modelin seçmesine izin vermek için herhangi birini 0 bırakın; bu genellikle kare bir tuval verir. Gelişmiş parametre (varsayılan: 0). | INT | Evet | 0 - 8192 |
 | `height` | Çıktı SVG tuvalinin (viewBox) yüksekliği, kullanıcı birimleri cinsinden. Çıktı boyutunu ve en-boy oranını kontrol etmek için hem `width` hem de `height` değerini ayarlayın; modelin seçmesine izin vermek için herhangi birini 0 bırakın; bu genellikle kare bir tuval verir. Gelişmiş parametre (varsayılan: 0). | INT | Evet | 0 - 8192 |
 | `seed` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirlemek için kullanılan tohum; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir. Bu parametre "üretim sonrası kontrol" işlevine sahiptir (varsayılan: 42). | INT | Evet | 0 - 2147483647 |
@@ -29,7 +27,7 @@ Bir `model` seçmek, aşağıda listelenen modele özgü parametreleri ortaya ç
 | `top_p` | Nucleus örnekleme parametresi. `"arrow-2-telos"` modeli tarafından kullanılmaz. Gelişmiş parametre (varsayılan: 1.0). | FLOAT | Evet | 0.05 - 1.0 (adım 0.05) |
 | `presence_penalty` | Token varlık cezası. `"arrow-2-telos"` modeli tarafından kullanılmaz. Gelişmiş parametre (varsayılan: 0.0). | FLOAT | Evet | -2.0 - 2.0 (adım 0.1) |
 
-**Not:** `reference_images` için maksimum sayı `"arrow-2"`, `"arrow-2-telos"` ve `"arrow-1.1-max"` modellerinde 14, `"arrow-1.1"` ve `"arrow-preview"` modellerinde 4'tür. Tuval boyutunu modelin seçmesine izin vermek için `width` veya `height` değerini 0 bırakın.
+**Not:** `reference_images` için maksimum sayı 14'tür. Tuval boyutunu modelin seçmesine izin vermek için `width` veya `height` değerini 0 bırakın.
 
 ## Çıktılar
 
@@ -40,4 +38,4 @@ Bir `model` seçmek, aşağıda listelenen modele özgü parametreleri ortaya ç
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverTextToSVGNodeV2/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `809d2e5bd62386723e36b7649af2f8dda40b437dc39bac9236529db5b52d32e9`
+**Source fingerprint (SHA-256):** `a76184592a0c3a24d2758056e0823d8aa8e2684c27659caa2ee1772131cf8d8c`

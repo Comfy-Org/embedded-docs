@@ -2,9 +2,7 @@
 
 Genera un gráfico vectorial escalable (SVG) a partir de un mensaje de texto con Quiver AI. Las imágenes de referencia y las instrucciones de estilo opcionales pueden guiar la generación.
 
-**Nota:** Quiver retira los modelos de la serie Arrow 1 el 16 de octubre de 2026, así que las opciones `arrow-1.1`, `arrow-1.1-max` y `arrow-preview` dejan de funcionar después de esa fecha. Utiliza en su lugar `arrow-2` o `arrow-2-telos`.
-
-Al seleccionar un `model` se muestran los parámetros específicos del modelo que se enumeran a continuación, y el número máximo de imágenes de referencia también depende del modelo seleccionado.
+Al seleccionar un `model` se muestran los parámetros específicos del modelo que se enumeran a continuación.
 
 ## Entradas
 
@@ -12,10 +10,10 @@ Al seleccionar un `model` se muestran los parámetros específicos del modelo qu
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Modelo que se utilizará para la generación de SVG. | DYNAMIC_COMBO | Sí | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `modelo` | Modelo que se utilizará para la generación de SVG. | DYNAMIC_COMBO | Sí | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `prompt` | Descripción textual de la salida SVG deseada. Debe contener al menos un carácter (predeterminado: vacío). | STRING | Sí | Cualquier texto |
 | `instructions` | Instrucciones adicionales de estilo o formato. Parámetro avanzado opcional (predeterminado: vacío). | STRING | No | Cualquier texto |
-| `reference_images` | Ranura ampliable: conecta una o más imágenes de referencia opcionales (`ref_1`, `ref_2`, ...) que guían la generación. El número máximo de imágenes depende del modelo seleccionado. | IMAGE | No | Hasta 14<br>Hasta 4 |
+| `reference_images` | Ranura ampliable: conecta una o más imágenes de referencia opcionales (`ref_1`, `ref_2`, ...) que guían la generación. El número máximo de imágenes es 14. | IMAGE | No | Hasta 14 |
 | `width` | Ancho del lienzo SVG de salida (viewBox), en unidades de usuario. Establece tanto `width` como `height` para controlar el tamaño de salida y la relación de aspecto; deja cualquiera de los dos en 0 para que el modelo elija, lo que normalmente da un lienzo cuadrado. Parámetro avanzado (predeterminado: 0). | INT | Sí | 0 a 8192 |
 | `height` | Alto del lienzo SVG de salida (viewBox), en unidades de usuario. Establece tanto `width` como `height` para controlar el tamaño de salida y la relación de aspecto; deja cualquiera de los dos en 0 para que el modelo elija, lo que normalmente da un lienzo cuadrado. Parámetro avanzado (predeterminado: 0). | INT | Sí | 0 a 8192 |
 | `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente del valor de la semilla. Este parámetro tiene la funcionalidad de "control después de generar" (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
@@ -29,7 +27,7 @@ Al seleccionar un `model` se muestran los parámetros específicos del modelo qu
 | `top_p` | Parámetro de muestreo de núcleo. No lo usa el modelo `"arrow-2-telos"`. Parámetro avanzado (predeterminado: 1.0). | FLOAT | Sí | 0.05 a 1.0 (paso 0.05) |
 | `presence_penalty` | Penalización por presencia de tokens. No lo usa el modelo `"arrow-2-telos"`. Parámetro avanzado (predeterminado: 0.0). | FLOAT | Sí | -2.0 a 2.0 (paso 0.1) |
 
-**Nota:** El número máximo de `reference_images` es 14 para `"arrow-2"`, `"arrow-2-telos"` y `"arrow-1.1-max"`, y 4 para `"arrow-1.1"` y `"arrow-preview"`. Deja `width` o `height` en 0 para que el modelo elija el tamaño del lienzo.
+**Nota:** El número máximo de `reference_images` es 14. Deja `width` o `height` en 0 para que el modelo elija el tamaño del lienzo.
 
 ## Salidas
 
@@ -40,4 +38,4 @@ Al seleccionar un `model` se muestran los parámetros específicos del modelo qu
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverTextToSVGNodeV2/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `809d2e5bd62386723e36b7649af2f8dda40b437dc39bac9236529db5b52d32e9`
+**Source fingerprint (SHA-256):** `a76184592a0c3a24d2758056e0823d8aa8e2684c27659caa2ee1772131cf8d8c`

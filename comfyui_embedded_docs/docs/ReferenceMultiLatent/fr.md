@@ -28,13 +28,13 @@ Ces options apparaissent lorsque `resolution` est défini sur `"resize"`.
 | --- | --- | --- |
 | `positive` | Le conditionnement positif avec les latents de référence encodés ajoutés. | CONDITIONING |
 | `negative` | Le conditionnement négatif avec les mêmes latents de référence ajoutés. Renvoie la sortie positive lorsqu’aucun conditionnement négatif n’est connecté. | CONDITIONING |
-| `empty_latent` | Le premier latent de référence multiplié par 0.0, prêt à amorcer un sampler. Vide lorsqu’aucune image de référence n’est connectée. | LATENT |
+| `empty_latent` | Le premier latent de référence multiplié par 0.0, prêt à amorcer un sampler. Lorsqu’aucun latent de référence n’est produit, un latent vide carré à la résolution sélectionnée est renvoyé à la place. | LATENT |
 
 ## Remarques
 
 - Les latents sont ajoutés plutôt que remplacés ; enchaîner plusieurs nœuds Set Reference Multi Latent accumule donc les références.
 - Chaque image connectée est encodée séparément ; les images de référence n’ont donc pas besoin d’avoir la même taille.
-- Sans aucune image connectée, `positive` et `negative` sont renvoyés inchangés et `empty_latent` est vide.
+- Sans VAE connecté ou sans aucune image connectée, `positive` et `negative` sont renvoyés inchangés et `empty_latent` est un latent vide carré : 1024 x 1024, ou dimensionné à partir de `megapixels` lorsque `resolution` vaut `"resize"`.
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceMultiLatent/fr.md)
 

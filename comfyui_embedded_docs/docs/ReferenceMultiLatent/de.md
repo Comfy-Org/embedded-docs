@@ -28,13 +28,13 @@ Diese Optionen erscheinen, wenn `resolution` auf `"resize"` gesetzt ist.
 | --- | --- | --- |
 | `positive` | Die positive Konditionierung mit den angehängten kodierten Referenz-Latents. | CONDITIONING |
 | `negative` | Die negative Konditionierung mit denselben angehängten Referenz-Latents. Gibt die Ausgabe `positive` zurück, wenn keine negative Konditionierung verbunden ist. | CONDITIONING |
-| `empty_latent` | Das erste Referenz-Latent multipliziert mit 0.0, bereit zum Initialisieren eines Samplers. Leer, wenn kein Referenzbild verbunden ist. | LATENT |
+| `empty_latent` | Das erste Referenz-Latent multipliziert mit 0.0, bereit zum Initialisieren eines Samplers. Wenn kein Referenz-Latent erzeugt wird, wird stattdessen ein quadratisches leeres Latent in der ausgewählten Auflösung zurückgegeben. | LATENT |
 
 ## Hinweise
 
 - Die Latents werden angehängt statt ersetzt, sodass das Verketten mehrerer Knoten des Typs Set Reference Multi Latent Referenzen ansammelt.
 - Jedes verbundene Bild wird separat kodiert, daher müssen die Referenzbilder nicht dieselbe Größe haben.
-- Ohne verbundenes Bild werden `positive` und `negative` unverändert zurückgegeben und `empty_latent` ist leer.
+- Ohne verbundenes VAE oder ohne verbundenes Bild werden `positive` und `negative` unverändert zurückgegeben und `empty_latent` ist ein quadratisches leeres Latent: 1024 x 1024, oder die aus `megapixels` berechnete Größe, wenn `resolution` `"resize"` ist.
 
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceMultiLatent/de.md)
 

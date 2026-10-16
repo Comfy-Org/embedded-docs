@@ -2,7 +2,7 @@
 
 Ce nœud convertit une image matricielle en une image vectorielle SVG à l'aide des modèles de vectorisation de Quiver AI. Il envoie l'image à une API externe qui la traite et renvoie le résultat vectorisé.
 
-**Remarque :** Ce nœud est marqué comme obsolète dans le code source. Quiver retire les modèles de la série Arrow 1 le 16 octobre 2026 ; les options `arrow-1.1`, `arrow-1.1-max` et `arrow-preview` cessent donc de fonctionner après cette date. Utilisez plutôt `arrow-2` ou `arrow-2-telos`.
+**Remarque :** Ce nœud est marqué comme obsolète dans le code source.
 
 ## Entrées
 
@@ -10,7 +10,7 @@ Ce nœud convertit une image matricielle en une image vectorielle SVG à l'aide 
 |-----------|-------------|-----------------|--------|-------|
 | `image` | Image d'entrée à vectoriser. | IMAGE | Oui | N/A |
 | `auto_crop` | Recadre automatiquement sur le sujet dominant (par défaut : False). | BOOLEAN | Oui | True<br>False |
-| `model` | Modèle à utiliser pour la vectorisation SVG. La sélection d'un modèle révèle des paramètres supplémentaires propres à ce modèle : `target_size` (cible de redimensionnement carrée en pixels ; 0 conserve la taille de l'image source, sinon 128 à 4096), `temperature`, `top_p` et `presence_penalty`. | DYNAMIC_COMBO | Oui | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `model` | Modèle à utiliser pour la vectorisation SVG. La sélection d'un modèle révèle des paramètres supplémentaires propres à ce modèle : `target_size` (cible de redimensionnement carrée en pixels ; 0 conserve la taille de l'image source, sinon 128 à 4096), `temperature`, `top_p` et `presence_penalty`. | DYNAMIC_COMBO | Oui | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `seed` | Graine servant à déterminer si le nœud doit se réexécuter ; les résultats réels sont non déterministes quelle que soit la valeur de la graine. Ce paramètre dispose de la fonctionnalité « contrôle après génération » (par défaut : 0). | INT | Oui | 0 à 2147483647 |
 | `effort de raisonnement` | Quantité de raisonnement que le modèle consacre avant de dessiner. Des niveaux plus élevés améliorent les détails et consomment plus de tokens. Utilisé uniquement par les modèles Arrow 2 (par défaut : "high"). | COMBO | Non | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
 
@@ -24,4 +24,4 @@ Ce nœud convertit une image matricielle en une image vectorielle SVG à l'aide 
 
 ---
 ---
-**Source fingerprint (SHA-256):** `3f5b97794fa4c2e87d954d98f966d4ef0fddd1c3b1054fba552e282d6ac21c83`
+**Source fingerprint (SHA-256):** `196b0693328478bff21b11da87c52608e8bb57abb9bf482052782231f6d81c30`

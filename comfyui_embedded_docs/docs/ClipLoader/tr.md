@@ -7,7 +7,7 @@ CLIPLoader düğümü, bir metin kodlayıcı modelini (CLIP, T5 veya benzeri) bi
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|---------|--------|
 | `clip_adı` | Yüklenecek metin kodlayıcı modelinin dosya adı. Bu, `ComfyUI/models/text_encoders/` dizininde bulunan bir dosya olmalıdır. | STRING | Evet | `text_encoders` klasöründe bulunan dosyaların listesi |
-| `tür` | Yüklenen modelin mimari türü. Kullanılacak belirli kodlayıcı varyantını belirler (varsayılan: `"stable_diffusion"`). | COMBO | Evet | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"` |
+| `tür` | Yüklenen modelin mimari türü. Kullanılacak belirli kodlayıcı varyantını belirler (varsayılan: `"stable_diffusion"`). | COMBO | Evet | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"` |
 | `cihaz` | Modelin yükleneceği aygıt. `"default"` varsa GPU'yu kullanır, `"cpu"` ise CPU'da yüklemeye zorlar. Bu gelişmiş bir seçenektir (varsayılan: `"default"`). | COMBO | Hayır | `"default"`<br>`"cpu"` |
 
 ### Desteklenen Tür-Kodlayıcı Eşlemeleri
@@ -31,6 +31,7 @@ CLIPLoader düğümü, bir metin kodlayıcı modelini (CLIP, T5 veya benzeri) bi
 | lens | gpt-oss-20b |
 | pixeldit | gemma 2 2B elm |
 | minimax | MiniMax H3 Qwen3-VL veya Music3 Qwen/RVQ |
+| flux3 | qwen3-vl 4B |
 
 ## Çıktılar
 
@@ -41,4 +42,4 @@ CLIPLoader düğümü, bir metin kodlayıcı modelini (CLIP, T5 veya benzeri) bi
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipLoader/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `4a410c9d0d06d9d9bfee263eaa10d72ede59c22899f104592f3baf75cd6ced98`
+**Source fingerprint (SHA-256):** `3abcb39dd6ce4935f51127d4d38a8474ecf80a4df70d702f3eea68d400be91a5`

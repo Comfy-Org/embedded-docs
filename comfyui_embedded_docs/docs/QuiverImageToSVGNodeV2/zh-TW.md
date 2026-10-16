@@ -2,8 +2,6 @@
 
 使用 Quiver AI 將點陣影像向量化為可縮放向量圖形（SVG）。影像會傳送至 Quiver AI 的 API，並傳回向量化結果。
 
-**注意：** Quiver 將於 2026 年 10 月 16 日停用 Arrow 1 系列模型，因此 `arrow-1.1`、`arrow-1.1-max` 和 `arrow-preview` 選項在該日期之後將停止運作。請改用 `arrow-2` 或 `arrow-2-telos`。
-
 選擇 `model` 會顯示下列模型專用參數。
 
 ## 輸入
@@ -12,7 +10,7 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用於 SVG 向量化的模型。 | DYNAMIC_COMBO | 是 | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `模型` | 用於 SVG 向量化的模型。 | DYNAMIC_COMBO | 是 | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `image` | 要向量化的輸入影像。 | IMAGE | 是 | N/A |
 | `auto_crop` | 自動裁切至主要主體。進階參數（預設：False）。 | BOOLEAN | 是 | `True`<br>`False` |
 | `target_size` | 在向量化前對輸入影像套用的正方形縮放，單位為像素。0 會保留來源尺寸，這比強制縮放更能乾淨地向量化；任何其他低於 128 的值都會被限制為 128。這不會設定輸出畫布；請使用 `width` 和 `height` 來設定。進階參數（預設：0）。 | INT | 是 | 0 至 4096 |
@@ -40,4 +38,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverImageToSVGNodeV2/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `186769b09bef2d2dbbfc26102f375ff80f8b324a24cd593da20afcea9cc2095b`
+**Source fingerprint (SHA-256):** `3531975fd46f5514e6d13b73bbbda413b7a08d8e36afeea73945ae7ea68d7216`

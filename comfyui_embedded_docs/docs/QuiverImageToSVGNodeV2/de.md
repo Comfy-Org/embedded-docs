@@ -2,8 +2,6 @@
 
 Vektorisieren Sie ein Rasterbild mit Quiver AI in eine skalierbare Vektorgrafik (SVG). Das Bild wird an die API von Quiver AI gesendet, die das vektorisierte Ergebnis zurückgibt.
 
-**Hinweis:** Quiver stellt die Modelle der Arrow 1-Serie am 16. Oktober 2026 ein; danach funktionieren die Optionen `arrow-1.1`, `arrow-1.1-max` und `arrow-preview` nicht mehr. Verwenden Sie stattdessen `arrow-2` oder `arrow-2-telos`.
-
 Wenn Sie ein `model` auswählen, werden die unten aufgeführten modellspezifischen Parameter angezeigt.
 
 ## Eingaben
@@ -12,7 +10,7 @@ Wenn Sie ein `model` auswählen, werden die unten aufgeführten modellspezifisch
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modell, das für die SVG-Vektorisierung verwendet werden soll. | DYNAMIC_COMBO | Ja | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `Modell` | Modell, das für die SVG-Vektorisierung verwendet werden soll. | DYNAMIC_COMBO | Ja | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `image` | Eingabebild, das vektorisiert werden soll. | IMAGE | Ja | N/A |
 | `auto_crop` | Schneidet automatisch auf das dominante Motiv zu. Erweiterter Parameter (Standard: False). | BOOLEAN | Ja | `True`<br>`False` |
 | `target_size` | Quadratische Größenänderung, die vor dem Vektorisieren auf das Eingabebild angewendet wird, in Pixeln. 0 behält die Quellgröße bei, was sauberer vektorisiert als ein erzwungenes Resize; jeder andere Wert unter 128 wird auf 128 begrenzt. Dies legt nicht den Ausgabe-Canvas fest; verwenden Sie dafür `width` und `height`. Erweiterter Parameter (Standard: 0). | INT | Ja | 0 bis 4096 |
@@ -40,4 +38,4 @@ Wenn Sie ein `model` auswählen, werden die unten aufgeführten modellspezifisch
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverImageToSVGNodeV2/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `186769b09bef2d2dbbfc26102f375ff80f8b324a24cd593da20afcea9cc2095b`
+**Source fingerprint (SHA-256):** `3531975fd46f5514e6d13b73bbbda413b7a08d8e36afeea73945ae7ea68d7216`

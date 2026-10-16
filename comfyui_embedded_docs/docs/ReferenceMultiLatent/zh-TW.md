@@ -28,13 +28,13 @@
 | --- | --- | --- |
 | `positive` | 已附加編碼後參考 latent 的正向 conditioning。 | CONDITIONING |
 | `negative` | 已附加相同參考 latent 的負向 conditioning。若未連接任何負向 conditioning，則傳回正向輸出。 | CONDITIONING |
-| `empty_latent` | 第一張參考 latent 乘以 0.0，可用於初始化 sampler。若未連接任何參考影像，則為空。 | LATENT |
+| `empty_latent` | 第一張參考 latent 乘以 0.0，可用於初始化 sampler。若未產生任何參考 latent，則改為傳回依所選解析度產生的正方形空 latent。 | LATENT |
 
 ## 備註
 
 - latent 是附加而非取代，因此串接多個 Set Reference Multi Latent 節點會累積參考。
 - 每張連接的影像會個別編碼，因此參考影像不必共用相同尺寸。
-- 若未連接任何影像，`positive` 與 `negative` 會原樣傳回，且 `empty_latent` 為空。
+- 若未連接 VAE 或未連接任何影像，`positive` 與 `negative` 會原樣傳回，且 `empty_latent` 為正方形空 latent：1024 x 1024，或在 `resolution` 為 `"resize"` 時由 `megapixels` 決定尺寸。
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceMultiLatent/zh-TW.md)
 

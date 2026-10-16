@@ -7,7 +7,7 @@
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
 | `اسم CLIP` | اسم ملف نموذج المُرمِّز النصي المراد تحميله. يجب أن يكون ملفًا موجودًا في المجلد `ComfyUI/models/text_encoders/`. | STRING | نعم | قائمة بالملفات الموجودة في مجلد `text_encoders` |
-| `النوع` | نوع معمارية النموذج الذي يتم تحميله. يحدد هذا أي متغير مُرمِّز محدد يجب استخدامه (الافتراضي: `"stable_diffusion"`). | COMBO | نعم | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"` |
+| `النوع` | نوع معمارية النموذج الذي يتم تحميله. يحدد هذا أي متغير مُرمِّز محدد يجب استخدامه (الافتراضي: `"stable_diffusion"`). | COMBO | نعم | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"` |
 | `الجهاز` | الجهاز الذي سيُحمَّل عليه النموذج. يستخدم `"default"` وحدة معالجة الرسوميات (GPU) إذا كانت متاحة، بينما يفرض `"cpu"` التحميل على المعالج (CPU). هذا خيار متقدم (الافتراضي: `"default"`). | COMBO | لا | `"default"`<br>`"cpu"` |
 
 ### تعيينات النوع إلى المُرمِّز المدعومة
@@ -31,6 +31,7 @@
 | lens | gpt-oss-20b |
 | pixeldit | gemma 2 2B elm |
 | minimax | MiniMax H3 Qwen3-VL or Music3 Qwen/RVQ |
+| flux3 | qwen3-vl 4B |
 
 ## المخرجات
 
@@ -41,4 +42,4 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipLoader/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `4a410c9d0d06d9d9bfee263eaa10d72ede59c22899f104592f3baf75cd6ced98`
+**Source fingerprint (SHA-256):** `3abcb39dd6ce4935f51127d4d38a8474ecf80a4df70d702f3eea68d400be91a5`
