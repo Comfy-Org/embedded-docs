@@ -803,11 +803,21 @@ _MIN_DESCRIPTION_CHARS = 40
 # keeps it out of the meta description, where it used to become the whole value.
 DISCLAIMER_LINE = re.compile(
     r"^(?:>\s*)?(?:"
-    r"this (?:document|documentation|page) (?:was|is) (?:generated|created|written)"
-    r"|this doc was (?:generated|created)"
-    r"|此文档由\s*ai|本文档由\s*ai|本页由\s*ai|本文由\s*ai"
+    r"此文档由\s*ai|本文档由\s*ai|本页由\s*ai|本文由\s*ai"
     r"|このドキュメントは\s*ai"
     r"|이 문서는\s*ai"
+    r")",
+    re.I,
+)
+# English disclaimer wording, e.g. "This document is AI-generated", "This
+# document was generated with AI", "... was created by AI". The AI/generation
+# pair is mandatory so ordinary prose ("This document was written to explain
+# the node") is not discarded as a disclaimer.
+_EN_AI_DISCLAIMER = re.compile(
+    r"^(?:>\s*)?this (?:document|documentation|doc|page)\b[^.\n]{0,40}?(?:"
+    r"\bai[- ]generated\b"
+    r"|\bai\b[^.\n]{0,20}\b(?:generated|created|written|produced|translated)\b"
+    r"|\b(?:generated|created|written|produced|translated)\b[^.\n]{0,20}\bai\b"
     r")",
     re.I,
 )
@@ -962,7 +972,11 @@ def get_description_from_content(content: str) -> str:
         # Skip Markdown images and table rows — they are not prose
         if line_stripped.startswith("![") or line_stripped.startswith("|"):
             continue
-        if DISCLAIMER_LINE.match(line_stripped) or _BLOCKQUOTE_AI_DISCLAIMER.match(line_stripped):
+        if (
+            DISCLAIMER_LINE.match(line_stripped)
+            or _EN_AI_DISCLAIMER.match(line_stripped)
+            or _BLOCKQUOTE_AI_DISCLAIMER.match(line_stripped)
+        ):
             continue
         first_para.append(line_stripped)
     paragraph = " ".join(first_para) if first_para else ""

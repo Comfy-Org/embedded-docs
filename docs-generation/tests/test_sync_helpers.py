@@ -155,6 +155,25 @@ class DescriptionExtractionTests(unittest.TestCase):
         content = "This node applies AI-generated textures to an existing 3D model."
         self.assertEqual(sc.get_description_from_content(content), content)
 
+    def test_english_plain_paragraph_disclaimer_is_skipped(self):
+        for opening in (
+            "This document is AI-generated.",
+            "This page was generated with AI assistance.",
+            "This documentation was created by AI.",
+        ):
+            with self.subTest(opening=opening):
+                content = f"{opening}\n\nThe node converts text between cases and supports four modes."
+                self.assertTrue(sc.get_description_from_content(content).startswith("The node converts"))
+
+    def test_prose_starting_with_this_document_is_not_a_disclaimer(self):
+        # "This document was written to explain the node" carries no AI wording
+        # and must stay the description instead of being discarded.
+        content = (
+            "This document was written to explain the node, its inputs and its outputs "
+            "in enough detail for a first-time user."
+        )
+        self.assertEqual(sc.get_description_from_content(content), content)
+
     def test_overview_written_under_an_h2_is_used(self):
         # 30 nodes put the overview under "## 概述"/"## 개요"/"## 概要" instead of
         # directly under the H1; the extractor used to stop at the heading and
