@@ -126,6 +126,35 @@ class DescriptionExtractionTests(unittest.TestCase):
             sc.get_description_from_content(content), "이 노드는 이미지의 밝기를 조정합니다."
         )
 
+    def test_japanese_plain_paragraph_disclaimer_is_skipped(self):
+        # ja pages open with the disclaimer as a plain paragraph, not a
+        # blockquote, so it used to become the whole meta description (and the
+        # "edit on GitHub" link after it grew into the 160-char window).
+        content = (
+            "# ケースコンバーター\n\n"
+            "このドキュメントはAIによって生成されました。誤りを見つけた場合や改善の提案がある場合は、"
+            "ぜひご協力ください！[GitHubで編集する](https://github.com/Comfy-Org/embedded-docs/blob/main/en.md)\n\n"
+            "Case Converterノードは、テキスト文字列を異なる文字ケース形式に変換します。\n"
+        )
+        desc = sc.get_description_from_content(content)
+        self.assertTrue(desc.startswith("Case Converterノードは"))
+        self.assertNotIn("AI", desc)
+        self.assertNotIn("github.com", desc)
+
+    def test_chinese_plain_paragraph_disclaimer_is_skipped(self):
+        content = (
+            "此文档由AI生成。如发现任何错误或有改进建议，欢迎贡献！"
+            "[在GitHub上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/en.md)\n\n"
+            "此节点把文本转换为指定的大小写格式，支持四种转换模式。\n"
+        )
+        desc = sc.get_description_from_content(content)
+        self.assertTrue(desc.startswith("此节点把文本转换为"))
+
+    def test_plain_ai_generated_overview_is_not_skipped(self):
+        # A real overview may legitimately mention AI-generated content.
+        content = "This node applies AI-generated textures to an existing 3D model."
+        self.assertEqual(sc.get_description_from_content(content), content)
+
     def test_truncation_keeps_versions_intact(self):
         # A period inside "2.5" is not a sentence ender, even when the text is
         # long enough to be truncated.

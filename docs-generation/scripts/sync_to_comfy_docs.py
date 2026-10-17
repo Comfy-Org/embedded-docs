@@ -796,6 +796,25 @@ def _migrate_toplevel_groups_to_wrapper(pages: list[Any], wrapper_label: str) ->
 # description; the generated frontmatter uses the same window.
 MAX_DESCRIPTION_CHARS = 160
 _MIN_DESCRIPTION_CHARS = 40
+
+# The AI-generated disclaimer opens many localized pages as a plain paragraph
+# (ja/zh) instead of a blockquote, and it is followed on the same line by the
+# "edit on GitHub" link. Matching the opening wording in every shipped language
+# keeps it out of the meta description, where it used to become the whole value.
+DISCLAIMER_LINE = re.compile(
+    r"^(?:>\s*)?(?:"
+    r"this (?:document|documentation|page) (?:was|is) (?:generated|created|written)"
+    r"|this doc was (?:generated|created)"
+    r"|此文档由\s*ai|本文档由\s*ai|本页由\s*ai|本文由\s*ai"
+    r"|このドキュメントは\s*ai"
+    r"|이 문서는\s*ai"
+    r")",
+    re.I,
+)
+# Older pages carry the disclaimer as a blockquote with varied wording.
+_BLOCKQUOTE_AI_DISCLAIMER = re.compile(
+    r"^>\s*.*(?:AI-generated|AI 生成|AI によって生成|AI에 의해 생성|AI가 생성)"
+)
 # Function words a shortened description may not end on, so the cut still
 # reads as a whole phrase.
 _DANGLING_WORDS = frozenset(
@@ -918,13 +937,7 @@ def get_description_from_content(content: str) -> str:
         # Skip Markdown images and table rows — they are not prose
         if line_stripped.startswith("![") or line_stripped.startswith("|"):
             continue
-        if line_stripped.startswith("> ") and (
-            "AI-generated" in line_stripped
-            or "AI 生成" in line_stripped
-            or "AI によって生成" in line_stripped
-            or "AI에 의해 생성" in line_stripped
-            or "AI가 생성" in line_stripped
-        ):
+        if DISCLAIMER_LINE.match(line_stripped) or _BLOCKQUOTE_AI_DISCLAIMER.match(line_stripped):
             continue
         first_para.append(line_stripped)
     paragraph = " ".join(first_para) if first_para else ""
