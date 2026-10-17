@@ -857,11 +857,49 @@ def _trim_to_length(text: str, limit: int = MAX_DESCRIPTION_CHARS) -> str:
     return " ".join(words) or text[:limit].strip()
 
 
+def _join_sentences(head: str, tail: str) -> str:
+    """Join two sentences, dropping the space CJK terminators never carry."""
+    if head.endswith(("。", "！", "？")):
+        return head + tail
+    return f"{head} {tail}"
+
+
+def _expand_to_minimum(paragraph: str, sentence: str) -> str:
+    """Grow ``sentence`` with following sentences until it clears the 40-char floor.
+
+    Localized pages often open with a very short sentence ("Adjusts brightness."),
+    which the docs guideline rejects as a meta description. CJK says the same
+    thing in fewer characters, so the floor hits those pages hardest. Appending
+    the next sentence from the same paragraph keeps the description extractive
+    (no invented text) and never exceeds MAX_DESCRIPTION_CHARS.
+    """
+    result = sentence
+    rest = paragraph[len(sentence):].lstrip()
+    while rest and len(result) < _MIN_DESCRIPTION_CHARS:
+        nxt = _first_sentence(rest)
+        if not nxt:
+            break
+        candidate = _join_sentences(result, nxt)
+        if len(candidate) > MAX_DESCRIPTION_CHARS:
+            # The next sentence does not fit whole. Take as much of it as the
+            # window allows (the same word/clause aware cut used for over-long
+            # sentences) instead of dropping back to the short first sentence.
+            trimmed = _trim_to_length(candidate)
+            if len(trimmed) > len(result):
+                result = trimmed
+            break
+        result = candidate
+        rest = rest[len(nxt):].lstrip()
+    return result
+
+
 def get_description_from_content(content: str) -> str:
-    """Extract the first sentence from the first content paragraph.
+    """Extract the opening sentence(s) from the first content paragraph.
 
     Used as the seed for the SEO meta description (see build_seo_description).
-    Skips AI-generated disclaimer blockquote lines and headings.
+    Skips AI-generated disclaimer blockquote lines and headings, and appends
+    the following sentences when the first one is shorter than the 40-char
+    guideline (see _expand_to_minimum).
     """
     lines = content.split("\n")
     first_para: list[str] = []
@@ -892,7 +930,7 @@ def get_description_from_content(content: str) -> str:
     paragraph = " ".join(first_para) if first_para else ""
     if not paragraph:
         return ""
-    return _trim_to_length(_first_sentence(paragraph))
+    return _trim_to_length(_expand_to_minimum(paragraph, _first_sentence(paragraph)))
 
 
 def find_local_asset_refs(content: str, doc_dir: Path) -> list[tuple[str, Path]]:
@@ -1211,7 +1249,10 @@ def sync_node(
         locale_desc = get_description_from_content(content)
         if not locale_desc:
             locale_desc = description_en
-        mdx = build_frontmatter(scanner_name, locale_desc or f"Documentation for {scanner_name} node.") + content
+        # Leave an empty description to build_frontmatter: its templated
+        # fallback clears the 40-char floor, a bare "Documentation for X node."
+        # does not.
+        mdx = build_frontmatter(scanner_name, locale_desc) + content
 
         target_mdx = locale["builtin_dir"] / f"{published}.mdx"
         if not dry_run:

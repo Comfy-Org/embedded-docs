@@ -76,8 +76,17 @@ class DescriptionExtractionTests(unittest.TestCase):
         self.assertTrue(desc.startswith("This is a test e.g."))
 
     def test_cjk_sentence_break(self):
+        # One short sentence stays under the 40-char floor, so the next
+        # sentence from the same paragraph is appended without a space.
         desc = sc.get_description_from_content("这是第一句话。第二句话。")
-        self.assertEqual(desc, "这是第一句话。")
+        self.assertEqual(desc, "这是第一句话。第二句话。")
+
+    def test_cjk_floor_join_does_not_insert_a_space(self):
+        desc = sc.get_description_from_content(
+            "调整图像的亮度。它把每个像素的颜色值乘以系数。结果被限制在 0 到 1 之间，因此高光不会溢出。"
+        )
+        self.assertNotIn("。 ", desc)
+        self.assertGreaterEqual(len(desc), sc._MIN_DESCRIPTION_CHARS)
 
     def test_truncation_stays_within_the_160_char_window(self):
         long = "Word " * 100
@@ -100,13 +109,15 @@ class DescriptionExtractionTests(unittest.TestCase):
     def test_localized_sentence_break_without_ascii_uppercase(self):
         # Korean starts the next sentence with a non-ASCII letter, which the
         # uppercase lookahead never matched: the page fell through to a hard
-        # 180-char cut and lost the summary mid-sentence.
+        # 180-char cut and lost the summary mid-sentence. The short first
+        # sentence is then grown to the 40-char floor, still on a boundary.
         content = (
             "이 노드는 레이턴트를 참조 레이턴트 쪽으로 블렌딩합니다. "
             + "참조가 다른 공간 크기를 가질 경우 크기가 조정됩니다. " * 6
         )
         desc = sc.get_description_from_content(content)
-        self.assertEqual(desc, "이 노드는 레이턴트를 참조 레이턴트 쪽으로 블렌딩합니다.")
+        self.assertTrue(desc.startswith("이 노드는 레이턴트를 참조 레이턴트 쪽으로 블렌딩합니다."))
+        self.assertTrue(desc.endswith("."))
         self.assertLessEqual(len(desc), sc.MAX_DESCRIPTION_CHARS)
 
     def test_korean_disclaimer_is_skipped(self):
@@ -134,8 +145,12 @@ class DescriptionExtractionTests(unittest.TestCase):
 
     def test_earliest_sentence_boundary_wins(self):
         # A localized sentence boundary must not lose to a later English one.
-        content = "첫 번째 문장입니다. 두 번째 문장입니다. Third sentence follows."
-        self.assertEqual(sc.get_description_from_content(content), "첫 번째 문장입니다.")
+        # The first sentence already clears the floor, so it is not grown.
+        first = "첫 번째 문장은 이 노드가 레이턴트를 어떻게 처리하는지 자세히 설명합니다."
+        self.assertEqual(
+            sc.get_description_from_content(f"{first} 두 번째 문장입니다. Third sentence follows."),
+            first,
+        )
 
     def test_limit_inside_a_version_is_not_a_sentence_end(self):
         # The period of "ver2." sits exactly on the limit boundary; the
@@ -144,6 +159,51 @@ class DescriptionExtractionTests(unittest.TestCase):
         desc = sc.get_description_from_content(content)
         self.assertLessEqual(len(desc), sc.MAX_DESCRIPTION_CHARS)
         self.assertFalse(desc.endswith("."))
+
+
+class DescriptionFloorTests(unittest.TestCase):
+    """The generator must not emit descriptions below the 40-char guideline."""
+
+    def test_short_first_sentence_is_grown(self):
+        content = "Adjusts image brightness. It multiplies the colour values by a factor and clamps the result."
+        desc = sc.get_description_from_content(content)
+        self.assertEqual(desc, content)
+        self.assertGreaterEqual(len(desc), sc._MIN_DESCRIPTION_CHARS)
+
+    def test_growth_stops_at_the_paragraph_end(self):
+        # Nothing to append: the description stays short instead of inventing text.
+        content = "Adjusts brightness."
+        desc = sc.get_description_from_content(content)
+        self.assertEqual(desc, "Adjusts brightness.")
+
+    def test_growth_never_exceeds_the_ceiling(self):
+        content = (
+            "Adjusts brightness. "
+            "It multiplies the colour values of every pixel by a per-image factor and clamps "
+            "the result so highlights do not clip, while optional per-channel offsets keep "
+            "neutral greys from drifting between the input and output tensors of the node."
+        )
+        desc = sc.get_description_from_content(content)
+        self.assertLessEqual(len(desc), sc.MAX_DESCRIPTION_CHARS)
+        # Too long to append whole: as much of it as fits is kept, never a
+        # fragment of a word.
+        self.assertGreaterEqual(len(desc), sc._MIN_DESCRIPTION_CHARS)
+        self.assertTrue(desc.startswith("Adjusts brightness."))
+        self.assertFalse(content[len(desc)].isalnum())
+
+    def test_long_first_sentence_is_not_grown(self):
+        content = (
+            "This node blends a latent toward a reference latent and returns the "
+            "operation for the Latent Apply Operation node. Second sentence."
+        )
+        desc = sc.get_description_from_content(content)
+        self.assertEqual(desc, "This node blends a latent toward a reference latent and returns the operation for the Latent Apply Operation node.")
+
+    def test_growth_skips_the_ai_disclaimer(self):
+        content = "> This document was AI-generated.\n\nAdjusts image brightness. It clamps the result to 0-1."
+        desc = sc.get_description_from_content(content)
+        self.assertNotIn("AI-generated", desc)
+        self.assertTrue(desc.startswith("Adjusts image brightness."))
 
 
 class PurgeNavTests(unittest.TestCase):
