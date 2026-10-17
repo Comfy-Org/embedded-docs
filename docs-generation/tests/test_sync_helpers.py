@@ -155,6 +155,31 @@ class DescriptionExtractionTests(unittest.TestCase):
         content = "This node applies AI-generated textures to an existing 3D model."
         self.assertEqual(sc.get_description_from_content(content), content)
 
+    def test_overview_written_under_an_h2_is_used(self):
+        # 30 nodes put the overview under "## 概述"/"## 개요"/"## 概要" instead of
+        # directly under the H1; the extractor used to stop at the heading and
+        # leave the page on the English template fallback.
+        for heading, sentence in (
+            ("## 概述", "这是概述的第一句话。它补充了足够多的细节。"),
+            ("## 概要", "これは概要の最初の文です。十分な詳細を追加します。"),
+            ("## 개요", "이것은 개요의 첫 번째 문장입니다. 충분한 세부 정보를 추가합니다."),
+            ("## Overview", "This is the overview sentence. It adds enough detail to pass."),
+        ):
+            with self.subTest(heading=heading):
+                content = f"# Title\n\n{heading}\n\n{sentence}\n\n## Inputs\n\n| A | B |\n| --- | --- |\n"
+                desc = sc.get_description_from_content(content)
+                self.assertTrue(desc.startswith(sentence.split("。")[0].split(". ")[0][:12]))
+
+    def test_doubled_hash_overview_heading_is_recognised(self):
+        # Historical translation bug: "## ## 概述". Treated as the overview
+        # heading so the page keeps a real description.
+        content = "# 节点\n\n## ## 概述\n\n这个节点把输入的文本转换成不同的大小写形式。\n\n## 输入\n"
+        self.assertTrue(sc.get_description_from_content(content).startswith("这个节点把输入的文本"))
+
+    def test_non_overview_first_section_is_not_used_as_description(self):
+        content = "# Node\n\n## Inputs\n\n| Parameter | Description |\n| --- | --- |\n| `a` | b |\n"
+        self.assertEqual(sc.get_description_from_content(content), "")
+
     def test_truncation_keeps_versions_intact(self):
         # A period inside "2.5" is not a sentence ender, even when the text is
         # long enough to be truncated.

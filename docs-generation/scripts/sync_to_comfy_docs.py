@@ -815,6 +815,26 @@ DISCLAIMER_LINE = re.compile(
 _BLOCKQUOTE_AI_DISCLAIMER = re.compile(
     r"^>\s*.*(?:AI-generated|AI 生成|AI によって生成|AI에 의해 생성|AI가 생성)"
 )
+
+# Section headings that carry the page's overview when it is not written
+# directly under the H1 (30 nodes do this in every language). Only used before
+# any prose has been collected, so a later "## Overview" cannot hijack the text.
+_OVERVIEW_HEADINGS = frozenset(
+    {
+        "overview", "overview:", "description", "function description", "about", "summary",
+        "概述", "概要", "功能描述", "描述", "简介", "说明", "## 概述",
+        "機能説明", "機能概要", "説明",
+        "개요", "기능 설명", "설명",
+        "descripción", "resumen", "aperçu", "description", "überblick", "übersicht",
+        "обзор", "описание", "نظرة عامة", "genel bakış", "visão geral", "مرور کلی",
+    }
+)
+
+
+def _is_overview_heading(line: str) -> bool:
+    """True for an overview-style H2, tolerating doubled hashes from old exports."""
+    text = re.sub(r"^(?:#+\s*)+", "", line.strip()).strip().rstrip(":：").strip().lower()
+    return text in _OVERVIEW_HEADINGS or f"## {text}" in _OVERVIEW_HEADINGS
 # Function words a shortened description may not end on, so the cut still
 # reads as a whole phrase.
 _DANGLING_WORDS = frozenset(
@@ -929,8 +949,13 @@ def get_description_from_content(content: str) -> str:
                 break
             continue
         # H1 (# Title) is the page title — skip it and keep looking for the
-        # first content paragraph. H2+ (## Section) ends the overview.
+        # first content paragraph. An H2 normally ends the overview, but many
+        # localized pages put the overview itself under an H2 ("## 概述",
+        # "## 개요", "## Overview"), so enter that section instead of giving up
+        # and falling back to the English template.
         if line_stripped.startswith("##"):
+            if not first_para and _is_overview_heading(line_stripped):
+                continue
             break
         if line_stripped.startswith("#"):
             continue
