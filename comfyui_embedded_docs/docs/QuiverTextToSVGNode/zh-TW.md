@@ -2,7 +2,7 @@
 
 Quiver Text to SVG 節點使用 Quiver AI 的模型，從文字描述生成可縮放向量圖形 (SVG) 影像。您可以選擇性提供參考影像和風格指示來引導生成過程。
 
-**注意：** 此節點在原始碼中標記為已棄用。 Quiver 將於 2026 年 10 月 16 日停用 Arrow 1 系列模型，因此 `arrow-1.1`、`arrow-1.1-max` 和 `arrow-preview` 選項在該日期之後將停止運作。請改用 `arrow-2` 或 `arrow-2-telos`。
+**注意：** 此節點在原始碼中標記為已棄用。
 
 ## 輸入
 
@@ -11,7 +11,7 @@ Quiver Text to SVG 節點使用 Quiver AI 的模型，從文字描述生成可�
 | `prompt` | 期望 SVG 輸出的文字描述。這是生成內容的主要指示。 | STRING | 是 | N/A |
 | `instructions` | 額外的風格或格式指引。這是選用的進階參數。 | STRING | 否 | N/A |
 | `reference_images` | 最多 4 張參考影像來引導生成。這是選用輸入。 | IMAGE | 否 | 0 至 4 images |
-| `model` | 用於 SVG 生成的模型。選擇模型會顯示該模型專屬的額外參數：`temperature`、`top_p` 和 `presence_penalty`。 | DYNAMIC_COMBO | 是 | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `model` | 用於 SVG 生成的模型。選擇模型會顯示該模型專屬的額外參數：`temperature`、`top_p` 和 `presence_penalty`。 | DYNAMIC_COMBO | 是 | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `seed` | 用來決定節點是否重新執行的種子；無論種子為何，實際結果都是不確定的。預設值：0。 | INT | 是 | 0 至 2147483647 |
 | `推理強度` | 模型在繪製前花費多少推理。較高等級可提升細節，但會消耗更多 token。僅 Arrow 2 模型使用（預設值："high"）。 | COMBO | 否 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
 
@@ -27,4 +27,4 @@ Quiver Text to SVG 節點使用 Quiver AI 的模型，從文字描述生成可�
 
 ---
 ---
-**Source fingerprint (SHA-256):** `e03e130a4aedbf003e898300b3a83e343fdfa5b3da35df20d55876d437bf5426`
+**Source fingerprint (SHA-256):** `9c85e3be6047e8621f4682aee2be43eee7d6a93d2851ef99ce7adb5ead1fec5e`

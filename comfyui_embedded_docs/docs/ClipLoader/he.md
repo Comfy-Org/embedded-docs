@@ -7,7 +7,7 @@
 | פרמטר | תיאור | סוג נתונים | נדרש | טווח |
 |-----------|-------------|-----------|----------|-------|
 | `clip_name` | שם הקובץ של מודל מקודד הטקסט לטעינה. עליו להיות קובץ הנמצא בספרייה `ComfyUI/models/text_encoders/`. | STRING | כן | רשימת קבצים הנמצאים בתיקיית `text_encoders` |
-| `type` | סוג הארכיטקטורה של המודל הנטען. זה קובע איזה וריאנט מקודד ספציפי יש להשתמש בו (ברירת מחדל: `"stable_diffusion"`). | COMBO | כן | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
+| `type` | סוג הארכיטקטורה של המודל הנטען. זה קובע איזה וריאנט מקודד ספציפי יש להשתמש בו (ברירת מחדל: `"stable_diffusion"`). | COMBO | כן | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"` |
 | `device` | ההתקן שעליו לטעון את המודל. `"default"` משתמש ב-GPU אם זמין, בעוד `"cpu"` כופה טעינה על CPU. זוהי אפשרות מתקדמת (ברירת מחדל: `"default"`). | COMBO | לא | `"default"`<br>`"cpu"` |
 
 ### מיפויים נתמכים של סוג למקודד
@@ -31,6 +31,7 @@
 | lens | gpt-oss-20b |
 | pixeldit | gemma 2 2B elm |
 | minimax | MiniMax H3 Qwen3-VL או Music3 Qwen/RVQ |
+| flux3 | qwen3-vl 4B |
 
 ## פלטים
 
@@ -41,4 +42,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipLoader/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `6df608d500520d9414acd82d9fd509b1e211a8385202cefd5579e8a8f397bc64`
+**Source fingerprint (SHA-256):** `3abcb39dd6ce4935f51127d4d38a8474ecf80a4df70d702f3eea68d400be91a5`

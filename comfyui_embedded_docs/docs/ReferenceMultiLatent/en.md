@@ -10,7 +10,7 @@ This node encodes one or more reference images and appends their latents to the 
 | --- | --- | --- | --- | --- |
 | `positive` | The positive conditioning to modify with the reference latents. | CONDITIONING | Yes | - |
 | `negative` | Optional negative conditioning that receives the same reference latents. Leave it unconnected to reuse the modified positive conditioning on the `negative` output. | CONDITIONING | No | - |
-| `vae` | The VAE used to encode the connected reference images. Required whenever at least one image is connected, otherwise the node raises an error. | VAE | No | - |
+| `vae` | The VAE used to encode the connected reference images. When no VAE is connected the reference images are ignored. | VAE | No | - |
 | `resolution` | How each reference image is prepared before encoding. `"keep resolution"` encodes it at its incoming size; `"resize"` scales it to a target megapixel count while preserving the aspect ratio, which reveals `megapixels`. (default: "keep resolution") | DYNAMIC_COMBO | Yes | `"keep resolution"`<br>`"resize"` |
 | `images` | Growable slot: connect one or more reference images (`image_1`, `image_2`, ...) to use as references. Images are encoded in slot order and appended to the conditioning in that order. | IMAGE | No | 1 to 100 |
 
@@ -28,15 +28,15 @@ These options appear when `resolution` is set to `"resize"`.
 | --- | --- | --- |
 | `positive` | The positive conditioning with the encoded reference latents appended. | CONDITIONING |
 | `negative` | The negative conditioning with the same reference latents appended. Returns the positive output when no negative conditioning is connected. | CONDITIONING |
-| `empty_latent` | The first reference latent multiplied by 0.0, ready to seed a sampler. Empty when no reference image is connected. | LATENT |
+| `empty_latent` | The first reference latent multiplied by 0.0, ready to seed a sampler. When no reference latent is produced, a square empty latent at the selected resolution is returned instead. | LATENT |
 
 ## Notes
 
 - The latents are appended rather than replaced, so chaining several Set Reference Multi Latent nodes accumulates references.
 - Each connected image is encoded on its own, so the reference images do not have to share a size.
-- Without any connected image, `positive` and `negative` are returned unchanged and `empty_latent` is empty.
+- Without a connected VAE or without any connected image, `positive` and `negative` are returned unchanged and `empty_latent` is a square empty latent: 1024 x 1024, or sized from `megapixels` when `resolution` is `"resize"`.
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceMultiLatent/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `7416feb8ac81cbf7e2d424e0212e88ab60235958c64550b0ee8c303093673756`
+**Source fingerprint (SHA-256):** `06f98e7c21e8750a2bdf365cb80fac990bcf01246f183c60ef83bd195fc1225b`

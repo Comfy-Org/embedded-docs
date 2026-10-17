@@ -2,7 +2,7 @@
 
 此節點使用 Quiver AI 的向量化模型，將點陣圖像轉換為可縮放向量圖形（SVG）。它會將圖像傳送至外部 API，由該 API 處理並傳回向量化結果。
 
-**注意：** 此節點在原始碼中標記為已棄用。 Quiver 將於 2026 年 10 月 16 日停用 Arrow 1 系列模型，因此 `arrow-1.1`、`arrow-1.1-max` 和 `arrow-preview` 選項在該日期之後將停止運作。請改用 `arrow-2` 或 `arrow-2-telos`。
+**注意：** 此節點在原始碼中標記為已棄用。
 
 ## 輸入
 
@@ -10,7 +10,7 @@
 |-----------|-------------|-----------|----------|-------|
 | `image` | 要向量化的輸入圖像。 | IMAGE | 是 | N/A |
 | `auto_crop` | 自動裁切至主要主體（預設：False）。 | BOOLEAN | 是 | True<br>False |
-| `model` | 用於 SVG 向量化的模型。選取模型後會顯示該模型專屬的額外參數：`target_size`（方形縮放目標，單位為像素；0 會保留來源影像尺寸，否則為 128 至 4096）、`temperature`、`top_p` 和 `presence_penalty`。 | DYNAMIC_COMBO | 是 | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `model` | 用於 SVG 向量化的模型。選取模型後會顯示該模型專屬的額外參數：`target_size`（方形縮放目標，單位為像素；0 會保留來源影像尺寸，否則為 128 至 4096）、`temperature`、`top_p` 和 `presence_penalty`。 | DYNAMIC_COMBO | 是 | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `seed` | 用於決定節點是否應重新執行的種子；實際結果無論種子值為何皆不具確定性。此參數具有「生成後控制」功能（預設：0）。 | INT | 是 | 0 至 2147483647 |
 | `推理強度` | 模型在繪製前投入多少推理。較高等級可提升細節，但會耗用更多 token。僅 Arrow 2 模型會使用（預設："high"）。 | COMBO | 否 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
 
@@ -24,4 +24,4 @@
 
 ---
 ---
-**Source fingerprint (SHA-256):** `3f5b97794fa4c2e87d954d98f966d4ef0fddd1c3b1054fba552e282d6ac21c83`
+**Source fingerprint (SHA-256):** `196b0693328478bff21b11da87c52608e8bb57abb9bf482052782231f6d81c30`

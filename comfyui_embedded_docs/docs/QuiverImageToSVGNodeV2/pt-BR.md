@@ -2,8 +2,6 @@
 
 Vetorize uma imagem raster em um gráfico vetorial escalável (SVG) com o Quiver AI. A imagem é enviada à API do Quiver AI, que retorna o resultado vetorizado.
 
-**Nota:** A Quiver descontinua os modelos da série Arrow 1 em 16 de outubro de 2026, então as opções `arrow-1.1`, `arrow-1.1-max` e `arrow-preview` param de funcionar após essa data. Use `arrow-2` ou `arrow-2-telos` no lugar.
-
 Selecionar um `model` revela os parâmetros específicos do modelo listados abaixo.
 
 ## Entradas
@@ -12,7 +10,7 @@ Selecionar um `model` revela os parâmetros específicos do modelo listados abai
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a ser usado para vetorização SVG. | DYNAMIC_COMBO | Sim | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `modelo` | Modelo a ser usado para vetorização SVG. | DYNAMIC_COMBO | Sim | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `image` | Imagem de entrada a ser vetorizada. | IMAGE | Sim | N/A |
 | `auto_crop` | Recorta automaticamente para o assunto dominante. Parâmetro avançado (padrão: False). | BOOLEAN | Sim | `True`<br>`False` |
 | `target_size` | Redimensionamento quadrado aplicado à imagem de entrada antes da vetorização, em pixels. 0 mantém o tamanho da origem, o que vetoriza de forma mais limpa do que forçar um redimensionamento; qualquer outro valor abaixo de 128 é limitado a 128. Isso não define a tela de saída; use `width` e `height` para isso. Parâmetro avançado (padrão: 0). | INT | Sim | 0 a 4096 |
@@ -40,4 +38,4 @@ Selecionar um `model` revela os parâmetros específicos do modelo listados abai
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverImageToSVGNodeV2/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `186769b09bef2d2dbbfc26102f375ff80f8b324a24cd593da20afcea9cc2095b`
+**Source fingerprint (SHA-256):** `3531975fd46f5514e6d13b73bbbda413b7a08d8e36afeea73945ae7ea68d7216`

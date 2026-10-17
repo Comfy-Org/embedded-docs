@@ -2,8 +2,6 @@
 
 Vectoriza una imagen raster en un gráfico vectorial escalable (SVG) con Quiver AI. La imagen se envía a la API de Quiver AI, que devuelve el resultado vectorizado.
 
-**Nota:** Quiver retira los modelos de la serie Arrow 1 el 16 de octubre de 2026, así que las opciones `arrow-1.1`, `arrow-1.1-max` y `arrow-preview` dejan de funcionar después de esa fecha. Utiliza en su lugar `arrow-2` o `arrow-2-telos`.
-
 Al seleccionar un `model`, se muestran los parámetros específicos del modelo que se enumeran a continuación.
 
 ## Entradas
@@ -12,7 +10,7 @@ Al seleccionar un `model`, se muestran los parámetros específicos del modelo q
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Modelo que se utilizará para la vectorización a SVG. | DYNAMIC_COMBO | Sí | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `modelo` | Modelo que se utilizará para la vectorización a SVG. | DYNAMIC_COMBO | Sí | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `image` | Imagen de entrada que se va a vectorizar. | IMAGE | Sí | N/A |
 | `auto_crop` | Recorta automáticamente al sujeto dominante. Parámetro avanzado (predeterminado: False). | BOOLEAN | Sí | `True`<br>`False` |
 | `target_size` | Redimensionamiento cuadrado aplicado a la imagen de entrada antes de vectorizar, en píxeles. 0 mantiene el tamaño de origen, que vectoriza más limpiamente que forzar un redimensionamiento; cualquier otro valor por debajo de 128 se limita a 128. Esto no establece el lienzo de salida; use `width` y `height` para eso. Parámetro avanzado (predeterminado: 0). | INT | Sí | 0 a 4096 |
@@ -40,4 +38,4 @@ Al seleccionar un `model`, se muestran los parámetros específicos del modelo q
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverImageToSVGNodeV2/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `186769b09bef2d2dbbfc26102f375ff80f8b324a24cd593da20afcea9cc2095b`
+**Source fingerprint (SHA-256):** `3531975fd46f5514e6d13b73bbbda413b7a08d8e36afeea73945ae7ea68d7216`

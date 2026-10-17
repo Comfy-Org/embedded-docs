@@ -7,7 +7,7 @@ Le nœud CLIPLoader charge un modèle d'encodeur de texte (CLIP, T5 ou similaire
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `clip_name` | Le nom de fichier du modèle d'encodeur de texte à charger. Il doit s'agir d'un fichier situé dans le répertoire `ComfyUI/models/text_encoders/`. | STRING | Oui | Liste des fichiers trouvés dans le dossier `text_encoders` |
-| `type` | Le type d'architecture du modèle en cours de chargement. Cela détermine la variante d'encodeur spécifique à utiliser (par défaut : `"stable_diffusion"`). | COMBO | Oui | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
+| `type` | Le type d'architecture du modèle en cours de chargement. Cela détermine la variante d'encodeur spécifique à utiliser (par défaut : `"stable_diffusion"`). | COMBO | Oui | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"` |
 | `appareil` | L'appareil sur lequel charger le modèle. `"default"` utilise le GPU s'il est disponible, tandis que `"cpu"` force le chargement sur CPU. Il s'agit d'une option avancée (par défaut : `"default"`). | COMBO | Non | `"default"`<br>`"cpu"` |
 
 ### Correspondances prises en charge entre type et encodeur
@@ -31,6 +31,7 @@ Le paramètre `type` sélectionne l'encodeur correct pour une architecture de mo
 | lens | gpt-oss-20b |
 | pixeldit | gemma 2 2B elm |
 | minimax | MiniMax H3 Qwen3-VL ou Music3 Qwen/RVQ |
+| flux3 | qwen3-vl 4B |
 
 ## Sorties
 
@@ -41,4 +42,4 @@ Le paramètre `type` sélectionne l'encodeur correct pour une architecture de mo
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipLoader/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `6df608d500520d9414acd82d9fd509b1e211a8385202cefd5579e8a8f397bc64`
+**Source fingerprint (SHA-256):** `3abcb39dd6ce4935f51127d4d38a8474ecf80a4df70d702f3eea68d400be91a5`

@@ -2,7 +2,7 @@
 
 El nodo Quiver Text to SVG genera una imagen de gráfico vectorial escalable (SVG) a partir de una descripción de texto usando los modelos de Quiver AI. De manera opcional, puedes proporcionar imágenes de referencia e instrucciones de estilo para guiar el proceso de generación.
 
-**Nota:** Este nodo está marcado como obsoleto en el código fuente. Quiver retira los modelos de la serie Arrow 1 el 16 de octubre de 2026, así que las opciones `arrow-1.1`, `arrow-1.1-max` y `arrow-preview` dejan de funcionar después de esa fecha. Utiliza en su lugar `arrow-2` o `arrow-2-telos`.
+**Nota:** Este nodo está marcado como obsoleto en el código fuente.
 
 ## Entradas
 
@@ -11,7 +11,7 @@ El nodo Quiver Text to SVG genera una imagen de gráfico vectorial escalable (SV
 | `prompt` | Descripción de texto de la salida SVG deseada. Esta es la instrucción principal sobre qué generar. | STRING | Sí | N/A |
 | `instrucciones` | Indicaciones adicionales de estilo o formato. Este es un parámetro opcional y avanzado. | STRING | No | N/A |
 | `imágenes_de_referencia` | Hasta 4 imágenes de referencia para guiar la generación. Esta es una entrada opcional. | IMAGE | No | 0 a 4 imágenes |
-| `modelo` | Modelo a usar para la generación de SVG. Al seleccionar un modelo se revelan parámetros adicionales específicos de ese modelo: `temperature`, `top_p` y `presence_penalty`. | DYNAMIC_COMBO | Sí | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `modelo` | Modelo a usar para la generación de SVG. Al seleccionar un modelo se revelan parámetros adicionales específicos de ese modelo: `temperature`, `top_p` y `presence_penalty`. | DYNAMIC_COMBO | Sí | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `semilla` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla. Predeterminado: 0. | INT | Sí | 0 a 2147483647 |
 | `reasoning_effort` | Cantidad de razonamiento que el modelo dedica antes de dibujar. Los niveles más altos mejoran el detalle y cuestan más tokens. Solo lo usan los modelos Arrow 2 (predeterminado: "high"). | COMBO | No | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
 
@@ -27,4 +27,4 @@ El nodo Quiver Text to SVG genera una imagen de gráfico vectorial escalable (SV
 
 ---
 ---
-**Source fingerprint (SHA-256):** `e03e130a4aedbf003e898300b3a83e343fdfa5b3da35df20d55876d437bf5426`
+**Source fingerprint (SHA-256):** `9c85e3be6047e8621f4682aee2be43eee7d6a93d2851ef99ce7adb5ead1fec5e`

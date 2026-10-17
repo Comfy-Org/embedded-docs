@@ -2,7 +2,7 @@
 
 Este nó converte uma imagem raster em um gráfico vetorial escalável (SVG) usando os modelos de vetorização da Quiver AI. Ele envia a imagem para uma API externa, que a processa e retorna o resultado vetorizado.
 
-**Nota:** Este nó está marcado como obsoleto no código-fonte. A Quiver descontinua os modelos da série Arrow 1 em 16 de outubro de 2026, então as opções `arrow-1.1`, `arrow-1.1-max` e `arrow-preview` param de funcionar após essa data. Use `arrow-2` ou `arrow-2-telos` no lugar.
+**Nota:** Este nó está marcado como obsoleto no código-fonte.
 
 ## Entradas
 
@@ -10,7 +10,7 @@ Este nó converte uma imagem raster em um gráfico vetorial escalável (SVG) usa
 |-----------|-------------|-----------|----------|-------|
 | `imagem` | Imagem de entrada a ser vetorizada. | IMAGE | Sim | N/A |
 | `corte_automático` | Recorta automaticamente para o assunto dominante (padrão: False). | BOOLEAN | Sim | True<br>False |
-| `modelo` | Modelo a ser usado para vetorização SVG. Selecionar um modelo revela parâmetros adicionais específicos desse modelo: `target_size` (destino de redimensionamento quadrado em pixels; 0 mantém o tamanho da imagem de origem, caso contrário, 128 a 4096), `temperature`, `top_p` e `presence_penalty`. | DYNAMIC_COMBO | Sim | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `modelo` | Modelo a ser usado para vetorização SVG. Selecionar um modelo revela parâmetros adicionais específicos desse modelo: `target_size` (destino de redimensionamento quadrado em pixels; 0 mantém o tamanho da imagem de origem, caso contrário, 128 a 4096), `temperature`, `top_p` e `presence_penalty`. | DYNAMIC_COMBO | Sim | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `semente` | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente do valor da semente. Este parâmetro tem a funcionalidade de "controle após gerar" (padrão: 0). | INT | Sim | 0 a 2147483647 |
 | `reasoning_effort` | Quanto raciocínio o modelo gasta antes de desenhar. Níveis mais altos melhoram o detalhe e custam mais tokens. Usado apenas pelos modelos Arrow 2 (padrão: "high"). | COMBO | Não | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
 
@@ -24,4 +24,4 @@ Este nó converte uma imagem raster em um gráfico vetorial escalável (SVG) usa
 
 ---
 ---
-**Source fingerprint (SHA-256):** `3f5b97794fa4c2e87d954d98f966d4ef0fddd1c3b1054fba552e282d6ac21c83`
+**Source fingerprint (SHA-256):** `196b0693328478bff21b11da87c52608e8bb57abb9bf482052782231f6d81c30`

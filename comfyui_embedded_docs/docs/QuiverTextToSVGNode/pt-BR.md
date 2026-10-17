@@ -2,7 +2,7 @@
 
 O nó Quiver Text to SVG gera uma imagem SVG (Scalable Vector Graphic) a partir de uma descrição textual usando os modelos da Quiver AI. Opcionalmente, você pode fornecer imagens de referência e instruções de estilo para orientar o processo de geração.
 
-**Nota:** Este nó está marcado como obsoleto no código-fonte. A Quiver descontinua os modelos da série Arrow 1 em 16 de outubro de 2026, então as opções `arrow-1.1`, `arrow-1.1-max` e `arrow-preview` param de funcionar após essa data. Use `arrow-2` ou `arrow-2-telos` no lugar.
+**Nota:** Este nó está marcado como obsoleto no código-fonte.
 
 ## Entradas
 
@@ -11,7 +11,7 @@ O nó Quiver Text to SVG gera uma imagem SVG (Scalable Vector Graphic) a partir 
 | `prompt` | Descrição textual da saída SVG desejada. Esta é a instrução principal sobre o que gerar. | STRING | Sim | N/A |
 | `instruções` | Orientação adicional de estilo ou formatação. Este é um parâmetro opcional e avançado. | STRING | Não | N/A |
 | `imagens_de_referência` | Até 4 imagens de referência para orientar a geração. Esta é uma entrada opcional. | IMAGE | Não | 0 a 4 imagens |
-| `modelo` | Modelo a ser usado para geração de SVG. Selecionar um modelo revela parâmetros adicionais específicos desse modelo: `temperature`, `top_p` e `presence_penalty`. | DYNAMIC_COMBO | Sim | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `modelo` | Modelo a ser usado para geração de SVG. Selecionar um modelo revela parâmetros adicionais específicos desse modelo: `temperature`, `top_p` e `presence_penalty`. | DYNAMIC_COMBO | Sim | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `semente` | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente. Padrão: 0. | INT | Sim | 0 a 2147483647 |
 | `reasoning_effort` | Quanto raciocínio o modelo usa antes de desenhar. Níveis mais altos melhoram o detalhe e consomem mais tokens. Usado apenas pelos modelos Arrow 2 (padrão: "high"). | COMBO | Não | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
 
@@ -27,4 +27,4 @@ O nó Quiver Text to SVG gera uma imagem SVG (Scalable Vector Graphic) a partir 
 
 ---
 ---
-**Source fingerprint (SHA-256):** `e03e130a4aedbf003e898300b3a83e343fdfa5b3da35df20d55876d437bf5426`
+**Source fingerprint (SHA-256):** `9c85e3be6047e8621f4682aee2be43eee7d6a93d2851ef99ce7adb5ead1fec5e`

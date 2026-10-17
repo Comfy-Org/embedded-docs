@@ -7,7 +7,7 @@ El nodo CLIPLoader carga un modelo codificador de texto (CLIP, T5 o similar) des
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
 | `nombre_clip` | El nombre de archivo del modelo codificador de texto que se va a cargar. Debe ser un archivo ubicado en el directorio `ComfyUI/models/text_encoders/`. | STRING | Sí | Lista de archivos encontrados en la carpeta `text_encoders` |
-| `tipo` | El tipo de arquitectura del modelo que se carga. Esto determina qué variante específica del codificador usar (predeterminado: `"stable_diffusion"`). | COMBO | Sí | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"` |
+| `tipo` | El tipo de arquitectura del modelo que se carga. Esto determina qué variante específica del codificador usar (predeterminado: `"stable_diffusion"`). | COMBO | Sí | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"` |
 | `dispositivo` | El dispositivo en el que se cargará el modelo. `"default"` usa la GPU si está disponible, mientras que `"cpu"` fuerza la carga en CPU. Esta es una opción avanzada (predeterminado: `"default"`). | COMBO | No | `"default"`<br>`"cpu"` |
 
 ### Asignaciones compatibles de tipo a codificador
@@ -31,6 +31,7 @@ El parámetro `type` selecciona el codificador correcto para una arquitectura de
 | lens | gpt-oss-20b |
 | pixeldit | gemma 2 2B elm |
 | minimax | MiniMax H3 Qwen3-VL o Music3 Qwen/RVQ |
+| flux3 | qwen3-vl 4B |
 
 ## Salidas
 
@@ -41,4 +42,4 @@ El parámetro `type` selecciona el codificador correcto para una arquitectura de
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClipLoader/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `6df608d500520d9414acd82d9fd509b1e211a8385202cefd5579e8a8f397bc64`
+**Source fingerprint (SHA-256):** `3abcb39dd6ce4935f51127d4d38a8474ecf80a4df70d702f3eea68d400be91a5`

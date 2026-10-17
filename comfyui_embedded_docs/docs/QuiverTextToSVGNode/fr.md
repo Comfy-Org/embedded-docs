@@ -2,7 +2,7 @@
 
 Le nœud Quiver Text to SVG génère une image SVG (Scalable Vector Graphic) à partir d'une description textuelle en utilisant les modèles de Quiver AI. Vous pouvez éventuellement fournir des images de référence et des instructions de style pour guider le processus de génération.
 
-**Remarque :** Ce nœud est marqué comme obsolète dans le code source. Quiver retire les modèles de la série Arrow 1 le 16 octobre 2026 ; les options `arrow-1.1`, `arrow-1.1-max` et `arrow-preview` cessent donc de fonctionner après cette date. Utilisez plutôt `arrow-2` ou `arrow-2-telos`.
+**Remarque :** Ce nœud est marqué comme obsolète dans le code source.
 
 ## Entrées
 
@@ -11,7 +11,7 @@ Le nœud Quiver Text to SVG génère une image SVG (Scalable Vector Graphic) à 
 | `prompt` | Description textuelle de la sortie SVG souhaitée. Il s'agit de l'instruction principale indiquant ce qu'il faut générer. | STRING | Oui | N/A |
 | `instructions` | Conseils supplémentaires de style ou de mise en forme. Il s'agit d'un paramètre avancé facultatif. | STRING | Non | N/A |
 | `reference_images` | Jusqu'à 4 images de référence pour guider la génération. Il s'agit d'une entrée facultative. | IMAGE | Non | 0 à 4 images |
-| `model` | Modèle à utiliser pour la génération SVG. La sélection d'un modèle révèle des paramètres supplémentaires propres à ce modèle : `temperature`, `top_p` et `presence_penalty`. | DYNAMIC_COMBO | Oui | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `model` | Modèle à utiliser pour la génération SVG. La sélection d'un modèle révèle des paramètres supplémentaires propres à ce modèle : `temperature`, `top_p` et `presence_penalty`. | DYNAMIC_COMBO | Oui | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `seed` | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine. Par défaut : 0. | INT | Oui | 0 à 2147483647 |
 | `effort de raisonnement` | Quantité de raisonnement que le modèle effectue avant de dessiner. Des niveaux plus élevés améliorent les détails et consomment plus de jetons. Utilisé uniquement par les modèles Arrow 2 (par défaut : "high"). | COMBO | Non | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
 
@@ -27,4 +27,4 @@ Le nœud Quiver Text to SVG génère une image SVG (Scalable Vector Graphic) à 
 
 ---
 ---
-**Source fingerprint (SHA-256):** `e03e130a4aedbf003e898300b3a83e343fdfa5b3da35df20d55876d437bf5426`
+**Source fingerprint (SHA-256):** `9c85e3be6047e8621f4682aee2be43eee7d6a93d2851ef99ce7adb5ead1fec5e`

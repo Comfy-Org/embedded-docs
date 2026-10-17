@@ -2,7 +2,7 @@
 
 Este nodo convierte una imagen ráster en un gráfico vectorial escalable (SVG) mediante los modelos de vectorización de Quiver AI. Envía la imagen a una API externa que la procesa y devuelve el resultado vectorizado.
 
-**Nota:** Este nodo está marcado como obsoleto en el código fuente. Quiver retira los modelos de la serie Arrow 1 el 16 de octubre de 2026, así que las opciones `arrow-1.1`, `arrow-1.1-max` y `arrow-preview` dejan de funcionar después de esa fecha. Utiliza en su lugar `arrow-2` o `arrow-2-telos`.
+**Nota:** Este nodo está marcado como obsoleto en el código fuente.
 
 ## Entradas
 
@@ -10,7 +10,7 @@ Este nodo convierte una imagen ráster en un gráfico vectorial escalable (SVG) 
 |-----------|-------------|---------------|-------------|-------|
 | `imagen` | Imagen de entrada para vectorizar. | IMAGE | Sí | N/A |
 | `recorte_automático` | Recorta automáticamente al sujeto dominante (predeterminado: False). | BOOLEAN | Sí | True<br>False |
-| `modelo` | Modelo que se usará para la vectorización a SVG. Al seleccionar un modelo se revelan parámetros adicionales específicos de ese modelo: `target_size` (tamaño de redimensionado cuadrado objetivo en píxeles; 0 mantiene el tamaño de la imagen de origen; de lo contrario, 128 a 4096), `temperature`, `top_p` y `presence_penalty`. | DYNAMIC_COMBO | Sí | `"arrow-2"`<br>`"arrow-2-telos"`<br>`"arrow-1.1"`<br>`"arrow-1.1-max"`<br>`"arrow-preview"` |
+| `modelo` | Modelo que se usará para la vectorización a SVG. Al seleccionar un modelo se revelan parámetros adicionales específicos de ese modelo: `target_size` (tamaño de redimensionado cuadrado objetivo en píxeles; 0 mantiene el tamaño de la imagen de origen; de lo contrario, 128 a 4096), `temperature`, `top_p` y `presence_penalty`. | DYNAMIC_COMBO | Sí | `"arrow-2"`<br>`"arrow-2-telos"` |
 | `semilla` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente del valor de la semilla. Este parámetro tiene funcionalidad de "control after generate" (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
 | `reasoning_effort` | Cuánto razonamiento dedica el modelo antes de dibujar. Los niveles más altos mejoran el detalle y consumen más tokens. Solo lo usan los modelos Arrow 2 (predeterminado: "high"). | COMBO | No | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
 
@@ -24,4 +24,4 @@ Este nodo convierte una imagen ráster en un gráfico vectorial escalable (SVG) 
 
 ---
 ---
-**Source fingerprint (SHA-256):** `3f5b97794fa4c2e87d954d98f966d4ef0fddd1c3b1054fba552e282d6ac21c83`
+**Source fingerprint (SHA-256):** `196b0693328478bff21b11da87c52608e8bb57abb9bf482052782231f6d81c30`

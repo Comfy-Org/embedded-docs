@@ -10,7 +10,7 @@
 | --- | --- | --- | --- | --- |
 | `positive` | 要使用參考 latent 修改的正向 conditioning。 | CONDITIONING | 是 | - |
 | `negative` | 可選的負向 conditioning，會接收相同的參考 latent。保持未連接，即可在 `negative` 輸出上重複使用修改後的正向 conditioning。 | CONDITIONING | 否 | - |
-| `vae` | 用於編碼已連接參考影像的 VAE。每當至少連接一張影像時即為必填；否則節點會引發錯誤。 | VAE | 否 | - |
+| `vae` | 用於編碼已連接參考影像的 VAE。未連接 VAE 時，參考影像會被忽略。 | VAE | 否 | - |
 | `resolution` | 每張參考影像在編碼前的準備方式。`"keep resolution"` 會以傳入尺寸進行編碼；`"resize"` 會將其縮放至目標百萬像素數，同時保留長寬比，這會顯示 `megapixels`。（預設值："keep resolution"） | DYNAMIC_COMBO | 是 | `"keep resolution"`<br>`"resize"` |
 | `images` | 可增長插槽：連接一張或多張參考影像（`image_1`、`image_2`、...）以作為參考。影像會依插槽順序編碼，並依該順序附加至 conditioning。 | IMAGE | 否 | 1 至 100 |
 
@@ -28,15 +28,15 @@
 | --- | --- | --- |
 | `positive` | 已附加編碼後參考 latent 的正向 conditioning。 | CONDITIONING |
 | `negative` | 已附加相同參考 latent 的負向 conditioning。若未連接任何負向 conditioning，則傳回正向輸出。 | CONDITIONING |
-| `empty_latent` | 第一張參考 latent 乘以 0.0，可用於初始化 sampler。若未連接任何參考影像，則為空。 | LATENT |
+| `empty_latent` | 第一張參考 latent 乘以 0.0，可用於初始化 sampler。若未產生任何參考 latent，則改為傳回依所選解析度產生的正方形空 latent。 | LATENT |
 
 ## 備註
 
 - latent 是附加而非取代，因此串接多個 Set Reference Multi Latent 節點會累積參考。
 - 每張連接的影像會個別編碼，因此參考影像不必共用相同尺寸。
-- 若未連接任何影像，`positive` 與 `negative` 會原樣傳回，且 `empty_latent` 為空。
+- 若未連接 VAE 或未連接任何影像，`positive` 與 `negative` 會原樣傳回，且 `empty_latent` 為正方形空 latent：1024 x 1024，或在 `resolution` 為 `"resize"` 時由 `megapixels` 決定尺寸。
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceMultiLatent/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `7416feb8ac81cbf7e2d424e0212e88ab60235958c64550b0ee8c303093673756`
+**Source fingerprint (SHA-256):** `06f98e7c21e8750a2bdf365cb80fac990bcf01246f183c60ef83bd195fc1225b`

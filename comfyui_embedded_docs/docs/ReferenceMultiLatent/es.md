@@ -10,7 +10,7 @@ Este nodo codifica una o más imágenes de referencia y añade sus latentes al c
 | --- | --- | --- | --- | --- |
 | `positive` | El condicionamiento positivo que se va a modificar con los latentes de referencia. | CONDITIONING | Sí | - |
 | `negative` | Condicionamiento negativo opcional que recibe los mismos latentes de referencia. Déjalo sin conectar para reutilizar el condicionamiento positivo modificado en la salida `negative`. | CONDITIONING | No | - |
-| `vae` | El VAE que se usa para codificar las imágenes de referencia conectadas. Obligatorio siempre que se conecte al menos una imagen; de lo contrario, el nodo genera un error. | VAE | No | - |
+| `vae` | El VAE que se usa para codificar las imágenes de referencia conectadas. Cuando no hay ningún VAE conectado, las imágenes de referencia se ignoran. | VAE | No | - |
 | `resolution` | Cómo se prepara cada imagen de referencia antes de codificarla. `"keep resolution"` la codifica con su tamaño de entrada; `"resize"` la escala a una cantidad objetivo de megapíxeles mientras conserva la relación de aspecto, lo que revela `megapixels`. (predeterminado: "keep resolution") | DYNAMIC_COMBO | Sí | `"keep resolution"`<br>`"resize"` |
 | `images` | Ranura ampliable: conecta una o más imágenes de referencia (`image_1`, `image_2`, ...) para usarlas como referencias. Las imágenes se codifican en el orden de las ranuras y se añaden al condicionamiento en ese orden. | IMAGE | No | 1 a 100 |
 
@@ -28,15 +28,15 @@ Estas opciones aparecen cuando `resolution` se establece en `"resize"`.
 | --- | --- | --- |
 | `positive` | El condicionamiento positivo con los latentes de referencia codificados añadidos. | CONDITIONING |
 | `negative` | El condicionamiento negativo con los mismos latentes de referencia añadidos. Devuelve la salida positiva cuando no hay ningún condicionamiento negativo conectado. | CONDITIONING |
-| `empty_latent` | El primer latente de referencia multiplicado por 0.0, listo para inicializar un sampler. Vacío cuando no hay ninguna imagen de referencia conectada. | LATENT |
+| `empty_latent` | El primer latente de referencia multiplicado por 0.0, listo para inicializar un sampler. Cuando no se produce ningún latente de referencia, se devuelve en su lugar un latente vacío cuadrado con la resolución seleccionada. | LATENT |
 
 ## Notas
 
 - Los latentes se añaden en lugar de reemplazarse, por lo que encadenar varios nodos Set Reference Multi Latent acumula referencias.
 - Cada imagen conectada se codifica de forma independiente, así que las imágenes de referencia no necesitan compartir un tamaño.
-- Sin ninguna imagen conectada, `positive` y `negative` se devuelven sin cambios y `empty_latent` está vacío.
+- Sin un VAE conectado o sin ninguna imagen conectada, `positive` y `negative` se devuelven sin cambios y `empty_latent` es un latente vacío cuadrado: 1024 x 1024, o del tamaño derivado de `megapixels` cuando `resolution` es `"resize"`.
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceMultiLatent/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `7416feb8ac81cbf7e2d424e0212e88ab60235958c64550b0ee8c303093673756`
+**Source fingerprint (SHA-256):** `06f98e7c21e8750a2bdf365cb80fac990bcf01246f183c60ef83bd195fc1225b`
