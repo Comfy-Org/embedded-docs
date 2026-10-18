@@ -81,6 +81,14 @@ class StripLeakPreambleTests(unittest.TestCase):
         self.assertEqual(removed, 0)
         self.assertEqual(cleaned, text)
 
+    def test_japanese_feature_description_is_kept(self):
+        """技術翻訳 inside a node-feature sentence is not a preamble."""
+        lead = "これは技術翻訳機能を備えたノードです。"
+        text = _page("ノード", lead, "概要", self.OVERVIEW)
+        cleaned, removed = ftp.strip_leak(text, "ja")
+        self.assertEqual(removed, 0)
+        self.assertEqual(cleaned, text)
+
     def test_negated_technical_translation_is_kept(self):
         for lead in (
             "これは技術翻訳ではありません。追跡結果をドキュメントどおりマスクにします。",
@@ -130,6 +138,22 @@ class StripLeakPreambleTests(unittest.TestCase):
         self.assertEqual(removed, 0)
         self.assertEqual(cleaned, text)
 
+    def test_zh_ordinary_yixia_shi_jiang_lead_is_kept(self):
+        lead = "以下是将输入图像缩放到目标分辨率的步骤。"
+        text = _page("测试节点", lead, "概述", "正文。")
+        cleaned, removed = ftp.strip_leak(text, "zh")
+        self.assertEqual(removed, 0)
+        self.assertEqual(cleaned, text)
+
+    def test_zh_yixia_shi_jiang_translation_preamble_is_stripped(self):
+        lead = "以下是将英文节点文档翻译成中文。"
+        body = "这个节点会把跟踪结果合成一张遮罩。"
+        text = _page("测试节点", lead, "概述", body)
+        cleaned, removed = ftp.strip_leak(text, "zh")
+        self.assertGreater(removed, 0)
+        self.assertNotIn(lead, cleaned)
+        self.assertIn(body, cleaned)
+
     def test_zh_ordinary_translation_description_is_kept(self):
         """``^这是.*?翻译`` used to treat a node description as a preamble."""
         lead = "这是用于翻译文字的节点。"
@@ -155,6 +179,13 @@ class StripLeakPreambleTests(unittest.TestCase):
         self.assertGreater(removed, 0)
         self.assertNotIn("技術翻譯", cleaned)
         self.assertIn(body, cleaned)
+
+    def test_zh_tw_ordinary_yixia_shi_jiang_lead_is_kept(self):
+        lead = "以下是將輸入圖像縮放到目標解析度的步驟。"
+        text = _page("測試節點", lead, "概述", "正文。")
+        cleaned, removed = ftp.strip_leak(text, "zh-TW")
+        self.assertEqual(removed, 0)
+        self.assertEqual(cleaned, text)
 
     def test_zh_tw_ordinary_translation_description_is_kept(self):
         """``^這是.*?翻譯`` used to treat a node description as a preamble."""
@@ -195,6 +226,14 @@ class StripLeakPreambleTests(unittest.TestCase):
     def test_ko_legitimate_overview_is_kept(self):
         lead = "이 노드는 문서에 적힌 대로 마스크를 만듭니다. 번역 설정은 필요 없습니다."
         text = _page("테스트 노드", lead, "개요", lead)
+        cleaned, removed = ftp.strip_leak(text, "ko")
+        self.assertEqual(removed, 0)
+        self.assertEqual(cleaned, text)
+
+    def test_ko_feature_description_is_kept(self):
+        lead = "이 문서는 기술 번역 기능을 설명합니다."
+        body = "이 노드는 추적 결과를 하나의 마스크로 합칩니다."
+        text = _page("테스트 노드", lead, "개요", body)
         cleaned, removed = ftp.strip_leak(text, "ko")
         self.assertEqual(removed, 0)
         self.assertEqual(cleaned, text)
