@@ -10,8 +10,8 @@ Remesh Mesh, orijinal yüzeyin çevresindeki dar bantlı bir mesafe alanını ö
 |-----------|-------------|-----------|----------|-------|
 | `mesh` | Yeniden oluşturulacak giriş ağı. | MESH | Evet | — |
 | `çözünürlük` | Voksel ızgara çözünürlüğü (çıktı yoğunluğu). 256 ~ 100k yüz, 512 ~ 1M. Tam bir yüz sayısı için ardından Decimate Mesh kullanın. (varsayılan: 512) | INT | Evet | 32 - 2048 |
-| `sign_mode` | Yüzey çıkarma modu. "udf", dağınık/manifold olmayan girdilere karşı dayanıklıdır; "sdf", QEF (Quadratic Error Function) keskin özellik kurtarma ile temiz tek bir yüzey üretir, ancak tutarlı sarım gerektirir. Bir mod seçildiğinde o moda özgü alt seçenekler görünür. (varsayılan: "udf") | DYNAMIC_COMBO | Evet | "udf"<br>"sdf" |
-| `band` | Voksel birimleri cinsinden dar bant genişliği. UDF modunda yüzeyi de kaydırır. (gelişmiş, varsayılan: 1.0) | FLOAT | Evet | 0.5 - 4.0 |
+| `sign_mode` | Yüzey çıkarma modu. "udf", dağınık/manifold olmayan girdilere karşı dayanıklıdır; "sdf", QEF (Quadratic Error Function) keskin özellik kurtarma ile temiz tek bir yüzey üretir, ancak tutarlı sarım gerektirir. "solid", dağınık girdiden tek bir su geçirmez katı oluşturur: genel iç/dış grafik kesimi (CelloCut) çift kabukları kaldırır ve küçük delikleri kapatır. Daha yavaştır. Bir mod seçildiğinde o moda özgü alt seçenekler görünür. (varsayılan: "udf") | DYNAMIC_COMBO | Evet | "udf"<br>"sdf"<br>"solid" |
+| `band` | Voksel birimleri cinsinden dar bant genişliği. UDF modunda yüzeyi de kaydırır. solid modunda bu kapatma yarıçapıdır: kıvrımlar bu boyutta yuvarlanır ve boşluklar bu boyutta köprülenir, yüzey yarım voksel dışarıda kalır. (gelişmiş, varsayılan: 1.0) | FLOAT | Evet | 0.5 - 4.0 |
 | `project_back` | Köşeleri orijinal yüzeye doğru doğrusal olarak interpole eder (0 = saf DC, 1 = oturtulmuş). (gelişmiş, varsayılan: 0.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `fix_poles` | Değerlik-3 köşe çiftlerini daraltır (DC T-birleşim artefaktı). (gelişmiş, varsayılan: false) | BOOLEAN | Evet | true / false |
 | `smooth_iters` | Taubin yumuşatma yinelemeleri (0 = kapalı). 2-3, DC merdiven benzeri artefaktları temizler; daha yüksek değerler QEF kenarlarını aşırı yumuşatır. (varsayılan: 0) | INT | Evet | 0 - 20 |
@@ -24,7 +24,7 @@ Bu parametreler `sign_mode` `"udf"` olarak ayarlandığında görünür.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `qef` | Daha keskin kenarlar için QEF (Quadratic Error Function) dual köşe yerleşimi. (gelişmiş, varsayılan: false) | BOOLEAN | Hayır | true / false |
+| `qef` | QEF (Quadratic Error Function) ile köşe yerleşimi: sert yüzey girdilerinde keskin kenarlar, organik girdilerde pürüzlü kıvrımlar. (gelişmiş, varsayılan: false) | BOOLEAN | Hayır | true / false |
 | `drop_inverted_components` | İçe dönük normalli (negatif hacimli) kapalı bileşenleri atar — UDF iç kabuğu. (gelişmiş, varsayılan: false) | BOOLEAN | Hayır | true / false |
 | `drop_enclosed_components` | En büyük bileşenin sınırlayıcı kutusu içinde olup point-in-mesh raycast'ini geçemeyen bileşenleri atar. Meşru iç içe parçalar için devre dışı bırakın. (gelişmiş, varsayılan: false) | BOOLEAN | Hayır | true / false |
 
@@ -37,7 +37,16 @@ Bu parametreler `sign_mode` `"sdf"` olarak ayarlandığında görünür.
 | `qef` | QEF (Quadratic Error Function) dual köşe yerleşimi (keskin özellikleri kurtarır) ile kenar geçişli ağırlık merkezi karşılaştırması. (varsayılan: true) | BOOLEAN | Hayır | true / false |
 | `manifold` | Manifold Dual Contouring: çok katmanlı durumlar için voksel başına 1-4 dual köşe. Daha yavaş. (varsayılan: false) | BOOLEAN | Hayır | true / false |
 
-Not: `qef` seçeneği, seçilen moda bağlı olarak farklı bir varsayılana sahiptir — "udf" modunda false, "sdf" modunda true. `precluster_max_verts` 0'dan büyük olduğunda ve giriş ağının köşe sayısı bu değerden fazla olduğunda, alan sorgularından önce ağ bu hedefe kadar küme-indirgenir. İşleme sonrasında düğüm, girişten çıkışa yüz sayısı değişimini düğüm üzerinde gösterir (örneğin, "faces: 1.23M → 200K (-84%)").
+### "solid" Modu Girdileri
+
+Bu parametreler `sign_mode` `"solid"` olarak ayarlandığında görünür.
+
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `fill` | Bir açıklığı yüzeyi izlemeye kıyasla kapatmanın maliyeti. Daha düşük değer daha büyük açıklıkları kapatır (0 bir fincanın üzerine kapak koyar); daha yüksek değer yalnızca küçük delikleri ve çatlakları kapatır. (varsayılan: 20.0) | FLOAT | Hayır | 0.0 - 1000.0 |
+| `qef` | QEF (Quadratic Error Function) ile köşe yerleşimi: sert yüzey girdilerinde keskin kenarlar, organik girdilerde pürüzlü kıvrımlar. (gelişmiş, varsayılan: false) | BOOLEAN | Hayır | true / false |
+
+Not: `qef` seçeneği, seçilen moda bağlı olarak farklı bir varsayılana sahiptir — "udf" ve "solid" modlarında false, "sdf" modunda true. `precluster_max_verts` 0'dan büyük olduğunda ve giriş ağının köşe sayısı bu değerden fazla olduğunda, alan sorgularından önce ağ bu hedefe kadar küme-indirgenir. İşleme sonrasında düğüm, girişten çıkışa yüz sayısı değişimini düğüm üzerinde gösterir (örneğin, "faces: 1.23M → 200K (-84%)").
 
 ## Çıktılar
 
@@ -48,4 +57,4 @@ Not: `qef` seçeneği, seçilen moda bağlı olarak farklı bir varsayılana sah
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RemeshMesh/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `aa9b7e4465196fab81a4a484ca9dd03d999b4621a611aed2b39d618e53702a06`
+**Source fingerprint (SHA-256):** `d2869c681e0485f5946a53f0582188ded2183ecd741ea1ff6a591932b18b5abe`
