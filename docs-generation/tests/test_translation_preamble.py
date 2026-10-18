@@ -85,6 +85,7 @@ class StripLeakPreambleTests(unittest.TestCase):
         for lead in (
             "これは技術翻訳ではありません。追跡結果をドキュメントどおりマスクにします。",
             "これは技術翻訳じゃない。追跡結果をドキュメントどおりマスクにします。",
+            "これは技術翻訳ではなく、ノードの利用手順です。",
         ):
             with self.subTest(lead=lead):
                 text = _page("ノード", lead, "概要", self.OVERVIEW)
@@ -129,6 +130,23 @@ class StripLeakPreambleTests(unittest.TestCase):
         self.assertEqual(removed, 0)
         self.assertEqual(cleaned, text)
 
+    def test_zh_ordinary_translation_description_is_kept(self):
+        """``^这是.*?翻译`` used to treat a node description as a preamble."""
+        lead = "这是用于翻译文字的节点。"
+        text = _page("测试节点", lead, "概述", "正文。")
+        cleaned, removed = ftp.strip_leak(text, "zh")
+        self.assertEqual(removed, 0)
+        self.assertEqual(cleaned, text)
+
+    def test_zh_translation_result_opener_is_stripped(self):
+        lead = "这是您要求的翻译结果。"
+        body = "这个节点会把跟踪结果合成一张遮罩。"
+        text = _page("测试节点", lead, "概述", body)
+        cleaned, removed = ftp.strip_leak(text, "zh")
+        self.assertGreater(removed, 0)
+        self.assertNotIn(lead, cleaned)
+        self.assertIn(body, cleaned)
+
     def test_zh_tw_technical_translation_preamble_is_stripped(self):
         lead = "這是ComfyUI節點文件的技術翻譯。以下是中文譯文。"
         body = "這個節點會把追蹤結果合成一張遮罩。"
@@ -137,6 +155,14 @@ class StripLeakPreambleTests(unittest.TestCase):
         self.assertGreater(removed, 0)
         self.assertNotIn("技術翻譯", cleaned)
         self.assertIn(body, cleaned)
+
+    def test_zh_tw_ordinary_translation_description_is_kept(self):
+        """``^這是.*?翻譯`` used to treat a node description as a preamble."""
+        lead = "這是用於翻譯文字的節點。"
+        text = _page("測試節點", lead, "概述", "正文。")
+        cleaned, removed = ftp.strip_leak(text, "zh-TW")
+        self.assertEqual(removed, 0)
+        self.assertEqual(cleaned, text)
 
     def test_zh_tw_translation_result_opener_is_stripped(self):
         """Live leak: Magnific Image Relight (zh-TW) opened with this line."""
@@ -169,6 +195,14 @@ class StripLeakPreambleTests(unittest.TestCase):
     def test_ko_legitimate_overview_is_kept(self):
         lead = "이 노드는 문서에 적힌 대로 마스크를 만듭니다. 번역 설정은 필요 없습니다."
         text = _page("테스트 노드", lead, "개요", lead)
+        cleaned, removed = ftp.strip_leak(text, "ko")
+        self.assertEqual(removed, 0)
+        self.assertEqual(cleaned, text)
+
+    def test_ko_topic_particle_negation_is_kept(self):
+        lead = "이 문서는 기술 번역은 아닙니다."
+        body = "이 노드는 추적 결과를 하나의 마스크로 합칩니다."
+        text = _page("테스트 노드", lead, "개요", body)
         cleaned, removed = ftp.strip_leak(text, "ko")
         self.assertEqual(removed, 0)
         self.assertEqual(cleaned, text)
