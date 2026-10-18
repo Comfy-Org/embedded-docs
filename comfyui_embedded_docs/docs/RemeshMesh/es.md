@@ -10,8 +10,8 @@ Remesh Mesh reconstruye una malla con un teselado limpio y uniforme muestreando 
 |-----------|-------------|-----------|----------|-------|
 | `malla` | La malla de entrada que se va a remallar. | MESH | Sí | — |
 | `resolución` | Resolución de la cuadrícula de vóxeles (densidad de salida). 256 ~ 100k caras, 512 ~ 1M. Para un recuento exacto de caras, continúe con Decimate Mesh. (predeterminado: 512) | INT | Sí | 32 - 2048 |
-| `sign_mode` | Modo de extracción de superficie. "udf" es robusto ante entradas desordenadas/no manifold; "sdf" produce una superficie única limpia con recuperación de características nítidas mediante QEF (función de error cuadrático), pero necesita un bobinado consistente. Al seleccionar un modo, se muestran sus subopciones específicas. (predeterminado: "udf") | DYNAMIC_COMBO | Sí | "udf"<br>"sdf" |
-| `band` | Ancho de la banda estrecha en unidades de vóxel. En modo UDF, también desplaza la superficie. (avanzado, predeterminado: 1.0) | FLOAT | Sí | 0.5 - 4.0 |
+| `sign_mode` | Modo de extracción de superficie. "udf" es robusto ante entradas desordenadas/no manifold; "sdf" produce una superficie única limpia con recuperación de características nítidas mediante QEF (función de error cuadrático), pero necesita un bobinado consistente. "solid" construye un único sólido estanco a partir de entradas desordenadas: un corte de grafo global interior/exterior (CelloCut) elimina las capas dobles y cierra los agujeros pequeños. Más lento. Al seleccionar un modo, se muestran sus subopciones específicas. (predeterminado: "udf") | DYNAMIC_COMBO | Sí | "udf"<br>"sdf"<br>"solid" |
+| `band` | Ancho de la banda estrecha en unidades de vóxel. En modo UDF, también desplaza la superficie. En modo solid es el radio de cierre: las aristas se achaflanan y los huecos se puentean a este tamaño, y la superficie queda medio vóxel hacia fuera. (avanzado, predeterminado: 1.0) | FLOAT | Sí | 0.5 - 4.0 |
 | `project_back` | Interpola linealmente los vértices hacia la superficie original (0 = DC puro, 1 = ajustado). (avanzado, predeterminado: 0.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `fix_poles` | Colapsa pares de vértices de valencia 3 (artefacto de unión en T de DC). (avanzado, predeterminado: false) | BOOLEAN | Sí | true / false |
 | `smooth_iters` | Iteraciones de suavizado de Taubin (0 = desactivado). 2-3 limpia artefactos escalonados de DC; valores más altos suavizan en exceso los bordes QEF. (predeterminado: 0) | INT | Sí | 0 - 20 |
@@ -24,7 +24,7 @@ Estos parámetros aparecen cuando `sign_mode` se establece en `"udf"`.
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `qef` | Colocación de vértices duales mediante QEF (función de error cuadrático) para bordes más nítidos. (avanzado, predeterminado: false) | BOOLEAN | No | true / false |
+| `qef` | Colocación de vértices con QEF (función de error cuadrático): bordes nítidos en entradas de superficie dura y pliegues irregulares en entradas orgánicas. (avanzado, predeterminado: false) | BOOLEAN | No | true / false |
 | `drop_inverted_components` | Elimina componentes cerrados con normal hacia dentro (volumen negativo): la capa interna del UDF. (avanzado, predeterminado: false) | BOOLEAN | No | true / false |
 | `drop_enclosed_components` | Elimina componentes dentro de la bbox del más grande que fallen un raycast de punto en malla. Desactívelo para partes anidadas legítimas. (avanzado, predeterminado: false) | BOOLEAN | No | true / false |
 
@@ -37,7 +37,16 @@ Estos parámetros aparecen cuando `sign_mode` se establece en `"sdf"`.
 | `qef` | Colocación de vértices duales mediante QEF (función de error cuadrático) (recupera características nítidas) frente al centroide de cruce de bordes. (predeterminado: true) | BOOLEAN | No | true / false |
 | `manifold` | Dual Contouring manifold: 1-4 vértices duales por vóxel para casos de varias hojas. Más lento. (predeterminado: false) | BOOLEAN | No | true / false |
 
-Nota: La opción `qef` tiene un valor predeterminado diferente según el modo seleccionado: false en el modo "udf", true en el modo "sdf". Cuando `precluster_max_verts` es mayor que 0 y la malla de entrada tiene más vértices que este valor, la malla se decima por clústeres hasta ese objetivo antes de las consultas del campo. Después del procesamiento, el nodo muestra el cambio en el recuento de caras de entrada a salida en el propio nodo (por ejemplo, "faces: 1.23M → 200K (-84%)").
+### Entradas del modo "solid"
+
+Estos parámetros aparecen cuando `sign_mode` se establece en `"solid"`.
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `fill` | Coste de cerrar una abertura en relación con seguir la superficie. Cuanto más bajo, más grandes son las aberturas que se cierran (0 pone una tapa en una taza); cuanto más alto, solo cierra agujeros y grietas pequeños. (predeterminado: 20.0) | FLOAT | No | 0.0 - 1000.0 |
+| `qef` | Colocación de vértices con QEF (función de error cuadrático): bordes nítidos en entradas de superficie dura y pliegues irregulares en entradas orgánicas. (avanzado, predeterminado: false) | BOOLEAN | No | true / false |
+
+Nota: La opción `qef` tiene un valor predeterminado diferente según el modo seleccionado: false en los modos "udf" y "solid", true en el modo "sdf". Cuando `precluster_max_verts` es mayor que 0 y la malla de entrada tiene más vértices que este valor, la malla se decima por clústeres hasta ese objetivo antes de las consultas del campo. Después del procesamiento, el nodo muestra el cambio en el recuento de caras de entrada a salida en el propio nodo (por ejemplo, "faces: 1.23M → 200K (-84%)").
 
 ## Salidas
 
@@ -48,4 +57,4 @@ Nota: La opción `qef` tiene un valor predeterminado diferente según el modo se
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RemeshMesh/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `aa9b7e4465196fab81a4a484ca9dd03d999b4621a611aed2b39d618e53702a06`
+**Source fingerprint (SHA-256):** `d2869c681e0485f5946a53f0582188ded2183ecd741ea1ff6a591932b18b5abe`
