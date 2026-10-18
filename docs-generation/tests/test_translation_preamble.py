@@ -138,6 +138,13 @@ class StripLeakPreambleTests(unittest.TestCase):
         self.assertEqual(removed, 0)
         self.assertEqual(cleaned, text)
 
+    def test_zh_ordinary_yiwen_description_is_kept(self):
+        lead = "以下是译文处理节点的使用说明。"
+        text = _page("测试节点", lead, "概述", "正文。")
+        cleaned, removed = ftp.strip_leak(text, "zh")
+        self.assertEqual(removed, 0)
+        self.assertEqual(cleaned, text)
+
     def test_zh_ordinary_yixia_shi_jiang_lead_is_kept(self):
         lead = "以下是将输入图像缩放到目标分辨率的步骤。"
         text = _page("测试节点", lead, "概述", "正文。")

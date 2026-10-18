@@ -44,7 +44,7 @@ DOCS_ROOT = REPO_ROOT.parent / "comfyui_embedded_docs" / "docs"
 # Shape A / C: "here is the translation …" openers, per language
 PREAMBLE_SENTENCES: dict[str, list[str]] = {
     "zh": [r"^以下是您要求的", r"^以下是为您翻译", r"^以下是翻译结果", r"^这是.*?翻译结果",
-           r"^以下是将.*?译", r"^以下是.*?译文", r"^这是.*?(?<!翻)译文",
+           r"^以下是将.*?译", r"^以下是.*?译文(?:[。．：:]|$)", r"^这是.*?(?<!翻)译文",
            # "this is a technical translation of the node docs" (same class as PR #189)
            r"(?:^|。)这是[^。\n]*?技术翻译",
            r"(?:^|。)本文(?:档|件)?是[^。\n]*?技术翻译",
