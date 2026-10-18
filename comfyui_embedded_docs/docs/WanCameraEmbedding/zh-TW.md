@@ -7,9 +7,9 @@
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `相機姿勢` | 要模擬的相機運動類型（預設："Static"） | COMBO | 是 | "Static"<br>"Pan Up"<br>"Pan Down"<br>"Pan Left"<br>"Pan Right"<br>"Zoom In"<br>"Zoom Out"<br>"Anti Clockwise (ACW)"<br>"ClockWise (CW)" |
-| `寬度` | 輸出的寬度，單位為像素（預設：832，步長：16） | INT | 是 | 16 to MAX_RESOLUTION |
-| `高度` | 輸出的高度，單位為像素（預設：480，步長：16） | INT | 是 | 16 to MAX_RESOLUTION |
-| `長度` | 相機軌跡序列的長度（預設：81，步長：4） | INT | 是 | 1 to MAX_RESOLUTION |
+| `寬度` | 輸出的寬度，單位為像素（預設：832，步長：16） | INT | 是 | 16 至 MAX_RESOLUTION |
+| `高度` | 輸出的高度，單位為像素（預設：480，步長：16） | INT | 是 | 16 至 MAX_RESOLUTION |
+| `長度` | 相機軌跡序列的長度（預設：81，步長：4） | INT | 是 | 1 至 MAX_RESOLUTION |
 | `速度` | 相機移動速度（預設：1.0，步長：0.1） | FLOAT | 否 | 0.0 至 10.0 |
 | `fx` | 焦距 x 參數（預設：0.5，步長：0.000000001） | FLOAT | 否 | 0.0 至 1.0 |
 | `fy` | 焦距 y 參數（預設：0.5，步長：0.000000001） | FLOAT | 否 | 0.0 至 1.0 |

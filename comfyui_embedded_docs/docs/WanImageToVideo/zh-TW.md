@@ -9,9 +9,9 @@ WanImageToVideo 節點會準備用於影片生成的條件與潛在表示。它�
 | `正向` | 用於引導生成的正向條件輸入 | CONDITIONING | 是 | - |
 | `負向` | 用於引導生成的負向條件輸入 | CONDITIONING | 是 | - |
 | `vae` | 用於將影像編碼到潛在空間的 VAE 模型 | VAE | 是 | - |
-| `寬度` | 生成影片的寬度（預設：832，步長：16） | INT | 是 | 16 to MAX_RESOLUTION |
-| `高度` | 生成影片的高度（預設：480，步長：16） | INT | 是 | 16 to MAX_RESOLUTION |
-| `長度` | 影片中的影格數（預設：81，步長：4） | INT | 是 | 1 to MAX_RESOLUTION |
+| `寬度` | 生成影片的寬度（預設：832，步長：16） | INT | 是 | 16 至 MAX_RESOLUTION |
+| `高度` | 生成影片的高度（預設：480，步長：16） | INT | 是 | 16 至 MAX_RESOLUTION |
+| `長度` | 影片中的影格數（預設：81，步長：4） | INT | 是 | 1 至 MAX_RESOLUTION |
 | `批次大小` | 一次批次中生成的影片數量（預設：1） | INT | 是 | 1 至 4096 |
 | `clip_vision_output` | 可選的 CLIP vision 輸出，會作為額外條件加入 `positive` 與 `negative` 輸入 | CLIP_VISION_OUTPUT | 否 | - |
 | `起始影像` | 可選的起始影像，用於初始化影片。提供時，會將其縮放至指定的 `width` 與 `height`，並放置在影格序列的開頭；超過 `length` 的影格會被忽略。其餘影格會以中性灰（0.5）值填充，除非提供了 `ref_pad_image`。 | IMAGE | 否 | - |

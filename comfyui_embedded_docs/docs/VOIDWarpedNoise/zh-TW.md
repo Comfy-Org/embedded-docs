@@ -8,9 +8,9 @@
 | --- | --- | --- | --- | --- |
 | `optical_flow` | 來自 OpticalFlowLoader (RAFT-large) 的光流模型。 | OPTICAL_FLOW | 是 | - |
 | `video` | Pass 1 輸出影片影格 [T, H, W, 3]。 | IMAGE | 是 | - |
-| `width` | 目標寬度，單位為像素（預設：672）。在產生雜訊之前，會先將輸入影片縮放到此寬度，而 latent 寬度則由 `width` ÷ 8 得出。 | INT | 是 | 16 to MAX_RESOLUTION （步進值：8） |
-| `height` | 目標高度，單位為像素（預設：384）。在產生雜訊之前，會先將輸入影片縮放到此高度，而 latent 高度則由 `height` ÷ 8 得出。 | INT | 是 | 16 to MAX_RESOLUTION （步進值：8） |
-| `length` | 像素影格數量。會向下取整以使 `latent_t` 為偶數（`patch_size_t=2` 的要求），例如 49 變成 45（預設：45）。 | INT | 是 | 1 to MAX_RESOLUTION （步進值：1） |
+| `width` | 目標寬度，單位為像素（預設：672）。在產生雜訊之前，會先將輸入影片縮放到此寬度，而 latent 寬度則由 `width` ÷ 8 得出。 | INT | 是 | 16 至 MAX_RESOLUTION （步進值：8） |
+| `height` | 目標高度，單位為像素（預設：384）。在產生雜訊之前，會先將輸入影片縮放到此高度，而 latent 高度則由 `height` ÷ 8 得出。 | INT | 是 | 16 至 MAX_RESOLUTION （步進值：8） |
+| `length` | 像素影格數量。會向下取整以使 `latent_t` 為偶數（`patch_size_t=2` 的要求），例如 49 變成 45（預設：45）。 | INT | 是 | 1 至 MAX_RESOLUTION （步進值：1） |
 | `batch_size` | 要產生的相同扭曲雜訊序列數量（預設：1）。產生的雜訊會沿批次維度重複 `batch_size` 次。 | INT | 是 | 1 至 64 |
 
 **關於 `length` 參數的注意事項：** `length` 值會自動向下取整至最接近且能產生偶數 `latent_t` 維度的值，這是 CogVideoX-Fun-V1.5 模型的 `patch_size_t=2` 限制所要求的（例如 49 會變成 45）。當發生此取整時，節點會記錄一則警告。超出調整後 `length` 的影格會被忽略，且雜訊會重新取樣為產生的 latent 影格數量。
