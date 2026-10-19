@@ -12,7 +12,7 @@ Flux 3 Image to Video anima de 1 a 10 imágenes con FLUX 3. Cada imagen se convi
 | `prompt` | Cómo debe moverse y sonar la escena; el prompt se interpreta y expande antes de la generación. Debe contener al menos un carácter. | STRING | Sí | Texto multilínea (predeterminado: vacío) |
 | `aspect_ratio` | Relación de aspecto de salida. `"auto"` elige una a partir del prompt y las entradas. | COMBO | Sí | `"auto"` (predeterminado)<br>otras relaciones de aspecto disponibles |
 | `duration` | Duración del clip en segundos. `"auto"` ajusta la duración al contenido. | COMBO | Sí | `"auto"` (predeterminado)<br>otras duraciones disponibles |
-| `resolution` | Resolución de salida. | COMBO | Sí | `"720p"` (predeterminado)<br>`"1080p"` |
+| `resolution` | Resolución de salida. | COMBO | Sí | `"720p"` (predeterminado)<br>`"1080p"`<br>`"1440p"`<br>`"2160p"` |
 | `generate_audio` | Genera audio sincronizado (ambiente, voz, efectos). Desactivado produce un video sin pista de audio. | BOOLEAN | Sí | true / false (predeterminado: true) |
 | `safety_tolerance` | Tolerancia de moderación; 0 es la más estricta. Las solicitudes que envían imágenes o video se limitan a 2 sin importar lo que configures aquí. | INT | Sí | 0 a 4 (predeterminado: 2, configuración avanzada) |
 | `seed` | Semilla para determinar si el nodo debe volver a ejecutarse; FLUX 3 elige su propia semilla, por lo que los resultados reales no son deterministas independientemente de este valor. | INT | Sí | 0 a 4294967295 (predeterminado: 42, control después de generar) |
@@ -50,4 +50,4 @@ Como este nodo envía imágenes, `safety_tolerance` se limita a 2 sin importar e
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Flux3ImageToVideoNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `1c49838dfa13adc2ed70a51094f0dd860df7207970b8dceab6bb273653d7161c`
+**Source fingerprint (SHA-256):** `0ec0afedd98997702779b580fb185e5b4f20d81273b036f1c68aa705892499bd`

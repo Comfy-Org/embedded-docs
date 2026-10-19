@@ -25,4 +25,4 @@ Nota: `safety_tolerance` è un input avanzato. L'input `seed` include i controll
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Flux3TextToVideoNode/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `9957c78291c320b1a8a6a9c0edeefae5f1ccc21a6b58f0b39069c2df8decd100`
+**Source fingerprint (SHA-256):** `2fa8c715c8467e2a2a3e131875d3b459a5599c2bab550656670aa1461e896aab`

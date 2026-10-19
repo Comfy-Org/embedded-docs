@@ -9,12 +9,12 @@
 | `提示詞` | 您想要的內容，以自然語言描述；提示會在生成前被解讀並擴展。若要產生分層音訊，請分別描述環境音、音樂和語音。（預設值：""） | STRING | 是 | 多行文字 |
 | `長寬比` | 輸出長寬比。'auto' 會根據提示和輸入選擇一個。（預設值："auto"） | COMBO | 是 | 多個可用選項，包括 `"auto"` |
 | `時長` | 影片片段長度，以秒為單位。'auto' 會讓長度配合內容。（預設值："auto"） | COMBO | 是 | 多個可用選項，包括 `"auto"` |
-| `解析度` | 輸出解析度。（預設值："720p"） | COMBO | 是 | `"720p"`<br>`"1080p"` |
+| `解析度` | 輸出解析度。（預設值："720p"） | COMBO | 是 | `"720p"`<br>`"1080p"`<br>`"1440p"`<br>`"2160p"` |
 | `產生音訊` | 生成同步音訊（環境音、語音、效果音）。關閉時會產生沒有音軌的影片。（預設值：True） | BOOLEAN | 是 | True<br>False |
 | `安全容忍度` | 審核容忍度，0 為最嚴格。傳送圖片或影片的請求，無論此處設定為何，上限皆為 2。（預設值：2） | INT | 是 | 0 到 4 |
 | `種子` | 用於決定節點是否應重新執行的種子；FLUX 3 會自行選擇種子，因此無論此值為何，實際結果都不具確定性。（預設值：42） | INT | 是 | 0 到 4294967295 |
 
-注意：`safety_tolerance` 是進階輸入。`seed` 輸入在 UI 中包含 Control After Generate 控制項。顯示的價格取決於 `resolution` 和 `duration`：HD（720p）每秒收費 $0.2431，FHD（1080p）每秒收費 $0.4147。當選擇固定長度時，會顯示該影片片段的預估總費用；當 `duration` 為 "auto" 時，則顯示每秒費率。
+注意：`safety_tolerance` 是進階輸入。`seed` 輸入在 UI 中包含 Control After Generate 控制項。顯示的價格取決於 `resolution` 和 `duration`：HD（720p）每秒收費 $0.2431，FHD（1080p）每秒收費 $0.4147。QHD（1440p）每秒收費 $0.572，UHD（2160p）每秒收費 $1.144。當選擇固定長度時，會顯示該影片片段的預估總費用；當 `duration` 為 "auto" 時，則顯示每秒費率。
 
 ## 輸出
 
@@ -25,4 +25,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Flux3TextToVideoNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `9957c78291c320b1a8a6a9c0edeefae5f1ccc21a6b58f0b39069c2df8decd100`
+**Source fingerprint (SHA-256):** `2fa8c715c8467e2a2a3e131875d3b459a5599c2bab550656670aa1461e896aab`
