@@ -8,16 +8,16 @@ Der Bria FIBO Image Edit-Node bearbeitet ein vorhandenes Bild anhand einer Texta
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `model` | Die Modellversion, die für die Bildbearbeitung verwendet werden soll. | COMBO | Ja | `"FIBO"` |
-| `image` | Das Eingabebild, das Sie bearbeiten möchten. | IMAGE | Ja | - |
-| `prompt` | Anweisung zum Bearbeiten des Bildes (Standard: leer). | STRING | Ja | - |
-| `negative_prompt` | Text, der beschreibt, was im bearbeiteten Bild nicht erscheinen soll (Standard: leer). | STRING | Ja | - |
-| `structured_prompt` | Eine Zeichenkette, die den strukturierten Bearbeitungs-Prompt im JSON-Format enthält. Verwenden Sie diesen anstelle des üblichen Prompts für eine präzise, programmatische Steuerung (Standard: leer). | STRING | Ja | - |
-| `seed` | Eine Zahl, die zur Initialisierung der Zufallsgenerierung verwendet wird, um reproduzierbare Ergebnisse zu gewährleisten (Standard: 1). | INT | Ja | 1 bis 2147483647 |
-| `guidance_scale` | Ein höherer Wert bewirkt, dass sich das Bild stärker an den Prompt hält (Standard: 3). | FLOAT | Ja | 3.0 bis 5.0 |
-| `steps` | Die Anzahl der Denoising-Schritte, die vom Modell ausgeführt werden (Standard: 50). | INT | Ja | 20 bis 50 |
-| `moderation` | Moderationseinstellungen. Die Auswahl von `"true"` zeigt zusätzliche Moderationsoptionen an. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
-| `mask` | Wenn weggelassen, wird die Bearbeitung auf das gesamte Bild angewendet. | MASK | Nein | - |
+| `Modell` | Die Modellversion, die für die Bildbearbeitung verwendet werden soll. | COMBO | Ja | `"FIBO"` |
+| `Bild` | Das Eingabebild, das Sie bearbeiten möchten. | IMAGE | Ja | - |
+| `Prompt` | Anweisung zum Bearbeiten des Bildes (Standard: leer). | STRING | Ja | - |
+| `Negativer Prompt` | Text, der beschreibt, was im bearbeiteten Bild nicht erscheinen soll (Standard: leer). | STRING | Ja | - |
+| `Strukturierter Prompt` | Eine Zeichenkette, die den strukturierten Bearbeitungs-Prompt im JSON-Format enthält. Verwenden Sie diesen anstelle des üblichen Prompts für eine präzise, programmatische Steuerung (Standard: leer). | STRING | Ja | - |
+| `Seed` | Eine Zahl, die zur Initialisierung der Zufallsgenerierung verwendet wird, um reproduzierbare Ergebnisse zu gewährleisten (Standard: 1). | INT | Ja | 1 bis 2147483647 |
+| `Guidance-Skala` | Ein höherer Wert bewirkt, dass sich das Bild stärker an den Prompt hält (Standard: 3). | FLOAT | Ja | 3.0 bis 5.0 |
+| `Schritte` | Die Anzahl der Denoising-Schritte, die vom Modell ausgeführt werden (Standard: 50). | INT | Ja | 20 bis 50 |
+| `Moderation` | Moderationseinstellungen. Die Auswahl von `"true"` zeigt zusätzliche Moderationsoptionen an. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
+| `Maske` | Wenn weggelassen, wird die Bearbeitung auf das gesamte Bild angewendet. | MASK | Nein | - |
 
 ### Moderationseingaben
 
