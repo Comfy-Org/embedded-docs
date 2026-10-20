@@ -31,7 +31,8 @@ Wenn `moderation` auf `"true"` gesetzt ist, werden diese zusätzlichen Eingaben 
 
 **Wichtige Einschränkungen:**
 
-- Mindestens einer der Werte `prompt` oder `structured_prompt` muss nicht leer sein. Wenn beide leer sind, gibt der Node einen Fehler aus.
+- Genau einer der Werte `prompt` oder `structured_prompt` muss nicht leer sein. Sind beide leer oder beide gesetzt, gibt der Node einen Fehler aus.
+- Wenn `mask` verbunden ist, muss es dieselbe Breite und Höhe wie `image` haben, sonst gibt der Node einen Fehler aus.
 - Wenn `moderation` auf `"true"` gesetzt ist, werden die drei oben genannten Moderationseingaben angezeigt.
 
 ## Ausgaben
@@ -44,4 +45,4 @@ Wenn `moderation` auf `"true"` gesetzt ist, werden diese zusätzlichen Eingaben 
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaImageEditNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `e66aaa563a82407408f25b289011a491c8b158822fc2db8912daf73731750081`
+**Source fingerprint (SHA-256):** `0dac537902d73f0cf1803433afa3ede27ed4e3e9cd543bc2e1909b3d49606dd2`

@@ -31,7 +31,8 @@
 
 **אילוצים חשובים:**
 
-- לפחות אחד מהפרמטרים `prompt` או `structured_prompt` חייב להיות לא ריק. אם שניהם ריקים, הצומת יעלה שגיאה.
+- בדיוק אחד מהפרמטרים `prompt` או `structured_prompt` חייב להיות לא ריק. אם שניהם ריקים או ששניהם מלאים, הצומת יעלה שגיאה.
+- אם `mask` מחובר, עליו להיות באותו רוחב וגובה כמו `image`; אחרת הצומת יעלה שגיאה.
 - כאשר `moderation` מוגדר ל-`"true"`, שלושת קלטי המודרציה שלמעלה מוצגים.
 
 ## פלטים
@@ -44,4 +45,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaImageEditNode/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `e66aaa563a82407408f25b289011a491c8b158822fc2db8912daf73731750081`
+**Source fingerprint (SHA-256):** `0dac537902d73f0cf1803433afa3ede27ed4e3e9cd543bc2e1909b3d49606dd2`

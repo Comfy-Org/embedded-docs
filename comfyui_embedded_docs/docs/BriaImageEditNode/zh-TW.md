@@ -31,7 +31,8 @@ Bria FIBO 影像編輯節點使用文字指令編輯現有影像。它將影像�
 
 **重要限制：**
 
-- `prompt` 與 `structured_prompt` 至少必須有一個為非空。如果兩者皆為空白，節點將引發錯誤。
+- `prompt` 與 `structured_prompt` 必須恰好有一個為非空。兩者皆為空白或皆非空白時，節點都會引發錯誤。
+- 連接 `mask` 時，其寬高必須與 `image` 相同，否則節點將引發錯誤。
 - 當 `moderation` 設定為 `"true"` 時，將顯示上述三個內容審核輸入。
 
 ## 輸出
@@ -44,4 +45,4 @@ Bria FIBO 影像編輯節點使用文字指令編輯現有影像。它將影像�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaImageEditNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `e66aaa563a82407408f25b289011a491c8b158822fc2db8912daf73731750081`
+**Source fingerprint (SHA-256):** `0dac537902d73f0cf1803433afa3ede27ed4e3e9cd543bc2e1909b3d49606dd2`
