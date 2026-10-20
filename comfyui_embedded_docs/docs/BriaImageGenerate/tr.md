@@ -29,7 +29,7 @@ Metin isteminden, yapılandırılmış JSON isteminden veya tek bir referans gö
 - `prompt`, `structured_prompt` veya bir referans `image` değerlerinden en az birini sağlayın. Üçü de boşsa düğüm bir hata verir.
 - Bir referans görüntü `structured_prompt` ile birleştirilemez: birini veya diğerini kullanın.
 - FIBO 2.0 oranları (`"16:10"`, `"10:16"`, `"2:1"`, `"1:2"`, `"21:9"`, `"9:21"`, `"3:1"`, `"1:3"`, `"4:1"`, `"1:4"`, `"5:1"`, `"1:5"`) `resolution` değerinin `"1MP"` olmasını ve `prompt` veya `structured_prompt` değerlerinden tam olarak birinin sağlanmasını gerektirir.
-- Bu düğüm ücretli bir API düğümüdür; her çalıştırma yaklaşık 0.0572 USD tutarındadır.
+- Bu düğüm ücretli bir API düğümüdür; ComfyUI her çalıştırma için yaklaşık 0.0572 USD ücret alır.
 
 ## Çıktılar
 

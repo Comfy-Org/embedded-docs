@@ -20,7 +20,7 @@ FLUX 3 Max Image to Video animates 1 to 10 images with FLUX 3 Max. Each image be
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `times` | One time in seconds per image, comma-separated and increasing, e.g. "0, 2.5, 5". Only appears when `placement` is `"at times"`. | STRING | No | Comma-separated seconds (default: "0") |
+| `times` | One time in seconds per image, comma-separated and increasing, e.g. "0, 2.5, 5". Only appears when `placement` is `"at times"`. | STRING | No | Comma-separated seconds |
 
 Note: `prompt` must contain at least one character. `keyframes` must hold at least one image and cannot hold more than 10; a batched input counts once per image.
 

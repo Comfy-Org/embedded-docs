@@ -13,14 +13,14 @@ FLUX 3 Max Image to Video animiert 1 bis 10 Bilder mit FLUX 3 Max. Jedes Bild wi
 | `duration` | Cliplänge in Sekunden (Standard: `"5"`). | COMBO | Ja | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"`<br>`"15"`<br>`"16"`<br>`"17"`<br>`"18"`<br>`"19"`<br>`"20"` |
 | `resolution` | Ausgabeauflösung (Standard: `"720p"`). | COMBO | Ja | `"720p"`<br>`"1080p"` |
 | `reasoning_level` | Wie stark das Modell den Prompt vor der Generierung durchdenkt und erweitert. `"high"` dauert länger; der Preis ist derselbe (Standard: `"high"`). | COMBO | Ja | `"low"`<br>`"high"` |
-| `generate_audio` | Synchronisiertes Audio generieren. Aus erzeugt ein Video ohne Audiospur (Standard: true). | BOOLEAN | Ja | `true`<br>`false` |
+| `generate_audio` | Synchronisiertes Audio generieren. Wenn deaktiviert, erzeugt der Node ein Video ohne Audiospur (Standard: true). | BOOLEAN | Ja | `true`<br>`false` |
 | `seed` | Seed, der steuert, ob der Node erneut ausgeführt wird. Die Ergebnisse sind unabhängig von diesem Wert nicht deterministisch (Standard: 42). | INT | Ja | 0 bis 2147483646 |
 
 ### at times Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `times` | Ein Zeitpunkt in Sekunden pro Bild, durch Kommas getrennt und ansteigend, z. B. "0, 2.5, 5". Erscheint nur, wenn `placement` auf `"at times"` gesetzt ist. | STRING | Nein | Durch Kommas getrennte Sekunden (Standard: "0") |
+| `times` | Ein Zeitpunkt in Sekunden pro Bild, durch Kommas getrennt und ansteigend, z. B. "0, 2.5, 5". Erscheint nur, wenn `placement` auf `"at times"` gesetzt ist. | STRING | Nein | Durch Kommas getrennte Sekunden |
 
 Hinweis: `prompt` muss mindestens ein Zeichen enthalten. `keyframes` muss mindestens ein Bild enthalten und darf nicht mehr als 10 enthalten; eine gebatchte Eingabe zählt einmal pro Bild.
 

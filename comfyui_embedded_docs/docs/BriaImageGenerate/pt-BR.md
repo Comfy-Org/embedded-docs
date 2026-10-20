@@ -29,7 +29,7 @@ Quando `moderation` é definido como `"true"`, estas entradas adicionais ficam d
 - Forneça pelo menos um entre `prompt`, `structured_prompt` ou uma `image` de referência. Se todos os três estiverem vazios, o nó gera um erro.
 - Uma imagem de referência não pode ser combinada com `structured_prompt`: use um ou outro.
 - As proporções do FIBO 2.0 (`"16:10"`, `"10:16"`, `"2:1"`, `"1:2"`, `"21:9"`, `"9:21"`, `"3:1"`, `"1:3"`, `"4:1"`, `"1:4"`, `"5:1"`, `"1:5"`) exigem `resolution` `"1MP"` e exatamente um entre `prompt` ou `structured_prompt`.
-- Este nó é um nó de API pago; cada execução custa aproximadamente 0,0572 USD.
+- Este nó é um nó de API pago; o ComfyUI cobra aproximadamente 0,0572 USD por execução.
 
 ## Saídas
 

@@ -20,7 +20,7 @@ FLUX 3 Max Image to Video, FLUX 3 Max ile 1 ila 10 görseli canlandırır. Her g
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `times` | Her görsel için saniye cinsinden bir zaman; virgülle ayrılmış ve artan sırada, ör. "0, 2.5, 5". Yalnızca `placement` değeri `"at times"` olduğunda görünür. | STRING | Hayır | Virgülle ayrılmış saniyeler (varsayılan: "0") |
+| `times` | Her görsel için saniye cinsinden bir zaman; virgülle ayrılmış ve artan sırada, ör. "0, 2.5, 5". Yalnızca `placement` değeri `"at times"` olduğunda görünür. | STRING | Hayır | Virgülle ayrılmış saniyeler |
 
 Not: `prompt` en az bir karakter içermelidir. `keyframes` en az bir görsel içermeli ve 10'dan fazla görsel içeremez; toplu girdi her görsel için bir kez sayılır.
 

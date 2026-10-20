@@ -11,7 +11,7 @@ FLUX 3 Max Text to Video erzeugt aus einem Text-Prompt ein Video mit synchronisi
 | `duration` | Länge des Clips in Sekunden (Standard: `"5"`). | COMBO | Ja | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"`<br>`"15"`<br>`"16"`<br>`"17"`<br>`"18"`<br>`"19"`<br>`"20"` |
 | `resolution` | Auflösung der Ausgabe (Standard: `"720p"`). | COMBO | Ja | `"720p"`<br>`"1080p"` |
 | `reasoning_level` | Wie stark das Modell den Prompt vor der Generierung durchdenkt und erweitert. `"high"` dauert länger; der Preis bleibt gleich (Standard: `"high"`). | COMBO | Ja | `"low"`<br>`"high"` |
-| `generate_audio` | Synchronisiertes Audio generieren. Aus erzeugt ein Video ohne Audiospur (Standard: true). | BOOLEAN | Ja | `true`<br>`false` |
+| `generate_audio` | Synchronisiertes Audio generieren. Wenn deaktiviert, erzeugt der Node ein Video ohne Audiospur (Standard: true). | BOOLEAN | Ja | `true`<br>`false` |
 | `seed` | Seed, der steuert, ob der Node erneut ausgeführt wird. Die Ergebnisse sind unabhängig von diesem Wert nicht deterministisch (Standard: 42). | INT | Ja | 0 bis 2147483646 |
 
 Hinweis: `prompt` muss mindestens ein Zeichen enthalten. Der angezeigte Preis richtet sich nach `resolution` und `duration`: 720p wird mit 0,060775 USD pro Sekunde und 1080p mit 0,103675 USD pro Sekunde berechnet, bis zum 7. November 2026; danach mit 0,2431 USD bzw. 0,4147 USD pro Sekunde. Die geschätzten Gesamtkosten für den Clip werden in der Benutzeroberfläche angezeigt.

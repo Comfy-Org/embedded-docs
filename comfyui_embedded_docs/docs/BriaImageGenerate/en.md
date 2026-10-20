@@ -29,7 +29,7 @@ When `moderation` is set to `"true"`, these additional inputs become available:
 - Provide at least one of `prompt`, `structured_prompt` or a reference `image`. If all three are empty, the node raises an error.
 - A reference image cannot be combined with `structured_prompt`: use one or the other.
 - The FIBO 2.0 ratios (`"16:10"`, `"10:16"`, `"2:1"`, `"1:2"`, `"21:9"`, `"9:21"`, `"3:1"`, `"1:3"`, `"4:1"`, `"1:4"`, `"5:1"`, `"1:5"`) require `resolution` `"1MP"` and exactly one of `prompt` or `structured_prompt`.
-- This node is a paid API node; each run costs approximately 0.0572 USD.
+- This node is a paid API node; ComfyUI charges approximately 0.0572 USD per run.
 
 ## Outputs
 

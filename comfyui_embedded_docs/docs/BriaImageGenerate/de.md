@@ -29,7 +29,7 @@ Wenn `moderation` auf `"true"` gesetzt ist, werden diese zusätzlichen Eingaben 
 - Geben Sie mindestens eines von `prompt`, `structured_prompt` oder einem Referenz-`image` an. Wenn alle drei leer sind, löst der Node einen Fehler aus.
 - Ein Referenzbild kann nicht mit `structured_prompt` kombiniert werden: Verwenden Sie entweder das eine oder das andere.
 - Die FIBO-2.0-Verhältnisse (`"16:10"`, `"10:16"`, `"2:1"`, `"1:2"`, `"21:9"`, `"9:21"`, `"3:1"`, `"1:3"`, `"4:1"`, `"1:4"`, `"5:1"`, `"1:5"`) erfordern `resolution` `"1MP"` und genau eines von `prompt` oder `structured_prompt`.
-- Dieser Node ist ein kostenpflichtiger API-Node; jeder Lauf kostet ungefähr 0,0572 USD.
+- Dieser Node ist ein kostenpflichtiger API-Node; ComfyUI berechnet ungefähr 0,0572 USD pro Lauf.
 
 ## Ausgaben
 

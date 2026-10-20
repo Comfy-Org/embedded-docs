@@ -20,7 +20,7 @@ FLUX 3 Max Image to Video anima de 1 a 10 imagens com o FLUX 3 Max. Cada imagem 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `times` | Um tempo em segundos por imagem, separados por vírgula e em ordem crescente, por exemplo, "0, 2.5, 5". Aparece apenas quando `placement` é `"at times"`. | STRING | Não | Segundos separados por vírgula (padrão: "0") |
+| `times` | Um tempo em segundos por imagem, separados por vírgula e em ordem crescente, por exemplo, "0, 2.5, 5". Aparece apenas quando `placement` é `"at times"`. | STRING | Não | Segundos separados por vírgula |
 
 Observação: `prompt` deve conter pelo menos um caractere. `keyframes` deve conter pelo menos uma imagem e não pode conter mais de 10; uma entrada em lote conta uma vez por imagem.
 

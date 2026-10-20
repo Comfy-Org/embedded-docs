@@ -29,7 +29,7 @@ Cuando `moderation` se establece en `"true"`, estas entradas adicionales quedan 
 - Proporcione al menos uno de `prompt`, `structured_prompt` o una `image` de referencia. Si los tres están vacíos, el nodo lanza un error.
 - Una imagen de referencia no se puede combinar con `structured_prompt`: use uno u otro.
 - Las relaciones de FIBO 2.0 (`"16:10"`, `"10:16"`, `"2:1"`, `"1:2"`, `"21:9"`, `"9:21"`, `"3:1"`, `"1:3"`, `"4:1"`, `"1:4"`, `"5:1"`, `"1:5"`) requieren `resolution` `"1MP"` y exactamente uno de `prompt` o `structured_prompt`.
-- Este nodo es un nodo de API de pago; cada ejecución cuesta aproximadamente 0.0572 USD.
+- Este nodo es un nodo de API de pago; ComfyUI cobra aproximadamente 0.0572 USD por ejecución.
 
 ## Salidas
 

@@ -29,7 +29,7 @@ Lorsque `moderation` est défini sur `"true"`, ces entrées supplémentaires dev
 - Fournissez au moins l'un des éléments suivants : `prompt`, `structured_prompt` ou une `image` de référence. Si les trois sont vides, le nœud génère une erreur.
 - Une image de référence ne peut pas être combinée avec `structured_prompt` : utilisez l'un ou l'autre.
 - Les ratios FIBO 2.0 (`"16:10"`, `"10:16"`, `"2:1"`, `"1:2"`, `"21:9"`, `"9:21"`, `"3:1"`, `"1:3"`, `"4:1"`, `"1:4"`, `"5:1"`, `"1:5"`) nécessitent `resolution` `"1MP"` et exactement l'un de `prompt` ou `structured_prompt`.
-- Ce nœud est un nœud API payant ; chaque exécution coûte environ 0,0572 USD.
+- Ce nœud est un nœud API payant ; ComfyUI facture environ 0,0572 USD par exécution.
 
 ## Sorties
 
