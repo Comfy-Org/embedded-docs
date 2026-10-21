@@ -1,6 +1,6 @@
 # HeyGen Voice 1.0 Text to Speech
 
-متن را با صدایی که با HeyGen Voice 1.0 Instant Clone شبیه‌سازی شده است، بیان کنید. این گره متن و شناسه صدا را به HeyGen می‌فرستد و گفتار تولیدشده را به‌صورت صدا برمی‌گرداند. دو مدل موجود است: `heygen-voice-1` و `heygen-voice-1-turbo` که سریع‌تر است و نصف هزینه را دارد.
+متن را با صدایی که با HeyGen Voice 1.0 Instant Clone شبیه‌سازی شده است، بیان کنید. این گره متن و شناسه صدا را به HeyGen می‌فرستد و گفتار تولیدشده را به‌صورت صدا برمی‌گرداند. دو مدل موجود است: `heygen-voice-1` و `heygen-voice-1-turbo` که سریع‌تر و کم‌هزینه‌تر است.
 
 انتخاب یک `model` پارامترهای مخصوص آن مدل را نمایش می‌دهد.
 
@@ -8,7 +8,7 @@
 
 | پارامتر | توضیحات | نوع داده | الزامی | بازه |
 |-----------|-------------|-----------|----------|-------|
-| `model` | مدل مورد استفاده. `heygen-voice-1-turbo` سریع‌تر است و نصف هزینه را دارد. انتخاب یک مدل پارامترهای مخصوص آن را نمایش می‌دهد: `voice_id`، `text`، `language` و `expressiveness_boost`. | DYNAMIC_COMBO | بله | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `model` | مدل مورد استفاده. `heygen-voice-1-turbo` سریع‌تر و کم‌هزینه‌تر است. انتخاب یک مدل پارامترهای مخصوص آن را نمایش می‌دهد: `voice_id`، `text`، `language` و `expressiveness_boost`. | DYNAMIC_COMBO | بله | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `voice_id` | صدا از HeyGen Voice 1.0 Instant Clone (پیش‌فرض: خالی). | STRING | بله | N/A |
 | `text` | متنی که باید بیان شود. حداکثر 5000 کاراکتر؛ گفتار طولانی‌تر از حدود 12 دقیقه ناموفق می‌شود، بنابراین متن‌های بسیار طولانی چینی یا ژاپنی را تقسیم کنید (پیش‌فرض: خالی). | STRING | بله | 1 تا 5000 کاراکتر |
 | `language` | زبان متن. آن را برای زبان‌های نزدیک به هم مانند صربی یا مالایی تنظیم کنید، زیرا تشخیص خودکار ممکن است آن‌ها را اشتباه بگیرد (پیش‌فرض: `"auto"`). | COMBO | بله | `"auto"`<br>چندین پیش‌فرض زبان |
@@ -25,4 +25,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceTextToSpeechNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `61e345563db04a4dfc61e8862a328d5062aa2a77af57c2209ca4ca3862930be8`
+**Source fingerprint (SHA-256):** `936cb63237681779dd4d9a74d048afae93160638d069be6b16e5855d333e584a`

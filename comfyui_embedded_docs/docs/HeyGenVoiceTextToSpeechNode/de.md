@@ -1,6 +1,6 @@
 # HeyGen Voice 1.0 Text to Speech
 
-Spricht Text in einer mit HeyGen Voice 1.0 Instant Clone geklonten Stimme aus. Der Node sendet den Text und die Voice-ID an HeyGen und gibt die erzeugte Sprachausgabe als Audio zurück. Zwei Modelle sind verfügbar: `heygen-voice-1` und das schnellere `heygen-voice-1-turbo`, das halb so viel kostet.
+Spricht Text in einer mit HeyGen Voice 1.0 Instant Clone geklonten Stimme aus. Der Node sendet den Text und die Voice-ID an HeyGen und gibt die erzeugte Sprachausgabe als Audio zurück. Zwei Modelle sind verfügbar: `heygen-voice-1` und das schnellere und günstigere `heygen-voice-1-turbo`.
 
 Die Auswahl eines `model` zeigt die für dieses Modell spezifischen Parameter an.
 
@@ -8,7 +8,7 @@ Die Auswahl eines `model` zeigt die für dieses Modell spezifischen Parameter an
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Zu verwendendes Modell. `heygen-voice-1-turbo` ist schneller und kostet die Hälfte. Die Auswahl eines Modells zeigt die dafür spezifischen Parameter an: `voice_id`, `text`, `language` und `expressiveness_boost`. | DYNAMIC_COMBO | Ja | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `model` | Zu verwendendes Modell. `heygen-voice-1-turbo` ist schneller und günstiger. Die Auswahl eines Modells zeigt die dafür spezifischen Parameter an: `voice_id`, `text`, `language` und `expressiveness_boost`. | DYNAMIC_COMBO | Ja | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `voice_id` | Stimme aus HeyGen Voice 1.0 Instant Clone (Standard: leer). | STRING | Ja | N/A |
 | `text` | Text, der gesprochen werden soll. Bis zu 5000 Zeichen; Sprachausgaben, die länger als etwa 12 Minuten dauern, schlagen fehl, daher sehr langen chinesischen oder japanischen Text aufteilen (Standard: leer). | STRING | Ja | 1 bis 5000 Zeichen |
 | `language` | Sprache des Textes. Legen Sie sie für eng verwandte Sprachen wie Serbisch oder Malaiisch fest, bei denen die automatische Erkennung zu Verwechslungen neigen kann (Standard: "auto"). | COMBO | Ja | `"auto"`<br>Mehrere Sprach-Presets |
@@ -25,4 +25,4 @@ Die Auswahl eines `model` zeigt die für dieses Modell spezifischen Parameter an
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceTextToSpeechNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `61e345563db04a4dfc61e8862a328d5062aa2a77af57c2209ca4ca3862930be8`
+**Source fingerprint (SHA-256):** `936cb63237681779dd4d9a74d048afae93160638d069be6b16e5855d333e584a`

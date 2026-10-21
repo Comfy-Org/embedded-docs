@@ -43,9 +43,9 @@ Bria Expand Image expande una imagen más allá de sus bordes originales generan
 
 Las opciones de relación de aspecto preestablecidas (`1:1`, `2:3`, `3:2`, `3:4`, `4:3`, `4:5`, `5:4`, `9:16`, `16:9`) no tienen entradas adicionales.
 
-Cuando `expand_mode` es `custom_ratio`, `ratio_width` y `ratio_height` definen una relación de aspecto objetivo. Bria solo acepta relaciones ancho-alto entre 0.5 y 3.0. Si la relación está fuera de este rango, se genera un error y se debe usar el modo `manual` en su lugar.
+Cuando `expand_mode` es `custom_ratio`, `ratio_width` y `ratio_height` definen una relación de aspecto objetivo. Bria solo acepta relaciones ancho-alto entre 0.5 y 3.0. Si la relación está fuera de este rango, se genera un error y se debe usar el modo `manual` en su lugar. El lienzo expandido está limitado a 25 megapíxeles; si el resultado necesita un lienzo mayor, el nodo genera un error, así que reduce la imagen primero.
 
-Cuando `expand_mode` es `manual`, la imagen original se coloca en un lienzo con el tamaño y la posición especificados. La imagen puede extenderse fuera del lienzo; en ese caso, la parte exterior se recorta.
+Cuando `expand_mode` es `manual`, la imagen original se coloca en un lienzo con el tamaño y la posición especificados. La imagen puede extenderse fuera del lienzo; en ese caso, la parte exterior se recorta. La imagen debe dejar parte del lienzo sin cubrir: si cubre todo el lienzo, el nodo genera un error porque no hay nada que expandir.
 
 Cuando `moderation` es `true`, los tres booleanos de moderación se envían a Bria. Cuando `moderation` es `false`, se ignoran.
 
@@ -59,4 +59,4 @@ Cuando `moderation` es `true`, los tres booleanos de moderación se envían a Br
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaExpandImage/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `d2c9431837f200ccbcb39037f7b26013494c4dea3d40d899db4e717ddbbea71c`
+**Source fingerprint (SHA-256):** `939b51e420f13ccea058d9cf36172148db55d9878975b5f0251a90773f6d6105`

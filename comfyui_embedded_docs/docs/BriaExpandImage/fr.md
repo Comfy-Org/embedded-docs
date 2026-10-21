@@ -43,9 +43,9 @@ Bria Expand Image étend une image au-delà de ses bordures d'origine en génér
 
 Les options de rapport d'aspect prédéfini (`1:1`, `2:3`, `3:2`, `3:4`, `4:3`, `4:5`, `5:4`, `9:16`, `16:9`) n'ont aucune entrée supplémentaire.
 
-Lorsque `expand_mode` est `custom_ratio`, `ratio_width` et `ratio_height` définissent un rapport d'aspect cible. Bria n'accepte que des rapports largeur/hauteur compris entre 0,5 et 3,0. Si le rapport est en dehors de cette plage, une erreur est levée et le mode `manual` doit être utilisé à la place.
+Lorsque `expand_mode` est `custom_ratio`, `ratio_width` et `ratio_height` définissent un rapport d'aspect cible. Bria n'accepte que des rapports largeur/hauteur compris entre 0,5 et 3,0. Si le rapport est en dehors de cette plage, une erreur est levée et le mode `manual` doit être utilisé à la place. Le canevas agrandi est limité à 25 mégapixels ; si le résultat nécessite un canevas plus grand, le nœud lève une erreur, il faut donc d'abord réduire l'image.
 
-Lorsque `expand_mode` est `manual`, l'image d'origine est placée sur un canevas à la taille et à la position spécifiées. L'image peut s'étendre en dehors du canevas, auquel cas la partie extérieure est recadrée.
+Lorsque `expand_mode` est `manual`, l'image d'origine est placée sur un canevas à la taille et à la position spécifiées. L'image peut s'étendre en dehors du canevas, auquel cas la partie extérieure est recadrée. L'image doit laisser une partie du canevas non couverte : si elle couvre tout le canevas, le nœud lève une erreur car il n'y a rien à agrandir.
 
 Lorsque `moderation` est `true`, les trois booléens de modération sont envoyés à Bria. Lorsque `moderation` est `false`, ils sont ignorés.
 
@@ -59,4 +59,4 @@ Lorsque `moderation` est `true`, les trois booléens de modération sont envoyé
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaExpandImage/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d2c9431837f200ccbcb39037f7b26013494c4dea3d40d899db4e717ddbbea71c`
+**Source fingerprint (SHA-256):** `939b51e420f13ccea058d9cf36172148db55d9878975b5f0251a90773f6d6105`
