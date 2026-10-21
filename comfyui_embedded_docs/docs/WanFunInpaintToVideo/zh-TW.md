@@ -9,9 +9,9 @@ WanFunInpaintToVideo 節點會為修補式影片生成準備條件與潛在資�
 | `正向` | 用於影片生成的正向條件提示詞 | CONDITIONING | 是 | - |
 | `負向` | 用於影片生成時避免出現的負向條件提示詞 | CONDITIONING | 是 | - |
 | `vae` | 用於編碼與解碼影片影格的 VAE 模型 | VAE | 是 | - |
-| `寬度` | 輸出影片寬度，單位為像素（預設值：832，步長：16） | INT | 是 | 16 to MAX_RESOLUTION |
-| `高度` | 輸出影片高度，單位為像素（預設值：480，步長：16） | INT | 是 | 16 to MAX_RESOLUTION |
-| `長度` | 影片序列中的影格數量（預設值：81，步長：4） | INT | 是 | 1 to MAX_RESOLUTION |
+| `寬度` | 輸出影片寬度，單位為像素（預設值：832，步長：16） | INT | 是 | 16 至 MAX_RESOLUTION |
+| `高度` | 輸出影片高度，單位為像素（預設值：480，步長：16） | INT | 是 | 16 至 MAX_RESOLUTION |
+| `長度` | 影片序列中的影格數量（預設值：81，步長：4） | INT | 是 | 1 至 MAX_RESOLUTION |
 | `批次大小` | 一個批次中要生成的影片數量（預設值：1） | INT | 是 | 1 至 4096 |
 | `clip_vision_output` | 選用的 CLIP 視覺輸出，用於作為 `start_image` 的條件 | CLIP_VISION_OUTPUT | 否 | - |
 | `起始影像` | 選用的起始影格影像，用於影片生成 | IMAGE | 否 | - |

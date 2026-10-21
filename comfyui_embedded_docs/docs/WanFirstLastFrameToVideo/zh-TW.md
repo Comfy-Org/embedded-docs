@@ -8,9 +8,9 @@ WanFirstLastFrameToVideo 節點透過結合起始幀與結束幀及文字提示�
 | `正向` | 用於引導影片生成的正向文字條件。 | CONDITIONING | 是 | - |
 | `負向` | 用於引導影片生成的負向文字條件。 | CONDITIONING | 是 | - |
 | `vae` | 用於將合併後的幀影像編碼至潛在空間的 VAE 模型。 | VAE | 是 | - |
-| `寬度` | 生成影片的寬度（像素）（預設值：832，步長：16）。 | INT | 是 | 16 to MAX_RESOLUTION |
-| `高度` | 生成影片的高度（像素）（預設值：480，步長：16）。 | INT | 是 | 16 to MAX_RESOLUTION |
-| `長度` | 影片序列中的幀數（預設值：81，步長：4）。 | INT | 是 | 1 to MAX_RESOLUTION |
+| `寬度` | 生成影片的寬度（像素）（預設值：832，步長：16）。 | INT | 是 | 16 至 MAX_RESOLUTION |
+| `高度` | 生成影片的高度（像素）（預設值：480，步長：16）。 | INT | 是 | 16 至 MAX_RESOLUTION |
+| `長度` | 影片序列中的幀數（預設值：81，步長：4）。 | INT | 是 | 1 至 MAX_RESOLUTION |
 | `批次大小` | 一次生成的影片數量（預設值：1）。 | INT | 是 | 1 至 4096 |
 | `clip 視覺起始影像` | 從起始影像擷取的 CLIP 視覺特徵。如果同時提供起始與結束的 CLIP 視覺輸入，其特徵會合併。 | CLIP_VISION_OUTPUT | 否 | - |
 | `clip 視覺結束影像` | 從結束影像擷取的 CLIP 視覺特徵。如果同時提供起始與結束的 CLIP 視覺輸入，其特徵會合併。 | CLIP_VISION_OUTPUT | 否 | - |

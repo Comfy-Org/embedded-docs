@@ -11,9 +11,9 @@ VOIDInpaintConditioning 節點會準備使用 CogVideoX 模型進行 inpainting 
 | `vae` | 用於將遮罩與遮罩後影片編碼至潛在空間的 VAE 模型 | VAE | 是 | - |
 | `video` | 來源影片影格 [T, H, W, 3] | IMAGE | 是 | - |
 | `quadmask` | 來自 VOIDQuadmaskPreprocess 的預處理 quadmask [T, H, W] | MASK | 是 | - |
-| `width` | 將影片與遮罩調整到的寬度（預設：672） | INT | 是 | 16 to MAX_RESOLUTION （步進值：8） |
-| `height` | 將影片與遮罩調整到的高度（預設：384） | INT | 是 | 16 to MAX_RESOLUTION （步進值：8） |
-| `length` | 要處理的像素影格數。對於 CogVideoX-Fun-V1.5（`patch_size_t=2`），`latent_t` 必須為偶數 — 會產生奇數 `latent_t` 的長度會向下捨入（例如 49 → 45）（預設：45） | INT | 是 | 1 to MAX_RESOLUTION （步進值：1） |
+| `width` | 將影片與遮罩調整到的寬度（預設：672） | INT | 是 | 16 至 MAX_RESOLUTION （步進值：8） |
+| `height` | 將影片與遮罩調整到的高度（預設：384） | INT | 是 | 16 至 MAX_RESOLUTION （步進值：8） |
+| `length` | 要處理的像素影格數。對於 CogVideoX-Fun-V1.5（`patch_size_t=2`），`latent_t` 必須為偶數 — 會產生奇數 `latent_t` 的長度會向下捨入（例如 49 → 45）（預設：45） | INT | 是 | 1 至 MAX_RESOLUTION （步進值：1） |
 | `batch_size` | 輸出噪聲潛在張量的批次大小（預設：1） | INT | 是 | 1 至 64 |
 
 **注意：** 因為 CogVideoX-Fun-V1.5 使用 `patch_size_t=2`，編碼後的潛在表徵必須具有偶數的時間維度。如果 `length` 會產生奇數 `latent_t`，節點會自動將其向下捨入至最接近的有效值並記錄警告。使用奇數 `latent_t` 會透過循環填充損壞最後一個影格，這可能導致解碼後影片接近結尾處出現明顯抖動或主體消失。

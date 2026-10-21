@@ -9,9 +9,9 @@ WanDancerVideo 節點為使用 WanDancer 模型進行影片生成準備條件資
 | `positive` | 用於引導影片生成的正向條件。 | CONDITIONING | 是 |  |
 | `negative` | 用於引導影片生成的負向條件。 | CONDITIONING | 是 |  |
 | `vae` | 用於將起始影像編碼到潛在空間的 VAE。 | VAE | 是 |  |
-| `寬度` | 生成的影片寬度（像素）。預設值：480。 | INT | 是 | 16 to MAX_RESOLUTION (step: 16) |
-| `高度` | 生成的影片高度（像素）。預設值：832。 | INT | 是 | 16 to MAX_RESOLUTION (step: 16) |
-| `長度` | 生成的影片幀數。對於 WanDancer 應保持為 149（預設值：149）。 | INT | 是 | 1 to MAX_RESOLUTION (step: 4) |
+| `寬度` | 生成的影片寬度（像素）。預設值：480。 | INT | 是 | 16 至 MAX_RESOLUTION （步進值：16） |
+| `高度` | 生成的影片高度（像素）。預設值：832。 | INT | 是 | 16 至 MAX_RESOLUTION （步進值：16） |
+| `長度` | 生成的影片幀數。對於 WanDancer 應保持為 149（預設值：149）。 | INT | 是 | 1 至 MAX_RESOLUTION （步進值：4） |
 | `clip_vision_output` | 第一幀的 CLIP 視覺嵌入。 | CLIP_VISION_OUTPUT | 否 |  |
 | `clip_vision_output_ref` | 參考影像的 CLIP 視覺嵌入。 | CLIP_VISION_OUTPUT | 否 |  |
 | `起始圖像` | 要編碼的初始影像，可以是任意數量的幀。 | IMAGE | 否 |  |

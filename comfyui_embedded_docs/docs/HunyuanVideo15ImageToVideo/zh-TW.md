@@ -9,9 +9,9 @@ HunyuanVideo15ImageToVideo 節點基於 HunyuanVideo 1.5 模型，為影片生�
 | `positive` | 描述影片應包含內容的正向條件化提示。 | CONDITIONING | 是 | - |
 | `negative` | 描述影片應避免內容的負向條件化提示。 | CONDITIONING | 是 | - |
 | `vae` | 用於將起始影像編碼到潛在空間的 VAE（變分自編碼器）模型。 | VAE | 是 | - |
-| `width` | 輸出影片幀的寬度（像素）。必須能被 16 整除。（預設值：848） | INT | 是 | 16 to MAX_RESOLUTION, step: 16 |
-| `height` | 輸出影片幀的高度（像素）。必須能被 16 整除。（預設值：480） | INT | 是 | 16 to MAX_RESOLUTION, step: 16 |
-| `length` | 影片序列中的總幀數。數值從 1 開始，以 4 為步長遞增（1, 5, 9, 13, ...）。（預設值：33） | INT | 是 | 1 to MAX_RESOLUTION, step: 4 |
+| `width` | 輸出影片幀的寬度（像素）。必須能被 16 整除。（預設值：848） | INT | 是 | 16 至 MAX_RESOLUTION （步進值：16） |
+| `height` | 輸出影片幀的高度（像素）。必須能被 16 整除。（預設值：480） | INT | 是 | 16 至 MAX_RESOLUTION （步進值：16） |
+| `length` | 影片序列中的總幀數。數值從 1 開始，以 4 為步長遞增（1, 5, 9, 13, ...）。（預設值：33） | INT | 是 | 1 至 MAX_RESOLUTION （步進值：4） |
 | `batch_size` | 單一批次中要生成的影片序列數量。（預設值：1） | INT | 是 | 1 至 4096 |
 | `start_image` | 可選的起始影像，用於初始化影片生成。若提供，則會編碼該影像並用於條件化前幾個幀。僅使用影像的前 `length` 個幀。 | IMAGE | 否 | - |
 | `clip_vision_output` | 可選的 CLIP 視覺嵌入，可為生成提供額外的視覺條件化。 | CLIP_VISION_OUTPUT | 否 | - |
