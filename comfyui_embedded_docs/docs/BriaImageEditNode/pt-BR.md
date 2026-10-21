@@ -31,7 +31,8 @@ Quando `moderation` está definido como `"true"`, estas entradas adicionais fica
 
 **Restrições importantes:**
 
-- Pelo menos um entre `prompt` ou `structured_prompt` deve ser não vazio. Se ambos estiverem vazios, o nó gera um erro.
+- Exatamente um entre `prompt` e `structured_prompt` deve ser não vazio. Se ambos estiverem vazios ou ambos preenchidos, o nó gera um erro.
+- Se `mask` estiver conectado, ele deve ter a mesma largura e altura de `image`; caso contrário, o nó gera um erro.
 - Quando `moderation` está definido como `"true"`, as três entradas de moderação acima são exibidas.
 
 ## Saídas
@@ -44,4 +45,4 @@ Quando `moderation` está definido como `"true"`, estas entradas adicionais fica
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaImageEditNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `e66aaa563a82407408f25b289011a491c8b158822fc2db8912daf73731750081`
+**Source fingerprint (SHA-256):** `0dac537902d73f0cf1803433afa3ede27ed4e3e9cd543bc2e1909b3d49606dd2`

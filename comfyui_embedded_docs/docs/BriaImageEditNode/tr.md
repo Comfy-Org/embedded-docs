@@ -31,7 +31,8 @@ Bria FIBO Image Edit düğümü, mevcut bir görüntüyü metin talimatı kullan
 
 **Önemli Kısıtlamalar:**
 
-- `prompt` veya `structured_prompt` alanlarından en az biri boş olmamalıdır. İkisi de boşsa, düğüm bir hata verir.
+- `prompt` veya `structured_prompt` alanlarından yalnızca biri dolu olmalıdır. İkisi de boşsa veya ikisi de doldurulmuşsa, düğüm bir hata verir.
+- `mask` bağlanırsa, `image` ile aynı genişlik ve yükseklikte olmalıdır; aksi halde düğüm bir hata verir.
 - `moderation` `"true"` olarak ayarlandığında, yukarıdaki üç moderasyon girdisi gösterilir.
 
 ## Çıktılar
@@ -44,4 +45,4 @@ Bria FIBO Image Edit düğümü, mevcut bir görüntüyü metin talimatı kullan
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaImageEditNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `e66aaa563a82407408f25b289011a491c8b158822fc2db8912daf73731750081`
+**Source fingerprint (SHA-256):** `0dac537902d73f0cf1803433afa3ede27ed4e3e9cd543bc2e1909b3d49606dd2`
