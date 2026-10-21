@@ -50,4 +50,4 @@ Poiché questo nodo invia immagini, `safety_tolerance` è limitato a 2 indipende
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Flux3ImageToVideoNode/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `1c49838dfa13adc2ed70a51094f0dd860df7207970b8dceab6bb273653d7161c`
+**Source fingerprint (SHA-256):** `0ec0afedd98997702779b580fb185e5b4f20d81273b036f1c68aa705892499bd`

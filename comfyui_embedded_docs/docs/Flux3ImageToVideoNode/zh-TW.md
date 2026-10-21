@@ -12,7 +12,7 @@ Flux 3 Image to Video 可將 1 到 10 張圖片搭配 FLUX 3 製作成動畫。�
 | `提示詞` | 場景應如何移動與發出聲音；提示詞會在生成前被解讀與擴展。必須至少包含一個字元。 | STRING | 是 | 多行文字 (預設: 空) |
 | `長寬比` | 輸出長寬比。"auto" 會根據提示詞與輸入選擇一個長寬比。 | COMBO | 是 | `"auto"` (預設)<br>其他可用的長寬比 |
 | `時長` | 片段長度（秒）。"auto" 會根據內容調整長度。 | COMBO | 是 | `"auto"` (預設)<br>其他可用的時長 |
-| `解析度` | 輸出解析度。 | COMBO | 是 | `"720p"` (預設)<br>`"1080p"` |
+| `解析度` | 輸出解析度。 | COMBO | 是 | `"720p"` (預設)<br>`"1080p"`<br>`"1440p"`<br>`"2160p"` |
 | `產生音訊` | 產生同步音訊（環境音、語音、效果音）。關閉時會產生沒有音軌的影片。 | BOOLEAN | 是 | true / false (預設: true) |
 | `安全容忍度` | 審核容忍度，0 為最嚴格。傳送圖片或影片的請求，無論此處設定為何，上限皆為 2。 | INT | 是 | 0 到 4 (預設: 2，進階設定) |
 | `種子` | 用於決定節點是否重新執行的種子；FLUX 3 會自行選擇種子，因此無論此值為何，實際結果皆不確定。 | INT | 是 | 0 到 4294967295 (預設: 42，生成後控制) |
@@ -50,4 +50,4 @@ Flux 3 Image to Video 可將 1 到 10 張圖片搭配 FLUX 3 製作成動畫。�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Flux3ImageToVideoNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `1c49838dfa13adc2ed70a51094f0dd860df7207970b8dceab6bb273653d7161c`
+**Source fingerprint (SHA-256):** `0ec0afedd98997702779b580fb185e5b4f20d81273b036f1c68aa705892499bd`

@@ -1,36 +1,36 @@
 # Flux 3 Continuazione Video
 
-This node continues an existing video clip with FLUX 3: the new clip carries on from the final frames of the video you provide. It uploads your source clip, sends the prompt and settings to the generation service, and returns the resulting continuation video once it is ready.
+Questo nodo continua una clip video esistente con FLUX 3: la nuova clip prosegue dai fotogrammi finali del video fornito. Carica la clip di origine, invia il prompt e le impostazioni al servizio di generazione e restituisce il video di continuazione risultante quando è pronto.
 
 ## Input
 
-| Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
-| `video` | The clip to continue. | VIDEO | Sì | Single video clip |
-| `prompt` | What the continuation should show; the prompt is interpreted and expanded before generation. (default: "") | STRING | Sì | Non-empty text (minimum 1 character) |
-| `aspect_ratio` | Output aspect ratio. 'auto' picks one from the prompt and inputs. (default: "auto") | COMBO | Sì | "auto" (default)<br>Multiple predefined options |
-| `duration` | Clip length in seconds. 'auto' fits the length to the content. (default: "auto") | COMBO | Sì | "auto" (default)<br>Numeric values in seconds |
-| `resolution` | Output resolution. (default: "720p") | COMBO | Sì | "720p" (default)<br>"1080p"<br>Other predefined options |
-| `generate_audio` | Generate synchronized audio (ambient, speech, effects). Off produces a video with no audio track. (default: true) | BOOLEAN | Sì | true<br>false |
-| `safety_tolerance` | Moderation tolerance, 0 is the strictest. Requests that send images or video are capped at 2 whatever you set here. (advanced parameter, default: 2) | INT | Sì | 0 - 4 (effective maximum: 2 for video requests) |
-| `seed` | Seed to determine if node should re-run; FLUX 3 picks its own seed, so actual results are nondeterministic regardless of this value. (default: 42) | INT | Sì | 0 - 4294967295 (0xFFFFFFFF) |
+| Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
+|-----------|-------------|--------------|--------------|------------|
+| `video` | La clip da continuare. Le clip con area superiore a 3840x2160 pixel vengono ridimensionate verso il basso per adattarsi. | VIDEO | Sì | Singola clip video |
+| `prompt` | Cosa deve mostrare la continuazione; il prompt viene interpretato ed espanso prima della generazione. (predefinito: "") | STRING | Sì | Testo non vuoto (minimo 1 carattere) |
+| `aspect_ratio` | Rapporto d'aspetto dell'output. 'auto' ne seleziona uno dal prompt e dagli input. (predefinito: "auto") | COMBO | Sì | "auto" (predefinito)<br>Più opzioni predefinite |
+| `duration` | Durata della clip in secondi. 'auto' adatta la durata al contenuto. (predefinito: "auto") | COMBO | Sì | "auto" (predefinito)<br>Valori numerici in secondi |
+| `resolution` | Risoluzione dell'output. (predefinito: "720p") | COMBO | Sì | "720p" (predefinito)<br>"1080p"<br>"1440p"<br>"2160p" |
+| `generate_audio` | Genera audio sincronizzato (ambiente, parlato, effetti). Disattivato produce un video senza traccia audio. (predefinito: true) | BOOLEAN | Sì | true<br>false |
+| `safety_tolerance` | Tolleranza di moderazione, 0 è la più rigorosa. Le richieste che inviano immagini o video sono limitate a 2 indipendentemente da quanto impostato qui. (parametro avanzato, predefinito: 2) | INT | Sì | 0 - 4 (massimo effettivo: 2 per richieste video) |
+| `seed` | Seed per determinare se il nodo deve rieseguirsi; FLUX 3 sceglie il proprio seed, quindi i risultati effettivi sono non deterministici indipendentemente da questo valore. (predefinito: 42) | INT | Sì | 0 - 4294967295 (0xFFFFFFFF) |
 
 ### Note
 
-- `prompt` must contain at least one character, otherwise generation fails. Although the field defaults to an empty string, a non-empty prompt is required to run the node.
-- `safety_tolerance` accepts any value from 0 to 4, but since this node sends a video to the API, the effective tolerance is capped at 2 regardless of the selected value.
-- When `duration` is set to a number, it is converted to an integer number of seconds. The special value "auto" lets the service fit the length to the content.
-- The exact option lists for `aspect_ratio`, `duration`, and `resolution` are defined internally by the node. Resolution options include at least "720p" (the default) and "1080p". Pricing is calculated from the selected `resolution` and `duration`; "1080p" is billed at $0.7579 per second, while other resolutions are billed at $0.5863 per second.
-- `seed` only controls whether the node re-runs; it is not sent to the generation service.
-- Authentication and node identification fields (`auth_token_comfy_org`, `api_key_comfy_org`, `unique_id`) are hidden and handled automatically by the platform.
+- `prompt` deve contenere almeno un carattere, altrimenti la generazione fallisce. Sebbene il campo abbia come valore predefinito una stringa vuota, per eseguire il nodo è necessario un prompt non vuoto.
+- `safety_tolerance` accetta qualsiasi valore da 0 a 4, ma poiché questo nodo invia un video all'API, la tolleranza effettiva è limitata a 2 indipendentemente dal valore selezionato.
+- Quando `duration` è impostato su un numero, viene convertito in un numero intero di secondi. Il valore speciale "auto" consente al servizio di adattare la durata al contenuto.
+- Gli elenchi esatti delle opzioni per `aspect_ratio`, `duration` e `resolution` sono definiti internamente dal nodo. `resolution` offre "720p" (predefinito), "1080p", "1440p" e "2160p". Il prezzo viene calcolato in base a `resolution` e `duration` selezionati: "720p" viene addebitato a $0.5863 al secondo, "1080p" a $0.7579, "1440p" a $0.9295 e "2160p" a $1.3585.
+- `seed` controlla solo se il nodo viene rieseguito; non viene inviato al servizio di generazione.
+- I campi di autenticazione e identificazione del nodo (`auth_token_comfy_org`, `api_key_comfy_org`, `unique_id`) sono nascosti e gestiti automaticamente dalla piattaforma.
 
 ## Output
 
-| Output Name | Description | Data Type |
-|-------------|-------------|-----------|
-| `video` | The generated continuation clip produced by FLUX 3, which carries on from the end of the source video. | VIDEO |
+| Nome output | Descrizione | Tipo di dati |
+|-------------|-------------|--------------|
+| `video` | La clip di continuazione generata da FLUX 3, che prosegue dalla fine del video di origine. | VIDEO |
 
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Flux3VideoContinuationNode/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `129ad0eb62c368854cebb010cc886aecac4caab00f9111143b883d028d7c30d9`
+**Source fingerprint (SHA-256):** `112004aa664617ce23adba425705327898a1f7632c8d3e8fa4f9ae3e7620776b`

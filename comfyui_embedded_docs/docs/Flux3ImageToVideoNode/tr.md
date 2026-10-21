@@ -12,7 +12,7 @@ Flux 3 Image to Video, FLUX 3 ile 1 ila 10 görüntüyü canlandırır. Her gör
 | `prompt` | Sahnenin nasıl hareket edeceği ve nasıl ses çıkaracağı; istem üretimden önce yorumlanır ve genişletilir. En az bir karakter içermelidir. | STRING | Evet | Çok satırlı metin (varsayılan: boş) |
 | `aspect_ratio` | Çıktı en-boy oranı. "auto" istemden ve girdilerden birini seçer. | COMBO | Evet | `"auto"` (varsayılan)<br>diğer kullanılabilir en-boy oranları |
 | `duration` | Saniye cinsinden klip uzunluğu. "auto" uzunluğu içeriğe uydurur. | COMBO | Evet | `"auto"` (varsayılan)<br>diğer kullanılabilir süreler |
-| `resolution` | Çıktı çözünürlüğü. | COMBO | Evet | `"720p"` (varsayılan)<br>`"1080p"` |
+| `resolution` | Çıktı çözünürlüğü. | COMBO | Evet | `"720p"` (varsayılan)<br>`"1080p"`<br>`"1440p"`<br>`"2160p"` |
 | `generate_audio` | Senkronize ses üretir (ortam, konuşma, efektler). Kapalı olduğunda ses parçası olmayan bir video üretir. | BOOLEAN | Evet | true / false (varsayılan: true) |
 | `safety_tolerance` | Moderasyon toleransı; 0 en katıdır. Görüntü veya video gönderen istekler, burada ne ayarlarsanız ayarlayın 2 ile sınırlandırılır. | INT | Evet | 0 ila 4 (varsayılan: 2, gelişmiş ayar) |
 | `seed` | Düğümün yeniden çalışıp çalışmayacağını belirleyen tohum; FLUX 3 kendi tohumunu seçer, bu nedenle bu değerden bağımsız olarak gerçek sonuçlar deterministik değildir. | INT | Evet | 0 ila 4294967295 (varsayılan: 42, üretim sonrası kontrol) |
@@ -50,4 +50,4 @@ Bu düğüm görüntü gönderdiği için, `safety_tolerance` ayarladığınız 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Flux3ImageToVideoNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `1c49838dfa13adc2ed70a51094f0dd860df7207970b8dceab6bb273653d7161c`
+**Source fingerprint (SHA-256):** `0ec0afedd98997702779b580fb185e5b4f20d81273b036f1c68aa705892499bd`

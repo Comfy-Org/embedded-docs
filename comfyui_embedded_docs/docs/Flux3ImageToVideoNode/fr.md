@@ -12,7 +12,7 @@ Flux 3 Image to Video anime 1 à 10 images avec FLUX 3. Chaque image devient une
 | `prompt` | Décrit comment la scène doit se déplacer et ce qu'elle doit produire comme son ; le prompt est interprété et développé avant la génération. Doit contenir au moins un caractère. | STRING | Oui | Texte multiligne (par défaut : vide) |
 | `aspect_ratio` | Ratio d'aspect de sortie. "auto" en choisit un à partir du prompt et des entrées. | COMBO | Oui | `"auto"` (par défaut)<br>autres ratios d'aspect disponibles |
 | `duration` | Durée du clip en secondes. "auto" adapte la durée au contenu. | COMBO | Oui | `"auto"` (par défaut)<br>autres durées disponibles |
-| `resolution` | Résolution de sortie. | COMBO | Oui | `"720p"` (par défaut)<br>`"1080p"` |
+| `resolution` | Résolution de sortie. | COMBO | Oui | `"720p"` (par défaut)<br>`"1080p"`<br>`"1440p"`<br>`"2160p"` |
 | `generate_audio` | Génère de l'audio synchronisé (ambiance, paroles, effets). Désactivé produit une vidéo sans piste audio. | BOOLEAN | Oui | true / false (par défaut : true) |
 | `safety_tolerance` | Tolérance de modération, 0 étant la plus stricte. Les requêtes qui envoient des images ou de la vidéo sont plafonnées à 2, quelle que soit la valeur définie ici. | INT | Oui | 0 à 4 (par défaut : 2, réglage avancé) |
 | `seed` | Graine permettant de déterminer si le nœud doit être réexécuté ; FLUX 3 choisit sa propre graine, donc les résultats réels sont non déterministes quelle que soit cette valeur. | INT | Oui | 0 à 4294967295 (par défaut : 42, contrôle après génération) |
@@ -50,4 +50,4 @@ Comme ce nœud envoie des images, `safety_tolerance` est plafonné à 2, quelle 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Flux3ImageToVideoNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `1c49838dfa13adc2ed70a51094f0dd860df7207970b8dceab6bb273653d7161c`
+**Source fingerprint (SHA-256):** `0ec0afedd98997702779b580fb185e5b4f20d81273b036f1c68aa705892499bd`
