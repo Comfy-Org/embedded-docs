@@ -17,7 +17,7 @@ O nó TextGenerate usa um modelo CLIP para criar texto com base no prompt do usu
 | `comprimento_máximo` | O número máximo de tokens que o modelo gerará. O valor padrão é 512. | INT | Sim | 1 a 32768 |
 | `pensando` | Opera em modo de pensamento se o modelo oferecer suporte a isso. O valor padrão é False. | BOOLEAN | Não | True or False |
 | `use_default_template` | Usa o prompt de sistema/template integrado se o modelo tiver um. O valor padrão é True. Este é um parâmetro avançado. | BOOLEAN | Não | True or False |
-| `mtp` | Decodificação especulativa com o cabeça de previsão multítoken do checkpoint. Não tem efeito sem pesos MTP. `"auto"` adapta a profundidade do rascunho; `"2"` a `"5"` fixam-na. A saída amostrada permanece corretamente distribuída, mas difere da saída sem MTP para a mesma seed (padrão: `"auto"`). | COMBO | Não | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
+| `mtp` | Decodificação especulativa com o cabeça de previsão multítoken do checkpoint. Não tem efeito sem pesos MTP. `"auto"` adapta a profundidade e a amplitude do rascunho às correspondências de tokens observadas e ao custo de execução; `"2"` a `"5"` fixam uma profundidade constante; os modos `tree` fixam tanto a amplitude quanto a profundidade. A saída amostrada permanece corretamente distribuída, mas difere da saída sem MTP para a mesma seed (padrão: `"auto"`). | COMBO | Não | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"tree2s1"`<br>`"tree2s2"`<br>`"tree3s1"`<br>`"tree4s1m8"` |
 | `system_prompt` | Substitui o prompt de sistema no template de chat do modelo. Ignorado quando o template padrão não é usado. Conecte uma entrada STRING em vez de digitá-lo no nó (padrão: vazio). | STRING | Não | N/A |
 
 ### Parâmetros de amostragem (quando `sampling_mode` está definido como "on")
@@ -46,4 +46,4 @@ O nó TextGenerate usa um modelo CLIP para criar texto com base no prompt do usu
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `80813781c06dfb0c3b59ee72c8bd6ebced69a4de8152de916ebc15153a0757fa`
+**Source fingerprint (SHA-256):** `e0854b0ce5a41e195a2634f4739c22c7dd0df1f2309cb8a02b506b8791bf3bee`

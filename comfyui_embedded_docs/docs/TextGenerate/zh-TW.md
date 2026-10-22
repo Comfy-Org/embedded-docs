@@ -17,7 +17,7 @@ TextGenerate 節點使用 CLIP 模型根據使用者的提示詞產生文字。�
 | `最大長度` | 模型將產生的最大 token 數量。預設值為 512。 | INT | 是 | 1 至 32768 |
 | `思考模式` | 若模型支援，則以思考模式運作。預設值為 False。 | BOOLEAN | 否 | True or False |
 | `use_default_template` | 若模型有內建的系統提示詞/範本，則使用它。預設值為 True。這是進階參數。 | BOOLEAN | 否 | True or False |
-| `mtp` | 使用檢查點的多 token 預測頭進行推測解碼。沒有 MTP 權重時無效。`"auto"` 會調整草稿深度，`"2"` 到 `"5"` 則固定該深度。取樣輸出仍保持正確的分布，但相同 `seed` 下會與非 MTP 輸出不同（預設：`"auto"`）。 | COMBO | 否 | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
+| `mtp` | 使用檢查點的多 token 預測頭進行推測解碼。沒有 MTP 權重時無效。`"auto"` 會依觀察到的 token 匹配情況與執行開銷調整草稿深度與廣度，`"2"` 到 `"5"` 固定草稿深度，`tree` 模式則同時固定廣度與深度。取樣輸出仍保持正確的分布，但相同 `seed` 下會與非 MTP 輸出不同（預設：`"auto"`）。 | COMBO | 否 | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"tree2s1"`<br>`"tree2s2"`<br>`"tree3s1"`<br>`"tree4s1m8"` |
 | `系統提示詞` | 取代模型聊天範本中的系統提示詞。未使用預設範本時會被忽略。以 STRING 輸入連接，而不是在節點中輸入（預設值：空）。 | STRING | 否 | N/A |
 
 ### 取樣參數（當 `sampling_mode` 為 "on" 時）
@@ -46,4 +46,4 @@ TextGenerate 節點使用 CLIP 模型根據使用者的提示詞產生文字。�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `80813781c06dfb0c3b59ee72c8bd6ebced69a4de8152de916ebc15153a0757fa`
+**Source fingerprint (SHA-256):** `e0854b0ce5a41e195a2634f4739c22c7dd0df1f2309cb8a02b506b8791bf3bee`

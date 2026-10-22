@@ -7,7 +7,7 @@ FluxKontextMultiReferenceLatentMethod 節點會將所選的參考潛在向量方
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `條件化` | 要使用參考潛在向量方法修改的條件資料 | CONDITIONING | 是 | - |
-| `參考潛在方法` | 用於處理參考潛在向量的方法。若選取包含 "uxo" 或 "uso" 的值，儲存前會將其轉換為 "uxo"。此參數標記為進階。 | COMBO | 是 | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
+| `參考潛在方法` | 用於處理參考潛在向量的方法。若選取包含 "uxo" 或 "uso" 的值，儲存前會將其轉換為 "uxo"。此參數標記為進階。 | COMBO | 是 | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"`<br>`"index_timestep_zero_isolated"`<br>`"index_timestep_zero_text_start"` |
 
 ## 輸出
 
@@ -18,4 +18,4 @@ FluxKontextMultiReferenceLatentMethod 節點會將所選的參考潛在向量方
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextMultiReferenceLatentMethod/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `cbe069d0c9f8adbf7f8c909b1cd644d9cd3730e934f0e5856213ff06fa8ecc56`
+**Source fingerprint (SHA-256):** `de2e3d34f9e47a90ff37300489bffef8082eb92deefbc2ce338b17b0d853ac77`

@@ -8,7 +8,7 @@ Codifica un prompt di Fibo 2.0 in condizionamento e in un latente vuoto corrispo
 | --- | --- | --- | --- | --- |
 | `clip` | L'encoder di testo Fibo 2.0 usato per tokenizzare e codificare il prompt. | CLIP | Sì | - |
 | `prompt` | La didascalia da cui generare, oppure l'istruzione di modifica quando sono collegate delle immagini. Fai riferimento alle immagini come `<image_1>`, `<image_2>` e così via. Funziona anche una didascalia JSON del risultato atteso, con la modifica descritta nella sua chiave `edit_instruction`. | STRING | Sì | - |
-| `negative_prompt` | Didascalia da cui allontanarsi, codificata come condizionamento negativo. Il valore vuoto corrisponde alla didascalia nulla con cui Fibo 2.0 è stato addestrato per il classifier-free guidance (predefinito: vuoto). | STRING | Sì | - |
+| `negative_prompt` | Didascalia da cui allontanarsi, codificata come condizionamento negativo. Un valore non vuoto viene inviato così com'è, dentro il template di chat di Fibo 2.0, senza essere ripulito come una didascalia. Il valore vuoto corrisponde alla didascalia nulla con cui Fibo 2.0 è stato addestrato per il classifier-free guidance nei flussi di lavoro di modifica (predefinito: vuoto). | STRING | Sì | - |
 | `vae` | VAE usato per codificare le immagini in latenti di riferimento. Senza di esso le immagini condizionano solo la codifica del testo. | VAE | No | - |
 | `images` | Immagini da modificare, fino a 16. Una singola immagine viene ridimensionata e ritagliata al centro alla dimensione del risultato, perché la modifica si allinea con essa pixel per pixel; più immagini vengono ciascuna ridimensionata alla propria dimensione di addestramento. | IMAGE | No | 0 a 16 immagini |
 | `width` | Larghezza del risultato, arrotondata per difetto a un multiplo di 16. 0 usa la dimensione con cui Fibo 2.0 è stato addestrato per le proporzioni della prima immagine, circa 1 megapixel, oppure 1024 senza immagini (predefinito: 0). | INT | Sì | 0 a 16384 (passo: 16) |
@@ -28,4 +28,4 @@ I latenti di riferimento sono collegati a entrambi gli output, quindi le immagin
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeFibo2/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `f400d041a3dd224e30c0fa2acc803e3de11d6c10654bde122e8d569fa1cd1d79`
+**Source fingerprint (SHA-256):** `55519ccce6420289b01b5855b80f522057da78f5a17bf7db63e2418d15f9e356`

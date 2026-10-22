@@ -8,7 +8,7 @@ Codifica un prompt de Fibo 2.0 en condicionamiento y un latente vacío correspon
 | --- | --- | --- | --- | --- |
 | `clip` | El codificador de texto Fibo 2.0 usado para tokenizar y codificar el prompt. | CLIP | Sí | - |
 | `prompt` | La descripción a partir de la cual generar, o la instrucción de edición cuando hay imágenes conectadas. Haz referencia a las imágenes como `<image_1>`, `<image_2>` y así sucesivamente. También funciona una descripción JSON del resultado esperado, con el cambio descrito en su clave `edit_instruction`. | STRING | Sí | - |
-| `negative_prompt` | Descripción de la que alejarse, codificada como el condicionamiento negativo. Vacío es la descripción nula con la que se entrenó Fibo 2.0 para guía sin clasificador (predeterminado: vacío). | STRING | Sí | - |
+| `negative_prompt` | Descripción de la que alejarse, codificada como el condicionamiento negativo. Un valor no vacío se envía tal cual dentro de la plantilla de chat de Fibo 2.0, sin limpiarse como una descripción. Vacío es la descripción nula con la que se entrenó Fibo 2.0 para guía sin clasificador en flujos de edición (predeterminado: vacío). | STRING | Sí | - |
 | `vae` | VAE usado para codificar las imágenes en latentes de referencia. Sin él, las imágenes solo condicionan la codificación de texto. | VAE | No | - |
 | `images` | Imágenes a editar, hasta 16. Una sola imagen se escala y se recorta desde el centro al tamaño del resultado, porque la edición se alinea con ella píxel a píxel; varias imágenes se escalan cada una a su propio tamaño de entrenamiento. | IMAGE | No | 0 a 16 imágenes |
 | `width` | Ancho del resultado, redondeado hacia abajo a un múltiplo de 16. 0 usa el tamaño con el que se entrenó Fibo 2.0 para la relación de aspecto de la primera imagen, aproximadamente 1 megapíxel, o 1024 sin imágenes (predeterminado: 0). | INT | Sí | 0 a 16384 (paso 16) |
@@ -28,4 +28,4 @@ Los latentes de referencia se adjuntan a ambas salidas, de modo que las imágene
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeFibo2/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `f400d041a3dd224e30c0fa2acc803e3de11d6c10654bde122e8d569fa1cd1d79`
+**Source fingerprint (SHA-256):** `55519ccce6420289b01b5855b80f522057da78f5a17bf7db63e2418d15f9e356`

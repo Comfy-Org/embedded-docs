@@ -17,7 +17,7 @@ TextGenerate düğümü, kullanıcının istemine dayalı metin oluşturmak içi
 | `maks_uzunluk` | Modelin oluşturacağı maksimum token sayısı. Varsayılan değer 512'dir. | INT | Evet | 1 - 32768 |
 | `düşünme` | Model destekliyorsa düşünme modunda çalışır. Varsayılan değer False'tur. | BOOLEAN | Hayır | True veya False |
 | `use_default_template` | Modelde varsa yerleşik sistem istemini/şablonunu kullanır. Varsayılan değer True'dur. Bu gelişmiş bir parametredir. | BOOLEAN | Hayır | True veya False |
-| `mtp` | Checkpoint'in çoklu token tahmini başlığıyla spekülatif kod çözme. MTP ağırlıkları olmadan etkisi yoktur. `"auto"` taslak derinliğini uyarlar, `"2"` ile `"5"` arası sabitler. Örneklenen çıktı doğru dağılımda kalır ancak aynı `seed` için MTP olmayan çıktıdan farklıdır (varsayılan: `"auto"`). | COMBO | Hayır | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
+| `mtp` | Checkpoint'in çoklu token tahmini başlığıyla spekülatif kod çözme. MTP ağırlıkları olmadan etkisi yoktur. `"auto"` taslak derinliğini ve genişliğini gözlenen token eşleşmelerine ve yürütme maliyetine göre uyarlar, `"2"` ile `"5"` arası sabit bir derinlik uygular, `tree` modları ise hem genişliği hem derinliği sabitler. Örneklenen çıktı doğru dağılımda kalır ancak aynı `seed` için MTP olmayan çıktıdan farklıdır (varsayılan: `"auto"`). | COMBO | Hayır | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"tree2s1"`<br>`"tree2s2"`<br>`"tree3s1"`<br>`"tree4s1m8"` |
 | `system_prompt` | Modelin sohbet şablonundaki sistem istemini değiştirir. Varsayılan şablon kullanılmadığında yok sayılır. Düğümde yazmak yerine bir STRING girdisi bağlayın (varsayılan: boş). | STRING | Hayır | N/A |
 
 ### Örnekleme Parametreleri (`sampling_mode` "on" olduğunda)
@@ -46,4 +46,4 @@ TextGenerate düğümü, kullanıcının istemine dayalı metin oluşturmak içi
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `80813781c06dfb0c3b59ee72c8bd6ebced69a4de8152de916ebc15153a0757fa`
+**Source fingerprint (SHA-256):** `e0854b0ce5a41e195a2634f4739c22c7dd0df1f2309cb8a02b506b8791bf3bee`

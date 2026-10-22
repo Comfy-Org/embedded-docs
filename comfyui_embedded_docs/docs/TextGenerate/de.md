@@ -17,7 +17,7 @@ Der TextGenerate-Node verwendet ein CLIP-Modell, um Text basierend auf dem Promp
 | `max_length` | Die maximale Anzahl an Tokens, die das Modell generiert. Der Standardwert ist 512. | INT | Ja | 1 bis 32768 |
 | `thinking` | Im Thinking-Modus arbeiten, wenn das Modell dies unterstützt. Der Standardwert ist False. | BOOLEAN | Nein | True oder False |
 | `use_default_template` | Verwendet den integrierten System-Prompt/das integrierte Template, falls das Modell eines besitzt. Der Standardwert ist True. Dies ist ein erweiterter Parameter. | BOOLEAN | Nein | True oder False |
-| `mtp` | Spekulatives Decoding mit dem Multi-Token-Prediction-Kopf des Checkpoints. Hat ohne MTP-Gewichte keine Wirkung. `"auto"` passt die Draft-Tiefe an, `"2"` bis `"5"` legen sie fest. Gesampelte Ausgabe bleibt korrekt verteilt, unterscheidet sich jedoch bei gleichem Seed von der Nicht-MTP-Ausgabe (Standard: `"auto"`). | COMBO | Nein | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
+| `mtp` | Spekulatives Decoding mit dem Multi-Token-Prediction-Kopf des Checkpoints. Hat ohne MTP-Gewichte keine Wirkung. `"auto"` passt Draft-Tiefe und -Breite an die beobachteten Token-Übereinstimmungen und die Ausführungskosten an, `"2"` bis `"5"` legen eine konstante Tiefe fest, die `tree`-Modi legen sowohl Breite als auch Tiefe fest. Gesampelte Ausgabe bleibt korrekt verteilt, unterscheidet sich jedoch bei gleichem Seed von der Nicht-MTP-Ausgabe (Standard: `"auto"`). | COMBO | Nein | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"tree2s1"`<br>`"tree2s2"`<br>`"tree3s1"`<br>`"tree4s1m8"` |
 | `system_prompt` | Ersetzt den System-Prompt im Chat-Template des Modells. Wird ignoriert, wenn das Standard-Template nicht verwendet wird. Eine STRING-Eingabe verbinden, anstatt im Node zu tippen (Standard: leer). | STRING | Nein | N/A |
 
 ### Sampling-Parameter (wenn `sampling_mode` auf "on" gesetzt ist)
@@ -46,4 +46,4 @@ Der TextGenerate-Node verwendet ein CLIP-Modell, um Text basierend auf dem Promp
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `80813781c06dfb0c3b59ee72c8bd6ebced69a4de8152de916ebc15153a0757fa`
+**Source fingerprint (SHA-256):** `e0854b0ce5a41e195a2634f4739c22c7dd0df1f2309cb8a02b506b8791bf3bee`

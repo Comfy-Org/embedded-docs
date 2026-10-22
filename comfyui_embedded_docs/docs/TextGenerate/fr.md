@@ -17,7 +17,7 @@ Le nœud TextGenerate utilise un modèle CLIP pour créer du texte à partir du 
 | `longueur_max` | Nombre maximal de tokens que le modèle générera. La valeur par défaut est 512. | INT | Oui | 1 à 32768 |
 | `réflexion` | Active le mode réflexion si le modèle le prend en charge. La valeur par défaut est False. | BOOLEAN | Non | True ou False |
 | `utiliser le modèle par défaut` | Utilise le prompt système/gabarit intégré si le modèle en possède un. La valeur par défaut est True. Il s'agit d'un paramètre avancé. | BOOLEAN | Non | True ou False |
-| `mtp` | Décodage spéculatif avec la tête de prédiction multi-token du checkpoint. N'a aucun effet sans poids MTP. `"auto"` adapte la profondeur de brouillon, `"2"` à `"5"` la fixent. La sortie échantillonnée reste correctement distribuée mais diffère de la sortie non-MTP pour la même graine (par défaut : `"auto"`). | COMBO | Non | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"` |
+| `mtp` | Décodage spéculatif avec la tête de prédiction multi-token du checkpoint. N'a aucun effet sans poids MTP. `"auto"` adapte la profondeur et l'ampleur du brouillon aux correspondances de tokens observées et au coût d'exécution ; `"2"` à `"5"` fixent une profondeur constante ; les modes `tree` fixent à la fois l'ampleur et la profondeur. La sortie échantillonnée reste correctement distribuée mais diffère de la sortie non-MTP pour la même graine (par défaut : `"auto"`). | COMBO | Non | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"tree2s1"`<br>`"tree2s2"`<br>`"tree3s1"`<br>`"tree4s1m8"` |
 | `invite système` | Remplace l'invite système dans le gabarit de chat du modèle. Ignoré lorsque le gabarit par défaut n'est pas utilisé. Connectez une entrée STRING au lieu de la saisir dans le nœud (par défaut : vide). | STRING | Non | N/A |
 
 ### Paramètres d'échantillonnage (lorsque `sampling_mode` est défini sur "on")
@@ -46,4 +46,4 @@ Le nœud TextGenerate utilise un modèle CLIP pour créer du texte à partir du 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `80813781c06dfb0c3b59ee72c8bd6ebced69a4de8152de916ebc15153a0757fa`
+**Source fingerprint (SHA-256):** `e0854b0ce5a41e195a2634f4739c22c7dd0df1f2309cb8a02b506b8791bf3bee`

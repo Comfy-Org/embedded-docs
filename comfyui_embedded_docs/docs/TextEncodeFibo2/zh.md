@@ -8,7 +8,7 @@
 | --- | --- | --- | --- | --- |
 | `clip` | 用于对提示词进行分词和编码的 Fibo 2.0 文本编码器。 | CLIP | 是 | - |
 | `prompt` | 要据此生成的描述，或在连接图像时作为编辑指令。使用 `<image_1>`、`<image_2>` 等来引用图像。也可以使用预期结果的 JSON 描述，并在其 `edit_instruction` 键中描述更改。 | STRING | 是 | - |
-| `negative_prompt` | 要避开的描述，编码为负向 conditioning。空值表示 Fibo 2.0 在无分类器引导训练中使用的空描述（默认：空）。 | STRING | 是 | - |
+| `negative_prompt` | 要避开的描述，编码为负向 conditioning。非空值会按原样放入 Fibo 2.0 的聊天模板中送出，不会像描述那样被清洗。空值表示 Fibo 2.0 在编辑工作流中做无分类器引导时使用的空描述（默认：空）。 | STRING | 是 | - |
 | `vae` | 用于将图像编码为参考 latent 的 VAE。若不提供，图像仅用于调节文本编码。 | VAE | 否 | - |
 | `images` | 要编辑的图像，最多 16 张。单张图像会被缩放并居中裁剪至结果尺寸，因为编辑会与其逐像素对齐；多张图像则各自缩放至其训练尺寸。 | IMAGE | 否 | 0 到 16 张图像 |
 | `width` | 结果的宽度，向下取整为 16 的倍数。0 表示使用 Fibo 2.0 针对第一张图像宽高比训练时的尺寸，约 1 百万像素；无图像时为 1024（默认：0）。 | INT | 是 | 0 到 16384 （步长：16） |
@@ -28,4 +28,4 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeFibo2/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `f400d041a3dd224e30c0fa2acc803e3de11d6c10654bde122e8d569fa1cd1d79`
+**Source fingerprint (SHA-256):** `55519ccce6420289b01b5855b80f522057da78f5a17bf7db63e2418d15f9e356`

@@ -7,7 +7,7 @@ FluxKontextMultiReferenceLatentMethod düğümü, koşullandırma verisini için
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `koşullandırma` | Referans latent yöntemiyle değiştirilecek koşullandırma verisi | CONDITIONING | Evet | - |
-| `referans_gizli_yöntemi` | Referans latent işleme için kullanılan yöntem. "uxo" veya "uso" içeren bir değer seçilirse, saklanmadan önce "uxo" olarak dönüştürülür. Bu parametre gelişmiş olarak işaretlenmiştir. | COMBO | Evet | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
+| `referans_gizli_yöntemi` | Referans latent işleme için kullanılan yöntem. "uxo" veya "uso" içeren bir değer seçilirse, saklanmadan önce "uxo" olarak dönüştürülür. Bu parametre gelişmiş olarak işaretlenmiştir. | COMBO | Evet | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"`<br>`"index_timestep_zero_isolated"`<br>`"index_timestep_zero_text_start"` |
 
 ## Çıktılar
 
@@ -18,4 +18,4 @@ FluxKontextMultiReferenceLatentMethod düğümü, koşullandırma verisini için
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextMultiReferenceLatentMethod/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `cbe069d0c9f8adbf7f8c909b1cd644d9cd3730e934f0e5856213ff06fa8ecc56`
+**Source fingerprint (SHA-256):** `de2e3d34f9e47a90ff37300489bffef8082eb92deefbc2ce338b17b0d853ac77`
