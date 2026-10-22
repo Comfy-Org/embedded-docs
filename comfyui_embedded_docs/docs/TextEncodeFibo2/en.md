@@ -8,7 +8,7 @@ Encode a Fibo 2.0 prompt into conditioning and a matching empty latent. The prom
 | --- | --- | --- | --- | --- |
 | `clip` | The Fibo 2.0 text encoder used to tokenize and encode the prompt. | CLIP | Yes | - |
 | `prompt` | The caption to generate from, or the edit instruction when images are connected. Refer to the images as `<image_1>`, `<image_2>` and so on. A JSON caption of the expected result works too, with the change described in its `edit_instruction` key. | STRING | Yes | - |
-| `negative_prompt` | Caption to steer away from, encoded as the negative conditioning. Empty is the null caption Fibo 2.0 was trained with for classifier-free guidance (default: empty). | STRING | Yes | - |
+| `negative_prompt` | Caption to steer away from, encoded as the negative conditioning. A non-empty value is sent inside Fibo 2.0's chat template as written, not cleaned like a caption. Empty is the null caption Fibo 2.0 was trained with for classifier-free guidance in edit workflows (default: empty). | STRING | Yes | - |
 | `vae` | VAE used to encode the images into reference latents. Without it the images only condition the text encoding. | VAE | No | - |
 | `images` | Images to edit, up to 16. A single image is scaled and center cropped to the result's size, because the edit lines up with it pixel for pixel; several images are each scaled to their own trained size. | IMAGE | No | 0 to 16 images |
 | `width` | Width of the result, rounded down to a multiple of 16. 0 uses the size Fibo 2.0 was trained at for the first image's aspect ratio, about 1 megapixel, or 1024 without images (default: 0). | INT | Yes | 0 to 16384 (step 16) |
@@ -28,4 +28,4 @@ The reference latents are attached to both outputs, so the images travel with th
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeFibo2/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `f400d041a3dd224e30c0fa2acc803e3de11d6c10654bde122e8d569fa1cd1d79`
+**Source fingerprint (SHA-256):** `55519ccce6420289b01b5855b80f522057da78f5a17bf7db63e2418d15f9e356`
