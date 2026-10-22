@@ -1,0 +1,12 @@
+{
+  "_comment": "Node ids that intentionally have a docs page without a backend class in ComfyUI. Frontend virtual nodes (Note, Reroute, deprecated legacy loaders) and third-party/extension nodes documented on purpose. Anything not listed here and absent from the code scan is reported as retired documentation.",
+  "nodes": [
+    "Note",
+    "MarkdownNote",
+    "Reroute",
+    "PrimitiveNode",
+    "TerminalLog",
+    "DeprecatedCheckpointLoader",
+    "DeprecatedDiffusersLoader"
+  ]
+}

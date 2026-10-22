@@ -64,7 +64,7 @@ TARGET_DOCS=/path/to/comfy/docs python3 scripts/sync_to_comfy_docs.py --mode all
 
 | Script | Purpose |
 |--------|---------|
-| `scan_missing_nodes.py` | Scan ComfyUI source; report new nodes, changed nodes (source hash), possibly deprecated docs. Outputs to `data/`. |
+| `scan_missing_nodes.py` | Scan ComfyUI source; report missing / changed / retired documentation. Discovery follows the registry ComfyUI actually builds: `NODE_CLASS_MAPPINGS` keys (aliases included, loop-built maps, `old_node_id=` renames excluded) and V3 `get_node_list` schemas whose `node_id` is spelled `node_id="X"`, `node_id=cls.NODE_ID`, `schema.node_id = "X"`, a schema-factory positional arg, or a `NodeId` class attribute. Doc folders are matched leniently (case/underscores/spaces ignored) and every leftover folder is classified `duplicate` / `renamed` / `non_backend` / `retired`. Frontend-only pages are listed in `config/non_backend_nodes.json`. Outputs to `data/`. |
 | `prepare_ai_input.py` | Build AI input bundles (source code + metadata + prompt) for new/changed nodes. |
 | `batch_generate_docs.py` | Generate `en.md` from AI input bundles via the configured LLM (OpenAI-compatible API). |
 | `batch_translate_docs.py` | Translate `en.md` into 11 languages (zh, zh-TW, es, fr, ja, ko, ru, ar, tr, pt-BR, fa). |
