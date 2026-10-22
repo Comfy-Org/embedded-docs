@@ -119,11 +119,17 @@ class NodeScanner:
         self._collect_renames(tree)
         factories = self._schema_factories(tree)
         registered = self._registered_class_names(tree)
+        loop_registered = self._loop_registered_class_names(tree)
 
         mappings = self._extract_node_class_mappings(tree, content)
         self.class_mappings.update(mappings)
 
-        classes = {n.name: n for n in tree.body if isinstance(n, ast.ClassDef)}
+        classes: Dict[str, ast.ClassDef] = {}
+        for node in ast.walk(tree):
+            if isinstance(node, ast.ClassDef) and node.name not in classes:
+                classes[node.name] = node
+        # Kind is per module: two modules may define classes with the same name.
+        self.class_kind = {}
         for name in classes:
             kind = self._class_kind(name, classes)
             if kind:
@@ -145,15 +151,18 @@ class NodeScanner:
                 name, classes, tree, factories, mappings)
             if not node_ids:
                 continue
-            # Gate on the module's registration style so base classes never
-            # become nodes: V3 counts only classes listed by get_node_list,
-            # V1 only classes that carry an explicit node id.
+            # Gate on the module's registration style, because a class being
+            # defined is not the same as being registered: nodes are disabled by
+            # commenting them out of get_node_list / node_list all the time.
             if registered:
-                if name not in registered and not explicit:
+                if name not in registered:
+                    continue
+            elif loop_registered is not None:
+                if name not in loop_registered:
                     continue
             elif v1_module:
-                if not explicit:
-                    continue
+                # Literal NODE_CLASS_MAPPINGS already registered every key above.
+                continue
             elif not explicit:
                 continue
 
@@ -246,16 +255,17 @@ class NodeScanner:
         if keys:
             return keys, True
 
-        # 2. old-style NodeId / NODE_ID class attribute
+        # 2. the schema this class returns: GET_SCHEMA() is what nodes.py registers,
+        #    so a schema id always wins over a constant on the class.
+        schema_ids = self._schema_ids(class_name, classes, tree, factories)
+        if schema_ids:
+            return schema_ids, True
+
+        # 3. old-style NodeId / NODE_ID / node_id class attribute (no define_schema)
         for attr in ID_ATTRS:
             value = self._class_attr(classes, class_name, attr)
             if value:
                 return [value.strip()], True
-
-        # 3-5. inside define_schema (own or inherited via a base class)
-        schema_ids = self._schema_ids(class_name, classes, tree, factories)
-        if schema_ids:
-            return schema_ids, True
 
         return [class_name], False
 
@@ -289,7 +299,21 @@ class NodeScanner:
                         if isinstance(arg, ast.Constant) and isinstance(arg.value, str):
                             positional.append(arg.value)
                             break
-        return mutated + kwargs + positional
+        # A schema is built once: a later `schema.node_id = "X"` overrides the
+        # node_id the call was constructed with, and neither is additive.
+        for tier in (mutated, kwargs, positional):
+            if tier:
+                return tier[:1]
+        return []
+
+    @staticmethod
+    def _base_class_names(cls: ast.ClassDef) -> List[str]:
+        """Base classes that can be resolved inside this module.
+
+        Only plain names qualify: ``comfy.samplers.CFGGuider`` lives in another
+        module and must not be resolved to a same-named class here.
+        """
+        return [base.id for base in cls.bases if isinstance(base, ast.Name)]
 
     def _class_kind(self, class_name: str, classes: Dict[str, ast.ClassDef],
                     _depth: int = 0) -> Optional[str]:
@@ -304,12 +328,10 @@ class NodeScanner:
                 return 'new_api'
             if isinstance(item, ast.FunctionDef) and item.name == 'INPUT_TYPES':
                 return 'classic'
-        for base in cls.bases:
-            base_name = base.id if isinstance(base, ast.Name) else getattr(base, 'attr', '')
-            if base_name:
-                kind = self._class_kind(base_name, classes, _depth + 1)
-                if kind:
-                    return kind
+        for base_name in self._base_class_names(cls):
+            kind = self._class_kind(base_name, classes, _depth + 1)
+            if kind:
+                return kind
         return None
 
     def _find_define_schema(self, class_name: str,
@@ -323,12 +345,10 @@ class NodeScanner:
         for item in cls.body:
             if isinstance(item, ast.FunctionDef) and item.name == 'define_schema':
                 return item
-        for base in cls.bases:
-            base_name = base.id if isinstance(base, ast.Name) else getattr(base, 'attr', '')
-            if base_name:
-                found = self._find_define_schema(base_name, classes, _depth + 1)
-                if found is not None:
-                    return found
+        for base_name in self._base_class_names(cls):
+            found = self._find_define_schema(base_name, classes, _depth + 1)
+            if found is not None:
+                return found
         return None
 
     def _class_attr(self, classes: Dict[str, ast.ClassDef], class_name: str,
@@ -352,12 +372,10 @@ class NodeScanner:
                 if isinstance(target, ast.Name) and target.id == attr:
                     if isinstance(value_node, ast.Constant) and isinstance(value_node.value, str):
                         return value_node.value
-        for base in cls.bases:
-            base_name = base.id if isinstance(base, ast.Name) else getattr(base, 'attr', '')
-            if base_name:
-                value = self._class_attr(classes, base_name, attr, _depth + 1)
-                if value:
-                    return value
+        for base_name in self._base_class_names(cls):
+            value = self._class_attr(classes, base_name, attr, _depth + 1)
+            if value:
+                return value
         return None
 
     def _resolve_str(self, node: ast.AST, tree: ast.Module, class_name: str) -> Optional[str]:
@@ -417,6 +435,32 @@ class NodeScanner:
                             elif isinstance(elt, ast.Attribute):
                                 names.add(elt.attr)
         return names
+
+    @staticmethod
+    def _loop_registered_class_names(tree: ast.Module) -> Optional[Set[str]]:
+        """Classes covered by `for node in <list>: NODE_CLASS_MAPPINGS[node.NodeId] = node`.
+
+        Returns None when the module has no such loop.
+        """
+        for node in ast.walk(tree):
+            if not isinstance(node, ast.For):
+                continue
+            if "NODE_CLASS_MAPPINGS" not in "".join(ast.dump(stmt) for stmt in node.body):
+                continue
+            iterable = node.iter
+            names: Optional[Set[str]] = None
+            if isinstance(iterable, ast.List):
+                names = {e.id for e in iterable.elts if isinstance(e, ast.Name)}
+            elif isinstance(iterable, ast.Name):
+                for stmt in tree.body:
+                    if not isinstance(stmt, ast.Assign) or not isinstance(stmt.value, ast.List):
+                        continue
+                    if any(isinstance(t, ast.Name) and t.id == iterable.id for t in stmt.targets):
+                        names = {e.id for e in stmt.value.elts if isinstance(e, ast.Name)}
+                        break
+            if names is not None:
+                return names
+        return None
 
     def _extract_node_class_mappings(self, tree: ast.Module, content: str) -> Dict[str, str]:
         """Extract NODE_CLASS_MAPPINGS (literal dict, then regex fallback)."""
@@ -537,11 +581,21 @@ class DocumentationChecker:
 
         print(f"✅ Found {len(self.documented_nodes)} existing documentation\n")
 
-    def match(self, node_id: str) -> List[str]:
+    def match(self, node_id: str, loose: bool = True) -> List[str]:
         """Doc folders that document this node, whatever spelling they use."""
         if node_id in self.documented_nodes:
             return [node_id]
+        if not loose:
+            return []
         return sorted(self.by_normalized.get(normalize_node_name(node_id), []))
+
+    def collisions(self, node_ids) -> Set[str]:
+        """Normalized keys shared by more than one node id."""
+        seen: Dict[str, int] = {}
+        for node_id in node_ids:
+            key = normalize_node_name(node_id)
+            seen[key] = seen.get(key, 0) + 1
+        return {key for key, count in seen.items() if count > 1}
 
     def check_doc_completeness(self, node_name: str) -> Dict[str, bool]:
         """Check documentation completeness for a single node"""
@@ -596,7 +650,8 @@ def classify_extra_docs(extra_docs: Set[str], scanner: NodeScanner,
     rows = []
     for doc in sorted(extra_docs):
         row = {"name": doc, "reason": "retired", "target": None}
-        candidates = node_by_norm.get(normalize_node_name(doc), [])
+        key = normalize_node_name(doc)
+        candidates = node_by_norm.get(key, []) if len(node_by_norm.get(key, [])) == 1 else []
         if candidates:
             target = sorted(candidates)[0]
             reason = "duplicate" if target in doc_checker.documented_nodes else "renamed"
@@ -645,11 +700,15 @@ def main():
     print("=" * 80)
     print()
 
+    # Two different node ids can normalize to the same key (`Foo_Bar` / `FooBar`);
+    # such a key proves nothing, so those ids only accept an exact folder match.
+    collisions = doc_checker.collisions(scanner.all_nodes)
+
     missing_nodes: Set[str] = set()
     folder_mismatches: Dict[str, List[str]] = {}
     matched_folders: Set[str] = set()
     for node_id in sorted(scanner.all_nodes):
-        folders = doc_checker.match(node_id)
+        folders = doc_checker.match(node_id, loose=normalize_node_name(node_id) not in collisions)
         matched_folders.update(folders)
         if not folders:
             missing_nodes.add(node_id)
