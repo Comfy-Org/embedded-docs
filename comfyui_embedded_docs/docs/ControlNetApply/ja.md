@@ -1,0 +1,25 @@
+# ControlNetを適用（旧）
+
+ControlNetを使用するには、入力画像の前処理が必要です。ComfyUIの初期ノードにはプリプロセッサーやControlNetモデルが付属していないため、まずControlNetプリプロセッサーをインストールし（[こちらからプリプロセッサーをダウンロード](https://github.com/Fannovel16/comfy_controlnet_preprocessors)）、対応するControlNetモデルもインストールしてください。
+
+## 入力
+
+| パラメータ | データ型 | 機能 |
+| --- | --- | --- |
+| `positive` | `CONDITIONING` | ポジティブな条件付けデータ。CLIP Text Encoderまたは他の条件付け入力から取得します |
+| `negative` | `CONDITIONING` | ネガティブな条件付けデータ。CLIP Text Encoderまたは他の条件付け入力から取得します |
+| `コントロールネット` | `CONTROL_NET` | 適用するControlNetモデル。通常はControlNet Loaderから入力します |
+| `画像` | `IMAGE` | ControlNet適用のための画像。プリプロセッサーで処理する必要があります |
+| `vae` | `VAE` | VAEモデルの入力 |
+| `強度` | `FLOAT` | ネットワーク調整の強度を制御します。値の範囲は0～10です。推奨値は0.5～1.5程度が妥当です。値が低いほどモデルの自由度が高まり、値が高いほど制約が強くなります。高すぎる値は異常な画像を生成する可能性があります。この値を調整して、制御ネットワークの影響を微調整できます。 |
+| `start_percent` | `FLOAT` | 値0.000～1.000。ControlNetの適用を開始するタイミングをパーセンテージで指定します。例えば0.2の場合、拡散プロセスの20%の時点からControlNetのガイダンスが画像生成に影響を与え始めます |
+| `end_percent` | `FLOAT` | 値0.000～1.000。ControlNetの適用を終了するタイミングをパーセンテージで指定します。例えば0.8の場合、拡散プロセスの80%の時点でControlNetのガイダンスが画像生成への影響を停止します |
+
+### 出力
+
+| パラメータ | データ型 | 機能 |
+| --- | --- | --- |
+| `positive` | `CONDITIONING` | ControlNetで処理されたポジティブな条件付けデータ。次のControlNetノードやK Samplerノードに出力できます |
+| `negative` | `CONDITIONING` | ControlNetで処理されたネガティブな条件付けデータ。次のControlNetノードやK Samplerノードに出力できます |
+
+> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/ja.md)

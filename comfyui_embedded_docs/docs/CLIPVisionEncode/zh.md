@@ -1,0 +1,32 @@
+# CLIP视觉编码
+
+`CLIP Vision Encode` 节点是 ComfyUI 中的图像编码节点，用于通过 CLIP Vision 模型将输入图像转换为视觉特征向量。该节点是连接图像与文本理解的重要桥梁，广泛应用于各类 AI 图像生成与处理工作流中。
+
+**节点功能**
+
+- **图像特征提取**：将输入图像转换为高维特征向量
+- **多模态桥接**：为图像与文本的联合处理提供基础
+- **条件生成**：为基于图像的条件生成提供视觉条件
+
+## 输入
+
+| 参数名 | 描述 | 数据类型 |
+| --- | --- | --- |
+| `clip视觉` | CLIP 视觉模型，通常通过 CLIPVisionLoader 节点加载 | CLIP_VISION |
+| `图像` | 待编码的输入图像 | IMAGE |
+| `裁剪` | 图像裁剪方式，选项：center（中心裁剪）、none（不裁剪） | Dropdown |
+
+## 输出
+
+| 输出名 | 描述 | 数据类型 |
+| --- | --- | --- |
+| CLIP_VISION_OUTPUT | 编码后的视觉特征 | CLIP_VISION_OUTPUT |
+
+该输出对象包含：
+
+- `last_hidden_state`：最后隐藏状态
+- `image_embeds`：图像嵌入向量
+- `penultimate_hidden_states`：倒数第二隐藏状态
+- `mm_projected`：多模态投影结果（若存在）
+
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPVisionEncode/zh.md)

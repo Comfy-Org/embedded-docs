@@ -1,0 +1,45 @@
+# Load CLIP
+
+The CLIPLoader node loads a text encoder model (CLIP, T5, or similar) from a file, making it available for use in other nodes that need to convert text prompts into numerical representations. It supports a wide variety of model architectures, each requiring a specific encoder type.
+
+## Inputs
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `clip_name` | The filename of the text encoder model to load. This must be a file located in the `ComfyUI/models/text_encoders/` directory. | STRING | Yes | List of files found in the `text_encoders` folder |
+| `type` | The architecture type of the model being loaded. This determines which specific encoder variant to use (default: `"stable_diffusion"`). | COMBO | Yes | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"` |
+| `device` | The device to load the model onto. `"default"` uses the GPU if available, while `"cpu"` forces CPU loading. This is an advanced option (default: `"default"`). | COMBO | No | `"default"`<br>`"cpu"` |
+
+### Supported Type-to-Encoder Mappings
+
+The `type` parameter selects the correct encoder for a given model architecture. The following are common mappings:
+
+| Type | Encoder |
+|------|---------|
+| stable_diffusion | clip-l |
+| stable_cascade | clip-g |
+| sd3 | t5 xxl / clip-g / clip-l |
+| stable_audio | t5 base |
+| mochi | t5 xxl |
+| cogvideox | t5 xxl (226-token padding) |
+| cosmos | old t5 xxl |
+| lumina2 | gemma 2 2B |
+| wan | umt5 xxl |
+| hidream | llama-3.1 (recommended) or t5 |
+| omnigen2 | qwen vl 2.5 3B |
+| joyimage | qwen3-vl 8B |
+| lens | gpt-oss-20b |
+| pixeldit | gemma 2 2B elm |
+| minimax | MiniMax H3 Qwen3-VL or Music3 Qwen/RVQ |
+| flux3 | qwen3-vl 4B |
+
+## Outputs
+
+| Output Name | Description | Data Type |
+|-------------|-------------|-----------|
+| `CLIP` | The loaded text encoder model, ready to be connected to other nodes for text encoding and conditioning. | CLIP |
+
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/en.md)
+
+---
+**Source fingerprint (SHA-256):** `3abcb39dd6ce4935f51127d4d38a8474ecf80a4df70d702f3eea68d400be91a5`

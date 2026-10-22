@@ -1,0 +1,45 @@
+# CLIPMergeSimple
+
+`CLIPMergeSimple` is a model merging node that combines two CLIP text encoder models based on a specified ratio. It clones the first CLIP model and applies weighted patches from the second CLIP model, skipping position IDs and logit scale components, to produce a hybrid model that blends features from both sources.
+
+## Inputs
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `clip1` | The first CLIP model to be merged. It serves as the base model for the merging process. | CLIP | Yes | - |
+| `clip2` | The second CLIP model to be merged. Its key patches, except for position IDs and logit scale, are applied to the first model based on the specified ratio. | CLIP | Yes | - |
+| `ratio` | Determines the proportion of features from the second model to blend into the first model. A ratio of 1.0 means fully adopting the second model's features, while 0.0 retains only the first model's features. Default: 1.0. | FLOAT | Yes | 0.0 - 1.0 (step: 0.01) |
+
+## Outputs
+
+| Output Name | Description | Data Type |
+| --- | --- | --- |
+| `clip` | The resulting merged CLIP model, incorporating features from both input models according to the specified ratio. | CLIP |
+
+## Merging Mechanism Explained
+
+### Merging Algorithm
+
+The node uses weighted averaging to merge the two models:
+
+1. **Clone Base Model**: First clones `clip1` as the base model
+2. **Get Patches**: Obtains all key patches from `clip2`
+3. **Filter Special Keys**: Skips keys ending with `.position_ids` and `.logit_scale`
+4. **Apply Weighted Merge**: Uses the formula `(1.0 - ratio) * clip1 + ratio * clip2`
+
+### Ratio Parameter Explained
+
+- **ratio = 0.0**: Fully uses clip1, ignores clip2
+- **ratio = 0.5**: 50% contribution from each model
+- **ratio = 1.0**: Fully uses clip2, ignores clip1
+
+## Use Cases
+
+1. **Model Style Fusion**: Combine characteristics of CLIP models trained on different data
+2. **Performance Optimization**: Balance strengths and weaknesses of different models
+3. **Experimental Research**: Explore combinations of different CLIP encoders
+
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPMergeSimple/en.md)
+
+---
+**Source fingerprint (SHA-256):** `42c4b2042c56c3f21a9416aa577e2d41fef1dcc749c4e5c7953851110a4fb6bc`

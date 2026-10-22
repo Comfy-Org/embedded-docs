@@ -1,0 +1,20 @@
+# unCLIP条件
+
+此节点旨在将 CLIP 视觉输出整合到条件处理过程中，根据指定的强度和噪声增强参数调整这些输出的影响。它通过视觉上下文丰富条件处理，从而增强生成过程。
+
+## 输入
+
+| 参数 | 描述 | Comfy 数据类型 |
+| --- | --- | --- |
+| `条件` | 基础条件数据，CLIP 视觉输出将添加至此，作为进一步修改的基础。 | `CONDITIONING` |
+| `CLIP视觉输出` | 来自 CLIP 视觉模型的输出，提供整合到条件处理中的视觉上下文。 | `CLIP_VISION_OUTPUT` |
+| `强度` | 决定 CLIP 视觉输出对条件处理影响的程度。 | `FLOAT` |
+| `噪波增强` | 指定在将 CLIP 视觉输出整合到条件处理之前，对其应用的噪声增强级别。 | `FLOAT` |
+
+## 输出
+
+| 参数 | 描述 | Comfy 数据类型 |
+| --- | --- | --- |
+| `条件` | 经过丰富处理的条件数据，现在包含已应用强度和噪声增强的整合 CLIP 视觉输出。 | `CONDITIONING` |
+
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPConditioning/zh.md)
