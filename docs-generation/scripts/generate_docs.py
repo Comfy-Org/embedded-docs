@@ -12,6 +12,7 @@ from typing import Dict, List, Any, Optional
 import inspect
 import runtime  # noqa: F401
 from lib.paths import MISSING_NODES_REPORT, embedded_docs_dir, load_dotenv
+from scan_missing_nodes import ID_ATTRS, NodeScanner
 
 load_dotenv()
 
@@ -41,10 +42,10 @@ class NodeInfoExtractor:
         """Extract new API (io.Schema) node information"""
         try:
             # Find Schema definition corresponding to node_id
-            pattern = rf'node_id\s*=\s*["\']({re.escape(node_name)})["\']'
+            pattern = rf'(?<![.\w])node_id\s*=\s*["\']({re.escape(node_name)})["\']'
             match = re.search(pattern, self.content)
             if not match:
-                return None
+                return self._extract_resolved_schema(node_name)
             
             # Find corresponding define_schema method
             schema_start = match.start()
@@ -89,11 +90,93 @@ class NodeInfoExtractor:
                 outputs_text = outputs_section.group(1)
                 info['outputs'] = self._parse_io_schema_outputs(outputs_text)
             
+            # Keep the literal fast path byte-for-byte for schemas it can read.
+            # IO aliases, multiline calls and inherited schemas need the fallback.
+            if not info['inputs']:
+                return self._extract_resolved_schema(node_name) or info
             return info
             
         except Exception as e:
             print(f"⚠️  Failed to extract new API node {node_name} information: {e}")
             return None
+
+    def _resolve_node_class(self, node_name, tree, classes, scanner):
+        """Use the scanner's registration and schema-id rules for this module."""
+        mappings = scanner._extract_node_class_mappings(tree, self.content)
+        if node_name in mappings:
+            return mappings[node_name]
+        factories = scanner._schema_factories(tree)
+        for name in classes:
+            ids = scanner._schema_ids(name, classes, tree, factories)
+            if not ids:
+                ids = [scanner._class_attr(classes, name, attr) for attr in ID_ATTRS]
+            if node_name in ids:
+                return name
+        return node_name if node_name in classes else None
+
+    def _extract_resolved_schema(self, node_name):
+        """Locate schemas with shared AST helpers, then reuse the field parsers."""
+        tree = ast.parse(self.content)
+        classes = {n.name: n for n in ast.walk(tree) if isinstance(n, ast.ClassDef)}
+        scanner = NodeScanner()
+        class_name = self._resolve_node_class(node_name, tree, classes, scanner)
+        if class_name is None:
+            return None
+
+        info = {
+            'node_name': node_name,
+            'class_name': class_name,
+            'type': 'new_api',
+            'inputs': [],
+            'outputs': [],
+            'category': None,
+            'description': None
+        }
+        pending = [class_name]
+        visited = set()
+        functions = {n.name: n for n in tree.body if isinstance(n, ast.FunctionDef)}
+        schema_sources = []
+        while pending:
+            name = pending.pop(0)
+            if name in visited or name not in classes:
+                continue
+            visited.add(name)
+            schema = scanner._find_define_schema(name, classes)
+            if schema is not None:
+                schema_sources.append(schema)
+                # Follow super() only when this schema actually delegates to it.
+                if any(isinstance(n, ast.Call) and isinstance(n.func, ast.Name)
+                       and n.func.id == 'super' for n in ast.walk(schema)):
+                    owner = next(cls for cls in classes.values() if schema in cls.body)
+                    pending.extend(scanner._base_class_names(owner))
+
+        visited_functions = set()
+        while schema_sources:
+            schema = schema_sources.pop(0)
+            if id(schema) not in visited_functions:
+                visited_functions.add(id(schema))
+                source = ast.get_source_segment(self.content, schema)
+                # Both public API aliases are used in ComfyUI. Normalize only
+                # this fallback's source, leaving existing parser output alone.
+                source = re.sub(r'\bIO\.', 'io.', source)
+                source = re.sub(r'(\.Input\()\s+', r'\1', source)
+                inputs = self._parse_io_schema_inputs(source)
+                known_inputs = {item['name'] for item in info['inputs']}
+                info['inputs'].extend(item for item in inputs if item['name'] not in known_inputs)
+                if not info['outputs']:
+                    info['outputs'] = self._parse_io_schema_outputs(source)
+                if info['category'] is None:
+                    category = re.search(r'category\s*=\s*["\']([^"\']+)["\']', source)
+                    if category:
+                        info['category'] = category.group(1)
+                # Schema factories can delegate their shared inputs to another
+                # module-local helper. Inspect only helpers actually called here.
+                for call in ast.walk(schema):
+                    if isinstance(call, ast.Call) and isinstance(call.func, ast.Name):
+                        helper = functions.get(call.func.id)
+                        if helper is not None:
+                            schema_sources.append(helper)
+        return info
     
     def _parse_io_schema_inputs(self, inputs_text: str) -> List[Dict[str, Any]]:
         """Parse io.Schema inputs"""
@@ -180,11 +263,14 @@ class NodeInfoExtractor:
         try:
             # Parse using AST
             tree = ast.parse(self.content)
+            node_name = class_name
+            classes = {n.name: n for n in ast.walk(tree) if isinstance(n, ast.ClassDef)}
+            class_name = self._resolve_node_class(node_name, tree, classes, NodeScanner())
             
             for node in ast.walk(tree):
                 if isinstance(node, ast.ClassDef) and node.name == class_name:
                     info = {
-                        'node_name': class_name,
+                        'node_name': node_name,
                         'class_name': class_name,
                         'type': 'classic',
                         'inputs': [],
@@ -237,6 +323,21 @@ class NodeInfoExtractor:
         func_end = func_node.end_lineno
         source_lines = self.content.split('\n')
         func_source = '\n'.join(source_lines[func_start-1:func_end])
+
+        # Some classic schemas return a named dictionary instead of an inline
+        # one (e.g. ModelMergeSD1, registered as ModelMergeSD2).
+        for item in ast.walk(func_node):
+            if not isinstance(item, ast.Return) or not isinstance(item.value, ast.Dict):
+                continue
+            for key, value in zip(item.value.keys, item.value.values):
+                if not (isinstance(key, ast.Constant) and key.value in ('required', 'optional')
+                        and isinstance(value, ast.Name)):
+                    continue
+                for assignment in func_node.body:
+                    if (isinstance(assignment, ast.Assign) and isinstance(assignment.value, ast.Dict)
+                            and any(isinstance(t, ast.Name) and t.id == value.id
+                                    for t in assignment.targets)):
+                        func_source += f'\n"{key.value}": ' + ast.get_source_segment(self.content, assignment.value)
         
         # Extract required and optional parameters
         for section in ['required', 'optional']:
