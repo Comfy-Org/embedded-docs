@@ -1,0 +1,34 @@
+{
+  "_comment": "Node ids that intentionally have a docs page without a backend class in ComfyUI. The scanner reads Python source, so it cannot see these: they are never reported as missing documentation and never reported as stale. Keep the three groups when adding entries.",
+  "_groups": {
+    "frontend virtual": "Declared by the frontend itself, no python class at all (Note, Reroute, PrimitiveNode, the Deprecated* legacy loaders).",
+    "extension node": "Shipped by a bundled or unbundled extension rather than ComfyUI core (TerminalLog comes from ComfyUI-Manager).",
+    "reverted core": "Was a core node, reverted or dropped from mainline, likely to come back — keep the page until the feature is gone for good. Check with `git log -S <ClassName> -- '*.py'` in ComfyUI."
+  },
+  "nodes": [
+    "Note",
+    "MarkdownNote",
+    "Reroute",
+    "PrimitiveNode",
+    "DeprecatedCheckpointLoader",
+    "DeprecatedDiffusersLoader",
+
+    "TerminalLog",
+
+    "SeedVR2ProgressiveSampler",
+    "LoadImageSetNode",
+    "LoadImageSetFromFolderNode",
+    "LoadImageTextSetFromFolderNode",
+    "SaveLoRANode"
+  ],
+  "notes": {
+    "DeprecatedCheckpointLoader": "frontend virtual: legacy loader kept in the UI only",
+    "DeprecatedDiffusersLoader": "frontend virtual: legacy loader kept in the UI only",
+    "TerminalLog": "extension node: ComfyUI-Manager",
+    "SeedVR2ProgressiveSampler": "reverted core: added in #14110, reverted in #14359",
+    "LoadImageSetNode": "reverted core: comfy_extras/nodes_train.py, dropped from mainline",
+    "LoadImageSetFromFolderNode": "reverted core: comfy_extras/nodes_train.py, dropped from mainline",
+    "LoadImageTextSetFromFolderNode": "reverted core: comfy_extras/nodes_train.py, dropped from mainline",
+    "SaveLoRANode": "reverted core: comfy_extras/nodes_train.py, dropped from mainline"
+  }
+}

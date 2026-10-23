@@ -1,0 +1,46 @@
+# ClipLoader
+
+CLIPLoader 节点从文件加载文本编码器模型（CLIP、T5 或类似模型），使其可供其他需要将文本提示转换为数值表示的节点使用。它支持多种模型架构，每种架构都需要特定的编码器类型。
+
+## 输入
+
+| 参数 | 描述 | 数据类型 | 必填 | 范围 |
+|-----------|-------------|-----------|----------|-------|
+| `CLIP名称` | 要加载的文本编码器模型的文件名。该文件必须位于 `ComfyUI/models/text_encoders/` 目录中。 | STRING | 是 | `text_encoders` 文件夹中找到的文件列表 |
+| `类型` | 要加载的模型的架构类型。这决定使用哪个特定的编码器变体（默认：`"stable_diffusion"`）。 | COMBO | 是 | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"`<br>`"fibo2"` |
+| `设备` | 将模型加载到的设备。`"default"` 如果可用则使用 GPU，而 `"cpu"` 强制使用 CPU 加载。这是一个高级选项（默认：`"default"`）。 | COMBO | 否 | `"default"`<br>`"cpu"` |
+
+### 支持的 `type` 到编码器映射
+
+`type` 参数会为给定的模型架构选择正确的编码器。以下是常见映射：
+
+| 类型 | 编码器 |
+|------|---------|
+| stable_diffusion | clip-l |
+| stable_cascade | clip-g |
+| sd3 | t5 xxl / clip-g / clip-l |
+| stable_audio | t5 base |
+| mochi | t5 xxl |
+| cogvideox | t5 xxl（226-token 填充） |
+| cosmos | 旧版 t5 xxl |
+| lumina2 | gemma 2 2B |
+| wan | umt5 xxl |
+| hidream | llama-3.1（推荐）或 t5 |
+| omnigen2 | qwen vl 2.5 3B |
+| joyimage | qwen3-vl 8B |
+| lens | gpt-oss-20b |
+| pixeldit | gemma 2 2B elm |
+| minimax | MiniMax H3 Qwen3-VL 或 Music3 Qwen/RVQ |
+| flux3 | qwen3-vl 4B |
+| fibo2 | qwen3-vl 4B |
+
+## 输出
+
+| 输出名称 | 描述 | 数据类型 |
+|-------------|-------------|-----------|
+| `CLIP` | 已加载的文本编码器模型，可连接到其他节点以进行文本编码和条件控制。 | CLIP |
+
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/zh.md)
+
+---
+**Source fingerprint (SHA-256):** `75cf64ce955946681dee79035fc91b54be0a99e3fc22b8c4737929ce0bdff13e`

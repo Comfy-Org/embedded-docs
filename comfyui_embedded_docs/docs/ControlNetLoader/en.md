@@ -1,0 +1,19 @@
+# Load ControlNet Model
+
+This node will detect models located in the `ComfyUI/models/controlnet` folder, and it will also read models from additional paths configured in the extra_model_paths.yaml file. Sometimes, you may need to **refresh the ComfyUI interface** to allow it to read the model files from the corresponding folder.
+
+The ControlNetLoader node is designed to load a ControlNet model from a specified path. It plays a crucial role in initializing ControlNet models, which are essential for applying control mechanisms over generated content or modifying existing content based on control signals.
+
+## Inputs
+
+| Field | Description | Comfy dtype |
+| --- | --- | --- |
+| `control_net_name` | Specifies the name of the ControlNet model to be loaded, used to locate the model file within a predefined directory structure. | `COMBO[STRING]` |
+
+## Outputs
+
+| Field | Description | Comfy dtype |
+| --- | --- | --- |
+| `control_net` | Returns the loaded ControlNet model, ready for use in controlling or modifying content generation processes. | `CONTROL_NET` |
+
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetLoader/en.md)

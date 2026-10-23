@@ -1,0 +1,20 @@
+# Carregar Modelo de Difusão
+
+O nó UNETLoader foi projetado para carregar modelos U-Net pelo nome, facilitando o uso de arquiteturas U-Net pré-treinadas dentro do sistema.
+
+Este nó detectará modelos localizados na pasta `ComfyUI/models/diffusion_models`.
+
+## Entradas
+
+| Parâmetro | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `unet_name` | Especifica o nome do modelo U-Net a ser carregado. Esse nome é usado para localizar o modelo dentro de uma estrutura de diretórios predefinida, permitindo o carregamento dinâmico de diferentes modelos U-Net. | COMBO[STRING] |
+| `tipo_peso` | 🚧  fp8_e4m3fn fp9_e5m2 | ... |
+
+## Saídas
+
+| Parâmetro | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `model` | Retorna o modelo U-Net carregado, permitindo que ele seja utilizado para processamento adicional ou inferência dentro do sistema. | MODEL |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UNETLoader/pt-BR.md)
