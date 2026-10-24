@@ -67,6 +67,14 @@ VALID_TYPES = {
     # Custom voice handle emitted by Fish Audio Voice Selector and consumed by
     # Fish Audio Text to Speech (IO.Custom(FISHAUDIO_VOICE)).
     "FISHAUDIO_VOICE",
+    # Growable input groups (IO.Autogrow.Input -> io_type COMFY_AUTOGROW),
+    # e.g. the product_images stack in Bria Product Holding / Virtual Try-On
+    # and the reference images in the Ideogram Vector nodes.
+    "AUTOGROW",
+    # Vector output of the Ideogram Vector nodes (IO.SVG.Output).
+    "SVG",
+    # Task handle emitted by the Meshy nodes (IO.Custom("MESHY_TASK_ID")).
+    "MESHY_TASK_ID",
 }
 
 ROW_RE = re.compile(r"^\|")
