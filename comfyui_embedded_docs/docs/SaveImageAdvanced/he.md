@@ -28,7 +28,7 @@
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 | --- | --- | --- | --- | --- |
 | `bit_depth` | עומק הסיביות של קובץ ה-EXR הנשמר. (ברירת מחדל: "16-bit float") | COMBO | כן (מותנה) | `"16-bit float"`<br>`"32-bit float"` |
-| `input_color_space` | מרחב הצבע של טנזור הקלט. קובץ EXR נכתב תמיד כליניארי סצני בגאמוט המתאים.<br>`"sRGB"` — הקלט מקודד sRGB-Rec.709; מוחל EOTF ההפוך של sRGB.<br>`"HDR"` — הקלט מקודד HLG-Rec.2020 (BT.2100); מוחל OETF ההפוך של HLG כדי לקבל אור ליניארי סצני.<br>`"linear"` — הקלט כבר ליניארי סצני (פריימריז Rec.709); נכתב ללא שינוי. השתמש בזה עבור פלט של רנדרר/קומפוזיטור. (ברירת מחדל: "sRGB") | COMBO | כן (מותנה) | `"sRGB"`<br>`"HDR"`<br>`"linear"` |
+| `input_color_space` | מרחב הצבע של טנזור הקלט. קובץ EXR נכתב תמיד כליניארי סצני בגאמוט המתאים.<br>`"sRGB"` — הקלט מקודד sRGB-Rec.709; מוחל EOTF ההפוך של sRGB.<br>`"HDR"` — הקלט מקודד HLG-Rec.2020 (BT.2100); מוחל OETF ההפוך של HLG כדי לקבל אור ליניארי סצני.<br>`"linear"` — הקלט כבר ליניארי סצני (פריימריז Rec.709); נכתב ללא שינוי. השתמש בזה עבור פלט של רנדרר/קומפוזיטור.<br>`"linear ACEScg"` — הקלט הוא כבר ACEScg לינארי-סצני (AP1 / D60); הוא נכתב ללא שינוי עם כרומטיות ACEScg. (ברירת מחדל: "sRGB") | COMBO | כן (מותנה) | `"sRGB"`<br>`"HDR"`<br>`"linear"`<br>`"linear ACEScg"` |
 
 ### קלטים של AVIF
 
@@ -67,4 +67,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageAdvanced/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `a0f7fccb3b25ffa814bf5d2a970c41fd4114368eb9a9998880b1108a272a41bb`
+**Source fingerprint (SHA-256):** `ebbb78aedbfeb48239d900eee2170e04899e2b5b841a720209258f68dd6241f8`

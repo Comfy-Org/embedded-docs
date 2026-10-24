@@ -28,7 +28,7 @@
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `bit_depth` | 所儲存 EXR 檔案的位元深度。（預設值："16-bit float"） | COMBO | 是（條件式） | `"16-bit float"`<br>`"32-bit float"` |
-| `input_color_space` | 輸入張量的色彩空間。EXR 一律以對應色域的場景線性格式寫入。<br>`"sRGB"` — 輸入為 sRGB 編碼的 Rec.709；會套用反向 sRGB EOTF。<br>`"HDR"` — 輸入為 HLG 編碼的 Rec.2020（BT.2100）；會套用反向 HLG OETF 以取得場景線性光。<br>`"linear"` — 輸入已是場景線性（Rec.709 原色）；會原樣寫入。用於渲染器/合成器輸出。（預設值："sRGB"） | COMBO | 是（條件式） | `"sRGB"`<br>`"HDR"`<br>`"linear"` |
+| `input_color_space` | 輸入張量的色彩空間。EXR 一律以對應色域的場景線性格式寫入。<br>`"sRGB"` — 輸入為 sRGB 編碼的 Rec.709；會套用反向 sRGB EOTF。<br>`"HDR"` — 輸入為 HLG 編碼的 Rec.2020（BT.2100）；會套用反向 HLG OETF 以取得場景線性光。<br>`"linear"` — 輸入已是場景線性（Rec.709 原色）；會原樣寫入。用於渲染器/合成器輸出。<br>`"linear ACEScg"` — 輸入已經是 ACEScg 場景線性（AP1 / D60）；原樣寫入，並使用 ACEScg 色度。（預設值："sRGB"） | COMBO | 是（條件式） | `"sRGB"`<br>`"HDR"`<br>`"linear"`<br>`"linear ACEScg"` |
 
 ### AVIF 輸入
 
@@ -67,4 +67,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageAdvanced/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `a0f7fccb3b25ffa814bf5d2a970c41fd4114368eb9a9998880b1108a272a41bb`
+**Source fingerprint (SHA-256):** `ebbb78aedbfeb48239d900eee2170e04899e2b5b841a720209258f68dd6241f8`

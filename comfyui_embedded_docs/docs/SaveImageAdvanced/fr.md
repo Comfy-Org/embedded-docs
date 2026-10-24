@@ -28,7 +28,7 @@ Ces options apparaissent lorsque `format` est défini sur `"exr"`.
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `bit_depth` | La profondeur de bits du fichier EXR enregistré. (par défaut : "16-bit float") | COMBO | Oui (conditionnel) | `"16-bit float"`<br>`"32-bit float"` |
-| `input_color_space` | Espace colorimétrique du tenseur d’entrée. L’EXR est toujours écrit en linéaire de scène dans le gamut correspondant.<br>`"sRGB"` — l’entrée est Rec.709 encodée sRGB ; l’EOTF sRGB inverse est appliquée.<br>`"HDR"` — l’entrée est Rec.2020 encodée HLG (BT.2100) ; l’OETF HLG inverse est appliquée pour obtenir une lumière linéaire de scène.<br>`"linear"` — l’entrée est déjà en linéaire de scène (primaires Rec.709) ; écrite sans modification. Utilisez ceci pour la sortie d’un moteur de rendu/compositeur. (par défaut : "sRGB") | COMBO | Oui (conditionnel) | `"sRGB"`<br>`"HDR"`<br>`"linear"` |
+| `input_color_space` | Espace colorimétrique du tenseur d’entrée. L’EXR est toujours écrit en linéaire de scène dans le gamut correspondant.<br>`"sRGB"` — l’entrée est Rec.709 encodée sRGB ; l’EOTF sRGB inverse est appliquée.<br>`"HDR"` — l’entrée est Rec.2020 encodée HLG (BT.2100) ; l’OETF HLG inverse est appliquée pour obtenir une lumière linéaire de scène.<br>`"linear"` — l’entrée est déjà en linéaire de scène (primaires Rec.709) ; écrite sans modification. Utilisez ceci pour la sortie d’un moteur de rendu/compositeur.<br>`"linear ACEScg"` — l’entrée est déjà ACEScg scène-linéaire (AP1 / D60) ; elle est écrite sans modification avec les chromaticités ACEScg. (par défaut : "sRGB") | COMBO | Oui (conditionnel) | `"sRGB"`<br>`"HDR"`<br>`"linear"`<br>`"linear ACEScg"` |
 
 ### Entrées AVIF
 
@@ -67,4 +67,4 @@ Ces options apparaissent lorsque `save_mode` est défini sur `"animated"`.
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageAdvanced/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `a0f7fccb3b25ffa814bf5d2a970c41fd4114368eb9a9998880b1108a272a41bb`
+**Source fingerprint (SHA-256):** `ebbb78aedbfeb48239d900eee2170e04899e2b5b841a720209258f68dd6241f8`

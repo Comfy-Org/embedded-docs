@@ -28,7 +28,7 @@ Estas opções aparecem quando `format` está definido como `"exr"`.
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `bit_depth` | A profundidade de bits para o arquivo EXR salvo. (padrão: "16-bit float") | COMBO | Sim (condicional) | `"16-bit float"`<br>`"32-bit float"` |
-| `input_color_space` | Espaço de cor do tensor de entrada. O EXR é sempre gravado como linear de cena no gamut correspondente.<br>`"sRGB"` — a entrada é Rec.709 codificada em sRGB; a EOTF sRGB inversa é aplicada.<br>`"HDR"` — a entrada é Rec.2020 codificada em HLG (BT.2100); a OETF HLG inversa é aplicada para obter luz linear de cena.<br>`"linear"` — a entrada já é linear de cena (primárias Rec.709); gravada sem alterações. Use isto para saída de renderizador/compositor. (padrão: "sRGB") | COMBO | Sim (condicional) | `"sRGB"`<br>`"HDR"`<br>`"linear"` |
+| `input_color_space` | Espaço de cor do tensor de entrada. O EXR é sempre gravado como linear de cena no gamut correspondente.<br>`"sRGB"` — a entrada é Rec.709 codificada em sRGB; a EOTF sRGB inversa é aplicada.<br>`"HDR"` — a entrada é Rec.2020 codificada em HLG (BT.2100); a OETF HLG inversa é aplicada para obter luz linear de cena.<br>`"linear"` — a entrada já é linear de cena (primárias Rec.709); gravada sem alterações. Use isto para saída de renderizador/compositor.<br>`"linear ACEScg"` — a entrada já é ACEScg cena-linear (AP1 / D60); gravada sem alterações com as cromaticidades ACEScg. (padrão: "sRGB") | COMBO | Sim (condicional) | `"sRGB"`<br>`"HDR"`<br>`"linear"`<br>`"linear ACEScg"` |
 
 ### Entradas de AVIF
 
@@ -67,4 +67,4 @@ Estas opções aparecem quando `save_mode` está definido como `"animated"`.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageAdvanced/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `a0f7fccb3b25ffa814bf5d2a970c41fd4114368eb9a9998880b1108a272a41bb`
+**Source fingerprint (SHA-256):** `ebbb78aedbfeb48239d900eee2170e04899e2b5b841a720209258f68dd6241f8`
