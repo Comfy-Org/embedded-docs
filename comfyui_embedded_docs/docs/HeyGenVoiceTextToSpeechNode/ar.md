@@ -1,6 +1,6 @@
 # HeyGen Voice 1.0 Text to Speech
 
-تحدث بالنص باستخدام صوت مستنسخ بواسطة HeyGen Voice 1.0 Instant Clone. ترسل العقدة النص ومعرّف الصوت إلى HeyGen وتعيد الكلام المولّد كصوت. يتوفر نموذجان: `heygen-voice-1` والنموذج الأسرع `heygen-voice-1-turbo`، الذي تبلغ تكلفته نصف التكلفة.
+تحدث بالنص باستخدام صوت مستنسخ بواسطة HeyGen Voice 1.0 Instant Clone. ترسل العقدة النص ومعرّف الصوت إلى HeyGen وتعيد الكلام المولّد كصوت. يتوفر نموذجان: `heygen-voice-1` والنموذج الأسرع والأقل تكلفة `heygen-voice-1-turbo`.
 
 يؤدي اختيار `model` إلى إظهار المعاملات الخاصة بذلك النموذج.
 
@@ -8,7 +8,7 @@
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
-| `model` | النموذج المراد استخدامه. `heygen-voice-1-turbo` أسرع وتكلفته نصف التكلفة. يؤدي اختيار نموذج إلى إظهار المعاملات الخاصة به: `voice_id` و`text` و`language` و`expressiveness_boost`. | DYNAMIC_COMBO | نعم | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `model` | النموذج المراد استخدامه. `heygen-voice-1-turbo` أسرع وتكلفته أقل. يؤدي اختيار نموذج إلى إظهار المعاملات الخاصة به: `voice_id` و`text` و`language` و`expressiveness_boost`. | DYNAMIC_COMBO | نعم | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `voice_id` | الصوت من HeyGen Voice 1.0 Instant Clone (الافتراضي: فارغ). | STRING | نعم | N/A |
 | `text` | النص المراد التحدث به. حتى 5000 حرف؛ يفشل الكلام الأطول من نحو 12 دقيقة، لذا قسّم النصوص الصينية أو اليابانية الطويلة جدًا (الافتراضي: فارغ). | STRING | نعم | من 1 إلى 5000 حرف |
 | `language` | لغة النص. اضبطها للغات وثيقة الصلة مثل الصربية أو الماليزية، التي قد يخطئ الاكتشاف التلقائي في تمييزها (الافتراضي: "auto"). | COMBO | نعم | `"auto"`<br>إعدادات لغة مسبقة متعددة |
@@ -25,4 +25,4 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceTextToSpeechNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `61e345563db04a4dfc61e8862a328d5062aa2a77af57c2209ca4ca3862930be8`
+**Source fingerprint (SHA-256):** `936cb63237681779dd4d9a74d048afae93160638d069be6b16e5855d333e584a`

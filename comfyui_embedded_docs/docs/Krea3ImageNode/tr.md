@@ -20,7 +20,7 @@ Bu girdiler, `model` değeri `Krea 3` olarak ayarlandığında görünür.
 | `model.prompt` | Neyin değiştirileceği ve neyin korunacağı. Görüntülere `@Image1`, `@Image2` vb. veya görüntü 1, görüntü 2, ... olarak atıfta bulunun. İstem boş olamaz. | STRING | Evet | - |
 | `model.aspect_ratio` | Sonucun en boy oranı. `"auto"`, ilk görüntüyü veya hiç görüntü bağlı değilse istemi takip eder. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"5:4"`<br>`"4:3"`<br>`"3:2"`<br>`"16:9"`<br>`"21:9"` |
 | `model.resolution` | Çıktı çözünürlüğü. `"2K"`, `"1K"` seçeneğine göre daha uzun sürer ve daha büyük bir görüntü üretir. (varsayılan: `"2K"`) | COMBO | Evet | `"1K"`<br>`"2K"` |
-| `model.thinking_mode` | Krea 3'ün düzenlemeyi planlamaya ne kadar emek harcadığı. `"fast"` önerilir; `"high"` ise karmaşık düzenlemeleri daha ayrıntılı planlar ve daha uzun sürer. (varsayılan: `"fast"`) | COMBO | Evet | `"fast"`<br>`"high"` |
+| `model.thinking_mode` | Krea 3'ün düzenlemeyi planlamaya ne kadar emek harcadığı. `"fast"` önerilir; `"high"` ise karmaşık düzenlemeleri daha ayrıntılı planlar ve daha uzun sürer. `"ultra"` birkaç aday üretir ve en iyisini döndürür; en az bir görüntü gerektirir, her zaman 2K çıktı verir ve `precise_edit` desteklemez. (varsayılan: `"fast"`) | COMBO | Evet | `"fast"`<br>`"high"`<br>`"ultra"` |
 | `model.precise_edit` | Düzenlenen alanın dışındaki her şeyi değişmeden korur. En az bir bağlı görüntü gerektirir. (varsayılan: False) | BOOLEAN | Evet | false<br>true |
 | `model.seed` | İstek için tohum (varsayılan: 42). Krea, oluşturmadan önce istemi yeniden yazar; bu nedenle aynı tohum bir görüntüyü tekrar etmez. | INT | Evet | 0 - 2147483647 |
 
@@ -35,4 +35,4 @@ Bu girdiler, `model` değeri `Krea 3` olarak ayarlandığında görünür.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Krea3ImageNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `3d14262a3b5f2593fb75abc50e1278db00b81fd0e79ab829fea241dbd07e22dc`
+**Source fingerprint (SHA-256):** `9e8d036f1ebca81b85e6ef42a015e7e2925bf467fa32e82180ee1b76dcc91c0b`

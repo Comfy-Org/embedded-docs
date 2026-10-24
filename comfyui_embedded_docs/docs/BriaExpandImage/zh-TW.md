@@ -43,9 +43,9 @@ Bria Expand Image 透過使用 Bria 生成新內容，將影像擴展到其原�
 
 預設長寬比選項（`1:1`、`2:3`、`3:2`、`3:4`、`4:3`、`4:5`、`5:4`、`9:16`、`16:9`）沒有其他輸入。
 
-當 `expand_mode` 為 `custom_ratio` 時，`ratio_width` 和 `ratio_height` 會定義目標長寬比。Bria 只接受介於 0.5 與 3.0 之間的寬高比。若比例超出此範圍，會引發錯誤，此時應改用 `manual` 模式。
+當 `expand_mode` 為 `custom_ratio` 時，`ratio_width` 和 `ratio_height` 會定義目標長寬比。Bria 只接受介於 0.5 與 3.0 之間的寬高比。若比例超出此範圍，會引發錯誤，此時應改用 `manual` 模式。 擴展後的畫布上限為 2500 萬像素；若結果需要更大的畫布，節點會報錯，請先縮小影像。
 
-當 `expand_mode` 為 `manual` 時，原始影像會以指定的大小與位置放置在畫布上。影像可能延伸到畫布之外，此時畫布外的部分會被裁切。
+當 `expand_mode` 為 `manual` 時，原始影像會以指定的大小與位置放置在畫布上。影像可能延伸到畫布之外，此時畫布外的部分會被裁切。 影像必須留出畫布的一部分未被覆蓋；若影像覆蓋了整個畫布，節點會因為無處可擴展而報錯。
 
 當 `moderation` 為 `true` 時，這三個審核布林值會傳送給 Bria。當 `moderation` 為 `false` 時，它們會被忽略。
 
@@ -59,4 +59,4 @@ Bria Expand Image 透過使用 Bria 生成新內容，將影像擴展到其原�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaExpandImage/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `d2c9431837f200ccbcb39037f7b26013494c4dea3d40d899db4e717ddbbea71c`
+**Source fingerprint (SHA-256):** `939b51e420f13ccea058d9cf36172148db55d9878975b5f0251a90773f6d6105`

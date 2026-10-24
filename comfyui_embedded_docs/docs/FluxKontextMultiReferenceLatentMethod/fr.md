@@ -7,7 +7,7 @@ Le nœud FluxKontextMultiReferenceLatentMethod met à jour les données de condi
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
 | `conditionnement` | Les données de conditionnement à modifier avec la méthode de latents de référence | CONDITIONING | Oui | - |
-| `méthode_des_latents_de_référence` | La méthode utilisée pour le traitement des latents de référence. Si une valeur contenant "uxo" ou "uso" est sélectionnée, elle est convertie en "uxo" avant d'être stockée. Ce paramètre est marqué comme avancé. | COMBO | Oui | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
+| `méthode_des_latents_de_référence` | La méthode utilisée pour le traitement des latents de référence. Si une valeur contenant "uxo" ou "uso" est sélectionnée, elle est convertie en "uxo" avant d'être stockée. Ce paramètre est marqué comme avancé. | COMBO | Oui | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"`<br>`"index_timestep_zero_isolated"`<br>`"index_timestep_zero_text_start"` |
 
 ## Sorties
 
@@ -18,4 +18,4 @@ Le nœud FluxKontextMultiReferenceLatentMethod met à jour les données de condi
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextMultiReferenceLatentMethod/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `cbe069d0c9f8adbf7f8c909b1cd644d9cd3730e934f0e5856213ff06fa8ecc56`
+**Source fingerprint (SHA-256):** `de2e3d34f9e47a90ff37300489bffef8082eb92deefbc2ce338b17b0d853ac77`

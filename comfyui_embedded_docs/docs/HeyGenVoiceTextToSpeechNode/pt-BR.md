@@ -1,6 +1,6 @@
 # HeyGen Voice 1.0 Text to Speech
 
-Sintetize o texto em uma voz clonada com o HeyGen Voice 1.0 Instant Clone. O nó envia o texto e o ID da voz ao HeyGen e retorna a fala gerada como áudio. Dois modelos estão disponíveis: `heygen-voice-1` e o mais rápido `heygen-voice-1-turbo`, que custa metade do valor.
+Sintetize o texto em uma voz clonada com o HeyGen Voice 1.0 Instant Clone. O nó envia o texto e o ID da voz ao HeyGen e retorna a fala gerada como áudio. Dois modelos estão disponíveis: `heygen-voice-1` e o mais rápido e mais barato `heygen-voice-1-turbo`.
 
 Selecionar um `model` revela os parâmetros específicos desse modelo.
 
@@ -8,7 +8,7 @@ Selecionar um `model` revela os parâmetros específicos desse modelo.
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-----------|---------------|-------------|-----------|
-| `model` | Modelo a usar. `heygen-voice-1-turbo` é mais rápido e custa metade do valor. Selecionar um modelo revela os parâmetros específicos dele: `voice_id`, `text`, `language` e `expressiveness_boost`. | DYNAMIC_COMBO | Sim | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `model` | Modelo a usar. `heygen-voice-1-turbo` é mais rápido e custa menos. Selecionar um modelo revela os parâmetros específicos dele: `voice_id`, `text`, `language` e `expressiveness_boost`. | DYNAMIC_COMBO | Sim | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `voice_id` | Voz do HeyGen Voice 1.0 Instant Clone (padrão: vazio). | STRING | Sim | N/A |
 | `text` | Texto a ser falado. Até 5000 caracteres; falas com duração superior a cerca de 12 minutos falham, portanto, divida textos muito longos em chinês ou japonês (padrão: vazio). | STRING | Sim | 1 a 5000 caracteres |
 | `language` | Idioma do texto. Defina-o para idiomas próximos, como sérvio ou malaio, que a detecção automática pode confundir (padrão: "auto"). | COMBO | Sim | `"auto"`<br>Várias predefinições de idioma |
@@ -25,4 +25,4 @@ Selecionar um `model` revela os parâmetros específicos desse modelo.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceTextToSpeechNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `61e345563db04a4dfc61e8862a328d5062aa2a77af57c2209ca4ca3862930be8`
+**Source fingerprint (SHA-256):** `936cb63237681779dd4d9a74d048afae93160638d069be6b16e5855d333e584a`

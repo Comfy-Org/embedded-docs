@@ -43,9 +43,9 @@ Bria Expand Image espande un'immagine oltre i suoi bordi originali generando nuo
 
 Le opzioni di rapporto d'aspetto predefinito (`1:1`, `2:3`, `3:2`, `3:4`, `4:3`, `4:5`, `5:4`, `9:16`, `16:9`) non hanno input aggiuntivi.
 
-Quando `expand_mode` è `custom_ratio`, `ratio_width` e `ratio_height` definiscono un rapporto d'aspetto target. Bria accetta solo rapporti larghezza/altezza tra 0.5 e 3.0. Se il rapporto è al di fuori di questo intervallo, viene generato un errore e si dovrebbe usare invece la modalità `manual`.
+Quando `expand_mode` è `custom_ratio`, `ratio_width` e `ratio_height` definiscono un rapporto d'aspetto target. Bria accetta solo rapporti larghezza/altezza tra 0.5 e 3.0. Se il rapporto è al di fuori di questo intervallo, viene generato un errore e si dovrebbe usare invece la modalità `manual`. La tela espansa è limitata a 25 megapixel; se il risultato richiede una tela più grande, il nodo genera un errore, quindi riduci prima l'immagine.
 
-Quando `expand_mode` è `manual`, l'immagine originale viene posizionata su una tela con la dimensione e la posizione specificate. L'immagine può estendersi oltre la tela, nel qual caso la porzione esterna viene ritagliata.
+Quando `expand_mode` è `manual`, l'immagine originale viene posizionata su una tela con la dimensione e la posizione specificate. L'immagine può estendersi oltre la tela, nel qual caso la porzione esterna viene ritagliata. L'immagine deve lasciare scoperta una parte della tela: se copre l'intera tela, il nodo genera un errore perché non c'è nulla da espandere.
 
 Quando `moderation` è `true`, i tre booleani di moderazione vengono inviati a Bria. Quando `moderation` è `false`, vengono ignorati.
 
@@ -59,4 +59,4 @@ Quando `moderation` è `true`, i tre booleani di moderazione vengono inviati a B
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaExpandImage/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `d2c9431837f200ccbcb39037f7b26013494c4dea3d40d899db4e717ddbbea71c`
+**Source fingerprint (SHA-256):** `939b51e420f13ccea058d9cf36172148db55d9878975b5f0251a90773f6d6105`

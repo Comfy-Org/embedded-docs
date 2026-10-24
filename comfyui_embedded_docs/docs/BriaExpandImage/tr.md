@@ -43,9 +43,9 @@ Bria Expand Image, Bria ile yeni içerik üreterek bir görüntüyü özgün sı
 
 Ön ayarlı en-boy oranı seçeneklerinin (`1:1`, `2:3`, `3:2`, `3:4`, `4:3`, `4:5`, `5:4`, `9:16`, `16:9`) ek girdisi yoktur.
 
-`expand_mode` `custom_ratio` olduğunda, `ratio_width` ve `ratio_height` bir hedef en-boy oranı tanımlar. Bria yalnızca 0.5 ile 3.0 arasındaki genişlik-yükseklik oranlarını kabul eder. Oran bu aralığın dışındaysa bir hata oluşturulur ve bunun yerine `manual` modu kullanılmalıdır.
+`expand_mode` `custom_ratio` olduğunda, `ratio_width` ve `ratio_height` bir hedef en-boy oranı tanımlar. Bria yalnızca 0.5 ile 3.0 arasındaki genişlik-yükseklik oranlarını kabul eder. Oran bu aralığın dışındaysa bir hata oluşturulur ve bunun yerine `manual` modu kullanılmalıdır. Genişletilmiş tuval 25 megapiksel ile sınırlıdır; sonuç daha büyük bir tuval gerektiriyorsa düğüm hata verir, bu yüzden önce görüntüyü küçültün.
 
-`expand_mode` `manual` olduğunda, özgün görüntü belirtilen boyut ve konumda bir tuvale yerleştirilir. Görüntü tuvalin dışına taşabilir; bu durumda dışta kalan kısım kırpılır.
+`expand_mode` `manual` olduğunda, özgün görüntü belirtilen boyut ve konumda bir tuvale yerleştirilir. Görüntü tuvalin dışına taşabilir; bu durumda dışta kalan kısım kırpılır. Görüntü, tuvalin bir kısmını açıkta bırakmalıdır; tuvalin tamamını kaplıyorsa genişletilecek alan kalmadığı için düğüm hata verir.
 
 `moderation` `true` olduğunda, üç moderasyon boolean değeri Bria'ya gönderilir. `moderation` `false` olduğunda yok sayılırlar.
 
@@ -59,4 +59,4 @@ Bria Expand Image, Bria ile yeni içerik üreterek bir görüntüyü özgün sı
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaExpandImage/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d2c9431837f200ccbcb39037f7b26013494c4dea3d40d899db4e717ddbbea71c`
+**Source fingerprint (SHA-256):** `939b51e420f13ccea058d9cf36172148db55d9878975b5f0251a90773f6d6105`

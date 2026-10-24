@@ -20,7 +20,7 @@ Estas entradas aparecen cuando `model` se establece en `Krea 3`.
 | `model.prompt` | Qué cambiar y qué conservar. Refiérete a las imágenes como `@Image1`, `@Image2`, etc., o como imagen 1, imagen 2, ... El prompt no puede estar vacío. | STRING | Sí | - |
 | `model.aspect_ratio` | La relación de aspecto del resultado. `"auto"` sigue la primera imagen, o el prompt cuando no hay ninguna imagen conectada. (predeterminado: `"auto"`) | COMBO | Sí | `"auto"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"5:4"`<br>`"4:3"`<br>`"3:2"`<br>`"16:9"`<br>`"21:9"` |
 | `model.resolution` | La resolución de salida. `"2K"` tarda más y produce una imagen más grande que `"1K"`. (predeterminado: `"2K"`) | COMBO | Sí | `"1K"`<br>`"2K"` |
-| `model.thinking_mode` | Cuánto trabajo dedica Krea 3 a planificar la edición. Se recomienda `"fast"`, mientras que `"high"` planifica ediciones complejas con más detalle y tarda más. (predeterminado: `"fast"`) | COMBO | Sí | `"fast"`<br>`"high"` |
+| `model.thinking_mode` | Cuánto trabajo dedica Krea 3 a planificar la edición. Se recomienda `"fast"`, mientras que `"high"` planifica ediciones complejas con más detalle y tarda más. `"ultra"` genera varios candidatos y devuelve el mejor; necesita al menos una imagen, siempre genera en 2K y no admite `precise_edit`. (predeterminado: `"fast"`) | COMBO | Sí | `"fast"`<br>`"high"`<br>`"ultra"` |
 | `model.precise_edit` | Mantén todo lo que está fuera del área editada sin cambios. Requiere al menos una imagen conectada. (predeterminado: False) | BOOLEAN | Sí | false<br>true |
 | `model.seed` | La semilla para la solicitud (predeterminado: 42). Krea reescribe el prompt antes de generar, por lo que la misma semilla no repite una imagen. | INT | Sí | 0 a 2147483647 |
 
@@ -35,4 +35,4 @@ Una referencia como `@Image3` solo se acepta cuando hay al menos tres imágenes 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Krea3ImageNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `3d14262a3b5f2593fb75abc50e1278db00b81fd0e79ab829fea241dbd07e22dc`
+**Source fingerprint (SHA-256):** `9e8d036f1ebca81b85e6ef42a015e7e2925bf467fa32e82180ee1b76dcc91c0b`

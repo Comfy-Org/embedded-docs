@@ -43,9 +43,9 @@ Bria Expand Image erweitert ein Bild über seine ursprünglichen Ränder hinaus,
 
 Voreingestellte Seitenverhältnis-Optionen (`1:1`, `2:3`, `3:2`, `3:4`, `4:3`, `4:5`, `5:4`, `9:16`, `16:9`) haben keine zusätzlichen Eingaben.
 
-Wenn `expand_mode` auf `custom_ratio` gesetzt ist, definieren `ratio_width` und `ratio_height` ein Ziel-Seitenverhältnis. Bria akzeptiert nur Breite-zu-Höhe-Verhältnisse zwischen 0.5 und 3.0. Liegt das Verhältnis außerhalb dieses Bereichs, wird ein Fehler ausgelöst und stattdessen sollte der Modus `manual` verwendet werden.
+Wenn `expand_mode` auf `custom_ratio` gesetzt ist, definieren `ratio_width` und `ratio_height` ein Ziel-Seitenverhältnis. Bria akzeptiert nur Breite-zu-Höhe-Verhältnisse zwischen 0.5 und 3.0. Liegt das Verhältnis außerhalb dieses Bereichs, wird ein Fehler ausgelöst und stattdessen sollte der Modus `manual` verwendet werden. Die erweiterte Leinwand ist auf 25 Megapixel begrenzt; wenn das Ergebnis eine größere Leinwand bräuchte, löst der Node einen Fehler aus, also das Bild zuerst verkleinern.
 
-Wenn `expand_mode` auf `manual` gesetzt ist, wird das Originalbild mit der angegebenen Größe und Position auf einer Leinwand platziert. Das Bild kann über die Leinwand hinausragen; in diesem Fall wird der außerhalb liegende Teil zugeschnitten.
+Wenn `expand_mode` auf `manual` gesetzt ist, wird das Originalbild mit der angegebenen Größe und Position auf einer Leinwand platziert. Das Bild kann über die Leinwand hinausragen; in diesem Fall wird der außerhalb liegende Teil zugeschnitten. Das Bild muss einen Teil der Leinwand frei lassen: deckt es die ganze Leinwand ab, löst der Node einen Fehler aus, weil es nichts zu erweitern gibt.
 
 Wenn `moderation` auf `true` gesetzt ist, werden die drei Moderations-Booleschen Werte an Bria gesendet. Wenn `moderation` auf `false` gesetzt ist, werden sie ignoriert.
 
@@ -59,4 +59,4 @@ Wenn `moderation` auf `true` gesetzt ist, werden die drei Moderations-Booleschen
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaExpandImage/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `d2c9431837f200ccbcb39037f7b26013494c4dea3d40d899db4e717ddbbea71c`
+**Source fingerprint (SHA-256):** `939b51e420f13ccea058d9cf36172148db55d9878975b5f0251a90773f6d6105`

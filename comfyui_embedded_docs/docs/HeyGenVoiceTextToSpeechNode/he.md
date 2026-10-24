@@ -1,6 +1,6 @@
 # HeyGen Voice 1.0 Text to Speech
 
-מקריא טקסט בקול משובט באמצעות HeyGen Voice 1.0 Instant Clone. הצומת שולח את הטקסט ואת מזהה הקול ל-HeyGen ומחזיר את הדיבור שנוצר כאודיו. זמינים שני מודלים: `heygen-voice-1` והמהיר יותר `heygen-voice-1-turbo`, שעולה חצי מהמחיר.
+מקריא טקסט בקול משובט באמצעות HeyGen Voice 1.0 Instant Clone. הצומת שולח את הטקסט ואת מזהה הקול ל-HeyGen ומחזיר את הדיבור שנוצר כאודיו. זמינים שני מודלים: `heygen-voice-1` והמהיר והזול יותר `heygen-voice-1-turbo`.
 
 בחירת `model` חושפת את הפרמטרים הספציפיים לאותו מודל.
 
@@ -8,7 +8,7 @@
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `model` | מודל לשימוש. `heygen-voice-1-turbo` מהיר יותר ועולה חצי. בחירת מודל חושפת את הפרמטרים הספציפיים לו: `voice_id`, `text`, `language`, ו-`expressiveness_boost`. | DYNAMIC_COMBO | כן | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `model` | מודל לשימוש. `heygen-voice-1-turbo` מהיר יותר וזול יותר. בחירת מודל חושפת את הפרמטרים הספציפיים לו: `voice_id`, `text`, `language`, ו-`expressiveness_boost`. | DYNAMIC_COMBO | כן | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `voice_id` | קול מ-HeyGen Voice 1.0 Instant Clone (ברירת מחדל: ריק). | STRING | כן | N/A |
 | `text` | טקסט להקראה. עד 5000 תווים; דיבור ארוך מכ-12 דקות נכשל, לכן פצל טקסט סיני או יפני ארוך מאוד (ברירת מחדל: ריק). | STRING | כן | 1 עד 5000 תווים |
 | `language` | שפה של הטקסט. יש להגדיר אותה לשפות קרובות כגון סרבית או מלאית, שזיהוי אוטומטי עשוי להתבלבל בהן (ברירת מחדל: `"auto"`). | COMBO | כן | `"auto"`<br>מספר ערכות שפה מוגדרות מראש |
@@ -25,4 +25,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceTextToSpeechNode/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `61e345563db04a4dfc61e8862a328d5062aa2a77af57c2209ca4ca3862930be8`
+**Source fingerprint (SHA-256):** `936cb63237681779dd4d9a74d048afae93160638d069be6b16e5855d333e584a`

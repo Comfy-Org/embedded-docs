@@ -20,7 +20,7 @@ Ces entrées apparaissent lorsque `model` est défini sur `Krea 3`.
 | `model.prompt` | Ce qu'il faut modifier et ce qu'il faut conserver. Faites référence aux images sous la forme `@Image1`, `@Image2`, etc., ou comme image 1, image 2, ... Le prompt ne peut pas être vide. | STRING | Oui | - |
 | `model.aspect_ratio` | Le ratio d'aspect du résultat. `"auto"` suit la première image, ou le prompt lorsqu'aucune image n'est connectée. (valeur par défaut : `"auto"`) | COMBO | Oui | `"auto"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"5:4"`<br>`"4:3"`<br>`"3:2"`<br>`"16:9"`<br>`"21:9"` |
 | `model.resolution` | La résolution de sortie. `"2K"` prend plus de temps et produit une image plus grande que `"1K"`. (valeur par défaut : `"2K"`) | COMBO | Oui | `"1K"`<br>`"2K"` |
-| `model.thinking_mode` | La quantité de travail que Krea 3 consacre à la planification de la modification. `"fast"` est recommandé, tandis que `"high"` planifie les modifications complexes de manière plus détaillée et prend plus de temps. (valeur par défaut : `"fast"`) | COMBO | Oui | `"fast"`<br>`"high"` |
+| `model.thinking_mode` | La quantité de travail que Krea 3 consacre à la planification de la modification. `"fast"` est recommandé, tandis que `"high"` planifie les modifications complexes de manière plus détaillée et prend plus de temps. `"ultra"` génère plusieurs candidats et renvoie le meilleur ; il nécessite au moins une image, produit toujours en 2K et ne prend pas en charge `precise_edit`. (valeur par défaut : `"fast"`) | COMBO | Oui | `"fast"`<br>`"high"`<br>`"ultra"` |
 | `model.precise_edit` | Maintenir inchangé tout ce qui se trouve en dehors de la zone modifiée. Nécessite au moins une image connectée. (valeur par défaut : False) | BOOLEAN | Oui | false<br>true |
 | `model.seed` | La graine pour la requête (valeur par défaut : 42). Krea réécrit le prompt avant de générer, donc la même graine ne reproduit pas une image identique. | INT | Oui | 0 à 2147483647 |
 
@@ -35,4 +35,4 @@ Une référence telle que `@Image3` n'est acceptée que lorsqu'au moins trois im
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Krea3ImageNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `3d14262a3b5f2593fb75abc50e1278db00b81fd0e79ab829fea241dbd07e22dc`
+**Source fingerprint (SHA-256):** `9e8d036f1ebca81b85e6ef42a015e7e2925bf467fa32e82180ee1b76dcc91c0b`

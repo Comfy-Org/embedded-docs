@@ -20,7 +20,7 @@ Krea 3 Image 會使用 Krea 3 編輯影像，或在未連接任何影像時，�
 | `model.prompt` | 要變更什麼以及要保留什麼。請以 `@Image1`、`@Image2` 等方式，或以 image 1、image 2、... 來指稱影像。提示不能為空。 | STRING | 是 | - |
 | `model.aspect_ratio` | 結果的長寬比。`"auto"` 會依第一張影像；若未連接影像，則依提示。(預設值：`"auto"`) | COMBO | 是 | `"auto"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"5:4"`<br>`"4:3"`<br>`"3:2"`<br>`"16:9"`<br>`"21:9"` |
 | `model.resolution` | 輸出解析度。`"2K"` 比 `"1K"` 耗時更長，並產生更大的影像。(預設值：`"2K"`) | COMBO | 是 | `"1K"`<br>`"2K"` |
-| `model.thinking_mode` | Krea 3 在規劃編輯時投入多少處理。建議使用 `"fast"`，而 `"high"` 會更詳細地規劃複雜編輯，但耗時更長。(預設值：`"fast"`) | COMBO | 是 | `"fast"`<br>`"high"` |
+| `model.thinking_mode` | Krea 3 在規劃編輯時投入多少處理。建議使用 `"fast"`，而 `"high"` 會更詳細地規劃複雜編輯，但耗時更長。`"ultra"` 會產生多個候選並回傳最佳結果；它至少需要一張影像，一律輸出 2K，且不支援 `precise_edit`。(預設值：`"fast"`) | COMBO | 是 | `"fast"`<br>`"high"`<br>`"ultra"` |
 | `model.precise_edit` | 保持編輯區域以外的所有內容不變。需要至少連接一張影像。(預設值：False) | BOOLEAN | 是 | false<br>true |
 | `model.seed` | 請求的種子值（預設值：42）。Krea 會在生成前重寫提示，因此相同的種子不會重複產生相同的影像。 | INT | 是 | 0 至 2147483647 |
 
@@ -35,4 +35,4 @@ Krea 3 Image 會使用 Krea 3 編輯影像，或在未連接任何影像時，�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Krea3ImageNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `3d14262a3b5f2593fb75abc50e1278db00b81fd0e79ab829fea241dbd07e22dc`
+**Source fingerprint (SHA-256):** `9e8d036f1ebca81b85e6ef42a015e7e2925bf467fa32e82180ee1b76dcc91c0b`
