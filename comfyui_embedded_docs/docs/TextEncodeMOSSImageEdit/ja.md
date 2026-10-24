@@ -1,26 +1,27 @@
 # Text Encode MOSS-Image Edit
 
-MOSS-Image 編集 LoRA 用のコンディショニングへ、編集指示と参照画像をまとめてエンコードします。出力をポジティブコンディショニングとして接続し、同じ参照を使って 2 つ目のインスタンスを実行してネガティブ側にしてください。参照は届いたサイズのまま使用されるため、接続前にスケーリングしてください。このノードは ComfyUI で実験的としてマークされています。
+編集指示と参照画像をまとめて、MOSS-Image 編集 LoRA 用の conditioning にエンコードします。出力をポジティブ conditioning として接続し、同じ参照でネガティブ用にもう一度実行してください。参照は届いたサイズのまま使われるので、接続前にスケールしてください。VAE がない場合、画像はテキストエンコーダーにのみ送られます。このノードは ComfyUI で実験的とマークされています。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `clip` | 指示をトークン化してエンコードする CLIP モデルです。 | CLIP | はい | - |
-| `prompt` | 編集内容を記述する指示です。複数行テキストと動的プロンプトをサポートします。 | STRING | はい | 任意のテキスト |
-| `vae` | 参照画像を参照 Latent にエンコードするために使用する VAE です。 | VAE | はい | - |
+| `clip` | 指示をトークン化しエンコードする CLIP モデルです。 | CLIP | はい | - |
+| `prompt` | 編集内容を記述する指示。複数行テキストと動的プロンプトに対応します。 | STRING | はい | 任意のテキスト |
+| `vae` | 画像を編集 LoRA の参照 Latent にエンコードします。任意: 未接続時、画像はテキストエンコーダーにのみ送られます。 | VAE | いいえ | - |
 | `edit_format` | 編集 LoRA の学習に使用されたレイアウトです。参照 Latent の方式と、テキストエンコーダーが参照も見るかどうかを選択します。 | COMBO | はい | `"ai-toolkit"`<br>`"ai-toolkit (kv_cache off)"`<br>`"Moss-Image-Edit"` |
-| `images` | 拡張可能なスロット: 1 つ以上の参照画像（`image_1`、`image_2`、...）を接続します。各画像は届いたサイズのまま使用され、アルファチャンネルが削除され、VAE によって参照 Latent にエンコードされます。 | IMAGE | はい | 1 枚以上の画像 |
+| `images` | 拡張可能なスロット: 1 つ以上の参照画像（`image_1`、`image_2`、...）を接続します。各画像は届いたサイズのまま使用されます。VAE 接続時はアルファが削除され参照 Latent にエンコードされ、VAE がない場合はテキストエンコーダーにのみ送られます。 | IMAGE | はい | 1 枚以上の画像 |
+| `image_strength` | テキストエンコーダーが見る画像への注目度をスケールします（ai-toolkit 形式、または VAE なし）: 0 は無視、1 は変更なし、1 超は強調。高度。デフォルト: 1.0。 | FLOAT | はい | 0.0 〜 100.0（ステップ 0.05） |
 
-**注:** `"ai-toolkit"` と `"ai-toolkit (kv_cache off)"` では、テキストエンコーダーもすべての参照を参照します。各参照は最大 384x384 ピクセルに縮小され、プロンプト内で `Picture N:` マーカーが前に付けられるため、指示から番号で参照できます。`"Moss-Image-Edit"` では、参照は参照 Latent としてのみモデルに渡され、テキストエンコーダーは指示だけを参照します。さらに `"ai-toolkit (kv_cache off)"` は、参照が生成中の画像にアテンションし続けるように保持するため、各サンプリングステップで再計算されます。
+**注意:** `"ai-toolkit"` と `"ai-toolkit (kv_cache off)"` の場合、または VAE 未接続で `image_strength` が 0 より大きい場合、テキストエンコーダーも各参照を見ます（最大 384x384 に縮小され、プロンプトに `Picture N:` マーカーが付きます）。`"Moss-Image-Edit"` で VAE 接続時は参照は参照 Latent のみでモデルに届き、テキストエンコーダーは指示だけを見ます。`"ai-toolkit (kv_cache off)"` では参照が生成中画像にも注目し続けるため、毎ステップ再計算されます。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `conditioning` | エンコードされた指示に、参照 Latent と対応する参照 Latent 方式が付加されたもの。 | CONDITIONING |
+| `conditioning` | 参照 Latent と一致する参照 Latent 方式が付いた、エンコード済みの指示です。 | CONDITIONING |
 
-> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeMOSSImageEdit/ja.md)
+> このドキュメントは AI によって生成されました。誤りを見つけた場合や改善のご提案がある場合は、ぜひご協力ください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeMOSSImageEdit/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `30e4edbb129f647cdce4ec95f78c002ecdc9a4f8fc5a45f1477fdc555b541dae`
+**Source fingerprint (SHA-256):** `673f098df6a8e466a5c8060009f446eac8f7556311a870de626c5f4bfc3ab196`

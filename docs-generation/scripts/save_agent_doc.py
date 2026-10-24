@@ -70,6 +70,14 @@ VALID_TYPES = {
     # Color picker widget (IO.Color.Input, io_type COLOR), e.g. the fill color
     # of Pad Image.
     "COLOR",
+    # Growable input groups (IO.Autogrow.Input -> io_type COMFY_AUTOGROW),
+    # e.g. the product_images stack in Bria Product Holding / Virtual Try-On
+    # and the reference images in the Ideogram Vector nodes.
+    "AUTOGROW",
+    # Vector output of the Ideogram Vector nodes (IO.SVG.Output).
+    "SVG",
+    # Task handle emitted by the Meshy nodes (IO.Custom("MESHY_TASK_ID")).
+    "MESHY_TASK_ID",
 }
 
 ROW_RE = re.compile(r"^\|")

@@ -1,6 +1,6 @@
 # Text Encode MOSS-Image Edit
 
-Codifica una instrucción de edición junto con imágenes de referencia en el condicionamiento para un LoRA de edición MOSS-Image. Conecta la salida como el condicionamiento positivo y ejecuta una segunda instancia con las mismas referencias para el negativo. Las referencias se utilizan con el tamaño con el que llegan, así que escálalas antes de conectarlas. Este nodo está marcado como experimental en ComfyUI.
+Codifica una instrucción de edición junto con imágenes de referencia en el condicionamiento para un LoRA de edición MOSS-Image. Conecta la salida como el condicionamiento positivo y ejecuta una segunda instancia con las mismas referencias para el negativo. Las referencias se utilizan con el tamaño con el que llegan, así que escálalas antes de conectarlas. Este nodo está marcado como experimental en ComfyUI. Sin un VAE, las imágenes solo van al codificador de texto.
 
 ## Entradas
 
@@ -8,11 +8,12 @@ Codifica una instrucción de edición junto con imágenes de referencia en el co
 | --- | --- | --- | --- | --- |
 | `clip` | El modelo CLIP que tokeniza la instrucción y la codifica. | CLIP | Sí | - |
 | `prompt` | La instrucción que describe la edición. Admite texto multilínea y prompts dinámicos. | STRING | Sí | Cualquier texto |
-| `vae` | El VAE utilizado para codificar las imágenes de referencia en latentes de referencia. | VAE | Sí | - |
+| `vae` | El VAE utilizado para codificar las imágenes de referencia en latentes de referencia. Opcional: sin él, las imágenes solo van al codificador de texto.| VAE | No | - |
 | `edit_format` | El formato con el que se entrenó el LoRA de edición. Selecciona el método de latentes de referencia y si el codificador de texto también ve las referencias. | COMBO | Sí | `"ai-toolkit"`<br>`"ai-toolkit (kv_cache off)"`<br>`"Moss-Image-Edit"` |
-| `images` | Ranura ampliable: conecta una o más imágenes de referencia (`image_1`, `image_2`, ...). Cada imagen se utiliza con el tamaño con el que llega, se le quita el canal alfa y se codifica con VAE en un latente de referencia. | IMAGE | Sí | 1 o más imágenes |
+| `images` | Ranura ampliable: conecta una o más imágenes de referencia (`image_1`, `image_2`, ...). Cada imagen se utiliza con el tamaño con el que llega, se le quita el canal alfa y se codifica con VAE en un latente de referencia. Con un VAE conectado se quita el canal alfa y cada imagen se codifica en un latente de referencia; sin VAE, las imágenes solo van al codificador de texto.| IMAGE | Sí | 1 o más imágenes |
+| `image_strength` | Escala cuánto atiende el modelo a las imágenes que ve el codificador de texto (formatos ai-toolkit, o sin VAE): 0 las ignora, 1 sin cambios, por encima de 1 las enfatiza. Avanzado. Predeterminado: 1.0. | FLOAT | Sí | 0.0 to 100.0 (step 0.05) |
 
-**Nota:** Con `"ai-toolkit"` y `"ai-toolkit (kv_cache off)"` el codificador de texto también ve cada referencia, reducida a un máximo de 384x384 píxeles y precedida por un marcador `Picture N:` en el prompt, de modo que la instrucción puede referirse a ellas por número. Con `"Moss-Image-Edit"` las referencias llegan al modelo solo como latentes de referencia y el codificador de texto ve únicamente la instrucción. `"ai-toolkit (kv_cache off)"` además mantiene las referencias atendiendo a la imagen que se está generando, por lo que se recalculan en cada paso de muestreo.
+**Nota:** With `"ai-toolkit"` and `"ai-toolkit (kv_cache off)"`, or when no VAE is connected and `image_strength` is above 0, the text encoder also sees every reference, downscaled to at most 384x384 pixels and preceded by a `Picture N:` marker in the prompt, so the instruction can refer to them by number. With `"Moss-Image-Edit"` and a VAE connected, the references reach the model only as reference latents and the text encoder sees the instruction alone. `"ai-toolkit (kv_cache off)"` additionally keeps the references attending to the image being generated, so they are recomputed on every sampling step.
 
 ## Salidas
 
@@ -23,4 +24,4 @@ Codifica una instrucción de edición junto con imágenes de referencia en el co
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeMOSSImageEdit/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `30e4edbb129f647cdce4ec95f78c002ecdc9a4f8fc5a45f1477fdc555b541dae`
+**Source fingerprint (SHA-256):** `673f098df6a8e466a5c8060009f446eac8f7556311a870de626c5f4bfc3ab196`
