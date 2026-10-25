@@ -7,7 +7,7 @@
 | پارامتر | توضیحات | نوع داده | الزامی | محدوده |
 | --- | --- | --- | --- | --- |
 | `ورودی` | تصویر یا ماسکی که باید تغییر اندازه دهد. | IMAGE یا MASK | بله | نامعتبر |
-| `نوع تغییر اندازه` | روش تعیین اندازه جدید. پارامترهای مورد نیاز بر اساس نوع انتخاب‌شده تغییر می‌کنند. | COMBO | بله | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE` |
+| `نوع تغییر اندازه` | روش تعیین اندازه جدید. پارامترهای مورد نیاز بر اساس نوع انتخاب‌شده تغییر می‌کنند. | COMBO | بله | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE`<br>`SCALE_TO_MULTIPLE` |
 | `multiplier` | ضریب مقیاس‌دهی. هنگامی که `نوع تغییر اندازه` برابر `SCALE_BY` باشد الزامی است (پیش‌فرض: 1.00). | FLOAT | خیر | 0.01 تا 8.0 |
 | `width` | عرض هدف بر حسب پیکسل. هنگامی که `نوع تغییر اندازه` برابر `SCALE_DIMENSIONS` یا `SCALE_WIDTH` باشد الزامی است (پیش‌فرض: 512). | INT | خیر | 0 تا 8192 |
 | `height` | ارتفاع هدف بر حسب پیکسل. هنگامی که `نوع تغییر اندازه` برابر `SCALE_DIMENSIONS` یا `SCALE_HEIGHT` باشد الزامی است (پیش‌فرض: 512). | INT | خیر | 0 تا 8192 |
@@ -16,6 +16,7 @@
 | `shorter_size` | اندازه هدف برای ضلع کوتاه‌تر تصویر. هنگامی که `نوع تغییر اندازه` برابر `SCALE_SHORTER_DIMENSION` باشد الزامی است (پیش‌فرض: 512). | INT | خیر | 0 تا 8192 |
 | `megapixels` | تعداد کل مگاپیکسل هدف. هنگامی که `نوع تغییر اندازه` برابر `SCALE_TOTAL_PIXELS` باشد الزامی است (پیش‌فرض: 1.0). | FLOAT | خیر | 0.01 تا 16.0 |
 | `match` | تصویر یا ماسکی که ابعاد ورودی برای هم‌اندازه‌سازی با آن تغییر می‌کند. هنگامی که `نوع تغییر اندازه` برابر `MATCH_SIZE` باشد الزامی است. | IMAGE یا MASK | خیر | نامعتبر |
+| `multiple` | عددی که عرض و ارتفاع پس از تغییر اندازه بر آن بخش‌پذیر می‌شوند؛ برای هم‌ترازی نهفته مفید است (مثلاً 8 یا 64). هنگامی که `نوع تغییر اندازه` برابر `SCALE_TO_MULTIPLE` باشد الزامی است (پیش‌فرض: 8). | INT | خیر | 1 تا 8192 |
 | `روش مقیاس‌دهی` | الگوریتم درون‌یابی مورد استفاده برای مقیاس‌دهی (پیش‌فرض: "area"). | COMBO | بله | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"lanczos"` |
 
 **توجه:** پارامتر `crop` فقط زمانی در دسترس و مرتبط است که `resize_type` روی `SCALE_DIMENSIONS` یا `MATCH_SIZE` تنظیم شده باشد. هنگام استفاده از `SCALE_WIDTH` یا `SCALE_HEIGHT`، بعد دیگر به‌طور خودکار برای حفظ نسبت تصویر اصلی مقیاس‌دهی می‌شود.
@@ -29,4 +30,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImageMaskNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `9ac0b153608ac971bb11d9d12ebd1f0f4d6e926604e8727a1bc3a311d95fbc03`
+**Source fingerprint (SHA-256):** `774795dae382b2baf828a1cbd8b860bad2e9c2977f9555d4ea1b282c8f8b0e12`

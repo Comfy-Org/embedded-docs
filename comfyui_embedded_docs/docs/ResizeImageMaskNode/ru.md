@@ -7,7 +7,7 @@
 | Параметр | Описание | Тип данных | Обязательный | Диапазон |
 | --- | --- | --- | --- | --- |
 | `input` | Изображение или маска, размер которых необходимо изменить. | IMAGE или MASK | Да | Н/Д |
-| `resize_type` | Метод, используемый для определения нового размера. Требуемые параметры меняются в зависимости от выбранного типа. | COMBO | Да | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE` |
+| `resize_type` | Метод, используемый для определения нового размера. Требуемые параметры меняются в зависимости от выбранного типа. | COMBO | Да | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE`<br>`SCALE_TO_MULTIPLE` |
 | `multiplier` | Коэффициент масштабирования. Требуется, когда `resize_type` имеет значение `SCALE_BY` (по умолчанию: 1.00). | FLOAT | Нет | от 0.01 до 8.0 |
 | `width` | Целевая ширина в пикселях. Требуется, когда `resize_type` имеет значение `SCALE_DIMENSIONS` или `SCALE_WIDTH` (по умолчанию: 512). | INT | Нет | от 0 до 8192 |
 | `height` | Целевая высота в пикселях. Требуется, когда `resize_type` имеет значение `SCALE_DIMENSIONS` или `SCALE_HEIGHT` (по умолчанию: 512). | INT | Нет | от 0 до 8192 |
@@ -16,6 +16,7 @@
 | `shorter_size` | Целевой размер для короткой стороны изображения. Требуется, когда `resize_type` имеет значение `SCALE_SHORTER_DIMENSION` (по умолчанию: 512). | INT | Нет | от 0 до 8192 |
 | `megapixels` | Целевое общее количество мегапикселей. Требуется, когда `resize_type` имеет значение `SCALE_TOTAL_PIXELS` (по умолчанию: 1.0). | FLOAT | Нет | от 0.01 до 16.0 |
 | `match` | Изображение или маска, под размер которых будет изменен входной элемент. Требуется, когда `resize_type` имеет значение `MATCH_SIZE`. | IMAGE или MASK | Нет | Н/Д |
+| `multiple` | Число, на которое делятся ширина и высота после изменения размера; полезно для выравнивания латентов (например, 8 или 64). Требуется, когда `resize_type` имеет значение `SCALE_TO_MULTIPLE` (по умолчанию: 8). | INT | Нет | от 1 до 8192 |
 | `scale_method` | Алгоритм интерполяции, используемый для масштабирования (по умолчанию: "area"). | COMBO | Да | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"lanczos"` |
 
 **Примечание:** Параметр `crop` доступен и актуален только когда для `resize_type` установлено значение `SCALE_DIMENSIONS` или `MATCH_SIZE`. При использовании `SCALE_WIDTH` или `SCALE_HEIGHT` другое измерение автоматически масштабируется для сохранения исходного соотношения сторон.
@@ -29,4 +30,4 @@
 > Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImageMaskNode/ru.md)
 
 ---
-**Source fingerprint (SHA-256):** `9ac0b153608ac971bb11d9d12ebd1f0f4d6e926604e8727a1bc3a311d95fbc03`
+**Source fingerprint (SHA-256):** `774795dae382b2baf828a1cbd8b860bad2e9c2977f9555d4ea1b282c8f8b0e12`

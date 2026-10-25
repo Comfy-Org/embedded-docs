@@ -9,7 +9,7 @@ Le nœud Redimensionner Image/Masque propose plusieurs méthodes pour modifier l
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `input` | L'image ou le masque à redimensionner. | IMAGE ou MASK | Oui | N/A |
-| `resize_type` | La méthode utilisée pour déterminer la nouvelle taille. Les paramètres requis changent en fonction du type sélectionné. | COMBO | Oui | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE` |
+| `resize_type` | La méthode utilisée pour déterminer la nouvelle taille. Les paramètres requis changent en fonction du type sélectionné. | COMBO | Oui | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE`<br>`SCALE_TO_MULTIPLE` |
 | `multiplier` | Le facteur d'échelle. Requis lorsque `resize_type` est `SCALE_BY` (par défaut : 1,00). | FLOAT | Non | 0,01 à 8,0 |
 | `width` | La largeur cible en pixels. Requis lorsque `resize_type` est `SCALE_DIMENSIONS` ou `SCALE_WIDTH` (par défaut : 512). | INT | Non | 0 à 8192 |
 | `height` | La hauteur cible en pixels. Requis lorsque `resize_type` est `SCALE_DIMENSIONS` ou `SCALE_HEIGHT` (par défaut : 512). | INT | Non | 0 à 8192 |
@@ -18,6 +18,7 @@ Le nœud Redimensionner Image/Masque propose plusieurs méthodes pour modifier l
 | `shorter_size` | La taille cible pour le côté le plus court de l'image. Requis lorsque `resize_type` est `SCALE_SHORTER_DIMENSION` (par défaut : 512). | INT | Non | 0 à 8192 |
 | `megapixels` | Le nombre total cible de mégapixels. Requis lorsque `resize_type` est `SCALE_TOTAL_PIXELS` (par défaut : 1,0). | FLOAT | Non | 0,01 à 16,0 |
 | `match` | Une image ou un masque dont les dimensions seront utilisées pour redimensionner l'entrée. Requis lorsque `resize_type` est `MATCH_SIZE`. | IMAGE ou MASK | Non | N/A |
+| `multiple` | Le nombre par lequel la largeur et la hauteur sont rendues divisibles ; utile pour l'alignement des latents (par exemple 8 ou 64). Requis lorsque `resize_type` est `SCALE_TO_MULTIPLE` (par défaut : 8). | INT | Non | 1 à 8192 |
 | `scale_method` | L'algorithme d'interpolation utilisé pour la mise à l'échelle (par défaut : "area"). | COMBO | Oui | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"lanczos"` |
 
 **Remarque :** Le paramètre `crop` est disponible et pertinent uniquement lorsque `resize_type` est défini sur `SCALE_DIMENSIONS` ou `MATCH_SIZE`. Lors de l'utilisation de `SCALE_WIDTH` ou `SCALE_HEIGHT`, l'autre dimension est automatiquement mise à l'échelle pour conserver le rapport hauteur/largeur d'origine.
@@ -31,4 +32,4 @@ Le nœud Redimensionner Image/Masque propose plusieurs méthodes pour modifier l
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImageMaskNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `9ac0b153608ac971bb11d9d12ebd1f0f4d6e926604e8727a1bc3a311d95fbc03`
+**Source fingerprint (SHA-256):** `774795dae382b2baf828a1cbd8b860bad2e9c2977f9555d4ea1b282c8f8b0e12`

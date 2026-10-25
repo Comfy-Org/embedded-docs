@@ -7,7 +7,7 @@ Der Node „Resize Image/Mask“ bietet mehrere Methoden, um die Abmessungen ein
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `input` | Das Bild oder die Maske, das bzw. die in der Größe geändert werden soll. | IMAGE oder MASK | Ja | N/A |
-| `resize_type` | Die Methode zur Bestimmung der neuen Größe. Die erforderlichen Parameter ändern sich je nach ausgewähltem Typ. | COMBO | Ja | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE` |
+| `resize_type` | Die Methode zur Bestimmung der neuen Größe. Die erforderlichen Parameter ändern sich je nach ausgewähltem Typ. | COMBO | Ja | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE`<br>`SCALE_TO_MULTIPLE` |
 | `multiplier` | Der Skalierungsfaktor. Erforderlich, wenn `resize_type` gleich `SCALE_BY` ist (Standard: 1.00). | FLOAT | Nein | 0.01 bis 8.0 |
 | `width` | Die Zielbreite in Pixeln. Erforderlich, wenn `resize_type` gleich `SCALE_DIMENSIONS` oder `SCALE_WIDTH` ist (Standard: 512). | INT | Nein | 0 bis 8192 |
 | `height` | Die Zielhöhe in Pixeln. Erforderlich, wenn `resize_type` gleich `SCALE_DIMENSIONS` oder `SCALE_HEIGHT` ist (Standard: 512). | INT | Nein | 0 bis 8192 |
@@ -16,6 +16,7 @@ Der Node „Resize Image/Mask“ bietet mehrere Methoden, um die Abmessungen ein
 | `shorter_size` | Die Zielgröße für die kürzere Seite des Bildes. Erforderlich, wenn `resize_type` gleich `SCALE_SHORTER_DIMENSION` ist (Standard: 512). | INT | Nein | 0 bis 8192 |
 | `megapixels` | Die Ziel-Gesamtzahl an Megapixeln. Erforderlich, wenn `resize_type` gleich `SCALE_TOTAL_PIXELS` ist (Standard: 1.0). | FLOAT | Nein | 0.01 bis 16.0 |
 | `match` | Ein Bild oder eine Maske, an deren Abmessungen die Eingabe angepasst wird. Erforderlich, wenn `resize_type` gleich `MATCH_SIZE` ist. | IMAGE oder MASK | Nein | N/A |
+| `multiple` | Die Zahl, durch die Breite und Höhe teilbar gemacht werden; nützlich für die Ausrichtung von Latents (z. B. 8 oder 64). Erforderlich, wenn `resize_type` gleich `SCALE_TO_MULTIPLE` ist (Standard: 8). | INT | Nein | 1 bis 8192 |
 | `scale_method` | Der Interpolationsalgorithmus, der zum Skalieren verwendet wird (Standard: `"area"`). | COMBO | Ja | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"lanczos"` |
 
 **Hinweis:** Der Parameter `crop` ist nur verfügbar und relevant, wenn `resize_type` auf `SCALE_DIMENSIONS` oder `MATCH_SIZE` gesetzt ist. Bei Verwendung von `SCALE_WIDTH` oder `SCALE_HEIGHT` wird die andere Dimension automatisch skaliert, um das ursprüngliche Seitenverhältnis beizubehalten.
@@ -29,4 +30,4 @@ Der Node „Resize Image/Mask“ bietet mehrere Methoden, um die Abmessungen ein
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImageMaskNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `9ac0b153608ac971bb11d9d12ebd1f0f4d6e926604e8727a1bc3a311d95fbc03`
+**Source fingerprint (SHA-256):** `774795dae382b2baf828a1cbd8b860bad2e9c2977f9555d4ea1b282c8f8b0e12`

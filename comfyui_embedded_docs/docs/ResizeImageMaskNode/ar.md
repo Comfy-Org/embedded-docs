@@ -7,7 +7,7 @@
 | المُعامل | الوصف | نوع البيانات | إلزامي | النطاق |
 | --- | --- | --- | --- | --- |
 | `الإدخال` | الصورة أو القناع المراد تغيير حجمهما. | IMAGE أو MASK | نعم | غير متاح |
-| `نوع تغيير الحجم` | الطريقة المستخدمة لتحديد الحجم الجديد. تتغير المُعاملات المطلوبة بناءً على النوع المُختار. | COMBO | نعم | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE` |
+| `نوع تغيير الحجم` | الطريقة المستخدمة لتحديد الحجم الجديد. تتغير المُعاملات المطلوبة بناءً على النوع المُختار. | COMBO | نعم | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE`<br>`SCALE_TO_MULTIPLE` |
 | `multiplier` | عامل القياس. مطلوب عندما يكون `نوع تغيير الحجم` هو `SCALE_BY` (الافتراضي: 1.00). | FLOAT | لا | 0.01 إلى 8.0 |
 | `width` | العرض المستهدف بالبكسل. مطلوب عندما يكون `نوع تغيير الحجم` هو `SCALE_DIMENSIONS` أو `SCALE_WIDTH` (الافتراضي: 512). | INT | لا | 0 إلى 8192 |
 | `height` | الارتفاع المستهدف بالبكسل. مطلوب عندما يكون `نوع تغيير الحجم` هو `SCALE_DIMENSIONS` أو `SCALE_HEIGHT` (الافتراضي: 512). | INT | لا | 0 إلى 8192 |
@@ -16,6 +16,7 @@
 | `shorter_size` | الحجم المستهدف للجانب الأقصر من الصورة. مطلوب عندما يكون `نوع تغيير الحجم` هو `SCALE_SHORTER_DIMENSION` (الافتراضي: 512). | INT | لا | 0 إلى 8192 |
 | `megapixels` | العدد الإجمالي المستهدف للميغابكسل. مطلوب عندما يكون `نوع تغيير الحجم` هو `SCALE_TOTAL_PIXELS` (الافتراضي: 1.0). | FLOAT | لا | 0.01 إلى 16.0 |
 | `match` | صورة أو قناع سيتم تغيير حجم المُدخل لمطابقة أبعادهما. مطلوب عندما يكون `نوع تغيير الحجم` هو `MATCH_SIZE`. | IMAGE أو MASK | لا | غير متاح |
+| `multiple` | الرقم الذي تصبح العرض والارتفاع قابلين للقسمة عليه؛ مفيد لمحاذاة الكامن (مثل 8 أو 64). مطلوب عندما يكون `نوع تغيير الحجم` هو `SCALE_TO_MULTIPLE` (الافتراضي: 8). | INT | لا | 1 إلى 8192 |
 | `طريقة التحجيم` | خوارزمية الاستيفاء المستخدمة للقياس (الافتراضي: "area"). | COMBO | نعم | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"lanczos"` |
 
 **ملاحظة:** مُعامل `crop` متاح وذو صلة فقط عندما يكون `resize_type` مضبوطًا على `SCALE_DIMENSIONS` أو `MATCH_SIZE`. عند استخدام `SCALE_WIDTH` أو `SCALE_HEIGHT`، يتم قياس البُعد الآخر تلقائيًا للحفاظ على نسبة العرض إلى الارتفاع الأصلية.
@@ -29,4 +30,4 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImageMaskNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `9ac0b153608ac971bb11d9d12ebd1f0f4d6e926604e8727a1bc3a311d95fbc03`
+**Source fingerprint (SHA-256):** `774795dae382b2baf828a1cbd8b860bad2e9c2977f9555d4ea1b282c8f8b0e12`
