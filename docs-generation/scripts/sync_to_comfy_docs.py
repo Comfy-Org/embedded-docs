@@ -1182,8 +1182,6 @@ def _frontend_display_names(lang_code: str) -> dict[str, str]:
     Returns an empty mapping when the locale has no nodeDefs.json, so callers fall
     back to the English node name.
     """
-    if lang_code == "en":
-        return {}
     local_root = os.environ.get("FRONTEND_LOCALES_PATH")
     if local_root:
         path = Path(local_root) / lang_code / "nodeDefs.json"
