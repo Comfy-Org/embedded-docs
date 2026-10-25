@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Sync embedded-docs (en.md / zh.md / ja.md / ko.md + assets) to comfy/docs as NodeName.mdx.
+Sync embedded-docs (en.md / zh.md / ja.md / ko.md / es.md + assets) to comfy/docs as NodeName.mdx.
 Copies images to docs/images/built-in-nodes/<NodeName>/ and updates docs.json nav.
 
 Env:
@@ -57,6 +57,7 @@ BUILTIN_EN = TARGET_DOCS / "built-in-nodes"
 BUILTIN_ZH = TARGET_DOCS / "zh" / "built-in-nodes"
 BUILTIN_JA = TARGET_DOCS / "ja" / "built-in-nodes"
 BUILTIN_KO = TARGET_DOCS / "ko" / "built-in-nodes"
+BUILTIN_ES = TARGET_DOCS / "es" / "built-in-nodes"
 IMAGES_TARGET = TARGET_DOCS / "images" / "built-in-nodes"
 DOCS_JSON = TARGET_DOCS / "docs.json"
 
@@ -102,6 +103,16 @@ LOCALE_CONFIGS: list[dict[str, Any]] = [
         "default_group": "고급",
         "lang_idx": 3,
     },
+    {
+        "code": "es",
+        "md_file": "es.md",
+        "builtin_dir": BUILTIN_ES,
+        "page_prefix": "es/built-in-nodes",
+        "tab": "Nodos integrados",
+        "wrapper": "Nodos",
+        "default_group": "Avanzado",
+        "lang_idx": 4,
+    },
 ]
 
 SCAN_PATHS = [
@@ -113,39 +124,40 @@ SCAN_PATHS = [
 # ComfyUI category (first segment) -> (EN, zh, ja, ko group labels) for docs.json
 # If a category is not in this map, a new group is created with the category name (EN); other locales use EN when no translation.
 CATEGORY_TO_GROUP = {
-    "conditioning": ("Conditioning", "条件", "条件付け", "컨디셔닝"),
-    "loaders": ("Loader", "加载器", "ローダー", "로더"),
-    "image": ("Image", "图像", "画像", "이미지"),
-    "latent": ("Latent", "潜变量", "潜在変数", "잠재 변수"),
-    "sampling": ("Sampling", "采样", "サンプリング", "샘플링"),
-    "3d": ("3D", "3D", "3D", "3D"),
-    "3D": ("3D", "3D", "3D", "3D"),
-    "advanced": ("Advanced", "高级", "上級", "고급"),
-    "utils": ("Utils", "实用工具", "ユーティリティ", "유틸리티"),
-    "utility": ("Utils", "实用工具", "ユーティリティ", "유틸리티"),
-    "util": ("Utils", "实用工具", "ユーティリティ", "유틸리티"),
-    "_for_testing": ("Advanced", "高级", "上級", "고급"),
-    "api": ("API", "API", "API", "API"),
-    "api node": ("API Node", "API Node", "API Node", "API Node"),
-    "model_patches": ("Model Patches", "模型补丁", "モデルパッチ", "모델 패치"),
-    "dataset": ("Image", "图像", "画像", "이미지"),
-    "audio": ("Audio", "Audio", "Audio", "Audio"),
-    "basics": ("Basics", "Basics", "Basics", "Basics"),
-    "camera": ("Camera", "Camera", "Camera", "Camera"),
-    "context": ("Context", "Context", "Context", "Context"),
-    "image generation": ("Image", "图像", "画像", "이미지"),
-    "image tools": ("Image", "图像", "画像", "이미지"),
-    "logic": ("Logic", "Logic", "Logic", "Logic"),
-    "mask": ("Mask", "Mask", "Mask", "Mask"),
-    "textgen": ("Textgen", "Textgen", "Textgen", "Textgen"),
-    "training": ("Training", "Training", "Training", "Training"),
-    "transform": ("Transform", "Transform", "Transform", "Transform"),
-    "guidance": ("Sampling", "采样", "サンプリング", "샘플링"),
+    "conditioning": ("Conditioning", "条件", "条件付け", "컨디셔닝", "Acondicionamiento"),
+    "loaders": ("Loader", "加载器", "ローダー", "로더", "Cargadores"),
+    "image": ("Image", "图像", "画像", "이미지", "Imagen"),
+    "latent": ("Latent", "潜变量", "潜在変数", "잠재 변수", "Latente"),
+    "sampling": ("Sampling", "采样", "サンプリング", "샘플링", "Muestreo"),
+    "3d": ("3D", "3D", "3D", "3D", "3D"),
+    "3D": ("3D", "3D", "3D", "3D", "3D"),
+    "advanced": ("Advanced", "高级", "上級", "고급", "Avanzado"),
+    "utils": ("Utils", "实用工具", "ユーティリティ", "유틸리티", "Utilidades"),
+    "utility": ("Utils", "实用工具", "ユーティリティ", "유틸리티", "Utilidades"),
+    "util": ("Utils", "实用工具", "ユーティリティ", "유틸리티", "Utilidades"),
+    "_for_testing": ("Advanced", "高级", "上級", "고급", "Avanzado"),
+    "api": ("API", "API", "API", "API", "API"),
+    "api node": ("API Node", "API Node", "API Node", "API Node", "Nodo API"),
+    "model_patches": ("Model Patches", "模型补丁", "モデルパッチ", "모델 패치", "Parches de modelo"),
+    "dataset": ("Image", "图像", "画像", "이미지", "Imagen"),
+    "audio": ("Audio", "Audio", "Audio", "Audio", "Audio"),
+    "basics": ("Basics", "Basics", "Basics", "Basics", "Básicos"),
+    "camera": ("Camera", "Camera", "Camera", "Camera", "Cámara"),
+    "context": ("Context", "Context", "Context", "Context", "Contexto"),
+    "image generation": ("Image", "图像", "画像", "이미지", "Imagen"),
+    "image tools": ("Image", "图像", "画像", "이미지", "Imagen"),
+    "logic": ("Logic", "Logic", "Logic", "Logic", "Lógica"),
+    "mask": ("Mask", "Mask", "Mask", "Mask", "Máscara"),
+    "textgen": ("Textgen", "Textgen", "Textgen", "Textgen", "Texto"),
+    "training": ("Training", "Training", "Training", "Training", "Entrenamiento"),
+    "transform": ("Transform", "Transform", "Transform", "Transform", "Transformación"),
+    "guidance": ("Sampling", "采样", "サンプリング", "샘플링", "Muestreo"),
 }
 DEFAULT_GROUP_EN = "Advanced"
 DEFAULT_GROUP_ZH = "高级"
 DEFAULT_GROUP_JA = "上級"
 DEFAULT_GROUP_KO = "고급"
+DEFAULT_GROUP_ES = "Avanzado"
 
 # Hardcoded category fallback for nodes that the scanner cannot resolve:
 # - replacement nodes in nodes_replacements.py (no category field)
@@ -225,7 +237,13 @@ _FALLBACK_CATEGORY: dict[str, str] = {
 }
 
 def _default_group_for_lang(lang_idx: int) -> str:
-    return (DEFAULT_GROUP_EN, DEFAULT_GROUP_ZH, DEFAULT_GROUP_JA, DEFAULT_GROUP_KO)[lang_idx]
+    return (
+        DEFAULT_GROUP_EN,
+        DEFAULT_GROUP_ZH,
+        DEFAULT_GROUP_JA,
+        DEFAULT_GROUP_KO,
+        DEFAULT_GROUP_ES,
+    )[lang_idx]
 
 
 def _group_label_for_category(first_segment: str, lang_idx: int) -> str:
@@ -1272,7 +1290,7 @@ def sync_node(
     node_name: str,
     dry_run: bool,
 ) -> tuple[bool, Optional[str], list[str]]:
-    """Sync one node: en.md (+ zh.md / ja.md when present) -> MDX and copy assets."""
+    """Sync one node: en.md (+ the localized .md files when present) -> MDX and copy assets."""
     scanner_name, node_dir = resolve_source_node(node_name)
     en_md = node_dir / "en.md"
     if not en_md.exists():
