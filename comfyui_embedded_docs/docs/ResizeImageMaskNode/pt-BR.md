@@ -7,7 +7,7 @@ O nó Redimensionar Imagem/Máscara fornece múltiplos métodos para alterar as 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
 | `entrada` | A imagem ou máscara a ser redimensionada. | IMAGE ou MASK | Sim | N/A |
-| `tipo_de_redimensionamento` | O método usado para determinar o novo tamanho. Os parâmetros obrigatórios mudam conforme o tipo selecionado. | COMBO | Sim | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE` |
+| `tipo_de_redimensionamento` | O método usado para determinar o novo tamanho. Os parâmetros obrigatórios mudam conforme o tipo selecionado. | COMBO | Sim | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE`<br>`SCALE_TO_MULTIPLE` |
 | `multiplier` | O fator de escala. Obrigatório quando `tipo_de_redimensionamento` é `SCALE_BY` (padrão: 1,00). | FLOAT | Não | 0,01 a 8,0 |
 | `width` | A largura alvo em pixels. Obrigatório quando `tipo_de_redimensionamento` é `SCALE_DIMENSIONS` ou `SCALE_WIDTH` (padrão: 512). | INT | Não | 0 a 8192 |
 | `height` | A altura alvo em pixels. Obrigatório quando `tipo_de_redimensionamento` é `SCALE_DIMENSIONS` ou `SCALE_HEIGHT` (padrão: 512). | INT | Não | 0 a 8192 |
@@ -16,6 +16,7 @@ O nó Redimensionar Imagem/Máscara fornece múltiplos métodos para alterar as 
 | `shorter_size` | O tamanho alvo para o lado mais curto da imagem. Obrigatório quando `tipo_de_redimensionamento` é `SCALE_SHORTER_DIMENSION` (padrão: 512). | INT | Não | 0 a 8192 |
 | `megapixels` | O número total alvo de megapixels. Obrigatório quando `tipo_de_redimensionamento` é `SCALE_TOTAL_PIXELS` (padrão: 1,0). | FLOAT | Não | 0,01 a 16,0 |
 | `match` | Uma imagem ou máscara cujas dimensões a entrada será redimensionada para corresponder. Obrigatório quando `tipo_de_redimensionamento` é `MATCH_SIZE`. | IMAGE ou MASK | Não | N/A |
+| `multiple` | O número pelo qual a largura e a altura passam a ser divisíveis; útil para o alinhamento de latentes (por exemplo, 8 ou 64). Obrigatório quando `tipo_de_redimensionamento` é `SCALE_TO_MULTIPLE` (padrão: 8). | INT | Não | 1 a 8192 |
 | `método_de_escala` | O algoritmo de interpolação usado para escalonamento (padrão: "area"). | COMBO | Sim | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"lanczos"` |
 
 **Nota:** O parâmetro `crop` está disponível e é relevante apenas quando o `resize_type` está definido como `SCALE_DIMENSIONS` ou `MATCH_SIZE`. Ao usar `SCALE_WIDTH` ou `SCALE_HEIGHT`, a outra dimensão é automaticamente escalada para manter a proporção original.
@@ -29,4 +30,4 @@ O nó Redimensionar Imagem/Máscara fornece múltiplos métodos para alterar as 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImageMaskNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `9ac0b153608ac971bb11d9d12ebd1f0f4d6e926604e8727a1bc3a311d95fbc03`
+**Source fingerprint (SHA-256):** `774795dae382b2baf828a1cbd8b860bad2e9c2977f9555d4ea1b282c8f8b0e12`
