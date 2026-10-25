@@ -1,14 +1,14 @@
 # تحويل مساحة ألوان الصورة
 
-عقدة ImageColorSpace تحوّل الصور بين فضاءات الألوان sRGB (Rec.709)، وlinear Rec.709، وHDR (Rec.2020 HLG)، وHDR PQ (Rec.2020 PQ)، وHDR LogC3، وHDR ACEScct. يستخدم LogC3 منحنى EI 800 مع الألوان الأولية Rec.709 وترميزات محصورة ضمن [0, 1]؛ ويستخدم ACEScct الألوان الأولية AP1 والأبيض D60، مع تكييف Bradford إلى D65. عند التحويل إلى خرج SDR، أو من HDR PQ إلى HDR، فإنه يطبّق تعيينًا نغميًا للسطوع الزائد عبر الدفعة ويضغط الألوان خارج نطاق التدرج اللوني؛ بينما تحافظ مخرجات linear وACEScct، والتحويلات من linear إلى HDR، على القيم الموسّعة. تقص مخرجات HLG وPQ القنوات السالبة. تُحسب التحويلات بدقة float32، وتُمرَّر أي قناة alpha دون تغيير.
+عقدة ImageColorSpace تحوّل الصور بين فضاءات الألوان sRGB (Rec.709)، وlinear Rec.709، وHDR (Rec.2020 HLG)، وHDR PQ (Rec.2020 PQ)، وHDR LogC3، وlinear ACEScg، وHDR ACEScct. يستخدم LogC3 منحنى EI 800 مع الألوان الأولية Rec.709 وترميزات محصورة ضمن [0, 1]؛ وACEScg هو AP1 خطي مشهدي بالأبيض D60، وACEScct هو ترميزه اللوغاريتمي، وكلاهما مكيّف إلى D65 بتحويل Bradford. عند التحويل إلى خرج SDR، أو من HDR PQ إلى HDR، فإنه يطبّق تعيينًا نغميًا للسطوع الزائد عبر الدفعة ويضغط الألوان خارج نطاق التدرج اللوني؛ بينما تحافظ مخرجات linear وACEScg وACEScct، والتحويلات من linear إلى HDR، على القيم الموسّعة. تقص مخرجات HLG وPQ القنوات السالبة. تُحسب التحويلات بدقة float32، وتُمرَّر أي قناة alpha دون تغيير.
 
 ## المدخلات
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
 | `image` | الصورة المدخلة المراد تحويلها. | IMAGE | نعم | أي صورة صالحة. |
-| `source` | فضاء الألوان لوحدات بكسل الإدخال. الافتراضي: "sRGB". | COMBO | نعم | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"`<br>`"linear"`<br>`"HDR LogC3"`<br>`"HDR ACEScct"` |
-| `destination` | فضاء الألوان لوحدات بكسل الإخراج. اضبط عقدة الحفظ على فضاء الألوان نفسه. حوّل LogC3 أو ACEScct إلى linear قبل حفظ EXR، أو إلى sRGB/HDR/HDR PQ قبل حفظ الفيديو. الافتراضي: "sRGB". | COMBO | نعم | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"`<br>`"linear"`<br>`"HDR LogC3"`<br>`"HDR ACEScct"` |
+| `source` | فضاء الألوان لوحدات بكسل الإدخال. الافتراضي: "sRGB". | COMBO | نعم | `"sRGB"`<br>`"HDR"`<br>`"HDR ACEScct"`<br>`"HDR LogC3"`<br>`"HDR PQ"`<br>`"linear"`<br>`"linear ACEScg"` |
+| `destination` | فضاء الألوان لوحدات بكسل الإخراج. اضبط عقدة الحفظ على فضاء الألوان نفسه. حوّل LogC3 أو ACEScct إلى linear ACEScg قبل حفظ EXR بصيغة ACEScg، أو إلى linear قبل حفظ EXR بصيغة Rec.709، أو إلى sRGB/HDR/HDR PQ قبل حفظ الفيديو. الافتراضي: "sRGB". | COMBO | نعم | `"sRGB"`<br>`"HDR"`<br>`"HDR ACEScct"`<br>`"HDR LogC3"`<br>`"HDR PQ"`<br>`"linear"`<br>`"linear ACEScg"` |
 
 ## المخرجات
 
@@ -18,15 +18,15 @@
 
 ## ملاحظات
 
-- يستخدم Linear 1.0 نفس المرجع الأبيض 203-nit المستخدم في sRGB؛ بينما يستخدم HLG شاشة مرجعية 1000-nit.
-- تحافظ مخرجات Linear وACEScct على القيم الموسّعة؛ كما تحافظ التحويلات من linear إلى HDR على الإضاءات العالية دون تعيين نغمي.
+- يستخدم Linear 1.0 وACEScg 1.0 نفس المرجع الأبيض 203-nit المستخدم في sRGB؛ بينما يستخدم HLG شاشة مرجعية 1000-nit.
+- تحافظ مخرجات Linear وACEScg وACEScct على القيم الموسّعة؛ كما تحافظ التحويلات من linear إلى HDR على الإضاءات العالية دون تعيين نغمي.
 - يقوم خرج SDR والتحويل من PQ إلى HLG بتعيين نغمي للسطوع الزائد عبر الدفعة (مع مشاركة نقطة بيضاء واحدة بحيث لا يتغير التعريض إطارًا بإطار) ويضغطان الألوان خارج نطاق التدرج اللوني. تقص مخرجات HLG وPQ القنوات السالبة.
 - تُحسب التحويلات بدقة float32 وتُرجع device وdtype الوسيطين.
-- إن LogC3 وACEScct هما ترميزان لوغاريتميان للكاميرا: حوّلهما إلى linear لحفظ EXR، أو إلى sRGB/HDR/HDR PQ قبل حفظ الفيديو.
+- إن LogC3 وACEScct هما ترميزان لوغاريتميان للكاميرا: حوّلهما إلى linear ACEScg (AP1) لحفظ EXR بصيغة ACEScg، أو إلى linear (Rec.709) لحفظ EXR بصيغة Rec.709، أو إلى sRGB/HDR/HDR PQ قبل حفظ الفيديو.
 - لا تتم تحويلات لونية على alpha الصريح (straight alpha)؛ إذ تُحوّل قنوات RGB فقط.
 - إذا كان `source` و`destination` متماثلين، فلا يُطبّق أي تحويل لوني — إذ تُنقل الصورة فقط إلى device وdtype الوسيطين.
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageColorSpace/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `fdf8b4f16a1e0c7ff9a86b8cc40f6f796175205e4b1f491b595a74a8456b9b94`
+**Source fingerprint (SHA-256):** `cbb3452e6844985580d5b91c6b1cbfbd770307cda6c92aba8b21c9bdd45ae370`
