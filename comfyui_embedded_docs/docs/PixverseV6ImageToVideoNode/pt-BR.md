@@ -1,6 +1,6 @@
 # PixVerse V6 Imagem para Vídeo
 
-Este nó anima uma imagem de entrada com o modelo PixVerse V6 e retorna um vídeo, opcionalmente com uma trilha de áudio nativa. O vídeo de saída mantém a proporção da imagem de entrada.
+Este nó anima uma imagem de entrada com o modelo PixVerse V6 ou V6 Max e retorna um vídeo, opcionalmente com uma trilha de áudio nativa. O vídeo de saída mantém a proporção da imagem de entrada.
 
 ## Entradas
 
@@ -38,7 +38,6 @@ Estas configurações aparecem quando o modelo "PixVerse V6 Max" está seleciona
 | `quality` | Resolução de saída. Define o lado maior: 360p é 640px, 540p é 1024px, 720p é 1280px, 1080p é 1920px (padrão: "720p"). | COMBO | Sim | "360p"<br>"540p"<br>"720p"<br>"1080p" |
 | `duration_seconds` | Duração do vídeo gerado em segundos (padrão: 5). | INT | Sim | 1 a 15 |
 | `generate_audio` | Gera uma trilha de áudio nativa junto com o vídeo (padrão: true). | BOOLEAN | Sim | true or false |
-| `multi_clip` | Permite que o modelo corte o vídeo em vários planos em vez de uma tomada contínua (padrão: false). | BOOLEAN | Sim | true or false |
 | `seed` | Semente para geração de vídeo. O PixVerse a registra, mas não reproduz uma execução a partir dela (padrão: 42, o controle após gerar está habilitado). | INT | Sim | 0 a 2147483647 |
 | `negative_prompt` | Uma descrição de texto opcional de elementos indesejados no vídeo (padrão: vazio). | STRING | Não | Até 2048 caracteres |
 

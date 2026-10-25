@@ -1,6 +1,6 @@
 # PixVerse V6 Görüntüden Videoya
 
-Bu düğüm, bir giriş görüntüsünü PixVerse V6 modeliyle canlandırır ve isteğe bağlı olarak yerel bir ses parçası içeren bir video döndürür. Çıktı videosu, giriş görüntüsünün en-boy oranını korur.
+Bu düğüm, bir giriş görüntüsünü PixVerse V6 veya V6 Max modeliyle canlandırır ve isteğe bağlı olarak yerel bir ses parçası içeren bir video döndürür. Çıktı videosu, giriş görüntüsünün en-boy oranını korur.
 
 ## Girdiler
 
@@ -38,7 +38,6 @@ Bu ayarlar "PixVerse V6 Max" modeli seçildiğinde görünür.
 | `quality` | Çıktı çözünürlüğü. Uzun kenarı ayarlar: 360p 640px, 540p 1024px, 720p 1280px, 1080p 1920px'tir (varsayılan: "720p"). | COMBO | Evet | "360p"<br>"540p"<br>"720p"<br>"1080p" |
 | `duration_seconds` | Oluşturulan videonun saniye cinsinden uzunluğu (varsayılan: 5). | INT | Evet | 1 ila 15 |
 | `generate_audio` | Video ile birlikte yerel bir ses parçası oluşturur (varsayılan: true). | BOOLEAN | Evet | true veya false |
-| `multi_clip` | Modelin videoyu tek bir sürekli çekim yerine birkaç plana bölmesini sağlar (varsayılan: false). | BOOLEAN | Evet | true veya false |
 | `seed` | Video oluşturma için tohum. PixVerse bunu kaydeder ancak bundan bir çalıştırmayı yeniden üretmez (varsayılan: 42, oluşturma sonrası kontrol etkindir). | INT | Evet | 0 ila 2147483647 |
 | `negative_prompt` | Videodaki istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: boş). | STRING | Hayır | En fazla 2048 karakter |
 

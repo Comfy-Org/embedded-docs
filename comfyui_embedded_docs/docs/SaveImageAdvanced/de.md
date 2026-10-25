@@ -53,7 +53,7 @@ Diese Optionen werden angezeigt, wenn `save_mode` auf `"animated"` gesetzt ist.
 **Hinweise zu Parameterabhängigkeiten:**
 - Die formatspezifischen Parameter (`bit_depth`, `input_color_space` und bei AVIF zusätzlich `crf` und `save_mode`) sind nur verfügbar, wenn ein bestimmtes `format` ausgewählt ist.
 - Für das PNG-Format sind nur die Bittiefen "8-bit" und "16-bit" sowie nur der Farbraum "sRGB" verfügbar.
-- Für das EXR-Format sind sowohl die Bittiefen "16-bit float" als auch "32-bit float" mit den Farbräumen "sRGB", "HDR" oder "linear" verfügbar. "16-bit float" ist der Standard und erzeugt kleinere Dateien.
+- Für das EXR-Format sind sowohl die Bittiefen "16-bit float" als auch "32-bit float" mit den Farbräumen "sRGB", "HDR", "linear" oder "linear ACEScg" verfügbar. "16-bit float" ist der Standard und erzeugt kleinere Dateien.
 - Für das AVIF-Format sind `fps` und `loop_count` nur verfügbar, wenn `save_mode` auf `"animated"` gesetzt ist.
 - PNG- und EXR-Bilder müssen 1 (Graustufen), 3 (RGB) oder 4 (RGBA) Kanäle haben; andere Kanalanzahlen werden nicht unterstützt und lösen einen Fehler aus.
 - AVIF unterstützt nur 1-Kanal-Graustufen- und 3-Kanal-RGB-Bilder; RGBA-Bilder (Alpha) werden nicht unterstützt und lösen einen Fehler aus.

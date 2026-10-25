@@ -1,6 +1,6 @@
 # PixVerse V6 da immagine a video
 
-Questo nodo anima un'immagine di input con il modello PixVerse V6 e restituisce un video, facoltativamente con una traccia audio nativa. Il video di output mantiene le proporzioni dell'immagine di input.
+Questo nodo anima un'immagine di input con il modello PixVerse V6 o V6 Max e restituisce un video, facoltativamente con una traccia audio nativa. Il video di output mantiene le proporzioni dell'immagine di input.
 
 ## Input
 
@@ -38,7 +38,6 @@ Queste impostazioni compaiono quando è selezionato il modello "PixVerse V6 Max"
 | `quality` | Risoluzione di output. Imposta il lato lungo: 360p corrisponde a 640px, 540p a 1024px, 720p a 1280px, 1080p a 1920px (predefinito: "720p"). | COMBO | Sì | "360p"<br>"540p"<br>"720p"<br>"1080p" |
 | `duration_seconds` | Durata del video generato in secondi (predefinito: 5). | INT | Sì | Da 1 a 15 |
 | `generate_audio` | Genera una traccia audio nativa insieme al video (predefinito: true). | BOOLEAN | Sì | true o false |
-| `multi_clip` | Consente al modello di suddividere il video in diverse inquadrature invece di una ripresa continua (predefinito: false). | BOOLEAN | Sì | true o false |
 | `seed` | Seed per la generazione del video. PixVerse lo registra ma non riproduce un'esecuzione a partire da esso (predefinito: 42, controllo dopo generate abilitato). | INT | Sì | Da 0 a 2147483647 |
 | `negative_prompt` | Descrizione testuale facoltativa degli elementi indesiderati nel video (predefinito: vuoto). | STRING | No | Fino a 2048 caratteri |
 

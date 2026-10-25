@@ -53,7 +53,7 @@ Bu seçenekler `save_mode` `"animated"` olarak ayarlandığında görünür.
 **Parametre Bağımlılıklarıyla İlgili Notlar:**
 - Biçime özgü parametreler (`bit_depth`, `input_color_space` ve AVIF için ayrıca `crf` ile `save_mode`), yalnızca belirli bir `format` seçildiğinde kullanılabilir.
 - PNG biçimi için yalnızca "8-bit" ve "16-bit" bit derinlikleri ve yalnızca "sRGB" renk uzayı kullanılabilir.
-- EXR biçimi için "16-bit float" ve "32-bit float" bit derinlikleri kullanılabilir; "sRGB", "HDR" veya "linear" renk uzaylarıyla birlikte. "16-bit float" varsayılandır ve daha küçük dosyalar üretir.
+- EXR biçimi için "16-bit float" ve "32-bit float" bit derinlikleri kullanılabilir; "sRGB", "HDR", "linear" veya "linear ACEScg" renk uzaylarıyla birlikte. "16-bit float" varsayılandır ve daha küçük dosyalar üretir.
 - AVIF biçimi için `fps` ve `loop_count`, yalnızca `save_mode` `"animated"` olarak ayarlandığında kullanılabilir.
 - PNG ve EXR görüntüleri 1 (gri tonlama), 3 (RGB) veya 4 (RGBA) kanala sahip olmalıdır; diğer kanal sayıları desteklenmez ve hata verir.
 - AVIF yalnızca 1 kanallı gri tonlamalı ve 3 kanallı RGB görüntüleri destekler; RGBA (alfa) görüntüler desteklenmez ve hata verir.

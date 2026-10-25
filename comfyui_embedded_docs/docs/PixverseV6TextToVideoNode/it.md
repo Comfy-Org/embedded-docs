@@ -1,6 +1,6 @@
 # PixVerse V6 da testo a video
 
-PixVerse V6 Text to Video genera un video da un prompt testuale utilizzando il modello V6 di PixVerse. Il nodo invia il prompt insieme al rapporto d'aspetto, alla risoluzione, alla durata e alle altre impostazioni scelte a PixVerse, attende il completamento della generazione e restituisce il video risultante — inclusa una traccia audio nativa quando la generazione audio è abilitata.
+PixVerse V6 Text to Video genera un video da un prompt testuale utilizzando il modello V6 o V6 Max di PixVerse. Il nodo invia il prompt insieme al rapporto d'aspetto, alla risoluzione, alla durata e alle altre impostazioni scelte a PixVerse, attende il completamento della generazione e restituisce il video risultante — inclusa una traccia audio nativa quando la generazione audio è abilitata.
 
 ## Input
 

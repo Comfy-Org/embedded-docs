@@ -1,6 +1,6 @@
 # PixVerse V6 Image en vidéo
 
-Ce nœud anime une image d'entrée avec le modèle PixVerse V6 et renvoie une vidéo, éventuellement accompagnée d'une piste audio native. La vidéo de sortie conserve le rapport d'aspect de l'image d'entrée.
+Ce nœud anime une image d'entrée avec le modèle PixVerse V6 ou V6 Max et renvoie une vidéo, éventuellement accompagnée d'une piste audio native. La vidéo de sortie conserve le rapport d'aspect de l'image d'entrée.
 
 ## Entrées
 
@@ -38,7 +38,6 @@ Ces paramètres apparaissent lorsque le modèle « PixVerse V6 Max » est sélec
 | `quality` | Résolution de sortie. Définit le grand côté : 360p correspond à 640px, 540p à 1024px, 720p à 1280px, 1080p à 1920px (par défaut : "720p"). | COMBO | Oui | "360p"<br>"540p"<br>"720p"<br>"1080p" |
 | `duration_seconds` | Durée de la vidéo générée en secondes (par défaut : 5). | INT | Oui | 1 à 15 |
 | `generate_audio` | Générer une piste audio native avec la vidéo (par défaut : true). | BOOLEAN | Oui | true ou false |
-| `multi_clip` | Laisser le modèle découper la vidéo en plusieurs plans au lieu d'une prise continue (par défaut : false). | BOOLEAN | Oui | true ou false |
 | `seed` | Graine pour la génération de la vidéo. PixVerse l'enregistre mais ne reproduit pas une exécution à partir de celle-ci (par défaut : 42, le contrôle après génération est activé). | INT | Oui | 0 à 2147483647 |
 | `negative_prompt` | Description textuelle facultative des éléments indésirables dans la vidéo (par défaut : vide). | STRING | Non | Jusqu'à 2048 caractères |
 

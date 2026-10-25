@@ -1,6 +1,6 @@
 # Converter Espaço de Cor da Imagem
 
-O nó ImageColorSpace converte imagens entre os espaços de cor sRGB (Rec.709), linear Rec.709, HDR (Rec.2020 HLG), HDR PQ (Rec.2020 PQ), HDR LogC3, linear ACEScg e HDR ACEScct. LogC3 usa a curva EI 800 com primárias Rec.709 e códigos limitados a [0, 1]; ACEScg é AP1 cena-linear com branco D60, e ACEScct é sua codificação logarítmica, ambos adaptados a D65 pela transformação de Bradford. Ao converter para saída SDR, ou de HDR PQ para HDR, ele aplica tone mapping à luminância excedente em todo o lote e comprime cores fora da gama; saídas linear, ACEScg e ACEScct, e conversões de linear para HDR, preservam valores estendidos. Saídas HLG e PQ recortam canais negativos. As conversões são calculadas em float32, e qualquer canal alfa é passado sem alterações.
+O nó ImageColorSpace converte imagens entre os espaços de cor sRGB (Rec.709), linear Rec.709, HDR (Rec.2020 HLG), HDR PQ (Rec.2020 PQ), HDR LogC3, linear ACEScg e HDR ACEScct. LogC3 usa a curva EI 800 com primárias Rec.709 e códigos limitados a [0, 1]; ACEScg é AP1 cena-linear com branco D60, e ACEScct é sua codificação logarítmica, ambos adaptados a D65 pela transformação de Bradford. Ao converter para saída SDR, ou de HDR PQ para HDR, ele aplica tone mapping à luminância excedente em todo o lote e comprime cores fora da gama; saídas lineares, ACEScg e ACEScct, e conversões de linear para HDR, preservam valores estendidos. Saídas HLG e PQ recortam canais negativos. As conversões são calculadas em float32, e qualquer canal alfa é passado sem alterações.
 
 ## Entradas
 
@@ -19,7 +19,7 @@ O nó ImageColorSpace converte imagens entre os espaços de cor sRGB (Rec.709), 
 ## Notas
 
 - Linear 1.0 e ACEScg 1.0 usam o mesmo branco de referência de 203 nits que sRGB; HLG usa uma exibição de referência de 1000 nits.
-- Saídas linear, ACEScg e ACEScct preservam valores estendidos; conversões de linear para HDR preservam realces sem tone mapping.
+- Saídas lineares, ACEScg e ACEScct preservam valores estendidos; conversões de linear para HDR preservam realces sem tone mapping.
 - Saída SDR e conversão de PQ para HLG aplicam tone mapping à luminância excedente em todo o lote (compartilhando um ponto de branco para que a exposição não mude quadro a quadro) e comprimem cores fora da gama. Saídas HLG e PQ recortam canais negativos.
 - As conversões são calculadas em float32 e retornam o dispositivo e dtype intermediários.
 - LogC3 e ACEScct são codificações log de câmera: converta-os para linear ACEScg (AP1) para salvar EXR em ACEScg, para linear (Rec.709) para salvar EXR em Rec.709, ou para sRGB/HDR/HDR PQ antes de salvar em vídeo.

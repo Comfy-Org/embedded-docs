@@ -53,7 +53,7 @@
 **參數相依性備註：**
 - 格式專屬參數（`bit_depth`、`input_color_space`，而 AVIF 還包括 `crf` 與 `save_mode`）僅在選取特定 `format` 時可用。
 - PNG 格式僅提供 "8-bit" 與 "16-bit" 位元深度，且僅支援 "sRGB" 色彩空間。
-- EXR 格式提供 "16-bit float" 與 "32-bit float" 兩種位元深度，並支援 "sRGB"、"HDR" 或 "linear" 色彩空間。"16-bit float" 為預設值，產生的檔案較小。
+- EXR 格式提供 "16-bit float" 與 "32-bit float" 兩種位元深度，並支援 "sRGB"、"HDR"、"linear" 或 "linear ACEScg" 色彩空間。"16-bit float" 為預設值，產生的檔案較小。
 - AVIF 格式中，`fps` 與 `loop_count` 僅在 `save_mode` 設為 `"animated"` 時可用。
 - PNG 與 EXR 影像必須有 1（灰階）、3（RGB）或 4（RGBA）個通道；不支援其他通道數，並會引發錯誤。
 - AVIF 僅支援單通道灰階與三通道 RGB 影像；不支援 RGBA（alpha）影像，並會引發錯誤。

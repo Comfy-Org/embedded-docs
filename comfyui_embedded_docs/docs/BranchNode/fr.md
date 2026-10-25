@@ -1,6 +1,6 @@
 # Branch
 
-Branch sélectionne l’une des plusieurs entrées connectées par nom et la transmet à la sortie. Il fonctionne comme un commutateur paresseux : seule la branche sélectionnée est évaluée, de sorte que les autres branches peuvent rester non connectées ou contenir des sorties que vous ne souhaitez pas calculer. Chaque nouvelle connexion ajoute une nouvelle entrée de branche, les entrées peuvent être renommées en double-cliquant dessus, et la branche active est choisie dans le sélecteur `branch`.
+Branch sélectionne l’une de plusieurs entrées connectées par nom et la transmet à la sortie. Il fonctionne comme un commutateur paresseux : seule la branche sélectionnée est évaluée, de sorte que les autres branches peuvent rester non connectées ou contenir des sorties que vous ne souhaitez pas calculer. Chaque nouvelle connexion ajoute une nouvelle entrée de branche, les entrées peuvent être renommées en double-cliquant dessus, et la branche active est choisie dans le sélecteur `branch`.
 
 ## Entrées
 

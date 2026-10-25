@@ -1,6 +1,6 @@
 # PixVerse V6 Metinden Videoya
 
-PixVerse V6 Metinden Videoya, PixVerse'in V6 modelini kullanarak bir metin isteminden video oluşturur. Düğüm, istemi seçtiğiniz en boy oranı, çözünürlük, süre ve diğer ayarlarla birlikte PixVerse'e gönderir, oluşturmanın tamamlanmasını bekler ve ardından ortaya çıkan videoyu döndürür — ses oluşturma etkinleştirildiğinde yerleşik bir ses parçası dahil.
+PixVerse V6 Metinden Videoya, PixVerse'in V6 veya V6 Max modelini kullanarak bir metin isteminden video oluşturur. Düğüm, istemi seçtiğiniz en boy oranı, çözünürlük, süre ve diğer ayarlarla birlikte PixVerse'e gönderir, oluşturmanın tamamlanmasını bekler ve ardından ortaya çıkan videoyu döndürür — ses oluşturma etkinleştirildiğinde yerleşik bir ses parçası dahil.
 
 ## Girdiler
 
