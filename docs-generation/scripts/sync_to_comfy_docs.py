@@ -16,6 +16,7 @@ import re
 import shutil
 import sys
 from functools import lru_cache
+from urllib.request import urlopen
 from pathlib import Path
 from typing import Any, Optional
 
@@ -1164,7 +1165,58 @@ def _normalize_mdx_content(content: str) -> str:
     return content
 
 
-def build_frontmatter(node_name: str, description: str) -> str:
+FRONTEND_LOCALES_URL = (
+    "https://raw.githubusercontent.com/Comfy-Org/ComfyUI_frontend/main/src/locales"
+)
+
+
+@lru_cache(maxsize=None)
+def _frontend_display_names(lang_code: str) -> dict[str, str]:
+    """Map node type -> localized display name, from the ComfyUI frontend locale.
+
+    The frontend is the authority for the label a user actually sees on the node
+    and in the node menu. `FRONTEND_LOCALES_PATH` (a local ComfyUI_frontend/src/
+    locales checkout) wins over the raw GitHub fetch, mirroring the docs
+    repository's glossary sync.
+
+    Returns an empty mapping when the locale has no nodeDefs.json, so callers fall
+    back to the English node name.
+    """
+    if lang_code == "en":
+        return {}
+    local_root = os.environ.get("FRONTEND_LOCALES_PATH")
+    if local_root:
+        path = Path(local_root) / lang_code / "nodeDefs.json"
+        if path.exists():
+            try:
+                return _display_names_from_payload(json.loads(path.read_text(encoding="utf-8")))
+            except (OSError, json.JSONDecodeError):
+                return {}
+    url = f"{FRONTEND_LOCALES_URL}/{lang_code}/nodeDefs.json"
+    try:
+        with urlopen(url, timeout=20) as response:  # noqa: S310 (fixed https URL)
+            return _display_names_from_payload(json.loads(response.read().decode("utf-8")))
+    except Exception as exc:  # network problems must not break a sync run
+        print(f"  WARN: no frontend nodeDefs for {lang_code} ({exc}); using English node names")
+        return {}
+
+
+def _display_names_from_payload(payload: dict[str, Any]) -> dict[str, str]:
+    names: dict[str, str] = {}
+    for node_type, entry in (payload or {}).items():
+        if isinstance(entry, dict):
+            name = (entry.get("display_name") or "").strip()
+            if name:
+                names[node_type] = name
+    return names
+
+
+def localized_node_label(node_type: str, lang_code: str) -> str:
+    """Localized sidebar label for a node, falling back to the English name."""
+    return _frontend_display_names(lang_code).get(node_type, "") or node_type
+
+
+def build_frontmatter(node_name: str, description: str, label: Optional[str] = None) -> str:
     """Frontmatter with a concrete, node-specific SEO description.
 
     `description` is the first sentence extracted from the node's en.md
@@ -1181,10 +1233,11 @@ def build_frontmatter(node_name: str, description: str) -> str:
     seo_desc = re.sub(r"[`*_#>]", "", seo_desc)
     seo_desc = seo_desc[:MAX_DESCRIPTION_CHARS]
     seo_desc_escaped = _escape_frontmatter_description(seo_desc)
+    display_name = (label or "").strip() or node_name
     return f"""---
-title: "{node_name} - ComfyUI Built-in Node Documentation"
+title: "{_escape_frontmatter_description(display_name)} - ComfyUI Built-in Node Documentation"
 description: "{seo_desc_escaped}"
-sidebarTitle: "{node_name}"
+sidebarTitle: "{_escape_frontmatter_description(display_name)}"
 icon: "circle"
 mode: wide
 ---
@@ -1322,7 +1375,8 @@ def sync_node(
         # Leave an empty description to build_frontmatter: its templated
         # fallback clears the 40-char floor, a bare "Documentation for X node."
         # does not.
-        mdx = build_frontmatter(scanner_name, locale_desc) + content
+        label = localized_node_label(scanner_name, locale["code"])
+        mdx = build_frontmatter(scanner_name, locale_desc, label) + content
 
         target_mdx = locale["builtin_dir"] / f"{published}.mdx"
         if not dry_run:
