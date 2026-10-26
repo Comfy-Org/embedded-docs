@@ -6,7 +6,7 @@ PrimitiveFloat 節點建立一個可在您的工作流程中使用的浮點數�
 
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `數值` | 要輸出的浮點數值（預設值：0.0） | FLOAT | 是 | -sys.maxsize to sys.maxsize (step: 0.1) |
+| `數值` | 要輸出的浮點數值（預設值：0.0） | FLOAT | 是 | -sys.maxsize 至 sys.maxsize （步進值：0.1） |
 
 ## 輸出
 

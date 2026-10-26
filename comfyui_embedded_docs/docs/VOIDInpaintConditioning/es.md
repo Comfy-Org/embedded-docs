@@ -11,9 +11,9 @@ El nodo VOIDInpaintConditioning prepara los datos de condicionamiento necesarios
 | `vae` | El modelo VAE utilizado para codificar la máscara y el video enmascarado en el espacio latente | VAE | Sí | - |
 | `video` | Fotogramas del video de origen [T, H, W, 3] | IMAGE | Sí | - |
 | `quadmask` | Máscara cuádruple preprocesada de VOIDQuadmaskPreprocess [T, H, W] | MASK | Sí | - |
-| `width` | El ancho al que se redimensionarán el video y la máscara (predeterminado: 672) | INT | Sí | 16 to MAX_RESOLUTION (step: 8) |
-| `height` | La altura a la que se redimensionarán el video y la máscara (predeterminado: 384) | INT | Sí | 16 to MAX_RESOLUTION (step: 8) |
-| `length` | Número de fotogramas de píxeles a procesar. Para CogVideoX-Fun-V1.5 (patch_size_t=2), latent_t debe ser par; las longitudes que producen un latent_t impar se redondean hacia abajo (p. ej., 49 → 45) (predeterminado: 45) | INT | Sí | 1 to MAX_RESOLUTION (step: 1) |
+| `width` | El ancho al que se redimensionarán el video y la máscara (predeterminado: 672) | INT | Sí | 16 a MAX_RESOLUTION (paso: 8) |
+| `height` | La altura a la que se redimensionarán el video y la máscara (predeterminado: 384) | INT | Sí | 16 a MAX_RESOLUTION (paso: 8) |
+| `length` | Número de fotogramas de píxeles a procesar. Para CogVideoX-Fun-V1.5 (patch_size_t=2), latent_t debe ser par; las longitudes que producen un latent_t impar se redondean hacia abajo (p. ej., 49 → 45) (predeterminado: 45) | INT | Sí | 1 a MAX_RESOLUTION (paso: 1) |
 | `batch_size` | El tamaño de lote para el latente de ruido de salida (predeterminado: 1) | INT | Sí | 1 a 64 |
 
 **Nota:** Como CogVideoX-Fun-V1.5 usa `patch_size_t=2`, el latente codificado debe tener una dimensión temporal par. Si `length` produjera un `latent_t` impar, el nodo lo redondea automáticamente hacia abajo al valor válido más cercano y registra una advertencia. Usar un `latent_t` impar corrompe el último fotograma mediante relleno circular, lo que puede causar vibración visible o sujetos que desaparecen cerca del final del video decodificado.

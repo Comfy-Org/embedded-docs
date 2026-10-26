@@ -20,10 +20,10 @@
 | 參數 | 說明 | 資料型別 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `upscaler_model.upscaler_resolution` | 目標輸出解析度。 | COMBO | 是（選取「Astra 2」時） | `"FullHD (1080p)"`<br>`"4K (2160p)"` |
-| `upscaler_model.creativity` | 放大效果的創意強度（預設：0.5）。 | FLOAT | 否 | 0.0 至 1.0 (step 0.1) |
+| `upscaler_model.creativity` | 放大效果的創意強度（預設：0.5）。 | FLOAT | 否 | 0.0 至 1.0 （步進值：0.1） |
 | `upscaler_model.prompt` | 選用的描述性（非指令性）場景提示。設定後輸入上限為 450 幀（約 15 秒 @ 30fps）（預設：空白）。 | STRING | 否 | - |
-| `upscaler_model.sharp` | 增強前的銳利度：0.0=高斯模糊，0.5=原樣通過（預設），1.0=USM 銳化。 | FLOAT | 否 | 0.0 至 1.0 (step 0.01) |
-| `upscaler_model.realism` | 將輸出推向照片寫實風格。保持為 0 以使用模型預設（預設：0.0）。 | FLOAT | 否 | 0.0 至 1.0 (step 0.01) |
+| `upscaler_model.sharp` | 增強前的銳利度：0.0=高斯模糊，0.5=原樣通過（預設），1.0=USM 銳化。 | FLOAT | 否 | 0.0 至 1.0 （步進值：0.01） |
+| `upscaler_model.realism` | 將輸出推向照片寫實風格。保持為 0 以使用模型預設（預設：0.0）。 | FLOAT | 否 | 0.0 至 1.0 （步進值：0.01） |
 
 ### Starlight (Astra) Fast 輸入
 
@@ -51,7 +51,7 @@
 | `interpolation_model.interpolation_frame_rate` | 輸出幀率（預設：60）。 | INT | 是（選取「apo-8」時） | 15 至 240 |
 | `interpolation_model.interpolation_slowmo` | 套用至輸入影片的慢動作倍率。例如，2 會使輸出速度變為原本的一半，且持續時間變為兩倍（預設：1）。 | INT | 否 | 1 至 16 |
 | `interpolation_model.interpolation_duplicate` | 分析輸入中的重複幀並加以移除（預設：False）。 | BOOLEAN | 否 | True<br>False |
-| `interpolation_model.interpolation_duplicate_threshold` | 重複幀的偵測敏感度（預設：0.01）。 | FLOAT | 否 | 0.001 至 0.1 (step 0.001) |
+| `interpolation_model.interpolation_duplicate_threshold` | 重複幀的偵測敏感度（預設：0.01）。 | FLOAT | 否 | 0.001 至 0.1 （步進值：0.001） |
 
 **重要限制：**
 

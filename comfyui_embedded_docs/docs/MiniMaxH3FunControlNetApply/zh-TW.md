@@ -9,9 +9,9 @@
 | `model` | 要套用 MiniMax H3 Fun ControlNet 修補的擴散模型。 | MODEL | 是 | N/A |
 | `model_patch` | MiniMax H3 Fun ControlNet 修補，其控制訊號會注入模型中；它必須與指定的 `model` 相容。 | MODEL_PATCH | 是 | N/A |
 | `vae` | 用於將控制影片與來源影片的影格編碼為模型所預期的潛在空間的 VAE。 | VAE | 是 | N/A |
-| `strength` | ControlNet 效果的整體強度。設為 0 時，此節點不會執行任何操作，並原封不動地回傳輸入模型。（預設值：1.0） | FLOAT | 是 | min 0.0, max 10.0, step 0.01 |
-| `start_percent` | 取樣範圍的起點，以取樣排程的百分比表示，ControlNet 在此範圍內作用。它會在內部轉換為等效的 sigma 值。這是進階設定。（預設值：0.0） | FLOAT | 是 | min 0.0, max 1.0, step 0.001 |
-| `end_percent` | 取樣範圍的終點，以取樣排程的百分比表示，ControlNet 在此範圍內作用。它會在內部轉換為等效的 sigma 值。這是進階設定。（預設值：1.0） | FLOAT | 是 | min 0.0, max 1.0, step 0.001 |
+| `strength` | ControlNet 效果的整體強度。設為 0 時，此節點不會執行任何操作，並原封不動地回傳輸入模型。（預設值：1.0） | FLOAT | 是 | 最小值：0.0，最大值：10.0，步進值：0.01 |
+| `start_percent` | 取樣範圍的起點，以取樣排程的百分比表示，ControlNet 在此範圍內作用。它會在內部轉換為等效的 sigma 值。這是進階設定。（預設值：0.0） | FLOAT | 是 | 最小值：0.0，最大值：1.0，步進值：0.001 |
+| `end_percent` | 取樣範圍的終點，以取樣排程的百分比表示，ControlNet 在此範圍內作用。它會在內部轉換為等效的 sigma 值。這是進階設定。（預設值：1.0） | FLOAT | 是 | 最小值：0.0，最大值：1.0，步進值：0.001 |
 | `control_video` | 選用的影片影格，用作 ControlNet 的視覺提示。這些影格會被調整大小以符合生成的影片，並使用 `vae` 進行編碼。 | IMAGE | 否 | N/A |
 | `mask` | 1 表示要重新生成的區域。遮罩值高於 0.5 的區域會被視為標記區域。 | MASK | 否 | N/A |
 | `source_video` | 遮罩後方的影片；僅在提供遮罩時才會讀取。 | IMAGE | 否 | N/A |
