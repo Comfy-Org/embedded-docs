@@ -42,7 +42,8 @@ DEFAULT_DOCS_ROOT = REPO_ROOT / "comfyui_embedded_docs" / "docs"
 
 # Languages the documentation site publishes; other locales are translated in
 # this repository too but are not rendered, so they are reported, not enforced.
-ENFORCED_LANGS = ("ja", "zh", "ko")
+# es became a published locale with the Spanish site completion (docs#2112).
+ENFORCED_LANGS = ("ja", "zh", "ko", "es")
 ALL_LANGS = (
     "ja",
     "zh",
