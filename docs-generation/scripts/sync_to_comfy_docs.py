@@ -122,7 +122,7 @@ SCAN_PATHS = [
     COMFYUI_PATH / "comfy_api_nodes",
 ]
 
-# ComfyUI category (first segment) -> (EN, zh, ja, ko group labels) for docs.json
+# ComfyUI category (first segment) -> (EN, zh, ja, ko, es group labels) for docs.json
 # If a category is not in this map, a new group is created with the category name (EN); other locales use EN when no translation.
 CATEGORY_TO_GROUP = {
     "conditioning": ("Conditioning", "条件", "条件付け", "컨디셔닝", "Acondicionamiento"),
@@ -659,7 +659,7 @@ def _rebuild_wrapper_groups(
     using the first-segment rule that mirrors ComfyUI's node menu hierarchy.
     This corrects any historical mis-placements without requiring a full re-sync.
 
-    lang_idx: 0 = EN, 1 = zh, 2 = ja, 3 = ko labels from CATEGORY_TO_GROUP.
+    lang_idx: 0 = EN, 1 = zh, 2 = ja, 3 = ko, 4 = es labels from CATEGORY_TO_GROUP.
     """
     # Preserve the API Node group as-is
     api_node_item: Optional[dict[str, Any]] = None
