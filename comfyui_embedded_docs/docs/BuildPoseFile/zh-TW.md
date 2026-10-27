@@ -22,7 +22,7 @@
 | 參數 | 說明 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `mesh_style` | GLB 的視覺風格：'body_mesh' = 真實 Armature（127 根骨骼、蒙皮、TRS 關鍵幀、72 個臉部變形；需要模型）。'bones_only' = 每個關節處的骨骼形狀基本體（預覽骨架）。'openpose' = 由關鍵點產生的 OpenPose-18 3D 骨架。'scail' = SCAIL 3D 膠囊骨架（開放式圓柱體，由關節球體平齊封口）。（預設：body_mesh） | DYNAMIC_COMBO | 是 | "body_mesh"<br>"bones_only"<br>"openpose"<br>"scail" |
-| `bone_smooth_window` | 對每根骨骼的旋轉關鍵幀/關鍵點軌道套用的高斯平滑視窗。0 = 關閉。7-15 可平穩上游 Smooth 漏掉尖峰時造成的旋轉/抖動。（預設：0） | INT | 是 | 0-51, step 2 |
+| `bone_smooth_window` | 對每根骨骼的旋轉關鍵幀/關鍵點軌道套用的高斯平滑視窗。0 = 關閉。7-15 可平穩上游 Smooth 漏掉尖峰時造成的旋轉/抖動。（預設：0） | INT | 是 | 0-51 （步進值：2） |
 
 #### Body Mesh 輸入
 

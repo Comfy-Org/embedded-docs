@@ -27,8 +27,8 @@ Google Gemini Omni (Video) 使用 Google 的 Gemini Omni Flash 模型，從文�
 | `prompt` | 描述要生成的影片，或要套用於所附加影片的編輯。請直接在提示中指定長度，例如「a 6-second clip」；長度可為 3-10 秒。輸出為 720p、24 FPS，並包含音訊。（預設值：""） | STRING | 是 | - |
 | `aspect_ratio` | 輸出長寬比：16:9（橫向）或 9:16（直向）。「edit」任務則會保留輸入影片的長寬比。（預設值："16:9"） | COMBO | 是 | "16:9"<br>"9:16" |
 | `task_type` | 提示與所附加媒體的處理方式。使用「auto」時，由模型自行決定。「text_to_video」僅根據提示生成，並拒絕附加媒體。「image_to_video」將單張圖片動畫化，若附加兩張圖片，則會從起始幀插值到結束幀。「reference_to_video」將所附加的媒體視為主體參考。「edit」會改寫恰好一段附加的影片。（預設值："auto"） | COMBO | 是 | "auto"<br>"text_to_video"<br>"image_to_video"<br>"reference_to_video"<br>"edit" |
-| `temperature` | 控制隨機性。數值越低越集中／確定，數值越高越多變。（預設值：1.0） | FLOAT | 是 | 0.0 至 2.0 (step 0.01) |
-| `top_p` | 核採樣：從累積機率達到 top_p 的最小 token 集合中進行採樣。（預設值：0.95） | FLOAT | 是 | 0.0 至 1.0 (step 0.01) |
+| `temperature` | 控制隨機性。數值越低越集中／確定，數值越高越多變。（預設值：1.0） | FLOAT | 是 | 0.0 至 2.0 （步進值：0.01） |
+| `top_p` | 核採樣：從累積機率達到 top_p 的最小 token 集合中進行採樣。（預設值：0.95） | FLOAT | 是 | 0.0 至 1.0 （步進值：0.01） |
 | `seed` | 種子控制節點是否應重新執行；無論種子為何，結果皆為非確定性。（預設值：42） | INT | 是 | 0 至 2147483647 |
 
 ### 參考輸入

@@ -7,7 +7,7 @@ ReplaceVideoLatentFrames 會使用來源潛在影片中的幀替換目標潛在�
 | --- | --- | --- | --- | --- |
 | `destination` | 作為幀替換目標的潛在。 | LATENT | 是 | - |
 | `source` | 提供要插入目標潛在之幀的來源潛在。若未提供，目標潛在將原樣返回。 | LATENT | 否 | - |
-| `index` | 目標潛在中要放置來源潛在幀的起始幀索引。負數值從末尾倒數計算（預設：0）。 | INT | 是 | -MAX_RESOLUTION to MAX_RESOLUTION |
+| `index` | 目標潛在中要放置來源潛在幀的起始幀索引。負數值從末尾倒數計算（預設：0）。 | INT | 是 | -MAX_RESOLUTION 至 MAX_RESOLUTION |
 
 **約束條件：**
 
