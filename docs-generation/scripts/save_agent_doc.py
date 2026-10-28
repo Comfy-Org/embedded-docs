@@ -64,6 +64,9 @@ VALID_TYPES = {
     # Latent operation handles passed between the latent operation nodes
     # (e.g. the `operation` output of LatentOperationBlend).
     "LATENT_OPERATION",
+    # Latent upscale model handle (IO.LatentUpscaleModel.Input), e.g. the
+    # MiniMax H3 latent upscaler node.
+    "LATENT_UPSCALE_MODEL",
     # Custom voice handle emitted by Fish Audio Voice Selector and consumed by
     # Fish Audio Text to Speech (IO.Custom(FISHAUDIO_VOICE)).
     "FISHAUDIO_VOICE",
