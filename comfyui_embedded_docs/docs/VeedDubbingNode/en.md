@@ -1,6 +1,6 @@
 # VEED Dubbing
 
-VEED Dubbing translates the speech in a video into another language with VEED, cloning each speaker's voice and syncing their lips to the translation. The clip is uploaded, the VEED job is polled, and the dubbed video comes back at 25 fps, as long as its new audio track. Use it to localise a finished clip without re-shooting or re-recording the voice.
+VEED Dubbing translates the speech in a video into another language with VEED, cloning each speaker's voice and syncing their lips to the translation. The clip is uploaded, the VEED job is polled, and the dubbed video comes back at 25 fps with the same duration as the new audio track. Use it to localise a finished clip without re-shooting or re-recording the voice.
 
 ## Inputs
 

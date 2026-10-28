@@ -11,7 +11,7 @@ MiniMax H3 Latent Upscale With Model redimensiona la parte de video de un latent
 | `width` | Ancho de video objetivo en píxeles. El latente se redimensiona a `width / 16` columnas, por lo que el valor se redondea hacia abajo a un múltiplo de 16. (predeterminado: 2560) | INT | Sí | 32 a 16384 (paso 32) |
 | `height` | Alto de video objetivo en píxeles, también redondeado hacia abajo a un múltiplo de 16. (predeterminado: 1440) | INT | Sí | 32 a 16384 (paso 32) |
 
-Cuando el tamaño solicitado ya coincide con el latente, el latente de entrada se devuelve sin cambios. El latente de salida no lleva `noise_mask`, por lo que un latente parcialmente enmascarado pierde su máscara. La red ejecuta sus convoluciones 3D en bloques temporales, lo que mantiene el uso de memoria en clips largos cercano al de un solo bloque.
+Cuando el tamaño solicitado ya coincide con el latente, el latente de entrada se devuelve sin cambios. El latente redimensionado no lleva `noise_mask`, por lo que un latente parcialmente enmascarado pierde su máscara. La red ejecuta sus convoluciones 3D en bloques temporales, lo que mantiene el uso de memoria en clips largos cercano al de un solo bloque.
 
 ## Salidas
 

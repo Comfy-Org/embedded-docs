@@ -14,7 +14,7 @@ Bu girdiler `model` `"standard"` olarak ayarlandığında görünür.
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `video` | Görünür bir yüz ve konuşma içeren video, 599 saniyeye kadar. Çıktı, ses parçasıyla aynı uzunluktadır ve 25 fps'de oynatılır. | VIDEO | Evet | 599 saniyeye kadar |
+| `video` | Yüzü görünen ve konuşma içeren video, 599 saniyeye kadar. Çıktı, ses parçasıyla aynı uzunluktadır ve 25 fps'de oynatılır. | VIDEO | Evet | 599 saniyeye kadar |
 | `target_language` | Dublaj yapılacak dil, 85 dilden biri. (varsayılan: `"English"`) | COMBO | Evet | 85 dil |
 | `source_language` | Videoda konuşulan dil veya algılamak için `"auto"`. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>85 dil |
 | `seed` | Seed, düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. (varsayılan: 42) | INT | Evet | 0 ile 2147483647 arası |
@@ -25,7 +25,7 @@ Bu girdiler `model` `"pro"` olarak ayarlandığında görünür.
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `video` | Görünür bir yüz ve konuşma içeren video, 599 saniyeye kadar. Çıktı, ses parçasıyla aynı uzunluktadır ve 25 fps'de oynatılır. | VIDEO | Evet | 599 saniyeye kadar |
+| `video` | Yüzü görünen ve konuşma içeren video, 599 saniyeye kadar. Çıktı, ses parçasıyla aynı uzunluktadır ve 25 fps'de oynatılır. | VIDEO | Evet | 599 saniyeye kadar |
 | `target_language` | Dublaj yapılacak dil veya bölgesel aksan: 87 dil artı `"English (UK)"`, `"Spanish (Mexico)"` ve `"Portuguese (Brazil)"` gibi 14 aksan. (varsayılan: `"English (US)"`) | COMBO | Evet | 101 seçenek |
 | `source_language` | Videoda konuşulan dil veya algılamak için `"auto"`. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>91 dil |
 | `seed` | Seed, düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. (varsayılan: 42) | INT | Evet | 0 ile 2147483647 arası |

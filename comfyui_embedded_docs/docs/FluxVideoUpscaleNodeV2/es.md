@@ -8,7 +8,7 @@ Flux Video Upscale amplía un video con superresolución FLUX, ya sea a un tama�
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `video` | Clip de origen de 1 a 20 segundos, de al menos 64x64 píxeles, con una relación de aspecto entre 1:4 y 4:1. La salida se renderiza a 24 fps y se limita a aproximadamente 14,4 megapíxeles por fotograma. | VIDEO | Sí | 1 a 20 segundos de duración; relación de aspecto entre 1:4 y 4:1; mínimo 64x64 píxeles |
+| `video` | Clip de origen de 1 a 20 segundos y como máximo 50 MB, de al menos 64x64 píxeles, con una relación de aspecto entre 1:4 y 4:1. La salida se renderiza a 24 fps y se limita a aproximadamente 14,4 megapíxeles por fotograma. | VIDEO | Sí | 1 a 20 segundos de duración; relación de aspecto entre 1:4 y 4:1; mínimo 64x64 píxeles |
 | `target_resolution` | Tamaño de salida. `"1080p"`, `"2K"` y `"4K"` ajustan el resultado dentro de 1920x1080, 2560x1440 o 3840x2160 píxeles, rotados para clips verticales; `"by factor"` usa `upscale_factor` en su lugar. | DYNAMIC_COMBO | Sí | `"2K"`<br>`"4K"`<br>`"1080p"`<br>`"by factor"` |
 | `mode` | `"creative"` restaura e inventa detalles finos, ideal para material generado, texturas y paisajes. `"precise"` mejora la nitidez del origen sin cambiarlo, para rostros, productos y material real. (predeterminado: `"creative"`) | COMBO | Sí | `"creative"`<br>`"precise"` |
 | `prompt` | Descripción opcional del clip que orienta el detalle mejorado. Dejar vacío para una ampliación neutra. (predeterminado: vacío) | STRING | Sí | Texto multilínea |

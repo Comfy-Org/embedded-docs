@@ -8,7 +8,7 @@ Flux Video Upscale enlarges a video with FLUX super-resolution, either to a fixe
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `video` | Source clip of 1 to 20 seconds, at least 64x64 pixels, with an aspect ratio between 1:4 and 4:1. The output is rendered at 24 fps and capped at about 14.4 megapixels per frame. | VIDEO | Yes | 1 to 20 seconds duration; aspect ratio between 1:4 and 4:1; minimum 64x64 pixels |
+| `video` | Source clip of 1 to 20 seconds and at most 50 MB, at least 64x64 pixels, with an aspect ratio between 1:4 and 4:1. The output is rendered at 24 fps and capped at about 14.4 megapixels per frame. | VIDEO | Yes | 1 to 20 seconds duration; aspect ratio between 1:4 and 4:1; minimum 64x64 pixels |
 | `target_resolution` | Output size. `"1080p"`, `"2K"` and `"4K"` fit the result inside 1920x1080, 2560x1440 or 3840x2160 pixels, turned for portrait clips; `"by factor"` uses `upscale_factor` instead. | DYNAMIC_COMBO | Yes | `"2K"`<br>`"4K"`<br>`"1080p"`<br>`"by factor"` |
 | `mode` | `"creative"` restores and invents fine detail, best for generated footage, textures and scenery. `"precise"` sharpens the source without changing it, for faces, products and real footage. (default: `"creative"`) | COMBO | Yes | `"creative"`<br>`"precise"` |
 | `prompt` | Optional description of the clip that steers the enhanced detail. Leave empty for a neutral upscale. (default: empty) | STRING | Yes | Multiline text |

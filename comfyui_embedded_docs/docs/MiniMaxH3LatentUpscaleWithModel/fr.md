@@ -11,7 +11,7 @@ MiniMax H3 Latent Upscale With Model redimensionne la partie vidéo d’un laten
 | `width` | Largeur vidéo cible en pixels. Le latent est redimensionné à `width / 16` colonnes, la valeur est donc arrondie vers le bas au multiple de 16 inférieur. (par défaut : 2560) | INT | Oui | 32 à 16384 (pas de 32) |
 | `height` | Hauteur vidéo cible en pixels, également arrondie vers le bas au multiple de 16 inférieur. (par défaut : 1440) | INT | Oui | 32 à 16384 (pas de 32) |
 
-Lorsque la taille demandée correspond déjà au latent, le latent d’entrée est renvoyé inchangé. Le latent de sortie ne porte pas de `noise_mask`, ainsi un latent partiellement masqué perd son masque. Le réseau exécute ses convolutions 3D par tranches temporelles, ce qui maintient l’utilisation mémoire sur les longs clips proche de celle d’une seule tranche.
+Lorsque la taille demandée correspond déjà au latent, le latent d’entrée est renvoyé inchangé. Le latent redimensionné ne porte pas de `noise_mask` : un latent partiellement masqué perd alors son masque. Le réseau exécute ses convolutions 3D par tranches temporelles, ce qui maintient l’utilisation mémoire sur les longs clips proche de celle d’une seule tranche.
 
 ## Sorties
 

@@ -14,7 +14,7 @@ Ces entrées apparaissent lorsque `model` est défini sur `"standard"`.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `video` | Vidéo avec un visage et une parole visibles, jusqu’à 599 secondes. La sortie a la même durée que sa piste audio et est lue à 25 ips. | VIDEO | Oui | Jusqu’à 599 secondes |
+| `video` | Vidéo avec un visage visible et une piste audio contenant de la parole, jusqu’à 599 secondes. La sortie a la même durée que sa piste audio et est lue à 25 ips. | VIDEO | Oui | Jusqu’à 599 secondes |
 | `target_language` | Langue de doublage, parmi 85 langues. (par défaut : `"English"`) | COMBO | Oui | 85 langues |
 | `source_language` | Langue parlée dans la vidéo, ou `"auto"` pour la détecter. (par défaut : `"auto"`) | COMBO | Oui | `"auto"`<br>85 langues |
 | `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine. (par défaut : 42) | INT | Oui | 0 à 2147483647 |
@@ -25,7 +25,7 @@ Ces entrées apparaissent lorsque `model` est défini sur `"pro"`.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `video` | Vidéo avec un visage et une parole visibles, jusqu’à 599 secondes. La sortie a la même durée que sa piste audio et est lue à 25 ips. | VIDEO | Oui | Jusqu’à 599 secondes |
+| `video` | Vidéo avec un visage visible et une piste audio contenant de la parole, jusqu’à 599 secondes. La sortie a la même durée que sa piste audio et est lue à 25 ips. | VIDEO | Oui | Jusqu’à 599 secondes |
 | `target_language` | Langue ou accent régional de doublage : 87 langues plus 14 accents tels que `"English (UK)"`, `"Spanish (Mexico)"` et `"Portuguese (Brazil)"`. (par défaut : `"English (US)"`) | COMBO | Oui | 101 options |
 | `source_language` | Langue parlée dans la vidéo, ou `"auto"` pour la détecter. (par défaut : `"auto"`) | COMBO | Oui | `"auto"`<br>91 langues |
 | `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine. (par défaut : 42) | INT | Oui | 0 à 2147483647 |

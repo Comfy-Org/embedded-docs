@@ -8,7 +8,7 @@ Flux Video Upscale, bir videoyu FLUX süper çözünürlüğüyle büyütür; bu
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `video` | 1 ila 20 saniyelik, en az 64x64 piksel olan ve en-boy oranı 1:4 ile 4:1 arasında bulunan kaynak klip. Çıktı 24 fps'te işlenir ve kare başına yaklaşık 14,4 megapiksel ile sınırlandırılır. | VIDEO | Evet | 1 ila 20 saniye süre; en-boy oranı 1:4 ile 4:1 arasında; en az 64x64 piksel |
+| `video` | 1 ila 20 saniyelik ve en fazla 50 MB boyutunda, en az 64x64 piksel olan ve en-boy oranı 1:4 ile 4:1 arasında bulunan kaynak klip. Çıktı 24 fps'te işlenir ve kare başına yaklaşık 14,4 megapiksel ile sınırlandırılır. | VIDEO | Evet | 1 ila 20 saniye süre; en-boy oranı 1:4 ile 4:1 arasında; en az 64x64 piksel |
 | `target_resolution` | Çıktı boyutu. `"1080p"`, `"2K"` ve `"4K"` sonucu 1920x1080, 2560x1440 veya 3840x2160 piksel içine sığdırır; dikey klipler için döndürülür; `"by factor"` ise bunun yerine `upscale_factor` kullanır. | DYNAMIC_COMBO | Evet | `"2K"`<br>`"4K"`<br>`"1080p"`<br>`"by factor"` |
 | `mode` | `"creative"` ince detayları geri kazandırır ve üretir; üretilmiş görüntüler, dokular ve manzaralar için en iyisidir. `"precise"` kaynağı değiştirmeden keskinleştirir; yüzler, ürünler ve gerçek görüntüler içindir. (varsayılan: `"creative"`) | COMBO | Evet | `"creative"`<br>`"precise"` |
 | `prompt` | İyileştirilmiş detayı yönlendiren, klip için isteğe bağlı açıklama. Nötr bir büyütme için boş bırakın. (varsayılan: boş) | STRING | Evet | Çok satırlı metin |

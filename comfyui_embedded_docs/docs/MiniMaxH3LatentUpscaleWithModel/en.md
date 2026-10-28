@@ -11,7 +11,7 @@ MiniMax H3 Latent Upscale With Model resizes the video part of a MiniMax H3 late
 | `width` | Target video width in pixels. The latent is resized to `width / 16` columns, so the value is rounded down to a multiple of 16. (default: 2560) | INT | Yes | 32 to 16384 (step 32) |
 | `height` | Target video height in pixels, also rounded down to a multiple of 16. (default: 1440) | INT | Yes | 32 to 16384 (step 32) |
 
-When the requested size already matches the latent, the input latent is returned unchanged. The output latent carries no `noise_mask`, so a partially masked latent loses its mask. The network runs its 3D convolutions in temporal slabs, which keeps memory use on long clips close to that of a single slab.
+When the requested size already matches the latent, the input latent is returned unchanged. A resized latent carries no `noise_mask`, so a partially masked latent loses its mask. The network runs its 3D convolutions in temporal slabs, which keeps memory use on long clips close to that of a single slab.
 
 ## Outputs
 

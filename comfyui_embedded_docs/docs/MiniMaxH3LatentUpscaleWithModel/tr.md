@@ -11,7 +11,7 @@ MiniMax H3 Latent Upscale With Model, MiniMax H3 latentinin video kısmını bir
 | `width` | Hedef video genişliği (piksel cinsinden). Latent, `width / 16` sütuna yeniden boyutlandırılır; bu nedenle değer 16'nın katına aşağı yuvarlanır. (varsayılan: 2560) | INT | Evet | 32 - 16384 (adım 32) |
 | `height` | Hedef video yüksekliği (piksel cinsinden), yine 16'nın katına aşağı yuvarlanır. (varsayılan: 1440) | INT | Evet | 32 - 16384 (adım 32) |
 
-İstenen boyut zaten latentle eşleşiyorsa, girdi latenti değiştirilmeden döndürülür. Çıktı latenti `noise_mask` taşımaz; bu nedenle kısmen maskelenmiş bir latent maskesini kaybeder. Ağ, 3D konvolüsyonlarını zamansal dilimler halinde çalıştırır; bu da uzun kliplerde bellek kullanımını tek bir dilimin bellek kullanımına yakın tutar.
+İstenen boyut zaten latentle eşleşiyorsa, girdi latenti değiştirilmeden döndürülür. Yeniden boyutlandırılan latent `noise_mask` taşımaz; bu nedenle kısmen maskelenmiş bir latent maskesini kaybeder. Ağ, 3D konvolüsyonlarını zamansal dilimler halinde çalıştırır; bu da uzun kliplerde bellek kullanımını tek bir dilimin bellek kullanımına yakın tutar.
 
 ## Çıktılar
 
