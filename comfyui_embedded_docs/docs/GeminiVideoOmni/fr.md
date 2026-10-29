@@ -2,6 +2,8 @@
 
 Générez une vidéo avec du son à partir d'une invite texte à l'aide du modèle Gemini Omni Flash de Google. Vous pouvez éventuellement fournir des images et/ou vidéos de référence pour guider ou modifier le résultat. Décrivez la durée souhaitée (3-10 s) et le format d'image (16:9 ou 9:16) directement dans l'invite.
 
+**Remarque :** Ce nœud est marqué comme obsolète dans le code source.
+
 ## Entrées
 
 ### Entrées communes
@@ -41,4 +43,4 @@ Notes :
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiVideoOmni/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `648844868affb68298d2eac8ac20095bfe378d32e721396781de330ef6a6d69f`
+**Source fingerprint (SHA-256):** `da533824adf93b7502465cf985941f70e0ae4d6813c951f4ffa98c007437c03c`
