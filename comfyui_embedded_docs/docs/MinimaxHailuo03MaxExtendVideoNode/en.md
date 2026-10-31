@@ -7,7 +7,7 @@ This node continues a video with new footage guided by a prompt and optional aud
 ### Common Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
+| --- | --- | --- | --- | --- |
 | `model` | Model to use for continuing the video. Both models expose the same inputs below. | DYNAMIC_COMBO | Yes | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
 
 ### Model Inputs
@@ -15,7 +15,7 @@ This node continues a video with new footage guided by a prompt and optional aud
 These inputs apply to both models.
 
 | Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
+| --- | --- | --- | --- | --- |
 | `video` | Video to extend, 1.625 to 60 seconds long, up to 50 MB. The aspect ratio must be between 0.4 and 2.5. | VIDEO | Yes | 1.625 to 60 seconds |
 | `prompt` | What happens next. Describe the continuation, not the source. Refer to the reference audios as `@Audio1`..`@Audio3`, for example "@Audio1 for the voice". | STRING | Yes | 1 to 50000 characters |
 | `reference_audios` | Growable slot: connect up to 3 audio clips (`audio_1`...`audio_3`) for the new footage, at least 2 seconds each and 14.5 seconds in total. | AUDIO | No | 0 to 3 clips |
@@ -34,7 +34,7 @@ These inputs apply to both models.
 ## Outputs
 
 | Output Name | Description | Data Type |
-|-------------|-------------|-----------|
+| --- | --- | --- |
 | `video` | The extended video or the new footage alone, depending on the `output` setting. | VIDEO |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxHailuo03MaxExtendVideoNode/en.md)

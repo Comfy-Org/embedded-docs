@@ -5,14 +5,14 @@ This node sets the compute dtype used when a VAE encodes or decodes, without cha
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
+| --- | --- | --- | --- | --- |
 | `vae` | VAE to adjust. The node works on a copy, so the connected VAE is not modified. | VAE | Yes | - |
 | `dtype` | Compute dtype for VAE encoding and decoding. "default" keeps the input VAE's compute dtype (default: "default"). | COMBO | Yes | "default"<br>"fp32"<br>"fp16"<br>"bf16" |
 
 ## Outputs
 
 | Output Name | Description | Data Type |
-|-------------|-------------|-----------|
+| --- | --- | --- |
 | `vae` | The copy of the VAE with the selected compute dtype applied. | VAE |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEComputeDtype/en.md)

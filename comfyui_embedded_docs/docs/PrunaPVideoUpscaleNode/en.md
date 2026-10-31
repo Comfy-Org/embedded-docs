@@ -5,7 +5,7 @@ Pruna P-Video Upscale enlarges a video to 720p, 1080p, 2K or 4K while keeping it
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
+| --- | --- | --- | --- | --- |
 | `video` | Video to upscale, up to 512 MiB. Videos larger than 10 megapixels can only be sent to the 2K or 4K target. | VIDEO | Yes | Up to 512 MiB |
 | `target` | Output pixel area: 720p is about 0.9 megapixels, 1080p 2.1, 2K 3.7 and 4K 8.3. The longest clip is limited by the target: 2400, 1200, 600 or 300 frames, about 100, 50, 25 or 12.5 seconds at 24 fps (default: "1080p"). | COMBO | Yes | "720p"<br>"1080p"<br>"2K"<br>"4K" |
 | `fps` | Output frame rate (default: "source"). "source" keeps the rate of the video, up to 60; a higher rate is interpolated. Output above 30 fps costs twice as much. | COMBO | Yes | "source"<br>"16"<br>"24"<br>"25"<br>"30"<br>"48"<br>"50"<br>"60" |
@@ -19,7 +19,7 @@ Pruna P-Video Upscale enlarges a video to 720p, 1080p, 2K or 4K while keeping it
 ## Outputs
 
 | Output Name | Description | Data Type |
-|-------------|-------------|-----------|
+| --- | --- | --- |
 | `video` | The upscaled video with its original audio. | VIDEO |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrunaPVideoUpscaleNode/en.md)

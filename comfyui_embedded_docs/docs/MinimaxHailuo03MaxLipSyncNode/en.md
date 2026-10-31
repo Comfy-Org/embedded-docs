@@ -7,13 +7,13 @@ This node animates a still image so that the mouth movements follow a supplied a
 ### Common Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
+| --- | --- | --- | --- | --- |
 | `model` | Model to use for video generation. | DYNAMIC_COMBO | Yes | "MiniMax H3 Max" |
 
 ### MiniMax H3 Max Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
+| --- | --- | --- | --- | --- |
 | `image` | Image to animate, at least 256x256 pixels. The aspect ratio must be between 0.4 and 2.5. | IMAGE | Yes | Single image |
 | `audio` | Audio to lip-sync to, 5 to 899 seconds long. | AUDIO | Yes | 5 to 899 seconds |
 | `resolution` | Output resolution (default: "768P"). The aspect ratio is the supported one nearest to the image. | COMBO | Yes | "480P"<br>"768P"<br>"1080P"<br>"2K" |
@@ -23,7 +23,7 @@ This node animates a still image so that the mouth movements follow a supplied a
 ## Outputs
 
 | Output Name | Description | Data Type |
-|-------------|-------------|-----------|
+| --- | --- | --- |
 | `video` | The talking video, as long as the input audio. | VIDEO |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxHailuo03MaxLipSyncNode/en.md)

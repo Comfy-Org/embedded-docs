@@ -7,13 +7,13 @@ Recast replaces the people in a video with the people from reference photos whil
 ### Common Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
+| --- | --- | --- | --- | --- |
 | `model` | Model to use for video generation. | DYNAMIC_COMBO | Yes | "MiniMax H3 Max" |
 
 ### MiniMax H3 Max Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
+| --- | --- | --- | --- | --- |
 | `video` | Source video, 5 to 30 seconds long; every shot must be 15 seconds or shorter. The aspect ratio must be between 0.4 and 2.5. | VIDEO | Yes | 5 to 30 seconds |
 | `reference_images` | Growable slot: connect 1 to 4 photos (`image_1`...`image_4`), one per new person, at least 256x256 pixels. By default they replace the main people in the video from left to right. | IMAGE | Yes | 1 to 4 images |
 | `prompt` | Optional. Who becomes whom, or what else to keep or change. Refer to the photos as `@Image1`..`@Image4`, for example "the man becomes @Image2". | STRING | Yes | 0 to 2000 characters |
@@ -24,7 +24,7 @@ Recast replaces the people in a video with the people from reference photos whil
 ## Outputs
 
 | Output Name | Description | Data Type |
-|-------------|-------------|-----------|
+| --- | --- | --- |
 | `video` | The recast video with the new people in place. | VIDEO |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxHailuo03MaxRecastNode/en.md)

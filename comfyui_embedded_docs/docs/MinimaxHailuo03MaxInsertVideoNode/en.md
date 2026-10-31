@@ -7,13 +7,13 @@ This node replaces the part of a video between the start and resume times with a
 ### Common Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
+| --- | --- | --- | --- | --- |
 | `model` | Model to use for video generation. | DYNAMIC_COMBO | Yes | "MiniMax H3 Max" |
 
 ### MiniMax H3 Max Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
+| --- | --- | --- | --- | --- |
 | `video` | Source video, up to 60 seconds long. The aspect ratio must be between 0.4 and 2.5. | VIDEO | Yes | 0 to 60 seconds |
 | `reference_images` | Growable slot: connect up to 9 optional reference images (`image_1`...`image_9`) for the new scene, at least 256x256 pixels. They are referred to in the prompt as `@Image1`..`@Image9` in connection order. | IMAGE | No | 0 to 9 images |
 | `reference_videos` | Growable slot: connect up to 3 optional reference videos (`video_1`...`video_3`) for the new scene, 2 to 15 seconds each and 15 seconds in total. They are referred to in the prompt as `@Video1`..`@Video3` in connection order. | VIDEO | No | 0 to 3 videos |
@@ -34,7 +34,7 @@ This node replaces the part of a video between the start and resume times with a
 ## Outputs
 
 | Output Name | Description | Data Type |
-|-------------|-------------|-----------|
+| --- | --- | --- |
 | `video` | The source video with the new scene spliced between the start and resume times. | VIDEO |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxHailuo03MaxInsertVideoNode/en.md)

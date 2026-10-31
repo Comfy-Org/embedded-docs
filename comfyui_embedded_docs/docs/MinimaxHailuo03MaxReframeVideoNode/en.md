@@ -7,13 +7,13 @@ This node adapts a video to a new aspect ratio by fitting it on a new canvas and
 ### Common Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
+| --- | --- | --- | --- | --- |
 | `model` | Model to use for video generation. | DYNAMIC_COMBO | Yes | "MiniMax H3 Max" |
 
 ### MiniMax H3 Max Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
+| --- | --- | --- | --- | --- |
 | `video` | Source video to reframe, 0.5 to 300 seconds long. | VIDEO | Yes | 0.5 to 300 seconds |
 | `aspect_ratio` | Aspect ratio of the output canvas (default: "9:16"). | COMBO | Yes | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4"<br>"21:9"<br>"9:21" |
 | `resolution` | Resolution of the output video (default: "768P"). | COMBO | Yes | "480P"<br>"768P"<br>"1080P" |
@@ -23,7 +23,7 @@ This node adapts a video to a new aspect ratio by fitting it on a new canvas and
 ## Outputs
 
 | Output Name | Description | Data Type |
-|-------------|-------------|-----------|
+| --- | --- | --- |
 | `video` | The reframed video at the selected aspect ratio. | VIDEO |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxHailuo03MaxReframeVideoNode/en.md)

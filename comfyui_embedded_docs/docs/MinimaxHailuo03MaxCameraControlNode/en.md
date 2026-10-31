@@ -7,13 +7,13 @@ This node generates a video that starts from a still image and moves the camera 
 ### Common Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
+| --- | --- | --- | --- | --- |
 | `model` | Model to use for video generation. | DYNAMIC_COMBO | Yes | "MiniMax H3 Max" |
 
 ### MiniMax H3 Max Inputs
 
 | Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
+| --- | --- | --- | --- | --- |
 | `image` | First frame of the video, at least 256x256 pixels. The aspect ratio must be between 0.4 and 2.5. | IMAGE | Yes | Single image |
 | `camera_info` | Optional end camera, for example from Create Camera Info or Compose Camera Angle Prompt, with the image as the front view. When connected it sets the azimuth and elevation. | LOAD3D_CAMERA | No | Camera info |
 | `prompt` | Optional. When empty, the scene stays frozen and only the camera moves. | STRING | Yes | 0 to 50000 characters |
@@ -28,7 +28,7 @@ This node generates a video that starts from a still image and moves the camera 
 ## Outputs
 
 | Output Name | Description | Data Type |
-|-------------|-------------|-----------|
+| --- | --- | --- |
 | `video` | The generated video with the camera move applied. | VIDEO |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxHailuo03MaxCameraControlNode/en.md)
