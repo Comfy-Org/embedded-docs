@@ -1,6 +1,6 @@
 # Topaz Görüntü İyileştirme
 
-Topaz Image Enhance, Topaz modellerini kullanarak tek bir giriş görüntüsüne endüstri standardı ölçek büyütme ve görüntü iyileştirme uygular. Görüntüyü Topaz API'sine gönderir, seçilen modelle işler ve iyileştirilmiş sonucu döndürür. Üç model arasından seçim yapabilirsiniz: Reimagine, Bloom 2 ve Wonder 3.5.
+Topaz Image Enhance, Topaz modellerini kullanarak tek bir giriş görüntüsüne endüstri standardı ölçek büyütme ve görüntü iyileştirme uygular. Görüntüyü Topaz API'sine gönderir, seçilen modelle işler ve iyileştirilmiş sonucu döndürür. Dört model arasından seçim yapabilirsiniz: Reimagine, Bloom 2, Wonder 3.5 ve Wonder 4.
 
 ## Girdiler
 
@@ -9,9 +9,9 @@ Topaz Image Enhance, Topaz modellerini kullanarak tek bir giriş görüntüsüne
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `image` | İyileştirilecek giriş görüntüsü. Yalnızca bir giriş görüntüsü desteklenir. | IMAGE | Evet | Tek görüntü |
-| `model` | Kullanılacak Topaz iyileştirme modeli. Seçilen model, hangi modele özgü ayarların görüneceğini belirler. | DYNAMIC_COMBO | Evet | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"` |
-| `output_width` | Sıfır değeri otomatik olarak hesaplanacağı anlamına gelir (genellikle özgün boyut olur veya belirtilmişse `output_height` ile orantılı olarak ölçeklenir). Wonder 3.5 yalnızca 1x ile 6x arasındaki ölçek büyütme faktörlerini destekler. Bloom 2 ve Wonder 3.5 giriş en-boy oranını korur ve istenen boyutu hedef olarak değerlendirir. (varsayılan: 0) | INT | Hayır | 0 - 32000 |
-| `output_height` | Sıfır değeri, özgün yükseklikle aynı yükseklikte çıktı vermek veya belirtilmişse `output_width` ile orantılı olarak ölçeklenmek anlamına gelir. Wonder 3.5 yalnızca 1x ile 6x arasındaki ölçek büyütme faktörlerini destekler. Bloom 2 ve Wonder 3.5 giriş en-boy oranını korur ve istenen boyutu hedef olarak değerlendirir. (varsayılan: 0) | INT | Hayır | 0 - 32000 |
+| `model` | Kullanılacak Topaz iyileştirme modeli. Seçilen model, hangi modele özgü ayarların görüneceğini belirler. | DYNAMIC_COMBO | Evet | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"`<br>`"Wonder 4"` |
+| `output_width` | Sıfır değeri otomatik olarak hesaplanacağı anlamına gelir (genellikle özgün boyut olur veya belirtilmişse `output_height` ile orantılı olarak ölçeklenir). Wonder 3.5 ve Wonder 4, 1x ile 6x arasındaki ölçek büyütme faktörlerini, Bloom 2 ise 1x ile 12x arasındakileri destekler. Bloom 2, Wonder 3.5 ve Wonder 4 her zaman giriş en-boy oranını korur: iki boyut da ayarlanmış ve oranları farklıysa daha büyük ölçek geçerli olur ve çıktı (ve fiyat) istenen boyuttan büyük olur. (varsayılan: 0) | INT | Hayır | 0 - 32000 |
+| `output_height` | Sıfır değeri, özgün yükseklikle aynı yükseklikte çıktı vermek veya belirtilmişse `output_width` ile orantılı olarak ölçeklenmek anlamına gelir. Wonder 3.5 ve Wonder 4, 1x ile 6x arasındaki ölçek büyütme faktörlerini, Bloom 2 ise 1x ile 12x arasındakileri destekler. Bloom 2, Wonder 3.5 ve Wonder 4 her zaman giriş en-boy oranını korur: iki boyut da ayarlanmış ve oranları farklıysa daha büyük ölçek geçerli olur ve çıktı (ve fiyat) istenen boyuttan büyük olur. (varsayılan: 0) | INT | Hayır | 0 - 32000 |
 
 ### Reimagine Girdileri
 
@@ -58,7 +58,7 @@ Bu ayarlar `model` parametresi `"Wonder 3.5"` olarak ayarlandığında geçerlid
 | `grain_size` | Gren parçacıklarının boyutu. `grain` devre dışıysa yok sayılır. (varsayılan: 1.0) | FLOAT | Evet | 1.0 - 5.0 |
 | `grain_density` | Gren efektinin yoğunluğu. `grain` devre dışıysa yok sayılır. (varsayılan: 0.5) | FLOAT | Evet | 0.0 - 1.0 |
 
-**Not:** Yalnızca bir giriş görüntüsü desteklenir; giriş yığını birden fazla görüntü içeriyorsa düğüm hata verir. `grain` etkinleştirilmedikçe gren ayarları (`grain_model`, `grain_strength`, `grain_size`, `grain_density`) yok sayılır. Bloom 2 için `prompt` boş bırakılırsa giriş görüntüsünden otomatik olarak bir istem oluşturulur. Wonder 3.5 yalnızca 1x ile 6x arasındaki ölçek büyütme faktörlerini destekler; Bloom 2 ve Wonder 3.5 giriş en-boy oranını korur ve istenen boyutu hedef olarak değerlendirir.
+**Not:** Yalnızca bir giriş görüntüsü desteklenir; giriş yığını birden fazla görüntü içeriyorsa düğüm hata verir. `grain` etkinleştirilmedikçe gren ayarları (`grain_model`, `grain_strength`, `grain_size`, `grain_density`) yok sayılır. Bloom 2 için `prompt` boş bırakılırsa giriş görüntüsünden otomatik olarak bir istem oluşturulur. Wonder 4 yalnızca ortak girişleri sunar. Çıktı 179 megapiksel ve kenar başına 32000 piksel ile sınırlıdır.
 
 ## Çıktılar
 
@@ -69,4 +69,4 @@ Bu ayarlar `model` parametresi `"Wonder 3.5"` olarak ayarlandığında geçerlid
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TopazImageEnhanceV2/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `19bb03ca7354f1b0d1e559b742b83939678fce6d5f490b1030717b846043e0e6`
+**Source fingerprint (SHA-256):** `dd109d31ea4ab7928058414c3a62ae3829f879354ebdce329b599aacb9804d1b`

@@ -1,6 +1,6 @@
 # Topaz 影像增強
 
-Topaz Image Enhance 使用 Topaz 模型，對單一輸入影像套用業界標準的放大與影像增強。它會將影像傳送至 Topaz API，使用所選模型進行處理，並傳回增強後的結果。您可以從三種模型中選擇：Reimagine、Bloom 2 和 Wonder 3.5。
+Topaz Image Enhance 使用 Topaz 模型，對單一輸入影像套用業界標準的放大與影像增強。它會將影像傳送至 Topaz API，使用所選模型進行處理，並傳回增強後的結果。您可以從四種模型中選擇：Reimagine、Bloom 2、Wonder 3.5 和 Wonder 4。
 
 ## 輸入
 
@@ -9,9 +9,9 @@ Topaz Image Enhance 使用 Topaz 模型，對單一輸入影像套用業界標�
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `image` | 要增強的輸入影像。僅支援一張輸入影像。 | IMAGE | 是 | 單張圖片 |
-| `model` | 要使用的 Topaz 增強模型。所選模型會決定顯示哪些模型特定設定。 | DYNAMIC_COMBO | 是 | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"` |
-| `output_width` | 值為零表示自動計算（通常會是原始尺寸，或若指定了 `output_height`，則依比例縮放至該高度）。Wonder 3.5 僅支援 1x 至 6x 的放大倍率。Bloom 2 和 Wonder 3.5 會保留輸入的長寬比，並將要求的尺寸視為目標。（預設值：0） | INT | 否 | 0 至 32000 |
-| `output_height` | 值為零表示輸出與原始高度相同，或若指定了 `output_width`，則依比例縮放至該寬度。Wonder 3.5 僅支援 1x 至 6x 的放大倍率。Bloom 2 和 Wonder 3.5 會保留輸入的長寬比，並將要求的尺寸視為目標。（預設值：0） | INT | 否 | 0 至 32000 |
+| `model` | 要使用的 Topaz 增強模型。所選模型會決定顯示哪些模型特定設定。 | DYNAMIC_COMBO | 是 | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"`<br>`"Wonder 4"` |
+| `output_width` | 值為零表示自動計算（通常會是原始尺寸，或若指定了 `output_height`，則依比例縮放至該高度）。Wonder 3.5 和 Wonder 4 支援 1x 至 6x 的放大倍率，Bloom 2 支援 1x 至 12x。Bloom 2、Wonder 3.5 和 Wonder 4 一律保留輸入的長寬比：若同時設定兩個尺寸且比例不同，較大的放大倍率會生效，輸出（與價格）會大於要求的尺寸。 （預設值：0） | INT | 否 | 0 至 32000 |
+| `output_height` | 值為零表示輸出與原始高度相同，或若指定了 `output_width`，則依比例縮放至該寬度。Wonder 3.5 和 Wonder 4 支援 1x 至 6x 的放大倍率，Bloom 2 支援 1x 至 12x。Bloom 2、Wonder 3.5 和 Wonder 4 一律保留輸入的長寬比：若同時設定兩個尺寸且比例不同，較大的放大倍率會生效，輸出（與價格）會大於要求的尺寸。 （預設值：0） | INT | 否 | 0 至 32000 |
 
 ### Reimagine 輸入
 
@@ -58,7 +58,7 @@ Topaz Image Enhance 使用 Topaz 模型，對單一輸入影像套用業界標�
 | `grain_size` | 顆粒的大小。若停用顆粒，則會忽略。（預設值：1.0） | FLOAT | 是 | 1.0 至 5.0 |
 | `grain_density` | 顆粒效果的濃度。若停用顆粒，則會忽略。（預設值：0.5） | FLOAT | 是 | 0.0 至 1.0 |
 
-**注意：** 僅支援一張輸入影像；若輸入批次包含多於一張影像，節點會拋出錯誤。除非啟用 `grain`，否則會忽略顆粒設定（`grain_model`、`grain_strength`、`grain_size`、`grain_density`）。對於 Bloom 2，將 `prompt` 留空會自動從輸入影像生成提示。Wonder 3.5 僅支援 1x 至 6x 的放大倍率；Bloom 2 和 Wonder 3.5 會保留輸入的長寬比，並將要求的尺寸視為目標。
+**注意：** 僅支援一張輸入影像；若輸入批次包含多於一張影像，節點會拋出錯誤。除非啟用 `grain`，否則會忽略顆粒設定（`grain_model`、`grain_strength`、`grain_size`、`grain_density`）。對於 Bloom 2，將 `prompt` 留空會自動從輸入影像生成提示。Wonder 4 只提供通用輸入。輸出上限為 179 百萬像素，單邊不超過 32000 像素。
 
 ## 輸出
 
@@ -69,4 +69,4 @@ Topaz Image Enhance 使用 Topaz 模型，對單一輸入影像套用業界標�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TopazImageEnhanceV2/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `19bb03ca7354f1b0d1e559b742b83939678fce6d5f490b1030717b846043e0e6`
+**Source fingerprint (SHA-256):** `dd109d31ea4ab7928058414c3a62ae3829f879354ebdce329b599aacb9804d1b`
