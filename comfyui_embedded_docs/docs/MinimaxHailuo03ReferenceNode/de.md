@@ -1,6 +1,6 @@
 # MiniMax H3 Referenz zu Video
 
-Dieser Node generiert ein Video mithilfe der MiniMax H3-Modelle, konditioniert auf Referenzbilder, -videos und -audio. Referenzen werden im Prompt über ihre Verbindungsreihenfolge angesprochen: "Image 1", "Image 2", "Video 1", "Audio 1" und so weiter. Zwei Modelle sind verfügbar: "MiniMax H3" und "MiniMax H3 Max".
+Dieser Node generiert ein Video mithilfe der MiniMax H3-Modelle, konditioniert auf Referenzbilder, -videos und -audio. Referenzen werden im Prompt über ihre Verbindungsreihenfolge angesprochen: "@Image1", "@Image2", "@Video1", "@Audio1" und so weiter. Zwei Modelle sind verfügbar: "MiniMax H3" und "MiniMax H3 Max".
 
 ## Eingaben
 
@@ -18,7 +18,7 @@ Diese Eingaben sind verfügbar, wenn "MiniMax H3" als Modell ausgewählt ist.
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Text-Prompt für die Videogenerierung. Referenzmedien können in ihrer Reihenfolge referenziert werden, zum Beispiel "Image 1", "Image 2", "Video 1" oder "Audio 1". | STRING | Ja | Mindestens 1 Zeichen |
+| `prompt` | Text-Prompt für die Videogenerierung. Referenzmedien können in ihrer Reihenfolge referenziert werden, zum Beispiel "@Image1", "@Image2", "@Video1" oder "@Audio1". | STRING | Ja | Mindestens 1 Zeichen |
 | `resolution` | Auflösung des Ausgabevideos (Standard: "768P"). | COMBO | Ja | "768P"<br>"2K" |
 | `ratio` | Seitenverhältnis des Ausgabevideos (Standard: "adaptive"). | COMBO | Ja | "adaptive"<br>"16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9" |
 | `duration` | Dauer des Ausgabevideos in Sekunden (Standard: 5). | INT | Ja | 4 bis 15 |
@@ -29,7 +29,7 @@ Diese Eingaben sind verfügbar, wenn "MiniMax H3 Max" als Modell ausgewählt ist
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Text-Prompt für die Videogenerierung. Referenzmedien können in ihrer Reihenfolge referenziert werden, zum Beispiel "Image 1", "Image 2", "Video 1" oder "Audio 1". | STRING | Ja | 1 bis 50000 Zeichen |
+| `prompt` | Text-Prompt für die Videogenerierung. Referenzmedien können in ihrer Reihenfolge referenziert werden, zum Beispiel "@Image1", "@Image2", "@Video1" oder "@Audio1". | STRING | Ja | 1 bis 50000 Zeichen |
 | `resolution` | Auflösung des Ausgabevideos (Standard: "768P"). | COMBO | Ja | "480P"<br>"768P" |
 | `ratio` | Seitenverhältnis des Ausgabevideos (Standard: "adaptive"). | COMBO | Ja | "adaptive"<br>"16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9" |
 | `duration` | Dauer des Ausgabevideos in Sekunden (Standard: 5). | INT | Ja | 5 bis 15 |
@@ -42,9 +42,9 @@ Diese Referenzeingaben werden von beiden Modellen gemeinsam genutzt. Jede ist ei
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `reference_images` | Erweiterbarer Slot: Verbinden Sie bis zu 9 Elemente (`image_1`...`image_9`). Referenzbilder für Motiv oder Stil, im Prompt als "Image 1".."Image 9" in Verbindungsreihenfolge referenziert. Bis zu 9 Bilder. | IMAGE | Nein | 0 bis 9 Bilder |
-| `reference_videos` | Erweiterbarer Slot: Verbinden Sie bis zu 3 Elemente (`video_1`...`video_3`). Referenzvideos für Bewegung oder Szene, im Prompt als "Video 1".."Video 3" in Verbindungsreihenfolge referenziert. Bis zu 3 Videos, jeweils 2-15 Sekunden, insgesamt 15 Sekunden. | VIDEO | Nein | 0 bis 3 Videos |
-| `reference_audios` | Erweiterbarer Slot: Verbinden Sie bis zu 3 Elemente (`audio_1`...`audio_3`). Audio-Referenzen, im Prompt als "Audio 1".."Audio 3" in Verbindungsreihenfolge referenziert. Bis zu 3 Clips, jeweils 2-15 Sekunden, insgesamt 15 Sekunden. Kann nicht ohne ein Referenzbild oder -video verwendet werden. | AUDIO | Nein | 0 bis 3 Clips |
+| `reference_images` | Erweiterbarer Slot: Verbinden Sie bis zu 9 Elemente (`image_1`...`image_9`). Referenzbilder für Motiv oder Stil, im Prompt als "@Image1".."@Image9" in Verbindungsreihenfolge referenziert. Bis zu 9 Bilder. | IMAGE | Nein | 0 bis 9 Bilder |
+| `reference_videos` | Erweiterbarer Slot: Verbinden Sie bis zu 3 Elemente (`video_1`...`video_3`). Referenzvideos für Bewegung oder Szene, im Prompt als "@Video1".."@Video3" in Verbindungsreihenfolge referenziert. Bis zu 3 Videos, jeweils 2-15 Sekunden, insgesamt 15 Sekunden. | VIDEO | Nein | 0 bis 3 Videos |
+| `reference_audios` | Erweiterbarer Slot: Verbinden Sie bis zu 3 Elemente (`audio_1`...`audio_3`). Audio-Referenzen, im Prompt als "@Audio1".."@Audio3" in Verbindungsreihenfolge referenziert. Bis zu 3 Clips, jeweils 2-15 Sekunden, insgesamt 15 Sekunden. Kann nicht ohne ein Referenzbild oder -video verwendet werden. | AUDIO | Nein | 0 bis 3 Clips |
 
 ### Parametereinschränkungen
 
@@ -64,4 +64,4 @@ Diese Referenzeingaben werden von beiden Modellen gemeinsam genutzt. Jede ist ei
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxHailuo03ReferenceNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `b77eedb1f7757e60518c04484f1cc24c27cf6886b3ae31c15207ea49fd436a73`
+**Source fingerprint (SHA-256):** `4c0dfb349809b51393b8ec8afd235977f1822c0c8ae6dc42a2c264271bb50b53`

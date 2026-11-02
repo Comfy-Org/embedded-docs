@@ -1,6 +1,6 @@
 # MiniMax H3 Referência para Vídeo
 
-Este nó gera um vídeo usando os modelos MiniMax H3, condicionado a imagens, vídeos e áudio de referência. As referências são mencionadas no prompt pela ordem de conexão: "Image 1", "Image 2", "Video 1", "Audio 1", e assim por diante. Dois modelos estão disponíveis: "MiniMax H3" e "MiniMax H3 Max".
+Este nó gera um vídeo usando os modelos MiniMax H3, condicionado a imagens, vídeos e áudio de referência. As referências são mencionadas no prompt pela ordem de conexão: "@Image1", "@Image2", "@Video1", "@Audio1", e assim por diante. Dois modelos estão disponíveis: "MiniMax H3" e "MiniMax H3 Max".
 
 ## Entradas
 
@@ -18,7 +18,7 @@ Essas entradas estão disponíveis quando "MiniMax H3" é selecionado como o mod
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-----------|---------------|-------------|-----------|
-| `prompt` | Prompt de texto para geração de vídeo. Mídias de referência podem ser mencionadas pela ordem, por exemplo "Image 1", "Image 2", "Video 1" ou "Audio 1". | STRING | Sim | Mínimo de 1 caractere |
+| `prompt` | Prompt de texto para geração de vídeo. Mídias de referência podem ser mencionadas pela ordem, por exemplo "@Image1", "@Image2", "@Video1" ou "@Audio1". | STRING | Sim | Mínimo de 1 caractere |
 | `resolution` | Resolução do vídeo de saída (padrão: "768P"). | COMBO | Sim | "768P"<br>"2K" |
 | `ratio` | Proporção de aspecto do vídeo de saída (padrão: "adaptive"). | COMBO | Sim | "adaptive"<br>"16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9" |
 | `duration` | Duração do vídeo de saída em segundos (padrão: 5). | INT | Sim | 4 a 15 |
@@ -29,7 +29,7 @@ Essas entradas estão disponíveis quando "MiniMax H3 Max" é selecionado como o
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-----------|---------------|-------------|-----------|
-| `prompt` | Prompt de texto para geração de vídeo. Mídias de referência podem ser mencionadas pela ordem, por exemplo "Image 1", "Image 2", "Video 1" ou "Audio 1". | STRING | Sim | 1 a 50000 caracteres |
+| `prompt` | Prompt de texto para geração de vídeo. Mídias de referência podem ser mencionadas pela ordem, por exemplo "@Image1", "@Image2", "@Video1" ou "@Audio1". | STRING | Sim | 1 a 50000 caracteres |
 | `resolution` | Resolução do vídeo de saída (padrão: "768P"). | COMBO | Sim | "480P"<br>"768P" |
 | `ratio` | Proporção de aspecto do vídeo de saída (padrão: "adaptive"). | COMBO | Sim | "adaptive"<br>"16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9" |
 | `duration` | Duração do vídeo de saída em segundos (padrão: 5). | INT | Sim | 5 a 15 |
@@ -42,9 +42,9 @@ Essas entradas de referência são compartilhadas por ambos os modelos. Cada uma
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-----------|---------------|-------------|-----------|
-| `reference_images` | Slot expansível: conecte até 9 itens (`image_1`...`image_9`). Imagens de referência de assunto ou estilo, mencionadas no prompt como "Image 1".."Image 9" na ordem de conexão. Até 9 imagens. | IMAGE | Não | 0 a 9 imagens |
-| `reference_videos` | Slot expansível: conecte até 3 itens (`video_1`...`video_3`). Vídeos de referência de movimento ou cena, mencionados no prompt como "Video 1".."Video 3" na ordem de conexão. Até 3 vídeos, de 2 a 15 segundos cada, 15 segundos no total. | VIDEO | Não | 0 a 3 vídeos |
-| `reference_audios` | Slot expansível: conecte até 3 itens (`audio_1`...`audio_3`). Referências de áudio, mencionadas no prompt como "Audio 1".."Audio 3" na ordem de conexão. Até 3 clipes, de 2 a 15 segundos cada, 15 segundos no total. Não podem ser usadas sem uma imagem ou vídeo de referência. | AUDIO | Não | 0 a 3 clipes |
+| `reference_images` | Slot expansível: conecte até 9 itens (`image_1`...`image_9`). Imagens de referência de assunto ou estilo, mencionadas no prompt como "@Image1".."@Image9" na ordem de conexão. Até 9 imagens. | IMAGE | Não | 0 a 9 imagens |
+| `reference_videos` | Slot expansível: conecte até 3 itens (`video_1`...`video_3`). Vídeos de referência de movimento ou cena, mencionados no prompt como "@Video1".."@Video3" na ordem de conexão. Até 3 vídeos, de 2 a 15 segundos cada, 15 segundos no total. | VIDEO | Não | 0 a 3 vídeos |
+| `reference_audios` | Slot expansível: conecte até 3 itens (`audio_1`...`audio_3`). Referências de áudio, mencionadas no prompt como "@Audio1".."@Audio3" na ordem de conexão. Até 3 clipes, de 2 a 15 segundos cada, 15 segundos no total. Não podem ser usadas sem uma imagem ou vídeo de referência. | AUDIO | Não | 0 a 3 clipes |
 
 ### Restrições de parâmetros
 
@@ -64,4 +64,4 @@ Essas entradas de referência são compartilhadas por ambos os modelos. Cada uma
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxHailuo03ReferenceNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `b77eedb1f7757e60518c04484f1cc24c27cf6886b3ae31c15207ea49fd436a73`
+**Source fingerprint (SHA-256):** `4c0dfb349809b51393b8ec8afd235977f1822c0c8ae6dc42a2c264271bb50b53`

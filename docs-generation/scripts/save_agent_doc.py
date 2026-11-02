@@ -81,6 +81,9 @@ VALID_TYPES = {
     "SVG",
     # Task handle emitted by the Meshy nodes (IO.Custom("MESHY_TASK_ID")).
     "MESHY_TASK_ID",
+    # Camera info handle (IO.Load3DCamera.Input, io_type LOAD3D_CAMERA),
+    # e.g. the optional `camera_info` of MiniMax H3 Max Camera Control.
+    "LOAD3D_CAMERA",
 }
 
 ROW_RE = re.compile(r"^\|")

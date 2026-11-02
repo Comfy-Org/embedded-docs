@@ -1,6 +1,6 @@
 # MiniMax H3 Referans ile Videoya
 
-Bu düğüm, referans görüntüler, videolar ve sesle koşullandırılmış olarak MiniMax H3 modellerini kullanarak bir video üretir. Referanslara istemde bağlantı sıralarına göre atıfta bulunulur: "Image 1", "Image 2", "Video 1", "Audio 1" vb. İki model mevcuttur: "MiniMax H3" ve "MiniMax H3 Max".
+Bu düğüm, referans görüntüler, videolar ve sesle koşullandırılmış olarak MiniMax H3 modellerini kullanarak bir video üretir. Referanslara istemde bağlantı sıralarına göre atıfta bulunulur: "@Image1", "@Image2", "@Video1", "@Audio1" vb. İki model mevcuttur: "MiniMax H3" ve "MiniMax H3 Max".
 
 ## Girdiler
 
@@ -18,7 +18,7 @@ Bu girdiler, model olarak "MiniMax H3" seçildiğinde kullanılabilir.
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Video üretimi için metin istemi. Referans medyaya sıralarına göre atıfta bulunulabilir; örneğin "Image 1", "Image 2", "Video 1" veya "Audio 1". | STRING | Evet | Minimum 1 karakter |
+| `prompt` | Video üretimi için metin istemi. Referans medyaya sıralarına göre atıfta bulunulabilir; örneğin "@Image1", "@Image2", "@Video1" veya "@Audio1". | STRING | Evet | Minimum 1 karakter |
 | `resolution` | Çıktı videosunun çözünürlüğü (varsayılan: "768P"). | COMBO | Evet | "768P"<br>"2K" |
 | `ratio` | Çıktı videosunun en-boy oranı (varsayılan: "adaptive"). | COMBO | Evet | "adaptive"<br>"16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9" |
 | `duration` | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5). | INT | Evet | 4 - 15 |
@@ -29,7 +29,7 @@ Bu girdiler, model olarak "MiniMax H3 Max" seçildiğinde kullanılabilir.
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Video üretimi için metin istemi. Referans medyaya sıralarına göre atıfta bulunulabilir; örneğin "Image 1", "Image 2", "Video 1" veya "Audio 1". | STRING | Evet | 1 - 50000 karakter |
+| `prompt` | Video üretimi için metin istemi. Referans medyaya sıralarına göre atıfta bulunulabilir; örneğin "@Image1", "@Image2", "@Video1" veya "@Audio1". | STRING | Evet | 1 - 50000 karakter |
 | `resolution` | Çıktı videosunun çözünürlüğü (varsayılan: "768P"). | COMBO | Evet | "480P"<br>"768P" |
 | `ratio` | Çıktı videosunun en-boy oranı (varsayılan: "adaptive"). | COMBO | Evet | "adaptive"<br>"16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9" |
 | `duration` | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5). | INT | Evet | 5 - 15 |
@@ -42,9 +42,9 @@ Bu referans girdileri her iki model tarafından paylaşılır. Her biri büyüt�
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `reference_images` | Büyütülebilir yuva: en fazla 9 öğe bağlayın (`image_1`...`image_9`). İstemde bağlantı sırasına göre "Image 1".."Image 9" olarak atıfta bulunulan konu veya stil referans görüntüleri. En fazla 9 görüntü. | IMAGE | Hayır | 0 - 9 görüntü |
-| `reference_videos` | Büyütülebilir yuva: en fazla 3 öğe bağlayın (`video_1`...`video_3`). İstemde bağlantı sırasına göre "Video 1".."Video 3" olarak atıfta bulunulan hareket veya sahne referans videoları. En fazla 3 video, her biri 2-15 saniye, toplam 15 saniye. | VIDEO | Hayır | 0 - 3 video |
-| `reference_audios` | Büyütülebilir yuva: en fazla 3 öğe bağlayın (`audio_1`...`audio_3`). İstemde bağlantı sırasına göre "Audio 1".."Audio 3" olarak atıfta bulunulan ses referansları. En fazla 3 klip, her biri 2-15 saniye, toplam 15 saniye. Bir referans görüntü veya video olmadan kullanılamaz. | AUDIO | Hayır | 0 - 3 klip |
+| `reference_images` | Büyütülebilir yuva: en fazla 9 öğe bağlayın (`image_1`...`image_9`). İstemde bağlantı sırasına göre "@Image1".."@Image9" olarak atıfta bulunulan konu veya stil referans görüntüleri. En fazla 9 görüntü. | IMAGE | Hayır | 0 - 9 görüntü |
+| `reference_videos` | Büyütülebilir yuva: en fazla 3 öğe bağlayın (`video_1`...`video_3`). İstemde bağlantı sırasına göre "@Video1".."@Video3" olarak atıfta bulunulan hareket veya sahne referans videoları. En fazla 3 video, her biri 2-15 saniye, toplam 15 saniye. | VIDEO | Hayır | 0 - 3 video |
+| `reference_audios` | Büyütülebilir yuva: en fazla 3 öğe bağlayın (`audio_1`...`audio_3`). İstemde bağlantı sırasına göre "@Audio1".."@Audio3" olarak atıfta bulunulan ses referansları. En fazla 3 klip, her biri 2-15 saniye, toplam 15 saniye. Bir referans görüntü veya video olmadan kullanılamaz. | AUDIO | Hayır | 0 - 3 klip |
 
 ### Parametre Kısıtlamaları
 
@@ -64,4 +64,4 @@ Bu referans girdileri her iki model tarafından paylaşılır. Her biri büyüt�
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxHailuo03ReferenceNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `b77eedb1f7757e60518c04484f1cc24c27cf6886b3ae31c15207ea49fd436a73`
+**Source fingerprint (SHA-256):** `4c0dfb349809b51393b8ec8afd235977f1822c0c8ae6dc42a2c264271bb50b53`
