@@ -7,7 +7,7 @@ Der Node Nano Banana 2 erzeugt oder bearbeitet Bilder synchron über die Google 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Text-Prompt, der das zu generierende Bild oder die anzuwendenden Bearbeitungen beschreibt. Geben Sie alle Einschränkungen, Stile oder Details an, die das Modell befolgen soll. Darf nicht leer sein oder nur aus Leerzeichen bestehen. (Standard: leer) | STRING | Ja | N/A |
-| `model` | Das Gemini-Modell, das für die Bilderzeugung verwendet werden soll. | COMBO | Ja | "Nano Banana 2 (Gemini 3.1 Flash Image)" |
+| `model` | Das Gemini-Modell, das für die Bilderzeugung verwendet werden soll. | COMBO | Ja | "Nano Banana 2 (Gemini 3.1 Flash Bild)" |
 | `seed` | Wenn der Seed auf einen bestimmten Wert festgelegt ist, bemüht sich das Modell nach besten Kräften, bei wiederholten Anfragen die gleiche Antwort zu liefern. Eine deterministische Ausgabe ist nicht garantiert. Außerdem können Änderungen am Modell oder an Parametereinstellungen wie der Temperatur selbst bei Verwendung desselben Seed-Werts zu Abweichungen in der Antwort führen. Standardmäßig wird ein zufälliger Seed-Wert verwendet. (Standard: 42) | INT | Ja | 0 bis 18446744073709551615 |
 | `aspect_ratio` | Wenn auf 'auto' gesetzt, wird das Seitenverhältnis Ihres Eingabebilds übernommen; wenn kein Bild bereitgestellt wird, wird üblicherweise ein Bild im Format 16:9 erzeugt. (Standard: "auto") | COMBO | Ja | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"4:5"<br>"5:4"<br>"9:16"<br>"16:9"<br>"21:9" |
 | `resolution` | Zielauflösung der Ausgabe. Für 2K/4K wird der native Gemini-Upscaler verwendet. | COMBO | Ja | "1K"<br>"2K"<br>"4K" |

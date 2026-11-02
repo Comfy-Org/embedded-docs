@@ -9,7 +9,7 @@ Codifica una instrucción de edición junto con imágenes de referencia en el co
 | `clip` | El modelo CLIP que tokeniza la instrucción y la codifica. | CLIP | Sí | - |
 | `prompt` | La instrucción que describe la edición. Admite texto multilínea y prompts dinámicos. | STRING | Sí | Cualquier texto |
 | `vae` | El VAE utilizado para codificar las imágenes de referencia en latentes de referencia. Opcional: sin él, las imágenes solo van al codificador de texto.| VAE | No | - |
-| `edit_format` | El formato con el que se entrenó el LoRA de edición. Selecciona el método de latentes de referencia y si el codificador de texto también ve las referencias. | COMBO | Sí | `"ai-toolkit"`<br>`"ai-toolkit (kv_cache off)"`<br>`"Moss-Image-Edit"` |
+| `edit_format` | El formato con el que se entrenó el LoRA de edición. Selecciona el método de latentes de referencia y si el codificador de texto también ve las referencias. | COMBO | Sí | `"ai-toolkit"`<br>`"ai-toolkit (kv_cache off)"`<br>`"Moss-Imagen-Edit"` |
 | `images` | Ranura ampliable: conecta una o más imágenes de referencia (`image_1`, `image_2`, ...). Cada imagen se utiliza con el tamaño con el que llega, se le quita el canal alfa y se codifica con VAE en un latente de referencia. Con un VAE conectado se quita el canal alfa y cada imagen se codifica en un latente de referencia; sin VAE, las imágenes solo van al codificador de texto.| IMAGE | Sí | 1 o más imágenes |
 | `image_strength` | Escala cuánto atiende el modelo a las imágenes que ve el codificador de texto (formatos ai-toolkit, o sin VAE): 0 las ignora, 1 sin cambios, por encima de 1 las enfatiza. Avanzado. Predeterminado: 1.0. | FLOAT | Sí | 0.0 a 100.0 (paso: 0.05) |
 

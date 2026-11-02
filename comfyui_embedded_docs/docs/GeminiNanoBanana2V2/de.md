@@ -8,7 +8,7 @@ Dieser Node generiert oder bearbeitet Bilder, indem er einen Text-Prompt über G
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Wählt das zu verwendende Gemini-Bildmodell aus. Das gewählte Modell bestimmt die verfügbaren Auflösungsoptionen und modellspezifischen Eingaben. | DYNAMIC_COMBO | Ja | `"Gemini Nano Banana 2.1"`<br>`"Nano Banana 2 (Gemini 3.1 Flash Image)"`<br>`"Nano Banana 2 Lite"` |
+| `model` | Wählt das zu verwendende Gemini-Bildmodell aus. Das gewählte Modell bestimmt die verfügbaren Auflösungsoptionen und modellspezifischen Eingaben. | DYNAMIC_COMBO | Ja | `"Gemini Nano Banana 2.1"`<br>`"Nano Banana 2 (Gemini 3.1 Flash Bild)"`<br>`"Nano Banana 2 Lite"` |
 | `prompt` | Text-Prompt, der das zu generierende Bild oder die anzuwendenden Bearbeitungen beschreibt. Fügen Sie alle Einschränkungen, Stile oder Details hinzu, die das Modell befolgen soll. Darf nicht leer sein. (Standard: leer) | STRING | Ja | N/A |
 | `seed` | Wenn der Seed auf einen bestimmten Wert festgelegt ist, bemüht sich das Modell, bei wiederholten Anfragen die gleiche Antwort zu liefern. Eine deterministische Ausgabe ist nicht garantiert. Außerdem können Änderungen am Modell oder an Parametereinstellungen wie der Temperatur zu Abweichungen in der Antwort führen, selbst wenn derselbe Seed-Wert verwendet wird. Standardmäßig wird ein zufälliger Seed-Wert verwendet. (Standard: 42) | INT | Ja | 0 bis 18446744073709551615 |
 | `response_modalities` | Bestimmt das Antwortformat. IMAGE gibt nur ein Bild zurück; IMAGE+TEXT gibt ein Bild und eine Textantwort zurück. (Standard: IMAGE) Erweiterter Parameter. | COMBO | Ja | `"IMAGE"`<br>`"IMAGE+TEXT"` |

@@ -9,9 +9,9 @@ Le nœud HunyuanVideo15ImageToVideo prépare les données de conditionnement et 
 | `positif` | Les prompts de conditionnement positif qui décrivent ce que la vidéo doit contenir. | CONDITIONING | Oui | - |
 | `négatif` | Les prompts de conditionnement négatif qui décrivent ce que la vidéo doit éviter. | CONDITIONING | Oui | - |
 | `vae` | Le modèle VAE (autoencodeur variationnel) utilisé pour encoder l’image de départ dans l’espace latent. | VAE | Oui | - |
-| `largeur` | La largeur des images vidéo de sortie en pixels. Doit être divisible par 16. (par défaut : 848) | INT | Oui | 16 to MAX_RESOLUTION, step: 16 |
-| `hauteur` | La hauteur des images vidéo de sortie en pixels. Doit être divisible par 16. (par défaut : 480) | INT | Oui | 16 to MAX_RESOLUTION, step: 16 |
-| `longueur` | Le nombre total d’images dans la séquence vidéo. Les valeurs augmentent par pas de 4 à partir de 1 (1, 5, 9, 13, ...). (par défaut : 33) | INT | Oui | 1 to MAX_RESOLUTION, step: 4 |
+| `largeur` | La largeur des images vidéo de sortie en pixels. Doit être divisible par 16. (par défaut : 848) | INT | Oui | 16 à MAX_RESOLUTION, pas: 16 |
+| `hauteur` | La hauteur des images vidéo de sortie en pixels. Doit être divisible par 16. (par défaut : 480) | INT | Oui | 16 à MAX_RESOLUTION, pas: 16 |
+| `longueur` | Le nombre total d’images dans la séquence vidéo. Les valeurs augmentent par pas de 4 à partir de 1 (1, 5, 9, 13, ...). (par défaut : 33) | INT | Oui | 1 à MAX_RESOLUTION, pas: 4 |
 | `taille_du_lot` | Le nombre de séquences vidéo à générer en un seul lot. (par défaut : 1) | INT | Oui | 1 à 4096 |
 | `image_de_départ` | Une image de départ facultative pour initialiser la génération vidéo. Si elle est fournie, elle est encodée et utilisée pour conditionner les premières images. Seules les premières images `length` de l’image sont utilisées. | IMAGE | Non | - |
 | `clip_vision_output` | Embeddings de vision CLIP facultatifs pour fournir un conditionnement visuel supplémentaire à la génération. | CLIP_VISION_OUTPUT | Non | - |

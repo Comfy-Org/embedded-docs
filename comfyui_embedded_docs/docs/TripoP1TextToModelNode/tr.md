@@ -9,8 +9,8 @@ Tripo P1 metinden 3B'ye. Bu düğüm, Tripo P1 API'sini kullanarak bir metin aç
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `çıktı_modu` | Oluşturulan modelin yalnızca geometri mi yoksa renk/PBR dokularını da mı içereceğini kontrol eder. `"Geometry only"` doku içermeyen bir mesh döndürür. `"Textured"` renk/PBR haritaları ekler ve aşağıdaki doku seçeneklerini gösterir. | DYNAMIC_COMBO | Evet | `"Geometry only"`<br>`"Textured"` |
-| `istem` | Oluşturmak istediğiniz 3B modelin metin açıklaması. En fazla 1024 karakter. Gereklidir ve boş olamaz. | STRING | Evet | Up to 1024 characters |
-| `negatif_istem` | Oluşturulan modelde istemediğiniz şeylerin metin açıklaması. En fazla 255 karakter. Varsayılan: ayarlanmamış. | STRING | Hayır | Up to 255 characters |
+| `istem` | Oluşturmak istediğiniz 3B modelin metin açıklaması. En fazla 1024 karakter. Gereklidir ve boş olamaz. | STRING | Evet | en fazla 1024 karakter |
+| `negatif_istem` | Oluşturulan modelde istemediğiniz şeylerin metin açıklaması. En fazla 255 karakter. Varsayılan: ayarlanmamış. | STRING | Hayır | en fazla 255 karakter |
 | `görüntü_tohumu` | Rastgeleliği kontrol etmek için kullanılan bir tohum değeri. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 |
 | `yüz_sınırı` | Hedef yüz sayısı, 48-20000. -1, Tripo'nun uyarlamalı olarak seçmesini sağlar. Varsayılan: -1. | INT | Hayır | -1 ile 20000 |
 | `model_tohumu` | Rastgeleliği kontrol etmek için kullanılan bir tohum değeri. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 |

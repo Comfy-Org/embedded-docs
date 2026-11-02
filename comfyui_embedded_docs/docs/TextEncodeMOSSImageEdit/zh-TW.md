@@ -9,7 +9,7 @@
 | `clip` | 用於將指令分詞並編碼的 CLIP 模型。 | CLIP | 是 | - |
 | `prompt` | 描述編輯操作的指令。支援多行文字與動態提示詞。 | STRING | 是 | 任意文字 |
 | `vae` | 將圖片編碼為編輯 LoRA 的參考 latent。選用：未連接時，圖片只會進入文字編碼器。 | VAE | 否 | - |
-| `edit_format` | 編輯 LoRA 訓練時所採用的配置。它會選擇參考 latent 方法，以及文字編碼器是否也會看到參考圖片。 | COMBO | 是 | `"ai-toolkit"`<br>`"ai-toolkit (kv_cache off)"`<br>`"Moss-Image-Edit"` |
+| `edit_format` | 編輯 LoRA 訓練時所採用的配置。它會選擇參考 latent 方法，以及文字編碼器是否也會看到參考圖片。 | COMBO | 是 | `"ai-toolkit"`<br>`"ai-toolkit (kv_cache off)"`<br>`"Moss-影像-Edit"` |
 | `images` | 可擴增插槽：連接一張或多張參考圖片（`image_1`、`image_2`、...）。每張圖片會以其傳入時的尺寸使用。連接了 VAE 時，會捨棄 alpha 通道並將每張圖片編碼成參考 latent；未連接 VAE 時，圖片只會進入文字編碼器。 | IMAGE | 是 | 1 張或以上圖片 |
 | `image_strength` | 縮放模型對文字編碼器所見圖片的關注程度（ai-toolkit 格式，或未連接 VAE）：0 表示忽略，1 表示不變，大於 1 表示加強。進階參數。預設：1.0。 | FLOAT | 是 | 0.0 到 100.0（步進 0.05） |
 

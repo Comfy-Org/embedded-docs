@@ -6,7 +6,7 @@ Bir 3D modeli ComfyUI çıktı dizinindeki bir dosyaya kaydeder ve kaydedilen sa
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|---------|--------|
-| `3D model` | Yukarı akış 3D düğümünden gelen 3D model dosyası. | FILE3D | Evet | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ<br>Any |
+| `3D model` | Yukarı akış 3D düğümünden gelen 3D model dosyası. | FILE3D | Evet | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ<br>Herhangi bir değer |
 | `dosya adı ön eki` | Kaydedilen dosya adı için kullanılan ön ek (varsayılan: "3d/ComfyUI"). | STRING | Evet | Serbest metin |
 | `görünüm durumu` | Kamera ve model yerleşim bilgilerini içeren görüntü alanı durumu; genellikle bir Load 3D düğümünden gelir. | LOAD3D | Evet | - |
 | `3D model bilgisi` | Sahnede her modelin yerleşimi: konum, dönüş ve ölçek (Y-up dünya uzayı). Bağlandığında `viewport_state` içinde saklanan model yerleşiminin yerine geçer. | LOAD3DMODELINFO | Hayır | - |

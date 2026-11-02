@@ -14,9 +14,9 @@
 | `positif` | Le conditionnement positif pour guider la génération. | CONDITIONING | Oui | - |
 | `négatif` | Le conditionnement négatif pour guider la génération. | CONDITIONING | Oui | - |
 | `vae` | Le VAE utilisé pour encoder les images vers et depuis l'espace latent. | VAE | Oui | - |
-| `largeur` | La largeur de la vidéo de sortie en pixels. Doit être divisible par 16. (par défaut : 832) | INT | Oui | 16 - MAX_RESOLUTION (step 16) |
-| `hauteur` | La hauteur de la vidéo de sortie en pixels. Doit être divisible par 16. (par défaut : 480) | INT | Oui | 16 - MAX_RESOLUTION (step 16) |
-| `longueur` | Le nombre d'images à générer. (par défaut : 81) | INT | Oui | 1 - MAX_RESOLUTION (step 4) |
+| `largeur` | La largeur de la vidéo de sortie en pixels. Doit être divisible par 16. (par défaut : 832) | INT | Oui | 16 - MAX_RESOLUTION (pas 16) |
+| `hauteur` | La hauteur de la vidéo de sortie en pixels. Doit être divisible par 16. (par défaut : 480) | INT | Oui | 16 - MAX_RESOLUTION (pas 16) |
+| `longueur` | Le nombre d'images à générer. (par défaut : 81) | INT | Oui | 1 - MAX_RESOLUTION (pas 4) |
 | `sortie vision clip` | Sortie de vision CLIP optionnelle pour un conditionnement supplémentaire. | CLIP_VISION_OUTPUT | Non | - |
 | `image de départ` | Image de départ optionnelle pour initialiser la séquence vidéo. | IMAGE | Non | - |
 | `sortie encodeur audio 1` | La sortie principale de l'encodeur audio contenant les caractéristiques du premier locuteur. | AUDIO_ENCODER_OUTPUT | Oui | - |

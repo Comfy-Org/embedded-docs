@@ -9,7 +9,7 @@ Bir düzenleme talimatını referans görsellerle birlikte MOSS-Image düzenleme
 | `clip` | Talimatı tokenize eden ve kodlayan CLIP modeli. | CLIP | Evet | - |
 | `prompt` | Düzenlemeyi tanımlayan talimat. Çok satırlı metin ve dinamik istemleri destekler. | STRING | Evet | Herhangi bir metin |
 | `vae` | Referans görselleri referans latentlerine kodlamak için kullanılan VAE. İsteğe bağlı: olmadan görseller yalnızca metin kodlayıcıya gider.| VAE | Hayır | - |
-| `edit_format` | Düzenleme LoRA'sının eğitildiği düzen. Referans latentleri yöntemini ve metin kodlayıcının referansları da görüp görmeyeceğini seçer. | COMBO | Evet | `"ai-toolkit"`<br>`"ai-toolkit (kv_cache off)"`<br>`"Moss-Image-Edit"` |
+| `edit_format` | Düzenleme LoRA'sının eğitildiği düzen. Referans latentleri yöntemini ve metin kodlayıcının referansları da görüp görmeyeceğini seçer. | COMBO | Evet | `"ai-toolkit"`<br>`"ai-toolkit (kv_cache off)"`<br>`"Moss-Görüntü-Edit"` |
 | `images` | Büyütülebilir yuva: bir veya daha fazla referans görseli bağlayın (`image_1`, `image_2`, ...). Her görsel geldiği boyutta kullanılır, alfa kanalı çıkarılır ve bir referans latentine VAE ile kodlanır. VAE bağlıysa alfa atılır ve her görsel referans latentine kodlanır; VAE yoksa görseller yalnızca metin kodlayıcıya gider.| IMAGE | Evet | 1 veya daha fazla görsel |
 | `image_strength` | Metin kodlayıcının gördüğü görsellere modelin ne kadar dikkat ettiğini ölçekler (ai-toolkit biçimleri veya VAE yok): 0 yok sayar, 1 değişmez, 1 üstü vurgular. Gelişmiş. Varsayılan: 1.0. | FLOAT | Evet | 0.0 ile 100.0 arası (adım: 0.05) |
 

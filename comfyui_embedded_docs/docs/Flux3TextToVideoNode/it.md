@@ -7,8 +7,8 @@ Genera un video con audio sincronizzato da un prompt testuale usando FLUX 3. Il 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `prompt` | Cosa vuoi ottenere, in linguaggio naturale; il prompt viene interpretato ed espanso prima della generazione. Descrivi separatamente suono ambientale, musica e parlato per un audio stratificato. (default: "") | STRING | Sì | Testo multiriga |
-| `aspect_ratio` | Proporzioni dell'output. 'auto' ne sceglie una dal prompt e dagli input. (default: "auto") | COMBO | Sì | Multiple options available, including `"auto"` |
-| `duration` | Durata della clip in secondi. 'auto' adatta la durata al contenuto. (default: "auto") | COMBO | Sì | Multiple options available, including `"auto"` |
+| `aspect_ratio` | Proporzioni dell'output. 'auto' ne sceglie una dal prompt e dagli input. (default: "auto") | COMBO | Sì | Diverse opzioni disponibili, including `"auto"` |
+| `duration` | Durata della clip in secondi. 'auto' adatta la durata al contenuto. (default: "auto") | COMBO | Sì | Diverse opzioni disponibili, including `"auto"` |
 | `resolution` | Risoluzione dell'output. (default: "720p") | COMBO | Sì | `"720p"`<br>`"1080p"` |
 | `generate_audio` | Genera audio sincronizzato (ambientale, parlato, effetti). Disattivato produce un video senza traccia audio. (default: True) | BOOLEAN | Sì | True<br>False |
 | `safety_tolerance` | Tolleranza di moderazione, 0 è la più severa. Le richieste che inviano immagini o video sono limitate a 2 indipendentemente da quanto impostato qui. (default: 2) | INT | Sì | 0 a 4 |

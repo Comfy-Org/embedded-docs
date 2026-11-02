@@ -8,7 +8,7 @@ Bu düğüm, Google'ın Vertex AI API'sine Gemini görüntü modelleri üzerinde
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Kullanılacak Gemini görüntü modelini seçer. Seçilen model, kullanılabilir çözünürlük seçeneklerini ve modele özgü girdileri belirler. | DYNAMIC_COMBO | Evet | `"Gemini Nano Banana 2.1"`<br>`"Nano Banana 2 (Gemini 3.1 Flash Image)"`<br>`"Nano Banana 2 Lite"` |
+| `model` | Kullanılacak Gemini görüntü modelini seçer. Seçilen model, kullanılabilir çözünürlük seçeneklerini ve modele özgü girdileri belirler. | DYNAMIC_COMBO | Evet | `"Gemini Nano Banana 2.1"`<br>`"Nano Banana 2 (Gemini 3.1 Flash Görüntü)"`<br>`"Nano Banana 2 Lite"` |
 | `prompt` | Oluşturulacak görüntüyü veya uygulanacak düzenlemeleri tanımlayan metin istemi. Modelin izlemesi gereken kısıtlamaları, stilleri veya ayrıntıları ekleyin. Boş olmamalıdır. (varsayılan: boş) | STRING | Evet | N/A |
 | `seed` | Seed belirli bir değere sabitlendiğinde, model tekrarlanan isteklerde aynı yanıtı sağlamak için elinden geleni yapar. Deterministik çıktı garanti edilmez. Ayrıca, aynı seed değerini kullansanız bile modeli veya sıcaklık gibi parametre ayarlarını değiştirmek yanıtta farklılıklara neden olabilir. Varsayılan olarak rastgele bir seed değeri kullanılır. (varsayılan: 42) | INT | Evet | 0 ile 18446744073709551615 arası |
 | `response_modalities` | Yanıt biçimini belirler. IMAGE yalnızca bir görüntü döndürür; IMAGE+TEXT bir görüntü ve bir metin yanıtı döndürür. (varsayılan: IMAGE) Gelişmiş parametre. | COMBO | Evet | `"IMAGE"`<br>`"IMAGE+TEXT"` |

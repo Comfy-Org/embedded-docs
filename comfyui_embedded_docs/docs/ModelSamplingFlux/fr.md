@@ -7,10 +7,10 @@ Le nœud ModelSamplingFlux applique l'échantillonnage Flux à un modèle donné
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `modèle` | Le modèle auquel appliquer l'échantillonnage Flux | MODEL | Oui | - |
-| `décalage_max` | Valeur de décalage maximale pour le calcul d'échantillonnage (défaut : 1.15) | FLOAT | Oui | 0.0 - 100.0 (step 0.01) |
-| `décalage_base` | Valeur de décalage de base pour le calcul d'échantillonnage (défaut : 0.5) | FLOAT | Oui | 0.0 - 100.0 (step 0.01) |
-| `largeur` | Largeur de l'image cible en pixels (défaut : 1024) | INT | Oui | 16 - MAX_RESOLUTION (step 8) |
-| `hauteur` | Hauteur de l'image cible en pixels (défaut : 1024) | INT | Oui | 16 - MAX_RESOLUTION (step 8) |
+| `décalage_max` | Valeur de décalage maximale pour le calcul d'échantillonnage (défaut : 1.15) | FLOAT | Oui | 0.0 - 100.0 (pas 0.01) |
+| `décalage_base` | Valeur de décalage de base pour le calcul d'échantillonnage (défaut : 0.5) | FLOAT | Oui | 0.0 - 100.0 (pas 0.01) |
+| `largeur` | Largeur de l'image cible en pixels (défaut : 1024) | INT | Oui | 16 - MAX_RESOLUTION (pas 8) |
+| `hauteur` | Hauteur de l'image cible en pixels (défaut : 1024) | INT | Oui | 16 - MAX_RESOLUTION (pas 8) |
 
 `max_shift` et `base_shift` sont des paramètres avancés. Le décalage appliqué à la configuration d'échantillonnage est calculé à partir des dimensions de l'image : la résolution latente est calculée comme `width × height / 256`, et la valeur de décalage est interpolée entre `base_shift` à une résolution latente de 256 et `max_shift` à une résolution latente de 4096.
 

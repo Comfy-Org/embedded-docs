@@ -7,9 +7,9 @@ CosmosImageToVideoLatent düğümü, giriş görüntülerinden bir video latent 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `vae` | Görüntüleri video latent uzayına kodlamak için kullanılan VAE modeli. | VAE | Evet | - |
-| `genişlik` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 1280). | INT | Evet | 16 to MAX_RESOLUTION (step: 16) |
-| `yükseklik` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 704). | INT | Evet | 16 to MAX_RESOLUTION (step: 16) |
-| `uzunluk` | Videodaki toplam kare sayısı (varsayılan: 121). | INT | Evet | 1 to MAX_RESOLUTION (step: 8) |
+| `genişlik` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 1280). | INT | Evet | 16 ile MAX_RESOLUTION arası (adım: 16) |
+| `yükseklik` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 704). | INT | Evet | 16 ile MAX_RESOLUTION arası (adım: 16) |
+| `uzunluk` | Videodaki toplam kare sayısı (varsayılan: 121). | INT | Evet | 1 ile MAX_RESOLUTION arası (adım: 8) |
 | `toplu_boyut` | Oluşturulacak video latentlerinin sayısı (varsayılan: 1). | INT | Evet | 1 ile 4096 |
 | `başlangıç_görüntüsü` | Videonun başlangıcına kodlanacak isteğe bağlı görüntü veya görüntü dizisi. | IMAGE | Hayır | - |
 | `bitiş_görüntüsü` | Videonun sonuna kodlanacak isteğe bağlı görüntü veya görüntü dizisi. | IMAGE | Hayır | - |

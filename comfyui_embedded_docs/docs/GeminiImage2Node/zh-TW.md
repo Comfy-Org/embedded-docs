@@ -7,7 +7,7 @@
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | 描述要生成之影像或要套用之編輯的文字提示。請包含模型應遵循的任何限制、風格或細節。移除空白後，提示必須至少包含一個字元。 | STRING | 是 | N/A |
-| `model` | 用於生成的 Gemini 模型。「Nano Banana 2 (Gemini 3.1 Flash Image)」選項會以 `gemini-3.1-flash-image` 傳送；「gemini-3-pro-image-preview」會以 `gemini-3-pro-image` 傳送。 | COMBO | 是 | "gemini-3-pro-image-preview"<br>"Nano Banana 2 (Gemini 3.1 Flash Image)" |
+| `model` | 用於生成的 Gemini 模型。「Nano Banana 2 (Gemini 3.1 Flash Image)」選項會以 `gemini-3.1-flash-image` 傳送；「gemini-3-pro-image-preview」會以 `gemini-3-pro-image` 傳送。 | COMBO | 是 | "gemini-3-pro-image-preview"<br>"Nano Banana 2 (Gemini 3.1 Flash 影像)" |
 | `seed` | 當 `seed` 固定為特定值時，模型會盡最大努力對重複請求提供相同回應。不保證輸出具有確定性。此外，即使使用相同的 `seed` 值，變更模型或參數設定（例如 temperature）也可能導致回應出現變化。預設會使用隨機 `seed` 值。預設值：42。 | INT | 是 | 0 至 18446744073709551615 |
 | `aspect_ratio` | 若設為 `"auto"`，會符合輸入影像的長寬比；若未提供影像，通常會生成 16:9 的影像。預設值：`"auto"`。 | COMBO | 是 | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"4:5"<br>"5:4"<br>"9:16"<br>"16:9"<br>"21:9" |
 | `resolution` | 目標輸出解析度。2K/4K 會使用 Gemini 原生升頻器。 | COMBO | 是 | "1K"<br>"2K"<br>"4K" |

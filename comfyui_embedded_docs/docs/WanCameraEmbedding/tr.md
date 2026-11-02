@@ -7,9 +7,9 @@ Bu düğüm, seçtiğiniz kamera yolu için Plücker gömlemelerini kullanarak b
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `kamera_pozisyonu` | Simüle edilecek kamera hareketi türü (varsayılan: "Static") | COMBO | Evet | "Static"<br>"Pan Up"<br>"Pan Down"<br>"Pan Left"<br>"Pan Right"<br>"Zoom In"<br>"Zoom Out"<br>"Anti Clockwise (ACW)"<br>"ClockWise (CW)" |
-| `genişlik` | Çıktının piksel cinsinden genişliği (varsayılan: 832, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
-| `yükseklik` | Çıktının piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
-| `uzunluk` | Kamera yörünge dizisinin uzunluğu (varsayılan: 81, adım: 4) | INT | Evet | 1 to MAX_RESOLUTION |
+| `genişlik` | Çıktının piksel cinsinden genişliği (varsayılan: 832, adım: 16) | INT | Evet | 16 ile MAX_RESOLUTION arası |
+| `yükseklik` | Çıktının piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 ile MAX_RESOLUTION arası |
+| `uzunluk` | Kamera yörünge dizisinin uzunluğu (varsayılan: 81, adım: 4) | INT | Evet | 1 ile MAX_RESOLUTION arası |
 | `hız` | Kamera hareketinin hızı (varsayılan: 1.0, adım: 0.1) | FLOAT | Hayır | 0.0 ile 10.0 |
 | `fx` | Odak uzaklığı x parametresi (varsayılan: 0.5, adım: 0.000000001) | FLOAT | Hayır | 0.0 ile 1.0 |
 | `fy` | Odak uzaklığı y parametresi (varsayılan: 0.5, adım: 0.000000001) | FLOAT | Hayır | 0.0 ile 1.0 |
