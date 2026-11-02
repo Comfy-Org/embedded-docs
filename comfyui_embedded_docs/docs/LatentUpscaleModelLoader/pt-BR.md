@@ -1,6 +1,6 @@
 # Carregar Modelo de Upscale Latent
 
-O nó LatentUpscaleModelLoader carrega um modelo especializado em upscale de representações latentes a partir de um arquivo armazenado na pasta `latent_upscale_models` do ComfyUI. Ele detecta automaticamente a arquitetura do modelo a partir do conteúdo do arquivo (Hunyuan Video 720p, Hunyuan Video 1080p ou um Latent Upsampler) e configura o modelo interno correspondente, de modo que o resultado esteja pronto para ser usado por outros nós.
+O nó LatentUpscaleModelLoader carrega um modelo especializado em upscale de representações latentes a partir de um arquivo armazenado na pasta `latent_upscale_models` do ComfyUI. Ele detecta automaticamente a arquitetura do modelo a partir do conteúdo do arquivo (Hunyuan Video 720p, Hunyuan Video 1080p ou um Latent Upsampler) e configura o modelo interno correspondente, de modo que o resultado esteja pronto para ser usado por outros nós.Ele também detecta os modelos de upscale latente MiniMax H3 e configura para eles o upscaler latente MiniMax H3.
 
 ## Entradas
 
@@ -12,9 +12,9 @@ O nó LatentUpscaleModelLoader carrega um modelo especializado em upscale de rep
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `model` | O modelo de upscale latente carregado, configurado e pronto para uso. Dependendo do conteúdo detectado no arquivo, este é um upscaler Hunyuan Video 720p, um upscaler Hunyuan Video 1080p ou um modelo Latent Upsampler encapsulado. | LATENT_UPSCALE_MODEL |
+| `model` | O modelo de upscale latente carregado, configurado e pronto para uso. Dependendo do conteúdo detectado no arquivo, este é um upscaler Hunyuan Video 720p, um upscaler Hunyuan Video 1080p ou um modelo Latent Upsampler encapsulado.Um modelo de upscale latente MiniMax H3 é carregado como upscaler latente MiniMax H3. | LATENT_UPSCALE_MODEL |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentUpscaleModelLoader/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `7e23214b1b1fc11be84910a5a209c7990a5199120cb0e6b6c61302a442dcf153`
+**Source fingerprint (SHA-256):** `3de8e009e6ce777815db462117cdebf57842cdc6dd43b6760490e5d9ef8ed138`
