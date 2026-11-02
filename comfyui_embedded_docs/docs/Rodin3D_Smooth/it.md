@@ -7,7 +7,7 @@ Il nodo Rodin 3D Smooth genera asset 3D utilizzando l'API Rodin, elaborando imma
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `Images` | Immagini di input da utilizzare per la generazione del modello 3D. È possibile fornire più immagini (fino a 5). | IMAGE | Sì | - |
-| `Seed` | Valore di seed casuale per la coerenza della generazione (predefinito: 0). | INT | No | 0 to 65535 |
+| `Seed` | Valore di seed casuale per la coerenza della generazione (predefinito: 0). | INT | No | 0 a 65535 |
 | `Material_Type` | Tipo di materiale da applicare al modello 3D (predefinito: "PBR"). | STRING | No | "PBR"<br>"Shaded" |
 | `Polygon_count` | Numero target di poligoni per il modello 3D generato. Determina la qualità della mesh e il livello di dettaglio (predefinito: "18K-Quad"). | STRING | No | "4K-Quad"<br>"8K-Quad"<br>"18K-Quad"<br>"50K-Quad"<br>"200K-Triangle" |
 

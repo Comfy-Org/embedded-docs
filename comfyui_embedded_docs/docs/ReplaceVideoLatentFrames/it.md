@@ -8,7 +8,7 @@ ReplaceVideoLatentFrames sostituisce un intervallo di fotogrammi in un video lat
 | --- | --- | --- | --- | --- |
 | `destination` | Il latente di destinazione in cui verranno sostituiti i fotogrammi. | LATENT | Sì | - |
 | `source` | Il latente sorgente che fornisce i fotogrammi da inserire nel latente di destinazione. Se non fornito, il latente di destinazione viene restituito invariato. | LATENT | No | - |
-| `index` | L'indice del fotogramma latente iniziale nel latente di destinazione in cui verranno posizionati i fotogrammi del latente sorgente. I valori negativi contano dalla fine (predefinito: 0; passo: 1). | INT | Sì | -MAX_RESOLUTION to MAX_RESOLUTION |
+| `index` | L'indice del fotogramma latente iniziale nel latente di destinazione in cui verranno posizionati i fotogrammi del latente sorgente. I valori negativi contano dalla fine (predefinito: 0; passo: 1). | INT | Sì | -MAX_RESOLUTION a MAX_RESOLUTION |
 
 **Vincoli:**
 

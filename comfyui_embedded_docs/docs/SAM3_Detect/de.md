@@ -14,8 +14,8 @@ Der Node SAM3 Detect führt Open-Vocabulary-Erkennung und Segmentierung mithilfe
 | `bboxes` | Bounding-Boxen, innerhalb derer segmentiert werden soll. Kann eine einzelne Box (auf alle Frames angewendet), eine Liste von Boxen (auf alle Frames angewendet) oder eine Liste von Listen (Boxen pro Frame) sein. Wenn sie ohne Text-Konditionierung bereitgestellt werden, segmentiert der Node innerhalb jeder Box | BOUNDING_BOX | Nein | - |
 | `positive_coords` | Positive Punkt-Prompts im JSON-Format `[{"x": int, "y": int}, ...]` mit Pixelkoordinaten. Dies sind Punkte, die in die Segmentierung einbezogen werden sollen | STRING | Nein | - |
 | `negative_coords` | Negative Punkt-Prompts im JSON-Format `[{"x": int, "y": int}, ...]` mit Pixelkoordinaten. Dies sind Punkte, die aus der Segmentierung ausgeschlossen werden sollen | STRING | Nein | - |
-| `threshold` | Konfidenzschwellenwert für textbasierte Erkennungen. Nur Erkennungen mit Scores über diesem Wert werden beibehalten (Standard: 0.5) | FLOAT | Nein | 0.0 to 1.0 |
-| `refine_iterations` | Anzahl der SAM-Decoder-Verfeinerungsdurchläufe. Höhere Werte können die Maskenqualität verbessern. Auf 0 setzen, um rohe Detektor-Masken ohne Verfeinerung zu verwenden (Standard: 2) | INT | Nein | 0 to 5 |
+| `threshold` | Konfidenzschwellenwert für textbasierte Erkennungen. Nur Erkennungen mit Scores über diesem Wert werden beibehalten (Standard: 0.5) | FLOAT | Nein | 0.0 bis 1.0 |
+| `refine_iterations` | Anzahl der SAM-Decoder-Verfeinerungsdurchläufe. Höhere Werte können die Maskenqualität verbessern. Auf 0 setzen, um rohe Detektor-Masken ohne Verfeinerung zu verwenden (Standard: 2) | INT | Nein | 0 bis 5 |
 | `individual_masks` | Wenn aktiviert, werden separate Masken für jedes erkannte Objekt ausgegeben, anstatt sie zu einer einzigen Maske zusammenzufassen (Standard: False) | BOOLEAN | Nein | True/False |
 
 ### Parameterbeschränkungen und Hinweise

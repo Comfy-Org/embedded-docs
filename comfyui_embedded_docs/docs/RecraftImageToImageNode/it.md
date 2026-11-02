@@ -9,7 +9,7 @@ Questo nodo modifica un'immagine esistente in base a un prompt testuale e a un'i
 | `image` | L'immagine di input da modificare. Quando viene fornito un batch di immagini, ogni immagine viene elaborata individualmente. | IMAGE | Sì | - |
 | `prompt` | Prompt per la generazione dell'immagine. Predefinito: stringa vuota. Lunghezza massima: 1000 caratteri. | STRING | Sì | - |
 | `n` | Il numero di immagini da generare. Predefinito: 1. | INT | Sì | 1-6 |
-| `strength` | Definisce la differenza con l'immagine originale, deve essere compreso in [0, 1], dove 0 significa quasi identica, e 1 significa similarità minima. Predefinito: 0.5. | FLOAT | Sì | 0.0-1.0 (step 0.01) |
+| `strength` | Definisce la differenza con l'immagine originale, deve essere compreso in [0, 1], dove 0 significa quasi identica, e 1 significa similarità minima. Predefinito: 0.5. | FLOAT | Sì | 0.0-1.0 (passo: 0.01) |
 | `seed` | Seed per determinare se il nodo deve essere rieseguito; i risultati effettivi sono non deterministici indipendentemente dal seed. Predefinito: 0. | INT | Sì | 0-18446744073709551615 |
 | `recraft_style` | Selezione opzionale dello stile per la generazione dell'immagine. Se non fornito, il valore predefinito è `realistic_image`. | STYLEV3 | No | - |
 | `negative_prompt` | Descrizione testuale opzionale di elementi indesiderati su un'immagine. Predefinito: stringa vuota. Fornito come socket di input. | STRING | No | - |

@@ -8,7 +8,7 @@ Genera video in modo sincrono basandosi su un prompt testuale e parametri opzion
 |-----------|-------------|-----------|----------|-------|
 | `prompt_text` | Prompt testuale per guidare la generazione del video | STRING | Sì | - |
 | `model` | Modello da utilizzare per la generazione del video (predefinito: "T2V-01") | COMBO | No | "T2V-01"<br>"T2V-01-Director" |
-| `seed` | Il seme casuale utilizzato per creare il rumore (predefinito: 0) | INT | No | 0 to 18446744073709551615 |
+| `seed` | Il seme casuale utilizzato per creare il rumore (predefinito: 0) | INT | No | 0 a 18446744073709551615 |
 
 ## Output
 

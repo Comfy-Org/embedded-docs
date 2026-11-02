@@ -9,7 +9,7 @@
 | `latents` | רשימת מילוני latent מ-MakeTrainingDataset. | LATENT | כן | N/A |
 | `conditioning` | רשימת רשימות conditioning מ-MakeTrainingDataset. | CONDITIONING | כן | N/A |
 | `folder_name` | שם התיקייה שאליה לשמור את מערך הנתונים, בתוך ספריית datasets. תתי-תיקיות כגון 'project/run1' מותרות. (ברירת מחדל: "training_dataset") | STRING | כן | N/A |
-| `shard_size` | מספר הדגימות לכל קובץ shard. (ברירת מחדל: 1000) | INT | כן | 1 to 100000 |
+| `shard_size` | מספר הדגימות לכל קובץ shard. (ברירת מחדל: 1000) | INT | כן | 1 עד 100000 |
 
 **הערה:** מספר הפריטים ב-`latents` חייב להתאים בדיוק למספר הפריטים ב-`conditioning`; הצומת מעלה שגיאה אם מספרים אלה אינם תואמים. `folder_name` חייב לציין תת-תיקייה של ספריית datasets (לדוגמה `my_dataset`) — הוא לא יכול להיות ספריית datasets עצמה, ושמות תיקיות שהיו נפתרים מחוץ לספריית datasets נדחים. הפרמטר `shard_size` הוא הגדרה מתקדמת.
 

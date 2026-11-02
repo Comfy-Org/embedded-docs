@@ -10,7 +10,7 @@ Erzeugt Videos aus Text-Prompts mithilfe der Veo-3-API von Google. Dieser Node u
 | `aspect_ratio` | Seitenverhältnis des Ausgabevideos (Standard: "16:9") | COMBO | Ja | "16:9"<br>"9:16" |
 | `resolution` | Auflösung des Ausgabevideos. 4K ist für das Modell veo-3.1-lite nicht verfügbar. (Standard: "720p") | COMBO | Nein | "720p"<br>"1080p"<br>"4k" |
 | `negative_prompt` | Negativer Text-Prompt zur Steuerung, was im Video vermieden werden soll (Standard: "") | STRING | Nein | - |
-| `duration_seconds` | Dauer des Ausgabevideos in Sekunden (Standard: 8) | INT | Nein | 4 - 8 (step 2) |
+| `duration_seconds` | Dauer des Ausgabevideos in Sekunden (Standard: 8) | INT | Nein | 4 - 8 (Schritt: 2) |
 | `enhance_prompt` | Dieser Parameter ist veraltet und wird ignoriert. (Standard: True) | BOOLEAN | Nein | - |
 | `person_generation` | Ob die Erzeugung von Personen im Video erlaubt werden soll (Standard: "ALLOW") | COMBO | Nein | "ALLOW"<br>"BLOCK" |
 | `seed` | Seed für die Videoerzeugung (0 für zufällig) (Standard: 0) | INT | Nein | 0 - 4294967295 |

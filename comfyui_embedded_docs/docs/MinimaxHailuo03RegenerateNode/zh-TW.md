@@ -9,25 +9,25 @@
 | 參數 | 說明 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | 用於影片重新生成的模型。選擇 "MiniMax H3" 會顯示提示詞、解析度與參考媒體設定。 | DYNAMIC_COMBO | 是 | "MiniMax H3" |
-| `video` | 要重新渲染的 MiniMax H3 768P 輸出影片。連接 MiniMax H3 影片節點未經修改的輸出（24 FPS，4-15 秒）。無法使用 2K 輸出。 | VIDEO | 是 | 24 FPS, 4-15 seconds |
-| `first_frame` | 原始生成時使用的首幀影像（若有使用）。 | IMAGE | 否 | Image |
-| `last_frame` | 原始生成時使用的尾幀影像（若有使用）。 | IMAGE | 否 | Image |
+| `video` | 要重新渲染的 MiniMax H3 768P 輸出影片。連接 MiniMax H3 影片節點未經修改的輸出（24 FPS，4-15 秒）。無法使用 2K 輸出。 | VIDEO | 是 | 24 FPS, 4-15 秒 |
+| `first_frame` | 原始生成時使用的首幀影像（若有使用）。 | IMAGE | 否 | 影像 |
+| `last_frame` | 原始生成時使用的尾幀影像（若有使用）。 | IMAGE | 否 | 影像 |
 | `watermark` | 是否要在影片中加入 AIGC 浮水印。預設為 false。 | BOOLEAN | 是 | false / true |
 
 ### MiniMax H3 輸入
 
 | 參數 | 說明 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | 用於生成來源影片的完全相同提示詞。不得為空。 | STRING | 是 | Text (multiline) |
+| `prompt` | 用於生成來源影片的完全相同提示詞。不得為空。 | STRING | 是 | 多行文字 |
 | `resolution` | 要將來源影片重新渲染成的解析度。 | COMBO | 是 | "2K" |
 
 ### 參考輸入
 
 | 參數 | 說明 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `reference_images` | 可擴充插槽：連接 `image_1` 至 `image_9`（最多 9 張影像）。原始生成時使用的參考影像，順序需相同。 | IMAGE | 否 | 0-9 images |
-| `reference_videos` | 可擴充插槽：連接 `video_1` 至 `video_3`（最多 3 部影片）。原始生成時使用的參考影片，順序需相同。 | VIDEO | 否 | 0-3 videos |
-| `reference_audios` | 可擴充插槽：連接 `audio_1` 至 `audio_3`（最多 3 段音訊）。原始生成時使用的音訊參考，順序需相同。若沒有參考影像或影片則無法使用。 | AUDIO | 否 | 0-3 clips |
+| `reference_images` | 可擴充插槽：連接 `image_1` 至 `image_9`（最多 9 張影像）。原始生成時使用的參考影像，順序需相同。 | IMAGE | 否 | 0-9 張影像 |
+| `reference_videos` | 可擴充插槽：連接 `video_1` 至 `video_3`（最多 3 部影片）。原始生成時使用的參考影片，順序需相同。 | VIDEO | 否 | 0-3 個影片 |
+| `reference_audios` | 可擴充插槽：連接 `audio_1` 至 `audio_3`（最多 3 段音訊）。原始生成時使用的音訊參考，順序需相同。若沒有參考影像或影片則無法使用。 | AUDIO | 否 | 0-3 段 |
 
 ### 限制
 

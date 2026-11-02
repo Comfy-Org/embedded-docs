@@ -9,7 +9,7 @@ MiniMax Music3 Text Encode verwendet ein MiniMax Music3 CLIP-Modell, um Textbesc
 | `clip` | Das MiniMax Music3 CLIP-Modell, das für die Textkodierung und die Generierung der Konditionierungssequenz verwendet wird. | CLIP | Ja | - |
 | `caption` | Text, der die zu generierende Musik beschreibt. Unterstützt mehrzeiligen Text und dynamische Prompts. | STRING | Ja | - |
 | `lyrics` | Der Liedtext, der zur Musikgenerierung verwendet wird. Unterstützt mehrzeiligen Text und dynamische Prompts. | STRING | Ja | - |
-| `seed` | Reproduzierbarer Zufallsseed für den Generierungsprozess. Standard: 0. Ein Widget zur Steuerung nach der Generierung wird bereitgestellt. | INT | Ja | 0 to 18446744073709551615 (0xffffffffffffffff) |
+| `seed` | Reproduzierbarer Zufallsseed für den Generierungsprozess. Standard: 0. Ein Widget zur Steuerung nach der Generierung wird bereitgestellt. | INT | Ja | 0 bis 18446744073709551615 (0xffffffffffffffff) |
 | `max_duration` | Maximale Dauer in Sekunden; das Modell kann das Lied früher beenden. Standard: 120.0. | FLOAT | Ja | 0.04 bis zur maximalen Audiodauer des Modells (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND), Schrittweite 0.04 |
 | `cfg_scale` | Classifier-Free-Guidance-Skala. Standard: Modellkonstante CFG_SCALE. Erweiterter Parameter. | FLOAT | Ja | 0.0 bis 100.0, Schrittweite 0.1 (behält 2 Dezimalstellen) |
 | `top_k` | Top-k-Sampling-Wert, der für die Auswahl akustischer Token verwendet wird. Standard: Modellkonstante CFG_TOP_K. Erweiterter Parameter. | INT | Ja | 1 bis zur Vokabulargröße des Modells (C0_VOCAB_SIZE) |

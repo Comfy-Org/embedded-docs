@@ -11,7 +11,7 @@ LTXV Separate Generated Keyframes 節點會將由 LTXV Add Generated Keyframes �
 | `positive` | 正向 conditioning，包含生成關鍵幀的元數據。輸出時會從中移除元數據。 | CONDITIONING | 是 | N/A |
 | `negative` | 負向 conditioning，包含生成關鍵幀的元數據。輸出時會從中移除元數據。 | CONDITIONING | 是 | N/A |
 | `latent` | 視頻 latent，包含生成關鍵幀。輸出時會從中剝離這些關鍵幀。 | LATENT | 是 | N/A |
-| `keyframes_to_batch` | 將關鍵幀作為單幀 latent 的批次返回。關閉此選項則會將它們作為一個多幀 latent 返回，這是 latent 上採樣器和後續的 Add Generated Keyframes 所期望的格式。 | BOOLEAN | 否 | default: False |
+| `keyframes_to_batch` | 將關鍵幀作為單幀 latent 的批次返回。關閉此選項則會將它們作為一個多幀 latent 返回，這是 latent 上採樣器和後續的 Add Generated Keyframes 所期望的格式。 | BOOLEAN | 否 | 預設: False |
 
 ### 輸入注意事項
 

@@ -16,7 +16,7 @@ TextGenerate 節點使用 CLIP 模型根據使用者的提示詞產生文字。�
 | `音訊` | 可選音訊輸入，可與文字提示詞一起使用以影響產生的文字。 | AUDIO | 否 | N/A |
 | `最大長度` | 模型將產生的最大 token 數量。預設值為 512。 | INT | 是 | 1 至 32768 |
 | `思考模式` | 若模型支援，則以思考模式運作。預設值為 False。 | BOOLEAN | 否 | True or False |
-| `use_default_template` | 若模型有內建的系統提示詞/範本，則使用它。預設值為 True。這是進階參數。 | BOOLEAN | 否 | True or False |
+| `use_default_template` | 若模型有內建的系統提示詞/範本，則使用它。預設值為 True。這是進階參數。 | BOOLEAN | 否 | True 或 False |
 | `mtp` | 使用檢查點的多 token 預測頭進行推測解碼。沒有 MTP 權重時無效。`"auto"` 會依觀察到的 token 匹配情況與執行開銷調整草稿深度與廣度，`"2"` 到 `"5"` 固定草稿深度，`tree` 模式則同時固定廣度與深度。取樣輸出仍保持正確的分布，但相同 `seed` 下會與非 MTP 輸出不同（預設：`"auto"`）。 | COMBO | 否 | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"tree2s1"`<br>`"tree2s2"`<br>`"tree3s1"`<br>`"tree4s1m8"` |
 | `系統提示詞` | 取代模型聊天範本中的系統提示詞。未使用預設範本時會被忽略。以 STRING 輸入連接，而不是在節點中輸入（預設值：空）。 | STRING | 否 | N/A |
 

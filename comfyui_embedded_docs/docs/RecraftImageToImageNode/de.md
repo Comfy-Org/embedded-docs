@@ -9,7 +9,7 @@ Dieser Node modifiziert ein vorhandenes Bild basierend auf einem Text-Prompt und
 | `image` | Das Eingabebild, das modifiziert werden soll. Wenn ein Batch von Bildern bereitgestellt wird, wird jedes Bild einzeln verarbeitet. | IMAGE | Ja | - |
 | `prompt` | Prompt für die Bilderzeugung. Standard: leerer String. Maximale Länge: 1000 Zeichen. | STRING | Ja | - |
 | `n` | Die Anzahl der zu erzeugenden Bilder. Standard: 1. | INT | Ja | 1-6 |
-| `strength` | Definiert den Unterschied zum Originalbild; sollte in [0, 1] liegen, wobei 0 fast identisch bedeutet und 1 eine sehr geringe Ähnlichkeit. Standard: 0.5. | FLOAT | Ja | 0.0-1.0 (step 0.01) |
+| `strength` | Definiert den Unterschied zum Originalbild; sollte in [0, 1] liegen, wobei 0 fast identisch bedeutet und 1 eine sehr geringe Ähnlichkeit. Standard: 0.5. | FLOAT | Ja | 0.0-1.0 (Schritt: 0.01) |
 | `seed` | Seed, der bestimmt, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 0. | INT | Ja | 0-18446744073709551615 |
 | `recraft_style` | Optionale Stilauswahl für die Bilderzeugung. Wenn nicht angegeben, wird standardmäßig `realistic_image` verwendet. | STYLEV3 | Nein | - |
 | `negative_prompt` | Eine optionale Textbeschreibung unerwünschter Elemente auf einem Bild. Standard: leerer String. Wird als Eingabe-Socket bereitgestellt. | STRING | Nein | - |

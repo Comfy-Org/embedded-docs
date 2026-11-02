@@ -7,8 +7,8 @@ Il nodo AlignYourStepsScheduler genera valori sigma (livelli di rumore) per il p
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `model_type` | Specifica il tipo di modello da usare per il calcolo dei sigma (predefinito: "SD1") | COMBO | Sì | `"SD1"`<br>`"SDXL"`<br>`"SVD"` |
-| `steps` | Il numero totale di passaggi di campionamento da generare (predefinito: 10) | INT | Sì | 1 to 10000 |
-| `denoise` | Controlla quanto denoising applicare all'immagine: 1.0 utilizza tutti i passaggi, mentre valori inferiori ne utilizzano un numero minore (predefinito: 1.0) | FLOAT | Sì | 0.0 to 1.0 (step: 0.01) |
+| `steps` | Il numero totale di passaggi di campionamento da generare (predefinito: 10) | INT | Sì | 1 a 10000 |
+| `denoise` | Controlla quanto denoising applicare all'immagine: 1.0 utilizza tutti i passaggi, mentre valori inferiori ne utilizzano un numero minore (predefinito: 1.0) | FLOAT | Sì | 0.0 a 1.0 (passo: 0.01) |
 
 Nota: ogni tipo di modello dispone di una schedulazione dei livelli di rumore integrata contenente 11 valori sigma (per 10 passaggi). Quando `denoise` è 0.0, il nodo restituisce un tensore sigma vuoto. Quando `denoise` è compreso tra 0.0 e 1.0, il numero effettivo di passaggi viene calcolato come `round(steps × denoise)` e viene utilizzata solo la porzione finale corrispondente della schedulazione sigma. Se il valore `steps` richiesto non corrisponde alla lunghezza della schedulazione integrata, i livelli di rumore vengono interpolati log-linearmente per corrispondere al numero di passaggi richiesto. Il valore sigma finale è sempre impostato a 0.
 

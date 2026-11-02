@@ -6,7 +6,7 @@ Bu düğüm, harici bir 3B modeli Tripo'ya aktarır; böylece Texture, Rig ve Co
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model_3d` | İçe aktarılacak 3B model (GLB / FBX / OBJ / STL, en fazla 150 MB). OBJ ve STL dosyaları gömülü doku taşımaz. | FILE3D | Evet | GLB<br>FBX<br>OBJ<br>STL<br>Any 3D format |
+| `model_3d` | İçe aktarılacak 3B model (GLB / FBX / OBJ / STL, en fazla 150 MB). OBJ ve STL dosyaları gömülü doku taşımaz. | FILE3D | Evet | GLB<br>FBX<br>OBJ<br>STL<br>Herhangi bir 3D formatı |
 
 **Not:** Yalnızca GLB, FBX, OBJ ve STL formatları desteklenir. GLTF (.gltf) içe aktarılamaz çünkü harici dosyalara başvurur; bunun yerine tek dosyalık bir GLB dışa aktarın. Model dosyası 150 MB veya daha küçük olmalıdır. GLB önerilir çünkü dokular içe aktarma sırasında yalnızca dosyaya gömülü olduğunda korunur. OBJ ve STL dosyaları gömülü doku taşımaz. İçe aktarılan bir modelin dokulandırılması bir doku istemi gerektirir.
 

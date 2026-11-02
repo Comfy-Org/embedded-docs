@@ -9,9 +9,9 @@ Bu düğüm, bir metinden videoya modele MiniMax H3 Fun ControlNet'i model yamas
 | `model` | MiniMax H3 Fun ControlNet yamasının uygulandığı difüzyon modeli. | MODEL | Evet | N/A |
 | `model_patch` | Kontrol sinyalleri modele enjekte edilen MiniMax H3 Fun ControlNet yaması; verilen `model` ile uyumlu olmalıdır. | MODEL_PATCH | Evet | N/A |
 | `vae` | Kontrol ve kaynak video karelerini modelin beklediği latent uzayına kodlamak için kullanılan VAE. | VAE | Evet | N/A |
-| `strength` | ControlNet etkisinin genel gücü. 0 olarak ayarlandığında düğüm hiçbir şey yapmaz ve girdi modelini değiştirilmeden döndürür. (varsayılan: 1.0) | FLOAT | Evet | min 0.0, max 10.0, step 0.01 |
-| `start_percent` | ControlNet'in etkin olduğu örnekleme aralığının başlangıcı; örnekleme planının yüzdesi olarak ifade edilir. Dahili olarak eşdeğer sigma değerine dönüştürülür. Bu gelişmiş bir ayardır. (varsayılan: 0.0) | FLOAT | Evet | min 0.0, max 1.0, step 0.001 |
-| `end_percent` | ControlNet'in etkin olduğu örnekleme aralığının sonu; örnekleme planının yüzdesi olarak ifade edilir. Dahili olarak eşdeğer sigma değerine dönüştürülür. Bu gelişmiş bir ayardır. (varsayılan: 1.0) | FLOAT | Evet | min 0.0, max 1.0, step 0.001 |
+| `strength` | ControlNet etkisinin genel gücü. 0 olarak ayarlandığında düğüm hiçbir şey yapmaz ve girdi modelini değiştirilmeden döndürür. (varsayılan: 1.0) | FLOAT | Evet | min. 0.0, maks. 10.0, adım: 0.01 |
+| `start_percent` | ControlNet'in etkin olduğu örnekleme aralığının başlangıcı; örnekleme planının yüzdesi olarak ifade edilir. Dahili olarak eşdeğer sigma değerine dönüştürülür. Bu gelişmiş bir ayardır. (varsayılan: 0.0) | FLOAT | Evet | min. 0.0, maks. 1.0, adım: 0.001 |
+| `end_percent` | ControlNet'in etkin olduğu örnekleme aralığının sonu; örnekleme planının yüzdesi olarak ifade edilir. Dahili olarak eşdeğer sigma değerine dönüştürülür. Bu gelişmiş bir ayardır. (varsayılan: 1.0) | FLOAT | Evet | min. 0.0, maks. 1.0, adım: 0.001 |
 | `control_video` | ControlNet görsel ipucu olarak kullanılan isteğe bağlı video kareleri. Kareler, oluşturulan videoyla eşleşecek şekilde yeniden boyutlandırılır ve `vae` ile kodlanır. | IMAGE | Hayır | N/A |
 | `mask` | 1, yeniden üretilecek bölgeleri işaretler. 0.5 üzerindeki maske değerleri işaretli bölgeler olarak değerlendirilir. | MASK | Hayır | N/A |
 | `source_video` | Maskenin arkasındaki video; yalnızca bir maske verildiğinde okunur. | IMAGE | Hayır | N/A |

@@ -10,7 +10,7 @@ Modifica un video usando istruzioni testuali o immagini di riferimento con il mo
 |-----------|-------------|--------------|--------------|------------|
 | `model` | Il modello di editing video HappyHorse da utilizzare. Questa selezione determina quali opzioni di prompt, risoluzione, rapporto e immagini di riferimento sono disponibili. | DYNAMIC_COMBO | Sì | "happyhorse-1.0-video-edit" |
 | `video` | Il video da modificare. | VIDEO | Sì | Da 3 a 60 secondi |
-| `seed` | Seed da utilizzare per la generazione (predefinito: 0). | INT | Sì | 0 to 2147483647 |
+| `seed` | Seed da utilizzare per la generazione (predefinito: 0). | INT | Sì | 0 a 2147483647 |
 | `watermark` | Indica se aggiungere una filigrana generata dall'IA al risultato (predefinito: False). Parametro avanzato. | BOOLEAN | Sì | True<br>False |
 
 ### Input di happyhorse-1.0-video-edit

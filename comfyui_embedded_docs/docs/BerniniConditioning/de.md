@@ -9,14 +9,14 @@ Der BerniniConditioning-Node bereitet Video- und Bildkonditionierungsdaten für 
 | `positive` | Positive Konditionierungsdaten | CONDITIONING | Ja | - |
 | `negative` | Negative Konditionierungsdaten | CONDITIONING | Ja | - |
 | `vae` | VAE-Modell, das zum Kodieren von Video- und Bildeingaben verwendet wird | VAE | Ja | - |
-| `width` | Breite des Ausgabe-Latents (Standard: 832) | INT | Ja | 16 to 8192 (step: 16) |
-| `height` | Höhe des Ausgabe-Latents (Standard: 480) | INT | Ja | 16 to 8192 (step: 16) |
-| `length` | Anzahl der Frames im Ausgabe-Latent (Standard: 81) | INT | Ja | 1 to 8192 (step: 4) |
-| `batch_size` | Anzahl der Videos, die in einem einzelnen Batch generiert werden sollen (Standard: 1) | INT | Ja | 1 to 4096 |
+| `width` | Breite des Ausgabe-Latents (Standard: 832) | INT | Ja | 16 bis 8192 (Schritt: 16) |
+| `height` | Höhe des Ausgabe-Latents (Standard: 480) | INT | Ja | 16 bis 8192 (Schritt: 16) |
+| `length` | Anzahl der Frames im Ausgabe-Latent (Standard: 81) | INT | Ja | 1 bis 8192 (Schritt: 4) |
+| `batch_size` | Anzahl der Videos, die in einem einzelnen Batch generiert werden sollen (Standard: 1) | INT | Ja | 1 bis 4096 |
 | `source_video` | Quellvideo, das bearbeitet oder umgestaltet werden soll (v2v, rv2v). Wird auf `width`/`height` skaliert und auf `length` gekürzt. | IMAGE | Nein | - |
 | `reference_video` | Video, das in das Quellvideo eingefügt werden soll (ads2v). Wird auf `length` gekürzt und mit beibehaltenem Seitenverhältnis skaliert (lange Kante auf `ref_max_size` begrenzt). | IMAGE | Nein | - |
-| `reference_images` | Referenzbilder, die als In-Context-Tokens eingefügt werden (r2v, rv2v). Jedes Bild wird unabhängig mit seinem eigenen nativen Seitenverhältnis kodiert (lange Kante auf `ref_max_size` begrenzt). Es können bis zu 8 Bilder bereitgestellt werden. | IMAGE | Nein | 0 to 8 images |
-| `ref_max_size` | Maximale Größe für die lange Kante von `reference_video` und `reference_images`. Wird mit beibehaltenem Seitenverhältnis skaliert und auf 16 px gerundet (Standard: 848). | INT | Nein | 16 to 8192 (step: 16) |
+| `reference_images` | Referenzbilder, die als In-Context-Tokens eingefügt werden (r2v, rv2v). Jedes Bild wird unabhängig mit seinem eigenen nativen Seitenverhältnis kodiert (lange Kante auf `ref_max_size` begrenzt). Es können bis zu 8 Bilder bereitgestellt werden. | IMAGE | Nein | 0 bis 8 Bilder |
+| `ref_max_size` | Maximale Größe für die lange Kante von `reference_video` und `reference_images`. Wird mit beibehaltenem Seitenverhältnis skaliert und auf 16 px gerundet (Standard: 848). | INT | Nein | 16 bis 8192 (Schritt: 16) |
 
 **Hinweis:** Die Aufgabe wird daraus abgeleitet, welche Eingaben verbunden sind:
 - Keine Eingaben verbunden → Text-zu-Video (t2v)

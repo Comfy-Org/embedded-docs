@@ -7,8 +7,8 @@ Il nodo OptimalStepsScheduler crea una pianificazione del rumore (una sequenza d
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `model_type` | Il tipo di modello di diffusione da utilizzare per il calcolo del livello di rumore. Ogni opzione utilizza la propria tabella predefinita di livelli di rumore. | COMBO | Sì | "FLUX"<br>"Wan"<br>"Chroma" |
-| `steps` | Il numero totale di passaggi di campionamento da calcolare (predefinito: 20). | INT | Sì | 3 to 1000 |
-| `denoise` | Controlla la forza di denoising, che regola il numero effettivo di passaggi (predefinito: 1.0). | FLOAT | Sì | 0.0 to 1.0 (step: 0.01) |
+| `steps` | Il numero totale di passaggi di campionamento da calcolare (predefinito: 20). | INT | Sì | 3 a 1000 |
+| `denoise` | Controlla la forza di denoising, che regola il numero effettivo di passaggi (predefinito: 1.0). | FLOAT | Sì | 0.0 a 1.0 (passo: 0.01) |
 
 **Nota:** La tabella dei livelli di rumore di base per il `model_type` selezionato viene ricampionata con interpolazione log-lineare ogni volta che la sua lunghezza non è uguale a `steps + 1`, in modo che l'output corrisponda sempre al numero di passaggi richiesto.
 

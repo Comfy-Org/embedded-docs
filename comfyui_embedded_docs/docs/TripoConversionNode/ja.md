@@ -8,7 +8,7 @@
 |-----------|-------------|-----------|----------|-------|
 | `original_model_task_id` | 変換する Tripo モデルのタスク ID。以前の Tripo モデル生成、リギング、リターゲティング、またはセグメンテーションタスクで作成されたものである必要があります。ID が見つからないか空の場合、ノードはエラーを発生させます。 | STRING | はい | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID<br>SEGMENT_TASK_ID |
 | `format` | 変換後の 3D モデルのターゲットファイル形式。 | COMBO | はい | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF |
-| `quad` | 有効にすると三角形を四角形に変換します（デフォルト: False）。 | BOOLEAN | いいえ | True or False |
+| `quad` | 有効にすると三角形を四角形に変換します（デフォルト: False）。 | BOOLEAN | いいえ | True または False |
 | `face_limit` | 変換後のモデルの最大面数。-1 に設定すると無制限になります（デフォルト: -1）。 | INT | いいえ | -1 〜 2000000 |
 | `texture_size` | 出力テクスチャの解像度（ピクセル単位）（デフォルト: 4096）。 | INT | いいえ | 128 〜 8192 |
 | `texture_format` | エクスポートされるテクスチャに使用されるファイル形式（デフォルト: JPEG）。 | COMBO | いいえ | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP |

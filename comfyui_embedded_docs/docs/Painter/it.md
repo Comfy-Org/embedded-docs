@@ -8,8 +8,8 @@ Il nodo Painter fornisce una tela interattiva per creare o modificare immagini e
 | --- | --- | --- | --- | --- |
 | `image` | Immagine di base opzionale su cui disegnare. Se non viene fornita, viene creata una tela vuota usando il colore di sfondo, la larghezza e l'altezza specificati. | IMAGE | No | - |
 | `mask` | I dati di disegno, generalmente generati dal widget interattivo integrato del nodo. Questo parametro è gestito dallo strumento di disegno dell'interfaccia utente e non è destinato a essere collegato a un socket standard. | STRING | Sì | - |
-| `width` | La larghezza della tela in pixel, utilizzata quando non viene fornita un'immagine di base (`image`). Il valore deve essere un multiplo di 64. Il valore predefinito è 512. | INT | Sì | 64 to 4096 |
-| `height` | L'altezza della tela in pixel, utilizzata quando non viene fornita un'immagine di base (`image`). Il valore deve essere un multiplo di 64. Il valore predefinito è 512. | INT | Sì | 64 to 4096 |
+| `width` | La larghezza della tela in pixel, utilizzata quando non viene fornita un'immagine di base (`image`). Il valore deve essere un multiplo di 64. Il valore predefinito è 512. | INT | Sì | 64 a 4096 |
+| `height` | L'altezza della tela in pixel, utilizzata quando non viene fornita un'immagine di base (`image`). Il valore deve essere un multiplo di 64. Il valore predefinito è 512. | INT | Sì | 64 a 4096 |
 | `bg_color` | Il colore di sfondo per la tela, specificato come codice esadecimale (ad es., #000000). Viene utilizzato solo quando non viene fornita un'immagine di base (`image`). Il valore predefinito è nero (#000000). | COLOR | Sì | - |
 
 **Nota:** L'input `mask` è progettato per funzionare con il widget UI specializzato del nodo. Quando si disegna sulla tela, il widget compila automaticamente questo valore. Gli input `width` e `height` sono nascosti nell'interfaccia utente standard ma definiscono le dimensioni della tela quando si crea una nuova immagine. Se viene fornita un'immagine di base (`image`), le sue dimensioni hanno la precedenza sulle impostazioni `width` e `height`.

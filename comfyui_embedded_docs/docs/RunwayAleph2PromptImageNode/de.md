@@ -7,7 +7,7 @@ Dieser Node verankert ein Führungsbild an einem bestimmten Zeitpunkt im Ausgabe
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `image` | Das Führungsbild, das am gewählten Zeitpunkt im Ausgabevideo platziert werden soll. | IMAGE | Ja | - |
-| `position` | Wie dieses Bild auf der Zeitachse des Ausgabevideos platziert werden soll. Wählen Sie zwischen absoluter Zeitangabe (Sekunden ab dem Start) oder fraktionaler Zeitangabe (Anteil der Videodauer). Durch Auswahl einer Option wird der entsprechende Unterparameter eingeblendet. | COMBO | Ja | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
+| `position` | Wie dieses Bild auf der Zeitachse des Ausgabevideos platziert werden soll. Wählen Sie zwischen absoluter Zeitangabe (Sekunden ab dem Start) oder fraktionaler Zeitangabe (Anteil der Videodauer). Durch Auswahl einer Option wird der entsprechende Unterparameter eingeblendet. | COMBO | Ja | `Absolute (seconds)`<br>`Fraction (0.0 bis 1.0)` |
 | `prompt_images` | Optionale frühere Prompt-Bilder, die mit diesem verkettet werden. Verbinden Sie hier die Ausgabe eines anderen Runway Aleph2 Prompt Image Node, um eine Kette von bis zu 5 Führungsbildern aufzubauen. | PROMPT_IMAGE_CHAIN | Nein | - |
 
 **Details zum Positionierungsmodus:**

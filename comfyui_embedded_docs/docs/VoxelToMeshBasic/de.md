@@ -7,7 +7,7 @@ Der Node VoxelToMeshBasic konvertiert 3D-Voxeldaten in Mesh-Geometrie. Er verarb
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `voxel` | Die 3D-Voxeldaten, die in ein Mesh umgewandelt werden sollen | VOXEL | Ja | - |
-| `threshold` | Der Schwellenwert, der verwendet wird, um zu bestimmen, welche Voxel Teil der Mesh-Oberfläche werden (Standard: 0.6) | FLOAT | Ja | -1.0 to 1.0 |
+| `threshold` | Der Schwellenwert, der verwendet wird, um zu bestimmen, welche Voxel Teil der Mesh-Oberfläche werden (Standard: 0.6) | FLOAT | Ja | -1.0 bis 1.0 |
 
 ## Ausgaben
 

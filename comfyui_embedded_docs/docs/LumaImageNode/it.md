@@ -9,8 +9,8 @@ Genera immagini in modo sincrono in base a un prompt testuale e a un rapporto d'
 | `prompt` | Prompt per la generazione dell'immagine (predefinito: stringa vuota). Deve contenere almeno 3 caratteri. | STRING | Sì | - |
 | `model` | Selezione del modello per la generazione di immagini. Modelli diversi hanno costi diversi. | COMBO | Sì | `photon-flash-1`<br>`photon-1`<br>`photon` |
 | `aspect_ratio` | Rapporto d'aspetto per l'immagine generata (predefinito: `16:9`) | COMBO | Sì | `16:9`<br>`1:1`<br>`4:3`<br>`3:2`<br>`21:9`<br>`9:16`<br>`3:4`<br>`2:3`<br>`9:21` |
-| `seed` | Seme per determinare se il nodo deve essere rieseguito; i risultati effettivi non sono deterministici indipendentemente dal seme (predefinito: 0) | INT | Sì | 0 to 18446744073709551615 |
-| `style_image_weight` | Peso dell'immagine di stile. Ignorato se non viene fornita `style_image` (predefinito: 1.0) | FLOAT | No | 0.0 to 1.0 |
+| `seed` | Seme per determinare se il nodo deve essere rieseguito; i risultati effettivi non sono deterministici indipendentemente dal seme (predefinito: 0) | INT | Sì | 0 a 18446744073709551615 |
+| `style_image_weight` | Peso dell'immagine di stile. Ignorato se non viene fornita `style_image` (predefinito: 1.0) | FLOAT | No | 0.0 a 1.0 |
 | `image_luma_ref` | Connessione del nodo Luma Reference per influenzare la generazione con immagini di input; è possibile considerare fino a 4 immagini. | LUMA_REF | No | - |
 | `style_image` | Immagine di riferimento di stile; verrà utilizzata solo 1 immagine. | IMAGE | No | - |
 | `character_image` | Immagini di riferimento del personaggio; può essere un batch di più immagini, è possibile considerare fino a 4 immagini. | IMAGE | No | - |

@@ -9,8 +9,8 @@ This node applies the visual style from a reference image to your input image. I
 | `image` | L'immagine a cui applicare il trasferimento di stile. | IMAGE | Sì | - |
 | `reference_image` | L'immagine di riferimento da cui estrarre lo stile. | IMAGE | Sì | - |
 | `prompt` | Un prompt testuale opzionale per guidare il trasferimento di stile. | STRING | No | - |
-| `style_strength` | Percentuale dell'intensità dello stile (predefinito: 100). | INT | No | 0 to 100 |
-| `structure_strength` | Mantiene la struttura dell'immagine originale (predefinito: 50). | INT | No | 0 to 100 |
+| `style_strength` | Percentuale dell'intensità dello stile (predefinito: 100). | INT | No | 0 a 100 |
+| `structure_strength` | Mantiene la struttura dell'immagine originale (predefinito: 50). | INT | No | 0 a 100 |
 | `flavor` | Variante del trasferimento di stile. | COMBO | No | "faithful"<br>"gen_z"<br>"psychedelia"<br>"detaily"<br>"clear"<br>"donotstyle"<br>"donotstyle_sharp" |
 | `engine` | Selezione del motore di elaborazione. | COMBO | No | "balanced"<br>"definio"<br>"illusio"<br>"3d_cartoon"<br>"colorful_anime"<br>"caricature"<br>"real"<br>"super_real"<br>"softy" |
 | `portrait_mode` | Abilita la modalità ritratto per miglioramenti del viso. | COMBO | No | "disabled"<br>"enabled" |

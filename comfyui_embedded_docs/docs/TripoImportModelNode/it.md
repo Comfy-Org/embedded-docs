@@ -6,7 +6,7 @@ Questo nodo importa un modello 3D esterno in Tripo, in modo che i nodi di post-e
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model_3d` | Modello 3D da importare (GLB / FBX / OBJ / STL, fino a 150 MB). I file OBJ e STL non contengono texture incorporate. | FILE3D | Sì | GLB<br>FBX<br>OBJ<br>STL<br>Any 3D format |
+| `model_3d` | Modello 3D da importare (GLB / FBX / OBJ / STL, fino a 150 MB). I file OBJ e STL non contengono texture incorporate. | FILE3D | Sì | GLB<br>FBX<br>OBJ<br>STL<br>Qualsiasi formato 3D |
 
 **Nota:** Sono supportati solo i formati GLB, FBX, OBJ e STL. GLTF (.gltf) non può essere importato perché fa riferimento a file esterni; esportare invece un GLB in file singolo. Il file del modello deve essere di 150 MB o inferiore. Si consiglia GLB perché le texture vengono mantenute all'importazione solo quando sono incorporate nel file. I file OBJ e STL non contengono texture incorporate. La texturizzazione di un modello importato richiede un prompt di texture.
 

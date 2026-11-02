@@ -9,9 +9,9 @@ Questo nodo prepara il condizionamento e il latente vuoto necessari per generare
 | `clip` | Modello CLIP utilizzato per tokenizzare il prompt e codificare le immagini keyframe nel condizionamento. | CLIP | Sì |  |
 | `vae` | Modello VAE utilizzato per codificare le immagini keyframe nello spazio latente quando vengono fornite immagini keyframe. | VAE | Sì |  |
 | `prompt` | Prompt testuale che descrive il video da generare. Supporta più righe e prompt dinamici. | STRING | Sì |  |
-| `width` | Larghezza del video in pixel (predefinito: 1344). | INT | Sì | 32 to MAX_RESOLUTION (step 32) |
-| `height` | Altezza del video in pixel (predefinito: 768). | INT | Sì | 32 to MAX_RESOLUTION (step 32) |
-| `length` | Numero di fotogrammi a 24 fps, arrotondato per eccesso alla griglia 17k+5 del modello (124 = ~5s; l'intervallo addestrato è ~124-362, valori più lunghi non sono testati) (predefinito: 124). | INT | Sì | 5 to 3600 (step 17) |
+| `width` | Larghezza del video in pixel (predefinito: 1344). | INT | Sì | 32 a MAX_RESOLUTION (passo: 32) |
+| `height` | Altezza del video in pixel (predefinito: 768). | INT | Sì | 32 a MAX_RESOLUTION (passo: 32) |
+| `length` | Numero di fotogrammi a 24 fps, arrotondato per eccesso alla griglia 17k+5 del modello (124 = ~5s; l'intervallo addestrato è ~124-362, valori più lunghi non sono testati) (predefinito: 124). | INT | Sì | 5 a 3600 (passo: 17) |
 | `first_frame` | Immagine facoltativa utilizzata come primo fotogramma del video. Viene estesa alle dimensioni complete della tela, quindi le sue proporzioni non vengono mantenute. Viene utilizzata solo la prima immagine del batch di input. | IMAGE | No |  |
 | `last_frame` | Immagine facoltativa utilizzata come ultimo fotogramma del video. Viene ritagliata per coprire la tela mantenendo le sue proporzioni. Viene utilizzata solo la prima immagine del batch di input. | IMAGE | No |  |
 

@@ -9,12 +9,12 @@ Questo nodo utilizza il modello Kling AI per generare un nuovo video basato su u
 | `model_name` | Il modello Kling specifico da utilizzare per la generazione del video (predefinito: "kling-v3-omni"). | COMBO | Sì | `"kling-v3-omni"`<br>`"kling-video-o1"` |
 | `prompt` | Un prompt testuale che descrive il contenuto del video. Può includere sia descrizioni positive che negative. | STRING | Sì | N/A |
 | `aspect_ratio` | Il rapporto d'aspetto desiderato per il video generato. | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `duration` | La durata del video generato in secondi (predefinito: 3). | INT | Sì | 3 to 10 |
+| `duration` | La durata del video generato in secondi (predefinito: 3). | INT | Sì | 3 a 10 |
 | `reference_video` | Video da utilizzare come riferimento. | VIDEO | Sì | N/A |
 | `keep_original_sound` | Determina se l'audio del video di riferimento viene mantenuto nell'output (predefinito: True). | BOOLEAN | Sì | N/A |
 | `reference_images` | Fino a 4 immagini di riferimento aggiuntive. | IMAGE | No | N/A |
 | `resolution` | La risoluzione per il video generato (predefinito: "1080p"). | COMBO | No | `"1080p"`<br>`"720p"` |
-| `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati sono non deterministici indipendentemente dal seed (predefinito: 0). | INT | No | 0 to 2147483647 |
+| `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati sono non deterministici indipendentemente dal seed (predefinito: 0). | INT | No | 0 a 2147483647 |
 
 **Vincoli sui parametri:**
 

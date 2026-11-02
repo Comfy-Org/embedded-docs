@@ -8,10 +8,10 @@ Der Node VAEDecodeTiled dekodiert latente Repräsentationen mithilfe eines gekac
 | --- | --- | --- | --- | --- |
 | `samples` | Die latente Repräsentation, die in Bilder dekodiert werden soll | LATENT | Ja | - |
 | `vae` | Das VAE-Modell, das zum Dekodieren der latenten Samples verwendet wird | VAE | Ja | - |
-| `tile_size` | Die Größe jeder Kachel für die Verarbeitung (Standard: 512) | INT | Ja | 64-4096 (step: 32) |
-| `overlap` | Der Überlappungsbetrag zwischen benachbarten Kacheln (Standard: 64) | INT | Ja | 0-4096 (step: 32) |
-| `temporal_size` | Nur für Video-VAEs verwendet: Anzahl der gleichzeitig zu dekodierenden Frames (Standard: 64) | INT | Ja | 8-4096 (step: 4) |
-| `temporal_overlap` | Nur für Video-VAEs verwendet: Anzahl der zu überlappenden Frames (Standard: 8) | INT | Ja | 4-4096 (step: 4) |
+| `tile_size` | Die Größe jeder Kachel für die Verarbeitung (Standard: 512) | INT | Ja | 64-4096 (Schritt: 32) |
+| `overlap` | Der Überlappungsbetrag zwischen benachbarten Kacheln (Standard: 64) | INT | Ja | 0-4096 (Schritt: 32) |
+| `temporal_size` | Nur für Video-VAEs verwendet: Anzahl der gleichzeitig zu dekodierenden Frames (Standard: 64) | INT | Ja | 8-4096 (Schritt: 4) |
+| `temporal_overlap` | Nur für Video-VAEs verwendet: Anzahl der zu überlappenden Frames (Standard: 8) | INT | Ja | 4-4096 (Schritt: 4) |
 
 **Hinweis:** Die Eingaben `tile_size`, `overlap`, `temporal_size` und `temporal_overlap` sind als erweiterte Einstellungen markiert.
 

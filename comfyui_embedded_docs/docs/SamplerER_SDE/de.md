@@ -8,8 +8,8 @@ Der Node SamplerER_SDE bietet spezialisierte Sampling-Methoden für Diffusionsmo
 | --- | --- | --- | --- | --- |
 | `solver_type` | Der Typ des Solvers, der für das Sampling verwendet werden soll. Bestimmt den mathematischen Ansatz für den Diffusionsprozess (Standard: "ER-SDE"). | COMBO | Ja | "ER-SDE"<br>"Reverse-time SDE"<br>"ODE" |
 | `max_stage` | Die maximale Anzahl von Stufen für den Sampling-Prozess (Standard: 3). Steuert den Rechenaufwand und die Qualität. Dies ist ein erweiterter Parameter. | INT | Ja | 1-3 |
-| `eta` | Stochastische Stärke von SDEs.<br>Wenn eta=0, reduzieren sie sich auf deterministische ODE.<br>Ein großes eta kann ungültige Ausgaben verursachen. Wenn dies auftritt, versuchen Sie, diesen Wert zu verringern. (Standard: 1.0). Dies ist ein erweiterter Parameter. | FLOAT | Ja | 0.0-10.0 (step: 0.01) |
-| `s_noise` | Rauschskalierungsfaktor für den Sampling-Prozess (Standard: 1.0). Steuert die Menge an Rauschen, die während des Samplings angewendet wird. Dies ist ein erweiterter Parameter. | FLOAT | Ja | 0.0-100.0 (step: 0.01) |
+| `eta` | Stochastische Stärke von SDEs.<br>Wenn eta=0, reduzieren sie sich auf deterministische ODE.<br>Ein großes eta kann ungültige Ausgaben verursachen. Wenn dies auftritt, versuchen Sie, diesen Wert zu verringern. (Standard: 1.0). Dies ist ein erweiterter Parameter. | FLOAT | Ja | 0.0-10.0 (Schritt: 0.01) |
+| `s_noise` | Rauschskalierungsfaktor für den Sampling-Prozess (Standard: 1.0). Steuert die Menge an Rauschen, die während des Samplings angewendet wird. Dies ist ein erweiterter Parameter. | FLOAT | Ja | 0.0-100.0 (Schritt: 0.01) |
 
 **Parameterbeschränkungen:**
 

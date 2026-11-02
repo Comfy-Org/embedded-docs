@@ -9,10 +9,10 @@ Il nodo WanHuMoImageToVideo prepara i dati di condizionamento e un video latente
 | `positive` | Input di condizionamento positivo che guida la generazione video verso il contenuto desiderato. | CONDITIONING | Sì | - |
 | `negative` | Input di condizionamento negativo che allontana la generazione video da contenuti indesiderati. | CONDITIONING | Sì | - |
 | `vae` | Modello VAE utilizzato per codificare le immagini di riferimento nello spazio latente. | VAE | Sì | - |
-| `width` | Larghezza in pixel dei fotogrammi del video di output. Predefinito: 832. | INT | Sì | 16 to MAX_RESOLUTION, step 16 |
-| `height` | Altezza in pixel dei fotogrammi del video di output. Predefinito: 480. | INT | Sì | 16 to MAX_RESOLUTION, step 16 |
-| `length` | Numero di fotogrammi nella sequenza video generata. Predefinito: 97. | INT | Sì | 1 to MAX_RESOLUTION, step 4 |
-| `batch_size` | Numero di sequenze video da generare simultaneamente. Predefinito: 1. | INT | Sì | 1 to 4096 |
+| `width` | Larghezza in pixel dei fotogrammi del video di output. Predefinito: 832. | INT | Sì | 16 a MAX_RESOLUTION, passo: 16 |
+| `height` | Altezza in pixel dei fotogrammi del video di output. Predefinito: 480. | INT | Sì | 16 a MAX_RESOLUTION, passo: 16 |
+| `length` | Numero di fotogrammi nella sequenza video generata. Predefinito: 97. | INT | Sì | 1 a MAX_RESOLUTION, passo: 4 |
+| `batch_size` | Numero di sequenze video da generare simultaneamente. Predefinito: 1. | INT | Sì | 1 a 4096 |
 | `audio_encoder_output` | Dati opzionali di codifica audio che possono influenzare la generazione video in base al contenuto audio. | AUDIOENCODEROUTPUT | No | - |
 | `ref_image` | Immagine di riferimento opzionale usata per guidare lo stile e il contenuto della generazione video. Viene utilizzata solo la prima immagine del batch. | IMAGE | No | - |
 

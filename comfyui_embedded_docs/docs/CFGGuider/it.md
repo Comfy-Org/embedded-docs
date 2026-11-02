@@ -9,7 +9,7 @@ Il nodo CFG Guider crea un sistema di guida per controllare il processo di campi
 | `model` | Il modello da utilizzare per la guida | MODEL | Sì | - |
 | `positive` | Il condizionamento positivo che guida la generazione verso il contenuto desiderato | CONDITIONING | Sì | - |
 | `negative` | Il condizionamento negativo che indirizza la generazione lontano dal contenuto indesiderato | CONDITIONING | Sì | - |
-| `cfg` | La scala di guida classifier-free che controlla quanto fortemente il condizionamento influenza la generazione (predefinito: 8.0) | FLOAT | Sì | 0.0 to 100.0 (step: 0.1) |
+| `cfg` | La scala di guida classifier-free che controlla quanto fortemente il condizionamento influenza la generazione (predefinito: 8.0) | FLOAT | Sì | 0.0 a 100.0 (passo: 0.1) |
 
 ## Output
 

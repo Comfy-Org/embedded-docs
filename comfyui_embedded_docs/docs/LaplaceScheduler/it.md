@@ -6,11 +6,11 @@ Il nodo LaplaceScheduler genera una sequenza di valori sigma seguendo una distri
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `steps` | Numero di passaggi di campionamento nella pianificazione (predefinito: 20) | INT | Sì | 1 to 10000 |
-| `sigma_max` | Valore sigma massimo all'inizio della pianificazione (predefinito: 14.614642) | FLOAT | Sì | 0.0 to 5000.0 |
-| `sigma_min` | Valore sigma minimo alla fine della pianificazione (predefinito: 0.0291675) | FLOAT | Sì | 0.0 to 5000.0 |
-| `mu` | Parametro di media per la distribuzione di Laplace (predefinito: 0.0) | FLOAT | Sì | -10.0 to 10.0 |
-| `beta` | Parametro di scala per la distribuzione di Laplace (predefinito: 0.5) | FLOAT | Sì | 0.0 to 10.0 |
+| `steps` | Numero di passaggi di campionamento nella pianificazione (predefinito: 20) | INT | Sì | 1 a 10000 |
+| `sigma_max` | Valore sigma massimo all'inizio della pianificazione (predefinito: 14.614642) | FLOAT | Sì | 0.0 a 5000.0 |
+| `sigma_min` | Valore sigma minimo alla fine della pianificazione (predefinito: 0.0291675) | FLOAT | Sì | 0.0 a 5000.0 |
+| `mu` | Parametro di media per la distribuzione di Laplace (predefinito: 0.0) | FLOAT | Sì | -10.0 a 10.0 |
+| `beta` | Parametro di scala per la distribuzione di Laplace (predefinito: 0.5) | FLOAT | Sì | 0.0 a 10.0 |
 
 Nota: `sigma_max`, `sigma_min`, `mu` e `beta` sono parametri avanzati.
 

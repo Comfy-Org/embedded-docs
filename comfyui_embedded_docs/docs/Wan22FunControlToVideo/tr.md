@@ -9,9 +9,9 @@ The Wan22FunControlToVideo düğümü, Wan video modeliyle video oluşturmak iç
 | `positive` | Video oluşturmayı yönlendirmek için pozitif koşullandırma girdisi | CONDITIONING | Evet | - |
 | `negative` | Video oluşturmayı yönlendirmek için negatif koşullandırma girdisi | CONDITIONING | Evet | - |
 | `vae` | Görüntüleri latent uzaya kodlamak için kullanılan VAE modeli | VAE | Evet | - |
-| `width` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
-| `height` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
-| `length` | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 to MAX_RESOLUTION |
+| `width` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, adım: 16) | INT | Evet | 16 ile MAX_RESOLUTION arası |
+| `height` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 ile MAX_RESOLUTION arası |
+| `length` | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 ile MAX_RESOLUTION arası |
 | `batch_size` | Oluşturulacak video dizisi sayısı (varsayılan: 1) | INT | Evet | 1 ile 4096 |
 | `ref_image` | Oluşturma için görsel rehberlik sağlayan isteğe bağlı referans görüntüsü | IMAGE | Hayır | - |
 | `control_video` | Oluşturma sürecini yönlendiren isteğe bağlı kontrol videosu | IMAGE | Hayır | - |

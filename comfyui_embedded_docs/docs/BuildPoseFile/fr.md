@@ -22,7 +22,7 @@ Ces entrées apparaissent lorsque `format` est défini sur « glb ».
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `mesh_style` | Style visuel du GLB : ‘body_mesh’ = véritable armature (127 os, skinning, keyframes TRS, 72 morphs faciaux ; nécessite le modèle). ‘bones_only’ = primitives en forme d’os à chaque articulation (armature d’aperçu). ‘openpose’ = squelette 3D OpenPose-18 à partir des points clés. ‘scail’ = rig à capsules 3D SCAIL (cylindres ouverts fermés à fleur par des sphères articulaires). (défaut : body_mesh) | DYNAMIC_COMBO | Oui | "body_mesh"<br>"bones_only"<br>"openpose"<br>"scail" |
-| `bone_smooth_window` | Fenêtre de lissage gaussien sur les keyframes de rotation par os / pistes de points clés. 0 = désactivé. 7-15 calme les rotations brusques/instabilités lorsque le lissage en amont manque des pics. (défaut : 0) | INT | Oui | 0-51, step 2 |
+| `bone_smooth_window` | Fenêtre de lissage gaussien sur les keyframes de rotation par os / pistes de points clés. 0 = désactivé. 7-15 calme les rotations brusques/instabilités lorsque le lissage en amont manque des pics. (défaut : 0) | INT | Oui | 0-51, pas: 2 |
 
 #### Entrées Body Mesh
 

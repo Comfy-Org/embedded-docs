@@ -13,7 +13,7 @@ Il nodo TextGenerateLTX2Prompt espande un breve prompt utente in una descrizione
 | `image` | Un'immagine di input opzionale usata come primo frame del video. Quando fornita, il nodo passa alla modalità da immagine a video e usa un prompt di sistema che espande il prompt utente in base al contenuto dell'immagine. | IMAGE | No | - |
 | `video` | Un input video opzionale usato come contesto aggiuntivo. Passato al modello linguistico come batch di immagini; si presume a 24 FPS e viene sottocampionato internamente a 1 FPS. | IMAGE | No | - |
 | `audio` | Un input audio opzionale che può essere usato come contesto aggiuntivo per la generazione. | AUDIO | No | - |
-| `max_length` | Il numero massimo di token che al modello linguistico è consentito generare (predefinito: 512). | INT | Sì | 1 to 32768 |
+| `max_length` | Il numero massimo di token che al modello linguistico è consentito generare (predefinito: 512). | INT | Sì | 1 a 32768 |
 | `sampling_mode` | Controlla se viene usato il campionamento casuale durante la generazione del testo. Quando è impostato su `"on"`, i parametri di campionamento sottostanti diventano disponibili; con `"off"` il nodo genera testo senza campionamento casuale. | DYNAMIC_COMBO | Sì | `"on"`<br>`"off"` |
 | `thinking` | Quando abilitato, al modello viene chiesto di ragionare prima di rispondere. Qualsiasi blocco di ragionamento viene restituito sull'output `thinking` invece che in `generated_text` (predefinito: False). | BOOLEAN | No | True/False |
 | `use_default_template` | Quando abilitato, il nodo usa il template di chat predefinito per la formattazione (predefinito: True). Impostazione avanzata. | BOOLEAN | No | True/False |
@@ -24,13 +24,13 @@ Il nodo TextGenerateLTX2Prompt espande un breve prompt utente in una descrizione
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `temperature` | Controlla la casualità dell'output. Valori più bassi rendono l'output più prevedibile, valori più alti lo rendono più creativo (predefinito: 0.7). | FLOAT | Sì | 0.01 to 2.0 |
-| `top_k` | Limita il pool di campionamento ai K token successivi più probabili. Un valore di 0 disabilita questo filtro (predefinito: 64). | INT | Sì | 0 to 1000 |
-| `top_p` | Usa il campionamento nucleus: mantiene il più piccolo insieme di token più probabili la cui probabilità cumulativa raggiunge questo valore. (predefinito: 0.95) | FLOAT | Sì | 0.0 to 1.0 |
-| `min_p` | Imposta una soglia minima di probabilità affinché i token siano considerati (predefinito: 0.05). | FLOAT | Sì | 0.0 to 1.0 |
-| `repetition_penalty` | Penalizza i token già generati per ridurre le ripetizioni. Un valore di 1.0 non applica alcuna penalità (predefinito: 1.05). | FLOAT | Sì | 0.0 to 5.0 |
-| `seed` | Un numero usato per inizializzare il generatore di numeri casuali per risultati riproducibili (predefinito: 0). | INT | Sì | 0 to 18446744073709551615 |
-| `presence_penalty` | Penalizza i nuovi token in base al fatto che siano già comparsi nel testo finora, incoraggiando il modello a parlare di nuovi argomenti (predefinito: 0.0). | FLOAT | No | 0.0 to 5.0 |
+| `temperature` | Controlla la casualità dell'output. Valori più bassi rendono l'output più prevedibile, valori più alti lo rendono più creativo (predefinito: 0.7). | FLOAT | Sì | 0.01 a 2.0 |
+| `top_k` | Limita il pool di campionamento ai K token successivi più probabili. Un valore di 0 disabilita questo filtro (predefinito: 64). | INT | Sì | 0 a 1000 |
+| `top_p` | Usa il campionamento nucleus: mantiene il più piccolo insieme di token più probabili la cui probabilità cumulativa raggiunge questo valore. (predefinito: 0.95) | FLOAT | Sì | 0.0 a 1.0 |
+| `min_p` | Imposta una soglia minima di probabilità affinché i token siano considerati (predefinito: 0.05). | FLOAT | Sì | 0.0 a 1.0 |
+| `repetition_penalty` | Penalizza i token già generati per ridurre le ripetizioni. Un valore di 1.0 non applica alcuna penalità (predefinito: 1.05). | FLOAT | Sì | 0.0 a 5.0 |
+| `seed` | Un numero usato per inizializzare il generatore di numeri casuali per risultati riproducibili (predefinito: 0). | INT | Sì | 0 a 18446744073709551615 |
+| `presence_penalty` | Penalizza i nuovi token in base al fatto che siano già comparsi nel testo finora, incoraggiando il modello a parlare di nuovi argomenti (predefinito: 0.0). | FLOAT | No | 0.0 a 5.0 |
 
 **Nota:** I parametri di campionamento sopra riportati sono attivi e visibili nell'interfaccia del nodo solo quando `sampling_mode` è impostato su "on". Quando è impostato su "off", non è disponibile alcun parametro di campionamento e il nodo genera testo senza campionamento casuale.
 

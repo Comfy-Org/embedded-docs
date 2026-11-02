@@ -10,8 +10,8 @@ Questo nodo mostra un'anteprima di un modello 3D nell'interfaccia utente senza s
 | `model_3d_info` | Posizionamento di ciascun modello nella scena: posizione, rotazione e scala (spazio mondo con Y verso l'alto). Opzionale. Opzione avanzata. | LOAD3DMODELINFO | No | - |
 | `viewport_state` | Lo stato corrente della viewport contenente le informazioni sulla camera e sui modelli. | LOAD3D | Sì | - |
 | `camera_info` | Informazioni sulla camera della viewport: posizione, punto di mira, zoom e tipo. Opzionale. Opzione avanzata. | LOAD3DCAMERA | No | - |
-| `width` | Larghezza di render della viewport in pixel. Predefinito: 1024. | INT | Sì | 1 to 4096 |
-| `height` | Altezza di render della viewport in pixel. Predefinito: 1024. | INT | Sì | 1 to 4096 |
+| `width` | Larghezza di render della viewport in pixel. Predefinito: 1024. | INT | Sì | 1 a 4096 |
+| `height` | Altezza di render della viewport in pixel. Predefinito: 1024. | INT | Sì | 1 a 4096 |
 
 Nota: quando `camera_info` o `model_3d_info` non sono connessi, i loro valori vengono presi da `viewport_state` quando disponibili. Se `viewport_state` non contiene informazioni sulla camera, `camera_info` è None. Se `viewport_state` non contiene informazioni sul modello, `model_3d_info` ha come valore predefinito una lista vuota. Se `viewport_state` non è un dizionario, viene trattato come vuoto.
 

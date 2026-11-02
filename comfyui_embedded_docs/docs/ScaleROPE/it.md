@@ -7,12 +7,12 @@ Il nodo ScaleROPE consente di modificare il Rotary Position Embedding (ROPE) di 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `model` | Il modello i cui parametri ROPE verranno modificati. | MODEL | Sì | - |
-| `scale_x` | Il fattore di scala da applicare alla componente X del ROPE (predefinito: 1.0). | FLOAT | Sì | 0.0 - 100.0 (step 0.1) |
-| `shift_x` | Il valore di spostamento da applicare alla componente X del ROPE (predefinito: 0.0). | FLOAT | Sì | -256.0 - 256.0 (step 0.1) |
-| `scale_y` | Il fattore di scala da applicare alla componente Y del ROPE (predefinito: 1.0). | FLOAT | Sì | 0.0 - 100.0 (step 0.1) |
-| `shift_y` | Il valore di spostamento da applicare alla componente Y del ROPE (predefinito: 0.0). | FLOAT | Sì | -256.0 - 256.0 (step 0.1) |
-| `scale_t` | Il fattore di scala da applicare alla componente T (tempo) del ROPE (predefinito: 1.0). | FLOAT | Sì | 0.0 - 100.0 (step 0.1) |
-| `shift_t` | Il valore di spostamento da applicare alla componente T (tempo) del ROPE (predefinito: 0.0). | FLOAT | Sì | -256.0 - 256.0 (step 0.1) |
+| `scale_x` | Il fattore di scala da applicare alla componente X del ROPE (predefinito: 1.0). | FLOAT | Sì | 0.0 - 100.0 (passo: 0.1) |
+| `shift_x` | Il valore di spostamento da applicare alla componente X del ROPE (predefinito: 0.0). | FLOAT | Sì | -256.0 - 256.0 (passo: 0.1) |
+| `scale_y` | Il fattore di scala da applicare alla componente Y del ROPE (predefinito: 1.0). | FLOAT | Sì | 0.0 - 100.0 (passo: 0.1) |
+| `shift_y` | Il valore di spostamento da applicare alla componente Y del ROPE (predefinito: 0.0). | FLOAT | Sì | -256.0 - 256.0 (passo: 0.1) |
+| `scale_t` | Il fattore di scala da applicare alla componente T (tempo) del ROPE (predefinito: 1.0). | FLOAT | Sì | 0.0 - 100.0 (passo: 0.1) |
+| `shift_t` | Il valore di spostamento da applicare alla componente T (tempo) del ROPE (predefinito: 0.0). | FLOAT | Sì | -256.0 - 256.0 (passo: 0.1) |
 
 ## Output
 

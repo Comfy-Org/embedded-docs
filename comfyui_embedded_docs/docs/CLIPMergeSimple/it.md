@@ -8,7 +8,7 @@
 |-----------|-------------|--------------|--------------|------------|
 | `clip1` | Il primo modello CLIP da fondere. Funge da modello base per il processo di fusione. | CLIP | Sì | - |
 | `clip2` | Il secondo modello CLIP da fondere. Le sue patch chiave, a eccezione degli ID di posizione e della scala logit, vengono applicate al primo modello in base al rapporto specificato. | CLIP | Sì | - |
-| `ratio` | Determina la proporzione di caratteristiche del secondo modello da fondere nel primo modello. Un rapporto di 1.0 significa adottare completamente le caratteristiche del secondo modello, mentre 0.0 mantiene solo le caratteristiche del primo modello. Predefinito: 1.0. | FLOAT | Sì | 0.0 - 1.0 (step: 0.01) |
+| `ratio` | Determina la proporzione di caratteristiche del secondo modello da fondere nel primo modello. Un rapporto di 1.0 significa adottare completamente le caratteristiche del secondo modello, mentre 0.0 mantiene solo le caratteristiche del primo modello. Predefinito: 1.0. | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
 
 ## Output
 

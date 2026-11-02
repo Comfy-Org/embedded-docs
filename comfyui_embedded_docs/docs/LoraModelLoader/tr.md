@@ -9,7 +9,7 @@ LoraModelLoader düğümü, eğitilmiş LoRA (Low-Rank Adaptation) ağırlıklar
 | `model` | LoRA'nın uygulanacağı difüzyon modeli. | MODEL | Evet | - |
 | `lora` | Difüzyon modeline uygulanacak LoRA modeli. | LORA_MODEL | Evet | - |
 | `model_gücü` | Difüzyon modelinin ne kadar güçlü değiştirileceğini belirler. Bu değer negatif olabilir (varsayılan: 1.0). | FLOAT | Evet | -100.0 ile 100.0 |
-| `bypass` | Etkinleştirildiğinde, temel model ağırlıklarını değiştirmeden LoRA'yı bypass modunda uygular. Eğitim sırasında ve model ağırlıkları boşaltıldığında kullanışlıdır (varsayılan: False). | BOOLEAN | Evet | True or False |
+| `bypass` | Etkinleştirildiğinde, temel model ağırlıklarını değiştirmeden LoRA'yı bypass modunda uygular. Eğitim sırasında ve model ağırlıkları boşaltıldığında kullanışlıdır (varsayılan: False). | BOOLEAN | Evet | True veya False |
 
 **Not:** `strength_model` 0 olarak ayarlandığında, düğüm herhangi bir LoRA değişikliği uygulamadan orijinal modeli döndürür.
 

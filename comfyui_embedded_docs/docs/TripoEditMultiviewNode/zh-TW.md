@@ -7,10 +7,10 @@
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `multiview_task_id` | 要編輯其視圖的 Tripo: Image to Multiview 結果的工作 ID。必須來自 Tripo: Image to Multiview 節點。 | MULTIVIEW_TASK_ID | 是 | Task ID |
-| `front_prompt` | 描述要套用於前視圖之編輯的文字指令。當為空時，前視圖保持不變。預設：空字串。 | STRING | 否 | Multiline text |
-| `left_prompt` | 描述要套用於左視圖之編輯的文字指令。當為空時，左視圖保持不變。預設：空字串。 | STRING | 否 | Multiline text |
-| `back_prompt` | 描述要套用於後視圖之編輯的文字指令。當為空時，後視圖保持不變。預設：空字串。 | STRING | 否 | Multiline text |
-| `right_prompt` | 描述要套用於右視圖之編輯的文字指令。當為空時，右視圖保持不變。預設：空字串。 | STRING | 否 | Multiline text |
+| `front_prompt` | 描述要套用於前視圖之編輯的文字指令。當為空時，前視圖保持不變。預設：空字串。 | STRING | 否 | 多行文字 |
+| `left_prompt` | 描述要套用於左視圖之編輯的文字指令。當為空時，左視圖保持不變。預設：空字串。 | STRING | 否 | 多行文字 |
+| `back_prompt` | 描述要套用於後視圖之編輯的文字指令。當為空時，後視圖保持不變。預設：空字串。 | STRING | 否 | 多行文字 |
+| `right_prompt` | 描述要套用於右視圖之編輯的文字指令。當為空時，右視圖保持不變。預設：空字串。 | STRING | 否 | 多行文字 |
 
 注意：四個提示（`front_prompt`、`left_prompt`、`back_prompt`、`right_prompt`）中至少有一個必須包含非空文字；只有空白字元的文字會視為空，且如果所有提示皆為空，節點會引發錯誤。
 

@@ -11,8 +11,8 @@
 | `model` | המודל שישמש ליצירה. מודלי recraftv4_styles מיועדים ליצירה עקבית מבחינת סגנון ודורשים תמיד style_id או style_references. בחירת מודל משנה את אפשרויות ה-`size` הזמינות. | DYNAMIC_COMBO | כן | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
 | `prompt` | הנחיה ליצירת התמונה. מקסימום 10,000 תווים. | STRING | כן | N/A |
 | `negative_prompt` | קלט זה מתעלמים ממנו: הנחיה שלילית אינה נתמכת במודלים Recraft V4 ו-V4.1. | STRING | כן | N/A |
-| `n` | מספר התמונות ליצירה (ברירת מחדל: 1). | INT | כן | 1 to 6 |
-| `seed` | Seed שקובע אם הצומת צריך לרוץ מחדש; התוצאות בפועל אינן דטרמיניסטיות ללא תלות ב-Seed (ברירת מחדל: 0). | INT | כן | 0 to 18446744073709551615 |
+| `n` | מספר התמונות ליצירה (ברירת מחדל: 1). | INT | כן | 1 עד 6 |
+| `seed` | Seed שקובע אם הצומת צריך לרוץ מחדש; התוצאות בפועל אינן דטרמיניסטיות ללא תלות ב-Seed (ברירת מחדל: 0). | INT | כן | 0 עד 18446744073709551615 |
 | `recraft_controls` | בקרות נוספות אופציונליות על היצירה דרך הצומת Recraft Controls. | CUSTOM | לא | N/A |
 | `style_id` | UUID של סגנון וקטורי של Recraft V4 להחלה, למשל מהצומת Recraft V4 Create Style או מפלט style_id של הרצה קודמת. לא ניתן לשלב עם style_references. | STRING | לא | N/A |
 | `style_match` | עד כמה להצמד לסגנון: precise משחזר אותו בפרטים, flexible מתאים למראה הכללי. משמש רק כאשר מסופק סגנון (ברירת מחדל: "precise"). | COMBO | לא | `"precise"`<br>`"flexible"` |

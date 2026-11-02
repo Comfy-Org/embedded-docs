@@ -52,7 +52,7 @@ Bu parametreler `render_style` "openpose_3d" olduğunda görünür.
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `radius_m` | Uzuv kapsülü yarıçapı metre cinsinden (ince = çubuk benzeri). (varsayılan: 0.015) | FLOAT | Hayır | 0.004 - 0.1, adım 0.001 |
-| `include_hands` | 21+21 el anahtar noktasını 3B kapsüller olarak çizer. (varsayılan: True) | BOOLEAN | Hayır | True or False |
+| `include_hands` | 21+21 el anahtar noktasını 3B kapsüller olarak çizer. (varsayılan: True) | BOOLEAN | Hayır | True veya False |
 | `person_palette_falloff` | Kişi başına doygunluk azaltma: k izi 1 - falloff^k ile beyaza doğru karışır. 0. iz canlı kalır; 1.0 falloff'u devre dışı bırakır. (varsayılan: 0.6) | FLOAT | Hayır | 0.1 - 1.0, adım 0.05 |
 
 ### SCAIL Girdileri

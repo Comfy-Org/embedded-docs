@@ -9,8 +9,8 @@
 | `image` | התמונה שעליה יש להחיל העברת סגנון. | IMAGE | כן | - |
 | `reference_image` | תמונת העזר שממנה יש לחלץ את הסגנון. | IMAGE | כן | - |
 | `prompt` | הנחיית טקסט אופציונלית להכוונת העברת הסגנון. | STRING | לא | - |
-| `style_strength` | אחוז חוזק הסגנון (ברירת מחדל: 100). | INT | לא | 0 to 100 |
-| `structure_strength` | שומר על המבנה של התמונה המקורית (ברירת מחדל: 50). | INT | לא | 0 to 100 |
+| `style_strength` | אחוז חוזק הסגנון (ברירת מחדל: 100). | INT | לא | 0 עד 100 |
+| `structure_strength` | שומר על המבנה של התמונה המקורית (ברירת מחדל: 50). | INT | לא | 0 עד 100 |
 | `flavor` | וריאציית העברת סגנון. | COMBO | לא | "faithful"<br>"gen_z"<br>"psychedelia"<br>"detaily"<br>"clear"<br>"donotstyle"<br>"donotstyle_sharp" |
 | `engine` | בחירת מנוע עיבוד. | COMBO | לא | "balanced"<br>"definio"<br>"illusio"<br>"3d_cartoon"<br>"colorful_anime"<br>"caricature"<br>"real"<br>"super_real"<br>"softy" |
 | `portrait_mode` | הפעל מצב דיוקן לשיפורי פנים. | COMBO | לא | "disabled"<br>"enabled" |

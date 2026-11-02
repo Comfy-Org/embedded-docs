@@ -6,7 +6,7 @@ Dieser Node importiert ein externes 3D-Modell in Tripo, sodass Tripo-Nachbearbei
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model_3d` | Zu importierendes 3D-Modell (GLB / FBX / OBJ / STL, bis zu 150 MB). OBJ- und STL-Dateien enthalten keine eingebetteten Texturen. | FILE3D | Ja | GLB<br>FBX<br>OBJ<br>STL<br>Any 3D format |
+| `model_3d` | Zu importierendes 3D-Modell (GLB / FBX / OBJ / STL, bis zu 150 MB). OBJ- und STL-Dateien enthalten keine eingebetteten Texturen. | FILE3D | Ja | GLB<br>FBX<br>OBJ<br>STL<br>Beliebiges 3D-Format |
 
 **Hinweis:** Es werden nur die Formate GLB, FBX, OBJ und STL unterstützt. GLTF (.gltf) kann nicht importiert werden, da es auf externe Dateien verweist; exportieren Sie stattdessen eine einzelne GLB-Datei. Die Modelldatei darf höchstens 150 MB groß sein. GLB wird empfohlen, da Texturen den Import nur überstehen, wenn sie in der Datei eingebettet sind. OBJ- und STL-Dateien enthalten keine eingebetteten Texturen. Das Texturieren eines importierten Modells erfordert einen Textur-Prompt.
 

@@ -10,11 +10,11 @@ LTXVImgToVideo converte un'immagine di input in una rappresentazione latente vid
 | `negative` | Prompt di condizionamento negativo per evitare determinati elementi nel video | CONDITIONING | Sì | - |
 | `vae` | Modello VAE utilizzato per codificare l'immagine di input nello spazio latente | VAE | Sì | - |
 | `image` | Immagine di input da convertire in frame video | IMAGE | Sì | - |
-| `width` | Larghezza del video di output in pixel (predefinito: 768, passo: 32) | INT | Sì | 64 to MAX_RESOLUTION |
-| `height` | Altezza del video di output in pixel (predefinito: 512, passo: 32) | INT | Sì | 64 to MAX_RESOLUTION |
-| `length` | Numero di frame nel video generato (predefinito: 97, passo: 8) | INT | Sì | 9 to MAX_RESOLUTION |
-| `batch_size` | Numero di video da generare simultaneamente (predefinito: 1) | INT | Sì | 1 to 4096 |
-| `strength` | Controllo su quanto contenuto dell'immagine originale viene preservato nei primi frame del video generato. Un valore di 1.0 preserva completamente l'immagine originale, mentre 0.0 consente la massima modifica (predefinito: 1.0) | FLOAT | Sì | 0.0 to 1.0 |
+| `width` | Larghezza del video di output in pixel (predefinito: 768, passo: 32) | INT | Sì | 64 a MAX_RESOLUTION |
+| `height` | Altezza del video di output in pixel (predefinito: 512, passo: 32) | INT | Sì | 64 a MAX_RESOLUTION |
+| `length` | Numero di frame nel video generato (predefinito: 97, passo: 8) | INT | Sì | 9 a MAX_RESOLUTION |
+| `batch_size` | Numero di video da generare simultaneamente (predefinito: 1) | INT | Sì | 1 a 4096 |
+| `strength` | Controllo su quanto contenuto dell'immagine originale viene preservato nei primi frame del video generato. Un valore di 1.0 preserva completamente l'immagine originale, mentre 0.0 consente la massima modifica (predefinito: 1.0) | FLOAT | Sì | 0.0 a 1.0 |
 
 Nota: `width` e `height` cambiano con incrementi di 32 pixel, e `length` cambia con incrementi di 8 frame, in base alla compressione del latente video (32x nelle dimensioni spaziali e 8x nella dimensione temporale). Il latente video contiene ((length - 1) // 8) + 1 frame. L'immagine di input viene ridimensionata a `width` x `height` utilizzando un ridimensionamento bilineare con ritaglio centrale, e solo i primi tre canali vengono utilizzati per la codifica.
 

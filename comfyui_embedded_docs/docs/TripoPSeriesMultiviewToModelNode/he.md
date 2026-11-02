@@ -19,13 +19,13 @@
 | `model.image_back` | מבט אחור (180°). | IMAGE | לא | - |
 | `model.image_right` | מבט ימין (270°), הצד הימני של הנושא עצמו. | IMAGE | לא | - |
 | `model.quad` | מחזיר רשת עם רוב של מרובעים בפלט FBX במקום רשת משולשים בפלט GLB (ברירת מחדל: False). | BOOLEAN | כן | True/False |
-| `model.face_limit` | מספר פאות יעד. `-1` נותן ל-Tripo לבחור. כאשר `model.quad` מופעל, המגבלה היא 48 עד 25,000, אחרת 48 עד 50,000 (ברירת מחדל: -1). | INT | כן | -1, or 48 to 50000 |
+| `model.face_limit` | מספר פאות יעד. `-1` נותן ל-Tripo לבחור. כאשר `model.quad` מופעל, המגבלה היא 48 עד 25,000, אחרת 48 עד 50,000 (ברירת מחדל: -1). | INT | כן | -1, or 48 עד 50000 |
 | `model.texture` | רזולוציית טקסטורת צבע בסיס: standard היא 2K, detailed היא 4K ו-extreme היא 8K. `"none"` מחזיר רשת ללא טקסטורה (ברירת מחדל: `"standard"`). | COMBO | כן | `"standard"`<br>`"detailed"`<br>`"extreme"`<br>`"none"` |
 | `model.pbr` | מוסיף מפות מתכתיות, חספוס ונורמל לצבע הבסיס. מתעלמים ממנו כאשר `model.texture` הוא `"none"` (ברירת מחדל: True). | BOOLEAN | כן | True/False |
-| `model.model_seed` | זרע (seed) לגיאומטריה (ברירת מחדל: 42). | INT | כן | 0 to 2147483647 |
+| `model.model_seed` | זרע (seed) לגיאומטריה (ברירת מחדל: 42). | INT | כן | 0 עד 2147483647 |
 | `model.texture_alignment` | התאמת צבעי תמונות הקלט, או התאמת הטקסטורות לגיאומטריה שנוצרה. מתעלמים ממנו כאשר `model.texture` הוא `"none"` (ברירת מחדל: `"original_image"`). הגדרה מתקדמת. | COMBO | כן | `"original_image"`<br>`"geometry"` |
 | `model.orientation` | `"align_image"` מסובב את המודל לנקודת המבט של תמונות הקלט. מתעלמים ממנו כאשר `model.texture` הוא `"none"` (ברירת מחדל: `"default"`). הגדרה מתקדמת. | COMBO | כן | `"default"`<br>`"align_image"` |
-| `model.texture_seed` | זרע (seed) לטקסטורות (ברירת מחדל: 42). הגדרה מתקדמת. | INT | כן | 0 to 2147483647 |
+| `model.texture_seed` | זרע (seed) לטקסטורות (ברירת מחדל: 42). הגדרה מתקדמת. | INT | כן | 0 עד 2147483647 |
 | `model.auto_size` | מבצע סקיילינג למודל לגודלו במציאות במטרים דרך טרנספורמציית הסצנה שלו. מתעלמים ממנו כאשר `model.texture` הוא `"none"` (ברירת מחדל: False). הגדרה מתקדמת. | BOOLEAN | כן | True/False |
 | `model.export_uv` | פריסת UV לרשת כשהיא ללא טקסטורה. רשתות עם טקסטורה תמיד נפרסות (ברירת מחדל: True). הגדרה מתקדמת. | BOOLEAN | כן | True/False |
 | `model.compress_geometry` | הפעלת דחיסת גיאומטריה meshopt: קבצים קטנים בהרבה, אך תצוגת התלת-ממד של ComfyUI אינה יכולה להציג אותם. אינו חל על רשתות מרובעים (ברירת מחדל: False). הגדרה מתקדמת. | BOOLEAN | כן | True/False |

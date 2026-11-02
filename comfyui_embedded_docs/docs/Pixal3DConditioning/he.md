@@ -8,7 +8,7 @@
 |-----------|-------------|-----------|----------|-------|
 | `clip_vision_model` | DINOv3 ViT-L/16 ClipVision. | CLIP_VISION | כן | — |
 | `image` | תמונה שעברה עיבוד מקדים מ-ImageCropToMask (pad_factor=1.1 עבור Pixal3D). | IMAGE | כן | — |
-| `camera_angle_x` | שדה ראייה אופקי (FOV) במעלות (מוצג בתור `fov`). חבר MoGeGeometryToFOV (axis='horizontal', unit='degrees') לקבלת FoV לכל תמונה (תואם את ברירת המחדל במעלה הזרם). ברירת מחדל: 49.13. | FLOAT | כן | 1.0 – 170.0 (step 0.01) |
+| `camera_angle_x` | שדה ראייה אופקי (FOV) במעלות (מוצג בתור `fov`). חבר MoGeGeometryToFOV (axis='horizontal', unit='degrees') לקבלת FoV לכל תמונה (תואם את ברירת המחדל במעלה הזרם). ברירת מחדל: 49.13. | FLOAT | כן | 1.0 – 170.0 (צעד: 0.01) |
 
 ## פלטים
 

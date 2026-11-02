@@ -9,7 +9,7 @@ Bu düğüm, Mage-Flow-Edit modeli için bir düzenleme talimatını (istem) ve 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|---------|--------|
 | `clip` | Metin istemlerini tokenize etmek ve kodlamak için kullanılan CLIP modeli. | CLIP | Evet | |
-| `prompt` | Uygulanacak düzenleme talimatı (pozitif istem). | STRING | Evet | multiline, dynamic prompts enabled |
+| `prompt` | Uygulanacak düzenleme talimatı (pozitif istem). | STRING | Evet | Çok satırlı metin, dinamik istemler etkin |
 | `negative_prompt` | Kaçınılması gereken negatif istem. Varsayılan: boş dize (boş olduğunda dahili olarak bir boşluk kullanılır). Arayüzün gelişmiş bölümünde gösterilir. | STRING | Hayır | çok satırlı, dinamik istemler etkin |
 | `vae` | Referans görüntüleri gizli uzaya kodlamak için VAE modeli. Sağlanmazsa, conditioning'e referans gizli değerleri eklenmez. | VAE | Hayır | |
 | `images` | Düzenlenecek referans görüntüler. Kodlamadan önce tüm referanslar çıktı çözünürlüğüne yeniden boyutlandırılır. | IMAGE (otomatik büyüme) | Hayır | En fazla 16 görüntü (`image_1`…`image_16` adlarıyla), en az 0 |

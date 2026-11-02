@@ -8,10 +8,10 @@ Bu düğüm, iki Mochi AI modelini, farklı model bileşenleri üzerinde ince ay
 | --- | --- | --- | --- | --- |
 | `model1` | Birleştirilecek ilk model | MODEL | Evet | - |
 | `model2` | Birleştirilecek ikinci model | MODEL | Evet | - |
-| `pos_frequencies.` | Konumsal frekans enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
-| `t_embedder.` | Zaman gömücü enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
-| `t5_y_embedder.` | T5-Y gömücü enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
-| `t5_yproj.` | T5-Y projeksiyon enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
+| `pos_frequencies.` | Konumsal frekans enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
+| `t_embedder.` | Zaman gömücü enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
+| `t5_y_embedder.` | T5-Y gömücü enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
+| `t5_yproj.` | T5-Y projeksiyon enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
 | `bloklar.0.` | Blok 0 enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
 | `bloklar.1.` | Blok 1 enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
 | `bloklar.2.` | Blok 2 enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
@@ -60,7 +60,7 @@ Bu düğüm, iki Mochi AI modelini, farklı model bileşenleri üzerinde ince ay
 | `bloklar.45.` | Blok 45 enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
 | `bloklar.46.` | Blok 46 enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
 | `bloklar.47.` | Blok 47 enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
-| `final_layer.` | Son katman enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
+| `final_layer.` | Son katman enterpolasyonu için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
 
 ## Çıktılar
 

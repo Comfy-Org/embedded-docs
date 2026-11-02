@@ -11,7 +11,7 @@
 | `positive` | קונדישינינג חיובי שמכיל את מטא-הנתונים של generated-keyframe. המטא-נתונים מוסרים ממנו בפלט. | CONDITIONING | כן | N/A |
 | `negative` | קונדישינינג שלילי שמכיל את מטא-הנתונים של generated-keyframe. המטא-נתונים מוסרים ממנו בפלט. | CONDITIONING | כן | N/A |
 | `latent` | latent וידאו שמכיל את ה-keyframes שנוצרו. ה-keyframes מוסרים ממנו בפלט. | LATENT | כן | N/A |
-| `keyframes_to_batch` | מחזיר את ה-keyframes כאצווה של latents חד-פריימיים. השאר כבוי כדי לקבל אותם כ-latent רב-פריימי יחיד, וזה מה שה-latent upsampler ו-Add Generated Keyframes מאוחר יותר מצפים לו. | BOOLEAN | לא | default: False |
+| `keyframes_to_batch` | מחזיר את ה-keyframes כאצווה של latents חד-פריימיים. השאר כבוי כדי לקבל אותם כ-latent רב-פריימי יחיד, וזה מה שה-latent upsampler ו-Add Generated Keyframes מאוחר יותר מצפים לו. | BOOLEAN | לא | ברירת מחדל: False |
 
 ### הערות על הקלטים
 

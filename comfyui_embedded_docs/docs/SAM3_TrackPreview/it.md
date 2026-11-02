@@ -10,8 +10,8 @@ Questo nodo crea un'anteprima video degli oggetti tracciati, disegnando ciascun 
 | --- | --- | --- | --- | --- |
 | `track_data` | I dati di tracciamento contenenti maschere impacchettate e informazioni sugli oggetti da un nodo di tracciamento SAM3. | TRACK_DATA | Sì | - |
 | `images` | Immagini di input opzionali da usare come sfondo per l'anteprima. Se non fornite, viene usato uno sfondo nero. | IMAGE | No | - |
-| `opacity` | L'opacità della sovrapposizione colorata applicata agli oggetti tracciati (predefinito: 0.5). | FLOAT | No | 0.0 to 1.0 (step: 0.05) |
-| `fps` | La frequenza di fotogrammi del video di output (predefinito: 24.0). | FLOAT | No | 1.0 to 120.0 (step: 1.0) |
+| `opacity` | L'opacità della sovrapposizione colorata applicata agli oggetti tracciati (predefinito: 0.5). | FLOAT | No | 0.0 a 1.0 (passo: 0.05) |
+| `fps` | La frequenza di fotogrammi del video di output (predefinito: 24.0). | FLOAT | No | 1.0 a 120.0 (passo: 1.0) |
 
 ## Output
 

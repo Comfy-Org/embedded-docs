@@ -11,8 +11,8 @@
 | `decimation` | 頂點步幅。1 = 完整解析度，2 = 一半，依此類推（預設：1） | INT | 是 | 1 至 8 |
 | `discontinuity_threshold` | 捨棄 3x3 深度跨度超過此比例的三角形。0 = 關閉（預設：0.04） | FLOAT | 是 | 0.0 至 1.0 |
 | `confidence_threshold` | 排除每張影像正規化信心低於此值的像素。0 = 保留全部，1 = 僅保留信心最高的單一像素。當幾何具有信心圖（Small/Base 模型）時使用（預設：0.1） | FLOAT | 是 | 0.0 至 1.0 |
-| `use_sky_mask` | 從網格中排除天空機率像素（sky >= 0.5）。當幾何具有天空圖（Mono/Metric 模型）時使用（預設：True） | BOOLEAN | 是 | True or False |
-| `texture` | 使用來源影像作為基礎顏色紋理（預設：True） | BOOLEAN | 是 | True or False |
+| `use_sky_mask` | 從網格中排除天空機率像素（sky >= 0.5）。當幾何具有天空圖（Mono/Metric 模型）時使用（預設：True） | BOOLEAN | 是 | True 或 False |
+| `texture` | 使用來源影像作為基礎顏色紋理（預設：True） | BOOLEAN | 是 | True 或 False |
 
 具有非有限、零或負深度值的像素一律會從網格中排除。若產生的網格為空，則會引發錯誤；錯誤訊息會建議提高 `discontinuity_threshold`、降低 `confidence_threshold`，或停用 `use_sky_mask`。
 

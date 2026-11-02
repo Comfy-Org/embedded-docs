@@ -7,13 +7,13 @@ Questo nodo genera un video da una descrizione testuale utilizzando il modello K
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `model_name` | Il modello Kling specifico da usare per la generazione del video (predefinito: `"kling-v3-omni"`). | COMBO | Sì | `"kling-v3-omni"`<br>`"kling-video-o1"` |
-| `prompt` | Un prompt testuale che descrive il contenuto del video. Può includere sia descrizioni positive sia negative. Ignorato quando gli storyboard sono abilitati. | STRING | Sì | 0 to 2500 characters |
+| `prompt` | Un prompt testuale che descrive il contenuto del video. Può includere sia descrizioni positive sia negative. Ignorato quando gli storyboard sono abilitati. | STRING | Sì | 0 a 2500 caratteri |
 | `aspect_ratio` | La forma o le dimensioni del video da generare. | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `duration` | La durata del video in secondi (predefinito: 5). | INT | Sì | 3 to 15 seconds |
+| `duration` | La durata del video in secondi (predefinito: 5). | INT | Sì | 3 a 15 secondi |
 | `resolution` | La qualità o risoluzione in pixel del video (predefinito: `"1080p"`). Internamente viene mappata su qualità standard, pro o 4k. | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
 | `storyboards` | Genera una serie di segmenti video con prompt e durate individuali. Ignorato per il modello o1. | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
 | `generate_audio` | Indica se generare l'audio per il video (predefinito: False). | BOOLEAN | No | True / False |
-| `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed (predefinito: 0). | INT | No | 0 to 2147483647 |
+| `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed (predefinito: 0). | INT | No | 0 a 2147483647 |
 
 ### Sotto-input dello storyboard
 
@@ -21,8 +21,8 @@ Quando `storyboards` è impostato su un valore diverso da `"disabled"`, i seguen
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `storyboard_{i}_prompt` | Prompt per il segmento storyboard {i}. Massimo 512 caratteri. | STRING | Sì | 1 to 512 characters |
-| `storyboard_{i}_duration` | Durata per il segmento storyboard {i} in secondi (predefinito: 4). | INT | Sì | 1 to 15 seconds |
+| `storyboard_{i}_prompt` | Prompt per il segmento storyboard {i}. Massimo 512 caratteri. | STRING | Sì | 1 a 512 caratteri |
+| `storyboard_{i}_duration` | Durata per il segmento storyboard {i} in secondi (predefinito: 4). | INT | Sì | 1 a 15 secondi |
 
 ### Vincoli e limitazioni dei parametri
 

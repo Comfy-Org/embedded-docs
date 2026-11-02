@@ -7,7 +7,7 @@ Questo nodo applica impostazioni di campionamento in stile Stable Diffusion 3 a 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `model` | Il modello di input a cui applicare i parametri di campionamento SD3 | MODEL | Sì | - |
-| `shift` | Controlla il parametro di shift del campionamento (predefinito: 3.0) | FLOAT | Sì | 0.0 - 100.0 (step: 0.01) |
+| `shift` | Controlla il parametro di shift del campionamento (predefinito: 3.0) | FLOAT | Sì | 0.0 - 100.0 (passo: 0.01) |
 
 Nota: Il valore `shift` viene applicato insieme a un moltiplicatore interno fisso di 1000. Se il modello originale ha un'impostazione della scala di rumore, tale valore viene trasferito al modello modificato. Il modello originale non viene modificato; viene restituita una copia clonata e patchata.
 

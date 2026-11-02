@@ -20,8 +20,8 @@
 | `prompt` | 用於影片生成的提示詞（預設：空白）。 | STRING | 是 | 1 至 5000 個字元 |
 | `quality` | 輸出解析度。設定長邊：360p 為 640px，540p 為 1024px，720p 為 1280px，1080p 為 1920px（預設："720p"）。 | COMBO | 是 | "360p"<br>"540p"<br>"720p"<br>"1080p" |
 | `duration_seconds` | 生成影片的長度，以秒為單位（預設：5）。 | INT | 是 | 1 至 15 |
-| `generate_audio` | 生成影片時一併生成原生音軌（預設：true）。 | BOOLEAN | 是 | true or false |
-| `multi_clip` | 讓模型將影片切成多個鏡頭，而不是單一連續鏡頭（預設：false）。 | BOOLEAN | 是 | true or false |
+| `generate_audio` | 生成影片時一併生成原生音軌（預設：true）。 | BOOLEAN | 是 | true 或 false |
+| `multi_clip` | 讓模型將影片切成多個鏡頭，而不是單一連續鏡頭（預設：false）。 | BOOLEAN | 是 | true 或 false |
 | `seed` | 影片生成的種子。PixVerse 會記錄此值，但不會據此重現執行結果（預設：42，已啟用生成後控制）。 | INT | 是 | 0 至 2147483647 |
 | `negative_prompt` | 選填的文字描述，用於描述影片中不希望出現的元素（預設：空白）。 | STRING | 否 | 最多 2048 個字元 |
 | `style` | 選填的視覺風格，套用於整段影片（預設：無）。 | COMBO | 否 | 有多個選項可用（PixVerse V6 風格預設集） |
@@ -37,7 +37,7 @@
 | `prompt` | 用於影片生成的提示詞（預設：空白）。 | STRING | 是 | 1 至 5000 個字元 |
 | `quality` | 輸出解析度。設定長邊：360p 為 640px，540p 為 1024px，720p 為 1280px，1080p 為 1920px（預設："720p"）。 | COMBO | 是 | "360p"<br>"540p"<br>"720p"<br>"1080p" |
 | `duration_seconds` | 生成影片的長度，以秒為單位（預設：5）。 | INT | 是 | 1 至 15 |
-| `generate_audio` | 生成影片時一併生成原生音軌（預設：true）。 | BOOLEAN | 是 | true or false |
+| `generate_audio` | 生成影片時一併生成原生音軌（預設：true）。 | BOOLEAN | 是 | true 或 false |
 | `seed` | 影片生成的種子。PixVerse 會記錄此值，但不會據此重現執行結果（預設：42，已啟用生成後控制）。 | INT | 是 | 0 至 2147483647 |
 | `negative_prompt` | 選填的文字描述，用於描述影片中不希望出現的元素（預設：空白）。 | STRING | 否 | 最多 2048 個字元 |
 

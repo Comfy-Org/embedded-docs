@@ -7,9 +7,9 @@ Der Node „Resolution Selector“ berechnet die Pixelbreite und -höhe basieren
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `aspect_ratio` | Das Seitenverhältnis für die Ausgabeabmessungen (Standard: `"1:1 (Square)"`). | COMBO | Ja | `"1:1 (Square)"`<br>`"2:3 (Portrait Photo)"`<br>`"3:2 (Photo)"`<br>`"3:4 (Portrait Standard)"`<br>`"4:3 (Standard)"`<br>`"9:16 (Portrait Widescreen)"`<br>`"16:9 (Widescreen)"`<br>`"21:9 (Ultrawide)"` |
-| `megapixels` | Ziel-Gesamtauflösung in Megapixeln. 1,0 MP ≈ 1024x1024 für quadratisch (Standard: 1,0). | FLOAT | Ja | 0.1 - 16.0 (step: 0.1) |
+| `megapixels` | Ziel-Gesamtauflösung in Megapixeln. 1,0 MP ≈ 1024x1024 für quadratisch (Standard: 1,0). | FLOAT | Ja | 0.1 - 16.0 (Schritt: 0.1) |
 | `preview` | Live-Vorschau der berechneten Ausgabeauflösung. Dieses schreibgeschützte Widget wird automatisch aktualisiert und akzeptiert keine Benutzereingaben. | RESOLUTION_PREVIEW | Nein | N/A |
-| `multiple` | Nächstes Vielfaches des Ergebnisses, auf das die ausgewählte Auflösung eingestellt wird (Standard: 8). | INT | Nein | 8 - 128 (step: 4) |
+| `multiple` | Nächstes Vielfaches des Ergebnisses, auf das die ausgewählte Auflösung eingestellt wird (Standard: 8). | INT | Nein | 8 - 128 (Schritt: 4) |
 
 ## Ausgaben
 

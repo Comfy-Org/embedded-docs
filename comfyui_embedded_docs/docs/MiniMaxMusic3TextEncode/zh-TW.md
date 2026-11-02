@@ -10,7 +10,7 @@ MiniMax Music3 Text Encode 使用 MiniMax Music3 CLIP 模型，將文字描述�
 | `caption` | 描述要生成音樂的文字。支援多行文字與動態提示。 | STRING | 是 | - |
 | `歌詞` | 用於生成音樂的歌詞文字。支援多行文字與動態提示。 | STRING | 是 | - |
 | `種子` | 生成過程的可重現隨機種子。預設值：0。提供一個生成後控制小工具。 | INT | 是 | 0 至 18446744073709551615 (0xffffffffffffffff) |
-| `max_duration` | 最大時長（秒）；模型可提早結束歌曲。預設值：120.0。 | FLOAT | 是 | 0.04 to the model's maximum audio duration (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND), step 0.04 |
+| `max_duration` | 最大時長（秒）；模型可提早結束歌曲。預設值：120.0。 | FLOAT | 是 | 0.04 to the model's maximum audio duration (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND), 步進值: 0.04 |
 | `cfg_scale` | 無分類器引導尺度。預設值：模型常數 CFG_SCALE。進階參數。 | FLOAT | 是 | 0.0 至 100.0, step 0.1 (keeps 2 decimal places) |
 | `top_k` | 用於聲學 token 選擇的 Top-k 取樣值。預設值：模型常數 CFG_TOP_K。進階參數。 | INT | 是 | 1 to the model's vocabulary size (C0_VOCAB_SIZE) |
 

@@ -6,7 +6,7 @@ Tripo: Retopology nimmt ein hochauflösendes 3D-Modell, das von einem früheren 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model_task_id` | Task-ID des hochauflösenden Quellmodells. Akzeptiert eine Modell-Task-ID von einem Tripo-Generierungs-Node oder eine Segment-Task-ID von Tripo: Segment Model. | STRING | Ja | Tripo task ID |
+| `model_task_id` | Task-ID des hochauflösenden Quellmodells. Akzeptiert eine Modell-Task-ID von einem Tripo-Generierungs-Node oder eine Segment-Task-ID von Tripo: Segment Model. | STRING | Ja | Tripo-Aufgaben-ID |
 | `face_limit` | Zielanzahl der Flächen: 500–20.000 Dreiecke oder 500–10.000 Quads. -1 überlässt die Wahl Tripo. (Standard: -1) | INT | Ja | -1 (automatisch)<br>500 bis 20.000 (Dreiecke)<br>500 bis 10.000 (Quads) |
 | `quad` | Ausgabe als Quad-Mesh. Tripo liefert Quad-Meshes als FBX, daher erscheint das Ergebnis am FBX-Ausgang und der GLB-Ausgang bleibt leer. (Standard: False) | BOOLEAN | Ja | True<br>False (Standard) |
 | `bake` | Backt die Quelltexturen auf das niedrig aufgelöste Mesh. (Standard: True) | BOOLEAN | Nein | True (Standard)<br>False |

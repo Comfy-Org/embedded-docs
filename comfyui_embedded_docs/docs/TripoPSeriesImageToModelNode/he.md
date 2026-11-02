@@ -16,14 +16,14 @@
 | --- | --- | --- | --- | --- |
 | `model.image` | התמונה שממנה נוצר המודל. | IMAGE | כן | - |
 | `model.quad` | החזר רשת דומיננטית של מרובעים בפלט FBX במקום רשת משולשים בפלט GLB (ברירת מחדל: False). | BOOLEAN | כן | True/False |
-| `model.face_limit` | מספר הפאות המבוקש. `-1` נותן ל-Tripo לבחור. כאשר `model.quad` מופעל המגבלה היא 48 עד 25,000, אחרת 48 עד 50,000 (ברירת מחדל: -1). | INT | כן | -1, or 48 to 50000 |
+| `model.face_limit` | מספר הפאות המבוקש. `-1` נותן ל-Tripo לבחור. כאשר `model.quad` מופעל המגבלה היא 48 עד 25,000, אחרת 48 עד 50,000 (ברירת מחדל: -1). | INT | כן | -1, or 48 עד 50000 |
 | `model.texture` | רזולוציית טקסטורת צבע בסיס: standard היא 2K, detailed היא 4K ו-extreme היא 8K. `"none"` מחזיר רשת ללא טקסטורה (ברירת מחדל: `"standard"`). | COMBO | כן | `"standard"`<br>`"detailed"`<br>`"extreme"`<br>`"none"` |
 | `model.pbr` | הוסף מפות מתכתיות, חספוס ונורמל לצבע הבסיס. לא חל כאשר `model.texture` הוא `"none"` (ברירת מחדל: True). | BOOLEAN | כן | True/False |
-| `model.model_seed` | Seed עבור הגאומטריה (ברירת מחדל: 42). | INT | כן | 0 to 2147483647 |
+| `model.model_seed` | Seed עבור הגאומטריה (ברירת מחדל: 42). | INT | כן | 0 עד 2147483647 |
 | `model.texture_alignment` | התאם את הצבעים של תמונת הקלט, או התאם את הטקסטורות לגאומטריה שנוצרה. לא חל כאשר `model.texture` הוא `"none"` (ברירת מחדל: `"original_image"`). הגדרה מתקדמת. | COMBO | כן | `"original_image"`<br>`"geometry"` |
 | `model.orientation` | `"align_image"` מסובב את המודל לנקודת המבט של תמונת הקלט. לא חל כאשר `model.texture` הוא `"none"` (ברירת מחדל: `"default"`). הגדרה מתקדמת. | COMBO | כן | `"default"`<br>`"align_image"` |
 | `model.enable_image_autofix` | אפשר ל-Tripo לשפר תמונה ברזולוציה נמוכה או באיכות ירודה לפני המידול (ברירת מחדל: False). הגדרה מתקדמת. | BOOLEAN | כן | True/False |
-| `model.texture_seed` | Seed עבור הטקסטורות (ברירת מחדל: 42). הגדרה מתקדמת. | INT | כן | 0 to 2147483647 |
+| `model.texture_seed` | Seed עבור הטקסטורות (ברירת מחדל: 42). הגדרה מתקדמת. | INT | כן | 0 עד 2147483647 |
 | `model.auto_size` | כוונן את קנה המידה של המודל לגודלו בעולם האמיתי במטרים דרך טרנספורם הסצנה שלו. לא חל כאשר `model.texture` הוא `"none"` (ברירת מחדל: False). הגדרה מתקדמת. | BOOLEAN | כן | True/False |
 | `model.export_uv` | בצע UV unwrap לרשת כשהיא ללא טקסטורה. רשתות עם טקסטורה תמיד עוברות unwrap (ברירת מחדל: True). הגדרה מתקדמת. | BOOLEAN | כן | True/False |
 | `model.compress_geometry` | החל דחיסת גאומטריה meshopt: קבצים קטנים בהרבה, אך תצוגת התלת-ממד של ComfyUI לא יכולה להציג אותם. לא חל על רשתות מרובעים (ברירת מחדל: False). הגדרה מתקדמת. | BOOLEAN | כן | True/False |

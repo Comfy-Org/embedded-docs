@@ -7,7 +7,7 @@ Il nodo SplitSigmasDenoise divide una sequenza di valori sigma in due parti in b
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Range |
 | --- | --- | --- | --- | --- |
 | `sigmas` | La sequenza di valori sigma di input che rappresenta lo schedule del rumore | SIGMAS | Sì | - |
-| `denoise` | Il fattore di forza di denoising che determina dove dividere la sequenza sigma (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (step: 0.01) |
+| `denoise` | Il fattore di forza di denoising che determina dove dividere la sequenza sigma (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
 
 ## Output
 

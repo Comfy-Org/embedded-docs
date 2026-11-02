@@ -8,36 +8,36 @@ Le nœud ModelMergeSD1 fusionne deux modèles Stable Diffusion 1.x en ajustant l
 | --- | --- | --- | --- | --- |
 | `model1` | Le premier modèle à fusionner | MODEL | Oui | - |
 | `model2` | Le deuxième modèle à fusionner | MODEL | Oui | - |
-| `time_embed.` | Poids de mélange de la couche d'intégration temporelle (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `label_emb.` | Poids de mélange de la couche d'intégration des étiquettes (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.0.` | Poids de mélange du bloc d'entrée 0 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.1.` | Poids de mélange du bloc d'entrée 1 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.2.` | Poids de mélange du bloc d'entrée 2 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.3.` | Poids de mélange du bloc d'entrée 3 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.4.` | Poids de mélange du bloc d'entrée 4 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.5.` | Poids de mélange du bloc d'entrée 5 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.6.` | Poids de mélange du bloc d'entrée 6 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.7.` | Poids de mélange du bloc d'entrée 7 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.8.` | Poids de mélange du bloc d'entrée 8 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.9.` | Poids de mélange du bloc d'entrée 9 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.10.` | Poids de mélange du bloc d'entrée 10 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.11.` | Poids de mélange du bloc d'entrée 11 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `middle_block.0.` | Poids de mélange du bloc intermédiaire 0 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `middle_block.1.` | Poids de mélange du bloc intermédiaire 1 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `middle_block.2.` | Poids de mélange du bloc intermédiaire 2 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.0.` | Poids de mélange du bloc de sortie 0 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.1.` | Poids de mélange du bloc de sortie 1 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.2.` | Poids de mélange du bloc de sortie 2 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.3.` | Poids de mélange du bloc de sortie 3 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.4.` | Poids de mélange du bloc de sortie 4 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.5.` | Poids de mélange du bloc de sortie 5 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.6.` | Poids de mélange du bloc de sortie 6 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.7.` | Poids de mélange du bloc de sortie 7 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.8.` | Poids de mélange du bloc de sortie 8 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.9.` | Poids de mélange du bloc de sortie 9 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.10.` | Poids de mélange du bloc de sortie 10 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.11.` | Poids de mélange du bloc de sortie 11 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `out.` | Poids de mélange de la couche de sortie (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
+| `time_embed.` | Poids de mélange de la couche d'intégration temporelle (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `label_emb.` | Poids de mélange de la couche d'intégration des étiquettes (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `input_blocks.0.` | Poids de mélange du bloc d'entrée 0 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `input_blocks.1.` | Poids de mélange du bloc d'entrée 1 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `input_blocks.2.` | Poids de mélange du bloc d'entrée 2 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `input_blocks.3.` | Poids de mélange du bloc d'entrée 3 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `input_blocks.4.` | Poids de mélange du bloc d'entrée 4 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `input_blocks.5.` | Poids de mélange du bloc d'entrée 5 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `input_blocks.6.` | Poids de mélange du bloc d'entrée 6 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `input_blocks.7.` | Poids de mélange du bloc d'entrée 7 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `input_blocks.8.` | Poids de mélange du bloc d'entrée 8 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `input_blocks.9.` | Poids de mélange du bloc d'entrée 9 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `input_blocks.10.` | Poids de mélange du bloc d'entrée 10 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `input_blocks.11.` | Poids de mélange du bloc d'entrée 11 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `middle_block.0.` | Poids de mélange du bloc intermédiaire 0 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `middle_block.1.` | Poids de mélange du bloc intermédiaire 1 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `middle_block.2.` | Poids de mélange du bloc intermédiaire 2 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `output_blocks.0.` | Poids de mélange du bloc de sortie 0 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `output_blocks.1.` | Poids de mélange du bloc de sortie 1 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `output_blocks.2.` | Poids de mélange du bloc de sortie 2 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `output_blocks.3.` | Poids de mélange du bloc de sortie 3 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `output_blocks.4.` | Poids de mélange du bloc de sortie 4 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `output_blocks.5.` | Poids de mélange du bloc de sortie 5 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `output_blocks.6.` | Poids de mélange du bloc de sortie 6 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `output_blocks.7.` | Poids de mélange du bloc de sortie 7 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `output_blocks.8.` | Poids de mélange du bloc de sortie 8 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `output_blocks.9.` | Poids de mélange du bloc de sortie 9 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `output_blocks.10.` | Poids de mélange du bloc de sortie 10 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `output_blocks.11.` | Poids de mélange du bloc de sortie 11 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `out.` | Poids de mélange de la couche de sortie (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
 
 Tous les poids de mélange acceptent des valeurs de 0.0 à 1.0 et sont définis sur 1.0 par défaut, ce qui signifie que chaque composant du premier modèle est entièrement utilisé sauf ajustement.
 

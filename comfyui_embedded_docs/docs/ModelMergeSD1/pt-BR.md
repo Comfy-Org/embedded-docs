@@ -8,36 +8,36 @@ O nó ModelMergeSD1 mescla dois modelos Stable Diffusion 1.x, ajustando o quanto
 | --- | --- | --- | --- | --- |
 | `model1` | O primeiro modelo a ser mesclado | MODEL | Sim | - |
 | `model2` | O segundo modelo a ser mesclado | MODEL | Sim | - |
-| `time_embed.` | Peso de mesclagem da camada de incorporação temporal (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `label_emb.` | Peso de mesclagem da camada de incorporação de rótulos (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.0.` | Peso de mesclagem do bloco de entrada 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.1.` | Peso de mesclagem do bloco de entrada 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.2.` | Peso de mesclagem do bloco de entrada 2 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.3.` | Peso de mesclagem do bloco de entrada 3 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.4.` | Peso de mesclagem do bloco de entrada 4 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.5.` | Peso de mesclagem do bloco de entrada 5 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.6.` | Peso de mesclagem do bloco de entrada 6 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.7.` | Peso de mesclagem do bloco de entrada 7 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.8.` | Peso de mesclagem do bloco de entrada 8 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.9.` | Peso de mesclagem do bloco de entrada 9 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.10.` | Peso de mesclagem do bloco de entrada 10 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `input_blocks.11.` | Peso de mesclagem do bloco de entrada 11 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `middle_block.0.` | Peso de mesclagem do bloco intermediário 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `middle_block.1.` | Peso de mesclagem do bloco intermediário 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `middle_block.2.` | Peso de mesclagem do bloco intermediário 2 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.0.` | Peso de mesclagem do bloco de saída 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.1.` | Peso de mesclagem do bloco de saída 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.2.` | Peso de mesclagem do bloco de saída 2 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.3.` | Peso de mesclagem do bloco de saída 3 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.4.` | Peso de mesclagem do bloco de saída 4 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.5.` | Peso de mesclagem do bloco de saída 5 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.6.` | Peso de mesclagem do bloco de saída 6 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.7.` | Peso de mesclagem do bloco de saída 7 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.8.` | Peso de mesclagem do bloco de saída 8 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.9.` | Peso de mesclagem do bloco de saída 9 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.10.` | Peso de mesclagem do bloco de saída 10 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `output_blocks.11.` | Peso de mesclagem do bloco de saída 11 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
-| `out.` | Peso de mesclagem da camada de saída (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (step: 0.01) |
+| `time_embed.` | Peso de mesclagem da camada de incorporação temporal (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `label_emb.` | Peso de mesclagem da camada de incorporação de rótulos (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `input_blocks.0.` | Peso de mesclagem do bloco de entrada 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `input_blocks.1.` | Peso de mesclagem do bloco de entrada 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `input_blocks.2.` | Peso de mesclagem do bloco de entrada 2 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `input_blocks.3.` | Peso de mesclagem do bloco de entrada 3 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `input_blocks.4.` | Peso de mesclagem do bloco de entrada 4 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `input_blocks.5.` | Peso de mesclagem do bloco de entrada 5 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `input_blocks.6.` | Peso de mesclagem do bloco de entrada 6 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `input_blocks.7.` | Peso de mesclagem do bloco de entrada 7 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `input_blocks.8.` | Peso de mesclagem do bloco de entrada 8 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `input_blocks.9.` | Peso de mesclagem do bloco de entrada 9 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `input_blocks.10.` | Peso de mesclagem do bloco de entrada 10 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `input_blocks.11.` | Peso de mesclagem do bloco de entrada 11 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `middle_block.0.` | Peso de mesclagem do bloco intermediário 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `middle_block.1.` | Peso de mesclagem do bloco intermediário 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `middle_block.2.` | Peso de mesclagem do bloco intermediário 2 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `output_blocks.0.` | Peso de mesclagem do bloco de saída 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `output_blocks.1.` | Peso de mesclagem do bloco de saída 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `output_blocks.2.` | Peso de mesclagem do bloco de saída 2 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `output_blocks.3.` | Peso de mesclagem do bloco de saída 3 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `output_blocks.4.` | Peso de mesclagem do bloco de saída 4 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `output_blocks.5.` | Peso de mesclagem do bloco de saída 5 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `output_blocks.6.` | Peso de mesclagem do bloco de saída 6 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `output_blocks.7.` | Peso de mesclagem do bloco de saída 7 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `output_blocks.8.` | Peso de mesclagem do bloco de saída 8 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `output_blocks.9.` | Peso de mesclagem do bloco de saída 9 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `output_blocks.10.` | Peso de mesclagem do bloco de saída 10 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `output_blocks.11.` | Peso de mesclagem do bloco de saída 11 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
+| `out.` | Peso de mesclagem da camada de saída (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 (passo: 0.01) |
 
 Todos os pesos de mesclagem aceitam valores de 0.0 a 1.0 e são definidos como 1.0 por padrão, o que significa que cada componente do primeiro modelo é totalmente utilizado, a menos que seja ajustado.
 

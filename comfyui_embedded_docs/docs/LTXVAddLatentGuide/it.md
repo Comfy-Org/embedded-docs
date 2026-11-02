@@ -11,8 +11,8 @@ Il nodo LTXV Add Latent Guide fissa un latente già codificato come guida, per q
 | `vae` | Il modello VAE usato per leggere la formula dell'indice di downscale per il posizionamento dei frame. | VAE | Sì | N/A |
 | `latent` | Video latente di destinazione su cui viene fissata la guida. | LATENT | Sì | N/A |
 | `guiding_latent` | Latente della guida. La sua dimensione spaziale deve dividere quella del target per lo stesso numero intero su entrambi gli assi; una dimensione uguale la fissa così com'è, una dimensione dimezzata viene trattata come riferimento IC-LoRA x2. | LATENT | Sì | N/A |
-| `latent_idx` | Indice del frame latente da cui iniziare la guida, contato in frame latenti anziché in frame pixel. I valori negativi posizionano la guida su frame precedenti all'inizio del latente, non contati a ritroso dalla sua fine. Predefinito: 0. | INT | Sì | -9999 to 9999 |
-| `strength` | Limitato a 1.0. Una guida dilatata contrassegna le sue posizioni di padding con una maschera denoise negativa, così il modello le scarta; sopra 1.0 anche le posizioni mantenute diventerebbero negative e l'intera guida verrebbe scartata. Per amplificare oltre 1.0, usa invece `attention_mask`. Predefinito: 1.0. | FLOAT | Sì | 0.0 to 1.0, step 0.01 |
+| `latent_idx` | Indice del frame latente da cui iniziare la guida, contato in frame latenti anziché in frame pixel. I valori negativi posizionano la guida su frame precedenti all'inizio del latente, non contati a ritroso dalla sua fine. Predefinito: 0. | INT | Sì | -9999 a 9999 |
+| `strength` | Limitato a 1.0. Una guida dilatata contrassegna le sue posizioni di padding con una maschera denoise negativa, così il modello le scarta; sopra 1.0 anche le posizioni mantenute diventerebbero negative e l'intera guida verrebbe scartata. Per amplificare oltre 1.0, usa invece `attention_mask`. Predefinito: 1.0. | FLOAT | Sì | 0.0 a 1.0, passo: 0.01 |
 | `attention_mask` | Maschera spaziale opzionale nello spazio pixel. Controlla l'influenza del condizionamento per regione tramite self-attention, moltiplicata per `strength`. | MASK | No | N/A |
 
 ### Note

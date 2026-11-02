@@ -10,7 +10,7 @@ Questo nodo aggiunge texture a un modello 3D esistente di un flusso di lavoro Tr
 |-----------|-------------|--------------|--------------|------------|
 | `model_task_id` | ID attività del modello sorgente prodotto da un nodo Tripo precedente (generazione modello o segmentazione modello). | MODEL_TASK_ID / SEGMENT_TASK_ID | Sì | - |
 | `pbr` | Mappe materiale PBR (colore base, metallico, rugosità, normali); disattivato produce una texture a tinta unita. (predefinito: true) | BOOLEAN | No | true<br>false |
-| `texture_seed` | Seed utilizzato per la generazione della texture. (predefinito: 42) Input avanzato. | INT | No | 0 to 2147483647 |
+| `texture_seed` | Seed utilizzato per la generazione della texture. (predefinito: 42) Input avanzato. | INT | No | 0 a 2147483647 |
 | `texture_quality` | Qualità delle texture generate. `detailed` = texture HD, `extreme` = texture 8K Ultra. (predefinito: "standard") Input avanzato. | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | Modalità di allineamento delle texture al modello. (predefinito: "original_image") Input avanzato. | COMBO | No | "original_image"<br>"geometry" |
 | `texture_prompt` | Guida testuale opzionale per la texturizzazione. In pratica richiesto per i modelli importati (Tripo: Import Model), che non hanno un'immagine sorgente da cui dedurre i colori. Non può essere combinato con immagini di riferimento. (predefinito: vuoto) | STRING | No | - |

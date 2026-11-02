@@ -7,7 +7,7 @@ Questo nodo fissa un'immagine di guida a un momento specifico del video di outpu
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `image` | L'immagine di guida da posizionare nel momento scelto del video di output. | IMAGE | Sì | - |
-| `position` | Come posizionare questa immagine sulla timeline del video di output. Scegli tra temporizzazione assoluta (secondi dall'inizio) o temporizzazione frazionaria (frazione della durata del video). Selezionando un'opzione viene mostrato il sottoparametro corrispondente. | COMBO | Sì | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
+| `position` | Come posizionare questa immagine sulla timeline del video di output. Scegli tra temporizzazione assoluta (secondi dall'inizio) o temporizzazione frazionaria (frazione della durata del video). Selezionando un'opzione viene mostrato il sottoparametro corrispondente. | COMBO | Sì | `Absolute (seconds)`<br>`Fraction (0.0 a 1.0)` |
 | `prompt_images` | Immagini di prompt precedenti opzionali da concatenare con questa. Collega qui l'output di un altro nodo Runway Aleph2 Prompt Image per creare una catena di massimo 5 immagini di guida. | PROMPT_IMAGE_CHAIN | No | - |
 
 **Dettagli della modalità di posizione:**
