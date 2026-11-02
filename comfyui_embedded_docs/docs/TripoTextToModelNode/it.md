@@ -7,7 +7,7 @@ Questo nodo legacy genera modelli 3D finiti a partire da una descrizione testual
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `prompt` | Descrizione testuale del modello 3D da generare (multiriga). Questo parametro è obbligatorio e non può essere vuoto. | STRING | Sì | - |
-| `negative_prompt` | Descrizione testuale di ciò che si desidera evitare nel modello generato (multiriga). Fino a 255 caratteri. Viene inviato all'API solo quando non è vuoto. | STRING | No | Up to 255 caratteri |
+| `negative_prompt` | Descrizione testuale di ciò che si desidera evitare nel modello generato (multiriga). Fino a 255 caratteri. Viene inviato all'API solo quando non è vuoto. | STRING | No | fino a 255 caratteri |
 | `model_version` | Versione del modello Tripo da utilizzare per la generazione (predefinito: v3_1_20260211). | COMBO | No | Diverse opzioni disponibili |
 | `style` | Non più supportato da Tripo e ignorato. Mantenuto per i flussi di lavoro più datati (predefinito: "None"). | COMBO | No | Diverse opzioni disponibili |
 | `texture` | Genera le mappe di texture. Se disattivato restituisce la geometria nuda e ignora `pbr` (predefinito: True). | BOOLEAN | No | true / false |

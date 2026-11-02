@@ -7,7 +7,7 @@ Bu düğüm, "Elucidating the Exposure Bias in Diffusion Models" (arxiv.org/abs/
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Epsilon ölçekleme yamasının uygulanacağı model. | MODEL | Evet | - |
-| `ölçeklendirme_faktörü` | Öngörülen gürültünün ölçeklendirildiği faktör. 1.0'den büyük bir değer gürültüyü azaltırken, 1.0'den küçük bir değer artırır (varsayılan: 1.005). Bu gelişmiş bir parametredir. | FLOAT | Hayır | 0.5 - 1.5 (step: 0.001) |
+| `ölçeklendirme_faktörü` | Öngörülen gürültünün ölçeklendirildiği faktör. 1.0'den büyük bir değer gürültüyü azaltırken, 1.0'den küçük bir değer artırır (varsayılan: 1.005). Bu gelişmiş bir parametredir. | FLOAT | Hayır | 0.5 - 1.5 (adım: 0.001) |
 
 Not: `scaling_factor` 0 olarak ayarlanırsa, düğüm sıfıra bölmeyi önlemek için otomatik olarak onu çok küçük bir değerle (1e-9) değiştirir. Arayüzün minimum değeri olan 0.5 normalde bunun olmasını engeller.
 

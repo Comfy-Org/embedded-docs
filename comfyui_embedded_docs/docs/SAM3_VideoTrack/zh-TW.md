@@ -9,7 +9,7 @@
 | `影像` | 以批次影像形式提供的影片幀 | IMAGE | 是 | Batched video frames |
 | `model` | 用於追蹤的 SAM3 模型 | MODEL | 是 | SAM3 model |
 | `初始 mask` | 要追蹤的第一幀遮罩（每個物件一個） | MASK | 否 | One mask per object |
-| `條件` | 用於在追蹤期間偵測新物件的文字條件 | CONDITIONING | 否 | Text conditioning |
+| `條件` | 用於在追蹤期間偵測新物件的文字條件 | CONDITIONING | 否 | 文字 conditioning |
 | `偵測閾值` | 文字提示偵測的分數閾值（預設值：0.5） | FLOAT | 否 | 0.0 至 1.0 （步進值：0.01） |
 | `最大物件數` | 最大追蹤物件數。初始遮罩會計入此上限。0 會使用內部上限 64。（預設值：4） | INT | 否 | 0 至 64 |
 | `偵測間隔` | 每 N 幀執行偵測（1=每一幀）。較高的值可節省運算。（預設值：1） | INT | 否 | 1 or higher |

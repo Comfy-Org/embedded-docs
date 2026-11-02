@@ -14,9 +14,9 @@ WanInfiniteTalkToVideo, ses girdisinden video dizileri oluşturur. Bir veya iki 
 | `pozitif` | Üretimi yönlendiren pozitif koşullandırma. | CONDITIONING | Evet | - |
 | `negatif` | Üretimi yönlendiren negatif koşullandırma. | CONDITIONING | Evet | - |
 | `vae` | Görüntüleri gizli uzaya kodlamak ve gizli uzaydan çözmek için kullanılan VAE. | VAE | Evet | - |
-| `genişlik` | Çıktı videosunun piksel cinsinden genişliği. 16'ya bölünebilir olmalıdır. (varsayılan: 832) | INT | Evet | 16 - MAX_RESOLUTION (step 16) |
-| `yükseklik` | Çıktı videosunun piksel cinsinden yüksekliği. 16'ya bölünebilir olmalıdır. (varsayılan: 480) | INT | Evet | 16 - MAX_RESOLUTION (step 16) |
-| `uzunluk` | Oluşturulacak kare sayısı. (varsayılan: 81) | INT | Evet | 1 - MAX_RESOLUTION (step 4) |
+| `genişlik` | Çıktı videosunun piksel cinsinden genişliği. 16'ya bölünebilir olmalıdır. (varsayılan: 832) | INT | Evet | 16 - MAX_RESOLUTION (adım: 16) |
+| `yükseklik` | Çıktı videosunun piksel cinsinden yüksekliği. 16'ya bölünebilir olmalıdır. (varsayılan: 480) | INT | Evet | 16 - MAX_RESOLUTION (adım: 16) |
+| `uzunluk` | Oluşturulacak kare sayısı. (varsayılan: 81) | INT | Evet | 1 - MAX_RESOLUTION (adım: 4) |
 | `clip_vision_output` | Ek koşullandırma için isteğe bağlı CLIP görüş çıktısı. | CLIP_VISION_OUTPUT | Hayır | - |
 | `başlangıç_görseli` | Video dizisini başlatmak için isteğe bağlı başlangıç görüntüsü. | IMAGE | Hayır | - |
 | `audio_encoder_output_1` | İlk konuşmacı için özellikler içeren birincil ses kodlayıcı çıktısı. | AUDIO_ENCODER_OUTPUT | Evet | - |

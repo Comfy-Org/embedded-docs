@@ -7,7 +7,7 @@ Nano Banana 2 düğümü, Gemini 3.1 Flash Image modelini kullanarak Google Vert
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Üretilecek görseli veya uygulanacak düzenlemeleri açıklayan metin istemi. Modelin uyması gereken tüm kısıtlamaları, stilleri veya ayrıntıları ekleyin. Boş veya yalnızca boşluk karakterlerinden oluşamaz. (varsayılan: boş) | STRING | Evet | N/A |
-| `model` | Görsel üretimi için kullanılacak Gemini modeli. | COMBO | Evet | "Nano Banana 2 (Gemini 3.1 Flash Image)" |
+| `model` | Görsel üretimi için kullanılacak Gemini modeli. | COMBO | Evet | "Nano Banana 2 (Gemini 3.1 Flash Görüntü)" |
 | `seed` | `seed` belirli bir değere sabitlendiğinde, model yinelenen istekler için aynı yanıtı sağlamak amacıyla elinden geleni yapar. Belirlenimci çıktı garanti edilmez. Ayrıca, modeli veya sıcaklık gibi parametre ayarlarını değiştirmek, aynı `seed` değerini kullansanız bile yanıtta farklılıklara yol açabilir. Varsayılan olarak rastgele bir `seed` değeri kullanılır. (varsayılan: 42) | INT | Evet | 0 - 18446744073709551615 |
 | `aspect_ratio` | 'auto' olarak ayarlanırsa girdi görselinizin en boy oranıyla eşleşir; görsel sağlanmazsa genellikle 16:9 oranında bir görsel üretilir. (varsayılan: "auto") | COMBO | Evet | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"4:5"<br>"5:4"<br>"9:16"<br>"16:9"<br>"21:9" |
 | `resolution` | Hedef çıktı çözünürlüğü. 2K/4K için yerel Gemini üst ölçekleyicisi kullanılır. | COMBO | Evet | "1K"<br>"2K"<br>"4K" |

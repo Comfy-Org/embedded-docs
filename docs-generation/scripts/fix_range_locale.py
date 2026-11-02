@@ -59,20 +59,20 @@ FORMAT_TOKENS = {
 
 # Connectives and unit words, taken from the corpus conventions.
 TOKENS: dict[str, dict[str, str]] = {
-    "zh":     {"to": "到", "step": "步长", "default": "默认", "or": "或", "min": "最小", "max": "最大", "unlimited": "无限制", "images": "张图像", "seconds": "秒", "videos": "个视频", "clips": "段", "characters": "个字符"},
-    "zh-TW":  {"to": "至", "step": "步進值", "default": "預設", "or": "或", "min": "最小", "max": "最大", "unlimited": "無限制", "images": "張影像", "seconds": "秒", "videos": "個影片", "clips": "段", "characters": "個字元"},
-    "ja":     {"to": "～", "step": "ステップ", "default": "デフォルト", "or": "または", "min": "最小", "max": "最大", "unlimited": "無制限", "images": "枚の画像", "seconds": "秒", "videos": "本の動画", "clips": "個のクリップ", "characters": "文字"},
-    "ko":     {"to": " ~ ", "step": "단계", "default": "기본값", "or": "또는", "min": "최소", "max": "최대", "unlimited": "무제한", "images": "개 이미지", "seconds": "초", "videos": "개 동영상", "clips": "개 클립", "characters": "자"},
-    "ru":     {"to": "до", "step": "шаг", "default": "по умолчанию", "or": "или", "min": "мин.", "max": "макс.", "unlimited": "без ограничений", "images": "изображений", "seconds": "секунд", "videos": "видео", "clips": "клипов", "characters": "символов"},
-    "de":     {"to": "bis", "step": "Schritt", "default": "Standard", "or": "oder", "min": "Min.", "max": "Max.", "unlimited": "unbegrenzt", "images": "Bilder", "seconds": "Sekunden", "videos": "Videos", "clips": "Clips", "characters": "Zeichen"},
-    "fr":     {"to": "à", "step": "pas", "default": "par défaut", "or": "ou", "min": "min.", "max": "max.", "unlimited": "illimité", "images": "images", "seconds": "secondes", "videos": "vidéos", "clips": "clips", "characters": "caractères"},
-    "es":     {"to": "a", "step": "paso", "default": "predeterminado", "or": "o", "min": "mín.", "max": "máx.", "unlimited": "ilimitado", "images": "imágenes", "seconds": "segundos", "videos": "videos", "clips": "clips", "characters": "caracteres"},
-    "it":     {"to": "a", "step": "passo", "default": "predefinito", "or": "o", "min": "min.", "max": "max.", "unlimited": "illimitato", "images": "immagini", "seconds": "secondi", "videos": "video", "clips": "clip", "characters": "caratteri"},
-    "pt-BR":  {"to": "a", "step": "passo", "default": "padrão", "or": "ou", "min": "mín.", "max": "máx.", "unlimited": "ilimitado", "images": "imagens", "seconds": "segundos", "videos": "vídeos", "clips": "clipes", "characters": "caracteres"},
-    "ar":     {"to": "إلى", "step": "خطوة", "default": "افتراضي", "or": "أو", "min": "الحد الأدنى", "max": "الحد الأقصى", "unlimited": "غير محدود", "images": "صور", "seconds": "ثوانٍ", "videos": "فيديوهات", "clips": "مقاطع", "characters": "حرفًا"},
-    "tr":     {"to": "ile", "step": "adım", "default": "varsayılan", "or": "veya", "min": "min.", "max": "maks.", "unlimited": "sınırsız", "images": "görsel", "seconds": "saniye", "videos": "video", "clips": "klip", "characters": "karakter"},
-    "fa":     {"to": "تا", "step": "گام", "default": "پیش‌فرض", "or": "یا", "min": "حداقل", "max": "حداکثر", "unlimited": "نامحدود", "images": "تصویر", "seconds": "ثانیه", "videos": "ویدیو", "clips": "کلیپ", "characters": "نویسه"},
-    "he":     {"to": "עד", "step": "צעד", "default": "ברירת מחדל", "or": "או", "min": "מינימום", "max": "מקסימום", "unlimited": "ללא הגבלה", "images": "תמונות", "seconds": "שניות", "videos": "סרטונים", "clips": "קטעים", "characters": "תווים"},
+    "zh":     {"to": "到", "step": "步长", "default": "默认", "or": "或", "min": "最小", "max": "最大", "options": "个选项", "upto": "最多", "unlimited": "无限制", "images": "张图像", "seconds": "秒", "videos": "个视频", "clips": "段", "characters": "个字符"},
+    "zh-TW":  {"to": "至", "step": "步進值", "default": "預設", "or": "或", "min": "最小", "max": "最大", "options": "個選項", "upto": "最多", "unlimited": "無限制", "images": "張影像", "seconds": "秒", "videos": "個影片", "clips": "段", "characters": "個字元"},
+    "ja":     {"to": "～", "step": "ステップ", "default": "デフォルト", "or": "または", "min": "最小", "max": "最大", "options": "個のオプション", "upto": "最大", "unlimited": "無制限", "images": "枚の画像", "seconds": "秒", "videos": "本の動画", "clips": "個のクリップ", "characters": "文字"},
+    "ko":     {"to": " ~ ", "step": "단계", "default": "기본값", "or": "또는", "min": "최소", "max": "최대", "options": "개 옵션", "upto": "최대", "unlimited": "무제한", "images": "개 이미지", "seconds": "초", "videos": "개 동영상", "clips": "개 클립", "characters": "자"},
+    "ru":     {"to": "до", "step": "шаг", "default": "по умолчанию", "or": "или", "min": "мин.", "max": "макс.", "options": "вариантов", "upto": "до", "unlimited": "без ограничений", "images": "изображений", "seconds": "секунд", "videos": "видео", "clips": "клипов", "characters": "символов"},
+    "de":     {"to": "bis", "step": "Schritt", "default": "Standard", "or": "oder", "min": "Min.", "max": "Max.", "options": "Optionen", "upto": "bis zu", "unlimited": "unbegrenzt", "images": "Bilder", "seconds": "Sekunden", "videos": "Videos", "clips": "Clips", "characters": "Zeichen"},
+    "fr":     {"to": "à", "step": "pas", "default": "par défaut", "or": "ou", "min": "min.", "max": "max.", "options": "options", "upto": "jusqu'a", "unlimited": "illimité", "images": "images", "seconds": "secondes", "videos": "vidéos", "clips": "clips", "characters": "caractères"},
+    "es":     {"to": "a", "step": "paso", "default": "predeterminado", "or": "o", "min": "mín.", "max": "máx.", "options": "opciones", "upto": "hasta", "unlimited": "ilimitado", "images": "imágenes", "seconds": "segundos", "videos": "videos", "clips": "clips", "characters": "caracteres"},
+    "it":     {"to": "a", "step": "passo", "default": "predefinito", "or": "o", "min": "min.", "max": "max.", "options": "opzioni", "upto": "fino a", "unlimited": "illimitato", "images": "immagini", "seconds": "secondi", "videos": "video", "clips": "clip", "characters": "caratteri"},
+    "pt-BR":  {"to": "a", "step": "passo", "default": "padrão", "or": "ou", "min": "mín.", "max": "máx.", "options": "opções", "upto": "até", "unlimited": "ilimitado", "images": "imagens", "seconds": "segundos", "videos": "vídeos", "clips": "clipes", "characters": "caracteres"},
+    "ar":     {"to": "إلى", "step": "خطوة", "default": "افتراضي", "or": "أو", "min": "الحد الأدنى", "max": "الحد الأقصى", "options": "خيارات", "upto": "حتى", "unlimited": "غير محدود", "images": "صور", "seconds": "ثوانٍ", "videos": "فيديوهات", "clips": "مقاطع", "characters": "حرفًا"},
+    "tr":     {"to": "ile", "step": "adım", "default": "varsayılan", "or": "veya", "min": "min.", "max": "maks.", "options": "seçenek", "upto": "en fazla", "unlimited": "sınırsız", "images": "görsel", "seconds": "saniye", "videos": "video", "clips": "klip", "characters": "karakter"},
+    "fa":     {"to": "تا", "step": "گام", "default": "پیش‌فرض", "or": "یا", "min": "حداقل", "max": "حداکثر", "options": "گزینه", "upto": "حداکثر", "unlimited": "نامحدود", "images": "تصویر", "seconds": "ثانیه", "videos": "ویدیو", "clips": "کلیپ", "characters": "نویسه"},
+    "he":     {"to": "עד", "step": "צעד", "default": "ברירת מחדל", "or": "או", "min": "מינימום", "max": "מקסימום", "options": "אפשרויות", "upto": "עד", "unlimited": "ללא הגבלה", "images": "תמונות", "seconds": "שניות", "videos": "סרטונים", "clips": "קטעים", "characters": "תווים"},
 }
 
 # Recurring prose cells, translated per language following the corpus.
@@ -198,6 +198,10 @@ def localize(cell: str, lang: str) -> tuple[str, str] | None:
             return f"от {a} до {b}"
         return f"{a} {tok['to']} {b}"
     out = TO_RE.sub(_to, out)
+    out = re.sub(r"(\d+)\s+options\b",
+                 lambda m: m.group(1) + " " + tok.get("options", "options"), out)
+    out = re.sub(r"\bUp to\s+(\d+)",
+                 lambda m: tok.get("upto", "Up to") + " " + m.group(1), out)
     # localize a unit word only when it directly follows a number
     out = re.sub(
         r"(\d+)\s+(images|seconds|videos|clips|characters)\b",
@@ -205,68 +209,100 @@ def localize(cell: str, lang: str) -> tuple[str, str] | None:
         out,
     )
 
+    # 3. prose phrases that survive inside a larger cell, e.g. after the mechanical
+    # pass turned "Any integer (default: 0)" into "Any integer (默认: 0)".
+    for phrase, key in sorted(PROSE.items(), key=lambda kv: -len(kv[0])):
+        if len(phrase) < 4:
+            continue
+        tr = PROSE_I18N[key].get(lang)
+        if not tr or tr == phrase:
+            continue
+        out = re.sub(r"\b" + re.escape(phrase) + r"\b", tr, out)
+
     if out != c:
-        return out, "mechanical"
+        return out, "mechanical" if out != c else None
     return None
 
 
-def parse_range_by_param(path: Path) -> dict[str, str]:
+def parse_tables(path: Path) -> list[dict]:
+    """Parse every markdown table: its Range column index and its data rows.
+
+    Rows are matched between `en` and a translation by table position, not by
+    parameter name: translations sometimes rename the parameter (``ckpt_name``
+    became ``Checkpoint名称``) or drop the backticks, which made name-based
+    matching miss those rows entirely.
+    """
     if not path.exists():
-        return {}
-    out: dict[str, str] = {}
-    idx = None
+        return []
+    tables: list[dict] = []
+    current: dict | None = None
+    header_seen = False
     for line in path.read_text(encoding="utf-8", errors="ignore").split("\n"):
         s = line.strip()
         if not s.startswith("|"):
-            idx = None
+            current, header_seen = None, False
             continue
         cells = [x.strip() for x in s.split("|")[1:-1]]
         if all(set(x) <= {"-", ":", " ", "|", "—"} for x in cells):
             continue
-        if idx is None:
+        if current is None:
+            current = {"range_idx": None, "rows": []}
+            tables.append(current)
+            header_seen = False
+        if not header_seen:
             for i, x in enumerate(cells):
                 if x.strip().strip("*`").lower() in RANGE_HEADERS:
-                    idx = i
+                    current["range_idx"] = i
                     break
+            header_seen = True
             continue
-        if idx < len(cells) and cells[0].startswith("`"):
-            out[cells[0].strip("`")] = cells[idx]
+        current["rows"].append(cells)
+    return [t for t in tables if t["range_idx"] is not None]
+
+
+def range_cells(path: Path) -> list[tuple[int, int, str]]:
+    """[(table_index, row_index, range_cell)] for every row with a Range column."""
+    out = []
+    for ti, t in enumerate(parse_tables(path)):
+        ri = t["range_idx"]
+        for rj, cells in enumerate(t["rows"]):
+            if ri < len(cells):
+                out.append((ti, rj, cells[ri]))
     return out
 
 
-def apply_replacements(text: str, pending: dict[str, str]) -> str:
-    """Rewrite the Range cell of matching rows, tracking the column per table.
-
-    Data rows do not contain the word "Range" - only the header row does - so the
-    column index has to be resolved from the enclosing table's header.
-    """
+def apply_replacements(text: str, replacements: dict[tuple[int, int], str]) -> str:
+    """Rewrite Range cells addressed by (table_index, row_index)."""
     out: list[str] = []
-    col: int | None = None
-    seen_header = False
+    ti = -1
+    range_idx = None
+    header_seen = False
+    rj = -1
     for line in text.split("\n"):
         s = line.strip()
         if not s.startswith("|"):
-            col, seen_header = None, False
+            range_idx, header_seen = None, False
             out.append(line)
             continue
         cells = [x.strip() for x in s.split("|")[1:-1]]
         if all(set(x) <= {"-", ":", " ", "|", "—"} for x in cells):
             out.append(line)
             continue
-        if not seen_header:
+        if not header_seen:
+            ti += 1
+            rj = -1
+            range_idx = None
             for i, x in enumerate(cells):
                 if x.strip().strip("*`").lower() in RANGE_HEADERS:
-                    col = i
+                    range_idx = i
                     break
-            seen_header = True
+            header_seen = True
             out.append(line)
             continue
-        if col is None or col >= len(cells) or not cells[0].startswith("`"):
-            out.append(line)
-            continue
-        param = cells[0].strip("`")
-        if param in pending:
-            cells[col] = pending[param]
+        rj += 1
+        key = (ti, rj)
+        if range_idx is not None and range_idx < len(cells) and key in replacements:
+            cells[range_idx] = replacements[key]
             out.append("| " + " | ".join(cells) + " |")
         else:
             out.append(line)
@@ -301,8 +337,8 @@ def main() -> int:
     for node_dir in sorted(DOCS_ROOT.iterdir()):
         if not node_dir.is_dir():
             continue
-        en = parse_range_by_param(node_dir / "en.md")
-        if not en:
+        en_cells = range_cells(node_dir / "en.md")
+        if not en_cells:
             continue
         for path in sorted(node_dir.glob("*.md")):
             lang = path.stem
@@ -310,14 +346,17 @@ def main() -> int:
                 continue
             if changed is not None and path.resolve() not in changed:
                 continue
-            tr = parse_range_by_param(path)
-            pending = {}
-            for param, en_cell in en.items():
-                if tr.get(param) != en_cell:
+            tr_cells = {(t, r): c for t, r, c in range_cells(path)}
+            pending: dict[tuple[int, int], str] = {}
+            for t, r, en_cell in en_cells:
+                key = (t, r)
+                if key not in tr_cells:
+                    continue
+                if tr_cells[key] != en_cell:
                     continue          # already localized (or differs - not our business)
                 res = localize(en_cell, lang)
                 if res and res[0] != en_cell:
-                    pending[param] = res[0]
+                    pending[key] = res[0]
                 elif not res and needs_translation(en_cell):
                     unknown[en_cell] = unknown.get(en_cell, 0) + 1
             if not pending:

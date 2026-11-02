@@ -8,7 +8,7 @@
 |-----------|-------------|-----------|----------|-------|
 | `clip1` | Birleştirilecek ilk CLIP modeli. Birleştirme sürecinde temel model olarak görev yapar. | CLIP | Evet | - |
 | `clip2` | Birleştirilecek ikinci CLIP modeli. position IDs ve logit scale hariç, anahtar yamaları belirtilen orana göre birinci modele uygulanır. | CLIP | Evet | - |
-| `oran` | İkinci modele ait özelliklerin birinci modele ne oranda karıştırılacağını belirler. 1.0 oranı, ikinci modelin özelliklerinin tamamen benimsenmesi anlamına gelirken, 0.0 oranı yalnızca birinci modelin özelliklerini korur. Varsayılan: 1.0. | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
+| `oran` | İkinci modele ait özelliklerin birinci modele ne oranda karıştırılacağını belirler. 1.0 oranı, ikinci modelin özelliklerinin tamamen benimsenmesi anlamına gelirken, 0.0 oranı yalnızca birinci modelin özelliklerini korur. Varsayılan: 1.0. | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
 
 ## Çıktılar
 

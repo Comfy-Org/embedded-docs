@@ -9,7 +9,7 @@ PhotoMakerEncode 節點將參考影像與文字提示結合，以建立用於影
 | `photomaker` | 用於處理參考影像並生成基於影像之嵌入的 PhotoMaker 模型 | PHOTOMAKER | 是 | - |
 | `影像` | 為 conditioning 提供視覺特徵的參考影像 | IMAGE | 是 | - |
 | `clip` | 用於文字分詞與文字編碼的 CLIP 模型 | CLIP | 是 | - |
-| `文字` | 用於生成 conditioning 的文字提示。支援多行文字與動態提示（預設值：「photograph of photomaker」） | STRING | 是 | Any string |
+| `文字` | 用於生成 conditioning 的文字提示。支援多行文字與動態提示（預設值：「photograph of photomaker」） | STRING | 是 | 任意字串 |
 
 **注意：** 當文字包含獨立單詞「photomaker」時，節點會從編碼後的提示中移除該詞，並使用 PhotoMaker 模型在該位置套用參考影像的特徵。如果文字中未找到「photomaker」，節點將返回不帶影像影響的標準文字 conditioning。
 

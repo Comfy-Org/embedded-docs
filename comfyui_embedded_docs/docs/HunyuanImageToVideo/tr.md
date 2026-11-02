@@ -8,9 +8,9 @@ HunyuanImageToVideo düğümü, görüntüleri Hunyuan video modelini kullanarak
 | --- | --- | --- | --- | --- |
 | `pozitif` | Video üretimini yönlendirmek için pozitif koşullandırma girdisi | CONDITIONING | Evet | - |
 | `vae` | Görüntüleri latent uzaya kodlamak için kullanılan VAE modeli | VAE | Evet | - |
-| `genişlik` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 848, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
-| `yükseklik` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
-| `uzunluk` | Çıktı videosundaki kare sayısı (varsayılan: 53, adım: 4) | INT | Evet | 1 to MAX_RESOLUTION |
+| `genişlik` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 848, adım: 16) | INT | Evet | 16 ile MAX_RESOLUTION arası |
+| `yükseklik` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 ile MAX_RESOLUTION arası |
+| `uzunluk` | Çıktı videosundaki kare sayısı (varsayılan: 53, adım: 4) | INT | Evet | 1 ile MAX_RESOLUTION arası |
 | `toplu_boyut` | Aynı anda üretilecek video sayısı (varsayılan: 1) | INT | Evet | 1 ile 4096 |
 | `rehberlik_türü` | Başlangıç görüntüsünü video üretimine dahil etme yöntemi (varsayılan: "v1 (concat)"). Gelişmiş seçenek | COMBO | Evet | "v1 (concat)"<br>"v2 (replace)"<br>"custom" |
 | `başlangıç_görüntüsü` | Video üretimini başlatmak için isteğe bağlı başlangıç görüntüsü (veya görüntü dizisi). Yalnızca ilk `length` kare ve ilk 3 renk kanalı kullanılır | IMAGE | Hayır | - |

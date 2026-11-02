@@ -9,7 +9,7 @@ Kodiert eine Bearbeitungsanweisung zusammen mit Referenzbildern in Conditioning 
 | `clip` | Das CLIP-Modell, das die Anweisung tokenisiert und kodiert. | CLIP | Ja | - |
 | `prompt` | Die Anweisung, die die Bearbeitung beschreibt. Unterstützt mehrzeiligen Text und dynamische Prompts. | STRING | Ja | Beliebiger Text |
 | `vae` | Das VAE, das verwendet wird, um die Referenzbilder in Referenz-Latents zu kodieren. Optional: ohne VAE gelangen die Bilder nur zum Text-Encoder.| VAE | Nein | - |
-| `edit_format` | Das Layout, mit dem das Edit-LoRA trainiert wurde. Es wählt die Referenz-Latents-Methode aus und ob der Text-Encoder auch die Referenzen sieht. | COMBO | Ja | `"ai-toolkit"`<br>`"ai-toolkit (kv_cache off)"`<br>`"Moss-Image-Edit"` |
+| `edit_format` | Das Layout, mit dem das Edit-LoRA trainiert wurde. Es wählt die Referenz-Latents-Methode aus und ob der Text-Encoder auch die Referenzen sieht. | COMBO | Ja | `"ai-toolkit"`<br>`"ai-toolkit (kv_cache off)"`<br>`"Moss-Bild-Edit"` |
 | `images` | Erweiterbarer Slot: Verbinden Sie ein oder mehrere Referenzbilder (`image_1`, `image_2`, ...). Jedes Bild wird in der Größe verwendet, in der es ankommt, sein Alphakanal wird verworfen und es wird per VAE in ein Referenz-Latent kodiert. Wenn ein VAE verbunden ist, wird der Alphakanal verworfen und jedes Bild in ein Referenz-Latent kodiert; ohne VAE gelangen die Bilder nur zum Text-Encoder.| IMAGE | Ja | 1 oder mehr Bilder |
 | `image_strength` | Skaliert, wie stark das Modell auf die vom Text-Encoder gesehenen Bilder achtet (ai-toolkit-Formate oder ohne VAE): 0 ignoriert sie, 1 unverändert, über 1 betont sie. Erweitert. Standard: 1.0. | FLOAT | Ja | 0.0 bis 100.0 (Schritt: 0.05) |
 

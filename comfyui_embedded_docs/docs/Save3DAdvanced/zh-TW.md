@@ -6,7 +6,7 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model_3d` | 來自上游 3D 節點的 3D 模型檔案。 | FILE3D | 是 | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ\g<1>任意值 |
+| `model_3d` | 來自上游 3D 節點的 3D 模型檔案。 | FILE3D | 是 | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ<br>任意值 |
 | `filename_prefix` | 用於儲存檔案名稱的前綴（預設值："3d/ComfyUI"）。 | STRING | 是 | 自由文字 |
 | `viewport_state` | 包含相機與模型放置資訊的視埠狀態，通常來自 Load 3D 節點。 | LOAD3D | 是 | - |
 | `model_3d_info` | 場景中各模型的放置方式：位置、旋轉與縮放（Y 軸向上的世界空間）。連接時會覆寫儲存在 `viewport_state` 中的模型放置資訊。 | LOAD3DMODELINFO | 否 | - |

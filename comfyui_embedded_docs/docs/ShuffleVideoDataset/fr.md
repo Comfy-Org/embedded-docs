@@ -7,7 +7,7 @@ Ce nœud prend une liste de vidéos et les réorganise aléatoirement. Il utilis
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `vidéos` | Liste des vidéos à mélanger. | VIDEO | Oui | List of video inputs |
-| `graine` | Graine aléatoire pour le mélange (par défaut : 0). | INT | Non | 0 to 18446744073709551615 |
+| `graine` | Graine aléatoire pour le mélange (par défaut : 0). | INT | Non | 0 à 18446744073709551615 |
 Remarque : la valeur de la graine est réduite modulo 4294967295 (2^32 - 1) avant utilisation. Par conséquent, des graines différant d'un multiple de 4294967295 produisent le même ordre de sortie.
 
 ## Sorties

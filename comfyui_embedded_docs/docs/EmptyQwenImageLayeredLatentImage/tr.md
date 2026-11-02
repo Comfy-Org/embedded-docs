@@ -6,9 +6,9 @@ Empty Qwen Image Layered Latent, Qwen-Image-Layered modelinin üzerine çizim ya
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `genişlik` | Oluşturulacak latent görselin genişliği. Değer 16'ya tam bölünebilir olmalıdır. (varsayılan: 640) | INT | Evet | 16 to MAX_RESOLUTION (step 16) |
-| `yükseklik` | Oluşturulacak latent görselin yüksekliği. Değer 16'ya tam bölünebilir olmalıdır. (varsayılan: 640) | INT | Evet | 16 to MAX_RESOLUTION (step 16) |
-| `katmanlar` | Resmin kaç katmana ayrılacağını belirler. Tam resim için her zaman fazladan bir sayfa ayrıldığından, `layers` değil, `layers + 1` görsel elde edersiniz. 2'ye ayarlarsanız tam resim artı 2 katman elde edersiniz. 0'a ayarlarsanız yalnızca tam resmi elde edersiniz. (varsayılan: 3) | INT | Evet | 0 to MAX_RESOLUTION (step 1) |
+| `genişlik` | Oluşturulacak latent görselin genişliği. Değer 16'ya tam bölünebilir olmalıdır. (varsayılan: 640) | INT | Evet | 16 ile MAX_RESOLUTION arası (adım: 16) |
+| `yükseklik` | Oluşturulacak latent görselin yüksekliği. Değer 16'ya tam bölünebilir olmalıdır. (varsayılan: 640) | INT | Evet | 16 ile MAX_RESOLUTION arası (adım: 16) |
+| `katmanlar` | Resmin kaç katmana ayrılacağını belirler. Tam resim için her zaman fazladan bir sayfa ayrıldığından, `layers` değil, `layers + 1` görsel elde edersiniz. 2'ye ayarlarsanız tam resim artı 2 katman elde edersiniz. 0'a ayarlarsanız yalnızca tam resmi elde edersiniz. (varsayılan: 3) | INT | Evet | 0 ile MAX_RESOLUTION arası (adım: 1) |
 | `toplu_boyut` | Bir batch içinde üretilecek latent örnek sayısı. (varsayılan: 1) | INT | Evet | 1 ile 4096 |
 
 **Not:** `width` ve `height` parametreleri, çıktı latent tensörünün uzamsal boyutlarını belirlemek için dahili olarak 8'e bölünür.

@@ -7,12 +7,12 @@ Le nœud ScaleROPE vous permet de modifier le plongement de position rotatif (RO
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `modèle` | Le modèle dont les paramètres ROPE seront modifiés. | MODEL | Oui | - |
-| `échelle_x` | Le facteur d'échelle à appliquer à la composante X du ROPE (par défaut : 1.0). | FLOAT | Oui | 0.0 - 100.0 (step 0.1) |
-| `décalage_x` | La valeur de décalage à appliquer à la composante X du ROPE (par défaut : 0.0). | FLOAT | Oui | -256.0 - 256.0 (step 0.1) |
-| `échelle_y` | Le facteur d'échelle à appliquer à la composante Y du ROPE (par défaut : 1.0). | FLOAT | Oui | 0.0 - 100.0 (step 0.1) |
-| `décalage_y` | La valeur de décalage à appliquer à la composante Y du ROPE (par défaut : 0.0). | FLOAT | Oui | -256.0 - 256.0 (step 0.1) |
-| `échelle_t` | Le facteur d'échelle à appliquer à la composante T (temps) du ROPE (par défaut : 1.0). | FLOAT | Oui | 0.0 - 100.0 (step 0.1) |
-| `décalage_t` | La valeur de décalage à appliquer à la composante T (temps) du ROPE (par défaut : 0.0). | FLOAT | Oui | -256.0 - 256.0 (step 0.1) |
+| `échelle_x` | Le facteur d'échelle à appliquer à la composante X du ROPE (par défaut : 1.0). | FLOAT | Oui | 0.0 - 100.0 (pas 0.1) |
+| `décalage_x` | La valeur de décalage à appliquer à la composante X du ROPE (par défaut : 0.0). | FLOAT | Oui | -256.0 - 256.0 (pas 0.1) |
+| `échelle_y` | Le facteur d'échelle à appliquer à la composante Y du ROPE (par défaut : 1.0). | FLOAT | Oui | 0.0 - 100.0 (pas 0.1) |
+| `décalage_y` | La valeur de décalage à appliquer à la composante Y du ROPE (par défaut : 0.0). | FLOAT | Oui | -256.0 - 256.0 (pas 0.1) |
+| `échelle_t` | Le facteur d'échelle à appliquer à la composante T (temps) du ROPE (par défaut : 1.0). | FLOAT | Oui | 0.0 - 100.0 (pas 0.1) |
+| `décalage_t` | La valeur de décalage à appliquer à la composante T (temps) du ROPE (par défaut : 0.0). | FLOAT | Oui | -256.0 - 256.0 (pas 0.1) |
 
 ## Sorties
 

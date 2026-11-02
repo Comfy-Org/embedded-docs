@@ -6,7 +6,7 @@ Salva un modello 3D in un file nella directory di output di ComfyUI e genera un'
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model_3d` | File modello 3D da un nodo 3D a monte. | FILE3D | Sì | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ\g<1>Qualsiasi valore |
+| `model_3d` | File modello 3D da un nodo 3D a monte. | FILE3D | Sì | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ<br>Qualsiasi valore |
 | `filename_prefix` | Prefisso usato per il nome del file salvato (predefinito: "3d/ComfyUI"). | STRING | Sì | Testo libero |
 | `viewport_state` | Stato del viewport contenente informazioni sulla camera e sul posizionamento del modello, tipicamente da un nodo Load 3D. | LOAD3D | Sì | - |
 | `model_3d_info` | Posizionamento di ciascun modello nella scena: posizione, rotazione e scala (spazio mondo con Y verso l'alto). Sostituisce il posizionamento del modello memorizzato in `viewport_state` quando collegato. | LOAD3DMODELINFO | No | - |

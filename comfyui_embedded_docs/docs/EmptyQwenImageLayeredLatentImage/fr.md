@@ -6,9 +6,9 @@ Empty Qwen Image Layered Latent prépare la toile vierge sur laquelle le modèle
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `largeur` | La largeur de l’image latente à créer. La valeur doit être divisible par 16. (défaut : 640) | INT | Oui | 16 to MAX_RESOLUTION (step 16) |
-| `hauteur` | La hauteur de l’image latente à créer. La valeur doit être divisible par 16. (défaut : 640) | INT | Oui | 16 to MAX_RESOLUTION (step 16) |
-| `couches` | Combien de couches pour séparer l’image. Une feuille supplémentaire est toujours réservée à l’image complète, vous obtenez donc `layers + 1` images, et non `layers`. Réglez-le sur 2 et vous obtenez l’image complète plus 2 couches. Réglez-le sur 0 et vous obtenez uniquement l’image complète. (défaut : 3) | INT | Oui | 0 to MAX_RESOLUTION (step 1) |
+| `largeur` | La largeur de l’image latente à créer. La valeur doit être divisible par 16. (défaut : 640) | INT | Oui | 16 à MAX_RESOLUTION (pas 16) |
+| `hauteur` | La hauteur de l’image latente à créer. La valeur doit être divisible par 16. (défaut : 640) | INT | Oui | 16 à MAX_RESOLUTION (pas 16) |
+| `couches` | Combien de couches pour séparer l’image. Une feuille supplémentaire est toujours réservée à l’image complète, vous obtenez donc `layers + 1` images, et non `layers`. Réglez-le sur 2 et vous obtenez l’image complète plus 2 couches. Réglez-le sur 0 et vous obtenez uniquement l’image complète. (défaut : 3) | INT | Oui | 0 à MAX_RESOLUTION (pas 1) |
 | `taille_lot` | Le nombre d’échantillons latents à générer dans un lot. (défaut : 1) | INT | Oui | 1 à 4096 |
 
 **Remarque :** Les paramètres `width` et `height` sont divisés en interne par 8 pour déterminer les dimensions spatiales du tenseur latent de sortie.

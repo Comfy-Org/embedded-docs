@@ -9,7 +9,7 @@ Codifica un'istruzione di modifica insieme a immagini di riferimento in un condi
 | `clip` | Il modello CLIP che tokenizza l'istruzione e la codifica. | CLIP | Sì | - |
 | `prompt` | L'istruzione che descrive la modifica. Supporta testo su più righe e prompt dinamici. | STRING | Sì | Qualsiasi testo |
 | `vae` | Il VAE usato per codificare le immagini di riferimento in latenti di riferimento. Opzionale: senza di esso, le immagini vanno solo al text encoder.| VAE | No | - |
-| `edit_format` | Il layout con cui è stato addestrato il LoRA di modifica. Seleziona il metodo dei latenti di riferimento e se il text encoder vede anche i riferimenti. | COMBO | Sì | `"ai-toolkit"`<br>`"ai-toolkit (kv_cache off)"`<br>`"Moss-Image-Edit"` |
+| `edit_format` | Il layout con cui è stato addestrato il LoRA di modifica. Seleziona il metodo dei latenti di riferimento e se il text encoder vede anche i riferimenti. | COMBO | Sì | `"ai-toolkit"`<br>`"ai-toolkit (kv_cache off)"`<br>`"Moss-Immagine-Edit"` |
 | `images` | Slot espandibile: collega una o più immagini di riferimento (`image_1`, `image_2`, ...). Ogni immagine viene usata alla dimensione con cui arriva, il suo canale alpha viene rimosso e viene codificata tramite VAE in un latente di riferimento. Con un VAE collegato l’alpha viene rimosso e ogni immagine è codificata in un latente di riferimento; senza VAE le immagini vanno solo al text encoder.| IMAGE | Sì | 1 o più immagini |
 | `image_strength` | Scala quanto il modello presta attenzione alle immagini viste dal text encoder (formati ai-toolkit, o senza VAE): 0 le ignora, 1 invariato, sopra 1 le enfatizza. Avanzato. Predefinito: 1.0. | FLOAT | Sì | 0.0 a 100.0 (passo: 0.05) |
 

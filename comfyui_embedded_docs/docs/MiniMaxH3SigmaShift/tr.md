@@ -7,8 +7,8 @@ MiniMax H3 modeli için video ve ses akış kaydırma değerlerini ayarlar. Vide
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Sigma kaydırma yamasının uygulanacağı model. Düğüm modeli kopyalar, böylece orijinal model değişmeden kalır. | MODEL | Evet | - |
-| `video_kaydır` | Video akış kaydırma değeri. Örnekleyicinin sigma çizelgesini belirler. Varsayılan: 12.0. | FLOAT | Evet | 0.01 to 100.0 |
-| `ses_kaydır` | Ses akış kaydırma değeri. Model tarafından ses çizelgesini türetmek için kullanılır. Varsayılan: 3.0. | FLOAT | Evet | 0.01 to 100.0 |
+| `video_kaydır` | Video akış kaydırma değeri. Örnekleyicinin sigma çizelgesini belirler. Varsayılan: 12.0. | FLOAT | Evet | 0.01 ile 100.0 arası |
+| `ses_kaydır` | Ses akış kaydırma değeri. Model tarafından ses çizelgesini türetmek için kullanılır. Varsayılan: 3.0. | FLOAT | Evet | 0.01 ile 100.0 arası |
 
 ## Çıktılar
 

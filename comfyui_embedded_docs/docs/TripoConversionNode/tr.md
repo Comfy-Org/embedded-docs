@@ -8,7 +8,7 @@ Bu düğüm, mevcut bir Tripo 3B modelini başka bir 3B dosya biçimine dönüş
 |-----------|-------------|-----------|----------|-------|
 | `orijinal_model_görev_id` | Dönüştürülecek Tripo modelinin görev kimliği. Daha önceki bir Tripo model oluşturma, rigleme, yeniden hedefleme veya segmentasyon görevinden gelmelidir. Kimlik eksik veya boşsa düğüm hata verir. | STRING | Evet | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID<br>SEGMENT_TASK_ID |
 | `biçim` | Dönüştürülen 3B model için hedef dosya biçimi. | COMBO | Evet | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF |
-| `dörtlü` | Etkinleştirildiğinde üçgenleri dörtgenlere dönüştürür (varsayılan: False). | BOOLEAN | Hayır | True or False |
+| `dörtlü` | Etkinleştirildiğinde üçgenleri dörtgenlere dönüştürür (varsayılan: False). | BOOLEAN | Hayır | True veya False |
 | `yüz_sınırı` | Dönüştürülen modeldeki maksimum yüz sayısı. Sınır olmaması için -1 olarak ayarlayın (varsayılan: -1). | INT | Hayır | -1 ile 2000000 |
 | `doku_boyutu` | Çıktı dokularının piksel cinsinden çözünürlüğü (varsayılan: 4096). | INT | Hayır | 128 ile 8192 |
 | `doku_biçimi` | Dışa aktarılan dokular için kullanılan dosya biçimi (varsayılan: JPEG). | COMBO | Hayır | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP |

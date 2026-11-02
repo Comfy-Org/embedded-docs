@@ -8,7 +8,7 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 选择要使用的 Gemini 图像模型。所选模型决定可用的分辨率选项和模型专属输入。 | DYNAMIC_COMBO | 是 | `"Gemini Nano Banana 2.1"`<br>`"Nano Banana 2 (Gemini 3.1 Flash Image)"`<br>`"Nano Banana 2 Lite"` |
+| `model` | 选择要使用的 Gemini 图像模型。所选模型决定可用的分辨率选项和模型专属输入。 | DYNAMIC_COMBO | 是 | `"Gemini Nano Banana 2.1"`<br>`"Nano Banana 2 (Gemini 3.1 Flash 图像)"`<br>`"Nano Banana 2 Lite"` |
 | `prompt` | 描述要生成的图像或要应用的编辑的文本提示词。包含模型应遵循的任何约束、样式或细节。不能为空。默认值：空 | STRING | 是 | N/A |
 | `seed` | 当种子固定为特定值时，模型会尽力为重复请求提供相同的响应。但不保证确定性输出。此外，即使使用相同的种子值，更改模型或参数设置（如 `temperature`）也可能导致响应变化。默认情况下，使用随机种子值。默认值：42 | INT | 是 | 0 到 18446744073709551615 |
 | `response_modalities` | 决定响应格式。IMAGE 仅返回图像；IMAGE+TEXT 返回图像和文本响应。默认值：IMAGE。高级参数。 | COMBO | 是 | `"IMAGE"`<br>`"IMAGE+TEXT"` |

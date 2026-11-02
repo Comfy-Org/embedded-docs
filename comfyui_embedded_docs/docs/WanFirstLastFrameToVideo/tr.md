@@ -9,9 +9,9 @@ WanFirstLastFrameToVideo düğümü, bir başlangıç karesini ve bir bitiş kar
 | `pozitif` | Video üretimini yönlendirmek için kullanılan pozitif metin koşullandırması. | CONDITIONING | Evet | - |
 | `negatif` | Video üretimini yönlendirmek için kullanılan negatif metin koşullandırması. | CONDITIONING | Evet | - |
 | `vae` | Birleştirilmiş kare görüntülerini latent uzaya kodlamak için kullanılan VAE modeli. | VAE | Evet | - |
-| `genişlik` | Üretilen videonun piksel cinsinden genişliği (varsayılan: 832, adım: 16). | INT | Evet | 16 to MAX_RESOLUTION |
-| `yükseklik` | Üretilen videonun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16). | INT | Evet | 16 to MAX_RESOLUTION |
-| `uzunluk` | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4). | INT | Evet | 1 to MAX_RESOLUTION |
+| `genişlik` | Üretilen videonun piksel cinsinden genişliği (varsayılan: 832, adım: 16). | INT | Evet | 16 ile MAX_RESOLUTION arası |
+| `yükseklik` | Üretilen videonun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16). | INT | Evet | 16 ile MAX_RESOLUTION arası |
+| `uzunluk` | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4). | INT | Evet | 1 ile MAX_RESOLUTION arası |
 | `toplu_boyut` | Aynı anda üretilecek video sayısı (varsayılan: 1). | INT | Evet | 1 ile 4096 |
 | `clip_görü_başlangıç_görüntüsü` | Başlangıç görüntüsünden çıkarılan CLIP vision özellikleri. Hem başlangıç hem bitiş CLIP vision girdileri sağlanırsa, özellikler birleştirilir. | CLIP_VISION_OUTPUT | Hayır | - |
 | `clip_görü_bitiş_görüntüsü` | Bitiş görüntüsünden çıkarılan CLIP vision özellikleri. Hem başlangıç hem bitiş CLIP vision girdileri sağlanırsa, özellikler birleştirilir. | CLIP_VISION_OUTPUT | Hayır | - |

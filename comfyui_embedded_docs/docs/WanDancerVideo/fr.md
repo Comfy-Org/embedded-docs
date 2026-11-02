@@ -9,9 +9,9 @@ Le nœud WanDancerVideo prépare les données de conditionnement et un tenseur l
 | `positif` | Le conditionnement positif pour guider la génération vidéo. | CONDITIONING | Oui |  |
 | `négatif` | Le conditionnement négatif pour guider la génération vidéo. | CONDITIONING | Oui |  |
 | `vae` | Le VAE utilisé pour encoder l'image de départ dans l'espace latent. | VAE | Oui |  |
-| `largeur` | La largeur de la vidéo générée en pixels (défaut : 480). | INT | Oui | 16 to MAX_RESOLUTION (step: 16) |
-| `hauteur` | La hauteur de la vidéo générée en pixels (défaut : 832). | INT | Oui | 16 to MAX_RESOLUTION (step: 16) |
-| `longueur` | Le nombre d'images de la vidéo générée. Doit rester à 149 pour WanDancer (défaut : 149). | INT | Oui | 1 to MAX_RESOLUTION (step: 4) |
+| `largeur` | La largeur de la vidéo générée en pixels (défaut : 480). | INT | Oui | 16 à MAX_RESOLUTION (pas 16) |
+| `hauteur` | La hauteur de la vidéo générée en pixels (défaut : 832). | INT | Oui | 16 à MAX_RESOLUTION (pas 16) |
+| `longueur` | Le nombre d'images de la vidéo générée. Doit rester à 149 pour WanDancer (défaut : 149). | INT | Oui | 1 à MAX_RESOLUTION (pas 4) |
 | `clip_vision_output` | Les plongements CLIP vision pour la première image. | CLIP_VISION_OUTPUT | Non |  |
 | `clip_vision_output_ref` | Les plongements CLIP vision pour l'image de référence. | CLIP_VISION_OUTPUT | Non |  |
 | `image_de_départ` | L'image (ou les images) de départ à encoder, peut contenir n'importe quel nombre d'images. | IMAGE | Non |  |

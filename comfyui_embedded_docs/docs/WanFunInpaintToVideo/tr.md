@@ -9,9 +9,9 @@ WanFunInpaintToVideo düğümü, isteğe bağlı bir başlangıç görüntüsü 
 | `pozitif` | Video oluşturma için pozitif koşullandırma istemleri | CONDITIONING | Evet | - |
 | `negatif` | Video oluşturmada kaçınılacak negatif koşullandırma istemleri | CONDITIONING | Evet | - |
 | `vae` | Video karelerini kodlamak ve kodunu çözmek için kullanılan VAE modeli | VAE | Evet | - |
-| `genişlik` | Çıktı video genişliği piksel cinsinden (varsayılan: 832, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
-| `yükseklik` | Çıktı video yüksekliği piksel cinsinden (varsayılan: 480, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
-| `uzunluk` | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 to MAX_RESOLUTION |
+| `genişlik` | Çıktı video genişliği piksel cinsinden (varsayılan: 832, adım: 16) | INT | Evet | 16 ile MAX_RESOLUTION arası |
+| `yükseklik` | Çıktı video yüksekliği piksel cinsinden (varsayılan: 480, adım: 16) | INT | Evet | 16 ile MAX_RESOLUTION arası |
+| `uzunluk` | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 ile MAX_RESOLUTION arası |
 | `toplu_boyut` | Bir toplu işte oluşturulacak video sayısı (varsayılan: 1) | INT | Evet | 1 ile 4096 |
 | `clip_görü_çıktısı` | Başlangıç görüntüsü için koşullandırma olarak kullanılan isteğe bağlı CLIP vision çıktısı | CLIP_VISION_OUTPUT | Hayır | - |
 | `başlangıç_görüntüsü` | Video oluşturma için isteğe bağlı başlangıç kare görüntüsü | IMAGE | Hayır | - |

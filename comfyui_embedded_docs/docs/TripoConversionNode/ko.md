@@ -8,7 +8,7 @@
 |-----------|-------------|-----------|----------|-------|
 | `원본 모델 작업 ID` | 변환할 Tripo 모델의 작업 ID입니다. 이전의 Tripo 모델 생성, 리깅, 리타게팅 또는 세그멘테이션 작업에서 가져온 ID여야 합니다. ID가 없거나 비어 있으면 노드에서 오류를 발생시킵니다. | STRING | 예 | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID<br>SEGMENT_TASK_ID |
 | `형식` | 변환된 3D 모델의 대상 파일 형식입니다. | COMBO | 예 | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF |
-| `쿼드` | 활성화하면 삼각형을 쿼드로 변환합니다(기본값: False). | BOOLEAN | 아니요 | True or False |
+| `쿼드` | 활성화하면 삼각형을 쿼드로 변환합니다(기본값: False). | BOOLEAN | 아니요 | True 또는 False |
 | `면 제한` | 변환된 모델의 최대 면 수입니다. 제한 없음은 -1로 설정합니다(기본값: -1). | INT | 아니요 | -1 ~ 2000000 |
 | `텍스처 크기` | 출력 텍스처의 해상도(픽셀 단위)입니다(기본값: 4096). | INT | 아니요 | 128 ~ 8192 |
 | `텍스처 형식` | 내보낸 텍스처에 사용되는 파일 형식입니다(기본값: JPEG). | COMBO | 아니요 | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP |

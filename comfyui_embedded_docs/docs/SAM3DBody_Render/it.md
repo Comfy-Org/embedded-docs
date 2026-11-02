@@ -51,7 +51,7 @@ Questi parametri compaiono quando `render_style` è "openpose_3d".
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `radius_m` | Raggio della capsula dell'arto in metri (sottile = simile a un bastoncino). (predefinito: 0.015) | FLOAT | No | 0.005 a 0.2, passo: 0.001 |
+| `radius_m` | Raggio della capsula dell'arto in metri (sottile = simile a un bastoncino). (predefinito: 0.015) | FLOAT | No | 0.004 a 0.1, passo: 0.001 |
 | `include_hands` | Disegna 21+21 keypoint della mano come capsule 3D. (predefinito: True) | BOOLEAN | No | True o False |
 | `person_palette_falloff` | Desaturazione per persona: la traccia k si mescola verso il bianco di 1 - falloff^k. La traccia 0 rimane vivida; 1.0 disattiva il falloff. (predefinito: 0.6) | FLOAT | No | 0.1 a 1.0, passo: 0.05 |
 

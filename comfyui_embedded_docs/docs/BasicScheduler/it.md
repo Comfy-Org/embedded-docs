@@ -7,7 +7,7 @@ Il nodo `BasicScheduler` è progettato per calcolare una sequenza di valori sigm
 | Parametro | Descrizione metaforica | Tipo di dati | Tipo di input | Predefinito | Intervallo | Scopo tecnico |
 | --- | --- | --- | --- | --- | --- | --- |
 | `model` | **Tipo di tela**: materiali di tela diversi richiedono formule di vernice diverse | MODEL | Input | - | - | Oggetto del modello di diffusione, determina la base per il calcolo dei sigma |
-| `scheduler` | **Tecnica di miscelazione**: scegli come cambia la concentrazione della vernice | COMBO[STRING] | Widget | - | 9 options | Algoritmo di scheduling, controlla la modalità di decadimento del rumore |
+| `scheduler` | **Tecnica di miscelazione**: scegli come cambia la concentrazione della vernice | COMBO[STRING] | Widget | - | 9 opzioni | Algoritmo di scheduling, controlla la modalità di decadimento del rumore |
 | `steps` | **Numero di miscelazioni**: differenza di precisione tra 20 miscelazioni e 50 miscelazioni | INT | Widget | 20 | 1-10000 | Passaggi di campionamento, influisce sulla qualità e sulla velocità di generazione |
 | `denoise` | **Intensità di creazione**: livello di controllo dal fine-tuning alla ridipintura | FLOAT | Widget | 1.0 | 0.0-1.0 | Forza di denoising, supporta scenari di ridipintura parziale |
 
