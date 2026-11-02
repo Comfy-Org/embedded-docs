@@ -8,7 +8,7 @@ Questo nodo applica una LoRA (Low-Rank Adaptation) a un modello per modificarne 
 | --- | --- | --- | --- | --- |
 | `model` | Il modello di base a cui verranno applicate le modifiche LoRA. | MODEL | Sì | - |
 | `lora_name` | Il nome del file LoRA da caricare e applicare. Le opzioni sono popolate dai file presenti nella directory `loras`. | STRING | Sì | (Elenco dei file LoRA disponibili) |
-| `strength_model` | L'intensità dell'effetto della LoRA sui pesi del modello. Un valore positivo applica la LoRA, un valore negativo ne applica l'inverso, mentre un valore pari a 0 non ha alcun effetto (predefinito: 1.0). | FLOAT | Sì | -100.0 to 100.0 |
+| `strength_model` | L'intensità dell'effetto della LoRA sui pesi del modello. Un valore positivo applica la LoRA, un valore negativo ne applica l'inverso, mentre un valore pari a 0 non ha alcun effetto (predefinito: 1.0). | FLOAT | Sì | -100.0 a 100.0 |
 
 ## Output
 

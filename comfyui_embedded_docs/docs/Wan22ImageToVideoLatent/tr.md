@@ -7,9 +7,9 @@ Wan22ImageToVideoLatent, görüntülerden video latent temsilleri oluşturur. Be
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `vae` | Başlangıç görüntüsünü latent uzayına kodlamak için kullanılan VAE modeli | VAE | Evet | - |
-| `width` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 1280, adım: 32) | INT | Evet | 32 to MAX_RESOLUTION |
-| `height` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 704, adım: 32) | INT | Evet | 32 to MAX_RESOLUTION |
-| `length` | Video dizisindeki kare sayısı (varsayılan: 49, adım: 4) | INT | Evet | 1 to MAX_RESOLUTION |
+| `width` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 1280, adım: 32) | INT | Evet | 32 ile MAX_RESOLUTION arası |
+| `height` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 704, adım: 32) | INT | Evet | 32 ile MAX_RESOLUTION arası |
+| `length` | Video dizisindeki kare sayısı (varsayılan: 49, adım: 4) | INT | Evet | 1 ile MAX_RESOLUTION arası |
 | `batch_size` | Oluşturulacak video latent sayısı (varsayılan: 1) | INT | Evet | 1 ile 4096 |
 | `start_image` | Video latentinin başlangıç karelerine kodlanacak isteğe bağlı başlangıç görüntü dizisi (ilk `length` kareyi kullanır) | IMAGE | Hayır | - |
 

@@ -23,7 +23,7 @@ Genera un video da un prompt testuale con il modello P-Video-2 di Pruna. Il prom
 | `model.generate_audio` | Genera una colonna sonora per il video. Ignorato quando `model.audio` è connesso, che diventa invece la colonna sonora (predefinito: True). | BOOLEAN | Sì | True/False |
 | `model.enhance_prompt` | Riscrive il prompt con maggiori dettagli prima della generazione; i prompt brevi ne hanno bisogno. Disattivalo per riprodurre esattamente un risultato con lo stesso seed (predefinito: True). Impostazione avanzata. | BOOLEAN | Sì | True/False |
 | `model.audio` | Audio che guida il movimento e diventa la colonna sonora. Durata minima di 1 secondo; l'audio più lungo di 20 secondi viene troncato. Imposta la durata del video anziché `model.duration`. | AUDIO | No | - |
-| `model.seed` | Seed per la generazione. Lo stesso seed riproduce esattamente un risultato solo quando `model.enhance_prompt` è disattivato (predefinito: 42). | INT | Sì | 0 to 2147483647 |
+| `model.seed` | Seed per la generazione. Lo stesso seed riproduce esattamente un risultato solo quando `model.enhance_prompt` è disattivato (predefinito: 42). | INT | Sì | 0 a 2147483647 |
 
 **Note:**
 

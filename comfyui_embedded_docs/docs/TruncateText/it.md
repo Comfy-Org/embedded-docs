@@ -7,7 +7,7 @@ Questo nodo accorcia il testo troncandolo a una lunghezza massima specificata. P
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `text` | La stringa di testo da troncare. | STRING | Sì | N/A |
-| `max_length` | Lunghezza massima del testo. Il testo verrà troncato dopo questo numero di caratteri (predefinito: 77). | INT | Sì | 1 to 10000 |
+| `max_length` | Lunghezza massima del testo. Il testo verrà troncato dopo questo numero di caratteri (predefinito: 77). | INT | Sì | 1 a 10000 |
 
 ## Output
 

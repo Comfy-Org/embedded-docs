@@ -8,7 +8,7 @@
 |-----------|-------------|-----------|----------|-------|
 | `clip1` | Das erste CLIP-Modell, das zusammengeführt werden soll. Es dient als Basismodell für den Merge-Prozess. | CLIP | Ja | - |
 | `clip2` | Das zweite CLIP-Modell, das zusammengeführt werden soll. Seine Key-Patches, mit Ausnahme von Positions-IDs und Logit-Scale, werden basierend auf dem angegebenen Verhältnis auf das erste Modell angewendet. | CLIP | Ja | - |
-| `ratio` | Bestimmt den Anteil der Merkmale aus dem zweiten Modell, der in das erste Modell eingemischt wird. Ein Verhältnis von 1.0 bedeutet, dass die Merkmale des zweiten Modells vollständig übernommen werden, während 0.0 nur die Merkmale des ersten Modells beibehält. Standard: 1.0. | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
+| `ratio` | Bestimmt den Anteil der Merkmale aus dem zweiten Modell, der in das erste Modell eingemischt wird. Ein Verhältnis von 1.0 bedeutet, dass die Merkmale des zweiten Modells vollständig übernommen werden, während 0.0 nur die Merkmale des ersten Modells beibehält. Standard: 1.0. | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
 
 ## Ausgaben
 

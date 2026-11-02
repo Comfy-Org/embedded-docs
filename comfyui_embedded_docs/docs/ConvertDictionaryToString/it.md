@@ -7,7 +7,7 @@ Questo nodo converte un dizionario (una raccolta di coppie chiave-valore) in una
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `dictionary` | Il dizionario da convertire in una stringa | DICT | Sì | - |
-| `indent` | Spazi per livello di indentazione. 0 produce una stringa compatta su una sola riga (predefinito: 2) | INT | No | 0 to 8 |
+| `indent` | Spazi per livello di indentazione. 0 produce una stringa compatta su una sola riga (predefinito: 2) | INT | No | 0 a 8 |
 
 ## Output
 

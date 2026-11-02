@@ -8,10 +8,10 @@ VAEEncodeTiled verarbeitet Bilder, indem es sie in kleinere Kacheln aufteilt und
 | --- | --- | --- | --- | --- |
 | `pixels` | Die zu kodierenden Eingabebilddaten. | IMAGE | Ja | - |
 | `vae` | Das Variational-Autoencoder-Modell, das zur Kodierung verwendet wird. | VAE | Ja | - |
-| `tile_size` | Die Größe jeder Kachel für die räumliche Verarbeitung (Standard: 512). Erweiterte Einstellung. | INT | Ja | 64-4096 (step: 64) |
-| `overlap` | Die Überlappung zwischen benachbarten Kacheln (Standard: 64). Erweiterte Einstellung. | INT | Ja | 0-4096 (step: 32) |
-| `temporal_size` | Nur für Video-VAEs verwendet: Anzahl der gleichzeitig zu kodierenden Frames (Standard: 64). Erweiterte Einstellung. | INT | Ja | 8-4096 (step: 4) |
-| `temporal_overlap` | Nur für Video-VAEs verwendet: Anzahl der zu überlappenden Frames (Standard: 8). Erweiterte Einstellung. | INT | Ja | 4-4096 (step: 4) |
+| `tile_size` | Die Größe jeder Kachel für die räumliche Verarbeitung (Standard: 512). Erweiterte Einstellung. | INT | Ja | 64-4096 (Schritt: 64) |
+| `overlap` | Die Überlappung zwischen benachbarten Kacheln (Standard: 64). Erweiterte Einstellung. | INT | Ja | 0-4096 (Schritt: 32) |
+| `temporal_size` | Nur für Video-VAEs verwendet: Anzahl der gleichzeitig zu kodierenden Frames (Standard: 64). Erweiterte Einstellung. | INT | Ja | 8-4096 (Schritt: 4) |
+| `temporal_overlap` | Nur für Video-VAEs verwendet: Anzahl der zu überlappenden Frames (Standard: 8). Erweiterte Einstellung. | INT | Ja | 4-4096 (Schritt: 4) |
 
 **Hinweis:** Die Parameter `temporal_size` und `temporal_overlap` sind nur bei Verwendung von Video-VAEs relevant und haben keine Auswirkung auf Standard-Bild-VAEs.
 

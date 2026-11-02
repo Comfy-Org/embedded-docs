@@ -8,10 +8,10 @@ VAEEncodeTiled elabora le immagini suddividendole in tile più piccole e codific
 | --- | --- | --- | --- | --- |
 | `pixels` | I dati dell'immagine di input da codificare. | IMAGE | Sì | - |
 | `vae` | Il modello autoencoder variazionale utilizzato per la codifica. | VAE | Sì | - |
-| `tile_size` | La dimensione di ciascuna tile per l'elaborazione spaziale (predefinito: 512). Impostazione avanzata. | INT | Sì | 64-4096 (step: 64) |
-| `overlap` | La quantità di sovrapposizione tra tile adiacenti (predefinito: 64). Impostazione avanzata. | INT | Sì | 0-4096 (step: 32) |
-| `temporal_size` | Utilizzato solo per VAE video: numero di frame da codificare alla volta (predefinito: 64). Impostazione avanzata. | INT | Sì | 8-4096 (step: 4) |
-| `temporal_overlap` | Utilizzato solo per VAE video: numero di frame da sovrapporre (predefinito: 8). Impostazione avanzata. | INT | Sì | 4-4096 (step: 4) |
+| `tile_size` | La dimensione di ciascuna tile per l'elaborazione spaziale (predefinito: 512). Impostazione avanzata. | INT | Sì | 64-4096 (passo: 64) |
+| `overlap` | La quantità di sovrapposizione tra tile adiacenti (predefinito: 64). Impostazione avanzata. | INT | Sì | 0-4096 (passo: 32) |
+| `temporal_size` | Utilizzato solo per VAE video: numero di frame da codificare alla volta (predefinito: 64). Impostazione avanzata. | INT | Sì | 8-4096 (passo: 4) |
+| `temporal_overlap` | Utilizzato solo per VAE video: numero di frame da sovrapporre (predefinito: 8). Impostazione avanzata. | INT | Sì | 4-4096 (passo: 4) |
 
 **Nota:** I parametri `temporal_size` e `temporal_overlap` sono rilevanti solo quando si utilizzano VAE video e non hanno alcun effetto sui VAE standard per immagini.
 

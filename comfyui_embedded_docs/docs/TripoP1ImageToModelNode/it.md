@@ -11,8 +11,8 @@ Tripo P1: Image to Model converte una singola immagine 2D in un modello 3D utili
 | `output_mode` | Sceglie il tipo di risultato. "Geometry only" restituisce una mesh non texturizzata; "Textured" aggiunge mappe colore/PBR e rivela impostazioni di texture extra. | DYNAMIC_COMBO | Sì | `"Geometry only"`<br>`"Textured"` |
 | `image` | L'immagine 2D di origine utilizzata per generare il modello 3D. È richiesta una singola immagine; il nodo genera un errore se non ne viene fornita nessuna. | IMAGE | Sì | - |
 | `enable_image_autofix` | Pre-elabora l'immagine di input per una migliore qualità di generazione. (predefinito: False) | BOOLEAN | No | True<br>False |
-| `face_limit` | Numero di facce target, 48-20000. -1 lascia che Tripo scelga in modo adattivo. (predefinito: -1) | INT | No | -1 to 20000 |
-| `model_seed` | Seme utilizzato per la generazione della geometria in modo che i risultati possano essere riprodotti. (predefinito: 42) | INT | No | 0 to 2147483647 |
+| `face_limit` | Numero di facce target, 48-20000. -1 lascia che Tripo scelga in modo adattivo. (predefinito: -1) | INT | No | -1 a 20000 |
+| `model_seed` | Seme utilizzato per la generazione della geometria in modo che i risultati possano essere riprodotti. (predefinito: 42) | INT | No | 0 a 2147483647 |
 | `auto_size` | Ridimensiona l'output per approssimare i metri del mondo reale. (predefinito: False) | BOOLEAN | No | True<br>False |
 | `export_uv` | UV unwrap durante la generazione. Disattiva per esecuzioni solo geometria più veloci. (predefinito: True) | BOOLEAN | No | True<br>False |
 | `compress_geometry` | Applica la compressione geometrica meshopt (EXT_meshopt_compression). File più piccoli, ma l'anteprima 3D di ComfyUI non può visualizzarli; decomprimere prima di modificare. (predefinito: False) | BOOLEAN | No | True<br>False |
@@ -31,7 +31,7 @@ Questi parametri vengono visualizzati quando `output_mode` è impostato su "Text
 | `texture_quality` | detailed = texture HD, extreme = texture 8K Ultra. (predefinito: "standard") | COMBO | Sì | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `texture_alignment` | Dai priorità alla fedeltà visiva all'immagine di origine o all'allineamento alla geometria della mesh. (predefinito: "original_image") | COMBO | Sì | `"original_image"`<br>`"geometry"` |
 | `orientation` | Ruota l'output per corrispondere all'immagine di origine. Si applica solo quando è texturizzato. (predefinito: "default") | COMBO | Sì | `"default"`<br>`"align_image"` |
-| `texture_seed` | Seme utilizzato per la generazione della texture in modo che i risultati texturizzati possano essere riprodotti. (predefinito: 42) | INT | Sì | 0 to 2147483647 |
+| `texture_seed` | Seme utilizzato per la generazione della texture in modo che i risultati texturizzati possano essere riprodotti. (predefinito: 42) | INT | Sì | 0 a 2147483647 |
 
 Nota: quando `output_mode` è "Geometry only", il texturing è disabilitato per la richiesta. In modalità "Textured", viene sempre richiesta una texture a colori; disabilitando `pbr` si rimuovono le mappe PBR ma si mantiene la texture di colore di base, mentre abilitando `pbr` si forza anche l'attivazione della texture di base. `texture_alignment` e `orientation` sono disponibili solo in modalità "Textured".
 

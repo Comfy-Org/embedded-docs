@@ -7,8 +7,8 @@ Weld Vertices führt das Zusammenführen von zusammenfallenden Vertices in einem
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|--------|
 | `mesh` | Das eingegebene 3D-Mesh, dessen zusammenfallende Vertices zusammengeführt werden. | MESH | Ja | - |
-| `epsilon_rel` | Schweißtoleranz (Anteil der Bounding-Box-Diagonale). 1e-5 für Float-Deduplizierung; 1e-3 für sichtbar nahe, aber verschiedene Vertices. Standard: 1e-5. | FLOAT | Ja | 0.0 to unlimited (step 1e-6) |
-| `epsilon_abs` | Absolute Schweißtoleranz (überschreibt epsilon_rel, wenn > 0). Standard: 0.0. | FLOAT | Ja | 0.0 to unlimited (step 1e-6) |
+| `epsilon_rel` | Schweißtoleranz (Anteil der Bounding-Box-Diagonale). 1e-5 für Float-Deduplizierung; 1e-3 für sichtbar nahe, aber verschiedene Vertices. Standard: 1e-5. | FLOAT | Ja | 0.0 to unlimited (Schritt: 1e-6) |
+| `epsilon_abs` | Absolute Schweißtoleranz (überschreibt epsilon_rel, wenn > 0). Standard: 0.0. | FLOAT | Ja | 0.0 to unlimited (Schritt: 1e-6) |
 
 Hinweis: Wenn `epsilon_abs` größer als 0 ist, hat es Vorrang vor `epsilon_rel`, und die relative Toleranz wird ignoriert. Wenn `epsilon_abs` 0 ist, wird die relative Toleranz `epsilon_rel` verwendet und in eine absolute Distanz umgerechnet, indem sie mit der Diagonale der Bounding Box des Meshes multipliziert wird.
 

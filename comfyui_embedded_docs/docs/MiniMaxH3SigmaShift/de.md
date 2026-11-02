@@ -7,8 +7,8 @@ Setzt die Video- und Audio-Flow-Shift-Werte für ein MiniMax H3-Modell. Der Vide
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Das Modell, auf das der Sigma-Shift-Patch angewendet werden soll. Der Node klont das Modell, sodass das Original unverändert bleibt. | MODEL | Ja | - |
-| `shift_video` | Der Video-Flow-Shift-Wert. Er steuert den Sigma-Zeitplan des Samplers. Standard: 12.0. | FLOAT | Ja | 0.01 to 100.0 |
-| `shift_audio` | Der Audio-Flow-Shift-Wert. Er wird vom Modell verwendet, um den Audio-Zeitplan abzuleiten. Standard: 3.0. | FLOAT | Ja | 0.01 to 100.0 |
+| `shift_video` | Der Video-Flow-Shift-Wert. Er steuert den Sigma-Zeitplan des Samplers. Standard: 12.0. | FLOAT | Ja | 0.01 bis 100.0 |
+| `shift_audio` | Der Audio-Flow-Shift-Wert. Er wird vom Modell verwendet, um den Audio-Zeitplan abzuleiten. Standard: 3.0. | FLOAT | Ja | 0.01 bis 100.0 |
 
 ## Ausgaben
 

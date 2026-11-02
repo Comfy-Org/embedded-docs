@@ -8,10 +8,10 @@ Ce nœud fusionne deux modèles Mochi AI selon une approche par blocs offrant un
 | --- | --- | --- | --- | --- |
 | `modèle1` | Le premier modèle à fusionner | MODEL | Oui | - |
 | `modèle2` | Le deuxième modèle à fusionner | MODEL | Oui | - |
-| `pos_frequencies.` | Poids pour l'interpolation des fréquences positionnelles (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `t_embedder.` | Poids pour l'interpolation de l'embedder temporel (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `t5_y_embedder.` | Poids pour l'interpolation de l'embedder T5-Y (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `t5_yproj.` | Poids pour l'interpolation de la projection T5-Y (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
+| `pos_frequencies.` | Poids pour l'interpolation des fréquences positionnelles (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `t_embedder.` | Poids pour l'interpolation de l'embedder temporel (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `t5_y_embedder.` | Poids pour l'interpolation de l'embedder T5-Y (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
+| `t5_yproj.` | Poids pour l'interpolation de la projection T5-Y (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
 | `blocs.0.` | Poids pour l'interpolation du bloc 0 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
 | `blocs.1.` | Poids pour l'interpolation du bloc 1 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
 | `blocs.2.` | Poids pour l'interpolation du bloc 2 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
@@ -60,7 +60,7 @@ Ce nœud fusionne deux modèles Mochi AI selon une approche par blocs offrant un
 | `blocs.45.` | Poids pour l'interpolation du bloc 45 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
 | `blocs.46.` | Poids pour l'interpolation du bloc 46 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
 | `blocs.47.` | Poids pour l'interpolation du bloc 47 (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
-| `final_layer.` | Poids pour l'interpolation de la couche finale (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (step: 0.01) |
+| `final_layer.` | Poids pour l'interpolation de la couche finale (défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 (pas 0.01) |
 
 ## Sorties
 

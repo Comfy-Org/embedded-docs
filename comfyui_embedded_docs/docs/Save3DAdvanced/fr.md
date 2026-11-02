@@ -6,7 +6,7 @@ Enregistre un modèle 3D dans un fichier du répertoire de sortie de ComfyUI et 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model_3d` | Fichier de modèle 3D provenant d'un nœud 3D en amont. | FILE3D | Oui | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ<br>Any |
+| `model_3d` | Fichier de modèle 3D provenant d'un nœud 3D en amont. | FILE3D | Oui | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ\g<1>Valeur quelconque |
 | `filename_prefix` | Préfixe utilisé pour le nom du fichier enregistré (par défaut : "3d/ComfyUI"). | STRING | Oui | Texte libre |
 | `viewport_state` | État du viewport contenant les informations de caméra et de placement du modèle, généralement issues d'un nœud Load 3D. | LOAD3D | Oui | - |
 | `model_3d_info` | Placement de chaque modèle dans la scène : position, rotation et échelle (espace monde Y-up). Remplace le placement du modèle stocké dans `viewport_state` lorsque cette entrée est connectée. | LOAD3DMODELINFO | Non | - |

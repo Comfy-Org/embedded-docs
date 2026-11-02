@@ -7,7 +7,7 @@ Erzeugt Videos aus Text-Prompts mithilfe des MiniMax Hailuo-02-Modells. Optional
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `prompt_text` | Text-Prompt zur Steuerung der Videoerzeugung (Standard: leer). | STRING | Ja | - |
-| `seed` | Der Zufallsseed, der zum Erzeugen des Rauschens verwendet wird (Standard: 0). | INT | Nein | 0 to 18446744073709551615 |
+| `seed` | Der Zufallsseed, der zum Erzeugen des Rauschens verwendet wird (Standard: 0). | INT | Nein | 0 bis 18446744073709551615 |
 | `first_frame_image` | Optionales Bild, das als erstes Einzelbild zur Erzeugung eines Videos verwendet wird. | IMAGE | Nein | - |
 | `prompt_optimizer` | Optimiert den Prompt, um bei Bedarf die Generierungsqualität zu verbessern (Standard: True). | BOOLEAN | Nein | True<br>False |
 | `duration` | Die Länge des Ausgabevideos in Sekunden (Standard: 6). | COMBO | Nein | 6<br>10 |

@@ -13,8 +13,8 @@
 | `image_back` | תצוגת אחור (180°). | IMAGE | לא | - |
 | `image_right` | תצוגת ימין (270°), כלומר הצד הימני של הסובייקט. | IMAGE | לא | - |
 | `output_mode` | בחר את סוג המודל ליצירה. "Geometry only" מחזיר mesh ללא טקסטורה. "Textured" מוסיף מפות צבע/PBR. | DYNAMIC_COMBO | כן | "Geometry only"<br>"Textured" |
-| `face_limit` | מספר פאות יעד, 48-20000. -1 מאפשר ל-Tripo לבחור באופן אדפטיבי. (ברירת מחדל: -1) | INT | לא | -1 to 20000 |
-| `model_seed` | Seed ליצירת מודל שניתן לשחזר. (ברירת מחדל: 42) | INT | לא | 0 to 2147483647 |
+| `face_limit` | מספר פאות יעד, 48-20000. -1 מאפשר ל-Tripo לבחור באופן אדפטיבי. (ברירת מחדל: -1) | INT | לא | -1 עד 20000 |
+| `model_seed` | Seed ליצירת מודל שניתן לשחזר. (ברירת מחדל: 42) | INT | לא | 0 עד 2147483647 |
 | `auto_size` | שנה את קנה המידה של הפלט כך שיתאים בקירוב למטרים בעולם האמיתי. (ברירת מחדל: False) | BOOLEAN | לא | True<br>False |
 | `export_uv` | פריסת UV במהלך היצירה. השבת כדי לקבל ריצות מהירות יותר של גאומטריה בלבד. (ברירת מחדל: True) | BOOLEAN | לא | True<br>False |
 | `compress_geometry` | החל דחיסת גאומטריה meshopt (EXT_meshopt_compression). קבצים קטנים יותר, אך תצוגת ה-3D של ComfyUI לא יכולה להציג אותם; יש לפרוק דחיסה לפני עריכה. (ברירת מחדל: False) | BOOLEAN | לא | True<br>False |
@@ -33,7 +33,7 @@
 | `texture_quality` | רמת איכות טקסטורה. `detailed` = טקסטורות HD, `extreme` = טקסטורות 8K Ultra. (ברירת מחדל: "standard") | COMBO | כן | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | תן עדיפות לנאמנות חזותית לתמונת המקור, או ליישור לגאומטריית ה-mesh. (ברירת מחדל: "original_image") | COMBO | כן | "original_image"<br>"geometry" |
 | `orientation` | סובב את הפלט כך שיתאים לתמונת המקור. חל רק כאשר קיימת טקסטורה. (ברירת מחדל: "default") | COMBO | כן | "default"<br>"align_image" |
-| `texture_seed` | Seed המשמש ליצירת טקסטורה. (ברירת מחדל: 42) | INT | כן | 0 to 2147483647 |
+| `texture_seed` | Seed המשמש ליצירת טקסטורה. (ברירת מחדל: 42) | INT | כן | 0 עד 2147483647 |
 
 **הערה:** עליך לספק לפחות 2 תמונות: תצוגת חזית (`image`) ובנוסף לפחות אחת מהתצוגות האחרות (`image_left`, `image_back` או `image_right`). אם מסופקות פחות מ-2 תמונות, הצומת יעלה שגיאה.
 

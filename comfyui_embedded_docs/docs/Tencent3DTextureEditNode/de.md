@@ -8,7 +8,7 @@ Dieser Node verwendet die Tencent Hunyuan3D API, um die Texturen eines 3D-Modell
 |-----------|--------------|----------|--------------|---------|
 | `model_3d` | 3D-Modell im FBX-Format. Das Modell sollte weniger als 100000 Flächen haben. | FILE3D | Ja | FBX, Any |
 | `prompt` | Beschreibt die Texturbearbeitung. Unterstützt bis zu 1024 UTF-8-Zeichen. | STRING | Ja |  |
-| `seed` | Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Nein | 0 to 2147483647 |
+| `seed` | Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Nein | 0 bis 2147483647 |
 
 **Hinweis:** Die Eingabe `model_3d` muss eine Datei im FBX-Format sein. Andere 3D-Dateiformate werden von diesem Node nicht unterstützt. Der Parameter `prompt` ist erforderlich und muss zwischen 1 und 1024 Zeichen lang sein.
 

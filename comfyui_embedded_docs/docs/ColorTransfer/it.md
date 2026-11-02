@@ -10,7 +10,7 @@ Il nodo ColorTransfer regola la palette di colori di un'immagine di destinazione
 | `image_ref` | Immagine/i di riferimento a cui far corrispondere i colori. | IMAGE | Sì | - |
 | `method` | L'algoritmo di trasferimento del colore da utilizzare. | COMBO | Sì | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` |
 | `source_stats` | Determina come vengono calcolate le statistiche cromatiche dalle immagini di origine (destinazione). | DYNAMICCOMBO | Sì | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
-| `strength` | L'intensità dell'effetto di trasferimento del colore. Un valore di 1.0 applica la trasformazione completa, mentre 0.0 restituisce l'immagine originale. Valore predefinito: 1.0 | FLOAT | Sì | 0.0 to 10.0 |
+| `strength` | L'intensità dell'effetto di trasferimento del colore. Un valore di 1.0 applica la trasformazione completa, mentre 0.0 restituisce l'immagine originale. Valore predefinito: 1.0 | FLOAT | Sì | 0.0 a 10.0 |
 
 **Dettagli dei parametri:**
 *   **Opzioni di `source_stats`:**

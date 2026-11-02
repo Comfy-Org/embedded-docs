@@ -12,7 +12,7 @@ Il nodo HunyuanVideo15SuperResolution prepara i dati di condizionamento per un p
 | `start_image` | Un'immagine iniziale opzionale per guidare la super-risoluzione. Se fornita, viene sottoposta a upscale e codificata nel latente di condizionamento. | IMAGE | No | N/A |
 | `clip_vision_output` | Embedding CLIP vision opzionali da aggiungere al condizionamento. | CLIP_VISION_OUTPUT | No | N/A |
 | `latent` | La rappresentazione latente video di input che viene incorporata nel condizionamento. | LATENT | Sì | N/A |
-| `noise_augmentation` | La forza dell'aumento del rumore da applicare al condizionamento (predefinito: 0.70). Questo è un parametro avanzato; un valore viene sempre fornito dall'impostazione predefinita. | FLOAT | Sì | 0.0 - 1.0 (step 0.01) |
+| `noise_augmentation` | La forza dell'aumento del rumore da applicare al condizionamento (predefinito: 0.70). Questo è un parametro avanzato; un valore viene sempre fornito dall'impostazione predefinita. | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
 
 **Nota:** Se fornisci una `start_image`, devi anche collegare una `vae` in modo che possa essere codificata. La `start_image` viene automaticamente sottoposta a upscale a 16 volte le dimensioni spaziali (larghezza e altezza) del `latent` di input, quindi codificata e inserita nel latente di condizionamento. Solo i canali RGB della `start_image` vengono utilizzati per la codifica.
 

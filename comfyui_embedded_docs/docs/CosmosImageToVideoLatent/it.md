@@ -7,10 +7,10 @@ Il nodo CosmosImageToVideoLatent crea una rappresentazione latente video dalle i
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `vae` | Il modello VAE usato per codificare le immagini nello spazio latente video. | VAE | Sì | - |
-| `width` | La larghezza del video di output in pixel (predefinito: 1280). | INT | Sì | 16 to MAX_RESOLUTION (step: 16) |
-| `height` | L'altezza del video di output in pixel (predefinito: 704). | INT | Sì | 16 to MAX_RESOLUTION (step: 16) |
-| `length` | Il numero totale di fotogrammi nel video (predefinito: 121). | INT | Sì | 1 to MAX_RESOLUTION (step: 8) |
-| `batch_size` | Il numero di latent video da generare (predefinito: 1). | INT | Sì | 1 to 4096 |
+| `width` | La larghezza del video di output in pixel (predefinito: 1280). | INT | Sì | 16 a MAX_RESOLUTION (passo: 16) |
+| `height` | L'altezza del video di output in pixel (predefinito: 704). | INT | Sì | 16 a MAX_RESOLUTION (passo: 16) |
+| `length` | Il numero totale di fotogrammi nel video (predefinito: 121). | INT | Sì | 1 a MAX_RESOLUTION (passo: 8) |
+| `batch_size` | Il numero di latent video da generare (predefinito: 1). | INT | Sì | 1 a 4096 |
 | `start_image` | Immagine o sequenza di immagini opzionale da codificare all'inizio del video. | IMAGE | No | - |
 | `end_image` | Immagine o sequenza di immagini opzionale da codificare alla fine del video. | IMAGE | No | - |
 

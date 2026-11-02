@@ -6,7 +6,7 @@ Der PrimitiveInt-Node bietet eine einfache Möglichkeit, mit ganzzahligen Werten
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `value` | Der ganzzahlige Wert, der ausgegeben werden soll (Standard: 0). Der Wert bleibt fest und ändert sich nach der Generierung nicht automatisch. | INT | Ja | -9223372036854775807 to 9223372036854775807 |
+| `value` | Der ganzzahlige Wert, der ausgegeben werden soll (Standard: 0). Der Wert bleibt fest und ändert sich nach der Generierung nicht automatisch. | INT | Ja | -9223372036854775807 bis 9223372036854775807 |
 
 ## Ausgaben
 

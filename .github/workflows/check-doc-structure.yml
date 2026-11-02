@@ -5,6 +5,7 @@ on:
     paths:
       - 'comfyui_embedded_docs/docs/**/*.md'
       - '.github/scripts/check_doc_structure.py'
+      - 'docs-generation/scripts/fix_range_locale.py'
       - '.github/workflows/check-doc-structure.yml'
   schedule:
     # Weekly full-repo scan: pre-existing defects on main are reported, not fatal.
@@ -31,7 +32,12 @@ jobs:
         if: github.event_name == 'pull_request'
         run: |
           python .github/scripts/check_doc_structure.py --changed-only --base origin/main
+      - name: Check for untranslated Range-column residue
+        if: github.event_name == 'pull_request'
+        run: |
+          python docs-generation/scripts/fix_range_locale.py --check-only --changed-only --base origin/main
       - name: Weekly full scan
         if: github.event_name == 'schedule'
         run: |
           python .github/scripts/check_doc_structure.py || echo "::warning::Pre-existing structure defects on main - run check_doc_structure.py --fix"
+          python docs-generation/scripts/fix_range_locale.py || echo "::warning::Range-column residue on main - run fix_range_locale.py --apply"

@@ -11,8 +11,8 @@ Bu düğüm, derinlik haritasının ters projeksiyonunu alarak ve elde edilen no
 | `decimation` | Tepe noktası adımı. 1 = tam çözünürlük, 2 = yarı, vb. (varsayılan: 1) | INT | Evet | 1 ile 8 |
 | `discontinuity_threshold` | 3x3 derinlik açıklığı bu oranı aşan üçgenleri at. 0 = kapalı (varsayılan: 0.04) | FLOAT | Evet | 0.0 ile 1.0 |
 | `confidence_threshold` | Görüntü başına normalleştirilmiş güveni bu değerin altında olan pikselleri hariç tut. 0 = tümünü koru, 1 = yalnızca en güvenilir tek pikseli koru. Geometride bir güven haritası olduğunda kullanılır (Small/Base modelleri) (varsayılan: 0.1) | FLOAT | Evet | 0.0 ile 1.0 |
-| `use_sky_mask` | Gökyüzü olasılığı olan pikselleri (sky >= 0.5) mesh'ten hariç tut. Geometride bir gökyüzü haritası olduğunda kullanılır (Mono/Metric modelleri) (varsayılan: True) | BOOLEAN | Evet | True or False |
-| `texture` | Kaynak görüntüyü temel renk dokusu olarak kullan (varsayılan: True) | BOOLEAN | Evet | True or False |
+| `use_sky_mask` | Gökyüzü olasılığı olan pikselleri (sky >= 0.5) mesh'ten hariç tut. Geometride bir gökyüzü haritası olduğunda kullanılır (Mono/Metric modelleri) (varsayılan: True) | BOOLEAN | Evet | True veya False |
+| `texture` | Kaynak görüntüyü temel renk dokusu olarak kullan (varsayılan: True) | BOOLEAN | Evet | True veya False |
 
 Sonlu olmayan, sıfır veya negatif derinlik değerine sahip pikseller her zaman mesh'ten hariç tutulur. Elde edilen mesh boşsa hata verilir; hata mesajı `discontinuity_threshold` değerini yükseltmeyi, `confidence_threshold` değerini düşürmeyi veya `use_sky_mask` seçeneğini devre dışı bırakmayı önerir.
 

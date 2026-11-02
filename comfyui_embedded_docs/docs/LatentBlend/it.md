@@ -8,7 +8,7 @@ Il nodo LatentBlend combina due campioni latenti miscelandoli insieme utilizzand
 | --- | --- | --- | --- | --- |
 | `samples1` | Il primo campione latente da miscelare | LATENT | Sì | - |
 | `samples2` | Il secondo campione latente da miscelare | LATENT | Sì | - |
-| `blend_factor` | Controlla il rapporto di miscelazione tra i due campioni (predefinito: 0.5) | FLOAT | Sì | 0 to 1 |
+| `blend_factor` | Controlla il rapporto di miscelazione tra i due campioni (predefinito: 0.5) | FLOAT | Sì | 0 a 1 |
 
 **Nota:** Se `samples1` e `samples2` hanno forme diverse, `samples2` verrà ridimensionato automaticamente per corrispondere alle dimensioni di `samples1` usando l'interpolazione bicubica con ritaglio centrale.
 

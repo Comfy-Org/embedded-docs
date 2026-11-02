@@ -9,10 +9,10 @@ Il nodo WanFirstLastFrameToVideo prepara il condizionamento per la generazione v
 | `positive` | Condizionamento testuale positivo utilizzato per guidare la generazione video. | CONDITIONING | Sì | - |
 | `negative` | Condizionamento testuale negativo utilizzato per guidare la generazione video. | CONDITIONING | Sì | - |
 | `vae` | Modello VAE utilizzato per codificare le immagini dei frame combinate nello spazio latente. | VAE | Sì | - |
-| `width` | Larghezza del video generato in pixel (predefinito: 832, passo: 16). | INT | Sì | 16 to MAX_RESOLUTION |
-| `height` | Altezza del video generato in pixel (predefinito: 480, passo: 16). | INT | Sì | 16 to MAX_RESOLUTION |
-| `length` | Numero di frame nella sequenza video (predefinito: 81, passo: 4). | INT | Sì | 1 to MAX_RESOLUTION |
-| `batch_size` | Numero di video da generare contemporaneamente (predefinito: 1). | INT | Sì | 1 to 4096 |
+| `width` | Larghezza del video generato in pixel (predefinito: 832, passo: 16). | INT | Sì | 16 a MAX_RESOLUTION |
+| `height` | Altezza del video generato in pixel (predefinito: 480, passo: 16). | INT | Sì | 16 a MAX_RESOLUTION |
+| `length` | Numero di frame nella sequenza video (predefinito: 81, passo: 4). | INT | Sì | 1 a MAX_RESOLUTION |
+| `batch_size` | Numero di video da generare contemporaneamente (predefinito: 1). | INT | Sì | 1 a 4096 |
 | `clip_vision_start_image` | Feature di visione CLIP estratte dall'immagine iniziale. Se vengono forniti sia l'input di visione CLIP iniziale che quello finale, le loro feature vengono combinate. | CLIP_VISION_OUTPUT | No | - |
 | `clip_vision_end_image` | Feature di visione CLIP estratte dall'immagine finale. Se vengono forniti sia l'input di visione CLIP iniziale che quello finale, le loro feature vengono combinate. | CLIP_VISION_OUTPUT | No | - |
 | `start_image` | Immagine del frame iniziale per la sequenza video. I suoi primi `length` frame vengono utilizzati e ridimensionati a `width` × `height`. | IMAGE | No | - |

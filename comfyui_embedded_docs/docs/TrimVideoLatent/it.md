@@ -7,7 +7,7 @@ Il nodo TrimVideoLatent rimuove i frame dall'inizio di una rappresentazione late
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Range |
 | --- | --- | --- | --- | --- |
 | `samples` | La rappresentazione latente video di input contenente i frame video da tagliare | LATENT | Sì | - |
-| `trim_amount` | Il numero di frame da rimuovere dall'inizio del video (predefinito: 0) | INT | Sì | 0 to 99999 |
+| `trim_amount` | Il numero di frame da rimuovere dall'inizio del video (predefinito: 0) | INT | Sì | 0 a 99999 |
 
 ## Output
 

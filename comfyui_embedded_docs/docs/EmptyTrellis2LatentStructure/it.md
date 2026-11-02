@@ -6,7 +6,7 @@ Questo nodo crea una struttura latente vuota per il modello Trellis2, in cui tut
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `batch_size` | Il numero di immagini latenti nel batch (predefinito: 1). | INT | Sì | 1 to 4096 |
+| `batch_size` | Il numero di immagini latenti nel batch (predefinito: 1). | INT | Sì | 1 a 4096 |
 
 ## Output
 

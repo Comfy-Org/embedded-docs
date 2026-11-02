@@ -12,9 +12,9 @@ Il nodo ControlNetInpaintingAliMamaApply applica il condizionamento ControlNet p
 | `vae` | Il VAE (Autoencoder variazionale) utilizzato per codificare e decodificare le immagini | VAE | Sì | - |
 | `image` | L'immagine di input che funge da guida di controllo per il ControlNet | IMAGE | Sì | - |
 | `mask` | La maschera che definisce quali aree dell'immagine devono essere sottoposte a inpainting | MASK | Sì | - |
-| `strength` | La forza dell'effetto ControlNet (predefinito: 1.0, passo: 0.01) | FLOAT | Sì | 0.0 to 10.0 |
-| `start_percent` | Parametro avanzato. Il punto di inizio (in percentuale) da cui comincia l'influenza del ControlNet durante la generazione (predefinito: 0.0, passo: 0.001) | FLOAT | Sì | 0.0 to 1.0 |
-| `end_percent` | Parametro avanzato. Il punto finale (in percentuale) in cui termina l'influenza del ControlNet durante la generazione (predefinito: 1.0, passo: 0.001) | FLOAT | Sì | 0.0 to 1.0 |
+| `strength` | La forza dell'effetto ControlNet (predefinito: 1.0, passo: 0.01) | FLOAT | Sì | 0.0 a 10.0 |
+| `start_percent` | Parametro avanzato. Il punto di inizio (in percentuale) da cui comincia l'influenza del ControlNet durante la generazione (predefinito: 0.0, passo: 0.001) | FLOAT | Sì | 0.0 a 1.0 |
+| `end_percent` | Parametro avanzato. Il punto finale (in percentuale) in cui termina l'influenza del ControlNet durante la generazione (predefinito: 1.0, passo: 0.001) | FLOAT | Sì | 0.0 a 1.0 |
 
 **Nota:** Quando il ControlNet ha `concat_mask` abilitato, la maschera viene invertita e applicata all'immagine prima dell'elaborazione, e la maschera invertita viene inclusa nei dati di concatenazione extra inviati al ControlNet.
 

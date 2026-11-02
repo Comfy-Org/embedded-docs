@@ -7,10 +7,10 @@ Der LTXVScheduler-Node erzeugt Sigma-Werte für einen benutzerdefinierten Sampli
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `steps` | Anzahl der Sampling-Schritte (Standard: 20) | INT | Ja | 1-10000 |
-| `max_shift` | Maximaler Verschiebungswert, der in der Sigma-Berechnung verwendet wird (Standard: 2.05) | FLOAT | Ja | 0.0-100.0 (step: 0.01) |
-| `base_shift` | Basis-Verschiebungswert, der in der Sigma-Berechnung verwendet wird (Standard: 0.95) | FLOAT | Ja | 0.0-100.0 (step: 0.01) |
+| `max_shift` | Maximaler Verschiebungswert, der in der Sigma-Berechnung verwendet wird (Standard: 2.05) | FLOAT | Ja | 0.0-100.0 (Schritt: 0.01) |
+| `base_shift` | Basis-Verschiebungswert, der in der Sigma-Berechnung verwendet wird (Standard: 0.95) | FLOAT | Ja | 0.0-100.0 (Schritt: 0.01) |
 | `stretch` | Streckt die Sigmas, sodass sie im Bereich [terminal, 1] liegen (Standard: True) | BOOLEAN | Ja | True/False |
-| `terminal` | Der Endwert der Sigmas nach dem Strecken (Standard: 0.1). Wird nur verwendet, wenn `stretch` aktiviert ist. | FLOAT | Ja | 0.0-0.99 (step: 0.01) |
+| `terminal` | Der Endwert der Sigmas nach dem Strecken (Standard: 0.1). Wird nur verwendet, wenn `stretch` aktiviert ist. | FLOAT | Ja | 0.0-0.99 (Schritt: 0.01) |
 | `latent` | Optionale Latent-Eingabe, die zur Berechnung der Token-Anzahl für die Sigma-Anpassung verwendet wird. Wenn nicht angegeben, wird eine Standard-Token-Anzahl von 4096 verwendet. | LATENT | Nein | - |
 
 **Hinweis:** Wenn `stretch` aktiviert ist, werden die Sigma-Werte ungleich null neu skaliert, sodass das letzte Sigma ungleich null dem `terminal`-Wert entspricht.

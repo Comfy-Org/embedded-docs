@@ -7,10 +7,10 @@ Smooth SAM3D Body Pose Data reduziert Frame-zu-Frame-Jitter in einer Sequenz von
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `mhr_pose_data` | Die zu glättende MHR-Pose-Daten-Sequenz, die Modellparameter, Formparameter, Ausdrucksparameter, das MHR70-Keypoint-Layout und zugehörige Mesh-Daten enthält. | MHR_POSE_DATA | Ja | — |
-| `strength` | Glättungsstärke. 0 = ungeglättet, 1 = geglättet. (Standard: 1.0) | FLOAT | Ja | 0.0 to 1.0 (step 0.05) |
+| `strength` | Glättungsstärke. 0 = ungeglättet, 1 = geglättet. (Standard: 1.0) | FLOAT | Ja | 0.0 bis 1.0 (Schritt: 0.05) |
 | `method` | gaussian: symmetrischer gewichteter Mittelwert, bester Allzweck-Glätter.<br>savgol: gleitende Polynom-Anpassung, bewahrt scharfe Spitzen. (Standard: "savgol") | COMBO | Ja | "gaussian"<br>"savgol" |
-| `window` | Zeitliches Fenster in Frames (ungerade Werte). (Standard: 7) | INT | Ja | 1 to 51 (odd values, step 2) |
-| `rotation_threshold_degrees` | Deaktiviert die Glättung für diese Root-Rotationsrate (Grad/Frame), um schnelle Drehungen zu erhalten. 30° passt für die meisten Inhalte; niedrige Werte können die Glättung bei gewöhnlichem Jitter deaktivieren und beeinträchtigen die Qualität stillschweigend. 0 = deaktivieren. (Standard: 30.0) | FLOAT | Ja | 0.0 to 90.0 (step 1.0) |
+| `window` | Zeitliches Fenster in Frames (ungerade Werte). (Standard: 7) | INT | Ja | 1 bis 51 (odd values, Schritt: 2) |
+| `rotation_threshold_degrees` | Deaktiviert die Glättung für diese Root-Rotationsrate (Grad/Frame), um schnelle Drehungen zu erhalten. 30° passt für die meisten Inhalte; niedrige Werte können die Glättung bei gewöhnlichem Jitter deaktivieren und beeinträchtigen die Qualität stillschweigend. 0 = deaktivieren. (Standard: 30.0) | FLOAT | Ja | 0.0 bis 90.0 (Schritt: 1.0) |
 
 Hinweis: Wenn `strength` 0.0 oder niedriger ist oder `window` 1 oder niedriger ist, gibt der Node die Eingabedaten unverändert zurück. Die Eingabe muss mindestens 2 Frames und Keypoint-Daten enthalten; andernfalls gibt der Node die Eingabedaten unverändert zurück. Wenn `rotation_threshold_degrees` 0.0 ist, wird die rotationsbasierte Rücknahme der Glättung deaktiviert.
 

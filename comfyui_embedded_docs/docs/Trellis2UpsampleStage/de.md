@@ -10,7 +10,7 @@ Dieser Node skaliert ein Shape-Latent mit 512-Auflösung in hochauflösende Spar
 | `negative` | Das negative Conditioning, an das die Shape-Metadaten der Upsampling-Stufe angehängt werden. | CONDITIONING | Ja | |
 | `shape_latent` | Das Shape-Latent mit 512-Auflösung aus dem ersten KSampler der Shape-Stufe. | LATENT | Ja | |
 | `vae` | Der Trellis2-VAE, der verwendet wird, um das Shape-Latent in hochauflösende Sparse-Koordinaten zu dekodieren. | VAE | Ja | |
-| `target_resolution` | Voxel-Auflösung der hochskalierten Shape. Höher = mehr Details, mehr VRAM. Standard: 1024. | INT | Ja | 1024 - 2048 (step 128) |
+| `target_resolution` | Voxel-Auflösung der hochskalierten Shape. Höher = mehr Details, mehr VRAM. Standard: 1024. | INT | Ja | 1024 - 2048 (Schritt: 128) |
 
 ## Ausgaben
 

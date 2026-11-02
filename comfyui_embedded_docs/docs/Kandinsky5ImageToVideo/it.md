@@ -9,10 +9,10 @@ Il nodo Kandinsky5ImageToVideo prepara i dati di condizionamento e latent per la
 | `positive` | I prompt di condizionamento positivi per guidare la generazione video. | CONDITIONING | Sì | N/A |
 | `negative` | I prompt di condizionamento negativi per allontanare la generazione video da determinati concetti. | CONDITIONING | Sì | N/A |
 | `vae` | Il modello VAE utilizzato per codificare l'immagine iniziale opzionale nello spazio latente. | VAE | Sì | N/A |
-| `width` | La larghezza del video di output in pixel (predefinito: 768). | INT | Sì | 16 to 16384 (step 16) |
-| `height` | L'altezza del video di output in pixel (predefinito: 512). | INT | Sì | 16 to 16384 (step 16) |
-| `length` | Il numero di fotogrammi nel video (predefinito: 121). | INT | Sì | 1 to 16384 (step 4) |
-| `batch_size` | Il numero di sequenze video da generare simultaneamente (predefinito: 1). | INT | Sì | 1 to 4096 |
+| `width` | La larghezza del video di output in pixel (predefinito: 768). | INT | Sì | 16 a 16384 (passo: 16) |
+| `height` | L'altezza del video di output in pixel (predefinito: 512). | INT | Sì | 16 a 16384 (passo: 16) |
+| `length` | Il numero di fotogrammi nel video (predefinito: 121). | INT | Sì | 1 a 16384 (passo: 4) |
+| `batch_size` | Il numero di sequenze video da generare simultaneamente (predefinito: 1). | INT | Sì | 1 a 4096 |
 | `start_image` | Un'immagine iniziale opzionale o un batch di fotogrammi. Se fornita, viene codificata e utilizzata per sostituire l'inizio rumoroso dei latent di output del modello. | IMAGE | No | N/A |
 
 **Nota:** Quando viene fornita una `start_image`, questa viene ridimensionata automaticamente per corrispondere a `width` e `height` specificati usando l'interpolazione bilineare. Solo i primi `length` fotogrammi del batch di immagini vengono utilizzati per la codifica; eventuali fotogrammi aggiuntivi vengono ignorati. Se il batch di immagini contiene meno di `length` fotogrammi, vengono utilizzati solo quei fotogrammi. Vengono codificati solo i canali RGB dell'immagine. Il latent codificato viene quindi iniettato sia nel condizionamento `positive` sia in quello `negative` per guidare l'aspetto iniziale del video, e i fotogrammi codificati puliti sostituiscono l'inizio rumoroso dei latent di output del modello.

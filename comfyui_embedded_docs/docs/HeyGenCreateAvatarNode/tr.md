@@ -22,7 +22,7 @@
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `identity_photo` | Avatara dönüştürülecek kişinin fotoğrafı. 2K'dan büyükse otomatik olarak küçültülür. | IMAGE | Evet | Single image |
+| `identity_photo` | Avatara dönüştürülecek kişinin fotoğrafı. 2K'dan büyükse otomatik olarak küçültülür. | IMAGE | Evet | Tek görüntü |
 
 ### Referans Girdileri
 

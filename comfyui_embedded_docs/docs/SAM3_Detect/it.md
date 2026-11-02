@@ -14,8 +14,8 @@ Il nodo SAM3 Detect esegue rilevamento e segmentazione a vocabolario aperto util
 | `bboxes` | Riquadri di delimitazione entro cui segmentare. Può essere un singolo riquadro (applicato a tutti i frame), un elenco di riquadri (applicato a tutti i frame) o un elenco di elenchi (riquadri per frame). Se fornito senza condizionamento testuale, il nodo segmenta all'interno di ciascun riquadro | BOUNDING_BOX | No | - |
 | `positive_coords` | Prompt a punti positivi in formato JSON `[{"x": int, "y": int}, ...]` usando coordinate in pixel. Sono punti che desideri includere nella segmentazione | STRING | No | - |
 | `negative_coords` | Prompt a punti negativi in formato JSON `[{"x": int, "y": int}, ...]` usando coordinate in pixel. Sono punti che desideri escludere dalla segmentazione | STRING | No | - |
-| `threshold` | Soglia di confidenza per i rilevamenti basati su testo. Vengono mantenuti solo i rilevamenti con punteggio superiore a questo valore (predefinito: 0.5) | FLOAT | No | 0.0 to 1.0 |
-| `refine_iterations` | Numero di passaggi di rifinitura del decoder SAM. Valori più alti possono migliorare la qualità della maschera. Impostare a 0 per usare le maschere grezze del rilevatore senza rifinitura (predefinito: 2) | INT | No | 0 to 5 |
+| `threshold` | Soglia di confidenza per i rilevamenti basati su testo. Vengono mantenuti solo i rilevamenti con punteggio superiore a questo valore (predefinito: 0.5) | FLOAT | No | 0.0 a 1.0 |
+| `refine_iterations` | Numero di passaggi di rifinitura del decoder SAM. Valori più alti possono migliorare la qualità della maschera. Impostare a 0 per usare le maschere grezze del rilevatore senza rifinitura (predefinito: 2) | INT | No | 0 a 5 |
 | `individual_masks` | Se abilitato, restituisce maschere separate per ciascun oggetto rilevato invece di combinarle in un'unica maschera (predefinito: False) | BOOLEAN | No | True/False |
 
 ### Vincoli e note sui parametri

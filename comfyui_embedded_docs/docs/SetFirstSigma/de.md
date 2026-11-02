@@ -7,7 +7,7 @@ Der SetFirstSigma-Node ändert eine Sigma-Sequenz, indem nur ihr erster Wert dur
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `sigmas` | Die Eingabesequenz der zu ändernden Sigma-Werte | SIGMAS | Ja | - |
-| `sigma` | Der neue Sigma-Wert, der als erstes Element in der Sequenz festgelegt werden soll (Standard: 136.0) | FLOAT | Ja | 0.0 to 20000.0 (step: 0.001) |
+| `sigma` | Der neue Sigma-Wert, der als erstes Element in der Sequenz festgelegt werden soll (Standard: 136.0) | FLOAT | Ja | 0.0 bis 20000.0 (Schritt: 0.001) |
 
 ## Ausgaben
 

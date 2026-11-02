@@ -12,8 +12,8 @@ Zeichnet Gesichts-Landmark-Punkte und Verbindungslinien (ein Gesichtsnetz) über
 | `image` | Das Bild, auf das das Netz gezeichnet werden soll. Wenn nicht verbunden, wird eine schwarze Leinwand derselben Größe wie das Erkennungsergebnis verwendet. | IMAGE | Nein |  |
 | `connections` | Legt fest, welche Teile des Gesichtsnetzes gezeichnet werden. `"all"` zeichnet das vollständige Netz (Gesichtsumriss, Augen, Brauen, Lippen, Iris, Nase). `"fill"` zeichnet ein solides Polygon des Gesichtsumrisses (Silhouettenmaske). `"custom"` ermöglicht es, jedes Merkmal einzeln ein- oder auszuschalten. (Standard: `"all"`) | COMBO | Ja | `"all"`<br>`"fill"`<br>`"custom"` |
 | `color` | Die Farbe der Netzlinien und -punkte. (Standard: `#00ff00`) | COLOR | Ja |  |
-| `thickness` | Die Dicke der Netzlinien in Pixeln. Wenn dies auf 0 gesetzt wird, wird das Zeichnen von Linien deaktiviert. (Standard: 1) | INT | Ja | 0 to 8 |
-| `point_size` | Der Radius der Landmark-Punkte in Pixeln. Wenn dies auf 0 gesetzt wird, wird das Zeichnen von Punkten deaktiviert. (Standard: 2) | INT | Ja | 0 to 16 |
+| `thickness` | Die Dicke der Netzlinien in Pixeln. Wenn dies auf 0 gesetzt wird, wird das Zeichnen von Linien deaktiviert. (Standard: 1) | INT | Ja | 0 bis 8 |
+| `point_size` | Der Radius der Landmark-Punkte in Pixeln. Wenn dies auf 0 gesetzt wird, wird das Zeichnen von Punkten deaktiviert. (Standard: 2) | INT | Ja | 0 bis 16 |
 
 **Hinweis zum Parameter `connections`:** Wenn `"custom"` ausgewählt ist, erscheinen zusätzliche boolesche Eingaben für jedes Gesichtsmerkmal (z. B. `face_oval`, `lips`, `left_eye`, `right_eye`, `left_eyebrow`, `right_eyebrow`, `left_iris`, `right_iris`, `nose`, `tesselation`). Nur die von Ihnen aktivierten Merkmale werden gezeichnet.
 

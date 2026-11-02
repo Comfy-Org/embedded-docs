@@ -14,14 +14,14 @@ WanInfiniteTalkToVideo generiert Videosequenzen aus einer Audio-Eingabe. Es verw
 | `positive` | Die positive Konditionierung zur Steuerung der Generierung. | CONDITIONING | Ja | - |
 | `negative` | Die negative Konditionierung zur Steuerung der Generierung. | CONDITIONING | Ja | - |
 | `vae` | Die VAE, die zum Kodieren von Bildern in den und aus dem latenten Raum verwendet wird. | VAE | Ja | - |
-| `width` | Die Breite des Ausgabevideos in Pixeln. Muss durch 16 teilbar sein. (Standard: 832) | INT | Ja | 16 - MAX_RESOLUTION (step 16) |
-| `height` | Die Höhe des Ausgabevideos in Pixeln. Muss durch 16 teilbar sein. (Standard: 480) | INT | Ja | 16 - MAX_RESOLUTION (step 16) |
-| `length` | Die Anzahl der zu generierenden Frames. (Standard: 81) | INT | Ja | 1 - MAX_RESOLUTION (step 4) |
+| `width` | Die Breite des Ausgabevideos in Pixeln. Muss durch 16 teilbar sein. (Standard: 832) | INT | Ja | 16 - MAX_RESOLUTION (Schritt: 16) |
+| `height` | Die Höhe des Ausgabevideos in Pixeln. Muss durch 16 teilbar sein. (Standard: 480) | INT | Ja | 16 - MAX_RESOLUTION (Schritt: 16) |
+| `length` | Die Anzahl der zu generierenden Frames. (Standard: 81) | INT | Ja | 1 - MAX_RESOLUTION (Schritt: 4) |
 | `clip_vision_output` | Optionale CLIP-Vision-Ausgabe für zusätzliche Konditionierung. | CLIP_VISION_OUTPUT | Nein | - |
 | `start_image` | Optionales Startbild zum Initialisieren der Videosequenz. | IMAGE | Nein | - |
 | `audio_encoder_output_1` | Die primäre Audio-Encoder-Ausgabe, die Merkmale für den ersten Sprecher enthält. | AUDIO_ENCODER_OUTPUT | Ja | - |
-| `motion_frame_count` | Anzahl der vorherigen Frames, die als Bewegungskontext verwendet werden. (Standard: 9; erweiterter Parameter) | INT | Ja | 1 - 33 (step 1) |
-| `audio_scale` | Ein Skalierungsfaktor, der auf die Audio-Konditionierung angewendet wird. (Standard: 1.0) | FLOAT | Ja | -10.0 - 10.0 (step 0.01) |
+| `motion_frame_count` | Anzahl der vorherigen Frames, die als Bewegungskontext verwendet werden. (Standard: 9; erweiterter Parameter) | INT | Ja | 1 - 33 (Schritt: 1) |
+| `audio_scale` | Ein Skalierungsfaktor, der auf die Audio-Konditionierung angewendet wird. (Standard: 1.0) | FLOAT | Ja | -10.0 - 10.0 (Schritt: 0.01) |
 | `previous_frames` | Optionale vorherige Video-Frames, von denen aus erweitert wird. Die letzten `motion_frame_count` Frames werden als Bewegungskontext verwendet. | IMAGE | Nein | - |
 
 ### Eingaben für zwei Sprecher

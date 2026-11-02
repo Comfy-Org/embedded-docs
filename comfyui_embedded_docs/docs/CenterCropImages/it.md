@@ -7,8 +7,8 @@ Il nodo Center Crop Images ritaglia un'immagine dal centro secondo una larghezza
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `image` | L'immagine di input da ritagliare. | IMAGE | Sì | - |
-| `width` | La larghezza dell'area di ritaglio (predefinita: 512). | INT | Sì | 1 to 8192 |
-| `height` | L'altezza dell'area di ritaglio (predefinita: 512). | INT | Sì | 1 to 8192 |
+| `width` | La larghezza dell'area di ritaglio (predefinita: 512). | INT | Sì | 1 a 8192 |
+| `height` | L'altezza dell'area di ritaglio (predefinita: 512). | INT | Sì | 1 a 8192 |
 
 ## Output
 

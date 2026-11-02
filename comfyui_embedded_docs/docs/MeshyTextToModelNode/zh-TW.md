@@ -7,7 +7,7 @@ Meshy: Text to Model 節點使用 Meshy API 根據文字描述生成 3D 模型�
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | 指定要用於生成的 AI 模型版本。 | COMBO | 是 | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `prompt` | 你想生成之 3D 模型的文字描述。長度必須介於 1 到 600 個字元之間。預設為空字串。 | STRING | 是 | 1 - 600 characters |
+| `prompt` | 你想生成之 3D 模型的文字描述。長度必須介於 1 到 600 個字元之間。預設為空字串。 | STRING | 是 | 1 - 600 個字元 |
 | `style` | 產生的 3D 模型之藝術風格。 | COMBO | 是 | `"realistic"` |
 | `should_remesh` | 設為 false 時，會傳回未處理的三角網格。選取 "true" 會顯示 `topology` 與 `target_polycount` 這兩個額外參數。 | DYNAMIC_COMBO | 是 | `"true"`<br>`"false"` |
 | `topology` | 重新網格化模型的目標多邊形類型。此參數僅在 `should_remesh` 設為 "true" 時可用。 | COMBO | 否* | `"triangle"`<br>`"quad"` |

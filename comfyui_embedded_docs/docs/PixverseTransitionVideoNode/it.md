@@ -12,7 +12,7 @@ Genera un video di transizione tra due immagini di input utilizzando l'API PixVe
 | `quality` | Impostazione della qualità video (predefinito: `"540p"`) | COMBO | Sì | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
 | `duration_seconds` | Durata del video in secondi | COMBO | Sì | `5`<br>`8` |
 | `motion_mode` | Stile di movimento per la transizione (predefinito: `"normal"`) | COMBO | Sì | `"normal"`<br>`"fast"` |
-| `seed` | Seed per la generazione del video (predefinito: 0) | INT | Sì | 0 to 2147483647 |
+| `seed` | Seed per la generazione del video (predefinito: 0) | INT | Sì | 0 a 2147483647 |
 | `negative_prompt` | Una descrizione testuale opzionale degli elementi indesiderati in un'immagine (predefinito: stringa vuota) | STRING | No | - |
 
 **Nota sui vincoli dei parametri:** Quando si utilizza la qualità 1080p, la modalità di movimento viene impostata automaticamente su `"normal"` e la durata è limitata a 5 secondi. Per qualsiasi durata diversa da 5 secondi, anche la modalità di movimento viene impostata automaticamente su `"normal"`.

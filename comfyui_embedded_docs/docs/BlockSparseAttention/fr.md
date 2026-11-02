@@ -10,11 +10,11 @@ Le nœud **Block Sparse Attention** modifie un modèle afin que ses couches d'at
 |-----------|-------------|-----------------|--------|-------|
 | `model` | Le modèle à patcher. | MODEL | Oui | N/A |
 | `selection` | Méthode utilisée pour choisir les blocs de clés pour une attention complète au niveau des tokens (affichée comme `method`). <br>`sol-attn` : Sparsifying Online Attention utilise un seuil adaptatif sans entraînement pour chaque tête d'attention et bloc de requêtes.<br>`sla` : Sparse-Linear Attention conserve un pourcentage fixe des blocs de clés les mieux notés ; à utiliser uniquement avec des poids de modèle entraînés pour ce schéma.<br>`vsa` : Video Sparse Attention (FastVideo) utilise un pavage 3D en cubes vidéo et une branche d'attention grossière apprise ; nécessite des poids de modèle FastH3. | DYNAMIC_COMBO | Oui | `"sol-attn"`<br>`"sla"`<br>`"vsa"` |
-| `start_percent` | Point de pourcentage où commence l'attention parcimonieuse. Avant ce point, l'attention reste dense. Par défaut : 0.2. | FLOAT | Non | min: 0.0, max: 1.0, step: 0.01 |
-| `end_percent` | Point de pourcentage où se termine l'attention parcimonieuse. Après ce point, l'attention redevient dense. Par défaut : 1.0. | FLOAT | Non | min: 0.0, max: 1.0, step: 0.01 |
+| `start_percent` | Point de pourcentage où commence l'attention parcimonieuse. Avant ce point, l'attention reste dense. Par défaut : 0.2. | FLOAT | Non | min. 0.0, max. 1.0, pas: 0.01 |
+| `end_percent` | Point de pourcentage où se termine l'attention parcimonieuse. Après ce point, l'attention redevient dense. Par défaut : 1.0. | FLOAT | Non | min. 0.0, max. 1.0, pas: 0.01 |
 | `dense_blocks` | Blocs Transformer qui fonctionnent toujours en dense, par ex. '0, 1, 47-49'. Par défaut : "" (vide). Entrée avancée. | STRING | Non | Par défaut : "" |
-| `min_tokens` | Les séquences plus courtes que cette valeur restent denses. Par défaut : 12288. Entrée avancée. | INT | Non | min: 0, max: 1048576, step: 512 |
-| `extra_tokens` | Tokens supplémentaires les mieux notés auxquels chaque bloc de requêtes prête attention au-delà de ses blocs sélectionnés. Une valeur plus proche du dense offre plus de temps d'attention ; 256 recommandé, 0 désactive. Ignoré pour VSA. Par défaut : 256. Entrée avancée. | INT | Non | min: 0, max: 256, step: 64 |
+| `min_tokens` | Les séquences plus courtes que cette valeur restent denses. Par défaut : 12288. Entrée avancée. | INT | Non | min. 0, max. 1048576, pas: 512 |
+| `extra_tokens` | Tokens supplémentaires les mieux notés auxquels chaque bloc de requêtes prête attention au-delà de ses blocs sélectionnés. Une valeur plus proche du dense offre plus de temps d'attention ; 256 recommandé, 0 désactive. Ignoré pour VSA. Par défaut : 256. Entrée avancée. | INT | Non | min. 0, max. 256, pas: 64 |
 | `sink_conditioning` | MiniMax-H3 uniquement. `exact_kv` : chaque requête prête exactement attention aux lignes empaquetées de texte/audio/référence (environ 3 % de coût). `exact_kv_and_rows` : exécute en plus les lignes de requêtes de l'audio cible en dense (préserve l'audio généré intact). `off` désactive ce comportement. Par défaut : "exact_kv_and_rows". Entrée avancée. | COMBO | Non | `"exact_kv"`<br>`"exact_kv_and_rows"`<br>`"off"` |
 | `verbose` | Journalise si chaque forme d'attention a utilisé l'attention parcimonieuse ou pourquoi elle est restée dense. Par défaut : False. Entrée avancée. | BOOLEAN | Non | Par défaut : False |
 
@@ -22,19 +22,19 @@ Le nœud **Block Sparse Attention** modifie un modèle afin que ses couches d'at
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `tau` | Seuil en écarts-types de la distribution des scores. Plus la valeur est élevée, plus l'attention est parcimonieuse : 1.0 conserve environ 16 % des blocs de clés exacts, 1.5 environ 7 %, 2.0 environ 2,7 %. Par défaut : 1.3. | FLOAT | Non | min: 0.0, max: 4.0, step: 0.05 |
+| `tau` | Seuil en écarts-types de la distribution des scores. Plus la valeur est élevée, plus l'attention est parcimonieuse : 1.0 conserve environ 16 % des blocs de clés exacts, 1.5 environ 7 %, 2.0 environ 2,7 %. Par défaut : 1.3. | FLOAT | Non | min. 0.0, max. 4.0, pas: 0.05 |
 
 ### Entrées sla
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `keep_percent` | Pourcentage de blocs de clés que chaque bloc de requêtes conserve exactement (les sinks et la diagonale s'ajoutent par-dessus). Les LoRA de style SLA pour la sélection sont distillées pour ce schéma ; sans un tel LoRA, une valeur plus élevée est plus proche du dense. Par défaut : 10.0. | FLOAT | Non | min: 0.5, max: 95.0, step: 0.5 |
+| `keep_percent` | Pourcentage de blocs de clés que chaque bloc de requêtes conserve exactement (les sinks et la diagonale s'ajoutent par-dessus). Les LoRA de style SLA pour la sélection sont distillées pour ce schéma ; sans un tel LoRA, une valeur plus élevée est plus proche du dense. Par défaut : 10.0. | FLOAT | Non | min. 0.5, max. 95.0, pas: 0.5 |
 
 ### Entrées vsa
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `keep_percent` | Pourcentage de cubes vidéo que chaque cube de requêtes conserve ; les checkpoints FastH3-VSA sont entraînés à 10. Utilise les couches `to_gate_compress` du modèle pour la branche grossière lorsqu'elles sont présentes. Par défaut : 10.0. | FLOAT | Non | min: 0.5, max: 95.0, step: 0.5 |
+| `keep_percent` | Pourcentage de cubes vidéo que chaque cube de requêtes conserve ; les checkpoints FastH3-VSA sont entraînés à 10. Utilise les couches `to_gate_compress` du modèle pour la branche grossière lorsqu'elles sont présentes. Par défaut : 10.0. | FLOAT | Non | min. 0.5, max. 95.0, pas: 0.5 |
 
 **Remarque :** Seuls les paramètres appartenant à la méthode actuellement sélectionnée sont affichés dans l'interface.
 

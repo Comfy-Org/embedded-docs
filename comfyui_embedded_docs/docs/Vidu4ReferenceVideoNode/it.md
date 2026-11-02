@@ -14,9 +14,9 @@ Selezionando un `model` vengono rivelati i parametri specifici di quel modello.
 | `prompt` | Una descrizione testuale per la generazione video, fino a 5000 caratteri. Necessaria per descrivere i riferimenti che si desidera utilizzare. | STRING | Sì | Qualsiasi testo |
 | `aspect_ratio` | Le proporzioni del video in output. | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"3:4"`<br>`"4:3"` |
 | `resolution` | Risoluzione del video in output (predefinito: `"720p"`). | COMBO | Sì | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"2K"`<br>`"4K"` |
-| `duration` | Durata del video in output in secondi (predefinito: 5). | INT | Sì | 3 to 16 |
+| `duration` | Durata del video in output in secondi (predefinito: 5). | INT | Sì | 3 a 16 |
 | `audio` | Se abilitato, produce un video con audio, inclusi dialoghi ed effetti sonori (predefinito: True). | BOOLEAN | Sì | `True`<br>`False` |
-| `seed` | Il seed controlla se il nodo deve rieseguire; i risultati non sono deterministici indipendentemente dal seed. Questo parametro ha la funzionalità "control after generate" (predefinito: 42). | INT | Sì | 1 to 2147483647 |
+| `seed` | Il seed controlla se il nodo deve rieseguire; i risultati non sono deterministici indipendentemente dal seed. Questo parametro ha la funzionalità "control after generate" (predefinito: 42). | INT | Sì | 1 a 2147483647 |
 
 **Nota:** Al massimo possono essere utilizzate 15 immagini di riferimento in totale, contando ogni immagine di un batch. Ogni immagine deve essere di almeno 128x128 pixel con un rapporto d'aspetto compreso tra 1:5 e 5:1. L'audio di riferimento richiede che `audio` sia abilitato e genera un errore in caso contrario.
 

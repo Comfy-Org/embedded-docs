@@ -8,14 +8,14 @@ Questo nodo utilizza il modello Kling AI più recente per generare un video da u
 |-----------|-------------|--------------|-----------|------------|
 | `model_name` | Il modello Kling AI specifico da utilizzare per la generazione video. | COMBO | Sì | `"kling-v3-omni"`<br>`"kling-video-o1"` |
 | `prompt` | Un prompt testuale che descrive il contenuto del video. Può includere sia descrizioni positive che negative. Ignorato quando gli storyboard sono abilitati. | STRING | Sì | - |
-| `duration` | La lunghezza desiderata del video generato in secondi (predefinito: 5). | INT | Sì | 3 to 15 |
+| `duration` | La lunghezza desiderata del video generato in secondi (predefinito: 5). | INT | Sì | 3 a 15 |
 | `first_frame` | L'immagine iniziale per la sequenza video. | IMAGE | Sì | - |
 | `end_frame` | Un fotogramma finale opzionale per il video. Non può essere utilizzato contemporaneamente a `reference_images`. Non funziona con gli storyboard. | IMAGE | No | - |
 | `reference_images` | Fino a 6 immagini di riferimento aggiuntive. | IMAGE | No | - |
 | `resolution` | La risoluzione di output per il video generato (predefinito: "1080p"). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
 | `storyboards` | Genera una serie di segmenti video con prompt e durate individuali. Supportato solo per `kling-v3-omni`. | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
 | `generate_audio` | Genera audio per il video (predefinito: False). Supportato solo per `kling-v3-omni`. | BOOLEAN | No | True / False |
-| `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed (predefinito: 0). | INT | No | 0 to 2147483647 |
+| `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed (predefinito: 0). | INT | No | 0 a 2147483647 |
 
 ### Input di storyboard
 
@@ -24,7 +24,7 @@ Quando `storyboards` è impostato su un valore diverso da `"disabled"`, i seguen
 | Parametro | Descrizione | Tipo di dato | Richiesto | Intervallo |
 |-----------|-------------|--------------|-----------|------------|
 | `storyboard_N_prompt` | Prompt per il segmento storyboard N. Massimo 512 caratteri. (predefinito: "") | STRING | Sì | - |
-| `storyboard_N_duration` | Durata per il segmento storyboard N in secondi (predefinito: 4). | INT | Sì | 1 to 15 |
+| `storyboard_N_duration` | Durata per il segmento storyboard N in secondi (predefinito: 4). | INT | Sì | 1 a 15 |
 
 **Vincoli importanti:**
 

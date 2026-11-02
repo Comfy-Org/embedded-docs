@@ -9,8 +9,8 @@ Lädt einen Batch von Bildern und die zugehörigen Textbeschriftungen aus einem 
 | `folder` | Der Ordner, aus dem die Bilder geladen werden. | STRING | Ja | - |
 | `clip` | Das CLIP-Modell, das zum Kodieren des Textes verwendet wird. | CLIP | Ja | - |
 | `resize_method` | Die Methode zum Ändern der Bildgröße (Standard: "None"). | COMBO | Nein | "None"<br>"Stretch"<br>"Crop"<br>"Pad" |
-| `width` | Die Breite, auf die die Bilder skaliert werden. -1 bedeutet, die ursprüngliche Breite zu verwenden (Standard: -1). | INT | Nein | -1 to 10000 |
-| `height` | Die Höhe, auf die die Bilder skaliert werden. -1 bedeutet, die ursprüngliche Höhe zu verwenden (Standard: -1). | INT | Nein | -1 to 10000 |
+| `width` | Die Breite, auf die die Bilder skaliert werden. -1 bedeutet, die ursprüngliche Breite zu verwenden (Standard: -1). | INT | Nein | -1 bis 10000 |
+| `height` | Die Höhe, auf die die Bilder skaliert werden. -1 bedeutet, die ursprüngliche Höhe zu verwenden (Standard: -1). | INT | Nein | -1 bis 10000 |
 
 **Hinweis:** Die CLIP-Eingabe muss gültig sein und darf nicht None sein. Wenn das CLIP-Modell von einem Checkpoint-Loader-Node stammt, stellen Sie sicher, dass der Checkpoint ein gültiges CLIP- oder Textencoder-Modell enthält.
 

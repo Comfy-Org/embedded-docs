@@ -8,11 +8,11 @@
 |-----------|-------------|-----------|----------|-------|
 | `model1` | Birleştirilecek ilk model | MODEL | Evet | - |
 | `model2` | Birleştirilecek ikinci model | MODEL | Evet | - |
-| `pos_embedder.` | Konum gömücü bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
-| `extra_pos_embedder.` | Ek konum gömücü bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
-| `x_embedder.` | x gömücü bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
-| `t_embedder.` | t gömücü bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
-| `affline_norm.` | Afin normalizasyon bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
+| `pos_embedder.` | Konum gömücü bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
+| `extra_pos_embedder.` | Ek konum gömücü bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
+| `x_embedder.` | x gömücü bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
+| `t_embedder.` | t gömücü bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
+| `affline_norm.` | Afin normalizasyon bileşeni için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
 | `bloklar.blok0.` | Blok 0 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
 | `bloklar.blok1.` | Blok 1 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
 | `bloklar.blok2.` | Blok 2 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
@@ -49,7 +49,7 @@
 | `bloklar.blok33.` | Blok 33 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
 | `bloklar.blok34.` | Blok 34 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
 | `bloklar.blok35.` | Blok 35 için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
-| `final_layer.` | Son katman için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (step: 0.01) |
+| `final_layer.` | Son katman için ağırlık (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
 
 Tüm ağırlık parametreleri 0.0 ile 1.0 arasında 0.01 adımlarla değer kabul eder ve her biri varsayılan olarak 1.0 değerine sahiptir. Blok parametreleri, `blocks.block0.` ile `blocks.block35.` arasında numaralandırılmış 36 transformer bloğunu kapsar.
 

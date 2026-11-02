@@ -10,7 +10,7 @@ Questo nodo genera immagini a partire da descrizioni testuali utilizzando il mod
 | --- | --- | --- | --- | --- |
 | `prompt` | Descrizione testuale dell'immagine desiderata. Da 1 a 6000 caratteri. (predefinito: "") | STRING | Sì | Da 1 a 6000 caratteri |
 | `model` | Modello da utilizzare per la generazione. Selezionando un modello vengono visualizzate impostazioni aggiuntive per quel modello. (predefinito: prima opzione, `"uni-1"`) | DYNAMIC_COMBO | Sì | `"uni-1"`<br>`"uni-1-max"` |
-| `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: 0) | INT | Sì | 0 to 2147483647 |
+| `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: 0) | INT | Sì | 0 a 2147483647 |
 
 ### Input di uni-1 e uni-1-max
 

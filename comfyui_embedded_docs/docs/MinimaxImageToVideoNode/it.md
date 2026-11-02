@@ -8,7 +8,7 @@ Genera video in modo sincrono a partire da un'immagine e un prompt, e da paramet
 | `image` | Immagine da usare come primo fotogramma della generazione video | IMAGE | Sì | - |
 | `prompt_text` | Prompt testuale per guidare la generazione video (predefinito: stringa vuota) | STRING | Sì | - |
 | `model` | Modello da usare per la generazione video (predefinito: "I2V-01") | COMBO | Sì | "I2V-01-Director"<br>"I2V-01"<br>"I2V-01-live" |
-| `seed` | Il seed casuale usato per creare il rumore (predefinito: 0) | INT | No | 0 to 18446744073709551615 |
+| `seed` | Il seed casuale usato per creare il rumore (predefinito: 0) | INT | No | 0 a 18446744073709551615 |
 
 ## Output
 | Nome output | Descrizione | Tipo di dato |

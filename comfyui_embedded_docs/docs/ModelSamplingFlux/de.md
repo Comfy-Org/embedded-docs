@@ -7,10 +7,10 @@ Der Node ModelSamplingFlux wendet Flux-Modell-Sampling auf ein gegebenes Modell 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `model` | Das Modell, auf das Flux-Sampling angewendet werden soll | MODEL | Ja | - |
-| `max_shift` | Maximaler Shift-Wert für die Sampling-Berechnung (Standard: 1.15) | FLOAT | Ja | 0.0 - 100.0 (step 0.01) |
-| `base_shift` | Basis-Shift-Wert für die Sampling-Berechnung (Standard: 0.5) | FLOAT | Ja | 0.0 - 100.0 (step 0.01) |
-| `width` | Breite des Zielbildes in Pixeln (Standard: 1024) | INT | Ja | 16 - MAX_RESOLUTION (step 8) |
-| `height` | Höhe des Zielbildes in Pixeln (Standard: 1024) | INT | Ja | 16 - MAX_RESOLUTION (step 8) |
+| `max_shift` | Maximaler Shift-Wert für die Sampling-Berechnung (Standard: 1.15) | FLOAT | Ja | 0.0 - 100.0 (Schritt: 0.01) |
+| `base_shift` | Basis-Shift-Wert für die Sampling-Berechnung (Standard: 0.5) | FLOAT | Ja | 0.0 - 100.0 (Schritt: 0.01) |
+| `width` | Breite des Zielbildes in Pixeln (Standard: 1024) | INT | Ja | 16 - MAX_RESOLUTION (Schritt: 8) |
+| `height` | Höhe des Zielbildes in Pixeln (Standard: 1024) | INT | Ja | 16 - MAX_RESOLUTION (Schritt: 8) |
 
 `max_shift` und `base_shift` sind erweiterte Parameter. Der auf die Sampling-Konfiguration angewendete Shift wird aus den Bildabmessungen berechnet: Die latente Auflösung wird als `width × height / 256` berechnet, und der Shift-Wert wird zwischen `base_shift` bei einer latenten Auflösung von 256 und `max_shift` bei einer latenten Auflösung von 4096 interpoliert.
 

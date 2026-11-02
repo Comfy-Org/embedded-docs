@@ -9,8 +9,8 @@ Dieser Node wendet den visuellen Stil eines Referenzbildes auf Ihr Eingabebild a
 | `image` | Das Bild, auf das die Stilübertragung angewendet werden soll. | IMAGE | Ja | - |
 | `reference_image` | Das Referenzbild, aus dem der Stil extrahiert wird. | IMAGE | Ja | - |
 | `prompt` | Ein optionaler Text-Prompt zur Steuerung der Stilübertragung. | STRING | Nein | - |
-| `style_strength` | Prozentsatz der Stilstärke (Standard: 100). | INT | Nein | 0 to 100 |
-| `structure_strength` | Behält die Struktur des Originalbildes bei (Standard: 50). | INT | Nein | 0 to 100 |
+| `style_strength` | Prozentsatz der Stilstärke (Standard: 100). | INT | Nein | 0 bis 100 |
+| `structure_strength` | Behält die Struktur des Originalbildes bei (Standard: 50). | INT | Nein | 0 bis 100 |
 | `flavor` | Variante der Stilübertragung. | COMBO | Nein | "faithful"<br>"gen_z"<br>"psychedelia"<br>"detaily"<br>"clear"<br>"donotstyle"<br>"donotstyle_sharp" |
 | `engine` | Auswahl der Verarbeitungs-Engine. | COMBO | Nein | "balanced"<br>"definio"<br>"illusio"<br>"3d_cartoon"<br>"colorful_anime"<br>"caricature"<br>"real"<br>"super_real"<br>"softy" |
 | `portrait_mode` | Porträtmodus für Gesichtsverbesserungen aktivieren. | COMBO | Nein | "disabled"<br>"enabled" |

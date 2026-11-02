@@ -6,9 +6,9 @@ Dieser Node erstellt ein leeres Latent, das sowohl Video- als auch Audioinformat
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `width` | Die Breite des Latents in Pixeln. Die Werte müssen Vielfache von 32 sein. Standard: 1344. | INT | Ja | 32 - MAX_RESOLUTION (step 32) |
-| `height` | Die Höhe des Latents in Pixeln. Die Werte müssen Vielfache von 32 sein. Standard: 768. | INT | Ja | 32 - MAX_RESOLUTION (step 32) |
-| `length` | Frame-Anzahl bei 24 fps, aufgerundet auf das 17k+5-Raster des Modells (124 = ca. 5 s; trainierter Bereich ist ca. 124–362, längere Werte sind ungetestet). Standard: 124. | INT | Ja | 5 - 3600 (step 17) |
+| `width` | Die Breite des Latents in Pixeln. Die Werte müssen Vielfache von 32 sein. Standard: 1344. | INT | Ja | 32 - MAX_RESOLUTION (Schritt: 32) |
+| `height` | Die Höhe des Latents in Pixeln. Die Werte müssen Vielfache von 32 sein. Standard: 768. | INT | Ja | 32 - MAX_RESOLUTION (Schritt: 32) |
+| `length` | Frame-Anzahl bei 24 fps, aufgerundet auf das 17k+5-Raster des Modells (124 = ca. 5 s; trainierter Bereich ist ca. 124–362, längere Werte sind ungetestet). Standard: 124. | INT | Ja | 5 - 3600 (Schritt: 17) |
 
 Hinweis: Der Wert `length` wird auf die nächste Frame-Anzahl aufgerundet, die in das 17k+5-Raster des Modells passt (17 x k + 5 Frames, z. B. 5, 22, 39, 56, 73, 90, 107, 124 usw.). Die Werte `width` und `height` müssen Vielfache von 32 sein. Die maximale Auflösung ist der systemdefinierte Wert in ComfyUI.
 

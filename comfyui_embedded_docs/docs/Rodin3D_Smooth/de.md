@@ -7,7 +7,7 @@ Der Rodin 3D Smooth-Node generiert 3D-Assets mithilfe der Rodin API, indem er Ei
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `Images` | Eingabebilder, die für die Generierung des 3D-Modells verwendet werden. Es können mehrere Bilder bereitgestellt werden (bis zu 5). | IMAGE | Ja | - |
-| `Seed` | Zufälliger Seed-Wert für die Konsistenz der Generierung (Standard: 0). | INT | Nein | 0 to 65535 |
+| `Seed` | Zufälliger Seed-Wert für die Konsistenz der Generierung (Standard: 0). | INT | Nein | 0 bis 65535 |
 | `Material_Type` | Materialtyp, der auf das 3D-Modell angewendet wird (Standard: "PBR"). | STRING | Nein | "PBR"<br>"Shaded" |
 | `Polygon_count` | Ziel-Polygonanzahl für das generierte 3D-Modell. Bestimmt die Mesh-Qualität und Detailstufe (Standard: "18K-Quad"). | STRING | Nein | "4K-Quad"<br>"8K-Quad"<br>"18K-Quad"<br>"50K-Quad"<br>"200K-Triangle" |
 

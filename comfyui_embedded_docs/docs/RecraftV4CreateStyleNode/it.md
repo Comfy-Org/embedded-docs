@@ -7,7 +7,7 @@ Questo nodo crea uno stile Recraft V4 riutilizzabile da 1 a 10 immagini di rifer
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `model` | Modello per cui viene creato lo stile. Standard e Pro condividono un unico pool di stili: gli stili raster funzionano con ogni modello raster Recraft V4 e V4.1, gli stili vettoriali (`*_vector`) con ogni modello vettoriale V4 e V4.1. | COMBO | Sì | "recraftv4_styles"<br>"recraftv4_styles_vector"<br>"recraftv4_styles_pro"<br>"recraftv4_styles_pro_vector" |
-| `images` | Immagini di riferimento che definiscono lo stile. Riferimenti simili affinano la corrispondenza, riferimenti vari la ampliano. Slot espandibile: collega da 1 a 10 immagini (da `image_1` a `image_10`). | IMAGE | Sì | 1 to 10 images |
+| `images` | Immagini di riferimento che definiscono lo stile. Riferimenti simili affinano la corrispondenza, riferimenti vari la ampliano. Slot espandibile: collega da 1 a 10 immagini (da `image_1` a `image_10`). | IMAGE | Sì | 1 a 10 immagini |
 
 ### Note
 

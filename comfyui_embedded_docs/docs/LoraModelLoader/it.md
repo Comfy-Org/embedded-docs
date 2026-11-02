@@ -8,8 +8,8 @@ Il nodo LoraModelLoader applica pesi LoRA (Low-Rank Adaptation) addestrati a un 
 | --- | --- | --- | --- | --- |
 | `model` | Il modello di diffusione a cui verrà applicato il LoRA. | MODEL | Sì | - |
 | `lora` | Il modello LoRA da applicare al modello di diffusione. | LORA_MODEL | Sì | - |
-| `strength_model` | Quanto intensamente modificare il modello di diffusione. Questo valore può essere negativo (predefinito: 1.0). | FLOAT | Sì | -100.0 to 100.0 |
-| `bypass` | Se abilitato, applica LoRA in modalità bypass senza modificare i pesi del modello base. Utile per l'addestramento e quando i pesi del modello sono offloaded (predefinito: False). | BOOLEAN | Sì | True or False |
+| `strength_model` | Quanto intensamente modificare il modello di diffusione. Questo valore può essere negativo (predefinito: 1.0). | FLOAT | Sì | -100.0 a 100.0 |
+| `bypass` | Se abilitato, applica LoRA in modalità bypass senza modificare i pesi del modello base. Utile per l'addestramento e quando i pesi del modello sono offloaded (predefinito: False). | BOOLEAN | Sì | True o False |
 
 **Nota:** Quando `strength_model` è impostato su 0, il nodo restituisce il modello originale senza applicare alcuna modifica LoRA.
 

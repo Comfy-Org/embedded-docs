@@ -8,7 +8,7 @@ ReplaceVideoLatentFrames, hedef latent videodaki bir kare aralığını, kaynak 
 | --- | --- | --- | --- | --- |
 | `destination` | Karelerin değiştirileceği hedef latent. | LATENT | Evet | - |
 | `source` | Hedef latente eklenecek kareleri sağlayan kaynak latent. Sağlanmazsa, hedef latent değiştirilmeden döndürülür. | LATENT | Hayır | - |
-| `index` | Kaynak latent karelerinin hedef latente yerleştirileceği hedef latentteki başlangıç kare indeksi. Negatif değerler sondan sayar (varsayılan: 0). | INT | Evet | -MAX_RESOLUTION to MAX_RESOLUTION |
+| `index` | Kaynak latent karelerinin hedef latente yerleştirileceği hedef latentteki başlangıç kare indeksi. Negatif değerler sondan sayar (varsayılan: 0). | INT | Evet | -MAX_RESOLUTION ile MAX_RESOLUTION |
 
 **Kısıtlamalar:**
 

@@ -7,7 +7,7 @@ Genera video da prompt testuali utilizzando il modello MiniMax Hailuo-02. Opzion
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Range |
 |-----------|-------------|--------------|--------------|-------|
 | `prompt_text` | Prompt testuale per guidare la generazione del video (predefinito: vuoto). | STRING | Sì | - |
-| `seed` | Il seme casuale utilizzato per creare il rumore (predefinito: 0). | INT | No | 0 to 18446744073709551615 |
+| `seed` | Il seme casuale utilizzato per creare il rumore (predefinito: 0). | INT | No | 0 a 18446744073709551615 |
 | `first_frame_image` | Immagine opzionale da usare come primo fotogramma per generare un video. | IMAGE | No | - |
 | `prompt_optimizer` | Ottimizza il prompt per migliorare la qualità della generazione quando necessario (predefinito: True). | BOOLEAN | No | True<br>False |
 | `duration` | La durata del video di output in secondi (predefinito: 6). | COMBO | No | 6<br>10 |

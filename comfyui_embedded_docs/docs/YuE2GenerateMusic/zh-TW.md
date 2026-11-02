@@ -9,7 +9,7 @@
 | `clip` | 用於對音樂輸入進行 token 化與編碼的 CLIP 模型。 | CLIP | 是 | - |
 | `風格` | 描述音樂風格的文字。支援多行輸入與動態提示詞。 | STRING | 是 | Multiline text |
 | `歌詞` | 產生音樂的歌詞。支援多行輸入與動態提示詞。 | STRING | 是 | Multiline text |
-| `abc` | 連接 ABC 產生器，或提供編輯過的樂譜。留空以自動使用 off 模式。預設："" | STRING | 是 | Multiline text |
+| `abc` | 連接 ABC 產生器，或提供編輯過的樂譜。留空以自動使用 off 模式。預設："" | STRING | 是 | 多行文字 |
 | `種子` | 產生所用的隨機種子。預設：0 | INT | 是 | 0 至 18446744073709551615 |
 | `模式` | `full`：產生旋律與和弦；`melody`：僅產生旋律，建議用於翻唱。預設："full" | COMBO | 是 | "full"<br>"melody" |
 | `max_duration` | 最大持續時間（秒）。長提示詞會自動縮短；產生可能提前停止。預設：360.0 | FLOAT | 是 | 0.04 至 900.0 |

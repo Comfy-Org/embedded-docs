@@ -13,7 +13,7 @@ Genera video in modo sincrono in base a un prompt testuale e a immagini opzional
 | `resolution` | Risoluzione di output per il video generato (predefinito: "540p"). Questo parametro viene ignorato quando si utilizza il modello `ray-1-6`. | COMBO | Sì | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duration` | Durata del video generato. Questo parametro viene ignorato quando si utilizza il modello `ray-1-6`. | COMBO | Sì | `"5s"`<br>`"9s"` |
 | `loop` | Indica se il video generato deve essere riprodotto in loop (predefinito: False) | BOOLEAN | Sì | - |
-| `seed` | Seed per determinare se il nodo deve essere rieseguito; i risultati effettivi sono non deterministici indipendentemente dal seed. (predefinito: 0) | INT | Sì | 0 to 18446744073709551615 |
+| `seed` | Seed per determinare se il nodo deve essere rieseguito; i risultati effettivi sono non deterministici indipendentemente dal seed. (predefinito: 0) | INT | Sì | 0 a 18446744073709551615 |
 | `first_image` | Primo fotogramma del video generato. (opzionale) | IMAGE | No | - |
 | `last_image` | Ultimo fotogramma del video generato. (opzionale) | IMAGE | No | - |
 | `luma_concepts` | Camera Concepts opzionali per determinare il movimento della camera tramite il nodo Luma Concepts. (opzionale) | CUSTOM | No | - |

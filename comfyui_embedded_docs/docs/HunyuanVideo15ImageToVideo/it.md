@@ -9,10 +9,10 @@ Il nodo HunyuanVideo15ImageToVideo prepara i dati di condizionamento e dello spa
 | `positive` | I prompt di condizionamento positivi che descrivono ciò che il video dovrebbe contenere. | CONDITIONING | Sì | - |
 | `negative` | I prompt di condizionamento negativi che descrivono ciò che il video dovrebbe evitare. | CONDITIONING | Sì | - |
 | `vae` | Il modello VAE (Autoencoder Variazionale) utilizzato per codificare l'immagine iniziale nello spazio latente. | VAE | Sì | - |
-| `width` | La larghezza dei fotogrammi del video di output in pixel. Deve essere divisibile per 16. (predefinito: 848) | INT | Sì | 16 to MAX_RESOLUTION, step: 16 |
-| `height` | L'altezza dei fotogrammi del video di output in pixel. Deve essere divisibile per 16. (predefinito: 480) | INT | Sì | 16 to MAX_RESOLUTION, step: 16 |
-| `length` | Il numero totale di fotogrammi nella sequenza video. I valori aumentano a passi di 4 partendo da 1 (1, 5, 9, 13, ...). (predefinito: 33) | INT | Sì | 1 to MAX_RESOLUTION, step: 4 |
-| `batch_size` | Il numero di sequenze video da generare in un singolo batch. (predefinito: 1) | INT | Sì | 1 to 4096 |
+| `width` | La larghezza dei fotogrammi del video di output in pixel. Deve essere divisibile per 16. (predefinito: 848) | INT | Sì | 16 a MAX_RESOLUTION, passo: 16 |
+| `height` | L'altezza dei fotogrammi del video di output in pixel. Deve essere divisibile per 16. (predefinito: 480) | INT | Sì | 16 a MAX_RESOLUTION, passo: 16 |
+| `length` | Il numero totale di fotogrammi nella sequenza video. I valori aumentano a passi di 4 partendo da 1 (1, 5, 9, 13, ...). (predefinito: 33) | INT | Sì | 1 a MAX_RESOLUTION, passo: 4 |
+| `batch_size` | Il numero di sequenze video da generare in un singolo batch. (predefinito: 1) | INT | Sì | 1 a 4096 |
 | `start_image` | Un'immagine iniziale opzionale per inizializzare la generazione del video. Se fornita, viene codificata e usata per condizionare i primi fotogrammi. Vengono usati solo i primi `length` fotogrammi dell'immagine. | IMAGE | No | - |
 | `clip_vision_output` | Embedding di visione CLIP opzionali per fornire un condizionamento visivo aggiuntivo alla generazione. | CLIP_VISION_OUTPUT | No | - |
 

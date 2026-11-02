@@ -8,7 +8,7 @@ Il nodo Magnific Image Relight regola l'illuminazione di un'immagine di input. P
 | --- | --- | --- | --- | --- |
 | `image` | L'immagine di cui regolare l'illuminazione. È richiesta esattamente un'immagine. Le dimensioni minime sono 160x160 pixel. Le proporzioni devono essere comprese tra 1:3 e 3:1. | IMAGE | Sì | N/A |
 | `prompt` | Guida descrittiva per l'illuminazione. Supporta la notazione di enfasi (1-1.4). Il valore predefinito è una stringa vuota. | STRING | No | N/A |
-| `light_transfer_strength` | Intensità di applicazione del trasferimento della luce. Predefinito: 100. | INT | Sì | 0 to 100 |
+| `light_transfer_strength` | Intensità di applicazione del trasferimento della luce. Predefinito: 100. | INT | Sì | 0 a 100 |
 | `style` | Preferenza stilistica dell'output. | COMBO | Sì | `"standard"`<br>`"darker_but_realistic"`<br>`"clean"`<br>`"smooth"`<br>`"brighter"`<br>`"contrasted_n_hdr"`<br>`"just_composition"` |
 | `interpolate_from_original` | Limita la libertà di generazione per corrispondere più fedelmente all'originale. Predefinito: False. | BOOLEAN | Sì | N/A |
 | `change_background` | Modifica lo sfondo in base al prompt/al riferimento. Predefinito: True. | BOOLEAN | Sì | N/A |

@@ -8,7 +8,7 @@ Il nodo StableCascade_StageC_VAEEncode elabora un'immagine di input attraverso u
 | --- | --- | --- | --- | --- |
 | `image` | L'immagine di input da codificare nello spazio latente | IMAGE | Sì | - |
 | `vae` | Il modello VAE utilizzato per codificare l'immagine | VAE | Sì | - |
-| `compression` | Il fattore di compressione applicato all'immagine prima della codifica. Le dimensioni dell'immagine vengono divise per questo valore, quindi moltiplicate per il rapporto di downscale del VAE. Questo è un parametro avanzato. (predefinito: 42) | INT | Sì | 4-128 (step: 1) |
+| `compression` | Il fattore di compressione applicato all'immagine prima della codifica. Le dimensioni dell'immagine vengono divise per questo valore, quindi moltiplicate per il rapporto di downscale del VAE. Questo è un parametro avanzato. (predefinito: 42) | INT | Sì | 4-128 (passo: 1) |
 
 ## Output
 

@@ -11,7 +11,7 @@ Questo nodo converte un'immagine raster in una grafica vettoriale scalabile (SVG
 | `immagine` | Immagine di input da vettorizzare. | IMAGE | Sì | N/A |
 | `ritaglio automatico` | Ritaglia automaticamente sul soggetto dominante (predefinito: False). | BOOLEAN | Sì | True<br>False |
 | `modello` | Modello da usare per la vettorizzazione SVG. Selezionando un modello vengono rivelati parametri aggiuntivi specifici di quel modello: `target_size` (dimensione target quadrata del ridimensionamento in pixel; 0 mantiene la dimensione dell'immagine di origine, altrimenti da 128 a 4096), `temperature`, `top_p` e `presence_penalty`. | DYNAMIC_COMBO | Sì | `"arrow-2"`<br>`"arrow-2-telos"` |
-| `seed` | Seed per determinare se il nodo deve essere rieseguito; i risultati effettivi sono non deterministici indipendentemente dal valore del seed. Questo parametro ha la funzionalità "control after generate" (predefinito: 0). | INT | Sì | 0 to 2147483647 |
+| `seed` | Seed per determinare se il nodo deve essere rieseguito; i risultati effettivi sono non deterministici indipendentemente dal valore del seed. Questo parametro ha la funzionalità "control after generate" (predefinito: 0). | INT | Sì | 0 a 2147483647 |
 | `reasoning_effort` | Quanto ragionamento impiega il modello prima di disegnare. Livelli più alti migliorano il dettaglio e costano più token. Usato solo dai modelli Arrow 2 (predefinito: "high"). | COMBO | No | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"` |
 
 ## Output

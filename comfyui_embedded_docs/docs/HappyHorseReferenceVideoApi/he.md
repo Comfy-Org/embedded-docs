@@ -10,7 +10,7 @@
 |-----------|-------------|-----------|----------|-------|
 | `model` | מודל reference-to-video של HappyHorse שישמש ליצירה. | DYNAMIC_COMBO | כן | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
 | `seed` | Seed לשימוש ביצירה (ברירת מחדל: 0). ניתן להגדיר כך שישתנה אוטומטית לאחר כל יצירה. | INT | כן | 0 עד 2147483647 |
-| `watermark` | האם להוסיף סימן מים שנוצר ב-AI לתוצאה (ברירת מחדל: False). | BOOLEAN | כן | True or False |
+| `watermark` | האם להוסיף סימן מים שנוצר ב-AI לתוצאה (ברירת מחדל: False). | BOOLEAN | כן | True או False |
 
 ### קלטים של HappyHorse 1.1 (happyhorse-1.1-r2v)
 

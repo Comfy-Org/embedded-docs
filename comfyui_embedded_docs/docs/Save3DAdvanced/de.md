@@ -6,7 +6,7 @@ Speichert ein 3D-Modell in einer Datei im Ausgabeverzeichnis von ComfyUI und erz
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model_3d` | 3D-Modelldatei von einem vorgelagerten 3D-Node. | FILE3D | Ja | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ<br>Any |
+| `model_3d` | 3D-Modelldatei von einem vorgelagerten 3D-Node. | FILE3D | Ja | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ\g<1>Beliebiger Wert |
 | `filename_prefix` | Präfix für den Dateinamen der gespeicherten Datei (Standard: "3d/ComfyUI"). | STRING | Ja | Freitext |
 | `viewport_state` | Viewport-Status mit Kamera- und Modellplatzierungsinformationen, typischerweise von einem Load-3D-Node. | LOAD3D | Ja | - |
 | `model_3d_info` | Platzierung jedes Modells in der Szene: Position, Rotation und Skalierung (Y-up-Weltkoordinaten). Überschreibt die in `viewport_state` gespeicherte Modellplatzierung, wenn verbunden. | LOAD3DMODELINFO | Nein | - |

@@ -7,7 +7,7 @@ Il nodo PerturbedAttentionGuidance applica la perturbed attention guidance a un 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Il modello di diffusione a cui applicare la perturbed attention guidance | MODEL | Sì | - |
-| `scale` | La forza dell'effetto perturbed attention guidance (predefinito: 3.0). Se impostato a 0, il nodo non ha alcun effetto e restituisce il risultato denoised originale invariato. | FLOAT | Sì | 0.0 - 100.0 (step: 0.01) |
+| `scale` | La forza dell'effetto perturbed attention guidance (predefinito: 3.0). Se impostato a 0, il nodo non ha alcun effetto e restituisce il risultato denoised originale invariato. | FLOAT | Sì | 0.0 - 100.0 (passo: 0.01) |
 
 ## Output
 

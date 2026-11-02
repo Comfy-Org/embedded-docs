@@ -6,7 +6,7 @@ Der Not-Node führt eine logische NOT-Operation für jeden Eingabewert aus. Er g
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `value` | Der umzukehrende Eingabewert. Jeder Datentyp wird akzeptiert und anhand der Python-Regeln für Wahrheitswerte ausgewertet. | ANY | Ja | Any value |
+| `value` | Der umzukehrende Eingabewert. Jeder Datentyp wird akzeptiert und anhand der Python-Regeln für Wahrheitswerte ausgewertet. | ANY | Ja | Beliebiger Wert |
 
 ## Ausgaben
 

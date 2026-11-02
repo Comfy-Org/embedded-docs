@@ -6,7 +6,7 @@ Bu düğüm, yalnızca 8 adımda tamamlanan Z-Image Turbo modelini kullanarak bi
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Oluşturulacak görseli tanımlayan metin istemi. Çok satırlı girişi kabul eder ve gönderilmeden önce baştaki/sondaki boşluklar kırpılır. Kırpma sonrasında boş olmamalıdır. Varsayılan: "" (boş). | STRING | Evet | 1 - 4096 characters |
+| `prompt` | Oluşturulacak görseli tanımlayan metin istemi. Çok satırlı girişi kabul eder ve gönderilmeden önce baştaki/sondaki boşluklar kırpılır. Kırpma sonrasında boş olmamalıdır. Varsayılan: "" (boş). | STRING | Evet | 1 - 4096 karakter |
 | `seed` | Üretimin tekrarlanabilirliğini kontrol etmek için kullanılan rastgele tohum. Değiştirilmesi farklı bir varyasyon üretir. Üretim sonrası kontrol seçeneği içerir. Varsayılan: 42. | INT | Hayır | 0 - 18446744073709551615 |
 | `aspect_ratio` | Oluşturulan görselin en-boy oranı. Varsayılan: "1:1". | COMBO | Hayır | "1:1"<br>"3:4"<br>"2:3"<br>"3:2"<br>"4:3"<br>"16:9"<br>"9:16"<br>"21:9" |
 | `megapixels` | Toplam piksel bütçesi. Kare oranda 1.0 yaklaşık 1024x1024'tür. Varsayılan: 1.0. | FLOAT | Hayır | 0.1 - 16.0<br>(0.1 adım) |

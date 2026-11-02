@@ -7,13 +7,13 @@ Il nodo ConditioningSetAreaPercentageVideo modifica i dati di conditioning defin
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
 | `conditioning` | I dati di conditioning da modificare | CONDITIONING | Sì | - |
-| `width` | La larghezza dell'area come percentuale della larghezza totale (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (step 0.01) |
-| `height` | L'altezza dell'area come percentuale dell'altezza totale (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (step 0.01) |
-| `temporal` | La durata temporale dell'area come percentuale della lunghezza totale del video (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (step 0.01) |
-| `x` | La posizione iniziale orizzontale dell'area come percentuale (predefinito: 0.0) | FLOAT | Sì | 0.0 - 1.0 (step 0.01) |
-| `y` | La posizione iniziale verticale dell'area come percentuale (predefinito: 0.0) | FLOAT | Sì | 0.0 - 1.0 (step 0.01) |
-| `z` | La posizione iniziale temporale dell'area come percentuale della linea temporale del video (predefinito: 0.0) | FLOAT | Sì | 0.0 - 1.0 (step 0.01) |
-| `strength` | Il moltiplicatore di forza applicato al conditioning all'interno dell'area definita (predefinito: 1.0) | FLOAT | Sì | 0.0 - 10.0 (step 0.01) |
+| `width` | La larghezza dell'area come percentuale della larghezza totale (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
+| `height` | L'altezza dell'area come percentuale dell'altezza totale (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
+| `temporal` | La durata temporale dell'area come percentuale della lunghezza totale del video (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
+| `x` | La posizione iniziale orizzontale dell'area come percentuale (predefinito: 0.0) | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
+| `y` | La posizione iniziale verticale dell'area come percentuale (predefinito: 0.0) | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
+| `z` | La posizione iniziale temporale dell'area come percentuale della linea temporale del video (predefinito: 0.0) | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
+| `strength` | Il moltiplicatore di forza applicato al conditioning all'interno dell'area definita (predefinito: 1.0) | FLOAT | Sì | 0.0 - 10.0 (passo: 0.01) |
 
 ## Output
 

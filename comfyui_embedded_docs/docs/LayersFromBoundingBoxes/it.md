@@ -11,8 +11,8 @@ Questo nodo converte un batch di immagini e le relative bounding box in uno stac
 | `mask` | Trasparenza per fotogramma, allineata per indice con il batch di immagini (1 = trasparente, convenzione LoadImage). | MASK | No | — |
 | `layers` | Stack di livelli a cui aggiungere. Lascia non connesso per iniziare un nuovo stack. | LAYERS | No | — |
 | `crop_to_content` | Ritaglia ogni fotogramma a metadata.content_rect dove presente e posiziona il contenuto nella posizione della box più l'offset del rect. Lascia attivo per batch i cui fotogrammi sono padding — mantiene solo il contenuto reale nella sua posizione corretta. (predefinito: true) | BOOLEAN | No | true<br>false |
-| `canvas_width` | Larghezza della canvas del documento. 0 la deriva dai livelli posizionati. (predefinito: 0) | INT | No | 0 to MAX_RESOLUTION |
-| `canvas_height` | Altezza della canvas del documento. 0 la deriva dai livelli posizionati. (predefinito: 0) | INT | No | 0 to MAX_RESOLUTION |
+| `canvas_width` | Larghezza della canvas del documento. 0 la deriva dai livelli posizionati. (predefinito: 0) | INT | No | 0 a MAX_RESOLUTION |
+| `canvas_height` | Altezza della canvas del documento. 0 la deriva dai livelli posizionati. (predefinito: 0) | INT | No | 0 a MAX_RESOLUTION |
 
 Note:
 

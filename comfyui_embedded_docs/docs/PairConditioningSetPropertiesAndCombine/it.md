@@ -10,7 +10,7 @@ Il nodo PairConditioningSetPropertiesAndCombine modifica e combina coppie di con
 | `negative` | L'input di condizionamento negativo originale | CONDITIONING | Sì | - |
 | `positive_NEW` | Il nuovo condizionamento positivo da applicare | CONDITIONING | Sì | - |
 | `negative_NEW` | Il nuovo condizionamento negativo da applicare | CONDITIONING | Sì | - |
-| `strength` | Il fattore di forza per applicare il nuovo condizionamento (predefinito: 1.0) | FLOAT | Sì | 0.0 to 10.0 |
+| `strength` | Il fattore di forza per applicare il nuovo condizionamento (predefinito: 1.0) | FLOAT | Sì | 0.0 a 10.0 |
 | `set_cond_area` | Controlla come viene applicata l'area di condizionamento (predefinito: "default") | STRING | Sì | "default"<br>"mask bounds" |
 | `mask` | Maschera opzionale per limitare l'area di applicazione del condizionamento | MASK | No | - |
 | `hooks` | Gruppo di hook opzionale per il controllo avanzato | HOOKS | No | - |
