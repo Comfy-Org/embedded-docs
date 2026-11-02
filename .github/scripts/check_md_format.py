@@ -242,9 +242,17 @@ def check_file(path: Path):
     # translated schema name.
     reported_lines = set()
     type_idx = None
+    in_table = False
     for i, line in unfenced:
         if not line.startswith("|"):
+            # Leaving a table: the next table may have a different column
+            # layout, so forget the Data Type column index found for the
+            # previous table and let it be re-detected from its own header.
+            if in_table:
+                type_idx = None
+                in_table = False
             continue
+        in_table = True
         cells = [c.strip() for c in line.split("|")[1:-1]]
         if all(set(c) <= {"-", ":", " "} for c in cells):
             continue
