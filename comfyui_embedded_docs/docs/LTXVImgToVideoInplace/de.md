@@ -10,7 +10,7 @@ LTXVImgToVideoInplace kodiert ein Eingabebild in den latenten Raum und platziert
 | `image` | Das Eingabebild, das kodiert und zur Konditionierung des Video-Latents verwendet wird. | IMAGE | Ja | - |
 | `latent` | Die Ziel-Latent-Videorepräsentation, die geändert werden soll. | LATENT | Ja | - |
 | `strength` | Steuert, wie stark das kodierte Bild die Anfangs-Frames des Latents konditioniert. Ein Wert von 1.0 konditioniert die Anfangs-Frames vollständig mit dem kodierten Bild, während niedrigere Werte sie weniger stark konditionieren. Die Rauschmaske für die Anfangs-Frames wird auf `1.0 - strength` gesetzt. (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 |
-| `bypass` | Umgeht die Konditionierung. Wenn aktiviert, gibt der Node das Eingabe-Latent unverändert zurück. (Standard: False) | BOOLEAN | Ja | True or False |
+| `bypass` | Umgeht die Konditionierung. Wenn aktiviert, gibt der Node das Eingabe-Latent unverändert zurück. (Standard: False) | BOOLEAN | Ja | True oder False |
 
 **Hinweis:** Das `image` wird automatisch auf die vom `vae` für die Kodierung benötigten räumlichen Abmessungen skaliert, basierend auf Breite und Höhe der Eingabe `latent`. Von `image` werden nur die RGB-Kanäle für die Kodierung verwendet.
 

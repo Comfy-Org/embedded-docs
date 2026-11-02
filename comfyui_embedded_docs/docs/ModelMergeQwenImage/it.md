@@ -8,13 +8,13 @@ Questo nodo unisce due modelli di immagini Qwen fondendo i rispettivi componenti
 | --- | --- | --- | --- | --- |
 | `model1` | Il primo modello da unire | MODEL | Sì | - |
 | `model2` | Il secondo modello da unire | MODEL | Sì | - |
-| `pos_embeds.` | Peso per la fusione degli embedding posizionali (predefinito: 1.0) | FLOAT | Sì | 0.0 to 1.0 (step: 0.01) |
-| `img_in.` | Peso per la fusione dell'elaborazione dell'input immagine (predefinito: 1.0) | FLOAT | Sì | 0.0 to 1.0 (step: 0.01) |
-| `txt_norm.` | Peso per la fusione della normalizzazione del testo (predefinito: 1.0) | FLOAT | Sì | 0.0 to 1.0 (step: 0.01) |
-| `txt_in.` | Peso per la fusione dell'elaborazione dell'input testuale (predefinito: 1.0) | FLOAT | Sì | 0.0 to 1.0 (step: 0.01) |
-| `time_text_embed.` | Peso per la fusione dell'embedding di tempo e testo (predefinito: 1.0) | FLOAT | Sì | 0.0 to 1.0 (step: 0.01) |
-| da `transformer_blocks.0.` a `transformer_blocks.59.` | Peso per la fusione di ciascun blocco transformer (predefinito: 1.0). Il nodo espone un peso per ciascuno dei 60 blocchi transformer. | FLOAT | Sì | 0.0 to 1.0 (step: 0.01) |
-| `proj_out.` | Peso per la fusione della proiezione di output (predefinito: 1.0) | FLOAT | Sì | 0.0 to 1.0 (step: 0.01) |
+| `pos_embeds.` | Peso per la fusione degli embedding posizionali (predefinito: 1.0) | FLOAT | Sì | 0.0 a 1.0 (passo: 0.01) |
+| `img_in.` | Peso per la fusione dell'elaborazione dell'input immagine (predefinito: 1.0) | FLOAT | Sì | 0.0 a 1.0 (passo: 0.01) |
+| `txt_norm.` | Peso per la fusione della normalizzazione del testo (predefinito: 1.0) | FLOAT | Sì | 0.0 a 1.0 (passo: 0.01) |
+| `txt_in.` | Peso per la fusione dell'elaborazione dell'input testuale (predefinito: 1.0) | FLOAT | Sì | 0.0 a 1.0 (passo: 0.01) |
+| `time_text_embed.` | Peso per la fusione dell'embedding di tempo e testo (predefinito: 1.0) | FLOAT | Sì | 0.0 a 1.0 (passo: 0.01) |
+| da `transformer_blocks.0.` a `transformer_blocks.59.` | Peso per la fusione di ciascun blocco transformer (predefinito: 1.0). Il nodo espone un peso per ciascuno dei 60 blocchi transformer. | FLOAT | Sì | 0.0 a 1.0 (passo: 0.01) |
+| `proj_out.` | Peso per la fusione della proiezione di output (predefinito: 1.0) | FLOAT | Sì | 0.0 a 1.0 (passo: 0.01) |
 
 Nota: tutti gli input di peso sono obbligatori e condividono gli stessi limiti — un valore predefinito di 1.0 con un intervallo valido da 0.0 a 1.0, regolabile a passi di 0.01.
 

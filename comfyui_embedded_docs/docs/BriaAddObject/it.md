@@ -10,7 +10,7 @@ Questo nodo inserisce in un'immagine un oggetto descritto in testo semplice usan
 |-----------|-------------|--------------|--------------|------------|
 | `image` | L'immagine a cui viene aggiunto l'oggetto descritto. Il canale alpha viene rimosso prima del caricamento dell'immagine. | IMAGE | Sì | - |
 | `instruction` | Cosa aggiungere e dove, ad esempio 'Posiziona un vaso rosso con fiori sul tavolo'. Non deve essere vuoto. Predefinito: "" (stringa vuota). | STRING | Sì | - |
-| `seed` | Bria non accetta un seed qui e rigenera la modifica a ogni chiamata, quindi esecuzioni ripetute possono differire. Il valore non viene mai inviato: modifica solo la chiave di cache di questo nodo, così che un grafo per il resto identico esegua di nuovo la modifica invece di restituire il risultato memorizzato nella cache. Predefinito: 42. | INT | Sì | 0 to 2147483647 |
+| `seed` | Bria non accetta un seed qui e rigenera la modifica a ogni chiamata, quindi esecuzioni ripetute possono differire. Il valore non viene mai inviato: modifica solo la chiave di cache di questo nodo, così che un grafo per il resto identico esegua di nuovo la modifica invece di restituire il risultato memorizzato nella cache. Predefinito: 42. | INT | Sì | 0 a 2147483647 |
 | `moderation` | Impostazioni di moderazione. Scegli "true" per mostrare i flag di moderazione riportati di seguito. | DYNAMIC_COMBO | Sì | "false"<br>"true" |
 
 ### Input con moderazione abilitata

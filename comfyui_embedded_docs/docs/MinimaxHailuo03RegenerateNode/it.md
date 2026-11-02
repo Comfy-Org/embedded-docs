@@ -9,25 +9,25 @@ Questo nodo esegue nuovamente il rendering di un output video MiniMax H3 768P a 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `model` | Il modello da utilizzare per la rigenerazione video. Selezionando "MiniMax H3" vengono rivelate le impostazioni del prompt, della risoluzione e dei media di riferimento. | DYNAMIC_COMBO | Sì | "MiniMax H3" |
-| `video` | Il video di output MiniMax H3 768P da ri-renderizzare. Collegare l'output non modificato di un nodo video MiniMax H3 (24 FPS, 4-15 secondi). Gli output 2K non possono essere utilizzati. | VIDEO | Sì | 24 FPS, 4-15 seconds |
-| `first_frame` | Immagine del primo frame della generazione originale, se utilizzata. | IMAGE | No | Image |
-| `last_frame` | Immagine dell'ultimo frame della generazione originale, se utilizzata. | IMAGE | No | Image |
+| `video` | Il video di output MiniMax H3 768P da ri-renderizzare. Collegare l'output non modificato di un nodo video MiniMax H3 (24 FPS, 4-15 secondi). Gli output 2K non possono essere utilizzati. | VIDEO | Sì | 24 FPS, 4-15 secondi |
+| `first_frame` | Immagine del primo frame della generazione originale, se utilizzata. | IMAGE | No | Immagine |
+| `last_frame` | Immagine dell'ultimo frame della generazione originale, se utilizzata. | IMAGE | No | Immagine |
 | `watermark` | Se aggiungere una filigrana AIGC al video. Il valore predefinito è false. | BOOLEAN | Sì | false / true |
 
 ### Input di MiniMax H3
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `prompt` | Il prompt esatto utilizzato per generare il video sorgente. Non deve essere vuoto. | STRING | Sì | Text (multiline) |
+| `prompt` | Il prompt esatto utilizzato per generare il video sorgente. Non deve essere vuoto. | STRING | Sì | Testo multiriga |
 | `resolution` | Risoluzione con cui eseguire nuovamente il rendering del video sorgente. | COMBO | Sì | "2K" |
 
 ### Input di riferimento
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `reference_images` | Slot espandibile: collegare da `image_1` a `image_9` (fino a 9 immagini). Immagini di riferimento dalla generazione originale, nello stesso ordine. | IMAGE | No | 0-9 images |
-| `reference_videos` | Slot espandibile: collegare da `video_1` a `video_3` (fino a 3 video). Video di riferimento dalla generazione originale, nello stesso ordine. | VIDEO | No | 0-3 videos |
-| `reference_audios` | Slot espandibile: collegare da `audio_1` a `audio_3` (fino a 3 clip). Riferimenti audio dalla generazione originale, nello stesso ordine. Non può essere utilizzato senza un'immagine o un video di riferimento. | AUDIO | No | 0-3 clips |
+| `reference_images` | Slot espandibile: collegare da `image_1` a `image_9` (fino a 9 immagini). Immagini di riferimento dalla generazione originale, nello stesso ordine. | IMAGE | No | 0-9 immagini |
+| `reference_videos` | Slot espandibile: collegare da `video_1` a `video_3` (fino a 3 video). Video di riferimento dalla generazione originale, nello stesso ordine. | VIDEO | No | 0-3 video |
+| `reference_audios` | Slot espandibile: collegare da `audio_1` a `audio_3` (fino a 3 clip). Riferimenti audio dalla generazione originale, nello stesso ordine. Non può essere utilizzato senza un'immagine o un video di riferimento. | AUDIO | No | 0-3 clip |
 
 ### Vincoli
 

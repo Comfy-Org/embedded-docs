@@ -19,13 +19,13 @@ Erzeugt ein Low-Poly-3D-Modell mit sauberer Topologie aus mehreren Ansichten des
 | `model.image_back` | Rückansicht (180°). | IMAGE | Nein | - |
 | `model.image_right` | Rechte Ansicht (270°), die eigene rechte Seite des Motivs. | IMAGE | Nein | - |
 | `model.quad` | Gibt an der FBX-Ausgabe ein quad-dominantes Netz statt eines Dreiecksnetzes an der GLB-Ausgabe zurück (Standard: False). | BOOLEAN | Ja | True/False |
-| `model.face_limit` | Zielanzahl der Flächen. `-1` lässt Tripo wählen. Wenn `model.quad` aktiviert ist, liegt das Limit bei 48 bis 25.000, andernfalls bei 48 bis 50.000 (Standard: -1). | INT | Ja | -1, or 48 to 50000 |
+| `model.face_limit` | Zielanzahl der Flächen. `-1` lässt Tripo wählen. Wenn `model.quad` aktiviert ist, liegt das Limit bei 48 bis 25.000, andernfalls bei 48 bis 50.000 (Standard: -1). | INT | Ja | -1, or 48 bis 50000 |
 | `model.texture` | Auflösung der Basisfarbtextur: standard ist 2K, detailed 4K und extreme 8K. `"none"` gibt ein untexturiertes Netz zurück (Standard: `"standard"`). | COMBO | Ja | `"standard"`<br>`"detailed"`<br>`"extreme"`<br>`"none"` |
 | `model.pbr` | Fügt der Basisfarbe Metall-, Rauheits- und Normal-Maps hinzu. Wird ignoriert, wenn `model.texture` `"none"` ist (Standard: True). | BOOLEAN | Ja | True/False |
-| `model.model_seed` | Seed für die Geometrie (Standard: 42). | INT | Ja | 0 to 2147483647 |
+| `model.model_seed` | Seed für die Geometrie (Standard: 42). | INT | Ja | 0 bis 2147483647 |
 | `model.texture_alignment` | Gleicht die Farben der Eingabebilder ab oder passt die Texturen an die generierte Geometrie an. Wird ignoriert, wenn `model.texture` `"none"` ist (Standard: `"original_image"`). Erweiterte Einstellung. | COMBO | Ja | `"original_image"`<br>`"geometry"` |
 | `model.orientation` | `"align_image"` dreht das Modell auf den Blickwinkel der Eingabebilder. Wird ignoriert, wenn `model.texture` `"none"` ist (Standard: `"default"`). Erweiterte Einstellung. | COMBO | Ja | `"default"`<br>`"align_image"` |
-| `model.texture_seed` | Seed für die Texturen (Standard: 42). Erweiterte Einstellung. | INT | Ja | 0 to 2147483647 |
+| `model.texture_seed` | Seed für die Texturen (Standard: 42). Erweiterte Einstellung. | INT | Ja | 0 bis 2147483647 |
 | `model.auto_size` | Skaliert das Modell über seine Szenentransformation auf seine reale Größe in Metern. Wird ignoriert, wenn `model.texture` `"none"` ist (Standard: False). Erweiterte Einstellung. | BOOLEAN | Ja | True/False |
 | `model.export_uv` | Führt UV-Unwrapping für das Netz durch, wenn es untexturiert ist. Texturierte Netze werden immer entpackt (Standard: True). Erweiterte Einstellung. | BOOLEAN | Ja | True/False |
 | `model.compress_geometry` | Wendet meshopt-Geometriekompression an: viel kleinere Dateien, aber die 3D-Vorschau von ComfyUI kann sie nicht anzeigen. Wird bei Quad-Netzen ignoriert (Standard: False). Erweiterte Einstellung. | BOOLEAN | Ja | True/False |

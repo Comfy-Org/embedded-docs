@@ -8,7 +8,7 @@ Dieser Node transkribiert Audio mithilfe des Fish Audio Speech-to-Text-Dienstes 
 |-----------|--------------|----------|--------------|---------|
 | `audio` | Audio, das transkribiert werden soll. | AUDIO | Ja | — |
 | `language` | ISO-639-1-Sprachhinweis (z. B. 'en', 'zh'). Die Sprache wird unabhängig davon automatisch erkannt. Standard: "" (leere Zeichenkette). | STRING | Nein | Beliebiger ISO-639-1-Sprachcode, z. B. `en`, `zh`; leere Zeichenkette für automatische Erkennung |
-| `precise_timestamps` | Gibt zeitgestempelte Segmente auf Wortebene zurück. Standard: false. | BOOLEAN | Nein | true or false |
+| `precise_timestamps` | Gibt zeitgestempelte Segmente auf Wortebene zurück. Standard: false. | BOOLEAN | Nein | true oder false |
 
 Hinweis: Der Parameter `language` ist nur ein Hinweis – die Sprache wird immer automatisch aus dem Audio erkannt. Wenn `precise_timestamps` false ist (der Standard), werden keine Zeitstempel auf Wortebene zurückgegeben; wenn true, enthalten die Ausgabesegmente Zeitstempel auf Wortebene.
 

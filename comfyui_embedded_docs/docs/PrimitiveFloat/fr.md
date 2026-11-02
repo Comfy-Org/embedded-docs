@@ -6,7 +6,7 @@ Le nœud PrimitiveFloat crée une valeur numérique à virgule flottante qui peu
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `valeur` | La valeur numérique à virgule flottante à générer (par défaut : 0.0) | FLOAT | Oui | -sys.maxsize to sys.maxsize (step: 0.1) |
+| `valeur` | La valeur numérique à virgule flottante à générer (par défaut : 0.0) | FLOAT | Oui | -sys.maxsize to sys.maxsize (pas 0.1) |
 
 ## Sorties
 

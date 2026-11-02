@@ -10,8 +10,8 @@ Traccia oggetti attraverso fotogrammi video utilizzando il tracker basato su mem
 | `model` | Il modello SAM3 da utilizzare per il tracciamento | MODEL | Sì | Modello SAM3 |
 | `initial_mask` | Maschera/e per il primo fotogramma da tracciare (una per oggetto) | MASK | No | Una maschera per oggetto |
 | `conditioning` | Condizionamento testuale per rilevare nuovi oggetti durante il tracciamento | CONDITIONING | No | Condizionamento testuale |
-| `detection_threshold` | Soglia di punteggio per il rilevamento basato su prompt testuale (predefinito: 0.5) | FLOAT | No | 0.0 to 1.0 (step 0.01) |
-| `max_objects` | Numero massimo di oggetti tracciati. Le maschere iniziali contano verso questo limite. 0 utilizza il limite interno di 64. (predefinito: 4) | INT | No | 0 to 64 |
+| `detection_threshold` | Soglia di punteggio per il rilevamento basato su prompt testuale (predefinito: 0.5) | FLOAT | No | 0.0 a 1.0 (passo: 0.01) |
+| `max_objects` | Numero massimo di oggetti tracciati. Le maschere iniziali contano verso questo limite. 0 utilizza il limite interno di 64. (predefinito: 4) | INT | No | 0 a 64 |
 | `detect_interval` | Esegui il rilevamento ogni N fotogrammi (1=ogni fotogramma). Valori più alti risparmiano calcolo. (predefinito: 1) | INT | No | 1 o superiore |
 
 **Nota:** È necessario fornire `initial_mask` o `conditioning`. Se entrambi sono omessi, il nodo genera un errore.

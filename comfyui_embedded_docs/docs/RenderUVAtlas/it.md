@@ -7,7 +7,7 @@ Renderizza il layout UV di una mesh come immagine. Ogni regione UV connessa (cha
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `mesh` | La mesh 3D di cui verrà renderizzato il layout UV. La mesh deve avere coordinate UV; altrimenti il nodo genera l'errore "mesh has no UVs to render. Run UnwrapMesh first." | MESH | Sì | - |
-| `resolution` | La larghezza e l'altezza, in pixel, dell'immagine quadrata renderizzata (predefinito: 1024). | INT | Sì | 64 to 4096 (step 64) |
+| `resolution` | La larghezza e l'altezza, in pixel, dell'immagine quadrata renderizzata (predefinito: 1024). | INT | Sì | 64 a 4096 (passo: 64) |
 
 Nota: Se la mesh contiene una dimensione batch (array UV o array di facce 3D), viene renderizzato solo il primo elemento del batch.
 

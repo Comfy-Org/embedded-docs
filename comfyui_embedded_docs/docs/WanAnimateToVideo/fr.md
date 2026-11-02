@@ -9,19 +9,19 @@ WanAnimateToVideo prépare les données de conditionnement et un latent initial 
 | `positif` | Conditionnement positif pour guider la génération vers le contenu souhaité. | CONDITIONING | Oui | - |
 | `négatif` | Conditionnement négatif pour éloigner la génération du contenu indésirable. | CONDITIONING | Oui | - |
 | `vae` | Modèle VAE utilisé pour encoder les entrées d'image et de vidéo dans l'espace latent. | VAE | Oui | - |
-| `largeur` | Largeur de la vidéo générée en pixels (défaut : 832, pas : 16). | INT | Oui | 16 to MAX_RESOLUTION |
-| `hauteur` | Hauteur de la vidéo générée en pixels (défaut : 480, pas : 16). | INT | Oui | 16 to MAX_RESOLUTION |
-| `longueur` | Nombre d'images à générer (défaut : 77, pas : 4). | INT | Oui | 1 to MAX_RESOLUTION |
+| `largeur` | Largeur de la vidéo générée en pixels (défaut : 832, pas : 16). | INT | Oui | 16 à MAX_RESOLUTION |
+| `hauteur` | Hauteur de la vidéo générée en pixels (défaut : 480, pas : 16). | INT | Oui | 16 à MAX_RESOLUTION |
+| `longueur` | Nombre d'images à générer (défaut : 77, pas : 4). | INT | Oui | 1 à MAX_RESOLUTION |
 | `taille_du_lot` | Nombre de vidéos à générer en un seul lot (défaut : 1). | INT | Oui | 1 à 4096 |
 | `sortie_vision_clip` | Sortie CLIP vision facultative ajoutée au conditionnement positif et négatif. | CLIP_VISION_OUTPUT | Non | - |
 | `image_de_référence` | Image de référence utilisée comme point de départ d'apparence pour la vidéo générée. Si elle n'est pas fournie, une image noire est utilisée. | IMAGE | Non | - |
 | `vidéo_visage` | Entrée vidéo fournissant des indications sur l'expression faciale. Elle est redimensionnée en 512x512 et mise à l'échelle dans la plage de -1.0 à 1.0 en interne. | IMAGE | Non | - |
 | `vidéo_pose` | Entrée vidéo fournissant des indications de pose et de mouvement. | IMAGE | Non | - |
-| `images_max_poursuite_mouvement` | Nombre maximal d'images reportées d'une séquence de mouvement précédente (défaut : 5, pas : 4). | INT | Oui | 1 to MAX_RESOLUTION |
+| `images_max_poursuite_mouvement` | Nombre maximal d'images reportées d'une séquence de mouvement précédente (défaut : 5, pas : 4). | INT | Oui | 1 à MAX_RESOLUTION |
 | `vidéo_arrière_plan` | Vidéo d'arrière-plan utilisée pour remplir les parties hors personnage des images. | IMAGE | Non | - |
 | `masque_personnage` | Masque définissant les régions du personnage, utilisé pour séparer le personnage de l'arrière-plan. | MASK | Non | - |
 | `poursuite_mouvement` | Images de mouvement précédentes à partir desquelles continuer, afin de préserver la cohérence temporelle avec les segments générés précédemment. | IMAGE | Non | - |
-| `décalage_image_vidéo` | Nombre d'images à rechercher dans toutes les vidéos d'entrée. Utilisé pour générer des vidéos plus longues par segments. Connectez-le à la sortie `video_frame_offset` du nœud précédent pour prolonger une vidéo. (défaut : 0, pas : 1) | INT | Oui | 0 to MAX_RESOLUTION |
+| `décalage_image_vidéo` | Nombre d'images à rechercher dans toutes les vidéos d'entrée. Utilisé pour générer des vidéos plus longues par segments. Connectez-le à la sortie `video_frame_offset` du nœud précédent pour prolonger une vidéo. (défaut : 0, pas : 1) | INT | Oui | 0 à MAX_RESOLUTION |
 
 **Contraintes des paramètres :**
 

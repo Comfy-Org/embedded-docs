@@ -7,7 +7,7 @@ Dieser Node wendet Sampling-Einstellungen im Stable-Diffusion-3-Stil auf ein Mod
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `model` | Das Eingabemodell, auf das SD3-Sampling-Parameter angewendet werden | MODEL | Ja | - |
-| `shift` | Steuert den Sampling-Shift-Parameter (Standard: 3.0) | FLOAT | Ja | 0.0 - 100.0 (step: 0.01) |
+| `shift` | Steuert den Sampling-Shift-Parameter (Standard: 3.0) | FLOAT | Ja | 0.0 - 100.0 (Schritt: 0.01) |
 
 Hinweis: Der `shift`-Wert wird zusammen mit einem festen internen Multiplikator von 1000 angewendet. Wenn das ursprüngliche Modell eine Noise-Scale-Einstellung besitzt, wird dieser Wert auf das modifizierte Modell übertragen. Das ursprüngliche Modell wird nicht verändert; eine geklonte und gepatchte Kopie wird zurückgegeben.
 

@@ -9,8 +9,8 @@ StableZero123_Conditioning_Batched düğümü, tek bir giriş görüntüsünden 
 | `clip_görü` | Giriş görüntüsünü kodlamak için kullanılan CLIP görüş modeli | CLIP_VISION | Evet | - |
 | `başlangıç_görüntüsü` | İşlenecek ve kodlanacak başlangıç giriş görüntüsü | IMAGE | Evet | - |
 | `vae` | Görüntü piksellerini latent uzaya kodlamak için kullanılan VAE modeli | VAE | Evet | - |
-| `genişlik` | İşlenen görüntünün çıktı genişliği (varsayılan: 256) | INT | Evet | 16 to MAX_RESOLUTION (step of 8) |
-| `yükseklik` | İşlenen görüntünün çıktı yüksekliği (varsayılan: 256) | INT | Evet | 16 to MAX_RESOLUTION (step of 8) |
+| `genişlik` | İşlenen görüntünün çıktı genişliği (varsayılan: 256) | INT | Evet | 16 ile MAX_RESOLUTION arası (step of 8) |
+| `yükseklik` | İşlenen görüntünün çıktı yüksekliği (varsayılan: 256) | INT | Evet | 16 ile MAX_RESOLUTION arası (step of 8) |
 | `toplu_boyut` | Grupta oluşturulacak koşullandırma örneği sayısı (varsayılan: 1) | INT | Evet | 1 ile 4096 |
 | `yükseklik` | Kameranın başlangıç yükseklik açısı, derece cinsinden (varsayılan: 0.0) | FLOAT | Evet | -180.0 ile 180.0 |
 | `azimut` | Kameranın başlangıç azimut açısı, derece cinsinden (varsayılan: 0.0) | FLOAT | Evet | -180.0 ile 180.0 |

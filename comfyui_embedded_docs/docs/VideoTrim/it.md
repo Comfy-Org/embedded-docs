@@ -7,7 +7,7 @@ Questo nodo ritaglia un video in una finestra temporale scelta impostando un tem
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `video` | Il video da ritagliare. | VIDEO | Sì | — |
-| `trim` | Finestra di ritaglio usando i frame di inizio/fine. La finestra viene convertita in un tempo di inizio (in secondi dall'inizio del video) e in una durata (in secondi). Quando sia il tempo di inizio sia la durata sono 0, il video viene restituito senza alcun ritaglio. | VIDEO_EDIT | Sì | start_time: >= 0, default 0<br>duration: >= 0, default 0 |
+| `trim` | Finestra di ritaglio usando i frame di inizio/fine. La finestra viene convertita in un tempo di inizio (in secondi dall'inizio del video) e in una durata (in secondi). Quando sia il tempo di inizio sia la durata sono 0, il video viene restituito senza alcun ritaglio. | VIDEO_EDIT | Sì | start_time: >= 0, predefinito 0<br>duration: >= 0, predefinito 0 |
 | `strict_duration` | Se True, quando la durata specificata non è possibile, viene generato un errore. (predefinito: False) | BOOLEAN | No | true<br>false |
 
 Nota: La durata del ritaglio deve essere >= 0; i valori negativi generano un errore. La finestra di ritaglio richiesta deve rientrare nel video sorgente. Se il ritaglio non può essere applicato, viene generato un errore che riporta la durata del video sorgente, il tempo di inizio e la durata target.

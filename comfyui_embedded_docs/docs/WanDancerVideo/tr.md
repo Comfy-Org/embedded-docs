@@ -9,9 +9,9 @@ WanDancerVideo düğümü, WanDancer modeli ile video üretimi için koşulland�
 | `pozitif` | Video üretimini yönlendirmek için pozitif koşullandırma. | CONDITIONING | Evet |  |
 | `negatif` | Video üretimini yönlendirmek için negatif koşullandırma. | CONDITIONING | Evet |  |
 | `vae` | Başlangıç görselini latent uzaya kodlamak için kullanılan VAE. | VAE | Evet |  |
-| `genişlik` | Üretilen videonun piksel cinsinden genişliği (varsayılan: 480). | INT | Evet | 16 to MAX_RESOLUTION (step: 16) |
-| `yükseklik` | Üretilen videonun piksel cinsinden yüksekliği (varsayılan: 832). | INT | Evet | 16 to MAX_RESOLUTION (step: 16) |
-| `uzunluk` | Üretilen videodaki kare sayısı. WanDancer için 149 olarak kalmalıdır (varsayılan: 149). | INT | Evet | 1 to MAX_RESOLUTION (step: 4) |
+| `genişlik` | Üretilen videonun piksel cinsinden genişliği (varsayılan: 480). | INT | Evet | 16 ile MAX_RESOLUTION arası (adım: 16) |
+| `yükseklik` | Üretilen videonun piksel cinsinden yüksekliği (varsayılan: 832). | INT | Evet | 16 ile MAX_RESOLUTION arası (adım: 16) |
+| `uzunluk` | Üretilen videodaki kare sayısı. WanDancer için 149 olarak kalmalıdır (varsayılan: 149). | INT | Evet | 1 ile MAX_RESOLUTION arası (adım: 4) |
 | `clip_vision_output` | İlk kare için CLIP vision embedding'leri. | CLIP_VISION_OUTPUT | Hayır |  |
 | `clip_vision_output_ref` | Referans görsel için CLIP vision embedding'leri. | CLIP_VISION_OUTPUT | Hayır |  |
 | `başlangıç görseli` | Kodlanacak başlangıç görsel(ler)i; herhangi bir sayıda kare olabilir. | IMAGE | Hayır |  |

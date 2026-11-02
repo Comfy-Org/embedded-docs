@@ -10,7 +10,7 @@ Bearbeiten Sie ein Video mit Beeble SwitchX. Dieser Node kann alles in der Szene
 | `prompt` | Eine Textbeschreibung des gewünschten neuen Aussehens für die Szene. | STRING | Ja | N/A |
 | `alpha_mode` | Der Alpha-Matte-Modus. Der Modus "fill" hat keine separate Matte und füllt den gesamten Frame. Der Modus "select" verwendet ein einzelnes Keyframe-Bild, um den zu bearbeitenden Bereich festzulegen. Der Modus "custom" verwendet ein vollständiges Alpha-Video, um den zu bearbeitenden Bereich Frame für Frame festzulegen. | COMBO | Ja | `"fill"`<br>`"select"`<br>`"custom"` |
 | `max_resolution` | Die maximale Auflösung für das Ausgabevideo (Standard: "1080p"). | COMBO | Ja | `"720p"`<br>`"1080p"` |
-| `seed` | Ein Seed-Wert für die Reproduzierbarkeit. Die Verwendung desselben Seeds mit denselben Eingaben erzeugt dasselbe Ergebnis. | INT | Ja | 0 to 2147483647 |
+| `seed` | Ein Seed-Wert für die Reproduzierbarkeit. Die Verwendung desselben Seeds mit denselben Eingaben erzeugt dasselbe Ergebnis. | INT | Ja | 0 bis 2147483647 |
 | `reference_image` | Ein optionales Referenzbild, das das gewünschte neue Aussehen für die Szene beschreibt. | IMAGE | Nein | N/A |
 
 ### Details zum Alpha-Modus

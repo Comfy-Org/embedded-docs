@@ -9,7 +9,7 @@ MiniMax Music3 Text Encode utilizza un modello CLIP MiniMax Music3 per convertir
 | `clip` | Il modello CLIP MiniMax Music3, usato per la codifica del testo e la generazione della sequenza di condizionamento. | CLIP | Sì | - |
 | `caption` | Testo che descrive la musica da generare. Supporta testo multiriga e prompt dinamici. | STRING | Sì | - |
 | `lyrics` | Il testo cantato da usare per generare la musica. Supporta testo multiriga e prompt dinamici. | STRING | Sì | - |
-| `seed` | Seme casuale riproducibile per il processo di generazione. Predefinito: 0. È fornito un widget di controllo dopo la generazione. | INT | Sì | 0 to 18446744073709551615 (0xffffffffffffffff) |
+| `seed` | Seme casuale riproducibile per il processo di generazione. Predefinito: 0. È fornito un widget di controllo dopo la generazione. | INT | Sì | 0 a 18446744073709551615 (0xffffffffffffffff) |
 | `max_duration` | Durata massima in secondi; il modello può terminare il brano prima. Predefinito: 120.0. | FLOAT | Sì | 0.04 alla durata audio massima del modello (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND), passo 0.04 |
 | `cfg_scale` | Scala di guida classifier-free. Predefinito: costante del modello CFG_SCALE. Parametro avanzato. | FLOAT | Sì | 0.0 to 100.0, passo 0.1 (mantiene 2 cifre decimali) |
 | `top_k` | Valore di campionamento top-k usato per la selezione dei token acustici. Predefinito: costante del modello CFG_TOP_K. Parametro avanzato. | INT | Sì | 1 alla dimensione del vocabolario del modello (C0_VOCAB_SIZE) |

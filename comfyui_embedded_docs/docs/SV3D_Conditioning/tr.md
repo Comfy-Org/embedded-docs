@@ -9,8 +9,8 @@ SV3D_Conditioning, SV3D modelini kullanarak 3D video oluşturma için koşulland
 | `clip_görü` | Girdi görüntüsünü kodlamak için kullanılan CLIP vision modeli | CLIP_VISION | Evet | - |
 | `başlangıç_görüntüsü` | 3D video oluşturma için başlangıç noktası olarak hizmet eden başlangıç görüntüsü | IMAGE | Evet | - |
 | `vae` | Görüntüyü latent uzaya kodlamak için kullanılan VAE modeli | VAE | Evet | - |
-| `genişlik` | Oluşturulan video kareleri için çıktı genişliği (varsayılan: 576, adım: 8) | INT | Evet | 16 to MAX_RESOLUTION |
-| `yükseklik` | Oluşturulan video kareleri için çıktı yüksekliği (varsayılan: 576, adım: 8) | INT | Evet | 16 to MAX_RESOLUTION |
+| `genişlik` | Oluşturulan video kareleri için çıktı genişliği (varsayılan: 576, adım: 8) | INT | Evet | 16 ile MAX_RESOLUTION arası |
+| `yükseklik` | Oluşturulan video kareleri için çıktı yüksekliği (varsayılan: 576, adım: 8) | INT | Evet | 16 ile MAX_RESOLUTION arası |
 | `video_kareleri` | Video dizisi için oluşturulacak kare sayısı (varsayılan: 21) | INT | Evet | 1 ile 4096 |
 | `yükseklik` | 3D görünüm için kamera yükselti açısı, derece cinsinden (varsayılan: 0.0, adım: 0.1) | FLOAT | Evet | -90.0 ile 90.0 |
 

@@ -9,7 +9,7 @@ Text Encode Ming Image Edit codifica un prompt testuale in conditioning per l'ed
 | `clip` | Il modello CLIP utilizzato per tokenizzare il prompt e le immagini di riferimento. | CLIP | Sì | - |
 | `vae` | VAE opzionale che codifica le immagini di riferimento in frame latent aggiunti al conditioning. Senza un VAE, le immagini condizionano solo il text encoder tramite la vision tower. | VAE | No | - |
 | `prompt` | Prompt testuale da codificare. Supporta input multilinea e prompt dinamici. | STRING | Sì | Testo multiriga |
-| `images` | Slot espandibile: immagini di riferimento opzionali viste dal text encoder e aggiunte alla sequenza latent come frame puliti. Collega da 1 a 8 immagini (`image_1`, `image_2`, ...); le immagini successive vengono ridimensionate sulla prima e il latent campionato dovrebbe corrispondere alle sue dimensioni. Vengono utilizzati solo i canali RGB. | IMAGE | No | 0 to 8 |
+| `images` | Slot espandibile: immagini di riferimento opzionali viste dal text encoder e aggiunte alla sequenza latent come frame puliti. Collega da 1 a 8 immagini (`image_1`, `image_2`, ...); le immagini successive vengono ridimensionate sulla prima e il latent campionato dovrebbe corrispondere alle sue dimensioni. Vengono utilizzati solo i canali RGB. | IMAGE | No | 0 a 8 |
 
 **Nota:** Le immagini di riferimento vengono lette in ordine numerico in base ai nomi dei rispettivi slot e gli slot vuoti vengono ignorati. I latent di riferimento vengono prodotti solo quando vengono forniti sia `vae` sia almeno un'immagine.
 

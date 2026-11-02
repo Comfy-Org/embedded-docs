@@ -8,9 +8,9 @@ Dieser Node erzeugt Bilder aus Textbeschreibungen mithilfe des Luma UNI-1-Modell
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `prompt` | Textbeschreibung des gewünschten Bildes. 1–6000 Zeichen. (Standard: "") | STRING | Ja | 1 to 6000 characters |
+| `prompt` | Textbeschreibung des gewünschten Bildes. 1–6000 Zeichen. (Standard: "") | STRING | Ja | 1 bis 6000 Zeichen |
 | `model` | Das für die Generierung zu verwendende Modell. Die Auswahl eines Modells blendet zusätzliche Einstellungen für dieses Modell ein. (Standard: erste Option, `"uni-1"`) | DYNAMIC_COMBO | Ja | `"uni-1"`<br>`"uni-1-max"` |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Ja | 0 to 2147483647 |
+| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
 
 ### uni-1 und uni-1-max Eingaben
 

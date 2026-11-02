@@ -10,9 +10,9 @@ WanTrackToVideo düğümü, takip noktalarını işleyerek ve ilgili video karel
 | `negative` | Video oluşturma için negatif koşullandırma | CONDITIONING | Evet | - |
 | `vae` | Kodlama ve kod çözme için VAE modeli | VAE | Evet | - |
 | `tracks` | Çok satırlı bir dize olarak JSON biçiminde takip verileri (varsayılan: "[]"). Her takip, sabit 121 nokta uzunluğuna doldurulur veya kısaltılır. | STRING | Evet | - |
-| `width` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
-| `height` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 to MAX_RESOLUTION |
-| `length` | Çıktı videosundaki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 to MAX_RESOLUTION |
+| `width` | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, adım: 16) | INT | Evet | 16 ile MAX_RESOLUTION arası |
+| `height` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 ile MAX_RESOLUTION arası |
+| `length` | Çıktı videosundaki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 ile MAX_RESOLUTION arası |
 | `batch_size` | Aynı anda oluşturulacak video sayısı (varsayılan: 1) | INT | Evet | 1 ile 4096 |
 | `temperature` | Hareket yamalama için sıcaklık parametresi (varsayılan: 220.0, adım: 0.1) | FLOAT | Evet | 1.0 ile 1000.0 |
 | `topk` | Hareket yamalama için top-k değeri (varsayılan: 2) | INT | Evet | 1 ile 10 |

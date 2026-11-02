@@ -9,8 +9,8 @@ Questo nodo crea un oggetto di campionamento guidato (CFG guider) per i modelli 
 | `model` | Il modello da usare durante il campionamento. | MODEL | Sì | - |
 | `positive` | Condizionamento positivo verso cui guidare la generazione. | CONDITIONING | Sì | - |
 | `negative` | Condizionamento negativo da cui allontanare la generazione. | CONDITIONING | Sì | - |
-| `video_cfg` | Intensità di guida applicata alla modalità video del latent (predefinito: 3.0). | FLOAT | Sì | 0.0 to 100.0 |
-| `audio_cfg` | Intensità di guida applicata alla modalità audio del latent (predefinito: 7.0). | FLOAT | Sì | 0.0 to 100.0 |
+| `video_cfg` | Intensità di guida applicata alla modalità video del latent (predefinito: 3.0). | FLOAT | Sì | 0.0 a 100.0 |
+| `audio_cfg` | Intensità di guida applicata alla modalità audio del latent (predefinito: 7.0). | FLOAT | Sì | 0.0 a 100.0 |
 
 Nota: quando `video_cfg` e `audio_cfg` sono uguali (o con valori molto vicini), il guider usa quel valore come un'unica scala CFG per l'intero latent. Se il latent non è un latent LTXV-AV packed, viene usato solo il valore di `video_cfg`.
 

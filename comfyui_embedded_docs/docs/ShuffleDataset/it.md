@@ -7,7 +7,7 @@ Il nodo Shuffle Dataset riceve un elenco di immagini e ne modifica casualmente l
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `images` | L'elenco di immagini da mescolare. | IMAGE | Sì | - |
-| `seed` | Seme casuale. (predefinito: 0) | INT | No | 0 to 18446744073709551615 |
+| `seed` | Seme casuale. (predefinito: 0) | INT | No | 0 a 18446744073709551615 |
 
 ## Output
 

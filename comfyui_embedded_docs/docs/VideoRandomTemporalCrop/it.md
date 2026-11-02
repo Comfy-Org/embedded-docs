@@ -7,8 +7,8 @@ Ritaglia casualmente un intervallo continuo di fotogrammi da un video di input. 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
 | `video` | Video di input. | VIDEO | Sì | – |
-| `length` | Numero di fotogrammi da mantenere. Se `length` è maggiore del numero totale di fotogrammi nel video, viene mantenuto l'intero video. (predefinito: 16) | INT | Sì | min: 1, max: 99999 |
-| `seed` | Seme casuale. (predefinito: 0) | INT | Sì | min: 0, max: 0xFFFFFFFFFFFFFFFF |
+| `length` | Numero di fotogrammi da mantenere. Se `length` è maggiore del numero totale di fotogrammi nel video, viene mantenuto l'intero video. (predefinito: 16) | INT | Sì | min. 1, max. 99999 |
+| `seed` | Seme casuale. (predefinito: 0) | INT | Sì | min. 0, max. 0xFFFFFFFFFFFFFFFF |
 
 ## Output
 

@@ -7,7 +7,7 @@ Der Knoten SplitSigmasDenoise unterteilt eine Folge von Sigma-Werten anhand eine
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `sigmas` | Die Eingabesequenz von Sigma-Werten, die den Rauschplan darstellt | SIGMAS | Ja | - |
-| `denoise` | Der Faktor für die Denoising-Stärke, der bestimmt, an welcher Stelle die Sigma-Sequenz aufgeteilt wird (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
+| `denoise` | Der Faktor für die Denoising-Stärke, der bestimmt, an welcher Stelle die Sigma-Sequenz aufgeteilt wird (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
 
 ## Ausgaben
 

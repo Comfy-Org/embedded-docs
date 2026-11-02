@@ -12,7 +12,7 @@ Der Node HunyuanVideo15SuperResolution bereitet Conditioning-Daten für einen Vi
 | `start_image` | Ein optionales Startbild zur Steuerung der Super-Resolution. Wenn angegeben, wird es hochskaliert und in das Conditioning-Latent kodiert. | IMAGE | Nein | N/A |
 | `clip_vision_output` | Optionale CLIP-Vision-Einbettungen, die dem Conditioning hinzugefügt werden. | CLIP_VISION_OUTPUT | Nein | N/A |
 | `latent` | Die eingegebene latente Video-Repräsentation, die in das Conditioning aufgenommen wird. | LATENT | Ja | N/A |
-| `noise_augmentation` | Die Stärke der Rausch-Augmentierung, die auf das Conditioning angewendet wird (Standard: 0.70). Dies ist ein erweiterter Parameter; ein Wert wird immer durch den Standardwert vorgegeben. | FLOAT | Ja | 0.0 - 1.0 (step 0.01) |
+| `noise_augmentation` | Die Stärke der Rausch-Augmentierung, die auf das Conditioning angewendet wird (Standard: 0.70). Dies ist ein erweiterter Parameter; ein Wert wird immer durch den Standardwert vorgegeben. | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
 
 **Hinweis:** Wenn Sie ein `start_image` angeben, müssen Sie auch ein `vae` verbinden, damit es kodiert werden kann. Das `start_image` wird automatisch auf das 16-Fache der räumlichen Dimensionen (Breite und Höhe) des Eingabe-`latent` hochskaliert, dann kodiert und in das Conditioning-Latent eingesetzt. Für die Kodierung werden nur die RGB-Kanäle des `start_image` verwendet.
 

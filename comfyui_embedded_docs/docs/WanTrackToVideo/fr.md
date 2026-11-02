@@ -10,9 +10,9 @@ Le nœud WanTrackToVideo convertit des données de suivi de mouvement en séquen
 | `negative` | Conditionnement négatif pour la génération vidéo | CONDITIONING | Oui | - |
 | `vae` | Modèle VAE pour l'encodage et le décodage | VAE | Oui | - |
 | `tracks` | Données de suivi au format JSON sous forme de chaîne multiligne (par défaut : « [] »). Chaque piste est complétée ou tronquée à une longueur fixe de 121 points. | STRING | Oui | - |
-| `largeur` | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) | INT | Oui | 16 to MAX_RESOLUTION |
-| `hauteur` | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) | INT | Oui | 16 to MAX_RESOLUTION |
-| `longueur` | Nombre de trames dans la vidéo de sortie (par défaut : 81, pas : 4) | INT | Oui | 1 to MAX_RESOLUTION |
+| `largeur` | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `hauteur` | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `longueur` | Nombre de trames dans la vidéo de sortie (par défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
 | `batch_size` | Nombre de vidéos à générer simultanément (par défaut : 1) | INT | Oui | 1 à 4096 |
 | `température` | Paramètre de température pour le motion patching (par défaut : 220.0, pas : 0.1) | FLOAT | Oui | 1.0 à 1000.0 |
 | `topk` | Valeur top-k pour le motion patching (par défaut : 2) | INT | Oui | 1 à 10 |

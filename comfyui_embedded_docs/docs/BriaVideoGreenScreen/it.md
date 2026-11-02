@@ -8,7 +8,7 @@ Questo nodo sostituisce lo sfondo di un video con uno schermo chroma-key a tinta
 |-----------|-------------|--------------|--------------|------------|
 | `video` | Il video di input da elaborare | VIDEO | Sì | File video |
 | `green_shade` | Tonalità chroma-key a tinta unita applicata dietro il primo piano: `broadcast_green` (#00B140), `chroma_green` (#00FF00) o `blue_screen` (#0000FF). | COMBO | Sì | `"broadcast_green"`<br>`"chroma_green"`<br>`"blue_screen"` |
-| `seed` | Seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed (predefinito: 0). | INT | Sì | 0 to 2147483647 |
+| `seed` | Seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed (predefinito: 0). | INT | Sì | 0 a 2147483647 |
 
 **Nota:** Il video di input non deve superare i 60 secondi di durata.
 

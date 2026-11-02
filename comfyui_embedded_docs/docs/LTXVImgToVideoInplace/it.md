@@ -10,7 +10,7 @@ LTXVImgToVideoInplace codifica un'immagine di input nello spazio latente e collo
 | `image` | L'immagine di input da codificare e utilizzare per condizionare il latente video. | IMAGE | Sì | - |
 | `latent` | La rappresentazione latente video di destinazione da modificare. | LATENT | Sì | - |
 | `strength` | Controlla quanto fortemente l'immagine codificata condiziona i fotogrammi iniziali del latente. Un valore di 1.0 condiziona completamente i fotogrammi iniziali con l'immagine codificata, mentre valori inferiori li condizionano in misura minore. La maschera di rumore per i fotogrammi iniziali è impostata su `1.0 - strength`. (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `bypass` | Ignora il condizionamento. Quando è abilitato, il nodo restituisce il latente di input invariato. (predefinito: False) | BOOLEAN | Sì | True or False |
+| `bypass` | Ignora il condizionamento. Quando è abilitato, il nodo restituisce il latente di input invariato. (predefinito: False) | BOOLEAN | Sì | True o False |
 
 **Nota:** L'`image` verrà ridimensionata automaticamente per corrispondere alle dimensioni spaziali richieste dal `vae` per la codifica, in base alla larghezza e all'altezza del `latent` di input. Per la codifica vengono utilizzati solo i canali RGB dell'`image`.
 

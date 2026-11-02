@@ -6,10 +6,10 @@ Il nodo PrimitiveBoundingBox crea una semplice area rettangolare definita dalla 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `x` | La coordinata X per l'angolo superiore sinistro del bounding box (predefinito: 0). | INT | Sì | 0 to 16384 |
-| `y` | La coordinata Y per l'angolo superiore sinistro del bounding box (predefinito: 0). | INT | Sì | 0 to 16384 |
-| `width` | La larghezza del bounding box (predefinito: 512). | INT | Sì | 1 to 16384 |
-| `height` | L'altezza del bounding box (predefinito: 512). | INT | Sì | 1 to 16384 |
+| `x` | La coordinata X per l'angolo superiore sinistro del bounding box (predefinito: 0). | INT | Sì | 0 a 16384 |
+| `y` | La coordinata Y per l'angolo superiore sinistro del bounding box (predefinito: 0). | INT | Sì | 0 a 16384 |
+| `width` | La larghezza del bounding box (predefinito: 512). | INT | Sì | 1 a 16384 |
+| `height` | L'altezza del bounding box (predefinito: 512). | INT | Sì | 1 a 16384 |
 
 Nota: tutti i valori massimi seguono la costante MAX_RESOLUTION di ComfyUI, che definisce la dimensione massima dell'immagine accettata dal nodo.
 

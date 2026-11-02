@@ -7,8 +7,8 @@ Schneidet auf zufällige Weise einen fortlaufenden Bereich von Frames aus einem 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `video` | Eingabevideo. | VIDEO | Ja | – |
-| `length` | Anzahl der beizubehaltenden Frames. Wenn `length` größer als die Gesamtzahl der Frames im Video ist, wird das gesamte Video beibehalten. (Standard: 16) | INT | Ja | min: 1, max: 99999 |
-| `seed` | Zufälliger Seed. (Standard: 0) | INT | Ja | min: 0, max: 0xFFFFFFFFFFFFFFFF |
+| `length` | Anzahl der beizubehaltenden Frames. Wenn `length` größer als die Gesamtzahl der Frames im Video ist, wird das gesamte Video beibehalten. (Standard: 16) | INT | Ja | Min. 1, Max. 99999 |
+| `seed` | Zufälliger Seed. (Standard: 0) | INT | Ja | Min. 0, Max. 0xFFFFFFFFFFFFFFFF |
 
 ## Ausgaben
 

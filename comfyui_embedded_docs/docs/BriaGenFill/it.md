@@ -13,7 +13,7 @@ Questo nodo genera oggetti o paesaggi all'interno di una regione mascherata di u
 | `prompt` | Descrizione di ciò che si desidera generare all'interno della regione mascherata. Deve contenere almeno 1 carattere. (predefinito: "") | STRING | Sì | - |
 | `negative_prompt` | Un prompt che descrive il contenuto da evitare nel risultato generato. Se lasciato vuoto, non viene inviato all'API. (predefinito: "") | STRING | Sì | - |
 | `refine_prompt` | Regola automaticamente il prompt per ottenere risultati migliori; disabilita per usare il prompt esattamente come scritto. (predefinito: true) | BOOLEAN | Sì | true<br>false |
-| `seed` | Seme per il processo di generazione. (predefinito: 42) | INT | Sì | 1 to 2147483647 |
+| `seed` | Seme per il processo di generazione. (predefinito: 42) | INT | Sì | 1 a 2147483647 |
 | `moderation` | Impostazioni di moderazione. Quando è impostato su "true", vengono applicate le opzioni di moderazione riportate di seguito. (predefinito: "false") | DYNAMIC_COMBO | Sì | "false"<br>"true" |
 
 ### Input di moderazione (quando `moderation` = "true")

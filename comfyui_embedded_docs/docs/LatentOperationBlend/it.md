@@ -7,7 +7,7 @@ Questo nodo crea un'operazione su latent che fonde un latent verso un latent di 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `reference` | Il latent verso cui fondere. I suoi campioni vengono convertiti al device e al dtype del latent in elaborazione, poi ridimensionati e ripetuti per corrispondere a esso. | LATENT | Sì | - |
-| `strength` | In che misura fondere verso il riferimento: 0 lascia il latent invariato, 1 corrisponde al latent di riferimento ridimensionato (predefinito: 1.0). | FLOAT | Sì | 0.0 to 1.0 (step 0.0001) |
+| `strength` | In che misura fondere verso il riferimento: 0 lascia il latent invariato, 1 corrisponde al latent di riferimento ridimensionato (predefinito: 1.0). | FLOAT | Sì | 0.0 a 1.0 (passo: 0.0001) |
 
 ## Output
 

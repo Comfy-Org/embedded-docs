@@ -8,8 +8,8 @@ Il nodo SD_4XUpscale_Conditioning prepara i dati di condizionamento per l'upscal
 | `images` | Immagini di input da upscalare. | IMAGE | Sì | - |
 | `positive` | Dati di condizionamento positivo che guidano la generazione verso il contenuto desiderato. | CONDITIONING | Sì | - |
 | `negative` | Dati di condizionamento negativo che allontanano la generazione dal contenuto indesiderato. | CONDITIONING | Sì | - |
-| `scale_ratio` | Moltiplicatore applicato alle dimensioni delle immagini di input durante la preparazione del condizionamento e del latent upscalati (predefinito: 4.0). | FLOAT | Sì | 0.0 - 10.0 (step 0.01) |
-| `noise_augmentation` | Quantità di rumore da aggiungere durante il processo di upscaling (predefinito: 0.0). | FLOAT | Sì | 0.0 - 1.0 (step 0.001) |
+| `scale_ratio` | Moltiplicatore applicato alle dimensioni delle immagini di input durante la preparazione del condizionamento e del latent upscalati (predefinito: 4.0). | FLOAT | Sì | 0.0 - 10.0 (passo: 0.01) |
+| `noise_augmentation` | Quantità di rumore da aggiungere durante il processo di upscaling (predefinito: 0.0). | FLOAT | Sì | 0.0 - 1.0 (passo: 0.001) |
 
 Nota: `noise_augmentation` è un parametro avanzato, mostrato nell'interfaccia del nodo sotto l'interruttore "Avanzate".
 

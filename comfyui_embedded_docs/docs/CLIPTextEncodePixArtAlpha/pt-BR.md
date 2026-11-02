@@ -6,8 +6,8 @@ Codifica texto e define o condicionamento de resolução para PixArt Alpha. Este
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `largura` | A dimensão da largura para o condicionamento de resolução (padrão: 1024) | INT | Sim | 0 to MAX_RESOLUTION |
-| `altura` | A dimensão da altura para o condicionamento de resolução (padrão: 1024) | INT | Sim | 0 to MAX_RESOLUTION |
+| `largura` | A dimensão da largura para o condicionamento de resolução (padrão: 1024) | INT | Sim | 0 a MAX_RESOLUTION |
+| `altura` | A dimensão da altura para o condicionamento de resolução (padrão: 1024) | INT | Sim | 0 a MAX_RESOLUTION |
 | `texto` | Entrada de texto a ser codificada. Suporta entrada multilinha e prompts dinâmicos. | STRING | Sim | - |
 | `clip` | Modelo CLIP usado para tokenização e codificação | CLIP | Sim | - |
 

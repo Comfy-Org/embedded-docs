@@ -8,7 +8,7 @@ Il nodo Pixal3DConditioning prepara il condizionamento delle immagini per la pip
 |-----------|-------------|--------------|--------------|------------|
 | `clip_vision_model` | DINOv3 ViT-L/16 ClipVision. | CLIP_VISION | Sì | — |
 | `image` | Immagine preprocessata da ImageCropToMask (pad_factor=1.1 per Pixal3D). | IMAGE | Sì | — |
-| `camera_angle_x` | FOV orizzontale in gradi (visualizzato come `fov`). Collega un MoGeGeometryToFOV (axis='horizontal', unit='degrees') per un FoV per immagine (corrisponde al default upstream). Predefinito: 49.13. | FLOAT | Sì | 1.0 – 170.0 (step 0.01) |
+| `camera_angle_x` | FOV orizzontale in gradi (visualizzato come `fov`). Collega un MoGeGeometryToFOV (axis='horizontal', unit='degrees') per un FoV per immagine (corrisponde al default upstream). Predefinito: 49.13. | FLOAT | Sì | 1.0 – 170.0 (passo: 0.01) |
 
 ## Output
 

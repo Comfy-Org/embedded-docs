@@ -15,8 +15,8 @@ El nodo TextGenerate usa un modelo CLIP para crear texto basado en el prompt del
 | `video` | Fotogramas de video como un lote de imágenes. Se asume 24 FPS; se submuestrea a 1 FPS internamente. | IMAGE | No | N/A |
 | `audio` | Una entrada de audio opcional que se puede usar junto con el prompt de texto para influir en el texto generado. | AUDIO | No | N/A |
 | `longitud_máxima` | El número máximo de tokens que generará el modelo. El valor predeterminado es 512. | INT | Sí | 1 a 32768 |
-| `pensando` | Opera en modo de pensamiento si el modelo lo admite. El valor predeterminado es False. | BOOLEAN | No | True or False |
-| `use_default_template` | Usa el prompt de sistema/plantilla integrado si el modelo tiene uno. El valor predeterminado es True. Este es un parámetro avanzado. | BOOLEAN | No | True or False |
+| `pensando` | Opera en modo de pensamiento si el modelo lo admite. El valor predeterminado es False. | BOOLEAN | No | True o False |
+| `use_default_template` | Usa el prompt de sistema/plantilla integrado si el modelo tiene uno. El valor predeterminado es True. Este es un parámetro avanzado. | BOOLEAN | No | True o False |
 | `mtp` | Decodificación especulativa con la cabeza de predicción multi-token del checkpoint. No tiene efecto sin pesos MTP. `"auto"` adapta la profundidad y la amplitud del borrador a las coincidencias de tokens observadas y al coste de ejecución; `"2"` a `"5"` fijan una profundidad constante; los modos `tree` fijan tanto la amplitud como la profundidad. La salida muestreada se mantiene correctamente distribuida, pero difiere de la salida sin MTP para la misma semilla (predeterminado: `"auto"`). | COMBO | No | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"tree2s1"`<br>`"tree2s2"`<br>`"tree3s1"`<br>`"tree4s1m8"` |
 | `system_prompt` | Reemplaza el prompt de sistema en la plantilla de chat del modelo. Se ignora cuando no se usa la plantilla predeterminada. Conecta una entrada STRING en lugar de escribirlo en el nodo (predeterminado: vacío). | STRING | No | N/A |
 

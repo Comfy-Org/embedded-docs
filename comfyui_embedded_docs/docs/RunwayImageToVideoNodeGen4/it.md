@@ -10,7 +10,7 @@ Il nodo Runway Image to Video (Gen4 Turbo) genera un video da un singolo frame i
 | `start_frame` | Frame iniziale da utilizzare per il video | IMAGE | Sì | - |
 | `duration` | Durata del video in secondi | COMBO | Sì | `"5"`<br>`"10"` |
 | `ratio` | Rapporto d'aspetto per il video generato (predefinito: "1280:720") | COMBO | Sì | `"1280:720"`<br>`"720:1280"`<br>`"1104:832"`<br>`"832:1104"`<br>`"960:960"`<br>`"1584:672"` |
-| `seed` | Seed casuale per la generazione (predefinito: 0) | INT | No | 0 to 4294967295 |
+| `seed` | Seed casuale per la generazione (predefinito: 0) | INT | No | 0 a 4294967295 |
 
 **Vincoli sui parametri:**
 

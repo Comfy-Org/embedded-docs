@@ -9,7 +9,7 @@ WanSoundImageToVideoExtend düğümü, isteğe bağlı olarak ses, referans gör
 | `positive` | Videonun neleri içermesi gerektiğini yönlendiren pozitif koşullandırma istemleri | CONDITIONING | Evet | - |
 | `negative` | Videonun nelerden kaçınması gerektiğini belirten negatif koşullandırma istemleri | CONDITIONING | Evet | - |
 | `vae` | Referans görüntüyü ve kontrol videosunu latent uzaya kodlamak için kullanılan Varyasyonel Otomatik Kodlayıcı | VAE | Evet | - |
-| `length` | Video dizisi için oluşturulacak toplam kare sayısı (varsayılan: 77, adım: 4) | INT | Evet | 1 to MAX_RESOLUTION |
+| `length` | Video dizisi için oluşturulacak toplam kare sayısı (varsayılan: 77, adım: 4) | INT | Evet | 1 ile MAX_RESOLUTION arası |
 | `video_latent` | Genişletme için başlangıç noktası olarak hizmet eden başlangıç video latenti. Çıktı genişliği, yüksekliği, parti boyutu ve kare ofseti bu latentten türetilir. Son 19 karesi referans hareket koşullandırması olarak kullanılır. | LATENT | Evet | - |
 | `audio_encoder_output` | Ses özelliklerine göre video oluşturmayı etkileyebilen isteğe bağlı ses gömme vektörleri. Sağlandığında, ses enterpole edilir ve koşullandırmaya eklenen bir ses gömme grubuna dönüştürülür. | AUDIOENCODEROUTPUT | Hayır | - |
 | `ref_image` | Video oluşturma için görsel rehberlik sağlayan isteğe bağlı referans görüntü. Görüntü, hedef boyutlara uyacak şekilde büyütülür ve bir latent olarak kodlanır, ardından hem pozitif hem de negatif koşullandırmaya eklenir. Partideki yalnızca ilk görüntü kullanılır. | IMAGE | Hayır | - |

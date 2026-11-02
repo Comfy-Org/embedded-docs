@@ -8,7 +8,7 @@ Topaz Image Enhance 使用 Topaz 模型，對單一輸入影像套用業界標�
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 要增強的輸入影像。僅支援一張輸入影像。 | IMAGE | 是 | Single image |
+| `image` | 要增強的輸入影像。僅支援一張輸入影像。 | IMAGE | 是 | 單張圖片 |
 | `model` | 要使用的 Topaz 增強模型。所選模型會決定顯示哪些模型特定設定。 | DYNAMIC_COMBO | 是 | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"` |
 | `output_width` | 值為零表示自動計算（通常會是原始尺寸，或若指定了 `output_height`，則依比例縮放至該高度）。Wonder 3.5 僅支援 1x 至 6x 的放大倍率。Bloom 2 和 Wonder 3.5 會保留輸入的長寬比，並將要求的尺寸視為目標。（預設值：0） | INT | 否 | 0 至 32000 |
 | `output_height` | 值為零表示輸出與原始高度相同，或若指定了 `output_width`，則依比例縮放至該寬度。Wonder 3.5 僅支援 1x 至 6x 的放大倍率。Bloom 2 和 Wonder 3.5 會保留輸入的長寬比，並將要求的尺寸視為目標。（預設值：0） | INT | 否 | 0 至 32000 |
@@ -19,7 +19,7 @@ Topaz Image Enhance 使用 Topaz 模型，對單一輸入影像套用業界標�
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | 用於引導創意放大的選用文字提示。（預設值：""） | STRING | 是 | Any text |
+| `prompt` | 用於引導創意放大的選用文字提示。（預設值：""） | STRING | 是 | 任意文字 |
 | `creativity` | 增強的創意程度。（預設值：3） | INT | 是 | 1 至 9 |
 | `subject_detection` | 主體偵測模式（進階）。 | COMBO | 是 | `"All"`<br>`"Foreground"`<br>`"Background"` |
 | `face_enhancement` | 處理期間增強臉部（若有）。（預設值：True） | BOOLEAN | 是 | true<br>false |
@@ -35,7 +35,7 @@ Topaz Image Enhance 使用 Topaz 模型，對單一輸入影像套用業界標�
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | 用於生成的選用文字提示。留空會從輸入影像自動生成提示。（預設值：""） | STRING | 是 | Any text |
+| `prompt` | 用於生成的選用文字提示。留空會從輸入影像自動生成提示。（預設值：""） | STRING | 是 | 任意文字 |
 | `creativity` | 1 為克制的增強，9 為明顯重新詮釋並生成新細節。（預設值：3） | INT | 是 | 1 至 9 |
 | `seed` | 用於可重現生成的種子。（預設值：2） | INT | 是 | 1 至 2000 |
 | `color_preservation` | 保留原始色彩。（預設值：True） | BOOLEAN | 是 | true<br>false |

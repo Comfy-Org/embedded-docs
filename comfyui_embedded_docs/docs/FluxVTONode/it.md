@@ -9,7 +9,7 @@ Questo nodo esegue un virtual try-on vestendo una persona con un'immagine del ca
 | `person` | Immagine della persona da vestire. | IMAGE | Sì | - |
 | `garment` | Immagine del capo da applicare. | IMAGE | Sì | - |
 | `prompt` | Istruzione di styling opzionale in linguaggio naturale (ad es. come il capo dovrebbe calzare). Il valore predefinito è una stringa vuota. | STRING | No | - |
-| `seed` | Il seed casuale utilizzato per creare il rumore. Predefinito: 0. | INT | No | 0 to 18446744073709551615 |
+| `seed` | Il seed casuale utilizzato per creare il rumore. Predefinito: 0. | INT | No | 0 a 18446744073709551615 |
 
 ## Output
 

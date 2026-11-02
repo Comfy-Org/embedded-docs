@@ -9,7 +9,7 @@ Il nodo SDPoseKeypointExtractor rileva i keypoint della posa umana dalle immagin
 | `model` | Il modello SDPose utilizzato per il rilevamento dei keypoint. Deve essere un modello con un attributo `heatmap_head`, specificamente dal repository SDPose. | MODEL | Sì | - |
 | `vae` | Il modello VAE utilizzato per codificare le immagini di input nello spazio latente per l'elaborazione. | VAE | Sì | - |
 | `image` | L'immagine di input o il batch di immagini da cui estrarre i keypoint di posa. | IMAGE | Sì | - |
-| `batch_size` | Il numero di immagini da elaborare contemporaneamente quando si opera in modalità immagine completa (ovvero, quando `bboxes` non è fornito). Questo può velocizzare l'elaborazione. (predefinito: 16) | INT | No | 1 to 10000 |
+| `batch_size` | Il numero di immagini da elaborare contemporaneamente quando si opera in modalità immagine completa (ovvero, quando `bboxes` non è fornito). Questo può velocizzare l'elaborazione. (predefinito: 16) | INT | No | 1 a 10000 |
 | `bboxes` | Bounding box opzionali per rilevamenti più accurati. Necessari per il rilevamento multi-persona. Se forniti, il nodo estrarrà i keypoint da ciascuna regione specificata. | BOUNDINGBOX | No | - |
 
 **Vincoli dei parametri:**

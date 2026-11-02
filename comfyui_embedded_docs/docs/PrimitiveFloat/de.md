@@ -6,7 +6,7 @@ Der PrimitiveFloat-Node erstellt einen Gleitkommazahlwert, der in Ihrem Workflow
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `value` | Der auszugebende Gleitkommazahlwert (Standard: 0.0) | FLOAT | Ja | -sys.maxsize to sys.maxsize (step: 0.1) |
+| `value` | Der auszugebende Gleitkommazahlwert (Standard: 0.0) | FLOAT | Ja | -sys.maxsize to sys.maxsize (Schritt: 0.1) |
 
 ## Ausgaben
 

@@ -7,7 +7,7 @@ Il nodo Meshy: Rig Model prende un modello 3D da una precedente attività Meshy 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `meshy_task_id` | L'ID univoco dell'attività di una precedente operazione Meshy (ad es. text-to-3D o image-to-3D) che ha generato il modello da riggare. | MESHY_TASK_ID | Sì | N/A |
-| `height_meters` | L'altezza approssimativa del modello del personaggio in metri. Questo aiuta nella precisione di scalatura e rigging (predefinito: 1.7). | FLOAT | Sì | 0.1 to 15.0 |
+| `height_meters` | L'altezza approssimativa del modello del personaggio in metri. Questo aiuta nella precisione di scalatura e rigging (predefinito: 1.7). | FLOAT | Sì | 0.1 a 15.0 |
 | `texture_image` | L'immagine di texture base color con UV unwrap del modello. | IMAGE | No | N/A |
 
 **Nota:** Il processo di rigging automatico al momento non è adatto a mesh non texturizzate, asset non umanoidi o asset umanoidi con struttura degli arti e del corpo non chiara.

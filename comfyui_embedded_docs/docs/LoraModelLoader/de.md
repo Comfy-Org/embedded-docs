@@ -9,7 +9,7 @@ Der Node LoraModelLoader wendet trainierte LoRA-Gewichte (Low-Rank Adaptation) a
 | `model` | Das Diffusionsmodell, auf das die LoRA angewendet wird. | MODEL | Ja | - |
 | `lora` | Das LoRA-Modell, das auf das Diffusionsmodell angewendet wird. | LORA_MODEL | Ja | - |
 | `strength_model` | Wie stark das Diffusionsmodell verändert wird. Dieser Wert kann negativ sein (Standard: 1.0). | FLOAT | Ja | -100.0 bis 100.0 |
-| `bypass` | Wenn aktiviert, wird LoRA im Bypass-Modus angewendet, ohne die Gewichte des Basismodells zu verändern. Nützlich für das Training und wenn Modellgewichte ausgelagert (offloaded) sind (Standard: False). | BOOLEAN | Ja | True or False |
+| `bypass` | Wenn aktiviert, wird LoRA im Bypass-Modus angewendet, ohne die Gewichte des Basismodells zu verändern. Nützlich für das Training und wenn Modellgewichte ausgelagert (offloaded) sind (Standard: False). | BOOLEAN | Ja | True oder False |
 
 **Hinweis:** Wenn `strength_model` auf 0 gesetzt ist, gibt der Node das ursprüngliche Modell zurück, ohne LoRA-Änderungen anzuwenden.
 

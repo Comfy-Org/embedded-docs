@@ -6,7 +6,7 @@ Der Node Empty Ace Step 1.5 Latent Audio erstellt einen leeren (stillen) Audio-L
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `seconds` | Die Dauer des zu generierenden Audios in Sekunden (Standard: 120.0). Die Latent-Länge wird als `seconds * 48000 / 1920` berechnet und auf die nächste ganze Zahl gerundet. | FLOAT | Ja | 1.0 - 1000.0 (step: 0.01) |
+| `seconds` | Die Dauer des zu generierenden Audios in Sekunden (Standard: 120.0). Die Latent-Länge wird als `seconds * 48000 / 1920` berechnet und auf die nächste ganze Zahl gerundet. | FLOAT | Ja | 1.0 - 1000.0 (Schritt: 0.01) |
 | `batch_size` | Die Anzahl der Latent-Bilder im Batch (Standard: 1). | INT | Ja | 1 - 4096 |
 
 ## Ausgaben

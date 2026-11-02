@@ -7,9 +7,9 @@ LazyCache ist eine experimentelle Eigenbauversion von EasyCache, die während de
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `model` | Das Modell, dem LazyCache hinzugefügt wird. | MODEL | Ja | - |
-| `reuse_threshold` | Der Schwellenwert für die Wiederverwendung zwischengespeicherter Schritte. Standard: 0.2. | FLOAT | Ja | 0.0 - 3.0 (step 0.01) |
-| `start_percent` | Der relative Sampling-Schritt, bei dem die Verwendung von LazyCache beginnt. Standard: 0.15. | FLOAT | Ja | 0.0 - 1.0 (step 0.01) |
-| `end_percent` | Der relative Sampling-Schritt, bei dem die Verwendung von LazyCache endet. Standard: 0.95. | FLOAT | Ja | 0.0 - 1.0 (step 0.01) |
+| `reuse_threshold` | Der Schwellenwert für die Wiederverwendung zwischengespeicherter Schritte. Standard: 0.2. | FLOAT | Ja | 0.0 - 3.0 (Schritt: 0.01) |
+| `start_percent` | Der relative Sampling-Schritt, bei dem die Verwendung von LazyCache beginnt. Standard: 0.15. | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `end_percent` | Der relative Sampling-Schritt, bei dem die Verwendung von LazyCache endet. Standard: 0.95. | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
 | `verbose` | Ob ausführliche Informationen protokolliert werden sollen. Standard: False. | BOOLEAN | Ja | - |
 
 Hinweis: `reuse_threshold`, `start_percent`, `end_percent` und `verbose` sind als erweiterte Eingaben gekennzeichnet.

@@ -10,8 +10,8 @@ Start Loop 節點會在工作流程內啟動迴圈結構。它會在每次迭代
 |-----------|-------------|-----------|----------|-------|
 | `模式` | 迴圈迭代模式（預設："simple"）。所選模式決定會顯示哪些額外參數。 | DYNAMIC_COMBO | 是 | `"simple"`<br>`"For"`<br>`"List"` |
 | `cache_iterations` | 重複使用先前執行中未變更的迭代結果。停用以再次執行每次迭代。預設：false。 | BOOLEAN | 是 | true<br>false |
-| `parent_iteration` | 連接外部 Start Loop 的 `iteration_index` 以巢狀化此迴圈。此輸入僅限強制輸入（必須有連結）。 | INT | 否 | Any integer |
-| `initial_iteration_value` | 第一次迭代時作為 `current_iteration_value` 曝露的值。 | ANY (type-matched) | 否 | Any value |
+| `parent_iteration` | 連接外部 Start Loop 的 `iteration_index` 以巢狀化此迴圈。此輸入僅限強制輸入（必須有連結）。 | INT | 否 | 任意整數 |
+| `initial_iteration_value` | 第一次迭代時作為 `current_iteration_value` 曝露的值。 | ANY (type-matched) | 否 | 任意值 |
 
 ### Simple 模式輸入
 
@@ -23,7 +23,7 @@ Start Loop 節點會在工作流程內啟動迴圈結構。它會在每次迭代
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `start_iteration_index` | 使用 For 迴圈模式時，第一次迭代的索引。預設：0。 | INT | 是 | Any integer |
+| `start_iteration_index` | 使用 For 迴圈模式時，第一次迭代的索引。預設：0。 | INT | 是 | 任意整數 |
 | `max_iteration` | For 模式下 `iteration_index` 的排除式停止值（不包含此值）。預設：4。 | INT | 是 | Maximum 0xffffffffffffffff |
 | `step` | 使用 For 迴圈模式時，每次迭代之間的索引步長。預設：1。 | INT | 是 | Minimum 1 |
 

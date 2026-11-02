@@ -11,7 +11,7 @@ Der Node LTXV Separate Generated Keyframes trennt die durch LTXV Add Generated K
 | `positive` | Positives Conditioning, das die Metadaten der generierten Keyframes enthält. Die Metadaten werden bei der Ausgabe daraus entfernt. | CONDITIONING | Ja | N/A |
 | `negative` | Negatives Conditioning, das die Metadaten der generierten Keyframes enthält. Die Metadaten werden bei der Ausgabe daraus entfernt. | CONDITIONING | Ja | N/A |
 | `latent` | Video-Latent, das die generierten Keyframes enthält. Die Keyframes werden bei der Ausgabe daraus entfernt. | LATENT | Ja | N/A |
-| `keyframes_to_batch` | Die Keyframes als Batch aus Einzelbild-Latents zurückgeben. Ausschalten, um sie als ein Multi-Frame-Latent zu erhalten, was der Latent-Upsampler und ein späteres Add Generated Keyframes erwarten. | BOOLEAN | Nein | default: False |
+| `keyframes_to_batch` | Die Keyframes als Batch aus Einzelbild-Latents zurückgeben. Ausschalten, um sie als ein Multi-Frame-Latent zu erhalten, was der Latent-Upsampler und ein späteres Add Generated Keyframes erwarten. | BOOLEAN | Nein | Standard: False |
 
 ### Hinweise zu Eingaben
 

@@ -13,7 +13,7 @@ Questo nodo genera un video da un'immagine obbligatoria del primo fotogramma e u
 | `last_frame` | Immagine dell'ultimo fotogramma per il video. | IMAGE | No | - |
 | `first_frame_asset_id` | asset_id Seedance da usare come primo fotogramma. Mutuamente esclusivo con l'input immagine `first_frame`. Il valore predefinito è una stringa vuota. | STRING | No | - |
 | `last_frame_asset_id` | asset_id Seedance da usare come ultimo fotogramma. Mutuamente esclusivo con l'input immagine `last_frame`. Il valore predefinito è una stringa vuota. | STRING | No | - |
-| `seed` | Il seed controlla se il nodo deve rieseguirsi; i risultati non sono deterministici indipendentemente dal seed. Il valore predefinito è 0. | INT | Sì | 0 to 2147483647 |
+| `seed` | Il seed controlla se il nodo deve rieseguirsi; i risultati non sono deterministici indipendentemente dal seed. Il valore predefinito è 0. | INT | Sì | 0 a 2147483647 |
 | `watermark` | Indica se aggiungere una filigrana al video. Il valore predefinito è False. | BOOLEAN | Sì | False<br>True |
 
 ### Input di Seedance 2.5
@@ -24,7 +24,7 @@ Questi input vengono visualizzati quando è selezionato `Seedance 2.5`.
 |-----------|-------------|--------------|--------------|------------|
 | `prompt` | Prompt testuale per la generazione del video. Inserisci le battute parlate tra virgolette doppie per guidare il dialogo generato. | STRING | Sì | - |
 | `resolution` | Risoluzione del video di output. Il valore predefinito è 720p. | COMBO | Sì | `"480p"`<br>`"720p"`<br>`"1080p"` |
-| `duration` | Durata del video di output in secondi (4-30). Il valore predefinito è 5. | INT | Sì | 4 to 30 |
+| `duration` | Durata del video di output in secondi (4-30). Il valore predefinito è 5. | INT | Sì | 4 a 30 |
 | `generate_audio` | Abilita la generazione audio per il video di output. Il valore predefinito è True. | BOOLEAN | Sì | False<br>True |
 | `output_format` | Formato contenitore del video di output. Il valore predefinito è mp4. | COMBO | Sì | `"mp4"` |
 
@@ -41,7 +41,7 @@ Questi input vengono visualizzati quando è selezionato `Seedance 2.0`.
 | `prompt` | Prompt testuale per la generazione del video. | STRING | Sì | - |
 | `resolution` | Risoluzione del video di output. | COMBO | Sì | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `ratio` | Rapporto d'aspetto del video di output. Il valore predefinito è `adaptive`, che usa il rapporto supportato più vicino al rapporto d'aspetto del fotogramma di input. | COMBO | Sì | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
-| `duration` | Durata del video di output in secondi (4-15). Il valore predefinito è 7. | INT | Sì | 4 to 15 |
+| `duration` | Durata del video di output in secondi (4-15). Il valore predefinito è 7. | INT | Sì | 4 a 15 |
 | `generate_audio` | Abilita la generazione audio per il video di output. Il valore predefinito è True. | BOOLEAN | Sì | False<br>True |
 
 ### Input di Seedance 2.0 Fast e Seedance 2.0 Mini
@@ -53,7 +53,7 @@ Condivisi da `Seedance 2.0 Fast` e `Seedance 2.0 Mini`.
 | `prompt` | Prompt testuale per la generazione del video. | STRING | Sì | - |
 | `resolution` | Risoluzione del video di output. | COMBO | Sì | `"480p"`<br>`"720p"` |
 | `ratio` | Rapporto d'aspetto del video di output. Il valore predefinito è `adaptive`, che usa il rapporto supportato più vicino al rapporto d'aspetto del fotogramma di input. | COMBO | Sì | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
-| `duration` | Durata del video di output in secondi (4-15). Il valore predefinito è 7. | INT | Sì | 4 to 15 |
+| `duration` | Durata del video di output in secondi (4-15). Il valore predefinito è 7. | INT | Sì | 4 a 15 |
 | `generate_audio` | Abilita la generazione audio per il video di output. Il valore predefinito è True. | BOOLEAN | Sì | False<br>True |
 
 **Vincoli dei parametri**

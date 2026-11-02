@@ -8,7 +8,7 @@ Der LTXVConditioning-Node fügt sowohl positiven als auch negativen Konditionier
 | --- | --- | --- | --- | --- |
 | `positive` | Die positive Konditionierungseingabe, die die Bildrateninformationen erhält | CONDITIONING | Ja | - |
 | `negative` | Die negative Konditionierungseingabe, die die Bildrateninformationen erhält | CONDITIONING | Ja | - |
-| `frame_rate` | Der Bildratenwert, der auf beide Konditionierungssätze angewendet wird (Standard: 25.0) | FLOAT | Ja | 0.0 - 1000.0 (step: 0.01) |
+| `frame_rate` | Der Bildratenwert, der auf beide Konditionierungssätze angewendet wird (Standard: 25.0) | FLOAT | Ja | 0.0 - 1000.0 (Schritt: 0.01) |
 
 ## Ausgaben
 

@@ -52,7 +52,7 @@ Estos parámetros aparecen cuando `render_style` es "openpose_3d".
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
 | `radius_m` | Radio de la cápsula del miembro en metros (delgado = similar a una barra). (predeterminado: 0.015) | FLOAT | No | 0.004 a 0.1 (paso: 0.001) |
-| `include_hands` | Dibuja 21+21 keypoints de mano como cápsulas 3D. (predeterminado: True) | BOOLEAN | No | True or False |
+| `include_hands` | Dibuja 21+21 keypoints de mano como cápsulas 3D. (predeterminado: True) | BOOLEAN | No | True o False |
 | `person_palette_falloff` | Desaturación por persona: la pista k se mezcla hacia blanco según 1 - falloff^k. La pista 0 permanece vívida; 1.0 desactiva la atenuación. (predeterminado: 0.6) | FLOAT | No | 0.1 a 1.0 (paso: 0.05) |
 
 ### Entradas de SCAIL

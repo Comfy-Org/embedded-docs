@@ -8,7 +8,7 @@
 |-----------|-------------|-----------|----------|-------|
 | `audio` | 要轉錄的音訊。 | AUDIO | 是 | — |
 | `language` | ISO 639-1 語言提示（例如 'en'、'zh'）。語言仍會自動偵測。預設：""（空字串）。 | STRING | 否 | 任何 ISO 639-1 語言代碼，例如 `en`、`zh`；空字串表示自動偵測 |
-| `precise_timestamps` | 傳回詞級時間戳記的區段。預設：false。 | BOOLEAN | 否 | true or false |
+| `precise_timestamps` | 傳回詞級時間戳記的區段。預設：false。 | BOOLEAN | 否 | true 或 false |
 
 注意：`language` 參數僅是提示——語言一律會從音訊自動偵測。當 `precise_timestamps` 為 false（預設值）時，不會傳回詞級時間戳記；當為 true 時，輸出區段會包含詞級時間戳記。
 

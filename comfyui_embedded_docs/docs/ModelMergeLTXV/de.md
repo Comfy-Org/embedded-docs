@@ -8,39 +8,39 @@ Der Node ModelMergeLTXV führt zwei LTXV-Modelle zusammen, indem er ihre überei
 | --- | --- | --- | --- | --- |
 | `model1` | Das erste Modell, das zusammengeführt werden soll | MODEL | Ja | - |
 | `model2` | Das zweite Modell, das zusammengeführt werden soll | MODEL | Ja | - |
-| `patchify_proj.` | Interpolationsgewicht für Patchify-Projektionsschichten (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `adaln_single.` | Interpolationsgewicht für Einzelschichten der adaptiven Layer-Normalisierung (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `caption_projection.` | Interpolationsgewicht für Caption-Projektionsschichten (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.0.` | Interpolationsgewicht für Transformer-Block 0 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.1.` | Interpolationsgewicht für Transformer-Block 1 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.2.` | Interpolationsgewicht für Transformer-Block 2 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.3.` | Interpolationsgewicht für Transformer-Block 3 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.4.` | Interpolationsgewicht für Transformer-Block 4 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.5.` | Interpolationsgewicht für Transformer-Block 5 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.6.` | Interpolationsgewicht für Transformer-Block 6 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.7.` | Interpolationsgewicht für Transformer-Block 7 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.8.` | Interpolationsgewicht für Transformer-Block 8 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.9.` | Interpolationsgewicht für Transformer-Block 9 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.10.` | Interpolationsgewicht für Transformer-Block 10 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.11.` | Interpolationsgewicht für Transformer-Block 11 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.12.` | Interpolationsgewicht für Transformer-Block 12 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.13.` | Interpolationsgewicht für Transformer-Block 13 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.14.` | Interpolationsgewicht für Transformer-Block 14 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.15.` | Interpolationsgewicht für Transformer-Block 15 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.16.` | Interpolationsgewicht für Transformer-Block 16 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.17.` | Interpolationsgewicht für Transformer-Block 17 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.18.` | Interpolationsgewicht für Transformer-Block 18 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.19.` | Interpolationsgewicht für Transformer-Block 19 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.20.` | Interpolationsgewicht für Transformer-Block 20 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.21.` | Interpolationsgewicht für Transformer-Block 21 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.22.` | Interpolationsgewicht für Transformer-Block 22 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.23.` | Interpolationsgewicht für Transformer-Block 23 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.24.` | Interpolationsgewicht für Transformer-Block 24 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.25.` | Interpolationsgewicht für Transformer-Block 25 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.26.` | Interpolationsgewicht für Transformer-Block 26 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `transformer_blocks.27.` | Interpolationsgewicht für Transformer-Block 27 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `scale_shift_table` | Interpolationsgewicht für die Scale-Shift-Tabelle (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
-| `proj_out.` | Interpolationsgewicht für Projektions-Ausgabeschichten (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (step: 0.01) |
+| `patchify_proj.` | Interpolationsgewicht für Patchify-Projektionsschichten (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `adaln_single.` | Interpolationsgewicht für Einzelschichten der adaptiven Layer-Normalisierung (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `caption_projection.` | Interpolationsgewicht für Caption-Projektionsschichten (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.0.` | Interpolationsgewicht für Transformer-Block 0 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.1.` | Interpolationsgewicht für Transformer-Block 1 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.2.` | Interpolationsgewicht für Transformer-Block 2 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.3.` | Interpolationsgewicht für Transformer-Block 3 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.4.` | Interpolationsgewicht für Transformer-Block 4 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.5.` | Interpolationsgewicht für Transformer-Block 5 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.6.` | Interpolationsgewicht für Transformer-Block 6 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.7.` | Interpolationsgewicht für Transformer-Block 7 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.8.` | Interpolationsgewicht für Transformer-Block 8 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.9.` | Interpolationsgewicht für Transformer-Block 9 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.10.` | Interpolationsgewicht für Transformer-Block 10 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.11.` | Interpolationsgewicht für Transformer-Block 11 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.12.` | Interpolationsgewicht für Transformer-Block 12 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.13.` | Interpolationsgewicht für Transformer-Block 13 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.14.` | Interpolationsgewicht für Transformer-Block 14 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.15.` | Interpolationsgewicht für Transformer-Block 15 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.16.` | Interpolationsgewicht für Transformer-Block 16 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.17.` | Interpolationsgewicht für Transformer-Block 17 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.18.` | Interpolationsgewicht für Transformer-Block 18 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.19.` | Interpolationsgewicht für Transformer-Block 19 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.20.` | Interpolationsgewicht für Transformer-Block 20 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.21.` | Interpolationsgewicht für Transformer-Block 21 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.22.` | Interpolationsgewicht für Transformer-Block 22 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.23.` | Interpolationsgewicht für Transformer-Block 23 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.24.` | Interpolationsgewicht für Transformer-Block 24 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.25.` | Interpolationsgewicht für Transformer-Block 25 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.26.` | Interpolationsgewicht für Transformer-Block 26 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `transformer_blocks.27.` | Interpolationsgewicht für Transformer-Block 27 (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `scale_shift_table` | Interpolationsgewicht für die Scale-Shift-Tabelle (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
+| `proj_out.` | Interpolationsgewicht für Projektions-Ausgabeschichten (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schritt: 0.01) |
 
 ## Ausgaben
 

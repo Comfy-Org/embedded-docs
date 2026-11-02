@@ -7,8 +7,8 @@ Recorta aleatoriamente um intervalo contínuo de quadros de um vídeo de entrada
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-----------|---------------|-------------|-------|
 | `vídeo` | Vídeo de entrada. | VIDEO | Sim | – |
-| `comprimento` | Número de quadros a manter. Se `comprimento` for maior que o número total de quadros no vídeo, o vídeo inteiro é mantido. (padrão: 16) | INT | Sim | min: 1, max: 99999 |
-| `semente` | Semente aleatória. (padrão: 0) | INT | Sim | min: 0, max: 0xFFFFFFFFFFFFFFFF |
+| `comprimento` | Número de quadros a manter. Se `comprimento` for maior que o número total de quadros no vídeo, o vídeo inteiro é mantido. (padrão: 16) | INT | Sim | mín. 1, máx. 99999 |
+| `semente` | Semente aleatória. (padrão: 0) | INT | Sim | mín. 0, máx. 0xFFFFFFFFFFFFFFFF |
 
 ## Saídas
 

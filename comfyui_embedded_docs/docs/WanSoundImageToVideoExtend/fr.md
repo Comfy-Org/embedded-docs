@@ -9,7 +9,7 @@ Le nœud WanSoundImageToVideoExtend étend un latent vidéo existant en généra
 | `positif` | Prompts de conditionnement positifs qui guident ce que la vidéo doit contenir | CONDITIONING | Oui | - |
 | `négatif` | Prompts de conditionnement négatifs qui précisent ce que la vidéo doit éviter | CONDITIONING | Oui | - |
 | `vae` | Autoencodeur variationnel utilisé pour encoder l’image de référence et la vidéo de contrôle dans l’espace latent | VAE | Oui | - |
-| `longueur` | Nombre total d’images à générer pour la séquence vidéo (défaut : 77, pas : 4) | INT | Oui | 1 to MAX_RESOLUTION |
+| `longueur` | Nombre total d’images à générer pour la séquence vidéo (défaut : 77, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
 | `latent vidéo` | Latent vidéo initial qui sert de point de départ à l’extension. La largeur, la hauteur, la taille de lot et le décalage d’images de la sortie sont dérivés de ce latent. Ses 19 dernières images sont utilisées comme conditionnement de mouvement de référence. | LATENT | Oui | - |
 | `sortie de l'encodeur audio` | Embeddings audio optionnels qui peuvent influencer la génération vidéo en fonction des caractéristiques du son. Lorsqu’ils sont fournis, l’audio est interpolé et converti en un compartiment d’embeddings audio qui est ajouté au conditionnement. | AUDIOENCODEROUTPUT | Non | - |
 | `image de référence` | Image de référence optionnelle qui fournit un guide visuel pour la génération vidéo. L’image est agrandie pour correspondre aux dimensions cibles et encodée en un latent, puis ajoutée au conditionnement positif et négatif. Seule la première image du lot est utilisée. | IMAGE | Non | - |

@@ -9,7 +9,7 @@ O nó WanSoundImageToVideoExtend estende um latent de vídeo existente ao gerar 
 | `positivo` | Prompts de condicionamento positivos que orientam o que o vídeo deve incluir | CONDITIONING | Sim | - |
 | `negativo` | Prompts de condicionamento negativos que especificam o que o vídeo deve evitar | CONDITIONING | Sim | - |
 | `vae` | Autoencoder Variacional usado para codificar a imagem de referência e o vídeo de controle no espaço latente | VAE | Sim | - |
-| `comprimento` | Número total de quadros a serem gerados para a sequência de vídeo (padrão: 77, passo: 4) | INT | Sim | 1 to MAX_RESOLUTION |
+| `comprimento` | Número total de quadros a serem gerados para a sequência de vídeo (padrão: 77, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
 | `latente de vídeo` | Latent de vídeo inicial que serve como ponto de partida para a extensão. A largura, a altura, o tamanho do lote e o deslocamento de quadros da saída são derivados deste latent. Seus últimos 19 quadros são usados como condicionamento de movimento de referência. | LATENT | Sim | - |
 | `saída do codificador de áudio` | Embeddings de áudio opcionais que podem influenciar a geração de vídeo com base nas características do som. Quando fornecidos, o áudio é interpolado e convertido em um bucket de embeddings de áudio que é adicionado ao condicionamento. | AUDIOENCODEROUTPUT | Não | - |
 | `imagem de referência` | Imagem de referência opcional que fornece orientação visual para a geração do vídeo. A imagem é ampliada para corresponder às dimensões alvo e codificada em um latent, que é então adicionado ao condicionamento positivo e negativo. Apenas a primeira imagem do lote é usada. | IMAGE | Não | - |

@@ -10,31 +10,31 @@ Der **Block Sparse Attention**-Node modifiziert ein Modell so, dass seine Attent
 |-----------|--------------|-----------|--------------|--------|
 | `model` | Das Modell, das gepatcht werden soll. | MODEL | Ja | N/A |
 | `selection` | Methode zum Auswählen von Key-Blöcken für vollständige Attention auf Token-Ebene (wird als `method` angezeigt). <br>`sol-attn`: Sparsifying Online Attention verwendet einen trainingsfreien adaptiven Schwellenwert für jeden Attention-Head und Query-Block.<br>`sla`: Sparse-Linear Attention behält einen festen Prozentsatz der Key-Blöcke mit den höchsten Scores; nur mit Modellgewichten verwenden, die für dieses Muster trainiert wurden.<br>`vsa`: Video Sparse Attention (FastVideo) verwendet 3D-Video-Cube-Tiling und einen gelernten groben Attention-Zweig; erfordert FastH3-Modellgewichte. | DYNAMIC_COMBO | Ja | `"sol-attn"`<br>`"sla"`<br>`"vsa"` |
-| `start_percent` | Prozentpunkt, an dem die sparse Attention beginnt. Vor diesem Punkt bleibt die Attention dicht. Standard: 0.2. | FLOAT | Nein | min: 0.0, max: 1.0, step: 0.01 |
-| `end_percent` | Prozentpunkt, an dem die sparse Attention endet. Nach diesem Punkt wird die Attention wieder dicht. Standard: 1.0. | FLOAT | Nein | min: 0.0, max: 1.0, step: 0.01 |
-| `dense_blocks` | Transformer-Blöcke, die immer dicht ausgeführt werden, z. B. '0, 1, 47-49'. Standard: "" (leer). Erweiterte Eingabe. | STRING | Nein | Default: "" |
-| `min_tokens` | Sequenzen, die kürzer als dieser Wert sind, bleiben dicht. Standard: 12288. Erweiterte Eingabe. | INT | Nein | min: 0, max: 1048576, step: 512 |
-| `extra_tokens` | Zusätzliche Tokens mit den höchsten Scores, die jeder Query-Block über seine ausgewählten Blöcke hinaus beachtet. Näher an dicht bedeutet mehr Attention-Zeit; 256 empfohlen, 0 deaktiviert. Wird für VSA ignoriert. Standard: 256. Erweiterte Eingabe. | INT | Nein | min: 0, max: 256, step: 64 |
+| `start_percent` | Prozentpunkt, an dem die sparse Attention beginnt. Vor diesem Punkt bleibt die Attention dicht. Standard: 0.2. | FLOAT | Nein | Min. 0.0, Max. 1.0, Schritt: 0.01 |
+| `end_percent` | Prozentpunkt, an dem die sparse Attention endet. Nach diesem Punkt wird die Attention wieder dicht. Standard: 1.0. | FLOAT | Nein | Min. 0.0, Max. 1.0, Schritt: 0.01 |
+| `dense_blocks` | Transformer-Blöcke, die immer dicht ausgeführt werden, z. B. '0, 1, 47-49'. Standard: "" (leer). Erweiterte Eingabe. | STRING | Nein | Standard: "" |
+| `min_tokens` | Sequenzen, die kürzer als dieser Wert sind, bleiben dicht. Standard: 12288. Erweiterte Eingabe. | INT | Nein | Min. 0, Max. 1048576, Schritt: 512 |
+| `extra_tokens` | Zusätzliche Tokens mit den höchsten Scores, die jeder Query-Block über seine ausgewählten Blöcke hinaus beachtet. Näher an dicht bedeutet mehr Attention-Zeit; 256 empfohlen, 0 deaktiviert. Wird für VSA ignoriert. Standard: 256. Erweiterte Eingabe. | INT | Nein | Min. 0, Max. 256, Schritt: 64 |
 | `sink_conditioning` | Nur MiniMax-H3. `exact_kv`: jede Query beachtet die gepackten Text-/Audio-/Referenzzeilen exakt (etwa 3 % Kosten). `exact_kv_and_rows`: führt zusätzlich die Ziel-Audio-Query-Zeilen dicht aus (hält generiertes Audio intakt). `off` deaktiviert dieses Verhalten. Standard: "exact_kv_and_rows". Erweiterte Eingabe. | COMBO | Nein | `"exact_kv"`<br>`"exact_kv_and_rows"`<br>`"off"` |
-| `verbose` | Protokolliert, ob jede Attention-Form sparse Attention verwendet hat oder warum sie dicht geblieben ist. Standard: False. Erweiterte Eingabe. | BOOLEAN | Nein | Default: False |
+| `verbose` | Protokolliert, ob jede Attention-Form sparse Attention verwendet hat oder warum sie dicht geblieben ist. Standard: False. Erweiterte Eingabe. | BOOLEAN | Nein | Standard: False |
 
 ### sol-attn Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|-----------|--------------|--------|
-| `tau` | Schwellenwert in Sigma-Einheiten der Score-Verteilung. Höher ist sparser: 1.0 behält etwa 16 % der Key-Blöcke exakt, 1.5 etwa 7 %, 2.0 etwa 2.7 %. Standard: 1.3. | FLOAT | Nein | min: 0.0, max: 4.0, step: 0.05 |
+| `tau` | Schwellenwert in Sigma-Einheiten der Score-Verteilung. Höher ist sparser: 1.0 behält etwa 16 % der Key-Blöcke exakt, 1.5 etwa 7 %, 2.0 etwa 2.7 %. Standard: 1.3. | FLOAT | Nein | Min. 0.0, Max. 4.0, Schritt: 0.05 |
 
 ### sla Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|-----------|--------------|--------|
-| `keep_percent` | Prozentsatz der Key-Blöcke, die jeder Query-Block exakt behält (Sinks und die Diagonale kommen zusätzlich hinzu). Die Auswahl, gegen die SLA-artige LoRAs destilliert werden; ohne ein solches LoRA ist ein höherer Wert näher an dicht. Standard: 10.0. | FLOAT | Nein | min: 0.5, max: 95.0, step: 0.5 |
+| `keep_percent` | Prozentsatz der Key-Blöcke, die jeder Query-Block exakt behält (Sinks und die Diagonale kommen zusätzlich hinzu). Die Auswahl, gegen die SLA-artige LoRAs destilliert werden; ohne ein solches LoRA ist ein höherer Wert näher an dicht. Standard: 10.0. | FLOAT | Nein | Min. 0.5, Max. 95.0, Schritt: 0.5 |
 
 ### vsa Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|-----------|--------------|--------|
-| `keep_percent` | Prozentsatz der Video-Würfel, die jeder Query-Würfel behält; FastH3-VSA-Checkpoints sind auf 10 trainiert. Verwendet die `to_gate_compress`-Layer des Modells für den groben Zweig, falls vorhanden. Standard: 10.0. | FLOAT | Nein | min: 0.5, max: 95.0, step: 0.5 |
+| `keep_percent` | Prozentsatz der Video-Würfel, die jeder Query-Würfel behält; FastH3-VSA-Checkpoints sind auf 10 trainiert. Verwendet die `to_gate_compress`-Layer des Modells für den groben Zweig, falls vorhanden. Standard: 10.0. | FLOAT | Nein | Min. 0.5, Max. 95.0, Schritt: 0.5 |
 
 **Hinweis:** Nur die Parameter, die zur aktuell ausgewählten Methode gehören, werden in der Oberfläche angezeigt.
 

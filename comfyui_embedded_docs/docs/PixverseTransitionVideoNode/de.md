@@ -12,7 +12,7 @@ Erzeugt ein Übergangsvideo zwischen zwei Eingabebildern mithilfe der PixVerse A
 | `quality` | Einstellung für die Videoqualität (Standard: `"540p"`) | COMBO | Ja | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
 | `duration_seconds` | Videodauer in Sekunden | COMBO | Ja | `5`<br>`8` |
 | `motion_mode` | Bewegungsstil für den Übergang (Standard: `"normal"`) | COMBO | Ja | `"normal"`<br>`"fast"` |
-| `seed` | Seed für die Videogenerierung (Standard: 0) | INT | Ja | 0 to 2147483647 |
+| `seed` | Seed für die Videogenerierung (Standard: 0) | INT | Ja | 0 bis 2147483647 |
 | `negative_prompt` | Eine optionale Textbeschreibung unerwünschter Elemente auf einem Bild (Standard: leerer String) | STRING | Nein | - |
 
 **Hinweis zu Parameterbeschränkungen:** Bei Verwendung der 1080p-Qualität wird der Bewegungsmodus automatisch auf `"normal"` gesetzt und die Dauer ist auf 5 Sekunden begrenzt. Bei jeder Dauer, die nicht 5 Sekunden beträgt, wird der Bewegungsmodus ebenfalls automatisch auf `"normal"` gesetzt.

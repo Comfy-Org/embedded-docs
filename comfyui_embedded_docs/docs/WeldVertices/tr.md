@@ -7,8 +7,8 @@ Weld Vertices, 3B bir mesh'teki çakışan köşeleri birleştirir; böylece dah
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `ağ` | Çakışan köşeleri birleştirilecek girdi 3B mesh'i. | MESH | Evet | - |
-| `epsilon_rel` | Birleştirme toleransı (sınırlayıcı kutu köşegeninin kesri). Float tekilleştirme için 1e-5; görünürde yakın ancak farklı köşeler için 1e-3. Varsayılan: 1e-5. | FLOAT | Evet | 0.0 to unlimited (step 1e-6) |
-| `epsilon_abs` | Mutlak birleştirme toleransı (> 0 olduğunda epsilon_rel değerini geçersiz kılar). Varsayılan: 0.0. | FLOAT | Evet | 0.0 to unlimited (step 1e-6) |
+| `epsilon_rel` | Birleştirme toleransı (sınırlayıcı kutu köşegeninin kesri). Float tekilleştirme için 1e-5; görünürde yakın ancak farklı köşeler için 1e-3. Varsayılan: 1e-5. | FLOAT | Evet | 0.0 to unlimited (adım: 1e-6) |
+| `epsilon_abs` | Mutlak birleştirme toleransı (> 0 olduğunda epsilon_rel değerini geçersiz kılar). Varsayılan: 0.0. | FLOAT | Evet | 0.0 to unlimited (adım: 1e-6) |
 
 Not: `epsilon_abs` 0'dan büyük olduğunda `epsilon_rel`'e göre önceliklidir ve göreli tolerans yok sayılır. `epsilon_abs` 0 olduğunda, göreli tolerans `epsilon_rel` kullanılır ve mesh sınırlayıcı kutusu köşegeniyle çarpılarak mutlak bir mesafeye dönüştürülür.
 

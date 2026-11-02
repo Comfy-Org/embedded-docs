@@ -9,9 +9,9 @@ O nó WanDancerVideo prepara os dados de condicionamento e um tensor latente vaz
 | `positivo` | O condicionamento positivo para guiar a geração de vídeo. | CONDITIONING | Sim |  |
 | `negativo` | O condicionamento negativo para guiar a geração de vídeo. | CONDITIONING | Sim |  |
 | `vae` | O VAE usado para codificar a imagem inicial no espaço latente. | VAE | Sim |  |
-| `largura` | A largura do vídeo gerado em pixels (padrão: 480). | INT | Sim | 16 to MAX_RESOLUTION (step: 16) |
-| `altura` | A altura do vídeo gerado em pixels (padrão: 832). | INT | Sim | 16 to MAX_RESOLUTION (step: 16) |
-| `duração` | O número de quadros no vídeo gerado. Deve permanecer 149 para WanDancer (padrão: 149). | INT | Sim | 1 to MAX_RESOLUTION (step: 4) |
+| `largura` | A largura do vídeo gerado em pixels (padrão: 480). | INT | Sim | 16 a MAX_RESOLUTION (passo: 16) |
+| `altura` | A altura do vídeo gerado em pixels (padrão: 832). | INT | Sim | 16 a MAX_RESOLUTION (passo: 16) |
+| `duração` | O número de quadros no vídeo gerado. Deve permanecer 149 para WanDancer (padrão: 149). | INT | Sim | 1 a MAX_RESOLUTION (passo: 4) |
 | `clip_vision_output` | Os embeddings de visão do CLIP para o primeiro quadro. | CLIP_VISION_OUTPUT | Não |  |
 | `clip_vision_output_ref` | Os embeddings de visão do CLIP para a imagem de referência. | CLIP_VISION_OUTPUT | Não |  |
 | `imagem_inicial` | A(s) imagem(ns) inicial(is) a ser(em) codificada(s), pode ser qualquer número de quadros. | IMAGE | Não |  |

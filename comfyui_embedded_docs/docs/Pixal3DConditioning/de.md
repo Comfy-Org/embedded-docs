@@ -8,7 +8,7 @@ Der Node Pixal3DConditioning bereitet die Bildkonditionierung für die Trellis2-
 |-----------|-------------|-----------|----------|-------|
 | `clip_vision_model` | DINOv3 ViT-L/16 ClipVision. | CLIP_VISION | Ja | — |
 | `image` | Vorverarbeitetes Bild aus ImageCropToMask (pad_factor=1.1 für Pixal3D). | IMAGE | Ja | — |
-| `camera_angle_x` | Horizontales FOV in Grad (angezeigt als `fov`). Verbinden Sie ein MoGeGeometryToFOV (axis='horizontal', unit='degrees') für ein FoV pro Bild (entspricht dem Upstream-Standard). Standard: 49.13. | FLOAT | Ja | 1.0 – 170.0 (step 0.01) |
+| `camera_angle_x` | Horizontales FOV in Grad (angezeigt als `fov`). Verbinden Sie ein MoGeGeometryToFOV (axis='horizontal', unit='degrees') für ein FoV pro Bild (entspricht dem Upstream-Standard). Standard: 49.13. | FLOAT | Ja | 1.0 – 170.0 (Schritt: 0.01) |
 
 ## Ausgaben
 
