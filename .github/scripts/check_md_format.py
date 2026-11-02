@@ -27,6 +27,14 @@ from pathlib import Path
 DOCS_DIR = Path(__file__).resolve().parents[2] / "comfyui_embedded_docs" / "docs"
 
 # --- data-type names must stay English (programmatic schema identifiers) ---
+
+_DATA_TYPE_HEADERS = {
+    "data type", "type", "datatype", "tipo de dato", "tipo de dados", "typ",
+    "数据类型", "資料類型", "数据类型", "データ型", "데이터 타입", "тип данных",
+    "نوع البيانات", "veri tipi", "نوع داده", "סוג נתונים", "tipo di dato",
+}
+
+
 TRANSLATED_TYPES = {
     # es / pt-BR
     "MODELO", "CADENA", "IMAGEN", "IMAGEM", "ENTERO", "FLOTANTE", "MÁSCARA",
@@ -228,16 +236,30 @@ def check_file(path: Path):
     unfenced = [(i, line) for i, (fenced, line) in
                 enumerate(split_fenced(text)) if not fenced]
 
-    # 2. translated data-type names in table cells
+    # 2. translated data-type names, restricted to the Data Type column.
+    # Scanning every cell would flag legitimate prose elsewhere: a Range cell
+    # that says "图像" means "an image", which is correct localization, not a
+    # translated schema name.
     reported_lines = set()
+    type_idx = None
     for i, line in unfenced:
-        if line.startswith("|"):
-            for cell in line.split("|"):
-                if cell.strip() in TRANSLATED_TYPES:
-                    errors.append(f"{rel}: translated data type "
-                                  f"'{cell.strip()}' (keep English schema names)")
-                    reported_lines.add(i)
+        if not line.startswith("|"):
+            continue
+        cells = [c.strip() for c in line.split("|")[1:-1]]
+        if all(set(c) <= {"-", ":", " "} for c in cells):
+            continue
+        if type_idx is None:
+            for j, c in enumerate(cells):
+                if c.strip().strip("*`").lower() in _DATA_TYPE_HEADERS:
+                    type_idx = j
                     break
+            if type_idx is not None:
+                continue          # header row itself
+        if type_idx is not None and type_idx < len(cells):
+            if cells[type_idx] in TRANSLATED_TYPES:
+                errors.append(f"{rel}: translated data type "
+                              f"'{cells[type_idx]}' (keep English schema names)")
+                reported_lines.add(i)
 
     # 4. duplicate H1 (unfenced headings only)
     h1s = [line for _, line in unfenced if re.match(r"^# .+", line)]
