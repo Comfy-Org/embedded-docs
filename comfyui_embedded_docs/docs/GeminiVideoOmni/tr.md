@@ -2,6 +2,8 @@
 
 Google'ın Gemini Omni Flash modelini kullanarak metin isteminden sesli video oluşturun. İsteğe bağlı olarak, sonucu yönlendirmek veya düzenlemek için referans görseller ve/veya videolar sağlayın. İstenen süreyi (3-10sn) ve en-boy oranını (16:9 veya 9:16) doğrudan istemde belirtin.
 
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
+
 ## Girdiler
 
 ### Ortak Girdiler
@@ -41,4 +43,4 @@ Notlar:
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiVideoOmni/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `648844868affb68298d2eac8ac20095bfe378d32e721396781de330ef6a6d69f`
+**Source fingerprint (SHA-256):** `da533824adf93b7502465cf985941f70e0ae4d6813c951f4ffa98c007437c03c`

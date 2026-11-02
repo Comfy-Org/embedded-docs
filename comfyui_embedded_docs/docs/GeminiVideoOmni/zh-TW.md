@@ -2,6 +2,8 @@
 
 使用 Google 的 Gemini Omni Flash 模型，根據文字提示詞產生包含音訊的影片。可選擇提供參考影像及/或影片，以引導或編輯結果。請直接在提示詞中描述所需的長度（3-10 秒）與長寬比（16:9 或 9:16）。
 
+**注意：** 此節點在原始碼中標記為已棄用。
+
 ## 輸入
 
 ### 通用輸入
@@ -41,4 +43,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiVideoOmni/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `648844868affb68298d2eac8ac20095bfe378d32e721396781de330ef6a6d69f`
+**Source fingerprint (SHA-256):** `da533824adf93b7502465cf985941f70e0ae4d6813c951f4ffa98c007437c03c`

@@ -2,6 +2,8 @@
 
 Genera un video con audio da un prompt testuale usando il modello Gemini Omni Flash di Google. Facoltativamente, fornisci immagini e/o video di riferimento per guidare o modificare il risultato. Descrivi la lunghezza desiderata (3-10 s) e le proporzioni (16:9 o 9:16) direttamente nel prompt.
 
+**Nota:** questo nodo è contrassegnato come deprecato nel codice sorgente.
+
 ## Input
 
 ### Input comuni
@@ -41,4 +43,4 @@ Note:
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiVideoOmni/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `648844868affb68298d2eac8ac20095bfe378d32e721396781de330ef6a6d69f`
+**Source fingerprint (SHA-256):** `da533824adf93b7502465cf985941f70e0ae4d6813c951f4ffa98c007437c03c`
