@@ -18,9 +18,9 @@ Bu düğüm, bir metin istemiyle birlikte ilk ve son kare görüntülerini kulla
 | `tohum` | Oluşturma için kullanılacak seed. (varsayılan: 0) | INT | Hayır | 0 - 2147483647 |
 | `sabit_kamera` | Kameranın sabitlenip sabitlenmeyeceğini belirtir. Platform, isteminize kamerayı sabitleme talimatı ekler ancak gerçek etkiyi garanti etmez. (varsayılan: False) | BOOLEAN | Hayır | - |
 | `filigran` | Videoya "AI generated" filigranı eklenip eklenmeyeceği. (varsayılan: False) | BOOLEAN | Hayır | - |
-(varsayılan: False) | BOOLEAN | Hayır | - |
+| `ses_oluştur` | Yapay zeka ile oluşturulmuş bir ses parçası ekler. Kalan modeller bu girdiyi yok sayar (varsayılan: False) | BOOLEAN | Hayır | - |
 
-**Not:** Hem `first_frame` hem de `last_frame` 300x300 ile 6000x6000 piksel arasında olmalı ve en-boy oranı 0. 4 ile 2. 5 arasında olmalıdır. `prompt`, ayrılmış parametre anahtar sözcükleri içeriyorsa denetlenir ve reddedilir.
+**Not:** Hem `first_frame` hem de `last_frame` 300x300 ile 6000x6000 piksel arasında olmalı ve en-boy oranı 0.4 ile 2.5 arasında olmalıdır. `prompt`, ayrılmış parametre anahtar sözcükleri içeriyorsa denetlenir ve reddedilir.
 
 ## Çıktılar
 

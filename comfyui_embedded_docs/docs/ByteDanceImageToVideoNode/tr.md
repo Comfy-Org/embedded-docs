@@ -17,7 +17,7 @@ ByteDance Image to Video düğümü; bir girdi görüntüsü ve metin istemine d
 | `seed` | Üretimde kullanılacak tohum (varsayılan: 0). | INT | Hayır | 0 - 2147483647 |
 | `sabit kamera` | Kameranın sabitlenip sabitlenmeyeceğini belirtir. Platform, isteminize kamerayı sabitleme talimatını ekler ancak gerçek etkiyi garanti etmez (varsayılan: False). | BOOLEAN | Hayır | `False`<br>`True` |
 | `filigran` | Videoya "AI generated" filigranı eklenip eklenmeyeceğini belirtir (varsayılan: False). | BOOLEAN | Hayır | `False`<br>`True` |
-| BOOLEAN | Hayır | `False`<br>`True` |
+| `ses_oluştur` | Yapay zeka ile oluşturulmuş bir ses parçası ekler. Kalan modeller bu girdiyi yok sayar (varsayılan: False). | BOOLEAN | Hayır | `False`<br>`True` |
 
 **Not:** İstem, aşağıdaki sözcükleri içermemelidir (büyük/küçük harf ayrımı gözetmeksizin): `resolution`, `ratio`, `duration`, `seed`, `camerafixed`, `watermark`. Bu parametreler kendilerine ayrılmış girdiler aracılığıyla ayarlanır.
 

@@ -18,7 +18,7 @@ Dieser Node erzeugt ein Video mithilfe eines Text-Prompts sowie Bildern für das
 | `seed` | Seed, der für die Generierung verwendet wird. (Standard: 0) | INT | Nein | 0 - 2147483647 |
 | `camera_fixed` | Gibt an, ob die Kamera fixiert werden soll. Die Plattform hängt eine Anweisung zum Fixieren der Kamera an Ihren Prompt an, garantiert jedoch nicht die tatsächliche Wirkung. (Standard: False) | BOOLEAN | Nein | - |
 | `watermark` | Ob dem Video ein Wasserzeichen "AI generated" hinzugefügt werden soll. (Standard: False) | BOOLEAN | Nein | - |
-| `generate_audio` | Fügt eine KI-generierte Audiospur hinzu. Die übrigen Modelle ignorieren diese Eingabe (Standard: False). | BOOLEAN | Nein | - |
+| `generate_audio` | Fügt eine KI-generierte Audiospur hinzu. Die übrigen Modelle ignorieren diese Eingabe (Standard: False) | BOOLEAN | Nein | - |
 
 **Hinweis:** Sowohl `first_frame` als auch `last_frame` müssen zwischen 300x300 und 6000x6000 Pixeln liegen und ein Seitenverhältnis zwischen 0,4 und 2,5 haben. Der `prompt` wird geprüft und abgelehnt, wenn er reservierte Parameter-Schlüsselwörter enthält.
 

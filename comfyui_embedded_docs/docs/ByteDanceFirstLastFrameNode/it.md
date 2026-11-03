@@ -18,9 +18,9 @@ Questo nodo genera un video utilizzando un prompt testuale insieme alle immagini
 | `seed` | Seed da utilizzare per la generazione. (predefinito: 0) | INT | No | 0 - 2147483647 |
 | `camera_fixed` | Specifica se fissare la camera. La piattaforma aggiunge un'istruzione per fissare la camera al tuo prompt, ma non garantisce l'effetto reale. (predefinito: False) | BOOLEAN | No | - |
 | `watermark` | Indica se aggiungere una filigrana "AI generated" al video. (predefinito: False) | BOOLEAN | No | - |
-| `generate_audio` | Aggiunge una traccia audio generata dall'IA. Gli altri modelli ignorano questo input (predefinito: False). | BOOLEAN | No | - |
+| `generate_audio` | Aggiunge una traccia audio generata dall'IA. Gli altri modelli ignorano questo input (predefinito: False) | BOOLEAN | No | - |
 
-**Nota:** Sia `first_frame` che `last_frame` devono essere compresi tra 300x300 e 6000x6000 pixel e avere un rapporto d'aspetto compreso tra 0. 4 e 2. 5. Il `prompt` viene controllato e rifiutato se contiene parole chiave riservate per i parametri.
+**Nota:** Sia `first_frame` che `last_frame` devono essere compresi tra 300x300 e 6000x6000 pixel e avere un rapporto d'aspetto compreso tra 0.4 e 2.5. Il `prompt` viene controllato e rifiutato se contiene parole chiave riservate per i parametri.
 
 ## Output
 

@@ -17,7 +17,7 @@ ByteDance Image to Video 節點會透過 API 使用 ByteDance 模型，根據輸
 | `seed` | 用於生成的隨機種子（預設值：0）。 | INT | 否 | 0 - 2147483647 |
 | `camera_fixed` | 指定是否固定攝影機。平台會在你的提示詞末尾附加固定攝影機的指令，但不保證實際效果（預設值：False）。 | BOOLEAN | 否 | `False`<br>`True` |
 | `watermark` | 是否在影片中加入「AI generated」浮水印（預設值：False）。 | BOOLEAN | 否 | `False`<br>`True` |
-| `generate_audio` | 新增 AI 生成的音軌。其餘模型會忽略此輸入（預設值：False）. | BOOLEAN | 否 | `False`<br>`True` |
+| `generate_audio` | 新增 AI 生成的音軌。其餘模型會忽略此輸入（預設值：False）。. | BOOLEAN | 否 | `False`<br>`True` |
 
 **注意：** 提示詞中不得包含以下詞語（不區分大小寫）：`resolution`、`ratio`、`duration`、`seed`、`camerafixed`、`watermark`。這些參數會透過各自的專用輸入進行設定。
 

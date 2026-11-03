@@ -18,7 +18,7 @@ Ce nœud génère une vidéo à partir d’un prompt texte ainsi que d’images 
 | `graine` | Graine à utiliser pour la génération. (par défaut : 0) | INT | Non | 0 - 2147483647 |
 | `camera_fixed` | Indique s’il faut fixer la caméra. La plateforme ajoute au prompt une instruction pour fixer la caméra, mais ne garantit pas l’effet réel. (par défaut : False) | BOOLEAN | Non | - |
 | `watermark` | Indique s’il faut ajouter un filigrane « AI generated » à la vidéo. (par défaut : False) | BOOLEAN | Non | - |
-(par défaut : False) | BOOLEAN | Non | - |
+| `générer_audio` | Ajoute une piste audio générée par IA. Les modèles restants ignorent cette entrée (par défaut : False) | BOOLEAN | Non | - |
 
 **Remarque :** `first_frame` et `last_frame` doivent tous deux être compris entre 300x300 et 6000x6000 pixels et avoir un rapport d’aspect compris entre 0,4 et 2,5. Le `prompt` est vérifié et rejeté s’il contient des mots-clés de paramètres réservés.
 

@@ -17,7 +17,7 @@ Le nœud ByteDance Image to Video génère des vidéos à l'aide des modèles By
 | `graine` | Graine à utiliser pour la génération (par défaut : 0). | INT | Non | 0 - 2147483647 |
 | `caméra_fixe` | Spécifie si la caméra doit être fixe. La plateforme ajoute une instruction de fixation de la caméra à votre invite, mais ne garantit pas l'effet réel (par défaut : False). | BOOLEAN | Non | `False`<br>`True` |
 | `filigrane` | Indique s'il faut ajouter un filigrane « généré par IA » à la vidéo (par défaut : False). | BOOLEAN | Non | `False`<br>`True` |
-| BOOLEAN | Non | `False`<br>`True` |
+| `générer_audio` | Ajoute une piste audio générée par IA. Les modèles restants ignorent cette entrée (par défaut : False). | BOOLEAN | Non | `False`<br>`True` |
 
 **Remarque :** L'invite ne doit pas contenir les mots suivants (insensibles à la casse) : `resolution`, `ratio`, `duration`, `seed`, `camerafixed`, `watermark`. Ces paramètres sont définis via leurs entrées dédiées.
 

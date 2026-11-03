@@ -16,7 +16,7 @@ ByteDance Text to Video 節點會透過 API 使用 ByteDance 模型，根據文�
 | `種子值` | 用於生成的種子（預設：0）。 | INT | 否 | 0至2147483647 |
 | `固定攝影機` | 指定是否固定相機。平台會將固定相機的指令附加到您的提示詞，但不保證實際效果（預設：False）。 | BOOLEAN | 否 | - |
 | `浮水印` | 是否在影片中加入「AI generated」浮水印（預設：False）。 | BOOLEAN | 否 | - |
-| `generate_audio` | 新增 AI 生成的音軌。其餘模型會忽略此輸入（預設：False）. | BOOLEAN | 否 | - |
+| `generate_audio` | 新增 AI 生成的音軌。其餘模型會忽略此輸入（預設：False）。. | BOOLEAN | 否 | - |
 
 **參數約束：**
 

@@ -16,7 +16,7 @@ ByteDance Text to Video düğümü, ByteDance modellerini kullanarak bir API ara
 | `tohum` | Üretim için kullanılacak tohum (varsayılan: 0). | INT | Hayır | 0 ila 2147483647 |
 | `sabit_kamera` | Kameranın sabitlenip sabitlenmeyeceğini belirtir. Platform, isteminize kamerayı sabitlemek için bir talimat ekler ancak gerçek etkiyi garanti etmez (varsayılan: False). | BOOLEAN | Hayır | - |
 | `filigran` | Videoya "AI generated" filigranı eklenip eklenmeyeceğini belirtir (varsayılan: False). | BOOLEAN | Hayır | - |
-| BOOLEAN | Hayır | - |
+| `ses_oluştur` | Yapay zeka ile oluşturulmuş bir ses parçası ekler. Kalan modeller bu girdiyi yok sayar (varsayılan: False). | BOOLEAN | Hayır | - |
 
 **Parametre Kısıtlamaları:**
 

@@ -18,7 +18,7 @@ Este nó gera um vídeo usando um prompt de texto junto com imagens do primeiro 
 | `seed` | Semente a ser usada para geração. (padrão: 0) | INT | Não | 0 - 2147483647 |
 | `camera_fixed` | Especifica se a câmera deve ser fixada. A plataforma acrescenta uma instrução para fixar a câmera ao seu prompt, mas não garante o efeito real. (padrão: False) | BOOLEAN | Não | - |
 | `watermark` | Se deve adicionar uma marca d'água "AI generated" ao vídeo. (padrão: False) | BOOLEAN | Não | - |
-| `generate_audio` | Adiciona uma faixa de áudio gerada por IA. Os modelos restantes ignoram esta entrada (padrão: False). | BOOLEAN | Não | - |
+| `generate_audio` | Adiciona uma faixa de áudio gerada por IA. Os modelos restantes ignoram esta entrada (padrão: False) | BOOLEAN | Não | - |
 
 **Nota:** Tanto `first_frame` quanto `last_frame` devem ter entre 300x300 e 6000x6000 pixels e ter uma proporção de aspecto entre 0,4 e 2,5. O `prompt` é verificado e rejeitado se contiver palavras-chave de parâmetros reservadas.
 
