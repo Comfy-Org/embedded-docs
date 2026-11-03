@@ -1,6 +1,6 @@
 # Topaz-Bildverbesserung
 
-Topaz Image Enhance wendet branchenübliches Hochskalieren und Bildverbesserung auf ein einzelnes Eingabebild mit Topaz-Modellen an. Es sendet das Bild an die Topaz-API, verarbeitet es mit dem ausgewählten Modell und gibt das verbesserte Ergebnis zurück. Sie können aus drei Modellen wählen: Reimagine, Bloom 2 und Wonder 3.5.
+Topaz Image Enhance wendet branchenübliches Hochskalieren und Bildverbesserung auf ein einzelnes Eingabebild mit Topaz-Modellen an. Es sendet das Bild an die Topaz-API, verarbeitet es mit dem ausgewählten Modell und gibt das verbesserte Ergebnis zurück. Sie können aus vier Modellen wählen: Reimagine, Bloom 2, Wonder 3.5 und Wonder 4.
 
 ## Eingaben
 
@@ -9,9 +9,9 @@ Topaz Image Enhance wendet branchenübliches Hochskalieren und Bildverbesserung 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `image` | Das Eingabebild, das verbessert werden soll. Nur ein Eingabebild wird unterstützt. | IMAGE | Ja | Einzelnes Bild |
-| `model` | Das zu verwendende Topaz-Verbesserungsmodell. Das ausgewählte Modell bestimmt, welche modellspezifischen Einstellungen angezeigt werden. | DYNAMIC_COMBO | Ja | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"` |
-| `output_width` | Der Wert Null bedeutet, automatisch zu berechnen (normalerweise entspricht dies der Originalgröße oder wird proportional zu `output_height` skaliert, falls angegeben). Wonder 3.5 unterstützt nur Skalierungsfaktoren von 1x bis 6x. Bloom 2 und Wonder 3.5 behalten das Seitenverhältnis der Eingabe bei und behandeln die angeforderte Größe als Ziel. (Standard: 0) | INT | Nein | 0 bis 32000 |
-| `output_height` | Der Wert Null bedeutet, mit derselben Höhe wie das Original auszugeben oder proportional zu `output_width` skaliert zu werden, falls angegeben. Wonder 3.5 unterstützt nur Skalierungsfaktoren von 1x bis 6x. Bloom 2 und Wonder 3.5 behalten das Seitenverhältnis der Eingabe bei und behandeln die angeforderte Größe als Ziel. (Standard: 0) | INT | Nein | 0 bis 32000 |
+| `model` | Das zu verwendende Topaz-Verbesserungsmodell. Das ausgewählte Modell bestimmt, welche modellspezifischen Einstellungen angezeigt werden. | DYNAMIC_COMBO | Ja | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"`<br>`"Wonder 4"` |
+| `output_width` | Der Wert Null bedeutet, automatisch zu berechnen (normalerweise entspricht dies der Originalgröße oder wird proportional zu `output_height` skaliert, falls angegeben). Wonder 3.5 und Wonder 4 unterstützen Skalierungsfaktoren von 1x bis 6x, Bloom 2 von 1x bis 12x. Bloom 2, Wonder 3.5 und Wonder 4 behalten immer das Seitenverhältnis der Eingabe bei: Wenn beide Größen gesetzt sind und ihr Verhältnis abweicht, gewinnt die größere Skalierung, sodass die Ausgabe größer als die angeforderte Größe wird und der Preis höher ist als für die angeforderte Größe. (Standard: 0) | INT | Nein | 0 bis 32000 |
+| `output_height` | Der Wert Null bedeutet, mit derselben Höhe wie das Original auszugeben oder proportional zu `output_width` skaliert zu werden, falls angegeben. Wonder 3.5 und Wonder 4 unterstützen Skalierungsfaktoren von 1x bis 6x, Bloom 2 von 1x bis 12x. Bloom 2, Wonder 3.5 und Wonder 4 behalten immer das Seitenverhältnis der Eingabe bei: Wenn beide Größen gesetzt sind und ihr Verhältnis abweicht, gewinnt die größere Skalierung, sodass die Ausgabe größer als die angeforderte Größe wird und der Preis höher ist als für die angeforderte Größe. (Standard: 0) | INT | Nein | 0 bis 32000 |
 
 ### Reimagine Eingaben
 
@@ -58,7 +58,7 @@ Diese Einstellungen gelten, wenn `model` auf `"Wonder 3.5"` gesetzt ist.
 | `grain_size` | Größe der Körnungspartikel. Wird ignoriert, wenn Körnung deaktiviert ist. (Standard: 1.0) | FLOAT | Ja | 1.0 bis 5.0 |
 | `grain_density` | Intensität des Körnungseffekts. Wird ignoriert, wenn Körnung deaktiviert ist. (Standard: 0.5) | FLOAT | Ja | 0.0 bis 1.0 |
 
-**Hinweis:** Nur ein Eingabebild wird unterstützt; der Node löst einen Fehler aus, wenn der Eingabe-Batch mehr als ein Bild enthält. Die Körnungseinstellungen (`grain_model`, `grain_strength`, `grain_size`, `grain_density`) werden ignoriert, sofern `grain` nicht aktiviert ist. Bei Bloom 2 wird durch Leerlassen von `prompt` automatisch ein Prompt aus dem Eingabebild generiert. Wonder 3.5 unterstützt nur Skalierungsfaktoren von 1x bis 6x; Bloom 2 und Wonder 3.5 behalten das Seitenverhältnis der Eingabe bei und behandeln die angeforderte Größe als Ziel.
+**Hinweis:** Nur ein Eingabebild wird unterstützt; der Node löst einen Fehler aus, wenn der Eingabe-Batch mehr als ein Bild enthält. Die Körnungseinstellungen (`grain_model`, `grain_strength`, `grain_size`, `grain_density`) werden ignoriert, sofern `grain` nicht aktiviert ist. Bei Bloom 2 wird durch Leerlassen von `prompt` automatisch ein Prompt aus dem Eingabebild generiert. Wonder 4 bietet nur die gemeinsamen Eingaben. Die Ausgabe ist auf 179 Megapixel und 32000 Pixel pro Seite begrenzt.
 
 ## Ausgaben
 
@@ -69,4 +69,4 @@ Diese Einstellungen gelten, wenn `model` auf `"Wonder 3.5"` gesetzt ist.
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TopazImageEnhanceV2/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `19bb03ca7354f1b0d1e559b742b83939678fce6d5f490b1030717b846043e0e6`
+**Source fingerprint (SHA-256):** `dd109d31ea4ab7928058414c3a62ae3829f879354ebdce329b599aacb9804d1b`

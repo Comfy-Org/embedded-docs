@@ -1,6 +1,6 @@
 # Topaz Aprimoramento de Imagem
 
-Topaz Image Enhance aplica upscaling e aprimoramento de imagem padrão do setor a uma única imagem de entrada usando modelos Topaz. Ele envia a imagem para a API Topaz, processa-a com o modelo selecionado e retorna o resultado aprimorado. Você pode escolher entre três modelos: Reimagine, Bloom 2 e Wonder 3.5.
+Topaz Image Enhance aplica upscaling e aprimoramento de imagem padrão do setor a uma única imagem de entrada usando modelos Topaz. Ele envia a imagem para a API Topaz, processa-a com o modelo selecionado e retorna o resultado aprimorado. Você pode escolher entre quatro modelos: Reimagine, Bloom 2, Wonder 3.5 e Wonder 4.
 
 ## Entradas
 
@@ -9,9 +9,9 @@ Topaz Image Enhance aplica upscaling e aprimoramento de imagem padrão do setor 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `imagem` | A imagem de entrada a ser aprimorada. Apenas uma imagem de entrada é suportada. | IMAGE | Sim | Imagem única |
-| `modelo` | O modelo de aprimoramento Topaz a ser usado. O modelo selecionado determina quais configurações específicas do modelo aparecem. | DYNAMIC_COMBO | Sim | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"` |
-| `largura de saída` | O valor zero significa calcular automaticamente (normalmente será o tamanho original ou dimensionado proporcionalmente a `output_height`, se especificado). Wonder 3.5 suporta fatores de upscaling apenas de 1x a 6x. Bloom 2 e Wonder 3.5 preservam a proporção da imagem de entrada e tratam o tamanho solicitado como uma meta. (padrão: 0) | INT | Não | 0 a 32000 |
-| `altura de saída` | O valor zero significa gerar na mesma altura que o original ou dimensionar proporcionalmente a `output_width`, se especificado. Wonder 3.5 suporta fatores de upscaling apenas de 1x a 6x. Bloom 2 e Wonder 3.5 preservam a proporção da imagem de entrada e tratam o tamanho solicitado como uma meta. (padrão: 0) | INT | Não | 0 a 32000 |
+| `modelo` | O modelo de aprimoramento Topaz a ser usado. O modelo selecionado determina quais configurações específicas do modelo aparecem. | DYNAMIC_COMBO | Sim | `"Reimagine"`<br>`"Bloom 2"`<br>`"Wonder 3.5"`<br>`"Wonder 4"` |
+| `largura de saída` | O valor zero significa calcular automaticamente (normalmente será o tamanho original ou dimensionado proporcionalmente a `output_height`, se especificado). Wonder 3.5 e Wonder 4 suportam fatores de upscaling de 1x a 6x, e Bloom 2 de 1x a 12x. Bloom 2, Wonder 3.5 e Wonder 4 sempre preservam a proporção da imagem de entrada: se os dois tamanhos forem definidos e a proporção deles for diferente, o maior fator prevalece, de modo que a saída fica maior que o tamanho solicitado e o preço fica mais alto do que o do tamanho solicitado. (padrão: 0) | INT | Não | 0 a 32000 |
+| `altura de saída` | O valor zero significa gerar na mesma altura que o original ou dimensionar proporcionalmente a `output_width`, se especificado. Wonder 3.5 e Wonder 4 suportam fatores de upscaling de 1x a 6x, e Bloom 2 de 1x a 12x. Bloom 2, Wonder 3.5 e Wonder 4 sempre preservam a proporção da imagem de entrada: se os dois tamanhos forem definidos e a proporção deles for diferente, o maior fator prevalece, de modo que a saída fica maior que o tamanho solicitado e o preço fica mais alto do que o do tamanho solicitado. (padrão: 0) | INT | Não | 0 a 32000 |
 
 ### Entradas do Reimagine
 
@@ -58,7 +58,7 @@ Estas configurações se aplicam quando `model` está definido como `"Wonder 3.5
 | `grain_size` | Tamanho das partículas de granulação. É ignorado se `grain` estiver desativado. (padrão: 1.0) | FLOAT | Sim | 1.0 a 5.0 |
 | `grain_density` | Intensidade do efeito de granulação. É ignorado se `grain` estiver desativado. (padrão: 0.5) | FLOAT | Sim | 0.0 a 1.0 |
 
-**Nota:** Apenas uma imagem de entrada é suportada; o nó lança um erro se o lote de entrada contiver mais de uma imagem. As configurações de granulação (`grain_model`, `grain_strength`, `grain_size`, `grain_density`) são ignoradas a menos que `grain` esteja habilitado. Para o Bloom 2, deixar `prompt` vazio gera automaticamente um prompt a partir da imagem de entrada. Wonder 3.5 suporta fatores de upscaling apenas de 1x a 6x; Bloom 2 e Wonder 3.5 preservam a proporção da imagem de entrada e tratam o tamanho solicitado como uma meta.
+**Nota:** Apenas uma imagem de entrada é suportada; o nó lança um erro se o lote de entrada contiver mais de uma imagem. As configurações de granulação (`grain_model`, `grain_strength`, `grain_size`, `grain_density`) são ignoradas a menos que `grain` esteja habilitado. Para o Bloom 2, deixar `prompt` vazio gera automaticamente um prompt a partir da imagem de entrada. Wonder 4 expõe apenas as entradas comuns. A saída é limitada a 179 megapixels e a 32000 pixels por lado.
 
 ## Saídas
 
@@ -69,4 +69,4 @@ Estas configurações se aplicam quando `model` está definido como `"Wonder 3.5
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TopazImageEnhanceV2/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `19bb03ca7354f1b0d1e559b742b83939678fce6d5f490b1030717b846043e0e6`
+**Source fingerprint (SHA-256):** `dd109d31ea4ab7928058414c3a62ae3829f879354ebdce329b599aacb9804d1b`
