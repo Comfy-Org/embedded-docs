@@ -8,8 +8,8 @@ Este nodo convierte un prompt en condicionamiento y un latente vacío para una s
 | --- | --- | --- | --- | --- |
 | `clip` | El modelo CLIP p-h3-image utilizado para tokenizar el prompt, incluidas las imágenes de referencia, y para codificar el condicionamiento. | CLIP | Sí | - |
 | `prompt` | Qué generar, o cómo editar `image_1`. Con imágenes conectadas, una instrucción corta recibe `Edit <Picture 1>. ` antepuesto. Una instrucción que ya comienza con `Edit <Picture` o un resumen de edición producido por un upsampler de prompts se utiliza exactamente como está escrito. | STRING | Sí | - |
-| `width` | Ancho de salida en píxeles, redondeado a un múltiplo de 32. 0 usa el ancho de `image_1` después del escalado, o 2912 cuando no hay ninguna imagen conectada (predeterminado: 0). | INT | Sí | 0 a MAX_RESOLUTION |
-| `height` | Alto de salida en píxeles, redondeado a un múltiplo de 32. 0 usa el alto de `image_1` después del escalado, o 2912 cuando no hay ninguna imagen conectada (predeterminado: 0). | INT | Sí | 0 a MAX_RESOLUTION |
+| `width` | Ancho de salida en píxeles. 0 usa el ancho de `image_1` después del escalado, o 2912 cuando no hay ninguna imagen conectada (predeterminado: 0). | INT | Sí | 0 a MAX_RESOLUTION |
+| `height` | Alto de salida en píxeles. 0 usa el alto de `image_1` después del escalado, o 2912 cuando no hay ninguna imagen conectada (predeterminado: 0). | INT | Sí | 0 a MAX_RESOLUTION |
 | `vae` | El VAE p-h3-image. Obligatorio en cuanto se conecta una ranura de imagen, porque los latentes de referencia se codifican con él. | VAE | No | - |
 | `images` | Grupo ampliable de hasta 9 imágenes, de `image_1` a `image_9`. `image_1` es la imagen que se está editando, las ranuras restantes son referencias. | AUTOGROW | No | 0 a 9 imágenes |
 

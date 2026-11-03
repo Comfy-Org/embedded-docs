@@ -8,8 +8,8 @@ Ce nœud transforme un prompt en conditionnement et en latent vide pour une seul
 | --- | --- | --- | --- | --- |
 | `clip` | Le modèle CLIP p-h3-image utilisé pour tokeniser le prompt, y compris les éventuelles images de référence, et pour encoder le conditionnement. | CLIP | Oui | - |
 | `prompt` | Ce qu'il faut générer, ou comment modifier `image_1`. Lorsque des images sont connectées, une instruction courte est préfixée par `Edit <Picture 1>. `. Une instruction qui commence déjà par `Edit <Picture` ou une consigne d'édition produite par un suréchantillonneur de prompt est utilisée exactement telle qu'elle est écrite. | STRING | Oui | - |
-| `width` | Largeur de sortie en pixels, arrondie à un multiple de 32. 0 utilise la largeur de `image_1` après redimensionnement, ou 2912 lorsqu'aucune image n'est connectée (par défaut : 0). | INT | Oui | 0 à MAX_RESOLUTION |
-| `height` | Hauteur de sortie en pixels, arrondie à un multiple de 32. 0 utilise la hauteur de `image_1` après redimensionnement, ou 2912 lorsqu'aucune image n'est connectée (par défaut : 0). | INT | Oui | 0 à MAX_RESOLUTION |
+| `width` | Largeur de sortie en pixels. 0 utilise la largeur de `image_1` après redimensionnement, ou 2912 lorsqu'aucune image n'est connectée (par défaut : 0). | INT | Oui | 0 à MAX_RESOLUTION |
+| `height` | Hauteur de sortie en pixels. 0 utilise la hauteur de `image_1` après redimensionnement, ou 2912 lorsqu'aucune image n'est connectée (par défaut : 0). | INT | Oui | 0 à MAX_RESOLUTION |
 | `vae` | Le VAE p-h3-image. Requis dès qu'un emplacement d'image est connecté, car les latents de référence sont encodés avec celui-ci. | VAE | Non | - |
 | `images` | Groupe extensible de jusqu'à 9 images, de `image_1` à `image_9`. `image_1` est l'image en cours d'édition, les autres emplacements sont des références. | AUTOGROW | Non | 0 à 9 images |
 

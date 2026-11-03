@@ -8,8 +8,8 @@ Dieser Node wandelt einen Prompt in Conditioning und einen leeren Latent für ei
 | --- | --- | --- | --- | --- |
 | `clip` | Das p-h3-image CLIP-Modell, mit dem der Prompt einschließlich etwaiger Referenzbilder tokenisiert und das Conditioning kodiert wird. | CLIP | Ja | - |
 | `prompt` | Was generiert werden soll oder wie `image_1` bearbeitet werden soll. Wenn Bilder verbunden sind, wird einer kurzen Anweisung `Edit <Picture 1>. ` vorangestellt. Eine Anweisung, die bereits mit `Edit <Picture` beginnt, oder eine Bearbeitungsanweisung, die von einem Prompt-Upsampler erzeugt wurde, wird exakt so verwendet, wie sie geschrieben ist. | STRING | Ja | - |
-| `width` | Ausgabebreite in Pixeln, gerundet auf ein Vielfaches von 32. 0 verwendet die Breite von `image_1` nach der Skalierung oder 2912, wenn kein Bild verbunden ist (Standard: 0). | INT | Ja | 0 bis MAX_RESOLUTION |
-| `height` | Ausgabehöhe in Pixeln, gerundet auf ein Vielfaches von 32. 0 verwendet die Höhe von `image_1` nach der Skalierung oder 2912, wenn kein Bild verbunden ist (Standard: 0). | INT | Ja | 0 bis MAX_RESOLUTION |
+| `width` | Ausgabebreite in Pixeln. 0 verwendet die Breite von `image_1` nach der Skalierung oder 2912, wenn kein Bild verbunden ist (Standard: 0). | INT | Ja | 0 bis MAX_RESOLUTION |
+| `height` | Ausgabehöhe in Pixeln. 0 verwendet die Höhe von `image_1` nach der Skalierung oder 2912, wenn kein Bild verbunden ist (Standard: 0). | INT | Ja | 0 bis MAX_RESOLUTION |
 | `vae` | Das p-h3-image VAE. Erforderlich, sobald ein Bild-Slot verbunden ist, da die Referenz-Latents damit kodiert werden. | VAE | Nein | - |
 | `images` | Erweiterbare Gruppe von bis zu 9 Bildern, `image_1` bis `image_9`. `image_1` ist das Bild, das bearbeitet wird, die übrigen Slots sind Referenzen. | AUTOGROW | Nein | 0 bis 9 Bilder |
 

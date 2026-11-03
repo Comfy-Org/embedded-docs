@@ -8,8 +8,8 @@ This node turns a prompt into conditioning and an empty latent for a single stil
 | --- | --- | --- | --- | --- |
 | `clip` | The p-h3-image CLIP model used to tokenize the prompt, including any reference images, and to encode the conditioning. | CLIP | Yes | - |
 | `prompt` | What to generate, or how to edit `image_1`. With images connected, a short instruction gets `Edit <Picture 1>. ` prepended. An instruction that already starts with `Edit <Picture` or an edit brief produced by a prompt upsampler is used exactly as written. | STRING | Yes | - |
-| `width` | Output width in pixels, rounded to a multiple of 32. 0 uses the width of `image_1` after scaling, or 2912 when no image is connected (default: 0). | INT | Yes | 0 to MAX_RESOLUTION |
-| `height` | Output height in pixels, rounded to a multiple of 32. 0 uses the height of `image_1` after scaling, or 2912 when no image is connected (default: 0). | INT | Yes | 0 to MAX_RESOLUTION |
+| `width` | Output width in pixels. 0 uses the width of `image_1` after scaling, or 2912 when no image is connected (default: 0). | INT | Yes | 0 to MAX_RESOLUTION |
+| `height` | Output height in pixels. 0 uses the height of `image_1` after scaling, or 2912 when no image is connected (default: 0). | INT | Yes | 0 to MAX_RESOLUTION |
 | `vae` | The p-h3-image VAE. Required as soon as an image slot is connected, because the reference latents are encoded with it. | VAE | No | - |
 | `images` | Growable group of up to 9 images, `image_1` through `image_9`. `image_1` is the image being edited, the remaining slots are references. | AUTOGROW | No | 0 to 9 images |
 
