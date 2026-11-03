@@ -2,11 +2,13 @@
 
 Le nœud ByteDance Text to Video génère une vidéo à l'aide des modèles ByteDance via une API, à partir d'une invite de texte. Vous fournissez une invite et choisissez des paramètres tels que le modèle, la résolution, le format d'image et la durée ; le nœud soumet la demande de génération et renvoie la vidéo générée.
 
+**Remarque:** BytePlus arrête le modèle Seedance 1.5 Pro le 11 novembre 2026 : ce nœud ne le propose donc plus et les workflows enregistrés avec lui cessent de fonctionner. Utilisez plutôt `seedance-1-0-pro-250528`, `seedance-1-0-pro-fast-251015` ou le [nœud partenaire Seedance 2.5](https://docs.comfy.org/fr/tutorials/partner-nodes/bytedance/seedance-2-5).
+
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle ByteDance utilisé pour générer la vidéo (défaut : `"seedance-1-0-pro-fast-251015"`). | COMBO | Oui | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"`<br>`"seedance-1-0-pro-fast-251015"` |
+| `model` | Le modèle ByteDance utilisé pour générer la vidéo (défaut : `"seedance-1-0-pro-fast-251015"`). | COMBO | Oui | `"seedance-1-0-pro-250528"`<br>`"seedance-1-0-pro-fast-251015"` |
 | `prompt` | L'invite de texte utilisée pour générer la vidéo. | STRING | Oui | - |
 | `resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | `"480p"`<br>`"720p"`<br>`"1080p"` |
 | `aspect_ratio` | Le rapport d'aspect de la vidéo de sortie. | COMBO | Oui | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` |
@@ -14,16 +16,16 @@ Le nœud ByteDance Text to Video génère une vidéo à l'aide des modèles Byte
 | `seed` | Graine (seed) à utiliser pour la génération (défaut : 0). | INT | Non | 0 à 2147483647 |
 | `camera_fixed` | Spécifie si la caméra doit être fixe. La plateforme ajoute une instruction pour fixer la caméra à votre invite, mais ne garantit pas l'effet réel (défaut : False). | BOOLEAN | Non | - |
 | `filigrane` | Indique s'il faut ajouter un filigrane « généré par IA » à la vidéo (défaut : False). | BOOLEAN | Non | - |
-| `générer_audio` | Ce paramètre est ignoré pour tous les modèles sauf `seedance-1-5-pro-251215` (défaut : False). | BOOLEAN | Non | - |
+| BOOLEAN | Non | - |
 
 **Contraintes des paramètres :**
 
 - Le paramètre `prompt` doit contenir au moins 1 caractère après suppression des espaces blancs.
 - Le paramètre `prompt` ne peut pas contenir les paramètres de texte suivants : « resolution », « ratio », « duration », « seed », « camerafixed », « watermark ».
 - Le nœud construit l'invite finale en ajoutant les paramètres sélectionnés `resolution`, `aspect_ratio`, `duration`, `seed`, `camera_fixed` et `watermark` au texte de l'invite.
-- Le paramètre `duration` est limité à des valeurs comprises entre 3 et 12 secondes. Pour le modèle `seedance-1-5-pro-251215`, la durée minimale prise en charge est de 4 secondes.
+- Le paramètre `duration` est limité à des valeurs comprises entre 3 et 12 secondes.
 - Le paramètre `seed` accepte des valeurs de 0 à 2 147 483 647.
-- Le paramètre `generate_audio` n'a d'effet que lorsque le `model` est défini sur `seedance-1-5-pro-251215` ; il est ignoré pour tous les autres modèles.
+- Le paramètre `generate_audio` est conservé pour compatibilité, mais les modèles restants l'ignorent.
 
 ## Sorties
 
