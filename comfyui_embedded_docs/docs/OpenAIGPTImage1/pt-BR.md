@@ -1,6 +1,6 @@
 # OpenAI GPT Image 2
 
-Gera imagens de forma síncrona por meio do endpoint GPT Image da OpenAI. Ele pode criar novas imagens a partir de um prompt de texto ou editar imagens existentes quando uma imagem de entrada e uma máscara opcional são fornecidas. O nó suporta os modelos `gpt-image-1`, `gpt-image-1.5` e `gpt-image-2` e está marcado como obsoleto.
+Gera imagens de forma síncrona por meio do endpoint GPT Image da OpenAI. Ele pode criar novas imagens a partir de um prompt de texto ou editar imagens existentes quando uma imagem de entrada e uma máscara opcional são fornecidas. O nó suporta os modelos `gpt-image-1.5` e `gpt-image-2` e está marcado como obsoleto.
 
 ## Entradas
 
@@ -14,7 +14,7 @@ Gera imagens de forma síncrona por meio do endpoint GPT Image da OpenAI. Ele po
 | `n` | Quantas imagens gerar (padrão: 1) | INT | Não | 1 a 8 |
 | `imagem` | Imagem de referência opcional para edição de imagem | IMAGE | Não | - |
 | `mask` | Máscara opcional para inpainting (áreas brancas serão substituídas) | MASK | Não | - |
-| `modelo` | Modelo GPT Image a usar (padrão: "gpt-image-2") | COMBO | Não | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" |
+| `modelo` | Modelo GPT Image a usar (padrão: "gpt-image-2") | COMBO | Não | "gpt-image-1.5"<br>"gpt-image-2" |
 | `custom_width` | Usado somente quando `size` é "Custom". Deve ser um múltiplo de 16 (apenas GPT Image 2) (padrão: 1024) | INT | Não | 1024 a 3840, passo 16 |
 | `custom_height` | Usado somente quando `size` é "Custom". Deve ser um múltiplo de 16 (apenas GPT Image 2) (padrão: 1024) | INT | Não | 1024 a 3840, passo 16 |
 
@@ -29,7 +29,7 @@ Gera imagens de forma síncrona por meio do endpoint GPT Image da OpenAI. Ele po
 - A aresta mais longa de uma resolução personalizada deve ser 3840 ou menos.
 - A proporção da resolução personalizada não deve exceder 3:1.
 - O total de pixels da resolução personalizada deve estar entre 655.360 e 8.294.400.
-- Os modelos `gpt-image-1` e `gpt-image-1.5` suportam apenas os tamanhos `auto`, `1024x1024`, `1024x1536` e `1536x1024`. Outros tamanhos são suportados apenas pelo modelo `gpt-image-2`.
+- O modelo `gpt-image-1.5` suporta apenas os tamanhos `auto`, `1024x1024`, `1024x1536` e `1536x1024`. Outros tamanhos são suportados apenas pelo modelo `gpt-image-2`.
 
 ## Saídas
 
@@ -40,4 +40,4 @@ Gera imagens de forma síncrona por meio do endpoint GPT Image da OpenAI. Ele po
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImage1/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `f0f0db7fd2cdf8efd2155522b289aa8f3f939fa79a6e9060b0ffbb2dd20efa1e`
+**Source fingerprint (SHA-256):** `e3aaa8ecbc75c200614d278ed6f8a844e35a24c82bd16acbed0ef520e068500f`

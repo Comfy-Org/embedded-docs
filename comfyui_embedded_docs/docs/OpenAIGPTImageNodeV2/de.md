@@ -1,6 +1,6 @@
 # OpenAI GPT Image 2.5
 
-Dieser Node generiert Bilder mithilfe der GPT Image API von OpenAI. Er unterstützt fünf Modelle – `gpt-image-2.5-flare`, `gpt-image-2.5-sunburst`, `gpt-image-2`, `gpt-image-1.5` und `gpt-image-1` –, ermöglicht das Anhängen von Referenzbildern für die Bildbearbeitung und kann eine Maske verwenden, um anzugeben, welche Teile eines Bildes ersetzt werden sollen.
+Dieser Node generiert Bilder mithilfe der GPT Image API von OpenAI. Er unterstützt vier Modelle – `gpt-image-2.5-flare`, `gpt-image-2.5-sunburst`, `gpt-image-2` und `gpt-image-1.5` –, ermöglicht das Anhängen von Referenzbildern für die Bildbearbeitung und kann eine Maske verwenden, um anzugeben, welche Teile eines Bildes ersetzt werden sollen.
 
 ## Eingaben
 
@@ -10,7 +10,7 @@ Diese Eingaben sind immer sichtbar.
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das zu verwendende OpenAI GPT Image-Modell. Wenn Sie ein Modell auswählen, werden zusätzliche Parameter angezeigt, die für dieses Modell spezifisch sind. | DYNAMIC_COMBO | Ja | `"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"`<br>`"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
+| `model` | Das zu verwendende OpenAI GPT Image-Modell. Wenn Sie ein Modell auswählen, werden zusätzliche Parameter angezeigt, die für dieses Modell spezifisch sind. | DYNAMIC_COMBO | Ja | `"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"`<br>`"gpt-image-2"`<br>`"gpt-image-1.5"` |
 | `prompt` | Text-Prompt für GPT Image (Standard: `""`). | STRING | Ja | N/A |
 | `n` | Wie viele Bilder generiert werden sollen (Standard: `1`). | INT | Ja | 1 bis 8 |
 | `seed` | Seed für Reproduzierbarkeit (Standard: `0`). Noch nicht im Backend implementiert. | INT | Ja | 0 bis 2147483647 |
@@ -43,9 +43,9 @@ Diese Eingaben erscheinen, wenn `model` auf `gpt-image-2` gesetzt ist.
 | `model.images` | Optionale Referenzbilder für die Bildbearbeitung. Bis zu 16 Bilder. Siehe Referenzeingaben für Details. | IMAGE | Nein | 0 bis 16 |
 | `model.mask` | Optionale Maske für Inpainting (weiße Bereiche werden ersetzt). Erfordert genau ein Referenzbild. | MASK | Nein | N/A |
 
-### gpt-image-1.5 und gpt-image-1 Eingaben
+### gpt-image-1.5 Eingaben
 
-Diese Eingaben erscheinen, wenn `model` auf `gpt-image-1.5` oder `gpt-image-1` gesetzt ist. Beide Modelle verwenden denselben Parametersatz.
+Diese Eingaben erscheinen, wenn `model` auf `gpt-image-1.5` gesetzt ist.
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
@@ -81,4 +81,4 @@ Diese Eingaben erscheinen, wenn `model` auf `gpt-image-1.5` oder `gpt-image-1` g
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `9cf1a9fa3e2cd98aff6c42432164ac5e6c55b7bcdc9815043cb359c6968ac172`
+**Source fingerprint (SHA-256):** `fc4fb1421ea45781fa01489cdfdb35324684c728a4df3e7927f0909b08bc9e22`

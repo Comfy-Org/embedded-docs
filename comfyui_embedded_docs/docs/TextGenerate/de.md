@@ -2,6 +2,8 @@
 
 Der TextGenerate-Node verwendet ein CLIP-Modell, um Text basierend auf dem Prompt eines Benutzers zu erzeugen. Optional können Bilder, Video oder Audio als zusätzlicher Kontext verwendet werden, um die Textgenerierung zu steuern. Sie können die Länge der Ausgabe steuern, einen Thinking-Modus für unterstützte Modelle aktivieren und wählen, ob zufälliges Sampling mit verschiedenen Einstellungen verwendet oder Text ohne Sampling generiert wird.
 
+**Hinweis:** Dieser Node ist im Quellcode als veraltet markiert.
+
 ## Eingaben
 
 ### Gemeinsame Eingaben
@@ -46,4 +48,4 @@ Der TextGenerate-Node verwendet ein CLIP-Modell, um Text basierend auf dem Promp
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `e0854b0ce5a41e195a2634f4739c22c7dd0df1f2309cb8a02b506b8791bf3bee`
+**Source fingerprint (SHA-256):** `2ac2ffc673f152cc285e256440239de32fcb2a6c86d13374aedd5dacce7a69ee`

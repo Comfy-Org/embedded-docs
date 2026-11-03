@@ -1,6 +1,6 @@
 # OpenAI GPT Image 2
 
-透過 OpenAI 的 GPT Image 端點同步生成影像。它可以從文字提示詞建立新影像，或在提供輸入影像和選用遮罩時編輯現有影像。此節點支援 `gpt-image-1`、`gpt-image-1.5` 和 `gpt-image-2` 模型，並標記為已棄用。
+透過 OpenAI 的 GPT Image 端點同步生成影像。它可以從文字提示詞建立新影像，或在提供輸入影像和選用遮罩時編輯現有影像。此節點支援 `gpt-image-1.5` 和 `gpt-image-2` 模型，並標記為已棄用。
 
 ## 輸入
 
@@ -14,7 +14,7 @@
 | `數量` | 要生成多少張影像（預設值：1） | INT | 否 | 1 至 8 |
 | `參考影像` | 用於影像編輯的選用參考影像 | IMAGE | 否 | - |
 | `遮罩` | 用於修補的選用遮罩（白色區域將被替換） | MASK | 否 | - |
-| `model` | 要使用的 GPT Image 模型（預設值："gpt-image-2"） | COMBO | 否 | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" |
+| `model` | 要使用的 GPT Image 模型（預設值："gpt-image-2"） | COMBO | 否 | "gpt-image-1.5"<br>"gpt-image-2" |
 | `custom_width` | 僅當 `size` 為 "Custom" 時使用。必須是 16 的倍數（僅限 GPT Image 2）（預設值：1024） | INT | 否 | 1024 至 3840，步進值 16 |
 | `custom_height` | 僅當 `size` 為 "Custom" 時使用。必須是 16 的倍數（僅限 GPT Image 2）（預設值：1024） | INT | 否 | 1024 至 3840，步進值 16 |
 
@@ -29,7 +29,7 @@
 - 自訂解析度的最長邊必須為 3840 或更小。
 - 自訂解析度的長寬比不得超過 3:1。
 - 自訂解析度的總像素數必須介於 655,360 和 8,294,400 之間。
-- `gpt-image-1` 和 `gpt-image-1.5` 模型僅支援 `auto`、`1024x1024`、`1024x1536` 和 `1536x1024` 尺寸。其他尺寸僅由 `gpt-image-2` 模型支援。
+- `gpt-image-1.5` 模型僅支援 `auto`、`1024x1024`、`1024x1536` 和 `1536x1024` 尺寸。其他尺寸僅由 `gpt-image-2` 模型支援。
 
 ## 輸出
 
@@ -40,4 +40,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImage1/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `f0f0db7fd2cdf8efd2155522b289aa8f3f939fa79a6e9060b0ffbb2dd20efa1e`
+**Source fingerprint (SHA-256):** `e3aaa8ecbc75c200614d278ed6f8a844e35a24c82bd16acbed0ef520e068500f`

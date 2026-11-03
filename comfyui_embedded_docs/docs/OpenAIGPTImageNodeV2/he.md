@@ -1,6 +1,6 @@
 # OpenAI GPT Image 2.5
 
-צומת זה יוצר תמונות באמצעות ה-API של GPT Image מבית OpenAI. הוא תומך בחמישה מודלים — `gpt-image-2.5-flare`, `gpt-image-2.5-sunburst`, `gpt-image-2`, `gpt-image-1.5`, ו-`gpt-image-1` — מאפשר לצרף תמונות עזר לעריכת תמונות, ויכול להשתמש במסכה כדי לציין אילו חלקים מהתמונה להחליף.
+צומת זה יוצר תמונות באמצעות ה-API של GPT Image מבית OpenAI. הוא תומך בארבעה מודלים — `gpt-image-2.5-flare`, `gpt-image-2.5-sunburst`, `gpt-image-2`, `gpt-image-1.5` — מאפשר לצרף תמונות עזר לעריכת תמונות, ויכול להשתמש במסכה כדי לציין אילו חלקים מהתמונה להחליף.
 
 ## קלטים
 
@@ -10,7 +10,7 @@
 
 | פרמטר | תיאור | סוג נתון | חובה | טווח |
 | --- | --- | --- | --- | --- |
-| `model` | מודל ה-GPT Image של OpenAI לשימוש. בחירת מודל חושפת פרמטרים נוספים הייחודיים לאותו מודל. | DYNAMIC_COMBO | כן | `"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"`<br>`"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
+| `model` | מודל ה-GPT Image של OpenAI לשימוש. בחירת מודל חושפת פרמטרים נוספים הייחודיים לאותו מודל. | DYNAMIC_COMBO | כן | `"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"`<br>`"gpt-image-2"`<br>`"gpt-image-1.5"` |
 | `prompt` | פרומפט טקסט עבור GPT Image (ברירת מחדל: `""`). | STRING | כן | N/A |
 | `n` | כמה תמונות ליצור (ברירת מחדל: `1`). | INT | כן | 1 עד 8 |
 | `seed` | Seed לשחזוריות (ברירת מחדל: `0`). טרם מיושם בצד השרת. | INT | כן | 0 עד 2147483647 |
@@ -43,9 +43,9 @@
 | `model.images` | תמונות עזר אופציונליות לעריכת תמונות. עד 16 תמונות. ראו קלטי עזר לפרטים. | IMAGE | לא | 0 עד 16 |
 | `model.mask` | מסכה אופציונלית לאינפיינטינג (אזורים לבנים יוחלפו). דורש בדיוק תמונת עזר אחת. | MASK | לא | N/A |
 
-### קלטים של gpt-image-1.5 ו-gpt-image-1
+### קלטים של gpt-image-1.5
 
-קלטים אלו מופיעים כאשר `model` מוגדר ל-`gpt-image-1.5` או `gpt-image-1`. שני המודלים חולקים את אותה קבוצת פרמטרים.
+קלטים אלו מופיעים כאשר `model` מוגדר ל-`gpt-image-1.5`.
 
 | פרמטר | תיאור | סוג נתון | חובה | טווח |
 | --- | --- | --- | --- | --- |
@@ -81,4 +81,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `9cf1a9fa3e2cd98aff6c42432164ac5e6c55b7bcdc9815043cb359c6968ac172`
+**Source fingerprint (SHA-256):** `fc4fb1421ea45781fa01489cdfdb35324684c728a4df3e7927f0909b08bc9e22`

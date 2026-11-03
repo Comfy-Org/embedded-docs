@@ -2,6 +2,8 @@
 
 TextGenerate 节点使用 CLIP 模型根据用户提示词生成文本。它可以选择性地使用图像、视频或音频作为额外上下文来引导文本生成。你可以控制输出长度，为支持的模型启用思考模式，并选择使用带有各种设置的随机采样，还是不使用采样生成文本。
 
+**注意：** 此节点在源代码中已被标记为弃用。
+
 ## 输入
 
 ### 通用输入
@@ -46,4 +48,4 @@ TextGenerate 节点使用 CLIP 模型根据用户提示词生成文本。它可�
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `e0854b0ce5a41e195a2634f4739c22c7dd0df1f2309cb8a02b506b8791bf3bee`
+**Source fingerprint (SHA-256):** `2ac2ffc673f152cc285e256440239de32fcb2a6c86d13374aedd5dacce7a69ee`

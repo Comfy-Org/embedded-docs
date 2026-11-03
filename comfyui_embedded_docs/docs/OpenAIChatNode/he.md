@@ -8,7 +8,7 @@
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | קלטי טקסט למודל, המשמשים ליצירת תגובה (ברירת מחדל: מחרוזת ריקה). | STRING | כן | - |
 | `persist_context` | פרמטר זה מיושן ואין לו השפעה (ברירת מחדל: False). | BOOLEAN | כן | - |
-| `model` | המודל המשמש ליצירת התגובה (ברירת מחדל: `gpt-5`) | COMBO | כן | `gpt-6-astra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`gpt-4.1-nano`<br>`o4-mini`<br>`o3`<br>`o1-pro`<br>`o1` |
+| `model` | המודל המשמש ליצירת התגובה (ברירת מחדל: `gpt-5`) | COMBO | כן | `gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
 | `images` | תמונה/תמונות אופציונליות לשימוש כהקשר עבור המודל. כדי לכלול מספר תמונות, ניתן להשתמש בצומת Batch Images. | IMAGE | לא | - |
 | `files` | קובץ/קבצים אופציונליים לשימוש כהקשר עבור המודל. מקבל קלטים מצומת OpenAI Chat Input Files. | OPENAI_INPUT_FILES | לא | - |
 | `advanced_options` | תצורה אופציונלית עבור המודל. מקבל קלטים מצומת OpenAI Chat Advanced Options. | OPENAI_CHAT_CONFIG | לא | - |
@@ -24,4 +24,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatNode/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `46b4558f1368191e2b4eb68f79e098f289c9eb80e1e05f7a516123c098295f2b`
+**Source fingerprint (SHA-256):** `0a4f23acbe136b6137e163b9b2dce49c93746800ac2a42a29602ee4011a2db72`

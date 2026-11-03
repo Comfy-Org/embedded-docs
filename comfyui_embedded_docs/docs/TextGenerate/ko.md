@@ -2,6 +2,8 @@
 
 TextGenerate 노드는 CLIP 모델을 사용하여 사용자의 프롬프트를 기반으로 텍스트를 생성합니다. 선택적으로 이미지, 비디오 또는 오디오를 추가 컨텍스트로 사용하여 텍스트 생성을 안내할 수 있습니다. 출력 길이를 제어하고, 지원되는 모델에서 사고 모드를 활성화하며, 다양한 설정으로 무작위 샘플링을 사용할지 또는 샘플링 없이 텍스트를 생성할지 선택할 수 있습니다.
 
+**참고:** 이 노드는 소스 코드에서 사용 중단(deprecated)으로 표시되어 있습니다.
+
 ## 입력
 
 ### 공통 입력
@@ -46,4 +48,4 @@ TextGenerate 노드는 CLIP 모델을 사용하여 사용자의 프롬프트를 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `e0854b0ce5a41e195a2634f4739c22c7dd0df1f2309cb8a02b506b8791bf3bee`
+**Source fingerprint (SHA-256):** `2ac2ffc673f152cc285e256440239de32fcb2a6c86d13374aedd5dacce7a69ee`

@@ -1,6 +1,6 @@
 # OpenAI GPT Image 2.5
 
-Bu düğüm, OpenAI'nin GPT Image API'sini kullanarak görüntüler üretir. Beş modeli destekler — `gpt-image-2.5-flare`, `gpt-image-2.5-sunburst`, `gpt-image-2`, `gpt-image-1.5` ve `gpt-image-1` — görüntü düzenleme için referans görüntüler eklemenize olanak tanır ve bir görüntünün hangi bölümlerinin değiştirileceğini belirtmek için maske kullanabilir.
+Bu düğüm, OpenAI'nin GPT Image API'sini kullanarak görüntüler üretir. Dört modeli destekler — `gpt-image-2.5-flare`, `gpt-image-2.5-sunburst`, `gpt-image-2` ve `gpt-image-1.5` — görüntü düzenleme için referans görüntüler eklemenize olanak tanır ve bir görüntünün hangi bölümlerinin değiştirileceğini belirtmek için maske kullanabilir.
 
 ## Girdiler
 
@@ -10,7 +10,7 @@ Bu girdiler her zaman görünür.
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `model` | Kullanılacak OpenAI GPT Image modeli. Bir model seçildiğinde o modele özgü ek parametreler görünür. | DYNAMIC_COMBO | Evet | `"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"`<br>`"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
+| `model` | Kullanılacak OpenAI GPT Image modeli. Bir model seçildiğinde o modele özgü ek parametreler görünür. | DYNAMIC_COMBO | Evet | `"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"`<br>`"gpt-image-2"`<br>`"gpt-image-1.5"` |
 | `istem` | GPT Image için metin istemi (varsayılan: `""`). | STRING | Evet | N/A |
 | `n` | Üretilecek görüntü sayısı (varsayılan: `1`). | INT | Evet | 1 - 8 |
 | `tohum` | Yeniden üretilebilirlik için tohum (varsayılan: `0`). Arka uçta henüz uygulanmadı. | INT | Evet | 0 - 2147483647 |
@@ -43,9 +43,9 @@ Bu girdiler, `model` değeri `gpt-image-2` olarak ayarlandığında görünür.
 | `model.images` | Görüntü düzenleme için isteğe bağlı referans görüntü(ler). En fazla 16 görüntü. Ayrıntılar için Referans Girdileri bölümüne bakın. | IMAGE | Hayır | 0 - 16 |
 | `model.mask` | Inpainting için isteğe bağlı maske (beyaz alanlar değiştirilir). Tam olarak bir referans görüntü gerektirir. | MASK | Hayır | N/A |
 
-### gpt-image-1.5 ve gpt-image-1 Girdileri
+### gpt-image-1.5 Girdileri
 
-Bu girdiler, `model` değeri `gpt-image-1.5` veya `gpt-image-1` olarak ayarlandığında görünür. Her iki model de aynı parametre kümesini paylaşır.
+Bu girdiler, `model` değeri `gpt-image-1.5` olarak ayarlandığında görünür.
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
@@ -81,4 +81,4 @@ Bu girdiler, `model` değeri `gpt-image-1.5` veya `gpt-image-1` olarak ayarland�
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `9cf1a9fa3e2cd98aff6c42432164ac5e6c55b7bcdc9815043cb359c6968ac172`
+**Source fingerprint (SHA-256):** `fc4fb1421ea45781fa01489cdfdb35324684c728a4df3e7927f0909b08bc9e22`

@@ -1,6 +1,6 @@
 # OpenAI GPT Image 2.5
 
-Questo nodo genera immagini usando l'API GPT Image di OpenAI. Supporta cinque modelli — `gpt-image-2.5-flare`, `gpt-image-2.5-sunburst`, `gpt-image-2`, `gpt-image-1.5` e `gpt-image-1` — consente di allegare immagini di riferimento per la modifica delle immagini e può usare una maschera per specificare quali parti di un'immagine sostituire.
+Questo nodo genera immagini usando l'API GPT Image di OpenAI. Supporta quattro modelli — `gpt-image-2.5-flare`, `gpt-image-2.5-sunburst`, `gpt-image-2` e `gpt-image-1.5` — consente di allegare immagini di riferimento per la modifica delle immagini e può usare una maschera per specificare quali parti di un'immagine sostituire.
 
 ## Input
 
@@ -10,7 +10,7 @@ Questi input sono sempre visibili.
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello OpenAI GPT Image da usare. Selezionando un modello vengono rivelati parametri aggiuntivi specifici di quel modello. | DYNAMIC_COMBO | Sì | `"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"`<br>`"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
+| `model` | Il modello OpenAI GPT Image da usare. Selezionando un modello vengono rivelati parametri aggiuntivi specifici di quel modello. | DYNAMIC_COMBO | Sì | `"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"`<br>`"gpt-image-2"`<br>`"gpt-image-1.5"` |
 | `prompt` | Prompt testuale per GPT Image (predefinito: `""`). | STRING | Sì | N/A |
 | `n` | Quante immagini generare (predefinito: `1`). | INT | Sì | da 1 a 8 |
 | `seed` | Seed per la riproducibilità (predefinito: `0`). Non ancora implementato nel backend. | INT | Sì | da 0 a 2147483647 |
@@ -43,9 +43,9 @@ Questi input compaiono quando `model` è impostato su `gpt-image-2`.
 | `model.images` | Immagini di riferimento opzionali per la modifica delle immagini. Fino a 16 immagini. Vedi Input di riferimento per i dettagli. | IMAGE | No | da 0 a 16 |
 | `model.mask` | Maschera opzionale per l'inpainting (le aree bianche verranno sostituite). Richiede esattamente un'immagine di riferimento. | MASK | No | N/A |
 
-### Input di gpt-image-1.5 e gpt-image-1
+### Input di gpt-image-1.5
 
-Questi input compaiono quando `model` è impostato su `gpt-image-1.5` o `gpt-image-1`. Entrambi i modelli condividono lo stesso insieme di parametri.
+Questi input compaiono quando `model` è impostato su `gpt-image-1.5`.
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
@@ -81,4 +81,4 @@ Questi input compaiono quando `model` è impostato su `gpt-image-1.5` o `gpt-ima
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `9cf1a9fa3e2cd98aff6c42432164ac5e6c55b7bcdc9815043cb359c6968ac172`
+**Source fingerprint (SHA-256):** `fc4fb1421ea45781fa01489cdfdb35324684c728a4df3e7927f0909b08bc9e22`

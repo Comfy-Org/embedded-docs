@@ -8,7 +8,7 @@
 |-----------|-------------|-----------|----------|-------|
 | `запрос` | Текстовые входные данные для модели, используемые для генерации ответа (по умолчанию: пустая строка). | STRING | Да | - |
 | `сохранять_контекст` | Этот параметр устарел и не оказывает эффекта (по умолчанию: False). | BOOLEAN | Да | - |
-| `модель` | Модель, используемая для генерации ответа (по умолчанию: `gpt-5`) | COMBO | Да | `gpt-6-astra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`gpt-4.1-nano`<br>`o4-mini`<br>`o3`<br>`o1-pro`<br>`o1` |
+| `модель` | Модель, используемая для генерации ответа (по умолчанию: `gpt-5`) | COMBO | Да | `gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
 | `изображения` | Необязательные изображения, используемые как контекст для модели. Чтобы включить несколько изображений, можно использовать узел Batch Images. | IMAGE | Нет | - |
 | `файлы` | Необязательные файлы, используемые как контекст для модели. Принимает входные данные от узла OpenAI Chat Input Files. | OPENAI_INPUT_FILES | Нет | - |
 | `расширенные_настройки` | Необязательная конфигурация для модели. Принимает входные данные от узла OpenAI Chat Advanced Options. | OPENAI_CHAT_CONFIG | Нет | - |
@@ -24,4 +24,4 @@
 > Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatNode/ru.md)
 
 ---
-**Source fingerprint (SHA-256):** `46b4558f1368191e2b4eb68f79e098f289c9eb80e1e05f7a516123c098295f2b`
+**Source fingerprint (SHA-256):** `0a4f23acbe136b6137e163b9b2dce49c93746800ac2a42a29602ee4011a2db72`

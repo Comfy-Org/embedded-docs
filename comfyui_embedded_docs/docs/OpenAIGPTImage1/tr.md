@@ -1,6 +1,6 @@
 # OpenAI GPT Görüntü 2
 
-OpenAI'nin GPT Image uç noktası aracılığıyla eşzamanlı olarak görüntüler üretir. Bir metin isteminden yeni görüntüler oluşturabilir veya bir giriş görüntüsü ve isteğe bağlı maske sağlandığında mevcut görüntüleri düzenleyebilir. Düğüm `gpt-image-1`, `gpt-image-1.5` ve `gpt-image-2` modellerini destekler ve kullanımdan kaldırılmış olarak işaretlenmiştir.
+OpenAI'nin GPT Image uç noktası aracılığıyla eşzamanlı olarak görüntüler üretir. Bir metin isteminden yeni görüntüler oluşturabilir veya bir giriş görüntüsü ve isteğe bağlı maske sağlandığında mevcut görüntüleri düzenleyebilir. Düğüm `gpt-image-1.5` ve `gpt-image-2` modellerini destekler ve kullanımdan kaldırılmış olarak işaretlenmiştir.
 
 ## Girdiler
 
@@ -14,7 +14,7 @@ OpenAI'nin GPT Image uç noktası aracılığıyla eşzamanlı olarak görüntü
 | `n` | Kaç görüntü üretileceği (varsayılan: 1) | INT | Hayır | 1 - 8 |
 | `görüntü` | Görüntü düzenleme için isteğe bağlı referans görüntüsü | IMAGE | Hayır | - |
 | `maske` | Inpainting için isteğe bağlı maske (beyaz alanlar değiştirilecek) | MASK | Hayır | - |
-| `model` | Kullanılacak GPT Image modeli (varsayılan: "gpt-image-2") | COMBO | Hayır | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" |
+| `model` | Kullanılacak GPT Image modeli (varsayılan: "gpt-image-2") | COMBO | Hayır | "gpt-image-1.5"<br>"gpt-image-2" |
 | `özel_genişlik` | Yalnızca `size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır (yalnızca GPT Image 2) (varsayılan: 1024) | INT | Hayır | 1024 - 3840, adım 16 |
 | `özel_yükseklik` | Yalnızca `size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır (yalnızca GPT Image 2) (varsayılan: 1024) | INT | Hayır | 1024 - 3840, adım 16 |
 
@@ -29,7 +29,7 @@ OpenAI'nin GPT Image uç noktası aracılığıyla eşzamanlı olarak görüntü
 - Özel bir çözünürlüğün en uzun kenarı 3840 veya daha az olmalıdır.
 - Özel çözünürlük en-boy oranı 3:1'i aşmamalıdır.
 - Özel çözünürlüğün toplam piksel sayısı 655.360 ile 8.294.400 arasında olmalıdır.
-- `gpt-image-1` ve `gpt-image-1.5` modelleri yalnızca `auto`, `1024x1024`, `1024x1536` ve `1536x1024` boyutlarını destekler. Diğer boyutlar yalnızca `gpt-image-2` modeli tarafından desteklenir.
+- `gpt-image-1.5` modeli yalnızca `auto`, `1024x1024`, `1024x1536` ve `1536x1024` boyutlarını destekler. Diğer boyutlar yalnızca `gpt-image-2` modeli tarafından desteklenir.
 
 ## Çıktılar
 
@@ -40,4 +40,4 @@ OpenAI'nin GPT Image uç noktası aracılığıyla eşzamanlı olarak görüntü
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImage1/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `f0f0db7fd2cdf8efd2155522b289aa8f3f939fa79a6e9060b0ffbb2dd20efa1e`
+**Source fingerprint (SHA-256):** `e3aaa8ecbc75c200614d278ed6f8a844e35a24c82bd16acbed0ef520e068500f`

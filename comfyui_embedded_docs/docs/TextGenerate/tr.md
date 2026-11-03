@@ -2,6 +2,8 @@
 
 TextGenerate düğümü, kullanıcının istemine dayalı metin oluşturmak için bir CLIP modeli kullanır. Metin oluşturmayı yönlendirmek üzere isteğe bağlı olarak görselleri, videoyu veya sesi ek bağlam olarak kullanabilir. Çıktının uzunluğunu kontrol edebilir, desteklenen modeller için bir düşünme modunu etkinleştirebilir ve çeşitli ayarlarla rastgele örnekleme kullanıp kullanmayacağınızı ya da örnekleme olmadan metin oluşturup oluşturmayacağınızı seçebilirsiniz.
 
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
+
 ## Girdiler
 
 ### Ortak Girdiler
@@ -46,4 +48,4 @@ TextGenerate düğümü, kullanıcının istemine dayalı metin oluşturmak içi
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `e0854b0ce5a41e195a2634f4739c22c7dd0df1f2309cb8a02b506b8791bf3bee`
+**Source fingerprint (SHA-256):** `2ac2ffc673f152cc285e256440239de32fcb2a6c86d13374aedd5dacce7a69ee`

@@ -1,6 +1,6 @@
 # OpenAI GPT Image 2.5
 
-Ce nœud génère des images à l'aide de l'API GPT Image d'OpenAI. Il prend en charge cinq modèles — `gpt-image-2.5-flare`, `gpt-image-2.5-sunburst`, `gpt-image-2`, `gpt-image-1.5` et `gpt-image-1` — permet de joindre des images de référence pour l'édition d'image, et peut utiliser un masque pour spécifier les parties d'une image à remplacer.
+Ce nœud génère des images à l'aide de l'API GPT Image d'OpenAI. Il prend en charge quatre modèles — `gpt-image-2.5-flare`, `gpt-image-2.5-sunburst`, `gpt-image-2` et `gpt-image-1.5` — permet de joindre des images de référence pour l'édition d'image, et peut utiliser un masque pour spécifier les parties d'une image à remplacer.
 
 ## Entrées
 
@@ -10,7 +10,7 @@ Ces entrées sont toujours visibles.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `modèle` | Le modèle OpenAI GPT Image à utiliser. La sélection d'un modèle révèle des paramètres supplémentaires propres à ce modèle. | DYNAMIC_COMBO | Oui | `"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"`<br>`"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
+| `modèle` | Le modèle OpenAI GPT Image à utiliser. La sélection d'un modèle révèle des paramètres supplémentaires propres à ce modèle. | DYNAMIC_COMBO | Oui | `"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"`<br>`"gpt-image-2"`<br>`"gpt-image-1.5"` |
 | `prompt` | Invite textuelle pour GPT Image (valeur par défaut : `""`). | STRING | Oui | N/A |
 | `n` | Nombre d'images à générer (valeur par défaut : `1`). | INT | Oui | 1 à 8 |
 | `graine` | Graine pour la reproductibilité (valeur par défaut : `0`). Pas encore implémentée dans le backend. | INT | Oui | 0 à 2147483647 |
@@ -43,9 +43,9 @@ Ces entrées apparaissent lorsque `model` est défini sur `gpt-image-2`.
 | `model.images` | Image(s) de référence facultative(s) pour l'édition d'image. Jusqu'à 16 images. Voir Entrées de référence pour plus de détails. | IMAGE | Non | 0 à 16 |
 | `model.mask` | Masque facultatif pour l'inpainting (les zones blanches seront remplacées). Nécessite exactement une image de référence. | MASK | Non | N/A |
 
-### Entrées gpt-image-1.5 et gpt-image-1
+### Entrées gpt-image-1.5
 
-Ces entrées apparaissent lorsque `model` est défini sur `gpt-image-1.5` ou `gpt-image-1`. Les deux modèles partagent le même ensemble de paramètres.
+Ces entrées apparaissent lorsque `model` est défini sur `gpt-image-1.5`.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
@@ -81,4 +81,4 @@ Ces entrées apparaissent lorsque `model` est défini sur `gpt-image-1.5` ou `gp
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `9cf1a9fa3e2cd98aff6c42432164ac5e6c55b7bcdc9815043cb359c6968ac172`
+**Source fingerprint (SHA-256):** `fc4fb1421ea45781fa01489cdfdb35324684c728a4df3e7927f0909b08bc9e22`

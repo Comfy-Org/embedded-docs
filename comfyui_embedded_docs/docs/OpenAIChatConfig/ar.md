@@ -9,7 +9,7 @@
 | `الاقتصاص` | استراتيجية الاقتطاع المستخدمة لرد النموذج. auto: إذا تجاوز سياق هذا الرد والردود السابقة حجم نافذة سياق النموذج، فسيقوم النموذج باقتطاع الرد ليتناسب مع نافذة السياق عن طريق إسقاط عناصر الإدخال في منتصف المحادثة. disabled: إذا كان رد النموذج سيتجاوز حجم نافذة السياق لنموذج ما، سيفشل الطلب بخطأ 400 (الافتراضي: "auto") | COMBO | نعم | "auto"<br>"disabled" |
 | `الرموز المخرجة القصوى` | حد أعلى لعدد الرموز التي يمكن إنشاؤها لرد ما، بما في ذلك رموز الإخراج المرئية ورموز الاستدلال (الافتراضي: 4096) | INT | لا | 16 إلى 16384 |
 | `التعليمات` | تعليمات للنموذج حول كيفية إنشاء الرد (إدخال متعدد الأسطر مدعوم) | STRING | لا | - |
-| `reasoning_effort` | مقدار استدلال النموذج قبل الإجابة. يترك "default" الخيار للنموذج. تختلف المستويات المدعومة حسب النموذج: GPT-6 Astra من low إلى max، وGPT-6 Sol/Luna وGPT-5.6 من none إلى max (بدون minimal)، وGPT-5.5 من none إلى xhigh، وGPT-5.5 Pro من medium إلى xhigh، وGPT-5 من minimal إلى high، وسلسلة o من low إلى high؛ ولا يمتلك GPT-4.1 قدرة استدلال. تُرفض المستويات غير المدعومة قبل إرسال الطلب. (الافتراضي: "default") | COMBO | لا | "default"<br>"none"<br>"minimal"<br>"low"<br>"medium"<br>"high"<br>"xhigh"<br>"max" |
+| `reasoning_effort` | مقدار استدلال النموذج قبل الإجابة. يترك "default" الخيار للنموذج. تختلف المستويات المدعومة حسب النموذج: GPT-6 Astra من low إلى max، وGPT-6.1 Sol من low إلى max، وGPT-6.1 Terra من none إلى max، وGPT-6 Sol/Luna وGPT-5.6 من none إلى max (بدون minimal)، وGPT-5.5 من none إلى xhigh، وGPT-5.5 Pro من medium إلى xhigh، وGPT-5 من minimal إلى high، وسلسلة o من low إلى high؛ ولا يمتلك GPT-4.1 قدرة استدلال. تُرفض المستويات غير المدعومة قبل إرسال الطلب. (الافتراضي: "default") | COMBO | لا | "default"<br>"none"<br>"minimal"<br>"low"<br>"medium"<br>"high"<br>"xhigh"<br>"max" |
 
 ملاحظة: على الرغم من أن `top_p` و`temperature` مدرجان كخصائص في مواصفات API، إلا أنهما غير مدعومين لجميع النماذج، ولذلك لا يتم عرضهما كمدخلات.
 
@@ -22,4 +22,4 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `4237ad464230c464223c184eab38c7d707a29ba5f47da04c2ec2034cd4347207`
+**Source fingerprint (SHA-256):** `d282083de3568490e78763688ab01a32bc29759f590544ebce727e31c13b97a0`
