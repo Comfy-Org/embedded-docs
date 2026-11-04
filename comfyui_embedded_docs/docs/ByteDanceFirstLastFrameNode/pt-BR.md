@@ -2,6 +2,8 @@
 
 Este nó gera um vídeo usando um prompt de texto junto com imagens do primeiro e do último quadro. Ele utiliza sua descrição e os dois quadros-chave para criar uma sequência de vídeo completa que faz a transição entre eles. O nó oferece várias opções para controlar a resolução, a proporção de aspecto, a duração e outros parâmetros de geração do vídeo.
 
+**Nota:** Este nó está marcado como obsoleto no código-fonte.
+
 **Nota:** A BytePlus descontinua o modelo Seedance 1.5 Pro em 11 de novembro de 2026, então este nó não o oferece mais e os fluxos salvos com ele param de funcionar. `seedance-1-0-pro-250528` é o único modelo restante neste nó. Para vídeo com áudio e clipes mais longos, use o [nó parceiro Seedance 2.5](https://docs.comfy.org/pt-BR/tutorials/partner-nodes/bytedance/seedance-2-5).
 
 ## Entradas
@@ -31,4 +33,4 @@ Este nó gera um vídeo usando um prompt de texto junto com imagens do primeiro 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceFirstLastFrameNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `ae0f3a34a21baad7f04f6917e98d16dc64496479a050896869ec6693a9a9ebaf`
+**Source fingerprint (SHA-256):** `76f077c215942f164a024b85594e921b5fdb2d667a99ad4de2fe0f1195a15bb8`

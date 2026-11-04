@@ -2,6 +2,8 @@
 
 צומת ByteDance Text to Video יוצר סרטון באמצעות מודלים של ByteDance דרך API בהתבסס על הנחיית טקסט. אתם מספקים הנחיה ובוחרים הגדרות כגון המודל, הרזולוציה, יחס הגובה-רוחב והמשך; הצומת שולח את בקשת היצירה ומחזיר את הסרטון שנוצר.
 
+**הערה:** צומת זה מסומן כמיושן בקוד המקור.
+
 **הערה:** BytePlus תפסיק את מודל Seedance 1.5 Pro ב-11 בנובמבר 2026, ולכן צומת זה כבר לא מציע אותו ותהליכי העבודה שנשמרו איתו מפסיקים לעבוד. השתמשו במקום ב-`seedance-1-0-pro-250528`, ב-`seedance-1-0-pro-fast-251015` או ב[צומת השותף Seedance 2.5](https://docs.comfy.org/he/tutorials/partner-nodes/bytedance/seedance-2-5).
 
 ## קלטים
@@ -36,4 +38,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `83b805b63e59a76cae378b0407b409e1bfe900677ef1e01fc836fede47283eee`
+**Source fingerprint (SHA-256):** `d26d13c99a25bb14a0b1c1f3bae2dea1b30bf35f886331f26ef72e64ca357ef5`

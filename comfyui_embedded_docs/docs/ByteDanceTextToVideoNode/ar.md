@@ -2,6 +2,8 @@
 
 عقدة ByteDance Text to Video لتوليد فيديو باستخدام نماذج ByteDance عبر واجهة برمجة التطبيقات (API) بناءً على موجه نصي. يمكنك تقديم موجه واختيار إعدادات مثل النموذج، الدقة، نسبة الأبعاد، والمدة؛ حيث تُرسل العقدة طلب التوليد وتُرجع الفيديو المُولَّد.
 
+**ملاحظة:** تم وضع علامة على هذه العقدة على أنها مهملة في الكود المصدري.
+
 **ملاحظة:** ستوقف BytePlus نموذج Seedance 1.5 Pro في 11 نوفمبر 2026، لذا لم تعد هذه العقدة توفره وتتوقف سير العمل المحفوظة به عن العمل. استخدم `seedance-1-0-pro-250528` أو `seedance-1-0-pro-fast-251015` أو [عقدة شريك Seedance 2.5](https://docs.comfy.org/ar/tutorials/partner-nodes/bytedance/seedance-2-5) بدلاً منه.
 
 ## المدخلات
@@ -36,4 +38,4 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `83b805b63e59a76cae378b0407b409e1bfe900677ef1e01fc836fede47283eee`
+**Source fingerprint (SHA-256):** `d26d13c99a25bb14a0b1c1f3bae2dea1b30bf35f886331f26ef72e64ca357ef5`

@@ -2,6 +2,8 @@
 
 字节跳动文本转视频节点通过 API 基于文本提示词，使用字节跳动模型生成视频。您提供提示词并选择模型、分辨率、宽高比和时长等设置；该节点会提交生成请求并返回生成的视频。
 
+**注意：** 此节点在源代码中已被标记为弃用。
+
 **注意:** BytePlus 将于 2026 年 11 月 11 日停用 Seedance 1.5 Pro 模型，因此本节点不再提供该模型，保存使用该模型的工作流将无法运行。请改用 `seedance-1-0-pro-250528`、`seedance-1-0-pro-fast-251015`，或 [Seedance 2.5 伙伴节点](https://docs.comfy.org/zh/tutorials/partner-nodes/bytedance/seedance-2-5)。
 
 ## 输入
@@ -36,4 +38,4 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `83b805b63e59a76cae378b0407b409e1bfe900677ef1e01fc836fede47283eee`
+**Source fingerprint (SHA-256):** `d26d13c99a25bb14a0b1c1f3bae2dea1b30bf35f886331f26ef72e64ca357ef5`

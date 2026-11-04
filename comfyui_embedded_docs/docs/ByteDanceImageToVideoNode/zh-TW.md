@@ -2,6 +2,8 @@
 
 ByteDance Image to Video 節點會透過 API 使用 ByteDance 模型，根據輸入的圖片和文字提示來產生影片。它會採用一張起始圖片幀，並建立遵循所提供描述的影片序列。此節點提供各種自訂選項，包括影片解析度、長寬比、持續時間及其他生成參數。
 
+**注意：** 此節點在原始碼中標記為已棄用。
+
 **注意:** BytePlus 將於 2026 年 11 月 11 日停止提供 Seedance 1.5 Pro 模型，因此此節點不再提供該模型，使用該模型儲存的工作流程將無法運作。請改用 `seedance-1-0-pro-250528`、`seedance-1-0-pro-fast-251015` 或 [Seedance 2.5 合作夥伴節點](https://docs.comfy.org/zh-TW/tutorials/partner-nodes/bytedance/seedance-2-5)。
 
 ## 輸入
@@ -30,4 +32,4 @@ ByteDance Image to Video 節點會透過 API 使用 ByteDance 模型，根據輸
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceImageToVideoNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `9f4ad18642533689f9c664f2ca6a4ce8e92c8698754cdf9b6bb2d2735bc80415`
+**Source fingerprint (SHA-256):** `a1841a368e625bd90583e0f0dbdc32369e6701a44cf985f01de8faa3d999b224`

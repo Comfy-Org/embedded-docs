@@ -2,6 +2,8 @@
 
 Ce nœud génère une vidéo à partir d’un prompt texte ainsi que d’images de première et de dernière frame. Il prend votre description et les deux images clés pour créer une séquence vidéo complète qui effectue la transition entre elles. Le nœud offre diverses options pour contrôler la résolution, le rapport d’aspect, la durée et d’autres paramètres de génération de la vidéo.
 
+**Remarque :** Ce nœud est marqué comme obsolète dans le code source.
+
 **Remarque:** BytePlus arrête le modèle Seedance 1.5 Pro le 11 novembre 2026 : ce nœud ne le propose donc plus et les workflows enregistrés avec lui cessent de fonctionner. `seedance-1-0-pro-250528` est le seul modèle restant sur ce nœud. Pour l'audio-vidéo et les clips plus longs, utilisez le [nœud partenaire Seedance 2.5](https://docs.comfy.org/fr/tutorials/partner-nodes/bytedance/seedance-2-5).
 
 ## Entrées
@@ -31,4 +33,4 @@ Ce nœud génère une vidéo à partir d’un prompt texte ainsi que d’images 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceFirstLastFrameNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `ae0f3a34a21baad7f04f6917e98d16dc64496479a050896869ec6693a9a9ebaf`
+**Source fingerprint (SHA-256):** `76f077c215942f164a024b85594e921b5fdb2d667a99ad4de2fe0f1195a15bb8`

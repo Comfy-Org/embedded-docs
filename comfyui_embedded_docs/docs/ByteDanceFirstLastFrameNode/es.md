@@ -2,6 +2,8 @@
 
 Este nodo genera un video usando un prompt de texto junto con imágenes del primer y último fotograma. Toma tu descripción y los dos fotogramas clave para crear una secuencia de video completa que realiza una transición entre ellos. El nodo proporciona varias opciones para controlar la resolución, la relación de aspecto, la duración y otros parámetros de generación del video.
 
+**Nota:** Este nodo está marcado como obsoleto en el código fuente.
+
 **Nota:** BytePlus cerrará el modelo Seedance 1.5 Pro el 11 de noviembre de 2026, así que este nodo ya no lo ofrece y los flujos guardados con ese modelo dejan de funcionar. `seedance-1-0-pro-250528` es el único modelo que queda en este nodo. Para audio y clips más largos, usa el [nodo de la asociación Seedance 2.5](https://docs.comfy.org/es/tutorials/partner-nodes/bytedance/seedance-2-5).
 
 ## Entradas
@@ -31,4 +33,4 @@ Este nodo genera un video usando un prompt de texto junto con imágenes del prim
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceFirstLastFrameNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `ae0f3a34a21baad7f04f6917e98d16dc64496479a050896869ec6693a9a9ebaf`
+**Source fingerprint (SHA-256):** `76f077c215942f164a024b85594e921b5fdb2d667a99ad4de2fe0f1195a15bb8`

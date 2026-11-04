@@ -2,6 +2,8 @@
 
 此節點使用文字提示詞以及第一幀和最後一幀影像來生成影片。它會根據你的描述與這兩個關鍵幀，建立一段在它們之間轉場的完整影片序列。此節點提供多種選項，可控制影片的解析度、長寬比、時長與其他生成參數。
 
+**注意：** 此節點在原始碼中標記為已棄用。
+
 **注意:** BytePlus 將於 2026 年 11 月 11 日停止提供 Seedance 1.5 Pro 模型，因此此節點不再提供該模型，使用該模型儲存的工作流程將無法運作。`seedance-1-0-pro-250528` 是此節點僅剩的模型。若需要音訊與較長片段，請使用 [Seedance 2.5 合作夥伴節點](https://docs.comfy.org/zh-TW/tutorials/partner-nodes/bytedance/seedance-2-5)。
 
 ## 輸入
@@ -31,4 +33,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceFirstLastFrameNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `ae0f3a34a21baad7f04f6917e98d16dc64496479a050896869ec6693a9a9ebaf`
+**Source fingerprint (SHA-256):** `76f077c215942f164a024b85594e921b5fdb2d667a99ad4de2fe0f1195a15bb8`

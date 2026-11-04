@@ -2,6 +2,8 @@
 
 Le nœud ByteDance Text to Video génère une vidéo à l'aide des modèles ByteDance via une API, à partir d'une invite de texte. Vous fournissez une invite et choisissez des paramètres tels que le modèle, la résolution, le format d'image et la durée ; le nœud soumet la demande de génération et renvoie la vidéo générée.
 
+**Remarque :** Ce nœud est marqué comme obsolète dans le code source.
+
 **Remarque:** BytePlus arrête le modèle Seedance 1.5 Pro le 11 novembre 2026 : ce nœud ne le propose donc plus et les workflows enregistrés avec lui cessent de fonctionner. Utilisez plutôt `seedance-1-0-pro-250528`, `seedance-1-0-pro-fast-251015` ou le [nœud partenaire Seedance 2.5](https://docs.comfy.org/fr/tutorials/partner-nodes/bytedance/seedance-2-5).
 
 ## Entrées
@@ -36,4 +38,4 @@ Le nœud ByteDance Text to Video génère une vidéo à l'aide des modèles Byte
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `83b805b63e59a76cae378b0407b409e1bfe900677ef1e01fc836fede47283eee`
+**Source fingerprint (SHA-256):** `d26d13c99a25bb14a0b1c1f3bae2dea1b30bf35f886331f26ef72e64ca357ef5`
