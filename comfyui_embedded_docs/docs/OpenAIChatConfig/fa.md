@@ -9,7 +9,7 @@
 | `truncation` | راهبرد برش برای پاسخ مدل. auto: اگر زمینه این پاسخ و پاسخ‌های قبلی از اندازه پنجره زمینه مدل فراتر رود، مدل پاسخ را با حذف آیتم‌های ورودی در میانه گفتگو برش می‌دهد تا در پنجره زمینه جا شود. disabled: اگر پاسخ مدل از اندازه پنجره زمینه مدل فراتر رود، درخواست با خطای 400 شکست می‌خورد (پیش‌فرض: "auto") | COMBO | بله | "auto"<br>"disabled" |
 | `max_output_tokens` | حد بالایی برای تعداد توکن‌هایی که می‌توان برای یک پاسخ تولید کرد، شامل توکن‌های خروجی قابل‌مشاهده و توکن‌های استدلال (پیش‌فرض: 4096) | INT | خیر | 16 تا 16384 |
 | `instructions` | دستورالعمل‌هایی برای مدل درباره نحوه تولید پاسخ (ورودی چندخطی پشتیبانی می‌شود) | STRING | خیر | - |
-| `reasoning_effort` | میزان استدلال مدل پیش از پاسخ‌دادن. "default" انتخاب را به مدل واگذار می‌کند. سطوح پشتیبانی‌شده برای هر مدل متفاوت است: GPT-6 Astra low-max، GPT-6 Sol/Luna و GPT-5.6 none-max (بدون minimal)، GPT-5.5 none-xhigh، GPT-5.5 Pro medium-xhigh، GPT-5 minimal-high، o-series low-high؛ GPT-4.1 استدلال ندارد. سطوح پشتیبانی‌نشده پیش از ارسال درخواست رد می‌شوند. (پیش‌فرض: "default") | COMBO | خیر | "default"<br>"none"<br>"minimal"<br>"low"<br>"medium"<br>"high"<br>"xhigh"<br>"max" |
+| `reasoning_effort` | میزان استدلال مدل پیش از پاسخ‌دادن. "default" انتخاب را به مدل واگذار می‌کند. سطوح پشتیبانی‌شده برای هر مدل متفاوت است: GPT-6 Astra low-max، GPT-6.1 Sol low-max، GPT-6.1 Terra none-max، GPT-6 Sol/Luna و GPT-5.6 none-max (بدون minimal)، GPT-5.5 none-xhigh، GPT-5.5 Pro medium-xhigh، GPT-5 minimal-high، o-series low-high؛ GPT-4.1 استدلال ندارد. سطوح پشتیبانی‌نشده پیش از ارسال درخواست رد می‌شوند. (پیش‌فرض: "default") | COMBO | خیر | "default"<br>"none"<br>"minimal"<br>"low"<br>"medium"<br>"high"<br>"xhigh"<br>"max" |
 
 توجه: هرچند `top_p` و `temperature` به‌عنوان ویژگی در مشخصات API فهرست شده‌اند، برای همه مدل‌ها پشتیبانی نمی‌شوند و بنابراین به‌عنوان ورودی در دسترس قرار نمی‌گیرند.
 
@@ -22,4 +22,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `4237ad464230c464223c184eab38c7d707a29ba5f47da04c2ec2034cd4347207`
+**Source fingerprint (SHA-256):** `d282083de3568490e78763688ab01a32bc29759f590544ebce727e31c13b97a0`

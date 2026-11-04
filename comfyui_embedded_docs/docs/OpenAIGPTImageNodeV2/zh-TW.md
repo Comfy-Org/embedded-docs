@@ -1,6 +1,6 @@
 # OpenAI GPT Image 2.5
 
-此節點使用 OpenAI 的 GPT Image API 生成影像。它支援五種模型 — `gpt-image-2.5-flare`、`gpt-image-2.5-sunburst`、`gpt-image-2`、`gpt-image-1.5` 和 `gpt-image-1` — 可讓您附加參考影像以進行影像編輯，並可使用遮罩指定要取代影像的哪些部分。
+此節點使用 OpenAI 的 GPT Image API 生成影像。它支援四種模型 — `gpt-image-2.5-flare`、`gpt-image-2.5-sunburst`、`gpt-image-2` 和 `gpt-image-1.5` — 可讓您附加參考影像以進行影像編輯，並可使用遮罩指定要取代影像的哪些部分。
 
 ## 輸入
 
@@ -10,7 +10,7 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `模型` | 要使用的 OpenAI GPT Image 模型。選擇模型後會顯示該模型特有的額外參數。 | DYNAMIC_COMBO | 是 | `"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"`<br>`"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
+| `模型` | 要使用的 OpenAI GPT Image 模型。選擇模型後會顯示該模型特有的額外參數。 | DYNAMIC_COMBO | 是 | `"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"`<br>`"gpt-image-2"`<br>`"gpt-image-1.5"` |
 | `提示詞` | GPT Image 的文字提示（預設值：`""`）。 | STRING | 是 | N/A |
 | `數量` | 要生成多少張影像（預設值：`1`）。 | INT | 是 | 1 至 8 |
 | `種子` | 用於重現性的種子（預設值：`0`）。後端尚未實作。 | INT | 是 | 0 至 2147483647 |
@@ -43,9 +43,9 @@
 | `model.images` | 用於影像編輯的選用參考影像。最多 16 張影像。詳情請參閱參考輸入。 | IMAGE | 否 | 0 至 16 |
 | `model.mask` | 用於修補的選用遮罩（白色區域將被取代）。必須恰好有一張參考影像。 | MASK | 否 | N/A |
 
-### gpt-image-1.5 和 gpt-image-1 輸入
+### gpt-image-1.5 輸入
 
-當 `model` 設為 `gpt-image-1.5` 或 `gpt-image-1` 時會顯示這些輸入。兩個模型共用相同的參數集。
+當 `model` 設為 `gpt-image-1.5` 時會顯示這些輸入。
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
@@ -81,4 +81,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `9cf1a9fa3e2cd98aff6c42432164ac5e6c55b7bcdc9815043cb359c6968ac172`
+**Source fingerprint (SHA-256):** `fc4fb1421ea45781fa01489cdfdb35324684c728a4df3e7927f0909b08bc9e22`

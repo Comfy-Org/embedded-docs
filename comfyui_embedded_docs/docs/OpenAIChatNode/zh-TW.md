@@ -8,7 +8,7 @@
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | 提供給模型的文字輸入，用於產生回應（預設：空字串）。 | STRING | 是 | - |
 | `persist_context` | 此參數已棄用且沒有任何作用（預設：False）。 | BOOLEAN | 是 | - |
-| `model` | 用於產生回應的模型（預設：`gpt-5`） | COMBO | 是 | `gpt-6-astra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`gpt-4.1-nano`<br>`o4-mini`<br>`o3`<br>`o1-pro`<br>`o1` |
+| `model` | 用於產生回應的模型（預設：`gpt-5`） | COMBO | 是 | `gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
 | `images` | 可選的圖像，用作模型的上下文。若要包含多張圖像，可以使用 Batch Images 節點。 | IMAGE | 否 | - |
 | `files` | 可選的檔案，用作模型的上下文。接受來自 OpenAI Chat Input Files 節點的輸入。 | OPENAI_INPUT_FILES | 否 | - |
 | `advanced_options` | 模型的選用設定。接受來自 OpenAI Chat Advanced Options 節點的輸入。 | OPENAI_CHAT_CONFIG | 否 | - |
@@ -24,4 +24,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `46b4558f1368191e2b4eb68f79e098f289c9eb80e1e05f7a516123c098295f2b`
+**Source fingerprint (SHA-256):** `0a4f23acbe136b6137e163b9b2dce49c93746800ac2a42a29602ee4011a2db72`

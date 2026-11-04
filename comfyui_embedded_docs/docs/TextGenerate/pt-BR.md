@@ -2,6 +2,8 @@
 
 O nó TextGenerate usa um modelo CLIP para criar texto com base no prompt do usuário. Ele pode, opcionalmente, usar imagens, vídeo ou áudio como contexto adicional para orientar a geração de texto. Você pode controlar o comprimento da saída, ativar um modo de pensamento para modelos compatíveis e escolher se deve usar amostragem aleatória com várias configurações ou gerar texto sem amostragem.
 
+**Nota:** Este nó está marcado como obsoleto no código-fonte.
+
 ## Entradas
 
 ### Entradas comuns
@@ -46,4 +48,4 @@ O nó TextGenerate usa um modelo CLIP para criar texto com base no prompt do usu
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `e0854b0ce5a41e195a2634f4739c22c7dd0df1f2309cb8a02b506b8791bf3bee`
+**Source fingerprint (SHA-256):** `2ac2ffc673f152cc285e256440239de32fcb2a6c86d13374aedd5dacce7a69ee`

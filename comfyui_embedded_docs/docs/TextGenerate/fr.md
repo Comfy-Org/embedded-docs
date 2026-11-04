@@ -2,6 +2,8 @@
 
 Le nœud TextGenerate utilise un modèle CLIP pour créer du texte à partir du prompt d'un utilisateur. Il peut éventuellement utiliser des images, des vidéos ou de l'audio comme contexte supplémentaire pour guider la génération de texte. Vous pouvez contrôler la longueur de la sortie, activer un mode de réflexion pour les modèles pris en charge, et choisir d'utiliser un échantillonnage aléatoire avec divers réglages ou de générer du texte sans échantillonnage.
 
+**Remarque :** Ce nœud est marqué comme obsolète dans le code source.
+
 ## Entrées
 
 ### Entrées communes
@@ -46,4 +48,4 @@ Le nœud TextGenerate utilise un modèle CLIP pour créer du texte à partir du 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `e0854b0ce5a41e195a2634f4739c22c7dd0df1f2309cb8a02b506b8791bf3bee`
+**Source fingerprint (SHA-256):** `2ac2ffc673f152cc285e256440239de32fcb2a6c86d13374aedd5dacce7a69ee`

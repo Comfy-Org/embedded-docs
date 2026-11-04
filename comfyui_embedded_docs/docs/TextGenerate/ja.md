@@ -2,6 +2,8 @@
 
 TextGenerate ノードは、CLIP モデルを使用してユーザーのプロンプトに基づいたテキストを生成します。オプションで画像、動画、または音声を追加のコンテキストとして使用し、テキスト生成を誘導できます。出力の長さを制御したり、対応モデルではシンキングモードを有効にしたり、さまざまな設定を伴うランダムサンプリングを使用するか、サンプリングなしでテキストを生成するかを選択できます。
 
+**注：** このノードはソースコード上で非推奨としてマークされています。
+
 ## 入力
 
 ### 共通入力
@@ -46,4 +48,4 @@ TextGenerate ノードは、CLIP モデルを使用してユーザーのプロ�
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `e0854b0ce5a41e195a2634f4739c22c7dd0df1f2309cb8a02b506b8791bf3bee`
+**Source fingerprint (SHA-256):** `2ac2ffc673f152cc285e256440239de32fcb2a6c86d13374aedd5dacce7a69ee`
