@@ -2,11 +2,13 @@
 
 O nó ByteDance Text to Video gera um vídeo usando modelos ByteDance por meio de uma API com base em um prompt de texto. Você fornece um prompt e escolhe configurações como modelo, resolução, proporção de aspecto e duração; o nó envia a solicitação de geração e retorna o vídeo gerado.
 
+**Nota:** A BytePlus descontinua o modelo Seedance 1.5 Pro em 11 de novembro de 2026, então este nó não o oferece mais e os fluxos salvos com ele param de funcionar. Use `seedance-1-0-pro-250528`, `seedance-1-0-pro-fast-251015` ou o [nó parceiro Seedance 2.5](https://docs.comfy.org/pt-BR/tutorials/partner-nodes/bytedance/seedance-2-5).
+
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo ByteDance usado para gerar o vídeo (padrão: `"seedance-1-0-pro-fast-251015"`). | COMBO | Sim | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"`<br>`"seedance-1-0-pro-fast-251015"` |
+| `model` | O modelo ByteDance usado para gerar o vídeo (padrão: `"seedance-1-0-pro-fast-251015"`). | COMBO | Sim | `"seedance-1-0-pro-250528"`<br>`"seedance-1-0-pro-fast-251015"` |
 | `prompt` | O prompt de texto usado para gerar o vídeo. | STRING | Sim | - |
 | `resolution` | A resolução do vídeo de saída. | COMBO | Sim | `"480p"`<br>`"720p"`<br>`"1080p"` |
 | `aspect_ratio` | A proporção de aspecto do vídeo de saída. | COMBO | Sim | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` |
@@ -14,16 +16,16 @@ O nó ByteDance Text to Video gera um vídeo usando modelos ByteDance por meio d
 | `seed` | Semente a ser usada para a geração (padrão: 0). | INT | Não | 0 a 2147483647 |
 | `camera_fixed` | Especifica se a câmera deve ser fixada. A plataforma acrescenta uma instrução para fixar a câmera ao seu prompt, mas não garante o efeito real (padrão: False). | BOOLEAN | Não | - |
 | `watermark` | Se deve adicionar uma marca d'água "gerado por IA" ao vídeo (padrão: False). | BOOLEAN | Não | - |
-| `generate_audio` | Este parâmetro é ignorado para qualquer modelo, exceto `seedance-1-5-pro-251215` (padrão: False). | BOOLEAN | Não | - |
+| `generate_audio` | Adiciona uma faixa de áudio gerada por IA. Os modelos restantes ignoram esta entrada (padrão: False). | BOOLEAN | Não | - |
 
 **Restrições dos Parâmetros:**
 
 - O parâmetro `prompt` deve conter pelo menos 1 caractere após a remoção de espaços em branco.
 - O parâmetro `prompt` não pode conter os seguintes parâmetros de texto: "resolution", "ratio", "duration", "seed", "camerafixed", "watermark".
 - O nó constrói o prompt final acrescentando as configurações selecionadas de `resolution`, `aspect_ratio`, `duration`, `seed`, `camera_fixed` e `watermark` ao texto do prompt.
-- O parâmetro `duration` é limitado a valores entre 3 e 12 segundos. Para o modelo `seedance-1-5-pro-251215`, a duração mínima suportada é de 4 segundos.
+- O parâmetro `duration` é limitado a valores entre 3 e 12 segundos.
 - O parâmetro `seed` aceita valores de 0 a 2.147.483.647.
-- O parâmetro `generate_audio` só tem efeito quando o `model` está definido como `seedance-1-5-pro-251215`; ele é ignorado para todos os outros modelos.
+- O parâmetro `generate_audio` é aceito por compatibilidade, mas os modelos restantes o ignoram.
 
 ## Saídas
 
