@@ -1,6 +1,6 @@
 # Mesh'i Yeniden Oluştur (Dar Bant DC)
 
-Remesh Mesh, orijinal yüzeyin çevresindeki dar bantlı bir mesafe alanını örnekleyerek ve bunu Dual Contouring ile çıkararak bir ağı temiz, tekdüze bir mozaikleme ile yeniden oluşturur. Bu, dağınık, manifold olmayan veya kendiyle kesişen topolojiyi normalleştirir ve tam bir yüz sayısına ulaşmak için Decimate Mesh'ten önce çalıştırılmak üzere tasarlanmıştır. İşleme etkin hesaplama aygıtında çalışır ve çıktı ağı kaynaklanmış kalır. 0.51'i aşan veya 0.5'ten az yer kaplayan ağlar önce [-0.5, 0.5] küpüne sığdırılır, ardından özgün ölçeğine geri eşlenir.
+Remesh Mesh, orijinal yüzeyin çevresindeki dar bantlı bir mesafe alanını örnekleyerek ve bunu Dual Contouring ile çıkararak bir ağı temiz, tekdüze bir mozaikleme ile yeniden oluşturur. Bu, dağınık, manifold olmayan veya kendiyle kesişen topolojiyi normalleştirir ve tam bir yüz sayısına ulaşmak için Decimate Mesh'ten önce çalıştırılmak üzere tasarlanmıştır. İşleme etkin hesaplama aygıtında çalışır ve çıktı ağı kaynaklanmış kalır. Çıkarma öncesinde, herhangi bir köşe koordinatının mutlak değeri 0.51'i aşıyorsa veya sınırlayıcı kutunun en uzun kenarı 0.5'ten küçükse, ağ [-0.5, 0.5] küpüne sığdırılır ve ardından özgün ölçeğine geri eşlenir.
 
 ## Girdiler
 

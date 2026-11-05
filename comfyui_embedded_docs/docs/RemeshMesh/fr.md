@@ -1,6 +1,6 @@
 # Re-maillage du maillage (DC à bande étroite)
 
-Remesh Mesh reconstruit un maillage avec une tessellation propre et uniforme en échantillonnant un champ de distance à bande étroite autour de la surface d'origine et en l'extrayant avec Dual Contouring. Cela normalise une topologie désordonnée, non-manifold ou auto-intersectée, et est destiné à être exécuté avant Decimate Mesh pour atteindre un nombre exact de faces. Le traitement s'exécute sur le périphérique de calcul actif et le maillage de sortie reste soudé. Les maillages qui dépassent 0,51 ou couvrent moins de 0,5 sont d'abord ajustés dans le cube [-0,5 ; 0,5], puis remis à leur échelle d'origine.
+Remesh Mesh reconstruit un maillage avec une tessellation propre et uniforme en échantillonnant un champ de distance à bande étroite autour de la surface d'origine et en l'extrayant avec Dual Contouring. Cela normalise une topologie désordonnée, non-manifold ou auto-intersectée, et est destiné à être exécuté avant Decimate Mesh pour atteindre un nombre exact de faces. Le traitement s'exécute sur le périphérique de calcul actif et le maillage de sortie reste soudé. Avant l'extraction, si la valeur absolue d'une coordonnée de sommet dépasse 0,51, ou si le côté le plus long de la boîte englobante mesure moins de 0,5, le maillage est ajusté dans le cube [-0,5 ; 0,5], puis remis à son échelle d'origine.
 
 ## Entrées
 

@@ -1,6 +1,6 @@
 # Mesh neu vernetzen (Narrow-Band DC)
 
-Remesh Mesh vernetzt ein Mesh mit einer sauberen, gleichmäßigen Tessellierung neu, indem ein Schmalband-Distanzfeld um die ursprüngliche Oberfläche abgetastet und mit Dual Contouring extrahiert wird. Dadurch wird unordentliche, nicht-mannigfaltige oder selbstschneidende Topologie normalisiert, und der Node ist dafür gedacht, vor Decimate Mesh ausgeführt zu werden, um eine exakte Flächenanzahl zu erreichen. Die Verarbeitung läuft auf dem aktiven Compute-Gerät und das Ausgabe-Mesh bleibt verschweißt. Meshes, die über 0.51 hinausreichen oder weniger als 0.5 umfassen, werden zuerst in den Würfel [-0.5, 0.5] eingepasst und danach zurück skaliert.
+Remesh Mesh vernetzt ein Mesh mit einer sauberen, gleichmäßigen Tessellierung neu, indem ein Schmalband-Distanzfeld um die ursprüngliche Oberfläche abgetastet und mit Dual Contouring extrahiert wird. Dadurch wird unordentliche, nicht-mannigfaltige oder selbstschneidende Topologie normalisiert, und der Node ist dafür gedacht, vor Decimate Mesh ausgeführt zu werden, um eine exakte Flächenanzahl zu erreichen. Die Verarbeitung läuft auf dem aktiven Compute-Gerät und das Ausgabe-Mesh bleibt verschweißt. Vor der Extraktion wird das Mesh in den Würfel [-0.5, 0.5] eingepasst und danach zurück skaliert, wenn eine Vertex-Koordinate betragsmäßig über 0.51 liegt oder die längste Seite der Bounding-Box unter 0.5 ist.
 
 ## Eingaben
 

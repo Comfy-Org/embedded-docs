@@ -1,6 +1,6 @@
 # Remesh Mesh (Narrow-Band DC)
 
-Remesh Mesh reconstrói uma malha com uma tesselação limpa e uniforme, amostrando um campo de distância de banda estreita ao redor da superfície original e extraindo-o com Dual Contouring. Isso normaliza topologias bagunçadas, não-manifold ou com autointerseção, e deve ser executado antes de Decimate Mesh para alcançar uma contagem exata de faces. O processamento é executado no dispositivo de computação ativo e a malha de saída permanece soldada. Malhas que passam de 0.51 ou ocupam menos de 0.5 são ajustadas primeiro ao cubo [-0.5, 0.5] e depois mapeadas de volta à escala original.
+Remesh Mesh reconstrói uma malha com uma tesselação limpa e uniforme, amostrando um campo de distância de banda estreita ao redor da superfície original e extraindo-o com Dual Contouring. Isso normaliza topologias bagunçadas, não-manifold ou com autointerseção, e deve ser executado antes de Decimate Mesh para alcançar uma contagem exata de faces. O processamento é executado no dispositivo de computação ativo e a malha de saída permanece soldada. Antes da extração, se o valor absoluto de alguma coordenada de vértice passar de 0.51, ou o lado mais longo da caixa delimitadora tiver menos de 0.5, a malha é ajustada ao cubo [-0.5, 0.5] e depois mapeada de volta à escala original.
 
 ## Entradas
 
