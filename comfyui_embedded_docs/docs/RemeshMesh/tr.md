@@ -1,6 +1,6 @@
 # Mesh'i Yeniden Oluştur (Dar Bant DC)
 
-Remesh Mesh, orijinal yüzeyin çevresindeki dar bantlı bir mesafe alanını örnekleyerek ve bunu Dual Contouring ile çıkararak bir ağı temiz, tekdüze bir mozaikleme ile yeniden oluşturur. Bu, dağınık, manifold olmayan veya kendiyle kesişen topolojiyi normalleştirir ve tam bir yüz sayısına ulaşmak için Decimate Mesh'ten önce çalıştırılmak üzere tasarlanmıştır. İşleme etkin hesaplama aygıtında çalışır ve çıktı ağı kaynaklanmış kalır.
+Remesh Mesh, orijinal yüzeyin çevresindeki dar bantlı bir mesafe alanını örnekleyerek ve bunu Dual Contouring ile çıkararak bir ağı temiz, tekdüze bir mozaikleme ile yeniden oluşturur. Bu, dağınık, manifold olmayan veya kendiyle kesişen topolojiyi normalleştirir ve tam bir yüz sayısına ulaşmak için Decimate Mesh'ten önce çalıştırılmak üzere tasarlanmıştır. İşleme etkin hesaplama aygıtında çalışır ve çıktı ağı kaynaklanmış kalır. 0.51'i aşan veya 0.5'ten az yer kaplayan ağlar önce [-0.5, 0.5] küpüne sığdırılır, ardından özgün ölçeğine geri eşlenir.
 
 ## Girdiler
 
@@ -57,4 +57,4 @@ Not: `qef` seçeneği, seçilen moda bağlı olarak farklı bir varsayılana sah
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RemeshMesh/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d2869c681e0485f5946a53f0582188ded2183ecd741ea1ff6a591932b18b5abe`
+**Source fingerprint (SHA-256):** `3d164c3177ac427025ab8dd33df7bc2afe8c10f15c45a477b2f79bf34967124f`

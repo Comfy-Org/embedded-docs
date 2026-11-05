@@ -1,6 +1,6 @@
 # Rigenera mesh (DC a banda stretta)
 
-Remesh Mesh ricostruisce una mesh con una tassellatura pulita e uniforme campionando un campo di distanza a banda stretta attorno alla superficie originale ed estraendolo con Dual Contouring. Questo normalizza topologie disordinate, non-manifold o auto-intersecanti ed è pensato per essere eseguito prima di Decimate Mesh per raggiungere un numero esatto di facce. L'elaborazione viene eseguita sul dispositivo di calcolo attivo e la mesh di output rimane saldata.
+Remesh Mesh ricostruisce una mesh con una tassellatura pulita e uniforme campionando un campo di distanza a banda stretta attorno alla superficie originale ed estraendolo con Dual Contouring. Questo normalizza topologie disordinate, non-manifold o auto-intersecanti ed è pensato per essere eseguito prima di Decimate Mesh per raggiungere un numero esatto di facce. L'elaborazione viene eseguita sul dispositivo di calcolo attivo e la mesh di output rimane saldata. Le mesh che superano 0.51 o si estendono per meno di 0.5 vengono prima adattate al cubo [-0.5, 0.5] e poi riportate alla scala originale.
 
 ## Input
 
@@ -57,4 +57,4 @@ Nota: l'opzione `qef` ha un valore predefinito diverso a seconda della modalità
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RemeshMesh/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `d2869c681e0485f5946a53f0582188ded2183ecd741ea1ff6a591932b18b5abe`
+**Source fingerprint (SHA-256):** `3d164c3177ac427025ab8dd33df7bc2afe8c10f15c45a477b2f79bf34967124f`
