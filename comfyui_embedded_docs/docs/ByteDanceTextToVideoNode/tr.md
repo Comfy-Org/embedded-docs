@@ -2,6 +2,8 @@
 
 ByteDance Text to Video düğümü, ByteDance modellerini kullanarak bir API aracılığıyla metin istemine dayalı bir video oluşturur. Bir istem sağlarsınız ve model, çözünürlük, en boy oranı ve süre gibi ayarları seçersiniz; düğüm, üretim isteğini gönderir ve oluşturulan videoyu döndürür.
 
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
+
 **Not:** BytePlus, Seedance 1.5 Pro modelini 11 Kasım 2026'da kapatıyor; bu nedenle bu düğüm artık onu sunmuyor ve onunla kaydedilen iş akışları çalışmayı durduruyor. Bunun yerine `seedance-1-0-pro-250528`, `seedance-1-0-pro-fast-251015` veya [Seedance 2.5 iş ortağı düğümü](https://docs.comfy.org/tr/tutorials/partner-nodes/bytedance/seedance-2-5) kullanın.
 
 ## Girdiler
@@ -36,4 +38,4 @@ ByteDance Text to Video düğümü, ByteDance modellerini kullanarak bir API ara
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `83b805b63e59a76cae378b0407b409e1bfe900677ef1e01fc836fede47283eee`
+**Source fingerprint (SHA-256):** `d26d13c99a25bb14a0b1c1f3bae2dea1b30bf35f886331f26ef72e64ca357ef5`

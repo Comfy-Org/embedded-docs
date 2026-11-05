@@ -2,6 +2,8 @@
 
 The ByteDance Image to Video node generates videos using ByteDance models through an API based on an input image and text prompt. It takes a starting image frame and creates a video sequence that follows the provided description. The node offers various customization options for video resolution, aspect ratio, duration, and other generation parameters.
 
+**Note:** This node is marked as deprecated in the source code.
+
 **Note:** BytePlus shuts the Seedance 1.5 Pro model down on November 11, 2026, so this node no longer offers it and workflows saved with it stop working. Use `seedance-1-0-pro-250528`, `seedance-1-0-pro-fast-251015`, or the [Seedance 2.5 partner node](https://docs.comfy.org/tutorials/partner-nodes/bytedance/seedance-2-5) instead.
 
 ## Inputs
@@ -30,4 +32,4 @@ The ByteDance Image to Video node generates videos using ByteDance models throug
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceImageToVideoNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `9f4ad18642533689f9c664f2ca6a4ce8e92c8698754cdf9b6bb2d2735bc80415`
+**Source fingerprint (SHA-256):** `a1841a368e625bd90583e0f0dbdc32369e6701a44cf985f01de8faa3d999b224`

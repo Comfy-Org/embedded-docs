@@ -2,6 +2,8 @@
 
 Bu düğüm, bir metin istemiyle birlikte ilk ve son kare görüntülerini kullanarak video oluşturur. Açıklamanızı ve iki ana kareyi alarak aralarında geçiş yapan eksiksiz bir video dizisi oluşturur. Düğüm, videonun çözünürlüğünü, en-boy oranını, süresini ve diğer oluşturma parametrelerini denetlemek için çeşitli seçenekler sunar.
 
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
+
 **Not:** BytePlus, Seedance 1.5 Pro modelini 11 Kasım 2026'da kapatıyor; bu nedenle bu düğüm artık onu sunmuyor ve onunla kaydedilen iş akışları çalışmayı durduruyor. `seedance-1-0-pro-250528` bu düğümde kalan tek modeldir. Sesli video ve daha uzun klipler için [Seedance 2.5 iş ortağı düğümünü](https://docs.comfy.org/tr/tutorials/partner-nodes/bytedance/seedance-2-5) kullanın.
 
 ## Girdiler
@@ -31,4 +33,4 @@ Bu düğüm, bir metin istemiyle birlikte ilk ve son kare görüntülerini kulla
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceFirstLastFrameNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `ae0f3a34a21baad7f04f6917e98d16dc64496479a050896869ec6693a9a9ebaf`
+**Source fingerprint (SHA-256):** `76f077c215942f164a024b85594e921b5fdb2d667a99ad4de2fe0f1195a15bb8`

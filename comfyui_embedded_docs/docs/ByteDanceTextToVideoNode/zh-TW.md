@@ -2,6 +2,8 @@
 
 ByteDance Text to Video 節點會透過 API 使用 ByteDance 模型，根據文字提示生成影片。您可提供提示詞，並選擇模型、解析度、長寬比與時長等設定；節點會提交生成請求，並傳回生成的影片。
 
+**注意：** 此節點在原始碼中標記為已棄用。
+
 **注意:** BytePlus 將於 2026 年 11 月 11 日停止提供 Seedance 1.5 Pro 模型，因此此節點不再提供該模型，使用該模型儲存的工作流程將無法運作。請改用 `seedance-1-0-pro-250528`、`seedance-1-0-pro-fast-251015` 或 [Seedance 2.5 合作夥伴節點](https://docs.comfy.org/zh-TW/tutorials/partner-nodes/bytedance/seedance-2-5)。
 
 ## 輸入
@@ -36,4 +38,4 @@ ByteDance Text to Video 節點會透過 API 使用 ByteDance 模型，根據文�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `83b805b63e59a76cae378b0407b409e1bfe900677ef1e01fc836fede47283eee`
+**Source fingerprint (SHA-256):** `d26d13c99a25bb14a0b1c1f3bae2dea1b30bf35f886331f26ef72e64ca357ef5`

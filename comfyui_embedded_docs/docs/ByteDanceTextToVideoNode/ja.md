@@ -2,6 +2,8 @@
 
 The ByteDance Text to Video ノードは、テキストプロンプトに基づき、ByteDance モデルを API 経由で使用して動画を生成します。プロンプトを入力し、モデル、解像度、アスペクト比、長さなどの設定を選択すると、ノードが生成リクエストを送信し、生成された動画を返します。
 
+**注：** このノードはソースコード上で非推奨としてマークされています。
+
 **注記:** BytePlus は 2026 年 11 月 11 日に Seedance 1.5 Pro モデルを終了するため、このノードでは選択できなくなり、このモデルで保存したワークフローは実行できません。代わりに `seedance-1-0-pro-250528`、`seedance-1-0-pro-fast-251015`、または [Seedance 2.5 パートナーノード](https://docs.comfy.org/ja/tutorials/partner-nodes/bytedance/seedance-2-5) を使用してください。
 
 ## 入力
@@ -36,4 +38,4 @@ The ByteDance Text to Video ノードは、テキストプロンプトに基づ�
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `83b805b63e59a76cae378b0407b409e1bfe900677ef1e01fc836fede47283eee`
+**Source fingerprint (SHA-256):** `d26d13c99a25bb14a0b1c1f3bae2dea1b30bf35f886331f26ef72e64ca357ef5`

@@ -2,6 +2,8 @@
 
 This node generates a video using a text prompt along with first and last frame images. It takes your description and the two key frames to create a complete video sequence that transitions between them. The node provides various options to control the video's resolution, aspect ratio, duration, and other generation parameters.
 
+**Note:** This node is marked as deprecated in the source code.
+
 **Note:** BytePlus shuts the Seedance 1.5 Pro model down on November 11, 2026, so this node no longer offers it and workflows saved with it stop working. `seedance-1-0-pro-250528` is the only model left on this node. For audio-video and longer clips, use the [Seedance 2.5 partner node](https://docs.comfy.org/tutorials/partner-nodes/bytedance/seedance-2-5).
 
 ## Inputs
@@ -31,4 +33,4 @@ This node generates a video using a text prompt along with first and last frame 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceFirstLastFrameNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `ae0f3a34a21baad7f04f6917e98d16dc64496479a050896869ec6693a9a9ebaf`
+**Source fingerprint (SHA-256):** `76f077c215942f164a024b85594e921b5fdb2d667a99ad4de2fe0f1195a15bb8`

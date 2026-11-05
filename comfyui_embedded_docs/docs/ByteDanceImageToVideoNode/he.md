@@ -2,6 +2,8 @@
 
 הצומת ByteDance Image to Video יוצר סרטונים באמצעות מודלים של ByteDance דרך API, בהתבסס על תמונת קלט ופרומפט טקסטואלי. הוא מקבל פריים תמונה התחלתי ויוצר רצף וידאו שעוקב אחר התיאור שסופק. הצומת מציע אפשרויות התאמה אישית שונות לרזולוציית הווידאו, יחס הממדים, משך הזמן ופרמטרי יצירה אחרים.
 
+**הערה:** צומת זה מסומן כמיושן בקוד המקור.
+
 **הערה:** BytePlus תפסיק את מודל Seedance 1.5 Pro ב-11 בנובמבר 2026, ולכן צומת זה כבר לא מציע אותו ותהליכי העבודה שנשמרו איתו מפסיקים לעבוד. השתמשו במקום ב-`seedance-1-0-pro-250528`, ב-`seedance-1-0-pro-fast-251015` או ב[צומת השותף Seedance 2.5](https://docs.comfy.org/he/tutorials/partner-nodes/bytedance/seedance-2-5).
 
 ## קלטים
@@ -30,4 +32,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceImageToVideoNode/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `9f4ad18642533689f9c664f2ca6a4ce8e92c8698754cdf9b6bb2d2735bc80415`
+**Source fingerprint (SHA-256):** `a1841a368e625bd90583e0f0dbdc32369e6701a44cf985f01de8faa3d999b224`

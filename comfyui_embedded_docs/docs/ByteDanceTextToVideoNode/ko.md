@@ -2,6 +2,8 @@
 
 ByteDance Text to Video 노드는 텍스트 프롬프트를 기반으로 API를 통해 ByteDance 모델을 사용하여 비디오를 생성합니다. 사용자는 프롬프트를 제공하고 모델, 해상도, 종횡비, 지속 시간 등의 설정을 선택합니다. 그러면 노드가 생성 요청을 제출하고 생성된 비디오를 반환합니다.
 
+**참고:** 이 노드는 소스 코드에서 사용 중단(deprecated)으로 표시되어 있습니다.
+
 **참고:** BytePlus는 2026년 11월 11일에 Seedance 1.5 Pro 모델을 종료하므로 이 노드에서는 더 이상 선택할 수 없고, 이 모델로 저장한 워크플로는 실행되지 않습니다. 대신 `seedance-1-0-pro-250528`, `seedance-1-0-pro-fast-251015` 또는 [Seedance 2.5 파트너 노드](https://docs.comfy.org/ko/tutorials/partner-nodes/bytedance/seedance-2-5)를 사용하세요.
 
 ## 입력
@@ -36,4 +38,4 @@ ByteDance Text to Video 노드는 텍스트 프롬프트를 기반으로 API를 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `83b805b63e59a76cae378b0407b409e1bfe900677ef1e01fc836fede47283eee`
+**Source fingerprint (SHA-256):** `d26d13c99a25bb14a0b1c1f3bae2dea1b30bf35f886331f26ef72e64ca357ef5`

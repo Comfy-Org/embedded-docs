@@ -2,6 +2,8 @@
 
 گره ByteDance Text to Video با استفاده از مدل‌های ByteDance و از طریق یک API، بر پایه یک پرامپت متنی ویدیو تولید می‌کند. شما یک پرامپت ارائه می‌دهید و تنظیماتی مانند مدل، رزولوشن، نسبت تصویر و مدت‌زمان را انتخاب می‌کنید؛ گره درخواست تولید را ارسال می‌کند و ویدیوی تولیدشده را برمی‌گرداند.
 
+**نکته:** این گره در کد منبع به‌عنوان منسوخ‌شده علامت‌گذاری شده است.
+
 **توجه:** BytePlus مدل Seedance 1.5 Pro را در ۱۱ نوامبر ۲۰۲۶ متوقف می‌کند، بنابراین این گره دیگر آن را ارائه نمی‌دهد و ورک‌فلوهای ذخیره‌شده با آن از کار می‌افتند. به‌جای آن از `seedance-1-0-pro-250528`، `seedance-1-0-pro-fast-251015` یا [گره شریک Seedance 2.5](https://docs.comfy.org/fa/tutorials/partner-nodes/bytedance/seedance-2-5) استفاده کنید.
 
 ## ورودی‌ها
@@ -36,4 +38,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `83b805b63e59a76cae378b0407b409e1bfe900677ef1e01fc836fede47283eee`
+**Source fingerprint (SHA-256):** `d26d13c99a25bb14a0b1c1f3bae2dea1b30bf35f886331f26ef72e64ca357ef5`

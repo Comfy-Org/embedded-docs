@@ -2,6 +2,8 @@
 
 ByteDance Image to Video ノードは、入力画像とテキストプロンプトに基づいて、API 経由で ByteDance モデルを使用して動画を生成します。開始フレームとなる画像を受け取り、指定された説明に従った動画シーケンスを作成します。このノードは、動画の解像度、アスペクト比、長さ、その他の生成パラメータに関するさまざまなカスタマイズオプションを提供します。
 
+**注：** このノードはソースコード上で非推奨としてマークされています。
+
 **注記:** BytePlus は 2026 年 11 月 11 日に Seedance 1.5 Pro モデルを終了するため、このノードでは選択できなくなり、このモデルで保存したワークフローは実行できません。代わりに `seedance-1-0-pro-250528`、`seedance-1-0-pro-fast-251015`、または [Seedance 2.5 パートナーノード](https://docs.comfy.org/ja/tutorials/partner-nodes/bytedance/seedance-2-5) を使用してください。
 
 ## 入力
@@ -30,4 +32,4 @@ ByteDance Image to Video ノードは、入力画像とテキストプロンプ�
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceImageToVideoNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `9f4ad18642533689f9c664f2ca6a4ce8e92c8698754cdf9b6bb2d2735bc80415`
+**Source fingerprint (SHA-256):** `a1841a368e625bd90583e0f0dbdc32369e6701a44cf985f01de8faa3d999b224`

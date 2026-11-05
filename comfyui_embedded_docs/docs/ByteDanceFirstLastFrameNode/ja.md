@@ -2,6 +2,8 @@
 
 このノードは、テキストプロンプトと最初および最後のフレーム画像を使用して動画を生成します。説明文と2つのキーフレームを受け取り、それらの間を遷移する完全な動画シーケンスを作成します。このノードは、動画の解像度、アスペクト比、長さ、その他の生成パラメータを制御するためのさまざまなオプションを提供します。
 
+**注：** このノードはソースコード上で非推奨としてマークされています。
+
 **注記:** BytePlus は 2026 年 11 月 11 日に Seedance 1.5 Pro モデルを終了するため、このノードでは選択できなくなり、このモデルで保存したワークフローは実行できません。このノードで残るモデルは `seedance-1-0-pro-250528` のみです。音声付きの動画やより長い動画には [Seedance 2.5 パートナーノード](https://docs.comfy.org/ja/tutorials/partner-nodes/bytedance/seedance-2-5) を使用してください。
 
 ## 入力
@@ -31,4 +33,4 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceFirstLastFrameNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `ae0f3a34a21baad7f04f6917e98d16dc64496479a050896869ec6693a9a9ebaf`
+**Source fingerprint (SHA-256):** `76f077c215942f164a024b85594e921b5fdb2d667a99ad4de2fe0f1195a15bb8`

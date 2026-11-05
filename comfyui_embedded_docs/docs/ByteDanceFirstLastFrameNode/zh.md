@@ -2,6 +2,8 @@
 
 此节点使用文本提示词以及首帧和尾帧图像来生成视频。它使用你的描述和这两个关键帧来创建一段在它们之间过渡的完整视频序列。该节点提供各种选项，用于控制视频的分辨率、宽高比、时长和其他生成参数。
 
+**注意：** 此节点在源代码中已被标记为弃用。
+
 **注意:** BytePlus 将于 2026 年 11 月 11 日停用 Seedance 1.5 Pro 模型，因此本节点不再提供该模型，保存使用该模型的工作流将无法运行。本节点仅保留 `seedance-1-0-pro-250528` 模型。如需带音频或更长的视频，请使用 [Seedance 2.5 伙伴节点](https://docs.comfy.org/zh/tutorials/partner-nodes/bytedance/seedance-2-5)。
 
 ## 输入
@@ -31,4 +33,4 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceFirstLastFrameNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `ae0f3a34a21baad7f04f6917e98d16dc64496479a050896869ec6693a9a9ebaf`
+**Source fingerprint (SHA-256):** `76f077c215942f164a024b85594e921b5fdb2d667a99ad4de2fe0f1195a15bb8`

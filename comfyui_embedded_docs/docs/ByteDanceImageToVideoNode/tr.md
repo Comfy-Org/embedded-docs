@@ -2,6 +2,8 @@
 
 ByteDance Image to Video düğümü; bir girdi görüntüsü ve metin istemine dayalı olarak, ByteDance modellerini bir API aracılığıyla kullanarak videolar üretir. Bir başlangıç görüntü karesi alır ve sağlanan açıklamayı izleyen bir video dizisi oluşturur. Düğüm; video çözünürlüğü, en-boy oranı, süre ve diğer üretim parametreleri için çeşitli özelleştirme seçenekleri sunar.
 
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
+
 **Not:** BytePlus, Seedance 1.5 Pro modelini 11 Kasım 2026'da kapatıyor; bu nedenle bu düğüm artık onu sunmuyor ve onunla kaydedilen iş akışları çalışmayı durduruyor. Bunun yerine `seedance-1-0-pro-250528`, `seedance-1-0-pro-fast-251015` veya [Seedance 2.5 iş ortağı düğümü](https://docs.comfy.org/tr/tutorials/partner-nodes/bytedance/seedance-2-5) kullanın.
 
 ## Girdiler
@@ -30,4 +32,4 @@ ByteDance Image to Video düğümü; bir girdi görüntüsü ve metin istemine d
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceImageToVideoNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `9f4ad18642533689f9c664f2ca6a4ce8e92c8698754cdf9b6bb2d2735bc80415`
+**Source fingerprint (SHA-256):** `a1841a368e625bd90583e0f0dbdc32369e6701a44cf985f01de8faa3d999b224`

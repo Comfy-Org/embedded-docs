@@ -2,6 +2,8 @@
 
 ByteDance Image to Video 노드는 API를 통해 ByteDance 모델을 사용하여 입력 이미지와 텍스트 프롬프트를 기반으로 비디오를 생성합니다. 시작 이미지 프레임을 받아 제공된 설명을 따르는 비디오 시퀀스를 생성합니다. 이 노드는 비디오 해상도, 종횡비, 길이 및 기타 생성 매개변수에 대한 다양한 사용자 지정 옵션을 제공합니다.
 
+**참고:** 이 노드는 소스 코드에서 사용 중단(deprecated)으로 표시되어 있습니다.
+
 **참고:** BytePlus는 2026년 11월 11일에 Seedance 1.5 Pro 모델을 종료하므로 이 노드에서는 더 이상 선택할 수 없고, 이 모델로 저장한 워크플로는 실행되지 않습니다. 대신 `seedance-1-0-pro-250528`, `seedance-1-0-pro-fast-251015` 또는 [Seedance 2.5 파트너 노드](https://docs.comfy.org/ko/tutorials/partner-nodes/bytedance/seedance-2-5)를 사용하세요.
 
 ## 입력
@@ -30,4 +32,4 @@ ByteDance Image to Video 노드는 API를 통해 ByteDance 모델을 사용하�
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceImageToVideoNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `9f4ad18642533689f9c664f2ca6a4ce8e92c8698754cdf9b6bb2d2735bc80415`
+**Source fingerprint (SHA-256):** `a1841a368e625bd90583e0f0dbdc32369e6701a44cf985f01de8faa3d999b224`

@@ -2,6 +2,8 @@
 
 O nó ByteDance Text to Video gera um vídeo usando modelos ByteDance por meio de uma API com base em um prompt de texto. Você fornece um prompt e escolhe configurações como modelo, resolução, proporção de aspecto e duração; o nó envia a solicitação de geração e retorna o vídeo gerado.
 
+**Nota:** Este nó está marcado como obsoleto no código-fonte.
+
 **Nota:** A BytePlus descontinua o modelo Seedance 1.5 Pro em 11 de novembro de 2026, então este nó não o oferece mais e os fluxos salvos com ele param de funcionar. Use `seedance-1-0-pro-250528`, `seedance-1-0-pro-fast-251015` ou o [nó parceiro Seedance 2.5](https://docs.comfy.org/pt-BR/tutorials/partner-nodes/bytedance/seedance-2-5).
 
 ## Entradas
@@ -36,4 +38,4 @@ O nó ByteDance Text to Video gera um vídeo usando modelos ByteDance por meio d
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `83b805b63e59a76cae378b0407b409e1bfe900677ef1e01fc836fede47283eee`
+**Source fingerprint (SHA-256):** `d26d13c99a25bb14a0b1c1f3bae2dea1b30bf35f886331f26ef72e64ca357ef5`

@@ -2,6 +2,8 @@
 
 ByteDance Image to Video 节点通过 API，基于输入图像和文本提示词，使用 ByteDance 模型生成视频。它以起始图像帧作为输入，生成符合所提供描述的视频序列。该节点提供了多种自定义选项，可控制视频分辨率、宽高比、时长及其他生成参数。
 
+**注意：** 此节点在源代码中已被标记为弃用。
+
 **注意:** BytePlus 将于 2026 年 11 月 11 日停用 Seedance 1.5 Pro 模型，因此本节点不再提供该模型，保存使用该模型的工作流将无法运行。请改用 `seedance-1-0-pro-250528`、`seedance-1-0-pro-fast-251015`，或 [Seedance 2.5 伙伴节点](https://docs.comfy.org/zh/tutorials/partner-nodes/bytedance/seedance-2-5)。
 
 ## 输入
@@ -30,4 +32,4 @@ ByteDance Image to Video 节点通过 API，基于输入图像和文本提示词
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceImageToVideoNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `9f4ad18642533689f9c664f2ca6a4ce8e92c8698754cdf9b6bb2d2735bc80415`
+**Source fingerprint (SHA-256):** `a1841a368e625bd90583e0f0dbdc32369e6701a44cf985f01de8faa3d999b224`
