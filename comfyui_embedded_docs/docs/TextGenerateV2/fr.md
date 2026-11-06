@@ -9,7 +9,7 @@ Le nœud Generate Text utilise un modèle CLIP pour produire du texte à partir 
 | `clip` | Le modèle CLIP utilisé pour tokeniser le prompt et générer le texte. | CLIP | Oui | - |
 | `prompt` | Le prompt qui guide la génération. Prend en charge plusieurs lignes et les prompts dynamiques (par défaut : chaîne vide). | STRING | Oui | - |
 | `images` | Groupe extensible de jusqu’à 50 images, de `image1` à `image50`, utilisées comme contexte visuel pour le modèle. | AUTOGROW | Non | 0 à 50 images |
-| `videos` | Groupe extensible de jusqu’à 100 entrées vidéo, de `video1` à `video100`. Chaque vidéo est un lot de trames supposé à 24 FPS et sous-échantillonné à 1 FPS en interne. | AUTOGROW | Non | 0 à 100 vidéos |
+| `videos` | Groupe extensible de jusqu’à 100 entrées vidéo, de `video1` à `video100`. Chaque vidéo est un lot de trames supposé à 24 FPS et sous-échantillonné à la cadence d'images du modèle en interne. | AUTOGROW | Non | 0 à 100 vidéos |
 | `audios` | Groupe extensible de jusqu’à 100 entrées audio, de `audio1` à `audio100`, utilisées comme contexte audio pour le modèle. | AUTOGROW | Non | 0 à 100 fichiers audio |
 | `max_length` | Nombre maximal de tokens à générer (par défaut : 512). | INT | Oui | 1 à 32768 |
 | `sampling_mode` | `"on"` échantillonne la sortie et révèle les paramètres d’échantillonnage ci-dessous. `"off"` génère de manière gloutonne, sans échantillonnage aléatoire. | DYNAMIC_COMBO | Oui | `"on"`<br>`"off"` |

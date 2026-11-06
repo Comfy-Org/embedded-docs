@@ -14,7 +14,7 @@ TextGenerate düğümü, kullanıcının istemine dayalı metin oluşturmak içi
 | `clip` | İstemi tokenize etmek ve metin oluşturmak için kullanılan CLIP modeli. | CLIP | Evet | N/A |
 | `istem` | Oluşturmayı yönlendiren metin istemi. Bu alan birden çok satırı ve dinamik istemleri destekler. Varsayılan değer boş bir dizedir. | STRING | Evet | N/A |
 | `görsel` | Oluşturulan metni etkilemek için metin istemiyle birlikte kullanılabilen isteğe bağlı bir görsel. | IMAGE | Hayır | N/A |
-| `video` | Görüntü yığını olarak video kareleri. 24 FPS olduğu varsayılır; dahili olarak 1 FPS'ye alt örneklenir. | IMAGE | Hayır | N/A |
+| `video` | Görüntü yığını olarak video kareleri. 24 FPS olduğu varsayılır; dahili olarak modelin kare hızına alt örneklenir. | IMAGE | Hayır | N/A |
 | `ses` | Oluşturulan metni etkilemek için metin istemiyle birlikte kullanılabilen isteğe bağlı bir ses girdisi. | AUDIO | Hayır | N/A |
 | `maks_uzunluk` | Modelin oluşturacağı maksimum token sayısı. Varsayılan değer 512'dir. | INT | Evet | 1 - 32768 |
 | `düşünme` | Model destekliyorsa düşünme modunda çalışır. Varsayılan değer False'tur. | BOOLEAN | Hayır | True veya False |

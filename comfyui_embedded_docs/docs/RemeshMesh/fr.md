@@ -1,6 +1,6 @@
 # Re-maillage du maillage (DC à bande étroite)
 
-Remesh Mesh reconstruit un maillage avec une tessellation propre et uniforme en échantillonnant un champ de distance à bande étroite autour de la surface d'origine et en l'extrayant avec Dual Contouring. Cela normalise une topologie désordonnée, non-manifold ou auto-intersectée, et est destiné à être exécuté avant Decimate Mesh pour atteindre un nombre exact de faces. Le traitement s'exécute sur le périphérique de calcul actif et le maillage de sortie reste soudé.
+Remesh Mesh reconstruit un maillage avec une tessellation propre et uniforme en échantillonnant un champ de distance à bande étroite autour de la surface d'origine et en l'extrayant avec Dual Contouring. Cela normalise une topologie désordonnée, non-manifold ou auto-intersectée, et est destiné à être exécuté avant Decimate Mesh pour atteindre un nombre exact de faces. Le traitement s'exécute sur le périphérique de calcul actif et le maillage de sortie reste soudé. Avant l'extraction, si la valeur absolue d'une coordonnée de sommet dépasse 0,51, ou si le côté le plus long de la boîte englobante mesure moins de 0,5, le maillage est ajusté dans le cube [-0,5 ; 0,5], puis remis à son échelle d'origine.
 
 ## Entrées
 
@@ -57,4 +57,4 @@ Remarque : L'option `qef` a une valeur par défaut différente selon le mode sé
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RemeshMesh/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d2869c681e0485f5946a53f0582188ded2183ecd741ea1ff6a591932b18b5abe`
+**Source fingerprint (SHA-256):** `3d164c3177ac427025ab8dd33df7bc2afe8c10f15c45a477b2f79bf34967124f`

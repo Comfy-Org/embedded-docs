@@ -1,6 +1,6 @@
 # 重新網格化網格（窄帶 DC）
 
-Remesh Mesh 會透過取樣原始表面周圍的窄帶距離場，並以 Dual Contouring 擷取該場，來重建具有乾淨、均勻細分的網格。這會將雜亂、非流形或自相交的拓撲正規化，且設計上應在 Decimate Mesh 之前執行，以達到精確的面數。處理會在使用中的運算裝置上執行，且輸出網格會保持焊接狀態。
+Remesh Mesh 會透過取樣原始表面周圍的窄帶距離場，並以 Dual Contouring 擷取該場，來重建具有乾淨、均勻細分的網格。這會將雜亂、非流形或自相交的拓撲正規化，且設計上應在 Decimate Mesh 之前執行，以達到精確的面數。處理會在使用中的運算裝置上執行，且輸出網格會保持焊接狀態。擷取前，如果任一頂點座標的絕對值超過 0.51，或包圍盒最長邊小於 0.5，網格會先被調整進 [-0.5, 0.5] 立方體，之後映射回原尺寸。
 
 ## 輸入
 
@@ -57,4 +57,4 @@ Remesh Mesh 會透過取樣原始表面周圍的窄帶距離場，並以 Dual Co
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RemeshMesh/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `d2869c681e0485f5946a53f0582188ded2183ecd741ea1ff6a591932b18b5abe`
+**Source fingerprint (SHA-256):** `3d164c3177ac427025ab8dd33df7bc2afe8c10f15c45a477b2f79bf34967124f`

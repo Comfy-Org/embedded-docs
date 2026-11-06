@@ -11,7 +11,7 @@ O nó TextGenerateLTX2Prompt expande um prompt curto do usuário em uma descriç
 | `clip` | O modelo CLIP usado para codificação de texto. O nó verifica o nome do tokenizador do modelo para selecionar as instruções correspondentes: modelos baseados no Gemma 4 usam o formato LTX-2.4, enquanto outros modelos usam o formato LTX-2 (Gemma 3). | CLIP | Sim | - |
 | `prompt` | A entrada de texto bruta que descreve a cena ou o conceito a ser expandido em um prompt detalhado de geração de vídeo. | STRING | Sim | - |
 | `imagem` | Uma imagem de entrada opcional usada como o primeiro quadro do vídeo. Quando fornecida, o nó alterna para o modo imagem para vídeo e usa um prompt de sistema que expande o prompt do usuário com base no conteúdo da imagem. | IMAGE | Não | - |
-| `vídeo` | Uma entrada de vídeo opcional usada como contexto adicional. Passada ao modelo de linguagem como um lote de imagens; assume-se 24 FPS e é subamostrada internamente para 1 FPS. | IMAGE | Não | - |
+| `vídeo` | Uma entrada de vídeo opcional usada como contexto adicional. Passada ao modelo de linguagem como um lote de imagens; assume-se 24 FPS e é subamostrada internamente para a taxa de quadros do modelo. | IMAGE | Não | - |
 | `áudio` | Uma entrada de áudio opcional que pode ser usada como contexto adicional para a geração. | AUDIO | Não | - |
 | `comprimento_máximo` | O número máximo de tokens que o modelo de linguagem tem permissão para gerar (padrão: 512). | INT | Sim | 1 a 32768 |
 | `modo_de_amostragem` | Controla se a amostragem aleatória é usada durante a geração de texto. Quando definido como `"on"`, os parâmetros de amostragem abaixo ficam disponíveis; com `"off"`, o nó gera texto sem amostragem aleatória. | DYNAMIC_COMBO | Sim | `"on"`<br>`"off"` |

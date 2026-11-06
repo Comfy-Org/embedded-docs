@@ -14,7 +14,7 @@ Der TextGenerate-Node verwendet ein CLIP-Modell, um Text basierend auf dem Promp
 | `clip` | Das CLIP-Modell, das zum Tokenisieren des Prompts und zur Textgenerierung verwendet wird. | CLIP | Ja | N/A |
 | `prompt` | Der Text-Prompt, der die Generierung steuert. Dieses Feld unterstützt mehrere Zeilen und dynamische Prompts. Der Standardwert ist eine leere Zeichenkette. | STRING | Ja | N/A |
 | `image` | Ein optionales Bild, das zusammen mit dem Text-Prompt verwendet werden kann, um den generierten Text zu beeinflussen. | IMAGE | Nein | N/A |
-| `video` | Videoframes als Bild-Batch. Es wird von 24 FPS ausgegangen; intern auf 1 FPS unterabgetastet. | IMAGE | Nein | N/A |
+| `video` | Videoframes als Bild-Batch. Es wird von 24 FPS ausgegangen; intern auf die Framerate des Modells unterabgetastet. | IMAGE | Nein | N/A |
 | `audio` | Eine optionale Audioeingabe, die zusammen mit dem Text-Prompt verwendet werden kann, um den generierten Text zu beeinflussen. | AUDIO | Nein | N/A |
 | `max_length` | Die maximale Anzahl an Tokens, die das Modell generiert. Der Standardwert ist 512. | INT | Ja | 1 bis 32768 |
 | `thinking` | Im Thinking-Modus arbeiten, wenn das Modell dies unterstützt. Der Standardwert ist False. | BOOLEAN | Nein | True oder False |

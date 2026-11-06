@@ -9,7 +9,7 @@ Generate Text 節點使用 CLIP 模型根據提示詞產生文字。與較舊的
 | `clip` | 用於將提示詞分詞並產生文字的 CLIP 模型。 | CLIP | 是 | - |
 | `prompt` | 引導產生的提示詞。支援多行和動態提示詞（預設：空字串）。 | STRING | 是 | - |
 | `images` | 最多 50 張影像的可增長群組，`image1` 至 `image50`，用作模型的視覺上下文。 | AUTOGROW | 否 | 0 至 50 張影像 |
-| `videos` | 最多 100 個影片輸入的可增長群組，`video1` 至 `video100`。每部影片是假設為 24 FPS 的影格批次，並在內部子取樣至 1 FPS。 | AUTOGROW | 否 | 0 至 100 部影片 |
+| `videos` | 最多 100 個影片輸入的可增長群組，`video1` 至 `video100`。每部影片是假設為 24 FPS 的影格批次，並在內部子取樣至 模型的影格率。 | AUTOGROW | 否 | 0 至 100 部影片 |
 | `audios` | 最多 100 個音訊輸入的可增長群組，`audio1` 至 `audio100`，用作模型的音訊上下文。 | AUTOGROW | 否 | 0 至 100 個音訊檔案 |
 | `max_length` | 要產生的最大 token 數（預設：512）。 | INT | 是 | 1 至 32768 |
 | `sampling_mode` | `on` 會對輸出取樣並顯示下方的取樣參數。`off` 則以貪婪方式產生，不進行隨機取樣。 | DYNAMIC_COMBO | 是 | `"on"`<br>`"off"` |
