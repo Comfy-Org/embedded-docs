@@ -9,7 +9,7 @@ Generate Text düğümü, bir istemden metin üretmek için bir CLIP modeli kull
 | `clip` | İstemi tokenize etmek ve metni üretmek için kullanılan CLIP modeli. | CLIP | Evet | - |
 | `prompt` | Üretimi yönlendiren istem. Birden çok satırı ve dinamik istemleri destekler (varsayılan: boş dize). | STRING | Evet | - |
 | `images` | En fazla 50 görselden oluşan, `image1` ile `image50` arasındaki büyütülebilir grup; model için görsel bağlam olarak kullanılır. | AUTOGROW | Hayır | 0 ile 50 görsel arası |
-| `videos` | En fazla 100 video girdisinden oluşan, `video1` ile `video100` arasındaki büyütülebilir grup. Her video, 24 FPS olduğu varsayılan ve dahili olarak 1 FPS'ye alt örneklenen bir kare grubudur. | AUTOGROW | Hayır | 0 ile 100 video arası |
+| `videos` | En fazla 100 video girdisinden oluşan, `video1` ile `video100` arasındaki büyütülebilir grup. Her video, 24 FPS olduğu varsayılan ve dahili olarak modelin kare hızına alt örneklenen bir kare grubudur. | AUTOGROW | Hayır | 0 ile 100 video arası |
 | `audios` | En fazla 100 ses girdisinden oluşan, `audio1` ile `audio100` arasındaki büyütülebilir grup; model için ses bağlamı olarak kullanılır. | AUTOGROW | Hayır | 0 ile 100 ses dosyası arası |
 | `max_length` | Üretilecek maksimum token sayısı (varsayılan: 512). | INT | Evet | 1 ile 32768 arası |
 | `sampling_mode` | `on` çıktıyı örnekler ve aşağıdaki örnekleme parametrelerini gösterir. `off` rastgele örnekleme olmadan açgözlü üretim yapar. | DYNAMIC_COMBO | Evet | `"on"`<br>`"off"` |

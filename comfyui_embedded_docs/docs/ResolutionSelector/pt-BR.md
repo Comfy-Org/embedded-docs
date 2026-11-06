@@ -7,7 +7,7 @@ O nó Resolution Selector calcula a largura e a altura em pixels com base em uma
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `proporção_de_aspecto` | A proporção de aspecto para as dimensões de saída (padrão: `"1:1 (Square)"`). | COMBO | Sim | `"1:1 (Square)"`<br>`"2:3 (Portrait Photo)"`<br>`"3:2 (Photo)"`<br>`"3:4 (Portrait Standard)"`<br>`"4:3 (Standard)"`<br>`"9:16 (Portrait Widescreen)"`<br>`"16:9 (Widescreen)"`<br>`"21:9 (Ultrawide)"` |
-| `megapixels` | Total desejado de megapixels. 1.0 MP ≈ 1024x1024 para formato quadrado (padrão: 1.0). | FLOAT | Sim | 0.1 - 16.0 (step: 0.1) |
+| `megapixels` | Total desejado de megapixels. 1.0 MP ≈ 1024x1024 para formato quadrado (padrão: 1.0). | FLOAT | Sim | 0.1 - 16.0 (step: 0.01) |
 | `pré-visualização` | Pré-visualização ao vivo da resolução de saída calculada. Este widget somente leitura é atualizado automaticamente e não aceita entrada do usuário. | RESOLUTION_PREVIEW | Não | N/A |
 | `múltiplo` | Múltiplo mais próximo do resultado para definir a resolução selecionada (padrão: 8). | INT | Não | 8 - 128 (step: 4) |
 
@@ -21,4 +21,4 @@ O nó Resolution Selector calcula a largura e a altura em pixels com base em uma
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionSelector/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `dd4c7f977ed69a873a48da4b01c5c8f0b6563cfd743740235fc0ad5762579697`
+**Source fingerprint (SHA-256):** `d97624227fa02cd2e2f9bdecb3443f9877402092dcee8c45b721a83739454e18`

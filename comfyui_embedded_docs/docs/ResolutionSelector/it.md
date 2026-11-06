@@ -7,7 +7,7 @@ Il nodo Resolution Selector calcola la larghezza e l'altezza in pixel in base a 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `aspect_ratio` | Il rapporto d'aspetto per le dimensioni di output (predefinito: `"1:1 (Square)"`). | COMBO | Sì | `"1:1 (Square)"`<br>`"2:3 (Portrait Photo)"`<br>`"3:2 (Photo)"`<br>`"3:4 (Portrait Standard)"`<br>`"4:3 (Standard)"`<br>`"9:16 (Portrait Widescreen)"`<br>`"16:9 (Widescreen)"`<br>`"21:9 (Ultrawide)"` |
-| `megapixels` | Megapixel totali target. 1.0 MP ≈ 1024x1024 per un'immagine quadrata (predefinito: 1.0). | FLOAT | Sì | 0.1 - 16.0 (passo: 0.1) |
+| `megapixels` | Megapixel totali target. 1.0 MP ≈ 1024x1024 per un'immagine quadrata (predefinito: 1.0). | FLOAT | Sì | 0.1 - 16.0 (passo: 0.01) |
 | `preview` | Anteprima in tempo reale della risoluzione di output calcolata. Questo widget di sola lettura si aggiorna automaticamente e non accetta input dell'utente. | RESOLUTION_PREVIEW | No | N/A |
 | `multiple` | Il multiplo più vicino del risultato a cui impostare la risoluzione selezionata (predefinito: 8). | INT | No | 8 - 128 (passo: 4) |
 
@@ -21,4 +21,4 @@ Il nodo Resolution Selector calcola la larghezza e l'altezza in pixel in base a 
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionSelector/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `dd4c7f977ed69a873a48da4b01c5c8f0b6563cfd743740235fc0ad5762579697`
+**Source fingerprint (SHA-256):** `d97624227fa02cd2e2f9bdecb3443f9877402092dcee8c45b721a83739454e18`

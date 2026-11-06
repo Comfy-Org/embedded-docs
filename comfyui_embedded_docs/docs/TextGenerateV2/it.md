@@ -9,7 +9,7 @@ Il nodo Generate Text utilizza un modello CLIP per produrre testo da un prompt. 
 | `clip` | Il modello CLIP utilizzato per tokenizzare il prompt e generare il testo. | CLIP | Sì | - |
 | `prompt` | Il prompt che guida la generazione. Supporta più righe e prompt dinamici (predefinito: stringa vuota). | STRING | Sì | - |
 | `images` | Gruppo espandibile di fino a 50 immagini, da `image1` a `image50`, utilizzato come contesto visivo per il modello. | AUTOGROW | No | 0 a 50 immagini |
-| `videos` | Gruppo espandibile di fino a 100 input video, da `video1` a `video100`. Ogni video è un batch di frame considerato a 24 FPS e sottocampionato internamente a 1 FPS. | AUTOGROW | No | 0 a 100 video |
+| `videos` | Gruppo espandibile di fino a 100 input video, da `video1` a `video100`. Ogni video è un batch di frame considerato a 24 FPS e sottocampionato internamente a la frequenza dei fotogrammi del modello. | AUTOGROW | No | 0 a 100 video |
 | `audios` | Gruppo espandibile di fino a 100 input audio, da `audio1` a `audio100`, utilizzato come contesto audio per il modello. | AUTOGROW | No | 0 a 100 file audio |
 | `max_length` | Numero massimo di token da generare (predefinito: 512). | INT | Sì | 1 a 32768 |
 | `sampling_mode` | `on` campiona l'output e mostra i parametri di campionamento sottostanti. `off` genera in modo greedy senza campionamento casuale. | DYNAMIC_COMBO | Sì | `"on"`<br>`"off"` |

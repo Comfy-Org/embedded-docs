@@ -9,7 +9,7 @@ Der Node Generate Text verwendet ein CLIP-Modell, um aus einem Prompt Text zu er
 | `clip` | Das CLIP-Modell, das verwendet wird, um den Prompt zu tokenisieren und den Text zu erzeugen. | CLIP | Ja | - |
 | `prompt` | Der Prompt, der die Generierung steuert. Unterstützt mehrere Zeilen und dynamische Prompts (Standard: leerer String). | STRING | Ja | - |
 | `images` | Erweiterbare Gruppe von bis zu 50 Bildern, `image1` bis `image50`, die als visueller Kontext für das Modell dient. | AUTOGROW | Nein | 0 bis 50 Bilder |
-| `videos` | Erweiterbare Gruppe von bis zu 100 Videoeingaben, `video1` bis `video100`. Jedes Video ist ein Stapel von Frames, für die 24 FPS angenommen und die intern auf 1 FPS unterabgetastet werden. | AUTOGROW | Nein | 0 bis 100 Videos |
+| `videos` | Erweiterbare Gruppe von bis zu 100 Videoeingaben, `video1` bis `video100`. Jedes Video ist ein Stapel von Frames, für die 24 FPS angenommen und die intern auf die Framerate des Modells unterabgetastet werden. | AUTOGROW | Nein | 0 bis 100 Videos |
 | `audios` | Erweiterbare Gruppe von bis zu 100 Audioeingaben, `audio1` bis `audio100`, die als Audiokontext für das Modell dient. | AUTOGROW | Nein | 0 bis 100 Audiodateien |
 | `max_length` | Maximale Anzahl der zu erzeugenden Tokens (Standard: 512). | INT | Ja | 1 bis 32768 |
 | `sampling_mode` | `on` sampelt die Ausgabe und zeigt die unten aufgeführten Sampling-Parameter an. `off` erzeugt gierig ohne Zufalls-Sampling. | DYNAMIC_COMBO | Ja | `"on"`<br>`"off"` |
