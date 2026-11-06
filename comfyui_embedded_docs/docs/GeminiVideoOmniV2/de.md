@@ -55,7 +55,7 @@ Google Gemini Omni (Video) erzeugt anhand eines Text-Prompts ein Video mit Audio
 - Die Aufgabe `edit` (alle Modelle) und die Aufgabe `extend` (nur Omni Flash 1.1 und 1.2) erfordern genau ein Eingabevideo und behalten das Seitenverhältnis dieses Eingabevideos bei, wodurch `aspect_ratio` überschrieben wird.
 - Es können höchstens 14 Bilder und 3 Videos angehängt werden. Jedes angehängte Video muss 10 Sekunden oder kürzer sein, 15 Sekunden oder kürzer mit Omni Flash 1.2, und 25 Sekunden oder kürzer für die Aufgabe `extend`, deren Ergebnis höchstens 30 Sekunden lang sein kann.
 - Omni Flash gibt immer ein 720p-Video mit 24 FPS und Audio aus; die Auflösungsauswahl ist nur mit Omni Flash 1.1 und 1.2 verfügbar.
-- Die Steuerungen `temperature` und `top_p` sind nur beim Omni Flash-Modell verfügbar; Omni Flash 1.1 verwendet feste Generierungseinstellungen.
+- Die Steuerungen `temperature` und `top_p` sind nur beim Omni Flash-Modell verfügbar; Omni Flash 1.1 und 1.2 verwenden feste Generierungseinstellungen.
 
 ## Ausgaben
 

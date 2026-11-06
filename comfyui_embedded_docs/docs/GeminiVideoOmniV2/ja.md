@@ -55,7 +55,7 @@ Google Gemini Omni (Video) は、Google の Gemini Omni Flash モデルを使用
 - `edit` タスク（すべてのモデル）および `extend` タスク（Omni Flash 1.1 と 1.2 のみ）は、ちょうど 1 本の入力動画を必要とし、`aspect_ratio` を上書きして、その入力動画のアスペクト比を維持します。
 - 添付できるのは最大 14 枚の画像と 3 本の動画です。添付する各動画は 10 秒以下である必要があります。Omni Flash 1.2 では 15 秒以下、`extend` タスクでは 25 秒以下で、その結果は最大 30 秒になります。
 - Omni Flash は常に 720p、24 FPS の音声付き動画を出力します。解像度の選択は Omni Flash 1.1 と 1.2 でのみ利用できます。
-- `temperature` と `top_p` の制御は Omni Flash モデルでのみ利用できます。Omni Flash 1.1 は固定の生成設定を使用します。
+- `temperature` と `top_p` の制御は Omni Flash モデルでのみ利用できます。Omni Flash 1.1 と 1.2 は固定の生成設定を使用します。
 
 ## 出力
 

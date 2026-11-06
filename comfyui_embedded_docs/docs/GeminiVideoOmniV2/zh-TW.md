@@ -55,7 +55,7 @@ Google Gemini Omni (Video) 使用 Google 的 Gemini Omni Flash 模型，依據�
 - `edit` 任務（所有模型）與 `extend` 任務（僅限 Omni Flash 1.1 與 1.2）必須恰好輸入一部影片，並保留該輸入影片的長寬比，覆蓋 `aspect_ratio` 的設定。
 - 最多可附加 14 張影像與 3 部影片。每部附加的影片長度必須為 10 秒以內；使用 Omni Flash 1.2 時為 15 秒以內；`extend` 任務則為 25 秒以內，其結果長度最多可達 30 秒。
 - Omni Flash 一律輸出 720p、24 FPS 且含有音訊的影片；解析度選擇僅適用於 Omni Flash 1.1 與 1.2。
-- `temperature` 與 `top_p` 控制項僅適用於 Omni Flash 模型；Omni Flash 1.1 使用固定的生成設定。
+- `temperature` 與 `top_p` 控制項僅適用於 Omni Flash 模型；Omni Flash 1.1 與 1.2 使用固定的生成設定。
 
 ## 輸出
 

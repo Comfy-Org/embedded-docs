@@ -55,7 +55,7 @@ Google Gemini Omni (Video), Google'un Gemini Omni Flash modellerini kullanarak b
 - `edit` görevi (tüm modeller) ve `extend` görevi (yalnızca Omni Flash 1.1 ve 1.2) tam olarak bir giriş videosu gerektirir ve `aspect_ratio` değerini geçersiz kılarak o giriş videosunun en-boy oranını korur.
 - En fazla 14 görsel ve 3 video eklenebilir. Eklenen her video 10 saniye veya daha kısa olmalıdır; Omni Flash 1.2 ile 15 saniye veya daha kısa; `extend` görevi için 25 saniye veya daha kısa olmalıdır ve bu görevin sonucu en fazla 30 saniye uzunluğunda olabilir.
 - Omni Flash her zaman sesli 720p 24 FPS video çıkarır; çözünürlük seçimi yalnızca Omni Flash 1.1 ve 1.2 ile kullanılabilir.
-- `temperature` ve `top_p` kontrolleri yalnızca Omni Flash modelinde kullanılabilir; Omni Flash 1.1 sabit oluşturma ayarlarını kullanır.
+- `temperature` ve `top_p` kontrolleri yalnızca Omni Flash modelinde kullanılabilir; Omni Flash 1.1 ve 1.2 sabit oluşturma ayarlarını kullanır.
 
 ## Çıktılar
 
