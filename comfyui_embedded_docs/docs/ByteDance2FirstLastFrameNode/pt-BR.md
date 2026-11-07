@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.0 Primeiro-Último-Frame para Vídeo
 
-Este nó gera um vídeo a partir de uma imagem de primeiro quadro obrigatória e uma imagem de último quadro opcional, usando os modelos ByteDance Seedance. Você descreve o vídeo com um prompt de texto; o primeiro quadro orienta o início do vídeo e o último quadro orienta o final. Ele oferece suporte ao Seedance 2.5 e à família Seedance 2.0 (Seedance 2.0, Seedance 2.0 Fast e Seedance 2.0 Mini). Selecionar o modelo `Seedance 2.5 Draft` renderiza uma prévia rápida em 480p; conecte o `draft_task_id` resultante ao nó ByteDance Seedance 2.5 Draft to Final Video para renderizar o final em 1080p.
+Este nó gera um vídeo a partir de uma imagem de primeiro quadro obrigatória e uma imagem de último quadro opcional, usando os modelos ByteDance Seedance. Você descreve o vídeo com um prompt de texto; o primeiro quadro orienta o início do vídeo e o último quadro orienta o final. Ele oferece suporte ao Seedance 2.5 e à família Seedance 2.0 (Seedance 2.0, Seedance 2.0 Fast e Seedance 2.0 Mini). Selecionar o modelo `Seedance 2.5 Draft` renderiza uma prévia rápida em 480p; conecte o `draft_task_id` resultante ao nó ByteDance Seedance 2.5 Draft to Final Video para renderizar o final em 1080p ou 4k.
 
 ## Entradas
 
@@ -8,7 +8,7 @@ Este nó gera um vídeo a partir de uma imagem de primeiro quadro obrigatória e
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Faixa |
 |-----------|-----------|---------------|-------------|-------|
-| `modelo` | Seedance 2.5 para o modelo mais recente, vídeos de até 30 segundos e saída mp4; Seedance 2.5 Draft para uma prévia rápida em 480p cuja saída `draft_task_id` renderiza o final em 1080p no nó ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.0 para qualidade máxima e 4k; Fast para otimização de velocidade; Mini para a geração mais rápida e de menor custo. Selecionar um modelo revela entradas específicas do modelo abaixo. | DYNAMIC_COMBO | Sim | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `modelo` | Seedance 2.5 para o modelo mais recente, vídeos de até 30 segundos e saída mp4; Seedance 2.5 Draft para uma prévia rápida em 480p cuja saída `draft_task_id` renderiza o final em 1080p ou 4k no nó ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.0 para qualidade máxima e 4k; Fast para otimização de velocidade; Mini para a geração mais rápida e de menor custo. Selecionar um modelo revela entradas específicas do modelo abaixo. | DYNAMIC_COMBO | Sim | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `primeiro_frame` | Imagem do primeiro quadro para o vídeo. | IMAGE | Não | - |
 | `último_frame` | Imagem do último quadro para o vídeo. | IMAGE | Não | - |
 | `first_frame_asset_id` | asset_id do Seedance a ser usado como o primeiro quadro. Mutuamente exclusivo com a entrada de imagem `first_frame`. O padrão é uma string vazia. | STRING | Não | - |
@@ -23,7 +23,7 @@ Estas entradas aparecem quando `Seedance 2.5` é selecionado.
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Faixa |
 |-----------|-----------|---------------|-------------|-------|
 | `prompt` | Prompt de texto para geração de vídeo. Coloque falas entre aspas duplas para orientar o diálogo gerado. | STRING | Sim | - |
-| `resolution` | Resolução do vídeo de saída. O padrão é 720p. | COMBO | Sim | `"480p"`<br>`"720p"`<br>`"1080p"` |
+| `resolution` | Resolução do vídeo de saída. O padrão é 720p. `"4k"` está disponível apenas para contas empresariais. | COMBO | Sim | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duration` | Duração do vídeo de saída em segundos (4-30). O padrão é 5. | INT | Sim | 4 a 30 |
 | `generate_audio` | Ativar geração de áudio para o vídeo de saída. O padrão é True. | BOOLEAN | Sim | False<br>True |
 | `output_format` | Formato de contêiner do vídeo de saída. O padrão é mp4. | COMBO | Sim | `"mp4"` |
@@ -77,4 +77,4 @@ Compartilhadas por `Seedance 2.0 Fast` e `Seedance 2.0 Mini`.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `363f1baac1685c2dada0e64a0b339f6ab2671161dccb002eb81f6b4f0d0aa243`
+**Source fingerprint (SHA-256):** `91ffaf2bef597d080665d36fd07ef192df2884017738127a97941fcb0bf860a7`

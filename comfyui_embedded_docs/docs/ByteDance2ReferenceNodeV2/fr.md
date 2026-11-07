@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.5 Référence vers vidéo
 
-ByteDance Seedance 2.5 Reference to Video génère, modifie ou étend des vidéos à l'aide des modèles ByteDance Seedance (Seedance 2.5, 2.5 Draft, 2.0, 2.0 Fast et 2.0 Mini), guidé par un prompt texte et éventuellement des images, vidéos, audios de référence ou des assets de bibliothèque précédemment téléversés. Il téléverse les références, soumet une tâche de génération, attend la fin de l'exécution et renvoie le fichier vidéo final. Sélectionner `Seedance 2.5 Draft` produit à la place un aperçu rapide en 480p ; connectez le `draft_task_id` obtenu au nœud ByteDance Seedance 2.5 Draft to Final Video pour générer la version finale en 1080p.
+ByteDance Seedance 2.5 Reference to Video génère, modifie ou étend des vidéos à l'aide des modèles ByteDance Seedance (Seedance 2.5, 2.5 Draft, 2.0, 2.0 Fast et 2.0 Mini), guidé par un prompt texte et éventuellement des images, vidéos, audios de référence ou des assets de bibliothèque précédemment téléversés. Il téléverse les références, soumet une tâche de génération, attend la fin de l'exécution et renvoie le fichier vidéo final. Sélectionner `Seedance 2.5 Draft` produit à la place un aperçu rapide en 480p ; connectez le `draft_task_id` obtenu au nœud ByteDance Seedance 2.5 Draft to Final Video pour générer la version finale en 1080p ou 4k.
 
 ## Entrées
 
@@ -8,7 +8,7 @@ ByteDance Seedance 2.5 Reference to Video génère, modifie ou étend des vidéo
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `model` | Sélecteur de modèle. Seedance 2.5 pour le modèle le plus récent, des vidéos allant jusqu'à 30 secondes et une sortie mp4 ; Seedance 2.5 Draft pour un aperçu rapide en 480p dont la sortie `draft_task_id` génère la version finale en 1080p dans le nœud ByteDance Seedance 2.5 Draft to Final Video ; Seedance 2.0 pour une qualité maximale et la 4k ; Fast pour l'optimisation de la vitesse ; Mini pour la génération la plus rapide et la moins coûteuse. La sélection d'un modèle modifie les widgets d'entrée affichés ci-dessous. | DYNAMIC_COMBO | Oui | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
+| `model` | Sélecteur de modèle. Seedance 2.5 pour le modèle le plus récent, des vidéos allant jusqu'à 30 secondes et une sortie mp4 ; Seedance 2.5 Draft pour un aperçu rapide en 480p dont la sortie `draft_task_id` génère la version finale en 1080p ou 4k dans le nœud ByteDance Seedance 2.5 Draft to Final Video ; Seedance 2.0 pour une qualité maximale et la 4k ; Fast pour l'optimisation de la vitesse ; Mini pour la génération la plus rapide et la moins coûteuse. La sélection d'un modèle modifie les widgets d'entrée affichés ci-dessous. | DYNAMIC_COMBO | Oui | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
 | `seed` | `seed` contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. Par défaut : 0. | INT | Oui | 0 à 2147483647 |
 | `watermark` | Indique s'il faut ajouter un filigrane à la vidéo. Par défaut : False. Réglage avancé. | BOOLEAN | Oui | true<br>false |
 
@@ -19,7 +19,7 @@ Ces entrées apparaissent lorsque `model` est défini sur "Seedance 2.5".
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
 | `prompt` | Prompt texte pour la génération vidéo. Placez les répliques parlées entre guillemets doubles pour orienter le dialogue généré. Par défaut : chaîne vide. | STRING | Oui | Texte multiligne |
-| `resolution` | Résolution de la vidéo de sortie. Par défaut : 720p. | COMBO | Oui | "480p"<br>"720p"<br>"1080p" |
+| `resolution` | Résolution de la vidéo de sortie. Par défaut : 720p. `"4k"` est disponible uniquement pour les comptes d'entreprise. | COMBO | Oui | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | Rapport d'aspect de la vidéo de sortie. Par défaut : 16:9. | COMBO | Oui | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | Durée de la vidéo de sortie en secondes (4-30). Par défaut : 5. | INT | Oui | 4 à 30 |
 | `generate_audio` | Active la génération audio pour la vidéo de sortie. Par défaut : True. | BOOLEAN | Oui | true<br>false |
@@ -79,4 +79,4 @@ Ces emplacements de référence extensibles sont disponibles pour tous les modè
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNodeV2/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `12fee29b280ff71e29f268f52131d1c15cf3066e0804356b735b61d97c80a6a9`
+**Source fingerprint (SHA-256):** `9d01b783716319b2d21dbe035080539571545ccc3251a69440e0c113c19fb743`

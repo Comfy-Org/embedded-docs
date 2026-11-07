@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.0 İlk-Son-Kareden Videoya
 
-Bu düğüm, ByteDance Seedance modellerini kullanarak zorunlu bir ilk kare görüntüsünden ve isteğe bağlı bir son kare görüntüsünden video oluşturur. Videoyu bir metin istemiyle tanımlarsınız; ilk kare videonun başlangıcını, son kare ise bitişini yönlendirir. Seedance 2.5 ve Seedance 2.0 ailesini (Seedance 2.0, Seedance 2.0 Fast ve Seedance 2.0 Mini) destekler. `Seedance 2.5 Draft` modelini seçmek bunun yerine hızlı bir 480p önizleme oluşturur; elde edilen `draft_task_id` çıktısını 1080p finali oluşturmak için ByteDance Seedance 2.5 Draft to Final Video düğümüne bağlayın.
+Bu düğüm, ByteDance Seedance modellerini kullanarak zorunlu bir ilk kare görüntüsünden ve isteğe bağlı bir son kare görüntüsünden video oluşturur. Videoyu bir metin istemiyle tanımlarsınız; ilk kare videonun başlangıcını, son kare ise bitişini yönlendirir. Seedance 2.5 ve Seedance 2.0 ailesini (Seedance 2.0, Seedance 2.0 Fast ve Seedance 2.0 Mini) destekler. `Seedance 2.5 Draft` modelini seçmek bunun yerine hızlı bir 480p önizleme oluşturur; elde edilen `draft_task_id` çıktısını 1080p veya 4k finali oluşturmak için ByteDance Seedance 2.5 Draft to Final Video düğümüne bağlayın.
 
 ## Girdiler
 
@@ -8,7 +8,7 @@ Bu düğüm, ByteDance Seedance modellerini kullanarak zorunlu bir ilk kare gör
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | En yeni model için Seedance 2.5; 30 saniyeye kadar videolar ve mp4 çıktısı; `draft_task_id` çıktısı ByteDance Seedance 2.5 Draft to Final Video düğümünde 1080p finali oluşturan hızlı 480p önizleme için Seedance 2.5 Draft; maksimum kalite ve 4k için Seedance 2.0; hız optimizasyonu için Fast; en hızlı, en düşük maliyetli üretim için Mini. Bir model seçildiğinde aşağıda modele özgü girdiler görünür. | DYNAMIC_COMBO | Evet | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `model` | En yeni model için Seedance 2.5; 30 saniyeye kadar videolar ve mp4 çıktısı; `draft_task_id` çıktısı ByteDance Seedance 2.5 Draft to Final Video düğümünde 1080p veya 4k finali oluşturan hızlı 480p önizleme için Seedance 2.5 Draft; maksimum kalite ve 4k için Seedance 2.0; hız optimizasyonu için Fast; en hızlı, en düşük maliyetli üretim için Mini. Bir model seçildiğinde aşağıda modele özgü girdiler görünür. | DYNAMIC_COMBO | Evet | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `first_frame` | Video için ilk kare görüntüsü. | IMAGE | Hayır | - |
 | `last_frame` | Video için son kare görüntüsü. | IMAGE | Hayır | - |
 | `first_frame_asset_id` | İlk kare olarak kullanılacak Seedance asset_id değeri. `first_frame` görüntü girdisiyle karşılıklı olarak dışlayıcıdır. Varsayılan boş bir dizedir. | STRING | Hayır | - |
@@ -23,7 +23,7 @@ Bu girdiler `Seedance 2.5` seçildiğinde görünür.
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Video üretimi için metin istemi. Oluşturulan diyaloğu yönlendirmek için konuşma repliklerini çift tırnak içine alın. | STRING | Evet | - |
-| `resolution` | Çıktı videosunun çözünürlüğü. Varsayılan 720p'dir. | COMBO | Evet | `"480p"`<br>`"720p"`<br>`"1080p"` |
+| `resolution` | Çıktı videosunun çözünürlüğü. Varsayılan 720p'dir. `"4k"` yalnızca kurumsal hesaplar için kullanılabilir. | COMBO | Evet | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duration` | Çıktı videosunun saniye cinsinden süresi (4-30). Varsayılan 5'tir. | INT | Evet | 4 - 30 |
 | `generate_audio` | Çıktı videosu için ses üretimini etkinleştir. Varsayılan True. | BOOLEAN | Evet | False<br>True |
 | `output_format` | Çıktı videosunun kapsayıcı biçimi. Varsayılan mp4'tür. | COMBO | Evet | `"mp4"` |
@@ -77,4 +77,4 @@ Bu girdiler `Seedance 2.0` seçildiğinde görünür.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `363f1baac1685c2dada0e64a0b339f6ab2671161dccb002eb81f6b4f0d0aa243`
+**Source fingerprint (SHA-256):** `91ffaf2bef597d080665d36fd07ef192df2884017738127a97941fcb0bf860a7`

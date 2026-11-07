@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.5 Referência para Vídeo
 
-ByteDance Seedance 2.5 Reference to Video gera, edita ou estende vídeos usando modelos ByteDance Seedance (Seedance 2.5, 2.5 Draft, 2.0, 2.0 Fast e 2.0 Mini) guiado por um prompt de texto e imagens, vídeos, áudio ou ativos de biblioteca previamente enviados, todos opcionais. Ele faz upload das referências, envia uma tarefa de geração, aguarda a conclusão e retorna o arquivo de vídeo finalizado. Selecionar `Seedance 2.5 Draft` renderiza uma prévia rápida em 480p; conecte o `draft_task_id` resultante ao nó ByteDance Seedance 2.5 Draft to Final Video para renderizar o final em 1080p.
+ByteDance Seedance 2.5 Reference to Video gera, edita ou estende vídeos usando modelos ByteDance Seedance (Seedance 2.5, 2.5 Draft, 2.0, 2.0 Fast e 2.0 Mini) guiado por um prompt de texto e imagens, vídeos, áudio ou ativos de biblioteca previamente enviados, todos opcionais. Ele faz upload das referências, envia uma tarefa de geração, aguarda a conclusão e retorna o arquivo de vídeo finalizado. Selecionar `Seedance 2.5 Draft` renderiza uma prévia rápida em 480p; conecte o `draft_task_id` resultante ao nó ByteDance Seedance 2.5 Draft to Final Video para renderizar o final em 1080p ou 4k.
 
 ## Entradas
 
@@ -8,7 +8,7 @@ ByteDance Seedance 2.5 Reference to Video gera, edita ou estende vídeos usando 
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Seletor de modelo. Seedance 2.5 para o modelo mais recente, vídeos de até 30 segundos e saída mp4; Seedance 2.5 Draft para uma prévia rápida em 480p cuja saída `draft_task_id` renderiza o final em 1080p no nó ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.0 para qualidade máxima e 4k; Fast para otimização de velocidade; Mini para a geração mais rápida e de menor custo. Selecionar um modelo altera os widgets de entrada mostrados abaixo. | DYNAMIC_COMBO | Sim | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
+| `model` | Seletor de modelo. Seedance 2.5 para o modelo mais recente, vídeos de até 30 segundos e saída mp4; Seedance 2.5 Draft para uma prévia rápida em 480p cuja saída `draft_task_id` renderiza o final em 1080p ou 4k no nó ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.0 para qualidade máxima e 4k; Fast para otimização de velocidade; Mini para a geração mais rápida e de menor custo. Selecionar um modelo altera os widgets de entrada mostrados abaixo. | DYNAMIC_COMBO | Sim | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
 | `seed` | A `seed` controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 0. | INT | Sim | 0 a 2147483647 |
 | `watermark` | Se deve adicionar uma marca d'água ao vídeo. Padrão: False. Configuração avançada. | BOOLEAN | Sim | true<br>false |
 
@@ -19,7 +19,7 @@ Estas entradas aparecem quando `model` está definido como "Seedance 2.5".
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt de texto para geração de vídeo. Coloque falas entre aspas duplas para orientar o diálogo gerado. Padrão: string vazia. | STRING | Sim | Texto multilinha |
-| `resolution` | Resolução do vídeo de saída. Padrão: 720p. | COMBO | Sim | "480p"<br>"720p"<br>"1080p" |
+| `resolution` | Resolução do vídeo de saída. Padrão: 720p. `"4k"` está disponível apenas para contas empresariais. | COMBO | Sim | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | Proporção do vídeo de saída. Padrão: 16:9. | COMBO | Sim | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | Duração do vídeo de saída em segundos (4-30). Padrão: 5. | INT | Sim | 4 a 30 |
 | `generate_audio` | Ativar geração de áudio para o vídeo de saída. Padrão: True. | BOOLEAN | Sim | true<br>false |
@@ -79,4 +79,4 @@ Estes espaços de referência expansíveis estão disponíveis para todos os mod
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNodeV2/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `12fee29b280ff71e29f268f52131d1c15cf3066e0804356b735b61d97c80a6a9`
+**Source fingerprint (SHA-256):** `9d01b783716319b2d21dbe035080539571545ccc3251a69440e0c113c19fb743`

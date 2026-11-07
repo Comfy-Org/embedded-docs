@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.5 參考轉影片
 
-ByteDance Seedance 2.5 Reference to Video 會使用 ByteDance Seedance 模型（Seedance 2.5、2.5 Draft、2.0、2.0 Fast 與 2.0 Mini），在文字提示與可選的參考圖像、影片、音訊或先前上傳的素材庫素材引導下，產生、編輯或延長影片。它會上傳參考內容、提交生成任務、等待完成，並傳回完成的影片檔案。選擇 `Seedance 2.5 Draft` 時，會改為快速渲染 480p 預覽；將產生的 `draft_task_id` 連接到 ByteDance Seedance 2.5 Draft to Final Video 節點，即可渲染 1080p 最終影片。
+ByteDance Seedance 2.5 Reference to Video 會使用 ByteDance Seedance 模型（Seedance 2.5、2.5 Draft、2.0、2.0 Fast 與 2.0 Mini），在文字提示與可選的參考圖像、影片、音訊或先前上傳的素材庫素材引導下，產生、編輯或延長影片。它會上傳參考內容、提交生成任務、等待完成，並傳回完成的影片檔案。選擇 `Seedance 2.5 Draft` 時，會改為快速渲染 480p 預覽；將產生的 `draft_task_id` 連接到 ByteDance Seedance 2.5 Draft to Final Video 節點，即可渲染 1080p 或 4k 最終影片。
 
 ## 輸入
 
@@ -8,7 +8,7 @@ ByteDance Seedance 2.5 Reference to Video 會使用 ByteDance Seedance 模型（
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `模型` | 模型選擇器。Seedance 2.5 適用於最新模型，支援最長 30 秒的影片與 mp4 輸出；Seedance 2.5 Draft 適用於快速 480p 預覽，其 `draft_task_id` 輸出可在 ByteDance Seedance 2.5 Draft to Final Video 節點中渲染 1080p 最終影片；Seedance 2.0 適用於最高品質與 4k；Fast 適用於速度最佳化；Mini 適用於最快、成本最低的生成。選擇模型會變更下方顯示的輸入小工具。 | DYNAMIC_COMBO | 是 | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
+| `模型` | 模型選擇器。Seedance 2.5 適用於最新模型，支援最長 30 秒的影片與 mp4 輸出；Seedance 2.5 Draft 適用於快速 480p 預覽，其 `draft_task_id` 輸出可在 ByteDance Seedance 2.5 Draft to Final Video 節點中渲染 1080p 或 4k 最終影片；Seedance 2.0 適用於最高品質與 4k；Fast 適用於速度最佳化；Mini 適用於最快、成本最低的生成。選擇模型會變更下方顯示的輸入小工具。 | DYNAMIC_COMBO | 是 | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
 | `種子` | 種子會控制節點是否應重新執行；無論種子為何，結果都是非確定性的。預設值：0。 | INT | 是 | 0 至 2147483647 |
 | `浮水印` | 是否在影片中加入浮水印。預設值：False。進階設定。 | BOOLEAN | 是 | true<br>false |
 
@@ -19,7 +19,7 @@ ByteDance Seedance 2.5 Reference to Video 會使用 ByteDance Seedance 模型（
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | 用於影片生成的文字提示。將台詞放入雙引號中，可引導生成的對話。預設值：空字串。 | STRING | 是 | 多行文字 |
-| `resolution` | 輸出影片的解析度。預設值：720p。 | COMBO | 是 | "480p"<br>"720p"<br>"1080p" |
+| `resolution` | 輸出影片的解析度。預設值：720p。 `"4k"` 僅供企業帳戶使用。 | COMBO | 是 | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | 輸出影片的長寬比。預設值：16:9。 | COMBO | 是 | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | 輸出影片的持續時間（秒）（4-30）。預設值：5。 | INT | 是 | 4 至 30 |
 | `generate_audio` | 啟用輸出影片的音訊生成。預設值：True。 | BOOLEAN | 是 | true<br>false |
@@ -79,4 +79,4 @@ ByteDance Seedance 2.5 Reference to Video 會使用 ByteDance Seedance 模型（
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNodeV2/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `12fee29b280ff71e29f268f52131d1c15cf3066e0804356b735b61d97c80a6a9`
+**Source fingerprint (SHA-256):** `9d01b783716319b2d21dbe035080539571545ccc3251a69440e0c113c19fb743`

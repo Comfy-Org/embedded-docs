@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.0 Texte vers Vidéo
 
-Ce nœud génère une vidéo à partir d’un prompt textuel en utilisant les modèles Seedance 2.5 ou 2.0 de ByteDance. Il envoie le prompt au modèle sélectionné, attend la fin du traitement de la vidéo et renvoie le fichier vidéo résultant. Sélectionner le modèle `Seedance 2.5 Draft` produit à la place un aperçu 480p rapide ; connectez la sortie `draft_task_id` résultante au nœud ByteDance Seedance 2.5 Draft to Final Video pour générer le final 1080p.
+Ce nœud génère une vidéo à partir d’un prompt textuel en utilisant les modèles Seedance 2.5 ou 2.0 de ByteDance. Il envoie le prompt au modèle sélectionné, attend la fin du traitement de la vidéo et renvoie le fichier vidéo résultant. Sélectionner le modèle `Seedance 2.5 Draft` produit à la place un aperçu 480p rapide ; connectez la sortie `draft_task_id` résultante au nœud ByteDance Seedance 2.5 Draft to Final Video pour générer le final 1080p ou 4k.
 
 ## Entrées
 
@@ -8,7 +8,7 @@ Ce nœud génère une vidéo à partir d’un prompt textuel en utilisant les mo
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `modèle` | Modèle Seedance à utiliser pour la génération vidéo. Seedance 2.5 est le modèle le plus récent, prenant en charge des vidéos jusqu’à 30 secondes et une sortie mp4 ; Seedance 2.5 Draft produit un aperçu 480p rapide dont la sortie `draft_task_id` produit le final 1080p dans le nœud ByteDance Seedance 2.5 Draft to Final Video ; Seedance 2.0 est destiné à une qualité maximale et à la 4k ; Seedance 2.0 Fast est destiné à l’optimisation de la vitesse ; Seedance 2.0 Mini est destiné à la génération la plus rapide et au coût le plus faible. Sélectionner un modèle affiche des entrées supplémentaires pour le prompt, la résolution, le rapport d’aspect, la durée et la génération audio. | DYNAMIC_COMBO | Oui | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `modèle` | Modèle Seedance à utiliser pour la génération vidéo. Seedance 2.5 est le modèle le plus récent, prenant en charge des vidéos jusqu’à 30 secondes et une sortie mp4 ; Seedance 2.5 Draft produit un aperçu 480p rapide dont la sortie `draft_task_id` produit le final 1080p ou 4k dans le nœud ByteDance Seedance 2.5 Draft to Final Video ; Seedance 2.0 est destiné à une qualité maximale et à la 4k ; Seedance 2.0 Fast est destiné à l’optimisation de la vitesse ; Seedance 2.0 Mini est destiné à la génération la plus rapide et au coût le plus faible. Sélectionner un modèle affiche des entrées supplémentaires pour le prompt, la résolution, le rapport d’aspect, la durée et la génération audio. | DYNAMIC_COMBO | Oui | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `seed` | Contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la valeur de `seed`. (par défaut : 0) | INT | Non | 0 à 2147483647 |
 | `filigrane` | Indique s’il faut ajouter un filigrane à la vidéo. (par défaut : False) Il s’agit d’un paramètre avancé. | BOOLEAN | Non | True / False |
 
@@ -17,7 +17,7 @@ Ce nœud génère une vidéo à partir d’un prompt textuel en utilisant les mo
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `prompt` | Prompt textuel pour la génération de la vidéo. Placez les répliques parlées entre guillemets doubles pour orienter le dialogue généré. | STRING | Oui | — |
-| `resolution` | Résolution de la vidéo de sortie. (par défaut : `"720p"`) | COMBO | Oui | `"480p"`<br>`"720p"`<br>`"1080p"` |
+| `resolution` | Résolution de la vidéo de sortie. `"4k"` est disponible uniquement pour les comptes d'entreprise. (par défaut : `"720p"`) | COMBO | Oui | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `ratio` | Rapport d’aspect de la vidéo de sortie. (par défaut : `"16:9"`) | COMBO | Oui | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
 | `duration` | Durée de la vidéo de sortie en secondes. (par défaut : 5) | INT | Oui | 4 à 30 |
 | `generate_audio` | Active la génération audio pour la vidéo de sortie. (par défaut : True) | BOOLEAN | Oui | True / False |
@@ -49,7 +49,7 @@ Ces entrées sont partagées par Seedance 2.0 Fast et Seedance 2.0 Mini ; les de
 | `duration` | Durée de la vidéo de sortie en secondes. (par défaut : 7) | INT | Oui | 4 à 15 |
 | `generate_audio` | Active la génération audio pour la vidéo de sortie. (par défaut : True) | BOOLEAN | Oui | True / False |
 
-**Remarque :** Le sélecteur `model` est dynamique ; les entrées affichées sous chaque section de modèle apparaissent lorsque ce modèle est sélectionné. Le prompt doit comporter au moins 1 caractère après suppression des espaces. Les limites de résolution et de durée dépendent du modèle sélectionné : Seedance 2.5 prend en charge 480p/720p/1080p et 4 à 30 secondes, Seedance 2.0 prend en charge 480p/720p/1080p/4k et 4 à 15 secondes, et Seedance 2.0 Fast et Seedance 2.0 Mini prennent en charge uniquement 480p/720p et 4 à 15 secondes ; Seedance 2.5 Draft prend en charge uniquement 480p et 4 à 30 secondes. Chaque exécution renvoie son ID de tâche en tant que `draft_task_id`, mais seul l’ID d’une exécution `Seedance 2.5 Draft` peut être rendu par le nœud ByteDance Seedance 2.5 Draft to Final Video ; avec tout autre modèle, la sortie doit rester non connectée, sinon l’exécution échoue. La valeur de `seed` contrôle uniquement si le nœud doit être réexécuté ; elle ne rend pas les résultats déterministes.
+**Remarque :** Le sélecteur `model` est dynamique ; les entrées affichées sous chaque section de modèle apparaissent lorsque ce modèle est sélectionné. Le prompt doit comporter au moins 1 caractère après suppression des espaces. Les limites de résolution et de durée dépendent du modèle sélectionné : Seedance 2.5 prend en charge 480p/720p/1080p/4k et 4 à 30 secondes, Seedance 2.0 prend en charge 480p/720p/1080p/4k et 4 à 15 secondes, et Seedance 2.0 Fast et Seedance 2.0 Mini prennent en charge uniquement 480p/720p et 4 à 15 secondes ; Seedance 2.5 Draft prend en charge uniquement 480p et 4 à 30 secondes. Chaque exécution renvoie son ID de tâche en tant que `draft_task_id`, mais seul l’ID d’une exécution `Seedance 2.5 Draft` peut être rendu par le nœud ByteDance Seedance 2.5 Draft to Final Video ; avec tout autre modèle, la sortie doit rester non connectée, sinon l’exécution échoue. La valeur de `seed` contrôle uniquement si le nœud doit être réexécuté ; elle ne rend pas les résultats déterministes.
 
 ## Sorties
 
@@ -61,4 +61,4 @@ Ces entrées sont partagées par Seedance 2.0 Fast et Seedance 2.0 Mini ; les de
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2TextToVideoNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `2abad0c4eab5a1286c8da9237bcec52b275c40188b3b7dc9eede5d5f4cbb11d3`
+**Source fingerprint (SHA-256):** `376cd0472e6d4e0b2d4c8873568bc4c7bd62f982e1be9cbb15839cd29deb867d`
