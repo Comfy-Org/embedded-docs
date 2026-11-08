@@ -12,6 +12,8 @@ Modifica una o più immagini esistenti in base a un prompt testuale. Il nodo inv
 | `prompt` | Il prompt testuale utilizzato per generare l'immagine. (predefinito: "") | STRING | Sì | N/D |
 | `seed` | Seed per determinare se il nodo deve essere rieseguito; i risultati effettivi sono non deterministici indipendentemente dal seed. (predefinito: 0) | INT | Sì | 0 a 2147483647 |
 
+**Nota:** `grok-imagine-image-quality` e `grok-imagine-image-pro` sono stati ritirati da xAI e ora vengono eseguiti come `grok-imagine-image-2.0` a qualità bassa.
+
 ### Input di grok-imagine-image-2.0
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
@@ -21,9 +23,15 @@ Modifica una o più immagini esistenti in base a un prompt testuale. Il nodo inv
 | `quality` | Livello di qualità delle immagini generate. | COMBO | Sì | "medium"<br>"low" |
 | `aspect_ratio` | Proporzioni dell'immagine modificata. (predefinito: "auto") | COMBO | Sì | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
 
-### Input di grok-imagine-image-quality e grok-imagine-image
+### Input di grok-imagine-image-quality
 
-Condiviso da grok-imagine-image-quality e grok-imagine-image.
+| Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
+|-----------|-------------|--------------|--------------|------------|
+| `resolution` | Risoluzione di output delle immagini modificate. | COMBO | Sì | "1K"<br>"2K" |
+| `number_of_images` | Numero di immagini modificate da generare. (predefinito: 1) | INT | Sì | 1 a 10 |
+| `aspect_ratio` | Proporzioni dell'immagine modificata. (predefinito: "auto") | COMBO | Sì | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
+
+### Input di grok-imagine-image
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
@@ -49,8 +57,8 @@ Condiviso da grok-imagine-image-quality e grok-imagine-image.
 - È richiesta almeno un'immagine di riferimento per la modifica; il nodo genera un errore se non è collegata alcuna immagine.
 - Il numero massimo di immagini di input è 1 per `grok-imagine-image-pro` e 3 per `grok-imagine-image-2.0`, `grok-imagine-image-quality` e `grok-imagine-image`. Collegare più immagini di quante il modello supporta genera un errore.
 - Il limite di immagini conta ogni immagine negli input collegati, quindi un batch contenente diverse immagini conta come diverse immagini ai fini del limite.
-- Per `grok-imagine-image-quality` e `grok-imagine-image`, un `aspect_ratio` personalizzato (qualsiasi cosa diversa da "auto") è consentito solo quando sono collegate più immagini. Con una singola immagine, `aspect_ratio` deve essere "auto".
-- Per `grok-imagine-image-2.0`, `aspect_ratio` può essere impostato liberamente anche con una singola immagine.
+- Per `grok-imagine-image`, un `aspect_ratio` personalizzato (qualsiasi cosa diversa da "auto") è consentito solo quando sono collegate più immagini. Con una singola immagine, `aspect_ratio` deve essere "auto".
+- Per `grok-imagine-image-2.0` e `grok-imagine-image-quality`, `aspect_ratio` può essere impostato liberamente anche con una singola immagine.
 - Il sotto-parametro `quality` è disponibile solo con `grok-imagine-image-2.0`.
 
 ## Output
@@ -62,4 +70,4 @@ Condiviso da grok-imagine-image-quality e grok-imagine-image.
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokImageEditNodeV2/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `7d75b1cb8405c5024567b1119bcbd5e4b318152605f74b62bdd5173dda75949f`
+**Source fingerprint (SHA-256):** `b8f4a86a3dd3a9cf1a24531fad4c62642e4c6de75a598fbe263ff8d3d16800d5`

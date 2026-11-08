@@ -16,7 +16,7 @@ Grok Image 節點使用 Grok AI 模型，根據文字描述生成一張或多張
 
 **注意：** `seed` 參數主要用於控制節點在工作流程中何時重新執行。由於外部 AI 服務的特性，即使使用相同的種子，生成的圖像在每次執行之間也無法重現或完全相同。
 
-**定價注意事項：** 生成圖像的成本取決於所選的 `model`、`resolution`、`quality` 和 `number_of_images`。對於 `grok-imagine-image-2.0` 模型，"low" 品質在 1K 解析度下每張圖像為 $0.04，在 2K 解析度下每張圖像為 $0.06；其他品質等級在 1K 下每張圖像為 $0.06，在 2K 下每張圖像為 $0.08。`grok-imagine-image-quality` 模型在 1K 解析度下每張圖像為 $0.05，在 2K 解析度下每張圖像為 $0.07。`grok-imagine-image-pro` 模型每張圖像為 $0.07。`grok-imagine-image` 模型每張圖像為 $0.02。
+**定價注意事項：** 生成圖像的成本取決於所選的 `model`、`resolution`、`quality` 和 `number_of_images`。對於 `grok-imagine-image-2.0` 模型，"low" 品質在 1K 解析度下每張圖像為 $0.04，在 2K 解析度下每張圖像為 $0.06；其他品質等級在 1K 下每張圖像為 $0.06，在 2K 下每張圖像為 $0.08。`grok-imagine-image-quality` 與 `grok-imagine-image-pro` 已被 xAI 停用，現在以 `grok-imagine-image-2.0` 的低品質模式執行，因此每張圖像在 1K 解析度下為 $0.04，在 2K 解析度下為 $0.06。`grok-imagine-image` 模型每張圖像為 $0.02。
 
 ## 輸出
 
@@ -27,4 +27,4 @@ Grok Image 節點使用 Grok AI 模型，根據文字描述生成一張或多張
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokImageNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `a89f5df0d4827f45013f1af92541d36b5b8c8edc8626e07af4fe2d85ee5486e7`
+**Source fingerprint (SHA-256):** `c5d9f7f0b5c922896495b974708eac70d023a53816b8d584764356e83c859175`

@@ -16,7 +16,7 @@ O nó Grok Image gera uma ou mais imagens a partir de uma descrição de texto u
 
 **Observação:** O parâmetro `seed` é usado principalmente para controlar quando o nó é reexecutado dentro de um fluxo de trabalho. Devido à natureza do serviço externo de IA, as imagens geradas não serão reproduzíveis ou idênticas entre execuções, mesmo com uma semente idêntica.
 
-**Observação sobre preços:** O custo de geração de imagens depende do `model`, `resolution`, `quality` e `number_of_images` selecionados. Para o modelo `grok-imagine-image-2.0`, a qualidade "low" custa US$ 0,04 por imagem na resolução 1K e US$ 0,06 por imagem na resolução 2K; outros níveis de qualidade custam US$ 0,06 por imagem em 1K e US$ 0,08 por imagem em 2K. O modelo `grok-imagine-image-quality` custa US$ 0,05 por imagem na resolução 1K e US$ 0,07 por imagem na resolução 2K. O modelo `grok-imagine-image-pro` custa US$ 0,07 por imagem. O modelo `grok-imagine-image` custa US$ 0,02 por imagem.
+**Observação sobre preços:** O custo de geração de imagens depende do `model`, `resolution`, `quality` e `number_of_images` selecionados. Para o modelo `grok-imagine-image-2.0`, a qualidade "low" custa US$ 0,04 por imagem na resolução 1K e US$ 0,06 por imagem na resolução 2K; outros níveis de qualidade custam US$ 0,06 por imagem em 1K e US$ 0,08 por imagem em 2K. `grok-imagine-image-quality` e `grok-imagine-image-pro` foram descontinuados pela xAI e agora são executados como `grok-imagine-image-2.0` com qualidade baixa, custando US$ 0,04 por imagem em 1K e US$ 0,06 em 2K.O modelo `grok-imagine-image` custa US$ 0,02 por imagem.
 
 ## Saídas
 
@@ -27,4 +27,4 @@ O nó Grok Image gera uma ou mais imagens a partir de uma descrição de texto u
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokImageNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `a89f5df0d4827f45013f1af92541d36b5b8c8edc8626e07af4fe2d85ee5486e7`
+**Source fingerprint (SHA-256):** `c5d9f7f0b5c922896495b974708eac70d023a53816b8d584764356e83c859175`

@@ -16,7 +16,7 @@ Le nœud Grok Image génère une ou plusieurs images à partir d’une descripti
 
 **Remarque :** Le paramètre `seed` est principalement utilisé pour contrôler le moment où le nœud se réexécute dans un workflow. En raison de la nature du service d’IA externe, les images générées ne seront pas reproductibles ni identiques d’une exécution à l’autre, même avec une graine identique.
 
-**Remarque sur la tarification :** Le coût de génération des images dépend du `model`, de la `resolution`, de la `quality` et du `number_of_images` sélectionnés. Pour le modèle `grok-imagine-image-2.0`, la qualité "low" coûte $0.04 par image en résolution 1K et $0.06 par image en résolution 2K ; les autres niveaux de qualité coûtent $0.06 par image en 1K et $0.08 par image en 2K. Le modèle `grok-imagine-image-quality` coûte $0.05 par image en résolution 1K et $0.07 par image en résolution 2K. Le modèle `grok-imagine-image-pro` coûte $0.07 par image. Le modèle `grok-imagine-image` coûte $0.02 par image.
+**Remarque sur la tarification :** Le coût de génération des images dépend du `model`, de la `resolution`, de la `quality` et du `number_of_images` sélectionnés. Pour le modèle `grok-imagine-image-2.0`, la qualité "low" coûte $0.04 par image en résolution 1K et $0.06 par image en résolution 2K ; les autres niveaux de qualité coûtent $0.06 par image en 1K et $0.08 par image en 2K. `grok-imagine-image-quality` et `grok-imagine-image-pro` sont retirés par xAI et s'exécutent désormais comme `grok-imagine-image-2.0` en qualité basse, soit $0.04 par image en 1K et $0.06 en 2K.Le modèle `grok-imagine-image` coûte $0.02 par image.
 
 ## Sorties
 
@@ -27,4 +27,4 @@ Le nœud Grok Image génère une ou plusieurs images à partir d’une descripti
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokImageNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `a89f5df0d4827f45013f1af92541d36b5b8c8edc8626e07af4fe2d85ee5486e7`
+**Source fingerprint (SHA-256):** `c5d9f7f0b5c922896495b974708eac70d023a53816b8d584764356e83c859175`

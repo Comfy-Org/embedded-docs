@@ -12,6 +12,8 @@ Modifique uma ou mais imagens existentes com base em um prompt de texto. O nó e
 | `prompt` | O prompt de texto usado para gerar a imagem. (padrão: "") | STRING | Sim | N/A |
 | `semente` | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente. (padrão: 0) | INT | Sim | 0 a 2147483647 |
 
+**Nota:** `grok-imagine-image-quality` e `grok-imagine-image-pro` foram descontinuados pela xAI e agora são executados como `grok-imagine-image-2.0` com qualidade baixa.
+
 ### Entradas do grok-imagine-image-2.0
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
@@ -21,9 +23,15 @@ Modifique uma ou mais imagens existentes com base em um prompt de texto. O nó e
 | `quality` | Nível de qualidade das imagens geradas. | COMBO | Sim | "medium"<br>"low" |
 | `aspect_ratio` | Proporção de aspecto da imagem editada. (padrão: "auto") | COMBO | Sim | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
 
-### Entradas do grok-imagine-image-quality e do grok-imagine-image
+### Entradas do grok-imagine-image-quality
 
-Compartilhado por grok-imagine-image-quality e grok-imagine-image.
+| Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `resolution` | Resolução de saída das imagens editadas. | COMBO | Sim | "1K"<br>"2K" |
+| `number_of_images` | Número de imagens editadas a serem geradas. (padrão: 1) | INT | Sim | 1 a 10 |
+| `aspect_ratio` | Proporção de aspecto da imagem editada. (padrão: "auto") | COMBO | Sim | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
+
+### Entradas do grok-imagine-image
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
@@ -49,8 +57,8 @@ Compartilhado por grok-imagine-image-quality e grok-imagine-image.
 - Pelo menos uma imagem de referência é obrigatória para edição; o nó lança um erro se nenhuma imagem estiver conectada.
 - O número máximo de imagens de entrada é 1 para `grok-imagine-image-pro` e 3 para `grok-imagine-image-2.0`, `grok-imagine-image-quality` e `grok-imagine-image`. Conectar mais imagens do que o modelo suporta lança um erro.
 - O limite de imagens conta cada imagem nas entradas conectadas, portanto, um lote contendo várias imagens conta como várias imagens para o limite.
-- Para `grok-imagine-image-quality` e `grok-imagine-image`, um `aspect_ratio` personalizado (qualquer valor diferente de "auto") só é permitido quando várias imagens estão conectadas. Com uma única imagem, `aspect_ratio` deve ser "auto".
-- Para `grok-imagine-image-2.0`, `aspect_ratio` pode ser definido livremente mesmo com uma única imagem.
+- Para `grok-imagine-image`, um `aspect_ratio` personalizado (qualquer valor diferente de "auto") só é permitido quando várias imagens estão conectadas. Com uma única imagem, `aspect_ratio` deve ser "auto".
+- Para `grok-imagine-image-2.0` e `grok-imagine-image-quality`, `aspect_ratio` pode ser definido livremente mesmo com uma única imagem.
 - O subparâmetro `quality` só está disponível com `grok-imagine-image-2.0`.
 
 ## Saídas
@@ -62,4 +70,4 @@ Compartilhado por grok-imagine-image-quality e grok-imagine-image.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokImageEditNodeV2/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `7d75b1cb8405c5024567b1119bcbd5e4b318152605f74b62bdd5173dda75949f`
+**Source fingerprint (SHA-256):** `b8f4a86a3dd3a9cf1a24531fad4c62642e4c6de75a598fbe263ff8d3d16800d5`

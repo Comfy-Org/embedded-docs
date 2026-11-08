@@ -12,6 +12,8 @@
 | `prompt` | פרומפט הטקסט המשמש ליצירת התמונה. (ברירת מחדל: "") | STRING | כן | N/A |
 | `seed` | ערך `seed` לקביעה אם הצומת צריך לרוץ מחדש; התוצאות בפועל אינן דטרמיניסטיות ללא תלות ב-`seed`. (ברירת מחדל: 0) | INT | כן | 0 עד 2147483647 |
 
+**הערה:** `grok-imagine-image-quality` ו-`grok-imagine-image-pro` הופסקו על ידי xAI והם פועלים כעת כ-`grok-imagine-image-2.0` באיכות נמוכה.
+
 ### קלטים של grok-imagine-image-2.0
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
@@ -21,9 +23,15 @@
 | `quality` | רמת האיכות של התמונות הנוצרות. | COMBO | כן | "medium"<br>"low" |
 | `aspect_ratio` | יחס הגובה-רוחב של התמונה הערוכה. (ברירת מחדל: "auto") | COMBO | כן | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
 
-### קלטים של grok-imagine-image-quality ו-grok-imagine-image
+### קלטים של grok-imagine-image-quality
 
-משותף על ידי grok-imagine-image-quality ו-grok-imagine-image.
+| פרמטר | תיאור | סוג נתונים | חובה | טווח |
+|-----------|-------------|-----------|----------|-------|
+| `resolution` | רזולוציית הפלט של התמונות הערוכות. | COMBO | כן | "1K"<br>"2K" |
+| `number_of_images` | מספר התמונות הערוכות ליצירה. (ברירת מחדל: 1) | INT | כן | 1 עד 10 |
+| `aspect_ratio` | יחס הגובה-רוחב של התמונה הערוכה. (ברירת מחדל: "auto") | COMBO | כן | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
+
+### קלטים של grok-imagine-image
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
@@ -49,8 +57,8 @@
 - נדרשת לפחות תמונת עזר אחת לעריכה; הצומת מעלה שגיאה אם לא מחוברת תמונה.
 - מספר תמונות הקלט המקסימלי הוא 1 עבור `grok-imagine-image-pro` ו-3 עבור `grok-imagine-image-2.0`, `grok-imagine-image-quality`, ו-`grok-imagine-image`. חיבור יותר תמונות מהנתמך על ידי המודל מעלה שגיאה.
 - מגבלת התמונות סופרת כל תמונה בקלטים המחוברים, כך שאצווה המכילה מספר תמונות נספרת כמספר תמונות לצורך המגבלה.
-- עבור `grok-imagine-image-quality` ו-`grok-imagine-image`, `aspect_ratio` מותאם אישית (כל דבר מלבד "auto") מותר רק כאשר מחוברות מספר תמונות. עם תמונה בודדת, `aspect_ratio` חייב להיות "auto".
-- עבור `grok-imagine-image-2.0`, ניתן להגדיר `aspect_ratio` באופן חופשי גם עם תמונה בודדת.
+- עבור `grok-imagine-image`, `aspect_ratio` מותאם אישית (כל דבר מלבד "auto") מותר רק כאשר מחוברות מספר תמונות. עם תמונה בודדת, `aspect_ratio` חייב להיות "auto".
+- עבור `grok-imagine-image-2.0` ו-`grok-imagine-image-quality`, ניתן להגדיר `aspect_ratio` באופן חופשי גם עם תמונה בודדת.
 - תת-הפרמטר `quality` זמין רק עם `grok-imagine-image-2.0`.
 
 ## פלטים
@@ -62,4 +70,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokImageEditNodeV2/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `7d75b1cb8405c5024567b1119bcbd5e4b318152605f74b62bdd5173dda75949f`
+**Source fingerprint (SHA-256):** `b8f4a86a3dd3a9cf1a24531fad4c62642e4c6de75a598fbe263ff8d3d16800d5`

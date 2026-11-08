@@ -16,7 +16,7 @@ Der Grok Image-Node generiert ein oder mehrere Bilder aus einer Textbeschreibung
 
 **Hinweis:** Der Parameter `seed` wird hauptsächlich verwendet, um zu steuern, wann der Node innerhalb eines Workflows erneut ausgeführt wird. Aufgrund der Natur des externen KI-Dienstes sind die generierten Bilder nicht reproduzierbar und über mehrere Ausführungen hinweg nicht identisch, selbst bei identischem Seed.
 
-**Hinweis zur Preisgestaltung:** Die Kosten für die Generierung von Bildern hängen vom ausgewählten `model`, `resolution`, `quality` und `number_of_images` ab. Beim Modell `grok-imagine-image-2.0` kostet die Qualität „low“ 0,04 $ pro Bild bei 1K-Auflösung und 0,06 $ pro Bild bei 2K-Auflösung; andere Qualitätsstufen kosten 0,06 $ pro Bild bei 1K und 0,08 $ pro Bild bei 2K. Das Modell `grok-imagine-image-quality` kostet 0,05 $ pro Bild bei 1K-Auflösung und 0,07 $ pro Bild bei 2K-Auflösung. Das Modell `grok-imagine-image-pro` kostet 0,07 $ pro Bild. Das Modell `grok-imagine-image` kostet 0,02 $ pro Bild.
+**Hinweis zur Preisgestaltung:** Die Kosten für die Generierung von Bildern hängen vom ausgewählten `model`, `resolution`, `quality` und `number_of_images` ab. Beim Modell `grok-imagine-image-2.0` kostet die Qualität „low“ 0,04 $ pro Bild bei 1K-Auflösung und 0,06 $ pro Bild bei 2K-Auflösung; andere Qualitätsstufen kosten 0,06 $ pro Bild bei 1K und 0,08 $ pro Bild bei 2K. `grok-imagine-image-quality` und `grok-imagine-image-pro` wurden von xAI eingestellt und laufen jetzt als `grok-imagine-image-2.0` mit niedriger Qualität, sie kosten daher 0,04 $ pro Bild bei 1K und 0,06 $ pro Bild bei 2K.Das Modell `grok-imagine-image` kostet 0,02 $ pro Bild.
 
 ## Ausgaben
 
@@ -27,4 +27,4 @@ Der Grok Image-Node generiert ein oder mehrere Bilder aus einer Textbeschreibung
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokImageNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `a89f5df0d4827f45013f1af92541d36b5b8c8edc8626e07af4fe2d85ee5486e7`
+**Source fingerprint (SHA-256):** `c5d9f7f0b5c922896495b974708eac70d023a53816b8d584764356e83c859175`
