@@ -16,7 +16,7 @@ O nó Grok Image gera uma ou mais imagens a partir de uma descrição de texto u
 
 **Observação:** O parâmetro `seed` é usado principalmente para controlar quando o nó é reexecutado dentro de um fluxo de trabalho. Devido à natureza do serviço externo de IA, as imagens geradas não serão reproduzíveis ou idênticas entre execuções, mesmo com uma semente idêntica.
 
-**Observação sobre preços:** O custo de geração de imagens depende do `model`, `resolution`, `quality` e `number_of_images` selecionados. Para o modelo `grok-imagine-image-2.0`, a qualidade "low" custa US$ 0,04 por imagem na resolução 1K e US$ 0,06 por imagem na resolução 2K; outros níveis de qualidade custam US$ 0,06 por imagem em 1K e US$ 0,08 por imagem em 2K. `grok-imagine-image-quality` e `grok-imagine-image-pro` foram descontinuados pela xAI e agora são executados como `grok-imagine-image-2.0` com qualidade baixa, custando US$ 0,04 por imagem em 1K e US$ 0,06 em 2K.O modelo `grok-imagine-image` custa US$ 0,02 por imagem.
+**Observação sobre preços:** O custo de geração de imagens depende do `model`, `resolution`, `quality` e `number_of_images` selecionados. Para o modelo `grok-imagine-image-2.0`, a qualidade "low" custa US$ 0,04 por imagem na resolução 1K e US$ 0,06 por imagem na resolução 2K; outros níveis de qualidade custam US$ 0,06 por imagem em 1K e US$ 0,08 por imagem em 2K. `grok-imagine-image-quality` e `grok-imagine-image-pro` foram descontinuados pela xAI e agora são executados como `grok-imagine-image-2.0` com qualidade baixa, custando US$ 0,04 por imagem em 1K e US$ 0,06 em 2K. O modelo `grok-imagine-image` custa US$ 0,02 por imagem.
 
 ## Saídas
 

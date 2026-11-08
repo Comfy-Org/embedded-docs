@@ -16,7 +16,7 @@ The Grok Image node generates one or more images from a text description using t
 
 **Note:** The `seed` parameter is primarily used to control when the node re-executes within a workflow. Due to the nature of the external AI service, the generated images will not be reproducible or identical across runs, even with an identical seed.
 
-**Note on pricing:** The cost of generating images depends on the selected `model`, `resolution`, `quality`, and `number_of_images`. For the `grok-imagine-image-2.0` model, "low" quality costs $0.04 per image at 1K resolution and $0.06 per image at 2K resolution; other quality levels cost $0.06 per image at 1K and $0.08 per image at 2K. `grok-imagine-image-quality` and `grok-imagine-image-pro` are retired by xAI and now run as `grok-imagine-image-2.0` at low quality, so they cost $0.04 per image at 1K resolution and $0.06 per image at 2K.The `grok-imagine-image` model costs $0.02 per image.
+**Note on pricing:** The cost of generating images depends on the selected `model`, `resolution`, `quality`, and `number_of_images`. For the `grok-imagine-image-2.0` model, "low" quality costs $0.04 per image at 1K resolution and $0.06 per image at 2K resolution; other quality levels cost $0.06 per image at 1K and $0.08 per image at 2K. `grok-imagine-image-quality` and `grok-imagine-image-pro` are retired by xAI and now run as `grok-imagine-image-2.0` at low quality, so they cost $0.04 per image at 1K resolution and $0.06 per image at 2K. The `grok-imagine-image` model costs $0.02 per image.
 
 ## Outputs
 

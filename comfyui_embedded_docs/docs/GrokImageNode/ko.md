@@ -16,7 +16,7 @@ Grok Image 노드는 Grok AI 모델을 사용하여 텍스트 설명으로부터
 
 **참고:** `seed` 매개변수는 주로 워크플로 내에서 노드가 다시 실행되는 시점을 제어하는 데 사용됩니다. 외부 AI 서비스의 특성상, 동일한 시드를 사용하더라도 생성된 이미지는 실행마다 재현되거나 동일하지 않습니다.
 
-**가격 참고:** 이미지 생성 비용은 선택한 `model`, `resolution`, `quality`, `number_of_images`에 따라 달라집니다. `grok-imagine-image-2.0` 모델의 경우, "low" 품질은 1K 해상도에서 이미지당 $0.04, 2K 해상도에서 이미지당 $0.06입니다. 다른 품질 수준은 1K에서 이미지당 $0.06, 2K에서 이미지당 $0.08입니다. `grok-imagine-image-quality` 및 `grok-imagine-image-pro`는 xAI에서 지원이 종료되어 이제 `grok-imagine-image-2.0`의 낮은 품질로 실행되므로 1K에서 이미지당 $0.04, 2K에서 이미지당 $0.06입니다.`grok-imagine-image` 모델은 이미지당 $0.02입니다.
+**가격 참고:** 이미지 생성 비용은 선택한 `model`, `resolution`, `quality`, `number_of_images`에 따라 달라집니다. `grok-imagine-image-2.0` 모델의 경우, "low" 품질은 1K 해상도에서 이미지당 $0.04, 2K 해상도에서 이미지당 $0.06입니다. 다른 품질 수준은 1K에서 이미지당 $0.06, 2K에서 이미지당 $0.08입니다. `grok-imagine-image-quality` 및 `grok-imagine-image-pro`는 xAI에서 지원이 종료되어 이제 `grok-imagine-image-2.0`의 낮은 품질로 실행되므로 1K에서 이미지당 $0.04, 2K에서 이미지당 $0.06입니다. `grok-imagine-image` 모델은 이미지당 $0.02입니다.
 
 ## 출력
 
