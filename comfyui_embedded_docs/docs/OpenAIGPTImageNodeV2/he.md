@@ -30,6 +30,20 @@
 | `model.mask` | מסכה אופציונלית ל-inpainting (אזורים לבנים יוחלפו). דורשת תמונת עזר אחת בדיוק. | MASK | לא | N/A |
 | `model.complexity` | באיזו מידה המודל מתכנן את התמונה לפני הרינדור. ערכים נמוכים מחזירים תוצאה מהר יותר, ערכים גבוהים מתכננים יותר. ברירת מחדל: `"high"`. | COMBO | כן | `"low"`<br>`"medium"`<br>`"high"` |
 
+### קלטים של gpt-image-2.5-flare ו-gpt-image-2.5-sunburst
+
+קלטים אלה מופיעים כאשר `model` מוגדר ל-`gpt-image-2.5-flare` או `gpt-image-2.5-sunburst`. שני המודלים חולקים את אותה קבוצת פרמטרים.
+
+| פרמטר | תיאור | סוג נתונים | חובה | טווח |
+| --- | --- | --- | --- | --- |
+| `size` | גודל התמונה. בחר "Custom" כדי להשתמש ברוחב ובגובה המותאמים אישית (ברירת מחדל: `"auto"`). | COMBO | כן | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `custom_width` | משמש רק כאשר `model.size` הוא "Custom". חייב להיות כפולה של 16 (ברירת מחדל: `1024`). | INT | לא | 480 עד 3840 (צעד 16) |
+| `custom_height` | משמש רק כאשר `model.size` הוא "Custom". חייב להיות כפולה של 16 (ברירת מחדל: `1024`). | INT | לא | 480 עד 3840 (צעד 16) |
+| `background` | החזרת תמונה עם או בלי רקע (ברירת מחדל: `"auto"`). | COMBO | כן | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `quality` | איכות התמונה, משפיעה על העלות וזמן הייצור (ברירת מחדל: `"low"`). | COMBO | כן | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `model.images` | תמונות עזר אופציונליות לעריכת תמונה. עד 16 תמונות. ראו קלטי עזר לפרטים. | IMAGE | לא | 0 עד 16 |
+| `model.mask` | מסכה אופציונלית ל-inpainting (אזורים לבנים יוחלפו). דורשת תמונת עזר אחת בדיוק. | MASK | לא | N/A |
+
 ### קלטים של gpt-image-2
 
 קלטים אלה מופיעים כאשר `model` מוגדר ל-`gpt-image-2`.
@@ -83,4 +97,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `effc65978ac1cca52a8d8c85230784c23c9eb2afffd7f057aba9f9627e784a15`
+**Source fingerprint (SHA-256):** `36e8dbe4e35d0473ccf16482f640769e8bc30c345bc062a6785a48d7336efa03`

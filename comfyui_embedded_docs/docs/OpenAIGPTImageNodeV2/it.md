@@ -30,6 +30,20 @@ Questi input compaiono quando `model` è impostato su `gpt-image-2.6-flare` o `g
 | `model.mask` | Maschera opzionale per inpainting (le aree bianche verranno sostituite). Richiede esattamente un'immagine di riferimento. | MASK | No | N/D |
 | `model.complexity` | Quanto il modello pianifica l'immagine prima del rendering. Valori più bassi restituiscono più rapidamente, valori più alti pianificano di più. Predefinito: `"high"`. | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"` |
 
+### Input di gpt-image-2.5-flare e gpt-image-2.5-sunburst
+
+Questi input compaiono quando `model` è impostato su `gpt-image-2.5-flare` o `gpt-image-2.5-sunburst`. Entrambi i modelli condividono lo stesso insieme di parametri.
+
+| Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
+| --- | --- | --- | --- | --- |
+| `dimensione` | Dimensione dell'immagine. Seleziona "Custom" per usare larghezza e altezza personalizzate (predefinito: `"auto"`). | COMBO | Sì | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `larghezza_personalizzata` | Usato solo quando `model.size` è "Custom". Deve essere un multiplo di 16 (predefinito: `1024`). | INT | No | 480 a 3840 (passo 16) |
+| `altezza_personalizzata` | Usato solo quando `model.size` è "Custom". Deve essere un multiplo di 16 (predefinito: `1024`). | INT | No | 480 a 3840 (passo 16) |
+| `sfondo` | Restituisce l'immagine con o senza sfondo (predefinito: `"auto"`). | COMBO | Sì | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `qualità` | Qualità dell'immagine, influisce sul costo e sul tempo di generazione (predefinito: `"low"`). | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `model.images` | Immagini di riferimento opzionali per la modifica delle immagini. Fino a 16 immagini. Vedi Input di riferimento per i dettagli. | IMAGE | No | 0 a 16 |
+| `model.mask` | Maschera opzionale per inpainting (le aree bianche verranno sostituite). Richiede esattamente un'immagine di riferimento. | MASK | No | N/D |
+
 ### Input di gpt-image-2
 
 Questi input compaiono quando `model` è impostato su `gpt-image-2`.
@@ -83,4 +97,4 @@ Questi input compaiono quando `model` è impostato su `gpt-image-1.5`.
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `effc65978ac1cca52a8d8c85230784c23c9eb2afffd7f057aba9f9627e784a15`
+**Source fingerprint (SHA-256):** `36e8dbe4e35d0473ccf16482f640769e8bc30c345bc062a6785a48d7336efa03`

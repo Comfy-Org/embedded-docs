@@ -30,6 +30,20 @@ Diese Eingaben erscheinen, wenn `model` auf `gpt-image-2.6-flare` oder `gpt-imag
 | `model.mask` | Optionale Maske für Inpainting (weiße Bereiche werden ersetzt). Erfordert genau ein Referenzbild. | MASK | Nein | N/V |
 | `model.complexity` | Wie stark das Modell das Bild vor dem Rendern plant. Niedrigere Werte liefern schneller Ergebnisse, höhere Werte planen intensiver. Standard: `"high"`. | COMBO | Ja | `"low"`<br>`"medium"`<br>`"high"` |
 
+### gpt-image-2.5-flare- und gpt-image-2.5-sunburst-Eingaben
+
+Diese Eingaben erscheinen, wenn `model` auf `gpt-image-2.5-flare` oder `gpt-image-2.5-sunburst` gesetzt ist. Beide Modelle verwenden denselben Parametersatz.
+
+| Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
+| --- | --- | --- | --- | --- |
+| `size` | Bildgröße. Wählen Sie "Custom", um die benutzerdefinierte Breite und Höhe zu verwenden (Standard: `"auto"`). | COMBO | Ja | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `custom_width` | Wird nur verwendet, wenn `model.size` auf "Custom" gesetzt ist. Muss ein Vielfaches von 16 sein (Standard: `1024`). | INT | Nein | 480 bis 3840 (Schritt 16) |
+| `custom_height` | Wird nur verwendet, wenn `model.size` auf "Custom" gesetzt ist. Muss ein Vielfaches von 16 sein (Standard: `1024`). | INT | Nein | 480 bis 3840 (Schritt 16) |
+| `background` | Bild mit oder ohne Hintergrund zurückgeben (Standard: `"auto"`). | COMBO | Ja | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `quality` | Bildqualität, beeinflusst Kosten und Generierungszeit (Standard: `"low"`). | COMBO | Ja | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `model.images` | Optionales Referenzbild bzw. optionale Referenzbilder für die Bildbearbeitung. Bis zu 16 Bilder. Details siehe Referenzeingaben. | IMAGE | Nein | 0 bis 16 |
+| `model.mask` | Optionale Maske für Inpainting (weiße Bereiche werden ersetzt). Erfordert genau ein Referenzbild. | MASK | Nein | N/V |
+
 ### gpt-image-2-Eingaben
 
 Diese Eingaben erscheinen, wenn `model` auf `gpt-image-2` gesetzt ist.
@@ -83,4 +97,4 @@ Diese Eingaben erscheinen, wenn `model` auf `gpt-image-1.5` gesetzt ist.
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `effc65978ac1cca52a8d8c85230784c23c9eb2afffd7f057aba9f9627e784a15`
+**Source fingerprint (SHA-256):** `36e8dbe4e35d0473ccf16482f640769e8bc30c345bc062a6785a48d7336efa03`

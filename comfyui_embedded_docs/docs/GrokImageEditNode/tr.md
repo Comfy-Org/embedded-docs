@@ -14,6 +14,8 @@ Grok Image Edit düğümü, bir metin istemi temelinde mevcut bir görüntüyü 
 | `tohum` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Evet | 0 ile 2147483647 |
 | `en-boy oranı` | Çıktı görüntüsü için en-boy oranı. Yalnızca `image` girdisine birden çok görüntü bağlandığında izin verilir (varsayılan: "auto"). | COMBO | Hayır | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
 
+**Not:** `grok-imagine-image-quality` ve `grok-imagine-image-pro` xAI tarafından kullanımdan kaldırıldı ve artık `grok-imagine-image-2.0` olarak düşük kalitede çalışıyor.
+
 **Önemli kısıtlamalar:**
 - `image` girdisi en fazla 3 görüntüyü destekler; ancak `grok-imagine-image-pro` modeli kullanıldığında bu model yalnızca 1 girdi görüntüsünü destekler.
 - `aspect_ratio` parametresi yalnızca `image` girdisine birden çok görüntü bağlandığında özel bir değere ("auto" dışında) ayarlanabilir. Tek bir girdi görüntüsüyle özel en-boy oranı ayarlamak hataya neden olur.
@@ -28,4 +30,4 @@ Grok Image Edit düğümü, bir metin istemi temelinde mevcut bir görüntüyü 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokImageEditNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `e2ace07d10901c4e57086da8e3294a5d04e379103e9740131f5355cd4b07625d`
+**Source fingerprint (SHA-256):** `8328824c1936120581305d11641d60cc44f4eb548f64ce5a6f325a6fbcfd2747`

@@ -30,6 +30,20 @@ Ces entrées apparaissent lorsque `model` est défini sur `gpt-image-2.6-flare` 
 | `model.mask` | Masque facultatif pour l’inpainting (les zones blanches seront remplacées). Nécessite exactement une image de référence. | MASK | Non | N/A |
 | `model.complexity` | Dans quelle mesure le modèle planifie l’image avant le rendu. Les valeurs basses renvoient plus rapidement, les valeurs hautes planifient davantage. Par défaut : `"high"`. | COMBO | Oui | `"low"`<br>`"medium"`<br>`"high"` |
 
+### Entrées gpt-image-2.5-flare et gpt-image-2.5-sunburst
+
+Ces entrées apparaissent lorsque `model` est défini sur `gpt-image-2.5-flare` ou `gpt-image-2.5-sunburst`. Les deux modèles partagent le même ensemble de paramètres.
+
+| Paramètre | Description | Type de données | Obligatoire | Plage |
+| --- | --- | --- | --- | --- |
+| `taille` | Taille de l’image. Sélectionnez « Custom » pour utiliser la largeur et la hauteur personnalisées (par défaut : `"auto"`). | COMBO | Oui | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `largeur_personnalisée` | Utilisé uniquement lorsque `model.size` vaut « Custom ». Doit être un multiple de 16 (par défaut : `1024`). | INT | Non | 480 à 3840 (pas : 16) |
+| `hauteur_personnalisée` | Utilisé uniquement lorsque `model.size` vaut « Custom ». Doit être un multiple de 16 (par défaut : `1024`). | INT | Non | 480 à 3840 (pas : 16) |
+| `arrière-plan` | Renvoyer l’image avec ou sans arrière-plan (par défaut : `"auto"`). | COMBO | Oui | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `qualité` | Qualité de l’image, affecte le coût et le temps de génération (par défaut : `"low"`). | COMBO | Oui | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `model.images` | Image(s) de référence facultative(s) pour l’édition d’images. Jusqu’à 16 images. Voir Entrées de référence pour plus de détails. | IMAGE | Non | 0 à 16 |
+| `model.mask` | Masque facultatif pour l’inpainting (les zones blanches seront remplacées). Nécessite exactement une image de référence. | MASK | Non | N/A |
+
 ### Entrées gpt-image-2
 
 Ces entrées apparaissent lorsque `model` est défini sur `gpt-image-2`.
@@ -83,4 +97,4 @@ Ces entrées apparaissent lorsque `model` est défini sur `gpt-image-1.5`.
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `effc65978ac1cca52a8d8c85230784c23c9eb2afffd7f057aba9f9627e784a15`
+**Source fingerprint (SHA-256):** `36e8dbe4e35d0473ccf16482f640769e8bc30c345bc062a6785a48d7336efa03`
