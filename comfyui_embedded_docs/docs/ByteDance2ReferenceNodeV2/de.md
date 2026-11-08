@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.5 Referenz zu Video
 
-ByteDance Seedance 2.5 Reference to Video erzeugt, bearbeitet oder erweitert Videos mit ByteDance Seedance-Modellen (Seedance 2.5, 2.5 Draft, 2.0, 2.0 Fast und 2.0 Mini), gesteuert durch einen Text-Prompt und optionale Referenzbilder, -videos, -audios oder zuvor hochgeladene Bibliotheks-Assets. Der Node lädt die Referenzen hoch, übermittelt eine Generierungsaufgabe, wartet auf deren Abschluss und gibt die fertige Videodatei zurück. Wenn Sie `Seedance 2.5 Draft` auswählen, wird stattdessen eine schnelle 480p-Vorschau gerendert; verbinden Sie die resultierende `draft_task_id` mit dem Node ByteDance Seedance 2.5 Draft to Final Video, um das 1080p-Final zu rendern.
+ByteDance Seedance 2.5 Reference to Video erzeugt, bearbeitet oder erweitert Videos mit ByteDance Seedance-Modellen (Seedance 2.5, 2.5 Draft, 2.0, 2.0 Fast und 2.0 Mini), gesteuert durch einen Text-Prompt und optionale Referenzbilder, -videos, -audios oder zuvor hochgeladene Bibliotheks-Assets. Der Node lädt die Referenzen hoch, übermittelt eine Generierungsaufgabe, wartet auf deren Abschluss und gibt die fertige Videodatei zurück. Wenn Sie `Seedance 2.5 Draft` auswählen, wird stattdessen eine schnelle 480p-Vorschau gerendert; verbinden Sie die resultierende `draft_task_id` mit dem Node ByteDance Seedance 2.5 Draft to Final Video, um das 1080p oder 4k-Final zu rendern.
 
 ## Eingaben
 
@@ -8,7 +8,7 @@ ByteDance Seedance 2.5 Reference to Video erzeugt, bearbeitet oder erweitert Vid
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `model` | Modellauswahl. Seedance 2.5 für das neueste Modell, Videos bis zu 30 Sekunden und mp4-Ausgabe; Seedance 2.5 Draft für eine schnelle 480p-Vorschau, deren `draft_task_id`-Ausgabe das 1080p-Final im Node ByteDance Seedance 2.5 Draft to Final Video rendert; Seedance 2.0 für maximale Qualität und 4k; Fast für Geschwindigkeitsoptimierung; Mini für die schnellste, kostengünstigste Generierung. Die Auswahl eines Modells ändert die unten angezeigten Eingabe-Widgets. | DYNAMIC_COMBO | Ja | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
+| `model` | Modellauswahl. Seedance 2.5 für das neueste Modell, Videos bis zu 30 Sekunden und mp4-Ausgabe; Seedance 2.5 Draft für eine schnelle 480p-Vorschau, deren `draft_task_id`-Ausgabe das 1080p oder 4k-Final im Node ByteDance Seedance 2.5 Draft to Final Video rendert; Seedance 2.0 für maximale Qualität und 4k; Fast für Geschwindigkeitsoptimierung; Mini für die schnellste, kostengünstigste Generierung. Die Auswahl eines Modells ändert die unten angezeigten Eingabe-Widgets. | DYNAMIC_COMBO | Ja | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
 | `seed` | Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 0. | INT | Ja | 0 bis 2147483647 |
 | `watermark` | Gibt an, ob dem Video ein Wasserzeichen hinzugefügt wird. Standard: False. Erweiterte Einstellung. | BOOLEAN | Ja | true<br>false |
 
@@ -19,7 +19,7 @@ Diese Eingaben erscheinen, wenn `model` auf "Seedance 2.5" gesetzt ist.
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
 | `prompt` | Text-Prompt für die Videogenerierung. Setzen Sie gesprochene Zeilen in doppelte Anführungszeichen, um den generierten Dialog zu steuern. Standard: leerer String. | STRING | Ja | Mehrzeiliger Text |
-| `resolution` | Auflösung des Ausgabevideos. Standard: 720p. | COMBO | Ja | "480p"<br>"720p"<br>"1080p" |
+| `resolution` | Auflösung des Ausgabevideos. Standard: 720p. `"4k"` ist nur für Enterprise-Konten verfügbar. | COMBO | Ja | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | Seitenverhältnis des Ausgabevideos. Standard: 16:9. | COMBO | Ja | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | Dauer des Ausgabevideos in Sekunden (4-30). Standard: 5. | INT | Ja | 4 bis 30 |
 | `generate_audio` | Aktiviert die Audiogenerierung für das Ausgabevideo. Standard: True. | BOOLEAN | Ja | true<br>false |
@@ -79,4 +79,4 @@ Diese erweiterbaren Referenz-Slots sind für alle Modelle verfügbar. Die maxima
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNodeV2/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `12fee29b280ff71e29f268f52131d1c15cf3066e0804356b735b61d97c80a6a9`
+**Source fingerprint (SHA-256):** `9d01b783716319b2d21dbe035080539571545ccc3251a69440e0c113c19fb743`

@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.5 مرجع إلى فيديو
 
-تُنشئ عقدة ByteDance Seedance 2.5 Reference to Video فيديوهات أو تعدّلها أو تمدّدها باستخدام نماذج ByteDance Seedance (‏Seedance 2.5 و2.5 Draft و2.0 و2.0 Fast و2.0 Mini) موجّهة بنص توجيهي وصور أو فيديوهات أو صوت مرجعية اختيارية أو أصول مكتبة سبق رفعها. تقوم برفع المراجع، وإرسال مهمة توليد، والانتظار حتى الاكتمال، ثم إرجاع ملف الفيديو النهائي. يؤدي اختيار `Seedance 2.5 Draft` إلى عرض معاينة سريعة بدقة 480p بدلًا من ذلك؛ صِل مخرج `draft_task_id` الناتج بعقدة ByteDance Seedance 2.5 Draft to Final Video لعرض النسخة النهائية بدقة 1080p.
+تُنشئ عقدة ByteDance Seedance 2.5 Reference to Video فيديوهات أو تعدّلها أو تمدّدها باستخدام نماذج ByteDance Seedance (‏Seedance 2.5 و2.5 Draft و2.0 و2.0 Fast و2.0 Mini) موجّهة بنص توجيهي وصور أو فيديوهات أو صوت مرجعية اختيارية أو أصول مكتبة سبق رفعها. تقوم برفع المراجع، وإرسال مهمة توليد، والانتظار حتى الاكتمال، ثم إرجاع ملف الفيديو النهائي. يؤدي اختيار `Seedance 2.5 Draft` إلى عرض معاينة سريعة بدقة 480p بدلًا من ذلك؛ صِل مخرج `draft_task_id` الناتج بعقدة ByteDance Seedance 2.5 Draft to Final Video لعرض النسخة النهائية بدقة 1080p أو 4k.
 
 ## المدخلات
 
@@ -8,7 +8,7 @@
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | مُحدِّد النموذج. اختر Seedance 2.5 لأحدث نموذج، وفيديوهات تصل إلى 30 ثانية ومخرجات mp4؛ وSeedance 2.5 Draft لمعاينة سريعة بدقة 480p يُنتج مخرج `draft_task_id` منها النسخة النهائية بدقة 1080p في عقدة ByteDance Seedance 2.5 Draft to Final Video؛ وSeedance 2.0 لأقصى جودة و4k؛ وFast لتحسين السرعة؛ وMini لأسرع توليد وأقل تكلفة. يؤدي اختيار نموذج إلى تغيير عناصر الإدخال الظاهرة أدناه. | DYNAMIC_COMBO | نعم | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
+| `model` | مُحدِّد النموذج. اختر Seedance 2.5 لأحدث نموذج، وفيديوهات تصل إلى 30 ثانية ومخرجات mp4؛ وSeedance 2.5 Draft لمعاينة سريعة بدقة 480p يُنتج مخرج `draft_task_id` منها النسخة النهائية بدقة 1080p أو 4k في عقدة ByteDance Seedance 2.5 Draft to Final Video؛ وSeedance 2.0 لأقصى جودة و4k؛ وFast لتحسين السرعة؛ وMini لأسرع توليد وأقل تكلفة. يؤدي اختيار نموذج إلى تغيير عناصر الإدخال الظاهرة أدناه. | DYNAMIC_COMBO | نعم | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
 | `seed` | يتحكم `seed` فيما إذا كان يجب إعادة تشغيل العقدة؛ النتائج غير حتمية بغض النظر عن `seed`. الافتراضي: 0. | INT | نعم | 0 إلى 2147483647 |
 | `علامة مائية` | هل تُضاف علامة مائية إلى الفيديو. الافتراضي: False. إعداد متقدم. | BOOLEAN | نعم | true<br>false |
 
@@ -19,7 +19,7 @@
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | النص التوجيهي لتوليد الفيديو. ضع الجمل المنطوقة بين علامتي اقتباس مزدوجتين لتوجيه الحوار المُولَّد. الافتراضي: سلسلة فارغة. | STRING | نعم | نص متعدد الأسطر |
-| `resolution` | دقة الفيديو الناتج. الافتراضي: 720p. | COMBO | نعم | "480p"<br>"720p"<br>"1080p" |
+| `resolution` | دقة الفيديو الناتج. الافتراضي: 720p. `"4k"` متاحة لحسابات المؤسسات فقط. | COMBO | نعم | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | نسبة أبعاد الفيديو الناتج. الافتراضي: 16:9. | COMBO | نعم | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | مدة الفيديو الناتج بالثواني (4-30). الافتراضي: 5. | INT | نعم | 4 إلى 30 |
 | `generate_audio` | تمكين توليد الصوت للفيديو الناتج. الافتراضي: True. | BOOLEAN | نعم | true<br>false |
@@ -79,4 +79,4 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNodeV2/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `12fee29b280ff71e29f268f52131d1c15cf3066e0804356b735b61d97c80a6a9`
+**Source fingerprint (SHA-256):** `9d01b783716319b2d21dbe035080539571545ccc3251a69440e0c113c19fb743`

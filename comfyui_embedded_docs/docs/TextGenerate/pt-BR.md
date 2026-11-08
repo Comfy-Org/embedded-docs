@@ -14,7 +14,7 @@ O nó TextGenerate usa um modelo CLIP para criar texto com base no prompt do usu
 | `clip` | O modelo CLIP usado para tokenizar o prompt e gerar texto. | CLIP | Sim | N/A |
 | `prompt` | O prompt de texto que orienta a geração. Este campo oferece suporte a múltiplas linhas e prompts dinâmicos. O valor padrão é uma string vazia. | STRING | Sim | N/A |
 | `imagem` | Uma imagem opcional que pode ser usada junto com o prompt de texto para influenciar o texto gerado. | IMAGE | Não | N/A |
-| `vídeo` | Quadros de vídeo como um lote de imagens. Presume-se 24 FPS; internamente, é subamostrado para 1 FPS. | IMAGE | Não | N/A |
+| `vídeo` | Quadros de vídeo como um lote de imagens. Presume-se 24 FPS; internamente, é subamostrado para a taxa de quadros do modelo. | IMAGE | Não | N/A |
 | `áudio` | Uma entrada de áudio opcional que pode ser usada junto com o prompt de texto para influenciar o texto gerado. | AUDIO | Não | N/A |
 | `comprimento_máximo` | O número máximo de tokens que o modelo gerará. O valor padrão é 512. | INT | Sim | 1 a 32768 |
 | `pensando` | Opera em modo de pensamento se o modelo oferecer suporte a isso. O valor padrão é False. | BOOLEAN | Não | True or False |

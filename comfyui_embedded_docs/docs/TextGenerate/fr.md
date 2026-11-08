@@ -14,7 +14,7 @@ Le nœud TextGenerate utilise un modèle CLIP pour créer du texte à partir du 
 | `clip` | Le modèle CLIP utilisé pour tokeniser le prompt et générer du texte. | CLIP | Oui | N/A |
 | `invite` | Le prompt textuel qui guide la génération. Ce champ prend en charge plusieurs lignes et les prompts dynamiques. La valeur par défaut est une chaîne vide. | STRING | Oui | N/A |
 | `image` | Une image facultative pouvant être utilisée avec le prompt textuel pour influencer le texte généré. | IMAGE | Non | N/A |
-| `vidéo` | Trames vidéo sous forme de lot d'images. Supposées être à 24 FPS ; sous-échantillonnées à 1 FPS en interne. | IMAGE | Non | N/A |
+| `vidéo` | Trames vidéo sous forme de lot d'images. Supposées être à 24 FPS ; sous-échantillonnées à la cadence d'images du modèle en interne. | IMAGE | Non | N/A |
 | `audio` | Une entrée audio facultative pouvant être utilisée avec le prompt textuel pour influencer le texte généré. | AUDIO | Non | N/A |
 | `longueur_max` | Nombre maximal de tokens que le modèle générera. La valeur par défaut est 512. | INT | Oui | 1 à 32768 |
 | `réflexion` | Active le mode réflexion si le modèle le prend en charge. La valeur par défaut est False. | BOOLEAN | Non | True ou False |

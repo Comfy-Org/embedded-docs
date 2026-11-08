@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.5 הפניה לווידאו
 
-ByteDance Seedance 2.5 Reference to Video יוצר, עורך או מאריך סרטונים באמצעות מודלים של ByteDance Seedance (Seedance 2.5, 2.5 Draft, 2.0, 2.0 Fast ו-2.0 Mini) בהנחיית פרומפט טקסטואלי ותמונות, סרטונים, אודיו או נכסי ספרייה שהועלו קודם לכן כקלטי עזר אופציונליים. הוא מעלה את קלטי העזר, שולח משימת יצירה, ממתין להשלמתה ומחזיר את קובץ הווידאו המוגמר. בחירת `Seedance 2.5 Draft` מרנדרת במקום זאת תצוגה מקדימה מהירה ב-480p; חברו את `draft_task_id` שמתקבל אל הצומת ByteDance Seedance 2.5 Draft to Final Video כדי לרנדר את התוצר הסופי ב-1080p.
+ByteDance Seedance 2.5 Reference to Video יוצר, עורך או מאריך סרטונים באמצעות מודלים של ByteDance Seedance (Seedance 2.5, 2.5 Draft, 2.0, 2.0 Fast ו-2.0 Mini) בהנחיית פרומפט טקסטואלי ותמונות, סרטונים, אודיו או נכסי ספרייה שהועלו קודם לכן כקלטי עזר אופציונליים. הוא מעלה את קלטי העזר, שולח משימת יצירה, ממתין להשלמתה ומחזיר את קובץ הווידאו המוגמר. בחירת `Seedance 2.5 Draft` מרנדרת במקום זאת תצוגה מקדימה מהירה ב-480p; חברו את `draft_task_id` שמתקבל אל הצומת ByteDance Seedance 2.5 Draft to Final Video כדי לרנדר את התוצר הסופי ב-1080p או 4k.
 
 ## קלטים
 
@@ -8,7 +8,7 @@ ByteDance Seedance 2.5 Reference to Video יוצר, עורך או מאריך ס�
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `model` | בורר מודל. Seedance 2.5 עבור המודל החדש ביותר, סרטונים באורך של עד 30 שניות ופלט mp4; Seedance 2.5 Draft עבור תצוגה מקדימה מהירה ב-480p שפלט `draft_task_id` שלה מרנדר את התוצר הסופי ב-1080p בצומת ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.0 עבור איכות מרבית ו-4k; Fast עבור אופטימיזציה למהירות; Mini עבור היצירה המהירה והזולה ביותר. בחירת מודל משנה את ווידג'טי הקלט המוצגים למטה. | DYNAMIC_COMBO | כן | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
+| `model` | בורר מודל. Seedance 2.5 עבור המודל החדש ביותר, סרטונים באורך של עד 30 שניות ופלט mp4; Seedance 2.5 Draft עבור תצוגה מקדימה מהירה ב-480p שפלט `draft_task_id` שלה מרנדר את התוצר הסופי ב-1080p או 4k בצומת ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.0 עבור איכות מרבית ו-4k; Fast עבור אופטימיזציה למהירות; Mini עבור היצירה המהירה והזולה ביותר. בחירת מודל משנה את ווידג'טי הקלט המוצגים למטה. | DYNAMIC_COMBO | כן | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
 | `seed` | Seed קובע האם הצומת צריך לרוץ מחדש; התוצאות אינן דטרמיניסטיות ללא תלות ב-seed. ברירת מחדל: 0. | INT | כן | 0 עד 2147483647 |
 | `watermark` | האם להוסיף סימן מים לסרטון. ברירת מחדל: False. הגדרה מתקדמת. | BOOLEAN | כן | true<br>false |
 
@@ -19,7 +19,7 @@ ByteDance Seedance 2.5 Reference to Video יוצר, עורך או מאריך ס�
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | פרומפט טקסטואלי ליצירת וידאו. שימו שורות מדוברות במירכאות כפולות כדי לכוון את הדיאלוג שנוצר. ברירת מחדל: מחרוזת ריקה. | STRING | כן | טקסט רב-שורתי |
-| `resolution` | רזולוציית סרטון הפלט. ברירת מחדל: 720p. | COMBO | כן | "480p"<br>"720p"<br>"1080p" |
+| `resolution` | רזולוציית סרטון הפלט. ברירת מחדל: 720p. `"4k"` זמינה לחשבונות ארגוניים בלבד. | COMBO | כן | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | יחס גובה-רוחב של סרטון הפלט. ברירת מחדל: 16:9. | COMBO | כן | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | משך סרטון הפלט בשניות (4-30). ברירת מחדל: 5. | INT | כן | 4 עד 30 |
 | `generate_audio` | הפעל יצירת אודיו עבור סרטון הפלט. ברירת מחדל: True. | BOOLEAN | כן | true<br>false |
@@ -79,4 +79,4 @@ ByteDance Seedance 2.5 Reference to Video יוצר, עורך או מאריך ס�
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNodeV2/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `12fee29b280ff71e29f268f52131d1c15cf3066e0804356b735b61d97c80a6a9`
+**Source fingerprint (SHA-256):** `9d01b783716319b2d21dbe035080539571545ccc3251a69440e0c113c19fb743`

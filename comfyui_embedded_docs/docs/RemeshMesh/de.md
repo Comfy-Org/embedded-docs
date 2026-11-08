@@ -1,6 +1,6 @@
 # Mesh neu vernetzen (Narrow-Band DC)
 
-Remesh Mesh vernetzt ein Mesh mit einer sauberen, gleichmäßigen Tessellierung neu, indem ein Schmalband-Distanzfeld um die ursprüngliche Oberfläche abgetastet und mit Dual Contouring extrahiert wird. Dadurch wird unordentliche, nicht-mannigfaltige oder selbstschneidende Topologie normalisiert, und der Node ist dafür gedacht, vor Decimate Mesh ausgeführt zu werden, um eine exakte Flächenanzahl zu erreichen. Die Verarbeitung läuft auf dem aktiven Compute-Gerät und das Ausgabe-Mesh bleibt verschweißt.
+Remesh Mesh vernetzt ein Mesh mit einer sauberen, gleichmäßigen Tessellierung neu, indem ein Schmalband-Distanzfeld um die ursprüngliche Oberfläche abgetastet und mit Dual Contouring extrahiert wird. Dadurch wird unordentliche, nicht-mannigfaltige oder selbstschneidende Topologie normalisiert, und der Node ist dafür gedacht, vor Decimate Mesh ausgeführt zu werden, um eine exakte Flächenanzahl zu erreichen. Die Verarbeitung läuft auf dem aktiven Compute-Gerät und das Ausgabe-Mesh bleibt verschweißt. Vor der Extraktion wird das Mesh in den Würfel [-0.5, 0.5] eingepasst und danach zurück skaliert, wenn eine Vertex-Koordinate betragsmäßig über 0.51 liegt oder die längste Seite der Bounding-Box unter 0.5 ist.
 
 ## Eingaben
 
@@ -57,4 +57,4 @@ Hinweis: Die Option `qef` hat je nach ausgewähltem Modus einen anderen Standard
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RemeshMesh/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `d2869c681e0485f5946a53f0582188ded2183ecd741ea1ff6a591932b18b5abe`
+**Source fingerprint (SHA-256):** `3d164c3177ac427025ab8dd33df7bc2afe8c10f15c45a477b2f79bf34967124f`

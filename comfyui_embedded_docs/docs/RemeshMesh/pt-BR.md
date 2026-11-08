@@ -1,6 +1,6 @@
 # Remesh Mesh (Narrow-Band DC)
 
-Remesh Mesh reconstrói uma malha com uma tesselação limpa e uniforme, amostrando um campo de distância de banda estreita ao redor da superfície original e extraindo-o com Dual Contouring. Isso normaliza topologias bagunçadas, não-manifold ou com autointerseção, e deve ser executado antes de Decimate Mesh para alcançar uma contagem exata de faces. O processamento é executado no dispositivo de computação ativo e a malha de saída permanece soldada.
+Remesh Mesh reconstrói uma malha com uma tesselação limpa e uniforme, amostrando um campo de distância de banda estreita ao redor da superfície original e extraindo-o com Dual Contouring. Isso normaliza topologias bagunçadas, não-manifold ou com autointerseção, e deve ser executado antes de Decimate Mesh para alcançar uma contagem exata de faces. O processamento é executado no dispositivo de computação ativo e a malha de saída permanece soldada. Antes da extração, se o valor absoluto de alguma coordenada de vértice passar de 0.51, ou o lado mais longo da caixa delimitadora tiver menos de 0.5, a malha é ajustada ao cubo [-0.5, 0.5] e depois mapeada de volta à escala original.
 
 ## Entradas
 
@@ -57,4 +57,4 @@ Observação: A opção `qef` tem um padrão diferente dependendo do modo seleci
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RemeshMesh/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `d2869c681e0485f5946a53f0582188ded2183ecd741ea1ff6a591932b18b5abe`
+**Source fingerprint (SHA-256):** `3d164c3177ac427025ab8dd33df7bc2afe8c10f15c45a477b2f79bf34967124f`

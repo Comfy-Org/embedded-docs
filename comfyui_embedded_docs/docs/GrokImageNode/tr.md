@@ -16,7 +16,7 @@ Grok Image düğümü, Grok AI modelini kullanarak bir metin açıklamasından b
 
 **Not:** `seed` parametresi öncelikle düğümün bir iş akışı içinde ne zaman yeniden yürütüleceğini kontrol etmek için kullanılır. Harici yapay zekâ hizmetinin doğası gereği, üretilen görseller aynı tohumla bile çalıştırmalar arasında yeniden üretilebilir veya aynı olmayacaktır.
 
-**Fiyatlandırma notu:** Görsel üretmenin maliyeti seçilen `model`, `resolution`, `quality` ve `number_of_images` değerlerine bağlıdır. `grok-imagine-image-2.0` modeli için "low" kalitesi 1K çözünürlükte görsel başına $0.04 ve 2K çözünürlükte görsel başına $0.06 tutarındadır; diğer kalite düzeyleri 1K'da görsel başına $0.06 ve 2K'da görsel başına $0.08 tutarındadır. `grok-imagine-image-quality` modeli 1K çözünürlükte görsel başına $0.05 ve 2K çözünürlükte görsel başına $0.07 tutarındadır. `grok-imagine-image-pro` modeli görsel başına $0.07 tutarındadır. `grok-imagine-image` modeli görsel başına $0.02 tutarındadır.
+**Fiyatlandırma notu:** Görsel üretmenin maliyeti seçilen `model`, `resolution`, `quality` ve `number_of_images` değerlerine bağlıdır. `grok-imagine-image-2.0` modeli için "low" kalitesi 1K çözünürlükte görsel başına $0.04 ve 2K çözünürlükte görsel başına $0.06 tutarındadır; diğer kalite düzeyleri 1K'da görsel başına $0.06 ve 2K'da görsel başına $0.08 tutarındadır. `grok-imagine-image-quality` ve `grok-imagine-image-pro` xAI tarafından kullanımdan kaldırıldı ve artık `grok-imagine-image-2.0` olarak düşük kalitede çalışıyor; bu nedenle 1K'da görsel başına $0.04, 2K'da $0.06 tutarındadır. `grok-imagine-image` modeli görsel başına $0.02 tutarındadır.
 
 ## Çıktılar
 
@@ -27,4 +27,4 @@ Grok Image düğümü, Grok AI modelini kullanarak bir metin açıklamasından b
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokImageNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `a89f5df0d4827f45013f1af92541d36b5b8c8edc8626e07af4fe2d85ee5486e7`
+**Source fingerprint (SHA-256):** `c5d9f7f0b5c922896495b974708eac70d023a53816b8d584764356e83c859175`

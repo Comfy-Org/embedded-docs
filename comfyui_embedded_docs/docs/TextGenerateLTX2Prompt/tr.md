@@ -11,7 +11,7 @@ TextGenerateLTX2Prompt düğümü, kısa bir kullanıcı istemini LTX-2 serisi v
 | `clip` | Metin kodlama için kullanılan CLIP modeli. Düğüm, eşleşen talimatları seçmek için modelin tokenizer adını kontrol eder: Gemma 4 tabanlı modeller LTX-2.4 biçimini kullanır, diğer modeller ise LTX-2 (Gemma 3) biçimini kullanır. | CLIP | Evet | - |
 | `istem` | Ayrıntılı bir video üretim istemine genişletilecek sahneyi veya kavramı tanımlayan ham metin girdisi. | STRING | Evet | - |
 | `görsel` | Videonun ilk karesi olarak kullanılan isteğe bağlı girdi görüntüsü. Sağlandığında düğüm görüntüden videoya moduna geçer ve kullanıcı istemini görüntünün içeriğine göre genişleten bir sistem istemi kullanır. | IMAGE | Hayır | - |
-| `video` | Ek bağlam olarak kullanılan isteğe bağlı video girdisi. Dil modeline görüntü grubu olarak iletilir; 24 FPS olduğu varsayılır ve dahili olarak 1 FPS'ye alt örneklenir. | IMAGE | Hayır | - |
+| `video` | Ek bağlam olarak kullanılan isteğe bağlı video girdisi. Dil modeline görüntü grubu olarak iletilir; 24 FPS olduğu varsayılır ve dahili olarak modelin kare hızına alt örneklenir. | IMAGE | Hayır | - |
 | `ses` | Üretim için ek bağlam olarak kullanılabilen isteğe bağlı ses girdisi. | AUDIO | Hayır | - |
 | `maksimum_uzunluk` | Dil modelinin üretebileceği maksimum token sayısı (varsayılan: 512). | INT | Evet | 1 ile 32768 arası |
 | `örnekleme_modu` | Metin üretimi sırasında rastgele örnekleme kullanılıp kullanılmayacağını kontrol eder. `"on"` olarak ayarlandığında aşağıdaki örnekleme parametreleri kullanılabilir hale gelir; `"off"` ile düğüm, rastgele örnekleme olmadan metin üretir. | DYNAMIC_COMBO | Evet | `"on"`<br>`"off"` |

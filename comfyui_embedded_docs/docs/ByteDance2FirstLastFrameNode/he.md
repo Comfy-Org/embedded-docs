@@ -6,7 +6,7 @@
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `model` | `Seedance 2.5` עבור המודל החדש ביותר, וידאו של עד 30 שניות ופלט mp4; `Seedance 2.5 Draft` עבור תצוגה מקדימה מהירה ב-480p שפלט ה-`draft_task_id` שלה מרנדר את הגרסה הסופית ב-1080p בצומת ByteDance Seedance 2.5 Draft to Final Video; `Seedance 2.0` עבור איכות מקסימלית ו-4k; `Fast` לאופטימיזציה של מהירות; `Mini` ליצירה המהירה והזולה ביותר. בחירת מודל חושפת קלטים ייעודיים למודל למטה. | DYNAMIC_COMBO | כן | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `model` | `Seedance 2.5` עבור המודל החדש ביותר, וידאו של עד 30 שניות ופלט mp4; `Seedance 2.5 Draft` עבור תצוגה מקדימה מהירה ב-480p שפלט ה-`draft_task_id` שלה מרנדר את הגרסה הסופית ב-1080p או 4k בצומת ByteDance Seedance 2.5 Draft to Final Video; `Seedance 2.0` עבור איכות מקסימלית ו-4k; `Fast` לאופטימיזציה של מהירות; `Mini` ליצירה המהירה והזולה ביותר. בחירת מודל חושפת קלטים ייעודיים למודל למטה. | DYNAMIC_COMBO | כן | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `first_frame` | תמונת הפריים הראשון של הווידאו. | IMAGE | לא | - |
 | `last_frame` | תמונת הפריים האחרון של הווידאו. | IMAGE | לא | - |
 | `first_frame_asset_id` | `asset_id` של Seedance לשימוש בתור הפריים הראשון. בלעדי עם קלט התמונה `first_frame`. ברירת המחדל היא מחרוזת ריקה. | STRING | לא | - |
@@ -21,7 +21,7 @@
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | פרומפט טקסטואלי ליצירת וידאו. הכנס שורות מדוברות במירכאות כפולות כדי לכוון את הדיאלוג שנוצר. | STRING | כן | - |
-| `resolution` | הרזולוציה של הווידאו בפלט. ברירת המחדל היא 720p. | COMBO | כן | `"480p"`<br>`"720p"`<br>`"1080p"` |
+| `resolution` | הרזולוציה של הווידאו בפלט. ברירת המחדל היא 720p. `"4k"` זמינה לחשבונות ארגוניים בלבד. | COMBO | כן | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duration` | משך הווידאו בפלט בשניות (4-30). ברירת המחדל היא 5. | INT | כן | 4 עד 30 |
 | `generate_audio` | הפעל יצירת אודיו עבור הווידאו בפלט. ברירת המחדל היא True. | BOOLEAN | כן | False<br>True |
 | `output_format` | פורמט הקונטיינר של הווידאו בפלט. ברירת המחדל היא mp4. | COMBO | כן | `"mp4"` |
@@ -75,4 +75,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `363f1baac1685c2dada0e64a0b339f6ab2671161dccb002eb81f6b4f0d0aa243`
+**Source fingerprint (SHA-256):** `91ffaf2bef597d080665d36fd07ef192df2884017738127a97941fcb0bf860a7`

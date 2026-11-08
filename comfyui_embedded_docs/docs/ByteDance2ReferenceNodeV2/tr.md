@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.5 Referanstan Videoya
 
-ByteDance Seedance 2.5 Reference to Video, metin istemi ve isteğe bağlı referans görseller, videolar, ses veya daha önce yüklenmiş kitaplık varlıkları rehberliğinde ByteDance Seedance modellerini (Seedance 2.5, 2.5 Draft, 2.0, 2.0 Fast ve 2.0 Mini) kullanarak video üretir, düzenler veya uzatır. Referansları yükler, bir oluşturma görevi gönderir, tamamlanmasını bekler ve tamamlanan video dosyasını döndürür. `Seedance 2.5 Draft` seçildiğinde bunun yerine hızlı bir 480p önizleme oluşturur; 1080p nihai videoyu oluşturmak için elde edilen `draft_task_id` çıktısını ByteDance Seedance 2.5 Draft to Final Video düğümüne bağlayın.
+ByteDance Seedance 2.5 Reference to Video, metin istemi ve isteğe bağlı referans görseller, videolar, ses veya daha önce yüklenmiş kitaplık varlıkları rehberliğinde ByteDance Seedance modellerini (Seedance 2.5, 2.5 Draft, 2.0, 2.0 Fast ve 2.0 Mini) kullanarak video üretir, düzenler veya uzatır. Referansları yükler, bir oluşturma görevi gönderir, tamamlanmasını bekler ve tamamlanan video dosyasını döndürür. `Seedance 2.5 Draft` seçildiğinde bunun yerine hızlı bir 480p önizleme oluşturur; 1080p veya 4k nihai videoyu oluşturmak için elde edilen `draft_task_id` çıktısını ByteDance Seedance 2.5 Draft to Final Video düğümüne bağlayın.
 
 ## Girdiler
 
@@ -8,7 +8,7 @@ ByteDance Seedance 2.5 Reference to Video, metin istemi ve isteğe bağlı refer
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Model seçici. En yeni model, 30 saniyeye kadar videolar ve mp4 çıktısı için Seedance 2.5; `draft_task_id` çıktısı ByteDance Seedance 2.5 Draft to Final Video düğümünde 1080p nihai videoyu oluşturan hızlı 480p önizleme için Seedance 2.5 Draft; maksimum kalite ve 4k için Seedance 2.0; hız optimizasyonu için Fast; en hızlı ve en düşük maliyetli oluşturma için Mini. Bir model seçmek, aşağıda gösterilen girdi bileşenlerini değiştirir. | DYNAMIC_COMBO | Evet | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
+| `model` | Model seçici. En yeni model, 30 saniyeye kadar videolar ve mp4 çıktısı için Seedance 2.5; `draft_task_id` çıktısı ByteDance Seedance 2.5 Draft to Final Video düğümünde 1080p veya 4k nihai videoyu oluşturan hızlı 480p önizleme için Seedance 2.5 Draft; maksimum kalite ve 4k için Seedance 2.0; hız optimizasyonu için Fast; en hızlı ve en düşük maliyetli oluşturma için Mini. Bir model seçmek, aşağıda gösterilen girdi bileşenlerini değiştirir. | DYNAMIC_COMBO | Evet | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
 | `seed` | `seed`, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar `seed` değerinden bağımsız olarak deterministik değildir. Varsayılan: 0. | INT | Evet | 0 - 2147483647 |
 | `watermark` | Videoya filigran eklenip eklenmeyeceği. Varsayılan: False. Gelişmiş ayar. | BOOLEAN | Evet | true<br>false |
 
@@ -19,7 +19,7 @@ Bu girdiler `model` "Seedance 2.5" olarak ayarlandığında görünür.
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Video oluşturma için metin istemi. Oluşturulan diyaloğu yönlendirmek için konuşulan replikleri çift tırnak içine alın. Varsayılan: boş dize. | STRING | Evet | Çok satırlı metin |
-| `resolution` | Çıktı videosunun çözünürlüğü. Varsayılan: 720p. | COMBO | Evet | "480p"<br>"720p"<br>"1080p" |
+| `resolution` | Çıktı videosunun çözünürlüğü. Varsayılan: 720p. `"4k"` yalnızca kurumsal hesaplar için kullanılabilir. | COMBO | Evet | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | Çıktı videosunun en-boy oranı. Varsayılan: 16:9. | COMBO | Evet | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | Çıktı videosunun saniye cinsinden süresi (4-30). Varsayılan: 5. | INT | Evet | 4 - 30 |
 | `generate_audio` | Çıktı videosu için ses oluşturmayı etkinleştir. Varsayılan: True. | BOOLEAN | Evet | true<br>false |
@@ -79,4 +79,4 @@ Bu büyütülebilir referans yuvaları tüm modeller için kullanılabilir. Maks
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNodeV2/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `12fee29b280ff71e29f268f52131d1c15cf3066e0804356b735b61d97c80a6a9`
+**Source fingerprint (SHA-256):** `9d01b783716319b2d21dbe035080539571545ccc3251a69440e0c113c19fb743`

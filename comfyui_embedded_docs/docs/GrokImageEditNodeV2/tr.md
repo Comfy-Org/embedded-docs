@@ -12,6 +12,8 @@ Bir metin istemine dayanarak bir veya daha fazla mevcut görüntüyü değiştir
 | `istem` | Görüntüyü oluşturmak için kullanılan metin istemi. (varsayılan: "") | STRING | Evet | N/A |
 | `tohum` | Düğümün yeniden çalışıp çalışmayacağını belirleyen tohum; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: 0) | INT | Evet | 0 ile 2147483647 |
 
+**Not:** `grok-imagine-image-quality` ve `grok-imagine-image-pro` xAI tarafından kullanımdan kaldırıldı ve artık `grok-imagine-image-2.0` olarak düşük kalitede çalışıyor.
+
 ### grok-imagine-image-2.0 Girdileri
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
@@ -21,9 +23,15 @@ Bir metin istemine dayanarak bir veya daha fazla mevcut görüntüyü değiştir
 | `quality` | Oluşturulan görüntülerin kalite düzeyi. | COMBO | Evet | "medium"<br>"low" |
 | `aspect_ratio` | Düzenlenen görüntünün en-boy oranı. (varsayılan: "auto") | COMBO | Evet | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
 
-### grok-imagine-image-quality ve grok-imagine-image Girdileri
+### grok-imagine-image-quality Girdileri
 
-grok-imagine-image-quality ve grok-imagine-image tarafından paylaşılır.
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `resolution` | Düzenlenen görüntülerin çıktı çözünürlüğü. | COMBO | Evet | "1K"<br>"2K" |
+| `number_of_images` | Oluşturulacak düzenlenmiş görüntü sayısı. (varsayılan: 1) | INT | Evet | 1 ile 10 |
+| `aspect_ratio` | Düzenlenen görüntünün en-boy oranı. (varsayılan: "auto") | COMBO | Evet | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"9:16"<br>"16:9"<br>"9:19.5"<br>"19.5:9"<br>"9:20"<br>"20:9"<br>"1:2"<br>"2:1" |
+
+### grok-imagine-image Girdileri
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
@@ -49,8 +57,8 @@ grok-imagine-image-quality ve grok-imagine-image tarafından paylaşılır.
 - Düzenleme için en az bir referans görüntü gereklidir; hiçbir görüntü bağlı değilse düğüm bir hata verir.
 - Maksimum girdi görüntüsü sayısı `grok-imagine-image-pro` için 1, `grok-imagine-image-2.0`, `grok-imagine-image-quality` ve `grok-imagine-image` için 3'tür. Modelin desteklediğinden daha fazla görüntü bağlamak bir hata verir.
 - Görüntü sınırı, bağlı girdilerdeki her görüntüyü sayar; bu nedenle birkaç görüntü içeren bir toplu işlem, sınır açısından birkaç görüntü olarak sayılır.
-- `grok-imagine-image-quality` ve `grok-imagine-image` için özel bir `aspect_ratio` ("auto" dışında herhangi bir değer) yalnızca birden fazla görüntü bağlandığında izin verilir. Tek bir görüntüyle `aspect_ratio` "auto" olmalıdır.
-- `grok-imagine-image-2.0` için `aspect_ratio`, tek bir görüntüyle bile serbestçe ayarlanabilir.
+- `grok-imagine-image` için özel bir `aspect_ratio` ("auto" dışında herhangi bir değer) yalnızca birden fazla görüntü bağlandığında izin verilir. Tek bir görüntüyle `aspect_ratio` "auto" olmalıdır.
+- `grok-imagine-image-2.0` ve `grok-imagine-image-quality` için `aspect_ratio`, tek bir görüntüyle bile serbestçe ayarlanabilir.
 - `quality` alt parametresi yalnızca `grok-imagine-image-2.0` ile kullanılabilir.
 
 ## Çıktılar
@@ -62,4 +70,4 @@ grok-imagine-image-quality ve grok-imagine-image tarafından paylaşılır.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokImageEditNodeV2/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `7d75b1cb8405c5024567b1119bcbd5e4b318152605f74b62bdd5173dda75949f`
+**Source fingerprint (SHA-256):** `b8f4a86a3dd3a9cf1a24531fad4c62642e4c6de75a598fbe263ff8d3d16800d5`

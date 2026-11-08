@@ -7,7 +7,7 @@ Resolution Selector düğümü, seçilen bir en boy oranına ve megapiksel cinsi
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `en_boy_orani` | Çıktı boyutları için en boy oranı (varsayılan: `"1:1 (Square)"`). | COMBO | Evet | `"1:1 (Square)"`<br>`"2:3 (Portrait Photo)"`<br>`"3:2 (Photo)"`<br>`"3:4 (Portrait Standard)"`<br>`"4:3 (Standard)"`<br>`"9:16 (Portrait Widescreen)"`<br>`"16:9 (Widescreen)"`<br>`"21:9 (Ultrawide)"` |
-| `megapiksel` | Hedef toplam megapiksel. Kare için 1.0 MP ≈ 1024x1024 (varsayılan: 1.0). | FLOAT | Evet | 0.1 - 16.0 (adım: 0.1) |
+| `megapiksel` | Hedef toplam megapiksel. Kare için 1.0 MP ≈ 1024x1024 (varsayılan: 1.0). | FLOAT | Evet | 0.1 - 16.0 (adım: 0.01) |
 | `preview` | Hesaplanan çıktı çözünürlüğünün canlı önizlemesi. Bu salt okunur widget otomatik olarak güncellenir ve kullanıcı girişi kabul etmez. | RESOLUTION_PREVIEW | Hayır | N/A |
 | `kat` | Seçilen çözünürlüğün ayarlanacağı en yakın kat (varsayılan: 8). | INT | Hayır | 8 - 128 (adım: 4) |
 
@@ -21,4 +21,4 @@ Resolution Selector düğümü, seçilen bir en boy oranına ve megapiksel cinsi
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionSelector/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `dd4c7f977ed69a873a48da4b01c5c8f0b6563cfd743740235fc0ad5762579697`
+**Source fingerprint (SHA-256):** `d97624227fa02cd2e2f9bdecb3443f9877402092dcee8c45b721a83739454e18`

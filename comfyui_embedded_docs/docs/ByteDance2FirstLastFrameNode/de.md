@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.5: Video aus erstem und letztem Frame
 
-Dieser Node generiert ein Video aus einem erforderlichen Bild des ersten Frames und einem optionalen Bild des letzten Frames mithilfe von ByteDance Seedance-Modellen. Sie beschreiben das Video mit einem Text-Prompt; der erste Frame gibt den Start des Videos vor und der letzte Frame das Ende. Unterstützt werden Seedance 2.5 und die Seedance 2.0-Familie (Seedance 2.0, Seedance 2.0 Fast und Seedance 2.0 Mini). Wenn Sie das Modell `Seedance 2.5 Draft` auswählen, wird stattdessen eine schnelle 480p-Vorschau gerendert; verbinden Sie die resultierende `draft_task_id` mit dem Node „ByteDance Seedance 2.5 Draft to Final Video“, um das finale 1080p-Video zu rendern.
+Dieser Node generiert ein Video aus einem erforderlichen Bild des ersten Frames und einem optionalen Bild des letzten Frames mithilfe von ByteDance Seedance-Modellen. Sie beschreiben das Video mit einem Text-Prompt; der erste Frame gibt den Start des Videos vor und der letzte Frame das Ende. Unterstützt werden Seedance 2.5 und die Seedance 2.0-Familie (Seedance 2.0, Seedance 2.0 Fast und Seedance 2.0 Mini). Wenn Sie das Modell `Seedance 2.5 Draft` auswählen, wird stattdessen eine schnelle 480p-Vorschau gerendert; verbinden Sie die resultierende `draft_task_id` mit dem Node „ByteDance Seedance 2.5 Draft to Final Video“, um das finale 1080p oder 4k-Video zu rendern.
 
 ## Eingaben
 
@@ -8,7 +8,7 @@ Dieser Node generiert ein Video aus einem erforderlichen Bild des ersten Frames 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Seedance 2.5 für das neueste Modell, Videos bis zu 30 Sekunden und mp4-Ausgabe; Seedance 2.5 Draft für eine schnelle 480p-Vorschau, deren `draft_task_id`-Ausgabe das finale 1080p-Video im Node ByteDance Seedance 2.5 Draft to Final Video rendert; Seedance 2.0 für maximale Qualität und 4k; Fast für Geschwindigkeitsoptimierung; Mini für die schnellste, kostengünstigste Generierung. Die Auswahl eines Modells blendet unten modellspezifische Eingaben ein. | DYNAMIC_COMBO | Ja | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `model` | Seedance 2.5 für das neueste Modell, Videos bis zu 30 Sekunden und mp4-Ausgabe; Seedance 2.5 Draft für eine schnelle 480p-Vorschau, deren `draft_task_id`-Ausgabe das finale 1080p oder 4k-Video im Node ByteDance Seedance 2.5 Draft to Final Video rendert; Seedance 2.0 für maximale Qualität und 4k; Fast für Geschwindigkeitsoptimierung; Mini für die schnellste, kostengünstigste Generierung. Die Auswahl eines Modells blendet unten modellspezifische Eingaben ein. | DYNAMIC_COMBO | Ja | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `first_frame` | Bild des ersten Frames für das Video. | IMAGE | Nein | - |
 | `last_frame` | Bild des letzten Frames für das Video. | IMAGE | Nein | - |
 | `first_frame_asset_id` | Seedance asset_id zur Verwendung als erster Frame. Schließt sich gegenseitig mit dem Bildeingang `first_frame` aus. Standard ist eine leere Zeichenkette. | STRING | Nein | - |
@@ -23,7 +23,7 @@ Diese Eingaben erscheinen, wenn `Seedance 2.5` ausgewählt ist.
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Text-Prompt für die Videogenerierung. Setzen Sie gesprochene Zeilen in doppelte Anführungszeichen, um den generierten Dialog zu steuern. | STRING | Ja | - |
-| `resolution` | Auflösung des Ausgabevideos. Standard ist 720p. | COMBO | Ja | `"480p"`<br>`"720p"`<br>`"1080p"` |
+| `resolution` | Auflösung des Ausgabevideos. Standard ist 720p. `"4k"` ist nur für Enterprise-Konten verfügbar. | COMBO | Ja | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duration` | Dauer des Ausgabevideos in Sekunden (4-30). Standard ist 5. | INT | Ja | 4 bis 30 |
 | `generate_audio` | Audiogenerierung für das Ausgabevideo aktivieren. Standard ist True. | BOOLEAN | Ja | False<br>True |
 | `output_format` | Containerformat des Ausgabevideos. Standard ist mp4. | COMBO | Ja | `"mp4"` |
@@ -77,4 +77,4 @@ Gemeinsam verwendet von `Seedance 2.0 Fast` und `Seedance 2.0 Mini`.
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `363f1baac1685c2dada0e64a0b339f6ab2671161dccb002eb81f6b4f0d0aa243`
+**Source fingerprint (SHA-256):** `91ffaf2bef597d080665d36fd07ef192df2884017738127a97941fcb0bf860a7`
