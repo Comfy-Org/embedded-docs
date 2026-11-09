@@ -13,6 +13,7 @@ Le nœud DrawBBoxes visualise les résultats de détection d'objets en dessinant
 *   L'entrée `bboxes` est requise et doit être fournie.
 *   Le nœud gère automatiquement différents formats d'entrée pour `bboxes`. Un dictionnaire unique sera appliqué à toutes les images du lot. Une liste plate de dictionnaires sera traitée comme le même ensemble de détections pour chaque image. Une liste de listes permet de spécifier différentes détections pour chaque image du lot.
 *   Si une `image` n'est pas fournie, le nœud créera une image vierge avec des dimensions suffisamment grandes pour contenir toutes les boîtes englobantes fournies, avec une taille minimale par défaut de 640x640.
+*   Le champ `label` est comparé aux classes du jeu de données COCO, de sorte que chaque classe conserve une couleur constante. Une étiquette qui n'est pas une classe COCO est tout de même dessinée et prend l'une des couleurs restantes dans l'ordre de première apparition, et une boîte sans `score` est dessinée avec sa seule étiquette.
 
 ## Sorties
 
@@ -23,4 +24,4 @@ Le nœud DrawBBoxes visualise les résultats de détection d'objets en dessinant
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `436fbd3de0d5e09ca07b099a32c9b9482a8006459dc8635e066ffa82f6c755df`
+**Source fingerprint (SHA-256):** `3a25677852fe1f0c137a011628ba0197034c3724281941f88a27e1ae1abfe48e`

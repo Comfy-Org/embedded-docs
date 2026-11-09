@@ -13,7 +13,7 @@ Der Node DrawBBoxes visualisiert Ergebnisse der Objekterkennung, indem er Boundi
 *   Die Eingabe `bboxes` ist erforderlich und muss bereitgestellt werden.
 *   Der Node verarbeitet automatisch verschiedene Eingabeformate für `bboxes`. Ein einzelnes Wörterbuch wird auf alle Bilder im Stapel angewendet. Eine flache Liste von Wörterbüchern wird als derselbe Satz von Erkennungen für jedes Bild behandelt. Eine Liste von Listen ermöglicht es Ihnen, unterschiedliche Erkennungen für jedes Bild im Stapel anzugeben.
 *   Wenn kein `image` bereitgestellt wird, erstellt der Node ein leeres Bild mit Abmessungen, die groß genug sind, um alle bereitgestellten Bounding-Boxen aufzunehmen, mit einer Standardmindestgröße von 640x640.
-*   Das Feld `label` in jedem Wörterbuch für Bounding-Boxen wird mit den Klassen des COCO-Datensatzes abgeglichen. Wenn die Beschriftung keine erkannte COCO-Klasse ist, wird sie ignoriert und für diese Box wird keine Textbeschriftung gezeichnet.
+*   Das Feld `label` wird mit den Klassen des COCO-Datensatzes abgeglichen, sodass jede Klasse eine feste Farbe behält. Eine Beschriftung, die keine COCO-Klasse ist, wird trotzdem gezeichnet und bekommt in der Reihenfolge des ersten Auftretens eine der übrigen Farben; eine Box ohne `score` wird nur mit ihrer Beschriftung gezeichnet.
 
 ## Ausgaben
 
@@ -24,4 +24,4 @@ Der Node DrawBBoxes visualisiert Ergebnisse der Objekterkennung, indem er Boundi
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `ce5da10ec83e579515d70b7184fc78dfa04df4c514faccdcb75130212f56c84f`
+**Source fingerprint (SHA-256):** `3a25677852fe1f0c137a011628ba0197034c3724281941f88a27e1ae1abfe48e`

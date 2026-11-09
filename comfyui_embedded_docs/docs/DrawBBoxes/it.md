@@ -13,7 +13,7 @@ Il nodo DrawBBoxes visualizza i risultati del rilevamento degli oggetti disegnan
 *   L'input `bboxes` è obbligatorio e deve essere fornito.
 *   Il nodo gestisce automaticamente formati di input diversi per `bboxes`. Un singolo dizionario verrà applicato a tutte le immagini nel batch. Una lista semplice di dizionari verrà trattata come lo stesso insieme di rilevamenti per ogni immagine. Una lista di liste consente di specificare rilevamenti diversi per ciascuna immagine nel batch.
 *   Se non viene fornito un `image`, il nodo creerà un'immagine vuota con dimensioni sufficientemente grandi da contenere tutte le bounding box fornite, con una dimensione minima predefinita di 640x640.
-*   Il campo `label` in ciascun dizionario di bounding box viene confrontato con le classi del dataset COCO. Se l'etichetta non è una classe COCO riconosciuta, verrà ignorata e non verrà disegnata alcuna etichetta testuale per quella bounding box.
+*   Il campo `label` viene confrontato con le classi del dataset COCO, così ogni classe mantiene sempre lo stesso colore. Un'etichetta che non è una classe COCO viene comunque disegnata e riceve uno dei colori rimanenti in ordine di prima comparsa, e una bounding box senza `score` viene disegnata solo con l'etichetta.
 
 ## Output
 
@@ -24,4 +24,4 @@ Il nodo DrawBBoxes visualizza i risultati del rilevamento degli oggetti disegnan
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `ce5da10ec83e579515d70b7184fc78dfa04df4c514faccdcb75130212f56c84f`
+**Source fingerprint (SHA-256):** `3a25677852fe1f0c137a011628ba0197034c3724281941f88a27e1ae1abfe48e`
