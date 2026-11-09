@@ -22,8 +22,8 @@ WeVisOne-VL Detect מאתר אובייקטים בתמונה על סמך הנחי
 | --- | --- | --- |
 | `masks` | מסכות אלפא של האובייקטים המתאימים, אחת לכל תמונה כברירת מחדל או אחת לכל תיבה עם `individual_masks`. | MASK |
 | `bboxes` | תיבות שנמצאו בכל תמונה, מאוחסנות כ-`x`, `y`, `width`, `height` ו-`label`. | BOUNDING_BOX |
-| `points` | נקודות כ-JSON בפיקסלים, בצורה `[{"x", "y", "label", "frame"}]`, מלאות על ידי המשימות `point` ו-`count_point`. | STRING |
-| `text` | תשובת המודל הגולמית, שורה אחת לכל תמונה. | STRING |
+| `points` | נקודות כ-JSON בפיקסלים, אובייקט אחד לכל נקודה עם `x`, `y`, `label` ו-`frame`, למשל `[{"x": 128, "y": 96, "label": "cup", "frame": 0}]`. מלאות על ידי המשימות `point` ו-`count_point`. | STRING |
+| `text` | תשובות המודל הגולמיות, מחוברות בשורות חדשות; תשובה אחת יכולה להתפרס על כמה שורות. | STRING |
 
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WeVisOneDetect/he.md)
 

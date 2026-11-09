@@ -22,8 +22,8 @@ WeVisOne-VL Detect trouve des objets dans une image à partir d'un prompt textue
 | --- | --- | --- |
 | `masks` | Masques alpha des objets correspondants, un par trame par défaut ou un par boîte avec `individual_masks`. | MASK |
 | `bboxes` | Boîtes trouvées dans chaque image, stockées sous la forme `x`, `y`, `width`, `height` et `label`. | BOUNDING_BOX |
-| `points` | Points au format JSON en pixels, de la forme `[{"x", "y", "label", "frame"}]`, remplis par les tâches `point` et `count_point`. | STRING |
-| `text` | Réponse brute du modèle, une ligne par image. | STRING |
+| `points` | Points au format JSON en pixels, un objet par point avec `x`, `y`, `label` et `frame`, par exemple `[{"x": 128, "y": 96, "label": "cup", "frame": 0}]`. Remplis par les tâches `point` et `count_point`. | STRING |
+| `text` | Réponses brutes du modèle, jointes par des sauts de ligne ; une réponse peut elle-même occuper plusieurs lignes. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WeVisOneDetect/fr.md)
 

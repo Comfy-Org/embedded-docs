@@ -22,8 +22,8 @@ WeVisOne-VL Detect findet Objekte in einem Bild anhand eines Text-Prompts und gi
 | --- | --- | --- |
 | `masks` | Alpha-Mattes der gefundenen Objekte, standardmäßig eine pro Frame oder eine pro Box mit `individual_masks`. | MASK |
 | `bboxes` | In jedem Bild gefundene Boxen, gespeichert als `x`, `y`, `width`, `height` und `label`. | BOUNDING_BOX |
-| `points` | Punkte als JSON in Pixeln, geformt als `[{"x", "y", "label", "frame"}]`, gefüllt durch die Aufgaben `point` und `count_point`. | STRING |
-| `text` | Die Rohtantwort des Modells, eine Zeile pro Bild. | STRING |
+| `points` | Punkte als JSON in Pixeln, ein Objekt pro Punkt mit `x`, `y`, `label` und `frame`, zum Beispiel `[{"x": 128, "y": 96, "label": "cup", "frame": 0}]`. Gefüllt durch die Aufgaben `point` und `count_point`. | STRING |
+| `text` | Die Rohtantworten des Modells, mit Zeilenumbrüchen verbunden; eine Antwort kann selbst mehrere Zeilen umfassen. | STRING |
 
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WeVisOneDetect/de.md)
 

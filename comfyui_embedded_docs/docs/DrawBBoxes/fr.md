@@ -13,7 +13,7 @@ Le nœud DrawBBoxes visualise les résultats de détection d'objets en dessinant
 *   L'entrée `bboxes` est requise et doit être fournie.
 *   Le nœud gère automatiquement différents formats d'entrée pour `bboxes`. Un dictionnaire unique sera appliqué à toutes les images du lot. Une liste plate de dictionnaires sera traitée comme le même ensemble de détections pour chaque image. Une liste de listes permet de spécifier différentes détections pour chaque image du lot.
 *   Si une `image` n'est pas fournie, le nœud créera une image vierge avec des dimensions suffisamment grandes pour contenir toutes les boîtes englobantes fournies, avec une taille minimale par défaut de 640x640.
-*   Le champ `label` est comparé aux classes du jeu de données COCO, de sorte que chaque classe conserve une couleur constante. Une étiquette qui n'est pas une classe COCO est tout de même dessinée et prend l'une des couleurs restantes dans l'ordre de première apparition, et une boîte sans `score` est dessinée avec sa seule étiquette.
+*   Le champ `label` est comparé aux classes du jeu de données COCO, donc une classe COCO reçoit toujours la même couleur. Une étiquette qui n'est pas une classe COCO est tout de même dessinée et prend la couleur de la palette correspondant à sa position parmi les étiquettes de cette image ; une boîte sans `score` est dessinée avec sa seule étiquette.
 
 ## Sorties
 

@@ -13,7 +13,7 @@ Il nodo DrawBBoxes visualizza i risultati del rilevamento degli oggetti disegnan
 *   L'input `bboxes` è obbligatorio e deve essere fornito.
 *   Il nodo gestisce automaticamente formati di input diversi per `bboxes`. Un singolo dizionario verrà applicato a tutte le immagini nel batch. Una lista semplice di dizionari verrà trattata come lo stesso insieme di rilevamenti per ogni immagine. Una lista di liste consente di specificare rilevamenti diversi per ciascuna immagine nel batch.
 *   Se non viene fornito un `image`, il nodo creerà un'immagine vuota con dimensioni sufficientemente grandi da contenere tutte le bounding box fornite, con una dimensione minima predefinita di 640x640.
-*   Il campo `label` viene confrontato con le classi del dataset COCO, così ogni classe mantiene sempre lo stesso colore. Un'etichetta che non è una classe COCO viene comunque disegnata e riceve uno dei colori rimanenti in ordine di prima comparsa, e una bounding box senza `score` viene disegnata solo con l'etichetta.
+*   Il campo `label` viene confrontato con le classi del dataset COCO, quindi una classe COCO riceve sempre lo stesso colore. Un'etichetta che non è una classe COCO viene comunque disegnata e prende il colore della palette in base alla sua posizione tra le etichette di quell'immagine; una bounding box senza `score` viene disegnata solo con l'etichetta.
 
 ## Output
 

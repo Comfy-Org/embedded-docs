@@ -13,7 +13,7 @@ Der Node DrawBBoxes visualisiert Ergebnisse der Objekterkennung, indem er Boundi
 *   Die Eingabe `bboxes` ist erforderlich und muss bereitgestellt werden.
 *   Der Node verarbeitet automatisch verschiedene Eingabeformate für `bboxes`. Ein einzelnes Wörterbuch wird auf alle Bilder im Stapel angewendet. Eine flache Liste von Wörterbüchern wird als derselbe Satz von Erkennungen für jedes Bild behandelt. Eine Liste von Listen ermöglicht es Ihnen, unterschiedliche Erkennungen für jedes Bild im Stapel anzugeben.
 *   Wenn kein `image` bereitgestellt wird, erstellt der Node ein leeres Bild mit Abmessungen, die groß genug sind, um alle bereitgestellten Bounding-Boxen aufzunehmen, mit einer Standardmindestgröße von 640x640.
-*   Das Feld `label` wird mit den Klassen des COCO-Datensatzes abgeglichen, sodass jede Klasse eine feste Farbe behält. Eine Beschriftung, die keine COCO-Klasse ist, wird trotzdem gezeichnet und bekommt in der Reihenfolge des ersten Auftretens eine der übrigen Farben; eine Box ohne `score` wird nur mit ihrer Beschriftung gezeichnet.
+*   Das Feld `label` wird mit den Klassen des COCO-Datensatzes abgeglichen, eine COCO-Klasse erhält also immer dieselbe Farbe. Eine Beschriftung, die keine COCO-Klasse ist, wird trotzdem gezeichnet und bekommt die Palettenfarbe entsprechend ihrer Position unter den Beschriftungen dieses Bildes; eine Box ohne `score` wird nur mit ihrer Beschriftung gezeichnet.
 
 ## Ausgaben
 

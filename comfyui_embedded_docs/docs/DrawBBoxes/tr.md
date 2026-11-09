@@ -15,7 +15,7 @@ DrawBBoxes düğümü, bir görüntü üzerine sınırlayıcı kutular, etiketle
 *   `bboxes` girişi zorunludur ve sağlanmalıdır.
 *   Düğüm, `bboxes` için farklı giriş formatlarını otomatik olarak işler. Tek bir sözlük, toplu işteki tüm görüntülere uygulanır. Düz bir sözlük listesi, her görüntü için aynı tespit kümesi olarak değerlendirilir. Bir liste listesi, toplu işteki her görüntü için farklı tespitler belirlemenize olanak tanır.
 *   Bir `image` sağlanmazsa, düğüm, varsayılan minimum boyutu 640x640 olan ve sağlanan tüm sınırlayıcı kutuları sığdıracak kadar büyük boyutlara sahip boş bir görüntü oluşturur.
-*   `label` alanı COCO veri kümesi sınıflarıyla eşleştirilir, böylece her sınıf her zaman aynı renkte çizilir. COCO sınıfı olmayan bir etiket de çizilir ve ilk görünme sırasına göre kalan renklerden birini alır; `score` değeri olmayan bir kutu yalnızca etiketiyle çizilir.
+*   `label` alanı COCO veri kümesi sınıflarıyla eşleştirilir, bu yüzden bir COCO sınıfı her zaman aynı rengi alır. COCO sınıfı olmayan bir etiket de çizilir ve o görüntüdeki etiketler arasındaki sırasına göre palet rengini alır; `score` değeri olmayan bir kutu yalnızca etiketiyle çizilir.
 
 ## Çıktılar
 

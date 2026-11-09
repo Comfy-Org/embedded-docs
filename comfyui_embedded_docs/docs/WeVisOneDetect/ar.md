@@ -22,8 +22,8 @@ WeVisOne-VL Detect يكتشف الكائنات في صورة انطلاقًا م
 | --- | --- | --- |
 | `masks` | أقنعة ألفا للكائنات المطابَقة، واحد لكل إطار افتراضيًا أو واحد لكل صندوق عند استخدام `individual_masks`. | MASK |
 | `bboxes` | الصناديق الموجودة في كل صورة، مخزّنة بصيغة `x` و`y` و`width` و`height` و`label`. | BOUNDING_BOX |
-| `points` | نقاط بصيغة JSON بالبكسل، على الشكل `[{"x", "y", "label", "frame"}]`، تُملأ بواسطة مهمتي `point` و`count_point`. | STRING |
-| `text` | إجابة النموذج الخام، سطر واحد لكل صورة. | STRING |
+| `points` | نقاط بصيغة JSON بالبكسل، كائن واحد لكل نقطة يحوي `x` و`y` و`label` و`frame`، مثال: `[{"x": 128, "y": 96, "label": "cup", "frame": 0}]`. تُملأ بواسطة مهمتي `point` و`count_point`. | STRING |
+| `text` | إجابات النموذج الخام، مجمّعة بأسطر جديدة؛ وقد تشغل الإجابة الواحدة عدة أسطر. | STRING |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WeVisOneDetect/ar.md)
 

@@ -22,8 +22,8 @@ WeVisOne-VL Detect, bir görüntüdeki nesneleri metin istemine göre bulur ve s
 | --- | --- | --- |
 | `masks` | Eşleşen nesnelerin alfa matları; varsayılan olarak her kare için bir tane veya `individual_masks` ile her kutu için bir tane. | MASK |
 | `bboxes` | Her görüntüde bulunan kutular; `x`, `y`, `width`, `height` ve `label` olarak saklanır. | BOUNDING_BOX |
-| `points` | Piksel cinsinden JSON olarak noktalar, `[{"x", "y", "label", "frame"}]` biçiminde; `point` ve `count_point` görevleri tarafından doldurulur. | STRING |
-| `text` | Modelin ham yanıtı, her görüntü için bir satır. | STRING |
+| `points` | Piksel cinsinden JSON noktaları; her nokta `x`, `y`, `label` ve `frame` içeren bir nesnedir, örneğin `[{"x": 128, "y": 96, "label": "cup", "frame": 0}]`. `point` ve `count_point` görevleri doldurur. | STRING |
+| `text` | Modelin ham yanıtları yeni satırlarla birleştirilir; bir yanıt kendi içinde birden çok satıra yayılabilir. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WeVisOneDetect/tr.md)
 

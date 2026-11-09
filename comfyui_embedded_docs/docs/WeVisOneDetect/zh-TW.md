@@ -22,8 +22,8 @@ WeVisOne-VL Detect 會根據文字提示在影像中尋找物件，並依所選�
 | --- | --- | --- |
 | `masks` | 符合物件之 Alpha 遮罩，預設每幀一個，或在使用 `individual_masks` 時每個框一個。 | MASK |
 | `bboxes` | 在每張影像中找到的框，儲存為 `x`、`y`、`width`、`height` 與 `label`。 | BOUNDING_BOX |
-| `points` | 以像素為單位、格式為 `[{"x", "y", "label", "frame"}]` 的 JSON 點，由 `point` 與 `count_point` 任務填入。 | STRING |
-| `text` | 模型的原始答案，每張影像一行。 | STRING |
+| `points` | 以像素為單位的 JSON 點，每個點一個物件，包含 `x`、`y`、`label` 與 `frame`，例如 `[{"x": 128, "y": 96, "label": "cup", "frame": 0}]`，由 `point` 與 `count_point` 任務填入。 | STRING |
+| `text` | 模型的原始答案，以換行串接；單一答案本身也可能包含換行。 | STRING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WeVisOneDetect/zh-TW.md)
 

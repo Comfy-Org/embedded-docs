@@ -22,8 +22,8 @@ WeVisOne-VL Detect اشیا را در یک تصویر بر اساس یک پرا�
 | --- | --- | --- |
 | `masks` | ماسک‌های آلفای اشیای مطابقت‌یافته، به‌طور پیش‌فرض یکی برای هر فریم یا با `individual_masks` یکی برای هر جعبه. | MASK |
 | `bboxes` | جعبه‌های یافته‌شده در هر تصویر، ذخیره‌شده به‌صورت `x`، `y`، `width`، `height` و `label`. | BOUNDING_BOX |
-| `points` | نقاط به‌صورت JSON در پیکسل، با ساختار `[{"x", "y", "label", "frame"}]`، که توسط وظایف `point` و `count_point` پر می‌شوند. | STRING |
-| `text` | پاسخ خام مدل، یک خط برای هر تصویر. | STRING |
+| `points` | نقاط به‌صورت JSON در پیکسل؛ برای هر نقطه یک شیء با `x`، `y`، `label` و `frame`، مثلاً `[{"x": 128, "y": 96, "label": "cup", "frame": 0}]`. توسط وظایف `point` و `count_point` پر می‌شود. | STRING |
+| `text` | پاسخ‌های خام مدل که با خط جدید به هم چسبانده شده‌اند؛ خودِ یک پاسخ هم می‌تواند چندخطی باشد. | STRING |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WeVisOneDetect/fa.md)
 

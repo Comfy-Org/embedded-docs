@@ -13,7 +13,7 @@ O nó DrawBBoxes visualiza resultados de detecção de objetos desenhando caixas
 *   A entrada `bboxes` é obrigatória e deve ser fornecida.
 *   O nó lida automaticamente com diferentes formatos de entrada para `bboxes`. Um único dicionário será aplicado a todas as imagens no lote. Uma lista simples de dicionários será tratada como o mesmo conjunto de detecções para cada imagem. Uma lista de listas permite especificar diferentes detecções para cada imagem no lote.
 *   Se uma `image` não for fornecida, o nó criará uma imagem em branco com dimensões grandes o suficiente para acomodar todas as caixas delimitadoras fornecidas, com um tamanho mínimo padrão de 640x640.
-*   O campo `label` é comparado com as classes do conjunto de dados COCO, então cada classe mantém uma cor consistente. Um rótulo que não é uma classe COCO também é desenhado e recebe uma das cores restantes na ordem de primeira aparição, e uma caixa sem `score` é desenhada apenas com o rótulo.
+*   O campo `label` é comparado com as classes do conjunto de dados COCO, então uma classe COCO sempre recebe a mesma cor. Um rótulo que não é uma classe COCO também é desenhado e recebe a cor da paleta conforme sua posição entre os rótulos daquela imagem; uma caixa sem `score` é desenhada apenas com o rótulo.
 
 ## Saídas
 
