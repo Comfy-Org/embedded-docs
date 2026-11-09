@@ -11,7 +11,7 @@ WeVisOne-VL Detect يكتشف الكائنات في صورة انطلاقًا م
 | `task` | ما الذي يجب أن تعيده العقدة. تُرجع التجزئة صناديق بالإضافة إلى أقنعة ألفا؛ وتُرجع detection وreferring وocr وocr_grounding صناديق؛ وتُرجع point وcount_point نقاطًا؛ ويعدّ count_box مع صناديق؛ ويجد visual_prompt كائنات مشابهة لصناديق المرجع في `bboxes`؛ ويرسل freeform الاستعلام دون تغيير ويعيد نصًا فقط (الافتراضي: "segmentation"). | COMBO | نعم | `"segmentation"`<br>`"detection"`<br>`"referring"`<br>`"point"`<br>`"count_box"`<br>`"count_point"`<br>`"ocr"`<br>`"ocr_grounding"`<br>`"visual_prompt"`<br>`"freeform"` |
 | `query` | ما الذي تريد العثور عليه، بلغة واضحة (مثل "the red mug"). تقرأ `detection` و`point` تسمية واحدة لكل سطر، ويعدّ `count_box` و`count_point` الموضوع الذي تسمّيه، ويبحث `ocr_grounding` عن هذا النص تحديدًا، ويستخدم `visual_prompt` القيمة `bboxes` بدلًا من ذلك، ويرسل `freeform` هذا النص كامل الموجّه. ويتجاهله `ocr`. | STRING | نعم | - |
 | `bboxes` | صناديق مرجعية يستخدمها `visual_prompt` كأمثلة على الكائن المطلوب البحث عنه. | BOUNDING_BOX | لا | - |
-| `individual_masks` | إرجاع قناع واحد لكل صندوق، بترتيب `bboxes` وإطارًا بإطار، بدلًا من قناع واحد مدمج لكل إطار (الافتراضي: false). | BOOLEAN | لا | true<br>false |
+| `individual_masks` | إرجاع قناع واحد لكل صندوق مكتشف في مخرجات `bboxes`، إطارًا بإطار، بدلًا من قناع واحد مدمج لكل إطار (الافتراضي: false). | BOOLEAN | لا | true<br>false |
 | `max_length` | الحد الأقصى لعدد الرموز التي يجوز للنموذج توليدها لإجابته (الافتراضي: 4096). | INT | نعم | 1 إلى 32768 |
 
 **ملاحظة:** تُملأ الأقنعة فقط عندما يجيب النموذج بمراجع كائنات، وهو ما تطلبه مهمة التجزئة. أما المهام الأخرى فتُرجع صناديق أو نقاطًا أو نصًا مع قناع فارغ.

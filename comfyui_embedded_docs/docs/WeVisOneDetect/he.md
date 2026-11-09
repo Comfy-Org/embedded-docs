@@ -11,7 +11,7 @@ WeVisOne-VL Detect מאתר אובייקטים בתמונה על סמך הנחי
 | `task` | מה הצומת צריך להחזיר. סגמנטציה מחזירה תיבות בתוספת מסכות אלפא; זיהוי, הפניה, ocr ו-ocr_grounding מחזירים תיבות; point ו-count_point מחזירים נקודות; count_box סופר עם תיבות; visual_prompt מאתר אובייקטים דומים לתיבות הייחוס ב-`bboxes`; freeform שולח את השאילתה ללא שינוי ומחזיר טקסט בלבד (ברירת מחדל: "segmentation"). | COMBO | כן | `"segmentation"`<br>`"detection"`<br>`"referring"`<br>`"point"`<br>`"count_box"`<br>`"count_point"`<br>`"ocr"`<br>`"ocr_grounding"`<br>`"visual_prompt"`<br>`"freeform"` |
 | `query` | מה לחפש, בשפה פשוטה (לדוגמה "the red mug"). `detection` ו-`point` קוראים תווית אחת בכל שורה, `count_box` ו-`count_point` סופרים את הנושא שציינת, `ocr_grounding` מחפש את הטקסט המדויק הזה, `visual_prompt` משתמש ב-`bboxes` במקום, ו-`freeform` שולח אותו ככל ההנחיה. `ocr` מתעלם ממנו. | STRING | כן | - |
 | `bboxes` | תיבות ייחוס שבהן `visual_prompt` משתמש כדוגמאות לאובייקט שיש למצוא. | BOUNDING_BOX | לא | - |
-| `individual_masks` | החזר מסכה אחת לכל תיבה, לפי סדר `bboxes` ותמונה אחר תמונה, במקום מסכה משולבת אחת לכל תמונה (ברירת מחדל: false). | BOOLEAN | לא | true<br>false |
+| `individual_masks` | החזר מסכה אחת לכל תיבה שזוהתה בפלט `bboxes`, תמונה אחר תמונה, במקום מסכה משולבת אחת לכל תמונה (ברירת מחדל: false). | BOOLEAN | לא | true<br>false |
 | `max_length` | מספר האסימונים המרבי שהמודל רשאי לייצר לתשובתו (ברירת מחדל: 4096). | INT | כן | 1 עד 32768 |
 
 **הערה:** מסכות אלפא מלאות רק כאשר המודל עונה עם הפניות לאובייקטים, וזה מה שמבקשת משימת הסגמנטציה. משימות אחרות מחזירות תיבות, נקודות או טקסט עם מסכה ריקה.
