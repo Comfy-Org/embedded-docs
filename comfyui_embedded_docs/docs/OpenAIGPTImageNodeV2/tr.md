@@ -27,8 +27,22 @@ Bu girdiler, `model` değeri `gpt-image-2.6-flare` veya `gpt-image-2.6-sunburst`
 | `arka_plan` | Görüntüyü arka planlı veya arka plansız döndürür (varsayılan: `"auto"`). | COMBO | Evet | `"auto"`<br>`"opaque"`<br>`"transparent"` |
 | `kalite` | Görüntü kalitesi; maliyeti ve üretim süresini etkiler (varsayılan: `"low"`). | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 | `model.images` | Görüntü düzenleme için isteğe bağlı referans görüntü(ler). En fazla 16 görüntü. Ayrıntılar için Referans Girdileri bölümüne bakın. | IMAGE | Hayır | 0 ile 16 arası |
-| `model.mask` | İnpaunting için isteğe bağlı maske (beyaz alanlar değiştirilecektir). Tam olarak bir referans görüntü gerektirir. | MASK | Hayır | Yok |
+| `model.mask` | İç boyama (inpainting) için isteğe bağlı maske (beyaz alanlar değiştirilecektir). Tam olarak bir referans görüntü gerektirir. | MASK | Hayır | Yok |
 | `model.complexity` | Modelin görüntüyü oluşturmadan önce ne kadar planladığı. Düşük değerler daha hızlı döner, yüksek değerler daha fazla planlama yapar. Varsayılan: `"high"`. | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"` |
+
+### gpt-image-2.5-flare ve gpt-image-2.5-sunburst Girdileri
+
+Bu girdiler, `model` değeri `gpt-image-2.5-flare` veya `gpt-image-2.5-sunburst` olarak ayarlandığında görünür. Her iki model de aynı parametre kümesini paylaşır.
+
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `boyut` | Görüntü boyutu. Özel genişlik ve yüksekliği kullanmak için "Custom" seçeneğini seçin (varsayılan: `"auto"`). | COMBO | Evet | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `özel_genişlik` | Yalnızca `model.size` değeri "Custom" olduğunda kullanılır. 16'nın katı olmalıdır (varsayılan: `1024`). | INT | Hayır | 480 ile 3840 arası (adım 16) |
+| `özel_yükseklik` | Yalnızca `model.size` değeri "Custom" olduğunda kullanılır. 16'nın katı olmalıdır (varsayılan: `1024`). | INT | Hayır | 480 ile 3840 arası (adım 16) |
+| `arka_plan` | Görüntüyü arka planlı veya arka plansız döndürür (varsayılan: `"auto"`). | COMBO | Evet | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `kalite` | Görüntü kalitesi; maliyeti ve üretim süresini etkiler (varsayılan: `"low"`). | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `model.images` | Görüntü düzenleme için isteğe bağlı referans görüntü(ler). En fazla 16 görüntü. Ayrıntılar için Referans Girdileri bölümüne bakın. | IMAGE | Hayır | 0 ile 16 arası |
+| `model.mask` | İç boyama (inpainting) için isteğe bağlı maske (beyaz alanlar değiştirilecektir). Tam olarak bir referans görüntü gerektirir. | MASK | Hayır | Yok |
 
 ### gpt-image-2 Girdileri
 
@@ -42,7 +56,7 @@ Bu girdiler, `model` değeri `gpt-image-2` olarak ayarlandığında görünür.
 | `arka_plan` | Görüntüyü arka planlı veya arka plansız döndürür (varsayılan: `"auto"`). | COMBO | Evet | `"auto"`<br>`"opaque"` |
 | `kalite` | Görüntü kalitesi; maliyeti ve üretim süresini etkiler (varsayılan: `"low"`). | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"` |
 | `model.images` | Görüntü düzenleme için isteğe bağlı referans görüntü(ler). En fazla 16 görüntü. Ayrıntılar için Referans Girdileri bölümüne bakın. | IMAGE | Hayır | 0 ile 16 arası |
-| `model.mask` | İnpaunting için isteğe bağlı maske (beyaz alanlar değiştirilecektir). Tam olarak bir referans görüntü gerektirir. | MASK | Hayır | Yok |
+| `model.mask` | İç boyama (inpainting) için isteğe bağlı maske (beyaz alanlar değiştirilecektir). Tam olarak bir referans görüntü gerektirir. | MASK | Hayır | Yok |
 
 ### gpt-image-1.5 Girdileri
 
@@ -54,14 +68,14 @@ Bu girdiler, `model` değeri `gpt-image-1.5` olarak ayarlandığında görünür
 | `arka_plan` | Görüntüyü arka planlı veya arka plansız döndürür (varsayılan: `"auto"`). | COMBO | Evet | `"auto"`<br>`"opaque"`<br>`"transparent"` |
 | `kalite` | Görüntü kalitesi; maliyeti ve üretim süresini etkiler (varsayılan: `"low"`). | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"` |
 | `model.images` | Görüntü düzenleme için isteğe bağlı referans görüntü(ler). En fazla 16 görüntü. Ayrıntılar için Referans Girdileri bölümüne bakın. | IMAGE | Hayır | 0 ile 16 arası |
-| `model.mask` | İnpaunting için isteğe bağlı maske (beyaz alanlar değiştirilecektir). Tam olarak bir referans görüntü gerektirir. | MASK | Hayır | Yok |
+| `model.mask` | İç boyama (inpainting) için isteğe bağlı maske (beyaz alanlar değiştirilecektir). Tam olarak bir referans görüntü gerektirir. | MASK | Hayır | Yok |
 
 ### Referans Girdileri
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
 | `model.images` | Büyütülebilir yuva: 1..N öğe bağlayın (örn. `image_1`...`image_16`); tüm modeller için en fazla 16 referans görüntü. | IMAGE | Hayır | 0 ile 16 arası |
-| `model.mask` | İnpaunting için isteğe bağlı maske (beyaz alanlar değiştirilecektir). Tam olarak bir referans görüntü gerektirir. | MASK | Hayır | Yok |
+| `model.mask` | İç boyama (inpainting) için isteğe bağlı maske (beyaz alanlar değiştirilecektir). Tam olarak bir referans görüntü gerektirir. | MASK | Hayır | Yok |
 
 **Parametre Kısıtlamaları ve Sınırlamaları:**
 
@@ -83,4 +97,4 @@ Bu girdiler, `model` değeri `gpt-image-1.5` olarak ayarlandığında görünür
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `effc65978ac1cca52a8d8c85230784c23c9eb2afffd7f057aba9f9627e784a15`
+**Source fingerprint (SHA-256):** `36e8dbe4e35d0473ccf16482f640769e8bc30c345bc062a6785a48d7336efa03`

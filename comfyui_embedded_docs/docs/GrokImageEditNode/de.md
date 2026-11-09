@@ -14,6 +14,8 @@ Der Grok Image Edit-Node modifiziert ein vorhandenes Bild basierend auf einem Te
 | `seed` | Seed, um zu bestimmen, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 bis 2147483647 |
 | `aspect_ratio` | Das Seitenverhältnis für das Ausgabebild. Nur zulässig, wenn mehrere Bilder mit dem `image`-Eingang verbunden sind (Standard: "auto"). | COMBO | Nein | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
 
+**Hinweis:** `grok-imagine-image-quality` und `grok-imagine-image-pro` wurden von xAI eingestellt und laufen jetzt als `grok-imagine-image-2.0` mit niedriger Qualität.
+
 **Wichtige Einschränkungen:**
 - Der `image`-Eingang unterstützt bis zu 3 Bilder, außer bei Verwendung des Modells `grok-imagine-image-pro`, das nur 1 Eingabebild unterstützt.
 - Der Parameter `aspect_ratio` kann nur dann auf einen benutzerdefinierten Wert (nicht "auto") gesetzt werden, wenn mehrere Bilder mit dem `image`-Eingang verbunden sind. Das Festlegen eines benutzerdefinierten Seitenverhältnisses bei einem einzelnen Eingabebild führt zu einem Fehler.
@@ -28,4 +30,4 @@ Der Grok Image Edit-Node modifiziert ein vorhandenes Bild basierend auf einem Te
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokImageEditNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `e2ace07d10901c4e57086da8e3294a5d04e379103e9740131f5355cd4b07625d`
+**Source fingerprint (SHA-256):** `8328824c1936120581305d11641d60cc44f4eb548f64ce5a6f325a6fbcfd2747`

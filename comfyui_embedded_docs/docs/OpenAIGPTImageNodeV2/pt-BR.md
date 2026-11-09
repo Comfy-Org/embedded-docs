@@ -30,6 +30,20 @@ Estas entradas aparecem quando `model` está definido como `gpt-image-2.6-flare`
 | `model.mask` | Máscara opcional para inpainting (as áreas brancas serão substituídas). Requer exatamente uma imagem de referência. | MASK | Não | N/A |
 | `model.complexity` | Quanto o modelo planeja a imagem antes da renderização. Valores menores retornam mais rápido; valores maiores planejam mais. Padrão: `"high"`. | COMBO | Sim | `"low"`<br>`"medium"`<br>`"high"` |
 
+### Entradas do gpt-image-2.5-flare e do gpt-image-2.5-sunburst
+
+Estas entradas aparecem quando `model` está definido como `gpt-image-2.5-flare` ou `gpt-image-2.5-sunburst`. Ambos os modelos compartilham o mesmo conjunto de parâmetros.
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+| --- | --- | --- | --- | --- |
+| `tamanho` | Tamanho da imagem. Selecione "Custom" para usar a largura e a altura personalizadas (padrão: `"auto"`). | COMBO | Sim | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `largura_personalizada` | Usado somente quando `model.size` é "Custom". Deve ser um múltiplo de 16 (padrão: `1024`). | INT | Não | 480 a 3840 (passo 16) |
+| `altura_personalizada` | Usado somente quando `model.size` é "Custom". Deve ser um múltiplo de 16 (padrão: `1024`). | INT | Não | 480 a 3840 (passo 16) |
+| `fundo` | Retorna a imagem com ou sem fundo (padrão: `"auto"`). | COMBO | Sim | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `qualidade` | Qualidade da imagem; afeta o custo e o tempo de geração (padrão: `"low"`). | COMBO | Sim | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `model.images` | Imagens de referência opcionais para edição de imagem. Até 16 imagens. Consulte Entradas de referência para obter detalhes. | IMAGE | Não | 0 a 16 |
+| `model.mask` | Máscara opcional para inpainting (as áreas brancas serão substituídas). Requer exatamente uma imagem de referência. | MASK | Não | N/A |
+
 ### Entradas do gpt-image-2
 
 Estas entradas aparecem quando `model` está definido como `gpt-image-2`.
@@ -83,4 +97,4 @@ Estas entradas aparecem quando `model` está definido como `gpt-image-1.5`.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `effc65978ac1cca52a8d8c85230784c23c9eb2afffd7f057aba9f9627e784a15`
+**Source fingerprint (SHA-256):** `36e8dbe4e35d0473ccf16482f640769e8bc30c345bc062a6785a48d7336efa03`

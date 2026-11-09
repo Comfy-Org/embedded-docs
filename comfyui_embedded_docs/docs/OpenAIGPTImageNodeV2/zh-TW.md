@@ -30,6 +30,20 @@
 | `model.mask` | 用於內繪（inpainting）的選用遮罩（白色區域會被替換）。必須恰好有一張參考影像。 | MASK | 否 | N/A |
 | `model.complexity` | 模型在算繪前規劃影像的程度。較低的值回應較快，較高的值則規劃更多。預設：`"high"`。 | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
 
+### gpt-image-2.5-flare 與 gpt-image-2.5-sunburst 輸入
+
+當 `model` 設為 `gpt-image-2.5-flare` 或 `gpt-image-2.5-sunburst` 時會顯示這些輸入。兩個模型共用同一組參數。
+
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `尺寸` | 影像尺寸。選擇 "Custom" 以使用自訂寬度與高度（預設：`"auto"`）。 | COMBO | 是 | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `自訂寬度` | 僅當 `model.size` 為 "Custom" 時使用。必須是 16 的倍數（預設：`1024`）。 | INT | 否 | 480 至 3840（步進值：16） |
+| `自訂高度` | 僅當 `model.size` 為 "Custom" 時使用。必須是 16 的倍數（預設：`1024`）。 | INT | 否 | 480 至 3840（步進值：16） |
+| `背景` | 傳回含背景或不含背景的影像（預設：`"auto"`）。 | COMBO | 是 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `品質` | 影像品質，會影響成本與生成時間（預設：`"low"`）。 | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `model.images` | 用於影像編輯的選用參考影像。最多 16 張影像。詳見「參考輸入」。 | IMAGE | 否 | 0 至 16 |
+| `model.mask` | 用於內繪（inpainting）的選用遮罩（白色區域會被替換）。必須恰好有一張參考影像。 | MASK | 否 | N/A |
+
 ### gpt-image-2 輸入
 
 當 `model` 設為 `gpt-image-2` 時會顯示這些輸入。
@@ -83,4 +97,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `effc65978ac1cca52a8d8c85230784c23c9eb2afffd7f057aba9f9627e784a15`
+**Source fingerprint (SHA-256):** `36e8dbe4e35d0473ccf16482f640769e8bc30c345bc062a6785a48d7336efa03`
