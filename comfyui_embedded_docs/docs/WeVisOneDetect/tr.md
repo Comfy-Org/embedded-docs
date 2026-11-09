@@ -14,7 +14,7 @@ WeVisOne-VL Detect, bir görüntüdeki nesneleri metin istemine göre bulur ve s
 | `individual_masks` | Her kare için birleşik tek mat yerine, `bboxes` sırasına göre ve kare kare her kutu için bir mat döndür (varsayılan: false). | BOOLEAN | Hayır | true<br>false |
 | `max_length` | Modelin yanıtı için üretebileceği maksimum token sayısı (varsayılan: 4096). | INT | Evet | 1 ile 32768 arası |
 
-**Not:** Matlar yalnızca model nesne referanslarıyla yanıt verdiğinde doldurulur; segmentation ve visual prompt görevlerinin istediği de budur. Diğer görevler kutular, noktalar veya boş matla birlikte metin döndürür.
+**Not:** Matlar yalnızca model nesne referanslarıyla yanıt verdiğinde doldurulur; segmentation görevinin istediği de budur. Diğer görevler kutular, noktalar veya boş matla birlikte metin döndürür.
 
 ## Çıktılar
 

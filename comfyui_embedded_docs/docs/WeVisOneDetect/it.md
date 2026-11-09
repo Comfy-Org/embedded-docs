@@ -14,7 +14,7 @@ WeVisOne-VL Detect individua gli oggetti in un'immagine a partire da un prompt t
 | `individual_masks` | Restituisce una matte per box, nell'ordine di `bboxes` e fotogramma per fotogramma, invece di una matte combinata per fotogramma (predefinito: false). | BOOLEAN | No | true<br>false |
 | `max_length` | Numero massimo di token che il modello può generare per la sua risposta (predefinito: 4096). | INT | Sì | 1 a 32768 |
 
-**Nota:** Le matte vengono riempite solo quando il modello risponde con riferimenti agli oggetti, che è ciò che richiedono le attività di segmentazione e visual prompt. Le altre attività restituiscono box, punti o testo con una matte vuota.
+**Nota:** Le matte vengono riempite solo quando il modello risponde con riferimenti agli oggetti, che è ciò che richiede l'attività di segmentazione. Le altre attività restituiscono box, punti o testo con una matte vuota.
 
 ## Uscite
 

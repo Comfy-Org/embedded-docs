@@ -14,7 +14,7 @@ WeVisOne-VL Detect encontra objetos em uma imagem a partir de um prompt de texto
 | `individual_masks` | Retorna uma máscara por caixa, na ordem de `bboxes` e quadro a quadro, em vez de uma máscara combinada por quadro (padrão: false). | BOOLEAN | Não | true<br>false |
 | `max_length` | Número máximo de tokens que o modelo pode gerar para sua resposta (padrão: 4096). | INT | Sim | 1 a 32768 |
 
-**Observação:** As máscaras só são preenchidas quando o modelo responde com referências de objeto, que é o que as tarefas de segmentação e de prompt visual solicitam. Outras tarefas retornam caixas, pontos ou texto com uma máscara vazia.
+**Observação:** As máscaras só são preenchidas quando o modelo responde com referências de objeto, que é o que a tarefa de segmentação solicita. Outras tarefas retornam caixas, pontos ou texto com uma máscara vazia.
 
 ## Saídas
 

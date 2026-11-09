@@ -14,7 +14,7 @@ WeVisOne-VL Detect findet Objekte in einem Bild anhand eines Text-Prompts und gi
 | `individual_masks` | Gibt eine Matte pro Box in der Reihenfolge von `bboxes` und Frame für Frame zurück, statt einer kombinierten Matte pro Frame (Standard: false). | BOOLEAN | Nein | true<br>false |
 | `max_length` | Maximale Anzahl an Tokens, die das Modell für seine Antwort generieren darf (Standard: 4096). | INT | Ja | 1 bis 32768 |
 
-**Hinweis:** Mattes werden nur gefüllt, wenn das Modell mit Objektreferenzen antwortet, was die Aufgaben segmentation und visual prompt verlangen. Andere Aufgaben geben Boxen, Punkte oder Text mit einer leeren Matte zurück.
+**Hinweis:** Mattes werden nur gefüllt, wenn das Modell mit Objektreferenzen antwortet, was die Aufgabe segmentation verlangt. Andere Aufgaben geben Boxen, Punkte oder Text mit einer leeren Matte zurück.
 
 ## Ausgaben
 

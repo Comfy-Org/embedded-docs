@@ -14,7 +14,7 @@ WeVisOne-VL Detect 會根據文字提示在影像中尋找物件，並依所選�
 | `individual_masks` | 每個框傳回一個遮罩，依 `bboxes` 順序並逐幀傳回，而非每幀傳回一個合併遮罩（預設：false）。 | BOOLEAN | 否 | true<br>false |
 | `max_length` | 模型可為其答案產生的最大 token 數（預設：4096）。 | INT | 是 | 1 至 32768 |
 
-**注意：** 只有在模型以物件參考作答時，遮罩才會被填入；這正是 segmentation 與 visual_prompt 任務所要求的。其他任務會傳回框、點或文字，並附帶空遮罩。
+**注意：** 只有在模型以物件參考作答時，遮罩才會被填入；這正是 segmentation 任務所要求的。其他任務會傳回框、點或文字，並附帶空遮罩。
 
 ## 輸出
 

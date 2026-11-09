@@ -14,7 +14,7 @@ WeVisOne-VL Detect trouve des objets dans une image à partir d'un prompt textue
 | `individual_masks` | Retourner un masque alpha par boîte, dans l'ordre de `bboxes` et trame par trame, au lieu d'un masque combiné par trame (par défaut : false). | BOOLEAN | Non | `true`<br>`false` |
 | `max_length` | Nombre maximal de tokens que le modèle peut générer pour sa réponse (par défaut : 4096). | INT | Oui | 1 à 32768 |
 
-**Remarque :** Les masques alpha ne sont remplis que lorsque le modèle répond avec des références d'objets, ce que demandent les tâches `segmentation` et `visual_prompt`. Les autres tâches retournent des boîtes, des points ou du texte avec un masque alpha vide.
+**Remarque :** Les masques alpha ne sont remplis que lorsque le modèle répond avec des références d'objets, ce que demande la tâche `segmentation`. Les autres tâches retournent des boîtes, des points ou du texte avec un masque alpha vide.
 
 ## Sorties
 
