@@ -17,7 +17,7 @@
 | `渲染樣式` | 影像輸出的顯示樣式。選項包括：color（全彩渲染）、clay（中性反照率陰影）、depth（近處物體顯示為亮色）、normal（OpenGL 法線貼圖）（預設值："color"） | COMBO | 是 | "color"<br>"clay"<br>"depth"<br>"normal" |
 | `背景` | 渲染的純色背景顏色（預設值：#000000） | COLOR | 是 | - |
 | `背景影像` | 可選的背景襯板，合成在潑濺後方。會覆蓋純色背景顏色。會調整為渲染尺寸。每幀使用一批影像，單張影像則用於所有幀。僅適用於 color 和 clay 渲染樣式 | IMAGE | 否 | - |
-| `camera_info` | 用於渲染的相機。可來自 Load3D、Preview3D 或 Create Camera Info 節點。如果為空，則從預設的 3/4 視角自動框選潑濺 | CAMERA_3D | 否 | - |
+| `camera_info` | 用於渲染的相機。可來自 Load3D、Preview3D 或 Create Camera Info 節點。如果為空，則從預設的 3/4 視角自動框選潑濺 相機清單會為每個相機渲染一張影像。 | CAMERA_3D | 否 | - |
 
 ## ## 輸出
 
@@ -29,4 +29,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RenderSplat/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `038bd9fb032f347ecda665c03719a64b0cf907599b701606f5cf6d0606d19d98`
+**Source fingerprint (SHA-256):** `344e5fac74f4c33b08bea4d4737c178e1186bf212c487a8236331bce8818c30c`
