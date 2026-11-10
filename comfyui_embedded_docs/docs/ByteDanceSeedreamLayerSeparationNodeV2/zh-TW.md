@@ -1,6 +1,6 @@
-# ByteDance Seedream 5.0 Layer Separation
+# ByteDance Seedream 5.0 & 5.5 Layer Separation
 
-ByteDance Seedream 5.0 Layer Separation 會將一張影像分解成一個背景底圖，以及最多 16 個可重新定位的透明圖層；每個圖層都包含堆疊順序、邊界框、名稱與描述。它會回傳背景、帶遮罩的各圖層影像、放置框，以及可直接編輯的圖層堆疊。`model` 選擇器可在 Seedream 5.0 Pro 與更快速的 Seedream 5.0 Flash 之間選擇。
+ByteDance Seedream 5.0 Layer Separation 會將一張影像分解成一個背景底圖，以及最多 16 個可重新定位的透明圖層；每個圖層都包含堆疊順序、邊界框、名稱與描述。它會回傳背景、帶遮罩的各圖層影像、放置框，以及可直接編輯的圖層堆疊。`model` 選擇器可在 Seedream 5.0 Pro 與更快速的 Seedream 5.0 Flash 之間選擇。 Seedream 5.5 最多可回傳 99 個圖層。
 
 ## 輸入
 
@@ -8,7 +8,7 @@ ByteDance Seedream 5.0 Layer Separation 會將一張影像分解成一個背景�
 
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `模型` | 用於分離的 Seedream 模型。"seedream 5.0 pro"（預設）可提供最高的分離品質，並且會額外提供 `prompt_optimization` 控制項；"seedream 5.0 flash" 則更快速、成本更低，且沒有提示詞最佳化控制項。 | DYNAMIC_COMBO | 是 | "seedream 5.0 pro"<br>"seedream 5.0 flash" |
+| `模型` | 用於分離的 Seedream 模型。"seedream 5.0 pro"（預設）可提供最高的分離品質，並且會額外提供 `prompt_optimization` 控制項；"seedream 5.0 flash" 則更快速、成本更低，且沒有提示詞最佳化控制項。 | DYNAMIC_COMBO | 是 | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash" |
 
 ### Seedream 5.0 Pro 與 5.0 Flash 輸入
 
@@ -21,7 +21,13 @@ ByteDance Seedream 5.0 Layer Separation 會將一張影像分解成一個背景�
 | `size` | 輸出解析度等級。"auto" 會跟隨輸入影像尺寸（限制在 1K-2K 範圍內）。預設值："auto"。 | COMBO | 是 | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
 | `seed` | 用於生成的種子。預設值：42。 | INT | 是 | 0 至 2147483647 |
 | `watermark` | 是否在影像上加入 "AI generated" 浮水印。預設值：false。 | BOOLEAN | 是 | false<br>true |
-| `crop_layers` | 圖層/遮罩批次輸出的幾何配置（`layer_stack` 不受影響，且一律保持緊密裁切）。完整畫布：每個圖層位於其邊界框位置的基礎尺寸畫布上——可直接使用 ImageCompositeMasked 重新合成。最小尺寸：每個圖層裁切至其邊界框（為了批次處理而填充至最大圖層）——張量小得多；使用 `bboxes` 輸出，透過 Layers From Bounding Boxes 重建放置位置。預設值：false（完整畫布）。 | BOOLEAN | 是 | false（完整畫布）<br>true（最小尺寸） |
+| `crop_layers` | 圖層/遮罩批次輸出的幾何配置（`layer_stack` 不受影響，且一律保持緊密裁切）。完整畫布：每個圖層位於其邊界框位置的基礎尺寸畫布上——可直接使用 ImageCompositeMasked 重新合成。最小尺寸：每個圖層裁切至其邊界框（為了批次處理而填充至最大圖層）——張量小得多；使用 `bboxes` 輸出，透過 Layers From Bounding Boxes 重建放置位置。預設值：false（完整畫布）。 使用 Seedream 5.5 時預設為 true（最小尺寸）。 | BOOLEAN | 是 | false（完整畫布）<br>true（最小尺寸） |
+
+### 僅限 Seedream 5.5 的輸入
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `max_images` | 回傳影像的最大數量（含底圖）。模型會自行決定需要多少張；每張回傳的影像都會計費。預設：30。 | INT | 是 | 2 至 100 |
 
 ### 僅限 Seedream 5.0 Pro 的輸入
 
@@ -45,4 +51,4 @@ ByteDance Seedream 5.0 Layer Separation 會將一張影像分解成一個背景�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNodeV2/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `b106ca63d37aea68079f0032a1f7dfeefee9f759c71bb1605bbfe66c3d9dad62`
+**Source fingerprint (SHA-256):** `fa4f65584cf5e5c08d04b9a26c343176287f4e5a51b4a2d07d6d61d7f9ac26a9`

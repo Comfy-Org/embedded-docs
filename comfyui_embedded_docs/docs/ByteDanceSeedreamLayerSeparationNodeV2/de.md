@@ -1,6 +1,6 @@
-# ByteDance Seedream 5.0 Ebenentrennung
+# ByteDance Seedream 5.0 & 5.5 Ebenentrennung
 
-ByteDance Seedream 5.0 Layer Separation zerlegt ein Bild in eine Hintergrundplatte plus bis zu 16 repositionierbare transparente Ebenen, jede mit Stapelreihenfolge, Begrenzungsrahmen, Name und Beschreibung. Es gibt den Hintergrund, Bilder pro Ebene mit Masken, Platzierungsboxen und einen sofort editierbaren Ebenenstapel zurück. Die Auswahl `model` wählt zwischen Seedream 5.0 Pro und dem schnelleren Seedream 5.0 Flash.
+ByteDance Seedream 5.0 Layer Separation zerlegt ein Bild in eine Hintergrundplatte plus bis zu 16 repositionierbare transparente Ebenen, jede mit Stapelreihenfolge, Begrenzungsrahmen, Name und Beschreibung. Es gibt den Hintergrund, Bilder pro Ebene mit Masken, Platzierungsboxen und einen sofort editierbaren Ebenenstapel zurück. Die Auswahl `model` wählt zwischen Seedream 5.0 Pro und dem schnelleren Seedream 5.0 Flash. Seedream 5.5 liefert bis zu 99 Ebenen.
 
 ## Eingaben
 
@@ -8,7 +8,7 @@ ByteDance Seedream 5.0 Layer Separation zerlegt ein Bild in eine Hintergrundplat
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das für die Trennung verwendete Seedream-Modell. "seedream 5.0 pro" (Standard) liefert die höchste Trennungqualität und bietet außerdem eine `prompt_optimization`-Steuerung; "seedream 5.0 flash" ist schneller und günstiger und besitzt keine Prompt-Optimierungs-Steuerung. | DYNAMIC_COMBO | Ja | "seedream 5.0 pro"<br>"seedream 5.0 flash" |
+| `model` | Das für die Trennung verwendete Seedream-Modell. "seedream 5.0 pro" (Standard) liefert die höchste Trennungqualität und bietet außerdem eine `prompt_optimization`-Steuerung; "seedream 5.0 flash" ist schneller und günstiger und besitzt keine Prompt-Optimierungs-Steuerung. | DYNAMIC_COMBO | Ja | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash" |
 
 ### Seedream 5.0 Pro und 5.0 Flash Eingaben
 
@@ -21,7 +21,13 @@ Diese Eingaben sind bei beiden Modellen verfügbar.
 | `size` | Auflösungsstufe der Ausgabe. "auto" folgt der Größe des Eingabebilds (auf den Bereich 1K-2K begrenzt). Standard: "auto". | COMBO | Ja | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
 | `seed` | Seed für die Generierung. Standard: 42. | INT | Ja | 0 bis 2147483647 |
 | `watermark` | Ob den Bildern ein "AI generated"-Wasserzeichen hinzugefügt werden soll. Standard: false. | BOOLEAN | Ja | false<br>true |
-| `crop_layers` | Geometrie der Batch-Ausgaben von layers/masks (layer_stack ist nicht betroffen und immer passgenau). Vollständige Leinwand: jede Ebene auf einer Leinwand in Basisgröße an ihrer Begrenzungsrahmenposition – direkt mit ImageCompositeMasked wieder zusammensetzen. Minimale Größe: jede Ebene auf ihren Begrenzungsrahmen zugeschnitten (für das Batching auf die größte Ebene aufgefüllt) – deutlich kleinere Tensoren; Platzierung mit Layers From Bounding Boxes unter Verwendung der bboxes-Ausgabe wiederherstellen. Standard: false (vollständige Leinwand). | BOOLEAN | Ja | false (vollständige Leinwand)<br>true (minimale Größe) |
+| `crop_layers` | Geometrie der Batch-Ausgaben von layers/masks (layer_stack ist nicht betroffen und immer passgenau). Vollständige Leinwand: jede Ebene auf einer Leinwand in Basisgröße an ihrer Begrenzungsrahmenposition – direkt mit ImageCompositeMasked wieder zusammensetzen. Minimale Größe: jede Ebene auf ihren Begrenzungsrahmen zugeschnitten (für das Batching auf die größte Ebene aufgefüllt) – deutlich kleinere Tensoren; Platzierung mit Layers From Bounding Boxes unter Verwendung der bboxes-Ausgabe wiederherstellen. Standard: false (vollständige Leinwand). Bei Seedream 5.5 ist der Standard true (minimale Größe). | BOOLEAN | Ja | false (vollständige Leinwand)<br>true (minimale Größe) |
+
+### Nur für Seedream 5.5: Eingaben
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `max_images` | Maximale Anzahl zurückgegebener Bilder einschließlich des Basisbilds. Wie viele nötig sind, entscheidet das Modell; jedes zurückgegebene Bild wird berechnet. Standard: 30. | INT | Ja | 2 bis 100 |
 
 ### Nur für Seedream 5.0 Pro: Eingaben
 
@@ -45,4 +51,4 @@ Diese Eingaben sind bei beiden Modellen verfügbar.
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNodeV2/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `b106ca63d37aea68079f0032a1f7dfeefee9f759c71bb1605bbfe66c3d9dad62`
+**Source fingerprint (SHA-256):** `fa4f65584cf5e5c08d04b9a26c343176287f4e5a51b4a2d07d6d61d7f9ac26a9`

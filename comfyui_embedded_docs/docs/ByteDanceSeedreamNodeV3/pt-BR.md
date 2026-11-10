@@ -1,6 +1,6 @@
-# ByteDance Seedream 4.5 & 5.0
+# ByteDance Seedream 4.5, 5.0 & 5.5
 
-ByteDance Seedream 4.5 e 5.0 geram imagens a partir de um prompt de texto (texto para imagem) ou geram/editam imagens guiadas por imagens de referência opcionais, usando os modelos ByteDance Seedream 4.0, 4.5 e 5.0 em resolução de até 4K. O nó envia o prompt e quaisquer imagens de referência para a API da ByteDance, aguarda a conclusão da tarefa de geração e retorna o tensor de imagem resultante ou tensores.
+ByteDance Seedream 4.5 e 5.0 geram imagens a partir de um prompt de texto (texto para imagem) ou geram/editam imagens guiadas por imagens de referência opcionais, usando os modelos ByteDance Seedream 4.0, 4.5 e 5.0 em resolução de até 4K. O nó envia o prompt e quaisquer imagens de referência para a API da ByteDance, aguarda a conclusão da tarefa de geração e retorna o tensor de imagem resultante ou tensores. A lista de modelos também inclui o Seedream 5.5.
 
 ## Entradas
 
@@ -9,7 +9,18 @@ ByteDance Seedream 4.5 e 5.0 geram imagens a partir de um prompt de texto (texto
 | Parâmetro | Descrição | Tipo de dado | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt de texto para criar ou editar uma imagem. Não pode ficar vazio após remover espaços em branco. | STRING | Sim | Texto multilinha |
-| `model` | Seleciona o modelo Seedream a ser usado. Cada modelo expõe seu próprio conjunto de subparâmetros e limites abaixo. | DYNAMIC_COMBO | Sim | "seedream 5.0 pro"<br>"seedream 5.0 flash"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
+| `model` | Seleciona o modelo Seedream a ser usado. Cada modelo expõe seu próprio conjunto de subparâmetros e limites abaixo. | DYNAMIC_COMBO | Sim | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
+
+### Entradas do Seedream 5.5 (seedream 5.5)
+
+| Parâmetro | Descrição | Tipo de dado | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `size_preset` | Escolha um tamanho recomendado. Selecione Custom para usar a largura e a altura abaixo. Padrão: primeira predefinição recomendada para este modelo. | COMBO | Não | Predefinições de tamanho recomendadas específicas do modelo<br>"Custom" |
+| `width` | Largura personalizada da imagem. O valor só funciona se `size_preset` estiver definido como `Custom`. Padrão: 2048. | INT | Não | 240 a 8594 (passo 2) |
+| `height` | Altura personalizada da imagem. O valor só funciona se `size_preset` estiver definido como `Custom`. Padrão: 2048. | INT | Não | 240 a 8594 (passo 2) |
+| `background` | `auto` decide pelo prompt e devolve transparência principalmente para adesivos e logotipos; `opaque` nunca devolve transparência; `transparent` funciona melhor quando o prompt descreve um assunto isolado. Padrão: `"auto"`. | COMBO | Não | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `seed` | Semente a ser usada para geração. Padrão: 42. | INT | Não | 0 a 2147483647 |
+| `watermark` | Define se deve adicionar uma marca d'água "AI generated" à imagem. Padrão: false. | BOOLEAN | Não | true / false |
 
 ### Entradas do Seedream 5.0 Pro (seedream 5.0 pro)
 
@@ -103,4 +114,4 @@ ByteDance Seedream 4.5 e 5.0 geram imagens a partir de um prompt de texto (texto
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV3/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `1c1f40b202ccbb3e0f73cd072170e1c16b833e007f26e63505b54c42b004a8a6`
+**Source fingerprint (SHA-256):** `4f95fbf4bd2af6044c2a4213e3c239554a6247c001d4d864135b17da31e549e1`

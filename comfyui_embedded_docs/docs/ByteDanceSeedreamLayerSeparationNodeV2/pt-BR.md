@@ -1,6 +1,6 @@
-# ByteDance Seedream 5.0 Layer Separation
+# ByteDance Seedream 5.0 & 5.5 Layer Separation
 
-O ByteDance Seedream 5.0 Layer Separation decompõe uma imagem em uma imagem de fundo base mais até 16 camadas transparentes reposicionáveis, cada uma com ordem de empilhamento, caixa delimitadora, nome e descrição. Ele retorna o fundo, imagens por camada com máscaras, caixas de posicionamento e uma pilha de camadas pronta para edição. O seletor `model` escolhe entre o Seedream 5.0 Pro e o Seedream 5.0 Flash, mais rápido.
+O ByteDance Seedream 5.0 Layer Separation decompõe uma imagem em uma imagem de fundo base mais até 16 camadas transparentes reposicionáveis, cada uma com ordem de empilhamento, caixa delimitadora, nome e descrição. Ele retorna o fundo, imagens por camada com máscaras, caixas de posicionamento e uma pilha de camadas pronta para edição. O seletor `model` escolhe entre o Seedream 5.0 Pro e o Seedream 5.0 Flash, mais rápido. O Seedream 5.5 devolve até 99 camadas.
 
 ## Entradas
 
@@ -8,7 +8,7 @@ O ByteDance Seedream 5.0 Layer Separation decompõe uma imagem em uma imagem de 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo Seedream usado para a separação. "seedream 5.0 pro" (padrão) oferece a mais alta qualidade de separação e também expõe um controle `prompt_optimization`; "seedream 5.0 flash" é mais rápido e mais barato e não tem controle de otimização de prompt. | DYNAMIC_COMBO | Sim | "seedream 5.0 pro"<br>"seedream 5.0 flash" |
+| `model` | O modelo Seedream usado para a separação. "seedream 5.0 pro" (padrão) oferece a mais alta qualidade de separação e também expõe um controle `prompt_optimization`; "seedream 5.0 flash" é mais rápido e mais barato e não tem controle de otimização de prompt. | DYNAMIC_COMBO | Sim | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash" |
 
 ### Entradas do Seedream 5.0 Pro e 5.0 Flash
 
@@ -21,7 +21,13 @@ Estas entradas estão disponíveis com ambos os modelos.
 | `size` | Nível de resolução da saída. "auto" segue o tamanho da imagem de entrada (limitado ao intervalo de 1K-2K). Padrão: "auto". | COMBO | Sim | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
 | `seed` | Semente a ser usada para a geração. Padrão: 42. | INT | Sim | 0 a 2147483647 |
 | `watermark` | Se deve adicionar uma marca d'água "AI generated" às imagens. Padrão: false. | BOOLEAN | Sim | false<br>true |
-| `crop_layers` | Geometria das saídas em lote layers/masks (layer_stack não é afetado e sempre fica justo). Canvas completo: cada camada em um canvas do tamanho da base, na posição de sua caixa delimitadora — recomponha diretamente com ImageCompositeMasked. Tamanho mínimo: cada camada recortada para sua caixa delimitadora (preenchida até a maior camada para batching) — tensores muito menores; reconstrua o posicionamento com Layers From Bounding Boxes usando a saída bboxes. Padrão: false (canvas completo). | BOOLEAN | Sim | false (tela cheia)<br>true (tamanho mínimo) |
+| `crop_layers` | Geometria das saídas em lote layers/masks (layer_stack não é afetado e sempre fica justo). Canvas completo: cada camada em um canvas do tamanho da base, na posição de sua caixa delimitadora — recomponha diretamente com ImageCompositeMasked. Tamanho mínimo: cada camada recortada para sua caixa delimitadora (preenchida até a maior camada para batching) — tensores muito menores; reconstrua o posicionamento com Layers From Bounding Boxes usando a saída bboxes. Padrão: false (canvas completo). No Seedream 5.5 o padrão é true (tamanho mínimo). | BOOLEAN | Sim | false (tela cheia)<br>true (tamanho mínimo) |
+
+### Entradas somente do Seedream 5.5
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `max_images` | Número máximo de imagens devolvidas, incluindo a imagem base. O modelo decide quantas precisa; cada imagem devolvida é cobrada. Padrão: 30. | INT | Sim | 2 a 100 |
 
 ### Entradas somente do Seedream 5.0 Pro
 
@@ -45,4 +51,4 @@ Estas entradas estão disponíveis com ambos os modelos.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNodeV2/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `b106ca63d37aea68079f0032a1f7dfeefee9f759c71bb1605bbfe66c3d9dad62`
+**Source fingerprint (SHA-256):** `fa4f65584cf5e5c08d04b9a26c343176287f4e5a51b4a2d07d6d61d7f9ac26a9`

@@ -13,7 +13,7 @@ Create Camera Infoノードは、3Dレンダリング用のカメラ情報構造
 | `ロール` | 視軸周りのカメラのロール（度単位）。（デフォルト：0.0） | FLOAT | いいえ | -180.0 ～ 180.0 |
 | `視野角` | 垂直視野角（度単位）。（デフォルト：35.0） | FLOAT | いいえ | 1.0 ～ 120.0 |
 | `ズーム` | デジタルズーム（焦点距離倍率）。1より大きい値はカメラを移動せずにズームインします。（デフォルト：1.0） | FLOAT | いいえ | 0.01 ～ 100.0 |
-| `カメラタイプ` | Render Splatで使用する投影法：透視投影（遠近感）または正投影（平行投影）。（デフォルト："perspective"） | COMBO | いいえ | `"perspective"`<br>`"orthographic"` |
+| `カメラタイプ` | Render Splat および Render Meshで使用する投影法：透視投影（遠近感）または正投影（平行投影）。（デフォルト："perspective"） | COMBO | いいえ | `"perspective"`<br>`"orthographic"` |
 
 ### モード固有のパラメータ
 
@@ -56,4 +56,4 @@ Create Camera Infoノードは、3Dレンダリング用のカメラ情報構造
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `5a9703e8e01ad2cd92a97da8d892c278765a9cef8bcd38e3336d1f73717d9895`
+**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`

@@ -10,7 +10,7 @@ Bu düğüm, p-h3-image ile tek bir durağan görüntü için bir istemi koşull
 | `prompt` | Neyin oluşturulacağı veya `image_1` dosyasının nasıl düzenleneceği. Görüntüler bağlıyken kısa bir talimatın başına `Edit <Picture 1>. ` eklenir. Zaten `Edit <Picture` ile başlayan bir talimat veya bir istem yükseltici tarafından üretilen bir düzenleme talimatı, tam olarak yazıldığı gibi kullanılır. | STRING | Evet | - |
 | `width` | Piksel cinsinden çıktı genişliği. 0, ölçekleme sonrasında `image_1` genişliğini kullanır veya görüntü bağlı değilken 2912 kullanır (varsayılan: 0). | INT | Evet | 0 ile MAX_RESOLUTION arası |
 | `height` | Piksel cinsinden çıktı yüksekliği. 0, ölçekleme sonrasında `image_1` yüksekliğini kullanır veya görüntü bağlı değilken 2912 kullanır (varsayılan: 0). | INT | Evet | 0 ile MAX_RESOLUTION arası |
-| `vae` | p-h3-image VAE'si. Bir görüntü yuvası bağlandığı anda gereklidir, çünkü referans latentler bununla kodlanır. | VAE | Hayır | - |
+| `vae` | p-h3-image VAE'si. Bağlandığında görseller referans latent olarak da sabitlenir; bağlanmadığında yalnızca metin kodlayıcısını koşullar. | VAE | Hayır | - |
 | `images` | `image_1` ile `image_9` arasındaki en fazla 9 görüntüden oluşan büyütülebilir grup. `image_1` düzenlenen görüntüdür, kalan yuvalar referanstır. | AUTOGROW | Hayır | 0 ile 9 görsel arası |
 
 ## Çıktılar
@@ -20,11 +20,11 @@ Bu düğüm, p-h3-image ile tek bir durağan görüntü için bir istemi koşull
 | `positive` | p-h3-image örnekleyicisi için koşullandırma. Görüntüler bağlıyken paketlenmiş referans latentleri de taşır. | CONDITIONING |
 | `latent` | Tek bir durağan kare için boş latent; modelin beklediği iki ses latentini de içerir. | LATENT |
 
-**Not:** Görüntüler `vae` girdisini gerektirir. Düğümü görüntü bağlıyken ve VAE olmadan çalıştırmak hata verir.
+**Not:** Görseller bağlıyken `vae` verilmezse görseller metin kodlayıcı üzerinden istemi yönlendirmeye devam eder, ancak referans latent olarak sabitlenmez.
 
 **Not:** Koşullandırma tek bir kareyi kapsar. Video veya ses için bunun yerine MiniMax H3 video düğümlerini kullanın.
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PH3ImageConditioning/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `f1f5e5b2d3ff9bc2f3b81f3d0dd722e725c7930c6f95bf44ad83bc64357d2fb7`
+**Source fingerprint (SHA-256):** `19db44388a093dd9a90e9d2911741c732cef3e9e39664ad29dee125765f5f887`

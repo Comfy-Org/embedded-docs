@@ -1,6 +1,6 @@
-# ByteDance Seedream 5.0 Layer Separation
+# ByteDance Seedream 5.0 & 5.5 Layer Separation
 
-ByteDance Seedream 5.0 Layer Separation, bir görüntüyü bir arka plan plakası ve yeniden konumlandırılabilir en fazla 16 saydam katmana ayrıştırır; her katmanın yığın sırası, sınırlayıcı kutusu, adı ve açıklaması bulunur. Arka planı, maskelerle birlikte katman başına görüntüleri, yerleştirme kutularını ve düzenlemeye hazır bir katman yığınını döndürür. `model` seçicisi, Seedream 5.0 Pro ile daha hızlı olan Seedream 5.0 Flash arasında seçim yapar.
+ByteDance Seedream 5.0 Layer Separation, bir görüntüyü bir arka plan plakası ve yeniden konumlandırılabilir en fazla 16 saydam katmana ayrıştırır; her katmanın yığın sırası, sınırlayıcı kutusu, adı ve açıklaması bulunur. Arka planı, maskelerle birlikte katman başına görüntüleri, yerleştirme kutularını ve düzenlemeye hazır bir katman yığınını döndürür. `model` seçicisi, Seedream 5.0 Pro ile daha hızlı olan Seedream 5.0 Flash arasında seçim yapar. Seedream 5.5 en fazla 99 katman döndürür.
 
 ## Girdiler
 
@@ -8,7 +8,7 @@ ByteDance Seedream 5.0 Layer Separation, bir görüntüyü bir arka plan plakas�
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Ayrıştırma için kullanılan Seedream modeli. "seedream 5.0 pro" (varsayılan) en yüksek ayrıştırma kalitesini sunar ve ayrıca bir `prompt_optimization` kontrolü sağlar; "seedream 5.0 flash" daha hızlı ve daha ucuzdur ve istem optimizasyonu kontrolü yoktur. | DYNAMIC_COMBO | Evet | "seedream 5.0 pro"<br>"seedream 5.0 flash" |
+| `model` | Ayrıştırma için kullanılan Seedream modeli. "seedream 5.0 pro" (varsayılan) en yüksek ayrıştırma kalitesini sunar ve ayrıca bir `prompt_optimization` kontrolü sağlar; "seedream 5.0 flash" daha hızlı ve daha ucuzdur ve istem optimizasyonu kontrolü yoktur. | DYNAMIC_COMBO | Evet | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash" |
 
 ### Seedream 5.0 Pro ve 5.0 Flash Girdileri
 
@@ -21,7 +21,13 @@ Bu girdiler her iki modelde de kullanılabilir.
 | `size` | Çıktı çözünürlük düzeyi. "auto" girdi görüntü boyutunu izler (1K-2K aralığına sınırlandırılır). Varsayılan: "auto". | COMBO | Evet | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
 | `seed` | Üretim için kullanılacak tohum. Varsayılan: 42. | INT | Evet | 0 - 2147483647 |
 | `watermark` | Görüntülere "AI generated" filigranı eklenip eklenmeyeceği. Varsayılan: false. | BOOLEAN | Evet | false<br>true |
-| `crop_layers` | `layers`/`masks` toplu çıktılarının geometrisi (`layer_stack` etkilenmez ve her zaman sıkı kırpılmıştır). Tam tuval: her katman, temel boyutunda bir tuval üzerinde sınırlayıcı kutu konumunda bulunur - doğrudan ImageCompositeMasked ile yeniden birleştirin. Minimum boyut: her katman sınırlayıcı kutusuna kırpılır (toplu işleme için en büyük katmana doldurulur) - çok daha küçük tensörler; `bboxes` çıktısını kullanarak Layers From Bounding Boxes ile yerleşimi yeniden oluşturun. Varsayılan: false (tam tuval). | BOOLEAN | Evet | false (tam tuval)<br>true (minimum boyut) |
+| `crop_layers` | `layers`/`masks` toplu çıktılarının geometrisi (`layer_stack` etkilenmez ve her zaman sıkı kırpılmıştır). Tam tuval: her katman, temel boyutunda bir tuval üzerinde sınırlayıcı kutu konumunda bulunur - doğrudan ImageCompositeMasked ile yeniden birleştirin. Minimum boyut: her katman sınırlayıcı kutusuna kırpılır (toplu işleme için en büyük katmana doldurulur) - çok daha küçük tensörler; `bboxes` çıktısını kullanarak Layers From Bounding Boxes ile yerleşimi yeniden oluşturun. Varsayılan: false (tam tuval). Seedream 5.5'te varsayılan true (en küçük boyut) olur. | BOOLEAN | Evet | false (tam tuval)<br>true (minimum boyut) |
+
+### Yalnızca Seedream 5.5 Girdileri
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `max_images` | Temel görsel dahil döndürülen en fazla görsel sayısı. Kaç görsel gerektiğine model karar verir; döndürülen her görsel ücretlendirilir. Varsayılan: 30. | INT | Evet | 2 ile 100 arası |
 
 ### Yalnızca Seedream 5.0 Pro Girdileri
 
@@ -45,4 +51,4 @@ Bu girdiler her iki modelde de kullanılabilir.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNodeV2/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `b106ca63d37aea68079f0032a1f7dfeefee9f759c71bb1605bbfe66c3d9dad62`
+**Source fingerprint (SHA-256):** `fa4f65584cf5e5c08d04b9a26c343176287f4e5a51b4a2d07d6d61d7f9ac26a9`
