@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.5 Draft to Final Video
 
-This node renders the final video of a Seedance 2.5 Draft at 1080p, or at 4k for enterprise accounts. A draft is a fast 480p preview: in a Seedance 2.5 video node (text to video, first-last-frame to video, or reference to video), set `model` to `Seedance 2.5 Draft`, run it, and connect its `draft_task_id` output here. The final keeps the draft's scene and motion, and reuses the prompt, references, duration, aspect ratio, and audio setting that produced the draft.
+This node renders the final video of a Seedance 2.5 Draft at 1080p or 4k. A draft is a fast 480p preview: in a Seedance 2.5 video node (text to video, first-last-frame to video, or reference to video), set `model` to `Seedance 2.5 Draft`, run it, and connect its `draft_task_id` output here. The final keeps the draft's scene and motion, and reuses the prompt, references, duration, aspect ratio, and audio setting that produced the draft.
 
 ## Inputs
 
@@ -8,7 +8,7 @@ This node renders the final video of a Seedance 2.5 Draft at 1080p, or at 4k for
 | --- | --- | --- | --- | --- |
 | `draft_task_id` | The `draft_task_id` output of a Seedance 2.5 node run with the Seedance 2.5 Draft model, or a pasted draft task ID. When you rerun the producer node, set its seed control to fixed, otherwise the next run generates a new draft instead of reusing the one you reviewed. | STRING | Yes | - |
 | `watermark` | Whether to add a watermark to the video. Default is False. This is an advanced setting. | BOOLEAN | No | True / False |
-| `resolution` | Resolution of the final video. `"4k"` is available to enterprise accounts only. Default: `"1080p"`. | COMBO | No | `"1080p"`<br>`"4k"` |
+| `resolution` | Resolution of the final video. Default: `"1080p"`. | COMBO | No | `"1080p"`<br>`"4k"` |
 
 ## Outputs
 
@@ -21,4 +21,4 @@ This node renders the final video of a Seedance 2.5 Draft at 1080p, or at 4k for
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2DraftToFinalVideoNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `bf96a485d5febde26e22433d190cfe42bd21dc6316d66141ad23d4b95a845dc5`
+**Source fingerprint (SHA-256):** `757f1330775554d654012daa83880c3a2fbcee5b0a9efe0a2d2650f940962be6`

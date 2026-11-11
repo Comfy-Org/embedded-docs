@@ -19,7 +19,7 @@ Ces entrées apparaissent lorsque `model` est défini sur "Seedance 2.5".
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
 | `prompt` | Prompt texte pour la génération vidéo. Placez les répliques parlées entre guillemets doubles pour orienter le dialogue généré. Par défaut : chaîne vide. | STRING | Oui | Texte multiligne |
-| `resolution` | Résolution de la vidéo de sortie. Par défaut : 720p. `"4k"` est disponible uniquement pour les comptes d'entreprise. | COMBO | Oui | "480p"<br>"720p"<br>"1080p"<br>"4k" |
+| `resolution` | Résolution de la vidéo de sortie. Par défaut : 720p. | COMBO | Oui | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | Rapport d'aspect de la vidéo de sortie. Par défaut : 16:9. | COMBO | Oui | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | Durée de la vidéo de sortie en secondes (4-30). Par défaut : 5. | INT | Oui | 4 à 30 |
 | `generate_audio` | Active la génération audio pour la vidéo de sortie. Par défaut : True. | BOOLEAN | Oui | true<br>false |
@@ -79,4 +79,4 @@ Ces emplacements de référence extensibles sont disponibles pour tous les modè
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNodeV2/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `9d01b783716319b2d21dbe035080539571545ccc3251a69440e0c113c19fb743`
+**Source fingerprint (SHA-256):** `553e2654c819dbb4ab734eeb56bae67cba4c69185a9b1422c5653e65a6fe6898`

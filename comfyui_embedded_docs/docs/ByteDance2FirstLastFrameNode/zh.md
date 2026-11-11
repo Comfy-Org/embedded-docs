@@ -23,7 +23,7 @@
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | 用于视频生成的文本提示词。将台词放入双引号中以引导生成的对话。 | STRING | 是 | - |
-| `resolution` | 输出视频的分辨率。默认为 720p。 `"4k"` 仅对企业账户可用。 | COMBO | 是 | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | 输出视频的分辨率。默认为 720p。 | COMBO | 是 | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duration` | 输出视频的时长，以秒为单位（4-30）。默认为 5。 | INT | 是 | 4 到 30 |
 | `generate_audio` | 为输出视频启用音频生成。默认为 True。 | BOOLEAN | 是 | False<br>True |
 | `output_format` | 输出视频的容器格式。默认为 mp4。 | COMBO | 是 | `"mp4"` |
@@ -77,4 +77,4 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `91ffaf2bef597d080665d36fd07ef192df2884017738127a97941fcb0bf860a7`
+**Source fingerprint (SHA-256):** `a0396690cd91dabe47ed65a51e05780c4f344afad222f30d6ab628240ea30469`

@@ -17,7 +17,7 @@
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | 用于视频生成的文本提示。将台词放在双引号中，以引导生成的对话。 | STRING | 是 | — |
-| `resolution` | 输出视频的分辨率。`"4k"` 仅对企业账户可用。 （默认值：`"720p"`） | COMBO | 是 | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | 输出视频的分辨率。（默认值：`"720p"`） | COMBO | 是 | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `ratio` | 输出视频的宽高比。（默认值：`"16:9"`） | COMBO | 是 | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
 | `duration` | 输出视频的时长（秒）。（默认值：5） | INT | 是 | 4 到 30 |
 | `generate_audio` | 为输出视频启用音频生成。（默认值：True） | BOOLEAN | 是 | True / False |
@@ -61,4 +61,4 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2TextToVideoNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `376cd0472e6d4e0b2d4c8873568bc4c7bd62f982e1be9cbb15839cd29deb867d`
+**Source fingerprint (SHA-256):** `dde0d299e7b9876943dcdac506139b449f8ef72f7a114f022952a6a4045ae4e5`

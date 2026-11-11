@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.5 Borrador a vídeo final
 
-Este nodo renderiza el video final de un borrador de Seedance 2.5 a 1080p, o a 4k para cuentas enterprise. Un borrador es una vista previa rápida a 480p: en un nodo de video de Seedance 2.5 (texto a video, primer y último fotograma a video, o referencia a video), configura `model` como `Seedance 2.5 Draft`, ejecútalo y conecta su salida `draft_task_id` aquí. El resultado final conserva la escena y el movimiento del borrador, y reutiliza el prompt, las referencias, la duración, la relación de aspecto y la configuración de audio que produjeron el borrador.
+Este nodo renderiza el video final de un borrador de Seedance 2.5 a 1080p o 4k. Un borrador es una vista previa rápida a 480p: en un nodo de video de Seedance 2.5 (texto a video, primer y último fotograma a video, o referencia a video), configura `model` como `Seedance 2.5 Draft`, ejecútalo y conecta su salida `draft_task_id` aquí. El resultado final conserva la escena y el movimiento del borrador, y reutiliza el prompt, las referencias, la duración, la relación de aspecto y la configuración de audio que produjeron el borrador.
 
 ## Entradas
 
@@ -8,7 +8,7 @@ Este nodo renderiza el video final de un borrador de Seedance 2.5 a 1080p, o a 4
 | --- | --- | --- | --- | --- |
 | `draft_task_id` | La salida `draft_task_id` de un nodo de Seedance 2.5 ejecutado con el modelo Seedance 2.5 Draft, o un ID de tarea de borrador pegado. Cuando vuelvas a ejecutar el nodo productor, fija su control de seed, de lo contrario la siguiente ejecución generará un nuevo borrador en lugar de reutilizar el que revisaste. | STRING | Sí | - |
 | `marca de agua` | Indica si se añade una marca de agua al video. El valor predeterminado es False. Esta es una configuración avanzada. | BOOLEAN | No | True / False |
-| `resolution` | Resolución del video final. `"4k"` está disponible solo para cuentas enterprise. Valor predeterminado: `"1080p"`. | COMBO | No | `"1080p"`<br>`"4k"` |
+| `resolution` | Resolución del video final. Valor predeterminado: `"1080p"`. | COMBO | No | `"1080p"`<br>`"4k"` |
 
 ## Salidas
 
@@ -21,4 +21,4 @@ Este nodo renderiza el video final de un borrador de Seedance 2.5 a 1080p, o a 4
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2DraftToFinalVideoNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `bf96a485d5febde26e22433d190cfe42bd21dc6316d66141ad23d4b95a845dc5`
+**Source fingerprint (SHA-256):** `757f1330775554d654012daa83880c3a2fbcee5b0a9efe0a2d2650f940962be6`

@@ -17,7 +17,7 @@
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | 用於影片生成的文字提示。將台詞放在雙引號中，以引導生成的對話。 | STRING | 是 | — |
-| `resolution` | 輸出影片的解析度。`"4k"` 僅供企業帳戶使用。 （預設值：`"720p"`） | COMBO | 是 | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | 輸出影片的解析度。（預設值：`"720p"`） | COMBO | 是 | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `ratio` | 輸出影片的長寬比。（預設值：`"16:9"`） | COMBO | 是 | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
 | `duration` | 輸出影片的時長，以秒為單位。（預設值：5） | INT | 是 | 4 至 30 |
 | `generate_audio` | 啟用輸出影片的音訊生成。（預設值：True） | BOOLEAN | 是 | True / False |
@@ -61,4 +61,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2TextToVideoNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `376cd0472e6d4e0b2d4c8873568bc4c7bd62f982e1be9cbb15839cd29deb867d`
+**Source fingerprint (SHA-256):** `dde0d299e7b9876943dcdac506139b449f8ef72f7a114f022952a6a4045ae4e5`

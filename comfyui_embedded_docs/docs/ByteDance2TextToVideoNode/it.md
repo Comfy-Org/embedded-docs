@@ -17,7 +17,7 @@ Questo nodo genera un video da un prompt testuale usando i modelli Seedance 2.5 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt testuale per la generazione video. Metti le battute parlate tra virgolette doppie per guidare il dialogo generato. | STRING | Sì | — |
-| `resolution` | Risoluzione del video di output. `"4k"` è disponibile solo per gli account enterprise. (predefinito: `"720p"`) | COMBO | Sì | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | Risoluzione del video di output. (predefinito: `"720p"`) | COMBO | Sì | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `ratio` | Rapporto d'aspetto del video di output. (predefinito: `"16:9"`) | COMBO | Sì | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
 | `duration` | Durata del video di output in secondi. (predefinito: 5) | INT | Sì | da 4 a 30 |
 | `generate_audio` | Abilita la generazione audio per il video di output. (predefinito: True) | BOOLEAN | Sì | True / False |
@@ -61,4 +61,4 @@ Condivisi da Seedance 2.0 Fast e Seedance 2.0 Mini; entrambi i modelli espongono
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2TextToVideoNode/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `376cd0472e6d4e0b2d4c8873568bc4c7bd62f982e1be9cbb15839cd29deb867d`
+**Source fingerprint (SHA-256):** `dde0d299e7b9876943dcdac506139b449f8ef72f7a114f022952a6a4045ae4e5`
