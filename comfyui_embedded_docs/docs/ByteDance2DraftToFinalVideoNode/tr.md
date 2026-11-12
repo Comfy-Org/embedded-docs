@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.5 Taslaktan Son Videoya
 
-Bu düğüm, bir Seedance 2.5 Draft taslağının nihai videosunu 1080p olarak veya kurumsal hesaplar için 4k olarak işler. Taslak, hızlı bir 480p önizlemedir: bir Seedance 2.5 video düğümünde (metinden videoya, ilk-son kareden videoya veya referanstan videoya) `model` değerini `Seedance 2.5 Draft` olarak ayarlayın, çalıştırın ve `draft_task_id` çıktısını buraya bağlayın. Nihai video, taslağın sahnesini ve hareketini korur; taslağı üreten prompt, referanslar, süre, en-boy oranı ve ses ayarını yeniden kullanır.
+Bu düğüm, bir Seedance 2.5 Draft taslağının nihai videosunu 1080p veya 4k olarak işler. 4k tüm hesaplar için kullanılabilir. Taslak, hızlı bir 480p önizlemedir: bir Seedance 2.5 video düğümünde (metinden videoya, ilk-son kareden videoya veya referanstan videoya) `model` değerini `Seedance 2.5 Draft` olarak ayarlayın, çalıştırın ve `draft_task_id` çıktısını buraya bağlayın. Nihai video, taslağın sahnesini ve hareketini korur; taslağı üreten prompt, referanslar, süre, en-boy oranı ve ses ayarını yeniden kullanır.
 
 ## Girdiler
 
@@ -8,7 +8,7 @@ Bu düğüm, bir Seedance 2.5 Draft taslağının nihai videosunu 1080p olarak v
 | --- | --- | --- | --- | --- |
 | `draft_task_id` | Seedance 2.5 Draft modeliyle çalıştırılan bir Seedance 2.5 düğümünün `draft_task_id` çıktısı veya yapıştırılan bir taslak görev kimliği. Üretici düğümü yeniden çalıştırdığınızda, seed kontrolünü sabit olarak ayarlayın; aksi halde bir sonraki çalıştırma, incelediğiniz taslağı yeniden kullanmak yerine yeni bir taslak oluşturur. | STRING | Evet | - |
 | `watermark` | Videoya filigran eklenip eklenmeyeceği. Varsayılan değer False'tir. Bu gelişmiş bir ayardır. | BOOLEAN | Hayır | True / False |
-| `resolution` | Nihai videonun çözünürlüğü. `"4k"` yalnızca kurumsal hesaplar için kullanılabilir. Varsayılan: `"1080p"`. | COMBO | Hayır | `"1080p"`<br>`"4k"` |
+| `resolution` | Nihai videonun çözünürlüğü. `"4k"` tüm hesaplar için kullanılabilir; değeri tam olarak küçük harfle `"4k"` yazın. Varsayılan: `"1080p"`. | COMBO | Hayır | `"1080p"`<br>`"4k"` |
 
 ## Çıktılar
 

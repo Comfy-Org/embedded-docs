@@ -19,7 +19,7 @@ Questi input compaiono quando `model` è impostato su "Seedance 2.5".
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Range |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt testuale per la generazione del video. Inserisci le battute parlate tra virgolette doppie per guidare il dialogo generato. Predefinito: stringa vuota. | STRING | Sì | Testo multilinea |
-| `resolution` | Risoluzione del video di output. Predefinito: 720p. `"4k"` è disponibile solo per gli account enterprise. | COMBO | Sì | "480p"<br>"720p"<br>"1080p"<br>"4k" |
+| `resolution` | Risoluzione del video di output. Predefinito: 720p. `"4k"` è disponibile per tutti gli account; usa esattamente il valore minuscolo `"4k"`. Il modello Seedance 2.5 Draft genera solo a 480p; per ottenere il 4k, esegui il rendering finale della bozza con il nodo ByteDance Seedance 2.5 Draft to Final Video. | COMBO | Sì | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | Rapporto d'aspetto del video di output. Predefinito: 16:9. | COMBO | Sì | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | Durata del video di output in secondi (4-30). Predefinito: 5. | INT | Sì | 4 a 30 |
 | `generate_audio` | Abilita la generazione audio per il video di output. Predefinito: True. | BOOLEAN | Sì | true<br>false |
