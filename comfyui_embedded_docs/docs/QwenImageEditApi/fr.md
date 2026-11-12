@@ -36,14 +36,14 @@ Affichées lorsque `size` est défini sur "custom".
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `width` | Largeur de sortie. La surface totale en pixels doit être comprise entre 512x512 et 2560x2560 ; tout rapport d'aspect dans cette plage fonctionne. (par défaut : 1024) | INT | Oui (lorsque `size` est "custom") | 256 à 2560, pas de 16 |
-| `height` | Hauteur de sortie. La surface totale en pixels doit être comprise entre 512x512 et 2560x2560 ; tout rapport d'aspect dans cette plage fonctionne. (par défaut : 1024) | INT | Oui (lorsque `size` est "custom") | 256 à 2560, pas de 16 |
+| `width` | Largeur de sortie. La surface totale en pixels doit être comprise entre 512x512 et 2448x2448 ; tout rapport d'aspect dans cette plage fonctionne. (par défaut : 1024) | INT | Oui (lorsque `size` est "custom") | 256 à 2560, pas de 16 |
+| `height` | Hauteur de sortie. La surface totale en pixels doit être comprise entre 512x512 et 2448x2448 ; tout rapport d'aspect dans cette plage fonctionne. (par défaut : 1024) | INT | Oui (lorsque `size` est "custom") | 256 à 2560, pas de 16 |
 
 ### Contraintes
 
 - Le prompt textuel est obligatoire et doit contenir au moins un caractère.
 - Un maximum de 3 images de référence est pris en charge ; une erreur est levée si davantage sont fournies (une entrée groupée compte une fois par image).
-- Lorsque `size` est défini sur "custom", des valeurs explicites de largeur et de hauteur doivent être fournies et sont validées : la surface totale en pixels doit être comprise entre 262 144 (512x512) et 6 553 600 (2560x2560) pixels, et le rapport d'aspect doit être compris entre 1:8 et 8:1.
+- Lorsque `size` est défini sur "custom", des valeurs explicites de largeur et de hauteur doivent être fournies et sont validées : la surface totale en pixels doit être comprise entre 262 144 (512x512) et 5 992 704 (2448x2448) pixels, et le rapport d'aspect doit être compris entre 1:8 et 8:1.
 - Lorsque `size` est défini sur "match input", au moins une image de référence est requise, car les dimensions de la première image de référence sont utilisées ; les dimensions sont mises à l'échelle pour tenir dans la plage de surface et de rapport d'aspect prise en charge.
 - Lorsque `size` est défini sur "auto", le modèle choisit la taille de sortie (1,9 à 4,2 mégapixels) tout en préservant le rapport d'aspect d'entrée.
 - Les références dans le prompt utilisent @Image1, @Image2, @Image3, numérotées dans l'ordre d'entrée ; une référence à un index supérieur au nombre d'images connectées lève une erreur. Les balises ne sont reconnues qu'aux limites de mots, donc les adresses comme user@image1.com sont laissées inchangées.
@@ -58,4 +58,4 @@ Affichées lorsque `size` est défini sur "custom".
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageEditApi/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `efa8d2b1a039a7b91789c0332b751a5f90ab8dad755ef0e25124d7d1c44d9abb`
+**Source fingerprint (SHA-256):** `02c3c66be56535a17a67503cecccdb1d0c7ac85185c6fe662a1fb89867902610`

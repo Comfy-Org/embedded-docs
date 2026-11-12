@@ -36,14 +36,14 @@ Her iki model de aynı alt parametreleri paylaşır.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `width` | Çıktı genişliği. Toplam piksel alanı 512x512 ile 2560x2560 arasında olmalıdır; bu alan içindeki herhangi bir en-boy oranı çalışır. (varsayılan: 1024) | INT | Evet (`size` "custom" olduğunda) | 256 ile 2560, step 16 |
-| `height` | Çıktı yüksekliği. Toplam piksel alanı 512x512 ile 2560x2560 arasında olmalıdır; bu alan içindeki herhangi bir en-boy oranı çalışır. (varsayılan: 1024) | INT | Evet (`size` "custom" olduğunda) | 256 ile 2560, step 16 |
+| `width` | Çıktı genişliği. Toplam piksel alanı 512x512 ile 2448x2448 arasında olmalıdır; bu alan içindeki herhangi bir en-boy oranı çalışır. (varsayılan: 1024) | INT | Evet (`size` "custom" olduğunda) | 256 ile 2560, step 16 |
+| `height` | Çıktı yüksekliği. Toplam piksel alanı 512x512 ile 2448x2448 arasında olmalıdır; bu alan içindeki herhangi bir en-boy oranı çalışır. (varsayılan: 1024) | INT | Evet (`size` "custom" olduğunda) | 256 ile 2560, step 16 |
 
 ### Kısıtlamalar
 
 - Metin istemi gereklidir ve en az bir karakter içermelidir.
 - En fazla 3 referans görseli desteklenir; daha fazlası sağlanırsa hata verilir (toplu bir girdi, her görsel için bir kez sayılır).
-- `size` "custom" olarak ayarlandığında, açık genişlik ve yükseklik değerleri sağlanmalıdır ve doğrulanır: toplam piksel alanı 262.144 (512x512) ile 6.553.600 (2560x2560) piksel arasında olmalıdır ve en-boy oranı 1:8 ile 8:1 arasında olmalıdır.
+- `size` "custom" olarak ayarlandığında, açık genişlik ve yükseklik değerleri sağlanmalıdır ve doğrulanır: toplam piksel alanı 262.144 (512x512) ile 5.992.704 (2448x2448) piksel arasında olmalıdır ve en-boy oranı 1:8 ile 8:1 arasında olmalıdır.
 - `size` "match input" olarak ayarlandığında, ilk referans görselin boyutları kullanıldığı için en az bir referans görseli gereklidir; boyutlar desteklenen alan ve en-boy oranı aralığına sığacak şekilde ölçeklenir.
 - `size` "auto" olarak ayarlandığında, model giriş en-boy oranını koruyarak çıktı boyutunu (1,9-4,2 megapiksel) seçer.
 - İstem referansları, giriş sırasına göre numaralandırılan @Image1, @Image2, @Image3 kullanır; bağlı görsel sayısından daha yüksek bir indekse yapılan referans hata verir. Etiketler yalnızca sözcük sınırlarında tanınır, bu nedenle user@image1.com gibi adresler değiştirilmeden bırakılır.
@@ -58,4 +58,4 @@ Her iki model de aynı alt parametreleri paylaşır.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageEditApi/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `efa8d2b1a039a7b91789c0332b751a5f90ab8dad755ef0e25124d7d1c44d9abb`
+**Source fingerprint (SHA-256):** `02c3c66be56535a17a67503cecccdb1d0c7ac85185c6fe662a1fb89867902610`

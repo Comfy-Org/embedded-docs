@@ -36,14 +36,14 @@ Mostrati quando `size` è impostato su "custom".
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `width` | Larghezza di output. L'area totale in pixel deve essere compresa tra 512x512 e 2560x2560; qualsiasi rapporto d'aspetto all'interno di tale area è valido. (predefinito: 1024) | INT | Sì (quando `size` è "custom") | da 256 a 2560, passo 16 |
-| `height` | Altezza di output. L'area totale in pixel deve essere compresa tra 512x512 e 2560x2560; qualsiasi rapporto d'aspetto all'interno di tale area è valido. (predefinito: 1024) | INT | Sì (quando `size` è "custom") | da 256 a 2560, passo 16 |
+| `width` | Larghezza di output. L'area totale in pixel deve essere compresa tra 512x512 e 2448x2448; qualsiasi rapporto d'aspetto all'interno di tale area è valido. (predefinito: 1024) | INT | Sì (quando `size` è "custom") | da 256 a 2560, passo 16 |
+| `height` | Altezza di output. L'area totale in pixel deve essere compresa tra 512x512 e 2448x2448; qualsiasi rapporto d'aspetto all'interno di tale area è valido. (predefinito: 1024) | INT | Sì (quando `size` è "custom") | da 256 a 2560, passo 16 |
 
 ### Vincoli
 
 - Il prompt testuale è obbligatorio e deve contenere almeno un carattere.
 - È supportato un massimo di 3 immagini di riferimento; viene generato un errore se ne vengono fornite di più (un input in batch conta una volta per immagine).
-- Quando `size` è impostato su "custom", è necessario fornire valori espliciti di larghezza e altezza che vengono convalidati: l'area totale in pixel deve essere compresa tra 262.144 (512x512) e 6.553.600 (2560x2560) pixel, e il rapporto d'aspetto deve essere compreso tra 1:8 e 8:1.
+- Quando `size` è impostato su "custom", è necessario fornire valori espliciti di larghezza e altezza che vengono convalidati: l'area totale in pixel deve essere compresa tra 262.144 (512x512) e 5.992.704 (2448x2448) pixel, e il rapporto d'aspetto deve essere compreso tra 1:8 e 8:1.
 - Quando `size` è impostato su "match input", è richiesta almeno un'immagine di riferimento perché vengono utilizzate le dimensioni della prima immagine di riferimento; le dimensioni vengono ridimensionate per rientrare nell'area e nell'intervallo di rapporto d'aspetto supportati.
 - Quando `size` è impostato su "auto", il modello sceglie la dimensione di output (1,9-4,2 megapixel) preservando il rapporto d'aspetto dell'input.
 - I riferimenti nel prompt utilizzano @Image1, @Image2, @Image3, numerati in ordine di input; un riferimento a un indice superiore al numero di immagini collegate genera un errore. I tag vengono riconosciuti solo ai limiti di parola, quindi indirizzi come user@image1.com vengono lasciati invariati.
@@ -58,4 +58,4 @@ Mostrati quando `size` è impostato su "custom".
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageEditApi/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `efa8d2b1a039a7b91789c0332b751a5f90ab8dad755ef0e25124d7d1c44d9abb`
+**Source fingerprint (SHA-256):** `02c3c66be56535a17a67503cecccdb1d0c7ac85185c6fe662a1fb89867902610`
