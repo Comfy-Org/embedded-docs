@@ -13,7 +13,7 @@
 | `roll` | دوران الكاميرا حول محور الرؤية، بالدرجات. (الافتراضي: 0.0) | FLOAT | لا | -180.0 إلى 180.0 |
 | `fov` | مجال الرؤية الرأسي بالدرجات. (الافتراضي: 35.0) | FLOAT | لا | 1.0 إلى 120.0 |
 | `zoom` | التكبير الرقمي (مضاعف البعد البؤري). القيم الأكبر من 1 تقوم بالتكبير دون تحريك الكاميرا. (الافتراضي: 1.0) | FLOAT | لا | 0.01 إلى 100.0 |
-| `camera_type` | الإسقاط المستخدم بواسطة Render Splat: منظور (تقصير) أو متعامد (متوازي). (الافتراضي: "perspective") | COMBO | لا | `"perspective"`<br>`"orthographic"` |
+| `camera_type` | الإسقاط المستخدم بواسطة Render Splat وRender Mesh: منظور (تقصير) أو متعامد (متوازي). (الافتراضي: "perspective") | COMBO | لا | `"perspective"`<br>`"orthographic"` |
 
 ### المعاملات الخاصة بالوضع
 
@@ -56,4 +56,4 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `5a9703e8e01ad2cd92a97da8d892c278765a9cef8bcd38e3336d1f73717d9895`
+**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`

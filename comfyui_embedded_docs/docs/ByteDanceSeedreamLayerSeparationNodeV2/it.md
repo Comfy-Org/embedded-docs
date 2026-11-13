@@ -1,6 +1,6 @@
-# ByteDance Seedream 5.0 Separazione livelli
+# ByteDance Seedream 5.0 & 5.5 Separazione livelli
 
-ByteDance Seedream 5.0 Layer Separation decompone un'immagine in una lastra di sfondo più fino a 16 livelli trasparenti riposizionabili, ciascuno con ordine di sovrapposizione, bounding box, nome e descrizione. Restituisce lo sfondo, le immagini per livello con maschere, i riquadri di posizionamento e uno stack di livelli pronto per la modifica. Il selettore `model` sceglie tra Seedream 5.0 Pro e il più veloce Seedream 5.0 Flash.
+ByteDance Seedream 5.0 Layer Separation decompone un'immagine in una lastra di sfondo più fino a 16 livelli trasparenti riposizionabili, ciascuno con ordine di sovrapposizione, bounding box, nome e descrizione. Restituisce lo sfondo, le immagini per livello con maschere, i riquadri di posizionamento e uno stack di livelli pronto per la modifica. Il selettore `model` sceglie tra Seedream 5.0 Pro e il più veloce Seedream 5.0 Flash. Seedream 5.5 restituisce fino a 99 livelli.
 
 ## Input
 
@@ -8,7 +8,7 @@ ByteDance Seedream 5.0 Layer Separation decompone un'immagine in una lastra di s
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello Seedream usato per la separazione. "seedream 5.0 pro" (predefinito) offre la massima qualità di separazione ed espone anche un controllo `prompt_optimization`; "seedream 5.0 flash" è più veloce ed economico e non ha un controllo di ottimizzazione del prompt. | DYNAMIC_COMBO | Sì | "seedream 5.0 pro"<br>"seedream 5.0 flash" |
+| `model` | Il modello Seedream usato per la separazione. "seedream 5.0 pro" (predefinito) offre la massima qualità di separazione ed espone anche un controllo `prompt_optimization`; "seedream 5.0 flash" è più veloce ed economico e non ha un controllo di ottimizzazione del prompt. | DYNAMIC_COMBO | Sì | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash" |
 
 ### Input di Seedream 5.0 Pro e 5.0 Flash
 
@@ -21,7 +21,13 @@ Questi input sono disponibili con entrambi i modelli.
 | `size` | Livello di risoluzione dell'output. "auto" segue la dimensione dell'immagine di input (limitata all'intervallo 1K-2K). Predefinito: "auto". | COMBO | Sì | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
 | `seed` | Seed da usare per la generazione. Predefinito: 42. | INT | Sì | da 0 a 2147483647 |
 | `watermark` | Indica se aggiungere una filigrana "AI generated" alle immagini. Predefinito: false. | BOOLEAN | Sì | false<br>true |
-| `crop_layers` | Geometria degli output batch layers/masks (`layer_stack` non è interessato ed è sempre ritagliato in modo aderente). Full canvas: ogni livello su una tela delle dimensioni della base, nella posizione del suo bounding box - ricomponi direttamente con ImageCompositeMasked. Dimensione minima: ogni livello ritagliato sul suo bounding box (con padding fino al livello più grande per il batching) - tensor molto più piccoli; ricostruisci il posizionamento con Layers From Bounding Boxes usando l'output `bboxes`. Predefinito: false (full canvas). | BOOLEAN | Sì | false (full canvas)<br>true (minimal size) |
+| `crop_layers` | Geometria degli output batch layers/masks (`layer_stack` non è interessato ed è sempre ritagliato in modo aderente). Full canvas: ogni livello su una tela delle dimensioni della base, nella posizione del suo bounding box - ricomponi direttamente con ImageCompositeMasked. Dimensione minima: ogni livello ritagliato sul suo bounding box (con padding fino al livello più grande per il batching) - tensor molto più piccoli; ricostruisci il posizionamento con Layers From Bounding Boxes usando l'output `bboxes`. Predefinito: false (full canvas). Con Seedream 5.5 il valore predefinito è true (dimensione minima). | BOOLEAN | Sì | false (tela intera)<br>true (dimensione minima) |
+
+### Input solo per Seedream 5.5
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `max_images` | Numero massimo di immagini restituite, immagine di base inclusa. Il modello decide quante ne servono; ogni immagine restituita viene addebitata. Predefinito: 30. | INT | Sì | 2 a 100 |
 
 ### Input solo per Seedream 5.0 Pro
 
@@ -45,4 +51,4 @@ Questi input sono disponibili con entrambi i modelli.
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNodeV2/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `b106ca63d37aea68079f0032a1f7dfeefee9f759c71bb1605bbfe66c3d9dad62`
+**Source fingerprint (SHA-256):** `fa4f65584cf5e5c08d04b9a26c343176287f4e5a51b4a2d07d6d61d7f9ac26a9`

@@ -21,4 +21,4 @@ This node renders the final video of a Seedance 2.5 Draft at 1080p or 4k. 4k is 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2DraftToFinalVideoNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `bf96a485d5febde26e22433d190cfe42bd21dc6316d66141ad23d4b95a845dc5`
+**Source fingerprint (SHA-256):** `757f1330775554d654012daa83880c3a2fbcee5b0a9efe0a2d2650f940962be6`

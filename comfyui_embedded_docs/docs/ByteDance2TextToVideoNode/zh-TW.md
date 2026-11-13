@@ -61,4 +61,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2TextToVideoNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `376cd0472e6d4e0b2d4c8873568bc4c7bd62f982e1be9cbb15839cd29deb867d`
+**Source fingerprint (SHA-256):** `dde0d299e7b9876943dcdac506139b449f8ef72f7a114f022952a6a4045ae4e5`

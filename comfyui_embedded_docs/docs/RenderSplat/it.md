@@ -17,7 +17,7 @@ Renderizza un gaussian splat come immagine utilizzando un rasterizzatore EWA ani
 | `render_style` | Cosa mostra l'immagine di output. Le opzioni sono: color (rendering a colori completi), clay (ombreggiato con albedo neutro), depth (gli oggetti vicini appaiono luminosi), normal (mappa di normali OpenGL) (predefinito: "color") | COMBO | Sì | "color"<br>"clay"<br>"depth"<br>"normal" |
 | `background` | Colore di sfondo solido per il rendering (predefinito: #000000) | COLOR | Sì | - |
 | `bg_image` | Pannello di sfondo opzionale compositato dietro lo splat. Sovrascrive il colore di sfondo solido. Ridimensionato alla dimensione del rendering. Un batch di immagini viene utilizzato per frame, una singola immagine viene utilizzata per tutti i frame. Funziona solo con gli stili di rendering color e clay | IMAGE | No | - |
-| `camera_info` | Camera da cui renderizzare. Può provenire da un nodo Load3D, Preview3D o Create Camera Info. Se vuoto, lo splat viene inquadrato automaticamente da una vista predefinita di 3/4 | CAMERA_3D | No | - |
+| `camera_info` | Camera da cui renderizzare. Può provenire da un nodo Load3D, Preview3D o Create Camera Info. Se vuoto, lo splat viene inquadrato automaticamente da una vista predefinita di 3/4 Una lista di camere renderizza un'immagine per camera. | CAMERA_3D | No | - |
 
 ## Output
 
@@ -29,4 +29,4 @@ Renderizza un gaussian splat come immagine utilizzando un rasterizzatore EWA ani
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RenderSplat/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `038bd9fb032f347ecda665c03719a64b0cf907599b701606f5cf6d0606d19d98`
+**Source fingerprint (SHA-256):** `344e5fac74f4c33b08bea4d4737c178e1186bf212c487a8236331bce8818c30c`

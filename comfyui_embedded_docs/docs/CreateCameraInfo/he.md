@@ -13,7 +13,7 @@
 | `roll` | גלגול המצלמה סביב ציר הראייה, במעלות. (ברירת מחדל: 0.0) | FLOAT | לא | -180.0 עד 180.0 |
 | `fov` | שדה ראייה אנכי במעלות. (ברירת מחדל: 35.0) | FLOAT | לא | 1.0 עד 120.0 |
 | `zoom` | זום דיגיטלי (מכפיל אורך מוקד). ערכים גדולים מ-1 מתקרבים מבלי להזיז את המצלמה. (ברירת מחדל: 1.0) | FLOAT | לא | 0.01 עד 100.0 |
-| `camera_type` | היטל המשמש את Render Splat: פרספקטיבי (קיצור פרספקטיבי) או אורתוגרפי (מקבילי). (ברירת מחדל: "perspective") | COMBO | לא | `"perspective"`<br>`"orthographic"` |
+| `camera_type` | היטל המשמש את Render Splat ו-Render Mesh: פרספקטיבי (קיצור פרספקטיבי) או אורתוגרפי (מקבילי). (ברירת מחדל: "perspective") | COMBO | לא | `"perspective"`<br>`"orthographic"` |
 
 ### פרמטרים ספציפיים למצב
 
@@ -56,4 +56,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `5a9703e8e01ad2cd92a97da8d892c278765a9cef8bcd38e3336d1f73717d9895`
+**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`

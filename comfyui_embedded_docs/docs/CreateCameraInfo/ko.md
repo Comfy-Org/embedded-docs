@@ -13,7 +13,7 @@
 | `roll` | 시선 축에 대한 카메라 롤(도 단위)입니다. (기본값: 0.0) | FLOAT | 아니요 | -180.0 ~ 180.0 |
 | `fov` | 수직 시야각(도 단위)입니다. (기본값: 35.0) | FLOAT | 아니요 | 1.0 ~ 120.0 |
 | `zoom` | 디지털 줌(초점 거리 배율)입니다. 1보다 큰 값은 카메라를 이동하지 않고 확대합니다. (기본값: 1.0) | FLOAT | 아니요 | 0.01 ~ 100.0 |
-| `camera_type` | Render Splat에서 사용하는 투영 방식: 원근(원근 단축) 또는 직교(평행)입니다. (기본값: "perspective") | COMBO | 아니요 | `"perspective"`<br>`"orthographic"` |
+| `camera_type` | Render Splat 및 Render Mesh에서 사용하는 투영 방식: 원근(원근 단축) 또는 직교(평행)입니다. (기본값: "perspective") | COMBO | 아니요 | `"perspective"`<br>`"orthographic"` |
 
 ### 모드별 매개변수
 
@@ -56,4 +56,4 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `5a9703e8e01ad2cd92a97da8d892c278765a9cef8bcd38e3336d1f73717d9895`
+**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`

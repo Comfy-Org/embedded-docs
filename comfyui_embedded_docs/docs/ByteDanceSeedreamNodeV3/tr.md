@@ -1,6 +1,6 @@
-# ByteDance Seedream 4.5 & 5.0
+# ByteDance Seedream 4.5, 5.0 & 5.5
 
-ByteDance Seedream 4.5 & 5.0, ByteDance Seedream 4.0, 4.5 ve 5.0 modellerini kullanarak 4K çözünürlüğe kadar bir metin isteminden görüntü üretir (metinden görüntüye) veya isteğe bağlı referans görüntülerle yönlendirilen görüntüler üretir/düzenler. Düğüm, istemi ve varsa referans görüntüleri ByteDance API'sine gönderir, üretim görevinin tamamlanmasını bekler ve elde edilen görüntü tensörünü veya tensörlerini döndürür.
+ByteDance Seedream 4.5 & 5.0, ByteDance Seedream 4.0, 4.5 ve 5.0 modellerini kullanarak 4K çözünürlüğe kadar bir metin isteminden görüntü üretir (metinden görüntüye) veya isteğe bağlı referans görüntülerle yönlendirilen görüntüler üretir/düzenler. Düğüm, istemi ve varsa referans görüntüleri ByteDance API'sine gönderir, üretim görevinin tamamlanmasını bekler ve elde edilen görüntü tensörünü veya tensörlerini döndürür. Model listesi artık Seedream 5.5'i de içeriyor.
 
 ## Girdiler
 
@@ -9,7 +9,18 @@ ByteDance Seedream 4.5 & 5.0, ByteDance Seedream 4.0, 4.5 ve 5.0 modellerini kul
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Görüntü oluşturmak veya düzenlemek için metin istemi. Boşluklar kırpıldıktan sonra boş olmamalıdır. | STRING | Evet | Çok satırlı metin |
-| `model` | Kullanılacak Seedream modelini seçer. Her model aşağıda kendi alt parametrelerini ve sınırlarını sunar. | DYNAMIC_COMBO | Evet | "seedream 5.0 pro"<br>"seedream 5.0 flash"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
+| `model` | Kullanılacak Seedream modelini seçer. Her model aşağıda kendi alt parametrelerini ve sınırlarını sunar. | DYNAMIC_COMBO | Evet | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
+
+### Seedream 5.5 Girdileri (seedream 5.5)
+
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `size_preset` | Önerilen bir boyut seçin. Aşağıdaki genişlik ve yüksekliği kullanmak için Custom seçin. Varsayılan: bu model için ilk önerilen ön ayar. | COMBO | Hayır | Modele özel önerilen boyut ön ayarları<br>"Custom" |
+| `width` | Görüntü için özel genişlik. Değer yalnızca `size_preset` `Custom` olarak ayarlandığında çalışır. Varsayılan: 2048. | INT | Hayır | 240 - 8594 (adım 2) |
+| `height` | Görüntü için özel yükseklik. Değer yalnızca `size_preset` `Custom` olarak ayarlandığında çalışır. Varsayılan: 2048. | INT | Hayır | 240 - 8594 (adım 2) |
+| `background` | `auto` isteme göre karar verir ve şeffaflığı çoğunlukla çıkartma ve logolarda döndürür; `opaque` hiç şeffaflık döndürmez; `transparent` istem yalıtılmış bir özne tanımladığında en iyi sonucu verir. Varsayılan: `"auto"`. | COMBO | Hayır | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `seed` | Üretim için kullanılacak seed. Varsayılan: 42. | INT | Hayır | 0 - 2147483647 |
+| `watermark` | Görüntüye "AI generated" filigranı eklenip eklenmeyeceği. Varsayılan: false. | BOOLEAN | Hayır | true / false |
 
 ### Seedream 5.0 Pro Girdileri (seedream 5.0 pro)
 
@@ -103,4 +114,4 @@ ByteDance Seedream 4.5 & 5.0, ByteDance Seedream 4.0, 4.5 ve 5.0 modellerini kul
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV3/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `1c1f40b202ccbb3e0f73cd072170e1c16b833e007f26e63505b54c42b004a8a6`
+**Source fingerprint (SHA-256):** `4f95fbf4bd2af6044c2a4213e3c239554a6247c001d4d864135b17da31e549e1`

@@ -21,4 +21,4 @@ Ce nœud effectue le rendu de la vidéo finale d'un Seedance 2.5 Draft en 1080p 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2DraftToFinalVideoNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `bf96a485d5febde26e22433d190cfe42bd21dc6316d66141ad23d4b95a845dc5`
+**Source fingerprint (SHA-256):** `757f1330775554d654012daa83880c3a2fbcee5b0a9efe0a2d2650f940962be6`

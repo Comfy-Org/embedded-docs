@@ -17,7 +17,7 @@ Renderiza um gaussian splat como imagem usando um rasterizador EWA anisotrópico
 | `estilo_render` | O que a saída de imagem mostra. Opções: color (renderização colorida completa), clay (sombreamento com albedo neutro), depth (objetos próximos aparecem claros), normal (mapa de normais OpenGL) (padrão: "color") | COMBO | Sim | "color"<br>"clay"<br>"depth"<br>"normal" |
 | `fundo` | Cor de fundo sólida para a renderização (padrão: #000000) | COLOR | Sim | - |
 | `imagem_fundo` | Plano de fundo opcional composto atrás do splat. Substitui a cor de fundo sólida. Redimensionado para o tamanho da renderização. Um lote de imagens é usado por quadro, uma única imagem é usada para todos os quadros. Funciona apenas com estilos de renderização color e clay | IMAGE | Não | - |
-| `camera_info` | Câmera para renderizar. Pode vir de um nó Load3D, Preview3D ou Create Camera Info. Se vazio, o splat é enquadrado automaticamente a partir de uma visão 3/4 padrão | CAMERA_3D | Não | - |
+| `camera_info` | Câmera para renderizar. Pode vir de um nó Load3D, Preview3D ou Create Camera Info. Se vazio, o splat é enquadrado automaticamente a partir de uma visão 3/4 padrão Uma lista de câmeras renderiza uma imagem por câmera. | CAMERA_3D | Não | - |
 
 ## Saídas
 
@@ -29,4 +29,4 @@ Renderiza um gaussian splat como imagem usando um rasterizador EWA anisotrópico
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RenderSplat/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `038bd9fb032f347ecda665c03719a64b0cf907599b701606f5cf6d0606d19d98`
+**Source fingerprint (SHA-256):** `344e5fac74f4c33b08bea4d4737c178e1186bf212c487a8236331bce8818c30c`

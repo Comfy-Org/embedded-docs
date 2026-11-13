@@ -13,7 +13,7 @@ Kamera Bilgisi Oluştur düğümü, 3D görüntüleme için bir kamera bilgi yap
 | `roll` | Görüş ekseni etrafında kamera yatışı, derece cinsinden. (varsayılan: 0.0) | FLOAT | Hayır | -180.0 ile 180.0 arası |
 | `fov` | Derece cinsinden dikey görüş alanı. (varsayılan: 35.0) | FLOAT | Hayır | 1.0 ile 120.0 arası |
 | `zoom` | Dijital yakınlaştırma (odak uzaklığı çarpanı). 1'den büyük değerler kamerayı hareket ettirmeden yakınlaştırır. (varsayılan: 1.0) | FLOAT | Hayır | 0.01 ile 100.0 arası |
-| `kamera_tipi` | Render Splat tarafından kullanılan izdüşüm: perspektif (küçültme) veya ortografik (paralel). (varsayılan: "perspective") | COMBO | Hayır | `"perspective"`<br>`"orthographic"` |
+| `kamera_tipi` | Render Splat ve Render Mesh tarafından kullanılan izdüşüm: perspektif (küçültme) veya ortografik (paralel). (varsayılan: "perspective") | COMBO | Hayır | `"perspective"`<br>`"orthographic"` |
 
 ### Moda Özgü Parametreler
 
@@ -56,4 +56,4 @@ Kamera Bilgisi Oluştur düğümü, 3D görüntüleme için bir kamera bilgi yap
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `5a9703e8e01ad2cd92a97da8d892c278765a9cef8bcd38e3336d1f73717d9895`
+**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`

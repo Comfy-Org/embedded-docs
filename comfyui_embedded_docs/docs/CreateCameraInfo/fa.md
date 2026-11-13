@@ -13,7 +13,7 @@
 | `roll` | چرخش دوربین حول محور دید، برحسب درجه. (پیش‌فرض: 0.0) | FLOAT | خیر | 180.0- تا 180.0 |
 | `fov` | میدان دید عمودی برحسب درجه. (پیش‌فرض: 35.0) | FLOAT | خیر | 1.0 تا 120.0 |
 | `zoom` | زوم دیجیتال (ضریب فاصله کانونی). مقادیر بزرگ‌تر از 1 بدون جابجایی دوربین، بزرگنمایی می‌کنند. (پیش‌فرض: 1.0) | FLOAT | خیر | 0.01 تا 100.0 |
-| `camera_type` | پروجکشن مورد استفاده در Render Splat: پرسپکتیو (کوچک‌نمایی) یا ارتوگرافیک (موازی). (پیش‌فرض: "perspective") | COMBO | خیر | `"perspective"`<br>`"orthographic"` |
+| `camera_type` | پروجکشن مورد استفاده در Render Splat و Render Mesh: پرسپکتیو (کوچک‌نمایی) یا ارتوگرافیک (موازی). (پیش‌فرض: "perspective") | COMBO | خیر | `"perspective"`<br>`"orthographic"` |
 
 ### پارامترهای مختص حالت
 
@@ -56,4 +56,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `5a9703e8e01ad2cd92a97da8d892c278765a9cef8bcd38e3336d1f73717d9895`
+**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`

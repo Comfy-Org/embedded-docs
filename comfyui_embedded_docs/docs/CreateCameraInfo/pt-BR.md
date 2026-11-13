@@ -13,7 +13,7 @@ O nó Criar Informações da Câmera constrói uma estrutura de informações de
 | `rolagem` | Rotação lateral da câmera em torno do eixo de visão, em graus. (padrão: 0.0) | FLOAT | Não | -180.0 a 180.0 |
 | `fov` | Campo de visão vertical em graus. (padrão: 35.0) | FLOAT | Não | 1.0 a 120.0 |
 | `zoom` | Zoom digital (multiplicador de distância focal). Valores maiores que 1 ampliam sem mover a câmera. (padrão: 1.0) | FLOAT | Não | 0.01 a 100.0 |
-| `tipo_de_câmera` | Projeção usada pelo Render Splat: perspectiva (encurtamento) ou ortográfica (paralela). (padrão: "perspective") | COMBO | Não | `"perspective"`<br>`"orthographic"` |
+| `tipo_de_câmera` | Projeção usada pelo Render Splat e Render Mesh: perspectiva (encurtamento) ou ortográfica (paralela). (padrão: "perspective") | COMBO | Não | `"perspective"`<br>`"orthographic"` |
 
 ### Parâmetros Específicos do Modo
 
@@ -56,4 +56,4 @@ Quando `mode` está definido como `"quaternion"`, os seguintes parâmetros ficam
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `5a9703e8e01ad2cd92a97da8d892c278765a9cef8bcd38e3336d1f73717d9895`
+**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`

@@ -1,6 +1,6 @@
-# ByteDance Seedream 4.5 與 5.0
+# ByteDance Seedream 4.5、5.0 與 5.5
 
-ByteDance Seedream 4.5 與 5.0 可根據文字提示詞生成影像（文字轉圖像），或在可選參考影像引導下生成/編輯影像，使用 ByteDance Seedream 4.0、4.5 和 5.0 模型，解析度最高可達 4K。此節點會將提示詞與任何參考影像傳送至 ByteDance API，等待生成任務完成，並回傳產生的影像張量或張量。
+ByteDance Seedream 4.5 與 5.0 可根據文字提示詞生成影像（文字轉圖像），或在可選參考影像引導下生成/編輯影像，使用 ByteDance Seedream 4.0、4.5 和 5.0 模型，解析度最高可達 4K。此節點會將提示詞與任何參考影像傳送至 ByteDance API，等待生成任務完成，並回傳產生的影像張量或張量。 模型清單還包含 Seedream 5.5。
 
 ## 輸入
 
@@ -9,7 +9,18 @@ ByteDance Seedream 4.5 與 5.0 可根據文字提示詞生成影像（文字轉�
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `提示詞` | 用於建立或編輯影像的文字提示詞。去除空白後不得為空。 | STRING | 是 | 多行文字 |
-| `模型` | 選擇要使用的 Seedream 模型。每個模型會在下方公開其各自的子參數與限制。 | DYNAMIC_COMBO | 是 | "seedream 5.0 pro"<br>"seedream 5.0 flash"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
+| `模型` | 選擇要使用的 Seedream 模型。每個模型會在下方公開其各自的子參數與限制。 | DYNAMIC_COMBO | 是 | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
+
+### Seedream 5.5 輸入 (seedream 5.5)
+
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
+|-----------|-------------|-----------|----------|-------|
+| `size_preset` | 選擇推薦尺寸。選擇 Custom 以使用下方的寬度與高度。預設：此模型的第一個推薦預設。 | COMBO | 否 | 模型專屬的推薦尺寸預設<br>"Custom" |
+| `width` | 影像的自訂寬度。僅當 `size_preset` 設為 `Custom` 時此值才有效。預設：2048。 | INT | 否 | 240 至 8594 （步進值：2） |
+| `height` | 影像的自訂高度。僅當 `size_preset` 設為 `Custom` 時此值才有效。預設：2048。 | INT | 否 | 240 至 8594 （步進值：2） |
+| `background` | `auto` 依提示詞判斷，主要為貼紙與標誌回傳透明；`opaque` 從不回傳透明；`transparent` 適合提示詞描述孤立主體的情況。預設：`"auto"`。 | COMBO | 否 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `seed` | 用於生成的種子。預設：42。 | INT | 否 | 0 至 2147483647 |
+| `watermark` | 是否在影像中加入「AI generated」浮水印。預設：false。 | BOOLEAN | 否 | true / false |
 
 ### Seedream 5.0 Pro 輸入 (seedream 5.0 pro)
 
@@ -103,4 +114,4 @@ ByteDance Seedream 4.5 與 5.0 可根據文字提示詞生成影像（文字轉�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV3/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `1c1f40b202ccbb3e0f73cd072170e1c16b833e007f26e63505b54c42b004a8a6`
+**Source fingerprint (SHA-256):** `4f95fbf4bd2af6044c2a4213e3c239554a6247c001d4d864135b17da31e549e1`

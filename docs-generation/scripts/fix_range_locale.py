@@ -354,10 +354,12 @@ def main() -> int:
                     continue
                 if tr_cells[key] != en_cell:
                     continue          # already localized (or differs - not our business)
+                if not needs_translation(en_cell):
+                    continue          # numbers, quoted option ids, placeholders: nothing to localize
                 res = localize(en_cell, lang)
                 if res and res[0] != en_cell:
                     pending[key] = res[0]
-                elif not res and needs_translation(en_cell):
+                elif not res:
                     unknown[en_cell] = unknown.get(en_cell, 0) + 1
             if not pending:
                 continue

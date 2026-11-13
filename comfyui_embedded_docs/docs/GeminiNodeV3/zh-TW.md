@@ -8,7 +8,7 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `模型` | 用於生成回應的 Gemini 模型。所選模型決定了會顯示哪些額外輸入。 | DYNAMIC_COMBO | 是 | `"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `模型` | 用於生成回應的 Gemini 模型。所選模型決定了會顯示哪些額外輸入。 | DYNAMIC_COMBO | 是 | `"Gemini 4 Hydrogen"`<br>`"Gemini 4 Argon"`<br>`"Gemini 4 Carbon"`<br>`"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
 
 ### 媒體輸入
 
@@ -19,6 +19,42 @@
 | `images` | 可選的圖片，用作模型的上下文。最多 16 張圖片。可增長的插槽：將圖片連接到 `image_1` 至 `image_16`。 | IMAGE | 否 | 最多 16 張圖片 |
 | `audio` | 可選的音訊剪輯，用作模型的上下文。可增長的插槽：`audio_1`。 | AUDIO | 否 | 1 個音訊剪輯 |
 | `video` | 可選的影片剪輯，用作模型的上下文。可增長的插槽：`video_1`。 | VIDEO | 否 | 1 個影片剪輯 |
+
+### Gemini 4 Hydrogen 輸入
+
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | 提供給模型的文字輸入。包含詳細指示、問題或上下文。不能為空。 | STRING | 是 | 多行文字（必須包含至少一個非空白字元） |
+| `video_processing` | 模型如何讀取附加的影片。`static` 以固定速率取樣幀並將所有幀作為上下文發送；`agentic` 讓模型自行瀏覽時間軸，僅載入它需要的幀、音訊或轉錄文字，這在長影片上消耗的輸入 token 少得多。 | COMBO | 是 | `"static"`<br>`"agentic"` (預設：`"static"`) |
+| `files` | 可選的檔案，用作模型的上下文。接受來自 Gemini Input Files 節點的輸入。 | GEMINI_INPUT_FILES | 否 | N/A |
+| `thinking_level` | 模型在回答前進行內部推理的強度。HIGH 可提升困難任務的品質，但會消耗更多（思考）token 且速度較慢。 | COMBO | 是 | `"LOW"`<br>`"MEDIUM"`<br>`"HIGH"`<br>`"XHIGH"` (預設：`"HIGH"`) |
+| `max_output_tokens` | 要生成的 token 上限，包括模型的內部思考。當 thinking_level 為 HIGH 時，較低的值可能沒有空間容納答案；如果回應為空或被截斷，請提高此值。模型完成後會提前停止，因此對於簡短回覆，設定更高的上限不會產生額外成本。 | INT | 是 | 16-65536 (預設：32768) |
+| `seed` | 取樣種子。設為 0 可產生隨機種子。不保證輸出具有確定性。 | INT | 是 | 0-2147483647 (預設：42) |
+| `system_prompt` | 決定模型行為的基礎指示。 | STRING | 是 | 多行文字（預設：空白） |
+
+### Gemini 4 Argon 輸入
+
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | 提供給模型的文字輸入。包含詳細指示、問題或上下文。不能為空。 | STRING | 是 | 多行文字（必須包含至少一個非空白字元） |
+| `video_processing` | 模型如何讀取附加的影片。`static` 以固定速率取樣幀並將所有幀作為上下文發送；`agentic` 讓模型自行瀏覽時間軸，僅載入它需要的幀、音訊或轉錄文字，這在長影片上消耗的輸入 token 少得多。 | COMBO | 是 | `"static"`<br>`"agentic"` (預設：`"static"`) |
+| `files` | 可選的檔案，用作模型的上下文。接受來自 Gemini Input Files 節點的輸入。 | GEMINI_INPUT_FILES | 否 | N/A |
+| `thinking_level` | 模型在回答前進行內部推理的強度。HIGH 可提升困難任務的品質，但會消耗更多（思考）token 且速度較慢。 | COMBO | 是 | `"LOW"`<br>`"MEDIUM"`<br>`"HIGH"` (預設：`"MEDIUM"`) |
+| `max_output_tokens` | 要生成的 token 上限，包括模型的內部思考。當 thinking_level 為 HIGH 時，較低的值可能沒有空間容納答案；如果回應為空或被截斷，請提高此值。模型完成後會提前停止，因此對於簡短回覆，設定更高的上限不會產生額外成本。 | INT | 是 | 16-32768 (預設：32768) |
+| `seed` | 取樣種子。設為 0 可產生隨機種子。不保證輸出具有確定性。 | INT | 是 | 0-2147483647 (預設：42) |
+| `system_prompt` | 決定模型行為的基礎指示。 | STRING | 是 | 多行文字（預設：空白） |
+
+### Gemini 4 Carbon 輸入
+
+| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | 提供給模型的文字輸入。包含詳細指示、問題或上下文。不能為空。 | STRING | 是 | 多行文字（必須包含至少一個非空白字元） |
+| `video_processing` | 模型如何讀取附加的影片。`static` 以固定速率取樣幀並將所有幀作為上下文發送；`agentic` 讓模型自行瀏覽時間軸，僅載入它需要的幀、音訊或轉錄文字，這在長影片上消耗的輸入 token 少得多。 | COMBO | 是 | `"static"`<br>`"agentic"` (預設：`"static"`) |
+| `files` | 可選的檔案，用作模型的上下文。接受來自 Gemini Input Files 節點的輸入。 | GEMINI_INPUT_FILES | 否 | N/A |
+| `thinking_level` | 模型在回答前進行內部推理的強度。HIGH 可提升困難任務的品質，但會消耗更多（思考）token 且速度較慢。 | COMBO | 是 | `"LOW"`<br>`"MEDIUM"`<br>`"HIGH"` (預設：`"MEDIUM"`) |
+| `max_output_tokens` | 要生成的 token 上限，包括模型的內部思考。當 thinking_level 為 HIGH 時，較低的值可能沒有空間容納答案；如果回應為空或被截斷，請提高此值。模型完成後會提前停止，因此對於簡短回覆，設定更高的上限不會產生額外成本。 | INT | 是 | 16-32768 (預設：32768) |
+| `seed` | 取樣種子。設為 0 可產生隨機種子。不保證輸出具有確定性。 | INT | 是 | 0-2147483647 (預設：42) |
+| `system_prompt` | 決定模型行為的基礎指示。 | STRING | 是 | 多行文字（預設：空白） |
 
 ### Gemini 3.8 Flash 輸入
 
@@ -84,7 +120,7 @@
 | `seed` | 取樣種子。設為 0 可產生隨機種子。不保證輸出具有確定性。 | INT | 是 | 0-2147483647 (預設：42) |
 | `system_prompt` | 決定模型行為的基礎指示。 | STRING | 是 | 多行文字（預設：空白） |
 
-注意：對於 Gemini 3.8 Flash，`temperature` 和 `top_p` 不可用，且 `video_processing` 僅適用於此模型選項。`thinking_level` 的選項和預設值因模型而異，如上所列。
+注意：對於 Gemini 4 Hydrogen、Gemini 4 Argon、Gemini 4 Carbon 和 Gemini 3.8 Flash，`temperature` 和 `top_p` 不可用，`video_processing` 也僅適用於這些模型選項。`thinking_level` 的選項和預設值因模型而異，如上所列。
 
 注意：`prompt` 輸入不能為空。節點會驗證其包含至少一個非空白字元。
 
@@ -99,4 +135,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiNodeV3/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `d04d1e97a9c213297899291ad30db14a9f946b07506d0377fead4e29510c5ad9`
+**Source fingerprint (SHA-256):** `c9ce6066678cc675f092575ce2a49269d05fea9c8ed13c77e630241002091b31`

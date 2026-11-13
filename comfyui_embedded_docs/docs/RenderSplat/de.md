@@ -17,7 +17,7 @@ Rendern Sie einen Gaussian-Splat als Bild mithilfe eines anisotropen EWA-Rasteri
 | `render_style` | Was die Bildausgabe anzeigt. Optionen sind: color (vollfarbiges Rendering), clay (mit neutralem Albedo schattiert), depth (nahe Objekte erscheinen hell), normal (OpenGL-Normal Map) (Standard: "color") | COMBO | Ja | "color"<br>"clay"<br>"depth"<br>"normal" |
 | `background` | Einfarbige Hintergrundfarbe für das Rendering (Standard: #000000) | COLOR | Ja | - |
 | `bg_image` | Optionale Hintergrundplatte, die hinter dem Splat komponiert wird. Überschreibt die einfarbige Hintergrundfarbe. Wird auf die Rendergröße skaliert. Ein Stapel von Bildern wird pro Frame verwendet, ein einzelnes Bild wird für alle Frames verwendet. Funktioniert nur mit den Render-Stilen color und clay | IMAGE | Nein | - |
-| `camera_info` | Kamera, aus der gerendert wird. Kann von einem Load3D-, Preview3D- oder Create Camera Info-Node stammen. Wenn leer, wird der Splat automatisch aus einer standardmäßigen 3/4-Ansicht eingepasst | CAMERA_3D | Nein | - |
+| `camera_info` | Kamera, aus der gerendert wird. Kann von einem Load3D-, Preview3D- oder Create Camera Info-Node stammen. Wenn leer, wird der Splat automatisch aus einer standardmäßigen 3/4-Ansicht eingepasst Eine Kameraliste rendert ein Bild pro Kamera. | CAMERA_3D | Nein | - |
 
 ## Ausgaben
 
@@ -29,4 +29,4 @@ Rendern Sie einen Gaussian-Splat als Bild mithilfe eines anisotropen EWA-Rasteri
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RenderSplat/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `038bd9fb032f347ecda665c03719a64b0cf907599b701606f5cf6d0606d19d98`
+**Source fingerprint (SHA-256):** `344e5fac74f4c33b08bea4d4737c178e1186bf212c487a8236331bce8818c30c`

@@ -8,7 +8,7 @@ Erzeugen Sie Textantworten mit den Gemini-Modellen von Google. Geben Sie einen T
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das Gemini-Modell, das zur Generierung der Antwort verwendet wird. Das ausgewählte Modell bestimmt, welche zusätzlichen Eingaben angezeigt werden. | DYNAMIC_COMBO | Ja | `"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `model` | Das Gemini-Modell, das zur Generierung der Antwort verwendet wird. Das ausgewählte Modell bestimmt, welche zusätzlichen Eingaben angezeigt werden. | DYNAMIC_COMBO | Ja | `"Gemini 4 Hydrogen"`<br>`"Gemini 4 Argon"`<br>`"Gemini 4 Carbon"`<br>`"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
 
 ### Medieneingaben
 
@@ -19,6 +19,42 @@ Diese erweiterbaren Medieneingaben sind für jede Modelloption verfügbar.
 | `images` | Optionales Bild oder optionale Bilder, die als Kontext für das Modell verwendet werden. Bis zu 16 Bilder. Erweiterbarer Slot: Verbinden Sie Bilder mit `image_1` bis `image_16`. | IMAGE | Nein | Bis zu 16 Bilder |
 | `audio` | Optionaler Audioclip, der als Kontext für das Modell verwendet wird. Erweiterbarer Slot: `audio_1`. | AUDIO | Nein | 1 Audioclip |
 | `video` | Optionaler Videoclip, der als Kontext für das Modell verwendet wird. Erweiterbarer Slot: `video_1`. | VIDEO | Nein | 1 Videoclip |
+
+### Gemini 4 Hydrogen Eingaben
+
+| Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Texteingabe für das Modell. Fügen Sie detaillierte Anweisungen, Fragen oder Kontext hinzu. Darf nicht leer sein. | STRING | Ja | Mehrzeiliger Text (muss mindestens ein Nicht-Leerzeichen enthalten) |
+| `video_processing` | Wie das Modell das angehängte Video liest. `static` tastet Frames mit einer festen Rate ab und sendet alle als Kontext; `agentic` lässt das Modell selbst durch die Zeitleiste navigieren und nur die Frames, Audio- oder Transkriptdaten laden, die es benötigt, was bei langen Videos deutlich weniger Eingabe-Token kostet. | COMBO | Ja | `"static"`<br>`"agentic"` (Standard: `"static"`) |
+| `files` | Optionale Datei(en), die als Kontext für das Modell verwendet werden. Akzeptiert Eingaben vom Gemini Input Files-Node. | GEMINI_INPUT_FILES | Nein | N/A |
+| `thinking_level` | Wie stark das Modell intern nachdenkt, bevor es antwortet. HIGH verbessert die Qualität bei schwierigen Aufgaben, kostet aber mehr (Thinking-)Token und ist langsamer. | COMBO | Ja | `"LOW"`<br>`"MEDIUM"`<br>`"HIGH"`<br>`"XHIGH"` (Standard: `"HIGH"`) |
+| `max_output_tokens` | Maximale Anzahl der zu generierenden Token, einschließlich des internen Denkens des Modells. Bei thinking_level HIGH kann ein niedriger Wert keinen Platz für die Antwort lassen; erhöhen Sie diesen Wert, wenn Antworten leer oder abgeschnitten zurückkommen. Das Modell stoppt frühzeitig, wenn es fertig ist, sodass eine höhere Obergrenze für kurze Antworten nichts extra kostet. | INT | Ja | 16-65536 (Standard: 32768) |
+| `seed` | Seed für das Sampling. Auf 0 für einen zufälligen Seed setzen. Deterministische Ausgabe ist nicht garantiert. | INT | Ja | 0-2147483647 (Standard: 42) |
+| `system_prompt` | Grundlegende Anweisungen, die das Verhalten des Modells vorgeben. | STRING | Ja | Mehrzeiliger Text (Standard: leer) |
+
+### Gemini 4 Argon Eingaben
+
+| Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Texteingabe für das Modell. Fügen Sie detaillierte Anweisungen, Fragen oder Kontext hinzu. Darf nicht leer sein. | STRING | Ja | Mehrzeiliger Text (muss mindestens ein Nicht-Leerzeichen enthalten) |
+| `video_processing` | Wie das Modell das angehängte Video liest. `static` tastet Frames mit einer festen Rate ab und sendet alle als Kontext; `agentic` lässt das Modell selbst durch die Zeitleiste navigieren und nur die Frames, Audio- oder Transkriptdaten laden, die es benötigt, was bei langen Videos deutlich weniger Eingabe-Token kostet. | COMBO | Ja | `"static"`<br>`"agentic"` (Standard: `"static"`) |
+| `files` | Optionale Datei(en), die als Kontext für das Modell verwendet werden. Akzeptiert Eingaben vom Gemini Input Files-Node. | GEMINI_INPUT_FILES | Nein | N/A |
+| `thinking_level` | Wie stark das Modell intern nachdenkt, bevor es antwortet. HIGH verbessert die Qualität bei schwierigen Aufgaben, kostet aber mehr (Thinking-)Token und ist langsamer. | COMBO | Ja | `"LOW"`<br>`"MEDIUM"`<br>`"HIGH"` (Standard: `"MEDIUM"`) |
+| `max_output_tokens` | Maximale Anzahl der zu generierenden Token, einschließlich des internen Denkens des Modells. Bei thinking_level HIGH kann ein niedriger Wert keinen Platz für die Antwort lassen; erhöhen Sie diesen Wert, wenn Antworten leer oder abgeschnitten zurückkommen. Das Modell stoppt frühzeitig, wenn es fertig ist, sodass eine höhere Obergrenze für kurze Antworten nichts extra kostet. | INT | Ja | 16-32768 (Standard: 32768) |
+| `seed` | Seed für das Sampling. Auf 0 für einen zufälligen Seed setzen. Deterministische Ausgabe ist nicht garantiert. | INT | Ja | 0-2147483647 (Standard: 42) |
+| `system_prompt` | Grundlegende Anweisungen, die das Verhalten des Modells vorgeben. | STRING | Ja | Mehrzeiliger Text (Standard: leer) |
+
+### Gemini 4 Carbon Eingaben
+
+| Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Texteingabe für das Modell. Fügen Sie detaillierte Anweisungen, Fragen oder Kontext hinzu. Darf nicht leer sein. | STRING | Ja | Mehrzeiliger Text (muss mindestens ein Nicht-Leerzeichen enthalten) |
+| `video_processing` | Wie das Modell das angehängte Video liest. `static` tastet Frames mit einer festen Rate ab und sendet alle als Kontext; `agentic` lässt das Modell selbst durch die Zeitleiste navigieren und nur die Frames, Audio- oder Transkriptdaten laden, die es benötigt, was bei langen Videos deutlich weniger Eingabe-Token kostet. | COMBO | Ja | `"static"`<br>`"agentic"` (Standard: `"static"`) |
+| `files` | Optionale Datei(en), die als Kontext für das Modell verwendet werden. Akzeptiert Eingaben vom Gemini Input Files-Node. | GEMINI_INPUT_FILES | Nein | N/A |
+| `thinking_level` | Wie stark das Modell intern nachdenkt, bevor es antwortet. HIGH verbessert die Qualität bei schwierigen Aufgaben, kostet aber mehr (Thinking-)Token und ist langsamer. | COMBO | Ja | `"LOW"`<br>`"MEDIUM"`<br>`"HIGH"` (Standard: `"MEDIUM"`) |
+| `max_output_tokens` | Maximale Anzahl der zu generierenden Token, einschließlich des internen Denkens des Modells. Bei thinking_level HIGH kann ein niedriger Wert keinen Platz für die Antwort lassen; erhöhen Sie diesen Wert, wenn Antworten leer oder abgeschnitten zurückkommen. Das Modell stoppt frühzeitig, wenn es fertig ist, sodass eine höhere Obergrenze für kurze Antworten nichts extra kostet. | INT | Ja | 16-32768 (Standard: 32768) |
+| `seed` | Seed für das Sampling. Auf 0 für einen zufälligen Seed setzen. Deterministische Ausgabe ist nicht garantiert. | INT | Ja | 0-2147483647 (Standard: 42) |
+| `system_prompt` | Grundlegende Anweisungen, die das Verhalten des Modells vorgeben. | STRING | Ja | Mehrzeiliger Text (Standard: leer) |
 
 ### Gemini 3.8 Flash Eingaben
 
@@ -84,7 +120,7 @@ Diese erweiterbaren Medieneingaben sind für jede Modelloption verfügbar.
 | `seed` | Seed für das Sampling. Auf 0 für einen zufälligen Seed setzen. Deterministische Ausgabe ist nicht garantiert. | INT | Ja | 0-2147483647 (Standard: 42) |
 | `system_prompt` | Grundlegende Anweisungen, die das Verhalten des Modells vorgeben. | STRING | Ja | Mehrzeiliger Text (Standard: leer) |
 
-Hinweis: Für Gemini 3.8 Flash sind `temperature` und `top_p` nicht verfügbar, und `video_processing` ist nur für diese Modelloption verfügbar. Die `thinking_level`-Optionen und Standardwerte unterscheiden sich je nach Modell wie oben aufgeführt.
+Hinweis: Für Gemini 4 Hydrogen, Gemini 4 Argon, Gemini 4 Carbon und Gemini 3.8 Flash sind `temperature` und `top_p` nicht verfügbar, und `video_processing` ist nur für diese Modelloptionen verfügbar. Die `thinking_level`-Optionen und Standardwerte unterscheiden sich je nach Modell wie oben aufgeführt.
 
 Hinweis: Die Eingabe `prompt` darf nicht leer sein. Der Node validiert, dass sie mindestens ein Nicht-Leerzeichen enthält.
 
@@ -99,4 +135,4 @@ Hinweis: Der Node lädt die ersten bis zu 10 Medienelemente als URLs hoch, wobei
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiNodeV3/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `d04d1e97a9c213297899291ad30db14a9f946b07506d0377fead4e29510c5ad9`
+**Source fingerprint (SHA-256):** `c9ce6066678cc675f092575ce2a49269d05fea9c8ed13c77e630241002091b31`
