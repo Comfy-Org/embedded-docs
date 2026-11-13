@@ -1,6 +1,6 @@
 # Split Image Channels
 
-Splits an image into its red, green, and blue channels, and returns the alpha channel as a mask. Each color output is a three-channel grayscale image, so it previews and saves like a normal image. Use it to inspect or edit a single channel, or to pull transparency out of an image.
+Splits an image into its red, green, and blue channels, and returns the alpha channel as a mask. Each color output is a three-channel grayscale image, so it previews and saves like a normal image. Use it to inspect or edit a single channel, or to pull transparency out of an image that carries an alpha channel: images loaded with Load Image have none, since its alpha is exposed as a separate `MASK` output.
 
 ## Inputs
 

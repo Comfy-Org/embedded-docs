@@ -25,7 +25,7 @@ Generate a video with synchronized dialogue and sound from a text prompt using H
 - **Prompt tags:** `@ImageN`, `@VideoN` and `@AudioN` are matched case-insensitively. The number must not exceed the count of connected references of that type, and the prompt must be non-empty after trimming whitespace.
 - **Mode:** with at least one reference image or video the request is a reference-to-video run; with none it is a plain text-to-video run.
 - **1080p and 2k resolution:** `resolution` `"1080p"` or `"2k"` requires `aspect_ratio` `"16:9"` or `"9:16"`; `"auto"` is accepted at these resolutions only when no reference image and no reference video are connected.
-- **Duration:** above 15 seconds is available only without reference images or videos, unless `auto_duration` is `"enabled"`.
+- **Duration:** with reference images or videos the generated video stays at 15 seconds or less. Longer videos need no reference images or videos; `auto_duration` only makes `duration` ignored (8 to 30 seconds from the dialogue, 8 to 15 with references), it does not raise that cap.
 - **Seed:** the seed only decides whether the node re-runs; results are not reproducible with the same seed.
 
 ## Outputs

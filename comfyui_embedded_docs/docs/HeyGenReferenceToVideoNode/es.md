@@ -1,31 +1,31 @@
 # HeyGen Video 1.0 de referencia a vídeo
 
-Genera un video con diálogo y sonido sincronizados a partir de un prompt de texto usando HeyGen Video 1.0, opcionalmente guiado por material de referencia conectado. Las imágenes de personas, productos o lugares, los videos para reutilizar y los clips de audio que proporcionan una voz pueden usarse como referencias. Menciona cada referencia en el prompt como @Image1, @Video1 o @Audio1, numeradas por tipo en el orden en que se conectan las entradas: estas etiquetas se reescriben a las etiquetas que HeyGen espera, y una etiqueta que apunta a una referencia que no está conectada genera un error. Sin ninguna imagen ni video de referencia, el nodo se ejecuta como generación de texto a video.
+Genera un video con diálogo y sonido sincronizados a partir de un prompt de texto usando HeyGen Video 1.0, opcionalmente guiado por material de referencia conectado. Las imágenes de personas, productos o lugares, los videos para reutilizar y los clips de audio que proporcionan una voz pueden usarse como referencias. Menciona cada referencia en el prompt como @Image1, @Video1 o @Audio1, numeradas por tipo en el orden en que se conectan las entradas: estas etiquetas se reescriben en las etiquetas que HeyGen espera, y una etiqueta que apunta a una referencia no conectada genera un error. Sin ninguna imagen o video de referencia, el nodo se ejecuta como generación de texto a video.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Versión del modelo utilizada para la generación. (predeterminado: `"heygen-video-1"`) | DYNAMIC_COMBO | Sí | `"heygen-video-1"` |
-| `prompt` | Descripción del video, incluido cualquier diálogo. Haz referencia a las referencias conectadas como @Image1, @Video1, @Audio1, numeradas por tipo en el orden de las entradas. (predeterminado: cadena vacía) | STRING | Sí | 1 a 16000 caracteres |
-| `duration` | Duración del video de salida en segundos. Los valores superiores a 15 segundos solo están disponibles sin imágenes ni videos de referencia. (predeterminado: 5) | INT | Sí | 5 a 30 |
+| `model` | Versión del modelo usada para la generación. (predeterminado: `"heygen-video-1"`) | DYNAMIC_COMBO | Sí | `"heygen-video-1"` |
+| `prompt` | Descripción del video, incluido cualquier diálogo. Haz referencia a las referencias conectadas como @Image1, @Video1, @Audio1, numeradas por tipo en el orden de entrada. (predeterminado: cadena vacía) | STRING | Sí | 1 a 16000 caracteres |
+| `duration` | Duración del video de salida en segundos. Más de 15 segundos está disponible solo sin imágenes ni videos de referencia. (predeterminado: 5) | INT | Sí | 5 a 30 |
 | `resolution` | Resolución de salida. 1080p y 2k requieren la relación de aspecto 16:9 o 9:16; `"auto"` funciona con estas resoluciones solo sin referencias. (predeterminado: `"768p"`) | COMBO | Sí | `"768p"`<br>`"480p"`<br>`"1080p"`<br>`"2k"` |
 | `aspect_ratio` | Relación de aspecto de salida. `"auto"` es 16:9 cuando no hay referencias conectadas; de lo contrario, sigue la primera imagen de referencia o, cuando no hay imágenes conectadas, el primer video de referencia. (predeterminado: `"auto"`) | COMBO | Sí | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"` |
 | `seed` | Semilla para la generación. Los resultados aún pueden variar entre ejecuciones con la misma semilla. (predeterminado: 42) | INT | Sí | 0 a 4294967295 |
-| `reference_images` | Ranura ampliable: imágenes de personas, productos o lugares que se usarán en el video (`image_1` ... `image_9`); haz referencia a ellas como @Image1, @Image2, ... Cada entrada debe contener exactamente una imagen, y cada imagen debe tener una relación de aspecto entre 1:4 y 4:1. | IMAGE | No | 0 a 9 imágenes |
-| `reference_videos` | Ranura ampliable: videos para usar como referencias (`video_1` ... `video_3`); haz referencia a ellos como @Video1, @Video2, ... Se usan como máximo 15 segundos de metraje en total. | VIDEO | No | 0 a 3 videos |
-| `reference_audios` | Ranura ampliable: clips de audio, como una voz para un hablante (`audio_1` ... `audio_3`); haz referencia a ellos como @Audio1, @Audio2, ... Requiere al menos una imagen o video de referencia. Una referencia de voz necesita unos segundos de habla limpia, y los clips de menos de unos 2 segundos suelen ignorarse. | AUDIO | No | 0 a 3 clips de audio |
-| `auto_duration` | Cuando está habilitado, la duración del video sigue el diálogo citado en el prompt (de 8 a 30 segundos, o de 8 a 15 con imágenes o videos de referencia) y se ignora `duration`. (predeterminado: `"disabled"`) | COMBO | No | `"disabled"`<br>`"enabled"` |
+| `reference_images` | Ranura ampliable: imágenes de personas, productos o lugares para usar en el video (`image_1` ... `image_9`); menciónalas como @Image1, @Image2, ... Cada entrada debe contener exactamente una imagen, y cada imagen debe tener una relación de aspecto entre 1:4 y 4:1. | IMAGE | No | 0 a 9 imágenes |
+| `reference_videos` | Ranura ampliable: videos para usar como referencias (`video_1` ... `video_3`); menciónalos como @Video1, @Video2, ... Se usan como máximo 15 segundos de metraje en total. | VIDEO | No | 0 a 3 videos |
+| `reference_audios` | Ranura ampliable: clips de audio, como la voz de un hablante (`audio_1` ... `audio_3`); menciónalos como @Audio1, @Audio2, ... Requiere al menos una imagen o un video de referencia. Una referencia de voz necesita unos segundos de habla clara, y los clips de menos de unos 2 segundos suelen ignorarse. | AUDIO | No | 0 a 3 clips de audio |
+| `auto_duration` | Cuando está habilitado, la duración del video sigue el diálogo entre comillas en el prompt (8 a 30 segundos, u 8 a 15 con imágenes o videos de referencia) y se ignora `duration`. (predeterminado: `"disabled"`) | COMBO | No | `"disabled"`<br>`"enabled"` |
 
-### Restricciones de los parámetros
+### Restricciones de parámetros
 
 - **Límite de referencias:** como máximo 15 referencias en total: hasta 9 imágenes, 3 videos y 3 clips de audio. Conectar más genera un error.
 - **El audio necesita imagen o video:** el audio de referencia se rechaza cuando no hay ninguna imagen de referencia ni ningún video de referencia conectado.
-- **Reglas de las imágenes de referencia:** cada entrada `reference_images` debe contener exactamente una imagen (se rechaza un lote), y cada imagen debe tener una relación de aspecto entre 1:4 y 4:1.
-- **Etiquetas del prompt:** `@ImageN`, `@VideoN` y `@AudioN` se comparan sin distinguir mayúsculas y minúsculas. El número no debe superar la cantidad de referencias conectadas de ese tipo, y el prompt no debe estar vacío después de recortar los espacios en blanco.
-- **Modo:** con al menos una imagen o video de referencia, la solicitud es una ejecución de referencia a video; sin ninguna, es una ejecución simple de texto a video.
+- **Reglas de las imágenes de referencia:** cada entrada de `reference_images` debe contener exactamente una imagen (se rechaza un lote), y cada imagen debe tener una relación de aspecto entre 1:4 y 4:1.
+- **Etiquetas del prompt:** `@ImageN`, `@VideoN` y `@AudioN` se comparan sin distinguir mayúsculas y minúsculas. El número no debe superar la cantidad de referencias conectadas de ese tipo, y el prompt no debe estar vacío después de eliminar los espacios en blanco.
+- **Modo:** con al menos una imagen o un video de referencia, la solicitud es una ejecución de referencia a video; sin ninguna, es una ejecución simple de texto a video.
 - **Resolución 1080p y 2k:** `resolution` `"1080p"` o `"2k"` requiere `aspect_ratio` `"16:9"` o `"9:16"`; `"auto"` se acepta con estas resoluciones solo cuando no hay ninguna imagen de referencia ni ningún video de referencia conectado.
-- **Duración:** los valores superiores a 15 segundos solo están disponibles sin imágenes ni videos de referencia, a menos que `auto_duration` sea `"enabled"`.
+- **Duración:** con imágenes o videos de referencia, el video generado se mantiene en 15 segundos o menos. Los videos más largos no necesitan imágenes ni videos de referencia; `auto_duration` solo hace que se ignore `duration` (8 a 30 segundos a partir del diálogo, 8 a 15 con referencias); no eleva ese límite.
 - **Semilla:** la semilla solo decide si el nodo se vuelve a ejecutar; los resultados no son reproducibles con la misma semilla.
 
 ## Salidas

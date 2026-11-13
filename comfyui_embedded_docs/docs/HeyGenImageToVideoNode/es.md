@@ -1,6 +1,6 @@
 # HeyGen Video 1.0 de imagen a vídeo
 
-Anima una imagen para convertirla en un video con diálogo y sonido sincronizados usando HeyGen Video 1.0. La imagen conectada se usa como primer fotograma y el video generado mantiene su relación de aspecto. Describe lo que debe suceder, incluidas las líneas habladas, en el prompt. El nodo carga la imagen, crea el trabajo de video, espera a que finalice y devuelve el video resultante.
+Anima una imagen para convertirla en un video con diálogo y sonido sincronizados usando HeyGen Video 1.0. La imagen conectada se usa como primer fotograma y el video generado mantiene su relación de aspecto. Describe en el prompt lo que debe ocurrir, incluidas las líneas habladas. El nodo sube la imagen, crea el trabajo de video, espera a que termine y devuelve el video resultante.
 
 ## Entradas
 
@@ -8,18 +8,19 @@ Anima una imagen para convertirla en un video con diálogo y sonido sincronizado
 |-----------|-------------|---------------|-------------|-------|
 | `model` | Versión del modelo utilizada para la generación. (predeterminado: `"heygen-video-1"`) | DYNAMIC_COMBO | Sí | `"heygen-video-1"` |
 | `image` | Primer fotograma del video. Se requiere exactamente una imagen; se rechaza un lote. Recorta la imagen para cambiar la forma del video, porque la salida mantiene la relación de aspecto de esta imagen. | IMAGE | Sí | 1 imagen, relación de aspecto 1:4 a 4:1 |
-| `prompt` | Descripción de lo que sucede en el video, incluido cualquier diálogo. (predeterminado: cadena vacía) | STRING | Sí | 1 a 16000 caracteres |
+| `prompt` | Descripción de lo que ocurre en el video, incluidos los diálogos. (predeterminado: cadena vacía) | STRING | Sí | 1 a 16000 caracteres |
 | `duration` | Duración del video de salida en segundos. Se ignora cuando `auto_duration` es `"enabled"`. (predeterminado: 5) | INT | Sí | 5 a 30 |
-| `resolution` | Resolución de salida. (predeterminado: `"768p"`) | COMBO | Sí | `"768p"`<br>`"480p"`<br>`"1080p"`<br>`"2k"` |
+| `resolution` | Resolución de salida. 1080p y 2k se renderizan solo en 16:9 o 9:16, por lo que la imagen debe tener esa forma; recórtala primero. (predeterminado: `"768p"`) | COMBO | Sí | `"768p"`<br>`"480p"`<br>`"1080p"`<br>`"2k"` |
 | `seed` | Semilla para la generación. Los resultados aún pueden variar entre ejecuciones con la misma semilla. (predeterminado: 42) | INT | Sí | 0 a 4294967295 |
-| `auto_duration` | Cuando está habilitado, la duración del video sigue al diálogo entrecomillado en el prompt (8 a 30 segundos) y `duration` se ignora. (predeterminado: `"disabled"`) | COMBO | No | `"disabled"`<br>`"enabled"` |
+| `auto_duration` | Cuando está habilitado, la duración del video sigue al diálogo citado en el prompt (8 a 30 segundos) y `duration` se ignora. (predeterminado: `"disabled"`) | COMBO | No | `"disabled"`<br>`"enabled"` |
 
-### Restricciones de los parámetros
+### Restricciones de parámetros
 
 - **Imagen única:** `image` debe contener exactamente una imagen. Conectar un lote genera un error.
 - **Relación de aspecto de la imagen:** la imagen no debe ser más ancha que 4 veces su altura ni más alta que 4 veces su anchura (entre 1:4 y 4:1); de lo contrario, la ejecución falla.
 - **Prompt obligatorio:** el prompt debe contener al menos un carácter que no sea espacio en blanco y como máximo 16000 caracteres.
-- **Semilla:** la semilla solo determina si el nodo se vuelve a ejecutar; los resultados no son reproducibles con la misma semilla.
+- **Resoluciones altas:** `resolution` `"1080p"` y `"2k"` necesitan una imagen de 16:9 o 9:16, porque el video mantiene la relación de aspecto de la imagen. Recorta la imagen para otras formas.
+- **Semilla:** la semilla solo decide si el nodo se vuelve a ejecutar; los resultados no son reproducibles con la misma semilla.
 
 ## Salidas
 
