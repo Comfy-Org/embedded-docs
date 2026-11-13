@@ -2,6 +2,10 @@
 
 Tripo: Texture model (Legacy) düğümü, Tripo API aracılığıyla mevcut bir Tripo 3D modeline dokular ekler. Başka bir Tripo düğümü tarafından oluşturulan bir modelin görev kimliğini alır ve doku işi tamamlandığında dokulu bir GLB veya FBX modeli döndürür. Malzeme haritalarını, doku kalitesini, hizalamayı ve tohumu kontrol edebilir; dokuları bir metin istemi, bir stil görüntüsü veya referans görüntülerle yönlendirebilirsiniz. Bu düğüm, doku aracının eski bir sürümüdür.
 
+<Note>
+Tripo, görev kayıtlarını sunucularında 7 gün saklar (1 Aralık 2026'dan itibaren geçerli). Bu süreden eski bir görev kimliği artık çözümlenemez, bu nedenle kaydedilmiş bir iş akışını bu süreden sonra yeniden çalıştırmak bu düğümde başarısız olur. Devam etmek için yeni bir görev kimliği oluşturmak üzere önceki Tripo düğümünü yeniden çalıştırın veya zaten indirdiğiniz modeli **Tripo: Model İçe Aktar** ile yeniden içe aktarın.
+</Note>
+
 ## Girdiler
 
 ### Ortak Girdiler

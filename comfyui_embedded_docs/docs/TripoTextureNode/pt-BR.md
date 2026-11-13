@@ -1,5 +1,9 @@
 # Tripo: Aplicar textura ao modelo (Legado)
 
+<Note>
+O Tripo mantém os registros de tarefas em seus servidores por 7 dias (a partir de 1º de dezembro de 2026). Um ID de tarefa mais antigo não pode mais ser resolvido, então executar novamente um fluxo de trabalho salvo depois desse prazo falha neste nó. Para continuar, execute o nó Tripo anterior outra vez para criar um novo ID de tarefa, ou importe novamente o modelo que você já baixou com **Tripo: Importar Modelo**.
+</Note>
+
 ## Visão geral
 
 O nó Tripo: Texture model (Legacy) adiciona texturas a um modelo 3D Tripo existente por meio da API do Tripo. Ele recebe o ID da tarefa de um modelo criado por outro nó do Tripo e retorna um modelo GLB ou FBX texturizado quando o trabalho de texturização termina. Você pode controlar os mapas de material, a qualidade da textura, o alinhamento e a semente, além de orientar as texturas com um prompt de texto, uma imagem de estilo ou imagens de referência. Este nó é uma versão legada da ferramenta de textura.

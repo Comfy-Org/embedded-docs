@@ -2,6 +2,10 @@
 
 Dieser Node nimmt ein vorhandenes Tripo-3D-Modell und erstellt eine geriggte Version davon, das heißt, das Modell erhält ein Skelett, damit es animiert werden kann. Sie geben die Task-ID des zu riggenden Modells an, wählen Rig-Version, Skeletttyp, Knochenbenennungsstil und Ausgabedateiformat, und der Node sendet den Auftrag an Tripo, wartet, bis er abgeschlossen ist, und gibt anschließend das heruntergeladene Ergebnis zurück.
 
+<Note>
+Tripo speichert Aufgabenaufzeichnungen 7 Tage lang auf seinen Servern (gültig ab 1. Dezember 2026). Eine ältere Task-ID lässt sich nicht mehr auflösen, deshalb schlägt das erneute Ausführen eines gespeicherten Workflows nach Ablauf dieser Frist an diesem Node fehl. Führen Sie zum Fortfahren den früheren Tripo-Node erneut aus, um eine neue Task-ID zu erzeugen, oder importieren Sie das bereits heruntergeladene Modell mit **Tripo: Modell importieren** erneut.
+</Note>
+
 ## Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |

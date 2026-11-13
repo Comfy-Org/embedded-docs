@@ -2,6 +2,10 @@
 
 Questo nodo suddivide un modello 3D in singole parti. Invia il modello al servizio di segmentazione Tripo, attende il completamento dell'operazione e restituisce il modello segmentato in formato GLB insieme a un elenco dei nomi delle parti separato da virgole. Questi nomi delle parti alimentano i passaggi successivi, come Tripo: Complete Mesh Parts, Tripo: Retopology e Tripo: Convert model.
 
+<Note>
+Tripo conserva i record delle attività sui propri server per 7 giorni (a partire dal 1° dicembre 2026). Un ID attività più vecchio non può più essere risolto, quindi rieseguire un workflow salvato dopo questo intervallo non riesce su questo nodo. Per continuare, eseguite di nuovo il nodo Tripo precedente per creare un nuovo ID attività, oppure reimportate il modello che avete già scaricato con **Tripo: Importa Modello**.
+</Note>
+
 ## Input
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |

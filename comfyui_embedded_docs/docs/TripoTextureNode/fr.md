@@ -4,6 +4,10 @@ Ce nœud est marqué comme obsolète (legacy) dans la source ; son nom d’affic
 
 Le nœud Tripo: Texture model (Legacy) ajoute des textures à un modèle 3D Tripo existant via l’API Tripo. Il prend l’ID de tâche d’un modèle créé par un autre nœud Tripo et renvoie un modèle GLB ou FBX texturé une fois la tâche de texturation terminée. Vous pouvez contrôler les cartes de matériau, la qualité des textures, l’alignement et la graine, et guider les textures avec une consigne textuelle, une image de style ou des images de référence. Ce nœud est une version héritée de l’outil de texturation.
 
+<Note>
+Tripo conserve les enregistrements de tâches sur ses serveurs pendant 7 jours (à compter du 1er décembre 2026). Un ID de tâche plus ancien ne peut plus être résolu, donc relancer un workflow enregistré après ce délai échoue sur ce nœud. Pour continuer, relancez le nœud Tripo précédent pour créer un nouvel ID de tâche, ou réimportez le modèle que vous avez déjà téléchargé avec **Tripo : Importer un modèle**.
+</Note>
+
 ## Entrées
 
 ### Entrées communes

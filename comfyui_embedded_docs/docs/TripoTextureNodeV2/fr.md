@@ -2,6 +2,10 @@
 
 Ce nœud ajoute des textures à un modèle 3D existant issu d’un flux de travail Tripo, identifié par un ID de tâche provenant d’une étape de génération précédente. Il peut produire des cartes de matières PBR ou une texture de couleur unie, et le résultat peut être guidé par un prompt textuel, une image de style ou des images de référence.
 
+<Note>
+Tripo conserve les enregistrements de tâches sur ses serveurs pendant 7 jours (à compter du 1er décembre 2026). Un ID de tâche plus ancien ne peut plus être résolu, donc relancer un workflow enregistré après ce délai échoue sur ce nœud. Pour continuer, relancez le nœud Tripo précédent pour créer un nouvel ID de tâche, ou réimportez le modèle que vous avez déjà téléchargé avec **Tripo : Importer un modèle**.
+</Note>
+
 ## Entrées
 
 ### Entrées communes

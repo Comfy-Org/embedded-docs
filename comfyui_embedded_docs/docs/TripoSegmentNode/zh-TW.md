@@ -2,6 +2,10 @@
 
 此節點會將 3D 模型分割成個別部件。它會將模型傳送至 Tripo 分割服務，等待作業完成，並以 GLB 格式回傳分割後的模型，同時附上以逗號分隔的部件名稱清單。這些部件名稱會提供給下游步驟使用，例如 Tripo: Complete Mesh Parts、Tripo: Retopology 與 Tripo: Convert model。
 
+<Note>
+Tripo 僅在其伺服器上保留任務紀錄 7 天（自 2026年12月1日起生效）。超過此期限的任務 ID 將無法再解析，因此在該期限之後重新執行已儲存的工作流程時，會在此節點失敗。若要繼續，請重新執行先前的 Tripo 節點以建立新的任務 ID，或使用 **Tripo：匯入模型** 重新匯入您已下載的模型。
+</Note>
+
 ## 輸入
 
 | Parameter | Description | Data Type | Required | Range |

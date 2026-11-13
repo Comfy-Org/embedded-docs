@@ -2,6 +2,10 @@
 
 將 3D 模型拆分為語意上具有意義的部分，並為每個部分命名。它可以分割現有模型（透過任務 ID 提供），或先從圖像生成模型再進行分割。產生的 `segment task_id` 可供其他 Tripo 節點使用，例如 Complete Mesh Parts、Retopology、Texture model 和 Convert model，用法與 Tripo: Segment Model 結果相同。
 
+<Note>
+Tripo 僅在其伺服器上保留任務紀錄 7 天（自 2026年12月1日起生效）。超過此期限的任務 ID 將無法再解析，因此在該期限之後重新執行已儲存的工作流程時，會在此節點失敗。若要繼續，請重新執行先前的 Tripo 節點以建立新的任務 ID，或使用 **Tripo：匯入模型** 重新匯入您已下載的模型。
+</Note>
+
 ## 輸入
 
 ### 通用輸入

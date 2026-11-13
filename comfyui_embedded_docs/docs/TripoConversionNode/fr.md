@@ -2,6 +2,10 @@
 
 Ce nœud convertit un modèle Tripo 3D existant vers un autre format de fichier 3D. Il prend l’ID de tâche d’un modèle précédemment créé ou traité par une opération Tripo (telle que la génération de modèle, le rigging, le retargeting ou la segmentation), soumet une tâche de conversion à l’API Tripo, attend la fin de cette tâche, puis renvoie le fichier de modèle converti.
 
+<Note>
+Tripo conserve les enregistrements de tâches sur ses serveurs pendant 7 jours (à compter du 1er décembre 2026). Un ID de tâche plus ancien ne peut plus être résolu, donc relancer un workflow enregistré après ce délai échoue sur ce nœud. Pour continuer, relancez le nœud Tripo précédent pour créer un nouvel ID de tâche, ou réimportez le modèle que vous avez déjà téléchargé avec **Tripo : Importer un modèle**.
+</Note>
+
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |

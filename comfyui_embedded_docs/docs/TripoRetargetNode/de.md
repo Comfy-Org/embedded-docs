@@ -2,6 +2,10 @@
 
 Der TripoRetargetNode wendet eine Preset-Animation auf ein vorhandenes geriggtes 3D-Modell an. Er verwendet die Task-ID eines zuvor geriggten Modells, sendet eine Retargeting-Anfrage an die Tripo-API und lädt die resultierende animierte Datei herunter. Das animierte Modell kann als GLB oder FBX zurückgegeben werden, mit optionaler Mesh-Geometrie und optionaler In-Place-Wiedergabe.
 
+<Note>
+Tripo speichert Aufgabenaufzeichnungen 7 Tage lang auf seinen Servern (gültig ab 1. Dezember 2026). Eine ältere Task-ID lässt sich nicht mehr auflösen, deshalb schlägt das erneute Ausführen eines gespeicherten Workflows nach Ablauf dieser Frist an diesem Node fehl. Führen Sie zum Fortfahren den früheren Tripo-Node erneut aus, um eine neue Task-ID zu erzeugen, oder importieren Sie das bereits heruntergeladene Modell mit **Tripo: Modell importieren** erneut.
+</Note>
+
 ## Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |

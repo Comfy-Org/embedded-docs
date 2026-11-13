@@ -2,6 +2,10 @@
 
 Dieser Node konvertiert ein vorhandenes Tripo-3D-Modell in ein anderes 3D-Dateiformat. Er nimmt die Task-ID eines Modells, das zuvor durch eine Tripo-Operation erstellt oder verarbeitet wurde (z. B. Modellgenerierung, Rigging, Retargeting oder Segmentierung), übermittelt eine Konvertierungsaufgabe an die Tripo-API, wartet, bis diese Aufgabe abgeschlossen ist, und gibt anschließend die konvertierte Modelldatei zurück.
 
+<Note>
+Tripo speichert Aufgabenaufzeichnungen 7 Tage lang auf seinen Servern (gültig ab 1. Dezember 2026). Eine ältere Task-ID lässt sich nicht mehr auflösen, deshalb schlägt das erneute Ausführen eines gespeicherten Workflows nach Ablauf dieser Frist an diesem Node fehl. Führen Sie zum Fortfahren den früheren Tripo-Node erneut aus, um eine neue Task-ID zu erzeugen, oder importieren Sie das bereits heruntergeladene Modell mit **Tripo: Modell importieren** erneut.
+</Note>
+
 ## Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |

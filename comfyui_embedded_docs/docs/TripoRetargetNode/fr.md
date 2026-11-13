@@ -2,6 +2,10 @@
 
 Le TripoRetargetNode applique une animation prédéfinie à un modèle 3D riggé existant. Il prend l'ID de tâche d'un modèle précédemment riggé, envoie une requête de retargeting à l'API Tripo et télécharge le fichier animé résultant. Le modèle animé peut être renvoyé au format GLB ou FBX, avec une géométrie de maillage optionnelle et une lecture sur place optionnelle.
 
+<Note>
+Tripo conserve les enregistrements de tâches sur ses serveurs pendant 7 jours (à compter du 1er décembre 2026). Un ID de tâche plus ancien ne peut plus être résolu, donc relancer un workflow enregistré après ce délai échoue sur ce nœud. Pour continuer, relancez le nœud Tripo précédent pour créer un nouvel ID de tâche, ou réimportez le modèle que vous avez déjà téléchargé avec **Tripo : Importer un modèle**.
+</Note>
+
 ## Entrées
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |

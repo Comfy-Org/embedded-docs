@@ -2,6 +2,10 @@
 
 Ce nœud divise un modèle 3D en parties individuelles. Il envoie le modèle au service de segmentation Tripo, attend la fin de la tâche, puis renvoie le modèle segmenté au format GLB ainsi qu'une liste de noms de parties séparés par des virgules. Ces noms de parties alimentent les étapes en aval telles que Tripo: Complete Mesh Parts, Tripo: Retopology et Tripo: Convert model.
 
+<Note>
+Tripo conserve les enregistrements de tâches sur ses serveurs pendant 7 jours (à compter du 1er décembre 2026). Un ID de tâche plus ancien ne peut plus être résolu, donc relancer un workflow enregistré après ce délai échoue sur ce nœud. Pour continuer, relancez le nœud Tripo précédent pour créer un nouvel ID de tâche, ou réimportez le modèle que vous avez déjà téléchargé avec **Tripo : Importer un modèle**.
+</Note>
+
 ## Entrées
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |

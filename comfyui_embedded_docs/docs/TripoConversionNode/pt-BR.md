@@ -2,6 +2,10 @@
 
 This node converts an existing Tripo 3D model into another 3D file format. It takes the task ID of a model previously created or processed by a Tripo operation (such as model generation, rigging, retargeting, or segmentation), submits a conversion task to the Tripo API, waits for that task to finish, and then returns the converted model file.
 
+<Note>
+O Tripo mantém os registros de tarefas em seus servidores por 7 dias (a partir de 1º de dezembro de 2026). Um ID de tarefa mais antigo não pode mais ser resolvido, então executar novamente um fluxo de trabalho salvo depois desse prazo falha neste nó. Para continuar, execute o nó Tripo anterior outra vez para criar um novo ID de tarefa, ou importe novamente o modelo que você já baixou com **Tripo: Importar Modelo**.
+</Note>
+
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |

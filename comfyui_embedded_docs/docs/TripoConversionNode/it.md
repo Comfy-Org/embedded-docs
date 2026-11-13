@@ -2,6 +2,10 @@
 
 Questo nodo converte un modello 3D Tripo esistente in un altro formato di file 3D. Prende l'ID del task di un modello creato o elaborato in precedenza da un'operazione Tripo (come generazione del modello, rigging, retargeting o segmentazione), invia un task di conversione all'API Tripo, attende il completamento di tale task e quindi restituisce il file del modello convertito.
 
+<Note>
+Tripo conserva i record delle attività sui propri server per 7 giorni (a partire dal 1° dicembre 2026). Un ID attività più vecchio non può più essere risolto, quindi rieseguire un workflow salvato dopo questo intervallo non riesce su questo nodo. Per continuare, eseguite di nuovo il nodo Tripo precedente per creare un nuovo ID attività, oppure reimportate il modello che avete già scaricato con **Tripo: Importa Modello**.
+</Note>
+
 ## Input
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |

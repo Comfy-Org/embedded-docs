@@ -2,6 +2,10 @@
 
 Questo nodo invia l'ID di un'attività completata di modello 3D Tripo all'API Tripo e verifica se quel modello può essere riggato. Attende il completamento della verifica e restituisce un risultato sì/no insieme al tipo di scheletro consigliato da Tripo per il modello.
 
+<Note>
+Tripo conserva i record delle attività sui propri server per 7 giorni (a partire dal 1° dicembre 2026). Un ID attività più vecchio non può più essere risolto, quindi rieseguire un workflow salvato dopo questo intervallo non riesce su questo nodo. Per continuare, eseguite di nuovo il nodo Tripo precedente per creare un nuovo ID attività, oppure reimportate il modello che avete già scaricato con **Tripo: Importa Modello**.
+</Note>
+
 ## Input
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |

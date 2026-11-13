@@ -2,6 +2,10 @@
 
 Tripo: Retopology prend un modèle 3D haute densité généré par un nœud Tripo précédent et le reconstruit sous forme de version basse densité avec une topologie propre. Il soumet le modèle au service de retopologie Tripo, attend la fin de la tâche, puis télécharge le modèle terminé et expose son ID de tâche pour utilisation par d'autres nœuds Tripo.
 
+<Note>
+Tripo conserve les enregistrements de tâches sur ses serveurs pendant 7 jours (à compter du 1er décembre 2026). Un ID de tâche plus ancien ne peut plus être résolu, donc relancer un workflow enregistré après ce délai échoue sur ce nœud. Pour continuer, relancez le nœud Tripo précédent pour créer un nouvel ID de tâche, ou réimportez le modèle que vous avez déjà téléchargé avec **Tripo : Importer un modèle**.
+</Note>
+
 ## Entrées
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |

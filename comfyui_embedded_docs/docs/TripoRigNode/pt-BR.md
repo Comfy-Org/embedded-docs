@@ -2,6 +2,10 @@
 
 Este nó recebe um modelo 3D Tripo existente e cria uma versão com rig dele, ou seja, o modelo recebe um esqueleto para que possa ser animado. Você fornece o ID da tarefa do modelo a receber rig, escolhe a versão do rig, o tipo de esqueleto, o estilo de nomenclatura dos ossos e o formato do arquivo de saída; o nó envia a tarefa para a Tripo, aguarda até que ela seja concluída e então retorna o resultado baixado.
 
+<Note>
+O Tripo mantém os registros de tarefas em seus servidores por 7 dias (a partir de 1º de dezembro de 2026). Um ID de tarefa mais antigo não pode mais ser resolvido, então executar novamente um fluxo de trabalho salvo depois desse prazo falha neste nó. Para continuar, execute o nó Tripo anterior outra vez para criar um novo ID de tarefa, ou importe novamente o modelo que você já baixou com **Tripo: Importar Modelo**.
+</Note>
+
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |

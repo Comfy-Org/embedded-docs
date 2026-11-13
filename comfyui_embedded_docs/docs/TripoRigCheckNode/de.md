@@ -2,6 +2,10 @@
 
 Dieser Node sendet die ID einer abgeschlossenen Tripo-3D-Modellaufgabe an die Tripo-API und prüft, ob dieses Modell geriggt werden kann. Er wartet, bis die Prüfung abgeschlossen ist, und gibt dann ein Ja/Nein-Ergebnis sowie den von Tripo empfohlenen Skeletttyp für das Modell zurück.
 
+<Note>
+Tripo speichert Aufgabenaufzeichnungen 7 Tage lang auf seinen Servern (gültig ab 1. Dezember 2026). Eine ältere Task-ID lässt sich nicht mehr auflösen, deshalb schlägt das erneute Ausführen eines gespeicherten Workflows nach Ablauf dieser Frist an diesem Node fehl. Führen Sie zum Fortfahren den früheren Tripo-Node erneut aus, um eine neue Task-ID zu erzeugen, oder importieren Sie das bereits heruntergeladene Modell mit **Tripo: Modell importieren** erneut.
+</Note>
+
 ## Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |

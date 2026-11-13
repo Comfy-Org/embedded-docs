@@ -2,6 +2,10 @@
 
 Suddivide un modello 3D in parti semanticamente significative e assegna un nome a ciascuna parte. Può segmentare un modello esistente (fornito tramite un ID attività) oppure generare prima un modello da un'immagine e poi segmentarlo. Il `segment task_id` risultante può essere usato da altri nodi Tripo, come Complete Mesh Parts, Retopology, Texture model e Convert model, allo stesso modo di un risultato di Tripo: Segment Model.
 
+<Note>
+Tripo conserva i record delle attività sui propri server per 7 giorni (a partire dal 1° dicembre 2026). Un ID attività più vecchio non può più essere risolto, quindi rieseguire un workflow salvato dopo questo intervallo non riesce su questo nodo. Per continuare, eseguite di nuovo il nodo Tripo precedente per creare un nuovo ID attività, oppure reimportate il modello che avete già scaricato con **Tripo: Importa Modello**.
+</Note>
+
 ## Input
 
 ### Input comuni

@@ -2,6 +2,10 @@
 
 Questo nodo prende un modello 3D Tripo esistente e ne crea una versione riggata, ovvero il modello riceve uno scheletro per poter essere animato. Fornisci l'ID attività del modello da riggare, scegli la versione del rig, il tipo di scheletro, lo stile di denominazione delle ossa e il formato del file di output; il nodo invia il lavoro a Tripo, attende il completamento e restituisce il risultato scaricato.
 
+<Note>
+Tripo conserva i record delle attività sui propri server per 7 giorni (a partire dal 1° dicembre 2026). Un ID attività più vecchio non può più essere risolto, quindi rieseguire un workflow salvato dopo questo intervallo non riesce su questo nodo. Per continuare, eseguite di nuovo il nodo Tripo precedente per creare un nuovo ID attività, oppure reimportate il modello che avete già scaricato con **Tripo: Importa Modello**.
+</Note>
+
 ## Input
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |

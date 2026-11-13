@@ -2,6 +2,10 @@
 
 TripoRetargetNode, mevcut bir riglenmiş 3B modele önceden ayarlanmış bir animasyon uygular. Daha önce riglenmiş bir modelin görev kimliğini alır, Tripo API'sine bir retarget isteği gönderir ve ortaya çıkan animasyonlu dosyayı indirir. Animasyonlu model GLB veya FBX olarak döndürülebilir; isteğe bağlı mesh geometrisi ve isteğe bağlı yerinde oynatma ile.
 
+<Note>
+Tripo, görev kayıtlarını sunucularında 7 gün saklar (1 Aralık 2026'dan itibaren geçerli). Bu süreden eski bir görev kimliği artık çözümlenemez, bu nedenle kaydedilmiş bir iş akışını bu süreden sonra yeniden çalıştırmak bu düğümde başarısız olur. Devam etmek için yeni bir görev kimliği oluşturmak üzere önceki Tripo düğümünü yeniden çalıştırın veya zaten indirdiğiniz modeli **Tripo: Model İçe Aktar** ile yeniden içe aktarın.
+</Note>
+
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |

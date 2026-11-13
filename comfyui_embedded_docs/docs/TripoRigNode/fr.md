@@ -2,6 +2,10 @@
 
 Ce nœud prend un modèle 3D Tripo existant et en crée une version riggée, c'est-à-dire que le modèle reçoit un squelette pour pouvoir être animé. Vous fournissez l'ID de tâche du modèle à rigger, choisissez la version de rig, le type de squelette, le style de nommage des os et le format de fichier de sortie ; le nœud envoie la tâche à Tripo, attend qu'elle se termine, puis renvoie le résultat téléchargé.
 
+<Note>
+Tripo conserve les enregistrements de tâches sur ses serveurs pendant 7 jours (à compter du 1er décembre 2026). Un ID de tâche plus ancien ne peut plus être résolu, donc relancer un workflow enregistré après ce délai échoue sur ce nœud. Pour continuer, relancez le nœud Tripo précédent pour créer un nouvel ID de tâche, ou réimportez le modèle que vous avez déjà téléchargé avec **Tripo : Importer un modèle**.
+</Note>
+
 ## Entrées
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |

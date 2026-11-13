@@ -2,6 +2,10 @@
 
 Bu düğüm, mevcut bir Tripo 3B modelini başka bir 3B dosya biçimine dönüştürür. Daha önce bir Tripo işlemiyle (model oluşturma, rigleme, yeniden hedefleme veya segmentasyon gibi) oluşturulmuş veya işlenmiş bir modelin görev kimliğini alır, Tripo API'sine bir dönüştürme görevi gönderir, bu görevin tamamlanmasını bekler ve ardından dönüştürülmüş model dosyasını döndürür.
 
+<Note>
+Tripo, görev kayıtlarını sunucularında 7 gün saklar (1 Aralık 2026'dan itibaren geçerli). Bu süreden eski bir görev kimliği artık çözümlenemez, bu nedenle kaydedilmiş bir iş akışını bu süreden sonra yeniden çalıştırmak bu düğümde başarısız olur. Devam etmek için yeni bir görev kimliği oluşturmak üzere önceki Tripo düğümünü yeniden çalıştırın veya zaten indirdiğiniz modeli **Tripo: Model İçe Aktar** ile yeniden içe aktarın.
+</Note>
+
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |

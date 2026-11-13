@@ -2,6 +2,10 @@
 
 Tripo: Image to Multiview sonucunun görünümlerini, her görünüm için ayrı bir metin talimatı kullanarak düzenler. Talimatı olmayan görünümler değişmeden kalır. Düzenlenen görüntülerin, 3B model oluşturmak için Tripo: Multiview to Model düğümüne bağlanması amaçlanmıştır; düzenlenmiş bir çoklu görünüm kümesi tekrar düzenlenemez.
 
+<Note>
+Tripo, görev kayıtlarını sunucularında 7 gün saklar (1 Aralık 2026'dan itibaren geçerli). Bu süreden eski bir görev kimliği artık çözümlenemez, bu nedenle kaydedilmiş bir iş akışını bu süreden sonra yeniden çalıştırmak bu düğümde başarısız olur. Devam etmek için yeni bir görev kimliği oluşturmak üzere önceki Tripo düğümünü yeniden çalıştırın veya zaten indirdiğiniz modeli **Tripo: Model İçe Aktar** ile yeniden içe aktarın.
+</Note>
+
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
