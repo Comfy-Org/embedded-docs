@@ -17,7 +17,7 @@ Este nó gera um vídeo a partir de um prompt de texto usando os modelos Seedanc
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt de texto para geração de vídeo. Coloque falas entre aspas duplas para orientar o diálogo gerado. | STRING | Sim | — |
-| `resolution` | Resolução do vídeo de saída. `"4k"` está disponível para todas as contas; use exatamente o valor em minúsculas `"4k"`. O modelo Seedance 2.5 Draft gera apenas em 480p; para obter 4k, renderize o vídeo final do draft com o nó ByteDance Seedance 2.5 Draft to Final Video. (padrão: `"720p"`) | COMBO | Sim | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | Resolução do vídeo de saída. `"4k"` está disponível para todas as contas; use exatamente o valor em minúsculas `"4k"`. O modelo Seedance 2.5 Draft gera apenas em 480p; para obter 4k, renderize o vídeo final do draft com o nó ByteDance Seedance 2.5 Draft to Final Video e selecione `"4k"` no campo `resolution` desse nó (padrão desse nó: `"1080p"`). (padrão: `"720p"`) | COMBO | Sim | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `ratio` | Proporção de aspecto do vídeo de saída. (padrão: `"16:9"`) | COMBO | Sim | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
 | `duration` | Duração do vídeo de saída em segundos. (padrão: 5) | INT | Sim | 4 a 30 |
 | `generate_audio` | Ativa a geração de áudio para o vídeo de saída. (padrão: True) | BOOLEAN | Sim | True / False |

@@ -17,7 +17,7 @@ Bu düğüm, ByteDance'in Seedance 2.5 veya 2.0 modellerini kullanarak bir metin
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Video oluşturma için metin istemi. Oluşturulan diyaloğu yönlendirmek için konuşulan replikleri çift tırnak içine alın. | STRING | Evet | — |
-| `resolution` | Çıktı videosunun çözünürlüğü. `"4k"` tüm hesaplar için kullanılabilir; değeri tam olarak küçük harfle `"4k"` yazın. Seedance 2.5 Draft modeli yalnızca 480p üretir; 4k almak için taslağın nihai videosunu ByteDance Seedance 2.5 Draft to Final Video düğümüyle işleyin. (varsayılan: `"720p"`) | COMBO | Evet | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | Çıktı videosunun çözünürlüğü. `"4k"` tüm hesaplar için kullanılabilir; değeri tam olarak küçük harfle `"4k"` yazın. Seedance 2.5 Draft modeli yalnızca 480p üretir; 4k almak için taslağın nihai videosunu ByteDance Seedance 2.5 Draft to Final Video düğümüyle işleyin ve o düğümün `resolution` alanında `"4k"` seçin (o düğümün varsayılanı `"1080p"`). (varsayılan: `"720p"`) | COMBO | Evet | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `ratio` | Çıktı videosunun en-boy oranı. (varsayılan: `"16:9"`) | COMBO | Evet | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
 | `duration` | Çıktı videosunun saniye cinsinden süresi. (varsayılan: 5) | INT | Evet | 4 ile 30 |
 | `generate_audio` | Çıktı videosu için ses oluşturmayı etkinleştirin. (varsayılan: True) | BOOLEAN | Evet | True / False |

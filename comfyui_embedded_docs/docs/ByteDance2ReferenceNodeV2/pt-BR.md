@@ -19,7 +19,7 @@ Estas entradas aparecem quando `model` está definido como "Seedance 2.5".
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt de texto para geração de vídeo. Coloque falas entre aspas duplas para orientar o diálogo gerado. Padrão: string vazia. | STRING | Sim | Texto multilinha |
-| `resolution` | Resolução do vídeo de saída. Padrão: 720p. `"4k"` está disponível para todas as contas; use exatamente o valor em minúsculas `"4k"`. O modelo Seedance 2.5 Draft gera apenas em 480p; para obter 4k, renderize o vídeo final do draft com o nó ByteDance Seedance 2.5 Draft to Final Video. | COMBO | Sim | "480p"<br>"720p"<br>"1080p"<br>"4k" |
+| `resolution` | Resolução do vídeo de saída. Padrão: 720p. `"4k"` está disponível para todas as contas; use exatamente o valor em minúsculas `"4k"`. O modelo Seedance 2.5 Draft gera apenas em 480p; para obter 4k, renderize o vídeo final do draft com o nó ByteDance Seedance 2.5 Draft to Final Video e selecione `"4k"` no campo `resolution` desse nó (padrão desse nó: `"1080p"`). | COMBO | Sim | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | Proporção do vídeo de saída. Padrão: 16:9. | COMBO | Sim | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | Duração do vídeo de saída em segundos (4-30). Padrão: 5. | INT | Sim | 4 a 30 |
 | `generate_audio` | Ativar geração de áudio para o vídeo de saída. Padrão: True. | BOOLEAN | Sim | true<br>false |

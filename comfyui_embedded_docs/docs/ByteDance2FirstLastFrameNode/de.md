@@ -23,7 +23,7 @@ Diese Eingaben erscheinen, wenn `Seedance 2.5` ausgewählt ist.
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Text-Prompt für die Videogenerierung. Setzen Sie gesprochene Zeilen in doppelte Anführungszeichen, um den generierten Dialog zu steuern. | STRING | Ja | - |
-| `resolution` | Auflösung des Ausgabevideos. Standard ist 720p. `"4k"` ist für alle Konten verfügbar; verwenden Sie genau den kleingeschriebenen Wert `"4k"`. Das Modell Seedance 2.5 Draft rendert nur in 480p; für 4k rendern Sie das finale Video des Drafts mit dem Node ByteDance Seedance 2.5 Draft to Final Video. | COMBO | Ja | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | Auflösung des Ausgabevideos. Standard ist 720p. `"4k"` ist für alle Konten verfügbar; verwenden Sie genau den kleingeschriebenen Wert `"4k"`. Das Modell Seedance 2.5 Draft rendert nur in 480p; für 4k rendern Sie das finale Video des Drafts mit dem Node ByteDance Seedance 2.5 Draft to Final Video und setzen dort `resolution` auf `"4k"` (Standard dieses Nodes: `"1080p"`). | COMBO | Ja | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duration` | Dauer des Ausgabevideos in Sekunden (4-30). Standard ist 5. | INT | Ja | 4 bis 30 |
 | `generate_audio` | Audiogenerierung für das Ausgabevideo aktivieren. Standard ist True. | BOOLEAN | Ja | False<br>True |
 | `output_format` | Containerformat des Ausgabevideos. Standard ist mp4. | COMBO | Ja | `"mp4"` |

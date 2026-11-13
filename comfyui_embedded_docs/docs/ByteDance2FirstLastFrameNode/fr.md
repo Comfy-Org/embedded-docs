@@ -23,7 +23,7 @@ Ces entrées apparaissent lorsque `Seedance 2.5` est sélectionné.
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `prompt` | Prompt textuel pour la génération de la vidéo. Placez les répliques parlées entre guillemets doubles pour orienter le dialogue généré. | STRING | Oui | - |
-| `resolution` | Résolution de la vidéo de sortie. La valeur par défaut est 720p. `"4k"` est disponible pour tous les comptes ; utilisez exactement la valeur en minuscules `"4k"`. Le modèle Seedance 2.5 Draft produit uniquement du 480p ; pour obtenir du 4k, effectuez le rendu final du brouillon avec le nœud ByteDance Seedance 2.5 Draft to Final Video. | COMBO | Oui | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | Résolution de la vidéo de sortie. La valeur par défaut est 720p. `"4k"` est disponible pour tous les comptes ; utilisez exactement la valeur en minuscules `"4k"`. Le modèle Seedance 2.5 Draft produit uniquement du 480p ; pour obtenir du 4k, effectuez le rendu final du brouillon avec le nœud ByteDance Seedance 2.5 Draft to Final Video et sélectionnez `"4k"` dans le champ `resolution` de ce nœud (sa valeur par défaut est `"1080p"`). | COMBO | Oui | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duration` | Durée de la vidéo de sortie en secondes (4-30). La valeur par défaut est 5. | INT | Oui | 4 à 30 |
 | `generate_audio` | Activer la génération audio pour la vidéo de sortie. La valeur par défaut est True. | BOOLEAN | Oui | False<br>True |
 | `output_format` | Format de conteneur de la vidéo de sortie. La valeur par défaut est mp4. | COMBO | Oui | `"mp4"` |
