@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.5 Draft to Final Video
 
-This node renders the final video of a Seedance 2.5 Draft at 1080p or 4k. A draft is a fast 480p preview: in a Seedance 2.5 video node (text to video, first-last-frame to video, or reference to video), set `model` to `Seedance 2.5 Draft`, run it, and connect its `draft_task_id` output here. The final keeps the draft's scene and motion, and reuses the prompt, references, duration, aspect ratio, and audio setting that produced the draft.
+This node renders the final video of a Seedance 2.5 Draft at 1080p or 4k. 4k is available to all accounts. A draft is a fast 480p preview: in a Seedance 2.5 video node (text to video, first-last-frame to video, or reference to video), set `model` to `Seedance 2.5 Draft`, run it, and connect its `draft_task_id` output here. The final keeps the draft's scene and motion, and reuses the prompt, references, duration, aspect ratio, and audio setting that produced the draft.
 
 ## Inputs
 
@@ -8,7 +8,7 @@ This node renders the final video of a Seedance 2.5 Draft at 1080p or 4k. A draf
 | --- | --- | --- | --- | --- |
 | `draft_task_id` | The `draft_task_id` output of a Seedance 2.5 node run with the Seedance 2.5 Draft model, or a pasted draft task ID. When you rerun the producer node, set its seed control to fixed, otherwise the next run generates a new draft instead of reusing the one you reviewed. | STRING | Yes | - |
 | `watermark` | Whether to add a watermark to the video. Default is False. This is an advanced setting. | BOOLEAN | No | True / False |
-| `resolution` | Resolution of the final video. Default: `"1080p"`. | COMBO | No | `"1080p"`<br>`"4k"` |
+| `resolution` | Resolution of the final video. `"4k"` is available to all accounts; use the exact lowercase value `"4k"`. Default: `"1080p"`. | COMBO | No | `"1080p"`<br>`"4k"` |
 
 ## Outputs
 

@@ -19,7 +19,7 @@ ByteDance Seedance 2.5 Reference to Video 會使用 ByteDance Seedance 模型（
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | 用於影片生成的文字提示。將台詞放入雙引號中，可引導生成的對話。預設值：空字串。 | STRING | 是 | 多行文字 |
-| `resolution` | 輸出影片的解析度。預設值：720p。 | COMBO | 是 | "480p"<br>"720p"<br>"1080p"<br>"4k" |
+| `resolution` | 輸出影片的解析度。預設值：720p。 `"4k"` 開放所有帳戶使用；值必須是小寫的 `"4k"`。 Seedance 2.5 Draft 模型僅輸出 480p；如需 4k，請使用 ByteDance Seedance 2.5 Draft to Final Video 節點渲染草稿的最終影片，並在該節點的 `resolution` 中選擇 `"4k"`（該節點預設值為 `"1080p"`）。 | COMBO | 是 | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | 輸出影片的長寬比。預設值：16:9。 | COMBO | 是 | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | 輸出影片的持續時間（秒）（4-30）。預設值：5。 | INT | 是 | 4 至 30 |
 | `generate_audio` | 啟用輸出影片的音訊生成。預設值：True。 | BOOLEAN | 是 | true<br>false |
