@@ -2,6 +2,10 @@
 
 Dieser Node fügt einem vorhandenen 3D-Modell aus einem Tripo-Workflow Texturen hinzu, das über eine Task-ID aus einem vorherigen Generierungsschritt identifiziert wird. Er kann PBR-Materialkarten oder eine einfarbige Textur erzeugen; das Ergebnis kann durch einen Textprompt, ein Stilbild oder Referenzbilder gesteuert werden.
 
+<Note>
+Tripo speichert Aufgabenaufzeichnungen 7 Tage lang auf seinen Servern (gültig ab 1. Dezember 2026). Eine ältere Task-ID lässt sich nicht mehr auflösen, deshalb schlägt das erneute Ausführen eines gespeicherten Workflows nach Ablauf dieser Frist an diesem Node fehl. Führen Sie zum Fortfahren den früheren Tripo-Node erneut aus, um eine neue Task-ID zu erzeugen, oder importieren Sie das bereits heruntergeladene Modell mit **Tripo: Modell importieren** erneut.
+</Note>
+
 ## Eingaben
 
 ### Gemeinsame Eingaben

@@ -2,6 +2,10 @@
 
 Vervollständigt die Teile eines segmentierten 3D-Modells und repariert fehlende oder beschädigte Bereiche des Meshes. Es übernimmt die Task-ID eines Tripo-Mesh-Segmentierungsergebnisses, fordert den Vervollständigungsjob bei Tripo an und wartet, bis er abgeschlossen ist. Optional können Sie die Arbeit auf bestimmte Teilnamen beschränken. Das vervollständigte Modell wird als GLB-Datei zurückgegeben.
 
+<Note>
+Tripo speichert Aufgabenaufzeichnungen 7 Tage lang auf seinen Servern (gültig ab 1. Dezember 2026). Eine ältere Task-ID lässt sich nicht mehr auflösen, deshalb schlägt das erneute Ausführen eines gespeicherten Workflows nach Ablauf dieser Frist an diesem Node fehl. Führen Sie zum Fortfahren den früheren Tripo-Node erneut aus, um eine neue Task-ID zu erzeugen, oder importieren Sie das bereits heruntergeladene Modell mit **Tripo: Modell importieren** erneut.
+</Note>
+
 ## Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |

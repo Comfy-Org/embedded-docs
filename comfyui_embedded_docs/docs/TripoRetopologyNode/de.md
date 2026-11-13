@@ -2,6 +2,10 @@
 
 Tripo: Retopology nimmt ein hochauflösendes 3D-Modell, das von einem früheren Tripo-Node generiert wurde, und erstellt daraus eine niedrig aufgelöste Version mit sauberer Topologie. Es übermittelt das Modell an den Tripo-Retopology-Dienst, wartet auf den Abschluss der Aufgabe, lädt anschließend das fertige Modell herunter und stellt dessen Task-ID für die Verwendung durch andere Tripo-Nodes bereit.
 
+<Note>
+Tripo speichert Aufgabenaufzeichnungen 7 Tage lang auf seinen Servern (gültig ab 1. Dezember 2026). Eine ältere Task-ID lässt sich nicht mehr auflösen, deshalb schlägt das erneute Ausführen eines gespeicherten Workflows nach Ablauf dieser Frist an diesem Node fehl. Führen Sie zum Fortfahren den früheren Tripo-Node erneut aus, um eine neue Task-ID zu erzeugen, oder importieren Sie das bereits heruntergeladene Modell mit **Tripo: Modell importieren** erneut.
+</Note>
+
 ## Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |

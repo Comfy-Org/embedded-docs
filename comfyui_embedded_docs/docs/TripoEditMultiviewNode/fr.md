@@ -2,6 +2,10 @@
 
 Modifie les vues d'un résultat Tripo: Image to Multiview à l'aide d'une instruction textuelle distincte pour chaque vue. Les vues sans instruction restent inchangées. Les images modifiées sont destinées à être connectées à Tripo: Multiview to Model pour créer un modèle 3D ; un ensemble multivue modifié ne peut pas être modifié une seconde fois.
 
+<Note>
+Tripo conserve les enregistrements de tâches sur ses serveurs pendant 7 jours (à compter du 1er décembre 2026). Un ID de tâche plus ancien ne peut plus être résolu, donc relancer un workflow enregistré après ce délai échoue sur ce nœud. Pour continuer, relancez le nœud Tripo précédent pour créer un nouvel ID de tâche, ou réimportez le modèle que vous avez déjà téléchargé avec **Tripo : Importer un modèle**.
+</Note>
+
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |

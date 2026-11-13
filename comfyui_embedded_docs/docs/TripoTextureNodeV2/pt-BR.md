@@ -2,6 +2,10 @@
 
 Este nó adiciona texturas a um modelo 3D existente de um fluxo de trabalho Tripo, identificado por um ID de tarefa de uma etapa de geração anterior. Ele pode produzir mapas de material PBR ou uma textura de cor sólida, e o resultado pode ser orientado por um prompt de texto, uma imagem de estilo ou imagens de referência.
 
+<Note>
+O Tripo mantém os registros de tarefas em seus servidores por 7 dias (a partir de 1º de dezembro de 2026). Um ID de tarefa mais antigo não pode mais ser resolvido, então executar novamente um fluxo de trabalho salvo depois desse prazo falha neste nó. Para continuar, execute o nó Tripo anterior outra vez para criar um novo ID de tarefa, ou importe novamente o modelo que você já baixou com **Tripo: Importar Modelo**.
+</Note>
+
 ## Entradas
 
 ### Entradas comuns

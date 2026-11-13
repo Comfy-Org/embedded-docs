@@ -2,6 +2,10 @@
 
 Bu düğüm, tamamlanmış bir Tripo 3D model görevinin kimliğini Tripo API'sine gönderir ve bu modelin riglenip riglenemeyeceğini kontrol eder. Kontrolün tamamlanmasını bekler ve ardından evet/hayır sonucunun yanı sıra Tripo'nun model için önerdiği iskelet türünü döndürür.
 
+<Note>
+Tripo, görev kayıtlarını sunucularında 7 gün saklar (1 Aralık 2026'dan itibaren geçerli). Bu süreden eski bir görev kimliği artık çözümlenemez, bu nedenle kaydedilmiş bir iş akışını bu süreden sonra yeniden çalıştırmak bu düğümde başarısız olur. Devam etmek için yeni bir görev kimliği oluşturmak üzere önceki Tripo düğümünü yeniden çalıştırın veya zaten indirdiğiniz modeli **Tripo: Model İçe Aktar** ile yeniden içe aktarın.
+</Note>
+
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |

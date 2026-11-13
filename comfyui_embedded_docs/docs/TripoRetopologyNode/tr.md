@@ -2,6 +2,10 @@
 
 Tripo: Retopology, daha önceki bir Tripo düğümü tarafından oluşturulan yüksek poligonlu bir 3B modeli alır ve temiz topolojiye sahip düşük poligonlu bir sürüm olarak yeniden oluşturur. Modeli Tripo retopoloji hizmetine gönderir, görevin tamamlanmasını bekler, ardından tamamlanan modeli indirir ve görev kimliğini diğer Tripo düğümleri tarafından kullanılmak üzere kullanıma sunar.
 
+<Note>
+Tripo, görev kayıtlarını sunucularında 7 gün saklar (1 Aralık 2026'dan itibaren geçerli). Bu süreden eski bir görev kimliği artık çözümlenemez, bu nedenle kaydedilmiş bir iş akışını bu süreden sonra yeniden çalıştırmak bu düğümde başarısız olur. Devam etmek için yeni bir görev kimliği oluşturmak üzere önceki Tripo düğümünü yeniden çalıştırın veya zaten indirdiğiniz modeli **Tripo: Model İçe Aktar** ile yeniden içe aktarın.
+</Note>
+
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |

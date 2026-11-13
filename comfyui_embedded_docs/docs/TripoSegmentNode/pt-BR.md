@@ -2,6 +2,10 @@
 
 Este nó divide um modelo 3D em partes individuais. Ele envia o modelo para o serviço de segmentação Tripo, aguarda a conclusão da tarefa e retorna o modelo segmentado no formato GLB, juntamente com uma lista de nomes de partes separados por vírgula. Esses nomes de partes alimentam etapas posteriores, como Tripo: Complete Mesh Parts, Tripo: Retopology e Tripo: Convert model.
 
+<Note>
+O Tripo mantém os registros de tarefas em seus servidores por 7 dias (a partir de 1º de dezembro de 2026). Um ID de tarefa mais antigo não pode mais ser resolvido, então executar novamente um fluxo de trabalho salvo depois desse prazo falha neste nó. Para continuar, execute o nó Tripo anterior outra vez para criar um novo ID de tarefa, ou importe novamente o modelo que você já baixou com **Tripo: Importar Modelo**.
+</Note>
+
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |

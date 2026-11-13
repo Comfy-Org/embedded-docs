@@ -2,6 +2,10 @@
 
 Bu düğüm, mevcut bir Tripo 3D modelini alır ve onun iskeletli bir sürümünü oluşturur; yani model, canlandırılabilmesi için bir iskelete kavuşur. İskeletlendirilecek modelin görev kimliğini sağlarsınız, rig sürümünü, iskelet türünü, kemik adlandırma stilini ve çıktı dosyası biçimini seçersiniz; düğüm işi Tripo'ya gönderir, tamamlanana kadar bekler ve ardından indirilen sonucu döndürür.
 
+<Note>
+Tripo, görev kayıtlarını sunucularında 7 gün saklar (1 Aralık 2026'dan itibaren geçerli). Bu süreden eski bir görev kimliği artık çözümlenemez, bu nedenle kaydedilmiş bir iş akışını bu süreden sonra yeniden çalıştırmak bu düğümde başarısız olur. Devam etmek için yeni bir görev kimliği oluşturmak üzere önceki Tripo düğümünü yeniden çalıştırın veya zaten indirdiğiniz modeli **Tripo: Model İçe Aktar** ile yeniden içe aktarın.
+</Note>
+
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |

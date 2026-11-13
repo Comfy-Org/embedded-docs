@@ -2,6 +2,10 @@
 
 Bu düğüm, Tripo iş akışındaki mevcut bir 3B modele, önceki bir oluşturma adımından alınan görev kimliğiyle tanımlanan doku ekler. PBR malzeme haritaları veya düz renkli doku üretebilir; sonuç bir metin istemi, bir stil görseli veya referans görsellerle yönlendirilebilir.
 
+<Note>
+Tripo, görev kayıtlarını sunucularında 7 gün saklar (1 Aralık 2026'dan itibaren geçerli). Bu süreden eski bir görev kimliği artık çözümlenemez, bu nedenle kaydedilmiş bir iş akışını bu süreden sonra yeniden çalıştırmak bu düğümde başarısız olur. Devam etmek için yeni bir görev kimliği oluşturmak üzere önceki Tripo düğümünü yeniden çalıştırın veya zaten indirdiğiniz modeli **Tripo: Model İçe Aktar** ile yeniden içe aktarın.
+</Note>
+
 ## Girdiler
 
 ### Ortak Girdiler

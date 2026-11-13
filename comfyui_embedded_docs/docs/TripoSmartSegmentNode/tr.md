@@ -2,6 +2,10 @@
 
 Bir 3B modeli anlamsal olarak anlamlı parçalara böler ve her parçaya bir ad verir. Mevcut bir modeli (bir görev kimliği aracılığıyla sağlanan) segmentlere ayırabilir veya önce bir görüntüden model oluşturup ardından onu segmentlere ayırabilir. Ortaya çıkan `segment task_id`, Complete Mesh Parts, Retopology, Texture model ve Convert model gibi diğer Tripo düğümleri tarafından bir Tripo: Segment Model sonucuyla aynı şekilde kullanılabilir.
 
+<Note>
+Tripo, görev kayıtlarını sunucularında 7 gün saklar (1 Aralık 2026'dan itibaren geçerli). Bu süreden eski bir görev kimliği artık çözümlenemez, bu nedenle kaydedilmiş bir iş akışını bu süreden sonra yeniden çalıştırmak bu düğümde başarısız olur. Devam etmek için yeni bir görev kimliği oluşturmak üzere önceki Tripo düğümünü yeniden çalıştırın veya zaten indirdiğiniz modeli **Tripo: Model İçe Aktar** ile yeniden içe aktarın.
+</Note>
+
 ## Girdiler
 
 ### Ortak Girdiler

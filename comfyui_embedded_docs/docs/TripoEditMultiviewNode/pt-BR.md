@@ -2,6 +2,10 @@
 
 Edita as vistas de um resultado do Tripo: Image to Multiview usando uma instrução de texto separada para cada vista. Vistas sem instrução permanecem inalteradas. As imagens editadas devem ser conectadas ao Tripo: Multiview to Model para criar um modelo 3D; um conjunto de vistas múltiplas editado não pode ser editado novamente.
 
+<Note>
+O Tripo mantém os registros de tarefas em seus servidores por 7 dias (a partir de 1º de dezembro de 2026). Um ID de tarefa mais antigo não pode mais ser resolvido, então executar novamente um fluxo de trabalho salvo depois desse prazo falha neste nó. Para continuar, execute o nó Tripo anterior outra vez para criar um novo ID de tarefa, ou importe novamente o modelo que você já baixou com **Tripo: Importar Modelo**.
+</Note>
+
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |

@@ -2,6 +2,10 @@
 
 Dieser Node zerlegt ein 3D-Modell in einzelne Teile. Er sendet das Modell an den Tripo-Segmentierungsdienst, wartet, bis der Auftrag abgeschlossen ist, und gibt das segmentierte Modell im GLB-Format zusammen mit einer kommagetrennten Liste von Teilnamen zurück. Diese Teilnamen speisen nachgelagerte Schritte wie Tripo: Complete Mesh Parts, Tripo: Retopology und Tripo: Convert model.
 
+<Note>
+Tripo speichert Aufgabenaufzeichnungen 7 Tage lang auf seinen Servern (gültig ab 1. Dezember 2026). Eine ältere Task-ID lässt sich nicht mehr auflösen, deshalb schlägt das erneute Ausführen eines gespeicherten Workflows nach Ablauf dieser Frist an diesem Node fehl. Führen Sie zum Fortfahren den früheren Tripo-Node erneut aus, um eine neue Task-ID zu erzeugen, oder importieren Sie das bereits heruntergeladene Modell mit **Tripo: Modell importieren** erneut.
+</Note>
+
 ## Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |

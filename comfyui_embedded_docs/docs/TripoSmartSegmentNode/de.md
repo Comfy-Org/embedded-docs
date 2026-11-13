@@ -2,6 +2,10 @@
 
 Zerlegt ein 3D-Modell in semantisch sinnvolle Teile und gibt jedem Teil einen Namen. Es kann entweder ein vorhandenes Modell segmentieren (das über eine Task-ID bereitgestellt wird) oder zuerst ein Modell aus einem Bild generieren und es dann segmentieren. Die resultierende `segment task_id` kann von anderen Tripo-Nodes wie Complete Mesh Parts, Retopology, Texture model und Convert model auf dieselbe Weise verwendet werden wie ein Tripo: Segment Model-Ergebnis.
 
+<Note>
+Tripo speichert Aufgabenaufzeichnungen 7 Tage lang auf seinen Servern (gültig ab 1. Dezember 2026). Eine ältere Task-ID lässt sich nicht mehr auflösen, deshalb schlägt das erneute Ausführen eines gespeicherten Workflows nach Ablauf dieser Frist an diesem Node fehl. Führen Sie zum Fortfahren den früheren Tripo-Node erneut aus, um eine neue Task-ID zu erzeugen, oder importieren Sie das bereits heruntergeladene Modell mit **Tripo: Modell importieren** erneut.
+</Note>
+
 ## Eingaben
 
 ### Gemeinsame Eingaben

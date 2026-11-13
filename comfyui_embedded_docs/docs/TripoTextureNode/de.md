@@ -2,6 +2,10 @@
 
 Der Node „Tripo: Texture model (Legacy)“ fügt einem vorhandenen Tripo-3D-Modell über die Tripo-API Texturen hinzu. Er verwendet die Task-ID eines von einem anderen Tripo-Node erstellten Modells und gibt nach Abschluss des Texturierungsjobs ein texturiertes GLB- oder FBX-Modell zurück. Sie können die Material-Maps, die Texturqualität, die Ausrichtung und den Seed steuern und die Texturen mit einem Text-Prompt, einem Stilbild oder Referenzbildern lenken. Dieser Node ist eine Legacy-Version des Texturwerkzeugs.
 
+<Note>
+Tripo speichert Aufgabenaufzeichnungen 7 Tage lang auf seinen Servern (gültig ab 1. Dezember 2026). Eine ältere Task-ID lässt sich nicht mehr auflösen, deshalb schlägt das erneute Ausführen eines gespeicherten Workflows nach Ablauf dieser Frist an diesem Node fehl. Führen Sie zum Fortfahren den früheren Tripo-Node erneut aus, um eine neue Task-ID zu erzeugen, oder importieren Sie das bereits heruntergeladene Modell mit **Tripo: Modell importieren** erneut.
+</Note>
+
 ## Eingaben
 
 ### Gemeinsame Eingaben

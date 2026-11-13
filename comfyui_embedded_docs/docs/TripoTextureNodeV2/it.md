@@ -2,6 +2,10 @@
 
 Questo nodo aggiunge texture a un modello 3D esistente di un flusso di lavoro Tripo, identificato da un ID attività di un passaggio di generazione precedente. Può produrre mappe materiale PBR o una texture a tinta unita, e il risultato può essere guidato da un prompt testuale, un'immagine di stile o immagini di riferimento.
 
+<Note>
+Tripo conserva i record delle attività sui propri server per 7 giorni (a partire dal 1° dicembre 2026). Un ID attività più vecchio non può più essere risolto, quindi rieseguire un workflow salvato dopo questo intervallo non riesce su questo nodo. Per continuare, eseguite di nuovo il nodo Tripo precedente per creare un nuovo ID attività, oppure reimportate il modello che avete già scaricato con **Tripo: Importa Modello**.
+</Note>
+
 ## Input
 
 ### Input comuni

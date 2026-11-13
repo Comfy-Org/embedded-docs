@@ -2,6 +2,10 @@
 
 Complète les parties d’un modèle 3D segmenté et répare les régions manquantes ou endommagées du maillage. Il prend l’ID de tâche d’un résultat de segmentation de maillage Tripo, demande la tâche de complétion à Tripo et attend qu’elle se termine. Vous pouvez éventuellement limiter le travail à des noms de parties spécifiques. Le modèle complété est renvoyé sous forme de fichier GLB.
 
+<Note>
+Tripo conserve les enregistrements de tâches sur ses serveurs pendant 7 jours (à compter du 1er décembre 2026). Un ID de tâche plus ancien ne peut plus être résolu, donc relancer un workflow enregistré après ce délai échoue sur ce nœud. Pour continuer, relancez le nœud Tripo précédent pour créer un nouvel ID de tâche, ou réimportez le modèle que vous avez déjà téléchargé avec **Tripo : Importer un modèle**.
+</Note>
+
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |

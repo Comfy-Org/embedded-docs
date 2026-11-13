@@ -2,6 +2,10 @@
 
 Modifica le viste di un risultato Tripo: Image to Multiview utilizzando un'istruzione testuale separata per ciascuna vista. Le viste senza un'istruzione rimangono invariate. Le immagini modificate sono pensate per essere collegate a Tripo: Multiview to Model per creare un modello 3D; un set multiview modificato non può essere modificato di nuovo.
 
+<Note>
+Tripo conserva i record delle attività sui propri server per 7 giorni (a partire dal 1° dicembre 2026). Un ID attività più vecchio non può più essere risolto, quindi rieseguire un workflow salvato dopo questo intervallo non riesce su questo nodo. Per continuare, eseguite di nuovo il nodo Tripo precedente per creare un nuovo ID attività, oppure reimportate il modello che avete già scaricato con **Tripo: Importa Modello**.
+</Note>
+
 ## Input
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |

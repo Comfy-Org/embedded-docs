@@ -2,6 +2,10 @@
 
 Ce nœud envoie l'ID d'une tâche de modèle 3D Tripo terminée à l'API Tripo et vérifie si ce modèle peut être riggé. Il attend la fin de la vérification, puis renvoie un résultat oui/non ainsi que le type de squelette recommandé par Tripo pour le modèle.
 
+<Note>
+Tripo conserve les enregistrements de tâches sur ses serveurs pendant 7 jours (à compter du 1er décembre 2026). Un ID de tâche plus ancien ne peut plus être résolu, donc relancer un workflow enregistré après ce délai échoue sur ce nœud. Pour continuer, relancez le nœud Tripo précédent pour créer un nouvel ID de tâche, ou réimportez le modèle que vous avez déjà téléchargé avec **Tripo : Importer un modèle**.
+</Note>
+
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |

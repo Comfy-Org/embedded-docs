@@ -2,6 +2,10 @@
 
 Tripo: Retopology prende un modello 3D ad alta poligonazione generato da un nodo Tripo precedente e lo ricostruisce come versione a bassa poligonazione con topologia pulita. Invia il modello al servizio di retopologia Tripo, attende il completamento dell'attività, quindi scarica il modello finito ed espone il suo ID attività per l'uso da parte di altri nodi Tripo.
 
+<Note>
+Tripo conserva i record delle attività sui propri server per 7 giorni (a partire dal 1° dicembre 2026). Un ID attività più vecchio non può più essere risolto, quindi rieseguire un workflow salvato dopo questo intervallo non riesce su questo nodo. Per continuare, eseguite di nuovo il nodo Tripo precedente per creare un nuovo ID attività, oppure reimportate il modello che avete già scaricato con **Tripo: Importa Modello**.
+</Note>
+
 ## Input
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
