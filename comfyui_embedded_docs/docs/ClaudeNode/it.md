@@ -10,18 +10,18 @@ Gli input sono raggruppati in impostazioni comuni, impostazioni specifiche del m
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello Claude utilizzato per generare la risposta. Selezionando un modello vengono mostrate di seguito le impostazioni specifiche del modello. | DYNAMIC_COMBO | Sì | `"Opus 5.5"`<br>`"Opus 5"`<br>`"Opus 4.8"`<br>`"Fable 5.1"`<br>`"Fable 5"`<br>`"Sonnet 5.5"`<br>`"Sonnet 5"`<br>`"Opus 4.7"`<br>`"Opus 4.6"`<br>`"Sonnet 4.6"`<br>`"Sonnet 4.5"`<br>`"Haiku 4.5"` |
+| `model` | Il modello Claude utilizzato per generare la risposta. Selezionando un modello vengono mostrate di seguito le impostazioni specifiche del modello. | DYNAMIC_COMBO | Sì | `"Opus 5.5"`<br>`"Opus 5"`<br>`"Opus 4.8"`<br>`"Fable 5.2"`<br>`"Fable 5.1"`<br>`"Fable 5"`<br>`"Sonnet 5.5"`<br>`"Sonnet 5"`<br>`"Opus 4.7"`<br>`"Opus 4.6"`<br>`"Sonnet 4.6"`<br>`"Sonnet 4.5"`<br>`"Haiku 4.5"` |
 | `prompt` | Input testuale per il modello. (predefinito: stringa vuota) | STRING | Sì | N/D |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: 0) | INT | Sì | da 0 a 2147483647 |
 | `system_prompt` | Istruzioni di base che determinano il comportamento del modello. (predefinito: stringa vuota) | STRING | No | N/D |
 
-### Input di Opus 5.5, Opus 5, Fable 5.1 e Fable 5
+### Input di Opus 5.5, Opus 5, Fable 5.2, Fable 5.1 e Fable 5
 
-Questi quattro modelli condividono le stesse impostazioni. Non espongono un'impostazione della temperatura e il ragionamento è sempre abilitato.
+Questi cinque modelli condividono le stesse impostazioni. Non espongono un'impostazione della temperatura e il ragionamento è sempre abilitato.
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `max_tokens` | Numero massimo di token da generare (include i token di ragionamento quando abilitati). (predefinito: 32768) | INT | Sì | da 1024 a 64000 (Opus 5.5)<br>da 4096 a 64000 (Opus 5, Fable 5.1, Fable 5) |
+| `max_tokens` | Numero massimo di token da generare (include i token di ragionamento quando abilitati). (predefinito: 32768) | INT | Sì | da 1024 a 64000 (Opus 5.5)<br>da 8192 a 64000 (Fable 5.2)<br>da 4096 a 64000 (Opus 5, Fable 5.1, Fable 5) |
 | `reasoning_effort` | Livello di impegno del pensiero esteso. Il ragionamento è sempre abilitato per questo modello. (predefinito: `"high"`) | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 
 ### Input di Opus 4.8, Sonnet 5.5 e Sonnet 5
@@ -64,9 +64,9 @@ Questo modello non espone un'impostazione `reasoning_effort`.
 
 - **Limite immagini:** È possibile fornire un massimo di 20 immagini per richiesta. Collegare più di 20 immagini genera un errore.
 - **Prompt obbligatorio:** Il prompt deve contenere almeno un carattere non di spaziatura. Un prompt vuoto genera un errore di convalida.
-- **Gestione della temperatura:** Quando il pensiero è abilitato, l'API Anthropic richiede che la temperatura non sia impostata (il valore predefinito è 1.0). Opus 5.5, Opus 5, Opus 4.8, Fable 5.1, Fable 5, Sonnet 5.5 e Sonnet 5 non espongono un'impostazione della temperatura. Opus 4.7 ignora `temperature` e qualsiasi modello con `reasoning_effort` impostato su un valore diverso da `"off"` la ignora a sua volta.
-- **Comportamento di ragionamento/pensiero:** L'impostazione `reasoning_effort` controlla se il pensiero è abilitato. Opus 5.5, Opus 5, Fable 5.1 e Fable 5 hanno sempre il ragionamento abilitato. Haiku 4.5 non supporta il ragionamento. Quando il pensiero è abilitato, il nodo usa la modalità di pensiero appropriata per il modello selezionato, adattiva o basata su budget. In modalità budget, il budget di token di ragionamento viene limitato per lasciare almeno 1024 token alla risposta effettiva. Quando `reasoning_effort` è `"off"` su Sonnet 5.5, la richiesta usa il pensiero `between_tools` invece del pensiero disabilitato, quindi la risposta continua a non contenere ragionamento.
-- **Minimo di `max_tokens`:** `max_tokens` accetta valori a partire da 1024 su Opus 5.5 e Sonnet 5.5, e da 4096 su tutti gli altri modelli.
+- **Gestione della temperatura:** Quando il pensiero è abilitato, l'API Anthropic richiede che la temperatura non sia impostata (il valore predefinito è 1.0). Opus 5.5, Opus 5, Opus 4.8, Fable 5.2, Fable 5.1, Fable 5, Sonnet 5.5 e Sonnet 5 non espongono un'impostazione della temperatura. Opus 4.7 ignora `temperature` e qualsiasi modello con `reasoning_effort` impostato su un valore diverso da `"off"` la ignora a sua volta.
+- **Comportamento di ragionamento/pensiero:** L'impostazione `reasoning_effort` controlla se il pensiero è abilitato. Opus 5.5, Opus 5, Fable 5.2, Fable 5.1 e Fable 5 hanno sempre il ragionamento abilitato. Haiku 4.5 non supporta il ragionamento. Quando il pensiero è abilitato, il nodo usa la modalità di pensiero appropriata per il modello selezionato, adattiva o basata su budget. In modalità budget, il budget di token di ragionamento viene limitato per lasciare almeno 1024 token alla risposta effettiva. Quando `reasoning_effort` è `"off"` su Sonnet 5.5, la richiesta usa il pensiero `between_tools` invece del pensiero disabilitato, quindi la risposta continua a non contenere ragionamento.
+- **Minimo di `max_tokens`:** `max_tokens` accetta valori a partire da 1024 su Opus 5.5 e Sonnet 5.5, da 8192 su Fable 5.2 e da 4096 su tutti gli altri modelli.
 - **Rifiuto per sicurezza:** Se Claude rifiuta di rispondere alla richiesta per motivi di sicurezza, il nodo genera un errore che invita a riformulare il prompt o a provare un modello diverso.
 - **Testo di output:** I blocchi di pensiero e ragionamento non sono inclusi nell'output; viene restituito solo il testo generato.
 
@@ -79,4 +79,4 @@ Questo modello non espone un'impostazione `reasoning_effort`.
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClaudeNode/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `35b737da0f4c3a9da72910bf2053b18ae6a5c60989dc9607b61037623bc94e38`
+**Source fingerprint (SHA-256):** `4d4fd50c87fe6b532ab32779d51f82d2855c5d5e56026204b284c34ca9d1b2ea`
