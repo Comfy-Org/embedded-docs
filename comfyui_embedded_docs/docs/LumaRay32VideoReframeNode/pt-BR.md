@@ -1,12 +1,12 @@
 # LumaRay32VideoReframeNode
 
-Este nó altera a proporção de aspecto de um vídeo existente usando o Luma Ray 3.2, que preenche as áreas recém-expostas da tela com conteúdo gerado. O vídeo de origem pode ter até 30 segundos de duração, e a cobrança é por segundo de saída.
+Este nó altera a proporção de aspecto de um vídeo existente usando o Luma Ray 3.2, que preenche as áreas recém-expostas da tela com conteúdo gerado. O vídeo de origem pode ter até 10 segundos de duração, e a cobrança é por segundo de saída.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `vídeo` | Vídeo de origem para reenquadrar. Até 30 segundos. | VIDEO | Sim | - |
+| `vídeo` | Vídeo de origem para reenquadrar. Até 10 segundos. | VIDEO | Sim | - |
 | `prompt` | Descreve como as áreas recém-expostas da tela devem ser preenchidas. | STRING | Sim | - |
 | `proporção` | A proporção de aspecto desejada para o vídeo reenquadrado (padrão: "16:9"). | STRING | Sim | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4"<br>"21:9" |
 | `resolução` | A resolução de saída do vídeo reenquadrado (padrão: "720p"). | STRING | Sim | "360p"<br>"540p"<br>"720p"<br>"1080p" |
@@ -24,4 +24,4 @@ Este nó altera a proporção de aspecto de um vídeo existente usando o Luma Ra
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32VideoReframeNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `d35ff5b63a850e4e44a40857188918ab5cde00b9159e3720a189a81807cfa7cb`
+**Source fingerprint (SHA-256):** `e265f3d5245fb3d56778e4e0e72be7bd05f9a1b5dcb37b71cefe6386b4ba934b`

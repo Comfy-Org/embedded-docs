@@ -10,18 +10,18 @@ As entradas são agrupadas em configurações comuns, configurações específic
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `modelo` | O modelo Claude usado para gerar a resposta. Selecionar um modelo revela as configurações específicas do modelo abaixo. | DYNAMIC_COMBO | Sim | `"Opus 5.5"`<br>`"Opus 5"`<br>`"Opus 4.8"`<br>`"Fable 5.1"`<br>`"Fable 5"`<br>`"Sonnet 5.5"`<br>`"Sonnet 5"`<br>`"Opus 4.7"`<br>`"Opus 4.6"`<br>`"Sonnet 4.6"`<br>`"Sonnet 4.5"`<br>`"Haiku 4.5"` |
+| `modelo` | O modelo Claude usado para gerar a resposta. Selecionar um modelo revela as configurações específicas do modelo abaixo. | DYNAMIC_COMBO | Sim | `"Opus 5.5"`<br>`"Opus 5"`<br>`"Opus 4.8"`<br>`"Fable 5.2"`<br>`"Fable 5.1"`<br>`"Fable 5"`<br>`"Sonnet 5.5"`<br>`"Sonnet 5"`<br>`"Opus 4.7"`<br>`"Opus 4.6"`<br>`"Sonnet 4.6"`<br>`"Sonnet 4.5"`<br>`"Haiku 4.5"` |
 | `prompt` | Entrada de texto para o modelo. (padrão: string vazia) | STRING | Sim | N/A |
 | `seed` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed. (padrão: 0) | INT | Sim | 0 a 2147483647 |
 | `system_prompt` | Instruções fundamentais que determinam o comportamento do modelo. (padrão: string vazia) | STRING | Não | N/A |
 
-### Entradas do Opus 5.5, Opus 5, Fable 5.1 e Fable 5
+### Entradas do Opus 5.5, Opus 5, Fable 5.2, Fable 5.1 e Fable 5
 
-Esses quatro modelos compartilham as mesmas configurações. Eles não expõem uma configuração de temperatura e o raciocínio está sempre habilitado.
+Esses cinco modelos compartilham as mesmas configurações. Eles não expõem uma configuração de temperatura e o raciocínio está sempre habilitado.
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `max_tokens` | Número máximo de tokens a gerar (inclui tokens de raciocínio quando habilitado). (padrão: 32768) | INT | Sim | 1024 a 64000 (Opus 5.5)<br>4096 a 64000 (Opus 5, Fable 5.1, Fable 5) |
+| `max_tokens` | Número máximo de tokens a gerar (inclui tokens de raciocínio quando habilitado). (padrão: 32768) | INT | Sim | 1024 a 64000 (Opus 5.5)<br>8192 a 64000 (Fable 5.2)<br>4096 a 64000 (Opus 5, Fable 5.1, Fable 5) |
 | `reasoning_effort` | Esforço de pensamento estendido. O raciocínio está sempre habilitado para este modelo. (padrão: "high") | COMBO | Sim | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 
 ### Entradas do Opus 4.8, Sonnet 5.5 e Sonnet 5
@@ -64,9 +64,9 @@ Este modelo não expõe uma configuração `reasoning_effort`.
 
 - **Limite de imagens:** No máximo 20 imagens podem ser fornecidas por requisição. Conectar mais de 20 imagens gera um erro.
 - **Prompt obrigatório:** O prompt deve conter pelo menos um caractere que não seja espaço em branco. Um prompt vazio gera um erro de validação.
-- **Tratamento da temperatura:** Quando o pensamento está habilitado, a API da Anthropic exige que a temperatura não seja definida (o padrão é 1.0). Opus 5.5, Opus 5, Opus 4.8, Fable 5.1, Fable 5, Sonnet 5.5 e Sonnet 5 não expõem uma configuração de temperatura. Opus 4.7 ignora `temperature`, e qualquer modelo com `reasoning_effort` definido como algo diferente de `"off"` também a ignora.
-- **Comportamento de raciocínio/pensamento:** A configuração `reasoning_effort` controla se o pensamento está habilitado. Opus 5.5, Opus 5, Fable 5.1 e Fable 5 sempre têm o raciocínio habilitado. Haiku 4.5 não suporta raciocínio. Quando o pensamento está habilitado, o nó usa o modo de pensamento apropriado para o modelo selecionado, seja adaptativo ou baseado em orçamento. No modo de orçamento, o orçamento de tokens de raciocínio é limitado para deixar pelo menos 1024 tokens para a resposta real. Quando `reasoning_effort` é `"off"` no Sonnet 5.5, a requisição usa o pensamento `between_tools` em vez do pensamento desabilitado, então a resposta ainda não contém raciocínio.
-- **Mínimo de max tokens:** `max_tokens` aceita valores a partir de 1024 no Opus 5.5 e Sonnet 5.5, e a partir de 4096 em todos os outros modelos.
+- **Tratamento da temperatura:** Quando o pensamento está habilitado, a API da Anthropic exige que a temperatura não seja definida (o padrão é 1.0). Opus 5.5, Opus 5, Opus 4.8, Fable 5.2, Fable 5.1, Fable 5, Sonnet 5.5 e Sonnet 5 não expõem uma configuração de temperatura. Opus 4.7 ignora `temperature`, e qualquer modelo com `reasoning_effort` definido como algo diferente de `"off"` também a ignora.
+- **Comportamento de raciocínio/pensamento:** A configuração `reasoning_effort` controla se o pensamento está habilitado. Opus 5.5, Opus 5, Fable 5.2, Fable 5.1 e Fable 5 sempre têm o raciocínio habilitado. Haiku 4.5 não suporta raciocínio. Quando o pensamento está habilitado, o nó usa o modo de pensamento apropriado para o modelo selecionado, seja adaptativo ou baseado em orçamento. No modo de orçamento, o orçamento de tokens de raciocínio é limitado para deixar pelo menos 1024 tokens para a resposta real. Quando `reasoning_effort` é `"off"` no Sonnet 5.5, a requisição usa o pensamento `between_tools` em vez do pensamento desabilitado, então a resposta ainda não contém raciocínio.
+- **Mínimo de max tokens:** `max_tokens` aceita valores a partir de 1024 no Opus 5.5 e Sonnet 5.5, a partir de 8192 no Fable 5.2 e a partir de 4096 em todos os outros modelos.
 - **Recusa de segurança:** Se o Claude se recusar a responder à requisição por motivos de segurança, o nó gera um erro solicitando que você reformule o prompt ou tente um modelo diferente.
 - **Texto de saída:** Blocos de pensamento e raciocínio não são incluídos na saída; apenas o texto gerado é retornado.
 
@@ -79,4 +79,4 @@ Este modelo não expõe uma configuração `reasoning_effort`.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClaudeNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `35b737da0f4c3a9da72910bf2053b18ae6a5c60989dc9607b61037623bc94e38`
+**Source fingerprint (SHA-256):** `4d4fd50c87fe6b532ab32779d51f82d2855c5d5e56026204b284c34ca9d1b2ea`
