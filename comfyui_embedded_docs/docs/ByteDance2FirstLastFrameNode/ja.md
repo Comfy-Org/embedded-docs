@@ -23,7 +23,7 @@
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | 動画生成用のテキストプロンプト。発話セリフを二重引用符で囲むと、生成される会話を誘導できます。 | STRING | はい | - |
-| `resolution` | 出力動画の解像度。デフォルトは 720p です。 `"4k"` はエンタープライズアカウントでのみ利用できます。 | COMBO | はい | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | 出力動画の解像度。デフォルトは 720p です。 | COMBO | はい | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duration` | 出力動画の長さ（秒、4～30）。デフォルトは 5 です。 | INT | はい | 4～30 |
 | `generate_audio` | 出力動画の音声生成を有効にします。デフォルトは True です。 | BOOLEAN | はい | False<br>True |
 | `output_format` | 出力動画のコンテナ形式。デフォルトは mp4 です。 | COMBO | はい | `"mp4"` |
@@ -77,4 +77,4 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `91ffaf2bef597d080665d36fd07ef192df2884017738127a97941fcb0bf860a7`
+**Source fingerprint (SHA-256):** `a0396690cd91dabe47ed65a51e05780c4f344afad222f30d6ab628240ea30469`

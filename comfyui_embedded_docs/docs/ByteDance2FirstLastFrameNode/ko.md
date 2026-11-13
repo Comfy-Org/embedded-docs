@@ -23,7 +23,7 @@
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | 비디오 생성을 위한 텍스트 프롬프트입니다. 생성될 대사를 유도하려면 대사를 큰따옴표로 묶으세요. | STRING | 예 | - |
-| `resolution` | 출력 비디오의 해상도입니다. 기본값은 720p입니다. `"4k"`는 엔터프라이즈 계정에서만 사용할 수 있습니다. | COMBO | 예 | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | 출력 비디오의 해상도입니다. 기본값은 720p입니다. | COMBO | 예 | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duration` | 출력 비디오의 길이(초)입니다(4-30). 기본값은 5입니다. | INT | 예 | 4 ~ 30 |
 | `generate_audio` | 출력 비디오에 대한 오디오 생성을 활성화합니다. 기본값은 True입니다. | BOOLEAN | 예 | False<br>True |
 | `output_format` | 출력 비디오의 컨테이너 형식입니다. 기본값은 mp4입니다. | COMBO | 예 | `"mp4"` |
@@ -77,4 +77,4 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `91ffaf2bef597d080665d36fd07ef192df2884017738127a97941fcb0bf860a7`
+**Source fingerprint (SHA-256):** `a0396690cd91dabe47ed65a51e05780c4f344afad222f30d6ab628240ea30469`

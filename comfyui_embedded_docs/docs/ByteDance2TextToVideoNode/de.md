@@ -17,7 +17,7 @@ Dieser Node erzeugt ein Video aus einem Text-Prompt unter Verwendung der Modelle
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Text-Prompt für die Videogenerierung. Setzen Sie gesprochene Dialogzeilen in doppelte Anführungszeichen, um den generierten Dialog zu steuern. | STRING | Ja | — |
-| `resolution` | Auflösung des Ausgabevideos. `"4k"` ist nur für Enterprise-Konten verfügbar. (Standard: `"720p"`) | COMBO | Ja | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | Auflösung des Ausgabevideos. (Standard: `"720p"`) | COMBO | Ja | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `ratio` | Seitenverhältnis des Ausgabevideos. (Standard: `"16:9"`) | COMBO | Ja | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
 | `duration` | Dauer des Ausgabevideos in Sekunden. (Standard: 5) | INT | Ja | 4 bis 30 |
 | `generate_audio` | Audiogenerierung für das Ausgabevideo aktivieren. (Standard: True) | BOOLEAN | Ja | True / False |
@@ -61,4 +61,4 @@ Gemeinsam genutzt von Seedance 2.0 Fast und Seedance 2.0 Mini; beide Modelle ste
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2TextToVideoNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `376cd0472e6d4e0b2d4c8873568bc4c7bd62f982e1be9cbb15839cd29deb867d`
+**Source fingerprint (SHA-256):** `dde0d299e7b9876943dcdac506139b449f8ef72f7a114f022952a6a4045ae4e5`

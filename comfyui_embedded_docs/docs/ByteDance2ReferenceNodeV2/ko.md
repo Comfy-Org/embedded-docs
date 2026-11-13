@@ -19,7 +19,7 @@ ByteDance Seedance 2.5 Reference to Video는 텍스트 프롬프트와 선택적
 | 매개변수 | 설명 | 데이터 유형 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | 비디오 생성을 위한 텍스트 프롬프트입니다. 생성된 대사를 유도하려면 말할 대사를 큰따옴표로 묶으세요. 기본값: 빈 문자열. | STRING | 예 | 여러 줄 텍스트 |
-| `resolution` | 출력 비디오의 해상도입니다. 기본값: 720p. `"4k"`는 엔터프라이즈 계정에서만 사용할 수 있습니다. | COMBO | 예 | "480p"<br>"720p"<br>"1080p"<br>"4k" |
+| `resolution` | 출력 비디오의 해상도입니다. 기본값: 720p. | COMBO | 예 | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | 출력 비디오의 화면 비율입니다. 기본값: 16:9. | COMBO | 예 | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | 출력 비디오의 길이(초)입니다(4-30). 기본값: 5. | INT | 예 | 4~30 |
 | `generate_audio` | 출력 비디오의 오디오 생성을 활성화합니다. 기본값: True. | BOOLEAN | 예 | true<br>false |
@@ -79,4 +79,4 @@ ByteDance Seedance 2.5 Reference to Video는 텍스트 프롬프트와 선택적
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNodeV2/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `9d01b783716319b2d21dbe035080539571545ccc3251a69440e0c113c19fb743`
+**Source fingerprint (SHA-256):** `553e2654c819dbb4ab734eeb56bae67cba4c69185a9b1422c5653e65a6fe6898`

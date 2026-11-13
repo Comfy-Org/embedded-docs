@@ -36,14 +36,14 @@ Wird angezeigt, wenn `size` auf "custom" gesetzt ist.
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `width` | Ausgabebreite. Die gesamte Pixelanzahl muss zwischen 512x512 und 2560x2560 liegen; jedes Seitenverhältnis innerhalb dieses Bereichs ist möglich. (Standard: 1024) | INT | Ja (wenn `size` den Wert "custom" hat) | 256 bis 2560, Schrittweite 16 |
-| `height` | Ausgabehöhe. Die gesamte Pixelanzahl muss zwischen 512x512 und 2560x2560 liegen; jedes Seitenverhältnis innerhalb dieses Bereichs ist möglich. (Standard: 1024) | INT | Ja (wenn `size` den Wert "custom" hat) | 256 bis 2560, Schrittweite 16 |
+| `width` | Ausgabebreite. Die gesamte Pixelanzahl muss zwischen 512x512 und 2448x2448 liegen; jedes Seitenverhältnis innerhalb dieses Bereichs ist möglich. (Standard: 1024) | INT | Ja (wenn `size` den Wert "custom" hat) | 256 bis 2560, Schrittweite 16 |
+| `height` | Ausgabehöhe. Die gesamte Pixelanzahl muss zwischen 512x512 und 2448x2448 liegen; jedes Seitenverhältnis innerhalb dieses Bereichs ist möglich. (Standard: 1024) | INT | Ja (wenn `size` den Wert "custom" hat) | 256 bis 2560, Schrittweite 16 |
 
 ### Einschränkungen
 
 - Der Text-Prompt ist erforderlich und muss mindestens ein Zeichen enthalten.
 - Maximal 3 Referenzbilder werden unterstützt; bei mehr wird ein Fehler ausgelöst (eine Batch-Eingabe zählt einmal pro Bild).
-- Wenn `size` auf "custom" gesetzt ist, müssen explizite Werte für Breite und Höhe angegeben werden, die validiert werden: Die gesamte Pixelanzahl muss zwischen 262.144 (512x512) und 6.553.600 (2560x2560) Pixeln liegen, und das Seitenverhältnis muss zwischen 1:8 und 8:1 liegen.
+- Wenn `size` auf "custom" gesetzt ist, müssen explizite Werte für Breite und Höhe angegeben werden, die validiert werden: Die gesamte Pixelanzahl muss zwischen 262.144 (512x512) und 5.992.704 (2448x2448) Pixeln liegen, und das Seitenverhältnis muss zwischen 1:8 und 8:1 liegen.
 - Wenn `size` auf "match input" gesetzt ist, ist mindestens ein Referenzbild erforderlich, da die Abmessungen des ersten Referenzbilds verwendet werden; die Abmessungen werden skaliert, um in den unterstützten Bereich und Seitenverhältnisbereich zu passen.
 - Wenn `size` auf "auto" gesetzt ist, wählt das Modell die Ausgabegröße (1,9–4,2 Megapixel) unter Beibehaltung des Eingabeseitenverhältnisses.
 - Prompt-Referenzen verwenden @Image1, @Image2, @Image3, nummeriert in Eingabereihenfolge; eine Referenz auf einen Index, der höher als die Anzahl der verbundenen Bilder ist, löst einen Fehler aus. Tags werden nur an Wortgrenzen erkannt, daher bleiben Adressen wie user@image1.com unverändert.
@@ -58,4 +58,4 @@ Wird angezeigt, wenn `size` auf "custom" gesetzt ist.
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageEditApi/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `efa8d2b1a039a7b91789c0332b751a5f90ab8dad755ef0e25124d7d1c44d9abb`
+**Source fingerprint (SHA-256):** `02c3c66be56535a17a67503cecccdb1d0c7ac85185c6fe662a1fb89867902610`

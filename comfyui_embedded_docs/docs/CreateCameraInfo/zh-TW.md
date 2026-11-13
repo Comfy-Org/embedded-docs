@@ -13,7 +13,7 @@
 | `滾轉` | 相機繞視軸旋轉的角度，單位為度。（預設值：0.0） | FLOAT | 否 | -180.0 至 180.0 |
 | `視野` | 垂直視野角度，單位為度。（預設值：35.0） | FLOAT | 否 | 1.0 至 120.0 |
 | `縮放` | 數位變焦（焦距倍率）。數值大於 1 時會放大畫面，但不會移動相機。（預設值：1.0） | FLOAT | 否 | 0.01 至 100.0 |
-| `相機類型` | Render Splat 使用的投影方式：透視（近大遠小）或正交（平行投影）。（預設值："perspective"） | COMBO | 否 | `"perspective"`<br>`"orthographic"` |
+| `相機類型` | Render Splat 與 Render Mesh 使用的投影方式：透視（近大遠小）或正交（平行投影）。（預設值："perspective"） | COMBO | 否 | `"perspective"`<br>`"orthographic"` |
 
 ### 模式特定參數
 
@@ -56,4 +56,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `5a9703e8e01ad2cd92a97da8d892c278765a9cef8bcd38e3336d1f73717d9895`
+**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`

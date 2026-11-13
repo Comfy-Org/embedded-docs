@@ -13,6 +13,7 @@ DrawBBoxes 節點透過在圖像上繪製邊界框、標籤和信心分數來可
 *   `bboxes` 輸入為必要項目，必須提供。
 *   節點會自動處理 `bboxes` 的不同輸入格式。單個字典將應用於批次中的所有圖像。字典的扁平清單將被視為每個圖像的同一組偵測結果。清單的清單則允許您為批次中的每個圖像指定不同的偵測結果。
 *   如果未提供 `image`，節點將建立一個尺寸足夠容納所有提供的邊界框的空白圖像，預設最小尺寸為 640x640。
+*   `label` 欄位會與 COCO 資料集的類別比對，因此同一 COCO 類別始終使用同一種顏色。不是 COCO 類別的標籤同樣會被繪製，並依它在該影像所有標籤中的順序取調色盤顏色；沒有 `score` 的框只會繪製標籤。
 
 ## 輸出
 
@@ -23,4 +24,4 @@ DrawBBoxes 節點透過在圖像上繪製邊界框、標籤和信心分數來可
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `436fbd3de0d5e09ca07b099a32c9b9482a8006459dc8635e066ffa82f6c755df`
+**Source fingerprint (SHA-256):** `3a25677852fe1f0c137a011628ba0197034c3724281941f88a27e1ae1abfe48e`

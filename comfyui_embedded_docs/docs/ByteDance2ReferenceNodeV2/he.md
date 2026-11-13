@@ -19,7 +19,7 @@ ByteDance Seedance 2.5 Reference to Video יוצר, עורך או מאריך ס�
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | פרומפט טקסטואלי ליצירת וידאו. שימו שורות מדוברות במירכאות כפולות כדי לכוון את הדיאלוג שנוצר. ברירת מחדל: מחרוזת ריקה. | STRING | כן | טקסט רב-שורתי |
-| `resolution` | רזולוציית סרטון הפלט. ברירת מחדל: 720p. `"4k"` זמינה לחשבונות ארגוניים בלבד. | COMBO | כן | "480p"<br>"720p"<br>"1080p"<br>"4k" |
+| `resolution` | רזולוציית סרטון הפלט. ברירת מחדל: 720p. | COMBO | כן | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | יחס גובה-רוחב של סרטון הפלט. ברירת מחדל: 16:9. | COMBO | כן | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | משך סרטון הפלט בשניות (4-30). ברירת מחדל: 5. | INT | כן | 4 עד 30 |
 | `generate_audio` | הפעל יצירת אודיו עבור סרטון הפלט. ברירת מחדל: True. | BOOLEAN | כן | true<br>false |
@@ -79,4 +79,4 @@ ByteDance Seedance 2.5 Reference to Video יוצר, עורך או מאריך ס�
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNodeV2/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `9d01b783716319b2d21dbe035080539571545ccc3251a69440e0c113c19fb743`
+**Source fingerprint (SHA-256):** `553e2654c819dbb4ab734eeb56bae67cba4c69185a9b1422c5653e65a6fe6898`

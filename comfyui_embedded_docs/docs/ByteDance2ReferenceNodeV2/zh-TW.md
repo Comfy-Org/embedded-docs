@@ -19,7 +19,7 @@ ByteDance Seedance 2.5 Reference to Video 會使用 ByteDance Seedance 模型（
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | 用於影片生成的文字提示。將台詞放入雙引號中，可引導生成的對話。預設值：空字串。 | STRING | 是 | 多行文字 |
-| `resolution` | 輸出影片的解析度。預設值：720p。 `"4k"` 僅供企業帳戶使用。 | COMBO | 是 | "480p"<br>"720p"<br>"1080p"<br>"4k" |
+| `resolution` | 輸出影片的解析度。預設值：720p。 | COMBO | 是 | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | 輸出影片的長寬比。預設值：16:9。 | COMBO | 是 | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | 輸出影片的持續時間（秒）（4-30）。預設值：5。 | INT | 是 | 4 至 30 |
 | `generate_audio` | 啟用輸出影片的音訊生成。預設值：True。 | BOOLEAN | 是 | true<br>false |
@@ -79,4 +79,4 @@ ByteDance Seedance 2.5 Reference to Video 會使用 ByteDance Seedance 模型（
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNodeV2/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `9d01b783716319b2d21dbe035080539571545ccc3251a69440e0c113c19fb743`
+**Source fingerprint (SHA-256):** `553e2654c819dbb4ab734eeb56bae67cba4c69185a9b1422c5653e65a6fe6898`

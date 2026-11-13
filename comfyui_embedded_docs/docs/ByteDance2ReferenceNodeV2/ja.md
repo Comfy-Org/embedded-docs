@@ -19,7 +19,7 @@ ByteDance Seedance 2.5 Reference to Video は、ByteDance Seedance モデル（S
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | 動画生成用のテキストプロンプト。セリフを二重引用符で囲むと、生成される会話を誘導できます。デフォルト: 空文字列。 | STRING | はい | 複数行テキスト |
-| `resolution` | 出力動画の解像度。デフォルト: 720p。 `"4k"` はエンタープライズアカウントでのみ利用できます。 | COMBO | はい | "480p"<br>"720p"<br>"1080p"<br>"4k" |
+| `resolution` | 出力動画の解像度。デフォルト: 720p。 | COMBO | はい | "480p"<br>"720p"<br>"1080p"<br>"4k" |
 | `ratio` | 出力動画のアスペクト比。デフォルト: 16:9。 | COMBO | はい | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | 出力動画の長さ（秒）（4〜30）。デフォルト: 5。 | INT | はい | 4〜30 |
 | `generate_audio` | 出力動画の音声生成を有効にします。デフォルト: True。 | BOOLEAN | はい | true<br>false |
@@ -79,4 +79,4 @@ ByteDance Seedance 2.5 Reference to Video は、ByteDance Seedance モデル（S
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNodeV2/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `9d01b783716319b2d21dbe035080539571545ccc3251a69440e0c113c19fb743`
+**Source fingerprint (SHA-256):** `553e2654c819dbb4ab734eeb56bae67cba4c69185a9b1422c5653e65a6fe6898`

@@ -17,7 +17,7 @@
 | `render_style` | מה שתמונת הפלט מציגה. האפשרויות הן: color (רינדור צבע מלא), clay (הצללה בגוון אלבדו ניטרלי), depth (אובייקטים קרובים מופיעים בהירים), normal (מפת נורמלים של OpenGL) (ברירת מחדל: "color") | COMBO | כן | "color"<br>"clay"<br>"depth"<br>"normal" |
 | `background` | צבע רקע אחיד לרנדור (ברירת מחדל: #000000) | COLOR | כן | - |
 | `bg_image` | לוחית רקע אופציונלית המשולבת מאחורי הספלאט. דורסת את צבע הרקע האחיד. משתנה לגודל הרנדור. אצווה של תמונות משמשת לכל פריים, תמונה בודדת משמשת לכל הפריימים. עובד רק עם סגנונות הרנדור color ו-clay | IMAGE | לא | - |
-| `camera_info` | מצלמה שממנה לרנדר. יכולה להגיע מצומת Load3D, Preview3D או Create Camera Info. אם ריק, הספלאט ממוסגר אוטומטית מתצוגת 3/4 כברירת מחדל | CAMERA_3D | לא | - |
+| `camera_info` | מצלמה שממנה לרנדר. יכולה להגיע מצומת Load3D, Preview3D או Create Camera Info. אם ריק, הספלאט ממוסגר אוטומטית מתצוגת 3/4 כברירת מחדל רשימת מצלמות מרנדרת תמונה לכל מצלמה. | CAMERA_3D | לא | - |
 
 ## פלטים
 
@@ -29,4 +29,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RenderSplat/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `038bd9fb032f347ecda665c03719a64b0cf907599b701606f5cf6d0606d19d98`
+**Source fingerprint (SHA-256):** `344e5fac74f4c33b08bea4d4737c178e1186bf212c487a8236331bce8818c30c`

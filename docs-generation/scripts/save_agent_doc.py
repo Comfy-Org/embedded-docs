@@ -70,6 +70,9 @@ VALID_TYPES = {
     # Custom voice handle emitted by Fish Audio Voice Selector and consumed by
     # Fish Audio Text to Speech (IO.Custom(FISHAUDIO_VOICE)).
     "FISHAUDIO_VOICE",
+    # Breeze voice handle (IO.Custom(BREEZE_VOICE)) shared by the Breeze voice
+    # selector and the voice-creation nodes that feed Breeze Text to Speech.
+    "BREEZE_VOICE",
     # Color picker widget (IO.Color.Input, io_type COLOR), e.g. the fill color
     # of Pad Image.
     "COLOR",

@@ -1,6 +1,6 @@
-# ByteDance Seedream 4.5 & 5.0
+# ByteDance Seedream 4.5, 5.0 & 5.5
 
-ByteDance Seedream 4.5 & 5.0 erzeugt Bilder aus einem Text-Prompt (Text-zu-Bild) oder generiert/bearbeitet Bilder, die durch optionale Referenzbilder gesteuert werden, unter Verwendung der Modelle ByteDance Seedream 4.0, 4.5 und 5.0 mit bis zu 4K-Auflösung. Der Node sendet den Prompt und alle Referenzbilder an die ByteDance-API, wartet, bis die Generierungsaufgabe abgeschlossen ist, und gibt den resultierenden Bildtensor oder die resultierenden Tensoren zurück.
+ByteDance Seedream 4.5 & 5.0 erzeugt Bilder aus einem Text-Prompt (Text-zu-Bild) oder generiert/bearbeitet Bilder, die durch optionale Referenzbilder gesteuert werden, unter Verwendung der Modelle ByteDance Seedream 4.0, 4.5 und 5.0 mit bis zu 4K-Auflösung. Der Node sendet den Prompt und alle Referenzbilder an die ByteDance-API, wartet, bis die Generierungsaufgabe abgeschlossen ist, und gibt den resultierenden Bildtensor oder die resultierenden Tensoren zurück. Die Modellliste umfasst auch Seedream 5.5.
 
 ## Eingaben
 
@@ -9,7 +9,18 @@ ByteDance Seedream 4.5 & 5.0 erzeugt Bilder aus einem Text-Prompt (Text-zu-Bild)
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
 | `prompt` | Text-Prompt zum Erstellen oder Bearbeiten eines Bildes. Darf nach dem Entfernen von Leerzeichen nicht leer sein. | STRING | Ja | Mehrzeiliger Text |
-| `model` | Wählt das zu verwendende Seedream-Modell aus. Jedes Modell bietet unten einen eigenen Satz an Unterparametern und Limits. | DYNAMIC_COMBO | Ja | "seedream 5.0 pro"<br>"seedream 5.0 flash"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
+| `model` | Wählt das zu verwendende Seedream-Modell aus. Jedes Modell bietet unten einen eigenen Satz an Unterparametern und Limits. | DYNAMIC_COMBO | Ja | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
+
+### Seedream 5.5 Eingaben (seedream 5.5)
+
+| Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
+|-----------|--------------|----------|--------------|---------|
+| `size_preset` | Wählen Sie eine empfohlene Größe. Wählen Sie Custom, um die unten angegebene Breite und Höhe zu verwenden. Standard: erste empfohlene Voreinstellung für dieses Modell. | COMBO | Nein | Modellspezifische empfohlene Größen-Voreinstellungen<br>"Custom" |
+| `width` | Benutzerdefinierte Breite für das Bild. Der Wert wird nur verwendet, wenn `size_preset` auf `Custom` gesetzt ist. Standard: 2048. | INT | Nein | 240 bis 8594 (Schrittweite 2) |
+| `height` | Benutzerdefinierte Höhe für das Bild. Der Wert wird nur verwendet, wenn `size_preset` auf `Custom` gesetzt ist. Standard: 2048. | INT | Nein | 240 bis 8594 (Schrittweite 2) |
+| `background` | `auto` entscheidet anhand des Prompts und liefert Transparenz vor allem für Sticker und Logos; `opaque` liefert nie Transparenz; `transparent` passt am besten, wenn der Prompt ein freigestelltes Motiv beschreibt. Standard: `"auto"`. | COMBO | Nein | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `seed` | Seed für die Generierung. Standard: 42. | INT | Nein | 0 bis 2147483647 |
+| `watermark` | Legt fest, ob dem Bild ein Wasserzeichen „AI generated“ hinzugefügt wird. Standard: false. | BOOLEAN | Nein | true / false |
 
 ### Seedream 5.0 Pro Eingaben (seedream 5.0 pro)
 
@@ -103,4 +114,4 @@ ByteDance Seedream 4.5 & 5.0 erzeugt Bilder aus einem Text-Prompt (Text-zu-Bild)
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV3/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `1c1f40b202ccbb3e0f73cd072170e1c16b833e007f26e63505b54c42b004a8a6`
+**Source fingerprint (SHA-256):** `4f95fbf4bd2af6044c2a4213e3c239554a6247c001d4d864135b17da31e549e1`

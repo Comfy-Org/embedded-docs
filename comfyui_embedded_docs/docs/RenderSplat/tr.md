@@ -17,7 +17,7 @@ Bir gaussian splat'ı, yönlendirilmiş eliptik splatlar, kenar yumuşatma ve de
 | `oluşturma_stili` | Görüntü çıktısının ne gösterdiği. Seçenekler: color (tam renkli işleme), clay (nötr albedo gölgeli), depth (yakın nesneler parlak görünür), normal (OpenGL normal haritası) (varsayılan: "color") | COMBO | Evet | "color"<br>"clay"<br>"depth"<br>"normal" |
 | `arka_plan` | İşleme için düz arka plan rengi (varsayılan: #000000) | COLOR | Evet | - |
 | `arka_plan_görseli` | Splat'ın arkasına yerleştirilen isteğe bağlı arka plan plakası. Düz arka plan rengini geçersiz kılar. İşleme boyutuna yeniden boyutlandırılır. Kare başına bir görüntü grubu kullanılır, tüm kareler için tek bir görüntü kullanılır. Yalnızca color ve clay işleme stilleriyle çalışır | IMAGE | Hayır | - |
-| `camera_info` | İşleme yapılacak kamera. Load3D, Preview3D veya Create Camera Info düğümünden gelebilir. Boşsa, splat varsayılan 3/4 görünümden otomatik çerçevelenir | CAMERA_3D | Hayır | - |
+| `camera_info` | İşleme yapılacak kamera. Load3D, Preview3D veya Create Camera Info düğümünden gelebilir. Boşsa, splat varsayılan 3/4 görünümden otomatik çerçevelenir Kamera listesi verilirse her kamera için bir görüntü oluşturur. | CAMERA_3D | Hayır | - |
 
 ## Çıktılar
 
@@ -29,4 +29,4 @@ Bir gaussian splat'ı, yönlendirilmiş eliptik splatlar, kenar yumuşatma ve de
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RenderSplat/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `038bd9fb032f347ecda665c03719a64b0cf907599b701606f5cf6d0606d19d98`
+**Source fingerprint (SHA-256):** `344e5fac74f4c33b08bea4d4737c178e1186bf212c487a8236331bce8818c30c`

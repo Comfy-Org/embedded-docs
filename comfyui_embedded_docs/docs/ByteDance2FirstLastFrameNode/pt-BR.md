@@ -23,7 +23,7 @@ Estas entradas aparecem quando `Seedance 2.5` é selecionado.
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Faixa |
 |-----------|-----------|---------------|-------------|-------|
 | `prompt` | Prompt de texto para geração de vídeo. Coloque falas entre aspas duplas para orientar o diálogo gerado. | STRING | Sim | - |
-| `resolution` | Resolução do vídeo de saída. O padrão é 720p. `"4k"` está disponível apenas para contas empresariais. | COMBO | Sim | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | Resolução do vídeo de saída. O padrão é 720p. | COMBO | Sim | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duration` | Duração do vídeo de saída em segundos (4-30). O padrão é 5. | INT | Sim | 4 a 30 |
 | `generate_audio` | Ativar geração de áudio para o vídeo de saída. O padrão é True. | BOOLEAN | Sim | False<br>True |
 | `output_format` | Formato de contêiner do vídeo de saída. O padrão é mp4. | COMBO | Sim | `"mp4"` |
@@ -77,4 +77,4 @@ Compartilhadas por `Seedance 2.0 Fast` e `Seedance 2.0 Mini`.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `91ffaf2bef597d080665d36fd07ef192df2884017738127a97941fcb0bf860a7`
+**Source fingerprint (SHA-256):** `a0396690cd91dabe47ed65a51e05780c4f344afad222f30d6ab628240ea30469`

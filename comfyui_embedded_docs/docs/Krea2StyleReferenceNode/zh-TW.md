@@ -9,7 +9,7 @@ Krea 2 風格參考節點可讓您添加參考影像來影響 Krea 2 影像生�
 | 參數 | 說明 | 資料類型 | 必要 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `參考圖像` | 影響生成風格的參考影像。 | IMAGE | 是 | - |
-| `強度` | 參考強度；負值會反轉風格影響（預設值：1.0）。 | FLOAT | 是 | -2.0 到 2.0（步長：0.05） |
+| `強度` | 參考強度（預設值：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步長：0.05） |
 | `style_reference` | 可選的傳入風格參考鏈；此節點會再附加一個參考。 | STYLE_REF | 否 | - |
 
 **限制說明：** 您最多總共可以串聯 10 個風格參考。如果嘗試添加第 11 個參考，節點將會引發錯誤。
@@ -23,4 +23,4 @@ Krea 2 風格參考節點可讓您添加參考影像來影響 Krea 2 影像生�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Krea2StyleReferenceNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `7f87568a1cd5038571f3188cfb1d71e15533ea19eee01d7826fe574a1a4dc88d`
+**Source fingerprint (SHA-256):** `6f68e5eea264e77beed4f9c5f4c8830fce7c25dfac813ffbf1951eafbb7edf72`

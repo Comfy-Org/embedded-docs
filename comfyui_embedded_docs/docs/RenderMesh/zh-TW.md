@@ -7,12 +7,13 @@
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `mesh` | 要渲染的 3D 網格。 | MESH | 是 | — |
-| `mode` | 要渲染的內容。auto：若有紋理則使用紋理，否則使用頂點顏色，否則使用黏土著色。（預設："auto"） | COMBO | 是 | `"auto"`<br>`"texture"`<br>`"vertex colors"`<br>`"solid"`<br>`"normal"`<br>`"depth"` |
+| `mode` | 要渲染的內容。auto：若有紋理則使用紋理，否則使用頂點顏色，否則使用黏土著色。（預設："auto"） `world normal`：依第一個相機偏航角旋轉後的世界空間法線。 | COMBO | 是 | `"auto"`<br>`"texture"`<br>`"vertex colors"`<br>`"solid"`<br>`"normal"`<br>`"world normal"`<br>`"depth"` |
 | `width` | 渲染影像的寬度，單位為像素。（預設：1024） | INT | 是 | 64 至 4096 （步進值：8） |
 | `height` | 渲染影像的高度，單位為像素。（預設：1024） | INT | 是 | 64 至 4096 （步進值：8） |
 | `background` | 用於網格未覆蓋像素的背景顏色。（預設："#000000"） | COLOR | 是 | — |
 | `model_3d_info` | 來自同一個 Load3D / Preview3D 檢視器的模型變換。將其與 `camera_info` 連接，以符合檢視器的取景。 | LOAD3D_MODEL_INFO | 否 | — |
-| `camera_info` | 來自 Load3D / Preview3D 檢視器或 Create Camera Info 節點的相機。若未連接任何相機，會自動取景為預設正視圖。 | LOAD3D_CAMERA | 否 | — |
+| `camera_info` | 來自 Load3D / Preview3D 檢視器或 Create Camera Info 節點的相機。若未連接任何相機，會自動取景為預設正視圖。 相機清單會為每個相機渲染一張影像。 | LOAD3D_CAMERA | 否 | — |
+| `texture` | 用於取代網格自帶的紋理，例如未接 Apply Texture to Mesh 的 Bake Texture From Views 輸出。 | IMAGE | 否 | — |
 
 注意：批次網格中僅會渲染第一個項目——若網格批次包含多個項目，節點會記錄警告並使用第一個。`texture` 模式要求網格同時具有紋理與 UV；`vertex colors` 模式要求頂點顏色；若所選模式的資料無法取得，節點會退回實心著色渲染。`normal` 模式在存在平滑頂點法線時使用它們，否則使用逐面法線。在 `depth` 模式中，較近的表面看起來較亮（近 = 白色），而未被網格覆蓋的像素保持黑色。`model_3d_info` 與 `camera_info` 應從同一個 Load3D / Preview3D 檢視器一起連接，使渲染結果符合檢視器的取景。
 
@@ -26,4 +27,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RenderMesh/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `d23e85a904520eb2dfed899eb3e6a9cf45c980df00c034503687ac4eccc66ac4`
+**Source fingerprint (SHA-256):** `ad7d2f861fd7370fd50de9a9a45f8d46279528e6f0a90f02b539dec6a62c74bf`

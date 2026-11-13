@@ -23,7 +23,7 @@ Bu girdiler `Seedance 2.5` seçildiğinde görünür.
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Video üretimi için metin istemi. Oluşturulan diyaloğu yönlendirmek için konuşma repliklerini çift tırnak içine alın. | STRING | Evet | - |
-| `resolution` | Çıktı videosunun çözünürlüğü. Varsayılan 720p'dir. `"4k"` yalnızca kurumsal hesaplar için kullanılabilir. | COMBO | Evet | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | Çıktı videosunun çözünürlüğü. Varsayılan 720p'dir. | COMBO | Evet | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duration` | Çıktı videosunun saniye cinsinden süresi (4-30). Varsayılan 5'tir. | INT | Evet | 4 - 30 |
 | `generate_audio` | Çıktı videosu için ses üretimini etkinleştir. Varsayılan True. | BOOLEAN | Evet | False<br>True |
 | `output_format` | Çıktı videosunun kapsayıcı biçimi. Varsayılan mp4'tür. | COMBO | Evet | `"mp4"` |
@@ -77,4 +77,4 @@ Bu girdiler `Seedance 2.0` seçildiğinde görünür.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `91ffaf2bef597d080665d36fd07ef192df2884017738127a97941fcb0bf860a7`
+**Source fingerprint (SHA-256):** `a0396690cd91dabe47ed65a51e05780c4f344afad222f30d6ab628240ea30469`

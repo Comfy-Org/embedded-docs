@@ -13,7 +13,7 @@ Le nœud Créer les Informations de Caméra construit une structure d'informatio
 | `roll` | Roulis de la caméra autour de l'axe de vue, en degrés. (défaut : 0.0) | FLOAT | Non | -180.0 à 180.0 |
 | `fov` | Champ de vision vertical en degrés. (défaut : 35.0) | FLOAT | Non | 1.0 à 120.0 |
 | `zoom` | Zoom numérique (multiplicateur de distance focale). Les valeurs supérieures à 1 zooment sans déplacer la caméra. (défaut : 1.0) | FLOAT | Non | 0.01 à 100.0 |
-| `camera_type` | Projection utilisée par Render Splat : perspective (raccourci) ou orthographique (parallèle). (défaut : "perspective") | COMBO | Non | `"perspective"`<br>`"orthographic"` |
+| `camera_type` | Projection utilisée par Render Splat et Render Mesh : perspective (raccourci) ou orthographique (parallèle). (défaut : "perspective") | COMBO | Non | `"perspective"`<br>`"orthographic"` |
 
 ### Paramètres Spécifiques au Mode
 
@@ -56,4 +56,4 @@ Lorsque `mode` est réglé sur `"quaternion"`, les paramètres suivants devienne
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `5a9703e8e01ad2cd92a97da8d892c278765a9cef8bcd38e3336d1f73717d9895`
+**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`

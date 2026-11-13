@@ -1,6 +1,6 @@
-# ByteDance Seedream 5.0 Layer Separation
+# ByteDance Seedream 5.0 & 5.5 Layer Separation
 
-ByteDance Seedream 5.0 Layer Separation décompose une image en une plaque d’arrière-plan plus jusqu’à 16 calques transparents repositionnables, chacun avec un ordre d’empilement, une boîte englobante, un nom et une description. Il renvoie l’arrière-plan, les images par calque avec les masques, les boîtes de placement et une pile de calques prête à être modifiée. Le sélecteur `model` choisit entre Seedream 5.0 Pro et le plus rapide Seedream 5.0 Flash.
+ByteDance Seedream 5.0 Layer Separation décompose une image en une plaque d’arrière-plan plus jusqu’à 16 calques transparents repositionnables, chacun avec un ordre d’empilement, une boîte englobante, un nom et une description. Il renvoie l’arrière-plan, les images par calque avec les masques, les boîtes de placement et une pile de calques prête à être modifiée. Le sélecteur `model` choisit entre Seedream 5.0 Pro et le plus rapide Seedream 5.0 Flash. Seedream 5.5 renvoie jusqu'à 99 calques.
 
 ## Entrées
 
@@ -8,7 +8,7 @@ ByteDance Seedream 5.0 Layer Separation décompose une image en une plaque d’a
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle Seedream utilisé pour la séparation. « seedream 5.0 pro » (par défaut) offre la meilleure qualité de séparation et expose également un contrôle `prompt_optimization` ; « seedream 5.0 flash » est plus rapide et moins coûteux et ne dispose d’aucun contrôle d’optimisation du prompt. | DYNAMIC_COMBO | Oui | "seedream 5.0 pro"<br>"seedream 5.0 flash" |
+| `model` | Le modèle Seedream utilisé pour la séparation. « seedream 5.0 pro » (par défaut) offre la meilleure qualité de séparation et expose également un contrôle `prompt_optimization` ; « seedream 5.0 flash » est plus rapide et moins coûteux et ne dispose d’aucun contrôle d’optimisation du prompt. | DYNAMIC_COMBO | Oui | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash" |
 
 ### Entrées Seedream 5.0 Pro et 5.0 Flash
 
@@ -21,7 +21,13 @@ Ces entrées sont disponibles avec les deux modèles.
 | `size` | Niveau de résolution de sortie. « auto » suit la taille de l’image d’entrée (limitée à la plage 1K-2K). Par défaut : « auto ». | COMBO | Oui | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
 | `seed` | Graine à utiliser pour la génération. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
 | `watermark` | Indique s’il faut ajouter un filigrane « AI generated » aux images. Par défaut : false. | BOOLEAN | Oui | false<br>true |
-| `crop_layers` | Géométrie des sorties par lot des calques/masques (`layer_stack` n’est pas affecté et reste toujours ajusté au plus juste). Canevas complet : chaque calque sur un canevas aux dimensions de la base, à la position de sa boîte englobante — recombinez directement avec ImageCompositeMasked. Taille minimale : chaque calque rogné à sa boîte englobante (complété jusqu’au plus grand calque pour la mise en lot) — tenseurs beaucoup plus petits ; reconstruisez le placement avec Layers From Bounding Boxes à l’aide de la sortie `bboxes`. Par défaut : false (canevas complet). | BOOLEAN | Oui | false (canevas complet)<br>true (taille minimale) |
+| `crop_layers` | Géométrie des sorties par lot des calques/masques (`layer_stack` n’est pas affecté et reste toujours ajusté au plus juste). Canevas complet : chaque calque sur un canevas aux dimensions de la base, à la position de sa boîte englobante — recombinez directement avec ImageCompositeMasked. Taille minimale : chaque calque rogné à sa boîte englobante (complété jusqu’au plus grand calque pour la mise en lot) — tenseurs beaucoup plus petits ; reconstruisez le placement avec Layers From Bounding Boxes à l’aide de la sortie `bboxes`. Par défaut : false (canevas complet). Avec Seedream 5.5, la valeur par défaut est true (taille minimale). | BOOLEAN | Oui | false (canevas complet)<br>true (taille minimale) |
+
+### Entrées uniquement pour Seedream 5.5
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `max_images` | Nombre maximal d'images renvoyées, image de base comprise. Le modèle décide combien il en faut ; chaque image renvoyée est facturée. Défaut : 30. | INT | Oui | 2 à 100 |
 
 ### Entrées uniquement pour Seedream 5.0 Pro
 
@@ -45,4 +51,4 @@ Ces entrées sont disponibles avec les deux modèles.
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamLayerSeparationNodeV2/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `b106ca63d37aea68079f0032a1f7dfeefee9f759c71bb1605bbfe66c3d9dad62`
+**Source fingerprint (SHA-256):** `fa4f65584cf5e5c08d04b9a26c343176287f4e5a51b4a2d07d6d61d7f9ac26a9`

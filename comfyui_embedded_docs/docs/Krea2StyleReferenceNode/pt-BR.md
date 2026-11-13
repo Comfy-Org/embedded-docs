@@ -9,7 +9,7 @@ O nó Krea 2 Style Reference permite adicionar uma imagem de referência para in
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `imagem` | Imagem de referência cujo estilo influencia a geração. | IMAGE | Sim | - |
-| `força` | Intensidade da referência; valores negativos invertem a influência do estilo (padrão: 1.0). | FLOAT | Sim | -2.0 a 2.0 (passo: 0.05) |
+| `força` | Intensidade da referência (padrão: 1.0). | FLOAT | Sim | 0.0 a 1.0 (passo: 0.05) |
 | `style_reference` | Cadeia opcional de referências de estilo recebida; este nó adiciona mais uma. | STYLE_REF | Não | - |
 
 **Observação sobre limitações:** Você pode encadear no máximo 10 referências de estilo no total. Se tentar adicionar uma 11ª referência, o nó gerará um erro.
@@ -23,4 +23,4 @@ O nó Krea 2 Style Reference permite adicionar uma imagem de referência para in
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Krea2StyleReferenceNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `7f87568a1cd5038571f3188cfb1d71e15533ea19eee01d7826fe574a1a4dc88d`
+**Source fingerprint (SHA-256):** `6f68e5eea264e77beed4f9c5f4c8830fce7c25dfac813ffbf1951eafbb7edf72`

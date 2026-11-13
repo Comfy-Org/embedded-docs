@@ -1,6 +1,6 @@
 # ByteDance Seedance 2.5 Rascunho para Vídeo Final
 
-Este nó renderiza o vídeo final de um Seedance 2.5 Draft em 1080p, ou em 4k para contas empresariais. Um draft é uma pré-visualização rápida em 480p: em um nó de vídeo Seedance 2.5 (texto para vídeo, primeiro-último quadro para vídeo ou referência para vídeo), defina `model` como `Seedance 2.5 Draft`, execute-o e conecte sua saída `draft_task_id` aqui. O final mantém a cena e o movimento do draft e reutiliza o prompt, as referências, a duração, a proporção e a configuração de áudio que produziram o draft.
+Este nó renderiza o vídeo final de um Seedance 2.5 Draft em 1080p ou em 4k. Um draft é uma pré-visualização rápida em 480p: em um nó de vídeo Seedance 2.5 (texto para vídeo, primeiro-último quadro para vídeo ou referência para vídeo), defina `model` como `Seedance 2.5 Draft`, execute-o e conecte sua saída `draft_task_id` aqui. O final mantém a cena e o movimento do draft e reutiliza o prompt, as referências, a duração, a proporção e a configuração de áudio que produziram o draft.
 
 ## Entradas
 
@@ -8,7 +8,7 @@ Este nó renderiza o vídeo final de um Seedance 2.5 Draft em 1080p, ou em 4k pa
 | --- | --- | --- | --- | --- |
 | `draft_task_id` | A saída `draft_task_id` de um nó Seedance 2.5 executado com o modelo Seedance 2.5 Draft, ou um ID de tarefa de draft colado. Ao executar novamente o nó produtor, defina seu controle de seed como fixo, caso contrário, a próxima execução gerará um novo draft em vez de reutilizar o que você revisou. | STRING | Sim | - |
 | `watermark` | Se deve adicionar uma marca d'água ao vídeo. O padrão é False. Esta é uma configuração avançada. | BOOLEAN | Não | True ou False |
-| `resolution` | Resolução do vídeo final. `"4k"` está disponível apenas para contas empresariais. Padrão: `"1080p"`. | COMBO | Não | `"1080p"`<br>`"4k"` |
+| `resolution` | Resolução do vídeo final. Padrão: `"1080p"`. | COMBO | Não | `"1080p"`<br>`"4k"` |
 
 ## Saídas
 
@@ -21,4 +21,4 @@ Este nó renderiza o vídeo final de um Seedance 2.5 Draft em 1080p, ou em 4k pa
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2DraftToFinalVideoNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `bf96a485d5febde26e22433d190cfe42bd21dc6316d66141ad23d4b95a845dc5`
+**Source fingerprint (SHA-256):** `757f1330775554d654012daa83880c3a2fbcee5b0a9efe0a2d2650f940962be6`

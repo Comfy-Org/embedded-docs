@@ -36,14 +36,14 @@ Exibidas quando `size` está definido como "custom".
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `width` | Largura de saída. A área total de pixels deve estar entre 512x512 e 2560x2560; qualquer proporção de aspecto dentro dessa área funciona. (padrão: 1024) | INT | Sim (quando `size` é "custom") | 256 a 2560, passo 16 |
-| `height` | Altura de saída. A área total de pixels deve estar entre 512x512 e 2560x2560; qualquer proporção de aspecto dentro dessa área funciona. (padrão: 1024) | INT | Sim (quando `size` é "custom") | 256 a 2560, passo 16 |
+| `width` | Largura de saída. A área total de pixels deve estar entre 512x512 e 2448x2448; qualquer proporção de aspecto dentro dessa área funciona. (padrão: 1024) | INT | Sim (quando `size` é "custom") | 256 a 2560, passo 16 |
+| `height` | Altura de saída. A área total de pixels deve estar entre 512x512 e 2448x2448; qualquer proporção de aspecto dentro dessa área funciona. (padrão: 1024) | INT | Sim (quando `size` é "custom") | 256 a 2560, passo 16 |
 
 ### Restrições
 
 - O prompt de texto é obrigatório e deve conter pelo menos um caractere.
 - No máximo 3 imagens de referência são suportadas; um erro é gerado se mais forem fornecidas (uma entrada em lote conta uma vez por imagem).
-- Quando `size` está definido como "custom", valores explícitos de largura e altura devem ser fornecidos e são validados: a área total de pixels deve estar entre 262.144 (512x512) e 6.553.600 (2560x2560) pixels, e a proporção de aspecto deve estar entre 1:8 e 8:1.
+- Quando `size` está definido como "custom", valores explícitos de largura e altura devem ser fornecidos e são validados: a área total de pixels deve estar entre 262.144 (512x512) e 5.992.704 (2448x2448) pixels, e a proporção de aspecto deve estar entre 1:8 e 8:1.
 - Quando `size` está definido como "match input", pelo menos uma imagem de referência é necessária porque as dimensões da primeira imagem de referência são usadas; as dimensões são redimensionadas para se ajustarem à área suportada e à faixa de proporção de aspecto.
 - Quando `size` está definido como "auto", o modelo escolhe o tamanho de saída (1,9-4,2 megapixels) preservando a proporção de aspecto da entrada.
 - As referências no prompt usam @Image1, @Image2, @Image3, numeradas na ordem de entrada; uma referência a um índice maior que o número de imagens conectadas gera um erro. As tags são reconhecidas apenas em limites de palavra, então endereços como user@image1.com são deixados inalterados.
@@ -58,4 +58,4 @@ Exibidas quando `size` está definido como "custom".
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageEditApi/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `efa8d2b1a039a7b91789c0332b751a5f90ab8dad755ef0e25124d7d1c44d9abb`
+**Source fingerprint (SHA-256):** `02c3c66be56535a17a67503cecccdb1d0c7ac85185c6fe662a1fb89867902610`

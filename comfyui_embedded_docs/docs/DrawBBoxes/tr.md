@@ -15,6 +15,7 @@ DrawBBoxes düğümü, bir görüntü üzerine sınırlayıcı kutular, etiketle
 *   `bboxes` girişi zorunludur ve sağlanmalıdır.
 *   Düğüm, `bboxes` için farklı giriş formatlarını otomatik olarak işler. Tek bir sözlük, toplu işteki tüm görüntülere uygulanır. Düz bir sözlük listesi, her görüntü için aynı tespit kümesi olarak değerlendirilir. Bir liste listesi, toplu işteki her görüntü için farklı tespitler belirlemenize olanak tanır.
 *   Bir `image` sağlanmazsa, düğüm, varsayılan minimum boyutu 640x640 olan ve sağlanan tüm sınırlayıcı kutuları sığdıracak kadar büyük boyutlara sahip boş bir görüntü oluşturur.
+*   `label` alanı COCO veri kümesi sınıflarıyla eşleştirilir, bu yüzden bir COCO sınıfı her zaman aynı rengi alır. COCO sınıfı olmayan bir etiket de çizilir ve o görüntüdeki etiketler arasındaki sırasına göre palet rengini alır; `score` değeri olmayan bir kutu yalnızca etiketiyle çizilir.
 
 ## Çıktılar
 
@@ -25,4 +26,4 @@ DrawBBoxes düğümü, bir görüntü üzerine sınırlayıcı kutular, etiketle
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `436fbd3de0d5e09ca07b099a32c9b9482a8006459dc8635e066ffa82f6c755df`
+**Source fingerprint (SHA-256):** `3a25677852fe1f0c137a011628ba0197034c3724281941f88a27e1ae1abfe48e`

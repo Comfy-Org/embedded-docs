@@ -13,6 +13,7 @@ O nó DrawBBoxes visualiza resultados de detecção de objetos desenhando caixas
 *   A entrada `bboxes` é obrigatória e deve ser fornecida.
 *   O nó lida automaticamente com diferentes formatos de entrada para `bboxes`. Um único dicionário será aplicado a todas as imagens no lote. Uma lista simples de dicionários será tratada como o mesmo conjunto de detecções para cada imagem. Uma lista de listas permite especificar diferentes detecções para cada imagem no lote.
 *   Se uma `image` não for fornecida, o nó criará uma imagem em branco com dimensões grandes o suficiente para acomodar todas as caixas delimitadoras fornecidas, com um tamanho mínimo padrão de 640x640.
+*   O campo `label` é comparado com as classes do conjunto de dados COCO, então uma classe COCO sempre recebe a mesma cor. Um rótulo que não é uma classe COCO também é desenhado e recebe a cor da paleta conforme sua posição entre os rótulos daquela imagem; uma caixa sem `score` é desenhada apenas com o rótulo.
 
 ## Saídas
 
@@ -23,4 +24,4 @@ O nó DrawBBoxes visualiza resultados de detecção de objetos desenhando caixas
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `436fbd3de0d5e09ca07b099a32c9b9482a8006459dc8635e066ffa82f6c755df`
+**Source fingerprint (SHA-256):** `3a25677852fe1f0c137a011628ba0197034c3724281941f88a27e1ae1abfe48e`
