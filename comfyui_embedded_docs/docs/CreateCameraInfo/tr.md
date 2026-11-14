@@ -1,6 +1,6 @@
 # Kamera Bilgisi Oluştur
 
-Kamera Bilgisi Oluştur düğümü, 3D görüntüleme için bir kamera bilgi yapısı oluşturur. Kamerayı tanımlamak için üç modu destekler: yörünge (bir hedef etrafında yalpalama/eğim/mesafe), bakış (açık dünya konumu) ve dördül (konum artı dönüş). Koordinat sistemi, Y'nin yukarı eksen olduğu sağ ellidir.
+Kamera Bilgisi Oluştur düğümü, 3D görüntüleme için bir kamera bilgi yapısı oluşturur. Kamerayı tanımlamak için üç modu destekler: yörünge (bir hedef etrafında yalpalama/eğim/mesafe), bakış (açık dünya konumu) ve dördül (konum artı dönüş). Koordinat sistemi, Y'nin yukarı eksen olduğu sağ ellidir; `mesh` bağlandığında konum, hedef ve mesafe o ağın koordinat sisteminde hesaplanır, böylece aynı ayarlar her ağı çerçeveler.
 
 ## Girişler
 
@@ -14,6 +14,7 @@ Kamera Bilgisi Oluştur düğümü, 3D görüntüleme için bir kamera bilgi yap
 | `fov` | Derece cinsinden dikey görüş alanı. (varsayılan: 35.0) | FLOAT | Hayır | 1.0 ile 120.0 arası |
 | `zoom` | Dijital yakınlaştırma (odak uzaklığı çarpanı). 1'den büyük değerler kamerayı hareket ettirmeden yakınlaştırır. (varsayılan: 1.0) | FLOAT | Hayır | 0.01 ile 100.0 arası |
 | `kamera_tipi` | Render Splat ve Render Mesh tarafından kullanılan izdüşüm: perspektif (küçültme) veya ortografik (paralel). (varsayılan: "perspective") | COMBO | Hayır | `"perspective"`<br>`"orthographic"` |
+| `mesh` | Bu ağı çerçeveler: konum, hedef ve mesafe, ağın sınırlayıcı kutusunun merkezinden sınırlayıcı küresinin çapı biriminde ölçülür; böylece aynı ayarlar her ağı çerçeveler. | MESH | Hayır | - |
 
 ### Moda Özgü Parametreler
 
@@ -56,4 +57,4 @@ Kamera Bilgisi Oluştur düğümü, 3D görüntüleme için bir kamera bilgi yap
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`
+**Source fingerprint (SHA-256):** `11ea813dae8166b0391ae178c43fc54fb393e5a4095446cbbbdf1277eea79105`

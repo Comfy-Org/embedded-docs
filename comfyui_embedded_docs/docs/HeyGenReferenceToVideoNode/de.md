@@ -25,8 +25,7 @@ Erzeugen Sie mit HeyGen Video 1.0 ein Video mit synchronisiertem Dialog und Ton 
 - **Prompt-Tags:** `@ImageN`, `@VideoN` und `@AudioN` werden ohne Beachtung der Groß-/Kleinschreibung abgeglichen. Die Nummer darf die Anzahl der verbundenen Referenzen dieses Typs nicht überschreiten, und der Prompt muss nach dem Entfernen von Leerraum nicht leer sein.
 - **Modus:** Mit mindestens einem Referenzbild oder -video ist die Anfrage ein Referenz-zu-Video-Lauf; ohne eines ist es ein reiner Text-zu-Video-Lauf.
 - **1080p- und 2k-Auflösung:** `resolution` `"1080p"` oder `"2k"` erfordert `aspect_ratio` `"16:9"` oder `"9:16"`; `"auto"` wird bei diesen Auflösungen nur akzeptiert, wenn weder ein Referenzbild noch ein Referenzvideo verbunden ist.
-- **Dauer:** Mit Referenzbildern oder -videos bleibt das generierte Video bei 15 Sekunden oder weniger. Längere Videos erfordern keine Referenzbilder oder -videos; `auto_duration` bewirkt nur, dass `duration` ignoriert wird (8 bis 30 Sekunden aus dem Dialog, 8 bis 15 mit Referenzen), es hebt diese Obergrenze nicht an.
-- **Seed:** Der Seed entscheidet nur, ob der Node erneut ausgeführt wird; Ergebnisse sind mit demselben Seed nicht reproduzierbar.
+- **Dauer:** Mit Referenzbildern oder -videos bleibt das generierte Video bei 15 Sekunden oder weniger. Längere Videos dürfen keine Referenzbilder oder -videos haben; `auto_duration` bewirkt nur, dass `duration` ignoriert wird (8 bis 30 Sekunden aus dem Dialog, 8 bis 15 mit Referenzen), es hebt diese Obergrenze nicht an.
 
 ## Ausgaben
 

@@ -25,8 +25,7 @@ HeyGen Video 1.0 kullanarak bir metin isteminden senkronize diyalog ve sese sahi
 - **İstem etiketleri:** `@ImageN`, `@VideoN` ve `@AudioN` büyük/küçük harf duyarsız eşleştirilir. Sayı, o türde bağlı referansların sayısını aşmamalıdır ve istem, boşluklar kırpıldıktan sonra boş olmamalıdır.
 - **Mod:** en az bir referans görüntü veya video ile istek, referanstan videoya çalıştırmasıdır; hiçbiri yoksa düz metinden videoya çalıştırmasıdır.
 - **1080p ve 2k çözünürlük:** `resolution` `"1080p"` veya `"2k"` ise `aspect_ratio` `"16:9"` veya `"9:16"` olmalıdır; `"auto"`, bu çözünürlüklerde yalnızca hiçbir referans görüntü ve hiçbir referans video bağlı değilken kabul edilir.
-- **Süre:** referans görüntüler veya videolar varsa oluşturulan video 15 saniye veya daha kısa kalır. Daha uzun videolar için referans görüntü veya video gerekmez; `auto_duration` yalnızca `duration` değerinin yok sayılmasını sağlar (diyalojdan 8 ile 30 saniye arası, referanslarla 8 ile 15 saniye arası), bu üst sınırı yükseltmez.
-- **Tohum:** tohum yalnızca düğümün yeniden çalışıp çalışmayacağını belirler; sonuçlar aynı tohumla yeniden üretilebilir değildir.
+- **Süre:** referans görüntüler veya videolar varsa oluşturulan video 15 saniye veya daha kısa kalır. Daha uzun videolarda referans görüntü veya video bulunamaz; `auto_duration` yalnızca `duration` değerinin yok sayılmasını sağlar (diyalojdan 8 ile 30 saniye arası, referanslarla 8 ile 15 saniye arası), bu üst sınırı yükseltmez.
 
 ## Çıktılar
 

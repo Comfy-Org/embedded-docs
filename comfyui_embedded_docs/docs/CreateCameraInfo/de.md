@@ -1,6 +1,6 @@
 # Kamera-Info erstellen
 
-Der Node Create Camera Info erstellt eine Kamerainformationsstruktur für 3D-Rendering. Er unterstützt drei Modi zum Definieren der Kamera: Orbit (Yaw/Pitch/Distance um ein Ziel), look_at (explizite Weltposition) und Quaternion (Position plus Rotation). Das Koordinatensystem ist rechtshändig mit Y als Hochachse.
+Der Node Create Camera Info erstellt eine Kamerainformationsstruktur für 3D-Rendering. Er unterstützt drei Modi zum Definieren der Kamera: Orbit (Yaw/Pitch/Distance um ein Ziel), look_at (explizite Weltposition) und Quaternion (Position plus Rotation). Das Koordinatensystem ist rechtshändig mit Y als Hochachse; mit verbundenem `mesh` werden Position, Ziel und Abstand im Koordinatensystem dieses Meshes gemessen, sodass dieselben Einstellungen jedes Mesh einrahmen.
 
 ## Eingaben
 
@@ -14,6 +14,7 @@ Der Node Create Camera Info erstellt eine Kamerainformationsstruktur für 3D-Ren
 | `fov` | Vertikales Sichtfeld in Grad. (Standard: 35.0) | FLOAT | Nein | 1.0 bis 120.0 |
 | `zoom` | Digitaler Zoom (Brennweitenmultiplikator). Werte größer als 1 zoomen heran, ohne die Kamera zu bewegen. (Standard: 1.0) | FLOAT | Nein | 0.01 bis 100.0 |
 | `camera_type` | Von Render Splat und Render Mesh verwendete Projektion: perspektivisch (Verkürzung) oder orthografisch (parallel). (Standard: "perspective") | COMBO | Nein | `"perspective"`<br>`"orthographic"` |
+| `mesh` | Rahmt dieses Mesh ein: Position, Ziel und Abstand werden von der Mitte seiner Bounding-Box in Einheiten des Durchmessers der Bounding-Sphere gemessen, sodass dieselben Einstellungen jedes Mesh einrahmen. | MESH | Nein | - |
 
 ### Modusspezifische Parameter
 
@@ -56,4 +57,4 @@ Wenn `mode` auf `"quaternion"` gesetzt ist, werden die folgenden Parameter verf�
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`
+**Source fingerprint (SHA-256):** `11ea813dae8166b0391ae178c43fc54fb393e5a4095446cbbbdf1277eea79105`

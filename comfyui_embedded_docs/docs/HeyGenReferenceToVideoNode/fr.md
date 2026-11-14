@@ -26,7 +26,6 @@ Générez une vidéo avec dialogue et son synchronisés à partir d’un prompt 
 - **Mode :** avec au moins une image ou une vidéo de référence, la requête est une exécution référence-vers-vidéo ; sans aucune, il s’agit d’une exécution texte-vers-vidéo simple.
 - **Résolution 1080p et 2k :** `resolution` `"1080p"` ou `"2k"` nécessite `aspect_ratio` `"16:9"` ou `"9:16"` ; `"auto"` n’est accepté à ces résolutions que lorsqu’aucune image de référence et aucune vidéo de référence ne sont connectées.
 - **Durée :** avec des images ou des vidéos de référence, la vidéo générée reste à 15 secondes ou moins. Les vidéos plus longues ne doivent pas avoir d’images ni de vidéos de référence ; `auto_duration` fait seulement ignorer `duration` (8 à 30 secondes à partir du dialogue, 8 à 15 avec des références), il ne relève pas ce plafond.
-- **Graine :** la graine détermine seulement si le nœud se réexécute ; les résultats ne sont pas reproductibles avec la même graine.
 
 ## Sorties
 

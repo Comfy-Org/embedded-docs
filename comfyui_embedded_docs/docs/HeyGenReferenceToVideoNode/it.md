@@ -25,8 +25,7 @@ Genera un video con dialogo e audio sincronizzati da un prompt testuale usando H
 - **Tag del prompt:** `@ImageN`, `@VideoN` e `@AudioN` vengono confrontati senza distinzione tra maiuscole e minuscole. Il numero non deve superare il conteggio dei riferimenti collegati di quel tipo, e il prompt deve essere non vuoto dopo aver rimosso gli spazi bianchi.
 - **Modalità:** con almeno un'immagine o un video di riferimento la richiesta è un'esecuzione con riferimento a video; senza alcuno è una semplice esecuzione da testo a video.
 - **Risoluzione 1080p e 2k:** la `resolution` `"1080p"` o `"2k"` richiede che `aspect_ratio` sia `"16:9"` o `"9:16"`; `"auto"` è accettato a queste risoluzioni solo quando non sono collegate immagini di riferimento e nessun video di riferimento.
-- **Durata:** con immagini o video di riferimento il video generato resta a 15 secondi o meno. I video più lunghi non necessitano di immagini o video di riferimento; `auto_duration` fa solo sì che `duration` venga ignorato (da 8 a 30 secondi dal dialogo, da 8 a 15 con riferimenti), non innalza quel limite.
-- **Seed:** il seed decide solo se il nodo viene rieseguito; i risultati non sono riproducibili con lo stesso seed.
+- **Durata:** con immagini o video di riferimento il video generato resta a 15 secondi o meno. I video più lunghi non devono avere immagini o video di riferimento; `auto_duration` fa solo sì che `duration` venga ignorato (da 8 a 30 secondi dal dialogo, da 8 a 15 con riferimenti), non innalza quel limite.
 
 ## Output
 

@@ -25,8 +25,7 @@ Genera un video con diálogo y sonido sincronizados a partir de un prompt de tex
 - **Etiquetas del prompt:** `@ImageN`, `@VideoN` y `@AudioN` se comparan sin distinguir mayúsculas y minúsculas. El número no debe superar la cantidad de referencias conectadas de ese tipo, y el prompt no debe estar vacío después de eliminar los espacios en blanco.
 - **Modo:** con al menos una imagen o un video de referencia, la solicitud es una ejecución de referencia a video; sin ninguna, es una ejecución simple de texto a video.
 - **Resolución 1080p y 2k:** `resolution` `"1080p"` o `"2k"` requiere `aspect_ratio` `"16:9"` o `"9:16"`; `"auto"` se acepta con estas resoluciones solo cuando no hay ninguna imagen de referencia ni ningún video de referencia conectado.
-- **Duración:** con imágenes o videos de referencia, el video generado se mantiene en 15 segundos o menos. Los videos más largos no necesitan imágenes ni videos de referencia; `auto_duration` solo hace que se ignore `duration` (8 a 30 segundos a partir del diálogo, 8 a 15 con referencias); no eleva ese límite.
-- **Semilla:** la semilla solo decide si el nodo se vuelve a ejecutar; los resultados no son reproducibles con la misma semilla.
+- **Duración:** con imágenes o videos de referencia, el video generado se mantiene en 15 segundos o menos. Los videos más largos no deben tener imágenes ni videos de referencia; `auto_duration` solo hace que se ignore `duration` (8 a 30 segundos a partir del diálogo, 8 a 15 con referencias); no eleva ese límite.
 
 ## Salidas
 

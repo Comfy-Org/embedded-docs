@@ -25,8 +25,7 @@ Gere um vídeo com diálogo e som sincronizados a partir de um prompt de texto u
 - **Tags do prompt:** `@ImageN`, `@VideoN` e `@AudioN` são correspondidas sem diferenciar maiúsculas de minúsculas. O número não deve exceder a contagem de referências conectadas desse tipo, e o prompt deve ser não vazio após remover espaços em branco das extremidades.
 - **Modo:** com pelo menos uma imagem ou vídeo de referência, a requisição é uma execução de referência para vídeo; sem nenhuma, é uma execução simples de texto para vídeo.
 - **Resolução 1080p e 2k:** `resolution` `"1080p"` ou `"2k"` exige `aspect_ratio` `"16:9"` ou `"9:16"`; `"auto"` é aceito nessas resoluções apenas quando nenhuma imagem de referência e nenhum vídeo de referência estão conectados.
-- **Duração:** com imagens ou vídeos de referência, o vídeo gerado permanece em 15 segundos ou menos. Vídeos mais longos não precisam de imagens ou vídeos de referência; `auto_duration` apenas faz `duration` ser ignorado (8 a 30 segundos a partir do diálogo, 8 a 15 com referências), e não eleva esse limite.
-- **Semente:** a semente apenas decide se o nó será reexecutado; os resultados não são reproduzíveis com a mesma semente.
+- **Duração:** com imagens ou vídeos de referência, o vídeo gerado permanece em 15 segundos ou menos. Vídeos mais longos não podem ter imagens ou vídeos de referência; `auto_duration` apenas faz `duration` ser ignorado (8 a 30 segundos a partir do diálogo, 8 a 15 com referências), e não eleva esse limite.
 
 ## Saídas
 
