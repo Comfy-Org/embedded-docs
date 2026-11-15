@@ -1,7 +1,5 @@
 # Orientación de Auto-Atención
 
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
 El nodo de Guía de Autoatención aplica guía a modelos de difusión modificando el mecanismo de atención durante el proceso de muestreo. Captura las puntuaciones de atención de los pasos de eliminación de ruido incondicionales y las utiliza para crear mapas de guía borrosos que influyen en la salida final. Esta técnica ayuda a guiar el proceso de generación aprovechando los propios patrones de atención del modelo.
 
 ## Entradas

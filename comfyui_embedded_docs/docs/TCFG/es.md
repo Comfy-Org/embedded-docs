@@ -1,7 +1,5 @@
 # Amortiguación Tangencial CFG
 
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
 TCFG (Amortiguación Tangencial CFG) refina las predicciones incondicionales (negativas) para alinearlas mejor con las predicciones condicionales (positivas) durante el proceso de muestreo. Esta técnica mejora la calidad de la salida aplicando amortiguación tangencial a la guía incondicional, basándose en el artículo de investigación 2503.18137. El nodo modifica el comportamiento de muestreo del modelo ajustando cómo se procesan las predicciones incondicionales durante la guía libre de clasificador.
 
 ## Entradas

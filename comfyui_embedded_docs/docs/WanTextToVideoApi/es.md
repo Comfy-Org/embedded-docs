@@ -1,7 +1,5 @@
 # Wan Text to Video
 
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
 El nodo Wan Text to Video genera contenido de video basado en descripciones textuales. Utiliza modelos de IA para crear videos a partir de indicaciones y admite varios tamaños de video, duraciones y entradas de audio opcionales. El nodo puede generar audio automáticamente cuando sea necesario y proporciona opciones para mejorar las indicaciones y agregar marcas de agua.
 
 ## Entradas

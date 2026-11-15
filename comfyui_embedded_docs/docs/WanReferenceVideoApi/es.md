@@ -1,7 +1,5 @@
 # Wan Reference to Video
 
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
 El nodo Wan Referencia a Video utiliza la apariencia visual y la voz de uno o más videos de referencia de entrada, junto con un mensaje de texto, para generar un nuevo video. Mantiene la coherencia con los personajes del material de referencia mientras crea nuevo contenido basado en tu descripción.
 
 ## Entradas

@@ -1,7 +1,5 @@
 # MiniMax Imagen a Video
 
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
 Genera videos de forma síncrona basándose en una imagen y un prompt, y parámetros opcionales utilizando la API de MiniMax. Este nodo toma una imagen de entrada y una descripción de texto para crear una secuencia de video, con varias opciones de modelo y configuraciones disponibles.
 
 ## Entradas

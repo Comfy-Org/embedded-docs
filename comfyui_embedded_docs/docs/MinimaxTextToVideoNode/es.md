@@ -1,7 +1,5 @@
 # MiniMax Texto a Video
 
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
 Genera videos de forma síncrona basándose en un prompt y parámetros opcionales utilizando la API de MiniMax. Este nodo crea contenido de video a partir de descripciones de texto conectándose al servicio de texto a video de MiniMax.
 
 ## Entradas
