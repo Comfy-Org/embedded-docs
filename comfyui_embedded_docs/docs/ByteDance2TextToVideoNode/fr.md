@@ -29,7 +29,16 @@ Ces entrées apparaissent lorsque `Seedance 2.5 Draft` est sélectionné. L’en
 
 ### Entrées Seedance 2.5 Flash
 
-Ces entrées apparaissent lorsque `Seedance 2.5 Flash` est sélectionné. L’ensemble des paramètres correspond à Seedance 2.5 ci-dessus, sauf que `resolution` ne propose que `"480p"` et `"720p"` (par défaut `"720p"`).
+Ces entrées apparaissent lorsque `Seedance 2.5 Flash` est sélectionné.
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `prompt` | Prompt textuel pour la génération de la vidéo. Placez les répliques parlées entre guillemets doubles pour orienter le dialogue généré. | STRING | Oui | — |
+| `resolution` | Résolution de la vidéo de sortie. (par défaut : `"720p"`) | COMBO | Yes | `"480p"`<br>`"720p"` |
+| `ratio` | Rapport d’aspect de la vidéo de sortie. (par défaut : `"16:9"`) | COMBO | Oui | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
+| `duration` | Durée de la vidéo de sortie en secondes. (par défaut : 5) | INT | Oui | 4 à 30 |
+| `generate_audio` | Active la génération audio pour la vidéo de sortie. (par défaut : True) | BOOLEAN | Oui | True / False |
+| `output_format` | Format de conteneur de la vidéo de sortie. (par défaut : `"mp4"`) | COMBO | Oui | `"mp4"` |
 
 ### Entrées Seedance 2.0
 

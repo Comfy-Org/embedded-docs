@@ -32,7 +32,17 @@ Questi input compaiono quando `model` è impostato su "Seedance 2.5 Draft". L'in
 
 ### Input di Seedance 2.5 Flash
 
-Questi input compaiono quando `model` è impostato su "Seedance 2.5 Flash". L'insieme dei parametri corrisponde a Seedance 2.5 sopra, tranne per il fatto che `resolution` offre solo `"480p"` e `"720p"` (predefinito `"720p"`).
+Questi input compaiono quando `model` è impostato su "Seedance 2.5 Flash".
+
+| Parametro | Descrizione | Tipo di dati | Obbligatorio | Range |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Prompt testuale per la generazione del video. Inserisci le battute parlate tra virgolette doppie per guidare il dialogo generato. Predefinito: stringa vuota. | STRING | Sì | Testo multilinea |
+| `resolution` | Risoluzione del video di output. (predefinito: `"720p"`) | COMBO | Yes | "480p"<br>"720p" |
+| `ratio` | Rapporto d'aspetto del video di output. Predefinito: 16:9. | COMBO | Sì | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
+| `duration` | Durata del video di output in secondi (4-30). Predefinito: 5. | INT | Sì | 4 a 30 |
+| `generate_audio` | Abilita la generazione audio per il video di output. Predefinito: True. | BOOLEAN | Sì | true<br>false |
+| `task_type` | Cosa fare con i media di riferimento. Ogni valore diverso da auto viene convalidato al momento dell'invio dell'attività, quindi impostazioni non corrispondenti falliscono prima dell'avvio della generazione.<br>auto: il modello deduce l'attività dal prompt e dagli input, e le impostazioni in conflitto con la sua interpretazione falliscono solo dopo l'avvio della generazione.<br>reference: genera un nuovo video guidato dalle immagini, dai video e dagli audio di riferimento.<br>edit: modifica un video di riferimento collegato (aggiungi, rimuovi, sostituisci); l'output mantiene la lunghezza e il rapporto d'aspetto del clip di origine, e i widget `duration` e `ratio` vengono ignorati.<br>extend: continua un video di riferimento collegato in avanti o all'indietro; il prompt dovrebbe dire "extend forward", "extend backward" o "continue", il rapporto d'aspetto segue il clip di origine, e l'output contiene solo il segmento appena generato della durata impostata, non il clip di origine. Predefinito: auto. | COMBO | Sì | "auto"<br>"reference"<br>"edit"<br>"extend" |
+| `output_format` | Formato contenitore del video di output. Predefinito: mp4. | COMBO | Sì | "mp4" |
 
 ### Input di Seedance 2.0
 

@@ -29,7 +29,16 @@ Questi input compaiono quando è selezionato `Seedance 2.5 Draft`. Il set di par
 
 ### Input di Seedance 2.5 Flash
 
-Questi input compaiono quando è selezionato `Seedance 2.5 Flash`. Il set di parametri corrisponde a Seedance 2.5 sopra, tranne per il fatto che `resolution` offre solo `"480p"` e `"720p"` (predefinito `"720p"`).
+Questi input compaiono quando è selezionato `Seedance 2.5 Flash`.
+
+| Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Prompt testuale per la generazione video. Metti le battute parlate tra virgolette doppie per guidare il dialogo generato. | STRING | Sì | — |
+| `resolution` | Risoluzione del video di output. (predefinito: `"720p"`) | COMBO | Yes | `"480p"`<br>`"720p"` |
+| `ratio` | Rapporto d'aspetto del video di output. (predefinito: `"16:9"`) | COMBO | Sì | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
+| `duration` | Durata del video di output in secondi. (predefinito: 5) | INT | Sì | da 4 a 30 |
+| `generate_audio` | Abilita la generazione audio per il video di output. (predefinito: True) | BOOLEAN | Sì | True / False |
+| `output_format` | Formato contenitore del video di output. (predefinito: `"mp4"`) | COMBO | Sì | `"mp4"` |
 
 ### Input di Seedance 2.0
 

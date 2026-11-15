@@ -34,7 +34,15 @@ Estas entradas aparecem quando `Seedance 2.5 Draft` é selecionado. O conjunto d
 
 ### Entradas do Seedance 2.5 Flash
 
-Estas entradas aparecem quando `Seedance 2.5 Flash` é selecionado. O conjunto de parâmetros corresponde ao Seedance 2.5 acima, exceto que `resolution` oferece apenas `"480p"` e `"720p"` (padrão `"720p"`).
+Estas entradas aparecem quando `Seedance 2.5 Flash` é selecionado.
+
+| Parâmetro | Descrição | Tipo de dados | Obrigatório | Faixa |
+|-----------|-----------|---------------|-------------|-------|
+| `prompt` | Prompt de texto para geração de vídeo. Coloque falas entre aspas duplas para orientar o diálogo gerado. | STRING | Sim | - |
+| `resolution` | Resolução do vídeo de saída. (padrão: `"720p"`) | COMBO | Yes | `"480p"`<br>`"720p"` |
+| `duration` | Duração do vídeo de saída em segundos (4-30). O padrão é 5. | INT | Sim | 4 a 30 |
+| `generate_audio` | Ativar geração de áudio para o vídeo de saída. O padrão é True. | BOOLEAN | Sim | False<br>True |
+| `output_format` | Formato de contêiner do vídeo de saída. O padrão é mp4. | COMBO | Sim | `"mp4"` |
 
 ### Entradas do Seedance 2.0
 

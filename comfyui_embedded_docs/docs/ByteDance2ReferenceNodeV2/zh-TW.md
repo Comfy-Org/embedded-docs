@@ -32,7 +32,17 @@ ByteDance Seedance 2.5 Reference to Video 會使用 ByteDance Seedance 模型（
 
 ### Seedance 2.5 Flash 輸入
 
-當 `model` 設為 "Seedance 2.5 Flash" 時，會顯示這些輸入。參數集與上方的 Seedance 2.5 相同，差別在於 `resolution` 僅提供 `"480p"` 與 `"720p"`（預設值 `"720p"`）。
+當 `model` 設為 "Seedance 2.5 Flash" 時，會顯示這些輸入。
+
+| 參數 | 說明 | 資料類型 | 必填 | 範圍 |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | 用於影片生成的文字提示。將台詞放入雙引號中，可引導生成的對話。預設值：空字串。 | STRING | 是 | 多行文字 |
+| `resolution` | 輸出影片的解析度。（預設值：`"720p"`） | COMBO | Yes | "480p"<br>"720p" |
+| `ratio` | 輸出影片的長寬比。預設值：16:9。 | COMBO | 是 | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
+| `duration` | 輸出影片的持續時間（秒）（4-30）。預設值：5。 | INT | 是 | 4 至 30 |
+| `generate_audio` | 啟用輸出影片的音訊生成。預設值：True。 | BOOLEAN | 是 | true<br>false |
+| `task_type` | 如何處理參考媒體。除了 auto 以外的每個值都會在提交任務時進行驗證，因此不相符的設定會在生成開始前失敗。<br>auto：模型會根據提示與輸入推斷任務，與其判讀衝突的設定只會在生成開始後失敗。<br>reference：在參考圖像、影片與音訊的引導下生成新影片。<br>edit：變更已連接的參考影片（新增、移除、取代）；輸出會保留來源片段的原始長度與長寬比，且會忽略 `duration` 與 `ratio` 小工具。<br>extend：向前或向後延續已連接的參考影片；提示應包含 "extend forward"、"extend backward" 或 "continue"，長寬比會跟隨來源片段，且輸出只包含你所設定持續時間內新生成的片段，不包含來源片段。預設值：auto。 | COMBO | 是 | "auto"<br>"reference"<br>"edit"<br>"extend" |
+| `output_format` | 輸出影片的容器格式。預設值：mp4。 | COMBO | 是 | "mp4" |
 
 ### Seedance 2.0 輸入
 

@@ -32,7 +32,17 @@ Ces entrées apparaissent lorsque `model` est défini sur "Seedance 2.5 Draft". 
 
 ### Entrées Seedance 2.5 Flash
 
-Ces entrées apparaissent lorsque `model` est défini sur "Seedance 2.5 Flash". L'ensemble des paramètres correspond à Seedance 2.5 ci-dessus, sauf que `resolution` ne propose que `"480p"` et `"720p"` (par défaut `"720p"`).
+Ces entrées apparaissent lorsque `model` est défini sur "Seedance 2.5 Flash".
+
+| Paramètre | Description | Type de données | Obligatoire | Plage |
+|-----------|-------------|-----------------|-------------|-------|
+| `prompt` | Prompt texte pour la génération vidéo. Placez les répliques parlées entre guillemets doubles pour orienter le dialogue généré. Par défaut : chaîne vide. | STRING | Oui | Texte multiligne |
+| `resolution` | Résolution de la vidéo de sortie. (par défaut : `"720p"`) | COMBO | Yes | "480p"<br>"720p" |
+| `ratio` | Rapport d'aspect de la vidéo de sortie. Par défaut : 16:9. | COMBO | Oui | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
+| `duration` | Durée de la vidéo de sortie en secondes (4-30). Par défaut : 5. | INT | Oui | 4 à 30 |
+| `generate_audio` | Active la génération audio pour la vidéo de sortie. Par défaut : True. | BOOLEAN | Oui | true<br>false |
+| `task_type` | Ce qu'il faut faire avec les médias de référence. Toutes les valeurs sauf auto sont validées lors de la soumission de la tâche ; les réglages incompatibles échouent donc avant le début de la génération.<br>auto : le modèle déduit la tâche à partir du prompt et des entrées, et les réglages qui entrent en conflit avec son interprétation échouent seulement après le début de la génération.<br>reference : génère une nouvelle vidéo guidée par les images, vidéos et audios de référence.<br>edit : modifie une vidéo de référence connectée (ajouter, supprimer, remplacer) ; la sortie conserve la longueur et le rapport d'aspect du clip source, et les widgets `duration` et `ratio` sont ignorés.<br>extend : prolonge une vidéo de référence connectée vers l'avant ou vers l'arrière ; le prompt doit indiquer "extend forward", "extend backward" ou "continue", le rapport d'aspect suit le clip source, et la sortie contient uniquement le segment nouvellement généré correspondant à la durée que vous définissez, et non le clip source. Par défaut : auto. | COMBO | Oui | "auto"<br>"reference"<br>"edit"<br>"extend" |
+| `output_format` | Format de conteneur de la vidéo de sortie. Par défaut : mp4. | COMBO | Oui | "mp4" |
 
 ### Entrées Seedance 2.0
 

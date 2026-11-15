@@ -32,7 +32,17 @@ Estas entradas aparecem quando `model` está definido como "Seedance 2.5 Draft".
 
 ### Entradas do Seedance 2.5 Flash
 
-Estas entradas aparecem quando `model` está definido como "Seedance 2.5 Flash". O conjunto de parâmetros corresponde ao Seedance 2.5 acima, exceto que `resolution` oferece apenas `"480p"` e `"720p"` (padrão `"720p"`).
+Estas entradas aparecem quando `model` está definido como "Seedance 2.5 Flash".
+
+| Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Prompt de texto para geração de vídeo. Coloque falas entre aspas duplas para orientar o diálogo gerado. Padrão: string vazia. | STRING | Sim | Texto multilinha |
+| `resolution` | Resolução do vídeo de saída. (padrão: `"720p"`) | COMBO | Yes | "480p"<br>"720p" |
+| `ratio` | Proporção do vídeo de saída. Padrão: 16:9. | COMBO | Sim | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
+| `duration` | Duração do vídeo de saída em segundos (4-30). Padrão: 5. | INT | Sim | 4 a 30 |
+| `generate_audio` | Ativar geração de áudio para o vídeo de saída. Padrão: True. | BOOLEAN | Sim | true<br>false |
+| `task_type` | O que fazer com a mídia de referência. Todo valor exceto auto é validado quando a tarefa é enviada, então configurações incompatíveis falham antes de a geração começar.<br>auto: o modelo infere a tarefa a partir do prompt e das entradas, e configurações que conflitam com sua leitura falham somente depois que a geração começou.<br>reference: gera um novo vídeo guiado pelas imagens, vídeos e áudio de referência.<br>edit: altera um vídeo de referência conectado (adicionar, remover, substituir); a saída mantém o comprimento e a proporção do próprio clipe de origem, e os widgets `duration` e `ratio` são ignorados.<br>extend: continua um vídeo de referência conectado para frente ou para trás; o prompt deve dizer "extend forward", "extend backward" ou "continue"; a proporção segue o clipe de origem, e a saída contém apenas o segmento recém-gerado com a duração que você definiu, não o clipe de origem. Padrão: auto. | COMBO | Sim | "auto"<br>"reference"<br>"edit"<br>"extend" |
+| `output_format` | Formato de contêiner do vídeo de saída. Padrão: mp4. | COMBO | Sim | "mp4" |
 
 ### Entradas do Seedance 2.0
 

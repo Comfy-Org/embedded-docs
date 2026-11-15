@@ -34,7 +34,15 @@
 
 ### Seedance 2.5 Flash 輸入
 
-選取 `Seedance 2.5 Flash` 時會顯示這些輸入。參數集與上方的 Seedance 2.5 相同，但 `resolution` 只提供 `"480p"` 與 `"720p"`（預設 `"720p"`）。
+選取 `Seedance 2.5 Flash` 時會顯示這些輸入。
+
+| 參數 | 說明 | 資料類型 | 必填 | 範圍 |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | 用於影片生成的文字提示詞。將台詞放在雙引號中，以引導生成的對話。 | STRING | 是 | - |
+| `resolution` | 輸出影片的解析度。（預設值：`"720p"`） | COMBO | Yes | `"480p"`<br>`"720p"` |
+| `duration` | 輸出影片的長度（秒，4-30）。預設為 5。 | INT | 是 | 4 到 30 |
+| `generate_audio` | 啟用輸出影片的音訊生成。預設為 True。 | BOOLEAN | 是 | False<br>True |
+| `output_format` | 輸出影片的容器格式。預設為 mp4。 | COMBO | 是 | `"mp4"` |
 
 ### Seedance 2.0 輸入
 

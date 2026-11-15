@@ -32,7 +32,17 @@ Diese Eingaben erscheinen, wenn `model` auf "Seedance 2.5 Draft" gesetzt ist. De
 
 ### Seedance 2.5 Flash Eingaben
 
-Diese Eingaben erscheinen, wenn `model` auf "Seedance 2.5 Flash" gesetzt ist. Der Parametersatz entspricht dem obigen Seedance 2.5, außer dass `resolution` nur `"480p"` und `"720p"` anbietet (Standard `"720p"`).
+Diese Eingaben erscheinen, wenn `model` auf "Seedance 2.5 Flash" gesetzt ist.
+
+| Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
+|-----------|--------------|----------|--------------|---------|
+| `prompt` | Text-Prompt für die Videogenerierung. Setzen Sie gesprochene Zeilen in doppelte Anführungszeichen, um den generierten Dialog zu steuern. Standard: leerer String. | STRING | Ja | Mehrzeiliger Text |
+| `resolution` | Auflösung des Ausgabevideos. (Standard: `"720p"`) | COMBO | Yes | "480p"<br>"720p" |
+| `ratio` | Seitenverhältnis des Ausgabevideos. Standard: 16:9. | COMBO | Ja | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
+| `duration` | Dauer des Ausgabevideos in Sekunden (4-30). Standard: 5. | INT | Ja | 4 bis 30 |
+| `generate_audio` | Aktiviert die Audiogenerierung für das Ausgabevideo. Standard: True. | BOOLEAN | Ja | true<br>false |
+| `task_type` | Was mit den Referenzmedien gemacht werden soll. Jeder Wert außer auto wird beim Absenden der Aufgabe validiert, sodass nicht passende Einstellungen fehlschlagen, bevor die Generierung beginnt.<br>auto: Das Modell leitet die Aufgabe aus dem Prompt und den Eingaben ab; Einstellungen, die seiner Interpretation widersprechen, schlagen erst fehl, nachdem die Generierung begonnen hat.<br>reference: Generiert ein neues Video, gesteuert durch die Referenzbilder, -videos und -audios.<br>edit: Ändert ein verbundenes Referenzvideo (hinzufügen, entfernen, ersetzen); die Ausgabe behält die eigene Länge und das Seitenverhältnis des Quellclips, und die Widgets `duration` und `ratio` werden ignoriert.<br>extend: Setzt ein verbundenes Referenzvideo vorwärts oder rückwärts fort; der Prompt sollte "extend forward", "extend backward" oder "continue" lauten, das Seitenverhältnis folgt dem Quellclip, und die Ausgabe enthält nur das neu generierte Segment in der von Ihnen festgelegten Dauer, nicht den Quellclip. Standard: auto. | COMBO | Ja | "auto"<br>"reference"<br>"edit"<br>"extend" |
+| `output_format` | Containerformat des Ausgabevideos. Standard: mp4. | COMBO | Ja | "mp4" |
 
 ### Seedance 2.0 Eingaben
 

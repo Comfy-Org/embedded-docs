@@ -8,7 +8,7 @@ ByteDance Seedance 2.5 Reference to Video, metin istemi ve isteğe bağlı refer
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Model seçici. En yeni model, 30 saniyeye kadar videolar ve mp4 çıktısı için Seedance 2.5; `draft_task_id` çıktısı ByteDance Seedance 2.5 Draft to Final Video düğümünde 1080p veya 4k nihai videoyu oluşturan hızlı 480p önizleme için Seedance 2.5 Draft; maksimum kalite ve 4k için Seedance 2.5 Flash, 30 saniyeye kadar 480p ve 720p videolar içindir; Seedance 2.0; hız optimizasyonu için Fast; en hızlı ve en düşük maliyetli oluşturma için Mini. Bir model seçmek, aşağıda gösterilen girdi bileşenlerini değiştirir. | DYNAMIC_COMBO | Evet | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.5 Flash"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
+| `model` | Model seçici. En yeni model, 30 saniyeye kadar videolar ve mp4 çıktısı için Seedance 2.5; `draft_task_id` çıktısı ByteDance Seedance 2.5 Draft to Final Video düğümünde 1080p veya 4k nihai videoyu oluşturan hızlı 480p önizleme için Seedance 2.5 Draft; Seedance 2.5 Flash, 30 saniyeye kadar 480p ve 720p videolar içindir; maksimum kalite ve 4k için Seedance 2.0; hız optimizasyonu için Fast; en hızlı ve en düşük maliyetli oluşturma için Mini. Bir model seçmek, aşağıda gösterilen girdi bileşenlerini değiştirir. | DYNAMIC_COMBO | Evet | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.5 Flash"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
 | `seed` | `seed`, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar `seed` değerinden bağımsız olarak deterministik değildir. Varsayılan: 0. | INT | Evet | 0 - 2147483647 |
 | `watermark` | Videoya filigran eklenip eklenmeyeceği. Varsayılan: False. Gelişmiş ayar. | BOOLEAN | Evet | true<br>false |
 
@@ -32,7 +32,17 @@ Bu girdiler `model` "Seedance 2.5 Draft" olarak ayarlandığında görünür. Pa
 
 ### Seedance 2.5 Flash Girdileri
 
-Bu girdiler `model` "Seedance 2.5 Flash" olarak ayarlandığında görünür. Parametre kümesi yukarıdaki Seedance 2.5 ile eşleşir; ancak `resolution` yalnızca `"480p"` ve `"720p"` sunar (varsayılan `"720p"`).
+Bu girdiler `model` "Seedance 2.5 Flash" olarak ayarlandığında görünür.
+
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Video oluşturma için metin istemi. Oluşturulan diyaloğu yönlendirmek için konuşulan replikleri çift tırnak içine alın. Varsayılan: boş dize. | STRING | Evet | Çok satırlı metin |
+| `resolution` | Çıktı videosunun çözünürlüğü. (varsayılan: `"720p"`) | COMBO | Yes | "480p"<br>"720p" |
+| `ratio` | Çıktı videosunun en-boy oranı. Varsayılan: 16:9. | COMBO | Evet | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
+| `duration` | Çıktı videosunun saniye cinsinden süresi (4-30). Varsayılan: 5. | INT | Evet | 4 - 30 |
+| `generate_audio` | Çıktı videosu için ses oluşturmayı etkinleştir. Varsayılan: True. | BOOLEAN | Evet | true<br>false |
+| `task_type` | Referans medyasıyla ne yapılacağı. auto dışındaki her değer, görev gönderildiğinde doğrulanır; bu nedenle uyumsuz ayarlar oluşturma başlamadan önce başarısız olur.<br>auto: model görevi istemden ve girdilerden çıkarır; bunun yorumuyla çelişen ayarlar yalnızca oluşturma başladıktan sonra başarısız olur.<br>reference: referans görseller, videolar ve sesler rehberliğinde yeni bir video oluştur.<br>edit: bağlı bir referans videoyu değiştir (ekle, kaldır, değiştir); çıktı, kaynak klibin kendi uzunluğunu ve en-boy oranını korur ve `duration` ile `ratio` bileşenleri yok sayılır.<br>extend: bağlı bir referans videoyu ileri veya geri doğru sürdür; istem "extend forward", "extend backward" veya "continue" demelidir; en-boy oranı kaynak klibi izler ve çıktı, kaynak klibi değil, ayarladığınız sürede yalnızca yeni oluşturulan bölümü içerir. Varsayılan: auto. | COMBO | Evet | "auto"<br>"reference"<br>"edit"<br>"extend" |
+| `output_format` | Çıktı videosunun kapsayıcı biçimi. Varsayılan: mp4. | COMBO | Evet | "mp4" |
 
 ### Seedance 2.0 Girdileri
 

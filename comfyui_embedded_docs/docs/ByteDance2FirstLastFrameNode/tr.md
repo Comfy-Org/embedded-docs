@@ -34,7 +34,15 @@ Bu girdiler `Seedance 2.5 Draft` seçildiğinde görünür. Parametre kümesi yu
 
 ### Seedance 2.5 Flash Girdileri
 
-Bu girdiler `Seedance 2.5 Flash` seçildiğinde görünür. Parametre kümesi yukarıdaki Seedance 2.5 ile aynıdır; ancak `resolution` yalnızca `"480p"` ve `"720p"` sunar (varsayılan `"720p"`).
+Bu girdiler `Seedance 2.5 Flash` seçildiğinde görünür.
+
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Video üretimi için metin istemi. Oluşturulan diyaloğu yönlendirmek için konuşma repliklerini çift tırnak içine alın. | STRING | Evet | - |
+| `resolution` | Çıktı videosunun çözünürlüğü. (varsayılan: `"720p"`) | COMBO | Yes | `"480p"`<br>`"720p"` |
+| `duration` | Çıktı videosunun saniye cinsinden süresi (4-30). Varsayılan 5'tir. | INT | Evet | 4 - 30 |
+| `generate_audio` | Çıktı videosu için ses üretimini etkinleştir. Varsayılan True. | BOOLEAN | Evet | False<br>True |
+| `output_format` | Çıktı videosunun kapsayıcı biçimi. Varsayılan mp4'tür. | COMBO | Evet | `"mp4"` |
 
 ### Seedance 2.0 Girdileri
 
