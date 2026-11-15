@@ -8,14 +8,14 @@ Rimuove lo sfarfallio temporale da un video elaborato, in modo che ogni fotogram
 | --- | --- | --- | --- | --- |
 | `optical_flow` | Modello di flusso ottico dal nodo Load Optical Flow Model (torchvision RAFT-large). | OPTICAL_FLOW | Sì | - |
 | `images` | Fotogrammi con sfarfallio da stabilizzare, ad esempio un video che è stato ingrandito o elaborato fotogramma per fotogramma. | IMAGE | Sì | - |
-| `guide` | Fotogrammi sorgente stabili di cui seguire il movimento, a qualsiasi risoluzione. Il valore predefinito è `images`, che rimuove meno sfarfallio. | IMAGE | No | - |
+| `guide` | Fotogrammi sorgente stabili di cui seguire il movimento, a qualsiasi risoluzione. Il valore predefinito è `images`, che rimuove meno sfarfallio. Le differenze tra fotogrammi consecutivi della guida, dopo la compensazione del movimento, pesano anch'esse sulla levigatura: se la guida cambia in modi che il flusso non spiega, la levigatura diminuisce anche quando la stima del movimento è corretta. | IMAGE | No | - |
 | `strength` | Quanto fortemente ogni fotogramma segue i propri vicini (predefinito: 1.0). Valori più alti rimuovono più sfarfallio e ammorbidiscono maggiormente i dettagli fini; 0 restituisce i fotogrammi invariati. | FLOAT | Sì | 0.0 a 100.0 (passo: 0.1) |
 | `direction` | Direzione della passata. `bidirectional` calcola la media di una passata in avanti e una all'indietro, il che evita di rimanere in ritardo rispetto al movimento; `forward` esegue una singola passata. (predefinito: `bidirectional`) | COMBO | Sì | `"bidirectional"`<br>`"forward"` |
 | `threshold` | Le modifiche superiori a questa soglia tra un fotogramma e il suo vicino compensato dal movimento vengono considerate reali e levigate meno (predefinito: 0.1). 0 leviga allo stesso modo ogni cambiamento. | FLOAT | Sì | 0.0 a 1.0 (passo: 0.01) |
 
 **Note:**
 
-- La guida fornisce solo il movimento, non i pixel: il flusso ottico viene calcolato su una copia ridotta, quindi non deve avere le stesse dimensioni di `images`.
+- Il flusso ottico viene calcolato su una copia ridotta della guida, quindi non deve avere le stesse dimensioni di `images`; i pixel della guida non vengono uniti all'output.
 - I fotogrammi oltre il più corto tra `images` e `guide` non vengono elaborati. Se `guide` è più corto, i fotogrammi restanti tornano invariati.
 
 ## Output
