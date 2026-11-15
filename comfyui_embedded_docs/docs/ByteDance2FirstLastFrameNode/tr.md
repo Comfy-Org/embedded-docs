@@ -39,7 +39,7 @@ Bu girdiler `Seedance 2.5 Flash` seçildiğinde görünür.
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Video üretimi için metin istemi. Oluşturulan diyaloğu yönlendirmek için konuşma repliklerini çift tırnak içine alın. | STRING | Evet | - |
-| `resolution` | Çıktı videosunun çözünürlüğü. (varsayılan: `"720p"`) | COMBO | Yes | `"480p"`<br>`"720p"` |
+| `resolution` | Çıktı videosunun çözünürlüğü. (varsayılan: `"720p"`) | COMBO | Evet | `"480p"`<br>`"720p"` |
 | `duration` | Çıktı videosunun saniye cinsinden süresi (4-30). Varsayılan 5'tir. | INT | Evet | 4 - 30 |
 | `generate_audio` | Çıktı videosu için ses üretimini etkinleştir. Varsayılan True. | BOOLEAN | Evet | False<br>True |
 | `output_format` | Çıktı videosunun kapsayıcı biçimi. Varsayılan mp4'tür. | COMBO | Evet | `"mp4"` |

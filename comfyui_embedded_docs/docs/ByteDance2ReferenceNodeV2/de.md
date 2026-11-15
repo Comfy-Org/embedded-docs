@@ -37,7 +37,7 @@ Diese Eingaben erscheinen, wenn `model` auf "Seedance 2.5 Flash" gesetzt ist.
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
 | `prompt` | Text-Prompt für die Videogenerierung. Setzen Sie gesprochene Zeilen in doppelte Anführungszeichen, um den generierten Dialog zu steuern. Standard: leerer String. | STRING | Ja | Mehrzeiliger Text |
-| `resolution` | Auflösung des Ausgabevideos. (Standard: `"720p"`) | COMBO | Yes | "480p"<br>"720p" |
+| `resolution` | Auflösung des Ausgabevideos. (Standard: `"720p"`) | COMBO | Ja | "480p"<br>"720p" |
 | `ratio` | Seitenverhältnis des Ausgabevideos. Standard: 16:9. | COMBO | Ja | "16:9"<br>"4:3"<br>"1:1"<br>"3:4"<br>"9:16"<br>"21:9"<br>"adaptive" |
 | `duration` | Dauer des Ausgabevideos in Sekunden (4-30). Standard: 5. | INT | Ja | 4 bis 30 |
 | `generate_audio` | Aktiviert die Audiogenerierung für das Ausgabevideo. Standard: True. | BOOLEAN | Ja | true<br>false |

@@ -39,7 +39,7 @@ Questi input vengono visualizzati quando è selezionato `Seedance 2.5 Flash`.
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `prompt` | Prompt testuale per la generazione del video. Inserisci le battute parlate tra virgolette doppie per guidare il dialogo generato. | STRING | Sì | - |
-| `resolution` | Risoluzione del video di output. (predefinito: `"720p"`) | COMBO | Yes | `"480p"`<br>`"720p"` |
+| `resolution` | Risoluzione del video di output. (predefinito: `"720p"`) | COMBO | Sì | `"480p"`<br>`"720p"` |
 | `duration` | Durata del video di output in secondi (4-30). Il valore predefinito è 5. | INT | Sì | 4 a 30 |
 | `generate_audio` | Abilita la generazione audio per il video di output. Il valore predefinito è True. | BOOLEAN | Sì | False<br>True |
 | `output_format` | Formato contenitore del video di output. Il valore predefinito è mp4. | COMBO | Sì | `"mp4"` |
