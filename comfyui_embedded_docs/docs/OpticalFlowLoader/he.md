@@ -14,7 +14,7 @@
 
 | שם פלט | תיאור | סוג נתונים |
 | --- | --- | --- |
-| `OPTICAL_FLOW` | מודל הזרימה האופטית שנטען, מוגדר למצב הערכה (evaluation mode), עם דיוק fp16 בהתקנים שתומכים בכך (אחרת float32), ועטוף ב-ModelPatcher לשימוש עם צמתים אחרים. | OPTICAL_FLOW |
+| `OPTICAL_FLOW` | מודל הזרימה האופטית שנטען, מוגדר למצב הערכה (evaluation mode), עם דיוק fp16 בהתקנים שתומכים בכך וללא `--force-fp32` (אחרת float32), ועטוף ב-ModelPatcher לשימוש עם צמתים אחרים. | OPTICAL_FLOW |
 
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpticalFlowLoader/he.md)
 

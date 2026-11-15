@@ -13,6 +13,11 @@ Retire le scintillement temporel d'une vidéo traitée, afin que chaque image co
 | `direction` | Direction du passage. `bidirectional` moyenne un passage avant et un passage arrière, ce qui évite d'être en retard sur le mouvement ; `forward` exécute un seul passage. (par défaut : `bidirectional`) | COMBO | Oui | `"bidirectional"`<br>`"forward"` |
 | `threshold` | Les changements supérieurs à cette valeur entre une image et son voisin compensé en mouvement sont traités comme réels et moins lissés (par défaut : 0.1). 0 lisse tous les changements de la même manière. | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
 
+**Notes :**
+
+- Le guide ne fournit que le mouvement, pas les pixels : le flux optique est calculé sur une copie réduite, il n’a donc pas besoin d’avoir la taille de `images`.
+- Les images au-delà du plus court de `images` et `guide` ne sont pas traitées. Si `guide` est plus courte, les images restantes sont renvoyées inchangées.
+
 ## Sorties
 
 | Nom de sortie | Description | Type de données |

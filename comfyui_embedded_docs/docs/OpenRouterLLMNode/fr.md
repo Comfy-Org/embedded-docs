@@ -158,7 +158,7 @@ Modèles textuels uniquement — aucune image ou vidéo de référence.
   - OpenAI : `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-terra-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-luna`, `openai/gpt-5.5-pro`, `openai/gpt-5.5`
   - Google : `google/gemini-3.5-flash`
   - xAI : `x-ai/grok-4.5`, `x-ai/grok-4.20`, `x-ai/grok-4.3`
-  - xAI : `meta/muse-wonder`, `meta/muse-spark-1.3`, `meta/muse-ember`
+  - Meta : `meta/muse-wonder`, `meta/muse-spark-1.3`, `meta/muse-ember`
   - DeepSeek : `deepseek/deepseek-v4-pro`, `deepseek/deepseek-v4-flash`, `deepseek/deepseek-v3.2`
   - Qwen : , `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
   - Mistral : `mistralai/mistral-large-2512`, `mistralai/mistral-medium-3-5`

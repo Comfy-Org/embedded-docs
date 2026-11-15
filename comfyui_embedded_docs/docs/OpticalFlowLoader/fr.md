@@ -14,7 +14,7 @@ Remarque : Le checkpoint sélectionné doit être un state dict RAFT-large de to
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `OPTICAL_FLOW` | Le modèle de flux optique chargé, réglé sur le mode évaluation, en précision fp16 sur les appareils qui la prennent en charge (float32 sinon), enveloppé dans un ModelPatcher pour utilisation avec d'autres nœuds. | OPTICAL_FLOW |
+| `OPTICAL_FLOW` | Le modèle de flux optique chargé, réglé sur le mode évaluation, en précision fp16 sur les appareils qui la prennent en charge et sans `--force-fp32` (float32 sinon), enveloppé dans un ModelPatcher pour utilisation avec d'autres nœuds. | OPTICAL_FLOW |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpticalFlowLoader/fr.md)
 

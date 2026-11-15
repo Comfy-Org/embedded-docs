@@ -13,6 +13,11 @@
 | `direction` | Geçişin yönü. `bidirectional` ileri ve geri geçişin ortalamasını alır, bu hareketin gerisinde kalmayı önler; `forward` tek bir geçiş çalıştırır. (varsayılan: `bidirectional`) | COMBO | Evet | `"bidirectional"`<br>`"forward"` |
 | `threshold` | Bir kare ile hareketi telafi edilmiş komşusu arasındaki bu değerden büyük değişiklikler gerçek olarak kabul edilir ve daha az yumuşatılır (varsayılan: 0.1). 0, her değişikliği aynı şekilde yumuşatır. | FLOAT | Evet | 0.0 ile 1.0 arası (adım: 0.01) |
 
+**Notlar:**
+
+- Kılavuz yalnızca hareketi sağlar, pikselleri değil: optik akış küçültülmüş bir kopya üzerinde hesaplanır, bu yüzden `images` ile aynı boyutta olması gerekmez.
+- `images` ile `guide` arasından kısa olanın ötesindeki kareler işlenmez. `guide` daha kısaysa kalan kareler değişmeden döner.
+
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |

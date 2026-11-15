@@ -14,7 +14,7 @@ Hinweis: Der ausgewählte Checkpoint muss ein torchvision-RAFT-large-State-Dict 
 
 | Ausgabename | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `OPTICAL_FLOW` | Das geladene Optical-Flow-Modell, auf den Evaluierungsmodus eingestellt, mit fp16-Präzision auf Geräten, die das unterstützen (sonst float32), und in einen ModelPatcher für die Verwendung mit anderen Nodes verpackt. | OPTICAL_FLOW |
+| `OPTICAL_FLOW` | Das geladene Optical-Flow-Modell, auf den Evaluierungsmodus eingestellt, mit fp16-Präzision auf Geräten, die das unterstützen, sofern `--force-fp32` nicht gesetzt ist (sonst float32), und in einen ModelPatcher für die Verwendung mit anderen Nodes verpackt. | OPTICAL_FLOW |
 
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpticalFlowLoader/de.md)
 

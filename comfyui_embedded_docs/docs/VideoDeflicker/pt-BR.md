@@ -13,6 +13,11 @@ Remove a cintilação temporal de um vídeo processado, de modo que cada quadro 
 | `direction` | Direção da passada. `bidirectional` faz a média de uma passada para frente e uma para trás, o que evita atraso em relação ao movimento; `forward` executa uma única passada. (padrão: `bidirectional`) | COMBO | Sim | `"bidirectional"`<br>`"forward"` |
 | `threshold` | Mudanças maiores que este limiar entre um quadro e seu vizinho compensado por movimento são tratadas como reais e suavizadas menos (padrão: 0.1). 0 suaviza todas as mudanças da mesma forma. | FLOAT | Sim | 0.0 a 1.0 (passo: 0.01) |
 
+**Notas:**
+
+- O guia fornece apenas o movimento, não os pixels: o fluxo óptico é calculado sobre uma cópia reduzida, então ele não precisa ter o tamanho de `images`.
+- Quadros além do mais curto entre `images` e `guide` não são processados. Se `guide` for mais curto, os quadros restantes voltam inalterados.
+
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |

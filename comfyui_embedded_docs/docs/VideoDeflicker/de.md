@@ -13,6 +13,11 @@ Entfernt zeitliches Flackern aus einem verarbeiteten Video, sodass jedes Einzelb
 | `direction` | Richtung des Durchlaufs. `bidirectional` mittelt einen Vorwärts- und einen Rückwärtsdurchlauf, wodurch ein Nachziehen hinter der Bewegung vermieden wird; `forward` führt einen einzelnen Durchlauf aus. (Standard: `bidirectional`) | COMBO | Ja | `"bidirectional"`<br>`"forward"` |
 | `threshold` | Änderungen, die zwischen einem Einzelbild und seinem bewegungskompensierten Nachbarbild größer als dieser Wert sind, werden als real behandelt und weniger geglättet (Standard: 0.1). 0 glättet jede Änderung gleichermaßen. | FLOAT | Ja | 0.0 bis 1.0 (Schritt: 0.01) |
 
+**Hinweise:**
+
+- Die Führung liefert nur die Bewegung, nicht die Pixel: Der Optical Flow wird auf einer verkleinerten Kopie berechnet, sie muss also nicht dieselbe Größe wie `images` haben.
+- Einzelbilder jenseits des kürzeren von `images` und `guide` werden nicht entrauscht. Ist `guide` kürzer, kommen die restlichen Einzelbilder unverändert zurück.
+
 ## Ausgaben
 
 | Ausgabename | Beschreibung | Datentyp |
