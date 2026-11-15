@@ -54,16 +54,26 @@ def body_lines(text: str):
 
 
 # Words that turn a nearby "Import Model" mention into a warning instead of advice.
-NEGATION_CUES = (
-    "no ", "not ", "never", "nunca", "jamais", "nicht", "kein", "non ", "não", "nao",
-    "никогда", "не ", "لا ", "لم ", "לא ", "al ", "asla", "hiçbir", "بدون", "negar",
+# Matched as whole words: a substring test turns "original " into a cue for "al ".
+NEGATION_CUES = re.compile(
+    r"(?<!\w)(?:no|not|never|nunca|jamais|nicht|kein\w*|non|não|nao|никогда|не|لا|لم|לא|asla|hiçbir|بدون|negar)(?!\w)",
+    re.I,
+)
+
+# AI-disclosure blockquote lines the extractor strips before picking the description.
+AI_DISCLOSURE = re.compile(r"(AI|IA|ИИ|KI|\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a|\u05d1\u05d9\u05e0\u05d4 \u05de\u05dc\u05d0\u05db\u05d5\u05ea\u05d9\u05ea)", re.I)
+
+# Headings the description extractor treats as the overview container rather than a
+# section boundary (see _is_overview_heading() in sync_to_comfy_docs.py).
+OVERVIEW_HEADINGS = (
+    "overview", "introduction", "概", "개요", "обзор", "resumen", "aperçu", "überblick",
+    "panoramica", "نظرة عامة", "סקירה", "genel bakış", "visão geral", "مرور",
 )
 
 
 def _negated_before(line: str, pos: int, window: int = 32) -> bool:
     """True when a negation cue sits in the run-up to the mention at ``pos``."""
-    head = line[max(0, pos - window):pos].lower()
-    return any(cue in head for cue in NEGATION_CUES)
+    return bool(NEGATION_CUES.search(line[max(0, pos - window):pos]))
 
 
 def check_file(path: Path, lang: str, en_text: str | None):
@@ -90,7 +100,15 @@ def check_file(path: Path, lang: str, en_text: str | None):
         s = lines[i].strip()
         if not s:
             continue
+        if s.startswith("##"):
+            # the extractor stops at an H2 unless it is the overview container
+            if any(h in s.lstrip("# ").lower() for h in OVERVIEW_HEADINGS):
+                continue
+            break
         if s.startswith("#") or s.startswith("![") or s.startswith("|"):
+            continue
+        # the extractor drops AI-disclosure blockquotes, so they never become the description
+        if s.startswith(">") and AI_DISCLOSURE.search(s):
             continue
         first_candidate = (i + 1, s)
         break
