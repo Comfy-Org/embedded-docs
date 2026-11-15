@@ -1,6 +1,6 @@
 # Crear información de cámara
 
-El nodo Crear Información de Cámara construye una estructura de información de cámara para renderizado 3D. Soporta tres modos para definir la cámara: órbita (guñada/cabeceo/distancia alrededor de un objetivo), mirar_a (posición explícita en el mundo) y cuaternión (posición más rotación). El sistema de coordenadas es diestro con Y como eje vertical.
+El nodo Crear Información de Cámara construye una estructura de información de cámara para renderizado 3D. Soporta tres modos para definir la cámara: órbita (guñada/cabeceo/distancia alrededor de un objetivo), mirar_a (posición explícita en el mundo) y cuaternión (posición más rotación). El sistema de coordenadas es diestro con Y como eje vertical; con una `mesh` conectada, la posición, el objetivo y la distancia se miden en el sistema de coordenadas de esa malla, así los mismos ajustes encuadran cualquier malla.
 
 ## Entradas
 
@@ -14,6 +14,7 @@ El nodo Crear Información de Cámara construye una estructura de información d
 | `fov` | Campo de visión vertical en grados. (predeterminado: 35.0) | FLOAT | No | 1.0 a 120.0 |
 | `zoom` | Zoom digital (multiplicador de distancia focal). Valores mayores a 1 acercan sin mover la cámara. (predeterminado: 1.0) | FLOAT | No | 0.01 a 100.0 |
 | `tipo_de_cámara` | Proyección utilizada por Render Splat y Render Mesh: perspectiva (escorzo) u ortográfica (paralela). (predeterminado: "perspective") | COMBO | No | `"perspective"`<br>`"orthographic"` |
+| `mesh` | Encuadra esta malla: la posición, el objetivo y la distancia se miden desde el centro de su caja delimitadora, en unidades del diámetro de su esfera delimitadora, así los mismos ajustes encuadran cualquier malla. | MESH | No | - |
 
 ### Parámetros Específicos del Modo
 
@@ -56,4 +57,4 @@ Cuando `mode` está configurado como `"quaternion"`, los siguientes parámetros 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`
+**Source fingerprint (SHA-256):** `11ea813dae8166b0391ae178c43fc54fb393e5a4095446cbbbdf1277eea79105`

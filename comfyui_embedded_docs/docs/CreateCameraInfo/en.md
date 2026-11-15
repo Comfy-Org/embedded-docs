@@ -1,6 +1,6 @@
 # Create Camera Info
 
-The Create Camera Info node builds a camera information structure for 3D rendering. It supports three modes for defining the camera: orbit (yaw/pitch/distance around a target), look_at (explicit world position), and quaternion (position plus rotation). The coordinate system is right-handed with Y as the up axis.
+The Create Camera Info node builds a camera information structure for 3D rendering. It supports three modes for defining the camera: orbit (yaw/pitch/distance around a target), look_at (explicit world position), and quaternion (position plus rotation). The coordinate system is right-handed with Y as the up axis; with a `mesh` connected, positions, target and distance are measured in that mesh's frame instead, so the same settings frame any mesh.
 
 ## Inputs
 
@@ -14,6 +14,7 @@ The Create Camera Info node builds a camera information structure for 3D renderi
 | `fov` | Vertical field of view in degrees. (default: 35.0) | FLOAT | No | 1.0 to 120.0 |
 | `zoom` | Digital zoom (focal-length multiplier). Values greater than 1 zoom in without moving the camera. (default: 1.0) | FLOAT | No | 0.01 to 100.0 |
 | `camera_type` | Projection used by Render Splat and Render Mesh: perspective (foreshortening) or orthographic (parallel). (default: "perspective") | COMBO | No | `"perspective"`<br>`"orthographic"` |
+| `mesh` | Frame this mesh: positions, target and distance count from its bounding-box centre in units of its bounding-sphere diameter, so the same settings frame any mesh. | MESH | No | - |
 
 ### Mode-Specific Parameters
 
@@ -56,4 +57,4 @@ When `mode` is set to `"quaternion"`, the following parameters become available:
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`
+**Source fingerprint (SHA-256):** `11ea813dae8166b0391ae178c43fc54fb393e5a4095446cbbbdf1277eea79105`

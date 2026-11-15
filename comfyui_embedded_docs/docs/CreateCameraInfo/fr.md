@@ -1,6 +1,6 @@
 # Créer des informations de caméra
 
-Le nœud Créer les Informations de Caméra construit une structure d'informations de caméra pour le rendu 3D. Il prend en charge trois modes pour définir la caméra : orbite (lacet/tangage/distance autour d'une cible), regarder_vers (position explicite dans le monde) et quaternion (position plus rotation). Le système de coordonnées est droitier avec Y comme axe vertical.
+Le nœud Créer les Informations de Caméra construit une structure d'informations de caméra pour le rendu 3D. Il prend en charge trois modes pour définir la caméra : orbite (lacet/tangage/distance autour d'une cible), regarder_vers (position explicite dans le monde) et quaternion (position plus rotation). Le système de coordonnées est droitier avec Y comme axe vertical ; avec un `mesh` connecté, la position, la cible et la distance sont mesurées dans le repère de ce maillage, de sorte que les mêmes réglages cadrent n'importe quel maillage.
 
 ## Entrées
 
@@ -14,6 +14,7 @@ Le nœud Créer les Informations de Caméra construit une structure d'informatio
 | `fov` | Champ de vision vertical en degrés. (défaut : 35.0) | FLOAT | Non | 1.0 à 120.0 |
 | `zoom` | Zoom numérique (multiplicateur de distance focale). Les valeurs supérieures à 1 zooment sans déplacer la caméra. (défaut : 1.0) | FLOAT | Non | 0.01 à 100.0 |
 | `camera_type` | Projection utilisée par Render Splat et Render Mesh : perspective (raccourci) ou orthographique (parallèle). (défaut : "perspective") | COMBO | Non | `"perspective"`<br>`"orthographic"` |
+| `mesh` | Cadre ce maillage : la position, la cible et la distance sont mesurées depuis le centre de sa boîte englobante, en unités du diamètre de sa sphère englobante, de sorte que les mêmes réglages cadrent n'importe quel maillage. | MESH | Non | - |
 
 ### Paramètres Spécifiques au Mode
 
@@ -56,4 +57,4 @@ Lorsque `mode` est réglé sur `"quaternion"`, les paramètres suivants devienne
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`
+**Source fingerprint (SHA-256):** `11ea813dae8166b0391ae178c43fc54fb393e5a4095446cbbbdf1277eea79105`

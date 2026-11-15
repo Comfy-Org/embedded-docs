@@ -10,18 +10,18 @@ Les entrées sont regroupées en paramètres communs, paramètres propres au mod
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `modèle` | Le modèle Claude utilisé pour générer la réponse. La sélection d'un modèle révèle les paramètres propres au modèle ci-dessous. | DYNAMIC_COMBO | Oui | `"Opus 5.5"`<br>`"Opus 5"`<br>`"Opus 4.8"`<br>`"Fable 5.1"`<br>`"Fable 5"`<br>`"Sonnet 5.5"`<br>`"Sonnet 5"`<br>`"Opus 4.7"`<br>`"Opus 4.6"`<br>`"Sonnet 4.6"`<br>`"Sonnet 4.5"`<br>`"Haiku 4.5"` |
+| `modèle` | Le modèle Claude utilisé pour générer la réponse. La sélection d'un modèle révèle les paramètres propres au modèle ci-dessous. | DYNAMIC_COMBO | Oui | `"Opus 5.5"`<br>`"Opus 5"`<br>`"Opus 4.8"`<br>`"Fable 5.2"`<br>`"Fable 5.1"`<br>`"Fable 5"`<br>`"Sonnet 5.5"`<br>`"Sonnet 5"`<br>`"Opus 4.7"`<br>`"Opus 4.6"`<br>`"Sonnet 4.6"`<br>`"Sonnet 4.5"`<br>`"Haiku 4.5"` |
 | `invite` | Entrée textuelle pour le modèle. (par défaut : chaîne vide) | STRING | Oui | N/A |
 | `graine` | La graine détermine si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. (par défaut : 0) | INT | Oui | 0 à 2147483647 |
 | `invite système` | Instructions fondamentales qui dictent le comportement du modèle. (par défaut : chaîne vide) | STRING | Non | N/A |
 
-### Entrées Opus 5.5, Opus 5, Fable 5.1 et Fable 5
+### Entrées Opus 5.5, Opus 5, Fable 5.2, Fable 5.1 et Fable 5
 
-Ces quatre modèles partagent les mêmes paramètres. Ils n'exposent pas de paramètre de température, et le raisonnement est toujours activé.
+Ces cinq modèles partagent les mêmes paramètres. Ils n'exposent pas de paramètre de température, et le raisonnement est toujours activé.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `max_tokens` | Nombre maximal de tokens à générer (inclut les tokens de raisonnement lorsqu'ils sont activés). (par défaut : 32768) | INT | Oui | 1024 à 64000 (Opus 5.5)<br>4096 à 64000 (Opus 5, Fable 5.1, Fable 5) |
+| `max_tokens` | Nombre maximal de tokens à générer (inclut les tokens de raisonnement lorsqu'ils sont activés). (par défaut : 32768) | INT | Oui | 1024 à 64000 (Opus 5.5)<br>8192 à 64000 (Fable 5.2)<br>4096 à 64000 (Opus 5, Fable 5.1, Fable 5) |
 | `reasoning_effort` | Effort de réflexion étendue. Le raisonnement est toujours activé pour ces modèles. (par défaut : "high") | COMBO | Oui | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 
 ### Entrées Opus 4.8, Sonnet 5.5 et Sonnet 5
@@ -64,9 +64,9 @@ Ce modèle n'expose pas de paramètre `reasoning_effort`.
 
 - **Limite d'images :** Un maximum de 20 images peut être fourni par requête. Connecter plus de 20 images déclenche une erreur.
 - **Invite requise :** L'invite doit contenir au moins un caractère non blanc. Une invite vide déclenche une erreur de validation.
-- **Gestion de la température :** Lorsque la réflexion est activée, l'API Anthropic exige que la température ne soit pas définie (elle vaut 1.0 par défaut). Opus 5.5, Opus 5, Opus 4.8, Fable 5.1, Fable 5, Sonnet 5.5 et Sonnet 5 n'exposent pas de paramètre de température. Opus 4.7 ignore `temperature`, et tout modèle dont `reasoning_effort` est défini sur autre chose que `"off"` l'ignore également.
-- **Comportement du raisonnement et de la réflexion :** Le paramètre `reasoning_effort` contrôle si la réflexion est activée. Opus 5.5, Opus 5, Fable 5.1 et Fable 5 ont toujours le raisonnement activé. Haiku 4.5 ne prend pas en charge le raisonnement. Lorsque la réflexion est activée, le nœud utilise le mode de réflexion approprié pour le modèle sélectionné, soit adaptatif, soit basé sur un budget. En mode budget, le budget de tokens de raisonnement est plafonné pour laisser au moins 1024 tokens à la réponse réelle. Lorsque `reasoning_effort` est `"off"` sur Sonnet 5.5, la requête utilise la réflexion `between_tools` au lieu de la réflexion désactivée, donc la réponse ne contient toujours pas de raisonnement.
-- **Minimum de `max_tokens` :** `max_tokens` accepte des valeurs à partir de 1024 sur Opus 5.5 et Sonnet 5.5, et à partir de 4096 sur tous les autres modèles.
+- **Gestion de la température :** Lorsque la réflexion est activée, l'API Anthropic exige que la température ne soit pas définie (elle vaut 1.0 par défaut). Opus 5.5, Opus 5, Opus 4.8, Fable 5.2, Fable 5.1, Fable 5, Sonnet 5.5 et Sonnet 5 n'exposent pas de paramètre de température. Opus 4.7 ignore `temperature`, et tout modèle dont `reasoning_effort` est défini sur autre chose que `"off"` l'ignore également.
+- **Comportement du raisonnement et de la réflexion :** Le paramètre `reasoning_effort` contrôle si la réflexion est activée. Opus 5.5, Opus 5, Fable 5.2, Fable 5.1 et Fable 5 ont toujours le raisonnement activé. Haiku 4.5 ne prend pas en charge le raisonnement. Lorsque la réflexion est activée, le nœud utilise le mode de réflexion approprié pour le modèle sélectionné, soit adaptatif, soit basé sur un budget. En mode budget, le budget de tokens de raisonnement est plafonné pour laisser au moins 1024 tokens à la réponse réelle. Lorsque `reasoning_effort` est `"off"` sur Sonnet 5.5, la requête utilise la réflexion `between_tools` au lieu de la réflexion désactivée, donc la réponse ne contient toujours pas de raisonnement.
+- **Minimum de `max_tokens` :** `max_tokens` accepte des valeurs à partir de 1024 sur Opus 5.5 et Sonnet 5.5, à partir de 8192 sur Fable 5.2, et à partir de 4096 sur tous les autres modèles.
 - **Refus de sécurité :** Si Claude refuse de répondre à la requête pour des raisons de sécurité, le nœud déclenche une erreur vous demandant de reformuler l'invite ou d'essayer un autre modèle.
 - **Texte de sortie :** Les blocs de réflexion et de raisonnement ne sont pas inclus dans la sortie ; seul le texte généré est renvoyé.
 
@@ -79,4 +79,4 @@ Ce modèle n'expose pas de paramètre `reasoning_effort`.
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClaudeNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `35b737da0f4c3a9da72910bf2053b18ae6a5c60989dc9607b61037623bc94e38`
+**Source fingerprint (SHA-256):** `4d4fd50c87fe6b532ab32779d51f82d2855c5d5e56026204b284c34ca9d1b2ea`

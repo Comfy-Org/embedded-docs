@@ -1,6 +1,6 @@
 # Crea Info Camera
 
-Il nodo Create Camera Info costruisce una struttura di informazioni della camera per il rendering 3D. Supporta tre modalità per definire la camera: orbita (imbardata/beccheggio/distanza attorno a un target), look_at (posizione esplicita nel mondo) e quaternione (posizione più rotazione). Il sistema di coordinate è destrorso con Y come asse verticale.
+Il nodo Create Camera Info costruisce una struttura di informazioni della camera per il rendering 3D. Supporta tre modalità per definire la camera: orbita (imbardata/beccheggio/distanza attorno a un target), look_at (posizione esplicita nel mondo) e quaternione (posizione più rotazione). Il sistema di coordinate è destrorso con Y come asse verticale; con una `mesh` collegata, posizione, target e distanza si misurano nel sistema di coordinate di quella mesh, così le stesse impostazioni inquadrano qualsiasi mesh.
 
 ## Input
 
@@ -14,6 +14,7 @@ Il nodo Create Camera Info costruisce una struttura di informazioni della camera
 | `fov` | Campo visivo verticale in gradi. (predefinito: 35.0) | FLOAT | No | 1.0 a 120.0 |
 | `zoom` | Zoom digitale (moltiplicatore di lunghezza focale). Valori maggiori di 1 ingrandiscono senza spostare la camera. (predefinito: 1.0) | FLOAT | No | 0.01 a 100.0 |
 | `camera_type` | Proiezione utilizzata da Render Splat e Render Mesh: prospettica (scorcio) o ortografica (parallela). (predefinito: "perspective") | COMBO | No | `"perspective"`<br>`"orthographic"` |
+| `mesh` | Inquadra questa mesh: posizione, target e distanza si misurano dal centro del suo bounding box, in unità del diametro della bounding sphere, così le stesse impostazioni inquadrano qualsiasi mesh. | MESH | No | - |
 
 ### Parametri specifici della modalità
 
@@ -56,4 +57,4 @@ Quando `mode` è impostato su `"quaternion"`, i seguenti parametri diventano dis
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `65414985cdf3179a7c0a974022bb9255a6e719b54f155c9f8c5caf28e40f2cd8`
+**Source fingerprint (SHA-256):** `11ea813dae8166b0391ae178c43fc54fb393e5a4095446cbbbdf1277eea79105`
