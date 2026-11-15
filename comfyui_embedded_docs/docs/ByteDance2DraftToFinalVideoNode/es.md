@@ -8,7 +8,7 @@ Este nodo renderiza el video final de un borrador de Seedance 2.5 a 1080p o 4k. 
 | --- | --- | --- | --- | --- |
 | `draft_task_id` | La salida `draft_task_id` de un nodo de Seedance 2.5 ejecutado con el modelo Seedance 2.5 Draft, o un ID de tarea de borrador pegado. Cuando vuelvas a ejecutar el nodo productor, fija su control de seed, de lo contrario la siguiente ejecución generará un nuevo borrador en lugar de reutilizar el que revisaste. | STRING | Sí | - |
 | `marca de agua` | Indica si se añade una marca de agua al video. El valor predeterminado es False. Esta es una configuración avanzada. | BOOLEAN | No | True / False |
-| `resolution` | Resolución del video final. Valor predeterminado: `"1080p"`. | COMBO | No | `"1080p"`<br>`"4k"` |
+| `resolution` | Resolución del video final. Para 4k, usa exactamente el valor en minúsculas `"4k"`. Valor predeterminado: `"1080p"`. | COMBO | No | `"1080p"`<br>`"4k"` |
 
 ## Salidas
 

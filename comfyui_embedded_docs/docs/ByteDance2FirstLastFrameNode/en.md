@@ -23,7 +23,7 @@ These inputs appear when `Seedance 2.5` is selected.
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Text prompt for video generation. Put spoken lines in double quotes to steer the generated dialogue. | STRING | Yes | - |
-| `resolution` | Resolution of the output video. Default is 720p. | COMBO | Yes | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | Resolution of the output video. Default is 720p. Use the exact lowercase value `"4k"` to render at 4k. The Seedance 2.5 Draft model renders 480p only; to get 4k, render the draft's final with the ByteDance Seedance 2.5 Draft to Final Video node and set that node's `resolution` to `"4k"` (its default is `"1080p"`). If you rerun the Draft, set its seed control to fixed first (or paste the `draft_task_id` of the draft you reviewed into that node); otherwise the rerun makes a new draft and the final will not match the one you reviewed. | COMBO | Yes | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duration` | Duration of the output video in seconds (4-30). Default is 5. | INT | Yes | 4 to 30 |
 | `generate_audio` | Enable audio generation for the output video. Default is True. | BOOLEAN | Yes | False<br>True |
 | `output_format` | Container format of the output video. Default is mp4. | COMBO | Yes | `"mp4"` |

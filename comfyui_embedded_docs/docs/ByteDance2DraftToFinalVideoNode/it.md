@@ -8,7 +8,7 @@ Questo nodo esegue il rendering del video finale di una bozza Seedance 2.5 a 108
 | --- | --- | --- | --- | --- |
 | `draft_task_id` | L'output `draft_task_id` di un nodo Seedance 2.5 eseguito con il modello Seedance 2.5 Draft, oppure un ID attività della bozza incollato. Quando riesegui il nodo produttore, imposta il controllo del seed su fisso; altrimenti l'esecuzione successiva genera una nuova bozza invece di riutilizzare quella che hai esaminato. | STRING | Sì | - |
 | `filigrana` | Indica se aggiungere una filigrana al video. Il valore predefinito è False. Questa è un'impostazione avanzata. | BOOLEAN | No | True / False |
-| `resolution` | Risoluzione del video finale. Predefinito: `"1080p"`. | COMBO | No | `"1080p"`<br>`"4k"` |
+| `resolution` | Risoluzione del video finale. Per il 4k, usa esattamente il valore minuscolo `"4k"`. Predefinito: `"1080p"`. | COMBO | No | `"1080p"`<br>`"4k"` |
 
 ## Output
 

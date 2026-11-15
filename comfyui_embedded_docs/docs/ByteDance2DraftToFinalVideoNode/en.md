@@ -8,7 +8,7 @@ This node renders the final video of a Seedance 2.5 Draft at 1080p or 4k. A draf
 | --- | --- | --- | --- | --- |
 | `draft_task_id` | The `draft_task_id` output of a Seedance 2.5 node run with the Seedance 2.5 Draft model, or a pasted draft task ID. When you rerun the producer node, set its seed control to fixed, otherwise the next run generates a new draft instead of reusing the one you reviewed. | STRING | Yes | - |
 | `watermark` | Whether to add a watermark to the video. Default is False. This is an advanced setting. | BOOLEAN | No | True / False |
-| `resolution` | Resolution of the final video. Default: `"1080p"`. | COMBO | No | `"1080p"`<br>`"4k"` |
+| `resolution` | Resolution of the final video. Use the exact lowercase value `"4k"` to render at 4k. Default: `"1080p"`. | COMBO | No | `"1080p"`<br>`"4k"` |
 
 ## Outputs
 

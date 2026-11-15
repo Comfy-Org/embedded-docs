@@ -8,7 +8,7 @@ Bu düğüm, bir Seedance 2.5 Draft taslağının nihai videosunu 1080p veya 4k 
 | --- | --- | --- | --- | --- |
 | `draft_task_id` | Seedance 2.5 Draft modeliyle çalıştırılan bir Seedance 2.5 düğümünün `draft_task_id` çıktısı veya yapıştırılan bir taslak görev kimliği. Üretici düğümü yeniden çalıştırdığınızda, seed kontrolünü sabit olarak ayarlayın; aksi halde bir sonraki çalıştırma, incelediğiniz taslağı yeniden kullanmak yerine yeni bir taslak oluşturur. | STRING | Evet | - |
 | `watermark` | Videoya filigran eklenip eklenmeyeceği. Varsayılan değer False'tir. Bu gelişmiş bir ayardır. | BOOLEAN | Hayır | True / False |
-| `resolution` | Nihai videonun çözünürlüğü. Varsayılan: `"1080p"`. | COMBO | Hayır | `"1080p"`<br>`"4k"` |
+| `resolution` | Nihai videonun çözünürlüğü. 4k için değeri tam olarak küçük harfle `"4k"` yazın. Varsayılan: `"1080p"`. | COMBO | Hayır | `"1080p"`<br>`"4k"` |
 
 ## Çıktılar
 

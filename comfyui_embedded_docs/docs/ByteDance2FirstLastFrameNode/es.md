@@ -23,7 +23,7 @@ Estas entradas aparecen cuando se selecciona `Seedance 2.5`.
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt de texto para la generación del video. Coloca las líneas habladas entre comillas dobles para dirigir el diálogo generado. | STRING | Sí | - |
-| `resolution` | Resolución del video de salida. El valor predeterminado es 720p. | COMBO | Sí | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `resolution` | Resolución del video de salida. El valor predeterminado es 720p. Para 4k, usa exactamente el valor en minúsculas `"4k"`. El modelo Seedance 2.5 Draft solo genera en 480p; para obtener 4k, renderiza el video final del borrador con el nodo ByteDance Seedance 2.5 Draft to Final Video y selecciona `"4k"` en el campo `resolution` de ese nodo (su valor predeterminado es `"1080p"`). Si vuelves a ejecutar el borrador, fija antes su control de seed (o pega en ese nodo el `draft_task_id` del borrador que revisaste); de lo contrario, la nueva ejecución genera otro borrador y el video final no coincidirá con el que revisaste. | COMBO | Sí | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
 | `duration` | Duración del video de salida en segundos (4-30). El valor predeterminado es 5. | INT | Sí | 4 a 30 |
 | `generate_audio` | Habilita la generación de audio para el video de salida. El valor predeterminado es True. | BOOLEAN | Sí | False<br>True |
 | `output_format` | Formato de contenedor del video de salida. El valor predeterminado es mp4. | COMBO | Sí | `"mp4"` |
