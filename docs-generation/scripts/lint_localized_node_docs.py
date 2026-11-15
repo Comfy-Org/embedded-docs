@@ -53,6 +53,19 @@ def body_lines(text: str):
     return text.splitlines()
 
 
+# Words that turn a nearby "Import Model" mention into a warning instead of advice.
+NEGATION_CUES = (
+    "no ", "not ", "never", "nunca", "jamais", "nicht", "kein", "non ", "não", "nao",
+    "никогда", "не ", "لا ", "لم ", "לא ", "al ", "asla", "hiçbir", "بدون", "negar",
+)
+
+
+def _negated_before(line: str, pos: int, window: int = 32) -> bool:
+    """True when a negation cue sits in the run-up to the mention at ``pos``."""
+    head = line[max(0, pos - window):pos].lower()
+    return any(cue in head for cue in NEGATION_CUES)
+
+
 def check_file(path: Path, lang: str, en_text: str | None):
     text = path.read_text(encoding="utf-8")
     lines = body_lines(text)
@@ -63,28 +76,33 @@ def check_file(path: Path, lang: str, en_text: str | None):
             if pat.search(line):
                 findings.append(("scaffolding_leak", i, line.strip()[:100]))
 
-    # first non-empty body line after the H1
+    # First description candidate after the H1, using the same skip rules as
+    # get_description_from_content() in sync_to_comfy_docs.py: headings, images,
+    # table rows and disclaimers are not prose, so a note that follows an image is
+    # still the line the description is built from.
     body_start = 0
     for i, line in enumerate(lines):
         if line.startswith("# "):
             body_start = i + 1
             break
-    first_meaningful = None
+    first_candidate = None
     for i in range(body_start, len(lines)):
         s = lines[i].strip()
-        if s:
-            first_meaningful = (i + 1, s)
-            break
-    if first_meaningful and first_meaningful[1].startswith(">"):
-        findings.append(("note_before_intro", first_meaningful[0], first_meaningful[1][:100]))
+        if not s:
+            continue
+        if s.startswith("#") or s.startswith("![") or s.startswith("|"):
+            continue
+        first_candidate = (i + 1, s)
+        break
+    if first_candidate and first_candidate[1].startswith(">"):
+        findings.append(("note_before_intro", first_candidate[0], first_candidate[1][:100]))
 
     if en_text is not None and lang != "en":
         def pre_section_paragraph(text: str) -> bool:
             ls = text.splitlines()
             start = next((i for i, l in enumerate(ls) if l.startswith("# ")), -1) + 1
-            first_h2 = next((i for i, l in enumerate(ls) if l.startswith("## ")), None)
-            if first_h2 is None:
-                return False
+            # a page with no H2 at all still has an overview: the section boundary is EOF
+            first_h2 = next((i for i, l in enumerate(ls) if l.startswith("## ")), len(ls))
             body = ls[start:first_h2]
             return any(l.strip() and not l.strip().startswith(("#", ">", "|", "!", "```")) for l in body)
 
@@ -94,7 +112,11 @@ def check_file(path: Path, lang: str, en_text: str | None):
                              "English page has an overview paragraph, this one opens straight into a section"))
 
     if IMPORT_ADVICE.search(text) and TASK_SPECIFIC_INPUT.search(text):
-        findings.append(("import_recovery", 0, "Import Model suggested while the node needs a task-specific id"))
+        # Pages that warn readers *against* Import Model mention it in the same breath,
+        # so only an affirmative recommendation counts.
+        if any(not _negated_before(line, m.start()) for line in lines
+               for m in IMPORT_ADVICE.finditer(line)):
+            findings.append(("import_recovery", 0, "Import Model suggested while the node needs a task-specific id"))
     return findings
 
 
