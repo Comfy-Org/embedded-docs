@@ -8,7 +8,7 @@ ByteDance Seedance 2.5 Reference to Video 會使用 ByteDance Seedance 模型（
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `模型` | 模型選擇器。Seedance 2.5 適用於最新模型，支援最長 30 秒的影片與 mp4 輸出；Seedance 2.5 Draft 適用於快速 480p 預覽，其 `draft_task_id` 輸出可在 ByteDance Seedance 2.5 Draft to Final Video 節點中渲染 1080p 或 4k 最終影片；Seedance 2.0 適用於最高品質與 4k；Fast 適用於速度最佳化；Mini 適用於最快、成本最低的生成。選擇模型會變更下方顯示的輸入小工具。 | DYNAMIC_COMBO | 是 | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
+| `模型` | 模型選擇器。Seedance 2.5 適用於最新模型，支援最長 30 秒的影片與 mp4 輸出；Seedance 2.5 Draft 適用於快速 480p 預覽，其 `draft_task_id` 輸出可在 ByteDance Seedance 2.5 Draft to Final Video 節點中渲染 1080p 或 4k 最終影片；Seedance 2.5 Flash 用於 480p 與 720p、最長 30 秒的影片；Seedance 2.0 適用於最高品質與 4k；Fast 適用於速度最佳化；Mini 適用於最快、成本最低的生成。選擇模型會變更下方顯示的輸入小工具。 | DYNAMIC_COMBO | 是 | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.5 Flash"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
 | `種子` | 種子會控制節點是否應重新執行；無論種子為何，結果都是非確定性的。預設值：0。 | INT | 是 | 0 至 2147483647 |
 | `浮水印` | 是否在影片中加入浮水印。預設值：False。進階設定。 | BOOLEAN | 是 | true<br>false |
 
@@ -29,6 +29,10 @@ ByteDance Seedance 2.5 Reference to Video 會使用 ByteDance Seedance 模型（
 ### Seedance 2.5 Draft 輸入
 
 當 `model` 設為 "Seedance 2.5 Draft" 時，會顯示這些輸入。參數集與上方的 Seedance 2.5 相同，差別在於 `resolution` 僅提供 `"480p"`（預設值 `"480p"`）。
+
+### Seedance 2.5 Flash 輸入
+
+當 `model` 設為 "Seedance 2.5 Flash" 時，會顯示這些輸入。參數集與上方的 Seedance 2.5 相同，差別在於 `resolution` 僅提供 `"480p"` 與 `"720p"`（預設值 `"720p"`）。
 
 ### Seedance 2.0 輸入
 
@@ -56,18 +60,18 @@ ByteDance Seedance 2.5 Reference to Video 會使用 ByteDance Seedance 模型（
 
 ### 參考輸入
 
-這些可增長的參考插槽適用於所有模型。每個模型的最大插槽數量不同：Seedance 2.5 最多支援 30 張圖像、10 部影片、10 個音訊與 30 個素材；Seedance 2.0、2.0 Fast 與 2.0 Mini 最多支援 9 張圖像、3 部影片、3 個音訊與 9 個素材。
+這些可增長的參考插槽適用於所有模型。每個模型的最大插槽數量不同：Seedance 2.5 最多支援 30 張圖像、10 部影片、10 個音訊與 30 個素材；Seedance 2.5 Flash 最多支援 10 張圖像、5 部影片、5 個音訊與 10 個素材；Seedance 2.0、2.0 Fast 與 2.0 Mini 最多支援 9 張圖像、3 部影片、3 個音訊與 9 個素材。
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `reference_images` | 可增長的插槽：連接 1..N 張可引導輸出的參考圖像。數量限制依模型而異（請參閱各模型章節）。圖像會驗證長寬比（0.4 到 2.5），並自動縮小至最大邊 6000 像素。 | IMAGE | 否 | 1..9 個插槽（Seedance 2.0 系列）<br>1..30 個插槽（Seedance 2.5） |
-| `reference_videos` | 可增長的插槽：連接 1..N 部參考影片。數量限制依模型而異（請參閱各模型章節）。每部影片長度必須至少 1.8 秒，且必須符合所選模型與解析度的像素限制。 | VIDEO | 否 | 1..3 個插槽（Seedance 2.0 系列）<br>1..10 個插槽（Seedance 2.5） |
-| `reference_audios` | 可增長的插槽：連接 1..N 個參考音訊軌。數量限制依模型而異（請參閱各模型章節）。每個音訊長度必須至少 1.8 秒。 | AUDIO | 否 | 1..3 個插槽（Seedance 2.0 系列）<br>1..10 個插槽（Seedance 2.5） |
-| `reference_assets` | 可增長的插槽：連接 1..N 個素材 ID 字串，用於已上傳至 Seedance 虛擬素材庫的媒體。每個素材必須為 Active。你可以在提示中使用 `asset1` 或 `asset 1` 等標記來引用素材；節點會將它們替換為素材的位置標籤（例如 "Image 2" 或 "Video 1"）。 | STRING | 否 | 1..9 個插槽（Seedance 2.0 系列）<br>1..30 個插槽（Seedance 2.5） |
+| `reference_images` | 可增長的插槽：連接 1..N 張可引導輸出的參考圖像。數量限制依模型而異（請參閱各模型章節）。圖像會驗證長寬比（0.4 到 2.5），並自動縮小至最大邊 6000 像素。 | IMAGE | 否 | 1..9 個插槽（Seedance 2.0 系列）<br>1..30 個插槽（Seedance 2.5）<br>1..10 個插槽（Seedance 2.5 Flash） |
+| `reference_videos` | 可增長的插槽：連接 1..N 部參考影片。數量限制依模型而異（請參閱各模型章節）。每部影片長度必須至少 1.8 秒，且必須符合所選模型與解析度的像素限制。 | VIDEO | 否 | 1..3 個插槽（Seedance 2.0 系列）<br>1..10 個插槽（Seedance 2.5）<br>1..5 個插槽（Seedance 2.5 Flash） |
+| `reference_audios` | 可增長的插槽：連接 1..N 個參考音訊軌。數量限制依模型而異（請參閱各模型章節）。每個音訊長度必須至少 1.8 秒。 | AUDIO | 否 | 1..3 個插槽（Seedance 2.0 系列）<br>1..10 個插槽（Seedance 2.5）<br>1..5 個插槽（Seedance 2.5 Flash） |
+| `reference_assets` | 可增長的插槽：連接 1..N 個素材 ID 字串，用於已上傳至 Seedance 虛擬素材庫的媒體。每個素材必須為 Active。你可以在提示中使用 `asset1` 或 `asset 1` 等標記來引用素材；節點會將它們替換為素材的位置標籤（例如 "Image 2" 或 "Video 1"）。 | STRING | 否 | 1..9 個插槽（Seedance 2.0 系列）<br>1..30 個插槽（Seedance 2.5）<br>1..10 個插槽（Seedance 2.5 Flash） |
 | `auto_downscale` | 自動縮小超出所選解析度之模型像素預算的參考影片。會保留長寬比；已在限制內的影片不會被變更。預設值：True。 | BOOLEAN | 否 | true<br>false |
 | `auto_upscale` | 自動放大低於所選解析度下模型最低像素數的參考影片。會保留長寬比；已達最低標準的影片不會被變更。注意：放大低解析度來源不會增加真實細節，且可能產生較低品質的生成結果。預設值：False。進階設定。 | BOOLEAN | 否 | true<br>false |
 
-**注意：** 執行節點時至少需要一張參考圖像、一部影片或一個素材（Seedance 2.5 也接受僅有音訊的參考）。參考影片與音訊各自長度必須至少 1.8 秒，且所有參考影片的總持續時間（以及所有參考音訊的總持續時間，分開計算）不得超過所選模型的最大總秒數。參考圖像的長寬比必須約介於 2:5 到 5:2（0.4 到 2.5）之間，至少為 300x300 像素，並會自動縮小至最大邊 6000 像素。`task_type` 的 "edit" 與 "extend" 選項僅適用於 Seedance 2.5，且兩者都需要至少一部參考影片；使用 "edit" 時，輸出會保留來源片段的原始長度與長寬比，並忽略 `duration` 與 `ratio` 小工具；使用 "extend" 時，輸出只包含你所設定持續時間內新生成的片段。引用的素材必須處於 Active 狀態，否則任務會失敗。每次執行都會傳回其任務 ID 作為 `draft_task_id`，但只有 `Seedance 2.5 Draft` 執行的 ID 可由 ByteDance Seedance 2.5 Draft to Final Video 節點渲染，因此使用任何其他模型時，該輸出必須保持未連接，否則執行會失敗。
+**注意：** 執行節點時至少需要一張參考圖像、一部影片或一個素材（Seedance 2.5 與 Seedance 2.5 Flash 也接受僅有音訊的參考）。參考影片與音訊各自長度必須至少 1.8 秒，且所有參考影片的總持續時間（以及所有參考音訊的總持續時間，分開計算）不得超過所選模型的最大總秒數。參考圖像的長寬比必須約介於 2:5 到 5:2（0.4 到 2.5）之間，至少為 300x300 像素，並會自動縮小至最大邊 6000 像素。`task_type` 的 "edit" 與 "extend" 選項僅適用於 Seedance 2.5 與 Seedance 2.5 Flash，且兩者都需要至少一部參考影片；使用 "edit" 時，輸出會保留來源片段的原始長度與長寬比，並忽略 `duration` 與 `ratio` 小工具；使用 "extend" 時，輸出只包含你所設定持續時間內新生成的片段。引用的素材必須處於 Active 狀態，否則任務會失敗。每次執行都會傳回其任務 ID 作為 `draft_task_id`，但只有 `Seedance 2.5 Draft` 執行的 ID 可由 ByteDance Seedance 2.5 Draft to Final Video 節點渲染，因此使用任何其他模型時，該輸出必須保持未連接，否則執行會失敗。
 
 ## 輸出
 
@@ -79,4 +83,4 @@ ByteDance Seedance 2.5 Reference to Video 會使用 ByteDance Seedance 模型（
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNodeV2/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `553e2654c819dbb4ab734eeb56bae67cba4c69185a9b1422c5653e65a6fe6898`
+**Source fingerprint (SHA-256):** `f32da9d9dd54f073be528192f4e225712f8f0d9367315203b70b7a06f60c389a`

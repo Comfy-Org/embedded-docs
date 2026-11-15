@@ -8,7 +8,7 @@ Bu düğüm, ByteDance Seedance modellerini kullanarak zorunlu bir ilk kare gör
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | En yeni model için Seedance 2.5; 30 saniyeye kadar videolar ve mp4 çıktısı; `draft_task_id` çıktısı ByteDance Seedance 2.5 Draft to Final Video düğümünde 1080p veya 4k finali oluşturan hızlı 480p önizleme için Seedance 2.5 Draft; maksimum kalite ve 4k için Seedance 2.0; hız optimizasyonu için Fast; en hızlı, en düşük maliyetli üretim için Mini. Bir model seçildiğinde aşağıda modele özgü girdiler görünür. | DYNAMIC_COMBO | Evet | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `model` | En yeni model için Seedance 2.5; 30 saniyeye kadar videolar ve mp4 çıktısı; `draft_task_id` çıktısı ByteDance Seedance 2.5 Draft to Final Video düğümünde 1080p veya 4k finali oluşturan hızlı 480p önizleme için Seedance 2.5 Draft; maksimum kalite ve 4k için Seedance 2.5 Flash, 30 saniyeye kadar 480p ve 720p videolar içindir; Seedance 2.0; hız optimizasyonu için Fast; en hızlı, en düşük maliyetli üretim için Mini. Bir model seçildiğinde aşağıda modele özgü girdiler görünür. | DYNAMIC_COMBO | Evet | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.5 Flash"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `first_frame` | Video için ilk kare görüntüsü. | IMAGE | Hayır | - |
 | `last_frame` | Video için son kare görüntüsü. | IMAGE | Hayır | - |
 | `first_frame_asset_id` | İlk kare olarak kullanılacak Seedance asset_id değeri. `first_frame` görüntü girdisiyle karşılıklı olarak dışlayıcıdır. Varsayılan boş bir dizedir. | STRING | Hayır | - |
@@ -31,6 +31,10 @@ Bu girdiler `Seedance 2.5` seçildiğinde görünür.
 ### Seedance 2.5 Draft Girdileri
 
 Bu girdiler `Seedance 2.5 Draft` seçildiğinde görünür. Parametre kümesi yukarıdaki Seedance 2.5 ile aynıdır; ancak `resolution` yalnızca `"480p"` sunar (varsayılan `"480p"`).
+
+### Seedance 2.5 Flash Girdileri
+
+Bu girdiler `Seedance 2.5 Flash` seçildiğinde görünür. Parametre kümesi yukarıdaki Seedance 2.5 ile aynıdır; ancak `resolution` yalnızca `"480p"` ve `"720p"` sunar (varsayılan `"720p"`).
 
 ### Seedance 2.0 Girdileri
 
@@ -63,7 +67,7 @@ Bu girdiler `Seedance 2.0` seçildiğinde görünür.
 - Asset ID'leri mevcut ve etkin Seedance Image varlıklarına başvurmalıdır.
 - `prompt` girdisi zorunludur ve boş olamaz.
 - Her çalıştırma, görev kimliğini `draft_task_id` olarak döndürür; ancak yalnızca bir `Seedance 2.5 Draft` çalıştırmasının kimliği ByteDance Seedance 2.5 Draft to Final Video düğümü tarafından oluşturulabilir. Başka herhangi bir modelde çıktı bağlantısız bırakılmalıdır; aksi halde çalıştırma başarısız olur.
-- `Seedance 2.5` ile çıktı en-boy oranı her zaman `adaptive`'tir ve ilk karenin kendi en-boy oranını izler; bu nedenle `ratio` girdisi gösterilmez.
+- `Seedance 2.5` ve `Seedance 2.5 Flash` ile çıktı en-boy oranı her zaman `adaptive`'tir ve ilk karenin kendi en-boy oranını izler; bu nedenle `ratio` girdisi gösterilmez.
 - Seedance 2.0 ailesi modelleri ve yerel kare görüntüleri kullanıldığında, görüntüler üretimden önce hedef çıktı çözünürlüğüne ve oranına göre ortadan kırpılır ve yeniden boyutlandırılır. `ratio` `adaptive` olduğunda, girdi görüntüsüne en yakın desteklenen oran kullanılır.
 - Yerel kare görüntüleri desteklenen en-boy oranı ve boyutlar açısından doğrulanır; aşırı büyük görüntüler küçültülür.
 
@@ -77,4 +81,4 @@ Bu girdiler `Seedance 2.0` seçildiğinde görünür.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `a0396690cd91dabe47ed65a51e05780c4f344afad222f30d6ab628240ea30469`
+**Source fingerprint (SHA-256):** `292e87f4cf2b7099ae63b708489f5fbbf47aa4f2dbb83b830d288bf307546d49`

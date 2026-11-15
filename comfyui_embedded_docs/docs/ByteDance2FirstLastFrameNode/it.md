@@ -8,7 +8,7 @@ Questo nodo genera un video da un'immagine obbligatoria del primo fotogramma e u
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Seedance 2.5 per il modello più recente, video fino a 30 secondi e output mp4; Seedance 2.5 Draft per un'anteprima veloce a 480p il cui output `draft_task_id` renderizza il finale a 1080p o 4k nel nodo ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.0 per la massima qualità e 4k; Fast per l'ottimizzazione della velocità; Mini per la generazione più rapida e a costo più basso. Selezionando un modello vengono mostrati di seguito gli input specifici del modello. | DYNAMIC_COMBO | Sì | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `model` | Seedance 2.5 per il modello più recente, video fino a 30 secondi e output mp4; Seedance 2.5 Draft per un'anteprima veloce a 480p il cui output `draft_task_id` renderizza il finale a 1080p o 4k nel nodo ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.5 Flash per video 480p e 720p fino a 30 secondi; Seedance 2.0 per la massima qualità e 4k; Fast per l'ottimizzazione della velocità; Mini per la generazione più rapida e a costo più basso. Selezionando un modello vengono mostrati di seguito gli input specifici del modello. | DYNAMIC_COMBO | Sì | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.5 Flash"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `first_frame` | Immagine del primo fotogramma per il video. | IMAGE | No | - |
 | `last_frame` | Immagine dell'ultimo fotogramma per il video. | IMAGE | No | - |
 | `first_frame_asset_id` | asset_id Seedance da usare come primo fotogramma. Mutuamente esclusivo con l'input immagine `first_frame`. Il valore predefinito è una stringa vuota. | STRING | No | - |
@@ -31,6 +31,10 @@ Questi input vengono visualizzati quando è selezionato `Seedance 2.5`.
 ### Input di Seedance 2.5 Draft
 
 Questi input vengono visualizzati quando è selezionato `Seedance 2.5 Draft`. L'insieme dei parametri corrisponde a Seedance 2.5 sopra, tranne per il fatto che `resolution` offre solo `"480p"` (predefinito `"480p"`).
+
+### Input di Seedance 2.5 Flash
+
+Questi input vengono visualizzati quando è selezionato `Seedance 2.5 Flash`. L'insieme dei parametri corrisponde a Seedance 2.5 sopra, tranne per il fatto che `resolution` offre solo `"480p"` e `"720p"` (predefinito `"720p"`).
 
 ### Input di Seedance 2.0
 
@@ -63,7 +67,7 @@ Condivisi da `Seedance 2.0 Fast` e `Seedance 2.0 Mini`.
 - Gli asset ID devono fare riferimento ad asset immagine Seedance esistenti e attivi.
 - L'input `prompt` è obbligatorio e non può essere vuoto.
 - Ogni esecuzione restituisce il proprio ID attività come `draft_task_id`, ma solo l'ID di un'esecuzione con `Seedance 2.5 Draft` può essere renderizzato dal nodo ByteDance Seedance 2.5 Draft to Final Video. Con qualsiasi altro modello l'output deve essere lasciato non connesso, altrimenti l'esecuzione fallisce.
-- Con `Seedance 2.5`, il rapporto d'aspetto di output è sempre adattivo e segue il rapporto d'aspetto del primo fotogramma stesso, quindi non viene mostrato alcun input `ratio`.
+- Con `Seedance 2.5` e `Seedance 2.5 Flash`, il rapporto d'aspetto di output è sempre adattivo e segue il rapporto d'aspetto del primo fotogramma stesso, quindi non viene mostrato alcun input `ratio`.
 - Con i modelli della famiglia Seedance 2.0 e immagini dei fotogrammi locali, le immagini vengono ritagliate al centro e ridimensionate alla risoluzione e al rapporto di output target prima della generazione. Quando `ratio` è `adaptive`, viene usato il rapporto supportato più vicino all'immagine di input.
 - Le immagini dei fotogrammi locali vengono convalidate per rapporto d'aspetto e dimensioni supportati; le immagini sovradimensionate vengono ridimensionate verso il basso.
 
@@ -77,4 +81,4 @@ Condivisi da `Seedance 2.0 Fast` e `Seedance 2.0 Mini`.
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `a0396690cd91dabe47ed65a51e05780c4f344afad222f30d6ab628240ea30469`
+**Source fingerprint (SHA-256):** `292e87f4cf2b7099ae63b708489f5fbbf47aa4f2dbb83b830d288bf307546d49`

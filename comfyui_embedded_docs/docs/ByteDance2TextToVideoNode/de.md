@@ -8,7 +8,7 @@ Dieser Node erzeugt ein Video aus einem Text-Prompt unter Verwendung der Modelle
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das für die Videogenerierung zu verwendende Seedance-Modell. Seedance 2.5 ist das neueste Modell und unterstützt Videos bis zu 30 Sekunden und mp4-Ausgabe; Seedance 2.5 Draft rendert eine schnelle 480p-Vorschau, deren Ausgabe `draft_task_id` im ByteDance Seedance 2.5 Draft to Final Video Node das 1080p oder 4k-Finale rendert; Seedance 2.0 ist für maximale Qualität und 4k; Seedance 2.0 Fast ist für Geschwindigkeitsoptimierung; Seedance 2.0 Mini ist für die schnellste, kostengünstigste Generierung. Die Auswahl eines Modells blendet zusätzliche Eingaben für den Prompt, die Auflösung, das Seitenverhältnis, die Dauer und die Audiogenerierung ein. | DYNAMIC_COMBO | Ja | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `model` | Das für die Videogenerierung zu verwendende Seedance-Modell. Seedance 2.5 ist das neueste Modell und unterstützt Videos bis zu 30 Sekunden und mp4-Ausgabe; Seedance 2.5 Draft rendert eine schnelle 480p-Vorschau, deren Ausgabe `draft_task_id` im ByteDance Seedance 2.5 Draft to Final Video Node das 1080p oder 4k-Finale rendert; Seedance 2.5 Flash für 480p- und 720p-Videos bis 30 Sekunden; Seedance 2.0 ist für maximale Qualität und 4k; Seedance 2.0 Fast ist für Geschwindigkeitsoptimierung; Seedance 2.0 Mini ist für die schnellste, kostengünstigste Generierung. Die Auswahl eines Modells blendet zusätzliche Eingaben für den Prompt, die Auflösung, das Seitenverhältnis, die Dauer und die Audiogenerierung ein. | DYNAMIC_COMBO | Ja | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.5 Flash"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `seed` | Steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Nein | 0 bis 2147483647 |
 | `watermark` | Ob dem Video ein Wasserzeichen hinzugefügt werden soll. (Standard: False) Dies ist eine erweiterte Einstellung. | BOOLEAN | Nein | True / False |
 
@@ -26,6 +26,10 @@ Dieser Node erzeugt ein Video aus einem Text-Prompt unter Verwendung der Modelle
 ### Seedance 2.5 Draft Eingaben
 
 Diese Eingaben erscheinen, wenn `Seedance 2.5 Draft` ausgewählt ist. Der Parametersatz entspricht dem obigen Seedance 2.5, mit der Ausnahme, dass `resolution` nur `"480p"` anbietet (Standard: `"480p"`).
+
+### Seedance 2.5 Flash Eingaben
+
+Diese Eingaben erscheinen, wenn `Seedance 2.5 Flash` ausgewählt ist. Der Parametersatz entspricht dem obigen Seedance 2.5, mit der Ausnahme, dass `resolution` nur `"480p"` und `"720p"` anbietet (Standard: `"720p"`).
 
 ### Seedance 2.0 Eingaben
 
@@ -49,7 +53,7 @@ Gemeinsam genutzt von Seedance 2.0 Fast und Seedance 2.0 Mini; beide Modelle ste
 | `duration` | Dauer des Ausgabevideos in Sekunden. (Standard: 7) | INT | Ja | 4 bis 15 |
 | `generate_audio` | Audiogenerierung für das Ausgabevideo aktivieren. (Standard: True) | BOOLEAN | Ja | True / False |
 
-**Hinweis:** Die `model`-Auswahl ist dynamisch; die unter jedem Modellabschnitt angezeigten Eingaben erscheinen, wenn dieses Modell ausgewählt ist. Der Prompt muss nach Entfernen von Leerzeichen mindestens 1 Zeichen lang sein. Die Auflösungs- und Dauerbeschränkungen hängen vom ausgewählten Modell ab: Seedance 2.5 unterstützt 480p/720p/1080p/4k und 4 bis 30 Sekunden, Seedance 2.0 unterstützt 480p/720p/1080p/4k und 4 bis 15 Sekunden, und Seedance 2.0 Fast und Seedance 2.0 Mini unterstützen nur 480p/720p und 4 bis 15 Sekunden; Seedance 2.5 Draft unterstützt nur 480p und 4 bis 30 Sekunden. Jeder Lauf gibt seine Task-ID als `draft_task_id` zurück, aber nur die ID eines `Seedance 2.5 Draft`-Laufs kann vom ByteDance Seedance 2.5 Draft to Final Video Node gerendert werden; bei jedem anderen Modell muss die Ausgabe unverbunden bleiben, andernfalls schlägt der Lauf fehl. Der Wert `seed` steuert nur, ob der Node erneut ausgeführt wird; er macht die Ergebnisse nicht deterministisch.
+**Hinweis:** Die `model`-Auswahl ist dynamisch; die unter jedem Modellabschnitt angezeigten Eingaben erscheinen, wenn dieses Modell ausgewählt ist. Der Prompt muss nach Entfernen von Leerzeichen mindestens 1 Zeichen lang sein. Die Auflösungs- und Dauerbeschränkungen hängen vom ausgewählten Modell ab: Seedance 2.5 unterstützt 480p/720p/1080p/4k und 4 bis 30 Sekunden, Seedance 2.0 unterstützt 480p/720p/1080p/4k und 4 bis 15 Sekunden, und Seedance 2.0 Fast und Seedance 2.0 Mini unterstützen nur 480p/720p und 4 bis 15 Sekunden; Seedance 2.5 Draft unterstützt nur 480p und 4 bis 30 Sekunden. Seedance 2.5 Flash unterstützt 480p/720p und 4 bis 30 Sekunden. Jeder Lauf gibt seine Task-ID als `draft_task_id` zurück, aber nur die ID eines `Seedance 2.5 Draft`-Laufs kann vom ByteDance Seedance 2.5 Draft to Final Video Node gerendert werden; bei jedem anderen Modell muss die Ausgabe unverbunden bleiben, andernfalls schlägt der Lauf fehl. Der Wert `seed` steuert nur, ob der Node erneut ausgeführt wird; er macht die Ergebnisse nicht deterministisch.
 
 ## Ausgaben
 
@@ -61,4 +65,4 @@ Gemeinsam genutzt von Seedance 2.0 Fast und Seedance 2.0 Mini; beide Modelle ste
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2TextToVideoNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `dde0d299e7b9876943dcdac506139b449f8ef72f7a114f022952a6a4045ae4e5`
+**Source fingerprint (SHA-256):** `604f107752792ef378c7f04e40bb61ba97295c867f6be437bd300477c574eaee`

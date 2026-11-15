@@ -8,7 +8,7 @@ Este nó gera um vídeo a partir de uma imagem de primeiro quadro obrigatória e
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Faixa |
 |-----------|-----------|---------------|-------------|-------|
-| `modelo` | Seedance 2.5 para o modelo mais recente, vídeos de até 30 segundos e saída mp4; Seedance 2.5 Draft para uma prévia rápida em 480p cuja saída `draft_task_id` renderiza o final em 1080p ou 4k no nó ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.0 para qualidade máxima e 4k; Fast para otimização de velocidade; Mini para a geração mais rápida e de menor custo. Selecionar um modelo revela entradas específicas do modelo abaixo. | DYNAMIC_COMBO | Sim | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `modelo` | Seedance 2.5 para o modelo mais recente, vídeos de até 30 segundos e saída mp4; Seedance 2.5 Draft para uma prévia rápida em 480p cuja saída `draft_task_id` renderiza o final em 1080p ou 4k no nó ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.5 Flash para vídeos em 480p e 720p de até 30 segundos; Seedance 2.0 para qualidade máxima e 4k; Fast para otimização de velocidade; Mini para a geração mais rápida e de menor custo. Selecionar um modelo revela entradas específicas do modelo abaixo. | DYNAMIC_COMBO | Sim | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.5 Flash"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `primeiro_frame` | Imagem do primeiro quadro para o vídeo. | IMAGE | Não | - |
 | `último_frame` | Imagem do último quadro para o vídeo. | IMAGE | Não | - |
 | `first_frame_asset_id` | asset_id do Seedance a ser usado como o primeiro quadro. Mutuamente exclusivo com a entrada de imagem `first_frame`. O padrão é uma string vazia. | STRING | Não | - |
@@ -31,6 +31,10 @@ Estas entradas aparecem quando `Seedance 2.5` é selecionado.
 ### Entradas do Seedance 2.5 Draft
 
 Estas entradas aparecem quando `Seedance 2.5 Draft` é selecionado. O conjunto de parâmetros corresponde ao Seedance 2.5 acima, exceto que `resolution` oferece apenas `"480p"` (padrão `"480p"`).
+
+### Entradas do Seedance 2.5 Flash
+
+Estas entradas aparecem quando `Seedance 2.5 Flash` é selecionado. O conjunto de parâmetros corresponde ao Seedance 2.5 acima, exceto que `resolution` oferece apenas `"480p"` e `"720p"` (padrão `"720p"`).
 
 ### Entradas do Seedance 2.0
 
@@ -63,7 +67,7 @@ Compartilhadas por `Seedance 2.0 Fast` e `Seedance 2.0 Mini`.
 - Os IDs de asset devem referenciar assets de imagem do Seedance existentes e ativos.
 - A entrada `prompt` é obrigatória e não pode ficar vazia.
 - Toda execução retorna seu ID de tarefa como `draft_task_id`, mas somente o ID de uma execução de `Seedance 2.5 Draft` pode ser renderizado pelo nó ByteDance Seedance 2.5 Draft to Final Video. Com qualquer outro modelo, a saída deve ser deixada desconectada; caso contrário, a execução falha.
-- Com `Seedance 2.5`, a proporção de aspecto da saída é sempre adaptativa e segue a própria proporção de aspecto do primeiro quadro, portanto nenhuma entrada `ratio` é exibida.
+- Com `Seedance 2.5` e `Seedance 2.5 Flash`, a proporção de aspecto da saída é sempre adaptativa e segue a própria proporção de aspecto do primeiro quadro, portanto nenhuma entrada `ratio` é exibida.
 - Com os modelos da família Seedance 2.0 e imagens de quadro locais, as imagens são recortadas ao centro e redimensionadas para a resolução e proporção de saída desejadas antes da geração. Quando `ratio` é `adaptive`, a proporção suportada mais próxima da imagem de entrada é usada.
 - Imagens de quadro locais são validadas quanto à proporção de aspecto e às dimensões suportadas; imagens grandes demais são reduzidas.
 
@@ -77,4 +81,4 @@ Compartilhadas por `Seedance 2.0 Fast` e `Seedance 2.0 Mini`.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `a0396690cd91dabe47ed65a51e05780c4f344afad222f30d6ab628240ea30469`
+**Source fingerprint (SHA-256):** `292e87f4cf2b7099ae63b708489f5fbbf47aa4f2dbb83b830d288bf307546d49`

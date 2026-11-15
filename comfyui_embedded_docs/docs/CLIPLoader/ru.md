@@ -7,7 +7,7 @@
 | Параметр | Описание | Тип данных | Обязательный | Диапазон |
 |-----------|-------------|-----------|----------|-------|
 | `название_clip` | Имя файла модели текстового кодировщика для загрузки. Это должен быть файл, расположенный в каталоге `ComfyUI/models/text_encoders/`. | STRING | Да | Список файлов, найденных в папке `text_encoders` |
-| `тип` | Тип архитектуры загружаемой модели. Определяет, какой именно вариант кодировщика использовать (по умолчанию: `"stable_diffusion"`). | COMBO | Да | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"`<br>`"fibo2"` |
+| `тип` | Тип архитектуры загружаемой модели. Определяет, какой именно вариант кодировщика использовать (по умолчанию: `"stable_diffusion"`). | COMBO | Да | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"`<br>`"fibo2"`<br>`"pan2"` |
 | `устройство` | Устройство, на которое загружается модель. `"default"` использует GPU, если он доступен, а `"cpu"` принудительно загружает на CPU. Это расширенная опция (по умолчанию: `"default"`). | COMBO | Нет | `"default"`<br>`"cpu"` |
 
 ### Поддерживаемые соответствия типов и кодировщиков
@@ -33,6 +33,7 @@
 | minimax | MiniMax H3 Qwen3-VL или Music3 Qwen/RVQ |
 | flux3 | qwen3-vl 4B |
 | fibo2 | qwen3-vl 4B |
+| pan2 | qwen3.5 9B |
 
 ## Выходы
 
@@ -43,4 +44,4 @@
 > Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/ru.md)
 
 ---
-**Source fingerprint (SHA-256):** `75cf64ce955946681dee79035fc91b54be0a99e3fc22b8c4737929ce0bdff13e`
+**Source fingerprint (SHA-256):** `b9fe5d613610d8532c3b6b7428d6548da63e739c27fd58cc66389153824dc617`

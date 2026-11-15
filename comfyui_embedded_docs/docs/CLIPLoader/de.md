@@ -7,7 +7,7 @@ Der Node CLIPLoader lädt ein Textencoder-Modell (CLIP, T5 oder ähnlich) aus ei
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `clip_name` | Der Dateiname des zu ladenden Textencoder-Modells. Dies muss eine Datei im Verzeichnis `ComfyUI/models/text_encoders/` sein. | STRING | Ja | Liste der im Ordner `text_encoders` gefundenen Dateien |
-| `type` | Der Architekturtyp des zu ladenden Modells. Dies bestimmt, welche spezifische Encoder-Variante verwendet wird (Standard: `"stable_diffusion"`). | COMBO | Ja | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"`<br>`"fibo2"` |
+| `type` | Der Architekturtyp des zu ladenden Modells. Dies bestimmt, welche spezifische Encoder-Variante verwendet wird (Standard: `"stable_diffusion"`). | COMBO | Ja | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"`<br>`"fibo2"`<br>`"pan2"` |
 | `device` | Das Gerät, auf das das Modell geladen wird. `"default"` verwendet die GPU, falls verfügbar, während `"cpu"` das Laden auf die CPU erzwingt. Dies ist eine erweiterte Option (Standard: `"default"`). | COMBO | Nein | `"default"`<br>`"cpu"` |
 
 ### Unterstützte Typ-zu-Encoder-Zuordnungen
@@ -33,6 +33,7 @@ Der Parameter `type` wählt den richtigen Encoder für eine gegebene Modellarchi
 | minimax | MiniMax H3 Qwen3-VL oder Music3 Qwen/RVQ |
 | flux3 | qwen3-vl 4B |
 | fibo2 | qwen3-vl 4B |
+| pan2 | qwen3.5 9B |
 
 ## Ausgaben
 
@@ -43,4 +44,4 @@ Der Parameter `type` wählt den richtigen Encoder für eine gegebene Modellarchi
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `75cf64ce955946681dee79035fc91b54be0a99e3fc22b8c4737929ce0bdff13e`
+**Source fingerprint (SHA-256):** `b9fe5d613610d8532c3b6b7428d6548da63e739c27fd58cc66389153824dc617`

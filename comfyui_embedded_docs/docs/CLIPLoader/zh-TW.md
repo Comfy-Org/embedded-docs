@@ -7,7 +7,7 @@ CLIPLoader 節點會從檔案載入文字編碼器模型（CLIP、T5 或類似�
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `clip_name` | 要載入的文字編碼器模型檔案名稱。此檔案必須位於 `ComfyUI/models/text_encoders/` 目錄中。 | STRING | 是 | 在 `text_encoders` 資料夾中找到的檔案清單 |
-| `type` | 要載入的模型架構類型。這會決定要使用哪個特定的編碼器變體（預設：`"stable_diffusion"`）。 | COMBO | 是 | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"`<br>`"fibo2"` |
+| `type` | 要載入的模型架構類型。這會決定要使用哪個特定的編碼器變體（預設：`"stable_diffusion"`）。 | COMBO | 是 | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"`<br>`"fibo2"`<br>`"pan2"` |
 | `device` | 要將模型載入到的裝置。`"default"` 會在可用時使用 GPU，而 `"cpu"` 則強制使用 CPU 載入。這是進階選項（預設：`"default"`）。 | COMBO | 否 | `"default"`<br>`"cpu"` |
 
 ### 支援的類型對編碼器對應
@@ -33,6 +33,7 @@ CLIPLoader 節點會從檔案載入文字編碼器模型（CLIP、T5 或類似�
 | minimax | MiniMax H3 Qwen3-VL or Music3 Qwen/RVQ |
 | flux3 | qwen3-vl 4B |
 | fibo2 | qwen3-vl 4B |
+| pan2 | qwen3.5 9B |
 
 ## 輸出
 
@@ -43,4 +44,4 @@ CLIPLoader 節點會從檔案載入文字編碼器模型（CLIP、T5 或類似�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `75cf64ce955946681dee79035fc91b54be0a99e3fc22b8c4737929ce0bdff13e`
+**Source fingerprint (SHA-256):** `b9fe5d613610d8532c3b6b7428d6548da63e739c27fd58cc66389153824dc617`
