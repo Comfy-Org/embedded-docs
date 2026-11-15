@@ -54,6 +54,9 @@ VALID_TYPES = {
     "BOUNDING_BOX", "FILE3D", "FILE3DGLB", "FILE3DFBX", "PROMPT", "EXTRA_PNGINFO",
     "WEBCAM", "GUIDER", "SAMPLER", "SIGMAS", "NOISE", "ANY", "PK_HOOK", "MESH",
     "AUTO_TRIGGER", "IC_LORA_PARAMETERS", "MODEL_TASK_ID", "IMAGE_TASK_ID",
+    # Optical flow model handle (io.Custom("OPTICAL_FLOW")) shared by the Optical
+    # Flow model loader and the nodes that follow its motion.
+    "OPTICAL_FLOW",
     # Array inputs/outputs (e.g. IO.Array.Input for Create Bounding Boxes output).
     "ARRAY",
     # Custom (IO.Custom) widget types used by partner nodes, e.g. Recraft Controls.

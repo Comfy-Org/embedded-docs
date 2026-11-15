@@ -1,6 +1,6 @@
 # OpenRouter LLM
 
-Le nœud OpenRouter LLM envoie une invite textuelle à un ensemble sélectionné de modèles de langage populaires disponibles via le service OpenRouter et renvoie la réponse textuelle générée. Il prend en charge les modèles d’Anthropic (Claude), OpenAI (GPT), Google (Gemini), xAI (Grok), DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) et Perplexity Sonar, et peut éventuellement inclure des images ou des vidéos comme entrées de référence dans la requête.
+Le nœud OpenRouter LLM envoie une invite textuelle à un ensemble sélectionné de modèles de langage populaires disponibles via le service OpenRouter et renvoie la réponse textuelle générée. Il prend en charge les modèles d’Anthropic (Claude), OpenAI (GPT), Google (Gemini), xAI (Grok), Meta (Muse), DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) et Perplexity Sonar, et peut éventuellement inclure des images ou des vidéos comme entrées de référence dans la requête.
 
 ## Entrées
 
@@ -53,6 +53,18 @@ Communes à `x-ai/grok-4.5`, `x-ai/grok-4.20` et `x-ai/grok-4.3`.
 
 Ces modèles prennent en charge jusqu’à 20 images de référence (voir Entrées de référence).
 
+### Entrées Meta Muse Models
+
+Communes à `meta/muse-wonder`, `meta/muse-spark-1.3` et `meta/muse-ember`.
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------|----------|-------|
+| `reasoning_effort` | Effort de raisonnement. Ces modèles raisonnent toujours ; 'minimal' est le niveau le plus bas. (défaut : "minimal") | COMBO | Non | "minimal"<br>"low"<br>"medium"<br>"high" |
+
+Ces modèles prennent en charge jusqu’à 50 images de référence et jusqu’à 5 vidéos de référence (voir Entrées de référence).
+
+Ces modèles raisonnent toujours : si la réponse revient vide, réduisez `reasoning_effort` ou simplifiez l’invite.
+
 ### Entrées DeepSeek Models
 
 Communes à `deepseek/deepseek-v4-pro`, `deepseek/deepseek-v4-flash` et `deepseek/deepseek-v3.2`.
@@ -62,14 +74,6 @@ Communes à `deepseek/deepseek-v4-pro`, `deepseek/deepseek-v4-flash` et `deepsee
 | `reasoning_effort` | Effort de raisonnement. 'off' désactive entièrement le raisonnement. (défaut : "off") | COMBO | Non | "off"<br>"low"<br>"medium"<br>"high" |
 
 Modèles textuels uniquement — aucune image ou vidéo de référence.
-
-### Entrées Qwen 3.6 Max Preview
-
-| Paramètre | Description | Type de données | Requis | Plage |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | Effort de raisonnement. 'off' désactive entièrement le raisonnement. (défaut : "off") | COMBO | Non | "off"<br>"low"<br>"medium"<br>"high" |
-
-Modèle textuel uniquement — aucune image ou vidéo de référence.
 
 ### Entrées Qwen 3.6 Plus et Qwen 3.6 Flash
 
@@ -144,18 +148,19 @@ Modèles textuels uniquement — aucune image ou vidéo de référence.
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------|----------|-------|
-| `images` | Image(s) de référence facultative(s), envoyée(s) sous forme d’URL. Emplacement extensible : connectez 1..N entrées d’image (`image_1`, `image_2`, ...) ; la limite de nombre dépend du modèle sélectionné (voir les sections des modèles). | IMAGE | Non | 0 à 20 (selon le modèle : 8, 10 ou 20) |
-| `videos` | Vidéo(s) de référence facultative(s), envoyée(s) sous forme d’URL. Emplacement extensible : connectez 1..N entrées vidéo (`video_1`, `video_2`, ...) ; la limite de nombre dépend du modèle sélectionné (voir les sections des modèles). | VIDEO | Non | 0 à 4 (selon le modèle) |
+| `images` | Image(s) de référence facultative(s), envoyée(s) sous forme d’URL. Emplacement extensible : connectez 1..N entrées d’image (`image_1`, `image_2`, ...) ; la limite de nombre dépend du modèle sélectionné (voir les sections des modèles). | IMAGE | Non | 0 à 50 (selon le modèle : 8, 10, 20 ou 50) |
+| `videos` | Vidéo(s) de référence facultative(s), envoyée(s) sous forme d’URL. Emplacement extensible : connectez 1..N entrées vidéo (`video_1`, `video_2`, ...) ; la limite de nombre dépend du modèle sélectionné (voir les sections des modèles). | VIDEO | Non | 0 à 5 (selon le modèle) |
 
 **Notes :**
 
-- **Modèles disponibles :** Les options de modèle disponibles sont construites dynamiquement et incluent des modèles aux capacités différentes. La liste complète des 34 modèles est la suivante :
+- **Modèles disponibles :** Les options de modèle disponibles sont construites dynamiquement et incluent des modèles aux capacités différentes. La liste complète des 36 modèles est la suivante :
   - Anthropic : `anthropic/claude-opus-5`, `anthropic/claude-opus-4.8`, `anthropic/claude-opus-4.7`, `anthropic/claude-fable-5`, `anthropic/claude-sonnet-5`, `anthropic/claude-haiku-4.5`
   - OpenAI : `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-terra-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-luna`, `openai/gpt-5.5-pro`, `openai/gpt-5.5`
   - Google : `google/gemini-3.5-flash`
   - xAI : `x-ai/grok-4.5`, `x-ai/grok-4.20`, `x-ai/grok-4.3`
+  - xAI : `meta/muse-wonder`, `meta/muse-spark-1.3`, `meta/muse-ember`
   - DeepSeek : `deepseek/deepseek-v4-pro`, `deepseek/deepseek-v4-flash`, `deepseek/deepseek-v3.2`
-  - Qwen : `qwen/qwen3.6-max-preview`, `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
+  - Qwen : , `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
   - Mistral : `mistralai/mistral-large-2512`, `mistralai/mistral-medium-3-5`
   - Z.AI : `z-ai/glm-4.6`, `z-ai/glm-5`
   - Moonshot : `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`, `moonshotai/kimi-k2-thinking`
@@ -180,4 +185,4 @@ Modèles textuels uniquement — aucune image ou vidéo de référence.
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `534ab9ecc12e35a23a4d8f3e10f4f82d95db8e902ac8a2f2ee0ea68246516f62`
+**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`

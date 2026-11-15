@@ -1,6 +1,6 @@
 # OpenRouter LLM
 
-OpenRouter LLM 節點會將文字提示傳送給可透過 OpenRouter 服務使用的一組精選熱門語言模型，並回傳所產生的文字回應。它支援來自 Anthropic (Claude)、OpenAI (GPT)、Google (Gemini)、xAI (Grok)、DeepSeek、Qwen、Mistral、Z.AI (GLM)、Moonshot (Kimi) 和 Perplexity Sonar 的模型，並可選擇在請求中包含影像或影片作為參考輸入。
+OpenRouter LLM 節點會將文字提示傳送給可透過 OpenRouter 服務使用的一組精選熱門語言模型，並回傳所產生的文字回應。它支援來自 Anthropic (Claude)、OpenAI (GPT)、Google (Gemini)、xAI (Grok)、Meta (Muse)、DeepSeek、Qwen、Mistral、Z.AI (GLM)、Moonshot (Kimi) 和 Perplexity Sonar 的模型，並可選擇在請求中包含影像或影片作為參考輸入。
 
 ## 輸入
 在 `model` 選取器中選取模型後，節點會視所選模型的能力，在通用輸入上方顯示模型專屬小工具——推理強度、網路搜尋規模，和/或參考媒體插槽。
@@ -52,17 +52,21 @@ OpenRouter LLM 節點會將文字提示傳送給可透過 OpenRouter 服務使�
 
 這些模型最多支援 20 張參考影像（請參閱「參考輸入」）。
 
-### DeepSeek 模型輸入
+### Meta Muse 模型輸入
 
-由 `deepseek/deepseek-v4-pro`、`deepseek/deepseek-v4-flash` 和 `deepseek/deepseek-v3.2` 共用。
+由 `meta/muse-wonder`、`meta/muse-spark-1.3` 和 `meta/muse-ember` 共用。
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推理強度。設為 'off' 可完全停用推理。（預設值："off"） | COMBO | 否 | "off"<br>"low"<br>"medium"<br>"high" |
+| `reasoning_effort` | 推理強度。這些模型一律會進行推理；'minimal' 是最低等級。（預設值："minimal"） | COMBO | 否 | "minimal"<br>"low"<br>"medium"<br>"high" |
 
-僅限文字的模型——不支援參考影像或影片。
+這些模型最多支援 50 張參考影像和 5 段參考影片（請參閱「參考輸入」）。
 
-### Qwen 3.6 Max Preview 輸入
+這些模型一律會進行推理，因此若回應為空，請降低 `reasoning_effort` 或簡化提示詞。
+
+### DeepSeek 模型輸入
+
+由 `deepseek/deepseek-v4-pro`、`deepseek/deepseek-v4-flash` 和 `deepseek/deepseek-v3.2` 共用。
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
@@ -143,19 +147,20 @@ OpenRouter LLM 節點會將文字提示傳送給可透過 OpenRouter 服務使�
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `images` | 選用的參考影像，以 URL 形式傳送。可成長插槽：可連接 1..N 個影像輸入（`image_1`、`image_2`……）；數量上限取決於所選模型（請參閱模型章節）。 | IMAGE | 否 | 0 至 20（依模型而定：8、10 或 20） |
-| `videos` | 選用的參考影片，以 URL 形式傳送。可成長插槽：可連接 1..N 個影片輸入（`video_1`、`video_2`……）；數量上限取決於所選模型（請參閱模型章節）。 | VIDEO | 否 | 0 至 4（依模型而定） |
+| `images` | 選用的參考影像，以 URL 形式傳送。可成長插槽：可連接 1..N 個影像輸入（`image_1`、`image_2`……）；數量上限取決於所選模型（請參閱模型章節）。 | IMAGE | 否 | 0 至 50（依模型而定：8、10、20 或 50） |
+| `videos` | 選用的參考影片，以 URL 形式傳送。可成長插槽：可連接 1..N 個影片輸入（`video_1`、`video_2`……）；數量上限取決於所選模型（請參閱模型章節）。 | VIDEO | 否 | 0 至 5（依模型而定） |
 
 **附註：**
 
-- **可用模型：** 可用模型選項會動態建立，並包含具有不同能力的模型。完整的 34 個模型清單如下：
+- **可用模型：** 可用模型選項會動態建立，並包含具有不同能力的模型。完整的 36 個模型清單如下：
 
   - Anthropic: `anthropic/claude-opus-5`, `anthropic/claude-opus-4.8`, `anthropic/claude-opus-4.7`, `anthropic/claude-fable-5`, `anthropic/claude-sonnet-5`, `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-terra-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-luna`, `openai/gpt-5.5-pro`, `openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
   - xAI: `x-ai/grok-4.5`, `x-ai/grok-4.20`, `x-ai/grok-4.3`
+  - Meta: `meta/muse-wonder`, `meta/muse-spark-1.3`, `meta/muse-ember`
   - DeepSeek: `deepseek/deepseek-v4-pro`, `deepseek/deepseek-v4-flash`, `deepseek/deepseek-v3.2`
-  - Qwen: `qwen/qwen3.6-max-preview`, `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
+  - Qwen: `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`, `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`, `z-ai/glm-5`
   - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`, `moonshotai/kimi-k2-thinking`
@@ -179,4 +184,4 @@ OpenRouter LLM 節點會將文字提示傳送給可透過 OpenRouter 服務使�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `534ab9ecc12e35a23a4d8f3e10f4f82d95db8e902ac8a2f2ee0ea68246516f62`
+**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`

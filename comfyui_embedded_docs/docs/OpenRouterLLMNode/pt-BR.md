@@ -1,6 +1,6 @@
 # OpenRouter LLM
 
-O nó LLM do OpenRouter envia um prompt de texto para um conjunto selecionado de modelos de linguagem populares disponíveis por meio do serviço OpenRouter e retorna a resposta de texto gerada. Ele oferece suporte a modelos da Anthropic (Claude), OpenAI (GPT), Google (Gemini), xAI (Grok), DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) e Perplexity Sonar, e pode incluir opcionalmente imagens ou vídeos como entradas de referência na solicitação.
+O nó LLM do OpenRouter envia um prompt de texto para um conjunto selecionado de modelos de linguagem populares disponíveis por meio do serviço OpenRouter e retorna a resposta de texto gerada. Ele oferece suporte a modelos da Anthropic (Claude), OpenAI (GPT), Google (Gemini), xAI (Grok), Meta (Muse), DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) e Perplexity Sonar, e pode incluir opcionalmente imagens ou vídeos como entradas de referência na solicitação.
 
 ## Entradas
 
@@ -53,6 +53,18 @@ Compartilhadas por `x-ai/grok-4.5`, `x-ai/grok-4.20` e `x-ai/grok-4.3`.
 
 Esses modelos suportam até 20 imagens de referência (veja Entradas de referência).
 
+### Entradas dos modelos Meta Muse
+
+Compartilhadas por `meta/muse-wonder`, `meta/muse-spark-1.3` e `meta/muse-ember`.
+
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+|-----------|-------------|-----------|----------|-------|
+| `reasoning_effort` | Esforço de raciocínio. Esses modelos sempre raciocinam; 'minimal' é o nível mais baixo. (padrão: "minimal") | COMBO | Não | "minimal"<br>"low"<br>"medium"<br>"high" |
+
+Esses modelos suportam até 50 imagens de referência e até 5 vídeos de referência (veja Entradas de referência).
+
+Esses modelos sempre raciocinam, então se a resposta voltar vazia, reduza `reasoning_effort` ou simplifique o prompt.
+
 ### Entradas dos modelos DeepSeek
 
 Compartilhadas por `deepseek/deepseek-v4-pro`, `deepseek/deepseek-v4-flash` e `deepseek/deepseek-v3.2`.
@@ -62,14 +74,6 @@ Compartilhadas por `deepseek/deepseek-v4-pro`, `deepseek/deepseek-v4-flash` e `d
 | `reasoning_effort` | Esforço de raciocínio. 'off' desativa o raciocínio completamente. (padrão: "off") | COMBO | Não | "off"<br>"low"<br>"medium"<br>"high" |
 
 Modelos somente de texto — sem imagens ou vídeos de referência.
-
-### Entradas do Qwen 3.6 Max Preview
-
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | Esforço de raciocínio. 'off' desativa o raciocínio completamente. (padrão: "off") | COMBO | Não | "off"<br>"low"<br>"medium"<br>"high" |
-
-Modelo somente de texto — sem imagens ou vídeos de referência.
 
 ### Entradas do Qwen 3.6 Plus e Qwen 3.6 Flash
 
@@ -144,18 +148,19 @@ Modelos somente de texto — sem imagens ou vídeos de referência.
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `images` | Imagem(ns) de referência opcional(is), enviadas como URLs. Slot expansível: conecte de 1 a N entradas de imagem (`image_1`, `image_2`, ...); o limite de quantidade depende do modelo selecionado (veja as seções de modelos). | IMAGE | Não | 0 a 20 (depende do modelo: 8, 10 ou 20) |
-| `videos` | Vídeo(s) de referência opcional(is), enviados como URLs. Slot expansível: conecte de 1 a N entradas de vídeo (`video_1`, `video_2`, ...); o limite de quantidade depende do modelo selecionado (veja as seções de modelos). | VIDEO | Não | 0 a 4 (depende do modelo) |
+| `images` | Imagem(ns) de referência opcional(is), enviadas como URLs. Slot expansível: conecte de 1 a N entradas de imagem (`image_1`, `image_2`, ...); o limite de quantidade depende do modelo selecionado (veja as seções de modelos). | IMAGE | Não | 0 a 50 (depende do modelo: 8, 10, 20 ou 50) |
+| `videos` | Vídeo(s) de referência opcional(is), enviados como URLs. Slot expansível: conecte de 1 a N entradas de vídeo (`video_1`, `video_2`, ...); o limite de quantidade depende do modelo selecionado (veja as seções de modelos). | VIDEO | Não | 0 a 5 (depende do modelo) |
 
 **Notas:**
 
-- **Modelos disponíveis:** As opções de modelos disponíveis são construídas dinamicamente e incluem modelos com diferentes capacidades. A lista completa dos 34 modelos é:
+- **Modelos disponíveis:** As opções de modelos disponíveis são construídas dinamicamente e incluem modelos com diferentes capacidades. A lista completa dos 36 modelos é:
   - Anthropic: `anthropic/claude-opus-5`, `anthropic/claude-opus-4.8`, `anthropic/claude-opus-4.7`, `anthropic/claude-fable-5`, `anthropic/claude-sonnet-5`, `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-terra-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-luna`, `openai/gpt-5.5-pro`, `openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
   - xAI: `x-ai/grok-4.5`, `x-ai/grok-4.20`, `x-ai/grok-4.3`
+  - Meta: `meta/muse-wonder`, `meta/muse-spark-1.3`, `meta/muse-ember`
   - DeepSeek: `deepseek/deepseek-v4-pro`, `deepseek/deepseek-v4-flash`, `deepseek/deepseek-v3.2`
-  - Qwen: `qwen/qwen3.6-max-preview`, `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
+  - Qwen: `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`, `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`, `z-ai/glm-5`
   - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`, `moonshotai/kimi-k2-thinking`
@@ -180,4 +185,4 @@ Modelos somente de texto — sem imagens ou vídeos de referência.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `534ab9ecc12e35a23a4d8f3e10f4f82d95db8e902ac8a2f2ee0ea68246516f62`
+**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`

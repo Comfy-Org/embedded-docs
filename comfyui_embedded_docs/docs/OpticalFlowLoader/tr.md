@@ -14,9 +14,9 @@ Not: Seçilen checkpoint, önekleri `feature_encoder.`, `context_encoder.` ve `u
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `OPTICAL_FLOW` | Yüklenen optik akış modeli; değerlendirme moduna ve float32 hassasiyetine ayarlanmış, diğer düğümlerle kullanım için bir ModelPatcher ile sarılmıştır. | OPTICAL_FLOW |
+| `OPTICAL_FLOW` | Yüklenen optik akış modeli; değerlendirme moduna ayarlanmış, fp16 destekleyen cihazlarda fp16 hassasiyetinde (aksi halde float32) yüklenmiş, diğer düğümlerle kullanım için bir ModelPatcher ile sarılmıştır. | OPTICAL_FLOW |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpticalFlowLoader/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `5e79551545ad7ee2fd4856a47da29808a404342d1d5e57da0980058db6b11c3b`
+**Source fingerprint (SHA-256):** `82e5d747679ede113ec4d72fd6eda4b8f20d098832612bebf26ef65de8b4b3dc`

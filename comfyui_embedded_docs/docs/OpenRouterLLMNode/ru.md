@@ -1,6 +1,6 @@
 # OpenRouter LLM
 
-Узел OpenRouter LLM отправляет текстовый запрос выбранному набору популярных языковых моделей, доступных через сервис OpenRouter, и возвращает сгенерированный текстовый ответ. Он поддерживает модели Anthropic (Claude), OpenAI (GPT), Google (Gemini), xAI (Grok), DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) и Perplexity Sonar, а также может опционально включать изображения или видео в качестве эталонных входов в запросе.
+Узел OpenRouter LLM отправляет текстовый запрос выбранному набору популярных языковых моделей, доступных через сервис OpenRouter, и возвращает сгенерированный текстовый ответ. Он поддерживает модели Anthropic (Claude), OpenAI (GPT), Google (Gemini), xAI (Grok), Meta (Muse), DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) и Perplexity Sonar, а также может опционально включать изображения или видео в качестве эталонных входов в запросе.
 
 ## Входы
 
@@ -53,6 +53,18 @@
 
 Эти модели поддерживают до 20 эталонных изображений (см. «Эталонные входы»).
 
+### Входы Meta Muse Models
+
+Общие для `meta/muse-wonder`, `meta/muse-spark-1.3` и `meta/muse-ember`.
+
+| Параметр | Описание | Тип данных | Обязательный | Диапазон |
+|-----------|-------------|-----------|----------|-------|
+| `reasoning_effort` | Уровень рассуждений. Эти модели всегда рассуждают; 'minimal' — самый низкий уровень. (по умолчанию: "minimal") | COMBO | Нет | "minimal"<br>"low"<br>"medium"<br>"high" |
+
+Эти модели поддерживают до 50 эталонных изображений и до 5 эталонных видео (см. «Эталонные входы»).
+
+Эти модели всегда рассуждают, поэтому если ответ пустой, снизьте `reasoning_effort` или упростите запрос.
+
 ### Входы DeepSeek Models
 
 Общие для `deepseek/deepseek-v4-pro`, `deepseek/deepseek-v4-flash` и `deepseek/deepseek-v3.2`.
@@ -62,14 +74,6 @@
 | `reasoning_effort` | Уровень рассуждений. 'off' полностью отключает рассуждения. (по умолчанию: "off") | COMBO | Нет | "off"<br>"low"<br>"medium"<br>"high" |
 
 Текстовые модели — без эталонных изображений и видео.
-
-### Входы Qwen 3.6 Max Preview
-
-| Параметр | Описание | Тип данных | Обязательный | Диапазон |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | Уровень рассуждений. 'off' полностью отключает рассуждения. (по умолчанию: "off") | COMBO | Нет | "off"<br>"low"<br>"medium"<br>"high" |
-
-Текстовая модель — без эталонных изображений и видео.
 
 ### Входы Qwen 3.6 Plus и Qwen 3.6 Flash
 
@@ -144,18 +148,19 @@
 
 | Параметр | Описание | Тип данных | Обязательный | Диапазон |
 |-----------|-------------|-----------|----------|-------|
-| `images` | Необязательные эталонные изображения, отправляемые в виде URL. Расширяемый слот: подключите от 1 до N входов изображений (`image_1`, `image_2`, ...); ограничение количества зависит от выбранной модели (см. разделы моделей). | IMAGE | Нет | от 0 до 20 (зависит от модели: 8, 10 или 20) |
-| `videos` | Необязательные эталонные видео, отправляемые в виде URL. Расширяемый слот: подключите от 1 до N видеовходов (`video_1`, `video_2`, ...); ограничение количества зависит от выбранной модели (см. разделы моделей). | VIDEO | Нет | от 0 до 4 (зависит от модели) |
+| `images` | Необязательные эталонные изображения, отправляемые в виде URL. Расширяемый слот: подключите от 1 до N входов изображений (`image_1`, `image_2`, ...); ограничение количества зависит от выбранной модели (см. разделы моделей). | IMAGE | Нет | от 0 до 50 (зависит от модели: 8, 10, 20 или 50) |
+| `videos` | Необязательные эталонные видео, отправляемые в виде URL. Расширяемый слот: подключите от 1 до N видеовходов (`video_1`, `video_2`, ...); ограничение количества зависит от выбранной модели (см. разделы моделей). | VIDEO | Нет | от 0 до 5 (зависит от модели) |
 
 **Примечания:**
 
-- **Доступные модели:** Доступные варианты моделей формируются динамически и включают модели с разными возможностями. Полный список из 34 моделей:
+- **Доступные модели:** Доступные варианты моделей формируются динамически и включают модели с разными возможностями. Полный список из 36 моделей:
   - Anthropic: `anthropic/claude-opus-5`, `anthropic/claude-opus-4.8`, `anthropic/claude-opus-4.7`, `anthropic/claude-fable-5`, `anthropic/claude-sonnet-5`, `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-terra-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-luna`, `openai/gpt-5.5-pro`, `openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
   - xAI: `x-ai/grok-4.5`, `x-ai/grok-4.20`, `x-ai/grok-4.3`
+  - Meta: `meta/muse-wonder`, `meta/muse-spark-1.3`, `meta/muse-ember`
   - DeepSeek: `deepseek/deepseek-v4-pro`, `deepseek/deepseek-v4-flash`, `deepseek/deepseek-v3.2`
-  - Qwen: `qwen/qwen3.6-max-preview`, `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
+  - Qwen: `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`, `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`, `z-ai/glm-5`
   - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`, `moonshotai/kimi-k2-thinking`
@@ -180,4 +185,4 @@
 > Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/ru.md)
 
 ---
-**Source fingerprint (SHA-256):** `534ab9ecc12e35a23a4d8f3e10f4f82d95db8e902ac8a2f2ee0ea68246516f62`
+**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`

@@ -1,6 +1,6 @@
 # OpenRouter LLM
 
-عقدة OpenRouter LLM ترسل موجهًا نصيًا إلى مجموعة مختارة من نماذج اللغة الشائعة المتاحة عبر خدمة OpenRouter وتُرجع استجابة النص المُولَّدة. تدعم العقدة نماذج من Anthropic (Claude) وOpenAI (GPT) وGoogle (Gemini) وxAI (Grok) وDeepSeek وQwen وMistral وZ.AI (GLM) وMoonshot (Kimi) وPerplexity Sonar، ويمكنها اختياريًا تضمين الصور أو الفيديو كمدخلات مرجعية في الطلب.
+عقدة OpenRouter LLM ترسل موجهًا نصيًا إلى مجموعة مختارة من نماذج اللغة الشائعة المتاحة عبر خدمة OpenRouter وتُرجع استجابة النص المُولَّدة. تدعم العقدة نماذج من Anthropic (Claude) وOpenAI (GPT) وGoogle (Gemini) وxAI (Grok) وMeta (Muse) وDeepSeek وQwen وMistral وZ.AI (GLM) وMoonshot (Kimi) وPerplexity Sonar، ويمكنها اختياريًا تضمين الصور أو الفيديو كمدخلات مرجعية في الطلب.
 
 ## المدخلات
 
@@ -53,6 +53,18 @@
 
 تدعم هذه النماذج ما يصل إلى 20 صورة مرجعية (انظر المدخلات المرجعية).
 
+### مدخلات Meta Muse Models
+
+تشترك فيها النماذج: `meta/muse-wonder`، `meta/muse-spark-1.3`، `meta/muse-ember`.
+
+| المعامل | الوصف | نوع البيانات | إلزامي | النطاق |
+|-----------|-------------|-----------|----------|-------|
+| `reasoning_effort` | درجة التفكير. هذه النماذج تفكر دائمًا؛ 'minimal' هو أدنى مستوى. (الافتراضي: "minimal") | COMBO | لا | "minimal"<br>"low"<br>"medium"<br>"high" |
+
+تدعم هذه النماذج ما يصل إلى 50 صورة مرجعية وما يصل إلى 5 مقاطع فيديو مرجعية (انظر المدخلات المرجعية).
+
+هذه النماذج تفكر دائمًا، لذا إذا عادت الاستجابة فارغة، فاخفض `reasoning_effort` أو بسّط الموجه.
+
 ### مدخلات DeepSeek Models
 
 تشترك فيها النماذج: `deepseek/deepseek-v4-pro`، `deepseek/deepseek-v4-flash`، `deepseek/deepseek-v3.2`.
@@ -62,14 +74,6 @@
 | `reasoning_effort` | درجة التفكير. القيمة 'off' تعطل التفكير تمامًا. (الافتراضي: "off") | COMBO | لا | "off"<br>"low"<br>"medium"<br>"high" |
 
 نماذج نصية فقط — لا تدعم الصور أو الفيديو المرجعية.
-
-### مدخلات Qwen 3.6 Max Preview
-
-| المعامل | الوصف | نوع البيانات | إلزامي | النطاق |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | درجة التفكير. القيمة 'off' تعطل التفكير تمامًا. (الافتراضي: "off") | COMBO | لا | "off"<br>"low"<br>"medium"<br>"high" |
-
-نموذج نصي فقط — لا يدعم الصور أو الفيديو المرجعية.
 
 ### مدخلات Qwen 3.6 Plus and Qwen 3.6 Flash
 
@@ -144,18 +148,19 @@
 
 | المعامل | الوصف | نوع البيانات | إلزامي | النطاق |
 |-----------|-------------|-----------|----------|-------|
-| `images` | صورة (صور) مرجعية اختيارية، تُرسل كروابط URL. فتحة قابلة للتوسيع: قم بتوصيل من 1 إلى N من مدخلات الصور (`image_1`، `image_2`، ...)؛ يعتمد حد العدد على النموذج المحدد (انظر أقسام النماذج). | IMAGE | لا | 0 إلى 20 (يعتمد على النموذج: 8 أو 10 أو 20) |
-| `videos` | مقطع (مقاطع) فيديو مرجعية اختيارية، تُرسل كروابط URL. فتحة قابلة للتوسيع: قم بتوصيل من 1 إلى N من مدخلات الفيديو (`video_1`، `video_2`، ...)؛ يعتمد حد العدد على النموذج المحدد (انظر أقسام النماذج). | VIDEO | لا | 0 إلى 4 (يعتمد على النموذج) |
+| `images` | صورة (صور) مرجعية اختيارية، تُرسل كروابط URL. فتحة قابلة للتوسيع: قم بتوصيل من 1 إلى N من مدخلات الصور (`image_1`، `image_2`، ...)؛ يعتمد حد العدد على النموذج المحدد (انظر أقسام النماذج). | IMAGE | لا | 0 إلى 50 (يعتمد على النموذج: 8 أو 10 أو 20 أو 50) |
+| `videos` | مقطع (مقاطع) فيديو مرجعية اختيارية، تُرسل كروابط URL. فتحة قابلة للتوسيع: قم بتوصيل من 1 إلى N من مدخلات الفيديو (`video_1`، `video_2`، ...)؛ يعتمد حد العدد على النموذج المحدد (انظر أقسام النماذج). | VIDEO | لا | 0 إلى 5 (يعتمد على النموذج) |
 
 **ملاحظات:**
 
-- **النماذج المتاحة:** يتم بناء خيارات النماذج المتاحة ديناميكيًا وتتضمن نماذج بقدرات مختلفة. القائمة الكاملة للنماذج الـ34 هي:
+- **النماذج المتاحة:** يتم بناء خيارات النماذج المتاحة ديناميكيًا وتتضمن نماذج بقدرات مختلفة. القائمة الكاملة للنماذج الـ36 هي:
   - Anthropic: `anthropic/claude-opus-5`، `anthropic/claude-opus-4.8`، `anthropic/claude-opus-4.7`، `anthropic/claude-fable-5`، `anthropic/claude-sonnet-5`، `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`، `openai/gpt-5.6-sol`، `openai/gpt-5.6-terra-pro`، `openai/gpt-5.6-terra`، `openai/gpt-5.6-luna-pro`، `openai/gpt-5.6-luna`، `openai/gpt-5.5-pro`، `openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
   - xAI: `x-ai/grok-4.5`، `x-ai/grok-4.20`، `x-ai/grok-4.3`
+  - Meta: `meta/muse-wonder`، `meta/muse-spark-1.3`، `meta/muse-ember`
   - DeepSeek: `deepseek/deepseek-v4-pro`، `deepseek/deepseek-v4-flash`، `deepseek/deepseek-v3.2`
-  - Qwen: `qwen/qwen3.6-max-preview`، `qwen/qwen3.6-plus`، `qwen/qwen3.6-flash`
+  - Qwen: ، `qwen/qwen3.6-plus`، `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`، `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`، `z-ai/glm-5`
   - Moonshot: `moonshotai/kimi-k3`، `moonshotai/kimi-k2.6`، `moonshotai/kimi-k2-thinking`
@@ -180,4 +185,4 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `534ab9ecc12e35a23a4d8f3e10f4f82d95db8e902ac8a2f2ee0ea68246516f62`
+**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`

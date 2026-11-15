@@ -14,9 +14,9 @@ Nota: il checkpoint selezionato deve essere uno state dict RAFT-large di torchvi
 
 | Nome output | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `OPTICAL_FLOW` | Il modello di flusso ottico caricato, impostato in modalità valutazione e precisione float32, racchiuso in un ModelPatcher per l'uso con altri nodi. | OPTICAL_FLOW |
+| `OPTICAL_FLOW` | Il modello di flusso ottico caricato, impostato in modalità valutazione, con precisione fp16 sui dispositivi che la supportano (float32 altrimenti), racchiuso in un ModelPatcher per l'uso con altri nodi. | OPTICAL_FLOW |
 
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpticalFlowLoader/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `5e79551545ad7ee2fd4856a47da29808a404342d1d5e57da0980058db6b11c3b`
+**Source fingerprint (SHA-256):** `82e5d747679ede113ec4d72fd6eda4b8f20d098832612bebf26ef65de8b4b3dc`

@@ -14,9 +14,9 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `OPTICAL_FLOW` | نموذج التدفق البصري المُحمَّل، مضبوطًا على وضع التقييم ودقة float32، ومغلفًا في ModelPatcher لاستخدامه مع العقد الأخرى. | OPTICAL_FLOW |
+| `OPTICAL_FLOW` | نموذج التدفق البصري المُحمَّل، مضبوطًا على وضع التقييم، بدقة fp16 على الأجهزة التي تدعمها (وإلا float32)، ومغلفًا في ModelPatcher لاستخدامه مع العقد الأخرى. | OPTICAL_FLOW |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpticalFlowLoader/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `5e79551545ad7ee2fd4856a47da29808a404342d1d5e57da0980058db6b11c3b`
+**Source fingerprint (SHA-256):** `82e5d747679ede113ec4d72fd6eda4b8f20d098832612bebf26ef65de8b4b3dc`
