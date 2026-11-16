@@ -48,6 +48,17 @@ SCAFFOLD = [
 TASK_SPECIFIC_INPUT = re.compile(r"(SEGMENT_TASK_ID|RIG_TASK_ID|MULTIVIEW_TASK_ID)")
 IMPORT_ADVICE = re.compile(r"Import Model", re.I)
 
+# The description extractor owns the rules for what counts as an overview heading,
+# an AI disclaimer, and prose. Reuse its patterns instead of duplicating them, so a
+# linter pass and the published meta description can never disagree.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from sync_to_comfy_docs import (  # noqa: E402
+    DISCLAIMER_LINE,
+    _BLOCKQUOTE_AI_DISCLAIMER,
+    _EN_AI_DISCLAIMER,
+    _is_overview_heading,
+)
+
 
 def body_lines(text: str):
     return text.splitlines()
@@ -55,25 +66,48 @@ def body_lines(text: str):
 
 # Words that turn a nearby "Import Model" mention into a warning instead of advice.
 # Matched as whole words: a substring test turns "original " into a cue for "al ".
+# The second group covers the negative verb forms the corrected note uses ("Import
+# Model only returns MODEL_TASK_ID, so it cannot resume this node"), which a
+# bare-word test misses ("cannot" is one word, "없습니다"/"不提供" are suffixes).
 NEGATION_CUES = re.compile(
-    r"(?<!\w)(?:no|not|never|nunca|jamais|nicht|kein\w*|non|não|nao|никогда|не|لا|لم|לא|asla|hiçbir|بدون|negar)(?!\w)",
+    r"(?<!\w)(?:no|not|never|nunca|jamais|nicht|kein\w*|non|não|nao|никогда|не|لا|لم|לא|asla|hiçbir|بدون|negar)(?!\w)"
+    r"|cannot|can['’]t|doesn['’]t|does not|isn['’]t|is not|won['’]t|will not|no longer"
+    r"|없|않|ません|できません|できない|无法|不能|不會|不会|不提供"
+    r"|não (?:pode|fornece|retorna)|no puede|no devuelve|non può|non fornisce"
+    r"|ne peut|ne fournit|nicht (?:fortsetzen|liefert)|niet|geen"
+    r"|не (?:может|позволяет|возвращает)|לא יכול|لا يمكن|لا يعيد"
+    r"|yapılamaz|sürdüremez|veremez|نمی\S*",
     re.I,
 )
 
-# AI-disclosure blockquote lines the extractor strips before picking the description.
-AI_DISCLOSURE = re.compile(r"(AI|IA|ИИ|KI|\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a|\u05d1\u05d9\u05e0\u05d4 \u05de\u05dc\u05d0\u05db\u05d5\u05ea\u05d9\u05ea)", re.I)
-
-# Headings the description extractor treats as the overview container rather than a
-# section boundary (see _is_overview_heading() in sync_to_comfy_docs.py).
-OVERVIEW_HEADINGS = (
-    "overview", "introduction", "概", "개요", "обзор", "resumen", "aperçu", "überblick",
-    "panoramica", "نظرة عامة", "סקירה", "genel bakış", "visão geral", "مرور",
-)
+# AI-disclosure blockquotes are recognised by the extractor's own disclaimer
+# patterns (see DISCLAIMER_LINE / _EN_AI_DISCLAIMER / _BLOCKQUOTE_AI_DISCLAIMER in
+# sync_to_comfy_docs.py). A bare "AI" substring test skipped ordinary notes such as
+# "> Retain the task ID for seven days." because "Retain" contains "ai".
 
 
-def _negated_before(line: str, pos: int, window: int = 32) -> bool:
-    """True when a negation cue sits in the run-up to the mention at ``pos``."""
-    return bool(NEGATION_CUES.search(line[max(0, pos - window):pos]))
+def _is_disclaimer(line: str) -> bool:
+    """True when the extractor would drop this line as an AI-generated disclaimer."""
+    return bool(
+        DISCLAIMER_LINE.match(line)
+        or _EN_AI_DISCLAIMER.match(line)
+        or _BLOCKQUOTE_AI_DISCLAIMER.match(line)
+    )
+
+
+# Sentence boundaries used to scope the negation check to the sentence that carries
+# the advice: "No setup needed. Use Import Model ..." recommends it, while
+# "Import Model only returns MODEL_TASK_ID, so it cannot resume this node" warns.
+SENTENCE_BOUNDARY = re.compile(r"[.!?。！？]+")
+
+
+def _advice_is_affirmative(line: str, pos: int) -> bool:
+    """True when the sentence holding the ``Import Model`` mention at ``pos`` is not negated."""
+    starts = [m.end() for m in SENTENCE_BOUNDARY.finditer(line, 0, pos)]
+    sentence_start = starts[-1] if starts else 0
+    end = SENTENCE_BOUNDARY.search(line, pos)
+    sentence = line[sentence_start:end.end() if end else len(line)]
+    return not NEGATION_CUES.search(sentence)
 
 
 def check_file(path: Path, lang: str, en_text: str | None):
@@ -102,13 +136,13 @@ def check_file(path: Path, lang: str, en_text: str | None):
             continue
         if s.startswith("##"):
             # the extractor stops at an H2 unless it is the overview container
-            if any(h in s.lstrip("# ").lower() for h in OVERVIEW_HEADINGS):
+            if _is_overview_heading(s):
                 continue
             break
         if s.startswith("#") or s.startswith("![") or s.startswith("|"):
             continue
         # the extractor drops AI-disclosure blockquotes, so they never become the description
-        if s.startswith(">") and AI_DISCLOSURE.search(s):
+        if s.startswith(">") and _is_disclaimer(s):
             continue
         first_candidate = (i + 1, s)
         break
@@ -132,7 +166,7 @@ def check_file(path: Path, lang: str, en_text: str | None):
     if IMPORT_ADVICE.search(text) and TASK_SPECIFIC_INPUT.search(text):
         # Pages that warn readers *against* Import Model mention it in the same breath,
         # so only an affirmative recommendation counts.
-        if any(not _negated_before(line, m.start()) for line in lines
+        if any(_advice_is_affirmative(line, m.start()) for line in lines
                for m in IMPORT_ADVICE.finditer(line)):
             findings.append(("import_recovery", 0, "Import Model suggested while the node needs a task-specific id"))
     return findings

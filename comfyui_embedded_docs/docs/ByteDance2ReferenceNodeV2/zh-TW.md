@@ -70,14 +70,14 @@ ByteDance Seedance 2.5 Reference to Video 會使用 ByteDance Seedance 模型（
 
 ### 參考輸入
 
-這些可增長的參考插槽適用於所有模型。每個模型的最大插槽數量不同：Seedance 2.5 最多支援 30 張圖像、10 部影片、10 個音訊與 30 個素材；Seedance 2.5 Flash 最多支援 10 張圖像、5 部影片、5 個音訊與 10 個素材；Seedance 2.0、2.0 Fast 與 2.0 Mini 最多支援 9 張圖像、3 部影片、3 個音訊與 9 個素材。
+這些可增長的參考插槽適用於所有模型。每個模型的最大插槽數量不同：Seedance 2.5 最多支援 30 張圖像、10 部影片、10 個音訊與 30 個素材；Seedance 2.5 Flash 最多支援 10 張圖像、5 部影片、5 個音訊與 10 個素材；Seedance 2.0、2.0 Fast 與 2.0 Mini 最多支援 9 張圖像、3 部影片、3 個音訊與 9 個素材。Seedance 2.5 Draft 與 Seedance 2.5 的限值相同。
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `reference_images` | 可增長的插槽：連接 1..N 張可引導輸出的參考圖像。數量限制依模型而異（請參閱各模型章節）。圖像會驗證長寬比（0.4 到 2.5），並自動縮小至最大邊 6000 像素。 | IMAGE | 否 | 1..9 個插槽（Seedance 2.0 系列）<br>1..30 個插槽（Seedance 2.5）<br>1..10 個插槽（Seedance 2.5 Flash） |
-| `reference_videos` | 可增長的插槽：連接 1..N 部參考影片。數量限制依模型而異（請參閱各模型章節）。每部影片長度必須至少 1.8 秒，且必須符合所選模型與解析度的像素限制。 | VIDEO | 否 | 1..3 個插槽（Seedance 2.0 系列）<br>1..10 個插槽（Seedance 2.5）<br>1..5 個插槽（Seedance 2.5 Flash） |
-| `reference_audios` | 可增長的插槽：連接 1..N 個參考音訊軌。數量限制依模型而異（請參閱各模型章節）。每個音訊長度必須至少 1.8 秒。 | AUDIO | 否 | 1..3 個插槽（Seedance 2.0 系列）<br>1..10 個插槽（Seedance 2.5）<br>1..5 個插槽（Seedance 2.5 Flash） |
-| `reference_assets` | 可增長的插槽：連接 1..N 個素材 ID 字串，用於已上傳至 Seedance 虛擬素材庫的媒體。每個素材必須為 Active。你可以在提示中使用 `asset1` 或 `asset 1` 等標記來引用素材；節點會將它們替換為素材的位置標籤（例如 "Image 2" 或 "Video 1"）。 | STRING | 否 | 1..9 個插槽（Seedance 2.0 系列）<br>1..30 個插槽（Seedance 2.5）<br>1..10 個插槽（Seedance 2.5 Flash） |
+| `reference_images` | 可增長的插槽：連接 1..N 張可引導輸出的參考圖像。數量限制依模型而異（請參閱各模型章節）。圖像會驗證長寬比（0.4 到 2.5），並自動縮小至最大邊 6000 像素。 | IMAGE | 否 | 1..9 個插槽（Seedance 2.0 系列）<br>1..30 個插槽（Seedance 2.5 / 2.5 Draft）<br>1..10 個插槽（Seedance 2.5 Flash） |
+| `reference_videos` | 可增長的插槽：連接 1..N 部參考影片。數量限制依模型而異（請參閱各模型章節）。每部影片長度必須至少 1.8 秒，且必須符合所選模型與解析度的像素限制。 | VIDEO | 否 | 1..3 個插槽（Seedance 2.0 系列）<br>1..10 個插槽（Seedance 2.5 / 2.5 Draft）<br>1..5 個插槽（Seedance 2.5 Flash） |
+| `reference_audios` | 可增長的插槽：連接 1..N 個參考音訊軌。數量限制依模型而異（請參閱各模型章節）。每個音訊長度必須至少 1.8 秒。 | AUDIO | 否 | 1..3 個插槽（Seedance 2.0 系列）<br>1..10 個插槽（Seedance 2.5 / 2.5 Draft）<br>1..5 個插槽（Seedance 2.5 Flash） |
+| `reference_assets` | 可增長的插槽：連接 1..N 個素材 ID 字串，用於已上傳至 Seedance 虛擬素材庫的媒體。每個素材必須為 Active。你可以在提示中使用 `asset1` 或 `asset 1` 等標記來引用素材；節點會將它們替換為素材的位置標籤（例如 "Image 2" 或 "Video 1"）。 | STRING | 否 | 1..9 個插槽（Seedance 2.0 系列）<br>1..30 個插槽（Seedance 2.5 / 2.5 Draft）<br>1..10 個插槽（Seedance 2.5 Flash） |
 | `auto_downscale` | 自動縮小超出所選解析度之模型像素預算的參考影片。會保留長寬比；已在限制內的影片不會被變更。預設值：True。 | BOOLEAN | 否 | true<br>false |
 | `auto_upscale` | 自動放大低於所選解析度下模型最低像素數的參考影片。會保留長寬比；已達最低標準的影片不會被變更。注意：放大低解析度來源不會增加真實細節，且可能產生較低品質的生成結果。預設值：False。進階設定。 | BOOLEAN | 否 | true<br>false |
 

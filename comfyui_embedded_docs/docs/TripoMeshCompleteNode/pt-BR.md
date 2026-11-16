@@ -2,7 +2,7 @@
 
 Completa as partes de um modelo 3D segmentado e repara regiões ausentes ou danificadas da malha. Recebe o ID de tarefa de um resultado de segmentação de malha do Tripo, solicita o trabalho de conclusão ao Tripo e aguarda sua finalização. Opcionalmente, você pode limitar o trabalho a nomes de partes específicos. O modelo concluído é retornado como um arquivo GLB.
 
-> **Nota:** O Tripo mantém os registros de tarefas em seus servidores por 7 dias (a partir de 1º de dezembro de 2026). Um ID de tarefa mais antigo não pode mais ser resolvido, então executar novamente um fluxo de trabalho salvo depois desse prazo falha neste nó. Para continuar, execute o nó Tripo anterior outra vez para criar um novo ID de tarefa, ou importe novamente o modelo que você já baixou com **Tripo: Importar Modelo**.
+> **Nota:** O Tripo mantém os registros de tarefas em seus servidores por 7 dias (a partir de 1º de dezembro de 2026). Um ID de tarefa mais antigo não pode mais ser resolvido, então executar novamente um fluxo de trabalho salvo depois desse prazo falha neste nó. Para continuar, execute novamente o nó Tripo de segmentação de malha anterior para criar um novo `SEGMENT_TASK_ID`; **Tripo: Importar Modelo** retorna apenas um `MODEL_TASK_ID`, portanto não pode retomar este nó.
 
 ## Entradas
 
