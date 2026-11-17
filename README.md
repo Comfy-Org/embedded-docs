@@ -12,6 +12,32 @@ See [FluxProUltraImageNode](https://github.com/Comfy-Org/embedded-docs/tree/main
 > [!NOTE]
 > A fallback is simply docs/NodeName.md, but this is discouraged.
 
+### Localized documentation
+
+`en.md` is the source of truth for a node. Every other locale in the folder is **generated** from `en.md`
+by the pipeline in [`docs-generation/`](docs-generation/README.md): the model translates the page, then
+`update_param_translations.py` reconciles parameter and output names against the ComfyUI frontend i18n, so
+the tables match what users see in the UI.
+
+Each node folder currently carries 15 locales: `en`, `zh`, `zh-TW`, `ja`, `ko`, `es`, `fr`, `de`, `it`,
+`pt-BR`, `ru`, `tr`, `ar`, `fa`, `he`.
+
+What that means when you contribute:
+
+- **A content fix goes into `en.md` only.** Do not hand-translate the other 14 files; the pipeline follows.
+  Keep the prose in English and leave the translations to the pipeline instead of machine-translating them
+  inside the PR.
+- **A value that is wrong in every locale** (a parameter name, a default, a command, a URL) is the
+  exception: `grep -l` the wrong string and fix the same string in each locale, without touching the prose
+  around it.
+- **Reviewing other locales is not expected of you.** You are asked to review the locales you can read.
+  The pull request template records which ones you reviewed, so a native speaker knows what is left.
+- **The rules the pipeline relies on** (data types stay English, parameter names follow the frontend
+  `nodeDefs`, one fixed Inputs/Outputs heading per language) are listed in [`AGENTS.md`](AGENTS.md).
+
+The documentation site publishes a subset of these locales. `.github/scripts/check_doc_structure.py`
+(`ENFORCED_LANGS`) enforces that subset and only reports the others.
+
 ## Previewing Changes Locally
 
 To preview your documentation changes in ComfyUI:
@@ -51,7 +77,7 @@ The `docs-generation` pipeline syncs embedded-docs (en.md, zh.md, ja.md, ko.md, 
 The pipeline lives in [`docs-generation/`](docs-generation/README.md) and includes:
 
 - `docs-generation/scripts/scan_missing_nodes.py` – scan the ComfyUI codebase, detect new/changed nodes
-- `docs-generation/scripts/batch_generate_docs.py` + `batch_translate_docs.py` – LLM-based doc generation and 11-language translation
+- `docs-generation/scripts/batch_generate_docs.py` + `batch_translate_docs.py` – LLM-based doc generation and 14-language translation
 - `docs-generation/scripts/update_param_translations.py` – reconcile parameter names with the ComfyUI frontend i18n
 - `docs-generation/scripts/sync_to_comfy_docs.py` – generate `built-in-nodes/*.mdx` + update `docs.json` navigation
 - `docs-generation/scripts/version_tracker.py` – per-node source hash tracking
