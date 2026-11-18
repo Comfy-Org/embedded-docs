@@ -1,6 +1,6 @@
 # HeyGen Avatar 6 Reference to Video
 
-Bir kişiye veya karaktere, referans olarak bir fotoğraf ya da video kullanarak bağladığınız sesi konuşturun. Avatar 6, yüzü ve sahneyi bu referanstan yeniden oluşturur; böylece aynı ses bir sabit fotoğrafı, mevcut bir klibi veya her ikisini de yönlendirebilir.
+HeyGen Avatar 6 ile bir kişiye veya karaktere, referans olarak bir fotoğraf ya da video kullanarak bağladığınız sesi konuşturun. Avatar 6, yüzü ve sahneyi bu referanstan yeniden oluşturur; böylece aynı ses bir sabit fotoğrafı, mevcut bir klibi veya her ikisini de yönlendirebilir.
 
 ## Girdiler
 

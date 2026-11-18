@@ -1,6 +1,6 @@
 # HeyGen Avatar 6 Reference to Video
 
-Lassen Sie eine Person oder eine Figur die Audiodatei sprechen, die Sie anschließen, und verwenden Sie dabei ein Foto oder ein Video als Referenz. Avatar 6 rekonstruiert das Gesicht und die Szene aus dieser Referenz, sodass dieselbe Audiodatei ein Standbild, einen vorhandenen Clip oder beides antreiben kann.
+Lassen Sie mit HeyGen Avatar 6 eine Person oder eine Figur die Audiodatei sprechen, die Sie anschließen, und verwenden Sie dabei ein Foto oder ein Video als Referenz. Avatar 6 rekonstruiert das Gesicht und die Szene aus dieser Referenz, sodass dieselbe Audiodatei ein Standbild, einen vorhandenen Clip oder beides antreiben kann.
 
 ## Eingaben
 
