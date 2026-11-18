@@ -31,7 +31,7 @@ Estas entradas aparecem quando `task` está definido como `"self-correction"`.
 
 **Restrições e comportamento:**
 
-* A entrada `clip` recebe o modelo CLIP do SenseNova, não a saída do CLIP Text Encode (que é `CONDITIONING`). O nó gera erro se `clip` estiver ausente ou não for um CLIP do SenseNova.
+* A entrada `clip` recebe o modelo CLIP do SenseNova, não a saída do CLIP Text Encode (que é `CONDITIONING`). O nó gera erro se `clip` estiver ausente (exceto quando o condicionamento de entrada já estiver finalizado) ou não for um CLIP do SenseNova.
 * `"image thinking"` precisa de exatamente uma entrada de condicionamento positivo; `"interleave"` e `"self-correction"` precisam de uma entrada positiva e uma negativa.
 * Quando o modelo estiver aguardando uma imagem, conecte a saída LATENT do sampler anterior a `samples`. Passar samples antes de uma imagem ter sido solicitada é um erro.
 * Quando o condicionamento de entrada já estiver finalizado, o nó o retorna inalterado com um `generated_text` vazio e `image_requested` definido como False.

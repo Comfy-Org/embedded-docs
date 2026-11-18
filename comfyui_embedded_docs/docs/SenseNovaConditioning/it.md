@@ -31,7 +31,7 @@ Questi input compaiono quando `task` è impostato su `"self-correction"`.
 
 **Vincoli e comportamento:**
 
-* L'input `clip` riceve il modello CLIP SenseNova stesso, non l'output di CLIP Text Encode (che è `CONDITIONING`). Il nodo segnala un errore se `clip` manca o non è un CLIP SenseNova.
+* L'input `clip` riceve il modello CLIP SenseNova stesso, non l'output di CLIP Text Encode (che è `CONDITIONING`). Il nodo segnala un errore se `clip` manca (tranne quando il condizionamento in ingresso è già completato) o non è un CLIP SenseNova.
 * `"image thinking"` richiede esattamente una voce di condizionamento positivo; `"interleave"` e `"self-correction"` richiedono una voce positiva e una negativa.
 * Quando il modello è in attesa di un'immagine, collegare l'output LATENT del sampler precedente a `samples`. Passare `samples` prima che sia stata richiesta un'immagine è un errore.
 * Quando il condizionamento in ingresso è già completato, il nodo lo restituisce invariato con `generated_text` vuoto e `image_requested` impostato a False.

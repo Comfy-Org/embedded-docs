@@ -2,7 +2,7 @@
 
 Parçalara ayrılmış bir 3B modelin parçalarını tamamlar ve meshin eksik veya hasarlı bölgelerini onarır. Bir Tripo mesh segmentasyon sonucunun görev kimliğini alır, Tripo'dan tamamlama işini ister ve tamamlanmasını bekler. İsteğe bağlı olarak işi belirli parça adlarıyla sınırlayabilirsiniz. Tamamlanan model bir GLB dosyası olarak döndürülür.
 
-> **Not:** Tripo, görev kayıtlarını sunucularında 7 gün saklar (1 Aralık 2026'dan itibaren geçerli). Bu süreden eski bir görev kimliği artık çözümlenemez, bu nedenle kaydedilmiş bir iş akışını bu süreden sonra yeniden çalıştırmak bu düğümde başarısız olur. Devam etmek için yeni bir `SEGMENT_TASK_ID` oluşturmak üzere önceki Tripo mesh bölümleme düğümünü yeniden çalıştırın. Bölümleme bir `MODEL_TASK_ID` gerektirir; o da süresi dolmuşsa önce indirdiğiniz modeli **Tripo: Model İçe Aktar** ile yeniden içe aktarın.
+> **Not:** Tripo, görev kayıtlarını sunucularında 7 gün saklar (1 Aralık 2026'dan itibaren geçerli). Bu süreden eski bir görev kimliği artık çözümlenemez, bu nedenle kaydedilmiş bir iş akışını bu süreden sonra yeniden çalıştırmak bu düğümde başarısız olur. Devam etmek için yeni bir `SEGMENT_TASK_ID` oluşturmak üzere önceki Tripo mesh bölümleme düğümünü yeniden çalıştırın. Bölümleme bir `MODEL_TASK_ID` gerektirir; o da süresi dolmuşsa önce indirdiğiniz modeli **Tripo: Model İçe Aktar** ile yeniden içe aktarın. Modeli hiç indirmediyseniz, özgün Tripo model oluşturma düğümünü yeniden çalıştırın ve yeni `MODEL_TASK_ID` çıktısını bölümleme düğümüne bağlayın; mesh özgün olandan farklı olabilir.
 
 ## Girdiler
 

@@ -31,7 +31,7 @@ Ces entrées apparaissent lorsque `task` est défini sur `"self-correction"`.
 
 **Contraintes et comportement :**
 
-* L’entrée `clip` reçoit le modèle CLIP SenseNova lui-même, pas la sortie de CLIP Text Encode (qui est `CONDITIONING`). Le nœud renvoie une erreur si `clip` est absent ou n’est pas un CLIP SenseNova.
+* L’entrée `clip` reçoit le modèle CLIP SenseNova lui-même, pas la sortie de CLIP Text Encode (qui est `CONDITIONING`). Le nœud renvoie une erreur si `clip` est absent (sauf lorsque le conditionnement entrant est déjà terminé) ou n’est pas un CLIP SenseNova.
 * `"image thinking"` nécessite exactement une entrée de conditionnement positive ; `"interleave"` et `"self-correction"` nécessitent une entrée positive et une entrée négative.
 * Lorsque le modèle attend une image, connectez la sortie LATENT de l’échantillonneur précédent à `samples`. Passer des échantillons avant qu’une image ait été demandée constitue une erreur.
 * Lorsque le conditionnement entrant est déjà terminé, le nœud le renvoie inchangé avec un `generated_text` vide et `image_requested` défini sur False.

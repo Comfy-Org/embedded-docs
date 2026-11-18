@@ -1,6 +1,6 @@
 # HeyGen Avatar 6 Reference to Video
 
-Com o HeyGen Avatar 6, faça uma pessoa ou um personagem falar o áudio que você conectar, usando uma foto ou um vídeo como referência. O Avatar 6 reconstrói o rosto e a cena a partir dessa referência, então o mesmo áudio pode animar uma foto estática, um clipe existente ou ambos.
+Gere com o HeyGen Avatar 6 um vídeo de uma pessoa falando a partir do áudio que você conectar, usando uma foto ou um vídeo como referência. O Avatar 6 reconstrói o rosto e a cena a partir dessa referência, então o mesmo áudio pode animar uma foto estática, um clipe existente ou ambos.
 
 ## Entradas
 

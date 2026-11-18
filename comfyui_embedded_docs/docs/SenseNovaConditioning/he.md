@@ -31,7 +31,7 @@
 
 **אילוצים והתנהגות:**
 
-* קלט ה-`clip` מקבל את מודל SenseNova CLIP עצמו, ולא את פלט CLIP Text Encode (שהוא `CONDITIONING`). הצומת מחזיר שגיאה אם `clip` חסר או שאינו SenseNova CLIP.
+* קלט ה-`clip` מקבל את מודל SenseNova CLIP עצמו, ולא את פלט CLIP Text Encode (שהוא `CONDITIONING`). הצומת מחזיר שגיאה אם `clip` חסר (למעט כאשר הקונדישנינג הנכנס כבר הושלם) או שאינו SenseNova CLIP.
 * `"image thinking"` זקוק לרשומת קונדישנינג חיובית אחת בדיוק; `"interleave"` ו-`"self-correction"` זקוקים לרשומה חיובית אחת ושלילית אחת.
 * כאשר המודל ממתין לתמונה, חבר את פלט ה-LATENT של הסמפלר הקודם ל-`samples`. העברת דגימות לפני שהתבקשה תמונה היא שגיאה.
 * כאשר הקונדישנינג הנכנס כבר הושלם, הצומת מחזיר אותו ללא שינוי עם `generated_text` ריק ו-`image_requested` מוגדר ל-False.

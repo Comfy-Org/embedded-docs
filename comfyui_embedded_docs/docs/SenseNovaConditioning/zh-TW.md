@@ -31,7 +31,7 @@
 
 **限制與行為：**
 
-* `clip` 輸入接收 SenseNova CLIP 模型本身，而不是 CLIP Text Encode 的輸出（那是 `CONDITIONING`）。`clip` 缺少或不是 SenseNova CLIP 時，節點會報錯。
+* `clip` 輸入接收 SenseNova CLIP 模型本身，而不是 CLIP Text Encode 的輸出（那是 `CONDITIONING`）。`clip` 缺少（除非傳入的條件資料已完成）或不是 SenseNova CLIP 時，節點會報錯。
 * `"image thinking"` 需要恰好一個正向條件項目；`"interleave"` 與 `"self-correction"` 需要一個正向與一個負向項目。
 * 當模型正在等待影像時，將前一個取樣器的 LATENT 輸出連接到 `samples`。在尚未請求影像前傳入 `samples` 會造成錯誤。
 * 當傳入的條件資料已完成時，節點會原樣回傳，其中 `generated_text` 為空，且 `image_requested` 設為 False。

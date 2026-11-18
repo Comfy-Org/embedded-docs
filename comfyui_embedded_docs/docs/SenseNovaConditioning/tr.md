@@ -31,7 +31,7 @@ SenseNova koşullandırmasını görüntü oluşturma veya iç içe metin ve gö
 
 **Kısıtlamalar ve davranış:**
 
-* `clip` girdisi CLIP Text Encode çıktısını (o `CONDITIONING`'dir) değil, SenseNova CLIP modelinin kendisini alır. `clip` yoksa veya SenseNova CLIP değilse düğüm hata verir.
+* `clip` girdisi CLIP Text Encode çıktısını (o `CONDITIONING`'dir) değil, SenseNova CLIP modelinin kendisini alır. `clip` yoksa (gelen koşullandırma zaten tamamlanmışsa hariç) veya SenseNova CLIP değilse düğüm hata verir.
 * `"image thinking"` tam olarak bir pozitif koşullandırma girdisi gerektirir; `"interleave"` ve `"self-correction"` bir pozitif ve bir negatif girdi gerektirir.
 * Model bir görüntü beklerken, önceki örnekleyicinin LATENT çıktısını `samples` girdisine bağlayın. Bir görüntü istenmeden önce `samples` geçirmek hatadır.
 * Gelen koşullandırma zaten tamamlanmışsa düğüm, boş bir `generated_text` ve False değerine ayarlanmış `image_requested` ile onu değiştirmeden döndürür.
