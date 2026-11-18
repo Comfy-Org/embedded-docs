@@ -1,8 +1,6 @@
 # Wan Metinden Videoya
 
-Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
-
-Wan Metinden Videoya düğümü, metin açıklamalarına dayalı video içeriği oluşturur. İstemlerden video oluşturmak için yapay zeka modelleri kullanır ve çeşitli video boyutlarını, sürelerini ve isteğe bağlı ses girişlerini destekler. Düğüm, gerektiğinde otomatik olarak ses oluşturabilir ve istem geliştirme ile filigran ekleme seçenekleri sunar.
+Wan Metinden Videoya düğümü, metin açıklamalarına dayalı video içeriği isteğe bağlı ses girişiyle oluşturur. İstemlerden video oluşturmak için yapay zeka modelleri kullanır ve çeşitli video boyutlarını, sürelerini ve isteğe bağlı ses girişlerini destekler. Düğüm, gerektiğinde otomatik olarak ses oluşturabilir ve istem geliştirme ile filigran ekleme seçenekleri sunar.
 
 ## Girişler
 

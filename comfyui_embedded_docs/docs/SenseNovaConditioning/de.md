@@ -6,7 +6,7 @@ Bereitet SenseNova-Conditioning für die Bildgenerierung oder für verschachtelt
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `clip` | SenseNova-CLIP-Modell, verbunden aus CLIP Text Encode. Erforderlich für jede Aufgabe, außer wenn das eingehende Conditioning bereits abgeschlossen ist. | CLIP | Nein | - |
+| `clip` | SenseNova-CLIP-Modell. Verbinden Sie den CLIP-Loader, der auch CLIP Text Encode versorgt; die Encoder-Ausgabe geht an `conditioning`. Erforderlich für jede Aufgabe, außer wenn das eingehende Conditioning bereits abgeschlossen ist. | CLIP | Nein | - |
 | `conditioning` | SenseNova-Text-Conditioning aus CLIP Text Encode. | CONDITIONING | Ja | - |
 | `negative` | Optionales negatives Conditioning. Es wird für die Aufgaben `interleave` und `self-correction` aktualisiert und zurückgegeben. | CONDITIONING | Nein | - |
 | `task` | Auszuführende Aufgabe. `"image"` kodiert den Prompt für einen Standardsampler, `"image thinking"` lässt das Modell vor der Antwort nachdenken, `"interleave"` erzeugt Text und Bilder in einem Durchgang und `"self-correction"` ermöglicht es dem Modell, seine eigene vorherige Ausgabe zu korrigieren. | DYNAMIC_COMBO | Ja | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
@@ -31,7 +31,7 @@ Diese Eingaben erscheinen, wenn `task` auf `"self-correction"` gesetzt ist.
 
 **Einschränkungen und Verhalten:**
 
-* Die Eingabe `clip` benötigt die SenseNova-CLIP-Ausgabe von CLIP Text Encode; jedes andere CLIP führt zu einem Fehler.
+* Die Eingabe `clip` erwartet das SenseNova-CLIP-Modell selbst, nicht die Ausgabe von CLIP Text Encode (das ist `CONDITIONING`). Fehlt `clip` oder ist es kein SenseNova-CLIP, meldet der Node einen Fehler.
 * `"image thinking"` benötigt genau einen positiven Conditioning-Eintrag; `"interleave"` und `"self-correction"` benötigen einen positiven und einen negativen Eintrag.
 * Wenn das Modell auf ein Bild wartet, verbinden Sie die LATENT-Ausgabe des vorherigen Samplers mit `samples`. Das Übergeben von Samples, bevor ein Bild angefordert wurde, ist ein Fehler.
 * Wenn das eingehende Conditioning bereits abgeschlossen ist, gibt der Node es unverändert zurück, mit einem leeren `generated_text` und `image_requested` auf False gesetzt.

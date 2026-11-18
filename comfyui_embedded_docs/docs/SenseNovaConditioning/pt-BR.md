@@ -6,7 +6,7 @@ Prepare o condicionamento do SenseNova para geração de imagem ou para saída i
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `clip` | Modelo CLIP do SenseNova, conectado a partir do CLIP Text Encode. Obrigatório para todas as tarefas, exceto quando o condicionamento de entrada já estiver finalizado. | CLIP | Não | - |
+| `clip` | Modelo CLIP do SenseNova. Conecte o carregador CLIP que também alimenta o CLIP Text Encode; a saída do codificador vai para `conditioning`. Obrigatório para todas as tarefas, exceto quando o condicionamento de entrada já estiver finalizado. | CLIP | Não | - |
 | `conditioning` | Condicionamento de texto do SenseNova proveniente do CLIP Text Encode. | CONDITIONING | Sim | - |
 | `negative` | Condicionamento negativo opcional. Ele é atualizado e retornado para as tarefas `interleave` e `self-correction`. | CONDITIONING | Não | - |
 | `task` | Tarefa a ser executada. `"image"` codifica o prompt para um sampler padrão, `"image thinking"` permite que o modelo pense antes de responder, `"interleave"` produz texto e imagens em uma única passagem, e `"self-correction"` permite que o modelo corrija sua própria saída anterior. | DYNAMIC_COMBO | Sim | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
@@ -31,7 +31,7 @@ Estas entradas aparecem quando `task` está definido como `"self-correction"`.
 
 **Restrições e comportamento:**
 
-* A entrada `clip` precisa da saída CLIP do SenseNova do CLIP Text Encode; qualquer outro CLIP gera um erro.
+* A entrada `clip` recebe o modelo CLIP do SenseNova, não a saída do CLIP Text Encode (que é `CONDITIONING`). O nó gera erro se `clip` estiver ausente ou não for um CLIP do SenseNova.
 * `"image thinking"` precisa de exatamente uma entrada de condicionamento positivo; `"interleave"` e `"self-correction"` precisam de uma entrada positiva e uma negativa.
 * Quando o modelo estiver aguardando uma imagem, conecte a saída LATENT do sampler anterior a `samples`. Passar samples antes de uma imagem ter sido solicitada é um erro.
 * Quando o condicionamento de entrada já estiver finalizado, o nó o retorna inalterado com um `generated_text` vazio e `image_requested` definido como False.

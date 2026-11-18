@@ -6,7 +6,7 @@
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
-| `clip` | نموذج SenseNova CLIP، متصل من CLIP Text Encode. مطلوب لكل مهمة باستثناء عندما تكون التهيئة الواردة منتهية بالفعل. | CLIP | لا | - |
+| `clip` | نموذج SenseNova CLIP. صِل محمّل CLIP الذي يغذّي CLIP Text Encode أيضًا، ويذهب خرج المُشفّر إلى `conditioning`. مطلوب لكل مهمة باستثناء عندما تكون التهيئة الواردة منتهية بالفعل. | CLIP | لا | - |
 | `conditioning` | تهيئة نصية من SenseNova من CLIP Text Encode. | CONDITIONING | نعم | - |
 | `negative` | تهيئة سلبية اختيارية. يتم تحديثها وإعادتها لمهام `interleave` و`self-correction`. | CONDITIONING | لا | - |
 | `task` | المهمة المطلوب تشغيلها. `"image"` تُرمّز الموجّه لمُعاين قياسي، `"image thinking"` تتيح للنموذج التفكير قبل الإجابة، `"interleave"` تُنتج نصًا وصورًا في تمريرة واحدة، و`"self-correction"` تتيح للنموذج تصحيح مخرجاته السابقة. | DYNAMIC_COMBO | نعم | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
@@ -31,7 +31,7 @@
 
 **القيود والسلوك:**
 
-* يحتاج مدخل `clip` إلى مخرج SenseNova CLIP من CLIP Text Encode؛ أي CLIP آخر يُثير خطأً.
+* يستقبل مدخل `clip` نموذج SenseNova CLIP نفسه، لا خرج CLIP Text Encode (وهو `CONDITIONING`). يُصدر العقدة خطأً إذا كان `clip` مفقودًا أو ليس SenseNova CLIP.
 * تحتاج `"image thinking"` إلى إدخال تهيئة إيجابي واحد بالضبط؛ وتحتاج `"interleave"` و`"self-correction"` إلى إدخال إيجابي وآخر سلبي.
 * عندما ينتظر النموذج صورة، وصّل مخرج LATENT الخاص بالمُعاين السابق بـ `samples`. تمرير العينات قبل طلب الصورة يُعد خطأً.
 * عندما تكون التهيئة الواردة منتهية بالفعل، تُعيدها العقدة دون تغيير مع `generated_text` فارغ و`image_requested` مضبوطًا على False.

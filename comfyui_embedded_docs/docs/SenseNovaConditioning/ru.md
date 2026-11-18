@@ -6,7 +6,7 @@
 
 | Параметр | Описание | Тип данных | Обязательный | Диапазон |
 |-----------|-------------|-----------|----------|-------|
-| `clip` | Модель SenseNova CLIP, подключаемая из CLIP Text Encode. Обязательна для каждой задачи, кроме случая, когда входящий conditioning уже завершен. | CLIP | Нет | - |
+| `clip` | Модель SenseNova CLIP. Подключите CLIP-загрузчик, который также питает CLIP Text Encode; выход энкодера идёт в `conditioning`. Обязательна для каждой задачи, кроме случая, когда входящий conditioning уже завершен. | CLIP | Нет | - |
 | `conditioning` | Текстовый conditioning SenseNova из CLIP Text Encode. | CONDITIONING | Да | - |
 | `negative` | Необязательный негативный conditioning. Обновляется и возвращается для задач `interleave` и `self-correction`. | CONDITIONING | Нет | - |
 | `task` | Задача для выполнения. `"image"` кодирует промпт для стандартного сэмплера, `"image thinking"` позволяет модели подумать перед ответом, `"interleave"` создает текст и изображения за один проход, а `"self-correction"` позволяет модели исправить собственный предыдущий вывод. | DYNAMIC_COMBO | Да | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
@@ -31,7 +31,7 @@
 
 **Ограничения и поведение:**
 
-* Входу `clip` требуется выход SenseNova CLIP из CLIP Text Encode; любой другой CLIP вызывает ошибку.
+* Вход `clip` принимает саму модель SenseNova CLIP, а не выход CLIP Text Encode (это `CONDITIONING`). Если `clip` не подключён или это не SenseNova CLIP, узел выдаёт ошибку.
 * `"image thinking"` требует ровно одну запись положительного conditioning; `"interleave"` и `"self-correction"` требуют одну положительную и одну отрицательную запись.
 * Когда модель ожидает изображение, подключите выход LATENT предыдущего сэмплера к `samples`. Передача сэмплов до запроса изображения является ошибкой.
 * Когда входящий conditioning уже завершен, узел возвращает его без изменений с пустым `generated_text` и `image_requested`, установленным в False.

@@ -6,7 +6,7 @@ SenseNova koşullandırmasını görüntü oluşturma veya iç içe metin ve gö
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|---------|--------|
-| `clip` | CLIP Text Encode'dan bağlanan SenseNova CLIP modeli. Gelen koşullandırma zaten tamamlanmış olduğu durumlar hariç her görev için gereklidir. | CLIP | Hayır | - |
+| `clip` | SenseNova CLIP modeli. CLIP Text Encode’u da besleyen CLIP yükleyicisini bağlayın; kodlayıcı çıktısı `conditioning` girişine gider. Gelen koşullandırma zaten tamamlanmış olduğu durumlar hariç her görev için gereklidir. | CLIP | Hayır | - |
 | `conditioning` | CLIP Text Encode'dan gelen SenseNova metin koşullandırması. | CONDITIONING | Evet | - |
 | `negative` | İsteğe bağlı negatif koşullandırma. `interleave` ve `self-correction` görevleri için güncellenir ve döndürülür. | CONDITIONING | Hayır | - |
 | `task` | Çalıştırılacak görev. `"image"` standart bir örnekleyici için istemi kodlar, `"image thinking"` modelin yanıtlamadan önce düşünmesini sağlar, `"interleave"` tek geçişte metin ve görüntüler üretir ve `"self-correction"` modelin kendi önceki çıktısını düzeltmesini sağlar. | DYNAMIC_COMBO | Evet | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
@@ -31,7 +31,7 @@ SenseNova koşullandırmasını görüntü oluşturma veya iç içe metin ve gö
 
 **Kısıtlamalar ve davranış:**
 
-* `clip` girdisi, CLIP Text Encode'un SenseNova CLIP çıktısını gerektirir; başka herhangi bir CLIP hata verir.
+* `clip` girdisi CLIP Text Encode çıktısını (o `CONDITIONING`'dir) değil, SenseNova CLIP modelinin kendisini alır. `clip` yoksa veya SenseNova CLIP değilse düğüm hata verir.
 * `"image thinking"` tam olarak bir pozitif koşullandırma girdisi gerektirir; `"interleave"` ve `"self-correction"` bir pozitif ve bir negatif girdi gerektirir.
 * Model bir görüntü beklerken, önceki örnekleyicinin LATENT çıktısını `samples` girdisine bağlayın. Bir görüntü istenmeden önce `samples` geçirmek hatadır.
 * Gelen koşullandırma zaten tamamlanmışsa düğüm, boş bir `generated_text` ve False değerine ayarlanmış `image_requested` ile onu değiştirmeden döndürür.

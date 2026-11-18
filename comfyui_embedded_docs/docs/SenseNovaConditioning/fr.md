@@ -6,7 +6,7 @@ Prépare le conditionnement SenseNova pour la génération d’images ou pour un
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `clip` | Modèle CLIP SenseNova, connecté depuis CLIP Text Encode. Requis pour toutes les tâches, sauf lorsque le conditionnement entrant est déjà terminé. | CLIP | Non | - |
+| `clip` | Modèle CLIP SenseNova. Connectez le chargeur CLIP qui alimente aussi CLIP Text Encode ; la sortie de l’encodeur va dans `conditioning`. Requis pour toutes les tâches, sauf lorsque le conditionnement entrant est déjà terminé. | CLIP | Non | - |
 | `conditioning` | Conditionnement texte SenseNova provenant de CLIP Text Encode. | CONDITIONING | Oui | - |
 | `negative` | Conditionnement négatif facultatif. Il est mis à jour et renvoyé pour les tâches `interleave` et `self-correction`. | CONDITIONING | Non | - |
 | `task` | Tâche à exécuter. `"image"` encode le prompt pour un échantillonneur standard, `"image thinking"` permet au modèle de réfléchir avant de répondre, `"interleave"` produit du texte et des images en une seule passe, et `"self-correction"` permet au modèle de corriger sa propre sortie précédente. | DYNAMIC_COMBO | Oui | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
@@ -31,7 +31,7 @@ Ces entrées apparaissent lorsque `task` est défini sur `"self-correction"`.
 
 **Contraintes et comportement :**
 
-* L’entrée `clip` nécessite la sortie CLIP SenseNova de CLIP Text Encode ; tout autre CLIP déclenche une erreur.
+* L’entrée `clip` reçoit le modèle CLIP SenseNova lui-même, pas la sortie de CLIP Text Encode (qui est `CONDITIONING`). Le nœud renvoie une erreur si `clip` est absent ou n’est pas un CLIP SenseNova.
 * `"image thinking"` nécessite exactement une entrée de conditionnement positive ; `"interleave"` et `"self-correction"` nécessitent une entrée positive et une entrée négative.
 * Lorsque le modèle attend une image, connectez la sortie LATENT de l’échantillonneur précédent à `samples`. Passer des échantillons avant qu’une image ait été demandée constitue une erreur.
 * Lorsque le conditionnement entrant est déjà terminé, le nœud le renvoie inchangé avec un `generated_text` vide et `image_requested` défini sur False.

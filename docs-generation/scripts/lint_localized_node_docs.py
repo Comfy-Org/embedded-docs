@@ -110,6 +110,21 @@ def _advice_is_affirmative(line: str, pos: int) -> bool:
     return not NEGATION_CUES.search(sentence)
 
 
+def _advice_is_scoped_to_model_id(line: str, pos: int) -> bool:
+    """True when the mention recommends Import Model to produce a ``MODEL_TASK_ID``.
+
+    Re-importing the downloaded model is the documented way to get a fresh
+    ``MODEL_TASK_ID`` before running a segmentation node again: that advice serves the
+    *next* node, not the task-specific input this page documents. Those sentences name
+    ``MODEL_TASK_ID`` themselves, while advice that would resume this node does not.
+    """
+    starts = [m.end() for m in SENTENCE_BOUNDARY.finditer(line, 0, pos)]
+    sentence_start = starts[-1] if starts else 0
+    end = SENTENCE_BOUNDARY.search(line, pos)
+    sentence = line[sentence_start:end.end() if end else len(line)]
+    return "MODEL_TASK_ID" in sentence
+
+
 def check_file(path: Path, lang: str, en_text: str | None):
     text = path.read_text(encoding="utf-8")
     lines = body_lines(text)
@@ -165,9 +180,13 @@ def check_file(path: Path, lang: str, en_text: str | None):
 
     if IMPORT_ADVICE.search(text) and TASK_SPECIFIC_INPUT.search(text):
         # Pages that warn readers *against* Import Model mention it in the same breath,
-        # so only an affirmative recommendation counts.
-        if any(_advice_is_affirmative(line, m.start()) for line in lines
-               for m in IMPORT_ADVICE.finditer(line)):
+        # so only an affirmative recommendation counts. Advice that names MODEL_TASK_ID
+        # sends readers to the segmentation node, not back to this one.
+        if any(
+            _advice_is_affirmative(line, m.start()) and not _advice_is_scoped_to_model_id(line, m.start())
+            for line in lines
+            for m in IMPORT_ADVICE.finditer(line)
+        ):
             findings.append(("import_recovery", 0, "Import Model suggested while the node needs a task-specific id"))
     return findings
 

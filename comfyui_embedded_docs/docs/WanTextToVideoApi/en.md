@@ -1,6 +1,6 @@
 # Wan Text to Video
 
-The Wan Text to Video node generates video content based on text descriptions. It uses AI models to create videos from prompts and supports various video sizes, durations, and optional audio inputs. The node can automatically generate audio when needed and provides options for prompt enhancement and watermarking.
+The Wan Text to Video node generates video content based on text descriptions, with optional audio input. It uses AI models to create videos from prompts and supports various video sizes, durations, and optional audio inputs. The node can automatically generate audio when needed and provides options for prompt enhancement and watermarking.
 
 ## Inputs
 
