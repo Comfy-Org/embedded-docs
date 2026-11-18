@@ -24,9 +24,14 @@ Each node folder currently carries 15 locales: `en`, `zh`, `zh-TW`, `ja`, `ko`, 
 
 What that means when you contribute:
 
-- **A content fix goes into `en.md` only.** Do not hand-translate the other 14 files; the pipeline follows.
-  Keep the prose in English and leave the translations to the pipeline instead of machine-translating them
-  inside the PR.
+- **A content fix goes into `en.md` only.** Do not hand-translate the other 14 files. Keep the prose in
+  English and leave the translations to the pipeline instead of machine-translating them inside the PR.
+  Note what the default run does: `batch_translate_docs.py` skips a locale whose file already exists unless
+  it is given `--force` (`process_node`, `docs-generation/scripts/batch_translate_docs.py:331-339`), so an
+  edit to `en.md` does not by itself refresh the 14 existing files. A full refresh is
+  `python3 main.py --retranslate-all-languages` (equivalent to `--translate --all-languages --mode all
+  --force --force-all-translation-nodes`), which re-translates every node that has an `en.md` and uses API
+  quota.
 - **A value that is wrong in every locale** (a parameter name, a default, a command, a URL) is the
   exception: `grep -l` the wrong string and fix the same string in each locale, without touching the prose
   around it.
@@ -36,7 +41,10 @@ What that means when you contribute:
   `nodeDefs`, one fixed Inputs/Outputs heading per language) are listed in [`AGENTS.md`](AGENTS.md).
 
 The documentation site publishes a subset of these locales. `.github/scripts/check_doc_structure.py`
-(`ENFORCED_LANGS`) enforces that subset and only reports the others.
+(`ENFORCED_LANGS` = `ja`, `zh`, `ko`, `es`) applies the section-repair and heading-parity checks to that
+subset only; for the remaining locales those checks are skipped rather than reported. One check is not
+gated: a leaked translation preamble under the H1 counts as a violation for **every** locale
+(`check_doc_structure.py:207-218`), because a leaked prompt block is a defect wherever it appears.
 
 ## Previewing Changes Locally
 

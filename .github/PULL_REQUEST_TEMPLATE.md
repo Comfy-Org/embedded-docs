@@ -21,7 +21,8 @@ Rules (details in [`AGENTS.md`](https://github.com/Comfy-Org/embedded-docs/blob/
 - [ ] If this touches a value repeated in every locale (parameter name, default, command, URL), I searched
       for the same string and fixed it in each locale, leaving the prose alone
 - [ ] Data types stay in English, and parameter names follow the ComfyUI frontend `nodeDefs` translations
-- [ ] Section headings use the fixed Inputs/Outputs wording for each language
+- [ ] Section headings use the Inputs/Outputs wording that `AGENTS.md` lists for that language (its table
+      covers en, es, fr, ja, ko, zh, ru, fa; locales not in the table are left to the pipeline)
 
 ## Checks
 
