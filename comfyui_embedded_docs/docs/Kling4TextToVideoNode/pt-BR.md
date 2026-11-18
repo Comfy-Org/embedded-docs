@@ -18,7 +18,7 @@ Estas entradas aparecem quando `model` é definido como `"kling-4.0"`.
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Descrição em texto do vídeo a ser gerado. Deve ter entre 1 e 26000 caracteres. | STRING | Sim | 1 a 26000 caracteres |
 | `resolution` | Resolução do vídeo de saída. Padrão: `"720p"`. | COMBO | Sim | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Proporção do vídeo de saída. Padrão: `"16:9"`. | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Proporção do vídeo de saída. Padrão: `"16:9"`. | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Duração do vídeo gerado em segundos. Padrão: 5. | INT | Sim | 3 a 30 |
 | `seed` | A semente controla se o nó deve ser executado novamente; os resultados não são determinísticos independentemente da semente. Padrão: 42. | INT | Sim | 0 a 2147483647 |
 
@@ -30,7 +30,7 @@ Estas entradas aparecem quando `model` é definido como `"kling-4.0-flash"`.
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Descrição em texto do vídeo a ser gerado. Deve ter entre 1 e 26000 caracteres. | STRING | Sim | 1 a 26000 caracteres |
 | `resolution` | Resolução do vídeo de saída. O Flash renderiza somente em 720p. Padrão: `"720p"`. | COMBO | Sim | `"720p"` |
-| `aspect_ratio` | Proporção do vídeo de saída. Padrão: `"16:9"`. | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Proporção do vídeo de saída. Padrão: `"16:9"`. | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Duração do vídeo gerado em segundos. Padrão: 5. | INT | Sim | 3 a 20 |
 | `seed` | A semente controla se o nó deve ser executado novamente; os resultados não são determinísticos independentemente da semente. Padrão: 42. | INT | Sim | 0 a 2147483647 |
 

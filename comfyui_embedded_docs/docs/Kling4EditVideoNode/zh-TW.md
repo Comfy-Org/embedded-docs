@@ -21,7 +21,7 @@
 | `reference_images` | 參考影像的可增長插槽，最多 10 個。在提示詞中以 `@Image1`、`@Image2` 等方式引用。 | AUTOGROW | 否 | 0 至 10 張影像 |
 | `prompt` | 描述要變更和要保留的內容。將要編輯的影片稱為 `@Video1`，參考影片稱為 `@Video2` 等，影像稱為 `@Image1` 等。 | STRING | 是 | 1 至 26000 個字元 |
 | `resolution` | 輸出影片的解析度。預設：`"720p"`。 | COMBO | 是 | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | 輸出影片的長寬比。`"adaptive"` 會保留輸入影片的長寬比。預設：`"adaptive"`。 | COMBO | 是 | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | 輸出影片的長寬比。`"adaptive"` 會保留輸入影片的長寬比。預設：`"adaptive"`。 | COMBO | 是 | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `seed` | 種子控制節點是否應重新執行；無論種子為何，結果都是非確定性的。預設：42。 | INT | 是 | 0 至 2147483647 |
 | `audio` | `"native"` 為編輯後的影片產生新的音訊，`"original"` 保留輸入影片的音訊。預設：`"native"`。 | COMBO | 否 | `"native"`<br>`"original"` |
 
@@ -36,7 +36,7 @@
 | `reference_images` | 參考影像的可增長插槽，最多 10 個。在提示詞中以 `@Image1`、`@Image2` 等方式引用。 | AUTOGROW | 否 | 0 至 10 張影像 |
 | `prompt` | 描述要變更和要保留的內容。將要編輯的影片稱為 `@Video1`，參考影片稱為 `@Video2` 等，影像稱為 `@Image1` 等。 | STRING | 是 | 1 至 26000 個字元 |
 | `resolution` | 輸出影片的解析度。Flash 僅渲染 720p。預設：`"720p"`。 | COMBO | 是 | `"720p"` |
-| `aspect_ratio` | 輸出影片的長寬比。`"adaptive"` 會保留輸入影片的長寬比。預設：`"adaptive"`。 | COMBO | 是 | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | 輸出影片的長寬比。`"adaptive"` 會保留輸入影片的長寬比。預設：`"adaptive"`。 | COMBO | 是 | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `seed` | 種子控制節點是否應重新執行；無論種子為何，結果都是非確定性的。預設：42。 | INT | 是 | 0 至 2147483647 |
 | `audio` | `"native"` 為編輯後的影片產生新的音訊，`"original"` 保留輸入影片的音訊。預設：`"native"`。 | COMBO | 否 | `"native"`<br>`"original"` |
 

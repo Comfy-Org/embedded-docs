@@ -22,7 +22,7 @@ Ces entrées apparaissent lorsque `model` est défini sur `"kling-4.0"`.
 | `last_frame` | Image facultative sur laquelle la vidéo se termine. Compte dans la limite de 10 images avec les images de référence. | IMAGE | Non | - |
 | `prompt` | Description de la vidéo à générer. Référez-vous aux entrées sous la forme `@Image1`, `@Image2`, etc., et `@Video1`, `@Video2`, etc. | STRING | Oui | 1 à 26000 caractères |
 | `resolution` | Résolution de la vidéo de sortie. Par défaut : `"720p"`. | COMBO | Oui | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Rapport d'aspect de la vidéo de sortie. `"adaptive"` suit le prompt, puis la première image ou les vidéos de référence, et à défaut revient à 16:9. Par défaut : `"adaptive"`. | COMBO | Oui | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Rapport d'aspect de la vidéo de sortie. `"adaptive"` suit le prompt, puis la première image ou les vidéos de référence, et à défaut revient à 16:9. Par défaut : `"adaptive"`. | COMBO | Oui | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Durée de la vidéo générée en secondes. Par défaut : 5. | INT | Oui | 3 à 30 |
 | `seed` | La seed contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la seed. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
 
@@ -37,7 +37,7 @@ Ces entrées apparaissent lorsque `model` est défini sur `"kling-4.0-flash"`.
 | `first_frame` | Image facultative sur laquelle la vidéo commence. Compte dans la limite de 10 images avec les images de référence. | IMAGE | Non | - |
 | `prompt` | Description de la vidéo à générer. Référez-vous aux entrées sous la forme `@Image1`, `@Image2`, etc., et `@Video1`, `@Video2`, etc. | STRING | Oui | 1 à 26000 caractères |
 | `resolution` | Résolution de la vidéo de sortie. Flash ne rend qu'en 720p. Par défaut : `"720p"`. | COMBO | Oui | `"720p"` |
-| `aspect_ratio` | Rapport d'aspect de la vidéo de sortie. `"adaptive"` suit le prompt, puis la première image ou les vidéos de référence, et à défaut revient à 16:9. Par défaut : `"adaptive"`. | COMBO | Oui | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Rapport d'aspect de la vidéo de sortie. `"adaptive"` suit le prompt, puis la première image ou les vidéos de référence, et à défaut revient à 16:9. Par défaut : `"adaptive"`. | COMBO | Oui | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Durée de la vidéo générée en secondes. Par défaut : 5. | INT | Oui | 3 à 20 |
 | `seed` | La seed contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la seed. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
 

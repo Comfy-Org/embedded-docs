@@ -21,7 +21,7 @@ Ces entrées apparaissent lorsque `model` est défini sur `"kling-4.0"`.
 | `reference_images` | Emplacements extensibles pour les images de référence, jusqu’à 10. Faites-y référence dans le prompt sous la forme `@Image1`, `@Image2`, etc. | AUTOGROW | Non | 0 à 10 images |
 | `prompt` | Description de ce qu’il faut modifier et de ce qu’il faut conserver. Faites référence à la vidéo en cours de modification sous la forme `@Video1`, aux vidéos de référence sous la forme `@Video2`, etc., et aux images sous la forme `@Image1`, etc. | STRING | Oui | 1 à 26000 caractères |
 | `resolution` | Résolution de la vidéo de sortie. Par défaut : `"720p"`. | COMBO | Oui | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Ratio d’image de la vidéo de sortie. `"adaptive"` conserve le ratio d’image de la vidéo d’entrée. Par défaut : `"adaptive"`. | COMBO | Oui | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Ratio d’image de la vidéo de sortie. `"adaptive"` conserve le ratio d’image de la vidéo d’entrée. Par défaut : `"adaptive"`. | COMBO | Oui | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
 | `audio` | `"native"` génère une nouvelle piste audio pour la vidéo modifiée, `"original"` conserve la piste audio de la vidéo d’entrée. Par défaut : `"native"`. | COMBO | Non | `"native"`<br>`"original"` |
 
@@ -36,7 +36,7 @@ Ces entrées apparaissent lorsque `model` est défini sur `"kling-4.0-flash"`.
 | `reference_images` | Emplacements extensibles pour les images de référence, jusqu’à 10. Faites-y référence dans le prompt sous la forme `@Image1`, `@Image2`, etc. | AUTOGROW | Non | 0 à 10 images |
 | `prompt` | Description de ce qu’il faut modifier et de ce qu’il faut conserver. Faites référence à la vidéo en cours de modification sous la forme `@Video1`, aux vidéos de référence sous la forme `@Video2`, etc., et aux images sous la forme `@Image1`, etc. | STRING | Oui | 1 à 26000 caractères |
 | `resolution` | Résolution de la vidéo de sortie. Flash ne produit qu’en 720p. Par défaut : `"720p"`. | COMBO | Oui | `"720p"` |
-| `aspect_ratio` | Ratio d’image de la vidéo de sortie. `"adaptive"` conserve le ratio d’image de la vidéo d’entrée. Par défaut : `"adaptive"`. | COMBO | Oui | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Ratio d’image de la vidéo de sortie. `"adaptive"` conserve le ratio d’image de la vidéo d’entrée. Par défaut : `"adaptive"`. | COMBO | Oui | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
 | `audio` | `"native"` génère une nouvelle piste audio pour la vidéo modifiée, `"original"` conserve la piste audio de la vidéo d’entrée. Par défaut : `"native"`. | COMBO | Non | `"native"`<br>`"original"` |
 

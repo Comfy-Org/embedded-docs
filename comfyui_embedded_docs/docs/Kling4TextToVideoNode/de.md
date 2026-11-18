@@ -18,7 +18,7 @@ Diese Eingaben erscheinen, wenn `model` auf `"kling-4.0"` gesetzt ist.
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Textbeschreibung des zu generierenden Videos. Muss zwischen 1 und 26000 Zeichen lang sein. | STRING | Ja | 1 bis 26000 Zeichen |
 | `resolution` | Auflösung des Ausgabevideos. Standard: `"720p"`. | COMBO | Ja | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Seitenverhältnis des Ausgabevideos. Standard: `"16:9"`. | COMBO | Ja | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Seitenverhältnis des Ausgabevideos. Standard: `"16:9"`. | COMBO | Ja | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Länge des generierten Videos in Sekunden. Standard: 5. | INT | Ja | 3 bis 30 |
 | `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Ja | 0 bis 2147483647 |
 
@@ -30,7 +30,7 @@ Diese Eingaben erscheinen, wenn `model` auf `"kling-4.0-flash"` gesetzt ist.
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Textbeschreibung des zu generierenden Videos. Muss zwischen 1 und 26000 Zeichen lang sein. | STRING | Ja | 1 bis 26000 Zeichen |
 | `resolution` | Auflösung des Ausgabevideos. Flash rendert ausschließlich 720p. Standard: `"720p"`. | COMBO | Ja | `"720p"` |
-| `aspect_ratio` | Seitenverhältnis des Ausgabevideos. Standard: `"16:9"`. | COMBO | Ja | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Seitenverhältnis des Ausgabevideos. Standard: `"16:9"`. | COMBO | Ja | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Länge des generierten Videos in Sekunden. Standard: 5. | INT | Ja | 3 bis 20 |
 | `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Ja | 0 bis 2147483647 |
 

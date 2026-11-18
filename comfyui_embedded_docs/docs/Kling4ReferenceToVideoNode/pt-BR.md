@@ -22,7 +22,7 @@ Essas entradas aparecem quando `model` está definido como `"kling-4.0"`.
 | `last_frame` | Quadro opcional em que o vídeo termina. Conta para o limite de 10 imagens junto com as imagens de referência. | IMAGE | Não | - |
 | `prompt` | Descrição do vídeo a ser gerado. Refira-se às entradas como `@Image1`, `@Image2` e assim por diante, e `@Video1`, `@Video2` e assim por diante. | STRING | Sim | 1 a 26000 caracteres |
 | `resolution` | Resolução do vídeo de saída. Padrão: `"720p"`. | COMBO | Sim | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Proporção do vídeo de saída. `"adaptive"` segue o prompt, depois o primeiro quadro ou os vídeos de referência e, caso contrário, recorre a 16:9. Padrão: `"adaptive"`. | COMBO | Sim | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Proporção do vídeo de saída. `"adaptive"` segue o prompt, depois o primeiro quadro ou os vídeos de referência e, caso contrário, recorre a 16:9. Padrão: `"adaptive"`. | COMBO | Sim | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Duração do vídeo gerado em segundos. Padrão: 5. | INT | Sim | 3 a 30 |
 | `seed` | A seed controla se o nó deve ser reexecutado; os resultados não são determinísticos independentemente da seed. Padrão: 42. | INT | Sim | 0 a 2147483647 |
 
@@ -37,7 +37,7 @@ Essas entradas aparecem quando `model` está definido como `"kling-4.0-flash"`.
 | `first_frame` | Quadro opcional em que o vídeo começa. Conta para o limite de 10 imagens junto com as imagens de referência. | IMAGE | Não | - |
 | `prompt` | Descrição do vídeo a ser gerado. Refira-se às entradas como `@Image1`, `@Image2` e assim por diante, e `@Video1`, `@Video2` e assim por diante. | STRING | Sim | 1 a 26000 caracteres |
 | `resolution` | Resolução do vídeo de saída. O Flash renderiza apenas em 720p. Padrão: `"720p"`. | COMBO | Sim | `"720p"` |
-| `aspect_ratio` | Proporção do vídeo de saída. `"adaptive"` segue o prompt, depois o primeiro quadro ou os vídeos de referência e, caso contrário, recorre a 16:9. Padrão: `"adaptive"`. | COMBO | Sim | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Proporção do vídeo de saída. `"adaptive"` segue o prompt, depois o primeiro quadro ou os vídeos de referência e, caso contrário, recorre a 16:9. Padrão: `"adaptive"`. | COMBO | Sim | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Duração do vídeo gerado em segundos. Padrão: 5. | INT | Sim | 3 a 20 |
 | `seed` | A seed controla se o nó deve ser reexecutado; os resultados não são determinísticos independentemente da seed. Padrão: 42. | INT | Sim | 0 a 2147483647 |
 

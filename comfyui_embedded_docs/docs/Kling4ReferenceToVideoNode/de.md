@@ -22,7 +22,7 @@ Diese Eingaben werden angezeigt, wenn `model` auf `"kling-4.0"` gesetzt ist.
 | `last_frame` | Optionales Bild, mit dem das Video endet. Zählt zusammen mit den Referenzbildern zum Limit von 10 Bildern. | IMAGE | Nein | - |
 | `prompt` | Beschreibung des zu generierenden Videos. Verweisen Sie auf die Eingaben als `@Image1`, `@Image2` usw. und `@Video1`, `@Video2` usw. | STRING | Ja | 1 bis 26000 Zeichen |
 | `resolution` | Auflösung des Ausgabevideos. Standard: `"720p"`. | COMBO | Ja | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Seitenverhältnis des Ausgabevideos. `"adaptive"` folgt dem Prompt, dann dem ersten Bild oder den Referenzvideos und fällt andernfalls auf 16:9 zurück. Standard: `"adaptive"`. | COMBO | Ja | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Seitenverhältnis des Ausgabevideos. `"adaptive"` folgt dem Prompt, dann dem ersten Bild oder den Referenzvideos und fällt andernfalls auf 16:9 zurück. Standard: `"adaptive"`. | COMBO | Ja | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Länge des generierten Videos in Sekunden. Standard: 5. | INT | Ja | 3 bis 30 |
 | `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Ja | 0 bis 2147483647 |
 
@@ -37,7 +37,7 @@ Diese Eingaben werden angezeigt, wenn `model` auf `"kling-4.0-flash"` gesetzt is
 | `first_frame` | Optionales Bild, mit dem das Video beginnt. Zählt zusammen mit den Referenzbildern zum Limit von 10 Bildern. | IMAGE | Nein | - |
 | `prompt` | Beschreibung des zu generierenden Videos. Verweisen Sie auf die Eingaben als `@Image1`, `@Image2` usw. und `@Video1`, `@Video2` usw. | STRING | Ja | 1 bis 26000 Zeichen |
 | `resolution` | Auflösung des Ausgabevideos. Flash rendert nur 720p. Standard: `"720p"`. | COMBO | Ja | `"720p"` |
-| `aspect_ratio` | Seitenverhältnis des Ausgabevideos. `"adaptive"` folgt dem Prompt, dann dem ersten Bild oder den Referenzvideos und fällt andernfalls auf 16:9 zurück. Standard: `"adaptive"`. | COMBO | Ja | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Seitenverhältnis des Ausgabevideos. `"adaptive"` folgt dem Prompt, dann dem ersten Bild oder den Referenzvideos und fällt andernfalls auf 16:9 zurück. Standard: `"adaptive"`. | COMBO | Ja | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Länge des generierten Videos in Sekunden. Standard: 5. | INT | Ja | 3 bis 20 |
 | `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Ja | 0 bis 2147483647 |
 

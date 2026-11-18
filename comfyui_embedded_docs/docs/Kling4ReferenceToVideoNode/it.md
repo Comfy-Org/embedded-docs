@@ -22,7 +22,7 @@ Questi input compaiono quando `model` è impostato su `"kling-4.0"`.
 | `last_frame` | Fotogramma opzionale in cui termina il video. Concorre al limite di 10 immagini insieme alle immagini di riferimento. | IMAGE | No | - |
 | `prompt` | Descrizione del video da generare. Fai riferimento agli input come `@Image1`, `@Image2` e così via, e `@Video1`, `@Video2` e così via. | STRING | Sì | 1 a 26000 caratteri |
 | `resolution` | Risoluzione del video di output. Predefinito: `"720p"`. | COMBO | Sì | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Rapporto d'aspetto del video di output. `"adaptive"` segue il prompt, poi il primo fotogramma o i video di riferimento e, altrimenti, ricade su 16:9. Predefinito: `"adaptive"`. | COMBO | Sì | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Rapporto d'aspetto del video di output. `"adaptive"` segue il prompt, poi il primo fotogramma o i video di riferimento e, altrimenti, ricade su 16:9. Predefinito: `"adaptive"`. | COMBO | Sì | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Durata del video generato in secondi. Predefinito: 5. | INT | Sì | 3 a 30 |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: 42. | INT | Sì | 0 a 2147483647 |
 
@@ -37,7 +37,7 @@ Questi input compaiono quando `model` è impostato su `"kling-4.0-flash"`.
 | `first_frame` | Fotogramma opzionale da cui inizia il video. Concorre al limite di 10 immagini insieme alle immagini di riferimento. | IMAGE | No | - |
 | `prompt` | Descrizione del video da generare. Fai riferimento agli input come `@Image1`, `@Image2` e così via, e `@Video1`, `@Video2` e così via. | STRING | Sì | 1 a 26000 caratteri |
 | `resolution` | Risoluzione del video di output. Flash esegue il rendering solo a 720p. Predefinito: `"720p"`. | COMBO | Sì | `"720p"` |
-| `aspect_ratio` | Rapporto d'aspetto del video di output. `"adaptive"` segue il prompt, poi il primo fotogramma o i video di riferimento e, altrimenti, ricade su 16:9. Predefinito: `"adaptive"`. | COMBO | Sì | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Rapporto d'aspetto del video di output. `"adaptive"` segue il prompt, poi il primo fotogramma o i video di riferimento e, altrimenti, ricade su 16:9. Predefinito: `"adaptive"`. | COMBO | Sì | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Durata del video generato in secondi. Predefinito: 5. | INT | Sì | 3 a 20 |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: 42. | INT | Sì | 0 a 2147483647 |
 
