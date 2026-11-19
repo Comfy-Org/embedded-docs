@@ -2,7 +2,7 @@
 
 Completa le parti di un modello 3D segmentato e ripara le regioni mancanti o danneggiate della mesh. Prende il task ID di un risultato di segmentazione mesh Tripo, richiede a Tripo il job di completamento e attende che termini. Puoi facoltativamente limitare il lavoro a nomi di parti specifici. Il modello completato viene restituito come file GLB.
 
-> **Nota:** Tripo conserva i record delle attività sui propri server per 7 giorni (a partire dal 1° dicembre 2026). Un ID attività più vecchio non può più essere risolto, quindi rieseguire un workflow salvato dopo questo intervallo non riesce su questo nodo. Per continuare, eseguite di nuovo il nodo Tripo precedente per creare un nuovo ID attività, oppure reimportate il modello che avete già scaricato con **Tripo: Importa Modello**.
+> **Nota:** Tripo conserva i record delle attività sui propri server per 7 giorni (a partire dal 1° dicembre 2026). Un ID attività più vecchio non può più essere risolto, quindi rieseguire un workflow salvato dopo questo intervallo non riesce su questo nodo. Per continuare, eseguite di nuovo il nodo Tripo di segmentazione mesh precedente per creare un nuovo `SEGMENT_TASK_ID`. La segmentazione richiede un `MODEL_TASK_ID`: se è scaduto anche quello, reimportate prima il modello scaricato con **Tripo: Importa Modello**. Se non avete mai scaricato il modello, rieseguite il nodo Tripo di generazione del modello originale e collegate il suo nuovo `MODEL_TASK_ID` al nodo di segmentazione; la mesh può differire dall’originale.
 
 ## Input
 

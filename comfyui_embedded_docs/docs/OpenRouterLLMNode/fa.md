@@ -1,6 +1,6 @@
 # OpenRouter LLM
 
-گره OpenRouter LLM یک متن ورودی را به مجموعه‌ای برگزیده از مدل‌های زبانی محبوبِ در دسترس از طریق سرویس OpenRouter ارسال می‌کند و پاسخ متنی تولیدشده را بازمی‌گرداند. این گره از مدل‌های Anthropic (Claude)، OpenAI (GPT)، Google (Gemini)، xAI (Grok)، DeepSeek، Qwen، Mistral، Z.AI (GLM)، Moonshot (Kimi) و Perplexity Sonar پشتیبانی می‌کند و می‌تواند به‌صورت اختیاری تصاویر یا ویدیوها را به‌عنوان ورودی‌های مرجع در درخواست لحاظ کند.
+گره OpenRouter LLM یک متن ورودی را به مجموعه‌ای برگزیده از مدل‌های زبانی محبوبِ در دسترس از طریق سرویس OpenRouter ارسال می‌کند و پاسخ متنی تولیدشده را بازمی‌گرداند. این گره از مدل‌های Anthropic (Claude)، OpenAI (GPT)، Google (Gemini)، xAI (Grok)، Meta (Muse)، DeepSeek، Qwen، Mistral، Z.AI (GLM)، Moonshot (Kimi) و Perplexity Sonar پشتیبانی می‌کند و می‌تواند به‌صورت اختیاری تصاویر یا ویدیوها را به‌عنوان ورودی‌های مرجع در درخواست لحاظ کند.
 
 ## ورودی‌ها
 
@@ -53,6 +53,18 @@
 
 این مدل‌ها تا 20 تصویر مرجع را پشتیبانی می‌کنند (به ورودی‌های مرجع مراجعه کنید).
 
+### ورودی‌های Meta Muse Models
+
+مشترک بین `meta/muse-wonder`، `meta/muse-spark-1.3` و `meta/muse-ember`.
+
+| پارامتر | توضیحات | نوع داده | الزامی | محدوده |
+|-----------|-------------|-----------|----------|-------|
+| `reasoning_effort` | میزان استدلال. این مدل‌ها همیشه استدلال می‌کنند؛ 'minimal' کمترین سطح است. (پیش‌فرض: "minimal") | COMBO | خیر | "minimal"<br>"low"<br>"medium"<br>"high" |
+
+این مدل‌ها تا 50 تصویر مرجع و تا 5 ویدیوی مرجع را پشتیبانی می‌کند (به ورودی‌های مرجع مراجعه کنید).
+
+این مدل‌ها همیشه استدلال می‌کنند، بنابراین اگر پاسخ خالی برگشت، `reasoning_effort` را کاهش دهید یا متن ورودی را ساده کنید.
+
 ### ورودی‌های DeepSeek Models
 
 مشترک بین `deepseek/deepseek-v4-pro`، `deepseek/deepseek-v4-flash` و `deepseek/deepseek-v3.2`.
@@ -62,14 +74,6 @@
 | `reasoning_effort` | میزان استدلال. گزینه 'off' استدلال را به‌طور کامل غیرفعال می‌کند. (پیش‌فرض: "off") | COMBO | خیر | "off"<br>"low"<br>"medium"<br>"high" |
 
 مدل‌های متنی‌فقط — بدون تصاویر یا ویدیوهای مرجع.
-
-### ورودی‌های Qwen 3.6 Max Preview
-
-| پارامتر | توضیحات | نوع داده | الزامی | محدوده |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | میزان استدلال. گزینه 'off' استدلال را به‌طور کامل غیرفعال می‌کند. (پیش‌فرض: "off") | COMBO | خیر | "off"<br>"low"<br>"medium"<br>"high" |
-
-مدل متنی‌فقط — بدون تصاویر یا ویدیوهای مرجع.
 
 ### ورودی‌های Qwen 3.6 Plus and Qwen 3.6 Flash
 
@@ -144,18 +148,19 @@
 
 | پارامتر | توضیحات | نوع داده | الزامی | محدوده |
 |-----------|-------------|-----------|----------|-------|
-| `images` | تصویر(های) مرجع اختیاری که به‌صورت URL ارسال می‌شوند. اسلات توسعه‌پذیر: 1..N ورودی تصویر را متصل کنید (`image_1`، `image_2`، ...)؛ محدودیت تعداد به مدل انتخاب‌شده بستگی دارد (به بخش‌های مدل مراجعه کنید). | IMAGE | خیر | 0 تا 20 (وابسته به مدل: 8، 10، یا 20) |
-| `videos` | ویدیوی(های) مرجع اختیاری که به‌صورت URL ارسال می‌شوند. اسلات توسعه‌پذیر: 1..N ورودی ویدیو را متصل کنید (`video_1`، `video_2`، ...)؛ محدودیت تعداد به مدل انتخاب‌شده بستگی دارد (به بخش‌های مدل مراجعه کنید). | VIDEO | خیر | 0 تا 4 (وابسته به مدل) |
+| `images` | تصویر(های) مرجع اختیاری که به‌صورت URL ارسال می‌شوند. اسلات توسعه‌پذیر: 1..N ورودی تصویر را متصل کنید (`image_1`، `image_2`، ...)؛ محدودیت تعداد به مدل انتخاب‌شده بستگی دارد (به بخش‌های مدل مراجعه کنید). | IMAGE | خیر | 0 تا 50 (وابسته به مدل: 8، 10، 20، یا 50) |
+| `videos` | ویدیوی(های) مرجع اختیاری که به‌صورت URL ارسال می‌شوند. اسلات توسعه‌پذیر: 1..N ورودی ویدیو را متصل کنید (`video_1`، `video_2`، ...)؛ محدودیت تعداد به مدل انتخاب‌شده بستگی دارد (به بخش‌های مدل مراجعه کنید). | VIDEO | خیر | 0 تا 5 (وابسته به مدل) |
 
 **نکته‌ها:**
 
-- **مدل‌های موجود:** گزینه‌های مدل موجود به‌صورت پویا ساخته می‌شوند و شامل مدل‌هایی با قابلیت‌های متفاوت هستند. فهرست کامل 34 مدل به این شرح است:
+- **مدل‌های موجود:** گزینه‌های مدل موجود به‌صورت پویا ساخته می‌شوند و شامل مدل‌هایی با قابلیت‌های متفاوت هستند. فهرست کامل 36 مدل به این شرح است:
   - Anthropic: `anthropic/claude-opus-5`، `anthropic/claude-opus-4.8`، `anthropic/claude-opus-4.7`، `anthropic/claude-fable-5`، `anthropic/claude-sonnet-5`، `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`، `openai/gpt-5.6-sol`، `openai/gpt-5.6-terra-pro`، `openai/gpt-5.6-terra`، `openai/gpt-5.6-luna-pro`، `openai/gpt-5.6-luna`، `openai/gpt-5.5-pro`، `openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
   - xAI: `x-ai/grok-4.5`، `x-ai/grok-4.20`، `x-ai/grok-4.3`
+  - Meta: `meta/muse-wonder`، `meta/muse-spark-1.3`، `meta/muse-ember`
   - DeepSeek: `deepseek/deepseek-v4-pro`، `deepseek/deepseek-v4-flash`، `deepseek/deepseek-v3.2`
-  - Qwen: `qwen/qwen3.6-max-preview`، `qwen/qwen3.6-plus`، `qwen/qwen3.6-flash`
+  - Qwen: ، `qwen/qwen3.6-plus`، `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`، `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`، `z-ai/glm-5`
   - Moonshot: `moonshotai/kimi-k3`، `moonshotai/kimi-k2.6`، `moonshotai/kimi-k2-thinking`
@@ -180,4 +185,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `534ab9ecc12e35a23a4d8f3e10f4f82d95db8e902ac8a2f2ee0ea68246516f62`
+**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`

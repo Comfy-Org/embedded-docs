@@ -1,6 +1,6 @@
 # Wan Text zu Video
 
-Der Node „Wan Text to Video“ generiert Videoinhalte anhand von Textbeschreibungen. Er verwendet KI-Modelle, um Videos aus Prompts zu erstellen, und unterstützt verschiedene Videogrößen, Dauern und optionale Audioeingaben. Der Node kann bei Bedarf automatisch Audio generieren und bietet Optionen zur Prompt-Verbesserung und zum Hinzufügen von Wasserzeichen.
+Der Node „Wan Text to Video“ generiert Videoinhalte anhand von Textbeschreibungen, optional mit Audioeingabe. Er verwendet KI-Modelle, um Videos aus Prompts zu erstellen, und unterstützt verschiedene Videogrößen, Dauern und optionale Audioeingaben. Der Node kann bei Bedarf automatisch Audio generieren und bietet Optionen zur Prompt-Verbesserung und zum Hinzufügen von Wasserzeichen.
 
 ## Eingaben
 

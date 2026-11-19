@@ -1,6 +1,6 @@
 # OpenRouter LLM
 
-OpenRouter LLM düğümü, OpenRouter hizmeti aracılığıyla sunulan özenle seçilmiş bir dizi popüler dil modeline bir metin istemi gönderir ve oluşturulan metin yanıtını döndürür. Anthropic (Claude), OpenAI (GPT), Google (Gemini), xAI (Grok), DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) ve Perplexity Sonar modellerini destekler ve isteğe bağlı olarak görselleri veya videoları referans girdileri olarak ekleyebilir.
+OpenRouter LLM düğümü, OpenRouter hizmeti aracılığıyla sunulan özenle seçilmiş bir dizi popüler dil modeline bir metin istemi gönderir ve oluşturulan metin yanıtını döndürür. Anthropic (Claude), OpenAI (GPT), Google (Gemini), xAI (Grok), Meta (Muse), DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) ve Perplexity Sonar modellerini destekler ve isteğe bağlı olarak görselleri veya videoları referans girdileri olarak ekleyebilir.
 
 ## Girdiler
 
@@ -53,6 +53,18 @@ Bu model en fazla 20 referans görselini ve en fazla 4 referans videosunu destek
 
 Bu modeller en fazla 20 referans görselini destekler (bkz. Referans Girdileri).
 
+### Meta Muse Modelleri Girdileri
+
+Şu modellerde ortaktır: `meta/muse-wonder`, `meta/muse-spark-1.3` ve `meta/muse-ember`.
+
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `reasoning_effort` | Akıl yürütme çabası. Bu modeller her zaman akıl yürütür; 'minimal' en düşük seviyedir. (varsayılan: "minimal") | COMBO | Hayır | "minimal"<br>"low"<br>"medium"<br>"high" |
+
+Bu modeller en fazla 50 referans görselini ve en fazla 5 referans videosunu destekler (bkz. Referans Girdileri).
+
+Bu modeller her zaman akıl yürütür; yanıt boş dönerse `reasoning_effort` değerini düşürün veya istemi basitleştirin.
+
 ### DeepSeek Modelleri Girdileri
 
 Şu modellerde ortaktır: `deepseek/deepseek-v4-pro`, `deepseek/deepseek-v4-flash` ve `deepseek/deepseek-v3.2`.
@@ -62,14 +74,6 @@ Bu modeller en fazla 20 referans görselini destekler (bkz. Referans Girdileri).
 | `reasoning_effort` | Akıl yürütme çabası. 'off' akıl yürütmeyi tamamen devre dışı bırakır. (varsayılan: "off") | COMBO | Hayır | "off"<br>"low"<br>"medium"<br>"high" |
 
 Yalnızca metin modelleri — referans görseli veya videosu yok.
-
-### Qwen 3.6 Max Preview Girdileri
-
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | Akıl yürütme çabası. 'off' akıl yürütmeyi tamamen devre dışı bırakır. (varsayılan: "off") | COMBO | Hayır | "off"<br>"low"<br>"medium"<br>"high" |
-
-Yalnızca metin modeli — referans görseli veya videosu yok.
 
 ### Qwen 3.6 Plus ve Qwen 3.6 Flash Girdileri
 
@@ -144,18 +148,19 @@ Yalnızca metin modelleri — referans görseli veya videosu yok.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `images` | İsteğe bağlı referans görsel(ler)i, URL olarak gönderilir. Genişletilebilir yuva: 1..N görsel girdisini bağlayın (`image_1`, `image_2`, ...); sayı sınırı seçilen modele bağlıdır (bkz. model bölümleri). | IMAGE | Hayır | 0 ile 20 arası (modele bağlı: 8, 10 veya 20) |
-| `videos` | İsteğe bağlı referans video(lar)ı, URL olarak gönderilir. Genişletilebilir yuva: 1..N video girdisini bağlayın (`video_1`, `video_2`, ...); sayı sınırı seçilen modele bağlıdır (bkz. model bölümleri). | VIDEO | Hayır | 0 ile 4 arası (modele bağlı) |
+| `images` | İsteğe bağlı referans görsel(ler)i, URL olarak gönderilir. Genişletilebilir yuva: 1..N görsel girdisini bağlayın (`image_1`, `image_2`, ...); sayı sınırı seçilen modele bağlıdır (bkz. model bölümleri). | IMAGE | Hayır | 0 ile 50 arası (modele bağlı: 8, 10, 20 veya 50) |
+| `videos` | İsteğe bağlı referans video(lar)ı, URL olarak gönderilir. Genişletilebilir yuva: 1..N video girdisini bağlayın (`video_1`, `video_2`, ...); sayı sınırı seçilen modele bağlıdır (bkz. model bölümleri). | VIDEO | Hayır | 0 ile 5 arası (modele bağlı) |
 
 **Notlar:**
 
-- **Kullanılabilir modeller:** Kullanılabilir model seçenekleri dinamik olarak oluşturulur ve farklı yeteneklere sahip modelleri içerir. 34 modelin tam listesi şu şekildedir:
+- **Kullanılabilir modeller:** Kullanılabilir model seçenekleri dinamik olarak oluşturulur ve farklı yeteneklere sahip modelleri içerir. 36 modelin tam listesi şu şekildedir:
   - Anthropic: `anthropic/claude-opus-5`, `anthropic/claude-opus-4.8`, `anthropic/claude-opus-4.7`, `anthropic/claude-fable-5`, `anthropic/claude-sonnet-5`, `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-terra-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-luna`, `openai/gpt-5.5-pro`, `openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
   - xAI: `x-ai/grok-4.5`, `x-ai/grok-4.20`, `x-ai/grok-4.3`
+  - Meta: `meta/muse-wonder`, `meta/muse-spark-1.3`, `meta/muse-ember`
   - DeepSeek: `deepseek/deepseek-v4-pro`, `deepseek/deepseek-v4-flash`, `deepseek/deepseek-v3.2`
-  - Qwen: `qwen/qwen3.6-max-preview`, `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
+  - Qwen: `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`, `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`, `z-ai/glm-5`
   - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`, `moonshotai/kimi-k2-thinking`
@@ -180,4 +185,4 @@ Yalnızca metin modelleri — referans görseli veya videosu yok.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `534ab9ecc12e35a23a4d8f3e10f4f82d95db8e902ac8a2f2ee0ea68246516f62`
+**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`

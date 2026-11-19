@@ -14,9 +14,9 @@ Nota: O checkpoint selecionado deve ser um dicionário de estado do RAFT-large d
 
 | Nome da Saída | Descrição | Tipo de Dados |
 | --- | --- | --- |
-| `OPTICAL_FLOW` | O modelo de fluxo óptico carregado, configurado para modo de avaliação e precisão float32, encapsulado em um ModelPatcher para uso com outros nós. | OPTICAL_FLOW |
+| `OPTICAL_FLOW` | O modelo de fluxo óptico carregado, configurado para modo de avaliação, com precisão fp16 em dispositivos que a suportam e sem `--force-fp32` (float32 caso contrário), encapsulado em um ModelPatcher para uso com outros nós. | OPTICAL_FLOW |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpticalFlowLoader/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `5e79551545ad7ee2fd4856a47da29808a404342d1d5e57da0980058db6b11c3b`
+**Source fingerprint (SHA-256):** `82e5d747679ede113ec4d72fd6eda4b8f20d098832612bebf26ef65de8b4b3dc`

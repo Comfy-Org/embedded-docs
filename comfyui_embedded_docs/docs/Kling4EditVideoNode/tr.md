@@ -21,7 +21,7 @@ Bu girdiler, `model` `"kling-4.0"` olarak ayarlandığında görünür.
 | `reference_images` | Referans görseller için büyütülebilir yuvalar, en fazla 10. İstemde bunlara `@Image1`, `@Image2` vb. olarak başvurun. | AUTOGROW | Hayır | 0 ile 10 görsel arası |
 | `prompt` | Neyin değiştirileceği ve neyin korunacağının açıklaması. Düzenlenen videoya `@Video1`, referans videolara `@Video2` vb., görsellere ise `@Image1` vb. olarak başvurun. | STRING | Evet | 1 ile 26000 karakter arası |
 | `resolution` | Çıktı videosunun çözünürlüğü. Varsayılan: `"720p"`. | COMBO | Evet | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Çıktı videosunun en-boy oranı. `"adaptive"` girdi videosunun en-boy oranını korur. Varsayılan: `"adaptive"`. | COMBO | Evet | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Çıktı videosunun en-boy oranı. `"adaptive"` girdi videosunun en-boy oranını korur. Varsayılan: `"adaptive"`. | COMBO | Evet | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Evet | 0 ile 2147483647 arası |
 | `audio` | `"native"` düzenlenen video için yeni ses oluşturur, `"original"` girdi videosunun sesini korur. Varsayılan: `"native"`. | COMBO | Hayır | `"native"`<br>`"original"` |
 
@@ -36,7 +36,7 @@ Bu girdiler, `model` `"kling-4.0-flash"` olarak ayarlandığında görünür.
 | `reference_images` | Referans görseller için büyütülebilir yuvalar, en fazla 10. İstemde bunlara `@Image1`, `@Image2` vb. olarak başvurun. | AUTOGROW | Hayır | 0 ile 10 görsel arası |
 | `prompt` | Neyin değiştirileceği ve neyin korunacağının açıklaması. Düzenlenen videoya `@Video1`, referans videolara `@Video2` vb., görsellere ise `@Image1` vb. olarak başvurun. | STRING | Evet | 1 ile 26000 karakter arası |
 | `resolution` | Çıktı videosunun çözünürlüğü. Flash yalnızca 720p oluşturur. Varsayılan: `"720p"`. | COMBO | Evet | `"720p"` |
-| `aspect_ratio` | Çıktı videosunun en-boy oranı. `"adaptive"` girdi videosunun en-boy oranını korur. Varsayılan: `"adaptive"`. | COMBO | Evet | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Çıktı videosunun en-boy oranı. `"adaptive"` girdi videosunun en-boy oranını korur. Varsayılan: `"adaptive"`. | COMBO | Evet | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Evet | 0 ile 2147483647 arası |
 | `audio` | `"native"` düzenlenen video için yeni ses oluşturur, `"original"` girdi videosunun sesini korur. Varsayılan: `"native"`. | COMBO | Hayır | `"native"`<br>`"original"` |
 

@@ -1,7 +1,5 @@
 # Recraft Style - Biblioteca de Estilos Infinita
 
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
 Este nodo te permite seleccionar un estilo de la Biblioteca Infinita de Estilos de Recraft utilizando un UUID preexistente. Recupera la información del estilo basándose en el identificador de estilo proporcionado y lo devuelve para usarlo en otros nodos de Recraft.
 
 ## Entradas

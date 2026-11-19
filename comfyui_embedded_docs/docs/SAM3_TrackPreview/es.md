@@ -1,7 +1,5 @@
 # SAM3 Track Preview
 
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
 ## Resumen
 
 Este nodo crea una vista previa de video de objetos rastreados, dibujando cada objeto rastreado con una superposición de color distintiva y una etiqueta numérica. No genera tensores de imagen ni de video; en su lugar, guarda el video de vista previa resultante directamente en un archivo temporal.

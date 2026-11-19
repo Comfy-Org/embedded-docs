@@ -18,7 +18,7 @@ Ces entrées apparaissent lorsque `model` est défini sur `"kling-4.0"`.
 |-----------|-------------|-----------------|--------|-------|
 | `prompt` | Description textuelle de la vidéo à générer. Doit comporter entre 1 et 26000 caractères. | STRING | Oui | 1 à 26000 caractères |
 | `resolution` | Résolution de la vidéo de sortie. Par défaut : `"720p"`. | COMBO | Oui | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Format d'image de la vidéo de sortie. Par défaut : `"16:9"`. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Format d'image de la vidéo de sortie. Par défaut : `"16:9"`. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Durée de la vidéo générée, en secondes. Par défaut : 5. | INT | Oui | 3 à 30 |
 | `seed` | La graine détermine si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
 
@@ -30,7 +30,7 @@ Ces entrées apparaissent lorsque `model` est défini sur `"kling-4.0-flash"`.
 |-----------|-------------|-----------------|--------|-------|
 | `prompt` | Description textuelle de la vidéo à générer. Doit comporter entre 1 et 26000 caractères. | STRING | Oui | 1 à 26000 caractères |
 | `resolution` | Résolution de la vidéo de sortie. Flash ne génère qu'en 720p. Par défaut : `"720p"`. | COMBO | Oui | `"720p"` |
-| `aspect_ratio` | Format d'image de la vidéo de sortie. Par défaut : `"16:9"`. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Format d'image de la vidéo de sortie. Par défaut : `"16:9"`. | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Durée de la vidéo générée, en secondes. Par défaut : 5. | INT | Oui | 3 à 20 |
 | `seed` | La graine détermine si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
 

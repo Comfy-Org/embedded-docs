@@ -21,7 +21,7 @@ Diese Eingaben erscheinen, wenn `model` auf `"kling-4.0"` gesetzt ist.
 | `reference_images` | Erweiterbare Slots für Referenzbilder, bis zu 10. Verweisen Sie im Prompt darauf als `@Image1`, `@Image2` und so weiter. | AUTOGROW | Nein | 0 bis 10 Bilder |
 | `prompt` | Beschreibung dessen, was geändert und was beibehalten werden soll. Verweisen Sie auf das zu bearbeitende Video als `@Video1`, auf die Referenzvideos als `@Video2` und so weiter und auf die Bilder als `@Image1` und so weiter. | STRING | Ja | 1 bis 26000 Zeichen |
 | `resolution` | Auflösung des Ausgabevideos. Standard: `"720p"`. | COMBO | Ja | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Seitenverhältnis des Ausgabevideos. `"adaptive"` behält das Seitenverhältnis des Eingabevideos bei. Standard: `"adaptive"`. | COMBO | Ja | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Seitenverhältnis des Ausgabevideos. `"adaptive"` behält das Seitenverhältnis des Eingabevideos bei. Standard: `"adaptive"`. | COMBO | Ja | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Ja | 0 bis 2147483647 |
 | `audio` | `"native"` erzeugt neues Audio für das bearbeitete Video, `"original"` behält das Audio des Eingabevideos bei. Standard: `"native"`. | COMBO | Nein | `"native"`<br>`"original"` |
 
@@ -36,7 +36,7 @@ Diese Eingaben erscheinen, wenn `model` auf `"kling-4.0-flash"` gesetzt ist.
 | `reference_images` | Erweiterbare Slots für Referenzbilder, bis zu 10. Verweisen Sie im Prompt darauf als `@Image1`, `@Image2` und so weiter. | AUTOGROW | Nein | 0 bis 10 Bilder |
 | `prompt` | Beschreibung dessen, was geändert und was beibehalten werden soll. Verweisen Sie auf das zu bearbeitende Video als `@Video1`, auf die Referenzvideos als `@Video2` und so weiter und auf die Bilder als `@Image1` und so weiter. | STRING | Ja | 1 bis 26000 Zeichen |
 | `resolution` | Auflösung des Ausgabevideos. Flash rendert nur in 720p. Standard: `"720p"`. | COMBO | Ja | `"720p"` |
-| `aspect_ratio` | Seitenverhältnis des Ausgabevideos. `"adaptive"` behält das Seitenverhältnis des Eingabevideos bei. Standard: `"adaptive"`. | COMBO | Ja | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Seitenverhältnis des Ausgabevideos. `"adaptive"` behält das Seitenverhältnis des Eingabevideos bei. Standard: `"adaptive"`. | COMBO | Ja | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Ja | 0 bis 2147483647 |
 | `audio` | `"native"` erzeugt neues Audio für das bearbeitete Video, `"original"` behält das Audio des Eingabevideos bei. Standard: `"native"`. | COMBO | Nein | `"native"`<br>`"original"` |
 

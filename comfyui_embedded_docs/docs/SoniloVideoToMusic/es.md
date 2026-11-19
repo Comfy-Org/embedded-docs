@@ -1,7 +1,5 @@
 # Sonilo Video a Música
 
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
 Genera música a partir de video utilizando el modelo de IA de Sonilo. Este nodo analiza el contenido de un video de entrada y crea una pieza musical que lo acompaña. Utiliza un servicio de IA externo para procesar el video y generar el audio.
 
 ## Entradas

@@ -14,9 +14,9 @@
 
 | 輸出名 | 描述 | 資料類型 |
 | --- | --- | --- |
-| `OPTICAL_FLOW` | 載入的光流模型，設定為評估模式和 float32 精度，包裝在 ModelPatcher 中以供其他節點使用。 | OPTICAL_FLOW |
+| `OPTICAL_FLOW` | 載入的光流模型，設定為評估模式，在支援 fp16 且未啟用 `--force-fp32` 的裝置上以 fp16 精度載入（否則使用 float32），包裝在 ModelPatcher 中以供其他節點使用。 | OPTICAL_FLOW |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpticalFlowLoader/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `5e79551545ad7ee2fd4856a47da29808a404342d1d5e57da0980058db6b11c3b`
+**Source fingerprint (SHA-256):** `82e5d747679ede113ec4d72fd6eda4b8f20d098832612bebf26ef65de8b4b3dc`

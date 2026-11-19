@@ -18,7 +18,7 @@ Bu girdiler, `model` `"kling-4.0"` olarak ayarlandığında görünür.
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Oluşturulacak videonun metin açıklaması. 1 ile 26000 karakter arasında olmalıdır. | STRING | Evet | 1 ile 26000 karakter arası |
 | `resolution` | Çıktı videosunun çözünürlüğü. Varsayılan: `"720p"`. | COMBO | Evet | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Çıktı videosunun en-boy oranı. Varsayılan: `"16:9"`. | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Çıktı videosunun en-boy oranı. Varsayılan: `"16:9"`. | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Oluşturulan videonun saniye cinsinden uzunluğu. Varsayılan: 5. | INT | Evet | 3 ile 30 arası |
 | `seed` | Seed, düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak belirleyici değildir. Varsayılan: 42. | INT | Evet | 0 ile 2147483647 arası |
 
@@ -30,7 +30,7 @@ Bu girdiler, `model` `"kling-4.0-flash"` olarak ayarlandığında görünür.
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Oluşturulacak videonun metin açıklaması. 1 ile 26000 karakter arasında olmalıdır. | STRING | Evet | 1 ile 26000 karakter arası |
 | `resolution` | Çıktı videosunun çözünürlüğü. Flash yalnızca 720p oluşturur. Varsayılan: `"720p"`. | COMBO | Evet | `"720p"` |
-| `aspect_ratio` | Çıktı videosunun en-boy oranı. Varsayılan: `"16:9"`. | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Çıktı videosunun en-boy oranı. Varsayılan: `"16:9"`. | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Oluşturulan videonun saniye cinsinden uzunluğu. Varsayılan: 5. | INT | Evet | 3 ile 20 arası |
 | `seed` | Seed, düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak belirleyici değildir. Varsayılan: 42. | INT | Evet | 0 ile 2147483647 arası |
 

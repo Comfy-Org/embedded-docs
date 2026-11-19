@@ -1,6 +1,6 @@
 # OpenRouter LLM
 
-צומת OpenRouter LLM שולח הנחיית טקסט לקבוצה מובחרת של מודלי שפה פופולריים הזמינים דרך שירות OpenRouter ומחזיר את תגובת הטקסט שנוצרה. הוא תומך במודלים מבית Anthropic (Claude), OpenAI (GPT), Google (Gemini), xAI (Grok), DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) ו-Perplexity Sonar, ויכול לכלול באופן אופציונלי תמונות או סרטונים כקלטי עזר בבקשה.
+צומת OpenRouter LLM שולח הנחיית טקסט לקבוצה מובחרת של מודלי שפה פופולריים הזמינים דרך שירות OpenRouter ומחזיר את תגובת הטקסט שנוצרה. הוא תומך במודלים מבית Anthropic (Claude), OpenAI (GPT), Google (Gemini), xAI (Grok), Meta (Muse), DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) ו-Perplexity Sonar, ויכול לכלול באופן אופציונלי תמונות או סרטונים כקלטי עזר בבקשה.
 
 ## קלטים
 
@@ -53,6 +53,18 @@
 
 מודלים אלה תומכים בעד 20 תמונות עזר (ראו קלטי עזר).
 
+### קלטים של מודלי Meta Muse
+
+משותף למודלים: `meta/muse-wonder`, `meta/muse-spark-1.3`, ו-`meta/muse-ember`.
+
+| פרמטר | תיאור | סוג נתונים | חובה | טווח |
+|-----------|-------------|-----------|----------|-------|
+| `reasoning_effort` | מאמץ חשיבה. מודלים אלה תמיד מבצעים חשיבה; 'minimal' היא הרמה הנמוכה ביותר. (ברירת מחדל: "minimal") | COMBO | לא | "minimal"<br>"low"<br>"medium"<br>"high" |
+
+מודלים אלה תומכים בעד 50 תמונות עזר ועד 5 סרטוני עזר (ראו קלטי עזר).
+
+מודלים אלה תמיד מבצעים חשיבה, לכן אם התגובה חוזרת ריקה, הנמיכו את `reasoning_effort` או פשטו את ההנחיה.
+
 ### קלטים של מודלי DeepSeek
 
 משותף למודלים: `deepseek/deepseek-v4-pro`, `deepseek/deepseek-v4-flash`, ו-`deepseek/deepseek-v3.2`.
@@ -62,14 +74,6 @@
 | `reasoning_effort` | מאמץ חשיבה. 'off' מבטל את החשיבה לחלוטין. (ברירת מחדל: "off") | COMBO | לא | "off"<br>"low"<br>"medium"<br>"high" |
 
 מודלי טקסט בלבד — ללא תמונות או סרטוני עזר.
-
-### קלטים של Qwen 3.6 Max Preview
-
-| פרמטר | תיאור | סוג נתונים | חובה | טווח |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | מאמץ חשיבה. 'off' מבטל את החשיבה לחלוטין. (ברירת מחדל: "off") | COMBO | לא | "off"<br>"low"<br>"medium"<br>"high" |
-
-מודל טקסט בלבד — ללא תמונות או סרטוני עזר.
 
 ### קלטים של Qwen 3.6 Plus ו-Qwen 3.6 Flash
 
@@ -144,18 +148,19 @@
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `images` | תמונות עזר אופציונליות, נשלחות ככתובות URL. משבצת ניתנת להרחבה: חבר 1..N קלטי תמונה (`image_1`, `image_2`, ...); מגבלת הכמות תלויה במודל הנבחר (ראו מקטעי המודלים). | IMAGE | לא | 0 עד 20 (תלוי במודל: 8, 10 או 20) |
-| `videos` | סרטוני עזר אופציונליים, נשלחים ככתובות URL. משבצת ניתנת להרחבה: חבר 1..N קלטי וידאו (`video_1`, `video_2`, ...); מגבלת הכמות תלויה במודל הנבחר (ראו מקטעי המודלים). | VIDEO | לא | 0 עד 4 (תלוי במודל) |
+| `images` | תמונות עזר אופציונליות, נשלחות ככתובות URL. משבצת ניתנת להרחבה: חבר 1..N קלטי תמונה (`image_1`, `image_2`, ...); מגבלת הכמות תלויה במודל הנבחר (ראו מקטעי המודלים). | IMAGE | לא | 0 עד 50 (תלוי במודל: 8, 10, 20 או 50) |
+| `videos` | סרטוני עזר אופציונליים, נשלחים ככתובות URL. משבצת ניתנת להרחבה: חבר 1..N קלטי וידאו (`video_1`, `video_2`, ...); מגבלת הכמות תלויה במודל הנבחר (ראו מקטעי המודלים). | VIDEO | לא | 0 עד 5 (תלוי במודל) |
 
 **הערות:**
 
-- **מודלים זמינים:** אפשרויות המודלים הזמינות נבנות באופן דינמי וכוללות מודלים עם יכולות שונות. הרשימה המלאה של 34 מודלים היא:
+- **מודלים זמינים:** אפשרויות המודלים הזמינות נבנות באופן דינמי וכוללות מודלים עם יכולות שונות. הרשימה המלאה של 36 מודלים היא:
   - Anthropic: `anthropic/claude-opus-5`, `anthropic/claude-opus-4.8`, `anthropic/claude-opus-4.7`, `anthropic/claude-fable-5`, `anthropic/claude-sonnet-5`, `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-terra-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-luna`, `openai/gpt-5.5-pro`, `openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
   - xAI: `x-ai/grok-4.5`, `x-ai/grok-4.20`, `x-ai/grok-4.3`
+  - Meta: `meta/muse-wonder`, `meta/muse-spark-1.3`, `meta/muse-ember`
   - DeepSeek: `deepseek/deepseek-v4-pro`, `deepseek/deepseek-v4-flash`, `deepseek/deepseek-v3.2`
-  - Qwen: `qwen/qwen3.6-max-preview`, `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
+  - Qwen: `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`, `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`, `z-ai/glm-5`
   - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`, `moonshotai/kimi-k2-thinking`
@@ -180,4 +185,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `534ab9ecc12e35a23a4d8f3e10f4f82d95db8e902ac8a2f2ee0ea68246516f62`
+**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`

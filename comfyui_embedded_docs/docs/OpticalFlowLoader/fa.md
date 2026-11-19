@@ -14,9 +14,9 @@
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `OPTICAL_FLOW` | مدل جریان نوری بارگذاری‌شده، در حالت ارزیابی و با دقت float32، که در یک ModelPatcher برای استفاده با سایر گره‌ها پوشانده شده است. | OPTICAL_FLOW |
+| `OPTICAL_FLOW` | مدل جریان نوری بارگذاری‌شده، در حالت ارزیابی، با دقت fp16 روی دستگاه‌هایی که آن را پشتیبانی می‌کنند و `--force-fp32` فعال نیست (در غیر این صورت float32)، که در یک ModelPatcher برای استفاده با سایر گره‌ها پوشانده شده است. | OPTICAL_FLOW |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpticalFlowLoader/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `5e79551545ad7ee2fd4856a47da29808a404342d1d5e57da0980058db6b11c3b`
+**Source fingerprint (SHA-256):** `82e5d747679ede113ec4d72fd6eda4b8f20d098832612bebf26ef65de8b4b3dc`

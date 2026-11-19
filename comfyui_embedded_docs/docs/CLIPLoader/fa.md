@@ -7,7 +7,7 @@
 | پارامتر | توضیحات | نوع داده | اجباری | محدوده |
 |-----------|-------------|-----------|----------|-------|
 | `clip_name` | نام فایل مدل انکودر متن برای بارگذاری. این باید فایلی در مسیر `ComfyUI/models/text_encoders/` باشد. | STRING | بله | فهرست فایل‌های موجود در پوشه `text_encoders` |
-| `type` | نوع معماری مدل در حال بارگذاری. این مشخص می‌کند که کدام نوع انکودر خاص استفاده شود (پیش‌فرض: `"stable_diffusion"`). | COMBO | بله | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"`<br>`"fibo2"` |
+| `type` | نوع معماری مدل در حال بارگذاری. این مشخص می‌کند که کدام نوع انکودر خاص استفاده شود (پیش‌فرض: `"stable_diffusion"`). | COMBO | بله | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"`<br>`"lens"`<br>`"pixeldit"`<br>`"ideogram4"`<br>`"boogu"`<br>`"krea2"`<br>`"joyimage"`<br>`"mage"`<br>`"minimax"`<br>`"yue2"`<br>`"flux3"`<br>`"moss_image"`<br>`"fibo2"`<br>`"pan2"` |
 | `device` | دستگاهی که مدل روی آن بارگذاری می‌شود. `"default"` در صورت وجود از GPU استفاده می‌کند، در حالی که `"cpu"` بارگذاری روی CPU را اجباری می‌کند. این یک گزینه پیشرفته است (پیش‌فرض: `"default"`). | COMBO | خیر | `"default"`<br>`"cpu"` |
 
 ### نگاشت‌های پشتیبانی‌شده نوع به انکودر
@@ -33,6 +33,7 @@
 | minimax | MiniMax H3 Qwen3-VL or Music3 Qwen/RVQ |
 | flux3 | qwen3-vl 4B |
 | fibo2 | qwen3-vl 4B |
+| pan2 | qwen3.5 9B |
 
 ## خروجی‌ها
 
@@ -43,4 +44,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `75cf64ce955946681dee79035fc91b54be0a99e3fc22b8c4737929ce0bdff13e`
+**Source fingerprint (SHA-256):** `b9fe5d613610d8532c3b6b7428d6548da63e739c27fd58cc66389153824dc617`

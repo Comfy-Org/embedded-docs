@@ -1,7 +1,5 @@
 # Generación de Video Vidu de Inicio a Fin
 
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
 El nodo Vidu Start End To Video Generation crea un video generando fotogramas entre un fotograma inicial y un fotograma final. Utiliza un prompt de texto para guiar el proceso de generación del video y admite varios modelos de video con diferentes configuraciones de resolución y movimiento. El nodo valida que los fotogramas inicial y final tengan relaciones de aspecto compatibles antes de procesarlos.
 
 ## Entradas

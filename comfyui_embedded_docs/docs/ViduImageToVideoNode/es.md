@@ -1,7 +1,5 @@
 # Generación de Video a partir de Imagen Vidu
 
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
 El nodo de Generación de Video a partir de Imagen de Vidu crea un video corto a partir de una imagen inicial y una descripción textual opcional. Utiliza un modelo de IA para generar contenido de video que continúa a partir del fotograma de imagen proporcionado, y devuelve el video resultante.
 
 ## Entradas

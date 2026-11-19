@@ -18,7 +18,7 @@ Questi input compaiono quando `model` è impostato su `"kling-4.0"`.
 |-----------|-------------|--------------|--------------|------------|
 | `prompt` | Descrizione testuale del video da generare. Deve contenere da 1 a 26000 caratteri. | STRING | Sì | Da 1 a 26000 caratteri |
 | `resolution` | Risoluzione del video di output. Predefinito: `"720p"`. | COMBO | Sì | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Rapporto d'aspetto del video di output. Predefinito: `"16:9"`. | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Rapporto d'aspetto del video di output. Predefinito: `"16:9"`. | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Durata del video generato in secondi. Predefinito: 5. | INT | Sì | Da 3 a 30 |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: 42. | INT | Sì | Da 0 a 2147483647 |
 
@@ -30,7 +30,7 @@ Questi input compaiono quando `model` è impostato su `"kling-4.0-flash"`.
 |-----------|-------------|--------------|--------------|------------|
 | `prompt` | Descrizione testuale del video da generare. Deve contenere da 1 a 26000 caratteri. | STRING | Sì | Da 1 a 26000 caratteri |
 | `resolution` | Risoluzione del video di output. Flash esegue il rendering solo a 720p. Predefinito: `"720p"`. | COMBO | Sì | `"720p"` |
-| `aspect_ratio` | Rapporto d'aspetto del video di output. Predefinito: `"16:9"`. | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Rapporto d'aspetto del video di output. Predefinito: `"16:9"`. | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Durata del video generato in secondi. Predefinito: 5. | INT | Sì | Da 3 a 20 |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: 42. | INT | Sì | Da 0 a 2147483647 |
 

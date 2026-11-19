@@ -8,7 +8,7 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Seedance 2.5는 최신 모델, 최대 30초 비디오 및 mp4 출력용입니다. Seedance 2.5 Draft는 빠른 480p 미리보기용이며, 해당 `draft_task_id` 출력이 ByteDance Seedance 2.5 Draft to Final Video 노드에서 1080p 또는 4k 최종본을 렌더링합니다. Seedance 2.0은 최대 품질 및 4k용, Fast는 속도 최적화용, Mini는 가장 빠르고 저렴한 생성용입니다. 모델을 선택하면 아래에 모델별 입력이 표시됩니다. | DYNAMIC_COMBO | 예 | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `model` | Seedance 2.5는 최신 모델, 최대 30초 비디오 및 mp4 출력용입니다. Seedance 2.5 Draft는 빠른 480p 미리보기용이며, 해당 `draft_task_id` 출력이 ByteDance Seedance 2.5 Draft to Final Video 노드에서 1080p 또는 4k 최종본을 렌더링합니다. Seedance 2.5 Flash는 480p 및 720p, 최대 30초 동영상용입니다. Seedance 2.0은 최대 품질 및 4k용, Fast는 속도 최적화용, Mini는 가장 빠르고 저렴한 생성용입니다. 모델을 선택하면 아래에 모델별 입력이 표시됩니다. | DYNAMIC_COMBO | 예 | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.5 Flash"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `first_frame` | 비디오의 첫 프레임 이미지입니다. | IMAGE | 아니요 | - |
 | `last_frame` | 비디오의 마지막 프레임 이미지입니다. | IMAGE | 아니요 | - |
 | `first_frame_asset_id` | 첫 프레임으로 사용할 Seedance asset_id입니다. `first_frame` 이미지 입력과 상호 배타적입니다. 기본값은 빈 문자열입니다. | STRING | 아니요 | - |
@@ -31,6 +31,18 @@
 ### Seedance 2.5 Draft 입력
 
 이 입력은 `Seedance 2.5 Draft`를 선택하면 표시됩니다. 매개변수 집합은 위의 Seedance 2.5와 동일하지만, `resolution`은 `"480p"`만 제공합니다(기본값 `"480p"`).
+
+### Seedance 2.5 Flash 입력
+
+이 입력은 `Seedance 2.5 Flash`를 선택하면 표시됩니다.
+
+| 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | 비디오 생성을 위한 텍스트 프롬프트입니다. 생성될 대사를 유도하려면 대사를 큰따옴표로 묶으세요. | STRING | 예 | - |
+| `resolution` | 출력 비디오의 해상도입니다. (기본값: `"720p"`) | COMBO | 예 | `"480p"`<br>`"720p"` |
+| `duration` | 출력 비디오의 길이(초)입니다(4-30). 기본값은 5입니다. | INT | 예 | 4 ~ 30 |
+| `generate_audio` | 출력 비디오에 대한 오디오 생성을 활성화합니다. 기본값은 True입니다. | BOOLEAN | 예 | False<br>True |
+| `output_format` | 출력 비디오의 컨테이너 형식입니다. 기본값은 mp4입니다. | COMBO | 예 | `"mp4"` |
 
 ### Seedance 2.0 입력
 
@@ -63,7 +75,7 @@
 - Asset ID는 기존의 활성 Seedance Image 자산을 참조해야 합니다.
 - `prompt` 입력은 필수이며 비워 둘 수 없습니다.
 - 모든 실행은 작업 ID를 `draft_task_id`로 반환하지만, `Seedance 2.5 Draft` 실행의 ID만 ByteDance Seedance 2.5 Draft to Final Video 노드에서 렌더링할 수 있습니다. 다른 모델을 사용하는 경우 출력을 연결하지 않아야 하며, 그렇지 않으면 실행이 실패합니다.
-- `Seedance 2.5`에서는 출력 화면 비율이 항상 adaptive이며 첫 프레임 자체의 화면 비율을 따르므로 `ratio` 입력이 표시되지 않습니다.
+- `Seedance 2.5` 및 `Seedance 2.5 Flash`에서는 출력 화면 비율이 항상 adaptive이며 첫 프레임 자체의 화면 비율을 따르므로 `ratio` 입력이 표시되지 않습니다.
 - Seedance 2.0 제품군 모델과 로컬 프레임 이미지를 사용하는 경우, 생성 전에 이미지가 중앙 크롭되고 대상 출력 해상도와 비율에 맞게 크기 조정됩니다. `ratio`가 `adaptive`이면 입력 이미지에 가장 가까운 지원 비율이 사용됩니다.
 - 로컬 프레임 이미지는 지원되는 화면 비율과 치수에 대해 검증되며, 너무 큰 이미지는 축소됩니다.
 
@@ -77,4 +89,4 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `a0396690cd91dabe47ed65a51e05780c4f344afad222f30d6ab628240ea30469`
+**Source fingerprint (SHA-256):** `292e87f4cf2b7099ae63b708489f5fbbf47aa4f2dbb83b830d288bf307546d49`

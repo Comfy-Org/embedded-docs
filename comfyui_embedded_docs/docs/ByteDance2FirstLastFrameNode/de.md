@@ -8,7 +8,7 @@ Dieser Node generiert ein Video aus einem erforderlichen Bild des ersten Frames 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Seedance 2.5 für das neueste Modell, Videos bis zu 30 Sekunden und mp4-Ausgabe; Seedance 2.5 Draft für eine schnelle 480p-Vorschau, deren `draft_task_id`-Ausgabe das finale 1080p oder 4k-Video im Node ByteDance Seedance 2.5 Draft to Final Video rendert; Seedance 2.0 für maximale Qualität und 4k; Fast für Geschwindigkeitsoptimierung; Mini für die schnellste, kostengünstigste Generierung. Die Auswahl eines Modells blendet unten modellspezifische Eingaben ein. | DYNAMIC_COMBO | Ja | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `model` | Seedance 2.5 für das neueste Modell, Videos bis zu 30 Sekunden und mp4-Ausgabe; Seedance 2.5 Draft für eine schnelle 480p-Vorschau, deren `draft_task_id`-Ausgabe das finale 1080p oder 4k-Video im Node ByteDance Seedance 2.5 Draft to Final Video rendert; Seedance 2.5 Flash für 480p- und 720p-Videos bis 30 Sekunden; Seedance 2.0 für maximale Qualität und 4k; Fast für Geschwindigkeitsoptimierung; Mini für die schnellste, kostengünstigste Generierung. Die Auswahl eines Modells blendet unten modellspezifische Eingaben ein. | DYNAMIC_COMBO | Ja | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.5 Flash"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `first_frame` | Bild des ersten Frames für das Video. | IMAGE | Nein | - |
 | `last_frame` | Bild des letzten Frames für das Video. | IMAGE | Nein | - |
 | `first_frame_asset_id` | Seedance asset_id zur Verwendung als erster Frame. Schließt sich gegenseitig mit dem Bildeingang `first_frame` aus. Standard ist eine leere Zeichenkette. | STRING | Nein | - |
@@ -31,6 +31,18 @@ Diese Eingaben erscheinen, wenn `Seedance 2.5` ausgewählt ist.
 ### Seedance 2.5 Draft Eingaben
 
 Diese Eingaben erscheinen, wenn `Seedance 2.5 Draft` ausgewählt ist. Der Parametersatz entspricht dem obigen Seedance 2.5, außer dass `resolution` nur `"480p"` anbietet (Standard `"480p"`).
+
+### Seedance 2.5 Flash Eingaben
+
+Diese Eingaben erscheinen, wenn `Seedance 2.5 Flash` ausgewählt ist.
+
+| Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Text-Prompt für die Videogenerierung. Setzen Sie gesprochene Zeilen in doppelte Anführungszeichen, um den generierten Dialog zu steuern. | STRING | Ja | - |
+| `resolution` | Auflösung des Ausgabevideos. (Standard: `"720p"`) | COMBO | Ja | `"480p"`<br>`"720p"` |
+| `duration` | Dauer des Ausgabevideos in Sekunden (4-30). Standard ist 5. | INT | Ja | 4 bis 30 |
+| `generate_audio` | Audiogenerierung für das Ausgabevideo aktivieren. Standard ist True. | BOOLEAN | Ja | False<br>True |
+| `output_format` | Containerformat des Ausgabevideos. Standard ist mp4. | COMBO | Ja | `"mp4"` |
 
 ### Seedance 2.0 Eingaben
 
@@ -63,7 +75,7 @@ Gemeinsam verwendet von `Seedance 2.0 Fast` und `Seedance 2.0 Mini`.
 - Asset-IDs müssen auf vorhandene, aktive Seedance Image-Assets verweisen.
 - Die Eingabe `prompt` ist erforderlich und darf nicht leer sein.
 - Jeder Lauf gibt seine Task-ID als `draft_task_id` zurück, aber nur die ID eines Laufs mit `Seedance 2.5 Draft` kann vom Node ByteDance Seedance 2.5 Draft to Final Video gerendert werden. Bei jedem anderen Modell muss die Ausgabe unverbunden bleiben, andernfalls schlägt der Lauf fehl.
-- Bei `Seedance 2.5` ist das Seitenverhältnis der Ausgabe immer adaptiv und folgt dem eigenen Seitenverhältnis des ersten Frames, daher wird keine Eingabe `ratio` angezeigt.
+- Bei `Seedance 2.5` und `Seedance 2.5 Flash` ist das Seitenverhältnis der Ausgabe immer adaptiv und folgt dem eigenen Seitenverhältnis des ersten Frames, daher wird keine Eingabe `ratio` angezeigt.
 - Bei Modellen der Seedance 2.0-Familie und lokalen Frame-Bildern werden die Bilder vor der Generierung mittig zugeschnitten und auf die Zielauflösung und das Zielseitenverhältnis der Ausgabe skaliert. Wenn `ratio` `adaptive` ist, wird das nächstgelegene unterstützte Seitenverhältnis zum Eingabebild verwendet.
 - Lokale Frame-Bilder werden auf unterstütztes Seitenverhältnis und unterstützte Abmessungen validiert; übergroße Bilder werden herunterskaliert.
 
@@ -77,4 +89,4 @@ Gemeinsam verwendet von `Seedance 2.0 Fast` und `Seedance 2.0 Mini`.
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `a0396690cd91dabe47ed65a51e05780c4f344afad222f30d6ab628240ea30469`
+**Source fingerprint (SHA-256):** `292e87f4cf2b7099ae63b708489f5fbbf47aa4f2dbb83b830d288bf307546d49`

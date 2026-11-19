@@ -1,7 +1,5 @@
 # Luma Imagen a Imagen
 
-Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
-
 Modifica imágenes de forma síncrona basándose en un prompt de texto y la relación de aspecto de la imagen original. Este nodo toma una imagen de entrada y la transforma de acuerdo con el prompt proporcionado, utilizando un peso de imagen configurable para controlar cuánto se altera la imagen original.
 
 ## Entradas

@@ -22,7 +22,7 @@ Bu girdiler, `model` `"kling-4.0"` olarak ayarlandığında görünür.
 | `last_frame` | Videonun bittiği isteğe bağlı kare. Referans görüntülerle birlikte 10 görüntü sınırına dahildir. | IMAGE | Hayır | - |
 | `prompt` | Oluşturulacak videonun açıklaması. Girdilere `@Image1`, `@Image2` ve benzeri ile `@Video1`, `@Video2` ve benzeri şekilde atıfta bulunun. | STRING | Evet | 1 ile 26000 karakter arası |
 | `resolution` | Çıktı videosunun çözünürlüğü. Varsayılan: `"720p"`. | COMBO | Evet | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Çıktı videosunun en-boy oranı. `"adaptive"` önce istemi, ardından ilk kareyi veya referans videoları takip eder; aksi durumda 16:9'a geri döner. Varsayılan: `"adaptive"`. | COMBO | Evet | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Çıktı videosunun en-boy oranı. `"adaptive"` önce istemi, ardından ilk kareyi veya referans videoları takip eder; aksi durumda 16:9'a geri döner. Varsayılan: `"adaptive"`. | COMBO | Evet | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Oluşturulan videonun saniye cinsinden uzunluğu. Varsayılan: 5. | INT | Evet | 3 ile 30 arası |
 | `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Evet | 0 ile 2147483647 arası |
 
@@ -37,7 +37,7 @@ Bu girdiler, `model` `"kling-4.0-flash"` olarak ayarlandığında görünür.
 | `first_frame` | Videonun başladığı isteğe bağlı kare. Referans görüntülerle birlikte 10 görüntü sınırına dahildir. | IMAGE | Hayır | - |
 | `prompt` | Oluşturulacak videonun açıklaması. Girdilere `@Image1`, `@Image2` ve benzeri ile `@Video1`, `@Video2` ve benzeri şekilde atıfta bulunun. | STRING | Evet | 1 ile 26000 karakter arası |
 | `resolution` | Çıktı videosunun çözünürlüğü. Flash yalnızca 720p oluşturur. Varsayılan: `"720p"`. | COMBO | Evet | `"720p"` |
-| `aspect_ratio` | Çıktı videosunun en-boy oranı. `"adaptive"` önce istemi, ardından ilk kareyi veya referans videoları takip eder; aksi durumda 16:9'a geri döner. Varsayılan: `"adaptive"`. | COMBO | Evet | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"` |
+| `aspect_ratio` | Çıktı videosunun en-boy oranı. `"adaptive"` önce istemi, ardından ilk kareyi veya referans videoları takip eder; aksi durumda 16:9'a geri döner. Varsayılan: `"adaptive"`. | COMBO | Evet | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"21:9"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Oluşturulan videonun saniye cinsinden uzunluğu. Varsayılan: 5. | INT | Evet | 3 ile 20 arası |
 | `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Evet | 0 ile 2147483647 arası |
 

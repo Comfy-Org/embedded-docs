@@ -1,6 +1,6 @@
 # Bria Rimuovi Sfondo Immagine
 
-Questo nodo rimuove lo sfondo da un'immagine utilizzando il servizio Bria RMBG 2.0. Invia l'immagine a un'API esterna per l'elaborazione e restituisce il risultato con lo sfondo rimosso.
+Questo nodo rimuove lo sfondo da un'immagine utilizzando il servizio Bria RMBG 2.0 o RMBG 3.0. Invia l'immagine a un'API esterna per l'elaborazione e restituisce il risultato con lo sfondo rimosso.
 
 ## Input
 
@@ -12,7 +12,8 @@ Il selettore `moderation` mostra ulteriori opzioni di moderazione quando è impo
 |-----------|-------------|--------------|--------------|------------|
 | `image` | L'immagine di input da cui verrà rimosso lo sfondo. | IMAGE | Sì | - |
 | `moderation` | Impostazioni di moderazione. Se impostato su `"true"`, diventano disponibili ulteriori opzioni di moderazione. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
-| `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: `0`. | INT | Sì | 0 a 2147483647 |
+| `seed` | Il seed controlla se il nodo deve essere rieseguito; la stessa immagine dà sempre lo stesso risultato indipendentemente dal seed. Predefinito: `0`. | INT | Sì | 0 a 2147483647 |
+| `model` | Modello di rimozione dello sfondo. `"RMBG2"` è il predefinito; `"RMBG3"` usa il modello più recente Bria RMBG 3.0. | COMBO | No | `"RMBG2"`<br>`"RMBG3"` |
 
 ### Input per moderazione "true"
 
@@ -34,4 +35,4 @@ Questi parametri compaiono solo quando `moderation` è impostato su `"true"`. L'
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaRemoveImageBackground/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `f62dcd5c9406ec09f5aab44585dd7f25ae0f7d9a934faa10a58e46ef116df110`
+**Source fingerprint (SHA-256):** `82f7ec2ac2d1579a3da009b464bce7c56fa2d7b1f599744d6158177ecd462cb2`
