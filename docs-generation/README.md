@@ -6,7 +6,7 @@ This directory contains the automation pipeline that keeps
 the ComfyUI source code.
 
 The pipeline scans the ComfyUI codebase for new/changed nodes, generates and
-translates node documentation into 11 languages, and publishes it.
+translates node documentation into 14 languages, and publishes it.
 
 ## Layout
 
@@ -17,7 +17,7 @@ docs-generation/
 │   ├── scan_missing_nodes.py   # Scan ComfyUI source: find new/changed nodes
 │   ├── prepare_ai_input.py     # Build AI input bundles (source + meta + prompt)
 │   ├── batch_generate_docs.py  # Generate en.md via LLM
-│   ├── batch_translate_docs.py # Translate en.md → 11 languages via LLM
+│   ├── batch_translate_docs.py # Translate en.md → 14 languages via LLM
 │   ├── update_param_translations.py  # Sync parameter names from frontend i18n
 │   ├── sync_to_comfy_docs.py   # embedded-docs → Comfy-Org/docs (.mdx + docs.json)
 │   ├── sync_frontend_translations.py # Export frontend param translations
@@ -51,7 +51,7 @@ python3 main.py --mode changed
 # 3. Generate docs for new nodes
 python3 main.py --mode all --force
 
-# 4. Translate all languages (11 locales) + update param translations
+# 4. Translate all languages (14 locales) + update param translations
 python3 main.py --translate --all-languages --mode all
 
 # 5. Sync to Comfy-Org/docs (built-in-nodes .mdx + docs.json nav)
@@ -67,7 +67,7 @@ TARGET_DOCS=/path/to/comfy/docs python3 scripts/sync_to_comfy_docs.py --mode all
 | `scan_missing_nodes.py` | Scan ComfyUI source; report missing / changed / retired documentation. Discovery follows the registry ComfyUI actually builds: `NODE_CLASS_MAPPINGS` keys (aliases included, loop-built maps, `old_node_id=` renames excluded) and V3 `get_node_list` schemas whose `node_id` is spelled `node_id="X"`, `node_id=cls.NODE_ID`, `schema.node_id = "X"`, a schema-factory positional arg, or a `NodeId` class attribute. Doc folders are matched leniently (case/underscores/spaces ignored) and every leftover folder is classified `duplicate` / `renamed` / `non_backend` / `retired`. Frontend-only pages are listed in `config/non_backend_nodes.json`. Outputs to `data/`. |
 | `prepare_ai_input.py` | Build AI input bundles (source code + metadata + prompt) for new/changed nodes. |
 | `batch_generate_docs.py` | Generate `en.md` from AI input bundles via the configured LLM (OpenAI-compatible API). |
-| `batch_translate_docs.py` | Translate `en.md` into 11 languages (zh, zh-TW, es, fr, ja, ko, ru, ar, tr, pt-BR, fa). |
+| `batch_translate_docs.py` | Translate `en.md` into 14 languages (zh, zh-TW, es, fr, ja, ko, ru, ar, tr, pt-BR, fa, de, he, it). |
 | `update_param_translations.py` | Reconcile parameter/output name translations against the ComfyUI frontend i18n. |
 | `sync_frontend_translations.py` | Export the frontend's parameter translations for use by the above. |
 | `sync_to_comfy_docs.py` | Generate `built-in-nodes/*.mdx` + update `docs.json` navigation in a Comfy-Org/docs checkout. |
