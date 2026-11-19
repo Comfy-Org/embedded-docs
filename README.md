@@ -29,7 +29,7 @@ What that means when you contribute:
   Note what the default run does: `batch_translate_docs.py` skips a locale whose file already exists unless
   it is given `--force` (`process_node`, `docs-generation/scripts/batch_translate_docs.py:331-339`), so an
   edit to `en.md` does not by itself refresh the 14 existing files. A full refresh is
-  `python3 main.py --retranslate-all-languages` (equivalent to `--translate --all-languages --mode all
+  `python3 docs-generation/main.py --retranslate-all-languages` (equivalent to `--translate --all-languages --mode all
   --force --force-all-translation-nodes`), which re-translates every node that has an `en.md` and uses API
   quota.
 - **A value that is wrong in every locale** (a parameter name, a default, a command, a URL) is the
