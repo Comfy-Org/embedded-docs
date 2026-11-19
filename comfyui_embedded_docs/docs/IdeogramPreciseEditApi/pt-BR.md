@@ -44,7 +44,7 @@ A seleção de um `model` determina quais entradas aparecem. Ambos os modelos ed
 
 | Nome da saída | Descrição | Tipo de dados |
 |-------------|-------------|-----------|
-| `IMAGE` | A imagem editada como lote, no tamanho da imagem 1. | IMAGE |
+| `IMAGE` | A imagem editada como lote, no tamanho da imagem 1. Uma edição de imagem inteira no 4.6 volta menor quando a fonte passa de 16.7 MP ou 8192 pixels por lado. | IMAGE |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramPreciseEditApi/pt-BR.md)
 

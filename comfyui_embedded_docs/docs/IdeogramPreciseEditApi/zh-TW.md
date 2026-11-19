@@ -46,7 +46,7 @@
 
 | 輸出名稱 | 描述 | 資料類型 |
 |-------------|-------------|-----------|
-| `IMAGE` | 編輯後的影像，以批次形式回傳，尺寸為影像 1 的尺寸。 | IMAGE |
+| `IMAGE` | 編輯後的影像，以批次形式回傳，尺寸為影像 1 的尺寸。4.6 的整圖編輯在來源超過 16.7 MP 或每邊 8192 像素時會傳回較小的影像。 | IMAGE |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramPreciseEditApi/zh-TW.md)
 

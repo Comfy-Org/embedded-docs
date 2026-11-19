@@ -46,7 +46,7 @@ Die Auswahl eines `model` legt fest, welche Eingaben erscheinen. Beide Modelle b
 
 | Ausgabenamen | Beschreibung | Datentyp |
 |-------------|-------------|-----------|
-| `IMAGE` | Das bearbeitete Bild als Batch, in der Größe von Bild 1. | IMAGE |
+| `IMAGE` | Das bearbeitete Bild als Batch, in der Größe von Bild 1. Eine Ganzbild-Bearbeitung mit 4.6 kommt kleiner zurück, wenn die Quelle über 16.7 MP oder 8192 Pixel pro Seite liegt. | IMAGE |
 
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramPreciseEditApi/de.md)
 

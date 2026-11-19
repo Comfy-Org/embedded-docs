@@ -46,7 +46,7 @@ Bir `model` seçmek, hangi girdilerin görüneceğini belirler. Her iki model de
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `IMAGE` | Düzenlenmiş görüntü, toplu olarak, görsel 1'in boyutunda. | IMAGE |
+| `IMAGE` | Düzenlenmiş görüntü, toplu olarak, görsel 1'in boyutunda. 4.6'da tüm görüntü düzenlemesi, kaynak 16.7 MP veya kenar başına 8192 pikseli aşarsa daha küçük döner. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramPreciseEditApi/tr.md)
 

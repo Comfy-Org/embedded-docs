@@ -46,7 +46,7 @@ La selezione di un `model` determina quali input compaiono. Entrambi i modelli m
 
 | Nome output | Descrizione | Tipo di dati |
 |-------------|-------------|--------------|
-| `IMAGE` | L'immagine modificata come batch, alla dimensione dell'immagine 1. | IMAGE |
+| `IMAGE` | L'immagine modificata come batch, alla dimensione dell'immagine 1. Con 4.6 una modifica dell'intera immagine torna più piccola se la sorgente supera 16.7 MP o 8192 pixel per lato. | IMAGE |
 
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramPreciseEditApi/it.md)
 
