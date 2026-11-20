@@ -21,7 +21,7 @@ Compare the two groups below: the left side uses the ConditioningCombine node, w
 
 ![Compare](./asset/compare.jpg)
 
-In this example, the two conditions used in `Conditioning Combine` have equivalent importance. Therefore, you can use different text encodings for image style, subject features, etc., allowing the prompt features to be output more completely. The second prompt uses the combined complete prompt, but semantic understanding may encode completely different conditions.
+In this example, the two conditions used in `Conditioning Combine` carry equal weight. This lets you use separate text encodings for the image style, subject features, etc., ensuring each part of your prompt is captured more accurately. The second prompt uses the combined complete prompt, but semantic understanding may encode completely different conditions.
 
 Using this node, you can achieve:
 
