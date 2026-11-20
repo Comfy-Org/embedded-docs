@@ -6,7 +6,7 @@
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | وصف المادة أو النسيج المطلوب إنشاؤه. | STRING | نعم | Multiline text |
+| `prompt` | وصف المادة أو النسيج المطلوب إنشاؤه. | STRING | نعم | نص متعدد الأسطر |
 | `image_size` | حجم نسيج الإخراج. يؤدي اختيار `"custom"` إلى إظهار مدخلات `width` و`height`. الافتراضي: `"1:1 (1024x1024)"`. | DYNAMIC_COMBO | نعم | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
 | `basecolor` | إنشاء خريطة basecolor (albedo). الافتراضي: True. | BOOLEAN | نعم | true<br>false |
 | `normal` | إنشاء خريطة normal. الافتراضي: True. | BOOLEAN | نعم | true<br>false |

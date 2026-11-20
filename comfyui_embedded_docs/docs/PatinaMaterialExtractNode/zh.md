@@ -7,7 +7,7 @@
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
 | `image` | 要从其提取纹理的图像。 | IMAGE | 是 | - |
-| `prompt` | 描述要从图像中提取哪种纹理，例如 `"the wall"`。 | STRING | 是 | Multiline text |
+| `prompt` | 描述要从图像中提取哪种纹理，例如 `"the wall"`。 | STRING | 是 | 多行文本 |
 | `image_size` | 输出纹理尺寸。`"custom"` 会显示 `width` 和 `height` 输入。默认：`"1:1 (1024x1024)"`。 | DYNAMIC_COMBO | 是 | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
 | `basecolor` | 生成 basecolor（albedo）贴图。默认：True。 | BOOLEAN | 是 | true<br>false |
 | `normal` | 生成法线贴图。默认：True。 | BOOLEAN | 是 | true<br>false |

@@ -6,7 +6,7 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | 생성할 머티리얼 또는 텍스처에 대한 설명입니다. | STRING | 예 | Multiline text |
+| `prompt` | 생성할 머티리얼 또는 텍스처에 대한 설명입니다. | STRING | 예 | 여러 줄 텍스트 |
 | `image_size` | 출력 텍스처 크기입니다. `"custom"`을 선택하면 `width` 및 `height` 입력이 나타납니다. 기본값: `"1:1 (1024x1024)"`. | DYNAMIC_COMBO | 예 | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
 | `basecolor` | basecolor(albedo) 맵을 생성합니다. 기본값: True. | BOOLEAN | 예 | true<br>false |
 | `normal` | normal 맵을 생성합니다. 기본값: True. | BOOLEAN | 예 | true<br>false |
