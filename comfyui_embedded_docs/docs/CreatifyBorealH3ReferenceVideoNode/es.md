@@ -1,6 +1,6 @@
 # Creatify Boreal-H3 Reference to Video
 
-Creatify Boreal-H3 Reference to Video genera un video con sonido guiado por imágenes, videos y audio de referencia, usando el modelo H3 post-entrenado de Creatify diseñado para anuncios de video. Nombra las referencias en el prompt como `@Image1`, `@Video1` y `@Audio1` para controlar lo que aporta cada una.
+Creatify Boreal-H3 Reference to Video genera un video con sonido guiado por imágenes, videos y audio de referencia, usando el modelo H3 postentrenado de Creatify diseñado para anuncios de video. Nombra las referencias en el prompt como `@Image1`, `@Video1` y `@Audio1` para controlar lo que aporta cada una.
 
 ## Entradas
 
@@ -8,15 +8,15 @@ Creatify Boreal-H3 Reference to Video genera un video con sonido guiado por imá
 |-----------|-------------|---------------|-------------|-------|
 | `reference_images` | Ranura ampliable para hasta 9 imágenes de referencia (`image_1` ... `image_9`), a las que se hace referencia en el prompt como `@Image1` ... `@Image9` en el orden de conexión. Se requiere al menos una imagen o un video, y como máximo 12 referencias en total. | IMAGE | No | Hasta 9 imágenes |
 | `reference_videos` | Ranura ampliable para hasta 3 videos de referencia (`video_1` ... `video_3`), cada uno de al menos 1 segundo de duración. Su sonido se reutiliza cuando el prompt pide continuarlo; una nueva línea en el prompt lo reemplaza. Se facturan como máximo 15 segundos de video de referencia en total. | VIDEO | No | Hasta 3 videos |
-| `reference_audios` | Ranura ampliable para hasta 3 clips de referencia (`audio_1` ... `audio_3`). El habla guía la voz en lugar de las palabras, y la música instrumental puede convertirse en la banda sonora. | AUDIO | No | Hasta 3 clips |
+| `reference_audios` | Ranura ampliable para hasta 3 clips de referencia (`audio_1` ... `audio_3`). El habla guía la voz más que las palabras, y la música instrumental puede convertirse en la banda sonora. | AUDIO | No | Hasta 3 clips |
 | `prompt` | Prompt de texto que describe el video y hace referencia a las referencias conectadas. Debe contener al menos un carácter que no sea un espacio en blanco. | STRING | Sí | Cualquier texto no vacío |
 | `resolution` | Resolución del video de salida (predeterminado: `"768p"`). | COMBO | Sí | `"768p"`<br>`"1088p"`<br>`"2k"` |
-| `aspect_ratio` | Relación de aspecto del video de salida. `"auto"` sigue la primera imagen de referencia, o el primer video de referencia cuando no hay ninguna imagen conectada (predeterminado: `"auto"`). | COMBO | Sí | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
-| `duration` | Duración del video en segundos (predeterminado: 5). Con `"2k"`, el máximo es 14 segundos. | INT | Sí | 1 a 15 (paso 1) |
-| `prompt_enhancement` | Cómo reescribe Creatify el prompt antes de renderizar: `"auto"` y `"ads"` lo convierten en un prompt de anuncio de video y pueden añadir líneas habladas; `"general"` lo reescribe para cualquier otro video; `"none"` lo renderiza tal como se escribió (predeterminado: `"auto"`). | COMBO | Sí | `"auto"`<br>`"ads"`<br>`"general"`<br>`"none"` |
-| `seed` | La semilla controla si el nodo se vuelve a ejecutar. Creatify elige su propia aleatoriedad, por lo que las mismas entradas producen el mismo video solo con `prompt_enhancement` establecido en `"none"` (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
+| `aspect_ratio` | Relación de aspecto del video de salida. `"auto"` sigue la primera imagen de referencia. Con solo videos de referencia en `"1088p"`, el nodo elige la relación compatible más cercana al primer video, que puede diferir de su relación exacta; en otras resoluciones, `"auto"` se pasa a Creatify tal cual (predeterminado: `"auto"`). | COMBO | Sí | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
+| `duration` | Duración del video en segundos (predeterminado: 5). En `"2k"` el máximo es de 14 segundos. | INT | Sí | 1 a 15 (paso 1) |
+| `prompt_enhancement` | Cómo reescribe Creatify el prompt antes de renderizar: `"auto"` y `"ads"` lo convierten en un prompt de anuncio de video y pueden añadir líneas habladas; `"general"` lo reescribe para cualquier otro tipo de video; `"none"` lo renderiza tal como se escribió (predeterminado: `"auto"`). | COMBO | Sí | `"auto"`<br>`"ads"`<br>`"general"`<br>`"none"` |
+| `seed` | La semilla controla si el nodo se vuelve a ejecutar. A Boreal-H3 no se le envía ninguna semilla, por lo que volver a ejecutarlo con las mismas entradas puede producir un video diferente (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
 
-**Restricciones:** conecte al menos una imagen o un video de referencia; el audio por sí solo no se acepta. Una etiqueta de referencia que apunte más allá del número de referencias conectadas de ese tipo genera un error, y también lo hace tener más de 12 referencias en total. Con `"1088p"` y `"auto"` y sin imagen de referencia, la relación de aspecto se toma del primer video de referencia.
+**Restricciones:** conecta al menos una imagen o un video de referencia; el audio por sí solo no se acepta. Una etiqueta de referencia que apunte más allá del número de referencias conectadas de ese tipo genera un error, y también más de 12 referencias en total. Con `"1088p"` y `"auto"` y sin imagen de referencia, la relación de aspecto se toma del primer video de referencia.
 
 ## Salidas
 
