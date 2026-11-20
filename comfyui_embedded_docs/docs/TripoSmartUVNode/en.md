@@ -16,8 +16,8 @@ Tripo: Smart UV re-unwraps the UVs of a model and remaps its textures, rig and a
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
 | `model task_id` | Task ID of the finished UV task. Can be passed to other Tripo nodes, for example Tripo: Texture. | MODEL_TASK_ID |
-| `GLB` | The re-unwrapped model in GLB format. Empty when the source model is FBX. | GLB FILE |
-| `FBX` | The re-unwrapped model in FBX format. Only populated when the source model is FBX, for example a quad mesh. | FBX FILE |
+| `GLB` | The re-unwrapped model in GLB format. Empty when the source model is FBX. | FILE_3D_GLB |
+| `FBX` | The re-unwrapped model in FBX format. Only populated when the source model is FBX, for example a quad mesh. | FILE_3D_FBX |
 | `UV atlas` | The rendered UV layout of the model as an image. | IMAGE |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoSmartUVNode/en.md)

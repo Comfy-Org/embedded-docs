@@ -11,10 +11,10 @@ Creatify Boreal-H3 Reference to Video generates a video with sound guided by ref
 | `reference_audios` | Growable slot for up to 3 reference clips (`audio_1` ... `audio_3`). Speech guides the voice rather than the words, and instrumental music can become the soundtrack. | AUDIO | No | Up to 3 clips |
 | `prompt` | Text prompt that describes the video and refers to the connected references. Must contain at least one non-whitespace character. | STRING | Yes | Any non-empty text |
 | `resolution` | Resolution of the output video (default: `"768p"`). | COMBO | Yes | `"768p"`<br>`"1088p"`<br>`"2k"` |
-| `aspect_ratio` | Aspect ratio of the output video. `"auto"` follows the first reference image, or the first reference video when no image is connected (default: `"auto"`). | COMBO | Yes | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
+| `aspect_ratio` | Aspect ratio of the output video. `"auto"` follows the first reference image. With only reference videos at `"1088p"`, the node picks the closest supported ratio to the first video, which can differ from its exact ratio; at other resolutions `"auto"` is passed to Creatify as is (default: `"auto"`). | COMBO | Yes | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Length of the video in seconds (default: 5). At `"2k"` the maximum is 14 seconds. | INT | Yes | 1 to 15 (step 1) |
 | `prompt_enhancement` | How Creatify rewrites the prompt before rendering: `"auto"` and `"ads"` turn it into a video-ad prompt and can add spoken lines, `"general"` rewrites it for any other video, `"none"` renders it as written (default: `"auto"`). | COMBO | Yes | `"auto"`<br>`"ads"`<br>`"general"`<br>`"none"` |
-| `seed` | Seed controls whether the node re-runs. Creatify picks its own randomness, so the same inputs give the same video only with `prompt_enhancement` set to `"none"` (default: 42). | INT | Yes | 0 to 2147483647 |
+| `seed` | Seed controls whether the node re-runs. Boreal-H3 is sent no seed, so re-running with the same inputs can produce a different video (default: 42). | INT | Yes | 0 to 2147483647 |
 
 **Constraints:** connect at least one reference image or video; audio alone is not accepted. A reference tag that points past the number of connected references of that kind raises an error, and so does more than 12 references in total. With `"1088p"` and `"auto"` and no reference image, the aspect ratio is taken from the first reference video.
 

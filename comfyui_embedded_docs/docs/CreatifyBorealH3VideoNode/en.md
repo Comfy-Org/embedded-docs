@@ -13,7 +13,7 @@ Creatify Boreal-H3 Video turns a text prompt into a video with sound, using Crea
 | `aspect_ratio` | Aspect ratio of the output video. `"auto"` follows the first frame when one is connected; leave it on `"auto"` in that case (default: `"auto"`). | COMBO | Yes | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | Length of the video in seconds (default: 5). At `"2k"` the maximum is 14 seconds. | INT | Yes | 1 to 15 (step 1) |
 | `prompt_enhancement` | How Creatify rewrites the prompt before rendering: `"auto"` and `"ads"` turn it into a video-ad prompt and can add spoken lines, `"general"` rewrites it for any other video, `"none"` renders it as written (default: `"auto"`). | COMBO | Yes | `"auto"`<br>`"ads"`<br>`"general"`<br>`"none"` |
-| `seed` | Seed controls whether the node re-runs. Creatify picks its own randomness, so the same inputs give the same video only with `prompt_enhancement` set to `"none"` (default: 42). | INT | Yes | 0 to 2147483647 |
+| `seed` | Seed controls whether the node re-runs. Boreal-H3 is sent no seed, so re-running with the same inputs can produce a different video (default: 42). | INT | Yes | 0 to 2147483647 |
 
 **Constraints:** with a `first_frame` the aspect ratio always comes from the image, so any other `aspect_ratio` value raises an error. A `last_frame` without a `first_frame` is rejected, and `duration` above 14 seconds is rejected at `"2k"`.
 

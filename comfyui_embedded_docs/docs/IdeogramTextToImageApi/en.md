@@ -13,7 +13,7 @@ Selecting a `model` determines which inputs appear. Ideogram 4.6 adds `backgroun
 | `model` | Model to use. `"ideogram-4.6"` renders up to 4K with an optional transparent background; `"ideogram-4.5"` is the earlier model (default: `"ideogram-4.6"`). | DYNAMIC_COMBO | Yes | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
 | `prompt` | Text prompt, or an Ideogram structured JSON caption such as a previous `final_prompt` (default: empty string). | STRING | Yes | 1 to 10000 characters |
 | `magic_prompt` | Rewrites the prompt into a detailed structured caption before generating; `"off"` keeps your wording as literal as possible. The caption is returned as `final_prompt` (default: `"auto"`). This is an advanced setting. | COMBO | Yes | `"auto"`<br>`"on"`<br>`"off"` |
-| `seed` | Seed for generation. Text-to-image is not reproducible from the seed alone because the prompt is rewritten on every run; to reproduce an image, reuse its `final_prompt` with `magic_prompt` set to `"off"` and the same seed (default: 42). | INT | Yes | 0 to 2147483647 |
+| `seed` | Seed for generation. Text-to-image is not reproducible from the seed alone because the prompt is rewritten on every run; to reproduce an image, reuse its `final_prompt` with `magic_prompt` set to `"off"`, the same seed and the same model, size, quality and background settings (default: 42). | INT | Yes | 0 to 2147483647 |
 
 ### Ideogram 4.6 Inputs
 
@@ -45,7 +45,7 @@ Selecting a `model` determines which inputs appear. Ideogram 4.6 adds `backgroun
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
 | `IMAGE` | The generated image as a batch. | IMAGE |
-| `final_prompt` | The structured caption the image was generated from. Feed it back with `magic_prompt` set to `"off"` and the same seed to reproduce the image. | STRING |
+| `final_prompt` | The structured caption the image was generated from. Feed it back with `magic_prompt` set to `"off"` and the same seed, model, size, quality and background to reproduce the image. | STRING |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramTextToImageApi/en.md)
 
