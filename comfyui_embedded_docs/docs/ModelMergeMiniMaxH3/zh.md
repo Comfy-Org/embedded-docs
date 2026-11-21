@@ -1,31 +1,31 @@
 # Model Merge MiniMax H3
 
-此节点按组件合并两个兼容的 MiniMax H3 模型，并可分别为架构中的每个部分设置独立的混合比例。提高某个比例会使该组件更多地取自 `model2`，因此你可以保留其中一个模型的 patch 投影和细化模块，同时用另一个模型替换 transformer 模块。
+通过按组件合并两个兼容的 MiniMax H3 模型，可为架构的每个部分单独设置比例。每个比例都是 `model1` 所占的份额，因此你可以保留一个模型的 patch 投影和细化块，同时用另一个模型替换 transformer 块。
 
 ## 输入
 
-| Parameter | Description | Data Type | Required | Range |
+| 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model1` | 第一个 MiniMax H3 模型，作为基础模型，所有组件都取自它（在未使用 `model2` 的地方应用默认权重）。 | MODEL | 是 | - |
-| `model2` | 第二个 MiniMax H3 模型，提供你要混入的组件。 | MODEL | 是 | - |
-| `video_patch_proj.` | 视频 patch 投影取自 `model2` 的比例（默认值：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
-| `audio_patch_proj.` | 音频 patch 投影取自 `model2` 的比例（默认值：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
-| `condition_proj.` | 条件投影取自 `model2` 的比例（默认值：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
-| `time_embedder.` | 时间嵌入器取自 `model2` 的比例（默认值：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
-| `token_refiner.blocks.0.` | 第一个 token 细化块取自 `model2` 的比例（默认值：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
-| `token_refiner.blocks.1.` | 第二个 token 细化块取自 `model2` 的比例（默认值：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
-| `token_refiner.final_norm.` | token 细化器最终归一化取自 `model2` 的比例（默认值：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
-| `blocks.0.` 到 `blocks.49.` | 50 个 transformer 块中每个块取自 `model2` 的比例，每个块对应一个控件（默认值：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
-| `final_layer.norm.` | 最终层归一化取自 `model2` 的比例（默认值：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
-| `final_layer.adaln_proj.` | 最终自适应归一化投影取自 `model2` 的比例（默认值：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
-| `final_layer.video_out.` | 视频输出层取自 `model2` 的比例（默认值：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
-| `final_layer.audio_out.` | 音频输出层取自 `model2` 的比例（默认值：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
+| `model1` | 第一个 MiniMax H3 模型。每个组件都从它开始，每个比例决定该组件中有多少改由 `model2` 提供。 | MODEL | 是 | - |
+| `model2` | 第二个 MiniMax H3 模型，提供你要混合进来的组件。 | MODEL | 是 | - |
+| `video_patch_proj.` | 视频 patch 投影中 `model1` 的份额（默认：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
+| `audio_patch_proj.` | 音频 patch 投影中 `model1` 的份额（默认：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
+| `condition_proj.` | 条件投影中 `model1` 的份额（默认：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
+| `time_embedder.` | 时间嵌入器中 `model1` 的份额（默认：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
+| `token_refiner.blocks.0.` | 第一个 token 细化块中 `model1` 的份额（默认：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
+| `token_refiner.blocks.1.` | 第二个 token 细化块中 `model1` 的份额（默认：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
+| `token_refiner.final_norm.` | token 细化器最终归一化中 `model1` 的份额（默认：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
+| `blocks.0.` 到 `blocks.49.` | 50 个 transformer 块各自中 `model1` 的份额，每个块对应一个控件（默认：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
+| `final_layer.norm.` | 最终层归一化中 `model1` 的份额（默认：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
+| `final_layer.adaln_proj.` | 最终自适应归一化投影中 `model1` 的份额（默认：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
+| `final_layer.video_out.` | 视频输出层中 `model1` 的份额（默认：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
+| `final_layer.audio_out.` | 音频输出层中 `model1` 的份额（默认：1.0）。 | FLOAT | 是 | 0.0 到 1.0（步长：0.01） |
 
-比例为 0.0 时该组件完全取自 `model1`，为 1.0 时完全取自 `model2`；介于两者之间的数值会对两个模型进行混合。不带比例的张量（例如归一化统计量）始终来自 `model1`。两个输入必须都是架构相同的 MiniMax H3 模型，否则合并生成的模型将无法运行。
+比例为 1.0（默认值）表示该组件完全取自 `model1`，0.0 表示完全取自 `model2`；介于两者之间的值则混合二者。不带比例的张量（例如归一化统计量）始终取自 `model1`。两个输入都必须是架构相同的 MiniMax H3 模型，否则合并生成的模型将无法运行。
 
 ## 输出
 
-| Output Name | Description | Data Type |
+| 输出名 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
 | `MODEL` | 合并后的 MiniMax H3 模型。 | MODEL |
 
