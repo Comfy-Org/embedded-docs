@@ -1,6 +1,6 @@
 # Google Gemini Decision (Score)
 
-Rate the text, images, audio or video you connect from 1 to 10, and get the score plus a boolean that flips at a threshold you set. Use it to filter or sort outputs, for example to keep only images that score at least 7, and connect `result` to an If/Else Switch node to act on it.
+Rate the text, images, audio or video you connect from 1 to 10, and get the score plus a boolean that flips at a threshold you set. Use it to filter or sort outputs, for example to keep only images that score at least 7, and connect `result` to an If/Else Switch node to act on it. One run scores what you connect as a whole, so filtering individual images means scoring them one at a time.
 
 ## Inputs
 
