@@ -7,7 +7,7 @@ Creatify Boreal-H3 Reference to Video, video reklamları için geliştirilmiş C
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|----------|--------|
 | `reference_images` | En fazla 9 referans görsel için büyütülebilir yuva (`image_1` ... `image_9`); bunlara prompt içinde bağlantı sırasına göre `@Image1` ... `@Image9` olarak başvurulur. En az bir görsel veya video gerekir ve toplamda en fazla 12 referans kullanılabilir. | IMAGE | Hayır | En fazla 9 görsel |
-| `reference_videos` | En fazla 3 referans video için büyütülebilir yuva (`video_1` ... `video_3`); her biri en az 1 saniye uzunluğundadır. Prompt bunu devam ettirmeyi istediğinde sesleri yeniden kullanılır; prompt içindeki yeni bir satır bunun yerini alır. Toplamda en fazla 15 saniyelik referans video faturalandırılır. | VIDEO | Hayır | En fazla 3 video |
+| `reference_videos` | En fazla 3 referans video için büyütülebilir yuva (`video_1` ... `video_3`); her biri en az 1 saniye uzunluğundadır. Prompt bunu devam ettirmeyi istediğinde sesleri yeniden kullanılır; prompt içindeki yeni bir replik bunun yerini alır. Toplamda en fazla 15 saniyelik referans video faturalandırılır. | VIDEO | Hayır | En fazla 3 video |
 | `reference_audios` | En fazla 3 referans klip için büyütülebilir yuva (`audio_1` ... `audio_3`). Konuşma, sözcükleri değil sesi yönlendirir ve enstrümantal müzik ses parçası hâline gelebilir. | AUDIO | Hayır | En fazla 3 klip |
 | `prompt` | Videoyu tanımlayan ve bağlı referanslara atıfta bulunan metin istemi. En az bir boşluk dışı karakter içermelidir. | STRING | Evet | Boş olmayan herhangi bir metin |
 | `resolution` | Çıktı videosunun çözünürlüğü (varsayılan: `"768p"`). | COMBO | Evet | `"768p"`<br>`"1088p"`<br>`"2k"` |
