@@ -1,27 +1,27 @@
 # Model Merge MiniMax H3
 
-Merge two compatible MiniMax H3 models by component, with a separate ratio for each part of the architecture. Raising a ratio takes more of that component from `model2`, so you can keep the patch projections and refinement blocks of one model while replacing the transformer blocks with another.
+Merge two compatible MiniMax H3 models by component, with a separate ratio for each part of the architecture. Each ratio is the share of `model1`, so you can keep the patch projections and refinement blocks of one model while replacing the transformer blocks with another.
 
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model1` | First MiniMax H3 model, the base that every component is taken from (default weight applies where `model2` is not used). | MODEL | Yes | - |
+| `model1` | First MiniMax H3 model. Every component starts from it, and each ratio decides how much of that component comes from `model2` instead. | MODEL | Yes | - |
 | `model2` | Second MiniMax H3 model that supplies the components you blend in. | MODEL | Yes | - |
-| `video_patch_proj.` | Share of `model2` for the video patch projection (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
-| `audio_patch_proj.` | Share of `model2` for the audio patch projection (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
-| `condition_proj.` | Share of `model2` for the conditioning projection (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
-| `time_embedder.` | Share of `model2` for the time embedder (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
-| `token_refiner.blocks.0.` | Share of `model2` for the first token refiner block (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
-| `token_refiner.blocks.1.` | Share of `model2` for the second token refiner block (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
-| `token_refiner.final_norm.` | Share of `model2` for the token refiner final normalization (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
-| `blocks.0.` through `blocks.49.` | Share of `model2` for each of the 50 transformer blocks, one widget per block (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
-| `final_layer.norm.` | Share of `model2` for the final layer normalization (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
-| `final_layer.adaln_proj.` | Share of `model2` for the final adaptive normalization projection (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
-| `final_layer.video_out.` | Share of `model2` for the video output layer (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
-| `final_layer.audio_out.` | Share of `model2` for the audio output layer (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
+| `video_patch_proj.` | Share of `model1` for the video patch projection (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
+| `audio_patch_proj.` | Share of `model1` for the audio patch projection (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
+| `condition_proj.` | Share of `model1` for the conditioning projection (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
+| `time_embedder.` | Share of `model1` for the time embedder (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
+| `token_refiner.blocks.0.` | Share of `model1` for the first token refiner block (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
+| `token_refiner.blocks.1.` | Share of `model1` for the second token refiner block (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
+| `token_refiner.final_norm.` | Share of `model1` for the token refiner final normalization (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
+| `blocks.0.` through `blocks.49.` | Share of `model1` for each of the 50 transformer blocks, one widget per block (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
+| `final_layer.norm.` | Share of `model1` for the final layer normalization (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
+| `final_layer.adaln_proj.` | Share of `model1` for the final adaptive normalization projection (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
+| `final_layer.video_out.` | Share of `model1` for the video output layer (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
+| `final_layer.audio_out.` | Share of `model1` for the audio output layer (default: 1.0). | FLOAT | Yes | 0.0 to 1.0 (step: 0.01) |
 
-A ratio of 0.0 keeps that component entirely from `model1` and 1.0 takes it entirely from `model2`; values in between blend the two. Tensors that carry no ratio, such as normalization statistics, always come from `model1`. Both inputs must be MiniMax H3 models with the same architecture, otherwise the merge produces a model that does not run.
+A ratio of 1.0 (the default) keeps that component entirely from `model1` and 0.0 takes it entirely from `model2`; values in between blend the two. Tensors that carry no ratio, such as normalization statistics, always come from `model1`. Both inputs must be MiniMax H3 models with the same architecture, otherwise the merge produces a model that does not run.
 
 ## Outputs
 

@@ -2,7 +2,7 @@
 
 Tripo: Smart UV re-unwraps the UVs of a model and remaps its textures, rig and animation onto the new layout. Use it when a model's original UV layout is unusable, for example after retopology or when texture seams need to be redone. The input model must not exceed 80,000 triangles (a quad counts as two), so reduce larger models with Tripo: Retopology or a `face_limit` first.
 
-> **Note:** Tripo keeps task records on its servers for 7 days (effective December 1, 2026). A task ID older than that can no longer be resolved, so rerunning a saved workflow after the window fails at this node. Run the earlier Tripo node again to create a fresh task ID, or re-import the downloaded model with **Tripo: Import Model**.
+> **Note:** Tripo keeps task records on its servers for 7 days (effective December 1, 2026). A task ID older than that can no longer be resolved, so rerunning a saved workflow after the window fails at this node. Rerun the upstream Tripo nodes that produced the task, or re-import a downloaded model with **Tripo: Import Model**. Download the model before the window closes: an expired asset cannot be recovered from the task record.
 
 ## Inputs
 

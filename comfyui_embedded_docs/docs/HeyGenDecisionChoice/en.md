@@ -1,6 +1,6 @@
 # HeyGen Decision (Choice)
 
-Pick one of your own options for the text, images, audio or video you connect, and get back the chosen option, its position and a confidence. Connect `choice` to a Branch node whose inputs carry the same option names, or route on `option_index`.
+Pick one of your own options for the text, images, audio or video you connect, and get back the chosen option, its position and a confidence. Connect `choice` to a Branch node whose inputs carry the same option names, or route on `option_index`. A Branch node accepts at most 32 inputs, so route larger option sets with `option_index`.
 
 ## Inputs
 

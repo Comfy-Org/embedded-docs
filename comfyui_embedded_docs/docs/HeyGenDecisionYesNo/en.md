@@ -20,8 +20,8 @@ Connect at least one of `text`, `images`, `audio_1` or `video_1`, and refer to t
 
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
-| `result` | The answer as a boolean: true for "yes", false for "no". | BOOLEAN |
-| `answer` | The answer as the string `"yes"` or `"no"`. | STRING |
+| `result` | True when the probability of "yes" reaches `threshold`, false otherwise. | BOOLEAN |
+| `answer` | The verdict as the string `"yes"` or `"no"`, following the same `threshold` as `result`. | STRING |
 | `probability` | Probability of "yes" between 0 and 1. | FLOAT |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenDecisionYesNo/en.md)

@@ -14,14 +14,14 @@ Ask a yes/no question about the text, images, audio or video you connect and get
 | `video` | Video clip to ask about. | VIDEO | No | - |
 | `text` | Text the question is about, such as a prompt or an LLM response, up to 20000 characters. | STRING | No | Up to 20000 characters |
 
-Connect at least one of `text`, `images`, `audio` or `video`; the node raises an error when there is nothing to look at. With several images, name them `image_1`, `image_2` and so on inside the question.
+Connect at least one of `text`, `images`, `audio` or `video`; the node raises an error when there is nothing to look at. With several images, name them `image_1`, `image_2` and so on inside the question: a batch is expanded frame by frame, so the numbers count individual frames across the slots in connection order.
 
 ## Outputs
 
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
-| `result` | The answer as a boolean: true for "yes", false for "no". | BOOLEAN |
-| `answer` | The answer as the string `"yes"` or `"no"`. | STRING |
+| `result` | True when the probability of "yes" reaches `threshold`, false otherwise. | BOOLEAN |
+| `answer` | The verdict as the string `"yes"` or `"no"`, following the same `threshold` as `result`. | STRING |
 | `probability` | Probability of "yes" between 0 and 1. | FLOAT |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiDecisionYesNo/en.md)

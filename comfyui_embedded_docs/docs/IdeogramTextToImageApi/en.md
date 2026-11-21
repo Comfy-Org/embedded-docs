@@ -35,8 +35,8 @@ Selecting a `model` determines which inputs appear. Ideogram 4.6 adds `backgroun
 ### Parameter Constraints
 
 - **Prompt:** at least one non-whitespace character and at most 10000 characters. Set `magic_prompt` to `"off"` when supplying your own JSON caption.
-- **Custom size (4.6):** width times height must not exceed 16.7 MP (4096x4096), each side must be between 256 and 8192 and snapped to a multiple of 32, and the longer side must not exceed 6x the shorter side.
-- **`very_low` quality (4.6):** limited to 4 MP (2048x2048); larger sizes raise an error.
+- **Custom size (4.6):** width times height must not exceed 16,777,216 pixels (4096x4096), each side must be between 256 and 8192 and snapped to a multiple of 32, and the longer side must not exceed 6x the shorter side.
+- **`very_low` quality (4.6):** limited to 4,194,304 pixels (2048x2048); larger sizes raise an error.
 - **Reproducibility:** with `magic_prompt` set to `"auto"` or `"on"` the prompt is rewritten on every run, so the same seed can produce a different image.
 - **Content safety:** if Ideogram's content safety filter blocks the generation, the node raises an error instead of returning an image.
 
