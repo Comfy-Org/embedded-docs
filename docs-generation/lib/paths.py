@@ -47,6 +47,15 @@ def embedded_docs_dir() -> Path:
 
 
 def load_dotenv() -> None:
-    from dotenv import load_dotenv as _load
+    """Load .env when python-dotenv is installed.
+
+    CI runners (and the doc checkers) do not need .env at all, so a missing
+    dependency must not break an import: the scripts that do need API keys call
+    this explicitly and will still fail loudly on a real misconfiguration.
+    """
+    try:
+        from dotenv import load_dotenv as _load
+    except ModuleNotFoundError:  # no python-dotenv in this environment
+        return
 
     _load(ENV_FILE)
