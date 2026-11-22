@@ -6,9 +6,9 @@ Il nodo Morphology applica varie operazioni morfologiche alle immagini, ovvero o
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | L'immagine di input da elaborare | IMAGE | Sì | - |
-| `operation` | L'operazione morfologica da applicare (predefinito: "erode") | STRING | Sì | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` |
-| `kernel_size` | La dimensione del kernel dell'elemento strutturante (predefinito: 3). Deve essere un numero dispari. | INT | Sì | 3-999 |
+| `immagine` | L'immagine di input da elaborare | IMAGE | Sì | - |
+| `operazione` | L'operazione morfologica da applicare (predefinito: "erode") | STRING | Sì | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` |
+| `dimensione kernel` | La dimensione del kernel dell'elemento strutturante (predefinito: 3). Deve essere un numero dispari. | INT | Sì | 3-999 |
 
 ## Output
 

@@ -7,14 +7,14 @@ Questo nodo è progettato per codificare l'input testuale utilizzando un modello
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
 | `clip` | Istanza del modello CLIP utilizzata per la codifica del testo. | CLIP |
-| `width` | Specifica la larghezza dell'immagine in pixel; valore predefinito 1024. | INT |
-| `height` | Specifica l'altezza dell'immagine in pixel; valore predefinito 1024. | INT |
-| `crop_w` | Larghezza dell'area di ritaglio in pixel; valore predefinito 0. | INT |
-| `crop_h` | Altezza dell'area di ritaglio in pixel; valore predefinito 0. | INT |
-| `target_width` | Larghezza target per l'immagine di output; valore predefinito 1024. | INT |
-| `target_height` | Altezza target per l'immagine di output; valore predefinito 1024. | INT |
-| `text_g` | Descrizione testuale globale per la descrizione complessiva della scena. | STRING |
-| `text_l` | Descrizione testuale locale per la descrizione dei dettagli. | STRING |
+| `larghezza` | Specifica la larghezza dell'immagine in pixel; valore predefinito 1024. | INT |
+| `altezza` | Specifica l'altezza dell'immagine in pixel; valore predefinito 1024. | INT |
+| `ritaglio_larghezza` | Larghezza dell'area di ritaglio in pixel; valore predefinito 0. | INT |
+| `ritaglio_altezza` | Altezza dell'area di ritaglio in pixel; valore predefinito 0. | INT |
+| `larghezza_target` | Larghezza target per l'immagine di output; valore predefinito 1024. | INT |
+| `altezza_target` | Altezza target per l'immagine di output; valore predefinito 1024. | INT |
+| `testo_g` | Descrizione testuale globale per la descrizione complessiva della scena. | STRING |
+| `testo_l` | Descrizione testuale locale per la descrizione dei dettagli. | STRING |
 
 ## Output
 

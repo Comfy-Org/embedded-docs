@@ -9,7 +9,7 @@ Questo nodo crea un file di animazione 3D pronto per il salvataggio a partire da
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
 | `pose_data` | Dati di posa 3D. Accetta dati di posa MHR (parametri model/shape/expression, keypoint MHR70, colori canonici, maschera vertici mano) o dati di posa Kimodo (rig esterno Y-up con vertici previsti per frame e camera). | MHR_POSE_DATA / KIMODO_POSE_DATA | Sì | — |
-| `format` | Formato di output, entrambi passati a Save 3D Model per scrivere su disco. 'glb' = GLB animato (mesh / bones / openpose / scail). 'bvh' = clip mocap BVH (un solo scheletro; richiede il modello). (predefinito: glb) | DYNAMIC_COMBO | Sì | "glb"<br>"bvh" |
+| `formato` | Formato di output, entrambi passati a Save 3D Model per scrivere su disco. 'glb' = GLB animato (mesh / bones / openpose / scail). 'bvh' = clip mocap BVH (un solo scheletro; richiede il modello). (predefinito: glb) | DYNAMIC_COMBO | Sì | "glb"<br>"bvh" |
 | `sam3d_body_model` | Modello corpo SAM3D opzionale. Richiesto per i formati 'bvh', 'body_mesh' e 'bones_only' a meno che i dati di posa non contengano un override dello scheletro. | SAM3D_BODY_MODEL | No | — |
 | `fps` | Frequenza dei fotogrammi dell'animazione. (predefinito: 24.0) | FLOAT | Sì | 1.0-240.0 |
 | `camera_translation` | Incorpora pred_cam_t nella traslazione della radice: 'off' = posizione di bind; 'centered' = delta dal fotogramma 0; 'absolute' = grezza (Z è la profondità della camera — di solito a metri di distanza). (predefinito: off) | COMBO | Sì | "off"<br>"centered"<br>"absolute" |

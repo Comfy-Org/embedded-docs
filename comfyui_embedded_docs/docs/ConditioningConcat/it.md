@@ -6,8 +6,8 @@ Il nodo ConditioningConcat è progettato per concatenare vettori di condizioname
 
 | Parametro | Descrizione | Tipo Comfy |
 | --- | --- | --- |
-| `conditioning_to` | Rappresenta l'insieme primario di vettori di condizionamento a cui verranno concatenati i vettori 'conditioning_from'. Funge da base per il processo di concatenazione. | `CONDITIONING` |
-| `conditioning_from` | È costituito dai vettori di condizionamento che devono essere concatenati ai vettori 'conditioning_to'. Questo parametro consente di integrare ulteriori informazioni di condizionamento nell'insieme esistente. | `CONDITIONING` |
+| `conditioning_a` | Rappresenta l'insieme primario di vettori di condizionamento a cui verranno concatenati i vettori 'conditioning_from'. Funge da base per il processo di concatenazione. | `CONDITIONING` |
+| `conditioning_da` | È costituito dai vettori di condizionamento che devono essere concatenati ai vettori 'conditioning_to'. Questo parametro consente di integrare ulteriori informazioni di condizionamento nell'insieme esistente. | `CONDITIONING` |
 
 ## Output
 

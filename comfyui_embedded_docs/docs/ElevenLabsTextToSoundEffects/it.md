@@ -8,9 +8,9 @@ Il nodo ElevenLabs Text to Sound Effects genera effetti sonori audio a partire d
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modello da usare per la generazione degli effetti sonori. Attualmente è disponibile un solo modello: `eleven_sfx_v2`. | DYNAMIC_COMBO | Sì | `"eleven_sfx_v2"` |
-| `text` | Descrizione testuale dell'effetto sonoro da generare. (predefinito: vuoto) | STRING | Sì | N/A |
-| `output_format` | Formato di output audio. | COMBO | Sì | `"mp3_44100_192"`<br>`"opus_48000_192"` |
+| `modello` | Modello da usare per la generazione degli effetti sonori. Attualmente è disponibile un solo modello: `eleven_sfx_v2`. | DYNAMIC_COMBO | Sì | `"eleven_sfx_v2"` |
+| `testo` | Descrizione testuale dell'effetto sonoro da generare. (predefinito: vuoto) | STRING | Sì | N/A |
+| `formato output` | Formato di output audio. | COMBO | Sì | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
 ### Input di eleven_sfx_v2
 

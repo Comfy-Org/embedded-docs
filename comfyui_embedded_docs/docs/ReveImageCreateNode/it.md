@@ -8,10 +8,10 @@ Il nodo Reve Image Create genera immagini da una descrizione testuale utilizzand
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Versione del modello da utilizzare per la generazione. | DYNAMIC_COMBO | Sì | `"reve-create@20250915"` |
+| `modello` | Versione del modello da utilizzare per la generazione. | DYNAMIC_COMBO | Sì | `"reve-create@20250915"` |
 | `prompt` | Descrizione testuale dell'immagine desiderata. Massimo 2560 caratteri. Predefinito: "" (vuoto). | STRING | Sì | Da 1 a 2560 caratteri |
 | `upscale` | Esegue l'upscaling dell'immagine generata. Può comportare un costo aggiuntivo. Predefinito: "disabled". | DYNAMIC_COMBO | No | `"disabled"`<br>`"enabled"` |
-| `remove_background` | Rimuove lo sfondo dall'immagine generata. Può comportare un costo aggiuntivo. Predefinito: False. | BOOLEAN | No | N/D |
+| `rimuovi sfondo` | Rimuove lo sfondo dall'immagine generata. Può comportare un costo aggiuntivo. Predefinito: False. | BOOLEAN | No | N/D |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: 0. | INT | No | Da 0 a 2147483647 |
 
 ### Input di reve-create@20250915

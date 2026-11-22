@@ -7,7 +7,7 @@ Applica una serie di LoRA a un codificatore di testo CLIP in un singolo nodo. Og
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `clip` | Il codificatore di testo CLIP a cui verranno applicati i LoRA. | CLIP | Sì | - |
-| `loras` | Gruppo espandibile di LoRA, applicati al codificatore di testo nell'ordine delle righe (`loras.0`, `loras.1` e così via). Aggiungi una riga per ogni LoRA; ogni riga contiene un file, una forza e un interruttore on/off. | DYNAMIC_GROUP | Sì | da 1 a 20 righe |
+| `LoRA` | Gruppo espandibile di LoRA, applicati al codificatore di testo nell'ordine delle righe (`loras.0`, `loras.1` e così via). Aggiungi una riga per ogni LoRA; ogni riga contiene un file, una forza e un interruttore on/off. | DYNAMIC_GROUP | Sì | da 1 a 20 righe |
 
 ### Campi della riga `loras`
 

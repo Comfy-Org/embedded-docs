@@ -6,8 +6,8 @@ Questo nodo implementa il metodo Epsilon Scaling descritto nell'articolo di rice
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello a cui applicare la patch di epsilon scaling. | MODEL | Sì | - |
-| `scaling_factor` | Il fattore con cui viene scalato il rumore previsto. Un valore maggiore di 1.0 riduce il rumore, mentre un valore minore di 1.0 lo aumenta (predefinito: 1.005). Questo è un parametro avanzato. | FLOAT | No | 0.5 - 1.5 (passo: 0.001) |
+| `modello` | Il modello a cui applicare la patch di epsilon scaling. | MODEL | Sì | - |
+| `fattore_di_scalatura` | Il fattore con cui viene scalato il rumore previsto. Un valore maggiore di 1.0 riduce il rumore, mentre un valore minore di 1.0 lo aumenta (predefinito: 1.005). Questo è un parametro avanzato. | FLOAT | No | 0.5 - 1.5 (passo: 0.001) |
 
 Nota: se `scaling_factor` è impostato su 0, il nodo lo sostituisce automaticamente con un valore molto piccolo (1e-9) per evitare la divisione per zero. Il valore minimo dell'interfaccia utente di 0.5 di norma impedisce che ciò accada.
 

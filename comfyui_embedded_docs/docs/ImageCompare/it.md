@@ -8,9 +8,9 @@ Il nodo Image Compare fornisce un'interfaccia visiva per confrontare due immagin
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image_a` | La prima immagine da confrontare. | IMAGE | No | - |
-| `image_b` | La seconda immagine da confrontare. | IMAGE | No | - |
-| `compare_view` | Il controllo che abilita la vista di confronto con cursore nell'interfaccia utente. | IMAGECOMPARE | Sì | - |
+| `immagine_a` | La prima immagine da confrontare. | IMAGE | No | - |
+| `immagine_b` | La seconda immagine da confrontare. | IMAGE | No | - |
+| `vista di confronto` | Il controllo che abilita la vista di confronto con cursore nell'interfaccia utente. | IMAGECOMPARE | Sì | - |
 
 **Nota:** Questo nodo è un nodo di output. Sebbene `image_a` e `image_b` siano opzionali, è necessario fornire almeno un'immagine affinché il nodo abbia un effetto visibile. Il nodo mostrerà un'area vuota per qualsiasi input immagine non connesso. Ogni batch di immagini fornito viene salvato nell'archivio temporaneo rispettivamente con i prefissi `comfy.compare.a` e `comfy.compare.b`, quindi visualizzato nella vista con cursore.
 

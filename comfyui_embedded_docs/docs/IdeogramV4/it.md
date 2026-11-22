@@ -7,9 +7,9 @@ Genera immagini utilizzando il modello Ideogram 4.0 da un prompt testuale. Quest
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `prompt` | Prompt testuale per la generazione dell'immagine. | STRING | Sì | Nessuna restrizione |
-| `resolution` | La risoluzione dell'immagine generata. Predefinito: "Auto" che consente al modello di scegliere la risoluzione migliore. | COMBO | Sì | `"Auto"`<br>`"2048x2048 (1:1)"`<br>`"1440x2880 (1:2)"`<br>`"2880x1440 (2:1)"`<br>`"1664x2496 (2:3)"`<br>`"2496x1664 (3:2)"`<br>`"1792x2240 (4:5)"`<br>`"2240x1792 (5:4)"`<br>`"1440x2560 (9:16)"`<br>`"2560x1440 (16:9)"`<br>`"1600x2560 (5:8)"`<br>`"2560x1600 (8:5)"`<br>`"1728x2304 (3:4)"`<br>`"2304x1728 (4:3)"`<br>`"1296x3168 (9:22)"`<br>`"3168x1296 (22:9)"`<br>`"1152x2944 (9:23)"`<br>`"2944x1152 (23:9)"`<br>`"1248x3328 (3:8)"`<br>`"3328x1248 (8:3)"`<br>`"1280x3072 (5:12)"`<br>`"3072x1280 (12:5)"` |
-| `rendering_speed` | Controlla il compromesso tra velocità di generazione e qualità. Predefinito: "DEFAULT". | COMBO | Sì | `"DEFAULT"`<br>`"TURBO"`<br>`"QUALITY"` |
-| `seed` | Seed per la generazione riproducibile. Predefinito: 0. | INT | Sì | Min: 0<br>Max: 2147483647 |
+| `risoluzione` | La risoluzione dell'immagine generata. Predefinito: "Auto" che consente al modello di scegliere la risoluzione migliore. | COMBO | Sì | `"Auto"`<br>`"2048x2048 (1:1)"`<br>`"1440x2880 (1:2)"`<br>`"2880x1440 (2:1)"`<br>`"1664x2496 (2:3)"`<br>`"2496x1664 (3:2)"`<br>`"1792x2240 (4:5)"`<br>`"2240x1792 (5:4)"`<br>`"1440x2560 (9:16)"`<br>`"2560x1440 (16:9)"`<br>`"1600x2560 (5:8)"`<br>`"2560x1600 (8:5)"`<br>`"1728x2304 (3:4)"`<br>`"2304x1728 (4:3)"`<br>`"1296x3168 (9:22)"`<br>`"3168x1296 (22:9)"`<br>`"1152x2944 (9:23)"`<br>`"2944x1152 (23:9)"`<br>`"1248x3328 (3:8)"`<br>`"3328x1248 (8:3)"`<br>`"1280x3072 (5:12)"`<br>`"3072x1280 (12:5)"` |
+| `velocità di rendering` | Controlla il compromesso tra velocità di generazione e qualità. Predefinito: "DEFAULT". | COMBO | Sì | `"DEFAULT"`<br>`"TURBO"`<br>`"QUALITY"` |
+| `seme` | Seed per la generazione riproducibile. Predefinito: 0. | INT | Sì | Min: 0<br>Max: 2147483647 |
 
 ## Output
 

@@ -9,7 +9,7 @@ Il nodo Add Text Prefix modifica il testo aggiungendo una stringa specificata al
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `text` | Il testo a cui verrà aggiunto il prefisso. | STRING | Sì |  |
-| `prefix` | La stringa da aggiungere all'inizio del testo (predefinito: ""). | STRING | No |  |
+| `prefisso` | La stringa da aggiungere all'inizio del testo (predefinito: ""). | STRING | No |  |
 
 ## Output
 

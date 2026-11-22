@@ -7,9 +7,9 @@ Costruisce il prompt di layout che MOSS-Image legge. Prende gli elementi disegna
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `prompt` | Descrizione dell'intera immagine. Diventa la didascalia del layout. | STRING | Sì | - |
-| `element` | Gli elementi da posizionare, presi dal nodo Create Bounding Boxes. Ogni riquadro contribuisce con la propria didascalia; i riquadri di testo contribuiscono anche con il loro testo, e i riquadri che contengono una palette di colori la mantengono. | ARRAY | Sì | - |
-| `width` | Larghezza dell'immagine generata in pixel. I riquadri vengono convertiti in questa griglia di pixel, quindi usa la dimensione dell'immagine che intendi generare (predefinito: 1024). | INT | Sì | da 16 a 16384 (passo 16) |
-| `height` | Altezza dell'immagine generata in pixel. I riquadri vengono convertiti in questa griglia di pixel, quindi usa la dimensione dell'immagine che intendi generare (predefinito: 1024). | INT | Sì | da 16 a 16384 (passo 16) |
+| `elemento` | Gli elementi da posizionare, presi dal nodo Create Bounding Boxes. Ogni riquadro contribuisce con la propria didascalia; i riquadri di testo contribuiscono anche con il loro testo, e i riquadri che contengono una palette di colori la mantengono. | ARRAY | Sì | - |
+| `larghezza` | Larghezza dell'immagine generata in pixel. I riquadri vengono convertiti in questa griglia di pixel, quindi usa la dimensione dell'immagine che intendi generare (predefinito: 1024). | INT | Sì | da 16 a 16384 (passo 16) |
+| `altezza` | Altezza dell'immagine generata in pixel. I riquadri vengono convertiti in questa griglia di pixel, quindi usa la dimensione dell'immagine che intendi generare (predefinito: 1024). | INT | Sì | da 16 a 16384 (passo 16) |
 | `character_boxes` | Numeri dei riquadri da etichettare come personaggi anziché come oggetti, come contrassegnati nell'anteprima di Create Bounding Boxes, ad esempio "1, 3". Ogni numero nella stringa viene letto, quindi qualsiasi separatore funziona (predefinito: vuoto). | STRING | Sì | - |
 
 ## Output

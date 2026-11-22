@@ -8,7 +8,7 @@ Ruota una mesh 3D attorno agli assi globali usando angoli Euler XYZ (in gradi) o
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `mode` | La modalità di rotazione da usare. `"euler_xyz"` applica la rotazione come angoli X, poi Y, poi Z attorno agli assi globali (in gradi). `"quaternion"` usa un quaternione (w, x, y, z) che viene normalizzato automaticamente. | DYNAMIC_COMBO | Sì | `"euler_xyz"`<br>`"quaternion"` |
+| `modalità` | La modalità di rotazione da usare. `"euler_xyz"` applica la rotazione come angoli X, poi Y, poi Z attorno agli assi globali (in gradi). `"quaternion"` usa un quaternione (w, x, y, z) che viene normalizzato automaticamente. | DYNAMIC_COMBO | Sì | `"euler_xyz"`<br>`"quaternion"` |
 | `mesh` | La mesh 3D da ruotare. | MESH | Sì | — |
 
 ### Input di euler_xyz

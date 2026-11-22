@@ -6,13 +6,13 @@ Il nodo Vidu2 Text-to-Video Generation crea un video da una descrizione testuale
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello AI da usare per la generazione video. Attualmente è disponibile un solo modello. | COMBO | Sì | `"viduq2"` |
+| `modello` | Il modello AI da usare per la generazione video. Attualmente è disponibile un solo modello. | COMBO | Sì | `"viduq2"` |
 | `prompt` | Una descrizione testuale per la generazione video, con una lunghezza massima di 2000 caratteri. | STRING | Sì | - |
-| `duration` | La durata del video generato in secondi. Il valore può essere regolato tramite un cursore (predefinito: 5). | INT | No | da 1 a 10 |
+| `durata` | La durata del video generato in secondi. Il valore può essere regolato tramite un cursore (predefinito: 5). | INT | No | da 1 a 10 |
 | `seed` | Un numero usato per controllare la casualità della generazione, consentendo risultati riproducibili. Può essere controllato dopo la generazione (predefinito: 1). | INT | No | da 0 a 2147483647 |
-| `aspect_ratio` | Il rapporto proporzionale tra larghezza e altezza del video. | COMBO | No | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
-| `resolution` | Le dimensioni in pixel del video generato. Questo è un parametro avanzato. | COMBO | No | `"720p"`<br>`"1080p"` |
-| `background_music` | Indica se aggiungere musica di sottofondo al video generato (predefinito: False). Questo è un parametro avanzato. | BOOLEAN | No | - |
+| `rapporto_aspetto` | Il rapporto proporzionale tra larghezza e altezza del video. | COMBO | No | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
+| `risoluzione` | Le dimensioni in pixel del video generato. Questo è un parametro avanzato. | COMBO | No | `"720p"`<br>`"1080p"` |
+| `musica_di_sottofondo` | Indica se aggiungere musica di sottofondo al video generato (predefinito: False). Questo è un parametro avanzato. | BOOLEAN | No | - |
 
 ## Output
 

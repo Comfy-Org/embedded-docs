@@ -6,11 +6,11 @@ LTX 2.5 Text To Video è un nodo API che genera video di qualità professionale 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Il livello del modello LTX 2.5 da utilizzare per la generazione video. | STRING | Sì | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
-| `model.duration` | La durata del video generato. | INT | Sì | Intero |
-| `model.resolution` | La risoluzione di output del video. Le opzioni disponibili dipendono dal `model` selezionato. | STRING | Sì | Con "LTX-2.5 (Fast)":<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840"<br>Con "LTX-2.5 (Pro)":<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920" |
-| `model.fps` | Frequenza dei fotogrammi del video generato (predefinito: 25). | INT | No | Intero |
-| `model.generate_audio` | Indica se generare l'audio insieme al video (predefinito: True). | BOOLEAN | No | True<br>False |
+| `modello` | Il livello del modello LTX 2.5 da utilizzare per la generazione video. | STRING | Sì | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
+| `durata` | La durata del video generato. | INT | Sì | Intero |
+| `risoluzione` | La risoluzione di output del video. Le opzioni disponibili dipendono dal `model` selezionato. | STRING | Sì | Con "LTX-2.5 (Fast)":<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840"<br>Con "LTX-2.5 (Pro)":<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920" |
+| `fps` | Frequenza dei fotogrammi del video generato (predefinito: 25). | INT | No | Intero |
+| `genera_audio` | Indica se generare l'audio insieme al video (predefinito: True). | BOOLEAN | No | True<br>False |
 | `prompt` | La descrizione testuale del video da generare. È richiesto un prompt non vuoto di massimo 10.000 caratteri (predefinito: ""). | STRING | Sì | Da 1 a 10000 caratteri |
 | `seed` | Valore del seed utilizzato per una generazione riproducibile (predefinito: 42). | INT | No | Intero |
 

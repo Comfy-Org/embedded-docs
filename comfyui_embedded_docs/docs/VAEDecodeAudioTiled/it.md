@@ -6,10 +6,10 @@ Questo nodo converte una rappresentazione audio compressa (campioni latenti) nuo
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `samples` | La rappresentazione latente compressa dell'audio da decodificare. | LATENT | Sì | N/A |
+| `campioni` | La rappresentazione latente compressa dell'audio da decodificare. | LATENT | Sì | N/A |
 | `vae` | Il modello autoencoder variazionale utilizzato per eseguire la decodifica. | VAE | Sì | N/A |
-| `tile_size` | La dimensione di ciascun tile di elaborazione. L'audio viene decodificato in sezioni di questa lunghezza per conservare memoria (predefinito: 512). Deve essere un multiplo di 8. | INT | Sì | 32 a 8192 (passo: 8) |
-| `overlap` | Il numero di campioni di sovrapposizione tra tile adiacenti. Questo aiuta a ridurre gli artefatti ai bordi tra i tile (predefinito: 64). Deve essere un multiplo di 8. | INT | Sì | 0 a 1024 (passo: 8) |
+| `dimensione_blocco` | La dimensione di ciascun tile di elaborazione. L'audio viene decodificato in sezioni di questa lunghezza per conservare memoria (predefinito: 512). Deve essere un multiplo di 8. | INT | Sì | 32 a 8192 (passo: 8) |
+| `sovrapposizione` | Il numero di campioni di sovrapposizione tra tile adiacenti. Questo aiuta a ridurre gli artefatti ai bordi tra i tile (predefinito: 64). Deve essere un multiplo di 8. | INT | Sì | 0 a 1024 (passo: 8) |
 
 ## Output
 

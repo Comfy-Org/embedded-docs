@@ -6,7 +6,7 @@ Il nodo `ExponentialScheduler` è progettato per generare una sequenza di valori
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `steps` | Specifica il numero di passi nel processo di diffusione. Influisce sulla lunghezza della sequenza sigma generata e quindi sulla granularità dell'applicazione del rumore. | INT |
+| `passi` | Specifica il numero di passi nel processo di diffusione. Influisce sulla lunghezza della sequenza sigma generata e quindi sulla granularità dell'applicazione del rumore. | INT |
 | `sigma_max` | Definisce il valore massimo di sigma, impostando il limite superiore dell'intensità del rumore nel processo di diffusione. Svolge un ruolo cruciale nel determinare l'intervallo dei livelli di rumore applicati. | FLOAT |
 | `sigma_min` | Imposta il valore minimo di sigma, stabilendo il limite inferiore dell'intensità del rumore. Questo parametro aiuta a ottimizzare finemente il punto di partenza dell'applicazione del rumore. | FLOAT |
 

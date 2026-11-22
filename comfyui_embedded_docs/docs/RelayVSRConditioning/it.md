@@ -6,8 +6,8 @@ RelayVSR Conditioning prepara il conditioning e il latent vuoto per l'upscaling 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello di diffusione RelayVSR, caricato con Load Model: `relayvsr_x2_lightx2v_int8_convrot.safetensors` oppure `relayvsr_x4_int8_convrot.safetensors`. | MODEL | Sì | N/A |
-| `images` | Il video a bassa qualità alla sua risoluzione nativa. Il fattore di upscaling del modello determina la dimensione del risultato. | IMAGE | Sì | N/A |
+| `modello` | Il modello di diffusione RelayVSR, caricato con Load Model: `relayvsr_x2_lightx2v_int8_convrot.safetensors` oppure `relayvsr_x4_int8_convrot.safetensors`. | MODEL | Sì | N/A |
+| `immagini` | Il video a bassa qualità alla sua risoluzione nativa. Il fattore di upscaling del modello determina la dimensione del risultato. | IMAGE | Sì | N/A |
 
 ## Output
 

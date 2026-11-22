@@ -6,9 +6,9 @@ Il nodo ModelSamplingLTXV applica parametri di campionamento avanzati a un model
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello di input a cui applicare i parametri di campionamento. | MODEL | Sì | - |
-| `max_shift` | Il valore massimo di shift utilizzato nel calcolo di interpolazione lineare (predefinito: 2.05). | FLOAT | Sì | da 0.0 a 100.0 (passo: 0.01) |
-| `base_shift` | Il valore di shift di base utilizzato nel calcolo di interpolazione lineare (predefinito: 0.95). | FLOAT | Sì | da 0.0 a 100.0 (passo: 0.01) |
+| `modello` | Il modello di input a cui applicare i parametri di campionamento. | MODEL | Sì | - |
+| `spostamento_massimo` | Il valore massimo di shift utilizzato nel calcolo di interpolazione lineare (predefinito: 2.05). | FLOAT | Sì | da 0.0 a 100.0 (passo: 0.01) |
+| `spostamento_base` | Il valore di shift di base utilizzato nel calcolo di interpolazione lineare (predefinito: 0.95). | FLOAT | Sì | da 0.0 a 100.0 (passo: 0.01) |
 | `latent` | Input latent opzionale usato per determinare il numero di token per il calcolo dello shift. Se non fornito, viene usato un numero di token predefinito di 4096. | LATENT | No | - |
 
 Il valore di shift viene calcolato interpolando tra `base_shift` a 1024 token e `max_shift` a 4096 token. Quando viene fornito `latent`, il numero di token è il prodotto di tutte le dimensioni dopo le prime due nei campioni `latent` (le dimensioni spaziali/temporali). Se non viene fornito alcun `latent`, il numero di token predefinito è 4096.

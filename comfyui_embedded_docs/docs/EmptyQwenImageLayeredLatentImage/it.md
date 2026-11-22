@@ -6,10 +6,10 @@ Empty Qwen Image Layered Latent prepara la tela vuota su cui dipinge il modello 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `width` | La larghezza dell'immagine latente da creare. Il valore deve essere divisibile per 16. (predefinito: 640) | INT | Sì | da 16 a MAX_RESOLUTION (passo 16) |
-| `height` | L'altezza dell'immagine latente da creare. Il valore deve essere divisibile per 16. (predefinito: 640) | INT | Sì | da 16 a MAX_RESOLUTION (passo 16) |
-| `layers` | In quanti livelli separare l'immagine. Un foglio aggiuntivo è sempre riservato all'immagine completa, quindi si ottengono `layers + 1` immagini, non `layers`. Impostalo su 2 e ottieni l'immagine completa più 2 livelli. Impostalo su 0 e ottieni solo l'immagine completa. (predefinito: 3) | INT | Sì | da 0 a MAX_RESOLUTION (passo 1) |
-| `batch_size` | Il numero di campioni latenti da generare in un batch. (predefinito: 1) | INT | Sì | da 1 a 4096 |
+| `larghezza` | La larghezza dell'immagine latente da creare. Il valore deve essere divisibile per 16. (predefinito: 640) | INT | Sì | da 16 a MAX_RESOLUTION (passo 16) |
+| `altezza` | L'altezza dell'immagine latente da creare. Il valore deve essere divisibile per 16. (predefinito: 640) | INT | Sì | da 16 a MAX_RESOLUTION (passo 16) |
+| `livelli` | In quanti livelli separare l'immagine. Un foglio aggiuntivo è sempre riservato all'immagine completa, quindi si ottengono `layers + 1` immagini, non `layers`. Impostalo su 2 e ottieni l'immagine completa più 2 livelli. Impostalo su 0 e ottieni solo l'immagine completa. (predefinito: 3) | INT | Sì | da 0 a MAX_RESOLUTION (passo 1) |
+| `dimensione_batch` | Il numero di campioni latenti da generare in un batch. (predefinito: 1) | INT | Sì | da 1 a 4096 |
 
 **Nota:** i parametri `width` e `height` vengono divisi internamente per 8 per determinare le dimensioni spaziali del tensore latente di output.
 

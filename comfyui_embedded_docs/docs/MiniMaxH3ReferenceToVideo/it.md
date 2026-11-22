@@ -10,14 +10,14 @@ MiniMax H3 Reference to Video crea il condizionamento testuale e il latente audi
 | `vae` | VAE video. Senza di esso, le immagini/video di riferimento condizionano solo il codificatore di testo. | VAE | No | |
 | `audio_vae` | VAE audio. Senza di esso, l'audio di riferimento condiziona solo il codificatore di testo. | VAE | No | |
 | `prompt` | Prompt testuale per il video. È possibile fare riferimento ai contenuti multimediali di riferimento con i tag `<Picture i>`, `<Video k>` e `<Audio j>` (indicizzati a partire da 1 per tipo). Supporta prompt multilinea e dinamici. | STRING | Sì | |
-| `width` | Larghezza del video generato in pixel (predefinito: 1344). | INT | Sì | da 32 a 16384 (passo 32) |
-| `height` | Altezza del video generato in pixel (predefinito: 768). | INT | Sì | da 32 a 16384 (passo 32) |
-| `length` | Numero di fotogrammi a 24 fps (124 = ~5 s, l'intervallo addestrato è ~124-362) (predefinito: 124). | INT | Sì | da 5 a 3600 (passo 17) |
-| `ref_image_size` | Dimensionamento delle immagini di riferimento. `match` scala ciascun riferimento (solo verso il basso, mantenendo le proporzioni) all'area in pixel della generazione; `max` usa il lato corto di 2048px della pipeline di riferimento per la migliore fedeltà dell'identità. I token di riferimento attraversano ogni passaggio di campionamento, quindi `max` può essere diverse volte più lento (predefinito: `match`). | COMBO | Sì | `"match"`<br>`"max"` |
-| `ref_images` | Slot espandibile: collega fino a 9 immagini di riferimento (`ref_image_1` ... `ref_image_9`). Immagine di riferimento (ridimensionata al lato corto di 2048 se più grande, mai ingrandita). | IMAGE | No | da 0 a 9 |
-| `ref_videos` | Slot espandibile: collega fino a 3 video di riferimento (`ref_video_1` ... `ref_video_3`). Fotogrammi video di riferimento a 24 fps (2-15 s). | IMAGE | No | da 0 a 3 |
-| `ref_video_audios` | Slot espandibile: collega fino a 3 tracce audio (`ref_video_audio_1` ... `ref_video_audio_3`). Traccia audio del video di riferimento con lo stesso numero. | AUDIO | No | da 0 a 3 |
-| `ref_audios` | Slot espandibile: collega fino a 3 clip audio di riferimento autonome (`ref_audio_1` ... `ref_audio_3`). Audio di riferimento autonomo. | AUDIO | No | da 0 a 3 |
+| `larghezza` | Larghezza del video generato in pixel (predefinito: 1344). | INT | Sì | da 32 a 16384 (passo 32) |
+| `altezza` | Altezza del video generato in pixel (predefinito: 768). | INT | Sì | da 32 a 16384 (passo 32) |
+| `durata` | Numero di fotogrammi a 24 fps (124 = ~5 s, l'intervallo addestrato è ~124-362) (predefinito: 124). | INT | Sì | da 5 a 3600 (passo 17) |
+| `dimensione immagine di riferimento` | Dimensionamento delle immagini di riferimento. `match` scala ciascun riferimento (solo verso il basso, mantenendo le proporzioni) all'area in pixel della generazione; `max` usa il lato corto di 2048px della pipeline di riferimento per la migliore fedeltà dell'identità. I token di riferimento attraversano ogni passaggio di campionamento, quindi `max` può essere diverse volte più lento (predefinito: `match`). | COMBO | Sì | `"match"`<br>`"max"` |
+| `immagini di riferimento` | Slot espandibile: collega fino a 9 immagini di riferimento (`ref_image_1` ... `ref_image_9`). Immagine di riferimento (ridimensionata al lato corto di 2048 se più grande, mai ingrandita). | IMAGE | No | da 0 a 9 |
+| `video di riferimento` | Slot espandibile: collega fino a 3 video di riferimento (`ref_video_1` ... `ref_video_3`). Fotogrammi video di riferimento a 24 fps (2-15 s). | IMAGE | No | da 0 a 3 |
+| `audio dei video di riferimento` | Slot espandibile: collega fino a 3 tracce audio (`ref_video_audio_1` ... `ref_video_audio_3`). Traccia audio del video di riferimento con lo stesso numero. | AUDIO | No | da 0 a 3 |
+| `audio di riferimento` | Slot espandibile: collega fino a 3 clip audio di riferimento autonome (`ref_audio_1` ... `ref_audio_3`). Audio di riferimento autonomo. | AUDIO | No | da 0 a 3 |
 
 Note:
 

@@ -7,7 +7,7 @@ CFGNorm regola il modo in cui il classifier-free guidance (CFG) viene applicato 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `model` | Il modello di diffusione a cui applicare la normalizzazione CFG | MODEL | Sì | - |
-| `strength` | Controlla l'intensità dell'effetto di normalizzazione applicato alla scalatura CFG (predefinito: 1.0) | FLOAT | Sì | 0.0 a 100.0 (passo 0.01) |
+| `intensità` | Controlla l'intensità dell'effetto di normalizzazione applicato alla scalatura CFG (predefinito: 1.0) | FLOAT | Sì | 0.0 a 100.0 (passo 0.01) |
 | `pre_cfg` | Se true, riscala il rumore combinato PRIMA della combinazione CFG del sampler, senza clamping (può amplificare). Corrisponde al CFG con scala normalizzata usato da modelli come Lens. Il valore predefinito false mantiene il comportamento originale di sola attenuazione nello spazio x0 post-CFG. (predefinito: False) | BOOLEAN | No | true / false |
 
 Nota: questo nodo è contrassegnato come sperimentale.

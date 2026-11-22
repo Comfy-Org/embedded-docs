@@ -6,8 +6,8 @@ Il nodo ImageRotate ruota un'immagine di input di angoli specificati. Supporta q
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | L'immagine di input da ruotare | IMAGE | Sì | - |
-| `rotation` | L'angolo di rotazione da applicare all'immagine (predefinito: "none") | STRING | Sì | "none"<br>"90 degrees"<br>"180 degrees"<br>"270 degrees" |
+| `immagine` | L'immagine di input da ruotare | IMAGE | Sì | - |
+| `rotazione` | L'angolo di rotazione da applicare all'immagine (predefinito: "none") | STRING | Sì | "none"<br>"90 degrees"<br>"180 degrees"<br>"270 degrees" |
 
 ## Output
 

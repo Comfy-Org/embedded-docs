@@ -7,7 +7,7 @@ Il nodo VAESave è progettato per salvare i modelli VAE insieme ai relativi meta
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
 | `vae` | Il modello VAE da salvare. Questo parametro è cruciale poiché rappresenta il modello il cui stato deve essere serializzato e memorizzato. | VAE |
-| `filename_prefix` | Un prefisso per il nome del file con cui verranno salvati il modello e i suoi metadati. Ciò consente una memorizzazione organizzata e un facile recupero dei modelli. | STRING |
+| `prefisso_nome_file` | Un prefisso per il nome del file con cui verranno salvati il modello e i suoi metadati. Ciò consente una memorizzazione organizzata e un facile recupero dei modelli. | STRING |
 
 ## Output
 

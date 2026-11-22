@@ -6,9 +6,9 @@ EmptySD3LatentImage crea un'immagine latente vuota (tutta a zero) nel layout che
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `width` | La larghezza dell'immagine latente in pixel (predefinito: 1024). I valori sono incrementati a passi di 16. | INT | Sì | da 16 a MAX_RESOLUTION (passo: 16) |
-| `height` | L'altezza dell'immagine latente in pixel (predefinito: 1024). I valori sono incrementati a passi di 16. | INT | Sì | da 16 a MAX_RESOLUTION (passo: 16) |
-| `batch_size` | Il numero di immagini latenti da generare nel batch (predefinito: 1). | INT | Sì | da 1 a 4096 |
+| `larghezza` | La larghezza dell'immagine latente in pixel (predefinito: 1024). I valori sono incrementati a passi di 16. | INT | Sì | da 16 a MAX_RESOLUTION (passo: 16) |
+| `altezza` | L'altezza dell'immagine latente in pixel (predefinito: 1024). I valori sono incrementati a passi di 16. | INT | Sì | da 16 a MAX_RESOLUTION (passo: 16) |
+| `dimensione_batch` | Il numero di immagini latenti da generare nel batch (predefinito: 1). | INT | Sì | da 1 a 4096 |
 
 ## Output
 

@@ -8,7 +8,7 @@ Genera immagini da prompt testuali utilizzando i modelli Recraft V4 e V4.1. Invi
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello da utilizzare per la generazione. I modelli recraftv4_styles sono progettati per una generazione coerente con lo stile e richiedono sempre uno style_id o style_references. `recraftv4_1_flash` è il modello più veloce ed economico e non supporta alcuno stile. | DYNAMIC_COMBO | Sì | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `modello` | Il modello da utilizzare per la generazione. I modelli recraftv4_styles sono progettati per una generazione coerente con lo stile e richiedono sempre uno style_id o style_references. `recraftv4_1_flash` è il modello più veloce ed economico e non supporta alcuno stile. | DYNAMIC_COMBO | Sì | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `prompt` | Prompt per la generazione dell'immagine. Massimo 10.000 caratteri. | STRING | Sì | da 1 a 10000 caratteri |
 | `negative_prompt` | Questo input viene ignorato: il prompt negativo non è supportato dai modelli Recraft V4 e V4.1. | STRING | Sì | N/A |
 | `n` | Il numero di immagini da generare (predefinito: 1). | INT | Sì | 1 a 6 |

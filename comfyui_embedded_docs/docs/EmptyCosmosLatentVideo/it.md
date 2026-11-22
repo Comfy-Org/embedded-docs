@@ -6,10 +6,10 @@ EmptyCosmosLatentVideo crea un tensore video latente vuoto con le dimensioni spe
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `width` | La larghezza del video latente in pixel (predefinito: 1280, incrementi di 16) | INT | Sì | da 16 a MAX_RESOLUTION |
-| `height` | L'altezza del video latente in pixel (predefinito: 704, incrementi di 16) | INT | Sì | da 16 a MAX_RESOLUTION |
-| `length` | Il numero di frame nel video latente (predefinito: 121, incrementi di 8) | INT | Sì | da 1 a MAX_RESOLUTION |
-| `batch_size` | Il numero di video latenti da generare in un batch (predefinito: 1) | INT | No | da 1 a 4096 |
+| `larghezza` | La larghezza del video latente in pixel (predefinito: 1280, incrementi di 16) | INT | Sì | da 16 a MAX_RESOLUTION |
+| `altezza` | L'altezza del video latente in pixel (predefinito: 704, incrementi di 16) | INT | Sì | da 16 a MAX_RESOLUTION |
+| `lunghezza` | Il numero di frame nel video latente (predefinito: 121, incrementi di 8) | INT | Sì | da 1 a MAX_RESOLUTION |
+| `dimensione batch` | Il numero di video latenti da generare in un batch (predefinito: 1) | INT | No | da 1 a 4096 |
 
 Nota: il tensore latente viene sottocampionato spazialmente di un fattore 8 sia in altezza sia in larghezza e contiene 16 canali. Il numero di frame temporali latenti è calcolato come `((length - 1) // 8) + 1`.
 

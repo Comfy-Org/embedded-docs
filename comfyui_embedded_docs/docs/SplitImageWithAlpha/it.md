@@ -6,7 +6,7 @@ Il nodo SplitImageWithAlpha è progettato per separare le componenti colore e al
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `image` | Il parametro `image` rappresenta il tensore immagine di input da cui separare i canali RGB e alfa. È cruciale per l'operazione poiché fornisce i dati di origine per la separazione. | `IMAGE` |
+| `immagine` | Il parametro `image` rappresenta il tensore immagine di input da cui separare i canali RGB e alfa. È cruciale per l'operazione poiché fornisce i dati di origine per la separazione. | `IMAGE` |
 
 ## Output
 

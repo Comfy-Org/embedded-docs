@@ -8,8 +8,8 @@ Il nodo Remove Background genera una maschera di primo piano che separa il sogge
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `bg_removal_model` | Modello di rimozione dello sfondo utilizzato per generare la maschera | BACKGROUND_REMOVAL_MODEL | Sì | N/A |
-| `image` | Immagine di input da cui rimuovere lo sfondo | IMAGE | Sì | N/A |
+| `modello_rimozione_sfondo` | Modello di rimozione dello sfondo utilizzato per generare la maschera | BACKGROUND_REMOVAL_MODEL | Sì | N/A |
+| `immagine` | Immagine di input da cui rimuovere lo sfondo | IMAGE | Sì | N/A |
 
 ## Output
 

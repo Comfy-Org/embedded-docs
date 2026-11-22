@@ -9,8 +9,8 @@ Il nodo Save Video salva il video di input nella directory di output di ComfyUI.
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `video` | Il video da salvare. | VIDEO | Sì | - |
-| `filename_prefix` | Il prefisso per il file da salvare. Può includere informazioni di formattazione come `%date:yyyy-MM-dd%` o `%Empty Latent Image.width%` per includere valori dai nodi (predefinito: `video/ComfyUI`). | STRING | Sì | - |
-| `format` | Il contenitore di output. Auto usa MOV per ProRes, WebM per AV1 e MP4 negli altri casi. MP4, MKV, WebM e MOV selezionano un contenitore specifico. Selezionare un formato determina anche quali opzioni di codec sono disponibili (predefinito: `auto`). | DYNAMIC_COMBO | Sì | `"auto"`<br>`"mp4"`<br>`"mkv"`<br>`"webm"`<br>`"mov"` |
+| `prefisso_nome_file` | Il prefisso per il file da salvare. Può includere informazioni di formattazione come `%date:yyyy-MM-dd%` o `%Empty Latent Image.width%` per includere valori dai nodi (predefinito: `video/ComfyUI`). | STRING | Sì | - |
+| `formato` | Il contenitore di output. Auto usa MOV per ProRes, WebM per AV1 e MP4 negli altri casi. MP4, MKV, WebM e MOV selezionano un contenitore specifico. Selezionare un formato determina anche quali opzioni di codec sono disponibili (predefinito: `auto`). | DYNAMIC_COMBO | Sì | `"auto"`<br>`"mp4"`<br>`"mkv"`<br>`"webm"`<br>`"mov"` |
 | `codec` | Il codec video di output. Auto preserva un flusso sorgente compatibile. La ricodifica H.264 e AV1 supporta SDR, HDR (HLG) e HDR PQ. Questo selettore è annidato sotto il formato scelto (predefinito: `auto`). | DYNAMIC_COMBO | No | `"auto"`<br>`"h264"`<br>`"av1"` (non disponibile con il formato `webm`)<br>`"prores"` (solo con i formati `auto`, `mkv` e `mov`) |
 
 ### Input di H.264

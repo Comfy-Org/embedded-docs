@@ -6,8 +6,8 @@ Il nodo NAGuidance applica la Normalized Attention Guidance a un modello. Questa
 
 | Parametro | Descrizione | Tipo di dato | Richiesto | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello a cui applicare la Normalized Attention Guidance. | MODEL | Sì | - |
-| `nag_scale` | Il fattore di scala della guidance. Valori più alti spingono la generazione più lontano dal prompt negativo. (predefinito: 5.0) | FLOAT | Sì | 0.0 - 50.0 |
+| `modello` | Il modello a cui applicare la Normalized Attention Guidance. | MODEL | Sì | - |
+| `fattore scala NAG` | Il fattore di scala della guidance. Valori più alti spingono la generazione più lontano dal prompt negativo. (predefinito: 5.0) | FLOAT | Sì | 0.0 - 50.0 |
 | `nag_alpha` | Il fattore di miscelazione per l'attenzione normalizzata. Un valore di 1.0 sostituisce completamente l'attenzione originale, mentre 0.0 non ha alcun effetto. (predefinito: 0.5) | FLOAT | Sì | 0.0 - 1.0 |
 | `nag_tau` | Un fattore di scala usato per limitare il rapporto di normalizzazione. (predefinito: 1.5) | FLOAT | Sì | 1.0 - 10.0 |
 

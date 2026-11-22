@@ -6,9 +6,9 @@ Il nodo WaveSpeed Image Upscale utilizza un servizio AI esterno per aumentare la
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello AI da utilizzare per l'upscaling. "SeedVR2" e "Ultimate" offrono diversi livelli di qualità e prezzo. | STRING | Sì | `"SeedVR2"`<br>`"Ultimate"` |
-| `image` | L'immagine di input da ingrandire. È richiesta esattamente un'immagine. | IMAGE | Sì | |
-| `target_resolution` | La risoluzione di output desiderata per l'immagine ingrandita. | STRING | Sì | `"2K"`<br>`"4K"`<br>`"8K"` |
+| `modello` | Il modello AI da utilizzare per l'upscaling. "SeedVR2" e "Ultimate" offrono diversi livelli di qualità e prezzo. | STRING | Sì | `"SeedVR2"`<br>`"Ultimate"` |
+| `immagine` | L'immagine di input da ingrandire. È richiesta esattamente un'immagine. | IMAGE | Sì | |
+| `risoluzione_target` | La risoluzione di output desiderata per l'immagine ingrandita. | STRING | Sì | `"2K"`<br>`"4K"`<br>`"8K"` |
 
 **Nota:** Questo nodo richiede esattamente un'immagine di input. Fornire un batch di immagini comporterà un errore.
 

@@ -6,11 +6,11 @@ Condiziona FLUX.2 Klein 9B con la LoRA UltraTex per applicare l'aspetto di un'im
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Condizionamento testuale. UltraTex è stata addestrata con un prompt vuoto. | CONDITIONING | Sì | - |
+| `condizionamento` | Condizionamento testuale. UltraTex è stata addestrata con un prompt vuoto. | CONDITIONING | Sì | - |
 | `vae` | VAE utilizzato per codificare le normali, le viste e il riferimento. | VAE | Sì | - |
-| `normals` | Immagini `world normal` di Render Mesh: le 6 viste canoniche oppure le 4 viste laterali. | IMAGE | Sì | - |
-| `masks` | Maschere di Render Mesh delle stesse viste, una per vista. | MASK | Sì | - |
-| `reference` | L'oggetto come dovrebbe apparire, visto dal lato della camera frontale. | IMAGE | Sì | - |
+| `normali` | Immagini `world normal` di Render Mesh: le 6 viste canoniche oppure le 4 viste laterali. | IMAGE | Sì | - |
+| `maschere` | Maschere di Render Mesh delle stesse viste, una per vista. | MASK | Sì | - |
+| `riferimento` | L'oggetto come dovrebbe apparire, visto dal lato della camera frontale. | IMAGE | Sì | - |
 | `reference_mask` | Maschera dell'oggetto del riferimento, bianca per l'oggetto. Predefinito: completamente bianca. | MASK | No | - |
 | `extra_views` | Ulteriori riferimenti: l'oggetto visto dalle altre viste, ciascuno associato alla propria vista come il riferimento è associato alla vista frontale. Predefinito: `"off"`. | DYNAMIC_COMBO | Sì | `"off"`<br>`"on"` |
 

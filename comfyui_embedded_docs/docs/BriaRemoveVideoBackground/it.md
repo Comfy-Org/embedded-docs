@@ -7,7 +7,7 @@ Questo nodo rimuove lo sfondo da un video utilizzando il servizio Bria AI. Elabo
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `video` | Il file video di input da cui verrà rimosso lo sfondo. | VIDEO | Sì | N/A |
-| `background_color` | Colore di sfondo per il video di output. | COMBO | Sì | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` |
+| `colore di sfondo` | Colore di sfondo per il video di output. | COMBO | Sì | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` |
 | `seed` | Il parametro `seed` controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal valore del seed. (predefinito: 0) | INT | Sì | 0 a 2147483647 |
 
 **Nota:** Il video di input deve avere una durata pari o inferiore a 60 secondi. I risultati non sono deterministici anche se il valore del seed rimane invariato.

@@ -8,9 +8,9 @@ Genera rumore correlato temporalmente per il secondo passaggio del processo di r
 | --- | --- | --- | --- | --- |
 | `optical_flow` | Modello di flusso ottico da OpticalFlowLoader (RAFT-large). | OPTICAL_FLOW | Sì | - |
 | `video` | Fotogrammi video di output del Pass 1 [T, H, W, 3]. | IMAGE | Sì | - |
-| `width` | Larghezza target in pixel (predefinito: 672). Il video di input viene ridimensionato a questa larghezza prima che venga generato il rumore, e la larghezza latente è derivata come width ÷ 8. | INT | Sì | da 16 a MAX_RESOLUTION (passo 8) |
-| `height` | Altezza target in pixel (predefinito: 384). Il video di input viene ridimensionato a questa altezza prima che venga generato il rumore, e l'altezza latente è derivata come height ÷ 8. | INT | Sì | da 16 a MAX_RESOLUTION (passo 8) |
-| `length` | Numero di fotogrammi in pixel. Arrotondato per difetto per rendere latent_t pari (requisito patch_size_t=2), ad es. da 49 a 45 (predefinito: 45). | INT | Sì | da 1 a MAX_RESOLUTION (passo 1) |
+| `larghezza` | Larghezza target in pixel (predefinito: 672). Il video di input viene ridimensionato a questa larghezza prima che venga generato il rumore, e la larghezza latente è derivata come width ÷ 8. | INT | Sì | da 16 a MAX_RESOLUTION (passo 8) |
+| `altezza` | Altezza target in pixel (predefinito: 384). Il video di input viene ridimensionato a questa altezza prima che venga generato il rumore, e l'altezza latente è derivata come height ÷ 8. | INT | Sì | da 16 a MAX_RESOLUTION (passo 8) |
+| `lunghezza` | Numero di fotogrammi in pixel. Arrotondato per difetto per rendere latent_t pari (requisito patch_size_t=2), ad es. da 49 a 45 (predefinito: 45). | INT | Sì | da 1 a MAX_RESOLUTION (passo 1) |
 | `batch_size` | Numero di sequenze identiche di rumore con warp da produrre (predefinito: 1). Il rumore generato viene ripetuto questo numero di volte lungo la dimensione batch. | INT | Sì | da 1 a 64 |
 
 **Nota sul parametro `length`:** Il valore di `length` viene automaticamente arrotondato per difetto al valore più vicino che produce una dimensione `latent_t` pari, come richiesto dal vincolo `patch_size_t=2` del modello CogVideoX-Fun-V1.5 (ad esempio, 49 diventa 45). Il nodo registra un avviso quando avviene questo arrotondamento. I fotogrammi oltre il `length` modificato vengono ignorati e il rumore viene ricampionato al numero di fotogrammi latenti risultante.

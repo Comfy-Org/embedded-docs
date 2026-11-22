@@ -6,7 +6,7 @@ Questo nodo carica file video e le relative didascalie testuali corrispondenti d
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `folder` | La cartella contenente file video e didascalie .txt. | COMBO | Sì | Elenca dinamicamente tutte le sottocartelle all'interno della directory di input di ComfyUI |
+| `cartella` | La cartella contenente file video e didascalie .txt. | COMBO | Sì | Elenca dinamicamente tutte le sottocartelle all'interno della directory di input di ComfyUI |
 
 La cartella selezionata deve essere una sottocartella della directory di input di ComfyUI; un nome di cartella che si risolve al di fuori di tale directory genera un errore. Se la cartella selezionata non contiene file con un'estensione video supportata (MP4, AVI, MOV, WEBM, MKV, FLV), il nodo genera un errore. Per le cartelle annidate il cui nome inizia con un numero seguito da un underscore (ad esempio `5_classname`), ogni video all'interno di quella cartella viene incluso nel dataset il numero di volte indicato da quel prefisso. La didascalia di ogni video viene letta da un file `.txt` con lo stesso nome base; se non esiste un file `.txt` corrispondente, la didascalia è una stringa vuota.
 

@@ -7,10 +7,10 @@ Questo nodo renderizza una mesh 3D in un'immagine 2D tramite ray-casting da una 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `mesh` | La mesh 3D da renderizzare. | MESH | Sì | — |
-| `mode` | Cosa renderizzare. auto: texture se presente, altrimenti colori dei vertici, altrimenti clay ombreggiato. (predefinito: "auto") `world normal`: normali nello spazio mondo ruotate dello yaw della prima camera. | COMBO | Sì | `"auto"`<br>`"texture"`<br>`"vertex colors"`<br>`"solid"`<br>`"normal"`<br>`"world normal"`<br>`"depth"` |
-| `width` | Larghezza dell'immagine renderizzata in pixel. (predefinito: 1024) | INT | Sì | da 64 a 4096 (passo 8) |
-| `height` | Altezza dell'immagine renderizzata in pixel. (predefinito: 1024) | INT | Sì | da 64 a 4096 (passo 8) |
-| `background` | Colore di sfondo usato per i pixel non coperti dalla mesh. (predefinito: "#000000") | COLOR | Sì | — |
+| `modalità` | Cosa renderizzare. auto: texture se presente, altrimenti colori dei vertici, altrimenti clay ombreggiato. (predefinito: "auto") `world normal`: normali nello spazio mondo ruotate dello yaw della prima camera. | COMBO | Sì | `"auto"`<br>`"texture"`<br>`"vertex colors"`<br>`"solid"`<br>`"normal"`<br>`"world normal"`<br>`"depth"` |
+| `larghezza` | Larghezza dell'immagine renderizzata in pixel. (predefinito: 1024) | INT | Sì | da 64 a 4096 (passo 8) |
+| `altezza` | Altezza dell'immagine renderizzata in pixel. (predefinito: 1024) | INT | Sì | da 64 a 4096 (passo 8) |
+| `sfondo` | Colore di sfondo usato per i pixel non coperti dalla mesh. (predefinito: "#000000") | COLOR | Sì | — |
 | `model_3d_info` | Trasformazione del modello dallo stesso visualizzatore Load3D / Preview3D. Collegalo con camera_info per corrispondere all'inquadratura del visualizzatore. | LOAD3D_MODEL_INFO | No | — |
 | `camera_info` | Camera da un visualizzatore Load3D / Preview3D o da un nodo Create Camera Info. Se non ne è collegata nessuna, viene automaticamente inquadrata una vista frontale predefinita. Una lista di camere renderizza un'immagine per camera. | LOAD3D_CAMERA | No | — |
 | `texture` | Mostrata al posto della texture della mesh, ad esempio un output di Bake Texture From Views senza Apply Texture to Mesh. | IMAGE | No | — |

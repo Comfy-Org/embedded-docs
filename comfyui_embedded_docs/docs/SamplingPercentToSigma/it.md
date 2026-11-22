@@ -6,9 +6,9 @@ Converte una percentuale di campionamento nel valore sigma corrispondente utiliz
 
 | Parametro | Descrizione | Tipo di dati | Richiesto | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello contenente i parametri di campionamento usati per la conversione | MODEL | Sì | - |
-| `sampling_percent` | La percentuale di campionamento da convertire in un valore sigma (predefinito: 0.0) | FLOAT | Sì | 0.0 a 1.0 (passo: 0.0001) |
-| `return_actual_sigma` | Restituisce il valore sigma effettivo invece del valore usato per i controlli degli intervalli. Questo influisce solo sui risultati a 0.0 e 1.0. (predefinito: False) | BOOLEAN | Sì | - |
+| `modello` | Il modello contenente i parametri di campionamento usati per la conversione | MODEL | Sì | - |
+| `percentuale_campionamento` | La percentuale di campionamento da convertire in un valore sigma (predefinito: 0.0) | FLOAT | Sì | 0.0 a 1.0 (passo: 0.0001) |
+| `restituisci_sigma_reale` | Restituisce il valore sigma effettivo invece del valore usato per i controlli degli intervalli. Questo influisce solo sui risultati a 0.0 e 1.0. (predefinito: False) | BOOLEAN | Sì | - |
 
 Quando `return_actual_sigma` è abilitato, un `sampling_percent` di 0.0 restituisce il valore sigma massimo del modello (sigma_max), e un `sampling_percent` di 1.0 restituisce il valore sigma minimo (sigma_min). Per tutte le altre percentuali, il risultato è lo stesso indipendentemente dal fatto che questa opzione sia abilitata o meno.
 

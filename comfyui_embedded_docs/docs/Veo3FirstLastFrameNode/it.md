@@ -8,14 +8,14 @@ Il nodo Veo3FirstLastFrameNode utilizza il modello Veo 3 di Google per generare 
 |-----------|-------------|--------------|--------------|------------|
 | `prompt` | Descrizione testuale del video (predefinito: stringa vuota). | STRING | Sì | N/A |
 | `negative_prompt` | Prompt di testo negativo per guidare ciò che si deve evitare nel video (predefinito: stringa vuota). | STRING | No | N/A |
-| `resolution` | La risoluzione del video di output. | COMBO | Sì | `"720p"`<br>`"1080p"`<br>`"4k"` |
+| `risoluzione` | La risoluzione del video di output. | COMBO | Sì | `"720p"`<br>`"1080p"`<br>`"4k"` |
 | `aspect_ratio` | Rapporto d'aspetto del video di output (predefinito: "16:9"). | COMBO | No | `"16:9"`<br>`"9:16"` |
-| `duration` | Durata del video di output in secondi (predefinito: 8, passo: 2). | INT | No | 4 a 8 |
+| `durata` | Durata del video di output in secondi (predefinito: 8, passo: 2). | INT | No | 4 a 8 |
 | `seed` | Seme per la generazione del video (predefinito: 0). | INT | No | 0 a 4294967295 |
-| `first_frame` | Il frame iniziale del video. | IMAGE | Sì | N/A |
-| `last_frame` | Il frame finale del video. | IMAGE | Sì | N/A |
-| `model` | Il modello Veo specifico da usare per la generazione (predefinito: "veo-3.1-generate"). | COMBO | No | `"veo-3.1-generate"`<br>`"veo-3.1-fast-generate"`<br>`"veo-3.1-lite"` |
-| `generate_audio` | Genera l'audio per il video (predefinito: True). | BOOLEAN | No | N/A |
+| `primo_frame` | Il frame iniziale del video. | IMAGE | Sì | N/A |
+| `ultimo_frame` | Il frame finale del video. | IMAGE | Sì | N/A |
+| `modello` | Il modello Veo specifico da usare per la generazione (predefinito: "veo-3.1-generate"). | COMBO | No | `"veo-3.1-generate"`<br>`"veo-3.1-fast-generate"`<br>`"veo-3.1-lite"` |
+| `genera_audio` | Genera l'audio per il video (predefinito: True). | BOOLEAN | No | N/A |
 
 **Nota:** Il modello `veo-3.1-lite` non supporta la risoluzione 4K. Se selezioni `veo-3.1-lite` e la risoluzione `4k`, si verificherà un errore.
 

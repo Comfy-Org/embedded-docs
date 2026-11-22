@@ -8,8 +8,8 @@ Questo nodo anima un'immagine di input con il modello PixVerse V6 o V6 Max e res
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine di input da animare. | IMAGE | Sì | Immagine singola |
-| `model` | Modello e impostazioni di generazione. | DYNAMIC_COMBO | Sì | "PixVerse V6"<br>"PixVerse V6 Max" |
+| `immagine` | L'immagine di input da animare. | IMAGE | Sì | Immagine singola |
+| `modello` | Modello e impostazioni di generazione. | DYNAMIC_COMBO | Sì | "PixVerse V6"<br>"PixVerse V6 Max" |
 
 ### Input di PixVerse V6
 

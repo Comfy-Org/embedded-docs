@@ -7,7 +7,7 @@ Genera un video da un frame iniziale e/o finale utilizzando il modello Ray 3.2 d
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `prompt` | Prompt testuale per la generazione del video. | STRING | Sì | 1 a 6000 caratteri |
-| `resolution` | La risoluzione di output del video generato (predefinita: "720p"). | COMBO | Sì | "360p"<br>"540p"<br>"720p"<br>"1080p" |
+| `risoluzione` | La risoluzione di output del video generato (predefinita: "720p"). | COMBO | Sì | "360p"<br>"540p"<br>"720p"<br>"1080p" |
 | `loop` | Fa sì che il video si ripeta senza interruzioni. Non disponibile quando è impostato un `end_frame`. | BOOLEAN | Sì | True<br>False |
 | `seed` | Valore di seed per una generazione riproducibile. | INT | Sì | 0 a 2147483647 |
 | `start_frame` | Primo frame del video generato. | IMAGE | No | - |

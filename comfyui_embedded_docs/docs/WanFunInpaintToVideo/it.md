@@ -6,16 +6,16 @@ Il nodo WanFunInpaintToVideo prepara dati di condizionamento e latenti per la ge
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | Prompt di condizionamento positivo per la generazione video | CONDITIONING | Sì | - |
-| `negative` | Prompt di condizionamento negativo da evitare nella generazione video | CONDITIONING | Sì | - |
+| `positivo` | Prompt di condizionamento positivo per la generazione video | CONDITIONING | Sì | - |
+| `negativo` | Prompt di condizionamento negativo da evitare nella generazione video | CONDITIONING | Sì | - |
 | `vae` | Modello VAE usato per codificare e decodificare i fotogrammi video | VAE | Sì | - |
-| `width` | Larghezza del video in output in pixel (predefinito: 832, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
-| `height` | Altezza del video in output in pixel (predefinito: 480, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
-| `length` | Numero di fotogrammi nella sequenza video (predefinito: 81, passo: 4) | INT | Sì | da 1 a MAX_RESOLUTION |
-| `batch_size` | Numero di video da generare in un batch (predefinito: 1) | INT | Sì | da 1 a 4096 |
+| `larghezza` | Larghezza del video in output in pixel (predefinito: 832, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
+| `altezza` | Altezza del video in output in pixel (predefinito: 480, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
+| `lunghezza` | Numero di fotogrammi nella sequenza video (predefinito: 81, passo: 4) | INT | Sì | da 1 a MAX_RESOLUTION |
+| `dimensione_batch` | Numero di video da generare in un batch (predefinito: 1) | INT | Sì | da 1 a 4096 |
 | `clip_vision_output` | Output CLIP vision opzionale usato come condizionamento per l'immagine iniziale | CLIP_VISION_OUTPUT | No | - |
-| `start_image` | Immagine del fotogramma iniziale opzionale per la generazione video | IMAGE | No | - |
-| `end_image` | Immagine del fotogramma finale opzionale per la generazione video | IMAGE | No | - |
+| `immagine_iniziale` | Immagine del fotogramma iniziale opzionale per la generazione video | IMAGE | No | - |
+| `immagine_finale` | Immagine del fotogramma finale opzionale per la generazione video | IMAGE | No | - |
 
 ## Output
 

@@ -8,11 +8,11 @@ Questo nodo genera un video a partire da un'immagine di primo fotogramma utilizz
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Seleziona la variante del modello Wan 3.0 da usare e determina quali impostazioni specifiche del modello vengono mostrate di seguito. | DYNAMIC_COMBO | Sì | "wan3.0-video"<br>"wan3.0-video-prime" |
+| `modello` | Seleziona la variante del modello Wan 3.0 da usare e determina quali impostazioni specifiche del modello vengono mostrate di seguito. | DYNAMIC_COMBO | Sì | "wan3.0-video"<br>"wan3.0-video-prime" |
 | `first_frame` | Immagine del primo fotogramma. È richiesta esattamente un'immagine. | IMAGE | Sì | Immagine singola |
 | `last_frame` | Immagine dell'ultimo fotogramma. Il modello genera un video che esegue la transizione dal primo all'ultimo fotogramma. Facoltativa; se fornita, è richiesta esattamente un'immagine. | IMAGE | No | Immagine singola |
 | `seed` | Seme da usare per la generazione (predefinito: 42). | INT | Sì | 0 - 2147483647 |
-| `watermark` | Indica se aggiungere un watermark generato dall'IA al risultato (predefinito: false). | BOOLEAN | Sì | true<br>false |
+| `filigrana` | Indica se aggiungere un watermark generato dall'IA al risultato (predefinito: false). | BOOLEAN | Sì | true<br>false |
 
 ### Input di wan3.0-video e wan3.0-video-prime
 

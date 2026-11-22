@@ -6,10 +6,10 @@ Sintetizza audio vocale dal testo utilizzando il motore TTS Starfish di HeyGen. 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `text` | Testo da sintetizzare (fino a 5000 caratteri). Il parlato generato deve durare almeno 1 secondo. | STRING | Sì | da 1 a 5000 caratteri |
-| `voice` | Voce da utilizzare (selezionata tra le voci compatibili con Starfish più popolari di HeyGen). | STRING | Sì | Sono disponibili più opzioni |
+| `testo` | Testo da sintetizzare (fino a 5000 caratteri). Il parlato generato deve durare almeno 1 secondo. | STRING | Sì | da 1 a 5000 caratteri |
+| `voce` | Voce da utilizzare (selezionata tra le voci compatibili con Starfish più popolari di HeyGen). | STRING | Sì | Sono disponibili più opzioni |
 | `custom_voice_id` | ID voce HeyGen opzionale. Se impostato, sostituisce la voce selezionata sopra. La voce deve supportare il motore Starfish (predefinito: vuoto). | STRING | No | Qualsiasi ID voce HeyGen valido |
-| `speed` | Moltiplicatore della velocità del parlato (predefinito: 1.0). | FLOAT | No | da 0.5 a 2.0 (passo: 0.05) |
+| `velocità` | Moltiplicatore della velocità del parlato (predefinito: 1.0). | FLOAT | No | da 0.5 a 2.0 (passo: 0.05) |
 | `ssml` | Tratta il testo come markup SSML (per pause, enfasi e controllo della pronuncia) (predefinito: False). | BOOLEAN | No | True / False |
 | `seed` | Non inviato a HeyGen; modificalo per forzare una nuova esecuzione (predefinito: 42). | INT | No | da 0 a 2147483647 |
 

@@ -6,16 +6,16 @@ Il nodo WanDancerVideo prepara i dati di condizionamento e un tensore latente vu
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | Il condizionamento positivo per guidare la generazione video. | CONDITIONING | Sì |  |
-| `negative` | Il condizionamento negativo per guidare la generazione video. | CONDITIONING | Sì |  |
+| `positivo` | Il condizionamento positivo per guidare la generazione video. | CONDITIONING | Sì |  |
+| `negativo` | Il condizionamento negativo per guidare la generazione video. | CONDITIONING | Sì |  |
 | `vae` | Il VAE usato per codificare l'immagine iniziale nello spazio latente. | VAE | Sì |  |
-| `width` | La larghezza del video generato in pixel (predefinito: 480). | INT | Sì | 16 a MAX_RESOLUTION (passo: 16) |
-| `height` | L'altezza del video generato in pixel (predefinito: 832). | INT | Sì | 16 a MAX_RESOLUTION (passo: 16) |
-| `length` | Il numero di fotogrammi nel video generato. Dovrebbe rimanere 149 per WanDancer (predefinito: 149). | INT | Sì | 1 a MAX_RESOLUTION (passo: 4) |
+| `larghezza` | La larghezza del video generato in pixel (predefinito: 480). | INT | Sì | 16 a MAX_RESOLUTION (passo: 16) |
+| `altezza` | L'altezza del video generato in pixel (predefinito: 832). | INT | Sì | 16 a MAX_RESOLUTION (passo: 16) |
+| `lunghezza` | Il numero di fotogrammi nel video generato. Dovrebbe rimanere 149 per WanDancer (predefinito: 149). | INT | Sì | 1 a MAX_RESOLUTION (passo: 4) |
 | `clip_vision_output` | Gli embedding CLIP vision per il primo fotogramma. | CLIP_VISION_OUTPUT | No |  |
 | `clip_vision_output_ref` | Gli embedding CLIP vision per l'immagine di riferimento. | CLIP_VISION_OUTPUT | No |  |
-| `start_image` | L'immagine o le immagini iniziali da codificare; può contenere un numero qualsiasi di fotogrammi. | IMAGE | No |  |
-| `mask` | Maschera di condizionamento immagine per l'immagine o le immagini iniziali. Il bianco viene mantenuto, il nero viene generato. Usata per le generazioni locali. | MASK | No |  |
+| `immagine_iniziale` | L'immagine o le immagini iniziali da codificare; può contenere un numero qualsiasi di fotogrammi. | IMAGE | No |  |
+| `maschera` | Maschera di condizionamento immagine per l'immagine o le immagini iniziali. Il bianco viene mantenuto, il nero viene generato. Usata per le generazioni locali. | MASK | No |  |
 | `audio_encoder_output` | Un output dell'encoder audio che fornisce caratteristiche audio, frequenza dei fotogrammi e valori di scala di iniezione, che vengono allegati al condizionamento quando fornito. | AUDIO_ENCODER_OUTPUT | No |  |
 
 ### Note sul comportamento dei parametri

@@ -6,7 +6,7 @@ Questo nodo rileva automaticamente i modelli situati nella cartella `ComfyUI/mod
 
 | Campo | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `clip_name` | Elenca tutti i file modello supportati nella cartella `ComfyUI/models/clip_vision`. | COMBO[STRING] |
+| `nome_clip` | Elenca tutti i file modello supportati nella cartella `ComfyUI/models/clip_vision`. | COMBO[STRING] |
 
 ## Output
 

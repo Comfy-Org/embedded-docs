@@ -6,7 +6,7 @@ Questo nodo è deprecato e non svolge alcuna funzione. Accetta un modello come i
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello da passare attraverso il nodo. | MODEL | Sì |  |
+| `modello` | Il modello da passare attraverso il nodo. | MODEL | Sì |  |
 
 ## Output
 

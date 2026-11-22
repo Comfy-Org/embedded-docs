@@ -6,9 +6,9 @@ Questo nodo crea un'immagine latente vuota nello spazio dei pixel per il modello
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `width` | La larghezza dell'immagine latente in pixel. Predefinito: 2048. Il valore deve essere un multiplo di 32. Il modello è stato addestrato a circa 4 megapixel; risoluzioni inferiori possono ridurre visibilmente la qualità. | INT | Sì | 64 a 4096 (passo: 32) |
-| `height` | L'altezza dell'immagine latente in pixel. Predefinito: 2048. Il valore deve essere un multiplo di 32. Il modello è stato addestrato a circa 4 megapixel; risoluzioni inferiori possono ridurre visibilmente la qualità. | INT | Sì | 64 a 4096 (passo: 32) |
-| `batch_size` | Il numero di immagini latenti da generare in un singolo batch. Predefinito: 1. | INT | Sì | 1 a 64 |
+| `larghezza` | La larghezza dell'immagine latente in pixel. Predefinito: 2048. Il valore deve essere un multiplo di 32. Il modello è stato addestrato a circa 4 megapixel; risoluzioni inferiori possono ridurre visibilmente la qualità. | INT | Sì | 64 a 4096 (passo: 32) |
+| `altezza` | L'altezza dell'immagine latente in pixel. Predefinito: 2048. Il valore deve essere un multiplo di 32. Il modello è stato addestrato a circa 4 megapixel; risoluzioni inferiori possono ridurre visibilmente la qualità. | INT | Sì | 64 a 4096 (passo: 32) |
+| `dimensione batch` | Il numero di immagini latenti da generare in un singolo batch. Predefinito: 1. | INT | Sì | 1 a 64 |
 
 ## Output
 

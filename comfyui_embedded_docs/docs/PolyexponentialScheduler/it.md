@@ -6,7 +6,7 @@ Il nodo PolyexponentialScheduler è progettato per generare una sequenza di live
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `steps` | Specifica il numero di passaggi nel processo di diffusione, influenzando la granularità dei livelli di rumore generati. | INT |
+| `passi` | Specifica il numero di passaggi nel processo di diffusione, influenzando la granularità dei livelli di rumore generati. | INT |
 | `sigma_max` | Il livello massimo di rumore, che imposta il limite superiore della schedulazione del rumore. | FLOAT |
 | `sigma_min` | Il livello minimo di rumore, che imposta il limite inferiore della schedulazione del rumore. | FLOAT |
 | `rho` | Un parametro che controlla la forma della schedulazione del rumore poliesponenziale, influenzando il modo in cui i livelli di rumore progrediscono tra i valori minimo e massimo. | FLOAT |

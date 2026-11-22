@@ -7,7 +7,7 @@ Questo nodo salva i dati audio in un file in formato FLAC. Prende un input audio
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
 | `audio` | I dati audio da salvare | AUDIO | Sì | - |
-| `filename_prefix` | Il prefisso per il nome file di output (predefinito: "audio/ComfyUI") | STRING | No | - |
+| `prefisso_nome_file` | Il prefisso per il nome file di output (predefinito: "audio/ComfyUI") | STRING | No | - |
 
 *Nota: i parametri `prompt` e `extra_pnginfo` sono nascosti e gestiti automaticamente dal sistema.*
 

@@ -6,8 +6,8 @@ Il nodo RescaleCFG è progettato per regolare le scale di condizionamento e inco
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `model` | Il parametro `model` rappresenta il modello generativo da regolare. È cruciale poiché il nodo applica una funzione di riscalatura all'output del modello, influenzando direttamente il processo di generazione. | MODEL |
-| `multiplier` | Il parametro `multiplier` controlla l'entità della riscalatura applicata all'output del modello. Determina l'equilibrio tra le componenti originali e quelle riscalate, influenzando le caratteristiche dell'output finale. | `FLOAT` |
+| `modello` | Il parametro `model` rappresenta il modello generativo da regolare. È cruciale poiché il nodo applica una funzione di riscalatura all'output del modello, influenzando direttamente il processo di generazione. | MODEL |
+| `moltiplicatore` | Il parametro `multiplier` controlla l'entità della riscalatura applicata all'output del modello. Determina l'equilibrio tra le componenti originali e quelle riscalate, influenzando le caratteristiche dell'output finale. | `FLOAT` |
 
 ## Output
 

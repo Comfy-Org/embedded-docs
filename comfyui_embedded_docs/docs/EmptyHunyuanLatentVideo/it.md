@@ -6,10 +6,10 @@ Il nodo `EmptyHunyuanLatentVideo` è simile al nodo `EmptyLatentImage`. Puoi con
 
 | Parametro | Descrizione | Tipo Comfy |
 | --- | --- | --- |
-| `width` | Larghezza video, predefinita 848, minima 16, massima `nodes.MAX_RESOLUTION`, passo 16. | `INT` |
-| `height` | Altezza video, predefinita 480, minima 16, massima `nodes.MAX_RESOLUTION`, passo 16. | `INT` |
-| `length` | Lunghezza video, predefinita 25, minima 1, massima `nodes.MAX_RESOLUTION`, passo 4. | `INT` |
-| `batch_size` | Dimensione del batch, predefinita 1, minima 1, massima 4096. | `INT` |
+| `larghezza` | Larghezza video, predefinita 848, minima 16, massima `nodes.MAX_RESOLUTION`, passo 16. | `INT` |
+| `altezza` | Altezza video, predefinita 480, minima 16, massima `nodes.MAX_RESOLUTION`, passo 16. | `INT` |
+| `lunghezza` | Lunghezza video, predefinita 25, minima 1, massima `nodes.MAX_RESOLUTION`, passo 4. | `INT` |
+| `dimensione batch` | Dimensione del batch, predefinita 1, minima 1, massima 4096. | `INT` |
 
 ## Output
 

@@ -7,7 +7,7 @@ Il nodo VoxelToMeshBasic converte i dati voxel 3D in geometria mesh. Elabora i v
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `voxel` | I dati voxel 3D da convertire in una mesh | VOXEL | Sì | - |
-| `threshold` | Il valore di soglia utilizzato per determinare quali voxel diventano parte della superficie della mesh (predefinito: 0.6) | FLOAT | Sì | da -1.0 a 1.0 |
+| `soglia` | Il valore di soglia utilizzato per determinare quali voxel diventano parte della superficie della mesh (predefinito: 0.6) | FLOAT | Sì | da -1.0 a 1.0 |
 
 ## Output
 

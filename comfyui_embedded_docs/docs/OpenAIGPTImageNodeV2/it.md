@@ -28,7 +28,7 @@ Questi input compaiono quando `model` è impostato su `gpt-image-2.6-flare` o `g
 | `qualità` | Qualità dell'immagine, influisce sul costo e sul tempo di generazione (predefinito: `"low"`). | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 | `model.images` | Immagini di riferimento opzionali per la modifica delle immagini. Fino a 16 immagini. Vedi Input di riferimento per i dettagli. | IMAGE | No | 0 a 16 |
 | `model.mask` | Maschera opzionale per inpainting (le aree bianche verranno sostituite). Richiede esattamente un'immagine di riferimento. | MASK | No | N/D |
-| `model.complexity` | Quanto il modello pianifica l'immagine prima del rendering. Valori più bassi restituiscono più rapidamente, valori più alti pianificano di più. Predefinito: `"high"`. | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"` |
+| `complessità` | Quanto il modello pianifica l'immagine prima del rendering. Valori più bassi restituiscono più rapidamente, valori più alti pianificano di più. Predefinito: `"high"`. | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"` |
 
 ### Input di gpt-image-2.5-flare e gpt-image-2.5-sunburst
 

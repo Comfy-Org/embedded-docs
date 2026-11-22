@@ -6,13 +6,13 @@ Il nodo Vidu Image To Video Generation crea un breve video a partire da un'immag
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Nome del modello (predefinito: viduq1) | COMBO | Sì | `viduq1` |
-| `image` | Un'immagine da usare come frame iniziale del video generato | IMAGE | Sì | - |
+| `modello` | Nome del modello (predefinito: viduq1) | COMBO | Sì | `viduq1` |
+| `immagine` | Un'immagine da usare come frame iniziale del video generato | IMAGE | Sì | - |
 | `prompt` | Una descrizione testuale per la generazione del video (predefinito: vuoto) | STRING | No | - |
-| `duration` | Durata del video di output in secondi (predefinito: 5, fissato a 5 secondi) | INT | No | 5-5 |
+| `durata` | Durata del video di output in secondi (predefinito: 5, fissato a 5 secondi) | INT | No | 5-5 |
 | `seed` | Seed per la generazione del video (0 per casuale) (predefinito: 0) | INT | No | 0-2147483647 |
-| `resolution` | I valori supportati possono variare in base al modello e alla durata (predefinito: 1080p) | COMBO | No | `1080p` |
-| `movement_amplitude` | L'ampiezza di movimento degli oggetti nel frame (predefinito: auto) | COMBO | No | `auto`<br>`small`<br>`medium`<br>`large` |
+| `risoluzione` | I valori supportati possono variare in base al modello e alla durata (predefinito: 1080p) | COMBO | No | `1080p` |
+| `ampiezza_movimento` | L'ampiezza di movimento degli oggetti nel frame (predefinito: auto) | COMBO | No | `auto`<br>`small`<br>`medium`<br>`large` |
 
 **Vincoli:**
 

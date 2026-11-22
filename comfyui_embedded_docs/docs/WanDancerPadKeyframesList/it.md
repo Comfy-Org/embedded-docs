@@ -8,9 +8,9 @@ Questo nodo riceve in input una sequenza di immagini e una traccia audio opziona
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `images` | La sequenza di immagini di input da suddividere in segmenti. | IMAGE | Sì | N/A |
-| `segment_length` | Lunghezza di ciascun segmento in frame (predefinito: 149). | INT | Sì | 1 a 10000 |
-| `num_segments` | Quanti segmenti con padding emettere come liste (predefinito: 1). | INT | Sì | 1 a 100 |
+| `immagini` | La sequenza di immagini di input da suddividere in segmenti. | IMAGE | Sì | N/A |
+| `lunghezza_segmento` | Lunghezza di ciascun segmento in frame (predefinito: 149). | INT | Sì | 1 a 10000 |
+| `numero_segmenti` | Quanti segmenti con padding emettere come liste (predefinito: 1). | INT | Sì | 1 a 100 |
 | `audio` | Audio da suddividere per ciascun segmento emesso. | AUDIO | No | N/A |
 
 ## Output

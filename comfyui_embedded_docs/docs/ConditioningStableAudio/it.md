@@ -6,10 +6,10 @@ Il nodo ConditioningStableAudio aggiunge informazioni di temporizzazione sia agl
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | L'input di conditioning `positive` da modificare con le informazioni di temporizzazione audio | CONDITIONING | Sì | - |
-| `negative` | L'input di conditioning `negative` da modificare con le informazioni di temporizzazione audio | CONDITIONING | Sì | - |
-| `seconds_start` | Il tempo iniziale in secondi per la generazione audio (predefinito: 0.0) | FLOAT | Sì | 0.0 a 1000.0 (passo 0.1) |
-| `seconds_total` | La durata totale in secondi per la generazione audio (predefinito: 47.0) | FLOAT | Sì | 0.0 a 1000.0 (passo 0.1) |
+| `positivo` | L'input di conditioning `positive` da modificare con le informazioni di temporizzazione audio | CONDITIONING | Sì | - |
+| `negativo` | L'input di conditioning `negative` da modificare con le informazioni di temporizzazione audio | CONDITIONING | Sì | - |
+| `secondi_inizio` | Il tempo iniziale in secondi per la generazione audio (predefinito: 0.0) | FLOAT | Sì | 0.0 a 1000.0 (passo 0.1) |
+| `secondi_totali` | La durata totale in secondi per la generazione audio (predefinito: 47.0) | FLOAT | Sì | 0.0 a 1000.0 (passo 0.1) |
 
 ## Output
 

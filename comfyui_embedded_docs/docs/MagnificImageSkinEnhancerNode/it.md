@@ -6,10 +6,10 @@ Il nodo Magnific Image Skin Enhancer applica un'elaborazione AI specializzata al
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine di ritratto da migliorare. | IMAGE | Sì | - |
-| `sharpen` | Livello di intensità della nitidezza (predefinito: 0). | INT | No | 0 a 100 |
-| `smart_grain` | Livello di intensità della grana intelligente (predefinito: 2). | INT | No | 0 a 100 |
-| `mode` | La modalità di elaborazione da usare. `"creative"` è per il miglioramento artistico, `"faithful"` per preservare l'aspetto originale e `"flexible"` per un'ottimizzazione mirata. | COMBO | Sì | `"creative"`<br>`"faithful"`<br>`"flexible"` |
+| `immagine` | L'immagine di ritratto da migliorare. | IMAGE | Sì | - |
+| `nitidezza` | Livello di intensità della nitidezza (predefinito: 0). | INT | No | 0 a 100 |
+| `grana intelligente` | Livello di intensità della grana intelligente (predefinito: 2). | INT | No | 0 a 100 |
+| `modalità` | La modalità di elaborazione da usare. `"creative"` è per il miglioramento artistico, `"faithful"` per preservare l'aspetto originale e `"flexible"` per un'ottimizzazione mirata. | COMBO | Sì | `"creative"`<br>`"faithful"`<br>`"flexible"` |
 | `skin_detail` | Livello di miglioramento dei dettagli della pelle. Questo input è disponibile solo quando `mode` è impostato su `"faithful"` (predefinito: 80). | INT | No | 0 a 100 |
 | `optimized_for` | Obiettivo di ottimizzazione del miglioramento. Questo input è disponibile solo quando `mode` è impostato su `"flexible"`. | COMBO | No | `"enhance_skin"`<br>`"improve_lighting"`<br>`"enhance_everything"`<br>`"transform_to_real"`<br>`"no_make_up"` |
 

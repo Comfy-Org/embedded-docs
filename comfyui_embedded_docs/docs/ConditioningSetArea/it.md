@@ -7,11 +7,11 @@ Questo nodo è progettato per modificare le informazioni di condizionamento impo
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
 | `CONDITIONING` | I dati di condizionamento da modificare. Fungono da base per applicare le regolazioni spaziali. | CONDITIONING |
-| `width` | Specifica la larghezza dell'area da impostare all'interno del contesto di condizionamento, influenzando l'estensione orizzontale della regolazione. | `INT` |
-| `height` | Determina l'altezza dell'area da impostare, influenzando l'estensione verticale della modifica del condizionamento. | `INT` |
+| `larghezza` | Specifica la larghezza dell'area da impostare all'interno del contesto di condizionamento, influenzando l'estensione orizzontale della regolazione. | `INT` |
+| `altezza` | Determina l'altezza dell'area da impostare, influenzando l'estensione verticale della modifica del condizionamento. | `INT` |
 | `x` | Il punto di partenza orizzontale dell'area da impostare, posizionando la regolazione all'interno del contesto di condizionamento. | `INT` |
 | `y` | Il punto di partenza verticale per la regolazione dell'area, stabilendone la posizione all'interno del contesto di condizionamento. | `INT` |
-| `strength` | Definisce l'intensità della modifica del condizionamento all'interno dell'area specificata, consentendo un controllo preciso sull'impatto della regolazione. | `FLOAT` |
+| `intensità` | Definisce l'intensità della modifica del condizionamento all'interno dell'area specificata, consentendo un controllo preciso sull'impatto della regolazione. | `FLOAT` |
 
 ## Output
 

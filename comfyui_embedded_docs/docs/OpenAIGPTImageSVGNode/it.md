@@ -10,7 +10,7 @@ OpenAI GPT Image 2.6 SVG genera un SVG modificabile da un prompt con i modelli G
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello GPT Image da usare per l'SVG. | DYNAMIC_COMBO | Sì | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
+| `modello` | Il modello GPT Image da usare per l'SVG. | DYNAMIC_COMBO | Sì | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
 
 ### Input di gpt-image-2.6-flare e gpt-image-2.6-sunburst
 
@@ -18,12 +18,12 @@ Entrambi i modelli condividono gli stessi parametri.
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Descrizione dell'SVG da disegnare. (predefinito: `""`) | STRING | Sì | N/A |
-| `model.size` | Dimensione dell'immagine di riferimento da cui viene disegnato l'SVG. (predefinito: `"1024x1024"`) | COMBO | Sì | `"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"` |
-| `model.background` | Sfondo dell'immagine di riferimento. (predefinito: `"auto"`) | COMBO | Sì | `"auto"`<br>`"opaque"`<br>`"transparent"` |
-| `model.quality` | Qualità dell'immagine di riferimento da cui viene disegnato l'SVG. (predefinito: `"low"`) | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | Quanto il modello pianifica l'immagine di riferimento prima del rendering. (predefinito: `"high"`) | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"` |
-| `model.seed` | Controlla se il nodo viene rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: `42`) | INT | Sì | 0 a 2147483647 |
+| `prompt` | Descrizione dell'SVG da disegnare. (predefinito: `""`) | STRING | Sì | N/A |
+| `dimensione` | Dimensione dell'immagine di riferimento da cui viene disegnato l'SVG. (predefinito: `"1024x1024"`) | COMBO | Sì | `"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"` |
+| `sfondo` | Sfondo dell'immagine di riferimento. (predefinito: `"auto"`) | COMBO | Sì | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `qualità` | Qualità dell'immagine di riferimento da cui viene disegnato l'SVG. (predefinito: `"low"`) | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `complessità` | Quanto il modello pianifica l'immagine di riferimento prima del rendering. (predefinito: `"high"`) | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"` |
+| `seed` | Controlla se il nodo viene rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: `42`) | INT | Sì | 0 a 2147483647 |
 
 ## Output
 

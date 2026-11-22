@@ -10,16 +10,16 @@ Il nodo Tripo: Texture model (Legacy) aggiunge texture a un modello 3D Tripo esi
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model_task_id` | L'ID attività Tripo del modello da texturizzare. Accetta ID attività di modello e ID attività di segmentazione. | MODEL_TASK_ID, SEGMENT_TASK_ID | Sì | - |
+| `task_id_modello` | L'ID attività Tripo del modello da texturizzare. Accetta ID attività di modello e ID attività di segmentazione. | MODEL_TASK_ID, SEGMENT_TASK_ID | Sì | - |
 | `texture` | Ignorato: questo nodo genera sempre le texture. Mantenuto per flussi di lavoro precedenti. (predefinito: True) | BOOLEAN | No | true<br>false |
 | `pbr` | Mappe materiali PBR (colore base, metallico, rugosità, normale); disattivato fornisce una texture a tinta unita. (predefinito: True) | BOOLEAN | No | true<br>false |
-| `texture_seed` | Seed casuale per la generazione delle texture. (predefinito: 42) | INT | No | 0 – 2147483647 |
-| `texture_quality` | Qualità della risoluzione delle texture: detailed = texture HD, extreme = texture 8K Ultra. (predefinito: "standard"). Costo approssimativo: standard $0.10, detailed $0.20, extreme $0.30. | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
-| `texture_alignment` | Metodo utilizzato per allineare le texture generate al modello. (predefinito: "original_image") | COMBO | No | "original_image"<br>"geometry" |
-| `texture_prompt` | Guida testuale opzionale per il texturing. In pratica obbligatoria per i modelli importati (Tripo: Import Model), che non hanno un'immagine di origine da cui inferire i colori. Non può essere combinata con immagini di riferimento. (predefinito: "") | STRING | No | - |
+| `seme_texture` | Seed casuale per la generazione delle texture. (predefinito: 42) | INT | No | 0 – 2147483647 |
+| `qualità_texture` | Qualità della risoluzione delle texture: detailed = texture HD, extreme = texture 8K Ultra. (predefinito: "standard"). Costo approssimativo: standard $0.10, detailed $0.20, extreme $0.30. | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
+| `allineamento_texture` | Metodo utilizzato per allineare le texture generate al modello. (predefinito: "original_image") | COMBO | No | "original_image"<br>"geometry" |
+| `prompt_texture` | Guida testuale opzionale per il texturing. In pratica obbligatoria per i modelli importati (Tripo: Import Model), che non hanno un'immagine di origine da cui inferire i colori. Non può essere combinata con immagini di riferimento. (predefinito: "") | STRING | No | - |
 | `model_version` | Modello di texture: v3.0 per mesh generate con v3.x, v2.5 per mesh generate con v2.5. (predefinito: v3.0_20250812) | COMBO | No | Più opzioni disponibili |
 | `style_image` | Immagine di riferimento per lo stile artistico delle texture. Utilizzata solo insieme a `texture_prompt`. | IMAGE | No | - |
-| `reference` | Immagini di riferimento che guidano le texture. Non può essere combinato con `texture_prompt` o `style_image`. (predefinito: "none") | DYNAMIC_COMBO | No | "none"<br>"image"<br>"multiview" |
+| `riferimento` | Immagini di riferimento che guidano le texture. Non può essere combinato con `texture_prompt` o `style_image`. (predefinito: "none") | DYNAMIC_COMBO | No | "none"<br>"image"<br>"multiview" |
 | `part_names` | Nomi delle parti separati da virgola da Tripo: Segment Model da texturizzare. Se vuoto, texturizza ogni parte. (predefinito: "") | STRING | No | - |
 
 ### Input di riferimento `image`

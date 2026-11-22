@@ -8,9 +8,9 @@ Questo nodo genera un video creando una transizione tra un fotogramma iniziale e
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Modello da utilizzare per la generazione del video. Selezionando un'opzione vengono mostrati parametri di configurazione aggiuntivi per `resolution`, `duration` e `audio`. | DYNAMIC_COMBO | Sì | `"viduq3-pro"`<br>`"viduq3-turbo"` |
-| `first_frame` | L'immagine iniziale della sequenza video. | IMAGE | Sì | - |
-| `end_frame` | L'immagine finale della sequenza video. | IMAGE | Sì | - |
+| `modello` | Modello da utilizzare per la generazione del video. Selezionando un'opzione vengono mostrati parametri di configurazione aggiuntivi per `resolution`, `duration` e `audio`. | DYNAMIC_COMBO | Sì | `"viduq3-pro"`<br>`"viduq3-turbo"` |
+| `frame_iniziale` | L'immagine iniziale della sequenza video. | IMAGE | Sì | - |
+| `frame_finale` | L'immagine finale della sequenza video. | IMAGE | Sì | - |
 | `prompt` | Descrizione del prompt (max 2000 caratteri). | STRING | Sì | Fino a 2000 caratteri |
 | `seed` | Valore seed usato per controllare la casualità della generazione. Ha un'opzione di controllo dopo la generazione (predefinito: 1). | INT | Sì | da 0 a 2147483647 |
 

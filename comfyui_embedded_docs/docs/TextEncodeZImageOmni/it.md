@@ -9,11 +9,11 @@ TextEncodeZImageOmni codifica un prompt testuale insieme a un massimo di tre imm
 | `clip` | Il modello CLIP utilizzato per tokenizzare e codificare il prompt testuale. | CLIP | Sì |  |
 | `image_encoder` | Un modello encoder visivo opzionale. Se fornito, viene utilizzato per codificare le immagini di input e gli embedding risultanti vengono aggiunti al condizionamento. | CLIP_VISION | No |  |
 | `prompt` | Il prompt testuale da codificare. Supporta input su più righe e prompt dinamici. | STRING | Sì |  |
-| `auto_resize_images` | Quando abilitato (predefinito: True), le immagini di input vengono ridimensionate automaticamente prima della codifica VAE, in modo che la loro area totale in pixel sia vicina a 1024x1024, con dimensioni arrotondate a multipli di 8. | BOOLEAN | Sì | True<br>False |
+| `ridimensiona_automaticamente_immagini` | Quando abilitato (predefinito: True), le immagini di input vengono ridimensionate automaticamente prima della codifica VAE, in modo che la loro area totale in pixel sia vicina a 1024x1024, con dimensioni arrotondate a multipli di 8. | BOOLEAN | Sì | True<br>False |
 | `vae` | Un modello VAE opzionale. Se fornito, viene utilizzato per codificare le immagini di input in rappresentazioni latenti, che vengono aggiunte al condizionamento come latenti di riferimento. | VAE | No |  |
-| `image1` | La prima immagine di riferimento opzionale. | IMAGE | No |  |
-| `image2` | La seconda immagine di riferimento opzionale. | IMAGE | No |  |
-| `image3` | La terza immagine di riferimento opzionale. | IMAGE | No |  |
+| `immagine1` | La prima immagine di riferimento opzionale. | IMAGE | No |  |
+| `immagine2` | La seconda immagine di riferimento opzionale. | IMAGE | No |  |
+| `immagine3` | La terza immagine di riferimento opzionale. | IMAGE | No |  |
 
 **Nota:** Il nodo accetta un massimo di tre immagini (`image1`, `image2`, `image3`). Gli input `image_encoder` e `vae` vengono utilizzati solo quando è fornita almeno un'immagine; quando entrambi sono collegati, ciascuna immagine viene elaborata da entrambi. Quando `auto_resize_images` è True e un `vae` è collegato, le immagini vengono ridimensionate in modo che la loro area totale in pixel sia vicina a 1024x1024 prima della codifica. Se non viene fornita alcuna immagine, viene codificato solo il prompt testuale.
 

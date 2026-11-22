@@ -6,8 +6,8 @@ Il nodo ModelSamplingStableCascade applica le impostazioni di campionamento Stab
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello di input a cui applicare il campionamento Stable Cascade | MODEL | Sì | - |
-| `shift` | Il valore di shift applicato ai parametri di campionamento (predefinito: 2.0) | FLOAT | Sì | 0.0 - 100.0 (passo 0.01) |
+| `modello` | Il modello di input a cui applicare il campionamento Stable Cascade | MODEL | Sì | - |
+| `spostamento` | Il valore di shift applicato ai parametri di campionamento (predefinito: 2.0) | FLOAT | Sì | 0.0 - 100.0 (passo 0.01) |
 
 ## Output
 

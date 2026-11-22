@@ -6,13 +6,13 @@ Il nodo RegexReplace trova e sostituisce testo nelle stringhe utilizzando espres
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `string` | La stringa di testo di input in cui cercare e sostituire | STRING | Sì | - |
-| `regex_pattern` | Il pattern di espressione regolare da cercare nella stringa di input | STRING | Sì | - |
-| `replace` | Il testo di sostituzione da usare al posto dei pattern corrispondenti | STRING | Sì | - |
-| `case_insensitive` | Se abilitato, fa sì che la corrispondenza dei pattern ignori le differenze tra maiuscole e minuscole (predefinito: True) | BOOLEAN | No | - |
-| `multiline` | Se abilitato, modifica il comportamento di ^ e $ in modo che corrispondano all'inizio/fine di ogni riga anziché solo all'inizio/fine dell'intera stringa (predefinito: False) | BOOLEAN | No | - |
+| `stringa` | La stringa di testo di input in cui cercare e sostituire | STRING | Sì | - |
+| `pattern_regex` | Il pattern di espressione regolare da cercare nella stringa di input | STRING | Sì | - |
+| `sostituisci` | Il testo di sostituzione da usare al posto dei pattern corrispondenti | STRING | Sì | - |
+| `maiuscole/minuscole` | Se abilitato, fa sì che la corrispondenza dei pattern ignori le differenze tra maiuscole e minuscole (predefinito: True) | BOOLEAN | No | - |
+| `multilinea` | Se abilitato, modifica il comportamento di ^ e $ in modo che corrispondano all'inizio/fine di ogni riga anziché solo all'inizio/fine dell'intera stringa (predefinito: False) | BOOLEAN | No | - |
 | `dotall` | Se abilitato, il carattere punto (.) corrisponderà a qualsiasi carattere, inclusi i caratteri di nuova riga. Se disabilitato, i punti non corrisponderanno ai caratteri di nuova riga (predefinito: False) | BOOLEAN | No | - |
-| `count` | Numero massimo di sostituzioni da effettuare. Impostare a 0 per sostituire tutte le occorrenze (predefinito). Impostare a 1 per sostituire solo la prima corrispondenza, 2 per le prime due corrispondenze, ecc. (predefinito: 0) | INT | No | 0-100 |
+| `conteggio` | Numero massimo di sostituzioni da effettuare. Impostare a 0 per sostituire tutte le occorrenze (predefinito). Impostare a 1 per sostituire solo la prima corrispondenza, 2 per le prime due corrispondenze, ecc. (predefinito: 0) | INT | No | 0-100 |
 
 ## Output
 

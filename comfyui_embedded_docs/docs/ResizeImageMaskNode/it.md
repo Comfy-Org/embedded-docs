@@ -7,7 +7,7 @@ The Resize Image/Mask node fornisce molteplici metodi per modificare le dimensio
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `input` | L'immagine o maschera da ridimensionare. | IMAGE or MASK | Sì | N/A |
-| `resize_type` | Il metodo utilizzato per determinare la nuova dimensione. I parametri richiesti cambiano in base al tipo selezionato. | COMBO | Sì | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE`<br>`SCALE_TO_MULTIPLE` |
+| `tipo_ridimensionamento` | Il metodo utilizzato per determinare la nuova dimensione. I parametri richiesti cambiano in base al tipo selezionato. | COMBO | Sì | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE`<br>`SCALE_TO_MULTIPLE` |
 | `multiplier` | Il fattore di scala. Richiesto quando `resize_type` è `SCALE_BY` (predefinito: 1.00). | FLOAT | No | 0.01 a 8.0 |
 | `width` | La larghezza desiderata in pixel. Richiesto quando `resize_type` è `SCALE_DIMENSIONS` o `SCALE_WIDTH` (predefinito: 512). | INT | No | 0 a 8192 |
 | `height` | L'altezza desiderata in pixel. Richiesto quando `resize_type` è `SCALE_DIMENSIONS` o `SCALE_HEIGHT` (predefinito: 512). | INT | No | 0 a 8192 |
@@ -17,7 +17,7 @@ The Resize Image/Mask node fornisce molteplici metodi per modificare le dimensio
 | `megapixels` | Il numero totale di megapixel desiderato. Richiesto quando `resize_type` è `SCALE_TOTAL_PIXELS` (predefinito: 1.0). | FLOAT | No | 0.01 a 16.0 |
 | `match` | Un'immagine o maschera le cui dimensioni verranno utilizzate per ridimensionare l'input. Richiesto quando `resize_type` è `MATCH_SIZE`. | IMAGE or MASK | No | N/A |
 | `multiple` | Il numero per cui larghezza e altezza vengono rese divisibili; utile per l'allineamento dei latenti (ad esempio 8 o 64). Richiesto quando `resize_type` è `SCALE_TO_MULTIPLE` (predefinito: 8). | INT | No | 1 a 8192 |
-| `scale_method` | L'algoritmo di interpolazione utilizzato per il ridimensionamento (predefinito: "area"). | COMBO | Sì | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"lanczos"` |
+| `metodo_scala` | L'algoritmo di interpolazione utilizzato per il ridimensionamento (predefinito: "area"). | COMBO | Sì | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"lanczos"` |
 
 **Nota:** Il parametro `crop` è disponibile e rilevante solo quando il `resize_type` è impostato su `SCALE_DIMENSIONS` o `MATCH_SIZE`. Quando si utilizzano `SCALE_WIDTH` o `SCALE_HEIGHT`, l'altra dimensione viene ridimensionata automaticamente per mantenere il rapporto d'aspetto originale.
 

@@ -6,9 +6,9 @@ Il nodo EmptyAudio genera un clip audio silenzioso con durata, frequenza di camp
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `duration` | Durata del clip audio vuoto in secondi (impostazione predefinita: 60.0) | FLOAT | Sì | 0.0 a 1.8446744073709552e+19 |
-| `sample_rate` | Frequenza di campionamento del clip audio vuoto (impostazione predefinita: 44100) | INT | Sì | 1 a 192000 |
-| `channels` | Numero di canali audio (1 per mono, 2 per stereo) (impostazione predefinita: 2) | INT | Sì | 1 a 2 |
+| `durata` | Durata del clip audio vuoto in secondi (impostazione predefinita: 60.0) | FLOAT | Sì | 0.0 a 1.8446744073709552e+19 |
+| `frequenza di campionamento` | Frequenza di campionamento del clip audio vuoto (impostazione predefinita: 44100) | INT | Sì | 1 a 192000 |
+| `canali` | Numero di canali audio (1 per mono, 2 per stereo) (impostazione predefinita: 2) | INT | Sì | 1 a 2 |
 
 ## Output
 | Nome output | Descrizione | Tipo di dati |

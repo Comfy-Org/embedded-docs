@@ -6,7 +6,7 @@ Questo nodo carica un dataset di addestramento codificato (latents e conditionin
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `folder_name` | Dataset salvato da caricare, dalla directory dei dataset. | COMBO | Sì | Un'opzione per ogni cartella dataset trovata nella directory dei dataset |
+| `nome_cartella` | Dataset salvato da caricare, dalla directory dei dataset. | COMBO | Sì | Un'opzione per ogni cartella dataset trovata nella directory dei dataset |
 
 Nota: le opzioni di `folder_name` vengono create automaticamente eseguendo la scansione della directory dei dataset. Una sottocartella viene elencata come dataset quando contiene un file `metadata.json` o almeno un file `.safetensors` (la scansione non entra in una cartella che corrisponde). La cartella dataset selezionata viene cercata in tutte le directory radice dei dataset configurate e il nome della cartella deve corrispondere a una sottocartella all'interno di una di tali radici. Il nodo legge tutti i file denominati `shard_*.pkl` nella cartella selezionata, in ordine ordinato, e genera un errore se non viene trovato alcun file shard o se la cartella non può essere individuata.
 

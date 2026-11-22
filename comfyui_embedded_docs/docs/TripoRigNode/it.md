@@ -8,7 +8,7 @@ Questo nodo prende un modello 3D Tripo esistente e ne crea una versione riggata,
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `original_model_task_id` | L'ID attività del modello 3D originale da riggare. Di solito è l'ID prodotto da un nodo Tripo di generazione del modello precedente. | MODEL_TASK_ID | Sì | - |
+| `ID task modello originale` | L'ID attività del modello 3D originale da riggare. Di solito è l'ID prodotto da un nodo Tripo di generazione del modello precedente. | MODEL_TASK_ID | Sì | - |
 | `model_version` | Versione del modello di rig da usare. v1.0: solo personaggi umanoidi (bipedi), oltre 90 preset di animazione. v2.5: creature non umanoidi (quadrupedi, esapodi, octopodi, aviani, serpentiformi, acquatici). Predefinito: `v1.0-20240301`. | COMBO | No | "v1.0-20240301"<br>"v2.5-20260210" |
 | `rig_type` | Tipo di scheletro. "auto" esegue prima il controllo gratuito del rig di Tripo e usa il tipo consigliato. Predefinito: "auto". | COMBO | No | "auto"<br>"biped"<br>"quadruped"<br>"hexapod"<br>"octopod"<br>"avian"<br>"serpentine"<br>"aquatic" |
 | `spec` | Denominazione delle ossa: nativa Tripo o compatibile Mixamo. Tripo non può eseguire il retargeting dei suoi preset di animazione su un rig v1.0 creato con la specifica mixamo; usa tripo per Tripo: Retarget rigged model. Predefinito: "tripo". | COMBO | No | "tripo"<br>"mixamo" |

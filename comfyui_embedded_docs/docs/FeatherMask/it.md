@@ -7,10 +7,10 @@ Il nodo `FeatherMask` applica un effetto di sfumatura ai bordi di una maschera s
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
 | `mask` | La maschera a cui applicare l'effetto di sfumatura. Determina l'area dell'immagine che sarà interessata dalla sfumatura. | MASK |
-| `left` | Specifica la distanza dal bordo sinistro entro cui verrà applicato l'effetto di sfumatura. | INT |
-| `top` | Specifica la distanza dal bordo superiore entro cui verrà applicato l'effetto di sfumatura. | INT |
-| `right` | Specifica la distanza dal bordo destro entro cui verrà applicato l'effetto di sfumatura. | INT |
-| `bottom` | Specifica la distanza dal bordo inferiore entro cui verrà applicato l'effetto di sfumatura. | INT |
+| `sinistra` | Specifica la distanza dal bordo sinistro entro cui verrà applicato l'effetto di sfumatura. | INT |
+| `alto` | Specifica la distanza dal bordo superiore entro cui verrà applicato l'effetto di sfumatura. | INT |
+| `destra` | Specifica la distanza dal bordo destro entro cui verrà applicato l'effetto di sfumatura. | INT |
+| `basso` | Specifica la distanza dal bordo inferiore entro cui verrà applicato l'effetto di sfumatura. | INT |
 
 ## Output
 

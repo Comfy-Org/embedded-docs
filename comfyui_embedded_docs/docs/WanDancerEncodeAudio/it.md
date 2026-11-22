@@ -7,8 +7,8 @@ Questo nodo analizza una clip audio e la trasforma in un insieme di feature che 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `audio` | L'input audio da analizzare e codificare. Se l'audio ha più canali, i canali vengono mediati in mono prima dell'estrazione delle feature. | AUDIO | Sì | - |
-| `video_frames` | Il numero di fotogrammi nel video di destinazione. Utilizzato per calcolare il frame rate per la sincronizzazione (predefinito: 149). | INT | Sì | Min: 1, Max: 16384 (MAX_RESOLUTION), Passo: 4 |
-| `audio_inject_scale` | La scala per le feature audio quando vengono iniettate nel modello video (predefinito: 1.0). | FLOAT | Sì | Min: 0.0, Max: 10.0, Passo: 0.01 |
+| `fotogrammi_video` | Il numero di fotogrammi nel video di destinazione. Utilizzato per calcolare il frame rate per la sincronizzazione (predefinito: 149). | INT | Sì | Min: 1, Max: 16384 (MAX_RESOLUTION), Passo: 4 |
+| `scala_iniezione_audio` | La scala per le feature audio quando vengono iniettate nel modello video (predefinito: 1.0). | FLOAT | Sì | Min: 0.0, Max: 10.0, Passo: 0.01 |
 
 ## Output
 

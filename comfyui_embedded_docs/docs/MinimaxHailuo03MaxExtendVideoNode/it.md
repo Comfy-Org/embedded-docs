@@ -8,7 +8,7 @@ Questo nodo continua un video con nuovo materiale video guidato da un prompt e d
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Modello da usare per continuare il video. Entrambi i modelli espongono gli stessi input di seguito. | DYNAMIC_COMBO | Sì | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `modello` | Modello da usare per continuare il video. Entrambi i modelli espongono gli stessi input di seguito. | DYNAMIC_COMBO | Sì | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
 
 ### Input dei modelli
 

@@ -6,11 +6,11 @@ Il nodo Image Grid combina più immagini in un'unica griglia o collage organizza
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `images` | Un elenco di immagini da disporre nella griglia. Il nodo richiede almeno un'immagine per funzionare. | IMAGE | Sì | - |
-| `columns` | Il numero di colonne nella griglia (predefinito: 4). | INT | No | 1 - 20 |
-| `cell_width` | La larghezza, in pixel, di ciascuna cella nella griglia (predefinito: 256). | INT | No | 32 - 2048 |
-| `cell_height` | L'altezza, in pixel, di ciascuna cella nella griglia (predefinito: 256). | INT | No | 32 - 2048 |
-| `padding` | La quantità di padding, in pixel, da inserire tra le immagini nella griglia (predefinito: 4). | INT | No | 0 - 50 |
+| `immagini` | Un elenco di immagini da disporre nella griglia. Il nodo richiede almeno un'immagine per funzionare. | IMAGE | Sì | - |
+| `colonne` | Il numero di colonne nella griglia (predefinito: 4). | INT | No | 1 - 20 |
+| `larghezza cella` | La larghezza, in pixel, di ciascuna cella nella griglia (predefinito: 256). | INT | No | 32 - 2048 |
+| `altezza cella` | L'altezza, in pixel, di ciascuna cella nella griglia (predefinito: 256). | INT | No | 32 - 2048 |
+| `spaziatura` | La quantità di padding, in pixel, da inserire tra le immagini nella griglia (predefinito: 4). | INT | No | 0 - 50 |
 
 ## Output
 

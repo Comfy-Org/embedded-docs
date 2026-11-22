@@ -9,9 +9,9 @@ Il nodo **Topaz Video Enhance V2** dà nuova vita al video con una potente tecno
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `video` | Il video di input da elaborare. Deve essere in formato contenitore MP4. | VIDEO | Sì | - |
-| `upscaler_model` | Il modello AI utilizzato per eseguire l'upscaling del video. I sottoparametri disponibili dipendono dal modello selezionato. Selezionando `"Disabled"` si disabilita l'upscaling. | DYNAMIC_COMBO | Sì | `"Astra 2"`<br>`"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"`<br>`"Disabled"` |
-| `interpolation_model` | Il modello AI utilizzato per l'interpolazione dei fotogrammi. I sottoparametri disponibili dipendono dal modello selezionato. Selezionando `"Disabled"` si disabilita l'interpolazione. | DYNAMIC_COMBO | Sì | `"Disabled"`<br>`"apo-8"` |
-| `dynamic_compression_level` | Livello CQP utilizzato per la compressione video (predefinito: `"Low"`). | COMBO | No | `"Low"`<br>`"Mid"`<br>`"High"` |
+| `modello upscaler` | Il modello AI utilizzato per eseguire l'upscaling del video. I sottoparametri disponibili dipendono dal modello selezionato. Selezionando `"Disabled"` si disabilita l'upscaling. | DYNAMIC_COMBO | Sì | `"Astra 2"`<br>`"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"`<br>`"Disabled"` |
+| `modello di interpolazione` | Il modello AI utilizzato per l'interpolazione dei fotogrammi. I sottoparametri disponibili dipendono dal modello selezionato. Selezionando `"Disabled"` si disabilita l'interpolazione. | DYNAMIC_COMBO | Sì | `"Disabled"`<br>`"apo-8"` |
+| `livello di compressione dinamica` | Livello CQP utilizzato per la compressione video (predefinito: `"Low"`). | COMBO | No | `"Low"`<br>`"Mid"`<br>`"High"` |
 
 Le sezioni seguenti descrivono i sottoparametri visualizzati per ciascuna opzione dei selettori `upscaler_model` e `interpolation_model`. Le opzioni `"Disabled"` non mostrano parametri aggiuntivi.
 

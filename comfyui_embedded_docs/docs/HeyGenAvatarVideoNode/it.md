@@ -8,12 +8,12 @@ Genera un video con presentatore parlante da un avatar HeyGen. Questo nodo crea 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `engine` | Motore di rendering; ogni scelta elenca solo gli avatar che lo supportano. "auto" offre ogni avatar e sceglie il suo motore migliore (Avatar IV preferito). Avatar V è il più fedele, Avatar III è il più economico. | DYNAMIC_COMBO | Sì | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
+| `motore` | Motore di rendering; ogni scelta elenca solo gli avatar che lo supportano. "auto" offre ogni avatar e sceglie il suo motore migliore (Avatar IV preferito). Avatar V è il più fedele, Avatar III è il più economico. | DYNAMIC_COMBO | Sì | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
 | `custom_avatar_id` | ID opzionale dell'aspetto avatar di HeyGen. Se impostato, sovrascrive l'avatar selezionato sopra. Può essere utilizzato qualsiasi aspetto pubblico di HeyGen (oltre 3000) (o i tuoi avatar privati). Predefinito: `""`. | STRING | No |  |
-| `speech` | Guida l'avatar con un copione testuale (sintesi vocale di HeyGen) o il tuo audio. Nome visualizzato: "sorgente vocale". | DYNAMIC_COMBO | Sì | `"script"`<br>`"audio"` |
-| `resolution` | Risoluzione del video in uscita. Predefinito: `"1080p"`. | COMBO | No | `"720p"`<br>`"1080p"` |
+| `voce` | Guida l'avatar con un copione testuale (sintesi vocale di HeyGen) o il tuo audio. Nome visualizzato: "sorgente vocale". | DYNAMIC_COMBO | Sì | `"script"`<br>`"audio"` |
+| `risoluzione` | Risoluzione del video in uscita. Predefinito: `"1080p"`. | COMBO | No | `"720p"`<br>`"1080p"` |
 | `aspect_ratio` | Proporzioni del video in uscita. "auto" segue il filmato di origine dell'avatar. Predefinito: `"auto"`. | COMBO | No | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `background_color` | Colore di sfondo solido opzionale come codice esadecimale (es. `"#00ff00"`). Lasciare vuoto per utilizzare lo sfondo dell'avatar. Se fornito, il valore deve iniziare con `#`. Predefinito: `""`. | STRING | No |  |
+| `colore_sfondo` | Colore di sfondo solido opzionale come codice esadecimale (es. `"#00ff00"`). Lasciare vuoto per utilizzare lo sfondo dell'avatar. Se fornito, il valore deve iniziare con `#`. Predefinito: `""`. | STRING | No |  |
 | `seed` | Non inviato a HeyGen; modificalo per forzare una nuova esecuzione. Predefinito: `42`. | INT | No | Minimo: 0<br>Massimo: 2147483647 |
 
 ### Input di `auto`

@@ -6,11 +6,11 @@ Il nodo CropMask è progettato per ritagliare un'area specificata da una mascher
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `mask` | L'input `mask` rappresenta l'immagine maschera da ritagliare. È essenziale per definire l'area da estrarre in base alle coordinate e alle dimensioni specificate. | MASK |
+| `maschera` | L'input `mask` rappresenta l'immagine maschera da ritagliare. È essenziale per definire l'area da estrarre in base alle coordinate e alle dimensioni specificate. | MASK |
 | `x` | La coordinata `x` specifica il punto di partenza sull'asse orizzontale da cui deve iniziare il ritaglio. | INT |
 | `y` | La coordinata `y` determina il punto di partenza sull'asse verticale per l'operazione di ritaglio. | INT |
-| `width` | La larghezza (`width`) definisce l'estensione orizzontale dell'area di ritaglio dal punto di partenza. | INT |
-| `height` | L'altezza (`height`) specifica l'estensione verticale dell'area di ritaglio dal punto di partenza. | INT |
+| `larghezza` | La larghezza (`width`) definisce l'estensione orizzontale dell'area di ritaglio dal punto di partenza. | INT |
+| `altezza` | L'altezza (`height`) specifica l'estensione verticale dell'area di ritaglio dal punto di partenza. | INT |
 
 ## Output
 

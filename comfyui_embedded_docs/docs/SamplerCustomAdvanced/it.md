@@ -6,11 +6,11 @@ Il nodo SamplerCustomAdvanced esegue un campionamento avanzato nello spazio late
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `noise` | Il generatore di rumore che fornisce il pattern di rumore iniziale e il seed per il processo di campionamento | NOISE | Sì | - |
-| `guider` | Il modello di guida che indirizza il processo di campionamento verso l'output desiderato | GUIDER | Sì | - |
-| `sampler` | L'algoritmo di campionamento che definisce come lo spazio latente viene attraversato durante la generazione | SAMPLER | Sì | - |
-| `sigmas` | Il programma sigma che controlla i livelli di rumore durante i passaggi di campionamento | SIGMAS | Sì | - |
-| `latent_image` | La rappresentazione latente iniziale che funge da punto di partenza per il campionamento. Supporta una chiave opzionale `noise_mask` per la denoizzazione selettiva, e chiavi opzionali `downscale_ratio_spacial` e `downscale_ratio_temporal` per una gestione avanzata del latente | LATENT | Sì | - |
+| `rumore` | Il generatore di rumore che fornisce il pattern di rumore iniziale e il seed per il processo di campionamento | NOISE | Sì | - |
+| `guida` | Il modello di guida che indirizza il processo di campionamento verso l'output desiderato | GUIDER | Sì | - |
+| `campionatore` | L'algoritmo di campionamento che definisce come lo spazio latente viene attraversato durante la generazione | SAMPLER | Sì | - |
+| `sigma` | Il programma sigma che controlla i livelli di rumore durante i passaggi di campionamento | SIGMAS | Sì | - |
+| `immagine latente` | La rappresentazione latente iniziale che funge da punto di partenza per il campionamento. Supporta una chiave opzionale `noise_mask` per la denoizzazione selettiva, e chiavi opzionali `downscale_ratio_spacial` e `downscale_ratio_temporal` per una gestione avanzata del latente | LATENT | Sì | - |
 
 ## Output
 

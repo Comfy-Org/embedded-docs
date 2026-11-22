@@ -5,8 +5,8 @@ Il nodo ImageQuantize è progettato per ridurre il numero di colori in un'immagi
 ## Input
 | Campo | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `image` | Il tensore immagine di input da quantizzare. Influisce sull'esecuzione del nodo essendo il dato principale su cui viene eseguita la riduzione cromatica. | `IMAGE` |
-| `colors` | Specifica il numero di colori a cui ridurre l'immagine. Influisce direttamente sul processo di quantizzazione determinando la dimensione della palette di colori. | `INT` |
+| `immagine` | Il tensore immagine di input da quantizzare. Influisce sull'esecuzione del nodo essendo il dato principale su cui viene eseguita la riduzione cromatica. | `IMAGE` |
+| `colori` | Specifica il numero di colori a cui ridurre l'immagine. Influisce direttamente sul processo di quantizzazione determinando la dimensione della palette di colori. | `INT` |
 | `dither` | Determina la tecnica di dithering da applicare durante la quantizzazione, influenzando la qualità visiva e l'aspetto dell'immagine di output. | COMBO[STRING] |
 
 ## Output

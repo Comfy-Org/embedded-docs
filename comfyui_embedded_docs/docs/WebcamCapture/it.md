@@ -6,10 +6,10 @@ Il nodo WebcamCapture acquisisce immagini da un dispositivo webcam e le converte
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | La sorgente di input webcam da cui acquisire le immagini | WEBCAM | Sì | - |
-| `width` | La larghezza desiderata per l'immagine acquisita (predefinito: 0, usa la risoluzione nativa della webcam) | INT | Sì | 0 a MAX_RESOLUTION |
-| `height` | L'altezza desiderata per l'immagine acquisita (predefinito: 0, usa la risoluzione nativa della webcam) | INT | Sì | 0 a MAX_RESOLUTION |
-| `capture_on_queue` | Se abilitato, acquisisce una nuova immagine ogni volta che la coda del flusso di lavoro viene elaborata (predefinito: True) | BOOLEAN | Sì | - |
+| `immagine` | La sorgente di input webcam da cui acquisire le immagini | WEBCAM | Sì | - |
+| `larghezza` | La larghezza desiderata per l'immagine acquisita (predefinito: 0, usa la risoluzione nativa della webcam) | INT | Sì | 0 a MAX_RESOLUTION |
+| `altezza` | L'altezza desiderata per l'immagine acquisita (predefinito: 0, usa la risoluzione nativa della webcam) | INT | Sì | 0 a MAX_RESOLUTION |
+| `cattura_in_coda` | Se abilitato, acquisisce una nuova immagine ogni volta che la coda del flusso di lavoro viene elaborata (predefinito: True) | BOOLEAN | Sì | - |
 
 **Nota:** Quando sia `width` sia `height` sono impostati a 0, il nodo usa la risoluzione nativa della webcam. Impostare una delle due dimensioni su un valore diverso da zero ridimensionerà l'immagine acquisita di conseguenza.
 

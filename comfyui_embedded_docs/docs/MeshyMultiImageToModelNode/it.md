@@ -8,11 +8,11 @@ Questo nodo utilizza l'API Meshy per generare un modello 3D da più immagini di 
 
 | Parametro | Descrizione | Tipo di dato | Richiesto | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Specifica la versione del modello AI da utilizzare. | COMBO | Sì | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `should_remesh` | Determina se la mesh generata viene elaborata. Se impostato su `"false"`, il nodo restituisce una mesh triangolare non elaborata. Se impostato su `"true"`, vengono mostrate le impostazioni di remesh sottostanti. | DYNAMIC_COMBO | Sì | `"true"`<br>`"false"` |
-| `symmetry_mode` | Controlla se la simmetria viene applicata al modello generato. | COMBO | Sì | `"auto"`<br>`"on"`<br>`"off"` |
-| `should_texture` | Determina se vengono generate le texture. Impostandolo su `"false"`, la fase di texture viene saltata e viene restituita una mesh senza texture. Se impostato su `"true"`, vengono mostrate le impostazioni texture sottostanti. | DYNAMIC_COMBO | Sì | `"true"`<br>`"false"` |
-| `pose_mode` | Specifica la modalità di posa per il modello generato. | COMBO | Sì | `""` (vuoto)<br>`"A-pose"`<br>`"T-pose"` |
+| `modello` | Specifica la versione del modello AI da utilizzare. | COMBO | Sì | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
+| `ricostruisci_mesh` | Determina se la mesh generata viene elaborata. Se impostato su `"false"`, il nodo restituisce una mesh triangolare non elaborata. Se impostato su `"true"`, vengono mostrate le impostazioni di remesh sottostanti. | DYNAMIC_COMBO | Sì | `"true"`<br>`"false"` |
+| `modalità_simmetria` | Controlla se la simmetria viene applicata al modello generato. | COMBO | Sì | `"auto"`<br>`"on"`<br>`"off"` |
+| `genera_texture` | Determina se vengono generate le texture. Impostandolo su `"false"`, la fase di texture viene saltata e viene restituita una mesh senza texture. Se impostato su `"true"`, vengono mostrate le impostazioni texture sottostanti. | DYNAMIC_COMBO | Sì | `"true"`<br>`"false"` |
+| `modalità_pose` | Specifica la modalità di posa per il modello generato. | COMBO | Sì | `""` (vuoto)<br>`"A-pose"`<br>`"T-pose"` |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: 0) | INT | Sì | 0 a 2147483647 |
 | `ultra_mode` | Esegue un passaggio di raffinamento aggiuntivo a 2048³ per una geometria di maggiore fedeltà con dettagli superficiali più fini. Richiede il modello `"meshy-7.1"`, `"meshy-7"` o `"latest"` (predefinito: `False`). | BOOLEAN | No | `True`<br>`False` |
 
@@ -36,7 +36,7 @@ Questo nodo utilizza l'API Meshy per generare un modello 3D da più immagini di 
 
 | Parametro | Descrizione | Tipo di dato | Richiesto | Intervallo |
 | --- | --- | --- | --- | --- |
-| `images` | Slot espandibile: collega da 2 a 4 immagini di input (`image_1`, `image_2`, `image_3`, `image_4`). Queste immagini vengono utilizzate per generare il modello 3D. | IMAGE | Sì | Da 2 a 4 immagini |
+| `immagini` | Slot espandibile: collega da 2 a 4 immagini di input (`image_1`, `image_2`, `image_3`, `image_4`). Queste immagini vengono utilizzate per generare il modello 3D. | IMAGE | Sì | Da 2 a 4 immagini |
 
 **Note**
 

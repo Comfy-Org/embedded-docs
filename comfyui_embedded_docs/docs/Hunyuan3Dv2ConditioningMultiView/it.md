@@ -6,10 +6,10 @@ Il nodo Hunyuan3Dv2ConditioningMultiView combina gli output CLIP vision da un ma
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `front` | Output CLIP vision per la vista frontale. Input di vista opzionale. | CLIP_VISION_OUTPUT | No | - |
-| `left` | Output CLIP vision per la vista sinistra. Input di vista opzionale. | CLIP_VISION_OUTPUT | No | - |
-| `back` | Output CLIP vision per la vista posteriore. Input di vista opzionale. | CLIP_VISION_OUTPUT | No | - |
-| `right` | Output CLIP vision per la vista destra. Input di vista opzionale. | CLIP_VISION_OUTPUT | No | - |
+| `fronte` | Output CLIP vision per la vista frontale. Input di vista opzionale. | CLIP_VISION_OUTPUT | No | - |
+| `sinistra` | Output CLIP vision per la vista sinistra. Input di vista opzionale. | CLIP_VISION_OUTPUT | No | - |
+| `retro` | Output CLIP vision per la vista posteriore. Input di vista opzionale. | CLIP_VISION_OUTPUT | No | - |
+| `destra` | Output CLIP vision per la vista destra. Input di vista opzionale. | CLIP_VISION_OUTPUT | No | - |
 
 **Nota:** È necessario fornire almeno un input di vista affinché il nodo funzioni. Il nodo elabora solo le viste che contengono dati validi di output CLIP vision e salta le viste non connesse. Ciascuna vista riceve una codifica posizionale fissa in base al proprio slot (front, left, back, right), e gli embedding elaborati da tutte le viste fornite vengono uniti lungo la dimensione della sequenza.
 

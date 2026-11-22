@@ -6,12 +6,12 @@ Il nodo WanMoveVisualizeTracks sovrappone i dati di tracciamento del movimento s
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `images` | La sequenza di immagini di input o fotogrammi video su cui visualizzare i tracciati. | IMAGE | Sì | - |
-| `tracks` | I dati di tracciamento del movimento contenenti i percorsi dei punti e le informazioni di visibilità. Se non forniti, le immagini di input vengono passate invariate. | TRACKS | No | - |
-| `line_resolution` | Il numero di fotogrammi precedenti da utilizzare quando si disegna la linea del percorso per ogni traccia (predefinito: 24). | INT | Sì | 1 - 1024 |
-| `circle_size` | La dimensione del cerchio disegnato nella posizione corrente di ciascuna traccia (predefinito: 12). Contrassegnato come parametro avanzato. | INT | Sì | 1 - 128 |
-| `opacity` | L'opacità delle sovrapposizioni delle tracce disegnate (predefinito: 0.75). | FLOAT | Sì | 0.0 - 1.0 |
-| `line_width` | La larghezza delle linee utilizzate per disegnare i percorsi delle tracce (predefinito: 16). Contrassegnato come parametro avanzato. | INT | Sì | 1 - 128 |
+| `immagini` | La sequenza di immagini di input o fotogrammi video su cui visualizzare i tracciati. | IMAGE | Sì | - |
+| `tracce` | I dati di tracciamento del movimento contenenti i percorsi dei punti e le informazioni di visibilità. Se non forniti, le immagini di input vengono passate invariate. | TRACKS | No | - |
+| `risoluzione_linea` | Il numero di fotogrammi precedenti da utilizzare quando si disegna la linea del percorso per ogni traccia (predefinito: 24). | INT | Sì | 1 - 1024 |
+| `dimensione_cerchio` | La dimensione del cerchio disegnato nella posizione corrente di ciascuna traccia (predefinito: 12). Contrassegnato come parametro avanzato. | INT | Sì | 1 - 128 |
+| `opacità` | L'opacità delle sovrapposizioni delle tracce disegnate (predefinito: 0.75). | FLOAT | Sì | 0.0 - 1.0 |
+| `spessore_linea` | La larghezza delle linee utilizzate per disegnare i percorsi delle tracce (predefinito: 16). Contrassegnato come parametro avanzato. | INT | Sì | 1 - 128 |
 
 **Nota:** Se il numero di immagini di input non corrisponde al numero di fotogrammi nei dati `tracks` forniti, la sequenza di immagini verrà ripetuta per corrispondere alla lunghezza della traccia.
 

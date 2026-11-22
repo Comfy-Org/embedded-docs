@@ -7,8 +7,8 @@ Il nodo SaveAudioOpus salva i dati audio in un file nel formato Opus, consentend
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `audio` | I dati audio da salvare come file Opus. Viene generato un ValueError se questo è None (ad esempio, quando il video di origine non ha una traccia audio). | AUDIO | Sì | - |
-| `filename_prefix` | Il prefisso utilizzato per il nome file di output (predefinito: "audio/ComfyUI"). | STRING | No | - |
-| `quality` | Il bitrate utilizzato per codificare il file Opus; valori più alti producono una qualità migliore ma file più grandi (predefinito: "128k"). | COMBO | No | `"64k"`<br>`"96k"`<br>`"128k"`<br>`"192k"`<br>`"320k"` |
+| `prefisso_nome_file` | Il prefisso utilizzato per il nome file di output (predefinito: "audio/ComfyUI"). | STRING | No | - |
+| `qualità` | Il bitrate utilizzato per codificare il file Opus; valori più alti producono una qualità migliore ma file più grandi (predefinito: "128k"). | COMBO | No | `"64k"`<br>`"96k"`<br>`"128k"`<br>`"192k"`<br>`"320k"` |
 
 ## Output
 

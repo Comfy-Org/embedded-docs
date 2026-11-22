@@ -6,7 +6,7 @@ Questo nodo converte una rappresentazione latente audio in una forma d'onda audi
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `samples` | I campioni audio codificati nello spazio latente che verranno decodificati in una forma d'onda audio. Se i campioni contengono una propria frequenza di campionamento, viene utilizzato quel valore per l'output. | LATENT | Sì | - |
+| `campioni` | I campioni audio codificati nello spazio latente che verranno decodificati in una forma d'onda audio. Se i campioni contengono una propria frequenza di campionamento, viene utilizzato quel valore per l'output. | LATENT | Sì | - |
 | `vae` | Il modello autoencoder variazionale utilizzato per decodificare i campioni latenti in audio. La sua frequenza di campionamento audio in output (predefinita 44100 Hz) determina la frequenza di campionamento della forma d'onda risultante quando i campioni di input non ne specificano una. | VAE | Sì | - |
 
 ## Output

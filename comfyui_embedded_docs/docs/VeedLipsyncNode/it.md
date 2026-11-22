@@ -6,7 +6,7 @@ Risincronizza la bocca di un parlante in un video con una nuova traccia vocale t
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Modello da utilizzare. Selezionando un modello vengono mostrati i parametri specifici: `video`, `audio` e `seed`. | DYNAMIC_COMBO | Sì | `"lipsync-2.0"` |
+| `modello` | Modello da utilizzare. Selezionando un modello vengono mostrati i parametri specifici: `video`, `audio` e `seed`. | DYNAMIC_COMBO | Sì | `"lipsync-2.0"` |
 | `video` | Filmato di un solo parlante rivolto verso la telecamera. Se è più corto dell'audio, viene riprodotto in avanti e all'indietro fino alla fine dell'audio. | VIDEO | Sì | - |
 | `audio` | Nuovo parlato, fino a 600 secondi. Determina la durata del video. | AUDIO | Sì | Fino a 600 secondi |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: 42) | INT | Sì | 0 - 2147483647 |

@@ -10,10 +10,10 @@ Il selettore `moderation` mostra ulteriori opzioni di moderazione quando è impo
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine di input da cui verrà rimosso lo sfondo. | IMAGE | Sì | - |
-| `moderation` | Impostazioni di moderazione. Se impostato su `"true"`, diventano disponibili ulteriori opzioni di moderazione. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
+| `immagine` | L'immagine di input da cui verrà rimosso lo sfondo. | IMAGE | Sì | - |
+| `moderazione` | Impostazioni di moderazione. Se impostato su `"true"`, diventano disponibili ulteriori opzioni di moderazione. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; la stessa immagine dà sempre lo stesso risultato indipendentemente dal seed. Predefinito: `0`. | INT | Sì | 0 a 2147483647 |
-| `model` | Modello di rimozione dello sfondo. `"RMBG2"` è il predefinito; `"RMBG3"` usa il modello più recente Bria RMBG 3.0. | COMBO | No | `"RMBG2"`<br>`"RMBG3"` |
+| `modello` | Modello di rimozione dello sfondo. `"RMBG2"` è il predefinito; `"RMBG3"` usa il modello più recente Bria RMBG 3.0. | COMBO | No | `"RMBG2"`<br>`"RMBG3"` |
 
 ### Input per moderazione "true"
 

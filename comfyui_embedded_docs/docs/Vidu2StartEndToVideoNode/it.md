@@ -6,14 +6,14 @@ Questo nodo genera un video interpolando tra un frame iniziale e un frame finale
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Il modello Vidu da utilizzare per la generazione del video. | COMBO | Sì | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` |
-| `first_frame` | L'immagine iniziale per la sequenza video. È consentita una sola immagine. | IMAGE | Sì | - |
-| `end_frame` | L'immagine finale per la sequenza video. È consentita una sola immagine. | IMAGE | Sì | - |
+| `modello` | Il modello Vidu da utilizzare per la generazione del video. | COMBO | Sì | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` |
+| `frame_iniziale` | L'immagine iniziale per la sequenza video. È consentita una sola immagine. | IMAGE | Sì | - |
+| `frame_finale` | L'immagine finale per la sequenza video. È consentita una sola immagine. | IMAGE | Sì | - |
 | `prompt` | Descrizione del prompt (max 2000 caratteri). | STRING | Sì | - |
-| `duration` | La durata del video generato in secondi (predefinito: 5). | INT | No | da 2 a 8 |
+| `durata` | La durata del video generato in secondi (predefinito: 5). | INT | No | da 2 a 8 |
 | `seed` | Un numero utilizzato per inizializzare la generazione casuale per ottenere risultati riproducibili (predefinito: 1). | INT | No | da 0 a 2147483647 |
-| `resolution` | La risoluzione di output del video generato. | COMBO | No | `"720p"`<br>`"1080p"` |
-| `movement_amplitude` | L'ampiezza del movimento degli oggetti nel frame. | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` |
+| `risoluzione` | La risoluzione di output del video generato. | COMBO | No | `"720p"`<br>`"1080p"` |
+| `ampiezza_movimento` | L'ampiezza del movimento degli oggetti nel frame. | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` |
 
 **Nota:** Le immagini `first_frame` e `end_frame` devono avere rapporti d'aspetto simili. Il nodo verifica che i loro rapporti d'aspetto siano compresi in un intervallo relativo da 0,8 a 1,25. È consentita una sola immagine per ciascun input.
 

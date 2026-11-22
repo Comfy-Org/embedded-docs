@@ -8,9 +8,9 @@ Questo nodo prepara il condizionamento per la modifica delle immagini con Boogu.
 |-----------|-------------|-----------|----------|-------|
 | `clip` | Il modello CLIP utilizzato per la codifica del testo | CLIP | Sì | |
 | `prompt` | Il prompt testuale che descrive la modifica desiderata. Supporta testo multilinea e prompt dinamici. | STRING | Sì | |
-| `negative_prompt` | Il prompt testuale che descrive cosa evitare nella modifica. Può essere lasciato vuoto per eliminare il condizionamento negativo. Parametro avanzato. | STRING | Sì | |
+| `prompt_negativo` | Il prompt testuale che descrive cosa evitare nella modifica. Può essere lasciato vuoto per eliminare il condizionamento negativo. Parametro avanzato. | STRING | Sì | |
 | `vae` | Il modello VAE utilizzato per codificare le immagini di riferimento nello spazio latente. Necessario per aggiungere i latenti di riferimento agli output di condizionamento. | VAE | No | |
-| `images` | Immagine/i di riferimento da modificare. Boogu si concentra su un riferimento per campione; ne sono ammesse altre. | IMAGE | No | Fino a 16 immagini |
+| `immagini` | Immagine/i di riferimento da modificare. Boogu si concentra su un riferimento per campione; ne sono ammesse altre. | IMAGE | No | Fino a 16 immagini |
 
 I latenti di riferimento vengono aggiunti a entrambi gli output di condizionamento solo quando `vae` viene fornito insieme ad almeno un `image` di riferimento. Se `vae` viene omesso, l'output positivo riceve comunque i token di visione dalle immagini di riferimento, ma nessuno dei due output include i latenti di riferimento.
 

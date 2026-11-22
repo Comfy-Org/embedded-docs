@@ -6,9 +6,9 @@ Il nodo LTXV Empty Latent Audio crea un batch di tensori latenti audio vuoti (ri
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `frames_number` | Numero di frame. Il valore predefinito è 97. | INT | Sì | 1 a 1000 |
-| `frame_rate` | Numero di frame al secondo. Il valore predefinito è 25.0. Questo input accetta valori FLOAT o INT. | FLOAT | Sì | 1.0 a 1000.0 |
-| `batch_size` | Il numero di campioni audio latenti nel batch. Il valore predefinito è 1. | INT | Sì | 1 a 4096 |
+| `numero_frame` | Numero di frame. Il valore predefinito è 97. | INT | Sì | 1 a 1000 |
+| `frequenza_frame` | Numero di frame al secondo. Il valore predefinito è 25.0. Questo input accetta valori FLOAT o INT. | FLOAT | Sì | 1.0 a 1000.0 |
+| `dimensione_batch` | Il numero di campioni audio latenti nel batch. Il valore predefinito è 1. | INT | Sì | 1 a 4096 |
 | `audio_vae` | Il modello Audio VAE da cui ottenere la configurazione. Visualizzato come "Audio VAE". | VAE | Sì | N/A |
 
 **Nota:** L'input `audio_vae` è obbligatorio. Il nodo genera un errore se non viene fornito.

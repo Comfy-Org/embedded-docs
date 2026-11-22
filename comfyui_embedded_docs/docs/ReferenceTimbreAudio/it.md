@@ -6,7 +6,7 @@ Questo nodo imposta l'audio di riferimento per il processo "ace step 1.5". Ricev
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `conditioning` | I dati di condizionamento a cui verranno associate le informazioni dell'audio di riferimento. | CONDITIONING | Sì |  |
+| `condizionamento` | I dati di condizionamento a cui verranno associate le informazioni dell'audio di riferimento. | CONDITIONING | Sì |  |
 | `latent` | Una rappresentazione latente opzionale dell'audio di riferimento (predefinito: None). Se fornita, i suoi campioni vengono aggiunti ai dati di condizionamento come latenti del timbro dell'audio di riferimento. | LATENT | No |  |
 
 ## Output

@@ -8,7 +8,7 @@ Questo nodo anima un'immagine statica in modo che i movimenti della bocca seguan
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Modello da utilizzare per la generazione video. | DYNAMIC_COMBO | Sì | "MiniMax H3 Max" |
+| `modello` | Modello da utilizzare per la generazione video. | DYNAMIC_COMBO | Sì | "MiniMax H3 Max" |
 
 ### Input di MiniMax H3 Max
 

@@ -6,14 +6,14 @@ Il nodo Wan Text to Image genera immagini basate su descrizioni testuali. Utiliz
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Modello da usare (predefinito: "wan2.5-t2i-preview") | STRING | Sì | "wan2.5-t2i-preview" |
+| `modello` | Modello da usare (predefinito: "wan2.5-t2i-preview") | STRING | Sì | "wan2.5-t2i-preview" |
 | `prompt` | Prompt che descrive gli elementi e le caratteristiche visive. Supporta inglese e cinese (predefinito: vuoto) | STRING | Sì | - |
-| `negative_prompt` | Prompt negativo che descrive ciò che si desidera evitare (predefinito: vuoto) | STRING | No | - |
-| `width` | Larghezza dell'immagine in pixel (predefinito: 1024, passo: 32) | INT | No | 768-1440 |
-| `height` | Altezza dell'immagine in pixel (predefinito: 1024, passo: 32) | INT | No | 768-1440 |
-| `seed` | Seed da usare per la generazione (predefinito: 0) | INT | No | 0-2147483647 |
-| `prompt_extend` | Indica se migliorare il prompt con l'assistenza dell'IA (predefinito: True) | BOOLEAN | No | - |
-| `watermark` | Indica se aggiungere una filigrana generata dall'IA al risultato (predefinito: False) | BOOLEAN | No | - |
+| `prompt_negativo` | Prompt negativo che descrive ciò che si desidera evitare (predefinito: vuoto) | STRING | No | - |
+| `larghezza` | Larghezza dell'immagine in pixel (predefinito: 1024, passo: 32) | INT | No | 768-1440 |
+| `altezza` | Altezza dell'immagine in pixel (predefinito: 1024, passo: 32) | INT | No | 768-1440 |
+| `seme` | Seed da usare per la generazione (predefinito: 0) | INT | No | 0-2147483647 |
+| `estensione_prompt` | Indica se migliorare il prompt con l'assistenza dell'IA (predefinito: True) | BOOLEAN | No | - |
+| `filigrana` | Indica se aggiungere una filigrana generata dall'IA al risultato (predefinito: False) | BOOLEAN | No | - |
 
 ## Output
 

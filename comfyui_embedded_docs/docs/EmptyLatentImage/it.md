@@ -6,9 +6,9 @@ Il nodo `EmptyLatentImage` è progettato per generare una rappresentazione vuota
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `width` | Specifica la larghezza dell'immagine latente da generare. Questo parametro influenza direttamente le dimensioni spaziali della rappresentazione latente risultante. | `INT` |
-| `height` | Determina l'altezza dell'immagine latente da generare. Questo parametro è cruciale per definire le dimensioni spaziali della rappresentazione dello spazio latente. | `INT` |
-| `batch_size` | Controlla il numero di immagini latenti da generare in un singolo batch. Ciò consente di generare più rappresentazioni latenti simultaneamente, facilitando l'elaborazione batch. | `INT` |
+| `larghezza` | Specifica la larghezza dell'immagine latente da generare. Questo parametro influenza direttamente le dimensioni spaziali della rappresentazione latente risultante. | `INT` |
+| `altezza` | Determina l'altezza dell'immagine latente da generare. Questo parametro è cruciale per definire le dimensioni spaziali della rappresentazione dello spazio latente. | `INT` |
+| `dimensione_batch` | Controlla il numero di immagini latenti da generare in un singolo batch. Ciò consente di generare più rappresentazioni latenti simultaneamente, facilitando l'elaborazione batch. | `INT` |
 
 ## Output
 

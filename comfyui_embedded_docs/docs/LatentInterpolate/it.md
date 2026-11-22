@@ -6,9 +6,9 @@ Il nodo LatentInterpolate è progettato per eseguire l'interpolazione tra due in
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `samples1` | Il primo insieme di campioni latenti da interpolare. Funge da punto di partenza per il processo di interpolazione. | `LATENT` |
-| `samples2` | Il secondo insieme di campioni latenti da interpolare. Funge da punto finale per il processo di interpolazione. | `LATENT` |
-| `ratio` | Un valore a virgola mobile che determina il peso di ciascun insieme di campioni nell'output interpolato. Un rapporto pari a 0 produce una copia del primo insieme, mentre un rapporto pari a 1 produce una copia del secondo insieme. | `FLOAT` |
+| `campioni1` | Il primo insieme di campioni latenti da interpolare. Funge da punto di partenza per il processo di interpolazione. | `LATENT` |
+| `campioni2` | Il secondo insieme di campioni latenti da interpolare. Funge da punto finale per il processo di interpolazione. | `LATENT` |
+| `rapporto` | Un valore a virgola mobile che determina il peso di ciascun insieme di campioni nell'output interpolato. Un rapporto pari a 0 produce una copia del primo insieme, mentre un rapporto pari a 1 produce una copia del secondo insieme. | `FLOAT` |
 
 ## Output
 

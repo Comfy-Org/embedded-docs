@@ -6,8 +6,8 @@ SDTurboScheduler è progettato per generare una sequenza di valori sigma per il 
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `model` | Il parametro `model` specifica il modello generativo da utilizzare per la generazione dei valori sigma. È cruciale per determinare il comportamento e le capacità di campionamento specifici dello scheduler. | `MODEL` |
-| `steps` | Il parametro `steps` determina la lunghezza della sequenza di sigma da generare, influenzando direttamente la granularità del processo di denoising. | `INT` |
+| `modello` | Il parametro `model` specifica il modello generativo da utilizzare per la generazione dei valori sigma. È cruciale per determinare il comportamento e le capacità di campionamento specifici dello scheduler. | `MODEL` |
+| `passi` | Il parametro `steps` determina la lunghezza della sequenza di sigma da generare, influenzando direttamente la granularità del processo di denoising. | `INT` |
 | `denoise` | Il parametro `denoise` regola il punto di partenza della sequenza di sigma, consentendo un controllo più fine sul livello di denoising applicato durante la generazione delle immagini. | `FLOAT` |
 
 ## Output

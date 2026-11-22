@@ -8,7 +8,7 @@ Il nodo Vidu Q3 Text-to-Video Generation crea un video a partire da una descrizi
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Modello da utilizzare per la generazione video. Selezionando un modello vengono mostrati parametri di configurazione aggiuntivi per rapporto d'aspetto, risoluzione, durata e audio. | DYNAMIC_COMBO | Sì | `"viduq3-pro"`<br>`"viduq3-turbo"` |
+| `modello` | Modello da utilizzare per la generazione video. Selezionando un modello vengono mostrati parametri di configurazione aggiuntivi per rapporto d'aspetto, risoluzione, durata e audio. | DYNAMIC_COMBO | Sì | `"viduq3-pro"`<br>`"viduq3-turbo"` |
 | `prompt` | Una descrizione testuale per la generazione video, con una lunghezza massima di 2000 caratteri. | STRING | Sì | N/A |
 | `seed` | Un valore di seed per controllare la casualità della generazione (predefinito: 1). | INT | Sì | da 0 a 2147483647 |
 

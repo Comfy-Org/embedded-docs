@@ -7,7 +7,7 @@ Questo nodo moltiplica i valori di condizionamento per un fattore specificato, c
 | Parametro | Descrizione | Tipo di dato | Richiesto | Intervallo |
 |-----------|-------------|--------------|-----------|------------|
 | `conditioning` | I dati di condizionamento da scalare | CONDITIONING | Sì | - |
-| `multiplier` | Il fattore per cui moltiplicare i valori di condizionamento (predefinito: 1.0) | FLOAT | Sì | -100.0 a 100.0 (passo: 0.01) |
+| `moltiplicatore` | Il fattore per cui moltiplicare i valori di condizionamento (predefinito: 1.0) | FLOAT | Sì | -100.0 a 100.0 (passo: 0.01) |
 
 ## Output
 

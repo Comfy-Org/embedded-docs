@@ -10,8 +10,8 @@ Questo nodo è progettato per modificare il condizionamento di un modello genera
 | --- | --- | --- |
 | `CONDITIONING` | I dati di condizionamento da modificare. Costituiscono la base per l'applicazione della maschera e delle regolazioni di forza. | CONDITIONING |
 | `mask` | Un tensore maschera che specifica le aree all'interno del condizionamento da modificare. | `MASK` |
-| `strength` | La forza dell'effetto della maschera sul condizionamento, che consente una messa a punto delle modifiche applicate. | `FLOAT` |
-| `set_cond_area` | Determina se l'effetto della maschera viene applicato all'area predefinita o delimitato dalla maschera stessa, offrendo flessibilità nel selezionare regioni specifiche. | COMBO[STRING] |
+| `intensità` | La forza dell'effetto della maschera sul condizionamento, che consente una messa a punto delle modifiche applicate. | `FLOAT` |
+| `imposta_area_cond` | Determina se l'effetto della maschera viene applicato all'area predefinita o delimitato dalla maschera stessa, offrendo flessibilità nel selezionare regioni specifiche. | COMBO[STRING] |
 
 ## Output
 

@@ -6,11 +6,11 @@ Questo nodo è specializzato nel combinare due input di maschera attraverso una 
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `destination` | La maschera primaria che verrà modificata in base all'operazione con la maschera sorgente. Svolge un ruolo centrale nell'operazione di composizione, fungendo da base per le modifiche. | MASK |
-| `source` | La maschera secondaria che verrà utilizzata insieme alla maschera di destinazione per eseguire l'operazione specificata, influenzando la maschera di output finale. | MASK |
+| `destinazione` | La maschera primaria che verrà modificata in base all'operazione con la maschera sorgente. Svolge un ruolo centrale nell'operazione di composizione, fungendo da base per le modifiche. | MASK |
+| `sorgente` | La maschera secondaria che verrà utilizzata insieme alla maschera di destinazione per eseguire l'operazione specificata, influenzando la maschera di output finale. | MASK |
 | `x` | L'offset orizzontale in corrispondenza del quale la maschera sorgente verrà applicata alla maschera di destinazione, influenzando il posizionamento del risultato composito. | INT |
 | `y` | L'offset verticale in corrispondenza del quale la maschera sorgente verrà applicata alla maschera di destinazione, influenzando il posizionamento del risultato composito. | INT |
-| `operation` | Specifica il tipo di operazione da applicare tra la maschera di destinazione e la maschera sorgente, come 'add', 'subtract' o operazioni logiche, determinando la natura dell'effetto composito. | COMBO[STRING] |
+| `operazione` | Specifica il tipo di operazione da applicare tra la maschera di destinazione e la maschera sorgente, come 'add', 'subtract' o operazioni logiche, determinando la natura dell'effetto composito. | COMBO[STRING] |
 
 ## Output
 

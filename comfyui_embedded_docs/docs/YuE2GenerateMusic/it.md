@@ -7,13 +7,13 @@ Genera token musicali e condizionamento acustico a partire da uno stile, da un t
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `clip` | Il modello CLIP usato per tokenizzare e codificare gli input musicali. | CLIP | Sì | - |
-| `style` | Testo che descrive lo stile musicale. Supporta input multiriga e prompt dinamici. | STRING | Sì | Testo multiriga |
-| `lyrics` | Testo per la musica generata. Supporta input multiriga e prompt dinamici. | STRING | Sì | Testo multiriga |
+| `stile` | Testo che descrive lo stile musicale. Supporta input multiriga e prompt dinamici. | STRING | Sì | Testo multiriga |
+| `testo` | Testo per la musica generata. Supporta input multiriga e prompt dinamici. | STRING | Sì | Testo multiriga |
 | `abc` | Collega il generatore ABC oppure fornisci uno spartito modificato. Lascia vuoto per usare automaticamente la modalità off. predefinito: "" | STRING | Sì | Testo multiriga |
-| `seed` | Seme casuale per la generazione. predefinito: 0 | INT | Sì | da 0 a 18446744073709551615 |
-| `mode` | full: genera melodia e accordi; melody: genera solo melodia, consigliato per le cover. predefinito: "full" | COMBO | Sì | "full"<br>"melody" |
+| `seme` | Seme casuale per la generazione. predefinito: 0 | INT | Sì | da 0 a 18446744073709551615 |
+| `modalità` | full: genera melodia e accordi; melody: genera solo melodia, consigliato per le cover. predefinito: "full" | COMBO | Sì | "full"<br>"melody" |
 | `max_duration` | Durata massima in secondi. Ridotta automaticamente per prompt lunghi; la generazione può interrompersi prima. predefinito: 360.0 | FLOAT | Sì | da 0.04 a 900.0 |
-| `temperature` | Temperatura di campionamento per la generazione. predefinito: 1.0 (avanzato) | FLOAT | Sì | da 0.0 a 5.0 |
+| `temperatura` | Temperatura di campionamento per la generazione. predefinito: 1.0 (avanzato) | FLOAT | Sì | da 0.0 a 5.0 |
 | `top_p` | Soglia di probabilità per il campionamento nucleus. predefinito: 0.95 (avanzato) | FLOAT | Sì | da 0.01 a 1.0 |
 | `top_k` | Limite di campionamento top-k. predefinito: 100 (avanzato) | INT | Sì | da 1 a 32768 |
 | `repetition_penalty` | Penalità applicata ai token ripetuti. predefinito: 1.2 (avanzato) | FLOAT | Sì | da 0.01 a 10.0 |

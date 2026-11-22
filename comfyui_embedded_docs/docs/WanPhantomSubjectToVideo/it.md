@@ -6,14 +6,14 @@ Il nodo WanPhantomSubjectToVideo prepara i dati di condizionamento e un latente 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | Input di condizionamento positivo per guidare la generazione video | CONDITIONING | Sì | - |
-| `negative` | Input di condizionamento negativo per evitare determinate caratteristiche | CONDITIONING | Sì | - |
+| `positivo` | Input di condizionamento positivo per guidare la generazione video | CONDITIONING | Sì | - |
+| `negativo` | Input di condizionamento negativo per evitare determinate caratteristiche | CONDITIONING | Sì | - |
 | `vae` | Modello VAE utilizzato per codificare le immagini di riferimento quando vengono fornite | VAE | Sì | - |
-| `width` | Larghezza del video di output in pixel (predefinito: 832) | INT | Sì | 16 a MAX_RESOLUTION (passo 16) |
-| `height` | Altezza del video di output in pixel (predefinito: 480) | INT | Sì | 16 a MAX_RESOLUTION (passo 16) |
-| `length` | Numero di fotogrammi nel video generato (predefinito: 81) | INT | Sì | 1 a MAX_RESOLUTION (passo 4) |
-| `batch_size` | Numero di video da generare simultaneamente (predefinito: 1) | INT | Sì | 1 a 4096 |
-| `images` | Immagini di riferimento opzionali usate come guida visiva lungo la dimensione temporale | IMAGE | No | - |
+| `larghezza` | Larghezza del video di output in pixel (predefinito: 832) | INT | Sì | 16 a MAX_RESOLUTION (passo 16) |
+| `altezza` | Altezza del video di output in pixel (predefinito: 480) | INT | Sì | 16 a MAX_RESOLUTION (passo 16) |
+| `lunghezza` | Numero di fotogrammi nel video generato (predefinito: 81) | INT | Sì | 1 a MAX_RESOLUTION (passo 4) |
+| `dimensione_batch` | Numero di video da generare simultaneamente (predefinito: 1) | INT | Sì | 1 a 4096 |
+| `immagini` | Immagini di riferimento opzionali usate come guida visiva lungo la dimensione temporale | IMAGE | No | - |
 
 **Nota:** Quando vengono fornite le `images`, vengono automaticamente sottoposte a upscale per corrispondere alla `width` e alla `height` specificate, e per l'elaborazione vengono usate solo le prime `length` immagini. Ogni immagine viene codificata con il `vae` e concatenata lungo la dimensione temporale, e di ciascuna immagine vengono usati solo i canali RGB. Quando le `images` non vengono fornite, tutti e tre gli output di condizionamento vengono restituiti invariati dai condizionamenti di input.
 

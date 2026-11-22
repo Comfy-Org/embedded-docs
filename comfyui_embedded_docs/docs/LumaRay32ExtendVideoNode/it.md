@@ -9,9 +9,9 @@ Luma Ray 3.2 Extend Video continua una precedente generazione video Luma Ray 3.2
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `source_generation_id` | ID di generazione del video Ray 3.2 precedente da estendere. Collega l'output `generation_id` di un altro nodo Luma Ray 3.2. Predefinito: "" (vuoto). Questo valore è obbligatorio e non deve essere vuoto. | STRING | Sì | – |
-| `direction` | Forward continua dopo il clip precedente; backward viene anteposto prima di esso. Forward usa il clip di origine come fotogramma iniziale; backward lo usa come fotogramma finale. Selezionando "Forward (continue after)" si aggiunge l'opzione `loop`. | DYNAMIC_COMBO | Sì | "Forward (continue after)"<br>"Backward (lead-in before)" |
+| `direzione` | Forward continua dopo il clip precedente; backward viene anteposto prima di esso. Forward usa il clip di origine come fotogramma iniziale; backward lo usa come fotogramma finale. Selezionando "Forward (continue after)" si aggiunge l'opzione `loop`. | DYNAMIC_COMBO | Sì | "Forward (continue after)"<br>"Backward (lead-in before)" |
 | `prompt` | Prompt testuale per il nuovo contenuto. Predefinito: "" (vuoto). Deve essere compreso tra 1 e 6000 caratteri. | STRING | Sì | da 1 a 6000 caratteri |
-| `resolution` | Risoluzione di output per il segmento video esteso. Predefinito: "720p". | COMBO | Sì | "540p"<br>"720p"<br>"1080p" |
+| `risoluzione` | Risoluzione di output per il segmento video esteso. Predefinito: "720p". | COMBO | Sì | "540p"<br>"720p"<br>"1080p" |
 | `seed` | Seed per determinare se il nodo deve essere rieseguito; i risultati sono non deterministici indipendentemente dal seed. Predefinito: 0. | INT | Sì | da 0 a 0xFFFFFFFFFFFFFFFF (18446744073709551615) |
 
 ### Input di Forward (continue after)

@@ -6,7 +6,7 @@ Questo nodo fa parte del gruppo sperimentale Stable Cascade. Prepara gli input p
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | L'immagine di input da elaborare per la super-risoluzione. Per la codifica vengono utilizzati solo i primi 3 canali di colore (RGB) dell'immagine. | IMAGE | Sì | - |
+| `immagine` | L'immagine di input da elaborare per la super-risoluzione. Per la codifica vengono utilizzati solo i primi 3 canali di colore (RGB) dell'immagine. | IMAGE | Sì | - |
 | `vae` | Il modello VAE utilizzato per codificare l'immagine di input | VAE | Sì | - |
 
 ## Output

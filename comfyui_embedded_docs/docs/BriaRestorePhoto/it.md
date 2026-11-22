@@ -8,8 +8,8 @@ Questo nodo ripara fotografie vecchie o danneggiate tramite l'API Bria. Rimuove 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | La fotografia da riparare. Il canale alpha viene eliminato prima del caricamento. | IMAGE | Sì | - |
-| `moderation` | Impostazioni di moderazione per la richiesta. Selezionando `"true"` vengono mostrati due ulteriori interruttori booleani; selezionando `"false"` non viene inviato alcun flag di moderazione. Predefinito: `"false"`. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
+| `immagine` | La fotografia da riparare. Il canale alpha viene eliminato prima del caricamento. | IMAGE | Sì | - |
+| `moderazione` | Impostazioni di moderazione per la richiesta. Selezionando `"true"` vengono mostrati due ulteriori interruttori booleani; selezionando `"false"` non viene inviato alcun flag di moderazione. Predefinito: `"false"`. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
 
 ### Input di moderazione
 

@@ -8,9 +8,9 @@ Questo nodo rimuove da un'immagine un oggetto descritto in testo semplice utiliz
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine da cui rimuovere l'oggetto indicato. | IMAGE | Sì | - |
+| `immagine` | L'immagine da cui rimuovere l'oggetto indicato. | IMAGE | Sì | - |
 | `object_name` | Nome dell'oggetto da rimuovere, ad esempio 'the lamp'. È possibile indicare più oggetti contemporaneamente, ad esempio 'the phone and the pencils'. Indicare qualcosa che non è presente nell'immagine restituisce comunque un'immagine ri-renderizzata e la richiesta viene comunque addebitata. Deve contenere almeno 1 carattere (predefinito: vuoto). | STRING | Sì | - |
-| `moderation` | Impostazioni di moderazione. Seleziona se mostrare i controlli opzionali di moderazione. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
+| `moderazione` | Impostazioni di moderazione. Seleziona se mostrare i controlli opzionali di moderazione. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
 
 ### Input di moderazione
 

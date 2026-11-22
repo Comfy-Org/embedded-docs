@@ -6,7 +6,7 @@ Sceglie una voce Breeze in evidenza, o qualsiasi ID voce Breeze, e la passa a Br
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `language` | Gruppo linguistico delle voci in evidenza, oppure `custom` per inserire un ID. Predefinito: `"English"`. | DYNAMIC_COMBO | Sì | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
+| `lingua` | Gruppo linguistico delle voci in evidenza, oppure `custom` per inserire un ID. Predefinito: `"English"`. | DYNAMIC_COMBO | Sì | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
 
 ### Input per la lingua "English", "Chinese" e "Japanese"
 

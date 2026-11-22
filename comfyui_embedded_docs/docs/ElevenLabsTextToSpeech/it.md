@@ -8,14 +8,14 @@ Il nodo Text to Speech di ElevenLabs converte il testo scritto in audio parlato 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Modello da utilizzare per la sintesi vocale. Selezionando un modello vengono mostrati i suoi parametri specifici. | DYNAMIC_COMBO | No | `"eleven_v4"`<br>`"eleven_v4_turbo"`<br>`"eleven_multilingual_v2"`<br>`"eleven_v3"` |
-| `voice` | Voce da utilizzare per la sintesi vocale. Connettila da Voice Selector o Instant Voice Clone. | CUSTOM | Sì | N/A |
-| `text` | Il testo da convertire in parlato. Deve contenere almeno un carattere. | STRING | Sì | N/A |
-| `stability` | Stabilità della voce. Valori più bassi offrono una gamma emotiva più ampia, valori più alti producono una voce più coerente ma potenzialmente monotona (predefinito: 0.5). | FLOAT | No | 0.0 - 1.0 |
-| `apply_text_normalization` | Modalità di normalizzazione del testo. 'auto' lascia decidere al sistema, 'on' applica sempre la normalizzazione, 'off' la salta. | COMBO | No | `"auto"`<br>`"on"`<br>`"off"` |
-| `language_code` | Codice lingua ISO 639-1 (ad esempio, 'en', 'es', 'ja'). Lasciare vuoto per il rilevamento automatico (predefinito: ""). | STRING | No | N/A |
+| `modello` | Modello da utilizzare per la sintesi vocale. Selezionando un modello vengono mostrati i suoi parametri specifici. | DYNAMIC_COMBO | No | `"eleven_v4"`<br>`"eleven_v4_turbo"`<br>`"eleven_multilingual_v2"`<br>`"eleven_v3"` |
+| `voce` | Voce da utilizzare per la sintesi vocale. Connettila da Voice Selector o Instant Voice Clone. | CUSTOM | Sì | N/A |
+| `testo` | Il testo da convertire in parlato. Deve contenere almeno un carattere. | STRING | Sì | N/A |
+| `stabilità` | Stabilità della voce. Valori più bassi offrono una gamma emotiva più ampia, valori più alti producono una voce più coerente ma potenzialmente monotona (predefinito: 0.5). | FLOAT | No | 0.0 - 1.0 |
+| `applica normalizzazione testo` | Modalità di normalizzazione del testo. 'auto' lascia decidere al sistema, 'on' applica sempre la normalizzazione, 'off' la salta. | COMBO | No | `"auto"`<br>`"on"`<br>`"off"` |
+| `codice lingua` | Codice lingua ISO 639-1 (ad esempio, 'en', 'es', 'ja'). Lasciare vuoto per il rilevamento automatico (predefinito: ""). | STRING | No | N/A |
 | `seed` | Seme per la riproducibilità (determinismo non garantito) (predefinito: 1). | INT | No | 0 - 2147483647 |
-| `output_format` | Formato di output audio. | COMBO | No | `"mp3_44100_192"`<br>`"opus_48000_192"` |
+| `formato output` | Formato di output audio. | COMBO | No | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
 ### Input di eleven_multilingual_v2
 

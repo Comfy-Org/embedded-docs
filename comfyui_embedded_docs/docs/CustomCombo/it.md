@@ -6,7 +6,7 @@ Il nodo Custom Combo consente di definire un proprio elenco di opzioni testuali 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Range |
 |-----------|-------------|--------------|--------------|-------|
-| `choice` | L'opzione testuale selezionata dal menu a discesa personalizzato. L'elenco delle opzioni disponibili è definito dall'utente nell'interfaccia frontend del nodo. | COMBO | Sì | Definito dall'utente |
+| `scelta` | L'opzione testuale selezionata dal menu a discesa personalizzato. L'elenco delle opzioni disponibili è definito dall'utente nell'interfaccia frontend del nodo. | COMBO | Sì | Definito dall'utente |
 | `index` | Un valore intero che può essere utilizzato per specificare un indice. Predefinito: 0. | INT | No | Qualsiasi intero (predefinito: 0) |
 
 **Nota:** La validazione degli input di questo nodo è intenzionalmente disabilitata. Ciò consente di scrivere qualsiasi opzione testuale personalizzata nel frontend senza che il backend verifichi se la selezione corrisponde a un elenco predefinito. I widget diversi dal menu a discesa combo sono completamente definiti nel frontend. Questo nodo è contrassegnato come sperimentale.

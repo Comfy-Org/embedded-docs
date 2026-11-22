@@ -7,7 +7,7 @@ Il nodo Sonilo Text to Music genera musica da una descrizione testuale utilizzan
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt testuale che descrive la musica da generare. Deve contenere da 1 a 1000 caratteri dopo la rimozione degli spazi bianchi. | STRING | Sì | 1 a 1000 caratteri |
-| `duration` | Durata target in secondi. Massimo: 6 minuti. Predefinito: 30. | INT | No | 1 a 360 |
+| `durata` | Durata target in secondi. Massimo: 6 minuti. Predefinito: 30. | INT | No | 1 a 360 |
 | `seed` | Seed per la riproducibilità. Attualmente ignorato dal servizio Sonilo ma mantenuto per coerenza del grafo. Predefinito: 0. | INT | No | 0 a 18446744073709551615 |
 
 **Note:**

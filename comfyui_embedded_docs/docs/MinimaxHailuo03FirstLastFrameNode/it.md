@@ -8,9 +8,9 @@ Questo nodo genera un video a partire da un'immagine del primo frame e, facoltat
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Range |
 |-----------|-------------|--------------|--------------|-------|
-| `model` | Modello da usare per la generazione video. Selezionando un modello vengono mostrate sotto le relative impostazioni specifiche. | DYNAMIC_COMBO | Sì | "MiniMax H3"<br>"MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
-| `first_frame` | Immagine del primo frame per il video. Il video generato segue il rapporto d'aspetto di questa immagine. | IMAGE | Sì | - |
-| `last_frame` | Immagine opzionale dell'ultimo frame per il video. Se fornita, il video viene generato dal primo frame verso questo ultimo frame. | IMAGE | No | - |
+| `modello` | Modello da usare per la generazione video. Selezionando un modello vengono mostrate sotto le relative impostazioni specifiche. | DYNAMIC_COMBO | Sì | "MiniMax H3"<br>"MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `primo frame` | Immagine del primo frame per il video. Il video generato segue il rapporto d'aspetto di questa immagine. | IMAGE | Sì | - |
+| `ultimo frame` | Immagine opzionale dell'ultimo frame per il video. Se fornita, il video viene generato dal primo frame verso questo ultimo frame. | IMAGE | No | - |
 | `seed` | Seme casuale. La stessa richiesta con lo stesso seme produce risultati simili, ma non garantisce che siano identici. Include un'opzione "control after generate". Predefinito: 42. | INT | Sì | 0 - 4294967295 |
 | `watermark` | Indica se aggiungere un watermark AIGC al video. Questo è un parametro avanzato. Supportato solo dal modello `MiniMax H3`. Predefinito: False. | BOOLEAN | Sì | True<br>False |
 

@@ -6,7 +6,7 @@ Il nodo VPScheduler è progettato per generare una sequenza di livelli di rumore
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `steps` | Specifica il numero di passaggi nel processo di diffusione, influenzando la granularità dei livelli di rumore generati. | INT |
+| `passi` | Specifica il numero di passaggi nel processo di diffusione, influenzando la granularità dei livelli di rumore generati. | INT |
 | `beta_d` | Determina la distribuzione complessiva del livello di rumore, influenzando la varianza dei livelli di rumore generati. | FLOAT |
 | `beta_min` | Imposta il limite minimo per il livello di rumore, garantendo che il rumore non scenda al di sotto di una determinata soglia. | FLOAT |
 | `eps_s` | Regola il valore epsilon iniziale, perfezionando il livello di rumore iniziale nel processo di diffusione. | FLOAT |

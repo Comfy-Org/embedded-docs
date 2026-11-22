@@ -6,7 +6,7 @@ Questo nodo imposta il latent guida per un modello di modifica. Riceve dati di c
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `conditioning` | I dati di condizionamento da modificare con le informazioni del latent di riferimento | CONDITIONING | Sì | - |
+| `condizionamento` | I dati di condizionamento da modificare con le informazioni del latent di riferimento | CONDITIONING | Sì | - |
 | `latent` | Dati latenti opzionali da usare come riferimento per il modello di modifica. Se non forniti, il conditioning viene restituito invariato | LATENT | No | - |
 
 ## Output

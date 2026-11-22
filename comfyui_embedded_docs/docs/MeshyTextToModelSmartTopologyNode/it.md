@@ -6,11 +6,11 @@ Questo nodo genera una mesh triangolare pronta per il gioco con un numero di fac
 
 | Parametro | Descrizione | Tipo di dato | Richiesto | Intervallo |
 |-----------|-------------|--------------|-----------|------------|
-| `model` | La versione del modello Meshy da utilizzare per la generazione. | COMBO | Sì | `"meshy-t2.5"` |
+| `modello` | La versione del modello Meshy da utilizzare per la generazione. | COMBO | Sì | `"meshy-t2.5"` |
 | `prompt` | La descrizione testuale del modello 3D da generare. | STRING | Sì | da 1 a 800 caratteri |
 | `target_polycount` | Numero approssimativo di triangoli nella mesh generata. Predefinito: 15000. | INT | Sì | da 100 a 30000 |
-| `pose_mode` | La posa del personaggio generato. Una stringa vuota richiede nessuna posa specifica. Questa è un'impostazione avanzata. Predefinito: `""` (stringa vuota). | COMBO | Sì | `""`<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: 42. | INT | Sì | da 0 a 2147483647 |
+| `modalità posa` | La posa del personaggio generato. Una stringa vuota richiede nessuna posa specifica. Questa è un'impostazione avanzata. Predefinito: `""` (stringa vuota). | COMBO | Sì | `""`<br>`"A-pose"`<br>`"T-pose"` |
+| `seme` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: 42. | INT | Sì | da 0 a 2147483647 |
 
 **Vincoli:**
 

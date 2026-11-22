@@ -6,12 +6,12 @@ Questo nodo fornisce un'interfaccia canvas per disegnare bounding box attorno a 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `background` | Immagine opzionale usata come sfondo nel canvas e nell'anteprima. | IMAGE | No | - |
-| `bboxes` | Bounding box, elementi o una stringa JSON per inizializzare il canvas. Un nuovo valore a monte inizializza il canvas; le modifiche apportate sul canvas hanno priorità e vengono mantenute finché il valore a monte non cambia di nuovo. | BOUNDING_BOX, ARRAY, STRING | No | - |
-| `width` | Larghezza del canvas e della griglia in pixel per le bounding box (predefinito: 1024). | INT | Sì | 64 a 16384 (passo: 16) |
-| `height` | Altezza del canvas e della griglia in pixel per le bounding box (predefinito: 1024). | INT | Sì | 64 a 16384 (passo: 16) |
-| `editor_state` | Disegna bounding box e imposta per ciascuna casella tipo, testo, descrizione e palette di colori. Inizia con l'elemento di sfondo per primo e quello in primo piano per ultimo. | BOUNDING_BOXES | Sì | - |
-| `last_incoming` | Stato interno gestito dal canvas: il valore bboxes a monte che lo ha inizializzato per ultimo. Lasciare vuoto per reinizializzare il canvas dall'input bboxes alla successiva esecuzione. | BOUNDING_BOXES | No | - |
+| `sfondo` | Immagine opzionale usata come sfondo nel canvas e nell'anteprima. | IMAGE | No | - |
+| `bounding_boxes` | Bounding box, elementi o una stringa JSON per inizializzare il canvas. Un nuovo valore a monte inizializza il canvas; le modifiche apportate sul canvas hanno priorità e vengono mantenute finché il valore a monte non cambia di nuovo. | BOUNDING_BOX, ARRAY, STRING | No | - |
+| `larghezza` | Larghezza del canvas e della griglia in pixel per le bounding box (predefinito: 1024). | INT | Sì | 64 a 16384 (passo: 16) |
+| `altezza` | Altezza del canvas e della griglia in pixel per le bounding box (predefinito: 1024). | INT | Sì | 64 a 16384 (passo: 16) |
+| `stato_editor` | Disegna bounding box e imposta per ciascuna casella tipo, testo, descrizione e palette di colori. Inizia con l'elemento di sfondo per primo e quello in primo piano per ultimo. | BOUNDING_BOXES | Sì | - |
+| `ultimo_in_arrivo` | Stato interno gestito dal canvas: il valore bboxes a monte che lo ha inizializzato per ultimo. Lasciare vuoto per reinizializzare il canvas dall'input bboxes alla successiva esecuzione. | BOUNDING_BOXES | No | - |
 
 ## Output
 

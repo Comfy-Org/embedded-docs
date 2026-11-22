@@ -7,8 +7,8 @@ Rimuovi il rumore di fondo dal parlato con VEED. È progettato per il parlato in
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `audio` | Registrazione vocale, inferiore a 30 minuti. | AUDIO | Sì | Fino a 1799 secondi |
-| `strength` | Quanto rumore viene rimosso sotto il parlato. Valori più bassi mantengono più rumore ambientale dietro la voce; le pause tra le parole vengono sempre ripulite completamente, e i valori superiori a quello predefinito apportano scarsi cambiamenti. (predefinito: 0.874) | FLOAT | Sì | 0.0 a 1.0 (passo 0.001) |
-| `loudness` | Indica se normalizzare la loudness dell'output. `"normalize"` imposta l'output su `target_lufs`; `"keep input level"` lascia il livello invariato. Selezionando un'opzione vengono mostrati i relativi parametri. (predefinito: `"normalize"`) | DYNAMIC_COMBO | Sì | `"normalize"`<br>`"keep input level"` |
+| `intensità` | Quanto rumore viene rimosso sotto il parlato. Valori più bassi mantengono più rumore ambientale dietro la voce; le pause tra le parole vengono sempre ripulite completamente, e i valori superiori a quello predefinito apportano scarsi cambiamenti. (predefinito: 0.874) | FLOAT | Sì | 0.0 a 1.0 (passo 0.001) |
+| `volume sonoro` | Indica se normalizzare la loudness dell'output. `"normalize"` imposta l'output su `target_lufs`; `"keep input level"` lascia il livello invariato. Selezionando un'opzione vengono mostrati i relativi parametri. (predefinito: `"normalize"`) | DYNAMIC_COMBO | Sì | `"normalize"`<br>`"keep input level"` |
 | `target_lufs` | Loudness integrata dell'output in LUFS. I picchi sono limitati a -1.1 dBTP, quindi i target più elevati si fermano prima (circa -15 LUFS per il parlato tipico). Disponibile quando `loudness` è `"normalize"` (predefinito: -19.0). | FLOAT | Sì | -40.0 a -8.0 (passo 0.1) |
 
 Il nodo si arresta con un errore quando la registrazione dura più di 1799 secondi.

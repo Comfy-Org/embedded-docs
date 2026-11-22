@@ -6,11 +6,11 @@ Questo nodo consente di utilizzare due modelli diversi durante il processo di ca
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modello utilizzato per il passaggio positivo (condizionale). | MODEL | Sì | |
-| `model_negative` | Modello utilizzato per il passaggio negativo (non condizionale). Usa lo stesso modello per il CFG ordinario. | MODEL | No | |
-| `positive` | L'input di condizionamento positivo. | CONDITIONING | Sì | |
+| `modello` | Modello utilizzato per il passaggio positivo (condizionale). | MODEL | Sì | |
+| `modello_negativo` | Modello utilizzato per il passaggio negativo (non condizionale). Usa lo stesso modello per il CFG ordinario. | MODEL | No | |
+| `positivo` | L'input di condizionamento positivo. | CONDITIONING | Sì | |
 | `cfg` | Il valore di scala CFG (predefinito: 4.0). | FLOAT | Sì | 0.0 a 100.0 (passo: 0.1) |
-| `negative` | Condizionamento negativo eseguito sul modello negativo. Lascia non collegato per un passaggio non condizionale senza testo (solo immagine). | CONDITIONING | No | |
+| `negativo` | Condizionamento negativo eseguito sul modello negativo. Lascia non collegato per un passaggio non condizionale senza testo (solo immagine). | CONDITIONING | No | |
 
 ## Output
 

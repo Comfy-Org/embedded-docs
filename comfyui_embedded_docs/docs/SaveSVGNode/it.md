@@ -7,7 +7,7 @@ Salva i file SVG su disco. Questo nodo prende in input dati SVG e li scrive nell
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `svg` | I dati SVG da salvare su disco | SVG | Sì | - |
-| `filename_prefix` | Il prefisso per il file da salvare. Può includere informazioni di formattazione come %date:yyyy-MM-dd% o %Empty Latent Image.width% per includere valori dai nodi. (predefinito: "svg/ComfyUI") | STRING | Sì | - |
+| `prefisso_nome_file` | Il prefisso per il file da salvare. Può includere informazioni di formattazione come %date:yyyy-MM-dd% o %Empty Latent Image.width% per includere valori dai nodi. (predefinito: "svg/ComfyUI") | STRING | Sì | - |
 
 ## Output
 

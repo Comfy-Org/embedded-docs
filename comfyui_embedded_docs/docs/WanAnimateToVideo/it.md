@@ -6,22 +6,22 @@ WanAnimateToVideo prepara dati di condizionamento e un latente iniziale per gene
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | Condizionamento positivo per guidare la generazione verso il contenuto desiderato. | CONDITIONING | Sì | - |
-| `negative` | Condizionamento negativo per allontanare la generazione da contenuti indesiderati. | CONDITIONING | Sì | - |
+| `positivo` | Condizionamento positivo per guidare la generazione verso il contenuto desiderato. | CONDITIONING | Sì | - |
+| `negativo` | Condizionamento negativo per allontanare la generazione da contenuti indesiderati. | CONDITIONING | Sì | - |
 | `vae` | Modello VAE utilizzato per codificare input immagine e video nello spazio latente. | VAE | Sì | - |
-| `width` | Larghezza del video generato in pixel (predefinito: 832, passo: 16). | INT | Sì | 16 a MAX_RESOLUTION |
-| `height` | Altezza del video generato in pixel (predefinito: 480, passo: 16). | INT | Sì | 16 a MAX_RESOLUTION |
-| `length` | Numero di frame da generare (predefinito: 77, passo: 4). | INT | Sì | 1 a MAX_RESOLUTION |
-| `batch_size` | Numero di video da generare in un batch (predefinito: 1). | INT | Sì | 1 a 4096 |
+| `larghezza` | Larghezza del video generato in pixel (predefinito: 832, passo: 16). | INT | Sì | 16 a MAX_RESOLUTION |
+| `altezza` | Altezza del video generato in pixel (predefinito: 480, passo: 16). | INT | Sì | 16 a MAX_RESOLUTION |
+| `lunghezza` | Numero di frame da generare (predefinito: 77, passo: 4). | INT | Sì | 1 a MAX_RESOLUTION |
+| `dimensione_batch` | Numero di video da generare in un batch (predefinito: 1). | INT | Sì | 1 a 4096 |
 | `clip_vision_output` | Output opzionale di CLIP vision aggiunto sia al condizionamento positivo sia a quello negativo. | CLIP_VISION_OUTPUT | No | - |
-| `reference_image` | Immagine di riferimento utilizzata come punto di partenza per l'aspetto del video generato. Se non fornita, viene usata un'immagine nera. | IMAGE | No | - |
-| `face_video` | Input video che fornisce indicazioni sull'espressione facciale. Viene ridimensionato a 512x512 e scalato internamente nell'intervallo da -1.0 a 1.0. | IMAGE | No | - |
-| `pose_video` | Input video che fornisce indicazioni su posa e movimento. | IMAGE | No | - |
+| `immagine_di_riferimento` | Immagine di riferimento utilizzata come punto di partenza per l'aspetto del video generato. Se non fornita, viene usata un'immagine nera. | IMAGE | No | - |
+| `video_volto` | Input video che fornisce indicazioni sull'espressione facciale. Viene ridimensionato a 512x512 e scalato internamente nell'intervallo da -1.0 a 1.0. | IMAGE | No | - |
+| `video_posa` | Input video che fornisce indicazioni su posa e movimento. | IMAGE | No | - |
 | `continue_motion_max_frames` | Numero massimo di frame trasferiti da una sequenza di movimento precedente (predefinito: 5, passo: 4). | INT | Sì | 1 a MAX_RESOLUTION |
-| `background_video` | Video di sfondo usato per riempire le parti non occupate dal personaggio nei frame. | IMAGE | No | - |
-| `character_mask` | Maschera che definisce le regioni del personaggio, usata per separare il personaggio dallo sfondo. | MASK | No | - |
+| `video_sfondo` | Video di sfondo usato per riempire le parti non occupate dal personaggio nei frame. | IMAGE | No | - |
+| `maschera_personaggio` | Maschera che definisce le regioni del personaggio, usata per separare il personaggio dallo sfondo. | MASK | No | - |
 | `continue_motion` | Frame di movimento precedenti da cui continuare, mantenendo la coerenza temporale con i chunk generati in precedenza. | IMAGE | No | - |
-| `video_frame_offset` | Quantità di frame da avanzare in tutti i video di input. Usata per generare video più lunghi a chunk. Collegare all'output `video_frame_offset` del nodo precedente per estendere un video. (predefinito: 0, passo: 1) | INT | Sì | 0 a MAX_RESOLUTION |
+| `offset_frame_video` | Quantità di frame da avanzare in tutti i video di input. Usata per generare video più lunghi a chunk. Collegare all'output `video_frame_offset` del nodo precedente per estendere un video. (predefinito: 0, passo: 1) | INT | Sì | 0 a MAX_RESOLUTION |
 
 **Vincoli dei parametri:**
 

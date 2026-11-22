@@ -6,8 +6,8 @@ Il nodo RebatchImages è progettato per riorganizzare un batch di immagini in un
 
 | Campo | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `images` | Un elenco di immagini da riorganizzare in batch. Questo parametro è cruciale per determinare i dati di input che saranno sottoposti al processo di riorganizzazione in batch. | `IMAGE` |
-| `batch_size` | Specifica la dimensione desiderata dei batch di output. Questo parametro influenza direttamente il modo in cui le immagini di input vengono raggruppate ed elaborate, incidendo sulla struttura dell'output. | `INT` |
+| `immagini` | Un elenco di immagini da riorganizzare in batch. Questo parametro è cruciale per determinare i dati di input che saranno sottoposti al processo di riorganizzazione in batch. | `IMAGE` |
+| `dimensione batch` | Specifica la dimensione desiderata dei batch di output. Questo parametro influenza direttamente il modo in cui le immagini di input vengono raggruppate ed elaborate, incidendo sulla struttura dell'output. | `INT` |
 
 ## Output
 

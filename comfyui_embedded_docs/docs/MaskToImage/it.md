@@ -6,7 +6,7 @@ Il nodo `MaskToImage` è progettato per convertire una maschera in un formato im
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `mask` | L'input `mask` è essenziale per il processo di conversione, poiché funge da dati di origine che verranno trasformati in un formato immagine. Questo input determina la forma e il contenuto dell'immagine risultante. | `MASK` |
+| `maschera` | L'input `mask` è essenziale per il processo di conversione, poiché funge da dati di origine che verranno trasformati in un formato immagine. Questo input determina la forma e il contenuto dell'immagine risultante. | `MASK` |
 
 ## Output
 

@@ -6,7 +6,7 @@ Questo nodo crea un'operazione latente che applica il tonemapping di Reinhard ai
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `multiplier` | Controlla l'intensità dell'effetto di tonemapping (predefinito: 1.0) | FLOAT | Sì | 0.0 a 100.0 (passo 0.01) |
+| `moltiplicatore` | Controlla l'intensità dell'effetto di tonemapping (predefinito: 1.0) | FLOAT | Sì | 0.0 a 100.0 (passo 0.01) |
 
 ## Output
 

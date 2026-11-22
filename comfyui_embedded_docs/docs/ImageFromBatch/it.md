@@ -6,9 +6,9 @@ Il nodo `ImageFromBatch` è progettato per estrarre un segmento specifico di imm
 
 | Campo | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `image` | Il batch di immagini da cui verrà estratto un segmento. Questo parametro è essenziale per specificare il batch di origine. | `IMAGE` |
-| `batch_index` | L'indice iniziale all'interno del batch da cui inizia l'estrazione. Determina la posizione iniziale del segmento da estrarre dal batch. | `INT` |
-| `length` | Il numero di immagini da estrarre dal batch a partire da `batch_index`. Questo parametro definisce la dimensione del segmento da estrarre. | `INT` |
+| `immagine` | Il batch di immagini da cui verrà estratto un segmento. Questo parametro è essenziale per specificare il batch di origine. | `IMAGE` |
+| `indice batch` | L'indice iniziale all'interno del batch da cui inizia l'estrazione. Determina la posizione iniziale del segmento da estrarre dal batch. | `INT` |
+| `lunghezza` | Il numero di immagini da estrarre dal batch a partire da `batch_index`. Questo parametro definisce la dimensione del segmento da estrarre. | `INT` |
 
 ## Output
 

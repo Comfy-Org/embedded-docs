@@ -6,13 +6,13 @@ Il nodo Grok Image genera una o più immagini da una descrizione testuale utiliz
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Il modello Grok specifico da utilizzare per la generazione di immagini. Modelli diversi possono offrire qualità, velocità o funzionalità variabili. | COMBO | Sì | `"grok-imagine-image-2.0"`<br>`"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"` |
+| `modello` | Il modello Grok specifico da utilizzare per la generazione di immagini. Modelli diversi possono offrire qualità, velocità o funzionalità variabili. | COMBO | Sì | `"grok-imagine-image-2.0"`<br>`"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"` |
 | `prompt` | Il prompt testuale utilizzato per generare l'immagine. Questa descrizione guida l'AI su cosa creare. Deve contenere almeno 1 carattere (il testo composto solo da spazi non è accettato). | STRING | Sì | N/A |
-| `aspect_ratio` | Il rapporto larghezza-altezza desiderato per l'immagine generata. | COMBO | Sì | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
-| `number_of_images` | Numero di immagini da generare (predefinito: 1). | INT | Sì | da 1 a 10 |
+| `rapporto_d'aspetto` | Il rapporto larghezza-altezza desiderato per l'immagine generata. | COMBO | Sì | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
+| `numero_di_immagini` | Numero di immagini da generare (predefinito: 1). | INT | Sì | da 1 a 10 |
 | `seed` | Seed per determinare se il nodo deve essere rieseguito; i risultati effettivi non sono deterministici indipendentemente dal seed (predefinito: 0). | INT | Sì | da 0 a 2147483647 |
-| `resolution` | La risoluzione di output desiderata per le immagini generate (predefinita: "1K"). | COMBO | No | `"1K"`<br>`"2K"` |
-| `quality` | Livello di qualità, supportato solo dal modello `grok-imagine-image-2.0` (predefinito: "medium"; "low" è una delle opzioni disponibili). Per tutti gli altri modelli, questa impostazione viene ignorata. | COMBO | No | Più opzioni disponibili |
+| `risoluzione` | La risoluzione di output desiderata per le immagini generate (predefinita: "1K"). | COMBO | No | `"1K"`<br>`"2K"` |
+| `qualità` | Livello di qualità, supportato solo dal modello `grok-imagine-image-2.0` (predefinito: "medium"; "low" è una delle opzioni disponibili). Per tutti gli altri modelli, questa impostazione viene ignorata. | COMBO | No | Più opzioni disponibili |
 
 **Nota:** Il parametro `seed` viene utilizzato principalmente per controllare quando il nodo viene rieseguito all'interno di un flusso di lavoro. A causa della natura del servizio AI esterno, le immagini generate non saranno riproducibili o identiche tra le esecuzioni, anche con un seed identico.
 

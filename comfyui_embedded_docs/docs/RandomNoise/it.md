@@ -6,7 +6,7 @@ Il nodo RandomNoise crea un generatore di rumore basato su un valore di seed da 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `noise_seed` | Il valore di seed utilizzato per generare il pattern di rumore casuale (predefinito: 0). Lo stesso seed produce sempre lo stesso output di rumore. Questo input include un'opzione di controllo dopo la generazione per aggiornare automaticamente il seed dopo ogni generazione. | INT | Sì | 0 a 18446744073709551615 |
+| `seed rumore` | Il valore di seed utilizzato per generare il pattern di rumore casuale (predefinito: 0). Lo stesso seed produce sempre lo stesso output di rumore. Questo input include un'opzione di controllo dopo la generazione per aggiornare automaticamente il seed dopo ogni generazione. | INT | Sì | 0 a 18446744073709551615 |
 
 ## Output
 

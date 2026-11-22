@@ -8,13 +8,13 @@ Il nodo ElevenLabs Text to Dialogue genera un dialogo audio multi-voce a partire
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `stability` | Stabilità della voce. Valori più bassi offrono una gamma emotiva più ampia, valori più alti producono un parlato più coerente ma potenzialmente monotono. (predefinito: 0.5) | FLOAT | Sì | 0.0 - 1.0 |
-| `apply_text_normalization` | Modalità di normalizzazione del testo. 'auto' lascia decidere al sistema, 'on' applica sempre la normalizzazione, 'off' la salta. | COMBO | Sì | `"auto"`<br>`"on"`<br>`"off"` |
-| `model` | Modello da utilizzare per la generazione del dialogo (predefinito: `"eleven_v4"`). | COMBO | Sì | `"eleven_v3"`<br>`"eleven_v4"`<br>`"eleven_v4_turbo"` |
-| `inputs` | Numero di voci di dialogo. Selezionando un numero si creano altrettante coppie di input testo e voce. | DYNAMIC_COMBO | Sì | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
-| `language_code` | Codice lingua ISO 639-1 (ad es. 'en', 'es', 'ja'). Lasciare vuoto per il rilevamento automatico. (predefinito: vuoto) | STRING | Sì | - |
+| `stabilità` | Stabilità della voce. Valori più bassi offrono una gamma emotiva più ampia, valori più alti producono un parlato più coerente ma potenzialmente monotono. (predefinito: 0.5) | FLOAT | Sì | 0.0 - 1.0 |
+| `applica normalizzazione testo` | Modalità di normalizzazione del testo. 'auto' lascia decidere al sistema, 'on' applica sempre la normalizzazione, 'off' la salta. | COMBO | Sì | `"auto"`<br>`"on"`<br>`"off"` |
+| `modello` | Modello da utilizzare per la generazione del dialogo (predefinito: `"eleven_v4"`). | COMBO | Sì | `"eleven_v3"`<br>`"eleven_v4"`<br>`"eleven_v4_turbo"` |
+| `voci dialogo` | Numero di voci di dialogo. Selezionando un numero si creano altrettante coppie di input testo e voce. | DYNAMIC_COMBO | Sì | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
+| `codice lingua` | Codice lingua ISO 639-1 (ad es. 'en', 'es', 'ja'). Lasciare vuoto per il rilevamento automatico. (predefinito: vuoto) | STRING | Sì | - |
 | `seed` | Seed per la riproducibilità. (predefinito: 1) | INT | Sì | 0 - 4294967295 |
-| `output_format` | Formato di output audio. | COMBO | Sì | `"mp3_44100_192"`<br>`"opus_48000_192"` |
+| `formato output` | Formato di output audio. | COMBO | Sì | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
 ### Input delle voci di dialogo
 

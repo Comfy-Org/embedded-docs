@@ -6,12 +6,12 @@ Il nodo SUPIRApply applica una patch del modello SUPIR a un modello di diffusion
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello di diffusione di base a cui verrà applicata la patch SUPIR. | MODEL | Sì | - |
-| `model_patch` | La patch del modello SUPIR contenente i pesi e la configurazione per modificare il modello. | MODEL_PATCH | Sì | - |
+| `modello` | Il modello di diffusione di base a cui verrà applicata la patch SUPIR. | MODEL | Sì | - |
+| `patch modello` | La patch del modello SUPIR contenente i pesi e la configurazione per modificare il modello. | MODEL_PATCH | Sì | - |
 | `vae` | Il VAE (autoencoder variazionale) utilizzato per codificare l'immagine di input in una rappresentazione latente. | VAE | Sì | - |
-| `image` | L'immagine di input utilizzata per guidare il processo di generazione. Vengono utilizzati solo i primi tre canali di colore (RGB). | IMAGE | Sì | - |
-| `strength_start` | Forza di controllo all'inizio del campionamento (sigma alto). L'influenza della guida dell'immagine inizia da questo valore. (predefinito: 1.0) | FLOAT | Sì | 0.0 - 10.0 |
-| `strength_end` | Forza di controllo alla fine del campionamento (sigma basso). Interpolata linearmente dall'inizio. L'influenza della guida dell'immagine termina a questo valore. (predefinito: 1.0) | FLOAT | Sì | 0.0 - 10.0 |
+| `immagine` | L'immagine di input utilizzata per guidare il processo di generazione. Vengono utilizzati solo i primi tre canali di colore (RGB). | IMAGE | Sì | - |
+| `intensità iniziale` | Forza di controllo all'inizio del campionamento (sigma alto). L'influenza della guida dell'immagine inizia da questo valore. (predefinito: 1.0) | FLOAT | Sì | 0.0 - 10.0 |
+| `intensità finale` | Forza di controllo alla fine del campionamento (sigma basso). Interpolata linearmente dall'inizio. L'influenza della guida dell'immagine termina a questo valore. (predefinito: 1.0) | FLOAT | Sì | 0.0 - 10.0 |
 | `restore_cfg` | Attira l'output denoised verso il latente di input. Valori più alti = maggiore fedeltà all'input. 0 per disabilitare. (predefinito: 4.0, impostazione avanzata) | FLOAT | Sì | 0.0 - 20.0 |
 | `restore_cfg_s_tmin` | Soglia sigma al di sotto della quale `restore_cfg` viene disabilitato. (predefinito: 0.05, impostazione avanzata) | FLOAT | Sì | 0.0 - 1.0 |
 

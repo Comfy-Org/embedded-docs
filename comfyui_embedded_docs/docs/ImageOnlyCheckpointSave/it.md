@@ -6,10 +6,10 @@ Questo nodo salva un file di checkpoint che raggruppa un modello insieme al suo 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello da salvare nel checkpoint | MODEL | Sì | - |
+| `modello` | Il modello da salvare nel checkpoint | MODEL | Sì | - |
 | `clip_vision` | L'encoder visivo CLIP da salvare nel checkpoint | CLIP_VISION | Sì | - |
 | `vae` | Il VAE (autoencoder variazionale) da salvare nel checkpoint | VAE | Sì | - |
-| `filename_prefix` | Il prefisso per il nome file di output (predefinito: "checkpoints/ComfyUI") | STRING | Sì | - |
+| `prefisso_nome_file` | Il prefisso per il nome file di output (predefinito: "checkpoints/ComfyUI") | STRING | Sì | - |
 | `prompt` | Parametro nascosto che riceve i dati del prompt del workflow | PROMPT | No | - |
 | `extra_pnginfo` | Parametro nascosto che riceve metadati PNG aggiuntivi | EXTRA_PNGINFO | No | - |
 

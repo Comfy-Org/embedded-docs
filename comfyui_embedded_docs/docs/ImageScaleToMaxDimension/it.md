@@ -6,9 +6,9 @@ Il nodo ImageScaleToMaxDimension ridimensiona le immagini per adattarle entro un
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | L'immagine di input da ridimensionare | IMAGE | Sì | - |
-| `upscale_method` | Il metodo di interpolazione utilizzato per ridimensionare l'immagine (predefinito: "area") | STRING | Sì | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bilinear"<br>"bicubic" |
-| `largest_size` | La dimensione massima per l'immagine ridimensionata (predefinito: 512) | INT | Sì | da 0 a 16384 |
+| `immagine` | L'immagine di input da ridimensionare | IMAGE | Sì | - |
+| `metodo_ingrandimento` | Il metodo di interpolazione utilizzato per ridimensionare l'immagine (predefinito: "area") | STRING | Sì | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bilinear"<br>"bicubic" |
+| `dimensione_massima` | La dimensione massima per l'immagine ridimensionata (predefinito: 512) | INT | Sì | da 0 a 16384 |
 
 ## Output
 

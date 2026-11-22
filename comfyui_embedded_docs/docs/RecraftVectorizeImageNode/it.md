@@ -6,7 +6,7 @@ Genera grafica vettoriale SVG da un'immagine di input. Questo nodo converte imma
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | L'immagine di input da convertire in formato SVG. Supporta l'elaborazione in batch di più immagini. | IMAGE | Sì | - |
+| `immagine` | L'immagine di input da convertire in formato SVG. Supporta l'elaborazione in batch di più immagini. | IMAGE | Sì | - |
 
 ## Output
 

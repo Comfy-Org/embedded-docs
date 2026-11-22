@@ -7,7 +7,7 @@ Il nodo Convert Array to String prende un array (lista) di elementi e lo convert
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `array` | L'array da convertire in una stringa JSON | ARRAY | Sì | - |
-| `indent` | Spazi per livello di indentazione. 0 produce una stringa compatta su una sola riga (predefinito: 2) | INT | No | 0 a 8 |
+| `indentazione` | Spazi per livello di indentazione. 0 produce una stringa compatta su una sola riga (predefinito: 2) | INT | No | 0 a 8 |
 
 ## Output
 

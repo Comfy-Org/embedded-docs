@@ -8,15 +8,15 @@ Sostituisce un oggetto in un'immagine con un altro descritto in testo semplice, 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine contenente l'oggetto da sostituire. Il canale alfa viene eliminato prima che l'immagine venga caricata. | IMAGE | Sì | - |
-| `instruction` | Cosa sostituire con cosa, ad esempio "Sostituisci la mela rossa con una pera verde". Deve contenere almeno 1 carattere. | STRING | Sì | Testo multilinea; predefinito: "" (vuoto) |
+| `immagine` | L'immagine contenente l'oggetto da sostituire. Il canale alfa viene eliminato prima che l'immagine venga caricata. | IMAGE | Sì | - |
+| `istruzione` | Cosa sostituire con cosa, ad esempio "Sostituisci la mela rossa con una pera verde". Deve contenere almeno 1 carattere. | STRING | Sì | Testo multilinea; predefinito: "" (vuoto) |
 | `seed` | Bria non accetta alcun seed qui e reimmagina la modifica a ogni chiamata, quindi esecuzioni ripetute possono differire. Il valore non viene mai inviato: cambia solo la chiave della cache di questo nodo, così che un grafo per il resto identico esegua di nuovo la modifica invece di restituire il risultato memorizzato nella cache. | INT | Sì | da 0 a 2147483647, passo 1; predefinito: 42; controllo dopo generazione abilitato |
 
 ### Input di moderazione
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `moderation` | Impostazioni di moderazione. Selezionando "true" vengono mostrate le sotto-opzioni di moderazione riportate di seguito, che altrimenti non sono visualizzate. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
+| `moderazione` | Impostazioni di moderazione. Selezionando "true" vengono mostrate le sotto-opzioni di moderazione riportate di seguito, che altrimenti non sono visualizzate. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
 | `visual_input_moderation` | Abilita la moderazione dell'immagine di input. Disponibile solo quando `moderation` è impostato su "true". | BOOLEAN | No | `true` / `false`; predefinito: false |
 | `visual_output_moderation` | Abilita la moderazione dell'immagine di output generata. Disponibile solo quando `moderation` è impostato su "true". | BOOLEAN | No | `true` / `false`; predefinito: false |
 

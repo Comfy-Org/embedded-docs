@@ -6,8 +6,8 @@ Crea i controlli Recraft per personalizzare la generazione Recraft. Questo nodo 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `colors` | Impostazioni colore per gli elementi principali | COLOR | No | - |
-| `background_color` | Impostazione del colore di sfondo | COLOR | No | - |
+| `colori` | Impostazioni colore per gli elementi principali | COLOR | No | - |
+| `colore di sfondo` | Impostazione del colore di sfondo | COLOR | No | - |
 
 ## Output
 

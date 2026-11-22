@@ -8,19 +8,19 @@ Questa versione del nodo è legacy ed è contrassegnata come deprecata nell'inte
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Il modello AI da utilizzare per il miglioramento dell'immagine. | COMBO | Sì | `"Reimagine"` |
-| `image` | L'immagine di input da migliorare. È supportata una sola immagine. | IMAGE | Sì | - |
+| `modello` | Il modello AI da utilizzare per il miglioramento dell'immagine. | COMBO | Sì | `"Reimagine"` |
+| `immagine` | L'immagine di input da migliorare. È supportata una sola immagine. | IMAGE | Sì | - |
 | `prompt` | Prompt testuale opzionale per guidare l'upscaling creativo (predefinito: vuoto). | STRING | No | - |
-| `subject_detection` | Controlla su quale parte dell'immagine si concentra il miglioramento (predefinito: "All"). | COMBO | No | `"All"`<br>`"Foreground"`<br>`"Background"` |
-| `face_enhancement` | Migliora i volti (se presenti) durante l'elaborazione (predefinito: True). | BOOLEAN | No | - |
-| `face_enhancement_creativity` | Imposta il livello di creatività per il miglioramento dei volti (predefinito: 0.0). | FLOAT | No | 0.0 - 1.0 |
-| `face_enhancement_strength` | Controlla quanto sono nitidi i volti migliorati rispetto allo sfondo (predefinito: 1.0). | FLOAT | No | 0.0 - 1.0 |
-| `crop_to_fill` | Per impostazione predefinita, viene applicato il letterboxing all'immagine quando le proporzioni dell'output differiscono. Abilita per ritagliare l'immagine in modo da riempire le dimensioni dell'output (predefinito: False). | BOOLEAN | No | - |
-| `output_width` | Il valore zero indica il calcolo automatico (di solito sarà la dimensione originale o `output_height` se specificato) (predefinito: 0). | INT | No | 0 - 32000 |
-| `output_height` | Il valore zero indica di restituire in output la stessa altezza dell'originale o la larghezza di output (predefinito: 0). | INT | No | 0 - 32000 |
-| `creativity` | Controlla il livello di creatività complessivo del miglioramento (predefinito: 3). | INT | No | 1 - 9 |
-| `face_preservation` | Preserva l'identità facciale dei soggetti (predefinito: True). | BOOLEAN | No | - |
-| `color_preservation` | Preserva i colori originali (predefinito: True). | BOOLEAN | No | - |
+| `rilevamento_soggetto` | Controlla su quale parte dell'immagine si concentra il miglioramento (predefinito: "All"). | COMBO | No | `"All"`<br>`"Foreground"`<br>`"Background"` |
+| `miglioramento_volto` | Migliora i volti (se presenti) durante l'elaborazione (predefinito: True). | BOOLEAN | No | - |
+| `creatività_miglioramento_volto` | Imposta il livello di creatività per il miglioramento dei volti (predefinito: 0.0). | FLOAT | No | 0.0 - 1.0 |
+| `intensità_miglioramento_volto` | Controlla quanto sono nitidi i volti migliorati rispetto allo sfondo (predefinito: 1.0). | FLOAT | No | 0.0 - 1.0 |
+| `ritaglia_per_riempire` | Per impostazione predefinita, viene applicato il letterboxing all'immagine quando le proporzioni dell'output differiscono. Abilita per ritagliare l'immagine in modo da riempire le dimensioni dell'output (predefinito: False). | BOOLEAN | No | - |
+| `larghezza_output` | Il valore zero indica il calcolo automatico (di solito sarà la dimensione originale o `output_height` se specificato) (predefinito: 0). | INT | No | 0 - 32000 |
+| `altezza_output` | Il valore zero indica di restituire in output la stessa altezza dell'originale o la larghezza di output (predefinito: 0). | INT | No | 0 - 32000 |
+| `creatività` | Controlla il livello di creatività complessivo del miglioramento (predefinito: 3). | INT | No | 1 - 9 |
+| `preservazione_volto` | Preserva l'identità facciale dei soggetti (predefinito: True). | BOOLEAN | No | - |
+| `preservazione_colore` | Preserva i colori originali (predefinito: True). | BOOLEAN | No | - |
 
 **Nota:** Questo nodo può elaborare solo una singola immagine di input. Fornire un batch di più immagini causerà un errore.
 

@@ -6,11 +6,11 @@ Il nodo LatentComposite è progettato per fondere o unire due rappresentazioni l
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `samples_to` | La rappresentazione latente `samples_to` su cui verrà composto il latente `samples_from`. Funge da base per l'operazione di composizione. | `LATENT` |
-| `samples_from` | La rappresentazione latente `samples_from` da comporre su `samples_to`. Contribuisce con le sue caratteristiche al risultato composito finale. | `LATENT` |
+| `campioni_destinazione` | La rappresentazione latente `samples_to` su cui verrà composto il latente `samples_from`. Funge da base per l'operazione di composizione. | `LATENT` |
+| `campioni_origine` | La rappresentazione latente `samples_from` da comporre su `samples_to`. Contribuisce con le sue caratteristiche al risultato composito finale. | `LATENT` |
 | `x` | La coordinata x (posizione orizzontale) in cui il latente `samples_from` verrà posizionato su `samples_to`. Determina l'allineamento orizzontale della composizione. | `INT` |
 | `y` | La coordinata y (posizione verticale) in cui il latente `samples_from` verrà posizionato su `samples_to`. Determina l'allineamento verticale della composizione. | `INT` |
-| `feather` | Un valore booleano che indica se il latente `samples_from` deve essere ridimensionato per corrispondere a `samples_to` prima della composizione. Ciò può influire sulla scala e sulle proporzioni del risultato composito. | `INT` |
+| `sfumatura` | Un valore booleano che indica se il latente `samples_from` deve essere ridimensionato per corrispondere a `samples_to` prima della composizione. Ciò può influire sulla scala e sulle proporzioni del risultato composito. | `INT` |
 
 ## Output
 

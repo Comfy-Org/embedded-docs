@@ -8,7 +8,7 @@ Il nodo Merge Image Lists combina più liste separate di immagini in un'unica li
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `images` | Una lista di immagini da unire. Questo input può accettare più connessioni e ogni lista collegata verrà concatenata nell'output finale. | IMAGE | Sì | - |
+| `immagini` | Una lista di immagini da unire. Questo input può accettare più connessioni e ogni lista collegata verrà concatenata nell'output finale. | IMAGE | Sì | - |
 
 **Nota:** Questo nodo è progettato per ricevere più input. È possibile collegare diverse liste di immagini all'unico socket di input `images`. Il nodo concatenarà automaticamente tutte le immagini da tutte le liste collegate in un'unica lista di output.
 

@@ -9,11 +9,11 @@ Rileva volti in un'immagine e identifica 468 punti di riferimento facciali (punt
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `face_detection_model` | Il modello di rilevamento volti MediaPipe da utilizzare per il rilevamento dei punti di riferimento. | FACE_DETECTION_MODEL | Sì |  |
-| `image` | L'immagine di input o il batch di immagini in cui rilevare i volti. | IMAGE | Sì |  |
-| `detector_variant` | Portata del rilevatore di volti. `"short"` è ottimizzato per volti in primo piano (entro circa 2 m dalla fotocamera); `"full"` copre volti più lontani/piccoli (fino a circa 5 m) ma è più lento. `"both"` esegue entrambi i rilevatori e mantiene quello che ha trovato più volti per frame (costo di rilevamento circa 2x). Predefinito: `"short"`. | COMBO | Sì | `"short"`<br>`"full"`<br>`"both"` |
-| `num_faces` | Numero massimo di volti da restituire per frame. 0 significa nessun limite (restituisce tutti quelli rilevati). Predefinito: 1. | INT | Sì | 0 a 16 |
-| `min_confidence` | Soglia del punteggio BlazeFace. Valori più bassi aiutano a rilevare volti piccoli o occlusi. Predefinito: 0.5. | FLOAT | No | 0.00 a 1.00 |
-| `missing_frame_fallback` | Comportamento per frame quando il rilevamento fallisce in un batch. `"empty"` lascia il frame senza volto. `"previous"` copia il rilevamento riuscito più recente. `"interpolate"` interpola linearmente (lerp) landmark/bbox/blendshape tra i frame riusciti che delimitano l'intervallo. Multi-volto: accoppia i volti tra i frame tramite il vicino più prossimo greedy basato sul centro del bbox. Predefinito: `"empty"`. | COMBO | No | `"empty"`<br>`"previous"`<br>`"interpolate"` |
+| `immagine` | L'immagine di input o il batch di immagini in cui rilevare i volti. | IMAGE | Sì |  |
+| `variante_rilevatore` | Portata del rilevatore di volti. `"short"` è ottimizzato per volti in primo piano (entro circa 2 m dalla fotocamera); `"full"` copre volti più lontani/piccoli (fino a circa 5 m) ma è più lento. `"both"` esegue entrambi i rilevatori e mantiene quello che ha trovato più volti per frame (costo di rilevamento circa 2x). Predefinito: `"short"`. | COMBO | Sì | `"short"`<br>`"full"`<br>`"both"` |
+| `num_volti` | Numero massimo di volti da restituire per frame. 0 significa nessun limite (restituisce tutti quelli rilevati). Predefinito: 1. | INT | Sì | 0 a 16 |
+| `min_confidenza` | Soglia del punteggio BlazeFace. Valori più bassi aiutano a rilevare volti piccoli o occlusi. Predefinito: 0.5. | FLOAT | No | 0.00 a 1.00 |
+| `fallback_frame_mancante` | Comportamento per frame quando il rilevamento fallisce in un batch. `"empty"` lascia il frame senza volto. `"previous"` copia il rilevamento riuscito più recente. `"interpolate"` interpola linearmente (lerp) landmark/bbox/blendshape tra i frame riusciti che delimitano l'intervallo. Multi-volto: accoppia i volti tra i frame tramite il vicino più prossimo greedy basato sul centro del bbox. Predefinito: `"empty"`. | COMBO | No | `"empty"`<br>`"previous"`<br>`"interpolate"` |
 
 ## Output
 

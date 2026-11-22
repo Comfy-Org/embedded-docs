@@ -8,21 +8,21 @@ WanInfiniteTalkToVideo genera sequenze video dall'input audio. Utilizza un model
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `mode` | La modalità di input audio. `single_speaker` usa un solo input audio. `two_speakers` abilita l'input audio aggiuntivo e le maschere elencate nella sezione Input per due parlanti. | DYNAMIC_COMBO | Sì | `"single_speaker"`<br>`"two_speakers"` |
-| `model` | Il modello di diffusione video di base. | MODEL | Sì | - |
-| `model_patch` | La patch del modello contenente i livelli di proiezione audio. | MODEL_PATCH | Sì | - |
-| `positive` | Il condizionamento positivo per guidare la generazione. | CONDITIONING | Sì | - |
-| `negative` | Il condizionamento negativo per guidare la generazione. | CONDITIONING | Sì | - |
+| `modalità` | La modalità di input audio. `single_speaker` usa un solo input audio. `two_speakers` abilita l'input audio aggiuntivo e le maschere elencate nella sezione Input per due parlanti. | DYNAMIC_COMBO | Sì | `"single_speaker"`<br>`"two_speakers"` |
+| `modello` | Il modello di diffusione video di base. | MODEL | Sì | - |
+| `patch modello` | La patch del modello contenente i livelli di proiezione audio. | MODEL_PATCH | Sì | - |
+| `positivo` | Il condizionamento positivo per guidare la generazione. | CONDITIONING | Sì | - |
+| `negativo` | Il condizionamento negativo per guidare la generazione. | CONDITIONING | Sì | - |
 | `vae` | Il VAE utilizzato per codificare le immagini da e verso lo spazio latente. | VAE | Sì | - |
-| `width` | La larghezza del video di output in pixel. Deve essere divisibile per 16. (predefinito: 832) | INT | Sì | 16 - MAX_RESOLUTION (passo 16) |
-| `height` | L'altezza del video di output in pixel. Deve essere divisibile per 16. (predefinito: 480) | INT | Sì | 16 - MAX_RESOLUTION (passo 16) |
-| `length` | Il numero di frame da generare. (predefinito: 81) | INT | Sì | 1 - MAX_RESOLUTION (passo 4) |
-| `clip_vision_output` | Output CLIP vision opzionale per condizionamento aggiuntivo. | CLIP_VISION_OUTPUT | No | - |
-| `start_image` | Immagine iniziale opzionale per inizializzare la sequenza video. | IMAGE | No | - |
-| `audio_encoder_output_1` | L'output principale dell'encoder audio contenente le caratteristiche per il primo parlante. | AUDIO_ENCODER_OUTPUT | Sì | - |
-| `motion_frame_count` | Numero di frame precedenti da usare come contesto di movimento. (predefinito: 9; parametro avanzato) | INT | Sì | 1 - 33 (passo 1) |
-| `audio_scale` | Un fattore di scala applicato al condizionamento audio. (predefinito: 1.0) | FLOAT | Sì | -10.0 - 10.0 (passo 0.01) |
-| `previous_frames` | Frame video precedenti opzionali da cui estendere la sequenza. Gli ultimi `motion_frame_count` frame vengono usati come contesto di movimento. | IMAGE | No | - |
+| `larghezza` | La larghezza del video di output in pixel. Deve essere divisibile per 16. (predefinito: 832) | INT | Sì | 16 - MAX_RESOLUTION (passo 16) |
+| `altezza` | L'altezza del video di output in pixel. Deve essere divisibile per 16. (predefinito: 480) | INT | Sì | 16 - MAX_RESOLUTION (passo 16) |
+| `lunghezza` | Il numero di frame da generare. (predefinito: 81) | INT | Sì | 1 - MAX_RESOLUTION (passo 4) |
+| `output visione clip` | Output CLIP vision opzionale per condizionamento aggiuntivo. | CLIP_VISION_OUTPUT | No | - |
+| `immagine iniziale` | Immagine iniziale opzionale per inizializzare la sequenza video. | IMAGE | No | - |
+| `output encoder audio 1` | L'output principale dell'encoder audio contenente le caratteristiche per il primo parlante. | AUDIO_ENCODER_OUTPUT | Sì | - |
+| `conteggio fotogrammi movimento` | Numero di frame precedenti da usare come contesto di movimento. (predefinito: 9; parametro avanzato) | INT | Sì | 1 - 33 (passo 1) |
+| `scala audio` | Un fattore di scala applicato al condizionamento audio. (predefinito: 1.0) | FLOAT | Sì | -10.0 - 10.0 (passo 0.01) |
+| `fotogrammi precedenti` | Frame video precedenti opzionali da cui estendere la sequenza. Gli ultimi `motion_frame_count` frame vengono usati come contesto di movimento. | IMAGE | No | - |
 
 ### Input per due parlanti
 

@@ -6,8 +6,8 @@ Il nodo LatentFlip è progettato per manipolare le rappresentazioni latenti capo
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `samples` | Il parametro 'samples' rappresenta le rappresentazioni latenti da capovolgere. L'operazione di capovolgimento modifica queste rappresentazioni, verticalmente o orizzontalmente, a seconda del parametro 'flip_method', trasformando così i dati nello spazio latente. | `LATENT` |
-| `flip_method` | Il parametro 'flip_method' specifica l'asse lungo il quale verranno capovolti i campioni latenti. Può essere 'x-axis: vertically' o 'y-axis: horizontally', determinando la direzione del capovolgimento e quindi la natura della trasformazione applicata alle rappresentazioni latenti. | COMBO[STRING] |
+| `campioni` | Il parametro 'samples' rappresenta le rappresentazioni latenti da capovolgere. L'operazione di capovolgimento modifica queste rappresentazioni, verticalmente o orizzontalmente, a seconda del parametro 'flip_method', trasformando così i dati nello spazio latente. | `LATENT` |
+| `metodo_ribaltamento` | Il parametro 'flip_method' specifica l'asse lungo il quale verranno capovolti i campioni latenti. Può essere 'x-axis: vertically' o 'y-axis: horizontally', determinando la direzione del capovolgimento e quindi la natura della trasformazione applicata alle rappresentazioni latenti. | COMBO[STRING] |
 
 ## Output
 

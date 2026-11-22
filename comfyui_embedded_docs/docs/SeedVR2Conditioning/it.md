@@ -6,7 +6,7 @@ Costruisce il condizionamento positivo e negativo da un latente VAE da utilizzar
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello SeedVR2. | MODEL | Sì | - |
+| `modello` | Il modello SeedVR2. | MODEL | Sì | - |
 | `vae_conditioning` | Il latente VAE di SeedVR2 da cui costruire il condizionamento (nome visualizzato: latent). | LATENT | Sì | - |
 
 Nota: il latente `vae_conditioning` deve essere un tensore 5-D nel layout channel-first di Comfy (B, C, T, H, W), dove C è il numero di canali previsto per il VAE SeedVR2. Il nodo genera un errore se il latente non è 5-D, se il numero di canali non corrisponde o se il tensore sembra essere in layout channel-last. L'input `model` deve avere la struttura SeedVR2 prevista; il nodo risolve il suo modello di diffusione interno e legge il suo condizionamento positivo e negativo. Internamente, il nodo aggiunge un canale di maschera costante al latente e collega il condizionamento risultante a entrambi gli output di condizionamento `positive` e `negative`.

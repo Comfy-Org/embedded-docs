@@ -6,8 +6,8 @@ Il nodo LatentApplyOperation applica un'operazione latente specificata ai campio
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `samples` | I campioni latenti da elaborare tramite l'operazione | LATENT | Sì | - |
-| `operation` | L'operazione da applicare ai campioni latenti | LATENT_OPERATION | Sì | - |
+| `campioni` | I campioni latenti da elaborare tramite l'operazione | LATENT | Sì | - |
+| `operazione` | L'operazione da applicare ai campioni latenti | LATENT_OPERATION | Sì | - |
 
 ## Output
 

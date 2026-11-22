@@ -6,10 +6,10 @@ Il nodo StableCascade_EmptyLatentImage crea tensori latenti vuoti per i modelli 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `width` | La larghezza dell'immagine di output in pixel (predefinito: 1024, passo: 8) | INT | Sì | da 256 a MAX_RESOLUTION |
-| `height` | L'altezza dell'immagine di output in pixel (predefinito: 1024, passo: 8) | INT | Sì | da 256 a MAX_RESOLUTION |
-| `compression` | Il fattore di compressione che determina le dimensioni latenti per lo stage C (predefinito: 42, passo: 1). Questo è un parametro avanzato. | INT | Sì | da 4 a 128 |
-| `batch_size` | Il numero di campioni latenti da generare in un batch (predefinito: 1) | INT | Sì | da 1 a 4096 |
+| `larghezza` | La larghezza dell'immagine di output in pixel (predefinito: 1024, passo: 8) | INT | Sì | da 256 a MAX_RESOLUTION |
+| `altezza` | L'altezza dell'immagine di output in pixel (predefinito: 1024, passo: 8) | INT | Sì | da 256 a MAX_RESOLUTION |
+| `compressione` | Il fattore di compressione che determina le dimensioni latenti per lo stage C (predefinito: 42, passo: 1). Questo è un parametro avanzato. | INT | Sì | da 4 a 128 |
+| `dimensione_batch` | Il numero di campioni latenti da generare in un batch (predefinito: 1) | INT | Sì | da 1 a 4096 |
 
 Nota: il valore di `compression` controlla la dimensione latente dello stage C: la sua altezza e la sua larghezza si ottengono dividendo `height` e `width` di input per `compression`. Il latente dello stage B usa sempre una compressione fissa di 4.
 

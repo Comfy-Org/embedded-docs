@@ -13,8 +13,8 @@ Il nodo `CLIP Vision Encode` è un nodo di codifica delle immagini in ComfyUI, u
 | Nome parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
 | `clip_vision` | Modello CLIP Vision, solitamente caricato tramite il nodo CLIPVisionLoader | CLIP_VISION |
-| `image` | L'immagine di input da codificare | IMAGE |
-| `crop` | Metodo di ritaglio dell'immagine, opzioni: center (ritaglio centrale), none (nessun ritaglio) | Menu a tendina |
+| `immagine` | L'immagine di input da codificare | IMAGE |
+| `ritaglia` | Metodo di ritaglio dell'immagine, opzioni: center (ritaglio centrale), none (nessun ritaglio) | Menu a tendina |
 
 ## Output
 

@@ -6,8 +6,8 @@ Questo nodo imposta il passaggio di campionamento dello stadio texture per la ge
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `positive` | Il condizionamento positivo utilizzato per la passata di generazione della texture. A esso vengono allegati i metadati dello stadio texture. | CONDITIONING | Sì | - |
-| `negative` | Il condizionamento negativo utilizzato per la passata di generazione della texture. A esso vengono allegati i metadati dello stadio texture. | CONDITIONING | Sì | - |
+| `positivo` | Il condizionamento positivo utilizzato per la passata di generazione della texture. A esso vengono allegati i metadati dello stadio texture. | CONDITIONING | Sì | - |
+| `negativo` | Il condizionamento negativo utilizzato per la passata di generazione della texture. A esso vengono allegati i metadati dello stadio texture. | CONDITIONING | Sì | - |
 | `shape_latent` | Il dizionario latent prodotto da Trellis2ShapeStage o Trellis2UpsampleStage. Deve contenere `coords` (il layout delle coordinate, shape [N, 4]) e `samples` (il latent della forma per voxel); `coord_resolution` e `model_frame` sono opzionali. | LATENT | Sì | - |
 
 Note:

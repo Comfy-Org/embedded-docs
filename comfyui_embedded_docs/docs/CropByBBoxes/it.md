@@ -6,12 +6,12 @@ Il nodo CropByBBoxes estrae e ridimensiona regioni rettangolari specifiche da un
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | Il batch di immagini di input da ritagliare. | IMAGE | Sì | - |
-| `bboxes` | L'elenco dei bounding box che definiscono le regioni da ritagliare. Questo input è forzato, quindi deve essere collegato. | BOUNDINGBOX | Sì | - |
-| `output_width` | La larghezza a cui viene ridimensionato ciascun ritaglio (predefinita: 512). | INT | No | 64 - 4096 |
-| `output_height` | L'altezza a cui viene ridimensionato ciascun ritaglio (predefinita: 512). | INT | No | 64 - 4096 |
-| `padding` | Padding aggiuntivo in pixel aggiunto su ciascun lato del bounding box prima del ritaglio (predefinito: 0). | INT | No | 0 - 1024 |
-| `keep_aspect` | Se allungare il ritaglio per adattarlo alla dimensione di output oppure riempire con pixel neri per preservarne le proporzioni (predefinito: "stretch"). | COMBO | No | `"stretch"`<br>`"pad"` |
+| `immagine` | Il batch di immagini di input da ritagliare. | IMAGE | Sì | - |
+| `riquadri` | L'elenco dei bounding box che definiscono le regioni da ritagliare. Questo input è forzato, quindi deve essere collegato. | BOUNDINGBOX | Sì | - |
+| `larghezza_output` | La larghezza a cui viene ridimensionato ciascun ritaglio (predefinita: 512). | INT | No | 64 - 4096 |
+| `altezza_output` | L'altezza a cui viene ridimensionato ciascun ritaglio (predefinita: 512). | INT | No | 64 - 4096 |
+| `margine` | Padding aggiuntivo in pixel aggiunto su ciascun lato del bounding box prima del ritaglio (predefinito: 0). | INT | No | 0 - 1024 |
+| `mantieni_proporzioni` | Se allungare il ritaglio per adattarlo alla dimensione di output oppure riempire con pixel neri per preservarne le proporzioni (predefinito: "stretch"). | COMBO | No | `"stretch"`<br>`"pad"` |
 
 **Nota:** Il nodo elabora un frame immagine alla volta. Se vengono forniti più bounding box per un singolo frame, calcola un'unica regione di ritaglio che è l'unione (il più piccolo rettangolo che contiene tutti i bounding box) di tutti i bounding box forniti. Se una regione di ritaglio calcolata non è valida (ad es. larghezza o altezza pari a zero), il nodo creerà un ritaglio di fallback dalla parte superiore centrale dell'immagine.
 

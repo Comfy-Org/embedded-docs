@@ -6,7 +6,7 @@ Carica un modello MoGe (Monocular Geometry) da un file e lo prepara per l'uso in
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model_name` | Il nome del file del modello MoGe da caricare. Seleziona tra i file del modello disponibili nella cartella `geometry_estimation` della tua installazione di ComfyUI. | COMBO | Sì | Elenco dei file del modello disponibili nella cartella `geometry_estimation` |
+| `nome_modello` | Il nome del file del modello MoGe da caricare. Seleziona tra i file del modello disponibili nella cartella `geometry_estimation` della tua installazione di ComfyUI. | COMBO | Sì | Elenco dei file del modello disponibili nella cartella `geometry_estimation` |
 
 ## Output
 

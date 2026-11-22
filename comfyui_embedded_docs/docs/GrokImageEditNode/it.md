@@ -6,13 +6,13 @@ Il nodo Grok Image Edit modifica un'immagine esistente in base a un prompt testu
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello AI specifico da utilizzare per la modifica delle immagini. | COMBO | Sì | `"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"` |
-| `image` | L'immagine o le immagini di input da modificare. | IMAGE | Sì |  |
+| `modello` | Il modello AI specifico da utilizzare per la modifica delle immagini. | COMBO | Sì | `"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"` |
+| `immagine` | L'immagine o le immagini di input da modificare. | IMAGE | Sì |  |
 | `prompt` | Il prompt testuale utilizzato per generare l'immagine. Testo multilinea; deve contenere almeno un carattere diverso dallo spazio bianco. | STRING | Sì |  |
-| `resolution` | La risoluzione per l'immagine di output. | COMBO | Sì | `"1K"`<br>`"2K"` |
-| `number_of_images` | Numero di immagini modificate da generare (predefinito: 1). | INT | Sì | da 1 a 10 |
+| `risoluzione` | La risoluzione per l'immagine di output. | COMBO | Sì | `"1K"`<br>`"2K"` |
+| `numero_di_immagini` | Numero di immagini modificate da generare (predefinito: 1). | INT | Sì | da 1 a 10 |
 | `seed` | Seed per determinare se il nodo deve essere rieseguito; i risultati effettivi sono non deterministici indipendentemente dal seed (predefinito: 0). | INT | Sì | da 0 a 2147483647 |
-| `aspect_ratio` | Il rapporto d'aspetto per l'immagine di output. Consentito solo quando più immagini sono collegate all'input `image` (predefinito: "auto"). | COMBO | No | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
+| `rapporto_d'aspetto` | Il rapporto d'aspetto per l'immagine di output. Consentito solo quando più immagini sono collegate all'input `image` (predefinito: "auto"). | COMBO | No | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` |
 
 **Nota:** `grok-imagine-image-quality` e `grok-imagine-image-pro` sono stati ritirati da xAI e ora vengono eseguiti come `grok-imagine-image-2.0` a qualità bassa.
 

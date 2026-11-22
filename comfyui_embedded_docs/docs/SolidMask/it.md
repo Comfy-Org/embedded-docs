@@ -6,9 +6,9 @@ Il nodo SolidMask genera una maschera uniforme con un valore specificato sull'in
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `value` | Specifica il valore di intensità della maschera, influenzandone l'aspetto complessivo e l'utilità nelle operazioni successive. | FLOAT |
-| `width` | Determina la larghezza della maschera generata, influenzandone direttamente le dimensioni e le proporzioni. | INT |
-| `height` | Imposta l'altezza della maschera generata, influenzandone le dimensioni e le proporzioni. | INT |
+| `valore` | Specifica il valore di intensità della maschera, influenzandone l'aspetto complessivo e l'utilità nelle operazioni successive. | FLOAT |
+| `larghezza` | Determina la larghezza della maschera generata, influenzandone direttamente le dimensioni e le proporzioni. | INT |
+| `altezza` | Imposta l'altezza della maschera generata, influenzandone le dimensioni e le proporzioni. | INT |
 
 ## Output
 

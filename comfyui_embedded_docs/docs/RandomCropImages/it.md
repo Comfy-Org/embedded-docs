@@ -7,8 +7,8 @@ Il nodo Random Crop Images seleziona casualmente una sezione rettangolare da ogn
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `image` | L'immagine da ritagliare. | IMAGE | Sì | - |
-| `width` | La larghezza dell'area di ritaglio (predefinito: 512). | INT | No | 1 - 8192 |
-| `height` | L'altezza dell'area di ritaglio (predefinito: 512). | INT | No | 1 - 8192 |
+| `larghezza` | La larghezza dell'area di ritaglio (predefinito: 512). | INT | No | 1 - 8192 |
+| `altezza` | L'altezza dell'area di ritaglio (predefinito: 512). | INT | No | 1 - 8192 |
 | `seed` | Un numero utilizzato per controllare la posizione casuale del ritaglio (predefinito: 0). | INT | No | 0 - 18446744073709551615 |
 
 **Nota:** I parametri `width` e `height` devono essere minori o uguali alle dimensioni dell'immagine di input. Se una dimensione specificata è maggiore dell'immagine, il ritaglio sarà limitato al bordo dell'immagine.

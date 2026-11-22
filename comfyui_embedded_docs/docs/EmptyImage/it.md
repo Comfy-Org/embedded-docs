@@ -12,10 +12,10 @@ Proprio come un pittore che prepara una tela bianca prima di iniziare a creare, 
 
 | Nome parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `width` | Imposta la larghezza dell'immagine generata (in pixel), determinando le dimensioni orizzontali della tela | INT |
-| `height` | Imposta l'altezza dell'immagine generata (in pixel), determinando le dimensioni verticali della tela | INT |
-| `batch_size` | Il numero di immagini da generare contemporaneamente, usato per la creazione batch di immagini con le stesse specifiche | INT |
-| `color` | Il colore di sfondo dell'immagine. È possibile inserire impostazioni di colore esadecimali, che verranno automaticamente convertite in decimale | INT |
+| `larghezza` | Imposta la larghezza dell'immagine generata (in pixel), determinando le dimensioni orizzontali della tela | INT |
+| `altezza` | Imposta l'altezza dell'immagine generata (in pixel), determinando le dimensioni verticali della tela | INT |
+| `dimensione_batch` | Il numero di immagini da generare contemporaneamente, usato per la creazione batch di immagini con le stesse specifiche | INT |
+| `colore` | Il colore di sfondo dell'immagine. È possibile inserire impostazioni di colore esadecimali, che verranno automaticamente convertite in decimale | INT |
 
 ## Output
 

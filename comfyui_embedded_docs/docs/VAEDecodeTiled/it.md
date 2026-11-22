@@ -6,12 +6,12 @@ Il nodo VAEDecodeTiled decodifica le rappresentazioni latenti in immagini utiliz
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `samples` | La rappresentazione latente da decodificare in immagini | LATENT | Sì | - |
+| `campioni` | La rappresentazione latente da decodificare in immagini | LATENT | Sì | - |
 | `vae` | Il modello VAE utilizzato per decodificare i campioni latenti | VAE | Sì | - |
-| `tile_size` | La dimensione di ciascun tile per l'elaborazione (predefinito: 512) | INT | Sì | 64-4096 (passo: 32) |
-| `overlap` | La quantità di sovrapposizione tra tile adiacenti (predefinito: 64) | INT | Sì | 0-4096 (passo: 32) |
-| `temporal_size` | Utilizzato solo per VAE video: quantità di frame da decodificare alla volta (predefinito: 64) | INT | Sì | 8-4096 (passo: 4) |
-| `temporal_overlap` | Utilizzato solo per VAE video: quantità di frame da sovrapporre (predefinito: 8) | INT | Sì | 4-4096 (passo: 4) |
+| `dimensione_blocco` | La dimensione di ciascun tile per l'elaborazione (predefinito: 512) | INT | Sì | 64-4096 (passo: 32) |
+| `sovrapposizione` | La quantità di sovrapposizione tra tile adiacenti (predefinito: 64) | INT | Sì | 0-4096 (passo: 32) |
+| `dimensione_temporale` | Utilizzato solo per VAE video: quantità di frame da decodificare alla volta (predefinito: 64) | INT | Sì | 8-4096 (passo: 4) |
+| `sovrapposizione_temporale` | Utilizzato solo per VAE video: quantità di frame da sovrapporre (predefinito: 8) | INT | Sì | 4-4096 (passo: 4) |
 
 **Nota:** Gli input `tile_size`, `overlap`, `temporal_size` e `temporal_overlap` sono contrassegnati come impostazioni avanzate.
 

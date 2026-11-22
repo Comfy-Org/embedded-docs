@@ -14,18 +14,18 @@ Genera un modello 3D low-poly con topologia pulita a partire da un prompt testua
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Descrizione testuale del modello 3D da generare. Non deve essere vuota, fino a 1024 caratteri (predefinito: vuoto). | STRING | Sì | Fino a 1024 caratteri |
-| `model.negative_prompt` | Descrizione testuale di ciò che va evitato nel modello generato (predefinito: vuoto). | STRING | No | Fino a 255 caratteri |
-| `model.quad` | Restituisce una mesh a dominanza di quad sull'output FBX invece di una mesh triangolare sull'output GLB (predefinito: False). | BOOLEAN | Sì | True/False |
-| `model.face_limit` | Numero target di facce. `-1` lascia scegliere a Tripo. Con `model.quad` abilitato il limite è da 48 a 25.000, altrimenti da 48 a 50.000 (predefinito: -1). | INT | Sì | -1, oppure da 48 a 50000 |
-| `model.texture` | Risoluzione della texture del colore di base: standard è 2K, detailed 4K ed extreme 8K. `"none"` restituisce una mesh senza texture (predefinito: `"standard"`). | COMBO | Sì | `"standard"`<br>`"detailed"`<br>`"extreme"`<br>`"none"` |
-| `model.pbr` | Aggiunge mappe metallic, roughness e normal al colore di base. Ignorato quando `model.texture` è `"none"` (predefinito: True). | BOOLEAN | Sì | True/False |
-| `model.model_seed` | Seed per la geometria (predefinito: 42). | INT | Sì | da 0 a 2147483647 |
-| `model.image_seed` | Seed per l'immagine che Tripo genera dal prompt prima della modellazione (predefinito: 42). Impostazione avanzata. | INT | Sì | da 0 a 2147483647 |
-| `model.texture_seed` | Seed per le texture (predefinito: 42). Impostazione avanzata. | INT | Sì | da 0 a 2147483647 |
-| `model.auto_size` | Scala il modello alla sua dimensione reale in metri tramite la trasformazione della scena. Ignorato quando `model.texture` è `"none"` (predefinito: False). Impostazione avanzata. | BOOLEAN | Sì | True/False |
-| `model.export_uv` | Esegue l'UV unwrap della mesh quando non ha texture. Le mesh con texture vengono sempre sottoposte a UV unwrap (predefinito: True). Impostazione avanzata. | BOOLEAN | Sì | True/False |
-| `model.compress_geometry` | Applica la compressione geometrica meshopt: file molto più piccoli, ma l'anteprima 3D di ComfyUI non può visualizzarli. Ignorato per le mesh a quad (predefinito: False). Impostazione avanzata. | BOOLEAN | Sì | True/False |
+| `prompt` | Descrizione testuale del modello 3D da generare. Non deve essere vuota, fino a 1024 caratteri (predefinito: vuoto). | STRING | Sì | Fino a 1024 caratteri |
+| `negative_prompt` | Descrizione testuale di ciò che va evitato nel modello generato (predefinito: vuoto). | STRING | No | Fino a 255 caratteri |
+| `quad` | Restituisce una mesh a dominanza di quad sull'output FBX invece di una mesh triangolare sull'output GLB (predefinito: False). | BOOLEAN | Sì | True/False |
+| `face_limit` | Numero target di facce. `-1` lascia scegliere a Tripo. Con `model.quad` abilitato il limite è da 48 a 25.000, altrimenti da 48 a 50.000 (predefinito: -1). | INT | Sì | -1, oppure da 48 a 50000 |
+| `texture` | Risoluzione della texture del colore di base: standard è 2K, detailed 4K ed extreme 8K. `"none"` restituisce una mesh senza texture (predefinito: `"standard"`). | COMBO | Sì | `"standard"`<br>`"detailed"`<br>`"extreme"`<br>`"none"` |
+| `pbr` | Aggiunge mappe metallic, roughness e normal al colore di base. Ignorato quando `model.texture` è `"none"` (predefinito: True). | BOOLEAN | Sì | True/False |
+| `model_seed` | Seed per la geometria (predefinito: 42). | INT | Sì | da 0 a 2147483647 |
+| `image_seed` | Seed per l'immagine che Tripo genera dal prompt prima della modellazione (predefinito: 42). Impostazione avanzata. | INT | Sì | da 0 a 2147483647 |
+| `texture_seed` | Seed per le texture (predefinito: 42). Impostazione avanzata. | INT | Sì | da 0 a 2147483647 |
+| `auto_size` | Scala il modello alla sua dimensione reale in metri tramite la trasformazione della scena. Ignorato quando `model.texture` è `"none"` (predefinito: False). Impostazione avanzata. | BOOLEAN | Sì | True/False |
+| `export_uv` | Esegue l'UV unwrap della mesh quando non ha texture. Le mesh con texture vengono sempre sottoposte a UV unwrap (predefinito: True). Impostazione avanzata. | BOOLEAN | Sì | True/False |
+| `compress_geometry` | Applica la compressione geometrica meshopt: file molto più piccoli, ma l'anteprima 3D di ComfyUI non può visualizzarli. Ignorato per le mesh a quad (predefinito: False). Impostazione avanzata. | BOOLEAN | Sì | True/False |
 
 **Note:**
 

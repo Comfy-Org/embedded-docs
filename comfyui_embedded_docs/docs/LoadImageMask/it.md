@@ -6,8 +6,8 @@ Il nodo LoadImageMask è progettato per caricare immagini e le relative maschere
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `image` | Il parametro `image` specifica il file immagine da caricare ed elaborare. Svolge un ruolo cruciale nel determinare l'output fornendo l'immagine di origine per l'estrazione della maschera e la conversione del formato. | COMBO[STRING] |
-| `channel` | Il parametro `channel` specifica il canale di colore dell'immagine che verrà utilizzato per generare la maschera. Ciò consente flessibilità nella creazione della maschera in base a diversi canali di colore, migliorando l'utilità del nodo in vari scenari di elaborazione delle immagini. | COMBO[STRING] |
+| `immagine` | Il parametro `image` specifica il file immagine da caricare ed elaborare. Svolge un ruolo cruciale nel determinare l'output fornendo l'immagine di origine per l'estrazione della maschera e la conversione del formato. | COMBO[STRING] |
+| `canale` | Il parametro `channel` specifica il canale di colore dell'immagine che verrà utilizzato per generare la maschera. Ciò consente flessibilità nella creazione della maschera in base a diversi canali di colore, migliorando l'utilità del nodo in vari scenari di elaborazione delle immagini. | COMBO[STRING] |
 
 ## Output
 

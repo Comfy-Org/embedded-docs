@@ -30,8 +30,8 @@ Qualsiasi configurazione dual GPU omogenea con architettura Ampere+ (ad es. 2 x 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello da preparare per la suddivisione CFG multi-GPU prima del campionamento. | MODEL | Sì | N/A |
-| `max_gpus` | Il numero massimo di GPU identiche da utilizzare per la suddivisione del carico di lavoro. Impostare questo valore al numero di GPU corrispondenti installate nel sistema. | INT | Sì | Minimo: 1<br>Passo: 1<br>Predefinito: 2 |
+| `modello` | Il modello da preparare per la suddivisione CFG multi-GPU prima del campionamento. | MODEL | Sì | N/A |
+| `max GPU` | Il numero massimo di GPU identiche da utilizzare per la suddivisione del carico di lavoro. Impostare questo valore al numero di GPU corrispondenti installate nel sistema. | INT | Sì | Minimo: 1<br>Passo: 1<br>Predefinito: 2 |
 
 ## Output
 

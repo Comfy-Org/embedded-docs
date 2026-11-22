@@ -8,7 +8,7 @@ Il nodo Tencent HY Image: Text to Image genera un'immagine da una descrizione te
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Il modello utilizzato per la generazione. Il modello selezionato determina quali input aggiuntivi vengono mostrati. | DYNAMIC_COMBO | Sì | `"hy-image-3.5-preview"` |
+| `modello` | Il modello utilizzato per la generazione. Il modello selezionato determina quali input aggiuntivi vengono mostrati. | DYNAMIC_COMBO | Sì | `"hy-image-3.5-preview"` |
 
 ### Input di hy-image-3.5-preview
 

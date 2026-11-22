@@ -8,12 +8,12 @@ Questo nodo utilizza il modello Kling 3.0 per generare un video. Crea il video b
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Impostazioni del modello e di generazione. Selezionando questa opzione viene mostrato un parametro `resolution` annidato. | DYNAMIC_COMBO | Sì | `"kling-v3"` |
+| `modello` | Impostazioni del modello e di generazione. Selezionando questa opzione viene mostrato un parametro `resolution` annidato. | DYNAMIC_COMBO | Sì | `"kling-v3"` |
 | `prompt` | La descrizione testuale che guida la generazione del video. Deve contenere da 1 a 2500 caratteri. | STRING | Sì | N/A |
-| `duration` | La durata del video in secondi (predefinito: 5). | INT | Sì | 3 a 15 |
-| `first_frame` | L'immagine iniziale del video. Deve essere di almeno 300x300 pixel e avere un rapporto d'aspetto compreso tra 1:2.5 e 2.5:1. | IMAGE | Sì | N/A |
-| `end_frame` | L'immagine finale del video. Deve essere di almeno 300x300 pixel e avere un rapporto d'aspetto compreso tra 1:2.5 e 2.5:1. | IMAGE | Sì | N/A |
-| `generate_audio` | Controlla se generare l'audio per il video (predefinito: True). | BOOLEAN | Sì | N/A |
+| `durata` | La durata del video in secondi (predefinito: 5). | INT | Sì | 3 a 15 |
+| `primo_frame` | L'immagine iniziale del video. Deve essere di almeno 300x300 pixel e avere un rapporto d'aspetto compreso tra 1:2.5 e 2.5:1. | IMAGE | Sì | N/A |
+| `ultimo_frame` | L'immagine finale del video. Deve essere di almeno 300x300 pixel e avere un rapporto d'aspetto compreso tra 1:2.5 e 2.5:1. | IMAGE | Sì | N/A |
+| `genera_audio` | Controlla se generare l'audio per il video (predefinito: True). | BOOLEAN | Sì | N/A |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed (predefinito: 0). | INT | Sì | 0 a 2147483647 |
 
 ### Input di Kling V3

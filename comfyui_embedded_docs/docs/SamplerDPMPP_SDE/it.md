@@ -11,7 +11,7 @@ SamplerDPMPP_SDE crea un campionatore DPM++ SDE (Stochastic Differential Equatio
 | `eta` | Controlla la stocasticità del processo di campionamento (predefinito: 1.0) | FLOAT | Sì | 0.0 - 100.0 |
 | `s_noise` | Controlla la quantità di rumore aggiunto durante il campionamento (predefinito: 1.0) | FLOAT | Sì | 0.0 - 100.0 |
 | `r` | Un parametro che influenza il comportamento del campionamento (predefinito: 0.5) | FLOAT | Sì | 0.0 - 100.0 |
-| `noise_device` | Seleziona il dispositivo in cui vengono eseguiti i calcoli del rumore. Se impostato su "cpu", viene creato il campionatore `dpmpp_sde`; se impostato su "gpu", viene creato il campionatore `dpmpp_sde_gpu` (predefinito: "gpu") | COMBO | Sì | "gpu"<br>"cpu" |
+| `dispositivo rumore` | Seleziona il dispositivo in cui vengono eseguiti i calcoli del rumore. Se impostato su "cpu", viene creato il campionatore `dpmpp_sde`; se impostato su "gpu", viene creato il campionatore `dpmpp_sde_gpu` (predefinito: "gpu") | COMBO | Sì | "gpu"<br>"cpu" |
 
 Nota: tutti gli input sono contrassegnati come parametri avanzati. La selezione `noise_device` cambia quale variante del campionatore viene creata: "cpu" corrisponde a `dpmpp_sde` e "gpu" corrisponde a `dpmpp_sde_gpu`.
 

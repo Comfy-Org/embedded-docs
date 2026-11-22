@@ -6,7 +6,7 @@ Unisce camere e orbite delle camere in un unico elenco di camere, nell'ordine di
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `cameras` | Slot espandibile di camere, da Create Camera Info, Create Camera Orbit o da un visualizzatore. Un elenco di camere viene considerato come l'insieme di tutte le camere in esso contenute. | AUTOGROW | Sì | 1 a 50 camere |
+| `camere` | Slot espandibile di camere, da Create Camera Info, Create Camera Orbit o da un visualizzatore. Un elenco di camere viene considerato come l'insieme di tutte le camere in esso contenute. | AUTOGROW | Sì | 1 a 50 camere |
 
 ## Output
 

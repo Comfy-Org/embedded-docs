@@ -6,8 +6,8 @@ Il nodo Self-Attention Guidance applica una guida ai modelli di diffusione modif
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello di diffusione a cui applicare la guida self-attention | MODEL | Sì | - |
-| `scale` | L'intensità dell'effetto della guida self-attention (predefinito: 0.5) | FLOAT | No | da -2.0 a 5.0 |
+| `modello` | Il modello di diffusione a cui applicare la guida self-attention | MODEL | Sì | - |
+| `scala` | L'intensità dell'effetto della guida self-attention (predefinito: 0.5) | FLOAT | No | da -2.0 a 5.0 |
 | `blur_sigma` | La quantità di sfocatura applicata per creare la mappa di guida (predefinito: 2.0) | FLOAT | No | da 0.0 a 10.0 |
 
 ## Output

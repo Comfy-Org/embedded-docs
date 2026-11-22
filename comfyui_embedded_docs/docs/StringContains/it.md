@@ -6,9 +6,9 @@ Il nodo StringContains verifica se una determinata stringa contiene una sottostr
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `string` | La stringa di testo principale in cui cercare | STRING | Sì | - |
-| `substring` | Il testo da cercare all'interno della stringa principale | STRING | Sì | - |
-| `case_sensitive` | Determina se la ricerca deve distinguere maiuscole e minuscole (predefinito: true) | BOOLEAN | No | - |
+| `stringa` | La stringa di testo principale in cui cercare | STRING | Sì | - |
+| `sottostringa` | Il testo da cercare all'interno della stringa principale | STRING | Sì | - |
+| `distingui_maiuscole` | Determina se la ricerca deve distinguere maiuscole e minuscole (predefinito: true) | BOOLEAN | No | - |
 
 ## Output
 
