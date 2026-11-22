@@ -9,7 +9,7 @@ The TypeSafe Jev (Choice) node picks one of your own options for connected text,
 | `model` | Jev model to use. Only one model is currently available: `jev-1.14.0`. | COMBO | Yes | `"jev-1.14.0"` |
 | `question` | The question the options answer. With several image sockets, use their names, for example `Which season is shown in image_1?` (default: `What style is the image?`). | STRING | Yes | 1 to 1000 characters |
 | `options` | The options to choose from, one per line. Leading and trailing whitespace is trimmed from each line, and options must be unique ignoring case, so a repeated option or two options that differ only in case are rejected. Add an option such as `other` for inputs that fit none of them (default: `photo`, `illustration`, `3d render`, `anime`, `sketch` and `other`, one per line). | STRING | Yes | 2 to 50 options, up to 40 characters each |
-| `images` | The images the question is about. Up to 32 images in total; a batched input counts once per image. The long side of every image is capped by the total number of images: 1568 px for up to 4 images, 1024 px for up to 8, 768 px for up to 16 and 512 px for up to 32, so a larger batch means less detail in every image. | AUTOGROW | No | 0 to 32 images |
+| `images` | The images the question is about. Up to 32 images in total; a batched input counts once per image. The long side of every image is capped by the total number of images: 1568 px for up to 4 images, 1024 px for up to 8, 768 px for up to 16 and 512 px for up to 32, so a larger batch can reduce the detail in every image. | AUTOGROW | No | 0 to 32 images |
 | `text` | The text the question is about, such as a prompt or an LLM response. | STRING | No | 0 to 3000 characters |
 
 **Notes:**
