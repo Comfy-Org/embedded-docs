@@ -7,21 +7,21 @@ Gera um material PBR completo e com tiling perfeito a partir de uma descrição 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Descrição do material ou da textura a ser gerada. | STRING | Sim | Texto multilinha |
-| `image_size` | Tamanho da textura de saída. `"custom"` revela as entradas `width` e `height`. Padrão: `"1:1 (1024x1024)"`. | DYNAMIC_COMBO | Sim | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
-| `basecolor` | Gera o mapa de cor base (albedo). Padrão: True. | BOOLEAN | Sim | true<br>false |
+| `tamanho_da_imagem` | Tamanho da textura de saída. `"custom"` revela as entradas `width` e `height`. Padrão: `"1:1 (1024x1024)"`. | DYNAMIC_COMBO | Sim | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
+| `cor_base` | Gera o mapa de cor base (albedo). Padrão: True. | BOOLEAN | Sim | true<br>false |
 | `normal` | Gera o mapa de normais. Padrão: True. | BOOLEAN | Sim | true<br>false |
-| `roughness` | Gera o mapa de rugosidade. Padrão: False. | BOOLEAN | Sim | true<br>false |
+| `rugosidade` | Gera o mapa de rugosidade. Padrão: False. | BOOLEAN | Sim | true<br>false |
 | `metalness` | Gera o mapa de metalicidade. Padrão: False. | BOOLEAN | Sim | true<br>false |
-| `height` | Gera o mapa de altura (deslocamento). Padrão: False. | BOOLEAN | Sim | true<br>false |
+| `altura` | Gera o mapa de altura (deslocamento). Padrão: False. | BOOLEAN | Sim | true<br>false |
 | `upscale_factor` | Upscaling SeedVR sem emendas dos mapas PBR. A textura base não passa por upscaling, e 4x transforma um mapa de 2048 pixels em um de 8K. Padrão: 0 (desativado). | INT | Sim | 0 a 4 (passo 2) |
-| `seed` | Semente para geração reproduzível. Padrão: 42. | INT | Sim | 0 a 2147483646 |
+| `semente` | Semente para geração reproduzível. Padrão: 42. | INT | Sim | 0 a 2147483646 |
 | `tiling_mode` | Direção do tiling: omnidirecional, horizontal ou vertical. Configuração avançada. Padrão: `"both"`. | COMBO | Sim | `"both"`<br>`"horizontal"`<br>`"vertical"` |
 | `num_inference_steps` | Etapas de denoising para geração de textura. Configuração avançada. Padrão: 8. | INT | Sim | 1 a 8 |
 | `tile_size` | Tamanho do tile no espaço latente, em que 64 significa 512 pixels e 128 significa 1024 pixels. Configuração avançada. Padrão: 128. | INT | Sim | 32 a 256 (passo 2) |
 | `tile_stride` | Stride do tile no espaço latente. Configuração avançada. Padrão: 64. | INT | Sim | 16 a 128 (passo 2) |
-| `image` | Imagem de origem opcional. Sozinha, executa image-to-image; junto com uma máscara, executa uma passada de inpaint. | IMAGE | Não | - |
-| `mask` | Máscara de inpaint opcional; requer uma imagem de entrada. Áreas brancas são regeneradas e áreas pretas são mantidas. | MASK | Não | - |
-| `strength` | Quanto transformar a imagem de entrada. Usado apenas quando uma imagem está conectada. Configuração avançada. Padrão: 0.6. | FLOAT | Sim | 0.01 a 1.0 (passo 0.01) |
+| `imagem` | Imagem de origem opcional. Sozinha, executa image-to-image; junto com uma máscara, executa uma passada de inpaint. | IMAGE | Não | - |
+| `máscara` | Máscara de inpaint opcional; requer uma imagem de entrada. Áreas brancas são regeneradas e áreas pretas são mantidas. | MASK | Não | - |
+| `intensidade` | Quanto transformar a imagem de entrada. Usado apenas quando uma imagem está conectada. Configuração avançada. Padrão: 0.6. | FLOAT | Sim | 0.01 a 1.0 (passo 0.01) |
 | `prompt_expansion` | Expande o prompt com um modelo de linguagem para obter mais detalhes na textura. Desativado por padrão, porque a expansão reformula o prompt como uma fotografia e tende a esmaecer o mapa de metalicidade. Configuração avançada. | BOOLEAN | Sim | true<br>false |
 | `safety_checker` | Executa a verificação de segurança de conteúdo do provedor na solicitação. Configuração avançada. Padrão: False. | BOOLEAN | Sim | true<br>false |
 

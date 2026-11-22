@@ -6,24 +6,24 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | 要生成的材質或貼圖描述。 | STRING | 是 | 多行文字 |
-| `image_size` | 輸出貼圖尺寸。`"custom"` 會顯示 `width` 與 `height` 輸入。預設：`"1:1 (1024x1024)"`。 | DYNAMIC_COMBO | 是 | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
-| `basecolor` | 生成 basecolor（albedo）貼圖。預設：True。 | BOOLEAN | 是 | true<br>false |
-| `normal` | 生成 normal 貼圖。預設：True。 | BOOLEAN | 是 | true<br>false |
-| `roughness` | 生成 roughness 貼圖。預設：False。 | BOOLEAN | 是 | true<br>false |
-| `metalness` | 生成 metalness 貼圖。預設：False。 | BOOLEAN | 是 | true<br>false |
-| `height` | 生成 height（displacement）貼圖。預設：False。 | BOOLEAN | 是 | true<br>false |
-| `upscale_factor` | 對 PBR 貼圖進行無縫 SeedVR 放大。基礎貼圖不會被放大，4x 會將 2048 像素的貼圖放大為 8K。預設：0（關閉）。 | INT | 是 | 0 至 4（步長 2） |
-| `seed` | 用於可重現生成的種子。預設：42。 | INT | 是 | 0 至 2147483646 |
-| `tiling_mode` | 平鋪方向：全方位、水平或垂直。進階設定。預設：`"both"`。 | COMBO | 是 | `"both"`<br>`"horizontal"`<br>`"vertical"` |
-| `num_inference_steps` | 貼圖生成的去噪步數。進階設定。預設：8。 | INT | 是 | 1 至 8 |
-| `tile_size` | 潛空間中的圖塊大小，其中 64 表示 512 像素，128 表示 1024 像素。進階設定。預設：128。 | INT | 是 | 32 至 256（步長 2） |
-| `tile_stride` | 潛空間中的圖塊步幅。進階設定。預設：64。 | INT | 是 | 16 至 128（步長 2） |
-| `image` | 可選的來源影像。單獨使用時會執行 image-to-image；與遮罩一起使用時則執行 inpaint 傳遞。 | IMAGE | 否 | - |
-| `mask` | 可選的 inpaint 遮罩，需要輸入影像。白色區域會被重新生成，黑色區域會被保留。 | MASK | 否 | - |
-| `strength` | 對輸入影像的轉換程度。僅在連接影像時使用。進階設定。預設：0.6。 | FLOAT | 是 | 0.01 至 1.0（步長 0.01） |
-| `prompt_expansion` | 使用語言模型擴展提示詞，以獲得更豐富的貼圖細節。預設為關閉，因為擴展會將提示詞重新框架為照片，並往往會沖淡 metalness 貼圖。進階設定。 | BOOLEAN | 是 | true<br>false |
-| `safety_checker` | 對請求執行供應商的內容安全檢查。進階設定。預設：False。 | BOOLEAN | 是 | true<br>false |
+| `提示詞` | 要生成的材質或貼圖描述。 | STRING | 是 | 多行文字 |
+| `影像大小` | 輸出貼圖尺寸。`"custom"` 會顯示 `width` 與 `height` 輸入。預設：`"1:1 (1024x1024)"`。 | DYNAMIC_COMBO | 是 | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
+| `基礎色彩` | 生成 basecolor（albedo）貼圖。預設：True。 | BOOLEAN | 是 | true<br>false |
+| `法線` | 生成 normal 貼圖。預設：True。 | BOOLEAN | 是 | true<br>false |
+| `粗糙度` | 生成 roughness 貼圖。預設：False。 | BOOLEAN | 是 | true<br>false |
+| `金屬度` | 生成 metalness 貼圖。預設：False。 | BOOLEAN | 是 | true<br>false |
+| `高度` | 生成 height（displacement）貼圖。預設：False。 | BOOLEAN | 是 | true<br>false |
+| `放大倍率` | 對 PBR 貼圖進行無縫 SeedVR 放大。基礎貼圖不會被放大，4x 會將 2048 像素的貼圖放大為 8K。預設：0（關閉）。 | INT | 是 | 0 至 4（步長 2） |
+| `種子` | 用於可重現生成的種子。預設：42。 | INT | 是 | 0 至 2147483646 |
+| `平鋪模式` | 平鋪方向：全方位、水平或垂直。進階設定。預設：`"both"`。 | COMBO | 是 | `"both"`<br>`"horizontal"`<br>`"vertical"` |
+| `推論步數` | 貼圖生成的去噪步數。進階設定。預設：8。 | INT | 是 | 1 至 8 |
+| `圖塊大小` | 潛空間中的圖塊大小，其中 64 表示 512 像素，128 表示 1024 像素。進階設定。預設：128。 | INT | 是 | 32 至 256（步長 2） |
+| `圖塊步幅` | 潛空間中的圖塊步幅。進階設定。預設：64。 | INT | 是 | 16 至 128（步長 2） |
+| `影像` | 可選的來源影像。單獨使用時會執行 image-to-image；與遮罩一起使用時則執行 inpaint 傳遞。 | IMAGE | 否 | - |
+| `遮罩` | 可選的 inpaint 遮罩，需要輸入影像。白色區域會被重新生成，黑色區域會被保留。 | MASK | 否 | - |
+| `強度` | 對輸入影像的轉換程度。僅在連接影像時使用。進階設定。預設：0.6。 | FLOAT | 是 | 0.01 至 1.0（步長 0.01） |
+| `提示詞擴充` | 使用語言模型擴展提示詞，以獲得更豐富的貼圖細節。預設為關閉，因為擴展會將提示詞重新框架為照片，並往往會沖淡 metalness 貼圖。進階設定。 | BOOLEAN | 是 | true<br>false |
+| `安全檢查器` | 對請求執行供應商的內容安全檢查。進階設定。預設：False。 | BOOLEAN | 是 | true<br>false |
 
 ### 自訂影像尺寸輸入
 

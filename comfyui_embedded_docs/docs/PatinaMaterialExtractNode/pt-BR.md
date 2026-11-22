@@ -6,7 +6,7 @@ Extrai um material PBR com tiling contínuo (sem emendas) de uma região de uma 
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A imagem da qual extrair uma textura. | IMAGE | Sim | - |
+| `imagem` | A imagem da qual extrair uma textura. | IMAGE | Sim | - |
 | `prompt` | Descrição de qual textura extrair da imagem, por exemplo `"the wall"`. | STRING | Sim | Texto multilinha |
 | `image_size` | Tamanho da textura de saída. `"custom"` revela as entradas `width` e `height`. Padrão: `"1:1 (1024x1024)"`. | DYNAMIC_COMBO | Sim | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
 | `basecolor` | Gerar o mapa basecolor (albedo). Padrão: True. | BOOLEAN | Sim | true<br>false |
@@ -14,15 +14,15 @@ Extrai um material PBR com tiling contínuo (sem emendas) de uma região de uma 
 | `roughness` | Gerar o mapa de rugosidade. Padrão: False. | BOOLEAN | Sim | true<br>false |
 | `metalness` | Gerar o mapa de metalicidade. Padrão: False. | BOOLEAN | Sim | true<br>false |
 | `height` | Gerar o mapa de altura (deslocamento). Padrão: False. | BOOLEAN | Sim | true<br>false |
-| `upscale_factor` | Upscaling SeedVR contínuo (sem emendas) dos mapas PBR. A textura base não é ampliada, e 4x transforma um mapa de 2048 pixels em um de 8K. Padrão: 0 (desativado). | INT | Sim | 0 a 4 (passo: 2) |
-| `seed` | Semente para geração reproduzível. Padrão: 42. | INT | Sim | 0 a 2147483646 |
-| `strength` | Quanto transformar a imagem de entrada. Configuração avançada. Padrão: 0.6. | FLOAT | Sim | 0.01 a 1.0 (passo: 0.01) |
-| `tiling_mode` | Direção do tiling: omnidirecional, horizontal ou vertical. Configuração avançada. Padrão: `"both"`. | COMBO | Sim | `"both"`<br>`"horizontal"`<br>`"vertical"` |
-| `num_inference_steps` | Etapas de denoising para geração da textura. Configuração avançada. Padrão: 8. | INT | Sim | 1 a 8 |
-| `tile_size` | Tamanho do tile no espaço latente, em que 64 significa 512 pixels e 128 significa 1024 pixels. Configuração avançada. Padrão: 128. | INT | Sim | 32 a 256 (passo: 2) |
-| `tile_stride` | Stride do tile no espaço latente. Configuração avançada. Padrão: 64. | INT | Sim | 16 a 128 (passo: 2) |
-| `prompt_expansion` | Expande o prompt com um modelo de linguagem para obter detalhes de textura mais ricos. Desativado por padrão, porque a expansão reformula o prompt como uma fotografia e tende a apagar o mapa de metalicidade. Configuração avançada. | BOOLEAN | Sim | true<br>false |
-| `safety_checker` | Executa a verificação de segurança de conteúdo do provedor na solicitação. Configuração avançada. Padrão: False. | BOOLEAN | Sim | true<br>false |
+| `fator_de_ampliação` | Upscaling SeedVR contínuo (sem emendas) dos mapas PBR. A textura base não é ampliada, e 4x transforma um mapa de 2048 pixels em um de 8K. Padrão: 0 (desativado). | INT | Sim | 0 a 4 (passo: 2) |
+| `semente` | Semente para geração reproduzível. Padrão: 42. | INT | Sim | 0 a 2147483646 |
+| `intensidade` | Quanto transformar a imagem de entrada. Configuração avançada. Padrão: 0.6. | FLOAT | Sim | 0.01 a 1.0 (passo: 0.01) |
+| `modo_de_ladrilhamento` | Direção do tiling: omnidirecional, horizontal ou vertical. Configuração avançada. Padrão: `"both"`. | COMBO | Sim | `"both"`<br>`"horizontal"`<br>`"vertical"` |
+| `número_de_etapas_de_inferência` | Etapas de denoising para geração da textura. Configuração avançada. Padrão: 8. | INT | Sim | 1 a 8 |
+| `tamanho_do_bloco` | Tamanho do tile no espaço latente, em que 64 significa 512 pixels e 128 significa 1024 pixels. Configuração avançada. Padrão: 128. | INT | Sim | 32 a 256 (passo: 2) |
+| `passo_do_bloco` | Stride do tile no espaço latente. Configuração avançada. Padrão: 64. | INT | Sim | 16 a 128 (passo: 2) |
+| `expansão_do_prompt` | Expande o prompt com um modelo de linguagem para obter detalhes de textura mais ricos. Desativado por padrão, porque a expansão reformula o prompt como uma fotografia e tende a apagar o mapa de metalicidade. Configuração avançada. | BOOLEAN | Sim | true<br>false |
+| `verificador_de_segurança` | Executa a verificação de segurança de conteúdo do provedor na solicitação. Configuração avançada. Padrão: False. | BOOLEAN | Sim | true<br>false |
 
 ### Entradas de tamanho de imagem personalizado
 

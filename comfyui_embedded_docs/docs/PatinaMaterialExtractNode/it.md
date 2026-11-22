@@ -6,14 +6,14 @@ Estrae un materiale PBR tileabile senza cuciture da una regione di un'immagine d
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine da cui estrarre una texture. | IMAGE | Sì | - |
+| `immagine` | L'immagine da cui estrarre una texture. | IMAGE | Sì | - |
 | `prompt` | Descrizione di quale texture estrarre dall'immagine, ad esempio `"the wall"`. | STRING | Sì | Testo multiriga |
-| `image_size` | Dimensione della texture di output. `"custom"` mostra gli input `width` e `height`. Predefinito: `"1:1 (1024x1024)"`. | DYNAMIC_COMBO | Sì | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
-| `basecolor` | Genera la mappa basecolor (albedo). Predefinito: True. | BOOLEAN | Sì | true<br>false |
-| `normal` | Genera la mappa normal. Predefinito: True. | BOOLEAN | Sì | true<br>false |
-| `roughness` | Genera la mappa roughness. Predefinito: False. | BOOLEAN | Sì | true<br>false |
-| `metalness` | Genera la mappa metalness. Predefinito: False. | BOOLEAN | Sì | true<br>false |
-| `height` | Genera la mappa height (displacement). Predefinito: False. | BOOLEAN | Sì | true<br>false |
+| `dimensione_immagine` | Dimensione della texture di output. `"custom"` mostra gli input `width` e `height`. Predefinito: `"1:1 (1024x1024)"`. | DYNAMIC_COMBO | Sì | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
+| `colore_base` | Genera la mappa basecolor (albedo). Predefinito: True. | BOOLEAN | Sì | true<br>false |
+| `normale` | Genera la mappa normal. Predefinito: True. | BOOLEAN | Sì | true<br>false |
+| `ruvidità` | Genera la mappa roughness. Predefinito: False. | BOOLEAN | Sì | true<br>false |
+| `metallicità` | Genera la mappa metalness. Predefinito: False. | BOOLEAN | Sì | true<br>false |
+| `altezza` | Genera la mappa height (displacement). Predefinito: False. | BOOLEAN | Sì | true<br>false |
 | `upscale_factor` | Upscaling SeedVR senza cuciture delle mappe PBR. La texture di base non viene sottoposta a upscaling e 4x trasforma una mappa da 2048 pixel in una da 8K. Predefinito: 0 (disattivato). | INT | Sì | 0 a 4 (passo 2) |
 | `seed` | Seme per una generazione riproducibile. Predefinito: 42. | INT | Sì | 0 a 2147483646 |
 | `strength` | Quanto trasformare l'immagine di input. Impostazione avanzata. Predefinito: 0.6. | FLOAT | Sì | 0.01 a 1.0 (passo 0.01) |
