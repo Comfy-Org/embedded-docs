@@ -6,7 +6,7 @@ El nodo Kling Image(First Frame) to Video with Audio utiliza el modelo de IA Kli
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model_name` | La versión específica del modelo de IA Kling a utilizar para la generación del video. | COMBO | Sí | `"kling-v2-6"` |
+| `nombre_del_modelo` | La versión específica del modelo de IA Kling a utilizar para la generación del video. | COMBO | Sí | `"kling-v2-6"` |
 | `fotograma_inicial` | La imagen que servirá como primer fotograma del video generado. La imagen debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. | IMAGE | Sí | - |
 | `prompt` | Mensaje de texto positivo. Describe el contenido del video que deseas generar. El mensaje debe tener entre 1 y 2500 caracteres. | STRING | Sí | - |
 | `modo` | El modo operativo para la generación del video. | COMBO | Sí | `"pro"` |

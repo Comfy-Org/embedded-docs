@@ -8,7 +8,7 @@ Recast 會將影片中的人物替換為參考照片中的人物，同時保留�
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `model` | 用於影片生成的模型。 | DYNAMIC_COMBO | 是 | "MiniMax H3 Max" |
+| `模型` | 用於影片生成的模型。 | DYNAMIC_COMBO | 是 | "MiniMax H3 Max" |
 
 ### MiniMax H3 Max 輸入
 

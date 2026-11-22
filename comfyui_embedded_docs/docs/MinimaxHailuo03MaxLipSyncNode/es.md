@@ -8,7 +8,7 @@ Este nodo anima una imagen fija para que los movimientos de la boca sigan una pi
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo que se usará para la generación de video. | DYNAMIC_COMBO | Sí | "MiniMax H3 Max" |
+| `modelo` | Modelo que se usará para la generación de video. | DYNAMIC_COMBO | Sí | "MiniMax H3 Max" |
 
 ### Entradas de MiniMax H3 Max
 

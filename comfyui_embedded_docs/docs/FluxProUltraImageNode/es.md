@@ -7,12 +7,12 @@ Genera imágenes usando Flux Pro 1.1 Ultra a través de API basándose en una de
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `prompt` | Descripción textual para la generación de la imagen (valor predeterminado: cadena vacía) | STRING | Sí | - |
-| `prompt_upsampling` | Si se debe realizar un sobremuestreo en la descripción textual. Si está activo, modifica automáticamente la descripción para una generación más creativa, pero los resultados no son deterministas (la misma semilla no producirá exactamente el mismo resultado). (valor predeterminado: False) | BOOLEAN | No | - |
-| `seed` | La semilla aleatoria utilizada para crear el ruido. (valor predeterminado: 0) | INT | No | 0 a 18446744073709551615 |
-| `aspect_ratio` | Relación de aspecto de la imagen; debe estar entre 1:4 y 4:1. (valor predeterminado: "16:9") | STRING | No | - |
+| `mejora_de_prompt` | Si se debe realizar un sobremuestreo en la descripción textual. Si está activo, modifica automáticamente la descripción para una generación más creativa, pero los resultados no son deterministas (la misma semilla no producirá exactamente el mismo resultado). (valor predeterminado: False) | BOOLEAN | No | - |
+| `semilla` | La semilla aleatoria utilizada para crear el ruido. (valor predeterminado: 0) | INT | No | 0 a 18446744073709551615 |
+| `relación_de_aspecto` | Relación de aspecto de la imagen; debe estar entre 1:4 y 4:1. (valor predeterminado: "16:9") | STRING | No | - |
 | `raw` | Cuando es True, genera imágenes menos procesadas y de apariencia más natural. (valor predeterminado: False) | BOOLEAN | No | - |
-| `image_prompt` | Imagen de referencia opcional para guiar la generación | IMAGE | No | - |
-| `image_prompt_strength` | Mezcla entre la descripción textual y la imagen de referencia. (valor predeterminado: 0.1) | FLOAT | No | 0.0 a 1.0 |
+| `prompt_de_imagen` | Imagen de referencia opcional para guiar la generación | IMAGE | No | - |
+| `fuerza_del_prompt_de_imagen` | Mezcla entre la descripción textual y la imagen de referencia. (valor predeterminado: 0.1) | FLOAT | No | 0.0 a 1.0 |
 
 **Nota:** El parámetro `aspect_ratio` debe estar entre 1:4 y 4:1. Cuando se proporciona `image_prompt`, `image_prompt_strength` se activa y controla cuánto influye la imagen de referencia en el resultado final. Si no se proporciona `image_prompt`, el parámetro `prompt` se valida para asegurar que no esté vacío.
 

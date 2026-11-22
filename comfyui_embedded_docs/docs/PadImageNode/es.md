@@ -6,7 +6,7 @@ Añade relleno a una imagen con un color sólido o con una copia reflejada de su
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `image` | La imagen a la que se añadirá relleno. | IMAGE | Sí | - |
+| `imagen` | La imagen a la que se añadirá relleno. | IMAGE | Sí | - |
 | `padding_type` | Cuánto relleno añadir: `"pad dimensions"` para cantidades exactas por lado, `"pad by multiplier"` para un tamaño de salida relativo a la entrada, o `"pad to multiple"` para alcanzar el siguiente múltiplo. Al seleccionar una opción se muestran sus parámetros. | DYNAMIC_COMBO | Sí | `"pad dimensions"`<br>`"pad by multiplier"`<br>`"pad to multiple"` |
 | `left` | Píxeles que se añaden a la izquierda. Disponible cuando `padding_type` es `"pad dimensions"` (predeterminado: 0). | INT | Sí | 0 a 16384 |
 | `top` | Píxeles que se añaden en la parte superior. Disponible cuando `padding_type` es `"pad dimensions"` (predeterminado: 0). | INT | Sí | 0 a 16384 |

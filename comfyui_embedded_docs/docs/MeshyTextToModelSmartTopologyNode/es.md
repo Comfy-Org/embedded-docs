@@ -6,11 +6,11 @@ Este nodo genera una malla triangular lista para juegos con un recuento objetivo
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | La versión del modelo Meshy que se utilizará para la generación. | COMBO | Sí | `"meshy-t2.5"` |
+| `modelo` | La versión del modelo Meshy que se utilizará para la generación. | COMBO | Sí | `"meshy-t2.5"` |
 | `prompt` | La descripción de texto del modelo 3D que se va a generar. | STRING | Sí | 1 a 800 caracteres |
-| `target_polycount` | Número aproximado de triángulos en la malla generada. Predeterminado: 15000. | INT | Sí | 100 a 30000 |
-| `pose_mode` | La pose del personaje generado. Una cadena vacía solicita que no se aplique una pose específica. Esta es una configuración avanzada. Predeterminado: `""` (cadena vacía). | COMBO | Sí | `""`<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
+| `recuento_de_polígonos_objetivo` | Número aproximado de triángulos en la malla generada. Predeterminado: 15000. | INT | Sí | 100 a 30000 |
+| `modo de pose` | La pose del personaje generado. Una cadena vacía solicita que no se aplique una pose específica. Esta es una configuración avanzada. Predeterminado: `""` (cadena vacía). | COMBO | Sí | `""`<br>`"A-pose"`<br>`"T-pose"` |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
 
 **Restricciones:**
 

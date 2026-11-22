@@ -8,7 +8,7 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的模型。`heygen-voice-1-turbo` 速度更快且成本更低（預設：`"heygen-voice-1"`）。 | DYNAMIC_COMBO | 是 | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `模型` | 要使用的模型。`heygen-voice-1-turbo` 速度更快且成本更低（預設：`"heygen-voice-1"`）。 | DYNAMIC_COMBO | 是 | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `audio` | 要複製的單一講者錄音。請使用至少 10 秒清晰的語音；僅使用前 3 分鐘。 | AUDIO | 是 | - |
 | `text` | 要朗讀的文字，最多 5000 個字元。超過約 12 分鐘的語音會失敗，因此請將極長的中文或日文文字分段（預設：空）。 | STRING | 是 | 1 至 5000 個字元 |
 | `language` | 文字的語言。對於塞爾維亞語或馬來語等密切相關的語言，請自行設定，因為自動偵測可能會混淆（預設：`"auto"`）。 | COMBO | 是 | `"auto"`<br>多種語言預設集 |

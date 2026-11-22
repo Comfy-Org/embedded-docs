@@ -13,7 +13,7 @@
 | `배경` | 메시가 덮지 않는 픽셀에 사용할 배경색입니다. (기본값: "#000000") | COLOR | 예 | — |
 | `model_3d_info` | 동일한 Load3D / Preview3D 뷰어의 모델 변환입니다. `camera_info`와 함께 연결하여 뷰어 프레이밍과 일치시키세요. | LOAD3D_MODEL_INFO | 아니요 | — |
 | `camera_info` | Load3D / Preview3D 뷰어 또는 Create Camera Info 노드의 카메라입니다. 아무것도 연결되지 않은 경우 기본 정면 뷰가 자동으로 프레이밍됩니다. 카메라 목록이면 카메라마다 이미지 한 장을 렌더링합니다. | LOAD3D_CAMERA | 아니요 | — |
-| `texture` | 메시 자체 텍스처 대신 표시합니다. 예를 들어 Apply Texture to Mesh를 거치지 않은 Bake Texture From Views 출력입니다. | IMAGE | 아니요 | — |
+| `텍스처` | 메시 자체 텍스처 대신 표시합니다. 예를 들어 Apply Texture to Mesh를 거치지 않은 Bake Texture From Views 출력입니다. | IMAGE | 아니요 | — |
 
 참고: 배치된 메시의 첫 번째 항목만 렌더링됩니다. 메시 배치에 항목이 두 개 이상 있으면 노드는 경고를 기록하고 첫 번째 항목을 사용합니다. `texture` 모드에서는 메시에 텍스처와 UV가 모두 있어야 하며, `vertex colors` 모드에서는 버텍스 색상이 있어야 합니다. 선택한 모드에 필요한 데이터가 없으면 노드는 solid 음영 렌더링으로 대체됩니다. `normal` 모드에서는 메시의 스무스 버텍스 노멀이 있으면 이를 사용하고, 그렇지 않으면 면별 노멀을 사용합니다. `depth` 모드에서는 더 가까운 표면이 더 밝게 표시되며(가까움 = 흰색), 메시가 덮지 않는 픽셀은 검은색으로 유지됩니다. `model_3d_info`와 `camera_info`는 동일한 Load3D / Preview3D 뷰어에서 함께 연결하여 렌더링이 뷰어 프레이밍과 일치하도록 하기 위한 것입니다.
 

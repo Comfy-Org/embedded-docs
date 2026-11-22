@@ -6,8 +6,8 @@ RelayVSR Conditioning شرطی‌سازی و latent خالی را برای بز�
 
 | پارامتر | توضیحات | نوع داده | الزامی | بازه |
 | --- | --- | --- | --- | --- |
-| `model` | مدل دیفیوژن RelayVSR، بارگذاری‌شده با Load Model: `relayvsr_x2_lightx2v_int8_convrot.safetensors` یا `relayvsr_x4_int8_convrot.safetensors`. | MODEL | بله | N/A |
-| `images` | ویدیوی کم‌کیفیت در رزولوشن بومی خود. ضریب بزرگ‌نمایی مدل تعیین می‌کند نتیجه چقدر بزرگ شود. | IMAGE | بله | N/A |
+| `مدل` | مدل دیفیوژن RelayVSR، بارگذاری‌شده با Load Model: `relayvsr_x2_lightx2v_int8_convrot.safetensors` یا `relayvsr_x4_int8_convrot.safetensors`. | MODEL | بله | N/A |
+| `تصاویر` | ویدیوی کم‌کیفیت در رزولوشن بومی خود. ضریب بزرگ‌نمایی مدل تعیین می‌کند نتیجه چقدر بزرگ شود. | IMAGE | بله | N/A |
 
 ## خروجی‌ها
 

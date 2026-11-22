@@ -6,13 +6,13 @@ Califica del 1 al 10 el texto, las imágenes, el audio o el video que conectes, 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Modelo a usar. `heygen-decision-1-turbo` es más rápido y cuesta menos que `heygen-decision-1` (predeterminado: `"heygen-decision-1"`). | COMBO | Sí | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | Qué calificar, indicando qué significan 1 y 10 (predeterminado: "Rate the technical quality of the image from 1 (worst) to 10 (best)."). | STRING | Sí | 1 a 5000 caracteres |
-| `threshold` | `result` es verdadero cuando la puntuación es al menos este valor. Las imágenes limpias y nítidas puntúan alrededor de 7; las gravemente dañadas, alrededor de 3 a 5 (predeterminado: 6.0). | FLOAT | Sí | 1.0 a 10.0 (paso 0.1) |
-| `images` | Imágenes para calificar, hasta 4 en total, contando cada fotograma de un lote. Se numeran de `image_1` a `image_4` en orden entre los sockets. | IMAGE | No | Hasta 4 imágenes |
+| `modelo` | Modelo a usar. `heygen-decision-1-turbo` es más rápido y cuesta menos que `heygen-decision-1` (predeterminado: `"heygen-decision-1"`). | COMBO | Sí | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
+| `pregunta` | Qué calificar, indicando qué significan 1 y 10 (predeterminado: "Rate the technical quality of the image from 1 (worst) to 10 (best)."). | STRING | Sí | 1 a 5000 caracteres |
+| `umbral` | `result` es verdadero cuando la puntuación es al menos este valor. Las imágenes limpias y nítidas puntúan alrededor de 7; las gravemente dañadas, alrededor de 3 a 5 (predeterminado: 6.0). | FLOAT | Sí | 1.0 a 10.0 (paso 0.1) |
+| `imágenes` | Imágenes para calificar, hasta 4 en total, contando cada fotograma de un lote. Se numeran de `image_1` a `image_4` en orden entre los sockets. | IMAGE | No | Hasta 4 imágenes |
 | `audio_1` | Audio para calificar, hasta 30 minutos. | AUDIO | No | Hasta 30 minutos |
 | `video_1` | Video para calificar, hasta 60 segundos. | VIDEO | No | Hasta 60 segundos |
-| `text` | Texto sobre el que trata la pregunta, como un prompt o una respuesta de LLM, hasta 20000 caracteres. | STRING | No | Hasta 20000 caracteres |
+| `texto` | Texto sobre el que trata la pregunta, como un prompt o una respuesta de LLM, hasta 20000 caracteres. | STRING | No | Hasta 20000 caracteres |
 
 Conecta al menos una entrada para calificar y nómbralas por su socket dentro de la pregunta, por ejemplo, «¿Qué tan nítida es image_1?».
 

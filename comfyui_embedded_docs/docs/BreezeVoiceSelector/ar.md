@@ -6,7 +6,7 @@
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 | --- | --- | --- | --- | --- |
-| `language` | مجموعة اللغة للأصوات المميزة، أو `custom` لإدخال معرّف. الافتراضي: `"English"`. | DYNAMIC_COMBO | نعم | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
+| `اللغة` | مجموعة اللغة للأصوات المميزة، أو `custom` لإدخال معرّف. الافتراضي: `"English"`. | DYNAMIC_COMBO | نعم | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
 
 ### مدخلات اللغة "English" و"Chinese" و"Japanese"
 

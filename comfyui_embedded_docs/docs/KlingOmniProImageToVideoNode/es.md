@@ -8,13 +8,13 @@ Este nodo utiliza el modelo Kling AI para generar un video a partir de un prompt
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `model_name` | El modelo Kling específico que se usará para la generación de video (predeterminado: `"kling-v3-omni"`). | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` |
+| `nombre_del_modelo` | El modelo Kling específico que se usará para la generación de video (predeterminado: `"kling-v3-omni"`). | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` |
 | `prompt` | Un prompt de texto que describe el contenido del video. Puede incluir descripciones tanto positivas como negativas. Se ignora cuando los storyboards están habilitados. Los marcadores de posición como `@image` o `@video` (opcionalmente numerados) se convierten automáticamente al formato compatible con la API. Debe tener entre 1 y 2500 caracteres (puede estar vacío cuando los storyboards están habilitados). | STRING | Sí | 1 a 2500 caracteres (0 a 2500 cuando los storyboards están habilitados) |
-| `aspect_ratio` | La relación de aspecto deseada para el video generado. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `duration` | La duración del video en segundos, ajustada con un control deslizante (predeterminado: 5). | INT | Sí | 3 a 15 |
-| `reference_images` | Hasta 7 imágenes de referencia. Cada imagen debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. | IMAGE | Sí | 1 a 7 imágenes |
-| `resolution` | La resolución de salida del video (predeterminado: `"1080p"`). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | Genera una serie de segmentos de video con prompts y duraciones individuales. Solo se admite para `kling-v3-omni`. Cuando está habilitado, el `prompt` global se ignora, y la duración total de todos los segmentos de storyboard debe ser igual al `duration` global (predeterminado: `"disabled"`). | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `relación_de_aspecto` | La relación de aspecto deseada para el video generado. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `duración` | La duración del video en segundos, ajustada con un control deslizante (predeterminado: 5). | INT | Sí | 3 a 15 |
+| `imágenes_de_referencia` | Hasta 7 imágenes de referencia. Cada imagen debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. | IMAGE | Sí | 1 a 7 imágenes |
+| `resolución` | La resolución de salida del video (predeterminado: `"1080p"`). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `guiones_gráficos` | Genera una serie de segmentos de video con prompts y duraciones individuales. Solo se admite para `kling-v3-omni`. Cuando está habilitado, el `prompt` global se ignora, y la duración total de todos los segmentos de storyboard debe ser igual al `duration` global (predeterminado: `"disabled"`). | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
 | `generar_audio` | Genera audio para el video. Solo se admite para `kling-v3-omni` (predeterminado: false). | BOOLEAN | No | `true`<br>`false` |
 | `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). | INT | No | 0 a 2147483647 |
 

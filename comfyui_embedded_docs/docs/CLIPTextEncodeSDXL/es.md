@@ -7,14 +7,14 @@ Este nodo está diseñado para codificar texto de entrada utilizando un modelo C
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
 | `clip` | Instancia del modelo CLIP utilizada para la codificación de texto. | CLIP |
-| `width` | Especifica el ancho de la imagen en píxeles, valor predeterminado 1024. | INT |
-| `height` | Especifica la altura de la imagen en píxeles, valor predeterminado 1024. | INT |
-| `crop_w` | Ancho del área de recorte en píxeles, valor predeterminado 0. | INT |
-| `crop_h` | Altura del área de recorte en píxeles, valor predeterminado 0. | INT |
-| `target_width` | Ancho objetivo para la imagen de salida, valor predeterminado 1024. | INT |
-| `target_height` | Altura objetivo para la imagen de salida, valor predeterminado 1024. | INT |
-| `text_g` | Descripción textual global para la descripción general de la escena. | STRING |
-| `text_l` | Descripción textual local para la descripción de detalles. | STRING |
+| `ancho` | Especifica el ancho de la imagen en píxeles, valor predeterminado 1024. | INT |
+| `alto` | Especifica la altura de la imagen en píxeles, valor predeterminado 1024. | INT |
+| `recorte_ancho` | Ancho del área de recorte en píxeles, valor predeterminado 0. | INT |
+| `recorte_alto` | Altura del área de recorte en píxeles, valor predeterminado 0. | INT |
+| `ancho_objetivo` | Ancho objetivo para la imagen de salida, valor predeterminado 1024. | INT |
+| `alto_objetivo` | Altura objetivo para la imagen de salida, valor predeterminado 1024. | INT |
+| `texto_g` | Descripción textual global para la descripción general de la escena. | STRING |
+| `texto_l` | Descripción textual local para la descripción de detalles. | STRING |
 
 ## Salidas
 

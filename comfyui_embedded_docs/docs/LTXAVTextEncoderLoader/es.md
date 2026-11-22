@@ -6,9 +6,9 @@ Este nodo carga un codificador de texto especializado para el modelo de audio LT
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `text_encoder` | El nombre del archivo del codificador de texto LTXV a cargar. Las opciones disponibles se cargan desde la carpeta `text_encoders`. | COMBO | Sí | Múltiples opciones disponibles |
-| `ckpt_name` | El nombre del archivo de checkpoint a cargar. Las opciones disponibles se cargan desde la carpeta `checkpoints`. | COMBO | Sí | Múltiples opciones disponibles |
-| `device` | Especifica el dispositivo en el que se cargará el modelo. Usa `"cpu"` para forzar la carga en la CPU. El comportamiento predeterminado (`"default"`) usa la colocación automática de dispositivos del sistema (predeterminado: `"default"`). Este es un parámetro avanzado. | COMBO | No | `"default"`<br>`"cpu"` |
+| `codificador_de_texto` | El nombre del archivo del codificador de texto LTXV a cargar. Las opciones disponibles se cargan desde la carpeta `text_encoders`. | COMBO | Sí | Múltiples opciones disponibles |
+| `nombre_de_checkpoint` | El nombre del archivo de checkpoint a cargar. Las opciones disponibles se cargan desde la carpeta `checkpoints`. | COMBO | Sí | Múltiples opciones disponibles |
+| `dispositivo` | Especifica el dispositivo en el que se cargará el modelo. Usa `"cpu"` para forzar la carga en la CPU. El comportamiento predeterminado (`"default"`) usa la colocación automática de dispositivos del sistema (predeterminado: `"default"`). Este es un parámetro avanzado. | COMBO | No | `"default"`<br>`"cpu"` |
 
 **Nota:** Los parámetros `text_encoder` y `ckpt_name` funcionan juntos. El nodo carga ambos archivos especificados para crear un único modelo CLIP funcional. Los archivos deben ser compatibles con la arquitectura LTXV, y el codificador de texto debe ser un Gemma 3 12B o un modelo Gemma 4 compatible.
 

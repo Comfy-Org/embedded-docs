@@ -6,8 +6,8 @@
 
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 要扩展为 HDR 的 sRGB SDR 图像。 | IMAGE | 是 | - |
-| `algorithm` | HDR 扩展算法。选择算法会显示其参数（`target_luminance`）。 | DYNAMIC_COMBO | 是 | `"lottes"` |
+| `图像` | 要扩展为 HDR 的 sRGB SDR 图像。 | IMAGE | 是 | - |
+| `算法` | HDR 扩展算法。选择算法会显示其参数（`target_luminance`）。 | DYNAMIC_COMBO | 是 | `"lottes"` |
 
 ### lottes 输入
 

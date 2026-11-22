@@ -6,14 +6,14 @@ El nodo Kling Image to Video genera un video corto utilizando una imagen inicial
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `start_frame` | La imagen de referencia utilizada para generar el video. La imagen debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. | IMAGE | Sí | - |
+| `fotograma_inicial` | La imagen de referencia utilizada para generar el video. La imagen debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. | IMAGE | Sí | - |
 | `prompt` | Indicación de texto positiva. No debe estar vacía. Máximo 500 caracteres. | STRING | Sí | - |
-| `negative_prompt` | Indicación de texto negativa. Máximo 500 caracteres. Déjela vacía si no se utiliza. | STRING | Sí | - |
-| `model_name` | El modelo utilizado para la generación de video (por defecto: `"kling-v2-5-turbo"`). | COMBO | Sí | `"kling-v2-5-turbo"` |
-| `cfg_scale` | Controla qué tan fielmente sigue el video la indicación. Los valores más altos significan una mayor adherencia (por defecto: 0.8). | FLOAT | Sí | 0.0 a 1.0 |
-| `mode` | El modo de generación (por defecto: `"pro"`). | COMBO | Sí | `"pro"` |
-| `aspect_ratio` | La relación de aspecto del video generado (por defecto: `"16:9"`). | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `duration` | La duración del video generado en segundos (por defecto: `"5"`). | COMBO | Sí | `"5"`<br>`"10"` |
+| `prompt_negativo` | Indicación de texto negativa. Máximo 500 caracteres. Déjela vacía si no se utiliza. | STRING | Sí | - |
+| `nombre_del_modelo` | El modelo utilizado para la generación de video (por defecto: `"kling-v2-5-turbo"`). | COMBO | Sí | `"kling-v2-5-turbo"` |
+| `escala_cfg` | Controla qué tan fielmente sigue el video la indicación. Los valores más altos significan una mayor adherencia (por defecto: 0.8). | FLOAT | Sí | 0.0 a 1.0 |
+| `modo` | El modo de generación (por defecto: `"pro"`). | COMBO | Sí | `"pro"` |
+| `relación_de_aspecto` | La relación de aspecto del video generado (por defecto: `"16:9"`). | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `duración` | La duración del video generado en segundos (por defecto: `"5"`). | COMBO | Sí | `"5"`<br>`"10"` |
 
 ## Salidas
 

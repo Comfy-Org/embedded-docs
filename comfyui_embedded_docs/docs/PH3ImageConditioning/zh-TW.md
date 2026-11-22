@@ -7,11 +7,11 @@
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `clip` | 用於將提示詞（包括任何參考影像）分詞，並編碼 conditioning 的 p-h3-image CLIP 模型。 | CLIP | 是 | - |
-| `prompt` | 要生成什麼，或如何編輯 `image_1`。連接影像時，簡短指令前方會加上 `Edit <Picture 1>. `。若指令已以 `Edit <Picture` 開頭，或是由提示詞放大器（prompt upsampler）產生的編輯簡述，則會完全照原樣使用。 | STRING | 是 | - |
-| `width` | 輸出寬度（像素）。0 會使用縮放後 `image_1` 的寬度；未連接影像時則使用 2912（預設：0）。 | INT | 是 | 0 至 MAX_RESOLUTION |
-| `height` | 輸出高度（像素）。0 會使用縮放後 `image_1` 的高度；未連接影像時則使用 2912（預設：0）。 | INT | 是 | 0 至 MAX_RESOLUTION |
+| `提示詞` | 要生成什麼，或如何編輯 `image_1`。連接影像時，簡短指令前方會加上 `Edit <Picture 1>. `。若指令已以 `Edit <Picture` 開頭，或是由提示詞放大器（prompt upsampler）產生的編輯簡述，則會完全照原樣使用。 | STRING | 是 | - |
+| `寬度` | 輸出寬度（像素）。0 會使用縮放後 `image_1` 的寬度；未連接影像時則使用 2912（預設：0）。 | INT | 是 | 0 至 MAX_RESOLUTION |
+| `高度` | 輸出高度（像素）。0 會使用縮放後 `image_1` 的高度；未連接影像時則使用 2912（預設：0）。 | INT | 是 | 0 至 MAX_RESOLUTION |
 | `vae` | p-h3-image VAE。連接後影像也會作為參考 latent 錨定；未連接時影像只影響文字編碼器。 | VAE | 否 | - |
-| `images` | 最多 9 張影像的可增長群組，包含 `image_1` 到 `image_9`。`image_1` 是正在編輯的影像，其餘插槽為參考影像。 | AUTOGROW | 否 | 0 至 9 張影像 |
+| `影像` | 最多 9 張影像的可增長群組，包含 `image_1` 到 `image_9`。`image_1` 是正在編輯的影像，其餘插槽為參考影像。 | AUTOGROW | 否 | 0 至 9 張影像 |
 
 ## 輸出
 

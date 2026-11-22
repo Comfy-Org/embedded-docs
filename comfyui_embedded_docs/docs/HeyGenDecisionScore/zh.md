@@ -6,13 +6,13 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的模型。`heygen-decision-1-turbo` 比 `heygen-decision-1` 速度更快且成本更低（默认：`"heygen-decision-1"`）。 | COMBO | 是 | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | 要评分的内容，并说明 1 分和 10 分分别代表什么（默认："Rate the technical quality of the image from 1 (worst) to 10 (best)."）。 | STRING | 是 | 1 到 5000 个字符 |
-| `threshold` | 当分数至少达到此值时，`result` 为 true。干净、清晰的图像得分约为 7，严重损坏的图像约为 3 到 5（默认：6.0）。 | FLOAT | 是 | 1.0 到 10.0（步长：0.1） |
-| `images` | 要评分的图像，最多 4 张，批次中的每一帧都计入。它们按顺序跨各套接字编号为 `image_1` 到 `image_4`。 | IMAGE | 否 | 最多 4 张图像 |
+| `模型` | 要使用的模型。`heygen-decision-1-turbo` 比 `heygen-decision-1` 速度更快且成本更低（默认：`"heygen-decision-1"`）。 | COMBO | 是 | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
+| `问题` | 要评分的内容，并说明 1 分和 10 分分别代表什么（默认："Rate the technical quality of the image from 1 (worst) to 10 (best)."）。 | STRING | 是 | 1 到 5000 个字符 |
+| `阈值` | 当分数至少达到此值时，`result` 为 true。干净、清晰的图像得分约为 7，严重损坏的图像约为 3 到 5（默认：6.0）。 | FLOAT | 是 | 1.0 到 10.0（步长：0.1） |
+| `图像` | 要评分的图像，最多 4 张，批次中的每一帧都计入。它们按顺序跨各套接字编号为 `image_1` 到 `image_4`。 | IMAGE | 否 | 最多 4 张图像 |
 | `audio_1` | 要评分的音频，最长 30 分钟。 | AUDIO | 否 | 最多 30 分钟 |
 | `video_1` | 要评分的视频，最长 60 秒。 | VIDEO | 否 | 最多 60 秒 |
-| `text` | 问题所针对的文本，例如提示词或 LLM 回答，最多 20000 个字符。 | STRING | 否 | 最多 20000 个字符 |
+| `文本` | 问题所针对的文本，例如提示词或 LLM 回答，最多 20000 个字符。 | STRING | 否 | 最多 20000 个字符 |
 
 至少连接一个要评分的输入，并在问题中按套接字名称引用它们，例如「image_1 有多清晰？」。
 

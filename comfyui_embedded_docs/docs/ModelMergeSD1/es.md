@@ -6,8 +6,8 @@ El nodo ModelMergeSD1 fusiona dos modelos de Stable Diffusion 1.x ajustando cuá
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model1` | El primer modelo a fusionar | MODEL | Sí | - |
-| `model2` | El segundo modelo a fusionar | MODEL | Sí | - |
+| `modelo1` | El primer modelo a fusionar | MODEL | Sí | - |
+| `modelo2` | El segundo modelo a fusionar | MODEL | Sí | - |
 | `time_embed.` | Peso de fusión de la capa de embedding de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |
 | `label_emb.` | Peso de fusión de la capa de embedding de etiqueta (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |
 | `input_blocks.0.` | Peso de fusión del bloque de entrada 0 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |

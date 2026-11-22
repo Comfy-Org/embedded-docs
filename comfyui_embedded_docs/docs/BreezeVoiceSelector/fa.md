@@ -6,7 +6,7 @@
 
 | پارامتر | توضیح | نوع داده | الزامی | محدوده |
 | --- | --- | --- | --- | --- |
-| `language` | گروه زبانی صداهای منتخب، یا `custom` برای وارد کردن یک شناسه. پیش‌فرض: `"English"`. | DYNAMIC_COMBO | بله | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
+| `زبان` | گروه زبانی صداهای منتخب، یا `custom` برای وارد کردن یک شناسه. پیش‌فرض: `"English"`. | DYNAMIC_COMBO | بله | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
 
 ### ورودی‌های زبان "English"، "Chinese" و "Japanese"
 

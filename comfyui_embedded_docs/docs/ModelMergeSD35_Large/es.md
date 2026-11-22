@@ -6,8 +6,8 @@ El nodo ModelMergeSD35_Large fusiona dos modelos Stable Diffusion 3.5 Large comb
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model1` | El modelo base que sirve como base para la fusión | MODEL | Sí | - |
-| `model2` | El modelo secundario cuyos componentes se combinan en el modelo base | MODEL | Sí | - |
+| `modelo1` | El modelo base que sirve como base para la fusión | MODEL | Sí | - |
+| `modelo2` | El modelo secundario cuyos componentes se combinan en el modelo base | MODEL | Sí | - |
 | `pos_embed.` | Controla cuánto de la incrustación de posición de model2 se combina en el modelo fusionado (por defecto: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
 | `x_embedder.` | Controla cuánto del incrustador x de model2 se combina en el modelo fusionado (por defecto: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
 | `context_embedder.` | Controla cuánto del incrustador de contexto de model2 se combina en el modelo fusionado (por defecto: 1.0) | FLOAT | Sí | 0.0 a 1.0 |

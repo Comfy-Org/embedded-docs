@@ -8,13 +8,13 @@ Flux Video Upscale amplía un video con superresolución FLUX, ya sea a un tama�
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `video` | Clip de origen de 1 a 20 segundos y como máximo 50 MB, de al menos 64x64 píxeles, con una relación de aspecto entre 1:4 y 4:1. La salida se renderiza a 24 fps y se limita a aproximadamente 14,4 megapíxeles por fotograma. | VIDEO | Sí | 1 a 20 segundos de duración; relación de aspecto entre 1:4 y 4:1; mínimo 64x64 píxeles |
+| `vídeo` | Clip de origen de 1 a 20 segundos y como máximo 50 MB, de al menos 64x64 píxeles, con una relación de aspecto entre 1:4 y 4:1. La salida se renderiza a 24 fps y se limita a aproximadamente 14,4 megapíxeles por fotograma. | VIDEO | Sí | 1 a 20 segundos de duración; relación de aspecto entre 1:4 y 4:1; mínimo 64x64 píxeles |
 | `target_resolution` | Tamaño de salida. `"1080p"`, `"2K"` y `"4K"` ajustan el resultado dentro de 1920x1080, 2560x1440 o 3840x2160 píxeles, rotados para clips verticales; `"by factor"` usa `upscale_factor` en su lugar. | DYNAMIC_COMBO | Sí | `"2K"`<br>`"4K"`<br>`"1080p"`<br>`"by factor"` |
-| `mode` | `"creative"` restaura e inventa detalles finos, ideal para material generado, texturas y paisajes. `"precise"` mejora la nitidez del origen sin cambiarlo, para rostros, productos y material real. (predeterminado: `"creative"`) | COMBO | Sí | `"creative"`<br>`"precise"` |
+| `modo` | `"creative"` restaura e inventa detalles finos, ideal para material generado, texturas y paisajes. `"precise"` mejora la nitidez del origen sin cambiarlo, para rostros, productos y material real. (predeterminado: `"creative"`) | COMBO | Sí | `"creative"`<br>`"precise"` |
 | `prompt` | Descripción opcional del clip que orienta el detalle mejorado. Dejar vacío para una ampliación neutra. (predeterminado: vacío) | STRING | Sí | Texto multilínea |
 | `auto_downscale` | Reduce la escala de los orígenes demasiado grandes en lugar de rechazarlos: por encima de 2560x1440 píxeles de área, o por encima de dos tercios de la resolución de destino. Se conserva la relación de aspecto. (predeterminado: true) | BOOLEAN | Sí | true<br>false |
 | `safety_tolerance` | Tolerancia de moderación; 0 es la más estricta. (predeterminado: 2, parámetro avanzado) | INT | Sí | 0 a 4 |
-| `seed` | La semilla controla si el nodo debe volver a ejecutarse; FLUX elige su propia semilla, por lo que los resultados reales no son deterministas independientemente de este valor. (predeterminado: 42) | INT | Sí | 0 a 4294967295 |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; FLUX elige su propia semilla, por lo que los resultados reales no son deterministas independientemente de este valor. (predeterminado: 42) | INT | Sí | 0 a 4294967295 |
 
 ### Entradas de «by factor»
 

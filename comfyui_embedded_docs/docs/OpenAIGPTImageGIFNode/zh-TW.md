@@ -10,7 +10,7 @@ OpenAI GPT Image 2.6 GIF 會使用 OpenAI 的 GPT Image 模型，依提示詞生
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `model` | 用於製作動畫的 GPT Image 模型。 | DYNAMIC_COMBO | 是 | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
+| `模型` | 用於製作動畫的 GPT Image 模型。 | DYNAMIC_COMBO | 是 | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
 
 ### gpt-image-2.6-flare 與 gpt-image-2.6-sunburst 輸入
 
@@ -18,14 +18,14 @@ OpenAI GPT Image 2.6 GIF 會使用 OpenAI 的 GPT Image 模型，依提示詞生
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | 要製作成動畫的內容。（預設：`""`） | STRING | 是 | N/A |
-| `model.size` | 每個影格的尺寸。尺寸越大，僅能搭配較少的影格數。（預設：`"512x512"`） | COMBO | 是 | `"384x384"`<br>`"512x512"`<br>`"640x640"`<br>`"720x720"`<br>`"768x768"`<br>`"960x960"`<br>`"512x288"`<br>`"288x512"`<br>`"1024x576"`<br>`"576x1024"`<br>`"1280x720"`<br>`"720x1280"` |
-| `model.frame_count` | 影格數。影格依級距計費：2 至 8、9、10 至 12、13 至 16。（預設：`9`） | INT | 是 | 2 至 16 |
-| `model.frame_duration_ms` | 每個影格顯示的持續時間，單位為毫秒。（預設：`200`） | INT | 是 | 20 至 2000（步進值：10） |
-| `model.background` | 影格背景。使用 vp9 的 Save WEBM、Save Animated WEBP 與 Save Animated PNG 可保留透明度。（預設：`"opaque"`） | COMBO | 是 | `"opaque"`<br>`"transparent"` |
-| `model.quality` | 影像品質。等級越高，費用越高且耗時越長。（預設：`"low"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | 模型在算繪前對動畫的規劃程度。（預設：`"high"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
-| `model.seed` | 控制節點是否重新執行；無論種子為何，結果皆不具決定性。（預設：`42`） | INT | 是 | 0 至 2147483647 |
+| `提示詞` | 要製作成動畫的內容。（預設：`""`） | STRING | 是 | N/A |
+| `尺寸` | 每個影格的尺寸。尺寸越大，僅能搭配較少的影格數。（預設：`"512x512"`） | COMBO | 是 | `"384x384"`<br>`"512x512"`<br>`"640x640"`<br>`"720x720"`<br>`"768x768"`<br>`"960x960"`<br>`"512x288"`<br>`"288x512"`<br>`"1024x576"`<br>`"576x1024"`<br>`"1280x720"`<br>`"720x1280"` |
+| `影格數` | 影格數。影格依級距計費：2 至 8、9、10 至 12、13 至 16。（預設：`9`） | INT | 是 | 2 至 16 |
+| `影格持續時間（毫秒）` | 每個影格顯示的持續時間，單位為毫秒。（預設：`200`） | INT | 是 | 20 至 2000（步進值：10） |
+| `背景` | 影格背景。使用 vp9 的 Save WEBM、Save Animated WEBP 與 Save Animated PNG 可保留透明度。（預設：`"opaque"`） | COMBO | 是 | `"opaque"`<br>`"transparent"` |
+| `品質` | 影像品質。等級越高，費用越高且耗時越長。（預設：`"low"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `複雜度` | 模型在算繪前對動畫的規劃程度。（預設：`"high"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
+| `種子` | 控制節點是否重新執行；無論種子為何，結果皆不具決定性。（預設：`42`） | INT | 是 | 0 至 2147483647 |
 
 **參數限制與注意事項：**
 

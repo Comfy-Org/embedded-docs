@@ -7,7 +7,7 @@ El nodo VideoLinearCFGGuidance aplica una escala de guía de condicionamiento li
 | Parámetro | Descripción | Tipo de dato |
 | --- | --- | --- |
 | `modelo` | El parámetro `modelo` representa el modelo de video al que se aplicará la guía CFG lineal. Es fundamental para definir el modelo base que se modificará con la escala de guía. | MODEL |
-| `min_cfg` | El parámetro `min_cfg` especifica la escala de guía de condicionamiento mínima que se aplicará, sirviendo como punto de partida para el ajuste lineal de la escala. Desempeña un papel clave en la determinación del límite inferior de la escala de guía, influyendo en la salida del modelo. | `FLOAT` |
+| `cfg_mínimo` | El parámetro `min_cfg` especifica la escala de guía de condicionamiento mínima que se aplicará, sirviendo como punto de partida para el ajuste lineal de la escala. Desempeña un papel clave en la determinación del límite inferior de la escala de guía, influyendo en la salida del modelo. | `FLOAT` |
 
 ## Salidas
 

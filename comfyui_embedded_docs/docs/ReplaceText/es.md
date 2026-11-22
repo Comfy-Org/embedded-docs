@@ -7,8 +7,8 @@ El nodo Reemplazar Texto realiza una sustitución de texto simple. Busca un frag
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `text` | El texto a procesar. | STRING | Sí | - |
-| `find` | Texto a buscar (predeterminado: cadena vacía). | STRING | Sí | - |
-| `replace` | Texto con el que reemplazar (predeterminado: cadena vacía). | STRING | Sí | - |
+| `buscar` | Texto a buscar (predeterminado: cadena vacía). | STRING | Sí | - |
+| `reemplazar` | Texto con el que reemplazar (predeterminado: cadena vacía). | STRING | Sí | - |
 
 ## Salidas
 

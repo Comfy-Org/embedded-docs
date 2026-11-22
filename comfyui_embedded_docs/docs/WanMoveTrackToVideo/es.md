@@ -16,7 +16,7 @@ El nodo WanMoveTrackToVideo prepara datos de condicionamiento y de espacio laten
 | `longitud` | El número de fotogramas de la secuencia de video, en incrementos de 4. (por defecto: 81) | INT | Sí | 1 - MAX_RESOLUTION |
 | `tamaño_lote` | El tamaño del lote para la salida latente. (por defecto: 1) | INT | Sí | 1 - 4096 |
 | `imagen_inicial` | La imagen inicial o secuencia de imágenes a codificar. | IMAGE | Sí | - |
-| `clip_vision_output` | Salida opcional del modelo de visión CLIP para añadir al condicionamiento. | CLIP_VISION_OUTPUT | No | - |
+| `salida_de_visión_clip` | Salida opcional del modelo de visión CLIP para añadir al condicionamiento. | CLIP_VISION_OUTPUT | No | - |
 
 **Nota:** El parámetro `strength` solo tiene efecto cuando se proporcionan `tracks` y `strength` es mayor que 0.0; el condicionamiento de seguimiento solo se aplica cuando también se proporciona `start_image`. Si no se proporcionan `tracks` o si `strength` es 0.0, la combinación de seguimiento se omite. Cuando la combinación de seguimiento está activa, el condicionamiento positivo recibe la imagen latente combinada con el seguimiento, mientras que el condicionamiento negativo recibe la imagen latente sin modificar. Si no se proporciona `start_image`, no se crea ningún condicionamiento de imagen latente ni de máscara; los condicionamientos positivo y negativo pasan sin cambios (excepto que `clip_vision_output` se sigue añadiendo si se proporciona), y el nodo genera un latente vacío.
 

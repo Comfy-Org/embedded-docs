@@ -7,9 +7,9 @@
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | نموذج SenseNova CLIP. صِل محمّل CLIP الذي يغذّي CLIP Text Encode أيضًا، ويذهب خرج المُشفّر إلى `conditioning`. مطلوب لكل مهمة باستثناء عندما تكون التهيئة الواردة منتهية بالفعل. | CLIP | لا | - |
-| `conditioning` | تهيئة نصية من SenseNova من CLIP Text Encode. | CONDITIONING | نعم | - |
-| `negative` | تهيئة سلبية اختيارية. يتم تحديثها وإعادتها لمهام `interleave` و`self-correction`. | CONDITIONING | لا | - |
-| `task` | المهمة المطلوب تشغيلها. `"image"` تُرمّز الموجّه لمُعاين قياسي، `"image thinking"` تتيح للنموذج التفكير قبل الإجابة، `"interleave"` تُنتج نصًا وصورًا في تمريرة واحدة، و`"self-correction"` تتيح للنموذج تصحيح مخرجاته السابقة. | DYNAMIC_COMBO | نعم | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
+| `التكييف` | تهيئة نصية من SenseNova من CLIP Text Encode. | CONDITIONING | نعم | - |
+| `سلبي` | تهيئة سلبية اختيارية. يتم تحديثها وإعادتها لمهام `interleave` و`self-correction`. | CONDITIONING | لا | - |
+| `المهمة` | المهمة المطلوب تشغيلها. `"image"` تُرمّز الموجّه لمُعاين قياسي، `"image thinking"` تتيح للنموذج التفكير قبل الإجابة، `"interleave"` تُنتج نصًا وصورًا في تمريرة واحدة، و`"self-correction"` تتيح للنموذج تصحيح مخرجاته السابقة. | DYNAMIC_COMBO | نعم | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
 | `max_tokens` | الحد الأقصى لعدد الرموز المولّدة خلال هذا الاستدعاء. الافتراضي: 1024. | INT | نعم | 1 إلى 8192 |
 
 ### مدخلات `interleave`

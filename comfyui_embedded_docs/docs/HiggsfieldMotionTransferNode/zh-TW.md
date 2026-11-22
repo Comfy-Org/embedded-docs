@@ -6,7 +6,7 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的模型。選取模型後會顯示其專屬參數：`video`、`reference_images`、`prompt`、`resolution` 和 `seed`。 | DYNAMIC_COMBO | 是 | `"genjutsu-v1.0"` |
+| `模型` | 要使用的模型。選取模型後會顯示其專屬參數：`video`、`reference_images`、`prompt`、`resolution` 和 `seed`。 | DYNAMIC_COMBO | 是 | `"genjutsu-v1.0"` |
 | `video` | 來源影片，其動作、攝影機運鏡、時間節奏與音訊都會保留。至少 4 秒；只會使用前 30 秒。 | VIDEO | 是 | 4 至 30 秒 |
 | `reference_images` | 可增長的插槽：連接 1 到 8 張要使用的角色、地點或風格圖像（`image_1`、`image_2`、...）。批次輸入會依每張圖像各計一次。 | IMAGE | 是 | 1 至 8 張影像 |
 | `prompt` | 選填。描述結果，例如哪個參考圖像取代哪個人，或新的場景設定。（預設值：空） | STRING | 是 | 任意文字 |

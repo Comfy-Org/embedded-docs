@@ -6,7 +6,7 @@ Genera un efecto de sonido a partir de una descripción textual con Mirelo SFX. 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo a utilizar. Al seleccionar un modelo se muestran los parámetros específicos de este: `prompt`, `negative_prompt`, `duration` y `seed`. | DYNAMIC_COMBO | Sí | `"sfx-2.0"` |
+| `modelo` | Modelo a utilizar. Al seleccionar un modelo se muestran los parámetros específicos de este: `prompt`, `negative_prompt`, `duration` y `seed`. | DYNAMIC_COMBO | Sí | `"sfx-2.0"` |
 | `prompt` | Describe el sonido, no la imagen. De 1 a 2000 caracteres. | STRING | Sí | 1 a 2000 caracteres |
 | `negative_prompt` | Sonidos que se deben evitar, como una lista breve separada por comas. Puede dejarse vacío (predeterminado: vacío). Máximo 1000 caracteres. | STRING | Sí | Hasta 1000 caracteres |
 | `duration` | Duración del sonido en segundos. (predeterminado: 5.0) | FLOAT | Sí | 0.1 a 600.0 (paso 0.1) |

@@ -6,8 +6,8 @@ El nodo **Combinar Hooks [2]** fusiona dos grupos de hooks en un único grupo co
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `hooks_A` | Primer grupo de hooks a combinar | HOOKS | No | - |
-| `hooks_B` | Segundo grupo de hooks a combinar | HOOKS | No | - |
+| `ganchos_A` | Primer grupo de hooks a combinar | HOOKS | No | - |
+| `ganchos_B` | Segundo grupo de hooks a combinar | HOOKS | No | - |
 
 **Nota:** Ambas entradas son opcionales, pero debe proporcionarse al menos un grupo de hooks para que el nodo funcione. Si solo se proporciona un grupo de hooks, este se devolverá sin cambios.
 

@@ -8,7 +8,7 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model` | 用于延续视频的模型。两个模型均提供下方相同的输入。 | DYNAMIC_COMBO | 是 | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `模型` | 用于延续视频的模型。两个模型均提供下方相同的输入。 | DYNAMIC_COMBO | 是 | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
 
 ### 模型输入
 

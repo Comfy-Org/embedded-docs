@@ -6,13 +6,13 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | PBR 맵을 도출할 사진 또는 렌더입니다. | IMAGE | 예 | - |
-| `basecolor` | basecolor(알베도) 맵을 생성합니다. 기본값: True. | BOOLEAN | 예 | true<br>false |
-| `normal` | 노멀 맵을 생성합니다. 기본값: True. | BOOLEAN | 예 | true<br>false |
-| `roughness` | 러프니스 맵을 생성합니다. 기본값: False. | BOOLEAN | 예 | true<br>false |
-| `metalness` | 메탈니스 맵을 생성합니다. 기본값: False. | BOOLEAN | 예 | true<br>false |
-| `height` | 하이트(변위) 맵을 생성합니다. 기본값: False. | BOOLEAN | 예 | true<br>false |
-| `seed` | 재현 가능한 디노이징을 위한 시드입니다. 기본값: 42. | INT | 예 | 0 ~ 2147483646 |
+| `이미지` | PBR 맵을 도출할 사진 또는 렌더입니다. | IMAGE | 예 | - |
+| `기본 색상` | basecolor(알베도) 맵을 생성합니다. 기본값: True. | BOOLEAN | 예 | true<br>false |
+| `노멀` | 노멀 맵을 생성합니다. 기본값: True. | BOOLEAN | 예 | true<br>false |
+| `거칠기` | 러프니스 맵을 생성합니다. 기본값: False. | BOOLEAN | 예 | true<br>false |
+| `금속성` | 메탈니스 맵을 생성합니다. 기본값: False. | BOOLEAN | 예 | true<br>false |
+| `높이` | 하이트(변위) 맵을 생성합니다. 기본값: False. | BOOLEAN | 예 | true<br>false |
+| `시드` | 재현 가능한 디노이징을 위한 시드입니다. 기본값: 42. | INT | 예 | 0 ~ 2147483646 |
 | `safety_checker` | 요청에 대해 제공업체의 콘텐츠 안전 검사를 실행합니다. 고급 설정입니다. 기본값: False. | BOOLEAN | 예 | true<br>false |
 | `auto_downscale` | 가장 긴 변이 모델 입력 한도인 2048픽셀을 초과하는 입력 이미지를 가로세로 비율을 유지하면서 자동으로 다운스케일합니다. 더 작은 이미지는 그대로 둡니다. 비활성화하면 크기가 초과된 이미지에서 대신 오류가 발생합니다. 고급 설정입니다. 기본값: True. | BOOLEAN | 아니요 | true<br>false |
 

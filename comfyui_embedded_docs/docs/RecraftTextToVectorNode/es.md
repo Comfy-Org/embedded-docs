@@ -11,8 +11,8 @@ Genera ilustraciones vectoriales SVG de forma síncrona a partir de una indicaci
 | `tamaño` | El tamaño de la imagen generada. (predeterminado: "1024x1024") | COMBO | Sí | `"1024x1024"`<br>`"1024x2048"`<br>`"2048x1024"`<br>`"2048x2048"`<br>`"512x512"`<br>`"512x1024"`<br>`"1024x512"`<br>`"2048x512"`<br>`"512x2048"` |
 | `n` | El número de imágenes a generar. (predeterminado: 1, mínimo: 1, máximo: 6) | INT | Sí | 1-6 |
 | `semilla` | Semilla para determinar si el nodo debe reejecutarse; los resultados reales son no deterministas independientemente de la semilla. (predeterminado: 0, mínimo: 0, máximo: 18446744073709551615) | INT | Sí | 0-18446744073709551615 |
-| `negative_prompt` | Una descripción de texto opcional de elementos no deseados en una imagen. (predeterminado: "", cuando está vacío no se usa ninguna indicación negativa) | STRING | No | - |
-| `recraft_controls` | Controles adicionales opcionales sobre la generación mediante el nodo Recraft Controls. | CONTROLS | No | - |
+| `prompt_negativo` | Una descripción de texto opcional de elementos no deseados en una imagen. (predeterminado: "", cuando está vacío no se usa ninguna indicación negativa) | STRING | No | - |
+| `controles_recraft` | Controles adicionales opcionales sobre la generación mediante el nodo Recraft Controls. | CONTROLS | No | - |
 
 **Nota:** El parámetro `seed` solo controla cuándo se vuelve a ejecutar el nodo, pero no hace que los resultados de la generación sean deterministas.
 

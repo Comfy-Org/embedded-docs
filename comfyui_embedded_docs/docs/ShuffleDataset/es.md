@@ -6,8 +6,8 @@ El nodo Shuffle Dataset toma una lista de imágenes y cambia aleatoriamente su o
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `images` | La lista de imágenes que se mezclará. | IMAGE | Sí | - |
-| `seed` | Semilla aleatoria. Un valor de 0 producirá una mezcla diferente cada vez. (predeterminado: 0) | INT | No | 0 a 18446744073709551615 |
+| `imágenes` | La lista de imágenes que se mezclará. | IMAGE | Sí | - |
+| `semilla` | Semilla aleatoria. Un valor de 0 producirá una mezcla diferente cada vez. (predeterminado: 0) | INT | No | 0 a 18446744073709551615 |
 
 ## Salidas
 

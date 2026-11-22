@@ -6,7 +6,7 @@ Este nodo convierte una imagen en un SVG editable con Ideogram Vector. El result
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Modelo a usar. Predeterminado: `"ideogram-vector-1"`. | DYNAMIC_COMBO | Sí | `"ideogram-vector-1"` |
+| `modelo` | Modelo a usar. Predeterminado: `"ideogram-vector-1"`. | DYNAMIC_COMBO | Sí | `"ideogram-vector-1"` |
 | `image` | La imagen a convertir. Una entrada por lotes se convierte imagen por imagen y los SVG resultantes se devuelven juntos. | IMAGE | Sí | - |
 | `mode` | `"simple"` traza menos formas y de mayor tamaño; `"default"` conserva un detalle más fino. Predeterminado: `"default"`. | COMBO | Sí | `"simple"`<br>`"default"` |
 

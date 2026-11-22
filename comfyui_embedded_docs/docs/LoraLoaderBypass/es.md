@@ -6,11 +6,11 @@ El nodo LoraLoaderBypass aplica una LoRA (Low-Rank Adaptation) a un modelo de di
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de difusión al que se aplicará la LoRA. | MODEL | Sí | - |
+| `modelo` | El modelo de difusión al que se aplicará la LoRA. | MODEL | Sí | - |
 | `clip` | El modelo CLIP al que se aplicará la LoRA. | CLIP | Sí | - |
-| `lora_name` | El nombre de la LoRA. Los archivos LoRA disponibles se cargan desde la carpeta `loras`. | COMBO | Sí | Lista de archivos LoRA disponibles |
-| `strength_model` | Intensidad con la que se modifica el modelo de difusión. Este valor puede ser negativo (predeterminado: 1.0). | FLOAT | Sí | -100.0 a 100.0 (paso: 0.01) |
-| `strength_clip` | Intensidad con la que se modifica el modelo CLIP. Este valor puede ser negativo (predeterminado: 1.0). | FLOAT | Sí | -100.0 a 100.0 (paso: 0.01) |
+| `nombre_de_lora` | El nombre de la LoRA. Los archivos LoRA disponibles se cargan desde la carpeta `loras`. | COMBO | Sí | Lista de archivos LoRA disponibles |
+| `fuerza_del_modelo` | Intensidad con la que se modifica el modelo de difusión. Este valor puede ser negativo (predeterminado: 1.0). | FLOAT | Sí | -100.0 a 100.0 (paso: 0.01) |
+| `fuerza_del_clip` | Intensidad con la que se modifica el modelo CLIP. Este valor puede ser negativo (predeterminado: 1.0). | FLOAT | Sí | -100.0 a 100.0 (paso: 0.01) |
 
 **Nota:** Si tanto `strength_model` como `strength_clip` se establecen en 0, el nodo devuelve las entradas originales `model` y `clip` sin modificar y sin procesamiento.
 

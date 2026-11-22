@@ -6,13 +6,13 @@ Haz una pregunta de sí/no sobre el texto, las imágenes, el audio o el video qu
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `model` | Modelo a usar (predeterminado: `"gemini-decision-1"`). | COMBO | Sí | `"gemini-decision-1"` |
-| `question` | La pregunta de sí/no sobre lo que está conectado, hasta 5000 caracteres. Formúlala de modo que "sí" sea el caso sobre el que actúas (predeterminado: "Is there a person in the image?"). | STRING | Sí | 1 a 5000 caracteres |
-| `threshold` | Probabilidad de "sí" a la que `result` se vuelve verdadero. Las respuestas claras de sí obtienen puntuaciones de aproximadamente 0.85 a 0.92, por lo que 0.9 o más rechaza muchas de ellas (predeterminado: 0.5). | FLOAT | Sí | 0.01 a 0.99 (paso 0.01) |
-| `images` | Imágenes sobre las que preguntar, hasta 16 en las ranuras ampliables (`image_1` ... `image_16`). Una imagen por lotes cuenta una vez por imagen. | IMAGE | No | Hasta 16 imágenes |
+| `modelo` | Modelo a usar (predeterminado: `"gemini-decision-1"`). | COMBO | Sí | `"gemini-decision-1"` |
+| `pregunta` | La pregunta de sí/no sobre lo que está conectado, hasta 5000 caracteres. Formúlala de modo que "sí" sea el caso sobre el que actúas (predeterminado: "Is there a person in the image?"). | STRING | Sí | 1 a 5000 caracteres |
+| `umbral` | Probabilidad de "sí" a la que `result` se vuelve verdadero. Las respuestas claras de sí obtienen puntuaciones de aproximadamente 0.85 a 0.92, por lo que 0.9 o más rechaza muchas de ellas (predeterminado: 0.5). | FLOAT | Sí | 0.01 a 0.99 (paso 0.01) |
+| `imágenes` | Imágenes sobre las que preguntar, hasta 16 en las ranuras ampliables (`image_1` ... `image_16`). Una imagen por lotes cuenta una vez por imagen. | IMAGE | No | Hasta 16 imágenes |
 | `audio` | Clip de audio sobre el que preguntar. | AUDIO | No | - |
-| `video` | Clip de video sobre el que preguntar. | VIDEO | No | - |
-| `text` | Texto sobre el que trata la pregunta, como un prompt o una respuesta de LLM, hasta 20000 caracteres. | STRING | No | Hasta 20000 caracteres |
+| `vídeo` | Clip de video sobre el que preguntar. | VIDEO | No | - |
+| `texto` | Texto sobre el que trata la pregunta, como un prompt o una respuesta de LLM, hasta 20000 caracteres. | STRING | No | Hasta 20000 caracteres |
 
 Conecta al menos uno de `text`, `images`, `audio` o `video`; el nodo genera un error cuando no hay nada que examinar. Con varias imágenes, nómbralas `image_1`, `image_2`, etc. dentro de la pregunta: un lote se expande fotograma a fotograma, por lo que los números cuentan fotogramas individuales en las ranuras en el orden de conexión.
 

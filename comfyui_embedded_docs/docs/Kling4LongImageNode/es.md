@@ -8,7 +8,7 @@ Genera una imagen alta con Kling 4.0: el diseño de una página web completa o u
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `skill` | Diseño a generar. `"webpage"` diseña una página completa alrededor de una imagen de estilo y un sujeto opcionales; `"ecommerce"` crea una página de detalles de producto a partir de fotos del producto. | DYNAMIC_COMBO | Sí | `"webpage"`<br>`"ecommerce"` |
+| `habilidad` | Diseño a generar. `"webpage"` diseña una página completa alrededor de una imagen de estilo y un sujeto opcionales; `"ecommerce"` crea una página de detalles de producto a partir de fotos del producto. | DYNAMIC_COMBO | Sí | `"webpage"`<br>`"ecommerce"` |
 
 ### Entradas de `webpage`
 

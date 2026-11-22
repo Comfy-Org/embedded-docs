@@ -6,10 +6,10 @@ Crea una copia modificada de una voz en el mismo idioma, ya sea a partir de una 
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `voice` | Voz de Breeze que se va a cambiar. | BREEZE_VOICE | Sí | - |
-| `change` | `custom` describe el cambio en texto; `preset` elige un cambio con nombre. Predeterminado: `"custom"`. | DYNAMIC_COMBO | Sí | `"custom"`<br>`"preset"` |
-| `strength` | Los valores más altos cambian más la voz. Predeterminado: 4.0. | FLOAT | No | 1.0 a 10.0 (paso 0.1) |
-| `seed` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 2147483647 |
+| `voz` | Voz de Breeze que se va a cambiar. | BREEZE_VOICE | Sí | - |
+| `cambio` | `custom` describe el cambio en texto; `preset` elige un cambio con nombre. Predeterminado: `"custom"`. | DYNAMIC_COMBO | Sí | `"custom"`<br>`"preset"` |
+| `intensidad` | Los valores más altos cambian más la voz. Predeterminado: 4.0. | FLOAT | No | 1.0 a 10.0 (paso 0.1) |
+| `semilla` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 2147483647 |
 
 ### Entradas para el cambio "custom"
 

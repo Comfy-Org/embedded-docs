@@ -7,8 +7,8 @@ Convierte el historial de intercalado que deja SenseNova Conditioning en texto, 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
 | `clip` | Modelo CLIP de SenseNova utilizado para decodificar los tokens generados. | CLIP | Sí | - |
-| `conditioning` | Acondicionamiento de intercalado de SenseNova Conditioning. | CONDITIONING | Sí | - |
-| `samples` | Último latente de píxeles del KSampler, necesario cuando el bucle terminó en una solicitud de imagen. | LATENT | No | - |
+| `condicionamiento` | Acondicionamiento de intercalado de SenseNova Conditioning. | CONDITIONING | Sí | - |
+| `muestras` | Último latente de píxeles del KSampler, necesario cuando el bucle terminó en una solicitud de imagen. | LATENT | No | - |
 
 **Restricciones y comportamiento:**
 

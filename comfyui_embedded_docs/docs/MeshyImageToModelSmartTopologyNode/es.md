@@ -6,16 +6,16 @@ Este nodo genera una malla triangular lista para juegos a partir de una imagen d
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | La versión del modelo de Meshy que se usará para la generación. | COMBO | Sí | `"meshy-t2.5"` |
-| `image` | La imagen de referencia a partir de la cual se genera el modelo. | IMAGE | Sí | - |
-| `target_polycount` | Número aproximado de triángulos en la malla generada. Predeterminado: 15000. | INT | Sí | 100 a 30000 |
-| `should_texture` | Determina si se generan texturas. `"false"` omite la fase de textura y devuelve una malla sin textura. | DYNAMIC_COMBO | Sí | `"true"`<br>`"false"` |
+| `modelo` | La versión del modelo de Meshy que se usará para la generación. | COMBO | Sí | `"meshy-t2.5"` |
+| `imagen` | La imagen de referencia a partir de la cual se genera el modelo. | IMAGE | Sí | - |
+| `recuento_de_polígonos_objetivo` | Número aproximado de triángulos en la malla generada. Predeterminado: 15000. | INT | Sí | 100 a 30000 |
+| `debe_texturizar` | Determina si se generan texturas. `"false"` omite la fase de textura y devuelve una malla sin textura. | DYNAMIC_COMBO | Sí | `"true"`<br>`"false"` |
 | `enable_pbr` | Genera mapas PBR (metálico, rugosidad, normal) además del color base. Esta entrada solo está disponible cuando `should_texture` está establecido en `"true"`. Predeterminado: `False`. | BOOLEAN | No | - |
 | `texture_prompt` | Indicación de texto para guiar el proceso de texturizado. Máximo 800 caracteres. No se puede usar al mismo tiempo que `texture_image`. Esta entrada solo está disponible cuando `should_texture` está establecido en `"true"`. Predeterminado: `""` (cadena vacía). | STRING | No | 1 a 800 caracteres |
 | `texture_image` | Imagen de referencia para el proceso de texturizado. Solo se puede usar uno de `texture_image` o `texture_prompt` al mismo tiempo. Esta entrada solo está disponible cuando `should_texture` está establecido en `"true"`. | IMAGE | No | - |
 | `texture_resolution` | Resolución de la textura. Las resoluciones más altas capturan más detalle de la superficie. Esta entrada solo está disponible cuando `should_texture` está establecido en `"true"`. | COMBO | No | `"2k"`<br>`"4k"`<br>`"8k"` |
-| `pose_mode` | La pose del personaje generado. Una cadena vacía solicita que no se use una pose específica. Esta es una configuración avanzada. Predeterminado: `""` (cadena vacía). | COMBO | Sí | `""`<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
+| `modo_de_pose` | La pose del personaje generado. Una cadena vacía solicita que no se use una pose específica. Esta es una configuración avanzada. Predeterminado: `""` (cadena vacía). | COMBO | Sí | `""`<br>`"A-pose"`<br>`"T-pose"` |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
 
 **Nota:** Las entradas `enable_pbr`, `texture_prompt`, `texture_image` y `texture_resolution` solo están disponibles cuando `should_texture` está establecido en `"true"`.
 

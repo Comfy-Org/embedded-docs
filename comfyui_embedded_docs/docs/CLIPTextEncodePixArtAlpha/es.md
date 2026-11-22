@@ -6,9 +6,9 @@ Codifica el texto y establece el condicionamiento de resolución para PixArt Alp
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `width` | La dimensión de ancho para el condicionamiento de resolución (predeterminado: 1024) | INT | Sí | 0 a MAX_RESOLUTION |
-| `height` | La dimensión de alto para el condicionamiento de resolución (predeterminado: 1024) | INT | Sí | 0 a MAX_RESOLUTION |
-| `text` | Entrada de texto a codificar. Admite entrada multilínea y prompts dinámicos. | STRING | Sí | - |
+| `ancho` | La dimensión de ancho para el condicionamiento de resolución (predeterminado: 1024) | INT | Sí | 0 a MAX_RESOLUTION |
+| `alto` | La dimensión de alto para el condicionamiento de resolución (predeterminado: 1024) | INT | Sí | 0 a MAX_RESOLUTION |
+| `texto` | Entrada de texto a codificar. Admite entrada multilínea y prompts dinámicos. | STRING | Sí | - |
 | `clip` | Modelo CLIP utilizado para la tokenización y codificación | CLIP | Sí | - |
 
 ## Salidas

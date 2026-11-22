@@ -6,10 +6,10 @@ Este nodo crea un modelo de enganche como un LoRA (Adaptación de Bajo Rango) ca
 
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `ckpt_name` | El archivo de punto de control del cual cargar los pesos (seleccionar entre los puntos de control disponibles) | STRING | Sí | Múltiples opciones disponibles |
-| `strength_model` | El multiplicador de intensidad aplicado a los pesos del modelo (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
-| `strength_clip` | El multiplicador de intensidad aplicado a los pesos de CLIP (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
-| `prev_hooks` | Enganches anteriores opcionales para combinar con los nuevos enganches LoRA creados | HOOKS | No | - |
+| `nombre_de_checkpoint` | El archivo de punto de control del cual cargar los pesos (seleccionar entre los puntos de control disponibles) | STRING | Sí | Múltiples opciones disponibles |
+| `fuerza_del_modelo` | El multiplicador de intensidad aplicado a los pesos del modelo (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
+| `fuerza_del_clip` | El multiplicador de intensidad aplicado a los pesos de CLIP (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
+| `ganchos_anteriores` | Enganches anteriores opcionales para combinar con los nuevos enganches LoRA creados | HOOKS | No | - |
 
 **Restricciones de parámetros:**
 

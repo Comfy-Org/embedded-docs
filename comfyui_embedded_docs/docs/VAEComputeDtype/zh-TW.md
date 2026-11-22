@@ -7,7 +7,7 @@
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `vae` | 要調整的 VAE。此節點會作用於副本，因此已連線的 VAE 不會被修改。 | VAE | 是 | - |
-| `dtype` | 用於 VAE 編碼與解碼的計算 dtype。"default" 會保留輸入 VAE 的計算 dtype（預設："default"）。 | COMBO | 是 | "default"<br>"fp32"<br>"fp16"<br>"bf16" |
+| `資料型別` | 用於 VAE 編碼與解碼的計算 dtype。"default" 會保留輸入 VAE 的計算 dtype（預設："default"）。 | COMBO | 是 | "default"<br>"fp32"<br>"fp16"<br>"bf16" |
 
 ## 輸出
 

@@ -6,8 +6,8 @@ Este nodo crea una operación sobre latentes que mezcla un latente hacia un late
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `reference` | El latente hacia el que se mezcla. Sus muestras se convierten al dispositivo y dtype del latente que se está procesando, y luego se redimensionan y repiten para coincidir con él. | LATENT | Sí | - |
-| `strength` | Cuánto mezclar hacia la referencia: 0 deja el latente sin cambios, 1 iguala el latente de referencia redimensionado (predeterminado: 1.0). | FLOAT | Sí | 0.0 a 1.0 (paso 0.0001) |
+| `referencia` | El latente hacia el que se mezcla. Sus muestras se convierten al dispositivo y dtype del latente que se está procesando, y luego se redimensionan y repiten para coincidir con él. | LATENT | Sí | - |
+| `fuerza` | Cuánto mezclar hacia la referencia: 0 deja el latente sin cambios, 1 iguala el latente de referencia redimensionado (predeterminado: 1.0). | FLOAT | Sí | 0.0 a 1.0 (paso 0.0001) |
 
 ## Salidas
 

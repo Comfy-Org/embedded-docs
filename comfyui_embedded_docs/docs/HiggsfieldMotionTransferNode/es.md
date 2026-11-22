@@ -6,7 +6,7 @@ El nodo **Higgsfield Genjutsu Motion Transfer** recrea un video con nuevos perso
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Modelo que se va a usar. Al seleccionar un modelo se revelan los parámetros específicos de este: `video`, `reference_images`, `prompt`, `resolution` y `seed`. | DYNAMIC_COMBO | Sí | `"genjutsu-v1.0"` |
+| `Modelo` | Modelo que se va a usar. Al seleccionar un modelo se revelan los parámetros específicos de este: `video`, `reference_images`, `prompt`, `resolution` y `seed`. | DYNAMIC_COMBO | Sí | `"genjutsu-v1.0"` |
 | `video` | Video de origen cuyo movimiento, movimiento de cámara, sincronización y audio se conservan. Al menos 4 segundos; solo se usan los primeros 30 segundos. | VIDEO | Sí | 4 a 30 segundos |
 | `reference_images` | Ranura ampliable: conecta de 1 a 8 imágenes (`image_1`, `image_2`, ...) de los personajes, ubicaciones o estilos que se van a usar. Una entrada por lotes cuenta una vez por imagen. | IMAGE | Sí | 1 a 8 imágenes |
 | `prompt` | Opcional. Describe el resultado, por ejemplo, qué referencia reemplaza a qué persona, o un nuevo entorno. (predeterminado: vacío) | STRING | Sí | Cualquier texto |

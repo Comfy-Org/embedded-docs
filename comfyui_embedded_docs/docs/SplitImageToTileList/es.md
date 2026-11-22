@@ -6,10 +6,10 @@ El nodo **Dividir Imagen en Lista de Teselas** divide una única imagen de entra
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `image` | La imagen de entrada que se dividirá en teselas. | IMAGE | Sí | - |
-| `tile_width` | El ancho de cada tesela de salida en píxeles (predeterminado: 1024). | INT | Sí | 64 a 1048576 |
-| `tile_height` | La altura de cada tesela de salida en píxeles (predeterminado: 1024). | INT | Sí | 64 a 1048576 |
-| `overlap` | La cantidad de píxeles que se superpondrán las teselas adyacentes (predeterminado: 128). | INT | Sí | 0 a 4096 |
+| `imagen` | La imagen de entrada que se dividirá en teselas. | IMAGE | Sí | - |
+| `ancho_de_mosaico` | El ancho de cada tesela de salida en píxeles (predeterminado: 1024). | INT | Sí | 64 a 1048576 |
+| `alto_de_mosaico` | La altura de cada tesela de salida en píxeles (predeterminado: 1024). | INT | Sí | 64 a 1048576 |
+| `superposición` | La cantidad de píxeles que se superpondrán las teselas adyacentes (predeterminado: 128). | INT | Sí | 0 a 4096 |
 
 ## Salidas
 

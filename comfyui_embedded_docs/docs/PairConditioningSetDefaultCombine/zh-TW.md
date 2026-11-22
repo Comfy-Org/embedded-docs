@@ -6,10 +6,10 @@
 
 | 參數 | 說明 | 資料類型 | 必要 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `positive` | 要處理的主要正向條件化輸入 | CONDITIONING | 是 | - |
-| `negative` | 要處理的主要負向條件化輸入 | CONDITIONING | 是 | - |
-| `positive_DEFAULT` | 作為備用值的預設正向條件化數值 | CONDITIONING | 是 | - |
-| `negative_DEFAULT` | 作為備用值的預設負向條件化數值 | CONDITIONING | 是 | - |
+| `正向` | 要處理的主要正向條件化輸入 | CONDITIONING | 是 | - |
+| `負向` | 要處理的主要負向條件化輸入 | CONDITIONING | 是 | - |
+| `正向_預設` | 作為備用值的預設正向條件化數值 | CONDITIONING | 是 | - |
+| `負向_預設` | 作為備用值的預設負向條件化數值 | CONDITIONING | 是 | - |
 | `hooks` | 用於自訂處理邏輯的選用鉤子群組 | HOOKS | 否 | - |
 
 ## 輸出

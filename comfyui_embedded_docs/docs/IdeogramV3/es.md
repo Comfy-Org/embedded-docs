@@ -7,14 +7,14 @@ El nodo Ideogram V3 genera imágenes utilizando el modelo Ideogram V3. Admite ta
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `prompt` | Indicación para la generación o edición de la imagen (predeterminado: vacío) | STRING | Sí | - |
-| `image` | Imagen de referencia opcional para edición de imágenes | IMAGE | No | - |
-| `mask` | Máscara opcional para relleno generativo (las áreas blancas serán reemplazadas) | MASK | No | - |
-| `aspect_ratio` | La relación de aspecto para la generación de imágenes. Se ignora si la resolución no está configurada en Auto (predeterminado: "1:1") | COMBO | No | "1:1"<br>"16:9"<br>"9:16"<br>"4:3"<br>"3:4"<br>"3:2"<br>"2:3" |
-| `resolution` | La resolución para la generación de imágenes. Si no está configurada en Auto, anula la configuración de relación de aspecto (predeterminado: "Auto") | COMBO | No | "Auto"<br>"1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" |
-| `magic_prompt_option` | Determina si se debe usar MagicPrompt en la generación (predeterminado: "AUTO") | COMBO | No | "AUTO"<br>"ON"<br>"OFF" |
-| `seed` | Semilla aleatoria para la generación (predeterminado: 0) | INT | No | 0-2147483647 |
-| `num_images` | Número de imágenes a generar (predeterminado: 1) | INT | No | 1-8 |
-| `rendering_speed` | Controla la compensación entre velocidad de generación y calidad (predeterminado: "DEFAULT") | COMBO | No | "DEFAULT"<br>"TURBO"<br>"QUALITY" |
+| `imagen` | Imagen de referencia opcional para edición de imágenes | IMAGE | No | - |
+| `máscara` | Máscara opcional para relleno generativo (las áreas blancas serán reemplazadas) | MASK | No | - |
+| `relación_de_aspecto` | La relación de aspecto para la generación de imágenes. Se ignora si la resolución no está configurada en Auto (predeterminado: "1:1") | COMBO | No | "1:1"<br>"16:9"<br>"9:16"<br>"4:3"<br>"3:4"<br>"3:2"<br>"2:3" |
+| `resolución` | La resolución para la generación de imágenes. Si no está configurada en Auto, anula la configuración de relación de aspecto (predeterminado: "Auto") | COMBO | No | "Auto"<br>"1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" |
+| `opción_de_prompt_mágico` | Determina si se debe usar MagicPrompt en la generación (predeterminado: "AUTO") | COMBO | No | "AUTO"<br>"ON"<br>"OFF" |
+| `semilla` | Semilla aleatoria para la generación (predeterminado: 0) | INT | No | 0-2147483647 |
+| `número_de_imágenes` | Número de imágenes a generar (predeterminado: 1) | INT | No | 1-8 |
+| `velocidad_de_renderizado` | Controla la compensación entre velocidad de generación y calidad (predeterminado: "DEFAULT") | COMBO | No | "DEFAULT"<br>"TURBO"<br>"QUALITY" |
 | `imagen_personaje` | Imagen para usar como referencia de personaje | IMAGE | No | - |
 | `máscara_personaje` | Máscara opcional para la imagen de referencia de personaje | MASK | No | - |
 

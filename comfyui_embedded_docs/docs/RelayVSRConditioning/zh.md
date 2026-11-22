@@ -6,8 +6,8 @@ RelayVSR Conditioning 为 RelayVSR 视频放大准备 conditioning 和空 latent
 
 | 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model` | RelayVSR 扩散模型，通过 Load Model 加载：`relayvsr_x2_lightx2v_int8_convrot.safetensors` 或 `relayvsr_x4_int8_convrot.safetensors`。 | MODEL | 是 | N/A |
-| `images` | 原始分辨率的低质量视频。模型的放大倍数决定结果的尺寸。 | IMAGE | 是 | N/A |
+| `模型` | RelayVSR 扩散模型，通过 Load Model 加载：`relayvsr_x2_lightx2v_int8_convrot.safetensors` 或 `relayvsr_x4_int8_convrot.safetensors`。 | MODEL | 是 | N/A |
+| `图像` | 原始分辨率的低质量视频。模型的放大倍数决定结果的尺寸。 | IMAGE | 是 | N/A |
 
 ## 输出
 

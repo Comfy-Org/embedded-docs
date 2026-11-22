@@ -6,7 +6,7 @@ VEED Dubbing 使用 VEED 将视频中的语音翻译成另一种语言，它会�
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 配音模型。`"standard"` 更便宜，返回单声道音频，支持拉丁美洲西班牙语和巴西葡萄牙语；`"pro"` 增加了地区口音和立体声音频。选择模型后会显示 `video`、`target_language`、`source_language` 和 `seed`。 | DYNAMIC_COMBO | 是 | `"standard"`<br>`"pro"` |
+| `模型` | 配音模型。`"standard"` 更便宜，返回单声道音频，支持拉丁美洲西班牙语和巴西葡萄牙语；`"pro"` 增加了地区口音和立体声音频。选择模型后会显示 `video`、`target_language`、`source_language` 和 `seed`。 | DYNAMIC_COMBO | 是 | `"standard"`<br>`"pro"` |
 
 ### standard 输入
 

@@ -6,7 +6,7 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `cameras` | Create Camera Info, Create Camera Orbit 또는 뷰어에서 가져온 카메라의 확장 가능한 슬롯입니다. 카메라 목록은 그 안의 모든 카메라로 간주됩니다. | AUTOGROW | 예 | 1~50개 카메라 |
+| `카메라` | Create Camera Info, Create Camera Orbit 또는 뷰어에서 가져온 카메라의 확장 가능한 슬롯입니다. 카메라 목록은 그 안의 모든 카메라로 간주됩니다. | AUTOGROW | 예 | 1~50개 카메라 |
 
 ## 출력
 

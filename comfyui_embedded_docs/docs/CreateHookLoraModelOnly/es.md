@@ -6,9 +6,9 @@ Este nodo crea un hook LoRA (Adaptación de Bajo Rango) que se aplica únicament
 
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `lora_name` | El nombre del archivo LoRA a cargar desde la carpeta loras | STRING | Sí | Múltiples opciones disponibles |
-| `strength_model` | El multiplicador de intensidad para aplicar el LoRA al componente del modelo (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
-| `prev_hooks` | Hooks anteriores opcionales para encadenar con este hook | HOOKS | No | - |
+| `nombre_de_lora` | El nombre del archivo LoRA a cargar desde la carpeta loras | STRING | Sí | Múltiples opciones disponibles |
+| `fuerza_del_modelo` | El multiplicador de intensidad para aplicar el LoRA al componente del modelo (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
+| `ganchos_anteriores` | Hooks anteriores opcionales para encadenar con este hook | HOOKS | No | - |
 
 ## Salidas
 

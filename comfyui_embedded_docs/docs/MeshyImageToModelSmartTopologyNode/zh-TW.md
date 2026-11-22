@@ -6,16 +6,16 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要用於生成的 Meshy 模型版本。 | COMBO | 是 | `"meshy-t2.5"` |
-| `image` | 用於生成模型的參考影像。 | IMAGE | 是 | - |
-| `target_polycount` | 生成網格中三角形的近似數量。預設：15000。 | INT | 是 | 100 至 30000 |
-| `should_texture` | 決定是否產生貼圖。`"false"` 會略過貼圖階段並傳回未貼圖的網格。 | DYNAMIC_COMBO | 是 | `"true"`<br>`"false"` |
+| `模型` | 要用於生成的 Meshy 模型版本。 | COMBO | 是 | `"meshy-t2.5"` |
+| `圖片` | 用於生成模型的參考影像。 | IMAGE | 是 | - |
+| `目標多邊形數` | 生成網格中三角形的近似數量。預設：15000。 | INT | 是 | 100 至 30000 |
+| `是否產生紋理` | 決定是否產生貼圖。`"false"` 會略過貼圖階段並傳回未貼圖的網格。 | DYNAMIC_COMBO | 是 | `"true"`<br>`"false"` |
 | `enable_pbr` | 除了基礎顏色外，還產生 PBR 貼圖（金屬度、粗糙度、法線）。只有在 `should_texture` 設為 `"true"` 時，此輸入才可用。預設：`False`。 | BOOLEAN | 否 | - |
 | `texture_prompt` | 用於引導貼圖流程的文字提示。最多 800 個字元。不能與 `texture_image` 同時使用。只有在 `should_texture` 設為 `"true"` 時，此輸入才可用。預設：`""`（空字串）。 | STRING | 否 | 1 至 800 個字元 |
 | `texture_image` | 貼圖流程的參考影像。同一時間只能使用 `texture_image` 或 `texture_prompt` 其中之一。只有在 `should_texture` 設為 `"true"` 時，此輸入才可用。 | IMAGE | 否 | - |
 | `texture_resolution` | 貼圖解析度。較高解析度可捕捉更多表面細節。只有在 `should_texture` 設為 `"true"` 時，此輸入才可用。 | COMBO | 否 | `"2k"`<br>`"4k"`<br>`"8k"` |
-| `pose_mode` | 生成角色的姿勢。空字串表示不指定特定姿勢。這是進階設定。預設：`""`（空字串）。 | COMBO | 是 | `""`<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | `seed` 控制節點是否應重新執行；無論 `seed` 為何，結果都是非確定性的。預設：42。 | INT | 是 | 0 至 2147483647 |
+| `姿勢模式` | 生成角色的姿勢。空字串表示不指定特定姿勢。這是進階設定。預設：`""`（空字串）。 | COMBO | 是 | `""`<br>`"A-pose"`<br>`"T-pose"` |
+| `種子` | `seed` 控制節點是否應重新執行；無論 `seed` 為何，結果都是非確定性的。預設：42。 | INT | 是 | 0 至 2147483647 |
 
 **注意：** `enable_pbr`、`texture_prompt`、`texture_image` 與 `texture_resolution` 輸入只有在 `should_texture` 設為 `"true"` 時才可用。
 

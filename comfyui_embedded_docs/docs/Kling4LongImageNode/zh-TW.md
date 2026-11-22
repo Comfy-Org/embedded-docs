@@ -8,7 +8,7 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `skill` | 要生成的版面。`"webpage"` 會圍繞選用的樣式影像與主體設計完整頁面；`"ecommerce"` 則根據產品照片建構產品詳情頁。 | DYNAMIC_COMBO | 是 | `"webpage"`<br>`"ecommerce"` |
+| `技能` | 要生成的版面。`"webpage"` 會圍繞選用的樣式影像與主體設計完整頁面；`"ecommerce"` 則根據產品照片建構產品詳情頁。 | DYNAMIC_COMBO | 是 | `"webpage"`<br>`"ecommerce"` |
 
 ### `webpage` 輸入
 

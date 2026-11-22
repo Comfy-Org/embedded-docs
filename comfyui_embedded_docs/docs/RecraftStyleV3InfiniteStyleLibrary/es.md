@@ -6,7 +6,7 @@ Este nodo te permite seleccionar un estilo de la Biblioteca Infinita de Estilos 
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `style_id` | UUID del estilo de la Biblioteca Infinita de Estilos. | STRING | Sí | Cualquier UUID válido |
+| `id_de_estilo` | UUID del estilo de la Biblioteca Infinita de Estilos. | STRING | Sí | Cualquier UUID válido |
 
 **Nota:** La entrada `style_id` no puede estar vacía. Si se proporciona una cadena vacía, el nodo generará una excepción.
 

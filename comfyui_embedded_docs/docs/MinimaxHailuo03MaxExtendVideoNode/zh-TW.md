@@ -8,7 +8,7 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `model` | 用於續寫影片的模型。兩種模型皆提供下列相同的輸入。 | DYNAMIC_COMBO | 是 | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `模型` | 用於續寫影片的模型。兩種模型皆提供下列相同的輸入。 | DYNAMIC_COMBO | 是 | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
 
 ### 模型輸入
 

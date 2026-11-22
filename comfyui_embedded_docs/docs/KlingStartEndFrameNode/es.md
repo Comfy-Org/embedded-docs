@@ -6,13 +6,13 @@ Este nodo crea una secuencia de video que realiza una transición entre las imá
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `start_frame` | Imagen de referencia: URL o cadena codificada en Base64, no puede superar los 10MB, resolución no inferior a 300*300px, relación de aspecto entre 1:2.5 ~ 2.5:1. Base64 no debe incluir el prefijo data:image. | IMAGE | Sí | - |
-| `end_frame` | Imagen de referencia: control del fotograma final. URL o cadena codificada en Base64, no puede superar los 10MB, resolución no inferior a 300*300px. Base64 no debe incluir el prefijo data:image. | IMAGE | Sí | - |
+| `fotograma_inicial` | Imagen de referencia: URL o cadena codificada en Base64, no puede superar los 10MB, resolución no inferior a 300*300px, relación de aspecto entre 1:2.5 ~ 2.5:1. Base64 no debe incluir el prefijo data:image. | IMAGE | Sí | - |
+| `fotograma_final` | Imagen de referencia: control del fotograma final. URL o cadena codificada en Base64, no puede superar los 10MB, resolución no inferior a 300*300px. Base64 no debe incluir el prefijo data:image. | IMAGE | Sí | - |
 | `prompt` | Prompt de texto positivo. No debe estar vacío y no puede superar los 500 caracteres. | STRING | Sí | - |
-| `negative_prompt` | Prompt de texto negativo. No puede superar los 500 caracteres. Si se deja vacío, se omite de la solicitud. | STRING | Sí | - |
-| `cfg_scale` | Controla la intensidad de la guía del prompt (valor predeterminado: 0.5). | FLOAT | Sí | 0.0-1.0 |
-| `aspect_ratio` | La relación de aspecto para el video generado (valor predeterminado: "16:9"). | COMBO | Sí | "16:9"<br>"9:16"<br>"1:1" |
-| `mode` | La configuración que se usará para la generación de video siguiendo el formato: modo / duración / nombre_del_modelo. (valor predeterminado: "pro mode / 5s duration / kling-v2-5-turbo") | COMBO | Sí | "pro mode / 5s duration / kling-v2-5-turbo"<br>"pro mode / 10s duration / kling-v2-5-turbo" |
+| `prompt_negativo` | Prompt de texto negativo. No puede superar los 500 caracteres. Si se deja vacío, se omite de la solicitud. | STRING | Sí | - |
+| `escala_cfg` | Controla la intensidad de la guía del prompt (valor predeterminado: 0.5). | FLOAT | Sí | 0.0-1.0 |
+| `relación_de_aspecto` | La relación de aspecto para el video generado (valor predeterminado: "16:9"). | COMBO | Sí | "16:9"<br>"9:16"<br>"1:1" |
+| `modo` | La configuración que se usará para la generación de video siguiendo el formato: modo / duración / nombre_del_modelo. (valor predeterminado: "pro mode / 5s duration / kling-v2-5-turbo") | COMBO | Sí | "pro mode / 5s duration / kling-v2-5-turbo"<br>"pro mode / 10s duration / kling-v2-5-turbo" |
 
 **Restricciones de imagen:**
 

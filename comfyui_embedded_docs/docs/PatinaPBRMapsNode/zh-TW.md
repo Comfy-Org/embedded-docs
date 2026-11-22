@@ -6,15 +6,15 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 用來衍生 PBR 貼圖的照片或渲染圖。 | IMAGE | 是 | - |
-| `basecolor` | 生成基礎色（albedo）貼圖。預設值：True。 | BOOLEAN | 是 | true<br>false |
-| `normal` | 生成法線貼圖。預設值：True。 | BOOLEAN | 是 | true<br>false |
-| `roughness` | 生成粗糙度貼圖。預設值：False。 | BOOLEAN | 是 | true<br>false |
-| `metalness` | 生成金屬度貼圖。預設值：False。 | BOOLEAN | 是 | true<br>false |
-| `height` | 生成高度（置換）貼圖。預設值：False。 | BOOLEAN | 是 | true<br>false |
-| `seed` | 用於可重現去噪結果的種子。預設值：42。 | INT | 是 | 0 至 2147483646 |
-| `safety_checker` | 對請求執行提供者的內容安全檢查。進階設定。預設值：False。 | BOOLEAN | 是 | true<br>false |
-| `auto_downscale` | 自動將最長邊超過 2048 像素（模型輸入上限）的輸入影像縮小，同時維持長寬比；較小的影像則維持不變。停用此選項時，過大的影像將會引發錯誤。進階設定。預設值：True。 | BOOLEAN | 否 | true<br>false |
+| `影像` | 用來衍生 PBR 貼圖的照片或渲染圖。 | IMAGE | 是 | - |
+| `基礎色` | 生成基礎色（albedo）貼圖。預設值：True。 | BOOLEAN | 是 | true<br>false |
+| `法線` | 生成法線貼圖。預設值：True。 | BOOLEAN | 是 | true<br>false |
+| `粗糙度` | 生成粗糙度貼圖。預設值：False。 | BOOLEAN | 是 | true<br>false |
+| `金屬度` | 生成金屬度貼圖。預設值：False。 | BOOLEAN | 是 | true<br>false |
+| `高度` | 生成高度（置換）貼圖。預設值：False。 | BOOLEAN | 是 | true<br>false |
+| `種子` | 用於可重現去噪結果的種子。預設值：42。 | INT | 是 | 0 至 2147483646 |
+| `安全性檢查器` | 對請求執行提供者的內容安全檢查。進階設定。預設值：False。 | BOOLEAN | 是 | true<br>false |
+| `自動縮小` | 自動將最長邊超過 2048 像素（模型輸入上限）的輸入影像縮小，同時維持長寬比；較小的影像則維持不變。停用此選項時，過大的影像將會引發錯誤。進階設定。預設值：True。 | BOOLEAN | 否 | true<br>false |
 
 **限制與行為：**
 

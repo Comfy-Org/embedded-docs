@@ -18,7 +18,7 @@ Este nodo heredado genera modelos 3D terminados a partir de una descripción de 
 | `calidad_de_textura` | Calidad de las texturas generadas. detailed = texturas HD, extreme = texturas Ultra 8K (valor predeterminado: standard). | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
 | `límite_de_caras` | Cantidad máxima de caras. -1 permite que Tripo elija de forma adaptativa (aproximadamente 1.4 M de caras en v3.x standard, 2 M en detailed). Tripo limita silenciosamente: v2.5 a 500,000, mallas quad a 150,000. (valor predeterminado: -1) | INT | No | -1 a 2000000 |
 | `cuadrante` | Salida de malla quad. Tripo entrega las mallas quad como FBX, por lo que el resultado llega a la salida FBX y la salida GLB permanece vacía. (valor predeterminado: False) | BOOLEAN | No | true / false |
-| `geometry_quality` | Calidad de la geometría generada (valor predeterminado: standard). | COMBO | No | "standard"<br>"detailed" |
+| `calidad_de_geometría` | Calidad de la geometría generada (valor predeterminado: standard). | COMBO | No | "standard"<br>"detailed" |
 | `smart_low_poly` | Malla low-poly con topología de estilo limpio y artesanal (500-20,000 caras, quad 500-10,000). Ideal para sujetos simples; los complejos pueden fallar. (valor predeterminado: False) | BOOLEAN | No | true / false |
 | `auto_size` | Escala los modelos texturizados a su tamaño real en metros. Tripo almacena el tamaño como la transformación de escena del modelo y lo integra de forma permanente cuando el modelo se convierte, se le aplica rigging o se le aplica retargeting; se ignora si no hay textura. (valor predeterminado: True) | BOOLEAN | No | true / false |
 

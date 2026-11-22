@@ -8,11 +8,11 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `positive` | 참조 잠재값으로 수정할 positive 컨디셔닝입니다. | CONDITIONING | 예 | - |
-| `negative` | 동일한 참조 잠재값을 받는 선택적 negative 컨디셔닝입니다. 연결하지 않으면 `negative` 출력에서 수정된 positive 컨디셔닝을 재사용합니다. | CONDITIONING | 아니요 | - |
+| `긍정` | 참조 잠재값으로 수정할 positive 컨디셔닝입니다. | CONDITIONING | 예 | - |
+| `부정` | 동일한 참조 잠재값을 받는 선택적 negative 컨디셔닝입니다. 연결하지 않으면 `negative` 출력에서 수정된 positive 컨디셔닝을 재사용합니다. | CONDITIONING | 아니요 | - |
 | `vae` | 연결된 참조 이미지를 인코딩하는 데 사용되는 VAE입니다. VAE가 연결되지 않으면 참조 이미지는 무시됩니다. | VAE | 아니요 | - |
-| `resolution` | 인코딩 전에 각 참조 이미지를 준비하는 방식입니다. `"keep resolution"`은 들어온 크기 그대로 인코딩하고, `"resize"`는 종횡비를 유지하면서 목표 메가픽셀 수로 조정하며, 이 경우 `megapixels`가 표시됩니다. (기본값: "keep resolution") | DYNAMIC_COMBO | 예 | `"keep resolution"`<br>`"resize"` |
-| `images` | 확장 가능한 슬롯: 하나 이상의 참조 이미지(`image_1`, `image_2`, ...)를 연결하여 참조로 사용합니다. 이미지는 슬롯 순서대로 인코딩되어 그 순서대로 컨디셔닝에 추가됩니다. | IMAGE | 아니요 | 1 ~ 100 |
+| `해상도` | 인코딩 전에 각 참조 이미지를 준비하는 방식입니다. `"keep resolution"`은 들어온 크기 그대로 인코딩하고, `"resize"`는 종횡비를 유지하면서 목표 메가픽셀 수로 조정하며, 이 경우 `megapixels`가 표시됩니다. (기본값: "keep resolution") | DYNAMIC_COMBO | 예 | `"keep resolution"`<br>`"resize"` |
+| `이미지` | 확장 가능한 슬롯: 하나 이상의 참조 이미지(`image_1`, `image_2`, ...)를 연결하여 참조로 사용합니다. 이미지는 슬롯 순서대로 인코딩되어 그 순서대로 컨디셔닝에 추가됩니다. | IMAGE | 아니요 | 1 ~ 100 |
 
 ### 리사이즈 입력
 

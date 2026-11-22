@@ -6,15 +6,15 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `image` | 패딩할 이미지입니다. | IMAGE | 예 | - |
-| `padding_type` | 추가할 패딩 양을 지정합니다. 각 변에 정확한 양을 지정하려면 `"pad dimensions"`, 입력 대비 출력 크기를 지정하려면 `"pad by multiplier"`, 다음 배수에 도달하도록 하려면 `"pad to multiple"`을 사용합니다. 옵션을 선택하면 해당 매개변수가 표시됩니다. | DYNAMIC_COMBO | 예 | `"pad dimensions"`<br>`"pad by multiplier"`<br>`"pad to multiple"` |
+| `이미지` | 패딩할 이미지입니다. | IMAGE | 예 | - |
+| `패딩 유형` | 추가할 패딩 양을 지정합니다. 각 변에 정확한 양을 지정하려면 `"pad dimensions"`, 입력 대비 출력 크기를 지정하려면 `"pad by multiplier"`, 다음 배수에 도달하도록 하려면 `"pad to multiple"`을 사용합니다. 옵션을 선택하면 해당 매개변수가 표시됩니다. | DYNAMIC_COMBO | 예 | `"pad dimensions"`<br>`"pad by multiplier"`<br>`"pad to multiple"` |
 | `left` | 왼쪽에 추가할 픽셀 수입니다. `padding_type`이 `"pad dimensions"`일 때 사용할 수 있습니다(기본값: 0). | INT | 예 | 0  ~  16384 |
 | `top` | 위쪽에 추가할 픽셀 수입니다. `padding_type`이 `"pad dimensions"`일 때 사용할 수 있습니다(기본값: 0). | INT | 예 | 0  ~  16384 |
 | `right` | 오른쪽에 추가할 픽셀 수입니다. `padding_type`이 `"pad dimensions"`일 때 사용할 수 있습니다(기본값: 0). | INT | 예 | 0  ~  16384 |
 | `bottom` | 아래쪽에 추가할 픽셀 수입니다. `padding_type`이 `"pad dimensions"`일 때 사용할 수 있습니다(기본값: 0). | INT | 예 | 0  ~  16384 |
 | `multiplier` | 입력 대비 출력 크기입니다. 예를 들어 1.5는 각 변에 25%를 추가합니다. 패딩은 서로 반대되는 변 사이에 균등하게 분할됩니다. `padding_type`이 `"pad by multiplier"`일 때 사용할 수 있습니다(기본값: 1.0). | FLOAT | 예 | 1.0  ~  8.0 (단계: 0.01) |
 | `multiple` | 너비와 높이가 이 수로 나누어떨어지도록 패딩합니다. 패딩은 서로 반대되는 변 사이에 균등하게 분할되며, 남는 픽셀은 오른쪽과 아래쪽에 추가됩니다. `padding_type`이 `"pad to multiple"`일 때 사용할 수 있습니다(기본값: 32). | INT | 예 | 1  ~  16384 |
-| `padding_style` | 패딩 영역을 채울 방법입니다. `"color"` 또는 `"mirror image"`를 사용합니다. 옵션을 선택하면 해당 매개변수가 표시됩니다. | DYNAMIC_COMBO | 예 | `"color"`<br>`"mirror image"` |
+| `패딩 스타일` | 패딩 영역을 채울 방법입니다. `"color"` 또는 `"mirror image"`를 사용합니다. 옵션을 선택하면 해당 매개변수가 표시됩니다. | DYNAMIC_COMBO | 예 | `"color"`<br>`"mirror image"` |
 | `color` | 패딩 영역의 채우기 색상입니다. 알파는 무시됩니다. `padding_style`이 `"color"`일 때 사용할 수 있습니다(기본값: `"#000000"`). | COLOR | 예 | - |
 | `feathering` | 패딩된 변에서 이미지 가장자리의 이 픽셀 수만큼을 채우기 색상과 혼합합니다. 0은 경계를 날카롭게 유지합니다. `padding_style`이 `"color"`일 때 사용할 수 있습니다(기본값: 0). | INT | 예 | 0  ~  16384 |
 

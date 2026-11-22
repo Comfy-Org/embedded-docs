@@ -6,7 +6,7 @@ VEED Dubbing 會使用 VEED 將影片中的語音翻譯成另一種語言，複�
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 配音模型。`"standard"` 較便宜且回傳單聲道音訊，支援拉丁美洲西班牙語與巴西葡萄牙語；`"pro"` 增加地區口音與立體聲音訊。選擇模型後會顯示 `video`、`target_language`、`source_language` 與 `seed`。 | DYNAMIC_COMBO | 是 | `"standard"`<br>`"pro"` |
+| `模型` | 配音模型。`"standard"` 較便宜且回傳單聲道音訊，支援拉丁美洲西班牙語與巴西葡萄牙語；`"pro"` 增加地區口音與立體聲音訊。選擇模型後會顯示 `video`、`target_language`、`source_language` 與 `seed`。 | DYNAMIC_COMBO | 是 | `"standard"`<br>`"pro"` |
 
 ### standard 輸入
 

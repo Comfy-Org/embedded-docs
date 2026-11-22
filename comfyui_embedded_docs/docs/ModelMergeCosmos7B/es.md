@@ -6,8 +6,8 @@ El nodo ModelMergeCosmos7B fusiona dos modelos de IA mediante una combinación p
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model1` | Primer modelo a fusionar | MODEL | Sí | - |
-| `model2` | Segundo modelo a fusionar | MODEL | Sí | - |
+| `modelo1` | Primer modelo a fusionar | MODEL | Sí | - |
+| `modelo2` | Segundo modelo a fusionar | MODEL | Sí | - |
 | `pos_embedder.` | Peso para el componente de embedding de posición (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `extra_pos_embedder.` | Peso para el componente de embedding de posición adicional (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `x_embedder.` | Peso para el componente de embedding de x (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |

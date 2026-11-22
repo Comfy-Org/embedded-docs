@@ -8,12 +8,12 @@
 
 | 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
 | --- | --- | --- | --- | --- |
-| `voice` | 用于朗读的 Breeze 音色，来自 Breeze Voice Selector 或任一 Breeze 音色创建节点。 | BREEZE_VOICE | 是 | - |
-| `text` | 要朗读的文本，1 到 1000 个字符。诸如 `(laughs)` 或 `(sighs)` 的音频标签会被表演出来，而不会被读出。默认：空。 | STRING | 是 | 1 到 1000 个字符 |
-| `language` | 文本的语言。英文和中文可以使用任一模型；其他语言则使用 Breeze TTS 2 Multilingual。音色在其自身语言中效果最佳，因此若要使用另一种语言，请使用通过 Breeze Voice Localize 制作的副本。 | DYNAMIC_COMBO | 是 | 提供多个选项 |
-| `delivery` | 台词的演绎方式：`neutral` 保持音色原样，`directed` 遵循书面指令。默认：`"neutral"`。 | DYNAMIC_COMBO | 是 | `"neutral"`<br>`"directed"` |
-| `speed` | 保持音高不变的语速倍率。默认：1.0。 | FLOAT | 否 | 0.5 到 2.0（步长：0.05） |
-| `seed` | 控制节点是否重新运行；无论种子为何，结果都是非确定性的。默认：42。 | INT | 否 | 0 到 2147483647 |
+| `语音` | 用于朗读的 Breeze 音色，来自 Breeze Voice Selector 或任一 Breeze 音色创建节点。 | BREEZE_VOICE | 是 | - |
+| `文本` | 要朗读的文本，1 到 1000 个字符。诸如 `(laughs)` 或 `(sighs)` 的音频标签会被表演出来，而不会被读出。默认：空。 | STRING | 是 | 1 到 1000 个字符 |
+| `语言` | 文本的语言。英文和中文可以使用任一模型；其他语言则使用 Breeze TTS 2 Multilingual。音色在其自身语言中效果最佳，因此若要使用另一种语言，请使用通过 Breeze Voice Localize 制作的副本。 | DYNAMIC_COMBO | 是 | 提供多个选项 |
+| `表达方式` | 台词的演绎方式：`neutral` 保持音色原样，`directed` 遵循书面指令。默认：`"neutral"`。 | DYNAMIC_COMBO | 是 | `"neutral"`<br>`"directed"` |
+| `速度` | 保持音高不变的语速倍率。默认：1.0。 | FLOAT | 否 | 0.5 到 2.0（步长：0.05） |
+| `种子` | 控制节点是否重新运行；无论种子为何，结果都是非确定性的。默认：42。 | INT | 否 | 0 到 2147483647 |
 
 ### 语言 "English" 与 "Chinese" 输入
 

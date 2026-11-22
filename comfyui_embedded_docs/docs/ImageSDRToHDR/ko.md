@@ -6,8 +6,8 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | HDR로 확장할 sRGB의 SDR 이미지입니다. | IMAGE | 예 | - |
-| `algorithm` | HDR 확장 알고리즘입니다. 알고리즘을 선택하면 해당 매개변수(`target_luminance`)가 나타납니다. | DYNAMIC_COMBO | 예 | `"lottes"` |
+| `이미지` | HDR로 확장할 sRGB의 SDR 이미지입니다. | IMAGE | 예 | - |
+| `알고리즘` | HDR 확장 알고리즘입니다. 알고리즘을 선택하면 해당 매개변수(`target_luminance`)가 나타납니다. | DYNAMIC_COMBO | 예 | `"lottes"` |
 
 ### lottes 입력
 

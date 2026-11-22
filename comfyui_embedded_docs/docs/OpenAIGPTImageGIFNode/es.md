@@ -10,7 +10,7 @@ OpenAI GPT Image 2.6 GIF genera un GIF animado a partir de un prompt con los mod
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo GPT Image que se utilizará para la animación. | DYNAMIC_COMBO | Sí | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
+| `modelo` | El modelo GPT Image que se utilizará para la animación. | DYNAMIC_COMBO | Sí | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
 
 ### Entradas de gpt-image-2.6-flare y gpt-image-2.6-sunburst
 
@@ -18,14 +18,14 @@ Ambos modelos comparten los mismos parámetros.
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Qué animar. (predeterminado: `""`) | STRING | Sí | N/A |
-| `model.size` | Tamaño de cada fotograma. Los tamaños más grandes solo admiten recuentos de fotogramas más bajos. (predeterminado: `"512x512"`) | COMBO | Sí | `"384x384"`<br>`"512x512"`<br>`"640x640"`<br>`"720x720"`<br>`"768x768"`<br>`"960x960"`<br>`"512x288"`<br>`"288x512"`<br>`"1024x576"`<br>`"576x1024"`<br>`"1280x720"`<br>`"720x1280"` |
-| `model.frame_count` | Número de fotogramas. Los fotogramas se facturan por pasos: 2 a 8, 9, 10 a 12, 13 a 16. (predeterminado: `9`) | INT | Sí | 2 a 16 |
-| `model.frame_duration_ms` | Cuánto tiempo se muestra cada fotograma, en milisegundos. (predeterminado: `200`) | INT | Sí | 20 a 2000 (paso 10) |
-| `model.background` | Fondo del fotograma. La transparencia se conserva con Save WEBM con vp9, Save Animated WEBP y Save Animated PNG. (predeterminado: `"opaque"`) | COMBO | Sí | `"opaque"`<br>`"transparent"` |
-| `model.quality` | Calidad de la imagen. Los niveles más altos cuestan más y tardan más. (predeterminado: `"low"`) | COMBO | Sí | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | Cuánto planifica el modelo la animación antes de renderizar. (predeterminado: `"high"`) | COMBO | Sí | `"low"`<br>`"medium"`<br>`"high"` |
-| `model.seed` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. (predeterminado: `42`) | INT | Sí | 0 a 2147483647 |
+| `prompt` | Qué animar. (predeterminado: `""`) | STRING | Sí | N/A |
+| `tamaño` | Tamaño de cada fotograma. Los tamaños más grandes solo admiten recuentos de fotogramas más bajos. (predeterminado: `"512x512"`) | COMBO | Sí | `"384x384"`<br>`"512x512"`<br>`"640x640"`<br>`"720x720"`<br>`"768x768"`<br>`"960x960"`<br>`"512x288"`<br>`"288x512"`<br>`"1024x576"`<br>`"576x1024"`<br>`"1280x720"`<br>`"720x1280"` |
+| `frame_count` | Número de fotogramas. Los fotogramas se facturan por pasos: 2 a 8, 9, 10 a 12, 13 a 16. (predeterminado: `9`) | INT | Sí | 2 a 16 |
+| `frame_duration_ms` | Cuánto tiempo se muestra cada fotograma, en milisegundos. (predeterminado: `200`) | INT | Sí | 20 a 2000 (paso 10) |
+| `fondo` | Fondo del fotograma. La transparencia se conserva con Save WEBM con vp9, Save Animated WEBP y Save Animated PNG. (predeterminado: `"opaque"`) | COMBO | Sí | `"opaque"`<br>`"transparent"` |
+| `calidad` | Calidad de la imagen. Los niveles más altos cuestan más y tardan más. (predeterminado: `"low"`) | COMBO | Sí | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `complejidad` | Cuánto planifica el modelo la animación antes de renderizar. (predeterminado: `"high"`) | COMBO | Sí | `"low"`<br>`"medium"`<br>`"high"` |
+| `semilla` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. (predeterminado: `42`) | INT | Sí | 0 a 2147483647 |
 
 **Restricciones y limitaciones de los parámetros:**
 

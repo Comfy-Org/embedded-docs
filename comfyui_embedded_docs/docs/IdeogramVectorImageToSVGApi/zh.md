@@ -6,7 +6,7 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的模型。默认值：`"ideogram-vector-1"`。 | DYNAMIC_COMBO | 是 | `"ideogram-vector-1"` |
+| `模型` | 要使用的模型。默认值：`"ideogram-vector-1"`。 | DYNAMIC_COMBO | 是 | `"ideogram-vector-1"` |
 | `image` | 要转换的图像。批量输入会逐张图像转换，生成的 SVG 会一并返回。 | IMAGE | 是 | - |
 | `mode` | `"simple"` 会描摹出更少、更大的形状；`"default"` 会保留更精细的细节。默认值：`"default"`。 | COMBO | 是 | `"simple"`<br>`"default"` |
 

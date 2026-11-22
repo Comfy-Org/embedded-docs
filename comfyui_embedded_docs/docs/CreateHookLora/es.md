@@ -6,10 +6,10 @@ El nodo **Create Hook LoRA** genera objetos de hook para aplicar modificaciones 
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `lora_name` | Nombre del archivo LoRA a cargar desde el directorio de loras | STRING | Sí | Múltiples opciones disponibles |
-| `strength_model` | Multiplicador de intensidad para ajustes del modelo (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
-| `strength_clip` | Multiplicador de intensidad para ajustes CLIP (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
-| `prev_hooks` | Grupo opcional de hooks existentes para combinar con los nuevos hooks LoRA | HOOKS | No | N/A |
+| `nombre_de_lora` | Nombre del archivo LoRA a cargar desde el directorio de loras | STRING | Sí | Múltiples opciones disponibles |
+| `fuerza_del_modelo` | Multiplicador de intensidad para ajustes del modelo (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
+| `fuerza_del_clip` | Multiplicador de intensidad para ajustes CLIP (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
+| `ganchos_anteriores` | Grupo opcional de hooks existentes para combinar con los nuevos hooks LoRA | HOOKS | No | N/A |
 
 **Restricciones de parámetros:**
 

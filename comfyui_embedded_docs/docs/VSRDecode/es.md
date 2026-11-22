@@ -7,9 +7,9 @@ VSR Decode convierte los latentes de fotograma clave de RelayVSR Conditioning de
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `vae` | El decodificador RelayVSR Flash, cargado con Load VAE: `relayvsr_flash_vae_x2_fp32.safetensors` o `relayvsr_flash_vae_x4_fp32.safetensors`. Los metadatos del archivo establecen el factor de escalado, por lo que debe coincidir con el modelo. | VAE | Sí | N/A |
-| `samples` | El latente devuelto por el muestreador, que contiene un fotograma por cada fotograma clave. | LATENT | Sí | N/A |
-| `images` | El mismo vídeo de baja calidad que se proporcionó a RelayVSR Conditioning. | IMAGE | Sí | N/A |
-| `detail` | Cuánto detalle del decodificador se conserva sobre el escalado bicúbico: 1 es la salida completa del modelo, 0 es el escalado simple. (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso 0.01) |
+| `muestras` | El latente devuelto por el muestreador, que contiene un fotograma por cada fotograma clave. | LATENT | Sí | N/A |
+| `imágenes` | El mismo vídeo de baja calidad que se proporcionó a RelayVSR Conditioning. | IMAGE | Sí | N/A |
+| `detalle` | Cuánto detalle del decodificador se conserva sobre el escalado bicúbico: 1 es la salida completa del modelo, 0 es el escalado simple. (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso 0.01) |
 
 ## Salidas
 

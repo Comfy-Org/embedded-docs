@@ -6,10 +6,10 @@ Este nodo toma una lista de teselas de imagen y las fusiona nuevamente en una so
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `image_list` | Una lista de teselas de imagen que se fusionarán. La primera tesela de la lista se utiliza para determinar las dimensiones de las teselas y el tipo de dato para todo el proceso. | IMAGE | Sí | N/A |
-| `final_width` | El ancho de la imagen fusionada final en píxeles (valor predeterminado: 1024). | INT | Sí | 64 - 32768 |
-| `final_height` | La altura de la imagen fusionada final en píxeles (valor predeterminado: 1024). | INT | Sí | 64 - 32768 |
-| `overlap` | La cantidad de superposición entre teselas adyacentes en píxeles. Un valor mayor que 0 permite un efecto de mezcla suave en las uniones de las teselas (valor predeterminado: 128). | INT | Sí | 0 - 4096 |
+| `lista_de_imágenes` | Una lista de teselas de imagen que se fusionarán. La primera tesela de la lista se utiliza para determinar las dimensiones de las teselas y el tipo de dato para todo el proceso. | IMAGE | Sí | N/A |
+| `ancho_final` | El ancho de la imagen fusionada final en píxeles (valor predeterminado: 1024). | INT | Sí | 64 - 32768 |
+| `alto_final` | La altura de la imagen fusionada final en píxeles (valor predeterminado: 1024). | INT | Sí | 64 - 32768 |
+| `superposición` | La cantidad de superposición entre teselas adyacentes en píxeles. Un valor mayor que 0 permite un efecto de mezcla suave en las uniones de las teselas (valor predeterminado: 128). | INT | Sí | 0 - 4096 |
 
 **Nota:** La `image_list` es una lista de entrada dinámica. El nodo procesará las teselas en el orden en que se proporcionen, hasta la cantidad necesaria para llenar la cuadrícula definida por `final_width`, `final_height` y las dimensiones de la primera tesela. Si la lista contiene más teselas de las necesarias, las teselas adicionales se ignoran.
 

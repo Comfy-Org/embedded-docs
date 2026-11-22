@@ -7,10 +7,10 @@ Construye un rig de cámaras alrededor del objetivo de la primera cámara: un pl
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `camera_info` | Primera cámara de la órbita. Una lista de cámaras orbita cada cámara que contiene. | LOAD3D_CAMERA | Sí | - |
-| `count` | Cámaras espaciadas de manera uniforme a lo largo del barrido. Predeterminado: 4. | INT | Sí | 1 a 64 |
+| `cantidad` | Cámaras espaciadas de manera uniforme a lo largo del barrido. Predeterminado: 4. | INT | Sí | 1 a 64 |
 | `yaw` | Giro total alrededor del objetivo, en la dirección de yaw de Create Camera Info. Las vueltas completas se detienen un paso antes de la primera cámara; los demás barridos terminan en la última cámara. Predeterminado: 360.0. | FLOAT | Sí | -720.0 a 720.0 (paso: 1.0) |
 | `pitch` | Inclinación total sobre el objetivo; los valores positivos ascienden como el pitch de Create Camera Info; más allá de 90, las cámaras pasan por encima. Las vueltas completas se repiten en bucle como `yaw`. Predeterminado: 0.0. | FLOAT | Sí | -720.0 a 720.0 (paso: 1.0) |
-| `poles` | Vistas directamente hacia abajo y/o hacia arriba del objetivo, añadidas después de la órbita. La parte superior de su imagen apunta en dirección opuesta a la primera cámara. Predeterminado: `"none"`. | COMBO | Sí | `"none"`<br>`"top"`<br>`"bottom"`<br>`"top and bottom"` |
+| `polos` | Vistas directamente hacia abajo y/o hacia arriba del objetivo, añadidas después de la órbita. La parte superior de su imagen apunta en dirección opuesta a la primera cámara. Predeterminado: `"none"`. | COMBO | Sí | `"none"`<br>`"top"`<br>`"bottom"`<br>`"top and bottom"` |
 
 ## Salidas
 

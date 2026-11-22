@@ -8,7 +8,7 @@
 
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用于视频生成的模型。选择模型后会显示其特定参数：`reference_images`、`reference_audios`、`prompt`、`aspect_ratio`、`resolution`、`duration`、`audio` 和 `seed`。 | DYNAMIC_COMBO | 是 | `"Vidu Q4 Preview"` |
+| `模型` | 用于视频生成的模型。选择模型后会显示其特定参数：`reference_images`、`reference_audios`、`prompt`、`aspect_ratio`、`resolution`、`duration`、`audio` 和 `seed`。 | DYNAMIC_COMBO | 是 | `"Vidu Q4 Preview"` |
 | `reference_images` | 可扩展槽位：连接一个或多个参考图像（`image_1`、`image_2`、……）用于生成的视频；一批中的每张图像都计入总数。在提示词中按顺序引用它们：image 1、image 2，依此类推。 | IMAGE | 是 | 最多 15 张图像 |
 | `reference_audios` | 可扩展槽位：连接可选的语音参考（`audio_1`、`audio_2`、`audio_3`），每个 3 到 12 秒。仅使用语音，不使用词语：在提示词中写入对话，并按顺序分配语音，例如 `image 1 says "Hello!" in the voice from audio 1`。需要启用 `audio`。 | AUDIO | 否 | 最多 3 个片段 |
 | `prompt` | 用于视频生成的文本描述，最多 5000 个字符。需要描述您想使用的参考。 | STRING | 是 | 任意文本 |

@@ -6,13 +6,13 @@ Elige una de tus propias opciones para el texto, las imágenes, el audio o el vi
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `model` | Modelo a utilizar. `heygen-decision-1-turbo` es más rápido y cuesta menos que `heygen-decision-1` (predeterminado: `"heygen-decision-1"`). | COMBO | Sí | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | La pregunta que responden las opciones, hasta 5000 caracteres (predeterminado: "What style is the image?"). | STRING | Sí | 1 a 5000 caracteres |
-| `options` | Una opción por línea, utilizada exactamente como se escribe, hasta 128 caracteres cada una. Añade una opción como `other` para entradas que no encajen en ninguna de ellas (predeterminado: `photo`, `illustration`, `3d render`, `anime`, `sketch`, `other`). | STRING | Sí | 2 a 255 opciones |
-| `images` | Imágenes a clasificar, hasta 4 en total, contando cada fotograma de un lote. Se numeran `image_1` a `image_4` en orden a través de los sockets. | IMAGE | No | Hasta 4 imágenes |
+| `modelo` | Modelo a utilizar. `heygen-decision-1-turbo` es más rápido y cuesta menos que `heygen-decision-1` (predeterminado: `"heygen-decision-1"`). | COMBO | Sí | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
+| `pregunta` | La pregunta que responden las opciones, hasta 5000 caracteres (predeterminado: "What style is the image?"). | STRING | Sí | 1 a 5000 caracteres |
+| `opciones` | Una opción por línea, utilizada exactamente como se escribe, hasta 128 caracteres cada una. Añade una opción como `other` para entradas que no encajen en ninguna de ellas (predeterminado: `photo`, `illustration`, `3d render`, `anime`, `sketch`, `other`). | STRING | Sí | 2 a 255 opciones |
+| `imágenes` | Imágenes a clasificar, hasta 4 en total, contando cada fotograma de un lote. Se numeran `image_1` a `image_4` en orden a través de los sockets. | IMAGE | No | Hasta 4 imágenes |
 | `audio_1` | Audio a clasificar, hasta 30 minutos. | AUDIO | No | Hasta 30 minutos |
 | `video_1` | Video a clasificar, hasta 60 segundos. | VIDEO | No | Hasta 60 segundos |
-| `text` | Texto sobre el que trata la pregunta, como un prompt o una respuesta de LLM, hasta 20000 caracteres. | STRING | No | Hasta 20000 caracteres |
+| `texto` | Texto sobre el que trata la pregunta, como un prompt o una respuesta de LLM, hasta 20000 caracteres. | STRING | No | Hasta 20000 caracteres |
 
 Proporciona de 2 a 255 opciones, ninguna repetida y ninguna que difiera solo en mayúsculas y minúsculas, o el nodo generará un error. Conecta al menos una entrada para clasificar y nómbralas por socket dentro de la pregunta, por ejemplo "¿Qué estación se muestra en image_1?".
 

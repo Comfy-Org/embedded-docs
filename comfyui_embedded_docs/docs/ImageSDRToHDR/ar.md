@@ -6,8 +6,8 @@
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `image` | صورة/صور SDR بتنسيق sRGB المراد توسيعها إلى HDR. | IMAGE | نعم | - |
-| `algorithm` | خوارزمية توسيع HDR. يؤدي اختيار خوارزمية إلى إظهار معاملاتها (`target_luminance`). | DYNAMIC_COMBO | نعم | `"lottes"` |
+| `الصورة` | صورة/صور SDR بتنسيق sRGB المراد توسيعها إلى HDR. | IMAGE | نعم | - |
+| `الخوارزمية` | خوارزمية توسيع HDR. يؤدي اختيار خوارزمية إلى إظهار معاملاتها (`target_luminance`). | DYNAMIC_COMBO | نعم | `"lottes"` |
 
 ### مدخلات lottes
 

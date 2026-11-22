@@ -6,8 +6,8 @@ El nodo ModelMergeLTXV fusiona dos modelos LTXV mezclando sus componentes corres
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model1` | El primer modelo a fusionar | MODEL | Sí | - |
-| `model2` | El segundo modelo a fusionar | MODEL | Sí | - |
+| `modelo1` | El primer modelo a fusionar | MODEL | Sí | - |
+| `modelo2` | El segundo modelo a fusionar | MODEL | Sí | - |
 | `patchify_proj.` | Peso de interpolación para las capas de proyección de patchify (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |
 | `adaln_single.` | Peso de interpolación para las capas individuales de normalización de capa adaptativa (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |
 | `caption_projection.` | Peso de interpolación para las capas de proyección de caption (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |

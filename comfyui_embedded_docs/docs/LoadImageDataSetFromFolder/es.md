@@ -6,7 +6,7 @@ Este nodo carga varias imágenes desde una subcarpeta seleccionada dentro del di
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `folder` | La carpeta desde la que se cargarán las imágenes. Las opciones son las subcarpetas presentes en el directorio de entrada principal de ComfyUI. | COMBO | Sí | Múltiples opciones disponibles |
+| `carpeta` | La carpeta desde la que se cargarán las imágenes. Las opciones son las subcarpetas presentes en el directorio de entrada principal de ComfyUI. | COMBO | Sí | Múltiples opciones disponibles |
 
 Nota: La carpeta seleccionada debe ser una subcarpeta del directorio de entrada principal de ComfyUI; cualquier valor que se resuelva fuera de él (por ejemplo, usando `..`, rutas absolutas, letras de unidad o enlaces simbólicos) se rechaza. Solo se cargan archivos con las extensiones .png, .jpg, .jpeg o .webp, y la comprobación de extensiones no distingue entre mayúsculas y minúsculas. Las imágenes cargadas se convierten a RGB y se escalan al rango 0-1. Si la carpeta seleccionada no contiene archivos de imagen válidos, el nodo genera un error. Este nodo está marcado como experimental.
 

@@ -6,7 +6,7 @@ Este nodo genera música a partir de una descripción de texto y letras opcional
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `mode` | Qué hace el nodo: `"text to music"` escribe una canción nueva, `"cover"` regraba una canción proporcionada. Cada modo muestra sus propias entradas a continuación. Predeterminado: `"text to music"`. | DYNAMIC_COMBO | Sí | `"text to music"`<br>`"cover"` |
+| `modo` | Qué hace el nodo: `"text to music"` escribe una canción nueva, `"cover"` regraba una canción proporcionada. Cada modo muestra sus propias entradas a continuación. Predeterminado: `"text to music"`. | DYNAMIC_COMBO | Sí | `"text to music"`<br>`"cover"` |
 
 ### Entradas de Text to Music
 

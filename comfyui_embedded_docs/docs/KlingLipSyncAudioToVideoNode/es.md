@@ -6,7 +6,7 @@ El nodo Kling Lip Sync Audio to Video sincroniza los movimientos de la boca en u
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `video` | El archivo de video que contiene un rostro al que se le sincronizarán los movimientos labiales | VIDEO | Sí | - |
+| `vídeo` | El archivo de video que contiene un rostro al que se le sincronizarán los movimientos labiales | VIDEO | Sí | - |
 | `audio` | El archivo de audio que contiene las voces para sincronizar con el video | AUDIO | Sí | - |
 | `idioma_de_voz` | El idioma de la voz en el archivo de audio (predeterminado: "en") | COMBO | Sí | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` |
 

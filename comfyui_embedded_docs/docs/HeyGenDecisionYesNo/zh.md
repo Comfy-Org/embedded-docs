@@ -6,13 +6,13 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的模型。`heygen-decision-1-turbo` 比 `heygen-decision-1` 更快且成本更低（默认：`"heygen-decision-1"`）。 | COMBO | 是 | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | 关于所连接内容的 yes/no 问题，最多 5000 个字符。提问时应使 "yes" 对应你希望采取行动的情况（默认："Is there a person in the image?"）。 | STRING | 是 | 1 到 5000 个字符 |
-| `threshold` | `result` 变为 true 所需的 "yes" 概率；明确的答案接近 0 或 1（默认：0.5）。 | FLOAT | 是 | 0.01 到 0.99（步长 0.01） |
-| `images` | 要询问的图像，总共最多 4 张，批次中的每一帧都计入。它们按各插槽的顺序依次编号为 `image_1` 到 `image_4`。 | IMAGE | 否 | 最多 4 张图像 |
+| `模型` | 要使用的模型。`heygen-decision-1-turbo` 比 `heygen-decision-1` 更快且成本更低（默认：`"heygen-decision-1"`）。 | COMBO | 是 | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
+| `问题` | 关于所连接内容的 yes/no 问题，最多 5000 个字符。提问时应使 "yes" 对应你希望采取行动的情况（默认："Is there a person in the image?"）。 | STRING | 是 | 1 到 5000 个字符 |
+| `阈值` | `result` 变为 true 所需的 "yes" 概率；明确的答案接近 0 或 1（默认：0.5）。 | FLOAT | 是 | 0.01 到 0.99（步长 0.01） |
+| `图像` | 要询问的图像，总共最多 4 张，批次中的每一帧都计入。它们按各插槽的顺序依次编号为 `image_1` 到 `image_4`。 | IMAGE | 否 | 最多 4 张图像 |
 | `audio_1` | 要询问的音频，最长 30 分钟。 | AUDIO | 否 | 最长 30 分钟 |
 | `video_1` | 要询问的视频，最长 60 秒。 | VIDEO | 否 | 最长 60 秒 |
-| `text` | 问题所针对的文本，例如提示词或 LLM 回复，最多 20000 个字符。 | STRING | 否 | 最多 20000 个字符 |
+| `文本` | 问题所针对的文本，例如提示词或 LLM 回复，最多 20000 个字符。 | STRING | 否 | 最多 20000 个字符 |
 
 至少连接 `text`、`images`、`audio_1` 或 `video_1` 中的一项，并在问题中用插槽名称引用它们，例如 "Does image_2 show the same person as image_1?"。
 

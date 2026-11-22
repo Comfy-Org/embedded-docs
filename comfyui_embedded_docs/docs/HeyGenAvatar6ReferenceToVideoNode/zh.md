@@ -8,7 +8,7 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 模型选择器；选择模型后会在下方显示其输入项。`"heygen-avatar-6-turbo"` 是更便宜、更快的档位。 | DYNAMIC_COMBO | 是 | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `模型` | 模型选择器；选择模型后会在下方显示其输入项。`"heygen-avatar-6-turbo"` 是更便宜、更快的档位。 | DYNAMIC_COMBO | 是 | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
 
 ### `heygen-avatar-6` 输入
 

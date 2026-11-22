@@ -8,7 +8,7 @@ Al seleccionar un `model`, se revelan los parámetros específicos de este: `aud
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `model` | Modelo a usar. `heygen-voice-1-turbo` es más rápido y cuesta menos (predeterminado: `"heygen-voice-1"`). | DYNAMIC_COMBO | Sí | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `modelo` | Modelo a usar. `heygen-voice-1-turbo` es más rápido y cuesta menos (predeterminado: `"heygen-voice-1"`). | DYNAMIC_COMBO | Sí | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `audio` | Grabación de un solo hablante para clonar. Use al menos 10 segundos de habla clara; solo se utilizan los primeros 3 minutos. | AUDIO | Sí | - |
 | `text` | Texto a reproducir, hasta 5000 caracteres. El habla que dure más de aproximadamente 12 minutos falla, así que divida el texto muy largo en chino o japonés (predeterminado: vacío). | STRING | Sí | 1 a 5000 caracteres |
 | `language` | Idioma del texto. Configúrelo para idiomas estrechamente relacionados, como el serbio o el malayo, que la detección automática puede confundir (predeterminado: `"auto"`). | COMBO | Sí | `"auto"`<br>Múltiples preajustes de idioma |

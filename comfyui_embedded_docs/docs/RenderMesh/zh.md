@@ -13,7 +13,7 @@
 | `背景` | 网格未覆盖像素所使用的背景颜色。（默认："#000000"） | COLOR | 是 | — |
 | `model_3d_info` | 来自同一 Load3D / Preview3D 查看器的模型变换。将其与 `camera_info` 连接以匹配查看器取景。 | LOAD3D_MODEL_INFO | 否 | — |
 | `camera_info` | 来自 Load3D / Preview3D 查看器或 Create Camera Info 节点的相机。如果未连接任何相机，则会自动为默认前视图取景。 相机列表会为每个相机渲染一张图像。 | LOAD3D_CAMERA | 否 | — |
-| `texture` | 用于替代网格自带的纹理，例如未接 Apply Texture to Mesh 的 Bake Texture From Views 输出。 | IMAGE | 否 | — |
+| `纹理` | 用于替代网格自带的纹理，例如未接 Apply Texture to Mesh 的 Bake Texture From Views 输出。 | IMAGE | 否 | — |
 
 注意：仅渲染批处理网格中的第一个项目——如果网格批次包含多个项目，该节点会记录警告并使用第一个项目。`texture` 模式要求网格同时具有纹理和 UV，而 `vertex colors` 模式要求顶点颜色；如果所选模式的数据不可用，节点会回退到 `solid` 着色渲染。`normal` 模式在存在平滑顶点法线时使用它们，否则使用逐面法线。在 `depth` 模式下，较近的表面显得更亮（近处 = 白色），未被网格覆盖的像素保持黑色。`model_3d_info` 和 `camera_info` 应从同一个 Load3D / Preview3D 查看器一起连接，以便渲染结果与查看器取景匹配。
 

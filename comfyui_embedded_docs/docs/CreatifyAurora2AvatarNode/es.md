@@ -6,11 +6,11 @@ Creatify Aurora 2.0 Avatar convierte una foto y un clip de voz o canción en un 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Foto de la persona que se va a animar. Al menos 256 píxeles por cada lado y una relación de aspecto entre 1:4 y 4:1; el vídeo mantiene la relación de aspecto de la foto. | IMAGE | Sí | - |
+| `imagen` | Foto de la persona que se va a animar. Al menos 256 píxeles por cada lado y una relación de aspecto entre 1:4 y 4:1; el vídeo mantiene la relación de aspecto de la foto. | IMAGE | Sí | - |
 | `audio` | Voz o canción que controla el movimiento de la boca y la duración del vídeo. Hasta 60 segundos, o 14 segundos en `"2k"`; se factura por segundo iniciado. | AUDIO | Sí | Hasta 60 segundos |
-| `resolution` | Resolución del vídeo de salida (predeterminado: `"720p"`). | COMBO | Sí | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"2k"` |
+| `resolución` | Resolución del vídeo de salida (predeterminado: `"720p"`). | COMBO | Sí | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"2k"` |
 | `text_prompt` | Escena, cámara, iluminación, expresión o movimiento para la toma. Si se deja vacío, la foto se mantiene tal como está (predeterminado: cadena vacía). | STRING | Sí | Texto cualquiera |
-| `seed` | La semilla controla si el nodo se vuelve a ejecutar. Los resultados no son deterministas independientemente de la semilla (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
+| `semilla` | La semilla controla si el nodo se vuelve a ejecutar. Los resultados no son deterministas independientemente de la semilla (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
 
 **Restricciones:** una foto con menos de 256 píxeles por lado, o con una relación de aspecto fuera de 1:4 a 4:1, genera un error. Se rechaza el audio que supere el límite para la resolución elegida: 60 segundos normalmente y 14 segundos en `"2k"`.
 

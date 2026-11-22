@@ -6,11 +6,11 @@
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `positive` | 待处理的主要正向条件输入 | CONDITIONING | 是 | - |
-| `negative` | 待处理的主要负向条件输入 | CONDITIONING | 是 | - |
-| `positive_DEFAULT` | 用作回退的默认正向条件值 | CONDITIONING | 是 | - |
-| `negative_DEFAULT` | 用作回退的默认负向条件值 | CONDITIONING | 是 | - |
-| `hooks` | 可选的自定义处理逻辑钩子组 | HOOKS | 否 | - |
+| `正面条件` | 待处理的主要正向条件输入 | CONDITIONING | 是 | - |
+| `负面条件` | 待处理的主要负向条件输入 | CONDITIONING | 是 | - |
+| `默认正面条件` | 用作回退的默认正向条件值 | CONDITIONING | 是 | - |
+| `默认负面条件` | 用作回退的默认负向条件值 | CONDITIONING | 是 | - |
+| `约束` | 可选的自定义处理逻辑钩子组 | HOOKS | 否 | - |
 
 ## 输出
 

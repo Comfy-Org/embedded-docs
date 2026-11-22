@@ -8,11 +8,11 @@ Este nodo codifica una o más imágenes de referencia y añade sus latentes al c
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `positive` | El condicionamiento positivo que se va a modificar con los latentes de referencia. | CONDITIONING | Sí | - |
-| `negative` | Condicionamiento negativo opcional que recibe los mismos latentes de referencia. Déjalo sin conectar para reutilizar el condicionamiento positivo modificado en la salida `negative`. | CONDITIONING | No | - |
+| `positivo` | El condicionamiento positivo que se va a modificar con los latentes de referencia. | CONDITIONING | Sí | - |
+| `negativo` | Condicionamiento negativo opcional que recibe los mismos latentes de referencia. Déjalo sin conectar para reutilizar el condicionamiento positivo modificado en la salida `negative`. | CONDITIONING | No | - |
 | `vae` | El VAE que se usa para codificar las imágenes de referencia conectadas. Cuando no hay ningún VAE conectado, las imágenes de referencia se ignoran. | VAE | No | - |
-| `resolution` | Cómo se prepara cada imagen de referencia antes de codificarla. `"keep resolution"` la codifica con su tamaño de entrada; `"resize"` la escala a una cantidad objetivo de megapíxeles mientras conserva la relación de aspecto, lo que revela `megapixels`. (predeterminado: "keep resolution") | DYNAMIC_COMBO | Sí | `"keep resolution"`<br>`"resize"` |
-| `images` | Ranura ampliable: conecta una o más imágenes de referencia (`image_1`, `image_2`, ...) para usarlas como referencias. Las imágenes se codifican en el orden de las ranuras y se añaden al condicionamiento en ese orden. | IMAGE | No | 1 a 100 |
+| `resolución` | Cómo se prepara cada imagen de referencia antes de codificarla. `"keep resolution"` la codifica con su tamaño de entrada; `"resize"` la escala a una cantidad objetivo de megapíxeles mientras conserva la relación de aspecto, lo que revela `megapixels`. (predeterminado: "keep resolution") | DYNAMIC_COMBO | Sí | `"keep resolution"`<br>`"resize"` |
+| `imágenes` | Ranura ampliable: conecta una o más imágenes de referencia (`image_1`, `image_2`, ...) para usarlas como referencias. Las imágenes se codifican en el orden de las ranuras y se añaden al condicionamiento en ese orden. | IMAGE | No | 1 a 100 |
 
 ### Entradas de redimensionado
 

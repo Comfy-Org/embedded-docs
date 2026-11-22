@@ -6,12 +6,12 @@ Genera imágenes a partir de texto con MiniMax H3 Image, o edita y combina hasta
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | `MiniMax-H3-Image`, o `MiniMax-H3-Image-Highspeed` para ejecuciones más rápidas. Predeterminado: `"MiniMax-H3-Image"`. | COMBO | Sí | `"MiniMax-H3-Image"`<br>`"MiniMax-H3-Image-Highspeed"` |
+| `modelo` | `MiniMax-H3-Image`, o `MiniMax-H3-Image-Highspeed` para ejecuciones más rápidas. Predeterminado: `"MiniMax-H3-Image"`. | COMBO | Sí | `"MiniMax-H3-Image"`<br>`"MiniMax-H3-Image-Highspeed"` |
 | `prompt` | Qué generar o cómo editar las referencias. Con imágenes de referencia conectadas, puede tener como máximo 8000 caracteres. Predeterminado: vacío. | STRING | Sí | 1 a 8000 caracteres |
-| `size` | `2K` y `4K` derivan el tamaño a partir de una relación de aspecto; `custom` establece un ancho y un alto exactos. Predeterminado: `"2K"`. | DYNAMIC_COMBO | Sí | `"2K"`<br>`"4K"`<br>`"custom"` |
+| `tamaño` | `2K` y `4K` derivan el tamaño a partir de una relación de aspecto; `custom` establece un ancho y un alto exactos. Predeterminado: `"2K"`. | DYNAMIC_COMBO | Sí | `"2K"`<br>`"4K"`<br>`"custom"` |
 | `enhance_prompt` | MiniMax reescribe el prompt como una descripción detallada de la escena antes de generar. Las ediciones de imagen siempre se mejoran. Cuando está desactivado, elige una relación de aspecto fija o un tamaño personalizado. Predeterminado: true. | BOOLEAN | No | true<br>false |
-| `seed` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 2147483647 |
-| `images` | Imágenes de referencia para editar o combinar, a las que se hace referencia en el prompt como `@Image1` a `@Image16` según el orden de conexión. | AUTOGROW | No | Hasta 16 imágenes |
+| `semilla` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 2147483647 |
+| `imágenes` | Imágenes de referencia para editar o combinar, a las que se hace referencia en el prompt como `@Image1` a `@Image16` según el orden de conexión. | AUTOGROW | No | Hasta 16 imágenes |
 
 ### Entradas de tamaño "2K" y "4K"
 

@@ -8,7 +8,7 @@ Recast reemplaza a las personas de un video con las personas de las fotos de ref
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo que se utilizará para la generación de video. | DYNAMIC_COMBO | Sí | "MiniMax H3 Max" |
+| `modelo` | Modelo que se utilizará para la generación de video. | DYNAMIC_COMBO | Sí | "MiniMax H3 Max" |
 
 ### Entradas de MiniMax H3 Max
 

@@ -6,9 +6,9 @@ El nodo Kling Omni Editar Video (Pro) utiliza un modelo de IA para editar un vid
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model_name` | El modelo de IA a utilizar para la edición de video (predeterminado: `"kling-v3-omni"`). | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` |
+| `nombre_del_modelo` | El modelo de IA a utilizar para la edición de video (predeterminado: `"kling-v3-omni"`). | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` |
 | `prompt` | Una descripción textual del contenido del video. Puede incluir tanto descripciones positivas como negativas. | STRING | Sí |  |
-| `video` | Video para editar. La duración del video de salida será la misma. | VIDEO | Sí |  |
+| `vídeo` | Video para editar. La duración del video de salida será la misma. | VIDEO | Sí |  |
 | `mantener_sonido_original` | Determina si se conserva el audio original del video de entrada en la salida (predeterminado: True). | BOOLEAN | Sí |  |
 | `imágenes_referencia` | Hasta 4 imágenes de referencia adicionales. | IMAGE | No |  |
 | `resolución` | La resolución del video de salida (predeterminado: `"1080p"`). | COMBO | No | `"1080p"`<br>`"720p"` |

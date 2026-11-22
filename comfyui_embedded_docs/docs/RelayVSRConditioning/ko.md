@@ -6,8 +6,8 @@ RelayVSR Conditioning은 RelayVSR 비디오 업스케일을 위한 컨디셔닝�
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `model` | RelayVSR 확산 모델로, Load Model을 통해 `relayvsr_x2_lightx2v_int8_convrot.safetensors` 또는 `relayvsr_x4_int8_convrot.safetensors`로 로드합니다. | MODEL | 예 | N/A |
-| `images` | 원본 해상도의 저품질 비디오입니다. 모델의 업스케일 배율에 따라 결과 크기가 결정됩니다. | IMAGE | 예 | N/A |
+| `모델` | RelayVSR 확산 모델로, Load Model을 통해 `relayvsr_x2_lightx2v_int8_convrot.safetensors` 또는 `relayvsr_x4_int8_convrot.safetensors`로 로드합니다. | MODEL | 예 | N/A |
+| `이미지` | 원본 해상도의 저품질 비디오입니다. 모델의 업스케일 배율에 따라 결과 크기가 결정됩니다. | IMAGE | 예 | N/A |
 
 ## 출력
 

@@ -14,7 +14,7 @@ El nodo HunyuanVideo15ImageToVideo prepara los datos de condicionamiento y del e
 | `longitud` | El número total de fotogramas en la secuencia de video. Los valores aumentan en pasos de 4 a partir de 1 (1, 5, 9, 13, ...). (por defecto: 33) | INT | Sí | 1 a MAX_RESOLUTION (paso: 4) |
 | `tamaño_de_lote` | El número de secuencias de video a generar en un solo lote. (por defecto: 1) | INT | Sí | 1 a 4096 |
 | `imagen_inicial` | Una imagen inicial opcional para inicializar la generación de video. Si se proporciona, se codifica y se utiliza para condicionar los primeros fotogramas. Solo se utilizan los primeros `length` fotogramas de la imagen. | IMAGE | No | - |
-| `clip_vision_output` | Embeddings de visión CLIP opcionales para proporcionar condicionamiento visual adicional para la generación. | CLIP_VISION_OUTPUT | No | - |
+| `salida_de_visión_clip` | Embeddings de visión CLIP opcionales para proporcionar condicionamiento visual adicional para la generación. | CLIP_VISION_OUTPUT | No | - |
 
 **Nota:** Cuando se proporciona una `start_image`, se redimensiona automáticamente para que coincida con los `width` y `height` especificados usando interpolación bilineal. Se utilizan los primeros `length` fotogramas del lote de imágenes, y solo se codifican los primeros 3 canales de color de cada fotograma. La imagen codificada se añade entonces tanto al condicionamiento `positive` como al `negative` como un `concat_latent_image` con una `concat_mask` correspondiente. La máscara se establece en 0.0 para los fotogramas cubiertos por la imagen inicial y en 1.0 para los fotogramas restantes. Cuando se proporciona un `clip_vision_output`, también se añade tanto al condicionamiento `positive` como al `negative`.
 

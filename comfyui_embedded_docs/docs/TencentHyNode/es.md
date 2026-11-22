@@ -6,7 +6,7 @@ Este nodo genera respuestas de texto con el modelo Hy4 de Tencent. Envía un men
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `model` | El modelo utilizado para generar la respuesta. Al seleccionarlo, se muestran sus entradas a continuación. Predeterminado: `"Hy4"`. | DYNAMIC_COMBO | Sí | `"Hy4"` |
+| `modelo` | El modelo utilizado para generar la respuesta. Al seleccionarlo, se muestran sus entradas a continuación. Predeterminado: `"Hy4"`. | DYNAMIC_COMBO | Sí | `"Hy4"` |
 
 ### Entradas de Hy4
 

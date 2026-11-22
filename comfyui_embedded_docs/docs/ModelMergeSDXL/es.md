@@ -6,8 +6,8 @@ El nodo ModelMergeSDXL te permite combinar dos modelos SDXL ajustando la influen
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model1` | El primer modelo SDXL a fusionar | MODEL | Sí | - |
-| `model2` | El segundo modelo SDXL a fusionar | MODEL | Sí | - |
+| `modelo1` | El primer modelo SDXL a fusionar | MODEL | Sí | - |
+| `modelo2` | El segundo modelo SDXL a fusionar | MODEL | Sí | - |
 | `time_embed.` | Peso de combinación para las capas de embedding de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `label_emb.` | Peso de combinación para las capas de embedding de etiquetas (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `input_blocks.0` | Peso de combinación para el bloque de entrada 0 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |

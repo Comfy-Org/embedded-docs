@@ -18,7 +18,7 @@ Genera modelos 3D de forma síncrona a partir de una sola imagen usando la API d
 | `alineación_de_textura` | Método de alineación para el mapeo de texturas. (predeterminado: `"original_image"`) | COMBO | No | `"original_image"`<br>`"geometry"` |
 | `límite_de_caras` | Cantidad máxima de caras. -1 permite que Tripo elija de forma adaptativa (aproximadamente 1,4M de caras en v3.x estándar, 2M en detallado). Tripo aplica límites silenciosamente: v2.5 a 500.000, mallas de cuadriláteros a 150.000. (predeterminado: -1) | INT | No | -1 a 2000000 |
 | `cuadrilátero` | Salida de malla de cuadriláteros. Tripo entrega las mallas de cuadriláteros como FBX, por lo que el resultado llega en la salida FBX y la salida GLB permanece vacía. (predeterminado: False) | BOOLEAN | No | True<br>False |
-| `geometry_quality` | Nivel de calidad para la generación de geometría. (predeterminado: `"standard"`) | COMBO | No | `"standard"`<br>`"detailed"` |
+| `calidad_de_geometría` | Nivel de calidad para la generación de geometría. (predeterminado: `"standard"`) | COMBO | No | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Malla de bajo poligonaje con topología limpia de estilo artesanal (500-20.000 caras, cuadriláteros 500-10.000). Mejor para sujetos simples; los complejos pueden fallar. (predeterminado: False) | BOOLEAN | No | True<br>False |
 | `auto_size` | Escala los modelos texturizados a su tamaño real en metros. Tripo almacena el tamaño como la transformación de escena del modelo y lo incorpora cuando el modelo se convierte, se le aplica rigging o retargeting; se ignora si no hay textura. (predeterminado: True) | BOOLEAN | No | True<br>False |
 

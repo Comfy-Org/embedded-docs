@@ -6,8 +6,8 @@ Este nodo fusiona un latent de video y un latent de audio en un único latent au
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `video_latent` | La representación latent de los datos de video. Cuando ya contiene tanto flujos de video como de audio, el nodo conserva su flujo de video y sustituye el audio proveniente de `audio_latent`. | LATENT | Sí |  |
-| `audio_latent` | La representación latent de los datos de audio. Su longitud se ajusta para adaptarse al flujo de video: el audio más largo se recorta, y el audio más corto se rellena con ceros. | LATENT | Sí |  |
+| `latente_de_vídeo` | La representación latent de los datos de video. Cuando ya contiene tanto flujos de video como de audio, el nodo conserva su flujo de video y sustituye el audio proveniente de `audio_latent`. | LATENT | Sí |  |
+| `latente_de_audio` | La representación latent de los datos de audio. Su longitud se ajusta para adaptarse al flujo de video: el audio más largo se recorta, y el audio más corto se rellena con ceros. | LATENT | Sí |  |
 
 **Nota:** Las muestras de ambas entradas se combinan como un par de flujos de video y audio en un tensor anidado. Si cualquiera de las entradas contiene un `noise_mask`, la salida incluye uno combinado; una máscara faltante se reemplaza con una máscara de todos unos que coincide con la forma de sus muestras. Cuando el audio más corto se rellena con ceros, la región rellenada se deja sin enmascarar para que el modelo pueda generarla. El nodo genera un error si el latent de audio no puede ajustarse al latent de video, por ejemplo, cuando los dos latents difieren en más de una dimensión o cuando difieren en las dimensiones de lote o de canal.
 

@@ -7,7 +7,7 @@ El nodo Veo3FirstLastFrameNode utiliza el modelo Veo 3 de Google para generar un
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `prompt` | Descripción textual del video (valor predeterminado: cadena vacía). | STRING | Sí | N/A |
-| `negative_prompt` | Prompt de texto negativo para guiar qué evitar en el video (valor predeterminado: cadena vacía). | STRING | No | N/A |
+| `prompt_negativo` | Prompt de texto negativo para guiar qué evitar en el video (valor predeterminado: cadena vacía). | STRING | No | N/A |
 | `resolución` | La resolución del video de salida. | COMBO | Sí | `"720p"`<br>`"1080p"`<br>`"4k"` |
 | `relación de aspecto` | Relación de aspecto del video de salida (valor predeterminado: "16:9"). | COMBO | No | `"16:9"`<br>`"9:16"` |
 | `duración` | Duración del video de salida en segundos (valor predeterminado: 8). | INT | No | 4 a 8 |

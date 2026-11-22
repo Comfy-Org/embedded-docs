@@ -6,8 +6,8 @@ El nodo `ModelMergeWAN2_1` fusiona dos modelos WAN2.1 combinando sus componentes
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model1` | Primer modelo a fusionar | MODEL | Sí | - |
-| `model2` | Segundo modelo a fusionar | MODEL | Sí | - |
+| `modelo1` | Primer modelo a fusionar | MODEL | Sí | - |
+| `modelo2` | Segundo modelo a fusionar | MODEL | Sí | - |
 | `patch_embedding.` | Peso para el componente de incrustación de parches (por defecto: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `time_embedding.` | Peso para el componente de incrustación de tiempo (por defecto: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `time_projection.` | Peso para el componente de proyección de tiempo (por defecto: 1.0) | FLOAT | Sí | 0.0 - 1.0 |

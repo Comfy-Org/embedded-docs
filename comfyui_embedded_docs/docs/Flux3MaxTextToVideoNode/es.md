@@ -7,12 +7,12 @@ FLUX 3 Max Text to Video genera un video con audio sincronizado a partir de un p
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Lo que debe mostrar el clip, en lenguaje sencillo. Describa el sonido ambiental, la música y la voz por separado para un audio por capas (predeterminado: vacío). | STRING | Sí | Texto multilínea |
-| `aspect_ratio` | Relación de aspecto de salida. `"auto"` es 16:9 para prompts de texto (predeterminado: `"auto"`). | COMBO | Sí | `"auto"`<br>`"21:9"`<br>`"2:1"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"` |
-| `duration` | Duración del clip en segundos (predeterminado: `"5"`). | COMBO | Sí | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"`<br>`"15"`<br>`"16"`<br>`"17"`<br>`"18"`<br>`"19"`<br>`"20"` |
-| `resolution` | Resolución de salida (predeterminado: `"720p"`). | COMBO | Sí | `"720p"`<br>`"1080p"` |
-| `reasoning_level` | Cuánto razona el modelo sobre el prompt y lo expande antes de generar. `"high"` tarda más; el precio es el mismo (predeterminado: `"high"`). | COMBO | Sí | `"low"`<br>`"high"` |
-| `generate_audio` | Generar audio sincronizado. Desactivado produce un video sin pista de audio (predeterminado: true). | BOOLEAN | Sí | `true`<br>`false` |
-| `seed` | Semilla que controla si el nodo se vuelve a ejecutar. Los resultados no son deterministas independientemente de este valor (predeterminado: 42). | INT | Sí | 0 a 2147483646 |
+| `relación de aspecto` | Relación de aspecto de salida. `"auto"` es 16:9 para prompts de texto (predeterminado: `"auto"`). | COMBO | Sí | `"auto"`<br>`"21:9"`<br>`"2:1"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"` |
+| `duración` | Duración del clip en segundos (predeterminado: `"5"`). | COMBO | Sí | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"`<br>`"15"`<br>`"16"`<br>`"17"`<br>`"18"`<br>`"19"`<br>`"20"` |
+| `resolución` | Resolución de salida (predeterminado: `"720p"`). | COMBO | Sí | `"720p"`<br>`"1080p"` |
+| `nivel de razonamiento` | Cuánto razona el modelo sobre el prompt y lo expande antes de generar. `"high"` tarda más; el precio es el mismo (predeterminado: `"high"`). | COMBO | Sí | `"low"`<br>`"high"` |
+| `generar audio` | Generar audio sincronizado. Desactivado produce un video sin pista de audio (predeterminado: true). | BOOLEAN | Sí | `true`<br>`false` |
+| `semilla` | Semilla que controla si el nodo se vuelve a ejecutar. Los resultados no son deterministas independientemente de este valor (predeterminado: 42). | INT | Sí | 0 a 2147483646 |
 
 Nota: `prompt` debe contener al menos un carácter. El precio mostrado se basa en `resolution` y `duration`: 720p se cobra a $0.060775 por segundo y 1080p a $0.103675 por segundo hasta el 7 de noviembre de 2026, y a $0.2431 y $0.4147 por segundo después de esa fecha. El costo total estimado del clip se muestra en la interfaz de usuario.
 

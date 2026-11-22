@@ -8,12 +8,12 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `voice` | 用於朗讀的 Breeze 聲音，來自 Breeze Voice Selector 或其中一個 Breeze 聲音建立節點。 | BREEZE_VOICE | 是 | - |
-| `text` | 要朗讀的文字，1 至 1000 個字元。音訊標籤如 `(laughs)` 或 `(sighs)` 會被演出而非朗讀。預設：空。 | STRING | 是 | 1 至 1000 個字元 |
-| `language` | 文字所用的語言。英文與中文可使用任一模型；其他語言則使用 Breeze TTS 2 Multilingual。聲音在其自身語言中聽起來最好，因此若要使用其他語言，請使用以 Breeze Voice Localize 製作的副本。 | DYNAMIC_COMBO | 是 | 提供多個選項 |
-| `delivery` | 這句台詞的演出方式：`neutral` 保持聲音原樣，`directed` 依照書面指示。預設：`"neutral"`。 | DYNAMIC_COMBO | 是 | `"neutral"`<br>`"directed"` |
-| `speed` | 速度倍率，不會改變音高。預設：1.0。 | FLOAT | 否 | 0.5 至 2.0（步進值：0.05） |
-| `seed` | 控制節點是否重新執行；無論種子為何，結果都是非確定性的。預設：42。 | INT | 否 | 0 至 2147483647 |
+| `語音` | 用於朗讀的 Breeze 聲音，來自 Breeze Voice Selector 或其中一個 Breeze 聲音建立節點。 | BREEZE_VOICE | 是 | - |
+| `文字` | 要朗讀的文字，1 至 1000 個字元。音訊標籤如 `(laughs)` 或 `(sighs)` 會被演出而非朗讀。預設：空。 | STRING | 是 | 1 至 1000 個字元 |
+| `語言` | 文字所用的語言。英文與中文可使用任一模型；其他語言則使用 Breeze TTS 2 Multilingual。聲音在其自身語言中聽起來最好，因此若要使用其他語言，請使用以 Breeze Voice Localize 製作的副本。 | DYNAMIC_COMBO | 是 | 提供多個選項 |
+| `表達方式` | 這句台詞的演出方式：`neutral` 保持聲音原樣，`directed` 依照書面指示。預設：`"neutral"`。 | DYNAMIC_COMBO | 是 | `"neutral"`<br>`"directed"` |
+| `速度` | 速度倍率，不會改變音高。預設：1.0。 | FLOAT | 否 | 0.5 至 2.0（步進值：0.05） |
+| `種子` | 控制節點是否重新執行；無論種子為何，結果都是非確定性的。預設：42。 | INT | 否 | 0 至 2147483647 |
 
 ### Language "English" and "Chinese" 輸入
 

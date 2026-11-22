@@ -10,7 +10,7 @@ OpenAI GPT Image 2.6은 OpenAI의 GPT Image 모델을 사용하여 프롬프트�
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `model` | 사용할 GPT Image 모델입니다. 모델을 선택하면 해당 모델의 매개변수가 표시됩니다. | DYNAMIC_COMBO | 예 | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"`<br>`"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"` |
+| `모델` | 사용할 GPT Image 모델입니다. 모델을 선택하면 해당 모델의 매개변수가 표시됩니다. | DYNAMIC_COMBO | 예 | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"`<br>`"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"` |
 
 ### gpt-image-2.6-flare 및 gpt-image-2.6-sunburst 입력
 
@@ -18,17 +18,17 @@ OpenAI GPT Image 2.6은 OpenAI의 GPT Image 모델을 사용하여 프롬프트�
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | 생성할 내용 또는 수행할 편집입니다. (기본값: `""`) | STRING | 예 | N/A |
-| `model.size` | 이미지 크기입니다. 사용자 지정 너비와 높이를 사용하려면 "Custom"을 선택합니다. (기본값: `"auto"`) | COMBO | 예 | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
-| `model.custom_width` | `model.size`가 "Custom"인 경우에만 사용됩니다. 16의 배수여야 합니다. (기본값: `1024`) | INT | 아니요 | 480 ~ 3840 (단계: 16) |
-| `model.custom_height` | `model.size`가 "Custom"인 경우에만 사용됩니다. 16의 배수여야 합니다. (기본값: `1024`) | INT | 아니요 | 480 ~ 3840 (단계: 16) |
-| `model.background` | 배경이 포함된 이미지 또는 배경이 없는 이미지를 반환합니다. (기본값: `"auto"`) | COMBO | 예 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
-| `model.quality` | 이미지 품질입니다. 수준이 높을수록 비용이 더 많이 들고 시간이 더 오래 걸립니다. (기본값: `"low"`) | COMBO | 예 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | 모델이 렌더링하기 전에 이미지를 얼마나 계획하는지를 나타냅니다. (기본값: `"high"`) | COMBO | 예 | `"low"`<br>`"medium"`<br>`"high"` |
+| `프롬프트` | 생성할 내용 또는 수행할 편집입니다. (기본값: `""`) | STRING | 예 | N/A |
+| `크기` | 이미지 크기입니다. 사용자 지정 너비와 높이를 사용하려면 "Custom"을 선택합니다. (기본값: `"auto"`) | COMBO | 예 | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `custom_width` | `model.size`가 "Custom"인 경우에만 사용됩니다. 16의 배수여야 합니다. (기본값: `1024`) | INT | 아니요 | 480 ~ 3840 (단계: 16) |
+| `custom_height` | `model.size`가 "Custom"인 경우에만 사용됩니다. 16의 배수여야 합니다. (기본값: `1024`) | INT | 아니요 | 480 ~ 3840 (단계: 16) |
+| `배경` | 배경이 포함된 이미지 또는 배경이 없는 이미지를 반환합니다. (기본값: `"auto"`) | COMBO | 예 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `품질` | 이미지 품질입니다. 수준이 높을수록 비용이 더 많이 들고 시간이 더 오래 걸립니다. (기본값: `"low"`) | COMBO | 예 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `복잡도` | 모델이 렌더링하기 전에 이미지를 얼마나 계획하는지를 나타냅니다. (기본값: `"high"`) | COMBO | 예 | `"low"`<br>`"medium"`<br>`"high"` |
 | `model.images` | 편집을 위한 선택적 참조 이미지입니다. 최대 16개입니다. | AUTOGROW | 아니요 | 0 ~ 16 |
 | `model.markup` | 첫 번째 참조 이미지 위에 그린 주석으로, 편집할 위치를 표시합니다. 해당 이미지의 크기와 일치해야 하며, `model.markup_alpha`와 함께 연결해야 합니다. | IMAGE | 아니요 | N/A |
 | `model.markup_alpha` | 흰색 부분은 `model.markup`의 주석을 표시합니다. Painter 노드의 MASK 출력은 바로 사용할 수 있으며, Load Image 마스크는 먼저 Invert Mask를 적용해야 합니다. | MASK | 아니요 | N/A |
-| `model.seed` | 노드의 재실행 여부를 제어합니다. 시드와 관계없이 결과는 비결정적입니다. (기본값: `42`) | INT | 예 | 0 ~ 2147483647 |
+| `시드` | 노드의 재실행 여부를 제어합니다. 시드와 관계없이 결과는 비결정적입니다. (기본값: `42`) | INT | 예 | 0 ~ 2147483647 |
 
 ### gpt-image-2.5-flare 및 gpt-image-2.5-sunburst 입력
 
@@ -36,16 +36,16 @@ OpenAI GPT Image 2.6은 OpenAI의 GPT Image 모델을 사용하여 프롬프트�
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | 생성할 내용 또는 수행할 편집입니다. (기본값: `""`) | STRING | 예 | N/A |
-| `model.size` | 이미지 크기입니다. 사용자 지정 너비와 높이를 사용하려면 "Custom"을 선택합니다. (기본값: `"auto"`) | COMBO | 예 | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
-| `model.custom_width` | `model.size`가 "Custom"인 경우에만 사용됩니다. 16의 배수여야 합니다. (기본값: `1024`) | INT | 아니요 | 480 ~ 3840 (단계: 16) |
-| `model.custom_height` | `model.size`가 "Custom"인 경우에만 사용됩니다. 16의 배수여야 합니다. (기본값: `1024`) | INT | 아니요 | 480 ~ 3840 (단계: 16) |
-| `model.background` | 배경이 포함된 이미지 또는 배경이 없는 이미지를 반환합니다. (기본값: `"auto"`) | COMBO | 예 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
-| `model.quality` | 이미지 품질입니다. 수준이 높을수록 비용이 더 많이 들고 시간이 더 오래 걸립니다. (기본값: `"low"`) | COMBO | 예 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `프롬프트` | 생성할 내용 또는 수행할 편집입니다. (기본값: `""`) | STRING | 예 | N/A |
+| `크기` | 이미지 크기입니다. 사용자 지정 너비와 높이를 사용하려면 "Custom"을 선택합니다. (기본값: `"auto"`) | COMBO | 예 | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `custom_width` | `model.size`가 "Custom"인 경우에만 사용됩니다. 16의 배수여야 합니다. (기본값: `1024`) | INT | 아니요 | 480 ~ 3840 (단계: 16) |
+| `custom_height` | `model.size`가 "Custom"인 경우에만 사용됩니다. 16의 배수여야 합니다. (기본값: `1024`) | INT | 아니요 | 480 ~ 3840 (단계: 16) |
+| `배경` | 배경이 포함된 이미지 또는 배경이 없는 이미지를 반환합니다. (기본값: `"auto"`) | COMBO | 예 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `품질` | 이미지 품질입니다. 수준이 높을수록 비용이 더 많이 들고 시간이 더 오래 걸립니다. (기본값: `"low"`) | COMBO | 예 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 | `model.images` | 편집을 위한 선택적 참조 이미지입니다. 최대 16개입니다. | AUTOGROW | 아니요 | 0 ~ 16 |
 | `model.markup` | 첫 번째 참조 이미지 위에 그린 주석으로, 편집할 위치를 표시합니다. 해당 이미지의 크기와 일치해야 하며, `model.markup_alpha`와 함께 연결해야 합니다. | IMAGE | 아니요 | N/A |
 | `model.markup_alpha` | 흰색 부분은 `model.markup`의 주석을 표시합니다. Painter 노드의 MASK 출력은 바로 사용할 수 있으며, Load Image 마스크는 먼저 Invert Mask를 적용해야 합니다. | MASK | 아니요 | N/A |
-| `model.seed` | 노드의 재실행 여부를 제어합니다. 시드와 관계없이 결과는 비결정적입니다. (기본값: `42`) | INT | 예 | 0 ~ 2147483647 |
+| `시드` | 노드의 재실행 여부를 제어합니다. 시드와 관계없이 결과는 비결정적입니다. (기본값: `42`) | INT | 예 | 0 ~ 2147483647 |
 
 **매개변수 제약 및 제한 사항:**
 

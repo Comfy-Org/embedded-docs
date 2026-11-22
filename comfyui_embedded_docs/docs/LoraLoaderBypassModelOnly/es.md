@@ -6,9 +6,9 @@ Este nodo aplica una LoRA (Adaptación de Bajo Rango) a un modelo para modificar
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo base al que se aplicarán los ajustes de LoRA. | MODEL | Sí | - |
-| `lora_name` | El nombre del archivo LoRA a cargar y aplicar. Las opciones se obtienen de los archivos en el directorio `loras`. | STRING | Sí | (Lista de archivos LoRA disponibles) |
-| `strength_model` | La intensidad del efecto de LoRA sobre los pesos del modelo. Un valor positivo aplica la LoRA, un valor negativo aplica la inversa y un valor de 0 no tiene efecto (valor predeterminado: 1.0). | FLOAT | Sí | -100.0 a 100.0 |
+| `modelo` | El modelo base al que se aplicarán los ajustes de LoRA. | MODEL | Sí | - |
+| `nombre_de_lora` | El nombre del archivo LoRA a cargar y aplicar. Las opciones se obtienen de los archivos en el directorio `loras`. | STRING | Sí | (Lista de archivos LoRA disponibles) |
+| `fuerza_del_modelo` | La intensidad del efecto de LoRA sobre los pesos del modelo. Un valor positivo aplica la LoRA, un valor negativo aplica la inversa y un valor de 0 no tiene efecto (valor predeterminado: 1.0). | FLOAT | Sí | -100.0 a 100.0 |
 
 ## Salidas
 

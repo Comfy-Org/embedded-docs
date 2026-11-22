@@ -7,7 +7,7 @@ Pinta imágenes basándose en una máscara y un mensaje de texto. Este nodo util
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `imagen` | La imagen de entrada que se va a pintar | IMAGE | Sí | - |
-| `mask` | La máscara que define qué áreas de la imagen deben rellenarse | MASK | Sí | - |
+| `máscara` | La máscara que define qué áreas de la imagen deben rellenarse | MASK | Sí | - |
 | `prompt` | Mensaje de texto para la generación de la imagen (predeterminado: cadena vacía) | STRING | No | - |
 | `re-muestreo de prompt` | Si se debe realizar un sobremuestreo en el mensaje de texto. Si está activo, modifica automáticamente el mensaje para una generación más creativa, pero los resultados no son deterministas (la misma semilla no producirá exactamente el mismo resultado). (predeterminado: false) | BOOLEAN | No | - |
 | `guía` | Intensidad de guía para el proceso de generación de la imagen (predeterminado: 60) | FLOAT | No | 1.5-100 |

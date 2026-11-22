@@ -6,10 +6,10 @@ El nodo **Combinar Ganchos [4]** fusiona hasta cuatro grupos de ganchos separado
 
 | Parámetro | Descripción | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango |
 | --- | --- | --- | --- | --- | --- |
-| `hooks_A` | Primer grupo de ganchos a combinar | HOOKS | opcional | None | - |
-| `hooks_B` | Segundo grupo de ganchos a combinar | HOOKS | opcional | None | - |
-| `hooks_C` | Tercer grupo de ganchos a combinar | HOOKS | opcional | None | - |
-| `hooks_D` | Cuarto grupo de ganchos a combinar | HOOKS | opcional | None | - |
+| `ganchos_A` | Primer grupo de ganchos a combinar | HOOKS | opcional | None | - |
+| `ganchos_B` | Segundo grupo de ganchos a combinar | HOOKS | opcional | None | - |
+| `ganchos_C` | Tercer grupo de ganchos a combinar | HOOKS | opcional | None | - |
+| `ganchos_D` | Cuarto grupo de ganchos a combinar | HOOKS | opcional | None | - |
 
 **Nota:** Las cuatro entradas de ganchos son opcionales. El nodo combinará únicamente los grupos de ganchos que se proporcionen y devolverá un grupo de ganchos vacío si no hay entradas conectadas.
 

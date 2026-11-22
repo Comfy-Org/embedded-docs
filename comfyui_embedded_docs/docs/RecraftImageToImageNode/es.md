@@ -11,9 +11,9 @@ Este nodo modifica una imagen existente a partir de un prompt de texto y un ajus
 | `n` | El número de imágenes a generar. Predeterminado: 1. | INT | Sí | 1-6 |
 | `intensidad` | Define la diferencia con la imagen original; debe estar en [0, 1], donde 0 significa casi idéntica y 1 significa una similitud muy baja. Predeterminado: 0.5. | FLOAT | Sí | 0.0-1.0 (paso: 0.01) |
 | `semilla` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla. Predeterminado: 0. | INT | Sí | 0-18446744073709551615 |
-| `recraft_style` | Selección opcional de estilo para la generación de la imagen. Si no se proporciona, se usa `realistic_image` de forma predeterminada. | STYLEV3 | No | - |
-| `negative_prompt` | Descripción de texto opcional de elementos no deseados en una imagen. Predeterminado: cadena vacía. Se proporciona como un conector de entrada. | STRING | No | - |
-| `recraft_controls` | Controles adicionales opcionales sobre la generación mediante el nodo Recraft Controls. | CONTROLS | No | - |
+| `estilo_recraft` | Selección opcional de estilo para la generación de la imagen. Si no se proporciona, se usa `realistic_image` de forma predeterminada. | STYLEV3 | No | - |
+| `prompt_negativo` | Descripción de texto opcional de elementos no deseados en una imagen. Predeterminado: cadena vacía. Se proporciona como un conector de entrada. | STRING | No | - |
+| `controles_recraft` | Controles adicionales opcionales sobre la generación mediante el nodo Recraft Controls. | CONTROLS | No | - |
 
 **Nota:** El parámetro `seed` solo activa la reejecución del nodo, pero no garantiza resultados deterministas. El parámetro `strength` se redondea a 2 decimales internamente. El `prompt` se valida y no debe superar los 1000 caracteres. Un `negative_prompt` vacío se trata como si no hubiera un prompt negativo. Si no se proporciona `recraft_style`, el nodo usa el estilo `realistic_image` de forma predeterminada. Si usas un `style_id` de la Infinite Style Library, asegúrate de que no sea un estilo de arte vectorial, ya que esto puede hacer que el nodo reciba datos SVG en lugar de una imagen, lo que provocaría un error. Cuando la `image` de entrada es un lote, cada imagen del lote se procesa individualmente y todos los resultados se devuelven juntos.
 

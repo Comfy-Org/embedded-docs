@@ -8,8 +8,8 @@
 
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 生成视频的起始帧。宽高比必须在 1:5 到 5:1 之间。 | IMAGE | 是 | N/A |
-| `model` | 用于视频生成的模型。选择模型会显示其特定参数：`prompt`、`resolution`、`duration`、`audio` 和 `seed`。 | DYNAMIC_COMBO | 是 | `"Vidu Q4 Preview"` |
+| `图像` | 生成视频的起始帧。宽高比必须在 1:5 到 5:1 之间。 | IMAGE | 是 | N/A |
+| `模型` | 用于视频生成的模型。选择模型会显示其特定参数：`prompt`、`resolution`、`duration`、`audio` 和 `seed`。 | DYNAMIC_COMBO | 是 | `"Vidu Q4 Preview"` |
 | `prompt` | 用于视频生成的可选文本提示词，最多 5000 个字符（默认：空）。 | STRING | 是 | 任意文本 |
 | `resolution` | 输出视频的分辨率（默认：`"720p"`）。 | COMBO | 是 | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"2K"`<br>`"4K"` |
 | `duration` | 输出视频的时长（秒）（默认：5）。 | INT | 是 | 3 到 16 |

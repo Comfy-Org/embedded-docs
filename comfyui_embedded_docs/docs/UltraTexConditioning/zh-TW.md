@@ -6,13 +6,13 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `conditioning` | 文字條件。UltraTex 是以空提示詞訓練的。 | CONDITIONING | 是 | - |
+| `條件設定` | 文字條件。UltraTex 是以空提示詞訓練的。 | CONDITIONING | 是 | - |
 | `vae` | 用於編碼法線、視圖和參考的 VAE。 | VAE | 是 | - |
-| `normals` | Render Mesh `world normal` 影像：6 個標準視圖，或 4 個側面視圖。 | IMAGE | 是 | - |
-| `masks` | 相同視圖的 Render Mesh 遮罩，每個視圖一個。 | MASK | 是 | - |
-| `reference` | 物件應呈現的外觀，從前方相機側所見。 | IMAGE | 是 | - |
-| `reference_mask` | 參考的物件遮罩，物件部分為白色。預設：全白。 | MASK | 否 | - |
-| `extra_views` | 更多參考：從其他視圖看到的物件，每個都與其視圖綁定，就像參考與前方綁定一樣。預設：`"off"`。 | DYNAMIC_COMBO | 是 | `"off"`<br>`"on"` |
+| `法線` | Render Mesh `world normal` 影像：6 個標準視圖，或 4 個側面視圖。 | IMAGE | 是 | - |
+| `遮罩` | 相同視圖的 Render Mesh 遮罩，每個視圖一個。 | MASK | 是 | - |
+| `參考影像` | 物件應呈現的外觀，從前方相機側所見。 | IMAGE | 是 | - |
+| `參考遮罩` | 參考的物件遮罩，物件部分為白色。預設：全白。 | MASK | 否 | - |
+| `額外視角` | 更多參考：從其他視圖看到的物件，每個都與其視圖綁定，就像參考與前方綁定一樣。預設：`"off"`。 | DYNAMIC_COMBO | 是 | `"off"`<br>`"on"` |
 
 ### 額外視圖「on」輸入
 

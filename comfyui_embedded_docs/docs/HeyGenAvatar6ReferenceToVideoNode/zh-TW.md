@@ -8,7 +8,7 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 模型選擇器；選取模型後，下方會顯示該模型的輸入項。`"heygen-avatar-6-turbo"` 是較便宜、較快速的等級。 | DYNAMIC_COMBO | 是 | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `模型` | 模型選擇器；選取模型後，下方會顯示該模型的輸入項。`"heygen-avatar-6-turbo"` 是較便宜、較快速的等級。 | DYNAMIC_COMBO | 是 | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
 
 ### `heygen-avatar-6` 輸入
 

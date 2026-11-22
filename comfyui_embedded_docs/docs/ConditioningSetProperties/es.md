@@ -6,7 +6,7 @@ El nodo ConditioningSetProperties modifica las propiedades de los datos de condi
 
 | Parámetro | Descripción | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango |
 | --- | --- | --- | --- | --- | --- |
-| `cond_NEW` | Los datos de condicionamiento a modificar | CONDITIONING | Requerido | - | - |
+| `cond_NUEVO` | Los datos de condicionamiento a modificar | CONDITIONING | Requerido | - | - |
 | `fuerza` | Controla la intensidad del efecto de condicionamiento | FLOAT | Requerido | 1.0 | 0.0 - 10.0 (paso: 0.01) |
 | `establecer_area_cond` | Determina cómo se aplica el área de condicionamiento. Seleccione "default" para el comportamiento estándar o "mask bounds" para restringir al área de la máscara | STRING | Requerido | default | ["default", "mask bounds"] |
 | `máscara` | Máscara opcional para restringir dónde se aplica el condicionamiento | MASK | Opcional | - | - |
