@@ -6,7 +6,7 @@ Prepare el condicionamiento de SenseNova para la generación de imágenes o para
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `clip` | Modelo CLIP de SenseNova. Conecte el cargador CLIP que también alimenta a CLIP Text Encode; la salida del codificador va a `conditioning`. Obligatorio para todas las tareas excepto cuando el condicionamiento entrante ya está finalizado. | CLIP | No | - |
+| `clip` | Modelo CLIP de SenseNova. Conecte el cargador CLIP que también alimenta a CLIP Text Encode; la salida del codificador va a `conditioning`. Obligatorio para todas las tareas excepto cuando el condicionamiento entrante está vacío o ya está finalizado. | CLIP | No | - |
 | `condicionamiento` | Condicionamiento de texto de SenseNova desde CLIP Text Encode. | CONDITIONING | Sí | - |
 | `negativo` | Condicionamiento negativo opcional. Se actualiza y se devuelve para las tareas `interleave` y `self-correction`. | CONDITIONING | No | - |
 | `tarea` | Tarea que se va a ejecutar. `"image"` codifica el prompt para un sampler estándar, `"image thinking"` permite que el modelo piense antes de responder, `"interleave"` produce texto e imágenes en una sola pasada, y `"self-correction"` permite que el modelo corrija su propia salida anterior. | DYNAMIC_COMBO | Sí | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
@@ -31,7 +31,7 @@ Estas entradas aparecen cuando `task` se establece en `"self-correction"`.
 
 **Restricciones y comportamiento:**
 
-* La entrada `clip` recibe el modelo CLIP de SenseNova, no la salida de CLIP Text Encode (que es `CONDITIONING`). El nodo da error si `clip` falta (salvo que el condicionamiento entrante ya esté finalizado) o no es un CLIP de SenseNova.
+* La entrada `clip` recibe el modelo CLIP de SenseNova, no la salida de CLIP Text Encode (que es `CONDITIONING`). Cuando el condicionamiento entrante está vacío o ya finalizado, el nodo devuelve el resultado sin usar `clip`; en caso contrario, que falte `clip` o que no sea un CLIP de SenseNova es un error.
 * `"image thinking"` necesita exactamente una entrada de condicionamiento positiva; `"interleave"` y `"self-correction"` necesitan una entrada positiva y una negativa.
 * Cuando el modelo esté esperando una imagen, conecte la salida LATENT del sampler anterior a `samples`. Pasar `samples` antes de que se solicite una imagen es un error.
 * Cuando el condicionamiento entrante ya está finalizado, el nodo lo devuelve sin cambios con `generated_text` vacío y `image_requested` establecido en False.

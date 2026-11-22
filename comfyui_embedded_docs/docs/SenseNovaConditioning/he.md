@@ -6,7 +6,7 @@
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `clip` | מודל SenseNova CLIP. חברו את טוען ה-CLIP שמזין גם את CLIP Text Encode; פלט המקודד עובר ל-`conditioning`. נדרש לכל משימה למעט כאשר הקונדישנינג הנכנס כבר הושלם. | CLIP | לא | - |
+| `clip` | מודל SenseNova CLIP. חברו את טוען ה-CLIP שמזין גם את CLIP Text Encode; פלט המקודד עובר ל-`conditioning`. נדרש לכל משימה למעט כאשר הקונדישנינג הנכנס ריק או כבר הושלם. | CLIP | לא | - |
 | `התניה` | קונדישנינג טקסט של SenseNova מ-CLIP Text Encode. | CONDITIONING | כן | - |
 | `שלילי` | קונדישנינג שלילי אופציונלי. מתעדכן ומוחזר עבור המשימות `interleave` ו-`self-correction`. | CONDITIONING | לא | - |
 | `משימה` | המשימה להרצה. `"image"` מקודד את הפרומפט עבור סמפלר סטנדרטי, `"image thinking"` מאפשר למודל לחשוב לפני שהוא עונה, `"interleave"` מפיק טקסט ותמונות במעבר אחד, ו-`"self-correction"` מאפשר למודל לתקן את הפלט הקודם שלו. | DYNAMIC_COMBO | כן | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
@@ -31,7 +31,7 @@
 
 **אילוצים והתנהגות:**
 
-* קלט ה-`clip` מקבל את מודל SenseNova CLIP עצמו, ולא את פלט CLIP Text Encode (שהוא `CONDITIONING`). הצומת מחזיר שגיאה אם `clip` חסר (למעט כאשר הקונדישנינג הנכנס כבר הושלם) או שאינו SenseNova CLIP.
+* קלט ה-`clip` מקבל את מודל SenseNova CLIP עצמו, ולא את פלט CLIP Text Encode (שהוא `CONDITIONING`). כאשר הקונדישנינג הנכנס ריק או כבר הושלם הצומת חוזר מוקדם בלי להשתמש ב-`clip`; אחרת, `clip` חסר או כזה שאינו SenseNova CLIP הוא שגיאה.
 * `"image thinking"` זקוק לרשומת קונדישנינג חיובית אחת בדיוק; `"interleave"` ו-`"self-correction"` זקוקים לרשומה חיובית אחת ושלילית אחת.
 * כאשר המודל ממתין לתמונה, חבר את פלט ה-LATENT של הסמפלר הקודם ל-`samples`. העברת דגימות לפני שהתבקשה תמונה היא שגיאה.
 * כאשר הקונדישנינג הנכנס כבר הושלם, הצומת מחזיר אותו ללא שינוי עם `generated_text` ריק ו-`image_requested` מוגדר ל-False.
