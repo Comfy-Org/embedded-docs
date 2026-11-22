@@ -10,9 +10,9 @@ Selezionare un `model` determina quali dei parametri seguenti sono disponibili. 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Il modello AI utilizzato per generare il video. Seedance 2.5 per il modello più recente, video fino a 30 secondi, output 4k e mp4/mov; Seedance 2.0 per la massima qualità e 4k; Fast per l'ottimizzazione della velocità; Mini per la generazione più veloce e a basso costo. Selezionando un modello vengono mostrati gli input specifici del modello elencati di seguito. | DYNAMIC_COMBO | Sì | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `modello` | Il modello AI utilizzato per generare il video. Seedance 2.5 per il modello più recente, video fino a 30 secondi, output 4k e mp4/mov; Seedance 2.0 per la massima qualità e 4k; Fast per l'ottimizzazione della velocità; Mini per la generazione più veloce e a basso costo. Selezionando un modello vengono mostrati gli input specifici del modello elencati di seguito. | DYNAMIC_COMBO | Sì | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed (predefinito: 0). | INT | Sì | 0 a 2147483647<br>Passo: 1 |
-| `watermark` | Se aggiungere una filigrana al video (predefinito: False). Impostazione avanzata. | BOOLEAN | Sì | `True`<br>`False` |
+| `filigrana` | Se aggiungere una filigrana al video (predefinito: False). Impostazione avanzata. | BOOLEAN | Sì | `True`<br>`False` |
 
 ### Input di Seedance 2.5
 

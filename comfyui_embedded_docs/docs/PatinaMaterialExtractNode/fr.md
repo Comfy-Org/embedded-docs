@@ -7,13 +7,13 @@ Extrait un matériau PBR carrelable sans raccord à partir d’une région d’u
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L’image à partir de laquelle extraire une texture. | IMAGE | Oui | - |
-| `prompt` | Description de la texture à extraire de l’image, par exemple `"the wall"`. | STRING | Oui | Texte multiligne |
-| `image_size` | Taille de la texture de sortie. `"custom"` révèle les entrées `width` et `height`. Par défaut : `"1:1 (1024x1024)"`. | DYNAMIC_COMBO | Oui | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
-| `basecolor` | Générer la carte de couleur de base (albédo). Par défaut : true. | BOOLEAN | Oui | true<br>false |
-| `normal` | Générer la carte de normales. Par défaut : true. | BOOLEAN | Oui | true<br>false |
-| `roughness` | Générer la carte de rugosité. Par défaut : false. | BOOLEAN | Oui | true<br>false |
-| `metalness` | Générer la carte de métallicité. Par défaut : false. | BOOLEAN | Oui | true<br>false |
-| `height` | Générer la carte de hauteur (déplacement). Par défaut : false. | BOOLEAN | Oui | true<br>false |
+| `invite` | Description de la texture à extraire de l’image, par exemple `"the wall"`. | STRING | Oui | Texte multiligne |
+| `taille de l'image` | Taille de la texture de sortie. `"custom"` révèle les entrées `width` et `height`. Par défaut : `"1:1 (1024x1024)"`. | DYNAMIC_COMBO | Oui | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
+| `couleur de base` | Générer la carte de couleur de base (albédo). Par défaut : true. | BOOLEAN | Oui | true<br>false |
+| `normale` | Générer la carte de normales. Par défaut : true. | BOOLEAN | Oui | true<br>false |
+| `rugosité` | Générer la carte de rugosité. Par défaut : false. | BOOLEAN | Oui | true<br>false |
+| `métallicité` | Générer la carte de métallicité. Par défaut : false. | BOOLEAN | Oui | true<br>false |
+| `hauteur` | Générer la carte de hauteur (déplacement). Par défaut : false. | BOOLEAN | Oui | true<br>false |
 | `upscale_factor` | Suréchantillonnage SeedVR sans raccord des cartes PBR. La texture de base n’est pas suréchantillonnée, et un facteur 4 transforme une carte de 2048 pixels en une carte 8K. Par défaut : 0 (désactivé). | INT | Oui | 0 à 4 (pas de 2) |
 | `seed` | Graine pour une génération reproductible. Par défaut : 42. | INT | Oui | 0 à 2147483646 |
 | `strength` | Ampleur de transformation de l’image d’entrée. Paramètre avancé. Par défaut : 0.6. | FLOAT | Oui | 0.01 à 1.0 (pas de 0.01) |

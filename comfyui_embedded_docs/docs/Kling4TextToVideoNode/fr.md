@@ -8,7 +8,7 @@ Génère une vidéo à partir d’un prompt textuel avec le modèle Kling 4.0, y
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Sélecteur de modèle. `"kling-4.0"` prend en charge jusqu’à la 4K HDR et 30 secondes ; `"kling-4.0-flash"` est limité à 720p et 20 secondes. La sélection d’un modèle affiche ses entrées ci-dessous. | DYNAMIC_COMBO | Oui | `"kling-4.0"`<br>`"kling-4.0-flash"` |
+| `modèle` | Sélecteur de modèle. `"kling-4.0"` prend en charge jusqu’à la 4K HDR et 30 secondes ; `"kling-4.0-flash"` est limité à 720p et 20 secondes. La sélection d’un modèle affiche ses entrées ci-dessous. | DYNAMIC_COMBO | Oui | `"kling-4.0"`<br>`"kling-4.0-flash"` |
 
 ### Entrées kling-4.0
 

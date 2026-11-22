@@ -6,7 +6,7 @@
 
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `model` | 要使用的模型。選取模型後會顯示其專屬參數：`video`、`audio`、`prompt`、`negative_prompt`、`preserve_speech`、`seed` 與 `auto_downscale`。 | DYNAMIC_COMBO | 是 | `"sfx-2.0"` |
+| `模型` | 要使用的模型。選取模型後會顯示其專屬參數：`video`、`audio`、`prompt`、`negative_prompt`、`preserve_speech`、`seed` 與 `auto_downscale`。 | DYNAMIC_COMBO | 是 | `"sfx-2.0"` |
 | `video` | 要為其產生音效的影片。會為整段片段產生音效，長度為 1 至 600 秒。 | VIDEO | 是 | 1 至 600 秒 |
 | `audio` | 用於 `preserve_speech` 與 `speech` 輸出的對話音軌，取代影片本身的聲軌。若保持未連接，則使用影片內嵌的聲音。 | AUDIO | 否 | - |
 | `prompt` | 音效應該是什麼樣子。可留空（預設：空），因為模型會自行描述影片，且不一定總是遵循提示詞。最多 2000 個字元。 | STRING | 是 | 最多 2000 個字元 |

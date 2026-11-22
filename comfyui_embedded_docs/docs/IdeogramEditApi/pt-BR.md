@@ -10,7 +10,7 @@ A seleção de um `model` determina quais entradas aparecem. O Ideogram 4.6 adic
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a usar. `"ideogram-4.6"` renderiza até 4K com um fundo transparente opcional; `"ideogram-4.5"` é o modelo anterior (padrão: `"ideogram-4.6"`). | DYNAMIC_COMBO | Sim | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
+| `modelo` | Modelo a usar. `"ideogram-4.6"` renderiza até 4K com um fundo transparente opcional; `"ideogram-4.5"` é o modelo anterior (padrão: `"ideogram-4.6"`). | DYNAMIC_COMBO | Sim | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
 | `images` | Slot expansível: a imagem 1 é a imagem a ser editada, e as imagens 2 a 5 são referências opcionais (`image_1` ... `image_5`). Refira-se a elas no prompt como @Image1, @Image2, ...; uma entrada em lote conta uma vez por imagem. Cada imagem deve ter uma proporção entre 1:6 e 6:1. | IMAGE | Sim | 1 a 5 imagens |
 | `prompt` | Instruções de edição. Suporta referências no estilo @Image1 para as imagens conectadas (padrão: string vazia). | STRING | Sim | 1 a 10000 caracteres |
 | `seed` | Semente para a geração. As mesmas imagens, prompt, configurações e seed produzem o mesmo resultado ou um resultado muito semelhante (padrão: 42). | INT | Sim | 0 a 2147483647 |

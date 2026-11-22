@@ -8,20 +8,20 @@ Rodin Gen-2.5 API를 사용하여 텍스트 프롬프트에서 3D 모델을 생�
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | 3D 모델에 대한 텍스트 프롬프트입니다. | STRING | 예 | 1~1024자 |
-| `mode` | 생성 품질 및 속도 모드입니다. "Fast"는 가장 빠르고, "Extreme-High"는 가장 높은 품질을 생성하지만 더 오래 걸립니다. | COMBO | 예 | `"Fast"`<br>`"Regular"`<br>`"Extreme-High"` |
-| `material` | 생성된 3D 모델의 재질 스타일입니다. | COMBO | 예 | `"PBR"`<br>`"Matte"`<br>`"Shiny"` |
-| `geometry_file_format` | 출력 3D 모델의 파일 형식입니다. | COMBO | 예 | `"glb"`<br>`"obj"`<br>`"stl"`<br>`"usdz"` |
-| `texture_mode` | 텍스처 생성 모드입니다. "None"은 텍스처를 생성하지 않고, "Generated"는 표준 텍스처를 생성하며, "Generated+HD"는 고화질 텍스처를 생성합니다. | COMBO | 예 | `"None"`<br>`"Generated"`<br>`"Generated+HD"` |
-| `seed` | 재현 가능한 결과를 위한 무작위 시드입니다. 동일한 입력과 동일한 시드를 사용하면 동일한 출력이 생성됩니다. | INT | 예 | 0 ~ 2147483647 |
-| `TAPose` | 생성된 모델에 T-포즈(팔을 벌린 자세)를 적용할지 여부입니다. | BOOLEAN | 예 | True 또는 False |
-| `hd_texture` | 모델에 고화질 텍스처를 생성할지 여부입니다. | BOOLEAN | 예 | True 또는 False |
-| `texture_delight` | 모델에 텍스처 딜라이트(향상된 텍스처 품질)를 적용할지 여부입니다. | BOOLEAN | 예 | True 또는 False |
-| `addon_highpack` | 표준 모델 외에 고폴리곤 버전의 모델을 생성할지 여부입니다. | BOOLEAN | 예 | True 또는 False |
-| `bbox_width` | 월드 단위 기준 바운딩 박스의 너비입니다. | INT | 예 | 1 ~ 1000 |
-| `bbox_height` | 월드 단위 기준 바운딩 박스의 높이입니다. | INT | 예 | 1 ~ 1000 |
-| `bbox_length` | 월드 단위 기준 바운딩 박스의 길이입니다. | INT | 예 | 1 ~ 1000 |
-| `height_cm` | 생성된 모델의 높이(센티미터)입니다. | INT | 예 | 1 ~ 300 |
+| `프롬프트` | 3D 모델에 대한 텍스트 프롬프트입니다. | STRING | 예 | 1~1024자 |
+| `모드` | 생성 품질 및 속도 모드입니다. "Fast"는 가장 빠르고, "Extreme-High"는 가장 높은 품질을 생성하지만 더 오래 걸립니다. | COMBO | 예 | `"Fast"`<br>`"Regular"`<br>`"Extreme-High"` |
+| `재질` | 생성된 3D 모델의 재질 스타일입니다. | COMBO | 예 | `"PBR"`<br>`"Matte"`<br>`"Shiny"` |
+| `지오메트리 파일 형식` | 출력 3D 모델의 파일 형식입니다. | COMBO | 예 | `"glb"`<br>`"obj"`<br>`"stl"`<br>`"usdz"` |
+| `텍스처 모드` | 텍스처 생성 모드입니다. "None"은 텍스처를 생성하지 않고, "Generated"는 표준 텍스처를 생성하며, "Generated+HD"는 고화질 텍스처를 생성합니다. | COMBO | 예 | `"None"`<br>`"Generated"`<br>`"Generated+HD"` |
+| `시드` | 재현 가능한 결과를 위한 무작위 시드입니다. 동일한 입력과 동일한 시드를 사용하면 동일한 출력이 생성됩니다. | INT | 예 | 0 ~ 2147483647 |
+| `T/A 포즈` | 생성된 모델에 T-포즈(팔을 벌린 자세)를 적용할지 여부입니다. | BOOLEAN | 예 | True 또는 False |
+| `고화질 텍스처` | 모델에 고화질 텍스처를 생성할지 여부입니다. | BOOLEAN | 예 | True 또는 False |
+| `텍스처 디라이트` | 모델에 텍스처 딜라이트(향상된 텍스처 품질)를 적용할지 여부입니다. | BOOLEAN | 예 | True 또는 False |
+| `HighPack 애드온` | 표준 모델 외에 고폴리곤 버전의 모델을 생성할지 여부입니다. | BOOLEAN | 예 | True 또는 False |
+| `바운딩 박스 너비` | 월드 단위 기준 바운딩 박스의 너비입니다. | INT | 예 | 1 ~ 1000 |
+| `바운딩 박스 높이` | 월드 단위 기준 바운딩 박스의 높이입니다. | INT | 예 | 1 ~ 1000 |
+| `바운딩 박스 길이` | 월드 단위 기준 바운딩 박스의 길이입니다. | INT | 예 | 1 ~ 1000 |
+| `모델 높이(cm)` | 생성된 모델의 높이(센티미터)입니다. | INT | 예 | 1 ~ 300 |
 
 **참고:** `prompt` 매개변수는 길이가 1~1024자여야 합니다. `seed` 매개변수는 지정하지 않으면 기본값이 0(무작위)입니다.
 
@@ -29,7 +29,7 @@ Rodin Gen-2.5 API를 사용하여 텍스트 프롬프트에서 3D 모델을 생�
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `model_file` | 지정된 형식으로 생성된 3D 모델 파일입니다. | FILE3DANY |
+| `모델 파일` | 지정된 형식으로 생성된 3D 모델 파일입니다. | FILE3DANY |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Gen25_Text/ko.md)
 

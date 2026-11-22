@@ -10,7 +10,7 @@ La selezione di un `model` determina quali input vengono visualizzati. Ideogram 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modello da usare. `"ideogram-4.6"` esegue il rendering fino a 4K con uno sfondo trasparente opzionale; `"ideogram-4.5"` è il modello precedente (predefinito: `"ideogram-4.6"`). | DYNAMIC_COMBO | Sì | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
+| `modello` | Modello da usare. `"ideogram-4.6"` esegue il rendering fino a 4K con uno sfondo trasparente opzionale; `"ideogram-4.5"` è il modello precedente (predefinito: `"ideogram-4.6"`). | DYNAMIC_COMBO | Sì | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
 | `images` | Slot espandibile: l'immagine 1 è l'immagine da modificare e le immagini da 2 a 5 sono riferimenti opzionali (`image_1` ... `image_5`). Fai riferimento a esse nel prompt come @Image1, @Image2, ...; un input in batch conta una volta per immagine. Ogni immagine deve avere un rapporto d'aspetto compreso tra 1:6 e 6:1. | IMAGE | Sì | 1 a 5 immagini |
 | `prompt` | Istruzioni di modifica. Supporta riferimenti in stile @Image1 alle immagini collegate (predefinito: stringa vuota). | STRING | Sì | 1 a 10000 caratteri |
 | `seed` | Seed per la generazione. Le stesse immagini, il prompt, le impostazioni e il seed danno lo stesso risultato o un risultato molto simile (predefinito: 42). | INT | Sì | 0 a 2147483647 |

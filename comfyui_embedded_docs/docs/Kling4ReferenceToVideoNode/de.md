@@ -8,7 +8,7 @@ Erzeugt ein Video aus Referenzbildern und Referenzvideos mit dem Kling 4.0-Model
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modellauswahl. `"kling-4.0"` unterstützt bis zu 4K HDR, 30-Sekunden-Clips und ein letztes Frame; `"kling-4.0-flash"` ist auf 720p und 20 Sekunden beschränkt und hat keine `last_frame`-Eingabe. Die Auswahl eines Modells blendet die zugehörigen Eingaben unten ein. | DYNAMIC_COMBO | Ja | `"kling-4.0"`<br>`"kling-4.0-flash"` |
+| `Modell` | Modellauswahl. `"kling-4.0"` unterstützt bis zu 4K HDR, 30-Sekunden-Clips und ein letztes Frame; `"kling-4.0-flash"` ist auf 720p und 20 Sekunden beschränkt und hat keine `last_frame`-Eingabe. Die Auswahl eines Modells blendet die zugehörigen Eingaben unten ein. | DYNAMIC_COMBO | Ja | `"kling-4.0"`<br>`"kling-4.0-flash"` |
 
 ### kling-4.0 Eingaben
 

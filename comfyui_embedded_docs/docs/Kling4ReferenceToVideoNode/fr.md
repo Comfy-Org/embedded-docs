@@ -8,7 +8,7 @@ Génère une vidéo à partir d’images de référence et de vidéos de référ
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `model` | Sélecteur de modèle. `"kling-4.0"` prend en charge jusqu’à la 4K HDR, des clips de 30 secondes et une dernière image ; `"kling-4.0-flash"` est limité à 720p et 20 secondes et n’a pas d’entrée `last_frame`. La sélection d’un modèle révèle ses entrées ci-dessous. | DYNAMIC_COMBO | Oui | `"kling-4.0"`<br>`"kling-4.0-flash"` |
+| `modèle` | Sélecteur de modèle. `"kling-4.0"` prend en charge jusqu’à la 4K HDR, des clips de 30 secondes et une dernière image ; `"kling-4.0-flash"` est limité à 720p et 20 secondes et n’a pas d’entrée `last_frame`. La sélection d’un modèle révèle ses entrées ci-dessous. | DYNAMIC_COMBO | Oui | `"kling-4.0"`<br>`"kling-4.0-flash"` |
 
 ### Entrées kling-4.0
 

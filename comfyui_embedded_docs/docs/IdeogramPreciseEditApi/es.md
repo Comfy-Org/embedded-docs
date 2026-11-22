@@ -10,7 +10,7 @@ Seleccionar un `model` determina qué entradas aparecen. Ambos modelos editan un
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Modelo a usar. `"ideogram-4.6"` maneja fuentes más grandes y regiones más amplias; `"ideogram-4.5"` es el modelo anterior (predeterminado: `"ideogram-4.6"`). | DYNAMIC_COMBO | Sí | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
+| `modelo` | Modelo a usar. `"ideogram-4.6"` maneja fuentes más grandes y regiones más amplias; `"ideogram-4.5"` es el modelo anterior (predeterminado: `"ideogram-4.6"`). | DYNAMIC_COMBO | Sí | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
 | `images` | Ranura ampliable: la imagen 1 es la imagen a editar y las imágenes 2 a 5 son referencias opcionales (`image_1` ... `image_5`). Consúltelas en el prompt como @Image1, @Image2, ...; una entrada por lotes cuenta una vez por imagen. Cada imagen debe tener una relación de aspecto entre 1:6 y 6:1, excepto que la imagen 1 no se comprueba en cuanto a relación de aspecto mientras se use una ventana de contexto. | IMAGE | Sí | 1 a 5 imágenes |
 | `prompt` | Instrucciones de edición. Admite referencias al estilo @Image1 a las imágenes conectadas (predeterminado: cadena vacía). | STRING | Sí | 1 a 10000 caracteres |
 | `quality` | Nivel de calidad. Los niveles más altos cuestan más y tardan más (predeterminado: `"medium"`). | COMBO | Sí | `"very_low"`<br>`"low"`<br>`"medium"`<br>`"high"` |

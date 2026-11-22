@@ -10,7 +10,7 @@ Seleccionar un `model` determina qué entradas aparecen. Ideogram 4.6 añade `ba
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Modelo que se va a usar. `"ideogram-4.6"` renderiza hasta 4K con un fondo transparente opcional; `"ideogram-4.5"` es el modelo anterior (predeterminado: `"ideogram-4.6"`). | DYNAMIC_COMBO | Sí | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
+| `modelo` | Modelo que se va a usar. `"ideogram-4.6"` renderiza hasta 4K con un fondo transparente opcional; `"ideogram-4.5"` es el modelo anterior (predeterminado: `"ideogram-4.6"`). | DYNAMIC_COMBO | Sí | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
 | `images` | Ranura ampliable: la imagen 1 es la imagen que se va a editar y las imágenes 2 a 5 son referencias opcionales (`image_1` ... `image_5`). Refiérete a ellas en el prompt como @Image1, @Image2, ...; una entrada por lotes cuenta una vez por imagen. Cada imagen debe tener una relación de aspecto entre 1:6 y 6:1. | IMAGE | Sí | 1 a 5 imágenes |
 | `prompt` | Instrucciones de edición. Admite referencias al estilo @Image1 a las imágenes conectadas (predeterminado: cadena vacía). | STRING | Sí | 1 a 10000 caracteres |
 | `seed` | Semilla para la generación. Las mismas imágenes, el mismo prompt, la misma configuración y la misma semilla producen el mismo resultado o uno muy similar (predeterminado: 42). | INT | Sí | 0 a 2147483647 |

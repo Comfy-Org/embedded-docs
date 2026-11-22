@@ -10,9 +10,9 @@ Die Auswahl eines `model` bestimmt, welche der unten aufgeführten Parameter ver
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das KI-Modell, das zur Videogenerierung verwendet wird. Seedance 2.5 für das neueste Modell mit Videos bis zu 30 Sekunden, 4k und mp4/mov-Ausgabe; Seedance 2.0 für maximale Qualität und 4k; Fast zur Geschwindigkeitsoptimierung; Mini für die schnellste und kostengünstigste Generierung. Die Auswahl eines Modells zeigt die unten aufgeführten modellspezifischen Eingaben an. | DYNAMIC_COMBO | Ja | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 bis 2147483647<br>Schritt: 1 |
-| `watermark` | Ob dem Video ein Wasserzeichen hinzugefügt werden soll (Standard: False). Erweiterte Einstellung. | BOOLEAN | Ja | `True`<br>`False` |
+| `Modell` | Das KI-Modell, das zur Videogenerierung verwendet wird. Seedance 2.5 für das neueste Modell mit Videos bis zu 30 Sekunden, 4k und mp4/mov-Ausgabe; Seedance 2.0 für maximale Qualität und 4k; Fast zur Geschwindigkeitsoptimierung; Mini für die schnellste und kostengünstigste Generierung. Die Auswahl eines Modells zeigt die unten aufgeführten modellspezifischen Eingaben an. | DYNAMIC_COMBO | Ja | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 bis 2147483647<br>Schritt: 1 |
+| `Wasserzeichen` | Ob dem Video ein Wasserzeichen hinzugefügt werden soll (Standard: False). Erweiterte Einstellung. | BOOLEAN | Ja | `True`<br>`False` |
 
 ### Seedance 2.5 Eingaben
 

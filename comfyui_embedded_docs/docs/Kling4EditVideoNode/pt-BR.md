@@ -8,7 +8,7 @@ Edita um vídeo existente com um prompt de texto usando o modelo Kling 4.0, opci
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Seletor de modelo. `"kling-4.0"` oferece suporte a edições de até 4K HDR e 30 segundos; `"kling-4.0-flash"` é limitado a 720p e 20 segundos. Selecionar um modelo revela suas entradas abaixo. | DYNAMIC_COMBO | Sim | `"kling-4.0"`<br>`"kling-4.0-flash"` |
+| `modelo` | Seletor de modelo. `"kling-4.0"` oferece suporte a edições de até 4K HDR e 30 segundos; `"kling-4.0-flash"` é limitado a 720p e 20 segundos. Selecionar um modelo revela suas entradas abaixo. | DYNAMIC_COMBO | Sim | `"kling-4.0"`<br>`"kling-4.0-flash"` |
 
 ### Entradas do kling-4.0
 

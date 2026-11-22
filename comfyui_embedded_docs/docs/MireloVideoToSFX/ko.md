@@ -6,7 +6,7 @@ Mirelo SFX로 비디오에 맞는 음향 효과를 생성합니다. 클립을 �
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `model` | 사용할 모델입니다. 모델을 선택하면 해당 모델에 특화된 매개변수인 `video`, `audio`, `prompt`, `negative_prompt`, `preserve_speech`, `seed`, `auto_downscale`가 표시됩니다. | DYNAMIC_COMBO | 예 | `"sfx-2.0"` |
+| `모델` | 사용할 모델입니다. 모델을 선택하면 해당 모델에 특화된 매개변수인 `video`, `audio`, `prompt`, `negative_prompt`, `preserve_speech`, `seed`, `auto_downscale`가 표시됩니다. | DYNAMIC_COMBO | 예 | `"sfx-2.0"` |
 | `video` | 소리를 생성할 비디오입니다. 전체 클립(1~600초)에 대해 소리가 생성됩니다. | VIDEO | 예 | 1~600초 |
 | `audio` | `preserve_speech` 및 `speech` 출력에 사용할 대사 트랙으로, 비디오 자체의 사운드트랙 대신 사용합니다. 연결하지 않으면 비디오에 포함된 사운드를 사용합니다. | AUDIO | 아니요 | - |
 | `prompt` | 소리가 어떤 느낌이어야 하는지 지정합니다. 모델이 비디오 자체를 설명하며 항상 프롬프트를 따르지는 않으므로 비워 둘 수 있습니다(기본값: 비어 있음). 최대 2000자입니다. | STRING | 예 | 최대 2000자 |

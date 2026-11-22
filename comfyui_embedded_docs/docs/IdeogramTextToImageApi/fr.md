@@ -10,7 +10,7 @@ La sélection d'un `model` détermine les entrées qui s'affichent. Ideogram 4.6
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `model` | Modèle à utiliser. `"ideogram-4.6"` génère jusqu'en 4K avec un arrière-plan transparent facultatif ; `"ideogram-4.5"` est le modèle précédent (par défaut : `"ideogram-4.6"`). | DYNAMIC_COMBO | Oui | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
+| `modèle` | Modèle à utiliser. `"ideogram-4.6"` génère jusqu'en 4K avec un arrière-plan transparent facultatif ; `"ideogram-4.5"` est le modèle précédent (par défaut : `"ideogram-4.6"`). | DYNAMIC_COMBO | Oui | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
 | `prompt` | Invite textuelle, ou légende JSON structurée Ideogram telle qu'un `final_prompt` précédent (par défaut : chaîne vide). | STRING | Oui | 1 à 10000 caractères |
 | `magic_prompt` | Réécrit l'invite en une légende structurée détaillée avant la génération ; `"off"` conserve votre formulation aussi littéralement que possible. La légende est renvoyée sous la forme `final_prompt` (par défaut : `"auto"`). Il s'agit d'un réglage avancé. | COMBO | Oui | `"auto"`<br>`"on"`<br>`"off"` |
 | `seed` | Graine de génération. La génération texte-image n'est pas reproductible à partir de la seule graine, car l'invite est réécrite à chaque exécution ; pour reproduire une image, réutilisez son `final_prompt` avec `magic_prompt` défini sur `"off"`, la même graine ainsi que les mêmes paramètres de modèle, de taille, de qualité et d'arrière-plan (par défaut : 42). | INT | Oui | 0 à 2147483647 |

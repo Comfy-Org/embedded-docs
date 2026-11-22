@@ -6,14 +6,14 @@ Bir girdi görüntüsünün bir bölgesinden, neyin alınacağını belirten bir
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Doku çıkarılacak görüntü. | IMAGE | Evet | - |
-| `prompt` | Görüntüden hangi dokunun çıkarılacağının açıklaması, örneğin `"the wall"`. | STRING | Evet | Çok satırlı metin |
-| `image_size` | Çıktı doku boyutu. `"custom"` seçeneği `width` ve `height` girdilerini gösterir. Varsayılan: `"1:1 (1024x1024)"`. | DYNAMIC_COMBO | Evet | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
-| `basecolor` | Basecolor (albedo) haritasını oluştur. Varsayılan: True. | BOOLEAN | Evet | true<br>false |
+| `görüntü` | Doku çıkarılacak görüntü. | IMAGE | Evet | - |
+| `istem` | Görüntüden hangi dokunun çıkarılacağının açıklaması, örneğin `"the wall"`. | STRING | Evet | Çok satırlı metin |
+| `görüntü_boyutu` | Çıktı doku boyutu. `"custom"` seçeneği `width` ve `height` girdilerini gösterir. Varsayılan: `"1:1 (1024x1024)"`. | DYNAMIC_COMBO | Evet | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
+| `temel_renk` | Basecolor (albedo) haritasını oluştur. Varsayılan: True. | BOOLEAN | Evet | true<br>false |
 | `normal` | Normal haritasını oluştur. Varsayılan: True. | BOOLEAN | Evet | true<br>false |
-| `roughness` | Pürüzlülük haritasını oluştur. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
-| `metalness` | Metaliklik haritasını oluştur. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
-| `height` | Yükseklik (yer değiştirme) haritasını oluştur. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
+| `pürüzlülük` | Pürüzlülük haritasını oluştur. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
+| `metallik` | Metaliklik haritasını oluştur. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
+| `yükseklik` | Yükseklik (yer değiştirme) haritasını oluştur. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
 | `upscale_factor` | PBR haritalarının kesintisiz SeedVR ile ölçeklendirilmesi. Temel doku ölçeklendirilmez ve 4x, 2048 piksellik bir haritayı 8K'ya dönüştürür. Varsayılan: 0 (kapalı). | INT | Evet | 0 ile 4 arası (adım 2) |
 | `seed` | Yeniden üretilebilir oluşturma için tohum. Varsayılan: 42. | INT | Evet | 0 ile 2147483646 arası |
 | `strength` | Girdi görüntüsünün ne kadar dönüştürüleceği. Gelişmiş ayar. Varsayılan: 0.6. | FLOAT | Evet | 0.01 ile 1.0 arası (adım 0.01) |
@@ -22,7 +22,7 @@ Bir girdi görüntüsünün bir bölgesinden, neyin alınacağını belirten bir
 | `tile_size` | Gizli uzayda döşeme boyutu; burada 64, 512 piksel ve 128, 1024 piksel anlamına gelir. Gelişmiş ayar. Varsayılan: 128. | INT | Evet | 32 ile 256 arası (adım 2) |
 | `tile_stride` | Gizli uzayda döşeme adımı. Gelişmiş ayar. Varsayılan: 64. | INT | Evet | 16 ile 128 arası (adım 2) |
 | `prompt_expansion` | Daha zengin doku ayrıntısı için istemi bir dil modeliyle genişlet. Varsayılan olarak kapalıdır, çünkü genişletme istemi bir fotoğraf olarak yeniden çerçeveler ve metaliklik haritasını soluklaştırma eğilimindedir. Gelişmiş ayar. | BOOLEAN | Evet | true<br>false |
-| `safety_checker` | Sağlayıcının içerik güvenliği kontrolünü istek üzerinde çalıştır. Gelişmiş ayar. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
+| `güvenlik denetleyicisi` | Sağlayıcının içerik güvenliği kontrolünü istek üzerinde çalıştır. Gelişmiş ayar. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
 
 ### Özel Görüntü Boyutu Girdileri
 

@@ -8,7 +8,7 @@ Genera un video a partir de un conjunto de fotogramas clave con el modelo Kling 
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `model` | Selector de modelo. `"kling-4.0"` admite hasta 4K HDR y 30 segundos; `"kling-4.0-flash"` está limitado a 720p, 20 segundos y un único primer fotograma. Al seleccionar un modelo se muestran sus entradas a continuación. | DYNAMIC_COMBO | Sí | `"kling-4.0"`<br>`"kling-4.0-flash"` |
+| `modelo` | Selector de modelo. `"kling-4.0"` admite hasta 4K HDR y 30 segundos; `"kling-4.0-flash"` está limitado a 720p, 20 segundos y un único primer fotograma. Al seleccionar un modelo se muestran sus entradas a continuación. | DYNAMIC_COMBO | Sí | `"kling-4.0"`<br>`"kling-4.0-flash"` |
 
 ### Entradas de kling-4.0
 

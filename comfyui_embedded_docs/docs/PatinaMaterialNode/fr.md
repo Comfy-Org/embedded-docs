@@ -12,16 +12,16 @@ Génère un matériau PBR complet et carrelable sans raccord à partir d'une des
 | `normal` | Génère la carte de normales. Par défaut : True. | BOOLEAN | Oui | true<br>false |
 | `roughness` | Génère la carte de rugosité. Par défaut : False. | BOOLEAN | Oui | true<br>false |
 | `metalness` | Génère la carte de métallicité. Par défaut : False. | BOOLEAN | Oui | true<br>false |
-| `height` | Génère la carte de hauteur (déplacement). Par défaut : False. | BOOLEAN | Oui | true<br>false |
+| `hauteur` | Génère la carte de hauteur (déplacement). Par défaut : False. | BOOLEAN | Oui | true<br>false |
 | `upscale_factor` | Mise à l'échelle SeedVR sans raccord des cartes PBR. La texture de base n'est pas mise à l'échelle, et un facteur 4x transforme une carte de 2048 pixels en une carte 8K. Par défaut : 0 (désactivé). | INT | Oui | 0 à 4 (pas 2) |
-| `seed` | Graine pour une génération reproductible. Par défaut : 42. | INT | Oui | 0 à 2147483646 |
+| `graine` | Graine pour une génération reproductible. Par défaut : 42. | INT | Oui | 0 à 2147483646 |
 | `tiling_mode` | Direction de carrelage : omnidirectionnelle, horizontale ou verticale. Réglage avancé. Par défaut : `"both"`. | COMBO | Oui | `"both"`<br>`"horizontal"`<br>`"vertical"` |
 | `num_inference_steps` | Étapes de débruitage pour la génération de texture. Réglage avancé. Par défaut : 8. | INT | Oui | 1 à 8 |
 | `tile_size` | Taille de tuile dans l'espace latent, où 64 signifie 512 pixels et 128 signifie 1024 pixels. Réglage avancé. Par défaut : 128. | INT | Oui | 32 à 256 (pas 2) |
 | `tile_stride` | Pas de tuile dans l'espace latent. Réglage avancé. Par défaut : 64. | INT | Oui | 16 à 128 (pas 2) |
 | `image` | Image source optionnelle. Seule, elle exécute une passe image-to-image ; avec un masque, elle exécute une passe d'inpainting. | IMAGE | Non | - |
-| `mask` | Masque d'inpainting optionnel, nécessite une image d'entrée. Les zones blanches sont régénérées et les zones noires sont conservées. | MASK | Non | - |
-| `strength` | Amplitude de transformation de l'image d'entrée. Utilisé uniquement lorsqu'une image est connectée. Réglage avancé. Par défaut : 0.6. | FLOAT | Oui | 0.01 à 1.0 (pas 0.01) |
+| `masque` | Masque d'inpainting optionnel, nécessite une image d'entrée. Les zones blanches sont régénérées et les zones noires sont conservées. | MASK | Non | - |
+| `intensité` | Amplitude de transformation de l'image d'entrée. Utilisé uniquement lorsqu'une image est connectée. Réglage avancé. Par défaut : 0.6. | FLOAT | Oui | 0.01 à 1.0 (pas 0.01) |
 | `prompt_expansion` | Développe le prompt avec un modèle de langage pour obtenir des détails de texture plus riches. Désactivé par défaut, car l'expansion reformule le prompt comme une photographie et tend à délaver la carte de métallicité. Réglage avancé. | BOOLEAN | Oui | true<br>false |
 | `safety_checker` | Exécute la vérification de sécurité du contenu du fournisseur sur la requête. Réglage avancé. Par défaut : False. | BOOLEAN | Oui | true<br>false |
 

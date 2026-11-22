@@ -6,7 +6,7 @@ Mirelo SFX を使用して、動画に追従する効果音を生成します。
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `model` | 使用するモデルです。モデルを選択すると、そのモデル固有のパラメータ（`video`、`audio`、`prompt`、`negative_prompt`、`preserve_speech`、`seed`、`auto_downscale`）が表示されます。 | DYNAMIC_COMBO | はい | `"sfx-2.0"` |
+| `モデル` | 使用するモデルです。モデルを選択すると、そのモデル固有のパラメータ（`video`、`audio`、`prompt`、`negative_prompt`、`preserve_speech`、`seed`、`auto_downscale`）が表示されます。 | DYNAMIC_COMBO | はい | `"sfx-2.0"` |
 | `video` | 音を生成する対象の動画です。クリップ全体（1～600 秒）に対して音が生成されます。 | VIDEO | はい | 1～600 秒 |
 | `audio` | `preserve_speech` および `speech` 出力に使用する、動画自体のサウンドトラックの代わりとなるセリフトラックです。接続しない場合は、動画に埋め込まれた音が使用されます。 | AUDIO | いいえ | - |
 | `prompt` | どのような音にするかを指定します。モデルが動画自体を説明し、プロンプトに常に従うわけではないため、空のままでもかまいません（デフォルト：空）。最大 2000 文字です。 | STRING | はい | 最大 2000 文字 |

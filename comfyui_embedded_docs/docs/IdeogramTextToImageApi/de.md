@@ -10,7 +10,7 @@ Die Auswahl eines `model` bestimmt, welche Eingaben angezeigt werden. Ideogram 4
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Zu verwendendes Modell. `"ideogram-4.6"` rendert bis zu 4K mit optionalem transparentem Hintergrund; `"ideogram-4.5"` ist das frühere Modell (Standard: `"ideogram-4.6"`). | DYNAMIC_COMBO | Ja | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
+| `Modell` | Zu verwendendes Modell. `"ideogram-4.6"` rendert bis zu 4K mit optionalem transparentem Hintergrund; `"ideogram-4.5"` ist das frühere Modell (Standard: `"ideogram-4.6"`). | DYNAMIC_COMBO | Ja | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
 | `prompt` | Text-Prompt oder eine strukturierte JSON-Bildunterschrift von Ideogram, wie z. B. ein früherer `final_prompt` (Standard: leerer String). | STRING | Ja | 1 bis 10000 Zeichen |
 | `magic_prompt` | Schreibt den Prompt vor der Generierung in eine detaillierte strukturierte Bildunterschrift um; `"off"` behält Ihre Formulierung so wörtlich wie möglich bei. Die Bildunterschrift wird als `final_prompt` zurückgegeben (Standard: `"auto"`). Dies ist eine erweiterte Einstellung. | COMBO | Ja | `"auto"`<br>`"on"`<br>`"off"` |
 | `seed` | Seed für die Generierung. Text-zu-Bild ist allein anhand des Seeds nicht reproduzierbar, da der Prompt bei jedem Lauf neu umgeschrieben wird; um ein Bild zu reproduzieren, verwenden Sie dessen `final_prompt` erneut mit `magic_prompt` auf `"off"` gesetzt, demselben Seed sowie denselben Modell-, Größen-, Qualitäts- und Hintergrundeinstellungen (Standard: 42). | INT | Ja | 0 bis 2147483647 |

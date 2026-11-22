@@ -10,7 +10,7 @@ Die Auswahl von `model` bestimmt, welche Eingaben angezeigt werden. Ideogram 4.6
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Zu verwendendes Modell. `"ideogram-4.6"` rendert bis zu 4K mit optional transparentem Hintergrund; `"ideogram-4.5"` ist das frühere Modell (Standard: `"ideogram-4.6"`). | DYNAMIC_COMBO | Ja | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
+| `Modell` | Zu verwendendes Modell. `"ideogram-4.6"` rendert bis zu 4K mit optional transparentem Hintergrund; `"ideogram-4.5"` ist das frühere Modell (Standard: `"ideogram-4.6"`). | DYNAMIC_COMBO | Ja | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
 | `images` | Erweiterbarer Slot: Bild 1 ist das zu bearbeitende Bild, Bilder 2 bis 5 sind optionale Referenzen (`image_1` ... `image_5`). Verweisen Sie im Prompt mit @Image1, @Image2, ... darauf; eine gebündelte Eingabe zählt einmal pro Bild. Jedes Bild muss ein Seitenverhältnis zwischen 1:6 und 6:1 haben. | IMAGE | Ja | 1 bis 5 Bilder |
 | `prompt` | Bearbeitungsanweisungen. Unterstützt Referenzen im Stil @Image1 auf die verbundenen Bilder (Standard: leerer String). | STRING | Ja | 1 bis 10000 Zeichen |
 | `seed` | Seed für die Generierung. Dieselben Bilder, derselbe Prompt, dieselben Einstellungen und derselbe Seed ergeben das gleiche oder ein sehr ähnliches Ergebnis (Standard: 42). | INT | Ja | 0 bis 2147483647 |

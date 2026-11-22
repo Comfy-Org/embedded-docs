@@ -8,7 +8,7 @@ Erzeugt aus einer Reihe von Keyframes ein Video mit dem Kling 4.0-Modell, einsch
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modellauswahl. `"kling-4.0"` unterstützt bis zu 4K HDR und 30 Sekunden; `"kling-4.0-flash"` ist auf 720p, 20 Sekunden und ein einzelnes erstes Frame beschränkt. Die Auswahl eines Modells blendet die zugehörigen Eingaben unten ein. | DYNAMIC_COMBO | Ja | `"kling-4.0"`<br>`"kling-4.0-flash"` |
+| `Modell` | Modellauswahl. `"kling-4.0"` unterstützt bis zu 4K HDR und 30 Sekunden; `"kling-4.0-flash"` ist auf 720p, 20 Sekunden und ein einzelnes erstes Frame beschränkt. Die Auswahl eines Modells blendet die zugehörigen Eingaben unten ein. | DYNAMIC_COMBO | Ja | `"kling-4.0"`<br>`"kling-4.0-flash"` |
 
 ### kling-4.0 Eingaben
 

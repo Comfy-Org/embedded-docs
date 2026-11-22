@@ -10,7 +10,7 @@ Die Auswahl eines `model` bestimmt, welche Eingaben erscheinen. Beide Modelle be
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Zu verwendendes Modell. `"ideogram-4.6"` verarbeitet größere Quellen und breitere Bereiche; `"ideogram-4.5"` ist das frühere Modell (Standard: `"ideogram-4.6"`). | DYNAMIC_COMBO | Ja | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
+| `Modell` | Zu verwendendes Modell. `"ideogram-4.6"` verarbeitet größere Quellen und breitere Bereiche; `"ideogram-4.5"` ist das frühere Modell (Standard: `"ideogram-4.6"`). | DYNAMIC_COMBO | Ja | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
 | `images` | Erweiterbarer Slot: Bild 1 ist das zu bearbeitende Bild, und Bilder 2 bis 5 sind optionale Referenzen (`image_1` ... `image_5`). Verweisen Sie im Prompt mit @Image1, @Image2, ... darauf; eine gebatchte Eingabe zählt einmal pro Bild. Jedes Bild muss ein Seitenverhältnis zwischen 1:6 und 6:1 haben, außer dass Bild 1 nicht auf sein Seitenverhältnis geprüft wird, solange ein Kontextfenster verwendet wird. | IMAGE | Ja | 1 bis 5 Bilder |
 | `prompt` | Bearbeitungsanweisungen. Unterstützt Referenzen im Stil @Image1 auf die verbundenen Bilder (Standard: leerer String). | STRING | Ja | 1 bis 10000 Zeichen |
 | `quality` | Qualitätsstufe. Höhere Stufen kosten mehr und dauern länger (Standard: `"medium"`). | COMBO | Ja | `"very_low"`<br>`"low"`<br>`"medium"`<br>`"high"` |

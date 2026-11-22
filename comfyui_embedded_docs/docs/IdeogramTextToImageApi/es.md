@@ -10,7 +10,7 @@ Seleccionar un `model` determina qué entradas aparecen. Ideogram 4.6 agrega `ba
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Modelo a usar. `"ideogram-4.6"` renderiza hasta 4K con un fondo transparente opcional; `"ideogram-4.5"` es el modelo anterior (predeterminado: `"ideogram-4.6"`). | DYNAMIC_COMBO | Sí | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
+| `modelo` | Modelo a usar. `"ideogram-4.6"` renderiza hasta 4K con un fondo transparente opcional; `"ideogram-4.5"` es el modelo anterior (predeterminado: `"ideogram-4.6"`). | DYNAMIC_COMBO | Sí | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
 | `prompt` | Prompt de texto, o una descripción JSON estructurada de Ideogram, como un `final_prompt` anterior (predeterminado: cadena vacía). | STRING | Sí | 1 a 10000 caracteres |
 | `magic_prompt` | Reescribe el prompt en una descripción estructurada detallada antes de generar; `"off"` mantiene tu redacción lo más literal posible. La descripción se devuelve como `final_prompt` (predeterminado: `"auto"`). Esta es una configuración avanzada. | COMBO | Sí | `"auto"`<br>`"on"`<br>`"off"` |
 | `seed` | Semilla para la generación. La generación de texto a imagen no es reproducible solo con la semilla porque el prompt se reescribe en cada ejecución; para reproducir una imagen, reutiliza su `final_prompt` con `magic_prompt` establecido en `"off"`, la misma semilla y los mismos ajustes de modelo, tamaño, calidad y fondo (predeterminado: 42). | INT | Sí | 0 a 2147483647 |

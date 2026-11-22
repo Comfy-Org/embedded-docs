@@ -8,7 +8,7 @@ Gera um vídeo a partir de um conjunto de quadros-chave com o modelo Kling 4.0, 
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Seletor de modelo. `"kling-4.0"` suporta até 4K HDR e 30 segundos; `"kling-4.0-flash"` é limitado a 720p, 20 segundos e um único primeiro quadro. Selecionar um modelo revela suas entradas abaixo. | DYNAMIC_COMBO | Sim | `"kling-4.0"`<br>`"kling-4.0-flash"` |
+| `modelo` | Seletor de modelo. `"kling-4.0"` suporta até 4K HDR e 30 segundos; `"kling-4.0-flash"` é limitado a 720p, 20 segundos e um único primeiro quadro. Selecionar um modelo revela suas entradas abaixo. | DYNAMIC_COMBO | Sim | `"kling-4.0"`<br>`"kling-4.0-flash"` |
 
 ### Entradas do kling-4.0
 

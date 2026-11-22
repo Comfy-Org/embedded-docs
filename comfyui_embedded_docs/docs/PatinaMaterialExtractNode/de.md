@@ -6,17 +6,17 @@ Extrahiert ein nahtlos kachelbares PBR-Material aus einem Bereich eines Eingabeb
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Bild, aus dem eine Textur extrahiert werden soll. | IMAGE | Ja | - |
-| `prompt` | Beschreibung, welche Textur aus dem Bild extrahiert werden soll, zum Beispiel `"the wall"`. | STRING | Ja | Mehrzeiliger Text |
-| `image_size` | Größe der Ausgabetextur. `"custom"` blendet die Eingaben `width` und `height` ein. Standard: `"1:1 (1024x1024)"`. | DYNAMIC_COMBO | Ja | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
-| `basecolor` | Erzeugt die Basecolor-(Albedo-)Map. Standard: True. | BOOLEAN | Ja | true<br>false |
-| `normal` | Erzeugt die Normal-Map. Standard: True. | BOOLEAN | Ja | true<br>false |
-| `roughness` | Erzeugt die Roughness-Map. Standard: False. | BOOLEAN | Ja | true<br>false |
-| `metalness` | Erzeugt die Metalness-Map. Standard: False. | BOOLEAN | Ja | true<br>false |
-| `height` | Erzeugt die Height-(Displacement-)Map. Standard: False. | BOOLEAN | Ja | true<br>false |
+| `Bild` | Das Bild, aus dem eine Textur extrahiert werden soll. | IMAGE | Ja | - |
+| `Prompt` | Beschreibung, welche Textur aus dem Bild extrahiert werden soll, zum Beispiel `"the wall"`. | STRING | Ja | Mehrzeiliger Text |
+| `Bildgröße` | Größe der Ausgabetextur. `"custom"` blendet die Eingaben `width` und `height` ein. Standard: `"1:1 (1024x1024)"`. | DYNAMIC_COMBO | Ja | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
+| `Basisfarbe` | Erzeugt die Basecolor-(Albedo-)Map. Standard: True. | BOOLEAN | Ja | true<br>false |
+| `Normal` | Erzeugt die Normal-Map. Standard: True. | BOOLEAN | Ja | true<br>false |
+| `Rauheit` | Erzeugt die Roughness-Map. Standard: False. | BOOLEAN | Ja | true<br>false |
+| `Metallisch` | Erzeugt die Metalness-Map. Standard: False. | BOOLEAN | Ja | true<br>false |
+| `Höhe` | Erzeugt die Height-(Displacement-)Map. Standard: False. | BOOLEAN | Ja | true<br>false |
 | `upscale_factor` | Nahtlose SeedVR-Hochskalierung der PBR-Maps. Die Basistextur wird nicht hochskaliert, und 4x macht aus einer 2048-Pixel-Map eine 8K-Map. Standard: 0 (aus). | INT | Ja | 0 bis 4 (Schritt 2) |
 | `seed` | Seed für reproduzierbare Generierung. Standard: 42. | INT | Ja | 0 bis 2147483646 |
-| `strength` | Wie stark das Eingabebild transformiert wird. Erweiterte Einstellung. Standard: 0.6. | FLOAT | Ja | 0.01 bis 1.0 (Schritt 0.01) |
+| `Stärke` | Wie stark das Eingabebild transformiert wird. Erweiterte Einstellung. Standard: 0.6. | FLOAT | Ja | 0.01 bis 1.0 (Schritt 0.01) |
 | `tiling_mode` | Kachelrichtung: omnidirektional, horizontal oder vertikal. Erweiterte Einstellung. Standard: `"both"`. | COMBO | Ja | `"both"`<br>`"horizontal"`<br>`"vertical"` |
 | `num_inference_steps` | Denoising-Schritte für die Texturgenerierung. Erweiterte Einstellung. Standard: 8. | INT | Ja | 1 bis 8 |
 | `tile_size` | Kachelgröße im latenten Raum, wobei 64 für 512 Pixel und 128 für 1024 Pixel steht. Erweiterte Einstellung. Standard: 128. | INT | Ja | 32 bis 256 (Schritt 2) |

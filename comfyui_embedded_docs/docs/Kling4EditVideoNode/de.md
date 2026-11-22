@@ -8,7 +8,7 @@ Bearbeitet ein vorhandenes Video mit einem Text-Prompt unter Verwendung des Klin
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modellauswahl. `"kling-4.0"` unterstützt Bearbeitungen bis zu 4K HDR und 30 Sekunden; `"kling-4.0-flash"` ist auf 720p und 20 Sekunden beschränkt. Die Auswahl eines Modells blendet die zugehörigen Eingaben unten ein. | DYNAMIC_COMBO | Ja | `"kling-4.0"`<br>`"kling-4.0-flash"` |
+| `Modell` | Modellauswahl. `"kling-4.0"` unterstützt Bearbeitungen bis zu 4K HDR und 30 Sekunden; `"kling-4.0-flash"` ist auf 720p und 20 Sekunden beschränkt. Die Auswahl eines Modells blendet die zugehörigen Eingaben unten ein. | DYNAMIC_COMBO | Ja | `"kling-4.0"`<br>`"kling-4.0-flash"` |
 
 ### kling-4.0 Eingaben
 

@@ -8,7 +8,7 @@ Genera un video da immagini di riferimento e video di riferimento con il modello
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Selettore del modello. `"kling-4.0"` supporta fino a 4K HDR, clip da 30 secondi e un ultimo fotogramma; `"kling-4.0-flash"` è limitato a 720p e 20 secondi e non ha l'input `last_frame`. Selezionando un modello vengono mostrati i relativi input di seguito. | DYNAMIC_COMBO | Sì | `"kling-4.0"`<br>`"kling-4.0-flash"` |
+| `modello` | Selettore del modello. `"kling-4.0"` supporta fino a 4K HDR, clip da 30 secondi e un ultimo fotogramma; `"kling-4.0-flash"` è limitato a 720p e 20 secondi e non ha l'input `last_frame`. Selezionando un modello vengono mostrati i relativi input di seguito. | DYNAMIC_COMBO | Sì | `"kling-4.0"`<br>`"kling-4.0-flash"` |
 
 ### Input di kling-4.0
 

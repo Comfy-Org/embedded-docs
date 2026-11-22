@@ -10,7 +10,7 @@ La sélection d’un `model` détermine les entrées qui apparaissent. Ideogram 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser. `"ideogram-4.6"` effectue le rendu jusqu’à 4K avec un arrière-plan transparent facultatif ; `"ideogram-4.5"` est le modèle précédent (par défaut : `"ideogram-4.6"`). | DYNAMIC_COMBO | Oui | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
+| `modèle` | Modèle à utiliser. `"ideogram-4.6"` effectue le rendu jusqu’à 4K avec un arrière-plan transparent facultatif ; `"ideogram-4.5"` est le modèle précédent (par défaut : `"ideogram-4.6"`). | DYNAMIC_COMBO | Oui | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
 | `images` | Emplacement extensible : l’image 1 est l’image à modifier et les images 2 à 5 sont des références facultatives (`image_1` ... `image_5`). Faites-y référence dans le prompt sous la forme @Image1, @Image2, ... ; une entrée par lot compte une fois par image. Chaque image doit avoir un rapport d’aspect compris entre 1:6 et 6:1. | IMAGE | Oui | 1 à 5 images |
 | `prompt` | Instructions de modification. Prend en charge les références de style @Image1 vers les images connectées (par défaut : chaîne vide). | STRING | Oui | 1 à 10000 caractères |
 | `seed` | Graine pour la génération. Les mêmes images, le même prompt, les mêmes réglages et la même graine donnent un résultat identique ou très similaire (par défaut : 42). | INT | Oui | 0 à 2147483647 |

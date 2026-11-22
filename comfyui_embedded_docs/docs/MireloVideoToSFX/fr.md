@@ -6,7 +6,7 @@ Générez des effets sonores qui suivent une vidéo avec Mirelo SFX. Le clip est
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Modèle à utiliser. La sélection d’un modèle révèle les paramètres qui lui sont propres : `video`, `audio`, `prompt`, `negative_prompt`, `preserve_speech`, `seed` et `auto_downscale`. | DYNAMIC_COMBO | Oui | `"sfx-2.0"` |
+| `modèle` | Modèle à utiliser. La sélection d’un modèle révèle les paramètres qui lui sont propres : `video`, `audio`, `prompt`, `negative_prompt`, `preserve_speech`, `seed` et `auto_downscale`. | DYNAMIC_COMBO | Oui | `"sfx-2.0"` |
 | `video` | La vidéo pour laquelle générer du son. Le son est généré pour tout le clip, de 1 à 600 secondes. | VIDEO | Oui | 1 à 600 secondes |
 | `audio` | Piste de dialogue à utiliser à la place de la bande-son propre à la vidéo pour `preserve_speech` et pour la sortie `speech`. Laissez-la non connectée pour utiliser le son intégré à la vidéo. | AUDIO | Non | - |
 | `prompt` | À quoi le son doit ressembler. Peut être laissé vide (par défaut : vide), car le modèle décrit lui-même la vidéo et ne suit pas toujours le prompt. Maximum 2000 caractères. | STRING | Oui | Jusqu’à 2000 caractères |

@@ -8,20 +8,20 @@ Bir metin açıklamasından eksiksiz, kesintisiz döşenen bir PBR materyali olu
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Oluşturulacak materyalin veya dokunun açıklaması. | STRING | Evet | Çok satırlı metin |
 | `image_size` | Çıktı doku boyutu. `"custom"`, `width` ve `height` girişlerini gösterir. Varsayılan: `"1:1 (1024x1024)"`. | DYNAMIC_COMBO | Evet | `"1:1 (1024x1024)"`<br>`"1:1 (512x512)"`<br>`"4:3 (1024x768)"`<br>`"3:4 (768x1024)"`<br>`"16:9 (1024x576)"`<br>`"9:16 (576x1024)"`<br>`"custom"` |
-| `basecolor` | basecolor (albedo) haritasını oluşturur. Varsayılan: True. | BOOLEAN | Evet | true<br>false |
+| `temel renk` | basecolor (albedo) haritasını oluşturur. Varsayılan: True. | BOOLEAN | Evet | true<br>false |
 | `normal` | Normal haritasını oluşturur. Varsayılan: True. | BOOLEAN | Evet | true<br>false |
-| `roughness` | Pürüzlülük haritasını oluşturur. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
-| `metalness` | Metaliklik haritasını oluşturur. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
-| `height` | Yükseklik (yer değiştirme) haritasını oluşturur. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
+| `pürüzlülük` | Pürüzlülük haritasını oluşturur. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
+| `metallik` | Metaliklik haritasını oluşturur. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
+| `yükseklik` | Yükseklik (yer değiştirme) haritasını oluşturur. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
 | `upscale_factor` | PBR haritalarının kesintisiz SeedVR ölçeklendirmesi. Temel doku ölçeklendirilmez ve 4x, 2048 piksellik bir haritayı 8K boyutuna dönüştürür. Varsayılan: 0 (kapalı). | INT | Evet | 0 ile 4 arası (adım: 2) |
-| `seed` | Tekrarlanabilir üretim için tohum. Varsayılan: 42. | INT | Evet | 0 ile 2147483646 arası |
+| `tohum` | Tekrarlanabilir üretim için tohum. Varsayılan: 42. | INT | Evet | 0 ile 2147483646 arası |
 | `tiling_mode` | Döşeme yönü: çok yönlü, yatay veya dikey. Gelişmiş ayar. Varsayılan: `"both"`. | COMBO | Evet | `"both"`<br>`"horizontal"`<br>`"vertical"` |
 | `num_inference_steps` | Doku üretimi için gürültü giderme adımları. Gelişmiş ayar. Varsayılan: 8. | INT | Evet | 1 ile 8 arası |
 | `tile_size` | Gizli uzaydaki döşeme boyutu; burada 64, 512 piksel ve 128, 1024 piksel anlamına gelir. Gelişmiş ayar. Varsayılan: 128. | INT | Evet | 32 ile 256 arası (adım: 2) |
 | `tile_stride` | Gizli uzaydaki döşeme adımı. Gelişmiş ayar. Varsayılan: 64. | INT | Evet | 16 ile 128 arası (adım: 2) |
-| `image` | İsteğe bağlı kaynak görüntü. Tek başına verildiğinde görüntüden görüntüye çalışır; bir maskeyle birlikte verildiğinde bir inpaint geçişi çalıştırır. | IMAGE | Hayır | - |
-| `mask` | İsteğe bağlı inpaint maskesi; bir giriş görüntüsü gerektirir. Beyaz alanlar yeniden oluşturulur ve siyah alanlar korunur. | MASK | Hayır | - |
-| `strength` | Giriş görüntüsünün ne kadar dönüştürüleceği. Yalnızca bir görüntü bağlandığında kullanılır. Gelişmiş ayar. Varsayılan: 0.6. | FLOAT | Evet | 0.01 ile 1.0 arası (adım: 0.01) |
+| `görüntü` | İsteğe bağlı kaynak görüntü. Tek başına verildiğinde görüntüden görüntüye çalışır; bir maskeyle birlikte verildiğinde bir inpaint geçişi çalıştırır. | IMAGE | Hayır | - |
+| `maske` | İsteğe bağlı inpaint maskesi; bir giriş görüntüsü gerektirir. Beyaz alanlar yeniden oluşturulur ve siyah alanlar korunur. | MASK | Hayır | - |
+| `güç` | Giriş görüntüsünün ne kadar dönüştürüleceği. Yalnızca bir görüntü bağlandığında kullanılır. Gelişmiş ayar. Varsayılan: 0.6. | FLOAT | Evet | 0.01 ile 1.0 arası (adım: 0.01) |
 | `prompt_expansion` | Daha zengin doku ayrıntısı için istemi bir dil modeliyle genişletir. Genişletme, istemi bir fotoğraf olarak yeniden çerçevelediğinden ve metalness haritasını soluklaştırma eğiliminde olduğundan varsayılan olarak kapalıdır. Gelişmiş ayar. | BOOLEAN | Evet | true<br>false |
 | `safety_checker` | Sağlayıcının içerik güvenliği denetimini istek üzerinde çalıştırır. Gelişmiş ayar. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
 

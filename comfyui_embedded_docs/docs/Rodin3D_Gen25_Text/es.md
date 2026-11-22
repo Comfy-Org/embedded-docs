@@ -9,19 +9,19 @@ Genera un modelo 3D a partir de un texto de indicación usando la API Rodin Gen-
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Texto de indicación para el modelo 3D. | STRING | Sí | 1 a 1024 caracteres |
-| `mode` | El modo de calidad y velocidad de generación. "Fast" es el más rápido; "Extreme-High" produce la mayor calidad, pero tarda más. | COMBO | Sí | `"Fast"`<br>`"Regular"`<br>`"Extreme-High"` |
+| `modo` | El modo de calidad y velocidad de generación. "Fast" es el más rápido; "Extreme-High" produce la mayor calidad, pero tarda más. | COMBO | Sí | `"Fast"`<br>`"Regular"`<br>`"Extreme-High"` |
 | `material` | El estilo de material para el modelo 3D generado. | COMBO | Sí | `"PBR"`<br>`"Matte"`<br>`"Shiny"` |
-| `geometry_file_format` | El formato de archivo para el modelo 3D de salida. | COMBO | Sí | `"glb"`<br>`"obj"`<br>`"stl"`<br>`"usdz"` |
-| `texture_mode` | Modo de generación de texturas. "None" no produce texturas; "Generated" crea texturas estándar; "Generated+HD" crea texturas de alta definición. | COMBO | Sí | `"None"`<br>`"Generated"`<br>`"Generated+HD"` |
-| `seed` | Semilla aleatoria para resultados reproducibles. Usar la misma semilla con las mismas entradas producirá la misma salida. | INT | Sí | 0 a 2147483647 |
+| `formato_archivo_geometría` | El formato de archivo para el modelo 3D de salida. | COMBO | Sí | `"glb"`<br>`"obj"`<br>`"stl"`<br>`"usdz"` |
+| `modo_textura` | Modo de generación de texturas. "None" no produce texturas; "Generated" crea texturas estándar; "Generated+HD" crea texturas de alta definición. | COMBO | Sí | `"None"`<br>`"Generated"`<br>`"Generated+HD"` |
+| `semilla` | Semilla aleatoria para resultados reproducibles. Usar la misma semilla con las mismas entradas producirá la misma salida. | INT | Sí | 0 a 2147483647 |
 | `TAPose` | Indica si se debe aplicar la pose en T (brazos extendidos) al modelo generado. | BOOLEAN | Sí | True / False |
-| `hd_texture` | Indica si se deben generar texturas de alta definición para el modelo. | BOOLEAN | Sí | True / False |
-| `texture_delight` | Indica si se debe aplicar realce de texturas (calidad de textura mejorada) al modelo. | BOOLEAN | Sí | True / False |
+| `textura_hd` | Indica si se deben generar texturas de alta definición para el modelo. | BOOLEAN | Sí | True / False |
+| `eliminar_iluminación_textura` | Indica si se debe aplicar realce de texturas (calidad de textura mejorada) al modelo. | BOOLEAN | Sí | True / False |
 | `addon_highpack` | Indica si se debe generar una versión de alta densidad de polígonos del modelo además de la estándar. | BOOLEAN | Sí | True / False |
-| `bbox_width` | El ancho de la caja delimitadora en unidades de mundo. | INT | Sí | 1 a 1000 |
-| `bbox_height` | La altura de la caja delimitadora en unidades de mundo. | INT | Sí | 1 a 1000 |
-| `bbox_length` | La longitud de la caja delimitadora en unidades de mundo. | INT | Sí | 1 a 1000 |
-| `height_cm` | La altura del modelo generado en centímetros. | INT | Sí | 1 a 300 |
+| `ancho_bbox` | El ancho de la caja delimitadora en unidades de mundo. | INT | Sí | 1 a 1000 |
+| `alto_bbox` | La altura de la caja delimitadora en unidades de mundo. | INT | Sí | 1 a 1000 |
+| `largo_bbox` | La longitud de la caja delimitadora en unidades de mundo. | INT | Sí | 1 a 1000 |
+| `altura_cm` | La altura del modelo generado en centímetros. | INT | Sí | 1 a 300 |
 
 **Nota:** El parámetro `prompt` debe tener entre 1 y 1024 caracteres. El parámetro `seed` tiene como valor predeterminado 0 (aleatorio) si no se especifica.
 

@@ -10,7 +10,7 @@ La selezione di un `model` determina quali input vengono visualizzati. Ideogram 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modello da utilizzare. `"ideogram-4.6"` genera fino a 4K con uno sfondo trasparente opzionale; `"ideogram-4.5"` è il modello precedente (predefinito: `"ideogram-4.6"`). | DYNAMIC_COMBO | Sì | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
+| `modello` | Modello da utilizzare. `"ideogram-4.6"` genera fino a 4K con uno sfondo trasparente opzionale; `"ideogram-4.5"` è il modello precedente (predefinito: `"ideogram-4.6"`). | DYNAMIC_COMBO | Sì | `"ideogram-4.6"`<br>`"ideogram-4.5"` |
 | `prompt` | Prompt testuale, oppure una didascalia JSON strutturata di Ideogram come un `final_prompt` precedente (predefinito: stringa vuota). | STRING | Sì | 1 a 10000 caratteri |
 | `magic_prompt` | Riscrive il prompt in una didascalia strutturata dettagliata prima della generazione; `"off"` mantiene la tua formulazione il più letterale possibile. La didascalia viene restituita come `final_prompt` (predefinito: `"auto"`). Questa è un'impostazione avanzata. | COMBO | Sì | `"auto"`<br>`"on"`<br>`"off"` |
 | `seed` | Seed per la generazione. La generazione da testo a immagine non è riproducibile dal solo seed perché il prompt viene riscritto a ogni esecuzione; per riprodurre un'immagine, riutilizza il suo `final_prompt` con `magic_prompt` impostato su `"off"`, lo stesso seed e le stesse impostazioni di modello, dimensione, qualità e sfondo (predefinito: 42). | INT | Sì | 0 a 2147483647 |

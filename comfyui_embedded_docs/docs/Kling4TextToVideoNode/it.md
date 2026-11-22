@@ -8,7 +8,7 @@ Genera un video da un prompt testuale con il modello Kling 4.0, inclusi i conten
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Selettore del modello. `"kling-4.0"` supporta fino a 4K HDR e 30 secondi; `"kling-4.0-flash"` è limitato a 720p e 20 secondi. Selezionando un modello vengono mostrati i relativi input di seguito. | DYNAMIC_COMBO | Sì | `"kling-4.0"`<br>`"kling-4.0-flash"` |
+| `modello` | Selettore del modello. `"kling-4.0"` supporta fino a 4K HDR e 30 secondi; `"kling-4.0-flash"` è limitato a 720p e 20 secondi. Selezionando un modello vengono mostrati i relativi input di seguito. | DYNAMIC_COMBO | Sì | `"kling-4.0"`<br>`"kling-4.0-flash"` |
 
 ### Input di kling-4.0
 
