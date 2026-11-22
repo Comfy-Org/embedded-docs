@@ -1,6 +1,6 @@
 # TypeSafe Jev (Pick Image)
 
-The TypeSafe Jev (Pick Image) node picks one image out of a batch. Connect `index` to Get Image from Batch to keep the picked image, or read `confidence` to decide whether the pick is good enough. This is an API node and requires a Comfy.org account and API key.
+The TypeSafe Jev (Pick Image) node picks one image out of a batch. Connect the same image batch to Get Image from Batch together with `index` to keep the picked image, or read `confidence` to decide whether the pick is good enough. This is an API node: it runs on Comfy's servers and needs a Comfy.org account with credits.
 
 ## Inputs
 
@@ -8,7 +8,7 @@ The TypeSafe Jev (Pick Image) node picks one image out of a batch. Connect `inde
 | --- | --- | --- | --- | --- |
 | `model` | Jev model to use. Only one model is currently available: `jev-1.14.0`. | COMBO | Yes | `"jev-1.14.0"` |
 | `question` | Which image to pick. Connect the prompt to `text` to pick the image that matches it best (default: `Which image best matches the prompt in text? If there is no text, which image has the best quality?`). | STRING | Yes | 1 to 1000 characters |
-| `images` | The images to choose from. A batched input counts once per image, so every image in the batch is a candidate. | IMAGE | Yes | 2 to 32 images |
+| `images` | The images to choose from. A batched input counts once per image, so every image in the batch is a candidate. The long side of every image is capped by the size of the batch before upload: 1568 px for up to 4 images, 1024 px for up to 8, 768 px for up to 16 and 512 px for up to 32, so a larger batch means less detail in every image. | IMAGE | Yes | 2 to 32 images |
 | `text` | The text the question is about, such as the prompt the images were made from. | STRING | No | 0 to 3000 characters |
 
 **Notes:**
