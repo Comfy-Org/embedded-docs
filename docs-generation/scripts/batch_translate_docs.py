@@ -159,6 +159,35 @@ def strip_ai_preamble(content: str, lang: str) -> str:
         logger.info("Stripped %d leaked preamble line(s) from %s", removed, lang)
     return cleaned
 
+def _apply_frontend_param_names(content: str, node_name: str, lang: str) -> str:
+    """Align Inputs parameter names with the ComfyUI frontend translation table."""
+    try:
+        import json as _json
+        import pathlib as _pathlib
+        import sys as _sys
+
+        _scripts = _pathlib.Path(__file__).resolve().parent
+        if str(_scripts) not in _sys.path:
+            _sys.path.insert(0, str(_scripts))
+        from update_param_translations import (
+            apply_frontend_param_names,
+            load_frontend_translations,
+        )
+
+        table = getattr(_apply_frontend_param_names, "_cache", None)
+        if table is None:
+            table = load_frontend_translations(persist=False)
+            _apply_frontend_param_names._cache = table
+        updated, applied = apply_frontend_param_names(content, node_name, lang, table)
+        if applied:
+            logger.info("Frontend param names applied for %s/%s: %d",
+                        node_name, lang, len(applied))
+        return updated
+    except Exception as exc:  # never fail a translation over a rename pass
+        logger.warning("Frontend param alignment skipped for %s/%s: %s", node_name, lang, exc)
+        return content
+
+
 def _extract_table_data_rows(table_text: str) -> list[str]:
     """Return the data rows of a markdown table (lines starting with '|'),
     excluding the header row and the |---| separator row."""
@@ -306,6 +335,11 @@ def translate_document(node_name, target_lang, lang_config, client, model):
             # (e.g. 'positive' translated to the same word as 'negative') causing duplicates in the Outputs table.
             # We parse the en.md Outputs table and force the first column to match.
             content = _fix_output_names_in_translation(content, full_en)
+
+            # Re-apply the frontend display names for the Inputs column. The prompt
+            # tells the model to keep parameter names in English, so without this the
+            # retranslation flattens previously localized names back to the schema key.
+            content = _apply_frontend_param_names(content, node_name, target_lang)
 
             disclaimer = create_translated_disclaimer(target_lang, node_name, lang_config)
             footer = format_source_hash_footer(src_fp_hex) if src_fp_hex else ""

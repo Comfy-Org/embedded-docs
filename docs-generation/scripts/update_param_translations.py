@@ -108,6 +108,58 @@ def extract_table_rows(content, table_type='inputs'):
     
     return lines, table_start
 
+INPUTS_SECTION_RE = re.compile(
+    r'^##\s+(?:输入|輸入|入力|입력|Входы|Entradas|Entrées|Eingaben|קלטים|Inputs|Input|'
+    r'المدخلات|Girdiler|ورودی‌ها)')
+H2_ONLY_RE = re.compile(r'^##(?!\s*#)')
+
+
+def build_rename_map(node_name, lang, frontend_translations):
+    """{schema_key: frontend display name} for a node and language."""
+    node_trans = (frontend_translations.get(lang) or {}).get(node_name) or {}
+    renames = {}
+    for param_name, param_data in (node_trans.get('inputs') or {}).items():
+        if not isinstance(param_data, dict):
+            continue
+        frontend_name = param_data.get('name', '')
+        if frontend_name and frontend_name != param_name:
+            renames[param_name] = frontend_name
+    return renames
+
+
+def apply_frontend_param_names(content, node_name, lang, frontend_translations):
+    """Rename Inputs-table parameters to the frontend display names, in content.
+
+    The translation prompt tells the model to keep parameter names in English, so
+    every retranslation flattens localized names back to the schema key. Running
+    this right after translation is what keeps the first column matching the
+    frontend (PR #146). Returns (content, renames_applied).
+    """
+    renames = build_rename_map(node_name, lang, frontend_translations)
+    if not renames:
+        return content, []
+    lines = content.split('\n')
+    in_inputs = False
+    applied = []
+    for i, line in enumerate(lines):
+        if INPUTS_SECTION_RE.match(line):
+            in_inputs = True
+            continue
+        if H2_ONLY_RE.match(line):
+            in_inputs = False
+            continue
+        if not (in_inputs and line.strip().startswith('|')):
+            continue
+        for param_name, frontend_name in renames.items():
+            updated = update_parameter_name_in_row(line, param_name, frontend_name)
+            if updated != line:
+                lines[i] = updated
+                line = updated
+                applied.append(f'{param_name} -> {frontend_name}')
+                break
+    return '\n'.join(lines), applied
+
+
 def update_parameter_name_in_row(row, old_param_name, new_param_name):
     """Update parameter name in a table row while preserving backticks and structure"""
     # DynamicCombo sub-params: frontend key uses underscores (model_aspect_ratio),
