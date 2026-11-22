@@ -2,6 +2,8 @@
 
 Klont eine Stimme aus einer Aufnahme eines einzelnen Sprechers mit der Voice 1.0-Engine von HeyGen. Der Node lädt die Aufnahme hoch, erstellt einen sofortigen Stimmklon, wartet, bis HeyGen die Verarbeitung abgeschlossen hat, und gibt die `voice_id` zurück. Verbinden Sie diese mit HeyGen Voice 1.0 Text to Speech oder mit `custom_voice_id` in HeyGen Avatar Video und HeyGen Talking Photo. Das Erstellen des Klons ist kostenlos; die mit der Stimme generierte Sprachausgabe wird Ihnen in Rechnung gestellt.
 
+**Hinweis:** Dieser Node ist im Quellcode als veraltet markiert. Verwenden Sie HeyGen Voice 1.0 Instant Clone Text to Speech, um eine Stimme zu klonen und Text in einem einzigen Node zu sprechen.
+
 ## Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
@@ -12,7 +14,7 @@ Klont eine Stimme aus einer Aufnahme eines einzelnen Sprechers mit der Voice 1.0
 | `Hintergrundrauschen entfernen` | Hintergrundgeräusche in der Aufnahme vor dem Klonen bereinigen (Standard: True). | BOOLEAN | Ja | True<br>False |
 | `Seed` | Ändern Sie den Seed, um die Aufnahme erneut zu klonen; jeder Klon ist eine etwas andere Stimme (Standard: 42). | INT | Ja | 0 bis 2147483647 |
 
-**Hinweis:** Die Stimme wird als "ComfyUI Voice" in Ihrem HeyGen-Konto erstellt, und der Node gibt die `voice_id` in der Benutzeroberfläche aus, sodass Sie sie zur Wiederverwendung kopieren können. Lassen Sie `language` auf "auto", es sei denn, der Sprecher spricht eine Sprache, die leicht mit einer eng verwandten Sprache verwechselt werden kann. Die Eingabe `seed` enthält in der Benutzeroberfläche ein festes Steuerelement „Control After Generate“, ändern Sie es daher manuell, wenn Sie einen weiteren Klon wünschen.
+**Hinweis:** Die Stimme wird als "ComfyUI Voice" in Ihrem HeyGen-Konto erstellt, und die `voice_id` erscheint an ihrem Ausgang, verbinden Sie also einen Textanzeige-Node, um sie zu lesen. Lassen Sie `language` auf "auto", es sei denn, der Sprecher spricht eine Sprache, die leicht mit einer eng verwandten Sprache verwechselt werden kann. Die Eingabe `seed` enthält in der Benutzeroberfläche ein festes Steuerelement „Control After Generate“, ändern Sie es daher manuell, wenn Sie einen weiteren Klon wünschen.
 
 ## Ausgaben
 
@@ -23,4 +25,4 @@ Klont eine Stimme aus einer Aufnahme eines einzelnen Sprechers mit der Voice 1.0
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceCloneNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `0bf5c7170d140936841cc4afd28022574df8e4c2280137607dcfca8e36862317`
+**Source fingerprint (SHA-256):** `a44924942311ca520e8d77d89119cb56c1b8030124ce608ae89efd72a0e2ad28`
