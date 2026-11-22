@@ -8,13 +8,13 @@ ElevenLabs Metinden Ses Efektleri düğümü, bir metin açıklamasından ses ef
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Ses efekti üretimi için kullanılacak model. Şu anda yalnızca bir model mevcuttur: `eleven_sfx_v2`. | DYNAMIC_COMBO | Evet | `"eleven_sfx_v2"` |
-| `metin` | Oluşturulacak ses efektinin metin açıklaması. (varsayılan: boş) | STRING | Evet | N/A |
+| `model` | Ses efekti üretimi için kullanılacak model. İki model mevcuttur: `eleven_sfx_v3` (varsayılan) ve `eleven_sfx_v2`. | DYNAMIC_COMBO | Evet | `"eleven_sfx_v3"`<br>`"eleven_sfx_v2"` |
+| `metin` | Oluşturulacak ses efektinin metin açıklaması. İngilizce olarak en fazla 450 karakter yazın; diğer dillerdeki istemler genellikle sese dönüşmek yerine yüksek sesle okunur. (varsayılan: boş) | STRING | Evet | 1 ila 450 karakter |
 | `çıktı_formatı` | Ses çıkış formatı. | COMBO | Evet | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
-### eleven_sfx_v2 Girdileri
+### eleven_sfx_v3 ve eleven_sfx_v2 Girdileri
 
-Bu parametreler, `eleven_sfx_v2` modeli seçildiğinde gösterilir.
+Bu parametreler, iki modelden biri seçildiğinde gösterilir; ikisi de aynı ayarları kullanır.
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
@@ -22,7 +22,7 @@ Bu parametreler, `eleven_sfx_v2` modeli seçildiğinde gösterilir.
 | `loop` | Sorunsuz döngü yapan bir ses efekti oluşturur. (varsayılan: False) | BOOLEAN | Hayır | True<br>False |
 | `prompt_influence` | Üretimin istemi ne kadar yakından takip ettiği. Daha yüksek değerler sesin metni daha yakından takip etmesini sağlar. (varsayılan: 0.3) | FLOAT | Evet | 0.0 ila 1.0 |
 
-**Not:** `text` parametresi boş olmamalıdır; ses üretim isteği gönderilmeden önce doğrulanır.
+**Not:** `text` parametresi 1 ila 450 karakter içermelidir; ses üretim isteği gönderilmeden önce doğrulanır.
 
 ## Çıktılar
 
@@ -33,4 +33,4 @@ Bu parametreler, `eleven_sfx_v2` modeli seçildiğinde gösterilir.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToSoundEffects/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `218ff617256cea33f310c1bcfc6407c46aaadc59201a0324b0ec64583166ce58`
+**Source fingerprint (SHA-256):** `bf7735aed642b2d795a18f7ca2631cab6856a2e0980f4c9e7a8699f08784177c`

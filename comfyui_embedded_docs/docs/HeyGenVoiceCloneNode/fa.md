@@ -2,6 +2,8 @@
 
 یک صدا را از ضبط یک گوینده با موتور Voice 1.0 شرکت HeyGen کلون کنید. این گره ضبط را بارگذاری می‌کند، یک کلون صوتی فوری می‌سازد، منتظر می‌ماند تا HeyGen پردازش آن را تمام کند، و `voice_id` را برمی‌گرداند. آن را به HeyGen Voice 1.0 Text to Speech یا به `custom_voice_id` در HeyGen Avatar Video و HeyGen Talking Photo متصل کنید. ساخت کلون رایگان است؛ برای گفتاری که با این صدا تولید می‌کنید از شما هزینه دریافت می‌شود.
 
+**توجه:** این گره در کد منبع به‌عنوان منسوخ علامت‌گذاری شده است. برای کلون کردن صدا و بیان متن در یک گره، از HeyGen Voice 1.0 Instant Clone Text to Speech استفاده کنید.
+
 ## ورودی‌ها
 
 | پارامتر | توضیحات | نوع داده | الزامی | بازه |
@@ -23,4 +25,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceCloneNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `0bf5c7170d140936841cc4afd28022574df8e4c2280137607dcfca8e36862317`
+**Source fingerprint (SHA-256):** `a44924942311ca520e8d77d89119cb56c1b8030124ce608ae89efd72a0e2ad28`

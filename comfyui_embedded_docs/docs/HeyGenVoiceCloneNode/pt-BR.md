@@ -2,6 +2,8 @@
 
 Clone uma voz a partir de uma gravação de um único falante com o mecanismo Voice 1.0 da HeyGen. O nó faz o upload da gravação, cria um clone de voz instantâneo, aguarda até que a HeyGen termine de processá-lo e retorna o `voice_id`. Conecte-o ao HeyGen Voice 1.0 Text to Speech, ou a `custom_voice_id` em HeyGen Avatar Video e HeyGen Talking Photo. A criação do clone é gratuita; você é cobrado pela fala que gerar com a voz.
 
+**Nota:** Este nó está marcado como obsoleto no código-fonte. Use o HeyGen Voice 1.0 Instant Clone Text to Speech para clonar uma voz e falar o texto em um único nó.
+
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
@@ -23,4 +25,4 @@ Clone uma voz a partir de uma gravação de um único falante com o mecanismo Vo
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceCloneNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `0bf5c7170d140936841cc4afd28022574df8e4c2280137607dcfca8e36862317`
+**Source fingerprint (SHA-256):** `a44924942311ca520e8d77d89119cb56c1b8030124ce608ae89efd72a0e2ad28`

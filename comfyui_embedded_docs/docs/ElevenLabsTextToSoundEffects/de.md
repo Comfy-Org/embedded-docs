@@ -8,13 +8,13 @@ Der ElevenLabs Text to Sound Effects-Node erzeugt Audio-Klangeffekte aus einer T
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modell für die Klangeffektgenerierung. Derzeit ist nur ein Modell verfügbar: `eleven_sfx_v2`. | DYNAMIC_COMBO | Ja | `"eleven_sfx_v2"` |
-| `text` | Textbeschreibung des zu generierenden Klangeffekts. (Standard: leer) | STRING | Ja | N/A |
+| `model` | Modell für die Klangeffektgenerierung. Zwei Modelle stehen zur Verfügung: `eleven_sfx_v3` (Standard) und `eleven_sfx_v2`. | DYNAMIC_COMBO | Ja | `"eleven_sfx_v3"`<br>`"eleven_sfx_v2"` |
+| `text` | Textbeschreibung des zu generierenden Klangeffekts. Schreiben Sie sie auf Englisch, maximal 450 Zeichen; Prompts in anderen Sprachen werden oft vorgelesen, statt in einen Klang umgewandelt zu werden. (Standard: leer) | STRING | Ja | 1 bis 450 Zeichen |
 | `output_format` | Audio-Ausgabeformat. | COMBO | Ja | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
-### eleven_sfx_v2 Eingaben
+### eleven_sfx_v3 und eleven_sfx_v2 Eingaben
 
-Diese Parameter werden angezeigt, wenn das Modell `eleven_sfx_v2` ausgewählt ist.
+Diese Parameter werden angezeigt, wenn eines der beiden Modelle ausgewählt ist; beide verwenden dieselben Einstellungen.
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
@@ -22,7 +22,7 @@ Diese Parameter werden angezeigt, wenn das Modell `eleven_sfx_v2` ausgewählt is
 | `loop` | Erstellt einen nahtlos in einer Schleife laufenden Klangeffekt. (Standard: False) | BOOLEAN | Nein | True<br>False |
 | `prompt_influence` | Wie genau die Generierung dem Prompt folgt. Höhere Werte bewirken, dass der Klang dem Text genauer folgt. (Standard: 0.3) | FLOAT | Ja | 0.0 bis 1.0 |
 
-**Hinweis:** Der Parameter `text` darf nicht leer sein; er wird validiert, bevor die Anfrage zur Klanggenerierung gesendet wird.
+**Hinweis:** Der Parameter `text` muss 1 bis 450 Zeichen enthalten; er wird validiert, bevor die Anfrage zur Klanggenerierung gesendet wird.
 
 ## Ausgaben
 
@@ -33,4 +33,4 @@ Diese Parameter werden angezeigt, wenn das Modell `eleven_sfx_v2` ausgewählt is
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToSoundEffects/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `218ff617256cea33f310c1bcfc6407c46aaadc59201a0324b0ec64583166ce58`
+**Source fingerprint (SHA-256):** `bf7735aed642b2d795a18f7ca2631cab6856a2e0980f4c9e7a8699f08784177c`

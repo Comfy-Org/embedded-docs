@@ -2,6 +2,8 @@
 
 استنسخ صوتًا من تسجيل لمتحدث واحد باستخدام محرك Voice 1.0 من HeyGen. ترفع العقدة التسجيل، وتنشئ استنساخًا صوتيًا فوريًا، وتنتظر حتى ينتهي HeyGen من معالجته، ثم تعيد `voice_id`. اربط ذلك بعقدة HeyGen Voice 1.0 Text to Speech، أو بـ `custom_voice_id` في HeyGen Avatar Video وHeyGen Talking Photo. إنشاء الاستنساخ مجاني؛ ويتم تحصيل التكلفة منك مقابل الكلام الذي تولّده باستخدام الصوت.
 
+**ملاحظة:** هذه العقدة مُعلَّمة كمهملة في الشيفرة المصدرية. استخدم HeyGen Voice 1.0 Instant Clone Text to Speech لاستنساخ صوت والتحدث به في عقدة واحدة.
+
 ## المدخلات
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
@@ -23,4 +25,4 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceCloneNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `0bf5c7170d140936841cc4afd28022574df8e4c2280137607dcfca8e36862317`
+**Source fingerprint (SHA-256):** `a44924942311ca520e8d77d89119cb56c1b8030124ce608ae89efd72a0e2ad28`

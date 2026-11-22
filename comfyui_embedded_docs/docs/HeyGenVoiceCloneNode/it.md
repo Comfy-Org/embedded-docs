@@ -2,6 +2,8 @@
 
 Clona una voce da una registrazione di un singolo parlante con il motore Voice 1.0 di HeyGen. Il nodo carica la registrazione, crea un clone vocale istantaneo, attende che HeyGen completi l'elaborazione e restituisce `voice_id`. Collegalo a HeyGen Voice 1.0 Text to Speech oppure a `custom_voice_id` in HeyGen Avatar Video e HeyGen Talking Photo. La creazione del clone è gratuita; ti viene addebitato il parlato generato con la voce.
 
+**Nota:** Questo nodo è contrassegnato come deprecato nel codice sorgente. Usa HeyGen Voice 1.0 Instant Clone Text to Speech per clonare una voce e pronunciare testo in un unico nodo.
+
 ## Input
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
@@ -23,4 +25,4 @@ Clona una voce da una registrazione di un singolo parlante con il motore Voice 1
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceCloneNode/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `0bf5c7170d140936841cc4afd28022574df8e4c2280137607dcfca8e36862317`
+**Source fingerprint (SHA-256):** `a44924942311ca520e8d77d89119cb56c1b8030124ce608ae89efd72a0e2ad28`

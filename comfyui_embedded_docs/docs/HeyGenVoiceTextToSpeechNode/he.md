@@ -1,6 +1,6 @@
 # HeyGen Voice 1.0 Text to Speech
 
-מקריא טקסט בקול משובט באמצעות HeyGen Voice 1.0 Instant Clone. הצומת שולח את הטקסט ואת מזהה הקול ל-HeyGen ומחזיר את הדיבור שנוצר כאודיו. זמינים שני מודלים: `heygen-voice-1` והמהיר והזול יותר `heygen-voice-1-turbo`.
+מקריא טקסט בקול של HeyGen. הצומת שולח את הטקסט ואת מזהה הקול ל-HeyGen ומחזיר את הדיבור שנוצר כאודיו. זמינים שני מודלים: `heygen-voice-1` והמהיר והזול יותר `heygen-voice-1-turbo`. כדי להקריא בקול משובט מהקלטה, השתמשו ב-HeyGen Voice 1.0 Instant Clone Text to Speech.
 
 בחירת `model` חושפת את הפרמטרים הספציפיים לאותו מודל.
 
@@ -9,12 +9,12 @@
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
 | `model` | מודל לשימוש. `heygen-voice-1-turbo` מהיר יותר וזול יותר. בחירת מודל חושפת את הפרמטרים הספציפיים לו: `voice_id`, `text`, `language`, ו-`expressiveness_boost`. | DYNAMIC_COMBO | כן | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
-| `voice_id` | קול מ-HeyGen Voice 1.0 Instant Clone (ברירת מחדל: ריק). | STRING | כן | N/A |
+| `voice_id` | מזהה של קול HeyGen, למשל מספריית הקולות של HeyGen (ברירת מחדל: ריק). | STRING | כן | N/A |
 | `text` | טקסט להקראה. עד 5000 תווים; דיבור ארוך מכ-12 דקות נכשל, לכן פצל טקסט סיני או יפני ארוך מאוד (ברירת מחדל: ריק). | STRING | כן | 1 עד 5000 תווים |
 | `language` | שפה של הטקסט. יש להגדיר אותה לשפות קרובות כגון סרבית או מלאית, שזיהוי אוטומטי עשוי להתבלבל בהן (ברירת מחדל: `"auto"`). | COMBO | כן | `"auto"`<br>מספר ערכות שפה מוגדרות מראש |
 | `expressiveness_boost` | ערכים גבוהים יותר אקספרסיביים יותר; ערכים נמוכים יותר נשארים קרובים יותר לקול המקורי (ברירת מחדל: 0.5). | FLOAT | כן | 0.0 עד 1.0 (בצעדים של 0.05) |
 
-**הערה:** `voice_id` חייב להיות קול שנוצר על ידי HeyGen Voice 1.0 Instant Clone; הצומת עוצר עם שגיאה כשהוא ריק. `text` חייב להכיל לפחות תו אחד.
+**הערה:** `voice_id` לא יכול להיות ריק; כשהוא חסר, הצומת עוצר עם שגיאה. `text` חייב להכיל לפחות תו אחד.
 
 ## פלטים
 
@@ -25,4 +25,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceTextToSpeechNode/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `936cb63237681779dd4d9a74d048afae93160638d069be6b16e5855d333e584a`
+**Source fingerprint (SHA-256):** `d5bc03344341f2562d4bdca3a8503928a0dbbf7bd2b85df073bd04ab20b4be98`

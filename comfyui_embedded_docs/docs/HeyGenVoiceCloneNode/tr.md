@@ -2,6 +2,8 @@
 
 HeyGen'in Voice 1.0 motoruyla tek konuşmacılı bir kayıttan ses klonlayın. Düğüm kaydı yükler, anında bir ses klonu oluşturur, HeyGen işlemeyi bitirene kadar bekler ve `voice_id` değerini döndürür. Bunu HeyGen Voice 1.0 Text to Speech'e veya HeyGen Avatar Video ve HeyGen Talking Photo içindeki `custom_voice_id` alanına bağlayın. Klon oluşturmak ücretsizdir; sesle oluşturduğunuz konuşma için faturalandırılırsınız.
 
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir. Bir sesi klonlayıp metni tek bir düğümde konuşturmak için HeyGen Voice 1.0 Instant Clone Text to Speech kullanın.
+
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
@@ -23,4 +25,4 @@ HeyGen'in Voice 1.0 motoruyla tek konuşmacılı bir kayıttan ses klonlayın. D
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceCloneNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `0bf5c7170d140936841cc4afd28022574df8e4c2280137607dcfca8e36862317`
+**Source fingerprint (SHA-256):** `a44924942311ca520e8d77d89119cb56c1b8030124ce608ae89efd72a0e2ad28`

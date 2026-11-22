@@ -2,6 +2,8 @@
 
 שכפול קול מהקלטה של דובר אחד באמצעות מנוע Voice 1.0 של HeyGen. הצומת מעלה את ההקלטה, יוצר שכפול קול מיידי, ממתין עד ש-HeyGen מסיים לעבד אותה, ומחזיר את `voice_id`. חברו אותו לצומת HeyGen Voice 1.0 Text to Speech, או ל-`custom_voice_id` בצמתים HeyGen Avatar Video ו-HeyGen Talking Photo. יצירת השכפול היא בחינם; החיוב הוא עבור הדיבור שתייצרו באמצעות הקול.
 
+**הערה:** צומת זה מסומן כמיושן בקוד המקור. השתמשו ב-HeyGen Voice 1.0 Instant Clone Text to Speech כדי לשבט קול ולהקריא טקסט בצומת אחד.
+
 ## קלטים
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
@@ -23,4 +25,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceCloneNode/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `0bf5c7170d140936841cc4afd28022574df8e4c2280137607dcfca8e36862317`
+**Source fingerprint (SHA-256):** `a44924942311ca520e8d77d89119cb56c1b8030124ce608ae89efd72a0e2ad28`
