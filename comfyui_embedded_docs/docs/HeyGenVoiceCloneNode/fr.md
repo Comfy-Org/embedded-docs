@@ -14,7 +14,7 @@ Clonez une voix à partir d’un enregistrement d’un seul locuteur avec le mot
 | `remove_background_noise` | Nettoyer le bruit de fond dans l’enregistrement avant le clonage (par défaut : True). | BOOLEAN | Oui | True<br>False |
 | `seed` | Modifiez la `seed` pour cloner à nouveau l’enregistrement ; chaque clone est une voix légèrement différente (par défaut : 42). | INT | Oui | 0 à 2147483647 |
 
-**Remarque :** La voix est créée sous le nom « ComfyUI Voice » dans votre compte HeyGen, et le nœud affiche le `voice_id` dans l’interface afin que vous puissiez le copier pour le réutiliser. Laissez `language` sur « auto » sauf si le locuteur parle une langue facilement confondue avec une langue étroitement apparentée. L’entrée `seed` inclut un contrôle fixe Control After Generate dans l’interface ; modifiez-la manuellement lorsque vous souhaitez un autre clone.
+**Remarque :** La voix est créée sous le nom « ComfyUI Voice » dans votre compte HeyGen, et le `voice_id` apparaît dans sa sortie : connectez un nœud d’affichage de texte pour le lire. Laissez `language` sur « auto » sauf si le locuteur parle une langue facilement confondue avec une langue étroitement apparentée. L’entrée `seed` inclut un contrôle fixe Control After Generate dans l’interface ; modifiez-la manuellement lorsque vous souhaitez un autre clone.
 
 ## Sorties
 

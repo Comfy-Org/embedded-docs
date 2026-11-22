@@ -20,7 +20,7 @@
 
 | 輸出名稱 | 描述 | 資料類型 |
 |-------------|-------------|-----------|
-| `AUDIO` | 根據文字生成並以複製語音朗讀的語音。 | AUDIO |
+| `AUDIO` | 根據文字生成並以所選語音朗讀的語音。 | AUDIO |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceTextToSpeechNode/zh-TW.md)
 

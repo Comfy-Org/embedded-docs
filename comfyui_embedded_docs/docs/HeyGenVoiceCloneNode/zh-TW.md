@@ -14,7 +14,7 @@
 | `remove_background_noise` | 在克隆前清除錄音中的背景噪音（預設：True）。 | BOOLEAN | 是 | True<br>False |
 | `seed` | 變更 `seed` 以再次克隆錄音；每次克隆的聲音都會略有不同（預設：42）。 | INT | 是 | 0 至 2147483647 |
 
-**注意：** 該聲音會在您的 HeyGen 帳戶中建立為 "ComfyUI Voice"，且節點會在 UI 中顯示 `voice_id`，方便您複製以供重複使用。除非說話者所說的語言容易與密切相關的語言混淆，否則請將 `language` 保持在 "auto"。`seed` 輸入在 UI 中包含固定的 Control After Generate 控制項，因此當您想要另一個克隆時，請手動變更它。
+**注意：** 該聲音會在您的 HeyGen 帳戶中建立為 "ComfyUI Voice"，且 `voice_id` 會出現在輸出中，連接文字顯示節點即可查看。除非說話者所說的語言容易與密切相關的語言混淆，否則請將 `language` 保持在 "auto"。`seed` 輸入在 UI 中包含固定的 Control After Generate 控制項，因此當您想要另一個克隆時，請手動變更它。
 
 ## 輸出
 

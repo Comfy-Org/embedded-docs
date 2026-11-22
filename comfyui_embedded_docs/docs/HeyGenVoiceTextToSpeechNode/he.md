@@ -20,7 +20,7 @@
 
 | שם פלט | תיאור | סוג נתונים |
 |-------------|-------------|-----------|
-| `AUDIO` | הדיבור שנוצר מהטקסט, מוקרא בקול המשובט. | AUDIO |
+| `AUDIO` | הדיבור שנוצר מהטקסט, מוקרא בקול הנבחר. | AUDIO |
 
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceTextToSpeechNode/he.md)
 

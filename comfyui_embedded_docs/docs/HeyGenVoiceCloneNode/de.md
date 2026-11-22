@@ -14,7 +14,7 @@ Klont eine Stimme aus einer Aufnahme eines einzelnen Sprechers mit der Voice 1.0
 | `remove_background_noise` | Hintergrundgeräusche in der Aufnahme vor dem Klonen bereinigen (Standard: True). | BOOLEAN | Ja | True<br>False |
 | `seed` | Ändern Sie den Seed, um die Aufnahme erneut zu klonen; jeder Klon ist eine etwas andere Stimme (Standard: 42). | INT | Ja | 0 bis 2147483647 |
 
-**Hinweis:** Die Stimme wird als "ComfyUI Voice" in Ihrem HeyGen-Konto erstellt, und der Node gibt die `voice_id` in der Benutzeroberfläche aus, sodass Sie sie zur Wiederverwendung kopieren können. Lassen Sie `language` auf "auto", es sei denn, der Sprecher spricht eine Sprache, die leicht mit einer eng verwandten Sprache verwechselt werden kann. Die Eingabe `seed` enthält in der Benutzeroberfläche ein festes Steuerelement „Control After Generate“, ändern Sie es daher manuell, wenn Sie einen weiteren Klon wünschen.
+**Hinweis:** Die Stimme wird als "ComfyUI Voice" in Ihrem HeyGen-Konto erstellt, und die `voice_id` erscheint an ihrem Ausgang, verbinden Sie also einen Textanzeige-Node, um sie zu lesen. Lassen Sie `language` auf "auto", es sei denn, der Sprecher spricht eine Sprache, die leicht mit einer eng verwandten Sprache verwechselt werden kann. Die Eingabe `seed` enthält in der Benutzeroberfläche ein festes Steuerelement „Control After Generate“, ändern Sie es daher manuell, wenn Sie einen weiteren Klon wünschen.
 
 ## Ausgaben
 

@@ -14,7 +14,7 @@ HeyGen'in Voice 1.0 motoruyla tek konuşmacılı bir kayıttan ses klonlayın. D
 | `remove_background_noise` | Klonlamadan önce kayıttaki arka plan gürültüsünü temizleyin (varsayılan: True). | BOOLEAN | Evet | True<br>False |
 | `seed` | Kaydı yeniden klonlamak için tohumu değiştirin; her klon biraz farklı bir sestir (varsayılan: 42). | INT | Evet | 0 ile 2147483647 arası |
 
-**Not:** Ses, HeyGen hesabınızda "ComfyUI Voice" olarak oluşturulur ve düğüm, yeniden kullanmak üzere kopyalayabilmeniz için `voice_id` değerini arayüzde yazdırır. Konuşmacı, yakından ilişkili bir dille kolayca karıştırılabilecek bir dil konuşmuyorsa `language` değerini "auto" olarak bırakın. `seed` girdisi, arayüzde sabit bir Control After Generate kontrolü içerir, bu nedenle başka bir klon istediğinizde onu elle değiştirin.
+**Not:** Ses, HeyGen hesabınızda "ComfyUI Voice" olarak oluşturulur ve `voice_id` düğümün çıktısında görünür, okumak için bir metin görüntüleme düğümü bağlayın. Konuşmacı, yakından ilişkili bir dille kolayca karıştırılabilecek bir dil konuşmuyorsa `language` değerini "auto" olarak bırakın. `seed` girdisi, arayüzde sabit bir Control After Generate kontrolü içerir, bu nedenle başka bir klon istediğinizde onu elle değiştirin.
 
 ## Çıktılar
 

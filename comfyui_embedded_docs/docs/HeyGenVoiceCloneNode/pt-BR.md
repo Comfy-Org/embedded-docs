@@ -14,7 +14,7 @@ Clone uma voz a partir de uma gravação de um único falante com o mecanismo Vo
 | `remove_background_noise` | Limpa o ruído de fundo da gravação antes da clonagem (padrão: True). | BOOLEAN | Sim | True<br>False |
 | `seed` | Altere a seed para clonar a gravação novamente; cada clone é uma voz ligeiramente diferente (padrão: 42). | INT | Sim | 0 a 2147483647 |
 
-**Observação:** A voz é criada como "ComfyUI Voice" na sua conta HeyGen, e o nó imprime o `voice_id` na UI para que você possa copiá-lo para reutilização. Deixe `language` em "auto" a menos que o falante fale um idioma que possa ser facilmente confundido com outro proximamente relacionado. A entrada `seed` inclui um controle fixo Control After Generate na UI, então altere-o manualmente quando quiser outro clone.
+**Observação:** A voz é criada como "ComfyUI Voice" na sua conta HeyGen, e o `voice_id` aparece na saída dele, então conecte um nó de exibição de texto para lê-lo. Deixe `language` em "auto" a menos que o falante fale um idioma que possa ser facilmente confundido com outro proximamente relacionado. A entrada `seed` inclui um controle fixo Control After Generate na UI, então altere-o manualmente quando quiser outro clone.
 
 ## Saídas
 

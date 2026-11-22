@@ -20,7 +20,7 @@ La sélection d’un `model` révèle les paramètres spécifiques à ce modèle
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `AUDIO` | La parole générée à partir du texte, prononcée avec la voix clonée. | AUDIO |
+| `AUDIO` | La parole générée à partir du texte, prononcée avec la voix sélectionnée. | AUDIO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVoiceTextToSpeechNode/fr.md)
 
