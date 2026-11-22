@@ -6,7 +6,7 @@ Il nodo Empty Ace Step 1.0 Latent Audio crea campioni audio latenti vuoti per un
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `seconds` | La durata dell'audio in secondi (predefinito: 120.0, passo: 0.1) | FLOAT | Sì | 1.0 - 1000.0 |
+| `secondi` | La durata dell'audio in secondi (predefinito: 120.0, passo: 0.1) | FLOAT | Sì | 1.0 - 1000.0 |
 | `batch_size` | Il numero di immagini latenti nel batch (predefinito: 1) | INT | Sì | 1 - 4096 |
 
 ## Output

@@ -6,8 +6,8 @@ Il nodo ModelSamplingAuraFlow applica una configurazione di campionamento specia
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello di diffusione a cui applicare la configurazione di campionamento AuraFlow | MODEL | Sì | - |
-| `shift` | Il valore di shift da applicare alla distribuzione di campionamento (predefinito: 1.73, passo: 0.01) | FLOAT | Sì | 0.0 - 100.0 |
+| `modello` | Il modello di diffusione a cui applicare la configurazione di campionamento AuraFlow | MODEL | Sì | - |
+| `spostamento` | Il valore di shift da applicare alla distribuzione di campionamento (predefinito: 1.73, passo: 0.01) | FLOAT | Sì | 0.0 - 100.0 |
 | `sampling` | La modalità di campionamento usata durante il patching del modello (predefinito: "flow"). Contrassegnata come opzione avanzata. | COMBO | No | "flow"<br>"img_to_img_velocity" |
 
 ## Output

@@ -6,8 +6,8 @@ Questo nodo utilizza l'API Tencent Hunyuan3D per eseguire lo svolgimento UV su u
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model_3d` | Modello 3D di input (GLB, OBJ o FBX). Il modello deve avere meno di 30000 facce. | FILE3D | Sì | GLB<br>OBJ<br>FBX |
-| `seed` | Il parametro `seed` controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: 1) | INT | No | 0 a 2147483647 |
+| `modello_3d` | Modello 3D di input (GLB, OBJ o FBX). Il modello deve avere meno di 30000 facce. | FILE3D | Sì | GLB<br>OBJ<br>FBX |
+| `seme` | Il parametro `seed` controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: 1) | INT | No | 0 a 2147483647 |
 
 ## Output
 

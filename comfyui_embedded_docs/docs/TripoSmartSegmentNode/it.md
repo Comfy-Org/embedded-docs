@@ -10,7 +10,7 @@ Suddivide un modello 3D in parti semanticamente significative e assegna un nome 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `source` | Segmenta un modello esistente oppure genera un modello da un'immagine e lo segmenta. L'opzione selezionata determina quali input aggiuntivi vengono mostrati. | DYNAMIC_COMBO | Sì | `"model"`<br>`"image"` |
+| `sorgente` | Segmenta un modello esistente oppure genera un modello da un'immagine e lo segmenta. L'opzione selezionata determina quali input aggiuntivi vengono mostrati. | DYNAMIC_COMBO | Sì | `"model"`<br>`"image"` |
 
 ### Input del modello
 

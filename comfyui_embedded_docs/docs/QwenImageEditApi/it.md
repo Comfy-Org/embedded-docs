@@ -8,8 +8,8 @@ Questo nodo utilizza i modelli Qwen-Image 3.0 per modificare o combinare fino a 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Modello da utilizzare. Questa selezione include anche il prompt testuale, fino a 3 input di immagini di riferimento e un prompt negativo opzionale. | DYNAMIC_COMBO | Sì | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
-| `size` | Risoluzione di output. "match input" riutilizza le dimensioni della prima immagine di riferimento, "auto" lascia che il modello scelga una dimensione con lo stesso rapporto d'aspetto, "custom" imposta una larghezza e un'altezza esplicite. | DYNAMIC_COMBO | Sì | "match input"<br>"auto"<br>"custom" |
+| `modello` | Modello da utilizzare. Questa selezione include anche il prompt testuale, fino a 3 input di immagini di riferimento e un prompt negativo opzionale. | DYNAMIC_COMBO | Sì | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
+| `dimensione` | Risoluzione di output. "match input" riutilizza le dimensioni della prima immagine di riferimento, "auto" lascia che il modello scelga una dimensione con lo stesso rapporto d'aspetto, "custom" imposta una larghezza e un'altezza esplicite. | DYNAMIC_COMBO | Sì | "match input"<br>"auto"<br>"custom" |
 | `n` | Numero di immagini da generare, restituite come batch. (predefinito: 1) | INT | No | da 1 a 6 |
 | `seed` | Seed da utilizzare per la generazione. (predefinito: 42) | INT | No | da 0 a 2147483647 |
 | `prompt_extend` | Se migliorare il prompt con l'assistenza AI. (predefinito: True) | BOOLEAN | No | True<br>False |

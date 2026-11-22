@@ -6,9 +6,9 @@ Il nodo LatentUpscaleBy è progettato per l'upscaling delle rappresentazioni lat
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `samples` | La rappresentazione latente delle immagini da sottoporre a upscaling. Questo parametro è cruciale per determinare i dati di input che verranno elaborati nel processo di upscaling. | `LATENT` |
-| `upscale_method` | Specifica il metodo utilizzato per l'upscaling dei campioni latenti. La scelta del metodo può influire significativamente sulla qualità e sulle caratteristiche dell'output sottoposto a upscaling. | COMBO[STRING] |
-| `scale_by` | Determina il fattore di scala applicato ai campioni latenti. Questo parametro influenza direttamente la risoluzione dell'output, consentendo un controllo preciso sul processo di upscaling. | `FLOAT` |
+| `campioni` | La rappresentazione latente delle immagini da sottoporre a upscaling. Questo parametro è cruciale per determinare i dati di input che verranno elaborati nel processo di upscaling. | `LATENT` |
+| `metodo di ingrandimento` | Specifica il metodo utilizzato per l'upscaling dei campioni latenti. La scelta del metodo può influire significativamente sulla qualità e sulle caratteristiche dell'output sottoposto a upscaling. | COMBO[STRING] |
+| `scala di` | Determina il fattore di scala applicato ai campioni latenti. Questo parametro influenza direttamente la risoluzione dell'output, consentendo un controllo preciso sul processo di upscaling. | `FLOAT` |
 
 ## Output
 

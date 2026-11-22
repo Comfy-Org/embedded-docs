@@ -6,7 +6,7 @@ Aggiunge un riempimento a un'immagine con un colore pieno o una copia speculare 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | L'immagine a cui aggiungere il riempimento. | IMAGE | Sì | - |
+| `immagine` | L'immagine a cui aggiungere il riempimento. | IMAGE | Sì | - |
 | `padding_type` | Quanto riempimento aggiungere: `"pad dimensions"` per quantità esatte per lato, `"pad by multiplier"` per una dimensione di output relativa all'input, oppure `"pad to multiple"` per raggiungere il multiplo successivo. Selezionando un'opzione vengono mostrati i relativi parametri. | DYNAMIC_COMBO | Sì | `"pad dimensions"`<br>`"pad by multiplier"`<br>`"pad to multiple"` |
 | `left` | Pixel da aggiungere a sinistra. Disponibile quando `padding_type` è `"pad dimensions"` (predefinito: 0). | INT | Sì | 0 a 16384 |
 | `top` | Pixel da aggiungere in alto. Disponibile quando `padding_type` è `"pad dimensions"` (predefinito: 0). | INT | Sì | 0 a 16384 |

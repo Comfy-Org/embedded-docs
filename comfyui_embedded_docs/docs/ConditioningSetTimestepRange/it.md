@@ -7,8 +7,8 @@ Questo nodo è progettato per regolare l'aspetto temporale del condizionamento i
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
 | `CONDITIONING` | L'input `CONDITIONING` rappresenta lo stato attuale del processo di generazione, che questo nodo modifica impostando un intervallo specifico di timestep. | CONDITIONING |
-| `start` | Il parametro `start` specifica l'inizio dell'intervallo di timestep come percentuale del processo di generazione totale, consentendo un controllo preciso su quando iniziano gli effetti del condizionamento. | `FLOAT` |
-| `end` | Il parametro `end` definisce il punto finale dell'intervallo di timestep come percentuale, consentendo un controllo preciso sulla durata e sulla conclusione degli effetti del condizionamento. | `FLOAT` |
+| `inizio` | Il parametro `start` specifica l'inizio dell'intervallo di timestep come percentuale del processo di generazione totale, consentendo un controllo preciso su quando iniziano gli effetti del condizionamento. | `FLOAT` |
+| `fine` | Il parametro `end` definisce il punto finale dell'intervallo di timestep come percentuale, consentendo un controllo preciso sulla durata e sulla conclusione degli effetti del condizionamento. | `FLOAT` |
 
 ## Output
 

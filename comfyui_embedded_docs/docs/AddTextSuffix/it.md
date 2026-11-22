@@ -7,7 +7,7 @@ Questo nodo aggiunge un suffisso specificato alla fine di una stringa di testo d
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `text` | Il testo originale a cui verrà aggiunto il suffisso. | STRING | Sì |  |
-| `suffix` | Il suffisso da aggiungere al testo (predefinito: ""). | STRING | No |  |
+| `suffisso` | Il suffisso da aggiungere al testo (predefinito: ""). | STRING | No |  |
 
 ## Output
 

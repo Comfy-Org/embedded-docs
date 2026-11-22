@@ -8,7 +8,7 @@ Modifica una o più immagini esistenti in base a un prompt testuale. Il nodo inv
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello di immagini Grok da utilizzare. I sotto-parametri mostrati di seguito cambiano in base al modello selezionato. | DYNAMIC_COMBO | Sì | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
+| `modello` | Il modello di immagini Grok da utilizzare. I sotto-parametri mostrati di seguito cambiano in base al modello selezionato. | DYNAMIC_COMBO | Sì | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
 | `prompt` | Il prompt testuale utilizzato per generare l'immagine. (predefinito: "") | STRING | Sì | N/D |
 | `seed` | Seed per determinare se il nodo deve essere rieseguito; i risultati effettivi sono non deterministici indipendentemente dal seed. (predefinito: 0) | INT | Sì | 0 a 2147483647 |
 

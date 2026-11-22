@@ -6,15 +6,15 @@ Il nodo WanImageToVideo prepara le rappresentazioni di condizionamento e latenti
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | Input di condizionamento positivo usato per guidare la generazione | CONDITIONING | Sì | - |
-| `negative` | Input di condizionamento negativo usato per guidare la generazione | CONDITIONING | Sì | - |
+| `positivo` | Input di condizionamento positivo usato per guidare la generazione | CONDITIONING | Sì | - |
+| `negativo` | Input di condizionamento negativo usato per guidare la generazione | CONDITIONING | Sì | - |
 | `vae` | Modello VAE usato per codificare le immagini nello spazio latente | VAE | Sì | - |
-| `width` | Larghezza del video generato (predefinito: 832, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
-| `height` | Altezza del video generato (predefinito: 480, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
-| `length` | Numero di frame nel video (predefinito: 81, passo: 4) | INT | Sì | da 1 a MAX_RESOLUTION |
-| `batch_size` | Numero di video da generare in un batch (predefinito: 1) | INT | Sì | da 1 a 4096 |
+| `larghezza` | Larghezza del video generato (predefinito: 832, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
+| `altezza` | Altezza del video generato (predefinito: 480, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
+| `lunghezza` | Numero di frame nel video (predefinito: 81, passo: 4) | INT | Sì | da 1 a MAX_RESOLUTION |
+| `dimensione_batch` | Numero di video da generare in un batch (predefinito: 1) | INT | Sì | da 1 a 4096 |
 | `clip_vision_output` | Output opzionale di CLIP vision aggiunto come condizionamento extra sia all'input positivo sia a quello negativo | CLIP_VISION_OUTPUT | No | - |
-| `start_image` | Immagine iniziale opzionale usata per inizializzare il video. Quando fornita, viene ridimensionata alla `width` e alla `height` specificate e posizionata all'inizio della sequenza di frame; eventuali frame oltre `length` vengono ignorati. I frame rimanenti vengono riempiti con valori di grigio neutro (0,5) a meno che non venga fornita `ref_pad_image`. | IMAGE | No | - |
+| `immagine_iniziale` | Immagine iniziale opzionale usata per inizializzare il video. Quando fornita, viene ridimensionata alla `width` e alla `height` specificate e posizionata all'inizio della sequenza di frame; eventuali frame oltre `length` vengono ignorati. I frame rimanenti vengono riempiti con valori di grigio neutro (0,5) a meno che non venga fornita `ref_pad_image`. | IMAGE | No | - |
 | `ref_pad_image` | Immagine di riferimento opzionale il cui primo frame sostituisce il riempimento grigio neutro della sequenza di frame. Viene ridimensionata alla `width` e alla `height` specificate, e viene usata solo la prima immagine del batch. Ha effetto solo quando è fornita anche `start_image`. | IMAGE | No | - |
 
 **Nota:** Quando viene fornita `start_image`, la sequenza di frame viene codificata con il VAE e viene applicata una maschera al condizionamento. La maschera è impostata a 0 per i frame coperti dall'immagine iniziale e a 1 per i frame rimanenti, così la generazione continua dall'immagine fornita. Durante la codifica vengono usati solo i primi tre canali di colore (RGB) dell'immagine. Sia il condizionamento positivo sia quello negativo ricevono la stessa immagine latente concatenata, la maschera e (se fornito) l'output di CLIP vision. Quando `ref_pad_image` viene fornita insieme a `start_image`, il suo primo frame viene ridimensionato a `width` e `height` e scritto nei canali RGB dei frame di riempimento prima che l'immagine iniziale venga posizionata sopra, così il riempimento trasporta l'immagine di riferimento invece del grigio uniforme. Questo è un riempimento anti-drift in stile SVI, usato da modelli come ID-V2V.

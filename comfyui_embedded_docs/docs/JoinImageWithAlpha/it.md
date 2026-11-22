@@ -6,7 +6,7 @@ Questo nodo è progettato per operazioni di compositing, in particolare per unir
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `image` | Il contenuto visivo principale da combinare con una maschera alpha. Rappresenta l'immagine senza informazioni di trasparenza. | `IMAGE` |
+| `immagine` | Il contenuto visivo principale da combinare con una maschera alpha. Rappresenta l'immagine senza informazioni di trasparenza. | `IMAGE` |
 | `alpha` | La maschera alpha che definisce la trasparenza dell'immagine corrispondente. Viene utilizzata per determinare quali parti dell'immagine devono essere trasparenti o semi-trasparenti. | `MASK` |
 
 ## Output

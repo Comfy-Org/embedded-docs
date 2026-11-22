@@ -6,7 +6,7 @@ Il nodo ImageHistogram analizza la distribuzione cromatica di un'immagine in inp
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | L'immagine di input da analizzare. Il nodo elabora la prima immagine del batch. | IMAGE | Sì | N/A |
+| `immagine` | L'immagine di input da analizzare. Il nodo elabora la prima immagine del batch. | IMAGE | Sì | N/A |
 
 ## Output
 

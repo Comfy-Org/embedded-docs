@@ -7,9 +7,9 @@ Riquadra un video a una nuova risoluzione e proporzioni. L'area esterna al video
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `video` | Video da riquadrare, fino a 60 secondi e 1800 fotogrammi, con ciascun lato compreso tra 64 e 4096 pixel. | VIDEO | Sì | - |
-| `resolution` | Dimensione e proporzioni dell'output, a 720p o 1080p. Predefinito: `"(1080p) 1080x1920 (9:16)"`. | COMBO | Sì | `"(720p) 720x720 (1:1)"`<br>`"(720p) 720x900 (4:5)"`<br>`"(720p) 900x720 (5:4)"`<br>`"(720p) 720x1280 (9:16)"`<br>`"(720p) 1280x720 (16:9)"`<br>`"(1080p) 1080x1080 (1:1)"`<br>`"(1080p) 1080x1350 (4:5)"`<br>`"(1080p) 1350x1080 (5:4)"`<br>`"(1080p) 1080x1920 (9:16)"`<br>`"(1080p) 1920x1080 (16:9)"` |
-| `placement` | Dove si trova il video originale nella nuova inquadratura. Il video riempie sempre un lato dell'inquadratura, quindi un'ancora lo sposta solo lungo l'altro lato. Predefinito: `"center"`. | DYNAMIC_COMBO | Sì | `"center"`<br>`"top"`<br>`"bottom"`<br>`"left"`<br>`"right"`<br>`"custom"` |
-| `seed` | Controlla se il nodo viene rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: 42. | INT | No | 0 a 4294967295 |
+| `risoluzione` | Dimensione e proporzioni dell'output, a 720p o 1080p. Predefinito: `"(1080p) 1080x1920 (9:16)"`. | COMBO | Sì | `"(720p) 720x720 (1:1)"`<br>`"(720p) 720x900 (4:5)"`<br>`"(720p) 900x720 (5:4)"`<br>`"(720p) 720x1280 (9:16)"`<br>`"(720p) 1280x720 (16:9)"`<br>`"(1080p) 1080x1080 (1:1)"`<br>`"(1080p) 1080x1350 (4:5)"`<br>`"(1080p) 1350x1080 (5:4)"`<br>`"(1080p) 1080x1920 (9:16)"`<br>`"(1080p) 1920x1080 (16:9)"` |
+| `posizionamento` | Dove si trova il video originale nella nuova inquadratura. Il video riempie sempre un lato dell'inquadratura, quindi un'ancora lo sposta solo lungo l'altro lato. Predefinito: `"center"`. | DYNAMIC_COMBO | Sì | `"center"`<br>`"top"`<br>`"bottom"`<br>`"left"`<br>`"right"`<br>`"custom"` |
+| `seme` | Controlla se il nodo viene rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: 42. | INT | No | 0 a 4294967295 |
 
 ### Input di Placement "custom"
 

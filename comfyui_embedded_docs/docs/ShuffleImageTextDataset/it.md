@@ -6,9 +6,9 @@ Questo nodo mescola insieme una lista di immagini e una lista di testi, mantenen
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `images` | Lista di immagini da mescolare. | IMAGE | Sì | - |
-| `texts` | Lista di testi da mescolare. | STRING | Sì | - |
-| `seed` | Seed casuale. L'ordine di mescolamento è determinato da questo valore (predefinito: 0). | INT | No | 0 a 18446744073709551615 |
+| `immagini` | Lista di immagini da mescolare. | IMAGE | Sì | - |
+| `testi` | Lista di testi da mescolare. | STRING | Sì | - |
+| `seme` | Seed casuale. L'ordine di mescolamento è determinato da questo valore (predefinito: 0). | INT | No | 0 a 18446744073709551615 |
 
 **Nota:** Gli input `images` e `texts` devono essere liste della stessa lunghezza. Il nodo abbinerà la prima immagine con il primo testo, la seconda immagine con il secondo testo, e così via, prima di mescolare insieme queste coppie.
 

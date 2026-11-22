@@ -6,10 +6,10 @@ Crea una nuova voce Breeze da una descrizione scritta. Fornisci una descrizione 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `description` | Descrizione della voce in 3 a 500 caratteri: età, genere, accento, tono, ritmo. Predefinito: vuoto. | STRING | Sì | 3 a 500 caratteri |
+| `descrizione` | Descrizione della voce in 3 a 500 caratteri: età, genere, accento, tono, ritmo. Predefinito: vuoto. | STRING | Sì | 3 a 500 caratteri |
 | `preview_text` | La frase che la nuova voce pronuncia nell'anteprima, fino a 500 caratteri. Scrivila nella lingua selezionata, perché la voce viene creata da questa anteprima. Predefinito: vuoto. | STRING | Sì | 1 a 500 caratteri |
-| `language` | Lingua del testo di anteprima. Inglese e cinese possono usare entrambi i modelli; le altre lingue usano Breeze TTS 2 Multilingual. | DYNAMIC_COMBO | Sì | Più opzioni disponibili |
-| `strength` | Quanto fedelmente la voce segue la descrizione. Predefinito: 4.0. | FLOAT | No | 1.0 a 10.0 (passo: 0.1) |
+| `lingua` | Lingua del testo di anteprima. Inglese e cinese possono usare entrambi i modelli; le altre lingue usano Breeze TTS 2 Multilingual. | DYNAMIC_COMBO | Sì | Più opzioni disponibili |
+| `intensità` | Quanto fedelmente la voce segue la descrizione. Predefinito: 4.0. | FLOAT | No | 1.0 a 10.0 (passo: 0.1) |
 | `seed` | Controlla se il nodo viene rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: 42. | INT | No | 0 a 2147483647 |
 
 ### Input per lingua "English" e "Chinese"

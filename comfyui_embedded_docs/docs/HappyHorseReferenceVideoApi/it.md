@@ -8,9 +8,9 @@ Questo nodo genera un video che ritrae una persona o un oggetto a partire da imm
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Il modello HappyHorse reference-to-video da utilizzare per la generazione. | DYNAMIC_COMBO | Sì | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
+| `modello` | Il modello HappyHorse reference-to-video da utilizzare per la generazione. | DYNAMIC_COMBO | Sì | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
 | `seed` | Seed da utilizzare per la generazione (predefinito: 0). Può essere impostato per cambiare automaticamente dopo ogni generazione. | INT | Sì | 0 a 2147483647 |
-| `watermark` | Indica se aggiungere una filigrana generata dall'IA al risultato (predefinito: False). | BOOLEAN | Sì | True o False |
+| `filigrana` | Indica se aggiungere una filigrana generata dall'IA al risultato (predefinito: False). | BOOLEAN | Sì | True o False |
 
 ### Input di HappyHorse 1.1 (happyhorse-1.1-r2v)
 

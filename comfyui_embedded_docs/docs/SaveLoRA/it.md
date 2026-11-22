@@ -7,8 +7,8 @@ Il nodo SaveLoRA salva un modello LoRA (Low-Rank Adaptation) in un file. Prende 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `lora` | Il modello LoRA da salvare. Non usare un modello con layer LoRA. | LORA_MODEL | Sì | N/A |
-| `prefix` | Il prefisso da usare per il file LoRA salvato (predefinito: "loras/ComfyUI_trained_lora"). | STRING | Sì | N/A |
-| `steps` | Opzionale: il numero di step per cui il LoRA è stato addestrato, usato per denominare il file salvato. | INT | No | N/A |
+| `prefisso` | Il prefisso da usare per il file LoRA salvato (predefinito: "loras/ComfyUI_trained_lora"). | STRING | Sì | N/A |
+| `passi` | Opzionale: il numero di step per cui il LoRA è stato addestrato, usato per denominare il file salvato. | INT | No | N/A |
 
 **Nota:** L'input `lora` deve essere un modello LoRA puro. Non fornire un modello di base a cui sono stati applicati layer LoRA.
 

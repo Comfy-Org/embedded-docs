@@ -6,14 +6,14 @@ Il nodo Kling Image to Video genera un breve video utilizzando un'immagine inizi
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `start_frame` | L'immagine di riferimento utilizzata per generare il video. L'immagine deve essere di almeno 300x300 pixel e avere un rapporto d'aspetto compreso tra 1:2.5 e 2.5:1. | IMAGE | Sì | - |
+| `frame_iniziale` | L'immagine di riferimento utilizzata per generare il video. L'immagine deve essere di almeno 300x300 pixel e avere un rapporto d'aspetto compreso tra 1:2.5 e 2.5:1. | IMAGE | Sì | - |
 | `prompt` | Prompt testuale positivo. Non deve essere vuoto. Massimo 500 caratteri. | STRING | Sì | - |
 | `negative_prompt` | Prompt testuale negativo. Massimo 500 caratteri. Lasciare vuoto se non utilizzato. | STRING | Sì | - |
 | `model_name` | Il modello utilizzato per la generazione del video. | COMBO | Sì | `"kling-v2-5-turbo"` |
 | `cfg_scale` | Controlla quanto fedelmente il video segue il prompt. Valori più alti indicano un'aderenza maggiore (predefinito: 0.8). | FLOAT | Sì | 0.0 a 1.0 |
-| `mode` | La modalità di generazione. | COMBO | Sì | `"pro"` |
-| `aspect_ratio` | Il rapporto d'aspetto del video generato (predefinito: `"16:9"`). | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `duration` | La durata del video generato in secondi (predefinito: `"5"`). | COMBO | Sì | `"5"`<br>`"10"` |
+| `modalità` | La modalità di generazione. | COMBO | Sì | `"pro"` |
+| `rapporto_d’aspetto` | Il rapporto d'aspetto del video generato (predefinito: `"16:9"`). | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `durata` | La durata del video generato in secondi (predefinito: `"5"`). | COMBO | Sì | `"5"`<br>`"10"` |
 
 ## Output
 

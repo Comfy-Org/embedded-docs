@@ -6,9 +6,9 @@ Il nodo `ImageCrop` è progettato per ritagliare le immagini a una larghezza e u
 
 | Campo | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `image` | L'immagine di input da ritagliare. Questo parametro è cruciale poiché definisce l'immagine sorgente da cui verrà estratta una regione in base alle dimensioni e alle coordinate specificate. | `IMAGE` |
-| `width` | Specifica la larghezza dell'immagine ritagliata. Questo parametro determina quanto sarà larga l'immagine ritagliata risultante. | `INT` |
-| `height` | Specifica l'altezza dell'immagine ritagliata. Questo parametro determina l'altezza dell'immagine ritagliata risultante. | `INT` |
+| `immagine` | L'immagine di input da ritagliare. Questo parametro è cruciale poiché definisce l'immagine sorgente da cui verrà estratta una regione in base alle dimensioni e alle coordinate specificate. | `IMAGE` |
+| `larghezza` | Specifica la larghezza dell'immagine ritagliata. Questo parametro determina quanto sarà larga l'immagine ritagliata risultante. | `INT` |
+| `altezza` | Specifica l'altezza dell'immagine ritagliata. Questo parametro determina l'altezza dell'immagine ritagliata risultante. | `INT` |
 | `x` | La coordinata x dell'angolo in alto a sinistra dell'area di ritaglio. Questo parametro imposta il punto di partenza per la dimensione della larghezza del ritaglio. | `INT` |
 | `y` | La coordinata y dell'angolo in alto a sinistra dell'area di ritaglio. Questo parametro imposta il punto di partenza per la dimensione dell'altezza del ritaglio. | `INT` |
 

@@ -10,15 +10,15 @@ Il nodo ByteDance Seedream 4.5 & 5.0 offre capacità unificate di generazione da
 |-----------|-------------|-----------|----------|-------|
 | `model` | Il modello Seedream da usare per la generazione. | STRING | Sì | "seedream 5.0 pro"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
 | `prompt` | Prompt testuale per creare o modificare un'immagine. Deve contenere almeno 1 carattere. | STRING | Sì | - |
-| `image` | Immagine/i di input per la generazione da immagine a immagine. Immagine/i di riferimento per la generazione con riferimento singolo o multiplo. Massimo 14 immagini di riferimento per seedream-5-0-260128, oppure 10 per gli altri modelli. | IMAGE | No | - |
-| `size_preset` | Scegli una dimensione consigliata. Seleziona Custom per usare la larghezza e l'altezza indicate di seguito. | STRING | No | Sono disponibili più opzioni |
-| `width` | Larghezza personalizzata per l'immagine. Il valore viene usato solo se `size_preset` è impostato su `Custom`. Predefinito: 2048. | INT | No | 1024 a 6240 (passo 2) |
-| `height` | Altezza personalizzata per l'immagine. Il valore viene usato solo se `size_preset` è impostato su `Custom`. Predefinito: 2048. | INT | No | 1024 a 4992 (passo 2) |
-| `sequential_image_generation` | Modalità di generazione di immagini in gruppo. "disabled" genera una singola immagine. "auto" lascia che il modello decida se generare più immagini correlate (ad es. scene di una storia, varianti di personaggi). Predefinito: "disabled". | STRING | No | "disabled"<br>"auto" |
-| `max_images` | Numero massimo di immagini da generare quando `sequential_image_generation='auto'`. Il numero totale di immagini (input + generate) non può superare 15. Predefinito: 1. | INT | No | 1 a 15 (passo 1) |
+| `immagine` | Immagine/i di input per la generazione da immagine a immagine. Immagine/i di riferimento per la generazione con riferimento singolo o multiplo. Massimo 14 immagini di riferimento per seedream-5-0-260128, oppure 10 per gli altri modelli. | IMAGE | No | - |
+| `preimpostazione dimensione` | Scegli una dimensione consigliata. Seleziona Custom per usare la larghezza e l'altezza indicate di seguito. | STRING | No | Sono disponibili più opzioni |
+| `larghezza` | Larghezza personalizzata per l'immagine. Il valore viene usato solo se `size_preset` è impostato su `Custom`. Predefinito: 2048. | INT | No | 1024 a 6240 (passo 2) |
+| `altezza` | Altezza personalizzata per l'immagine. Il valore viene usato solo se `size_preset` è impostato su `Custom`. Predefinito: 2048. | INT | No | 1024 a 4992 (passo 2) |
+| `generazione sequenziale immagini` | Modalità di generazione di immagini in gruppo. "disabled" genera una singola immagine. "auto" lascia che il modello decida se generare più immagini correlate (ad es. scene di una storia, varianti di personaggi). Predefinito: "disabled". | STRING | No | "disabled"<br>"auto" |
+| `immagini massime` | Numero massimo di immagini da generare quando `sequential_image_generation='auto'`. Il numero totale di immagini (input + generate) non può superare 15. Predefinito: 1. | INT | No | 1 a 15 (passo 1) |
 | `seed` | Seme da usare per la generazione. Predefinito: 0. | INT | No | 0 a 2147483647 (passo 1) |
-| `watermark` | Indica se aggiungere un watermark "AI generated" all'immagine. Predefinito: False. | BOOLEAN | No | - |
-| `fail_on_partial` | Se abilitato, interrompe l'esecuzione se una qualsiasi delle immagini richieste è mancante o restituisce un errore. Predefinito: True. | BOOLEAN | No | - |
+| `filigrana` | Indica se aggiungere un watermark "AI generated" all'immagine. Predefinito: False. | BOOLEAN | No | - |
+| `interrompi su parziale` | Se abilitato, interrompe l'esecuzione se una qualsiasi delle immagini richieste è mancante o restituisce un errore. Predefinito: True. | BOOLEAN | No | - |
 
 **Note sui vincoli dei parametri:**
 - La risoluzione minima dell'immagine dipende dal modello selezionato: 3,68 MP per i modelli seedream-4-5 e seedream-5-0, 0,92 MP per i modelli seedream-4-0.

@@ -9,8 +9,8 @@ Salva l'audio di input nella directory di output di ComfyUI. Questo nodo consent
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `audio` | L'audio da salvare. | AUDIO | Sì | - |
-| `filename_prefix` | Il prefisso del file da salvare. Può includere token di formattazione come %date:yyyy-MM-dd%. (predefinito: "audio/ComfyUI") | STRING | Sì | - |
-| `format` | Il formato file in cui salvare l'audio. | DYNAMIC_COMBO | Sì | "flac"<br>"mp3"<br>"opus" |
+| `prefisso_nome_file` | Il prefisso del file da salvare. Può includere token di formattazione come %date:yyyy-MM-dd%. (predefinito: "audio/ComfyUI") | STRING | Sì | - |
+| `formato` | Il formato file in cui salvare l'audio. | DYNAMIC_COMBO | Sì | "flac"<br>"mp3"<br>"opus" |
 
 ### Input di MP3
 

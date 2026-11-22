@@ -6,9 +6,9 @@ Il nodo ImageScaleBy è progettato per ingrandire le immagini di un fattore di s
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `image` | L'immagine di input da ingrandire. Questo parametro è cruciale poiché fornisce l'immagine di base che sarà sottoposta al processo di ingrandimento. | `IMAGE` |
-| `upscale_method` | Specifica il metodo di interpolazione da utilizzare per l'ingrandimento. La scelta del metodo può influire sulla qualità e sulle caratteristiche dell'immagine ingrandita. | COMBO[STRING] |
-| `scale_by` | Il fattore di ingrandimento dell'immagine. Determina l'aumento di dimensione dell'immagine di output rispetto all'immagine di input. | `FLOAT` |
+| `immagine` | L'immagine di input da ingrandire. Questo parametro è cruciale poiché fornisce l'immagine di base che sarà sottoposta al processo di ingrandimento. | `IMAGE` |
+| `metodo_ingrandimento` | Specifica il metodo di interpolazione da utilizzare per l'ingrandimento. La scelta del metodo può influire sulla qualità e sulle caratteristiche dell'immagine ingrandita. | COMBO[STRING] |
+| `scala_di` | Il fattore di ingrandimento dell'immagine. Determina l'aumento di dimensione dell'immagine di output rispetto all'immagine di input. | `FLOAT` |
 
 ## Output
 

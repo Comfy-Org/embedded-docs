@@ -6,10 +6,10 @@ Bria Eraser rimuove oggetti o aree da un'immagine utilizzando l'API Bria. Fornis
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | L'immagine di input contenente gli oggetti o le aree da rimuovere. | IMAGE | Sì | - |
-| `mask` | Le aree bianche vengono cancellate, quelle nere conservate. La maschera viene binarizzata prima dell'invio con una soglia del 50%: solo le aree dipinte con opacità superiore al 50% contano come bianche. Deve avere lo stesso rapporto d'aspetto dell'immagine. | MASK | Sì | - |
+| `immagine` | L'immagine di input contenente gli oggetti o le aree da rimuovere. | IMAGE | Sì | - |
+| `maschera` | Le aree bianche vengono cancellate, quelle nere conservate. La maschera viene binarizzata prima dell'invio con una soglia del 50%: solo le aree dipinte con opacità superiore al 50% contano come bianche. Deve avere lo stesso rapporto d'aspetto dell'immagine. | MASK | Sì | - |
 | `mask_type` | Il tipo di origine della maschera. "manual" è per maschere disegnate a mano o con il pennello; "automatic" è per maschere prodotte da modelli di segmentazione come SAM. | COMBO | Sì | "manual"<br>"automatic" |
-| `moderation` | Impostazioni di moderazione. Imposta su "true" per abilitare la moderazione dei contenuti visivi sulle immagini di input e/o output. | DYNAMIC_COMBO | Sì | "false"<br>"true" |
+| `moderazione` | Impostazioni di moderazione. Imposta su "true" per abilitare la moderazione dei contenuti visivi sulle immagini di input e/o output. | DYNAMIC_COMBO | Sì | "false"<br>"true" |
 
 Quando `moderation` è impostato su "true", diventano disponibili due impostazioni booleane aggiuntive:
 

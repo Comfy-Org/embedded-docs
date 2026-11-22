@@ -6,7 +6,7 @@ Questo nodo genera un SVG modificabile da un prompt testuale con Ideogram Vector
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Modello da utilizzare. Predefinito: `"ideogram-vector-1"`. | DYNAMIC_COMBO | Sì | `"ideogram-vector-1"` |
+| `modello` | Modello da utilizzare. Predefinito: `"ideogram-vector-1"`. | DYNAMIC_COMBO | Sì | `"ideogram-vector-1"` |
 | `images` | Immagini di riferimento opzionali. L'immagine 1 è la fonte principale e le immagini da 2 a 5 sono riferimenti aggiuntivi; menzionale nel prompt come `@Image1`, `@Image2` e così via. Un input in batch conta una volta per immagine. | AUTOGROW | No | da 0 a 5 immagini |
 | `prompt` | Descrizione dell'SVG. Supporta riferimenti in stile `@Image1` alle immagini di input. | STRING | Sì | da 1 a 9500 caratteri |
 | `aspect_ratio` | `"auto"` segue l'immagine 1, oppure il prompt quando nessuna immagine è collegata. Predefinito: `"auto"`. | COMBO | Sì | `"auto"`<br>`"1:3"`<br>`"1:2"`<br>`"9:16"`<br>`"10:16"`<br>`"2:3"`<br>`"3:4"`<br>`"4:5"`<br>`"1:1"`<br>`"5:4"`<br>`"4:3"`<br>`"3:2"`<br>`"16:10"`<br>`"16:9"`<br>`"2:1"`<br>`"3:1"` |

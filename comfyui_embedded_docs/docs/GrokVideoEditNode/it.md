@@ -6,7 +6,7 @@ Questo nodo utilizza l'API Grok per modificare un video esistente in base a un p
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Range |
 |-----------|-------------|--------------|--------------|-------|
-| `model` | Il modello AI da utilizzare per la modifica video (predefinito: "grok-imagine-video"). | COMBO | Sì | "grok-imagine-video" |
+| `modello` | Il modello AI da utilizzare per la modifica video (predefinito: "grok-imagine-video"). | COMBO | Sì | "grok-imagine-video" |
 | `prompt` | Descrizione testuale del video desiderato. | STRING | Sì | N/A |
 | `video` | Il video di input da modificare. La durata massima supportata è di 8,7 secondi e la dimensione massima del file è di 50MB. | VIDEO | Sì | N/A |
 | `seed` | Seed per determinare se il nodo deve essere rieseguito; i risultati effettivi non sono deterministici, indipendentemente dal seed (predefinito: 0). | INT | No | 0 a 2147483647 |

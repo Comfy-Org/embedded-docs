@@ -6,9 +6,9 @@ Questo nodo allinea l'immagine generata con l'immagine originale ridimensionata 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `images` | L'immagine generata da elaborare. | IMAGE | Sì | - |
-| `original_resized_images` | L'immagine originale ridimensionata prima della pre-elaborazione, usata come riferimento. | IMAGE | Sì | - |
-| `color_correction_method` | Metodo per far corrispondere i colori dell'immagine generata a quelli dell'immagine originale. lab: trasferisce il colore nello spazio CIELAB, preservando i dettagli (più fedele). wavelet: trasferisce il colore a bassa frequenza, mantenendo i dettagli ad alta frequenza dell'immagine upscalata. adain: abbina media/deviazione standard per canale (più veloce, tinta globale). none: salta il trasferimento del colore (solo allineamento geometrico). (predefinito: "lab") | COMBO | Sì | `"lab"`<br>`"wavelet"`<br>`"adain"`<br>`"none"` |
+| `immagini` | L'immagine generata da elaborare. | IMAGE | Sì | - |
+| `immagini_originali_ridimensionate` | L'immagine originale ridimensionata prima della pre-elaborazione, usata come riferimento. | IMAGE | Sì | - |
+| `metodo_correzione_colore` | Metodo per far corrispondere i colori dell'immagine generata a quelli dell'immagine originale. lab: trasferisce il colore nello spazio CIELAB, preservando i dettagli (più fedele). wavelet: trasferisce il colore a bassa frequenza, mantenendo i dettagli ad alta frequenza dell'immagine upscalata. adain: abbina media/deviazione standard per canale (più veloce, tinta globale). none: salta il trasferimento del colore (solo allineamento geometrico). (predefinito: "lab") | COMBO | Sì | `"lab"`<br>`"wavelet"`<br>`"adain"`<br>`"none"` |
 
 **Nota:** Entrambi gli input possono essere tensori 4-D (batch, altezza, larghezza, canali) o 5-D (batch, fotogrammi, altezza, larghezza, canali). Il nodo ritaglia entrambi al valore più piccolo di batch, numero di fotogrammi, altezza e larghezza, quindi non devono corrispondere esattamente. Quando viene usato un metodo di correzione del colore diverso da `none`, l'immagine di riferimento viene prima ridimensionata alle dimensioni dell'output. La correzione del colore viene elaborata in blocchi che tengono conto della memoria, passando a una dimensione di blocco inferiore se la memoria si esaurisce. L'altezza e la larghezza dell'output vengono arrotondate per difetto a numeri pari. Se l'immagine di riferimento ha un canale alfa (4 canali), quel canale alfa viene preservato e applicato all'output.
 

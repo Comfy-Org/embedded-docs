@@ -8,7 +8,7 @@ Questo nodo è specializzato nel caricamento di checkpoint specificamente per mo
 
 | Campo | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `ckpt_name` | Specifica il nome del checkpoint da caricare, fondamentale per identificare e recuperare il file di checkpoint corretto da un elenco predefinito. | COMBO[STRING] |
+| `nome checkpoint` | Specifica il nome del checkpoint da caricare, fondamentale per identificare e recuperare il file di checkpoint corretto da un elenco predefinito. | COMBO[STRING] |
 
 ## Output
 

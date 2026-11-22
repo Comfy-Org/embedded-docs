@@ -6,10 +6,10 @@ Il nodo SamplerDPMPP_2M_SDE crea un campionatore DPM++ 2M SDE per i modelli di d
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `solver_type` | Il tipo di risolutore di equazioni differenziali da utilizzare per il processo di campionamento (predefinito: "midpoint") | COMBO | Sì | `"midpoint"`<br>`"heun"` |
+| `tipo di risolutore` | Il tipo di risolutore di equazioni differenziali da utilizzare per il processo di campionamento (predefinito: "midpoint") | COMBO | Sì | `"midpoint"`<br>`"heun"` |
 | `eta` | Controlla la stocasticità del processo di campionamento (predefinito: 1.0) | FLOAT | Sì | 0.0 - 100.0 |
 | `s_noise` | Controlla la quantità di rumore aggiunto durante il campionamento (predefinito: 1.0) | FLOAT | Sì | 0.0 - 100.0 |
-| `noise_device` | Il dispositivo in cui vengono eseguiti i calcoli del rumore. Se impostato su "cpu", il campionatore utilizza la generazione del rumore basata su CPU; se impostato su "gpu", utilizza la generazione del rumore basata su GPU per prestazioni potenzialmente più rapide (predefinito: "gpu") | COMBO | Sì | `"gpu"`<br>`"cpu"` |
+| `dispositivo rumore` | Il dispositivo in cui vengono eseguiti i calcoli del rumore. Se impostato su "cpu", il campionatore utilizza la generazione del rumore basata su CPU; se impostato su "gpu", utilizza la generazione del rumore basata su GPU per prestazioni potenzialmente più rapide (predefinito: "gpu") | COMBO | Sì | `"gpu"`<br>`"cpu"` |
 
 Nota: `eta`, `s_noise` e `noise_device` sono contrassegnati come parametri avanzati e compaiono nella sezione avanzata dell'interfaccia utente del nodo.
 

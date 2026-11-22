@@ -6,10 +6,10 @@ Scegli l'immagine migliore da un batch. Collega `index` a Get Image from Batch p
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Modello da utilizzare (predefinito: `"gemini-decision-1"`). | COMBO | Sì | `"gemini-decision-1"` |
-| `question` | Quale immagine scegliere (predefinito: "Which image best matches the prompt in text? If there is no text, which image has the best quality?"). | STRING | Sì | 1 a 5000 caratteri |
-| `images` | Le immagini tra cui scegliere, come batch o come singolo batch di frame. | IMAGE | Sì | 2 a 64 immagini |
-| `text` | Testo a cui si riferisce la domanda, ad esempio il prompt con cui sono state create le immagini, fino a 20000 caratteri. | STRING | No | Fino a 20000 caratteri |
+| `modello` | Modello da utilizzare (predefinito: `"gemini-decision-1"`). | COMBO | Sì | `"gemini-decision-1"` |
+| `domanda` | Quale immagine scegliere (predefinito: "Which image best matches the prompt in text? If there is no text, which image has the best quality?"). | STRING | Sì | 1 a 5000 caratteri |
+| `immagini` | Le immagini tra cui scegliere, come batch o come singolo batch di frame. | IMAGE | Sì | 2 a 64 immagini |
+| `testo` | Testo a cui si riferisce la domanda, ad esempio il prompt con cui sono state create le immagini, fino a 20000 caratteri. | STRING | No | Fino a 20000 caratteri |
 
 Il nodo richiede da 2 a 64 immagini e genera un errore con una singola immagine. Collega `text` quando la scelta deve seguire un prompt anziché basarsi solo sulla qualità dell'immagine.
 

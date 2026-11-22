@@ -6,14 +6,14 @@ PatchModelAddDownscale (Kohya Deep Shrink) applica la tecnica Kohya Deep Shrink 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello a cui applicare la patch di ridimensionamento verso il basso | MODEL | Sì | - |
-| `block_number` | Il numero specifico del blocco in cui verrà applicato il ridimensionamento verso il basso (predefinito: 3) | INT | Sì | 1-32 |
-| `downscale_factor` | Il fattore con cui ridimensionare verso il basso le feature (predefinito: 2.0) | FLOAT | Sì | 0.1-9.0 |
-| `start_percent` | Il punto di inizio nel processo di denoising in cui inizia il ridimensionamento verso il basso (predefinito: 0.0) | FLOAT | Sì | 0.0-1.0 |
-| `end_percent` | Il punto di fine nel processo di denoising in cui termina il ridimensionamento verso il basso (predefinito: 0.35) | FLOAT | Sì | 0.0-1.0 |
-| `downscale_after_skip` | Indica se applicare il ridimensionamento verso il basso dopo le connessioni skip (predefinito: True) | BOOLEAN | Sì | - |
-| `downscale_method` | Il metodo di interpolazione utilizzato per le operazioni di ridimensionamento verso il basso (predefinito: "bicubic") | COMBO | Sì | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
-| `upscale_method` | Il metodo di interpolazione utilizzato per le operazioni di ridimensionamento verso l'alto (predefinito: "bicubic") | COMBO | Sì | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `modello` | Il modello a cui applicare la patch di ridimensionamento verso il basso | MODEL | Sì | - |
+| `numero_blocco` | Il numero specifico del blocco in cui verrà applicato il ridimensionamento verso il basso (predefinito: 3) | INT | Sì | 1-32 |
+| `fattore_riduzione` | Il fattore con cui ridimensionare verso il basso le feature (predefinito: 2.0) | FLOAT | Sì | 0.1-9.0 |
+| `percentuale_inizio` | Il punto di inizio nel processo di denoising in cui inizia il ridimensionamento verso il basso (predefinito: 0.0) | FLOAT | Sì | 0.0-1.0 |
+| `percentuale_fine` | Il punto di fine nel processo di denoising in cui termina il ridimensionamento verso il basso (predefinito: 0.35) | FLOAT | Sì | 0.0-1.0 |
+| `riduci_dopo_skip` | Indica se applicare il ridimensionamento verso il basso dopo le connessioni skip (predefinito: True) | BOOLEAN | Sì | - |
+| `metodo_riduzione` | Il metodo di interpolazione utilizzato per le operazioni di ridimensionamento verso il basso (predefinito: "bicubic") | COMBO | Sì | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `metodo_ingrandimento` | Il metodo di interpolazione utilizzato per le operazioni di ridimensionamento verso l'alto (predefinito: "bicubic") | COMBO | Sì | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 
 La patch di ridimensionamento verso il basso viene applicata solo quando il passo di denoising corrente rientra nell'intervallo definito da `start_percent` e `end_percent`, e solo nel blocco selezionato da `block_number`. Quando `downscale_after_skip` è abilitato, la patch viene applicata dopo la connessione skip; quando è disabilitato, viene applicata prima della connessione skip. Le feature vengono successivamente riportate alla loro dimensione originale, ma solo quando la dimensione corrente delle feature non corrisponde più alla dimensione registrata prima del ridimensionamento verso il basso.
 

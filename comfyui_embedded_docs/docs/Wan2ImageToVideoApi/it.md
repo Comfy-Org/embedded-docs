@@ -8,9 +8,9 @@ Il nodo Wan 2.7 Image to Video genera un video partendo da un'immagine del primo
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello AI da usare per la generazione del video. | DYNAMIC_COMBO | Sì | `"wan2.7-i2v"` |
-| `first_frame` | Immagine del primo frame. Il rapporto d'aspetto dell'output viene derivato da questa immagine. | IMAGE | Sì | - |
-| `last_frame` | Immagine dell'ultimo frame. Il modello genera un video con transizione dal primo all'ultimo frame. | IMAGE | No | - |
+| `modello` | Il modello AI da usare per la generazione del video. | DYNAMIC_COMBO | Sì | `"wan2.7-i2v"` |
+| `primo_fotogramma` | Immagine del primo frame. Il rapporto d'aspetto dell'output viene derivato da questa immagine. | IMAGE | Sì | - |
+| `ultimo_fotogramma` | Immagine dell'ultimo frame. Il modello genera un video con transizione dal primo all'ultimo frame. | IMAGE | No | - |
 | `audio` | Audio per guidare la generazione del video (ad es. sincronizzazione labiale, movimento sincronizzato al ritmo). Durata: 2s-30s. Se non fornito, il modello genera automaticamente musica di sottofondo o effetti sonori corrispondenti. | AUDIO | No | - |
 | `seed` | Seed da usare per la generazione (predefinito: 0). | INT | Sì | 0 a 2147483647 |
 | `prompt_extend` | Se migliorare il prompt con l'assistenza AI (predefinito: True). Questa è un'impostazione avanzata. | BOOLEAN | Sì | True<br>False |

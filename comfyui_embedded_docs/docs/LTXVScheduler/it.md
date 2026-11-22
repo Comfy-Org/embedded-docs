@@ -6,12 +6,12 @@ Il nodo LTXVScheduler genera valori sigma per un processo di campionamento perso
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `steps` | Numero di passaggi di campionamento (predefinito: 20) | INT | Sì | 1-10000 |
-| `max_shift` | Valore di shift massimo utilizzato nel calcolo dei sigma (predefinito: 2.05) | FLOAT | Sì | 0.0-100.0 (passo: 0.01) |
-| `base_shift` | Valore di shift di base utilizzato nel calcolo dei sigma (predefinito: 0.95) | FLOAT | Sì | 0.0-100.0 (passo: 0.01) |
+| `passi` | Numero di passaggi di campionamento (predefinito: 20) | INT | Sì | 1-10000 |
+| `spostamento_massimo` | Valore di shift massimo utilizzato nel calcolo dei sigma (predefinito: 2.05) | FLOAT | Sì | 0.0-100.0 (passo: 0.01) |
+| `spostamento_base` | Valore di shift di base utilizzato nel calcolo dei sigma (predefinito: 0.95) | FLOAT | Sì | 0.0-100.0 (passo: 0.01) |
 | `stretch` | Estende i sigma affinché siano nell'intervallo [terminal, 1] (predefinito: True) | BOOLEAN | Sì | True/False |
-| `terminal` | Il valore terminale dei sigma dopo l'estensione (predefinito: 0.1). Usato solo quando `stretch` è abilitato. | FLOAT | Sì | 0.0-0.99 (passo: 0.01) |
-| `latent` | Input latent opzionale usato per calcolare il numero di token per la regolazione dei sigma. Quando non fornito, viene usato un numero predefinito di token pari a 4096. | LATENT | No | - |
+| `terminale` | Il valore terminale dei sigma dopo l'estensione (predefinito: 0.1). Usato solo quando `stretch` è abilitato. | FLOAT | Sì | 0.0-0.99 (passo: 0.01) |
+| `latente` | Input latent opzionale usato per calcolare il numero di token per la regolazione dei sigma. Quando non fornito, viene usato un numero predefinito di token pari a 4096. | LATENT | No | - |
 
 **Nota:** Quando `stretch` è abilitato, i valori sigma diversi da zero vengono ridimensionati in modo che l'ultimo sigma diverso da zero sia uguale al valore `terminal`.
 

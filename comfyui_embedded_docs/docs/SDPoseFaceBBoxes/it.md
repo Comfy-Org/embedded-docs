@@ -7,8 +7,8 @@ Il nodo SDPoseFaceBBoxes elabora i dati dei keypoint di posa per rilevare e gene
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `keypoints` | I dati dei keypoint di posa contenenti informazioni sulle persone rilevate e sui relativi landmark del corpo/volto per frame. | POSE_KEYPOINT | Sì | - |
-| `scale` | Moltiplicatore per l'area della bounding box attorno a ciascun volto rilevato. Un valore più grande crea una box più grande. (predefinito: 1.5) | FLOAT | No | 1.0 - 10.0 |
-| `force_square` | Espande l'asse più corto della bbox in modo che la regione di ritaglio sia sempre quadrata. (predefinito: True) | BOOLEAN | No | - |
+| `scala` | Moltiplicatore per l'area della bounding box attorno a ciascun volto rilevato. Un valore più grande crea una box più grande. (predefinito: 1.5) | FLOAT | No | 1.0 - 10.0 |
+| `forza_quadrato` | Espande l'asse più corto della bbox in modo che la regione di ritaglio sia sempre quadrata. (predefinito: True) | BOOLEAN | No | - |
 
 **Nota:** L'input `keypoints` deve essere nel formato specifico prodotto da nodi come SDPoseKeypointExtractor, contenente i dati `canvas_height`, `canvas_width` e `people` con `face_keypoints_2d` per ciascuna persona.
 

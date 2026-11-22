@@ -10,12 +10,12 @@ Il selettore `model` determina quali input specifici del modello vengono mostrat
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | L'immagine da modificare. | IMAGE | Sì | - |
-| `edit_instruction` | Descrizione testuale di come modificare l'immagine. Massimo 2560 caratteri. | STRING | Sì | - |
-| `model` | Versione del modello da usare per la modifica. | DYNAMIC_COMBO | Sì | `"reve-edit@20250915"`<br>`"reve-edit-fast@20251030"` |
-| `upscale` | Esegue l'upscale dell'immagine generata. Può comportare un costo aggiuntivo. (predefinito: "disabled") | DYNAMIC_COMBO | No | `"disabled"`<br>`"enabled"` |
-| `remove_background` | Rimuove lo sfondo dall'immagine generata. Può comportare un costo aggiuntivo. (predefinito: False) | BOOLEAN | No | `true`<br>`false` |
-| `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: 0) | INT | No | da 0 a 2147483647 |
+| `immagine` | L'immagine da modificare. | IMAGE | Sì | - |
+| `istruzione_modifica` | Descrizione testuale di come modificare l'immagine. Massimo 2560 caratteri. | STRING | Sì | - |
+| `modello` | Versione del modello da usare per la modifica. | DYNAMIC_COMBO | Sì | `"reve-edit@20250915"`<br>`"reve-edit-fast@20251030"` |
+| `ingrandisci` | Esegue l'upscale dell'immagine generata. Può comportare un costo aggiuntivo. (predefinito: "disabled") | DYNAMIC_COMBO | No | `"disabled"`<br>`"enabled"` |
+| `rimuovi_sfondo` | Rimuove lo sfondo dall'immagine generata. Può comportare un costo aggiuntivo. (predefinito: False) | BOOLEAN | No | `true`<br>`false` |
+| `seme` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: 0) | INT | No | da 0 a 2147483647 |
 
 ### Input del modello (condivisi da `reve-edit@20250915` e `reve-edit-fast@20251030`)
 
@@ -23,8 +23,8 @@ Entrambe le versioni del modello espongono gli stessi input specifici del modell
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model.aspect_ratio` | Rapporto d'aspetto dell'immagine di output. Se impostato su "auto", il rapporto d'aspetto viene determinato automaticamente. | COMBO | No | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
-| `model.test_time_scaling` | Opzione avanzata. Valori più alti producono immagini migliori ma costano più crediti. (predefinito: 1) | INT | No | da 1 a 5 |
+| `rapporto_aspetto` | Rapporto d'aspetto dell'immagine di output. Se impostato su "auto", il rapporto d'aspetto viene determinato automaticamente. | COMBO | No | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
+| `scalatura_tempo_test` | Opzione avanzata. Valori più alti producono immagini migliori ma costano più crediti. (predefinito: 1) | INT | No | da 1 a 5 |
 
 ### Input di upscale (quando `upscale` è impostato su "enabled")
 

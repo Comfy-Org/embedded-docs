@@ -6,10 +6,10 @@ Il nodo LatentCut estrae una sezione specifica dai campioni latenti lungo una di
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `samples` | I campioni latenti di input da cui estrarre | LATENT | Sì | - |
-| `dim` | La dimensione lungo la quale tagliare i campioni latenti. "x" taglia lungo l'ultimo asse (tipicamente la larghezza), "y" lungo il penultimo asse (tipicamente l'altezza) e "t" lungo il terzultimo asse (tipicamente i fotogrammi nei latenti video) | COMBO | Sì | "x"<br>"y"<br>"t" |
-| `index` | La posizione iniziale per il taglio (predefinita: 0). I valori positivi contano dall'inizio, quelli negativi dalla fine. Il nodo limita l'indice per mantenerlo entro l'intervallo valido dei campioni latenti | INT | Sì | da -16384 a 16384 |
-| `amount` | Il numero di elementi da estrarre lungo la dimensione specificata (predefinito: 1). Deve essere almeno 1. Il nodo riduce automaticamente questo valore se supererebbe i dati disponibili oltre l'indice iniziale | INT | Sì | da 1 a 16384 |
+| `campioni` | I campioni latenti di input da cui estrarre | LATENT | Sì | - |
+| `dimensione` | La dimensione lungo la quale tagliare i campioni latenti. "x" taglia lungo l'ultimo asse (tipicamente la larghezza), "y" lungo il penultimo asse (tipicamente l'altezza) e "t" lungo il terzultimo asse (tipicamente i fotogrammi nei latenti video) | COMBO | Sì | "x"<br>"y"<br>"t" |
+| `indice` | La posizione iniziale per il taglio (predefinita: 0). I valori positivi contano dall'inizio, quelli negativi dalla fine. Il nodo limita l'indice per mantenerlo entro l'intervallo valido dei campioni latenti | INT | Sì | da -16384 a 16384 |
+| `quantità` | Il numero di elementi da estrarre lungo la dimensione specificata (predefinito: 1). Deve essere almeno 1. Il nodo riduce automaticamente questo valore se supererebbe i dati disponibili oltre l'indice iniziale | INT | Sì | da 1 a 16384 |
 
 Nota: i valori `index` e `amount` vengono regolati per adattarsi alla dimensione effettiva del latente lungo la dimensione selezionata. Se `index` è maggiore della dimensione, viene limitato all'ultima posizione valida. Se `index` è negativo, viene limitato alla dimensione in valore assoluto, e `amount` viene limitato in modo che non superi la fine dei dati.
 

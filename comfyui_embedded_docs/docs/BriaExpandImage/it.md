@@ -8,12 +8,12 @@ Bria Expand Image espande un'immagine oltre i suoi bordi originali generando nuo
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine di input da espandere. | IMAGE | Sì | — |
+| `immagine` | L'immagine di input da espandere. | IMAGE | Sì | — |
 | `expand_mode` | Forma target dell'immagine espansa: un rapporto d'aspetto predefinito, un rapporto personalizzato oppure posizionamento manuale dell'immagine originale su una tela. La modalità `manual` è l'unica che può raggiungere una tela più alta di 1:2. Selezionando `custom_ratio` si rivelano `ratio_width` e `ratio_height`. Selezionando `manual` si rivelano i parametri della tela e del posizionamento dell'immagine. | DYNAMIC_COMBO | Sì | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"custom_ratio"`<br>`"manual"` |
 | `prompt` | Descrizione opzionale della scena espansa; quando è vuoto, Bria ne genera una dall'immagine. Predefinito: stringa vuota. | STRING | Sì | Qualsiasi stringa |
 | `negative_prompt` | Un prompt negativo opzionale per l'espansione. Predefinito: stringa vuota. | STRING | Sì | Qualsiasi stringa |
-| `seed` | Seme per il processo di generazione casuale. Predefinito: 42. | INT | Sì | 1–2147483647 |
-| `moderation` | Impostazioni di moderazione. Quando è impostato su `true`, vengono mostrate opzioni di moderazione aggiuntive. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
+| `seme` | Seme per il processo di generazione casuale. Predefinito: 42. | INT | Sì | 1–2147483647 |
+| `moderazione` | Impostazioni di moderazione. Quando è impostato su `true`, vengono mostrate opzioni di moderazione aggiuntive. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
 
 ### Input per rapporto personalizzato
 

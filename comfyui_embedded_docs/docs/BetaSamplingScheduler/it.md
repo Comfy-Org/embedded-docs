@@ -6,8 +6,8 @@ Il nodo BetaSamplingScheduler genera una sequenza di livelli di rumore (sigma) p
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello utilizzato per il campionamento, che fornisce l'oggetto di campionamento del modello | MODEL | Sì | - |
-| `steps` | Il numero di passaggi di campionamento per cui generare i sigma (predefinito: 20) | INT | Sì | da 1 a 10000 |
+| `modello` | Il modello utilizzato per il campionamento, che fornisce l'oggetto di campionamento del modello | MODEL | Sì | - |
+| `passi` | Il numero di passaggi di campionamento per cui generare i sigma (predefinito: 20) | INT | Sì | da 1 a 10000 |
 | `alpha` | Parametro alpha per lo scheduler beta, che controlla la curva di pianificazione (predefinito: 0.6, parametro avanzato) | FLOAT | Sì | da 0.0 a 50.0 (passo 0.01) |
 | `beta` | Parametro beta per lo scheduler beta, che controlla la curva di pianificazione (predefinito: 0.6, parametro avanzato) | FLOAT | Sì | da 0.0 a 50.0 (passo 0.01) |
 

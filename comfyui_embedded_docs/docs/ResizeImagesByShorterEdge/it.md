@@ -7,7 +7,7 @@ Questo nodo ridimensiona le immagini in modo che il lato più corto corrisponda 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `image` | L'immagine di input da ridimensionare. | IMAGE | Sì | - |
-| `shorter_edge` | Dimensione target per il lato più corto. (predefinito: 512) | INT | Sì | da 1 a 8192 |
+| `lato_più_corto` | Dimensione target per il lato più corto. (predefinito: 512) | INT | Sì | da 1 a 8192 |
 
 ## Output
 

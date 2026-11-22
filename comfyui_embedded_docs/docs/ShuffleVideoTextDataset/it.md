@@ -6,9 +6,9 @@ Questo nodo mescola casualmente l'ordine delle coppie video-testo in un elenco, 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `videos` | Elenco di video da mescolare. | VIDEO | Sì | Elenco di elementi video |
-| `texts` | Elenco di testi da mescolare (le didascalie abbinate ai video). | STRING | Sì | Elenco di stringhe di testo |
-| `seed` | Seed casuale che determina l'ordine di mescolamento (predefinito: 0). | INT | Sì | da 0 a 18446744073709551615 |
+| `video` | Elenco di video da mescolare. | VIDEO | Sì | Elenco di elementi video |
+| `testi` | Elenco di testi da mescolare (le didascalie abbinate ai video). | STRING | Sì | Elenco di stringhe di testo |
+| `seme` | Seed casuale che determina l'ordine di mescolamento (predefinito: 0). | INT | Sì | da 0 a 18446744073709551615 |
 
 Nota: `videos` e `texts` devono avere la stessa lunghezza, poiché il nodo abbina ogni video al testo nella stessa posizione e preserva tali abbinamenti durante il mescolamento. Internamente, il valore `seed` viene ridotto usando il modulo 4294967295 (2^32 - 1) prima che venga generato l'ordine casuale, quindi valori di seed molto grandi possono produrre lo stesso mescolamento di valori più piccoli.
 

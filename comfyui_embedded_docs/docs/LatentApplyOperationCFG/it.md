@@ -6,8 +6,8 @@ Il nodo LatentApplyOperationCFG applica un'operazione latente all'interno del pa
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello a cui verrà applicata l'operazione CFG | MODEL | Sì | - |
-| `operation` | L'operazione latente da applicare durante il processo di campionamento CFG | LATENT_OPERATION | Sì | - |
+| `modello` | Il modello a cui verrà applicata l'operazione CFG | MODEL | Sì | - |
+| `operazione` | L'operazione latente da applicare durante il processo di campionamento CFG | LATENT_OPERATION | Sì | - |
 | `start_percent` | Frazione della pianificazione di denoising in cui l'operazione inizia a essere applicata; 0 è l'inizio della pianificazione (predefinito: 0.0) | FLOAT | No | 0.0 a 1.0 (passo 0.001) |
 | `end_percent` | Frazione della pianificazione di denoising in cui l'operazione smette di essere applicata; 1 è la fine della pianificazione (predefinito: 1.0) | FLOAT | No | 0.0 a 1.0 (passo 0.001) |
 

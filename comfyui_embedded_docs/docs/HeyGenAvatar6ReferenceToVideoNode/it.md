@@ -8,7 +8,7 @@ Genera con HeyGen Avatar 6 un video in cui una persona parla a partire dall’au
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Selettore del modello; selezionando un modello vengono mostrati i suoi input qui sotto. `"heygen-avatar-6-turbo"` è il livello più economico e veloce. | DYNAMIC_COMBO | Sì | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `modello` | Selettore del modello; selezionando un modello vengono mostrati i suoi input qui sotto. `"heygen-avatar-6-turbo"` è il livello più economico e veloce. | DYNAMIC_COMBO | Sì | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
 
 ### Input di `heygen-avatar-6`
 

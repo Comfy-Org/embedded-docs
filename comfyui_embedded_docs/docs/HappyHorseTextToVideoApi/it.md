@@ -8,9 +8,9 @@ Genera un video basato su un prompt testuale utilizzando il modello HappyHorse. 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello HappyHorse utilizzato per la generazione, insieme ai relativi sotto-parametri. La selezione di un modello determina quali sotto-parametri sono disponibili (vedere le sezioni dei modelli di seguito). | DYNAMIC_COMBO | Sì | "happyhorse-1.1-t2v"<br>"happyhorse-1.0-t2v" |
+| `modello` | Il modello HappyHorse utilizzato per la generazione, insieme ai relativi sotto-parametri. La selezione di un modello determina quali sotto-parametri sono disponibili (vedere le sezioni dei modelli di seguito). | DYNAMIC_COMBO | Sì | "happyhorse-1.1-t2v"<br>"happyhorse-1.0-t2v" |
 | `seed` | Seed da utilizzare per la generazione. Utilizzando lo stesso seed con gli stessi input si otterrà lo stesso risultato. (predefinito: 0). | INT | Sì | 0 a 2147483647 |
-| `watermark` | Indica se aggiungere una filigrana generata dall'IA al risultato. (predefinito: False). | BOOLEAN | Sì | True / False |
+| `filigrana` | Indica se aggiungere una filigrana generata dall'IA al risultato. (predefinito: False). | BOOLEAN | Sì | True / False |
 
 ### Input di happyhorse-1.1-t2v
 

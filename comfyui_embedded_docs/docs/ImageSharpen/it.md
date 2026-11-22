@@ -6,10 +6,10 @@ Il nodo ImageSharpen migliora la nitidezza di un'immagine accentuandone i bordi 
 
 | Campo | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `image` | L'immagine di input da nitidizzare. Questo parametro è cruciale poiché determina l'immagine di base su cui verrà applicato l'effetto di nitidezza. | `IMAGE` |
-| `sharpen_radius` | Definisce il raggio dell'effetto di nitidezza. Un raggio maggiore significa che verranno interessati più pixel attorno ai bordi, producendo un effetto di nitidezza più marcato. | `INT` |
+| `immagine` | L'immagine di input da nitidizzare. Questo parametro è cruciale poiché determina l'immagine di base su cui verrà applicato l'effetto di nitidezza. | `IMAGE` |
+| `raggio_nitidezza` | Definisce il raggio dell'effetto di nitidezza. Un raggio maggiore significa che verranno interessati più pixel attorno ai bordi, producendo un effetto di nitidezza più marcato. | `INT` |
 | `sigma` | Controlla la diffusione dell'effetto di nitidezza. Un valore sigma più alto produce una transizione più morbida ai bordi, mentre un sigma più basso rende la nitidezza più localizzata. | `FLOAT` |
-| `alpha` | Regola l'intensità dell'effetto di nitidezza. Valori alpha più alti producono un effetto di nitidezza più forte. | `FLOAT` |
+| `alfa` | Regola l'intensità dell'effetto di nitidezza. Valori alpha più alti producono un effetto di nitidezza più forte. | `FLOAT` |
 
 ## Output
 

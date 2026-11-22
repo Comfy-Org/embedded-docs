@@ -8,16 +8,16 @@ Questo nodo genera un modello 3D da due a quattro immagini di riferimento di un 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Vista frontale (0°). Obbligatoria. | IMAGE | Sì | - |
-| `image_left` | Vista sinistra (90°), ovvero il lato sinistro del soggetto. | IMAGE | No | - |
-| `image_back` | Vista posteriore (180°). | IMAGE | No | - |
-| `image_right` | Vista destra (270°), ovvero il lato destro del soggetto. | IMAGE | No | - |
-| `output_mode` | Scegli il tipo di modello da generare. "Geometry only" restituisce una mesh senza texture. "Textured" aggiunge mappe colore/PBR. | DYNAMIC_COMBO | Sì | "Geometry only"<br>"Textured" |
-| `face_limit` | Numero di facce target, 48-20000. -1 lascia che Tripo scelga in modo adattivo. (predefinito: -1) | INT | No | da -1 a 20000 |
-| `model_seed` | Seme per una generazione del modello riproducibile. (predefinito: 42) | INT | No | da 0 a 2147483647 |
-| `auto_size` | Scala l'output per approssimare le dimensioni reali in metri. (predefinito: False) | BOOLEAN | No | True<br>False |
-| `export_uv` | Esegue l'UV unwrap durante la generazione. Disattivalo per esecuzioni più rapide di sola geometria. (predefinito: True) | BOOLEAN | No | True<br>False |
-| `compress_geometry` | Applica la compressione geometrica meshopt (EXT_meshopt_compression). File più piccoli, ma l'anteprima 3D di ComfyUI non può visualizzarli; decomprimi prima di modificarli. (predefinito: False) | BOOLEAN | No | True<br>False |
+| `immagine` | Vista frontale (0°). Obbligatoria. | IMAGE | Sì | - |
+| `immagine_sinistra` | Vista sinistra (90°), ovvero il lato sinistro del soggetto. | IMAGE | No | - |
+| `immagine_retro` | Vista posteriore (180°). | IMAGE | No | - |
+| `immagine_destra` | Vista destra (270°), ovvero il lato destro del soggetto. | IMAGE | No | - |
+| `modalità_output` | Scegli il tipo di modello da generare. "Geometry only" restituisce una mesh senza texture. "Textured" aggiunge mappe colore/PBR. | DYNAMIC_COMBO | Sì | "Geometry only"<br>"Textured" |
+| `limite_facce` | Numero di facce target, 48-20000. -1 lascia che Tripo scelga in modo adattivo. (predefinito: -1) | INT | No | da -1 a 20000 |
+| `seme_modello` | Seme per una generazione del modello riproducibile. (predefinito: 42) | INT | No | da 0 a 2147483647 |
+| `dimensione_automatica` | Scala l'output per approssimare le dimensioni reali in metri. (predefinito: False) | BOOLEAN | No | True<br>False |
+| `esporta_uv` | Esegue l'UV unwrap durante la generazione. Disattivalo per esecuzioni più rapide di sola geometria. (predefinito: True) | BOOLEAN | No | True<br>False |
+| `comprimi_geometria` | Applica la compressione geometrica meshopt (EXT_meshopt_compression). File più piccoli, ma l'anteprima 3D di ComfyUI non può visualizzarli; decomprimi prima di modificarli. (predefinito: False) | BOOLEAN | No | True<br>False |
 
 ### Input di Geometry only
 

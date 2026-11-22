@@ -10,7 +10,7 @@ Questi input sono sempre disponibili al livello superiore del nodo.
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello specifico da utilizzare per la generazione video. | DYNAMIC_COMBO | Sì | `"wan2.7-t2v"` |
+| `modello` | Il modello specifico da utilizzare per la generazione video. | DYNAMIC_COMBO | Sì | `"wan2.7-t2v"` |
 | `audio` | Audio per guidare la generazione video (ad es. sincronizzazione labiale, movimento a tempo). Durata: 3s-30s. Se non fornito, il modello genera automaticamente musica di sottofondo o effetti sonori corrispondenti. | AUDIO | No | - |
 | `seed` | Seme da utilizzare per la generazione (predefinito: 0). | INT | Sì | 0 a 2147483647 |
 | `prompt_extend` | Indica se migliorare il prompt con l'assistenza AI (predefinito: True). | BOOLEAN | Sì | True<br>False |

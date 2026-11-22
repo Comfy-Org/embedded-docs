@@ -8,9 +8,9 @@ Il nodo **Save Image (Advanced)** salva le immagini di input nella directory di 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `images` | Le immagini da salvare. | IMAGE | Sì | - |
-| `filename_prefix` | Il prefisso per il file da salvare. Può includere token di formattazione come `%date:yyyy-MM-dd%` o `%Empty Latent Image.width%`. (predefinito: "ComfyUI") | STRING | Sì | - |
-| `format` | Il formato file con cui salvare l'immagine. Selezionando un formato vengono mostrate opzioni aggiuntive per quel formato. | DYNAMIC_COMBO | Sì | `"png"`<br>`"exr"`<br>`"avif"` |
+| `immagini` | Le immagini da salvare. | IMAGE | Sì | - |
+| `prefisso_nome_file` | Il prefisso per il file da salvare. Può includere token di formattazione come `%date:yyyy-MM-dd%` o `%Empty Latent Image.width%`. (predefinito: "ComfyUI") | STRING | Sì | - |
+| `formato` | Il formato file con cui salvare l'immagine. Selezionando un formato vengono mostrate opzioni aggiuntive per quel formato. | DYNAMIC_COMBO | Sì | `"png"`<br>`"exr"`<br>`"avif"` |
 
 ### Input PNG
 

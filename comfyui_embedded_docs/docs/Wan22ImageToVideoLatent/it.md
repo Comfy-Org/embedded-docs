@@ -7,11 +7,11 @@ Wan22ImageToVideoLatent crea rappresentazioni latenti video a partire da immagin
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `vae` | Il modello VAE utilizzato per codificare l'immagine iniziale nello spazio latente | VAE | Sì | - |
-| `width` | La larghezza del video di output in pixel (predefinito: 1280, passo: 32) | INT | Sì | 32 a MAX_RESOLUTION |
-| `height` | L'altezza del video di output in pixel (predefinito: 704, passo: 32) | INT | Sì | 32 a MAX_RESOLUTION |
-| `length` | Il numero di frame nella sequenza video (predefinito: 49, passo: 4) | INT | Sì | 1 a MAX_RESOLUTION |
-| `batch_size` | Il numero di latenti video da generare (predefinito: 1) | INT | Sì | 1 a 4096 |
-| `start_image` | Sequenza di immagini iniziale opzionale da codificare nei frame iniziali del latente video (usa i primi `length` frame) | IMAGE | No | - |
+| `larghezza` | La larghezza del video di output in pixel (predefinito: 1280, passo: 32) | INT | Sì | 32 a MAX_RESOLUTION |
+| `altezza` | L'altezza del video di output in pixel (predefinito: 704, passo: 32) | INT | Sì | 32 a MAX_RESOLUTION |
+| `lunghezza` | Il numero di frame nella sequenza video (predefinito: 49, passo: 4) | INT | Sì | 1 a MAX_RESOLUTION |
+| `dimensione batch` | Il numero di latenti video da generare (predefinito: 1) | INT | Sì | 1 a 4096 |
+| `immagine iniziale` | Sequenza di immagini iniziale opzionale da codificare nei frame iniziali del latente video (usa i primi `length` frame) | IMAGE | No | - |
 
 **Nota:** Quando viene fornito `start_image`, la sequenza di immagini viene ridimensionata alle dimensioni `width` e `height` di destinazione, codificata con il VAE e inserita nei primi frame del latente. La maschera di rumore per quei frame è impostata su 0 (preservati), mentre i frame rimanenti hanno un valore di maschera pari a 1 (da sottoporre a denoising). Il latente ha sempre 48 canali, dimensioni spaziali di `height / 16` per `width / 16` e una dimensione temporale di `((length - 1) // 4) + 1`. `width` e `height` devono essere divisibili per 16 (imposto dal passo di 32), e `length` aumenta la dimensione temporale a passi di 4.
 

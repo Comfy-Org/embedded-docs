@@ -6,10 +6,10 @@ Il nodo Rodin 3D Detail genera asset 3D dettagliati utilizzando l'API Rodin. Acc
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `Images` | Immagini di input utilizzate per la generazione del modello 3D. È richiesta almeno 1 immagine e possono essere fornite al massimo 5 immagini. | IMAGE | Sì | - |
-| `Seed` | Valore di seed casuale per risultati riproducibili (predefinito: 0) | INT | No | 0 a 65535 |
-| `Material_Type` | Tipo di materiale da applicare al modello 3D (predefinito: "PBR") | STRING | No | `"PBR"`<br>`"Shaded"` |
-| `Polygon_count` | Numero di poligoni target per il modello 3D generato. Determina il livello di qualità della mesh (predefinito: "18K-Quad") | STRING | No | `"4K-Quad"`<br>`"8K-Quad"`<br>`"18K-Quad"`<br>`"50K-Quad"`<br>`"200K-Triangle"` |
+| `Immagini` | Immagini di input utilizzate per la generazione del modello 3D. È richiesta almeno 1 immagine e possono essere fornite al massimo 5 immagini. | IMAGE | Sì | - |
+| `Seme` | Valore di seed casuale per risultati riproducibili (predefinito: 0) | INT | No | 0 a 65535 |
+| `Tipo_Materiale` | Tipo di materiale da applicare al modello 3D (predefinito: "PBR") | STRING | No | `"PBR"`<br>`"Shaded"` |
+| `Numero_Poligoni` | Numero di poligoni target per il modello 3D generato. Determina il livello di qualità della mesh (predefinito: "18K-Quad") | STRING | No | `"4K-Quad"`<br>`"8K-Quad"`<br>`"18K-Quad"`<br>`"50K-Quad"`<br>`"200K-Triangle"` |
 
 ## Output
 

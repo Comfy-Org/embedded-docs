@@ -6,13 +6,13 @@ Il nodo Vidu Text To Video Generation crea video a partire da descrizioni testua
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Nome del modello | COMBO | Sì | `viduq1` |
+| `modello` | Nome del modello | COMBO | Sì | `viduq1` |
 | `prompt` | Una descrizione testuale per la generazione video | STRING | Sì | - |
-| `duration` | Durata del video di output in secondi (predefinito: 5) | INT | No | 5-5 |
+| `durata` | Durata del video di output in secondi (predefinito: 5) | INT | No | 5-5 |
 | `seed` | Seed per la generazione video (0 per casuale) (predefinito: 0) | INT | No | 0-2147483647 |
-| `aspect_ratio` | Le proporzioni del video di output | COMBO | No | `16:9`<br>`9:16`<br>`1:1` |
-| `resolution` | I valori supportati possono variare in base al modello e alla durata | COMBO | No | `1080p` |
-| `movement_amplitude` | L'ampiezza del movimento degli oggetti nell'inquadratura | COMBO | No | `auto`<br>`small`<br>`medium`<br>`large` |
+| `rapporto d'aspetto` | Le proporzioni del video di output | COMBO | No | `16:9`<br>`9:16`<br>`1:1` |
+| `risoluzione` | I valori supportati possono variare in base al modello e alla durata | COMBO | No | `1080p` |
+| `ampiezza movimento` | L'ampiezza del movimento degli oggetti nell'inquadratura | COMBO | No | `auto`<br>`small`<br>`medium`<br>`large` |
 
 **Nota:** Il campo `prompt` è obbligatorio e non può essere vuoto. Il parametro `duration` è attualmente fisso a 5 secondi.
 

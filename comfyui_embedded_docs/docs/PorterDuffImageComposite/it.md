@@ -6,11 +6,11 @@ Il nodo PorterDuffImageComposite è progettato per eseguire la composizione di i
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `source` | Il tensore dell'immagine sorgente da comporre sopra l'immagine di destinazione. Svolge un ruolo cruciale nel determinare il risultato visivo finale in base alla modalità di composizione selezionata. | `IMAGE` |
-| `source_alpha` | Il canale alpha dell'immagine sorgente, che specifica la trasparenza di ogni pixel dell'immagine sorgente. Influisce su come l'immagine sorgente si fonde con l'immagine di destinazione. | `MASK` |
-| `destination` | Il tensore dell'immagine di destinazione che funge da sfondo sul quale viene composta l'immagine sorgente. Contribuisce all'immagine finale composta in base alla modalità di fusione. | `IMAGE` |
-| `destination_alpha` | Il canale alpha dell'immagine di destinazione, che definisce la trasparenza dei pixel dell'immagine di destinazione. Influenza la fusione delle immagini sorgente e di destinazione. | `MASK` |
-| `mode` | La modalità di composizione Porter-Duff da applicare, che determina come le immagini sorgente e di destinazione vengono fuse insieme. Ogni modalità crea effetti visivi diversi. | COMBO[STRING] |
+| `sorgente` | Il tensore dell'immagine sorgente da comporre sopra l'immagine di destinazione. Svolge un ruolo cruciale nel determinare il risultato visivo finale in base alla modalità di composizione selezionata. | `IMAGE` |
+| `alfa sorgente` | Il canale alpha dell'immagine sorgente, che specifica la trasparenza di ogni pixel dell'immagine sorgente. Influisce su come l'immagine sorgente si fonde con l'immagine di destinazione. | `MASK` |
+| `destinazione` | Il tensore dell'immagine di destinazione che funge da sfondo sul quale viene composta l'immagine sorgente. Contribuisce all'immagine finale composta in base alla modalità di fusione. | `IMAGE` |
+| `alfa destinazione` | Il canale alpha dell'immagine di destinazione, che definisce la trasparenza dei pixel dell'immagine di destinazione. Influenza la fusione delle immagini sorgente e di destinazione. | `MASK` |
+| `modalità` | La modalità di composizione Porter-Duff da applicare, che determina come le immagini sorgente e di destinazione vengono fuse insieme. Ogni modalità crea effetti visivi diversi. | COMBO[STRING] |
 
 ## Output
 

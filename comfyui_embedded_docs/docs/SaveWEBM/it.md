@@ -6,8 +6,8 @@ Il nodo SaveWEBM salva una sequenza di immagini come file video WEBM. Riceve pi�
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `images` | Le immagini RGBA vengono salvate con il loro canale alfa come trasparenza (solo codec vp9). | IMAGE | Sì | - |
-| `filename_prefix` | Prefisso per il nome del file di output (predefinito: "ComfyUI"). | STRING | No | - |
+| `immagini` | Le immagini RGBA vengono salvate con il loro canale alfa come trasparenza (solo codec vp9). | IMAGE | Sì | - |
+| `prefisso_nome_file` | Prefisso per il nome del file di output (predefinito: "ComfyUI"). | STRING | No | - |
 | `codec` | Codec video da utilizzare per la codifica. | COMBO | Sì | "vp9"<br>"av1" |
 | `fps` | Frame rate per il video di output (predefinito: 24.0). | FLOAT | No | 0.01-1000.0 |
 | `crf` | Un crf più alto indica una qualità inferiore con un file di dimensioni minori; un crf più basso indica una qualità superiore con un file di dimensioni maggiori (predefinito: 32.0). | FLOAT | No | 0-63.0 |

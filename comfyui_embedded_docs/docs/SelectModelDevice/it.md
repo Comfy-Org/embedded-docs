@@ -6,8 +6,8 @@ Il nodo Select Model Device consente di scegliere manualmente su quale dispositi
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello di diffusione da posizionare su un dispositivo specifico. | MODEL | Sì |  |
-| `device` | Il dispositivo di destinazione per il modello. Le opzioni vengono generate dinamicamente in base ai dispositivi disponibili sulla macchina corrente. (predefinito: `"default"`) | COMBO | Sì | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>... (una voce `"gpu:N"` per ogni GPU rilevata) |
+| `modello` | Il modello di diffusione da posizionare su un dispositivo specifico. | MODEL | Sì |  |
+| `dispositivo` | Il dispositivo di destinazione per il modello. Le opzioni vengono generate dinamicamente in base ai dispositivi disponibili sulla macchina corrente. (predefinito: `"default"`) | COMBO | Sì | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>... (una voce `"gpu:N"` per ogni GPU rilevata) |
 
 **Dettagli dei parametri:**
 - `"default"`: Ripristina i dispositivi di caricamento e offload assegnati dal caricatore del modello, anche dopo una precedente chiamata a Select Model Device.

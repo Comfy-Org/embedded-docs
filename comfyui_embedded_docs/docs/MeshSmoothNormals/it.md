@@ -7,7 +7,7 @@ Calcola normali morbide per vertice per una mesh e le allega. Le mesh senza norm
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `mesh` | La mesh di input da elaborare. | MESH | Sì | - |
-| `crease_angle` | I bordi il cui angolo diedro supera questo valore (gradi) rimangono duri (i vertici vengono divisi). 180 = completamente morbido; un valore inferiore preserva i bordi netti (ad es. ~30-60 per superfici dure). Predefinito: 180.0. | FLOAT | Sì | 0.0 a 180.0 (passo 1.0) |
+| `angolo_di_piega` | I bordi il cui angolo diedro supera questo valore (gradi) rimangono duri (i vertici vengono divisi). 180 = completamente morbido; un valore inferiore preserva i bordi netti (ad es. ~30-60 per superfici dure). Predefinito: 180.0. | FLOAT | Sì | 0.0 a 180.0 (passo 1.0) |
 
 Quando `crease_angle` è 180 o superiore, la topologia della mesh rimane invariata. Quando è impostato a un valore inferiore a 180, i vertici vengono divisi lungo i bordi duri, il che può aumentare il numero di vertici. Quando i vertici vengono divisi, i dati per vertice (colori, UV e tangenti) vengono duplicati per corrispondere al nuovo layout dei vertici, e la mesh risultante viene ricostruita come batch a dimensione variabile.
 

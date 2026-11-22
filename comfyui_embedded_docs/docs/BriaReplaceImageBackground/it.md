@@ -8,11 +8,11 @@ Questo nodo sostituisce lo sfondo di un'immagine con uno nuovo generato da Bria.
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Range |
 |-----------|-------------|-----------|----------|-------|
-| `image` | L'immagine di input il cui sfondo verrà sostituito. | IMAGE | Sì | |
-| `background` | Descrivi il nuovo sfondo con un prompt oppure guidalo con immagini di riferimento. | DYNAMIC_COMBO | Sì | `"prompt"`<br>`"reference images"` |
+| `immagine` | L'immagine di input il cui sfondo verrà sostituito. | IMAGE | Sì | |
+| `sfondo` | Descrivi il nuovo sfondo con un prompt oppure guidalo con immagini di riferimento. | DYNAMIC_COMBO | Sì | `"prompt"`<br>`"reference images"` |
 | `original_quality` | Restituisce la dimensione in pixel esatta dell'input invece di ridimensionare il risultato a circa 1 megapixel. Un input di grandi dimensioni restituirà quindi un'immagine di grandi dimensioni. (predefinito: false) | BOOLEAN | No | `true`<br>`false` |
 | `seed` | Lo stesso seed di solito restituisce lo stesso sfondo; il perfezionamento automatico del prompt può comunque variarlo. (predefinito: 42) | INT | No | da 0 a 2147483647 |
-| `moderation` | Impostazioni di moderazione. (predefinito: "false") | DYNAMIC_COMBO | No | `"false"`<br>`"true"` |
+| `moderazione` | Impostazioni di moderazione. (predefinito: "false") | DYNAMIC_COMBO | No | `"false"`<br>`"true"` |
 
 ### Input del prompt
 

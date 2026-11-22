@@ -6,7 +6,7 @@ PreviewAny converte qualsiasi valore di input in testo leggibile, così da poter
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `source` | Accetta qualsiasi tipo di dato in input per la visualizzazione in anteprima. Se non viene fornito alcun valore, l'anteprima mostra 'None'. | ANY | Sì | Qualsiasi tipo di dato |
+| `sorgente` | Accetta qualsiasi tipo di dato in input per la visualizzazione in anteprima. Se non viene fornito alcun valore, l'anteprima mostra 'None'. | ANY | Sì | Qualsiasi tipo di dato |
 
 **Comportamento di conversione**
 

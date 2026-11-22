@@ -6,9 +6,9 @@ Il nodo LatentCrop è progettato per eseguire operazioni di ritaglio sulle rappr
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `samples` | Il parametro `samples` rappresenta le rappresentazioni latenti da ritagliare. È cruciale per definire i dati sui quali verrà eseguita l'operazione di ritaglio. | `LATENT` |
-| `width` | Specifica la larghezza dell'area di ritaglio. Influisce direttamente sulle dimensioni della rappresentazione latente di output. | `INT` |
-| `height` | Specifica l'altezza dell'area di ritaglio, influenzando la dimensione della rappresentazione latente ritagliata risultante. | `INT` |
+| `campioni` | Il parametro `samples` rappresenta le rappresentazioni latenti da ritagliare. È cruciale per definire i dati sui quali verrà eseguita l'operazione di ritaglio. | `LATENT` |
+| `larghezza` | Specifica la larghezza dell'area di ritaglio. Influisce direttamente sulle dimensioni della rappresentazione latente di output. | `INT` |
+| `altezza` | Specifica l'altezza dell'area di ritaglio, influenzando la dimensione della rappresentazione latente ritagliata risultante. | `INT` |
 | `x` | Determina la coordinata x iniziale dell'area di ritaglio, influenzando la posizione del ritaglio all'interno della rappresentazione latente originale. | `INT` |
 | `y` | Determina la coordinata y iniziale dell'area di ritaglio, impostando la posizione del ritaglio all'interno della rappresentazione latente originale. | `INT` |
 

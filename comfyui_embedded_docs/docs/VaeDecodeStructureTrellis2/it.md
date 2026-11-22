@@ -6,9 +6,9 @@ Questo nodo converte i campioni latenti della struttura Trellis in una griglia v
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `samples` | La rappresentazione latente della struttura da decodificare. Solo i primi 8 canali del latente vengono utilizzati per la decodifica. | LATENT | Sì | - |
+| `campioni` | La rappresentazione latente della struttura da decodificare. Solo i primi 8 canali del latente vengono utilizzati per la decodifica. | LATENT | Sì | - |
 | `vae` | Il VAE il cui decodificatore di struttura converte il latente in una griglia voxel. La decodifica viene eseguita in batch. | VAE | Sì | - |
-| `resolution` | La risoluzione spaziale target della griglia voxel di output (predefinito: "32"). Se la griglia decodificata ha una risoluzione diversa, viene sottocampionata per corrispondere. | COMBO | Sì | "32"<br>"64" |
+| `risoluzione` | La risoluzione spaziale target della griglia voxel di output (predefinito: "32"). Se la griglia decodificata ha una risoluzione diversa, viene sottocampionata per corrispondere. | COMBO | Sì | "32"<br>"64" |
 
 Nota: quando la risoluzione della griglia voxel decodificata differisce dalla `resolution` selezionata, la griglia viene sottocampionata utilizzando il max pooling 3D alla dimensione richiesta.
 

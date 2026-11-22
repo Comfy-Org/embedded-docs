@@ -9,8 +9,8 @@ Questo nodo genera una notazione ABC per un brano basandosi su una descrizione d
 | `clip` | Il modello YuE2 utilizzato per tokenizzare lo stile e le parole e generare la notazione ABC. | CLIP | Sì | - |
 | `style` | Testo che descrive lo stile musicale del brano. Supporta input multilinea e prompt dinamici. | STRING | Sì | - |
 | `lyrics` | Testo contenente le parole del brano. Supporta input multilinea e prompt dinamici. | STRING | Sì | - |
-| `seed` | Seme casuale utilizzato per la generazione. Modificarlo produce risultati diversi. Predefinito: 0. | INT | Sì | 0 a 18446744073709551615 |
-| `mode` | full: genera melodia e accordi; melody: genera solo la melodia, consigliato per le cover. | COMBO | Sì | "full"<br>"melody" |
+| `seme` | Seme casuale utilizzato per la generazione. Modificarlo produce risultati diversi. Predefinito: 0. | INT | Sì | 0 a 18446744073709551615 |
+| `modalità` | full: genera melodia e accordi; melody: genera solo la melodia, consigliato per le cover. | COMBO | Sì | "full"<br>"melody" |
 | `max_abc_tokens` | Numero massimo di token generati per la notazione ABC. Predefinito: 8192. Impostazione avanzata. | INT | Sì | 1 a 20000 |
 | `temperature` | Controlla la casualità dei token generati. Valori più alti producono un output più vario. Predefinito: 0.7. Impostazione avanzata. | FLOAT | Sì | 0.0 a 5.0 |
 | `top_p` | Soglia di campionamento nucleus; vengono considerati solo i token entro questa probabilità cumulativa. Predefinito: 0.9. Impostazione avanzata. | FLOAT | Sì | 0.01 a 1.0 |

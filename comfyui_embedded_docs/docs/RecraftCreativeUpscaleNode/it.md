@@ -6,7 +6,7 @@ Il nodo Recraft Creative Upscale Image migliora un'immagine raster aumentandone 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine di input da migliorare tramite upscale. | IMAGE | Sì | |
+| `immagine` | L'immagine di input da migliorare tramite upscale. | IMAGE | Sì | |
 
 ## Output
 

@@ -6,7 +6,7 @@ Imposta i valori di spostamento del flusso video e audio per un modello MiniMax 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Il modello a cui applicare la patch di spostamento sigma. Il nodo clona il modello, quindi l'originale rimane invariato. | MODEL | Sì | - |
+| `modello` | Il modello a cui applicare la patch di spostamento sigma. Il nodo clona il modello, quindi l'originale rimane invariato. | MODEL | Sì | - |
 | `shift_video` | Il valore di spostamento del flusso video. Determina il programma sigma del sampler. Predefinito: 12.0. | FLOAT | Sì | 0.01 a 100.0 |
 | `shift_audio` | Il valore di spostamento del flusso audio. È usato dal modello per derivare il programma audio. Predefinito: 3.0. | FLOAT | Sì | 0.01 a 100.0 |
 

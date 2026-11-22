@@ -6,12 +6,12 @@ Il nodo Wan Image to Image genera un'immagine da una o due immagini di input e d
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Modello da utilizzare (predefinito: "wan2.5-i2i-preview"). | COMBO | Sì | "wan2.5-i2i-preview" |
-| `image` | Modifica a immagine singola o fusione multi-immagine. Massimo 2 immagini. | IMAGE | Sì | - |
+| `modello` | Modello da utilizzare (predefinito: "wan2.5-i2i-preview"). | COMBO | Sì | "wan2.5-i2i-preview" |
+| `immagine` | Modifica a immagine singola o fusione multi-immagine. Massimo 2 immagini. | IMAGE | Sì | - |
 | `prompt` | Prompt che descrive gli elementi e le caratteristiche visive. Supporta inglese e cinese (predefinito: vuoto). | STRING | Sì | - |
-| `negative_prompt` | Prompt negativo che descrive cosa evitare (predefinito: vuoto). | STRING | No | - |
-| `seed` | Seed da utilizzare per la generazione (predefinito: 0). | INT | No | da 0 a 2147483647 |
-| `watermark` | Indica se aggiungere una filigrana generata dall'IA al risultato (predefinito: false). | BOOLEAN | No | - |
+| `prompt_negativo` | Prompt negativo che descrive cosa evitare (predefinito: vuoto). | STRING | No | - |
+| `seme` | Seed da utilizzare per la generazione (predefinito: 0). | INT | No | da 0 a 2147483647 |
+| `filigrana` | Indica se aggiungere una filigrana generata dall'IA al risultato (predefinito: false). | BOOLEAN | No | - |
 
 **Nota:** questo nodo accetta esattamente 1 o 2 immagini di input. Se fornisci più di 2 immagini o nessuna immagine, il nodo restituirà un errore.
 

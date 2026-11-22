@@ -6,8 +6,8 @@ Questo nodo regola la scala di rumore utilizzata durante il campionamento del mo
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello a cui applicare la regolazione della scala di rumore. | MODEL | Sì | - |
-| `noise_scale` | Scala di rumore assoluta per l'addestramento. Ad esempio HiDream-O1 base: 8.0, dev: 7.5. (predefinito: 1.0) | FLOAT | Sì | 0.0 a 64.0 (passo: 0.01) |
+| `modello` | Il modello a cui applicare la regolazione della scala di rumore. | MODEL | Sì | - |
+| `scala_rumore` | Scala di rumore assoluta per l'addestramento. Ad esempio HiDream-O1 base: 8.0, dev: 7.5. (predefinito: 1.0) | FLOAT | Sì | 0.0 a 64.0 (passo: 0.01) |
 
 ## Output
 

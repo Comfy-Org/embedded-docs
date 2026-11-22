@@ -9,7 +9,7 @@ Questo nodo rileverà i modelli situati nella cartella `ComfyUI/models/diffusion
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
 | `unet_name` | Specifica il nome del modello U-Net da caricare. Questo nome viene utilizzato per individuare il modello all'interno di una struttura di directory predefinita, consentendo il caricamento dinamico di diversi modelli U-Net. | COMBO[STRING] |
-| `weight_dtype` | 🚧  fp8_e4m3fn fp9_e5m2 | ... |
+| `tipo_peso` | 🚧  fp8_e4m3fn fp9_e5m2 | ... |
 
 ## Output
 

@@ -8,13 +8,13 @@ Il nodo Kling Image Generation genera immagini da prompt testuali con l'opzione 
 |-----------|-------------|--------------|--------------|------------|
 | `prompt` | Prompt testuale positivo. Obbligatorio, deve essere compreso tra 1 e 500 caratteri. | STRING | Sì | Massimo 500 caratteri |
 | `negative_prompt` | Prompt testuale negativo. | STRING | Sì | Massimo 500 caratteri |
-| `image_type` | Selezione del tipo di riferimento immagine (avanzato). Obbligatorio quando viene fornita un'immagine di riferimento. | COMBO | Sì | `"subject_reference"`<br>`"style_reference"` |
-| `image_fidelity` | Intensità del riferimento per le immagini caricate dall'utente (predefinito: 0.5, avanzato) | FLOAT | Sì | 0.0 - 1.0 |
-| `human_fidelity` | Somiglianza del riferimento del soggetto (predefinito: 0.45, avanzato) | FLOAT | Sì | 0.0 - 1.0 |
+| `tipo_immagine` | Selezione del tipo di riferimento immagine (avanzato). Obbligatorio quando viene fornita un'immagine di riferimento. | COMBO | Sì | `"subject_reference"`<br>`"style_reference"` |
+| `fedeltà_immagine` | Intensità del riferimento per le immagini caricate dall'utente (predefinito: 0.5, avanzato) | FLOAT | Sì | 0.0 - 1.0 |
+| `fedeltà_umano` | Somiglianza del riferimento del soggetto (predefinito: 0.45, avanzato) | FLOAT | Sì | 0.0 - 1.0 |
 | `model_name` | Selezione del modello per la generazione di immagini (predefinito: "kling-v3") | COMBO | Sì | `"kling-v3"` |
-| `aspect_ratio` | Rapporto d'aspetto per le immagini generate (predefinito: "16:9") | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` |
+| `rapporto_d’aspetto` | Rapporto d'aspetto per le immagini generate (predefinito: "16:9") | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` |
 | `n` | Numero di immagini generate (predefinito: 1) | INT | Sì | 1 - 9 |
-| `image` | Immagine di riferimento opzionale | IMAGE | No | - |
+| `immagine` | Immagine di riferimento opzionale | IMAGE | No | - |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati sono non deterministici indipendentemente dal seed (predefinito: 0) | INT | No | 0 - 2147483647 |
 
 **Vincoli dei parametri:**

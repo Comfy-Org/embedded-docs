@@ -7,7 +7,7 @@ Il nodo Differential Diffusion modifica il processo di denoising applicando una 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `model` | Il modello di diffusione da modificare | MODEL | Sì | - |
-| `strength` | Controlla l'intensità di fusione tra la maschera di denoising originale e la maschera binaria a soglia (predefinito: 1.0) | FLOAT | No | 0.0 - 1.0 |
+| `forza` | Controlla l'intensità di fusione tra la maschera di denoising originale e la maschera binaria a soglia (predefinito: 1.0) | FLOAT | No | 0.0 - 1.0 |
 
 ## Output
 

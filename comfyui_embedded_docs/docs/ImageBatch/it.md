@@ -5,8 +5,8 @@ Il nodo `ImageBatch` è progettato per combinare due immagini in un unico batch.
 ## Input
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `image1` | La prima immagine da combinare nel batch. Funge da riferimento per le dimensioni a cui la seconda immagine verrà adattata, se necessario. | `IMAGE` |
-| `image2` | La seconda immagine da combinare nel batch. Viene ridimensionata automaticamente per corrispondere alle dimensioni della prima immagine, se diverse. | `IMAGE` |
+| `immagine1` | La prima immagine da combinare nel batch. Funge da riferimento per le dimensioni a cui la seconda immagine verrà adattata, se necessario. | `IMAGE` |
+| `immagine2` | La seconda immagine da combinare nel batch. Viene ridimensionata automaticamente per corrispondere alle dimensioni della prima immagine, se diverse. | `IMAGE` |
 
 ## Output
 | Parametro | Descrizione | Tipo di dato |

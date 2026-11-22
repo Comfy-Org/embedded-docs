@@ -6,8 +6,8 @@ Il nodo GITSScheduler genera i sigma della pianificazione del rumore per il meto
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `coeff` | Parametro avanzato. Il valore del coefficiente che controlla la curva della pianificazione del rumore (predefinito: 1.20). Il valore viene arrotondato a due decimali e seleziona quale tabella di livelli di rumore predefinita viene utilizzata. | FLOAT | Sì | 0.80 - 1.50 (passo 0.05) |
-| `steps` | Il numero totale di passaggi di campionamento per cui generare i sigma (predefinito: 10). | INT | Sì | 2 - 1000 |
+| `coefficiente` | Parametro avanzato. Il valore del coefficiente che controlla la curva della pianificazione del rumore (predefinito: 1.20). Il valore viene arrotondato a due decimali e seleziona quale tabella di livelli di rumore predefinita viene utilizzata. | FLOAT | Sì | 0.80 - 1.50 (passo 0.05) |
+| `passi` | Il numero totale di passaggi di campionamento per cui generare i sigma (predefinito: 10). | INT | Sì | 2 - 1000 |
 | `denoise` | Fattore di denoising che riduce il numero di passaggi utilizzati (predefinito: 1.0). | FLOAT | Sì | 0.0 - 1.0 (passo 0.01) |
 
 **Nota:** Quando `denoise` è 0.0 o inferiore, il nodo restituisce un tensore vuoto. Quando `denoise` è inferiore a 1.0, il numero effettivo di passaggi utilizzati viene calcolato come `round(steps * denoise)` e viene mantenuta solo l'ultima parte corrispondente della pianificazione. Per passaggi compresi tra 2 e 20, il nodo seleziona una pianificazione del rumore predefinita corrispondente. Per passaggi maggiori di 20, il nodo utilizza l'interpolazione log-lineare per estendere i livelli di rumore predefiniti al numero di passaggi desiderato.

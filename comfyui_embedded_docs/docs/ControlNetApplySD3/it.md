@@ -8,14 +8,14 @@ Questo nodo applica la guida ControlNet al condizionamento di Stable Diffusion 3
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | Il condizionamento positivo a cui applicare la guida ControlNet | CONDITIONING | Sì | - |
-| `negative` | Il condizionamento negativo a cui applicare la guida ControlNet | CONDITIONING | Sì | - |
+| `positivo` | Il condizionamento positivo a cui applicare la guida ControlNet | CONDITIONING | Sì | - |
+| `negativo` | Il condizionamento negativo a cui applicare la guida ControlNet | CONDITIONING | Sì | - |
 | `control_net` | Il modello ControlNet da usare per la guida | CONTROL_NET | Sì | - |
 | `vae` | Il modello VAE usato nel processo | VAE | Sì | - |
-| `image` | L'immagine di input che ControlNet userà come guida | IMAGE | Sì | - |
-| `strength` | La forza dell'effetto ControlNet (predefinito: 1.0). Se impostato su 0.0, il nodo salta l'applicazione di ControlNet e restituisce il condizionamento invariato. | FLOAT | Sì | 0.0 - 10.0 |
-| `start_percent` | Il punto di partenza nel processo di generazione in cui ControlNet inizia ad applicarsi (predefinito: 0.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `end_percent` | Il punto finale nel processo di generazione in cui ControlNet smette di applicarsi (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `immagine` | L'immagine di input che ControlNet userà come guida | IMAGE | Sì | - |
+| `intensità` | La forza dell'effetto ControlNet (predefinito: 1.0). Se impostato su 0.0, il nodo salta l'applicazione di ControlNet e restituisce il condizionamento invariato. | FLOAT | Sì | 0.0 - 10.0 |
+| `percentuale_inizio` | Il punto di partenza nel processo di generazione in cui ControlNet inizia ad applicarsi (predefinito: 0.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `percentuale_fine` | Il punto finale nel processo di generazione in cui ControlNet smette di applicarsi (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
 
 **Nota:** Quando `strength` è impostato su 0.0, non viene applicata alcuna guida ControlNet e il condizionamento di input viene passato invariato a entrambi gli output.
 

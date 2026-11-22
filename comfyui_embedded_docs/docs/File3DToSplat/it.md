@@ -6,7 +6,7 @@ Questo nodo converte un file 3D contenente dati gaussian splat in un formato gau
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model_3d` | Un file 3D di gaussian splat | FILE3D | Sì | - |
+| `modello_3d` | Un file 3D di gaussian splat | FILE3D | Sì | - |
 
 Il file di input deve essere in uno dei formati supportati: PLY, SPLAT, KSPLAT o SPZ. I file PLY contengono dati completi delle armoniche sferiche, mentre gli altri formati contengono solo informazioni sul colore di base. Il formato viene rilevato automaticamente dal contenuto del file.
 

@@ -6,8 +6,8 @@ Questo nodo rimuove da un batch le immagini duplicate o molto simili. Funziona c
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `images` | Il batch di immagini da elaborare per la deduplicazione. | IMAGE | Sì | - |
-| `similarity_threshold` | Soglia di similarità (0-1). Un valore più alto richiede una maggiore similarità. Le immagini con similarità superiore a questa soglia vengono considerate duplicate. (predefinito: 0.95) | FLOAT | No | 0.0 - 1.0 |
+| `immagini` | Il batch di immagini da elaborare per la deduplicazione. | IMAGE | Sì | - |
+| `soglia di similarità` | Soglia di similarità (0-1). Un valore più alto richiede una maggiore similarità. Le immagini con similarità superiore a questa soglia vengono considerate duplicate. (predefinito: 0.95) | FLOAT | No | 0.0 - 1.0 |
 
 ## Output
 

@@ -11,8 +11,8 @@ Genera una nuova immagine da un prompt testuale, un prompt JSON strutturato o un
 | `aspect_ratio` | Proporzioni dell'output (predefinito: `"1:1"`). Le proporzioni da `"16:10"` in poi sono dimensioni FIBO 2.0 con requisiti aggiuntivi, elencati di seguito. | COMBO | Sì | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"16:10"`<br>`"10:16"`<br>`"2:1"`<br>`"1:2"`<br>`"21:9"`<br>`"9:21"`<br>`"3:1"`<br>`"1:3"`<br>`"4:1"`<br>`"1:4"`<br>`"5:1"`<br>`"1:5"` |
 | `resolution` | Risoluzione dell'output in megapixel (predefinito: `"1MP"`). | COMBO | Sì | `"1MP"`<br>`"4MP"` |
 | `seed` | Seed che inizializza la generazione (predefinito: 42). | INT | Sì | Da 1 a 2147483647 |
-| `moderation` | Impostazioni di moderazione. Selezionando `"true"` vengono mostrati gli input di moderazione elencati di seguito. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
-| `image` | Immagine di riferimento opzionale da cui trarre spunto. Il risultato è una nuova immagine con le proporzioni selezionate, non una modifica di questa immagine. | IMAGE | No | - |
+| `moderazione` | Impostazioni di moderazione. Selezionando `"true"` vengono mostrati gli input di moderazione elencati di seguito. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
+| `immagine` | Immagine di riferimento opzionale da cui trarre spunto. Il risultato è una nuova immagine con le proporzioni selezionate, non una modifica di questa immagine. | IMAGE | No | - |
 
 ### Input di moderazione
 

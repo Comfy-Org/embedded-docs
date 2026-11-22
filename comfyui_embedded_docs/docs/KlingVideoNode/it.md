@@ -18,15 +18,15 @@ Questo nodo genera video con il modello Kling V3. Supporta la generazione da tes
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model.resolution` | La risoluzione per il video generato. Il valore predefinito è `"1080p"`. | COMBO | Sì | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | Il rapporto d'aspetto per il video generato. Ignorato in modalità da immagine a video. | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `resolution` | La risoluzione per il video generato. Il valore predefinito è `"1080p"`. | COMBO | Sì | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `aspect_ratio` | Il rapporto d'aspetto per il video generato. Ignorato in modalità da immagine a video. | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
 ### Input di kling-3.0-turbo
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model.resolution` | La risoluzione per il video generato. Il valore predefinito è `"720p"`. | COMBO | Sì | `"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | Il rapporto d'aspetto per il video generato. Ignorato in modalità da immagine a video. | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `resolution` | La risoluzione per il video generato. Il valore predefinito è `"720p"`. | COMBO | Sì | `"1080p"`<br>`"720p"` |
+| `aspect_ratio` | Il rapporto d'aspetto per il video generato. Ignorato in modalità da immagine a video. | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
 ### Input multi-shot
 

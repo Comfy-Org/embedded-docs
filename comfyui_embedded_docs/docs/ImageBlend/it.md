@@ -6,10 +6,10 @@ Il nodo `ImageBlend` è progettato per fondere due immagini in base a una modali
 
 | Campo | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `image1` | La prima immagine da fondere. Funge da livello di base per l'operazione di fusione. | `IMAGE` |
-| `image2` | La seconda immagine da fondere. A seconda della modalità di fusione, modifica l'aspetto della prima immagine. | `IMAGE` |
-| `blend_factor` | Determina il peso della seconda immagine nella fusione. Un fattore di fusione più alto dà maggiore rilievo alla seconda immagine nella fusione risultante. | `FLOAT` |
-| `blend_mode` | Specifica il metodo di fusione delle due immagini. Supporta modalità come normal, multiply, screen, overlay, soft light e difference, ciascuna delle quali produce un effetto visivo unico. | COMBO[STRING] |
+| `immagine1` | La prima immagine da fondere. Funge da livello di base per l'operazione di fusione. | `IMAGE` |
+| `immagine2` | La seconda immagine da fondere. A seconda della modalità di fusione, modifica l'aspetto della prima immagine. | `IMAGE` |
+| `fattore di fusione` | Determina il peso della seconda immagine nella fusione. Un fattore di fusione più alto dà maggiore rilievo alla seconda immagine nella fusione risultante. | `FLOAT` |
+| `modalità di fusione` | Specifica il metodo di fusione delle due immagini. Supporta modalità come normal, multiply, screen, overlay, soft light e difference, ciascuna delle quali produce un effetto visivo unico. | COMBO[STRING] |
 
 ## Output
 

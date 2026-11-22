@@ -6,7 +6,7 @@ Il nodo ModelPatchLoader carica un file di patch del modello dalla cartella `mod
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `name` | Il nome file della patch del modello da caricare dalla cartella `model_patches`. Seleziona uno dei file di patch disponibili dall'elenco. | COMBO | Sì | Elenco generato dinamicamente di tutti i file di patch del modello trovati nella cartella `model_patches` |
+| `nome` | Il nome file della patch del modello da caricare dalla cartella `model_patches`. Seleziona uno dei file di patch disponibili dall'elenco. | COMBO | Sì | Elenco generato dinamicamente di tutti i file di patch del modello trovati nella cartella `model_patches` |
 
 Nota: questo nodo è contrassegnato come sperimentale. Il tipo di patch viene rilevato automaticamente dal contenuto del file, quindi non è necessaria alcuna selezione manuale del tipo. Il nodo legge i metadati del checkpoint e ispeziona le chiavi dei pesi per decidere quale architettura costruire (ad esempio Qwen Image block-wise ControlNet, Qwen Image 2.1 Fun ControlNet, Z-Image ControlNet, Wan Uni3C ControlNet, MiniMax H3 Fun ControlNet, SigLIP feature projection, Lightricks duration head, Anima LLLite, MultiTalk o SUPIR). I pesi vengono caricati con il caricamento sicuro abilitato, e il modello viene posizionato sul dispositivo di offload all'interno di un `CoreModelPatcher` in modo che possa essere successivamente applicato a un altro modello.
 

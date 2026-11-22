@@ -7,7 +7,7 @@ Questo nodo è progettato per modificare l'attributo strength di un determinato 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
 | `CONDITIONING` | Il set di conditioning da modificare, che rappresenta lo stato attuale del conditioning che influenza il processo di generazione. | CONDITIONING |
-| `strength` | Il valore di strength da applicare al set di conditioning, che determina l'intensità della sua influenza. | `FLOAT` |
+| `intensità` | Il valore di strength da applicare al set di conditioning, che determina l'intensità della sua influenza. | `FLOAT` |
 
 ## Output
 

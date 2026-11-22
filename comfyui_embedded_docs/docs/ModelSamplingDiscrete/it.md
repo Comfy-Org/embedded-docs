@@ -6,8 +6,8 @@ Questo nodo è progettato per modificare il comportamento di campionamento di un
 
 | Parametro | Descrizione | Tipo di dato | Python dtype |
 | --- | --- | --- | --- |
-| `model` | Il modello a cui verrà applicata la strategia di campionamento discreto. Questo parametro è cruciale poiché definisce il modello di base che sarà modificato. | MODEL | `torch.nn.Module` |
-| `sampling` | Specifica il metodo di campionamento discreto da applicare al modello. La scelta del metodo influisce su come il modello genera i campioni, offrendo strategie di campionamento diverse. | COMBO[STRING] | `str` |
+| `modello` | Il modello a cui verrà applicata la strategia di campionamento discreto. Questo parametro è cruciale poiché definisce il modello di base che sarà modificato. | MODEL | `torch.nn.Module` |
+| `campionamento` | Specifica il metodo di campionamento discreto da applicare al modello. La scelta del metodo influisce su come il modello genera i campioni, offrendo strategie di campionamento diverse. | COMBO[STRING] | `str` |
 | `zsnr` | Un flag booleano che, se abilitato, regola la strategia di riduzione del rumore del modello in base al rapporto rumore zero-shot. Ciò può influenzare la qualità e le caratteristiche dei campioni generati. | `BOOLEAN` | `bool` |
 
 ## Output

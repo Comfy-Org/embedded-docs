@@ -6,7 +6,7 @@ MergeMeshes combina più mesh di input in un'unica mesh impilando i loro vertici
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `meshes` | Slot espandibile: collega da 2 a 50 oggetti mesh (denominati `mesh_1`, `mesh_2`, ..., `mesh_50`). Tutte le mesh collegate vengono unite in un'unica mesh di output. | MESH | Sì | Da 2 a 50 mesh |
+| `mesh` | Slot espandibile: collega da 2 a 50 oggetti mesh (denominati `mesh_1`, `mesh_2`, ..., `mesh_50`). Tutte le mesh collegate vengono unite in un'unica mesh di output. | MESH | Sì | Da 2 a 50 mesh |
 
 **Nota:** È necessario fornire almeno una mesh; in caso contrario il nodo genera un errore. Viene utilizzato solo il primo elemento mesh del batch di ogni mesh di input. Le mesh di input vengono spostate sulla CPU prima dell'unione. Se una qualsiasi mesh di input ha dati UV, l'output include gli UV e le mesh prive di UV ricevono valori UV riempiti con zeri. Se una qualsiasi mesh di input ha colori dei vertici, l'output include i colori dei vertici; le mesh prive di colori ricevono colori bianchi (valore 1) e i canali di colore vengono estesi al maggior numero di canali riscontrato tra gli input. Viene mantenuta solo la texture del primo input che ne fornisce una; le texture aggiuntive vengono scartate.
 

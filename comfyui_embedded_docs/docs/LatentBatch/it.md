@@ -6,8 +6,8 @@ Il nodo LatentBatch è progettato per unire due insiemi di campioni latenti in u
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `samples1` | Il primo insieme di campioni latenti da unire. Svolge un ruolo cruciale nel determinare la forma finale del batch unito. | `LATENT` |
-| `samples2` | Il secondo insieme di campioni latenti da unire. Se le sue dimensioni differiscono da quelle del primo insieme, viene ridimensionato per garantirne la compatibilità prima dell'unione. | `LATENT` |
+| `campioni1` | Il primo insieme di campioni latenti da unire. Svolge un ruolo cruciale nel determinare la forma finale del batch unito. | `LATENT` |
+| `campioni2` | Il secondo insieme di campioni latenti da unire. Se le sue dimensioni differiscono da quelle del primo insieme, viene ridimensionato per garantirne la compatibilità prima dell'unione. | `LATENT` |
 
 ## Output
 

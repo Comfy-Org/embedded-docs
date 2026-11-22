@@ -6,7 +6,7 @@ Il nodo ElevenLabs Voice Selector consente di scegliere una voce specifica da un
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `voice` | Scegli una voce tra le voci predefinite di ElevenLabs. | STRING | Sì | `"Adam (male, american)"`<br>`"Antoni (male, british)"`<br>`"Arnold (male, american)"`<br>`"Bella (female, american)"`<br>`"Domi (female, american)"`<br>`"Elli (female, american)"`<br>`"Josh (male, american)"`<br>`"Rachel (female, american)"`<br>`"Sam (male, american)"` |
+| `voce` | Scegli una voce tra le voci predefinite di ElevenLabs. | STRING | Sì | `"Adam (male, american)"`<br>`"Antoni (male, british)"`<br>`"Arnold (male, american)"`<br>`"Bella (female, american)"`<br>`"Domi (female, american)"`<br>`"Elli (female, american)"`<br>`"Josh (male, american)"`<br>`"Rachel (female, american)"`<br>`"Sam (male, american)"` |
 
 ## Output
 

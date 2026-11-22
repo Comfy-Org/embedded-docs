@@ -6,7 +6,7 @@ Il nodo `ImageInvert` è progettato per invertire i colori di un'immagine, trasf
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `image` | Il parametro `image` rappresenta l'immagine di input da invertire. È fondamentale per specificare l'immagine di destinazione i cui colori devono essere invertiti, influenzando l'esecuzione del nodo e il risultato visivo del processo di inversione. | `IMAGE` |
+| `immagine` | Il parametro `image` rappresenta l'immagine di input da invertire. È fondamentale per specificare l'immagine di destinazione i cui colori devono essere invertiti, influenzando l'esecuzione del nodo e il risultato visivo del processo di inversione. | `IMAGE` |
 
 ## Output
 

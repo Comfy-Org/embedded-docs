@@ -39,7 +39,7 @@ Il nodo ModelMergeLTXV unisce due modelli LTXV fondendo i loro componenti corris
 | `transformer_blocks.25.` | Peso di interpolazione per il blocco transformer 25 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
 | `transformer_blocks.26.` | Peso di interpolazione per il blocco transformer 26 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
 | `transformer_blocks.27.` | Peso di interpolazione per il blocco transformer 27 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
-| `scale_shift_table` | Peso di interpolazione per la tabella scale shift (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
+| `tabella_scala_shift` | Peso di interpolazione per la tabella scale shift (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
 | `proj_out.` | Peso di interpolazione per i layer di proiezione dell'output (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (passo: 0.01) |
 
 ## Output

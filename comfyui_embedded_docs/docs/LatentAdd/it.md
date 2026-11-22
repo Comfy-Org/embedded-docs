@@ -6,8 +6,8 @@ Il nodo LatentAdd è progettato per l'addizione di due rappresentazioni latenti.
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `samples1` | Il primo insieme di campioni latenti da sommare. Rappresenta uno degli input le cui caratteristiche devono essere combinate con un altro insieme di campioni latenti. | `LATENT` |
-| `samples2` | Il secondo insieme di campioni latenti da sommare. Costituisce l'altro input le cui caratteristiche vengono combinate con il primo insieme di campioni latenti tramite una somma elemento per elemento. | `LATENT` |
+| `campioni1` | Il primo insieme di campioni latenti da sommare. Rappresenta uno degli input le cui caratteristiche devono essere combinate con un altro insieme di campioni latenti. | `LATENT` |
+| `campioni2` | Il secondo insieme di campioni latenti da sommare. Costituisce l'altro input le cui caratteristiche vengono combinate con il primo insieme di campioni latenti tramite una somma elemento per elemento. | `LATENT` |
 
 ## Output
 

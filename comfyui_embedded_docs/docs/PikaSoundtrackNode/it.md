@@ -7,8 +7,8 @@ Questo nodo genera una colonna sonora sincronizzata per un video con Pika. L'imm
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `video` | La clip per cui creare una colonna sonora. Fino a 10 minuti. | VIDEO | Sì | - |
-| `instruction` | Il tipo di audio desiderato: effetti sonori, ambiente, musica o stile. Lasciare vuoto per ricavarlo dall'immagine. Predefinito: "" (stringa vuota). | STRING | Sì | 0 a 10000 caratteri |
-| `seed` | Seed per il campionamento. Predefinito: 42. | INT | Sì | 0 a 2147483647 |
+| `istruzione` | Il tipo di audio desiderato: effetti sonori, ambiente, musica o stile. Lasciare vuoto per ricavarlo dall'immagine. Predefinito: "" (stringa vuota). | STRING | Sì | 0 a 10000 caratteri |
+| `seme` | Seed per il campionamento. Predefinito: 42. | INT | Sì | 0 a 2147483647 |
 
 **Vincoli:**
 

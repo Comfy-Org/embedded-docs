@@ -6,9 +6,9 @@ Il nodo Empty Flux 2 Latent crea una rappresentazione latente vuota riempita di 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `width` | La larghezza dell'immagine finale da generare. La larghezza latente sarà questo valore diviso per 16. Il valore predefinito è 1024. | INT | Sì | 16 a 16384 |
-| `height` | L'altezza dell'immagine finale da generare. L'altezza latente sarà questo valore diviso per 16. Il valore predefinito è 1024. | INT | Sì | 16 a 16384 |
-| `batch_size` | Il numero di campioni latenti da generare in un singolo batch. Il valore predefinito è 1. | INT | No | 1 a 4096 |
+| `larghezza` | La larghezza dell'immagine finale da generare. La larghezza latente sarà questo valore diviso per 16. Il valore predefinito è 1024. | INT | Sì | 16 a 16384 |
+| `altezza` | L'altezza dell'immagine finale da generare. L'altezza latente sarà questo valore diviso per 16. Il valore predefinito è 1024. | INT | Sì | 16 a 16384 |
+| `dimensione batch` | Il numero di campioni latenti da generare in un singolo batch. Il valore predefinito è 1. | INT | No | 1 a 4096 |
 
 **Nota:** Gli input `width` e `height` usano un passo di 16, quindi devono essere divisibili per 16. Questo perché il nodo li divide per questo fattore per creare le dimensioni latenti.
 

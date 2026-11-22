@@ -8,10 +8,10 @@ Modifica un video con Beeble SwitchX. Questo nodo può sostituire qualsiasi elem
 |-----------|-------------|--------------|--------------|------------|
 | `video` | Il video di input da modificare. | VIDEO | Sì | N/A |
 | `prompt` | Una descrizione testuale del nuovo aspetto desiderato per la scena. | STRING | Sì | N/A |
-| `alpha_mode` | La modalità della matte alpha. La modalità "fill" non ha una matte separata e riempie l'intero frame. La modalità "select" usa una singola immagine keyframe per definire l'area da modificare. La modalità "custom" usa un video alpha completo per definire l'area da modificare frame per frame. | COMBO | Sì | `"fill"`<br>`"select"`<br>`"custom"` |
-| `max_resolution` | La risoluzione massima per il video di output (predefinita: "1080p"). | COMBO | Sì | `"720p"`<br>`"1080p"` |
+| `modalità alpha` | La modalità della matte alpha. La modalità "fill" non ha una matte separata e riempie l'intero frame. La modalità "select" usa una singola immagine keyframe per definire l'area da modificare. La modalità "custom" usa un video alpha completo per definire l'area da modificare frame per frame. | COMBO | Sì | `"fill"`<br>`"select"`<br>`"custom"` |
+| `risoluzione massima` | La risoluzione massima per il video di output (predefinita: "1080p"). | COMBO | Sì | `"720p"`<br>`"1080p"` |
 | `seed` | Un valore di seed per la riproducibilità. Usando lo stesso seed con gli stessi input si otterrà lo stesso risultato. | INT | Sì | 0 a 2147483647 |
-| `reference_image` | Un'immagine di riferimento opzionale che descrive il nuovo aspetto desiderato per la scena. | IMAGE | No | N/A |
+| `immagine di riferimento` | Un'immagine di riferimento opzionale che descrive il nuovo aspetto desiderato per la scena. | IMAGE | No | N/A |
 
 ### Dettagli sulla modalità alpha
 

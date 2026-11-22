@@ -21,9 +21,9 @@ Refiner può essere utilizzato in due modi:
 | --- | --- | --- | --- | --- | --- |
 | `clip` | Istanza del modello CLIP utilizzata per la tokenizzazione e la codifica del testo, il componente principale per convertire il testo in un formato comprensibile al modello | CLIP | Obbligatorio | - | - |
 | `ascore` | Controlla la qualità visiva e l'estetica delle immagini generate, in modo simile a impostare standard di qualità per un'opera d'arte:<br/>- Punteggi alti (7.5-8.5): persegue effetti più rifiniti e ricchi di dettagli<br/>- Punteggi medi (6.0-7.0): controllo della qualità bilanciato<br/>- Punteggi bassi (2.0-3.0): adatto per prompt negativi | FLOAT | Opzionale | 6.0 | 0.0-1000.0 |
-| `width` | Specifica la larghezza dell'immagine di output (in pixel), deve essere un multiplo di 8. SDXL offre le prestazioni migliori quando il numero totale di pixel è vicino a 1024×1024 (circa 1M pixel) | INT | Obbligatorio | 1024 | 64-16384 |
-| `height` | Specifica l'altezza dell'immagine di output (in pixel), deve essere un multiplo di 8. SDXL offre le prestazioni migliori quando il numero totale di pixel è vicino a 1024×1024 (circa 1M pixel) | INT | Obbligatorio | 1024 | 64-16384 |
-| `text` | Descrizione del prompt testuale, supporta input multilinea e sintassi dei prompt dinamici. In Refiner, i prompt testuali dovrebbero concentrarsi maggiormente sulla descrizione della qualità visiva e delle caratteristiche di dettaglio desiderate | STRING | Obbligatorio | - | - |
+| `larghezza` | Specifica la larghezza dell'immagine di output (in pixel), deve essere un multiplo di 8. SDXL offre le prestazioni migliori quando il numero totale di pixel è vicino a 1024×1024 (circa 1M pixel) | INT | Obbligatorio | 1024 | 64-16384 |
+| `altezza` | Specifica l'altezza dell'immagine di output (in pixel), deve essere un multiplo di 8. SDXL offre le prestazioni migliori quando il numero totale di pixel è vicino a 1024×1024 (circa 1M pixel) | INT | Obbligatorio | 1024 | 64-16384 |
+| `testo` | Descrizione del prompt testuale, supporta input multilinea e sintassi dei prompt dinamici. In Refiner, i prompt testuali dovrebbero concentrarsi maggiormente sulla descrizione della qualità visiva e delle caratteristiche di dettaglio desiderate | STRING | Obbligatorio | - | - |
 
 ## Output
 

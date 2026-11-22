@@ -6,8 +6,8 @@ Il nodo Curve Editor fornisce un'interfaccia visiva per regolare e ottimizzare u
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `curve` | La curva di input da modificare. | CURVE | Sì | N/A |
-| `histogram` | Un istogramma opzionale da visualizzare accanto alla curva come riferimento visivo. | HISTOGRAM | No | N/A |
+| `curva` | La curva di input da modificare. | CURVE | Sì | N/A |
+| `istogramma` | Un istogramma opzionale da visualizzare accanto alla curva come riferimento visivo. | HISTOGRAM | No | N/A |
 
 ## Output
 

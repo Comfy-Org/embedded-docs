@@ -7,8 +7,8 @@ Questo nodo genera un video che interpola attraverso una sequenza di immagini gu
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `prompt` | Prompt testuale per la generazione del video (predefinito: stringa vuota). | STRING | Sì | da 1 a 6000 caratteri |
-| `resolution` | La risoluzione di output del video generato (predefinito: "720p"). | STRING | Sì | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
-| `duration` | La durata del video generato (predefinito: "5s"). | STRING | Sì | `"5s"`<br>`"10s"` |
+| `risoluzione` | La risoluzione di output del video generato (predefinito: "720p"). | STRING | Sì | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+| `durata` | La durata del video generato (predefinito: "5s"). | STRING | Sì | `"5s"`<br>`"10s"` |
 | `seed` | Seme per la generazione di numeri casuali per controllare la riproducibilità. | INT | Sì | da 0 a 4294967295 |
 | `keyframes` | Sequenza di keyframe dai nodi Luma Ray 3.2 Keyframe (almeno 2). | LUMA_RAY32_KEYFRAME | Sì | da 2 a 64 keyframe |
 

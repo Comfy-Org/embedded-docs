@@ -6,8 +6,8 @@ Applica una pila di LoRA a un modello di diffusione in un unico nodo. Ogni riga 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello di diffusione a cui verranno applicati i LoRA. | MODEL | Sì | - |
-| `loras` | Gruppo espandibile di LoRA, applicati al modello nell'ordine delle righe (`loras.0`, `loras.1` e così via). Aggiungi una riga per ogni LoRA; ogni riga contiene un file, una forza e un interruttore on/off. | DYNAMIC_GROUP | Sì | da 1 a 20 righe |
+| `modello` | Il modello di diffusione a cui verranno applicati i LoRA. | MODEL | Sì | - |
+| `LoRA` | Gruppo espandibile di LoRA, applicati al modello nell'ordine delle righe (`loras.0`, `loras.1` e così via). Aggiungi una riga per ogni LoRA; ogni riga contiene un file, una forza e un interruttore on/off. | DYNAMIC_GROUP | Sì | da 1 a 20 righe |
 
 ### Campi della riga `loras`
 

@@ -6,7 +6,7 @@ Questo nodo è progettato per applicare una maschera di rumore a un insieme di c
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `samples` | I campioni latenti ai quali verrà applicata la maschera di rumore. Questo parametro è cruciale per determinare il contenuto di base che verrà modificato. | `LATENT` |
+| `campioni` | I campioni latenti ai quali verrà applicata la maschera di rumore. Questo parametro è cruciale per determinare il contenuto di base che verrà modificato. | `LATENT` |
 | `mask` | La maschera da applicare ai campioni latenti. Definisce le aree e l'intensità dell'alterazione del rumore all'interno dei campioni. | `MASK` |
 
 ## Output

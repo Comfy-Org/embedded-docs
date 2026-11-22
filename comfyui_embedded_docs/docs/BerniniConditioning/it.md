@@ -6,16 +6,16 @@ Il nodo BerniniConditioning prepara i dati di condizionamento video e immagine p
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `positive` | Dati di condizionamento positivi | CONDITIONING | Sì | - |
-| `negative` | Dati di condizionamento negativi | CONDITIONING | Sì | - |
+| `positivo` | Dati di condizionamento positivi | CONDITIONING | Sì | - |
+| `negativo` | Dati di condizionamento negativi | CONDITIONING | Sì | - |
 | `vae` | Modello VAE usato per codificare input video e immagine | VAE | Sì | - |
-| `width` | Larghezza del latent di output (predefinito: 832) | INT | Sì | da 16 a 8192 (passo: 16) |
-| `height` | Altezza del latent di output (predefinito: 480) | INT | Sì | da 16 a 8192 (passo: 16) |
-| `length` | Numero di frame nel latent di output (predefinito: 81) | INT | Sì | da 1 a 8192 (passo: 4) |
+| `larghezza` | Larghezza del latent di output (predefinito: 832) | INT | Sì | da 16 a 8192 (passo: 16) |
+| `altezza` | Altezza del latent di output (predefinito: 480) | INT | Sì | da 16 a 8192 (passo: 16) |
+| `lunghezza` | Numero di frame nel latent di output (predefinito: 81) | INT | Sì | da 1 a 8192 (passo: 4) |
 | `batch_size` | Numero di video da generare in un singolo batch (predefinito: 1) | INT | Sì | da 1 a 4096 |
-| `source_video` | Video sorgente da modificare o di cui riapplicare lo stile (v2v, rv2v). Ridimensionato a width/height e tagliato a length. | IMAGE | No | - |
-| `reference_video` | Video da inserire nel video sorgente (ads2v). Tagliato a length e ridimensionato mantenendo le proporzioni (lato lungo limitato a ref_max_size). | IMAGE | No | - |
-| `reference_images` | Immagini di riferimento iniettate come token in-context (r2v, rv2v). Ogni immagine viene codificata indipendentemente con il proprio rapporto d'aspetto nativo (lato lungo limitato a ref_max_size). È possibile fornire fino a 8 immagini. | IMAGE | No | da 0 a 8 immagini |
+| `video_sorgente` | Video sorgente da modificare o di cui riapplicare lo stile (v2v, rv2v). Ridimensionato a width/height e tagliato a length. | IMAGE | No | - |
+| `video_di_riferimento` | Video da inserire nel video sorgente (ads2v). Tagliato a length e ridimensionato mantenendo le proporzioni (lato lungo limitato a ref_max_size). | IMAGE | No | - |
+| `immagini_di_riferimento` | Immagini di riferimento iniettate come token in-context (r2v, rv2v). Ogni immagine viene codificata indipendentemente con il proprio rapporto d'aspetto nativo (lato lungo limitato a ref_max_size). È possibile fornire fino a 8 immagini. | IMAGE | No | da 0 a 8 immagini |
 | `ref_max_size` | Dimensione massima per il lato lungo di reference_video e reference_images. Ridimensionato mantenendo le proporzioni e arrotondato a 16px (predefinito: 848). | INT | No | da 16 a 8192 (passo: 16) |
 
 **Nota:** Il task viene dedotto da quali input sono collegati:

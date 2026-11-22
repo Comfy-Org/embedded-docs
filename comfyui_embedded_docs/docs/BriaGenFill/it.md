@@ -8,13 +8,13 @@ Questo nodo genera oggetti o paesaggi all'interno di una regione mascherata di u
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | L'immagine di input da modificare. | IMAGE | Sì | - |
-| `mask` | Le aree bianche vengono riempite con il contenuto generato, le aree nere vengono preservate. La maschera viene binarizzata prima dell'invio con una soglia del 50%: solo le aree dipinte con opacità superiore al 50% contano come bianche. Deve avere lo stesso rapporto d'aspetto dell'immagine. | MASK | Sì | - |
+| `immagine` | L'immagine di input da modificare. | IMAGE | Sì | - |
+| `maschera` | Le aree bianche vengono riempite con il contenuto generato, le aree nere vengono preservate. La maschera viene binarizzata prima dell'invio con una soglia del 50%: solo le aree dipinte con opacità superiore al 50% contano come bianche. Deve avere lo stesso rapporto d'aspetto dell'immagine. | MASK | Sì | - |
 | `prompt` | Descrizione di ciò che si desidera generare all'interno della regione mascherata. Deve contenere almeno 1 carattere. (predefinito: "") | STRING | Sì | - |
 | `negative_prompt` | Un prompt che descrive il contenuto da evitare nel risultato generato. Se lasciato vuoto, non viene inviato all'API. (predefinito: "") | STRING | Sì | - |
 | `refine_prompt` | Regola automaticamente il prompt per ottenere risultati migliori; disabilita per usare il prompt esattamente come scritto. (predefinito: true) | BOOLEAN | Sì | true<br>false |
-| `seed` | Seme per il processo di generazione. (predefinito: 42) | INT | Sì | 1 a 2147483647 |
-| `moderation` | Impostazioni di moderazione. Quando è impostato su "true", vengono applicate le opzioni di moderazione riportate di seguito. (predefinito: "false") | DYNAMIC_COMBO | Sì | "false"<br>"true" |
+| `seme` | Seme per il processo di generazione. (predefinito: 42) | INT | Sì | 1 a 2147483647 |
+| `moderazione` | Impostazioni di moderazione. Quando è impostato su "true", vengono applicate le opzioni di moderazione riportate di seguito. (predefinito: "false") | DYNAMIC_COMBO | Sì | "false"<br>"true" |
 
 ### Input di moderazione (quando `moderation` = "true")
 

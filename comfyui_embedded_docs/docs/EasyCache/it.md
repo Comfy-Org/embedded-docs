@@ -6,11 +6,11 @@ Il nodo EasyCache aggiunge un sistema di caching nativo a un modello di diffusio
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello a cui aggiungere EasyCache. | MODEL | Sì | - |
-| `reuse_threshold` | La soglia per riutilizzare i passaggi memorizzati nella cache (predefinito: 0.2). | FLOAT | Sì | 0.0 - 3.0 |
-| `start_percent` | Il passo di campionamento relativo per iniziare a usare EasyCache (predefinito: 0.15). | FLOAT | Sì | 0.0 - 1.0 |
-| `end_percent` | Il passo di campionamento relativo per terminare l'uso di EasyCache (predefinito: 0.95). | FLOAT | Sì | 0.0 - 1.0 |
-| `verbose` | Se registrare informazioni dettagliate (predefinito: False). | BOOLEAN | Sì | - |
+| `modello` | Il modello a cui aggiungere EasyCache. | MODEL | Sì | - |
+| `soglia_riutilizzo` | La soglia per riutilizzare i passaggi memorizzati nella cache (predefinito: 0.2). | FLOAT | Sì | 0.0 - 3.0 |
+| `percentuale_inizio` | Il passo di campionamento relativo per iniziare a usare EasyCache (predefinito: 0.15). | FLOAT | Sì | 0.0 - 1.0 |
+| `percentuale_fine` | Il passo di campionamento relativo per terminare l'uso di EasyCache (predefinito: 0.95). | FLOAT | Sì | 0.0 - 1.0 |
+| `verboso` | Se registrare informazioni dettagliate (predefinito: False). | BOOLEAN | Sì | - |
 
 ## Output
 

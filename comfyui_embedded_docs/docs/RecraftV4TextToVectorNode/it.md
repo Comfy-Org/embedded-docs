@@ -8,7 +8,7 @@ Il nodo Recraft V4 Text to Vector genera illustrazioni Scalable Vector Graphics 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Il modello da usare per la generazione. I modelli recraftv4_styles sono progettati per una generazione coerente con lo stile e richiedono sempre uno style_id o style_references. La selezione di un modello modifica le opzioni `size` disponibili. | DYNAMIC_COMBO | Sì | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
+| `modello` | Il modello da usare per la generazione. I modelli recraftv4_styles sono progettati per una generazione coerente con lo stile e richiedono sempre uno style_id o style_references. La selezione di un modello modifica le opzioni `size` disponibili. | DYNAMIC_COMBO | Sì | `"recraftv4_1_vector"`<br>`"recraftv4_1_utility_vector"`<br>`"recraftv4_1_pro_vector"`<br>`"recraftv4_1_utility_pro_vector"`<br>`"recraftv4"`<br>`"recraftv4_pro"`<br>`"recraftv4_styles_vector"`<br>`"recraftv4_styles_pro_vector"` |
 | `prompt` | Prompt per la generazione dell'immagine. Massimo 10.000 caratteri. | STRING | Sì | N/A |
 | `negative_prompt` | Questo input viene ignorato: il prompt negativo non è supportato dai modelli Recraft V4 e V4.1. | STRING | Sì | N/A |
 | `n` | Il numero di immagini da generare (predefinito: 1). | INT | Sì | Da 1 a 6 |

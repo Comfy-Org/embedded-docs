@@ -6,9 +6,9 @@ Il nodo TrainLoraNode crea e addestra un modello LoRA (Low-Rank Adaptation) su u
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello su cui addestrare il LoRA. | MODEL | Sì | - |
-| `latents` | I latenti da utilizzare per l'addestramento; fungono da dataset/input del modello. | LATENT | Sì | - |
-| `positive` | Il condizionamento positivo da utilizzare per l'addestramento. | CONDITIONING | Sì | - |
+| `modello` | Il modello su cui addestrare il LoRA. | MODEL | Sì | - |
+| `latenti` | I latenti da utilizzare per l'addestramento; fungono da dataset/input del modello. | LATENT | Sì | - |
+| `positivo` | Il condizionamento positivo da utilizzare per l'addestramento. | CONDITIONING | Sì | - |
 | `batch_size` | La dimensione del batch da utilizzare per l'addestramento (predefinito: 1). | INT | Sì | 1-10000 |
 | `grad_accumulation_steps` | Il numero di passi di accumulo del gradiente da utilizzare per l'addestramento (predefinito: 1). | INT | Sì | 1-1024 |
 | `steps` | Il numero di passi per cui addestrare il LoRA (predefinito: 16). | INT | Sì | 1-100000 |

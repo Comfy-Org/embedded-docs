@@ -8,7 +8,7 @@ Questo nodo genera un video utilizzando i modelli MiniMax H3, condizionato da im
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Modello da utilizzare per la generazione video (predefinito: "MiniMax H3"). Selezionando "MiniMax H3" si abilitano gli input di generazione e riferimento di MiniMax H3 riportati di seguito. Selezionando "MiniMax H3 Max" si abilitano gli input di generazione e riferimento di MiniMax H3 Max riportati di seguito. | DYNAMIC_COMBO | Sì | "MiniMax H3"<br>"MiniMax H3 Max" |
+| `modello` | Modello da utilizzare per la generazione video (predefinito: "MiniMax H3"). Selezionando "MiniMax H3" si abilitano gli input di generazione e riferimento di MiniMax H3 riportati di seguito. Selezionando "MiniMax H3 Max" si abilitano gli input di generazione e riferimento di MiniMax H3 Max riportati di seguito. | DYNAMIC_COMBO | Sì | "MiniMax H3"<br>"MiniMax H3 Max" |
 | `seed` | Seme casuale. La stessa richiesta con lo stesso seme produce risultati simili, ma non necessariamente identici (predefinito: 42). | INT | Sì | 0 a 4294967295 |
 | `watermark` | Se aggiungere una filigrana AIGC al video (predefinito: false). Supportato solo dal modello MiniMax H3. | BOOLEAN | No | true<br>false |
 

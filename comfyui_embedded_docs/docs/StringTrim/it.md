@@ -6,8 +6,8 @@ Il nodo StringTrim rimuove gli spazi bianchi (come spazi, tabulazioni e ritorni 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `string` | La stringa di testo da elaborare. Supporta input multilinea. | STRING | Sì | - |
-| `mode` | Specifica da quale lato (o lati) della stringa rimuovere gli spazi bianchi. "Both" rimuove gli spazi bianchi da entrambe le estremità, "Left" li rimuove solo dall'inizio, "Right" li rimuove solo dalla fine. | COMBO | Sì | "Both"<br>"Left"<br>"Right" |
+| `stringa` | La stringa di testo da elaborare. Supporta input multilinea. | STRING | Sì | - |
+| `modalità` | Specifica da quale lato (o lati) della stringa rimuovere gli spazi bianchi. "Both" rimuove gli spazi bianchi da entrambe le estremità, "Left" li rimuove solo dall'inizio, "Right" li rimuove solo dalla fine. | COMBO | Sì | "Both"<br>"Left"<br>"Right" |
 
 ## Output
 

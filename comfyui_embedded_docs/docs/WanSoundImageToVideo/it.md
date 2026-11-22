@@ -5,17 +5,17 @@ Il nodo WanSoundImageToVideo prepara il condizionamento e un tensore latente vid
 ## Input
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | Prompt di condizionamento positivi che guidano il contenuto che deve apparire nel video generato | CONDITIONING | Sì | - |
-| `negative` | Prompt di condizionamento negativi che specificano il contenuto da evitare nel video generato | CONDITIONING | Sì | - |
+| `positivo` | Prompt di condizionamento positivi che guidano il contenuto che deve apparire nel video generato | CONDITIONING | Sì | - |
+| `negativo` | Prompt di condizionamento negativi che specificano il contenuto da evitare nel video generato | CONDITIONING | Sì | - |
 | `vae` | Modello VAE utilizzato per codificare immagini di riferimento, riferimenti di movimento e fotogrammi del video di controllo in rappresentazioni latenti | VAE | Sì | - |
-| `width` | Larghezza del video di output in pixel (predefinito: 832, passo: 16) | INT | Sì | 16 a MAX_RESOLUTION |
-| `height` | Altezza del video di output in pixel (predefinito: 480, passo: 16) | INT | Sì | 16 a MAX_RESOLUTION |
-| `length` | Numero di fotogrammi nel video generato (predefinito: 77, passo: 4) | INT | Sì | 1 a MAX_RESOLUTION |
-| `batch_size` | Numero di video da generare simultaneamente (predefinito: 1) | INT | Sì | 1 a 4096 |
-| `audio_encoder_output` | Codifica audio opzionale che può influenzare la generazione del video in base alle caratteristiche del suono. Quando fornita, le caratteristiche audio vengono interpolate e utilizzate per condizionare la generazione del video. | AUDIO_ENCODER_OUTPUT | No | - |
-| `ref_image` | Immagine di riferimento opzionale che fornisce una guida visiva per il contenuto del video. L'immagine viene ingrandita per corrispondere alla larghezza e all'altezza specificate, quindi codificata in una rappresentazione latente. Viene utilizzata come riferimento solo la prima immagine dell'input. | IMAGE | No | - |
-| `control_video` | Video di controllo opzionale che guida il movimento e la struttura del video generato. Il video viene ingrandito e codificato, quindi utilizzato per condizionare l'output. Vengono utilizzati solo i primi `length` fotogrammi. | IMAGE | No | - |
-| `ref_motion` | Riferimento di movimento opzionale che fornisce una guida per i pattern di movimento nel video. Se l'input ha più di 73 fotogrammi, vengono utilizzati solo gli ultimi 73. Se vengono forniti meno di 73 fotogrammi, la sequenza viene riempita con fotogrammi neutri. | IMAGE | No | - |
+| `larghezza` | Larghezza del video di output in pixel (predefinito: 832, passo: 16) | INT | Sì | 16 a MAX_RESOLUTION |
+| `altezza` | Altezza del video di output in pixel (predefinito: 480, passo: 16) | INT | Sì | 16 a MAX_RESOLUTION |
+| `lunghezza` | Numero di fotogrammi nel video generato (predefinito: 77, passo: 4) | INT | Sì | 1 a MAX_RESOLUTION |
+| `dimensione_batch` | Numero di video da generare simultaneamente (predefinito: 1) | INT | Sì | 1 a 4096 |
+| `output_encoder_audio` | Codifica audio opzionale che può influenzare la generazione del video in base alle caratteristiche del suono. Quando fornita, le caratteristiche audio vengono interpolate e utilizzate per condizionare la generazione del video. | AUDIO_ENCODER_OUTPUT | No | - |
+| `immagine_riferimento` | Immagine di riferimento opzionale che fornisce una guida visiva per il contenuto del video. L'immagine viene ingrandita per corrispondere alla larghezza e all'altezza specificate, quindi codificata in una rappresentazione latente. Viene utilizzata come riferimento solo la prima immagine dell'input. | IMAGE | No | - |
+| `controllo_video` | Video di controllo opzionale che guida il movimento e la struttura del video generato. Il video viene ingrandito e codificato, quindi utilizzato per condizionare l'output. Vengono utilizzati solo i primi `length` fotogrammi. | IMAGE | No | - |
+| `movimento_riferimento` | Riferimento di movimento opzionale che fornisce una guida per i pattern di movimento nel video. Se l'input ha più di 73 fotogrammi, vengono utilizzati solo gli ultimi 73. Se vengono forniti meno di 73 fotogrammi, la sequenza viene riempita con fotogrammi neutri. | IMAGE | No | - |
 
 Nota: tutti gli input opzionali possono essere usati indipendentemente o insieme. Il nodo modifica il condizionamento `positive` e `negative` fornito in base a quali input opzionali sono collegati.
 

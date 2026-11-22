@@ -6,7 +6,7 @@ Questo nodo carica un modello MediaPipe Face Landmarker v2, che rileva volti e l
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model_name` | Modello di rilevamento dei volti da models/detection/. | COMBO | Sì | Elenco dei nomi file dei modelli disponibili trovati nella directory `models/detection/` |
+| `nome_modello` | Modello di rilevamento dei volti da models/detection/. | COMBO | Sì | Elenco dei nomi file dei modelli disponibili trovati nella directory `models/detection/` |
 
 ## Output
 

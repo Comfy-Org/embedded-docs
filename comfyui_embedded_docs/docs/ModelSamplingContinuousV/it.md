@@ -6,8 +6,8 @@ Il nodo ModelSamplingContinuousV regola il comportamento di campionamento di un 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello di input da modificare con il campionamento continuo V-prediction | MODEL | Sì | - |
-| `sampling` | Il metodo di campionamento da applicare; attualmente V-prediction è l'unica opzione disponibile (predefinito: `"v_prediction"`) | COMBO | Sì | `"v_prediction"` |
+| `modello` | Il modello di input da modificare con il campionamento continuo V-prediction | MODEL | Sì | - |
+| `campionamento` | Il metodo di campionamento da applicare; attualmente V-prediction è l'unica opzione disponibile (predefinito: `"v_prediction"`) | COMBO | Sì | `"v_prediction"` |
 | `sigma_max` | Il valore sigma massimo per il campionamento (parametro avanzato, predefinito: 500.0, passo: 0.001) | FLOAT | Sì | 0.0 - 1000.0 |
 | `sigma_min` | Il valore sigma minimo per il campionamento (parametro avanzato, predefinito: 0.03, passo: 0.001) | FLOAT | Sì | 0.0 - 1000.0 |
 

@@ -6,9 +6,9 @@ Il nodo Save Text scrive contenuto testuale in un file nella directory di output
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Range |
 |-----------|-------------|--------------|--------------|-------|
-| `text` | Il contenuto testuale da salvare in un file. Questo input deve essere collegato da un altro nodo. | STRING | Sì | - |
-| `filename_prefix` | Prefisso per il nome del file di output. Un contatore di 5 cifre viene aggiunto per evitare di sovrascrivere file esistenti (predefinito: "ComfyUI"). | STRING | No | - |
-| `format` | Formato del file in cui salvare il testo (predefinito: "txt"). Quando è selezionato "json", il testo JSON valido viene formattato con indentazione di 2 spazi; in caso contrario, il testo viene salvato così com'è. | COMBO | No | `"txt"`<br>`"csv"`<br>`"md"`<br>`"json"` |
+| `testo` | Il contenuto testuale da salvare in un file. Questo input deve essere collegato da un altro nodo. | STRING | Sì | - |
+| `prefisso_nome_file` | Prefisso per il nome del file di output. Un contatore di 5 cifre viene aggiunto per evitare di sovrascrivere file esistenti (predefinito: "ComfyUI"). | STRING | No | - |
+| `formato` | Formato del file in cui salvare il testo (predefinito: "txt"). Quando è selezionato "json", il testo JSON valido viene formattato con indentazione di 2 spazi; in caso contrario, il testo viene salvato così com'è. | COMBO | No | `"txt"`<br>`"csv"`<br>`"md"`<br>`"json"` |
 
 ### Note
 

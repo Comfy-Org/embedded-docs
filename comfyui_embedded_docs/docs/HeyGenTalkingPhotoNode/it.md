@@ -8,11 +8,11 @@ Anima un'immagine fissa di una persona trasformandola in un video parlante con s
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | Immagine di una persona da animare. Ridimensionata automaticamente se più grande di 2K. | IMAGE | Sì | - |
-| `speech` | Guida l'avatar con uno script testuale (sintesi vocale di HeyGen) oppure con il tuo audio. | DYNAMIC_COMBO | Sì | `"script"`<br>`"audio"` |
-| `resolution` | Risoluzione video in output (predefinito: `"1080p"`). | COMBO | No | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Rapporto d'aspetto in output. `"auto"` segue l'immagine di input (predefinito: `"auto"`). | COMBO | No | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `expressiveness` | Quanto sono espressivi il volto animato e i gesti (predefinito: `"low"`). | COMBO | No | `"low"`<br>`"medium"`<br>`"high"` |
+| `immagine` | Immagine di una persona da animare. Ridimensionata automaticamente se più grande di 2K. | IMAGE | Sì | - |
+| `voce` | Guida l'avatar con uno script testuale (sintesi vocale di HeyGen) oppure con il tuo audio. | DYNAMIC_COMBO | Sì | `"script"`<br>`"audio"` |
+| `risoluzione` | Risoluzione video in output (predefinito: `"1080p"`). | COMBO | No | `"720p"`<br>`"1080p"` |
+| `rapporto d'aspetto` | Rapporto d'aspetto in output. `"auto"` segue l'immagine di input (predefinito: `"auto"`). | COMBO | No | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `espressività` | Quanto sono espressivi il volto animato e i gesti (predefinito: `"low"`). | COMBO | No | `"low"`<br>`"medium"`<br>`"high"` |
 | `seed` | Non viene inviato a HeyGen; modificalo per forzare una nuova esecuzione (predefinito: 42). | INT | No | 0 a 2147483647 |
 
 ### Input dello script

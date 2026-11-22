@@ -8,9 +8,9 @@ Questo nodo genera un video da un prompt testuale e da immagini, video e audio d
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Seleziona la variante del modello Wan 3.0 usata per la generazione. | DYNAMIC_COMBO | Sì | `wan3.0-video`<br>`wan3.0-video-prime` |
+| `modello` | Seleziona la variante del modello Wan 3.0 usata per la generazione. | DYNAMIC_COMBO | Sì | `wan3.0-video`<br>`wan3.0-video-prime` |
 | `seed` | Seed da usare per la generazione. Predefinito: 42. | INT | Sì | da 0 a 2147483647 |
-| `watermark` | Indica se aggiungere un watermark generato dall'IA al risultato. Predefinito: false. | BOOLEAN | Sì | true<br>false |
+| `filigrana` | Indica se aggiungere un watermark generato dall'IA al risultato. Predefinito: false. | BOOLEAN | Sì | true<br>false |
 
 ### Input di wan3.0-video e wan3.0-video-prime
 

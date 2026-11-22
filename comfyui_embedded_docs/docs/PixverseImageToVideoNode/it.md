@@ -6,11 +6,11 @@ Genera un video da un'immagine fissa e un prompt testuale utilizzando PixVerse. 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Immagine di input da trasformare in video | IMAGE | Sì | - |
+| `immagine` | Immagine di input da trasformare in video | IMAGE | Sì | - |
 | `prompt` | Prompt per la generazione del video (predefinito: stringa vuota) | STRING | Sì | - |
-| `quality` | Impostazione della qualità video (predefinito: res_540p) | COMBO | Sì | `res_540p`<br>`res_1080p` |
-| `duration_seconds` | Durata del video generato in secondi | COMBO | Sì | `dur_2`<br>`dur_5`<br>`dur_10` |
-| `motion_mode` | Stile di movimento applicato alla generazione del video | COMBO | Sì | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` |
+| `qualità` | Impostazione della qualità video (predefinito: res_540p) | COMBO | Sì | `res_540p`<br>`res_1080p` |
+| `durata_secondi` | Durata del video generato in secondi | COMBO | Sì | `dur_2`<br>`dur_5`<br>`dur_10` |
+| `modalità_movimento` | Stile di movimento applicato alla generazione del video | COMBO | Sì | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` |
 | `seed` | Seed per la generazione del video (predefinito: 0) | INT | Sì | 0-2147483647 |
 | `negative_prompt` | Descrizione testuale opzionale di elementi indesiderati in un'immagine (predefinito: stringa vuota) | STRING | No | - |
 | `pixverse_template` | Template opzionale per influenzare lo stile di generazione, creato dal nodo PixVerse Template | CUSTOM | No | - |

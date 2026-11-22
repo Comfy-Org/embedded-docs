@@ -6,10 +6,10 @@ Il nodo Rodin3D_Gen2 genera asset 3D utilizzando l'API Rodin. Prende immagini di
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `Images` | Immagini di input da utilizzare per la generazione del modello 3D. Accetta da 1 a 5 immagini. | IMAGE | Sì | - |
-| `Seed` | Valore del seed casuale per la generazione (predefinito: 0) | INT | No | 0-65535 |
-| `Material_Type` | Tipo di materiale da applicare al modello 3D (predefinito: "PBR") | COMBO | No | "PBR"<br>"Shaded" |
-| `Polygon_count` | Conteggio poligonale obiettivo e tipo di mesh per il modello 3D generato. Le opzioni "Quad" usano mesh basate su quad, le opzioni "Triangle" usano mesh basate su triangoli (predefinito: "500K-Triangle") | COMBO | No | "4K-Quad"<br>"8K-Quad"<br>"18K-Quad"<br>"50K-Quad"<br>"2K-Triangle"<br>"20K-Triangle"<br>"150K-Triangle"<br>"500K-Triangle" |
+| `Immagini` | Immagini di input da utilizzare per la generazione del modello 3D. Accetta da 1 a 5 immagini. | IMAGE | Sì | - |
+| `Seme` | Valore del seed casuale per la generazione (predefinito: 0) | INT | No | 0-65535 |
+| `Tipo_Materiale` | Tipo di materiale da applicare al modello 3D (predefinito: "PBR") | COMBO | No | "PBR"<br>"Shaded" |
+| `Numero_Poligoni` | Conteggio poligonale obiettivo e tipo di mesh per il modello 3D generato. Le opzioni "Quad" usano mesh basate su quad, le opzioni "Triangle" usano mesh basate su triangoli (predefinito: "500K-Triangle") | COMBO | No | "4K-Quad"<br>"8K-Quad"<br>"18K-Quad"<br>"50K-Quad"<br>"2K-Triangle"<br>"20K-Triangle"<br>"150K-Triangle"<br>"500K-Triangle" |
 | `TAPose` | Indica se applicare l'elaborazione TAPose (predefinito: False). Questo è un parametro avanzato. | BOOLEAN | No | - |
 
 ## Output

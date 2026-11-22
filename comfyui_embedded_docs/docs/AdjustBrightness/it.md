@@ -7,7 +7,7 @@ Il nodo Adjust Brightness modifica l'aspetto della luminosità di un'immagine. M
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `image` | L'immagine di input da regolare. Accetta una singola immagine o un batch di immagini. | IMAGE | Sì | - |
-| `factor` | Fattore di luminosità. 1.0 = nessuna modifica, valori inferiori a 1.0 = più scura, valori superiori a 1.0 = più luminosa. (predefinito: 1.0) | FLOAT | No | 0.0 - 2.0 |
+| `fattore` | Fattore di luminosità. 1.0 = nessuna modifica, valori inferiori a 1.0 = più scura, valori superiori a 1.0 = più luminosa. (predefinito: 1.0) | FLOAT | No | 0.0 - 2.0 |
 
 Nota: se l'immagine di input ha un canale alpha (RGBA), vengono regolati solo i canali di colore. Il canale alpha viene copiato dall'input senza modifiche perché memorizza la trasparenza, non il colore.
 

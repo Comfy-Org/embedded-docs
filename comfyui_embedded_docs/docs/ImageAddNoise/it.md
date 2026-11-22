@@ -6,9 +6,9 @@ Il nodo ImageAddNoise aggiunge rumore casuale a un'immagine di input. Utilizza u
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | L'immagine di input a cui verrà aggiunto il rumore | IMAGE | Sì | - |
-| `seed` | Il seed casuale utilizzato per creare il rumore (predefinito: 0). Questo parametro supporta la funzionalità "controllo dopo generazione". | INT | Sì | 0 a 18446744073709551615 |
-| `strength` | Controlla l'intensità dell'effetto rumore (predefinito: 0.5, passo: 0.01) | FLOAT | Sì | 0.0 a 1.0 |
+| `immagine` | L'immagine di input a cui verrà aggiunto il rumore | IMAGE | Sì | - |
+| `seme` | Il seed casuale utilizzato per creare il rumore (predefinito: 0). Questo parametro supporta la funzionalità "controllo dopo generazione". | INT | Sì | 0 a 18446744073709551615 |
+| `intensità` | Controlla l'intensità dell'effetto rumore (predefinito: 0.5, passo: 0.01) | FLOAT | Sì | 0.0 a 1.0 |
 
 **Nota:** I valori di rumore vengono aggiunti all'immagine e il risultato viene limitato all'intervallo 0.0–1.0. Se l'immagine di input ha un canale alpha (4 canali), il canale alpha originale viene preservato inalterato — il rumore viene applicato solo ai canali di colore.
 

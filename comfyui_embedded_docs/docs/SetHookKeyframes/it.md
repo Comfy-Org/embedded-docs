@@ -6,7 +6,7 @@ Il nodo Set Hook Keyframes consente di applicare la schedulazione dei keyframe a
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `hooks` | Il gruppo di hook a cui applicare la schedulazione dei keyframe | HOOKS | Sì | - |
+| `hook` | Il gruppo di hook a cui applicare la schedulazione dei keyframe | HOOKS | Sì | - |
 | `hook_kf` | Gruppo di keyframe opzionale contenente informazioni di temporizzazione per l'esecuzione degli hook | HOOK_KEYFRAMES | No | - |
 
 ## Output

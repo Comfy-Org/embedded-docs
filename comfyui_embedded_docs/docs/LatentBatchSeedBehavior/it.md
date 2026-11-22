@@ -6,8 +6,8 @@ Il nodo LatentBatchSeedBehavior è progettato per modificare il comportamento de
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `samples` | Il parametro `samples` rappresenta il batch di campioni latenti da elaborare. La sua modifica dipende dal comportamento del seed scelto e influisce sulla coerenza o sulla variabilità degli output generati. | `LATENT` |
-| `seed_behavior` | Il parametro `seed_behavior` stabilisce se il seed per il batch di campioni latenti debba essere randomizzato o fissato. Questa scelta influisce in modo significativo sul processo di generazione, introducendo variabilità o garantendo coerenza nell'intero batch. | COMBO[STRING] |
+| `campioni` | Il parametro `samples` rappresenta il batch di campioni latenti da elaborare. La sua modifica dipende dal comportamento del seed scelto e influisce sulla coerenza o sulla variabilità degli output generati. | `LATENT` |
+| `comportamento_seed` | Il parametro `seed_behavior` stabilisce se il seed per il batch di campioni latenti debba essere randomizzato o fissato. Questa scelta influisce in modo significativo sul processo di generazione, introducendo variabilità o garantendo coerenza nell'intero batch. | COMBO[STRING] |
 
 ## Output
 

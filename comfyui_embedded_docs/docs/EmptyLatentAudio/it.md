@@ -6,8 +6,8 @@ Empty Latent Audio crea un tensore latente vuoto per l'elaborazione audio. Gener
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `seconds` | La durata dell'audio in secondi (predefinito: 47.6) | FLOAT | Sì | 1.0 - 1000.0 |
-| `batch_size` | Il numero di immagini latenti nel batch (predefinito: 1) | INT | Sì | 1 - 4096 |
+| `secondi` | La durata dell'audio in secondi (predefinito: 47.6) | FLOAT | Sì | 1.0 - 1000.0 |
+| `dimensione_batch` | Il numero di immagini latenti nel batch (predefinito: 1) | INT | Sì | 1 - 4096 |
 
 ## Output
 

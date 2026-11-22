@@ -6,11 +6,11 @@ HyperTile applica una tecnica di tiling al meccanismo di attenzione all'interno 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello di diffusione a cui applicare l'ottimizzazione HyperTile | MODEL | Sì | - |
-| `tile_size` | La dimensione target dei tile per l'elaborazione (predefinito: 256). Internamente, il valore viene limitato a un minimo di 32 e poi diviso per 8 per ottenere la dimensione effettiva dei tile. | INT | Sì | 1 - 2048 |
-| `swap_size` | Controlla come i tile vengono riorganizzati durante l'elaborazione per migliorare l'efficienza. Valori più grandi consentono una maggiore variazione nelle dimensioni dei tile (predefinito: 2) | INT | Sì | 1 - 128 |
-| `max_depth` | Il livello massimo di profondità (scala di risoluzione) a cui applicare il tiling. Un valore di 0 applica il tiling solo alla risoluzione più alta (predefinito: 0) | INT | Sì | 0 - 10 |
-| `scale_depth` | Quando è abilitato, la dimensione dei tile viene scalata proporzionalmente ai livelli di profondità maggiori. Questo può aiutare a mantenere la qualità a risoluzioni inferiori (predefinito: False) | BOOLEAN | Sì | True / False |
+| `modello` | Il modello di diffusione a cui applicare l'ottimizzazione HyperTile | MODEL | Sì | - |
+| `dimensione tile` | La dimensione target dei tile per l'elaborazione (predefinito: 256). Internamente, il valore viene limitato a un minimo di 32 e poi diviso per 8 per ottenere la dimensione effettiva dei tile. | INT | Sì | 1 - 2048 |
+| `dimensione swap` | Controlla come i tile vengono riorganizzati durante l'elaborazione per migliorare l'efficienza. Valori più grandi consentono una maggiore variazione nelle dimensioni dei tile (predefinito: 2) | INT | Sì | 1 - 128 |
+| `profondità massima` | Il livello massimo di profondità (scala di risoluzione) a cui applicare il tiling. Un valore di 0 applica il tiling solo alla risoluzione più alta (predefinito: 0) | INT | Sì | 0 - 10 |
+| `scala profondità` | Quando è abilitato, la dimensione dei tile viene scalata proporzionalmente ai livelli di profondità maggiori. Questo può aiutare a mantenere la qualità a risoluzioni inferiori (predefinito: False) | BOOLEAN | Sì | True / False |
 
 Nota: `tile_size`, `swap_size`, `max_depth` e `scale_depth` sono contrassegnati come input avanzati, quindi vengono mostrati solo quando le opzioni avanzate sono abilitate nell'interfaccia.
 

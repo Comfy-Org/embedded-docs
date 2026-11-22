@@ -6,9 +6,9 @@ Questo nodo è progettato per estrarre un sottoinsieme specifico di campioni lat
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `samples` | La raccolta di campioni latenti da cui verrà estratto un sottoinsieme. Questo parametro è cruciale per determinare il batch sorgente di campioni da elaborare. | `LATENT` |
-| `batch_index` | Specifica l'indice iniziale all'interno del batch da cui inizierà il sottoinsieme di campioni. Questo parametro consente l'estrazione mirata di campioni da posizioni specifiche nel batch. | `INT` |
-| `length` | Definisce il numero di campioni da estrarre dall'indice iniziale specificato. Questo parametro controlla la dimensione del sottoinsieme da elaborare, consentendo una manipolazione flessibile dei segmenti del batch. | `INT` |
+| `campioni` | La raccolta di campioni latenti da cui verrà estratto un sottoinsieme. Questo parametro è cruciale per determinare il batch sorgente di campioni da elaborare. | `LATENT` |
+| `indice_batch` | Specifica l'indice iniziale all'interno del batch da cui inizierà il sottoinsieme di campioni. Questo parametro consente l'estrazione mirata di campioni da posizioni specifiche nel batch. | `INT` |
+| `lunghezza` | Definisce il numero di campioni da estrarre dall'indice iniziale specificato. Questo parametro controlla la dimensione del sottoinsieme da elaborare, consentendo una manipolazione flessibile dei segmenti del batch. | `INT` |
 
 ## Output
 

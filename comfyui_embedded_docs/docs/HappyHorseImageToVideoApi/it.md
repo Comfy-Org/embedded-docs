@@ -8,10 +8,10 @@ Questo nodo genera un breve video a partire da una singola immagine iniziale uti
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello HappyHorse da utilizzare per la generazione del video. | DYNAMIC_COMBO | Sì | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
-| `first_frame` | Immagine del primo fotogramma. Il rapporto d'aspetto dell'output viene derivato da questa immagine. | IMAGE | Sì | min 300×300 px; da 1:2.5 a 2.5:1 |
+| `modello` | Il modello HappyHorse da utilizzare per la generazione del video. | DYNAMIC_COMBO | Sì | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
+| `primo fotogramma` | Immagine del primo fotogramma. Il rapporto d'aspetto dell'output viene derivato da questa immagine. | IMAGE | Sì | min 300×300 px; da 1:2.5 a 2.5:1 |
 | `seed` | Seed da utilizzare per la generazione. (predefinito: 0) | INT | Sì | da 0 a 2147483647 |
-| `watermark` | Indica se aggiungere una filigrana generata dall'IA al risultato. (opzione avanzata; predefinito: False) | BOOLEAN | Sì | True / False |
+| `filigrana` | Indica se aggiungere una filigrana generata dall'IA al risultato. (opzione avanzata; predefinito: False) | BOOLEAN | Sì | True / False |
 
 ### Input di happyhorse-1.1-i2v e happyhorse-1.0-i2v
 

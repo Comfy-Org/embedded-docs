@@ -7,10 +7,10 @@ Genera video da un prompt testuale utilizzando l'API di PixVerse. Il nodo consen
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt per la generazione del video (predefinito: "") | STRING | Sì | Deve contenere almeno 1 carattere |
-| `aspect_ratio` | Proporzioni per il video generato | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `quality` | Impostazione della qualità video (predefinito: "540p") | COMBO | Sì | `"540p"`<br>`"1080p"` |
-| `duration_seconds` | Durata del video generato in secondi | COMBO | Sì | `"5"`<br>`"10"` |
-| `motion_mode` | Stile di movimento per la generazione del video | COMBO | Sì | `"normal"`<br>`"fast"` |
+| `rapporto_aspetto` | Proporzioni per il video generato | COMBO | Sì | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `qualità` | Impostazione della qualità video (predefinito: "540p") | COMBO | Sì | `"540p"`<br>`"1080p"` |
+| `durata_secondi` | Durata del video generato in secondi | COMBO | Sì | `"5"`<br>`"10"` |
+| `modalità_movimento` | Stile di movimento per la generazione del video | COMBO | Sì | `"normal"`<br>`"fast"` |
 | `seed` | Seed per la generazione del video (predefinito: 0) | INT | Sì | da 0 a 2147483647 |
 | `negative_prompt` | Una descrizione testuale opzionale degli elementi indesiderati in un'immagine (predefinito: "") | STRING | No | - |
 | `pixverse_template` | Un modello opzionale per influenzare lo stile della generazione, creato dal nodo PixVerse Template | CUSTOM | No | - |

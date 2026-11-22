@@ -6,8 +6,8 @@ Il nodo ImageFlip ribalta le immagini lungo assi diversi. Può ribaltare le imma
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | L'immagine di input da ribaltare | IMAGE | Sì | - |
-| `flip_method` | La direzione di ribaltamento da applicare (predefinito: "x-axis: vertically") | STRING | Sì | "x-axis: vertically"<br>"y-axis: horizontally" |
+| `immagine` | L'immagine di input da ribaltare | IMAGE | Sì | - |
+| `metodo di ribaltamento` | La direzione di ribaltamento da applicare (predefinito: "x-axis: vertically") | STRING | Sì | "x-axis: vertically"<br>"y-axis: horizontally" |
 
 ## Output
 

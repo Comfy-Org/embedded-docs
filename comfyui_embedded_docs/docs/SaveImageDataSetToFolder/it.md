@@ -6,10 +6,10 @@ Questo nodo salva un elenco di immagini in una cartella specificata all'interno 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `images` | Elenco di immagini da salvare. | IMAGE | Sì | N/A |
-| `folder_name` | Nome della cartella in cui salvare le immagini (all'interno della directory di output). Predefinito: "dataset". | STRING | No | N/A |
-| `filename_prefix` | Prefisso per i nomi file delle immagini salvate. Predefinito: "image". Parametro avanzato. | STRING | No | N/A |
-| `mode` | Indica se sovrascrivere i file esistenti o incrementare i nomi file per evitare la sovrascrittura. Predefinito: "overwrite". | COMBO | No | "overwrite"<br>"increment" |
+| `immagini` | Elenco di immagini da salvare. | IMAGE | Sì | N/A |
+| `nome_cartella` | Nome della cartella in cui salvare le immagini (all'interno della directory di output). Predefinito: "dataset". | STRING | No | N/A |
+| `prefisso_nome_file` | Prefisso per i nomi file delle immagini salvate. Predefinito: "image". Parametro avanzato. | STRING | No | N/A |
+| `modalità` | Indica se sovrascrivere i file esistenti o incrementare i nomi file per evitare la sovrascrittura. Predefinito: "overwrite". | COMBO | No | "overwrite"<br>"increment" |
 
 **Note:**
 

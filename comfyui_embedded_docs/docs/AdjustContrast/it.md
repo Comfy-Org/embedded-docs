@@ -7,7 +7,7 @@ Il nodo Adjust Contrast regola il contrasto di un'immagine di input scalando la 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `image` | L'immagine di input di cui regolare il contrasto. | IMAGE | Sì | - |
-| `factor` | Fattore di contrasto. 1.0 = nessuna modifica, <1.0 = meno contrasto, >1.0 = più contrasto. (predefinito: 1.0) | FLOAT | No | 0.0 - 2.0 |
+| `fattore` | Fattore di contrasto. 1.0 = nessuna modifica, <1.0 = meno contrasto, >1.0 = più contrasto. (predefinito: 1.0) | FLOAT | No | 0.0 - 2.0 |
 
 ## Output
 

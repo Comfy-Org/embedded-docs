@@ -6,13 +6,13 @@ ZImageFunControlnet applica una patch di rete di controllo a un modello base, co
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello base utilizzato per il processo di generazione. | MODEL | Sì | - |
-| `model_patch` | Un modello patch specializzato che applica la guida della rete di controllo. | MODEL_PATCH | Sì | - |
+| `modello` | Il modello base utilizzato per il processo di generazione. | MODEL | Sì | - |
+| `patch_modello` | Un modello patch specializzato che applica la guida della rete di controllo. | MODEL_PATCH | Sì | - |
 | `vae` | L'autoencoder variazionale utilizzato per codificare e decodificare le immagini. | VAE | Sì | - |
-| `strength` | L'intensità dell'influenza della rete di controllo. I valori positivi applicano l'effetto, mentre i valori negativi possono invertirlo (predefinito: 1.0). | FLOAT | Sì | -10.0 a 10.0 (passo 0.01) |
-| `image` | Un'immagine base opzionale per guidare il processo di generazione. | IMAGE | No | - |
-| `inpaint_image` | Un'immagine opzionale utilizzata specificamente per le aree di inpainting definite da una maschera. | IMAGE | No | - |
-| `mask` | Una maschera opzionale che definisce quali aree di un'immagine devono essere modificate o riempite tramite inpainting. | MASK | No | - |
+| `intensità` | L'intensità dell'influenza della rete di controllo. I valori positivi applicano l'effetto, mentre i valori negativi possono invertirlo (predefinito: 1.0). | FLOAT | Sì | -10.0 a 10.0 (passo 0.01) |
+| `immagine` | Un'immagine base opzionale per guidare il processo di generazione. | IMAGE | No | - |
+| `immagine_inpaint` | Un'immagine opzionale utilizzata specificamente per le aree di inpainting definite da una maschera. | IMAGE | No | - |
+| `maschera` | Una maschera opzionale che definisce quali aree di un'immagine devono essere modificate o riempite tramite inpainting. | MASK | No | - |
 | `start_percent` | Il punto nel processo di denoising, come frazione del numero totale di passaggi di campionamento, in cui la rete di controllo inizia ad avere effetto (predefinito: 0.0). | FLOAT | No | 0.0 a 1.0 (passo 0.001) |
 | `end_percent` | Il punto nel processo di denoising in cui la rete di controllo smette di avere effetto (predefinito: 1.0). | FLOAT | No | 0.0 a 1.0 (passo 0.001) |
 

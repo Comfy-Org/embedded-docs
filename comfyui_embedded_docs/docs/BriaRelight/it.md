@@ -8,10 +8,10 @@ Questo nodo modifica l'atmosfera e la direzione dell'illuminazione di un'immagin
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | L'immagine di cui modificare l'illuminazione. Qualsiasi canale alpha viene eliminato prima che l'immagine venga caricata. | IMAGE | Sì | - |
+| `immagine` | L'immagine di cui modificare l'illuminazione. Qualsiasi canale alpha viene eliminato prima che l'immagine venga caricata. | IMAGE | Sì | - |
 | `light_type` | Atmosfera luminosa da applicare. | COMBO | Sì | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
 | `light_direction` | Da dove proviene la luce. Le atmosfere con luce dura come midday, spotlight on subject e harsh studio lighting sono quelle che reagiscono maggiormente a questa impostazione. | COMBO | Sì | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
-| `moderation` | Impostazioni di moderazione. Seleziona `"true"` per mostrare le opzioni di moderazione, oppure `"false"` per eseguire senza di esse. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
+| `moderazione` | Impostazioni di moderazione. Seleziona `"true"` per mostrare le opzioni di moderazione, oppure `"false"` per eseguire senza di esse. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
 
 ### Input di moderazione
 

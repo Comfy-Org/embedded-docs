@@ -10,16 +10,16 @@ Il nodo ByteDance Image to Video genera video utilizzando i modelli ByteDance tr
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello ByteDance da utilizzare per la generazione video (predefinito: `"seedance-1-0-pro-fast-251015"`). | COMBO | Sì | `"seedance-1-0-pro-250528"`<br>`"seedance-1-0-pro-fast-251015"` |
+| `modello` | Il modello ByteDance da utilizzare per la generazione video (predefinito: `"seedance-1-0-pro-fast-251015"`). | COMBO | Sì | `"seedance-1-0-pro-250528"`<br>`"seedance-1-0-pro-fast-251015"` |
 | `prompt` | Il prompt testuale utilizzato per generare il video. Deve contenere almeno 1 carattere dopo aver rimosso gli spazi bianchi. | STRING | Sì | - |
-| `image` | Primo fotogramma da utilizzare per il video. Deve essere compreso tra 300x300 e 6000x6000 pixel, con un rapporto d'aspetto compreso tra 0,4 e 2,5. | IMAGE | Sì | - |
-| `resolution` | La risoluzione del video di output. | COMBO | Sì | `"480p"`<br>`"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Il rapporto d'aspetto del video di output. | COMBO | Sì | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` |
-| `duration` | La durata del video di output in secondi (predefinito: 5). | INT | Sì | 3 - 12 |
+| `immagine` | Primo fotogramma da utilizzare per il video. Deve essere compreso tra 300x300 e 6000x6000 pixel, con un rapporto d'aspetto compreso tra 0,4 e 2,5. | IMAGE | Sì | - |
+| `risoluzione` | La risoluzione del video di output. | COMBO | Sì | `"480p"`<br>`"720p"`<br>`"1080p"` |
+| `rapporto d'aspetto` | Il rapporto d'aspetto del video di output. | COMBO | Sì | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` |
+| `durata` | La durata del video di output in secondi (predefinito: 5). | INT | Sì | 3 - 12 |
 | `seed` | Seed da utilizzare per la generazione (predefinito: 0). | INT | No | 0 - 2147483647 |
-| `camera_fixed` | Specifica se fissare la fotocamera. La piattaforma aggiunge un'istruzione per fissare la fotocamera al prompt, ma non garantisce l'effetto effettivo (predefinito: False). | BOOLEAN | No | `False`<br>`True` |
-| `watermark` | Indica se aggiungere una filigrana "AI generated" al video (predefinito: False). | BOOLEAN | No | `False`<br>`True` |
-| `generate_audio` | Aggiunge una traccia audio generata dall'IA. Gli altri modelli ignorano questo input (predefinito: False). | BOOLEAN | No | `False`<br>`True` |
+| `camera fissa` | Specifica se fissare la fotocamera. La piattaforma aggiunge un'istruzione per fissare la fotocamera al prompt, ma non garantisce l'effetto effettivo (predefinito: False). | BOOLEAN | No | `False`<br>`True` |
+| `filigrana` | Indica se aggiungere una filigrana "AI generated" al video (predefinito: False). | BOOLEAN | No | `False`<br>`True` |
+| `genera audio` | Aggiunge una traccia audio generata dall'IA. Gli altri modelli ignorano questo input (predefinito: False). | BOOLEAN | No | `False`<br>`True` |
 
 **Nota:** Il prompt non deve contenere le seguenti parole (senza distinzione tra maiuscole e minuscole): `resolution`, `ratio`, `duration`, `seed`, `camerafixed`, `watermark`. Questi parametri vengono impostati tramite i rispettivi input dedicati.
 

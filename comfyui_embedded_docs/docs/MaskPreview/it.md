@@ -6,7 +6,7 @@ Il nodo MaskPreview visualizza un'anteprima visiva dei dati della maschera diret
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `mask` | I dati della maschera da visualizzare in anteprima | MASK | Sì | - |
+| `maschera` | I dati della maschera da visualizzare in anteprima | MASK | Sì | - |
 | `filename_prefix` | Prefisso del nome file utilizzato per l'anteprima (predefinito: "ComfyUI") | STRING | No | - |
 | `prompt` | Informazioni sul prompt per i metadati (fornite automaticamente) | PROMPT | No | - |
 | `extra_pnginfo` | Informazioni PNG aggiuntive per i metadati (fornite automaticamente) | EXTRA_PNGINFO | No | - |

@@ -10,7 +10,7 @@ Il parametro `ratio` determina il rapporto di fusione tra i due modelli. Quando 
 | --- | --- | --- |
 | `model1` | Il primo modello da unire. Funge da modello di base su cui vengono applicate le patch del secondo modello. | `MODEL` |
 | `model2` | Il secondo modello, le cui patch vengono applicate al primo modello, influenzate dal rapporto specificato. | `MODEL` |
-| `ratio` | Quando questo valore è 1, il modello di output è 100% `model1`, e quando questo valore è 0, il modello di output è 100% `model2`. | `FLOAT` |
+| `rapporto` | Quando questo valore è 1, il modello di output è 100% `model1`, e quando questo valore è 0, il modello di output è 100% `model2`. | `FLOAT` |
 
 ## Output
 

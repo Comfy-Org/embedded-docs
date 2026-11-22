@@ -7,9 +7,9 @@ Proietta le immagini renderizzate sul layout UV della mesh. Renderizza la mesh c
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `mesh` | La mesh con UV srotolate che è stata renderizzata. | MESH | Sì | - |
-| `images` | Un'immagine per camera, nell'ordine delle camere (Batch Images). Qualsiasi risoluzione con le proporzioni del render; una risoluzione più alta produce un bake più nitido. | IMAGE | Sì | - |
+| `immagini` | Un'immagine per camera, nell'ordine delle camere (Batch Images). Qualsiasi risoluzione con le proporzioni del render; una risoluzione più alta produce un bake più nitido. | IMAGE | Sì | - |
 | `camera_info` | Le camere con cui sono state renderizzate le immagini, come collegate a Render Mesh. Unisci i rig con Batch Cameras. Nessuna: vista frontale inquadrata automaticamente da Render Mesh. | LOAD3D_CAMERA | No | - |
-| `resolution` | Risoluzione della texture quadrata. 0 mantiene la dimensione corrente della texture della mesh, oppure 2048 quando non ne ha una; altrimenti la texture corrente viene ricampionata a questa risoluzione. Predefinito: 0. | INT | No | 0 a 8192 (passo: 64) |
+| `risoluzione` | Risoluzione della texture quadrata. 0 mantiene la dimensione corrente della texture della mesh, oppure 2048 quando non ne ha una; altrimenti la texture corrente viene ricampionata a questa risoluzione. Predefinito: 0. | INT | No | 0 a 8192 (passo: 64) |
 | `blend_exponent` | Le viste sono pesate tramite cos(angolo di vista)^esponente. Valori più alti favoriscono la vista più frontale (più nitida, cuciture più marcate); valori più bassi mediano più viste (risultato più morbido). Predefinito: 4.0. | FLOAT | No | 0.0 a 32.0 (passo: 0.5) |
 | `fill_unseen` | I texel che nessuna vista vede assumono un colore propagato dalla superficie vista invece della texture o dei colori dei vertici della mesh. Usalo quando le viste sostituiscono l'intera texture. Predefinito: false. | BOOLEAN | No | true<br>false |
 | `mask` | Aree modificate per vista; vengono proiettati solo i pixel mascherati. Una singola maschera si applica a ogni vista. | MASK | No | - |

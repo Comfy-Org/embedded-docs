@@ -6,12 +6,12 @@ Questo nodo è progettato per preparare le immagini al processo di outpainting a
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `image` | L'input `image` è l'immagine principale da preparare per l'outpainting, che funge da base per le operazioni di padding. | `IMAGE` |
-| `left` | Specifica la quantità di padding da aggiungere sul lato sinistro dell'immagine, influenzando l'area espansa per l'outpainting. | `INT` |
-| `top` | Determina la quantità di padding da aggiungere sulla parte superiore dell'immagine, influenzando l'espansione verticale per l'outpainting. | `INT` |
-| `right` | Definisce la quantità di padding da aggiungere sul lato destro dell'immagine, incidendo sull'espansione orizzontale per l'outpainting. | `INT` |
-| `bottom` | Indica la quantità di padding da aggiungere sulla parte inferiore dell'immagine, contribuendo all'espansione verticale per l'outpainting. | `INT` |
-| `feathering` | Controlla la morbidezza della transizione tra l'immagine originale e il padding aggiunto, migliorando l'integrazione visiva per l'outpainting. | `INT` |
+| `immagine` | L'input `image` è l'immagine principale da preparare per l'outpainting, che funge da base per le operazioni di padding. | `IMAGE` |
+| `sinistra` | Specifica la quantità di padding da aggiungere sul lato sinistro dell'immagine, influenzando l'area espansa per l'outpainting. | `INT` |
+| `alto` | Determina la quantità di padding da aggiungere sulla parte superiore dell'immagine, influenzando l'espansione verticale per l'outpainting. | `INT` |
+| `destra` | Definisce la quantità di padding da aggiungere sul lato destro dell'immagine, incidendo sull'espansione orizzontale per l'outpainting. | `INT` |
+| `basso` | Indica la quantità di padding da aggiungere sulla parte inferiore dell'immagine, contribuendo all'espansione verticale per l'outpainting. | `INT` |
+| `sfumatura` | Controlla la morbidezza della transizione tra l'immagine originale e il padding aggiunto, migliorando l'integrazione visiva per l'outpainting. | `INT` |
 
 ## Output
 

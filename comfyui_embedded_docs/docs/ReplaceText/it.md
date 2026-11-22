@@ -9,8 +9,8 @@ Il nodo Replace Text esegue una semplice sostituzione di testo. Cerca una specif
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `text` | Il testo da elaborare. | STRING | Sì | - |
-| `find` | Testo da trovare (predefinito: stringa vuota). | STRING | Sì | - |
-| `replace` | Testo con cui sostituire (predefinito: stringa vuota). | STRING | Sì | - |
+| `trova` | Testo da trovare (predefinito: stringa vuota). | STRING | Sì | - |
+| `sostituisci` | Testo con cui sostituire (predefinito: stringa vuota). | STRING | Sì | - |
 
 ## Output
 

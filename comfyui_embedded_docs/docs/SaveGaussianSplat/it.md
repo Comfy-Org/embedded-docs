@@ -6,13 +6,13 @@ Questo nodo salva un file Gaussian splat 3D nella directory di output. Gestisce 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model_3d` | Un file Gaussian splat 3D. | FILE3D | Sì | SplatAny<br>PLY<br>SPLAT<br>SPZ<br>KSPLAT |
-| `filename_prefix` | Il prefisso per il nome file salvato (predefinito: "3d/ComfyUI"). | STRING | Sì | Qualsiasi prefisso di nome file valido |
-| `viewport_state` | Lo stato attuale del viewport contenente informazioni sulla camera e sul modello. | LOAD3D | Sì | - |
-| `model_3d_info` | Informazioni aggiuntive sul modello 3D per il viewport. | LOAD3DMODELINFO | No | - |
-| `camera_info` | Informazioni sulla camera per l'anteprima del viewport. | LOAD3DCAMERA | No | - |
-| `width` | La larghezza dell'anteprima (predefinita: 1024). | INT | Sì | Da 1 a 4096 |
-| `height` | L'altezza dell'anteprima (predefinita: 1024). | INT | Sì | Da 1 a 4096 |
+| `modello_3d` | Un file Gaussian splat 3D. | FILE3D | Sì | SplatAny<br>PLY<br>SPLAT<br>SPZ<br>KSPLAT |
+| `prefisso_nome_file` | Il prefisso per il nome file salvato (predefinito: "3d/ComfyUI"). | STRING | Sì | Qualsiasi prefisso di nome file valido |
+| `stato_viewport` | Lo stato attuale del viewport contenente informazioni sulla camera e sul modello. | LOAD3D | Sì | - |
+| `info_modello_3d` | Informazioni aggiuntive sul modello 3D per il viewport. | LOAD3DMODELINFO | No | - |
+| `info_camera` | Informazioni sulla camera per l'anteprima del viewport. | LOAD3DCAMERA | No | - |
+| `larghezza` | La larghezza dell'anteprima (predefinita: 1024). | INT | Sì | Da 1 a 4096 |
+| `altezza` | L'altezza dell'anteprima (predefinita: 1024). | INT | Sì | Da 1 a 4096 |
 
 Nota: se `camera_info` o `model_3d_info` non vengono forniti, il nodo usa i valori corrispondenti da `viewport_state` quando disponibili.
 

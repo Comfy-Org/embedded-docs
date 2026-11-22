@@ -6,8 +6,8 @@ Il nodo Crop Image estrae una sezione rettangolare da un'immagine di input. Si d
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | L'immagine di input da ritagliare. | IMAGE | Sì | N/A |
-| `crop_region` | Definisce l'area rettangolare da estrarre dall'immagine. È specificata da `x` (inizio orizzontale), `y` (inizio verticale), `width` e `height`. Se la regione definita si estende oltre i bordi dell'immagine, verrà automaticamente adattata per rientrare nelle dimensioni dell'immagine. | BOUNDINGBOX | Sì | N/A |
+| `immagine` | L'immagine di input da ritagliare. | IMAGE | Sì | N/A |
+| `regione di ritaglio` | Definisce l'area rettangolare da estrarre dall'immagine. È specificata da `x` (inizio orizzontale), `y` (inizio verticale), `width` e `height`. Se la regione definita si estende oltre i bordi dell'immagine, verrà automaticamente adattata per rientrare nelle dimensioni dell'immagine. | BOUNDINGBOX | Sì | N/A |
 
 **Nota sui vincoli della regione:** La regione di ritaglio viene automaticamente vincolata a rimanere entro i limiti dell'immagine di input. Se la coordinata `x` o `y` specificata è maggiore della larghezza o dell'altezza dell'immagine, verrà impostata alla posizione massima valida. La larghezza e l'altezza risultanti del ritaglio verranno adattate in modo che la regione non superi i bordi dell'immagine.
 

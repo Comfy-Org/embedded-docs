@@ -6,7 +6,7 @@ Il nodo UNetCrossAttentionMultiply applica fattori di moltiplicazione al meccani
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello UNet da modificare con fattori di scala dell'attenzione | MODEL | Sì | - |
+| `modello` | Il modello UNet da modificare con fattori di scala dell'attenzione | MODEL | Sì | - |
 | `q` | Fattore di scala per le componenti query nella cross-attention (predefinito: 1.0) | FLOAT | No | 0.0 - 10.0 |
 | `k` | Fattore di scala per le componenti key nella cross-attention (predefinito: 1.0) | FLOAT | No | 0.0 - 10.0 |
 | `v` | Fattore di scala per le componenti value nella cross-attention (predefinito: 1.0) | FLOAT | No | 0.0 - 10.0 |

@@ -7,7 +7,7 @@ Questo nodo combina un input di condizionamento primario con un input di condizi
 | Parametro | Descrizione | Tipo di dato | Tipo di input | Predefinito | Intervallo |
 | --- | --- | --- | --- | --- | --- |
 | `cond` | L'input di condizionamento primario da elaborare e combinare | CONDITIONING | Obbligatorio | - | - |
-| `cond_DEFAULT` | I dati di condizionamento predefiniti da combinare con il condizionamento primario | CONDITIONING | Obbligatorio | - | - |
+| `cond_PREDEFINITO` | I dati di condizionamento predefiniti da combinare con il condizionamento primario | CONDITIONING | Obbligatorio | - | - |
 | `hooks` | Configurazione opzionale degli hook che controlla come i dati di condizionamento vengono elaborati e combinati | HOOKS | Opzionale | - | - |
 
 ## Output

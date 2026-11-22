@@ -8,14 +8,14 @@ Tripo P1: Image to Model converte una singola immagine 2D in un modello 3D utili
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `output_mode` | Sceglie il tipo di risultato. "Geometry only" restituisce una mesh non texturizzata; "Textured" aggiunge mappe colore/PBR e rivela impostazioni di texture extra. | DYNAMIC_COMBO | Sì | `"Geometry only"`<br>`"Textured"` |
-| `image` | L'immagine 2D di origine utilizzata per generare il modello 3D. È richiesta una singola immagine; il nodo genera un errore se non ne viene fornita nessuna. | IMAGE | Sì | - |
-| `enable_image_autofix` | Pre-elabora l'immagine di input per una migliore qualità di generazione. (predefinito: False) | BOOLEAN | No | True<br>False |
-| `face_limit` | Numero di facce target, 48-20000. -1 lascia che Tripo scelga in modo adattivo. (predefinito: -1) | INT | No | -1 a 20000 |
-| `model_seed` | Seme utilizzato per la generazione della geometria in modo che i risultati possano essere riprodotti. (predefinito: 42) | INT | No | 0 a 2147483647 |
-| `auto_size` | Ridimensiona l'output per approssimare i metri del mondo reale. (predefinito: False) | BOOLEAN | No | True<br>False |
-| `export_uv` | UV unwrap durante la generazione. Disattiva per esecuzioni solo geometria più veloci. (predefinito: True) | BOOLEAN | No | True<br>False |
-| `compress_geometry` | Applica la compressione geometrica meshopt (EXT_meshopt_compression). File più piccoli, ma l'anteprima 3D di ComfyUI non può visualizzarli; decomprimere prima di modificare. (predefinito: False) | BOOLEAN | No | True<br>False |
+| `modalità_output` | Sceglie il tipo di risultato. "Geometry only" restituisce una mesh non texturizzata; "Textured" aggiunge mappe colore/PBR e rivela impostazioni di texture extra. | DYNAMIC_COMBO | Sì | `"Geometry only"`<br>`"Textured"` |
+| `immagine` | L'immagine 2D di origine utilizzata per generare il modello 3D. È richiesta una singola immagine; il nodo genera un errore se non ne viene fornita nessuna. | IMAGE | Sì | - |
+| `abilita_autocorrezione_immagine` | Pre-elabora l'immagine di input per una migliore qualità di generazione. (predefinito: False) | BOOLEAN | No | True<br>False |
+| `limite_facce` | Numero di facce target, 48-20000. -1 lascia che Tripo scelga in modo adattivo. (predefinito: -1) | INT | No | -1 a 20000 |
+| `seme_modello` | Seme utilizzato per la generazione della geometria in modo che i risultati possano essere riprodotti. (predefinito: 42) | INT | No | 0 a 2147483647 |
+| `dimensione_automatica` | Ridimensiona l'output per approssimare i metri del mondo reale. (predefinito: False) | BOOLEAN | No | True<br>False |
+| `esporta_uv` | UV unwrap durante la generazione. Disattiva per esecuzioni solo geometria più veloci. (predefinito: True) | BOOLEAN | No | True<br>False |
+| `comprimi_geometria` | Applica la compressione geometrica meshopt (EXT_meshopt_compression). File più piccoli, ma l'anteprima 3D di ComfyUI non può visualizzarli; decomprimere prima di modificare. (predefinito: False) | BOOLEAN | No | True<br>False |
 
 ### Input di Geometry only
 

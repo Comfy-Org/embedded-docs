@@ -6,7 +6,7 @@ Il nodo LatentUpscaleModelLoader carica un modello specializzato nell'upscaling 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model_name` | Il nome del file del modello di upscale latente da caricare. Le opzioni disponibili vengono popolate dinamicamente dai file presenti nella directory `latent_upscale_models` di ComfyUI. | COMBO | Sì | Tutti i file nella cartella `latent_upscale_models` |
+| `nome modello` | Il nome del file del modello di upscale latente da caricare. Le opzioni disponibili vengono popolate dinamicamente dai file presenti nella directory `latent_upscale_models` di ComfyUI. | COMBO | Sì | Tutti i file nella cartella `latent_upscale_models` |
 
 ## Output
 

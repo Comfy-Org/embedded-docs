@@ -6,14 +6,14 @@ Il nodo Create Camera Info costruisce una struttura di informazioni della camera
 
 | Parametro | Descrizione | Tipo di dato | Richiesto | Intervallo |
 |-----------|-------------|--------------|-----------|------------|
-| `mode` | Come definire la camera: angoli di orbita, una posizione esplicita o una posizione + quaternione. | DYNAMIC_COMBO | Sì | `"orbit"`<br>`"look_at"`<br>`"quaternion"` |
+| `modalità` | Come definire la camera: angoli di orbita, una posizione esplicita o una posizione + quaternione. | DYNAMIC_COMBO | Sì | `"orbit"`<br>`"look_at"`<br>`"quaternion"` |
 | `target_x` | Punto di mira (perno/obiettivo dell'orbita). In modalità orbita, spostalo per pan/traslare l'intera camera. Ignorato in modalità quaternione. Impostazione predefinita all'origine. (predefinito: 0.0) | FLOAT | No | -1000.0 a 1000.0 |
 | `target_y` | Componente Y del punto di mira. (predefinito: 0.0) | FLOAT | No | -1000.0 a 1000.0 |
 | `target_z` | Componente Z del punto di mira. (predefinito: 0.0) | FLOAT | No | -1000.0 a 1000.0 |
-| `roll` | Rollio della camera attorno all'asse di vista, in gradi. (predefinito: 0.0) | FLOAT | No | -180.0 a 180.0 |
+| `rollio` | Rollio della camera attorno all'asse di vista, in gradi. (predefinito: 0.0) | FLOAT | No | -180.0 a 180.0 |
 | `fov` | Campo visivo verticale in gradi. (predefinito: 35.0) | FLOAT | No | 1.0 a 120.0 |
 | `zoom` | Zoom digitale (moltiplicatore di lunghezza focale). Valori maggiori di 1 ingrandiscono senza spostare la camera. (predefinito: 1.0) | FLOAT | No | 0.01 a 100.0 |
-| `camera_type` | Proiezione utilizzata da Render Splat e Render Mesh: prospettica (scorcio) o ortografica (parallela). (predefinito: "perspective") | COMBO | No | `"perspective"`<br>`"orthographic"` |
+| `tipo_camera` | Proiezione utilizzata da Render Splat e Render Mesh: prospettica (scorcio) o ortografica (parallela). (predefinito: "perspective") | COMBO | No | `"perspective"`<br>`"orthographic"` |
 | `mesh` | Inquadra questa mesh: posizione, target e distanza si misurano dal centro del suo bounding box, in unità del diametro della bounding sphere, così le stesse impostazioni inquadrano qualsiasi mesh. | MESH | No | - |
 
 ### Parametri specifici della modalità

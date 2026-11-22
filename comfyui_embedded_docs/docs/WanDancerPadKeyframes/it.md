@@ -8,9 +8,9 @@ Questo nodo prepara una sequenza di fotogrammi chiave per uno specifico segmento
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `images` | Le immagini di input da distribuire come fotogrammi chiave. | IMAGE | Sì | Batch di immagini |
-| `segment_length` | Lunghezza di questo segmento in fotogrammi (predefinito: 149). | INT | Sì | da 1 a 10000 |
-| `segment_index` | Quale segmento è questo (0 per il primo, 1 per il secondo, ecc., predefinito: 0). | INT | Sì | da 0 a 100 |
+| `immagini` | Le immagini di input da distribuire come fotogrammi chiave. | IMAGE | Sì | Batch di immagini |
+| `lunghezza_segmento` | Lunghezza di questo segmento in fotogrammi (predefinito: 149). | INT | Sì | da 1 a 10000 |
+| `indice_segmento` | Quale segmento è questo (0 per il primo, 1 per il secondo, ecc., predefinito: 0). | INT | Sì | da 0 a 100 |
 | `audio` | Audio da cui calcolare il numero totale di fotogrammi di output ed estrarre l'audio del segmento. | AUDIO | Sì | Dati audio |
 
 ## Output

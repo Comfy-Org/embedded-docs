@@ -6,8 +6,8 @@ Questo nodo esegue l'upscaling di un latent della forma a risoluzione 512 in coo
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `positive` | Il condizionamento positivo a cui vengono collegati i metadati della forma della fase di upsampling. | CONDITIONING | Sì | |
-| `negative` | Il condizionamento negativo a cui vengono collegati i metadati della forma della fase di upsampling. | CONDITIONING | Sì | |
+| `positivo` | Il condizionamento positivo a cui vengono collegati i metadati della forma della fase di upsampling. | CONDITIONING | Sì | |
+| `negativo` | Il condizionamento negativo a cui vengono collegati i metadati della forma della fase di upsampling. | CONDITIONING | Sì | |
 | `shape_latent` | Il latent della forma a risoluzione 512 prodotto dal primo KSampler della fase della forma. | LATENT | Sì | |
 | `vae` | Il VAE Trellis2 utilizzato per decodificare il latent della forma in coordinate sparse ad alta risoluzione. | VAE | Sì | |
 | `target_resolution` | Risoluzione voxel della forma sottoposta a upsampling. Più alta = più dettagli, più VRAM. Predefinito: 1024. | INT | Sì | 1024 - 2048 (passo 128) |

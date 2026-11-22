@@ -8,11 +8,11 @@ Converte il testo in parlato con Breeze TTS 2. Scegli una voce Breeze, seleziona
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `voice` | Voce Breeze con cui parlare, da Breeze Voice Selector o da uno dei nodi di creazione voce Breeze. | BREEZE_VOICE | Sì | - |
-| `text` | Testo da pronunciare, da 1 a 1000 caratteri. I tag audio come `(laughs)` o `(sighs)` vengono interpretati anziché letti. Predefinito: vuoto. | STRING | Sì | 1 a 1000 caratteri |
-| `language` | Lingua del testo. Inglese e cinese possono usare uno qualsiasi dei due modelli; le altre lingue usano Breeze TTS 2 Multilingual. Una voce suona al meglio nella propria lingua, quindi per un'altra lingua usa una copia creata con Breeze Voice Localize. | DYNAMIC_COMBO | Sì | Più opzioni disponibili |
-| `delivery` | Come viene interpretata la battuta: `neutral` mantiene la voce così com'è, `directed` segue le istruzioni scritte. Predefinito: `"neutral"`. | DYNAMIC_COMBO | Sì | `"neutral"`<br>`"directed"` |
-| `speed` | Moltiplicatore di tempo che lascia invariata l'intonazione. Predefinito: 1.0. | FLOAT | No | 0.5 a 2.0 (passo 0.05) |
+| `voce` | Voce Breeze con cui parlare, da Breeze Voice Selector o da uno dei nodi di creazione voce Breeze. | BREEZE_VOICE | Sì | - |
+| `testo` | Testo da pronunciare, da 1 a 1000 caratteri. I tag audio come `(laughs)` o `(sighs)` vengono interpretati anziché letti. Predefinito: vuoto. | STRING | Sì | 1 a 1000 caratteri |
+| `lingua` | Lingua del testo. Inglese e cinese possono usare uno qualsiasi dei due modelli; le altre lingue usano Breeze TTS 2 Multilingual. Una voce suona al meglio nella propria lingua, quindi per un'altra lingua usa una copia creata con Breeze Voice Localize. | DYNAMIC_COMBO | Sì | Più opzioni disponibili |
+| `interpretazione` | Come viene interpretata la battuta: `neutral` mantiene la voce così com'è, `directed` segue le istruzioni scritte. Predefinito: `"neutral"`. | DYNAMIC_COMBO | Sì | `"neutral"`<br>`"directed"` |
+| `velocità` | Moltiplicatore di tempo che lascia invariata l'intonazione. Predefinito: 1.0. | FLOAT | No | 0.5 a 2.0 (passo 0.05) |
 | `seed` | Controlla se il nodo viene rieseguito; i risultati non sono deterministici a prescindere dal seed. Predefinito: 42. | INT | No | 0 a 2147483647 |
 
 ### Input per la lingua "English" e "Chinese"

@@ -6,7 +6,7 @@ Suddivide il campionamento in finestre di contesto sovrapposte, in modo che un v
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello a cui applicare le finestre di contesto durante il campionamento. | MODEL | Sì | - |
+| `modello` | Il modello a cui applicare le finestre di contesto durante il campionamento. | MODEL | Sì | - |
 | `context_length` | La lunghezza della finestra di contesto in frame reali. Deve essere 17*n + 5 (predefinito: 124). | INT | Sì | da 22 a 16384 (MAX_RESOLUTION), passo 17 |
 | `context_overlap` | La sovrapposizione della finestra di contesto in frame reali. Deve essere 17*n + 5 (predefinito: 39). | INT | Sì | 5 o superiore, passo 17 |
 | `fuse_method` | Il metodo usato per fondere le finestre di contesto (predefinito: `"pyramid"`). | COMBO | Sì | `"pyramid"`<br>`"relative"`<br>`"flat"`<br>`"overlap-linear"` |

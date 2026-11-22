@@ -10,7 +10,7 @@ OpenAI GPT Image 2.6 genera immagini da un prompt e le modifica quando colleghi 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello GPT Image da usare. Selezionando un modello vengono mostrati i parametri per quel modello. | DYNAMIC_COMBO | Sì | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"`<br>`"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"` |
+| `modello` | Il modello GPT Image da usare. Selezionando un modello vengono mostrati i parametri per quel modello. | DYNAMIC_COMBO | Sì | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"`<br>`"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"` |
 
 ### Input di gpt-image-2.6-flare e gpt-image-2.6-sunburst
 
@@ -18,17 +18,17 @@ Questi input compaiono quando `model` è impostato su `gpt-image-2.6-flare` o `g
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Cosa generare, o la modifica da apportare. (predefinito: `""`) | STRING | Sì | N/A |
-| `model.size` | Dimensione dell'immagine. Seleziona "Custom" per usare larghezza e altezza personalizzate. (predefinito: `"auto"`) | COMBO | Sì | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
-| `model.custom_width` | Usato solo quando `model.size` è "Custom". Deve essere un multiplo di 16. (predefinito: `1024`) | INT | No | 480 a 3840 (passo 16) |
-| `model.custom_height` | Usato solo quando `model.size` è "Custom". Deve essere un multiplo di 16. (predefinito: `1024`) | INT | No | 480 a 3840 (passo 16) |
-| `model.background` | Restituisce l'immagine con o senza sfondo. (predefinito: `"auto"`) | COMBO | Sì | `"auto"`<br>`"opaque"`<br>`"transparent"` |
-| `model.quality` | Qualità dell'immagine. I livelli più alti costano di più e richiedono più tempo. (predefinito: `"low"`) | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | Quanto il modello pianifica l'immagine prima del rendering. (predefinito: `"high"`) | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"` |
+| `prompt` | Cosa generare, o la modifica da apportare. (predefinito: `""`) | STRING | Sì | N/A |
+| `dimensione` | Dimensione dell'immagine. Seleziona "Custom" per usare larghezza e altezza personalizzate. (predefinito: `"auto"`) | COMBO | Sì | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `custom_width` | Usato solo quando `model.size` è "Custom". Deve essere un multiplo di 16. (predefinito: `1024`) | INT | No | 480 a 3840 (passo 16) |
+| `custom_height` | Usato solo quando `model.size` è "Custom". Deve essere un multiplo di 16. (predefinito: `1024`) | INT | No | 480 a 3840 (passo 16) |
+| `sfondo` | Restituisce l'immagine con o senza sfondo. (predefinito: `"auto"`) | COMBO | Sì | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `qualità` | Qualità dell'immagine. I livelli più alti costano di più e richiedono più tempo. (predefinito: `"low"`) | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `complessità` | Quanto il modello pianifica l'immagine prima del rendering. (predefinito: `"high"`) | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"` |
 | `model.images` | Immagini di riferimento opzionali per la modifica. Fino a 16. | AUTOGROW | No | 0 a 16 |
 | `model.markup` | Annotazioni disegnate sopra la prima immagine di riferimento, che mostrano dove modificare. Devono corrispondere alle dimensioni di quell'immagine e devono essere collegate insieme a `model.markup_alpha`. | IMAGE | No | N/A |
 | `model.markup_alpha` | Il bianco contrassegna le annotazioni in `model.markup`. L'output MASK del nodo Painter è direttamente compatibile; una maschera di Load Image richiede prima Invert Mask. | MASK | No | N/A |
-| `model.seed` | Controlla se il nodo viene rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: `42`) | INT | Sì | 0 a 2147483647 |
+| `seed` | Controlla se il nodo viene rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: `42`) | INT | Sì | 0 a 2147483647 |
 
 ### Input di gpt-image-2.5-flare e gpt-image-2.5-sunburst
 
@@ -36,16 +36,16 @@ Questi input compaiono quando `model` è impostato su `gpt-image-2.5-flare` o `g
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Cosa generare, o la modifica da apportare. (predefinito: `""`) | STRING | Sì | N/A |
-| `model.size` | Dimensione dell'immagine. Seleziona "Custom" per usare larghezza e altezza personalizzate. (predefinito: `"auto"`) | COMBO | Sì | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
-| `model.custom_width` | Usato solo quando `model.size` è "Custom". Deve essere un multiplo di 16. (predefinito: `1024`) | INT | No | 480 a 3840 (passo 16) |
-| `model.custom_height` | Usato solo quando `model.size` è "Custom". Deve essere un multiplo di 16. (predefinito: `1024`) | INT | No | 480 a 3840 (passo 16) |
-| `model.background` | Restituisce l'immagine con o senza sfondo. (predefinito: `"auto"`) | COMBO | Sì | `"auto"`<br>`"opaque"`<br>`"transparent"` |
-| `model.quality` | Qualità dell'immagine. I livelli più alti costano di più e richiedono più tempo. (predefinito: `"low"`) | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `prompt` | Cosa generare, o la modifica da apportare. (predefinito: `""`) | STRING | Sì | N/A |
+| `dimensione` | Dimensione dell'immagine. Seleziona "Custom" per usare larghezza e altezza personalizzate. (predefinito: `"auto"`) | COMBO | Sì | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `custom_width` | Usato solo quando `model.size` è "Custom". Deve essere un multiplo di 16. (predefinito: `1024`) | INT | No | 480 a 3840 (passo 16) |
+| `custom_height` | Usato solo quando `model.size` è "Custom". Deve essere un multiplo di 16. (predefinito: `1024`) | INT | No | 480 a 3840 (passo 16) |
+| `sfondo` | Restituisce l'immagine con o senza sfondo. (predefinito: `"auto"`) | COMBO | Sì | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `qualità` | Qualità dell'immagine. I livelli più alti costano di più e richiedono più tempo. (predefinito: `"low"`) | COMBO | Sì | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 | `model.images` | Immagini di riferimento opzionali per la modifica. Fino a 16. | AUTOGROW | No | 0 a 16 |
 | `model.markup` | Annotazioni disegnate sopra la prima immagine di riferimento, che mostrano dove modificare. Devono corrispondere alle dimensioni di quell'immagine e devono essere collegate insieme a `model.markup_alpha`. | IMAGE | No | N/A |
 | `model.markup_alpha` | Il bianco contrassegna le annotazioni in `model.markup`. L'output MASK del nodo Painter è direttamente compatibile; una maschera di Load Image richiede prima Invert Mask. | MASK | No | N/A |
-| `model.seed` | Controlla se il nodo viene rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: `42`) | INT | Sì | 0 a 2147483647 |
+| `seed` | Controlla se il nodo viene rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: `42`) | INT | Sì | 0 a 2147483647 |
 
 **Vincoli e limitazioni dei parametri:**
 

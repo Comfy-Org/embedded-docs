@@ -6,15 +6,15 @@ Questo nodo genera un video di qualità professionale a partire da un'immagine i
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | Fotogramma iniziale da utilizzare per il video. | IMAGE | Sì | Esattamente un'immagine |
-| `model` | Gruppo di impostazioni del modello. Seleziona la variante del modello LTX 2.5 da utilizzare. | COMBO | Sì | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
-| `model.duration` | Durata del video generato in secondi. | INT | Sì | Intero |
-| `model.resolution` | Risoluzione del video generato. Le opzioni disponibili possono dipendere dal modello selezionato. | COMBO | Sì | "1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840" |
-| `model.fps` | Frequenza dei fotogrammi del video generato. | INT | Sì | Intero (predefinito: 25) |
-| `model.generate_audio` | Indica se generare l'audio per il video. | BOOLEAN | Sì | True<br>False (predefinito: True) |
+| `immagine` | Fotogramma iniziale da utilizzare per il video. | IMAGE | Sì | Esattamente un'immagine |
+| `modello` | Gruppo di impostazioni del modello. Seleziona la variante del modello LTX 2.5 da utilizzare. | COMBO | Sì | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
+| `durata` | Durata del video generato in secondi. | INT | Sì | Intero |
+| `risoluzione` | Risoluzione del video generato. Le opzioni disponibili possono dipendere dal modello selezionato. | COMBO | Sì | "1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840" |
+| `fps` | Frequenza dei fotogrammi del video generato. | INT | Sì | Intero (predefinito: 25) |
+| `genera_audio` | Indica se generare l'audio per il video. | BOOLEAN | Sì | True<br>False (predefinito: True) |
 | `prompt` | Descrizione testuale del contenuto video da generare. Deve contenere da 1 a 10000 caratteri. | STRING | Sì | Da 1 a 10000 caratteri |
 | `seed` | Valore di seed per una generazione riproducibile. Usare lo stesso seed con le stesse impostazioni produce lo stesso risultato. | INT | Sì | Intero (predefinito: 42) |
-| `last_frame` | Fotogramma finale da utilizzare per il video. | IMAGE | No | Esattamente un'immagine |
+| `ultimo_fotogramma` | Fotogramma finale da utilizzare per il video. | IMAGE | No | Esattamente un'immagine |
 
 **Nota:** Per `image` è supportata una sola immagine. Se viene fornito `last_frame`, deve contenere anch'esso esattamente un'immagine. Le opzioni disponibili per `model.resolution` possono variare in base alla variante di `model` selezionata. Il costo di un'esecuzione dipende da `model`, `model.duration` e `model.resolution` selezionati.
 

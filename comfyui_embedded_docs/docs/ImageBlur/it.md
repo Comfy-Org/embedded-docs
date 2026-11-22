@@ -6,8 +6,8 @@ Il nodo `ImageBlur` applica una sfocatura gaussiana a un'immagine, consentendo l
 
 | Campo | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `image` | L'immagine di input da sfocare. È il target principale dell'effetto di sfocatura. | `IMAGE` |
-| `blur_radius` | Determina il raggio dell'effetto di sfocatura. Un raggio maggiore produce una sfocatura più pronunciata. | `INT` |
+| `immagine` | L'immagine di input da sfocare. È il target principale dell'effetto di sfocatura. | `IMAGE` |
+| `raggio di sfocatura` | Determina il raggio dell'effetto di sfocatura. Un raggio maggiore produce una sfocatura più pronunciata. | `INT` |
 | `sigma` | Controlla la diffusione della sfocatura. Un valore sigma più alto indica che la sfocatura influenzerà un'area più ampia attorno a ciascun pixel. | `FLOAT` |
 
 ## Output

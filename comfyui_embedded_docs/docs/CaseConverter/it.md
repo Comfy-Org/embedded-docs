@@ -6,8 +6,8 @@ Il nodo Case Converter trasforma le stringhe di testo in diversi formati di maiu
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Range |
 | --- | --- | --- | --- | --- |
-| `string` | La stringa di testo da convertire in un diverso formato di maiuscole/minuscole | STRING | Sì | - |
-| `mode` | La modalità di conversione delle maiuscole/minuscole da applicare (predefinita: `"UPPERCASE"`) | STRING | Sì | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` |
+| `stringa` | La stringa di testo da convertire in un diverso formato di maiuscole/minuscole | STRING | Sì | - |
+| `modalità` | La modalità di conversione delle maiuscole/minuscole da applicare (predefinita: `"UPPERCASE"`) | STRING | Sì | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` |
 
 ## Output
 

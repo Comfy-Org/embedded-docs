@@ -10,9 +10,9 @@ Il selettore `moderation` mostra ulteriori opzioni di moderazione quando è impo
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | L'immagine da ritagliare. | IMAGE | Sì | - |
+| `immagine` | L'immagine da ritagliare. | IMAGE | Sì | - |
 | `prompt` | Cosa mantenere e, facoltativamente, cosa eliminare o restringere, ad esempio "la persona con il tappetino e la pianta", "la donna alla scrivania senza la lampada" o "solo la sedia". Non deve essere vuoto. Se nulla corrisponde al prompt, il risultato è completamente trasparente. Predefinito: `""` (stringa vuota). | STRING | Sì | 1 carattere o più |
-| `moderation` | Impostazioni di moderazione. Se impostato su `"true"`, i flag di moderazione visiva riportati di seguito diventano disponibili. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
+| `moderazione` | Impostazioni di moderazione. Se impostato su `"true"`, i flag di moderazione visiva riportati di seguito diventano disponibili. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
 
 ### Input con moderazione "true"
 

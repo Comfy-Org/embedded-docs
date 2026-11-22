@@ -8,7 +8,7 @@ Questo nodo genera un video che parte da un'immagine statica e sposta la camera 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Modello da utilizzare per la generazione video. | DYNAMIC_COMBO | Sì | "MiniMax H3 Max" |
+| `modello` | Modello da utilizzare per la generazione video. | DYNAMIC_COMBO | Sì | "MiniMax H3 Max" |
 
 ### Input di MiniMax H3 Max
 

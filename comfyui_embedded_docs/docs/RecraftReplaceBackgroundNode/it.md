@@ -6,7 +6,7 @@ Sostituisce lo sfondo dell'immagine, in base al prompt fornito. Questo nodo util
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine di input da elaborare | IMAGE | Sì | - |
+| `immagine` | L'immagine di input da elaborare | IMAGE | Sì | - |
 | `prompt` | Prompt per la generazione dell'immagine (predefinito: vuoto) | STRING | Sì | - |
 | `n` | Il numero di immagini da generare (predefinito: 1) | INT | Sì | 1-6 |
 | `seed` | Seed per determinare se il nodo deve essere rieseguito; i risultati effettivi sono non deterministici indipendentemente dal seed (predefinito: 0) | INT | Sì | 0-18446744073709551615 |

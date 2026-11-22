@@ -6,7 +6,7 @@ Questo nodo decodifica le rappresentazioni latenti di forma di Trellis2 in una m
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `samples` | I campioni latenti da decodificare, inclusi il tensore dei campioni e i dati sparsi delle coordinate. Il dizionario latente può anche contenere campi opzionali: `coord_counts` per forme in batch, `coord_resolution` per controllare la risoluzione della mesh e `model_frame` per l'orientamento delle coordinate. | LATENT | Sì | None |
+| `campioni` | I campioni latenti da decodificare, inclusi il tensore dei campioni e i dati sparsi delle coordinate. Il dizionario latente può anche contenere campi opzionali: `coord_counts` per forme in batch, `coord_resolution` per controllare la risoluzione della mesh e `model_frame` per l'orientamento delle coordinate. | LATENT | Sì | None |
 | `vae` | Il modello VAE utilizzato per decodificare il latente di forma in una mesh. | VAE | Sì | None |
 
 ### Note su `samples`

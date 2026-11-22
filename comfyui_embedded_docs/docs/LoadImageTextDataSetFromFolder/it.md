@@ -6,7 +6,7 @@ Questo nodo carica un dataset di coppie immagine-didascalia da una cartella sele
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `folder` | La cartella da cui caricare immagini e didascalie testuali. | COMBO | Sì | Sottocartelle all'interno della directory di input di ComfyUI (caricate dinamicamente) |
+| `cartella` | La cartella da cui caricare immagini e didascalie testuali. | COMBO | Sì | Sottocartelle all'interno della directory di input di ComfyUI (caricate dinamicamente) |
 
 **Nota:** La cartella selezionata deve essere una sottocartella della directory di input di ComfyUI. Il nodo si aspetta un file di didascalia `.txt` per ogni immagine: per ciascun file immagine (`.png`, `.jpg`, `.jpeg`, `.webp`) cerca un file `.txt` con lo stesso nome base nella stessa posizione e usa il suo contenuto ripulito dagli spazi iniziali e finali come didascalia. Se non viene trovato alcun file di didascalia, viene usata una stringa vuota. Il nodo supporta anche la struttura di cartelle di kohya-ss/sd-scripts: le sottocartelle il cui nome inizia con un numero e un underscore (ad esempio `5_cats`) ripetono le immagini al loro interno quel numero di volte nella lista di output finale. Se la cartella selezionata non contiene immagini valide, il nodo genera un errore.
 

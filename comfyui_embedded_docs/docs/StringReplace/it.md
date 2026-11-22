@@ -6,9 +6,9 @@ Il nodo StringReplace esegue operazioni di sostituzione di testo su stringhe di 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `string` | La stringa di testo di input in cui verranno eseguite le sostituzioni | STRING | Sì | - |
-| `find` | La sottostringa da cercare all'interno del testo di input | STRING | Sì | - |
-| `replace` | Il testo sostitutivo che sostituirà tutte le occorrenze trovate | STRING | Sì | - |
+| `stringa` | La stringa di testo di input in cui verranno eseguite le sostituzioni | STRING | Sì | - |
+| `trova` | La sottostringa da cercare all'interno del testo di input | STRING | Sì | - |
+| `sostituisci` | Il testo sostitutivo che sostituirà tutte le occorrenze trovate | STRING | Sì | - |
 
 ## Output
 

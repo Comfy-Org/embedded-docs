@@ -7,8 +7,8 @@ FLUX 3 Max Image to Video anima da 1 a 10 immagini con FLUX 3 Max. Ogni immagine
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `prompt` | Come la scena deve muoversi e suonare (predefinito: vuoto). | STRING | Sì | Testo multiriga |
-| `keyframes` | Slot espandibile: collega da 1 a 10 immagini chiave nell'ordine di riproduzione, ad es. `image_1`, `image_2` e così via. Ogni immagine diventa un fotogramma della clip. | IMAGE | Sì | Da 1 a 10 immagini |
-| `placement` | `"spread across the clip"` colloca la prima immagine all'inizio, l'ultima alla fine e le altre in modo uniforme tra le due; `"at times"` fissa ogni immagine a un secondo scelto (predefinito: `"spread across the clip"`). | DYNAMIC_COMBO | Sì | `"spread across the clip"`<br>`"at times"` |
+| `fotogrammi chiave` | Slot espandibile: collega da 1 a 10 immagini chiave nell'ordine di riproduzione, ad es. `image_1`, `image_2` e così via. Ogni immagine diventa un fotogramma della clip. | IMAGE | Sì | Da 1 a 10 immagini |
+| `posizionamento` | `"spread across the clip"` colloca la prima immagine all'inizio, l'ultima alla fine e le altre in modo uniforme tra le due; `"at times"` fissa ogni immagine a un secondo scelto (predefinito: `"spread across the clip"`). | DYNAMIC_COMBO | Sì | `"spread across the clip"`<br>`"at times"` |
 | `aspect_ratio` | Proporzioni di output. `"auto"` segue la prima immagine chiave (predefinito: `"auto"`). | COMBO | Sì | `"auto"`<br>`"21:9"`<br>`"2:1"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"` |
 | `duration` | Durata della clip in secondi (predefinito: `"5"`). | COMBO | Sì | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"`<br>`"15"`<br>`"16"`<br>`"17"`<br>`"18"`<br>`"19"`<br>`"20"` |
 | `resolution` | Risoluzione di output (predefinito: `"720p"`). | COMBO | Sì | `"720p"`<br>`"1080p"` |

@@ -8,11 +8,11 @@ AnimaLLLiteApply applica una patch di animazione leggera a un modello di diffusi
 |-----------|-------------|--------------|--------------|------------|
 | `model` | Il modello di diffusione di base a cui applicare la patch | MODEL | Sì | |
 | `model_patch` | La patch di animazione preconfigurata da applicare | MODEL_PATCH | Sì | |
-| `image` | L'immagine di riferimento per guidare la generazione. Vengono usati solo i primi 3 canali di colore (RGB) | IMAGE | Sì | |
-| `strength` | La forza dell'effetto della patch (predefinito: 1.0, passo: 0.01) | FLOAT | Sì | da -10.0 a 10.0 |
-| `start_percent` | La percentuale del processo di denoising alla quale la patch inizia ad avere effetto (predefinito: 0.0, passo: 0.001) | FLOAT | Sì | da 0.0 a 1.0 |
-| `end_percent` | La percentuale del processo di denoising alla quale la patch smette di avere effetto (predefinito: 1.0, passo: 0.001) | FLOAT | Sì | da 0.0 a 1.0 |
-| `mask` | Una maschera opzionale per limitare l'effetto della patch ad aree specifiche dell'immagine | MASK | No | |
+| `immagine` | L'immagine di riferimento per guidare la generazione. Vengono usati solo i primi 3 canali di colore (RGB) | IMAGE | Sì | |
+| `intensità` | La forza dell'effetto della patch (predefinito: 1.0, passo: 0.01) | FLOAT | Sì | da -10.0 a 10.0 |
+| `percentuale_inizio` | La percentuale del processo di denoising alla quale la patch inizia ad avere effetto (predefinito: 0.0, passo: 0.001) | FLOAT | Sì | da 0.0 a 1.0 |
+| `percentuale_fine` | La percentuale del processo di denoising alla quale la patch smette di avere effetto (predefinito: 1.0, passo: 0.001) | FLOAT | Sì | da 0.0 a 1.0 |
+| `maschera` | Una maschera opzionale per limitare l'effetto della patch ad aree specifiche dell'immagine | MASK | No | |
 
 **Nota sui vincoli dei parametri:** Se il `model_patch` ha 4 canali di input e non viene fornita alcuna `mask`, viene creata automaticamente una maschera di zeri per corrispondere alle dimensioni dell'immagine. Se il `model_patch` non ha 4 canali di input, il parametro `mask` viene ignorato e impostato a `None`. Vengono usati solo i primi 3 canali di colore dell'immagine di input. Questo nodo è contrassegnato come sperimentale in ComfyUI.
 

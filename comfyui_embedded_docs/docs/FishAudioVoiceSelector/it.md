@@ -8,7 +8,7 @@ Il nodo Fish Audio Voice Selector seleziona una voce dalla libreria Fish Audio p
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `voice` | Scegli una voce, oppure `custom` per inserire qualsiasi ID di modello vocale fish.audio. | DYNAMIC_COMBO | Sì | "Energetic Male (en)"<br>"Friendly Women (en)"<br>"Sarah (en)"<br>"Verity (en)"<br>"Polo (en)"<br>"Adrian (en)"<br>"E-girl (en)"<br>"Narrator (en)"<br>"Warm Conversational Voice (en)"<br>"Warm Storyteller (en)"<br>"Dramatic Character Male (en)"<br>"News Narrator (zh)"<br>"Lively Female (zh)"<br>"Gentle Female (zh)"<br>"Energetic Female (ja)"<br>"Calm Female (ja)"<br>"Calm Male (ja)"<br>"custom" |
+| `voce` | Scegli una voce, oppure `custom` per inserire qualsiasi ID di modello vocale fish.audio. | DYNAMIC_COMBO | Sì | "Energetic Male (en)"<br>"Friendly Women (en)"<br>"Sarah (en)"<br>"Verity (en)"<br>"Polo (en)"<br>"Adrian (en)"<br>"E-girl (en)"<br>"Narrator (en)"<br>"Warm Conversational Voice (en)"<br>"Warm Storyteller (en)"<br>"Dramatic Character Male (en)"<br>"News Narrator (zh)"<br>"Lively Female (zh)"<br>"Gentle Female (zh)"<br>"Energetic Female (ja)"<br>"Calm Female (ja)"<br>"Calm Male (ja)"<br>"custom" |
 
 Le opzioni di voce preimpostate coprono voci inglesi (en), cinesi (zh) e giapponesi (ja) e non richiedono input aggiuntivi.
 

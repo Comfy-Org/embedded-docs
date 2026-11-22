@@ -12,13 +12,13 @@ Il nodo ByteDance Text to Video genera un video utilizzando i modelli ByteDance 
 |-----------|-------------|--------------|--------------|------------|
 | `model` | Il modello ByteDance utilizzato per generare il video (predefinito: `"seedance-1-0-pro-fast-251015"`). | COMBO | Sì | `"seedance-1-0-pro-250528"`<br>`"seedance-1-0-pro-fast-251015"` |
 | `prompt` | Il prompt testuale utilizzato per generare il video. | STRING | Sì | - |
-| `resolution` | La risoluzione del video in output. | COMBO | Sì | `"480p"`<br>`"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Il rapporto d'aspetto del video in output. | COMBO | Sì | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` |
-| `duration` | La durata del video in output in secondi (predefinito: 5). | INT | Sì | da 3 a 12 |
+| `risoluzione` | La risoluzione del video in output. | COMBO | Sì | `"480p"`<br>`"720p"`<br>`"1080p"` |
+| `rapporto d'aspetto` | Il rapporto d'aspetto del video in output. | COMBO | Sì | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` |
+| `durata` | La durata del video in output in secondi (predefinito: 5). | INT | Sì | da 3 a 12 |
 | `seed` | Seed da utilizzare per la generazione (predefinito: 0). | INT | No | da 0 a 2147483647 |
-| `camera_fixed` | Specifica se fissare la camera. La piattaforma aggiunge al prompt un'istruzione per fissare la camera, ma non garantisce l'effetto effettivo (predefinito: False). | BOOLEAN | No | - |
+| `camera fissa` | Specifica se fissare la camera. La piattaforma aggiunge al prompt un'istruzione per fissare la camera, ma non garantisce l'effetto effettivo (predefinito: False). | BOOLEAN | No | - |
 | `watermark` | Indica se aggiungere al video una filigrana "AI generated" (predefinito: False). | BOOLEAN | No | - |
-| `generate_audio` | Aggiunge una traccia audio generata dall'IA. Gli altri modelli ignorano questo input (predefinito: False). | BOOLEAN | No | - |
+| `genera audio` | Aggiunge una traccia audio generata dall'IA. Gli altri modelli ignorano questo input (predefinito: False). | BOOLEAN | No | - |
 
 **Vincoli dei parametri:**
 

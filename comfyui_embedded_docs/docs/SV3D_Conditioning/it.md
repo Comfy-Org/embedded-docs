@@ -7,12 +7,12 @@ SV3D_Conditioning prepara i dati di condizionamento per la generazione di video 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `clip_vision` | Il modello CLIP vision utilizzato per codificare l'immagine di input | CLIP_VISION | Sì | - |
-| `init_image` | L'immagine iniziale che funge da punto di partenza per la generazione del video 3D | IMAGE | Sì | - |
+| `immagine iniziale` | L'immagine iniziale che funge da punto di partenza per la generazione del video 3D | IMAGE | Sì | - |
 | `vae` | Il modello VAE utilizzato per codificare l'immagine nello spazio latente | VAE | Sì | - |
-| `width` | La larghezza di output per i frame video generati (predefinito: 576, passo di 8) | INT | Sì | 16 a MAX_RESOLUTION |
-| `height` | L'altezza di output per i frame video generati (predefinito: 576, passo di 8) | INT | Sì | 16 a MAX_RESOLUTION |
-| `video_frames` | Il numero di frame da generare per la sequenza video (predefinito: 21) | INT | Sì | 1 a 4096 |
-| `elevation` | L'angolo di elevazione della camera in gradi per la vista 3D (predefinito: 0.0, passo di 0.1) | FLOAT | Sì | -90.0 a 90.0 |
+| `larghezza` | La larghezza di output per i frame video generati (predefinito: 576, passo di 8) | INT | Sì | 16 a MAX_RESOLUTION |
+| `altezza` | L'altezza di output per i frame video generati (predefinito: 576, passo di 8) | INT | Sì | 16 a MAX_RESOLUTION |
+| `fotogrammi video` | Il numero di frame da generare per la sequenza video (predefinito: 21) | INT | Sì | 1 a 4096 |
+| `elevazione` | L'angolo di elevazione della camera in gradi per la vista 3D (predefinito: 0.0, passo di 0.1) | FLOAT | Sì | -90.0 a 90.0 |
 
 Nota: L'azimut della camera parte da 0 gradi e aumenta di una quantità costante a ogni frame, così che la camera completi un'orbita completa di 360 gradi attorno all'oggetto attraverso i frame generati. L'incremento per frame è calcolato come 360 diviso (`video_frames` - 1), usando un divisore minimo di 2 quando viene richiesto un solo frame. Il valore `elevation` rimane costante per ogni frame.
 

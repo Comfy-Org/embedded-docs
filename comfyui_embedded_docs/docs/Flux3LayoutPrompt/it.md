@@ -7,7 +7,7 @@ Costruisce la tabella di layout che FLUX 3 Image legge da un prompt. Prende gli 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `prompt` | Il testo del prompt. Cita il riquadro N come `<obj_N>` per collegarvi le parole. | STRING | Sì | - |
-| `element` | Gli elementi da inserire nel layout, presi dal nodo Create Bounding Boxes. Le palette di colori non vengono usate, quindi descrivi i colori nella descrizione. | ARRAY | Sì | - |
+| `elemento` | Gli elementi da inserire nel layout, presi dal nodo Create Bounding Boxes. Le palette di colori non vengono usate, quindi descrivi i colori nella descrizione. | ARRAY | Sì | - |
 
 ## Output
 
