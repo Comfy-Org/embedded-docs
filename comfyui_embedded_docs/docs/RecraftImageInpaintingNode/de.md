@@ -6,11 +6,11 @@ Dieser Node ändert bestimmte Bereiche eines Bildes basierend auf einem Text-Pro
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das zu ändernde Eingabebild | IMAGE | Ja | - |
-| `mask` | Die Maske, die definiert, welche Bereiche des Bildes geändert werden sollen | MASK | Ja | - |
-| `prompt` | Prompt für die Bilderzeugung (Standard: leerer String, maximale Länge: 1000 Zeichen) | STRING | Ja | - |
+| `Bild` | Das zu ändernde Eingabebild | IMAGE | Ja | - |
+| `Maske` | Die Maske, die definiert, welche Bereiche des Bildes geändert werden sollen | MASK | Ja | - |
+| `Prompt` | Prompt für die Bilderzeugung (Standard: leerer String, maximale Länge: 1000 Zeichen) | STRING | Ja | - |
 | `n` | Die Anzahl der zu erzeugenden Bilder (Standard: 1, Minimum: 1, Maximum: 6) | INT | Ja | 1-6 |
-| `seed` | Seed, der bestimmt, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0) | INT | Ja | 0-18446744073709551615 |
+| `Seed` | Seed, der bestimmt, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0) | INT | Ja | 0-18446744073709551615 |
 | `recraft_style` | Optionaler Stilparameter für die Recraft API. Wenn nicht angegeben, wird standardmäßig der Stil "realistic_image" verwendet | STYLEV3 | Nein | - |
 | `negative_prompt` | Eine optionale Textbeschreibung unerwünschter Elemente in einem Bild (Standard: leerer String) | STRING | Nein | - |
 

@@ -6,11 +6,11 @@ Erstellt eine neue Breeze-Stimme aus einer schriftlichen Beschreibung. Geben Sie
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `description` | Beschreibung der Stimme mit 3 bis 500 Zeichen: Alter, Geschlecht, Akzent, Ton, Tempo. Standard: leer. | STRING | Ja | 3 bis 500 Zeichen |
-| `preview_text` | Der Satz, den die neue Stimme in der Vorschau spricht, bis zu 500 Zeichen. Schreiben Sie ihn in der ausgewählten Sprache, da die Stimme aus dieser Vorschau erstellt wird. Standard: leer. | STRING | Ja | 1 bis 500 Zeichen |
-| `language` | Sprache des Vorschautextes. Englisch und Chinesisch können beide Modelle verwenden; andere Sprachen verwenden Breeze TTS 2 Multilingual. | DYNAMIC_COMBO | Ja | Mehrere Optionen verfügbar |
-| `strength` | Wie genau die Stimme der Beschreibung folgt. Standard: 4.0. | FLOAT | Nein | 1.0 bis 10.0 (Schritt: 0.1) |
-| `seed` | Steuert, ob der Node erneut ausgeführt wird; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Nein | 0 bis 2147483647 |
+| `Beschreibung` | Beschreibung der Stimme mit 3 bis 500 Zeichen: Alter, Geschlecht, Akzent, Ton, Tempo. Standard: leer. | STRING | Ja | 3 bis 500 Zeichen |
+| `Vorschautext` | Der Satz, den die neue Stimme in der Vorschau spricht, bis zu 500 Zeichen. Schreiben Sie ihn in der ausgewählten Sprache, da die Stimme aus dieser Vorschau erstellt wird. Standard: leer. | STRING | Ja | 1 bis 500 Zeichen |
+| `Sprache` | Sprache des Vorschautextes. Englisch und Chinesisch können beide Modelle verwenden; andere Sprachen verwenden Breeze TTS 2 Multilingual. | DYNAMIC_COMBO | Ja | Mehrere Optionen verfügbar |
+| `Stärke` | Wie genau die Stimme der Beschreibung folgt. Standard: 4.0. | FLOAT | Nein | 1.0 bis 10.0 (Schritt: 0.1) |
+| `Seed` | Steuert, ob der Node erneut ausgeführt wird; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Nein | 0 bis 2147483647 |
 
 ### Eingaben für die Sprachen „English" und „Chinese"
 

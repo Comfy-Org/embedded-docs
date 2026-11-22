@@ -10,8 +10,8 @@ Der Node Preview Point Cloud ermöglicht es Ihnen, eine 3D-Punktwolkendatei in d
 | `model_3d_info` | Informationen über das 3D-Modell | LOAD3DMODELINFO | Nein | - |
 | `viewport_state` | Der aktuelle Zustand des 3D-Viewports | LOAD3D | Ja | - |
 | `camera_info` | Kamerainformationen für die 3D-Ansicht | LOAD3DCAMERA | Nein | - |
-| `width` | Breite des Vorschaufensters (Standard: 1024) | INT | Ja | 1 bis 4096 |
-| `height` | Höhe des Vorschaufensters (Standard: 1024) | INT | Ja | 1 bis 4096 |
+| `Breite` | Breite des Vorschaufensters (Standard: 1024) | INT | Ja | 1 bis 4096 |
+| `Höhe` | Höhe des Vorschaufensters (Standard: 1024) | INT | Ja | 1 bis 4096 |
 
 Hinweis: `model_3d_info` und `camera_info` sind optionale erweiterte Eingaben. Wenn sie nicht verbunden sind, greift der Node auf die entsprechenden Werte zurück, die in `viewport_state` gespeichert sind. Die Punktwolkendatei wird in das temporäre Verzeichnis von ComfyUI geschrieben und nicht in das Ausgabeverzeichnis. Dies ist ein Ausgabe-(Terminal-)Node und wird daher hauptsächlich verwendet, um die Vorschau in der Oberfläche anzuzeigen.
 

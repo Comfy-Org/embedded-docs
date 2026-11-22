@@ -8,7 +8,7 @@ Der Node PixVerse V6 Text to Video erzeugt ein Video aus einem Text-Prompt unter
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modell- und Generierungseinstellungen. Wählen Sie das Modell aus und konfigurieren Sie seine Generierungsoptionen. | DYNAMIC_COMBO | Ja | "PixVerse V6"<br>"PixVerse V6 Max" |
+| `Modell` | Modell- und Generierungseinstellungen. Wählen Sie das Modell aus und konfigurieren Sie seine Generierungsoptionen. | DYNAMIC_COMBO | Ja | "PixVerse V6"<br>"PixVerse V6 Max" |
 
 ### PixVerse V6 Eingaben
 

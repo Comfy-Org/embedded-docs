@@ -6,8 +6,8 @@ Der Node SetUnionControlNetType ermöglicht es Ihnen, auszuwählen, welchen Steu
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `control_net` | Das Steuerungsnetzwerk, das mit einer neuen Typeneinstellung geändert werden soll | CONTROL_NET | Ja | - |
-| `type` | Der anzuwendende Steuerungstyp des Steuerungsnetzwerks. Verwenden Sie „auto“ für die automatische Typerkennung oder wählen Sie einen bestimmten Steuerungstyp aus den verfügbaren Optionen aus (Standard: „auto“) | COMBO | Ja | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/softedge"`<br>`"canny"`<br>`"scribble"`<br>`"seg"`<br>`"tile"`<br>`"inpaint"`<br>`"lineart"`<br>`"blur"`<br>`"mlsd"`<br>`"normalbae"`<br>`"mask"` |
+| `ControlNet` | Das Steuerungsnetzwerk, das mit einer neuen Typeneinstellung geändert werden soll | CONTROL_NET | Ja | - |
+| `Typ` | Der anzuwendende Steuerungstyp des Steuerungsnetzwerks. Verwenden Sie „auto“ für die automatische Typerkennung oder wählen Sie einen bestimmten Steuerungstyp aus den verfügbaren Optionen aus (Standard: „auto“) | COMBO | Ja | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/softedge"`<br>`"canny"`<br>`"scribble"`<br>`"seg"`<br>`"tile"`<br>`"inpaint"`<br>`"lineart"`<br>`"blur"`<br>`"mlsd"`<br>`"normalbae"`<br>`"mask"` |
 
 Wenn `type` auf `"auto"` gesetzt ist, löscht der Node den gespeicherten Steuerungstyp, damit der Typ automatisch erkannt werden kann. Wenn ein bestimmter Typ ausgewählt wird, speichert der Node den passenden Steuerungstyp im kopierten Steuerungsnetzwerk. Das eingegebene Steuerungsnetzwerk wird niemals direkt verändert; stattdessen wird eine geänderte Kopie zurückgegeben.
 

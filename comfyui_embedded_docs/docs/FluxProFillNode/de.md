@@ -6,13 +6,13 @@ Führt Inpainting an einem Bild basierend auf Maske und Prompt durch. Dieser Nod
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Eingabebild, für das Inpainting durchgeführt werden soll | IMAGE | Ja | - |
-| `mask` | Die Maske, die definiert, welche Bereiche des Bildes gefüllt werden sollen | MASK | Ja | - |
-| `prompt` | Prompt für die Bilderzeugung (Standard: leerer String) | STRING | Nein | - |
+| `Bild` | Das Eingabebild, für das Inpainting durchgeführt werden soll | IMAGE | Ja | - |
+| `Maske` | Die Maske, die definiert, welche Bereiche des Bildes gefüllt werden sollen | MASK | Ja | - |
+| `Prompt` | Prompt für die Bilderzeugung (Standard: leerer String) | STRING | Nein | - |
 | `prompt_upsampling` | Ob ein Upsampling für den Prompt durchgeführt werden soll. Wenn aktiv, wird der Prompt automatisch für eine kreativere Generierung verändert, aber die Ergebnisse sind nicht deterministisch (derselbe Seed erzeugt nicht exakt dasselbe Ergebnis). (Standard: false) | BOOLEAN | Nein | - |
-| `guidance` | Guidance-Stärke für den Bilderzeugungsprozess (Standard: 60) | FLOAT | Nein | 1.5-100 |
-| `steps` | Anzahl der Schritte für den Bilderzeugungsprozess (Standard: 50) | INT | Nein | 15-50 |
-| `seed` | Der Zufalls-Seed, der zum Erzeugen des Rauschens verwendet wird. (Standard: 0) | INT | Nein | 0-18446744073709551615 |
+| `Guidance` | Guidance-Stärke für den Bilderzeugungsprozess (Standard: 60) | FLOAT | Nein | 1.5-100 |
+| `Schritte` | Anzahl der Schritte für den Bilderzeugungsprozess (Standard: 50) | INT | Nein | 15-50 |
+| `Seed` | Der Zufalls-Seed, der zum Erzeugen des Rauschens verwendet wird. (Standard: 0) | INT | Nein | 0-18446744073709551615 |
 
 ## Ausgaben
 

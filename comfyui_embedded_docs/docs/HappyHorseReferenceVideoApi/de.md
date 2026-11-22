@@ -8,9 +8,9 @@ Dieser Node erzeugt ein Video mit einer Person oder einem Objekt aus Referenzbil
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das HappyHorse-Referenz-zu-Video-Modell, das für die Generierung verwendet werden soll. | DYNAMIC_COMBO | Ja | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
-| `seed` | Seed, der für die Generierung verwendet werden soll (Standard: 0). Kann so eingestellt werden, dass er sich nach jeder Generierung automatisch ändert. | INT | Ja | 0 bis 2147483647 |
-| `watermark` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll (Standard: False). | BOOLEAN | Ja | True oder False |
+| `Modell` | Das HappyHorse-Referenz-zu-Video-Modell, das für die Generierung verwendet werden soll. | DYNAMIC_COMBO | Ja | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
+| `Seed` | Seed, der für die Generierung verwendet werden soll (Standard: 0). Kann so eingestellt werden, dass er sich nach jeder Generierung automatisch ändert. | INT | Ja | 0 bis 2147483647 |
+| `Wasserzeichen` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll (Standard: False). | BOOLEAN | Ja | True oder False |
 
 ### HappyHorse 1.1 Eingaben (happyhorse-1.1-r2v)
 

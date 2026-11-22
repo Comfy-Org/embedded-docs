@@ -6,7 +6,7 @@ Dieser Node generiert 3D-Assets mithilfe der Rodin-API. Er nimmt Eingabebilder u
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `Images` | Eingabebilder, die in 3D-Modelle konvertiert werden sollen. Sie können zwischen 1 und 5 Bilder angeben. | IMAGE | Ja | 1 bis 5 Bilder |
+| `Bilder` | Eingabebilder, die in 3D-Modelle konvertiert werden sollen. Sie können zwischen 1 und 5 Bilder angeben. | IMAGE | Ja | 1 bis 5 Bilder |
 | `Seed` | Zufälliger Seed-Wert für die Generierung (Standard: 0). Auf 0 setzen, um einen zufälligen Seed zu verwenden. | INT | Nein | 0 bis 65535 |
 
 **Hinweis:** Der Node erfordert mindestens 1 Bild und unterstützt maximal 5 Bilder. Wenn keine Bilder bereitgestellt werden, löst der Node einen Fehler aus.

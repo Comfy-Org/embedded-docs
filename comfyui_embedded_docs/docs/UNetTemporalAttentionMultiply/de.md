@@ -6,7 +6,7 @@ Der Node UNetTemporalAttentionMultiply wendet Multiplikationsfaktoren auf versch
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Eingabemodell, das mit Attention-Multiplikatoren modifiziert werden soll | MODEL | Ja | - |
+| `Modell` | Das Eingabemodell, das mit Attention-Multiplikatoren modifiziert werden soll | MODEL | Ja | - |
 | `self_structural` | Multiplikator für strukturelle Komponenten der Self-Attention (Standard: 1.0) | FLOAT | Nein | 0.0 - 10.0 |
 | `self_temporal` | Multiplikator für temporale Komponenten der Self-Attention (Standard: 1.0) | FLOAT | Nein | 0.0 - 10.0 |
 | `cross_structural` | Multiplikator für strukturelle Komponenten der Cross-Attention (Standard: 1.0) | FLOAT | Nein | 0.0 - 10.0 |

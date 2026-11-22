@@ -6,7 +6,7 @@ Dieser Node ist dafür ausgelegt, Bilder mithilfe eines angegebenen VAE-Modells 
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `pixels` | Der Parameter `pixels` repräsentiert die Bilddaten, die in den Latent-Raum kodiert werden sollen. Er spielt eine entscheidende Rolle bei der Bestimmung der ausgegebenen Latent-Repräsentation, indem er als direkte Eingabe für den Kodierungsprozess dient. | `IMAGE` |
+| `Pixel` | Der Parameter `pixels` repräsentiert die Bilddaten, die in den Latent-Raum kodiert werden sollen. Er spielt eine entscheidende Rolle bei der Bestimmung der ausgegebenen Latent-Repräsentation, indem er als direkte Eingabe für den Kodierungsprozess dient. | `IMAGE` |
 | `vae` | Der Parameter `vae` gibt das Variational-Autoencoder-Modell an, das zur Kodierung der Bilddaten in den Latent-Raum verwendet werden soll. Er ist wesentlich für die Definition des Kodierungsmechanismus und der Eigenschaften der erzeugten Latent-Repräsentation. | VAE |
 
 ## Ausgaben

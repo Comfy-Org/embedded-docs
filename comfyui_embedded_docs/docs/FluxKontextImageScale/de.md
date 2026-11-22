@@ -6,7 +6,7 @@ Dieser Node skaliert das Eingabebild mithilfe des Lanczos-Algorithmus auf eine o
 
 | Parametername | Beschreibung | Datentyp | Eingabetyp | Standardwert | Wertebereich |
 | --- | --- | --- | --- | --- | --- |
-| `image` | Eingabebild, das in der Größe geändert werden soll | IMAGE | Erforderlich | - | - |
+| `Bild` | Eingabebild, das in der Größe geändert werden soll | IMAGE | Erforderlich | - | - |
 
 ## Ausgaben
 

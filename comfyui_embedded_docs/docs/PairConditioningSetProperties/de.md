@@ -10,9 +10,9 @@ Der **PairConditioningSetProperties**-Node ermöglicht es Ihnen, Eigenschaften s
 | `negative_NEW` | Die zu ändernde negative Conditioning-Eingabe | CONDITIONING | Ja | - |
 | `strength` | Der auf das Conditioning angewendete Stärkemultiplikator (Standard: 1.0) | FLOAT | Ja | 0.0 bis 10.0 |
 | `set_cond_area` | Bestimmt, wie der Conditioning-Bereich berechnet wird (Standard: "default") | STRING | Ja | "default"<br>"mask bounds" |
-| `mask` | Optionale Maske, um den Conditioning-Bereich einzuschränken | MASK | Nein | - |
-| `hooks` | Optionale Hook-Gruppe für erweiterte Conditioning-Änderungen | HOOKS | Nein | - |
-| `timesteps` | Optionaler Timestep-Bereich, um einzuschränken, wann das Conditioning angewendet wird | TIMESTEPS_RANGE | Nein | - |
+| `Maske` | Optionale Maske, um den Conditioning-Bereich einzuschränken | MASK | Nein | - |
+| `Hooks` | Optionale Hook-Gruppe für erweiterte Conditioning-Änderungen | HOOKS | Nein | - |
+| `Zeitschritte` | Optionaler Timestep-Bereich, um einzuschränken, wann das Conditioning angewendet wird | TIMESTEPS_RANGE | Nein | - |
 
 ## Ausgaben
 

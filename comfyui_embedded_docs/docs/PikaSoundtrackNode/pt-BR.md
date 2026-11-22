@@ -6,8 +6,8 @@ Este nó gera uma trilha sonora sincronizada para um vídeo com Pika. A imagem e
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `video` | O clipe para o qual criar uma trilha sonora. Até 10 minutos. | VIDEO | Sim | - |
-| `instruction` | Como o áudio deve ser: efeitos sonoros, ambiente, música ou estilo. Deixe vazio para derivá-lo da imagem. Padrão: "" (string vazia). | STRING | Sim | 0 a 10000 caracteres |
+| `vídeo` | O clipe para o qual criar uma trilha sonora. Até 10 minutos. | VIDEO | Sim | - |
+| `instrução` | Como o áudio deve ser: efeitos sonoros, ambiente, música ou estilo. Deixe vazio para derivá-lo da imagem. Padrão: "" (string vazia). | STRING | Sim | 0 a 10000 caracteres |
 | `seed` | Semente para amostragem. Padrão: 42. | INT | Sim | 0 a 2147483647 |
 
 **Restrições:**

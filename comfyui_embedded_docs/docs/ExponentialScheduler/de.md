@@ -6,7 +6,7 @@ Der `ExponentialScheduler`-Node ist darauf ausgelegt, eine Folge von Sigma-Werte
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `steps` | Gibt die Anzahl der Schritte im Diffusionsprozess an. Sie beeinflusst die Länge der erzeugten Sigma-Sequenz und somit die Granularität der Rauschanwendung. | INT |
+| `Schritte` | Gibt die Anzahl der Schritte im Diffusionsprozess an. Sie beeinflusst die Länge der erzeugten Sigma-Sequenz und somit die Granularität der Rauschanwendung. | INT |
 | `sigma_max` | Definiert den maximalen Sigma-Wert und legt die Obergrenze der Rauschintensität im Diffusionsprozess fest. Er spielt eine entscheidende Rolle bei der Bestimmung des Bereichs der angewendeten Rauschpegel. | FLOAT |
 | `sigma_min` | Legt den minimalen Sigma-Wert fest und etabliert die Untergrenze der Rauschintensität. Dieser Parameter hilft bei der Feinabstimmung des Startpunkts der Rauschanwendung. | FLOAT |
 

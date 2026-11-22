@@ -8,7 +8,7 @@ Dieser Node generiert ein 3D-Modell aus zwei bis vier Referenzbildern eines Obje
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Vorderansicht (0°). Erforderlich. | IMAGE | Ja | - |
+| `Bild` | Vorderansicht (0°). Erforderlich. | IMAGE | Ja | - |
 | `image_left` | Linke Ansicht (90°), d. h. die linke Seite des Subjekts. | IMAGE | Nein | - |
 | `image_back` | Hinteransicht (180°). | IMAGE | Nein | - |
 | `image_right` | Rechte Ansicht (270°), d. h. die rechte Seite des Subjekts. | IMAGE | Nein | - |

@@ -6,11 +6,11 @@ Creatify Aurora 2.0 Avatar transforma uma foto mais um clipe de fala ou música 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Foto da pessoa a ser animada. Pelo menos 256 pixels em cada lado e uma proporção de aspecto entre 1:4 e 4:1; o vídeo mantém a proporção de aspecto da foto. | IMAGE | Sim | - |
-| `audio` | Fala ou música que movimenta a boca e determina a duração do vídeo. Até 60 segundos, ou 14 segundos em `"2k"`; cobrado por segundo iniciado. | AUDIO | Sim | Até 60 segundos |
-| `resolution` | Resolução do vídeo de saída (padrão: `"720p"`). | COMBO | Sim | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"2k"` |
+| `imagem` | Foto da pessoa a ser animada. Pelo menos 256 pixels em cada lado e uma proporção de aspecto entre 1:4 e 4:1; o vídeo mantém a proporção de aspecto da foto. | IMAGE | Sim | - |
+| `áudio` | Fala ou música que movimenta a boca e determina a duração do vídeo. Até 60 segundos, ou 14 segundos em `"2k"`; cobrado por segundo iniciado. | AUDIO | Sim | Até 60 segundos |
+| `resolução` | Resolução do vídeo de saída (padrão: `"720p"`). | COMBO | Sim | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"2k"` |
 | `text_prompt` | Cena, câmera, iluminação, expressão ou movimento para a tomada. Vazio mantém a foto como está (padrão: string vazia). | STRING | Sim | Qualquer texto |
-| `seed` | A seed controla se o nó é executado novamente. Os resultados são não determinísticos independentemente da seed (padrão: 42). | INT | Sim | 0 a 2147483647 |
+| `semente` | A seed controla se o nó é executado novamente. Os resultados são não determinísticos independentemente da seed (padrão: 42). | INT | Sim | 0 a 2147483647 |
 
 **Restrições:** uma foto menor que 256 pixels em um dos lados, ou com proporção de aspecto fora de 1:4 a 4:1, gera um erro. Áudio mais longo que o limite para a resolução escolhida é rejeitado: 60 segundos normalmente e 14 segundos em `"2k"`.
 

@@ -6,7 +6,7 @@ Erzeugt Vorder-, linke, Rück- und rechte Ansichten des Motivs aus einem einzeln
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Quellbild des Motivs, aus dem Tripo die Vorder-, linken, Rück- und rechten Ansichten erzeugt. Es wird nur ein Bild für die Anfrage verwendet, selbst wenn ein Batch übergeben wird. | IMAGE | Ja | Einzelbild |
+| `Bild` | Das Quellbild des Motivs, aus dem Tripo die Vorder-, linken, Rück- und rechten Ansichten erzeugt. Es wird nur ein Bild für die Anfrage verwendet, selbst wenn ein Batch übergeben wird. | IMAGE | Ja | Einzelbild |
 
 Hinweis: Der Node ruft die Cloud-API von Tripo auf und wartet, bis die Generierungsaufgabe abgeschlossen ist. Eine typische Aufgabe dauert etwa 25 Sekunden. Die Authentifizierung wird automatisch über die versteckten Eingaben des Nodes abgewickelt, sodass kein Tripo-API-Schlüssel im Workflow angegeben werden muss. Der Node benötigt alle vier Ansichts-URLs in der Tripo-Antwort (`front_view_url`, `left_view_url`, `back_view_url`, `right_view_url`); wenn eine Ansicht fehlt, schlägt die Ausführung mit einem Fehler fehl.
 

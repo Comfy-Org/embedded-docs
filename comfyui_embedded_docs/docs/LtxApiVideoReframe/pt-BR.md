@@ -6,10 +6,10 @@ Reenquadra um vídeo para uma nova resolução e proporção de tela. A área fo
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `video` | Vídeo a ser reenquadrado, com até 60 segundos e 1800 quadros, com cada lado entre 64 e 4096 pixels. | VIDEO | Sim | - |
-| `resolution` | Tamanho da saída e proporção de tela, em 720p ou 1080p. Padrão: `"(1080p) 1080x1920 (9:16)"`. | COMBO | Sim | `"(720p) 720x720 (1:1)"`<br>`"(720p) 720x900 (4:5)"`<br>`"(720p) 900x720 (5:4)"`<br>`"(720p) 720x1280 (9:16)"`<br>`"(720p) 1280x720 (16:9)"`<br>`"(1080p) 1080x1080 (1:1)"`<br>`"(1080p) 1080x1350 (4:5)"`<br>`"(1080p) 1350x1080 (5:4)"`<br>`"(1080p) 1080x1920 (9:16)"`<br>`"(1080p) 1920x1080 (16:9)"` |
-| `placement` | Onde o vídeo original fica no novo quadro. O vídeo sempre preenche um lado do quadro, então uma âncora o move apenas ao longo do outro lado. Padrão: `"center"`. | DYNAMIC_COMBO | Sim | `"center"`<br>`"top"`<br>`"bottom"`<br>`"left"`<br>`"right"`<br>`"custom"` |
-| `seed` | Controla se o nó é executado novamente; os resultados são não determinísticos independentemente da semente. Padrão: 42. | INT | Não | 0 a 4294967295 |
+| `vídeo` | Vídeo a ser reenquadrado, com até 60 segundos e 1800 quadros, com cada lado entre 64 e 4096 pixels. | VIDEO | Sim | - |
+| `resolução` | Tamanho da saída e proporção de tela, em 720p ou 1080p. Padrão: `"(1080p) 1080x1920 (9:16)"`. | COMBO | Sim | `"(720p) 720x720 (1:1)"`<br>`"(720p) 720x900 (4:5)"`<br>`"(720p) 900x720 (5:4)"`<br>`"(720p) 720x1280 (9:16)"`<br>`"(720p) 1280x720 (16:9)"`<br>`"(1080p) 1080x1080 (1:1)"`<br>`"(1080p) 1080x1350 (4:5)"`<br>`"(1080p) 1350x1080 (5:4)"`<br>`"(1080p) 1080x1920 (9:16)"`<br>`"(1080p) 1920x1080 (16:9)"` |
+| `posicionamento` | Onde o vídeo original fica no novo quadro. O vídeo sempre preenche um lado do quadro, então uma âncora o move apenas ao longo do outro lado. Padrão: `"center"`. | DYNAMIC_COMBO | Sim | `"center"`<br>`"top"`<br>`"bottom"`<br>`"left"`<br>`"right"`<br>`"custom"` |
+| `semente` | Controla se o nó é executado novamente; os resultados são não determinísticos independentemente da semente. Padrão: 42. | INT | Não | 0 a 4294967295 |
 
 ### Entradas de posicionamento "custom"
 

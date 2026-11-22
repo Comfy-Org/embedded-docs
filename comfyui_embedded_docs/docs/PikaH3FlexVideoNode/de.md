@@ -6,14 +6,14 @@ Dieser Node erzeugt ein Video mit synchronisiertem Audio aus einem Text-Prompt, 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Was im Video passiert, einschließlich des gewünschten Tons. Darf nicht leer sein. Standard: "" (leere Zeichenkette). | STRING | Ja | 1 bis 8000 Zeichen |
-| `first_frame` | Optionales Bild, das als Anfangsbild verwendet wird. Wird es angeschlossen, läuft der Node als Bild-zu-Video statt als Text-zu-Video. | IMAGE | Nein | - |
-| `last_frame` | Optionales Bild, das als Schlussbild verwendet wird. Kann zusammen mit `first_frame` oder allein verwendet werden. | IMAGE | Nein | - |
-| `resolution` | Ausgabeauflösung. `"1080p"` und höher werden bei 768p gerendert und einmal hochskaliert. Derselbe Seed bei 480p ergibt ein anderes Video. Standard: `"768p"`. | COMBO | Ja | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
-| `aspect_ratio` | Seitenverhältnis der Ausgabe. `"auto"` folgt dem ersten angeschlossenen Bild, andernfalls dem Prompt. Standard: `"auto"`. | COMBO | Ja | `"auto"`<br>`"21:9"`<br>`"16:9"`<br>`"3:2"`<br>`"4:3"`<br>`"5:4"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"9:21"` |
-| `duration` | Clip-Länge in Sekunden. Die Ausgabelänge folgt einem Frame-Raster: 5 Sekunden ergeben 124 Frames, also etwa 5,17 Sekunden. Standard: 5. | INT | Ja | 5 bis 15 Sekunden |
-| `rewrite_prompt` | Lässt Pika den Prompt zuerst erweitern. Derselbe Seed ergibt dann bei jedem Lauf ein anderes Video. Standard: False. | BOOLEAN | Ja | true<br>false |
-| `seed` | Seed für die Stichprobenentnahme. Bei deaktiviertem `rewrite_prompt` wiederholt derselbe Seed das Video exakt, wobei ein lokaler Lauf mit demselben Seed ein anderes Ergebnis liefert. Standard: 42. | INT | Ja | 0 bis 2147483647 |
+| `Prompt` | Was im Video passiert, einschließlich des gewünschten Tons. Darf nicht leer sein. Standard: "" (leere Zeichenkette). | STRING | Ja | 1 bis 8000 Zeichen |
+| `erster Frame` | Optionales Bild, das als Anfangsbild verwendet wird. Wird es angeschlossen, läuft der Node als Bild-zu-Video statt als Text-zu-Video. | IMAGE | Nein | - |
+| `letzter Frame` | Optionales Bild, das als Schlussbild verwendet wird. Kann zusammen mit `first_frame` oder allein verwendet werden. | IMAGE | Nein | - |
+| `Auflösung` | Ausgabeauflösung. `"1080p"` und höher werden bei 768p gerendert und einmal hochskaliert. Derselbe Seed bei 480p ergibt ein anderes Video. Standard: `"768p"`. | COMBO | Ja | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
+| `Seitenverhältnis` | Seitenverhältnis der Ausgabe. `"auto"` folgt dem ersten angeschlossenen Bild, andernfalls dem Prompt. Standard: `"auto"`. | COMBO | Ja | `"auto"`<br>`"21:9"`<br>`"16:9"`<br>`"3:2"`<br>`"4:3"`<br>`"5:4"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"9:21"` |
+| `Dauer` | Clip-Länge in Sekunden. Die Ausgabelänge folgt einem Frame-Raster: 5 Sekunden ergeben 124 Frames, also etwa 5,17 Sekunden. Standard: 5. | INT | Ja | 5 bis 15 Sekunden |
+| `Prompt umschreiben` | Lässt Pika den Prompt zuerst erweitern. Derselbe Seed ergibt dann bei jedem Lauf ein anderes Video. Standard: False. | BOOLEAN | Ja | true<br>false |
+| `Seed` | Seed für die Stichprobenentnahme. Bei deaktiviertem `rewrite_prompt` wiederholt derselbe Seed das Video exakt, wobei ein lokaler Lauf mit demselben Seed ein anderes Ergebnis liefert. Standard: 42. | INT | Ja | 0 bis 2147483647 |
 
 **Einschränkungen:**
 

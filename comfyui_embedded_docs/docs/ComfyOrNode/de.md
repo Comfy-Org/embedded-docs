@@ -6,7 +6,7 @@ Der Or-Node führt eine logische ODER-Operation für eine Gruppe von Eingabewert
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `values` | Eine erweiterbare Sammlung von Werten, die auf ihren Truthiness-Wert geprüft werden. Jeder hinzugefügte Eingabe-Slot heißt `value_1`, `value_2` und so weiter. Der Node gibt `true` zurück, wenn mindestens einer dieser Werte truthy ist. | ANY | Ja | 1 oder mehr Werte |
+| `Werte` | Eine erweiterbare Sammlung von Werten, die auf ihren Truthiness-Wert geprüft werden. Jeder hinzugefügte Eingabe-Slot heißt `value_1`, `value_2` und so weiter. Der Node gibt `true` zurück, wenn mindestens einer dieser Werte truthy ist. | ANY | Ja | 1 oder mehr Werte |
 
 **Hinweis:** Der Node akzeptiert mindestens 1 Eingabewert. Sie können nach Bedarf mithilfe der Autogrow-Funktion weitere Eingaben hinzufügen.
 

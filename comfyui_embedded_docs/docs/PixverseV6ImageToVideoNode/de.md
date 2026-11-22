@@ -8,8 +8,8 @@ Dieser Node animiert ein Eingabebild mit dem PixVerse V6- oder V6-Max-Modell und
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Eingabebild, das animiert werden soll. | IMAGE | Ja | Einzelnes Bild |
-| `model` | Modell- und Generierungseinstellungen. | DYNAMIC_COMBO | Ja | "PixVerse V6"<br>"PixVerse V6 Max" |
+| `Bild` | Das Eingabebild, das animiert werden soll. | IMAGE | Ja | Einzelnes Bild |
+| `Modell` | Modell- und Generierungseinstellungen. | DYNAMIC_COMBO | Ja | "PixVerse V6"<br>"PixVerse V6 Max" |
 
 ### PixVerse V6 Eingaben
 

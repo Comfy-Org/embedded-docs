@@ -7,7 +7,7 @@ Wenden Sie einen Stapel von LoRAs in einem einzigen Node auf einen CLIP-Textenco
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `clip` | Der CLIP-Textencoder, auf den die LoRAs angewendet werden. | CLIP | Ja | - |
-| `loras` | Erweiterbare Gruppe von LoRAs, die in Zeilenreihenfolge auf den Textencoder angewendet werden (`loras.0`, `loras.1` usw.). Fügen Sie eine Zeile pro LoRA hinzu; jede Zeile enthält eine Datei, eine Stärke und einen Ein-/Aus-Schalter. | DYNAMIC_GROUP | Ja | 1 bis 20 Zeilen |
+| `LoRAs` | Erweiterbare Gruppe von LoRAs, die in Zeilenreihenfolge auf den Textencoder angewendet werden (`loras.0`, `loras.1` usw.). Fügen Sie eine Zeile pro LoRA hinzu; jede Zeile enthält eine Datei, eine Stärke und einen Ein-/Aus-Schalter. | DYNAMIC_GROUP | Ja | 1 bis 20 Zeilen |
 
 ### Felder der `loras`-Zeilen
 

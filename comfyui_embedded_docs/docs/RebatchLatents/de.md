@@ -6,7 +6,7 @@ Der Node RebatchLatents ist darauf ausgelegt, einen Batch latenter Repräsentati
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `latents` | Der Parameter `latents` stellt die latenten Eingaberepräsentationen dar, die neu gebatcht werden sollen. Er ist entscheidend für die Bestimmung der Struktur und des Inhalts des Ausgabe-Batches. | `LATENT` |
+| `Latents` | Der Parameter `latents` stellt die latenten Eingaberepräsentationen dar, die neu gebatcht werden sollen. Er ist entscheidend für die Bestimmung der Struktur und des Inhalts des Ausgabe-Batches. | `LATENT` |
 | `batch_size` | Der Parameter `batch_size` gibt die gewünschte Anzahl von Samples pro Batch in der Ausgabe an. Er beeinflusst direkt die Gruppierung und Aufteilung der Eingabe-Latents in neue Batches. | `INT` |
 
 ## Ausgaben

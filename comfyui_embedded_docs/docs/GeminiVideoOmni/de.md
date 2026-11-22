@@ -10,8 +10,8 @@ Erzeugen Sie mit dem Gemini Omni Flash-Modell von Google ein Video mit Audio aus
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das Gemini-Videomodell, das zum Generieren des Videos verwendet wird. | DYNAMIC_COMBO | Ja | "Omni Flash" |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 42). | INT | Ja | 0 bis 2147483647 |
+| `Modell` | Das Gemini-Videomodell, das zum Generieren des Videos verwendet wird. | DYNAMIC_COMBO | Ja | "Omni Flash" |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 42). | INT | Ja | 0 bis 2147483647 |
 
 ### Omni Flash Eingaben
 

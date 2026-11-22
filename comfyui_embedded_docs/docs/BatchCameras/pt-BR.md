@@ -6,7 +6,7 @@ Une câmeras e órbitas de câmera em uma única lista de câmeras, na ordem de 
 
 | Parâmetro | Descrição | Tipo de dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `cameras` | Slot expansível de câmeras, provenientes de Create Camera Info, Create Camera Orbit ou de um visualizador. Uma lista de câmeras conta como todas as câmeras nela. | AUTOGROW | Sim | 1 a 50 câmeras |
+| `câmeras` | Slot expansível de câmeras, provenientes de Create Camera Info, Create Camera Orbit ou de um visualizador. Uma lista de câmeras conta como todas as câmeras nela. | AUTOGROW | Sim | 1 a 50 câmeras |
 
 ## Saídas
 

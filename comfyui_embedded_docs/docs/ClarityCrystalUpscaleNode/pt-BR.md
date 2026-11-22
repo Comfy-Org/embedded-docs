@@ -8,7 +8,7 @@ Selecionar um `model` revela os parâmetros específicos desse modelo.
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a ser usado. Selecionar um modelo revela os parâmetros específicos dele: `image`, `scale_factor` e `creativity`. | DYNAMIC_COMBO | Sim | `"crystal-upscaler"` |
+| `modelo` | Modelo a ser usado. Selecionar um modelo revela os parâmetros específicos dele: `image`, `scale_factor` e `creativity`. | DYNAMIC_COMBO | Sim | `"crystal-upscaler"` |
 | `image` | A imagem a ser ampliada. Deve conter exatamente uma imagem; lotes de imagens não são suportados. | IMAGE | Sim | N/A |
 | `scale_factor` | Fator pelo qual multiplicar a largura e a altura da imagem. A saída é limitada a 100 megapixels (padrão: 2.0). | FLOAT | Sim | 1.0 a 200.0 (passo: 0.1) |
 | `creativity` | Valores mais altos permitem que o modelo reconstrua mais detalhes em vez de preservar estritamente o original. Não tem efeito em imagens cujo lado menor tenha 256 pixels ou menos (padrão: 0). | INT | Sim | 0 a 10 |

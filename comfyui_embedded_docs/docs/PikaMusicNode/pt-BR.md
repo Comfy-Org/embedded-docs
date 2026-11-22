@@ -6,7 +6,7 @@ Este nó gera música a partir de uma descrição textual e letras opcionais, ou
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `mode` | O que o nó faz: `"text to music"` escreve uma nova música; `"cover"` regrava uma música fornecida. Cada modo revela suas próprias entradas abaixo. Padrão: `"text to music"`. | DYNAMIC_COMBO | Sim | `"text to music"`<br>`"cover"` |
+| `modo` | O que o nó faz: `"text to music"` escreve uma nova música; `"cover"` regrava uma música fornecida. Cada modo revela suas próprias entradas abaixo. Padrão: `"text to music"`. | DYNAMIC_COMBO | Sim | `"text to music"`<br>`"cover"` |
 
 ### Entradas de Text to Music
 

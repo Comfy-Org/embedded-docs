@@ -6,8 +6,8 @@ Dieser Node entfernt den Hintergrund aus einem Video mithilfe des KI-Dienstes vo
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `video` | Das Eingabevideo, das verarbeitet werden soll. Das Video muss 60 Sekunden oder kürzer sein. | VIDEO | Ja | - |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0) | INT | Ja | 0 bis 2147483647 |
+| `Video` | Das Eingabevideo, das verarbeitet werden soll. Das Video muss 60 Sekunden oder kürzer sein. | VIDEO | Ja | - |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0) | INT | Ja | 0 bis 2147483647 |
 
 ## Ausgaben
 

@@ -6,7 +6,7 @@ Dieser Node erstellt einen strukturierten JSON-Prompt, der speziell für das Ide
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `element` | Prompt-Elemente vom Node Create Bounding Boxes. | ARRAY | Ja | - |
+| `Element` | Prompt-Elemente vom Node Create Bounding Boxes. | ARRAY | Ja | - |
 | `high_level_description` | Optionale Beschreibung des Bildes in ein bis zwei Sätzen. Sehr zu empfehlen. (Standard: leer) | STRING | Nein | - |
 | `background` | Obligatorische Beschreibung des Bildhintergrunds oder der Umgebung. Die Angabe eines Werts wird dringend empfohlen – der Node läuft mit einer leeren Zeichenkette, aber die Ergebnisse können unvorhersehbar sein. (Standard: leer) | STRING | Nein | - |
 | `style` | Die visuelle Stilkategorie für das generierte Bild. Wählen Sie eine der Optionen. (Standard: `"none"`) | COMBO | Ja | `"none"`<br>`"photo"`<br>`"art_style"` |

@@ -8,7 +8,7 @@ Der Start Loop-Node startet eine Schleifenstruktur innerhalb eines Workflows. Er
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `mode` | Der Iterationsmodus der Schleife (Standard: "simple"). Der ausgewählte Modus bestimmt, welche zusätzlichen Parameter angezeigt werden. | DYNAMIC_COMBO | Ja | `"simple"`<br>`"For"`<br>`"List"` |
+| `Modus` | Der Iterationsmodus der Schleife (Standard: "simple"). Der ausgewählte Modus bestimmt, welche zusätzlichen Parameter angezeigt werden. | DYNAMIC_COMBO | Ja | `"simple"`<br>`"For"`<br>`"List"` |
 | `cache_iterations` | Wiederverwendung unveränderter Iterationsergebnisse aus vorherigen Ausführungen. Deaktivieren, um jede Iteration erneut auszuführen. Standard: false. | BOOLEAN | Ja | true<br>false |
 | `parent_iteration` | Verbinden Sie iteration_index von einem äußeren Start Loop, um diese Schleife zu verschachteln. Dieser Eingang ist nur als Force-Input verfügbar (eine Verbindung ist erforderlich). | INT | Nein | Beliebige Ganzzahl |
 | `initial_iteration_value` | Wert, der in der ersten Iteration als current_iteration_value bereitgestellt wird. | ANY (type-matched) | Nein | Beliebiger Wert |

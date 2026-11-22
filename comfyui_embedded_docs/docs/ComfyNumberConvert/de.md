@@ -6,7 +6,7 @@ Der Node Number Convert wandelt verschiedene Eingabedatentypen in numerische Wer
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `value` | Der Wert, der in numerische Ausgaben umgewandelt werden soll. Akzeptiert eine Ganzzahl, eine Fließkommazahl, eine Zeichenkette oder einen Wahr/Falsch-Boolean. | INT, FLOAT, STRING, BOOLEAN | Ja | N/A |
+| `Wert` | Der Wert, der in numerische Ausgaben umgewandelt werden soll. Akzeptiert eine Ganzzahl, eine Fließkommazahl, eine Zeichenkette oder einen Wahr/Falsch-Boolean. | INT, FLOAT, STRING, BOOLEAN | Ja | N/A |
 
 **Hinweis:** Wenn die Eingabe eine Zeichenkette ist, darf sie nicht leer sein und muss eine gültige Darstellung einer Zahl enthalten (z. B. `"123"`, `"3.14"`). Der Node löst einen Fehler aus bei leeren Zeichenketten, Text, der nicht als Zahl interpretiert werden kann, oder Werten, die nicht endlich sind (wie `"inf"` oder `"nan"`). Bei Boolean-Eingaben wird `true` in 1.0 (FLOAT) und 1 (INT) umgewandelt, während `false` in 0.0 (FLOAT) und 0 (INT) umgewandelt wird. Bei FLOAT-Eingaben und bei Zeichenketten, die eine Dezimalzahl enthalten, wird die Ganzzahlausgabe durch Abschneiden des Dezimalanteils ermittelt.
 

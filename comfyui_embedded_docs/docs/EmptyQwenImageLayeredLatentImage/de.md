@@ -6,9 +6,9 @@ Empty Qwen Image Layered Latent bereitet die leere Leinwand vor, auf die das Qwe
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `width` | Die Breite des zu erstellenden Latent-Bildes. Der Wert muss durch 16 teilbar sein. (Standard: 640) | INT | Ja | 16 bis MAX_RESOLUTION (Schrittweite 16) |
-| `height` | Die Höhe des zu erstellenden Latent-Bildes. Der Wert muss durch 16 teilbar sein. (Standard: 640) | INT | Ja | 16 bis MAX_RESOLUTION (Schrittweite 16) |
-| `layers` | Wie viele Ebenen das Bild aufgeteilt werden soll. Ein zusätzlicher Bogen ist immer für das vollständige Bild reserviert, daher erhalten Sie `layers + 1` Bilder zurück, nicht `layers`. Setzen Sie ihn auf 2, erhalten Sie das vollständige Bild plus 2 Ebenen. Setzen Sie ihn auf 0, erhalten Sie nur das vollständige Bild. (Standard: 3) | INT | Ja | 0 bis MAX_RESOLUTION (Schrittweite 1) |
+| `Breite` | Die Breite des zu erstellenden Latent-Bildes. Der Wert muss durch 16 teilbar sein. (Standard: 640) | INT | Ja | 16 bis MAX_RESOLUTION (Schrittweite 16) |
+| `Höhe` | Die Höhe des zu erstellenden Latent-Bildes. Der Wert muss durch 16 teilbar sein. (Standard: 640) | INT | Ja | 16 bis MAX_RESOLUTION (Schrittweite 16) |
+| `Ebenen` | Wie viele Ebenen das Bild aufgeteilt werden soll. Ein zusätzlicher Bogen ist immer für das vollständige Bild reserviert, daher erhalten Sie `layers + 1` Bilder zurück, nicht `layers`. Setzen Sie ihn auf 2, erhalten Sie das vollständige Bild plus 2 Ebenen. Setzen Sie ihn auf 0, erhalten Sie nur das vollständige Bild. (Standard: 3) | INT | Ja | 0 bis MAX_RESOLUTION (Schrittweite 1) |
 | `batch_size` | Die Anzahl der in einem Batch zu erzeugenden Latent-Samples. (Standard: 1) | INT | Ja | 1 bis 4096 |
 
 **Hinweis:** Die Parameter `width` und `height` werden intern durch 8 geteilt, um die räumlichen Dimensionen des Ausgabe-Latent-Tensors zu bestimmen.

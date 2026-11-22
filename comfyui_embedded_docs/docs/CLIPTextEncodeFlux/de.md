@@ -9,7 +9,7 @@
 | `clip` | Ein CLIP-Modell, das die Flux-Architektur unterstützt, einschließlich der Encoder CLIP-L und T5XXL. | CLIP | Ja | - |
 | `clip_l` | Texteingabe, die vom CLIP-L-Encoder verarbeitet wird. Geeignet für prägnante Stichwortbeschreibungen, z. B. Stil oder Thema. Unterstützt mehrzeilige Eingaben und dynamische Prompts. | STRING | Ja | - |
 | `t5xxl` | Texteingabe, die vom T5XXL-Encoder verarbeitet wird. Geeignet für detaillierte Beschreibungen in natürlicher Sprache, die komplexe Szenen und Details ausdrücken. Unterstützt mehrzeilige Eingaben und dynamische Prompts. | STRING | Ja | - |
-| `guidance` | Steuert den Einfluss der Textkonditionen auf den Generierungsprozess. Höhere Werte bedeuten eine strengere Befolgung des Textes. Standard: 3.5. In Schritten von 0,1 einstellbar. | FLOAT | Ja | 0.0 - 100.0 |
+| `Guidance` | Steuert den Einfluss der Textkonditionen auf den Generierungsprozess. Höhere Werte bedeuten eine strengere Befolgung des Textes. Standard: 3.5. In Schritten von 0,1 einstellbar. | FLOAT | Ja | 0.0 - 100.0 |
 
 ## Ausgaben
 

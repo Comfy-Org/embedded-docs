@@ -6,12 +6,12 @@ Der Node CropByBBoxes extrahiert und skaliert bestimmte rechteckige Bereiche aus
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `image` | Der Eingabe-Bildstapel, aus dem zugeschnitten werden soll. | IMAGE | Ja | - |
-| `bboxes` | Die Liste der Bounding-Boxen, die die zuzuschneidenden Bereiche definieren. Dieser Eingang ist obligatorisch, d. h. er muss verbunden werden. | BOUNDINGBOX | Ja | - |
-| `output_width` | Die Breite, auf die jeder Ausschnitt skaliert wird (Standard: 512). | INT | Nein | 64 - 4096 |
-| `output_height` | Die Höhe, auf die jeder Ausschnitt skaliert wird (Standard: 512). | INT | Nein | 64 - 4096 |
-| `padding` | Zusätzliches Padding in Pixeln, das vor dem Zuschneiden auf jeder Seite der Bounding-Box hinzugefügt wird (Standard: 0). | INT | Nein | 0 - 1024 |
-| `keep_aspect` | Ob der Ausschnitt gestreckt werden soll, um in die Ausgabegröße zu passen, oder ob er mit schwarzen Pixeln aufgefüllt werden soll, um sein Seitenverhältnis beizubehalten (Standard: "stretch"). | COMBO | Nein | `"stretch"`<br>`"pad"` |
+| `Bild` | Der Eingabe-Bildstapel, aus dem zugeschnitten werden soll. | IMAGE | Ja | - |
+| `Bounding Boxes` | Die Liste der Bounding-Boxen, die die zuzuschneidenden Bereiche definieren. Dieser Eingang ist obligatorisch, d. h. er muss verbunden werden. | BOUNDINGBOX | Ja | - |
+| `Ausgabebreite` | Die Breite, auf die jeder Ausschnitt skaliert wird (Standard: 512). | INT | Nein | 64 - 4096 |
+| `Ausgabehöhe` | Die Höhe, auf die jeder Ausschnitt skaliert wird (Standard: 512). | INT | Nein | 64 - 4096 |
+| `Innenabstand` | Zusätzliches Padding in Pixeln, das vor dem Zuschneiden auf jeder Seite der Bounding-Box hinzugefügt wird (Standard: 0). | INT | Nein | 0 - 1024 |
+| `Seitenverhältnis beibehalten` | Ob der Ausschnitt gestreckt werden soll, um in die Ausgabegröße zu passen, oder ob er mit schwarzen Pixeln aufgefüllt werden soll, um sein Seitenverhältnis beizubehalten (Standard: "stretch"). | COMBO | Nein | `"stretch"`<br>`"pad"` |
 
 **Hinweis:** Der Node verarbeitet jeweils ein Einzelbild. Wenn für ein einzelnes Einzelbild mehrere Bounding-Boxen bereitgestellt werden, berechnet er einen einzelnen Zuschneidebereich, der die Vereinigung (das kleinste Rechteck, das alle Boxen enthält) aller bereitgestellten Boxen ist. Wenn ein berechneter Zuschneidebereich ungültig ist (z. B. Breite oder Höhe von null), erstellt der Node einen Fallback-Zuschnitt von der oberen Mitte des Bildes.
 

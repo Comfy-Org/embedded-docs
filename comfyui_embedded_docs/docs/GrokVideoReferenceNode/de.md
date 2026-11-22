@@ -8,9 +8,9 @@ Der Grok Reference-to-Video-Node erzeugt aus einem Text-Prompt ein Video und ver
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das Modell, das für die Videogenerierung verwendet werden soll. | DYNAMIC_COMBO | Ja | `"grok-imagine-video-1.5"`<br>`"grok-imagine-video"` |
-| `prompt` | Textbeschreibung des gewünschten Videos. Muss eine nicht leere Zeichenkette sein. | STRING | Ja | N/A |
-| `seed` | Seed, der bestimmt, ob der Node erneut ausgeführt wird; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 bis 2147483647 |
+| `Modell` | Das Modell, das für die Videogenerierung verwendet werden soll. | DYNAMIC_COMBO | Ja | `"grok-imagine-video-1.5"`<br>`"grok-imagine-video"` |
+| `Prompt` | Textbeschreibung des gewünschten Videos. Muss eine nicht leere Zeichenkette sein. | STRING | Ja | N/A |
+| `Seed` | Seed, der bestimmt, ob der Node erneut ausgeführt wird; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 bis 2147483647 |
 
 ### Grok Imagine Video 1.5 Eingaben
 

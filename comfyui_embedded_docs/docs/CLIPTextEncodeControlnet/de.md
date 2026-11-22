@@ -7,8 +7,8 @@ Der Node CLIP Text Encode (Controlnet) kodiert einen Text-Prompt mit einem CLIP-
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `clip` | Das CLIP-Modell, das für die Text-Tokenisierung und -Kodierung verwendet wird | CLIP | Ja | - |
-| `conditioning` | Vorhandene Conditioning-Daten, die mit der CLIP-Textkodierung kombiniert werden sollen | CONDITIONING | Ja | - |
-| `text` | Der Text-Prompt, der vom CLIP-Modell verarbeitet werden soll. Unterstützt mehrzeiligen Text und dynamische Prompts | STRING | Ja | - |
+| `Konditionierung` | Vorhandene Conditioning-Daten, die mit der CLIP-Textkodierung kombiniert werden sollen | CONDITIONING | Ja | - |
+| `Text` | Der Text-Prompt, der vom CLIP-Modell verarbeitet werden soll. Unterstützt mehrzeiligen Text und dynamische Prompts | STRING | Ja | - |
 
 **Hinweis:** Alle drei Eingaben (`clip`, `conditioning` und `text`) sind erforderlich, damit dieser Node funktioniert. Die Eingabe `text` unterstützt mehrzeiligen Text und dynamische Prompts für eine flexible Textverarbeitung. Dieser Node ist im Quellcode als experimentell gekennzeichnet.
 

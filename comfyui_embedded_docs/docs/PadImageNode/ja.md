@@ -6,7 +6,7 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `image` | パディングする画像です。 | IMAGE | はい | - |
+| `画像` | パディングする画像です。 | IMAGE | はい | - |
 | `padding_type` | 追加するパディング量の指定方法です。各辺の正確な量には `"pad dimensions"`、入力に対する出力サイズには `"pad by multiplier"`、次の倍数に到達させるには `"pad to multiple"` を指定します。オプションを選択すると、そのパラメータが表示されます。 | DYNAMIC_COMBO | はい | `"pad dimensions"`<br>`"pad by multiplier"`<br>`"pad to multiple"` |
 | `left` | 左側に追加するピクセル数です。`padding_type` が `"pad dimensions"` のときに使用できます（デフォルト: 0）。 | INT | はい | 0 〜 16384 |
 | `top` | 上側に追加するピクセル数です。`padding_type` が `"pad dimensions"` のときに使用できます（デフォルト: 0）。 | INT | はい | 0 〜 16384 |

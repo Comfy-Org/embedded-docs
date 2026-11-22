@@ -6,8 +6,8 @@ O Pruna P-Video Upscale amplia um vídeo para 720p, 1080p, 2K ou 4K, mantendo su
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `video` | Vídeo a ser ampliado, até 512 MiB. Vídeos maiores que 10 megapixels só podem ser enviados para o alvo 2K ou 4K. | VIDEO | Sim | Até 512 MiB |
-| `target` | Área de pixels da saída: 720p tem cerca de 0,9 megapixel, 1080p 2,1, 2K 3,7 e 4K 8,3. O clipe mais longo é limitado pelo alvo: 2400, 1200, 600 ou 300 quadros, cerca de 100, 50, 25 ou 12,5 segundos a 24 fps (padrão: "1080p"). | COMBO | Sim | "720p"<br>"1080p"<br>"2K"<br>"4K" |
+| `vídeo` | Vídeo a ser ampliado, até 512 MiB. Vídeos maiores que 10 megapixels só podem ser enviados para o alvo 2K ou 4K. | VIDEO | Sim | Até 512 MiB |
+| `destino` | Área de pixels da saída: 720p tem cerca de 0,9 megapixel, 1080p 2,1, 2K 3,7 e 4K 8,3. O clipe mais longo é limitado pelo alvo: 2400, 1200, 600 ou 300 quadros, cerca de 100, 50, 25 ou 12,5 segundos a 24 fps (padrão: "1080p"). | COMBO | Sim | "720p"<br>"1080p"<br>"2K"<br>"4K" |
 | `fps` | Taxa de quadros da saída (padrão: "source"). "source" mantém a taxa do vídeo, até 60; uma taxa maior é interpolada. Saída acima de 30 fps custa o dobro. | COMBO | Sim | "source"<br>"16"<br>"24"<br>"25"<br>"30"<br>"48"<br>"50"<br>"60" |
 | `turbo` | Ampliação mais rápida com detalhes mais suaves, pelo mesmo preço (padrão: false). | BOOLEAN | Não | true<br>false |
 

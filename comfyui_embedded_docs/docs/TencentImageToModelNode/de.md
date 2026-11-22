@@ -15,7 +15,7 @@ Dieser Node verwendet die Hunyuan3D Pro API von Tencent, um aus einem oder mehre
 | `generate_type` | Der Typ des zu generierenden 3D-Modells. Die Auswahl einer Option blendet zusätzliche zugehörige Parameter ein. | DYNAMICCOMBO | Ja | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
 | `generate_type.pbr` | Aktiviert die Generierung von Materialien mit Physically Based Rendering (PBR). Dieser Parameter ist nur sichtbar, wenn `generate_type` auf "Normal" oder "LowPoly" gesetzt ist (Standard: False). | BOOLEAN | Nein | - |
 | `generate_type.polygon_type` | Der Typ des Polygons, das für das Mesh verwendet werden soll. Dieser Parameter ist nur sichtbar, wenn `generate_type` auf "LowPoly" gesetzt ist. | COMBO | Nein | `"triangle"`<br>`"quadrilateral"` |
-| `seed` | Ein Seed-Wert für den Generierungsprozess. Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 - 2147483647 |
+| `Seed` | Ein Seed-Wert für den Generierungsprozess. Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 - 2147483647 |
 
 **Hinweis:** Alle Eingabebilder müssen eine Mindestbreite und -höhe von 128 Pixeln haben. Bilder werden automatisch herunterskaliert, wenn sie auf ihrer längsten Seite 4900 Pixel überschreiten.
 

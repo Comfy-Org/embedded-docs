@@ -6,9 +6,9 @@ Der Node ImageScaleToTotalPixels dient dazu, Bilder auf eine angegebene Gesamtza
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `image` | Das Eingabebild, das auf die angegebene Gesamtzahl von Pixeln hochskaliert werden soll. | `IMAGE` |
-| `upscale_method` | Die Methode, die zum Hochskalieren des Bildes verwendet wird. Sie beeinflusst die Qualität und die Eigenschaften des hochskalierten Bildes. | COMBO[STRING] |
-| `megapixels` | Die Zielgröße des Bildes in Megapixeln. Diese bestimmt die Gesamtzahl der Pixel im hochskalierten Bild. | `FLOAT` |
+| `Bild` | Das Eingabebild, das auf die angegebene Gesamtzahl von Pixeln hochskaliert werden soll. | `IMAGE` |
+| `Upscale-Methode` | Die Methode, die zum Hochskalieren des Bildes verwendet wird. Sie beeinflusst die Qualität und die Eigenschaften des hochskalierten Bildes. | COMBO[STRING] |
+| `Megapixel` | Die Zielgröße des Bildes in Megapixeln. Diese bestimmt die Gesamtzahl der Pixel im hochskalierten Bild. | `FLOAT` |
 
 ## Ausgaben
 

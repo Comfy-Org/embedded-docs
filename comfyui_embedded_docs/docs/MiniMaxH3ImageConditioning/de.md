@@ -8,10 +8,10 @@ Wandelt einen Prompt mit MiniMax H3 Image in eine Konditionierung und ein leeres
 | --- | --- | --- | --- | --- |
 | `clip` | Das CLIP-Modell MiniMax H3 Image, das den Prompt mit etwaigen Referenzbildern tokenisiert und die Konditionierung kodiert. | CLIP | Ja | - |
 | `vae` | Die VAE von MiniMax H3 Image. Damit werden die Bilder außerdem als Referenz-Latents verankert; ohne sie konditionieren sie nur den Textencoder. | VAE | Nein | - |
-| `prompt` | Was generiert oder wie die Referenzbilder bearbeitet werden sollen. | STRING | Ja | Mehrzeiliger Text |
-| `width` | Ausgabebreite in Pixeln. 0 verwendet die Breite von `image_1` nach dessen Referenzskalierung oder 2048 ohne Bilder. Standard: 0. | INT | Ja | 0 bis MAX_RESOLUTION (Schritt 32) |
-| `height` | Ausgabehöhe in Pixeln. 0 verwendet die Höhe von `image_1` nach dessen Referenzskalierung oder 2048 ohne Bilder. Standard: 0. | INT | Ja | 0 bis MAX_RESOLUTION (Schritt 32) |
-| `images` | Erweiterbare Gruppe von Referenzbildern, beginnend mit `image_1`; `image_1` ist das zu bearbeitende Bild. Der Prompt spricht sie als `<Picture n>` an. | AUTOGROW | Nein | 0 bis 100 Bilder |
+| `Prompt` | Was generiert oder wie die Referenzbilder bearbeitet werden sollen. | STRING | Ja | Mehrzeiliger Text |
+| `Breite` | Ausgabebreite in Pixeln. 0 verwendet die Breite von `image_1` nach dessen Referenzskalierung oder 2048 ohne Bilder. Standard: 0. | INT | Ja | 0 bis MAX_RESOLUTION (Schritt 32) |
+| `Höhe` | Ausgabehöhe in Pixeln. 0 verwendet die Höhe von `image_1` nach dessen Referenzskalierung oder 2048 ohne Bilder. Standard: 0. | INT | Ja | 0 bis MAX_RESOLUTION (Schritt 32) |
+| `Bilder` | Erweiterbare Gruppe von Referenzbildern, beginnend mit `image_1`; `image_1` ist das zu bearbeitende Bild. Der Prompt spricht sie als `<Picture n>` an. | AUTOGROW | Nein | 0 bis 100 Bilder |
 
 ## Ausgaben
 

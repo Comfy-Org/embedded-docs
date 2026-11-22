@@ -6,7 +6,7 @@ Este nó gera um SVG editável a partir de um prompt de texto com o Ideogram Vec
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a usar. Padrão: `"ideogram-vector-1"`. | DYNAMIC_COMBO | Sim | `"ideogram-vector-1"` |
+| `modelo` | Modelo a usar. Padrão: `"ideogram-vector-1"`. | DYNAMIC_COMBO | Sim | `"ideogram-vector-1"` |
 | `images` | Imagens de referência opcionais. A imagem 1 é a fonte principal e as imagens 2 a 5 são referências extras; mencione-as no prompt como `@Image1`, `@Image2` e assim por diante. Uma entrada em lote conta uma vez por imagem. | AUTOGROW | Não | 0 a 5 imagens |
 | `prompt` | Descrição do SVG. Suporta referências no estilo `@Image1` às imagens de entrada. | STRING | Sim | 1 a 9500 caracteres |
 | `aspect_ratio` | `"auto"` segue a imagem 1 ou o prompt quando nenhuma imagem está conectada. Padrão: `"auto"`. | COMBO | Sim | `"auto"`<br>`"1:3"`<br>`"1:2"`<br>`"9:16"`<br>`"10:16"`<br>`"2:3"`<br>`"3:4"`<br>`"4:5"`<br>`"1:1"`<br>`"5:4"`<br>`"4:3"`<br>`"3:2"`<br>`"16:10"`<br>`"16:9"`<br>`"2:1"`<br>`"3:1"` |

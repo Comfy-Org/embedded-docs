@@ -6,7 +6,7 @@ Wählt eine vorgestellte Breeze-Stimme oder eine beliebige Breeze-Stimmen-ID aus
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `language` | Sprachgruppe der vorgestellten Stimmen oder `custom`, um eine ID einzugeben. Standard: `"English"`. | DYNAMIC_COMBO | Ja | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
+| `Sprache` | Sprachgruppe der vorgestellten Stimmen oder `custom`, um eine ID einzugeben. Standard: `"English"`. | DYNAMIC_COMBO | Ja | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
 
 ### Eingaben für Sprache "English", "Chinese" und "Japanese"
 

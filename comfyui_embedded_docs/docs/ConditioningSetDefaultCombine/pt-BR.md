@@ -7,7 +7,7 @@ Este nó combina uma entrada de condicionamento primária com uma entrada de con
 | Parâmetro | Descrição | Tipo de Dados | Tipo de Entrada | Padrão | Faixa |
 | --- | --- | --- | --- | --- | --- |
 | `cond` | A entrada de condicionamento primária a ser processada e combinada | CONDITIONING | Obrigatório | - | - |
-| `cond_DEFAULT` | Os dados de condicionamento padrão a serem combinados com o condicionamento primário | CONDITIONING | Obrigatório | - | - |
+| `cond_PADRÃO` | Os dados de condicionamento padrão a serem combinados com o condicionamento primário | CONDITIONING | Obrigatório | - | - |
 | `hooks` | Configuração opcional de ganchos que controla como os dados de condicionamento são processados e combinados | HOOKS | Opcional | - | - |
 
 ## Saídas

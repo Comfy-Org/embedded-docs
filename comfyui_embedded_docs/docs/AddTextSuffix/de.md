@@ -7,7 +7,7 @@ Dieser Node hängt ein angegebenes Suffix an das Ende einer Eingabetextzeichenfo
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `text` | Der Originaltext, an den das Suffix angehängt wird. | STRING | Ja |  |
-| `suffix` | Das Suffix, das an den Text angehängt wird (Standard: ""). | STRING | Nein |  |
+| `Suffix` | Das Suffix, das an den Text angehängt wird (Standard: ""). | STRING | Nein |  |
 
 ## Ausgaben
 

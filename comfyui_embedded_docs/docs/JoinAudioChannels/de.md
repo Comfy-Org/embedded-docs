@@ -6,8 +6,8 @@ Der Node „Join Audio Channels“ kombiniert zwei separate Mono-Audioeingänge 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `audio_left` | Die Mono-Audiodaten, die als linker Kanal im resultierenden Stereo-Audio verwendet werden. | AUDIO | Ja |  |
-| `audio_right` | Die Mono-Audiodaten, die als rechter Kanal im resultierenden Stereo-Audio verwendet werden. | AUDIO | Ja |  |
+| `Audio links` | Die Mono-Audiodaten, die als linker Kanal im resultierenden Stereo-Audio verwendet werden. | AUDIO | Ja |  |
+| `Audio rechts` | Die Mono-Audiodaten, die als rechter Kanal im resultierenden Stereo-Audio verwendet werden. | AUDIO | Ja |  |
 
 **Hinweis:** Beide Eingabe-Audiostreams müssen mono (einkanalig) sein. Wenn sie unterschiedliche Abtastraten haben, wird der Kanal mit der niedrigeren Rate automatisch neu abgetastet, um sie an die höhere Rate anzupassen. Wenn die Audiostreams unterschiedliche Längen haben, werden sie auf die Länge des kürzeren gekürzt.
 

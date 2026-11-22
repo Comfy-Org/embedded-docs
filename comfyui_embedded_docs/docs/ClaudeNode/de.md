@@ -10,10 +10,10 @@ Die Eingaben sind in gemeinsame Einstellungen, modellspezifische Einstellungen, 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `model` | Das Claude-Modell, das zum Generieren der Antwort verwendet wird. Durch Auswahl eines Modells werden unten modellspezifische Einstellungen eingeblendet. | DYNAMIC_COMBO | Ja | `"Opus 5.5"`<br>`"Opus 5"`<br>`"Opus 4.8"`<br>`"Fable 5.2"`<br>`"Fable 5.1"`<br>`"Fable 5"`<br>`"Sonnet 5.5"`<br>`"Sonnet 5"`<br>`"Opus 4.7"`<br>`"Opus 4.6"`<br>`"Sonnet 4.6"`<br>`"Haiku 4.5"` |
-| `prompt` | Texteingabe für das Modell. (Standard: leerer String) | STRING | Ja | N/A |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
-| `system_prompt` | Grundlegende Anweisungen, die das Verhalten des Modells bestimmen. (Standard: leerer String) | STRING | Nein | N/A |
+| `Modell` | Das Claude-Modell, das zum Generieren der Antwort verwendet wird. Durch Auswahl eines Modells werden unten modellspezifische Einstellungen eingeblendet. | DYNAMIC_COMBO | Ja | `"Opus 5.5"`<br>`"Opus 5"`<br>`"Opus 4.8"`<br>`"Fable 5.2"`<br>`"Fable 5.1"`<br>`"Fable 5"`<br>`"Sonnet 5.5"`<br>`"Sonnet 5"`<br>`"Opus 4.7"`<br>`"Opus 4.6"`<br>`"Sonnet 4.6"`<br>`"Haiku 4.5"` |
+| `Prompt` | Texteingabe für das Modell. (Standard: leerer String) | STRING | Ja | N/A |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
+| `System-Prompt` | Grundlegende Anweisungen, die das Verhalten des Modells bestimmen. (Standard: leerer String) | STRING | Nein | N/A |
 
 ### Opus 5.5, Opus 5, Fable 5.2, Fable 5.1 und Fable 5 Eingaben
 
@@ -58,7 +58,7 @@ Dieses Modell bietet keine `reasoning_effort`-Einstellung.
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `images` | Optionale(s) Bild(er), die als Kontext für das Modell verwendet werden. Bis zu 20 Bilder. Erweiterbarer Slot: 1 bis 20 Elemente verbinden (`image_1` ... `image_20`). | IMAGE | Nein | 0 bis 20 Bilder |
+| `Bilder` | Optionale(s) Bild(er), die als Kontext für das Modell verwendet werden. Bis zu 20 Bilder. Erweiterbarer Slot: 1 bis 20 Elemente verbinden (`image_1` ... `image_20`). | IMAGE | Nein | 0 bis 20 Bilder |
 
 ### Parametereinschränkungen
 

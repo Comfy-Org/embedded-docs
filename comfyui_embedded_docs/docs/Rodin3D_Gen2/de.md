@@ -6,7 +6,7 @@ Der Node Rodin3D_Gen2 erzeugt 3D-Assets mithilfe der Rodin-API. Er nimmt Eingabe
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `Images` | Eingabebilder für die 3D-Modellgenerierung. Akzeptiert 1 bis 5 Bilder. | IMAGE | Ja | - |
+| `Bilder` | Eingabebilder für die 3D-Modellgenerierung. Akzeptiert 1 bis 5 Bilder. | IMAGE | Ja | - |
 | `Seed` | Zufälliger Seed-Wert für die Generierung (Standard: 0) | INT | Nein | 0-65535 |
 | `Material_Type` | Typ des Materials, das auf das 3D-Modell angewendet werden soll (Standard: "PBR") | COMBO | Nein | "PBR"<br>"Shaded" |
 | `Polygon_count` | Ziel-Polygonanzahl und Mesh-Typ für das generierte 3D-Modell. "Quad"-Optionen verwenden quad-basierte Meshes, "Triangle"-Optionen verwenden dreiecksbasierte Meshes (Standard: "500K-Triangle") | COMBO | Nein | "4K-Quad"<br>"8K-Quad"<br>"18K-Quad"<br>"50K-Quad"<br>"2K-Triangle"<br>"20K-Triangle"<br>"150K-Triangle"<br>"500K-Triangle" |

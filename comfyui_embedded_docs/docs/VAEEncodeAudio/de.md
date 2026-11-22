@@ -6,7 +6,7 @@ Der Node VAE Encode Audio wandelt Audiodaten mithilfe eines Variational Autoenco
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `audio` | Die zu kodierenden Audiodaten, die Wellenform- und Abtastrateninformationen enthalten | AUDIO | Ja | - |
+| `Audio` | Die zu kodierenden Audiodaten, die Wellenform- und Abtastrateninformationen enthalten | AUDIO | Ja | - |
 | `vae` | Das Variational-Autoencoder-Modell, das verwendet wird, um das Audio in den latenten Raum zu kodieren | VAE | Ja | - |
 
 **Hinweis:** Die Audioeingabe wird automatisch neu abgetastet, um der erwarteten Abtastrate des VAE zu entsprechen (Standard: 44100 Hz), wenn die ursprüngliche Abtastrate von diesem Wert abweicht. Wenn die Audioeingabe None ist (zum Beispiel, wenn das Quellvideo keine Audiospur enthält), löst der Node einen Fehler aus.

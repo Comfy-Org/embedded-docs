@@ -6,8 +6,8 @@ Der FreSca-Node wendet während des Sampling-Prozesses eine frequenzabhängige S
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Modell, auf das die Frequenzskalierung angewendet werden soll | MODEL | Ja | - |
-| `scale_low` | Skalierungsfaktor für niederfrequente Komponenten (Standard: 1.0) | FLOAT | Nein | 0 - 10 |
+| `Modell` | Das Modell, auf das die Frequenzskalierung angewendet werden soll | MODEL | Ja | - |
+| `Skalierung niedrig` | Skalierungsfaktor für niederfrequente Komponenten (Standard: 1.0) | FLOAT | Nein | 0 - 10 |
 | `scale_high` | Skalierungsfaktor für hochfrequente Komponenten (Standard: 1.25) | FLOAT | Nein | 0 - 10 |
 | `freq_cutoff` | Anzahl der Frequenzindizes um die Mitte, die als niederfrequent betrachtet werden (Standard: 20) | INT | Nein | 1 - 10000 |
 

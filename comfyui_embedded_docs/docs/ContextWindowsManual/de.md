@@ -6,12 +6,12 @@ Der Node Context Windows (Manual) ermöglicht es Ihnen, Kontextfenster für ein 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Modell, auf das während des Samplings Kontextfenster angewendet werden. | MODEL | Ja | - |
-| `context_length` | Die Länge des Kontextfensters (Standard: 16). | INT | Ja | 1+ |
-| `context_overlap` | Die Überlappung des Kontextfensters (Standard: 4). | INT | Ja | 0+ |
-| `context_schedule` | Schrittabhängiger Scheduling-Algorithmus für Kontextfenster (Standard: STATIC_STANDARD). | COMBO | Ja | `STATIC_STANDARD`<br>`UNIFORM_STANDARD`<br>`UNIFORM_LOOPED`<br>`BATCHED` |
-| `context_stride` | Die Schrittweite des Kontextfensters; nur für uniforme Schedules anwendbar (Standard: 1). | INT | Ja | 1+ |
-| `closed_loop` | Ob die Kontextfensterschleife geschlossen werden soll; nur für geloopte Schedules anwendbar (Standard: False). | BOOLEAN | Ja | - |
+| `Modell` | Das Modell, auf das während des Samplings Kontextfenster angewendet werden. | MODEL | Ja | - |
+| `Kontextlänge` | Die Länge des Kontextfensters (Standard: 16). | INT | Ja | 1+ |
+| `Kontextüberlappung` | Die Überlappung des Kontextfensters (Standard: 4). | INT | Ja | 0+ |
+| `Kontextzeitplan` | Schrittabhängiger Scheduling-Algorithmus für Kontextfenster (Standard: STATIC_STANDARD). | COMBO | Ja | `STATIC_STANDARD`<br>`UNIFORM_STANDARD`<br>`UNIFORM_LOOPED`<br>`BATCHED` |
+| `Kontextschrittweite` | Die Schrittweite des Kontextfensters; nur für uniforme Schedules anwendbar (Standard: 1). | INT | Ja | 1+ |
+| `Geschlossene Schleife` | Ob die Kontextfensterschleife geschlossen werden soll; nur für geloopte Schedules anwendbar (Standard: False). | BOOLEAN | Ja | - |
 | `fuse_method` | Die Methode zum Fusionieren der Kontextfenster (Standard: PYRAMID). | COMBO | Ja | Statische Fuse-Methoden (siehe `ContextFuseMethods.LIST_STATIC`) |
 | `dim` | Die Dimension, auf die die Kontextfenster angewendet werden (Standard: 0). | INT | Ja | 0-5 |
 | `freenoise` | Ob FreeNoise-Noise-Shuffling angewendet werden soll; verbessert die Fenstermischung (Standard: False). | BOOLEAN | Ja | - |

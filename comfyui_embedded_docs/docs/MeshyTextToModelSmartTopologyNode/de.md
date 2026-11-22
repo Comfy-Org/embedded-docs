@@ -6,11 +6,11 @@ Dieser Node erzeugt mit Meshy T2.5 ein spielfertiges Dreiecksnetz mit einer Ziel
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Die Meshy-Modellversion, die für die Generierung verwendet wird. | COMBO | Ja | `"meshy-t2.5"` |
-| `prompt` | Die Textbeschreibung des zu generierenden 3D-Modells. | STRING | Ja | 1 bis 800 Zeichen |
-| `target_polycount` | Ungefähre Anzahl der Dreiecke im generierten Mesh. Standard: 15000. | INT | Ja | 100 bis 30000 |
-| `pose_mode` | Die Pose des generierten Charakters. Eine leere Zeichenkette fordert keine bestimmte Pose an. Dies ist eine erweiterte Einstellung. Standard: `""` (leere Zeichenkette). | COMBO | Ja | `""`<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Ja | 0 bis 2147483647 |
+| `Modell` | Die Meshy-Modellversion, die für die Generierung verwendet wird. | COMBO | Ja | `"meshy-t2.5"` |
+| `Prompt` | Die Textbeschreibung des zu generierenden 3D-Modells. | STRING | Ja | 1 bis 800 Zeichen |
+| `Ziel-Polycount` | Ungefähre Anzahl der Dreiecke im generierten Mesh. Standard: 15000. | INT | Ja | 100 bis 30000 |
+| `Pose-Modus` | Die Pose des generierten Charakters. Eine leere Zeichenkette fordert keine bestimmte Pose an. Dies ist eine erweiterte Einstellung. Standard: `""` (leere Zeichenkette). | COMBO | Ja | `""`<br>`"A-pose"`<br>`"T-pose"` |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Ja | 0 bis 2147483647 |
 
 **Einschränkungen:**
 

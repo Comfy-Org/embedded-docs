@@ -6,13 +6,13 @@ Konditionieren Sie FLUX.2 Klein 9B mit dem UltraTex LoRA, um das Erscheinungsbil
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Textkonditionierung. UltraTex wurde mit einem leeren Prompt trainiert. | CONDITIONING | Ja | - |
+| `Konditionierung` | Textkonditionierung. UltraTex wurde mit einem leeren Prompt trainiert. | CONDITIONING | Ja | - |
 | `vae` | VAE, die zum Kodieren der Normalen, der Ansichten und der Referenz verwendet wird. | VAE | Ja | - |
-| `normals` | Render-Mesh-Bilder im Modus `world normal`: die 6 kanonischen Ansichten oder die 4 Seitenansichten. | IMAGE | Ja | - |
-| `masks` | Render-Mesh-Masken derselben Ansichten, eine pro Ansicht. | MASK | Ja | - |
-| `reference` | Das Objekt so, wie es aussehen soll, aus Sicht der Frontkamera. | IMAGE | Ja | - |
-| `reference_mask` | Objektmaske der Referenz, weiß für das Objekt. Standard: vollständig weiß. | MASK | Nein | - |
-| `extra_views` | Weitere Referenzen: das Objekt aus den anderen Ansichten, jede an ihre Ansicht gebunden, so wie die Referenz an die Front gebunden ist. Standard: `"off"`. | DYNAMIC_COMBO | Ja | `"off"`<br>`"on"` |
+| `Normalen` | Render-Mesh-Bilder im Modus `world normal`: die 6 kanonischen Ansichten oder die 4 Seitenansichten. | IMAGE | Ja | - |
+| `Masken` | Render-Mesh-Masken derselben Ansichten, eine pro Ansicht. | MASK | Ja | - |
+| `Referenz` | Das Objekt so, wie es aussehen soll, aus Sicht der Frontkamera. | IMAGE | Ja | - |
+| `Referenzmaske` | Objektmaske der Referenz, weiß für das Objekt. Standard: vollständig weiß. | MASK | Nein | - |
+| `Zusätzliche Ansichten` | Weitere Referenzen: das Objekt aus den anderen Ansichten, jede an ihre Ansicht gebunden, so wie die Referenz an die Front gebunden ist. Standard: `"off"`. | DYNAMIC_COMBO | Ja | `"off"`<br>`"on"` |
 
 ### Zusätzliche Ansichten "on" Eingaben
 

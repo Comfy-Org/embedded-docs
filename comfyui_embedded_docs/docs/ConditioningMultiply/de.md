@@ -7,7 +7,7 @@ Dieser Node multipliziert die Konditionierungswerte mit einem angegebenen Faktor
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
 | `conditioning` | Die zu skalierenden Konditionierungsdaten | CONDITIONING | Ja | - |
-| `multiplier` | Der Faktor, mit dem die Konditionierungswerte multipliziert werden (Standard: 1.0) | FLOAT | Ja | -100.0 bis 100.0 (Schritt: 0.01) |
+| `Multiplikator` | Der Faktor, mit dem die Konditionierungswerte multipliziert werden (Standard: 1.0) | FLOAT | Ja | -100.0 bis 100.0 (Schritt: 0.01) |
 
 ## Ausgaben
 

@@ -8,24 +8,24 @@ Erzeugt aus einem Text-Prompt ein Low-Poly-3D-Modell mit sauberer Topologie unte
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Zu verwendendes Modell der Tripo P-Serie. Wenn Sie ein Modell auswählen, werden unten dessen eigene Eingaben angezeigt. | DYNAMIC_COMBO | Ja | `"P2"` |
+| `Modell` | Zu verwendendes Modell der Tripo P-Serie. Wenn Sie ein Modell auswählen, werden unten dessen eigene Eingaben angezeigt. | DYNAMIC_COMBO | Ja | `"P2"` |
 
 ### P2 Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Textbeschreibung des zu erzeugenden 3D-Modells. Darf nicht leer sein, bis zu 1024 Zeichen (Standard: leer). | STRING | Ja | Bis zu 1024 Zeichen |
-| `model.negative_prompt` | Textbeschreibung dessen, was im erzeugten Modell vermieden werden soll (Standard: leer). | STRING | Nein | Bis zu 255 Zeichen |
-| `model.quad` | Gibt statt eines Dreiecksnetzes auf der GLB-Ausgabe ein quad-dominantes Netz auf der FBX-Ausgabe zurück (Standard: False). | BOOLEAN | Ja | True/False |
-| `model.face_limit` | Zielanzahl der Flächen. `-1` lässt Tripo wählen. Wenn `model.quad` aktiviert ist, liegt das Limit bei 48 bis 25.000, andernfalls bei 48 bis 50.000 (Standard: -1). | INT | Ja | -1 oder 48 bis 50000 |
-| `model.texture` | Auflösung der Basisfarbtextur: standard ist 2K, detailed 4K und extreme 8K. `"none"` gibt ein untexturiertes Netz zurück (Standard: `"standard"`). | COMBO | Ja | `"standard"`<br>`"detailed"`<br>`"extreme"`<br>`"none"` |
-| `model.pbr` | Fügt der Basisfarbe Metallic-, Rauheits- und Normal-Maps hinzu. Wird ignoriert, wenn `model.texture` auf `"none"` gesetzt ist (Standard: True). | BOOLEAN | Ja | True/False |
-| `model.model_seed` | Seed für die Geometrie (Standard: 42). | INT | Ja | 0 bis 2147483647 |
-| `model.image_seed` | Seed für das Bild, das Tripo vor der Modellierung aus dem Prompt erzeugt (Standard: 42). Erweiterte Einstellung. | INT | Ja | 0 bis 2147483647 |
-| `model.texture_seed` | Seed für die Texturen (Standard: 42). Erweiterte Einstellung. | INT | Ja | 0 bis 2147483647 |
-| `model.auto_size` | Skaliert das Modell über seine Szenentransformation auf seine reale Größe in Metern. Wird ignoriert, wenn `model.texture` auf `"none"` gesetzt ist (Standard: False). Erweiterte Einstellung. | BOOLEAN | Ja | True/False |
-| `model.export_uv` | Führt ein UV-Unwrap des Netzes durch, wenn es untexturiert ist. Texturierte Netze werden immer entfaltet (Standard: True). Erweiterte Einstellung. | BOOLEAN | Ja | True/False |
-| `model.compress_geometry` | Wendet meshopt-Geometriekompression an: deutlich kleinere Dateien, aber die 3D-Vorschau von ComfyUI kann sie nicht anzeigen. Wird bei Quad-Netzen ignoriert (Standard: False). Erweiterte Einstellung. | BOOLEAN | Ja | True/False |
+| `Prompt` | Textbeschreibung des zu erzeugenden 3D-Modells. Darf nicht leer sein, bis zu 1024 Zeichen (Standard: leer). | STRING | Ja | Bis zu 1024 Zeichen |
+| `negative_prompt` | Textbeschreibung dessen, was im erzeugten Modell vermieden werden soll (Standard: leer). | STRING | Nein | Bis zu 255 Zeichen |
+| `quad` | Gibt statt eines Dreiecksnetzes auf der GLB-Ausgabe ein quad-dominantes Netz auf der FBX-Ausgabe zurück (Standard: False). | BOOLEAN | Ja | True/False |
+| `face_limit` | Zielanzahl der Flächen. `-1` lässt Tripo wählen. Wenn `model.quad` aktiviert ist, liegt das Limit bei 48 bis 25.000, andernfalls bei 48 bis 50.000 (Standard: -1). | INT | Ja | -1 oder 48 bis 50000 |
+| `Textur` | Auflösung der Basisfarbtextur: standard ist 2K, detailed 4K und extreme 8K. `"none"` gibt ein untexturiertes Netz zurück (Standard: `"standard"`). | COMBO | Ja | `"standard"`<br>`"detailed"`<br>`"extreme"`<br>`"none"` |
+| `pbr` | Fügt der Basisfarbe Metallic-, Rauheits- und Normal-Maps hinzu. Wird ignoriert, wenn `model.texture` auf `"none"` gesetzt ist (Standard: True). | BOOLEAN | Ja | True/False |
+| `model_seed` | Seed für die Geometrie (Standard: 42). | INT | Ja | 0 bis 2147483647 |
+| `image_seed` | Seed für das Bild, das Tripo vor der Modellierung aus dem Prompt erzeugt (Standard: 42). Erweiterte Einstellung. | INT | Ja | 0 bis 2147483647 |
+| `texture_seed` | Seed für die Texturen (Standard: 42). Erweiterte Einstellung. | INT | Ja | 0 bis 2147483647 |
+| `auto_size` | Skaliert das Modell über seine Szenentransformation auf seine reale Größe in Metern. Wird ignoriert, wenn `model.texture` auf `"none"` gesetzt ist (Standard: False). Erweiterte Einstellung. | BOOLEAN | Ja | True/False |
+| `export_uv` | Führt ein UV-Unwrap des Netzes durch, wenn es untexturiert ist. Texturierte Netze werden immer entfaltet (Standard: True). Erweiterte Einstellung. | BOOLEAN | Ja | True/False |
+| `compress_geometry` | Wendet meshopt-Geometriekompression an: deutlich kleinere Dateien, aber die 3D-Vorschau von ComfyUI kann sie nicht anzeigen. Wird bei Quad-Netzen ignoriert (Standard: False). Erweiterte Einstellung. | BOOLEAN | Ja | True/False |
 
 **Hinweise:**
 

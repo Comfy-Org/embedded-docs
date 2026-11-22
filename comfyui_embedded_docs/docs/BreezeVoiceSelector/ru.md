@@ -6,7 +6,7 @@
 
 | Параметр | Описание | Тип данных | Обязательный | Диапазон |
 | --- | --- | --- | --- | --- |
-| `language` | Языковая группа представленных голосов или `custom` для ввода идентификатора. По умолчанию: `"English"`. | DYNAMIC_COMBO | Да | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
+| `язык` | Языковая группа представленных голосов или `custom` для ввода идентификатора. По умолчанию: `"English"`. | DYNAMIC_COMBO | Да | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
 
 ### Входы для языков "English", "Chinese" и "Japanese"
 

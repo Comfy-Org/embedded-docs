@@ -6,13 +6,13 @@ Wählen Sie eine Ihrer eigenen Optionen für den Text, die Bilder, das Audio ode
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Zu verwendendes Modell. `heygen-decision-1-turbo` ist schneller und kostengünstiger als `heygen-decision-1` (Standard: `"heygen-decision-1"`). | COMBO | Ja | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | Die Frage, die die Optionen beantworten, bis zu 5000 Zeichen (Standard: "What style is the image?"). | STRING | Ja | 1 bis 5000 Zeichen |
-| `options` | Eine Option pro Zeile, genau wie eingegeben verwendet, jeweils bis zu 128 Zeichen. Fügen Sie eine Option wie `other` für Eingaben hinzu, die zu keiner der Optionen passen (Standard: `photo`, `illustration`, `3d render`, `anime`, `sketch`, `other`). | STRING | Ja | 2 bis 255 Optionen |
-| `images` | Zu klassifizierende Bilder, insgesamt bis zu 4, wobei jedes Frame eines Batches gezählt wird. Sie werden über die Sockets hinweg in der Reihenfolge von `image_1` bis `image_4` nummeriert. | IMAGE | Nein | Bis zu 4 Bilder |
-| `audio_1` | Zu klassifizierendes Audio, bis zu 30 Minuten. | AUDIO | Nein | Bis zu 30 Minuten |
-| `video_1` | Zu klassifizierendes Video, bis zu 60 Sekunden. | VIDEO | Nein | Bis zu 60 Sekunden |
-| `text` | Text, auf den sich die Frage bezieht, z. B. ein Prompt oder eine LLM-Antwort, bis zu 20000 Zeichen. | STRING | Nein | Bis zu 20000 Zeichen |
+| `Modell` | Zu verwendendes Modell. `heygen-decision-1-turbo` ist schneller und kostengünstiger als `heygen-decision-1` (Standard: `"heygen-decision-1"`). | COMBO | Ja | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
+| `Frage` | Die Frage, die die Optionen beantworten, bis zu 5000 Zeichen (Standard: "What style is the image?"). | STRING | Ja | 1 bis 5000 Zeichen |
+| `Optionen` | Eine Option pro Zeile, genau wie eingegeben verwendet, jeweils bis zu 128 Zeichen. Fügen Sie eine Option wie `other` für Eingaben hinzu, die zu keiner der Optionen passen (Standard: `photo`, `illustration`, `3d render`, `anime`, `sketch`, `other`). | STRING | Ja | 2 bis 255 Optionen |
+| `Bilder` | Zu klassifizierende Bilder, insgesamt bis zu 4, wobei jedes Frame eines Batches gezählt wird. Sie werden über die Sockets hinweg in der Reihenfolge von `image_1` bis `image_4` nummeriert. | IMAGE | Nein | Bis zu 4 Bilder |
+| `Audio_1` | Zu klassifizierendes Audio, bis zu 30 Minuten. | AUDIO | Nein | Bis zu 30 Minuten |
+| `Video_1` | Zu klassifizierendes Video, bis zu 60 Sekunden. | VIDEO | Nein | Bis zu 60 Sekunden |
+| `Text` | Text, auf den sich die Frage bezieht, z. B. ein Prompt oder eine LLM-Antwort, bis zu 20000 Zeichen. | STRING | Nein | Bis zu 20000 Zeichen |
 
 Geben Sie 2 bis 255 Optionen an, keine davon doppelt und keine, die sich nur in der Groß-/Kleinschreibung unterscheiden, da der Node sonst einen Fehler auslöst. Verbinden Sie mindestens eine zu klassifizierende Eingabe und benennen Sie sie innerhalb der Frage über den Socket, zum Beispiel „Welche Jahreszeit ist auf image_1 zu sehen?“.
 

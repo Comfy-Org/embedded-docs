@@ -8,7 +8,7 @@ Der Fish Audio Voice Selector-Node wählt eine Stimme aus der Fish Audio-Bibliot
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `voice` | Wählen Sie eine Stimme oder 'custom', um eine beliebige fish.audio Voice-Modell-ID einzugeben. | DYNAMIC_COMBO | Ja | "Energetic Male (en)"<br>"Friendly Women (en)"<br>"Sarah (en)"<br>"Verity (en)"<br>"Polo (en)"<br>"Adrian (en)"<br>"E-girl (en)"<br>"Narrator (en)"<br>"Warm Conversational Voice (en)"<br>"Warm Storyteller (en)"<br>"Dramatic Character Male (en)"<br>"News Narrator (zh)"<br>"Lively Female (zh)"<br>"Gentle Female (zh)"<br>"Energetic Female (ja)"<br>"Calm Female (ja)"<br>"Calm Male (ja)"<br>"custom" |
+| `Stimme` | Wählen Sie eine Stimme oder 'custom', um eine beliebige fish.audio Voice-Modell-ID einzugeben. | DYNAMIC_COMBO | Ja | "Energetic Male (en)"<br>"Friendly Women (en)"<br>"Sarah (en)"<br>"Verity (en)"<br>"Polo (en)"<br>"Adrian (en)"<br>"E-girl (en)"<br>"Narrator (en)"<br>"Warm Conversational Voice (en)"<br>"Warm Storyteller (en)"<br>"Dramatic Character Male (en)"<br>"News Narrator (zh)"<br>"Lively Female (zh)"<br>"Gentle Female (zh)"<br>"Energetic Female (ja)"<br>"Calm Female (ja)"<br>"Calm Male (ja)"<br>"custom" |
 
 Die voreingestellten Stimmenoptionen decken Englisch (en), Chinesisch (zh) und Japanisch (ja) ab und erfordern keine zusätzlichen Eingaben.
 

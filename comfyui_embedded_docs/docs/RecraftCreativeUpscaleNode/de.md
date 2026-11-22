@@ -6,7 +6,7 @@ Der Node Recraft Creative Upscale Image verbessert ein Rasterbild, indem er sein
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Eingabebild, das hochskaliert werden soll. | IMAGE | Ja | |
+| `Bild` | Das Eingabebild, das hochskaliert werden soll. | IMAGE | Ja | |
 
 ## Ausgaben
 

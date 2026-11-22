@@ -6,14 +6,14 @@ Dieser Node erzeugt aus einem Startbild ein Video in professioneller Qualität m
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Erstes Einzelbild, das für das Video verwendet werden soll. | IMAGE | Ja | Genau ein Bild |
-| `model` | Gruppe der Modelleinstellungen. Wählt die zu verwendende LTX 2.5-Modellvariante aus. | COMBO | Ja | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
-| `model.duration` | Länge des generierten Videos in Sekunden. | INT | Ja | Ganzzahl |
-| `model.resolution` | Auflösung des generierten Videos. Die verfügbaren Optionen können vom ausgewählten Modell abhängen. | COMBO | Ja | "1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840" |
-| `model.fps` | Bildrate des generierten Videos. | INT | Ja | Ganzzahl (Standard: 25) |
-| `model.generate_audio` | Ob Audio für das Video generiert werden soll. | BOOLEAN | Ja | True<br>False (Standard: True) |
-| `prompt` | Textbeschreibung des zu generierenden Videoinhalts. Muss zwischen 1 und 10000 Zeichen lang sein. | STRING | Ja | 1 bis 10000 Zeichen |
-| `seed` | Seed-Wert für die reproduzierbare Generierung. Die Verwendung desselben Seeds mit denselben Einstellungen erzeugt dasselbe Ergebnis. | INT | Ja | Ganzzahl (Standard: 42) |
+| `Bild` | Erstes Einzelbild, das für das Video verwendet werden soll. | IMAGE | Ja | Genau ein Bild |
+| `Modell` | Gruppe der Modelleinstellungen. Wählt die zu verwendende LTX 2.5-Modellvariante aus. | COMBO | Ja | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
+| `Dauer` | Länge des generierten Videos in Sekunden. | INT | Ja | Ganzzahl |
+| `Auflösung` | Auflösung des generierten Videos. Die verfügbaren Optionen können vom ausgewählten Modell abhängen. | COMBO | Ja | "1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840" |
+| `fps` | Bildrate des generierten Videos. | INT | Ja | Ganzzahl (Standard: 25) |
+| `generate_audio` | Ob Audio für das Video generiert werden soll. | BOOLEAN | Ja | True<br>False (Standard: True) |
+| `Prompt` | Textbeschreibung des zu generierenden Videoinhalts. Muss zwischen 1 und 10000 Zeichen lang sein. | STRING | Ja | 1 bis 10000 Zeichen |
+| `Seed` | Seed-Wert für die reproduzierbare Generierung. Die Verwendung desselben Seeds mit denselben Einstellungen erzeugt dasselbe Ergebnis. | INT | Ja | Ganzzahl (Standard: 42) |
 | `last_frame` | Letztes Einzelbild, das für das Video verwendet werden soll. | IMAGE | Nein | Genau ein Bild |
 
 **Hinweis:** Für `image` wird nur ein Bild unterstützt. Wenn `last_frame` angegeben wird, muss es ebenfalls genau ein Bild enthalten. Die verfügbaren Optionen für `model.resolution` können je nach ausgewählter `model`-Variante variieren. Der Preis eines Durchlaufs hängt vom ausgewählten `model`, `model.duration` und `model.resolution` ab.

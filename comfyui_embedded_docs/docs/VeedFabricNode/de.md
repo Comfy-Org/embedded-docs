@@ -6,7 +6,7 @@ Verwandeln Sie ein Standbild und eine Sprachspur mit VEED Fabric in ein sprechen
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Zu verwendendes Modell. Wenn Sie ein Modell auswählen, werden die zugehörigen Parameter eingeblendet: `image`, `audio` und `resolution`. | DYNAMIC_COMBO | Ja | `"fabric-1.0"` |
+| `Modell` | Zu verwendendes Modell. Wenn Sie ein Modell auswählen, werden die zugehörigen Parameter eingeblendet: `image`, `audio` und `resolution`. | DYNAMIC_COMBO | Ja | `"fabric-1.0"` |
 | `image` | Bild mit einem deutlich sichtbaren Gesicht. Das Video behält das Seitenverhältnis des Bildes bei. | IMAGE | Ja | - |
 | `audio` | Sprachaufnahme, auf die lippensynchronisiert werden soll, bis zu 300 Sekunden. Legt die Videolänge fest. | AUDIO | Ja | Bis zu 300 Sekunden |
 | `resolution` | Ausgabegrößenklasse: etwa 0,4 Megapixel bei `"480p"` (864x480 bei 16:9) und 0,9 Megapixel bei `"720p"` (1312x736 bei 16:9). (Standard: `"720p"`) | COMBO | Ja | `"480p"`<br>`"720p"` |

@@ -7,15 +7,15 @@ Der Node StableZero123_Conditioning_Batched bereitet Conditioning-Daten für die
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `clip_vision` | Das CLIP-Vision-Modell, das zum Kodieren des Eingabebilds verwendet wird | CLIP_VISION | Ja | - |
-| `init_image` | Das anfängliche Eingabebild, das verarbeitet und kodiert werden soll | IMAGE | Ja | - |
+| `Startbild` | Das anfängliche Eingabebild, das verarbeitet und kodiert werden soll | IMAGE | Ja | - |
 | `vae` | Das VAE-Modell, das zum Kodieren von Bildpixeln in den Latent-Raum verwendet wird | VAE | Ja | - |
-| `width` | Die Ausgabebreite für das verarbeitete Bild (Standard: 256) | INT | Ja | 16 bis MAX_RESOLUTION (Schrittweite 8) |
-| `height` | Die Ausgabehöhe für das verarbeitete Bild (Standard: 256) | INT | Ja | 16 bis MAX_RESOLUTION (Schrittweite 8) |
-| `batch_size` | Die Anzahl der Conditioning-Samples, die im Batch generiert werden sollen (Standard: 1) | INT | Ja | 1 bis 4096 |
-| `elevation` | Der anfängliche Kamera-Elevationswinkel in Grad (Standard: 0.0) | FLOAT | Ja | -180.0 bis 180.0 (Schrittweite 0.1) |
-| `azimuth` | Der anfängliche Kamera-Azimutwinkel in Grad (Standard: 0.0) | FLOAT | Ja | -180.0 bis 180.0 (Schrittweite 0.1) |
-| `elevation_batch_increment` | Der Betrag, um den die Elevation für jedes Batch-Element erhöht wird (Standard: 0.0). Als erweiterte Eingabe markiert. | FLOAT | Ja | -180.0 bis 180.0 (Schrittweite 0.1) |
-| `azimuth_batch_increment` | Der Betrag, um den der Azimut für jedes Batch-Element erhöht wird (Standard: 0.0). Als erweiterte Eingabe markiert. | FLOAT | Ja | -180.0 bis 180.0 (Schrittweite 0.1) |
+| `Breite` | Die Ausgabebreite für das verarbeitete Bild (Standard: 256) | INT | Ja | 16 bis MAX_RESOLUTION (Schrittweite 8) |
+| `Höhe` | Die Ausgabehöhe für das verarbeitete Bild (Standard: 256) | INT | Ja | 16 bis MAX_RESOLUTION (Schrittweite 8) |
+| `Batchgröße` | Die Anzahl der Conditioning-Samples, die im Batch generiert werden sollen (Standard: 1) | INT | Ja | 1 bis 4096 |
+| `Höhenwinkel` | Der anfängliche Kamera-Elevationswinkel in Grad (Standard: 0.0) | FLOAT | Ja | -180.0 bis 180.0 (Schrittweite 0.1) |
+| `Azimut` | Der anfängliche Kamera-Azimutwinkel in Grad (Standard: 0.0) | FLOAT | Ja | -180.0 bis 180.0 (Schrittweite 0.1) |
+| `Höhenwinkel-Batchinkrement` | Der Betrag, um den die Elevation für jedes Batch-Element erhöht wird (Standard: 0.0). Als erweiterte Eingabe markiert. | FLOAT | Ja | -180.0 bis 180.0 (Schrittweite 0.1) |
+| `Azimut-Batchinkrement` | Der Betrag, um den der Azimut für jedes Batch-Element erhöht wird (Standard: 0.0). Als erweiterte Eingabe markiert. | FLOAT | Ja | -180.0 bis 180.0 (Schrittweite 0.1) |
 
 **Hinweis:** Die Werte für `width` und `height` müssen Vielfache von 8 sein, da der Node diese Dimensionen beim Aufbau des Latent-Tensors intern durch 8 teilt.
 

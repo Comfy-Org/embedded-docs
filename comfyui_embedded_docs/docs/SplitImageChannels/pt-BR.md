@@ -6,7 +6,7 @@ Divide uma imagem em seus canais vermelho, verde e azul e retorna o canal alfa c
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `image` | A imagem a ser dividida. Uma entrada de canal único (escala de cinza) é expandida para que todas as três saídas de cor carreguem os mesmos dados. | IMAGE | Sim | - |
+| `imagem` | A imagem a ser dividida. Uma entrada de canal único (escala de cinza) é expandida para que todas as três saídas de cor carreguem os mesmos dados. | IMAGE | Sim | - |
 
 ## Saídas
 

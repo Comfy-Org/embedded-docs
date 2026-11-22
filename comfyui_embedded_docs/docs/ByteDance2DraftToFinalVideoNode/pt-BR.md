@@ -8,7 +8,7 @@ Este nó renderiza o vídeo final de um Seedance 2.5 Draft em 1080p ou 4k. Um dr
 | --- | --- | --- | --- | --- |
 | `draft_task_id` | A saída `draft_task_id` de um nó Seedance 2.5 executado com o modelo Seedance 2.5 Draft, ou um ID de tarefa de draft colado. Ao executar novamente o nó produtor, defina seu controle de seed como fixo, caso contrário, a próxima execução gerará um novo draft em vez de reutilizar o que você revisou. | STRING | Sim | - |
 | `watermark` | Se deve adicionar uma marca d'água ao vídeo. O padrão é False. Esta é uma configuração avançada. | BOOLEAN | Não | True ou False |
-| `resolution` | Resolução do vídeo final. Para 4k, use exatamente o valor em minúsculas `"4k"`. Padrão: `"1080p"`. | COMBO | Não | `"1080p"`<br>`"4k"` |
+| `resolução` | Resolução do vídeo final. Para 4k, use exatamente o valor em minúsculas `"4k"`. Padrão: `"1080p"`. | COMBO | Não | `"1080p"`<br>`"4k"` |
 
 ## Saídas
 

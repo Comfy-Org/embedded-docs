@@ -7,10 +7,10 @@ Erstellt ein Kamera-Rig um das Ziel der ersten Kamera: standardmäßig ein Turnt
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `camera_info` | Erste Kamera des Orbits. Bei einer Kameraliste wird jede darin enthaltene Kamera umkreist. | LOAD3D_CAMERA | Ja | - |
-| `count` | Kameras, gleichmäßig entlang des Sweeps verteilt. Standard: 4. | INT | Ja | 1 bis 64 |
-| `yaw` | Gesamtdrehung um das Ziel, in der Yaw-Richtung von Create Camera Info. Vollständige Drehungen enden einen Schritt vor der ersten Kamera; andere Sweeps enden an der letzten Kamera. Standard: 360.0. | FLOAT | Ja | -720.0 bis 720.0 (Schritt 1.0) |
-| `pitch` | Gesamtneigung über dem Ziel, positiv ansteigend wie der Pitch von Create Camera Info; über 90 hinaus passieren die Kameras die Oberseite. Vollständige Drehungen laufen wie `yaw` in einer Schleife. Standard: 0.0. | FLOAT | Ja | -720.0 bis 720.0 (Schritt 1.0) |
-| `poles` | Ansichten direkt nach unten und/oder oben auf das Ziel, nach dem Orbit hinzugefügt. Ihre Bildoberseite zeigt von der ersten Kamera weg. Standard: `"none"`. | COMBO | Ja | `"none"`<br>`"top"`<br>`"bottom"`<br>`"top and bottom"` |
+| `Anzahl` | Kameras, gleichmäßig entlang des Sweeps verteilt. Standard: 4. | INT | Ja | 1 bis 64 |
+| `Yaw` | Gesamtdrehung um das Ziel, in der Yaw-Richtung von Create Camera Info. Vollständige Drehungen enden einen Schritt vor der ersten Kamera; andere Sweeps enden an der letzten Kamera. Standard: 360.0. | FLOAT | Ja | -720.0 bis 720.0 (Schritt 1.0) |
+| `Pitch` | Gesamtneigung über dem Ziel, positiv ansteigend wie der Pitch von Create Camera Info; über 90 hinaus passieren die Kameras die Oberseite. Vollständige Drehungen laufen wie `yaw` in einer Schleife. Standard: 0.0. | FLOAT | Ja | -720.0 bis 720.0 (Schritt 1.0) |
+| `Pole` | Ansichten direkt nach unten und/oder oben auf das Ziel, nach dem Orbit hinzugefügt. Ihre Bildoberseite zeigt von der ersten Kamera weg. Standard: `"none"`. | COMBO | Ja | `"none"`<br>`"top"`<br>`"bottom"`<br>`"top and bottom"` |
 
 ## Ausgaben
 

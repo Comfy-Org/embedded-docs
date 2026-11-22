@@ -8,9 +8,9 @@ Erzeugt ein Video basierend auf einem Text-Prompt unter Verwendung des HappyHors
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das für die Generierung verwendete HappyHorse-Modell zusammen mit seinen Unterparametern. Die Auswahl eines Modells bestimmt, welche Unterparameter verfügbar sind (siehe die Modellabschnitte unten). | DYNAMIC_COMBO | Ja | "happyhorse-1.1-t2v"<br>"happyhorse-1.0-t2v" |
-| `seed` | Seed für die Generierung. Die Verwendung desselben Seeds mit denselben Eingaben führt zum selben Ergebnis. (Standard: 0). | INT | Ja | 0 bis 2147483647 |
-| `watermark` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll. (Standard: False). | BOOLEAN | Ja | True / False |
+| `Modell` | Das für die Generierung verwendete HappyHorse-Modell zusammen mit seinen Unterparametern. Die Auswahl eines Modells bestimmt, welche Unterparameter verfügbar sind (siehe die Modellabschnitte unten). | DYNAMIC_COMBO | Ja | "happyhorse-1.1-t2v"<br>"happyhorse-1.0-t2v" |
+| `Seed` | Seed für die Generierung. Die Verwendung desselben Seeds mit denselben Eingaben führt zum selben Ergebnis. (Standard: 0). | INT | Ja | 0 bis 2147483647 |
+| `Wasserzeichen` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll. (Standard: False). | BOOLEAN | Ja | True / False |
 
 ### happyhorse-1.1-t2v Eingaben
 

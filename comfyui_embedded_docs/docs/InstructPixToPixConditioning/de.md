@@ -6,10 +6,10 @@ Der InstructPixToPixConditioning-Node bereitet Konditionierungsdaten für die In
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `positive` | Positive Konditionierungsdaten, die Text-Prompts und Einstellungen für gewünschte Bildeigenschaften enthalten | CONDITIONING | Ja | - |
-| `negative` | Negative Konditionierungsdaten, die Text-Prompts und Einstellungen für unerwünschte Bildeigenschaften enthalten | CONDITIONING | Ja | - |
+| `positiv` | Positive Konditionierungsdaten, die Text-Prompts und Einstellungen für gewünschte Bildeigenschaften enthalten | CONDITIONING | Ja | - |
+| `negativ` | Negative Konditionierungsdaten, die Text-Prompts und Einstellungen für unerwünschte Bildeigenschaften enthalten | CONDITIONING | Ja | - |
 | `vae` | VAE-Modell, das zum Kodieren von Eingabebildern in latente Repräsentationen verwendet wird | VAE | Ja | - |
-| `pixels` | Eingabebild, das verarbeitet und in den latenten Raum kodiert werden soll | IMAGE | Ja | - |
+| `Pixel` | Eingabebild, das verarbeitet und in den latenten Raum kodiert werden soll | IMAGE | Ja | - |
 
 **Hinweis:** Die Abmessungen des Eingabebildes werden automatisch durch mittiges Zuschneiden auf Vielfache von 8 Pixeln sowohl in der Breite als auch in der Höhe angepasst, um die Kompatibilität mit dem VAE-Kodierungsprozess sicherzustellen.
 

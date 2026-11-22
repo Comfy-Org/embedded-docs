@@ -6,7 +6,7 @@ Dieser Node erzeugt mit Pika Musik aus einer Textbeschreibung und optionalem Son
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `mode` | Was der Node tut: `"text to music"` schreibt einen neuen Song, `"cover"` nimmt einen bereitgestellten Song neu auf. Jeder Modus blendet unten seine eigenen Eingaben ein. Standard: `"text to music"`. | DYNAMIC_COMBO | Ja | `"text to music"`<br>`"cover"` |
+| `Modus` | Was der Node tut: `"text to music"` schreibt einen neuen Song, `"cover"` nimmt einen bereitgestellten Song neu auf. Jeder Modus blendet unten seine eigenen Eingaben ein. Standard: `"text to music"`. | DYNAMIC_COMBO | Ja | `"text to music"`<br>`"cover"` |
 
 ### Eingaben für Text zu Musik
 

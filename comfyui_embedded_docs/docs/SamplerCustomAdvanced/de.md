@@ -6,11 +6,11 @@ Der Node `SamplerCustomAdvanced` führt erweitertes Sampling im latenten Raum un
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `noise` | Der Rauschgenerator, der das anfängliche Rauschmuster und den Seed für den Sampling-Prozess bereitstellt | NOISE | Ja | - |
-| `guider` | Das Guidance-Modell, das den Sampling-Prozess auf die gewünschte Ausgabe ausrichtet | GUIDER | Ja | - |
-| `sampler` | Der Sampling-Algorithmus, der definiert, wie der latente Raum während der Generierung durchlaufen wird | SAMPLER | Ja | - |
-| `sigmas` | Der Sigma-Zeitplan, der die Rauschpegel über die Sampling-Schritte hinweg steuert | SIGMAS | Ja | - |
-| `latent_image` | Die anfängliche latente Repräsentation, die als Ausgangspunkt für das Sampling dient. Unterstützt einen optionalen Schlüssel `noise_mask` für selektives Entrauschen sowie optionale Schlüssel `downscale_ratio_spacial` und `downscale_ratio_temporal` für erweiterte Latent-Verarbeitung | LATENT | Ja | - |
+| `Rauschen` | Der Rauschgenerator, der das anfängliche Rauschmuster und den Seed für den Sampling-Prozess bereitstellt | NOISE | Ja | - |
+| `Guider` | Das Guidance-Modell, das den Sampling-Prozess auf die gewünschte Ausgabe ausrichtet | GUIDER | Ja | - |
+| `Sampler` | Der Sampling-Algorithmus, der definiert, wie der latente Raum während der Generierung durchlaufen wird | SAMPLER | Ja | - |
+| `Sigmas` | Der Sigma-Zeitplan, der die Rauschpegel über die Sampling-Schritte hinweg steuert | SIGMAS | Ja | - |
+| `latentes Bild` | Die anfängliche latente Repräsentation, die als Ausgangspunkt für das Sampling dient. Unterstützt einen optionalen Schlüssel `noise_mask` für selektives Entrauschen sowie optionale Schlüssel `downscale_ratio_spacial` und `downscale_ratio_temporal` für erweiterte Latent-Verarbeitung | LATENT | Ja | - |
 
 ## Ausgaben
 

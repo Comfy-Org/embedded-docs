@@ -8,8 +8,8 @@ ByteDance Seedream 4.5 & 5.0 erzeugt Bilder aus einem Text-Prompt (Text-zu-Bild)
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `prompt` | Text-Prompt zum Erstellen oder Bearbeiten eines Bildes. Darf nach dem Entfernen von Leerzeichen nicht leer sein. | STRING | Ja | Mehrzeiliger Text |
-| `model` | Wählt das zu verwendende Seedream-Modell aus. Jedes Modell bietet unten einen eigenen Satz an Unterparametern und Limits. | DYNAMIC_COMBO | Ja | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
+| `Prompt` | Text-Prompt zum Erstellen oder Bearbeiten eines Bildes. Darf nach dem Entfernen von Leerzeichen nicht leer sein. | STRING | Ja | Mehrzeiliger Text |
+| `Modell` | Wählt das zu verwendende Seedream-Modell aus. Jedes Modell bietet unten einen eigenen Satz an Unterparametern und Limits. | DYNAMIC_COMBO | Ja | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash"<br>"seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" |
 
 ### Seedream 5.5 Eingaben (seedream 5.5)
 

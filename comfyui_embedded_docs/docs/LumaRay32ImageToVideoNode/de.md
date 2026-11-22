@@ -6,10 +6,10 @@ Erzeugen Sie ein Video aus einem Start- und/oder Endframe mit dem Ray 3.2-Modell
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `prompt` | Text-Prompt für die Videogenerierung. | STRING | Ja | 1 bis 6000 Zeichen |
-| `resolution` | Die Ausgabeauflösung des generierten Videos (Standard: "720p"). | COMBO | Ja | "360p"<br>"540p"<br>"720p"<br>"1080p" |
-| `loop` | Lässt das Video nahtlos in einer Schleife laufen. Nicht verfügbar, wenn ein `end_frame` festgelegt ist. | BOOLEAN | Ja | True<br>False |
-| `seed` | Seed-Wert für reproduzierbare Generierung. | INT | Ja | 0 bis 2147483647 |
+| `Prompt` | Text-Prompt für die Videogenerierung. | STRING | Ja | 1 bis 6000 Zeichen |
+| `Auflösung` | Die Ausgabeauflösung des generierten Videos (Standard: "720p"). | COMBO | Ja | "360p"<br>"540p"<br>"720p"<br>"1080p" |
+| `Schleife` | Lässt das Video nahtlos in einer Schleife laufen. Nicht verfügbar, wenn ein `end_frame` festgelegt ist. | BOOLEAN | Ja | True<br>False |
+| `Seed` | Seed-Wert für reproduzierbare Generierung. | INT | Ja | 0 bis 2147483647 |
 | `start_frame` | Erstes Frame des generierten Videos. | IMAGE | Nein | - |
 | `end_frame` | Letztes Frame des generierten Videos. | IMAGE | Nein | - |
 

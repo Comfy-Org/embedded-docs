@@ -8,9 +8,9 @@ Generieren Sie Bilder mit dem Modell Flux.2 [pro] oder Flux.2 [max] aus einem Te
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Die zu verwendende Flux.2-Modellversion. Wenn Sie ein Modell auswählen, werden zusätzliche Parameter für Breite, Höhe und optionale Referenzbilder freigeschaltet. | DYNAMIC_COMBO | Ja | "Flux.2 [pro]"<br>"Flux.2 [max]" |
-| `prompt` | Prompt für die Bilderzeugung oder -bearbeitung (Standard: leerer String). | STRING | Ja | N/A |
-| `seed` | Der Zufallsseed, der zum Erzeugen des Rauschens verwendet wird (Standard: 0). Unterstützt die Option zur Steuerung nach der Generierung, um den Wert nach jedem Lauf zu randomisieren. | INT | Ja | 0 bis 18446744073709551615 |
+| `Modell` | Die zu verwendende Flux.2-Modellversion. Wenn Sie ein Modell auswählen, werden zusätzliche Parameter für Breite, Höhe und optionale Referenzbilder freigeschaltet. | DYNAMIC_COMBO | Ja | "Flux.2 [pro]"<br>"Flux.2 [max]" |
+| `Prompt` | Prompt für die Bilderzeugung oder -bearbeitung (Standard: leerer String). | STRING | Ja | N/A |
+| `Seed` | Der Zufallsseed, der zum Erzeugen des Rauschens verwendet wird (Standard: 0). Unterstützt die Option zur Steuerung nach der Generierung, um den Wert nach jedem Lauf zu randomisieren. | INT | Ja | 0 bis 18446744073709551615 |
 
 ### Flux.2 [pro] und Flux.2 [max] Eingaben
 
@@ -18,8 +18,8 @@ Von beiden Modellen gemeinsam verwendet – die Parametersätze sind identisch.
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model.width` | Die Breite des generierten Bilds in Pixeln (Standard: 1024). | INT | Ja | 256 bis 2048 (Schrittweite 32) |
-| `model.height` | Die Höhe des generierten Bilds in Pixeln (Standard: 768). | INT | Ja | 256 bis 2048 (Schrittweite 32) |
+| `Breite` | Die Breite des generierten Bilds in Pixeln (Standard: 1024). | INT | Ja | 256 bis 2048 (Schrittweite 32) |
+| `Höhe` | Die Höhe des generierten Bilds in Pixeln (Standard: 768). | INT | Ja | 256 bis 2048 (Schrittweite 32) |
 
 ### Referenzeingaben
 

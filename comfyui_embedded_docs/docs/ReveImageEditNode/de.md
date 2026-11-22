@@ -23,8 +23,8 @@ Beide Modellversionen stellen dieselben modellspezifischen Eingaben bereit.
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model.aspect_ratio` | Seitenverhältnis des Ausgabebilds. Wenn auf "auto" gesetzt, wird das Seitenverhältnis automatisch bestimmt. | COMBO | Nein | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
-| `model.test_time_scaling` | Erweiterte Option. Höhere Werte erzeugen bessere Bilder, kosten aber mehr Credits. (Standard: 1) | INT | Nein | 1 bis 5 |
+| `aspect_ratio` | Seitenverhältnis des Ausgabebilds. Wenn auf "auto" gesetzt, wird das Seitenverhältnis automatisch bestimmt. | COMBO | Nein | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
+| `test_time_scaling` | Erweiterte Option. Höhere Werte erzeugen bessere Bilder, kosten aber mehr Credits. (Standard: 1) | INT | Nein | 1 bis 5 |
 
 ### Upscale-Eingaben (wenn `upscale` auf "enabled" gesetzt ist)
 

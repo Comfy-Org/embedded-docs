@@ -6,14 +6,14 @@ Fügt die Farbregions- und Tiefenkarten eines MOSS-Image-Farb-/Tiefen-Control-Ad
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Positives Conditioning, an das das Steuersignal angehängt wird. | CONDITIONING | Ja | N/A |
-| `negative` | Negatives Conditioning, an das das Steuersignal angehängt wird. | CONDITIONING | Ja | N/A |
+| `Positiv` | Positives Conditioning, an das das Steuersignal angehängt wird. | CONDITIONING | Ja | N/A |
+| `Negativ` | Negatives Conditioning, an das das Steuersignal angehängt wird. | CONDITIONING | Ja | N/A |
 | `vae` | VAE, mit dem die Karten in Latents kodiert werden. | VAE | Ja | N/A |
-| `color_map` | Eine einheitliche Farbe pro Region in der Ausgabegröße. Die Farben sind nur Regions-IDs. | IMAGE | Nein | N/A |
+| `Farbkarte` | Eine einheitliche Farbe pro Region in der Ausgabegröße. Die Farben sind nur Regions-IDs. | IMAGE | Nein | N/A |
 | `depth_map` | Tiefenkarte in der Ausgabegröße; nahe Bereiche sind weiß. | IMAGE | Nein | N/A |
-| `strength` | Skaliert den Beitrag der Karten zu den Bild-Tokens. 0.0 entspricht keinen Karten, 1.0 entspricht der trainierten Stärke (Standard: 1.0). | FLOAT | Ja | 0.0 bis 10.0 (Schritt 0.01) |
-| `start_percent` | Sampling-Prozentsatz, bei dem die Steuerung beginnt (Standard: 0.0). | FLOAT | Ja | 0.0 bis 1.0 (Schritt 0.001) |
-| `end_percent` | Sampling-Prozentsatz, bei dem die Steuerung endet. Ein frühes Beenden behält Layout und Tiefe bei, während die übrigen Schritte die Formen lockern (Standard: 1.0). | FLOAT | Ja | 0.0 bis 1.0 (Schritt 0.001) |
+| `Stärke` | Skaliert den Beitrag der Karten zu den Bild-Tokens. 0.0 entspricht keinen Karten, 1.0 entspricht der trainierten Stärke (Standard: 1.0). | FLOAT | Ja | 0.0 bis 10.0 (Schritt 0.01) |
+| `Startprozentsatz` | Sampling-Prozentsatz, bei dem die Steuerung beginnt (Standard: 0.0). | FLOAT | Ja | 0.0 bis 1.0 (Schritt 0.001) |
+| `Endprozentsatz` | Sampling-Prozentsatz, bei dem die Steuerung endet. Ein frühes Beenden behält Layout und Tiefe bei, während die übrigen Schritte die Formen lockern (Standard: 1.0). | FLOAT | Ja | 0.0 bis 1.0 (Schritt 0.001) |
 
 **Hinweis:** Verbinden Sie mindestens eine der Karten `color_map` und `depth_map`; ohne eine von beiden gibt der Node die Conditionings unverändert zurück. Eine fehlende Karte wird durch Nullen ersetzt, sodass sowohl reine Farb- als auch reine Tiefen-Setups funktionieren. Wenn sich die beiden Karten in ihrer Größe unterscheiden, wird die kleinere auf die Größe der anderen hochskaliert. Dieser Node ist in ComfyUI als experimentell gekennzeichnet.
 

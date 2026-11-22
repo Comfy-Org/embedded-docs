@@ -6,7 +6,7 @@ Seleciona uma voz Breeze em destaque, ou qualquer id de voz Breeze, e a envia pa
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `language` | Grupo de idioma das vozes em destaque, ou `custom` para inserir um id. Padrão: `"English"`. | DYNAMIC_COMBO | Sim | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
+| `idioma` | Grupo de idioma das vozes em destaque, ou `custom` para inserir um id. Padrão: `"English"`. | DYNAMIC_COMBO | Sim | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
 
 ### Entradas para os idiomas "English", "Chinese" e "Japanese"
 

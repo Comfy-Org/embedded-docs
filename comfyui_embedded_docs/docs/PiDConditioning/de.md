@@ -6,7 +6,7 @@ Fügt einem CONDITIONING einen Latent- und einen degrade_sigma-Wert hinzu, damit
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Die Conditioning-Daten, an die das Latent und das Degrade-Sigma angehängt werden. | CONDITIONING | Ja | - |
+| `Positiv` | Die Conditioning-Daten, an die das Latent und das Degrade-Sigma angehängt werden. | CONDITIONING | Ja | - |
 | `latent` | Das Latent (von VAEEncode oder einem KSampler), das an das Conditioning angehängt werden soll. | LATENT | Ja | - |
 | `latent_format` | Das Format des Latents. Flux1-Latents (16 Kanäle) und Flux2-Latents (128 Kanäle) werden unter `"flux"` automatisch anhand der Kanaldimension erkannt. Für SD3 (16 Kanäle), SDXL (4 Kanäle) oder QwenImage (16 Kanäle) manuell auswählen (Standard: `"flux"`). | COMBO | Ja | `"flux"`<br>`"sd3"`<br>`"sdxl"`<br>`"qwenimage"` |
 | `degrade_sigma` | Der Grad der anzuwendenden Degradierung. 0 bedeutet ein sauberes Latent. Erhöhen Sie diesen Wert, um beschädigte Latent-Ausgaben zu entrauschen (Standard: 0.0). | FLOAT | Ja | 0.0 bis 1.0 (Schrittweite: 0.01) |

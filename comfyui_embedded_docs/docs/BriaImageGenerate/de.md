@@ -6,13 +6,13 @@ Erzeugt ein neues Bild aus einem Text-Prompt, einem strukturierten JSON-Prompt o
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Einfache sprachliche Beschreibung des zu erzeugenden Bildes (Standard: leer). | STRING | Ja | Mehrzeiliger Text |
+| `Prompt` | Einfache sprachliche Beschreibung des zu erzeugenden Bildes (Standard: leer). | STRING | Ja | Mehrzeiliger Text |
 | `structured_prompt` | JSON-strukturierter Prompt aus einem früheren Bria-FIBO-Ergebnis. Mit demselben Seed wird dieses Bild neu erzeugt; ändern Sie das JSON oder fügen Sie einen Prompt hinzu, um es zu verfeinern (Standard: leer). | STRING | Ja | Mehrzeiliger Text |
 | `aspect_ratio` | Seitenverhältnis der Ausgabe (Standard: `"1:1"`). Die Verhältnisse ab `"16:10"` sind FIBO-2.0-Größen mit zusätzlichen Anforderungen, die unten aufgeführt sind. | COMBO | Ja | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"16:10"`<br>`"10:16"`<br>`"2:1"`<br>`"1:2"`<br>`"21:9"`<br>`"9:21"`<br>`"3:1"`<br>`"1:3"`<br>`"4:1"`<br>`"1:4"`<br>`"5:1"`<br>`"1:5"` |
-| `resolution` | Auflösung der Ausgabe in Megapixeln (Standard: `"1MP"`). | COMBO | Ja | `"1MP"`<br>`"4MP"` |
-| `seed` | Seed, der die Generierung initialisiert (Standard: 42). | INT | Ja | 1 bis 2147483647 |
-| `moderation` | Moderationseinstellungen. Die Auswahl von `"true"` blendet die unten aufgeführten Moderationseingaben ein. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
-| `image` | Optionales Referenzbild, auf das aufgebaut werden soll. Das Ergebnis ist ein neues Bild im ausgewählten Seitenverhältnis, keine Bearbeitung dieses Bildes. | IMAGE | Nein | - |
+| `Auflösung` | Auflösung der Ausgabe in Megapixeln (Standard: `"1MP"`). | COMBO | Ja | `"1MP"`<br>`"4MP"` |
+| `Seed` | Seed, der die Generierung initialisiert (Standard: 42). | INT | Ja | 1 bis 2147483647 |
+| `Moderation` | Moderationseinstellungen. Die Auswahl von `"true"` blendet die unten aufgeführten Moderationseingaben ein. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
+| `Bild` | Optionales Referenzbild, auf das aufgebaut werden soll. Das Ergebnis ist ein neues Bild im ausgewählten Seitenverhältnis, keine Bearbeitung dieses Bildes. | IMAGE | Nein | - |
 
 ### Moderationseingaben
 

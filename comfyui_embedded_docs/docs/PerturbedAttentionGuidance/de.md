@@ -6,8 +6,8 @@ Der Node PerturbedAttentionGuidance wendet Perturbed Attention Guidance auf ein 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das Diffusionsmodell, auf das Perturbed Attention Guidance angewendet werden soll | MODEL | Ja | - |
-| `scale` | Die Stärke des Perturbed Attention Guidance-Effekts (Standard: 3.0). Bei Einstellung auf 0 hat der Node keine Wirkung und gibt das ursprüngliche entrauschte Ergebnis unverändert zurück. | FLOAT | Ja | 0.0 - 100.0 (Schritt: 0.01) |
+| `Modell` | Das Diffusionsmodell, auf das Perturbed Attention Guidance angewendet werden soll | MODEL | Ja | - |
+| `Skalierung` | Die Stärke des Perturbed Attention Guidance-Effekts (Standard: 3.0). Bei Einstellung auf 0 hat der Node keine Wirkung und gibt das ursprüngliche entrauschte Ergebnis unverändert zurück. | FLOAT | Ja | 0.0 - 100.0 (Schritt: 0.01) |
 
 ## Ausgaben
 

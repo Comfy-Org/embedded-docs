@@ -8,9 +8,9 @@ Dieser Node verankert ein Referenzbild an einer bestimmten Position auf der Zeit
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Referenzbild, das zum gewählten Zeitpunkt des Ausgabevideos platziert wird. | IMAGE | Ja | - |
-| `position` | Wie dieses Bild auf der Zeitachse des Ausgabevideos platziert wird. | DYNAMIC_COMBO | Ja | "Fraction of duration (0.0-1.0)"<br>"Absolute time (seconds)" |
-| `keyframes` | Optionale frühere Keyframes, die mit diesem verkettet werden. | LUMA_RAY32_KEYFRAME | Nein | - |
+| `Bild` | Referenzbild, das zum gewählten Zeitpunkt des Ausgabevideos platziert wird. | IMAGE | Ja | - |
+| `Position` | Wie dieses Bild auf der Zeitachse des Ausgabevideos platziert wird. | DYNAMIC_COMBO | Ja | "Fraction of duration (0.0-1.0)"<br>"Absolute time (seconds)" |
+| `Keyframes` | Optionale frühere Keyframes, die mit diesem verkettet werden. | LUMA_RAY32_KEYFRAME | Nein | - |
 
 ### Fraction of duration (0.0-1.0) Eingaben
 

@@ -6,7 +6,7 @@ Der Boolean-Node gibt einen booleschen (true/false) Wert durch Ihren Workflow we
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `value` | Der boolesche Wert, der durch den Node geleitet wird | BOOLEAN | Ja | true<br>false |
+| `Wert` | Der boolesche Wert, der durch den Node geleitet wird | BOOLEAN | Ja | true<br>false |
 
 ## Ausgaben
 

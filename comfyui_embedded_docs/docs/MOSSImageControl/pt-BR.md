@@ -6,12 +6,12 @@ Adiciona os mapas de região de cor e de profundidade de um adaptador de control
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Condicionamento positivo ao qual anexar o sinal de controle. | CONDITIONING | Sim | N/A |
-| `negative` | Condicionamento negativo ao qual anexar o sinal de controle. | CONDITIONING | Sim | N/A |
+| `positivo` | Condicionamento positivo ao qual anexar o sinal de controle. | CONDITIONING | Sim | N/A |
+| `negativo` | Condicionamento negativo ao qual anexar o sinal de controle. | CONDITIONING | Sim | N/A |
 | `vae` | VAE usada para codificar os mapas em latentes. | VAE | Sim | N/A |
 | `color_map` | Uma cor sólida por região, no tamanho da saída. As cores são apenas IDs de região. | IMAGE | Não | N/A |
-| `depth_map` | Mapa de profundidade no tamanho da saída, em que o que está próximo é branco. | IMAGE | Não | N/A |
-| `strength` | Escala a contribuição dos mapas para os tokens da imagem. 0.0 é o mesmo que nenhum mapa; 1.0 é a intensidade treinada (padrão: 1.0). | FLOAT | Sim | 0.0 a 10.0 (passo 0.01) |
+| `mapa_de_profundidade` | Mapa de profundidade no tamanho da saída, em que o que está próximo é branco. | IMAGE | Não | N/A |
+| `intensidade` | Escala a contribuição dos mapas para os tokens da imagem. 0.0 é o mesmo que nenhum mapa; 1.0 é a intensidade treinada (padrão: 1.0). | FLOAT | Sim | 0.0 a 10.0 (passo 0.01) |
 | `start_percent` | Percentual de amostragem em que o controle começa (padrão: 0.0). | FLOAT | Sim | 0.0 a 1.0 (passo 0.001) |
 | `end_percent` | Percentual de amostragem em que o controle termina. Terminar mais cedo mantém o layout e a profundidade enquanto o restante das etapas relaxa as formas (padrão: 1.0). | FLOAT | Sim | 0.0 a 1.0 (passo 0.001) |
 

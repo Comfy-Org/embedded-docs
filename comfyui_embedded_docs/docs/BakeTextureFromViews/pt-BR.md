@@ -6,10 +6,10 @@ Projeta imagens renderizadas de volta no layout UV da malha. Renderize a malha c
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `mesh` | A malha com UVs desdobrados que foi renderizada. | MESH | Sim | - |
-| `images` | Uma imagem por câmera, na ordem das câmeras (Batch Images). Qualquer resolução com a proporção da renderização; uma resolução maior gera um bake mais nítido. | IMAGE | Sim | - |
+| `malha` | A malha com UVs desdobrados que foi renderizada. | MESH | Sim | - |
+| `imagens` | Uma imagem por câmera, na ordem das câmeras (Batch Images). Qualquer resolução com a proporção da renderização; uma resolução maior gera um bake mais nítido. | IMAGE | Sim | - |
 | `camera_info` | As câmeras com as quais as imagens foram renderizadas, conforme conectadas ao Render Mesh. Combine rigs com Batch Cameras. Nenhum: vista frontal enquadrada automaticamente do Render Mesh. | LOAD3D_CAMERA | Não | - |
-| `resolution` | Resolução quadrada da textura. 0 mantém o tamanho atual da textura da malha, ou 2048 quando ela não tem textura; caso contrário, a textura atual é reamostrada para esse valor. Padrão: 0. | INT | Não | 0 a 8192 (passo: 64) |
+| `resolução` | Resolução quadrada da textura. 0 mantém o tamanho atual da textura da malha, ou 2048 quando ela não tem textura; caso contrário, a textura atual é reamostrada para esse valor. Padrão: 0. | INT | Não | 0 a 8192 (passo: 64) |
 | `blend_exponent` | As vistas são ponderadas por cos(ângulo da vista)^expoente. Valores mais altos favorecem a vista mais frontal (mais nítida, emendas mais marcadas); valores mais baixos fazem a média de mais vistas (mais suave). Padrão: 4.0. | FLOAT | Não | 0.0 a 32.0 (passo: 0.5) |
 | `fill_unseen` | Os texels que nenhuma vista enxerga recebem cores propagadas a partir da superfície visível, em vez da textura ou das cores de vértice da própria malha. Use essa opção quando as vistas substituírem toda a textura. Padrão: false. | BOOLEAN | Não | true<br>false |
 | `mask` | Áreas editadas por vista; apenas os pixels mascarados são projetados. Uma única máscara se aplica a todas as vistas. | MASK | Não | - |

@@ -7,9 +7,9 @@ Erstellt Video-Latents für den Cosmos Predict2 Image-to-Video-Workflow. Der Nod
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `vae` | Das VAE-Modell, das zum Kodieren der Start- und Endbilder in den Latent-Raum verwendet wird | VAE | Ja | - |
-| `width` | Breite des Ausgabevideos in Pixeln (Standard: 848, muss ein Vielfaches von 16 sein) | INT | Ja | 16 bis MAX_RESOLUTION |
-| `height` | Höhe des Ausgabevideos in Pixeln (Standard: 480, muss ein Vielfaches von 16 sein) | INT | Ja | 16 bis MAX_RESOLUTION |
-| `length` | Anzahl der Frames in der Videosequenz (Standard: 93) | INT | Ja | 1 bis MAX_RESOLUTION |
+| `Breite` | Breite des Ausgabevideos in Pixeln (Standard: 848, muss ein Vielfaches von 16 sein) | INT | Ja | 16 bis MAX_RESOLUTION |
+| `Höhe` | Höhe des Ausgabevideos in Pixeln (Standard: 480, muss ein Vielfaches von 16 sein) | INT | Ja | 16 bis MAX_RESOLUTION |
+| `Länge` | Anzahl der Frames in der Videosequenz (Standard: 93) | INT | Ja | 1 bis MAX_RESOLUTION |
 | `batch_size` | Anzahl der zu generierenden Videosequenzen (Standard: 1) | INT | Ja | 1 bis 4096 |
 | `start_image` | Optionales Startbild für die Videosequenz | IMAGE | Nein | - |
 | `end_image` | Optionales Endbild für die Videosequenz | IMAGE | Nein | - |

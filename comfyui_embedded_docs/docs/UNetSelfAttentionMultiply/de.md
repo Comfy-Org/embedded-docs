@@ -6,7 +6,7 @@ Der UNetSelfAttentionMultiply-Knoten wendet Multiplikationsfaktoren auf die Quer
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das UNet-Modell, das mit Attention-Skalierungsfaktoren geändert werden soll | MODEL | Ja | - |
+| `Modell` | Das UNet-Modell, das mit Attention-Skalierungsfaktoren geändert werden soll | MODEL | Ja | - |
 | `q` | Multiplikationsfaktor für die Query-Komponente (Standard: 1.0) | FLOAT | Nein | 0.0 - 10.0 |
 | `k` | Multiplikationsfaktor für die Key-Komponente (Standard: 1.0) | FLOAT | Nein | 0.0 - 10.0 |
 | `v` | Multiplikationsfaktor für die Value-Komponente (Standard: 1.0) | FLOAT | Nein | 0.0 - 10.0 |

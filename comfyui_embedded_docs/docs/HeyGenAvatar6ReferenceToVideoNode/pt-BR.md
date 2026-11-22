@@ -8,7 +8,7 @@ Gere com o HeyGen Avatar 6 um vídeo de uma pessoa falando a partir do áudio qu
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Seletor de modelo; selecionar um modelo revela suas entradas abaixo. `"heygen-avatar-6-turbo"` é a camada mais barata e rápida. | DYNAMIC_COMBO | Sim | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `modelo` | Seletor de modelo; selecionar um modelo revela suas entradas abaixo. `"heygen-avatar-6-turbo"` é a camada mais barata e rápida. | DYNAMIC_COMBO | Sim | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
 
 ### Entradas do `heygen-avatar-6`
 

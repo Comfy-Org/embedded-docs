@@ -6,7 +6,7 @@ Der KarrasScheduler-Node ist dafür ausgelegt, eine Sequenz von Rauschpegeln (Si
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `steps` | Gibt die Anzahl der Schritte im Rauschplan an und beeinflusst die Granularität der erzeugten Sigma-Sequenz. | INT |
+| `Schritte` | Gibt die Anzahl der Schritte im Rauschplan an und beeinflusst die Granularität der erzeugten Sigma-Sequenz. | INT |
 | `sigma_max` | Der maximale Sigma-Wert im Rauschplan; legt die Obergrenze der Rauschpegel fest. | FLOAT |
 | `sigma_min` | Der minimale Sigma-Wert im Rauschplan; legt die Untergrenze der Rauschpegel fest. | FLOAT |
 | `rho` | Ein Parameter, der die Form der Rauschplan-Kurve steuert und beeinflusst, wie die Rauschpegel von sigma_min zu sigma_max fortschreiten. | FLOAT |

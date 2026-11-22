@@ -8,11 +8,11 @@ Converte texto em fala com o Breeze TTS 2. Escolha uma voz Breeze, selecione o i
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `voice` | Voz Breeze para falar, obtida do Breeze Voice Selector ou de um dos nós de criação de voz Breeze. | BREEZE_VOICE | Sim | - |
-| `text` | Texto para falar, de 1 a 1000 caracteres. Tags de áudio como `(laughs)` ou `(sighs)` são executadas em vez de lidas. Padrão: vazio. | STRING | Sim | 1 a 1000 caracteres |
-| `language` | Idioma do texto. Inglês e Chinês podem usar qualquer um dos modelos; outros idiomas usam o Breeze TTS 2 Multilingual. Uma voz soa melhor em seu próprio idioma, então para outro idioma use uma cópia feita com o Breeze Voice Localize. | DYNAMIC_COMBO | Sim | Múltiplas opções disponíveis |
-| `delivery` | Como a linha é executada: `neutral` mantém a voz como está, `directed` segue instruções escritas. Padrão: `"neutral"`. | DYNAMIC_COMBO | Sim | `"neutral"`<br>`"directed"` |
-| `speed` | Multiplicador de tempo que mantém o tom inalterado. Padrão: 1.0. | FLOAT | Não | 0.5 a 2.0 (passo 0.05) |
+| `voz` | Voz Breeze para falar, obtida do Breeze Voice Selector ou de um dos nós de criação de voz Breeze. | BREEZE_VOICE | Sim | - |
+| `texto` | Texto para falar, de 1 a 1000 caracteres. Tags de áudio como `(laughs)` ou `(sighs)` são executadas em vez de lidas. Padrão: vazio. | STRING | Sim | 1 a 1000 caracteres |
+| `idioma` | Idioma do texto. Inglês e Chinês podem usar qualquer um dos modelos; outros idiomas usam o Breeze TTS 2 Multilingual. Uma voz soa melhor em seu próprio idioma, então para outro idioma use uma cópia feita com o Breeze Voice Localize. | DYNAMIC_COMBO | Sim | Múltiplas opções disponíveis |
+| `entonação` | Como a linha é executada: `neutral` mantém a voz como está, `directed` segue instruções escritas. Padrão: `"neutral"`. | DYNAMIC_COMBO | Sim | `"neutral"`<br>`"directed"` |
+| `velocidade` | Multiplicador de tempo que mantém o tom inalterado. Padrão: 1.0. | FLOAT | Não | 0.5 a 2.0 (passo 0.05) |
 | `seed` | Controla se o nó é reexecutado; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Não | 0 a 2147483647 |
 
 ### Entradas para idioma "English" e "Chinese"

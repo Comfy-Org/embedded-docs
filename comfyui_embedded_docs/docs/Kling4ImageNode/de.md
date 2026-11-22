@@ -6,12 +6,12 @@ Erzeugen oder bearbeiten Sie Bilder mit Kling 4.0 anhand eines Text-Prompts und 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `reference_images` | Erweiterbare Slots für Referenzbilder (`image_1` ... `image_10`). Verweisen Sie im Prompt mit `@Image1`, `@Image2` usw. auf sie. | AUTOGROW | Nein | 0 bis 10 Bilder |
-| `prompt` | Beschreibung des Bildes. Verweisen Sie auf die verbundenen Bilder als `@Image1`, `@Image2`, ... Standard: leerer String. | STRING | Ja | Mehrzeiliger Text |
-| `resolution` | Auflösung des Ausgabebildes. Standard: `"2K"`. | COMBO | Ja | `"2K"`<br>`"4K"`<br>`"8K"` |
-| `aspect_ratio` | Seitenverhältnis des Ausgabebildes. `"auto"` folgt den Referenzbildern, andernfalls dem Prompt. Standard: `"auto"`. | COMBO | Ja | `"auto"`<br>`"9:16"`<br>`"2:3"`<br>`"3:4"`<br>`"1:1"`<br>`"4:3"`<br>`"3:2"`<br>`"16:9"`<br>`"21:9"` |
-| `series_amount` | Erzeugt eine Reihe zusammengehöriger Bilder, die dieselben Charaktere und denselben Stil beibehalten. `"auto"` lässt das Modell 2 bis 10 Bilder auswählen. Standard: `"disabled"`. | COMBO | Ja | `"disabled"`<br>`"auto"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
-| `seed` | Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Ja | 0 bis 2147483647 |
+| `Referenzbilder` | Erweiterbare Slots für Referenzbilder (`image_1` ... `image_10`). Verweisen Sie im Prompt mit `@Image1`, `@Image2` usw. auf sie. | AUTOGROW | Nein | 0 bis 10 Bilder |
+| `Prompt` | Beschreibung des Bildes. Verweisen Sie auf die verbundenen Bilder als `@Image1`, `@Image2`, ... Standard: leerer String. | STRING | Ja | Mehrzeiliger Text |
+| `Auflösung` | Auflösung des Ausgabebildes. Standard: `"2K"`. | COMBO | Ja | `"2K"`<br>`"4K"`<br>`"8K"` |
+| `Seitenverhältnis` | Seitenverhältnis des Ausgabebildes. `"auto"` folgt den Referenzbildern, andernfalls dem Prompt. Standard: `"auto"`. | COMBO | Ja | `"auto"`<br>`"9:16"`<br>`"2:3"`<br>`"3:4"`<br>`"1:1"`<br>`"4:3"`<br>`"3:2"`<br>`"16:9"`<br>`"21:9"` |
+| `Anzahl der Serienbilder` | Erzeugt eine Reihe zusammengehöriger Bilder, die dieselben Charaktere und denselben Stil beibehalten. `"auto"` lässt das Modell 2 bis 10 Bilder auswählen. Standard: `"disabled"`. | COMBO | Ja | `"disabled"`<br>`"auto"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
+| `Seed` | Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Ja | 0 bis 2147483647 |
 
 **Einschränkungen und Verhalten:**
 

@@ -6,16 +6,16 @@ Der WanFunInpaintToVideo-Node bereitet Conditioning- und Latent-Daten für die V
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `positive` | Positive Conditioning-Prompts für die Video-Generierung | CONDITIONING | Ja | - |
-| `negative` | Negative Conditioning-Prompts, die bei der Video-Generierung vermieden werden sollen | CONDITIONING | Ja | - |
+| `positiv` | Positive Conditioning-Prompts für die Video-Generierung | CONDITIONING | Ja | - |
+| `negativ` | Negative Conditioning-Prompts, die bei der Video-Generierung vermieden werden sollen | CONDITIONING | Ja | - |
 | `vae` | VAE-Modell, das zum Kodieren und Dekodieren der Videoframes verwendet wird | VAE | Ja | - |
-| `width` | Ausgabevideobreite in Pixeln (Standard: 832, Schritt: 16) | INT | Ja | 16 bis MAX_RESOLUTION |
-| `height` | Ausgabevideohöhe in Pixeln (Standard: 480, Schritt: 16) | INT | Ja | 16 bis MAX_RESOLUTION |
-| `length` | Anzahl der Frames in der Videosequenz (Standard: 81, Schritt: 4) | INT | Ja | 1 bis MAX_RESOLUTION |
-| `batch_size` | Anzahl der Videos, die in einem Batch generiert werden (Standard: 1) | INT | Ja | 1 bis 4096 |
-| `clip_vision_output` | Optionale CLIP-Vision-Ausgabe, die als Conditioning für das Startbild verwendet wird | CLIP_VISION_OUTPUT | Nein | - |
-| `start_image` | Optionales Startbild (Frame) für die Video-Generierung | IMAGE | Nein | - |
-| `end_image` | Optionales Endbild (Frame) für die Video-Generierung | IMAGE | Nein | - |
+| `Breite` | Ausgabevideobreite in Pixeln (Standard: 832, Schritt: 16) | INT | Ja | 16 bis MAX_RESOLUTION |
+| `Höhe` | Ausgabevideohöhe in Pixeln (Standard: 480, Schritt: 16) | INT | Ja | 16 bis MAX_RESOLUTION |
+| `Länge` | Anzahl der Frames in der Videosequenz (Standard: 81, Schritt: 4) | INT | Ja | 1 bis MAX_RESOLUTION |
+| `Batchgröße` | Anzahl der Videos, die in einem Batch generiert werden (Standard: 1) | INT | Ja | 1 bis 4096 |
+| `CLIP-Vision-Ausgabe` | Optionale CLIP-Vision-Ausgabe, die als Conditioning für das Startbild verwendet wird | CLIP_VISION_OUTPUT | Nein | - |
+| `Startbild` | Optionales Startbild (Frame) für die Video-Generierung | IMAGE | Nein | - |
+| `Endbild` | Optionales Endbild (Frame) für die Video-Generierung | IMAGE | Nein | - |
 
 ## Ausgaben
 

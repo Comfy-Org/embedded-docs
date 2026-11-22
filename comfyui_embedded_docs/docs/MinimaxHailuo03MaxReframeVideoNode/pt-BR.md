@@ -8,7 +8,7 @@ Este nó adapta um vídeo a uma nova proporção de aspecto, ajustando-o em uma 
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo a ser usado para geração de vídeo. | DYNAMIC_COMBO | Sim | "MiniMax H3 Max" |
+| `modelo` | Modelo a ser usado para geração de vídeo. | DYNAMIC_COMBO | Sim | "MiniMax H3 Max" |
 
 ### Entradas do MiniMax H3 Max
 

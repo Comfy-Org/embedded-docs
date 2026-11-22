@@ -6,8 +6,8 @@ RelayVSR Conditioning は、RelayVSR による動画アップスケール用の�
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `model` | RelayVSR 拡散モデルです。Load Model で `relayvsr_x2_lightx2v_int8_convrot.safetensors` または `relayvsr_x4_int8_convrot.safetensors` を読み込みます。 | MODEL | はい | N/A |
-| `images` | 元の解像度の低品質動画です。結果のサイズはモデルのアップスケール倍率によって決まります。 | IMAGE | はい | N/A |
+| `モデル` | RelayVSR 拡散モデルです。Load Model で `relayvsr_x2_lightx2v_int8_convrot.safetensors` または `relayvsr_x4_int8_convrot.safetensors` を読み込みます。 | MODEL | はい | N/A |
+| `画像` | 元の解像度の低品質動画です。結果のサイズはモデルのアップスケール倍率によって決まります。 | IMAGE | はい | N/A |
 
 ## 出力
 

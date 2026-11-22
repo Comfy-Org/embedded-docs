@@ -8,7 +8,7 @@ Dieser Node rendert das finale Video eines Seedance 2.5 Draft mit 1080p oder 4k.
 | --- | --- | --- | --- | --- |
 | `draft_task_id` | Die Ausgabe `draft_task_id` eines Seedance 2.5 Node-Laufs mit dem Modell Seedance 2.5 Draft oder eine eingefügte Draft-Task-ID. Wenn Sie den erzeugenden Node erneut ausführen, stellen Sie dessen Seed-Steuerung auf fest, da sonst der nächste Lauf einen neuen Draft erzeugt, anstatt den von Ihnen geprüften wiederzuverwenden. | STRING | Ja | - |
 | `Wasserzeichen` | Ob dem Video ein Wasserzeichen hinzugefügt werden soll. Standard ist False. Dies ist eine erweiterte Einstellung. | BOOLEAN | Nein | True oder False |
-| `resolution` | Auflösung des finalen Videos. Verwenden Sie für 4k genau den kleingeschriebenen Wert `"4k"`. Standard: `"1080p"`. | COMBO | Nein | `"1080p"`<br>`"4k"` |
+| `Auflösung` | Auflösung des finalen Videos. Verwenden Sie für 4k genau den kleingeschriebenen Wert `"4k"`. Standard: `"1080p"`. | COMBO | Nein | `"1080p"`<br>`"4k"` |
 
 ## Ausgaben
 

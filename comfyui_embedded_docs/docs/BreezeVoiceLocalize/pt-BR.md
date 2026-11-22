@@ -6,9 +6,9 @@ Cria uma cópia de uma voz que fala outro idioma nativamente, em vez de ler um i
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `voice` | Voz Breeze a ser copiada. | BREEZE_VOICE | Sim | - |
-| `language` | Idioma que a nova voz fala. Padrão: `"English"`. | COMBO | Sim | Múltiplas opções disponíveis |
-| `seed` | Controla se o nó é executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Não | 0 a 2147483647 |
+| `voz` | Voz Breeze a ser copiada. | BREEZE_VOICE | Sim | - |
+| `idioma` | Idioma que a nova voz fala. Padrão: `"English"`. | COMBO | Sim | Múltiplas opções disponíveis |
+| `semente` | Controla se o nó é executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Não | 0 a 2147483647 |
 
 ## Saídas
 

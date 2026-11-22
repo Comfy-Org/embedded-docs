@@ -8,11 +8,11 @@ Dieser Node ersetzt den Hintergrund eines Bildes durch einen neuen, von Bria gen
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Eingabebild, dessen Hintergrund ersetzt wird. | IMAGE | Ja | |
-| `background` | Beschreiben Sie den neuen Hintergrund mit einem Prompt oder steuern Sie ihn mit Referenzbildern. | DYNAMIC_COMBO | Ja | `"prompt"`<br>`"reference images"` |
+| `Bild` | Das Eingabebild, dessen Hintergrund ersetzt wird. | IMAGE | Ja | |
+| `Hintergrund` | Beschreiben Sie den neuen Hintergrund mit einem Prompt oder steuern Sie ihn mit Referenzbildern. | DYNAMIC_COMBO | Ja | `"prompt"`<br>`"reference images"` |
 | `original_quality` | Gibt die exakte Pixelgröße der Eingabe zurück, anstatt das Ergebnis auf etwa 1 Megapixel zu skalieren. Eine große Eingabe gibt dann ein großes Bild zurück. (Standard: false) | BOOLEAN | Nein | `true`<br>`false` |
-| `seed` | Derselbe Seed liefert normalerweise denselben Hintergrund; die automatische Prompt-Verfeinerung kann ihn dennoch variieren. (Standard: 42) | INT | Nein | 0 bis 2147483647 |
-| `moderation` | Moderationseinstellungen. (Standard: "false") | DYNAMIC_COMBO | Nein | `"false"`<br>`"true"` |
+| `Seed` | Derselbe Seed liefert normalerweise denselben Hintergrund; die automatische Prompt-Verfeinerung kann ihn dennoch variieren. (Standard: 42) | INT | Nein | 0 bis 2147483647 |
+| `Moderation` | Moderationseinstellungen. (Standard: "false") | DYNAMIC_COMBO | Nein | `"false"`<br>`"true"` |
 
 ### Prompt-Eingaben
 

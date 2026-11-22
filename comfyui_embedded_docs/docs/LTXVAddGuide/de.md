@@ -6,15 +6,15 @@ Der LTXVAddGuide-Node kodiert Eingabebilder oder -videos über einen VAE-Encoder
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Positives Conditioning als Eingabe, das mit Keyframe-Guidance modifiziert werden soll. | CONDITIONING | Ja | - |
-| `negative` | Negatives Conditioning als Eingabe, das mit Keyframe-Guidance modifiziert werden soll. | CONDITIONING | Ja | - |
+| `Positiv` | Positives Conditioning als Eingabe, das mit Keyframe-Guidance modifiziert werden soll. | CONDITIONING | Ja | - |
+| `Negativ` | Negatives Conditioning als Eingabe, das mit Keyframe-Guidance modifiziert werden soll. | CONDITIONING | Ja | - |
 | `vae` | VAE-Modell, das zum Kodieren der Eingabebild-/Videoframes verwendet wird. | VAE | Ja | - |
 | `latent` | Latente Eingabesequenz, die die Conditioning-Frames aufnimmt. | LATENT | Ja | - |
-| `image` | Bild oder Video, auf das das latente Video konditioniert werden soll. Muss 8*n + 1 Frames haben. Wenn das Video nicht 8*n + 1 Frames hat, wird es auf die nächstgelegene Anzahl von 8*n + 1 Frames zugeschnitten. | IMAGE | Ja | - |
-| `frame_idx` | Frame-Index, bei dem die Konditionierung beginnen soll. Bei Einzelbildern oder Videos mit 1–8 Frames ist jeder frame_idx-Wert zulässig. Bei Videos mit 9+ Frames muss frame_idx durch 8 teilbar sein; andernfalls wird es auf das nächstniedrigere Vielfache von 8 abgerundet. Negative Werte werden vom Ende des Videos an gezählt. Standard: 0. | INT | Ja | -9999 bis 9999 |
-| `strength` | Stärke des Conditioning-Einflusses, wobei 1.0 vollständiges Conditioning und 0.0 kein Conditioning anwendet. Standard: 1.0. | FLOAT | Ja | 0.0 bis 10.0 |
-| `attention_mask` | Optionale räumliche Maske im Pixelraum. Steuert den Conditioning-Einfluss pro Region über Self-Attention, multipliziert mit strength. | MASK | Nein | - |
-| `iclora_parameters` | Optionale IC-LoRA-Parameter von einem Get IC-LoRA Parameters-Node. Werden verwendet, um die Guide-Verarbeitung anzupassen, wie es für bestimmte IC-LoRAs erforderlich ist (z. B. solche mit einem reference_downscale_factor > 1). Wenn sie verkettet werden, verwendet jeder LTXVAddGuide nur die mit ihm verbundenen Parameter. | IC_LORA_PARAMETERS | Nein | - |
+| `Bild` | Bild oder Video, auf das das latente Video konditioniert werden soll. Muss 8*n + 1 Frames haben. Wenn das Video nicht 8*n + 1 Frames hat, wird es auf die nächstgelegene Anzahl von 8*n + 1 Frames zugeschnitten. | IMAGE | Ja | - |
+| `Frame-Index` | Frame-Index, bei dem die Konditionierung beginnen soll. Bei Einzelbildern oder Videos mit 1–8 Frames ist jeder frame_idx-Wert zulässig. Bei Videos mit 9+ Frames muss frame_idx durch 8 teilbar sein; andernfalls wird es auf das nächstniedrigere Vielfache von 8 abgerundet. Negative Werte werden vom Ende des Videos an gezählt. Standard: 0. | INT | Ja | -9999 bis 9999 |
+| `Stärke` | Stärke des Conditioning-Einflusses, wobei 1.0 vollständiges Conditioning und 0.0 kein Conditioning anwendet. Standard: 1.0. | FLOAT | Ja | 0.0 bis 10.0 |
+| `Attention-Maske` | Optionale räumliche Maske im Pixelraum. Steuert den Conditioning-Einfluss pro Region über Self-Attention, multipliziert mit strength. | MASK | Nein | - |
+| `IC-LoRA-Parameter` | Optionale IC-LoRA-Parameter von einem Get IC-LoRA Parameters-Node. Werden verwendet, um die Guide-Verarbeitung anzupassen, wie es für bestimmte IC-LoRAs erforderlich ist (z. B. solche mit einem reference_downscale_factor > 1). Wenn sie verkettet werden, verwendet jeder LTXVAddGuide nur die mit ihm verbundenen Parameter. | IC_LORA_PARAMETERS | Nein | - |
 
 **Hinweis:** Das Eingabebild/-video muss eine Frameanzahl nach dem Muster 8*n + 1 haben (z. B. 1, 9, 17, 25 Frames). Wenn die Eingabe über dieses Muster hinausgeht, wird sie automatisch auf die nächstgelegene gültige Frameanzahl zugeschnitten.
 

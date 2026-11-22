@@ -8,7 +8,7 @@ Der DiffControlNetLoader-Node dient zum Laden differentieller ControlNets, spezi
 
 | Feld | Beschreibung | Comfy dtype |
 | --- | --- | --- |
-| `model` | Das Basismodell, auf das das differentielle ControlNet angewendet wird, wodurch die Anpassung des Modellverhaltens ermöglicht wird. | `MODEL` |
+| `Modell` | Das Basismodell, auf das das differentielle ControlNet angewendet wird, wodurch die Anpassung des Modellverhaltens ermöglicht wird. | `MODEL` |
 | `control_net_name` | Identifiziert das spezifische differentielle ControlNet, das geladen und auf das Basismodell angewendet werden soll, um dessen Verhalten zu verändern. | `COMBO[STRING]` |
 
 ## Ausgaben

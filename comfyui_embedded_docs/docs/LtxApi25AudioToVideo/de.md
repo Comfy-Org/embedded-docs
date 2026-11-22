@@ -6,12 +6,12 @@ Dieser Node erzeugt ein Video, das einer Audiospur folgt, unter Verwendung des L
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `audio` | Audiospur, die das Video steuert. Ihre Länge (2-20 Sekunden) legt die Videodauer fest. | AUDIO | Ja | 2-20 Sekunden |
-| `model` | Die zu verwendende LTX 2.5-Modellversion. Bei Auswahl eines Modells wird außerdem die Unteroption `resolution` für dieses Modell eingeblendet. | COMBO | Ja | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
+| `Audio` | Audiospur, die das Video steuert. Ihre Länge (2-20 Sekunden) legt die Videodauer fest. | AUDIO | Ja | 2-20 Sekunden |
+| `Modell` | Die zu verwendende LTX 2.5-Modellversion. Bei Auswahl eines Modells wird außerdem die Unteroption `resolution` für dieses Modell eingeblendet. | COMBO | Ja | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
 | `resolution` | Die Ausgabeauflösung des generierten Videos. Diese Unteroption wird unter dem ausgewählten `model` angezeigt (Standard: "1920x1080"). Beide Modelle bieten dieselben Auflösungsoptionen. | COMBO | Ja | "1920x1080"<br>"1080x1920" |
-| `prompt` | Eine Textbeschreibung, die den Inhalt des generierten Videos steuert (Standard: ""). Muss mindestens 1 Zeichen und höchstens 10000 Zeichen enthalten. | STRING | Ja | 1-10000 Zeichen |
-| `seed` | Eine Zahl, die die Zufälligkeit der Generierung steuert. Derselbe Seed erzeugt dasselbe Ergebnis (Standard: 42). | INT | Ja | Beliebige Ganzzahl |
-| `image` | Optionales erstes Frame, das für das Video verwendet wird. Es wird nur ein Bild unterstützt. | IMAGE | Nein | Einzelnes Bild |
+| `Prompt` | Eine Textbeschreibung, die den Inhalt des generierten Videos steuert (Standard: ""). Muss mindestens 1 Zeichen und höchstens 10000 Zeichen enthalten. | STRING | Ja | 1-10000 Zeichen |
+| `Seed` | Eine Zahl, die die Zufälligkeit der Generierung steuert. Derselbe Seed erzeugt dasselbe Ergebnis (Standard: 42). | INT | Ja | Beliebige Ganzzahl |
+| `Bild` | Optionales erstes Frame, das für das Video verwendet wird. Es wird nur ein Bild unterstützt. | IMAGE | Nein | Einzelnes Bild |
 
 Hinweise zu Einschränkungen:
 - Die Audiodauer muss zwischen 2 und 20 Sekunden liegen; der Node gibt einen Fehler aus, wenn sie außerhalb dieses Bereichs liegt.

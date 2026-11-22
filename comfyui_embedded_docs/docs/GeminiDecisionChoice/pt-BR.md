@@ -6,13 +6,13 @@ Escolha uma das suas próprias opções para o texto, as imagens, o áudio ou o 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a usar (padrão: `"gemini-decision-1"`). | COMBO | Sim | `"gemini-decision-1"` |
-| `question` | A pergunta que as opções respondem, com até 5000 caracteres (padrão: "What style is the image?"). | STRING | Sim | 1 a 5000 caracteres |
-| `options` | Uma opção por linha, usada exatamente como digitada, com até 128 caracteres cada. Adicione uma opção como `other` para entradas que não se encaixem em nenhuma delas (padrão: `photo`, `illustration`, `3d render`, `anime`, `sketch`, `other`). | STRING | Sim | 2 a 255 opções |
-| `images` | Imagens a classificar, até 16 nos slots expansíveis (`image_1` ... `image_16`). Uma imagem em lote conta uma vez para cada imagem. | IMAGE | Não | Até 16 imagens |
-| `audio` | Clipe de áudio a classificar. | AUDIO | Não | - |
-| `video` | Clipe de vídeo a classificar. | VIDEO | Não | - |
-| `text` | Texto ao qual a pergunta se refere, como um prompt ou uma resposta de LLM, com até 20000 caracteres. | STRING | Não | Até 20000 caracteres |
+| `modelo` | Modelo a usar (padrão: `"gemini-decision-1"`). | COMBO | Sim | `"gemini-decision-1"` |
+| `pergunta` | A pergunta que as opções respondem, com até 5000 caracteres (padrão: "What style is the image?"). | STRING | Sim | 1 a 5000 caracteres |
+| `opções` | Uma opção por linha, usada exatamente como digitada, com até 128 caracteres cada. Adicione uma opção como `other` para entradas que não se encaixem em nenhuma delas (padrão: `photo`, `illustration`, `3d render`, `anime`, `sketch`, `other`). | STRING | Sim | 2 a 255 opções |
+| `imagens` | Imagens a classificar, até 16 nos slots expansíveis (`image_1` ... `image_16`). Uma imagem em lote conta uma vez para cada imagem. | IMAGE | Não | Até 16 imagens |
+| `áudio` | Clipe de áudio a classificar. | AUDIO | Não | - |
+| `vídeo` | Clipe de vídeo a classificar. | VIDEO | Não | - |
+| `texto` | Texto ao qual a pergunta se refere, como um prompt ou uma resposta de LLM, com até 20000 caracteres. | STRING | Não | Até 20000 caracteres |
 
 Forneça pelo menos 2 e no máximo 255 opções, e não repita nenhuma delas; caso contrário, o nó gera um erro. Conecte pelo menos um de `text`, `images`, `audio` ou `video`, e nomeie várias imagens como `image_1`, `image_2` e assim por diante dentro da pergunta.
 

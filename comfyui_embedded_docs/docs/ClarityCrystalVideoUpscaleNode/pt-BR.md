@@ -8,7 +8,7 @@ Selecionar um `model` revela os parâmetros específicos desse modelo.
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a usar. Selecionar um modelo revela os parâmetros específicos dele: `video` e `scale_factor`. | DYNAMIC_COMBO | Sim | `"crystal-video-upscaler"` |
+| `modelo` | Modelo a usar. Selecionar um modelo revela os parâmetros específicos dele: `video` e `scale_factor`. | DYNAMIC_COMBO | Sim | `"crystal-video-upscaler"` |
 | `video` | O vídeo a ser ampliado. | VIDEO | Sim | N/A |
 | `scale_factor` | Fator pelo qual multiplicar a largura e a altura do vídeo. A saída é limitada a 9 megapixels por quadro e a 360 megapixel-segundos por clipe, de modo que vídeos grandes ou longos são ampliados por um fator menor, e o fator é reduzido novamente quando faria um lado ultrapassar 5120 pixels (padrão: 2.0). | FLOAT | Sim | 1.0 a 200.0 (passo 0.1) |
 

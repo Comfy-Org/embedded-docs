@@ -6,7 +6,7 @@ Der LoadImageOutput-Node lädt Bilder aus dem Ausgabeordner. Wenn Sie auf die Ak
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `image` | Lädt ein Bild aus dem Ausgabeordner. Enthält eine Upload-Option und eine Aktualisierungsschaltfläche zum Aktualisieren der Bildliste. Wenn die Aktualisierungsschaltfläche angeklickt wird, aktualisiert der Node die Bildliste und wählt automatisch das erste Bild aus, was eine einfache Iteration ermöglicht. | COMBO | Ja | Mehrere Optionen verfügbar |
+| `Bild` | Lädt ein Bild aus dem Ausgabeordner. Enthält eine Upload-Option und eine Aktualisierungsschaltfläche zum Aktualisieren der Bildliste. Wenn die Aktualisierungsschaltfläche angeklickt wird, aktualisiert der Node die Bildliste und wählt automatisch das erste Bild aus, was eine einfache Iteration ermöglicht. | COMBO | Ja | Mehrere Optionen verfügbar |
 
 ## Ausgaben
 

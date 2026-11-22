@@ -6,11 +6,11 @@ O nó **PairConditioningSetDefaultAndCombine** define valores de condicionamento
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `positive` | A entrada primária de condicionamento positivo a ser processada | CONDITIONING | Sim | - |
-| `negative` | A entrada primária de condicionamento negativo a ser processada | CONDITIONING | Sim | - |
-| `positive_DEFAULT` | Os valores padrão de condicionamento positivo a serem usados como fallback | CONDITIONING | Sim | - |
-| `negative_DEFAULT` | Os valores padrão de condicionamento negativo a serem usados como fallback | CONDITIONING | Sim | - |
-| `hooks` | Grupo opcional de hooks para lógica de processamento personalizada | HOOKS | Não | - |
+| `positivo` | A entrada primária de condicionamento positivo a ser processada | CONDITIONING | Sim | - |
+| `negativo` | A entrada primária de condicionamento negativo a ser processada | CONDITIONING | Sim | - |
+| `positivo_PADRÃO` | Os valores padrão de condicionamento positivo a serem usados como fallback | CONDITIONING | Sim | - |
+| `negativo_PADRÃO` | Os valores padrão de condicionamento negativo a serem usados como fallback | CONDITIONING | Sim | - |
+| `ganchos` | Grupo opcional de hooks para lógica de processamento personalizada | HOOKS | Não | - |
 
 ## Saídas
 

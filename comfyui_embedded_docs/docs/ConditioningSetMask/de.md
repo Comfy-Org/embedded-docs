@@ -9,8 +9,8 @@ Dieser Node dient dazu, das Conditioning eines generativen Modells zu verändern
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
 | `CONDITIONING` | Die zu verändernden Conditioning-Daten. Sie dienen als Grundlage für die Anwendung der Maske und der Stärkeanpassungen. | CONDITIONING |
-| `mask` | Ein Masken-Tensor, der die Bereiche innerhalb des Conditionings angibt, die verändert werden sollen. | `MASK` |
-| `strength` | Die Stärke der Wirkung der Maske auf das Conditioning; ermöglicht eine Feinabstimmung der angewendeten Änderungen. | `FLOAT` |
+| `Maske` | Ein Masken-Tensor, der die Bereiche innerhalb des Conditionings angibt, die verändert werden sollen. | `MASK` |
+| `Stärke` | Die Stärke der Wirkung der Maske auf das Conditioning; ermöglicht eine Feinabstimmung der angewendeten Änderungen. | `FLOAT` |
 | `set_cond_area` | Legt fest, ob die Wirkung der Maske auf den Standardbereich angewendet oder durch die Maske selbst begrenzt wird, was Flexibilität beim Anvisieren bestimmter Regionen bietet. | COMBO[STRING] |
 
 ## Ausgaben

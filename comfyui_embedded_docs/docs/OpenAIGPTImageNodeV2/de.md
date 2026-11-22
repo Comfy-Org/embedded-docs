@@ -28,7 +28,7 @@ Diese Eingaben erscheinen, wenn `model` auf `gpt-image-2.6-flare` oder `gpt-imag
 | `quality` | Bildqualität, beeinflusst Kosten und Generierungszeit (Standard: `"low"`). | COMBO | Ja | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 | `model.images` | Optionales Referenzbild bzw. optionale Referenzbilder für die Bildbearbeitung. Bis zu 16 Bilder. Details siehe Referenzeingaben. | IMAGE | Nein | 0 bis 16 |
 | `model.mask` | Optionale Maske für Inpainting (weiße Bereiche werden ersetzt). Erfordert genau ein Referenzbild. | MASK | Nein | N/V |
-| `model.complexity` | Wie stark das Modell das Bild vor dem Rendern plant. Niedrigere Werte liefern schneller Ergebnisse, höhere Werte planen intensiver. Standard: `"high"`. | COMBO | Ja | `"low"`<br>`"medium"`<br>`"high"` |
+| `Komplexität` | Wie stark das Modell das Bild vor dem Rendern plant. Niedrigere Werte liefern schneller Ergebnisse, höhere Werte planen intensiver. Standard: `"high"`. | COMBO | Ja | `"low"`<br>`"medium"`<br>`"high"` |
 
 ### gpt-image-2.5-flare- und gpt-image-2.5-sunburst-Eingaben
 

@@ -6,21 +6,21 @@ WanAnimateToVideo bereitet Conditioning-Daten und ein initiales Latent für die 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `positive` | Positives Conditioning, um die Generierung in Richtung gewünschter Inhalte zu steuern. | CONDITIONING | Ja | - |
-| `negative` | Negatives Conditioning, um die Generierung von unerwünschten Inhalten wegzulenken. | CONDITIONING | Ja | - |
+| `positiv` | Positives Conditioning, um die Generierung in Richtung gewünschter Inhalte zu steuern. | CONDITIONING | Ja | - |
+| `negativ` | Negatives Conditioning, um die Generierung von unerwünschten Inhalten wegzulenken. | CONDITIONING | Ja | - |
 | `vae` | VAE-Modell, das zum Codieren von Bild- und Videoeingaben in den latenten Raum verwendet wird. | VAE | Ja | - |
-| `width` | Breite des generierten Videos in Pixeln (Standard: 832, Schritt: 16). | INT | Ja | 16 bis MAX_RESOLUTION |
-| `height` | Höhe des generierten Videos in Pixeln (Standard: 480, Schritt: 16). | INT | Ja | 16 bis MAX_RESOLUTION |
-| `length` | Anzahl der zu generierenden Frames (Standard: 77, Schritt: 4). | INT | Ja | 1 bis MAX_RESOLUTION |
-| `batch_size` | Anzahl der Videos, die in einem Batch generiert werden (Standard: 1). | INT | Ja | 1 bis 4096 |
+| `Breite` | Breite des generierten Videos in Pixeln (Standard: 832, Schritt: 16). | INT | Ja | 16 bis MAX_RESOLUTION |
+| `Höhe` | Höhe des generierten Videos in Pixeln (Standard: 480, Schritt: 16). | INT | Ja | 16 bis MAX_RESOLUTION |
+| `Länge` | Anzahl der zu generierenden Frames (Standard: 77, Schritt: 4). | INT | Ja | 1 bis MAX_RESOLUTION |
+| `Batch-Größe` | Anzahl der Videos, die in einem Batch generiert werden (Standard: 1). | INT | Ja | 1 bis 4096 |
 | `clip_vision_output` | Optionale CLIP-Vision-Ausgabe, die sowohl zum positiven als auch zum negativen Conditioning hinzugefügt wird. | CLIP_VISION_OUTPUT | Nein | - |
-| `reference_image` | Referenzbild, das als Ausgangspunkt für das Erscheinungsbild des generierten Videos verwendet wird. Wenn nicht angegeben, wird ein schwarzes Bild verwendet. | IMAGE | Nein | - |
-| `face_video` | Videoeingabe, die Vorgaben für Gesichtsausdrücke liefert. Sie wird intern auf 512x512 angepasst und auf den Bereich -1.0 bis 1.0 skaliert. | IMAGE | Nein | - |
-| `pose_video` | Videoeingabe, die Pose- und Bewegungsvorgaben liefert. | IMAGE | Nein | - |
+| `Referenzbild` | Referenzbild, das als Ausgangspunkt für das Erscheinungsbild des generierten Videos verwendet wird. Wenn nicht angegeben, wird ein schwarzes Bild verwendet. | IMAGE | Nein | - |
+| `Gesichtsvideo` | Videoeingabe, die Vorgaben für Gesichtsausdrücke liefert. Sie wird intern auf 512x512 angepasst und auf den Bereich -1.0 bis 1.0 skaliert. | IMAGE | Nein | - |
+| `Pose-Video` | Videoeingabe, die Pose- und Bewegungsvorgaben liefert. | IMAGE | Nein | - |
 | `continue_motion_max_frames` | Maximale Anzahl von Frames, die aus einer vorherigen Bewegungssequenz übernommen werden (Standard: 5, Schritt: 4). | INT | Ja | 1 bis MAX_RESOLUTION |
-| `background_video` | Hintergrundvideo, das verwendet wird, um die Nicht-Charakter-Bereiche der Frames zu füllen. | IMAGE | Nein | - |
-| `character_mask` | Maske, die Charakterbereiche definiert und verwendet wird, um den Charakter vom Hintergrund zu trennen. | MASK | Nein | - |
-| `continue_motion` | Vorherige Bewegungs-Frames, von denen fortgesetzt wird, um die zeitliche Konsistenz mit früher generierten Chunks zu wahren. | IMAGE | Nein | - |
+| `Hintergrundvideo` | Hintergrundvideo, das verwendet wird, um die Nicht-Charakter-Bereiche der Frames zu füllen. | IMAGE | Nein | - |
+| `Charaktermaske` | Maske, die Charakterbereiche definiert und verwendet wird, um den Charakter vom Hintergrund zu trennen. | MASK | Nein | - |
+| `Bewegung fortsetzen` | Vorherige Bewegungs-Frames, von denen fortgesetzt wird, um die zeitliche Konsistenz mit früher generierten Chunks zu wahren. | IMAGE | Nein | - |
 | `video_frame_offset` | Die Anzahl der Frames, um die in allen Eingabevideos vorgespult wird. Wird verwendet, um längere Videos chunkweise zu generieren. Verbinden Sie mit der `video_frame_offset`-Ausgabe des vorherigen Nodes, um ein Video zu verlängern. (Standard: 0, Schritt: 1) | INT | Ja | 0 bis MAX_RESOLUTION |
 
 **Parametereinschränkungen:**

@@ -6,10 +6,10 @@ Der SamplerDPMPP_2M_SDE-Node erstellt einen DPM++ 2M SDE-Sampler für Diffusions
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `solver_type` | Der Typ des Differentialgleichungslösers, der für den Sampling-Prozess verwendet werden soll (Standard: "midpoint") | COMBO | Ja | `"midpoint"`<br>`"heun"` |
+| `Solver-Typ` | Der Typ des Differentialgleichungslösers, der für den Sampling-Prozess verwendet werden soll (Standard: "midpoint") | COMBO | Ja | `"midpoint"`<br>`"heun"` |
 | `eta` | Steuert die Stochastizität des Sampling-Prozesses (Standard: 1.0) | FLOAT | Ja | 0.0 - 100.0 |
 | `s_noise` | Steuert die Menge des während des Samplings hinzugefügten Rauschens (Standard: 1.0) | FLOAT | Ja | 0.0 - 100.0 |
-| `noise_device` | Das Gerät, auf dem die Rauschberechnungen durchgeführt werden. Wenn auf "cpu" gesetzt, verwendet der Sampler eine CPU-basierte Rauscherzeugung; wenn auf "gpu" gesetzt, verwendet er eine GPU-basierte Rauscherzeugung für möglicherweise schnellere Leistung (Standard: "gpu") | COMBO | Ja | `"gpu"`<br>`"cpu"` |
+| `Noise-Device` | Das Gerät, auf dem die Rauschberechnungen durchgeführt werden. Wenn auf "cpu" gesetzt, verwendet der Sampler eine CPU-basierte Rauscherzeugung; wenn auf "gpu" gesetzt, verwendet er eine GPU-basierte Rauscherzeugung für möglicherweise schnellere Leistung (Standard: "gpu") | COMBO | Ja | `"gpu"`<br>`"cpu"` |
 
 Hinweis: `eta`, `s_noise` und `noise_device` sind als erweiterte Parameter markiert und erscheinen im erweiterten Abschnitt der Benutzeroberfläche des Nodes.
 

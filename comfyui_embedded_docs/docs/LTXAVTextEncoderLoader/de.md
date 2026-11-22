@@ -6,9 +6,9 @@ Dieser Node lädt einen spezialisierten Textencoder für das LTXV-Audiomodell. E
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `text_encoder` | Der Dateiname des zu ladenden LTXV-Textencoder-Modells. Die verfügbaren Optionen werden aus dem Ordner `text_encoders` geladen. | COMBO | Ja | Mehrere Optionen verfügbar |
-| `ckpt_name` | Der Dateiname des zu ladenden Checkpoints. Die verfügbaren Optionen werden aus dem Ordner `checkpoints` geladen. | COMBO | Ja | Mehrere Optionen verfügbar |
-| `device` | Gibt das Gerät an, auf das das Modell geladen werden soll. Verwenden Sie `"cpu"`, um das Laden auf die CPU zu erzwingen. Das Standardverhalten (`"default"`) verwendet die automatische Gerätezuweisung des Systems (Standard: `"default"`). Dies ist ein erweiterter Parameter. | COMBO | Nein | `"default"`<br>`"cpu"` |
+| `Text-Encoder` | Der Dateiname des zu ladenden LTXV-Textencoder-Modells. Die verfügbaren Optionen werden aus dem Ordner `text_encoders` geladen. | COMBO | Ja | Mehrere Optionen verfügbar |
+| `Checkpoint-Name` | Der Dateiname des zu ladenden Checkpoints. Die verfügbaren Optionen werden aus dem Ordner `checkpoints` geladen. | COMBO | Ja | Mehrere Optionen verfügbar |
+| `Gerät` | Gibt das Gerät an, auf das das Modell geladen werden soll. Verwenden Sie `"cpu"`, um das Laden auf die CPU zu erzwingen. Das Standardverhalten (`"default"`) verwendet die automatische Gerätezuweisung des Systems (Standard: `"default"`). Dies ist ein erweiterter Parameter. | COMBO | Nein | `"default"`<br>`"cpu"` |
 
 **Hinweis:** Die Parameter `text_encoder` und `ckpt_name` arbeiten zusammen. Der Node lädt beide angegebenen Dateien, um ein einzelnes, funktionsfähiges CLIP-Modell zu erstellen. Die Dateien müssen mit der LTXV-Architektur kompatibel sein, und der Textencoder sollte ein Gemma 3 12B- oder ein passendes Gemma 4-Modell sein.
 

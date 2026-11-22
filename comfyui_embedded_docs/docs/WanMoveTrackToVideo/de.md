@@ -6,17 +6,17 @@ Der Node WanMoveTrackToVideo bereitet Konditionierungs- und Latentraum-Daten fü
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `positive` | Die zu modifizierende positive Konditionierungseingabe. | CONDITIONING | Ja | - |
-| `negative` | Die zu modifizierende negative Konditionierungseingabe. | CONDITIONING | Ja | - |
+| `Positiv` | Die zu modifizierende positive Konditionierungseingabe. | CONDITIONING | Ja | - |
+| `Negativ` | Die zu modifizierende negative Konditionierungseingabe. | CONDITIONING | Ja | - |
 | `vae` | Das VAE-Modell, das verwendet wird, um das Startbild in den Latentraum zu kodieren. | VAE | Ja | - |
-| `tracks` | Optionale Bewegungsverfolgungsdaten, die Objektpfade enthalten. Verwendet `track_path` und optional `track_visibility`; wenn `track_visibility` fehlt, werden alle Tracks als sichtbar behandelt. | TRACKS | Nein | - |
-| `strength` | Stärke der Track-Konditionierung. (Standard: 1.0) | FLOAT | Ja | 0.0 - 100.0 |
-| `width` | Die Breite des Ausgabevideos. Muss durch 16 teilbar sein. (Standard: 832) | INT | Ja | 16 - MAX_RESOLUTION |
-| `height` | Die Höhe des Ausgabevideos. Muss durch 16 teilbar sein. (Standard: 480) | INT | Ja | 16 - MAX_RESOLUTION |
-| `length` | Die Anzahl der Frames in der Videosequenz, in Schritten von 4. (Standard: 81) | INT | Ja | 1 - MAX_RESOLUTION |
-| `batch_size` | Die Batch-Größe für die Latent-Ausgabe. (Standard: 1) | INT | Ja | 1 - 4096 |
-| `start_image` | Das Startbild oder die zu kodierende Bildsequenz. | IMAGE | Ja | - |
-| `clip_vision_output` | Optionale Ausgabe eines CLIP-Vision-Modells, die der Konditionierung hinzugefügt wird. | CLIP_VISION_OUTPUT | Nein | - |
+| `Spuren` | Optionale Bewegungsverfolgungsdaten, die Objektpfade enthalten. Verwendet `track_path` und optional `track_visibility`; wenn `track_visibility` fehlt, werden alle Tracks als sichtbar behandelt. | TRACKS | Nein | - |
+| `Stärke` | Stärke der Track-Konditionierung. (Standard: 1.0) | FLOAT | Ja | 0.0 - 100.0 |
+| `Breite` | Die Breite des Ausgabevideos. Muss durch 16 teilbar sein. (Standard: 832) | INT | Ja | 16 - MAX_RESOLUTION |
+| `Höhe` | Die Höhe des Ausgabevideos. Muss durch 16 teilbar sein. (Standard: 480) | INT | Ja | 16 - MAX_RESOLUTION |
+| `Länge` | Die Anzahl der Frames in der Videosequenz, in Schritten von 4. (Standard: 81) | INT | Ja | 1 - MAX_RESOLUTION |
+| `Batchgröße` | Die Batch-Größe für die Latent-Ausgabe. (Standard: 1) | INT | Ja | 1 - 4096 |
+| `Startbild` | Das Startbild oder die zu kodierende Bildsequenz. | IMAGE | Ja | - |
+| `clip-Vision-Ausgabe` | Optionale Ausgabe eines CLIP-Vision-Modells, die der Konditionierung hinzugefügt wird. | CLIP_VISION_OUTPUT | Nein | - |
 
 **Hinweis:** Der Parameter `strength` hat nur dann eine Wirkung, wenn `tracks` bereitgestellt werden und `strength` größer als 0.0 ist; die Track-Konditionierung wird nur angewendet, wenn zusätzlich `start_image` bereitgestellt wird. Wenn `tracks` nicht bereitgestellt werden oder `strength` 0.0 ist, wird die Track-Mischung übersprungen. Wenn die Track-Mischung aktiv ist, erhält die positive Konditionierung das track-gemischte latente Bild, während die negative Konditionierung das unveränderte latente Bild erhält. Wenn `start_image` nicht bereitgestellt wird, wird keine latente Bild- und Masken-Konditionierung erstellt; die positive und negative Konditionierung werden unverändert durchgereicht (außer dass `clip_vision_output` weiterhin hinzugefügt wird, sofern bereitgestellt), und der Node gibt ein leeres Latent aus.
 

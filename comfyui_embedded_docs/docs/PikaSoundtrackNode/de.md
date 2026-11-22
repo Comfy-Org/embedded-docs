@@ -6,9 +6,9 @@ Dieser Node erzeugt mit Pika einen synchronisierten Soundtrack für ein Video. D
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `video` | Der Clip, für den ein Soundtrack erstellt werden soll. Bis zu 10 Minuten. | VIDEO | Ja | - |
-| `instruction` | Welcher Ton erzeugt werden soll: Soundeffekte, Atmosphäre, Musik oder Stil. Leer lassen, um ihn aus dem Bild abzuleiten. Standard: "" (leere Zeichenkette). | STRING | Ja | 0 bis 10000 Zeichen |
-| `seed` | Seed für das Sampling. Standard: 42. | INT | Ja | 0 bis 2147483647 |
+| `Video` | Der Clip, für den ein Soundtrack erstellt werden soll. Bis zu 10 Minuten. | VIDEO | Ja | - |
+| `Anweisung` | Welcher Ton erzeugt werden soll: Soundeffekte, Atmosphäre, Musik oder Stil. Leer lassen, um ihn aus dem Bild abzuleiten. Standard: "" (leere Zeichenkette). | STRING | Ja | 0 bis 10000 Zeichen |
+| `Seed` | Seed für das Sampling. Standard: 42. | INT | Ja | 0 bis 2147483647 |
 
 **Einschränkungen:**
 

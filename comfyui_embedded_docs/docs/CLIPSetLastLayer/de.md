@@ -7,7 +7,7 @@
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `clip` | Das zu ändernde CLIP-Modell | CLIP | Ja | - |
-| `stop_at_clip_layer` | Gibt an, bei welcher Schicht gestoppt werden soll. Ein Wert von -1 verwendet alle Schichten, während -24 nur die erste Schicht verwendet (Standard: -1). Dies ist ein erweiterter Parameter. | INT | Ja | -24 bis -1 (Schritt: 1) |
+| `Bei CLIP-Ebene stoppen` | Gibt an, bei welcher Schicht gestoppt werden soll. Ein Wert von -1 verwendet alle Schichten, während -24 nur die erste Schicht verwendet (Standard: -1). Dies ist ein erweiterter Parameter. | INT | Ja | -24 bis -1 (Schritt: 1) |
 
 Die Werte sind negativ und zählen vom Ende des Modells rückwärts: -1 bezieht sich auf die letzte (tiefste) Schicht und -24 auf die erste (flachste) Schicht, weshalb der zulässige Bereich nur -24 bis -1 abdeckt.
 

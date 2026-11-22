@@ -6,7 +6,7 @@ Este nó gera respostas de texto com o modelo Hy4 da Tencent. Ele envia um promp
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo usado para gerar a resposta. Selecioná-lo revela suas entradas abaixo. Padrão: `"Hy4"`. | DYNAMIC_COMBO | Sim | `"Hy4"` |
+| `modelo` | O modelo usado para gerar a resposta. Selecioná-lo revela suas entradas abaixo. Padrão: `"Hy4"`. | DYNAMIC_COMBO | Sim | `"Hy4"` |
 
 ### Entradas do Hy4
 

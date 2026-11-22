@@ -6,9 +6,9 @@ Der SolidMask-Node erzeugt eine gleichmäßige Maske mit einem angegebenen Wert 
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `value` | Legt den Intensitätswert der Maske fest und beeinflusst ihr Gesamtbild sowie ihren Nutzen in nachfolgenden Operationen. | FLOAT |
-| `width` | Bestimmt die Breite der erzeugten Maske und beeinflusst direkt ihre Größe und ihr Seitenverhältnis. | INT |
-| `height` | Legt die Höhe der erzeugten Maske fest und beeinflusst ihre Größe und ihr Seitenverhältnis. | INT |
+| `Wert` | Legt den Intensitätswert der Maske fest und beeinflusst ihr Gesamtbild sowie ihren Nutzen in nachfolgenden Operationen. | FLOAT |
+| `Breite` | Bestimmt die Breite der erzeugten Maske und beeinflusst direkt ihre Größe und ihr Seitenverhältnis. | INT |
+| `Höhe` | Legt die Höhe der erzeugten Maske fest und beeinflusst ihre Größe und ihr Seitenverhältnis. | INT |
 
 ## Ausgaben
 

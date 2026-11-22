@@ -6,10 +6,10 @@ Dieser Node synchronisiert die Mundbewegung in einem Video mithilfe der sync.so 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `video` | Aufnahme des Sprechers, die neu synchronisiert werden soll. Bis zu 4K (4096x2160); eine konstante Bildrate von 24/25/30 fps funktioniert am besten. | VIDEO | Ja | - |
-| `audio` | Sprach-Audio, auf das die Mundbewegung abgestimmt werden soll. | AUDIO | Ja | - |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 42). | INT | Ja | 0 bis 2147483647 |
-| `model` | Generierungsmodell von sync.so. | COMBO | Ja | "sync-3" |
+| `Video` | Aufnahme des Sprechers, die neu synchronisiert werden soll. Bis zu 4K (4096x2160); eine konstante Bildrate von 24/25/30 fps funktioniert am besten. | VIDEO | Ja | - |
+| `Audio` | Sprach-Audio, auf das die Mundbewegung abgestimmt werden soll. | AUDIO | Ja | - |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 42). | INT | Ja | 0 bis 2147483647 |
+| `Modell` | Generierungsmodell von sync.so. | COMBO | Ja | "sync-3" |
 
 Der Parameter `model` ist ein dynamisches Combo-Feld, das die folgenden Unterparameter enthält:
 

@@ -6,13 +6,13 @@ Avalie de 1 a 10 o texto, as imagens, o áudio ou o vídeo que você conectar e 
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a usar. `heygen-decision-1-turbo` é mais rápido e custa menos que `heygen-decision-1` (padrão: `"heygen-decision-1"`). | COMBO | Sim | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | O que avaliar, indicando o que 1 e 10 significam (padrão: "Rate the technical quality of the image from 1 (worst) to 10 (best)."). | STRING | Sim | 1 a 5000 caracteres |
-| `threshold` | `result` é true quando a pontuação é pelo menos este valor. Imagens limpas e nítidas pontuam cerca de 7; imagens muito danificadas, cerca de 3 a 5 (padrão: 6.0). | FLOAT | Sim | 1.0 a 10.0 (passo: 0.1) |
-| `images` | Imagens para avaliar, até 4 no total, contando cada quadro de um lote. Elas são numeradas de `image_1` a `image_4` em ordem entre os soquetes. | IMAGE | Não | Até 4 imagens |
+| `modelo` | Modelo a usar. `heygen-decision-1-turbo` é mais rápido e custa menos que `heygen-decision-1` (padrão: `"heygen-decision-1"`). | COMBO | Sim | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
+| `pergunta` | O que avaliar, indicando o que 1 e 10 significam (padrão: "Rate the technical quality of the image from 1 (worst) to 10 (best)."). | STRING | Sim | 1 a 5000 caracteres |
+| `limiar` | `result` é true quando a pontuação é pelo menos este valor. Imagens limpas e nítidas pontuam cerca de 7; imagens muito danificadas, cerca de 3 a 5 (padrão: 6.0). | FLOAT | Sim | 1.0 a 10.0 (passo: 0.1) |
+| `imagens` | Imagens para avaliar, até 4 no total, contando cada quadro de um lote. Elas são numeradas de `image_1` a `image_4` em ordem entre os soquetes. | IMAGE | Não | Até 4 imagens |
 | `audio_1` | Áudio para avaliar, até 30 minutos. | AUDIO | Não | Até 30 minutos |
 | `video_1` | Vídeo para avaliar, até 60 segundos. | VIDEO | Não | Até 60 segundos |
-| `text` | Texto sobre o qual a pergunta trata, como um prompt ou uma resposta de LLM, até 20000 caracteres. | STRING | Não | Até 20000 caracteres |
+| `texto` | Texto sobre o qual a pergunta trata, como um prompt ou uma resposta de LLM, até 20000 caracteres. | STRING | Não | Até 20000 caracteres |
 
 Conecte pelo menos uma entrada para avaliar e nomeie-as pelo soquete dentro da pergunta, por exemplo "Quão nítida está a image_1?".
 

@@ -6,7 +6,7 @@ Der **ColorToRGBInt**-Node konvertiert eine im Hexadezimalformat angegebene Farb
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `color` | Ein Farbwert im Hexadezimalformat `#RRGGBB` oder `#RRGGBBAA`. Muss 7 oder 9 Zeichen lang sein und mit `#` beginnen. | COLOR | Ja | `#RRGGBB`<br>`#RRGGBBAA` |
+| `Farbe` | Ein Farbwert im Hexadezimalformat `#RRGGBB` oder `#RRGGBBAA`. Muss 7 oder 9 Zeichen lang sein und mit `#` beginnen. | COLOR | Ja | `#RRGGBB`<br>`#RRGGBBAA` |
 
 **Hinweis:** Der Eingabe-String `color` muss dem Format `#RRGGBB` oder `#RRGGBBAA` folgen. Wenn er nicht 7 oder 9 Zeichen lang ist, nicht mit `#` beginnt oder ungültige Hexadezimalzeichen enthält, löst der Node einen Fehler aus.
 

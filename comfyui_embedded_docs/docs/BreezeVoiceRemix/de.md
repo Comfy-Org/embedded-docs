@@ -6,10 +6,10 @@ Erstellt eine geänderte Kopie einer Stimme in derselben Sprache, entweder aus e
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `voice` | Zu ändernde Breeze-Stimme. | BREEZE_VOICE | Ja | - |
-| `change` | `custom` beschreibt die Änderung als Text, `preset` wählt eine benannte Änderung. Standard: `"custom"`. | DYNAMIC_COMBO | Ja | `"custom"`<br>`"preset"` |
-| `strength` | Höhere Werte verändern die Stimme stärker. Standard: 4.0. | FLOAT | Nein | 1.0 bis 10.0 (Schritt 0.1) |
-| `seed` | Steuert, ob der Knoten erneut ausgeführt wird; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Nein | 0 bis 2147483647 |
+| `Stimme` | Zu ändernde Breeze-Stimme. | BREEZE_VOICE | Ja | - |
+| `Änderung` | `custom` beschreibt die Änderung als Text, `preset` wählt eine benannte Änderung. Standard: `"custom"`. | DYNAMIC_COMBO | Ja | `"custom"`<br>`"preset"` |
+| `Stärke` | Höhere Werte verändern die Stimme stärker. Standard: 4.0. | FLOAT | Nein | 1.0 bis 10.0 (Schritt 0.1) |
+| `Seed` | Steuert, ob der Knoten erneut ausgeführt wird; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Nein | 0 bis 2147483647 |
 
 ### Eingaben für die Änderung "custom"
 

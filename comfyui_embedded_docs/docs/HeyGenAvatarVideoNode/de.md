@@ -8,13 +8,13 @@ Erzeugt ein Talking-Presenter-Video aus einem HeyGen-Avatar. Dieser Node erstell
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `engine` | Rendering-Engine; jede Option listet nur die Avatare auf, die sie unterstützt. `"auto"` bietet jeden Avatar an und wählt seine beste Engine (Avatar IV wird bevorzugt). Avatar V hat die höchste Wiedergabetreue, Avatar III ist am kostengünstigsten. | DYNAMIC_COMBO | Ja | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
+| `Engine` | Rendering-Engine; jede Option listet nur die Avatare auf, die sie unterstützt. `"auto"` bietet jeden Avatar an und wählt seine beste Engine (Avatar IV wird bevorzugt). Avatar V hat die höchste Wiedergabetreue, Avatar III ist am kostengünstigsten. | DYNAMIC_COMBO | Ja | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
 | `custom_avatar_id` | Optionale HeyGen-Avatar-Look-ID. Wenn gesetzt, überschreibt sie den oben ausgewählten Avatar. Jeder der über 3000 öffentlichen Looks von HeyGen (oder Ihre privaten Avatare) kann verwendet werden. Standard: `""`. | STRING | Nein |  |
-| `speech` | Steuert den Avatar mit einem Textskript (HeyGen Text-to-Speech) oder Ihrem eigenen Audio. Anzeigename: „Sprachquelle“. | DYNAMIC_COMBO | Ja | `"script"`<br>`"audio"` |
-| `resolution` | Ausgabeauflösung des Videos. Standard: `"1080p"`. | COMBO | Nein | `"720p"`<br>`"1080p"` |
+| `Sprache` | Steuert den Avatar mit einem Textskript (HeyGen Text-to-Speech) oder Ihrem eigenen Audio. Anzeigename: „Sprachquelle“. | DYNAMIC_COMBO | Ja | `"script"`<br>`"audio"` |
+| `Auflösung` | Ausgabeauflösung des Videos. Standard: `"1080p"`. | COMBO | Nein | `"720p"`<br>`"1080p"` |
 | `aspect_ratio` | Ausgabe-Seitenverhältnis. `"auto"` folgt dem Quellmaterial des Avatars. Standard: `"auto"`. | COMBO | Nein | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
 | `background_color` | Optionale einfarbige Hintergrundfarbe als Hex-Code (z. B. `"#00ff00"`). Leer lassen, um den eigenen Hintergrund des Avatars zu verwenden. Wenn angegeben, muss der Wert mit `#` beginnen. Standard: `""`. | STRING | Nein |  |
-| `seed` | Wird nicht an HeyGen gesendet; ändern Sie ihn, um einen erneuten Lauf zu erzwingen. Standard: `42`. | INT | Nein | Min.: 0<br>Max.: 2147483647 |
+| `Seed` | Wird nicht an HeyGen gesendet; ändern Sie ihn, um einen erneuten Lauf zu erzwingen. Standard: `42`. | INT | Nein | Min.: 0<br>Max.: 2147483647 |
 
 ### `auto` Eingaben
 

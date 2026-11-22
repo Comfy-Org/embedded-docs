@@ -8,11 +8,11 @@ Erzeugt Bilder aus Text-Prompts mit den Modellen Recraft V4 und V4.1. Es sendet 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das für die Generierung zu verwendende Modell. Die recraftv4_styles-Modelle sind für stilkonsistente Generierung ausgelegt und erfordern immer eine style_id oder style_references. `recraftv4_1_flash` ist das schnellste und günstigste Modell und unterstützt überhaupt keine Stile. | DYNAMIC_COMBO | Ja | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
-| `prompt` | Prompt für die Bildgenerierung. Maximal 10.000 Zeichen. | STRING | Ja | 1 bis 10000 Zeichen |
+| `Modell` | Das für die Generierung zu verwendende Modell. Die recraftv4_styles-Modelle sind für stilkonsistente Generierung ausgelegt und erfordern immer eine style_id oder style_references. `recraftv4_1_flash` ist das schnellste und günstigste Modell und unterstützt überhaupt keine Stile. | DYNAMIC_COMBO | Ja | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `Prompt` | Prompt für die Bildgenerierung. Maximal 10.000 Zeichen. | STRING | Ja | 1 bis 10000 Zeichen |
 | `negative_prompt` | Dieser Eingabewert wird ignoriert: Negative Prompts werden von den Modellen Recraft V4 und V4.1 nicht unterstützt. | STRING | Ja | N/A |
 | `n` | Die Anzahl der zu generierenden Bilder (Standard: 1). | INT | Ja | 1 bis 6 |
-| `seed` | Seed, der bestimmt, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 bis 18446744073709551615 |
+| `Seed` | Seed, der bestimmt, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 bis 18446744073709551615 |
 | `recraft_controls` | Optionale zusätzliche Steuerungen für die Generierung über den Recraft Controls Node. | CUSTOM | Nein | N/A |
 | `style_id` | UUID eines Recraft-V4-Stils, der angewendet werden soll, z. B. aus dem Recraft V4 Create Style Node oder der style_id-Ausgabe eines vorherigen Laufs. Kann nicht mit style_references kombiniert werden (Standard: leer). | STRING | Nein | Gültige UUID-Zeichenfolge |
 | `style_match` | Wie eng der Stil befolgt wird: precise reproduziert ihn im Detail, flexible entspricht dem allgemeinen Erscheinungsbild. Wird nur verwendet, wenn ein Stil bereitgestellt wird (Standard: "precise"). | COMBO | Nein | "precise"<br>"flexible" |

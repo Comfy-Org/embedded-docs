@@ -6,7 +6,7 @@ Dieser Node erstellt ein persönliches Bild-Asset für den Seedance 2.0-Dienst v
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Bild, das als persönliches Asset registriert werden soll. | IMAGE | Ja |  |
+| `Bild` | Das Bild, das als persönliches Asset registriert werden soll. | IMAGE | Ja |  |
 | `group_id` | Wiederverwenden Sie eine vorhandene Seedance-Asset-Gruppen-ID, um die erneute Überprüfung derselben realen Person zu überspringen. Leer lassen, um die Authentifizierung als reale Person im Browser durchzuführen und eine neue Gruppe zu erstellen (Standard: leer). | STRING | Nein |  |
 
 **Bildbeschränkungen:**

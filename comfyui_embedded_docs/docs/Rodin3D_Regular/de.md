@@ -6,7 +6,7 @@ Der Node Rodin 3D Regular erzeugt 3D-Assets mithilfe der Rodin API. Er nimmt Ein
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `Images` | Eingabebilder, die für die 3D-Modellgenerierung verwendet werden. Es können bis zu 5 Bilder bereitgestellt werden. Mindestens 1 Bild ist erforderlich. | IMAGE | Ja | - |
+| `Bilder` | Eingabebilder, die für die 3D-Modellgenerierung verwendet werden. Es können bis zu 5 Bilder bereitgestellt werden. Mindestens 1 Bild ist erforderlich. | IMAGE | Ja | - |
 | `Seed` | Zufälliger Seed-Wert für reproduzierbare Ergebnisse (Standard: 0). | INT | Nein | 0 bis 65535 |
 | `Material_Type` | Typ des Materials, das auf das 3D-Modell angewendet wird (Standard: "PBR"). | STRING | Nein | `"PBR"`<br>`"Shaded"` |
 | `Polygon_count` | Ziel-Polygonanzahl und Mesh-Typ für das generierte 3D-Modell (Standard: "18K-Quad"). | STRING | Nein | `"4K-Quad"`<br>`"8K-Quad"`<br>`"18K-Quad"`<br>`"50K-Quad"<br>`"200K-Triangle"` |

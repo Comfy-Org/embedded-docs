@@ -6,8 +6,8 @@ Dieser Node erstellt eine Latent-Operation, die ein Latent in Richtung eines Ref
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `reference` | Das Latent, in dessen Richtung gemischt werden soll. Seine Samples werden auf das Gerät und den dtype des verarbeiteten Latents gecastet und dann skaliert und wiederholt, um daran angepasst zu werden. | LATENT | Ja | - |
-| `strength` | Wie weit in Richtung der Referenz gemischt wird: 0 lässt das Latent unverändert, 1 entspricht dem skalierten Referenz-Latent (Standard: 1.0). | FLOAT | Ja | 0.0 bis 1.0 (Schrittweite 0.0001) |
+| `Referenz` | Das Latent, in dessen Richtung gemischt werden soll. Seine Samples werden auf das Gerät und den dtype des verarbeiteten Latents gecastet und dann skaliert und wiederholt, um daran angepasst zu werden. | LATENT | Ja | - |
+| `Stärke` | Wie weit in Richtung der Referenz gemischt wird: 0 lässt das Latent unverändert, 1 entspricht dem skalierten Referenz-Latent (Standard: 1.0). | FLOAT | Ja | 0.0 bis 1.0 (Schrittweite 0.0001) |
 
 ## Ausgaben
 

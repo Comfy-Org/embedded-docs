@@ -6,10 +6,10 @@ Der ImageSharpen-Node verbessert die Klarheit eines Bildes, indem er dessen Kant
 
 | Feld | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `image` | Das zu schärfende Eingabebild. Dieser Parameter ist entscheidend, da er das Basisbild bestimmt, auf das der Schärfungseffekt angewendet wird. | `IMAGE` |
-| `sharpen_radius` | Definiert den Radius des Schärfungseffekts. Ein größerer Radius bedeutet, dass mehr Pixel um die Kante herum beeinflusst werden, was zu einem ausgeprägteren Schärfungseffekt führt. | `INT` |
-| `sigma` | Steuert die Ausbreitung des Schärfungseffekts. Ein höherer Sigma-Wert führt zu einem weicheren Übergang an den Kanten, während ein niedrigerer Sigma-Wert die Schärfung lokaler macht. | `FLOAT` |
-| `alpha` | Passt die Intensität des Schärfungseffekts an. Höhere Alpha-Werte führen zu einem stärkeren Schärfungseffekt. | `FLOAT` |
+| `Bild` | Das zu schärfende Eingabebild. Dieser Parameter ist entscheidend, da er das Basisbild bestimmt, auf das der Schärfungseffekt angewendet wird. | `IMAGE` |
+| `Schärferadius` | Definiert den Radius des Schärfungseffekts. Ein größerer Radius bedeutet, dass mehr Pixel um die Kante herum beeinflusst werden, was zu einem ausgeprägteren Schärfungseffekt führt. | `INT` |
+| `Sigma` | Steuert die Ausbreitung des Schärfungseffekts. Ein höherer Sigma-Wert führt zu einem weicheren Übergang an den Kanten, während ein niedrigerer Sigma-Wert die Schärfung lokaler macht. | `FLOAT` |
+| `Alpha` | Passt die Intensität des Schärfungseffekts an. Höhere Alpha-Werte führen zu einem stärkeren Schärfungseffekt. | `FLOAT` |
 
 ## Ausgaben
 

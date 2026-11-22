@@ -6,13 +6,13 @@ LTX 2.5 Text To Video ist ein API-Node, der mithilfe des LTX 2.5-Modells Videos 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Die LTX 2.5-Modellstufe, die für die Videogenerierung verwendet werden soll. | STRING | Ja | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
-| `model.duration` | Die Länge des generierten Videos. | INT | Ja | Ganzzahl |
-| `model.resolution` | Die Ausgabeauflösung des Videos. Verfügbare Optionen hängen vom ausgewählten `model` ab. | STRING | Ja | Mit "LTX-2.5 (Fast)":<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840"<br>Mit "LTX-2.5 (Pro)":<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920" |
-| `model.fps` | Bildrate des generierten Videos (Standard: 25). | INT | Nein | Ganzzahl |
-| `model.generate_audio` | Ob Audio zusammen mit dem Video generiert werden soll (Standard: True). | BOOLEAN | Nein | True<br>False |
-| `prompt` | Die Textbeschreibung des zu generierenden Videos. Ein nicht leerer Prompt mit bis zu 10.000 Zeichen ist erforderlich (Standard: ""). | STRING | Ja | 1 bis 10000 Zeichen |
-| `seed` | Seed-Wert für reproduzierbare Generierung (Standard: 42). | INT | Nein | Ganzzahl |
+| `Modell` | Die LTX 2.5-Modellstufe, die für die Videogenerierung verwendet werden soll. | STRING | Ja | "LTX-2.5 (Fast)"<br>"LTX-2.5 (Pro)" |
+| `Dauer` | Die Länge des generierten Videos. | INT | Ja | Ganzzahl |
+| `Auflösung` | Die Ausgabeauflösung des Videos. Verfügbare Optionen hängen vom ausgewählten `model` ab. | STRING | Ja | Mit "LTX-2.5 (Fast)":<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920"<br>"2560x1440"<br>"1440x2560"<br>"3840x2160"<br>"2160x3840"<br>Mit "LTX-2.5 (Pro)":<br>"1280x720"<br>"720x1280"<br>"1920x1080"<br>"1080x1920" |
+| `fps` | Bildrate des generierten Videos (Standard: 25). | INT | Nein | Ganzzahl |
+| `Audio generieren` | Ob Audio zusammen mit dem Video generiert werden soll (Standard: True). | BOOLEAN | Nein | True<br>False |
+| `Prompt` | Die Textbeschreibung des zu generierenden Videos. Ein nicht leerer Prompt mit bis zu 10.000 Zeichen ist erforderlich (Standard: ""). | STRING | Ja | 1 bis 10000 Zeichen |
+| `Seed` | Seed-Wert für reproduzierbare Generierung (Standard: 42). | INT | Nein | Ganzzahl |
 
 Hinweis: Die verfügbaren Optionen für `model.resolution` hängen vom ausgewählten `model` ab. "LTX-2.5 (Fast)" unterstützt Auflösungen bis zu 2160x3840, während "LTX-2.5 (Pro)" Auflösungen bis zu 1920x1080 unterstützt.
 

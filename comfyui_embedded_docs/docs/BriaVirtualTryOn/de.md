@@ -10,10 +10,10 @@ Der Selektor `moderation` blendet eine zusätzliche Moderationsoption ein, wenn 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `person_image` | Das Foto der Person, die die Kleidungsstücke anprobiert. Der Alphakanal wird vor dem Hochladen des Bildes verworfen. | IMAGE | Ja | - |
-| `garment_images` | 1 bis 3 Kleidungsstücke oder Accessoires, die zusammen getragen werden; jedes ersetzt das passende Teil, das die Person trägt. Eine gebatchte Eingabe zählt pro Bild einmal, und transparente Bereiche werden als Weiß behandelt. | AUTOGROW | Ja | 1 bis 3 Bilder |
-| `instruction` | Optionale zusätzliche Anweisung, die zu Brias integrierter Anweisung hinzugefügt wird, z. B. welches Kleidungsstück obenauf getragen werden soll. Standard: `""` (leerer String). | STRING | Ja | - |
-| `aspect_ratio` | `"auto"` behält den Bildausschnitt des Personenfotos bei etwa 1 Megapixel bei. Ein festes Verhältnis liefert 0,6 bis 1 Megapixel, zum Beispiel 768x1024 für `"3:4"`. Standard: `"auto"`. | COMBO | Ja | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"` |
+| `personenbild` | Das Foto der Person, die die Kleidungsstücke anprobiert. Der Alphakanal wird vor dem Hochladen des Bildes verworfen. | IMAGE | Ja | - |
+| `kleidungsbilder` | 1 bis 3 Kleidungsstücke oder Accessoires, die zusammen getragen werden; jedes ersetzt das passende Teil, das die Person trägt. Eine gebatchte Eingabe zählt pro Bild einmal, und transparente Bereiche werden als Weiß behandelt. | AUTOGROW | Ja | 1 bis 3 Bilder |
+| `anweisung` | Optionale zusätzliche Anweisung, die zu Brias integrierter Anweisung hinzugefügt wird, z. B. welches Kleidungsstück obenauf getragen werden soll. Standard: `""` (leerer String). | STRING | Ja | - |
+| `seitenverhältnis` | `"auto"` behält den Bildausschnitt des Personenfotos bei etwa 1 Megapixel bei. Ein festes Verhältnis liefert 0,6 bis 1 Megapixel, zum Beispiel 768x1024 für `"3:4"`. Standard: `"auto"`. | COMBO | Ja | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"` |
 | `seed` | Seed, der mit der Anfrage an Bria gesendet wird. Standard: 42. | INT | Ja | 1 bis 2147483647 |
 | `moderation` | Moderationseinstellungen. Wenn auf `"true"` gesetzt, wird die unten stehende Moderationsoption verfügbar. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
 

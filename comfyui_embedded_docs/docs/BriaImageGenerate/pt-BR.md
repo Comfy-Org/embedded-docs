@@ -9,10 +9,10 @@ Gera uma nova imagem a partir de um prompt de texto, um prompt estruturado em JS
 | `prompt` | Descrição em linguagem natural da imagem a ser gerada (padrão: vazio). | STRING | Sim | Texto multilinha |
 | `structured_prompt` | Prompt estruturado em JSON de um resultado anterior do Bria FIBO. Com o mesmo `seed`, recria essa imagem; altere o JSON ou adicione um prompt para refiná-la (padrão: vazio). | STRING | Sim | Texto multilinha |
 | `aspect_ratio` | Proporção de aspecto da saída (padrão: `"1:1"`). As proporções a partir de `"16:10"` são tamanhos do FIBO 2.0 com requisitos extras, listados abaixo. | COMBO | Sim | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"16:10"`<br>`"10:16"`<br>`"2:1"`<br>`"1:2"`<br>`"21:9"`<br>`"9:21"`<br>`"3:1"`<br>`"1:3"`<br>`"4:1"`<br>`"1:4"`<br>`"5:1"`<br>`"1:5"` |
-| `resolution` | Resolução da saída em megapixels (padrão: `"1MP"`). | COMBO | Sim | `"1MP"`<br>`"4MP"` |
-| `seed` | Semente que inicializa a geração (padrão: 42). | INT | Sim | 1 a 2147483647 |
-| `moderation` | Configurações de moderação. Selecionar `"true"` revela as entradas de moderação listadas abaixo. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
-| `image` | Imagem de referência opcional para servir de base. O resultado é uma nova imagem na proporção de aspecto selecionada, não uma edição desta imagem. | IMAGE | Não | - |
+| `resolução` | Resolução da saída em megapixels (padrão: `"1MP"`). | COMBO | Sim | `"1MP"`<br>`"4MP"` |
+| `semente` | Semente que inicializa a geração (padrão: 42). | INT | Sim | 1 a 2147483647 |
+| `moderação` | Configurações de moderação. Selecionar `"true"` revela as entradas de moderação listadas abaixo. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
+| `imagem` | Imagem de referência opcional para servir de base. O resultado é uma nova imagem na proporção de aspecto selecionada, não uma edição desta imagem. | IMAGE | Não | - |
 
 ### Entradas de moderação
 

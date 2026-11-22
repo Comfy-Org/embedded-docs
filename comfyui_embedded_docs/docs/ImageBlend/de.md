@@ -6,10 +6,10 @@ Der Node `ImageBlend` dient dazu, zwei Bilder basierend auf einem angegebenen Mi
 
 | Feld | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `image1` | Das erste zu mischende Bild. Es dient als Basisebene für den Mischvorgang. | `IMAGE` |
-| `image2` | Das zweite zu mischende Bild. Abhängig vom Mischmodus verändert es das Erscheinungsbild des ersten Bildes. | `IMAGE` |
-| `blend_factor` | Bestimmt die Gewichtung des zweiten Bildes in der Mischung. Ein höherer Mischfaktor verleiht dem zweiten Bild im resultierenden Mischergebnis mehr Gewicht. | `FLOAT` |
-| `blend_mode` | Gibt die Methode zum Mischen der beiden Bilder an. Unterstützt Modi wie normal, multiply, screen, overlay, soft light und difference, die jeweils einen eigenen visuellen Effekt erzeugen. | COMBO[STRING] |
+| `Bild 1` | Das erste zu mischende Bild. Es dient als Basisebene für den Mischvorgang. | `IMAGE` |
+| `Bild 2` | Das zweite zu mischende Bild. Abhängig vom Mischmodus verändert es das Erscheinungsbild des ersten Bildes. | `IMAGE` |
+| `Überblendfaktor` | Bestimmt die Gewichtung des zweiten Bildes in der Mischung. Ein höherer Mischfaktor verleiht dem zweiten Bild im resultierenden Mischergebnis mehr Gewicht. | `FLOAT` |
+| `Überblendmodus` | Gibt die Methode zum Mischen der beiden Bilder an. Unterstützt Modi wie normal, multiply, screen, overlay, soft light und difference, die jeweils einen eigenen visuellen Effekt erzeugen. | COMBO[STRING] |
 
 ## Ausgaben
 

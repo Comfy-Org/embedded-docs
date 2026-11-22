@@ -6,8 +6,8 @@ Der ImageToMask-Node dient dazu, ein Bild basierend auf einem festgelegten Farbk
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `image` | Der Parameter `image` stellt das Eingabebild dar, aus dem basierend auf dem angegebenen Farbkanal eine Maske erzeugt wird. Er spielt eine entscheidende Rolle bei der Bestimmung des Inhalts und der Eigenschaften der resultierenden Maske. | `IMAGE` |
-| `channel` | Der Parameter `channel` legt fest, welcher Farbkanal (Rot, Grün, Blau oder Alpha) des Eingabebildes zur Erzeugung der Maske verwendet werden soll. Diese Wahl beeinflusst direkt das Aussehen der Maske und welche Bildbereiche hervorgehoben oder maskiert werden. | COMBO[STRING] |
+| `Bild` | Der Parameter `image` stellt das Eingabebild dar, aus dem basierend auf dem angegebenen Farbkanal eine Maske erzeugt wird. Er spielt eine entscheidende Rolle bei der Bestimmung des Inhalts und der Eigenschaften der resultierenden Maske. | `IMAGE` |
+| `Kanal` | Der Parameter `channel` legt fest, welcher Farbkanal (Rot, Grün, Blau oder Alpha) des Eingabebildes zur Erzeugung der Maske verwendet werden soll. Diese Wahl beeinflusst direkt das Aussehen der Maske und welche Bildbereiche hervorgehoben oder maskiert werden. | COMBO[STRING] |
 
 ## Ausgaben
 

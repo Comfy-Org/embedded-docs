@@ -6,13 +6,13 @@ Projiziert gerenderte Bilder zurück auf das UV-Layout des Meshes. Rendern Sie d
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `mesh` | Das UV-entfaltete Mesh, das gerendert wurde. | MESH | Ja | - |
-| `images` | Ein Bild pro Kamera, in Kamera-Reihenfolge (Batch Images). Beliebige Auflösung mit dem Seitenverhältnis des Renders; eine höhere Auflösung ergibt ein schärferes Bake. | IMAGE | Ja | - |
+| `Mesh` | Das UV-entfaltete Mesh, das gerendert wurde. | MESH | Ja | - |
+| `Bilder` | Ein Bild pro Kamera, in Kamera-Reihenfolge (Batch Images). Beliebige Auflösung mit dem Seitenverhältnis des Renders; eine höhere Auflösung ergibt ein schärferes Bake. | IMAGE | Ja | - |
 | `camera_info` | Die Kameras, mit denen die Bilder gerendert wurden, wie mit Render Mesh verbunden. Rigs mit Batch Cameras zusammenführen. Keine: automatisch gerahmte Frontansicht von Render Mesh. | LOAD3D_CAMERA | Nein | - |
-| `resolution` | Quadratische Texturauflösung. 0 behält die aktuelle Texturgröße des Meshes bei bzw. 2048, wenn es keine hat; andernfalls wird die aktuelle Textur darauf neu abgetastet. Standard: 0. | INT | Nein | 0 bis 8192 (Schritt: 64) |
+| `Auflösung` | Quadratische Texturauflösung. 0 behält die aktuelle Texturgröße des Meshes bei bzw. 2048, wenn es keine hat; andernfalls wird die aktuelle Textur darauf neu abgetastet. Standard: 0. | INT | Nein | 0 bis 8192 (Schritt: 64) |
 | `blend_exponent` | Ansichten werden mit cos(Blickwinkel)^Exponent gewichtet. Höher bevorzugt die frontalste Ansicht (schärfer, härtere Nähte); niedriger mittelt mehr Ansichten (weicher). Standard: 4.0. | FLOAT | Nein | 0.0 bis 32.0 (Schritt: 0.5) |
 | `fill_unseen` | Texel, die keine Ansicht sieht, erhalten eine Farbe, die aus der gesehenen Oberfläche fortgeschrieben wird, anstelle der eigenen Textur oder Vertexfarben des Meshes. Verwenden, wenn die Ansichten die gesamte Textur ersetzen. Standard: false. | BOOLEAN | Nein | true<br>false |
-| `mask` | Bearbeitete Bereiche pro Ansicht; nur maskierte Pixel werden projiziert. Eine einzelne Maske gilt für jede Ansicht. | MASK | Nein | - |
+| `Maske` | Bearbeitete Bereiche pro Ansicht; nur maskierte Pixel werden projiziert. Eine einzelne Maske gilt für jede Ansicht. | MASK | Nein | - |
 
 ## Ausgaben
 

@@ -8,10 +8,10 @@ Dieser Node ändert die Lichtatmosphäre und die Lichtrichtung eines Bildes mith
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Bild, dessen Licht geändert wird. Ein etwaiger Alphakanal wird entfernt, bevor das Bild hochgeladen wird. | IMAGE | Ja | - |
+| `Bild` | Das Bild, dessen Licht geändert wird. Ein etwaiger Alphakanal wird entfernt, bevor das Bild hochgeladen wird. | IMAGE | Ja | - |
 | `light_type` | Lichtatmosphäre, die angewendet werden soll. | COMBO | Ja | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
 | `light_direction` | Woher das Licht kommt. Atmosphären mit hartem Licht wie midday, spotlight on subject und harsh studio lighting reagieren am stärksten darauf. | COMBO | Ja | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
-| `moderation` | Moderations-Einstellungen. Wählen Sie `"true"`, um die Moderationsoptionen einzublenden, oder `"false"`, um ohne sie auszuführen. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
+| `Moderation` | Moderations-Einstellungen. Wählen Sie `"true"`, um die Moderationsoptionen einzublenden, oder `"false"`, um ohne sie auszuführen. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
 
 ### Moderationseingaben
 

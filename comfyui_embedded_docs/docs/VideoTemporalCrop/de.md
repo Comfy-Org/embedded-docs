@@ -6,9 +6,9 @@ Dieser Node schneidet einen fortlaufenden Bereich von Frames aus einem Video aus
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `video` | Eingabevideo. | VIDEO | Ja | – |
-| `start_frame` | Index des Start-Frames (Standard: 0). | INT | Ja | 0 bis 99999 |
-| `length` | Anzahl der beizubehaltenden Frames (Standard: 16). | INT | Ja | 1 bis 99999 |
+| `Video` | Eingabevideo. | VIDEO | Ja | – |
+| `Startframe` | Index des Start-Frames (Standard: 0). | INT | Ja | 0 bis 99999 |
+| `Länge` | Anzahl der beizubehaltenden Frames (Standard: 16). | INT | Ja | 1 bis 99999 |
 
 Hinweis: `start_frame` ist auf den letzten Frame des Videos begrenzt, und `length` wird reduziert, wenn es über die verfügbaren Frames hinausgehen würde.
 

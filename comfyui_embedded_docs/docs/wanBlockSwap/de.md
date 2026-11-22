@@ -6,7 +6,7 @@ Dieser Node ist veraltet und hat keine Funktion. Er nimmt ein Modell als Eingabe
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Modell, das durch den Node geleitet wird. | MODEL | Ja |  |
+| `Modell` | Das Modell, das durch den Node geleitet wird. | MODEL | Ja |  |
 
 ## Ausgaben
 

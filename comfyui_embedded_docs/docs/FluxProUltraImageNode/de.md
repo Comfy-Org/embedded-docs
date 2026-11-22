@@ -6,11 +6,11 @@ Erzeugt Bilder mit Flux Pro 1.1 Ultra über eine API basierend auf Prompt und Au
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `prompt` | Prompt für die Bilderzeugung (Standard: leerer String) | STRING | Ja | - |
+| `Prompt` | Prompt für die Bilderzeugung (Standard: leerer String) | STRING | Ja | - |
 | `prompt_upsampling` | Ob ein Upsampling des Prompts durchgeführt werden soll. Wenn aktiviert, wird der Prompt automatisch für eine kreativere Generierung verändert, aber die Ergebnisse sind nicht deterministisch (derselbe Seed erzeugt nicht exakt dasselbe Ergebnis). (Standard: False) | BOOLEAN | Nein | - |
-| `seed` | Der Zufalls-Seed, der zur Erzeugung des Rauschens verwendet wird. (Standard: 0) | INT | Nein | 0 bis 18446744073709551615 |
+| `Seed` | Der Zufalls-Seed, der zur Erzeugung des Rauschens verwendet wird. (Standard: 0) | INT | Nein | 0 bis 18446744073709551615 |
 | `aspect_ratio` | Seitenverhältnis des Bildes; muss zwischen 1:4 und 4:1 liegen. (Standard: "16:9") | STRING | Nein | - |
-| `raw` | Wenn True, werden weniger verarbeitete, natürlicher wirkende Bilder erzeugt. (Standard: False) | BOOLEAN | Nein | - |
+| `Roh` | Wenn True, werden weniger verarbeitete, natürlicher wirkende Bilder erzeugt. (Standard: False) | BOOLEAN | Nein | - |
 | `image_prompt` | Optionales Referenzbild zur Steuerung der Generierung | IMAGE | Nein | - |
 | `image_prompt_strength` | Mischung zwischen dem Prompt und dem Bild-Prompt. (Standard: 0.1) | FLOAT | Nein | 0.0 bis 1.0 |
 

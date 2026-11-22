@@ -6,24 +6,24 @@ Der Node WanSCAILToVideo bereitet die Konditionierung und einen leeren Latent-Ra
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Die positive Konditionierungseingabe. | CONDITIONING | Ja | - |
-| `negative` | Die negative Konditionierungseingabe. | CONDITIONING | Ja | - |
+| `Positiv` | Die positive Konditionierungseingabe. | CONDITIONING | Ja | - |
+| `Negativ` | Die negative Konditionierungseingabe. | CONDITIONING | Ja | - |
 | `vae` | Das VAE-Modell, das zum Kodieren von Bildern und Video-Frames verwendet wird. | VAE | Ja | - |
-| `width` | Die Breite des Ausgabevideos in Pixeln (Standard: 512). Werte haben eine Schrittweite von 32. | INT | Ja | 32 bis MAX_RESOLUTION |
-| `height` | Die Höhe des Ausgabevideos in Pixeln (Standard: 896). Werte haben eine Schrittweite von 32. | INT | Ja | 32 bis MAX_RESOLUTION |
-| `length` | Die Anzahl der Frames im Video (Standard: 81). Werte haben eine Schrittweite von 4. | INT | Ja | 1 bis MAX_RESOLUTION |
-| `batch_size` | Die Anzahl der Videos, die in einem Batch generiert werden (Standard: 1). | INT | Ja | 1 bis 4096 |
-| `pose_video` | Video, das zur Pose-Konditionierung verwendet wird. Wird auf die halbe Auflösung des Hauptvideos herunterskaliert. | IMAGE | Nein | - |
-| `pose_video_mask` | Nur SCAIL-2. Farbiges SAM3-Maskenvideo pro Identität mit derselben Auflösung wie `pose_video`. | IMAGE | Nein | - |
-| `replacement_mode` | Nur SCAIL-2. False = Animationsmodus (`pose_video_mask` sollte schwarzen Hintergrund haben). True = Ersetzungsmodus (`pose_video_mask` sollte weißen Hintergrund haben). (Standard: False) | BOOLEAN | Nein | - |
-| `pose_strength` | Stärke des Pose-Latents. (Standard: 1.0) | FLOAT | Ja | 0.0 bis 10.0 |
-| `pose_start` | Startschritt der Pose-Konditionierung. (Standard: 0.0) | FLOAT | Ja | 0.0 bis 1.0 |
-| `pose_end` | Endschritt der Pose-Konditionierung. (Standard: 1.0) | FLOAT | Ja | 0.0 bis 1.0 |
-| `reference_image` | Referenzbild. Das erste Bild ist die primäre Referenz (auf die alle Identitäten zusammengesetzt werden). SCAIL-2: Zusätzliche Batch-Bilder werden als zusätzliche Ansichten verwendet (Rückansicht, Nahaufnahme, verdeckter Hintergrund), wobei jedes eine passende `reference_image_mask` in der Farbe dieser Identität benötigt. | IMAGE | Nein | - |
-| `reference_image_mask` | Nur SCAIL-2. Farbige Referenzmaske, Batch passend zu `reference_image` (erste = primäre Referenzmaske, Rest = Identitätsmasken für das zusätzliche `reference_image`). | IMAGE | Nein | - |
+| `Breite` | Die Breite des Ausgabevideos in Pixeln (Standard: 512). Werte haben eine Schrittweite von 32. | INT | Ja | 32 bis MAX_RESOLUTION |
+| `Höhe` | Die Höhe des Ausgabevideos in Pixeln (Standard: 896). Werte haben eine Schrittweite von 32. | INT | Ja | 32 bis MAX_RESOLUTION |
+| `Länge` | Die Anzahl der Frames im Video (Standard: 81). Werte haben eine Schrittweite von 4. | INT | Ja | 1 bis MAX_RESOLUTION |
+| `Batchgröße` | Die Anzahl der Videos, die in einem Batch generiert werden (Standard: 1). | INT | Ja | 1 bis 4096 |
+| `Pose-Video` | Video, das zur Pose-Konditionierung verwendet wird. Wird auf die halbe Auflösung des Hauptvideos herunterskaliert. | IMAGE | Nein | - |
+| `Pose-Video-mask` | Nur SCAIL-2. Farbiges SAM3-Maskenvideo pro Identität mit derselben Auflösung wie `pose_video`. | IMAGE | Nein | - |
+| `Ersetzungsmodus` | Nur SCAIL-2. False = Animationsmodus (`pose_video_mask` sollte schwarzen Hintergrund haben). True = Ersetzungsmodus (`pose_video_mask` sollte weißen Hintergrund haben). (Standard: False) | BOOLEAN | Nein | - |
+| `Posenstärke` | Stärke des Pose-Latents. (Standard: 1.0) | FLOAT | Ja | 0.0 bis 10.0 |
+| `Posenstart` | Startschritt der Pose-Konditionierung. (Standard: 0.0) | FLOAT | Ja | 0.0 bis 1.0 |
+| `Posenende` | Endschritt der Pose-Konditionierung. (Standard: 1.0) | FLOAT | Ja | 0.0 bis 1.0 |
+| `Referenzbild` | Referenzbild. Das erste Bild ist die primäre Referenz (auf die alle Identitäten zusammengesetzt werden). SCAIL-2: Zusätzliche Batch-Bilder werden als zusätzliche Ansichten verwendet (Rückansicht, Nahaufnahme, verdeckter Hintergrund), wobei jedes eine passende `reference_image_mask` in der Farbe dieser Identität benötigt. | IMAGE | Nein | - |
+| `Referenzbildmaske` | Nur SCAIL-2. Farbige Referenzmaske, Batch passend zu `reference_image` (erste = primäre Referenzmaske, Rest = Identitätsmasken für das zusätzliche `reference_image`). | IMAGE | Nein | - |
 | `clip_vision_output` | CLIP-Vision-Merkmale zur Konditionierung. Das Modell ist mit Stretch-Resize auf das Seitenverhältnis trainiert. | CLIP_VISION_OUTPUT | Nein | - |
-| `video_frame_offset` | Kumulatives Ausgabeframe, an dem dieser Chunk beginnt. Verbinden Sie es mit der `video_frame_offset`-Ausgabe des vorherigen Chunks. (Standard: 0) | INT | Ja | 0 bis MAX_RESOLUTION |
-| `previous_frame_count` | Anzahl der Endframes von `previous_frames`, die verankert werden. SCAIL-2 wurde mit 5 trainiert (81-Frame-Chunks, 76-Frame-Schritt). (Standard: 5). Werte haben eine Schrittweite von 4. | INT | Ja | 1 bis MAX_RESOLUTION |
+| `Video-Frame-Offset` | Kumulatives Ausgabeframe, an dem dieser Chunk beginnt. Verbinden Sie es mit der `video_frame_offset`-Ausgabe des vorherigen Chunks. (Standard: 0) | INT | Ja | 0 bis MAX_RESOLUTION |
+| `Anzahl vorheriger Frames` | Anzahl der Endframes von `previous_frames`, die verankert werden. SCAIL-2 wurde mit 5 trainiert (81-Frame-Chunks, 76-Frame-Schritt). (Standard: 5). Werte haben eine Schrittweite von 4. | INT | Ja | 1 bis MAX_RESOLUTION |
 | `previous_frames` | Nur SCAIL-2. Vollständig dekodierte Ausgabe des vorherigen Chunks. Nur die letzten `previous_frame_count` werden als Erweiterungsanker verwendet. | IMAGE | Nein | - |
 
 **Hinweis:** Die Eingaben `pose_video` und `pose_video_mask` werden gemeinsam auf die kürzere der beiden gekürzt und nur für die ersten `length` Frames verarbeitet. Wenn eine der Eingaben kürzer oder gleich `video_frame_offset` ist, wird sie vollständig ignoriert. Das `pose_video` wird vor der Kodierung auf die halbe Auflösung des Hauptvideos herunterskaliert, und das kodierte Pose-Latent wird mit `pose_strength` multipliziert und nur zwischen den Zeitschritten `pose_start` und `pose_end` auf die Konditionierung angewendet. Wenn `pose_video_mask` angegeben ist, wird das farbige Maskenvideo auf halbe Auflösung herunterskaliert und in eine 28-Kanal-Driving-Maske umgewandelt, die sowohl zur positiven als auch zur negativen Konditionierung hinzugefügt wird.

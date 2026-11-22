@@ -8,7 +8,7 @@ Die Node-Klasse selbst deklariert in der verfügbaren Quelle keine Eingabe-Widge
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `prompt` | Der Text-Prompt, der das zu erzeugende Bild beschreibt. Der genaue Parametername wird durch das geerbte Basisschema `_ComfyCloudMageFlowNode` festgelegt und kann von dieser Bezeichnung abweichen. | STRING | Ja | Freitext |
+| `Prompt` | Der Text-Prompt, der das zu erzeugende Bild beschreibt. Der genaue Parametername wird durch das geerbte Basisschema `_ComfyCloudMageFlowNode` festgelegt und kann von dieser Bezeichnung abweichen. | STRING | Ja | Freitext |
 
 Hinweis: In der geerbten Basis-Node-Definition, die in der bereitgestellten Quelle nicht verfügbar ist, können zusätzliche Eingabeparameter vorhanden sein.
 

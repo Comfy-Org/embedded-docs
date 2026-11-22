@@ -6,10 +6,10 @@ Erzeugt Bilder synchron auf Basis von Prompt und Auflösung. Dieser Node verbind
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Prompt für die Bilderzeugung. (Standard: "") | STRING | Ja | 1-1000 Zeichen |
-| `size` | Die Größe des generierten Bildes. (Standard: "1024x1024") | COMBO | Ja | "1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" |
+| `Prompt` | Prompt für die Bilderzeugung. (Standard: "") | STRING | Ja | 1-1000 Zeichen |
+| `Größe` | Die Größe des generierten Bildes. (Standard: "1024x1024") | COMBO | Ja | "1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" |
 | `n` | Die Anzahl der zu generierenden Bilder. (Standard: 1) | INT | Ja | 1-6 |
-| `seed` | Seed, der bestimmt, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Ja | 0-18446744073709551615 |
+| `Seed` | Seed, der bestimmt, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Ja | 0-18446744073709551615 |
 | `recraft_style` | Optionale Stilauswahl für die Bilderzeugung. Wenn nicht angegeben, wird standardmäßig der Stil "realistic_image" verwendet. | RECRAFT_STYLE | Nein | Mehrere Optionen verfügbar |
 | `negative_prompt` | Eine optionale Textbeschreibung unerwünschter Elemente in einem Bild. (Standard: "") | STRING | Nein | - |
 | `recraft_controls` | Optionale zusätzliche Steuerelemente für die Generierung über den Recraft Controls-Node. | RECRAFT_CONTROLS | Nein | Mehrere Optionen verfügbar |

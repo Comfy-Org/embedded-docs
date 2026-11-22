@@ -7,7 +7,7 @@ Der Node „Adjust Brightness“ ändert, wie hell ein Bild erscheint. Er multip
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `image` | Das anzupassende Eingabebild. Akzeptiert ein einzelnes Bild oder einen Batch von Bildern. | IMAGE | Ja | - |
-| `factor` | Helligkeitsfaktor. 1.0 = keine Änderung, <1.0 = dunkler, >1.0 = heller. (Standard: 1.0) | FLOAT | Nein | 0.0 - 2.0 |
+| `Faktor` | Helligkeitsfaktor. 1.0 = keine Änderung, <1.0 = dunkler, >1.0 = heller. (Standard: 1.0) | FLOAT | Nein | 0.0 - 2.0 |
 
 Hinweis: Wenn das Eingabebild einen Alphakanal (RGBA) hat, werden nur die Farbkanäle angepasst. Der Alphakanal wird unverändert aus der Eingabe kopiert, da er Transparenz und nicht Farbe speichert.
 

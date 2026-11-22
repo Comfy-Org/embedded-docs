@@ -10,9 +10,9 @@ Diese Eingaben sind immer sichtbar.
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `video` | Zu verbesserndes Video. Die Quellauflösung darf höchstens 2560x1440 (2K) betragen; die Ausgabegröße wird durch die Eingabe `resolution` festgelegt. | VIDEO | Ja | Höchstens 2560x1440 (2K) |
+| `Video` | Zu verbesserndes Video. Die Quellauflösung darf höchstens 2560x1440 (2K) betragen; die Ausgabegröße wird durch die Eingabe `resolution` festgelegt. | VIDEO | Ja | Höchstens 2560x1440 (2K) |
 | `tool_version` | 'standard' gleicht Geschwindigkeit und Qualität mit 10+ Verbesserungsalgorithmen aus. 'professional' verwendet 30+ Algorithmen für eine Restaurierung in Kinoqualität, dauert etwa 3-mal länger und kostet 10-mal mehr. | DYNAMIC_COMBO | Ja | "standard"<br>"professional" |
-| `resolution` | Ausgabeauflösung. Die kurze Seite wird auf die gewählte Stufe gesetzt und die lange Seite folgt dem Seitenverhältnis der Quelle. 'source' behält die Quellgröße bei, 'custom' legt die kurze Seite in Pixeln fest. Quellen, die breiter oder höher als etwa 2,2:1 sind, werden eine Auflösungsstufe höher abgerechnet. | DYNAMIC_COMBO | Ja | "720p"<br>"1080p"<br>"2k"<br>"4k"<br>"8k"<br>"source"<br>"custom" |
+| `Auflösung` | Ausgabeauflösung. Die kurze Seite wird auf die gewählte Stufe gesetzt und die lange Seite folgt dem Seitenverhältnis der Quelle. 'source' behält die Quellgröße bei, 'custom' legt die kurze Seite in Pixeln fest. Quellen, die breiter oder höher als etwa 2,2:1 sind, werden eine Auflösungsstufe höher abgerechnet. | DYNAMIC_COMBO | Ja | "720p"<br>"1080p"<br>"2k"<br>"4k"<br>"8k"<br>"source"<br>"custom" |
 | `fps` | Ausgabebildrate. Eine höhere Rate als die Quelle aktiviert KI-Frame-Interpolation; eine niedrigere verwirft Frames. 'source' behält die Quellrate bei, bis zu 120 fps. Raten über 30 fps kosten 2x, über 60 fps 4x. (Standard: "source") | COMBO | Ja | "source" (Standard)<br>Numerische Bildraten bis zu 120 fps |
 | `bitrate_level` | Ziel-Bitrate der gelieferten Datei, skaliert auf die Ausgabeauflösung und Bildrate. (Standard: "medium") | COMBO | Ja | "low"<br>"medium"<br>"high" |
 

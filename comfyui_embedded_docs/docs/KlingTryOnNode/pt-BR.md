@@ -9,7 +9,7 @@ Vista uma pessoa com uma peça de roupa usando o provador virtual da Kling. Cone
 | `person_image` | Foto de uma pessoa, idealmente de frente ou em vista de três quartos. Deve ter pelo menos 300x300 pixels; imagens com um lado maior que 2048 pixels são reduzidas primeiro. | IMAGE | Sim | N/A |
 | `garment_image` | A roupa a vestir: foto de produto, flat lay, manequim ou foto em modelo. Uma foto em modelo pode carregar o restante desse look. Deve ter pelo menos 300x300 pixels. Apenas roupas; sapatos, bolsas e acessórios não são suportados. | IMAGE | Sim | N/A |
 | `keep_pose` | Desative para permitir que a pose mude para uma melhor apresentação do visual. Parâmetro avançado (padrão: True). | BOOLEAN | Sim | `True`<br>`False` |
-| `seed` | A seed controla se o nó deve ser executado novamente; os resultados não são determinísticos, independentemente da seed. Este parâmetro tem a funcionalidade "control after generate" (padrão: 42). | INT | Sim | 0 a 2147483647 |
+| `semente` | A seed controla se o nó deve ser executado novamente; os resultados não são determinísticos, independentemente da seed. Este parâmetro tem a funcionalidade "control after generate" (padrão: 42). | INT | Sim | 0 a 2147483647 |
 
 **Observação:** O resultado tem o mesmo tamanho que a `person_image`, limitado a 2048 pixels no lado mais longo. Ambas as entradas são enviadas para a API da Kling, o que pode levar um momento.
 

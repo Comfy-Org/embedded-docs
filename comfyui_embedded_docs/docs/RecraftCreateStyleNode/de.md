@@ -6,8 +6,8 @@ Dieser Node erstellt einen benutzerdefinierten Stil für die Bildgenerierung dur
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `style` | Der Basisstil der generierten Bilder. | STRING | Ja | `"realistic_image"`<br>`"digital_illustration"` |
-| `images` | Ein Satz von 1 bis 5 Referenzbildern, die zum Erstellen des benutzerdefinierten Stils verwendet werden. | IMAGE | Ja | 1 bis 5 Bilder |
+| `Stil` | Der Basisstil der generierten Bilder. | STRING | Ja | `"realistic_image"`<br>`"digital_illustration"` |
+| `Bilder` | Ein Satz von 1 bis 5 Referenzbildern, die zum Erstellen des benutzerdefinierten Stils verwendet werden. | IMAGE | Ja | 1 bis 5 Bilder |
 
 **Hinweis:** Die Gesamtdateigröße aller Bilder im `images`-Eingang muss weniger als 5 MB betragen. Der Node schlägt fehl, wenn dieses Limit überschritten wird.
 

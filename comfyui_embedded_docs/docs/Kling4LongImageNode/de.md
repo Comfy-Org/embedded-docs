@@ -8,7 +8,7 @@ Generieren Sie ein hochformatiges Bild mit Kling 4.0: ein vollständiges Webseit
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `skill` | Zu generierendes Layout. `"webpage"` entwirft eine vollständige Seite um ein optionales Stilbild und Motiv; `"ecommerce"` erstellt eine Produktdetailseite aus Produktfotos. | DYNAMIC_COMBO | Ja | `"webpage"`<br>`"ecommerce"` |
+| `Skill` | Zu generierendes Layout. `"webpage"` entwirft eine vollständige Seite um ein optionales Stilbild und Motiv; `"ecommerce"` erstellt eine Produktdetailseite aus Produktfotos. | DYNAMIC_COMBO | Ja | `"webpage"`<br>`"ecommerce"` |
 
 ### `webpage` Eingaben
 

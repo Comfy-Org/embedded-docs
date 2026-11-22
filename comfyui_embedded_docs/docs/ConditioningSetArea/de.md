@@ -7,11 +7,11 @@ Dieser Node dient dazu, die Konditionierungsinformationen zu ändern, indem best
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
 | `CONDITIONING` | Die zu ändernden Konditionierungsdaten. Sie dienen als Basis für die Anwendung räumlicher Anpassungen. | CONDITIONING |
-| `width` | Gibt die Breite des festzulegenden Bereichs innerhalb des Konditionierungskontexts an und beeinflusst den horizontalen Umfang der Anpassung. | `INT` |
-| `height` | Bestimmt die Höhe des festzulegenden Bereichs und wirkt sich auf die vertikale Ausdehnung der Konditionierungsänderung aus. | `INT` |
+| `Breite` | Gibt die Breite des festzulegenden Bereichs innerhalb des Konditionierungskontexts an und beeinflusst den horizontalen Umfang der Anpassung. | `INT` |
+| `Höhe` | Bestimmt die Höhe des festzulegenden Bereichs und wirkt sich auf die vertikale Ausdehnung der Konditionierungsänderung aus. | `INT` |
 | `x` | Der horizontale Startpunkt des festzulegenden Bereichs, der die Anpassung innerhalb des Konditionierungskontexts positioniert. | `INT` |
 | `y` | Der vertikale Startpunkt für die Bereichsanpassung, der ihre Position innerhalb des Konditionierungskontexts festlegt. | `INT` |
-| `strength` | Definiert die Intensität der Konditionierungsänderung innerhalb des angegebenen Bereichs und ermöglicht eine fein abgestufte Steuerung der Auswirkung der Anpassung. | `FLOAT` |
+| `Stärke` | Definiert die Intensität der Konditionierungsänderung innerhalb des angegebenen Bereichs und ermöglicht eine fein abgestufte Steuerung der Auswirkung der Anpassung. | `FLOAT` |
 
 ## Ausgaben
 

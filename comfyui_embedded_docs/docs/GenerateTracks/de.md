@@ -6,20 +6,20 @@ Der Node `GenerateTracks` erzeugt mehrere parallele Bewegungsbahnen (Tracks) fü
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `width` | Die Breite des Video-Frames in Pixeln. Der Standardwert ist 832. | INT | Ja | 16 - 4096 |
-| `height` | Die Höhe des Video-Frames in Pixeln. Der Standardwert ist 480. | INT | Ja | 16 - 4096 |
-| `start_x` | Normalisierte X-Koordinate (0-1) für die Startposition. Der Standardwert ist 0.0. | FLOAT | Ja | 0.0 - 1.0 |
-| `start_y` | Normalisierte Y-Koordinate (0-1) für die Startposition. Der Standardwert ist 0.0. | FLOAT | Ja | 0.0 - 1.0 |
-| `end_x` | Normalisierte X-Koordinate (0-1) für die Endposition. Der Standardwert ist 1.0. | FLOAT | Ja | 0.0 - 1.0 |
-| `end_y` | Normalisierte Y-Koordinate (0-1) für die Endposition. Der Standardwert ist 1.0. | FLOAT | Ja | 0.0 - 1.0 |
-| `num_frames` | Die Gesamtzahl der Frames, für die Trackpositionen generiert werden sollen. Der Standardwert ist 81. | INT | Ja | 1 - 1024 |
-| `num_tracks` | Die Anzahl der zu generierenden parallelen Tracks. Der Standardwert ist 5. | INT | Ja | 1 - 100 |
-| `track_spread` | Normalisierter Abstand zwischen den Tracks. Die Tracks werden senkrecht zur Bewegungsrichtung verteilt. Der Standardwert ist 0.025. | FLOAT | Ja | 0.0 - 1.0 |
-| `bezier` | Aktiviert einen Bezier-Kurvenpfad unter Verwendung des Mittelpunkts als Kontrollpunkt. Der Standardwert ist False. | BOOLEAN | Ja | True / False |
-| `mid_x` | Normalisierter X-Kontrollpunkt für die Bezier-Kurve. Wird nur verwendet, wenn `bezier` aktiviert ist. Der Standardwert ist 0.5. | FLOAT | Ja | 0.0 - 1.0 |
-| `mid_y` | Normalisierter Y-Kontrollpunkt für die Bezier-Kurve. Wird nur verwendet, wenn `bezier` aktiviert ist. Der Standardwert ist 0.5. | FLOAT | Ja | 0.0 - 1.0 |
-| `interpolation` | Steuert das Timing/die Geschwindigkeit der Bewegung entlang des Pfads (Standard: "linear"):<br>"linear" – konstante Geschwindigkeit<br>"ease_in" – beginnt langsam und beschleunigt<br>"ease_out" – beginnt schnell und wird langsamer<br>"ease_in_out" – sanfte Beschleunigung und Verlangsamung<br>"constant" – behält alle Positionen am Startpunkt | COMBO | Ja | `"linear"`<br>`"ease_in"`<br>`"ease_out"`<br>`"ease_in_out"`<br>`"constant"` |
-| `track_mask` | Optionale Maske, die sichtbare Frames angibt. Falls angegeben, werden Frames, in denen die Maske mindestens ein Pixel ungleich null enthält, für alle Tracks als sichtbar markiert. | MASK | Nein | - |
+| `Breite` | Die Breite des Video-Frames in Pixeln. Der Standardwert ist 832. | INT | Ja | 16 - 4096 |
+| `Höhe` | Die Höhe des Video-Frames in Pixeln. Der Standardwert ist 480. | INT | Ja | 16 - 4096 |
+| `Start-X` | Normalisierte X-Koordinate (0-1) für die Startposition. Der Standardwert ist 0.0. | FLOAT | Ja | 0.0 - 1.0 |
+| `Start-Y` | Normalisierte Y-Koordinate (0-1) für die Startposition. Der Standardwert ist 0.0. | FLOAT | Ja | 0.0 - 1.0 |
+| `End-X` | Normalisierte X-Koordinate (0-1) für die Endposition. Der Standardwert ist 1.0. | FLOAT | Ja | 0.0 - 1.0 |
+| `End-Y` | Normalisierte Y-Koordinate (0-1) für die Endposition. Der Standardwert ist 1.0. | FLOAT | Ja | 0.0 - 1.0 |
+| `Anzahl Frames` | Die Gesamtzahl der Frames, für die Trackpositionen generiert werden sollen. Der Standardwert ist 81. | INT | Ja | 1 - 1024 |
+| `Anzahl Spuren` | Die Anzahl der zu generierenden parallelen Tracks. Der Standardwert ist 5. | INT | Ja | 1 - 100 |
+| `Spurabstand` | Normalisierter Abstand zwischen den Tracks. Die Tracks werden senkrecht zur Bewegungsrichtung verteilt. Der Standardwert ist 0.025. | FLOAT | Ja | 0.0 - 1.0 |
+| `Bézier` | Aktiviert einen Bezier-Kurvenpfad unter Verwendung des Mittelpunkts als Kontrollpunkt. Der Standardwert ist False. | BOOLEAN | Ja | True / False |
+| `Mittelpunkt-X` | Normalisierter X-Kontrollpunkt für die Bezier-Kurve. Wird nur verwendet, wenn `bezier` aktiviert ist. Der Standardwert ist 0.5. | FLOAT | Ja | 0.0 - 1.0 |
+| `Mittelpunkt-Y` | Normalisierter Y-Kontrollpunkt für die Bezier-Kurve. Wird nur verwendet, wenn `bezier` aktiviert ist. Der Standardwert ist 0.5. | FLOAT | Ja | 0.0 - 1.0 |
+| `Interpolation` | Steuert das Timing/die Geschwindigkeit der Bewegung entlang des Pfads (Standard: "linear"):<br>"linear" – konstante Geschwindigkeit<br>"ease_in" – beginnt langsam und beschleunigt<br>"ease_out" – beginnt schnell und wird langsamer<br>"ease_in_out" – sanfte Beschleunigung und Verlangsamung<br>"constant" – behält alle Positionen am Startpunkt | COMBO | Ja | `"linear"`<br>`"ease_in"`<br>`"ease_out"`<br>`"ease_in_out"`<br>`"constant"` |
+| `Spurmaske` | Optionale Maske, die sichtbare Frames angibt. Falls angegeben, werden Frames, in denen die Maske mindestens ein Pixel ungleich null enthält, für alle Tracks als sichtbar markiert. | MASK | Nein | - |
 
 **Hinweis:** Die Parameter `mid_x` und `mid_y` werden nur verwendet, wenn der Parameter `bezier` auf `True` gesetzt ist. Wenn `bezier` `False` ist, verläuft der Pfad als gerade Linie vom Start- zum Endpunkt.
 

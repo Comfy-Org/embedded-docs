@@ -8,13 +8,13 @@ FLUX 3 Max Image to Video anima de 1 a 10 imagens com o FLUX 3 Max. Cada imagem 
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Como a cena deve se mover e soar (padrão: vazio). | STRING | Sim | Texto multilinha |
 | `keyframes` | Slot expansível: conecte de 1 a 10 imagens de quadro-chave na ordem de reprodução, por exemplo, `image_1`, `image_2` e assim por diante. Cada imagem se torna um quadro do clipe. | IMAGE | Sim | 1 a 10 imagens |
-| `placement` | `"spread across the clip"` coloca a primeira imagem no início, a última no fim e as demais uniformemente entre elas; `"at times"` fixa cada imagem em um segundo que você escolher (padrão: `"spread across the clip"`). | DYNAMIC_COMBO | Sim | `"spread across the clip"`<br>`"at times"` |
-| `aspect_ratio` | Proporção da saída. `"auto"` segue a primeira imagem de quadro-chave (padrão: `"auto"`). | COMBO | Sim | `"auto"`<br>`"21:9"`<br>`"2:1"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"` |
-| `duration` | Duração do clipe em segundos (padrão: `"5"`). | COMBO | Sim | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"`<br>`"15"`<br>`"16"`<br>`"17"`<br>`"18"`<br>`"19"`<br>`"20"` |
-| `resolution` | Resolução da saída (padrão: `"720p"`). | COMBO | Sim | `"720p"`<br>`"1080p"` |
-| `reasoning_level` | Quanto o modelo raciocina sobre o prompt e o expande antes de gerar. `"high"` demora mais; o preço é o mesmo (padrão: `"high"`). | COMBO | Sim | `"low"`<br>`"high"` |
-| `generate_audio` | Gera áudio sincronizado. Desativado, produz um vídeo sem faixa de áudio (padrão: true). | BOOLEAN | Sim | `true`<br>`false` |
-| `seed` | Semente que controla se o nó é executado novamente. Os resultados são não determinísticos independentemente deste valor (padrão: 42). | INT | Sim | 0 a 2147483646 |
+| `posicionamento` | `"spread across the clip"` coloca a primeira imagem no início, a última no fim e as demais uniformemente entre elas; `"at times"` fixa cada imagem em um segundo que você escolher (padrão: `"spread across the clip"`). | DYNAMIC_COMBO | Sim | `"spread across the clip"`<br>`"at times"` |
+| `proporção_de_aspecto` | Proporção da saída. `"auto"` segue a primeira imagem de quadro-chave (padrão: `"auto"`). | COMBO | Sim | `"auto"`<br>`"21:9"`<br>`"2:1"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"` |
+| `duração` | Duração do clipe em segundos (padrão: `"5"`). | COMBO | Sim | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"`<br>`"15"`<br>`"16"`<br>`"17"`<br>`"18"`<br>`"19"`<br>`"20"` |
+| `resolução` | Resolução da saída (padrão: `"720p"`). | COMBO | Sim | `"720p"`<br>`"1080p"` |
+| `nível_de_raciocínio` | Quanto o modelo raciocina sobre o prompt e o expande antes de gerar. `"high"` demora mais; o preço é o mesmo (padrão: `"high"`). | COMBO | Sim | `"low"`<br>`"high"` |
+| `gerar_áudio` | Gera áudio sincronizado. Desativado, produz um vídeo sem faixa de áudio (padrão: true). | BOOLEAN | Sim | `true`<br>`false` |
+| `semente` | Semente que controla se o nó é executado novamente. Os resultados são não determinísticos independentemente deste valor (padrão: 42). | INT | Sim | 0 a 2147483646 |
 
 ### Entradas «at times»
 

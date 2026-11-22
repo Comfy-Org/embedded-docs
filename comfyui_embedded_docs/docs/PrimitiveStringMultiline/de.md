@@ -6,7 +6,7 @@ Der Node „Text (Multiline)“ stellt ein mehrzeiliges Text-Eingabefeld bereit,
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `value` | Der Texteingabewert, der sich über mehrere Zeilen erstrecken kann | STRING | Ja | N/A |
+| `Wert` | Der Texteingabewert, der sich über mehrere Zeilen erstrecken kann | STRING | Ja | N/A |
 
 ## Ausgaben
 

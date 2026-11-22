@@ -6,10 +6,10 @@ MiniMax H3 Latent Upscale With Model skaliert den Videoteil eines MiniMax H3-Lat
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Latent-Upscale-Modell, das normalerweise mit Load Latent Upscale Model geladen wird. Es muss ein MiniMax H3 3D-Conv-Latent-Upscaler sein. | LATENT_UPSCALE_MODEL | Ja | - |
-| `samples` | MiniMax H3-Latent, dessen Größe geändert werden soll. Bei einem verschachtelten Latent bleibt der Audioteil unverändert. | LATENT | Ja | - |
-| `width` | Zielbreite des Videos in Pixeln. Das Latent wird auf `width / 16` Spalten skaliert, daher wird der Wert auf ein Vielfaches von 16 abgerundet. (Standard: 2560) | INT | Ja | 32 bis 16384 (Schritt 32) |
-| `height` | Zielhöhe des Videos in Pixeln, ebenfalls auf ein Vielfaches von 16 abgerundet. (Standard: 1440) | INT | Ja | 32 bis 16384 (Schritt 32) |
+| `Modell` | Latent-Upscale-Modell, das normalerweise mit Load Latent Upscale Model geladen wird. Es muss ein MiniMax H3 3D-Conv-Latent-Upscaler sein. | LATENT_UPSCALE_MODEL | Ja | - |
+| `Samples` | MiniMax H3-Latent, dessen Größe geändert werden soll. Bei einem verschachtelten Latent bleibt der Audioteil unverändert. | LATENT | Ja | - |
+| `Breite` | Zielbreite des Videos in Pixeln. Das Latent wird auf `width / 16` Spalten skaliert, daher wird der Wert auf ein Vielfaches von 16 abgerundet. (Standard: 2560) | INT | Ja | 32 bis 16384 (Schritt 32) |
+| `Höhe` | Zielhöhe des Videos in Pixeln, ebenfalls auf ein Vielfaches von 16 abgerundet. (Standard: 1440) | INT | Ja | 32 bis 16384 (Schritt 32) |
 
 Wenn die angeforderte Größe bereits dem Latent entspricht, wird das Eingabe-Latent unverändert zurückgegeben. Ein neu skaliertes Latent enthält keinen `noise_mask`, sodass ein teilweise maskiertes Latent seine Maske verliert. Das Netzwerk führt seine 3D-Faltungen in zeitlichen Slabs aus, wodurch der Speicherverbrauch bei langen Clips nahe dem eines einzelnen Slabs bleibt.
 

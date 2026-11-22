@@ -8,8 +8,8 @@ Der Node PrimitiveBoundingBox erstellt einen einfachen rechteckigen Bereich, der
 | --- | --- | --- | --- | --- |
 | `x` | Die X-Koordinate für die obere linke Ecke der Bounding-Box (Standard: 0). | INT | Ja | 0 bis 16384 |
 | `y` | Die Y-Koordinate für die obere linke Ecke der Bounding-Box (Standard: 0). | INT | Ja | 0 bis 16384 |
-| `width` | Die Breite der Bounding-Box (Standard: 512). | INT | Ja | 1 bis 16384 |
-| `height` | Die Höhe der Bounding-Box (Standard: 512). | INT | Ja | 1 bis 16384 |
+| `Breite` | Die Breite der Bounding-Box (Standard: 512). | INT | Ja | 1 bis 16384 |
+| `Höhe` | Die Höhe der Bounding-Box (Standard: 512). | INT | Ja | 1 bis 16384 |
 
 Hinweis: Alle Maximalwerte folgen der MAX_RESOLUTION-Konstante von ComfyUI, welche die größte Bildabmessung definiert, die der Node akzeptiert.
 

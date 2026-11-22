@@ -6,7 +6,7 @@ Transforme uma imagem estática e uma faixa de fala em um vídeo falado com sinc
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo a usar. Selecionar um modelo revela os parâmetros específicos dele: `image`, `audio` e `resolution`. | DYNAMIC_COMBO | Sim | `"fabric-1.0"` |
+| `modelo` | Modelo a usar. Selecionar um modelo revela os parâmetros específicos dele: `image`, `audio` e `resolution`. | DYNAMIC_COMBO | Sim | `"fabric-1.0"` |
 | `image` | Imagem com um rosto claramente visível. O vídeo mantém a proporção de aspecto da imagem. | IMAGE | Sim | - |
 | `audio` | Fala para sincronia labial, com até 300 segundos. Define a duração do vídeo. | AUDIO | Sim | Até 300 segundos |
 | `resolution` | Classe de tamanho da saída: cerca de 0,4 megapixels em `"480p"` (864x480 em 16:9) e 0,9 megapixels em `"720p"` (1312x736 em 16:9). (padrão: `"720p"`) | COMBO | Sim | `"480p"`<br>`"720p"` |

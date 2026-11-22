@@ -7,9 +7,9 @@ Der Knoten CosmosImageToVideoLatent erstellt eine Video-Latent-Darstellung aus E
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `vae` | Das VAE-Modell, das verwendet wird, um die Bilder in den Video-Latentraum zu kodieren. | VAE | Ja | - |
-| `width` | Die Breite des Ausgabevideos in Pixeln (Standard: 1280). | INT | Ja | 16 bis MAX_RESOLUTION (Schritt: 16) |
-| `height` | Die Höhe des Ausgabevideos in Pixeln (Standard: 704). | INT | Ja | 16 bis MAX_RESOLUTION (Schritt: 16) |
-| `length` | Die Gesamtzahl der Frames im Video (Standard: 121). | INT | Ja | 1 bis MAX_RESOLUTION (Schritt: 8) |
+| `Breite` | Die Breite des Ausgabevideos in Pixeln (Standard: 1280). | INT | Ja | 16 bis MAX_RESOLUTION (Schritt: 16) |
+| `Höhe` | Die Höhe des Ausgabevideos in Pixeln (Standard: 704). | INT | Ja | 16 bis MAX_RESOLUTION (Schritt: 16) |
+| `Länge` | Die Gesamtzahl der Frames im Video (Standard: 121). | INT | Ja | 1 bis MAX_RESOLUTION (Schritt: 8) |
 | `batch_size` | Die Anzahl der zu generierenden Video-Latents (Standard: 1). | INT | Ja | 1 bis 4096 |
 | `start_image` | Optionales Bild oder optionale Bildsequenz, die am Anfang des Videos kodiert wird. | IMAGE | Nein | - |
 | `end_image` | Optionales Bild oder optionale Bildsequenz, die am Ende des Videos kodiert wird. | IMAGE | Nein | - |

@@ -8,9 +8,9 @@
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `model` | Das zu verwendende Grok-Bildmodell. Die unten angezeigten Unterparameter ändern sich je nach ausgewähltem Modell. | DYNAMIC_COMBO | Ja | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
-| `prompt` | Der Text-Prompt, der zum Generieren des Bildes verwendet wird. (Standard: "") | STRING | Ja | N/A |
-| `seed` | Seed, um zu bestimmen, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
+| `Modell` | Das zu verwendende Grok-Bildmodell. Die unten angezeigten Unterparameter ändern sich je nach ausgewähltem Modell. | DYNAMIC_COMBO | Ja | "grok-imagine-image-2.0"<br>"grok-imagine-image-quality"<br>"grok-imagine-image-pro"<br>"grok-imagine-image" |
+| `Prompt` | Der Text-Prompt, der zum Generieren des Bildes verwendet wird. (Standard: "") | STRING | Ja | N/A |
+| `Seed` | Seed, um zu bestimmen, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
 
 **Hinweis:** `grok-imagine-image-quality` und `grok-imagine-image-pro` wurden von xAI eingestellt und laufen jetzt als `grok-imagine-image-2.0` mit niedriger Qualität.
 

@@ -6,10 +6,10 @@ Dieser Node ersetzt den Hintergrund eines Videos durch ein bereitgestelltes Bild
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `video` | Vordergrundvideo, dessen Hintergrund ersetzt wird. | VIDEO | Ja | - |
+| `Video` | Vordergrundvideo, dessen Hintergrund ersetzt wird. | VIDEO | Ja | - |
 | `background_image` | Hintergrundbild, das hinter dem Vordergrund komponiert werden soll. Geben Sie entweder ein Hintergrundbild oder ein Hintergrundvideo an, nicht beides. | IMAGE | Nein | - |
 | `background_video` | Hintergrundvideo, das hinter dem Vordergrund komponiert werden soll. Geben Sie entweder ein Hintergrundbild oder ein Hintergrundvideo an, nicht beides. | VIDEO | Nein | - |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
 
 **Hinweis:** Sie müssen genau eines von `background_image` oder `background_video` angeben – nicht beides und nicht keines. Das Vordergrundvideo und das Hintergrundvideo (falls verwendet) dürfen jeweils höchstens 60 Sekunden lang sein. Wenn `background_image` verwendet wird, wird dessen Alphakanal vor der Verarbeitung entfernt.
 

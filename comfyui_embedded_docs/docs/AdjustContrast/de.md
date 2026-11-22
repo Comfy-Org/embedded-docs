@@ -7,7 +7,7 @@ Der Node „Adjust Contrast“ passt den Kontrast eines Eingabebilds an, indem e
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `image` | Das Eingabebild, dessen Kontrast angepasst werden soll. | IMAGE | Ja | - |
-| `factor` | Kontrastfaktor. 1.0 = keine Änderung, <1.0 = weniger Kontrast, >1.0 = mehr Kontrast. (Standard: 1.0) | FLOAT | Nein | 0.0 - 2.0 |
+| `Faktor` | Kontrastfaktor. 1.0 = keine Änderung, <1.0 = weniger Kontrast, >1.0 = mehr Kontrast. (Standard: 1.0) | FLOAT | Nein | 0.0 - 2.0 |
 
 ## Ausgaben
 

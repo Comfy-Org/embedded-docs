@@ -8,7 +8,7 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `model` | 動画生成に使用するモデルです。 | DYNAMIC_COMBO | はい | "MiniMax H3 Max" |
+| `モデル` | 動画生成に使用するモデルです。 | DYNAMIC_COMBO | はい | "MiniMax H3 Max" |
 
 ### MiniMax H3 Max 入力
 

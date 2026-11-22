@@ -6,12 +6,12 @@ Der Node WanMoveVisualizeTracks überlagert Bewegungsverfolgungsdaten auf eine S
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `images` | Die Sequenz der Eingabebilder oder Videoframes, auf denen die Tracks visualisiert werden sollen. | IMAGE | Ja | - |
-| `tracks` | Die Bewegungsverfolgungsdaten mit Punktpfaden und Sichtbarkeitsinformationen. Wenn nicht angegeben, werden die Eingabebilder unverändert durchgereicht. | TRACKS | Nein | - |
-| `line_resolution` | Die Anzahl der vorherigen Frames, die beim Zeichnen der nachlaufenden Pfadlinie für jeden Track verwendet werden (Standard: 24). | INT | Ja | 1 - 1024 |
-| `circle_size` | Die Größe des Kreises, der an der aktuellen Position jedes Tracks gezeichnet wird (Standard: 12). Als erweiterter Parameter gekennzeichnet. | INT | Ja | 1 - 128 |
-| `opacity` | Die Deckkraft der gezeichneten Track-Überlagerungen (Standard: 0.75). | FLOAT | Ja | 0.0 - 1.0 |
-| `line_width` | Die Breite der Linien, mit denen die Track-Pfade gezeichnet werden (Standard: 16). Als erweiterter Parameter gekennzeichnet. | INT | Ja | 1 - 128 |
+| `Bilder` | Die Sequenz der Eingabebilder oder Videoframes, auf denen die Tracks visualisiert werden sollen. | IMAGE | Ja | - |
+| `Spuren` | Die Bewegungsverfolgungsdaten mit Punktpfaden und Sichtbarkeitsinformationen. Wenn nicht angegeben, werden die Eingabebilder unverändert durchgereicht. | TRACKS | Nein | - |
+| `Linienauflösung` | Die Anzahl der vorherigen Frames, die beim Zeichnen der nachlaufenden Pfadlinie für jeden Track verwendet werden (Standard: 24). | INT | Ja | 1 - 1024 |
+| `Kreisgröße` | Die Größe des Kreises, der an der aktuellen Position jedes Tracks gezeichnet wird (Standard: 12). Als erweiterter Parameter gekennzeichnet. | INT | Ja | 1 - 128 |
+| `Deckkraft` | Die Deckkraft der gezeichneten Track-Überlagerungen (Standard: 0.75). | FLOAT | Ja | 0.0 - 1.0 |
+| `Linienbreite` | Die Breite der Linien, mit denen die Track-Pfade gezeichnet werden (Standard: 16). Als erweiterter Parameter gekennzeichnet. | INT | Ja | 1 - 128 |
 
 **Hinweis:** Wenn die Anzahl der Eingabebilder nicht mit der Anzahl der Frames in den bereitgestellten `tracks`-Daten übereinstimmt, wird die Bildsequenz wiederholt, um sie an die Länge der Tracks anzupassen.
 

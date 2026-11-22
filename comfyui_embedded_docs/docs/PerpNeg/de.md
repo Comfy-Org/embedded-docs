@@ -6,7 +6,7 @@ Der PerpNeg-Node wendet senkrechte negative Guidance auf den Sampling-Prozess ei
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Modell, auf das die senkrechte negative Guidance angewendet werden soll | MODEL | Ja | - |
+| `Modell` | Das Modell, auf das die senkrechte negative Guidance angewendet werden soll | MODEL | Ja | - |
 | `empty_conditioning` | Leere Konditionierung, die für Berechnungen der negativen Guidance verwendet wird | CONDITIONING | Ja | - |
 | `neg_scale` | Skalierungsfaktor für die negative Guidance (Standard: 1.0) | FLOAT | Nein | 0.0 - 100.0 |
 
