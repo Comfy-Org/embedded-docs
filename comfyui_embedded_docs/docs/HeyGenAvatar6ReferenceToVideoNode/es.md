@@ -8,7 +8,7 @@ Genera con HeyGen Avatar 6 un video de una persona hablando a partir del audio q
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Selector de modelo; al seleccionar un modelo se muestran sus entradas a continuación. `"heygen-avatar-6-turbo"` es el nivel más económico y rápido. | DYNAMIC_COMBO | Sí | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `modelo` | Selector de modelo; al seleccionar un modelo se muestran sus entradas a continuación. `"heygen-avatar-6-turbo"` es el nivel más económico y rápido. | DYNAMIC_COMBO | Sí | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
 
 ### Entradas de `heygen-avatar-6`
 

@@ -8,10 +8,10 @@ Bearbeiten Sie ein Video mithilfe von Textanweisungen oder Referenzbildern mit d
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das zu verwendende HappyHorse-Videobearbeitungsmodell. Diese Auswahl bestimmt, welche Optionen für Prompt, Auflösung, Seitenverhältnis und Referenzbild verfügbar sind. | DYNAMIC_COMBO | Ja | "happyhorse-1.0-video-edit" |
-| `video` | Das zu bearbeitende Video. | VIDEO | Ja | 3 bis 60 Sekunden |
-| `seed` | Seed, der für die Generierung verwendet werden soll (Standard: 0). | INT | Ja | 0 bis 2147483647 |
-| `watermark` | Gibt an, ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll (Standard: False). Erweiterter Parameter. | BOOLEAN | Ja | True<br>False |
+| `Modell` | Das zu verwendende HappyHorse-Videobearbeitungsmodell. Diese Auswahl bestimmt, welche Optionen für Prompt, Auflösung, Seitenverhältnis und Referenzbild verfügbar sind. | DYNAMIC_COMBO | Ja | "happyhorse-1.0-video-edit" |
+| `Video` | Das zu bearbeitende Video. | VIDEO | Ja | 3 bis 60 Sekunden |
+| `Seed` | Seed, der für die Generierung verwendet werden soll (Standard: 0). | INT | Ja | 0 bis 2147483647 |
+| `Wasserzeichen` | Gibt an, ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll (Standard: False). Erweiterter Parameter. | BOOLEAN | Ja | True<br>False |
 
 ### happyhorse-1.0-video-edit Eingaben
 

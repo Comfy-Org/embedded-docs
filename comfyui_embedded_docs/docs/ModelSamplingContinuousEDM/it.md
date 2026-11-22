@@ -6,8 +6,8 @@ Questo nodo è progettato per migliorare le capacità di campionamento di un mod
 
 | Parametro | Descrizione | Tipo di dato | Tipo Python |
 | --- | --- | --- | --- |
-| `model` | Il modello da potenziare con capacità di campionamento EDM continue. Funge da base per l'applicazione delle tecniche di campionamento avanzate. | `MODEL` | `torch.nn.Module` |
-| `sampling` | Specifica il tipo di campionamento da applicare, ovvero 'eps' per il campionamento epsilon o 'v_prediction' per la predizione della velocità, influenzando il comportamento del modello durante il processo di campionamento. | COMBO[STRING] | `str` |
+| `modello` | Il modello da potenziare con capacità di campionamento EDM continue. Funge da base per l'applicazione delle tecniche di campionamento avanzate. | `MODEL` | `torch.nn.Module` |
+| `campionamento` | Specifica il tipo di campionamento da applicare, ovvero 'eps' per il campionamento epsilon o 'v_prediction' per la predizione della velocità, influenzando il comportamento del modello durante il processo di campionamento. | COMBO[STRING] | `str` |
 | `sigma_max` | Il valore massimo di sigma per il livello di rumore, che consente di controllare il limite superiore nel processo di iniezione del rumore durante il campionamento. | `FLOAT` | `float` |
 | `sigma_min` | Il valore minimo di sigma per il livello di rumore, che imposta il limite inferiore per l'iniezione del rumore, influenzando così la precisione di campionamento del modello. | `FLOAT` | `float` |
 

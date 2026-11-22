@@ -8,7 +8,7 @@ Il nodo StyleModelLoader è progettato per caricare un modello di stile da un pe
 
 | Nome parametro | Descrizione | Tipo Comfy | Tipo Python |
 | --- | --- | --- | --- |
-| `style_model_name` | Specifica il nome del modello di stile da caricare. Questo nome viene utilizzato per individuare il file del modello all'interno di una struttura di directory predefinita, consentendo il caricamento dinamico di modelli di stile diversi in base all'input dell'utente o alle esigenze dell'applicazione. | COMBO[STRING] | `str` |
+| `nome modello di stile` | Specifica il nome del modello di stile da caricare. Questo nome viene utilizzato per individuare il file del modello all'interno di una struttura di directory predefinita, consentendo il caricamento dinamico di modelli di stile diversi in base all'input dell'utente o alle esigenze dell'applicazione. | COMBO[STRING] | `str` |
 
 ## Output
 

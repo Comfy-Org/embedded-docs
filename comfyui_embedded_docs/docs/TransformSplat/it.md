@@ -7,15 +7,15 @@ Il nodo Transform Splat applica trasformazioni di traslazione, rotazione e scala
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
 | `splat` | Lo splat gaussiano da trasformare | SPLAT | Sì | - |
-| `translate_x` | Traslazione lungo l'asse X (predefinito: 0.0) | FLOAT | Sì | -100.0 a 100.0 |
-| `translate_y` | Traslazione lungo l'asse Y (predefinito: 0.0) | FLOAT | Sì | -100.0 a 100.0 |
-| `translate_z` | Traslazione lungo l'asse Z (predefinito: 0.0) | FLOAT | Sì | -100.0 a 100.0 |
-| `rotate_x` | Rotazione attorno all'asse X in gradi (predefinito: 0.0) | FLOAT | Sì | -360.0 a 360.0 |
-| `rotate_y` | Rotazione attorno all'asse Y in gradi (predefinito: 0.0) | FLOAT | Sì | -360.0 a 360.0 |
-| `rotate_z` | Rotazione attorno all'asse Z in gradi (predefinito: 0.0) | FLOAT | Sì | -360.0 a 360.0 |
-| `scale_x` | Fattore di scala lungo l'asse X (predefinito: 1.0) | FLOAT | Sì | 0.01 a 100.0 |
-| `scale_y` | Fattore di scala lungo l'asse Y (predefinito: 1.0) | FLOAT | Sì | 0.01 a 100.0 |
-| `scale_z` | Fattore di scala lungo l'asse Z (predefinito: 1.0) | FLOAT | Sì | 0.01 a 100.0 |
+| `trasla_x` | Traslazione lungo l'asse X (predefinito: 0.0) | FLOAT | Sì | -100.0 a 100.0 |
+| `trasla_y` | Traslazione lungo l'asse Y (predefinito: 0.0) | FLOAT | Sì | -100.0 a 100.0 |
+| `trasla_z` | Traslazione lungo l'asse Z (predefinito: 0.0) | FLOAT | Sì | -100.0 a 100.0 |
+| `ruota_x` | Rotazione attorno all'asse X in gradi (predefinito: 0.0) | FLOAT | Sì | -360.0 a 360.0 |
+| `ruota_y` | Rotazione attorno all'asse Y in gradi (predefinito: 0.0) | FLOAT | Sì | -360.0 a 360.0 |
+| `ruota_z` | Rotazione attorno all'asse Z in gradi (predefinito: 0.0) | FLOAT | Sì | -360.0 a 360.0 |
+| `scala_x` | Fattore di scala lungo l'asse X (predefinito: 1.0) | FLOAT | Sì | 0.01 a 100.0 |
+| `scala_y` | Fattore di scala lungo l'asse Y (predefinito: 1.0) | FLOAT | Sì | 0.01 a 100.0 |
+| `scala_z` | Fattore di scala lungo l'asse Z (predefinito: 1.0) | FLOAT | Sì | 0.01 a 100.0 |
 
 ## Output
 

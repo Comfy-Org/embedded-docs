@@ -8,7 +8,7 @@ Ce nœud effectue le rendu de la vidéo finale d'un Seedance 2.5 Draft en 1080p 
 | --- | --- | --- | --- | --- |
 | `draft_task_id` | La sortie `draft_task_id` d'un nœud Seedance 2.5 exécuté avec le modèle Seedance 2.5 Draft, ou un ID de tâche de brouillon collé. Lorsque vous réexécutez le nœud producteur, définissez son contrôle de graine sur fixed ; sinon, l'exécution suivante génère un nouveau brouillon au lieu de réutiliser celui que vous avez examiné. | STRING | Oui | - |
 | `watermark` | Indique s'il faut ajouter un filigrane à la vidéo. La valeur par défaut est False. Il s'agit d'un paramètre avancé. | BOOLEAN | Non | True / False |
-| `resolution` | Résolution de la vidéo finale. Pour un rendu en 4k, utilisez exactement la valeur en minuscules `"4k"`. Valeur par défaut : `"1080p"`. | COMBO | Non | `"1080p"`<br>`"4k"` |
+| `résolution` | Résolution de la vidéo finale. Pour un rendu en 4k, utilisez exactement la valeur en minuscules `"4k"`. Valeur par défaut : `"1080p"`. | COMBO | Non | `"1080p"`<br>`"4k"` |
 
 ## Sorties
 

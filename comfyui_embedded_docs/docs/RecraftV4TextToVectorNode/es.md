@@ -13,7 +13,7 @@ El nodo Recraft V4 Text to Vector genera ilustraciones de gráficos vectoriales 
 | `prompt_negativo` | Esta entrada se ignora: los modelos Recraft V4 y V4.1 no admiten prompt negativo. | STRING | Sí | N/A |
 | `n` | El número de imágenes a generar (predeterminado: 1). | INT | Sí | 1 a 6 |
 | `semilla` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla (predeterminado: 0). | INT | Sí | 0 a 18446744073709551615 |
-| `recraft_controls` | Controles adicionales opcionales sobre la generación mediante el nodo Recraft Controls. | CUSTOM | No | N/A |
+| `controles_recraft` | Controles adicionales opcionales sobre la generación mediante el nodo Recraft Controls. | CUSTOM | No | N/A |
 | `style_id` | UUID de un estilo vectorial de Recraft V4 que se aplicará, por ejemplo, desde el nodo Recraft V4 Create Style o la salida `style_id` de una ejecución anterior. No se puede combinar con style_references. | STRING | No | N/A |
 | `style_match` | Qué tan fielmente seguir el estilo: precise lo reproduce en detalle, flexible coincide con el aspecto general. Solo se usa cuando se proporciona un estilo (predeterminado: "precise"). | COMBO | No | `"precise"`<br>`"flexible"` |
 

@@ -7,7 +7,7 @@ El nodo Painter proporciona un lienzo interactivo para crear o editar imágenes 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `imagen` | Imagen base opcional sobre la que pintar. Si no se proporciona, se crea un lienzo en blanco usando el color de fondo, ancho y alto especificados. | IMAGE | No | - |
-| `mask` | Los datos de pintura, generados típicamente por el widget interactivo integrado del nodo. Este parámetro es gestionado por la herramienta de pintura de la interfaz de usuario y no está diseñado para conectarse a un conector estándar. | STRING | Sí | - |
+| `máscara` | Los datos de pintura, generados típicamente por el widget interactivo integrado del nodo. Este parámetro es gestionado por la herramienta de pintura de la interfaz de usuario y no está diseñado para conectarse a un conector estándar. | STRING | Sí | - |
 | `ancho` | El ancho del lienzo en píxeles, utilizado cuando no se proporciona una `imagen` base. El valor debe ser múltiplo de 64. Valor predeterminado: 512. | INT | Sí | 64 a 4096 |
 | `alto` | La altura del lienzo en píxeles, utilizada cuando no se proporciona una `imagen` base. El valor debe ser múltiplo de 64. Valor predeterminado: 512. | INT | Sí | 64 a 4096 |
 | `color_de_fondo` | El color de fondo del lienzo, especificado como código hexadecimal (ej. #000000). Solo se usa cuando no se proporciona una `imagen` base. Valor predeterminado: negro (#000000). | COLOR | Sí | - |

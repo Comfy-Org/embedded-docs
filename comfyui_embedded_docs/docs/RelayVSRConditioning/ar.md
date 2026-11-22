@@ -6,8 +6,8 @@
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 | --- | --- | --- | --- | --- |
-| `model` | نموذج الانتشار RelayVSR، الذي يُحمَّل باستخدام Load Model: `relayvsr_x2_lightx2v_int8_convrot.safetensors` أو `relayvsr_x4_int8_convrot.safetensors`. | MODEL | نعم | لا ينطبق |
-| `images` | الفيديو منخفض الجودة بدقته الأصلية. يحدد عامل الترقية في النموذج حجم النتيجة. | IMAGE | نعم | لا ينطبق |
+| `النموذج` | نموذج الانتشار RelayVSR، الذي يُحمَّل باستخدام Load Model: `relayvsr_x2_lightx2v_int8_convrot.safetensors` أو `relayvsr_x4_int8_convrot.safetensors`. | MODEL | نعم | لا ينطبق |
+| `الصور` | الفيديو منخفض الجودة بدقته الأصلية. يحدد عامل الترقية في النموذج حجم النتيجة. | IMAGE | نعم | لا ينطبق |
 
 ## المخرجات
 

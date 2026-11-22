@@ -10,9 +10,9 @@ Come mostrato di seguito, regolando la forza di `conditioning_to`, è possibile 
 
 | Parametro | Descrizione | Comfy dtype |
 | --- | --- | --- |
-| `conditioning_to` | Il vettore di conditioning di destinazione, che funge da base principale per la media ponderata. | `CONDITIONING` |
-| `conditioning_from` | Il vettore di conditioning di origine, che verrà fuso nel target in base a un determinato peso. | `CONDITIONING` |
-| `conditioning_to_strength` | La forza del conditioning di destinazione, intervallo 0.0-1.0, valore predefinito 1.0, passo 0.01. | `FLOAT` |
+| `conditioning_a` | Il vettore di conditioning di destinazione, che funge da base principale per la media ponderata. | `CONDITIONING` |
+| `conditioning_da` | Il vettore di conditioning di origine, che verrà fuso nel target in base a un determinato peso. | `CONDITIONING` |
+| `intensità_conditioning_a` | La forza del conditioning di destinazione, intervallo 0.0-1.0, valore predefinito 1.0, passo 0.01. | `FLOAT` |
 
 ## Output
 

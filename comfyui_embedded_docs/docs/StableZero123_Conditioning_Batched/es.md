@@ -6,7 +6,7 @@ El nodo StableZero123_Conditioning_Batched prepara datos de condicionamiento par
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `clip_vision` | El modelo de visión CLIP utilizado para codificar la imagen de entrada | CLIP_VISION | Sí | - |
+| `visión_clip` | El modelo de visión CLIP utilizado para codificar la imagen de entrada | CLIP_VISION | Sí | - |
 | `imagen_inicial` | La imagen de entrada inicial que se procesará y codificará | IMAGE | Sí | - |
 | `vae` | El modelo VAE utilizado para codificar los píxeles de la imagen en el espacio latente | VAE | Sí | - |
 | `ancho` | El ancho de salida para la imagen procesada (predeterminado: 256) | INT | Sí | 16 a MAX_RESOLUTION (paso de 8) |

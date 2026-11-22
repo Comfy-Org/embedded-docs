@@ -6,10 +6,10 @@ El nodo Mejorador de Piel de Magnific Image aplica un procesamiento de IA especi
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `image` | La imagen de retrato a mejorar. | IMAGE | Sí | - |
-| `sharpen` | Nivel de intensidad de nitidez (predeterminado: 0). | INT | No | 0 a 100 |
-| `smart_grain` | Nivel de intensidad de granulado inteligente (predeterminado: 2). | INT | No | 0 a 100 |
-| `mode` | El modo de procesamiento a utilizar. `"creative"` es para mejora artística, `"faithful"` para preservar la apariencia original y `"flexible"` para optimización específica. | COMBO | Sí | `"creative"`<br>`"faithful"`<br>`"flexible"` |
+| `imagen` | La imagen de retrato a mejorar. | IMAGE | Sí | - |
+| `nitidez` | Nivel de intensidad de nitidez (predeterminado: 0). | INT | No | 0 a 100 |
+| `grano_inteligente` | Nivel de intensidad de granulado inteligente (predeterminado: 2). | INT | No | 0 a 100 |
+| `modo` | El modo de procesamiento a utilizar. `"creative"` es para mejora artística, `"faithful"` para preservar la apariencia original y `"flexible"` para optimización específica. | COMBO | Sí | `"creative"`<br>`"faithful"`<br>`"flexible"` |
 | `skin_detail` | Nivel de mejora del detalle de la piel. Esta entrada solo está disponible y es obligatoria cuando el `mode` está configurado en `"faithful"` (predeterminado: 80). | INT | No | 0 a 100 |
 | `optimized_for` | Objetivo de optimización de mejora. Esta entrada solo está disponible y es obligatoria cuando el `mode` está configurado en `"flexible"`. | COMBO | No | `"enhance_skin"`<br>`"improve_lighting"`<br>`"enhance_everything"`<br>`"transform_to_real"`<br>`"no_make_up"` |
 

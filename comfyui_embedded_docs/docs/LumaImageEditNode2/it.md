@@ -8,8 +8,8 @@ Questo nodo modifica un'immagine esistente usando un prompt testuale, tramite il
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modello da usare per la modifica. Selezionando un modello vengono mostrate le opzioni specifiche del modello riportate di seguito. | DYNAMIC_COMBO | Sì | `"uni-1"`<br>`"uni-1-max"` |
-| `source` | Immagine di origine da modificare. | IMAGE | Sì | - |
+| `modello` | Modello da usare per la modifica. Selezionando un modello vengono mostrate le opzioni specifiche del modello riportate di seguito. | DYNAMIC_COMBO | Sì | `"uni-1"`<br>`"uni-1-max"` |
+| `sorgente` | Immagine di origine da modificare. | IMAGE | Sì | - |
 | `prompt` | Descrizione della modifica desiderata. 1–6000 caratteri. Predefinito: "" (stringa vuota; la richiesta non è valida finché non viene inserito almeno un carattere). | STRING | Sì | 1 a 6000 caratteri |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati sono non deterministici indipendentemente dal seed. Predefinito: 0. | INT | Sì | 0 a 2147483647 |
 

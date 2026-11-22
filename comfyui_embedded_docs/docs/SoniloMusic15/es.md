@@ -7,8 +7,8 @@ El nodo Sonilo Music 1.5 genera una canción completa con voces cantadas a parti
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `prompt` | Descripción de la canción: género, estado de ánimo, instrumentos y voces. Para establecer la letra tú mismo, agrega un bloque `Lyrics:` con etiquetas `[Verse]` y `[Chorus]`; sin uno, el modelo escribe su propia letra. Debe tener de 1 a 2000 caracteres después de eliminar los espacios en blanco de los extremos. | STRING | Sí | 1 a 2000 caracteres |
-| `duration` | `auto` ajusta la duración de la canción a la letra. `custom` usa el valor de `seconds`, recortando la letra que no encaje y repitiendo la que sea corta. | DYNAMIC_COMBO | Sí | `"auto"`<br>`"custom"` |
-| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 42). | INT | Sí | 0 a 18446744073709551615 |
+| `duración` | `auto` ajusta la duración de la canción a la letra. `custom` usa el valor de `seconds`, recortando la letra que no encaje y repitiendo la que sea corta. | DYNAMIC_COMBO | Sí | `"auto"`<br>`"custom"` |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 42). | INT | Sí | 0 a 18446744073709551615 |
 
 ### Parámetros de duración personalizada (cuando `duration` es `"custom"`)
 

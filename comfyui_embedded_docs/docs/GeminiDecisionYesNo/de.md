@@ -6,13 +6,13 @@ Stellen Sie eine Ja/Nein-Frage zum Text, zu den Bildern, zum Audio oder zum Vide
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Zu verwendendes Modell (Standard: `"gemini-decision-1"`). | COMBO | Ja | `"gemini-decision-1"` |
-| `question` | Die Ja/Nein-Frage zu dem, was verbunden ist, bis zu 5000 Zeichen. Formulieren Sie sie so, dass „Ja“ der Fall ist, auf den Sie reagieren möchten (Standard: "Is there a person in the image?"). | STRING | Ja | 1 bis 5000 Zeichen |
-| `threshold` | Wahrscheinlichkeit für „Ja“, ab der `result` wahr wird. Eindeutige Ja-Antworten erreichen etwa 0.85 bis 0.92, daher lehnt 0.9 oder mehr viele davon ab (Standard: 0.5). | FLOAT | Ja | 0.01 bis 0.99 (Schritt: 0.01) |
-| `images` | Bilder, zu denen die Frage gestellt wird, bis zu 16 über die erweiterbaren Slots (`image_1` ... `image_16`). Ein gebündeltes Bild zählt pro Bild einmal. | IMAGE | Nein | Bis zu 16 Bilder |
-| `audio` | Audioclip, zu dem die Frage gestellt wird. | AUDIO | Nein | - |
-| `video` | Videoclip, zu dem die Frage gestellt wird. | VIDEO | Nein | - |
-| `text` | Text, auf den sich die Frage bezieht, etwa ein Prompt oder eine LLM-Antwort, bis zu 20000 Zeichen. | STRING | Nein | Bis zu 20000 Zeichen |
+| `Modell` | Zu verwendendes Modell (Standard: `"gemini-decision-1"`). | COMBO | Ja | `"gemini-decision-1"` |
+| `Frage` | Die Ja/Nein-Frage zu dem, was verbunden ist, bis zu 5000 Zeichen. Formulieren Sie sie so, dass „Ja“ der Fall ist, auf den Sie reagieren möchten (Standard: "Is there a person in the image?"). | STRING | Ja | 1 bis 5000 Zeichen |
+| `Schwellenwert` | Wahrscheinlichkeit für „Ja“, ab der `result` wahr wird. Eindeutige Ja-Antworten erreichen etwa 0.85 bis 0.92, daher lehnt 0.9 oder mehr viele davon ab (Standard: 0.5). | FLOAT | Ja | 0.01 bis 0.99 (Schritt: 0.01) |
+| `Bilder` | Bilder, zu denen die Frage gestellt wird, bis zu 16 über die erweiterbaren Slots (`image_1` ... `image_16`). Ein gebündeltes Bild zählt pro Bild einmal. | IMAGE | Nein | Bis zu 16 Bilder |
+| `Audio` | Audioclip, zu dem die Frage gestellt wird. | AUDIO | Nein | - |
+| `Video` | Videoclip, zu dem die Frage gestellt wird. | VIDEO | Nein | - |
+| `Text` | Text, auf den sich die Frage bezieht, etwa ein Prompt oder eine LLM-Antwort, bis zu 20000 Zeichen. | STRING | Nein | Bis zu 20000 Zeichen |
 
 Verbinden Sie mindestens eines von `text`, `images`, `audio` oder `video`; der Node meldet einen Fehler, wenn es nichts zu betrachten gibt. Benennen Sie bei mehreren Bildern diese innerhalb der Frage als `image_1`, `image_2` und so weiter: Ein Batch wird Bild für Bild entpackt, sodass die Nummern einzelne Frames über die Slots hinweg in Verbindungsreihenfolge zählen.
 

@@ -7,7 +7,7 @@ El nodo SplitSigmasDenoise divide una secuencia de valores sigma en dos partes b
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `sigmas` | La secuencia de valores sigma de entrada que representa el programa de ruido | SIGMAS | Sí | - |
-| `denoise` | El factor de fuerza de eliminación de ruido que determina dónde dividir la secuencia de sigma (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |
+| `reducción_de_ruido` | El factor de fuerza de eliminación de ruido que determina dónde dividir la secuencia de sigma (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |
 
 ## Salidas
 

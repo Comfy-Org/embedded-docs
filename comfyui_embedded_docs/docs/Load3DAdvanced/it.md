@@ -8,8 +8,8 @@ Il nodo Load 3D (Advanced) carica un file di modello 3D dalla directory `input/3
 |-----------|-------------|--------------|--------------|------------|
 | `model_file` | Il file di modello 3D da caricare. Seleziona "none" per saltare il caricamento di un file di modello. I file possono anche essere caricati tramite il widget. | COMBO | Sì | `"none"`<br>File di modello 3D disponibili nella directory `input/3d` |
 | `viewport_state` | Lo stato corrente del viewport contenente le informazioni su camera e modello dal visualizzatore 3D. | LOAD3D | Sì | - |
-| `width` | Larghezza di rendering del viewport in pixel (predefinito: 1024). | INT | Sì | Min: 1<br>Max: 4096<br>Predefinito: 1024<br>Passo: 1 |
-| `height` | Altezza di rendering del viewport in pixel (predefinito: 1024). | INT | Sì | Min: 1<br>Max: 4096<br>Predefinito: 1024<br>Passo: 1 |
+| `larghezza` | Larghezza di rendering del viewport in pixel (predefinito: 1024). | INT | Sì | Min: 1<br>Max: 4096<br>Predefinito: 1024<br>Passo: 1 |
+| `altezza` | Altezza di rendering del viewport in pixel (predefinito: 1024). | INT | Sì | Min: 1<br>Max: 4096<br>Predefinito: 1024<br>Passo: 1 |
 
 **Note sui parametri:**
 - Il parametro `model_file` elenca solo i file con le seguenti estensioni: .gltf, .glb, .obj, .fbx, .stl

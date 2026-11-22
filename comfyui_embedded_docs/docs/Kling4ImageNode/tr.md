@@ -6,12 +6,12 @@ Kling 4.0 ile bir metin isteminden ve en fazla 10 referans görüntüsünden gö
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `reference_images` | Referans görüntüleri için büyütülebilir yuvalar (`image_1` ... `image_10`). İstemde bunlara `@Image1`, `@Image2` ve benzeri şekilde başvurun. | AUTOGROW | Hayır | 0 ile 10 görsel arası |
-| `prompt` | Görüntünün açıklaması. Bağlı görüntülere `@Image1`, `@Image2`, ... olarak başvurun. Varsayılan: boş dize. | STRING | Evet | Çok satırlı metin |
-| `resolution` | Çıktı görüntüsünün çözünürlüğü. Varsayılan: `"2K"`. | COMBO | Evet | `"2K"`<br>`"4K"`<br>`"8K"` |
-| `aspect_ratio` | Çıktı görüntüsünün en-boy oranı. `"auto"` referans görüntülerini, aksi takdirde istemi izler. Varsayılan: `"auto"`. | COMBO | Evet | `"auto"`<br>`"9:16"`<br>`"2:3"`<br>`"3:4"`<br>`"1:1"`<br>`"4:3"`<br>`"3:2"`<br>`"16:9"`<br>`"21:9"` |
-| `series_amount` | Aynı karakterleri ve stili koruyan bir dizi ilgili görüntü oluşturun. `"auto"` modelin 2 ile 10 görsel arasında seçim yapmasına izin verir. Varsayılan: `"disabled"`. | COMBO | Evet | `"disabled"`<br>`"auto"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
-| `seed` | Seed, düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Evet | 0 ile 2147483647 arası |
+| `referans_görüntüleri` | Referans görüntüleri için büyütülebilir yuvalar (`image_1` ... `image_10`). İstemde bunlara `@Image1`, `@Image2` ve benzeri şekilde başvurun. | AUTOGROW | Hayır | 0 ile 10 görsel arası |
+| `istem` | Görüntünün açıklaması. Bağlı görüntülere `@Image1`, `@Image2`, ... olarak başvurun. Varsayılan: boş dize. | STRING | Evet | Çok satırlı metin |
+| `çözünürlük` | Çıktı görüntüsünün çözünürlüğü. Varsayılan: `"2K"`. | COMBO | Evet | `"2K"`<br>`"4K"`<br>`"8K"` |
+| `en_boy_oranı` | Çıktı görüntüsünün en-boy oranı. `"auto"` referans görüntülerini, aksi takdirde istemi izler. Varsayılan: `"auto"`. | COMBO | Evet | `"auto"`<br>`"9:16"`<br>`"2:3"`<br>`"3:4"`<br>`"1:1"`<br>`"4:3"`<br>`"3:2"`<br>`"16:9"`<br>`"21:9"` |
+| `seri_miktarı` | Aynı karakterleri ve stili koruyan bir dizi ilgili görüntü oluşturun. `"auto"` modelin 2 ile 10 görsel arasında seçim yapmasına izin verir. Varsayılan: `"disabled"`. | COMBO | Evet | `"disabled"`<br>`"auto"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
+| `tohum` | Seed, düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Evet | 0 ile 2147483647 arası |
 
 **Kısıtlamalar ve davranış:**
 

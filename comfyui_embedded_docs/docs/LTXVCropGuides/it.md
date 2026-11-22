@@ -6,9 +6,9 @@ Il nodo LTXVCropGuides rimuove i dati di guida dei keyframe da un flusso di lavo
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | L'input di condizionamento positivo contenente informazioni di guida per la generazione. Il numero di keyframe che contiene determina quanti fotogrammi vengono ritagliati dal latent. | CONDITIONING | Sì | - |
-| `negative` | L'input di condizionamento negativo contenente informazioni di guida su ciò che va evitato nella generazione. I suoi dati sui keyframe vengono cancellati insieme al condizionamento positivo. | CONDITIONING | Sì | - |
-| `latent` | La rappresentazione latente contenente campioni di immagine e dati della maschera di rumore. Quando sono presenti keyframe, i fotogrammi dei keyframe finali vengono rimossi sia dai campioni sia dalla maschera di rumore. | LATENT | Sì | - |
+| `positivo` | L'input di condizionamento positivo contenente informazioni di guida per la generazione. Il numero di keyframe che contiene determina quanti fotogrammi vengono ritagliati dal latent. | CONDITIONING | Sì | - |
+| `negativo` | L'input di condizionamento negativo contenente informazioni di guida su ciò che va evitato nella generazione. I suoi dati sui keyframe vengono cancellati insieme al condizionamento positivo. | CONDITIONING | Sì | - |
+| `latente` | La rappresentazione latente contenente campioni di immagine e dati della maschera di rumore. Quando sono presenti keyframe, i fotogrammi dei keyframe finali vengono rimossi sia dai campioni sia dalla maschera di rumore. | LATENT | Sì | - |
 
 Nota: Il ritaglio avviene solo quando vengono rilevati indici di keyframe nel condizionamento positivo. Se non viene rilevato alcun keyframe, i condizionamenti positivo e negativo vengono restituiti invariati, mentre il latent viene comunque restituito con un tensore di campioni clonato e una maschera di rumore esplicita (se il latent di input non ne ha una, viene creata una maschera di tutti uno).
 

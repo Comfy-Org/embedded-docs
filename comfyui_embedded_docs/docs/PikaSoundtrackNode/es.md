@@ -6,9 +6,9 @@ Este nodo genera una banda sonora sincronizada para un video con Pika. Se conser
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `video` | El clip para el que se escribirá una banda sonora. Hasta 10 minutos. | VIDEO | Sí | - |
-| `instruction` | Qué debe ser el audio: efectos de sonido, ambiente, música o estilo. Déjalo vacío para derivarlo de la imagen. Predeterminado: "" (cadena vacía). | STRING | Sí | 0 a 10000 caracteres |
-| `seed` | Semilla para el muestreo. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
+| `vídeo` | El clip para el que se escribirá una banda sonora. Hasta 10 minutos. | VIDEO | Sí | - |
+| `instrucción` | Qué debe ser el audio: efectos de sonido, ambiente, música o estilo. Déjalo vacío para derivarlo de la imagen. Predeterminado: "" (cadena vacía). | STRING | Sí | 0 a 10000 caracteres |
+| `semilla` | Semilla para el muestreo. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
 
 **Restricciones:**
 

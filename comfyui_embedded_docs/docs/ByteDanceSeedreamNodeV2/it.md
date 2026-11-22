@@ -11,7 +11,7 @@ Questo nodo genera o modifica immagini utilizzando i modelli Seedream di ByteDan
 | `model` | La versione del modello Seedream da usare per la generazione. Ogni modello ha capacità e prezzi diversi. | DYNAMIC_COMBO | Sì | `"seedream 5.0 pro"`<br>`"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
 | `prompt` | Prompt testuale per creare o modificare un'immagine (predefinito: stringa vuota). | STRING | Sì | N/A |
 | `seed` | Seed da usare per la generazione (predefinito: 0). | INT | Sì | 0 a 2147483647 |
-| `watermark` | Indica se aggiungere una filigrana "AI generated" all'immagine (predefinito: False). | BOOLEAN | Sì | True / False |
+| `filigrana` | Indica se aggiungere una filigrana "AI generated" all'immagine (predefinito: False). | BOOLEAN | Sì | True / False |
 | `thinking` | Abilita il ragionamento di ottimizzazione del prompt ('thinking') del modello per una migliore aderenza. Può aumentare considerevolmente il tempo di generazione — in particolare su Seedream 5.0 Pro. Può essere disabilitato solo per testo-immagine (non quando vengono fornite immagini di riferimento) (predefinito: True). | BOOLEAN | No | True / False |
 
 ### Input di `seedream 5.0 pro`

@@ -6,9 +6,9 @@ Remova o ruído de fundo da fala com o VEED. Ele foi desenvolvido para fala em q
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `audio` | Gravação de fala, com menos de 30 minutos. | AUDIO | Sim | Até 1799 segundos |
-| `strength` | Quanto ruído é removido sob a fala. Valores menores mantêm mais tom ambiente atrás da voz; as pausas entre palavras são sempre totalmente limpas, e valores acima do padrão mudam pouco. (padrão: 0.874) | FLOAT | Sim | 0.0 a 1.0 (passo 0.001) |
-| `loudness` | Se deve normalizar o volume da saída. `"normalize"` define a saída para `target_lufs`; `"keep input level"` mantém o nível como está. Selecionar uma opção revela seus parâmetros. (padrão: `"normalize"`) | DYNAMIC_COMBO | Sim | `"normalize"`<br>`"keep input level"` |
+| `áudio` | Gravação de fala, com menos de 30 minutos. | AUDIO | Sim | Até 1799 segundos |
+| `intensidade` | Quanto ruído é removido sob a fala. Valores menores mantêm mais tom ambiente atrás da voz; as pausas entre palavras são sempre totalmente limpas, e valores acima do padrão mudam pouco. (padrão: 0.874) | FLOAT | Sim | 0.0 a 1.0 (passo 0.001) |
+| `volume` | Se deve normalizar o volume da saída. `"normalize"` define a saída para `target_lufs`; `"keep input level"` mantém o nível como está. Selecionar uma opção revela seus parâmetros. (padrão: `"normalize"`) | DYNAMIC_COMBO | Sim | `"normalize"`<br>`"keep input level"` |
 | `target_lufs` | Volume integrado da saída em LUFS. Os picos são limitados a -1.1 dBTP, então alvos altos param cedo (cerca de -15 LUFS para fala típica). Disponível quando `loudness` é `"normalize"` (padrão: -19.0). | FLOAT | Sim | -40.0 a -8.0 (passo 0.1) |
 
 O nó para com um erro quando a gravação tem mais de 1799 segundos.

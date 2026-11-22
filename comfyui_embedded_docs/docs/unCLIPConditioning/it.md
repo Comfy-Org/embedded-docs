@@ -8,8 +8,8 @@ Questo nodo è progettato per integrare gli output della visione CLIP nel proces
 | --- | --- | --- |
 | `conditioning` | I dati di condizionamento di base a cui devono essere aggiunti gli output della visione CLIP, che fungono da fondamento per ulteriori modifiche. | `CONDITIONING` |
 | `clip_vision_output` | L'output di un modello di visione CLIP, che fornisce il contesto visivo integrato nel condizionamento. | `CLIP_VISION_OUTPUT` |
-| `strength` | Determina l'intensità dell'influenza dell'output della visione CLIP sul condizionamento. | `FLOAT` |
-| `noise_augmentation` | Specifica il livello di aumento del rumore da applicare all'output della visione CLIP prima di integrarlo nel condizionamento. | `FLOAT` |
+| `forza` | Determina l'intensità dell'influenza dell'output della visione CLIP sul condizionamento. | `FLOAT` |
+| `aumento_rumore` | Specifica il livello di aumento del rumore da applicare all'output della visione CLIP prima di integrarlo nel condizionamento. | `FLOAT` |
 
 ## Output
 

@@ -6,9 +6,9 @@ Il nodo Ideogram 4 Scheduler genera una sequenza di valori sigma (livelli di rum
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `steps` | Il numero di passaggi di campionamento per cui generare la schedulazione (predefinito: 20). L'output contiene `steps + 1` valori sigma. | INT | Sì | Da 1 a 200 |
-| `width` | La larghezza dell'immagine in pixel (predefinito: 1024). La risoluzione relativa a un riferimento di 512×512 sposta la schedulazione del rumore. | INT | Sì | Da 256 a 8192 (passo: 16) |
-| `height` | L'altezza dell'immagine in pixel (predefinito: 1024). La risoluzione relativa a un riferimento di 512×512 sposta la schedulazione del rumore. | INT | Sì | Da 256 a 8192 (passo: 16) |
+| `passi` | Il numero di passaggi di campionamento per cui generare la schedulazione (predefinito: 20). L'output contiene `steps + 1` valori sigma. | INT | Sì | Da 1 a 200 |
+| `larghezza` | La larghezza dell'immagine in pixel (predefinito: 1024). La risoluzione relativa a un riferimento di 512×512 sposta la schedulazione del rumore. | INT | Sì | Da 256 a 8192 (passo: 16) |
+| `altezza` | L'altezza dell'immagine in pixel (predefinito: 1024). La risoluzione relativa a un riferimento di 512×512 sposta la schedulazione del rumore. | INT | Sì | Da 256 a 8192 (passo: 16) |
 | `mu` | Il parametro della media per la distribuzione logit-normale, che controlla il livello di rumore centrale. Combinato con il termine di risoluzione per formare lo spostamento logSNR (predefinito: 0.0). | FLOAT | Sì | Da -10.0 a 10.0 (passo: 0.05) |
 | `std` | Il parametro della deviazione standard per la distribuzione logit-normale, che controlla la dispersione dei livelli di rumore (predefinito: 1.75). | FLOAT | Sì | Da 0.1 a 5.0 (passo: 0.05) |
 

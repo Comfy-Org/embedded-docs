@@ -6,8 +6,8 @@ Il nodo LTXVPreprocess applica una preelaborazione di compressione video alle im
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | L'immagine di input da elaborare | IMAGE | Sì | - |
-| `img_compression` | Quantità di compressione da applicare all'immagine. Un valore di 0 disabilita completamente la compressione (predefinito: 35) | INT | No | 0-100 |
+| `immagine` | L'immagine di input da elaborare | IMAGE | Sì | - |
+| `compressione_img` | Quantità di compressione da applicare all'immagine. Un valore di 0 disabilita completamente la compressione (predefinito: 35) | INT | No | 0-100 |
 
 ## Output
 

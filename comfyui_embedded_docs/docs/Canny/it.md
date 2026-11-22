@@ -18,9 +18,9 @@ L'output finale è un'immagine in bianco e nero, in cui le parti bianche sono le
 
 | Nome parametro | Descrizione funzione | Tipo di dati | Tipo di input | Predefinito | Intervallo |
 | --- | --- | --- | --- | --- | --- |
-| `image` | Foto originale da cui estrarre i bordi | IMAGE | Input | - | - |
-| `low_threshold` | Soglia bassa, determina quanto debbano essere deboli i bordi da ignorare. Valori più bassi preservano più dettagli ma possono produrre rumore | FLOAT | Widget | 0.4 | 0.01-0.99 |
-| `high_threshold` | Soglia alta, determina quanto debbano essere forti i bordi da preservare. Valori più alti mantengono solo le linee di contorno più evidenti | FLOAT | Widget | 0.8 | 0.01-0.99 |
+| `immagine` | Foto originale da cui estrarre i bordi | IMAGE | Input | - | - |
+| `soglia_bassa` | Soglia bassa, determina quanto debbano essere deboli i bordi da ignorare. Valori più bassi preservano più dettagli ma possono produrre rumore | FLOAT | Widget | 0.4 | 0.01-0.99 |
+| `soglia_alta` | Soglia alta, determina quanto debbano essere forti i bordi da preservare. Valori più alti mantengono solo le linee di contorno più evidenti | FLOAT | Widget | 0.8 | 0.01-0.99 |
 
 ## Output
 

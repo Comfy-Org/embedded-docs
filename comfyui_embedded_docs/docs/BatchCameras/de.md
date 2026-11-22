@@ -6,7 +6,7 @@ Fasst Kameras und Kameraorbits in einer Kameraliste zusammen, in der Reihenfolge
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `cameras` | Erweiterbarer Slot für Kameras aus Create Camera Info, Create Camera Orbit oder einem Viewer. Eine Kameraliste zählt als jede darin enthaltene Kamera. | AUTOGROW | Ja | 1 bis 50 Kameras |
+| `Kameras` | Erweiterbarer Slot für Kameras aus Create Camera Info, Create Camera Orbit oder einem Viewer. Eine Kameraliste zählt als jede darin enthaltene Kamera. | AUTOGROW | Ja | 1 bis 50 Kameras |
 
 ## Ausgaben
 

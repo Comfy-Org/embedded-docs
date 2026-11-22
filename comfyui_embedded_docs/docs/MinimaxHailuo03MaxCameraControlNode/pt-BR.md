@@ -8,7 +8,7 @@ Este nó gera um vídeo que parte de uma imagem estática e move a câmera para 
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo a usar para a geração de vídeo. | DYNAMIC_COMBO | Sim | "MiniMax H3 Max" |
+| `modelo` | Modelo a usar para a geração de vídeo. | DYNAMIC_COMBO | Sim | "MiniMax H3 Max" |
 
 ### Entradas do MiniMax H3 Max
 

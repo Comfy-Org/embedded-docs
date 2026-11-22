@@ -6,9 +6,9 @@ Il nodo StringSubstring estrae una porzione di testo da una stringa più grande.
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `string` | La stringa di testo di input da cui estrarre. Supporta testo su più righe. | STRING | Sì | - |
-| `start` | L'indice della posizione iniziale della sottostringa. Il primo carattere si trova all'indice 0. | INT | Sì | - |
-| `end` | L'indice della posizione finale della sottostringa. Il carattere in questa posizione non è incluso nel risultato. | INT | Sì | - |
+| `stringa` | La stringa di testo di input da cui estrarre. Supporta testo su più righe. | STRING | Sì | - |
+| `inizio` | L'indice della posizione iniziale della sottostringa. Il primo carattere si trova all'indice 0. | INT | Sì | - |
+| `fine` | L'indice della posizione finale della sottostringa. Il carattere in questa posizione non è incluso nel risultato. | INT | Sì | - |
 
 ## Output
 

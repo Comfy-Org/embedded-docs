@@ -6,12 +6,12 @@ Dieser Node generiert mithilfe von Lumas Ray 3.2-Modell ein Video aus einem Text
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Text-Prompt für die Videogenerierung. | STRING | Ja | 1 bis 6000 Zeichen |
+| `Prompt` | Text-Prompt für die Videogenerierung. | STRING | Ja | 1 bis 6000 Zeichen |
 | `aspect_ratio` | Das Seitenverhältnis des generierten Videos. | STRING | Ja | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"` |
-| `resolution` | Die Ausgabeauflösung des Videos (Standard: "720p"). | STRING | Ja | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
-| `duration` | Die Dauer des generierten Videos. | STRING | Ja | `"5s"`<br>`"10s"` |
-| `loop` | Lässt das Video nahtlos wiederholen. Nur bei einer Dauer von 5s verfügbar. | BOOLEAN | Nein | True/False (Standard: False) |
-| `seed` | Seed für reproduzierbare Generierung. | INT | Nein | 0 bis 2147483647 |
+| `Auflösung` | Die Ausgabeauflösung des Videos (Standard: "720p"). | STRING | Ja | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+| `Dauer` | Die Dauer des generierten Videos. | STRING | Ja | `"5s"`<br>`"10s"` |
+| `Schleife` | Lässt das Video nahtlos wiederholen. Nur bei einer Dauer von 5s verfügbar. | BOOLEAN | Nein | True/False (Standard: False) |
+| `Seed` | Seed für reproduzierbare Generierung. | INT | Nein | 0 bis 2147483647 |
 
 **Hinweis:** Der Parameter `loop` kann nur aktiviert werden, wenn `duration` auf "5s" eingestellt ist. Wenn Sie `duration` auf "10s" setzen und `loop` aktivieren, gibt der Node einen Fehler zurück.
 

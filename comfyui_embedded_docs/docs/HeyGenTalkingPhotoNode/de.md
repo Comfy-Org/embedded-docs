@@ -8,12 +8,12 @@ Animieren Sie ein Standbild einer Person mit der Avatar-IV-Technologie von HeyGe
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Bild einer Person, die animiert werden soll. Wird automatisch herunterskaliert, wenn es größer als 2K ist. | IMAGE | Ja | - |
-| `speech` | Steuern Sie den Avatar mit einem Textskript (HeyGen-Text-to-Speech) oder mit eigenem Audio. | DYNAMIC_COMBO | Ja | `"script"`<br>`"audio"` |
-| `resolution` | Auflösung des Ausgabevideos (Standard: `"1080p"`). | COMBO | Nein | `"720p"`<br>`"1080p"` |
+| `Bild` | Bild einer Person, die animiert werden soll. Wird automatisch herunterskaliert, wenn es größer als 2K ist. | IMAGE | Ja | - |
+| `Sprache` | Steuern Sie den Avatar mit einem Textskript (HeyGen-Text-to-Speech) oder mit eigenem Audio. | DYNAMIC_COMBO | Ja | `"script"`<br>`"audio"` |
+| `Auflösung` | Auflösung des Ausgabevideos (Standard: `"1080p"`). | COMBO | Nein | `"720p"`<br>`"1080p"` |
 | `aspect_ratio` | Seitenverhältnis der Ausgabe. `"auto"` folgt dem Eingabebild (Standard: `"auto"`). | COMBO | Nein | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `expressiveness` | Wie ausdrucksstark das animierte Gesicht und die Gesten sind (Standard: `"low"`). | COMBO | Nein | `"low"`<br>`"medium"`<br>`"high"` |
-| `seed` | Wird nicht an HeyGen gesendet; ändern Sie ihn, um eine erneute Ausführung zu erzwingen (Standard: 42). | INT | Nein | 0 bis 2147483647 |
+| `Ausdrucksstärke` | Wie ausdrucksstark das animierte Gesicht und die Gesten sind (Standard: `"low"`). | COMBO | Nein | `"low"`<br>`"medium"`<br>`"high"` |
+| `Seed` | Wird nicht an HeyGen gesendet; ändern Sie ihn, um eine erneute Ausführung zu erzwingen (Standard: 42). | INT | Nein | 0 bis 2147483647 |
 
 ### Skript-Eingaben
 

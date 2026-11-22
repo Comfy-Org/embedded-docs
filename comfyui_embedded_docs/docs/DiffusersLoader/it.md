@@ -6,7 +6,7 @@ Il nodo DiffusersLoader carica modelli pre-addestrati salvati nel formato diffus
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model_path` | Il percorso della directory del modello diffusers da caricare. Il nodo analizza automaticamente le cartelle `diffusers` configurate (incluse le sottocartelle collegate) per individuare le directory che contengono un file `model_index.json` e mostra le opzioni disponibili. Il percorso selezionato viene convalidato prima del caricamento; un modello non valido o mancante genera un errore. | COMBO | Sì | Elenco compilato automaticamente delle cartelle che contengono `model_index.json`<br>(percorsi relativi all'interno delle cartelle `diffusers` configurate) |
+| `percorso_modello` | Il percorso della directory del modello diffusers da caricare. Il nodo analizza automaticamente le cartelle `diffusers` configurate (incluse le sottocartelle collegate) per individuare le directory che contengono un file `model_index.json` e mostra le opzioni disponibili. Il percorso selezionato viene convalidato prima del caricamento; un modello non valido o mancante genera un errore. | COMBO | Sì | Elenco compilato automaticamente delle cartelle che contengono `model_index.json`<br>(percorsi relativi all'interno delle cartelle `diffusers` configurate) |
 
 ## Output
 

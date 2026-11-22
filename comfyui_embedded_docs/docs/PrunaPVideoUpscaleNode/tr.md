@@ -7,7 +7,7 @@ Pruna P-Video Upscale, en-boy oranını ve ses parçasını koruyarak bir videoy
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `video` | Büyütülecek video, 512 MiB'a kadar. 10 megapikselden büyük videolar yalnızca 2K veya 4K hedefine gönderilebilir. | VIDEO | Evet | 512 MiB'a kadar |
-| `target` | Çıktı piksel alanı: 720p yaklaşık 0,9 megapiksel, 1080p 2,1, 2K 3,7 ve 4K 8,3'tür. En uzun klip hedefe göre sınırlanır: 2400, 1200, 600 veya 300 kare; 24 fps'te yaklaşık 100, 50, 25 veya 12,5 saniye (varsayılan: "1080p"). | COMBO | Evet | "720p"<br>"1080p"<br>"2K"<br>"4K" |
+| `hedef` | Çıktı piksel alanı: 720p yaklaşık 0,9 megapiksel, 1080p 2,1, 2K 3,7 ve 4K 8,3'tür. En uzun klip hedefe göre sınırlanır: 2400, 1200, 600 veya 300 kare; 24 fps'te yaklaşık 100, 50, 25 veya 12,5 saniye (varsayılan: "1080p"). | COMBO | Evet | "720p"<br>"1080p"<br>"2K"<br>"4K" |
 | `fps` | Çıktı kare hızı (varsayılan: "source"). "source" videonun hızını korur, 60'a kadar; daha yüksek bir hız enterpolasyonla elde edilir. 30 fps üzerindeki çıktı iki kat maliyetlidir. | COMBO | Evet | "source"<br>"16"<br>"24"<br>"25"<br>"30"<br>"48"<br>"50"<br>"60" |
 | `turbo` | Aynı fiyatla daha yumuşak ayrıntılarla daha hızlı büyütme (varsayılan: false). | BOOLEAN | Hayır | true<br>false |
 

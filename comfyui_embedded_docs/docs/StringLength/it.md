@@ -6,7 +6,7 @@ Il nodo StringLength calcola il numero di caratteri in una stringa di testo. Acc
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `string` | La stringa di testo di cui misurare la lunghezza. Supporta l'input su più righe. | STRING | Sì | N/A |
+| `stringa` | La stringa di testo di cui misurare la lunghezza. Supporta l'input su più righe. | STRING | Sì | N/A |
 
 ## Output
 

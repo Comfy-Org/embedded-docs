@@ -7,7 +7,7 @@ El nodo Meshy: Refine Draft Model toma un modelo 3D preliminar de una tarea Mesh
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|-----------|----------|-------|
 | `modelo` | El modelo de IA utilizado para refinar el modelo preliminar. | COMBO | Sí | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `meshy_task_id` | El ID de tarea único del modelo preliminar que deseas refinar. | MESHY_TASK_ID | Sí | - |
+| `id_de_tarea_meshy` | El ID de tarea único del modelo preliminar que deseas refinar. | MESHY_TASK_ID | Sí | - |
 | `habilitar_pbr` | Genera mapas PBR (metálico, rugosidad, normal) además del color base. Nota: esto debe establecerse en false al usar el estilo Sculpture, ya que el estilo Sculpture genera su propio conjunto de mapas PBR. (predeterminado: False) | BOOLEAN | Sí | - |
 | `texto_de_textura` | Proporciona una indicación de texto para guiar el proceso de texturizado. Máximo 600 caracteres. No puede usarse al mismo tiempo que `texture_image`. (predeterminado: cadena vacía) | STRING | Sí | - |
 | `imagen_de_textura` | Solo puede usarse uno de `texture_image` o `texture_prompt` al mismo tiempo. | IMAGE | No | - |

@@ -8,11 +8,11 @@ Il nodo Reve Image Remix utilizza l'API Reve per generare una nuova immagine. Co
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Versione del modello da usare per il remix. | DYNAMIC_COMBO | Sì | `"reve-remix@20250915"`<br>`"reve-remix-fast@20251030"` |
+| `modello` | Versione del modello da usare per il remix. | DYNAMIC_COMBO | Sì | `"reve-remix@20250915"`<br>`"reve-remix-fast@20251030"` |
 | `prompt` | Descrizione testuale dell'immagine desiderata. Può includere tag XML img per fare riferimento a immagini specifiche tramite indice, ad es. `<img>0</img>`, `<img>1</img>`, ecc. (predefinito: vuoto) | STRING | Sì | da 1 a 2560 caratteri |
-| `upscale` | Ingrandisci l'immagine generata. Può comportare un costo aggiuntivo. (predefinito: "disabled") | DYNAMIC_COMBO | No | `"disabled"`<br>`"enabled"` |
-| `remove_background` | Rimuovi lo sfondo dall'immagine generata. Può comportare un costo aggiuntivo. (predefinito: false) | BOOLEAN | No | `true`<br>`false` |
-| `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati sono non deterministici indipendentemente dal seed. (predefinito: 0) | INT | No | da 0 a 2147483647 |
+| `ingrandisci` | Ingrandisci l'immagine generata. Può comportare un costo aggiuntivo. (predefinito: "disabled") | DYNAMIC_COMBO | No | `"disabled"`<br>`"enabled"` |
+| `rimuovi_sfondo` | Rimuovi lo sfondo dall'immagine generata. Può comportare un costo aggiuntivo. (predefinito: false) | BOOLEAN | No | `true`<br>`false` |
+| `seme` | Il seed controlla se il nodo deve essere rieseguito; i risultati sono non deterministici indipendentemente dal seed. (predefinito: 0) | INT | No | da 0 a 2147483647 |
 
 ### Input del modello (condivisi da reve-remix@20250915 e reve-remix-fast@20251030)
 
@@ -31,7 +31,7 @@ Il nodo Reve Image Remix utilizza l'API Reve per generare una nuova immagine. Co
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `reference_images` | Slot espandibile: collega da 1 a 6 immagini (`image_1` a `image_6`) da usare come base visiva per il remix. È richiesta almeno un'immagine di riferimento. | IMAGE | Sì | da 1 a 6 immagini |
+| `immagini_riferimento` | Slot espandibile: collega da 1 a 6 immagini (`image_1` a `image_6`) da usare come base visiva per il remix. È richiesta almeno un'immagine di riferimento. | IMAGE | Sì | da 1 a 6 immagini |
 
 **Nota:** Il prompt deve contenere tra 1 e 2560 caratteri. Quando `aspect_ratio` è impostato su "auto", il servizio determina il rapporto d'aspetto dell'immagine di output. Un valore di `test_time_scaling` pari a 1 applica l'elaborazione standard; valori più alti migliorano la qualità dell'immagine ma consumano più crediti. Il widget `upscale_factor` compare solo quando `upscale` è impostato su "enabled". I risultati del remix sono non deterministici indipendentemente dal valore del seed. Questo nodo è deprecato.
 

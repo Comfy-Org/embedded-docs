@@ -6,7 +6,7 @@ Der VideoTriangleCFGGuidance-Node wendet ein dreieckiges Skalierungsmuster für 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Videomodell, auf das die dreieckige CFG-Guidance angewendet werden soll. | MODEL | Ja | - |
+| `Modell` | Das Videomodell, auf das die dreieckige CFG-Guidance angewendet werden soll. | MODEL | Ja | - |
 | `min_cfg` | Der minimale CFG-Skalierungswert für das dreieckige Muster. Dieser Parameter wird im erweiterten Bereich der Node-Oberfläche angezeigt (Standard: 1.0). | FLOAT | Ja | 0.0 - 100.0 (step: 0.5, round: 0.01) |
 
 ## Ausgaben

@@ -8,7 +8,7 @@ Der Node `SamplerDPMPP_3M_SDE` erstellt einen DPM++ 3M SDE Sampler zur Verwendun
 | --- | --- | --- | --- | --- |
 | `eta` | Steuert die Stochastizität des Sampling-Prozesses (Standard: 1.0) | FLOAT | Ja | 0.0 - 100.0 |
 | `s_noise` | Steuert die Menge des während des Samplings hinzugefügten Rauschens (Standard: 1.0) | FLOAT | Ja | 0.0 - 100.0 |
-| `noise_device` | Wählt das Gerät für Rauschberechnungen, entweder GPU oder CPU (Standard: "gpu") | COMBO | Ja | "gpu"<br>"cpu" |
+| `Noise-Device` | Wählt das Gerät für Rauschberechnungen, entweder GPU oder CPU (Standard: "gpu") | COMBO | Ja | "gpu"<br>"cpu" |
 
 Hinweis: Alle drei Eingaben sind erweiterte Parameter.
 

@@ -6,13 +6,13 @@ Der Node Vidu2 Image-to-Video Generation erstellt eine Videosequenz, die von ein
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `model` | Das Vidu2-Modell, das für die Videogenerierung verwendet wird. Verschiedene Modelle bieten unterschiedliche Kompromisse zwischen Geschwindigkeit und Qualität. | COMBO | Ja | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` |
-| `image` | Ein Bild, das als Startframe des generierten Videos verwendet wird. Es ist nur ein Bild erlaubt. | IMAGE | Ja | - |
-| `prompt` | Ein optionaler Text-Prompt für die Videogenerierung (maximal 2000 Zeichen). Standard ist eine leere Zeichenkette. | STRING | Nein | - |
-| `duration` | Die Länge des generierten Videos in Sekunden. Standard ist 5. | INT | Ja | 1 bis 10 |
-| `seed` | Ein Seed-Wert für die Zufallszahlengenerierung, um reproduzierbare Ergebnisse sicherzustellen. Standard ist 1. | INT | Nein | 0 bis 2147483647 |
-| `resolution` | Die Ausgabauflösung des generierten Videos. Dies ist ein erweiterter Parameter. | COMBO | Ja | `"720p"`<br>`"1080p"` |
-| `movement_amplitude` | Die Bewegungsamplitude von Objekten im Frame. Dies ist ein erweiterter Parameter. | COMBO | Ja | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` |
+| `Modell` | Das Vidu2-Modell, das für die Videogenerierung verwendet wird. Verschiedene Modelle bieten unterschiedliche Kompromisse zwischen Geschwindigkeit und Qualität. | COMBO | Ja | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` |
+| `Bild` | Ein Bild, das als Startframe des generierten Videos verwendet wird. Es ist nur ein Bild erlaubt. | IMAGE | Ja | - |
+| `Prompt` | Ein optionaler Text-Prompt für die Videogenerierung (maximal 2000 Zeichen). Standard ist eine leere Zeichenkette. | STRING | Nein | - |
+| `Dauer` | Die Länge des generierten Videos in Sekunden. Standard ist 5. | INT | Ja | 1 bis 10 |
+| `Seed` | Ein Seed-Wert für die Zufallszahlengenerierung, um reproduzierbare Ergebnisse sicherzustellen. Standard ist 1. | INT | Nein | 0 bis 2147483647 |
+| `Auflösung` | Die Ausgabauflösung des generierten Videos. Dies ist ein erweiterter Parameter. | COMBO | Ja | `"720p"`<br>`"1080p"` |
+| `Bewegungsamplitude` | Die Bewegungsamplitude von Objekten im Frame. Dies ist ein erweiterter Parameter. | COMBO | Ja | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` |
 
 **Einschränkungen:**
 

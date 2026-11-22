@@ -7,13 +7,13 @@ Il nodo StableZero123_Conditioning elabora un'immagine di input e angoli di came
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `clip_vision` | Il modello CLIP vision utilizzato per codificare le caratteristiche dell'immagine | CLIP_VISION | Sì | - |
-| `init_image` | L'immagine di input da elaborare e codificare | IMAGE | Sì | - |
+| `immagine_iniziale` | L'immagine di input da elaborare e codificare | IMAGE | Sì | - |
 | `vae` | Il modello VAE utilizzato per codificare i pixel nello spazio latente | VAE | Sì | - |
-| `width` | Larghezza di output per la rappresentazione latente (predefinito: 256, passo: 8) | INT | Sì | 16 a MAX_RESOLUTION |
-| `height` | Altezza di output per la rappresentazione latente (predefinito: 256, passo: 8) | INT | Sì | 16 a MAX_RESOLUTION |
-| `batch_size` | Numero di campioni da generare nel batch (predefinito: 1) | INT | Sì | 1 a 4096 |
-| `elevation` | Angolo di elevazione della camera in gradi (predefinito: 0.0, passo: 0.1) | FLOAT | Sì | -180.0 a 180.0 |
-| `azimuth` | Angolo di azimut della camera in gradi (predefinito: 0.0, passo: 0.1) | FLOAT | Sì | -180.0 a 180.0 |
+| `larghezza` | Larghezza di output per la rappresentazione latente (predefinito: 256, passo: 8) | INT | Sì | 16 a MAX_RESOLUTION |
+| `altezza` | Altezza di output per la rappresentazione latente (predefinito: 256, passo: 8) | INT | Sì | 16 a MAX_RESOLUTION |
+| `dimensione_batch` | Numero di campioni da generare nel batch (predefinito: 1) | INT | Sì | 1 a 4096 |
+| `elevazione` | Angolo di elevazione della camera in gradi (predefinito: 0.0, passo: 0.1) | FLOAT | Sì | -180.0 a 180.0 |
+| `azimut` | Angolo di azimut della camera in gradi (predefinito: 0.0, passo: 0.1) | FLOAT | Sì | -180.0 a 180.0 |
 
 **Nota:** I parametri `width` e `height` usano un passo di 8, quindi i valori vengono impostati con incrementi di 8. Il nodo li divide per 8 per determinare le dimensioni della rappresentazione latente. L'immagine viene ridimensionata alla `width` e `height` indicate usando un upscaling bilineare con ritaglio centrale prima della codifica VAE.
 

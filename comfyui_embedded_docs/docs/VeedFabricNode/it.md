@@ -6,7 +6,7 @@ Trasforma un'immagine statica e una traccia vocale in un video parlante con sinc
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Modello da utilizzare. Selezionando un modello vengono rivelati i parametri specifici: `image`, `audio` e `resolution`. | DYNAMIC_COMBO | Sì | `"fabric-1.0"` |
+| `modello` | Modello da utilizzare. Selezionando un modello vengono rivelati i parametri specifici: `image`, `audio` e `resolution`. | DYNAMIC_COMBO | Sì | `"fabric-1.0"` |
 | `image` | Immagine con un viso chiaramente visibile. Il video mantiene le sue proporzioni. | IMAGE | Sì | - |
 | `audio` | Traccia vocale da sincronizzare con le labbra, fino a 300 secondi. Imposta la durata del video. | AUDIO | Sì | Fino a 300 secondi |
 | `resolution` | Classe di dimensione dell'output: circa 0,4 megapixel con `"480p"` (864x480 in 16:9) e 0,9 megapixel con `"720p"` (1312x736 in 16:9). (predefinito: `"720p"`) | COMBO | Sì | `"480p"`<br>`"720p"` |

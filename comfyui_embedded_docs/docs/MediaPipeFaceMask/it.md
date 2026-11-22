@@ -9,7 +9,7 @@ Questo nodo crea una maschera binaria (un'immagine in bianco e nero) basata sui 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `face_landmarks` | I dati dei landmark del volto provenienti da un nodo di rilevamento del volto MediaPipe. | FACE_LANDMARKS | Sì | - |
-| `regions` | Seleziona quali regioni facciali includere nella maschera. `"all"` crea una maschera dall'unione di tutte le regioni del volto (ovale del volto, labbra, occhi, iridi). `"custom"` consente di attivare/disattivare ogni regione singolarmente. Predefinito: `"all"` | COMBO | Sì | `"all"`<br>`"custom"` |
+| `regioni` | Seleziona quali regioni facciali includere nella maschera. `"all"` crea una maschera dall'unione di tutte le regioni del volto (ovale del volto, labbra, occhi, iridi). `"custom"` consente di attivare/disattivare ogni regione singolarmente. Predefinito: `"all"` | COMBO | Sì | `"all"`<br>`"custom"` |
 
 Quando `regions` è impostato su `"custom"`, diventano disponibili i seguenti parametri booleani aggiuntivi:
 

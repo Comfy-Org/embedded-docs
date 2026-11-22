@@ -12,10 +12,10 @@ Der Selektor `moderation` zeigt eine zusätzliche Moderationsoption an, wenn er 
 |-----------|-------------|-----------|----------|-------|
 | `person_image` | Das Foto der Person, die das Produkt hält. Der Alphakanal wird vor dem Hochladen des Bildes entfernt. | IMAGE | Ja | - |
 | `product_images` | 1 bis 3 Bilder eines Produkts: das Produkt selbst, seine Verpackung, ein anderer Blickwinkel oder ein Begleitartikel. Bei einer Batch-Eingabe zählt jedes Bild einzeln, und transparente Bereiche werden als Weiß behandelt. | AUTOGROW | Ja | 1 bis 3 Bilder |
-| `instruction` | Optionale zusätzliche Anweisung, die der integrierten Anweisung von Bria hinzugefügt wird, z. B. welche Hand verwendet werden soll oder in welche Richtung das Etikett zeigt. Standard: `""` (leere Zeichenkette). | STRING | Ja | - |
+| `Anweisung` | Optionale zusätzliche Anweisung, die der integrierten Anweisung von Bria hinzugefügt wird, z. B. welche Hand verwendet werden soll oder in welche Richtung das Etikett zeigt. Standard: `""` (leere Zeichenkette). | STRING | Ja | - |
 | `aspect_ratio` | `"auto"` behält den Bildausschnitt des Personenfotos bei etwa 1 Megapixel bei. Ein festes Seitenverhältnis ergibt 0,6 bis 1 Megapixel, zum Beispiel 768x1024 für `"3:4"`. Standard: `"auto"`. | COMBO | Ja | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"` |
-| `seed` | Seed, der mit der Anfrage an Bria gesendet wird. Standard: 42. | INT | Ja | 1 bis 2147483647 |
-| `moderation` | Moderationseinstellungen. Wenn auf `"true"` gesetzt, wird das unten stehende Moderations-Flag verfügbar. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
+| `Seed` | Seed, der mit der Anfrage an Bria gesendet wird. Standard: 42. | INT | Ja | 1 bis 2147483647 |
+| `Moderation` | Moderationseinstellungen. Wenn auf `"true"` gesetzt, wird das unten stehende Moderations-Flag verfügbar. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
 
 ### Moderation "true" Eingaben
 

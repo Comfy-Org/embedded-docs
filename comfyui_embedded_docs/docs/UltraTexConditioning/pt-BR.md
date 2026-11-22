@@ -6,13 +6,13 @@ Condiciona o FLUX.2 Klein 9B com o UltraTex LoRA para aplicar a aparência de um
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Condicionamento de texto. O UltraTex foi treinado com um prompt vazio. | CONDITIONING | Sim | - |
+| `condicionamento` | Condicionamento de texto. O UltraTex foi treinado com um prompt vazio. | CONDITIONING | Sim | - |
 | `vae` | VAE usado para codificar as normais, as visualizações e a referência. | VAE | Sim | - |
-| `normals` | Imagens `world normal` do Render Mesh: as 6 visualizações canônicas ou as 4 visualizações laterais. | IMAGE | Sim | - |
-| `masks` | Máscaras do Render Mesh das mesmas visualizações, uma por visualização. | MASK | Sim | - |
-| `reference` | O objeto como ele deve parecer, visto do lado da câmera frontal. | IMAGE | Sim | - |
-| `reference_mask` | Máscara do objeto da referência, branca para o objeto. Padrão: totalmente branco. | MASK | Não | - |
-| `extra_views` | Mais referências: o objeto visto das outras visualizações, cada uma vinculada à sua visualização assim como a referência está vinculada à frontal. Padrão: `"off"`. | DYNAMIC_COMBO | Sim | `"off"`<br>`"on"` |
+| `normais` | Imagens `world normal` do Render Mesh: as 6 visualizações canônicas ou as 4 visualizações laterais. | IMAGE | Sim | - |
+| `máscaras` | Máscaras do Render Mesh das mesmas visualizações, uma por visualização. | MASK | Sim | - |
+| `referência` | O objeto como ele deve parecer, visto do lado da câmera frontal. | IMAGE | Sim | - |
+| `máscara_de_referência` | Máscara do objeto da referência, branca para o objeto. Padrão: totalmente branco. | MASK | Não | - |
+| `visualizações_extras` | Mais referências: o objeto visto das outras visualizações, cada uma vinculada à sua visualização assim como a referência está vinculada à frontal. Padrão: `"off"`. | DYNAMIC_COMBO | Sim | `"off"`<br>`"on"` |
 
 ### Entradas de Visualizações Extras "on"
 

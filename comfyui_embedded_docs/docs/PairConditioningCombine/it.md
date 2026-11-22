@@ -6,10 +6,10 @@ Il nodo PairConditioningCombine unisce due coppie separate di condizionamento (c
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive_A` | Primo input di condizionamento positivo | CONDITIONING | Sì | - |
-| `negative_A` | Primo input di condizionamento negativo | CONDITIONING | Sì | - |
-| `positive_B` | Secondo input di condizionamento positivo | CONDITIONING | Sì | - |
-| `negative_B` | Secondo input di condizionamento negativo | CONDITIONING | Sì | - |
+| `positivo_A` | Primo input di condizionamento positivo | CONDITIONING | Sì | - |
+| `negativo_A` | Primo input di condizionamento negativo | CONDITIONING | Sì | - |
+| `positivo_B` | Secondo input di condizionamento positivo | CONDITIONING | Sì | - |
+| `negativo_B` | Secondo input di condizionamento negativo | CONDITIONING | Sì | - |
 
 ## Output
 

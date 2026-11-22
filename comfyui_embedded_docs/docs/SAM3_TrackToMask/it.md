@@ -9,7 +9,7 @@ Seleziona oggetti tracciati specifici da una sessione di tracciamento SAM3 in ba
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `track_data` | L'output dei dati di tracciamento da un nodo tracker SAM3, contenente le maschere impacchettate e le dimensioni originali dell'immagine. | SAM3TRACKDATA | Sì | N/A |
-| `object_indices` | Indici degli oggetti separati da virgole da includere nella maschera di output (ad es. '0,2,3'). Se lasciato vuoto, vengono inclusi tutti gli oggetti tracciati. | STRING | No | Qualsiasi elenco di numeri interi separati da virgola |
+| `indici oggetto` | Indici degli oggetti separati da virgole da includere nella maschera di output (ad es. '0,2,3'). Se lasciato vuoto, vengono inclusi tutti gli oggetti tracciati. | STRING | No | Qualsiasi elenco di numeri interi separati da virgola |
 
 ## Output
 

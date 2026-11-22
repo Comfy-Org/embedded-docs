@@ -6,8 +6,8 @@ Questo nodo configura il primo passaggio di campionamento per la generazione del
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `positive` | Il condizionamento positivo da preparare per lo stadio della forma. Può essere un condizionamento Trellis2 standard o un condizionamento Pixal3D che fornisce un pacchetto di feature di proiezione; quando sono presenti feature di proiezione, vengono calcolate per lo stadio selezionato e allegate al condizionamento di output. | CONDITIONING | Sì | Qualsiasi condizionamento Trellis2 o Pixal3D |
-| `negative` | Il condizionamento negativo da preparare per lo stadio della forma. Gli stessi metadati dello stadio della forma vengono allegati anche a esso, come per il condizionamento positivo. | CONDITIONING | Sì | Qualsiasi condizionamento Trellis2 o Pixal3D |
+| `positivo` | Il condizionamento positivo da preparare per lo stadio della forma. Può essere un condizionamento Trellis2 standard o un condizionamento Pixal3D che fornisce un pacchetto di feature di proiezione; quando sono presenti feature di proiezione, vengono calcolate per lo stadio selezionato e allegate al condizionamento di output. | CONDITIONING | Sì | Qualsiasi condizionamento Trellis2 o Pixal3D |
+| `negativo` | Il condizionamento negativo da preparare per lo stadio della forma. Gli stessi metadati dello stadio della forma vengono allegati anche a esso, come per il condizionamento positivo. | CONDITIONING | Sì | Qualsiasi condizionamento Trellis2 o Pixal3D |
 | `voxel` | Voxel a struttura densa da VaeDecodeStructureTrellis2. | VOXEL | Sì | Qualsiasi griglia di voxel; la risoluzione della griglia (voxel per asse) seleziona lo stadio della pipeline |
 
 ### Note

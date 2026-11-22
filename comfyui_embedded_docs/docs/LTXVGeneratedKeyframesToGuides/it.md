@@ -6,12 +6,12 @@ Il nodo LTXV Generated Keyframes to Guides fissa i keyframe generati da una fase
 
 | Parametro | Descrizione | Tipo di dato | Richiesto | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Conditioning positivo a cui aggiungere le guide dei keyframe. | CONDITIONING | Sì | |
-| `negative` | Conditioning negativo a cui aggiungere le guide dei keyframe. | CONDITIONING | Sì | |
+| `positivo` | Conditioning positivo a cui aggiungere le guide dei keyframe. | CONDITIONING | Sì | |
+| `negativo` | Conditioning negativo a cui aggiungere le guide dei keyframe. | CONDITIONING | Sì | |
 | `vae` | Il VAE usato per decodificare i keyframe se è necessario ridimensionarli. | VAE | Sì | |
 | `latent` | Il latent video di destinazione a cui aggiungere le guide, ad es. quello con upscale temporale. | LATENT | Sì | |
-| `keyframes` | L'output keyframes di LTXV Separate Generated Keyframes, che contiene l'indice del frame in pixel in cui è stato generato ciascun keyframe. | LATENT | Sì | |
-| `strength` | Forza della guida. 1.0 è un fissaggio rigido; valori inferiori lo allentano. (predefinito: 1.0) | FLOAT | Sì | 0.0 - 10.0 (passo 0.01) |
+| `fotogrammi chiave` | L'output keyframes di LTXV Separate Generated Keyframes, che contiene l'indice del frame in pixel in cui è stato generato ciascun keyframe. | LATENT | Sì | |
+| `intensità` | Forza della guida. 1.0 è un fissaggio rigido; valori inferiori lo allentano. (predefinito: 1.0) | FLOAT | Sì | 0.0 - 10.0 (passo 0.01) |
 | `override_frame_indices` | Opzionale — fissa a questi frame in pixel invece che alle posizioni registrate (o scalate automaticamente). Fornisci un indice per keyframe. Lascia vuoto per riutilizzare le posizioni registrate, oppure per scalarle quando la canvas di destinazione ha una lunghezza diversa (ad es. dopo temporal x2). (predefinito: "") | STRING | No | |
 
 ## Output

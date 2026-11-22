@@ -8,9 +8,9 @@ Questo nodo sposta un'immagine in una stagione diversa utilizzando Bria. L'inter
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine da spostare in un'altra stagione. Qualsiasi canale alpha viene rimosso prima che l'immagine venga inviata. | IMAGE | Sì | - |
-| `season` | Stagione da applicare. | COMBO | Sì | `"spring"`<br>`"summer"`<br>`"autumn"`<br>`"winter"` |
-| `moderation` | Impostazioni di moderazione. Seleziona se le opzioni di moderazione dei contenuti sono configurate per questa richiesta. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
+| `immagine` | L'immagine da spostare in un'altra stagione. Qualsiasi canale alpha viene rimosso prima che l'immagine venga inviata. | IMAGE | Sì | - |
+| `stagione` | Stagione da applicare. | COMBO | Sì | `"spring"`<br>`"summer"`<br>`"autumn"`<br>`"winter"` |
+| `moderazione` | Impostazioni di moderazione. Seleziona se le opzioni di moderazione dei contenuti sono configurate per questa richiesta. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
 
 ### Input di moderazione
 

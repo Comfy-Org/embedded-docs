@@ -8,7 +8,7 @@ Il nodo SamplerDPMPP_3M_SDE crea un campionatore DPM++ 3M SDE da usare nel proce
 | --- | --- | --- | --- | --- |
 | `eta` | Controlla la stocasticità del processo di campionamento (predefinito: 1.0) | FLOAT | Sì | 0.0 - 100.0 |
 | `s_noise` | Controlla la quantità di rumore aggiunta durante il campionamento (predefinito: 1.0) | FLOAT | Sì | 0.0 - 100.0 |
-| `noise_device` | Seleziona il dispositivo per i calcoli del rumore, GPU o CPU (predefinito: "gpu") | COMBO | Sì | "gpu"<br>"cpu" |
+| `dispositivo rumore` | Seleziona il dispositivo per i calcoli del rumore, GPU o CPU (predefinito: "gpu") | COMBO | Sì | "gpu"<br>"cpu" |
 
 Nota: tutti e tre gli input sono parametri avanzati.
 

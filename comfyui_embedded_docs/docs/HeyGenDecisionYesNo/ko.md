@@ -6,13 +6,13 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 사용할 모델입니다. `heygen-decision-1-turbo`는 `heygen-decision-1`보다 빠르고 비용이 적게 듭니다(기본값: `"heygen-decision-1"`). | COMBO | 예 | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | 연결된 대상에 대한 예/아니오 질문으로, 최대 5000자입니다. "예"가 작업을 수행하려는 경우가 되도록 질문하세요(기본값: "Is there a person in the image?"). | STRING | 예 | 1~5000자 |
-| `threshold` | `result`가 true가 되는 "예"의 확률입니다. 명확한 답변일수록 0 또는 1에 가깝습니다(기본값: 0.5). | FLOAT | 예 | 0.01 ~ 0.99 (단계: 0.01) |
-| `images` | 질문할 이미지로, 배치의 모든 프레임을 포함해 총 최대 4개입니다. 소켓 전반에 걸쳐 순서대로 `image_1`부터 `image_4`까지 번호가 지정됩니다. | IMAGE | 아니요 | 최대 4개 이미지 |
+| `모델` | 사용할 모델입니다. `heygen-decision-1-turbo`는 `heygen-decision-1`보다 빠르고 비용이 적게 듭니다(기본값: `"heygen-decision-1"`). | COMBO | 예 | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
+| `질문` | 연결된 대상에 대한 예/아니오 질문으로, 최대 5000자입니다. "예"가 작업을 수행하려는 경우가 되도록 질문하세요(기본값: "Is there a person in the image?"). | STRING | 예 | 1~5000자 |
+| `임계값` | `result`가 true가 되는 "예"의 확률입니다. 명확한 답변일수록 0 또는 1에 가깝습니다(기본값: 0.5). | FLOAT | 예 | 0.01 ~ 0.99 (단계: 0.01) |
+| `이미지` | 질문할 이미지로, 배치의 모든 프레임을 포함해 총 최대 4개입니다. 소켓 전반에 걸쳐 순서대로 `image_1`부터 `image_4`까지 번호가 지정됩니다. | IMAGE | 아니요 | 최대 4개 이미지 |
 | `audio_1` | 질문할 오디오로, 최대 30분입니다. | AUDIO | 아니요 | 최대 30분 |
 | `video_1` | 질문할 비디오로, 최대 60초입니다. | VIDEO | 아니요 | 최대 60초 |
-| `text` | 질문의 대상이 되는 텍스트로, 프롬프트나 LLM 응답 등이며 최대 20000자입니다. | STRING | 아니요 | 최대 20000자 |
+| `텍스트` | 질문의 대상이 되는 텍스트로, 프롬프트나 LLM 응답 등이며 최대 20000자입니다. | STRING | 아니요 | 최대 20000자 |
 
 `text`, `images`, `audio_1`, `video_1` 중 최소 하나를 연결하고, 질문 안에서 소켓 이름으로 참조하세요. 예: "Does image_2 show the same person as image_1?".
 

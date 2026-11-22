@@ -6,7 +6,7 @@ Le nœud **Higgsfield Genjutsu Motion Transfer** transforme une vidéo en y int�
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser. La sélection d'un modèle révèle les paramètres qui lui sont propres : `video`, `reference_images`, `prompt`, `resolution` et `seed`. | DYNAMIC_COMBO | Oui | `"genjutsu-v1.0"` |
+| `modèle` | Modèle à utiliser. La sélection d'un modèle révèle les paramètres qui lui sont propres : `video`, `reference_images`, `prompt`, `resolution` et `seed`. | DYNAMIC_COMBO | Oui | `"genjutsu-v1.0"` |
 | `video` | Vidéo source dont le mouvement, les mouvements de caméra, le minutage et l'audio sont conservés. Au moins 4 secondes ; seules les 30 premières secondes sont utilisées. | VIDEO | Oui | 4 à 30 secondes |
 | `reference_images` | Emplacement extensible : connectez 1 à 8 images (`image_1`, `image_2`, ...) des personnages, lieux ou styles à utiliser. Une entrée par lot compte une fois par image. | IMAGE | Oui | 1 à 8 images |
 | `prompt` | Facultatif. Décrivez le résultat, par exemple quelle référence remplace quelle personne, ou un nouveau décor. (par défaut : vide) | STRING | Oui | Tout texte |

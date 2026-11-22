@@ -6,8 +6,8 @@ Il nodo ThresholdMask converte una maschera in una maschera binaria applicando u
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `mask` | La maschera di input da elaborare | MASK | Sì | - |
-| `value` | Il valore di soglia per la binarizzazione (predefinito: 0.5) | FLOAT | Sì | 0.0 - 1.0 |
+| `maschera` | La maschera di input da elaborare | MASK | Sì | - |
+| `valore` | Il valore di soglia per la binarizzazione (predefinito: 0.5) | FLOAT | Sì | 0.0 - 1.0 |
 
 ## Output
 

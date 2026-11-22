@@ -6,8 +6,8 @@ Il nodo JsonExtractString analizza una stringa di testo alla ricerca del primo o
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `json_string` | Il testo in cui cercare un oggetto JSON. Questo campo supporta input multilinea e può contenere testo circostante o delimitatori di codice Markdown. | STRING | Sì | N/A |
-| `key` | La chiave specifica di cui estrarre il valore dall'oggetto JSON. Questo campo supporta solo input su una singola riga. | STRING | Sì | N/A |
+| `stringa_json` | Il testo in cui cercare un oggetto JSON. Questo campo supporta input multilinea e può contenere testo circostante o delimitatori di codice Markdown. | STRING | Sì | N/A |
+| `chiave` | La chiave specifica di cui estrarre il valore dall'oggetto JSON. Questo campo supporta solo input su una singola riga. | STRING | Sì | N/A |
 
 **Nota:** Il nodo estrae valori solo da oggetti JSON (dizionari). Prova ogni `{` nell'input in ordine e decodifica dalla prima posizione che produce un oggetto JSON valido, quindi il testo iniziale o finale viene ignorato. Se non è possibile decodificare alcun oggetto JSON o la chiave specificata non esiste al suo interno, l'output è una stringa vuota. Se il valore associato alla chiave è `null`, il nodo restituisce anch'esso una stringa vuota. I valori che non sono stringhe vengono restituiti come la loro rappresentazione in formato stringa.
 

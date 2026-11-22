@@ -6,9 +6,9 @@ VEED ile konuşmadaki arka plan gürültüsünü kaldırın. Her dildeki konuşm
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `audio` | Konuşma kaydı, 30 dakikadan kısa. | AUDIO | Evet | 1799 saniyeye kadar |
-| `strength` | Konuşmanın altındaki gürültünün ne kadarının kaldırılacağı. Daha düşük değerler sesin arkasında daha fazla ortam tonu bırakır; kelimeler arasındaki duraklamalar her zaman tamamen temizlenir ve varsayılanın üzerindeki değerler çok az fark yaratır. (varsayılan: 0.874) | FLOAT | Evet | 0.0 ile 1.0 arası (adım 0.001) |
-| `loudness` | Çıktı ses yüksekliğinin normalleştirilip normalleştirilmeyeceği. `"normalize"` çıktıyı `target_lufs` değerine ayarlar; `"keep input level"` ses düzeyini olduğu gibi bırakır. Bir seçenek seçildiğinde ilgili parametreler görünür. (varsayılan: `"normalize"`) | DYNAMIC_COMBO | Evet | `"normalize"`<br>`"keep input level"` |
+| `ses` | Konuşma kaydı, 30 dakikadan kısa. | AUDIO | Evet | 1799 saniyeye kadar |
+| `güç` | Konuşmanın altındaki gürültünün ne kadarının kaldırılacağı. Daha düşük değerler sesin arkasında daha fazla ortam tonu bırakır; kelimeler arasındaki duraklamalar her zaman tamamen temizlenir ve varsayılanın üzerindeki değerler çok az fark yaratır. (varsayılan: 0.874) | FLOAT | Evet | 0.0 ile 1.0 arası (adım 0.001) |
+| `ses yüksekliği` | Çıktı ses yüksekliğinin normalleştirilip normalleştirilmeyeceği. `"normalize"` çıktıyı `target_lufs` değerine ayarlar; `"keep input level"` ses düzeyini olduğu gibi bırakır. Bir seçenek seçildiğinde ilgili parametreler görünür. (varsayılan: `"normalize"`) | DYNAMIC_COMBO | Evet | `"normalize"`<br>`"keep input level"` |
 | `target_lufs` | Çıktının LUFS cinsinden bütünleşik ses yüksekliği. Tepe değerler -1.1 dBTP ile sınırlandırılır, bu nedenle yüksek hedefler erken durur (tipik konuşma için yaklaşık -15 LUFS). `loudness` değeri `"normalize"` olduğunda kullanılabilir (varsayılan: -19.0). | FLOAT | Evet | -40.0 ile -8.0 arası (adım 0.1) |
 
 Kayıt 1799 saniyeden uzun olduğunda düğüm bir hatayla durur.

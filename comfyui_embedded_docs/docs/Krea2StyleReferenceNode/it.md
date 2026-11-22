@@ -6,8 +6,8 @@ Il nodo Krea 2 Style Reference consente di aggiungere un'immagine di riferimento
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | Immagine di riferimento il cui stile influenza la generazione. | IMAGE | Sì | - |
-| `strength` | Forza del riferimento (predefinito: 1.0). | FLOAT | Sì | da 0.0 a 1.0 (passo: 0.05) |
+| `immagine` | Immagine di riferimento il cui stile influenza la generazione. | IMAGE | Sì | - |
+| `intensità` | Forza del riferimento (predefinito: 1.0). | FLOAT | Sì | da 0.0 a 1.0 (passo: 0.05) |
 | `style_reference` | Catena di riferimenti di stile in ingresso opzionale; questo nodo ne aggiunge uno ulteriore. | STYLE_REF | No | - |
 
 **Nota sui vincoli:** È possibile concatenare un massimo di 10 riferimenti di stile in totale. Se si tenta di aggiungere un undicesimo riferimento, il nodo genera un errore.

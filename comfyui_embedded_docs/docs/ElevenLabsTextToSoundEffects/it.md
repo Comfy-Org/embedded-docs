@@ -8,9 +8,9 @@ Il nodo ElevenLabs Text to Sound Effects genera effetti sonori audio a partire d
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modello da usare per la generazione degli effetti sonori. Sono disponibili due modelli: `eleven_sfx_v3` (predefinito) ed `eleven_sfx_v2`. | DYNAMIC_COMBO | Sì | `"eleven_sfx_v3"`<br>`"eleven_sfx_v2"` |
-| `text` | Descrizione testuale dell’effetto sonoro da generare. Scrivila in inglese, con un massimo di 450 caratteri; i prompt in altre lingue vengono spesso letti ad alta voce invece di diventare un suono. (predefinito: vuoto) | STRING | Sì | da 1 a 450 caratteri |
-| `output_format` | Formato di output audio. | COMBO | Sì | `"mp3_44100_192"`<br>`"opus_48000_192"` |
+| `modello` | Modello da usare per la generazione degli effetti sonori. Sono disponibili due modelli: `eleven_sfx_v3` (predefinito) ed `eleven_sfx_v2`. | DYNAMIC_COMBO | Sì | `"eleven_sfx_v3"`<br>`"eleven_sfx_v2"` |
+| `testo` | Descrizione testuale dell’effetto sonoro da generare. Scrivila in inglese, con un massimo di 450 caratteri; i prompt in altre lingue vengono spesso letti ad alta voce invece di diventare un suono. (predefinito: vuoto) | STRING | Sì | da 1 a 450 caratteri |
+| `formato output` | Formato di output audio. | COMBO | Sì | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
 ### Input di eleven_sfx_v3 e eleven_sfx_v2
 

@@ -10,7 +10,7 @@ OpenAI GPT Image 2.6 SVG는 OpenAI의 GPT Image 모델을 사용하여 프롬프
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `model` | SVG 생성에 사용할 GPT Image 모델입니다. | DYNAMIC_COMBO | 예 | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
+| `모델` | SVG 생성에 사용할 GPT Image 모델입니다. | DYNAMIC_COMBO | 예 | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
 
 ### gpt-image-2.6-flare 및 gpt-image-2.6-sunburst 입력
 
@@ -18,12 +18,12 @@ OpenAI GPT Image 2.6 SVG는 OpenAI의 GPT Image 모델을 사용하여 프롬프
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | 그릴 SVG에 대한 설명입니다. (기본값: `""`) | STRING | 예 | 해당 없음 |
-| `model.size` | SVG를 그릴 때 기준이 되는 참조 이미지의 크기입니다. (기본값: `"1024x1024"`) | COMBO | 예 | `"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"` |
-| `model.background` | 참조 이미지의 배경입니다. (기본값: `"auto"`) | COMBO | 예 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
-| `model.quality` | SVG를 그릴 때 기준이 되는 참조 이미지의 품질입니다. (기본값: `"low"`) | COMBO | 예 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | 렌더링 전에 모델이 참조 이미지를 얼마나 계획하는지를 나타냅니다. (기본값: `"high"`) | COMBO | 예 | `"low"`<br>`"medium"`<br>`"high"` |
-| `model.seed` | 노드의 재실행 여부를 제어합니다. 시드와 관계없이 결과는 비결정적입니다. (기본값: `42`) | INT | 예 | 0~2147483647 |
+| `프롬프트` | 그릴 SVG에 대한 설명입니다. (기본값: `""`) | STRING | 예 | 해당 없음 |
+| `크기` | SVG를 그릴 때 기준이 되는 참조 이미지의 크기입니다. (기본값: `"1024x1024"`) | COMBO | 예 | `"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"` |
+| `배경` | 참조 이미지의 배경입니다. (기본값: `"auto"`) | COMBO | 예 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `품질` | SVG를 그릴 때 기준이 되는 참조 이미지의 품질입니다. (기본값: `"low"`) | COMBO | 예 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `복잡도` | 렌더링 전에 모델이 참조 이미지를 얼마나 계획하는지를 나타냅니다. (기본값: `"high"`) | COMBO | 예 | `"low"`<br>`"medium"`<br>`"high"` |
+| `시드` | 노드의 재실행 여부를 제어합니다. 시드와 관계없이 결과는 비결정적입니다. (기본값: `42`) | INT | 예 | 0~2147483647 |
 
 ## 출력
 

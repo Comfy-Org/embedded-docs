@@ -17,12 +17,12 @@ Bu girdiler, `model` değeri `Krea 3` olarak ayarlandığında görünür.
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model.images` | Düzenlenecek görüntüler, bağlantı sırasına göre numaralandırılır. Bağlanan her görüntü 8'lik sınıra dahil edilir. Yalnızca metinden oluşturmak için boş bırakın. | IMAGE | Hayır | 0 - 8 görüntü |
-| `model.prompt` | Neyin değiştirileceği ve neyin korunacağı. Görüntülere `@Image1`, `@Image2` vb. veya görüntü 1, görüntü 2, ... olarak atıfta bulunun. İstem boş olamaz. | STRING | Evet | - |
-| `model.aspect_ratio` | Sonucun en boy oranı. `"auto"`, ilk görüntüyü veya hiç görüntü bağlı değilse istemi takip eder. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"5:4"`<br>`"4:3"`<br>`"3:2"`<br>`"16:9"`<br>`"21:9"` |
-| `model.resolution` | Çıktı çözünürlüğü. `"2K"`, `"1K"` seçeneğine göre daha uzun sürer ve daha büyük bir görüntü üretir. (varsayılan: `"2K"`) | COMBO | Evet | `"1K"`<br>`"2K"` |
-| `model.thinking_mode` | Krea 3'ün düzenlemeyi planlamaya ne kadar emek harcadığı. `"fast"` önerilir; `"high"` ise karmaşık düzenlemeleri daha ayrıntılı planlar ve daha uzun sürer. `"ultra"` birkaç aday üretir ve en iyisini döndürür; en az bir görüntü gerektirir, her zaman 2K çıktı verir ve `precise_edit` desteklemez. (varsayılan: `"fast"`) | COMBO | Evet | `"fast"`<br>`"high"`<br>`"ultra"` |
-| `model.precise_edit` | Düzenlenen alanın dışındaki her şeyi değişmeden korur. En az bir bağlı görüntü gerektirir. (varsayılan: False) | BOOLEAN | Evet | false<br>true |
-| `model.seed` | İstek için tohum (varsayılan: 42). Krea, oluşturmadan önce istemi yeniden yazar; bu nedenle aynı tohum bir görüntüyü tekrar etmez. | INT | Evet | 0 - 2147483647 |
+| `istem` | Neyin değiştirileceği ve neyin korunacağı. Görüntülere `@Image1`, `@Image2` vb. veya görüntü 1, görüntü 2, ... olarak atıfta bulunun. İstem boş olamaz. | STRING | Evet | - |
+| `en_boy_oranı` | Sonucun en boy oranı. `"auto"`, ilk görüntüyü veya hiç görüntü bağlı değilse istemi takip eder. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"5:4"`<br>`"4:3"`<br>`"3:2"`<br>`"16:9"`<br>`"21:9"` |
+| `çözünürlük` | Çıktı çözünürlüğü. `"2K"`, `"1K"` seçeneğine göre daha uzun sürer ve daha büyük bir görüntü üretir. (varsayılan: `"2K"`) | COMBO | Evet | `"1K"`<br>`"2K"` |
+| `düşünme_modu` | Krea 3'ün düzenlemeyi planlamaya ne kadar emek harcadığı. `"fast"` önerilir; `"high"` ise karmaşık düzenlemeleri daha ayrıntılı planlar ve daha uzun sürer. `"ultra"` birkaç aday üretir ve en iyisini döndürür; en az bir görüntü gerektirir, her zaman 2K çıktı verir ve `precise_edit` desteklemez. (varsayılan: `"fast"`) | COMBO | Evet | `"fast"`<br>`"high"`<br>`"ultra"` |
+| `hassas_düzenleme` | Düzenlenen alanın dışındaki her şeyi değişmeden korur. En az bir bağlı görüntü gerektirir. (varsayılan: False) | BOOLEAN | Evet | false<br>true |
+| `tohum` | İstek için tohum (varsayılan: 42). Krea, oluşturmadan önce istemi yeniden yazar; bu nedenle aynı tohum bir görüntüyü tekrar etmez. | INT | Evet | 0 - 2147483647 |
 
 `@Image3` gibi bir referans yalnızca en az üç görüntü bağlı olduğunda kabul edilir; aksi halde düğüm bir hata verir. Referans görüntüleri, istek gönderilmeden önce yüklenir.
 

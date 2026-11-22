@@ -6,8 +6,8 @@ El nodo ModelMergeFlux1 fusiona dos modelos de difusión combinando sus componen
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model1` | Primer modelo de origen para fusionar | MODEL | Sí | - |
-| `model2` | Segundo modelo de origen para fusionar | MODEL | Sí | - |
+| `modelo1` | Primer modelo de origen para fusionar | MODEL | Sí | - |
+| `modelo2` | Segundo modelo de origen para fusionar | MODEL | Sí | - |
 | `img_in.` | Peso de interpolación de entrada de imagen (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
 | `time_in.` | Peso de interpolación de incrustación de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
 | `orientación_in` | Peso de interpolación del mecanismo de guiado (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |

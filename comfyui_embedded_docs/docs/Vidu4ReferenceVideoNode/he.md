@@ -8,7 +8,7 @@
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `model` | מודל לשימוש ביצירת וידאו. בחירת מודל חושפת את הפרמטרים הספציפיים לו: `reference_images`, `reference_audios`, `prompt`, `aspect_ratio`, `resolution`, `duration`, `audio` ו-`seed`. | DYNAMIC_COMBO | כן | `"Vidu Q4 Preview"` |
+| `מודל` | מודל לשימוש ביצירת וידאו. בחירת מודל חושפת את הפרמטרים הספציפיים לו: `reference_images`, `reference_audios`, `prompt`, `aspect_ratio`, `resolution`, `duration`, `audio` ו-`seed`. | DYNAMIC_COMBO | כן | `"Vidu Q4 Preview"` |
 | `reference_images` | משבצת ניתנת להרחבה: חבר תמונה אחת או יותר של עזר (`image_1`, `image_2`, ...) עבור הווידאו הנוצר; כל תמונה באצווה נספרת בסך הכול. התייחס אליהן בפרומפט לפי הסדר: image 1, image 2 וכן הלאה. | IMAGE | כן | עד 15 תמונות |
 | `reference_audios` | משבצת ניתנת להרחבה: חבר רפרנסים קוליים אופציונליים (`audio_1`, `audio_2`, `audio_3`), באורך 3 עד 12 שניות כל אחד. רק הקול משמש, ולא המילים: כתוב את הדיאלוג בפרומפט והקצה קול לפי הסדר, לדוגמה `image 1 says "Hello!" in the voice from audio 1`. דורש ש-`audio` יהיה מופעל. | AUDIO | לא | עד 3 קטעים |
 | `prompt` | תיאור טקסטואלי ליצירת וידאו, עד 5000 תווים. נדרש כדי לתאר את רכיבי העזר שבהם ברצונך להשתמש. | STRING | כן | כל טקסט |

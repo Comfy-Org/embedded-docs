@@ -6,7 +6,7 @@ Der Node SamplerDPMAdaptative implementiert einen adaptiven DPM-Sampler (Diffusi
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `order` | Die Ordnung der Sampler-Methode (Standard: 3) | INT | Ja | 2-3 |
+| `Ordnung` | Die Ordnung der Sampler-Methode (Standard: 3) | INT | Ja | 2-3 |
 | `rtol` | Relative Toleranz für die Fehlerkontrolle (Standard: 0.05) | FLOAT | Ja | 0.0-100.0 |
 | `atol` | Absolute Toleranz für die Fehlerkontrolle (Standard: 0.0078) | FLOAT | Ja | 0.0-100.0 |
 | `h_init` | Anfängliche Schrittweite (Standard: 0.05) | FLOAT | Ja | 0.0-100.0 |

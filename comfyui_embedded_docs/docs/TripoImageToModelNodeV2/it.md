@@ -6,12 +6,12 @@ Il nodo Tripo: Image to Model trasforma una singola immagine di riferimento in u
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine di riferimento usata per generare il modello 3D. | IMAGE | Sì | — |
+| `immagine` | L'immagine di riferimento usata per generare il modello 3D. | IMAGE | Sì | — |
 | `model_version` | La versione del modello da usare per la generazione. Se non impostata, il nodo utilizza come fallback la versione v3.1 (20260211) di Tripo. | COMBO | No | Elenco delle versioni del modello Tripo |
 | `texture` | Genera mappe di texture. Se disattivato, restituisce solo la geometria e ignora `pbr` (predefinito: true). | BOOLEAN | No | true<br>false |
 | `pbr` | Mappe di materiale PBR (colore di base, metallico, rugosità, normale). Richiede `texture` (predefinito: true). | BOOLEAN | No | true<br>false |
 | `model_seed` | Seed usato per la fase di generazione della geometria (predefinito: 42). | INT | No | da 0 a 2147483647 |
-| `orientation` | Impostazione di orientamento applicata al modello generato (predefinito: DEFAULT). | COMBO | No | Opzioni di orientamento Tripo, predefinito `DEFAULT` |
+| `orientamento` | Impostazione di orientamento applicata al modello generato (predefinito: DEFAULT). | COMBO | No | Opzioni di orientamento Tripo, predefinito `DEFAULT` |
 | `texture_seed` | Seed usato per la fase di generazione della texture (predefinito: 42). | INT | No | da 0 a 2147483647 |
 | `texture_quality` | detailed = texture HD, extreme = texture Ultra 8K (predefinito: "standard"). | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | Come vengono allineate le texture sulla geometria generata (predefinito: "original_image"). | COMBO | No | "original_image"<br>"geometry" |

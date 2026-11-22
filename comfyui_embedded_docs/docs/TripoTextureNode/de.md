@@ -19,7 +19,7 @@ Der Node „Tripo: Texture model (Legacy)“ fügt einem vorhandenen Tripo-3D-Mo
 | `texture_prompt` | Optionale Textführung für die Texturierung. In der Praxis erforderlich für importierte Modelle (Tripo: Import Model), die kein Quellbild besitzen, aus dem Farben abgeleitet werden könnten. Kann nicht mit Referenzbildern kombiniert werden. (Standard: "") | STRING | Nein | - |
 | `model_version` | Texturmodell: v3.0 für Meshes, die mit v3.x generiert wurden, v2.5 für Meshes, die mit v2.5 generiert wurden. (Standard: v3.0_20250812) | COMBO | Nein | Mehrere Optionen verfügbar |
 | `style_image` | Referenzbild für den künstlerischen Stil der Texturen. Wird nur zusammen mit `texture_prompt` verwendet. | IMAGE | Nein | - |
-| `reference` | Referenzbilder, die die Texturen lenken. Kann nicht mit `texture_prompt` oder `style_image` kombiniert werden. (Standard: "none") | DYNAMIC_COMBO | Nein | "none"<br>"image"<br>"multiview" |
+| `Referenz` | Referenzbilder, die die Texturen lenken. Kann nicht mit `texture_prompt` oder `style_image` kombiniert werden. (Standard: "none") | DYNAMIC_COMBO | Nein | "none"<br>"image"<br>"multiview" |
 | `part_names` | Kommagetrennte Part-Namen von Tripo: Segment Model, die texturiert werden sollen. Leer texturiert jeden Teil. (Standard: "") | STRING | Nein | - |
 
 ### `image` Referenzeingaben

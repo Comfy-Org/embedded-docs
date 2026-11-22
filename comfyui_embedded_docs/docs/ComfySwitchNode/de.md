@@ -6,7 +6,7 @@ Der If/Else Switch-Node wählt anhand einer booleschen Bedingung zwischen zwei m
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `switch` | Eine boolesche Bedingung, die bestimmt, welche Eingabe an den Ausgang weitergegeben wird. Wenn aktiviert (true), wird die Eingabe `on_true` ausgewählt. Wenn deaktiviert (false), wird die Eingabe `on_false` ausgewählt. | BOOLEAN | Ja |  |
+| `Schalter` | Eine boolesche Bedingung, die bestimmt, welche Eingabe an den Ausgang weitergegeben wird. Wenn aktiviert (true), wird die Eingabe `on_true` ausgewählt. Wenn deaktiviert (false), wird die Eingabe `on_false` ausgewählt. | BOOLEAN | Ja |  |
 | `on_false` | Die Daten, die an den Ausgang weitergegeben werden, wenn `switch` deaktiviert (false) ist. Diese Eingabe wird nur angefordert, wenn `switch` false ist. | MATCH_TYPE | Nein |  |
 | `on_true` | Die Daten, die an den Ausgang weitergegeben werden, wenn `switch` aktiviert (true) ist. Diese Eingabe wird nur angefordert, wenn `switch` true ist. | MATCH_TYPE | Nein |  |
 

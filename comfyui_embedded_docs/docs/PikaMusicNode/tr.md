@@ -6,7 +6,7 @@ Bu düğüm, Pika ile bir metin açıklamasından ve isteğe bağlı şarkı sö
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `mode` | Düğümün ne yaptığı: `"text to music"` yeni bir şarkı yazar, `"cover"` sağlanan bir şarkıyı yeniden kaydeder. Her mod aşağıda kendi girdilerini gösterir. Varsayılan: `"text to music"`. | DYNAMIC_COMBO | Evet | `"text to music"`<br>`"cover"` |
+| `mod` | Düğümün ne yaptığı: `"text to music"` yeni bir şarkı yazar, `"cover"` sağlanan bir şarkıyı yeniden kaydeder. Her mod aşağıda kendi girdilerini gösterir. Varsayılan: `"text to music"`. | DYNAMIC_COMBO | Evet | `"text to music"`<br>`"cover"` |
 
 ### Metinden Müziğe Girdileri
 

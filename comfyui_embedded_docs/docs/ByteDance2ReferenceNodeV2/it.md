@@ -8,9 +8,9 @@ ByteDance Seedance 2.5 Reference to Video genera, modifica o estende video utili
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Selettore del modello. Seedance 2.5 per il modello più recente, video fino a 30 secondi e output mp4; Seedance 2.5 Draft per un'anteprima rapida a 480p il cui output `draft_task_id` esegue il rendering del finale a 1080p o 4k nel nodo ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.5 Flash per video 480p e 720p fino a 30 secondi; Seedance 2.0 per la massima qualità e 4k; Fast per l'ottimizzazione della velocità; Mini per la generazione più rapida e a costo più basso. La selezione di un modello cambia i widget di input mostrati di seguito. | DYNAMIC_COMBO | Sì | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.5 Flash"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
-| `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: 0. | INT | Sì | 0 a 2147483647 |
-| `watermark` | Indica se aggiungere una filigrana al video. Predefinito: False. Impostazione avanzata. | BOOLEAN | Sì | true<br>false |
+| `modello` | Selettore del modello. Seedance 2.5 per il modello più recente, video fino a 30 secondi e output mp4; Seedance 2.5 Draft per un'anteprima rapida a 480p il cui output `draft_task_id` esegue il rendering del finale a 1080p o 4k nel nodo ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.5 Flash per video 480p e 720p fino a 30 secondi; Seedance 2.0 per la massima qualità e 4k; Fast per l'ottimizzazione della velocità; Mini per la generazione più rapida e a costo più basso. La selezione di un modello cambia i widget di input mostrati di seguito. | DYNAMIC_COMBO | Sì | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.5 Flash"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
+| `seme` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: 0. | INT | Sì | 0 a 2147483647 |
+| `filigrana` | Indica se aggiungere una filigrana al video. Predefinito: False. Impostazione avanzata. | BOOLEAN | Sì | true<br>false |
 
 ### Input di Seedance 2.5
 

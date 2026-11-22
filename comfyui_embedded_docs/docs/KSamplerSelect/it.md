@@ -6,7 +6,7 @@ Il nodo KSamplerSelect è progettato per selezionare un sampler specifico in bas
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `sampler_name` | Specifica il nome del sampler da selezionare. Questo parametro determina quale strategia di campionamento verrà utilizzata, influenzando il comportamento e i risultati complessivi del campionamento. | COMBO[STRING] |
+| `nome_sampler` | Specifica il nome del sampler da selezionare. Questo parametro determina quale strategia di campionamento verrà utilizzata, influenzando il comportamento e i risultati complessivi del campionamento. | COMBO[STRING] |
 
 ## Output
 

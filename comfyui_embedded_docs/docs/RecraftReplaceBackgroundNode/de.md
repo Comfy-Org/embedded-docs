@@ -6,10 +6,10 @@ Ersetzt den Hintergrund eines Bildes basierend auf dem angegebenen Prompt. Diese
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das zu verarbeitende Eingabebild | IMAGE | Ja | - |
-| `prompt` | Prompt für die Bildgenerierung (Standard: leer) | STRING | Ja | - |
+| `Bild` | Das zu verarbeitende Eingabebild | IMAGE | Ja | - |
+| `Prompt` | Prompt für die Bildgenerierung (Standard: leer) | STRING | Ja | - |
 | `n` | Anzahl der zu generierenden Bilder (Standard: 1) | INT | Ja | 1-6 |
-| `seed` | Seed, der bestimmt, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0) | INT | Ja | 0-18446744073709551615 |
+| `Seed` | Seed, der bestimmt, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0) | INT | Ja | 0-18446744073709551615 |
 | `recraft_style` | Optionale Stilauswahl für den generierten Hintergrund. Wenn nicht angegeben, wird standardmäßig der Stil "realistic_image" verwendet | STYLEV3 | Nein | - |
 | `negative_prompt` | Eine optionale Textbeschreibung unerwünschter Elemente in einem Bild (Standard: leer) | STRING | Nein | - |
 

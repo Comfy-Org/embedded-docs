@@ -6,7 +6,7 @@ Dieser Node erstellt eine Stilkonfiguration zur Generierung realistischer Bilder
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `substyle` | Der spezifische Substil, der auf den Stil `realistic_image` angewendet werden soll. Wenn auf "None" gesetzt, wird kein Substil angewendet. | STRING | Ja | Mehrere Optionen verfügbar (durch Recraft-API festgelegt) |
+| `Unterstil` | Der spezifische Substil, der auf den Stil `realistic_image` angewendet werden soll. Wenn auf "None" gesetzt, wird kein Substil angewendet. | STRING | Ja | Mehrere Optionen verfügbar (durch Recraft-API festgelegt) |
 
 ## Ausgaben
 

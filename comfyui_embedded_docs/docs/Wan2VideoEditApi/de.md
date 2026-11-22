@@ -8,11 +8,11 @@ Der Node Wan 2.7 Video Edit bearbeitet ein Video mithilfe von Textanweisungen, R
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das für die Videobearbeitung zu verwendende Modell. Jede Option bietet ihren eigenen Satz an Unterparametern. | DYNAMIC_COMBO | Ja | `"wan2.7-videoedit"` |
-| `video` | Das zu bearbeitende Video. | VIDEO | Ja | - |
-| `seed` | Seed für die Generierung. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
+| `Modell` | Das für die Videobearbeitung zu verwendende Modell. Jede Option bietet ihren eigenen Satz an Unterparametern. | DYNAMIC_COMBO | Ja | `"wan2.7-videoedit"` |
+| `Video` | Das zu bearbeitende Video. | VIDEO | Ja | - |
+| `Seed` | Seed für die Generierung. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
 | `audio_setting` | 'auto': Das Modell entscheidet anhand des Prompts, ob das Audio neu generiert wird. 'origin': Das Original-Audio aus dem Eingabevideo beibehalten. (Standard: "auto") | COMBO | Ja | `"auto"`<br>`"origin"` |
-| `watermark` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll. (Standard: False) | BOOLEAN | Ja | - |
+| `Wasserzeichen` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll. (Standard: False) | BOOLEAN | Ja | - |
 
 ### wan2.7-videoedit Eingaben
 

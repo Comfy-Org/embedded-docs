@@ -6,10 +6,10 @@ Choisissez la meilleure image d'un lot. Connectez `index` à Get Image from Batc
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser (par défaut : `"gemini-decision-1"`). | COMBO | Oui | `"gemini-decision-1"` |
+| `modèle` | Modèle à utiliser (par défaut : `"gemini-decision-1"`). | COMBO | Oui | `"gemini-decision-1"` |
 | `question` | Quelle image choisir (par défaut : "Which image best matches the prompt in text? If there is no text, which image has the best quality?"). | STRING | Oui | 1 à 5000 caractères |
 | `images` | Les images parmi lesquelles choisir, sous forme de lot ou de lot unique de frames. | IMAGE | Oui | 2 à 64 images |
-| `text` | Texte sur lequel porte la question, tel que le prompt à partir duquel les images ont été créées, jusqu'à 20000 caractères. | STRING | Non | Jusqu'à 20000 caractères |
+| `texte` | Texte sur lequel porte la question, tel que le prompt à partir duquel les images ont été créées, jusqu'à 20000 caractères. | STRING | Non | Jusqu'à 20000 caractères |
 
 Le nœud nécessite de 2 à 64 images et renvoie une erreur pour une seule image. Connectez `text` lorsque le choix doit suivre un prompt plutôt que la seule qualité de l'image.
 

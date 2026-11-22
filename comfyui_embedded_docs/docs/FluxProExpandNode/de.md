@@ -6,16 +6,16 @@ Erweitert ein Bild per Outpainting basierend auf dem Prompt. Dieser Node erweite
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Eingabebild, das erweitert werden soll | IMAGE | Ja | - |
-| `prompt` | Prompt für die Bildgenerierung (Standard: "") | STRING | Nein | - |
-| `prompt_upsampling` | Ob ein Upsampling des Prompts durchgeführt werden soll. Wenn aktiviert, wird der Prompt automatisch für eine kreativere Generierung verändert, die Ergebnisse sind jedoch nicht deterministisch (derselbe Seed erzeugt nicht exakt dasselbe Ergebnis). (Standard: False) | BOOLEAN | Nein | - |
-| `top` | Anzahl der Pixel, um die das Bild oben erweitert wird (Standard: 0) | INT | Nein | 0-2048 |
-| `bottom` | Anzahl der Pixel, um die das Bild unten erweitert wird (Standard: 0) | INT | Nein | 0-2048 |
-| `left` | Anzahl der Pixel, um die das Bild links erweitert wird (Standard: 0) | INT | Nein | 0-2048 |
-| `right` | Anzahl der Pixel, um die das Bild rechts erweitert wird (Standard: 0) | INT | Nein | 0-2048 |
-| `guidance` | Guidance-Stärke für den Bildgenerierungsprozess (Standard: 60) | FLOAT | Nein | 1.5-100 |
-| `steps` | Anzahl der Schritte für den Bildgenerierungsprozess (Standard: 50) | INT | Nein | 15-50 |
-| `seed` | Der Zufalls-Seed, der zur Erzeugung des Rauschens verwendet wird. (Standard: 0) | INT | Nein | 0-18446744073709551615 |
+| `Bild` | Das Eingabebild, das erweitert werden soll | IMAGE | Ja | - |
+| `Prompt` | Prompt für die Bildgenerierung (Standard: "") | STRING | Nein | - |
+| `Prompt-Upsampling` | Ob ein Upsampling des Prompts durchgeführt werden soll. Wenn aktiviert, wird der Prompt automatisch für eine kreativere Generierung verändert, die Ergebnisse sind jedoch nicht deterministisch (derselbe Seed erzeugt nicht exakt dasselbe Ergebnis). (Standard: False) | BOOLEAN | Nein | - |
+| `Oben` | Anzahl der Pixel, um die das Bild oben erweitert wird (Standard: 0) | INT | Nein | 0-2048 |
+| `Unten` | Anzahl der Pixel, um die das Bild unten erweitert wird (Standard: 0) | INT | Nein | 0-2048 |
+| `Links` | Anzahl der Pixel, um die das Bild links erweitert wird (Standard: 0) | INT | Nein | 0-2048 |
+| `Rechts` | Anzahl der Pixel, um die das Bild rechts erweitert wird (Standard: 0) | INT | Nein | 0-2048 |
+| `Guidance` | Guidance-Stärke für den Bildgenerierungsprozess (Standard: 60) | FLOAT | Nein | 1.5-100 |
+| `Schritte` | Anzahl der Schritte für den Bildgenerierungsprozess (Standard: 50) | INT | Nein | 15-50 |
+| `Seed` | Der Zufalls-Seed, der zur Erzeugung des Rauschens verwendet wird. (Standard: 0) | INT | Nein | 0-18446744073709551615 |
 
 ## Ausgaben
 

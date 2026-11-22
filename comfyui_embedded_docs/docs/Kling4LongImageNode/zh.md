@@ -8,7 +8,7 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `skill` | 要生成的布局。`"webpage"` 围绕可选的风格图像和主体设计一个完整页面；`"ecommerce"` 根据产品照片构建产品详情页。 | DYNAMIC_COMBO | 是 | `"webpage"`<br>`"ecommerce"` |
+| `技能` | 要生成的布局。`"webpage"` 围绕可选的风格图像和主体设计一个完整页面；`"ecommerce"` 根据产品照片构建产品详情页。 | DYNAMIC_COMBO | 是 | `"webpage"`<br>`"ecommerce"` |
 
 ### `webpage` 输入
 

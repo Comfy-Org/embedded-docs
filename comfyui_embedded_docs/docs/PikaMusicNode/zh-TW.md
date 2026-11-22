@@ -6,7 +6,7 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `mode` | 此節點的作用：`"text to music"` 會創作一首新歌，`"cover"` 會重新錄製提供的歌曲。每種模式會在下方顯示各自的輸入。預設：`"text to music"`。 | DYNAMIC_COMBO | 是 | `"text to music"`<br>`"cover"` |
+| `模式` | 此節點的作用：`"text to music"` 會創作一首新歌，`"cover"` 會重新錄製提供的歌曲。每種模式會在下方顯示各自的輸入。預設：`"text to music"`。 | DYNAMIC_COMBO | 是 | `"text to music"`<br>`"cover"` |
 
 ### Text to Music 輸入
 

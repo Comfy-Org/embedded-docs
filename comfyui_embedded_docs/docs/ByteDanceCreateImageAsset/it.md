@@ -6,7 +6,7 @@ Questo nodo crea un asset immagine personale per il servizio Seedance 2.0 di Byt
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine da registrare come asset personale. | IMAGE | Sì |  |
+| `immagine` | L'immagine da registrare come asset personale. | IMAGE | Sì |  |
 | `group_id` | Riutilizza un ID gruppo asset Seedance esistente per evitare verifiche umane ripetute per la stessa persona. Lascia vuoto per eseguire nel browser l'autenticazione della persona reale e creare un nuovo gruppo (predefinito: vuoto). | STRING | No |  |
 
 **Vincoli sull'immagine:**

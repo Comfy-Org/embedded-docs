@@ -6,8 +6,8 @@ Der Knoten ConditioningTimestepsRange erstellt drei verschiedene Zeitschrittbere
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `start_percent` | Der Startprozentsatz des Zeitschrittbereichs (Standard: 0.0) | FLOAT | Ja | 0.0 - 1.0 |
-| `end_percent` | Der Endprozentsatz des Zeitschrittbereichs (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 |
+| `Startprozent` | Der Startprozentsatz des Zeitschrittbereichs (Standard: 0.0) | FLOAT | Ja | 0.0 - 1.0 |
+| `Endprozent` | Der Endprozentsatz des Zeitschrittbereichs (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 |
 
 ## Ausgaben
 

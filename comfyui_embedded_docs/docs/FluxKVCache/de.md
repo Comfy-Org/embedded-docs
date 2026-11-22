@@ -6,7 +6,7 @@ Der Flux KV Cache-Node ermöglicht eine Key-Value-(KV-)Cache-Optimierung für Mo
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Modell, auf das die KV-Cache-Optimierung angewendet werden soll. | MODEL | Ja |  |
+| `Modell` | Das Modell, auf das die KV-Cache-Optimierung angewendet werden soll. | MODEL | Ja |  |
 
 ## Ausgaben
 

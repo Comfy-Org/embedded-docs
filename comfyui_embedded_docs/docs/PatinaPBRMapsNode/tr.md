@@ -6,15 +6,15 @@ Mevcut bir doku görüntüsünden bir dizi PBR malzeme haritası türetir: basec
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | PBR haritalarının türetileceği fotoğraf veya render. | IMAGE | Evet | - |
-| `basecolor` | basecolor (albedo) haritasını oluşturun. Varsayılan: True. | BOOLEAN | Evet | true<br>false |
+| `görüntü` | PBR haritalarının türetileceği fotoğraf veya render. | IMAGE | Evet | - |
+| `temel renk` | basecolor (albedo) haritasını oluşturun. Varsayılan: True. | BOOLEAN | Evet | true<br>false |
 | `normal` | Normal haritasını oluşturun. Varsayılan: True. | BOOLEAN | Evet | true<br>false |
-| `roughness` | Pürüzlülük haritasını oluşturun. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
-| `metalness` | Metaliklik haritasını oluşturun. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
-| `height` | Yükseklik (yer değiştirme) haritasını oluşturun. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
-| `seed` | Tekrarlanabilir gürültü giderme için tohum. Varsayılan: 42. | INT | Evet | 0 ile 2147483646 arası |
-| `safety_checker` | Sağlayıcının içerik güvenliği denetimini istekte çalıştırın. Gelişmiş ayar. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
-| `auto_downscale` | En uzun kenarı modelin girdi sınırı olan 2048 pikseli aşan bir girdi görüntüsünü, en-boy oranını koruyarak otomatik olarak küçültün; daha küçük görüntüler olduğu gibi bırakılır. Aşırı boyutlu görüntülerde bunun yerine hata verilmesi için devre dışı bırakın. Gelişmiş ayar. Varsayılan: True. | BOOLEAN | Hayır | true<br>false |
+| `pürüzlülük` | Pürüzlülük haritasını oluşturun. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
+| `metallik` | Metaliklik haritasını oluşturun. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
+| `yükseklik` | Yükseklik (yer değiştirme) haritasını oluşturun. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
+| `tohum` | Tekrarlanabilir gürültü giderme için tohum. Varsayılan: 42. | INT | Evet | 0 ile 2147483646 arası |
+| `güvenlik denetleyicisi` | Sağlayıcının içerik güvenliği denetimini istekte çalıştırın. Gelişmiş ayar. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
+| `otomatik küçültme` | En uzun kenarı modelin girdi sınırı olan 2048 pikseli aşan bir girdi görüntüsünü, en-boy oranını koruyarak otomatik olarak küçültün; daha küçük görüntüler olduğu gibi bırakılır. Aşırı boyutlu görüntülerde bunun yerine hata verilmesi için devre dışı bırakın. Gelişmiş ayar. Varsayılan: True. | BOOLEAN | Hayır | true<br>false |
 
 **Kısıtlamalar ve davranış:**
 

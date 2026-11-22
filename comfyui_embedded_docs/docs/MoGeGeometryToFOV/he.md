@@ -7,8 +7,8 @@
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
 | `moge_geometry` | אובייקט הגאומטריה של MoGe. עליו להכיל מטריצת פרמטרים פנימיים ולפחות אחד מנתוני `image`, `points` או `depth`, אשר משמשים לקריאת גובה הפיקסלים עבור המרת אורך המוקד. | MOGE_GEOMETRY | כן | — |
-| `axis` | הציר שלפיו מחושב ה-FOV: "vertical" (fov_y), "horizontal" (fov_x), או "diagonal" (ברירת מחדל: "vertical"). | COMBO | כן | "vertical"<br>"horizontal"<br>"diagonal" |
-| `unit` | יחידת הפלט עבור ה-FOV (ברירת מחדל: "degrees"). | COMBO | כן | "degrees"<br>"radians" |
+| `ציר` | הציר שלפיו מחושב ה-FOV: "vertical" (fov_y), "horizontal" (fov_x), או "diagonal" (ברירת מחדל: "vertical"). | COMBO | כן | "vertical"<br>"horizontal"<br>"diagonal" |
+| `יחידה` | יחידת הפלט עבור ה-FOV (ברירת מחדל: "degrees"). | COMBO | כן | "degrees"<br>"radians" |
 
 הערה: הצומת מעלה שגיאה אם `moge_geometry` אינו מכיל פרמטרים פנימיים (לגאומטריית פנורמה אין כאלה) או אם אין בו אף אחד מנתוני `image`, `points` או `depth`.
 

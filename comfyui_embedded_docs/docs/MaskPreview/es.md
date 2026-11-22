@@ -6,7 +6,7 @@ El nodo MaskPreview muestra una vista previa visual de los datos de la máscara 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `mask` | Los datos de máscara que se van a previsualizar | MASK | Sí | - |
+| `máscara` | Los datos de máscara que se van a previsualizar | MASK | Sí | - |
 | `filename_prefix` | Prefijo de nombre de archivo usado para la vista previa (predeterminado: "ComfyUI") | STRING | No | - |
 | `prompt` | Información de prompt para metadatos (proporcionada automáticamente) | PROMPT | No | - |
 | `extra_pnginfo` | Información PNG adicional para metadatos (proporcionada automáticamente) | EXTRA_PNGINFO | No | - |

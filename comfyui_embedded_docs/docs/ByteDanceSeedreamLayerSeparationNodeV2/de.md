@@ -8,7 +8,7 @@ ByteDance Seedream 5.0 Layer Separation zerlegt ein Bild in eine Hintergrundplat
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das für die Trennung verwendete Seedream-Modell. "seedream 5.0 pro" (Standard) liefert die höchste Trennungqualität und bietet außerdem eine `prompt_optimization`-Steuerung; "seedream 5.0 flash" ist schneller und günstiger und besitzt keine Prompt-Optimierungs-Steuerung. | DYNAMIC_COMBO | Ja | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash" |
+| `Modell` | Das für die Trennung verwendete Seedream-Modell. "seedream 5.0 pro" (Standard) liefert die höchste Trennungqualität und bietet außerdem eine `prompt_optimization`-Steuerung; "seedream 5.0 flash" ist schneller und günstiger und besitzt keine Prompt-Optimierungs-Steuerung. | DYNAMIC_COMBO | Ja | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash" |
 
 ### Seedream 5.0 Pro und 5.0 Flash Eingaben
 

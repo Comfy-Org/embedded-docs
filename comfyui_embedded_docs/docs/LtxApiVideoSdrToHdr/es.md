@@ -7,7 +7,7 @@ Convierte un video SDR en un video HDR de 10 bits en BT.2020 con la función de 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `video` | Video SDR a convertir, como máximo 3840x2160 en cualquier orientación. Hasta 273 fotogramas a 1080p, 193 fotogramas a 1440p y 65 fotogramas a 4K. | VIDEO | Sí | - |
-| `seed` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 4294967295 |
+| `semilla` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 4294967295 |
 
 ## Salidas
 

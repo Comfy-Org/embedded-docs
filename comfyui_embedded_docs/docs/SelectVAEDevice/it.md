@@ -9,7 +9,7 @@ Questo nodo consente di selezionare manualmente il dispositivo GPU su cui deve e
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Range |
 | --- | --- | --- | --- | --- |
 | `vae` | Il modello VAE da assegnare a un dispositivo specifico. | VAE | Sì |  |
-| `device` | Il dispositivo di destinazione per il VAE. `"default"` ripristina il dispositivo assegnato dal caricatore. `"gpu:N"` fissa il VAE alla N-esima GPU disponibile. La CPU non è una scelta supportata e verrà ignorata se fornita. (predefinito: `"default"`) | COMBO | Sì | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` |
+| `dispositivo` | Il dispositivo di destinazione per il VAE. `"default"` ripristina il dispositivo assegnato dal caricatore. `"gpu:N"` fissa il VAE alla N-esima GPU disponibile. La CPU non è una scelta supportata e verrà ignorata se fornita. (predefinito: `"default"`) | COMBO | Sì | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` |
 
 ## Output
 

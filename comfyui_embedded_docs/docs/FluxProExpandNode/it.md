@@ -6,15 +6,15 @@ Esegue l'outpainting di un'immagine in base al prompt. Questo nodo espande un'im
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine di input da espandere | IMAGE | Sì | - |
+| `immagine` | L'immagine di input da espandere | IMAGE | Sì | - |
 | `prompt` | Prompt per la generazione dell'immagine (predefinito: "") | STRING | No | - |
-| `prompt_upsampling` | Indica se eseguire l'upsampling sul prompt. Se attivo, modifica automaticamente il prompt per una generazione più creativa, ma i risultati non sono deterministici (lo stesso seed non produrrà esattamente lo stesso risultato). (predefinito: False) | BOOLEAN | No | - |
-| `top` | Numero di pixel da espandere nella parte superiore dell'immagine (predefinito: 0) | INT | No | 0-2048 |
-| `bottom` | Numero di pixel da espandere nella parte inferiore dell'immagine (predefinito: 0) | INT | No | 0-2048 |
-| `left` | Numero di pixel da espandere sul lato sinistro dell'immagine (predefinito: 0) | INT | No | 0-2048 |
-| `right` | Numero di pixel da espandere sul lato destro dell'immagine (predefinito: 0) | INT | No | 0-2048 |
-| `guidance` | Intensità della guidance per il processo di generazione dell'immagine (predefinito: 60) | FLOAT | No | 1.5-100 |
-| `steps` | Numero di step per il processo di generazione dell'immagine (predefinito: 50) | INT | No | 15-50 |
+| `upsampling prompt` | Indica se eseguire l'upsampling sul prompt. Se attivo, modifica automaticamente il prompt per una generazione più creativa, ma i risultati non sono deterministici (lo stesso seed non produrrà esattamente lo stesso risultato). (predefinito: False) | BOOLEAN | No | - |
+| `alto` | Numero di pixel da espandere nella parte superiore dell'immagine (predefinito: 0) | INT | No | 0-2048 |
+| `basso` | Numero di pixel da espandere nella parte inferiore dell'immagine (predefinito: 0) | INT | No | 0-2048 |
+| `sinistra` | Numero di pixel da espandere sul lato sinistro dell'immagine (predefinito: 0) | INT | No | 0-2048 |
+| `destra` | Numero di pixel da espandere sul lato destro dell'immagine (predefinito: 0) | INT | No | 0-2048 |
+| `guida` | Intensità della guidance per il processo di generazione dell'immagine (predefinito: 60) | FLOAT | No | 1.5-100 |
+| `passi` | Numero di step per il processo di generazione dell'immagine (predefinito: 50) | INT | No | 15-50 |
 | `seed` | Il seed casuale utilizzato per creare il rumore. (predefinito: 0) | INT | No | 0-18446744073709551615 |
 
 ## Output

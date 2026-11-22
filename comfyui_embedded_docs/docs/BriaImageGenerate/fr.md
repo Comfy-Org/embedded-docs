@@ -9,9 +9,9 @@ Génère une nouvelle image à partir d'un prompt textuel, d'un prompt JSON stru
 | `prompt` | Description en langage naturel de l'image à générer (par défaut : vide). | STRING | Oui | Texte multiligne |
 | `structured_prompt` | Prompt structuré JSON provenant d'un résultat Bria FIBO précédent. Avec la même graine, il recrée cette image ; modifiez le JSON ou ajoutez un prompt pour l'affiner (par défaut : vide). | STRING | Oui | Texte multiligne |
 | `aspect_ratio` | Ratio d'aspect de sortie (par défaut : `"1:1"`). Les ratios à partir de `"16:10"` sont des tailles FIBO 2.0 avec des exigences supplémentaires, listées ci-dessous. | COMBO | Oui | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"16:10"`<br>`"10:16"`<br>`"2:1"`<br>`"1:2"`<br>`"21:9"`<br>`"9:21"`<br>`"3:1"`<br>`"1:3"`<br>`"4:1"`<br>`"1:4"`<br>`"5:1"`<br>`"1:5"` |
-| `resolution` | Résolution de sortie en mégapixels (par défaut : `"1MP"`). | COMBO | Oui | `"1MP"`<br>`"4MP"` |
+| `résolution` | Résolution de sortie en mégapixels (par défaut : `"1MP"`). | COMBO | Oui | `"1MP"`<br>`"4MP"` |
 | `seed` | Graine qui initialise la génération (par défaut : 42). | INT | Oui | 1 à 2147483647 |
-| `moderation` | Paramètres de modération. Sélectionner `"true"` révèle les entrées de modération listées ci-dessous. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
+| `modération` | Paramètres de modération. Sélectionner `"true"` révèle les entrées de modération listées ci-dessous. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
 | `image` | Image de référence facultative sur laquelle s'appuyer. Le résultat est une nouvelle image au ratio d'aspect sélectionné, et non une édition de cette image. | IMAGE | Non | - |
 
 ### Entrées de modération

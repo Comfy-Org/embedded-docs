@@ -7,7 +7,7 @@ Le nœud **Convert SDR to HDR** étend les images sRGB à plage dynamique standa
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image ou les images SDR en sRGB à étendre vers HDR. | IMAGE | Oui | - |
-| `algorithm` | Algorithme d'expansion HDR. La sélection d'un algorithme révèle ses paramètres (`target_luminance`). | DYNAMIC_COMBO | Oui | `"lottes"` |
+| `algorithme` | Algorithme d'expansion HDR. La sélection d'un algorithme révèle ses paramètres (`target_luminance`). | DYNAMIC_COMBO | Oui | `"lottes"` |
 
 ### Entrées lottes
 

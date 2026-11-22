@@ -9,11 +9,11 @@ Creatify Boreal-H3 Video convierte un prompt de texto en un video con sonido, us
 | `prompt` | Prompt de texto que describe el video. Debe contener al menos un carácter que no sea un espacio en blanco. | STRING | Sí | Cualquier texto no vacío |
 | `first_frame` | Imagen a partir de la cual comienza el video. Cuando se conecta, mantén `aspect_ratio` en `"auto"` para que el video siga la imagen. | IMAGE | No | - |
 | `last_frame` | Imagen en la que termina el video. Requiere que `first_frame` esté conectado. | IMAGE | No | - |
-| `resolution` | Resolución del video de salida (predeterminado: `"768p"`). | COMBO | Sí | `"768p"`<br>`"1088p"`<br>`"2k"` |
+| `resolución` | Resolución del video de salida (predeterminado: `"768p"`). | COMBO | Sí | `"768p"`<br>`"1088p"`<br>`"2k"` |
 | `aspect_ratio` | Relación de aspecto del video de salida. `"auto"` sigue el primer fotograma cuando hay uno conectado; en ese caso, déjalo en `"auto"` (predeterminado: `"auto"`). | COMBO | Sí | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
-| `duration` | Duración del video en segundos (predeterminado: 5). Con `"2k"`, el máximo es 14 segundos. | INT | Sí | 1 a 15 (paso 1) |
+| `duración` | Duración del video en segundos (predeterminado: 5). Con `"2k"`, el máximo es 14 segundos. | INT | Sí | 1 a 15 (paso 1) |
 | `prompt_enhancement` | Cómo reescribe Creatify el prompt antes de renderizar: `"auto"` y `"ads"` lo convierten en un prompt de anuncio de video y pueden añadir líneas habladas; `"general"` lo reescribe para cualquier otro video; `"none"` lo renderiza tal como se escribió (predeterminado: `"auto"`). | COMBO | Sí | `"auto"`<br>`"ads"`<br>`"general"`<br>`"none"` |
-| `seed` | La semilla controla si el nodo se vuelve a ejecutar. A Boreal-H3 no se le envía ninguna semilla, por lo que volver a ejecutarlo con las mismas entradas puede producir un video diferente (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
+| `semilla` | La semilla controla si el nodo se vuelve a ejecutar. A Boreal-H3 no se le envía ninguna semilla, por lo que volver a ejecutarlo con las mismas entradas puede producir un video diferente (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
 
 **Restricciones:** con un `first_frame`, la relación de aspecto siempre proviene de la imagen, por lo que cualquier otro valor de `aspect_ratio` genera un error. Un `last_frame` sin `first_frame` se rechaza, y una `duration` superior a 14 segundos se rechaza en `"2k"`.
 

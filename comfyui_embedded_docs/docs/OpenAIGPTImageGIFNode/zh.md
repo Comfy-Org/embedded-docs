@@ -10,7 +10,7 @@ OpenAI GPT Image 2.6 GIF 使用 OpenAI 的 GPT Image 模型根据提示词生成
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model` | 用于生成动画的 GPT Image 模型。 | DYNAMIC_COMBO | 是 | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
+| `模型` | 用于生成动画的 GPT Image 模型。 | DYNAMIC_COMBO | 是 | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
 
 ### gpt-image-2.6-flare 和 gpt-image-2.6-sunburst 输入
 
@@ -18,14 +18,14 @@ OpenAI GPT Image 2.6 GIF 使用 OpenAI 的 GPT Image 模型根据提示词生成
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | 要制作成动画的内容。（默认：`""`） | STRING | 是 | N/A |
-| `model.size` | 每一帧的尺寸。尺寸越大，仅支持越低的帧数。（默认：`"512x512"`） | COMBO | 是 | `"384x384"`<br>`"512x512"`<br>`"640x640"`<br>`"720x720"`<br>`"768x768"`<br>`"960x960"`<br>`"512x288"`<br>`"288x512"`<br>`"1024x576"`<br>`"576x1024"`<br>`"1280x720"`<br>`"720x1280"` |
-| `model.frame_count` | 帧数。帧按阶梯计费：2 到 8、9、10 到 12、13 到 16。（默认：`9`） | INT | 是 | 2 到 16 |
-| `model.frame_duration_ms` | 每一帧的显示时长，单位为毫秒。（默认：`200`） | INT | 是 | 20 到 2000（步长 10） |
-| `model.background` | 帧背景。透明度由使用 vp9 的 Save WEBM、Save Animated WEBP 和 Save Animated PNG 保留。（默认：`"opaque"`） | COMBO | 是 | `"opaque"`<br>`"transparent"` |
-| `model.quality` | 图像质量。等级越高，费用越高、耗时越长。（默认：`"low"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | 模型在渲染前对动画进行规划的程度。（默认：`"high"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
-| `model.seed` | 控制节点是否重新运行；无论种子为何，结果都是不确定的。（默认：`42`） | INT | 是 | 0 到 2147483647 |
+| `提示词` | 要制作成动画的内容。（默认：`""`） | STRING | 是 | N/A |
+| `尺寸` | 每一帧的尺寸。尺寸越大，仅支持越低的帧数。（默认：`"512x512"`） | COMBO | 是 | `"384x384"`<br>`"512x512"`<br>`"640x640"`<br>`"720x720"`<br>`"768x768"`<br>`"960x960"`<br>`"512x288"`<br>`"288x512"`<br>`"1024x576"`<br>`"576x1024"`<br>`"1280x720"`<br>`"720x1280"` |
+| `帧数` | 帧数。帧按阶梯计费：2 到 8、9、10 到 12、13 到 16。（默认：`9`） | INT | 是 | 2 到 16 |
+| `帧时长（毫秒）` | 每一帧的显示时长，单位为毫秒。（默认：`200`） | INT | 是 | 20 到 2000（步长 10） |
+| `背景` | 帧背景。透明度由使用 vp9 的 Save WEBM、Save Animated WEBP 和 Save Animated PNG 保留。（默认：`"opaque"`） | COMBO | 是 | `"opaque"`<br>`"transparent"` |
+| `质量` | 图像质量。等级越高，费用越高、耗时越长。（默认：`"low"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `复杂度` | 模型在渲染前对动画进行规划的程度。（默认：`"high"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
+| `种子` | 控制节点是否重新运行；无论种子为何，结果都是不确定的。（默认：`42`） | INT | 是 | 0 到 2147483647 |
 
 **参数约束与限制：**
 

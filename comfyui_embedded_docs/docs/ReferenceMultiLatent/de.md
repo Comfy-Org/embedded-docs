@@ -8,11 +8,11 @@ Dieser Knoten kodiert ein oder mehrere Referenzbilder und hängt deren Latents a
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `positive` | Die positive Konditionierung, die mit den Referenz-Latents geändert werden soll. | CONDITIONING | Ja | - |
-| `negative` | Optionale negative Konditionierung, die dieselben Referenz-Latents erhält. Lassen Sie sie unverbunden, um die geänderte positive Konditionierung für die Ausgabe `negative` wiederzuverwenden. | CONDITIONING | Nein | - |
+| `positiv` | Die positive Konditionierung, die mit den Referenz-Latents geändert werden soll. | CONDITIONING | Ja | - |
+| `negativ` | Optionale negative Konditionierung, die dieselben Referenz-Latents erhält. Lassen Sie sie unverbunden, um die geänderte positive Konditionierung für die Ausgabe `negative` wiederzuverwenden. | CONDITIONING | Nein | - |
 | `vae` | Der VAE, der zum Kodieren der verbundenen Referenzbilder verwendet wird. Wenn kein VAE verbunden ist, werden die Referenzbilder ignoriert. | VAE | Nein | - |
-| `resolution` | Wie jedes Referenzbild vor der Kodierung vorbereitet wird. `"keep resolution"` kodiert es in seiner eingehenden Größe; `"resize"` skaliert es auf eine Ziel-Megapixelanzahl, wobei das Seitenverhältnis beibehalten wird, wodurch `megapixels` eingeblendet wird. (Standard: "keep resolution") | DYNAMIC_COMBO | Ja | `"keep resolution"`<br>`"resize"` |
-| `images` | Erweiterbarer Slot: Verbinden Sie ein oder mehrere Referenzbilder (`image_1`, `image_2`, ...), die als Referenzen verwendet werden sollen. Bilder werden in Slot-Reihenfolge kodiert und in dieser Reihenfolge an die Konditionierung angehängt. | IMAGE | Nein | 1 bis 100 |
+| `Auflösung` | Wie jedes Referenzbild vor der Kodierung vorbereitet wird. `"keep resolution"` kodiert es in seiner eingehenden Größe; `"resize"` skaliert es auf eine Ziel-Megapixelanzahl, wobei das Seitenverhältnis beibehalten wird, wodurch `megapixels` eingeblendet wird. (Standard: "keep resolution") | DYNAMIC_COMBO | Ja | `"keep resolution"`<br>`"resize"` |
+| `Bilder` | Erweiterbarer Slot: Verbinden Sie ein oder mehrere Referenzbilder (`image_1`, `image_2`, ...), die als Referenzen verwendet werden sollen. Bilder werden in Slot-Reihenfolge kodiert und in dieser Reihenfolge an die Konditionierung angehängt. | IMAGE | Nein | 1 bis 100 |
 
 ### Eingaben zur Größenänderung
 

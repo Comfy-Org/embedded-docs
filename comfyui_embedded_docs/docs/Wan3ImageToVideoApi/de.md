@@ -8,11 +8,11 @@ Dieser Node generiert mithilfe des Wan 3.0-Modells ein Video aus einem Startbild
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Wählt die zu verwendende Wan 3.0-Modellvariante aus und legt fest, welche modellspezifischen Einstellungen unten angezeigt werden. | DYNAMIC_COMBO | Ja | "wan3.0-video"<br>"wan3.0-video-prime" |
+| `Modell` | Wählt die zu verwendende Wan 3.0-Modellvariante aus und legt fest, welche modellspezifischen Einstellungen unten angezeigt werden. | DYNAMIC_COMBO | Ja | "wan3.0-video"<br>"wan3.0-video-prime" |
 | `first_frame` | Startbild. Es ist genau ein Bild erforderlich. | IMAGE | Ja | Einzelnes Bild |
 | `last_frame` | Endbild. Das Modell generiert ein Video, das vom ersten zum letzten Frame übergeht. Optional; falls angegeben, ist genau ein Bild erforderlich. | IMAGE | Nein | Einzelnes Bild |
-| `seed` | Seed für die Generierung (Standard: 42). | INT | Ja | 0 - 2147483647 |
-| `watermark` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll (Standard: false). | BOOLEAN | Ja | true<br>false |
+| `Seed` | Seed für die Generierung (Standard: 42). | INT | Ja | 0 - 2147483647 |
+| `Wasserzeichen` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll (Standard: false). | BOOLEAN | Ja | true<br>false |
 
 ### wan3.0-video und wan3.0-video-prime Eingaben
 

@@ -13,8 +13,8 @@ Der Node `CLIP Vision Encode` ist ein Bildkodierungs-Node in ComfyUI, der Eingab
 | Parametername | Beschreibung | Datentyp |
 | --- | --- | --- |
 | `clip_vision` | CLIP-Vision-Modell, wird normalerweise über den Node CLIPVisionLoader geladen | CLIP_VISION |
-| `image` | Das zu kodierende Eingabebild | IMAGE |
-| `crop` | Methode zum Zuschneiden des Bildes, Optionen: center (zentrierter Zuschnitt), none (kein Zuschnitt) | Dropdown |
+| `Bild` | Das zu kodierende Eingabebild | IMAGE |
+| `Zuschneiden` | Methode zum Zuschneiden des Bildes, Optionen: center (zentrierter Zuschnitt), none (kein Zuschnitt) | Dropdown |
 
 ## Ausgaben
 

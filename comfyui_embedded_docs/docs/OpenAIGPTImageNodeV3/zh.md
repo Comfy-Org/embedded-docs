@@ -10,7 +10,7 @@ OpenAI GPT Image 2.6 使用 OpenAI 的 GPT Image 模型，根据提示词生成�
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model` | 要使用的 GPT Image 模型。选择某个模型后会显示该模型对应的参数。 | DYNAMIC_COMBO | 是 | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"`<br>`"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"` |
+| `模型` | 要使用的 GPT Image 模型。选择某个模型后会显示该模型对应的参数。 | DYNAMIC_COMBO | 是 | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"`<br>`"gpt-image-2.5-flare"`<br>`"gpt-image-2.5-sunburst"` |
 
 ### gpt-image-2.6-flare 和 gpt-image-2.6-sunburst 输入
 
@@ -18,17 +18,17 @@ OpenAI GPT Image 2.6 使用 OpenAI 的 GPT Image 模型，根据提示词生成�
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | 要生成的内容，或要进行的编辑。（默认：`""`） | STRING | 是 | N/A |
-| `model.size` | 图像尺寸。选择 "Custom" 可使用自定义的宽度和高度。（默认：`"auto"`） | COMBO | 是 | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
-| `model.custom_width` | 仅在 `model.size` 为 "Custom" 时使用。必须为 16 的倍数。（默认：`1024`） | INT | 否 | 480 到 3840（步长 16） |
-| `model.custom_height` | 仅在 `model.size` 为 "Custom" 时使用。必须为 16 的倍数。（默认：`1024`） | INT | 否 | 480 到 3840（步长 16） |
-| `model.background` | 返回带背景或不带背景的图像。（默认：`"auto"`） | COMBO | 是 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
-| `model.quality` | 图像质量。级别越高，费用越高、耗时越长。（默认：`"low"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | 模型在渲染前对图像进行规划的程度。（默认：`"high"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
+| `提示词` | 要生成的内容，或要进行的编辑。（默认：`""`） | STRING | 是 | N/A |
+| `尺寸` | 图像尺寸。选择 "Custom" 可使用自定义的宽度和高度。（默认：`"auto"`） | COMBO | 是 | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `自定义宽度` | 仅在 `model.size` 为 "Custom" 时使用。必须为 16 的倍数。（默认：`1024`） | INT | 否 | 480 到 3840（步长 16） |
+| `自定义高度` | 仅在 `model.size` 为 "Custom" 时使用。必须为 16 的倍数。（默认：`1024`） | INT | 否 | 480 到 3840（步长 16） |
+| `背景` | 返回带背景或不带背景的图像。（默认：`"auto"`） | COMBO | 是 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `质量` | 图像质量。级别越高，费用越高、耗时越长。（默认：`"low"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `复杂度` | 模型在渲染前对图像进行规划的程度。（默认：`"high"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
 | `model.images` | 用于编辑的可选参考图像。最多 16 张。 | AUTOGROW | 否 | 0 到 16 |
 | `model.markup` | 在第一张参考图像上绘制的标注，用于指示需要编辑的位置。必须与该图像的尺寸一致，并且必须与 `model.markup_alpha` 一同连接。 | IMAGE | 否 | N/A |
 | `model.markup_alpha` | 白色用于标记 `model.markup` 中的标注。Painter 节点的 MASK 输出可直接使用；Load Image 的蒙版需先经过 Invert Mask。 | MASK | 否 | N/A |
-| `model.seed` | 控制节点是否重新运行；无论种子如何，结果都是非确定性的。（默认：`42`） | INT | 是 | 0 到 2147483647 |
+| `种子` | 控制节点是否重新运行；无论种子如何，结果都是非确定性的。（默认：`42`） | INT | 是 | 0 到 2147483647 |
 
 ### gpt-image-2.5-flare 和 gpt-image-2.5-sunburst 输入
 
@@ -36,16 +36,16 @@ OpenAI GPT Image 2.6 使用 OpenAI 的 GPT Image 模型，根据提示词生成�
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | 要生成的内容，或要进行的编辑。（默认：`""`） | STRING | 是 | N/A |
-| `model.size` | 图像尺寸。选择 "Custom" 可使用自定义的宽度和高度。（默认：`"auto"`） | COMBO | 是 | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
-| `model.custom_width` | 仅在 `model.size` 为 "Custom" 时使用。必须为 16 的倍数。（默认：`1024`） | INT | 否 | 480 到 3840（步长 16） |
-| `model.custom_height` | 仅在 `model.size` 为 "Custom" 时使用。必须为 16 的倍数。（默认：`1024`） | INT | 否 | 480 到 3840（步长 16） |
-| `model.background` | 返回带背景或不带背景的图像。（默认：`"auto"`） | COMBO | 是 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
-| `model.quality` | 图像质量。级别越高，费用越高、耗时越长。（默认：`"low"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `提示词` | 要生成的内容，或要进行的编辑。（默认：`""`） | STRING | 是 | N/A |
+| `尺寸` | 图像尺寸。选择 "Custom" 可使用自定义的宽度和高度。（默认：`"auto"`） | COMBO | 是 | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `自定义宽度` | 仅在 `model.size` 为 "Custom" 时使用。必须为 16 的倍数。（默认：`1024`） | INT | 否 | 480 到 3840（步长 16） |
+| `自定义高度` | 仅在 `model.size` 为 "Custom" 时使用。必须为 16 的倍数。（默认：`1024`） | INT | 否 | 480 到 3840（步长 16） |
+| `背景` | 返回带背景或不带背景的图像。（默认：`"auto"`） | COMBO | 是 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `质量` | 图像质量。级别越高，费用越高、耗时越长。（默认：`"low"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 | `model.images` | 用于编辑的可选参考图像。最多 16 张。 | AUTOGROW | 否 | 0 到 16 |
 | `model.markup` | 在第一张参考图像上绘制的标注，用于指示需要编辑的位置。必须与该图像的尺寸一致，并且必须与 `model.markup_alpha` 一同连接。 | IMAGE | 否 | N/A |
 | `model.markup_alpha` | 白色用于标记 `model.markup` 中的标注。Painter 节点的 MASK 输出可直接使用；Load Image 的蒙版需先经过 Invert Mask。 | MASK | 否 | N/A |
-| `model.seed` | 控制节点是否重新运行；无论种子如何，结果都是非确定性的。（默认：`42`） | INT | 是 | 0 到 2147483647 |
+| `种子` | 控制节点是否重新运行；无论种子如何，结果都是非确定性的。（默认：`42`） | INT | 是 | 0 到 2147483647 |
 
 **参数约束与限制：**
 

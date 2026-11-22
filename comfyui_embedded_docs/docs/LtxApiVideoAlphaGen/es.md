@@ -7,7 +7,7 @@ Extrae un mate alfa en escala de grises, blanco para el primer plano, que coinci
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `video` | Video al que aplicar el mate, de hasta 10 segundos y 3840x2160 en cualquiera de las dos orientaciones. | VIDEO | Sí | - |
-| `seed` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 4294967295 |
+| `semilla` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 4294967295 |
 
 ## Salidas
 

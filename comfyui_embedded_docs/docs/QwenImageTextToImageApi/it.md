@@ -8,7 +8,7 @@ Qwen Image 3 Text to Image genera una o più immagini da un prompt testuale util
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Modello da utilizzare (predefinito: "qwen-image-3.0-pro"). Questo selettore composito fornisce anche il prompt, il prompt negativo, la larghezza e l'altezza dell'immagine. | DYNAMIC_COMBO | Sì | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
+| `modello` | Modello da utilizzare (predefinito: "qwen-image-3.0-pro"). Questo selettore composito fornisce anche il prompt, il prompt negativo, la larghezza e l'altezza dell'immagine. | DYNAMIC_COMBO | Sì | "qwen-image-3.0-pro"<br>"qwen-image-3.0" |
 | `n` | Numero di immagini da generare, restituite come batch (predefinito: 1). | INT | No | 1 a 6 |
 | `seed` | Seed da usare per la generazione (predefinito: 42). Può essere impostato per aggiornarsi automaticamente dopo ogni generazione. | INT | No | 0 a 2147483647 |
 | `prompt_extend` | Indica se migliorare il prompt con l'assistenza dell'IA (predefinito: true). Opzione avanzata. | BOOLEAN | No | true<br>false |

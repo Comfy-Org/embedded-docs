@@ -6,7 +6,7 @@
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `language` | Öne çıkan seslerin dil grubu veya bir kimlik girmek için `custom`. Varsayılan: `"English"`. | DYNAMIC_COMBO | Evet | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
+| `dil` | Öne çıkan seslerin dil grubu veya bir kimlik girmek için `custom`. Varsayılan: `"English"`. | DYNAMIC_COMBO | Evet | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
 
 ### Dil "English", "Chinese" ve "Japanese" Girdileri
 

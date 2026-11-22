@@ -6,10 +6,10 @@ Il nodo RegexMatch verifica se una stringa di testo contiene una corrispondenza 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `string` | La stringa di testo in cui cercare corrispondenze | STRING | Sì | - |
-| `regex_pattern` | Il pattern di espressione regolare da confrontare con la stringa | STRING | Sì | - |
-| `case_insensitive` | Indica se ignorare la distinzione tra maiuscole e minuscole durante la corrispondenza (predefinito: True) | BOOLEAN | No | - |
-| `multiline` | Indica se abilitare la modalità multilinea per la corrispondenza regex (predefinito: False) | BOOLEAN | No | - |
+| `stringa` | La stringa di testo in cui cercare corrispondenze | STRING | Sì | - |
+| `pattern_regex` | Il pattern di espressione regolare da confrontare con la stringa | STRING | Sì | - |
+| `maiuscole/minuscole` | Indica se ignorare la distinzione tra maiuscole e minuscole durante la corrispondenza (predefinito: True) | BOOLEAN | No | - |
+| `multilinea` | Indica se abilitare la modalità multilinea per la corrispondenza regex (predefinito: False) | BOOLEAN | No | - |
 | `dotall` | Indica se abilitare la modalità dotall per la corrispondenza regex (predefinito: False) | BOOLEAN | No | - |
 
 ## Output

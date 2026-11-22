@@ -7,9 +7,9 @@
 | Параметр | Описание | Тип данных | Обязательный | Диапазон |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | Модель SenseNova CLIP. Подключите CLIP-загрузчик, который также питает CLIP Text Encode; выход энкодера идёт в `conditioning`. Обязательна для каждой задачи, кроме случая, когда входящий conditioning уже завершен. | CLIP | Нет | - |
-| `conditioning` | Текстовый conditioning SenseNova из CLIP Text Encode. | CONDITIONING | Да | - |
-| `negative` | Необязательный негативный conditioning. Обновляется и возвращается для задач `interleave` и `self-correction`. | CONDITIONING | Нет | - |
-| `task` | Задача для выполнения. `"image"` кодирует промпт для стандартного сэмплера, `"image thinking"` позволяет модели подумать перед ответом, `"interleave"` создает текст и изображения за один проход, а `"self-correction"` позволяет модели исправить собственный предыдущий вывод. | DYNAMIC_COMBO | Да | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
+| `кондиционирование` | Текстовый conditioning SenseNova из CLIP Text Encode. | CONDITIONING | Да | - |
+| `негативный` | Необязательный негативный conditioning. Обновляется и возвращается для задач `interleave` и `self-correction`. | CONDITIONING | Нет | - |
+| `задача` | Задача для выполнения. `"image"` кодирует промпт для стандартного сэмплера, `"image thinking"` позволяет модели подумать перед ответом, `"interleave"` создает текст и изображения за один проход, а `"self-correction"` позволяет модели исправить собственный предыдущий вывод. | DYNAMIC_COMBO | Да | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
 | `max_tokens` | Максимальное количество токенов, генерируемых за этот вызов. По умолчанию: 1024. | INT | Да | от 1 до 8192 |
 
 ### Входы `interleave`

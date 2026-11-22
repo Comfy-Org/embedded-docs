@@ -8,7 +8,7 @@ PixVerse V6 Text to Video genera un video da un prompt testuale utilizzando il m
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Impostazioni del modello e di generazione. Seleziona il modello e configura le sue opzioni di generazione. | DYNAMIC_COMBO | Sì | "PixVerse V6"<br>"PixVerse V6 Max" |
+| `modello` | Impostazioni del modello e di generazione. Seleziona il modello e configura le sue opzioni di generazione. | DYNAMIC_COMBO | Sì | "PixVerse V6"<br>"PixVerse V6 Max" |
 
 ### Input di PixVerse V6
 

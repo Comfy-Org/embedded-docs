@@ -6,8 +6,8 @@ Questo nodo prende un elenco di video e li riordina casualmente. Utilizza un see
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `videos` | Elenco di video da mescolare. | VIDEO | Sì | Elenco di input video |
-| `seed` | Seed casuale per il mescolamento (predefinito: 0). | INT | No | da 0 a 18446744073709551615 |
+| `video` | Elenco di video da mescolare. | VIDEO | Sì | Elenco di input video |
+| `seme` | Seed casuale per il mescolamento (predefinito: 0). | INT | No | da 0 a 18446744073709551615 |
 
 Nota: il valore del seed viene ridotto modulo 4294967295 (2^32 - 1) prima di essere utilizzato. Di conseguenza, i seed che differiscono per un multiplo di 4294967295 producono lo stesso ordine di output.
 

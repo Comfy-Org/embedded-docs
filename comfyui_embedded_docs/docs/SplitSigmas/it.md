@@ -7,7 +7,7 @@ Il nodo SplitSigmas è progettato per suddividere una sequenza di valori sigma i
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
 | `sigmas` | Il parametro `sigmas` rappresenta la sequenza di valori sigma da suddividere. È essenziale per determinare il punto di suddivisione e le due sequenze risultanti di valori sigma, influenzando l'esecuzione e i risultati del nodo. | `SIGMAS` |
-| `step` | Il parametro `step` specifica l'indice in corrispondenza del quale la sequenza sigma deve essere suddivisa. Svolge un ruolo critico nel definire il confine tra le due sequenze sigma risultanti, influenzando la funzionalità del nodo e le caratteristiche dell'output. | `INT` |
+| `passo` | Il parametro `step` specifica l'indice in corrispondenza del quale la sequenza sigma deve essere suddivisa. Svolge un ruolo critico nel definire il confine tra le due sequenze sigma risultanti, influenzando la funzionalità del nodo e le caratteristiche dell'output. | `INT` |
 
 ## Output
 

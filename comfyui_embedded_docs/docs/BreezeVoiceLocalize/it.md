@@ -6,8 +6,8 @@ Crea una copia di una voce che parla nativamente un'altra lingua, invece di legg
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `voice` | Voce Breeze da copiare. | BREEZE_VOICE | Sì | - |
-| `language` | Lingua parlata dalla nuova voce. Predefinito: `"English"`. | COMBO | Sì | Più opzioni disponibili |
+| `voce` | Voce Breeze da copiare. | BREEZE_VOICE | Sì | - |
+| `lingua` | Lingua parlata dalla nuova voce. Predefinito: `"English"`. | COMBO | Sì | Più opzioni disponibili |
 | `seed` | Controlla se il nodo viene rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: 42. | INT | No | 0 a 2147483647 |
 
 ## Output

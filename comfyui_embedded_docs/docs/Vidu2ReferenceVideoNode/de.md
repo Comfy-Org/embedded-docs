@@ -6,15 +6,15 @@ Der Node „Vidu2 Reference-to-Video Generation“ erstellt ein Video aus einem 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das KI-Modell, das für die Videogenerierung verwendet wird. | COMBO | Ja | `"viduq2"` |
-| `subjects` | Geben Sie für jedes Subjekt bis zu 3 Referenzbilder an (insgesamt 7 Bilder über alle Subjekte hinweg). Referenzieren Sie sie in Prompts über `@subject{subject_id}`. | AUTOGROW | Ja | N/A |
-| `prompt` | Die Textbeschreibung, die zur Steuerung der Videogenerierung verwendet wird. Wenn der Parameter `audio` aktiviert ist, enthält das Video generierte Sprache und Hintergrundmusik basierend auf diesem Prompt. | STRING | Ja | N/A |
-| `audio` | Wenn aktiviert, enthält das Video generierte Sprache und Hintergrundmusik basierend auf dem Prompt (Standard: `False`). | BOOLEAN | Nein | N/A |
-| `duration` | Die Länge des generierten Videos in Sekunden (Standard: `5`). | INT | Nein | 1 bis 10 |
-| `seed` | Eine Zahl, die verwendet wird, um die Zufälligkeit der Generierung für reproduzierbare Ergebnisse zu steuern (Standard: `1`). | INT | Nein | 0 bis 2147483647 |
-| `aspect_ratio` | Die Form des Videobildes. | COMBO | Nein | `"16:9"`<br>`"9:16"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
-| `resolution` | Die Pixelauflösung des Ausgabevideos (Standard: `"720p"`). | COMBO | Nein | `"720p"`<br>`"1080p"` |
-| `movement_amplitude` | Steuert die Bewegungsamplitude von Objekten im Bild (Standard: `"auto"`). | COMBO | Nein | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` |
+| `Modell` | Das KI-Modell, das für die Videogenerierung verwendet wird. | COMBO | Ja | `"viduq2"` |
+| `Subjekte` | Geben Sie für jedes Subjekt bis zu 3 Referenzbilder an (insgesamt 7 Bilder über alle Subjekte hinweg). Referenzieren Sie sie in Prompts über `@subject{subject_id}`. | AUTOGROW | Ja | N/A |
+| `Prompt` | Die Textbeschreibung, die zur Steuerung der Videogenerierung verwendet wird. Wenn der Parameter `audio` aktiviert ist, enthält das Video generierte Sprache und Hintergrundmusik basierend auf diesem Prompt. | STRING | Ja | N/A |
+| `Audio` | Wenn aktiviert, enthält das Video generierte Sprache und Hintergrundmusik basierend auf dem Prompt (Standard: `False`). | BOOLEAN | Nein | N/A |
+| `Dauer` | Die Länge des generierten Videos in Sekunden (Standard: `5`). | INT | Nein | 1 bis 10 |
+| `Seed` | Eine Zahl, die verwendet wird, um die Zufälligkeit der Generierung für reproduzierbare Ergebnisse zu steuern (Standard: `1`). | INT | Nein | 0 bis 2147483647 |
+| `Seitenverhältnis` | Die Form des Videobildes. | COMBO | Nein | `"16:9"`<br>`"9:16"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
+| `Auflösung` | Die Pixelauflösung des Ausgabevideos (Standard: `"720p"`). | COMBO | Nein | `"720p"`<br>`"1080p"` |
+| `Bewegungsamplitude` | Steuert die Bewegungsamplitude von Objekten im Bild (Standard: `"auto"`). | COMBO | Nein | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` |
 
 **Einschränkungen:**
 

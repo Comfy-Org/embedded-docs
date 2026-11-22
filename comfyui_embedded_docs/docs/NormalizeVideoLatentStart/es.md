@@ -6,9 +6,9 @@ Este nodo ajusta los primeros fotogramas de un latente de video para que se pare
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `latent` | La representación latente del video que se va a procesar. | LATENT | Sí | - |
-| `start_frame_count` | Número de fotogramas latentes que se van a normalizar, contados desde el inicio (predeterminado: 4). | INT | Sí | 1 a 16384 (resolución máxima) |
-| `reference_frame_count` | Número de fotogramas latentes posteriores a los fotogramas iniciales que se usarán como referencia (predeterminado: 5). | INT | Sí | 1 a 16384 (resolución máxima) |
+| `latente` | La representación latente del video que se va a procesar. | LATENT | Sí | - |
+| `conteo_de_fotogramas_iniciales` | Número de fotogramas latentes que se van a normalizar, contados desde el inicio (predeterminado: 4). | INT | Sí | 1 a 16384 (resolución máxima) |
+| `conteo_de_fotogramas_de_referencia` | Número de fotogramas latentes posteriores a los fotogramas iniciales que se usarán como referencia (predeterminado: 5). | INT | Sí | 1 a 16384 (resolución máxima) |
 
 **Nota:** Los fotogramas de referencia se toman justo después de los fotogramas de `start_frame_count`. Si hay menos fotogramas disponibles que los solicitados por `reference_frame_count`, el nodo usa tantos como haya disponibles (como máximo uno menos que el recuento total de fotogramas del latente). Si el latente de video tiene solo 1 fotograma, no se realiza ninguna normalización y se devuelve el latente original sin cambios.
 

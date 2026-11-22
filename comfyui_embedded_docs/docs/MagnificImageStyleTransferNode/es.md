@@ -6,17 +6,17 @@ Este nodo aplica el estilo visual de una imagen de referencia a tu imagen de ent
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `image` | La imagen a la que se le aplicará la transferencia de estilo. | IMAGE | Sí | - |
-| `reference_image` | La imagen de referencia de la cual extraer el estilo. | IMAGE | Sí | - |
+| `imagen` | La imagen a la que se le aplicará la transferencia de estilo. | IMAGE | Sí | - |
+| `imagen_de_referencia` | La imagen de referencia de la cual extraer el estilo. | IMAGE | Sí | - |
 | `prompt` | Un texto opcional para guiar la transferencia de estilo. | STRING | No | - |
-| `style_strength` | Porcentaje de intensidad del estilo (valor predeterminado: 100). | INT | No | 0 a 100 |
-| `structure_strength` | Mantiene la estructura de la imagen original (valor predeterminado: 50). | INT | No | 0 a 100 |
+| `fuerza_de_estilo` | Porcentaje de intensidad del estilo (valor predeterminado: 100). | INT | No | 0 a 100 |
+| `fuerza_de_estructura` | Mantiene la estructura de la imagen original (valor predeterminado: 50). | INT | No | 0 a 100 |
 | `flavor` | Sabor de la transferencia de estilo. | COMBO | No | "faithful"<br>"gen_z"<br>"psychedelia"<br>"detaily"<br>"clear"<br>"donotstyle"<br>"donotstyle_sharp" |
 | `engine` | Selección del motor de procesamiento. | COMBO | No | "balanced"<br>"definio"<br>"illusio"<br>"3d_cartoon"<br>"colorful_anime"<br>"caricature"<br>"real"<br>"super_real"<br>"softy" |
-| `portrait_mode` | Activar el modo retrato para mejoras faciales. | COMBO | No | "disabled"<br>"enabled" |
+| `modo_retrato` | Activar el modo retrato para mejoras faciales. | COMBO | No | "disabled"<br>"enabled" |
 | `portrait_style` | Estilo visual aplicado a las imágenes de retrato. Esta entrada solo está disponible cuando `portrait_mode` está configurado en "enabled". | COMBO | No | "standard"<br>"pop"<br>"super_pop" |
 | `portrait_beautifier` | Intensidad de embellecimiento facial en retratos. Esta entrada solo está disponible cuando `portrait_mode` está configurado en "enabled". | COMBO | No | "none"<br>"beautify_face"<br>"beautify_face_max" |
-| `fixed_generation` | Cuando está desactivado, se espera que cada generación introduzca un grado de aleatoriedad, lo que genera resultados más diversos (valor predeterminado: True). | BOOLEAN | No | - |
+| `generación_fija` | Cuando está desactivado, se espera que cada generación introduzca un grado de aleatoriedad, lo que genera resultados más diversos (valor predeterminado: True). | BOOLEAN | No | - |
 
 **Restricciones:**
 

@@ -6,7 +6,7 @@ Der Node LoraLoaderBypass wendet eine LoRA (Low-Rank Adaptation) auf ein Diffusi
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Diffusionsmodell, auf das die LoRA angewendet wird. | MODEL | Ja | - |
+| `Modell` | Das Diffusionsmodell, auf das die LoRA angewendet wird. | MODEL | Ja | - |
 | `clip` | Das CLIP-Modell, auf das die LoRA angewendet wird. | CLIP | Ja | - |
 | `lora_name` | Der Name der LoRA. Verfügbare LoRA-Dateien werden aus dem Ordner `loras` geladen. | COMBO | Ja | Liste der verfügbaren LoRA-Dateien |
 | `strength_model` | Wie stark das Diffusionsmodell verändert wird. Dieser Wert kann negativ sein (Standard: 1.0). | FLOAT | Ja | -100.0 bis 100.0 (Schritt: 0.01) |

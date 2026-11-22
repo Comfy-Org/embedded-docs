@@ -6,19 +6,19 @@ Genera modelli 3D in modo sincrono basandosi su una singola immagine usando l'AP
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | L'immagine di input usata per generare il modello 3D. È necessario fornire un'immagine, altrimenti il nodo genera un errore. | IMAGE | Sì | - |
-| `model_version` | La versione del modello da usare per la generazione. | COMBO | No | `"v1.4"`<br>`"v3.0"`<br>`"v3.5"`<br>`"v3.6"` |
-| `style` | Non è più supportato da Tripo e viene ignorato. Mantenuto per i flussi di lavoro precedenti. (predefinito: `"None"`) | COMBO | No | `"None"`<br>`"realistic"`<br>`"cartoon"`<br>`"sculpture"`<br>`"low_poly"` |
+| `immagine` | L'immagine di input usata per generare il modello 3D. È necessario fornire un'immagine, altrimenti il nodo genera un errore. | IMAGE | Sì | - |
+| `versione modello` | La versione del modello da usare per la generazione. | COMBO | No | `"v1.4"`<br>`"v3.0"`<br>`"v3.5"`<br>`"v3.6"` |
+| `stile` | Non è più supportato da Tripo e viene ignorato. Mantenuto per i flussi di lavoro precedenti. (predefinito: `"None"`) | COMBO | No | `"None"`<br>`"realistic"`<br>`"cartoon"`<br>`"sculpture"`<br>`"low_poly"` |
 | `texture` | Genera mappe di texture. Se disattivato restituisce solo la geometria e ignora `pbr`. (predefinito: True) | BOOLEAN | No | True<br>False |
 | `pbr` | Mappe dei materiali PBR (colore base, metallico, rugosità, normale). Richiede `texture`. (predefinito: True) | BOOLEAN | No | True<br>False |
-| `model_seed` | Seme casuale per la generazione del modello. (predefinito: 42) | INT | No | da 0 a 2147483647 |
-| `orientation` | Impostazione dell'orientamento per il modello generato. (predefinito: `"default"`) | COMBO | No | `"default"`<br>`"front"`<br>`"back"`<br>`"left"`<br>`"right"`<br>`"top"`<br>`"bottom"` |
-| `texture_seed` | Seme casuale per la generazione delle texture. (predefinito: 42) | INT | No | da 0 a 2147483647 |
-| `texture_quality` | Livello di qualità per la generazione delle texture: `detailed` = texture HD, `extreme` = texture Ultra 8K. (predefinito: `"standard"`) | COMBO | No | `"standard"`<br>`"detailed"`<br>`"extreme"` |
-| `texture_alignment` | Metodo di allineamento per la mappatura delle texture. (predefinito: `"original_image"`) | COMBO | No | `"original_image"`<br>`"geometry"` |
-| `face_limit` | Numero massimo di facce. -1 lascia che Tripo scelga in modo adattivo (circa 1,4M di facce su v3.x standard, 2M su detailed). Tripo applica limiti silenziosamente: v2.5 a 500.000, mesh quad a 150.000. (predefinito: -1) | INT | No | da -1 a 2000000 |
+| `seme modello` | Seme casuale per la generazione del modello. (predefinito: 42) | INT | No | da 0 a 2147483647 |
+| `orientamento` | Impostazione dell'orientamento per il modello generato. (predefinito: `"default"`) | COMBO | No | `"default"`<br>`"front"`<br>`"back"`<br>`"left"`<br>`"right"`<br>`"top"`<br>`"bottom"` |
+| `seme texture` | Seme casuale per la generazione delle texture. (predefinito: 42) | INT | No | da 0 a 2147483647 |
+| `qualità texture` | Livello di qualità per la generazione delle texture: `detailed` = texture HD, `extreme` = texture Ultra 8K. (predefinito: `"standard"`) | COMBO | No | `"standard"`<br>`"detailed"`<br>`"extreme"` |
+| `allineamento texture` | Metodo di allineamento per la mappatura delle texture. (predefinito: `"original_image"`) | COMBO | No | `"original_image"`<br>`"geometry"` |
+| `limite facce` | Numero massimo di facce. -1 lascia che Tripo scelga in modo adattivo (circa 1,4M di facce su v3.x standard, 2M su detailed). Tripo applica limiti silenziosamente: v2.5 a 500.000, mesh quad a 150.000. (predefinito: -1) | INT | No | da -1 a 2000000 |
 | `quad` | Output mesh quad. Tripo fornisce le mesh quad come FBX, quindi il risultato arriva sull'output FBX e l'output GLB rimane vuoto. (predefinito: False) | BOOLEAN | No | True<br>False |
-| `geometry_quality` | Livello di qualità per la generazione della geometria. (predefinito: `"standard"`) | COMBO | No | `"standard"`<br>`"detailed"` |
+| `qualità geometria` | Livello di qualità per la generazione della geometria. (predefinito: `"standard"`) | COMBO | No | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Mesh low-poly con topologia pulita in stile artigianale (500-20.000 facce, quad 500-10.000). Ideale per soggetti semplici; quelli complessi potrebbero fallire. (predefinito: False) | BOOLEAN | No | True<br>False |
 | `auto_size` | Ridimensiona i modelli con texture alla loro dimensione reale in metri. Tripo memorizza la dimensione come trasformazione di scena del modello e la incorpora quando il modello viene convertito, sottoposto a rig o retargeting; ignorato senza texture. (predefinito: True) | BOOLEAN | No | True<br>False |
 

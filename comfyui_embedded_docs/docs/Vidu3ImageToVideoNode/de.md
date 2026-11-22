@@ -8,10 +8,10 @@ Der Node „Vidu Q3 Image-to-Video Generation“ erstellt eine Videosequenz ausg
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modell zur Videogenerierung. | DYNAMIC_COMBO | Ja | `"viduq3-pro"`<br>`"viduq3-turbo"` |
-| `image` | Ein Bild, das als Startframe des generierten Videos verwendet wird. | IMAGE | Ja | - |
-| `prompt` | Ein optionaler Text-Prompt für die Videogenerierung (max. 2000 Zeichen) (Standard: leer). | STRING | Ja | - |
-| `seed` | Der Seed-Wert, der verwendet wird, um die Zufälligkeit der Generierung zu steuern (Standard: 1). | INT | Ja | 0 bis 2147483647 |
+| `Modell` | Modell zur Videogenerierung. | DYNAMIC_COMBO | Ja | `"viduq3-pro"`<br>`"viduq3-turbo"` |
+| `Bild` | Ein Bild, das als Startframe des generierten Videos verwendet wird. | IMAGE | Ja | - |
+| `Prompt` | Ein optionaler Text-Prompt für die Videogenerierung (max. 2000 Zeichen) (Standard: leer). | STRING | Ja | - |
+| `Seed` | Der Seed-Wert, der verwendet wird, um die Zufälligkeit der Generierung zu steuern (Standard: 1). | INT | Ja | 0 bis 2147483647 |
 
 ### viduq3-pro Eingaben
 

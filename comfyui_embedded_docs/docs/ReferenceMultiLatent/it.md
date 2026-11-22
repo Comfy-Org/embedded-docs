@@ -8,11 +8,11 @@ Questo nodo codifica una o più immagini di riferimento e aggiunge i loro latent
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | Il condizionamento positivo da modificare con i latent di riferimento. | CONDITIONING | Sì | - |
-| `negative` | Condizionamento negativo opzionale che riceve gli stessi latent di riferimento. Lascialo scollegato per riutilizzare il condizionamento positivo modificato sull'output `negative`. | CONDITIONING | No | - |
+| `positivo` | Il condizionamento positivo da modificare con i latent di riferimento. | CONDITIONING | Sì | - |
+| `negativo` | Condizionamento negativo opzionale che riceve gli stessi latent di riferimento. Lascialo scollegato per riutilizzare il condizionamento positivo modificato sull'output `negative`. | CONDITIONING | No | - |
 | `vae` | Il VAE utilizzato per codificare le immagini di riferimento collegate. Quando non è collegato alcun VAE, le immagini di riferimento vengono ignorate. | VAE | No | - |
-| `resolution` | Come viene preparata ogni immagine di riferimento prima della codifica. `"keep resolution"` la codifica alle dimensioni in ingresso; `"resize"` la ridimensiona a un numero target di megapixel preservando le proporzioni, il che fa comparire `megapixels`. (predefinito: "keep resolution") | DYNAMIC_COMBO | Sì | `"keep resolution"`<br>`"resize"` |
-| `images` | Slot espandibile: collega una o più immagini di riferimento (`image_1`, `image_2`, ...) da usare come riferimenti. Le immagini vengono codificate nell'ordine degli slot e aggiunte al condizionamento in quell'ordine. | IMAGE | No | Da 1 a 100 |
+| `risoluzione` | Come viene preparata ogni immagine di riferimento prima della codifica. `"keep resolution"` la codifica alle dimensioni in ingresso; `"resize"` la ridimensiona a un numero target di megapixel preservando le proporzioni, il che fa comparire `megapixels`. (predefinito: "keep resolution") | DYNAMIC_COMBO | Sì | `"keep resolution"`<br>`"resize"` |
+| `immagini` | Slot espandibile: collega una o più immagini di riferimento (`image_1`, `image_2`, ...) da usare come riferimenti. Le immagini vengono codificate nell'ordine degli slot e aggiunte al condizionamento in quell'ordine. | IMAGE | No | Da 1 a 100 |
 
 ### Input di ridimensionamento
 

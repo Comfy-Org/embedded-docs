@@ -6,8 +6,8 @@ TomePatchModel applica Token Merging (ToMe) a un modello di diffusione per ridur
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello di diffusione a cui applicare il token merging | MODEL | Sì | - |
-| `ratio` | La proporzione di token da unire (predefinito: 0.3). Valori più alti uniscono più token, il che può offrire una maggiore accelerazione ma potenzialmente una qualità inferiore. | FLOAT | Sì | 0.0 - 1.0 |
+| `modello` | Il modello di diffusione a cui applicare il token merging | MODEL | Sì | - |
+| `rapporto` | La proporzione di token da unire (predefinito: 0.3). Valori più alti uniscono più token, il che può offrire una maggiore accelerazione ma potenzialmente una qualità inferiore. | FLOAT | Sì | 0.0 - 1.0 |
 
 Nota: se il numero di token in un blocco di attenzione è sufficientemente piccolo da non richiedere downsampling, le funzioni di merging vengono sostituite con no-op e il modello viene eseguito invariato per quel blocco.
 

@@ -17,13 +17,13 @@ Diese Auflösungsoptionen werden von Portrait Restore Model (1x), Portrait Resto
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model.resolution` | Die Zielauflösung für das verbesserte Video. Wenn `"original"` ausgewählt wird, bleibt die Auflösung des Eingabevideos erhalten. | COMBO | Ja | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"`<br>`"8K"` |
+| `resolution` | Die Zielauflösung für das verbesserte Video. Wenn `"original"` ausgewählt wird, bleibt die Auflösung des Eingabevideos erhalten. | COMBO | Ja | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"`<br>`"8K"` |
 
 ### Generative Model (1x) Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model.resolution` | Die Zielauflösung für das verbesserte Video. Wenn `"original"` ausgewählt wird, bleibt die Auflösung des Eingabevideos erhalten. Die Option `"8K"` ist für dieses Modell nicht verfügbar. | COMBO | Ja | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"` |
+| `resolution` | Die Zielauflösung für das verbesserte Video. Wenn `"original"` ausgewählt wird, bleibt die Auflösung des Eingabevideos erhalten. Die Option `"8K"` ist für dieses Modell nicht verfügbar. | COMBO | Ja | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"` |
 
 **Hinweise:**
 

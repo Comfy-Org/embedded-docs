@@ -6,14 +6,14 @@ El nodo SUPIRApply aplica un parche de modelo SUPIR a un modelo de difusión. Ut
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de difusión base al que se aplicará el parche SUPIR. | MODEL | Sí | - |
-| `model_patch` | El parche de modelo SUPIR que contiene los pesos y la configuración para modificar el modelo. | MODEL_PATCH | Sí | - |
+| `modelo` | El modelo de difusión base al que se aplicará el parche SUPIR. | MODEL | Sí | - |
+| `parche_del_modelo` | El parche de modelo SUPIR que contiene los pesos y la configuración para modificar el modelo. | MODEL_PATCH | Sí | - |
 | `vae` | El VAE (autoencoder variacional) utilizado para codificar la imagen de entrada en una representación latente. | VAE | Sí | - |
-| `image` | La imagen de entrada utilizada para guiar el proceso de generación. Solo se utilizan los primeros tres canales de color (RGB). | IMAGE | Sí | - |
-| `strength_start` | Intensidad del control al inicio del muestreo (sigma alta). La influencia de la guía de la imagen comienza en este valor. (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 10.0 |
-| `strength_end` | Intensidad del control al final del muestreo (sigma baja). Se interpola linealmente desde el valor inicial. La influencia de la guía de la imagen termina en este valor. (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 10.0 |
-| `restore_cfg` | Atrae la salida desruidificada hacia el latente de entrada. Mayor = mayor fidelidad a la entrada. 0 para deshabilitar. (predeterminado: 4.0, configuración avanzada) | FLOAT | Sí | 0.0 - 20.0 |
-| `restore_cfg_s_tmin` | Umbral de sigma por debajo del cual se deshabilita `restore_cfg`. (predeterminado: 0.05, configuración avanzada) | FLOAT | Sí | 0.0 - 1.0 |
+| `imagen` | La imagen de entrada utilizada para guiar el proceso de generación. Solo se utilizan los primeros tres canales de color (RGB). | IMAGE | Sí | - |
+| `fuerza_inicial` | Intensidad del control al inicio del muestreo (sigma alta). La influencia de la guía de la imagen comienza en este valor. (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 10.0 |
+| `fuerza_final` | Intensidad del control al final del muestreo (sigma baja). Se interpola linealmente desde el valor inicial. La influencia de la guía de la imagen termina en este valor. (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 10.0 |
+| `restaurar_cfg` | Atrae la salida desruidificada hacia el latente de entrada. Mayor = mayor fidelidad a la entrada. 0 para deshabilitar. (predeterminado: 4.0, configuración avanzada) | FLOAT | Sí | 0.0 - 20.0 |
+| `restaurar_cfg_s_tmin` | Umbral de sigma por debajo del cual se deshabilita `restore_cfg`. (predeterminado: 0.05, configuración avanzada) | FLOAT | Sí | 0.0 - 1.0 |
 
 *Nota:* La entrada `image` se procesa para extraer solo los canales RGB. Si se proporciona una imagen con canal alfa, el canal alfa se ignora.
 

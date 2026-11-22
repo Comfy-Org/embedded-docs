@@ -19,14 +19,14 @@ El nodo TrainLoraNode crea y entrena un modelo LoRA (Adaptación de Bajo Rango) 
 | `semilla` | La semilla a utilizar para el entrenamiento (utilizada en el generador para la inicialización de pesos LoRA y el muestreo de ruido) (predeterminado: 0). | INT | Sí | 0-18446744073709551615 |
 | `tipo_datos_entrenamiento` | El tipo de dato a utilizar para el entrenamiento. 'none' preserva el tipo de dato de cómputo nativo del modelo en lugar de sobrescribirlo. Para modelos fp16, GradScaler se habilita automáticamente (predeterminado: "bf16"). | COMBO | Sí | "bf16"<br>"fp32"<br>"none" |
 | `tipo_datos_lora` | El tipo de dato a utilizar para el LoRA (predeterminado: "bf16"). | COMBO | Sí | "bf16"<br>"fp32" |
-| `quantized_backward` | Al usar training_dtype 'none' y entrenar en un modelo cuantizado, realiza la retropropagación con multiplicación de matrices cuantizada cuando está habilitado (predeterminado: False). | BOOLEAN | Sí | - |
+| `cuantizado_hacia_atrás` | Al usar training_dtype 'none' y entrenar en un modelo cuantizado, realiza la retropropagación con multiplicación de matrices cuantizada cuando está habilitado (predeterminado: False). | BOOLEAN | Sí | - |
 | `algoritmo` | El algoritmo a utilizar para el entrenamiento. | COMBO | Sí | Múltiples opciones disponibles |
 | `verificación_gradiente` | Usar puntos de control de gradiente para el entrenamiento (predeterminado: True). | BOOLEAN | Sí | - |
-| `checkpoint_depth` | Nivel de profundidad para los puntos de control de gradiente (predeterminado: 1). | INT | Sí | 1-5 |
+| `profundidad_de_checkpoint` | Nivel de profundidad para los puntos de control de gradiente (predeterminado: 1). | INT | Sí | 1-5 |
 | `offloading` | Descargar los pesos del modelo a la CPU durante el entrenamiento para ahorrar memoria de GPU (predeterminado: False). | BOOLEAN | Sí | - |
 | `lora_existente` | El LoRA existente al que añadir. Establecer en None para un nuevo LoRA (predeterminado: "[None]"). | COMBO | Sí | Múltiples opciones disponibles |
-| `bucket_mode` | Habilitar el modo de cubeta de resolución. Cuando está habilitado, espera latentes pre-agrupados en cubetas del nodo ResolutionBucket (predeterminado: False). | BOOLEAN | Sí | - |
-| `bypass_mode` | Habilitar el modo de derivación para el entrenamiento. Cuando está habilitado, los adaptadores se aplican mediante hooks directos en lugar de modificación de pesos. Útil para modelos cuantizados donde los pesos no se pueden modificar directamente (predeterminado: False). | BOOLEAN | Sí | - |
+| `modo_de_cubeta` | Habilitar el modo de cubeta de resolución. Cuando está habilitado, espera latentes pre-agrupados en cubetas del nodo ResolutionBucket (predeterminado: False). | BOOLEAN | Sí | - |
+| `modo_de_bypass` | Habilitar el modo de derivación para el entrenamiento. Cuando está habilitado, los adaptadores se aplican mediante hooks directos en lugar de modificación de pesos. Útil para modelos cuantizados donde los pesos no se pueden modificar directamente (predeterminado: False). | BOOLEAN | Sí | - |
 
 **Nota:** El número de entradas de condicionamiento positivo debe coincidir con el número de imágenes latentes. Si solo se proporciona un condicionamiento positivo con múltiples imágenes, se repetirá automáticamente para todas las imágenes.
 

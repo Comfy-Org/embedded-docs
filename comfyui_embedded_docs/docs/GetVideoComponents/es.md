@@ -6,7 +6,7 @@ El nodo Get Video Components extrae todos los elementos principales de un archiv
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `video` | El video del que se extraerán los componentes. | VIDEO | Sí | - |
+| `vídeo` | El video del que se extraerán los componentes. | VIDEO | Sí | - |
 
 ## Salidas
 

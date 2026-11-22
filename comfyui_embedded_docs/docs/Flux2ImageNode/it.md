@@ -8,7 +8,7 @@ Genera immagini utilizzando il modello Flux.2 [pro] o Flux.2 [max] a partire da 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | La versione del modello Flux.2 da utilizzare. La selezione di un modello sblocca parametri aggiuntivi per larghezza, altezza e immagini di riferimento opzionali. | DYNAMIC_COMBO | Sì | "Flux.2 [pro]"<br>"Flux.2 [max]" |
+| `modello` | La versione del modello Flux.2 da utilizzare. La selezione di un modello sblocca parametri aggiuntivi per larghezza, altezza e immagini di riferimento opzionali. | DYNAMIC_COMBO | Sì | "Flux.2 [pro]"<br>"Flux.2 [max]" |
 | `prompt` | Prompt per la generazione o la modifica dell'immagine (predefinito: stringa vuota). | STRING | Sì | N/A |
 | `seed` | Il seme casuale utilizzato per creare il rumore (predefinito: 0). Supporta l'opzione control-after-generate per randomizzare il valore dopo ogni esecuzione. | INT | Sì | da 0 a 18446744073709551615 |
 
@@ -18,8 +18,8 @@ Condivisi da entrambi i modelli — i set di parametri sono identici.
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model.width` | La larghezza dell'immagine generata in pixel (predefinito: 1024). | INT | Sì | da 256 a 2048 (passo 32) |
-| `model.height` | L'altezza dell'immagine generata in pixel (predefinito: 768). | INT | Sì | da 256 a 2048 (passo 32) |
+| `larghezza` | La larghezza dell'immagine generata in pixel (predefinito: 1024). | INT | Sì | da 256 a 2048 (passo 32) |
+| `altezza` | L'altezza dell'immagine generata in pixel (predefinito: 768). | INT | Sì | da 256 a 2048 (passo 32) |
 
 ### Input di riferimento
 

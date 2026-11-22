@@ -6,13 +6,13 @@ Deriva un conjunto de mapas de material PBR a partir de una imagen de textura ex
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `image` | La fotografía o renderizado del que se derivarán los mapas PBR. | IMAGE | Sí | - |
-| `basecolor` | Generar el mapa de color base (albedo). Predeterminado: True. | BOOLEAN | Sí | true<br>false |
+| `imagen` | La fotografía o renderizado del que se derivarán los mapas PBR. | IMAGE | Sí | - |
+| `color base` | Generar el mapa de color base (albedo). Predeterminado: True. | BOOLEAN | Sí | true<br>false |
 | `normal` | Generar el mapa de normal. Predeterminado: True. | BOOLEAN | Sí | true<br>false |
-| `roughness` | Generar el mapa de rugosidad. Predeterminado: False. | BOOLEAN | Sí | true<br>false |
-| `metalness` | Generar el mapa de metalicidad. Predeterminado: False. | BOOLEAN | Sí | true<br>false |
-| `height` | Generar el mapa de altura (desplazamiento). Predeterminado: False. | BOOLEAN | Sí | true<br>false |
-| `seed` | Semilla para una eliminación de ruido reproducible. Predeterminado: 42. | INT | Sí | 0 a 2147483646 |
+| `rugosidad` | Generar el mapa de rugosidad. Predeterminado: False. | BOOLEAN | Sí | true<br>false |
+| `metalidad` | Generar el mapa de metalicidad. Predeterminado: False. | BOOLEAN | Sí | true<br>false |
+| `altura` | Generar el mapa de altura (desplazamiento). Predeterminado: False. | BOOLEAN | Sí | true<br>false |
+| `semilla` | Semilla para una eliminación de ruido reproducible. Predeterminado: 42. | INT | Sí | 0 a 2147483646 |
 | `safety_checker` | Ejecutar la comprobación de seguridad de contenido del proveedor en la solicitud. Configuración avanzada. Predeterminado: False. | BOOLEAN | Sí | true<br>false |
 | `auto_downscale` | Reducir automáticamente la escala de una imagen de entrada cuyo lado más largo supere los 2048 píxeles, el límite de entrada del modelo, preservando la relación de aspecto; las imágenes más pequeñas se dejan tal como están. Deshabilítalo para generar un error con imágenes sobredimensionadas en su lugar. Configuración avanzada. Predeterminado: True. | BOOLEAN | No | true<br>false |
 

@@ -6,7 +6,7 @@ O VEED Dubbing traduz a fala de um vídeo para outro idioma com o VEED, clonando
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo de dublagem. `"standard"` é mais barato e retorna áudio mono, com espanhol latino-americano e português brasileiro; `"pro"` adiciona sotaques regionais e áudio estéreo. Selecionar um modelo revela `video`, `target_language`, `source_language` e `seed`. | DYNAMIC_COMBO | Sim | `"standard"`<br>`"pro"` |
+| `modelo` | Modelo de dublagem. `"standard"` é mais barato e retorna áudio mono, com espanhol latino-americano e português brasileiro; `"pro"` adiciona sotaques regionais e áudio estéreo. Selecionar um modelo revela `video`, `target_language`, `source_language` e `seed`. | DYNAMIC_COMBO | Sim | `"standard"`<br>`"pro"` |
 
 ### Entradas do standard
 

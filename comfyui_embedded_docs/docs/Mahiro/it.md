@@ -6,7 +6,7 @@ Il nodo Mahiro modifica la funzione di guidance per concentrarsi maggiormente su
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello da patchare con la funzione di guidance modificata | MODEL | Sì |  |
+| `modello` | Il modello da patchare con la funzione di guidance modificata | MODEL | Sì |  |
 
 ## Output
 

@@ -6,7 +6,7 @@ Genera un video con dialogo e audio sincronizzati da un prompt testuale usando H
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Versione del modello usata per la generazione. (predefinito: `"heygen-video-1"`) | DYNAMIC_COMBO | Sì | `"heygen-video-1"` |
+| `modello` | Versione del modello usata per la generazione. (predefinito: `"heygen-video-1"`) | DYNAMIC_COMBO | Sì | `"heygen-video-1"` |
 | `prompt` | Descrizione del video, incluso qualsiasi dialogo. Fai riferimento ai riferimenti collegati come @Image1, @Video1, @Audio1, numerati per tipo nell'ordine di input. (predefinito: stringa vuota) | STRING | Sì | 1 a 16000 caratteri |
 | `duration` | Durata del video di output in secondi. Più di 15 secondi è disponibile solo senza immagini e video di riferimento. (predefinito: 5) | INT | Sì | 5 a 30 |
 | `resolution` | Risoluzione di output. 1080p e 2k richiedono il rapporto d'aspetto 16:9 o 9:16; `"auto"` funziona a queste risoluzioni solo senza riferimenti. (predefinito: `"768p"`) | COMBO | Sì | `"768p"`<br>`"480p"`<br>`"1080p"`<br>`"2k"` |

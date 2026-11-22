@@ -6,7 +6,7 @@ Der FluxKontextMultiReferenceLatentMethod-Node aktualisiert Konditionierungsdate
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Die Konditionierungsdaten, die mit der Referenz-Latents-Methode modifiziert werden sollen | CONDITIONING | Ja | - |
+| `Konditionierung` | Die Konditionierungsdaten, die mit der Referenz-Latents-Methode modifiziert werden sollen | CONDITIONING | Ja | - |
 | `reference_latents_method` | Die Methode, die für die Verarbeitung von Referenz-Latents verwendet wird. Wenn ein Wert ausgewählt wird, der "uxo" oder "uso" enthält, wird er vor dem Speichern in "uxo" umgewandelt. Dieser Parameter ist als erweitert gekennzeichnet. | COMBO | Ja | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"`<br>`"index_timestep_zero_isolated"`<br>`"index_timestep_zero_text_start"` |
 
 ## Ausgaben

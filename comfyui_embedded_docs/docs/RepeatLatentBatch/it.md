@@ -6,8 +6,8 @@ Il nodo RepeatLatentBatch è progettato per replicare un determinato batch di ra
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `samples` | Il parametro 'samples' rappresenta le rappresentazioni latenti da replicare. È essenziale per definire i dati che saranno sottoposti a ripetizione. | `LATENT` |
-| `amount` | Il parametro 'amount' specifica il numero di volte in cui i campioni di input devono essere ripetuti. Influisce direttamente sulla dimensione del batch di output, incidendo così sul carico computazionale e sulla diversità dei dati generati. | `INT` |
+| `campioni` | Il parametro 'samples' rappresenta le rappresentazioni latenti da replicare. È essenziale per definire i dati che saranno sottoposti a ripetizione. | `LATENT` |
+| `quantità` | Il parametro 'amount' specifica il numero di volte in cui i campioni di input devono essere ripetuti. Influisce direttamente sulla dimensione del batch di output, incidendo così sul carico computazionale e sulla diversità dei dati generati. | `INT` |
 
 ## Output
 

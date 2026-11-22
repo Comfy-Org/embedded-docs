@@ -8,11 +8,11 @@ Dieser Node generiert ein Video, indem er einen Übergang zwischen einem Startbi
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modell zur Videogenerierung. Durch Auswahl einer Option werden zusätzliche Konfigurationsparameter für `resolution`, `duration` und `audio` angezeigt. | DYNAMIC_COMBO | Ja | `"viduq3-pro"`<br>`"viduq3-turbo"` |
+| `Modell` | Modell zur Videogenerierung. Durch Auswahl einer Option werden zusätzliche Konfigurationsparameter für `resolution`, `duration` und `audio` angezeigt. | DYNAMIC_COMBO | Ja | `"viduq3-pro"`<br>`"viduq3-turbo"` |
 | `first_frame` | Das Startbild der Videosequenz. | IMAGE | Ja | - |
 | `end_frame` | Das Endbild der Videosequenz. | IMAGE | Ja | - |
-| `prompt` | Prompt-Beschreibung (max. 2000 Zeichen). | STRING | Ja | Bis zu 2000 Zeichen |
-| `seed` | Seed-Wert zur Steuerung der Zufälligkeit der Generierung. Verfügt über eine Option zur Steuerung nach der Generierung (Standard: 1). | INT | Ja | 0 bis 2147483647 |
+| `Prompt` | Prompt-Beschreibung (max. 2000 Zeichen). | STRING | Ja | Bis zu 2000 Zeichen |
+| `Seed` | Seed-Wert zur Steuerung der Zufälligkeit der Generierung. Verfügt über eine Option zur Steuerung nach der Generierung (Standard: 1). | INT | Ja | 0 bis 2147483647 |
 
 ### viduq3-pro und viduq3-turbo Eingaben
 

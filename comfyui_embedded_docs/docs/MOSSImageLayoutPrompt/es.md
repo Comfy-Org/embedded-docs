@@ -7,9 +7,9 @@ Construye el prompt de diseño que MOSS-Image lee. Toma los elementos dibujados 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `prompt` | Descripción de la imagen completa. Se convierte en la descripción del diseño. | STRING | Sí | - |
-| `element` | Los elementos que se colocarán, tomados del nodo Create Bounding Boxes. Cada cuadro aporta su descripción; los cuadros de texto también aportan su texto, y los cuadros que llevan una paleta de colores la conservan. | ARRAY | Sí | - |
-| `width` | Ancho de la imagen generada en píxeles. Los cuadros se convierten a esta cuadrícula de píxeles, así que usa el tamaño de la imagen que planeas generar (predeterminado: 1024). | INT | Sí | 16 a 16384 (paso 16) |
-| `height` | Alto de la imagen generada en píxeles. Los cuadros se convierten a esta cuadrícula de píxeles, así que usa el tamaño de la imagen que planeas generar (predeterminado: 1024). | INT | Sí | 16 a 16384 (paso 16) |
+| `elemento` | Los elementos que se colocarán, tomados del nodo Create Bounding Boxes. Cada cuadro aporta su descripción; los cuadros de texto también aportan su texto, y los cuadros que llevan una paleta de colores la conservan. | ARRAY | Sí | - |
+| `anchura` | Ancho de la imagen generada en píxeles. Los cuadros se convierten a esta cuadrícula de píxeles, así que usa el tamaño de la imagen que planeas generar (predeterminado: 1024). | INT | Sí | 16 a 16384 (paso 16) |
+| `altura` | Alto de la imagen generada en píxeles. Los cuadros se convierten a esta cuadrícula de píxeles, así que usa el tamaño de la imagen que planeas generar (predeterminado: 1024). | INT | Sí | 16 a 16384 (paso 16) |
 | `character_boxes` | Números de los cuadros que se etiquetarán como personajes en lugar de objetos, tal como se etiquetan en la vista previa de Create Bounding Boxes, por ejemplo "1, 3". Se lee cada número de la cadena, por lo que cualquier separador funciona (predeterminado: vacío). | STRING | Sí | - |
 
 ## Salidas

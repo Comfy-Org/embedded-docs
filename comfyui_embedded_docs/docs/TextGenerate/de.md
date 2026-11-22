@@ -10,15 +10,15 @@ Der TextGenerate-Node verwendet ein CLIP-Modell, um Text basierend auf dem Promp
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `sampling_mode` | Steuert, ob während der Textgenerierung zufälliges Sampling verwendet wird. Bei Einstellung auf "on" werden zusätzliche Sampling-Parameter verfügbar. Bei Einstellung auf "off" generiert der Node Text ohne zufälliges Sampling. | DYNAMIC_COMBO | Ja | `"on"`<br>`"off"` |
+| `Sampling-Modus` | Steuert, ob während der Textgenerierung zufälliges Sampling verwendet wird. Bei Einstellung auf "on" werden zusätzliche Sampling-Parameter verfügbar. Bei Einstellung auf "off" generiert der Node Text ohne zufälliges Sampling. | DYNAMIC_COMBO | Ja | `"on"`<br>`"off"` |
 | `clip` | Das CLIP-Modell, das zum Tokenisieren des Prompts und zur Textgenerierung verwendet wird. | CLIP | Ja | N/A |
-| `prompt` | Der Text-Prompt, der die Generierung steuert. Dieses Feld unterstützt mehrere Zeilen und dynamische Prompts. Der Standardwert ist eine leere Zeichenkette. | STRING | Ja | N/A |
-| `image` | Ein optionales Bild, das zusammen mit dem Text-Prompt verwendet werden kann, um den generierten Text zu beeinflussen. | IMAGE | Nein | N/A |
-| `video` | Videoframes als Bild-Batch. Es wird von 24 FPS ausgegangen; intern auf die Framerate des Modells unterabgetastet. | IMAGE | Nein | N/A |
-| `audio` | Eine optionale Audioeingabe, die zusammen mit dem Text-Prompt verwendet werden kann, um den generierten Text zu beeinflussen. | AUDIO | Nein | N/A |
-| `max_length` | Die maximale Anzahl an Tokens, die das Modell generiert. Der Standardwert ist 512. | INT | Ja | 1 bis 32768 |
-| `thinking` | Im Thinking-Modus arbeiten, wenn das Modell dies unterstützt. Der Standardwert ist False. | BOOLEAN | Nein | True oder False |
-| `use_default_template` | Verwendet den integrierten System-Prompt/das integrierte Template, falls das Modell eines besitzt. Der Standardwert ist True. Dies ist ein erweiterter Parameter. | BOOLEAN | Nein | True oder False |
+| `Prompt` | Der Text-Prompt, der die Generierung steuert. Dieses Feld unterstützt mehrere Zeilen und dynamische Prompts. Der Standardwert ist eine leere Zeichenkette. | STRING | Ja | N/A |
+| `Bild` | Ein optionales Bild, das zusammen mit dem Text-Prompt verwendet werden kann, um den generierten Text zu beeinflussen. | IMAGE | Nein | N/A |
+| `Video` | Videoframes als Bild-Batch. Es wird von 24 FPS ausgegangen; intern auf die Framerate des Modells unterabgetastet. | IMAGE | Nein | N/A |
+| `Audio` | Eine optionale Audioeingabe, die zusammen mit dem Text-Prompt verwendet werden kann, um den generierten Text zu beeinflussen. | AUDIO | Nein | N/A |
+| `Maximale Länge` | Die maximale Anzahl an Tokens, die das Modell generiert. Der Standardwert ist 512. | INT | Ja | 1 bis 32768 |
+| `Thinking` | Im Thinking-Modus arbeiten, wenn das Modell dies unterstützt. Der Standardwert ist False. | BOOLEAN | Nein | True oder False |
+| `Standardvorlage verwenden` | Verwendet den integrierten System-Prompt/das integrierte Template, falls das Modell eines besitzt. Der Standardwert ist True. Dies ist ein erweiterter Parameter. | BOOLEAN | Nein | True oder False |
 | `mtp` | Spekulatives Decoding mit dem Multi-Token-Prediction-Kopf des Checkpoints. Hat ohne MTP-Gewichte keine Wirkung. `"auto"` passt Draft-Tiefe und -Breite an die beobachteten Token-Übereinstimmungen und die Ausführungskosten an, `"2"` bis `"5"` legen eine konstante Tiefe fest, die `tree`-Modi legen sowohl Breite als auch Tiefe fest. Gesampelte Ausgabe bleibt korrekt verteilt, unterscheidet sich jedoch bei gleichem Seed von der Nicht-MTP-Ausgabe (Standard: `"auto"`). | COMBO | Nein | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"tree2s1"`<br>`"tree2s2"`<br>`"tree3s1"`<br>`"tree4s1m8"` |
 | `system_prompt` | Ersetzt den System-Prompt im Chat-Template des Modells. Wird ignoriert, wenn das Standard-Template nicht verwendet wird. Eine STRING-Eingabe verbinden, anstatt im Node zu tippen (Standard: leer). | STRING | Nein | N/A |
 

@@ -6,7 +6,7 @@ Il nodo LoadImage è progettato per caricare e preelaborare immagini da un perco
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `image` | Il parametro 'image' specifica l'identificatore dell'immagine da caricare ed elaborare. È cruciale per determinare il percorso del file immagine e successivamente caricare l'immagine per la trasformazione e la normalizzazione. | COMBO[STRING] |
+| `immagine` | Il parametro 'image' specifica l'identificatore dell'immagine da caricare ed elaborare. È cruciale per determinare il percorso del file immagine e successivamente caricare l'immagine per la trasformazione e la normalizzazione. | COMBO[STRING] |
 
 ## Output
 

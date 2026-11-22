@@ -6,8 +6,8 @@ Il nodo RebatchLatents è progettato per riorganizzare un batch di rappresentazi
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `latents` | Il parametro `latents` rappresenta le rappresentazioni latenti di input da riorganizzare in batch. È fondamentale per determinare la struttura e il contenuto del batch di output. | `LATENT` |
-| `batch_size` | Il parametro `batch_size` specifica il numero desiderato di campioni per batch nell'output. Influisce direttamente sul raggruppamento e sulla suddivisione dei latenti di input in nuovi batch. | `INT` |
+| `latent` | Il parametro `latents` rappresenta le rappresentazioni latenti di input da riorganizzare in batch. È fondamentale per determinare la struttura e il contenuto del batch di output. | `LATENT` |
+| `dimensione batch` | Il parametro `batch_size` specifica il numero desiderato di campioni per batch nell'output. Influisce direttamente sul raggruppamento e sulla suddivisione dei latenti di input in nuovi batch. | `INT` |
 
 ## Output
 

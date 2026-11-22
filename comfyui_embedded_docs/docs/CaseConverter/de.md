@@ -6,8 +6,8 @@ Der Node „Case Converter“ wandelt Textzeichenfolgen in verschiedene Groß-/K
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `string` | Die Textzeichenfolge, die in ein anderes Groß-/Kleinschreibungsformat umgewandelt werden soll | STRING | Ja | - |
-| `mode` | Der anzuwendende Modus für die Groß-/Kleinschreibungsumwandlung (Standard: `"UPPERCASE"`) | STRING | Ja | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` |
+| `Zeichenfolge` | Die Textzeichenfolge, die in ein anderes Groß-/Kleinschreibungsformat umgewandelt werden soll | STRING | Ja | - |
+| `Modus` | Der anzuwendende Modus für die Groß-/Kleinschreibungsumwandlung (Standard: `"UPPERCASE"`) | STRING | Ja | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` |
 
 ## Ausgaben
 

@@ -8,7 +8,7 @@ HeyGen Avatar 6로 연결한 오디오를 사용해 인물이 말하는 비디�
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 모델 선택기로, 모델을 선택하면 아래에 해당 모델의 입력 항목이 표시됩니다. `"heygen-avatar-6-turbo"`는 더 저렴하고 빠른 등급입니다. | DYNAMIC_COMBO | 예 | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `모델` | 모델 선택기로, 모델을 선택하면 아래에 해당 모델의 입력 항목이 표시됩니다. `"heygen-avatar-6-turbo"`는 더 저렴하고 빠른 등급입니다. | DYNAMIC_COMBO | 예 | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
 
 ### `heygen-avatar-6` 입력
 

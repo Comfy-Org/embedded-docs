@@ -6,8 +6,8 @@ Il nodo Runway Aleph2 Keyframe ancora un'immagine di guida a un momento specific
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | L'immagine di guida da applicare nel momento scelto del video di input. | IMAGE | Sì | - |
-| `timing` | Come posizionare questa immagine sulla timeline del video di input. | COMBO | Sì | "Absolute seconds"<br>"Fraction of duration" |
+| `immagine` | L'immagine di guida da applicare nel momento scelto del video di input. | IMAGE | Sì | - |
+| `tempistica` | Come posizionare questa immagine sulla timeline del video di input. | COMBO | Sì | "Absolute seconds"<br>"Fraction of duration" |
 | `keyframes` | Keyframe precedenti opzionali da concatenare con questo. | KEYFRAME | No | - |
 
 ### Dettagli del parametro `timing`

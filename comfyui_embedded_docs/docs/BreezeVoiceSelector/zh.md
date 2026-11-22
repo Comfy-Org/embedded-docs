@@ -6,7 +6,7 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `language` | 精选语音所属的语言分组，或使用 `custom` 以手动输入 id。默认：`"English"`。 | DYNAMIC_COMBO | 是 | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
+| `语言` | 精选语音所属的语言分组，或使用 `custom` 以手动输入 id。默认：`"English"`。 | DYNAMIC_COMBO | 是 | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
 
 ### 语言 "English"、"Chinese" 和 "Japanese" 输入
 

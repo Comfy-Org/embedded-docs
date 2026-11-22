@@ -6,7 +6,7 @@ Dieser Node konvertiert ein Bild mit Ideogram Vector in ein bearbeitbares SVG. D
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Zu verwendendes Modell. Standard: `"ideogram-vector-1"`. | DYNAMIC_COMBO | Ja | `"ideogram-vector-1"` |
+| `Modell` | Zu verwendendes Modell. Standard: `"ideogram-vector-1"`. | DYNAMIC_COMBO | Ja | `"ideogram-vector-1"` |
 | `image` | Das zu konvertierende Bild. Eine Batch-Eingabe wird Bild für Bild konvertiert und die resultierenden SVGs werden zusammen zurückgegeben. | IMAGE | Ja | - |
 | `mode` | `"simple"` zeichnet weniger, größere Formen nach; `"default"` behält feinere Details bei. Standard: `"default"`. | COMBO | Ja | `"simple"`<br>`"default"` |
 

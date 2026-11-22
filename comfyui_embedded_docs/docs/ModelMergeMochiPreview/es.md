@@ -4,8 +4,8 @@
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model1` | El primer modelo a fusionar | MODEL | Sí | - |
-| `model2` | El segundo modelo a fusionar | MODEL | Sí | - |
+| `modelo1` | El primer modelo a fusionar | MODEL | Sí | - |
+| `modelo2` | El segundo modelo a fusionar | MODEL | Sí | - |
 | `pos_frequencies.` | Peso para la interpolación de frecuencias posicionales (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |
 | `t_embedder.` | Peso para la interpolación del codificador temporal (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |
 | `t5_y_embedder.` | Peso para la interpolación del codificador T5-Y (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |

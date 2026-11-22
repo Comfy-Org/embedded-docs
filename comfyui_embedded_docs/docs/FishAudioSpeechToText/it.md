@@ -7,7 +7,7 @@ Questo nodo trascrive l'audio in testo usando il servizio speech-to-text di Fish
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `audio` | Audio da trascrivere. | AUDIO | Sì | — |
-| `language` | Suggerimento di lingua ISO 639-1 (ad es. 'en', 'zh'). La lingua viene comunque rilevata automaticamente. Predefinito: "" (stringa vuota). | STRING | No | Qualsiasi codice lingua ISO 639-1, ad es. `en`, `zh`; stringa vuota per il rilevamento automatico |
+| `lingua` | Suggerimento di lingua ISO 639-1 (ad es. 'en', 'zh'). La lingua viene comunque rilevata automaticamente. Predefinito: "" (stringa vuota). | STRING | No | Qualsiasi codice lingua ISO 639-1, ad es. `en`, `zh`; stringa vuota per il rilevamento automatico |
 | `precise_timestamps` | Restituisce segmenti con timestamp a livello di parola. Predefinito: false. | BOOLEAN | No | true o false |
 
 Nota: Il parametro `language` è solo un suggerimento — la lingua viene sempre rilevata automaticamente dall'audio. Quando `precise_timestamps` è false (impostazione predefinita), i timestamp a livello di parola non vengono restituiti; quando è true, i segmenti di output includono timestamp a livello di parola.

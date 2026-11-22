@@ -7,13 +7,13 @@ Generate Text düğümü, bir istemden metin üretmek için bir CLIP modeli kull
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `clip` | İstemi tokenize etmek ve metni üretmek için kullanılan CLIP modeli. | CLIP | Evet | - |
-| `prompt` | Üretimi yönlendiren istem. Birden çok satırı ve dinamik istemleri destekler (varsayılan: boş dize). | STRING | Evet | - |
-| `images` | En fazla 50 görselden oluşan, `image1` ile `image50` arasındaki büyütülebilir grup; model için görsel bağlam olarak kullanılır. | AUTOGROW | Hayır | 0 ile 50 görsel arası |
-| `videos` | En fazla 100 video girdisinden oluşan, `video1` ile `video100` arasındaki büyütülebilir grup. Her video, 24 FPS olduğu varsayılan ve dahili olarak modelin kare hızına alt örneklenen bir kare grubudur. | AUTOGROW | Hayır | 0 ile 100 video arası |
-| `audios` | En fazla 100 ses girdisinden oluşan, `audio1` ile `audio100` arasındaki büyütülebilir grup; model için ses bağlamı olarak kullanılır. | AUTOGROW | Hayır | 0 ile 100 ses dosyası arası |
+| `istem` | Üretimi yönlendiren istem. Birden çok satırı ve dinamik istemleri destekler (varsayılan: boş dize). | STRING | Evet | - |
+| `görüntüler` | En fazla 50 görselden oluşan, `image1` ile `image50` arasındaki büyütülebilir grup; model için görsel bağlam olarak kullanılır. | AUTOGROW | Hayır | 0 ile 50 görsel arası |
+| `videolar` | En fazla 100 video girdisinden oluşan, `video1` ile `video100` arasındaki büyütülebilir grup. Her video, 24 FPS olduğu varsayılan ve dahili olarak modelin kare hızına alt örneklenen bir kare grubudur. | AUTOGROW | Hayır | 0 ile 100 video arası |
+| `sesler` | En fazla 100 ses girdisinden oluşan, `audio1` ile `audio100` arasındaki büyütülebilir grup; model için ses bağlamı olarak kullanılır. | AUTOGROW | Hayır | 0 ile 100 ses dosyası arası |
 | `max_length` | Üretilecek maksimum token sayısı (varsayılan: 512). | INT | Evet | 1 ile 32768 arası |
 | `sampling_mode` | `on` çıktıyı örnekler ve aşağıdaki örnekleme parametrelerini gösterir. `off` rastgele örnekleme olmadan açgözlü üretim yapar. | DYNAMIC_COMBO | Evet | `"on"`<br>`"off"` |
-| `thinking` | Model destekliyorsa düşünme modunda çalışır (varsayılan: False). | BOOLEAN | Hayır | True veya False |
+| `düşünme` | Model destekliyorsa düşünme modunda çalışır (varsayılan: False). | BOOLEAN | Hayır | True veya False |
 | `use_default_template` | Modelde varsa yerleşik sistem istemini veya sohbet şablonunu kullanır (varsayılan: True). Gelişmiş parametre. | BOOLEAN | Hayır | True veya False |
 | `mtp` | Checkpoint'in çoklu token tahmini başlığıyla spekülatif kod çözme. MTP ağırlıkları olmadan etkisi yoktur. `"auto"`, taslak derinliğini ve genişliğini gözlenen token eşleşmelerine ve yürütme maliyetine uyarlar; `"2"` ile `"5"` arası sabit bir taslak derinliği belirler; `tree` modları hem genişliği hem de derinliği sabitler. Örneklenen çıktı doğru dağılımda kalır ancak aynı seed için MTP olmayan çıktıdan farklıdır (varsayılan: `"auto"`). | COMBO | Hayır | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"tree2s1"`<br>`"tree2s2"`<br>`"tree3s1"`<br>`"tree4s1m8"` |
 | `system_prompt` | Modelin sohbet şablonundaki sistem istemini değiştirir. Varsayılan şablon kullanılmadığında yok sayılır. Düğümde yazmak yerine bir STRING girdisi bağlayın (varsayılan: boş). | STRING | Hayır | - |

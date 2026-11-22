@@ -6,14 +6,14 @@ Este nodo utiliza el modelo Kling AI para generar un nuevo video a partir de un 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model_name` | El modelo Kling específico que se usará para la generación de video (predeterminado: "kling-v3-omni"). | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` |
+| `nombre_del_modelo` | El modelo Kling específico que se usará para la generación de video (predeterminado: "kling-v3-omni"). | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` |
 | `prompt` | Un prompt de texto que describe el contenido del video. Puede incluir descripciones tanto positivas como negativas. | STRING | Sí | N/A |
-| `aspect_ratio` | La relación de aspecto deseada para el video generado. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `duration` | La duración del video generado en segundos (predeterminado: 3). | INT | Sí | 3 a 10 |
-| `reference_video` | Video que se usará como referencia. | VIDEO | Sí | N/A |
-| `keep_original_sound` | Determina si el audio del video de referencia se conserva en la salida (predeterminado: True). | BOOLEAN | Sí | N/A |
-| `reference_images` | Hasta 4 imágenes de referencia adicionales. | IMAGE | No | N/A |
-| `resolution` | La resolución para el video generado (predeterminado: "1080p"). | COMBO | No | `"1080p"`<br>`"720p"` |
+| `relación_de_aspecto` | La relación de aspecto deseada para el video generado. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `duración` | La duración del video generado en segundos (predeterminado: 3). | INT | Sí | 3 a 10 |
+| `vídeo_de_referencia` | Video que se usará como referencia. | VIDEO | Sí | N/A |
+| `mantener_sonido_original` | Determina si el audio del video de referencia se conserva en la salida (predeterminado: True). | BOOLEAN | Sí | N/A |
+| `imágenes_de_referencia` | Hasta 4 imágenes de referencia adicionales. | IMAGE | No | N/A |
+| `resolución` | La resolución para el video generado (predeterminado: "1080p"). | COMBO | No | `"1080p"`<br>`"720p"` |
 | `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). | INT | No | 0 a 2147483647 |
 
 **Restricciones de los parámetros:**

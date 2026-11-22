@@ -6,7 +6,7 @@ VEED Dubbing übersetzt die Sprache in einem Video mit VEED in eine andere Sprac
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Dubbing-Modell. `"standard"` ist günstiger und liefert Mono-Audio, mit lateinamerikanischem Spanisch und brasilianischem Portugiesisch; `"pro"` fügt regionale Akzente und Stereo-Audio hinzu. Bei Auswahl eines Modells werden `video`, `target_language`, `source_language` und `seed` eingeblendet. | DYNAMIC_COMBO | Ja | `"standard"`<br>`"pro"` |
+| `Modell` | Dubbing-Modell. `"standard"` ist günstiger und liefert Mono-Audio, mit lateinamerikanischem Spanisch und brasilianischem Portugiesisch; `"pro"` fügt regionale Akzente und Stereo-Audio hinzu. Bei Auswahl eines Modells werden `video`, `target_language`, `source_language` und `seed` eingeblendet. | DYNAMIC_COMBO | Ja | `"standard"`<br>`"pro"` |
 
 ### standard Eingaben
 

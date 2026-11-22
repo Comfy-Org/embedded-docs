@@ -6,8 +6,8 @@ Der Node Curve Editor bietet eine visuelle Oberfläche zum Anpassen und Feinabst
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `curve` | Die zu bearbeitende Eingabekurve. | CURVE | Ja | N/A |
-| `histogram` | Ein optionales Histogramm, das neben der Kurve als visuelle Referenz angezeigt wird. | HISTOGRAM | Nein | N/A |
+| `Kurve` | Die zu bearbeitende Eingabekurve. | CURVE | Ja | N/A |
+| `Histogramm` | Ein optionales Histogramm, das neben der Kurve als visuelle Referenz angezeigt wird. | HISTOGRAM | Nein | N/A |
 
 ## Ausgaben
 

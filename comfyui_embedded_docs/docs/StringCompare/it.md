@@ -6,10 +6,10 @@ Il nodo StringCompare confronta due stringhe di testo utilizzando diversi metodi
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `string_a` | La prima stringa da confrontare | STRING | Sì | - |
-| `string_b` | La seconda stringa con cui confrontare | STRING | Sì | - |
-| `mode` | Il metodo di confronto da usare (predefinito: "Starts With") | COMBO | Sì | "Starts With"<br>"Ends With"<br>"Equal" |
-| `case_sensitive` | Indica se considerare le differenze tra maiuscole e minuscole durante il confronto (predefinito: true) | BOOLEAN | No | - |
+| `stringa_a` | La prima stringa da confrontare | STRING | Sì | - |
+| `stringa_b` | La seconda stringa con cui confrontare | STRING | Sì | - |
+| `modalità` | Il metodo di confronto da usare (predefinito: "Starts With") | COMBO | Sì | "Starts With"<br>"Ends With"<br>"Equal" |
+| `distingui_maiuscole` | Indica se considerare le differenze tra maiuscole e minuscole durante il confronto (predefinito: true) | BOOLEAN | No | - |
 
 ## Output
 

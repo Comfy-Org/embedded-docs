@@ -8,8 +8,8 @@ Questo nodo ancora un'immagine guida a una posizione specifica sulla timeline de
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | Immagine guida da posizionare nel momento scelto del video di output. | IMAGE | Sì | - |
-| `position` | Come posizionare questa immagine sulla timeline del video di output. | DYNAMIC_COMBO | Sì | "Fraction of duration (0.0-1.0)"<br>"Absolute time (seconds)" |
+| `immagine` | Immagine guida da posizionare nel momento scelto del video di output. | IMAGE | Sì | - |
+| `posizione` | Come posizionare questa immagine sulla timeline del video di output. | DYNAMIC_COMBO | Sì | "Fraction of duration (0.0-1.0)"<br>"Absolute time (seconds)" |
 | `keyframes` | Keyframe precedenti opzionali da concatenare con questo. | LUMA_RAY32_KEYFRAME | No | - |
 
 ### Input di Fraction of duration (0.0-1.0)

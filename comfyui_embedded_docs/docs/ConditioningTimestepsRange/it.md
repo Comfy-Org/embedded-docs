@@ -6,8 +6,8 @@ Il nodo ConditioningTimestepsRange crea tre intervalli di timestep distinti per 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `start_percent` | La percentuale iniziale dell'intervallo di timestep (predefinito: 0.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `end_percent` | La percentuale finale dell'intervallo di timestep (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `percentuale_inizio` | La percentuale iniziale dell'intervallo di timestep (predefinito: 0.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `percentuale_fine` | La percentuale finale dell'intervallo di timestep (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
 
 ## Output
 

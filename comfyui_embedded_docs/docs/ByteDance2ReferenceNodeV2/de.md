@@ -8,9 +8,9 @@ ByteDance Seedance 2.5 Reference to Video erzeugt, bearbeitet oder erweitert Vid
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `model` | Modellauswahl. Seedance 2.5 für das neueste Modell, Videos bis zu 30 Sekunden und mp4-Ausgabe; Seedance 2.5 Draft für eine schnelle 480p-Vorschau, deren `draft_task_id`-Ausgabe das 1080p oder 4k-Final im Node ByteDance Seedance 2.5 Draft to Final Video rendert; Seedance 2.5 Flash für 480p- und 720p-Videos bis 30 Sekunden; Seedance 2.0 für maximale Qualität und 4k; Fast für Geschwindigkeitsoptimierung; Mini für die schnellste, kostengünstigste Generierung. Die Auswahl eines Modells ändert die unten angezeigten Eingabe-Widgets. | DYNAMIC_COMBO | Ja | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.5 Flash"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
-| `seed` | Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 0. | INT | Ja | 0 bis 2147483647 |
-| `watermark` | Gibt an, ob dem Video ein Wasserzeichen hinzugefügt wird. Standard: False. Erweiterte Einstellung. | BOOLEAN | Ja | true<br>false |
+| `Modell` | Modellauswahl. Seedance 2.5 für das neueste Modell, Videos bis zu 30 Sekunden und mp4-Ausgabe; Seedance 2.5 Draft für eine schnelle 480p-Vorschau, deren `draft_task_id`-Ausgabe das 1080p oder 4k-Final im Node ByteDance Seedance 2.5 Draft to Final Video rendert; Seedance 2.5 Flash für 480p- und 720p-Videos bis 30 Sekunden; Seedance 2.0 für maximale Qualität und 4k; Fast für Geschwindigkeitsoptimierung; Mini für die schnellste, kostengünstigste Generierung. Die Auswahl eines Modells ändert die unten angezeigten Eingabe-Widgets. | DYNAMIC_COMBO | Ja | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.5 Flash"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
+| `Seed` | Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 0. | INT | Ja | 0 bis 2147483647 |
+| `Wasserzeichen` | Gibt an, ob dem Video ein Wasserzeichen hinzugefügt wird. Standard: False. Erweiterte Einstellung. | BOOLEAN | Ja | true<br>false |
 
 ### Seedance 2.5 Eingaben
 

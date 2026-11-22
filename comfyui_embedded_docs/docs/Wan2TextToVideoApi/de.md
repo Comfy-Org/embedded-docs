@@ -11,10 +11,10 @@ Diese Eingaben sind immer auf der obersten Ebene des Nodes verfügbar.
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Das spezifische Modell, das für die Videogenerierung verwendet werden soll. | DYNAMIC_COMBO | Ja | `"wan2.7-t2v"` |
-| `audio` | Audio zur Steuerung der Videogenerierung (z. B. Lippensynchronisation, taktsynchrone Bewegung). Dauer: 3s-30s. Wenn nicht bereitgestellt, generiert das Modell automatisch passende Hintergrundmusik oder Soundeffekte. | AUDIO | Nein | - |
+| `Audio` | Audio zur Steuerung der Videogenerierung (z. B. Lippensynchronisation, taktsynchrone Bewegung). Dauer: 3s-30s. Wenn nicht bereitgestellt, generiert das Modell automatisch passende Hintergrundmusik oder Soundeffekte. | AUDIO | Nein | - |
 | `seed` | Seed, der für die Generierung verwendet werden soll (Standard: 0). | INT | Ja | 0 bis 2147483647 |
 | `prompt_extend` | Ob der Prompt mit KI-Unterstützung verbessert werden soll (Standard: True). | BOOLEAN | Ja | True<br>False |
-| `watermark` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll (Standard: False). | BOOLEAN | Ja | True<br>False |
+| `Wasserzeichen` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll (Standard: False). | BOOLEAN | Ja | True<br>False |
 
 ### wan2.7-t2v Eingaben
 

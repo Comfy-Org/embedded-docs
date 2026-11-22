@@ -7,8 +7,8 @@ Il nodo VoxelToMesh converte dati voxel 3D in una geometria mesh estraendo una s
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `voxel` | I dati voxel di input da convertire in geometria mesh | VOXEL | Sì | - |
-| `algorithm` | L'algoritmo usato per l'estrazione della superficie. "surface net" produce mesh più levigate, mentre "basic" crea facce semplici simili a cubi (predefinito: "surface net") | COMBO | Sì | `"surface net"`<br>`"basic"` |
-| `threshold` | Il valore di soglia per l'estrazione della superficie. I voxel con valori superiori a questa soglia sono considerati solidi (predefinito: 0.6) | FLOAT | Sì | da -1.0 a 1.0 |
+| `algoritmo` | L'algoritmo usato per l'estrazione della superficie. "surface net" produce mesh più levigate, mentre "basic" crea facce semplici simili a cubi (predefinito: "surface net") | COMBO | Sì | `"surface net"`<br>`"basic"` |
+| `soglia` | Il valore di soglia per l'estrazione della superficie. I voxel con valori superiori a questa soglia sono considerati solidi (predefinito: 0.6) | FLOAT | Sì | da -1.0 a 1.0 |
 
 ## Output
 

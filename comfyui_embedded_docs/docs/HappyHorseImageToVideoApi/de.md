@@ -8,10 +8,10 @@ Dieser Node erzeugt mit dem HappyHorse-Modell ein kurzes Video aus einem einzeln
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das HappyHorse-Modell, das für die Videogenerierung verwendet wird. | DYNAMIC_COMBO | Ja | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
-| `first_frame` | Bild des ersten Frames. Das Seitenverhältnis der Ausgabe wird aus diesem Bild abgeleitet. | IMAGE | Ja | 300×300 px min; 1:2.5 bis 2.5:1 |
-| `seed` | Seed für die Generierung. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
-| `watermark` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll. (erweiterte Option; Standard: False) | BOOLEAN | Ja | True / False |
+| `Modell` | Das HappyHorse-Modell, das für die Videogenerierung verwendet wird. | DYNAMIC_COMBO | Ja | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
+| `Erstes Bild` | Bild des ersten Frames. Das Seitenverhältnis der Ausgabe wird aus diesem Bild abgeleitet. | IMAGE | Ja | 300×300 px min; 1:2.5 bis 2.5:1 |
+| `Seed` | Seed für die Generierung. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
+| `Wasserzeichen` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll. (erweiterte Option; Standard: False) | BOOLEAN | Ja | True / False |
 
 ### happyhorse-1.1-i2v- und happyhorse-1.0-i2v-Eingaben
 

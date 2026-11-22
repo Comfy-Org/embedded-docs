@@ -7,10 +7,10 @@ Construit un rig de caméras autour de la cible de la première caméra : un pla
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
 | `camera_info` | Première caméra de l'orbite. Une liste de caméras orbite autour de chaque caméra qu'elle contient. | LOAD3D_CAMERA | Oui | - |
-| `count` | Caméras régulièrement espacées le long du balayage. Par défaut : 4. | INT | Oui | 1 à 64 |
-| `yaw` | Rotation totale autour de la cible, dans la direction yaw de Create Camera Info. Les tours complets s'arrêtent un pas avant la première caméra ; les autres balayages se terminent sur la dernière caméra. Par défaut : 360.0. | FLOAT | Oui | -720.0 à 720.0 (pas : 1.0) |
-| `pitch` | Inclinaison totale au-dessus de la cible, positive en montant comme le pitch de Create Camera Info ; au-delà de 90, les caméras passent par-dessus le sommet. Les tours complets bouclent comme `yaw`. Par défaut : 0.0. | FLOAT | Oui | -720.0 à 720.0 (pas : 1.0) |
-| `poles` | Vues directement vers le bas et/ou vers le haut sur la cible, ajoutées après l'orbite. Le haut de leur image pointe à l'opposé de la première caméra. Par défaut : `"none"`. | COMBO | Oui | `"none"`<br>`"top"`<br>`"bottom"`<br>`"top and bottom"` |
+| `nombre` | Caméras régulièrement espacées le long du balayage. Par défaut : 4. | INT | Oui | 1 à 64 |
+| `lacet` | Rotation totale autour de la cible, dans la direction yaw de Create Camera Info. Les tours complets s'arrêtent un pas avant la première caméra ; les autres balayages se terminent sur la dernière caméra. Par défaut : 360.0. | FLOAT | Oui | -720.0 à 720.0 (pas : 1.0) |
+| `tangage` | Inclinaison totale au-dessus de la cible, positive en montant comme le pitch de Create Camera Info ; au-delà de 90, les caméras passent par-dessus le sommet. Les tours complets bouclent comme `yaw`. Par défaut : 0.0. | FLOAT | Oui | -720.0 à 720.0 (pas : 1.0) |
+| `pôles` | Vues directement vers le bas et/ou vers le haut sur la cible, ajoutées après l'orbite. Le haut de leur image pointe à l'opposé de la première caméra. Par défaut : `"none"`. | COMBO | Oui | `"none"`<br>`"top"`<br>`"bottom"`<br>`"top and bottom"` |
 
 ## Sorties
 

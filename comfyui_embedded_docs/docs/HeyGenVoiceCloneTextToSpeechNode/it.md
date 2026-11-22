@@ -8,7 +8,7 @@ Selezionando un `model` vengono rivelati i parametri specifici: `audio`, `text`,
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Modello da usare. `heygen-voice-1-turbo` è più veloce e costa meno (predefinito: `"heygen-voice-1"`). | DYNAMIC_COMBO | Sì | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `modello` | Modello da usare. `heygen-voice-1-turbo` è più veloce e costa meno (predefinito: `"heygen-voice-1"`). | DYNAMIC_COMBO | Sì | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `audio` | Registrazione di un singolo parlante da clonare. Usa almeno 10 secondi di parlato chiaro; vengono usati solo i primi 3 minuti. | AUDIO | Sì | - |
 | `text` | Testo da pronunciare, fino a 5000 caratteri. Un parlato più lungo di circa 12 minuti non va a buon fine, quindi suddividi testi molto lunghi in cinese o giapponese (predefinito: vuoto). | STRING | Sì | 1 a 5000 caratteri |
 | `language` | Lingua del testo. Impostala per lingue strettamente correlate come serbo o malese, che il rilevamento automatico può confondere (predefinito: `"auto"`). | COMBO | Sì | `"auto"`<br>Più preset di lingua |

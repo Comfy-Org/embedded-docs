@@ -6,7 +6,7 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 사용할 모델입니다. 기본값: `"ideogram-vector-1"`. | DYNAMIC_COMBO | 예 | `"ideogram-vector-1"` |
+| `모델` | 사용할 모델입니다. 기본값: `"ideogram-vector-1"`. | DYNAMIC_COMBO | 예 | `"ideogram-vector-1"` |
 | `image` | 변환할 이미지입니다. 배치 입력인 경우 이미지별로 변환되며, 결과 SVG가 함께 반환됩니다. | IMAGE | 예 | - |
 | `mode` | `"simple"`은 더 적고 큰 도형을 추적하며, `"default"`는 더 미세한 디테일을 유지합니다. 기본값: `"default"`. | COMBO | 예 | `"simple"`<br>`"default"` |
 

@@ -7,9 +7,9 @@ SenseNova koşullandırmasını görüntü oluşturma veya iç içe metin ve gö
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|---------|--------|
 | `clip` | SenseNova CLIP modeli. CLIP Text Encode’u da besleyen CLIP yükleyicisini bağlayın; kodlayıcı çıktısı `conditioning` girişine gider. Gelen koşullandırma zaten tamamlanmış olduğu durumlar hariç her görev için gereklidir. | CLIP | Hayır | - |
-| `conditioning` | CLIP Text Encode'dan gelen SenseNova metin koşullandırması. | CONDITIONING | Evet | - |
-| `negative` | İsteğe bağlı negatif koşullandırma. `interleave` ve `self-correction` görevleri için güncellenir ve döndürülür. | CONDITIONING | Hayır | - |
-| `task` | Çalıştırılacak görev. `"image"` standart bir örnekleyici için istemi kodlar, `"image thinking"` modelin yanıtlamadan önce düşünmesini sağlar, `"interleave"` tek geçişte metin ve görüntüler üretir ve `"self-correction"` modelin kendi önceki çıktısını düzeltmesini sağlar. | DYNAMIC_COMBO | Evet | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
+| `koşullandırma` | CLIP Text Encode'dan gelen SenseNova metin koşullandırması. | CONDITIONING | Evet | - |
+| `negatif` | İsteğe bağlı negatif koşullandırma. `interleave` ve `self-correction` görevleri için güncellenir ve döndürülür. | CONDITIONING | Hayır | - |
+| `görev` | Çalıştırılacak görev. `"image"` standart bir örnekleyici için istemi kodlar, `"image thinking"` modelin yanıtlamadan önce düşünmesini sağlar, `"interleave"` tek geçişte metin ve görüntüler üretir ve `"self-correction"` modelin kendi önceki çıktısını düzeltmesini sağlar. | DYNAMIC_COMBO | Evet | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
 | `max_tokens` | Bu çağrı sırasında üretilen maksimum token sayısı. Varsayılan: 1024. | INT | Evet | 1 ile 8192 arası |
 
 ### `interleave` Girdileri

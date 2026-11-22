@@ -8,9 +8,9 @@
 
 | 參數 | 說明 | 資料類型 | 必要 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `images` | 要儲存的影像。 | IMAGE | 是 | - |
-| `filename_prefix` | 要儲存檔案的檔名前綴。可包含格式代碼，例如 `%date:yyyy-MM-dd%` 或 `%Empty Latent Image.width%`。（預設："ComfyUI"） | STRING | 是 | - |
-| `format` | 儲存影像所用的檔案格式。選取格式後會顯示該格式的其他選項。 | DYNAMIC_COMBO | 是 | `"png"`<br>`"exr"`<br>`"avif"` |
+| `影像` | 要儲存的影像。 | IMAGE | 是 | - |
+| `檔名字首` | 要儲存檔案的檔名前綴。可包含格式代碼，例如 `%date:yyyy-MM-dd%` 或 `%Empty Latent Image.width%`。（預設："ComfyUI"） | STRING | 是 | - |
+| `格式` | 儲存影像所用的檔案格式。選取格式後會顯示該格式的其他選項。 | DYNAMIC_COMBO | 是 | `"png"`<br>`"exr"`<br>`"avif"` |
 
 ### PNG 輸入
 

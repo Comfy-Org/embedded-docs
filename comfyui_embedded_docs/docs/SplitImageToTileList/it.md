@@ -6,10 +6,10 @@ Il nodo Split Image into List of Tiles divide una singola immagine di input in u
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | L'immagine di input da dividere in tile. | IMAGE | Sì | - |
-| `tile_width` | La larghezza di ciascuna tile di output in pixel (predefinito: 1024). | INT | Sì | 64 a 1048576 |
-| `tile_height` | L'altezza di ciascuna tile di output in pixel (predefinito: 1024). | INT | Sì | 64 a 1048576 |
-| `overlap` | Il numero di pixel di sovrapposizione tra tile adiacenti (predefinito: 128). | INT | Sì | 0 a 4096 |
+| `immagine` | L'immagine di input da dividere in tile. | IMAGE | Sì | - |
+| `larghezza_tassello` | La larghezza di ciascuna tile di output in pixel (predefinito: 1024). | INT | Sì | 64 a 1048576 |
+| `altezza_tassello` | L'altezza di ciascuna tile di output in pixel (predefinito: 1024). | INT | Sì | 64 a 1048576 |
+| `sovrapposizione` | Il numero di pixel di sovrapposizione tra tile adiacenti (predefinito: 128). | INT | Sì | 0 a 4096 |
 
 ## Output
 

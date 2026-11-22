@@ -6,8 +6,8 @@ Il nodo LatentSubtract è progettato per sottrarre una rappresentazione latente 
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `samples1` | Il primo insieme di campioni latenti da cui sottrarre. Funge da base per l'operazione di sottrazione. | `LATENT` |
-| `samples2` | Il secondo insieme di campioni latenti che verrà sottratto dal primo insieme. Questa operazione può alterare l'output del modello generativo risultante rimuovendo attributi o caratteristiche. | `LATENT` |
+| `campioni1` | Il primo insieme di campioni latenti da cui sottrarre. Funge da base per l'operazione di sottrazione. | `LATENT` |
+| `campioni2` | Il secondo insieme di campioni latenti che verrà sottratto dal primo insieme. Questa operazione può alterare l'output del modello generativo risultante rimuovendo attributi o caratteristiche. | `LATENT` |
 
 ## Output
 

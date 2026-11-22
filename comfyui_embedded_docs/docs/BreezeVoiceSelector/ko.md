@@ -6,7 +6,7 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `language` | 추천 음성의 언어 그룹이며, id를 입력하려면 `custom`을 사용합니다. 기본값: `"English"`. | DYNAMIC_COMBO | 예 | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
+| `언어` | 추천 음성의 언어 그룹이며, id를 입력하려면 `custom`을 사용합니다. 기본값: `"English"`. | DYNAMIC_COMBO | 예 | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
 
 ### 언어 "English", "Chinese" 및 "Japanese" 입력
 

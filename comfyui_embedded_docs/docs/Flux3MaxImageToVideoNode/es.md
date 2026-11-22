@@ -9,12 +9,12 @@ FLUX 3 Max Image to Video anima de 1 a 10 imágenes con FLUX 3 Max. Cada imagen 
 | `prompt` | Cómo debe moverse y sonar la escena (predeterminado: vacío). | STRING | Sí | Texto multilínea |
 | `keyframes` | Ranura ampliable: conecta de 1 a 10 imágenes de fotograma clave en el orden de reproducción; por ejemplo, `image_1`, `image_2`, etc. Cada imagen se convierte en un fotograma del clip. | IMAGE | Sí | 1 a 10 imágenes |
 | `placement` | `"spread across the clip"` coloca la primera imagen al inicio, la última al final y el resto de manera uniforme entre ellas; `"at times"` fija cada imagen a un tiempo en segundos que elijas (predeterminado: `"spread across the clip"`). | DYNAMIC_COMBO | Sí | `"spread across the clip"`<br>`"at times"` |
-| `aspect_ratio` | Relación de aspecto de salida. `"auto"` sigue la primera imagen de fotograma clave (predeterminado: `"auto"`). | COMBO | Sí | `"auto"`<br>`"21:9"`<br>`"2:1"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"` |
-| `duration` | Duración del clip en segundos (predeterminado: `"5"`). | COMBO | Sí | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"`<br>`"15"`<br>`"16"`<br>`"17"`<br>`"18"`<br>`"19"`<br>`"20"` |
-| `resolution` | Resolución de salida (predeterminado: `"720p"`). | COMBO | Sí | `"720p"`<br>`"1080p"` |
-| `reasoning_level` | Cuánto razona el modelo sobre el prompt y lo amplía antes de generar. `"high"` tarda más; el precio es el mismo (predeterminado: `"high"`). | COMBO | Sí | `"low"`<br>`"high"` |
-| `generate_audio` | Generar audio sincronizado. Desactivado produce un video sin pista de audio (predeterminado: true). | BOOLEAN | Sí | `true`<br>`false` |
-| `seed` | Semilla que controla si el nodo se vuelve a ejecutar. Los resultados no son deterministas independientemente de este valor (predeterminado: 42). | INT | Sí | 0 a 2147483646 |
+| `relación de aspecto` | Relación de aspecto de salida. `"auto"` sigue la primera imagen de fotograma clave (predeterminado: `"auto"`). | COMBO | Sí | `"auto"`<br>`"21:9"`<br>`"2:1"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"` |
+| `duración` | Duración del clip en segundos (predeterminado: `"5"`). | COMBO | Sí | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"`<br>`"15"`<br>`"16"`<br>`"17"`<br>`"18"`<br>`"19"`<br>`"20"` |
+| `resolución` | Resolución de salida (predeterminado: `"720p"`). | COMBO | Sí | `"720p"`<br>`"1080p"` |
+| `nivel de razonamiento` | Cuánto razona el modelo sobre el prompt y lo amplía antes de generar. `"high"` tarda más; el precio es el mismo (predeterminado: `"high"`). | COMBO | Sí | `"low"`<br>`"high"` |
+| `generar audio` | Generar audio sincronizado. Desactivado produce un video sin pista de audio (predeterminado: true). | BOOLEAN | Sí | `true`<br>`false` |
+| `semilla` | Semilla que controla si el nodo se vuelve a ejecutar. Los resultados no son deterministas independientemente de este valor (predeterminado: 42). | INT | Sí | 0 a 2147483646 |
 
 ### Entradas de «at times»
 

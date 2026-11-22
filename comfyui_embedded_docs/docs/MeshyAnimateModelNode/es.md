@@ -6,8 +6,8 @@ Este nodo aplica una acción de animación específica a un personaje 3D previam
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `rig_task_id` | El ID de tarea único de una operación de rigging de personaje de Meshy completada previamente. | MESHY_RIGGED_TASK_ID | Sí | N/A |
-| `action_id` | El número de ID de la acción de animación que se aplicará. Visite https://docs.meshy.ai/en/api/animation-library para obtener una lista de los valores disponibles. (predeterminado: 0) | INT | Sí | 0 a 696 |
+| `id_de_tarea_de_rig` | El ID de tarea único de una operación de rigging de personaje de Meshy completada previamente. | MESHY_RIGGED_TASK_ID | Sí | N/A |
+| `id_de_acción` | El número de ID de la acción de animación que se aplicará. Visite https://docs.meshy.ai/en/api/animation-library para obtener una lista de los valores disponibles. (predeterminado: 0) | INT | Sí | 0 a 696 |
 
 ## Salidas
 

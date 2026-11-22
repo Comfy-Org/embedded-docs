@@ -6,7 +6,7 @@ Il nodo LTXVSeparateAVLatent divide un latent audiovisivo combinato in due laten
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `av_latent` | La rappresentazione latent audiovisiva combinata da dividere in latent video e audio. | LATENT | Sì | N/A |
+| `av_latente` | La rappresentazione latent audiovisiva combinata da dividere in latent video e audio. | LATENT | Sì | N/A |
 
 **Nota:** Si prevede che il tensore `samples` del latent di input abbia almeno due elementi lungo la prima dimensione (dimensione batch). Il primo elemento viene utilizzato per il latent video e il secondo elemento viene utilizzato per il latent audio. Se è presente un `noise_mask`, viene diviso allo stesso modo.
 

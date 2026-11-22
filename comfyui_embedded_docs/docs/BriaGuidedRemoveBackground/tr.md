@@ -10,9 +10,9 @@ Bu düğüm, Bria ile bir görüntünün arka planını kaldırır ve istemin ta
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Kesilecek görüntü. | IMAGE | Evet | - |
-| `prompt` | Neyin tutulacağı ve isteğe bağlı olarak neyin çıkarılacağı veya neye daraltılacağı; örneğin 'the person with the mat and the plant', 'the woman at her desk without the lamp' ya da 'only the chair'. Boş olamaz. İstemle hiçbir şey eşleşmezse sonuç tamamen saydam olur. Varsayılan: `""` (boş dize). | STRING | Evet | 1 karakter veya daha fazla |
-| `moderation` | Moderasyon ayarları. `"true"` olarak ayarlandığında aşağıdaki görsel moderasyon bayrakları kullanılabilir hale gelir. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
+| `görüntü` | Kesilecek görüntü. | IMAGE | Evet | - |
+| `istem` | Neyin tutulacağı ve isteğe bağlı olarak neyin çıkarılacağı veya neye daraltılacağı; örneğin 'the person with the mat and the plant', 'the woman at her desk without the lamp' ya da 'only the chair'. Boş olamaz. İstemle hiçbir şey eşleşmezse sonuç tamamen saydam olur. Varsayılan: `""` (boş dize). | STRING | Evet | 1 karakter veya daha fazla |
+| `denetleme` | Moderasyon ayarları. `"true"` olarak ayarlandığında aşağıdaki görsel moderasyon bayrakları kullanılabilir hale gelir. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
 
 ### Moderasyon "true" Girdileri
 

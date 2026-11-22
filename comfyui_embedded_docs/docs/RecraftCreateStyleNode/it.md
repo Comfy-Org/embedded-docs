@@ -6,8 +6,8 @@ Questo nodo crea uno stile personalizzato per la generazione di immagini carican
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `style` | Lo stile di base delle immagini generate. | STRING | Sì | `"realistic_image"`<br>`"digital_illustration"` |
-| `images` | Un insieme da 1 a 5 immagini di riferimento utilizzate per creare lo stile personalizzato. | IMAGE | Sì | da 1 a 5 immagini |
+| `stile` | Lo stile di base delle immagini generate. | STRING | Sì | `"realistic_image"`<br>`"digital_illustration"` |
+| `immagini` | Un insieme da 1 a 5 immagini di riferimento utilizzate per creare lo stile personalizzato. | IMAGE | Sì | da 1 a 5 immagini |
 
 **Nota:** La dimensione totale dei file di tutte le immagini nell'input `images` deve essere inferiore a 5 MB. Il nodo genererà un errore se questo limite viene superato.
 

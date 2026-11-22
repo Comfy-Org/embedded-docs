@@ -8,13 +8,13 @@ Questo nodo genera un video da un'immagine obbligatoria del primo fotogramma e u
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Seedance 2.5 per il modello più recente, video fino a 30 secondi e output mp4; Seedance 2.5 Draft per un'anteprima veloce a 480p il cui output `draft_task_id` renderizza il finale a 1080p o 4k nel nodo ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.5 Flash per video 480p e 720p fino a 30 secondi; Seedance 2.0 per la massima qualità e 4k; Fast per l'ottimizzazione della velocità; Mini per la generazione più rapida e a costo più basso. Selezionando un modello vengono mostrati di seguito gli input specifici del modello. | DYNAMIC_COMBO | Sì | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.5 Flash"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
-| `first_frame` | Immagine del primo fotogramma per il video. | IMAGE | No | - |
-| `last_frame` | Immagine dell'ultimo fotogramma per il video. | IMAGE | No | - |
-| `first_frame_asset_id` | asset_id Seedance da usare come primo fotogramma. Mutuamente esclusivo con l'input immagine `first_frame`. Il valore predefinito è una stringa vuota. | STRING | No | - |
-| `last_frame_asset_id` | asset_id Seedance da usare come ultimo fotogramma. Mutuamente esclusivo con l'input immagine `last_frame`. Il valore predefinito è una stringa vuota. | STRING | No | - |
+| `modello` | Seedance 2.5 per il modello più recente, video fino a 30 secondi e output mp4; Seedance 2.5 Draft per un'anteprima veloce a 480p il cui output `draft_task_id` renderizza il finale a 1080p o 4k nel nodo ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.5 Flash per video 480p e 720p fino a 30 secondi; Seedance 2.0 per la massima qualità e 4k; Fast per l'ottimizzazione della velocità; Mini per la generazione più rapida e a costo più basso. Selezionando un modello vengono mostrati di seguito gli input specifici del modello. | DYNAMIC_COMBO | Sì | `"Seedance 2.5"`<br>`"Seedance 2.5 Draft"`<br>`"Seedance 2.5 Flash"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `primo frame` | Immagine del primo fotogramma per il video. | IMAGE | No | - |
+| `ultimo frame` | Immagine dell'ultimo fotogramma per il video. | IMAGE | No | - |
+| `ID asset primo frame` | asset_id Seedance da usare come primo fotogramma. Mutuamente esclusivo con l'input immagine `first_frame`. Il valore predefinito è una stringa vuota. | STRING | No | - |
+| `ID asset ultimo frame` | asset_id Seedance da usare come ultimo fotogramma. Mutuamente esclusivo con l'input immagine `last_frame`. Il valore predefinito è una stringa vuota. | STRING | No | - |
 | `seed` | Il seed controlla se il nodo deve rieseguirsi; i risultati non sono deterministici indipendentemente dal seed. Il valore predefinito è 0. | INT | Sì | 0 a 2147483647 |
-| `watermark` | Indica se aggiungere una filigrana al video. Il valore predefinito è False. | BOOLEAN | Sì | False<br>True |
+| `filigrana` | Indica se aggiungere una filigrana al video. Il valore predefinito è False. | BOOLEAN | Sì | False<br>True |
 
 ### Input di Seedance 2.5
 

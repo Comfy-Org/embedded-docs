@@ -8,7 +8,7 @@ Este nodo genera un video que comienza a partir de una imagen fija y mueve la c�
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo que se utilizará para la generación de video. | DYNAMIC_COMBO | Sí | "MiniMax H3 Max" |
+| `modelo` | Modelo que se utilizará para la generación de video. | DYNAMIC_COMBO | Sí | "MiniMax H3 Max" |
 
 ### Entradas de MiniMax H3 Max
 

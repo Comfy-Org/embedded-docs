@@ -8,8 +8,8 @@ Text Encode Ming Image Edit kodiert einen Text-Prompt in Conditioning für die M
 |-----------|--------------|----------|--------------|---------|
 | `clip` | Das CLIP-Modell, das zum Tokenisieren des Prompts und der Referenzbilder verwendet wird. | CLIP | Ja | - |
 | `vae` | Optionales VAE, das die Referenzbilder in latente Frames kodiert, die an das Conditioning angehängt werden. Ohne VAE konditionieren die Bilder den Textencoder nur über den Vision Tower. | VAE | Nein | - |
-| `prompt` | Text-Prompt zum Kodieren. Unterstützt mehrzeilige Eingabe und dynamische Prompts. | STRING | Ja | Mehrzeiliger Text |
-| `images` | Erweiterbarer Slot: optionale Referenzbilder, die vom Textencoder gesehen und als saubere Frames an die latente Sequenz angehängt werden. Verbinden Sie 1..8 Bilder (`image_1`, `image_2`, ...); spätere Bilder werden auf das erste skaliert und das gesampelte Latent sollte zu dessen Größe passen. Es werden nur die RGB-Kanäle verwendet. | IMAGE | Nein | 0 bis 8 |
+| `Prompt` | Text-Prompt zum Kodieren. Unterstützt mehrzeilige Eingabe und dynamische Prompts. | STRING | Ja | Mehrzeiliger Text |
+| `Bilder` | Erweiterbarer Slot: optionale Referenzbilder, die vom Textencoder gesehen und als saubere Frames an die latente Sequenz angehängt werden. Verbinden Sie 1..8 Bilder (`image_1`, `image_2`, ...); spätere Bilder werden auf das erste skaliert und das gesampelte Latent sollte zu dessen Größe passen. Es werden nur die RGB-Kanäle verwendet. | IMAGE | Nein | 0 bis 8 |
 
 **Hinweis:** Referenzbilder werden in numerischer Reihenfolge ihrer Slot-Namen gelesen, leere Slots werden ignoriert. Referenz-Latents werden nur erzeugt, wenn sowohl `vae` als auch mindestens ein Bild bereitgestellt werden.
 

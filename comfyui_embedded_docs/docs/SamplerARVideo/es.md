@@ -6,7 +6,7 @@ El nodo Sampler AR Video proporciona un método de muestreo especializado para m
 
 | Parámetro | Descripción | Tipo de dato | ¿Requerido? | Rango |
 | --- | --- | --- | --- | --- |
-| `num_frame_per_block` | Fotogramas por bloque autorregresivo. Un valor de 1 significa que el modelo genera un fotograma a la vez (fotograma por fotograma), mientras que un valor de 3 significa que genera tres fotogramas juntos (por bloques). Este ajuste debe coincidir con el modo de entrenamiento del checkpoint. Por defecto: 1. | INT | Sí | 1 a 64 |
+| `num_frames_por_bloque` | Fotogramas por bloque autorregresivo. Un valor de 1 significa que el modelo genera un fotograma a la vez (fotograma por fotograma), mientras que un valor de 3 significa que genera tres fotogramas juntos (por bloques). Este ajuste debe coincidir con el modo de entrenamiento del checkpoint. Por defecto: 1. | INT | Sí | 1 a 64 |
 
 ## Salidas
 

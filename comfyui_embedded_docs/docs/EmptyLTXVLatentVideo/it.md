@@ -6,10 +6,10 @@ Il nodo EmptyLTXVLatentVideo crea un tensore latente video vuoto (riempito di ze
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `width` | La larghezza del tensore latente video (predefinito: 768, passo: 32) | INT | Sì | da 64 a MAX_RESOLUTION |
-| `height` | L'altezza del tensore latente video (predefinito: 512, passo: 32) | INT | Sì | da 64 a MAX_RESOLUTION |
-| `length` | Il numero di fotogrammi nel video latente (predefinito: 97, passo: 8) | INT | Sì | da 1 a MAX_RESOLUTION |
-| `batch_size` | Il numero di video latenti da generare in un batch (predefinito: 1) | INT | Sì | da 1 a 4096 |
+| `larghezza` | La larghezza del tensore latente video (predefinito: 768, passo: 32) | INT | Sì | da 64 a MAX_RESOLUTION |
+| `altezza` | L'altezza del tensore latente video (predefinito: 512, passo: 32) | INT | Sì | da 64 a MAX_RESOLUTION |
+| `lunghezza` | Il numero di fotogrammi nel video latente (predefinito: 97, passo: 8) | INT | Sì | da 1 a MAX_RESOLUTION |
+| `dimensione_batch` | Il numero di video latenti da generare in un batch (predefinito: 1) | INT | Sì | da 1 a 4096 |
 
 Nota: il video latente è compresso rispetto alle dimensioni richieste: le dimensioni spaziali (larghezza e altezza) sono divise per 32, mentre il numero di fotogrammi (lunghezza) è diviso per 8 e arrotondato per eccesso al numero intero più vicino. I valori di passo per larghezza, altezza e lunghezza aiutano a mantenere queste divisioni senza resto.
 

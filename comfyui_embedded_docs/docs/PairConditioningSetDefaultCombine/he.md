@@ -6,10 +6,10 @@
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 | --- | --- | --- | --- | --- |
-| `positive` | קלט ה-conditioning החיובי הראשי שיש לעבד | CONDITIONING | כן | - |
-| `negative` | קלט ה-conditioning השלילי הראשי שיש לעבד | CONDITIONING | כן | - |
-| `positive_DEFAULT` | ערכי ה-conditioning החיוביים של ברירת המחדל שישמשו כגיבוי | CONDITIONING | כן | - |
-| `negative_DEFAULT` | ערכי ה-conditioning השליליים של ברירת המחדל שישמשו כגיבוי | CONDITIONING | כן | - |
+| `חיובי` | קלט ה-conditioning החיובי הראשי שיש לעבד | CONDITIONING | כן | - |
+| `שלילי` | קלט ה-conditioning השלילי הראשי שיש לעבד | CONDITIONING | כן | - |
+| `חיובי_ברירת_מחדל` | ערכי ה-conditioning החיוביים של ברירת המחדל שישמשו כגיבוי | CONDITIONING | כן | - |
+| `שלילי_ברירת_מחדל` | ערכי ה-conditioning השליליים של ברירת המחדל שישמשו כגיבוי | CONDITIONING | כן | - |
 | `hooks` | קבוצת hooks אופציונלית ללוגיקת עיבוד מותאמת אישית | HOOKS | לא | - |
 
 ## פלטים

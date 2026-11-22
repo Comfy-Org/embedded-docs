@@ -6,8 +6,8 @@ Der Magnific Image Relight-Node passt die Beleuchtung eines Eingabebildes an. Er
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `image` | Das Bild, dessen Beleuchtung angepasst werden soll. Es ist genau ein Bild erforderlich. Die Mindestabmessungen betragen 160x160 Pixel. Das Seitenverhältnis muss zwischen 1:3 und 3:1 liegen. | IMAGE | Ja | N/A |
-| `prompt` | Beschreibende Anleitung für die Beleuchtung. Unterstützt Hervorhebungsnotation (1-1.4). Standard ist eine leere Zeichenkette. | STRING | Nein | N/A |
+| `Bild` | Das Bild, dessen Beleuchtung angepasst werden soll. Es ist genau ein Bild erforderlich. Die Mindestabmessungen betragen 160x160 Pixel. Das Seitenverhältnis muss zwischen 1:3 und 3:1 liegen. | IMAGE | Ja | N/A |
+| `Prompt` | Beschreibende Anleitung für die Beleuchtung. Unterstützt Hervorhebungsnotation (1-1.4). Standard ist eine leere Zeichenkette. | STRING | Nein | N/A |
 | `light_transfer_strength` | Intensität der Lichttransferanwendung. Standard: 100. | INT | Ja | 0 bis 100 |
 | `style` | Stilistische Ausgabepräferenz. | COMBO | Ja | `"standard"`<br>`"darker_but_realistic"`<br>`"clean"`<br>`"smooth"`<br>`"brighter"`<br>`"contrasted_n_hdr"`<br>`"just_composition"` |
 | `interpolate_from_original` | Schränkt die Generierungsfreiheit ein, um das Original genauer zu treffen. Standard: False. | BOOLEAN | Ja | N/A |

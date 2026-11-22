@@ -7,12 +7,12 @@ Bağladığınız metni, görüntüleri, sesi veya videoyu 1 ile 10 arasında pu
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Kullanılacak model. `heygen-decision-1-turbo`, `heygen-decision-1`'e göre daha hızlıdır ve daha az maliyetlidir (varsayılan: `"heygen-decision-1"`). | COMBO | Evet | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | Neyin puanlanacağı; 1 ve 10'un ne anlama geldiğini belirtin (varsayılan: "Rate the technical quality of the image from 1 (worst) to 10 (best)."). | STRING | Evet | 1 ile 5000 karakter arası |
-| `threshold` | `result`, puan en az bu değer olduğunda true olur. Temiz, keskin görüntüler yaklaşık 7 puan alır; ciddi şekilde hasar görmüş olanlar yaklaşık 3 ila 5 puan alır (varsayılan: 6.0). | FLOAT | Evet | 1.0 ile 10.0 arası (adım: 0.1) |
-| `images` | Puanlanacak görüntüler; bir toplu işlemin her karesi sayıldığında toplamda en fazla 4 görüntü. Soketler boyunca sırayla `image_1` ile `image_4` arasında numaralandırılırlar. | IMAGE | Hayır | En fazla 4 görsel |
+| `soru` | Neyin puanlanacağı; 1 ve 10'un ne anlama geldiğini belirtin (varsayılan: "Rate the technical quality of the image from 1 (worst) to 10 (best)."). | STRING | Evet | 1 ile 5000 karakter arası |
+| `eşik` | `result`, puan en az bu değer olduğunda true olur. Temiz, keskin görüntüler yaklaşık 7 puan alır; ciddi şekilde hasar görmüş olanlar yaklaşık 3 ila 5 puan alır (varsayılan: 6.0). | FLOAT | Evet | 1.0 ile 10.0 arası (adım: 0.1) |
+| `görüntüler` | Puanlanacak görüntüler; bir toplu işlemin her karesi sayıldığında toplamda en fazla 4 görüntü. Soketler boyunca sırayla `image_1` ile `image_4` arasında numaralandırılırlar. | IMAGE | Hayır | En fazla 4 görsel |
 | `audio_1` | Puanlanacak ses; en fazla 30 dakika. | AUDIO | Hayır | En fazla 30 dakika |
 | `video_1` | Puanlanacak video; en fazla 60 saniye. | VIDEO | Hayır | En fazla 60 saniye |
-| `text` | Sorunun hakkında olduğu metin; istem veya LLM yanıtı gibi, en fazla 20000 karakter. | STRING | Hayır | En fazla 20000 karakter |
+| `metin` | Sorunun hakkında olduğu metin; istem veya LLM yanıtı gibi, en fazla 20000 karakter. | STRING | Hayır | En fazla 20000 karakter |
 
 Puanlamak için en az bir girdi bağlayın ve bunları soru içinde soket adlarıyla adlandırın; örneğin "image_1 ne kadar keskin?".
 

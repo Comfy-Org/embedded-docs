@@ -7,8 +7,8 @@ El nodo PolyexponentialScheduler está diseñado para generar una secuencia de n
 | Parámetro | Descripción | Tipo de dato |
 | --- | --- | --- |
 | `pasos` | Especifica el número de pasos en el proceso de difusión, afectando la granularidad de los niveles de ruido generados. | INT |
-| `sigma_max` | El nivel máximo de ruido, que establece el límite superior de la programación de ruido. | FLOAT |
-| `sigma_min` | El nivel mínimo de ruido, que establece el límite inferior de la programación de ruido. | FLOAT |
+| `sigma_máximo` | El nivel máximo de ruido, que establece el límite superior de la programación de ruido. | FLOAT |
+| `sigma_mínimo` | El nivel mínimo de ruido, que establece el límite inferior de la programación de ruido. | FLOAT |
 | `rho` | Un parámetro que controla la forma de la programación de ruido poliexponencial, influyendo en cómo progresan los niveles de ruido entre los valores mínimo y máximo. | FLOAT |
 
 ## Salidas

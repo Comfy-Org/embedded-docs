@@ -6,7 +6,7 @@ Este nodo elimina el fondo de un video mediante el servicio Bria AI. Procesa el 
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `video` | El archivo de video de entrada del cual se eliminará el fondo. | VIDEO | Sí | N/A |
+| `vídeo` | El archivo de video de entrada del cual se eliminará el fondo. | VIDEO | Sí | N/A |
 | `color de fondo` | Color de fondo para el video de salida. | COMBO | Sí | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` |
 | `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. (predeterminado: 0) | INT | Sí | 0 a 2147483647 |
 

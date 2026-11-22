@@ -8,9 +8,9 @@ Dieser Node generiert ein Video aus einem Text-Prompt unter Verwendung der MiniM
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modell, das für die Videogenerierung verwendet wird (Standard: "MiniMax H3"). Wenn Sie ein Modell auswählen, werden außerdem die modellspezifischen Einstellungen angezeigt, die in den folgenden Abschnitten beschrieben sind. | DYNAMIC_COMBO | Ja | "MiniMax H3"<br>"MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
-| `seed` | Zufälliger Seed. Die gleiche Anfrage mit demselben Seed liefert ähnliche, aber nicht garantiert identische Ergebnisse (Standard: 42). | INT | Ja | 0 bis 4294967295 |
-| `watermark` | Ob dem Video ein AIGC-Wasserzeichen hinzugefügt wird (Standard: false). Wenn aktiviert, wird nur das Modell "MiniMax H3" unterstützt. | BOOLEAN | Nein | true<br>false |
+| `Modell` | Modell, das für die Videogenerierung verwendet wird (Standard: "MiniMax H3"). Wenn Sie ein Modell auswählen, werden außerdem die modellspezifischen Einstellungen angezeigt, die in den folgenden Abschnitten beschrieben sind. | DYNAMIC_COMBO | Ja | "MiniMax H3"<br>"MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `Seed` | Zufälliger Seed. Die gleiche Anfrage mit demselben Seed liefert ähnliche, aber nicht garantiert identische Ergebnisse (Standard: 42). | INT | Ja | 0 bis 4294967295 |
+| `Wasserzeichen` | Ob dem Video ein AIGC-Wasserzeichen hinzugefügt wird (Standard: false). Wenn aktiviert, wird nur das Modell "MiniMax H3" unterstützt. | BOOLEAN | Nein | true<br>false |
 
 ### MiniMax H3 Eingaben
 

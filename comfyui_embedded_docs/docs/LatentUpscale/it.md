@@ -6,11 +6,11 @@ Il nodo LatentUpscale è progettato per ingrandire le rappresentazioni latenti d
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `samples` | La rappresentazione latente di un'immagine da ingrandire. Questo parametro è cruciale per determinare il punto di partenza del processo di ingrandimento. | `LATENT` |
-| `upscale_method` | Specifica il metodo utilizzato per ingrandire l'immagine latente. Metodi diversi possono influire sulla qualità e sulle caratteristiche dell'immagine ingrandita. | COMBO[STRING] |
-| `width` | La larghezza desiderata dell'immagine ingrandita. Se impostata a 0, verrà calcolata in base all'altezza per mantenere le proporzioni. | `INT` |
-| `height` | L'altezza desiderata dell'immagine ingrandita. Se impostata a 0, verrà calcolata in base alla larghezza per mantenere le proporzioni. | `INT` |
-| `crop` | Determina come ritagliare l'immagine ingrandita, influenzando l'aspetto finale e le dimensioni dell'output. | COMBO[STRING] |
+| `campioni` | La rappresentazione latente di un'immagine da ingrandire. Questo parametro è cruciale per determinare il punto di partenza del processo di ingrandimento. | `LATENT` |
+| `metodo di ingrandimento` | Specifica il metodo utilizzato per ingrandire l'immagine latente. Metodi diversi possono influire sulla qualità e sulle caratteristiche dell'immagine ingrandita. | COMBO[STRING] |
+| `larghezza` | La larghezza desiderata dell'immagine ingrandita. Se impostata a 0, verrà calcolata in base all'altezza per mantenere le proporzioni. | `INT` |
+| `altezza` | L'altezza desiderata dell'immagine ingrandita. Se impostata a 0, verrà calcolata in base alla larghezza per mantenere le proporzioni. | `INT` |
+| `ritaglia` | Determina come ritagliare l'immagine ingrandita, influenzando l'aspetto finale e le dimensioni dell'output. | COMBO[STRING] |
 
 ## Output
 

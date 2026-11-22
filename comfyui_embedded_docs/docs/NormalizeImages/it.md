@@ -7,8 +7,8 @@ Questo nodo normalizza i colori di un'immagine di input regolando i valori dei p
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `image` | L'immagine di input da normalizzare. | IMAGE | Sì | - |
-| `mean` | Valore medio per la normalizzazione (predefinito: 0.5). | FLOAT | No | 0.0 - 1.0 |
-| `std` | Deviazione standard per la normalizzazione (predefinito: 0.5). | FLOAT | No | 0.001 - 1.0 |
+| `media` | Valore medio per la normalizzazione (predefinito: 0.5). | FLOAT | No | 0.0 - 1.0 |
+| `deviazione standard` | Deviazione standard per la normalizzazione (predefinito: 0.5). | FLOAT | No | 0.001 - 1.0 |
 
 I parametri `mean` e `std` controllano la normalizzazione applicata all'immagine di input. Il valore predefinito per entrambi i parametri è 0.5.
 

@@ -14,7 +14,7 @@ El nodo WanVaceToVideo prepara datos de condicionamiento de video para modelos d
 | `longitud` | Número de fotogramas en el video (predeterminado: 81, paso: 4) | INT | Sí | 1 a MAX_RESOLUTION |
 | `tamaño_lote` | Número de videos a generar simultáneamente (predeterminado: 1) | INT | Sí | 1 a 4096 |
 | `fuerza` | Fuerza de condicionamiento para el control VACE (predeterminado: 1.0, paso: 0.01). Esto no es una fuerza de LoRA. Los pesos LoRA se aplican a través de nodos LoRA independientes. | FLOAT | Sí | 0.0 a 1000.0 |
-| `control_video` | Video de entrada opcional usado para condicionamiento de control. Si no se proporciona, se crea automáticamente un video de gris neutro. | IMAGE | No | - |
+| `vídeo_de_control` | Video de entrada opcional usado para condicionamiento de control. Si no se proporciona, se crea automáticamente un video de gris neutro. | IMAGE | No | - |
 | `máscaras_de_control` | Máscaras opcionales que determinan qué partes del video de control están activas. Si no se proporcionan, se usa una máscara blanca completa. | MASK | No | - |
 | `imagen_de_referencia` | Imagen de referencia opcional para condicionamiento adicional. Cuando se proporciona, se codifica y se antepone a la secuencia latente. Solo se usa la primera imagen. | IMAGE | No | - |
 

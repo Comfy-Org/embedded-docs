@@ -6,8 +6,8 @@ Il nodo LatentMultiply è progettato per scalare la rappresentazione latente dei
 
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `samples` | Il parametro `samples` rappresenta le rappresentazioni latenti da scalare. È cruciale per definire i dati di input sui quali verrà eseguita l'operazione di moltiplicazione. | `LATENT` |
-| `multiplier` | Il parametro `multiplier` specifica il fattore di scala da applicare ai campioni latenti. Svolge un ruolo chiave nella regolazione dell'ampiezza delle caratteristiche latenti, consentendo un controllo preciso sull'output generato. | `FLOAT` |
+| `campioni` | Il parametro `samples` rappresenta le rappresentazioni latenti da scalare. È cruciale per definire i dati di input sui quali verrà eseguita l'operazione di moltiplicazione. | `LATENT` |
+| `moltiplicatore` | Il parametro `multiplier` specifica il fattore di scala da applicare ai campioni latenti. Svolge un ruolo chiave nella regolazione dell'ampiezza delle caratteristiche latenti, consentendo un controllo preciso sull'output generato. | `FLOAT` |
 
 ## Output
 

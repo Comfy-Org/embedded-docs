@@ -6,9 +6,9 @@ EmptyMochiLatentVideo erzeugt einen leeren latenten Video-Tensor mit den von Ihn
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `width` | Die Breite des latenten Videos in Pixeln (Standard: 848, Werte erhöhen sich in Schritten von 16) | INT | Ja | 16 bis MAX_RESOLUTION |
-| `height` | Die Höhe des latenten Videos in Pixeln (Standard: 480, Werte erhöhen sich in Schritten von 16) | INT | Ja | 16 bis MAX_RESOLUTION |
-| `length` | Die Anzahl der Frames im latenten Video (Standard: 25, Werte erhöhen sich in Schritten von 6, beginnend bei 7) | INT | Ja | 7 bis MAX_RESOLUTION |
+| `Breite` | Die Breite des latenten Videos in Pixeln (Standard: 848, Werte erhöhen sich in Schritten von 16) | INT | Ja | 16 bis MAX_RESOLUTION |
+| `Höhe` | Die Höhe des latenten Videos in Pixeln (Standard: 480, Werte erhöhen sich in Schritten von 16) | INT | Ja | 16 bis MAX_RESOLUTION |
+| `Länge` | Die Anzahl der Frames im latenten Video (Standard: 25, Werte erhöhen sich in Schritten von 6, beginnend bei 7) | INT | Ja | 7 bis MAX_RESOLUTION |
 | `batch_size` | Die Anzahl der latenten Videos, die in einem Batch erzeugt werden sollen (Standard: 1) | INT | Nein | 1 bis 4096 |
 
 **Hinweis:** Die tatsächlichen latenten Abmessungen werden als width/8 und height/8 berechnet, die zeitliche Dimension wird als `((length - 1) // 6) + 1` berechnet, und der Tensor hat 12 Kanäle. Da `length` in Schritten von 6 ab 7 fortschreitet, sind gültige Werte 7, 13, 19, 25 und so weiter.

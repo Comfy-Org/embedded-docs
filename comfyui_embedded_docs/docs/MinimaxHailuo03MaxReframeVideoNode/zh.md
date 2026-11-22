@@ -8,7 +8,7 @@
 
 | 参数 | 描述 | 数据类型 | 必需 | 取值范围 |
 | --- | --- | --- | --- | --- |
-| `model` | 用于视频生成的模型。 | DYNAMIC_COMBO | 是 | "MiniMax H3 Max" |
+| `模型` | 用于视频生成的模型。 | DYNAMIC_COMBO | 是 | "MiniMax H3 Max" |
 
 ### MiniMax H3 Max 输入
 

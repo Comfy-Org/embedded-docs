@@ -8,7 +8,7 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `model` | 비디오 연속 생성을 위해 사용할 모델입니다. 두 모델 모두 아래와 동일한 입력을 제공합니다. | DYNAMIC_COMBO | 예 | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `모델` | 비디오 연속 생성을 위해 사용할 모델입니다. 두 모델 모두 아래와 동일한 입력을 제공합니다. | DYNAMIC_COMBO | 예 | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
 
 ### 모델 입력
 

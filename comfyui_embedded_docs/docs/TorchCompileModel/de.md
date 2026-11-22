@@ -6,7 +6,7 @@ Der TorchCompileModel-Node wendet PyTorch-Kompilierung auf ein Modell an, um des
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das zu kompilierende und zu optimierende Modell | MODEL | Ja | - |
+| `Modell` | Das zu kompilierende und zu optimierende Modell | MODEL | Ja | - |
 | `backend` | Das für die Optimierung zu verwendende PyTorch-Kompilierungs-Backend (Standard: "inductor") | STRING | Ja | "inductor"<br>"cudagraphs" |
 
 ## Ausgaben

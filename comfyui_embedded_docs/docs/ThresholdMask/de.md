@@ -7,7 +7,7 @@ Der ThresholdMask-Node wandelt eine Maske in eine binäre Maske um, indem er ein
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `mask` | Die zu verarbeitende Eingabemaske | MASK | Ja | - |
-| `value` | Der Schwellenwert für die Binarisierung (Standard: 0.5) | FLOAT | Ja | 0.0 - 1.0 |
+| `Wert` | Der Schwellenwert für die Binarisierung (Standard: 0.5) | FLOAT | Ja | 0.0 - 1.0 |
 
 ## Ausgaben
 

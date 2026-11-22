@@ -8,12 +8,12 @@ El nodo Generate Text utiliza un modelo CLIP para producir texto a partir de un 
 | --- | --- | --- | --- | --- |
 | `clip` | El modelo CLIP usado para tokenizar el prompt y generar el texto. | CLIP | Sí | - |
 | `prompt` | El prompt que guía la generación. Admite varias líneas y prompts dinámicos (predeterminado: cadena vacía). | STRING | Sí | - |
-| `images` | Grupo ampliable de hasta 50 imágenes, `image1` a `image50`, usado como contexto visual para el modelo. | AUTOGROW | No | 0 a 50 imágenes |
-| `videos` | Grupo ampliable de hasta 100 entradas de video, `video1` a `video100`. Cada video es un lote de fotogramas que se asume que están a 24 FPS y se submuestrean internamente a la velocidad de fotogramas del modelo. | AUTOGROW | No | 0 a 100 videos |
+| `imágenes` | Grupo ampliable de hasta 50 imágenes, `image1` a `image50`, usado como contexto visual para el modelo. | AUTOGROW | No | 0 a 50 imágenes |
+| `vídeos` | Grupo ampliable de hasta 100 entradas de video, `video1` a `video100`. Cada video es un lote de fotogramas que se asume que están a 24 FPS y se submuestrean internamente a la velocidad de fotogramas del modelo. | AUTOGROW | No | 0 a 100 videos |
 | `audios` | Grupo ampliable de hasta 100 entradas de audio, `audio1` a `audio100`, usado como contexto de audio para el modelo. | AUTOGROW | No | 0 a 100 archivos de audio |
 | `max_length` | Número máximo de tokens a generar (predeterminado: 512). | INT | Sí | 1 a 32768 |
 | `sampling_mode` | `on` muestrea la salida y muestra los parámetros de muestreo a continuación. `off` genera de forma codiciosa sin muestreo aleatorio. | DYNAMIC_COMBO | Sí | `"on"`<br>`"off"` |
-| `thinking` | Operar en modo de pensamiento si el modelo lo admite (predeterminado: False). | BOOLEAN | No | True o False |
+| `razonamiento` | Operar en modo de pensamiento si el modelo lo admite (predeterminado: False). | BOOLEAN | No | True o False |
 | `use_default_template` | Usar el mensaje de sistema o la plantilla de chat integrados si el modelo tiene uno (predeterminado: True). Parámetro avanzado. | BOOLEAN | No | True o False |
 | `mtp` | Decodificación especulativa con la cabeza de predicción de múltiples tokens del checkpoint. No tiene efecto sin pesos MTP. `"auto"` adapta la profundidad y la amplitud del borrador a las coincidencias de tokens observadas y al costo de ejecución; `"2"` a `"5"` fijan una profundidad de borrador constante, y los modos `tree` fijan tanto la amplitud como la profundidad. La salida muestreada mantiene una distribución correcta, pero difiere de la salida sin MTP para la misma semilla (predeterminado: `"auto"`). | COMBO | No | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"tree2s1"`<br>`"tree2s2"`<br>`"tree3s1"`<br>`"tree4s1m8"` |
 | `system_prompt` | Reemplaza el mensaje de sistema en la plantilla de chat del modelo. Se ignora cuando no se usa la plantilla predeterminada. Conecte una entrada STRING en lugar de escribir en el nodo (predeterminado: vacío). | STRING | No | - |

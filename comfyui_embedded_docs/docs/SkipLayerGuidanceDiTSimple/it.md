@@ -6,11 +6,11 @@ Versione semplice del nodo SkipLayerGuidanceDiT che modifica solo il passaggio n
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello a cui applicare la skip layer guidance | MODEL | Sì | - |
-| `double_layers` | Elenco separato da virgole degli indici dei layer double block da saltare (predefinito: "7, 8, 9") | STRING | No | - |
-| `single_layers` | Elenco separato da virgole degli indici dei layer single block da saltare (predefinito: "7, 8, 9") | STRING | No | - |
-| `start_percent` | La percentuale iniziale del processo di denoising in cui ha inizio la skip layer guidance (predefinito: 0.0) | FLOAT | No | 0.0 - 1.0 |
-| `end_percent` | La percentuale finale del processo di denoising in cui termina la skip layer guidance (predefinito: 1.0) | FLOAT | No | 0.0 - 1.0 |
+| `modello` | Il modello a cui applicare la skip layer guidance | MODEL | Sì | - |
+| `doppi livelli` | Elenco separato da virgole degli indici dei layer double block da saltare (predefinito: "7, 8, 9") | STRING | No | - |
+| `livelli singoli` | Elenco separato da virgole degli indici dei layer single block da saltare (predefinito: "7, 8, 9") | STRING | No | - |
+| `percentuale iniziale` | La percentuale iniziale del processo di denoising in cui ha inizio la skip layer guidance (predefinito: 0.0) | FLOAT | No | 0.0 - 1.0 |
+| `percentuale finale` | La percentuale finale del processo di denoising in cui termina la skip layer guidance (predefinito: 1.0) | FLOAT | No | 0.0 - 1.0 |
 
 **Nota:** La skip layer guidance viene applicata solo quando sia `double_layers` sia `single_layers` contengono indici di layer validi. Se entrambi sono vuoti, il nodo restituisce il modello originale invariato. La skip layer guidance è attiva solo quando il valore sigma del passo di denoising corrente è compreso tra `start_percent` e `end_percent` (convertiti internamente in valori sigma).
 

@@ -6,7 +6,7 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `cameras` | 可增長的相機插槽，來源為 Create Camera Info、Create Camera Orbit 或檢視器。一個相機清單會計入其中的每一台相機。 | AUTOGROW | 是 | 1 至 50 台相機 |
+| `相機` | 可增長的相機插槽，來源為 Create Camera Info、Create Camera Orbit 或檢視器。一個相機清單會計入其中的每一台相機。 | AUTOGROW | 是 | 1 至 50 台相機 |
 
 ## 輸出
 

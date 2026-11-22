@@ -10,7 +10,7 @@ OpenAI GPT Image 2.6 SVG は、OpenAI の GPT Image モデルを使用して、�
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `model` | SVG に使用する GPT Image モデル。 | DYNAMIC_COMBO | はい | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
+| `モデル` | SVG に使用する GPT Image モデル。 | DYNAMIC_COMBO | はい | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
 
 ### gpt-image-2.6-flare および gpt-image-2.6-sunburst 入力
 
@@ -18,12 +18,12 @@ OpenAI GPT Image 2.6 SVG は、OpenAI の GPT Image モデルを使用して、�
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | 描画する SVG の説明。（デフォルト: `""`） | STRING | はい | 該当なし |
-| `model.size` | SVG の描画元となる参照画像のサイズ。（デフォルト: `"1024x1024"`） | COMBO | はい | `"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"` |
-| `model.background` | 参照画像の背景。（デフォルト: `"auto"`） | COMBO | はい | `"auto"`<br>`"opaque"`<br>`"transparent"` |
-| `model.quality` | SVG の描画元となる参照画像の品質。（デフォルト: `"low"`） | COMBO | はい | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | レンダリング前にモデルが参照画像をどの程度計画するか。（デフォルト: `"high"`） | COMBO | はい | `"low"`<br>`"medium"`<br>`"high"` |
-| `model.seed` | ノードを再実行するかどうかを制御します。シードに関係なく、結果は非決定的です。（デフォルト: `42`） | INT | はい | 0～2147483647 |
+| `プロンプト` | 描画する SVG の説明。（デフォルト: `""`） | STRING | はい | 該当なし |
+| `サイズ` | SVG の描画元となる参照画像のサイズ。（デフォルト: `"1024x1024"`） | COMBO | はい | `"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"` |
+| `背景` | 参照画像の背景。（デフォルト: `"auto"`） | COMBO | はい | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `品質` | SVG の描画元となる参照画像の品質。（デフォルト: `"low"`） | COMBO | はい | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `複雑さ` | レンダリング前にモデルが参照画像をどの程度計画するか。（デフォルト: `"high"`） | COMBO | はい | `"low"`<br>`"medium"`<br>`"high"` |
+| `シード` | ノードを再実行するかどうかを制御します。シードに関係なく、結果は非決定的です。（デフォルト: `42`） | INT | はい | 0～2147483647 |
 
 ## 出力
 

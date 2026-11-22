@@ -13,34 +13,34 @@ Il nodo ModelMergeCosmos7B unisce due modelli AI tramite una fusione ponderata d
 | `x_embedder.` | Peso per il componente di embedding x (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
 | `t_embedder.` | Peso per il componente di embedding t (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
 | `affline_norm.` | Peso per il componente di normalizzazione affine (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block0.` | Peso per il blocco transformer 0 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block1.` | Peso per il blocco transformer 1 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block2.` | Peso per il blocco transformer 2 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block3.` | Peso per il blocco transformer 3 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block4.` | Peso per il blocco transformer 4 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block5.` | Peso per il blocco transformer 5 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block6.` | Peso per il blocco transformer 6 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block7.` | Peso per il blocco transformer 7 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block8.` | Peso per il blocco transformer 8 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block9.` | Peso per il blocco transformer 9 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block10.` | Peso per il blocco transformer 10 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block11.` | Peso per il blocco transformer 11 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block12.` | Peso per il blocco transformer 12 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block13.` | Peso per il blocco transformer 13 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block14.` | Peso per il blocco transformer 14 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block15.` | Peso per il blocco transformer 15 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block16.` | Peso per il blocco transformer 16 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block17.` | Peso per il blocco transformer 17 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block18.` | Peso per il blocco transformer 18 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block19.` | Peso per il blocco transformer 19 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block20.` | Peso per il blocco transformer 20 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block21.` | Peso per il blocco transformer 21 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block22.` | Peso per il blocco transformer 22 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block23.` | Peso per il blocco transformer 23 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block24.` | Peso per il blocco transformer 24 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block25.` | Peso per il blocco transformer 25 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block26.` | Peso per il blocco transformer 26 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
-| `blocks.block27.` | Peso per il blocco transformer 27 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco0.` | Peso per il blocco transformer 0 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco1.` | Peso per il blocco transformer 1 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco2.` | Peso per il blocco transformer 2 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco3.` | Peso per il blocco transformer 3 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco4.` | Peso per il blocco transformer 4 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco5.` | Peso per il blocco transformer 5 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco6.` | Peso per il blocco transformer 6 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco7.` | Peso per il blocco transformer 7 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco8.` | Peso per il blocco transformer 8 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco9.` | Peso per il blocco transformer 9 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco10.` | Peso per il blocco transformer 10 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco11.` | Peso per il blocco transformer 11 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco12.` | Peso per il blocco transformer 12 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco13.` | Peso per il blocco transformer 13 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco14.` | Peso per il blocco transformer 14 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco15.` | Peso per il blocco transformer 15 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco16.` | Peso per il blocco transformer 16 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco17.` | Peso per il blocco transformer 17 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco18.` | Peso per il blocco transformer 18 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco19.` | Peso per il blocco transformer 19 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco20.` | Peso per il blocco transformer 20 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco21.` | Peso per il blocco transformer 21 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco22.` | Peso per il blocco transformer 22 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco23.` | Peso per il blocco transformer 23 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco24.` | Peso per il blocco transformer 24 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco25.` | Peso per il blocco transformer 25 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco26.` | Peso per il blocco transformer 26 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
+| `blocco27.` | Peso per il blocco transformer 27 (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
 | `final_layer.` | Peso per il componente del layer finale (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 |
 
 Tutti i parametri di peso accettano valori da 0.0 a 1.0 con passi di 0.01 e hanno valore predefinito 1.0.

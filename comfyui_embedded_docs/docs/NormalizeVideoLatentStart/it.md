@@ -6,9 +6,9 @@ Questo nodo regola i primi frame di un latent video per renderli più simili ai 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `latent` | La rappresentazione latente del video da elaborare. | LATENT | Sì | - |
-| `start_frame_count` | Numero di frame latenti da normalizzare, contati dall'inizio (predefinito: 4). | INT | Sì | 1 a 16384 (risoluzione massima) |
-| `reference_frame_count` | Numero di frame latenti dopo i frame iniziali da usare come riferimento (predefinito: 5). | INT | Sì | 1 a 16384 (risoluzione massima) |
+| `latente` | La rappresentazione latente del video da elaborare. | LATENT | Sì | - |
+| `numero frame iniziali` | Numero di frame latenti da normalizzare, contati dall'inizio (predefinito: 4). | INT | Sì | 1 a 16384 (risoluzione massima) |
+| `numero frame di riferimento` | Numero di frame latenti dopo i frame iniziali da usare come riferimento (predefinito: 5). | INT | Sì | 1 a 16384 (risoluzione massima) |
 
 **Nota:** I frame di riferimento vengono presi subito dopo i frame indicati da `start_frame_count`. Se sono disponibili meno frame di quanti ne richieda `reference_frame_count`, il nodo usa tutti quelli disponibili (al massimo uno in meno rispetto al numero totale di frame del latent). Se il latent video ha un solo frame, non viene eseguita alcuna normalizzazione e il latent originale viene restituito invariato.
 

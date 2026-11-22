@@ -6,7 +6,7 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model` | 要使用的 Pruna 视频模型。选择模型后，其输入项会在下方展开。 | DYNAMIC_COMBO | 是 | `"p-video-2-pro-reference"` |
+| `模型` | 要使用的 Pruna 视频模型。选择模型后，其输入项会在下方展开。 | DYNAMIC_COMBO | 是 | `"p-video-2-pro-reference"` |
 
 ### P-Video-2 Pro Reference 输入
 
@@ -15,16 +15,16 @@
 | `model.images` | 可增长的参考图像槽位（`image_1`、`image_2`……），在提示词中按连接顺序以 `@Image1` 到 `@Image9` 引用。最多 9 张图像，包含首帧和尾帧。 | AUTOGROW | 否 | 0 到 9 张图像 |
 | `model.videos` | 可增长的参考视频槽位（`video_1`、`video_2`……），以 `@Video1` 到 `@Video3` 引用。每段时长 2 到 15 秒，最高 60 fps，总计 15 秒。高于 1080p 的视频会被缩小。 | AUTOGROW | 否 | 0 到 3 个视频 |
 | `model.audios` | 可增长的参考音频槽位（`audio_1`、`audio_2`……），以 `@Audio1` 到 `@Audio3` 引用。总计最长 15 秒。 | AUTOGROW | 否 | 0 到 3 段音频 |
-| `model.prompt` | 描述视频内容。使用 `@Image1`、`@Video1` 或 `@Audio1` 引用参考素材（默认：空）。最多 5000 个字符。 | STRING | 是 | 1 到 5000 个字符 |
+| `提示词` | 描述视频内容。使用 `@Image1`、`@Video1` 或 `@Audio1` 引用参考素材（默认：空）。最多 5000 个字符。 | STRING | 是 | 1 到 5000 个字符 |
 | `model.first_frame` | 视频起始画面所用的图像。计入 9 张图像的限制。 | IMAGE | 否 | - |
 | `model.last_frame` | 视频结束画面所用的图像。计入 9 张图像的限制。 | IMAGE | 否 | - |
-| `model.keep_audio` | 将连接的音频用作配乐，并生成与之匹配的视频（默认：False）。需要恰好一段音频：音频较短时，其后由生成的音效补足；音频较长时，会被裁剪至视频时长。 | BOOLEAN | 是 | `True`<br>`False` |
-| `model.duration` | 视频时长，单位为秒（默认：`"5"`）。 | COMBO | 是 | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"` |
-| `model.resolution` | 输出分辨率（默认：`"768p"`）。1080p、2k 和 4k 会对生成的 768p 视频进行放大。 | COMBO | 是 | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
-| `model.mode` | `"cost"` 更便宜，`"speed"` 渲染更快（默认：`"speed"`）。 | COMBO | 是 | `"cost"`<br>`"speed"` |
-| `model.aspect_ratio` | 输出视频的宽高比（默认：`"16:9"`）。`"adaptive"` 会采用各参考素材中最常见的比例；当开启 `enhance_prompt` 时，则由重写后的提示词决定比例。 | COMBO | 是 | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"4:3"`<br>`"3:4"`<br>`"3:2"`<br>`"2:3"`<br>`"1:1"` |
-| `model.enhance_prompt` | 在生成前对提示词进行更详细的改写；`"max"` 速度更慢（默认：`"turbo"`）。当提示词按编号引用参考素材时，请保持开启；使用首帧或尾帧时始终采用 `"turbo"`。高级设置。 | COMBO | 是 | `"off"`<br>`"turbo"`<br>`"max"` |
-| `model.seed` | 生成所用的随机种子（默认：42）。只有在 `model.enhance_prompt` 关闭时，相同的种子才能完全复现结果。 | INT | 是 | 0 到 2147483647<br>步长：1 |
+| `keep_audio` | 将连接的音频用作配乐，并生成与之匹配的视频（默认：False）。需要恰好一段音频：音频较短时，其后由生成的音效补足；音频较长时，会被裁剪至视频时长。 | BOOLEAN | 是 | `True`<br>`False` |
+| `时长` | 视频时长，单位为秒（默认：`"5"`）。 | COMBO | 是 | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"` |
+| `分辨率` | 输出分辨率（默认：`"768p"`）。1080p、2k 和 4k 会对生成的 768p 视频进行放大。 | COMBO | 是 | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
+| `模式` | `"cost"` 更便宜，`"speed"` 渲染更快（默认：`"speed"`）。 | COMBO | 是 | `"cost"`<br>`"speed"` |
+| `aspect_ratio` | 输出视频的宽高比（默认：`"16:9"`）。`"adaptive"` 会采用各参考素材中最常见的比例；当开启 `enhance_prompt` 时，则由重写后的提示词决定比例。 | COMBO | 是 | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"4:3"`<br>`"3:4"`<br>`"3:2"`<br>`"2:3"`<br>`"1:1"` |
+| `enhance_prompt` | 在生成前对提示词进行更详细的改写；`"max"` 速度更慢（默认：`"turbo"`）。当提示词按编号引用参考素材时，请保持开启；使用首帧或尾帧时始终采用 `"turbo"`。高级设置。 | COMBO | 是 | `"off"`<br>`"turbo"`<br>`"max"` |
+| `种子` | 生成所用的随机种子（默认：42）。只有在 `model.enhance_prompt` 关闭时，相同的种子才能完全复现结果。 | INT | 是 | 0 到 2147483647<br>步长：1 |
 
 **说明：**
 

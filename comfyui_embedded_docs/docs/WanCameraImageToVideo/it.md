@@ -6,16 +6,16 @@ Il nodo WanCameraImageToVideo prepara i dati di condizionamento e latent per la 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | Prompt di condizionamento positivi per la generazione video | CONDITIONING | Sì | - |
-| `negative` | Prompt di condizionamento negativi da evitare nella generazione video | CONDITIONING | Sì | - |
+| `positivo` | Prompt di condizionamento positivi per la generazione video | CONDITIONING | Sì | - |
+| `negativo` | Prompt di condizionamento negativi da evitare nella generazione video | CONDITIONING | Sì | - |
 | `vae` | Modello VAE per codificare immagini nello spazio latente | VAE | Sì | - |
-| `width` | Larghezza del video di output in pixel (predefinito: 832, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
-| `height` | Altezza del video di output in pixel (predefinito: 480, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
-| `length` | Numero di frame nella sequenza video (predefinito: 81, passo: 4) | INT | Sì | da 1 a MAX_RESOLUTION |
-| `batch_size` | Numero di video da generare simultaneamente (predefinito: 1) | INT | Sì | da 1 a 4096 |
+| `larghezza` | Larghezza del video di output in pixel (predefinito: 832, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
+| `altezza` | Altezza del video di output in pixel (predefinito: 480, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
+| `lunghezza` | Numero di frame nella sequenza video (predefinito: 81, passo: 4) | INT | Sì | da 1 a MAX_RESOLUTION |
+| `dimensione_batch` | Numero di video da generare simultaneamente (predefinito: 1) | INT | Sì | da 1 a 4096 |
 | `clip_vision_output` | Output CLIP vision opzionale per condizionamento aggiuntivo | CLIP_VISION_OUTPUT | No | - |
-| `start_image` | Immagine iniziale opzionale per inizializzare la sequenza video. Se fornita, vengono usati solo i primi `length` frame e l'immagine viene ridimensionata per corrispondere a `width` e `height` specificati. I primi frame della sequenza vengono codificati nel latent e viene applicata una maschera per fondere i frame iniziali con il contenuto generato. | IMAGE | No | - |
-| `camera_conditions` | Condizioni di embedding della camera opzionali per la generazione video. Se fornite, queste condizioni vengono applicate sia al condizionamento positivo sia a quello negativo. | WAN_CAMERA_EMBEDDING | No | - |
+| `immagine_iniziale` | Immagine iniziale opzionale per inizializzare la sequenza video. Se fornita, vengono usati solo i primi `length` frame e l'immagine viene ridimensionata per corrispondere a `width` e `height` specificati. I primi frame della sequenza vengono codificati nel latent e viene applicata una maschera per fondere i frame iniziali con il contenuto generato. | IMAGE | No | - |
+| `condizioni_camera` | Condizioni di embedding della camera opzionali per la generazione video. Se fornite, queste condizioni vengono applicate sia al condizionamento positivo sia a quello negativo. | WAN_CAMERA_EMBEDDING | No | - |
 
 **Nota:** Quando viene fornito `start_image`, il nodo imposta i valori `concat_latent_image` e `concat_mask` sia sul condizionamento `positive` sia su quello `negative`. I parametri `camera_conditions` e `clip_vision_output` sono opzionali, ma se forniti modificano il condizionamento sia per i prompt positivi sia per quelli negativi.
 

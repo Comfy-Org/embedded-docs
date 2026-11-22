@@ -6,13 +6,13 @@ Il nodo RegexExtract cerca pattern nel testo usando espressioni regolari. Può t
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `string` | Il testo di input in cui cercare i pattern | STRING | Sì | - |
-| `regex_pattern` | Il pattern dell'espressione regolare da cercare | STRING | Sì | - |
-| `mode` | La modalità di estrazione determina quali parti delle corrispondenze vengono restituite (predefinito: "First Match") | COMBO | Sì | "First Match"<br>"All Matches"<br>"First Group"<br>"All Groups" |
-| `case_insensitive` | Indica se ignorare la distinzione tra maiuscole e minuscole durante la corrispondenza (predefinito: True) | BOOLEAN | No | - |
-| `multiline` | Indica se trattare la stringa come più righe (predefinito: False) | BOOLEAN | No | - |
+| `stringa` | Il testo di input in cui cercare i pattern | STRING | Sì | - |
+| `pattern_regex` | Il pattern dell'espressione regolare da cercare | STRING | Sì | - |
+| `modalità` | La modalità di estrazione determina quali parti delle corrispondenze vengono restituite (predefinito: "First Match") | COMBO | Sì | "First Match"<br>"All Matches"<br>"First Group"<br>"All Groups" |
+| `maiuscole/minuscole` | Indica se ignorare la distinzione tra maiuscole e minuscole durante la corrispondenza (predefinito: True) | BOOLEAN | No | - |
+| `multilinea` | Indica se trattare la stringa come più righe (predefinito: False) | BOOLEAN | No | - |
 | `dotall` | Indica se il punto (.) corrisponde ai caratteri di nuova riga (predefinito: False) | BOOLEAN | No | - |
-| `group_index` | L'indice del gruppo di cattura da estrarre quando si usano le modalità di gruppo (predefinito: 1) | INT | No | 0-100 |
+| `indice_gruppo` | L'indice del gruppo di cattura da estrarre quando si usano le modalità di gruppo (predefinito: 1) | INT | No | 0-100 |
 
 **Nota:** Quando si usano le modalità "First Group" o "All Groups", il parametro `group_index` specifica quale gruppo di cattura estrarre. Il gruppo 0 rappresenta l'intera corrispondenza, mentre i gruppi 1+ rappresentano i gruppi di cattura numerati nel pattern dell'espressione regolare.
 

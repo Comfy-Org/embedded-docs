@@ -6,20 +6,20 @@ Il nodo Add Layer trasforma un'immagine di input in un livello e la posiziona su
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `layers` | Stack di livelli a cui aggiungere. Lascia non connesso per iniziare un nuovo stack. | LAYERS | No | — |
-| `image` | Contenuto del livello alla sua dimensione nativa. Un batch si espande in livelli consecutivi. | IMAGE | Sì | — |
-| `mask` | Maschera di trasparenza per questo livello. Le aree mascherate (valore 1) diventano trasparenti, moltiplicandosi con qualsiasi canale alpha già presente nell'immagine. | MASK | No | — |
-| `name` | Nome del livello mostrato nell'editor del compositor. (predefinito: "") | STRING | No | — |
+| `livelli` | Stack di livelli a cui aggiungere. Lascia non connesso per iniziare un nuovo stack. | LAYERS | No | — |
+| `immagine` | Contenuto del livello alla sua dimensione nativa. Un batch si espande in livelli consecutivi. | IMAGE | Sì | — |
+| `maschera` | Maschera di trasparenza per questo livello. Le aree mascherate (valore 1) diventano trasparenti, moltiplicandosi con qualsiasi canale alpha già presente nell'immagine. | MASK | No | — |
+| `nome` | Nome del livello mostrato nell'editor del compositor. (predefinito: "") | STRING | No | — |
 | `x` | Posizionamento orizzontale iniziale sul canvas. (predefinito: 0) | INT | No | -MAX_RESOLUTION a MAX_RESOLUTION |
 | `y` | Posizionamento verticale iniziale sul canvas. (predefinito: 0) | INT | No | -MAX_RESOLUTION a MAX_RESOLUTION |
-| `opacity` | Opacità iniziale del livello. (predefinito: 1.0) | FLOAT | No | 0.0 a 1.0 (passo: 0.01) |
-| `blend_mode` | Modalità di fusione iniziale, applicata rispetto ai livelli sottostanti. Sul livello in basso sopra lo sfondo trasparente predefinito, le modalità diverse da normal producono trasparenza. (predefinito: "normal") | COMBO | No | Più opzioni disponibili |
-| `rotation` | Rotazione iniziale in gradi, in senso orario. (predefinito: 0.0) | FLOAT | No | -360.0 a 360.0 (passo: 1.0) |
-| `width` | Larghezza di visualizzazione iniziale. 0 mantiene la larghezza nativa dell'immagine. (predefinito: 0) | INT | No | 0 a MAX_RESOLUTION |
-| `height` | Altezza di visualizzazione iniziale. 0 mantiene l'altezza nativa dell'immagine. (predefinito: 0) | INT | No | 0 a MAX_RESOLUTION |
+| `opacità` | Opacità iniziale del livello. (predefinito: 1.0) | FLOAT | No | 0.0 a 1.0 (passo: 0.01) |
+| `modalità di fusione` | Modalità di fusione iniziale, applicata rispetto ai livelli sottostanti. Sul livello in basso sopra lo sfondo trasparente predefinito, le modalità diverse da normal producono trasparenza. (predefinito: "normal") | COMBO | No | Più opzioni disponibili |
+| `rotazione` | Rotazione iniziale in gradi, in senso orario. (predefinito: 0.0) | FLOAT | No | -360.0 a 360.0 (passo: 1.0) |
+| `larghezza` | Larghezza di visualizzazione iniziale. 0 mantiene la larghezza nativa dell'immagine. (predefinito: 0) | INT | No | 0 a MAX_RESOLUTION |
+| `altezza` | Altezza di visualizzazione iniziale. 0 mantiene l'altezza nativa dell'immagine. (predefinito: 0) | INT | No | 0 a MAX_RESOLUTION |
 | `z_index` | Sovrascrittura dell'impilamento. I livelli vengono ordinati in modo stabile in base a z_index; i valori uguali mantengono il loro ordine nella lista. (predefinito: 0) | INT | No | -1000 a 1000 |
-| `flip_h` | Capovolgi il livello orizzontalmente. (predefinito: False) | BOOLEAN | No | false / true |
-| `flip_v` | Capovolgi il livello verticalmente. (predefinito: False) | BOOLEAN | No | false / true |
+| `ribalta_orizzontale` | Capovolgi il livello orizzontalmente. (predefinito: False) | BOOLEAN | No | false / true |
+| `ribalta_verticale` | Capovolgi il livello verticalmente. (predefinito: False) | BOOLEAN | No | false / true |
 
 Note:
 - Solo `image` è obbligatorio; tutti gli altri input sono opzionali.

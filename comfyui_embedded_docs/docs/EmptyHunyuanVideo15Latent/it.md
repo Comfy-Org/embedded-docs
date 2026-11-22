@@ -6,10 +6,10 @@ Questo nodo crea un tensore latente vuoto formattato specificamente per l'uso co
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `width` | La larghezza del fotogramma video in pixel. | INT | Sì | - |
-| `height` | L'altezza del fotogramma video in pixel. | INT | Sì | - |
-| `length` | Il numero di fotogrammi nella sequenza video. | INT | Sì | - |
-| `batch_size` | Il numero di campioni video da generare in un batch (predefinito: 1). | INT | No | - |
+| `larghezza` | La larghezza del fotogramma video in pixel. | INT | Sì | - |
+| `altezza` | L'altezza del fotogramma video in pixel. | INT | Sì | - |
+| `lunghezza` | Il numero di fotogrammi nella sequenza video. | INT | Sì | - |
+| `dimensione_batch` | Il numero di campioni video da generare in un batch (predefinito: 1). | INT | No | - |
 
 **Nota:** Le dimensioni spaziali del tensore latente generato vengono calcolate dividendo i valori di input `width` e `height` per 16 (questo nodo usa un fattore di scala spaziale di 16 anziché 8). La dimensione temporale (fotogrammi) viene calcolata come `((length - 1) // 4) + 1`. Questi calcoli usano la divisione intera, quindi `width` e `height` dovrebbero essere multipli di 16 per evitare troncamenti.
 

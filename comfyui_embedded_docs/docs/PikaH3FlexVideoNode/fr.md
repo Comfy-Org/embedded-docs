@@ -6,13 +6,13 @@ Ce nœud génère une vidéo avec un audio synchronisé à partir d’un prompt 
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `prompt` | Ce qui se passe dans la vidéo, y compris le son que vous souhaitez. Ne doit pas être vide. Par défaut : "" (chaîne vide). | STRING | Oui | 1 à 8000 caractères |
-| `first_frame` | Image facultative utilisée comme image d’ouverture. La connecter lance le mode image vers vidéo au lieu de texte vers vidéo. | IMAGE | Non | - |
-| `last_frame` | Image facultative utilisée comme image de clôture. Peut être utilisée avec `first_frame` ou seule. | IMAGE | Non | - |
-| `resolution` | Résolution de sortie. `"1080p"` et au-delà sont rendus en 768p puis agrandis une fois. La même graine en 480p donne une vidéo différente. Par défaut : `"768p"`. | COMBO | Oui | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
-| `aspect_ratio` | Ratio d’image de sortie. `"auto"` suit la première image connectée, sinon le prompt. Par défaut : `"auto"`. | COMBO | Oui | `"auto"`<br>`"21:9"`<br>`"16:9"`<br>`"3:2"`<br>`"4:3"`<br>`"5:4"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"9:21"` |
-| `duration` | Durée du clip en secondes. La durée de sortie suit une grille d’images : 5 secondes donnent 124 images, soit environ 5,17 secondes. Par défaut : 5. | INT | Oui | 5 à 15 secondes |
-| `rewrite_prompt` | Laisse Pika enrichir d’abord le prompt. La même graine donne alors une vidéo différente à chaque exécution. Par défaut : False. | BOOLEAN | Oui | true<br>false |
+| `invite ტექստuelle` | Ce qui se passe dans la vidéo, y compris le son que vous souhaitez. Ne doit pas être vide. Par défaut : "" (chaîne vide). | STRING | Oui | 1 à 8000 caractères |
+| `première_image` | Image facultative utilisée comme image d’ouverture. La connecter lance le mode image vers vidéo au lieu de texte vers vidéo. | IMAGE | Non | - |
+| `dernière_image` | Image facultative utilisée comme image de clôture. Peut être utilisée avec `first_frame` ou seule. | IMAGE | Non | - |
+| `résolution` | Résolution de sortie. `"1080p"` et au-delà sont rendus en 768p puis agrandis une fois. La même graine en 480p donne une vidéo différente. Par défaut : `"768p"`. | COMBO | Oui | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
+| `rapport_d’aspect` | Ratio d’image de sortie. `"auto"` suit la première image connectée, sinon le prompt. Par défaut : `"auto"`. | COMBO | Oui | `"auto"`<br>`"21:9"`<br>`"16:9"`<br>`"3:2"`<br>`"4:3"`<br>`"5:4"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"9:21"` |
+| `durée` | Durée du clip en secondes. La durée de sortie suit une grille d’images : 5 secondes donnent 124 images, soit environ 5,17 secondes. Par défaut : 5. | INT | Oui | 5 à 15 secondes |
+| `réécrire_l’invite` | Laisse Pika enrichir d’abord le prompt. La même graine donne alors une vidéo différente à chaque exécution. Par défaut : False. | BOOLEAN | Oui | true<br>false |
 | `seed` | Graine d’échantillonnage. Avec `rewrite_prompt` désactivé, la même graine reproduit exactement la vidéo, bien qu’une exécution locale avec la même graine donne un résultat différent. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
 
 **Contraintes :**

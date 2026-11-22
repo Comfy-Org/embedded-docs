@@ -6,7 +6,7 @@ Dieser Node implementiert die Epsilon-Skalierungsmethode aus dem Forschungspapie
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Modell, auf das der Epsilon-Skalierungs-Patch angewendet wird. | MODEL | Ja | - |
+| `Modell` | Das Modell, auf das der Epsilon-Skalierungs-Patch angewendet wird. | MODEL | Ja | - |
 | `scaling_factor` | Der Faktor, um den das vorhergesagte Rauschen skaliert wird. Ein Wert größer als 1.0 reduziert das Rauschen, während ein Wert kleiner als 1.0 es erhöht (Standard: 1.005). Dies ist ein erweiterter Parameter. | FLOAT | Nein | 0.5 - 1.5 (Schrittweite: 0.001) |
 
 Hinweis: Wenn `scaling_factor` auf 0 gesetzt wird, ersetzt der Node ihn automatisch durch einen sehr kleinen Wert (1e-9), um eine Division durch null zu verhindern. Der minimale Wert der Benutzeroberfläche von 0.5 verhindert normalerweise, dass dies geschieht.

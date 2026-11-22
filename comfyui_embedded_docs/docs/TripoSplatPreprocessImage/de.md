@@ -6,10 +6,10 @@ Dieser Node schneidet jedes Eingabebild auf ein zentriertes Quadrat auf schwarze
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das/die Eingabebild(er), die vorverarbeitet werden sollen. | IMAGE | Ja | - |
-| `mask` | Alpha-Maske für das Bild, die verwendet wird, um den Zuschneidebereich zu bestimmen. | MASK | Ja | - |
-| `erode_radius` | Erodiert die Alpha-Matte um diesen Pixelradius vor dem Zuschneiden (vermeidet Randüberlauf). Standard: 1. Auf 0 setzen, um die Erosion zu deaktivieren. | INT | Ja | 0 bis 16 |
-| `size` | Quadratische Bildgröße. Das Modell ist auf 1024 trainiert; andere Größen funktionieren, liegen jedoch außerhalb der Verteilung. Standard: 1024. | INT | Ja | 256 bis 4096 (Schrittweite 16) |
+| `Bild` | Das/die Eingabebild(er), die vorverarbeitet werden sollen. | IMAGE | Ja | - |
+| `Maske` | Alpha-Maske für das Bild, die verwendet wird, um den Zuschneidebereich zu bestimmen. | MASK | Ja | - |
+| `Erosionsradius` | Erodiert die Alpha-Matte um diesen Pixelradius vor dem Zuschneiden (vermeidet Randüberlauf). Standard: 1. Auf 0 setzen, um die Erosion zu deaktivieren. | INT | Ja | 0 bis 16 |
+| `Größe` | Quadratische Bildgröße. Das Modell ist auf 1024 trainiert; andere Größen funktionieren, liegen jedoch außerhalb der Verteilung. Standard: 1024. | INT | Ja | 256 bis 4096 (Schrittweite 16) |
 
 **Hinweis:** Die Eingabe `mask` ist erforderlich und muss bereitgestellt werden. Wenn die Maske eine andere Batch-Größe als das Bild hat, wird sie automatisch wiederholt, um sie anzugleichen. Wenn die Maskenabmessungen von den Bildabmessungen abweichen, wird die Maske mithilfe bilinearer Interpolation an das Bild angepasst. Die Ausgabegröße wird automatisch auf das nächstniedrigere Vielfache von 16 abgerundet (Minimum 16), um die Kompatibilität mit den Patch-Anforderungen von DINOv3 und den Stride-Anforderungen des Flux2-VAE sicherzustellen. Der Node löst einen Fehler aus, wenn die Maske keine Vordergrundpixel enthält (leere Maske). Wenn `erode_radius` 0 ist, wird keine Erosion angewendet. Der quadratische Zuschnitt wird auf dem Alpha-Begrenzungsrahmen der Maske zentriert und auf das 1,2-Fache der größeren Abmessung des Begrenzungsrahmens dimensioniert; alle Bereiche außerhalb der Bildgrenzen werden mit Schwarz gefüllt.
 

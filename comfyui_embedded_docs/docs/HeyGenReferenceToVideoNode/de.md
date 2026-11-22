@@ -6,7 +6,7 @@ Erzeugen Sie mit HeyGen Video 1.0 ein Video mit synchronisiertem Dialog und Ton 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modellversion, die für die Generierung verwendet wird. (Standard: `"heygen-video-1"`) | DYNAMIC_COMBO | Ja | `"heygen-video-1"` |
+| `Modell` | Modellversion, die für die Generierung verwendet wird. (Standard: `"heygen-video-1"`) | DYNAMIC_COMBO | Ja | `"heygen-video-1"` |
 | `prompt` | Beschreibung des Videos, einschließlich etwaigem Dialog. Verweisen Sie auf verbundene Referenzen als @Image1, @Video1, @Audio1, nummeriert pro Typ in Eingabereihenfolge. (Standard: leere Zeichenkette) | STRING | Ja | 1 bis 16000 Zeichen |
 | `duration` | Dauer des Ausgabevideos in Sekunden. Mehr als 15 Sekunden sind nur ohne Referenzbilder und -videos verfügbar. (Standard: 5) | INT | Ja | 5 bis 30 |
 | `resolution` | Ausgabeauflösung. 1080p und 2k erfordern das Seitenverhältnis 16:9 oder 9:16; 'auto' funktioniert bei diesen Auflösungen nur ohne Referenzen. (Standard: `"768p"`) | COMBO | Ja | `"768p"`<br>`"480p"`<br>`"1080p"`<br>`"2k"` |

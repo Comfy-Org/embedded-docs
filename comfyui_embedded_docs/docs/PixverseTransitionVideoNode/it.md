@@ -6,12 +6,12 @@ Genera un video di transizione tra due immagini di input utilizzando l'API PixVe
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `first_frame` | L'immagine iniziale per la transizione video | IMAGE | Sì | - |
-| `last_frame` | L'immagine finale per la transizione video | IMAGE | Sì | - |
+| `primo_frame` | L'immagine iniziale per la transizione video | IMAGE | Sì | - |
+| `ultimo_frame` | L'immagine finale per la transizione video | IMAGE | Sì | - |
 | `prompt` | Prompt per la generazione del video (predefinito: stringa vuota) | STRING | Sì | - |
-| `quality` | Impostazione della qualità video (predefinito: `"540p"`) | COMBO | Sì | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
-| `duration_seconds` | Durata del video in secondi | COMBO | Sì | `5`<br>`8` |
-| `motion_mode` | Stile di movimento per la transizione (predefinito: `"normal"`) | COMBO | Sì | `"normal"`<br>`"fast"` |
+| `qualità` | Impostazione della qualità video (predefinito: `"540p"`) | COMBO | Sì | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+| `durata_secondi` | Durata del video in secondi | COMBO | Sì | `5`<br>`8` |
+| `modalità_movimento` | Stile di movimento per la transizione (predefinito: `"normal"`) | COMBO | Sì | `"normal"`<br>`"fast"` |
 | `seed` | Seed per la generazione del video (predefinito: 0) | INT | Sì | 0 a 2147483647 |
 | `negative_prompt` | Una descrizione testuale opzionale degli elementi indesiderati in un'immagine (predefinito: stringa vuota) | STRING | No | - |
 

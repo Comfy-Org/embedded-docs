@@ -6,7 +6,7 @@ Questo nodo unisce più elenchi di testo in un unico elenco combinato. È proget
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `texts` | Gli elenchi di testo da unire. È possibile collegare più elenchi all'input e verranno concatenati in uno solo. | STRING | Sì | N/A |
+| `testi` | Gli elenchi di testo da unire. È possibile collegare più elenchi all'input e verranno concatenati in uno solo. | STRING | Sì | N/A |
 
 **Nota:** Questo nodo è configurato come processo di gruppo (`is_group_process = True`), il che significa che gestisce automaticamente input di più elenchi concatenandoli prima dell'esecuzione della funzione di elaborazione principale.
 

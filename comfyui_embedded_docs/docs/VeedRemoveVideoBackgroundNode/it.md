@@ -6,7 +6,7 @@ Ritaglia il soggetto da un video con VEED e restituisce i fotogrammi insieme a u
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Modello di segmentazione da usare: `"standard"` per qualsiasi sfondo con i bordi migliori e output fino a 3840x2160, `"fast"` per un risultato più rapido fino a 1920x1080, o `"green screen"` per rimuovere uno sfondo verde fino a 3840x2160. I video più grandi vengono ridimensionati. Selezionando un'opzione vengono mostrati i relativi parametri. | DYNAMIC_COMBO | Sì | `"standard"`<br>`"fast"`<br>`"green screen"` |
+| `modello` | Modello di segmentazione da usare: `"standard"` per qualsiasi sfondo con i bordi migliori e output fino a 3840x2160, `"fast"` per un risultato più rapido fino a 1920x1080, o `"green screen"` per rimuovere uno sfondo verde fino a 3840x2160. I video più grandi vengono ridimensionati. Selezionando un'opzione vengono mostrati i relativi parametri. | DYNAMIC_COMBO | Sì | `"standard"`<br>`"fast"`<br>`"green screen"` |
 | `video` | Il video da cui ritagliare il soggetto. Fino a 60 secondi. | VIDEO | Sì | Fino a 60 secondi |
 | `refine_foreground_edges` | Bordi più puliti su capelli, pelo e dettagli fini. Disattivarlo riduce il prezzo. Disponibile per `"standard"` e `"fast"` (predefinito: True). | BOOLEAN | Sì | false<br>true |
 | `subject_is_person` | Disattiva quando il soggetto è un oggetto o un animale. Disponibile per `"standard"` e `"fast"` (predefinito: True). | BOOLEAN | Sì | false<br>true |

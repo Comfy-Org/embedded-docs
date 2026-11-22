@@ -6,8 +6,8 @@ El nodo LTXV Audio VAE Decode convierte una representación latente de audio de 
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `samples` | El latente a decodificar. | LATENT | Sí | N/A |
-| `audio_vae` | El modelo Audio VAE utilizado para decodificar el latente. | VAE | Sí | N/A |
+| `muestras` | El latente a decodificar. | LATENT | Sí | N/A |
+| `vae_de_audio` | El modelo Audio VAE utilizado para decodificar el latente. | VAE | Sí | N/A |
 
 **Nota:** Si el latente proporcionado está anidado (contiene múltiples latentes), el nodo utiliza automáticamente el último latente de la secuencia para la decodificación.
 

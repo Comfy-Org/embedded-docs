@@ -7,8 +7,8 @@ Der Node „Center Crop Images“ schneidet ein Bild von der Mitte auf eine ange
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `image` | Das Eingabebild, das zugeschnitten werden soll. | IMAGE | Ja | - |
-| `width` | Die Breite des Zuschnittbereichs (Standard: 512). | INT | Ja | 1 bis 8192 |
-| `height` | Die Höhe des Zuschnittbereichs (Standard: 512). | INT | Ja | 1 bis 8192 |
+| `Breite` | Die Breite des Zuschnittbereichs (Standard: 512). | INT | Ja | 1 bis 8192 |
+| `Höhe` | Die Höhe des Zuschnittbereichs (Standard: 512). | INT | Ja | 1 bis 8192 |
 
 ## Ausgaben
 

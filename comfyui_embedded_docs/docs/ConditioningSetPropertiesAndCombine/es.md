@@ -7,7 +7,7 @@ El nodo `ConditioningSetPropertiesAndCombine` modifica datos de condicionamiento
 | Parámetro | Descripción | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango |
 | --- | --- | --- | --- | --- | --- |
 | `cond` | Los datos de condicionamiento originales a modificar | CONDITIONING | Requerido | - | - |
-| `cond_NEW` | Los nuevos datos de condicionamiento que proporcionan las propiedades a aplicar | CONDITIONING | Requerido | - | - |
+| `cond_NUEVO` | Los nuevos datos de condicionamiento que proporcionan las propiedades a aplicar | CONDITIONING | Requerido | - | - |
 | `fuerza` | Controla la intensidad de las nuevas propiedades de condicionamiento | FLOAT | Requerido | 1.0 | 0.0 - 10.0 |
 | `establecer_area_cond` | Determina cómo se aplica el área de condicionamiento | STRING | Requerido | default | ["default", "mask bounds"] |
 | `máscara` | Máscara opcional para definir áreas específicas para el condicionamiento | MASK | Opcional | - | - |

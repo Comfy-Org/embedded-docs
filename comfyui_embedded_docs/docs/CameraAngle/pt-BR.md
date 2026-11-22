@@ -11,7 +11,7 @@ Use-o para enquadrar um render antes de gerar, ou para descrever um ponto de vis
 | `horizontal_angle` | Azimute ao redor do sujeito em graus: 0 é a frente, 90 o lado direito e 180 a parte de trás. (padrão: 0) | INT | Sim | 0 a 360 |
 | `vertical_angle` | Elevação em graus. Valores negativos olham de baixo para cima; valores positivos olham de cima para baixo. (padrão: 0) | INT | Sim | -30 a 60 |
 | `zoom` | Zoom da lente no sujeito: 0 é um plano aberto, 10 é um close-up. O valor também é propagado para `camera_info.zoom`. (padrão: 5.0) | FLOAT | Sim | 0.0 a 10.0 (passo 0.1) |
-| `image` | Imagem de referência opcional, exibida na face frontal do cubo do sujeito na pré-visualização 3D. | IMAGE | Não | - |
+| `imagem` | Imagem de referência opcional, exibida na face frontal do cubo do sujeito na pré-visualização 3D. | IMAGE | Não | - |
 
 ## Saídas
 

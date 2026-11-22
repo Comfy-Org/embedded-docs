@@ -8,13 +8,13 @@ Flux Video Upscale vergrößert ein Video mit FLUX-Superauflösung, entweder auf
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `video` | Quellclip von 1 bis 20 Sekunden und höchstens 50 MB, mindestens 64x64 Pixel, mit einem Seitenverhältnis zwischen 1:4 und 4:1. Die Ausgabe wird mit 24 fps gerendert und auf etwa 14,4 Megapixel pro Frame begrenzt. | VIDEO | Ja | 1 bis 20 Sekunden Dauer; Seitenverhältnis zwischen 1:4 und 4:1; mindestens 64x64 Pixel |
-| `target_resolution` | Ausgabegröße. `"1080p"`, `"2K"` und `"4K"` passen das Ergebnis in 1920x1080, 2560x1440 oder 3840x2160 Pixel ein, bei Hochformat-Clips gedreht; `"by factor"` verwendet stattdessen `upscale_factor`. | DYNAMIC_COMBO | Ja | `"2K"`<br>`"4K"`<br>`"1080p"`<br>`"by factor"` |
-| `mode` | `"creative"` stellt feine Details wieder her und erfindet sie hinzu, am besten für generiertes Material, Texturen und Landschaften. `"precise"` schärft die Quelle, ohne sie zu verändern, für Gesichter, Produkte und echtes Filmmaterial. (Standard: `"creative"`) | COMBO | Ja | `"creative"`<br>`"precise"` |
-| `prompt` | Optionale Beschreibung des Clips, die die verbesserten Details lenkt. Leer lassen für ein neutrales Upscaling. (Standard: leer) | STRING | Ja | Mehrzeiliger Text |
-| `auto_downscale` | Zu große Quellen herunterskalieren, anstatt sie abzulehnen: über 2560x1440 Pixel in der Fläche oder über zwei Drittel der Zielauflösung. Das Seitenverhältnis bleibt erhalten. (Standard: true) | BOOLEAN | Ja | true<br>false |
-| `safety_tolerance` | Moderationstoleranz, 0 ist am strengsten. (Standard: 2, erweiterter Parameter) | INT | Ja | 0 bis 4 |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; FLUX wählt seinen eigenen Seed, daher sind die tatsächlichen Ergebnisse unabhängig von diesem Wert nicht deterministisch. (Standard: 42) | INT | Ja | 0 bis 4294967295 |
+| `Video` | Quellclip von 1 bis 20 Sekunden und höchstens 50 MB, mindestens 64x64 Pixel, mit einem Seitenverhältnis zwischen 1:4 und 4:1. Die Ausgabe wird mit 24 fps gerendert und auf etwa 14,4 Megapixel pro Frame begrenzt. | VIDEO | Ja | 1 bis 20 Sekunden Dauer; Seitenverhältnis zwischen 1:4 und 4:1; mindestens 64x64 Pixel |
+| `Zielauflösung` | Ausgabegröße. `"1080p"`, `"2K"` und `"4K"` passen das Ergebnis in 1920x1080, 2560x1440 oder 3840x2160 Pixel ein, bei Hochformat-Clips gedreht; `"by factor"` verwendet stattdessen `upscale_factor`. | DYNAMIC_COMBO | Ja | `"2K"`<br>`"4K"`<br>`"1080p"`<br>`"by factor"` |
+| `Modus` | `"creative"` stellt feine Details wieder her und erfindet sie hinzu, am besten für generiertes Material, Texturen und Landschaften. `"precise"` schärft die Quelle, ohne sie zu verändern, für Gesichter, Produkte und echtes Filmmaterial. (Standard: `"creative"`) | COMBO | Ja | `"creative"`<br>`"precise"` |
+| `Prompt` | Optionale Beschreibung des Clips, die die verbesserten Details lenkt. Leer lassen für ein neutrales Upscaling. (Standard: leer) | STRING | Ja | Mehrzeiliger Text |
+| `Automatisches Herunterskalieren` | Zu große Quellen herunterskalieren, anstatt sie abzulehnen: über 2560x1440 Pixel in der Fläche oder über zwei Drittel der Zielauflösung. Das Seitenverhältnis bleibt erhalten. (Standard: true) | BOOLEAN | Ja | true<br>false |
+| `Sicherheitstoleranz` | Moderationstoleranz, 0 ist am strengsten. (Standard: 2, erweiterter Parameter) | INT | Ja | 0 bis 4 |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; FLUX wählt seinen eigenen Seed, daher sind die tatsächlichen Ergebnisse unabhängig von diesem Wert nicht deterministisch. (Standard: 42) | INT | Ja | 0 bis 4294967295 |
 
 ### by factor Eingaben
 

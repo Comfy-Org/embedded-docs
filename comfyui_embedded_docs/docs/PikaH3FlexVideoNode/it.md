@@ -7,12 +7,12 @@ Questo nodo genera un video con audio sincronizzato a partire da un prompt testu
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Cosa accade nel video, incluso il suono desiderato. Non deve essere vuoto. Predefinito: "" (stringa vuota). | STRING | Sì | Da 1 a 8000 caratteri |
-| `first_frame` | Immagine opzionale usata come fotogramma iniziale. Collegandola, si esegue image to video anziché text to video. | IMAGE | No | - |
-| `last_frame` | Immagine opzionale usata come fotogramma finale. Può essere usata insieme a `first_frame` oppure da sola. | IMAGE | No | - |
-| `resolution` | Risoluzione di output. `"1080p"` e superiori eseguono il rendering a 768p e applicano un upscale una volta. Lo stesso seed a 480p produce un video diverso. Predefinito: `"768p"`. | COMBO | Sì | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
-| `aspect_ratio` | Rapporto d'aspetto di output. `"auto"` segue il primo fotogramma collegato, altrimenti il prompt. Predefinito: `"auto"`. | COMBO | Sì | `"auto"`<br>`"21:9"`<br>`"16:9"`<br>`"3:2"`<br>`"4:3"`<br>`"5:4"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"9:21"` |
-| `duration` | Durata della clip in secondi. La lunghezza dell'output segue una griglia di fotogrammi: 5 secondi producono 124 fotogrammi, circa 5,17 secondi. Predefinito: 5. | INT | Sì | Da 5 a 15 secondi |
-| `rewrite_prompt` | Consenti a Pika di espandere prima il prompt. Lo stesso seed produce quindi un video diverso a ogni esecuzione. Predefinito: False. | BOOLEAN | Sì | true<br>false |
+| `primo_fotogramma` | Immagine opzionale usata come fotogramma iniziale. Collegandola, si esegue image to video anziché text to video. | IMAGE | No | - |
+| `ultimo_fotogramma` | Immagine opzionale usata come fotogramma finale. Può essere usata insieme a `first_frame` oppure da sola. | IMAGE | No | - |
+| `risoluzione` | Risoluzione di output. `"1080p"` e superiori eseguono il rendering a 768p e applicano un upscale una volta. Lo stesso seed a 480p produce un video diverso. Predefinito: `"768p"`. | COMBO | Sì | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
+| `rapporto_aspetto` | Rapporto d'aspetto di output. `"auto"` segue il primo fotogramma collegato, altrimenti il prompt. Predefinito: `"auto"`. | COMBO | Sì | `"auto"`<br>`"21:9"`<br>`"16:9"`<br>`"3:2"`<br>`"4:3"`<br>`"5:4"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"9:21"` |
+| `durata` | Durata della clip in secondi. La lunghezza dell'output segue una griglia di fotogrammi: 5 secondi producono 124 fotogrammi, circa 5,17 secondi. Predefinito: 5. | INT | Sì | Da 5 a 15 secondi |
+| `riscrivi_prompt` | Consenti a Pika di espandere prima il prompt. Lo stesso seed produce quindi un video diverso a ogni esecuzione. Predefinito: False. | BOOLEAN | Sì | true<br>false |
 | `seed` | Seed per il campionamento. Con `rewrite_prompt` disattivato, lo stesso seed ripete esattamente il video, anche se un'esecuzione locale con lo stesso seed dà un risultato diverso. Predefinito: 42. | INT | Sì | Da 0 a 2147483647 |
 
 **Vincoli:**

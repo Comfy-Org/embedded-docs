@@ -6,10 +6,10 @@ Il nodo Resolution Selector calcola la larghezza e l'altezza in pixel in base a 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `aspect_ratio` | Il rapporto d'aspetto per le dimensioni di output (predefinito: `"1:1 (Square)"`). | COMBO | Sì | `"1:1 (Square)"`<br>`"2:3 (Portrait Photo)"`<br>`"3:2 (Photo)"`<br>`"3:4 (Portrait Standard)"`<br>`"4:3 (Standard)"`<br>`"9:16 (Portrait Widescreen)"`<br>`"16:9 (Widescreen)"`<br>`"21:9 (Ultrawide)"` |
-| `megapixels` | Megapixel totali target. 1.0 MP ≈ 1024x1024 per un'immagine quadrata (predefinito: 1.0). | FLOAT | Sì | 0.1 - 16.0 (passo: 0.01) |
+| `rapporto d'aspetto` | Il rapporto d'aspetto per le dimensioni di output (predefinito: `"1:1 (Square)"`). | COMBO | Sì | `"1:1 (Square)"`<br>`"2:3 (Portrait Photo)"`<br>`"3:2 (Photo)"`<br>`"3:4 (Portrait Standard)"`<br>`"4:3 (Standard)"`<br>`"9:16 (Portrait Widescreen)"`<br>`"16:9 (Widescreen)"`<br>`"21:9 (Ultrawide)"` |
+| `megapixel` | Megapixel totali target. 1.0 MP ≈ 1024x1024 per un'immagine quadrata (predefinito: 1.0). | FLOAT | Sì | 0.1 - 16.0 (passo: 0.01) |
 | `preview` | Anteprima in tempo reale della risoluzione di output calcolata. Questo widget di sola lettura si aggiorna automaticamente e non accetta input dell'utente. | RESOLUTION_PREVIEW | No | N/A |
-| `multiple` | Il multiplo più vicino del risultato a cui impostare la risoluzione selezionata (predefinito: 8). | INT | No | 8 - 128 (passo: 4) |
+| `multiplo` | Il multiplo più vicino del risultato a cui impostare la risoluzione selezionata (predefinito: 8). | INT | No | 8 - 128 (passo: 4) |
 
 ## Output
 

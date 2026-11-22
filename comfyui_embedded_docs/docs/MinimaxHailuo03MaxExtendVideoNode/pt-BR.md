@@ -8,7 +8,7 @@ Este nó continua um vídeo com novas filmagens guiadas por um prompt e referên
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo a ser usado para continuar o vídeo. Ambos os modelos expõem as mesmas entradas abaixo. | DYNAMIC_COMBO | Sim | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `modelo` | Modelo a ser usado para continuar o vídeo. Ambos os modelos expõem as mesmas entradas abaixo. | DYNAMIC_COMBO | Sim | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
 
 ### Entradas do modelo
 

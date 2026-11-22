@@ -9,7 +9,7 @@ Questo nodo formatta il testo utilizzando il metodo di formattazione delle strin
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `f_string` | Il modello di stringa di formato con segnaposto (predefinito: `{a}`). Supporta input su più righe. | STRING | Sì | N/A |
-| `values` | Input dinamico per fornire valori con cui riempire i segnaposto nella stringa di formato. È possibile aggiungere più input di valori secondo necessità. | STRING | Sì | N/A |
+| `valori` | Input dinamico per fornire valori con cui riempire i segnaposto nella stringa di formato. È possibile aggiungere più input di valori secondo necessità. | STRING | Sì | N/A |
 
 **Nota sull'input `values`:** Questo input è dinamico e può essere espanso per includere più valori denominati. Ogni input di valore è etichettato con una lettera (a, b, c, ecc.) e corrisponde a un segnaposto nella stringa di formato (ad es. `{a}`, `{b}`, `{c}`). È possibile aggiungere o rimuovere input di valori secondo necessità.
 

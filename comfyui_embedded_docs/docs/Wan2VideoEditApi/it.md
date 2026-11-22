@@ -8,7 +8,7 @@ Il nodo Wan 2.7 Video Edit modifica un video utilizzando istruzioni testuali, im
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello da utilizzare per la modifica video. Ogni opzione espone il proprio insieme di sottoparametri. | DYNAMIC_COMBO | Sì | `"wan2.7-videoedit"` |
+| `modello` | Il modello da utilizzare per la modifica video. Ogni opzione espone il proprio insieme di sottoparametri. | DYNAMIC_COMBO | Sì | `"wan2.7-videoedit"` |
 | `video` | Il video da modificare. | VIDEO | Sì | - |
 | `seed` | Seed da utilizzare per la generazione. (predefinito: 0) | INT | Sì | da 0 a 2147483647 |
 | `audio_setting` | 'auto': il modello decide se rigenerare l'audio in base al prompt. 'origin': conserva l'audio originale dal video di input. (predefinito: "auto") | COMBO | Sì | `"auto"`<br>`"origin"` |

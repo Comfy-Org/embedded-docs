@@ -8,9 +8,9 @@ Der Node HypernetworkLoader ist darauf ausgelegt, die Fähigkeiten eines gegeben
 
 | Feld | Beschreibung | Comfy dtype |
 | --- | --- | --- |
-| `model` | Das Basismodell, auf das das Hypernetzwerk angewendet wird, wodurch die Architektur bestimmt wird, die erweitert oder verändert werden soll. | `MODEL` |
-| `hypernetwork_name` | Der Name des zu ladenden und auf das Modell anzuwendenden Hypernetzwerks, der das veränderte Verhalten oder die Leistung des Modells beeinflusst. | `COMBO[STRING]` |
-| `strength` | Ein Skalar, der die Intensität der Wirkung des Hypernetzwerks auf das Modell anpasst und eine Feinabstimmung der Änderungen ermöglicht. | `FLOAT` |
+| `Modell` | Das Basismodell, auf das das Hypernetzwerk angewendet wird, wodurch die Architektur bestimmt wird, die erweitert oder verändert werden soll. | `MODEL` |
+| `Hypernetwork-Name` | Der Name des zu ladenden und auf das Modell anzuwendenden Hypernetzwerks, der das veränderte Verhalten oder die Leistung des Modells beeinflusst. | `COMBO[STRING]` |
+| `Stärke` | Ein Skalar, der die Intensität der Wirkung des Hypernetzwerks auf das Modell anpasst und eine Feinabstimmung der Änderungen ermöglicht. | `FLOAT` |
 
 ## Ausgaben
 

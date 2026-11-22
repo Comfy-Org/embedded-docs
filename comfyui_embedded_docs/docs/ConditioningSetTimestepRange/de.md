@@ -7,8 +7,8 @@ Dieser Node dient dazu, den zeitlichen Aspekt der Konditionierung anzupassen, in
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
 | `CONDITIONING` | Der Eingang für die Konditionierung stellt den aktuellen Zustand des Generierungsprozesses dar, den dieser Node ändert, indem er einen bestimmten Bereich von Zeitschritten festlegt. | CONDITIONING |
-| `start` | Der Parameter `start` gibt den Beginn des Zeitschrittbereichs als Prozentsatz des gesamten Generierungsprozesses an und ermöglicht eine fein abgestimmte Kontrolle darüber, wann die Konditionierungseffekte beginnen. | `FLOAT` |
-| `end` | Der Parameter `end` definiert den Endpunkt des Zeitschrittbereichs als Prozentsatz und ermöglicht eine präzise Kontrolle über die Dauer und den Abschluss der Konditionierungseffekte. | `FLOAT` |
+| `Start` | Der Parameter `start` gibt den Beginn des Zeitschrittbereichs als Prozentsatz des gesamten Generierungsprozesses an und ermöglicht eine fein abgestimmte Kontrolle darüber, wann die Konditionierungseffekte beginnen. | `FLOAT` |
+| `Ende` | Der Parameter `end` definiert den Endpunkt des Zeitschrittbereichs als Prozentsatz und ermöglicht eine präzise Kontrolle über die Dauer und den Abschluss der Konditionierungseffekte. | `FLOAT` |
 
 ## Ausgaben
 

@@ -8,10 +8,10 @@ Générez ou modifiez des images avec Kling 4.0 à partir d'un prompt textuel et
 |-----------|-------------|-----------------|--------|-------|
 | `reference_images` | Emplacements extensibles pour les images de référence (`image_1` ... `image_10`). Faites-y référence dans le prompt sous la forme `@Image1`, `@Image2`, etc. | AUTOGROW | Non | 0 à 10 images |
 | `prompt` | Description de l'image. Faites référence aux images connectées sous la forme `@Image1`, `@Image2`, ... Par défaut : chaîne vide. | STRING | Oui | Texte multiligne |
-| `resolution` | Résolution de l'image de sortie. Par défaut : `"2K"`. | COMBO | Oui | `"2K"`<br>`"4K"`<br>`"8K"` |
+| `résolution` | Résolution de l'image de sortie. Par défaut : `"2K"`. | COMBO | Oui | `"2K"`<br>`"4K"`<br>`"8K"` |
 | `aspect_ratio` | Rapport d'aspect de l'image de sortie. `"auto"` suit les images de référence, sinon le prompt. Par défaut : `"auto"`. | COMBO | Oui | `"auto"`<br>`"9:16"`<br>`"2:3"`<br>`"3:4"`<br>`"1:1"`<br>`"4:3"`<br>`"3:2"`<br>`"16:9"`<br>`"21:9"` |
 | `series_amount` | Génère une série d'images liées qui conservent les mêmes personnages et le même style. `"auto"` laisse le modèle choisir 2 à 10 images. Par défaut : `"disabled"`. | COMBO | Oui | `"disabled"`<br>`"auto"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
-| `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
+| `graine` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
 
 **Contraintes et comportement :**
 

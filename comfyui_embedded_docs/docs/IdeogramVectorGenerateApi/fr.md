@@ -6,7 +6,7 @@ Ce nœud génère un SVG modifiable à partir d'un prompt textuel avec Ideogram 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser. Par défaut : `"ideogram-vector-1"`. | DYNAMIC_COMBO | Oui | `"ideogram-vector-1"` |
+| `modèle` | Modèle à utiliser. Par défaut : `"ideogram-vector-1"`. | DYNAMIC_COMBO | Oui | `"ideogram-vector-1"` |
 | `images` | Images de référence facultatives. L'image 1 est la source principale et les images 2 à 5 sont des références supplémentaires ; mentionnez-les dans le prompt sous la forme `@Image1`, `@Image2`, etc. Une entrée en lot est comptée une fois par image. | AUTOGROW | Non | 0 à 5 images |
 | `prompt` | Description du SVG. Prend en charge les références de style `@Image1` vers les images d'entrée. | STRING | Oui | 1 à 9500 caractères |
 | `aspect_ratio` | `"auto"` suit l'image 1, ou le prompt lorsqu'aucune image n'est connectée. Par défaut : `"auto"`. | COMBO | Oui | `"auto"`<br>`"1:3"`<br>`"1:2"`<br>`"9:16"`<br>`"10:16"`<br>`"2:3"`<br>`"3:4"`<br>`"4:5"`<br>`"1:1"`<br>`"5:4"`<br>`"4:3"`<br>`"3:2"`<br>`"16:10"`<br>`"16:9"`<br>`"2:1"`<br>`"3:1"` |

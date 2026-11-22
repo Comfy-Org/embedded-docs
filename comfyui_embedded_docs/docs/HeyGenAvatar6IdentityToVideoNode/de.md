@@ -8,14 +8,14 @@ Erzeugen Sie ein sprechendes Video eines HeyGen-Avatars mit Avatar 6. Wählen Si
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modellauswahl. `"heygen-avatar-6-turbo"` ist die günstigere, schnellere Stufe; beide Modelle akzeptieren dieselben Eingaben und Auflösungen. | COMBO | Ja | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
-| `avatar` | Der Avatar-Look, der präsentiert werden soll. Die 19 integrierten Looks, die Avatar 6 unterstützen, werden direkt aufgelistet; `custom avatar` blendet `custom_avatar_id` für einen Look ein, den Sie in HeyGen erstellt haben. | DYNAMIC_COMBO | Ja | 19 integrierte Looks<br>`custom avatar` |
-| `speech` | Steuern Sie den Avatar mit einem Textskript (HeyGen Text-to-Speech) oder Ihrem eigenen Audio. Anzeigename: Sprachquelle. | DYNAMIC_COMBO | Ja | `"script"`<br>`"audio"` |
-| `resolution` | Auflösung des Ausgabevideos. Standard: `"1080p"`. | COMBO | Ja | `"1080p"`<br>`"2k"` |
-| `aspect_ratio` | Seitenverhältnis des Ausgabevideos. `"auto"` folgt dem eigenen Filmmaterial des Avatar-Looks. Standard: `"auto"`. | COMBO | Ja | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `motion_prompt` | Optionale Anweisung für Gesten, Ausdruck, Körperhaltung und Kamerabewegung. Standard: leerer String. | STRING | Ja | Mehrzeiliger Text |
-| `motion_expressiveness` | `"less"` ergibt weniger und kleinere Gesten. Der Motion-Prompt hat Vorrang, wo sich beide überschneiden. Standard: `"default"`. | COMBO | Ja | `"less"`<br>`"default"` |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Ja | 0 bis 2147483647 |
+| `Modell` | Modellauswahl. `"heygen-avatar-6-turbo"` ist die günstigere, schnellere Stufe; beide Modelle akzeptieren dieselben Eingaben und Auflösungen. | COMBO | Ja | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `Avatar` | Der Avatar-Look, der präsentiert werden soll. Die 19 integrierten Looks, die Avatar 6 unterstützen, werden direkt aufgelistet; `custom avatar` blendet `custom_avatar_id` für einen Look ein, den Sie in HeyGen erstellt haben. | DYNAMIC_COMBO | Ja | 19 integrierte Looks<br>`custom avatar` |
+| `Sprache` | Steuern Sie den Avatar mit einem Textskript (HeyGen Text-to-Speech) oder Ihrem eigenen Audio. Anzeigename: Sprachquelle. | DYNAMIC_COMBO | Ja | `"script"`<br>`"audio"` |
+| `Auflösung` | Auflösung des Ausgabevideos. Standard: `"1080p"`. | COMBO | Ja | `"1080p"`<br>`"2k"` |
+| `Seitenverhältnis` | Seitenverhältnis des Ausgabevideos. `"auto"` folgt dem eigenen Filmmaterial des Avatar-Looks. Standard: `"auto"`. | COMBO | Ja | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `Bewegungs-Prompt` | Optionale Anweisung für Gesten, Ausdruck, Körperhaltung und Kamerabewegung. Standard: leerer String. | STRING | Ja | Mehrzeiliger Text |
+| `Bewegungsausdrucksstärke` | `"less"` ergibt weniger und kleinere Gesten. Der Motion-Prompt hat Vorrang, wo sich beide überschneiden. Standard: `"default"`. | COMBO | Ja | `"less"`<br>`"default"` |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Ja | 0 bis 2147483647 |
 
 ### `custom avatar` Eingaben
 

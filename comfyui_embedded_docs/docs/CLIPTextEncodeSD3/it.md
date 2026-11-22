@@ -9,7 +9,7 @@ CLIPTextEncodeSD3 elabora input di testo per i modelli Stable Diffusion 3 codifi
 | `clip_l` | Input di testo per il modello CLIP locale. Supporta testo multilinea e prompt dinamici. | STRING | Sì | - |
 | `clip_g` | Input di testo per il modello CLIP globale. Supporta testo multilinea e prompt dinamici. | STRING | Sì | - |
 | `t5xxl` | Input di testo per il modello T5-XXL. Supporta testo multilinea e prompt dinamici. | STRING | Sì | - |
-| `empty_padding` | Controlla come vengono gestiti gli input di testo vuoti. Quando è impostato su "none", gli input di testo vuoti per `clip_g`, `clip_l` o `t5xxl` producono liste di token vuote invece del padding. Quando è impostato su "empty_prompt", gli input vuoti vengono tokenizzati come prompt vuoti (comportamento standard di padding). Questo è un parametro avanzato (predefinito: "none"). | COMBO | Sì | `"none"`<br>`"empty_prompt"` |
+| `spaziatura vuota` | Controlla come vengono gestiti gli input di testo vuoti. Quando è impostato su "none", gli input di testo vuoti per `clip_g`, `clip_l` o `t5xxl` producono liste di token vuote invece del padding. Quando è impostato su "empty_prompt", gli input vuoti vengono tokenizzati come prompt vuoti (comportamento standard di padding). Questo è un parametro avanzato (predefinito: "none"). | COMBO | Sì | `"none"`<br>`"empty_prompt"` |
 
 **Vincoli dei parametri:**
 

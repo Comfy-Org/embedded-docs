@@ -6,7 +6,7 @@ VAEEncodeTiled verarbeitet Bilder, indem es sie in kleinere Kacheln aufteilt und
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `pixels` | Die zu kodierenden Eingabebilddaten. | IMAGE | Ja | - |
+| `Pixel` | Die zu kodierenden Eingabebilddaten. | IMAGE | Ja | - |
 | `vae` | Das Variational-Autoencoder-Modell, das zur Kodierung verwendet wird. | VAE | Ja | - |
 | `tile_size` | Die Größe jeder Kachel für die räumliche Verarbeitung (Standard: 512). Erweiterte Einstellung. | INT | Ja | 64-4096 (Schritt: 64) |
 | `overlap` | Die Überlappung zwischen benachbarten Kacheln (Standard: 64). Erweiterte Einstellung. | INT | Ja | 0-4096 (Schritt: 32) |

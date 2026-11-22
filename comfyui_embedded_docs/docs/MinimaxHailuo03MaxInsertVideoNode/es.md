@@ -8,7 +8,7 @@ Este nodo reemplaza la parte de un video entre los tiempos de inicio y reanudaci
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo a usar para la generación de video. | DYNAMIC_COMBO | Sí | "MiniMax H3 Max" |
+| `modelo` | Modelo a usar para la generación de video. | DYNAMIC_COMBO | Sí | "MiniMax H3 Max" |
 
 ### Entradas de MiniMax H3 Max
 

@@ -6,11 +6,11 @@ Questo nodo genera un embedding della traiettoria della camera utilizzando gli e
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `camera_pose` | Il tipo di movimento della camera da simulare (predefinito: "Static") | COMBO | Sì | "Static"<br>"Pan Up"<br>"Pan Down"<br>"Pan Left"<br>"Pan Right"<br>"Zoom In"<br>"Zoom Out"<br>"Anti Clockwise (ACW)"<br>"ClockWise (CW)" |
-| `width` | La larghezza dell'output in pixel (predefinito: 832, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
-| `height` | L'altezza dell'output in pixel (predefinito: 480, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
-| `length` | La lunghezza della sequenza della traiettoria della camera (predefinito: 81, passo: 4) | INT | Sì | da 1 a MAX_RESOLUTION |
-| `speed` | La velocità del movimento della camera (predefinito: 1.0, passo: 0.1) | FLOAT | No | da 0.0 a 10.0 |
+| `posizione_camera` | Il tipo di movimento della camera da simulare (predefinito: "Static") | COMBO | Sì | "Static"<br>"Pan Up"<br>"Pan Down"<br>"Pan Left"<br>"Pan Right"<br>"Zoom In"<br>"Zoom Out"<br>"Anti Clockwise (ACW)"<br>"ClockWise (CW)" |
+| `larghezza` | La larghezza dell'output in pixel (predefinito: 832, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
+| `altezza` | L'altezza dell'output in pixel (predefinito: 480, passo: 16) | INT | Sì | da 16 a MAX_RESOLUTION |
+| `lunghezza` | La lunghezza della sequenza della traiettoria della camera (predefinito: 81, passo: 4) | INT | Sì | da 1 a MAX_RESOLUTION |
+| `velocità` | La velocità del movimento della camera (predefinito: 1.0, passo: 0.1) | FLOAT | No | da 0.0 a 10.0 |
 | `fx` | Il parametro di lunghezza focale x (predefinito: 0.5, passo: 0.000000001) | FLOAT | No | da 0.0 a 1.0 |
 | `fy` | Il parametro di lunghezza focale y (predefinito: 0.5, passo: 0.000000001) | FLOAT | No | da 0.0 a 1.0 |
 | `cx` | La coordinata x del punto principale (predefinito: 0.5, passo: 0.01) | FLOAT | No | da 0.0 a 1.0 |

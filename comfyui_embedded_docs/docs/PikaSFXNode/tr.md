@@ -6,8 +6,8 @@ Bu düğüm, Pika ile bir metin açıklamasından ses efekti üretir. Sesi ve ne
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|---------|--------|
-| `prompt` | Ses efektinin ne olması gerektiği. Boş olmamalıdır. Varsayılan: "" (boş dize). | STRING | Evet | 1 ile 4000 karakter arası |
-| `duration` | Ses efektinin saniye cinsinden uzunluğu. Varsayılan: 5.0. | FLOAT | Evet | 1.0 ile 20.0 arası (adım: 0.1) |
+| `istem` | Ses efektinin ne olması gerektiği. Boş olmamalıdır. Varsayılan: "" (boş dize). | STRING | Evet | 1 ile 4000 karakter arası |
+| `süre` | Ses efektinin saniye cinsinden uzunluğu. Varsayılan: 5.0. | FLOAT | Evet | 1.0 ile 20.0 arası (adım: 0.1) |
 | `seed` | Örnekleme için tohum. Varsayılan: 42. | INT | Evet | 0 ile 2147483647 arası |
 
 ## Çıktılar

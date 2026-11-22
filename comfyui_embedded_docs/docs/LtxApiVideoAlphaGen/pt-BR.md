@@ -6,8 +6,8 @@ Extrai um matte alfa em escala de cinza, branco para o primeiro plano, que corre
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `video` | Vídeo para gerar o matte, com até 10 segundos e 3840x2160 em qualquer orientação. | VIDEO | Sim | - |
-| `seed` | Controla se o nó é executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Não | 0 a 4294967295 |
+| `vídeo` | Vídeo para gerar o matte, com até 10 segundos e 3840x2160 em qualquer orientação. | VIDEO | Sim | - |
+| `semente` | Controla se o nó é executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Não | 0 a 4294967295 |
 
 ## Saídas
 

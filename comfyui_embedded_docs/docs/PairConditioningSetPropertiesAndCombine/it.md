@@ -6,15 +6,15 @@ Il nodo PairConditioningSetPropertiesAndCombine modifica e combina coppie di con
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | L'input di condizionamento positivo originale | CONDITIONING | Sì | - |
-| `negative` | L'input di condizionamento negativo originale | CONDITIONING | Sì | - |
-| `positive_NEW` | Il nuovo condizionamento positivo da applicare | CONDITIONING | Sì | - |
-| `negative_NEW` | Il nuovo condizionamento negativo da applicare | CONDITIONING | Sì | - |
-| `strength` | Il fattore di forza per applicare il nuovo condizionamento (predefinito: 1.0) | FLOAT | Sì | 0.0 a 10.0 |
-| `set_cond_area` | Controlla come viene applicata l'area di condizionamento (predefinito: "default") | STRING | Sì | "default"<br>"mask bounds" |
+| `positivo` | L'input di condizionamento positivo originale | CONDITIONING | Sì | - |
+| `negativo` | L'input di condizionamento negativo originale | CONDITIONING | Sì | - |
+| `positivo_NUOVO` | Il nuovo condizionamento positivo da applicare | CONDITIONING | Sì | - |
+| `negativo_NUOVO` | Il nuovo condizionamento negativo da applicare | CONDITIONING | Sì | - |
+| `intensità` | Il fattore di forza per applicare il nuovo condizionamento (predefinito: 1.0) | FLOAT | Sì | 0.0 a 10.0 |
+| `imposta_area_cond` | Controlla come viene applicata l'area di condizionamento (predefinito: "default") | STRING | Sì | "default"<br>"mask bounds" |
 | `mask` | Maschera opzionale per limitare l'area di applicazione del condizionamento | MASK | No | - |
 | `hooks` | Gruppo di hook opzionale per il controllo avanzato | HOOKS | No | - |
-| `timesteps` | Specifica opzionale dell'intervallo di timestep | TIMESTEPS_RANGE | No | - |
+| `passi_temporali` | Specifica opzionale dell'intervallo di timestep | TIMESTEPS_RANGE | No | - |
 
 ## Output
 

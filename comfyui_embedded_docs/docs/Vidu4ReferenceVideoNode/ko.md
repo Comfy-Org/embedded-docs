@@ -8,7 +8,7 @@ Vidu Q4 모델을 사용하여 참조 이미지, 선택적 참조 오디오 및 
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 비디오 생성에 사용할 모델입니다. 모델을 선택하면 해당 모델에 특화된 매개변수(`reference_images`, `reference_audios`, `prompt`, `aspect_ratio`, `resolution`, `duration`, `audio`, `seed`)가 표시됩니다. | DYNAMIC_COMBO | 예 | `"Vidu Q4 Preview"` |
+| `모델` | 비디오 생성에 사용할 모델입니다. 모델을 선택하면 해당 모델에 특화된 매개변수(`reference_images`, `reference_audios`, `prompt`, `aspect_ratio`, `resolution`, `duration`, `audio`, `seed`)가 표시됩니다. | DYNAMIC_COMBO | 예 | `"Vidu Q4 Preview"` |
 | `reference_images` | 확장 가능한 슬롯: 생성될 비디오를 위한 하나 이상의 참조 이미지(`image_1`, `image_2`, ...)를 연결하세요. 배치의 모든 이미지가 총개수에 포함됩니다. 프롬프트에서 순서대로 image 1, image 2 등으로 참조하세요. | IMAGE | 예 | 최대 15개 이미지 |
 | `reference_audios` | 확장 가능한 슬롯: 선택적 음성 참조(`audio_1`, `audio_2`, `audio_3`)를 연결하세요. 각각 3~12초입니다. 단어가 아니라 음성만 사용됩니다: 프롬프트에 대사를 작성하고 순서대로 음성을 할당하세요. 예: `image 1 says "Hello!" in the voice from audio 1`. 사용하려면 `audio`가 활성화되어 있어야 합니다. | AUDIO | 아니요 | 최대 3개 클립 |
 | `prompt` | 비디오 생성용 텍스트 설명이며 최대 5000자까지 입력할 수 있습니다. 사용하려는 참조를 설명하는 데 필요합니다. | STRING | 예 | 임의 텍스트 |

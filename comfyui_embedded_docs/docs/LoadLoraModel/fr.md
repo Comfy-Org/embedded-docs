@@ -6,7 +6,7 @@ Appliquez une pile de LoRAs à un modèle de diffusion dans un seul nœud. Chaqu
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle de diffusion auquel les LoRAs seront appliqués. | MODEL | Oui | - |
+| `modèle` | Le modèle de diffusion auquel les LoRAs seront appliqués. | MODEL | Oui | - |
 | `loras` | Groupe extensible de LoRAs, appliqués au modèle dans l'ordre des lignes (`loras.0`, `loras.1`, etc.). Ajoutez une ligne par LoRA ; chaque ligne contient un fichier, une force et un interrupteur marche/arrêt. | DYNAMIC_GROUP | Oui | 1 à 20 lignes |
 
 ### Champs de ligne de `loras`

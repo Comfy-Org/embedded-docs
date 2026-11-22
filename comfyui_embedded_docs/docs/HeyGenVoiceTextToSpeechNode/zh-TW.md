@@ -8,7 +8,7 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的模型。`heygen-voice-1-turbo` 速度更快，費用更低。選取模型後會顯示其專屬參數：`voice_id`、`text`、`language` 與 `expressiveness_boost`。 | DYNAMIC_COMBO | 是 | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `模型` | 要使用的模型。`heygen-voice-1-turbo` 速度更快，費用更低。選取模型後會顯示其專屬參數：`voice_id`、`text`、`language` 與 `expressiveness_boost`。 | DYNAMIC_COMBO | 是 | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `voice_id` | HeyGen 語音的 ID，例如來自 HeyGen 語音庫（預設：空）。 | STRING | 是 | N/A |
 | `text` | 要朗讀的文字。最多 5000 個字元；超過約 12 分鐘的語音會失敗，因此請將非常長的中文或日文文字分段（預設：空）。 | STRING | 是 | 1 到 5000 個字元 |
 | `language` | 文字語言。對於塞爾維亞語或馬來語等自動偵測可能混淆的相近語言，請設定此項（預設：`"auto"`）。 | COMBO | 是 | `"auto"`<br>多種語言預設 |

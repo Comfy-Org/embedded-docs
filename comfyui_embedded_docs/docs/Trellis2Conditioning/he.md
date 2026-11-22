@@ -7,7 +7,7 @@ Trellis2Conditioning ממיר תמונת קלט לנתוני התניה עבור
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
 | `clip_vision_model` | מודל CLIP vision המשמש לקידוד התמונה למאפייני התניה. | CLIP_VISION | כן | כל מודל CLIP vision זמין |
-| `image` | תמונה מעובדת מראש מתוך ImageCropToMask (pad_factor=1.0 עבור TRELLIS.2). | IMAGE | כן | כל תמונה |
+| `תמונה` | תמונה מעובדת מראש מתוך ImageCropToMask (pad_factor=1.0 עבור TRELLIS.2). | IMAGE | כן | כל תמונה |
 
 ## פלטים
 

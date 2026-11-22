@@ -8,7 +8,7 @@ Die Auswahl eines `model` blendet die für dieses Modell spezifischen Parameter 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Zu verwendendes Modell. Die Auswahl eines Modells blendet die dafür spezifischen Parameter ein: `video` und `scale_factor`. | DYNAMIC_COMBO | Ja | `"crystal-video-upscaler"` |
+| `modell` | Zu verwendendes Modell. Die Auswahl eines Modells blendet die dafür spezifischen Parameter ein: `video` und `scale_factor`. | DYNAMIC_COMBO | Ja | `"crystal-video-upscaler"` |
 | `video` | Das hochzuskalierende Video. | VIDEO | Ja | N/A |
 | `scale_factor` | Faktor, mit dem die Breite und Höhe des Videos multipliziert werden. Die Ausgabe ist auf 9 Megapixel pro Einzelbild und 360 Megapixelsekunden pro Clip begrenzt, sodass große oder lange Videos weniger stark hochskaliert werden; der Faktor wird erneut verringert, wenn dadurch eine Seite über 5120 Pixel hinausgehen würde (Standard: 2.0). | FLOAT | Ja | 1.0 bis 200.0 (Schritt 0.1) |
 

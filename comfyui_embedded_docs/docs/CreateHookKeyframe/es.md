@@ -8,7 +8,7 @@ El nodo Crear Fotograma Clave de Hook permite definir puntos específicos en un 
 | --- | --- | --- | --- | --- |
 | `multiplicador_fuerza` | Multiplicador de la intensidad del hook en este fotograma clave (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
 | `porcentaje_inicio` | El punto porcentual en el proceso de generación donde este fotograma clave surte efecto (predeterminado: 0.0) | FLOAT | Sí | 0.0 a 1.0 |
-| `prev_hook_kf` | Grupo opcional de fotogramas clave de hook anterior al que agregar este fotograma clave | HOOK_KEYFRAMES | No | - |
+| `fotograma_clave_gancho_anterior` | Grupo opcional de fotogramas clave de hook anterior al que agregar este fotograma clave | HOOK_KEYFRAMES | No | - |
 
 ## Salidas
 

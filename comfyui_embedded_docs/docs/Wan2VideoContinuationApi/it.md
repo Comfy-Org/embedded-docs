@@ -8,7 +8,7 @@ Il nodo Wan 2.7 Video Continuation genera un nuovo segmento video che continua d
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Il modello di generazione video da utilizzare. L'opzione selezionata determina quali impostazioni aggiuntive appaiono di seguito. | DYNAMIC_COMBO | Sì | `"wan2.7-i2v"` |
+| `modello` | Il modello di generazione video da utilizzare. L'opzione selezionata determina quali impostazioni aggiuntive appaiono di seguito. | DYNAMIC_COMBO | Sì | `"wan2.7-i2v"` |
 | `first_clip` | Video di input da cui continuare. Durata: 2s-10s. Le proporzioni dell'output sono derivate da questo video. | VIDEO | Sì | 2s a 10s |
 | `last_frame` | Immagine dell'ultimo fotogramma. La continuazione si avvicinerà progressivamente a questo fotogramma. | IMAGE | No | - |
 | `seed` | Seed da utilizzare per la generazione. (predefinito: 0) | INT | Sì | 0 a 2147483647 |

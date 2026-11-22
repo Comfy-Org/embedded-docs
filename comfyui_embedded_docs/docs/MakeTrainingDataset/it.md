@@ -6,10 +6,10 @@ Questo nodo prepara i dati per l'addestramento codificando immagini e testo. Ric
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `images` | Elenco di immagini da codificare. | IMAGE | Sì | N/A |
+| `immagini` | Elenco di immagini da codificare. | IMAGE | Sì | N/A |
 | `vae` | Modello VAE per codificare le immagini in latenti. | VAE | Sì | N/A |
 | `clip` | Modello CLIP per codificare il testo in condizionamento. | CLIP | Sì | N/A |
-| `texts` | Elenco di didascalie testuali. Può avere lunghezza n (corrispondente alle immagini), 1 (ripetuta per tutte) o essere omesso (usa una stringa vuota). | STRING | No | 0, 1 o n elementi (n = numero di immagini) |
+| `testi` | Elenco di didascalie testuali. Può avere lunghezza n (corrispondente alle immagini), 1 (ripetuta per tutte) o essere omesso (usa una stringa vuota). | STRING | No | 0, 1 o n elementi (n = numero di immagini) |
 
 **Vincoli sui parametri:**
 

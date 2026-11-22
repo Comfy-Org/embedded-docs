@@ -6,9 +6,9 @@ Codifica il testo e imposta il condizionamento della risoluzione per PixArt Alph
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `width` | La dimensione di larghezza per il condizionamento della risoluzione (predefinito: 1024) | INT | Sì | 0 a MAX_RESOLUTION |
-| `height` | La dimensione di altezza per il condizionamento della risoluzione (predefinito: 1024) | INT | Sì | 0 a MAX_RESOLUTION |
-| `text` | Input testuale da codificare. Supporta input multilinea e prompt dinamici. | STRING | Sì | - |
+| `larghezza` | La dimensione di larghezza per il condizionamento della risoluzione (predefinito: 1024) | INT | Sì | 0 a MAX_RESOLUTION |
+| `altezza` | La dimensione di altezza per il condizionamento della risoluzione (predefinito: 1024) | INT | Sì | 0 a MAX_RESOLUTION |
+| `testo` | Input testuale da codificare. Supporta input multilinea e prompt dinamici. | STRING | Sì | - |
 | `clip` | Modello CLIP usato per la tokenizzazione e la codifica | CLIP | Sì | - |
 
 ## Output

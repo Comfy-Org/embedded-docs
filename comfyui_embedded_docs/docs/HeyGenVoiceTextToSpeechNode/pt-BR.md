@@ -8,7 +8,7 @@ Selecionar um `model` revela os parâmetros específicos desse modelo.
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-----------|---------------|-------------|-----------|
-| `model` | Modelo a usar. `heygen-voice-1-turbo` é mais rápido e custa menos. Selecionar um modelo revela os parâmetros específicos dele: `voice_id`, `text`, `language` e `expressiveness_boost`. | DYNAMIC_COMBO | Sim | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `modelo` | Modelo a usar. `heygen-voice-1-turbo` é mais rápido e custa menos. Selecionar um modelo revela os parâmetros específicos dele: `voice_id`, `text`, `language` e `expressiveness_boost`. | DYNAMIC_COMBO | Sim | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `voice_id` | ID de uma voz do HeyGen, por exemplo da biblioteca de vozes do HeyGen (padrão: vazio). | STRING | Sim | N/A |
 | `text` | Texto a ser falado. Até 5000 caracteres; falas com duração superior a cerca de 12 minutos falham, portanto, divida textos muito longos em chinês ou japonês (padrão: vazio). | STRING | Sim | 1 a 5000 caracteres |
 | `language` | Idioma do texto. Defina-o para idiomas próximos, como sérvio ou malaio, que a detecção automática pode confundir (padrão: "auto"). | COMBO | Sim | `"auto"`<br>Várias predefinições de idioma |

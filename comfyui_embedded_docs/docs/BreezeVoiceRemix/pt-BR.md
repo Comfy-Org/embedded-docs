@@ -6,10 +6,10 @@ Cria uma cópia alterada de uma voz no mesmo idioma, seja a partir de uma descri
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `voice` | Voz Breeze a ser alterada. | BREEZE_VOICE | Sim | - |
-| `change` | `custom` descreve a alteração em texto, `preset` seleciona uma alteração nomeada. Padrão: `"custom"`. | DYNAMIC_COMBO | Sim | `"custom"`<br>`"preset"` |
-| `strength` | Valores mais altos alteram mais a voz. Padrão: 4.0. | FLOAT | Não | 1.0 a 10.0 (passo: 0.1) |
-| `seed` | Controla se o nó é executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Não | 0 a 2147483647 |
+| `voz` | Voz Breeze a ser alterada. | BREEZE_VOICE | Sim | - |
+| `alteração` | `custom` descreve a alteração em texto, `preset` seleciona uma alteração nomeada. Padrão: `"custom"`. | DYNAMIC_COMBO | Sim | `"custom"`<br>`"preset"` |
+| `intensidade` | Valores mais altos alteram mais a voz. Padrão: 4.0. | FLOAT | Não | 1.0 a 10.0 (passo: 0.1) |
+| `semente` | Controla se o nó é executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Não | 0 a 2147483647 |
 
 ### Entradas de alteração "custom"
 

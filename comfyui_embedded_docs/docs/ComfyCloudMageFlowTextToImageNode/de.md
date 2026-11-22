@@ -6,8 +6,8 @@ Dieser Node generiert ein Bild aus einem Text-Prompt, indem er die Anfrage an de
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Die Textbeschreibung des zu generierenden Bildes. | STRING | Ja | Freitext |
-| `negative_prompt` | Text, der Inhalte beschreibt, die nicht im generierten Bild erscheinen sollen. Diese Eingabe wird während des standardmäßigen Generierungsdurchlaufs mit 30 Schritten verwendet, aber die destillierte Turbo-Variante kann Negative-Prompts nicht gut nutzen. | STRING | Nein | Freitext |
+| `Prompt` | Die Textbeschreibung des zu generierenden Bildes. | STRING | Ja | Freitext |
+| `Negativer Prompt` | Text, der Inhalte beschreibt, die nicht im generierten Bild erscheinen sollen. Diese Eingabe wird während des standardmäßigen Generierungsdurchlaufs mit 30 Schritten verwendet, aber die destillierte Turbo-Variante kann Negative-Prompts nicht gut nutzen. | STRING | Nein | Freitext |
 
 ## Ausgaben
 

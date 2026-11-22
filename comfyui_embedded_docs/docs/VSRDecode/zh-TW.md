@@ -7,9 +7,9 @@ VSR Decode 會使用 RelayVSR Flash 解碼器，將來自 RelayVSR Conditioning 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
 | `vae` | RelayVSR Flash 解碼器，需使用 Load VAE 載入：`relayvsr_flash_vae_x2_fp32.safetensors` 或 `relayvsr_flash_vae_x4_fp32.safetensors`。檔案的元資料會設定放大倍率，因此必須與模型相符。 | VAE | 是 | N/A |
-| `samples` | 取樣器回傳的潛在表示，每個關鍵影格對應一個影格。 | LATENT | 是 | N/A |
-| `images` | 提供給 RelayVSR Conditioning 的同一段低品質影片。 | IMAGE | 是 | N/A |
-| `detail` | 在雙三次放大結果上保留多少解碼器細節：1 為完整模型輸出，0 為單純放大。（預設：1.0） | FLOAT | 是 | 0.0 至 1.0（步進值：0.01） |
+| `樣本` | 取樣器回傳的潛在表示，每個關鍵影格對應一個影格。 | LATENT | 是 | N/A |
+| `影像` | 提供給 RelayVSR Conditioning 的同一段低品質影片。 | IMAGE | 是 | N/A |
+| `細節` | 在雙三次放大結果上保留多少解碼器細節：1 為完整模型輸出，0 為單純放大。（預設：1.0） | FLOAT | 是 | 0.0 至 1.0（步進值：0.01） |
 
 ## 輸出
 

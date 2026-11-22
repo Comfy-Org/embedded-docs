@@ -6,7 +6,7 @@ Bir görüntüyü kırmızı, yeşil ve mavi kanallarına ayırır ve alfa kanal
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `image` | Bölünecek görüntü. Tek kanallı (gri tonlamalı) bir girdi genişletilir; böylece üç renk çıktısının tümü aynı veriyi taşır. | IMAGE | Evet | - |
+| `görüntü` | Bölünecek görüntü. Tek kanallı (gri tonlamalı) bir girdi genişletilir; böylece üç renk çıktısının tümü aynı veriyi taşır. | IMAGE | Evet | - |
 
 ## Çıktılar
 

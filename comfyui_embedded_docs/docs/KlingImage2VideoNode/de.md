@@ -7,11 +7,11 @@ Der Kling Image to Video Node erzeugt ein kurzes Video, wobei ein Ausgangsbild a
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `start_frame` | Das Referenzbild, das zur Generierung des Videos verwendet wird. Das Bild muss mindestens 300x300 Pixel groß sein und ein Seitenverhältnis zwischen 1:2.5 und 2.5:1 haben. | IMAGE | Ja | - |
-| `prompt` | Positiver Text-Prompt. Darf nicht leer sein. Maximal 500 Zeichen. | STRING | Ja | - |
+| `Prompt` | Positiver Text-Prompt. Darf nicht leer sein. Maximal 500 Zeichen. | STRING | Ja | - |
 | `negative_prompt` | Negativer Text-Prompt. Maximal 500 Zeichen. Leer lassen, wenn nicht verwendet. | STRING | Ja | - |
 | `model_name` | Das für die Videogenerierung verwendete Modell. | COMBO | Ja | `"kling-v2-5-turbo"` |
 | `cfg_scale` | Steuert, wie genau das Video dem Prompt folgt. Höhere Werte bedeuten eine stärkere Befolgung (Standard: 0.8). | FLOAT | Ja | 0.0 bis 1.0 |
-| `mode` | Der Generierungsmodus. | COMBO | Ja | `"pro"` |
+| `Modus` | Der Generierungsmodus. | COMBO | Ja | `"pro"` |
 | `aspect_ratio` | Das Seitenverhältnis des generierten Videos (Standard: `"16:9"`). | COMBO | Ja | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 | `duration` | Die Dauer des generierten Videos in Sekunden (Standard: `"5"`). | COMBO | Ja | `"5"`<br>`"10"` |
 

@@ -8,7 +8,7 @@ Il nodo HitPaw Video Enhance utilizza un'API esterna per migliorare la qualità 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello AI da utilizzare per il miglioramento del video. Selezionando un modello viene visualizzato un parametro `resolution` annidato. I modelli disponibili e le relative risoluzioni supportate variano. | DYNAMIC_COMBO | Sì | `"Portrait Restore Model (1x)"`<br>`"Portrait Restore Model (2x)"`<br>`"General Restore Model (1x)"`<br>`"General Restore Model (2x)"`<br>`"General Restore Model (4x)"`<br>`"Ultra HD Model (2x)"`<br>`"Generative Model (1x)"` |
+| `modello` | Il modello AI da utilizzare per il miglioramento del video. Selezionando un modello viene visualizzato un parametro `resolution` annidato. I modelli disponibili e le relative risoluzioni supportate variano. | DYNAMIC_COMBO | Sì | `"Portrait Restore Model (1x)"`<br>`"Portrait Restore Model (2x)"`<br>`"General Restore Model (1x)"`<br>`"General Restore Model (2x)"`<br>`"General Restore Model (4x)"`<br>`"Ultra HD Model (2x)"`<br>`"Generative Model (1x)"` |
 | `video` | Il file video di input da migliorare. | VIDEO | Sì | N/A |
 
 ### Input di Portrait Restore, General Restore e Ultra HD Model
@@ -17,13 +17,13 @@ Queste opzioni di risoluzione sono condivise da Portrait Restore Model (1x), Por
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model.resolution` | La risoluzione di destinazione per il video migliorato. Selezionando `"original"` viene mantenuta la risoluzione del video di input. | COMBO | Sì | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"`<br>`"8K"` |
+| `risoluzione` | La risoluzione di destinazione per il video migliorato. Selezionando `"original"` viene mantenuta la risoluzione del video di input. | COMBO | Sì | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"`<br>`"8K"` |
 
 ### Input di Generative Model (1x)
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model.resolution` | La risoluzione di destinazione per il video migliorato. Selezionando `"original"` viene mantenuta la risoluzione del video di input. L'opzione `"8K"` non è disponibile per questo modello. | COMBO | Sì | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"` |
+| `risoluzione` | La risoluzione di destinazione per il video migliorato. Selezionando `"original"` viene mantenuta la risoluzione del video di input. L'opzione `"8K"` non è disponibile per questo modello. | COMBO | Sì | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"` |
 
 **Note:**
 

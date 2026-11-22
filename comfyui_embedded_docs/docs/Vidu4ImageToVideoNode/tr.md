@@ -8,7 +8,7 @@ Bir `model` seçmek, o modele özgü parametreleri gösterir.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Oluşturulan videonun başlangıç karesi. En-boy oranı 1:5 ile 5:1 arasında olmalıdır. | IMAGE | Evet | N/A |
+| `görüntü` | Oluşturulan videonun başlangıç karesi. En-boy oranı 1:5 ile 5:1 arasında olmalıdır. | IMAGE | Evet | N/A |
 | `model` | Video oluşturmak için kullanılacak model. Bir model seçmek, ona özgü parametreleri gösterir: `prompt`, `resolution`, `duration`, `audio` ve `seed`. | DYNAMIC_COMBO | Evet | `"Vidu Q4 Preview"` |
 | `prompt` | Video oluşturma için isteğe bağlı metin istemi, en fazla 5000 karakter (varsayılan: boş). | STRING | Evet | Herhangi bir metin |
 | `resolution` | Çıktı videosunun çözünürlüğü (varsayılan: `"720p"`). | COMBO | Evet | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"2K"`<br>`"4K"` |

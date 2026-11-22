@@ -6,7 +6,7 @@ Erzeugen Sie mit HeyGen Video 1.0 aus einem Bild ein Video mit synchronisiertem 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modellversion für die Generierung. (Standard: `"heygen-video-1"`) | DYNAMIC_COMBO | Ja | `"heygen-video-1"` |
+| `Modell` | Modellversion für die Generierung. (Standard: `"heygen-video-1"`) | DYNAMIC_COMBO | Ja | `"heygen-video-1"` |
 | `image` | Erstes Frame des Videos. Es wird genau ein Bild benötigt; ein Batch wird abgelehnt. Schneiden Sie das Bild zu, um die Form des Videos zu ändern, da die Ausgabe das Seitenverhältnis dieses Bildes beibehält. | IMAGE | Ja | 1 Bild, Seitenverhältnis 1:4 bis 4:1 |
 | `prompt` | Beschreibung dessen, was im Video geschieht, einschließlich eventuellen Dialogs. (Standard: leerer String) | STRING | Ja | 1 bis 16000 Zeichen |
 | `duration` | Dauer des Ausgabevideos in Sekunden. Wird ignoriert, wenn `auto_duration` auf `"enabled"` steht. (Standard: 5) | INT | Ja | 5 bis 30 |

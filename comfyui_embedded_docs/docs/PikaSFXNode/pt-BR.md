@@ -7,7 +7,7 @@ Este nó gera um efeito sonoro a partir de uma descrição textual com o Pika. D
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Descrição do efeito sonoro desejado. Não pode estar vazio. Padrão: "" (string vazia). | STRING | Sim | 1 a 4000 caracteres |
-| `duration` | Duração do efeito sonoro em segundos. Padrão: 5.0. | FLOAT | Sim | 1.0 a 20.0 (passo: 0.1) |
+| `duração` | Duração do efeito sonoro em segundos. Padrão: 5.0. | FLOAT | Sim | 1.0 a 20.0 (passo: 0.1) |
 | `seed` | Semente para amostragem. Padrão: 42. | INT | Sim | 0 a 2147483647 |
 
 ## Saídas

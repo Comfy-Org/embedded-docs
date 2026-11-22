@@ -6,8 +6,8 @@ El nodo de Recorte de Imagen extrae una sección rectangular de una imagen de en
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `image` | La imagen de entrada que se va a recortar. | IMAGE | Sí | N/A |
-| `crop_region` | Define el área rectangular que se extraerá de la imagen. Se especifica mediante `x` (inicio horizontal), `y` (inicio vertical), `ancho` y `alto`. Si la región definida se extiende más allá de los bordes de la imagen, se ajustará automáticamente para que quepa dentro de las dimensiones de la imagen. | BOUNDINGBOX | Sí | N/A |
+| `imagen` | La imagen de entrada que se va a recortar. | IMAGE | Sí | N/A |
+| `región_de_recorte` | Define el área rectangular que se extraerá de la imagen. Se especifica mediante `x` (inicio horizontal), `y` (inicio vertical), `ancho` y `alto`. Si la región definida se extiende más allá de los bordes de la imagen, se ajustará automáticamente para que quepa dentro de las dimensiones de la imagen. | BOUNDINGBOX | Sí | N/A |
 
 **Nota sobre restricciones de la región:** La región de recorte se limita automáticamente para mantenerse dentro de los límites de la imagen de entrada. Si la coordenada `x` o `y` especificada es mayor que el ancho o alto de la imagen, se establecerá en la posición máxima válida. El ancho y alto del recorte resultante se ajustarán para que la región no exceda los bordes de la imagen.
 

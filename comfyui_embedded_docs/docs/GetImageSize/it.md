@@ -6,7 +6,7 @@ GetImageSize legge un'immagine di input e restituisce la sua larghezza, altezza 
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine di input da cui vengono estratte larghezza, altezza e dimensione del batch | IMAGE | Sì | - |
+| `immagine` | L'immagine di input da cui vengono estratte larghezza, altezza e dimensione del batch | IMAGE | Sì | - |
 
 ## Output
 

@@ -6,7 +6,7 @@ Der Load Video-Node lädt Videodateien aus dem Eingabeverzeichnis und stellt sie
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `file` | Die aus dem Eingabeverzeichnis zu ladende Videodatei. Die Dropdown-Liste wird dynamisch mit allen im ComfyUI-Eingabeordner gefundenen Videodateien befüllt; neue Videodateien können direkt über die Dateiauswahl hochgeladen werden. | COMBO | Ja | Mehrere Optionen verfügbar (alle Videodateien im Eingabeverzeichnis) |
+| `Datei` | Die aus dem Eingabeverzeichnis zu ladende Videodatei. Die Dropdown-Liste wird dynamisch mit allen im ComfyUI-Eingabeordner gefundenen Videodateien befüllt; neue Videodateien können direkt über die Dateiauswahl hochgeladen werden. | COMBO | Ja | Mehrere Optionen verfügbar (alle Videodateien im Eingabeverzeichnis) |
 
 **Hinweis:** Die verfügbaren Optionen für den Parameter `file` werden dynamisch aus den im Eingabeverzeichnis vorhandenen Videodateien befüllt. Es werden nur Dateien angezeigt, die unterstützten Video-Inhaltstypen entsprechen, und die Liste ist alphabetisch sortiert. Sie können auch eine neue Videodatei direkt über die Dateiauswahl-Oberfläche des Nodes hochladen. Wenn eine zuvor ausgewählte Videodatei nicht mehr gefunden werden kann, meldet der Node einen Fehler für eine ungültige Datei.
 

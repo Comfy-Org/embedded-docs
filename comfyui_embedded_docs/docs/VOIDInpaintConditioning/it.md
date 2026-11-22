@@ -6,14 +6,14 @@ Il nodo VOIDInpaintConditioning prepara i dati di condizionamento necessari per 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | Il condizionamento positivo da aumentare con le informazioni latenti di inpainting | CONDITIONING | Sì | - |
-| `negative` | Il condizionamento negativo da aumentare con le informazioni latenti di inpainting | CONDITIONING | Sì | - |
+| `positivo` | Il condizionamento positivo da aumentare con le informazioni latenti di inpainting | CONDITIONING | Sì | - |
+| `negativo` | Il condizionamento negativo da aumentare con le informazioni latenti di inpainting | CONDITIONING | Sì | - |
 | `vae` | Il modello VAE usato per codificare la maschera e il video mascherato nello spazio latente | VAE | Sì | - |
 | `video` | Fotogrammi del video sorgente [T, H, W, 3] | IMAGE | Sì | - |
 | `quadmask` | Quadmask preprocessata da VOIDQuadmaskPreprocess [T, H, W] | MASK | Sì | - |
-| `width` | La larghezza a cui ridimensionare il video e la maschera (predefinito: 672) | INT | Sì | 16 a MAX_RESOLUTION (passo: 8) |
-| `height` | L'altezza a cui ridimensionare il video e la maschera (predefinito: 384) | INT | Sì | 16 a MAX_RESOLUTION (passo: 8) |
-| `length` | Numero di fotogrammi pixel da elaborare. Per CogVideoX-Fun-V1.5 (patch_size_t=2), latent_t deve essere pari — le lunghezze che producono un latent_t dispari vengono arrotondate per difetto (ad es. 49 → 45) (predefinito: 45) | INT | Sì | 1 a MAX_RESOLUTION (passo: 1) |
+| `larghezza` | La larghezza a cui ridimensionare il video e la maschera (predefinito: 672) | INT | Sì | 16 a MAX_RESOLUTION (passo: 8) |
+| `altezza` | L'altezza a cui ridimensionare il video e la maschera (predefinito: 384) | INT | Sì | 16 a MAX_RESOLUTION (passo: 8) |
+| `lunghezza` | Numero di fotogrammi pixel da elaborare. Per CogVideoX-Fun-V1.5 (patch_size_t=2), latent_t deve essere pari — le lunghezze che producono un latent_t dispari vengono arrotondate per difetto (ad es. 49 → 45) (predefinito: 45) | INT | Sì | 1 a MAX_RESOLUTION (passo: 1) |
 | `batch_size` | La dimensione del batch per il latente di rumore in output (predefinito: 1) | INT | Sì | 1 a 64 |
 
 **Nota:** Poiché CogVideoX-Fun-V1.5 usa `patch_size_t=2`, il latente codificato deve avere una dimensione temporale pari. Se `length` producesse un `latent_t` dispari, il nodo lo arrotonda automaticamente per difetto al valore valido più vicino e registra un avviso. Usare un `latent_t` dispari corrompe l'ultimo fotogramma tramite padding circolare, il che può causare jitter visibile o soggetti che scompaiono vicino alla fine del video decodificato.

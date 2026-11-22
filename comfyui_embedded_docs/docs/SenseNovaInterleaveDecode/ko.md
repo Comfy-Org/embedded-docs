@@ -7,8 +7,8 @@ SenseNova Conditioning이 남긴 인터리브 기록을 사용 가능한 텍스�
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | 생성된 토큰을 디코딩하는 데 사용되는 SenseNova CLIP 모델입니다. | CLIP | 예 | - |
-| `conditioning` | SenseNova Conditioning의 인터리브 컨디셔닝입니다. | CONDITIONING | 예 | - |
-| `samples` | 마지막 KSampler 픽셀 latent로, 루프가 이미지 요청에서 끝난 경우 필요합니다. | LATENT | 아니요 | - |
+| `컨디셔닝` | SenseNova Conditioning의 인터리브 컨디셔닝입니다. | CONDITIONING | 예 | - |
+| `샘플` | 마지막 KSampler 픽셀 latent로, 루프가 이미지 요청에서 끝난 경우 필요합니다. | LATENT | 아니요 | - |
 
 **제약 사항 및 동작:**
 

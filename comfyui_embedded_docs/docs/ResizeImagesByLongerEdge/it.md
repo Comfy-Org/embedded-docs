@@ -7,7 +7,7 @@ Il nodo Resize Images by Longer Edge ridimensiona una o più immagini in modo ch
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `image` | L'immagine o il batch di immagini di input da ridimensionare. | IMAGE | Sì | - |
-| `longer_edge` | Dimensione target per il lato più lungo. Il lato più corto verrà ridimensionato proporzionalmente. (predefinito: 1024) | INT | Sì | 1 - 8192 |
+| `lato_più_lungo` | Dimensione target per il lato più lungo. Il lato più corto verrà ridimensionato proporzionalmente. (predefinito: 1024) | INT | Sì | 1 - 8192 |
 
 ## Output
 

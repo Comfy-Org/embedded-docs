@@ -7,8 +7,8 @@ Wandelt den von SenseNova Conditioning hinterlassenen Interleave-Verlauf in nutz
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | SenseNova CLIP-Modell, das zum Dekodieren der generierten Tokens verwendet wird. | CLIP | Ja | - |
-| `conditioning` | Interleave-Conditioning von SenseNova Conditioning. | CONDITIONING | Ja | - |
-| `samples` | Letzter KSampler-Pixel-Latent, erforderlich, wenn die Schleife mit einer Bildanforderung endete. | LATENT | Nein | - |
+| `Conditioning` | Interleave-Conditioning von SenseNova Conditioning. | CONDITIONING | Ja | - |
+| `Samples` | Letzter KSampler-Pixel-Latent, erforderlich, wenn die Schleife mit einer Bildanforderung endete. | LATENT | Nein | - |
 
 **Einschränkungen und Verhalten:**
 

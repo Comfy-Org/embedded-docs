@@ -5,8 +5,8 @@ Il nodo WanMoveConcatTrack combina due insiemi di dati di tracciamento del movim
 ## Input
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `tracks_1` | Il primo insieme di dati di tracciamento del movimento da concatenare. | TRACKS | Sì |  |
-| `tracks_2` | Un secondo insieme opzionale di dati di tracciamento del movimento. Se non fornito, `tracks_1` viene passato direttamente all'output. | TRACKS | No |  |
+| `tracce_1` | Il primo insieme di dati di tracciamento del movimento da concatenare. | TRACKS | Sì |  |
+| `tracce_2` | Un secondo insieme opzionale di dati di tracciamento del movimento. Se non fornito, `tracks_1` viene passato direttamente all'output. | TRACKS | No |  |
 
 ## Output
 | Nome output | Descrizione | Tipo di dato |

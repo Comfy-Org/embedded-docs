@@ -8,7 +8,7 @@ Questo nodo genera un video con una persona o un oggetto basandosi sui materiali
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello specifico da utilizzare per la generazione video. | DYNAMIC_COMBO | Sì | "wan2.7-r2v" |
+| `modello` | Il modello specifico da utilizzare per la generazione video. | DYNAMIC_COMBO | Sì | "wan2.7-r2v" |
 | `seed` | Seme da utilizzare per la generazione, che aiuta a controllare la casualità dell'output (predefinito: 0). | INT | Sì | 0 a 2147483647 |
 | `watermark` | Indica se aggiungere una filigrana generata dall'IA al risultato (predefinito: False). Questa è un'impostazione avanzata. | BOOLEAN | Sì | True<br>False |
 

@@ -6,7 +6,7 @@ Recorte o sujeito de um vídeo com o VEED e retorne os quadros junto com uma má
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo de segmentação a usar: `"standard"` para qualquer fundo com as melhores bordas e saída de até 3840x2160, `"fast"` para um resultado mais rápido de até 1920x1080, ou `"green screen"` para remover um fundo verde de até 3840x2160. Vídeos maiores são reduzidos. Selecionar uma opção revela seus parâmetros. | DYNAMIC_COMBO | Sim | `"standard"`<br>`"fast"`<br>`"green screen"` |
+| `modelo` | Modelo de segmentação a usar: `"standard"` para qualquer fundo com as melhores bordas e saída de até 3840x2160, `"fast"` para um resultado mais rápido de até 1920x1080, ou `"green screen"` para remover um fundo verde de até 3840x2160. Vídeos maiores são reduzidos. Selecionar uma opção revela seus parâmetros. | DYNAMIC_COMBO | Sim | `"standard"`<br>`"fast"`<br>`"green screen"` |
 | `video` | O vídeo do qual recortar o sujeito. Até 60 segundos. | VIDEO | Sim | Até 60 segundos |
 | `refine_foreground_edges` | Bordas mais limpas em cabelo, pelo e detalhes finos. Desativá-lo reduz o custo. Disponível para `"standard"` e `"fast"` (padrão: True). | BOOLEAN | Sim | false<br>true |
 | `subject_is_person` | Desative quando o sujeito for um objeto ou animal. Disponível para `"standard"` e `"fast"` (padrão: True). | BOOLEAN | Sim | false<br>true |

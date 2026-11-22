@@ -6,10 +6,10 @@ Bria Increase Resolution esegue l'upscaling di un'immagine di input di 2x o 4x u
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | L'immagine di input da sottoporre a upscaling. | IMAGE | Sì | Immagine singola |
+| `immagine` | L'immagine di input da sottoporre a upscaling. | IMAGE | Sì | Immagine singola |
 | `desired_increase` | Moltiplicatore di risoluzione. L'output deve rientrare entro 8192 pixel su ciascun lato. | COMBO | Sì | "2"<br>"4" |
 | `auto_downscale` | Abbassa automaticamente il moltiplicatore e, se ciò non basta ancora, esegue il downscaling dell'immagine di input quando l'output supererebbe il limite. (predefinito: False) | BOOLEAN | Sì | True<br>False |
-| `moderation` | Impostazioni di moderazione. Se impostato su "true", abilita le sotto-opzioni `visual_input_moderation` e `visual_output_moderation`, entrambe predefinite a False. | DYNAMIC_COMBO | Sì | "false"<br>"true" |
+| `moderazione` | Impostazioni di moderazione. Se impostato su "true", abilita le sotto-opzioni `visual_input_moderation` e `visual_output_moderation`, entrambe predefinite a False. | DYNAMIC_COMBO | Sì | "false"<br>"true" |
 
 Note:
 - Quando `moderation` è impostato su "true", le sotto-opzioni `visual_input_moderation` e `visual_output_moderation` diventano disponibili, entrambe predefinite a False. Esse controllano la moderazione dell'immagine di input e del contenuto dell'immagine di output.

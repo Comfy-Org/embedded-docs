@@ -8,7 +8,7 @@ Crea un avatar HeyGen riutilizzabile da una foto di una persona o da un prompt t
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `source` | Genera un nuovo personaggio da un prompt testuale oppure crea l'avatar da una foto collegata di una persona. | DYNAMIC_COMBO | Sì | `"prompt"`<br>`"photo"` |
+| `sorgente` | Genera un nuovo personaggio da un prompt testuale oppure crea l'avatar da una foto collegata di una persona. | DYNAMIC_COMBO | Sì | `"prompt"`<br>`"photo"` |
 
 ### Input per prompt
 

@@ -6,9 +6,9 @@ Dieser Node mischt eine Liste von Bildern und eine Liste von Texten gemeinsam, w
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `images` | Liste der zu mischenden Bilder. | IMAGE | Ja | - |
-| `texts` | Liste der zu mischenden Texte. | STRING | Ja | - |
-| `seed` | Zufalls-Seed. Die Mischreihenfolge wird durch diesen Wert bestimmt (Standard: 0). | INT | Nein | 0 bis 18446744073709551615 |
+| `Bilder` | Liste der zu mischenden Bilder. | IMAGE | Ja | - |
+| `Texte` | Liste der zu mischenden Texte. | STRING | Ja | - |
+| `Seed` | Zufalls-Seed. Die Mischreihenfolge wird durch diesen Wert bestimmt (Standard: 0). | INT | Nein | 0 bis 18446744073709551615 |
 
 **Hinweis:** Die Eingaben `images` und `texts` müssen Listen derselben Länge sein. Der Node paart das erste Bild mit dem ersten Text, das zweite Bild mit dem zweiten Text und so weiter, bevor diese Paare gemeinsam gemischt werden.
 

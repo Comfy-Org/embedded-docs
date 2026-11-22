@@ -6,10 +6,10 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 使用するモデル（デフォルト: `"gemini-decision-1"`）。 | COMBO | はい | `"gemini-decision-1"` |
-| `question` | 選択する画像（デフォルト: "Which image best matches the prompt in text? If there is no text, which image has the best quality?"）。 | STRING | はい | 1～5000 文字 |
-| `images` | 選択対象の画像。バッチ、または単一のフレームバッチとして指定します。 | IMAGE | はい | 2～64 枚の画像 |
-| `text` | 質問の対象となるテキスト。画像の生成元プロンプトなど。最大 20000 文字。 | STRING | いいえ | 最大 20000 文字 |
+| `モデル` | 使用するモデル（デフォルト: `"gemini-decision-1"`）。 | COMBO | はい | `"gemini-decision-1"` |
+| `質問` | 選択する画像（デフォルト: "Which image best matches the prompt in text? If there is no text, which image has the best quality?"）。 | STRING | はい | 1～5000 文字 |
+| `画像` | 選択対象の画像。バッチ、または単一のフレームバッチとして指定します。 | IMAGE | はい | 2～64 枚の画像 |
+| `テキスト` | 質問の対象となるテキスト。画像の生成元プロンプトなど。最大 20000 文字。 | STRING | いいえ | 最大 20000 文字 |
 
 このノードは 2～64 枚の画像を必要とし、1 枚だけの画像ではエラーを発生させます。画像の品質だけでなくプロンプトに従って選択する場合は、`text` を接続してください。
 

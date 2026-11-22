@@ -7,9 +7,9 @@
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | SenseNova CLIP 모델입니다. CLIP Text Encode에도 연결하는 CLIP 로더를 연결하고, 인코더 출력은 `conditioning`으로 보냅니다. 들어오는 컨디셔닝이 이미 완료된 경우를 제외하고 모든 작업에 필요합니다. | CLIP | 아니요 | - |
-| `conditioning` | CLIP Text Encode에서 가져온 SenseNova 텍스트 컨디셔닝입니다. | CONDITIONING | 예 | - |
-| `negative` | 선택적 네거티브 컨디셔닝입니다. `interleave` 및 `self-correction` 작업에서 업데이트되어 반환됩니다. | CONDITIONING | 아니요 | - |
-| `task` | 실행할 작업입니다. `"image"`는 표준 샘플러용 프롬프트를 인코딩하고, `"image thinking"`은 모델이 답변하기 전에 사고하도록 하며, `"interleave"`는 텍스트와 이미지를 한 번에 생성하고, `"self-correction"`은 모델이 자신의 이전 출력을 수정하도록 합니다. | DYNAMIC_COMBO | 예 | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
+| `컨디셔닝` | CLIP Text Encode에서 가져온 SenseNova 텍스트 컨디셔닝입니다. | CONDITIONING | 예 | - |
+| `네거티브` | 선택적 네거티브 컨디셔닝입니다. `interleave` 및 `self-correction` 작업에서 업데이트되어 반환됩니다. | CONDITIONING | 아니요 | - |
+| `작업` | 실행할 작업입니다. `"image"`는 표준 샘플러용 프롬프트를 인코딩하고, `"image thinking"`은 모델이 답변하기 전에 사고하도록 하며, `"interleave"`는 텍스트와 이미지를 한 번에 생성하고, `"self-correction"`은 모델이 자신의 이전 출력을 수정하도록 합니다. | DYNAMIC_COMBO | 예 | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
 | `max_tokens` | 이 호출에서 생성되는 최대 토큰 수입니다. 기본값: 1024. | INT | 예 | 1 ~ 8192 |
 
 ### `interleave` 입력

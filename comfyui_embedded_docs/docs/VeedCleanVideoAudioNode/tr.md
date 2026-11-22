@@ -7,8 +7,8 @@ VEED ile bir videodaki konuşmanın arka plan gürültüsünü kaldırın. Yaln�
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `video` | Konuşma içeren bir ses parçasına sahip, 30 dakikadan kısa video. Videonun bir ses kanalı olmalıdır. | VIDEO | Evet | 1799 saniyeye kadar |
-| `strength` | Konuşma altında ne kadar gürültünün kaldırılacağı. Daha düşük değer, sesin arkasında daha fazla ortam tonu bırakır; kelimeler arasındaki duraklamalar her zaman tamamen temizlenir ve varsayılanın üzerindeki değerler çok az değişiklik yapar. (varsayılan: 0.874) | FLOAT | Evet | 0.0 ila 1.0 (adım 0.001) |
-| `loudness` | Konuşma ses yüksekliğinin normalleştirilip normalleştirilmeyeceği. `"normalize"`, bunu `target_lufs` değerine ayarlar; `"keep input level"` seviyeyi olduğu gibi bırakır. Bir seçenek belirlemek, parametrelerini gösterir. (varsayılan: `"normalize"`) | DYNAMIC_COMBO | Evet | `"normalize"`<br>`"keep input level"` |
+| `güç` | Konuşma altında ne kadar gürültünün kaldırılacağı. Daha düşük değer, sesin arkasında daha fazla ortam tonu bırakır; kelimeler arasındaki duraklamalar her zaman tamamen temizlenir ve varsayılanın üzerindeki değerler çok az değişiklik yapar. (varsayılan: 0.874) | FLOAT | Evet | 0.0 ila 1.0 (adım 0.001) |
+| `ses yüksekliği` | Konuşma ses yüksekliğinin normalleştirilip normalleştirilmeyeceği. `"normalize"`, bunu `target_lufs` değerine ayarlar; `"keep input level"` seviyeyi olduğu gibi bırakır. Bir seçenek belirlemek, parametrelerini gösterir. (varsayılan: `"normalize"`) | DYNAMIC_COMBO | Evet | `"normalize"`<br>`"keep input level"` |
 | `target_lufs` | Temizlenmiş konuşmanın LUFS cinsinden entegre ses yüksekliği. Tepe değerler -1.1 dBTP ile sınırlandırılır, bu nedenle yüksek hedefler erken durur (tipik konuşma için yaklaşık -15 LUFS). `loudness` değeri `"normalize"` olduğunda kullanılabilir (varsayılan: -19.0). | FLOAT | Evet | -40.0 ila -8.0 (adım 0.1) |
 
 Klip 1799 saniyeden uzun olduğunda ve videoda ses kanalı olmadığında düğüm hata vererek durur.

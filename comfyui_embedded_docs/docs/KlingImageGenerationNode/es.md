@@ -7,14 +7,14 @@ El nodo Kling Image Generation genera imágenes a partir de prompts de texto con
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
 | `prompt` | Prompt de texto positivo. Obligatorio; debe tener entre 1 y 500 caracteres. | STRING | Sí | Máximo 500 caracteres |
-| `negative_prompt` | Prompt de texto negativo. | STRING | Sí | Máximo 500 caracteres |
-| `image_type` | Selección del tipo de referencia de imagen (avanzado). Obligatorio cuando se proporciona una imagen de referencia. | COMBO | Sí | `"subject_reference"`<br>`"style_reference"` |
-| `image_fidelity` | Intensidad de referencia para imágenes cargadas por el usuario (predeterminado: 0.5, avanzado) | FLOAT | Sí | 0.0 - 1.0 |
-| `human_fidelity` | Similitud de referencia del sujeto (predeterminado: 0.45, avanzado) | FLOAT | Sí | 0.0 - 1.0 |
-| `model_name` | Selección de modelo para la generación de imágenes (predeterminado: "kling-v3") | COMBO | Sí | `"kling-v3"` |
-| `aspect_ratio` | Relación de aspecto para las imágenes generadas (predeterminado: "16:9") | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` |
+| `prompt_negativo` | Prompt de texto negativo. | STRING | Sí | Máximo 500 caracteres |
+| `tipo_de_imagen` | Selección del tipo de referencia de imagen (avanzado). Obligatorio cuando se proporciona una imagen de referencia. | COMBO | Sí | `"subject_reference"`<br>`"style_reference"` |
+| `fidelidad_de_imagen` | Intensidad de referencia para imágenes cargadas por el usuario (predeterminado: 0.5, avanzado) | FLOAT | Sí | 0.0 - 1.0 |
+| `fidelidad_humana` | Similitud de referencia del sujeto (predeterminado: 0.45, avanzado) | FLOAT | Sí | 0.0 - 1.0 |
+| `nombre_del_modelo` | Selección de modelo para la generación de imágenes (predeterminado: "kling-v3") | COMBO | Sí | `"kling-v3"` |
+| `relación_de_aspecto` | Relación de aspecto para las imágenes generadas (predeterminado: "16:9") | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` |
 | `n` | Número de imágenes generadas (predeterminado: 1) | INT | Sí | 1 - 9 |
-| `image` | Imagen de referencia opcional | IMAGE | No | - |
+| `imagen` | Imagen de referencia opcional | IMAGE | No | - |
 | `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0) | INT | No | 0 - 2147483647 |
 
 **Restricciones de los parámetros:**

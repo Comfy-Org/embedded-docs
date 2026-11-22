@@ -6,8 +6,8 @@ Il nodo `GenerateTracks` crea molteplici percorsi di movimento paralleli (tracce
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `width` | La larghezza del fotogramma video in pixel. Il valore predefinito è 832. | INT | Sì | 16 - 4096 |
-| `height` | L'altezza del fotogramma video in pixel. Il valore predefinito è 480. | INT | Sì | 16 - 4096 |
+| `larghezza` | La larghezza del fotogramma video in pixel. Il valore predefinito è 832. | INT | Sì | 16 - 4096 |
+| `altezza` | L'altezza del fotogramma video in pixel. Il valore predefinito è 480. | INT | Sì | 16 - 4096 |
 | `start_x` | Coordinata X normalizzata (0-1) per la posizione iniziale. Il valore predefinito è 0.0. | FLOAT | Sì | 0.0 - 1.0 |
 | `start_y` | Coordinata Y normalizzata (0-1) per la posizione iniziale. Il valore predefinito è 0.0. | FLOAT | Sì | 0.0 - 1.0 |
 | `end_x` | Coordinata X normalizzata (0-1) per la posizione finale. Il valore predefinito è 1.0. | FLOAT | Sì | 0.0 - 1.0 |
@@ -18,7 +18,7 @@ Il nodo `GenerateTracks` crea molteplici percorsi di movimento paralleli (tracce
 | `bezier` | Abilita il percorso a curva di Bezier usando il punto medio come punto di controllo. Il valore predefinito è False. | BOOLEAN | Sì | True / False |
 | `mid_x` | Punto di controllo X normalizzato per la curva di Bezier. Usato solo quando `bezier` è abilitato. Il valore predefinito è 0.5. | FLOAT | Sì | 0.0 - 1.0 |
 | `mid_y` | Punto di controllo Y normalizzato per la curva di Bezier. Usato solo quando `bezier` è abilitato. Il valore predefinito è 0.5. | FLOAT | Sì | 0.0 - 1.0 |
-| `interpolation` | Controlla la temporizzazione/velocità del movimento lungo il percorso (predefinito: "linear"):<br>"linear" - velocità costante<br>"ease_in" - inizia lento e accelera<br>"ease_out" - inizia veloce e rallenta<br>"ease_in_out" - accelerazione e decelerazione fluide<br>"constant" - mantiene tutte le posizioni nel punto iniziale | COMBO | Sì | `"linear"`<br>`"ease_in"`<br>`"ease_out"`<br>`"ease_in_out"`<br>`"constant"` |
+| `interpolazione` | Controlla la temporizzazione/velocità del movimento lungo il percorso (predefinito: "linear"):<br>"linear" - velocità costante<br>"ease_in" - inizia lento e accelera<br>"ease_out" - inizia veloce e rallenta<br>"ease_in_out" - accelerazione e decelerazione fluide<br>"constant" - mantiene tutte le posizioni nel punto iniziale | COMBO | Sì | `"linear"`<br>`"ease_in"`<br>`"ease_out"`<br>`"ease_in_out"`<br>`"constant"` |
 | `track_mask` | Maschera opzionale per indicare i fotogrammi visibili. Se fornita, i fotogrammi in cui la maschera ha un qualsiasi pixel diverso da zero vengono contrassegnati come visibili per tutte le tracce. | MASK | No | - |
 
 **Nota:** I parametri `mid_x` e `mid_y` sono usati solo quando il parametro `bezier` è impostato su `True`. Quando `bezier` è `False`, il percorso è una linea retta dal punto iniziale a quello finale.

@@ -6,8 +6,8 @@ Le nœud Sonilo Music 1.5 génère une chanson complète avec des voix chantées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `prompt` | Description de la chanson : genre, ambiance, instruments et voix. Pour définir vous-même les paroles, ajoutez un bloc `Lyrics:` avec les balises `[Verse]` et `[Chorus]` ; sans cela, le modèle écrit ses propres paroles. Doit contenir de 1 à 2000 caractères après suppression des espaces. | STRING | Oui | 1 à 2000 caractères |
-| `duration` | `auto` adapte la longueur de la chanson aux paroles. `custom` utilise la valeur de `seconds`, en coupant les paroles qui ne tiennent pas et en répétant les paroles trop courtes. | DYNAMIC_COMBO | Oui | `"auto"`<br>`"custom"` |
+| `invite` | Description de la chanson : genre, ambiance, instruments et voix. Pour définir vous-même les paroles, ajoutez un bloc `Lyrics:` avec les balises `[Verse]` et `[Chorus]` ; sans cela, le modèle écrit ses propres paroles. Doit contenir de 1 à 2000 caractères après suppression des espaces. | STRING | Oui | 1 à 2000 caractères |
+| `durée` | `auto` adapte la longueur de la chanson aux paroles. `custom` utilise la valeur de `seconds`, en coupant les paroles qui ne tiennent pas et en répétant les paroles trop courtes. | DYNAMIC_COMBO | Oui | `"auto"`<br>`"custom"` |
 | `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine (par défaut : 42). | INT | Oui | 0 à 18446744073709551615 |
 
 ### Paramètres de durée personnalisée (lorsque `duration` est `"custom"`)

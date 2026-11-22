@@ -6,7 +6,7 @@ Anime uma imagem em um vídeo com diálogo e som sincronizados usando o HeyGen V
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Versão do modelo usada para geração. (padrão: `"heygen-video-1"`) | DYNAMIC_COMBO | Sim | `"heygen-video-1"` |
+| `modelo` | Versão do modelo usada para geração. (padrão: `"heygen-video-1"`) | DYNAMIC_COMBO | Sim | `"heygen-video-1"` |
 | `image` | Primeiro quadro do vídeo. Exatamente uma imagem é necessária; um lote é rejeitado. Recorte a imagem para alterar o formato do vídeo, pois a saída mantém a proporção desta imagem. | IMAGE | Sim | 1 imagem, proporção 1:4 a 4:1 |
 | `prompt` | Descrição do que acontece no vídeo, incluindo qualquer diálogo. (padrão: string vazia) | STRING | Sim | 1 a 16000 caracteres |
 | `duration` | Duração do vídeo de saída em segundos. Ignorada quando `auto_duration` é `"enabled"`. (padrão: 5) | INT | Sim | 5 a 30 |

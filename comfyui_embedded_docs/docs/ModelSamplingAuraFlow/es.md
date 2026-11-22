@@ -6,7 +6,7 @@ El nodo ModelSamplingAuraFlow aplica una configuración de muestreo especializad
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de difusión al que se aplica la configuración de muestreo de AuraFlow | MODEL | Sí | - |
+| `modelo` | El modelo de difusión al que se aplica la configuración de muestreo de AuraFlow | MODEL | Sí | - |
 | `shift` | El valor de desplazamiento que se aplica a la distribución de muestreo (predeterminado: 1.73, paso: 0.01) | FLOAT | Sí | 0.0 - 100.0 |
 | `sampling` | El modo de muestreo utilizado al parchear el modelo (predeterminado: "flow"). Marcado como opción avanzada. | COMBO | No | "flow"<br>"img_to_img_velocity" |
 

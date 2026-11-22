@@ -6,10 +6,10 @@ Bria Increase Resolution skaliert ein Eingabebild um das 2- oder 4-Fache mithilf
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `image` | Das Eingabebild, das hochskaliert werden soll. | IMAGE | Ja | Einzelbild |
-| `desired_increase` | Auflösungsmultiplikator. Die Ausgabe darf auf jeder Seite 8192 Pixel nicht überschreiten. | COMBO | Ja | "2"<br>"4" |
-| `auto_downscale` | Verringert automatisch den Multiplikator und skaliert das Eingabebild herunter, falls dies noch nicht ausreicht, wenn die Ausgabe den Grenzwert überschreiten würde. (Standard: False) | BOOLEAN | Ja | True<br>False |
-| `moderation` | Moderationseinstellungen. Wenn auf "true" gesetzt, werden die Unteroptionen `visual_input_moderation` und `visual_output_moderation` aktiviert, die beide standardmäßig auf False gesetzt sind. | DYNAMIC_COMBO | Ja | "false"<br>"true" |
+| `Bild` | Das Eingabebild, das hochskaliert werden soll. | IMAGE | Ja | Einzelbild |
+| `Gewünschte Vergrößerung` | Auflösungsmultiplikator. Die Ausgabe darf auf jeder Seite 8192 Pixel nicht überschreiten. | COMBO | Ja | "2"<br>"4" |
+| `Automatisch herunterskalieren` | Verringert automatisch den Multiplikator und skaliert das Eingabebild herunter, falls dies noch nicht ausreicht, wenn die Ausgabe den Grenzwert überschreiten würde. (Standard: False) | BOOLEAN | Ja | True<br>False |
+| `Moderation` | Moderationseinstellungen. Wenn auf "true" gesetzt, werden die Unteroptionen `visual_input_moderation` und `visual_output_moderation` aktiviert, die beide standardmäßig auf False gesetzt sind. | DYNAMIC_COMBO | Ja | "false"<br>"true" |
 
 Hinweise:
 - Wenn `moderation` auf "true" gesetzt ist, werden die Unteroptionen `visual_input_moderation` und `visual_output_moderation` verfügbar, die beide standardmäßig auf False gesetzt sind. Sie steuern die Moderation des Eingabebilds und des Inhalts des Ausgabebilds.

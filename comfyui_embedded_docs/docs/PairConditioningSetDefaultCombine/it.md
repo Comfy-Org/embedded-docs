@@ -6,10 +6,10 @@ Il nodo **PairConditioningSetDefaultAndCombine** imposta i valori di condizionam
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | L'input di condizionamento positivo primario da elaborare | CONDITIONING | Sì | - |
-| `negative` | L'input di condizionamento negativo primario da elaborare | CONDITIONING | Sì | - |
-| `positive_DEFAULT` | I valori di condizionamento positivi predefiniti da usare come fallback | CONDITIONING | Sì | - |
-| `negative_DEFAULT` | I valori di condizionamento negativi predefiniti da usare come fallback | CONDITIONING | Sì | - |
+| `positivo` | L'input di condizionamento positivo primario da elaborare | CONDITIONING | Sì | - |
+| `negativo` | L'input di condizionamento negativo primario da elaborare | CONDITIONING | Sì | - |
+| `positivo_DEFAULT` | I valori di condizionamento positivi predefiniti da usare come fallback | CONDITIONING | Sì | - |
+| `negativo_DEFAULT` | I valori di condizionamento negativi predefiniti da usare come fallback | CONDITIONING | Sì | - |
 | `hooks` | Gruppo di hook opzionale per logica di elaborazione personalizzata | HOOKS | No | - |
 
 ## Output

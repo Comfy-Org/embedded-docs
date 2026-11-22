@@ -6,13 +6,13 @@ Migliora la guida verso una struttura dettagliata utilizzando un altro set di CF
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello a cui applicare la guida con salto dei layer | MODEL | Sì | - |
-| `double_layers` | Numeri di layer separati da virgola per i blocchi doppi da saltare (predefinito: "7, 8, 9") | STRING | Sì | - |
-| `single_layers` | Numeri di layer separati da virgola per i blocchi singoli da saltare (predefinito: "7, 8, 9") | STRING | Sì | - |
-| `scale` | Fattore di scala della guida (predefinito: 3.0) | FLOAT | Sì | 0.0 - 10.0 |
-| `start_percent` | Percentuale iniziale per l'applicazione della guida (predefinito: 0.01) | FLOAT | Sì | 0.0 - 1.0 |
-| `end_percent` | Percentuale finale per l'applicazione della guida (predefinito: 0.15) | FLOAT | Sì | 0.0 - 1.0 |
-| `rescaling_scale` | Fattore di scala di ridimensionamento per regolare l'ampiezza dell'output (predefinito: 0.0, ovvero nessun ridimensionamento) | FLOAT | Sì | 0.0 - 10.0 |
+| `modello` | Il modello a cui applicare la guida con salto dei layer | MODEL | Sì | - |
+| `doppi livelli` | Numeri di layer separati da virgola per i blocchi doppi da saltare (predefinito: "7, 8, 9") | STRING | Sì | - |
+| `livelli singoli` | Numeri di layer separati da virgola per i blocchi singoli da saltare (predefinito: "7, 8, 9") | STRING | Sì | - |
+| `scala` | Fattore di scala della guida (predefinito: 3.0) | FLOAT | Sì | 0.0 - 10.0 |
+| `percentuale iniziale` | Percentuale iniziale per l'applicazione della guida (predefinito: 0.01) | FLOAT | Sì | 0.0 - 1.0 |
+| `percentuale finale` | Percentuale finale per l'applicazione della guida (predefinito: 0.15) | FLOAT | Sì | 0.0 - 1.0 |
+| `scala di riscalatura` | Fattore di scala di ridimensionamento per regolare l'ampiezza dell'output (predefinito: 0.0, ovvero nessun ridimensionamento) | FLOAT | Sì | 0.0 - 10.0 |
 
 **Nota:** Se sia `double_layers` che `single_layers` sono vuoti (non contengono numeri di layer), il nodo restituisce il modello originale senza applicare alcuna guida.
 

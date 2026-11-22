@@ -6,11 +6,11 @@ Dieser Node ermöglicht die Verwendung von zwei unterschiedlichen Modellen währ
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `model` | Modell, das für den positiven (bedingten) Durchlauf verwendet wird. | MODEL | Ja | |
+| `Modell` | Modell, das für den positiven (bedingten) Durchlauf verwendet wird. | MODEL | Ja | |
 | `model_negative` | Modell, das für den negativen (unbedingten) Durchlauf verwendet wird. Verwenden Sie dasselbe Modell für gewöhnliches CFG. | MODEL | Nein | |
-| `positive` | Die positive Konditionierungseingabe. | CONDITIONING | Ja | |
+| `positiv` | Die positive Konditionierungseingabe. | CONDITIONING | Ja | |
 | `cfg` | Der CFG-Skalenwert (Standard: 4.0). | FLOAT | Ja | 0.0 bis 100.0 (Schritt: 0.1) |
-| `negative` | Negative Konditionierung, die auf dem negativen Modell ausgeführt wird. Lassen Sie sie unverbunden für einen textfreien (nur Bild) unbedingten Durchlauf. | CONDITIONING | Nein | |
+| `negativ` | Negative Konditionierung, die auf dem negativen Modell ausgeführt wird. Lassen Sie sie unverbunden für einen textfreien (nur Bild) unbedingten Durchlauf. | CONDITIONING | Nein | |
 
 ## Ausgaben
 

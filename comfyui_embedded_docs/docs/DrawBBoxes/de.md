@@ -6,7 +6,7 @@ Der Node DrawBBoxes visualisiert Ergebnisse der Objekterkennung, indem er Boundi
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `image` | Das/die Eingabebild(er), auf das/die die Bounding-Boxen gezeichnet werden. Wenn nicht angegeben, wird eine leere Zeichenfläche erzeugt. | IMAGE | Nein | - |
+| `Bild` | Das/die Eingabebild(er), auf das/die die Bounding-Boxen gezeichnet werden. Wenn nicht angegeben, wird eine leere Zeichenfläche erzeugt. | IMAGE | Nein | - |
 | `bboxes` | Eine Liste von Wörterbüchern für Bounding-Boxen. Jedes Wörterbuch sollte Schlüssel für `x`, `y`, `width`, `height` und optional `label` und `score` enthalten. | BOUNDINGBOX | Ja | - |
 
 **Eingabebeschränkungen:**

@@ -7,9 +7,9 @@ Il nodo TextEncodeAceStepAudio elabora input testuali per il condizionamento aud
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `clip` | Il modello CLIP utilizzato per la tokenizzazione e la codifica | CLIP | Sì | - |
-| `tags` | Tag testuali o descrizioni per il condizionamento audio (supporta input multilinea e prompt dinamici) | STRING | Sì | - |
-| `lyrics` | Testo delle canzoni per il condizionamento audio (supporta input multilinea e prompt dinamici) | STRING | Sì | - |
-| `lyrics_strength` | Controlla la forza dell'influenza dei testi sull'output di condizionamento (predefinito: 1.0, passo: 0.01) | FLOAT | Sì | 0.0 - 10.0 |
+| `tag` | Tag testuali o descrizioni per il condizionamento audio (supporta input multilinea e prompt dinamici) | STRING | Sì | - |
+| `testo` | Testo delle canzoni per il condizionamento audio (supporta input multilinea e prompt dinamici) | STRING | Sì | - |
+| `intensità_testo` | Controlla la forza dell'influenza dei testi sull'output di condizionamento (predefinito: 1.0, passo: 0.01) | FLOAT | Sì | 0.0 - 10.0 |
 
 ## Output
 

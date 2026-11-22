@@ -6,7 +6,7 @@ Aplique uma pilha de LoRAs a um modelo de difusão em um único nó. Cada linha 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo de difusão ao qual os LoRAs serão aplicados. | MODEL | Sim | - |
+| `modelo` | O modelo de difusão ao qual os LoRAs serão aplicados. | MODEL | Sim | - |
 | `loras` | Grupo expansível de LoRAs, aplicado ao modelo na ordem das linhas (`loras.0`, `loras.1` e assim por diante). Adicione uma linha por LoRA; cada linha contém um arquivo, uma força e um interruptor liga/desliga. | DYNAMIC_GROUP | Sim | 1 a 20 linhas |
 
 ### Campos das linhas de `loras`

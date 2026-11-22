@@ -6,9 +6,9 @@ Creatify Aurora 2.0 Avatar trasforma una foto, insieme a un clip vocale o a un b
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `image` | Foto della persona da animare. Almeno 256 pixel per lato e un rapporto d'aspetto compreso tra 1:4 e 4:1; il video mantiene il rapporto d'aspetto della foto. | IMAGE | Sì | - |
+| `immagine` | Foto della persona da animare. Almeno 256 pixel per lato e un rapporto d'aspetto compreso tra 1:4 e 4:1; il video mantiene il rapporto d'aspetto della foto. | IMAGE | Sì | - |
 | `audio` | Parlato o brano musicale che guida il movimento della bocca e la durata del video. Fino a 60 secondi, oppure 14 secondi con `"2k"`; addebitato per secondo iniziato. | AUDIO | Sì | Fino a 60 secondi |
-| `resolution` | Risoluzione del video di output (predefinito: `"720p"`). | COMBO | Sì | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"2k"` |
+| `risoluzione` | Risoluzione del video di output (predefinito: `"720p"`). | COMBO | Sì | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"2k"` |
 | `text_prompt` | Scena, camera, illuminazione, espressione o movimento per l'inquadratura. Se vuoto, mantiene la foto così com'è (predefinito: stringa vuota). | STRING | Sì | Qualsiasi testo |
 | `seed` | Il seed controlla se il nodo viene rieseguito. I risultati non sono deterministici indipendentemente dal seed (predefinito: 42). | INT | Sì | 0 a 2147483647 |
 

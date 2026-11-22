@@ -10,14 +10,14 @@ Der ByteDance Text to Video-Node generiert mithilfe von ByteDance-Modellen über
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `model` | Das ByteDance-Modell, das zur Generierung des Videos verwendet wird (Standard: `"seedance-1-0-pro-fast-251015"`). | COMBO | Ja | `"seedance-1-0-pro-250528"`<br>`"seedance-1-0-pro-fast-251015"` |
-| `prompt` | Der Text-Prompt, der zur Generierung des Videos verwendet wird. | STRING | Ja | - |
-| `resolution` | Die Auflösung des Ausgabevideos. | COMBO | Ja | `"480p"`<br>`"720p"`<br>`"1080p"` |
+| `Modell` | Das ByteDance-Modell, das zur Generierung des Videos verwendet wird (Standard: `"seedance-1-0-pro-fast-251015"`). | COMBO | Ja | `"seedance-1-0-pro-250528"`<br>`"seedance-1-0-pro-fast-251015"` |
+| `Prompt` | Der Text-Prompt, der zur Generierung des Videos verwendet wird. | STRING | Ja | - |
+| `Auflösung` | Die Auflösung des Ausgabevideos. | COMBO | Ja | `"480p"`<br>`"720p"`<br>`"1080p"` |
 | `aspect_ratio` | Das Seitenverhältnis des Ausgabevideos. | COMBO | Ja | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` |
-| `duration` | Die Dauer des Ausgabevideos in Sekunden (Standard: 5). | INT | Ja | 3 bis 12 |
-| `seed` | Seed für die Generierung (Standard: 0). | INT | Nein | 0 bis 2147483647 |
+| `Dauer` | Die Dauer des Ausgabevideos in Sekunden (Standard: 5). | INT | Ja | 3 bis 12 |
+| `Seed` | Seed für die Generierung (Standard: 0). | INT | Nein | 0 bis 2147483647 |
 | `camera_fixed` | Gibt an, ob die Kamera fixiert werden soll. Die Plattform hängt eine Anweisung zum Fixieren der Kamera an Ihren Prompt an, garantiert jedoch nicht die tatsächliche Wirkung (Standard: False). | BOOLEAN | Nein | - |
-| `watermark` | Gibt an, ob dem Video ein Wasserzeichen "AI generated" hinzugefügt werden soll (Standard: False). | BOOLEAN | Nein | - |
+| `Wasserzeichen` | Gibt an, ob dem Video ein Wasserzeichen "AI generated" hinzugefügt werden soll (Standard: False). | BOOLEAN | Nein | - |
 | `generate_audio` | Fügt eine KI-generierte Audiospur hinzu. Die übrigen Modelle ignorieren diese Eingabe (Standard: False). | BOOLEAN | Nein | - |
 
 **Parametereinschränkungen:**

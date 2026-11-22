@@ -8,14 +8,14 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 模型選擇器。`"heygen-avatar-6-turbo"` 是更便宜、更快速的等級；兩個模型接受相同的輸入與解析度。 | COMBO | 是 | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
-| `avatar` | 要呈現的虛擬人偶外觀。支援 Avatar 6 的 19 種內建外觀會直接列出；`custom avatar` 會顯示 `custom_avatar_id`，供你選用在 HeyGen 中建立的外觀。 | DYNAMIC_COMBO | 是 | 19 種內建外觀<br>`custom avatar` |
-| `speech` | 使用文字腳本（HeyGen 文字轉語音）或自己的音訊來驅動虛擬人偶。顯示名稱：語音來源。 | DYNAMIC_COMBO | 是 | `"script"`<br>`"audio"` |
-| `resolution` | 輸出影片的解析度。預設：`"1080p"`。 | COMBO | 是 | `"1080p"`<br>`"2k"` |
-| `aspect_ratio` | 輸出影片的長寬比。`"auto"` 會沿用該虛擬人偶外觀本身的影片素材。預設：`"auto"`。 | COMBO | 是 | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `motion_prompt` | 手勢、表情、姿勢與鏡頭運動的選用指示。預設：空字串。 | STRING | 是 | 多行文字 |
-| `motion_expressiveness` | `"less"` 會產生更少、更小的手勢。當兩者重疊時，`motion_prompt` 優先。預設：`"default"`。 | COMBO | 是 | `"less"`<br>`"default"` |
-| `seed` | `seed` 控制節點是否應重新執行；無論 `seed` 為何，結果都不具決定性。預設：42。 | INT | 是 | 0 至 2147483647 |
+| `模型` | 模型選擇器。`"heygen-avatar-6-turbo"` 是更便宜、更快速的等級；兩個模型接受相同的輸入與解析度。 | COMBO | 是 | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `虛擬人物` | 要呈現的虛擬人偶外觀。支援 Avatar 6 的 19 種內建外觀會直接列出；`custom avatar` 會顯示 `custom_avatar_id`，供你選用在 HeyGen 中建立的外觀。 | DYNAMIC_COMBO | 是 | 19 種內建外觀<br>`custom avatar` |
+| `語音` | 使用文字腳本（HeyGen 文字轉語音）或自己的音訊來驅動虛擬人偶。顯示名稱：語音來源。 | DYNAMIC_COMBO | 是 | `"script"`<br>`"audio"` |
+| `解析度` | 輸出影片的解析度。預設：`"1080p"`。 | COMBO | 是 | `"1080p"`<br>`"2k"` |
+| `長寬比` | 輸出影片的長寬比。`"auto"` 會沿用該虛擬人偶外觀本身的影片素材。預設：`"auto"`。 | COMBO | 是 | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `動作提示詞` | 手勢、表情、姿勢與鏡頭運動的選用指示。預設：空字串。 | STRING | 是 | 多行文字 |
+| `動作表現力` | `"less"` 會產生更少、更小的手勢。當兩者重疊時，`motion_prompt` 優先。預設：`"default"`。 | COMBO | 是 | `"less"`<br>`"default"` |
+| `種子` | `seed` 控制節點是否應重新執行；無論 `seed` 為何，結果都不具決定性。預設：42。 | INT | 是 | 0 至 2147483647 |
 
 ### `custom avatar` 輸入
 

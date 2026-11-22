@@ -6,7 +6,7 @@ Dieser Node lädt einen Datensatz aus Bild-Text-Bildbeschreibungspaaren aus eine
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `folder` | Der Ordner, aus dem Bilder und Textbeschriftungen geladen werden. | COMBO | Ja | Unterordner innerhalb des Eingabeverzeichnisses von ComfyUI (dynamisch geladen) |
+| `Ordner` | Der Ordner, aus dem Bilder und Textbeschriftungen geladen werden. | COMBO | Ja | Unterordner innerhalb des Eingabeverzeichnisses von ComfyUI (dynamisch geladen) |
 
 **Hinweis:** Der ausgewählte Ordner muss ein Unterordner des Eingabeverzeichnisses von ComfyUI sein. Der Node erwartet eine `.txt`-Bildbeschreibungsdatei pro Bild: Für jede Bilddatei (`.png`, `.jpg`, `.jpeg`, `.webp`) sucht er nach einer `.txt`-Datei mit demselben Basisnamen am selben Speicherort und verwendet deren getrimmten Inhalt als Bildbeschreibung. Wenn keine Bildbeschreibungsdatei gefunden wird, wird eine leere Zeichenkette verwendet. Der Node unterstützt außerdem die Ordnerstruktur von kohya-ss/sd-scripts: Unterordner, deren Name mit einer Zahl und einem Unterstrich beginnt (zum Beispiel `5_cats`), wiederholen die darin enthaltenen Bilder entsprechend oft in der endgültigen Ausgabeliste. Wenn der ausgewählte Ordner keine gültigen Bilder enthält, löst der Node einen Fehler aus.
 

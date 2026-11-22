@@ -6,11 +6,11 @@ Il nodo SkipLayerGuidanceSD3 migliora la guida verso una struttura dettagliata a
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello a cui applicare la guida con skip layer | MODEL | Sì | - |
-| `layers` | Elenco di indici di layer da saltare, separati da virgole (predefinito: "7, 8, 9") | STRING | Sì | - |
-| `scale` | La forza dell'effetto della guida con skip layer (predefinito: 3.0) | FLOAT | Sì | 0.0 - 10.0 |
-| `start_percent` | Il punto di inizio dell'applicazione della guida come percentuale del totale dei passaggi (predefinito: 0.01) | FLOAT | Sì | 0.0 - 1.0 |
-| `end_percent` | Il punto finale dell'applicazione della guida come percentuale del totale dei passaggi (predefinito: 0.15) | FLOAT | Sì | 0.0 - 1.0 |
+| `modello` | Il modello a cui applicare la guida con skip layer | MODEL | Sì | - |
+| `livelli` | Elenco di indici di layer da saltare, separati da virgole (predefinito: "7, 8, 9") | STRING | Sì | - |
+| `scala` | La forza dell'effetto della guida con skip layer (predefinito: 3.0) | FLOAT | Sì | 0.0 - 10.0 |
+| `percentuale iniziale` | Il punto di inizio dell'applicazione della guida come percentuale del totale dei passaggi (predefinito: 0.01) | FLOAT | Sì | 0.0 - 1.0 |
+| `percentuale finale` | Il punto finale dell'applicazione della guida come percentuale del totale dei passaggi (predefinito: 0.15) | FLOAT | Sì | 0.0 - 1.0 |
 
 ## Output
 

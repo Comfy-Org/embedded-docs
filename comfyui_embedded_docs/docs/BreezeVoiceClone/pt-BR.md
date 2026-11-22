@@ -6,9 +6,9 @@ Cria uma voz Breeze a partir da gravação de um único falante. A voz é salva 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `audio` | Gravação de um único falante, com pelo menos 3 segundos de duração. Apenas os primeiros 60 segundos são usados. | AUDIO | Sim | - |
-| `remove_background_noise` | Limpa a gravação antes da clonagem. Padrão: false. | BOOLEAN | Não | true<br>false |
-| `seed` | Controla se o nó é executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Não | 0 a 2147483647 |
+| `áudio` | Gravação de um único falante, com pelo menos 3 segundos de duração. Apenas os primeiros 60 segundos são usados. | AUDIO | Sim | - |
+| `remover_ruído_de_fundo` | Limpa a gravação antes da clonagem. Padrão: false. | BOOLEAN | Não | true<br>false |
+| `semente` | Controla se o nó é executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Não | 0 a 2147483647 |
 
 ## Saídas
 

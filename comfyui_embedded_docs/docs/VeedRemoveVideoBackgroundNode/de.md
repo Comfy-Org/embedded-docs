@@ -6,7 +6,7 @@ Schneiden Sie das Motiv mit VEED aus einem Video aus und geben Sie die Frames zu
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Zu verwendendes Segmentierungsmodell: `"standard"` für jeden Hintergrund mit den besten Kanten und Ausgabe bis zu 3840x2160, `"fast"` für ein schnelleres Ergebnis bis zu 1920x1080 oder `"green screen"`, um einen grünen Hintergrund bis zu 3840x2160 per Keying zu entfernen. Größere Videos werden herunterskaliert. Die Auswahl einer Option zeigt deren Parameter an. | DYNAMIC_COMBO | Ja | `"standard"`<br>`"fast"`<br>`"green screen"` |
+| `Modell` | Zu verwendendes Segmentierungsmodell: `"standard"` für jeden Hintergrund mit den besten Kanten und Ausgabe bis zu 3840x2160, `"fast"` für ein schnelleres Ergebnis bis zu 1920x1080 oder `"green screen"`, um einen grünen Hintergrund bis zu 3840x2160 per Keying zu entfernen. Größere Videos werden herunterskaliert. Die Auswahl einer Option zeigt deren Parameter an. | DYNAMIC_COMBO | Ja | `"standard"`<br>`"fast"`<br>`"green screen"` |
 | `video` | Das Video, aus dem das Motiv freigestellt werden soll. Bis zu 60 Sekunden. | VIDEO | Ja | Bis zu 60 Sekunden |
 | `refine_foreground_edges` | Sauberere Kanten bei Haaren, Fell und feinen Details. Das Deaktivieren senkt den Preis. Verfügbar für `"standard"` und `"fast"` (Standard: True). | BOOLEAN | Ja | false<br>true |
 | `subject_is_person` | Deaktivieren, wenn das Motiv ein Objekt oder ein Tier ist. Verfügbar für `"standard"` und `"fast"` (Standard: True). | BOOLEAN | Ja | false<br>true |

@@ -6,8 +6,8 @@ Dieser Node gibt ein einzelnes Element aus einer Liste zurück, ausgewählt anha
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `list` | Die Liste der Werte, aus denen ausgewählt wird. Da dieser Node als Node mit Listeneingabe gekennzeichnet ist, wird der verbundene Wert als Gruppe von Elementen behandelt. | Beliebiger Typ | Ja | Beliebige Werteliste |
-| `index` | Die Position des zurückzugebenden Elements. Der Wert beginnt bei 0, daher gibt `0` das erste Element zurück, `1` das zweite Element und so weiter (Standard: 0). | INT | Ja | Beliebiger ganzzahliger Index |
+| `Liste` | Die Liste der Werte, aus denen ausgewählt wird. Da dieser Node als Node mit Listeneingabe gekennzeichnet ist, wird der verbundene Wert als Gruppe von Elementen behandelt. | Beliebiger Typ | Ja | Beliebige Werteliste |
+| `Index` | Die Position des zurückzugebenden Elements. Der Wert beginnt bei 0, daher gibt `0` das erste Element zurück, `1` das zweite Element und so weiter (Standard: 0). | INT | Ja | Beliebiger ganzzahliger Index |
 
 ## Ausgaben
 

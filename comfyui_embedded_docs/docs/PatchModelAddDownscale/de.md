@@ -6,14 +6,14 @@ PatchModelAddDownscale (Kohya Deep Shrink) wendet die Kohya-Deep-Shrink-Technik 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Modell, auf das der Downscale-Patch angewendet werden soll | MODEL | Ja | - |
-| `block_number` | Die spezifische Blocknummer, an der die Verkleinerung angewendet wird (Standard: 3) | INT | Ja | 1-32 |
-| `downscale_factor` | Der Faktor, um den die Merkmale verkleinert werden (Standard: 2.0) | FLOAT | Ja | 0.1-9.0 |
-| `start_percent` | Der Startpunkt im Denoising-Prozess, an dem die Verkleinerung beginnt (Standard: 0.0) | FLOAT | Ja | 0.0-1.0 |
-| `end_percent` | Der Endpunkt im Denoising-Prozess, an dem die Verkleinerung stoppt (Standard: 0.35) | FLOAT | Ja | 0.0-1.0 |
-| `downscale_after_skip` | Ob die Verkleinerung nach Skip-Verbindungen angewendet werden soll (Standard: True) | BOOLEAN | Ja | - |
-| `downscale_method` | Die Interpolationsmethode für Verkleinerungsvorgänge (Standard: "bicubic") | COMBO | Ja | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
-| `upscale_method` | Die Interpolationsmethode für Vergrößerungsvorgänge (Standard: "bicubic") | COMBO | Ja | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `Modell` | Das Modell, auf das der Downscale-Patch angewendet werden soll | MODEL | Ja | - |
+| `Blocknummer` | Die spezifische Blocknummer, an der die Verkleinerung angewendet wird (Standard: 3) | INT | Ja | 1-32 |
+| `Downscale-Faktor` | Der Faktor, um den die Merkmale verkleinert werden (Standard: 2.0) | FLOAT | Ja | 0.1-9.0 |
+| `Startprozent` | Der Startpunkt im Denoising-Prozess, an dem die Verkleinerung beginnt (Standard: 0.0) | FLOAT | Ja | 0.0-1.0 |
+| `Endprozent` | Der Endpunkt im Denoising-Prozess, an dem die Verkleinerung stoppt (Standard: 0.35) | FLOAT | Ja | 0.0-1.0 |
+| `Downscale nach Skip` | Ob die Verkleinerung nach Skip-Verbindungen angewendet werden soll (Standard: True) | BOOLEAN | Ja | - |
+| `Downscale-Methode` | Die Interpolationsmethode für Verkleinerungsvorgänge (Standard: "bicubic") | COMBO | Ja | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
+| `Upscale-Methode` | Die Interpolationsmethode für Vergrößerungsvorgänge (Standard: "bicubic") | COMBO | Ja | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 
 Der Downscale-Patch wird nur angewendet, wenn der aktuelle Denoising-Schritt in den durch `start_percent` und `end_percent` definierten Bereich fällt, und nur an dem durch `block_number` ausgewählten Block. Wenn `downscale_after_skip` aktiviert ist, wird der Patch nach der Skip-Verbindung angewendet; wenn deaktiviert, wird er vor der Skip-Verbindung angewendet. Die Merkmale werden anschließend wieder auf ihre ursprüngliche Größe hochskaliert, jedoch nur, wenn die aktuelle Merkmalsgröße nicht mehr der vor der Verkleinerung aufgezeichneten Größe entspricht.
 

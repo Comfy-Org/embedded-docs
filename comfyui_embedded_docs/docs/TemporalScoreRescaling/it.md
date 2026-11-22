@@ -6,7 +6,7 @@ Questo nodo applica il Temporal Score Rescaling (TSR) a un modello di diffusione
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello di diffusione a cui applicare la patch con la funzione TSR. | MODEL | Sì | - |
+| `modello` | Il modello di diffusione a cui applicare la patch con la funzione TSR. | MODEL | Sì | - |
 | `tsr_k` | Controlla la forza di rescaling. Un valore k più basso produce risultati più dettagliati; un valore k più alto produce risultati più levigati nella generazione di immagini. Impostando k = 1 si disabilita il rescaling. (predefinito: 0.95) | FLOAT | Sì | 0.01 - 100.0 |
 | `tsr_sigma` | Controlla quanto presto ha effetto il rescaling. Valori più elevati hanno effetto prima. (predefinito: 1.0) | FLOAT | Sì | 0.01 - 100.0 |
 

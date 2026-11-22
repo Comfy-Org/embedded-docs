@@ -6,9 +6,9 @@ Il nodo Kling Avatar 2.0 genera video di umani digitali in stile broadcast a par
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | Immagine di riferimento dell'avatar. Larghezza e altezza devono essere almeno 300px. Il rapporto d'aspetto deve essere compreso tra 1:2.5 e 2.5:1. | IMAGE | Sì | - |
-| `sound_file` | Input audio. La durata deve essere compresa tra 2 e 300 secondi. | AUDIO | Sì | - |
-| `mode` | La modalità di generazione da utilizzare. | COMBO | Sì | `"std"`<br>`"pro"` |
+| `immagine` | Immagine di riferimento dell'avatar. Larghezza e altezza devono essere almeno 300px. Il rapporto d'aspetto deve essere compreso tra 1:2.5 e 2.5:1. | IMAGE | Sì | - |
+| `file_audio` | Input audio. La durata deve essere compresa tra 2 e 300 secondi. | AUDIO | Sì | - |
+| `modalità` | La modalità di generazione da utilizzare. | COMBO | Sì | `"std"`<br>`"pro"` |
 | `prompt` | Prompt opzionale per definire azioni, emozioni e movimenti di camera dell'avatar. (predefinito: stringa vuota) | STRING | No | - |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: 0) | INT | Sì | da 0 a 2147483647 |
 

@@ -6,10 +6,10 @@ Dieser Node führt eine virtuelle Anprobe durch, indem er eine Person mit einem 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `person` | Bild der Person, die angekleidet werden soll. | IMAGE | Ja | - |
-| `garment` | Bild des anzuwendenden Kleidungsstücks. | IMAGE | Ja | - |
-| `prompt` | Optionale Styling-Anweisung in natürlicher Sprache (z. B. wie das Kleidungsstück sitzen soll). Standardwert ist eine leere Zeichenkette. | STRING | Nein | - |
-| `seed` | Der Zufallswert, der für die Erzeugung des Rauschens verwendet wird. Standard: 0. | INT | Nein | 0 bis 18446744073709551615 |
+| `Person` | Bild der Person, die angekleidet werden soll. | IMAGE | Ja | - |
+| `Kleidungsstück` | Bild des anzuwendenden Kleidungsstücks. | IMAGE | Ja | - |
+| `Prompt` | Optionale Styling-Anweisung in natürlicher Sprache (z. B. wie das Kleidungsstück sitzen soll). Standardwert ist eine leere Zeichenkette. | STRING | Nein | - |
+| `Seed` | Der Zufallswert, der für die Erzeugung des Rauschens verwendet wird. Standard: 0. | INT | Nein | 0 bis 18446744073709551615 |
 
 ## Ausgaben
 

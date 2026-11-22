@@ -6,7 +6,7 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 使用するモデル。デフォルト: `"ideogram-vector-1"`。 | DYNAMIC_COMBO | はい | `"ideogram-vector-1"` |
+| `モデル` | 使用するモデル。デフォルト: `"ideogram-vector-1"`。 | DYNAMIC_COMBO | はい | `"ideogram-vector-1"` |
 | `image` | 変換する画像。バッチ入力の場合は画像ごとに変換され、結果の SVG がまとめて返されます。 | IMAGE | はい | - |
 | `mode` | `"simple"` はより少なく大きなシェイプをトレースします。`"default"` はより細かい詳細を保持します。デフォルト: `"default"`。 | COMBO | はい | `"simple"`<br>`"default"` |
 

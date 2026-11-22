@@ -7,8 +7,8 @@ Questo nodo sostituisce lo sfondo di un video con un'immagine o un video forniti
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `video` | Video in primo piano il cui sfondo viene sostituito. | VIDEO | Sì | - |
-| `background_image` | Immagine di sfondo da comporre dietro il primo piano. Fornisci un'immagine di sfondo o un video di sfondo, non entrambi. | IMAGE | No | - |
-| `background_video` | Video di sfondo da comporre dietro il primo piano. Fornisci un'immagine di sfondo o un video di sfondo, non entrambi. | VIDEO | No | - |
+| `immagine_sfondo` | Immagine di sfondo da comporre dietro il primo piano. Fornisci un'immagine di sfondo o un video di sfondo, non entrambi. | IMAGE | No | - |
+| `video_sfondo` | Video di sfondo da comporre dietro il primo piano. Fornisci un'immagine di sfondo o un video di sfondo, non entrambi. | VIDEO | No | - |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. (predefinito: 0) | INT | Sì | da 0 a 2147483647 |
 
 **Nota:** Devi fornire esattamente uno tra `background_image` o `background_video` — non entrambi e nemmeno nessuno. Il video in primo piano e il video di sfondo (se utilizzato) devono avere ciascuno una durata di 60 secondi o inferiore. Quando si utilizza `background_image`, il suo canale alpha viene rimosso prima dell'elaborazione.

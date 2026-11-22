@@ -6,7 +6,7 @@ El nodo OptimalStepsScheduler crea un calendario de ruido (una secuencia de valo
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model_type` | El tipo de modelo de difusión que se usará para el cálculo del nivel de ruido. Cada opción utiliza su propia tabla predefinida de niveles de ruido. | COMBO | Sí | "FLUX"<br>"Wan"<br>"Chroma" |
+| `tipo_de_modelo` | El tipo de modelo de difusión que se usará para el cálculo del nivel de ruido. Cada opción utiliza su propia tabla predefinida de niveles de ruido. | COMBO | Sí | "FLUX"<br>"Wan"<br>"Chroma" |
 | `pasos` | El número total de pasos de muestreo que se calcularán (predeterminado: 20). | INT | Sí | 3 a 1000 |
 | `eliminar ruido` | Controla la intensidad de eliminación de ruido, lo que ajusta el número efectivo de pasos (predeterminado: 1.0). | FLOAT | Sí | 0.0 a 1.0 (paso: 0.01) |
 

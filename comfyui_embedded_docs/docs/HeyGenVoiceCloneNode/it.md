@@ -9,8 +9,8 @@ Clona una voce da una registrazione di un singolo parlante con il motore Voice 1
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `audio` | Registrazione di un singolo parlante. Usa almeno 10 secondi di parlato chiaro; vengono utilizzati solo i primi 3 minuti. | AUDIO | Sì | N/A |
-| `language` | Lingua parlata nella registrazione (predefinito: "auto"). | COMBO | Sì | `"auto"`<br>Numerosi preset di lingua |
-| `similarity` | Quanto fedelmente la voce segue la registrazione (predefinito: "max"). | COMBO | Sì | `"medium"`<br>`"high"`<br>`"extra_high"`<br>`"max"` |
+| `lingua` | Lingua parlata nella registrazione (predefinito: "auto"). | COMBO | Sì | `"auto"`<br>Numerosi preset di lingua |
+| `somiglianza` | Quanto fedelmente la voce segue la registrazione (predefinito: "max"). | COMBO | Sì | `"medium"`<br>`"high"`<br>`"extra_high"`<br>`"max"` |
 | `remove_background_noise` | Rimuove il rumore di fondo dalla registrazione prima della clonazione (predefinito: True). | BOOLEAN | Sì | True<br>False |
 | `seed` | Modifica il seed per clonare nuovamente la registrazione; ogni clone è una voce leggermente diversa (predefinito: 42). | INT | Sì | da 0 a 2147483647 |
 

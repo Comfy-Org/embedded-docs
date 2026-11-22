@@ -6,9 +6,9 @@ Der Node „Frame Interpolate“ erzeugt neue Frames zwischen vorhandenen Frames
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `interp_model` | Das Frame-Interpolationsmodell, das zum Generieren von Zwischenframes verwendet wird | INTERP_MODEL | Ja | - |
-| `images` | Ein Batch aufeinanderfolgender Bilder (Frames), zwischen denen interpoliert werden soll. Erfordert mindestens 2 Bilder. Werden weniger als 2 Frames bereitgestellt, gibt der Node die Eingabebilder unverändert zurück. | IMAGE | Ja | - |
-| `multiplier` | Die Anzahl, um die die Frame-Anzahl multipliziert wird. Zum Beispiel verdoppelt ein Multiplikator von 2 die Anzahl der Frames. (Standard: 2) | INT | Ja | 2 bis 16 |
+| `Interpolationsmodell` | Das Frame-Interpolationsmodell, das zum Generieren von Zwischenframes verwendet wird | INTERP_MODEL | Ja | - |
+| `Bilder` | Ein Batch aufeinanderfolgender Bilder (Frames), zwischen denen interpoliert werden soll. Erfordert mindestens 2 Bilder. Werden weniger als 2 Frames bereitgestellt, gibt der Node die Eingabebilder unverändert zurück. | IMAGE | Ja | - |
+| `Multiplikator` | Die Anzahl, um die die Frame-Anzahl multipliziert wird. Zum Beispiel verdoppelt ein Multiplikator von 2 die Anzahl der Frames. (Standard: 2) | INT | Ja | 2 bis 16 |
 
 **Hinweis:** Der Node erfordert mindestens 2 Eingabeframes und einen `multiplier` von mindestens 2. Ist eine der beiden Bedingungen nicht erfüllt, werden die Eingabebilder unverändert zurückgegeben.
 

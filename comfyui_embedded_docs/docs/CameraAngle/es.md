@@ -8,10 +8,10 @@ Este nodo elige un ángulo de cámara alrededor de un sujeto y convierte esa ele
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `horizontal_angle` | Azimut alrededor del sujeto en grados: 0 es el frente, 90 el lado derecho y 180 la parte trasera. (predeterminado: 0) | INT | Sí | 0 a 360 |
-| `vertical_angle` | Elevación en grados. Los valores negativos miran hacia arriba desde abajo; los valores positivos miran hacia abajo desde arriba. (predeterminado: 0) | INT | Sí | -30 a 60 |
+| `ángulo_horizontal` | Azimut alrededor del sujeto en grados: 0 es el frente, 90 el lado derecho y 180 la parte trasera. (predeterminado: 0) | INT | Sí | 0 a 360 |
+| `ángulo_vertical` | Elevación en grados. Los valores negativos miran hacia arriba desde abajo; los valores positivos miran hacia abajo desde arriba. (predeterminado: 0) | INT | Sí | -30 a 60 |
 | `zoom` | Zoom de la lente sobre el sujeto: 0 es un plano general, 10 un primer plano. El valor también se traslada a `camera_info.zoom`. (predeterminado: 5.0) | FLOAT | Sí | 0.0 a 10.0 (paso 0.1) |
-| `image` | Imagen de referencia opcional, mostrada en la parte frontal del cubo del sujeto en la vista previa 3D. | IMAGE | No | - |
+| `imagen` | Imagen de referencia opcional, mostrada en la parte frontal del cubo del sujeto en la vista previa 3D. | IMAGE | No | - |
 
 ## Salidas
 

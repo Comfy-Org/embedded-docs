@@ -8,7 +8,7 @@ Dieser Node animiert ein Standbild so, dass die Mundbewegungen einer bereitgeste
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Modell zur Videogenerierung. | DYNAMIC_COMBO | Ja | "MiniMax H3 Max" |
+| `Modell` | Modell zur Videogenerierung. | DYNAMIC_COMBO | Ja | "MiniMax H3 Max" |
 
 ### MiniMax H3 Max Eingaben
 

@@ -7,8 +7,8 @@ Escala un video a 1080p, 4K u 8K, manteniendo su relación de aspecto, frecuenci
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `video` | Video para escalar, con un lado corto de al menos 480 píxeles y como máximo 7680x4320 en cualquiera de las orientaciones. Hasta 2401 fotogramas para 1080p, 601 fotogramas para 4K y 241 fotogramas para 8K. | VIDEO | Sí | - |
-| `resolution` | Tamaño de salida, tan grande como quepa en 1920x1080, 3840x2160 o 7680x4320 y girado para videos verticales. Predeterminado: `"4k"`. | COMBO | Sí | `"1080p"`<br>`"4k"`<br>`"8k"` |
-| `seed` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 4294967295 |
+| `resolución` | Tamaño de salida, tan grande como quepa en 1920x1080, 3840x2160 o 7680x4320 y girado para videos verticales. Predeterminado: `"4k"`. | COMBO | Sí | `"1080p"`<br>`"4k"`<br>`"8k"` |
+| `semilla` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 4294967295 |
 
 ## Salidas
 

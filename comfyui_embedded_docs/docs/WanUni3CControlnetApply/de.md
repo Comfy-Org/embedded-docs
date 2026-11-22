@@ -8,13 +8,13 @@ Dieser Node wendet ein Uni3C ControlNet auf ein Wan-Video-Diffusionsmodell an un
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `model` | Das Wan-Diffusionsmodell, das gepatcht werden soll. | MODEL | Ja | – |
-| `model_patch` | Ein Uni3C ControlNet-Patch (muss eine Instanz von `comfy.ldm.wan.uni3c.WanUni3CControlnet` sein). | MODEL_PATCH | Ja | – |
+| `Modell` | Das Wan-Diffusionsmodell, das gepatcht werden soll. | MODEL | Ja | – |
+| `Modell-Patch` | Ein Uni3C ControlNet-Patch (muss eine Instanz von `comfy.ldm.wan.uni3c.WanUni3CControlnet` sein). | MODEL_PATCH | Ja | – |
 | `vae` | Der VAE, der zum Kodieren des Führungsvideos in Latents verwendet wird. | VAE | Ja | – |
-| `render_video` | Das aus der Kameratrajektorie gerenderte Führungsvideo, am häufigsten gewarpete Punktwolken-Renderings des Eingabebilds. | IMAGE | Ja | – |
-| `strength` | Die Stärke des angewendeten Steuersignals. | FLOAT | Ja | -10.0 bis 10.0 (Standard: 1.0) |
-| `start_percent` | Der Prozentsatz des Denoising-Prozesses, bei dem die Steuerung beginnt. | FLOAT | Ja | 0.0 bis 1.0 (Standard: 0.0) |
-| `end_percent` | Der Prozentsatz des Denoising-Prozesses, bei dem die Steuerung endet. | FLOAT | Ja | 0.0 bis 1.0 (Standard: 1.0) |
+| `Rendervideo` | Das aus der Kameratrajektorie gerenderte Führungsvideo, am häufigsten gewarpete Punktwolken-Renderings des Eingabebilds. | IMAGE | Ja | – |
+| `Stärke` | Die Stärke des angewendeten Steuersignals. | FLOAT | Ja | -10.0 bis 10.0 (Standard: 1.0) |
+| `Startprozent` | Der Prozentsatz des Denoising-Prozesses, bei dem die Steuerung beginnt. | FLOAT | Ja | 0.0 bis 1.0 (Standard: 0.0) |
+| `Endprozent` | Der Prozentsatz des Denoising-Prozesses, bei dem die Steuerung endet. | FLOAT | Ja | 0.0 bis 1.0 (Standard: 1.0) |
 
 **Hinweise:**
 - Der `model_patch` muss ein Uni3C ControlNet sein; andernfalls löst der Node einen Fehler aus.

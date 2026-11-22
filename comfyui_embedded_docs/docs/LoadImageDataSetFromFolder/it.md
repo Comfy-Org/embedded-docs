@@ -6,7 +6,7 @@ Questo nodo carica più immagini da una sottocartella selezionata all'interno de
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `folder` | La cartella da cui caricare le immagini. Le opzioni sono le sottocartelle presenti nella directory di input principale di ComfyUI. | COMBO | Sì | Più opzioni disponibili |
+| `cartella` | La cartella da cui caricare le immagini. Le opzioni sono le sottocartelle presenti nella directory di input principale di ComfyUI. | COMBO | Sì | Più opzioni disponibili |
 
 Nota: la cartella selezionata deve essere una sottocartella della directory di input principale di ComfyUI; qualsiasi valore che risolva al di fuori di essa (ad esempio, usando `..`, percorsi assoluti, lettere di unità o symlink) viene rifiutato. Vengono caricati solo i file con estensione .png, .jpg, .jpeg o .webp, e il controllo dell'estensione non distingue tra maiuscole e minuscole. Le immagini caricate vengono convertite in RGB e riscalate nell'intervallo 0-1. Se la cartella selezionata non contiene file immagine validi, il nodo genera un errore. Questo nodo è contrassegnato come sperimentale.
 

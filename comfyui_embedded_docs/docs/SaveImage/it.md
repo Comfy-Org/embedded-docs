@@ -6,8 +6,8 @@ Il nodo SaveImage salva le immagini di input come file PNG nella directory di ou
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `images` | Le immagini da salvare. | IMAGE | Sì | - |
-| `filename_prefix` | Il prefisso per il file da salvare. Può includere informazioni di formattazione come `%date:yyyy-MM-dd%` o `%Empty Latent Image.width%` per includere valori dai nodi (predefinito: "ComfyUI"). | STRING | Sì | - |
+| `immagini` | Le immagini da salvare. | IMAGE | Sì | - |
+| `prefisso_nome_file` | Il prefisso per il file da salvare. Può includere informazioni di formattazione come `%date:yyyy-MM-dd%` o `%Empty Latent Image.width%` per includere valori dai nodi (predefinito: "ComfyUI"). | STRING | Sì | - |
 
 Il nodo riceve anche due input nascosti, `prompt` e `extra_pnginfo`, che vengono popolati automaticamente da ComfyUI con il prompt del workflow e informazioni PNG aggiuntive. Quando i metadati sono abilitati, queste informazioni vengono incorporate come metadati testuali in ciascun file PNG salvato.
 

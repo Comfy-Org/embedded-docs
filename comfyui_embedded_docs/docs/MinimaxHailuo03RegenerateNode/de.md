@@ -12,7 +12,7 @@ Dieser Node rendert eine MiniMax H3 768P-Videoausgabe erneut in 2K-Auflösung. E
 | `video` | Das MiniMax H3 768P-Ausgabevideo, das neu gerendert werden soll. Verbinden Sie die unveränderte Ausgabe eines MiniMax H3-Video-Nodes (24 FPS, 4-15 Sekunden). 2K-Ausgaben können nicht verwendet werden. | VIDEO | Ja | 24 FPS, 4-15 Sekunden |
 | `first_frame` | Erstes Frame-Bild aus der ursprünglichen Generierung, falls eines verwendet wurde. | IMAGE | Nein | Bild |
 | `last_frame` | Letztes Frame-Bild aus der ursprünglichen Generierung, falls eines verwendet wurde. | IMAGE | Nein | Bild |
-| `watermark` | Ob dem Video ein AIGC-Wasserzeichen hinzugefügt werden soll. Standard ist false. | BOOLEAN | Ja | false / true |
+| `Wasserzeichen` | Ob dem Video ein AIGC-Wasserzeichen hinzugefügt werden soll. Standard ist false. | BOOLEAN | Ja | false / true |
 
 ### MiniMax H3 Eingaben
 

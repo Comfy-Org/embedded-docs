@@ -7,9 +7,9 @@ Erzeugt zeitlich korreliertes Rauschen für den zweiten Durchgang des VOID-Video
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `optical_flow` | Optisches Flussmodell von OpticalFlowLoader (RAFT-large). | OPTICAL_FLOW | Ja | - |
-| `video` | Ausgabevideoframes von Pass 1 [T, H, W, 3]. | IMAGE | Ja | - |
-| `width` | Zielbreite in Pixeln (Standard: 672). Das Eingabevideo wird vor der Rauscherzeugung auf diese Breite skaliert, und die Latent-Breite wird als Breite ÷ 8 abgeleitet. | INT | Ja | 16 bis MAX_RESOLUTION (Schritt 8) |
-| `height` | Zielhöhe in Pixeln (Standard: 384). Das Eingabevideo wird vor der Rauscherzeugung auf diese Höhe skaliert, und die Latent-Höhe wird als Höhe ÷ 8 abgeleitet. | INT | Ja | 16 bis MAX_RESOLUTION (Schritt 8) |
+| `Video` | Ausgabevideoframes von Pass 1 [T, H, W, 3]. | IMAGE | Ja | - |
+| `Breite` | Zielbreite in Pixeln (Standard: 672). Das Eingabevideo wird vor der Rauscherzeugung auf diese Breite skaliert, und die Latent-Breite wird als Breite ÷ 8 abgeleitet. | INT | Ja | 16 bis MAX_RESOLUTION (Schritt 8) |
+| `Höhe` | Zielhöhe in Pixeln (Standard: 384). Das Eingabevideo wird vor der Rauscherzeugung auf diese Höhe skaliert, und die Latent-Höhe wird als Höhe ÷ 8 abgeleitet. | INT | Ja | 16 bis MAX_RESOLUTION (Schritt 8) |
 | `length` | Anzahl der Pixel-Frames. Wird abgerundet, damit latent_t gerade ist (Anforderung patch_size_t=2), z. B. 49 zu 45 (Standard: 45). | INT | Ja | 1 bis MAX_RESOLUTION (Schritt 1) |
 | `batch_size` | Anzahl identischer gewarpeter Rauschsequenzen, die erzeugt werden (Standard: 1). Das erzeugte Rauschen wird so oft entlang der Batch-Dimension wiederholt. | INT | Ja | 1 bis 64 |
 

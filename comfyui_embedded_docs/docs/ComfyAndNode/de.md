@@ -6,7 +6,7 @@ Der And-Node führt eine logische UND-Operation auf einer Gruppe von Eingabewert
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `values` | Eine erweiterbare Gruppe von Werten, die ausgewertet werden sollen. Der Node beginnt mit einem Slot, und Sie können weitere hinzufügen, indem Sie auf die Schaltfläche „+“ am Node klicken. Akzeptiert jeden Datentyp. | ANY | Ja | Mindestens 1 (kein Maximum) |
+| `Werte` | Eine erweiterbare Gruppe von Werten, die ausgewertet werden sollen. Der Node beginnt mit einem Slot, und Sie können weitere hinzufügen, indem Sie auf die Schaltfläche „+“ am Node klicken. Akzeptiert jeden Datentyp. | ANY | Ja | Mindestens 1 (kein Maximum) |
 
 **Hinweis:** Diese Eingabe ist eine erweiterbare Slot-Gruppe. Slots werden einzeln hinzugefügt (zum Beispiel `value_1`, `value_2` usw.), und mindestens ein Slot muss vorhanden sein.
 

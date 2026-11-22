@@ -6,7 +6,7 @@ Dieser Node lädt eine Datei eines Frame-Interpolationsmodells und bereitet sie 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model_name` | Wählen Sie ein zu ladendes Frame-Interpolationsmodell aus. Modelle müssen im Ordner `frame_interpolation` abgelegt werden. | COMBO | Ja | Liste der Modelldateien im Ordner `frame_interpolation` |
+| `Modellname` | Wählen Sie ein zu ladendes Frame-Interpolationsmodell aus. Modelle müssen im Ordner `frame_interpolation` abgelegt werden. | COMBO | Ja | Liste der Modelldateien im Ordner `frame_interpolation` |
 
 Hinweis: Der Node unterstützt die Modellformate FILM und RIFE. Wenn die ausgewählte Datei kein erkanntes Format hat, wird ein Fehler ausgelöst.
 

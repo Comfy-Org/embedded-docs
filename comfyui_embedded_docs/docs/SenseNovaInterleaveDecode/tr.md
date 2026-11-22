@@ -7,8 +7,8 @@ SenseNova Conditioning tarafından bırakılan interleave geçmişini kullanıla
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | Oluşturulan token'ları çözmek için kullanılan SenseNova CLIP modeli. | CLIP | Evet | - |
-| `conditioning` | SenseNova Conditioning'den gelen interleave koşullandırması. | CONDITIONING | Evet | - |
-| `samples` | Son KSampler piksel latent değeri; döngü bir görüntü isteğiyle sona erdiğinde gerekir. | LATENT | Hayır | - |
+| `koşullandırma` | SenseNova Conditioning'den gelen interleave koşullandırması. | CONDITIONING | Evet | - |
+| `örnekler` | Son KSampler piksel latent değeri; döngü bir görüntü isteğiyle sona erdiğinde gerekir. | LATENT | Hayır | - |
 
 **Kısıtlamalar ve davranış:**
 

@@ -8,7 +8,7 @@ Der Node CLIPMergeSubtract führt eine Modellzusammenführung durch, indem er di
 | --- | --- | --- | --- | --- |
 | `clip1` | Das Basis-CLIP-Modell, das geklont und geändert wird | CLIP | Ja | - |
 | `clip2` | Das CLIP-Modell, dessen Key-Patches vom Basismodell subtrahiert werden | CLIP | Ja | - |
-| `multiplier` | Steuert die Stärke der Subtraktionsoperation (Standard: 1.0) | FLOAT | Ja | -10.0 bis 10.0 (Schritt: 0.01) |
+| `Multiplikator` | Steuert die Stärke der Subtraktionsoperation (Standard: 1.0) | FLOAT | Ja | -10.0 bis 10.0 (Schritt: 0.01) |
 
 **Hinweis:** Der Node schließt die Parameter `.position_ids` und `.logit_scale` unabhängig vom Wert des Multiplikators von der Subtraktionsoperation aus.
 

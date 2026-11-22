@@ -8,8 +8,8 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 生成影片的起始影格。長寬比必須介於 1:5 與 5:1 之間。 | IMAGE | 是 | N/A |
-| `model` | 用於影片生成的模型。選擇模型後會顯示其專屬參數：`prompt`、`resolution`、`duration`、`audio` 和 `seed`。 | DYNAMIC_COMBO | 是 | `"Vidu Q4 Preview"` |
+| `圖片` | 生成影片的起始影格。長寬比必須介於 1:5 與 5:1 之間。 | IMAGE | 是 | N/A |
+| `模型` | 用於影片生成的模型。選擇模型後會顯示其專屬參數：`prompt`、`resolution`、`duration`、`audio` 和 `seed`。 | DYNAMIC_COMBO | 是 | `"Vidu Q4 Preview"` |
 | `prompt` | 用於影片生成的可選文字提示詞，最多 5000 個字元（預設：空）。 | STRING | 是 | 任意文字 |
 | `resolution` | 輸出影片的解析度（預設：`"720p"`）。 | COMBO | 是 | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"2K"`<br>`"4K"` |
 | `duration` | 輸出影片的長度，以秒為單位（預設：5）。 | INT | 是 | 3 至 16 |

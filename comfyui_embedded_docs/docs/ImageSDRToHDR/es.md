@@ -6,8 +6,8 @@ El nodo **Convert SDR to HDR** expande imágenes sRGB de rango dinámico estánd
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `image` | La(s) imagen(es) SDR en sRGB que se expandirán a HDR. | IMAGE | Sí | - |
-| `algorithm` | Algoritmo de expansión HDR. Al seleccionar un algoritmo, se muestran sus parámetros (`target_luminance`). | DYNAMIC_COMBO | Sí | `"lottes"` |
+| `Imagen` | La(s) imagen(es) SDR en sRGB que se expandirán a HDR. | IMAGE | Sí | - |
+| `Algoritmo` | Algoritmo de expansión HDR. Al seleccionar un algoritmo, se muestran sus parámetros (`target_luminance`). | DYNAMIC_COMBO | Sí | `"lottes"` |
 
 ### Entradas de lottes
 

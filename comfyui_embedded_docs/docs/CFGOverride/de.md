@@ -6,7 +6,7 @@ Der Node CFG Override überschreibt die CFG-Skala (Classifier-Free Guidance) üb
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das Modell, auf das der CFG-Override angewendet werden soll. | MODEL | Ja | |
+| `Modell` | Das Modell, auf das der CFG-Override angewendet werden soll. | MODEL | Ja | |
 | `cfg` | Der feste CFG-Skalenwert, der während des Override-Bereichs verwendet wird. Standard: 1.0. | FLOAT | Ja | 0.0 bis 100.0 (Schritt: 0.1) |
 | `start_percent` | Der Startpunkt des Override-Bereichs als Prozentsatz des Sampling-Prozesses. Standard: 0.0. | FLOAT | Ja | 0.0 bis 1.0 (Schritt: 0.001) |
 | `end_percent` | Der Endpunkt des Override-Bereichs als Prozentsatz des Sampling-Prozesses. Standard: 1.0. | FLOAT | Ja | 0.0 bis 1.0 (Schritt: 0.001) |

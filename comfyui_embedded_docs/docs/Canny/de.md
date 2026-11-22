@@ -18,7 +18,7 @@ Das endgültige Ergebnis ist ein Schwarz-Weiß-Bild, in dem weiße Bereiche die 
 
 | Parametername | Funktionsbeschreibung | Datentyp | Eingabetyp | Standard | Bereich |
 | --- | --- | --- | --- | --- | --- |
-| `image` | Originalfoto, aus dem Kanten extrahiert werden sollen | IMAGE | Eingabe | - | - |
+| `Bild` | Originalfoto, aus dem Kanten extrahiert werden sollen | IMAGE | Eingabe | - | - |
 | `low_threshold` | Niedriger Schwellenwert; bestimmt, wie schwache Kanten ignoriert werden. Niedrigere Werte bewahren mehr Details, können aber Rauschen erzeugen | FLOAT | Widget | 0.4 | 0.01-0.99 |
 | `high_threshold` | Hoher Schwellenwert; bestimmt, wie starke Kanten erhalten bleiben. Höhere Werte behalten nur die offensichtlichsten Konturlinien bei | FLOAT | Widget | 0.8 | 0.01-0.99 |
 

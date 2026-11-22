@@ -6,9 +6,9 @@ Il nodo LatentConcat combina due campioni latenti unendoli lungo una dimensione 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `samples1` | Il primo campione latente da concatenare | LATENT | Sì | - |
-| `samples2` | Il secondo campione latente da concatenare | LATENT | Sì | - |
-| `dim` | La dimensione lungo la quale concatenare i campioni latenti. I valori positivi (x, y, t) posizionano samples1 prima di samples2 nel risultato. I valori negativi (-x, -y, -t) posizionano samples2 prima di samples1. La mappatura delle dimensioni è: x = larghezza, y = altezza, t = tempo/frame | COMBO | Sì | `"x"`<br>`"-x"`<br>`"y"`<br>`"-y"`<br>`"t"`<br>`"-t"` |
+| `campioni1` | Il primo campione latente da concatenare | LATENT | Sì | - |
+| `campioni2` | Il secondo campione latente da concatenare | LATENT | Sì | - |
+| `dimensione` | La dimensione lungo la quale concatenare i campioni latenti. I valori positivi (x, y, t) posizionano samples1 prima di samples2 nel risultato. I valori negativi (-x, -y, -t) posizionano samples2 prima di samples1. La mappatura delle dimensioni è: x = larghezza, y = altezza, t = tempo/frame | COMBO | Sì | `"x"`<br>`"-x"`<br>`"y"`<br>`"-y"`<br>`"t"`<br>`"-t"` |
 
 **Nota:** Il secondo campione latente (`samples2`) viene ripetuto automaticamente secondo necessità per corrispondere alla dimensione del batch del primo campione latente (`samples1`) prima della concatenazione.
 

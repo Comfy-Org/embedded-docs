@@ -6,14 +6,14 @@ Creatify Boreal-H3 Video, bir metin istemini, Creatify'nin video reklamları iç
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Videoyu tanımlayan metin istemi. En az bir boşluk olmayan karakter içermelidir. | STRING | Evet | Boş olmayan herhangi bir metin |
-| `first_frame` | Videonun başladığı görüntü. Bağlandığında, videonun görüntüyü izlemesi için `aspect_ratio` değerini `"auto"` olarak tutun. | IMAGE | Hayır | - |
-| `last_frame` | Videonun üzerinde bittiği görüntü. Bağlı bir `first_frame` gerektirir. | IMAGE | Hayır | - |
-| `resolution` | Çıktı videosunun çözünürlüğü (varsayılan: `"768p"`). | COMBO | Evet | `"768p"`<br>`"1088p"`<br>`"2k"` |
+| `istem` | Videoyu tanımlayan metin istemi. En az bir boşluk olmayan karakter içermelidir. | STRING | Evet | Boş olmayan herhangi bir metin |
+| `ilk_kare` | Videonun başladığı görüntü. Bağlandığında, videonun görüntüyü izlemesi için `aspect_ratio` değerini `"auto"` olarak tutun. | IMAGE | Hayır | - |
+| `son_kare` | Videonun üzerinde bittiği görüntü. Bağlı bir `first_frame` gerektirir. | IMAGE | Hayır | - |
+| `çözünürlük` | Çıktı videosunun çözünürlüğü (varsayılan: `"768p"`). | COMBO | Evet | `"768p"`<br>`"1088p"`<br>`"2k"` |
 | `aspect_ratio` | Çıktı videosunun en-boy oranı. Bir ilk kare bağlı olduğunda `"auto"` ilk kareyi izler; bu durumda `"auto"` olarak bırakın (varsayılan: `"auto"`). | COMBO | Evet | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
-| `duration` | Videonun saniye cinsinden uzunluğu (varsayılan: 5). `"2k"` değerinde maksimum 14 saniyedir. | INT | Evet | 1 ile 15 arası (adım: 1) |
-| `prompt_enhancement` | Creatify'nin istemi render etmeden önce nasıl yeniden yazdığı: `"auto"` ve `"ads"` onu bir video reklam istemine dönüştürür ve konuşma replikleri ekleyebilir, `"general"` onu diğer herhangi bir video için yeniden yazar, `"none"` yazıldığı gibi render eder (varsayılan: `"auto"`). | COMBO | Evet | `"auto"`<br>`"ads"`<br>`"general"`<br>`"none"` |
-| `seed` | `seed`, düğümün yeniden çalışıp çalışmayacağını kontrol eder. Boreal-H3'e seed gönderilmez; bu nedenle aynı girdilerle yeniden çalıştırmak farklı bir video üretebilir (varsayılan: 42). | INT | Evet | 0 ile 2147483647 arası |
+| `süre` | Videonun saniye cinsinden uzunluğu (varsayılan: 5). `"2k"` değerinde maksimum 14 saniyedir. | INT | Evet | 1 ile 15 arası (adım: 1) |
+| `istem iyileştirme` | Creatify'nin istemi render etmeden önce nasıl yeniden yazdığı: `"auto"` ve `"ads"` onu bir video reklam istemine dönüştürür ve konuşma replikleri ekleyebilir, `"general"` onu diğer herhangi bir video için yeniden yazar, `"none"` yazıldığı gibi render eder (varsayılan: `"auto"`). | COMBO | Evet | `"auto"`<br>`"ads"`<br>`"general"`<br>`"none"` |
+| `tohum` | `seed`, düğümün yeniden çalışıp çalışmayacağını kontrol eder. Boreal-H3'e seed gönderilmez; bu nedenle aynı girdilerle yeniden çalıştırmak farklı bir video üretebilir (varsayılan: 42). | INT | Evet | 0 ile 2147483647 arası |
 
 **Kısıtlamalar:** Bir `first_frame` olduğunda en-boy oranı her zaman görüntüden gelir; bu nedenle başka herhangi bir `aspect_ratio` değeri hata verir. Bir `first_frame` olmadan `last_frame` reddedilir ve `"2k"` değerinde 14 saniyenin üzerindeki `duration` reddedilir.
 

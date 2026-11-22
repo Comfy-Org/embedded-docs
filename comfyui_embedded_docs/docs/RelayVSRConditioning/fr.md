@@ -6,7 +6,7 @@ RelayVSR Conditioning prépare le conditionnement et le latent vide pour un agra
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle de diffusion RelayVSR, chargé avec Load Model : `relayvsr_x2_lightx2v_int8_convrot.safetensors` ou `relayvsr_x4_int8_convrot.safetensors`. | MODEL | Oui | N/A |
+| `modèle` | Le modèle de diffusion RelayVSR, chargé avec Load Model : `relayvsr_x2_lightx2v_int8_convrot.safetensors` ou `relayvsr_x4_int8_convrot.safetensors`. | MODEL | Oui | N/A |
 | `images` | La vidéo de faible qualité à sa résolution native. Le facteur d’agrandissement du modèle détermine la taille du résultat. | IMAGE | Oui | N/A |
 
 ## Sorties

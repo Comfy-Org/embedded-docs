@@ -15,7 +15,7 @@ Il selettore `moderation` rivela un'opzione di moderazione aggiuntiva quando è 
 | `instruction` | Indicazione aggiuntiva facoltativa aggiunta all'istruzione integrata di Bria, ad esempio quale mano usare o verso quale direzione rivolgere l'etichetta. Predefinito: `""` (stringa vuota). | STRING | Sì | - |
 | `aspect_ratio` | `"auto"` mantiene l'inquadratura della foto della persona a circa 1 megapixel. Un rapporto fisso restituisce da 0.6 a 1 megapixel, ad esempio 768x1024 per `"3:4"`. Predefinito: `"auto"`. | COMBO | Sì | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"` |
 | `seed` | Seed inviato a Bria con la richiesta. Predefinito: 42. | INT | Sì | Da 1 a 2147483647 |
-| `moderation` | Impostazioni di moderazione. Quando impostato su `"true"`, il flag di moderazione riportato di seguito diventa disponibile. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
+| `moderazione` | Impostazioni di moderazione. Quando impostato su `"true"`, il flag di moderazione riportato di seguito diventa disponibile. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
 
 ### Input di moderazione con "true"
 

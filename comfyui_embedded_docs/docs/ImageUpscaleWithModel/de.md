@@ -6,8 +6,8 @@ Dieser Node ist für das Hochskalieren von Bildern unter Verwendung eines angege
 
 | Parameter | Beschreibung | Comfy-Datentyp |
 | --- | --- | --- |
-| `upscale_model` | Das Upscale-Modell, das zum Hochskalieren des Bildes verwendet werden soll. Es ist entscheidend für die Definition des Hochskalierungsalgorithmus und seiner Parameter. | `UPSCALE_MODEL` |
-| `image` | Das Bild, das hochskaliert werden soll. Diese Eingabe ist wesentlich für die Bestimmung des Quellinhalts, der dem Hochskalierungsprozess unterzogen wird. | `IMAGE` |
+| `Upscale-Modell` | Das Upscale-Modell, das zum Hochskalieren des Bildes verwendet werden soll. Es ist entscheidend für die Definition des Hochskalierungsalgorithmus und seiner Parameter. | `UPSCALE_MODEL` |
+| `Bild` | Das Bild, das hochskaliert werden soll. Diese Eingabe ist wesentlich für die Bestimmung des Quellinhalts, der dem Hochskalierungsprozess unterzogen wird. | `IMAGE` |
 
 ## Ausgaben
 

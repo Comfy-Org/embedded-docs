@@ -10,7 +10,7 @@ Bearbeiten Sie ein einzelnes Bild mit Beeble SwitchX. Dieser Node kann alles in 
 | `prompt` | Eine textliche Beschreibung des gewünschten neuen Aussehens (z. B. „ein Ritter in glänzender Rüstung“). | STRING | Ja | - |
 | `alpha_mode` | Legt fest, wie mit der Alpha-Matte umgegangen wird. `"select"` verwendet ein Keyframe, um das Motiv auszuwählen, `"fill"` ersetzt das gesamte Bild ohne separate Matte, `"custom"` verwendet eine vom Benutzer bereitgestellte Maske. | COMBO | Ja | `"select"`<br>`"fill"`<br>`"custom"` |
 | `max_resolution` | Die maximale Auflösung für das Ausgabebild. Eine höhere Auflösung kostet mehr Credits. | COMBO | Ja | `"1080p"`<br>`"720p"` |
-| `seed` | Ein Seed-Wert für die Reproduzierbarkeit. | INT | Ja | - |
+| `Seed` | Ein Seed-Wert für die Reproduzierbarkeit. | INT | Ja | - |
 | `reference_image` | Ein optionales Referenzbild, um den Stil oder das Erscheinungsbild der neuen Szenenelemente zu steuern. | IMAGE | Nein | - |
 
 **Hinweis zu `alpha_mode`:** Wenn `alpha_mode` auf `"select"` gesetzt ist, müssen Sie zusätzlich ein `alpha_keyframe` angeben (ein Keyframe-Bild, das zur Auswahl des Motivs verwendet wird). Wenn es auf `"custom"` gesetzt ist, müssen Sie ein `alpha_mask` bereitstellen (eine vom Benutzer erstellte Maske). Wenn es auf `"fill"` gesetzt ist, ist keine Alpha-Eingabe erforderlich.

@@ -6,14 +6,14 @@ Crea una secuencia de fotogramas clave de hook con valores de intensidad interpo
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `strength_start` | Valor de intensidad inicial para la secuencia de interpolación (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 10.0 |
-| `strength_end` | Valor de intensidad final para la secuencia de interpolación (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 10.0 |
+| `fuerza_inicial` | Valor de intensidad inicial para la secuencia de interpolación (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 10.0 |
+| `fuerza_final` | Valor de intensidad final para la secuencia de interpolación (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 10.0 |
 | `interpolación` | Método de interpolación utilizado para la transición entre valores de intensidad (predeterminado: LINEAR) | COMBO | Sí | `LINEAR`<br>`EASE_IN`<br>`EASE_OUT`<br>`EASE_IN_OUT`<br>`EASE_OUT_IN`<br>`SINE`<br>`CUBIC`<br>`QUARTIC`<br>`QUINTIC`<br>`EXPO`<br>`CIRC`<br>`BACK`<br>`BOUNCE`<br>`ELASTIC` |
-| `start_percent` | Posición porcentual inicial en el proceso de generación (predeterminado: 0.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `end_percent` | Posición porcentual final en el proceso de generación (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
-| `keyframes_count` | Número de fotogramas clave a generar en la secuencia de interpolación (predeterminado: 5) | INT | Sí | 2 - 100 |
-| `print_keyframes` | Si se debe imprimir la información de los fotogramas clave generados en el registro (predeterminado: False) | BOOLEAN | Sí | True/False |
-| `prev_hook_kf` | Grupo opcional de fotogramas clave de hook anterior al que añadir | HOOK_KEYFRAMES | No | - |
+| `porcentaje_inicial` | Posición porcentual inicial en el proceso de generación (predeterminado: 0.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `porcentaje_final` | Posición porcentual final en el proceso de generación (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `conteo_de_fotogramas_clave` | Número de fotogramas clave a generar en la secuencia de interpolación (predeterminado: 5) | INT | Sí | 2 - 100 |
+| `imprimir_fotogramas_clave` | Si se debe imprimir la información de los fotogramas clave generados en el registro (predeterminado: False) | BOOLEAN | Sí | True/False |
+| `fotograma_clave_gancho_anterior` | Grupo opcional de fotogramas clave de hook anterior al que añadir | HOOK_KEYFRAMES | No | - |
 
 ## Salidas
 

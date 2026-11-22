@@ -8,8 +8,8 @@ Selecionar um `model` revela os parâmetros específicos desse modelo.
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Quadro inicial do vídeo gerado. A proporção de aspecto deve estar entre 1:5 e 5:1. | IMAGE | Sim | N/A |
-| `model` | Modelo a ser usado para geração de vídeo. Selecionar um modelo revela os parâmetros específicos dele: `prompt`, `resolution`, `duration`, `audio` e `seed`. | DYNAMIC_COMBO | Sim | `"Vidu Q4 Preview"` |
+| `imagem` | Quadro inicial do vídeo gerado. A proporção de aspecto deve estar entre 1:5 e 5:1. | IMAGE | Sim | N/A |
+| `modelo` | Modelo a ser usado para geração de vídeo. Selecionar um modelo revela os parâmetros específicos dele: `prompt`, `resolution`, `duration`, `audio` e `seed`. | DYNAMIC_COMBO | Sim | `"Vidu Q4 Preview"` |
 | `prompt` | Um prompt de texto opcional para geração de vídeo, com até 5000 caracteres (padrão: vazio). | STRING | Sim | Qualquer texto |
 | `resolution` | Resolução do vídeo de saída (padrão: `"720p"`). | COMBO | Sim | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"2K"`<br>`"4K"` |
 | `duration` | Duração do vídeo de saída em segundos (padrão: 5). | INT | Sim | 3 a 16 |

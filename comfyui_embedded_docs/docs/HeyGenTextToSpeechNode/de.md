@@ -6,12 +6,12 @@ Erzeugt Sprach-Audio aus Text mithilfe von HeyGens Starfish-TTS-Engine. Dieser N
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `text` | Text, der synthetisiert werden soll (bis zu 5000 Zeichen). Die erzeugte Sprachausgabe muss mindestens 1 Sekunde lang sein. | STRING | Ja | 1 bis 5000 Zeichen |
-| `voice` | Zu verwendende Stimme (ausgewählt aus HeyGens beliebtesten Starfish-kompatiblen Stimmen). | STRING | Ja | Mehrere Optionen verfügbar |
+| `Text` | Text, der synthetisiert werden soll (bis zu 5000 Zeichen). Die erzeugte Sprachausgabe muss mindestens 1 Sekunde lang sein. | STRING | Ja | 1 bis 5000 Zeichen |
+| `Stimme` | Zu verwendende Stimme (ausgewählt aus HeyGens beliebtesten Starfish-kompatiblen Stimmen). | STRING | Ja | Mehrere Optionen verfügbar |
 | `custom_voice_id` | Optionale HeyGen-Stimmen-ID. Wenn festgelegt, überschreibt sie die oben ausgewählte Stimme. Die Stimme muss die Starfish-Engine unterstützen (Standard: leer). | STRING | Nein | Jede gültige HeyGen-Stimmen-ID |
-| `speed` | Geschwindigkeitsmultiplikator für die Sprachausgabe (Standard: 1.0). | FLOAT | Nein | 0.5 bis 2.0 (Schritt: 0.05) |
+| `Geschwindigkeit` | Geschwindigkeitsmultiplikator für die Sprachausgabe (Standard: 1.0). | FLOAT | Nein | 0.5 bis 2.0 (Schritt: 0.05) |
 | `ssml` | Text als SSML-Markup behandeln (für Pausen, Betonung und Aussprachesteuerung) (Standard: False). | BOOLEAN | Nein | True / False |
-| `seed` | Wird nicht an HeyGen gesendet; ändern Sie ihn, um eine erneute Ausführung zu erzwingen (Standard: 42). | INT | Nein | 0 bis 2147483647 |
+| `Seed` | Wird nicht an HeyGen gesendet; ändern Sie ihn, um eine erneute Ausführung zu erzwingen (Standard: 42). | INT | Nein | 0 bis 2147483647 |
 
 ## Ausgaben
 

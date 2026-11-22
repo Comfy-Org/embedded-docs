@@ -7,9 +7,9 @@ Genera un atlante UV per una mesh 3D. La superficie della mesh viene suddivisa i
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `mesh` | La mesh di input da srotolare (unwrap). Accetta una singola mesh o un batch di mesh; i batch vengono elaborati un elemento alla volta. | MESH | Sì | — |
-| `segmenter` | Algoritmo di charting da usare. `pec`: charting veloce con collasso parallelo degli edge su GPU. `adaptive`: CPU, più lento. (predefinito: "pec") | COMBO | Sì | "pec"<br>"adaptive" |
-| `resolution` | Risoluzione target dell'atlante per la scalatura automatica della densità di texel (0 = adatta al contenuto). (predefinito: 1024) | INT | Sì | da 0 a 8192 (passo 256) |
-| `padding` | Padding in texel tra i chart. (predefinito: 1) | INT | Sì | da 0 a 16 |
+| `segmentatore` | Algoritmo di charting da usare. `pec`: charting veloce con collasso parallelo degli edge su GPU. `adaptive`: CPU, più lento. (predefinito: "pec") | COMBO | Sì | "pec"<br>"adaptive" |
+| `risoluzione` | Risoluzione target dell'atlante per la scalatura automatica della densità di texel (0 = adatta al contenuto). (predefinito: 1024) | INT | Sì | da 0 a 8192 (passo 256) |
+| `margine` | Padding in texel tra i chart. (predefinito: 1) | INT | Sì | da 0 a 16 |
 | `weld_distance` | Raggio di fusione dei vertici coincidenti come frazione dell'estensione della mesh (0 = auto). Aumentalo a ~0.001 se ottieni chart per triangolo (input non saldato). (predefinito: 0.0) | FLOAT | Sì | da 0.0 a 1.0 (passo 0.0001) |
 
 Nota: se la mesh di input contiene vertici non saldati, il nodo può avvisare che l'adiacenza tra facce è bassa e produrre chart UV per faccia; aumentare `weld_distance` fonde i vertici coincidenti prima dell'unwrap. Le facce degeneri (facce che riutilizzano lo stesso indice di vertice) vengono scartate durante l'elaborazione.

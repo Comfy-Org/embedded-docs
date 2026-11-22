@@ -14,8 +14,8 @@ Este nó converte um splat Gaussiano 3D em uma superfície de malha colorida. El
 | `mín_componente` | Descarta componentes conectadas menores que este número de vértices. Remove bolhas flutuantes destacadas e a casca interna de paredes duplas. 0 mantém todos os componentes. Padrão: 500 | INT | Sim | 0 - 100000 (passo 50) |
 | `mín_opacidade` | Ignora gaussianos mais fracos que este valor antes da malhagem. Padrão: 0.02 | FLOAT | Sim | 0.0 - 1.0 (passo 0.01) |
 | `nitidez_cor` | Nitidez da textura do vértice. 1.0 fornece mistura fisicamente correta; valores maiores tendem a cor de cada voxel para seu gaussiano dominante em vez de calcular a média dos vizinhos (remove o borrão da textura). Afeta apenas a cor, não a geometria. Padrão: 2.0 | FLOAT | Sim | 1.0 - 8.0 (passo 0.5) |
-| `solid` | Preenche o interior conforme a orientação das gaussianas, para uma única superfície fechada. Desativado mantém o contorno de densidade bruto, que deixa uma parede interna oculta atrás da superfície. Padrão: True | BOOLEAN | Não | True / False |
-| `fill` | Usado apenas quando `solid` está ativado. Custo de fechar uma abertura em relação a seguir a superfície. Valores baixos fecham aberturas maiores: cerca de 3 sela objetos ocos, mas também coloca tampas em copos e golas. Padrão: 20.0 | FLOAT | Não | 0.0 - 1000.0 (passo 1.0) |
+| `sólido` | Preenche o interior conforme a orientação das gaussianas, para uma única superfície fechada. Desativado mantém o contorno de densidade bruto, que deixa uma parede interna oculta atrás da superfície. Padrão: True | BOOLEAN | Não | True / False |
+| `preencher` | Usado apenas quando `solid` está ativado. Custo de fechar uma abertura em relação a seguir a superfície. Valores baixos fecham aberturas maiores: cerca de 3 sela objetos ocos, mas também coloca tampas em copos e golas. Padrão: 20.0 | FLOAT | Não | 0.0 - 1000.0 (passo 1.0) |
 
 ## Saídas
 

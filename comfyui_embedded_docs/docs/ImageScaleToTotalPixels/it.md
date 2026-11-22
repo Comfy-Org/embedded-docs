@@ -6,9 +6,9 @@ Il nodo ImageScaleToTotalPixels è progettato per ridimensionare le immagini a u
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `image` | L'immagine di input da ridimensionare al numero totale di pixel specificato. | `IMAGE` |
-| `upscale_method` | Il metodo utilizzato per l'upscaling dell'immagine. Influisce sulla qualità e sulle caratteristiche dell'immagine ingrandita. | COMBO[STRING] |
-| `megapixels` | La dimensione target dell'immagine in megapixel. Determina il numero totale di pixel nell'immagine ingrandita. | `FLOAT` |
+| `immagine` | L'immagine di input da ridimensionare al numero totale di pixel specificato. | `IMAGE` |
+| `metodo_ingrandimento` | Il metodo utilizzato per l'upscaling dell'immagine. Influisce sulla qualità e sulle caratteristiche dell'immagine ingrandita. | COMBO[STRING] |
+| `megapixel` | La dimensione target dell'immagine in megapixel. Determina il numero totale di pixel nell'immagine ingrandita. | `FLOAT` |
 
 ## Output
 

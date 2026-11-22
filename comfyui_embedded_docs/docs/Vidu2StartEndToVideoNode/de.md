@@ -6,14 +6,14 @@ Dieser Node erzeugt ein Video, indem er zwischen einem bereitgestellten Startbil
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das Vidu-Modell, das für die Videogenerierung verwendet wird. | COMBO | Ja | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` |
-| `first_frame` | Das Startbild für die Videosequenz. Es ist nur ein einzelnes Bild zulässig. | IMAGE | Ja | - |
-| `end_frame` | Das Endbild für die Videosequenz. Es ist nur ein einzelnes Bild zulässig. | IMAGE | Ja | - |
-| `prompt` | Prompt-Beschreibung (max. 2000 Zeichen). | STRING | Ja | - |
-| `duration` | Die Länge des generierten Videos in Sekunden (Standard: 5). | INT | Nein | 2 bis 8 |
-| `seed` | Eine Zahl zur Initialisierung der Zufallsgenerierung für reproduzierbare Ergebnisse (Standard: 1). | INT | Nein | 0 bis 2147483647 |
-| `resolution` | Die Ausgabeauflösung des generierten Videos. | COMBO | Nein | `"720p"`<br>`"1080p"` |
-| `movement_amplitude` | Die Bewegungsamplitude von Objekten im Frame. | COMBO | Nein | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` |
+| `Modell` | Das Vidu-Modell, das für die Videogenerierung verwendet wird. | COMBO | Ja | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` |
+| `Startbild` | Das Startbild für die Videosequenz. Es ist nur ein einzelnes Bild zulässig. | IMAGE | Ja | - |
+| `Endbild` | Das Endbild für die Videosequenz. Es ist nur ein einzelnes Bild zulässig. | IMAGE | Ja | - |
+| `Prompt` | Prompt-Beschreibung (max. 2000 Zeichen). | STRING | Ja | - |
+| `Dauer` | Die Länge des generierten Videos in Sekunden (Standard: 5). | INT | Nein | 2 bis 8 |
+| `Seed` | Eine Zahl zur Initialisierung der Zufallsgenerierung für reproduzierbare Ergebnisse (Standard: 1). | INT | Nein | 0 bis 2147483647 |
+| `Auflösung` | Die Ausgabeauflösung des generierten Videos. | COMBO | Nein | `"720p"`<br>`"1080p"` |
+| `Bewegungsamplitude` | Die Bewegungsamplitude von Objekten im Frame. | COMBO | Nein | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` |
 
 **Hinweis:** Die Bilder `first_frame` und `end_frame` müssen ähnliche Seitenverhältnisse haben. Der Node validiert, dass ihre Seitenverhältnisse innerhalb eines relativen Bereichs von 0,8 bis 1,25 liegen. Für jede Eingabe ist nur ein Bild zulässig.
 

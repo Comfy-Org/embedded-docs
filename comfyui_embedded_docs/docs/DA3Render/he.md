@@ -7,7 +7,7 @@
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
 | `da3_geometry` | חבילת נתוני גאומטריה של Depth Anything 3 המכילה עומק, ובאופן אופציונלי טנסורי שמיים וביטחון | DA3_GEOMETRY | כן | - |
-| `output` | סוג הוויזואליזציה לרנדור.<br>- depth: תמונת עומק בגווני אפור מנורמלת.<br>- depth_colored: עומק הממופה באמצעות מפת הצבעים Turbo.<br>- sky_mask: הסתברות שמיים בטווח [0, 1] (עבור מודלים Mono/Metric בלבד).<br>- confidence: ביטחון עומק מנורמל (עבור מודלים Small/Base בלבד). | COMBO | כן | "depth"<br>"depth_colored"<br>"sky_mask"<br>"confidence" |
+| `פלט` | סוג הוויזואליזציה לרנדור.<br>- depth: תמונת עומק בגווני אפור מנורמלת.<br>- depth_colored: עומק הממופה באמצעות מפת הצבעים Turbo.<br>- sky_mask: הסתברות שמיים בטווח [0, 1] (עבור מודלים Mono/Metric בלבד).<br>- confidence: ביטחון עומק מנורמל (עבור מודלים Small/Base בלבד). | COMBO | כן | "depth"<br>"depth_colored"<br>"sky_mask"<br>"confidence" |
 
 ### תת-פרמטרים לאפשרויות `output`
 

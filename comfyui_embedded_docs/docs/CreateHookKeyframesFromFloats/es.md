@@ -10,7 +10,7 @@ Este nodo crea fotogramas clave de enlace a partir de una lista de valores de in
 | `porcentaje_inicio` | La posición porcentual inicial para el primer fotograma clave en la línea de tiempo (predeterminado: 0.0) | FLOAT | Sí | 0.0 a 1.0 |
 | `porcentaje_final` | La posición porcentual final para el último fotograma clave en la línea de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
 | `imprimir_keyframes` | Cuando está habilitado, imprime la información de los fotogramas clave generados en la consola (predeterminado: False) | BOOLEAN | Sí | True/False |
-| `prev_hook_kf` | Un grupo de fotogramas clave de enlace existente al que agregar los nuevos fotogramas clave, o crea un nuevo grupo si no se proporciona | HOOK_KEYFRAMES | No | - |
+| `fotograma_clave_gancho_anterior` | Un grupo de fotogramas clave de enlace existente al que agregar los nuevos fotogramas clave, o crea un nuevo grupo si no se proporciona | HOOK_KEYFRAMES | No | - |
 
 **Nota:** El parámetro `floats_strength` acepta un único valor flotante o una lista iterable de flotantes. Los fotogramas clave se distribuyen linealmente entre `start_percent` y `end_percent` según la cantidad de valores de intensidad proporcionados. Se garantiza que el primer fotograma clave tenga al menos un paso para asegurar su aplicación.
 

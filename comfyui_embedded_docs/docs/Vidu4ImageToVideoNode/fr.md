@@ -9,7 +9,7 @@ La sélection d'un `model` révèle les paramètres spécifiques à ce modèle.
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | Image de départ de la vidéo générée. Le rapport d'aspect doit être compris entre 1:5 et 5:1. | IMAGE | Oui | N/A |
-| `model` | Modèle à utiliser pour la génération de vidéo. La sélection d'un modèle révèle les paramètres qui lui sont spécifiques : `prompt`, `resolution`, `duration`, `audio` et `seed`. | DYNAMIC_COMBO | Oui | `"Vidu Q4 Preview"` |
+| `modèle` | Modèle à utiliser pour la génération de vidéo. La sélection d'un modèle révèle les paramètres qui lui sont spécifiques : `prompt`, `resolution`, `duration`, `audio` et `seed`. | DYNAMIC_COMBO | Oui | `"Vidu Q4 Preview"` |
 | `prompt` | Prompt textuel facultatif pour la génération de vidéo, jusqu'à 5000 caractères (par défaut : vide). | STRING | Oui | Texte quelconque |
 | `resolution` | Résolution de la vidéo de sortie (par défaut : `"720p"`). | COMBO | Oui | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"2K"`<br>`"4K"` |
 | `duration` | Durée de la vidéo de sortie en secondes (par défaut : 5). | INT | Oui | 3 à 16 |

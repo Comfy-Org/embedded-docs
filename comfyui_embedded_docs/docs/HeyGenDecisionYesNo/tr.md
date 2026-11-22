@@ -7,12 +7,12 @@ Bağladığınız metin, görseller, ses veya video hakkında bir evet/hayır so
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Kullanılacak model. `heygen-decision-1-turbo`, `heygen-decision-1`'den daha hızlıdır ve daha az maliyetlidir (varsayılan: `"heygen-decision-1"`). | COMBO | Evet | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | Bağlı olan şey hakkında evet/hayır sorusu, en fazla 5000 karakter. "yes" üzerine işlem yapacağınız durum olacak şekilde sorun (varsayılan: "Is there a person in the image?"). | STRING | Evet | 1 ile 5000 karakter arası |
-| `threshold` | `result` değerinin true olduğu "yes" olasılığı; net yanıtlar 0 veya 1'e yakındır (varsayılan: 0.5). | FLOAT | Evet | 0.01 ile 0.99 arası (adım 0.01) |
-| `images` | Hakkında soru sorulacak görseller, bir partinin her karesi sayılarak toplamda en fazla 4 adet. Soketler boyunca sırayla `image_1` ile `image_4` arasında numaralandırılırlar. | IMAGE | Hayır | En fazla 4 görsel |
+| `soru` | Bağlı olan şey hakkında evet/hayır sorusu, en fazla 5000 karakter. "yes" üzerine işlem yapacağınız durum olacak şekilde sorun (varsayılan: "Is there a person in the image?"). | STRING | Evet | 1 ile 5000 karakter arası |
+| `eşik` | `result` değerinin true olduğu "yes" olasılığı; net yanıtlar 0 veya 1'e yakındır (varsayılan: 0.5). | FLOAT | Evet | 0.01 ile 0.99 arası (adım 0.01) |
+| `görüntüler` | Hakkında soru sorulacak görseller, bir partinin her karesi sayılarak toplamda en fazla 4 adet. Soketler boyunca sırayla `image_1` ile `image_4` arasında numaralandırılırlar. | IMAGE | Hayır | En fazla 4 görsel |
 | `audio_1` | Hakkında soru sorulacak ses, en fazla 30 dakika. | AUDIO | Hayır | En fazla 30 dakika |
 | `video_1` | Hakkında soru sorulacak video, en fazla 60 saniye. | VIDEO | Hayır | En fazla 60 saniye |
-| `text` | Sorunun hakkında olduğu metin, örneğin bir istem veya bir LLM yanıtı, en fazla 20000 karakter. | STRING | Hayır | En fazla 20000 karakter |
+| `metin` | Sorunun hakkında olduğu metin, örneğin bir istem veya bir LLM yanıtı, en fazla 20000 karakter. | STRING | Hayır | En fazla 20000 karakter |
 
 `text`, `images`, `audio_1` veya `video_1` arasından en az birini bağlayın ve soru içinde bunlara soket adıyla başvurun, örneğin "image_2, image_1 ile aynı kişiyi mi gösteriyor?".
 

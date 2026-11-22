@@ -9,7 +9,7 @@ Dieser Node führt eine intelligente Retopologie an einem 3D-Modell durch und er
 | `model_3d` | Eingabe-3D-Modell (GLB oder OBJ). Die Datei muss im GLB- oder OBJ-Format vorliegen und darf 200 MB nicht überschreiten. | FILE3D | Ja | - |
 | `polygon_type` | Typ der Oberflächenzusammensetzung. | STRING | Ja | `"triangle"`<br>`"quadrilateral"` |
 | `face_level` | Grad der Polygonreduzierung. | STRING | Ja | `"medium"`<br>`"high"`<br>`"low"` |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Nein | 0 bis 2147483647 |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Nein | 0 bis 2147483647 |
 
 **Hinweis:** Der Parameter `seed` wird verwendet, um eine erneute Ausführung des Nodes auszulösen, aber es ist nicht garantiert, dass die endgültige Ausgabe bei demselben Seed-Wert identisch ist.
 

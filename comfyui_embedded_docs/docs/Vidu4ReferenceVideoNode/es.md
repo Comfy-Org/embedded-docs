@@ -8,7 +8,7 @@ Seleccionar un `model` muestra los parámetros específicos de ese modelo.
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo que se utilizará para la generación de video. Al seleccionar un modelo, se muestran los parámetros específicos de este: `reference_images`, `reference_audios`, `prompt`, `aspect_ratio`, `resolution`, `duration`, `audio` y `seed`. | DYNAMIC_COMBO | Sí | `"Vidu Q4 Preview"` |
+| `modelo` | Modelo que se utilizará para la generación de video. Al seleccionar un modelo, se muestran los parámetros específicos de este: `reference_images`, `reference_audios`, `prompt`, `aspect_ratio`, `resolution`, `duration`, `audio` y `seed`. | DYNAMIC_COMBO | Sí | `"Vidu Q4 Preview"` |
 | `reference_images` | Ranura ampliable: conecta una o más imágenes de referencia (`image_1`, `image_2`, ...) para el video generado; cada imagen de un lote cuenta para el total. Haz referencia a ellas en el prompt por orden: imagen 1, imagen 2, etc. | IMAGE | Sí | Hasta 15 imágenes |
 | `reference_audios` | Ranura ampliable: conecta referencias de voz opcionales (`audio_1`, `audio_2`, `audio_3`), de 3 a 12 segundos cada una. Solo se utiliza la voz, no las palabras: escribe el diálogo en el prompt y asigna una voz por orden, por ejemplo `image 1 says "Hello!" in the voice from audio 1`. Requiere que `audio` esté habilitado. | AUDIO | No | Hasta 3 clips |
 | `prompt` | Una descripción textual para la generación de video, de hasta 5000 caracteres. Necesaria para describir las referencias que quieres utilizar. | STRING | Sí | Cualquier texto |

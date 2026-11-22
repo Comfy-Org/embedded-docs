@@ -6,10 +6,10 @@ Questo nodo prende un elenco di tile di immagine e li unisce di nuovo in un'unic
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image_list` | Un elenco di tile di immagine da unire. Il primo tile dell'elenco viene utilizzato per determinare le dimensioni dei tile e il tipo di dato per l'intero processo. | IMAGE | Sì | N/A |
-| `final_width` | La larghezza dell'immagine finale unita in pixel (predefinito: 1024). | INT | Sì | 64 - 32768 |
-| `final_height` | L'altezza dell'immagine finale unita in pixel (predefinito: 1024). | INT | Sì | 64 - 32768 |
-| `overlap` | La quantità di sovrapposizione tra tile adiacenti in pixel. Un valore maggiore di 0 abilita un effetto di fusione morbida sulle giunture dei tile (predefinito: 128). | INT | Sì | 0 - 4096 |
+| `elenco tile` | Un elenco di tile di immagine da unire. Il primo tile dell'elenco viene utilizzato per determinare le dimensioni dei tile e il tipo di dato per l'intero processo. | IMAGE | Sì | N/A |
+| `larghezza finale` | La larghezza dell'immagine finale unita in pixel (predefinito: 1024). | INT | Sì | 64 - 32768 |
+| `altezza finale` | L'altezza dell'immagine finale unita in pixel (predefinito: 1024). | INT | Sì | 64 - 32768 |
+| `sovrapposizione` | La quantità di sovrapposizione tra tile adiacenti in pixel. Un valore maggiore di 0 abilita un effetto di fusione morbida sulle giunture dei tile (predefinito: 128). | INT | Sì | 0 - 4096 |
 
 **Nota:** `image_list` è un elenco di input dinamico. Il nodo elaborerà i tile nell'ordine in cui sono forniti, fino al numero necessario per riempire la griglia definita da `final_width`, `final_height` e dalle dimensioni del primo tile. Se l'elenco contiene più tile del necessario, quelli in eccesso vengono ignorati.
 

@@ -8,10 +8,10 @@ Der Vidu Video Extension-Node erzeugt zusätzliche Frames, um die Länge eines v
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modell, das für die Videoerweiterung verwendet werden soll. Die Auswahl eines Modells zeigt seine spezifischen Dauer- und Auflösungseinstellungen an. | DYNAMIC_COMBO | Ja | `"viduq2-pro"`<br>`"viduq2-turbo"` |
-| `video` | Das Quellvideo, das erweitert werden soll. | VIDEO | Ja | - |
-| `prompt` | Ein optionaler Text-Prompt für das erweiterte Video (max. 2000 Zeichen; Standard: leer). | STRING | Ja | - |
-| `seed` | Ein Seed-Wert zur Steuerung der Zufälligkeit der Generierung (Standard: 1). | INT | Ja | 0 bis 2147483647 |
+| `Modell` | Modell, das für die Videoerweiterung verwendet werden soll. Die Auswahl eines Modells zeigt seine spezifischen Dauer- und Auflösungseinstellungen an. | DYNAMIC_COMBO | Ja | `"viduq2-pro"`<br>`"viduq2-turbo"` |
+| `Video` | Das Quellvideo, das erweitert werden soll. | VIDEO | Ja | - |
+| `Prompt` | Ein optionaler Text-Prompt für das erweiterte Video (max. 2000 Zeichen; Standard: leer). | STRING | Ja | - |
+| `Seed` | Ein Seed-Wert zur Steuerung der Zufälligkeit der Generierung (Standard: 1). | INT | Ja | 0 bis 2147483647 |
 | `end_frame` | Ein optionales Bild, das als Ziel-Endframe für die Erweiterung verwendet werden soll. | IMAGE | Nein | - |
 
 ### viduq2-pro und viduq2-turbo Eingaben

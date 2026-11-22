@@ -6,14 +6,14 @@ Il nodo SamplerDPMAdaptative implementa un campionatore DPM adattivo (modello pr
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `order` | L'ordine del metodo di campionamento (predefinito: 3) | INT | Sì | 2-3 |
+| `ordine` | L'ordine del metodo di campionamento (predefinito: 3) | INT | Sì | 2-3 |
 | `rtol` | Tolleranza relativa per il controllo dell'errore (predefinito: 0.05) | FLOAT | Sì | 0.0-100.0 |
 | `atol` | Tolleranza assoluta per il controllo dell'errore (predefinito: 0.0078) | FLOAT | Sì | 0.0-100.0 |
 | `h_init` | Dimensione iniziale del passo (predefinito: 0.05) | FLOAT | Sì | 0.0-100.0 |
-| `pcoeff` | Coefficiente proporzionale per il controllo della dimensione del passo (predefinito: 0.0) | FLOAT | Sì | 0.0-100.0 |
-| `icoeff` | Coefficiente integrale per il controllo della dimensione del passo (predefinito: 1.0) | FLOAT | Sì | 0.0-100.0 |
-| `dcoeff` | Coefficiente derivativo per il controllo della dimensione del passo (predefinito: 0.0) | FLOAT | Sì | 0.0-100.0 |
-| `accept_safety` | Fattore di sicurezza per l'accettazione del passo (predefinito: 0.81) | FLOAT | Sì | 0.0-100.0 |
+| `coefficiente proporzionale` | Coefficiente proporzionale per il controllo della dimensione del passo (predefinito: 0.0) | FLOAT | Sì | 0.0-100.0 |
+| `coefficiente integrale` | Coefficiente integrale per il controllo della dimensione del passo (predefinito: 1.0) | FLOAT | Sì | 0.0-100.0 |
+| `coefficiente derivativo` | Coefficiente derivativo per il controllo della dimensione del passo (predefinito: 0.0) | FLOAT | Sì | 0.0-100.0 |
+| `sicurezza accettazione` | Fattore di sicurezza per l'accettazione del passo (predefinito: 0.81) | FLOAT | Sì | 0.0-100.0 |
 | `eta` | Parametro di stocasticità (predefinito: 0.0) | FLOAT | Sì | 0.0-100.0 |
 | `s_noise` | Fattore di scala del rumore (predefinito: 1.0) | FLOAT | Sì | 0.0-100.0 |
 

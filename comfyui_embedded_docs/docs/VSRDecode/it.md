@@ -7,9 +7,9 @@ VSR Decode riconverte i latent dei keyframe prodotti da RelayVSR Conditioning in
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `vae` | Il decoder RelayVSR Flash, caricato con Load VAE: `relayvsr_flash_vae_x2_fp32.safetensors` oppure `relayvsr_flash_vae_x4_fp32.safetensors`. I metadati del file impostano il fattore di upscale, quindi deve corrispondere al modello. | VAE | Sì | N/A |
-| `samples` | Il latent restituito dal sampler, che contiene un frame per ogni keyframe. | LATENT | Sì | N/A |
-| `images` | Lo stesso video a bassa qualità fornito a RelayVSR Conditioning. | IMAGE | Sì | N/A |
-| `detail` | Quanto del dettaglio del decoder viene mantenuto sopra l'upscale bicubico: 1 è l'output completo del modello, 0 è il semplice upscale. (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (passo 0.01) |
+| `campioni` | Il latent restituito dal sampler, che contiene un frame per ogni keyframe. | LATENT | Sì | N/A |
+| `immagini` | Lo stesso video a bassa qualità fornito a RelayVSR Conditioning. | IMAGE | Sì | N/A |
+| `dettaglio` | Quanto del dettaglio del decoder viene mantenuto sopra l'upscale bicubico: 1 è l'output completo del modello, 0 è il semplice upscale. (predefinito: 1.0) | FLOAT | Sì | 0.0 - 1.0 (passo 0.01) |
 
 ## Output
 

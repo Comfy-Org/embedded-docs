@@ -6,7 +6,7 @@ Il nodo Text (Multiline) fornisce un campo di input di testo multilinea per inse
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `value` | Il valore di input testuale che può estendersi su più righe | STRING | Sì | N/A |
+| `valore` | Il valore di input testuale che può estendersi su più righe | STRING | Sì | N/A |
 
 ## Output
 

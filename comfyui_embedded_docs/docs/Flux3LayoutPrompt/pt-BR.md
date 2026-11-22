@@ -7,7 +7,7 @@ Constrói a tabela de layout que o FLUX 3 Image lê a partir de um prompt. Ela p
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `prompt` | O texto do prompt. Cite a caixa N como `<obj_N>` para vincular palavras a ela. | STRING | Sim | - |
-| `element` | Os elementos a serem posicionados no layout, obtidos do nó Create Bounding Boxes. Paletas de cores não são usadas, então descreva as cores na descrição. | ARRAY | Sim | - |
+| `elemento` | Os elementos a serem posicionados no layout, obtidos do nó Create Bounding Boxes. Paletas de cores não são usadas, então descreva as cores na descrição. | ARRAY | Sim | - |
 
 ## Saídas
 

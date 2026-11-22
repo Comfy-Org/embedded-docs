@@ -7,9 +7,9 @@ Der Knoten PhotoMakerEncode kombiniert ein Referenzbild mit einem Text-Prompt, u
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `photomaker` | Das PhotoMaker-Modell, das verwendet wird, um das Referenzbild zu verarbeiten und bildbasierte Embeddings zu erzeugen | PHOTOMAKER | Ja | - |
-| `image` | Das Referenzbild, das die visuellen Eigenschaften für die Conditioning-Daten bereitstellt | IMAGE | Ja | - |
+| `Bild` | Das Referenzbild, das die visuellen Eigenschaften für die Conditioning-Daten bereitstellt | IMAGE | Ja | - |
 | `clip` | Das CLIP-Modell, das für die Text-Tokenisierung und Textkodierung verwendet wird | CLIP | Ja | - |
-| `text` | Der Text-Prompt für die Erzeugung der Conditioning-Daten. Unterstützt mehrzeiligen Text und dynamische Prompts (Standard: "photograph of photomaker") | STRING | Ja | Beliebige Zeichenkette |
+| `Text` | Der Text-Prompt für die Erzeugung der Conditioning-Daten. Unterstützt mehrzeiligen Text und dynamische Prompts (Standard: "photograph of photomaker") | STRING | Ja | Beliebige Zeichenkette |
 
 **Hinweis:** Wenn der Text „photomaker“ als eigenständiges Wort enthält, entfernt der Knoten dieses Wort aus dem kodierten Prompt und wendet an dieser Position die Identität des Referenzbildes mithilfe des PhotoMaker-Modells an. Wenn „photomaker“ nicht im Text gefunden wird, gibt der Knoten Standard-Text-Conditioning ohne Bildeinfluss zurück.
 

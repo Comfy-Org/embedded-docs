@@ -6,12 +6,12 @@ Der Wan Image to Image-Node erzeugt ein Bild aus einem oder zwei Eingabebildern 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Zu verwendendes Modell (Standard: "wan2.5-i2i-preview"). | COMBO | Ja | "wan2.5-i2i-preview" |
-| `image` | Einzelbildbearbeitung oder Fusion mehrerer Bilder. Maximal 2 Bilder. | IMAGE | Ja | - |
-| `prompt` | Prompt, der die Elemente und visuellen Merkmale beschreibt. Unterstützt Englisch und Chinesisch (Standard: leer). | STRING | Ja | - |
+| `Modell` | Zu verwendendes Modell (Standard: "wan2.5-i2i-preview"). | COMBO | Ja | "wan2.5-i2i-preview" |
+| `Bild` | Einzelbildbearbeitung oder Fusion mehrerer Bilder. Maximal 2 Bilder. | IMAGE | Ja | - |
+| `Prompt` | Prompt, der die Elemente und visuellen Merkmale beschreibt. Unterstützt Englisch und Chinesisch (Standard: leer). | STRING | Ja | - |
 | `negative_prompt` | Negativer Prompt, der beschreibt, was vermieden werden soll (Standard: leer). | STRING | Nein | - |
-| `seed` | Für die Generierung zu verwendender Seed (Standard: 0). | INT | Nein | 0 bis 2147483647 |
-| `watermark` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll (Standard: false). | BOOLEAN | Nein | - |
+| `Seed` | Für die Generierung zu verwendender Seed (Standard: 0). | INT | Nein | 0 bis 2147483647 |
+| `Wasserzeichen` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll (Standard: false). | BOOLEAN | Nein | - |
 
 **Hinweis:** Dieser Node akzeptiert genau 1 oder 2 Eingabebilder. Wenn Sie mehr als 2 Bilder oder gar keine Bilder übergeben, gibt der Node einen Fehler zurück.
 

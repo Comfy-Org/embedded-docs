@@ -8,7 +8,7 @@ Questo nodo genera un video da un prompt testuale utilizzando la famiglia di mod
 
 | Parametro | Descrizione | Tipo di dato | Richiesto | Intervallo |
 |-----------|-------------|--------------|-----------|------------|
-| `model` | Modello da utilizzare per la generazione video (predefinito: "MiniMax H3"). Selezionando un modello vengono mostrate anche le impostazioni specifiche del modello descritte nelle sezioni seguenti. | DYNAMIC_COMBO | Sì | "MiniMax H3"<br>"MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `modello` | Modello da utilizzare per la generazione video (predefinito: "MiniMax H3"). Selezionando un modello vengono mostrate anche le impostazioni specifiche del modello descritte nelle sezioni seguenti. | DYNAMIC_COMBO | Sì | "MiniMax H3"<br>"MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
 | `seed` | Seme casuale. La stessa richiesta con lo stesso seme produce risultati simili, ma non garantiti identici (predefinito: 42). | INT | Sì | da 0 a 4294967295 |
 | `watermark` | Indica se aggiungere una filigrana AIGC al video (predefinito: false). Quando abilitato, è supportato solo il modello "MiniMax H3". | BOOLEAN | No | true<br>false |
 

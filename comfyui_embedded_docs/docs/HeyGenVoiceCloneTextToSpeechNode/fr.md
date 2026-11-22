@@ -8,7 +8,7 @@ La sélection d’un `model` révèle les paramètres qui lui sont propres : `au
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser. `heygen-voice-1-turbo` est plus rapide et coûte moins cher (par défaut : `"heygen-voice-1"`). | DYNAMIC_COMBO | Oui | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `modèle` | Modèle à utiliser. `heygen-voice-1-turbo` est plus rapide et coûte moins cher (par défaut : `"heygen-voice-1"`). | DYNAMIC_COMBO | Oui | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `audio` | Enregistrement d’un seul locuteur à cloner. Utilisez au moins 10 secondes de parole claire ; seules les 3 premières minutes sont utilisées. | AUDIO | Oui | - |
 | `text` | Texte à prononcer, jusqu’à 5000 caractères. Une synthèse de plus d’environ 12 minutes échoue ; divisez donc les textes très longs en chinois ou en japonais (par défaut : vide). | STRING | Oui | 1 à 5000 caractères |
 | `language` | Langue du texte. Définissez-la pour des langues proches comme le serbe ou le malais, que la détection automatique peut confondre (par défaut : `"auto"`). | COMBO | Oui | `"auto"`<br>Plusieurs préréglages de langue |

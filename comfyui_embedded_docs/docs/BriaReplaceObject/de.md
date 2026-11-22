@@ -8,15 +8,15 @@ Ersetzt ein Objekt in einem Bild durch ein anderes, das in Klartext beschrieben 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Bild, das das zu ersetzende Objekt enthält. Der Alphakanal wird entfernt, bevor das Bild hochgeladen wird. | IMAGE | Ja | - |
-| `instruction` | Was wodurch ersetzt werden soll, z. B. "Ersetze den roten Apfel durch eine grüne Birne". Muss mindestens 1 Zeichen lang sein. | STRING | Ja | Mehrzeiliger Text; Standard: "" (leer) |
-| `seed` | Bria verwendet hier keinen Seed und erzeugt die Bearbeitung bei jedem Aufruf neu, sodass wiederholte Ausführungen abweichen können. Der Wert wird nie übermittelt: Er ändert nur den Cache-Schlüssel dieses Nodes, sodass ein ansonsten identischer Graph die Bearbeitung erneut ausführt, anstatt das zwischengespeicherte Ergebnis zurückzugeben. | INT | Ja | 0 bis 2147483647, Schritt 1; Standard: 42; Steuerung nach Generierung aktiviert |
+| `Bild` | Das Bild, das das zu ersetzende Objekt enthält. Der Alphakanal wird entfernt, bevor das Bild hochgeladen wird. | IMAGE | Ja | - |
+| `Anweisung` | Was wodurch ersetzt werden soll, z. B. "Ersetze den roten Apfel durch eine grüne Birne". Muss mindestens 1 Zeichen lang sein. | STRING | Ja | Mehrzeiliger Text; Standard: "" (leer) |
+| `Seed` | Bria verwendet hier keinen Seed und erzeugt die Bearbeitung bei jedem Aufruf neu, sodass wiederholte Ausführungen abweichen können. Der Wert wird nie übermittelt: Er ändert nur den Cache-Schlüssel dieses Nodes, sodass ein ansonsten identischer Graph die Bearbeitung erneut ausführt, anstatt das zwischengespeicherte Ergebnis zurückzugeben. | INT | Ja | 0 bis 2147483647, Schritt 1; Standard: 42; Steuerung nach Generierung aktiviert |
 
 ### Moderationseingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `moderation` | Moderationseinstellungen. Wenn "true" ausgewählt wird, werden die untenstehenden Moderationsunteroptionen eingeblendet, die andernfalls nicht angezeigt werden. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
+| `Moderation` | Moderationseinstellungen. Wenn "true" ausgewählt wird, werden die untenstehenden Moderationsunteroptionen eingeblendet, die andernfalls nicht angezeigt werden. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
 | `visual_input_moderation` | Aktiviert die Moderation des Eingabebilds. Nur verfügbar, wenn `moderation` auf "true" gesetzt ist. | BOOLEAN | Nein | `true` / `false`; Standard: false |
 | `visual_output_moderation` | Aktiviert die Moderation des generierten Ausgabebilds. Nur verfügbar, wenn `moderation` auf "true" gesetzt ist. | BOOLEAN | Nein | `true` / `false`; Standard: false |
 

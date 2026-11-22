@@ -6,7 +6,7 @@ Der PreviewImage-Node ist für die Erstellung temporärer Vorschaubilder konzipi
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `images` | Die Eingabe `images` gibt die Bilder an, die verarbeitet und als temporäre Vorschaubilder gespeichert werden sollen. Dies ist die primäre Eingabe für den Node und bestimmt, welche Bilder den Prozess der Vorschaubilderzeugung durchlaufen. | `IMAGE` |
+| `Bilder` | Die Eingabe `images` gibt die Bilder an, die verarbeitet und als temporäre Vorschaubilder gespeichert werden sollen. Dies ist die primäre Eingabe für den Node und bestimmt, welche Bilder den Prozess der Vorschaubilderzeugung durchlaufen. | `IMAGE` |
 
 ## Ausgaben
 

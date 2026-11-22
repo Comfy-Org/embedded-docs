@@ -6,21 +6,21 @@ Verwandeln Sie ein Porträt in ein sprechendes Video mit Pruna P-Video-2 Pro Ava
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `image` | Porträt, von dem das Video ausgeht. Seitenverhältnisse von 1:2 bis 4:1 bleiben erhalten; extremere Bilder wie 1:5 werden auf 9:16 oder 16:9 zugeschnitten. | IMAGE | Ja | - |
-| `speech` | Steuert das Video über ein Text-to-Speech-Skript oder über eigenes Audio. Bei Auswahl einer Option werden die zugehörigen Eingaben darunter eingeblendet. | DYNAMIC_COMBO | Ja | `"script"`<br>`"audio"` |
-| `prompt` | Beschreibt, was das Video zeigt (Standard: "The person is talking."). Bis zu 5000 Zeichen. | STRING | Ja | Bis zu 5000 Zeichen |
-| `resolution` | Ausgabauflösung (Standard: `"768p"`). 1080p, 2k und 4k skalieren das generierte 768p-Video hoch. | COMBO | Ja | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
+| `Bild` | Porträt, von dem das Video ausgeht. Seitenverhältnisse von 1:2 bis 4:1 bleiben erhalten; extremere Bilder wie 1:5 werden auf 9:16 oder 16:9 zugeschnitten. | IMAGE | Ja | - |
+| `Sprache` | Steuert das Video über ein Text-to-Speech-Skript oder über eigenes Audio. Bei Auswahl einer Option werden die zugehörigen Eingaben darunter eingeblendet. | DYNAMIC_COMBO | Ja | `"script"`<br>`"audio"` |
+| `Prompt` | Beschreibt, was das Video zeigt (Standard: "The person is talking."). Bis zu 5000 Zeichen. | STRING | Ja | Bis zu 5000 Zeichen |
+| `Auflösung` | Ausgabauflösung (Standard: `"768p"`). 1080p, 2k und 4k skalieren das generierte 768p-Video hoch. | COMBO | Ja | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
 | `enhance_prompt` | Fügt die im Porträt erkennbare Bewegung wie Hintergrund, Licht und Körperbewegung zum Prompt hinzu (Standard: True). Erweiterte Einstellung. | BOOLEAN | Ja | `True`<br>`False` |
-| `seed` | Seed für die Generierung (Standard: 42). Derselbe Seed reproduziert ein Ergebnis nur dann exakt, wenn `enhance_prompt` deaktiviert ist. | INT | Ja | 0 bis 2147483647<br>Schritt: 1 |
+| `Seed` | Seed für die Generierung (Standard: 42). Derselbe Seed reproduziert ein Ergebnis nur dann exakt, wenn `enhance_prompt` deaktiviert ist. | INT | Ja | 0 bis 2147483647<br>Schritt: 1 |
 
 ### `"script"` Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `speech.script` | Worte, die die Person spricht. Das Video entspricht der Länge der Sprache; Sprache, die länger als 3 Minuten ist, wird bei 3 Minuten abgeschnitten. | STRING | Ja | Beliebiger Text |
-| `speech.voice` | Stimme für die Sprache (Standard: `"Zephyr (Female)"`). | COMBO | Ja | 30 voreingestellte Stimmen |
-| `speech.language` | Sprache, in der das Skript gesprochen wird (Standard: `"English (US)"`). | COMBO | Ja | `"English (US)"`<br>`"English (UK)"`<br>`"Spanish"`<br>`"French"`<br>`"German"`<br>`"Italian"`<br>`"Portuguese (Brazil)"`<br>`"Japanese"`<br>`"Korean"`<br>`"Hindi"` |
-| `speech.voice_prompt` | Wie das Skript gesprochen wird: Tonfall, Tempo, Akzent, Emotion (Standard: "Say the following."). Wird selbst nicht gesprochen. | STRING | Ja | Beliebiger Text |
+| `Skript` | Worte, die die Person spricht. Das Video entspricht der Länge der Sprache; Sprache, die länger als 3 Minuten ist, wird bei 3 Minuten abgeschnitten. | STRING | Ja | Beliebiger Text |
+| `Stimme` | Stimme für die Sprache (Standard: `"Zephyr (Female)"`). | COMBO | Ja | 30 voreingestellte Stimmen |
+| `Sprache` | Sprache, in der das Skript gesprochen wird (Standard: `"English (US)"`). | COMBO | Ja | `"English (US)"`<br>`"English (UK)"`<br>`"Spanish"`<br>`"French"`<br>`"German"`<br>`"Italian"`<br>`"Portuguese (Brazil)"`<br>`"Japanese"`<br>`"Korean"`<br>`"Hindi"` |
+| `voice_prompt` | Wie das Skript gesprochen wird: Tonfall, Tempo, Akzent, Emotion (Standard: "Say the following."). Wird selbst nicht gesprochen. | STRING | Ja | Beliebiger Text |
 
 ### `"audio"` Eingaben
 

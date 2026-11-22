@@ -6,10 +6,10 @@ FLUX 3 Max Text to Video, bir metin isteminden senkronize ses içeren video olu�
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Klibin ne göstermesi gerektiğini sade bir dille açıklayın. Katmanlı ses için ortam sesini, müziği ve konuşmayı ayrı ayrı tanımlayın (varsayılan: boş). | STRING | Evet | Çok satırlı metin |
+| `istem` | Klibin ne göstermesi gerektiğini sade bir dille açıklayın. Katmanlı ses için ortam sesini, müziği ve konuşmayı ayrı ayrı tanımlayın (varsayılan: boş). | STRING | Evet | Çok satırlı metin |
 | `aspect_ratio` | Çıktı en-boy oranı. Metin istemleri için `"auto"` 16:9'dur (varsayılan: `"auto"`). | COMBO | Evet | `"auto"`<br>`"21:9"`<br>`"2:1"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"` |
-| `duration` | Klip uzunluğu saniye cinsinden (varsayılan: `"5"`). | COMBO | Evet | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"`<br>`"15"`<br>`"16"`<br>`"17"`<br>`"18"`<br>`"19"`<br>`"20"` |
-| `resolution` | Çıktı çözünürlüğü (varsayılan: `"720p"`). | COMBO | Evet | `"720p"`<br>`"1080p"` |
+| `süre` | Klip uzunluğu saniye cinsinden (varsayılan: `"5"`). | COMBO | Evet | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"`<br>`"15"`<br>`"16"`<br>`"17"`<br>`"18"`<br>`"19"`<br>`"20"` |
+| `çözünürlük` | Çıktı çözünürlüğü (varsayılan: `"720p"`). | COMBO | Evet | `"720p"`<br>`"1080p"` |
 | `reasoning_level` | Modelin oluşturmadan önce istem hakkında ne kadar akıl yürüteceği ve istemi ne kadar genişleteceği. `"high"` daha uzun sürer; fiyat aynıdır (varsayılan: `"high"`). | COMBO | Evet | `"low"`<br>`"high"` |
 | `generate_audio` | Senkronize ses oluştur. Kapalı olduğunda ses parçası olmayan bir video üretir (varsayılan: true). | BOOLEAN | Evet | `true`<br>`false` |
 | `seed` | Düğümün yeniden çalışıp çalışmayacağını kontrol eden tohum. Bu değerden bağımsız olarak sonuçlar deterministik değildir (varsayılan: 42). | INT | Evet | 0 - 2147483646 |

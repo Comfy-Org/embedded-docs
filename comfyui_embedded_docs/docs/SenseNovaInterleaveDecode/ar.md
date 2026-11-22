@@ -7,8 +7,8 @@
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | نموذج SenseNova CLIP المستخدم لفك ترميز الرموز المولّدة. | CLIP | نعم | - |
-| `conditioning` | تهيئة interleave من SenseNova Conditioning. | CONDITIONING | نعم | - |
-| `samples` | آخر latent بكسلي من KSampler، ويلزم عندما تنتهي الحلقة على طلب صورة. | LATENT | لا | - |
+| `التكييف` | تهيئة interleave من SenseNova Conditioning. | CONDITIONING | نعم | - |
+| `عينات` | آخر latent بكسلي من KSampler، ويلزم عندما تنتهي الحلقة على طلب صورة. | LATENT | لا | - |
 
 **القيود والسلوك:**
 

@@ -8,8 +8,8 @@ Die Auswahl eines `model` zeigt die für dieses Modell spezifischen Parameter an
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Startbild des generierten Videos. Das Seitenverhältnis muss zwischen 1:5 und 5:1 liegen. | IMAGE | Ja | N/A |
-| `model` | Modell für die Videogenerierung. Die Auswahl eines Modells zeigt die für dieses Modell spezifischen Parameter an: `prompt`, `resolution`, `duration`, `audio` und `seed`. | DYNAMIC_COMBO | Ja | `"Vidu Q4 Preview"` |
+| `Bild` | Startbild des generierten Videos. Das Seitenverhältnis muss zwischen 1:5 und 5:1 liegen. | IMAGE | Ja | N/A |
+| `Modell` | Modell für die Videogenerierung. Die Auswahl eines Modells zeigt die für dieses Modell spezifischen Parameter an: `prompt`, `resolution`, `duration`, `audio` und `seed`. | DYNAMIC_COMBO | Ja | `"Vidu Q4 Preview"` |
 | `prompt` | Ein optionaler Text-Prompt für die Videogenerierung, bis zu 5000 Zeichen (Standard: leer). | STRING | Ja | Beliebiger Text |
 | `resolution` | Auflösung des Ausgabevideos (Standard: `"720p"`). | COMBO | Ja | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"2K"`<br>`"4K"` |
 | `duration` | Dauer des Ausgabevideos in Sekunden (Standard: 5). | INT | Ja | 3 bis 16 |

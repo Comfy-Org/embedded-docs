@@ -6,7 +6,7 @@ Dieser Node erzeugt Textantworten mit Tencent's Hy4-Modell. Er sendet einen Text
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das Modell, das zur Erzeugung der Antwort verwendet wird. Bei Auswahl werden die zugehörigen Eingaben unten eingeblendet. Standard: `"Hy4"`. | DYNAMIC_COMBO | Ja | `"Hy4"` |
+| `Modell` | Das Modell, das zur Erzeugung der Antwort verwendet wird. Bei Auswahl werden die zugehörigen Eingaben unten eingeblendet. Standard: `"Hy4"`. | DYNAMIC_COMBO | Ja | `"Hy4"` |
 
 ### Hy4 Eingaben
 

@@ -6,10 +6,10 @@ Este nodo está diseñado para mejorar las capacidades de muestreo de un modelo 
 
 | Parámetro | Descripción | Tipo de dato | Tipo Python |
 | --- | --- | --- | --- |
-| `model` | El modelo a mejorar con capacidades continuas de muestreo EDM. Sirve como base para aplicar las técnicas avanzadas de muestreo. | `MODEL` | `torch.nn.Module` |
+| `modelo` | El modelo a mejorar con capacidades continuas de muestreo EDM. Sirve como base para aplicar las técnicas avanzadas de muestreo. | `MODEL` | `torch.nn.Module` |
 | `muestreo` | Especifica el tipo de muestreo a aplicar, ya sea 'eps' para muestreo épsilon o 'v_prediction' para predicción de velocidad, influyendo en el comportamiento del modelo durante el proceso de muestreo. | COMBO[STRING] | `str` |
-| `sigma_max` | El valor sigma máximo para el nivel de ruido, permitiendo un control del límite superior en el proceso de inyección de ruido durante el muestreo. | `FLOAT` | `float` |
-| `sigma_min` | El valor sigma mínimo para el nivel de ruido, estableciendo el límite inferior para la inyección de ruido, afectando así la precisión del muestreo del modelo. | `FLOAT` | `float` |
+| `sigma_máximo` | El valor sigma máximo para el nivel de ruido, permitiendo un control del límite superior en el proceso de inyección de ruido durante el muestreo. | `FLOAT` | `float` |
+| `sigma_mínimo` | El valor sigma mínimo para el nivel de ruido, estableciendo el límite inferior para la inyección de ruido, afectando así la precisión del muestreo del modelo. | `FLOAT` | `float` |
 
 ## Salidas
 

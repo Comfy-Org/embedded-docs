@@ -6,8 +6,8 @@ Aplica una pila de LoRAs a un modelo de difusión en un solo nodo. Cada fila de 
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de difusión al que se aplicarán los LoRAs. | MODEL | Sí | - |
-| `loras` | Grupo ampliable de LoRAs, aplicado al modelo en el orden de las filas (`loras.0`, `loras.1`, etc.). Agregue una fila por cada LoRA; cada fila contiene un archivo, una fuerza y un interruptor de encendido/apagado. | DYNAMIC_GROUP | Sí | 1 a 20 filas |
+| `modelo` | El modelo de difusión al que se aplicarán los LoRAs. | MODEL | Sí | - |
+| `LoRAs` | Grupo ampliable de LoRAs, aplicado al modelo en el orden de las filas (`loras.0`, `loras.1`, etc.). Agregue una fila por cada LoRA; cada fila contiene un archivo, una fuerza y un interruptor de encendido/apagado. | DYNAMIC_GROUP | Sí | 1 a 20 filas |
 
 ### Campos de fila de `loras`
 

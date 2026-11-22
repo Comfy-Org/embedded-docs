@@ -7,10 +7,10 @@ Bu düğüm, Meshy T2.5 ile hedef yüz sayısında oyuna hazır bir üçgen ağ 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Üretim için kullanılacak Meshy model sürümü. | COMBO | Evet | `"meshy-t2.5"` |
-| `prompt` | Oluşturulacak 3B modelin metin açıklaması. | STRING | Evet | 1-800 karakter |
-| `target_polycount` | Oluşturulan ağdaki yaklaşık üçgen sayısı. Varsayılan: 15000. | INT | Evet | 100-30000 |
+| `istem` | Oluşturulacak 3B modelin metin açıklaması. | STRING | Evet | 1-800 karakter |
+| `hedef_poligon_sayısı` | Oluşturulan ağdaki yaklaşık üçgen sayısı. Varsayılan: 15000. | INT | Evet | 100-30000 |
 | `pose_mode` | Oluşturulan karakterin pozu. Boş bir dize belirli bir poz istenmediğini belirtir. Bu gelişmiş bir ayardır. Varsayılan: `""` (boş dize). | COMBO | Evet | `""`<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Evet | 0-2147483647 |
+| `tohum` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Evet | 0-2147483647 |
 
 **Kısıtlamalar:**
 

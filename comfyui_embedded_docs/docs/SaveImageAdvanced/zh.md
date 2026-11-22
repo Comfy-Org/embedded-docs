@@ -8,9 +8,9 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `images` | 要保存的图像。 | IMAGE | 是 | - |
-| `filename_prefix` | 保存文件的前缀。可包含格式化标记，例如 `%date:yyyy-MM-dd%` 或 `%Empty Latent Image.width%`。（默认："ComfyUI"） | STRING | 是 | - |
-| `format` | 保存图像所用的文件格式。选择某种格式后会显示该格式的附加选项。 | DYNAMIC_COMBO | 是 | `"png"`<br>`"exr"`<br>`"avif"` |
+| `图像` | 要保存的图像。 | IMAGE | 是 | - |
+| `文件名前缀` | 保存文件的前缀。可包含格式化标记，例如 `%date:yyyy-MM-dd%` 或 `%Empty Latent Image.width%`。（默认："ComfyUI"） | STRING | 是 | - |
+| `格式` | 保存图像所用的文件格式。选择某种格式后会显示该格式的附加选项。 | DYNAMIC_COMBO | 是 | `"png"`<br>`"exr"`<br>`"avif"` |
 
 ### PNG 输入
 

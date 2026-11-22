@@ -8,7 +8,7 @@ Ce nœud génère une vidéo qui part d'une image fixe et déplace la caméra ve
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Modèle à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | "MiniMax H3 Max" |
+| `modèle` | Modèle à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | "MiniMax H3 Max" |
 
 ### Entrées MiniMax H3 Max
 

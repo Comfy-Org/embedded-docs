@@ -6,7 +6,7 @@ Der Text-Node bietet eine einfache Möglichkeit, Textdaten in Ihren Workflow ein
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `value` | Die Textzeichenfolge, die durch den Node weitergegeben wird | STRING | Ja | Beliebiger Text |
+| `Wert` | Die Textzeichenfolge, die durch den Node weitergegeben wird | STRING | Ja | Beliebiger Text |
 
 ## Ausgaben
 

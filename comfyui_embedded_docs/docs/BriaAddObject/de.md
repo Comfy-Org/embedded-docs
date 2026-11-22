@@ -8,10 +8,10 @@ Dieser Node fügt ein in Klartext beschriebenes Objekt mithilfe von Bria in ein 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Bild, dem das beschriebene Objekt hinzugefügt wird. Der Alphakanal wird vor dem Hochladen des Bildes entfernt. | IMAGE | Ja | - |
-| `instruction` | Was hinzugefügt werden soll und wo, zum Beispiel 'Platzieren Sie eine rote Vase mit Blumen auf dem Tisch'. Darf nicht leer sein. Standard: "" (leere Zeichenkette). | STRING | Ja | - |
-| `seed` | Bria verwendet hier keinen Seed und erzeugt die Bearbeitung bei jedem Aufruf neu, sodass wiederholte Ausführungen abweichen können. Der Wert wird nie gesendet: Er ändert nur den Cache-Schlüssel dieses Nodes, damit ein ansonsten identischer Graph die Bearbeitung erneut ausführt, anstatt das zwischengespeicherte Ergebnis zurückzugeben. Standard: 42. | INT | Ja | 0 bis 2147483647 |
-| `moderation` | Moderationseinstellungen. Wählen Sie "true", um die unten stehenden Moderation-Flags einzublenden. | DYNAMIC_COMBO | Ja | "false"<br>"true" |
+| `Bild` | Das Bild, dem das beschriebene Objekt hinzugefügt wird. Der Alphakanal wird vor dem Hochladen des Bildes entfernt. | IMAGE | Ja | - |
+| `Anweisung` | Was hinzugefügt werden soll und wo, zum Beispiel 'Platzieren Sie eine rote Vase mit Blumen auf dem Tisch'. Darf nicht leer sein. Standard: "" (leere Zeichenkette). | STRING | Ja | - |
+| `Seed` | Bria verwendet hier keinen Seed und erzeugt die Bearbeitung bei jedem Aufruf neu, sodass wiederholte Ausführungen abweichen können. Der Wert wird nie gesendet: Er ändert nur den Cache-Schlüssel dieses Nodes, damit ein ansonsten identischer Graph die Bearbeitung erneut ausführt, anstatt das zwischengespeicherte Ergebnis zurückzugeben. Standard: 42. | INT | Ja | 0 bis 2147483647 |
+| `Moderation` | Moderationseinstellungen. Wählen Sie "true", um die unten stehenden Moderation-Flags einzublenden. | DYNAMIC_COMBO | Ja | "false"<br>"true" |
 
 ### Eingaben bei aktivierter Moderation
 

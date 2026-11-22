@@ -6,8 +6,8 @@ RelayVSR Conditioning bereitet das Conditioning und das leere Latent für ein Re
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das RelayVSR-Diffusionsmodell, geladen mit Load Model: `relayvsr_x2_lightx2v_int8_convrot.safetensors` oder `relayvsr_x4_int8_convrot.safetensors`. | MODEL | Ja | N/A |
-| `images` | Das Video mit niedriger Qualität in seiner nativen Auflösung. Der Upscale-Faktor des Modells bestimmt, wie groß das Ergebnis wird. | IMAGE | Ja | N/A |
+| `Modell` | Das RelayVSR-Diffusionsmodell, geladen mit Load Model: `relayvsr_x2_lightx2v_int8_convrot.safetensors` oder `relayvsr_x4_int8_convrot.safetensors`. | MODEL | Ja | N/A |
+| `Bilder` | Das Video mit niedriger Qualität in seiner nativen Auflösung. Der Upscale-Faktor des Modells bestimmt, wie groß das Ergebnis wird. | IMAGE | Ja | N/A |
 
 ## Ausgaben
 

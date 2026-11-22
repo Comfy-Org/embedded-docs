@@ -8,7 +8,7 @@
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `model` | מודל התמונה של OpenRouter המשמש ליצירת התמונה. בחירת מודל חושפת את האפשרויות הספציפיות למודל המפורטות להלן. | DYNAMIC_COMBO | כן | `microsoft/mai-image-2.6`<br>`microsoft/mai-image-2.6-flash` |
+| `מודל` | מודל התמונה של OpenRouter המשמש ליצירת התמונה. בחירת מודל חושפת את האפשרויות הספציפיות למודל המפורטות להלן. | DYNAMIC_COMBO | כן | `microsoft/mai-image-2.6`<br>`microsoft/mai-image-2.6-flash` |
 
 ### קלטים של Mai Image 2.6 ו-Mai Image 2.6 Flash
 

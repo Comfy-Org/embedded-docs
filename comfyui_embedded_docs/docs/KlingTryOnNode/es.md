@@ -6,10 +6,10 @@ Vista a una persona con una prenda de vestir usando el probador virtual de Kling
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `person_image` | Foto de una persona, preferiblemente de frente o en vista de tres cuartos. Debe tener al menos 300x300 píxeles; las imágenes con un lado superior a 2048 píxeles se reducen primero. | IMAGE | Sí | N/A |
-| `garment_image` | La prenda que se va a poner: foto de producto, vista plana, maniquí o foto con modelo. Una foto con modelo puede conservar el resto de ese atuendo. Debe tener al menos 300x300 píxeles. Solo prendas de vestir; no se admiten zapatos, bolsos ni accesorios. | IMAGE | Sí | N/A |
-| `keep_pose` | Desactive esta opción para permitir que la pose cambie y lograr una mejor presentación del atuendo. Parámetro avanzado (predeterminado: True). | BOOLEAN | Sí | `True`<br>`False` |
-| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Este parámetro cuenta con la funcionalidad «control after generate» (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
+| `imagen_de_persona` | Foto de una persona, preferiblemente de frente o en vista de tres cuartos. Debe tener al menos 300x300 píxeles; las imágenes con un lado superior a 2048 píxeles se reducen primero. | IMAGE | Sí | N/A |
+| `imagen_de_prenda` | La prenda que se va a poner: foto de producto, vista plana, maniquí o foto con modelo. Una foto con modelo puede conservar el resto de ese atuendo. Debe tener al menos 300x300 píxeles. Solo prendas de vestir; no se admiten zapatos, bolsos ni accesorios. | IMAGE | Sí | N/A |
+| `mantener_pose` | Desactive esta opción para permitir que la pose cambie y lograr una mejor presentación del atuendo. Parámetro avanzado (predeterminado: True). | BOOLEAN | Sí | `True`<br>`False` |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Este parámetro cuenta con la funcionalidad «control after generate» (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
 
 **Nota:** El resultado tiene el mismo tamaño que la `person_image`, limitado a 2048 píxeles en el lado más largo. Ambas entradas se suben a la API de Kling, lo que puede tardar un momento.
 

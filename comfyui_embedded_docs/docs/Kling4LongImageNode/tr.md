@@ -8,7 +8,7 @@ Kling 4.0 ile tek bir uzun görüntü oluşturun: tam bir web sayfası tasarım�
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `skill` | Oluşturulacak düzen. `"webpage"` isteğe bağlı bir stil görüntüsü ve konu etrafında tam bir sayfa tasarlar; `"ecommerce"` ürün fotoğraflarından bir ürün detay sayfası oluşturur. | DYNAMIC_COMBO | Evet | `"webpage"`<br>`"ecommerce"` |
+| `beceri` | Oluşturulacak düzen. `"webpage"` isteğe bağlı bir stil görüntüsü ve konu etrafında tam bir sayfa tasarlar; `"ecommerce"` ürün fotoğraflarından bir ürün detay sayfası oluşturur. | DYNAMIC_COMBO | Evet | `"webpage"`<br>`"ecommerce"` |
 
 ### `webpage` Girdileri
 

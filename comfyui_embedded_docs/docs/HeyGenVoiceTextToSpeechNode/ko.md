@@ -8,7 +8,7 @@ HeyGen 음성으로 텍스트를 말합니다. 이 노드는 텍스트와 음성
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 사용할 모델입니다. `heygen-voice-1-turbo`는 더 빠르고 비용이 더 낮습니다. 모델을 선택하면 해당 모델에 특화된 매개변수인 `voice_id`, `text`, `language`, `expressiveness_boost`가 표시됩니다. | DYNAMIC_COMBO | 예 | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `모델` | 사용할 모델입니다. `heygen-voice-1-turbo`는 더 빠르고 비용이 더 낮습니다. 모델을 선택하면 해당 모델에 특화된 매개변수인 `voice_id`, `text`, `language`, `expressiveness_boost`가 표시됩니다. | DYNAMIC_COMBO | 예 | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `voice_id` | HeyGen 음성의 ID입니다. 예를 들어 HeyGen 음성 라이브러리의 ID를 사용할 수 있습니다(기본값: 비어 있음). | STRING | 예 | N/A |
 | `text` | 말할 텍스트입니다. 최대 5,000자이며, 약 12분이 넘는 음성은 실패하므로 매우 긴 중국어 또는 일본어 텍스트는 나누어야 합니다(기본값: 비어 있음). | STRING | 예 | 1~5000자 |
 | `language` | 텍스트의 언어입니다. 세르비아어나 말레이어처럼 자동 감지가 혼동할 수 있는 유사 언어의 경우 설정하십시오(기본값: `"auto"`). | COMBO | 예 | `"auto"`<br>여러 언어 프리셋 |

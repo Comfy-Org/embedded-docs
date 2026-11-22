@@ -9,10 +9,10 @@ Clona una voz a partir de una grabación de un solo hablante con el motor Voice 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
 | `audio` | Grabación de un solo hablante. Usa al menos 10 segundos de habla clara; solo se utilizan los primeros 3 minutos. | AUDIO | Sí | N/A |
-| `language` | Idioma que se habla en la grabación (predeterminado: "auto"). | COMBO | Sí | `"auto"`<br>Múltiples preajustes de idioma |
-| `similarity` | Qué tan fielmente sigue la voz a la grabación (predeterminado: "max"). | COMBO | Sí | `"medium"`<br>`"high"`<br>`"extra_high"`<br>`"max"` |
+| `idioma` | Idioma que se habla en la grabación (predeterminado: "auto"). | COMBO | Sí | `"auto"`<br>Múltiples preajustes de idioma |
+| `similitud` | Qué tan fielmente sigue la voz a la grabación (predeterminado: "max"). | COMBO | Sí | `"medium"`<br>`"high"`<br>`"extra_high"`<br>`"max"` |
 | `remove_background_noise` | Limpia el ruido de fondo de la grabación antes de clonar (predeterminado: True). | BOOLEAN | Sí | True<br>False |
-| `seed` | Cambia la semilla para clonar la grabación de nuevo; cada clon es una voz ligeramente diferente (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
+| `semilla` | Cambia la semilla para clonar la grabación de nuevo; cada clon es una voz ligeramente diferente (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
 
 **Nota:** La voz se crea como "ComfyUI Voice" en tu cuenta de HeyGen, y el `voice_id` aparece en su salida, así que conecta un nodo de visualización de texto para leerlo. Deja `language` en "auto" a menos que el hablante hable un idioma que se confunda fácilmente con uno estrechamente relacionado. La entrada `seed` incluye un control fijo Control After Generate en la interfaz de usuario, así que cámbialo manualmente cuando quieras otro clon.
 

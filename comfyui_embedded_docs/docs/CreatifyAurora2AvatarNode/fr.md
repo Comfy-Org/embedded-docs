@@ -8,9 +8,9 @@ Creatify Aurora 2.0 Avatar transforme une photo accompagnée d'un extrait de par
 |-----------|-------------|-----------------|--------|-------|
 | `image` | Photo de la personne à animer. Au moins 256 pixels sur chaque côté et un rapport d'aspect compris entre 1:4 et 4:1 ; la vidéo conserve le rapport d'aspect de la photo. | IMAGE | Oui | - |
 | `audio` | Parole ou chant qui pilote la bouche et la durée de la vidéo. Jusqu'à 60 secondes, ou 14 secondes en `"2k"` ; facturé par seconde entamée. | AUDIO | Oui | Jusqu'à 60 secondes |
-| `resolution` | Résolution de la vidéo de sortie (par défaut : `"720p"`). | COMBO | Oui | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"2k"` |
+| `résolution` | Résolution de la vidéo de sortie (par défaut : `"720p"`). | COMBO | Oui | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"2k"` |
 | `text_prompt` | Scène, caméra, éclairage, expression ou mouvement pour la prise de vue. Une valeur vide conserve la photo telle quelle (par défaut : chaîne vide). | STRING | Oui | Texte quelconque |
-| `seed` | `seed` contrôle si le nœud est réexécuté. Les résultats sont non déterministes quel que soit le seed (par défaut : 42). | INT | Oui | 0 à 2147483647 |
+| `graine` | `seed` contrôle si le nœud est réexécuté. Les résultats sont non déterministes quel que soit le seed (par défaut : 42). | INT | Oui | 0 à 2147483647 |
 
 **Contraintes :** une photo de moins de 256 pixels par côté, ou dont le rapport d'aspect sort de la plage 1:4 à 4:1, déclenche une erreur. Un audio plus long que la limite de la résolution choisie est rejeté : 60 secondes normalement et 14 secondes en `"2k"`.
 

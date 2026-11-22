@@ -6,7 +6,7 @@ Carica un dataset di video da una cartella selezionata all'interno della directo
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `folder` | La cartella contenente i file video. | COMBO | Sì | Tutte le sottocartelle disponibili nella directory di input di ComfyUI (popolate dinamicamente) |
+| `cartella` | La cartella contenente i file video. | COMBO | Sì | Tutte le sottocartelle disponibili nella directory di input di ComfyUI (popolate dinamicamente) |
 
 **Nota:** La cartella selezionata deve essere una sottocartella della directory di input di ComfyUI e deve contenere almeno un file video supportato. Le estensioni supportate sono MP4, AVI, MOV, WEBM, MKV e FLV. Se non viene trovato alcun file video supportato, o se il percorso della cartella si risolve al di fuori della directory di input, il nodo genera un errore.
 

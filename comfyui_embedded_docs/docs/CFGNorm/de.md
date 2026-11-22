@@ -6,8 +6,8 @@ CFGNorm passt an, wie Classifier-Free Guidance (CFG) in Diffusionsmodellen angew
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Diffusionsmodell, auf das die CFG-Normalisierung angewendet werden soll | MODEL | Ja | - |
-| `strength` | Steuert die Intensität des Normalisierungseffekts, der auf die CFG-Skalierung angewendet wird (Standard: 1.0) | FLOAT | Ja | 0.0 bis 100.0 (Schrittweite 0.01) |
+| `Modell` | Das Diffusionsmodell, auf das die CFG-Normalisierung angewendet werden soll | MODEL | Ja | - |
+| `Stärke` | Steuert die Intensität des Normalisierungseffekts, der auf die CFG-Skalierung angewendet wird (Standard: 1.0) | FLOAT | Ja | 0.0 bis 100.0 (Schrittweite 0.01) |
 | `pre_cfg` | Wenn true, wird das kombinierte Rauschen VOR der CFG-Kombination des Samplers ohne Clamping neu skaliert (kann verstärken). Entspricht der norm-skalierten CFG, die von Modellen wie Lens verwendet wird. Der Standardwert false behält das ursprüngliche Verhalten nach der CFG im x0-Raum bei, das ausschließlich dämpft. (Standard: False) | BOOLEAN | Nein | true / false |
 
 Hinweis: Dieser Node ist als experimentell gekennzeichnet.

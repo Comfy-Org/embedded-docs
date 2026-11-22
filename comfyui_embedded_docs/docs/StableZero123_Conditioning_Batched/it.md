@@ -7,15 +7,15 @@ Il nodo StableZero123_Conditioning_Batched prepara i dati di condizionamento per
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
 | `clip_vision` | Il modello CLIP vision utilizzato per codificare l'immagine di input | CLIP_VISION | Sì | - |
-| `init_image` | L'immagine di input iniziale da elaborare e codificare | IMAGE | Sì | - |
+| `immagine_iniziale` | L'immagine di input iniziale da elaborare e codificare | IMAGE | Sì | - |
 | `vae` | Il modello VAE utilizzato per codificare i pixel dell'immagine nello spazio latente | VAE | Sì | - |
-| `width` | La larghezza di output per l'immagine elaborata (predefinito: 256) | INT | Sì | 16 a MAX_RESOLUTION (passo di 8) |
-| `height` | L'altezza di output per l'immagine elaborata (predefinito: 256) | INT | Sì | 16 a MAX_RESOLUTION (passo di 8) |
-| `batch_size` | Il numero di campioni di condizionamento da generare nel batch (predefinito: 1) | INT | Sì | 1 a 4096 |
-| `elevation` | L'angolo di elevazione iniziale della camera in gradi (predefinito: 0.0) | FLOAT | Sì | -180.0 a 180.0 (passo di 0.1) |
-| `azimuth` | L'angolo di azimut iniziale della camera in gradi (predefinito: 0.0) | FLOAT | Sì | -180.0 a 180.0 (passo di 0.1) |
-| `elevation_batch_increment` | La quantità di cui incrementare l'elevazione per ogni elemento del batch (predefinito: 0.0). Contrassegnato come input avanzato. | FLOAT | Sì | -180.0 a 180.0 (passo di 0.1) |
-| `azimuth_batch_increment` | La quantità di cui incrementare l'azimut per ogni elemento del batch (predefinito: 0.0). Contrassegnato come input avanzato. | FLOAT | Sì | -180.0 a 180.0 (passo di 0.1) |
+| `larghezza` | La larghezza di output per l'immagine elaborata (predefinito: 256) | INT | Sì | 16 a MAX_RESOLUTION (passo di 8) |
+| `altezza` | L'altezza di output per l'immagine elaborata (predefinito: 256) | INT | Sì | 16 a MAX_RESOLUTION (passo di 8) |
+| `dimensione_batch` | Il numero di campioni di condizionamento da generare nel batch (predefinito: 1) | INT | Sì | 1 a 4096 |
+| `elevazione` | L'angolo di elevazione iniziale della camera in gradi (predefinito: 0.0) | FLOAT | Sì | -180.0 a 180.0 (passo di 0.1) |
+| `azimut` | L'angolo di azimut iniziale della camera in gradi (predefinito: 0.0) | FLOAT | Sì | -180.0 a 180.0 (passo di 0.1) |
+| `incremento_batch_elevazione` | La quantità di cui incrementare l'elevazione per ogni elemento del batch (predefinito: 0.0). Contrassegnato come input avanzato. | FLOAT | Sì | -180.0 a 180.0 (passo di 0.1) |
+| `incremento_batch_azimut` | La quantità di cui incrementare l'azimut per ogni elemento del batch (predefinito: 0.0). Contrassegnato come input avanzato. | FLOAT | Sì | -180.0 a 180.0 (passo di 0.1) |
 
 **Nota:** I valori di `width` e `height` devono essere multipli di 8, poiché il nodo divide internamente queste dimensioni per 8 quando costruisce il tensore latente.
 

@@ -8,7 +8,7 @@ Der Node Tencent HY Image: Edit bearbeitet oder kombiniert Referenzbilder anhand
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das für die Bearbeitung verwendete Modell. Das ausgewählte Modell bestimmt, welche zusätzlichen Eingaben angezeigt werden. | DYNAMIC_COMBO | Ja | `"hy-image-3.5-preview"` |
+| `Modell` | Das für die Bearbeitung verwendete Modell. Das ausgewählte Modell bestimmt, welche zusätzlichen Eingaben angezeigt werden. | DYNAMIC_COMBO | Ja | `"hy-image-3.5-preview"` |
 
 ### hy-image-3.5-preview Eingaben
 

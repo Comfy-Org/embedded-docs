@@ -8,9 +8,9 @@ Dieser Node entfernt mit Bria ein in Klartext beschriebenes Objekt aus einem Bil
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Bild, aus dem das benannte Objekt entfernt werden soll. | IMAGE | Ja | - |
+| `Bild` | Das Bild, aus dem das benannte Objekt entfernt werden soll. | IMAGE | Ja | - |
 | `object_name` | Name des zu entfernenden Objekts, wie z. B. 'the lamp'. Es können mehrere Objekte gleichzeitig benannt werden, wie z. B. 'the phone and the pencils'. Wenn etwas benannt wird, das nicht auf dem Bild ist, wird trotzdem ein neu gerendertes Bild zurückgegeben, und die Anfrage wird weiterhin abgerechnet. Muss mindestens 1 Zeichen lang sein (Standard: leer). | STRING | Ja | - |
-| `moderation` | Moderationseinstellungen. Wählt aus, ob die optionalen Moderationselemente angezeigt werden. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
+| `Moderation` | Moderationseinstellungen. Wählt aus, ob die optionalen Moderationselemente angezeigt werden. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
 
 ### Moderationseingaben
 

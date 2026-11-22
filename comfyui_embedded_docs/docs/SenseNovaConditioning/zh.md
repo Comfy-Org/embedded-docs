@@ -7,9 +7,9 @@
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | SenseNova CLIP 模型。请连接同时供给 CLIP Text Encode 的 CLIP 加载器，编码器的输出接到 `conditioning`。除传入的 conditioning 已完成外，每个任务都必需。 | CLIP | 否 | - |
-| `conditioning` | 来自 CLIP Text Encode 的 SenseNova 文本 conditioning。 | CONDITIONING | 是 | - |
-| `negative` | 可选的负面 conditioning。对于 `interleave` 和 `self-correction` 任务，它会被更新并返回。 | CONDITIONING | 否 | - |
-| `task` | 要运行的任务。`"image"` 为标准采样器编码提示词，`"image thinking"` 让模型在回答前思考，`"interleave"` 在一次处理中生成文本和图像，`"self-correction"` 让模型修正自己之前的输出。 | DYNAMIC_COMBO | 是 | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
+| `条件` | 来自 CLIP Text Encode 的 SenseNova 文本 conditioning。 | CONDITIONING | 是 | - |
+| `负面` | 可选的负面 conditioning。对于 `interleave` 和 `self-correction` 任务，它会被更新并返回。 | CONDITIONING | 否 | - |
+| `任务` | 要运行的任务。`"image"` 为标准采样器编码提示词，`"image thinking"` 让模型在回答前思考，`"interleave"` 在一次处理中生成文本和图像，`"self-correction"` 让模型修正自己之前的输出。 | DYNAMIC_COMBO | 是 | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
 | `max_tokens` | 本次调用期间生成的最大 token 数。默认：1024。 | INT | 是 | 1 到 8192 |
 
 ### `interleave` 输入

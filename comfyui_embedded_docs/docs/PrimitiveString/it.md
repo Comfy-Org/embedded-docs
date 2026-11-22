@@ -6,7 +6,7 @@ Il nodo Text offre un modo semplice per inserire e trasmettere dati testuali nel
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `value` | La stringa di testo da passare attraverso il nodo | STRING | Sì | Qualsiasi testo |
+| `valore` | La stringa di testo da passare attraverso il nodo | STRING | Sì | Qualsiasi testo |
 
 ## Output
 

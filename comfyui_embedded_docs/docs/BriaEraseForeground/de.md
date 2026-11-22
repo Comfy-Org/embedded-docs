@@ -10,8 +10,8 @@ Dies ist ein kostenpflichtiger API-Node, der auf dem Dienst von Bria ausgeführt
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Bild, dessen Vordergrund entfernt und durch einen generierten Hintergrund ersetzt wird. Es werden nur die Farbkanäle gesendet; ein etwaiger Alphakanal wird vor dem Hochladen verworfen. | IMAGE | Ja | - |
-| `moderation` | Moderationseinstellungen. Wählen Sie `"false"`, um das Bild ohne Moderationsflags zu senden, oder `"true"`, um die unten stehenden Schalter für die Inhaltsmoderation einzublenden. Standard: `"false"`. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
+| `Bild` | Das Bild, dessen Vordergrund entfernt und durch einen generierten Hintergrund ersetzt wird. Es werden nur die Farbkanäle gesendet; ein etwaiger Alphakanal wird vor dem Hochladen verworfen. | IMAGE | Ja | - |
+| `Moderation` | Moderationseinstellungen. Wählen Sie `"false"`, um das Bild ohne Moderationsflags zu senden, oder `"true"`, um die unten stehenden Schalter für die Inhaltsmoderation einzublenden. Standard: `"false"`. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
 
 ### `"false"` Eingaben
 

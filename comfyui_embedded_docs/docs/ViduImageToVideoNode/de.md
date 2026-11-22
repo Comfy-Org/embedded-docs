@@ -6,12 +6,12 @@ Der Node Vidu Image To Video Generation erstellt aus einem Startbild und einer o
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modellname (Standard: viduq1) | COMBO | Ja | `viduq1` |
-| `image` | Ein Bild, das als Startframe des generierten Videos verwendet wird | IMAGE | Ja | - |
-| `prompt` | Eine Textbeschreibung für die Videogenerierung (Standard: leer) | STRING | Nein | - |
-| `duration` | Dauer des Ausgabevideos in Sekunden (Standard: 5, festgelegt auf 5 Sekunden) | INT | Nein | 5-5 |
-| `seed` | Seed für die Videogenerierung (0 für zufällig) (Standard: 0) | INT | Nein | 0-2147483647 |
-| `resolution` | Unterstützte Werte können je nach Modell und Dauer variieren (Standard: 1080p) | COMBO | Nein | `1080p` |
+| `Modell` | Modellname (Standard: viduq1) | COMBO | Ja | `viduq1` |
+| `Bild` | Ein Bild, das als Startframe des generierten Videos verwendet wird | IMAGE | Ja | - |
+| `Prompt` | Eine Textbeschreibung für die Videogenerierung (Standard: leer) | STRING | Nein | - |
+| `Dauer` | Dauer des Ausgabevideos in Sekunden (Standard: 5, festgelegt auf 5 Sekunden) | INT | Nein | 5-5 |
+| `Seed` | Seed für die Videogenerierung (0 für zufällig) (Standard: 0) | INT | Nein | 0-2147483647 |
+| `Auflösung` | Unterstützte Werte können je nach Modell und Dauer variieren (Standard: 1080p) | COMBO | Nein | `1080p` |
 | `movement_amplitude` | Die Bewegungsamplitude von Objekten im Frame (Standard: auto) | COMBO | Nein | `auto`<br>`small`<br>`medium`<br>`large` |
 
 **Einschränkungen:**

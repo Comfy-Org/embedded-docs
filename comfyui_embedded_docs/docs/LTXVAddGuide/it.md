@@ -6,13 +6,13 @@ Il nodo LTXVAddGuide codifica immagini o video di input tramite un encoder VAE e
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `positive` | Input di condizionamento positivo da modificare con la guida dei fotogrammi chiave. | CONDITIONING | Sì | - |
-| `negative` | Input di condizionamento negativo da modificare con la guida dei fotogrammi chiave. | CONDITIONING | Sì | - |
+| `positivo` | Input di condizionamento positivo da modificare con la guida dei fotogrammi chiave. | CONDITIONING | Sì | - |
+| `negativo` | Input di condizionamento negativo da modificare con la guida dei fotogrammi chiave. | CONDITIONING | Sì | - |
 | `vae` | Modello VAE utilizzato per codificare i frame immagine/video di input. | VAE | Sì | - |
-| `latent` | Sequenza latente di input che riceverà i frame di condizionamento. | LATENT | Sì | - |
-| `image` | Immagine o video su cui condizionare il video latente. Deve avere 8*n + 1 frame. Se il video non ha 8*n + 1 frame, verrà ritagliato ai più vicini 8*n + 1 frame. | IMAGE | Sì | - |
-| `frame_idx` | Indice del frame da cui iniziare il condizionamento. Per immagini a frame singolo o video con 1-8 frame, qualsiasi valore di `frame_idx` è accettabile. Per video con 9+ frame, `frame_idx` deve essere divisibile per 8, altrimenti verrà arrotondato per difetto al multiplo di 8 più vicino. I valori negativi vengono contati dalla fine del video. Predefinito: 0. | INT | Sì | da -9999 a 9999 |
-| `strength` | Intensità dell'influenza del condizionamento, dove 1.0 applica il condizionamento completo e 0.0 non applica alcun condizionamento. Predefinito: 1.0. | FLOAT | Sì | da 0.0 a 10.0 |
+| `latente` | Sequenza latente di input che riceverà i frame di condizionamento. | LATENT | Sì | - |
+| `immagine` | Immagine o video su cui condizionare il video latente. Deve avere 8*n + 1 frame. Se il video non ha 8*n + 1 frame, verrà ritagliato ai più vicini 8*n + 1 frame. | IMAGE | Sì | - |
+| `indice_fotogramma` | Indice del frame da cui iniziare il condizionamento. Per immagini a frame singolo o video con 1-8 frame, qualsiasi valore di `frame_idx` è accettabile. Per video con 9+ frame, `frame_idx` deve essere divisibile per 8, altrimenti verrà arrotondato per difetto al multiplo di 8 più vicino. I valori negativi vengono contati dalla fine del video. Predefinito: 0. | INT | Sì | da -9999 a 9999 |
+| `intensità` | Intensità dell'influenza del condizionamento, dove 1.0 applica il condizionamento completo e 0.0 non applica alcun condizionamento. Predefinito: 1.0. | FLOAT | Sì | da 0.0 a 10.0 |
 | `attention_mask` | Maschera spaziale opzionale nello spazio dei pixel. Controlla l'influenza del condizionamento per regione tramite self-attention, moltiplicata per `strength`. | MASK | No | - |
 | `iclora_parameters` | Parametri IC-LoRA opzionali da un nodo Get IC-LoRA Parameters. Usati per regolare l'elaborazione della guida come richiesto da certi IC-LoRA (ad es., quelli con un `reference_downscale_factor` > 1). Quando concatenati, ciascun LTXVAddGuide usa solo i parametri a esso collegati. | IC_LORA_PARAMETERS | No | - |
 

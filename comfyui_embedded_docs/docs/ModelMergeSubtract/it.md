@@ -8,7 +8,7 @@ Questo nodo è progettato per operazioni avanzate di fusione di modelli, in part
 | --- | --- | --- |
 | `model1` | Il modello di base da cui verranno sottratti i parametri. | `MODEL` |
 | `model2` | Il modello i cui parametri verranno sottratti dal modello di base. | `MODEL` |
-| `multiplier` | Un valore in virgola mobile che scala l'effetto di sottrazione sui parametri del modello di base. | `FLOAT` |
+| `moltiplicatore` | Un valore in virgola mobile che scala l'effetto di sottrazione sui parametri del modello di base. | `FLOAT` |
 
 ## Output
 

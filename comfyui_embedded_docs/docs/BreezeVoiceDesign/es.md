@@ -6,11 +6,11 @@ Crea una nueva voz de Breeze a partir de una descripción escrita. Proporcione u
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `description` | Descripción de la voz en 3 a 500 caracteres: edad, género, acento, tono, ritmo. Predeterminado: vacío. | STRING | Sí | 3 a 500 caracteres |
+| `descripción` | Descripción de la voz en 3 a 500 caracteres: edad, género, acento, tono, ritmo. Predeterminado: vacío. | STRING | Sí | 3 a 500 caracteres |
 | `preview_text` | La línea que dice la nueva voz en la vista previa, de hasta 500 caracteres. Escríbala en el idioma seleccionado, porque la voz se construye a partir de esta vista previa. Predeterminado: vacío. | STRING | Sí | 1 a 500 caracteres |
-| `language` | Idioma del texto de vista previa. English y Chinese pueden usar cualquiera de los modelos; los demás idiomas usan Breeze TTS 2 Multilingual. | DYNAMIC_COMBO | Sí | Varias opciones disponibles |
-| `strength` | Qué tan fielmente la voz sigue la descripción. Predeterminado: 4.0. | FLOAT | No | 1.0 a 10.0 (paso: 0.1) |
-| `seed` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 2147483647 |
+| `idioma` | Idioma del texto de vista previa. English y Chinese pueden usar cualquiera de los modelos; los demás idiomas usan Breeze TTS 2 Multilingual. | DYNAMIC_COMBO | Sí | Varias opciones disponibles |
+| `intensidad` | Qué tan fielmente la voz sigue la descripción. Predeterminado: 4.0. | FLOAT | No | 1.0 a 10.0 (paso: 0.1) |
+| `semilla` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 2147483647 |
 
 ### Entradas para los idiomas "English" y "Chinese"
 

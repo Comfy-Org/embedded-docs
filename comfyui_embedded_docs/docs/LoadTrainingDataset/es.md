@@ -6,7 +6,7 @@ Este nodo carga un conjunto de datos de entrenamiento codificado (latentes y con
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `folder_name` | Conjunto de datos guardado que se va a cargar, del directorio datasets. | COMBO | Sí | Una opción por cada carpeta de conjunto de datos encontrada en el directorio datasets |
+| `nombre_de_carpeta` | Conjunto de datos guardado que se va a cargar, del directorio datasets. | COMBO | Sí | Una opción por cada carpeta de conjunto de datos encontrada en el directorio datasets |
 
 Nota: Las opciones de `folder_name` se generan automáticamente al escanear el directorio datasets. Una subcarpeta se lista como conjunto de datos cuando contiene un archivo `metadata.json` o al menos un archivo `.safetensors` (el escaneo no desciende a una carpeta que coincida). La carpeta de conjunto de datos seleccionada se busca en todos los directorios raíz de conjuntos de datos configurados, y el nombre de la carpeta debe resolverse a una subcarpeta dentro de uno de esos directorios raíz. El nodo lee todos los archivos llamados `shard_*.pkl` en la carpeta seleccionada, en orden de clasificación, y genera un error si no se encuentra ningún archivo de fragmento o si no se puede localizar la carpeta.
 

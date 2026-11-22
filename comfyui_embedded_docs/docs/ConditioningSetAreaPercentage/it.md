@@ -7,11 +7,11 @@ Il nodo ConditioningSetAreaPercentage è specializzato nella regolazione dell'ar
 | Parametro | Descrizione | Tipo di dato |
 | --- | --- | --- |
 | `CONDITIONING` | Rappresenta gli elementi di conditioning da modificare, fungendo da base per l'applicazione delle regolazioni di area e strength. | CONDITIONING |
-| `width` | Specifica la larghezza dell'area come percentuale della larghezza totale dell'immagine, influenzando l'estensione orizzontale dell'influenza del conditioning. | `FLOAT` |
-| `height` | Determina l'altezza dell'area come percentuale dell'altezza totale dell'immagine, influenzando l'estensione verticale dell'influenza del conditioning. | `FLOAT` |
+| `larghezza` | Specifica la larghezza dell'area come percentuale della larghezza totale dell'immagine, influenzando l'estensione orizzontale dell'influenza del conditioning. | `FLOAT` |
+| `altezza` | Determina l'altezza dell'area come percentuale dell'altezza totale dell'immagine, influenzando l'estensione verticale dell'influenza del conditioning. | `FLOAT` |
 | `x` | Indica il punto di partenza orizzontale dell'area come percentuale della larghezza totale dell'immagine, posizionando l'effetto di conditioning. | `FLOAT` |
 | `y` | Specifica il punto di partenza verticale dell'area come percentuale dell'altezza totale dell'immagine, posizionando l'effetto di conditioning. | `FLOAT` |
-| `strength` | Controlla l'intensità dell'effetto di conditioning all'interno dell'area specificata, consentendo di regolarne con precisione l'impatto. | `FLOAT` |
+| `intensità` | Controlla l'intensità dell'effetto di conditioning all'interno dell'area specificata, consentendo di regolarne con precisione l'impatto. | `FLOAT` |
 
 ## Output
 

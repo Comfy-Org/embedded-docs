@@ -7,16 +7,16 @@ Genera imágenes de forma sincrónica a través del endpoint GPT Image de OpenAI
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
 | `prompt` | Prompt de texto para GPT Image (predeterminado: "") | STRING | Sí | - |
-| `seed` | Semilla aleatoria para la generación; aún no implementada en el backend (predeterminado: 0) | INT | No | 0 a 2147483647 |
-| `quality` | Calidad de la imagen; afecta el costo y el tiempo de generación (predeterminado: "low") | COMBO | No | "low"<br>"medium"<br>"high" |
-| `background` | Devuelve la imagen con o sin fondo (predeterminado: "auto") | COMBO | No | "auto"<br>"opaque"<br>"transparent" |
-| `size` | Tamaño de la imagen. Seleccione "Custom" para usar el ancho y la altura personalizados (solo GPT Image 2) (predeterminado: "auto") | COMBO | No | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" |
+| `semilla` | Semilla aleatoria para la generación; aún no implementada en el backend (predeterminado: 0) | INT | No | 0 a 2147483647 |
+| `calidad` | Calidad de la imagen; afecta el costo y el tiempo de generación (predeterminado: "low") | COMBO | No | "low"<br>"medium"<br>"high" |
+| `fondo` | Devuelve la imagen con o sin fondo (predeterminado: "auto") | COMBO | No | "auto"<br>"opaque"<br>"transparent" |
+| `tamaño` | Tamaño de la imagen. Seleccione "Custom" para usar el ancho y la altura personalizados (solo GPT Image 2) (predeterminado: "auto") | COMBO | No | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" |
 | `n` | Cuántas imágenes generar (predeterminado: 1) | INT | No | 1 a 8 |
-| `image` | Imagen de referencia opcional para la edición de imágenes | IMAGE | No | - |
-| `mask` | Máscara opcional para inpainting (las áreas blancas se reemplazarán) | MASK | No | - |
-| `model` | Modelo GPT Image que se usará (predeterminado: "gpt-image-2") | COMBO | No | "gpt-image-1.5"<br>"gpt-image-2" |
-| `custom_width` | Se usa solo cuando `size` es "Custom". Debe ser un múltiplo de 16 (solo GPT Image 2) (predeterminado: 1024) | INT | No | 1024 a 3840, paso 16 |
-| `custom_height` | Se usa solo cuando `size` es "Custom". Debe ser un múltiplo de 16 (solo GPT Image 2) (predeterminado: 1024) | INT | No | 1024 a 3840, paso 16 |
+| `imagen` | Imagen de referencia opcional para la edición de imágenes | IMAGE | No | - |
+| `máscara` | Máscara opcional para inpainting (las áreas blancas se reemplazarán) | MASK | No | - |
+| `modelo` | Modelo GPT Image que se usará (predeterminado: "gpt-image-2") | COMBO | No | "gpt-image-1.5"<br>"gpt-image-2" |
+| `ancho_personalizado` | Se usa solo cuando `size` es "Custom". Debe ser un múltiplo de 16 (solo GPT Image 2) (predeterminado: 1024) | INT | No | 1024 a 3840, paso 16 |
+| `altura_personalizada` | Se usa solo cuando `size` es "Custom". Debe ser un múltiplo de 16 (solo GPT Image 2) (predeterminado: 1024) | INT | No | 1024 a 3840, paso 16 |
 
 **Restricciones de los parámetros:**
 

@@ -6,21 +6,21 @@ Convierte un retrato en un vídeo con la persona hablando usando Pruna P-Video-2
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `image` | Retrato del que parte el vídeo. Se mantienen las relaciones de aspecto de 1:2 a 4:1; las imágenes más extremas, como 1:5, se recortan a 9:16 o 16:9. | IMAGE | Sí | - |
-| `speech` | Controla el vídeo con un guion de texto a voz o con tu propio audio. Al seleccionar una opción, se muestran sus entradas a continuación. | DYNAMIC_COMBO | Sí | `"script"`<br>`"audio"` |
+| `imagen` | Retrato del que parte el vídeo. Se mantienen las relaciones de aspecto de 1:2 a 4:1; las imágenes más extremas, como 1:5, se recortan a 9:16 o 16:9. | IMAGE | Sí | - |
+| `voz` | Controla el vídeo con un guion de texto a voz o con tu propio audio. Al seleccionar una opción, se muestran sus entradas a continuación. | DYNAMIC_COMBO | Sí | `"script"`<br>`"audio"` |
 | `prompt` | Describe lo que muestra el vídeo (predeterminado: "The person is talking."). Hasta 5000 caracteres. | STRING | Sí | Hasta 5000 caracteres |
-| `resolution` | Resolución de salida (predeterminado: `"768p"`). 1080p, 2k y 4k escalan el vídeo generado a 768p. | COMBO | Sí | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
-| `enhance_prompt` | Añade al prompt el movimiento que se ve en el retrato, como el fondo, las luces y el movimiento corporal (predeterminado: True). Configuración avanzada. | BOOLEAN | Sí | `True`<br>`False` |
-| `seed` | Semilla para la generación (predeterminado: 42). La misma semilla reproduce un resultado exactamente solo cuando `enhance_prompt` está desactivado. | INT | Sí | 0 a 2147483647<br>Paso: 1 |
+| `resolución` | Resolución de salida (predeterminado: `"768p"`). 1080p, 2k y 4k escalan el vídeo generado a 768p. | COMBO | Sí | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
+| `mejorar prompt` | Añade al prompt el movimiento que se ve en el retrato, como el fondo, las luces y el movimiento corporal (predeterminado: True). Configuración avanzada. | BOOLEAN | Sí | `True`<br>`False` |
+| `semilla` | Semilla para la generación (predeterminado: 42). La misma semilla reproduce un resultado exactamente solo cuando `enhance_prompt` está desactivado. | INT | Sí | 0 a 2147483647<br>Paso: 1 |
 
 ### Entradas de `"script"`
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `speech.script` | Palabras que pronuncia la persona. El vídeo se ajusta a la duración del discurso, y los discursos de más de 3 minutos se cortan a los 3 minutos. | STRING | Sí | Cualquier texto |
-| `speech.voice` | Voz utilizada para el discurso (predeterminado: `"Zephyr (Female)"`). | COMBO | Sí | 30 voces preestablecidas |
-| `speech.language` | Idioma en el que se habla el guion (predeterminado: `"English (US)"`). | COMBO | Sí | `"English (US)"`<br>`"English (UK)"`<br>`"Spanish"`<br>`"French"`<br>`"German"`<br>`"Italian"`<br>`"Portuguese (Brazil)"`<br>`"Japanese"`<br>`"Korean"`<br>`"Hindi"` |
-| `speech.voice_prompt` | Cómo se pronuncia el guion: tono, ritmo, acento, emoción (predeterminado: "Say the following."). No se pronuncia por sí mismo. | STRING | Sí | Cualquier texto |
+| `guion` | Palabras que pronuncia la persona. El vídeo se ajusta a la duración del discurso, y los discursos de más de 3 minutos se cortan a los 3 minutos. | STRING | Sí | Cualquier texto |
+| `voz` | Voz utilizada para el discurso (predeterminado: `"Zephyr (Female)"`). | COMBO | Sí | 30 voces preestablecidas |
+| `idioma` | Idioma en el que se habla el guion (predeterminado: `"English (US)"`). | COMBO | Sí | `"English (US)"`<br>`"English (UK)"`<br>`"Spanish"`<br>`"French"`<br>`"German"`<br>`"Italian"`<br>`"Portuguese (Brazil)"`<br>`"Japanese"`<br>`"Korean"`<br>`"Hindi"` |
+| `prompt de voz` | Cómo se pronuncia el guion: tono, ritmo, acento, emoción (predeterminado: "Say the following."). No se pronuncia por sí mismo. | STRING | Sí | Cualquier texto |
 
 ### Entradas de `"audio"`
 

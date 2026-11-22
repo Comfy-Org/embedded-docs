@@ -6,9 +6,9 @@ Dieser Node ersetzt den Hintergrund eines Videos durch einen einfarbigen Chroma-
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `video` | Das zu verarbeitende Eingabevideo | VIDEO | Ja | Videodatei |
+| `Video` | Das zu verarbeitende Eingabevideo | VIDEO | Ja | Videodatei |
 | `green_shade` | Einfarbiger Chroma-Key-Farbton, der hinter dem Vordergrund angewendet wird: `broadcast_green` (#00B140), `chroma_green` (#00FF00) oder `blue_screen` (#0000FF). | COMBO | Ja | `"broadcast_green"`<br>`"chroma_green"`<br>`"blue_screen"` |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 bis 2147483647 |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 bis 2147483647 |
 
 **Hinweis:** Das Eingabevideo darf eine Dauer von 60 Sekunden nicht überschreiten.
 

@@ -13,7 +13,7 @@
 | `background` | 用於網格未覆蓋像素的背景顏色。（預設："#000000"） | COLOR | 是 | — |
 | `model_3d_info` | 來自同一個 Load3D / Preview3D 檢視器的模型變換。將其與 `camera_info` 連接，以符合檢視器的取景。 | LOAD3D_MODEL_INFO | 否 | — |
 | `camera_info` | 來自 Load3D / Preview3D 檢視器或 Create Camera Info 節點的相機。若未連接任何相機，會自動取景為預設正視圖。 相機清單會為每個相機渲染一張影像。 | LOAD3D_CAMERA | 否 | — |
-| `texture` | 用於取代網格自帶的紋理，例如未接 Apply Texture to Mesh 的 Bake Texture From Views 輸出。 | IMAGE | 否 | — |
+| `紋理` | 用於取代網格自帶的紋理，例如未接 Apply Texture to Mesh 的 Bake Texture From Views 輸出。 | IMAGE | 否 | — |
 
 注意：批次網格中僅會渲染第一個項目——若網格批次包含多個項目，節點會記錄警告並使用第一個。`texture` 模式要求網格同時具有紋理與 UV；`vertex colors` 模式要求頂點顏色；若所選模式的資料無法取得，節點會退回實心著色渲染。`normal` 模式在存在平滑頂點法線時使用它們，否則使用逐面法線。在 `depth` 模式中，較近的表面看起來較亮（近 = 白色），而未被網格覆蓋的像素保持黑色。`model_3d_info` 與 `camera_info` 應從同一個 Load3D / Preview3D 檢視器一起連接，使渲染結果符合檢視器的取景。
 

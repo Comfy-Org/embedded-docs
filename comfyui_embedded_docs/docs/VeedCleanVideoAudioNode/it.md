@@ -7,8 +7,8 @@ Rimuovi il rumore di fondo dal parlato in un video con VEED. Cambia solo la trac
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `video` | Video con una traccia audio contenente parlato, di durata inferiore a 30 minuti. Il video deve avere una traccia audio. | VIDEO | Sì | Fino a 1799 secondi |
-| `strength` | Quanto rumore viene rimosso sotto il parlato. Valori più bassi mantengono più rumore ambientale dietro la voce; le pause tra le parole vengono sempre pulite completamente e i valori superiori a quello predefinito cambiano poco. (predefinito: 0.874) | FLOAT | Sì | Da 0.0 a 1.0 (passo 0.001) |
-| `loudness` | Indica se normalizzare il volume del parlato. `"normalize"` lo imposta su `target_lufs`; `"keep input level"` lascia invariato il livello. Selezionando un'opzione vengono mostrati i relativi parametri. (predefinito: `"normalize"`) | DYNAMIC_COMBO | Sì | `"normalize"`<br>`"keep input level"` |
+| `intensità` | Quanto rumore viene rimosso sotto il parlato. Valori più bassi mantengono più rumore ambientale dietro la voce; le pause tra le parole vengono sempre pulite completamente e i valori superiori a quello predefinito cambiano poco. (predefinito: 0.874) | FLOAT | Sì | Da 0.0 a 1.0 (passo 0.001) |
+| `volume sonoro` | Indica se normalizzare il volume del parlato. `"normalize"` lo imposta su `target_lufs`; `"keep input level"` lascia invariato il livello. Selezionando un'opzione vengono mostrati i relativi parametri. (predefinito: `"normalize"`) | DYNAMIC_COMBO | Sì | `"normalize"`<br>`"keep input level"` |
 | `target_lufs` | Loudness integrata del parlato pulito in LUFS. I picchi sono limitati a -1.1 dBTP, quindi i target elevati si fermano prima (circa -15 LUFS per il parlato tipico). Disponibile quando `loudness` è `"normalize"` (predefinito: -19.0). | FLOAT | Sì | Da -40.0 a -8.0 (passo 0.1) |
 
 Il nodo si interrompe con un errore quando la clip supera i 1799 secondi e quando il video non ha una traccia audio.

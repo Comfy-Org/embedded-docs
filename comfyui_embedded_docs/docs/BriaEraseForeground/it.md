@@ -10,8 +10,8 @@ Questo è un nodo API a pagamento che viene eseguito sul servizio di Bria, quind
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | L'immagine il cui primo piano viene rimosso e sostituito con uno sfondo generato. Vengono inviati solo i canali di colore; qualsiasi canale alfa viene scartato prima del caricamento. | IMAGE | Sì | - |
-| `moderation` | Impostazioni di moderazione. Seleziona `"false"` per inviare l'immagine senza flag di moderazione, oppure `"true"` per mostrare gli interruttori di moderazione dei contenuti riportati di seguito. Predefinito: `"false"`. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
+| `immagine` | L'immagine il cui primo piano viene rimosso e sostituito con uno sfondo generato. Vengono inviati solo i canali di colore; qualsiasi canale alfa viene scartato prima del caricamento. | IMAGE | Sì | - |
+| `moderazione` | Impostazioni di moderazione. Seleziona `"false"` per inviare l'immagine senza flag di moderazione, oppure `"true"` per mostrare gli interruttori di moderazione dei contenuti riportati di seguito. Predefinito: `"false"`. | DYNAMIC_COMBO | Sì | `"false"`<br>`"true"` |
 
 ### Input per `"false"`
 

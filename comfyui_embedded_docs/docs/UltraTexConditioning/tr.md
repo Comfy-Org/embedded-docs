@@ -6,13 +6,13 @@ FLUX.2 Klein 9B'yi UltraTex LoRA ile koşullandırarak bir referans görüntün�
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Metin koşullandırma. UltraTex boş bir istemle eğitilmiştir. | CONDITIONING | Evet | - |
+| `Koşullandırma` | Metin koşullandırma. UltraTex boş bir istemle eğitilmiştir. | CONDITIONING | Evet | - |
 | `vae` | Normalleri, görünümleri ve referansı kodlamak için kullanılan VAE. | VAE | Evet | - |
-| `normals` | Render Mesh `world normal` görüntüleri: 6 kanonik görünüm veya 4 yan görünüm. | IMAGE | Evet | - |
-| `masks` | Aynı görünümlerin Render Mesh maskeleri, görünüm başına bir tane. | MASK | Evet | - |
-| `reference` | Nesnenin görünmesi gerektiği hali, ön kamera tarafından görüldüğü şekliyle. | IMAGE | Evet | - |
-| `reference_mask` | Referansın nesne maskesi, nesne için beyaz. Varsayılan: tamamen beyaz. | MASK | Hayır | - |
-| `extra_views` | Daha fazla referans: nesnenin diğer görünümlerden görüldüğü hali, her biri referansın ön görünüme bağlı olduğu gibi kendi görünümüne bağlıdır. Varsayılan: `"off"`. | DYNAMIC_COMBO | Evet | `"off"`<br>`"on"` |
+| `Normaller` | Render Mesh `world normal` görüntüleri: 6 kanonik görünüm veya 4 yan görünüm. | IMAGE | Evet | - |
+| `Maskeler` | Aynı görünümlerin Render Mesh maskeleri, görünüm başına bir tane. | MASK | Evet | - |
+| `Referans` | Nesnenin görünmesi gerektiği hali, ön kamera tarafından görüldüğü şekliyle. | IMAGE | Evet | - |
+| `Referans maskesi` | Referansın nesne maskesi, nesne için beyaz. Varsayılan: tamamen beyaz. | MASK | Hayır | - |
+| `Ek görünümler` | Daha fazla referans: nesnenin diğer görünümlerden görüldüğü hali, her biri referansın ön görünüme bağlı olduğu gibi kendi görünümüne bağlıdır. Varsayılan: `"off"`. | DYNAMIC_COMBO | Evet | `"off"`<br>`"on"` |
 
 ### Ekstra Görünümler "on" Girdileri
 

@@ -21,9 +21,9 @@ Refiner se puede utilizar de dos maneras:
 | --- | --- | --- | --- | --- | --- |
 | `clip` | Instancia del modelo CLIP utilizada para la tokenización y codificación de texto, el componente central para convertir texto en un formato comprensible para el modelo | CLIP | Requerido | - | - |
 | `ascore` | Controla la calidad visual y la estética de las imágenes generadas, similar a establecer estándares de calidad para una obra de arte:<br/>- Puntuaciones altas (7.5-8.5): Busca efectos más refinados y ricos en detalles<br/>- Puntuaciones medias (6.0-7.0): Control de calidad equilibrado<br/>- Puntuaciones bajas (2.0-3.0): Adecuado para indicaciones negativas | FLOAT | Opcional | 6.0 | 0.0-1000.0 |
-| `width` | Especifica el ancho de la imagen de salida (píxeles), debe ser múltiplo de 8. SDXL funciona mejor cuando el número total de píxeles se acerca a 1024×1024 (aproximadamente 1M de píxeles) | INT | Requerido | 1024 | 64-16384 |
-| `height` | Especifica la altura de la imagen de salida (píxeles), debe ser múltiplo de 8. SDXL funciona mejor cuando el número total de píxeles se acerca a 1024×1024 (aproximadamente 1M de píxeles) | INT | Requerido | 1024 | 64-16384 |
-| `text` | Descripción de la indicación de texto, admite entrada multilínea y sintaxis de indicación dinámica. En Refiner, las indicaciones de texto deben centrarse más en describir la calidad visual deseada y las características de detalle | STRING | Requerido | - | - |
+| `ancho` | Especifica el ancho de la imagen de salida (píxeles), debe ser múltiplo de 8. SDXL funciona mejor cuando el número total de píxeles se acerca a 1024×1024 (aproximadamente 1M de píxeles) | INT | Requerido | 1024 | 64-16384 |
+| `alto` | Especifica la altura de la imagen de salida (píxeles), debe ser múltiplo de 8. SDXL funciona mejor cuando el número total de píxeles se acerca a 1024×1024 (aproximadamente 1M de píxeles) | INT | Requerido | 1024 | 64-16384 |
+| `texto` | Descripción de la indicación de texto, admite entrada multilínea y sintaxis de indicación dinámica. En Refiner, las indicaciones de texto deben centrarse más en describir la calidad visual deseada y las características de detalle | STRING | Requerido | - | - |
 
 ## Salidas
 

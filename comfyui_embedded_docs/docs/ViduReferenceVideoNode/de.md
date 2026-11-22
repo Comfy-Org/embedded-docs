@@ -6,7 +6,7 @@ Der Vidu Reference Video Node generiert Videos aus mehreren Referenzbildern und 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `model` | Modellname für die Videoerzeugung (Standard: "viduq1") | COMBO | Ja | `"viduq1"` |
+| `Modell` | Modellname für die Videoerzeugung (Standard: "viduq1") | COMBO | Ja | `"viduq1"` |
 | `images` | Bilder, die als Referenzen verwendet werden, um ein Video mit konsistenten Subjekten zu generieren (maximal 7 Bilder) | IMAGE | Ja | - |
 | `prompt` | Eine textuelle Beschreibung für die Videoerzeugung | STRING | Ja | - |
 | `duration` | Dauer des Ausgabevideos in Sekunden (Standard: 5) | INT | Nein | 5-5 |

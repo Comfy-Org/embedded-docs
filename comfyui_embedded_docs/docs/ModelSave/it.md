@@ -6,8 +6,8 @@ Il nodo ModelSave salva un MODEL nell'archiviazione del computer come file di ch
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello da salvare su disco | MODEL | Sì | - |
-| `filename_prefix` | Il prefisso del nome file e del percorso per il file del modello salvato (predefinito: "diffusion_models/ComfyUI") | STRING | Sì | - |
+| `modello` | Il modello da salvare su disco | MODEL | Sì | - |
+| `prefisso_nome_file` | Il prefisso del nome file e del percorso per il file del modello salvato (predefinito: "diffusion_models/ComfyUI") | STRING | Sì | - |
 | `prompt` | Informazioni del prompt del workflow (fornite automaticamente) | PROMPT | No | - |
 | `extra_pnginfo` | Metadati aggiuntivi del workflow (forniti automaticamente) | EXTRA_PNGINFO | No | - |
 

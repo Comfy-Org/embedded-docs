@@ -6,14 +6,14 @@ Il nodo HunyuanVideo15ImageToVideo prepara i dati di condizionamento e dello spa
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `positive` | I prompt di condizionamento positivi che descrivono ciò che il video dovrebbe contenere. | CONDITIONING | Sì | - |
-| `negative` | I prompt di condizionamento negativi che descrivono ciò che il video dovrebbe evitare. | CONDITIONING | Sì | - |
+| `positivo` | I prompt di condizionamento positivi che descrivono ciò che il video dovrebbe contenere. | CONDITIONING | Sì | - |
+| `negativo` | I prompt di condizionamento negativi che descrivono ciò che il video dovrebbe evitare. | CONDITIONING | Sì | - |
 | `vae` | Il modello VAE (Autoencoder Variazionale) utilizzato per codificare l'immagine iniziale nello spazio latente. | VAE | Sì | - |
-| `width` | La larghezza dei fotogrammi del video di output in pixel. Deve essere divisibile per 16. (predefinito: 848) | INT | Sì | 16 a MAX_RESOLUTION, passo: 16 |
-| `height` | L'altezza dei fotogrammi del video di output in pixel. Deve essere divisibile per 16. (predefinito: 480) | INT | Sì | 16 a MAX_RESOLUTION, passo: 16 |
-| `length` | Il numero totale di fotogrammi nella sequenza video. I valori aumentano a passi di 4 partendo da 1 (1, 5, 9, 13, ...). (predefinito: 33) | INT | Sì | 1 a MAX_RESOLUTION, passo: 4 |
-| `batch_size` | Il numero di sequenze video da generare in un singolo batch. (predefinito: 1) | INT | Sì | 1 a 4096 |
-| `start_image` | Un'immagine iniziale opzionale per inizializzare la generazione del video. Se fornita, viene codificata e usata per condizionare i primi fotogrammi. Vengono usati solo i primi `length` fotogrammi dell'immagine. | IMAGE | No | - |
+| `larghezza` | La larghezza dei fotogrammi del video di output in pixel. Deve essere divisibile per 16. (predefinito: 848) | INT | Sì | 16 a MAX_RESOLUTION, passo: 16 |
+| `altezza` | L'altezza dei fotogrammi del video di output in pixel. Deve essere divisibile per 16. (predefinito: 480) | INT | Sì | 16 a MAX_RESOLUTION, passo: 16 |
+| `lunghezza` | Il numero totale di fotogrammi nella sequenza video. I valori aumentano a passi di 4 partendo da 1 (1, 5, 9, 13, ...). (predefinito: 33) | INT | Sì | 1 a MAX_RESOLUTION, passo: 4 |
+| `dimensione batch` | Il numero di sequenze video da generare in un singolo batch. (predefinito: 1) | INT | Sì | 1 a 4096 |
+| `immagine iniziale` | Un'immagine iniziale opzionale per inizializzare la generazione del video. Se fornita, viene codificata e usata per condizionare i primi fotogrammi. Vengono usati solo i primi `length` fotogrammi dell'immagine. | IMAGE | No | - |
 | `clip_vision_output` | Embedding di visione CLIP opzionali per fornire un condizionamento visivo aggiuntivo alla generazione. | CLIP_VISION_OUTPUT | No | - |
 
 **Nota:** Quando viene fornita una `start_image`, viene automaticamente ridimensionata per corrispondere a `width` e `height` specificati usando l'interpolazione bilineare. Vengono usati i primi `length` fotogrammi del batch di immagini, e vengono codificati solo i primi 3 canali di colore di ciascun fotogramma. L'immagine codificata viene quindi aggiunta sia al condizionamento `positive` sia a quello `negative` come `concat_latent_image` con una corrispondente `concat_mask`. La maschera è impostata a 0.0 per i fotogrammi coperti dall'immagine iniziale e a 1.0 per i fotogrammi rimanenti. Quando viene fornito un `clip_vision_output`, viene anch'esso aggiunto sia al condizionamento `positive` sia a quello `negative`.

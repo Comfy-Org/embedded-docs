@@ -6,7 +6,7 @@ Il nodo **ColorToRGBInt** converte un colore fornito in formato esadecimale (com
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `color` | Un valore di colore nel formato esadecimale `#RRGGBB` o `#RRGGBBAA`. Deve essere lungo 7 o 9 caratteri e iniziare con `#`. | COLOR | Sì | `#RRGGBB`<br>`#RRGGBBAA` |
+| `colore` | Un valore di colore nel formato esadecimale `#RRGGBB` o `#RRGGBBAA`. Deve essere lungo 7 o 9 caratteri e iniziare con `#`. | COLOR | Sì | `#RRGGBB`<br>`#RRGGBBAA` |
 
 **Nota:** La stringa di input `color` deve seguire il formato `#RRGGBB` o `#RRGGBBAA`. Se non è lunga 7 o 9 caratteri, non inizia con `#` o contiene caratteri esadecimali non validi, il nodo genera un errore.
 

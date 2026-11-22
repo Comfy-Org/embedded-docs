@@ -6,15 +6,15 @@ Der Node Wan Reference to Video verwendet die visuelle Erscheinung und Stimme au
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das spezifische KI-Modell, das für die Videogenerierung verwendet werden soll. | COMBO | Ja | `"wan2.6-r2v"` |
-| `prompt` | Eine Beschreibung der Elemente und visuellen Merkmale für das neue Video. Unterstützt Englisch und Chinesisch. Verwenden Sie Bezeichner wie `character1` und `character2`, um auf die Charaktere aus den Referenzvideos zu verweisen. | STRING | Ja | - |
+| `Modell` | Das spezifische KI-Modell, das für die Videogenerierung verwendet werden soll. | COMBO | Ja | `"wan2.6-r2v"` |
+| `Prompt` | Eine Beschreibung der Elemente und visuellen Merkmale für das neue Video. Unterstützt Englisch und Chinesisch. Verwenden Sie Bezeichner wie `character1` und `character2`, um auf die Charaktere aus den Referenzvideos zu verweisen. | STRING | Ja | - |
 | `negative_prompt` | Eine Beschreibung von Elementen oder Merkmalen, die im generierten Video vermieden werden sollen. | STRING | Nein | - |
-| `reference_videos` | Eine Liste von Videoeingaben, die als Referenzen für Charaktererscheinung und Stimme verwendet werden. Sie müssen mindestens ein Video angeben. Jedem Video kann ein Name wie `character1`, `character2` oder `character3` zugewiesen werden. | AUTOGROW | Ja | - |
-| `size` | Die Auflösung und das Seitenverhältnis für das Ausgabevideo. | COMBO | Ja | `"720p: 1:1 (960x960)"`<br>`"720p: 16:9 (1280x720)"`<br>`"720p: 9:16 (720x1280)"`<br>`"720p: 4:3 (1088x832)"`<br>`"720p: 3:4 (832x1088)"`<br>`"1080p: 1:1 (1440x1440)"`<br>`"1080p: 16:9 (1920x1080)"`<br>`"1080p: 9:16 (1080x1920)"`<br>`"1080p: 4:3 (1632x1248)"`<br>`"1080p: 3:4 (1248x1632)"` |
-| `duration` | Die Länge des generierten Videos in Sekunden (Standard: 5). | INT | Ja | 5 bis 10 |
-| `seed` | Ein zufälliger Seed-Wert für reproduzierbare Ergebnisse. Ein Wert von 0 erzeugt einen zufälligen Seed. | INT | Nein | 0 bis 2147483647 |
-| `shot_type` | Gibt an, ob das generierte Video eine einzelne durchgehende Aufnahme ist oder mehrere Aufnahmen mit Schnitten enthält. | COMBO | Ja | `"single"`<br>`"multi"` |
-| `watermark` | Wenn aktiviert, wird dem endgültigen Video ein KI-generiertes Wasserzeichen hinzugefügt (Standard: False). | BOOLEAN | Nein | - |
+| `Referenzvideos` | Eine Liste von Videoeingaben, die als Referenzen für Charaktererscheinung und Stimme verwendet werden. Sie müssen mindestens ein Video angeben. Jedem Video kann ein Name wie `character1`, `character2` oder `character3` zugewiesen werden. | AUTOGROW | Ja | - |
+| `Größe` | Die Auflösung und das Seitenverhältnis für das Ausgabevideo. | COMBO | Ja | `"720p: 1:1 (960x960)"`<br>`"720p: 16:9 (1280x720)"`<br>`"720p: 9:16 (720x1280)"`<br>`"720p: 4:3 (1088x832)"`<br>`"720p: 3:4 (832x1088)"`<br>`"1080p: 1:1 (1440x1440)"`<br>`"1080p: 16:9 (1920x1080)"`<br>`"1080p: 9:16 (1080x1920)"`<br>`"1080p: 4:3 (1632x1248)"`<br>`"1080p: 3:4 (1248x1632)"` |
+| `Dauer` | Die Länge des generierten Videos in Sekunden (Standard: 5). | INT | Ja | 5 bis 10 |
+| `Seed` | Ein zufälliger Seed-Wert für reproduzierbare Ergebnisse. Ein Wert von 0 erzeugt einen zufälligen Seed. | INT | Nein | 0 bis 2147483647 |
+| `Aufnahmetyp` | Gibt an, ob das generierte Video eine einzelne durchgehende Aufnahme ist oder mehrere Aufnahmen mit Schnitten enthält. | COMBO | Ja | `"single"`<br>`"multi"` |
+| `Wasserzeichen` | Wenn aktiviert, wird dem endgültigen Video ein KI-generiertes Wasserzeichen hinzugefügt (Standard: False). | BOOLEAN | Nein | - |
 
 **Einschränkungen:**
 

@@ -8,7 +8,7 @@ La sélection d’un `model` révèle les paramètres spécifiques à ce modèle
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `model` | Modèle à utiliser. `heygen-voice-1-turbo` est plus rapide et moins cher. La sélection d’un modèle révèle les paramètres qui lui sont spécifiques : `voice_id`, `text`, `language` et `expressiveness_boost`. | DYNAMIC_COMBO | Oui | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `modèle` | Modèle à utiliser. `heygen-voice-1-turbo` est plus rapide et moins cher. La sélection d’un modèle révèle les paramètres qui lui sont spécifiques : `voice_id`, `text`, `language` et `expressiveness_boost`. | DYNAMIC_COMBO | Oui | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `voice_id` | ID d’une voix HeyGen, par exemple issue de la bibliothèque de voix HeyGen (par défaut : vide). | STRING | Oui | N/A |
 | `text` | Texte à prononcer. Jusqu’à 5000 caractères ; la synthèse vocale de plus d’environ 12 minutes échoue, il faut donc découper les textes chinois ou japonais très longs (par défaut : vide). | STRING | Oui | 1 à 5000 caractères |
 | `language` | Langue du texte. Définissez-la pour des langues proches telles que le serbe ou le malais, que la détection automatique peut confondre (par défaut : `"auto"`). | COMBO | Oui | `"auto"`<br>Plusieurs préréglages de langue |

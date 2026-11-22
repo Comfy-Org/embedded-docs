@@ -8,9 +8,9 @@
 
 | פרמטר | תיאור | סוג נתונים | נדרש | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `model` | המודל שבו יש להשתמש ליצירה. מודלי recraftv4_styles בנויים ליצירה עקבית בסגנון ותמיד דורשים style_id או style_references. `recraftv4_1_flash` הוא המודל המהיר והזול ביותר ואינו תומך בסגנונות כלל. | DYNAMIC_COMBO | כן | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
-| `prompt` | פרומפט ליצירת התמונה. מקסימום 10,000 תווים. | STRING | כן | 1 עד 10,000 תווים |
-| `negative_prompt` | קלט זה מתעלמים ממנו: פרומפט שלילי אינו נתמך על ידי מודלי Recraft V4 ו-V4.1. | STRING | כן | N/A |
+| `מודל` | המודל שבו יש להשתמש ליצירה. מודלי recraftv4_styles בנויים ליצירה עקבית בסגנון ותמיד דורשים style_id או style_references. `recraftv4_1_flash` הוא המודל המהיר והזול ביותר ואינו תומך בסגנונות כלל. | DYNAMIC_COMBO | כן | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `פרומפט` | פרומפט ליצירת התמונה. מקסימום 10,000 תווים. | STRING | כן | 1 עד 10,000 תווים |
+| `הנחיה שלילית` | קלט זה מתעלמים ממנו: פרומפט שלילי אינו נתמך על ידי מודלי Recraft V4 ו-V4.1. | STRING | כן | N/A |
 | `n` | מספר התמונות ליצירה (ברירת מחדל: 1). | INT | כן | 1 עד 6 |
 | `seed` | Seed לקביעה אם הצומת צריך לרוץ מחדש; התוצאות בפועל אינן דטרמיניסטיות ללא תלות ב-seed (ברירת מחדל: 0). | INT | כן | 0 עד 18446744073709551615 |
 | `recraft_controls` | בקרות נוספות אופציונליות על היצירה באמצעות צומת Recraft Controls. | CUSTOM | לא | N/A |

@@ -6,11 +6,11 @@ Il nodo ResizeAndPadImage ridimensiona un'immagine per adattarla alle dimensioni
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | L'immagine di input da ridimensionare e a cui aggiungere padding | IMAGE | Sì | - |
-| `target_width` | La larghezza desiderata dell'immagine di output (predefinito: 512) | INT | Sì | da 1 a MAX_RESOLUTION |
-| `target_height` | L'altezza desiderata dell'immagine di output (predefinito: 512) | INT | Sì | da 1 a MAX_RESOLUTION |
-| `padding_color` | Il colore da usare per le aree di padding attorno all'immagine ridimensionata (predefinito: "white") | COMBO | Sì | "white"<br>"black" |
-| `interpolation` | Il metodo di interpolazione usato per ridimensionare l'immagine (predefinito: "area") | COMBO | Sì | "area"<br>"bicubic"<br>"nearest-exact"<br>"bilinear"<br>"lanczos" |
+| `immagine` | L'immagine di input da ridimensionare e a cui aggiungere padding | IMAGE | Sì | - |
+| `larghezza_obiettivo` | La larghezza desiderata dell'immagine di output (predefinito: 512) | INT | Sì | da 1 a MAX_RESOLUTION |
+| `altezza_obiettivo` | L'altezza desiderata dell'immagine di output (predefinito: 512) | INT | Sì | da 1 a MAX_RESOLUTION |
+| `colore_bordo` | Il colore da usare per le aree di padding attorno all'immagine ridimensionata (predefinito: "white") | COMBO | Sì | "white"<br>"black" |
+| `interpolazione` | Il metodo di interpolazione usato per ridimensionare l'immagine (predefinito: "area") | COMBO | Sì | "area"<br>"bicubic"<br>"nearest-exact"<br>"bilinear"<br>"lanczos" |
 
 ## Output
 

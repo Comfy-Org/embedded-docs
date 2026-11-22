@@ -6,7 +6,7 @@ Divide un'immagine nei suoi canali rosso, verde e blu e restituisce il canale al
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `image` | L'immagine da dividere. Un input a canale singolo (in scala di grigi) viene espanso in modo che tutti e tre gli output colore contengano gli stessi dati. | IMAGE | Sì | - |
+| `immagine` | L'immagine da dividere. Un input a canale singolo (in scala di grigi) viene espanso in modo che tutti e tre gli output colore contengano gli stessi dati. | IMAGE | Sì | - |
 
 ## Output
 

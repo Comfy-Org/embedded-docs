@@ -10,7 +10,7 @@ Dieser Node erkennt Modelle, die sich im Ordner `ComfyUI/models/text_encoders` b
 | --- | --- | --- |
 | `clip_name1` | Gibt den Namen des ersten zu ladenden CLIP-Modells an. Dieser Parameter ist entscheidend, um das richtige Modell aus einer vordefinierten Liste verfügbarer CLIP-Modelle zu identifizieren und abzurufen. | COMBO[STRING] |
 | `clip_name2` | Gibt den Namen des zweiten zu ladenden CLIP-Modells an. Dieser Parameter ermöglicht das Laden eines zweiten eigenständigen CLIP-Modells für vergleichende oder integrative Analysen zusammen mit dem ersten Modell. | COMBO[STRING] |
-| `type` | Wählen Sie aus „sdxl“, „sd3“, „flux“, um sich an verschiedene Modelle anzupassen. | `option` |
+| `Typ` | Wählen Sie aus „sdxl“, „sd3“, „flux“, um sich an verschiedene Modelle anzupassen. | `option` |
 
 * Die Reihenfolge des Ladens hat keinen Einfluss auf das Ausgabeergebnis
 

@@ -6,12 +6,12 @@ El nodo Kling Text to Video with Audio genera un video corto a partir de una des
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `model_name` | El modelo de IA específico que se utilizará para la generación de video. | COMBO | Sí | `"kling-v2-6"` |
+| `nombre_del_modelo` | El modelo de IA específico que se utilizará para la generación de video. | COMBO | Sí | `"kling-v2-6"` |
 | `prompt` | Prompt de texto positivo. La descripción utilizada para generar el video. Debe tener entre 1 y 2500 caracteres. | STRING | Sí | - |
-| `mode` | El modo operativo para la generación de video. | COMBO | Sí | `"pro"` |
-| `aspect_ratio` | La relación de aspecto deseada (ancho por alto) para el video generado. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `duration` | La duración del video en segundos. | COMBO | Sí | `5`<br>`10` |
-| `generate_audio` | Controla si se genera audio para el video. Cuando está habilitado, la IA creará sonido basado en el prompt (predeterminado: `True`). | BOOLEAN | No | - |
+| `modo` | El modo operativo para la generación de video. | COMBO | Sí | `"pro"` |
+| `relación_de_aspecto` | La relación de aspecto deseada (ancho por alto) para el video generado. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `duración` | La duración del video en segundos. | COMBO | Sí | `5`<br>`10` |
+| `generar_audio` | Controla si se genera audio para el video. Cuando está habilitado, la IA creará sonido basado en el prompt (predeterminado: `True`). | BOOLEAN | No | - |
 
 ## Salidas
 

@@ -28,7 +28,7 @@ Ces entrées apparaissent lorsque `model` est défini sur `gpt-image-2.6-flare` 
 | `qualité` | Qualité de l’image, affecte le coût et le temps de génération (par défaut : `"low"`). | COMBO | Oui | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 | `model.images` | Image(s) de référence facultative(s) pour l’édition d’images. Jusqu’à 16 images. Voir Entrées de référence pour plus de détails. | IMAGE | Non | 0 à 16 |
 | `model.mask` | Masque facultatif pour l’inpainting (les zones blanches seront remplacées). Nécessite exactement une image de référence. | MASK | Non | N/A |
-| `model.complexity` | Dans quelle mesure le modèle planifie l’image avant le rendu. Les valeurs basses renvoient plus rapidement, les valeurs hautes planifient davantage. Par défaut : `"high"`. | COMBO | Oui | `"low"`<br>`"medium"`<br>`"high"` |
+| `complexité` | Dans quelle mesure le modèle planifie l’image avant le rendu. Les valeurs basses renvoient plus rapidement, les valeurs hautes planifient davantage. Par défaut : `"high"`. | COMBO | Oui | `"low"`<br>`"medium"`<br>`"high"` |
 
 ### Entrées gpt-image-2.5-flare et gpt-image-2.5-sunburst
 

@@ -7,7 +7,7 @@ Genera immagini in modo sincrono in base al prompt e alla risoluzione. Questo no
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `prompt` | Prompt per la generazione dell'immagine. (predefinito: "") | STRING | Sì | 1-1000 caratteri |
-| `size` | La dimensione dell'immagine generata. (predefinito: "1024x1024") | COMBO | Sì | "1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" |
+| `dimensione` | La dimensione dell'immagine generata. (predefinito: "1024x1024") | COMBO | Sì | "1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" |
 | `n` | Il numero di immagini da generare. (predefinito: 1) | INT | Sì | 1-6 |
 | `seed` | Seed per determinare se il nodo deve essere rieseguito; i risultati effettivi non sono deterministici indipendentemente dal seed. (predefinito: 0) | INT | Sì | 0-18446744073709551615 |
 | `recraft_style` | Selezione opzionale dello stile per la generazione dell'immagine. Se non fornito, il valore predefinito è lo stile "realistic_image". | RECRAFT_STYLE | No | Più opzioni disponibili |

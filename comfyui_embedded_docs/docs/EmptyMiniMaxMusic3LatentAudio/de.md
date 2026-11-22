@@ -6,7 +6,7 @@ Dieser Node erstellt ein leeres (mit Nullen gefülltes) Audio-Latent für das Mi
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `seconds` | Die Dauer des Audio-Latents in Sekunden (Standard: 120.0). Der Wert wird in Audioframes umgerechnet und auf die vom Modell unterstützten Dauerbeschränkungen begrenzt. | FLOAT | Ja | 0.04 bis (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND), Schritt 0.04 |
+| `Sekunden` | Die Dauer des Audio-Latents in Sekunden (Standard: 120.0). Der Wert wird in Audioframes umgerechnet und auf die vom Modell unterstützten Dauerbeschränkungen begrenzt. | FLOAT | Ja | 0.04 bis (MAX_AUDIO_FRAMES / AUDIO_FRAMES_PER_SECOND), Schritt 0.04 |
 | `batch_size` | Die Anzahl der in einem Batch zu erzeugenden Audio-Latents (Standard: 1). | INT | Ja | 1 bis 4096 |
 
 Hinweis: Der Wert `seconds` wird auf den nächstgelegenen Audioframe gerundet und auf mindestens 1 Frame sowie maximal `MAX_AUDIO_FRAMES` Frames begrenzt, sodass die tatsächliche Latent-Länge geringfügig vom exakt eingegebenen Wert abweichen kann.

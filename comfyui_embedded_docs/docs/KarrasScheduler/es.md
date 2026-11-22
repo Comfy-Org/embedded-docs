@@ -7,8 +7,8 @@ El nodo KarrasScheduler está diseñado para generar una secuencia de niveles de
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
 | `pasos` | Especifica el número de pasos en el programador de ruido, afectando la granularidad de la secuencia de sigmas generada. | INT |
-| `sigma_max` | El valor máximo de sigma en el programador de ruido, estableciendo el límite superior de los niveles de ruido. | FLOAT |
-| `sigma_min` | El valor mínimo de sigma en el programador de ruido, estableciendo el límite inferior de los niveles de ruido. | FLOAT |
+| `sigma_máximo` | El valor máximo de sigma en el programador de ruido, estableciendo el límite superior de los niveles de ruido. | FLOAT |
+| `sigma_mínimo` | El valor mínimo de sigma en el programador de ruido, estableciendo el límite inferior de los niveles de ruido. | FLOAT |
 | `rho` | Un parámetro que controla la forma de la curva del programador de ruido, influyendo en cómo los niveles de ruido progresan desde sigma_min hasta sigma_max. | FLOAT |
 
 ## Salidas

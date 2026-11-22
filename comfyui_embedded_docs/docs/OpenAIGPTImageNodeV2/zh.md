@@ -28,7 +28,7 @@
 | `质量` | 图像质量，影响成本和生成时间（默认：`"low"`）。 | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 | `model.images` | 用于图像编辑的可选参考图像。最多 16 张图像。详情见参考输入。 | IMAGE | 否 | 0 到 16 |
 | `model.mask` | 用于图像修复的可选遮罩（白色区域将被替换）。需要恰好一张参考图像。 | MASK | 否 | N/A |
-| `model.complexity` | 模型在渲染前对图像进行规划的程度。较低的值返回更快，较高的值规划更多。默认：`"high"`。 | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
+| `复杂度` | 模型在渲染前对图像进行规划的程度。较低的值返回更快，较高的值规划更多。默认：`"high"`。 | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
 
 ### gpt-image-2.5-flare 和 gpt-image-2.5-sunburst 输入
 

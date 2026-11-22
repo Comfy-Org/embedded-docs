@@ -18,15 +18,15 @@ Dieser Node erzeugt Videos mit dem Kling V3-Modell. Er unterstützt Text-zu-Vide
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model.resolution` | Die Auflösung für das erzeugte Video. Standard ist `"1080p"`. | COMBO | Ja | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | Das Seitenverhältnis für das erzeugte Video. Wird im Bild-zu-Video-Modus ignoriert. | COMBO | Ja | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `resolution` | Die Auflösung für das erzeugte Video. Standard ist `"1080p"`. | COMBO | Ja | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `aspect_ratio` | Das Seitenverhältnis für das erzeugte Video. Wird im Bild-zu-Video-Modus ignoriert. | COMBO | Ja | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
 ### kling-3.0-turbo Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model.resolution` | Die Auflösung für das erzeugte Video. Standard ist `"720p"`. | COMBO | Ja | `"1080p"`<br>`"720p"` |
-| `model.aspect_ratio` | Das Seitenverhältnis für das erzeugte Video. Wird im Bild-zu-Video-Modus ignoriert. | COMBO | Ja | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `resolution` | Die Auflösung für das erzeugte Video. Standard ist `"720p"`. | COMBO | Ja | `"1080p"`<br>`"720p"` |
+| `aspect_ratio` | Das Seitenverhältnis für das erzeugte Video. Wird im Bild-zu-Video-Modus ignoriert. | COMBO | Ja | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
 
 ### Multi-Shot-Eingaben
 

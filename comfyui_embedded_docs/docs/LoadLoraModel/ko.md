@@ -6,8 +6,8 @@ diffusion 모델에 LoRA 스택을 단일 노드에서 적용합니다. `loras`�
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `model` | LoRA가 적용될 diffusion 모델입니다. | MODEL | 예 | - |
-| `loras` | 행 순서(`loras.0`, `loras.1` 등)대로 모델에 적용되는 확장 가능한 LoRA 그룹입니다. LoRA마다 한 행을 추가합니다. 각 행은 파일, 강도 및 켜기/끄기 스위치를 가집니다. | DYNAMIC_GROUP | 예 | 1~20개 행 |
+| `모델` | LoRA가 적용될 diffusion 모델입니다. | MODEL | 예 | - |
+| `LoRA` | 행 순서(`loras.0`, `loras.1` 등)대로 모델에 적용되는 확장 가능한 LoRA 그룹입니다. LoRA마다 한 행을 추가합니다. 각 행은 파일, 강도 및 켜기/끄기 스위치를 가집니다. | DYNAMIC_GROUP | 예 | 1~20개 행 |
 
 ### `loras` 행 필드
 

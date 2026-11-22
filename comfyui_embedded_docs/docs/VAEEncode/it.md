@@ -6,7 +6,7 @@ Questo nodo è progettato per codificare le immagini in una rappresentazione nel
 
 | Parametro | Descrizione | Tipo di dati |
 | --- | --- | --- |
-| `pixels` | Il parametro 'pixels' rappresenta i dati dell'immagine da codificare nello spazio latente. Svolge un ruolo cruciale nel determinare la rappresentazione latente di output, fungendo da input diretto per il processo di codifica. | `IMAGE` |
+| `pixel` | Il parametro 'pixels' rappresenta i dati dell'immagine da codificare nello spazio latente. Svolge un ruolo cruciale nel determinare la rappresentazione latente di output, fungendo da input diretto per il processo di codifica. | `IMAGE` |
 | `vae` | Il parametro 'vae' specifica il modello VAE (autoencoder variazionale) da utilizzare per codificare i dati dell'immagine nello spazio latente. È essenziale per definire il meccanismo di codifica e le caratteristiche della rappresentazione latente generata. | VAE |
 
 ## Output

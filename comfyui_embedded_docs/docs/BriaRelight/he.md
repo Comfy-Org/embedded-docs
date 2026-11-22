@@ -8,10 +8,10 @@
 
 | פרמטר | תיאור | סוג נתונים | נדרש | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `image` | התמונה שאת התאורה שלה משנים. כל ערוץ אלפא נשמט לפני העלאת התמונה. | IMAGE | כן | - |
+| `תמונה` | התמונה שאת התאורה שלה משנים. כל ערוץ אלפא נשמט לפני העלאת התמונה. | IMAGE | כן | - |
 | `light_type` | אווירת התאורה להחלה. | COMBO | כן | `"midday"`<br>`"blue hour light"`<br>`"low-angle sunlight"`<br>`"sunrise light"`<br>`"spotlight on subject"`<br>`"overcast light"`<br>`"soft overcast daylight lighting"`<br>`"cloud-filtered lighting"`<br>`"fog-diffused lighting"`<br>`"moonlight lighting"`<br>`"starlight nighttime"`<br>`"soft bokeh lighting"`<br>`"harsh studio lighting"` |
 | `light_direction` | מאיפה מגיע האור. אווירות של תאורה קשה כגון midday, spotlight on subject ו-harsh studio lighting מגיבות לכך יותר מכל. | COMBO | כן | `"front"`<br>`"side"`<br>`"bottom"`<br>`"top-down"` |
-| `moderation` | הגדרות מודרציה. בחר `"true"` כדי לחשוף את אפשרויות המודרציה, או `"false"` כדי לפעול בלעדיהן. | DYNAMIC_COMBO | כן | `"false"`<br>`"true"` |
+| `ניהול תוכן` | הגדרות מודרציה. בחר `"true"` כדי לחשוף את אפשרויות המודרציה, או `"false"` כדי לפעול בלעדיהן. | DYNAMIC_COMBO | כן | `"false"`<br>`"true"` |
 
 ### קלטי מודרציה
 

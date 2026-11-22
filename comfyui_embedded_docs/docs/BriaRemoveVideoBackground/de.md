@@ -6,9 +6,9 @@ Dieser Node entfernt den Hintergrund aus einem Video mithilfe des Bria AI-Dienst
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `video` | Die Eingabevideodatei, aus der der Hintergrund entfernt wird. | VIDEO | Ja | N/A |
+| `Video` | Die Eingabevideodatei, aus der der Hintergrund entfernt wird. | VIDEO | Ja | N/A |
 | `background_color` | Hintergrundfarbe für das Ausgabevideo. | COMBO | Ja | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
 
 **Hinweis:** Das Eingabevideo darf eine Dauer von höchstens 60 Sekunden haben. Die Ergebnisse sind auch dann nicht deterministisch, wenn der Seed-Wert unverändert bleibt.
 

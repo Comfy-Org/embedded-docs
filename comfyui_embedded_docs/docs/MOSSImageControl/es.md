@@ -6,14 +6,14 @@ Agrega los mapas de regiones de color y de profundidad de un adaptador de contro
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `positive` | Condicionamiento positivo al que se adjunta la señal de control. | CONDITIONING | Sí | N/A |
-| `negative` | Condicionamiento negativo al que se adjunta la señal de control. | CONDITIONING | Sí | N/A |
+| `positivo` | Condicionamiento positivo al que se adjunta la señal de control. | CONDITIONING | Sí | N/A |
+| `negativo` | Condicionamiento negativo al que se adjunta la señal de control. | CONDITIONING | Sí | N/A |
 | `vae` | VAE usado para codificar los mapas en latentes. | VAE | Sí | N/A |
-| `color_map` | Un color plano por región, al tamaño de salida. Los colores solo son IDs de región. | IMAGE | No | N/A |
+| `mapa de color` | Un color plano por región, al tamaño de salida. Los colores solo son IDs de región. | IMAGE | No | N/A |
 | `depth_map` | Mapa de profundidad al tamaño de salida; lo cercano es blanco. | IMAGE | No | N/A |
-| `strength` | Escala la contribución de los mapas a los tokens de imagen. 0.0 equivale a no usar mapas; 1.0 es la intensidad entrenada (predeterminado: 1.0). | FLOAT | Sí | 0.0 a 10.0 (paso 0.01) |
-| `start_percent` | Porcentaje de muestreo en el que comienza el control (predeterminado: 0.0). | FLOAT | Sí | 0.0 a 1.0 (paso 0.001) |
-| `end_percent` | Porcentaje de muestreo en el que termina el control. Terminar antes conserva la disposición y la profundidad mientras el resto de los pasos relaja las formas (predeterminado: 1.0). | FLOAT | Sí | 0.0 a 1.0 (paso 0.001) |
+| `intensidad` | Escala la contribución de los mapas a los tokens de imagen. 0.0 equivale a no usar mapas; 1.0 es la intensidad entrenada (predeterminado: 1.0). | FLOAT | Sí | 0.0 a 10.0 (paso 0.01) |
+| `porcentaje inicial` | Porcentaje de muestreo en el que comienza el control (predeterminado: 0.0). | FLOAT | Sí | 0.0 a 1.0 (paso 0.001) |
+| `porcentaje final` | Porcentaje de muestreo en el que termina el control. Terminar antes conserva la disposición y la profundidad mientras el resto de los pasos relaja las formas (predeterminado: 1.0). | FLOAT | Sí | 0.0 a 1.0 (paso 0.001) |
 
 **Nota:** Conecta al menos uno de `color_map` y `depth_map`; sin ninguno de los dos, el nodo devuelve los condicionamientos sin cambios. Un mapa faltante se reemplaza por ceros, por lo que las configuraciones solo con color y solo con profundidad funcionan. Cuando los dos mapas difieren en tamaño, el más pequeño se escala al tamaño del otro. Este nodo está marcado como experimental en ComfyUI.
 

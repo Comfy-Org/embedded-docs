@@ -10,15 +10,15 @@ Il nodo TextGenerate usa un modello CLIP per creare testo basato sul prompt dell
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `sampling_mode` | Controlla se viene usato il campionamento casuale durante la generazione del testo. Quando è impostato su "on", diventano disponibili parametri di campionamento aggiuntivi. Quando è impostato su "off", il nodo genera testo senza campionamento casuale. | DYNAMIC_COMBO | Sì | `"on"`<br>`"off"` |
+| `modalità_campionamento` | Controlla se viene usato il campionamento casuale durante la generazione del testo. Quando è impostato su "on", diventano disponibili parametri di campionamento aggiuntivi. Quando è impostato su "off", il nodo genera testo senza campionamento casuale. | DYNAMIC_COMBO | Sì | `"on"`<br>`"off"` |
 | `clip` | Il modello CLIP usato per tokenizzare il prompt e generare testo. | CLIP | Sì | N/A |
 | `prompt` | Il prompt testuale che guida la generazione. Questo campo supporta più righe e prompt dinamici. Il valore predefinito è una stringa vuota. | STRING | Sì | N/A |
-| `image` | Un'immagine opzionale che può essere usata insieme al prompt testuale per influenzare il testo generato. | IMAGE | No | N/A |
+| `immagine` | Un'immagine opzionale che può essere usata insieme al prompt testuale per influenzare il testo generato. | IMAGE | No | N/A |
 | `video` | Fotogrammi video come batch di immagini. Si presume siano a 24 FPS; vengono sottocampionati internamente a la frequenza dei fotogrammi del modello. | IMAGE | No | N/A |
 | `audio` | Un input audio opzionale che può essere usato insieme al prompt testuale per influenzare il testo generato. | AUDIO | No | N/A |
-| `max_length` | Il numero massimo di token che il modello genererà. Il valore predefinito è 512. | INT | Sì | 1 a 32768 |
-| `thinking` | Opera in modalità thinking se il modello la supporta. Il valore predefinito è False. | BOOLEAN | No | True o False |
-| `use_default_template` | Usa il prompt/template di sistema integrato se il modello ne ha uno. Il valore predefinito è True. Questo è un parametro avanzato. | BOOLEAN | No | True o False |
+| `lunghezza_massima` | Il numero massimo di token che il modello genererà. Il valore predefinito è 512. | INT | Sì | 1 a 32768 |
+| `modalità_riflessione` | Opera in modalità thinking se il modello la supporta. Il valore predefinito è False. | BOOLEAN | No | True o False |
+| `usa_template_predefinito` | Usa il prompt/template di sistema integrato se il modello ne ha uno. Il valore predefinito è True. Questo è un parametro avanzato. | BOOLEAN | No | True o False |
 | `mtp` | Decodifica speculativa con la testa multi-token-prediction del checkpoint. Non ha effetto senza pesi MTP. `"auto"` adatta profondità e ampiezza della bozza in base alle corrispondenze di token osservate e al costo di esecuzione, `"2"`–`"5"` fissano una profondità costante, le modalità `tree` fissano sia l'ampiezza sia la profondità. L'output campionato rimane correttamente distribuito ma differisce dall'output non-MTP per lo stesso seed (predefinito: `"auto"`). | COMBO | No | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"tree2s1"`<br>`"tree2s2"`<br>`"tree3s1"`<br>`"tree4s1m8"` |
 | `system_prompt` | Sostituisce il prompt di sistema nel template chat del modello. Viene ignorato quando il template predefinito non viene usato. Collega un input STRING invece di digitare nel nodo (predefinito: vuoto). | STRING | No | N/A |
 

@@ -6,7 +6,7 @@ VEED로 비디오에서 피사체를 잘라내고 프레임과 알파 마스크�
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `model` | 사용할 세그멘테이션 모델: 모든 배경에서 최상의 가장자리와 최대 3840x2160 출력에는 `"standard"`, 최대 1920x1080의 더 빠른 결과에는 `"fast"`, 최대 3840x2160의 녹색 배경을 키아웃하려면 `"green screen"`입니다. 더 큰 비디오는 다운스케일됩니다. 옵션을 선택하면 해당 매개변수가 표시됩니다. | DYNAMIC_COMBO | 예 | `"standard"`<br>`"fast"`<br>`"green screen"` |
+| `모델` | 사용할 세그멘테이션 모델: 모든 배경에서 최상의 가장자리와 최대 3840x2160 출력에는 `"standard"`, 최대 1920x1080의 더 빠른 결과에는 `"fast"`, 최대 3840x2160의 녹색 배경을 키아웃하려면 `"green screen"`입니다. 더 큰 비디오는 다운스케일됩니다. 옵션을 선택하면 해당 매개변수가 표시됩니다. | DYNAMIC_COMBO | 예 | `"standard"`<br>`"fast"`<br>`"green screen"` |
 | `video` | 피사체를 잘라낼 비디오입니다. 최대 60초입니다. | VIDEO | 예 | 최대 60초 |
 | `refine_foreground_edges` | 머리카락, 털 및 미세한 디테일의 가장자리를 더 깔끔하게 만듭니다. 끄면 가격이 낮아집니다. `"standard"` 및 `"fast"`에서 사용할 수 있습니다(기본값: True). | BOOLEAN | 예 | false<br>true |
 | `subject_is_person` | 피사체가 사물이나 동물일 때 끕니다. `"standard"` 및 `"fast"`에서 사용할 수 있습니다(기본값: True). | BOOLEAN | 예 | false<br>true |

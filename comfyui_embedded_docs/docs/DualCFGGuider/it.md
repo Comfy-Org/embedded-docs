@@ -6,13 +6,13 @@ Il nodo Dual CFG Guider crea un sistema di guida per il campionamento che utiliz
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello da usare per la guida | MODEL | Sì | - |
+| `modello` | Il modello da usare per la guida | MODEL | Sì | - |
 | `cond1` | Il primo input di condizionamento positivo | CONDITIONING | Sì | - |
 | `cond2` | Il secondo input di condizionamento, usato come riferimento tra il primo condizionamento positivo e il condizionamento negativo | CONDITIONING | Sì | - |
-| `negative` | L'input di condizionamento negativo | CONDITIONING | Sì | - |
+| `negativo` | L'input di condizionamento negativo | CONDITIONING | Sì | - |
 | `cfg_conds` | Scala di guida applicata al primo condizionamento positivo (predefinito: 8.0) | FLOAT | Sì | 0.0 - 100.0 |
 | `cfg_cond2_negative` | Scala di guida applicata tra il secondo condizionamento e il condizionamento negativo (predefinito: 8.0) | FLOAT | Sì | 0.0 - 100.0 |
-| `style` | Lo stile di guida da applicare (predefinito: "regular"). Quando è impostato su "nested", la guida viene applicata in modo annidato | COMBO | Sì | "regular"<br>"nested" |
+| `stile` | Lo stile di guida da applicare (predefinito: "regular"). Quando è impostato su "nested", la guida viene applicata in modo annidato | COMBO | Sì | "regular"<br>"nested" |
 
 Nota: Nello stile `regular`, `cfg_cond2_negative` viene applicato tra `cond2` e `negative`, mentre `cfg_conds` viene applicato tra `cond1` e `cond2`. Nello stile `nested`, `cfg_conds` viene applicato prima tra `cond1` e `cond2`, quindi la previsione risultante viene guidata lontano da `negative` usando `cfg_cond2_negative`.
 

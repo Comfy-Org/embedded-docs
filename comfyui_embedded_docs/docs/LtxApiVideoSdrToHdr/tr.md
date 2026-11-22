@@ -7,7 +7,7 @@ Bir SDR videosunu, aynı çözünürlükte, HLG transfer fonksiyonuna sahip BT.2
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `video` | Dönüştürülecek SDR video; her iki yönde de en fazla 3840x2160. 1080p'de en fazla 273 kare, 1440p'de 193 kare ve 4K'da 65 kare. | VIDEO | Evet | - |
-| `seed` | Düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Hayır | 0 ile 4294967295 arası |
+| `tohum` | Düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Hayır | 0 ile 4294967295 arası |
 
 ## Çıktılar
 

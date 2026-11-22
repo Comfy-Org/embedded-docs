@@ -7,7 +7,7 @@ Il nodo SetUnionControlNetType consente di scegliere quale tipo di controllo uti
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `control_net` | La rete di controllo da modificare con una nuova impostazione di tipo | CONTROL_NET | Sì | - |
-| `type` | Il tipo di controllo da applicare. Usa "auto" per il rilevamento automatico del tipo oppure seleziona un tipo di controllo specifico tra le opzioni disponibili (predefinito: "auto") | COMBO | Sì | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/softedge"`<br>`"canny"`<br>`"scribble"`<br>`"seg"`<br>`"tile"`<br>`"inpaint"`<br>`"lineart"`<br>`"blur"`<br>`"mlsd"`<br>`"normalbae"`<br>`"mask"` |
+| `tipo` | Il tipo di controllo da applicare. Usa "auto" per il rilevamento automatico del tipo oppure seleziona un tipo di controllo specifico tra le opzioni disponibili (predefinito: "auto") | COMBO | Sì | `"auto"`<br>`"openpose"`<br>`"depth"`<br>`"hed/pidi/softedge"`<br>`"canny"`<br>`"scribble"`<br>`"seg"`<br>`"tile"`<br>`"inpaint"`<br>`"lineart"`<br>`"blur"`<br>`"mlsd"`<br>`"normalbae"`<br>`"mask"` |
 
 Quando `type` è impostato su `"auto"`, il nodo cancella il tipo di controllo memorizzato in modo che il tipo possa essere rilevato automaticamente. Quando viene selezionato un tipo specifico, il nodo memorizza il tipo di controllo corrispondente nella rete di controllo copiata. La rete di controllo di input non viene mai modificata sul posto; viene invece restituita una copia modificata.
 

@@ -6,8 +6,8 @@ Der Node `ComfyMathExpression` wertet eine mathematische Formel aus, die Sie als
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `expression` | Die mathematische Formel, die ausgewertet werden soll, geschrieben als Text (zum Beispiel `a + b`), wobei die Buchstabennamen der Eingabewerte als Variablen verwendet werden. Mehrzeilige Eingabe. (Standard: `a + b`) | STRING | Ja | N/A |
-| `values` | Erweiterbare Gruppe von Eingabewerten, die die Variablen für den Ausdruck bereitstellt. Jeder Wert, der der Gruppe hinzugefügt wird, erhält automatisch den nächsten kleingeschriebenen Buchstabennamen beginnend bei `a` (`a`, `b`, `c`, ...), und dieser Name kann dann innerhalb von `expression` verwendet werden. Jedes Element akzeptiert eine Zahl (INT oder FLOAT) oder einen booleschen Wert (TRUE/FALSE). | FLOAT, INT, BOOLEAN | Ja | 1 bis 26 Werte, benannt `a` bis `z` |
+| `Ausdruck` | Die mathematische Formel, die ausgewertet werden soll, geschrieben als Text (zum Beispiel `a + b`), wobei die Buchstabennamen der Eingabewerte als Variablen verwendet werden. Mehrzeilige Eingabe. (Standard: `a + b`) | STRING | Ja | N/A |
+| `Werte` | Erweiterbare Gruppe von Eingabewerten, die die Variablen für den Ausdruck bereitstellt. Jeder Wert, der der Gruppe hinzugefügt wird, erhält automatisch den nächsten kleingeschriebenen Buchstabennamen beginnend bei `a` (`a`, `b`, `c`, ...), und dieser Name kann dann innerhalb von `expression` verwendet werden. Jedes Element akzeptiert eine Zahl (INT oder FLOAT) oder einen booleschen Wert (TRUE/FALSE). | FLOAT, INT, BOOLEAN | Ja | 1 bis 26 Werte, benannt `a` bis `z` |
 
 ### Hinweise und Einschränkungen
 

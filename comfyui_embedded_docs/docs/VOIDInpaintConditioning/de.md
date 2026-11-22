@@ -6,15 +6,15 @@ Der Node VOIDInpaintConditioning bereitet die für Inpainting mit CogVideoX-Mode
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `positive` | Die positive Konditionierung, die um die Inpainting-Latent-Informationen erweitert werden soll | CONDITIONING | Ja | - |
-| `negative` | Die negative Konditionierung, die um die Inpainting-Latent-Informationen erweitert werden soll | CONDITIONING | Ja | - |
+| `positiv` | Die positive Konditionierung, die um die Inpainting-Latent-Informationen erweitert werden soll | CONDITIONING | Ja | - |
+| `negativ` | Die negative Konditionierung, die um die Inpainting-Latent-Informationen erweitert werden soll | CONDITIONING | Ja | - |
 | `vae` | Das VAE-Modell, das verwendet wird, um die Maske und das maskierte Video in den latenten Raum zu kodieren | VAE | Ja | - |
-| `video` | Quellvideo-Frames [T, H, W, 3] | IMAGE | Ja | - |
+| `Video` | Quellvideo-Frames [T, H, W, 3] | IMAGE | Ja | - |
 | `quadmask` | Vorverarbeitete Quadmask von VOIDQuadmaskPreprocess [T, H, W] | MASK | Ja | - |
-| `width` | Die Breite, auf die das Video und die Maske skaliert werden (Standard: 672) | INT | Ja | 16 bis MAX_RESOLUTION (Schritt: 8) |
-| `height` | Die Höhe, auf die das Video und die Maske skaliert werden (Standard: 384) | INT | Ja | 16 bis MAX_RESOLUTION (Schritt: 8) |
-| `length` | Anzahl der zu verarbeitenden Pixel-Frames. Für CogVideoX-Fun-V1.5 (patch_size_t=2) muss latent_t gerade sein — Längen, die ein ungerades latent_t erzeugen, werden abgerundet (z. B. 49 → 45) (Standard: 45) | INT | Ja | 1 bis MAX_RESOLUTION (Schritt: 1) |
-| `batch_size` | Die Batch-Größe für das ausgegebene Rausch-Latent (Standard: 1) | INT | Ja | 1 bis 64 |
+| `Breite` | Die Breite, auf die das Video und die Maske skaliert werden (Standard: 672) | INT | Ja | 16 bis MAX_RESOLUTION (Schritt: 8) |
+| `Höhe` | Die Höhe, auf die das Video und die Maske skaliert werden (Standard: 384) | INT | Ja | 16 bis MAX_RESOLUTION (Schritt: 8) |
+| `Länge` | Anzahl der zu verarbeitenden Pixel-Frames. Für CogVideoX-Fun-V1.5 (patch_size_t=2) muss latent_t gerade sein — Längen, die ein ungerades latent_t erzeugen, werden abgerundet (z. B. 49 → 45) (Standard: 45) | INT | Ja | 1 bis MAX_RESOLUTION (Schritt: 1) |
+| `Batch-Größe` | Die Batch-Größe für das ausgegebene Rausch-Latent (Standard: 1) | INT | Ja | 1 bis 64 |
 
 **Hinweis:** Da CogVideoX-Fun-V1.5 `patch_size_t=2` verwendet, muss das kodierte Latent eine gerade zeitliche Dimension haben. Wenn `length` ein ungerades `latent_t` erzeugen würde, rundet der Node es automatisch auf den nächsten gültigen Wert ab und protokolliert eine Warnung. Die Verwendung eines ungeraden `latent_t` beschädigt das letzte Frame durch zirkuläres Padding, was zu sichtbarem Ruckeln oder verschwindenden Motiven gegen Ende des dekodierten Videos führen kann.
 

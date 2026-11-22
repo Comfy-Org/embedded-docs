@@ -6,13 +6,13 @@ Der Node „Vidu2 Text-to-Video Generation“ erstellt ein Video aus einer Textb
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das KI-Modell, das für die Videogenerierung verwendet werden soll. Derzeit ist nur ein Modell verfügbar. | COMBO | Ja | `"viduq2"` |
-| `prompt` | Eine Textbeschreibung für die Videogenerierung mit einer maximalen Länge von 2000 Zeichen. | STRING | Ja | - |
-| `duration` | Die Länge des generierten Videos in Sekunden. Der Wert kann über einen Schieberegler angepasst werden (Standard: 5). | INT | Nein | 1 bis 10 |
-| `seed` | Eine Zahl, die verwendet wird, um die Zufälligkeit der Generierung zu steuern, wodurch reproduzierbare Ergebnisse ermöglicht werden. Sie kann nach der Generierung gesteuert werden (Standard: 1). | INT | Nein | 0 bis 2147483647 |
-| `aspect_ratio` | Das proportionale Verhältnis zwischen Breite und Höhe des Videos. | COMBO | Nein | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
-| `resolution` | Die Pixelabmessungen des generierten Videos. Dies ist ein erweiterter Parameter. | COMBO | Nein | `"720p"`<br>`"1080p"` |
-| `background_music` | Ob dem generierten Video Hintergrundmusik hinzugefügt werden soll (Standard: False). Dies ist ein erweiterter Parameter. | BOOLEAN | Nein | - |
+| `Modell` | Das KI-Modell, das für die Videogenerierung verwendet werden soll. Derzeit ist nur ein Modell verfügbar. | COMBO | Ja | `"viduq2"` |
+| `Prompt` | Eine Textbeschreibung für die Videogenerierung mit einer maximalen Länge von 2000 Zeichen. | STRING | Ja | - |
+| `Dauer` | Die Länge des generierten Videos in Sekunden. Der Wert kann über einen Schieberegler angepasst werden (Standard: 5). | INT | Nein | 1 bis 10 |
+| `Seed` | Eine Zahl, die verwendet wird, um die Zufälligkeit der Generierung zu steuern, wodurch reproduzierbare Ergebnisse ermöglicht werden. Sie kann nach der Generierung gesteuert werden (Standard: 1). | INT | Nein | 0 bis 2147483647 |
+| `Seitenverhältnis` | Das proportionale Verhältnis zwischen Breite und Höhe des Videos. | COMBO | Nein | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` |
+| `Auflösung` | Die Pixelabmessungen des generierten Videos. Dies ist ein erweiterter Parameter. | COMBO | Nein | `"720p"`<br>`"1080p"` |
+| `Hintergrundmusik` | Ob dem generierten Video Hintergrundmusik hinzugefügt werden soll (Standard: False). Dies ist ein erweiterter Parameter. | BOOLEAN | Nein | - |
 
 ## Ausgaben
 

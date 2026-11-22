@@ -7,10 +7,10 @@ Costruisce un rig di camere attorno al target della prima camera: per impostazio
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
 | `camera_info` | Prima camera dell'orbita. Se viene fornito un elenco di camere, viene creata un'orbita per ciascuna camera in esso contenuta. | LOAD3D_CAMERA | Sì | - |
-| `count` | Camere distribuite uniformemente lungo la scansione. Predefinito: 4. | INT | Sì | 1 a 64 |
-| `yaw` | Rotazione totale attorno al target, nella direzione yaw di Create Camera Info. I giri completi si fermano un passo prima della prima camera; le altre scansioni terminano sull'ultima camera. Predefinito: 360.0. | FLOAT | Sì | -720.0 a 720.0 (passo 1.0) |
-| `pitch` | Inclinazione totale rispetto al target; i valori positivi salgono come il pitch di Create Camera Info; oltre 90 le camere passano sopra la sommità. I giri completi si ripetono come `yaw`. Predefinito: 0.0. | FLOAT | Sì | -720.0 a 720.0 (passo 1.0) |
-| `poles` | Viste direttamente dall'alto e/o dal basso rivolte al target, aggiunte dopo l'orbita. La parte superiore delle loro immagini punta in direzione opposta alla prima camera. Predefinito: `"none"`. | COMBO | Sì | `"none"`<br>`"top"`<br>`"bottom"`<br>`"top and bottom"` |
+| `conteggio` | Camere distribuite uniformemente lungo la scansione. Predefinito: 4. | INT | Sì | 1 a 64 |
+| `imbardata` | Rotazione totale attorno al target, nella direzione yaw di Create Camera Info. I giri completi si fermano un passo prima della prima camera; le altre scansioni terminano sull'ultima camera. Predefinito: 360.0. | FLOAT | Sì | -720.0 a 720.0 (passo 1.0) |
+| `beccheggio` | Inclinazione totale rispetto al target; i valori positivi salgono come il pitch di Create Camera Info; oltre 90 le camere passano sopra la sommità. I giri completi si ripetono come `yaw`. Predefinito: 0.0. | FLOAT | Sì | -720.0 a 720.0 (passo 1.0) |
+| `poli` | Viste direttamente dall'alto e/o dal basso rivolte al target, aggiunte dopo l'orbita. La parte superiore delle loro immagini punta in direzione opposta alla prima camera. Predefinito: `"none"`. | COMBO | Sì | `"none"`<br>`"top"`<br>`"bottom"`<br>`"top and bottom"` |
 
 ## Output
 

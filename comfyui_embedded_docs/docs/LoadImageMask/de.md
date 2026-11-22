@@ -6,8 +6,8 @@ Der LoadImageMask-Node dient zum Laden von Bildern und den zugehörigen Masken v
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `image` | Der Parameter `image` gibt die zu ladende und zu verarbeitende Bilddatei an. Er ist entscheidend für die Ausgabe, da er das Quellbild für die Maskenextraktion und Formatkonvertierung bereitstellt. | COMBO[STRING] |
-| `channel` | Der Parameter `channel` gibt den Farbkanal des Bildes an, der zur Erzeugung der Maske verwendet wird. Dies ermöglicht Flexibilität bei der Maskenerstellung basierend auf verschiedenen Farbkanälen und erhöht den Nutzen des Nodes in verschiedenen Bildverarbeitungsszenarien. | COMBO[STRING] |
+| `Bild` | Der Parameter `image` gibt die zu ladende und zu verarbeitende Bilddatei an. Er ist entscheidend für die Ausgabe, da er das Quellbild für die Maskenextraktion und Formatkonvertierung bereitstellt. | COMBO[STRING] |
+| `Kanal` | Der Parameter `channel` gibt den Farbkanal des Bildes an, der zur Erzeugung der Maske verwendet wird. Dies ermöglicht Flexibilität bei der Maskenerstellung basierend auf verschiedenen Farbkanälen und erhöht den Nutzen des Nodes in verschiedenen Bildverarbeitungsszenarien. | COMBO[STRING] |
 
 ## Ausgaben
 

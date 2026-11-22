@@ -7,7 +7,7 @@ Dieser Node dient dazu, das Stärke-Attribut eines gegebenen Conditioning-Sets z
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
 | `CONDITIONING` | Das zu ändernde Conditioning-Set, das den aktuellen Zustand der Konditionierung repräsentiert, die den Generierungsprozess beeinflusst. | CONDITIONING |
-| `strength` | Der auf das Conditioning-Set anzuwendende Stärkewert, der die Intensität seines Einflusses bestimmt. | `FLOAT` |
+| `Stärke` | Der auf das Conditioning-Set anzuwendende Stärkewert, der die Intensität seines Einflusses bestimmt. | `FLOAT` |
 
 ## Ausgaben
 

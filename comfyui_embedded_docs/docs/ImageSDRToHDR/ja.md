@@ -6,8 +6,8 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | HDR に拡張する sRGB の SDR 画像。 | IMAGE | はい | - |
-| `algorithm` | HDR 拡張アルゴリズム。アルゴリズムを選択すると、そのパラメータ（`target_luminance`）が表示されます。 | DYNAMIC_COMBO | はい | `"lottes"` |
+| `画像` | HDR に拡張する sRGB の SDR 画像。 | IMAGE | はい | - |
+| `アルゴリズム` | HDR 拡張アルゴリズム。アルゴリズムを選択すると、そのパラメータ（`target_luminance`）が表示されます。 | DYNAMIC_COMBO | はい | `"lottes"` |
 
 ### lottes 入力
 

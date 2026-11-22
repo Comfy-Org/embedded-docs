@@ -8,10 +8,10 @@ Este nó transforma um prompt em condicionamento e um latent vazio para uma úni
 | --- | --- | --- | --- | --- |
 | `clip` | O modelo CLIP p-h3-image usado para tokenizar o prompt, incluindo quaisquer imagens de referência, e para codificar o condicionamento. | CLIP | Sim | - |
 | `prompt` | O que gerar, ou como editar `image_1`. Com imagens conectadas, uma instrução curta recebe `Edit <Picture 1>. ` como prefixo. Uma instrução que já começa com `Edit <Picture` ou um briefing de edição produzido por um ampliador de prompt é usado exatamente como escrito. | STRING | Sim | - |
-| `width` | Largura de saída em pixels. 0 usa a largura de `image_1` após o escalonamento, ou 2912 quando nenhuma imagem está conectada (padrão: 0). | INT | Sim | 0 a MAX_RESOLUTION |
-| `height` | Altura de saída em pixels. 0 usa a altura de `image_1` após o escalonamento, ou 2912 quando nenhuma imagem está conectada (padrão: 0). | INT | Sim | 0 a MAX_RESOLUTION |
+| `largura` | Largura de saída em pixels. 0 usa a largura de `image_1` após o escalonamento, ou 2912 quando nenhuma imagem está conectada (padrão: 0). | INT | Sim | 0 a MAX_RESOLUTION |
+| `altura` | Altura de saída em pixels. 0 usa a altura de `image_1` após o escalonamento, ou 2912 quando nenhuma imagem está conectada (padrão: 0). | INT | Sim | 0 a MAX_RESOLUTION |
 | `vae` | VAE do p-h3-image. Com ele, as imagens também são ancoradas como latentes de referência; sem ele, apenas condicionam o codificador de texto. | VAE | Não | - |
-| `images` | Grupo expansível de até 9 imagens, de `image_1` a `image_9`. `image_1` é a imagem que está sendo editada; os slots restantes são referências. | AUTOGROW | Não | 0 a 9 imagens |
+| `imagens` | Grupo expansível de até 9 imagens, de `image_1` a `image_9`. `image_1` é a imagem que está sendo editada; os slots restantes são referências. | AUTOGROW | Não | 0 a 9 imagens |
 
 ## Saídas
 

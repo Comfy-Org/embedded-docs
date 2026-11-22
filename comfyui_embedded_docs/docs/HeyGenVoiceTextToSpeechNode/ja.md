@@ -8,7 +8,7 @@ HeyGen の音声でテキストを読み上げます。このノードはテキ�
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 使用するモデルです。`heygen-voice-1-turbo` はより高速で、コストは低くなります。モデルを選択すると、そのモデル固有のパラメータ（`voice_id`、`text`、`language`、`expressiveness_boost`）が表示されます。 | DYNAMIC_COMBO | はい | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `モデル` | 使用するモデルです。`heygen-voice-1-turbo` はより高速で、コストは低くなります。モデルを選択すると、そのモデル固有のパラメータ（`voice_id`、`text`、`language`、`expressiveness_boost`）が表示されます。 | DYNAMIC_COMBO | はい | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `voice_id` | HeyGen の音声IDです。HeyGen の音声ライブラリの ID などが使えます（デフォルト：空）。 | STRING | はい | N/A |
 | `text` | 読み上げるテキストです。最大5000文字です。約12分を超えるスピーチは失敗するため、非常に長い中国語や日本語のテキストは分割してください（デフォルト：空）。 | STRING | はい | 1～5000文字 |
 | `language` | テキストの言語です。セルビア語やマレー語など、自動検出が混同しやすい近縁言語では設定してください（デフォルト：`"auto"`）。 | COMBO | はい | `"auto"`<br>複数の言語プリセット |

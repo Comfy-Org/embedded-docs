@@ -7,8 +7,8 @@
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | 用於解碼所產生 token 的 SenseNova CLIP 模型。 | CLIP | 是 | - |
-| `conditioning` | 來自 SenseNova Conditioning 的交錯條件。 | CONDITIONING | 是 | - |
-| `samples` | 最後一個 KSampler 像素 latent，當迴圈因影像請求而結束時需要。 | LATENT | 否 | - |
+| `條件設定` | 來自 SenseNova Conditioning 的交錯條件。 | CONDITIONING | 是 | - |
+| `樣本` | 最後一個 KSampler 像素 latent，當迴圈因影像請求而結束時需要。 | LATENT | 否 | - |
 
 **限制與行為：**
 

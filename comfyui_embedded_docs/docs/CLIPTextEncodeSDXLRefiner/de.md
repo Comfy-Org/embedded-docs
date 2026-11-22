@@ -21,9 +21,9 @@ Refiner kann auf zwei Arten verwendet werden:
 | --- | --- | --- | --- | --- | --- |
 | `clip` | CLIP-Modellinstanz, die für die Tokenisierung und Kodierung von Text verwendet wird; die Kernkomponente zur Umwandlung von Text in ein für das Modell verständliches Format | CLIP | Erforderlich | - | - |
 | `ascore` | Steuert die visuelle Qualität und Ästhetik generierter Bilder, ähnlich wie das Festlegen von Qualitätsstandards für Kunstwerke:<br/>- Hohe Scores (7.5-8.5): Strebt nach feineren, detailreicheren Effekten<br/>- Mittlere Scores (6.0-7.0): Ausgewogene Qualitätskontrolle<br/>- Niedrige Scores (2.0-3.0): Geeignet für Negativ-Prompts | FLOAT | Optional | 6.0 | 0.0-1000.0 |
-| `width` | Gibt die Breite des Ausgabebilds in Pixeln an; muss ein Vielfaches von 8 sein. SDXL erzielt die besten Ergebnisse, wenn die Gesamtpixelzahl nahe bei 1024×1024 liegt (etwa 1 Mio. Pixel) | INT | Erforderlich | 1024 | 64-16384 |
-| `height` | Gibt die Höhe des Ausgabebilds in Pixeln an; muss ein Vielfaches von 8 sein. SDXL erzielt die besten Ergebnisse, wenn die Gesamtpixelzahl nahe bei 1024×1024 liegt (etwa 1 Mio. Pixel) | INT | Erforderlich | 1024 | 64-16384 |
-| `text` | Text-Prompt-Beschreibung; unterstützt mehrzeilige Eingabe und dynamische Prompt-Syntax. Im Refiner sollten Text-Prompts stärker darauf ausgerichtet sein, die gewünschte visuelle Qualität und Detailmerkmale zu beschreiben | STRING | Erforderlich | - | - |
+| `Breite` | Gibt die Breite des Ausgabebilds in Pixeln an; muss ein Vielfaches von 8 sein. SDXL erzielt die besten Ergebnisse, wenn die Gesamtpixelzahl nahe bei 1024×1024 liegt (etwa 1 Mio. Pixel) | INT | Erforderlich | 1024 | 64-16384 |
+| `Höhe` | Gibt die Höhe des Ausgabebilds in Pixeln an; muss ein Vielfaches von 8 sein. SDXL erzielt die besten Ergebnisse, wenn die Gesamtpixelzahl nahe bei 1024×1024 liegt (etwa 1 Mio. Pixel) | INT | Erforderlich | 1024 | 64-16384 |
+| `Text` | Text-Prompt-Beschreibung; unterstützt mehrzeilige Eingabe und dynamische Prompt-Syntax. Im Refiner sollten Text-Prompts stärker darauf ausgerichtet sein, die gewünschte visuelle Qualität und Detailmerkmale zu beschreiben | STRING | Erforderlich | - | - |
 
 ## Ausgaben
 

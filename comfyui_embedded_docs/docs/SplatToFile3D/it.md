@@ -7,7 +7,7 @@ Il nodo SplatToFile3D converte uno splat gaussiano in un oggetto File3D che può
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
 | `splat` | I dati dello splat gaussiano da serializzare in un file | SPLAT | Sì | - |
-| `format` | Il formato del file di output per il file 3D (predefinito: "ply"). ply: Gaussian Splat 3D standard con armoniche sferiche complete. ksplat: mkkellogg SplatBuffer (livello 0, non compresso), solo colore di base. spz: Niantic compresso con gzip (circa 10 volte più piccolo), solo colore di base | COMBO | Sì | "ply"<br>"ksplat"<br>"spz" |
+| `formato` | Il formato del file di output per il file 3D (predefinito: "ply"). ply: Gaussian Splat 3D standard con armoniche sferiche complete. ksplat: mkkellogg SplatBuffer (livello 0, non compresso), solo colore di base. spz: Niantic compresso con gzip (circa 10 volte più piccolo), solo colore di base | COMBO | Sì | "ply"<br>"ksplat"<br>"spz" |
 
 Nota: questo nodo supporta un solo elemento per batch. Se lo splat gaussiano di input contiene più di un elemento nel batch, il nodo registra un avviso e utilizza il primo elemento. Se viene fornito un formato non supportato, il nodo genera un errore.
 

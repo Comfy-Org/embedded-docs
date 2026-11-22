@@ -6,8 +6,8 @@ Il nodo RepeatImageBatch è progettato per replicare una determinata immagine un
 
 | Campo | Descrizione | Tipo di dato |
 | --- | --- | --- |
-| `image` | Il parametro `image` rappresenta l'immagine da replicare. È cruciale per definire il contenuto che verrà duplicato nell'intero batch. | `IMAGE` |
-| `amount` | Il parametro `amount` specifica il numero di volte in cui l'immagine di input deve essere replicata. Influisce direttamente sulla dimensione del batch di output, consentendo una creazione flessibile del batch. | `INT` |
+| `immagine` | Il parametro `image` rappresenta l'immagine da replicare. È cruciale per definire il contenuto che verrà duplicato nell'intero batch. | `IMAGE` |
+| `quantità` | Il parametro `amount` specifica il numero di volte in cui l'immagine di input deve essere replicata. Influisce direttamente sulla dimensione del batch di output, consentendo una creazione flessibile del batch. | `INT` |
 
 ## Output
 

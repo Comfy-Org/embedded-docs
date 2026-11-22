@@ -6,7 +6,7 @@ Der Node PolyexponentialScheduler ist dafür ausgelegt, eine Folge von Rauschpeg
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `steps` | Gibt die Anzahl der Schritte im Diffusionsprozess an und beeinflusst damit die Granularität der erzeugten Rauschpegel. | INT |
+| `Schritte` | Gibt die Anzahl der Schritte im Diffusionsprozess an und beeinflusst damit die Granularität der erzeugten Rauschpegel. | INT |
 | `sigma_max` | Der maximale Rauschpegel, der die Obergrenze des Rauschplans festlegt. | FLOAT |
 | `sigma_min` | Der minimale Rauschpegel, der die Untergrenze des Rauschplans festlegt. | FLOAT |
 | `rho` | Ein Parameter, der die Form des polyexponentiellen Rauschplans steuert und beeinflusst, wie sich die Rauschpegel zwischen Minimal- und Maximalwert entwickeln. | FLOAT |

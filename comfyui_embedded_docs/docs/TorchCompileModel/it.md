@@ -6,7 +6,7 @@ Il nodo TorchCompileModel applica la compilazione PyTorch a un modello per ottim
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello da compilare e ottimizzare | MODEL | Sì | - |
+| `modello` | Il modello da compilare e ottimizzare | MODEL | Sì | - |
 | `backend` | Il backend di compilazione PyTorch da utilizzare per l'ottimizzazione (predefinito: "inductor") | STRING | Sì | "inductor"<br>"cudagraphs" |
 
 ## Output

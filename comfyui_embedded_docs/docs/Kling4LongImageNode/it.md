@@ -8,7 +8,7 @@ Genera un'immagine verticale con Kling 4.0: il design completo di una pagina web
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `skill` | Layout da generare. `"webpage"` progetta una pagina completa intorno a un'immagine di stile e a un soggetto opzionali; `"ecommerce"` crea una pagina di dettaglio prodotto a partire da foto del prodotto. | DYNAMIC_COMBO | Sì | `"webpage"`<br>`"ecommerce"` |
+| `abilità` | Layout da generare. `"webpage"` progetta una pagina completa intorno a un'immagine di stile e a un soggetto opzionali; `"ecommerce"` crea una pagina di dettaglio prodotto a partire da foto del prodotto. | DYNAMIC_COMBO | Sì | `"webpage"`<br>`"ecommerce"` |
 
 ### Input di `webpage`
 

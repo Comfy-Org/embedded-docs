@@ -8,7 +8,7 @@ Dieser Node ersetzt den Teil eines Videos zwischen der Start- und der Fortsetzun
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Modell, das für die Videogenerierung verwendet werden soll. | DYNAMIC_COMBO | Ja | "MiniMax H3 Max" |
+| `Modell` | Modell, das für die Videogenerierung verwendet werden soll. | DYNAMIC_COMBO | Ja | "MiniMax H3 Max" |
 
 ### MiniMax H3 Max Eingaben
 

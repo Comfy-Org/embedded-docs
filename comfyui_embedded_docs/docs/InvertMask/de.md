@@ -6,7 +6,7 @@ Der InvertMask-Node dient dazu, die Werte einer gegebenen Maske zu invertieren, 
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `mask` | Der Parameter `mask` stellt die Eingabemaske dar, die invertiert werden soll. Er ist entscheidend dafür, die Bereiche zu bestimmen, die beim Inversionsprozess vertauscht werden. | MASK |
+| `Maske` | Der Parameter `mask` stellt die Eingabemaske dar, die invertiert werden soll. Er ist entscheidend dafür, die Bereiche zu bestimmen, die beim Inversionsprozess vertauscht werden. | MASK |
 
 ## Ausgaben
 

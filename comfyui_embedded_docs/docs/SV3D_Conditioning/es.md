@@ -6,7 +6,7 @@ SV3D_Conditioning prepara datos de condicionamiento para la generación de video
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `clip_vision` | El modelo CLIP vision usado para codificar la imagen de entrada | CLIP_VISION | Sí | - |
+| `visión_clip` | El modelo CLIP vision usado para codificar la imagen de entrada | CLIP_VISION | Sí | - |
 | `imagen_inicial` | La imagen inicial que sirve como punto de partida para la generación de video 3D | IMAGE | Sí | - |
 | `vae` | El modelo VAE usado para codificar la imagen en el espacio latente | VAE | Sí | - |
 | `ancho` | El ancho de salida para los fotogramas de video generados (predeterminado: 576, paso de 8) | INT | Sí | 16 a MAX_RESOLUTION |

@@ -8,8 +8,8 @@ Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/text_enc
 
 | Parámetro | Descripción | Tipo Comfy |
 | --- | --- | --- |
-| `clip_name1` | Especifica el nombre del primer modelo CLIP a cargar. Este parámetro es crucial para identificar y recuperar el modelo correcto de una lista predefinida de modelos CLIP disponibles. | COMBO[STRING] |
-| `clip_name2` | Especifica el nombre del segundo modelo CLIP a cargar. Este parámetro permite cargar un segundo modelo CLIP distinto para realizar análisis comparativos o integradores junto con el primer modelo. | COMBO[STRING] |
+| `nombre_de_clip1` | Especifica el nombre del primer modelo CLIP a cargar. Este parámetro es crucial para identificar y recuperar el modelo correcto de una lista predefinida de modelos CLIP disponibles. | COMBO[STRING] |
+| `nombre_de_clip2` | Especifica el nombre del segundo modelo CLIP a cargar. Este parámetro permite cargar un segundo modelo CLIP distinto para realizar análisis comparativos o integradores junto con el primer modelo. | COMBO[STRING] |
 | `tipo` | Elija entre "sdxl", "sd3", "flux" para adaptarse a diferentes modelos. | `option` |
 
 * El orden de carga no afecta el resultado de salida

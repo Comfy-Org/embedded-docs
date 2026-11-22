@@ -6,11 +6,11 @@ Der Node InpaintModelConditioning ist darauf ausgelegt, den Konditionierungsproz
 
 | Parameter | Beschreibung | Comfy-Datentyp |
 | --- | --- | --- |
-| `positive` | Repräsentiert die positiven Konditionierungsinformationen oder -parameter, die auf das Inpainting-Modell angewendet werden sollen. Diese Eingabe ist entscheidend, um den Kontext oder die Einschränkungen zu definieren, unter denen die Inpainting-Operation ausgeführt werden soll, und beeinflusst die endgültige Ausgabe erheblich. | `CONDITIONING` |
-| `negative` | Repräsentiert die negativen Konditionierungsinformationen oder -parameter, die auf das Inpainting-Modell angewendet werden sollen. Diese Eingabe ist wesentlich, um die Bedingungen oder Kontexte anzugeben, die während des Inpainting-Prozesses vermieden werden sollen, und beeinflusst dadurch die endgültige Ausgabe. | `CONDITIONING` |
+| `Positiv` | Repräsentiert die positiven Konditionierungsinformationen oder -parameter, die auf das Inpainting-Modell angewendet werden sollen. Diese Eingabe ist entscheidend, um den Kontext oder die Einschränkungen zu definieren, unter denen die Inpainting-Operation ausgeführt werden soll, und beeinflusst die endgültige Ausgabe erheblich. | `CONDITIONING` |
+| `Negativ` | Repräsentiert die negativen Konditionierungsinformationen oder -parameter, die auf das Inpainting-Modell angewendet werden sollen. Diese Eingabe ist wesentlich, um die Bedingungen oder Kontexte anzugeben, die während des Inpainting-Prozesses vermieden werden sollen, und beeinflusst dadurch die endgültige Ausgabe. | `CONDITIONING` |
 | `vae` | Gibt das VAE-Modell an, das im Konditionierungsprozess verwendet werden soll. Diese Eingabe ist entscheidend, um die spezifische Architektur und die Parameter des VAE-Modells zu bestimmen, das genutzt wird. | `VAE` |
-| `pixels` | Repräsentiert die Pixeldaten des Bildes, das per Inpainting bearbeitet werden soll. Diese Eingabe ist wesentlich, um den visuellen Kontext bereitzustellen, der für die Inpainting-Aufgabe erforderlich ist. | `IMAGE` |
-| `mask` | Gibt die auf das Bild anzuwendende Maske an und kennzeichnet die Bereiche, die per Inpainting bearbeitet werden sollen. Diese Eingabe ist entscheidend, um die spezifischen Regionen innerhalb des Bildes zu definieren, die Inpainting erfordern. | `MASK` |
+| `Pixel` | Repräsentiert die Pixeldaten des Bildes, das per Inpainting bearbeitet werden soll. Diese Eingabe ist wesentlich, um den visuellen Kontext bereitzustellen, der für die Inpainting-Aufgabe erforderlich ist. | `IMAGE` |
+| `Maske` | Gibt die auf das Bild anzuwendende Maske an und kennzeichnet die Bereiche, die per Inpainting bearbeitet werden sollen. Diese Eingabe ist entscheidend, um die spezifischen Regionen innerhalb des Bildes zu definieren, die Inpainting erfordern. | `MASK` |
 
 ## Ausgaben
 

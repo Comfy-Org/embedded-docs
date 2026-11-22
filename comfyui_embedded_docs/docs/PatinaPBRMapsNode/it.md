@@ -10,9 +10,9 @@ Deriva un insieme di mappe di materiale PBR da un'immagine di texture esistente:
 | `basecolor` | Genera la mappa basecolor (albedo). Predefinito: True. | BOOLEAN | Sì | true<br>false |
 | `normal` | Genera la mappa normal. Predefinito: True. | BOOLEAN | Sì | true<br>false |
 | `roughness` | Genera la mappa roughness. Predefinito: False. | BOOLEAN | Sì | true<br>false |
-| `metalness` | Genera la mappa metalness. Predefinito: False. | BOOLEAN | Sì | true<br>false |
-| `height` | Genera la mappa height (displacement). Predefinito: False. | BOOLEAN | Sì | true<br>false |
-| `seed` | Seme per un denoising riproducibile. Predefinito: 42. | INT | Sì | 0 a 2147483646 |
+| `metallicità` | Genera la mappa metalness. Predefinito: False. | BOOLEAN | Sì | true<br>false |
+| `altezza` | Genera la mappa height (displacement). Predefinito: False. | BOOLEAN | Sì | true<br>false |
+| `seme` | Seme per un denoising riproducibile. Predefinito: 42. | INT | Sì | 0 a 2147483646 |
 | `safety_checker` | Esegue il controllo di sicurezza dei contenuti del provider sulla richiesta. Impostazione avanzata. Predefinito: False. | BOOLEAN | Sì | true<br>false |
 | `auto_downscale` | Ridimensiona automaticamente verso il basso un'immagine di input il cui lato più lungo supera 2048 pixel, il limite di input del modello, preservando le proporzioni; le immagini più piccole vengono lasciate invariate. Disabilitalo per generare invece un errore sulle immagini sovradimensionate. Impostazione avanzata. Predefinito: True. | BOOLEAN | No | true<br>false |
 

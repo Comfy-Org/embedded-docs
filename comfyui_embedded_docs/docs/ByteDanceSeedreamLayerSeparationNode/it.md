@@ -8,13 +8,13 @@ ByteDance Seedream 5.0 Pro Layer Separation scompone un'immagine in una lastra d
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | L'immagine da separare. Esattamente un'immagine, almeno 512x512 pixel, rapporto d'aspetto tra 1:16 e 16:1. Gli input più grandi di circa 4MP vengono ridimensionati verso il basso prima del caricamento. | IMAGE | Sì | Immagine singola |
+| `immagine` | L'immagine da separare. Esattamente un'immagine, almeno 512x512 pixel, rapporto d'aspetto tra 1:16 e 16:1. Gli input più grandi di circa 4MP vengono ridimensionati verso il basso prima del caricamento. | IMAGE | Sì | Immagine singola |
 | `prompt` | Come separare l'immagine. Lasciare vuoto per rilevare automaticamente e separare tutti gli elementi principali. Descrivere gli elementi in linguaggio naturale per controllare la separazione, oppure individuare regioni esatte con i tag `<bbox>left top right bottom</bbox>` (coordinate 0-1000 per mille). Predefinito: stringa vuota. | STRING | Sì | Testo multilinea |
-| `size` | Livello di risoluzione dell'output. "auto" segue la dimensione dell'immagine di input (limitata all'intervallo 1K-2K). Predefinito: "auto". | COMBO | Sì | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
+| `dimensione` | Livello di risoluzione dell'output. "auto" segue la dimensione dell'immagine di input (limitata all'intervallo 1K-2K). Predefinito: "auto". | COMBO | Sì | "auto"<br>"1K"<br>"1.5K"<br>"2K" |
 | `seed` | Seed da utilizzare per la generazione. Predefinito: 0. | INT | Sì | 0 a 2147483647 |
-| `prompt_optimization` | Modalità di ottimizzazione del prompt: "standard" offre una qualità superiore, "fast" un tempo di generazione più breve. Predefinito: "standard". | COMBO | No | "standard"<br>"fast" |
-| `watermark` | Indica se aggiungere una filigrana "AI generated" alle immagini. Predefinito: false. | BOOLEAN | No | false<br>true |
-| `crop_layers` | Geometria degli output batch di livelli/maschere (layer_stack non è influenzato ed è sempre ritagliato in modo aderente). Canvas completo: ogni livello su una tela delle dimensioni della base, nella posizione del suo bounding box - ricomponi direttamente con ImageCompositeMasked. Dimensione minima: ogni livello ritagliato al suo bounding box (con padding fino al livello più grande per il batching) - tensori molto più piccoli; ricostruisci il posizionamento con Layers From Bounding Boxes usando l'output bboxes. Predefinito: false (canvas completo). | BOOLEAN | No | false (canvas completo)<br>true (dimensione minima) |
+| `ottimizzazione_prompt` | Modalità di ottimizzazione del prompt: "standard" offre una qualità superiore, "fast" un tempo di generazione più breve. Predefinito: "standard". | COMBO | No | "standard"<br>"fast" |
+| `filigrana` | Indica se aggiungere una filigrana "AI generated" alle immagini. Predefinito: false. | BOOLEAN | No | false<br>true |
+| `ritaglia_livelli` | Geometria degli output batch di livelli/maschere (layer_stack non è influenzato ed è sempre ritagliato in modo aderente). Canvas completo: ogni livello su una tela delle dimensioni della base, nella posizione del suo bounding box - ricomponi direttamente con ImageCompositeMasked. Dimensione minima: ogni livello ritagliato al suo bounding box (con padding fino al livello più grande per il batching) - tensori molto più piccoli; ricostruisci il posizionamento con Layers From Bounding Boxes usando l'output bboxes. Predefinito: false (canvas completo). | BOOLEAN | No | false (canvas completo)<br>true (dimensione minima) |
 
 Nota: l'input `image` deve essere una singola immagine; i batch non sono supportati. L'immagine deve essere di almeno 512x512 pixel con un rapporto d'aspetto tra 1:16 e 16:1.
 

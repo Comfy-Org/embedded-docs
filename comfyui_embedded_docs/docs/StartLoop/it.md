@@ -8,10 +8,10 @@ Il nodo Start Loop avvia una struttura di ciclo all'interno di un workflow. Eseg
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `mode` | La modalità di iterazione del ciclo (predefinita: `"simple"`). La modalità selezionata determina quali parametri aggiuntivi vengono mostrati. | DYNAMIC_COMBO | Sì | `"simple"`<br>`"For"`<br>`"List"` |
-| `cache_iterations` | Riutilizza i risultati invariati delle iterazioni dalle esecuzioni precedenti. Disabilita per eseguire di nuovo ogni iterazione. Predefinito: false. | BOOLEAN | Sì | true<br>false |
-| `parent_iteration` | Collega iteration_index da un Start Loop esterno per annidare questo ciclo. Questo input è solo force-input (è richiesto un collegamento). | INT | No | Qualsiasi numero intero |
-| `initial_iteration_value` | Valore esposto come current_iteration_value durante la prima iterazione. | ANY (type-matched) | No | Qualsiasi valore |
+| `modalità` | La modalità di iterazione del ciclo (predefinita: `"simple"`). La modalità selezionata determina quali parametri aggiuntivi vengono mostrati. | DYNAMIC_COMBO | Sì | `"simple"`<br>`"For"`<br>`"List"` |
+| `iterazioni_cache` | Riutilizza i risultati invariati delle iterazioni dalle esecuzioni precedenti. Disabilita per eseguire di nuovo ogni iterazione. Predefinito: false. | BOOLEAN | Sì | true<br>false |
+| `iterazione_padre` | Collega iteration_index da un Start Loop esterno per annidare questo ciclo. Questo input è solo force-input (è richiesto un collegamento). | INT | No | Qualsiasi numero intero |
+| `valore_iniziale_iterazione` | Valore esposto come current_iteration_value durante la prima iterazione. | ANY (type-matched) | No | Qualsiasi valore |
 
 ### Input della modalità Simple
 

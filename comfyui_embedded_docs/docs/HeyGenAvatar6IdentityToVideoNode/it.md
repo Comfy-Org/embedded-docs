@@ -8,13 +8,13 @@ Genera un video parlato di un avatar HeyGen con Avatar 6. Scegli uno degli aspet
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `model` | Selettore del modello. `"heygen-avatar-6-turbo"` è la versione più economica e veloce; entrambi i modelli accettano gli stessi input e risoluzioni. | COMBO | Sì | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `modello` | Selettore del modello. `"heygen-avatar-6-turbo"` è la versione più economica e veloce; entrambi i modelli accettano gli stessi input e risoluzioni. | COMBO | Sì | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
 | `avatar` | Aspetto avatar da presentare. I 19 aspetti predefiniti che supportano Avatar 6 sono elencati direttamente; `custom avatar` mostra `custom_avatar_id` per un aspetto creato in HeyGen. | DYNAMIC_COMBO | Sì | 19 aspetti predefiniti<br>`custom avatar` |
-| `speech` | Guida l'avatar con un copione testuale (sintesi vocale di HeyGen) o con il tuo audio. Nome visualizzato: origine del parlato. | DYNAMIC_COMBO | Sì | `"script"`<br>`"audio"` |
-| `resolution` | Risoluzione del video di output. Predefinito: `"1080p"`. | COMBO | Sì | `"1080p"`<br>`"2k"` |
-| `aspect_ratio` | Proporzioni del video di output. `"auto"` segue il filmato originale dell'aspetto avatar. Predefinito: `"auto"`. | COMBO | Sì | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `motion_prompt` | Indicazioni facoltative per gesti, espressione, postura e movimento della camera. Predefinito: stringa vuota. | STRING | Sì | Testo multiriga |
-| `motion_expressiveness` | `"less"` produce gesti meno numerosi e più contenuti. Il prompt di movimento ha la precedenza dove i due si sovrappongono. Predefinito: `"default"`. | COMBO | Sì | `"less"`<br>`"default"` |
+| `parlato` | Guida l'avatar con un copione testuale (sintesi vocale di HeyGen) o con il tuo audio. Nome visualizzato: origine del parlato. | DYNAMIC_COMBO | Sì | `"script"`<br>`"audio"` |
+| `risoluzione` | Risoluzione del video di output. Predefinito: `"1080p"`. | COMBO | Sì | `"1080p"`<br>`"2k"` |
+| `rapporto d'aspetto` | Proporzioni del video di output. `"auto"` segue il filmato originale dell'aspetto avatar. Predefinito: `"auto"`. | COMBO | Sì | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `prompt di movimento` | Indicazioni facoltative per gesti, espressione, postura e movimento della camera. Predefinito: stringa vuota. | STRING | Sì | Testo multiriga |
+| `espressività del movimento` | `"less"` produce gesti meno numerosi e più contenuti. Il prompt di movimento ha la precedenza dove i due si sovrappongono. Predefinito: `"default"`. | COMBO | Sì | `"less"`<br>`"default"` |
 | `seed` | Il seed controlla se il nodo deve essere rieseguito; i risultati non sono deterministici indipendentemente dal seed. Predefinito: 42. | INT | Sì | 0 a 2147483647 |
 
 ### Input di `custom avatar`

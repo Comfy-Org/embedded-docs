@@ -8,7 +8,7 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `model` | 動画の継続に使用するモデルです。どちらのモデルも、以下に示す同じ入力を備えています。 | DYNAMIC_COMBO | はい | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `モデル` | 動画の継続に使用するモデルです。どちらのモデルも、以下に示す同じ入力を備えています。 | DYNAMIC_COMBO | はい | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
 
 ### モデル入力
 

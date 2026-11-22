@@ -7,13 +7,13 @@ Der Knoten StableZero123_Conditioning verarbeitet ein Eingabebild und Kamerawink
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `clip_vision` | Das CLIP-Visionsmodell, das zur Kodierung der Bildeigenschaften verwendet wird | CLIP_VISION | Ja | - |
-| `init_image` | Das Eingabebild, das verarbeitet und kodiert werden soll | IMAGE | Ja | - |
+| `Startbild` | Das Eingabebild, das verarbeitet und kodiert werden soll | IMAGE | Ja | - |
 | `vae` | Das VAE-Modell, das zur Kodierung von Pixeln in den latenten Raum verwendet wird | VAE | Ja | - |
-| `width` | Ausgabebreite für die latente Repräsentation (Standard: 256, Schritt: 8) | INT | Ja | 16 bis MAX_RESOLUTION |
-| `height` | Ausgabehöhe für die latente Repräsentation (Standard: 256, Schritt: 8) | INT | Ja | 16 bis MAX_RESOLUTION |
-| `batch_size` | Anzahl der im Batch zu generierenden Samples (Standard: 1) | INT | Ja | 1 bis 4096 |
-| `elevation` | Kamera-Elevationswinkel in Grad (Standard: 0.0, Schritt: 0.1) | FLOAT | Ja | -180.0 bis 180.0 |
-| `azimuth` | Kamera-Azimutwinkel in Grad (Standard: 0.0, Schritt: 0.1) | FLOAT | Ja | -180.0 bis 180.0 |
+| `Breite` | Ausgabebreite für die latente Repräsentation (Standard: 256, Schritt: 8) | INT | Ja | 16 bis MAX_RESOLUTION |
+| `Höhe` | Ausgabehöhe für die latente Repräsentation (Standard: 256, Schritt: 8) | INT | Ja | 16 bis MAX_RESOLUTION |
+| `Batchgröße` | Anzahl der im Batch zu generierenden Samples (Standard: 1) | INT | Ja | 1 bis 4096 |
+| `Höhenwinkel` | Kamera-Elevationswinkel in Grad (Standard: 0.0, Schritt: 0.1) | FLOAT | Ja | -180.0 bis 180.0 |
+| `Azimut` | Kamera-Azimutwinkel in Grad (Standard: 0.0, Schritt: 0.1) | FLOAT | Ja | -180.0 bis 180.0 |
 
 **Hinweis:** Die Parameter `width` und `height` verwenden einen Schritt von 8, daher werden Werte in 8er-Schritten festgelegt. Der Knoten teilt sie durch 8, um die Dimensionen der latenten Repräsentation zu bestimmen. Das Bild wird vor der VAE-Kodierung mithilfe bilinearer Hochskalierung mit mittigem Zuschnitt auf die angegebene `width` und `height` skaliert.
 

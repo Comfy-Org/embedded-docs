@@ -8,9 +8,9 @@ Il nodo HypernetworkLoader è progettato per migliorare o modificare le capacit�
 
 | Campo | Descrizione | Tipo di dato Comfy |
 | --- | --- | --- |
-| `model` | Il modello di base a cui verrà applicato l'hypernetwork, che determina l'architettura da migliorare o modificare. | `MODEL` |
-| `hypernetwork_name` | Il nome dell'hypernetwork da caricare e applicare al modello, che influisce sul comportamento o sulle prestazioni modificate del modello. | `COMBO[STRING]` |
-| `strength` | Uno scalare che regola l'intensità dell'effetto dell'hypernetwork sul modello, consentendo una messa a punto delle modifiche. | `FLOAT` |
+| `modello` | Il modello di base a cui verrà applicato l'hypernetwork, che determina l'architettura da migliorare o modificare. | `MODEL` |
+| `nome hypernetwork` | Il nome dell'hypernetwork da caricare e applicare al modello, che influisce sul comportamento o sulle prestazioni modificate del modello. | `COMBO[STRING]` |
+| `intensità` | Uno scalare che regola l'intensità dell'effetto dell'hypernetwork sul modello, consentendo una messa a punto delle modifiche. | `FLOAT` |
 
 ## Output
 

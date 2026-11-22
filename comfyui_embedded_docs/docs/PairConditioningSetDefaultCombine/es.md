@@ -6,11 +6,11 @@ El nodo **PairConditioningSetDefaultAndCombine** establece valores de condiciona
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `positive` | La entrada de condicionamiento positivo principal a procesar | CONDITIONING | Sí | - |
-| `negative` | La entrada de condicionamiento negativo principal a procesar | CONDITIONING | Sí | - |
-| `positive_DEFAULT` | Los valores de condicionamiento positivo predeterminados a utilizar como respaldo | CONDITIONING | Sí | - |
-| `negative_DEFAULT` | Los valores de condicionamiento negativo predeterminados a utilizar como respaldo | CONDITIONING | Sí | - |
-| `hooks` | Grupo opcional de hooks para lógica de procesamiento personalizada | HOOKS | No | - |
+| `positivo` | La entrada de condicionamiento positivo principal a procesar | CONDITIONING | Sí | - |
+| `negativo` | La entrada de condicionamiento negativo principal a procesar | CONDITIONING | Sí | - |
+| `positivo_DEFAULT` | Los valores de condicionamiento positivo predeterminados a utilizar como respaldo | CONDITIONING | Sí | - |
+| `negativo_DEFAULT` | Los valores de condicionamiento negativo predeterminados a utilizar como respaldo | CONDITIONING | Sí | - |
+| `ganchos` | Grupo opcional de hooks para lógica de procesamiento personalizada | HOOKS | No | - |
 
 ## Salidas
 

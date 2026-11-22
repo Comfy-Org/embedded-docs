@@ -4,7 +4,7 @@
 
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `samples` | Il latente di texture da decodificare. Contiene le feature dei campioni e coordinate sparse, e può includere metadati opzionali come conteggi delle coordinate (`coord_counts`), frame del modello (`model_frame`, predefinito: "y_up") e risoluzione delle coordinate (`coord_resolution`). | LATENT | Sì | — |
+| `campioni` | Il latente di texture da decodificare. Contiene le feature dei campioni e coordinate sparse, e può includere metadati opzionali come conteggi delle coordinate (`coord_counts`), frame del modello (`model_frame`, predefinito: "y_up") e risoluzione delle coordinate (`coord_resolution`). | LATENT | Sì | — |
 | `vae` | Il VAE Trellis2 usato per decodificare il latente di texture in colori voxel. | VAE | Sì | — |
 | `shape_subdivides` | Informazioni sulla forma usate per guidare una ricostruzione più dettagliata durante la decodifica. Aiuta a preservare la coerenza della struttura a risoluzioni più elevate. | SHAPE_SUBDIVIDES | Sì | — |
 

@@ -6,13 +6,13 @@ Stellen Sie eine Ja/Nein-Frage zu dem Text, den Bildern, dem Audio oder dem Vide
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Zu verwendendes Modell. `heygen-decision-1-turbo` ist schneller und kostengünstiger als `heygen-decision-1` (Standard: `"heygen-decision-1"`). | COMBO | Ja | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | Die Ja/Nein-Frage zu dem, was verbunden ist, bis zu 5000 Zeichen. Formulieren Sie sie so, dass „Ja“ dem Fall entspricht, auf den Sie reagieren möchten (Standard: „Is there a person in the image?“). | STRING | Ja | 1 bis 5000 Zeichen |
-| `threshold` | Wahrscheinlichkeit für „Ja“, ab der `result` true wird; eindeutige Antworten liegen nahe bei 0 oder 1 (Standard: 0.5). | FLOAT | Ja | 0.01 bis 0.99 (Schritt 0.01) |
-| `images` | Bilder, zu denen die Frage gestellt wird, insgesamt bis zu 4, wobei jeder Frame eines Batches mitzählt. Sie werden über die Sockets hinweg in der Reihenfolge `image_1` bis `image_4` nummeriert. | IMAGE | Nein | Bis zu 4 Bilder |
+| `Modell` | Zu verwendendes Modell. `heygen-decision-1-turbo` ist schneller und kostengünstiger als `heygen-decision-1` (Standard: `"heygen-decision-1"`). | COMBO | Ja | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
+| `Frage` | Die Ja/Nein-Frage zu dem, was verbunden ist, bis zu 5000 Zeichen. Formulieren Sie sie so, dass „Ja“ dem Fall entspricht, auf den Sie reagieren möchten (Standard: „Is there a person in the image?“). | STRING | Ja | 1 bis 5000 Zeichen |
+| `Schwellenwert` | Wahrscheinlichkeit für „Ja“, ab der `result` true wird; eindeutige Antworten liegen nahe bei 0 oder 1 (Standard: 0.5). | FLOAT | Ja | 0.01 bis 0.99 (Schritt 0.01) |
+| `Bilder` | Bilder, zu denen die Frage gestellt wird, insgesamt bis zu 4, wobei jeder Frame eines Batches mitzählt. Sie werden über die Sockets hinweg in der Reihenfolge `image_1` bis `image_4` nummeriert. | IMAGE | Nein | Bis zu 4 Bilder |
 | `audio_1` | Audio, zu dem die Frage gestellt wird, bis zu 30 Minuten. | AUDIO | Nein | Bis zu 30 Minuten |
 | `video_1` | Video, zu dem die Frage gestellt wird, bis zu 60 Sekunden. | VIDEO | Nein | Bis zu 60 Sekunden |
-| `text` | Text, auf den sich die Frage bezieht, etwa ein Prompt oder eine LLM-Antwort, bis zu 20000 Zeichen. | STRING | Nein | Bis zu 20000 Zeichen |
+| `Text` | Text, auf den sich die Frage bezieht, etwa ein Prompt oder eine LLM-Antwort, bis zu 20000 Zeichen. | STRING | Nein | Bis zu 20000 Zeichen |
 
 Verbinden Sie mindestens eines von `text`, `images`, `audio_1` oder `video_1` und verweisen Sie innerhalb der Frage über den Socket-Namen darauf, zum Beispiel „Zeigt image_2 dieselbe Person wie image_1?“.
 

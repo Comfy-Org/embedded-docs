@@ -6,12 +6,12 @@ Erzeugt ein Video aus einem Standbild und einem Text-Prompt mit PixVerse. Der No
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `image` | Eingabebild, das in ein Video umgewandelt werden soll | IMAGE | Ja | - |
-| `prompt` | Prompt für die Videogenerierung (Standard: leerer String) | STRING | Ja | - |
-| `quality` | Videoqualitätseinstellung (Standard: res_540p) | COMBO | Ja | `res_540p`<br>`res_1080p` |
+| `Bild` | Eingabebild, das in ein Video umgewandelt werden soll | IMAGE | Ja | - |
+| `Prompt` | Prompt für die Videogenerierung (Standard: leerer String) | STRING | Ja | - |
+| `Qualität` | Videoqualitätseinstellung (Standard: res_540p) | COMBO | Ja | `res_540p`<br>`res_1080p` |
 | `duration_seconds` | Dauer des generierten Videos in Sekunden | COMBO | Ja | `dur_2`<br>`dur_5`<br>`dur_10` |
 | `motion_mode` | Bewegungsstil, der auf die Videogenerierung angewendet wird | COMBO | Ja | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` |
-| `seed` | Seed für die Videogenerierung (Standard: 0) | INT | Ja | 0-2147483647 |
+| `Seed` | Seed für die Videogenerierung (Standard: 0) | INT | Ja | 0-2147483647 |
 | `negative_prompt` | Optionale Textbeschreibung unerwünschter Elemente in einem Bild (Standard: leerer String) | STRING | Nein | - |
 | `pixverse_template` | Optionale Vorlage zur Beeinflussung des Generierungsstils, erstellt vom PixVerse Template-Node | CUSTOM | Nein | - |
 

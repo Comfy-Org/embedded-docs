@@ -8,7 +8,7 @@ Erzeugen Sie mit HeyGen Avatar 6 ein Video, in dem eine Person die angeschlossen
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modellauswahl; die Auswahl eines Modells blendet dessen Eingaben unten ein. `"heygen-avatar-6-turbo"` ist die günstigere, schnellere Stufe. | DYNAMIC_COMBO | Ja | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `Modell` | Modellauswahl; die Auswahl eines Modells blendet dessen Eingaben unten ein. `"heygen-avatar-6-turbo"` ist die günstigere, schnellere Stufe. | DYNAMIC_COMBO | Ja | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
 
 ### `heygen-avatar-6` Eingaben
 

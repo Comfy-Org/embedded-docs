@@ -6,8 +6,8 @@ Il nodo SamplerER_SDE fornisce metodi di campionamento specializzati per i model
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `solver_type` | Il tipo di solver da usare per il campionamento. Determina l'approccio matematico per il processo di diffusione (predefinito: "ER-SDE"). | COMBO | Sì | "ER-SDE"<br>"Reverse-time SDE"<br>"ODE" |
-| `max_stage` | Il numero massimo di stadi per il processo di campionamento (predefinito: 3). Controlla la complessità computazionale e la qualità. Questo è un parametro avanzato. | INT | Sì | 1-3 |
+| `tipo di risolutore` | Il tipo di solver da usare per il campionamento. Determina l'approccio matematico per il processo di diffusione (predefinito: "ER-SDE"). | COMBO | Sì | "ER-SDE"<br>"Reverse-time SDE"<br>"ODE" |
+| `fase massima` | Il numero massimo di stadi per il processo di campionamento (predefinito: 3). Controlla la complessità computazionale e la qualità. Questo è un parametro avanzato. | INT | Sì | 1-3 |
 | `eta` | Intensità stocastica delle SDE.<br>Quando eta=0, si riducono a un'ODE deterministica.<br>Valori elevati di eta possono causare output non validi. In questo caso, prova a diminuire questo valore. (predefinito: 1.0). Questo è un parametro avanzato. | FLOAT | Sì | 0.0-10.0 (passo: 0.01) |
 | `s_noise` | Fattore di scala del rumore per il processo di campionamento (predefinito: 1.0). Controlla la quantità di rumore applicata durante il campionamento. Questo è un parametro avanzato. | FLOAT | Sì | 0.0-100.0 (passo: 0.01) |
 

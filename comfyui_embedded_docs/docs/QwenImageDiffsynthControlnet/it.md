@@ -6,11 +6,11 @@ QwenImageDiffsynthControlnet applica una patch della rete di controllo di sintes
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `model` | Il modello di base su cui applicare la patch della rete di controllo | MODEL | Sì | - |
+| `modello` | Il modello di base su cui applicare la patch della rete di controllo | MODEL | Sì | - |
 | `model_patch` | Il modello patch della rete di controllo da applicare al modello di base | MODEL_PATCH | Sì | - |
 | `vae` | Il VAE (Variational Autoencoder) utilizzato nel processo di diffusione | VAE | Sì | - |
-| `image` | L'immagine di input utilizzata per guidare la rete di controllo. Vengono utilizzati solo i primi tre canali di colore (RGB); eventuali canali aggiuntivi vengono scartati | IMAGE | Sì | - |
-| `strength` | La forza dell'influenza della rete di controllo (predefinito: 1.0) | FLOAT | Sì | -10.0 a 10.0 (passo 0.01) |
+| `immagine` | L'immagine di input utilizzata per guidare la rete di controllo. Vengono utilizzati solo i primi tre canali di colore (RGB); eventuali canali aggiuntivi vengono scartati | IMAGE | Sì | - |
+| `forza` | La forza dell'influenza della rete di controllo (predefinito: 1.0) | FLOAT | Sì | -10.0 a 10.0 (passo 0.01) |
 | `mask` | Maschera opzionale che definisce le aree in cui applicare la rete di controllo. Per le patch DiffSynth e Z-Image, la maschera viene invertita internamente prima dell'uso | MASK | No | - |
 | `start_percent` | Il punto nel processo di denoising, come frazione del numero totale di passaggi di campionamento, in cui la rete di controllo inizia ad avere effetto (predefinito: 0.0) | FLOAT | No | 0.0 a 1.0 (passo 0.001) |
 | `end_percent` | Il punto nel processo di denoising in cui la rete di controllo smette di avere effetto (predefinito: 1.0) | FLOAT | No | 0.0 a 1.0 (passo 0.001) |

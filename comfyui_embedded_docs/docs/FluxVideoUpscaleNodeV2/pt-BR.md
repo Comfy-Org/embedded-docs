@@ -8,13 +8,13 @@ Flux Video Upscale amplia um vídeo com super-resolução FLUX, seja para um tam
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-----------|---------------|-------------|-----------|
-| `video` | Clipe de origem de 1 a 20 segundos e no máximo 50 MB, com pelo menos 64x64 pixels e proporção entre 1:4 e 4:1. A saída é renderizada em 24 fps e limitada a cerca de 14,4 megapixels por quadro. | VIDEO | Sim | duração de 1 a 20 segundos; proporção entre 1:4 e 4:1; mínimo de 64x64 pixels |
-| `target_resolution` | Tamanho da saída. `"1080p"`, `"2K"` e `"4K"` ajustam o resultado para caber em 1920x1080, 2560x1440 ou 3840x2160 pixels, com orientação ajustada para clipes verticais; `"by factor"` usa `upscale_factor` em vez disso. | DYNAMIC_COMBO | Sim | `"2K"`<br>`"4K"`<br>`"1080p"`<br>`"by factor"` |
-| `mode` | `"creative"` restaura e inventa detalhes finos, ideal para imagens geradas, texturas e cenários. `"precise"` realça a fonte sem alterá-la, para rostos, produtos e filmagens reais. (padrão: `"creative"`) | COMBO | Sim | `"creative"`<br>`"precise"` |
+| `vídeo` | Clipe de origem de 1 a 20 segundos e no máximo 50 MB, com pelo menos 64x64 pixels e proporção entre 1:4 e 4:1. A saída é renderizada em 24 fps e limitada a cerca de 14,4 megapixels por quadro. | VIDEO | Sim | duração de 1 a 20 segundos; proporção entre 1:4 e 4:1; mínimo de 64x64 pixels |
+| `resolução_alvo` | Tamanho da saída. `"1080p"`, `"2K"` e `"4K"` ajustam o resultado para caber em 1920x1080, 2560x1440 ou 3840x2160 pixels, com orientação ajustada para clipes verticais; `"by factor"` usa `upscale_factor` em vez disso. | DYNAMIC_COMBO | Sim | `"2K"`<br>`"4K"`<br>`"1080p"`<br>`"by factor"` |
+| `modo` | `"creative"` restaura e inventa detalhes finos, ideal para imagens geradas, texturas e cenários. `"precise"` realça a fonte sem alterá-la, para rostos, produtos e filmagens reais. (padrão: `"creative"`) | COMBO | Sim | `"creative"`<br>`"precise"` |
 | `prompt` | Descrição opcional do clipe que orienta o detalhe aprimorado. Deixe vazio para uma ampliação neutra. (padrão: vazio) | STRING | Sim | Texto multilinha |
-| `auto_downscale` | Reduz a escala de fontes grandes demais em vez de rejeitá-las: acima de 2560x1440 pixels de área, ou acima de dois terços da resolução de destino. A proporção é preservada. (padrão: true) | BOOLEAN | Sim | true<br>false |
-| `safety_tolerance` | Tolerância de moderação; 0 é o mais restritivo. (padrão: 2, parâmetro avançado) | INT | Sim | 0 a 4 |
-| `seed` | A seed controla se o nó deve ser executado novamente; o FLUX escolhe a própria seed, então os resultados reais são não determinísticos independentemente deste valor. (padrão: 42) | INT | Sim | 0 a 4294967295 |
+| `redução_automática` | Reduz a escala de fontes grandes demais em vez de rejeitá-las: acima de 2560x1440 pixels de área, ou acima de dois terços da resolução de destino. A proporção é preservada. (padrão: true) | BOOLEAN | Sim | true<br>false |
+| `tolerância_de_segurança` | Tolerância de moderação; 0 é o mais restritivo. (padrão: 2, parâmetro avançado) | INT | Sim | 0 a 4 |
+| `semente` | A seed controla se o nó deve ser executado novamente; o FLUX escolhe a própria seed, então os resultados reais são não determinísticos independentemente deste valor. (padrão: 42) | INT | Sim | 0 a 4294967295 |
 
 ### Entradas de by factor
 

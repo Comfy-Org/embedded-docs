@@ -6,7 +6,7 @@ Der Node StableCascade_StageB_Conditioning bereitet Konditionierungsdaten für d
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Die Konditionierungsdaten, die mit den vorherigen Informationen von Stage C modifiziert werden sollen. Jeder Eintrag in der Liste wird kopiert und erhält die Stage-C-Samples. | CONDITIONING | Ja | - |
+| `Konditionierung` | Die Konditionierungsdaten, die mit den vorherigen Informationen von Stage C modifiziert werden sollen. Jeder Eintrag in der Liste wird kopiert und erhält die Stage-C-Samples. | CONDITIONING | Ja | - |
 | `stage_c` | Die latente Repräsentation von Stage C. Ihr Wert `samples` wird als vorherige Information verwendet, die den Konditionierungsdaten hinzugefügt wird. | LATENT | Ja | - |
 
 ## Ausgaben

@@ -6,8 +6,8 @@ TomePatchModel wendet Token-Merging (ToMe) auf ein Diffusionsmodell an, um den R
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Diffusionsmodell, auf das Token-Merging angewendet werden soll | MODEL | Ja | - |
-| `ratio` | Der Anteil der Token, die zusammengeführt werden (Standard: 0.3). Höhere Werte führen dazu, dass mehr Token zusammengeführt werden, was zu einer stärkeren Beschleunigung, aber möglicherweise zu einer geringeren Qualität führen kann. | FLOAT | Ja | 0.0 - 1.0 |
+| `Modell` | Das Diffusionsmodell, auf das Token-Merging angewendet werden soll | MODEL | Ja | - |
+| `Verhältnis` | Der Anteil der Token, die zusammengeführt werden (Standard: 0.3). Höhere Werte führen dazu, dass mehr Token zusammengeführt werden, was zu einer stärkeren Beschleunigung, aber möglicherweise zu einer geringeren Qualität führen kann. | FLOAT | Ja | 0.0 - 1.0 |
 
 Hinweis: Wenn die Anzahl der Token in einem Aufmerksamkeitsblock klein genug ist, dass kein Downsampling erforderlich ist, werden die Merging-Funktionen durch No-Ops ersetzt, und das Modell wird für diesen Block unverändert ausgeführt.
 

@@ -6,8 +6,8 @@ Este nodo codifica un prompt de sistema y un prompt de usuario utilizando un mod
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `system_prompt` | Lumina2 proporciona dos tipos de prompts de sistema: Superior: Eres un asistente diseñado para generar imágenes superiores con el mayor grado de alineación imagen-texto basado en prompts textuales o prompts de usuario. Alignment: Eres un asistente diseñado para generar imágenes de alta calidad con el mayor grado de alineación imagen-texto basado en prompts textuales. | COMBO | Sí | `"superior"`<br>`"alignment"` |
-| `user_prompt` | El texto a codificar. Admite entrada de varias líneas y prompts dinámicos. | STRING | Sí | N/A |
+| `prompt_del_sistema` | Lumina2 proporciona dos tipos de prompts de sistema: Superior: Eres un asistente diseñado para generar imágenes superiores con el mayor grado de alineación imagen-texto basado en prompts textuales o prompts de usuario. Alignment: Eres un asistente diseñado para generar imágenes de alta calidad con el mayor grado de alineación imagen-texto basado en prompts textuales. | COMBO | Sí | `"superior"`<br>`"alignment"` |
+| `prompt_del_usuario` | El texto a codificar. Admite entrada de varias líneas y prompts dinámicos. | STRING | Sí | N/A |
 | `clip` | El modelo CLIP utilizado para codificar el texto. | CLIP | Sí | N/A |
 
 **Nota:** La entrada `clip` es obligatoria y no puede ser None. Si la entrada clip no es válida, el nodo generará un error indicando que el checkpoint puede no contener un modelo CLIP o de codificador de texto válido.

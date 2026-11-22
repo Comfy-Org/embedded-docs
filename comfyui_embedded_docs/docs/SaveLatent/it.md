@@ -6,8 +6,8 @@ SaveLatent salva i tensori latenti su disco come file `.latent`, così possono e
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `samples` | I campioni latenti da salvare su disco. | LATENT | Sì | - |
-| `filename_prefix` | Il prefisso usato per costruire il nome del file di output. Può includere sottocartelle, ad esempio "latents/ComfyUI" (predefinito: "latents/ComfyUI"). | STRING | Sì | - |
+| `campioni` | I campioni latenti da salvare su disco. | LATENT | Sì | - |
+| `prefisso_nome_file` | Il prefisso usato per costruire il nome del file di output. Può includere sottocartelle, ad esempio "latents/ComfyUI" (predefinito: "latents/ComfyUI"). | STRING | Sì | - |
 | `prompt` | Il prompt del workflow, serializzato come JSON e memorizzato nei metadati del file salvato (parametro nascosto, fornito automaticamente). | PROMPT | No | - |
 | `extra_pnginfo` | Informazioni aggiuntive del workflow, serializzate come JSON e memorizzate nei metadati del file salvato (parametro nascosto, fornito automaticamente). | EXTRA_PNGINFO | No | - |
 

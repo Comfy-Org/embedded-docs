@@ -6,13 +6,13 @@ Haz una pregunta de sí/no sobre el texto, las imágenes, el audio o el video qu
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Modelo a usar. `heygen-decision-1-turbo` es más rápido y cuesta menos que `heygen-decision-1` (predeterminado: `"heygen-decision-1"`). | COMBO | Sí | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | La pregunta de sí/no sobre lo que está conectado, hasta 5000 caracteres. Formúlala de modo que `"yes"` sea el caso sobre el que actúas (predeterminado: "Is there a person in the image?"). | STRING | Sí | 1 a 5000 caracteres |
-| `threshold` | Probabilidad de `"yes"` a la que `result` se vuelve verdadero; las respuestas claras se acercan a 0 o 1 (predeterminado: 0.5). | FLOAT | Sí | 0.01 a 0.99 (paso 0.01) |
-| `images` | Imágenes sobre las que preguntar, hasta 4 en total, contando cada fotograma de un lote. Se numeran de `image_1` a `image_4` en orden a través de los sockets. | IMAGE | No | Hasta 4 imágenes |
+| `modelo` | Modelo a usar. `heygen-decision-1-turbo` es más rápido y cuesta menos que `heygen-decision-1` (predeterminado: `"heygen-decision-1"`). | COMBO | Sí | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
+| `pregunta` | La pregunta de sí/no sobre lo que está conectado, hasta 5000 caracteres. Formúlala de modo que `"yes"` sea el caso sobre el que actúas (predeterminado: "Is there a person in the image?"). | STRING | Sí | 1 a 5000 caracteres |
+| `umbral` | Probabilidad de `"yes"` a la que `result` se vuelve verdadero; las respuestas claras se acercan a 0 o 1 (predeterminado: 0.5). | FLOAT | Sí | 0.01 a 0.99 (paso 0.01) |
+| `imágenes` | Imágenes sobre las que preguntar, hasta 4 en total, contando cada fotograma de un lote. Se numeran de `image_1` a `image_4` en orden a través de los sockets. | IMAGE | No | Hasta 4 imágenes |
 | `audio_1` | Audio sobre el que preguntar, hasta 30 minutos. | AUDIO | No | Hasta 30 minutos |
 | `video_1` | Video sobre el que preguntar, hasta 60 segundos. | VIDEO | No | Hasta 60 segundos |
-| `text` | Texto sobre el que trata la pregunta, como un prompt o una respuesta de un LLM, hasta 20000 caracteres. | STRING | No | Hasta 20000 caracteres |
+| `texto` | Texto sobre el que trata la pregunta, como un prompt o una respuesta de un LLM, hasta 20000 caracteres. | STRING | No | Hasta 20000 caracteres |
 
 Conecta al menos uno de `text`, `images`, `audio_1` o `video_1`, y refiérete a ellos por el nombre del socket dentro de la pregunta, por ejemplo: «¿image_2 muestra a la misma persona que image_1?».
 

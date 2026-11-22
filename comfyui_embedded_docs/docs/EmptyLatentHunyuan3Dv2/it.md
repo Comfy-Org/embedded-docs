@@ -6,8 +6,8 @@ Questo nodo crea un batch di campioni latenti vuoti (tutti zero) formattati per 
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 | --- | --- | --- | --- | --- |
-| `resolution` | La dimensione di risoluzione dello spazio latente da creare (predefinito: 3072) | INT | Sì | 1 - 8192 |
-| `batch_size` | Il numero di immagini latenti nel batch (predefinito: 1) | INT | Sì | 1 - 4096 |
+| `risoluzione` | La dimensione di risoluzione dello spazio latente da creare (predefinito: 3072) | INT | Sì | 1 - 8192 |
+| `dimensione_batch` | Il numero di immagini latenti nel batch (predefinito: 1) | INT | Sì | 1 - 4096 |
 
 ## Output
 

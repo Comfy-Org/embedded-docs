@@ -6,15 +6,15 @@ El nodo Magnific Image Relight ajusta la iluminación de una imagen de entrada. 
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `image` | La imagen a reiluminar. Se requiere exactamente una imagen. Las dimensiones mínimas son 160x160 píxeles. La relación de aspecto debe estar entre 1:3 y 3:1. | IMAGE | Sí | N/A |
+| `imagen` | La imagen a reiluminar. Se requiere exactamente una imagen. Las dimensiones mínimas son 160x160 píxeles. La relación de aspecto debe estar entre 1:3 y 3:1. | IMAGE | Sí | N/A |
 | `prompt` | Guía descriptiva para la iluminación. Admite notación de énfasis (1-1.4). El valor predeterminado es una cadena vacía. | STRING | No | N/A |
-| `light_transfer_strength` | Intensidad de la aplicación de transferencia de luz. Valor predeterminado: 100. | INT | Sí | 0 a 100 |
-| `style` | Preferencia de resultado estilístico. | COMBO | Sí | `"standard"`<br>`"darker_but_realistic"`<br>`"clean"`<br>`"smooth"`<br>`"brighter"`<br>`"contrasted_n_hdr"`<br>`"just_composition"` |
-| `interpolate_from_original` | Restringe la libertad de generación para que coincida más con el original. Valor predeterminado: Falso. | BOOLEAN | Sí | N/A |
-| `change_background` | Modifica el fondo según el mensaje o la referencia. Valor predeterminado: Verdadero. | BOOLEAN | Sí | N/A |
-| `preserve_details` | Mantiene la textura y los detalles finos del original. Valor predeterminado: Verdadero. | BOOLEAN | Sí | N/A |
-| `advanced_settings` | Opciones de ajuste fino para el control avanzado de iluminación. Cuando se establece en `"enabled"`, los parámetros adicionales estarán disponibles. | DYNAMICCOMBO | Sí | `"disabled"`<br>`"enabled"` |
-| `reference_image` | Imagen de referencia opcional para transferir la iluminación. Si se proporciona, se requiere exactamente una imagen. Las dimensiones mínimas son 160x160 píxeles. La relación de aspecto debe estar entre 1:3 y 3:1. | IMAGE | No | N/A |
+| `fuerza_de_transferencia_de_luz` | Intensidad de la aplicación de transferencia de luz. Valor predeterminado: 100. | INT | Sí | 0 a 100 |
+| `estilo` | Preferencia de resultado estilístico. | COMBO | Sí | `"standard"`<br>`"darker_but_realistic"`<br>`"clean"`<br>`"smooth"`<br>`"brighter"`<br>`"contrasted_n_hdr"`<br>`"just_composition"` |
+| `interpolar_desde_original` | Restringe la libertad de generación para que coincida más con el original. Valor predeterminado: Falso. | BOOLEAN | Sí | N/A |
+| `cambiar_fondo` | Modifica el fondo según el mensaje o la referencia. Valor predeterminado: Verdadero. | BOOLEAN | Sí | N/A |
+| `preservar_detalles` | Mantiene la textura y los detalles finos del original. Valor predeterminado: Verdadero. | BOOLEAN | Sí | N/A |
+| `ajustes_avanzados` | Opciones de ajuste fino para el control avanzado de iluminación. Cuando se establece en `"enabled"`, los parámetros adicionales estarán disponibles. | DYNAMICCOMBO | Sí | `"disabled"`<br>`"enabled"` |
+| `imagen_de_referencia` | Imagen de referencia opcional para transferir la iluminación. Si se proporciona, se requiere exactamente una imagen. Las dimensiones mínimas son 160x160 píxeles. La relación de aspecto debe estar entre 1:3 y 3:1. | IMAGE | No | N/A |
 
 **Nota sobre la Configuración Avanzada:** Cuando `advanced_settings` se establece en `"enabled"`, los siguientes parámetros anidados se activan:
 
