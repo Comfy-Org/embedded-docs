@@ -6,9 +6,9 @@ Ce nœud génère un effet sonore à partir d'une description textuelle avec Pik
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `prompt` | Description de l'effet sonore souhaité. Ne doit pas être vide. Par défaut : "" (chaîne vide). | STRING | Oui | 1 à 4000 caractères |
-| `duration` | Durée de l'effet sonore en secondes. Par défaut : 5.0. | FLOAT | Oui | 1.0 à 20.0 (pas : 0.1) |
-| `seed` | Graine pour l'échantillonnage. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
+| `invite` | Description de l'effet sonore souhaité. Ne doit pas être vide. Par défaut : "" (chaîne vide). | STRING | Oui | 1 à 4000 caractères |
+| `durée` | Durée de l'effet sonore en secondes. Par défaut : 5.0. | FLOAT | Oui | 1.0 à 20.0 (pas : 0.1) |
+| `graine` | Graine pour l'échantillonnage. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
 
 ## Sorties
 

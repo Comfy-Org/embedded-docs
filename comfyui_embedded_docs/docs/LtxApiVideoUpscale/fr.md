@@ -6,9 +6,9 @@ Agrandit une vidéo à 1080p, 4K ou 8K, en conservant son rapport d'aspect, sa f
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `video` | Vidéo à agrandir, avec un petit côté d'au moins 480 pixels et au plus 7680x4320 dans les deux orientations. Jusqu'à 2401 images pour 1080p, 601 images pour 4K et 241 images pour 8K. | VIDEO | Oui | - |
-| `resolution` | Taille de sortie, aussi grande que possible dans 1920x1080, 3840x2160 ou 7680x4320 et orientée pour les vidéos portrait. Par défaut : `"4k"`. | COMBO | Oui | `"1080p"`<br>`"4k"`<br>`"8k"` |
-| `seed` | Contrôle si le nœud est réexécuté ; les résultats sont non déterministes quel que soit le seed. Par défaut : 42. | INT | Non | 0 à 4294967295 |
+| `vidéo` | Vidéo à agrandir, avec un petit côté d'au moins 480 pixels et au plus 7680x4320 dans les deux orientations. Jusqu'à 2401 images pour 1080p, 601 images pour 4K et 241 images pour 8K. | VIDEO | Oui | - |
+| `résolution` | Taille de sortie, aussi grande que possible dans 1920x1080, 3840x2160 ou 7680x4320 et orientée pour les vidéos portrait. Par défaut : `"4k"`. | COMBO | Oui | `"1080p"`<br>`"4k"`<br>`"8k"` |
+| `graine` | Contrôle si le nœud est réexécuté ; les résultats sont non déterministes quel que soit le seed. Par défaut : 42. | INT | Non | 0 à 4294967295 |
 
 ## Sorties
 

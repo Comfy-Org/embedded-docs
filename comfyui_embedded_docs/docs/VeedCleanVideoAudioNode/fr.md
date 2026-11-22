@@ -6,9 +6,9 @@ Supprimez le bruit de fond de la parole dans une vidéo avec VEED. Seule la band
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `video` | Vidéo avec une bande-son de parole, d'une durée inférieure à 30 minutes. La vidéo doit avoir une piste audio. | VIDEO | Oui | Jusqu'à 1799 secondes |
-| `strength` | Quantité de bruit supprimée sous la parole. Une valeur plus faible conserve davantage de bruit ambiant derrière la voix ; les pauses entre les mots sont toujours entièrement nettoyées, et les valeurs supérieures à la valeur par défaut modifient peu le résultat. (valeur par défaut : 0.874) | FLOAT | Oui | 0.0 à 1.0 (incrément de 0.001) |
-| `loudness` | Indique s'il faut normaliser l'intensité sonore de la parole. `"normalize"` la définit sur `target_lufs` ; `"keep input level"` laisse le niveau tel quel. La sélection d'une option révèle ses paramètres. (valeur par défaut : `"normalize"`) | DYNAMIC_COMBO | Oui | `"normalize"`<br>`"keep input level"` |
+| `vidéo` | Vidéo avec une bande-son de parole, d'une durée inférieure à 30 minutes. La vidéo doit avoir une piste audio. | VIDEO | Oui | Jusqu'à 1799 secondes |
+| `force` | Quantité de bruit supprimée sous la parole. Une valeur plus faible conserve davantage de bruit ambiant derrière la voix ; les pauses entre les mots sont toujours entièrement nettoyées, et les valeurs supérieures à la valeur par défaut modifient peu le résultat. (valeur par défaut : 0.874) | FLOAT | Oui | 0.0 à 1.0 (incrément de 0.001) |
+| `sonie` | Indique s'il faut normaliser l'intensité sonore de la parole. `"normalize"` la définit sur `target_lufs` ; `"keep input level"` laisse le niveau tel quel. La sélection d'une option révèle ses paramètres. (valeur par défaut : `"normalize"`) | DYNAMIC_COMBO | Oui | `"normalize"`<br>`"keep input level"` |
 | `target_lufs` | Intensité sonore intégrée de la parole nettoyée en LUFS. Les crêtes sont plafonnées à -1.1 dBTP, de sorte que les cibles fortes s'arrêtent tôt (environ -15 LUFS pour une parole typique). Disponible lorsque `loudness` vaut `"normalize"` (valeur par défaut : -19.0). | FLOAT | Oui | -40.0 à -8.0 (incrément de 0.1) |
 
 Le nœud s'arrête avec une erreur lorsque le clip dure plus de 1799 secondes et lorsque la vidéo ne contient pas de piste audio.

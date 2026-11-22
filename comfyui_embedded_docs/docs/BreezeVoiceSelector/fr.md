@@ -6,7 +6,7 @@ Sélectionne une voix Breeze mise en avant, ou tout identifiant de voix Breeze, 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `language` | Groupe de langues des voix mises en avant, ou `custom` pour saisir un identifiant. Par défaut : `"English"`. | DYNAMIC_COMBO | Oui | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
+| `langue` | Groupe de langues des voix mises en avant, ou `custom` pour saisir un identifiant. Par défaut : `"English"`. | DYNAMIC_COMBO | Oui | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
 
 ### Entrées pour la langue "English", "Chinese" et "Japanese"
 

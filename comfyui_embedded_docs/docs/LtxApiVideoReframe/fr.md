@@ -6,10 +6,10 @@ Recadre une vidéo vers une nouvelle résolution et un nouveau rapport d’aspec
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
-| `video` | Vidéo à recadrer, jusqu’à 60 secondes et 1800 images, chaque côté mesurant entre 64 et 4096 pixels. | VIDEO | Oui | - |
-| `resolution` | Taille et rapport d’aspect de sortie, en 720p ou 1080p. Par défaut : `"(1080p) 1080x1920 (9:16)"`. | COMBO | Oui | `"(720p) 720x720 (1:1)"`<br>`"(720p) 720x900 (4:5)"`<br>`"(720p) 900x720 (5:4)"`<br>`"(720p) 720x1280 (9:16)"`<br>`"(720p) 1280x720 (16:9)"`<br>`"(1080p) 1080x1080 (1:1)"`<br>`"(1080p) 1080x1350 (4:5)"`<br>`"(1080p) 1350x1080 (5:4)"`<br>`"(1080p) 1080x1920 (9:16)"`<br>`"(1080p) 1920x1080 (16:9)"` |
-| `placement` | Emplacement de la vidéo d’origine dans le nouveau cadre. La vidéo remplit toujours un côté du cadre ; le point d’ancrage ne la déplace donc que le long de l’autre côté. Par défaut : `"center"`. | DYNAMIC_COMBO | Oui | `"center"`<br>`"top"`<br>`"bottom"`<br>`"left"`<br>`"right"`<br>`"custom"` |
-| `seed` | Contrôle si le nœud est réexécuté ; les résultats ne sont pas déterministes, quelle que soit la graine. Par défaut : 42. | INT | Non | 0 à 4294967295 |
+| `vidéo` | Vidéo à recadrer, jusqu’à 60 secondes et 1800 images, chaque côté mesurant entre 64 et 4096 pixels. | VIDEO | Oui | - |
+| `résolution` | Taille et rapport d’aspect de sortie, en 720p ou 1080p. Par défaut : `"(1080p) 1080x1920 (9:16)"`. | COMBO | Oui | `"(720p) 720x720 (1:1)"`<br>`"(720p) 720x900 (4:5)"`<br>`"(720p) 900x720 (5:4)"`<br>`"(720p) 720x1280 (9:16)"`<br>`"(720p) 1280x720 (16:9)"`<br>`"(1080p) 1080x1080 (1:1)"`<br>`"(1080p) 1080x1350 (4:5)"`<br>`"(1080p) 1350x1080 (5:4)"`<br>`"(1080p) 1080x1920 (9:16)"`<br>`"(1080p) 1920x1080 (16:9)"` |
+| `positionnement` | Emplacement de la vidéo d’origine dans le nouveau cadre. La vidéo remplit toujours un côté du cadre ; le point d’ancrage ne la déplace donc que le long de l’autre côté. Par défaut : `"center"`. | DYNAMIC_COMBO | Oui | `"center"`<br>`"top"`<br>`"bottom"`<br>`"left"`<br>`"right"`<br>`"custom"` |
+| `graine` | Contrôle si le nœud est réexécuté ; les résultats ne sont pas déterministes, quelle que soit la graine. Par défaut : 42. | INT | Non | 0 à 4294967295 |
 
 ### Entrées de placement « custom »
 

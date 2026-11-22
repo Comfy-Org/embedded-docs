@@ -7,9 +7,9 @@ VSR Decode transforme les latents d’images clés de RelayVSR Conditioning en u
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `vae` | Le décodeur RelayVSR Flash, chargé avec Load VAE : `relayvsr_flash_vae_x2_fp32.safetensors` ou `relayvsr_flash_vae_x4_fp32.safetensors`. Le facteur d’agrandissement est défini par les métadonnées du fichier ; il doit donc correspondre au modèle. | VAE | Oui | N/A |
-| `samples` | Le latent renvoyé par l’échantillonneur, contenant une image par image clé. | LATENT | Oui | N/A |
+| `échantillons` | Le latent renvoyé par l’échantillonneur, contenant une image par image clé. | LATENT | Oui | N/A |
 | `images` | La même vidéo de basse qualité que celle fournie à RelayVSR Conditioning. | IMAGE | Oui | N/A |
-| `detail` | Part de détail du décodeur conservée par-dessus l’agrandissement bicubique : 1 correspond à la sortie complète du modèle, 0 à l’agrandissement simple. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
+| `détail` | Part de détail du décodeur conservée par-dessus l’agrandissement bicubique : 1 correspond à la sortie complète du modèle, 0 à l’agrandissement simple. (par défaut : 1.0) | FLOAT | Oui | 0.0 à 1.0 (pas : 0.01) |
 
 ## Sorties
 

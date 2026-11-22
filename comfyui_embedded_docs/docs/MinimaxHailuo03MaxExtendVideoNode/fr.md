@@ -8,7 +8,7 @@ Ce nœud poursuit une vidéo avec de nouvelles séquences guidées par un prompt
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Modèle à utiliser pour poursuivre la vidéo. Les deux modèles exposent les mêmes entrées ci-dessous. | DYNAMIC_COMBO | Oui | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `modèle` | Modèle à utiliser pour poursuivre la vidéo. Les deux modèles exposent les mêmes entrées ci-dessous. | DYNAMIC_COMBO | Oui | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
 
 ### Entrées du modèle
 

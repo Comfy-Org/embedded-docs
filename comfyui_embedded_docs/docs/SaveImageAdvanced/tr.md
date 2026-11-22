@@ -8,8 +8,8 @@
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `images` | Kaydedilecek görüntüler. | IMAGE | Evet | - |
-| `filename_prefix` | Kaydedilecek dosya için önek. `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme belirteçleri içerebilir. (varsayılan: "ComfyUI") | STRING | Evet | - |
+| `görüntüler` | Kaydedilecek görüntüler. | IMAGE | Evet | - |
+| `dosya_adı_ön_eki` | Kaydedilecek dosya için önek. `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme belirteçleri içerebilir. (varsayılan: "ComfyUI") | STRING | Evet | - |
 | `format` | Görüntünün kaydedileceği dosya biçimi. Bir biçim seçmek, o biçime özel ek seçenekleri gösterir. | DYNAMIC_COMBO | Evet | `"png"`<br>`"exr"`<br>`"avif"` |
 
 ### PNG Girdileri

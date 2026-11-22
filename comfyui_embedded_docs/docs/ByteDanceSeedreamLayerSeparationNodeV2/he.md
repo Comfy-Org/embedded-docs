@@ -8,7 +8,7 @@ ByteDance Seedream 5.0 Layer Separation מפרק תמונה לרקע בסיסי 
 
 | פרמטר | תיאור | סוג נתונים | נדרש | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `model` | מודל ה-Seedream המשמש להפרדה. "seedream 5.0 pro" (ברירת מחדל) מספק את איכות ההפרדה הגבוהה ביותר וגם חושף בקרת `prompt_optimization`; "seedream 5.0 flash" מהיר וזול יותר ואין לו בקרת אופטימיזציית פרומפט. | DYNAMIC_COMBO | כן | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash" |
+| `מודל` | מודל ה-Seedream המשמש להפרדה. "seedream 5.0 pro" (ברירת מחדל) מספק את איכות ההפרדה הגבוהה ביותר וגם חושף בקרת `prompt_optimization`; "seedream 5.0 flash" מהיר וזול יותר ואין לו בקרת אופטימיזציית פרומפט. | DYNAMIC_COMBO | כן | "seedream 5.5"<br>"seedream 5.0 pro"<br>"seedream 5.0 flash" |
 
 ### קלטים של Seedream 5.0 Pro ו-5.0 Flash
 

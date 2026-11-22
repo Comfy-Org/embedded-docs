@@ -6,7 +6,7 @@ Ce nœud génère des réponses textuelles avec le modèle Hy4 de Tencent. Il en
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle utilisé pour générer la réponse. Sa sélection révèle ses entrées ci-dessous. Par défaut : `"Hy4"`. | DYNAMIC_COMBO | Oui | `"Hy4"` |
+| `modèle` | Le modèle utilisé pour générer la réponse. Sa sélection révèle ses entrées ci-dessous. Par défaut : `"Hy4"`. | DYNAMIC_COMBO | Oui | `"Hy4"` |
 
 ### Entrées Hy4
 

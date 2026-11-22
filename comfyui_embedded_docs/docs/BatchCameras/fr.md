@@ -6,7 +6,7 @@ Associe les caméras et les orbites de caméra en une seule liste de caméras, d
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
-| `cameras` | Emplacement extensible de caméras, depuis Create Camera Info, Create Camera Orbit ou une visionneuse. Une liste de caméras équivaut à toutes les caméras qu'elle contient. | AUTOGROW | Oui | 1 à 50 caméras |
+| `caméras` | Emplacement extensible de caméras, depuis Create Camera Info, Create Camera Orbit ou une visionneuse. Une liste de caméras équivaut à toutes les caméras qu'elle contient. | AUTOGROW | Oui | 1 à 50 caméras |
 
 ## Sorties
 

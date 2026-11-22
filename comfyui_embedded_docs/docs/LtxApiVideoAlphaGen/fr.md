@@ -6,8 +6,8 @@ Extrait un masque alpha en niveaux de gris, blanc pour le premier plan, qui corr
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
-| `video` | Vidéo à convertir en masque, jusqu’à 10 secondes et 3840x2160 dans l’une ou l’autre orientation. | VIDEO | Oui | - |
-| `seed` | Contrôle si le nœud est réexécuté ; les résultats ne sont pas déterministes quelle que soit la valeur de `seed`. Par défaut : 42. | INT | Non | 0 à 4294967295 |
+| `vidéo` | Vidéo à convertir en masque, jusqu’à 10 secondes et 3840x2160 dans l’une ou l’autre orientation. | VIDEO | Oui | - |
+| `graine` | Contrôle si le nœud est réexécuté ; les résultats ne sont pas déterministes quelle que soit la valeur de `seed`. Par défaut : 42. | INT | Non | 0 à 4294967295 |
 
 ## Sorties
 

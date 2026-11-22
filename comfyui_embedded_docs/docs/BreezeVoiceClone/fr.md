@@ -7,8 +7,8 @@ Crée une voix Breeze à partir d'un enregistrement d'un seul locuteur. La voix 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `audio` | Enregistrement d'un seul locuteur, d'une durée minimale de 3 secondes. Seules les 60 premières secondes sont utilisées. | AUDIO | Oui | - |
-| `remove_background_noise` | Nettoie l'enregistrement avant le clonage. Par défaut : false. | BOOLEAN | Non | true<br>false |
-| `seed` | Contrôle si le nœud est réexécuté ; les résultats ne sont pas déterministes quelle que soit la valeur de `seed`. Par défaut : 42. | INT | Non | 0 à 2147483647 |
+| `supprimer_le_bruit_de_fond` | Nettoie l'enregistrement avant le clonage. Par défaut : false. | BOOLEAN | Non | true<br>false |
+| `graine` | Contrôle si le nœud est réexécuté ; les résultats ne sont pas déterministes quelle que soit la valeur de `seed`. Par défaut : 42. | INT | Non | 0 à 2147483647 |
 
 ## Sorties
 

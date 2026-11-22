@@ -6,13 +6,13 @@ Choisissez l'une de vos propres options pour le texte, les images, l'audio ou la
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser (par défaut : `"gemini-decision-1"`). | COMBO | Oui | `"gemini-decision-1"` |
+| `modèle` | Modèle à utiliser (par défaut : `"gemini-decision-1"`). | COMBO | Oui | `"gemini-decision-1"` |
 | `question` | La question à laquelle les options répondent, jusqu'à 5000 caractères (par défaut : "What style is the image?"). | STRING | Oui | 1 à 5000 caractères |
 | `options` | Une option par ligne, utilisée exactement telle qu'elle est saisie, jusqu'à 128 caractères chacune. Ajoutez une option telle que `other` pour les entrées qui ne correspondent à aucune d'elles (par défaut : `photo`, `illustration`, `3d render`, `anime`, `sketch`, `other`). | STRING | Oui | 2 à 255 options |
 | `images` | Images à classer, jusqu'à 16 sur l'ensemble des emplacements extensibles (`image_1` ... `image_16`). Une image fournie dans un lot compte une fois par image. | IMAGE | Non | Jusqu'à 16 images |
 | `audio` | Clip audio à classer. | AUDIO | Non | - |
-| `video` | Clip vidéo à classer. | VIDEO | Non | - |
-| `text` | Texte auquel la question se rapporte, tel qu'un prompt ou une réponse de LLM, jusqu'à 20000 caractères. | STRING | Non | Jusqu'à 20000 caractères |
+| `vidéo` | Clip vidéo à classer. | VIDEO | Non | - |
+| `texte` | Texte auquel la question se rapporte, tel qu'un prompt ou une réponse de LLM, jusqu'à 20000 caractères. | STRING | Non | Jusqu'à 20000 caractères |
 
 Indiquez au moins 2 options et au plus 255 options, sans en lister aucune deux fois ; dans le cas contraire, le nœud génère une erreur. Connectez au moins l'un des éléments `text`, `images`, `audio` ou `video`, et nommez plusieurs images `image_1`, `image_2`, etc. dans la question.
 

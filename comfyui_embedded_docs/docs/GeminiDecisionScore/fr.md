@@ -6,13 +6,13 @@
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser (par défaut : `"gemini-decision-1"`). | COMBO | Oui | `"gemini-decision-1"` |
+| `modèle` | Modèle à utiliser (par défaut : `"gemini-decision-1"`). | COMBO | Oui | `"gemini-decision-1"` |
 | `question` | Ce qu’il faut évaluer, en précisant ce que signifient 1 et 10 (par défaut : « Rate the technical quality of the image from 1 (worst) to 10 (best). »). | STRING | Oui | 1 à 5000 caractères |
-| `threshold` | `result` vaut True lorsque le score est au moins égal à cette valeur. Des images nettes et bien définies obtiennent environ 7 à 8, des images fortement endommagées environ 3 à 5 (par défaut : 6.0). | FLOAT | Oui | 1.0 à 10.0 (pas : 0.1) |
+| `seuil` | `result` vaut True lorsque le score est au moins égal à cette valeur. Des images nettes et bien définies obtiennent environ 7 à 8, des images fortement endommagées environ 3 à 5 (par défaut : 6.0). | FLOAT | Oui | 1.0 à 10.0 (pas : 0.1) |
 | `images` | Images à évaluer, jusqu’à 16 réparties entre les emplacements extensibles (`image_1` ... `image_16`). Une image faisant partie d’un lot compte une fois par image. | IMAGE | Non | Jusqu’à 16 images |
 | `audio` | Clip audio à évaluer. | AUDIO | Non | - |
-| `video` | Clip vidéo à évaluer. | VIDEO | Non | - |
-| `text` | Texte sur lequel porte la question, comme un prompt ou une réponse de LLM, jusqu’à 20000 caractères. | STRING | Non | Jusqu’à 20000 caractères |
+| `vidéo` | Clip vidéo à évaluer. | VIDEO | Non | - |
+| `texte` | Texte sur lequel porte la question, comme un prompt ou une réponse de LLM, jusqu’à 20000 caractères. | STRING | Non | Jusqu’à 20000 caractères |
 
 Connectez au moins l’un des éléments `text`, `images`, `audio` ou `video` ; le nœud lève une erreur lorsqu’il n’y a rien à évaluer. Avec plusieurs images, nommez-les `image_1`, `image_2`, etc. dans la question.
 

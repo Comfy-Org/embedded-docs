@@ -6,11 +6,11 @@ Yazılı bir açıklamadan yeni bir Breeze sesi oluşturur. Sesin bir açıklama
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `description` | Sesin 3 ile 500 karakter arası açıklaması: yaş, cinsiyet, aksan, ton, hız. Varsayılan: boş. | STRING | Evet | 3 ile 500 karakter arası |
-| `preview_text` | Yeni sesin önizlemede konuşacağı satır, en fazla 500 karakter. Seçilen dilde yazın, çünkü ses bu önizlemeden oluşturulur. Varsayılan: boş. | STRING | Evet | 1 ile 500 karakter arası |
-| `language` | Önizleme metninin dili. İngilizce ve Çince her iki modeli de kullanabilir; diğer diller Breeze TTS 2 Multilingual kullanır. | DYNAMIC_COMBO | Evet | Birden çok seçenek mevcut |
-| `strength` | Sesin açıklamaya ne kadar sıkı uyduğu. Varsayılan: 4.0. | FLOAT | Hayır | 1.0 ile 10.0 arası (adım: 0.1) |
-| `seed` | Düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak belirleyici değildir. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 arası |
+| `açıklama` | Sesin 3 ile 500 karakter arası açıklaması: yaş, cinsiyet, aksan, ton, hız. Varsayılan: boş. | STRING | Evet | 3 ile 500 karakter arası |
+| `önizleme_metni` | Yeni sesin önizlemede konuşacağı satır, en fazla 500 karakter. Seçilen dilde yazın, çünkü ses bu önizlemeden oluşturulur. Varsayılan: boş. | STRING | Evet | 1 ile 500 karakter arası |
+| `dil` | Önizleme metninin dili. İngilizce ve Çince her iki modeli de kullanabilir; diğer diller Breeze TTS 2 Multilingual kullanır. | DYNAMIC_COMBO | Evet | Birden çok seçenek mevcut |
+| `güç` | Sesin açıklamaya ne kadar sıkı uyduğu. Varsayılan: 4.0. | FLOAT | Hayır | 1.0 ile 10.0 arası (adım: 0.1) |
+| `tohum` | Düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak belirleyici değildir. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 arası |
 
 ### Dil "English" ve "Chinese" Girdileri
 

@@ -7,9 +7,9 @@ Render edilmiş görüntüleri mesh'in UV düzenine geri yansıtır. Mesh'i Rend
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `mesh` | Render edilen, UV'si açılmış mesh. | MESH | Evet | - |
-| `images` | Kamera başına bir görüntü, kamera sırasına göre (Batch Images). Render'ın en-boy oranına sahip herhangi bir çözünürlük; daha yüksek olması daha keskin bir bake verir. | IMAGE | Evet | - |
+| `görüntüler` | Kamera başına bir görüntü, kamera sırasına göre (Batch Images). Render'ın en-boy oranına sahip herhangi bir çözünürlük; daha yüksek olması daha keskin bir bake verir. | IMAGE | Evet | - |
 | `camera_info` | Görüntülerin render edildiği kameralar; Render Mesh'e bağlandığı şekilde. Rig'leri Batch Cameras ile birleştirin. Yok: Render Mesh'in otomatik çerçevelenmiş ön görünümü. | LOAD3D_CAMERA | Hayır | - |
-| `resolution` | Kare doku çözünürlüğü. 0, mesh'in mevcut doku boyutunu korur; doku yoksa 2048 olur; aksi halde mevcut doku bu değere yeniden örneklenir. Varsayılan: 0. | INT | Hayır | 0 ile 8192 arası (adım: 64) |
+| `çözünürlük` | Kare doku çözünürlüğü. 0, mesh'in mevcut doku boyutunu korur; doku yoksa 2048 olur; aksi halde mevcut doku bu değere yeniden örneklenir. Varsayılan: 0. | INT | Hayır | 0 ile 8192 arası (adım: 64) |
 | `blend_exponent` | Görünümler cos(görüş açısı)^üs ile ağırlıklandırılır. Daha yüksek değer en doğrudan görünümü tercih eder (daha keskin, daha sert dikişler); daha düşük değer daha fazla görünümün ortalamasını alır (daha yumuşak). Varsayılan: 4.0. | FLOAT | Hayır | 0.0 ile 32.0 arası (adım: 0.5) |
 | `fill_unseen` | Hiçbir görünümün görmediği texel'ler, mesh'in kendi dokusu veya köşe renkleri yerine görülen yüzeyden genişletilen renk alır. Görünümler tüm dokuyu değiştirdiğinde bunu kullanın. Varsayılan: false. | BOOLEAN | Hayır | true<br>false |
 | `mask` | Görünüm başına düzenlenen alanlar; yalnızca maskelenmiş pikseller yansıtılır. Tek bir maske her görünüme uygulanır. | MASK | Hayır | - |

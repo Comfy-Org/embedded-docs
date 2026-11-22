@@ -8,7 +8,7 @@ Générez une image verticale avec Kling 4.0 : une maquette complète de page we
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------------|-------------|-------|
-| `skill` | Mise en page à générer. `"webpage"` conçoit une page complète autour d’une image de style et d’un sujet facultatifs ; `"ecommerce"` construit une page de détail produit à partir de photos de produit. | DYNAMIC_COMBO | Oui | `"webpage"`<br>`"ecommerce"` |
+| `compétence` | Mise en page à générer. `"webpage"` conçoit une page complète autour d’une image de style et d’un sujet facultatifs ; `"ecommerce"` construit une page de détail produit à partir de photos de produit. | DYNAMIC_COMBO | Oui | `"webpage"`<br>`"ecommerce"` |
 
 ### Entrées `webpage`
 

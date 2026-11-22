@@ -6,9 +6,9 @@ Creatify Aurora 2.0 Avatar, tek bir fotoğraf ile bir konuşma veya şarkı klib
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|----------|-------|
-| `image` | Canlandırılacak kişinin fotoğrafı. Her iki kenar en az 256 piksel ve en-boy oranı 1:4 ile 4:1 arasında olmalıdır; video, fotoğrafın en-boy oranını korur. | IMAGE | Evet | - |
-| `audio` | Ağzı ve videonun uzunluğunu yönlendiren konuşma veya şarkı. En fazla 60 saniye veya `"2k"` çözünürlüğünde 14 saniye; başlatılan her saniye için ücretlendirilir. | AUDIO | Evet | En fazla 60 saniye |
-| `resolution` | Çıktı videosunun çözünürlüğü (varsayılan: `"720p"`). | COMBO | Evet | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"2k"` |
+| `görüntü` | Canlandırılacak kişinin fotoğrafı. Her iki kenar en az 256 piksel ve en-boy oranı 1:4 ile 4:1 arasında olmalıdır; video, fotoğrafın en-boy oranını korur. | IMAGE | Evet | - |
+| `ses` | Ağzı ve videonun uzunluğunu yönlendiren konuşma veya şarkı. En fazla 60 saniye veya `"2k"` çözünürlüğünde 14 saniye; başlatılan her saniye için ücretlendirilir. | AUDIO | Evet | En fazla 60 saniye |
+| `çözünürlük` | Çıktı videosunun çözünürlüğü (varsayılan: `"720p"`). | COMBO | Evet | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"2k"` |
 | `text_prompt` | Çekim için sahne, kamera, ışık, ifade veya hareket. Boş bırakıldığında fotoğraf olduğu gibi kalır (varsayılan: boş dize). | STRING | Evet | Herhangi bir metin |
 | `seed` | Seed, düğümün yeniden çalışıp çalışmayacağını kontrol eder. Sonuçlar seed değerinden bağımsız olarak deterministik değildir (varsayılan: 42). | INT | Evet | 0 ile 2147483647 arası |
 

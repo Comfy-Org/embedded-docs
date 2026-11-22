@@ -6,14 +6,14 @@ Ajoute les cartes de régions de couleur et de profondeur d’un adaptateur de c
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `positive` | Conditionnement positif auquel attacher le signal de contrôle. | CONDITIONING | Oui | N/A |
-| `negative` | Conditionnement négatif auquel attacher le signal de contrôle. | CONDITIONING | Oui | N/A |
+| `positif` | Conditionnement positif auquel attacher le signal de contrôle. | CONDITIONING | Oui | N/A |
+| `négatif` | Conditionnement négatif auquel attacher le signal de contrôle. | CONDITIONING | Oui | N/A |
 | `vae` | VAE utilisé pour encoder les cartes en latents. | VAE | Oui | N/A |
-| `color_map` | Une couleur unie par région, à la taille de sortie. Les couleurs servent uniquement d’identifiants de région. | IMAGE | Non | N/A |
+| `carte_de_couleurs` | Une couleur unie par région, à la taille de sortie. Les couleurs servent uniquement d’identifiants de région. | IMAGE | Non | N/A |
 | `depth_map` | Carte de profondeur à la taille de sortie, le proche est blanc. | IMAGE | Non | N/A |
-| `strength` | Met à l’échelle la contribution des cartes aux tokens d’image. 0.0 équivaut à l’absence de cartes, 1.0 correspond à la force d’entraînement (par défaut : 1.0). | FLOAT | Oui | 0.0 à 10.0 (pas 0.01) |
-| `start_percent` | Pourcentage d’échantillonnage auquel le contrôle commence (par défaut : 0.0). | FLOAT | Oui | 0.0 à 1.0 (pas 0.001) |
-| `end_percent` | Pourcentage d’échantillonnage auquel le contrôle se termine. Un arrêt précoce conserve la disposition et la profondeur tandis que le reste des étapes assouplit les formes (par défaut : 1.0). | FLOAT | Oui | 0.0 à 1.0 (pas 0.001) |
+| `force` | Met à l’échelle la contribution des cartes aux tokens d’image. 0.0 équivaut à l’absence de cartes, 1.0 correspond à la force d’entraînement (par défaut : 1.0). | FLOAT | Oui | 0.0 à 10.0 (pas 0.01) |
+| `pourcentage_de_début` | Pourcentage d’échantillonnage auquel le contrôle commence (par défaut : 0.0). | FLOAT | Oui | 0.0 à 1.0 (pas 0.001) |
+| `pourcentage_de_fin` | Pourcentage d’échantillonnage auquel le contrôle se termine. Un arrêt précoce conserve la disposition et la profondeur tandis que le reste des étapes assouplit les formes (par défaut : 1.0). | FLOAT | Oui | 0.0 à 1.0 (pas 0.001) |
 
 **Remarque :** Connectez au moins l’une des entrées `color_map` et `depth_map` ; sans aucune des deux, le nœud renvoie les conditionnements inchangés. Une carte manquante est remplacée par des zéros, de sorte que les configurations avec couleur uniquement et profondeur uniquement fonctionnent toutes les deux. Lorsque les deux cartes ont des tailles différentes, la plus petite est agrandie à la taille de l’autre. Ce nœud est marqué comme expérimental dans ComfyUI.
 

@@ -6,10 +6,10 @@ Pruna P-Video-2 Pro Avatar ile bir portreyi konuşan videoya dönüştürün. Me
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `image` | Videonun başladığı portre. 1:2 ile 4:1 arasındaki en-boy oranları korunur; 1:5 gibi daha uç görüntüler 9:16 veya 16:9 olarak kırpılır. | IMAGE | Evet | - |
-| `speech` | Videoyu metinden sese senaryosuyla veya kendi sesinizle yönlendirin. Bir seçeneğin seçilmesi, ilgili girdilerini aşağıda gösterir. | DYNAMIC_COMBO | Evet | `"script"`<br>`"audio"` |
-| `prompt` | Videoda ne görüneceğini açıklar (varsayılan: "The person is talking."). En fazla 5000 karakter. | STRING | Evet | En fazla 5000 karakter |
-| `resolution` | Çıktı çözünürlüğü (varsayılan: `"768p"`). 1080p, 2k ve 4k, oluşturulan 768p videoyu yükseltir. | COMBO | Evet | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
+| `görüntü` | Videonun başladığı portre. 1:2 ile 4:1 arasındaki en-boy oranları korunur; 1:5 gibi daha uç görüntüler 9:16 veya 16:9 olarak kırpılır. | IMAGE | Evet | - |
+| `konuşma` | Videoyu metinden sese senaryosuyla veya kendi sesinizle yönlendirin. Bir seçeneğin seçilmesi, ilgili girdilerini aşağıda gösterir. | DYNAMIC_COMBO | Evet | `"script"`<br>`"audio"` |
+| `istem` | Videoda ne görüneceğini açıklar (varsayılan: "The person is talking."). En fazla 5000 karakter. | STRING | Evet | En fazla 5000 karakter |
+| `çözünürlük` | Çıktı çözünürlüğü (varsayılan: `"768p"`). 1080p, 2k ve 4k, oluşturulan 768p videoyu yükseltir. | COMBO | Evet | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
 | `enhance_prompt` | Portrede görülen hareketi (arka plan, ışıklar ve vücut hareketi gibi) prompt'a ekler (varsayılan: True). Gelişmiş ayar. | BOOLEAN | Evet | `True`<br>`False` |
 | `seed` | Üretim için tohum (varsayılan: 42). Aynı tohum, yalnızca `enhance_prompt` kapalıyken bir sonucu tam olarak yeniden üretir. | INT | Evet | 0 ile 2147483647 arası<br>Adım: 1 |
 
@@ -17,10 +17,10 @@ Pruna P-Video-2 Pro Avatar ile bir portreyi konuşan videoya dönüştürün. Me
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `speech.script` | Kişinin söylediği sözcükler. Videonun süresi konuşmanın süresiyle eşleşir ve 3 dakikadan uzun konuşmalar 3 dakikada kesilir. | STRING | Evet | Herhangi bir metin |
-| `speech.voice` | Konuşma için kullanılan ses (varsayılan: `"Zephyr (Female)"`). | COMBO | Evet | 30 hazır ses |
-| `speech.language` | Senaryonun konuşulduğu dil (varsayılan: `"English (US)"`). | COMBO | Evet | `"English (US)"`<br>`"English (UK)"`<br>`"Spanish"`<br>`"French"`<br>`"German"`<br>`"Italian"`<br>`"Portuguese (Brazil)"`<br>`"Japanese"`<br>`"Korean"`<br>`"Hindi"` |
-| `speech.voice_prompt` | Senaryonun nasıl konuşulacağı: ton, tempo, aksan, duygu (varsayılan: "Say the following."). Bu metin kendisi seslendirilmez. | STRING | Evet | Herhangi bir metin |
+| `senaryo` | Kişinin söylediği sözcükler. Videonun süresi konuşmanın süresiyle eşleşir ve 3 dakikadan uzun konuşmalar 3 dakikada kesilir. | STRING | Evet | Herhangi bir metin |
+| `ses` | Konuşma için kullanılan ses (varsayılan: `"Zephyr (Female)"`). | COMBO | Evet | 30 hazır ses |
+| `dil` | Senaryonun konuşulduğu dil (varsayılan: `"English (US)"`). | COMBO | Evet | `"English (US)"`<br>`"English (UK)"`<br>`"Spanish"`<br>`"French"`<br>`"German"`<br>`"Italian"`<br>`"Portuguese (Brazil)"`<br>`"Japanese"`<br>`"Korean"`<br>`"Hindi"` |
+| `voice_prompt` | Senaryonun nasıl konuşulacağı: ton, tempo, aksan, duygu (varsayılan: "Say the following."). Bu metin kendisi seslendirilmez. | STRING | Evet | Herhangi bir metin |
 
 ### `"audio"` Girdileri
 

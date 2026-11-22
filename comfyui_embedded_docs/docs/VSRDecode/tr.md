@@ -7,9 +7,9 @@ VSR Decode, RelayVSR Conditioning düğümünden gelen anahtar kare latentlerini
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `vae` | RelayVSR Flash kod çözücü; Load VAE ile yüklenir: `relayvsr_flash_vae_x2_fp32.safetensors` veya `relayvsr_flash_vae_x4_fp32.safetensors`. Dosyanın meta verisi yükseltme faktörünü belirler, bu nedenle modelle eşleşmesi gerekir. | VAE | Evet | N/A |
-| `samples` | Örnekleyici tarafından döndürülen ve her anahtar kare için bir kare taşıyan latent. | LATENT | Evet | N/A |
-| `images` | RelayVSR Conditioning'e verilen aynı düşük kaliteli video. | IMAGE | Evet | N/A |
-| `detail` | Kod çözücünün ayrıntısının bikübik yükseltmenin üzerinde ne kadar tutulacağı: 1 tam model çıktısıdır, 0 düz yükseltmedir. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
+| `Örnekler` | Örnekleyici tarafından döndürülen ve her anahtar kare için bir kare taşıyan latent. | LATENT | Evet | N/A |
+| `Görüntüler` | RelayVSR Conditioning'e verilen aynı düşük kaliteli video. | IMAGE | Evet | N/A |
+| `Ayrıntı` | Kod çözücünün ayrıntısının bikübik yükseltmenin üzerinde ne kadar tutulacağı: 1 tam model çıktısıdır, 0 düz yükseltmedir. (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 (adım: 0.01) |
 
 ## Çıktılar
 

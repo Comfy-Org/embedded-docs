@@ -7,10 +7,10 @@ Crée une nouvelle voix Breeze à partir d'une description écrite. Fournissez u
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `description` | Description de la voix en 3 à 500 caractères : âge, genre, accent, ton, rythme. Par défaut : vide. | STRING | Oui | 3 à 500 caractères |
-| `preview_text` | La phrase que la nouvelle voix prononce dans l'aperçu, jusqu'à 500 caractères. Écrivez-la dans la langue sélectionnée, car la voix est construite à partir de cet aperçu. Par défaut : vide. | STRING | Oui | 1 à 500 caractères |
-| `language` | Langue du texte d'aperçu. English et Chinese peuvent utiliser l'un ou l'autre modèle ; les autres langues utilisent Breeze TTS 2 Multilingual. | DYNAMIC_COMBO | Oui | Plusieurs options disponibles |
-| `strength` | À quel point la voix suit la description. Par défaut : 4.0. | FLOAT | Non | 1.0 à 10.0 (pas : 0.1) |
-| `seed` | Contrôle si le nœud s'exécute à nouveau ; les résultats sont non déterministes quel que soit la graine. Par défaut : 42. | INT | Non | 0 à 2147483647 |
+| `texte_d_aperçu` | La phrase que la nouvelle voix prononce dans l'aperçu, jusqu'à 500 caractères. Écrivez-la dans la langue sélectionnée, car la voix est construite à partir de cet aperçu. Par défaut : vide. | STRING | Oui | 1 à 500 caractères |
+| `langue` | Langue du texte d'aperçu. English et Chinese peuvent utiliser l'un ou l'autre modèle ; les autres langues utilisent Breeze TTS 2 Multilingual. | DYNAMIC_COMBO | Oui | Plusieurs options disponibles |
+| `intensité` | À quel point la voix suit la description. Par défaut : 4.0. | FLOAT | Non | 1.0 à 10.0 (pas : 0.1) |
+| `graine` | Contrôle si le nœud s'exécute à nouveau ; les résultats sont non déterministes quel que soit la graine. Par défaut : 42. | INT | Non | 0 à 2147483647 |
 
 ### Entrées pour les langues "English" et "Chinese"
 

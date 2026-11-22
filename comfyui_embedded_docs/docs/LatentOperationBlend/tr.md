@@ -6,8 +6,8 @@ Bu düğüm, bir latent'i bir referans latent'e doğru harmanlayan bir latent i�
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `reference` | Kendisine doğru harmanlanacak latent. Örnekleri, işlenen latentin cihazına ve dtype'ına dönüştürülür; ardından onunla eşleşmesi için yeniden boyutlandırılır ve tekrarlanır. | LATENT | Evet | - |
-| `strength` | Referansa doğru ne kadar harmanlanacağı: 0, latent'i değiştirmeden bırakır; 1, yeniden boyutlandırılmış referans latent ile eşleşir (varsayılan: 1.0). | FLOAT | Evet | 0.0 ile 1.0 arası (adım 0.0001) |
+| `referans` | Kendisine doğru harmanlanacak latent. Örnekleri, işlenen latentin cihazına ve dtype'ına dönüştürülür; ardından onunla eşleşmesi için yeniden boyutlandırılır ve tekrarlanır. | LATENT | Evet | - |
+| `güç` | Referansa doğru ne kadar harmanlanacağı: 0, latent'i değiştirmeden bırakır; 1, yeniden boyutlandırılmış referans latent ile eşleşir (varsayılan: 1.0). | FLOAT | Evet | 0.0 ile 1.0 arası (adım 0.0001) |
 
 ## Çıktılar
 

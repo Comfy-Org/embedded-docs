@@ -18,12 +18,12 @@ Her iki model de aynı parametreleri paylaşır.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Çizilecek SVG'nin açıklaması. (varsayılan: `""`) | STRING | Evet | Yok |
-| `model.size` | SVG'nin çizildiği referans görüntünün boyutu. (varsayılan: `"1024x1024"`) | COMBO | Evet | `"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"` |
-| `model.background` | Referans görüntünün arka planı. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>`"opaque"`<br>`"transparent"` |
-| `model.quality` | SVG'nin çizildiği referans görüntünün kalitesi. (varsayılan: `"low"`) | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | Modelin referans görüntüyü oluşturmadan önce ne kadar planladığı. (varsayılan: `"high"`) | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"` |
-| `model.seed` | Düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar tohum değerinden bağımsız olarak deterministik değildir. (varsayılan: `42`) | INT | Evet | 0 ile 2147483647 arası |
+| `istem` | Çizilecek SVG'nin açıklaması. (varsayılan: `""`) | STRING | Evet | Yok |
+| `boyut` | SVG'nin çizildiği referans görüntünün boyutu. (varsayılan: `"1024x1024"`) | COMBO | Evet | `"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"` |
+| `arka plan` | Referans görüntünün arka planı. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `kalite` | SVG'nin çizildiği referans görüntünün kalitesi. (varsayılan: `"low"`) | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `karmaşıklık` | Modelin referans görüntüyü oluşturmadan önce ne kadar planladığı. (varsayılan: `"high"`) | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"` |
+| `tohum` | Düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar tohum değerinden bağımsız olarak deterministik değildir. (varsayılan: `42`) | INT | Evet | 0 ile 2147483647 arası |
 
 ## Çıktılar
 

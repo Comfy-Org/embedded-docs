@@ -6,8 +6,8 @@
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `image` | HDR'ye genişletilecek sRGB'deki SDR görüntü(ler). | IMAGE | Evet | - |
-| `algorithm` | HDR genişletme algoritması. Bir algoritma seçildiğinde parametrelerini (`target_luminance`) gösterir. | DYNAMIC_COMBO | Evet | `"lottes"` |
+| `görüntü` | HDR'ye genişletilecek sRGB'deki SDR görüntü(ler). | IMAGE | Evet | - |
+| `algoritma` | HDR genişletme algoritması. Bir algoritma seçildiğinde parametrelerini (`target_luminance`) gösterir. | DYNAMIC_COMBO | Evet | `"lottes"` |
 
 ### lottes Girdileri
 

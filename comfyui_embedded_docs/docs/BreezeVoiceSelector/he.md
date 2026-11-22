@@ -6,7 +6,7 @@
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 | --- | --- | --- | --- | --- |
-| `language` | קבוצת השפה של הקולות המומלצים, או `custom` להזנת מזהה. ברירת מחדל: `"English"`. | DYNAMIC_COMBO | כן | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
+| `שפה` | קבוצת השפה של הקולות המומלצים, או `custom` להזנת מזהה. ברירת מחדל: `"English"`. | DYNAMIC_COMBO | כן | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
 
 ### קלטים עבור שפה "English", "Chinese" ו-"Japanese"
 

@@ -18,14 +18,14 @@ Her iki model de aynı parametreleri paylaşır.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Neyin canlandırılacağı. (varsayılan: `""`) | STRING | Evet | N/A |
-| `model.size` | Her karenin boyutu. Daha büyük boyutlar yalnızca daha düşük kare sayılarıyla sığar. (varsayılan: `"512x512"`) | COMBO | Evet | `"384x384"`<br>`"512x512"`<br>`"640x640"`<br>`"720x720"`<br>`"768x768"`<br>`"960x960"`<br>`"512x288"`<br>`"288x512"`<br>`"1024x576"`<br>`"576x1024"`<br>`"1280x720"`<br>`"720x1280"` |
-| `model.frame_count` | Kare sayısı. Kareler adımlarla faturalandırılır: 2 ile 8, 9, 10 ile 12, 13 ile 16. (varsayılan: `9`) | INT | Evet | 2 ile 16 arası |
-| `model.frame_duration_ms` | Her karenin ne kadar süre gösterileceği, milisaniye cinsinden. (varsayılan: `200`) | INT | Evet | 20 ile 2000 arası (adım 10) |
-| `model.background` | Kare arka planı. Saydamlık, vp9 kullanan Save WEBM, Save Animated WEBP ve Save Animated PNG tarafından korunur. (varsayılan: `"opaque"`) | COMBO | Evet | `"opaque"`<br>`"transparent"` |
-| `model.quality` | Görüntü kalitesi. Daha yüksek seviyeler daha maliyetlidir ve daha uzun sürer. (varsayılan: `"low"`) | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | Modelin, oluşturmadan önce animasyonu ne ölçüde planladığı. (varsayılan: `"high"`) | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"` |
-| `model.seed` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: `42`) | INT | Evet | 0 ile 2147483647 arası |
+| `istem` | Neyin canlandırılacağı. (varsayılan: `""`) | STRING | Evet | N/A |
+| `boyut` | Her karenin boyutu. Daha büyük boyutlar yalnızca daha düşük kare sayılarıyla sığar. (varsayılan: `"512x512"`) | COMBO | Evet | `"384x384"`<br>`"512x512"`<br>`"640x640"`<br>`"720x720"`<br>`"768x768"`<br>`"960x960"`<br>`"512x288"`<br>`"288x512"`<br>`"1024x576"`<br>`"576x1024"`<br>`"1280x720"`<br>`"720x1280"` |
+| `frame_count` | Kare sayısı. Kareler adımlarla faturalandırılır: 2 ile 8, 9, 10 ile 12, 13 ile 16. (varsayılan: `9`) | INT | Evet | 2 ile 16 arası |
+| `frame_duration_ms` | Her karenin ne kadar süre gösterileceği, milisaniye cinsinden. (varsayılan: `200`) | INT | Evet | 20 ile 2000 arası (adım 10) |
+| `arka plan` | Kare arka planı. Saydamlık, vp9 kullanan Save WEBM, Save Animated WEBP ve Save Animated PNG tarafından korunur. (varsayılan: `"opaque"`) | COMBO | Evet | `"opaque"`<br>`"transparent"` |
+| `kalite` | Görüntü kalitesi. Daha yüksek seviyeler daha maliyetlidir ve daha uzun sürer. (varsayılan: `"low"`) | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `karmaşıklık` | Modelin, oluşturmadan önce animasyonu ne ölçüde planladığı. (varsayılan: `"high"`) | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"` |
+| `tohum` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: `42`) | INT | Evet | 0 ile 2147483647 arası |
 
 **Parametre Kısıtlamaları ve Sınırlamaları:**
 

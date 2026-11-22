@@ -8,10 +8,10 @@ MiniMax H3 Image ile bir istem metnini koşullandırmaya ve boş bir latent'e d�
 | --- | --- | --- | --- | --- |
 | `clip` | MiniMax H3 Image CLIP modeli; istem metnini varsa referans görsellerle birlikte tokenize eder ve koşullandırmayı kodlar. | CLIP | Evet | - |
 | `vae` | MiniMax H3 Image VAE. Onunla birlikte görseller referans latent'ler olarak da sabitlenir; o olmadan yalnızca metin kodlayıcısını koşullandırırlar. | VAE | Hayır | - |
-| `prompt` | Neyin oluşturulacağı veya referans görsellerin nasıl düzenleneceği. | STRING | Evet | Çok satırlı metin |
-| `width` | Piksel cinsinden çıktı genişliği. 0, `image_1`in referans ölçeklemesinden sonraki genişliğini veya görsel yoksa 2048'i kullanır. Varsayılan: 0. | INT | Evet | 0 ile MAX_RESOLUTION arası (adım: 32) |
-| `height` | Piksel cinsinden çıktı yüksekliği. 0, `image_1`in referans ölçeklemesinden sonraki yüksekliğini veya görsel yoksa 2048'i kullanır. Varsayılan: 0. | INT | Evet | 0 ile MAX_RESOLUTION arası (adım: 32) |
-| `images` | Büyütülebilir referans görsel grubu, `image_1` ve sonrası; `image_1` düzenlenecek görseldir. İstem metni onlara `<Picture n>` olarak atıfta bulunur. | AUTOGROW | Hayır | 0 ile 100 görsel arası |
+| `istem` | Neyin oluşturulacağı veya referans görsellerin nasıl düzenleneceği. | STRING | Evet | Çok satırlı metin |
+| `genişlik` | Piksel cinsinden çıktı genişliği. 0, `image_1`in referans ölçeklemesinden sonraki genişliğini veya görsel yoksa 2048'i kullanır. Varsayılan: 0. | INT | Evet | 0 ile MAX_RESOLUTION arası (adım: 32) |
+| `yükseklik` | Piksel cinsinden çıktı yüksekliği. 0, `image_1`in referans ölçeklemesinden sonraki yüksekliğini veya görsel yoksa 2048'i kullanır. Varsayılan: 0. | INT | Evet | 0 ile MAX_RESOLUTION arası (adım: 32) |
+| `görüntüler` | Büyütülebilir referans görsel grubu, `image_1` ve sonrası; `image_1` düzenlenecek görseldir. İstem metni onlara `<Picture n>` olarak atıfta bulunur. | AUTOGROW | Hayır | 0 ile 100 görsel arası |
 
 ## Çıktılar
 

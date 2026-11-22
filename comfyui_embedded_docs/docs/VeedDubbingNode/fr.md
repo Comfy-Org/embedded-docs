@@ -6,7 +6,7 @@ VEED Dubbing traduit la parole d’une vidéo dans une autre langue avec VEED, e
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle de doublage. `"standard"` est moins cher et renvoie de l’audio mono, avec l’espagnol d’Amérique latine et le portugais brésilien ; `"pro"` ajoute des accents régionaux et de l’audio stéréo. La sélection d’un modèle affiche `video`, `target_language`, `source_language` et `seed`. | DYNAMIC_COMBO | Oui | `"standard"`<br>`"pro"` |
+| `modèle` | Modèle de doublage. `"standard"` est moins cher et renvoie de l’audio mono, avec l’espagnol d’Amérique latine et le portugais brésilien ; `"pro"` ajoute des accents régionaux et de l’audio stéréo. La sélection d’un modèle affiche `video`, `target_language`, `source_language` et `seed`. | DYNAMIC_COMBO | Oui | `"standard"`<br>`"pro"` |
 
 ### Entrées standard
 

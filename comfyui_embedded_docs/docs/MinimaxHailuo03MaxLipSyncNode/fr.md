@@ -8,7 +8,7 @@ Ce nœud anime une image fixe afin que les mouvements de la bouche suivent une p
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Modèle à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | "MiniMax H3 Max" |
+| `modèle` | Modèle à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | "MiniMax H3 Max" |
 
 ### Entrées MiniMax H3 Max
 

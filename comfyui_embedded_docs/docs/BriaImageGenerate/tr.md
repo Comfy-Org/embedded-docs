@@ -6,13 +6,13 @@ Metin isteminden, yapılandırılmış JSON isteminden veya tek bir referans gö
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Oluşturulacak görüntünün düz dilde açıklaması (varsayılan: boş). | STRING | Evet | Çok satırlı metin |
+| `istem` | Oluşturulacak görüntünün düz dilde açıklaması (varsayılan: boş). | STRING | Evet | Çok satırlı metin |
 | `structured_prompt` | Önceki bir Bria FIBO sonucundan alınan JSON yapılandırılmış istem. Aynı seed ile o görüntüyü yeniden oluşturur; JSON'u değiştirin veya iyileştirmek için bir istem ekleyin (varsayılan: boş). | STRING | Evet | Çok satırlı metin |
 | `aspect_ratio` | Çıktı en-boy oranı (varsayılan: `"1:1"`). `"16:10"` ve sonrasındaki oranlar, aşağıda listelenen ek gereksinimlere sahip FIBO 2.0 boyutlarıdır. | COMBO | Evet | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"16:10"`<br>`"10:16"`<br>`"2:1"`<br>`"1:2"`<br>`"21:9"`<br>`"9:21"`<br>`"3:1"`<br>`"1:3"`<br>`"4:1"`<br>`"1:4"`<br>`"5:1"`<br>`"1:5"` |
-| `resolution` | Megapiksel cinsinden çıktı çözünürlüğü (varsayılan: `"1MP"`). | COMBO | Evet | `"1MP"`<br>`"4MP"` |
+| `çözünürlük` | Megapiksel cinsinden çıktı çözünürlüğü (varsayılan: `"1MP"`). | COMBO | Evet | `"1MP"`<br>`"4MP"` |
 | `seed` | Oluşturmayı başlatan seed değeri (varsayılan: 42). | INT | Evet | 1 - 2147483647 |
-| `moderation` | Moderasyon ayarları. `"true"` seçildiğinde aşağıda listelenen moderasyon girdileri ortaya çıkar. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
-| `image` | Üzerine çizim yapılacak isteğe bağlı referans görüntü. Sonuç, seçilen en-boy oranında yeni bir görüntüdür; bu görüntünün düzenlenmiş hali değildir. | IMAGE | Hayır | - |
+| `denetleme` | Moderasyon ayarları. `"true"` seçildiğinde aşağıda listelenen moderasyon girdileri ortaya çıkar. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
+| `görüntü` | Üzerine çizim yapılacak isteğe bağlı referans görüntü. Sonuç, seçilen en-boy oranında yeni bir görüntüdür; bu görüntünün düzenlenmiş hali değildir. | IMAGE | Hayır | - |
 
 ### Moderasyon Girdileri
 

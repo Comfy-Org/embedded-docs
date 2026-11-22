@@ -9,12 +9,12 @@ FLUX 3 Max Image to Video anime de 1 à 10 images avec FLUX 3 Max. Chaque image 
 | `prompt` | Comment la scène doit se déplacer et produire du son (par défaut : vide). | STRING | Oui | Texte multiligne |
 | `keyframes` | Emplacement extensible : connectez de 1 à 10 images clés dans l’ordre de lecture, par ex. `image_1`, `image_2`, etc. Chaque image devient une image du clip. | IMAGE | Oui | 1 à 10 images |
 | `placement` | `"spread across the clip"` place la première image au début, la dernière à la fin et les autres uniformément entre les deux ; `"at times"` fixe chaque image à une seconde que vous choisissez (par défaut : `"spread across the clip"`). | DYNAMIC_COMBO | Oui | `"spread across the clip"`<br>`"at times"` |
-| `aspect_ratio` | Ratio d’aspect de sortie. `"auto"` suit la première image clé (par défaut : `"auto"`). | COMBO | Oui | `"auto"`<br>`"21:9"`<br>`"2:1"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"` |
-| `duration` | Durée du clip en secondes (par défaut : `"5"`). | COMBO | Oui | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"`<br>`"15"`<br>`"16"`<br>`"17"`<br>`"18"`<br>`"19"`<br>`"20"` |
-| `resolution` | Résolution de sortie (par défaut : `"720p"`). | COMBO | Oui | `"720p"`<br>`"1080p"` |
-| `reasoning_level` | Dans quelle mesure le modèle raisonne sur le prompt et l’étend avant de générer. `"high"` prend plus de temps ; le prix reste identique (par défaut : `"high"`). | COMBO | Oui | `"low"`<br>`"high"` |
-| `generate_audio` | Générer un audio synchronisé. Désactivé produit une vidéo sans piste audio (par défaut : true). | BOOLEAN | Oui | `true`<br>`false` |
-| `seed` | Graine contrôlant si le nœud se relance. Les résultats sont non déterministes quelle que soit cette valeur (par défaut : 42). | INT | Oui | 0 à 2147483646 |
+| `ratio d'aspect` | Ratio d’aspect de sortie. `"auto"` suit la première image clé (par défaut : `"auto"`). | COMBO | Oui | `"auto"`<br>`"21:9"`<br>`"2:1"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"` |
+| `durée` | Durée du clip en secondes (par défaut : `"5"`). | COMBO | Oui | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"`<br>`"15"`<br>`"16"`<br>`"17"`<br>`"18"`<br>`"19"`<br>`"20"` |
+| `résolution` | Résolution de sortie (par défaut : `"720p"`). | COMBO | Oui | `"720p"`<br>`"1080p"` |
+| `niveau de raisonnement` | Dans quelle mesure le modèle raisonne sur le prompt et l’étend avant de générer. `"high"` prend plus de temps ; le prix reste identique (par défaut : `"high"`). | COMBO | Oui | `"low"`<br>`"high"` |
+| `générer l'audio` | Générer un audio synchronisé. Désactivé produit une vidéo sans piste audio (par défaut : true). | BOOLEAN | Oui | `true`<br>`false` |
+| `graine` | Graine contrôlant si le nœud se relance. Les résultats sont non déterministes quelle que soit cette valeur (par défaut : 42). | INT | Oui | 0 à 2147483646 |
 
 ### Entrées « at times »
 

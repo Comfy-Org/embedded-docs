@@ -7,8 +7,8 @@ Transformez l'historique d'entrelacement laissé par SenseNova Conditioning en t
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `clip` | Modèle CLIP SenseNova utilisé pour décoder les tokens générés. | CLIP | Oui | - |
-| `conditioning` | Conditionnement d'entrelacement provenant de SenseNova Conditioning. | CONDITIONING | Oui | - |
-| `samples` | Dernier latent pixel du KSampler, nécessaire lorsque la boucle s'est terminée sur une demande d'image. | LATENT | Non | - |
+| `conditionnement` | Conditionnement d'entrelacement provenant de SenseNova Conditioning. | CONDITIONING | Oui | - |
+| `échantillons` | Dernier latent pixel du KSampler, nécessaire lorsque la boucle s'est terminée sur une demande d'image. | LATENT | Non | - |
 
 **Contraintes et comportement :**
 

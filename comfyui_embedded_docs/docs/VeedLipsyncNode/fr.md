@@ -6,7 +6,7 @@ Resynchronisez la bouche d’un intervenant dans une vidéo sur une nouvelle pis
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Modèle à utiliser. La sélection d’un modèle révèle les paramètres qui lui sont spécifiques : `video`, `audio` et `seed`. | DYNAMIC_COMBO | Oui | `"lipsync-2.0"` |
+| `modèle` | Modèle à utiliser. La sélection d’un modèle révèle les paramètres qui lui sont spécifiques : `video`, `audio` et `seed`. | DYNAMIC_COMBO | Oui | `"lipsync-2.0"` |
 | `video` | Séquence vidéo d’un seul intervenant face caméra. Si elle est plus courte que l’audio, elle est lue en avant puis en arrière jusqu’à la fin de l’audio. | VIDEO | Oui | - |
 | `audio` | Nouvelle parole, jusqu’à 600 secondes. Détermine la durée de la vidéo. | AUDIO | Oui | Jusqu’à 600 secondes |
 | `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quel que soit la seed. (par défaut : 42) | INT | Oui | 0 à 2147483647 |

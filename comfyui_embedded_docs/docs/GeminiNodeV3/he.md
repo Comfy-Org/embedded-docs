@@ -8,7 +8,7 @@
 
 | פרמטר | תיאור | סוג נתונים | נדרש | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `model` | מודל Gemini המשמש להפקת התגובה. המודל הנבחר קובע אילו קלטים נוספים יוצגו. | DYNAMIC_COMBO | כן | `"Gemini 4 Hydrogen"`<br>`"Gemini 4 Argon"`<br>`"Gemini 4 Carbon"`<br>`"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `מודל` | מודל Gemini המשמש להפקת התגובה. המודל הנבחר קובע אילו קלטים נוספים יוצגו. | DYNAMIC_COMBO | כן | `"Gemini 4 Hydrogen"`<br>`"Gemini 4 Argon"`<br>`"Gemini 4 Carbon"`<br>`"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
 
 ### קלטי מדיה
 

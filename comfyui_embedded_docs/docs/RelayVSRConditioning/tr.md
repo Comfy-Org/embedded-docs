@@ -7,7 +7,7 @@ RelayVSR Conditioning, bir RelayVSR video büyütmesi için koşullandırmayı v
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Load Model ile yüklenen RelayVSR difüzyon modeli: `relayvsr_x2_lightx2v_int8_convrot.safetensors` veya `relayvsr_x4_int8_convrot.safetensors`. | MODEL | Evet | N/A |
-| `images` | Kendi yerel çözünürlüğündeki düşük kaliteli video. Modelin büyütme faktörü sonucun ne kadar büyük olacağını belirler. | IMAGE | Evet | N/A |
+| `görüntüler` | Kendi yerel çözünürlüğündeki düşük kaliteli video. Modelin büyütme faktörü sonucun ne kadar büyük olacağını belirler. | IMAGE | Evet | N/A |
 
 ## Çıktılar
 

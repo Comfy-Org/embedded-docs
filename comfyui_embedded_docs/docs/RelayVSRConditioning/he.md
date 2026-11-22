@@ -6,8 +6,8 @@ RelayVSR Conditioning מכין את הקונדישנינג ואת ה-latent הר
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 | --- | --- | --- | --- | --- |
-| `model` | מודל הדיפוזיה RelayVSR, שנטען באמצעות Load Model: `relayvsr_x2_lightx2v_int8_convrot.safetensors` או `relayvsr_x4_int8_convrot.safetensors`. | MODEL | כן | N/A |
-| `images` | הווידאו באיכות נמוכה ברזולוציה המקורית שלו. גורם ההגדלה של המודל קובע את גודל התוצאה. | IMAGE | כן | N/A |
+| `מודל` | מודל הדיפוזיה RelayVSR, שנטען באמצעות Load Model: `relayvsr_x2_lightx2v_int8_convrot.safetensors` או `relayvsr_x4_int8_convrot.safetensors`. | MODEL | כן | N/A |
+| `תמונות` | הווידאו באיכות נמוכה ברזולוציה המקורית שלו. גורם ההגדלה של המודל קובע את גודל התוצאה. | IMAGE | כן | N/A |
 
 ## פלטים
 

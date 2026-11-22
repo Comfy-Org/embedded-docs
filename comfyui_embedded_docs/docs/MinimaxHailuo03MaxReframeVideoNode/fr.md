@@ -8,7 +8,7 @@ Ce nœud adapte une vidéo à un nouveau rapport d'aspect en l'ajustant sur un n
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Modèle à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | "MiniMax H3 Max" |
+| `modèle` | Modèle à utiliser pour la génération vidéo. | DYNAMIC_COMBO | Oui | "MiniMax H3 Max" |
 
 ### Entrées MiniMax H3 Max
 

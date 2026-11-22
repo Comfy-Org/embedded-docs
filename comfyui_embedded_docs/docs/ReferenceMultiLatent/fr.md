@@ -8,10 +8,10 @@ Ce nœud encode une ou plusieurs images de référence et ajoute leurs latents a
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `positive` | Le conditionnement positif à modifier avec les latents de référence. | CONDITIONING | Oui | - |
-| `negative` | Conditionnement négatif facultatif qui reçoit les mêmes latents de référence. Laissez-le non connecté pour réutiliser le conditionnement positif modifié sur la sortie `negative`. | CONDITIONING | Non | - |
+| `positif` | Le conditionnement positif à modifier avec les latents de référence. | CONDITIONING | Oui | - |
+| `négatif` | Conditionnement négatif facultatif qui reçoit les mêmes latents de référence. Laissez-le non connecté pour réutiliser le conditionnement positif modifié sur la sortie `negative`. | CONDITIONING | Non | - |
 | `vae` | Le VAE utilisé pour encoder les images de référence connectées. Lorsqu’aucun VAE n’est connecté, les images de référence sont ignorées. | VAE | Non | - |
-| `resolution` | Comment chaque image de référence est préparée avant l’encodage. `"keep resolution"` l’encode à sa taille d’entrée ; `"resize"` la redimensionne vers un nombre cible de mégapixels tout en préservant le rapport d’aspect, ce qui fait apparaître `megapixels`. (par défaut : "keep resolution") | DYNAMIC_COMBO | Oui | `"keep resolution"`<br>`"resize"` |
+| `résolution` | Comment chaque image de référence est préparée avant l’encodage. `"keep resolution"` l’encode à sa taille d’entrée ; `"resize"` la redimensionne vers un nombre cible de mégapixels tout en préservant le rapport d’aspect, ce qui fait apparaître `megapixels`. (par défaut : "keep resolution") | DYNAMIC_COMBO | Oui | `"keep resolution"`<br>`"resize"` |
 | `images` | Emplacement extensible : connectez une ou plusieurs images de référence (`image_1`, `image_2`, ...) à utiliser comme références. Les images sont encodées dans l’ordre des emplacements et ajoutées au conditionnement dans cet ordre. | IMAGE | Non | 1 à 100 |
 
 ### Entrées de redimensionnement

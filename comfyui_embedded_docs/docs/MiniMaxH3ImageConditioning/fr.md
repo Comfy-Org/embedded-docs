@@ -9,8 +9,8 @@ Transforme un prompt en conditionnement et en latent vide pour une image fixe av
 | `clip` | Le modèle CLIP MiniMax H3 Image, qui tokenise le prompt avec les éventuelles images de référence et encode le conditionnement. | CLIP | Oui | - |
 | `vae` | Le VAE MiniMax H3 Image. Avec lui, les images sont également ancrées comme latents de référence ; sans lui, elles ne conditionnent que l’encodeur de texte. | VAE | Non | - |
 | `prompt` | Ce qu’il faut générer, ou comment modifier les images de référence. | STRING | Oui | Texte multiligne |
-| `width` | Largeur de sortie en pixels. 0 utilise la largeur de `image_1` après sa mise à l’échelle de référence, ou 2048 sans images. Par défaut : 0. | INT | Oui | 0 à MAX_RESOLUTION (pas : 32) |
-| `height` | Hauteur de sortie en pixels. 0 utilise la hauteur de `image_1` après sa mise à l’échelle de référence, ou 2048 sans images. Par défaut : 0. | INT | Oui | 0 à MAX_RESOLUTION (pas : 32) |
+| `largeur` | Largeur de sortie en pixels. 0 utilise la largeur de `image_1` après sa mise à l’échelle de référence, ou 2048 sans images. Par défaut : 0. | INT | Oui | 0 à MAX_RESOLUTION (pas : 32) |
+| `hauteur` | Hauteur de sortie en pixels. 0 utilise la hauteur de `image_1` après sa mise à l’échelle de référence, ou 2048 sans images. Par défaut : 0. | INT | Oui | 0 à MAX_RESOLUTION (pas : 32) |
 | `images` | Groupe extensible d’images de référence, à partir de `image_1` ; `image_1` est l’image à modifier. Le prompt les désigne par `<Picture n>`. | AUTOGROW | Non | 0 à 100 images |
 
 ## Sorties

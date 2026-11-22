@@ -6,11 +6,11 @@ Génère des images à partir de texte avec MiniMax H3 Image, ou édite et combi
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | `MiniMax-H3-Image`, ou `MiniMax-H3-Image-Highspeed` pour des exécutions plus rapides. Par défaut : `"MiniMax-H3-Image"`. | COMBO | Oui | `"MiniMax-H3-Image"`<br>`"MiniMax-H3-Image-Highspeed"` |
+| `modèle` | `MiniMax-H3-Image`, ou `MiniMax-H3-Image-Highspeed` pour des exécutions plus rapides. Par défaut : `"MiniMax-H3-Image"`. | COMBO | Oui | `"MiniMax-H3-Image"`<br>`"MiniMax-H3-Image-Highspeed"` |
 | `prompt` | Ce qu'il faut générer, ou comment éditer les images de référence. Lorsque des images de référence sont connectées, il peut contenir au maximum 8 000 caractères. Par défaut : vide. | STRING | Oui | 1 à 8000 caractères |
-| `size` | `2K` et `4K` déduisent la taille à partir d'un rapport d'aspect ; `custom` définit une largeur et une hauteur exactes. Par défaut : `"2K"`. | DYNAMIC_COMBO | Oui | `"2K"`<br>`"4K"`<br>`"custom"` |
+| `taille` | `2K` et `4K` déduisent la taille à partir d'un rapport d'aspect ; `custom` définit une largeur et une hauteur exactes. Par défaut : `"2K"`. | DYNAMIC_COMBO | Oui | `"2K"`<br>`"4K"`<br>`"custom"` |
 | `enhance_prompt` | MiniMax réécrit le prompt en une description détaillée de la scène avant la génération. Les éditions d'image sont toujours améliorées. Lorsque cette option est désactivée, choisissez un rapport d'aspect fixe ou une taille personnalisée. Par défaut : true. | BOOLEAN | Non | true<br>false |
-| `seed` | Contrôle si le nœud est réexécuté ; les résultats ne sont pas déterministes, quelle que soit la valeur de `seed`. Par défaut : 42. | INT | Non | 0 à 2147483647 |
+| `graine` | Contrôle si le nœud est réexécuté ; les résultats ne sont pas déterministes, quelle que soit la valeur de `seed`. Par défaut : 42. | INT | Non | 0 à 2147483647 |
 | `images` | Images de référence à éditer ou à combiner, désignées dans le prompt par `@Image1` à `@Image16` selon leur ordre de connexion. | AUTOGROW | Non | Jusqu'à 16 images |
 
 ### Entrées pour la taille "2K" et "4K"

@@ -9,7 +9,7 @@ Tripo: Smart UV redéploie les UV d'un modèle et remappe ses textures, son rig 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `model_task_id` | ID de tâche du modèle dont les UV doivent être remappés. Accepte un ID de tâche de modèle provenant d'un nœud de génération Tripo, ou un ID de tâche de rig, de retarget ou de segmentation. | MODEL_TASK_ID | Oui | ID de tâche Tripo |
-| `bake` | Cuire les textures existantes sur la nouvelle disposition UV. Désactivé, la cuisson est ignorée et renvoie le modèle sans ses textures de couleur (par défaut : True). | BOOLEAN | Oui | `True`<br>`False` |
+| `Cuisson` | Cuire les textures existantes sur la nouvelle disposition UV. Désactivé, la cuisson est ignorée et renvoie le modèle sans ses textures de couleur (par défaut : True). | BOOLEAN | Oui | `True`<br>`False` |
 
 ## Sorties
 

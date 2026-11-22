@@ -7,9 +7,9 @@ Transformez un portrait en vidéo parlante avec Pruna P-Video-2 Pro Avatar. Fait
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `image` | Portrait à partir duquel la vidéo démarre. Les ratios d'aspect de 1:2 à 4:1 sont conservés ; les images plus extrêmes, comme 1:5, sont recadrées en 9:16 ou 16:9. | IMAGE | Oui | - |
-| `speech` | Pilote la vidéo avec un script lu par synthèse vocale ou avec votre propre audio. La sélection d'une option affiche ses entrées ci-dessous. | DYNAMIC_COMBO | Oui | `"script"`<br>`"audio"` |
+| `parole` | Pilote la vidéo avec un script lu par synthèse vocale ou avec votre propre audio. La sélection d'une option affiche ses entrées ci-dessous. | DYNAMIC_COMBO | Oui | `"script"`<br>`"audio"` |
 | `prompt` | Décrit ce que montre la vidéo (par défaut : "The person is talking."). Jusqu'à 5000 caractères. | STRING | Oui | Jusqu'à 5000 caractères |
-| `resolution` | Résolution de sortie (par défaut : `"768p"`). Les résolutions 1080p, 2k et 4k augmentent la résolution de la vidéo générée en 768p. | COMBO | Oui | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
+| `résolution` | Résolution de sortie (par défaut : `"768p"`). Les résolutions 1080p, 2k et 4k augmentent la résolution de la vidéo générée en 768p. | COMBO | Oui | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
 | `enhance_prompt` | Ajoute au prompt le mouvement observé dans le portrait, tel que l'arrière-plan, les lumières et les mouvements du corps (par défaut : True). Paramètre avancé. | BOOLEAN | Oui | `True`<br>`False` |
 | `seed` | Graine de génération (par défaut : 42). La même graine ne reproduit un résultat à l'identique que lorsque `enhance_prompt` est désactivé. | INT | Oui | 0 à 2147483647<br>Pas : 1 |
 
@@ -17,10 +17,10 @@ Transformez un portrait en vidéo parlante avec Pruna P-Video-2 Pro Avatar. Fait
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `speech.script` | Mots prononcés par la personne. La vidéo correspond à la durée de la parole, et une parole de plus de 3 minutes est coupée à 3 minutes. | STRING | Oui | Texte libre |
-| `speech.voice` | Voix utilisée pour la parole (par défaut : `"Zephyr (Female)"`). | COMBO | Oui | 30 voix prédéfinies |
-| `speech.language` | Langue dans laquelle le script est prononcé (par défaut : `"English (US)"`). | COMBO | Oui | `"English (US)"`<br>`"English (UK)"`<br>`"Spanish"`<br>`"French"`<br>`"German"`<br>`"Italian"`<br>`"Portuguese (Brazil)"`<br>`"Japanese"`<br>`"Korean"`<br>`"Hindi"` |
-| `speech.voice_prompt` | Comment le script est prononcé : ton, rythme, accent, émotion (par défaut : "Say the following."). Ce texte n'est pas prononcé. | STRING | Oui | Texte libre |
+| `script` | Mots prononcés par la personne. La vidéo correspond à la durée de la parole, et une parole de plus de 3 minutes est coupée à 3 minutes. | STRING | Oui | Texte libre |
+| `voix` | Voix utilisée pour la parole (par défaut : `"Zephyr (Female)"`). | COMBO | Oui | 30 voix prédéfinies |
+| `langue` | Langue dans laquelle le script est prononcé (par défaut : `"English (US)"`). | COMBO | Oui | `"English (US)"`<br>`"English (UK)"`<br>`"Spanish"`<br>`"French"`<br>`"German"`<br>`"Italian"`<br>`"Portuguese (Brazil)"`<br>`"Japanese"`<br>`"Korean"`<br>`"Hindi"` |
+| `voice_prompt` | Comment le script est prononcé : ton, rythme, accent, émotion (par défaut : "Say the following."). Ce texte n'est pas prononcé. | STRING | Oui | Texte libre |
 
 ### Entrées `"audio"`
 

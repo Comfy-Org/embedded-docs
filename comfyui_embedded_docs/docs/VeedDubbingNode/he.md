@@ -6,7 +6,7 @@ VEED Dubbing מתרגם את הדיבור בסרטון לשפה אחרת באמ�
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | מודל דיבוב. `"standard"` זול יותר ומחזיר שמע מונו, עם ספרדית לטינו-אמריקאית ופורטוגזית ברזילאית; `"pro"` מוסיף מבטאים אזוריים ושמע סטריאו. בחירת מודל חושפת את `video`, `target_language`, `source_language` ו-`seed`. | DYNAMIC_COMBO | כן | `"standard"`<br>`"pro"` |
+| `מודל` | מודל דיבוב. `"standard"` זול יותר ומחזיר שמע מונו, עם ספרדית לטינו-אמריקאית ופורטוגזית ברזילאית; `"pro"` מוסיף מבטאים אזוריים ושמע סטריאו. בחירת מודל חושפת את `video`, `target_language`, `source_language` ו-`seed`. | DYNAMIC_COMBO | כן | `"standard"`<br>`"pro"` |
 
 ### קלטים של standard
 

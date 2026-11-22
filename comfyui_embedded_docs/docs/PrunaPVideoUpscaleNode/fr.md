@@ -6,9 +6,9 @@ Pruna P-Video Upscale agrandit une vidéo en 720p, 1080p, 2K ou 4K tout en conse
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `video` | Vidéo à agrandir, jusqu’à 512 MiB. Les vidéos de plus de 10 mégapixels ne peuvent être envoyées que vers la cible 2K ou 4K. | VIDEO | Oui | Jusqu’à 512 MiB |
-| `target` | Surface en pixels de sortie : 720p correspond à environ 0,9 mégapixel, 1080p à 2,1, 2K à 3,7 et 4K à 8,3. Le clip le plus long est limité par la cible : 2400, 1200, 600 ou 300 images, soit environ 100, 50, 25 ou 12,5 secondes à 24 fps (par défaut : "1080p"). | COMBO | Oui | "720p"<br>"1080p"<br>"2K"<br>"4K" |
-| `fps` | Fréquence d’images de sortie (par défaut : "source"). "source" conserve la fréquence de la vidéo, jusqu’à 60 ; une fréquence supérieure est interpolée. Une sortie au-delà de 30 fps coûte deux fois plus cher. | COMBO | Oui | "source"<br>"16"<br>"24"<br>"25"<br>"30"<br>"48"<br>"50"<br>"60" |
+| `vidéo` | Vidéo à agrandir, jusqu’à 512 MiB. Les vidéos de plus de 10 mégapixels ne peuvent être envoyées que vers la cible 2K ou 4K. | VIDEO | Oui | Jusqu’à 512 MiB |
+| `cible` | Surface en pixels de sortie : 720p correspond à environ 0,9 mégapixel, 1080p à 2,1, 2K à 3,7 et 4K à 8,3. Le clip le plus long est limité par la cible : 2400, 1200, 600 ou 300 images, soit environ 100, 50, 25 ou 12,5 secondes à 24 fps (par défaut : "1080p"). | COMBO | Oui | "720p"<br>"1080p"<br>"2K"<br>"4K" |
+| `ips` | Fréquence d’images de sortie (par défaut : "source"). "source" conserve la fréquence de la vidéo, jusqu’à 60 ; une fréquence supérieure est interpolée. Une sortie au-delà de 30 fps coûte deux fois plus cher. | COMBO | Oui | "source"<br>"16"<br>"24"<br>"25"<br>"30"<br>"48"<br>"50"<br>"60" |
 | `turbo` | Agrandissement plus rapide avec des détails plus doux, au même prix (par défaut : false). | BOOLEAN | Non | true<br>false |
 
 ### Contraintes des paramètres

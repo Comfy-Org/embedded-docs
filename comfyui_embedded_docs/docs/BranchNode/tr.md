@@ -6,8 +6,8 @@ Branch, bağlı birkaç girdiden birini ada göre seçer ve çıktıya aktarır.
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `autogrow` | Bağlı dallar. Her bağlantı yeni bir dal girdisi ekler, en fazla 32'ye kadar; tüm dallar aynı veri türünü kullanmalıdır ve bu tür çıktı türü olur. | AUTOGROW | Evet | 1 ile 32 dal arası |
-| `branch` | Çıktıya aktarılan dalın adı. Seçenekler bağlı dal girdilerinin adlarıdır ve bir girdi çift tıklanarak yeniden adlandırılabilir. | STRING | Evet | Bağlı dalların adları |
+| `otomatik büyütme` | Bağlı dallar. Her bağlantı yeni bir dal girdisi ekler, en fazla 32'ye kadar; tüm dallar aynı veri türünü kullanmalıdır ve bu tür çıktı türü olur. | AUTOGROW | Evet | 1 ile 32 dal arası |
+| `dal` | Çıktıya aktarılan dalın adı. Seçenekler bağlı dal girdilerinin adlarıdır ve bir girdi çift tıklanarak yeniden adlandırılabilir. | STRING | Evet | Bağlı dalların adları |
 | `branch_names` | Bağlı dal adlarının dahili listesi; frontend tarafından eşitlenmiş tutulur. Seçili adı ilgili dala eşler ve elle düzenlenmemelidir. | ARRAY | Evet | - |
 
 **Not:** Yalnızca seçili dal istenir; bu nedenle diğer dallar değerlendirilmez. Seçili ad bağlı değilse düğüm hata verir.

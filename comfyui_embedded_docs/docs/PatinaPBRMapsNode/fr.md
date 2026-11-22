@@ -7,12 +7,12 @@ Dérive un ensemble de cartes de matériau PBR à partir d'une image de texture 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | La photographie ou le rendu à partir duquel dériver les cartes PBR. | IMAGE | Oui | - |
-| `basecolor` | Générer la carte basecolor (albédo). Par défaut : True. | BOOLEAN | Oui | true<br>false |
-| `normal` | Générer la carte normale. Par défaut : True. | BOOLEAN | Oui | true<br>false |
-| `roughness` | Générer la carte de rugosité. Par défaut : False. | BOOLEAN | Oui | true<br>false |
-| `metalness` | Générer la carte de métallicité. Par défaut : False. | BOOLEAN | Oui | true<br>false |
-| `height` | Générer la carte de hauteur (déplacement). Par défaut : False. | BOOLEAN | Oui | true<br>false |
-| `seed` | Graine pour un débruitage reproductible. Par défaut : 42. | INT | Oui | 0 à 2147483646 |
+| `couleur de base` | Générer la carte basecolor (albédo). Par défaut : True. | BOOLEAN | Oui | true<br>false |
+| `normale` | Générer la carte normale. Par défaut : True. | BOOLEAN | Oui | true<br>false |
+| `rugosité` | Générer la carte de rugosité. Par défaut : False. | BOOLEAN | Oui | true<br>false |
+| `métallicité` | Générer la carte de métallicité. Par défaut : False. | BOOLEAN | Oui | true<br>false |
+| `hauteur` | Générer la carte de hauteur (déplacement). Par défaut : False. | BOOLEAN | Oui | true<br>false |
+| `graine` | Graine pour un débruitage reproductible. Par défaut : 42. | INT | Oui | 0 à 2147483646 |
 | `safety_checker` | Exécuter la vérification de sécurité du contenu du fournisseur sur la requête. Paramètre avancé. Par défaut : False. | BOOLEAN | Oui | true<br>false |
 | `auto_downscale` | Réduire automatiquement l'échelle d'une image d'entrée dont le côté le plus long dépasse 2048 pixels, la limite d'entrée du modèle, en préservant le rapport hauteur/largeur ; les images plus petites sont laissées telles quelles. Désactivez-la pour générer une erreur sur les images surdimensionnées à la place. Paramètre avancé. Par défaut : True. | BOOLEAN | Non | true<br>false |
 

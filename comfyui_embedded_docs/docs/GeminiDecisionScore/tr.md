@@ -12,7 +12,7 @@ Bağladığınız metni, görüntüleri, sesi veya videoyu 1'den 10'a kadar puan
 | `images` | Puanlanacak görüntüler, büyütülebilir yuvalar (`image_1` ... `image_16`) boyunca en fazla 16 adet. Toplu bir görüntü, her görüntü için bir kez sayılır. | IMAGE | Hayır | 16 görsele kadar |
 | `audio` | Puanlanacak ses klibi. | AUDIO | Hayır | - |
 | `video` | Puanlanacak video klibi. | VIDEO | Hayır | - |
-| `text` | Sorunun hakkında olduğu metin; bir istem veya LLM yanıtı gibi, en fazla 20000 karakter. | STRING | Hayır | 20000 karaktere kadar |
+| `metin` | Sorunun hakkında olduğu metin; bir istem veya LLM yanıtı gibi, en fazla 20000 karakter. | STRING | Hayır | 20000 karaktere kadar |
 
 `text`, `images`, `audio` veya `video`'dan en az birini bağlayın; puanlanacak bir şey olmadığında düğüm hata verir. Birden çok görüntü varsa, bunları soru içinde `image_1`, `image_2` vb. olarak adlandırın.
 

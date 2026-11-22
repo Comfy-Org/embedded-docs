@@ -13,7 +13,7 @@ Bu düğüm, tek bir görünümü ışın izleme (ray-casting) ile işleyerek bi
 | `arka plan` | Mesh'in kapsamadığı pikseller için kullanılan arka plan rengi. (varsayılan: "#000000") | COLOR | Evet | — |
 | `model_3d_info` | Aynı Load3D / Preview3D görüntüleyicisinden gelen model dönüşümü. Görüntüleyici çerçevelemesiyle eşleşmesi için `camera_info` ile bağlayın. | LOAD3D_MODEL_INFO | Hayır | — |
 | `camera_info` | Bir Load3D / Preview3D görüntüleyicisinden veya bir Create Camera Info düğümünden gelen kamera. Hiçbiri bağlı değilse varsayılan bir önden görünüm otomatik olarak çerçevelenir. Kamera listesi verilirse her kamera için bir görüntü oluşturur. | LOAD3D_CAMERA | Hayır | — |
-| `texture` | Mesh'in kendi dokusu yerine gösterilir; örneğin Apply Texture to Mesh olmadan Bake Texture From Views çıktısı. | IMAGE | Hayır | — |
+| `doku` | Mesh'in kendi dokusu yerine gösterilir; örneğin Apply Texture to Mesh olmadan Bake Texture From Views çıktısı. | IMAGE | Hayır | — |
 
 Not: Toplu bir mesh'in yalnızca ilk öğesi işlenir — mesh batch'i birden fazla öğe içeriyorsa düğüm bir uyarı kaydeder ve ilkini kullanır. `texture` modu, mesh'in hem bir dokuya hem de UV'lere sahip olmasını gerektirir; `vertex colors` modu ise vertex renklerini gerektirir; seçilen mod için veriler mevcut değilse düğüm, düz gölgeli işlemeye geri döner. `normal` modu, mevcutsa mesh'in yumuşak vertex normallerini, aksi halde yüz başına normali kullanır. `depth` modunda, daha yakın yüzeyler daha parlak görünür (yakın = beyaz) ve mesh'in kapsamadığı pikseller siyah kalır. `model_3d_info` ve `camera_info`, aynı Load3D / Preview3D görüntüleyicisinden birlikte bağlanmak üzere tasarlanmıştır, böylece işleme görüntüleyicinin çerçevelemesiyle eşleşir.
 

@@ -8,7 +8,7 @@
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `model` | בורר מודל; בחירת מודל מציגה את הקלטים שלו להלן. `"heygen-avatar-6-turbo"` הוא הדרג הזול והמהיר יותר. | DYNAMIC_COMBO | כן | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `מודל` | בורר מודל; בחירת מודל מציגה את הקלטים שלו להלן. `"heygen-avatar-6-turbo"` הוא הדרג הזול והמהיר יותר. | DYNAMIC_COMBO | כן | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
 
 ### קלטים של `heygen-avatar-6`
 

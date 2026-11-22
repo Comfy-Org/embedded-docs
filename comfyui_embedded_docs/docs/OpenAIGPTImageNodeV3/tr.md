@@ -18,17 +18,17 @@ Bu girdiler `model` değeri `gpt-image-2.6-flare` veya `gpt-image-2.6-sunburst` 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Ne oluşturulacağı veya yapılacak düzenleme. (varsayılan: `""`) | STRING | Evet | N/A |
-| `model.size` | Görüntü boyutu. Özel genişlik ve yüksekliği kullanmak için "Custom" seçeneğini seçin. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
-| `model.custom_width` | Yalnızca `model.size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır. (varsayılan: `1024`) | INT | Hayır | 480 ile 3840 arası (adım 16) |
-| `model.custom_height` | Yalnızca `model.size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır. (varsayılan: `1024`) | INT | Hayır | 480 ile 3840 arası (adım 16) |
-| `model.background` | Görüntüyü arka planlı veya arka plansız döndürür. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>`"opaque"`<br>`"transparent"` |
-| `model.quality` | Görüntü kalitesi. Daha yüksek seviyeler daha maliyetlidir ve daha uzun sürer. (varsayılan: `"low"`) | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | Modelin görüntüyü oluşturmadan önce ne kadar planladığı. (varsayılan: `"high"`) | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"` |
+| `istem` | Ne oluşturulacağı veya yapılacak düzenleme. (varsayılan: `""`) | STRING | Evet | N/A |
+| `boyut` | Görüntü boyutu. Özel genişlik ve yüksekliği kullanmak için "Custom" seçeneğini seçin. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `custom_width` | Yalnızca `model.size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır. (varsayılan: `1024`) | INT | Hayır | 480 ile 3840 arası (adım 16) |
+| `custom_height` | Yalnızca `model.size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır. (varsayılan: `1024`) | INT | Hayır | 480 ile 3840 arası (adım 16) |
+| `arka plan` | Görüntüyü arka planlı veya arka plansız döndürür. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `kalite` | Görüntü kalitesi. Daha yüksek seviyeler daha maliyetlidir ve daha uzun sürer. (varsayılan: `"low"`) | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `karmaşıklık` | Modelin görüntüyü oluşturmadan önce ne kadar planladığı. (varsayılan: `"high"`) | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"` |
 | `model.images` | Düzenleme için isteğe bağlı referans görüntüleri. En fazla 16. | AUTOGROW | Hayır | 0 ile 16 arası |
 | `model.markup` | İlk referans görüntüsü üzerine çizilen ve nerede düzenleme yapılacağını gösteren açıklamalar. O görüntünün boyutuyla eşleşmeli ve `model.markup_alpha` ile birlikte bağlanmalıdır. | IMAGE | Hayır | N/A |
 | `model.markup_alpha` | Beyaz, `model.markup` içindeki açıklamaları işaretler. Painter düğümünün MASK çıktısı doğrudan uygundur; bir Load Image maskesi için önce Invert Mask gerekir. | MASK | Hayır | N/A |
-| `model.seed` | Düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: `42`) | INT | Evet | 0 ile 2147483647 arası |
+| `tohum` | Düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: `42`) | INT | Evet | 0 ile 2147483647 arası |
 
 ### gpt-image-2.5-flare ve gpt-image-2.5-sunburst Girdileri
 
@@ -36,16 +36,16 @@ Bu girdiler `model` değeri `gpt-image-2.5-flare` veya `gpt-image-2.5-sunburst` 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Ne oluşturulacağı veya yapılacak düzenleme. (varsayılan: `""`) | STRING | Evet | N/A |
-| `model.size` | Görüntü boyutu. Özel genişlik ve yüksekliği kullanmak için "Custom" seçeneğini seçin. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
-| `model.custom_width` | Yalnızca `model.size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır. (varsayılan: `1024`) | INT | Hayır | 480 ile 3840 arası (adım 16) |
-| `model.custom_height` | Yalnızca `model.size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır. (varsayılan: `1024`) | INT | Hayır | 480 ile 3840 arası (adım 16) |
-| `model.background` | Görüntüyü arka planlı veya arka plansız döndürür. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>`"opaque"`<br>`"transparent"` |
-| `model.quality` | Görüntü kalitesi. Daha yüksek seviyeler daha maliyetlidir ve daha uzun sürer. (varsayılan: `"low"`) | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `istem` | Ne oluşturulacağı veya yapılacak düzenleme. (varsayılan: `""`) | STRING | Evet | N/A |
+| `boyut` | Görüntü boyutu. Özel genişlik ve yüksekliği kullanmak için "Custom" seçeneğini seçin. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `custom_width` | Yalnızca `model.size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır. (varsayılan: `1024`) | INT | Hayır | 480 ile 3840 arası (adım 16) |
+| `custom_height` | Yalnızca `model.size` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır. (varsayılan: `1024`) | INT | Hayır | 480 ile 3840 arası (adım 16) |
+| `arka plan` | Görüntüyü arka planlı veya arka plansız döndürür. (varsayılan: `"auto"`) | COMBO | Evet | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `kalite` | Görüntü kalitesi. Daha yüksek seviyeler daha maliyetlidir ve daha uzun sürer. (varsayılan: `"low"`) | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 | `model.images` | Düzenleme için isteğe bağlı referans görüntüleri. En fazla 16. | AUTOGROW | Hayır | 0 ile 16 arası |
 | `model.markup` | İlk referans görüntüsü üzerine çizilen ve nerede düzenleme yapılacağını gösteren açıklamalar. O görüntünün boyutuyla eşleşmeli ve `model.markup_alpha` ile birlikte bağlanmalıdır. | IMAGE | Hayır | N/A |
 | `model.markup_alpha` | Beyaz, `model.markup` içindeki açıklamaları işaretler. Painter düğümünün MASK çıktısı doğrudan uygundur; bir Load Image maskesi için önce Invert Mask gerekir. | MASK | Hayır | N/A |
-| `model.seed` | Düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: `42`) | INT | Evet | 0 ile 2147483647 arası |
+| `tohum` | Düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: `42`) | INT | Evet | 0 ile 2147483647 arası |
 
 **Parametre Kısıtlamaları ve Sınırlamaları:**
 
