@@ -8,7 +8,7 @@ Erstellen Sie einen wiederverwendbaren HeyGen-Avatar aus einem Foto einer Person
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `source` | Generieren Sie eine neue Figur aus einem Text-Prompt oder erstellen Sie den Avatar aus einem verbundenen Foto einer Person. | DYNAMIC_COMBO | Ja | `"prompt"`<br>`"photo"` |
+| `Quelle` | Generieren Sie eine neue Figur aus einem Text-Prompt oder erstellen Sie den Avatar aus einem verbundenen Foto einer Person. | DYNAMIC_COMBO | Ja | `"prompt"`<br>`"photo"` |
 
 ### Prompt-Eingaben
 

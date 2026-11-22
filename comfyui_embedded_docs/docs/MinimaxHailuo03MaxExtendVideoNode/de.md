@@ -8,7 +8,7 @@ Dieser Node setzt ein Video mit neuen Aufnahmen fort, gesteuert durch einen Prom
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Modell, das zum Fortsetzen des Videos verwendet wird. Beide Modelle stellen unten dieselben Eingaben bereit. | DYNAMIC_COMBO | Ja | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `Modell` | Modell, das zum Fortsetzen des Videos verwendet wird. Beide Modelle stellen unten dieselben Eingaben bereit. | DYNAMIC_COMBO | Ja | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
 
 ### Modelleingaben
 

@@ -8,7 +8,7 @@ Der Node `Save Checkpoint` wird hauptsächlich in Workflows zum Zusammenführen 
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `model` | Der Parameter `model` repräsentiert das primäre Modell, dessen Zustand gespeichert werden soll. Er ist wesentlich, um den aktuellen Zustand des Modells für zukünftige Wiederherstellung oder Analyse zu erfassen. | MODEL |
+| `Modell` | Der Parameter `model` repräsentiert das primäre Modell, dessen Zustand gespeichert werden soll. Er ist wesentlich, um den aktuellen Zustand des Modells für zukünftige Wiederherstellung oder Analyse zu erfassen. | MODEL |
 | `clip` | Der Parameter `clip` ist für das dem primären Modell zugeordnete CLIP-Modell vorgesehen, sodass sein Zustand zusammen mit dem Hauptmodell gespeichert werden kann. | CLIP |
 | `vae` | Der Parameter `vae` ist für das Variational-Autoencoder-(VAE)-Modell gedacht, sodass sein Zustand zusammen mit dem Hauptmodell und CLIP für zukünftige Nutzung oder Analyse gespeichert werden kann. | VAE |
 | `filename_prefix` | Dieser Parameter legt das Präfix für den Dateinamen fest, unter dem der Checkpoint gespeichert wird. | STRING |

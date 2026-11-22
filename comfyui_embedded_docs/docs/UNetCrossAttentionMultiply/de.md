@@ -6,7 +6,7 @@ Der Node `UNetCrossAttentionMultiply` wendet Multiplikationsfaktoren auf den Cro
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das UNet-Modell, das mit Attention-Skalierungsfaktoren geändert werden soll | MODEL | Ja | - |
+| `Modell` | Das UNet-Modell, das mit Attention-Skalierungsfaktoren geändert werden soll | MODEL | Ja | - |
 | `q` | Skalierungsfaktor für Query-Komponenten in Cross-Attention (Standard: 1.0) | FLOAT | Nein | 0.0 - 10.0 |
 | `k` | Skalierungsfaktor für Key-Komponenten in Cross-Attention (Standard: 1.0) | FLOAT | Nein | 0.0 - 10.0 |
 | `v` | Skalierungsfaktor für Value-Komponenten in Cross-Attention (Standard: 1.0) | FLOAT | Nein | 0.0 - 10.0 |

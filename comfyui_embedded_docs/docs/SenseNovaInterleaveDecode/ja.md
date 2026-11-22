@@ -7,8 +7,8 @@ SenseNova Conditioning が残したインターリーブ履歴を、使用可能
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | 生成されたトークンをデコードするために使用する SenseNova CLIP モデルです。 | CLIP | はい | - |
-| `conditioning` | SenseNova Conditioning からのインターリーブ条件付けです。 | CONDITIONING | はい | - |
-| `samples` | 最後の KSampler のピクセル潜在です。ループが画像リクエストで終了した場合に必要です。 | LATENT | いいえ | - |
+| `コンディショニング` | SenseNova Conditioning からのインターリーブ条件付けです。 | CONDITIONING | はい | - |
+| `サンプル` | 最後の KSampler のピクセル潜在です。ループが画像リクエストで終了した場合に必要です。 | LATENT | いいえ | - |
 
 **制約と動作:**
 

@@ -6,7 +6,7 @@ Der CFGZeroStar-Node wendet eine spezialisierte Guidance-Skalierungstechnik auf 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Diffusionsmodell, das mit der CFGZeroStar-Guidance-Skalierungstechnik modifiziert werden soll | MODEL | Ja | - |
+| `Modell` | Das Diffusionsmodell, das mit der CFGZeroStar-Guidance-Skalierungstechnik modifiziert werden soll | MODEL | Ja | - |
 
 ## Ausgaben
 

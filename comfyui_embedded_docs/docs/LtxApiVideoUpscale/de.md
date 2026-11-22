@@ -6,9 +6,9 @@ Skaliert ein Video auf 1080p, 4K oder 8K hoch, wobei Seitenverhältnis, Bildrate
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Wertebereich |
 | --- | --- | --- | --- | --- |
-| `video` | Hochzuskalierendes Video mit einer kurzen Seite von mindestens 480 Pixeln und maximal 7680x4320 in jeder Ausrichtung. Bis zu 2401 Frames für 1080p, 601 Frames für 4K und 241 Frames für 8K. | VIDEO | Ja | - |
-| `resolution` | Ausgabegröße, so groß wie in 1920x1080, 3840x2160 oder 7680x4320 passend und für Hochformatvideos gedreht. Standard: `"4k"`. | COMBO | Ja | `"1080p"`<br>`"4k"`<br>`"8k"` |
-| `seed` | Steuert, ob der Node erneut ausgeführt wird; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Nein | 0 bis 4294967295 |
+| `Video` | Hochzuskalierendes Video mit einer kurzen Seite von mindestens 480 Pixeln und maximal 7680x4320 in jeder Ausrichtung. Bis zu 2401 Frames für 1080p, 601 Frames für 4K und 241 Frames für 8K. | VIDEO | Ja | - |
+| `Auflösung` | Ausgabegröße, so groß wie in 1920x1080, 3840x2160 oder 7680x4320 passend und für Hochformatvideos gedreht. Standard: `"4k"`. | COMBO | Ja | `"1080p"`<br>`"4k"`<br>`"8k"` |
+| `Seed` | Steuert, ob der Node erneut ausgeführt wird; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Nein | 0 bis 4294967295 |
 
 ## Ausgaben
 

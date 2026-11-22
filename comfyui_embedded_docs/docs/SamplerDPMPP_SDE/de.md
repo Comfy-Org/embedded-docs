@@ -11,7 +11,7 @@ SamplerDPMPP_SDE erstellt einen DPM++ SDE-Sampler (stochastische Differentialgle
 | `eta` | Steuert die Stochastizität des Sampling-Prozesses (Standard: 1.0) | FLOAT | Ja | 0.0 - 100.0 |
 | `s_noise` | Steuert die Menge an Rauschen, die während des Samplings hinzugefügt wird (Standard: 1.0) | FLOAT | Ja | 0.0 - 100.0 |
 | `r` | Ein Parameter, der das Sampling-Verhalten beeinflusst (Standard: 0.5) | FLOAT | Ja | 0.0 - 100.0 |
-| `noise_device` | Wählt das Gerät aus, auf dem Rauschberechnungen durchgeführt werden. Bei Einstellung auf "cpu" wird der `dpmpp_sde`-Sampler erstellt; bei Einstellung auf "gpu" wird der `dpmpp_sde_gpu`-Sampler erstellt (Standard: "gpu") | COMBO | Ja | "gpu"<br>"cpu" |
+| `Noise-Device` | Wählt das Gerät aus, auf dem Rauschberechnungen durchgeführt werden. Bei Einstellung auf "cpu" wird der `dpmpp_sde`-Sampler erstellt; bei Einstellung auf "gpu" wird der `dpmpp_sde_gpu`-Sampler erstellt (Standard: "gpu") | COMBO | Ja | "gpu"<br>"cpu" |
 
 Hinweis: Alle Eingaben sind als erweiterte Parameter markiert. Die Auswahl von `noise_device` ändert, welche Sampler-Variante erstellt wird: "cpu" wird `dpmpp_sde` zugeordnet und "gpu" wird `dpmpp_sde_gpu` zugeordnet.
 

@@ -6,10 +6,10 @@ Dieser Node verwendet die Grok-API, um ein vorhandenes Video anhand eines Text-P
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das für die Videobearbeitung zu verwendende KI-Modell (Standard: "grok-imagine-video"). | COMBO | Ja | "grok-imagine-video" |
-| `prompt` | Textbeschreibung des gewünschten Videos. | STRING | Ja | N/A |
-| `video` | Das zu bearbeitende Eingabevideo. Die maximal unterstützte Dauer beträgt 8,7 Sekunden und die Dateigröße 50 MB. | VIDEO | Ja | N/A |
-| `seed` | Seed, um zu bestimmen, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Nein | 0 bis 2147483647 |
+| `Modell` | Das für die Videobearbeitung zu verwendende KI-Modell (Standard: "grok-imagine-video"). | COMBO | Ja | "grok-imagine-video" |
+| `Prompt` | Textbeschreibung des gewünschten Videos. | STRING | Ja | N/A |
+| `Video` | Das zu bearbeitende Eingabevideo. Die maximal unterstützte Dauer beträgt 8,7 Sekunden und die Dateigröße 50 MB. | VIDEO | Ja | N/A |
+| `Seed` | Seed, um zu bestimmen, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Nein | 0 bis 2147483647 |
 
 **Einschränkungen:**
 

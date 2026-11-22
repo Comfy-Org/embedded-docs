@@ -6,8 +6,8 @@ Extrahiert eine Graustufen-Alpha-Matte, weiß für den Vordergrund, die dem Eing
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `video` | Video, das als Matte extrahiert werden soll, bis zu 10 Sekunden und 3840x2160 in beliebiger Ausrichtung. | VIDEO | Ja | - |
-| `seed` | Steuert, ob der Node erneut ausgeführt wird; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Nein | 0 bis 4294967295 |
+| `Video` | Video, das als Matte extrahiert werden soll, bis zu 10 Sekunden und 3840x2160 in beliebiger Ausrichtung. | VIDEO | Ja | - |
+| `Seed` | Steuert, ob der Node erneut ausgeführt wird; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Nein | 0 bis 4294967295 |
 
 ## Ausgaben
 

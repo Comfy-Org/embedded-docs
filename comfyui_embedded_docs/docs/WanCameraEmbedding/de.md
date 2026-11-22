@@ -6,11 +6,11 @@ Dieser Node erzeugt ein Kamera-Trajektorien-Embedding unter Verwendung von Plüc
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `camera_pose` | Der Typ der zu simulierenden Kamerabewegung (Standard: "Static") | COMBO | Ja | "Static"<br>"Pan Up"<br>"Pan Down"<br>"Pan Left"<br>"Pan Right"<br>"Zoom In"<br>"Zoom Out"<br>"Anti Clockwise (ACW)"<br>"ClockWise (CW)" |
-| `width` | Die Breite der Ausgabe in Pixeln (Standard: 832, Schritt: 16) | INT | Ja | 16 bis MAX_RESOLUTION |
-| `height` | Die Höhe der Ausgabe in Pixeln (Standard: 480, Schritt: 16) | INT | Ja | 16 bis MAX_RESOLUTION |
-| `length` | Die Länge der Kamera-Trajektoriensequenz (Standard: 81, Schritt: 4) | INT | Ja | 1 bis MAX_RESOLUTION |
-| `speed` | Die Geschwindigkeit der Kamerabewegung (Standard: 1.0, Schritt: 0.1) | FLOAT | Nein | 0.0 bis 10.0 |
+| `Kamerapose` | Der Typ der zu simulierenden Kamerabewegung (Standard: "Static") | COMBO | Ja | "Static"<br>"Pan Up"<br>"Pan Down"<br>"Pan Left"<br>"Pan Right"<br>"Zoom In"<br>"Zoom Out"<br>"Anti Clockwise (ACW)"<br>"ClockWise (CW)" |
+| `Breite` | Die Breite der Ausgabe in Pixeln (Standard: 832, Schritt: 16) | INT | Ja | 16 bis MAX_RESOLUTION |
+| `Höhe` | Die Höhe der Ausgabe in Pixeln (Standard: 480, Schritt: 16) | INT | Ja | 16 bis MAX_RESOLUTION |
+| `Länge` | Die Länge der Kamera-Trajektoriensequenz (Standard: 81, Schritt: 4) | INT | Ja | 1 bis MAX_RESOLUTION |
+| `Geschwindigkeit` | Die Geschwindigkeit der Kamerabewegung (Standard: 1.0, Schritt: 0.1) | FLOAT | Nein | 0.0 bis 10.0 |
 | `fx` | Der Brennweitenparameter x (Standard: 0.5, Schritt: 0.000000001) | FLOAT | Nein | 0.0 bis 1.0 |
 | `fy` | Der Brennweitenparameter y (Standard: 0.5, Schritt: 0.000000001) | FLOAT | Nein | 0.0 bis 1.0 |
 | `cx` | Die x-Koordinate des Hauptpunkts (Standard: 0.5, Schritt: 0.01) | FLOAT | Nein | 0.0 bis 1.0 |

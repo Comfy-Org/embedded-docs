@@ -6,12 +6,12 @@ Dieser Node patcht ein TripoSplat-Modell, sodass bei Verwendung mit dem standard
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das TripoSplat-Modell, das für die Live-Vorschau gepatcht werden soll (liefert die Conditioning-Token-Länge, die zur Schätzung des Speicherbedarfs verwendet wird) | MODEL | Ja | |
+| `Modell` | Das TripoSplat-Modell, das für die Live-Vorschau gepatcht werden soll (liefert die Conditioning-Token-Länge, die zur Schätzung des Speicherbedarfs verwendet wird) | MODEL | Ja | |
 | `vae` | TripoSplat-VAE-Decoder | VAE | Ja | |
-| `octree_level` | Octree-Tiefe für die Vorschau-Dekodierung (niedriger = sparsamer/grobkörniger). Standard: 5 | INT | Nein | 2 bis 8 |
-| `num_gaussians` | Anzahl der für die Vorschau zu erzeugenden Gaussians (auf ein Vielfaches von 32 gerundet). Standard: 16384 | INT | Nein | 1024 bis 262144 (Schritt: 32) |
-| `yaw` | Gierwinkel der Vorschaukamera in Grad. Standard: 90.0 | FLOAT | Nein | -360.0 bis 360.0 (Schritt: 1.0) |
-| `pitch` | Nickwinkel der Vorschaukamera in Grad. Standard: 15.0 | FLOAT | Nein | -89.0 bis 89.0 (Schritt: 1.0) |
+| `Octree-Ebene` | Octree-Tiefe für die Vorschau-Dekodierung (niedriger = sparsamer/grobkörniger). Standard: 5 | INT | Nein | 2 bis 8 |
+| `Anzahl Gaussians` | Anzahl der für die Vorschau zu erzeugenden Gaussians (auf ein Vielfaches von 32 gerundet). Standard: 16384 | INT | Nein | 1024 bis 262144 (Schritt: 32) |
+| `Gierwinkel` | Gierwinkel der Vorschaukamera in Grad. Standard: 90.0 | FLOAT | Nein | -360.0 bis 360.0 (Schritt: 1.0) |
+| `Nickwinkel` | Nickwinkel der Vorschaukamera in Grad. Standard: 15.0 | FLOAT | Nein | -89.0 bis 89.0 (Schritt: 1.0) |
 | `point_size` | Maximaler Splat-Radius in Pixeln. Jeder Gaussian wird anhand seiner Skalierung dimensioniert und hier begrenzt; niedriger = feiner/punktiger, höher = klobiger/gröber. Standard: 3 | INT | Nein | 1 bis 16 |
 
 ## Ausgaben

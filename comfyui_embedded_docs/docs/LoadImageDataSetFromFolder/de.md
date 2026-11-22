@@ -6,7 +6,7 @@ Dieser Node lädt mehrere Bilder aus einem ausgewählten Unterordner innerhalb d
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `folder` | Der Ordner, aus dem Bilder geladen werden sollen. Die Optionen sind die Unterordner, die im Haupteingabeverzeichnis von ComfyUI vorhanden sind. | COMBO | Ja | Mehrere Optionen verfügbar |
+| `Ordner` | Der Ordner, aus dem Bilder geladen werden sollen. Die Optionen sind die Unterordner, die im Haupteingabeverzeichnis von ComfyUI vorhanden sind. | COMBO | Ja | Mehrere Optionen verfügbar |
 
 Hinweis: Der ausgewählte Ordner muss ein Unterordner des Haupteingabeverzeichnisses von ComfyUI sein; jeder Wert, der außerhalb davon aufgelöst wird (zum Beispiel unter Verwendung von `..`, absoluten Pfaden, Laufwerksbuchstaben oder Symlinks), wird abgelehnt. Es werden nur Dateien mit den Erweiterungen .png, .jpg, .jpeg oder .webp geladen; bei der Prüfung der Erweiterung wird die Groß-/Kleinschreibung nicht unterschieden. Geladene Bilder werden in RGB konvertiert und auf den Bereich 0-1 skaliert. Wenn der ausgewählte Ordner keine gültigen Bilddateien enthält, löst der Node einen Fehler aus. Dieser Node ist als experimentell gekennzeichnet.
 

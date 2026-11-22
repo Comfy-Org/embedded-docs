@@ -6,8 +6,8 @@ Der Node `ImageBatch` ist darauf ausgelegt, zwei Bilder zu einem einzigen Batch 
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `image1` | Das erste Bild, das in den Batch aufgenommen werden soll. Es dient als Referenz für die Abmessungen, an die das zweite Bild bei Bedarf angepasst wird. | `IMAGE` |
-| `image2` | Das zweite Bild, das in den Batch aufgenommen werden soll. Es wird automatisch auf die Abmessungen des ersten Bildes skaliert, falls diese abweichen. | `IMAGE` |
+| `Bild 1` | Das erste Bild, das in den Batch aufgenommen werden soll. Es dient als Referenz für die Abmessungen, an die das zweite Bild bei Bedarf angepasst wird. | `IMAGE` |
+| `Bild 2` | Das zweite Bild, das in den Batch aufgenommen werden soll. Es wird automatisch auf die Abmessungen des ersten Bildes skaliert, falls diese abweichen. | `IMAGE` |
 
 ## Ausgaben
 

@@ -6,9 +6,9 @@ Der Node Sonilo Music 1.5 erzeugt aus einem Text-Prompt einen kompletten Song mi
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Range |
 | --- | --- | --- | --- | --- |
-| `prompt` | Beschreibung des Songs: Genre, Stimmung, Instrumente und Gesang. Um die Worte selbst festzulegen, fügen Sie einen `Lyrics:`-Block mit `[Verse]`- und `[Chorus]`-Tags hinzu; ohne einen solchen Block schreibt das Modell seine eigenen Texte. Muss nach dem Entfernen von Leerzeichen 1 bis 2000 Zeichen lang sein. | STRING | Ja | 1 bis 2000 Zeichen |
-| `duration` | `auto` passt die Songlänge an den Songtext an. `custom` verwendet den Wert von `seconds`, schneidet nicht passende Texte ab und wiederholt kurze Texte. | DYNAMIC_COMBO | Ja | `"auto"`<br>`"custom"` |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 42). | INT | Ja | 0 bis 18446744073709551615 |
+| `Prompt` | Beschreibung des Songs: Genre, Stimmung, Instrumente und Gesang. Um die Worte selbst festzulegen, fügen Sie einen `Lyrics:`-Block mit `[Verse]`- und `[Chorus]`-Tags hinzu; ohne einen solchen Block schreibt das Modell seine eigenen Texte. Muss nach dem Entfernen von Leerzeichen 1 bis 2000 Zeichen lang sein. | STRING | Ja | 1 bis 2000 Zeichen |
+| `Dauer` | `auto` passt die Songlänge an den Songtext an. `custom` verwendet den Wert von `seconds`, schneidet nicht passende Texte ab und wiederholt kurze Texte. | DYNAMIC_COMBO | Ja | `"auto"`<br>`"custom"` |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 42). | INT | Ja | 0 bis 18446744073709551615 |
 
 ### Benutzerdefinierte Dauer-Parameter (wenn `duration` auf `"custom"` steht)
 

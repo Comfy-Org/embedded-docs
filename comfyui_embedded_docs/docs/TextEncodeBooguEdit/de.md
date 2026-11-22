@@ -7,8 +7,8 @@ Dieser Node bereitet Conditioning für die Bildbearbeitung mit Boogu vor. Er ver
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | Das CLIP-Modell, das zur Textkodierung verwendet wird | CLIP | Ja | |
-| `prompt` | Der Text-Prompt, der die gewünschte Bearbeitung beschreibt. Unterstützt mehrzeiligen Text und dynamische Prompts. | STRING | Ja | |
-| `negative_prompt` | Der Text-Prompt, der beschreibt, was bei der Bearbeitung vermieden werden soll. Kann leer gelassen werden, um negatives Conditioning wegzulassen. Erweiterter Parameter. | STRING | Ja | |
+| `Prompt` | Der Text-Prompt, der die gewünschte Bearbeitung beschreibt. Unterstützt mehrzeiligen Text und dynamische Prompts. | STRING | Ja | |
+| `Negativer Prompt` | Der Text-Prompt, der beschreibt, was bei der Bearbeitung vermieden werden soll. Kann leer gelassen werden, um negatives Conditioning wegzulassen. Erweiterter Parameter. | STRING | Ja | |
 | `vae` | Das VAE-Modell, das verwendet wird, um Referenzbilder in den Latent-Raum zu kodieren. Erforderlich, um Referenz-Latents zu den Conditioning-Ausgaben hinzuzufügen. | VAE | Nein | |
 | `images` | Referenzbild(er) zum Bearbeiten. Boogu konzentriert sich auf eine Referenz pro Sample; mehr sind erlaubt. | IMAGE | Nein | Bis zu 16 Bilder |
 

@@ -8,7 +8,7 @@ Dieser Node kodiert ein Eingabebild mit dem DINOv3-Bildencoder und dem Flux2-VAE
 |-----------|-------------|-----------|----------|-------|
 | `clip_vision` | DINOv3 ViT-H/16+ Bildencoder | CLIP_VISION | Ja | - |
 | `vae` | Flux2 VAE | VAE | Ja | - |
-| `image` | Das zu kodierende Eingabebild | IMAGE | Ja | - |
+| `Bild` | Das zu kodierende Eingabebild | IMAGE | Ja | - |
 
 ## Ausgaben
 

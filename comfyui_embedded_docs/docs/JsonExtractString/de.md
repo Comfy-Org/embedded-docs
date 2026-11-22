@@ -6,8 +6,8 @@ Der Node JsonExtractString durchsucht eine Textzeichenkette nach dem ersten gül
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `json_string` | Der Text, in dem nach einem JSON-Objekt gesucht wird. Dieses Feld unterstützt mehrzeilige Eingaben und kann umgebenden Fließtext oder Markdown-Codezäune enthalten. | STRING | Ja | N/A |
-| `key` | Der bestimmte Schlüssel, dessen Wert aus dem JSON-Objekt extrahiert werden soll. Dieses Feld unterstützt nur einzeilige Eingaben. | STRING | Ja | N/A |
+| `JSON-String` | Der Text, in dem nach einem JSON-Objekt gesucht wird. Dieses Feld unterstützt mehrzeilige Eingaben und kann umgebenden Fließtext oder Markdown-Codezäune enthalten. | STRING | Ja | N/A |
+| `Schlüssel` | Der bestimmte Schlüssel, dessen Wert aus dem JSON-Objekt extrahiert werden soll. Dieses Feld unterstützt nur einzeilige Eingaben. | STRING | Ja | N/A |
 
 **Hinweis:** Der Node extrahiert Werte nur aus JSON-Objekten (Dictionaries). Er probiert jedes `{` in der Eingabe der Reihe nach aus und dekodiert ab der ersten Position, die ein gültiges JSON-Objekt ergibt, sodass vorangestellter oder nachfolgender Text übersprungen wird. Wenn kein JSON-Objekt dekodiert werden kann oder der angegebene Schlüssel darin nicht existiert, ist die Ausgabe eine leere Zeichenkette. Wenn der dem Schlüssel zugeordnete Wert `null` ist, gibt der Node ebenfalls eine leere Zeichenkette zurück. Werte, die keine Zeichenketten sind, werden als ihre Zeichenkettendarstellung zurückgegeben.
 

@@ -14,7 +14,7 @@ Der Node Create Camera Info erstellt eine Kamerainformationsstruktur für 3D-Ren
 | `fov` | Vertikales Sichtfeld in Grad. (Standard: 35.0) | FLOAT | Nein | 1.0 bis 120.0 |
 | `zoom` | Digitaler Zoom (Brennweitenmultiplikator). Werte größer als 1 zoomen heran, ohne die Kamera zu bewegen. (Standard: 1.0) | FLOAT | Nein | 0.01 bis 100.0 |
 | `camera_type` | Von Render Splat und Render Mesh verwendete Projektion: perspektivisch (Verkürzung) oder orthografisch (parallel). (Standard: "perspective") | COMBO | Nein | `"perspective"`<br>`"orthographic"` |
-| `mesh` | Rahmt dieses Mesh ein: Position, Ziel und Abstand werden von der Mitte seiner Bounding-Box in Einheiten des Durchmessers der Bounding-Sphere gemessen, sodass dieselben Einstellungen jedes Mesh einrahmen. | MESH | Nein | - |
+| `Mesh` | Rahmt dieses Mesh ein: Position, Ziel und Abstand werden von der Mitte seiner Bounding-Box in Einheiten des Durchmessers der Bounding-Sphere gemessen, sodass dieselben Einstellungen jedes Mesh einrahmen. | MESH | Nein | - |
 
 ### Modusspezifische Parameter
 

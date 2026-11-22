@@ -6,12 +6,12 @@ Der Node „Create Video“ kombiniert eine Sequenz von Bildern zu einem Video. 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `images` | Die Bilder, aus denen ein Video erstellt werden soll. | IMAGE | Ja | - |
+| `Bilder` | Die Bilder, aus denen ein Video erstellt werden soll. | IMAGE | Ja | - |
 | `fps` | Die Bilder pro Sekunde für die Wiedergabegeschwindigkeit des Videos (Standard: 30.0). | FLOAT | Ja | 1.0 - 120.0 |
-| `audio` | Das Audio, das dem Video hinzugefügt werden soll. | AUDIO | Nein | - |
-| `bit_depth` | Auto verwendet 8-Bit für sRGB und 10-Bit für HDR und HDR PQ. Die expliziten Auswahlmöglichkeiten 8-Bit und 10-Bit sind unabhängig vom Farbraum. (Standard: "auto") | COMBO | Nein | `"auto"`<br>8<br>10 |
-| `color_space` | Farbraum der Eingabebilder. HDR wählt BT.2020/HLG und HDR PQ wählt BT.2020/PQ. (Standard: "sRGB") | COMBO | Nein | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"` |
-| `chroma_subsampling` | 444 behält die volle Farbauflösung bei, 422 halbiert die horizontale Farbauflösung und 420 halbiert beide Achsen. Auto verwendet den Standardwert des Codecs. Nicht unterstützte Auswahlmöglichkeiten verwenden den nächstgelegenen unterstützten Modus und geben eine Warnung in der Konsole aus. (Standard: "auto") none überlässt die Wahl dem Encoder. | COMBO | Nein | `"auto"`<br>`"444"`<br>`"422"`<br>`"420"`<br>`"none"` |
+| `Audio` | Das Audio, das dem Video hinzugefügt werden soll. | AUDIO | Nein | - |
+| `Bittiefe` | Auto verwendet 8-Bit für sRGB und 10-Bit für HDR und HDR PQ. Die expliziten Auswahlmöglichkeiten 8-Bit und 10-Bit sind unabhängig vom Farbraum. (Standard: "auto") | COMBO | Nein | `"auto"`<br>8<br>10 |
+| `Farbraum` | Farbraum der Eingabebilder. HDR wählt BT.2020/HLG und HDR PQ wählt BT.2020/PQ. (Standard: "sRGB") | COMBO | Nein | `"sRGB"`<br>`"HDR"`<br>`"HDR PQ"` |
+| `Chroma-Subsampling` | 444 behält die volle Farbauflösung bei, 422 halbiert die horizontale Farbauflösung und 420 halbiert beide Achsen. Auto verwendet den Standardwert des Codecs. Nicht unterstützte Auswahlmöglichkeiten verwenden den nächstgelegenen unterstützten Modus und geben eine Warnung in der Konsole aus. (Standard: "auto") none überlässt die Wahl dem Encoder. | COMBO | Nein | `"auto"`<br>`"444"`<br>`"422"`<br>`"420"`<br>`"none"` |
 | `codec` | Kodiert das Video optional sofort. None behält die Bilder in Tensorform; Auto verwendet H.264. (Standard: "none") | COMBO | Nein | `"none"`<br>Verfügbare Videocodec-Optionen aus der Videocodec-Liste (z. B. `"auto"` und andere unterstützte Codecs) |
 
 Hinweis: Wenn `bit_depth` auf `"auto"` gesetzt ist, verwendet der Node automatisch 10-Bit für die Farbräume HDR und HDR PQ und 8-Bit für sRGB.

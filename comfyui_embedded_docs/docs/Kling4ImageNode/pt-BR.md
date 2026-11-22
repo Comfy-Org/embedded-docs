@@ -6,12 +6,12 @@ Gere ou edite imagens com o Kling 4.0 a partir de um prompt de texto e até 10 i
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `reference_images` | Espaços expansíveis para imagens de referência (`image_1` ... `image_10`). Refira-se a eles no prompt como `@Image1`, `@Image2` e assim por diante. | AUTOGROW | Não | 0 a 10 imagens |
+| `imagens_de_referência` | Espaços expansíveis para imagens de referência (`image_1` ... `image_10`). Refira-se a eles no prompt como `@Image1`, `@Image2` e assim por diante. | AUTOGROW | Não | 0 a 10 imagens |
 | `prompt` | Descrição da imagem. Refira-se às imagens conectadas como `@Image1`, `@Image2`, ... Padrão: string vazia. | STRING | Sim | Texto multilinha |
-| `resolution` | Resolução da imagem de saída. Padrão: `"2K"`. | COMBO | Sim | `"2K"`<br>`"4K"`<br>`"8K"` |
-| `aspect_ratio` | Proporção da imagem de saída. `"auto"` segue as imagens de referência; caso contrário, o prompt. Padrão: `"auto"`. | COMBO | Sim | `"auto"`<br>`"9:16"`<br>`"2:3"`<br>`"3:4"`<br>`"1:1"`<br>`"4:3"`<br>`"3:2"`<br>`"16:9"`<br>`"21:9"` |
-| `series_amount` | Gera uma série de imagens relacionadas que mantêm os mesmos personagens e estilo. `"auto"` permite que o modelo escolha de 2 a 10 imagens. Padrão: `"disabled"`. | COMBO | Sim | `"disabled"`<br>`"auto"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
-| `seed` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Sim | 0 a 2147483647 |
+| `resolução` | Resolução da imagem de saída. Padrão: `"2K"`. | COMBO | Sim | `"2K"`<br>`"4K"`<br>`"8K"` |
+| `proporção_da_tela` | Proporção da imagem de saída. `"auto"` segue as imagens de referência; caso contrário, o prompt. Padrão: `"auto"`. | COMBO | Sim | `"auto"`<br>`"9:16"`<br>`"2:3"`<br>`"3:4"`<br>`"1:1"`<br>`"4:3"`<br>`"3:2"`<br>`"16:9"`<br>`"21:9"` |
+| `quantidade_da_série` | Gera uma série de imagens relacionadas que mantêm os mesmos personagens e estilo. `"auto"` permite que o modelo escolha de 2 a 10 imagens. Padrão: `"disabled"`. | COMBO | Sim | `"disabled"`<br>`"auto"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
+| `semente` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Sim | 0 a 2147483647 |
 
 **Restrições e comportamento:**
 

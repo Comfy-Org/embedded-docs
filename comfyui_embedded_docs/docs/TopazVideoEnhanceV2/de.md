@@ -8,10 +8,10 @@ Der **Topaz Video Enhance V2**-Node verleiht Videos mit leistungsstarker Upscali
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `video` | Das zu verarbeitende Eingabevideo. Muss im MP4-Containerformat vorliegen. | VIDEO | Ja | - |
-| `upscaler_model` | Das KI-Modell, das zum Hochskalieren des Videos verwendet wird. Die verfügbaren Unterparameter hängen vom ausgewählten Modell ab. Wenn `"Disabled"` ausgewählt wird, wird das Upscaling deaktiviert. | DYNAMIC_COMBO | Ja | `"Astra 2"`<br>`"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"`<br>`"Disabled"` |
-| `interpolation_model` | Das KI-Modell, das für die Frame-Interpolation verwendet wird. Die verfügbaren Unterparameter hängen vom ausgewählten Modell ab. Wenn `"Disabled"` ausgewählt wird, wird die Interpolation deaktiviert. | DYNAMIC_COMBO | Ja | `"Disabled"`<br>`"apo-8"` |
-| `dynamic_compression_level` | CQP-Stufe für die Videokomprimierung (Standard: `"Low"`). | COMBO | Nein | `"Low"`<br>`"Mid"`<br>`"High"` |
+| `Video` | Das zu verarbeitende Eingabevideo. Muss im MP4-Containerformat vorliegen. | VIDEO | Ja | - |
+| `Upscaler-Modell` | Das KI-Modell, das zum Hochskalieren des Videos verwendet wird. Die verfügbaren Unterparameter hängen vom ausgewählten Modell ab. Wenn `"Disabled"` ausgewählt wird, wird das Upscaling deaktiviert. | DYNAMIC_COMBO | Ja | `"Astra 2"`<br>`"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"`<br>`"Disabled"` |
+| `Interpolationsmodell` | Das KI-Modell, das für die Frame-Interpolation verwendet wird. Die verfügbaren Unterparameter hängen vom ausgewählten Modell ab. Wenn `"Disabled"` ausgewählt wird, wird die Interpolation deaktiviert. | DYNAMIC_COMBO | Ja | `"Disabled"`<br>`"apo-8"` |
+| `Dynamische Komprimierungsstufe` | CQP-Stufe für die Videokomprimierung (Standard: `"Low"`). | COMBO | Nein | `"Low"`<br>`"Mid"`<br>`"High"` |
 
 In den folgenden Abschnitten werden die Unterparameter beschrieben, die für jede Option der Selektoren `upscaler_model` und `interpolation_model` angezeigt werden. Die Optionen `"Disabled"` zeigen keine zusätzlichen Parameter an.
 

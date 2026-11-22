@@ -6,7 +6,7 @@ Der Node `RecordAudio` lädt Audiodateien, die über die Audioaufnahme-Schnittst
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `audio` | Die Audioaufnahme-Eingabe von der Audioaufnahme-Schnittstelle | AUDIO_RECORD | Ja | N/A |
+| `Audio` | Die Audioaufnahme-Eingabe von der Audioaufnahme-Schnittstelle | AUDIO_RECORD | Ja | N/A |
 
 ## Ausgaben
 

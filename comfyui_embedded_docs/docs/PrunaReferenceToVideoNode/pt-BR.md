@@ -6,7 +6,7 @@ Gere um vídeo a partir de um prompt guiado por imagens, vídeos e áudio de ref
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo de vídeo Pruna a usar. Selecionar um modelo revela suas entradas abaixo. | DYNAMIC_COMBO | Sim | `"p-video-2-pro-reference"` |
+| `modelo` | Modelo de vídeo Pruna a usar. Selecionar um modelo revela suas entradas abaixo. | DYNAMIC_COMBO | Sim | `"p-video-2-pro-reference"` |
 
 ### Entradas do P-Video-2 Pro Reference
 
@@ -15,16 +15,16 @@ Gere um vídeo a partir de um prompt guiado por imagens, vídeos e áudio de ref
 | `model.images` | Slot expansível para imagens de referência (`image_1`, `image_2`, ...), referenciadas no prompt como `@Image1` até `@Image9` na ordem de conexão. Até 9 imagens, contando o primeiro e o último quadro. | AUTOGROW | Não | 0 a 9 imagens |
 | `model.videos` | Slot expansível para vídeos de referência (`video_1`, `video_2`, ...), referenciados como `@Video1` até `@Video3`. Cada um de 2 a 15 segundos a até 60 fps, 15 segundos no total. Vídeos acima de 1080p têm a resolução reduzida. | AUTOGROW | Não | 0 a 3 vídeos |
 | `model.audios` | Slot expansível para áudio de referência (`audio_1`, `audio_2`, ...), referenciados como `@Audio1` até `@Audio3`. Até 15 segundos no total. | AUTOGROW | Não | 0 a 3 clipes de áudio |
-| `model.prompt` | Descreve o vídeo. Refira-se às referências como `@Image1`, `@Video1` ou `@Audio1` (padrão: vazio). Até 5000 caracteres. | STRING | Sim | 1 a 5000 caracteres |
+| `prompt` | Descreve o vídeo. Refira-se às referências como `@Image1`, `@Video1` ou `@Audio1` (padrão: vazio). Até 5000 caracteres. | STRING | Sim | 1 a 5000 caracteres |
 | `model.first_frame` | Imagem a partir da qual o vídeo começa. Conta para o limite de 9 imagens. | IMAGE | Não | - |
 | `model.last_frame` | Imagem em que o vídeo termina. Conta para o limite de 9 imagens. | IMAGE | Não | - |
-| `model.keep_audio` | Use o áudio conectado como trilha sonora e gere o vídeo para corresponder a ele (padrão: False). Requer exatamente um áudio: áudios mais curtos são seguidos por som gerado; áudios mais longos são cortados para a duração. | BOOLEAN | Sim | `True`<br>`False` |
-| `model.duration` | Duração do vídeo em segundos (padrão: `"5"`). | COMBO | Sim | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"` |
-| `model.resolution` | Resolução de saída (padrão: `"768p"`). 1080p, 2k e 4k aumentam a resolução do vídeo gerado em 768p. | COMBO | Sim | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
-| `model.mode` | `"cost"` é mais barato, `"speed"` renderiza mais rápido (padrão: `"speed"`). | COMBO | Sim | `"cost"`<br>`"speed"` |
-| `model.aspect_ratio` | Proporção de aspecto do vídeo de saída (padrão: `"16:9"`). `"adaptive"` usa a proporção mais comum entre as referências e, com `enhance_prompt` ativado, o prompt reescrito escolhe a proporção. | COMBO | Sim | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"4:3"`<br>`"3:4"`<br>`"3:2"`<br>`"2:3"`<br>`"1:1"` |
-| `model.enhance_prompt` | Reescreve o prompt com mais detalhes antes da geração; `"max"` é mais lento (padrão: `"turbo"`). Mantenha ativado quando o prompt se referir a referências por número; um primeiro ou último quadro sempre usa `"turbo"`. Configuração avançada. | COMBO | Sim | `"off"`<br>`"turbo"`<br>`"max"` |
-| `model.seed` | Semente para a geração (padrão: 42). A mesma semente reproduz um resultado exatamente apenas quando `model.enhance_prompt` está desativado. | INT | Sim | 0 a 2147483647<br>Passo: 1 |
+| `keep_audio` | Use o áudio conectado como trilha sonora e gere o vídeo para corresponder a ele (padrão: False). Requer exatamente um áudio: áudios mais curtos são seguidos por som gerado; áudios mais longos são cortados para a duração. | BOOLEAN | Sim | `True`<br>`False` |
+| `duração` | Duração do vídeo em segundos (padrão: `"5"`). | COMBO | Sim | `"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"`<br>`"11"`<br>`"12"`<br>`"13"`<br>`"14"` |
+| `resolução` | Resolução de saída (padrão: `"768p"`). 1080p, 2k e 4k aumentam a resolução do vídeo gerado em 768p. | COMBO | Sim | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
+| `modo` | `"cost"` é mais barato, `"speed"` renderiza mais rápido (padrão: `"speed"`). | COMBO | Sim | `"cost"`<br>`"speed"` |
+| `aspect_ratio` | Proporção de aspecto do vídeo de saída (padrão: `"16:9"`). `"adaptive"` usa a proporção mais comum entre as referências e, com `enhance_prompt` ativado, o prompt reescrito escolhe a proporção. | COMBO | Sim | `"adaptive"`<br>`"16:9"`<br>`"9:16"`<br>`"4:3"`<br>`"3:4"`<br>`"3:2"`<br>`"2:3"`<br>`"1:1"` |
+| `enhance_prompt` | Reescreve o prompt com mais detalhes antes da geração; `"max"` é mais lento (padrão: `"turbo"`). Mantenha ativado quando o prompt se referir a referências por número; um primeiro ou último quadro sempre usa `"turbo"`. Configuração avançada. | COMBO | Sim | `"off"`<br>`"turbo"`<br>`"max"` |
+| `semente` | Semente para a geração (padrão: 42). A mesma semente reproduz um resultado exatamente apenas quando `model.enhance_prompt` está desativado. | INT | Sim | 0 a 2147483647<br>Passo: 1 |
 
 **Notas:**
 

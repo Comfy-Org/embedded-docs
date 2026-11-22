@@ -19,14 +19,14 @@ Dieser Node konvertiert ein vorhandenes Tripo-3D-Modell in ein anderes 3D-Dateif
 | `flatten_bottom_threshold` | Abflachungstiefe, die mit `flatten_bottom` verwendet wird (Standard: 0.01). Dieser Wert wird nur angewendet, wenn `flatten_bottom` aktiviert ist. | FLOAT | Nein | 0.01 bis 1.0 |
 | `pivot_to_center_bottom` | Verschiebt den Pivot-Punkt zur Mitte der Unterseite des Modells, wenn aktiviert (Standard: False). | BOOLEAN | Nein | True oder False |
 | `scale_factor` | Skalierungsfaktor, der auf das konvertierte Modell angewendet wird (Standard: 1.0). | FLOAT | Nein | 0.01 und höher |
-| `with_animation` | Behält das Skelett und die Animation von geriggten oder retargeteten Modellen bei (Standard: True). | BOOLEAN | Nein | True oder False |
-| `pack_uv` | Packt die UV-Koordinaten neu, wenn aktiviert (Standard: False). | BOOLEAN | Nein | True oder False |
-| `bake` | Backt erweiterte Materialien in die Basistexturen ein, um breitere Kompatibilität zu erreichen (Standard: True). | BOOLEAN | Nein | True oder False |
-| `part_names` | Kommagetrennte Liste von Modellteilnamen, die an die Konvertierung gesendet werden. Leere Einträge werden ignoriert und doppelte Namen entfernt. Leer lassen, um diese Option auszulassen (Standard: leer). | STRING | Nein | Kommagetrennte Liste von Teilnamen |
-| `fbx_preset` | FBX-Kompatibilitätsvoreinstellung. bake_scale backt die Skalierungstransformation in die Geometrie ein (Standard: blender). | COMBO | Nein | blender<br>mixamo<br>3dsmax<br>bake_scale |
-| `export_vertex_colors` | Exportiert Vertex-Farben, wenn aktiviert (Standard: False). | BOOLEAN | Nein | True oder False |
-| `export_orientation` | Vorwärtsachse des exportierten Modells. default behält Tripos +x bei (Standard: default). | COMBO | Nein | default<br>+x<br>-x<br>+y<br>-y |
-| `animate_in_place` | Animiert das Modell an Ort und Stelle, wenn aktiviert (Standard: False). | BOOLEAN | Nein | True oder False |
+| `mit Animation` | Behält das Skelett und die Animation von geriggten oder retargeteten Modellen bei (Standard: True). | BOOLEAN | Nein | True oder False |
+| `UV packen` | Packt die UV-Koordinaten neu, wenn aktiviert (Standard: False). | BOOLEAN | Nein | True oder False |
+| `Baken` | Backt erweiterte Materialien in die Basistexturen ein, um breitere Kompatibilität zu erreichen (Standard: True). | BOOLEAN | Nein | True oder False |
+| `Teilenamen` | Kommagetrennte Liste von Modellteilnamen, die an die Konvertierung gesendet werden. Leere Einträge werden ignoriert und doppelte Namen entfernt. Leer lassen, um diese Option auszulassen (Standard: leer). | STRING | Nein | Kommagetrennte Liste von Teilnamen |
+| `FBX-Voreinstellung` | FBX-Kompatibilitätsvoreinstellung. bake_scale backt die Skalierungstransformation in die Geometrie ein (Standard: blender). | COMBO | Nein | blender<br>mixamo<br>3dsmax<br>bake_scale |
+| `Vertex-Farben exportieren` | Exportiert Vertex-Farben, wenn aktiviert (Standard: False). | BOOLEAN | Nein | True oder False |
+| `Ausrichtung exportieren` | Vorwärtsachse des exportierten Modells. default behält Tripos +x bei (Standard: default). | COMBO | Nein | default<br>+x<br>-x<br>+y<br>-y |
+| `Animation an Ort und Stelle` | Animiert das Modell an Ort und Stelle, wenn aktiviert (Standard: False). | BOOLEAN | Nein | True oder False |
 
 **Hinweis:** Außer `original_model_task_id` und `format` sind alle Eingaben optionale erweiterte Einstellungen. Die meisten Einstellungen, die auf ihren Standardwerten belassen werden, werden aus der Konvertierungsanfrage weggelassen, damit die Tripo-API ihr Standardverhalten verwenden kann. Die Optionen `with_animation` und `bake` werden immer gesendet. `flatten_bottom_threshold` wird nur angewendet, wenn `flatten_bottom` aktiviert ist.
 

@@ -6,11 +6,11 @@ Clone uma voz a partir de uma gravação de um único falante com o mecanismo Vo
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `audio` | Gravação de um único falante. Use pelo menos 10 segundos de fala clara; apenas os primeiros 3 minutos são usados. | AUDIO | Sim | N/A |
-| `language` | Idioma falado na gravação (padrão: "auto"). | COMBO | Sim | `"auto"`<br>Várias predefinições de idioma |
-| `similarity` | O quão fielmente a voz segue a gravação (padrão: "max"). | COMBO | Sim | `"medium"`<br>`"high"`<br>`"extra_high"`<br>`"max"` |
-| `remove_background_noise` | Limpa o ruído de fundo da gravação antes da clonagem (padrão: True). | BOOLEAN | Sim | True<br>False |
-| `seed` | Altere a seed para clonar a gravação novamente; cada clone é uma voz ligeiramente diferente (padrão: 42). | INT | Sim | 0 a 2147483647 |
+| `áudio` | Gravação de um único falante. Use pelo menos 10 segundos de fala clara; apenas os primeiros 3 minutos são usados. | AUDIO | Sim | N/A |
+| `idioma` | Idioma falado na gravação (padrão: "auto"). | COMBO | Sim | `"auto"`<br>Várias predefinições de idioma |
+| `similaridade` | O quão fielmente a voz segue a gravação (padrão: "max"). | COMBO | Sim | `"medium"`<br>`"high"`<br>`"extra_high"`<br>`"max"` |
+| `remover_ruído_de_fundo` | Limpa o ruído de fundo da gravação antes da clonagem (padrão: True). | BOOLEAN | Sim | True<br>False |
+| `semente` | Altere a seed para clonar a gravação novamente; cada clone é uma voz ligeiramente diferente (padrão: 42). | INT | Sim | 0 a 2147483647 |
 
 **Observação:** A voz é criada como "ComfyUI Voice" na sua conta HeyGen, e o nó imprime o `voice_id` na UI para que você possa copiá-lo para reutilização. Deixe `language` em "auto" a menos que o falante fale um idioma que possa ser facilmente confundido com outro proximamente relacionado. A entrada `seed` inclui um controle fixo Control After Generate na UI, então altere-o manualmente quando quiser outro clone.
 

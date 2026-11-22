@@ -7,10 +7,10 @@ Constrói o prompt de layout que o MOSS-Image lê. Ele recebe os elementos desen
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `prompt` | Descrição da imagem inteira. Ela se torna a legenda do layout. | STRING | Sim | - |
-| `element` | Os elementos a posicionar, obtidos do nó Create Bounding Boxes. Cada caixa contribui com sua legenda; caixas de texto também contribuem com seu texto, e caixas que carregam uma paleta de cores a mantêm. | ARRAY | Sim | - |
-| `width` | Largura da imagem gerada em pixels. As caixas são convertidas para essa grade de pixels, então use o tamanho da imagem que você planeja gerar (padrão: 1024). | INT | Sim | 16 a 16384 (passo 16) |
-| `height` | Altura da imagem gerada em pixels. As caixas são convertidas para essa grade de pixels, então use o tamanho da imagem que você planeja gerar (padrão: 1024). | INT | Sim | 16 a 16384 (passo 16) |
-| `character_boxes` | Números das caixas a rotular como personagens em vez de objetos, conforme marcado na pré-visualização do Create Bounding Boxes, por exemplo, "1, 3". Todos os números na string são lidos, então qualquer separador funciona (padrão: vazio). | STRING | Sim | - |
+| `elemento` | Os elementos a posicionar, obtidos do nó Create Bounding Boxes. Cada caixa contribui com sua legenda; caixas de texto também contribuem com seu texto, e caixas que carregam uma paleta de cores a mantêm. | ARRAY | Sim | - |
+| `largura` | Largura da imagem gerada em pixels. As caixas são convertidas para essa grade de pixels, então use o tamanho da imagem que você planeja gerar (padrão: 1024). | INT | Sim | 16 a 16384 (passo 16) |
+| `altura` | Altura da imagem gerada em pixels. As caixas são convertidas para essa grade de pixels, então use o tamanho da imagem que você planeja gerar (padrão: 1024). | INT | Sim | 16 a 16384 (passo 16) |
+| `caixas_de_personagens` | Números das caixas a rotular como personagens em vez de objetos, conforme marcado na pré-visualização do Create Bounding Boxes, por exemplo, "1, 3". Todos os números na string são lidos, então qualquer separador funciona (padrão: vazio). | STRING | Sim | - |
 
 ## Saídas
 

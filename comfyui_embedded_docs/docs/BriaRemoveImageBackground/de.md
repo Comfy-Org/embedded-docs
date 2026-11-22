@@ -10,10 +10,10 @@ Der Selektor `moderation` blendet zusätzliche Moderationsoptionen ein, wenn er 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Eingabebild, aus dem der Hintergrund entfernt wird. | IMAGE | Ja | - |
-| `moderation` | Moderationseinstellungen. Wenn sie auf `"true"` gesetzt sind, werden zusätzliche Moderationsoptionen verfügbar. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
-| `seed` | `seed` steuert, ob der Node erneut ausgeführt werden soll; dasselbe Bild liefert unabhängig vom Seed immer dasselbe Ergebnis. Standard: `0`. | INT | Ja | 0 bis 2147483647 |
-| `model` | Modell zur Hintergrundentfernung. `"RMBG2"` ist der Standard; `"RMBG3"` verwendet das neuere Modell Bria RMBG 3.0. | COMBO | Nein | `"RMBG2"`<br>`"RMBG3"` |
+| `Bild` | Das Eingabebild, aus dem der Hintergrund entfernt wird. | IMAGE | Ja | - |
+| `Moderation` | Moderationseinstellungen. Wenn sie auf `"true"` gesetzt sind, werden zusätzliche Moderationsoptionen verfügbar. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
+| `Seed` | `seed` steuert, ob der Node erneut ausgeführt werden soll; dasselbe Bild liefert unabhängig vom Seed immer dasselbe Ergebnis. Standard: `0`. | INT | Ja | 0 bis 2147483647 |
+| `Modell` | Modell zur Hintergrundentfernung. `"RMBG2"` ist der Standard; `"RMBG3"` verwendet das neuere Modell Bria RMBG 3.0. | COMBO | Nein | `"RMBG2"`<br>`"RMBG3"` |
 
 ### Eingaben für Moderation „true“
 

@@ -8,7 +8,7 @@ Der Node ImageScaleBy dient zum Hochskalieren von Bildern um einen angegebenen S
 | --- | --- | --- |
 | `image` | Das Eingabebild, das hochskaliert werden soll. Dieser Parameter ist entscheidend, da er das Basisbild bereitstellt, das dem Hochskalierungsprozess unterzogen wird. | `IMAGE` |
 | `upscale_method` | Gibt die Interpolationsmethode an, die für das Hochskalieren verwendet werden soll. Die Wahl der Methode kann die Qualität und die Eigenschaften des hochskalierten Bildes beeinflussen. | COMBO[STRING] |
-| `scale_by` | Der Faktor, um den das Bild hochskaliert wird. Dies bestimmt die Größenänderung des Ausgabebilds im Verhältnis zum Eingabebild. | `FLOAT` |
+| `Skalierungsfaktor` | Der Faktor, um den das Bild hochskaliert wird. Dies bestimmt die Größenänderung des Ausgabebilds im Verhältnis zum Eingabebild. | `FLOAT` |
 
 ## Ausgaben
 

@@ -6,9 +6,9 @@ Der CFG Guider-Node erstellt ein Guidance-System zur Steuerung des Sampling-Proz
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Modell, das für die Guidance verwendet werden soll | MODEL | Ja | - |
-| `positive` | Die positive Konditionierung, die die Generierung in Richtung gewünschter Inhalte lenkt | CONDITIONING | Ja | - |
-| `negative` | Die negative Konditionierung, die die Generierung von unerwünschten Inhalten weglenkt | CONDITIONING | Ja | - |
+| `Modell` | Das Modell, das für die Guidance verwendet werden soll | MODEL | Ja | - |
+| `positiv` | Die positive Konditionierung, die die Generierung in Richtung gewünschter Inhalte lenkt | CONDITIONING | Ja | - |
+| `negativ` | Die negative Konditionierung, die die Generierung von unerwünschten Inhalten weglenkt | CONDITIONING | Ja | - |
 | `cfg` | Die Classifier-Free-Guidance-Skala, die steuert, wie stark die Konditionierung die Generierung beeinflusst (Standard: 8.0) | FLOAT | Ja | 0.0 bis 100.0 (Schritt: 0.1) |
 
 ## Ausgaben

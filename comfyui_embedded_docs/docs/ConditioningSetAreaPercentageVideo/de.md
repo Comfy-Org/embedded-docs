@@ -6,14 +6,14 @@ Der Node ConditioningSetAreaPercentageVideo modifiziert Konditionierungsdaten, i
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `conditioning` | Die zu ändernden Konditionierungsdaten | CONDITIONING | Ja | - |
-| `width` | Die Breite des Bereichs als Prozentsatz der Gesamtbreite (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schrittweite 0.01) |
-| `height` | Die Höhe des Bereichs als Prozentsatz der Gesamthöhe (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schrittweite 0.01) |
-| `temporal` | Die zeitliche Dauer des Bereichs als Prozentsatz der gesamten Videolänge (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schrittweite 0.01) |
+| `Konditionierung` | Die zu ändernden Konditionierungsdaten | CONDITIONING | Ja | - |
+| `Breite` | Die Breite des Bereichs als Prozentsatz der Gesamtbreite (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schrittweite 0.01) |
+| `Höhe` | Die Höhe des Bereichs als Prozentsatz der Gesamthöhe (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schrittweite 0.01) |
+| `zeitlich` | Die zeitliche Dauer des Bereichs als Prozentsatz der gesamten Videolänge (Standard: 1.0) | FLOAT | Ja | 0.0 - 1.0 (Schrittweite 0.01) |
 | `x` | Die horizontale Startposition des Bereichs als Prozentsatz (Standard: 0.0) | FLOAT | Ja | 0.0 - 1.0 (Schrittweite 0.01) |
 | `y` | Die vertikale Startposition des Bereichs als Prozentsatz (Standard: 0.0) | FLOAT | Ja | 0.0 - 1.0 (Schrittweite 0.01) |
 | `z` | Die zeitliche Startposition des Bereichs als Prozentsatz der Video-Zeitleiste (Standard: 0.0) | FLOAT | Ja | 0.0 - 1.0 (Schrittweite 0.01) |
-| `strength` | Der Stärkemultiplikator, der auf die Konditionierung innerhalb des definierten Bereichs angewendet wird (Standard: 1.0) | FLOAT | Ja | 0.0 - 10.0 (Schrittweite 0.01) |
+| `Stärke` | Der Stärkemultiplikator, der auf die Konditionierung innerhalb des definierten Bereichs angewendet wird (Standard: 1.0) | FLOAT | Ja | 0.0 - 10.0 (Schrittweite 0.01) |
 
 ## Ausgaben
 

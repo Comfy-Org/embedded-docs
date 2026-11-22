@@ -6,7 +6,7 @@ Erzeugen Sie mit Mirelo SFX einen Soundeffekt aus einer Textbeschreibung. Beschr
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Zu verwendendes Modell. Bei Auswahl eines Modells werden die spezifischen Parameter eingeblendet: `prompt`, `negative_prompt`, `duration` und `seed`. | DYNAMIC_COMBO | Ja | `"sfx-2.0"` |
+| `Modell` | Zu verwendendes Modell. Bei Auswahl eines Modells werden die spezifischen Parameter eingeblendet: `prompt`, `negative_prompt`, `duration` und `seed`. | DYNAMIC_COMBO | Ja | `"sfx-2.0"` |
 | `prompt` | Beschreiben Sie den Klang, nicht das Bild. 1 bis 2000 Zeichen. | STRING | Ja | 1 bis 2000 Zeichen |
 | `negative_prompt` | Zu vermeidende Klänge als kurze, durch Kommas getrennte Liste. Kann leer bleiben (Standard: leer). Maximal 1000 Zeichen. | STRING | Ja | Bis zu 1000 Zeichen |
 | `duration` | Länge des Klangs in Sekunden. (Standard: 5.0) | FLOAT | Ja | 0.1 bis 600.0 (Schritt 0.1) |

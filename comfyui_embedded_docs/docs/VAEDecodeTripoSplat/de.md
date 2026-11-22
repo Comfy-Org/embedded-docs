@@ -9,7 +9,7 @@ Dekodiert eine latente TripoSplat-Repräsentation in einen 3D-Gaussian-Splat. Di
 | `samples` | Die zu dekodierenden latenten Samples. Wenn die Samples neben dem Latent einen verschachtelten Kamera-Stream enthalten, wird nur der Latent-Stream dekodiert. | LATENT | Ja | - |
 | `vae` | TripoSplat VAE-Decoder | VAE | Ja | - |
 | `num_gaussians` | Anzahl der zu erzeugenden Gaussians (auf ein Vielfaches von 32 gerundet). 262144 entspricht der Punktdichte des Octrees; höhere Werte überabtasten dieselben Punkte (dichter, aber ohne neue Details) und verbrauchen proportional mehr VRAM/Zeit. Standard: 262144 | INT | Ja | 32 bis 1048576 (Schritt: 32) |
-| `seed` | Legt den Seed für den Octree-Punktsampler (globaler RNG) fest, um deterministische Dekodierungen zu ermöglichen. Standard: 0 | INT | Ja | 0 bis 18446744073709551615 |
+| `Seed` | Legt den Seed für den Octree-Punktsampler (globaler RNG) fest, um deterministische Dekodierungen zu ermöglichen. Standard: 0 | INT | Ja | 0 bis 18446744073709551615 |
 
 **Hinweis:** Der Wert für `num_gaussians` wird automatisch auf den zulässigen Bereich begrenzt und auf ein Vielfaches der Einstellung „Gaussians pro Punkt“ des VAE-Decoders gerundet. Die tatsächlich verwendete Anzahl kann leicht vom Eingabewert abweichen.
 

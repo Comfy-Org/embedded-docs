@@ -6,13 +6,13 @@ Der Node Dual CFG Guider erstellt ein Guidance-System für das Sampling, das zwe
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das für die Guidance zu verwendende Modell | MODEL | Ja | - |
+| `Modell` | Das für die Guidance zu verwendende Modell | MODEL | Ja | - |
 | `cond1` | Die erste positive Konditionierungseingabe | CONDITIONING | Ja | - |
 | `cond2` | Die zweite Konditionierungseingabe, verwendet als Referenz zwischen der ersten positiven Konditionierung und der negativen Konditionierung | CONDITIONING | Ja | - |
-| `negative` | Die negative Konditionierungseingabe | CONDITIONING | Ja | - |
+| `negativ` | Die negative Konditionierungseingabe | CONDITIONING | Ja | - |
 | `cfg_conds` | Auf die erste positive Konditionierung angewendete Guidance-Skala (Standard: 8.0) | FLOAT | Ja | 0.0 - 100.0 |
 | `cfg_cond2_negative` | Guidance-Skala, die zwischen der zweiten Konditionierung und der negativen Konditionierung angewendet wird (Standard: 8.0) | FLOAT | Ja | 0.0 - 100.0 |
-| `style` | Der anzuwendende Guidance-Stil (Standard: "regular"). Wenn auf "nested" gesetzt, wird die Guidance verschachtelt angewendet | COMBO | Ja | "regular"<br>"nested" |
+| `Stil` | Der anzuwendende Guidance-Stil (Standard: "regular"). Wenn auf "nested" gesetzt, wird die Guidance verschachtelt angewendet | COMBO | Ja | "regular"<br>"nested" |
 
 Hinweis: Im Stil `regular` wird `cfg_cond2_negative` zwischen `cond2` und `negative` angewendet, und `cfg_conds` wird zwischen `cond1` und `cond2` angewendet. Im Stil `nested` wird `cfg_conds` zuerst zwischen `cond1` und `cond2` angewendet, und die resultierende Vorhersage wird dann mithilfe von `cfg_cond2_negative` von `negative` weggelenkt.
 

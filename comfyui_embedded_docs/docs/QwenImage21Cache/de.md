@@ -6,8 +6,8 @@ Der QwenImage21Cache-Node konfiguriert den KV-Präfix-Cache des Qwen-Image 2.1-M
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Qwen-Image 2.1-Modell, dessen Präfix-Cache konfiguriert wird. | MODEL | Ja | - |
-| `device` | Wo die zwischengespeicherten Keys und Values gespeichert werden. `"auto"` (Standard) nutzt zuerst freien VRAM und dann RAM; `"gpu"` speichert den Cache im VRAM; `"cpu"` speichert ihn im RAM und lädt ihn im Hintergrund der Berechnung vorab, was kaum Geschwindigkeit kostet; `"off"` berechnet das Präfix bei jedem Schritt neu, was langsamer ist, aber die einzige Möglichkeit darstellt, den Cache vollständig zu deaktivieren. | COMBO | Ja | `"auto"`<br>`"gpu"`<br>`"cpu"`<br>`"off"` |
+| `Modell` | Das Qwen-Image 2.1-Modell, dessen Präfix-Cache konfiguriert wird. | MODEL | Ja | - |
+| `Gerät` | Wo die zwischengespeicherten Keys und Values gespeichert werden. `"auto"` (Standard) nutzt zuerst freien VRAM und dann RAM; `"gpu"` speichert den Cache im VRAM; `"cpu"` speichert ihn im RAM und lädt ihn im Hintergrund der Berechnung vorab, was kaum Geschwindigkeit kostet; `"off"` berechnet das Präfix bei jedem Schritt neu, was langsamer ist, aber die einzige Möglichkeit darstellt, den Cache vollständig zu deaktivieren. | COMBO | Ja | `"auto"`<br>`"gpu"`<br>`"cpu"`<br>`"off"` |
 | `dtype` | Speicherpräzision des Cache. `"default"` ist verlustfrei; `"int8"` halbiert den Cache bei etwa bf16-Genauigkeit; `"int4"` viertelt ihn, verdoppelt aber ungefähr den Fehler pro Schritt. | COMBO | Ja | `"default"`<br>`"int8"`<br>`"int4"` |
 
 Wenn der Cache nicht passt, berechnet das Modell das Präfix neu, anstatt den Slot des anderen Zweigs zu verdrängen. Eine zu groß gewählte Einstellung reduziert daher die Geschwindigkeit, anstatt den Lauf fehlschlagen zu lassen.

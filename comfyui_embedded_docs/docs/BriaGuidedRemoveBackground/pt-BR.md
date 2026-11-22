@@ -10,9 +10,9 @@ O seletor `moderation` revela opções adicionais de moderação quando definido
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A imagem a ser recortada. | IMAGE | Sim | - |
+| `imagem` | A imagem a ser recortada. | IMAGE | Sim | - |
 | `prompt` | O que manter e, opcionalmente, o que descartar ou restringir, como 'a pessoa com o tapete e a planta', 'a mulher na mesa dela sem o abajur' ou 'apenas a cadeira'. Não deve estar vazio. Se nada corresponder ao prompt, o resultado será totalmente transparente. Padrão: `""` (string vazia). | STRING | Sim | 1 caractere ou mais |
-| `moderation` | Configurações de moderação. Quando definido como `"true"`, os sinalizadores de moderação visual abaixo ficam disponíveis. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
+| `moderação` | Configurações de moderação. Quando definido como `"true"`, os sinalizadores de moderação visual abaixo ficam disponíveis. | DYNAMIC_COMBO | Sim | `"false"`<br>`"true"` |
 
 ### Entradas de moderação "true"
 

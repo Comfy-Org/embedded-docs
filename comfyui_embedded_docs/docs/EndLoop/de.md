@@ -6,10 +6,10 @@ End Loop markiert das Ende eines Schleifenblocks. Er sammelt den Wert, der vom l
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `output_value` | Von End Loop zurückgegebener Wert. Gibt je nach `accumulate` die letzte Iteration oder alle Iterationen zurück. | ANY | Nein | Beliebiger Wertetyp |
-| `next_iteration_value` | Wert, der von End Loop für die nächste Iteration an Start Loop zurückgegeben wird. | ANY | Nein | Beliebiger Wertetyp |
-| `accumulate` | Gibt bei Aktivierung `output_value` aus jeder Iteration zurück; andernfalls wird nur die letzte Iteration zurückgegeben. | BOOLEAN | Nein | `true`<br>`false` (Standard: `false`) |
-| `terminations` | Verbinden Sie Ausgaben, die bei jeder Iteration ausgeführt werden müssen. Ihre Werte werden nicht zurückgegeben. Erweiterbare Slots mit den Namen `termination_1`, `termination_2` usw. | ANY | Nein | 0 bis 50 Slots |
+| `Ausgabewert` | Von End Loop zurückgegebener Wert. Gibt je nach `accumulate` die letzte Iteration oder alle Iterationen zurück. | ANY | Nein | Beliebiger Wertetyp |
+| `Wert der nächsten Iteration` | Wert, der von End Loop für die nächste Iteration an Start Loop zurückgegeben wird. | ANY | Nein | Beliebiger Wertetyp |
+| `akkumulieren` | Gibt bei Aktivierung `output_value` aus jeder Iteration zurück; andernfalls wird nur die letzte Iteration zurückgegeben. | BOOLEAN | Nein | `true`<br>`false` (Standard: `false`) |
+| `Abschlüsse` | Verbinden Sie Ausgaben, die bei jeder Iteration ausgeführt werden müssen. Ihre Werte werden nicht zurückgegeben. Erweiterbare Slots mit den Namen `termination_1`, `termination_2` usw. | ANY | Nein | 0 bis 50 Slots |
 
 Hinweis: `terminations` ist eine erweiterbare Liste von Slots mit einem Minimum von 0 und einem Maximum von 50 Verbindungen. Hier verbundene Werte erzwingen die Ausführung bei jeder Iteration, sind aber nicht Teil des zurückgegebenen Ergebnisses.
 

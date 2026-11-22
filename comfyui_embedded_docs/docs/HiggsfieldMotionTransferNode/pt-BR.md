@@ -6,7 +6,7 @@ O nó **Higgsfield Genjutsu Motion Transfer** recria um vídeo com novos persona
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a usar. Selecionar um modelo revela os parâmetros específicos dele: `video`, `reference_images`, `prompt`, `resolution` e `seed`. | DYNAMIC_COMBO | Sim | `"genjutsu-v1.0"` |
+| `modelo` | Modelo a usar. Selecionar um modelo revela os parâmetros específicos dele: `video`, `reference_images`, `prompt`, `resolution` e `seed`. | DYNAMIC_COMBO | Sim | `"genjutsu-v1.0"` |
 | `video` | Vídeo de origem cujo movimento, movimento de câmera, timing e áudio são mantidos. Pelo menos 4 segundos; apenas os primeiros 30 segundos são usados. | VIDEO | Sim | 4 a 30 segundos |
 | `reference_images` | Slot expansível: conecte de 1 a 8 imagens (`image_1`, `image_2`, ...) dos personagens, locais ou estilos a usar. Uma entrada em lote conta uma vez por imagem. | IMAGE | Sim | 1 a 8 imagens |
 | `prompt` | Opcional. Descreva o resultado, por exemplo qual referência substitui qual pessoa, ou um novo cenário. (padrão: vazio) | STRING | Sim | Qualquer texto |

@@ -8,7 +8,7 @@ Erzeugen Sie Textantworten mit den Gemini-Modellen von Google. Geben Sie einen T
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das Gemini-Modell, das zur Generierung der Antwort verwendet wird. Das ausgewählte Modell bestimmt, welche zusätzlichen Eingaben angezeigt werden. | DYNAMIC_COMBO | Ja | `"Gemini 4 Hydrogen"`<br>`"Gemini 4 Argon"`<br>`"Gemini 4 Carbon"`<br>`"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `Modell` | Das Gemini-Modell, das zur Generierung der Antwort verwendet wird. Das ausgewählte Modell bestimmt, welche zusätzlichen Eingaben angezeigt werden. | DYNAMIC_COMBO | Ja | `"Gemini 4 Hydrogen"`<br>`"Gemini 4 Argon"`<br>`"Gemini 4 Carbon"`<br>`"Gemini 3.8 Flash"`<br>`"Gemini 3.7 Flash"`<br>`"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
 
 ### Medieneingaben
 

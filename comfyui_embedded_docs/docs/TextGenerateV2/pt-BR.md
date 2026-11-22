@@ -8,12 +8,12 @@ O nó Generate Text usa um modelo CLIP para produzir texto a partir de um prompt
 | --- | --- | --- | --- | --- |
 | `clip` | O modelo CLIP usado para tokenizar o prompt e gerar o texto. | CLIP | Sim | - |
 | `prompt` | O prompt que orienta a geração. Suporta várias linhas e prompts dinâmicos (padrão: string vazia). | STRING | Sim | - |
-| `images` | Grupo expansível de até 50 imagens, `image1` a `image50`, usado como contexto visual para o modelo. | AUTOGROW | Não | 0 a 50 imagens |
-| `videos` | Grupo expansível de até 100 entradas de vídeo, `video1` a `video100`. Cada vídeo é um lote de quadros considerados a 24 FPS e subamostrados internamente para a taxa de quadros do modelo. | AUTOGROW | Não | 0 a 100 vídeos |
-| `audios` | Grupo expansível de até 100 entradas de áudio, `audio1` a `audio100`, usado como contexto de áudio para o modelo. | AUTOGROW | Não | 0 a 100 arquivos de áudio |
+| `imagens` | Grupo expansível de até 50 imagens, `image1` a `image50`, usado como contexto visual para o modelo. | AUTOGROW | Não | 0 a 50 imagens |
+| `vídeos` | Grupo expansível de até 100 entradas de vídeo, `video1` a `video100`. Cada vídeo é um lote de quadros considerados a 24 FPS e subamostrados internamente para a taxa de quadros do modelo. | AUTOGROW | Não | 0 a 100 vídeos |
+| `áudios` | Grupo expansível de até 100 entradas de áudio, `audio1` a `audio100`, usado como contexto de áudio para o modelo. | AUTOGROW | Não | 0 a 100 arquivos de áudio |
 | `max_length` | Número máximo de tokens a gerar (padrão: 512). | INT | Sim | 1 a 32768 |
 | `sampling_mode` | `on` faz amostragem da saída e revela os parâmetros de amostragem abaixo. `off` gera de forma gulosa, sem amostragem aleatória. | DYNAMIC_COMBO | Sim | `"on"`<br>`"off"` |
-| `thinking` | Operar no modo de raciocínio se o modelo oferecer suporte (padrão: False). | BOOLEAN | Não | True ou False |
+| `pensamento` | Operar no modo de raciocínio se o modelo oferecer suporte (padrão: False). | BOOLEAN | Não | True ou False |
 | `use_default_template` | Usar o prompt de sistema ou template de chat integrado, se o modelo tiver um (padrão: True). Parâmetro avançado. | BOOLEAN | Não | True ou False |
 | `mtp` | Decodificação especulativa com a cabeça de predição de múltiplos tokens do checkpoint. Não tem efeito sem pesos MTP. `"auto"` adapta a profundidade e a largura do rascunho aos acertos de tokens observados e ao custo de execução; `"2"` a `"5"` fixam uma profundidade de rascunho constante; e os modos `tree` fixam tanto a largura quanto a profundidade. A saída amostrada permanece corretamente distribuída, mas difere da saída sem MTP para a mesma seed (padrão: `"auto"`). | COMBO | Não | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"tree2s1"`<br>`"tree2s2"`<br>`"tree3s1"`<br>`"tree4s1m8"` |
 | `system_prompt` | Substitui o prompt de sistema no template de chat do modelo. Ignorado quando o template padrão não é usado. Conecte uma entrada STRING em vez de digitar no nó (padrão: vazio). | STRING | Não | - |

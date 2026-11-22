@@ -8,11 +8,11 @@ Dieser Node erzeugt oder bearbeitet Bilder mit den Seedream-Modellen von ByteDan
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Die Seedream-Modellversion, die für die Generierung verwendet werden soll. Jedes Modell hat unterschiedliche Fähigkeiten und Preise. | DYNAMIC_COMBO | Ja | `"seedream 5.0 pro"`<br>`"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
-| `prompt` | Text-Prompt zum Erstellen oder Bearbeiten eines Bildes (Standard: leerer String). | STRING | Ja | N/A |
-| `seed` | Seed für die Generierung (Standard: 0). | INT | Ja | 0 bis 2147483647 |
-| `watermark` | Ob dem Bild ein "AI generated"-Wasserzeichen hinzugefügt werden soll (Standard: False). | BOOLEAN | Ja | True / False |
-| `thinking` | Aktiviert den Prompt-Optimierungs-Denkprozess ('thinking') des Modells für bessere Prompt-Treue. Kann die Generierungszeit erheblich verlängern – insbesondere bei Seedream 5.0 Pro. Kann nur für Text-zu-Bild deaktiviert werden (nicht, wenn Referenzbilder bereitgestellt werden) (Standard: True). | BOOLEAN | Nein | True / False |
+| `Modell` | Die Seedream-Modellversion, die für die Generierung verwendet werden soll. Jedes Modell hat unterschiedliche Fähigkeiten und Preise. | DYNAMIC_COMBO | Ja | `"seedream 5.0 pro"`<br>`"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
+| `Prompt` | Text-Prompt zum Erstellen oder Bearbeiten eines Bildes (Standard: leerer String). | STRING | Ja | N/A |
+| `Seed` | Seed für die Generierung (Standard: 0). | INT | Ja | 0 bis 2147483647 |
+| `Wasserzeichen` | Ob dem Bild ein "AI generated"-Wasserzeichen hinzugefügt werden soll (Standard: False). | BOOLEAN | Ja | True / False |
+| `Denken` | Aktiviert den Prompt-Optimierungs-Denkprozess ('thinking') des Modells für bessere Prompt-Treue. Kann die Generierungszeit erheblich verlängern – insbesondere bei Seedream 5.0 Pro. Kann nur für Text-zu-Bild deaktiviert werden (nicht, wenn Referenzbilder bereitgestellt werden) (Standard: True). | BOOLEAN | Nein | True / False |
 
 ### `seedream 5.0 pro` Eingaben
 

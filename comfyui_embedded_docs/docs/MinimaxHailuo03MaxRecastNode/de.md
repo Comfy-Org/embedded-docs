@@ -8,7 +8,7 @@ Recast ersetzt die Personen in einem Video durch die Personen aus Referenzfotos 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Modell, das für die Videogenerierung verwendet wird. | DYNAMIC_COMBO | Ja | "MiniMax H3 Max" |
+| `Modell` | Modell, das für die Videogenerierung verwendet wird. | DYNAMIC_COMBO | Ja | "MiniMax H3 Max" |
 
 ### MiniMax H3 Max Eingaben
 

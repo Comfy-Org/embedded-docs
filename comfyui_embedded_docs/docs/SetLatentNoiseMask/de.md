@@ -6,8 +6,8 @@ Dieser Node ist darauf ausgelegt, eine Rauschmaske auf eine Gruppe latenter Samp
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `samples` | Die latenten Samples, auf die die Rauschmaske angewendet wird. Dieser Parameter ist entscheidend für die Bestimmung des Basis Inhalts, der modifiziert wird. | `LATENT` |
-| `mask` | Die auf die latenten Samples anzuwendende Maske. Sie definiert die Bereiche und die Intensität der Rauschveränderung innerhalb der Samples. | `MASK` |
+| `Samples` | Die latenten Samples, auf die die Rauschmaske angewendet wird. Dieser Parameter ist entscheidend für die Bestimmung des Basis Inhalts, der modifiziert wird. | `LATENT` |
+| `Maske` | Die auf die latenten Samples anzuwendende Maske. Sie definiert die Bereiche und die Intensität der Rauschveränderung innerhalb der Samples. | `MASK` |
 
 ## Ausgaben
 

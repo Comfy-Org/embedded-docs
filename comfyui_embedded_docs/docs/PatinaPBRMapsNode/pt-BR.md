@@ -6,15 +6,15 @@ Deriva um conjunto de mapas de material PBR a partir de uma imagem de textura ex
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `image` | A fotografia ou renderização a partir da qual derivar os mapas PBR. | IMAGE | Sim | - |
-| `basecolor` | Gere o mapa de cor base (albedo). Padrão: True. | BOOLEAN | Sim | true<br>false |
+| `imagem` | A fotografia ou renderização a partir da qual derivar os mapas PBR. | IMAGE | Sim | - |
+| `cor base` | Gere o mapa de cor base (albedo). Padrão: True. | BOOLEAN | Sim | true<br>false |
 | `normal` | Gere o mapa normal. Padrão: True. | BOOLEAN | Sim | true<br>false |
-| `roughness` | Gere o mapa de rugosidade. Padrão: False. | BOOLEAN | Sim | true<br>false |
-| `metalness` | Gere o mapa de metalicidade. Padrão: False. | BOOLEAN | Sim | true<br>false |
-| `height` | Gere o mapa de altura (deslocamento). Padrão: False. | BOOLEAN | Sim | true<br>false |
-| `seed` | Semente para redução de ruído reproduzível. Padrão: 42. | INT | Sim | 0 a 2147483646 |
-| `safety_checker` | Execute a verificação de segurança de conteúdo do provedor na solicitação. Configuração avançada. Padrão: False. | BOOLEAN | Sim | true<br>false |
-| `auto_downscale` | Reduz automaticamente a escala de uma imagem de entrada cujo lado mais longo exceda 2048 pixels, o limite de entrada do modelo, preservando a proporção; imagens menores permanecem como estão. Desative para gerar um erro em imagens com tamanho excessivo. Configuração avançada. Padrão: True. | BOOLEAN | Não | true<br>false |
+| `rugosidade` | Gere o mapa de rugosidade. Padrão: False. | BOOLEAN | Sim | true<br>false |
+| `metalidade` | Gere o mapa de metalicidade. Padrão: False. | BOOLEAN | Sim | true<br>false |
+| `altura` | Gere o mapa de altura (deslocamento). Padrão: False. | BOOLEAN | Sim | true<br>false |
+| `semente` | Semente para redução de ruído reproduzível. Padrão: 42. | INT | Sim | 0 a 2147483646 |
+| `verificador_de_segurança` | Execute a verificação de segurança de conteúdo do provedor na solicitação. Configuração avançada. Padrão: False. | BOOLEAN | Sim | true<br>false |
+| `redução_de_escala_automática` | Reduz automaticamente a escala de uma imagem de entrada cujo lado mais longo exceda 2048 pixels, o limite de entrada do modelo, preservando a proporção; imagens menores permanecem como estão. Desative para gerar um erro em imagens com tamanho excessivo. Configuração avançada. Padrão: True. | BOOLEAN | Não | true<br>false |
 
 **Restrições e comportamento:**
 

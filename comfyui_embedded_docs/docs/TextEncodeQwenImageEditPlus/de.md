@@ -9,9 +9,9 @@ Der Node TextEncodeQwenImageEditPlus verarbeitet einen Text-Prompt und bis zu dr
 | `clip` | Das CLIP-Modell, das für Tokenisierung und Kodierung verwendet wird | CLIP | Ja | - |
 | `prompt` | Textanweisung, die die gewünschte Bildänderung beschreibt (unterstützt mehrzeilige Eingabe und dynamische Prompts) | STRING | Ja | - |
 | `vae` | Optionales VAE-Modell zum Erzeugen von Referenz-Latents aus den Eingabebildern | VAE | Nein | - |
-| `image1` | Erstes optionales Eingabebild für Analyse und Änderung | IMAGE | Nein | - |
-| `image2` | Zweites optionales Eingabebild für Analyse und Änderung | IMAGE | Nein | - |
-| `image3` | Drittes optionales Eingabebild für Analyse und Änderung | IMAGE | Nein | - |
+| `Bild 1` | Erstes optionales Eingabebild für Analyse und Änderung | IMAGE | Nein | - |
+| `Bild 2` | Zweites optionales Eingabebild für Analyse und Änderung | IMAGE | Nein | - |
+| `Bild 3` | Drittes optionales Eingabebild für Analyse und Änderung | IMAGE | Nein | - |
 
 **Hinweis:** Wenn ein VAE bereitgestellt wird, erzeugt der Node Referenz-Latents aus allen bereitgestellten Eingabebildern. Es können bis zu drei Bilder gleichzeitig verarbeitet werden. Bilder werden für die Vision-Language-Verarbeitung auf eine Zielfläche von 384x384 Pixeln skaliert (Seitenverhältnis beibehalten) und für die VAE-Kodierung auf Abmessungen, die durch 8 teilbar sind (mit einer Zielfläche von 1024x1024 Pixeln).
 

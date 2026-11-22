@@ -7,9 +7,9 @@ Prepare o condicionamento do SenseNova para geração de imagem ou para saída i
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | Modelo CLIP do SenseNova. Conecte o carregador CLIP que também alimenta o CLIP Text Encode; a saída do codificador vai para `conditioning`. Obrigatório para todas as tarefas, exceto quando o condicionamento de entrada já estiver finalizado. | CLIP | Não | - |
-| `conditioning` | Condicionamento de texto do SenseNova proveniente do CLIP Text Encode. | CONDITIONING | Sim | - |
-| `negative` | Condicionamento negativo opcional. Ele é atualizado e retornado para as tarefas `interleave` e `self-correction`. | CONDITIONING | Não | - |
-| `task` | Tarefa a ser executada. `"image"` codifica o prompt para um sampler padrão, `"image thinking"` permite que o modelo pense antes de responder, `"interleave"` produz texto e imagens em uma única passagem, e `"self-correction"` permite que o modelo corrija sua própria saída anterior. | DYNAMIC_COMBO | Sim | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
+| `condicionamento` | Condicionamento de texto do SenseNova proveniente do CLIP Text Encode. | CONDITIONING | Sim | - |
+| `negativo` | Condicionamento negativo opcional. Ele é atualizado e retornado para as tarefas `interleave` e `self-correction`. | CONDITIONING | Não | - |
+| `tarefa` | Tarefa a ser executada. `"image"` codifica o prompt para um sampler padrão, `"image thinking"` permite que o modelo pense antes de responder, `"interleave"` produz texto e imagens em uma única passagem, e `"self-correction"` permite que o modelo corrija sua própria saída anterior. | DYNAMIC_COMBO | Sim | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
 | `max_tokens` | Máximo de tokens gerados durante esta chamada. Padrão: 1024. | INT | Sim | 1 a 8192 |
 
 ### Entradas de `interleave`

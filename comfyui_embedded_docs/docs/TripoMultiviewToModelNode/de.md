@@ -6,13 +6,13 @@ Dieser Node generiert 3D-Modelle synchron mithilfe der Tripo-API, indem er bis z
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|--------|
-| `image` | Vorderansicht des Objekts. | IMAGE | Ja | - |
-| `image_left` | Linke Ansicht des Objekts. | IMAGE | Nein | - |
-| `image_back` | Rückansicht des Objekts. | IMAGE | Nein | - |
-| `image_right` | Rechte Ansicht des Objekts. | IMAGE | Nein | - |
-| `model_version` | Die Modellversion, die für die Generierung verwendet wird. | COMBO | Nein | Mehrere Optionen verfügbar |
-| `orientation` | Ausrichtungseinstellung für das 3D-Modell (Standard: `"default"`). | COMBO | Nein | Mehrere Optionen verfügbar |
-| `texture` | Texturkarten generieren. Deaktiviert liefert reine Geometrie und ignoriert pbr. (Standard: True) | BOOLEAN | Nein | - |
+| `Bild` | Vorderansicht des Objekts. | IMAGE | Ja | - |
+| `Bild links` | Linke Ansicht des Objekts. | IMAGE | Nein | - |
+| `Bild hinten` | Rückansicht des Objekts. | IMAGE | Nein | - |
+| `Bild rechts` | Rechte Ansicht des Objekts. | IMAGE | Nein | - |
+| `Modellversion` | Die Modellversion, die für die Generierung verwendet wird. | COMBO | Nein | Mehrere Optionen verfügbar |
+| `Ausrichtung` | Ausrichtungseinstellung für das 3D-Modell (Standard: `"default"`). | COMBO | Nein | Mehrere Optionen verfügbar |
+| `Textur` | Texturkarten generieren. Deaktiviert liefert reine Geometrie und ignoriert pbr. (Standard: True) | BOOLEAN | Nein | - |
 | `pbr` | PBR-Materialkarten (Basisfarbe, Metallic, Rauheit, Normal). Erfordert Textur. (Standard: True) | BOOLEAN | Nein | - |
 | `model_seed` | Zufälliger Seed für die Modellgenerierung (Standard: 42). | INT | Nein | 0 bis 2,147,483,647 |
 | `texture_seed` | Zufälliger Seed für die Texturgenerierung (Standard: 42). | INT | Nein | 0 bis 2,147,483,647 |

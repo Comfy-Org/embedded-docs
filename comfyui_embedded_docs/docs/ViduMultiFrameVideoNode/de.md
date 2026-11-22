@@ -8,11 +8,11 @@ Dieser Node erzeugt ein Video, indem er Übergänge zwischen mehreren Keyframes 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das für die Videogenerierung zu verwendende Vidu-Modell. | COMBO | Ja | "viduq2-pro"<br>"viduq2-turbo" |
+| `Modell` | Das für die Videogenerierung zu verwendende Vidu-Modell. | COMBO | Ja | "viduq2-pro"<br>"viduq2-turbo" |
 | `start_image` | Das Startbild. Das Seitenverhältnis muss zwischen 1:4 und 4:1 liegen. | IMAGE | Ja | Seitenverhältnis 1:4 bis 4:1 |
-| `seed` | Ein Seed-Wert für die Zufallszahlengenerierung, um reproduzierbare Ergebnisse zu gewährleisten (Standard: 1). | INT | Ja | 0 bis 2147483647 |
-| `resolution` | Die Auflösung des Ausgabevideos. | COMBO | Ja | "720p"<br>"1080p" |
-| `frames` | Anzahl der Keyframe-Übergänge (2-9). Bei Auswahl eines Werts werden die erforderlichen Eingaben für jeden Frame dynamisch eingeblendet. | DYNAMIC_COMBO | Ja | "2"<br>"3"<br>"4"<br>"5"<br>"6"<br>"7"<br>"8"<br>"9" |
+| `Seed` | Ein Seed-Wert für die Zufallszahlengenerierung, um reproduzierbare Ergebnisse zu gewährleisten (Standard: 1). | INT | Ja | 0 bis 2147483647 |
+| `Auflösung` | Die Auflösung des Ausgabevideos. | COMBO | Ja | "720p"<br>"1080p" |
+| `Frames` | Anzahl der Keyframe-Übergänge (2-9). Bei Auswahl eines Werts werden die erforderlichen Eingaben für jeden Frame dynamisch eingeblendet. | DYNAMIC_COMBO | Ja | "2"<br>"3"<br>"4"<br>"5"<br>"6"<br>"7"<br>"8"<br>"9" |
 
 ### Frame-Eingaben (gemeinsam genutzt von allen Optionen der Frame-Anzahl)
 

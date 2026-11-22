@@ -8,9 +8,9 @@ Dieser Node versetzt ein Bild mithilfe von Bria in eine andere Jahreszeit. Die g
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das Bild, das in eine andere Jahreszeit versetzt werden soll. Ein etwaiger Alphakanal wird entfernt, bevor das Bild gesendet wird. | IMAGE | Ja | - |
-| `season` | Die anzuwendende Jahreszeit. | COMBO | Ja | `"spring"`<br>`"summer"`<br>`"autumn"`<br>`"winter"` |
-| `moderation` | Moderationseinstellungen. Legt fest, ob Inhaltsmoderationsoptionen für diese Anfrage konfiguriert werden. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
+| `Bild` | Das Bild, das in eine andere Jahreszeit versetzt werden soll. Ein etwaiger Alphakanal wird entfernt, bevor das Bild gesendet wird. | IMAGE | Ja | - |
+| `Jahreszeit` | Die anzuwendende Jahreszeit. | COMBO | Ja | `"spring"`<br>`"summer"`<br>`"autumn"`<br>`"winter"` |
+| `Moderation` | Moderationseinstellungen. Legt fest, ob Inhaltsmoderationsoptionen für diese Anfrage konfiguriert werden. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
 
 ### Moderationseingaben
 

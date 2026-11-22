@@ -7,9 +7,9 @@ Der Node TextEncodeAceStepAudio verarbeitet Texteingaben für die Audio-Konditio
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `clip` | Das CLIP-Modell, das für Tokenisierung und Kodierung verwendet wird | CLIP | Ja | - |
-| `tags` | Text-Tags oder Beschreibungen für die Audio-Konditionierung (unterstützt mehrzeilige Eingabe und dynamische Prompts) | STRING | Ja | - |
-| `lyrics` | Lyrics-Text für die Audio-Konditionierung (unterstützt mehrzeilige Eingabe und dynamische Prompts) | STRING | Ja | - |
-| `lyrics_strength` | Steuert die Stärke des Einflusses der Lyrics auf die Konditionierungsausgabe (Standard: 1.0, Schritt: 0.01) | FLOAT | Ja | 0.0 - 10.0 |
+| `Tags` | Text-Tags oder Beschreibungen für die Audio-Konditionierung (unterstützt mehrzeilige Eingabe und dynamische Prompts) | STRING | Ja | - |
+| `Liedtext` | Lyrics-Text für die Audio-Konditionierung (unterstützt mehrzeilige Eingabe und dynamische Prompts) | STRING | Ja | - |
+| `Liedtextstärke` | Steuert die Stärke des Einflusses der Lyrics auf die Konditionierungsausgabe (Standard: 1.0, Schritt: 0.01) | FLOAT | Ja | 0.0 - 10.0 |
 
 ## Ausgaben
 

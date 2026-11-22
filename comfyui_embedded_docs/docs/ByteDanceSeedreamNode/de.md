@@ -16,8 +16,8 @@ Der ByteDance Seedream 4.5 & 5.0-Node bietet eine einheitliche Text-zu-Bild-Gene
 | `height` | Benutzerdefinierte Höhe für das Bild. Der Wert wird nur verwendet, wenn `size_preset` auf `Custom` gesetzt ist. Standard: 2048. | INT | Nein | 1024 bis 4992 (Schritt 2) |
 | `sequential_image_generation` | Modus für die Gruppenbildgenerierung. "disabled" generiert ein einzelnes Bild. "auto" lässt das Modell entscheiden, ob mehrere zusammenhängende Bilder generiert werden (z. B. Story-Szenen, Charaktervarianten). Standard: "disabled". | STRING | Nein | "disabled"<br>"auto" |
 | `max_images` | Maximale Anzahl der zu generierenden Bilder, wenn sequential_image_generation='auto'. Die Gesamtzahl der Bilder (Eingabe + generiert) darf 15 nicht überschreiten. Standard: 1. | INT | Nein | 1 bis 15 (Schritt 1) |
-| `seed` | Seed für die Generierung. Standard: 0. | INT | Nein | 0 bis 2147483647 (Schritt 1) |
-| `watermark` | Ob dem Bild ein Wasserzeichen "AI generated" hinzugefügt werden soll. Standard: False. | BOOLEAN | Nein | - |
+| `Seed` | Seed für die Generierung. Standard: 0. | INT | Nein | 0 bis 2147483647 (Schritt 1) |
+| `Wasserzeichen` | Ob dem Bild ein Wasserzeichen "AI generated" hinzugefügt werden soll. Standard: False. | BOOLEAN | Nein | - |
 | `fail_on_partial` | Wenn aktiviert, wird die Ausführung abgebrochen, wenn angeforderte Bilder fehlen oder einen Fehler zurückgeben. Standard: True. | BOOLEAN | Nein | - |
 
 **Hinweise zu Parametereinschränkungen:**

@@ -7,11 +7,11 @@ Der Node TextEncodeQwenImage21 kodiert einen Prompt und einen Negativ-Prompt fü
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `clip` | Der Textencoder von Qwen-Image 2.1, der zum Tokenisieren und Kodieren der Prompts verwendet wird. | CLIP | Ja | - |
-| `prompt` | Text-Prompt, der das zu generierende Bild oder die anzuwendende Bearbeitung beschreibt. Unterstützt mehrzeilige Eingaben und dynamische Prompts. | STRING | Ja | Beliebiger Text |
+| `Prompt` | Text-Prompt, der das zu generierende Bild oder die anzuwendende Bearbeitung beschreibt. Unterstützt mehrzeilige Eingaben und dynamische Prompts. | STRING | Ja | Beliebiger Text |
 | `negative_prompt` | Text-Prompt, der beschreibt, was das Ergebnis vermeiden soll. Unterstützt mehrzeilige Eingaben und dynamische Prompts. | STRING | Ja | Beliebiger Text |
 | `vae` | VAE, der zum Kodieren der Referenzbilder in Referenz-Latents verwendet wird. Wenn er weggelassen wird, beeinflussen die Referenzbilder das Ergebnis nur über den Textencoder. | VAE | Nein | - |
-| `resolution` | Referenzbilder werden auf etwa `resolution` x `resolution` Pixel skaliert, auf Vielfache von 32, wobei das Seitenverhältnis erhalten bleibt. 0 behält die jeweilige Größe jeder Referenz bei, auf ein Vielfaches von 32 gerundet (Standard: 1024). | INT | Ja | 0 bis 4096 (Schrittweite 32) |
-| `images` | Referenzbilder, die vom Textencoder gesehen und als VAE-Latents in die Sequenz eingefügt werden. Erweiterbarer Slot: Verbinden Sie bis zu 16 Bilder (`image_1` ... `image_16`). | IMAGE | Nein | 0 bis 16 Bilder |
+| `Auflösung` | Referenzbilder werden auf etwa `resolution` x `resolution` Pixel skaliert, auf Vielfache von 32, wobei das Seitenverhältnis erhalten bleibt. 0 behält die jeweilige Größe jeder Referenz bei, auf ein Vielfaches von 32 gerundet (Standard: 1024). | INT | Ja | 0 bis 4096 (Schrittweite 32) |
+| `Bilder` | Referenzbilder, die vom Textencoder gesehen und als VAE-Latents in die Sequenz eingefügt werden. Erweiterbarer Slot: Verbinden Sie bis zu 16 Bilder (`image_1` ... `image_16`). | IMAGE | Nein | 0 bis 16 Bilder |
 
 Die Ausgabe des leeren Latents wird auf die Größe des ersten verbundenen Referenzbilds dimensioniert oder auf `resolution`, wenn kein Referenzbild verbunden ist. Verwenden Sie für das Sampling das Latent, das dieser Node zurückgibt: Jede andere Größe verschiebt die Bearbeitung. Wenn ein VAE verbunden ist, werden dieselben Referenz-Latents sowohl an die positive als auch an die negative Konditionierung angehängt, sodass ein einzelner Sampler-Schritt beide entrauschen kann.
 

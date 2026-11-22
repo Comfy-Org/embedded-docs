@@ -7,7 +7,7 @@ Der `CLIPSave`-Node speichert ein CLIP-Textencoder-Modell im SafeTensors-Format 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `clip` | Das zu speichernde CLIP-Modell. | CLIP | Ja | - |
-| `filename_prefix` | Der Präfixpfad und Dateiname für die gespeicherte(n) Datei(en). Der Node hängt einen Komponentensuffix (z. B. `_clip_l`, `_clip_g`) und einen Zähler an, um eindeutige Dateinamen zu erstellen (Standard: `clip/ComfyUI`). | STRING | Ja | - |
+| `Dateinamenspräfix` | Der Präfixpfad und Dateiname für die gespeicherte(n) Datei(en). Der Node hängt einen Komponentensuffix (z. B. `_clip_l`, `_clip_g`) und einen Zähler an, um eindeutige Dateinamen zu erstellen (Standard: `clip/ComfyUI`). | STRING | Ja | - |
 | `prompt` | Die Workflow-Prompt-Informationen, die als Metadaten in der Ausgabedatei gespeichert werden. Dieser Parameter ist in der UI ausgeblendet. | PROMPT | Nein | - |
 | `extra_pnginfo` | Zusätzliche Metadaten, die als Schlüssel-Wert-Paare in der Ausgabedatei gespeichert werden. Dieser Parameter ist in der UI ausgeblendet. | EXTRA_PNGINFO | Nein | - |
 

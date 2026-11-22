@@ -8,9 +8,9 @@ Der Node ColorTransfer passt die Farbpalette eines Zielbilds an die Farben eines
 | --- | --- | --- | --- | --- |
 | `image_target` | Bild(er), auf die die Farbtransformation angewendet werden soll. | IMAGE | Ja | - |
 | `image_ref` | Referenzbild(er), deren Farben abgeglichen werden sollen. | IMAGE | Ja | - |
-| `method` | Der zu verwendende Farbübertragungsalgorithmus. | COMBO | Ja | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` |
+| `Methode` | Der zu verwendende Farbübertragungsalgorithmus. | COMBO | Ja | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` |
 | `source_stats` | Legt fest, wie die Farbstatistiken aus dem Quellbild (Zielbild) berechnet werden. | DYNAMICCOMBO | Ja | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
-| `strength` | Die Intensität des Farbübertragungseffekts. Ein Wert von 1.0 wendet die vollständige Transformation an, während 0.0 das Originalbild zurückgibt. Standard: 1.0 | FLOAT | Ja | 0.0 bis 10.0 |
+| `Stärke` | Die Intensität des Farbübertragungseffekts. Ein Wert von 1.0 wendet die vollständige Transformation an, während 0.0 das Originalbild zurückgibt. Standard: 1.0 | FLOAT | Ja | 0.0 bis 10.0 |
 
 **Parameterdetails:**
 *   **`source_stats` Optionen:**

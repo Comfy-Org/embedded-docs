@@ -6,13 +6,13 @@ Der Wan Image to Video-Node generiert ein Video aus einem einzelnen Eingabebild 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Zu verwendendes Modell (Standard: "wan2.6-i2v") | COMBO | Ja | "wan2.5-i2v-preview"<br>"wan2.6-i2v" |
-| `image` | Eingabebild, das als erstes Einzelbild für die Videogenerierung dient. Es ist genau ein Bild erforderlich. | IMAGE | Ja | - |
-| `prompt` | Prompt, der die Elemente und visuellen Merkmale beschreibt. Unterstützt Englisch und Chinesisch (Standard: leer). | STRING | Ja | - |
+| `Modell` | Zu verwendendes Modell (Standard: "wan2.6-i2v") | COMBO | Ja | "wan2.5-i2v-preview"<br>"wan2.6-i2v" |
+| `Bild` | Eingabebild, das als erstes Einzelbild für die Videogenerierung dient. Es ist genau ein Bild erforderlich. | IMAGE | Ja | - |
+| `Prompt` | Prompt, der die Elemente und visuellen Merkmale beschreibt. Unterstützt Englisch und Chinesisch (Standard: leer). | STRING | Ja | - |
 | `negative_prompt` | Negativer Prompt, der beschreibt, was vermieden werden soll (Standard: leer). | STRING | Nein | - |
-| `resolution` | Videoauflösungsqualität (Standard: "720P"). Das Wan 2.6-Modell unterstützt kein 480P. | COMBO | Nein | "480P"<br>"720P"<br>"1080P" |
-| `duration` | Dauer des generierten Videos in Sekunden. Eine Dauer von 15 Sekunden wird nur vom Wan 2.6-Modell unterstützt (Standard: 5). | INT | Nein | 5-15 (Schrittweite: 5) |
-| `audio` | Audio muss eine klare, laute Stimme enthalten, ohne störende Geräusche oder Hintergrundmusik. Wenn Audio bereitgestellt wird, muss die Audiodauer zwischen 3,0 und 29,0 Sekunden liegen. | AUDIO | Nein | - |
+| `Auflösung` | Videoauflösungsqualität (Standard: "720P"). Das Wan 2.6-Modell unterstützt kein 480P. | COMBO | Nein | "480P"<br>"720P"<br>"1080P" |
+| `Dauer` | Dauer des generierten Videos in Sekunden. Eine Dauer von 15 Sekunden wird nur vom Wan 2.6-Modell unterstützt (Standard: 5). | INT | Nein | 5-15 (Schrittweite: 5) |
+| `Audio` | Audio muss eine klare, laute Stimme enthalten, ohne störende Geräusche oder Hintergrundmusik. Wenn Audio bereitgestellt wird, muss die Audiodauer zwischen 3,0 und 29,0 Sekunden liegen. | AUDIO | Nein | - |
 | `seed` | Für die Generierung zu verwendender Seed (Standard: 0). | INT | Nein | 0-2147483647 |
 | `generate_audio` | Wenn keine Audioeingabe bereitgestellt wird, wird Audio automatisch generiert (Standard: False). | BOOLEAN | Nein | - |
 | `prompt_extend` | Ob der Prompt mit KI-Unterstützung erweitert werden soll (Standard: True). | BOOLEAN | Nein | - |

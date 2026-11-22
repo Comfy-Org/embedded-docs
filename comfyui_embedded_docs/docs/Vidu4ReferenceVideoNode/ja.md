@@ -8,7 +8,7 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 動画生成に使用するモデルです。モデルを選択すると、そのモデルに固有のパラメータ（`reference_images`、`reference_audios`、`prompt`、`aspect_ratio`、`resolution`、`duration`、`audio`、`seed`）が表示されます。 | DYNAMIC_COMBO | はい | `"Vidu Q4 Preview"` |
+| `モデル` | 動画生成に使用するモデルです。モデルを選択すると、そのモデルに固有のパラメータ（`reference_images`、`reference_audios`、`prompt`、`aspect_ratio`、`resolution`、`duration`、`audio`、`seed`）が表示されます。 | DYNAMIC_COMBO | はい | `"Vidu Q4 Preview"` |
 | `reference_images` | 拡張可能なスロット: 生成する動画の参照画像（`image_1`、`image_2`、...）を1つ以上接続します。バッチ内の各画像が合計数にカウントされます。プロンプト内では順番に、image 1、image 2、... として参照してください。 | IMAGE | はい | 最大15枚 |
 | `reference_audios` | 拡張可能なスロット: オプションの音声参照（`audio_1`、`audio_2`、`audio_3`）を接続します。各3～12秒です。使用されるのは声のみで、言葉は使用されません。プロンプトに対話を書き、順番に音声を割り当てます。たとえば `image 1 says "Hello!" in the voice from audio 1` のようにします。`audio` を有効にする必要があります。 | AUDIO | いいえ | 最大3クリップ |
 | `prompt` | 動画生成のためのテキスト記述です。最大5000文字です。使用する参照を説明するために必要です。 | STRING | はい | 任意のテキスト |

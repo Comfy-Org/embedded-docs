@@ -6,7 +6,7 @@ Dieser Node skaliert ein Bild synchron mit dem Tool „crisp upscale“ hoch. Er
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `image` | Das Eingabebild, das hochskaliert werden soll. Akzeptiert einen Stapel von Bildern; jedes Bild wird unabhängig verarbeitet. | IMAGE | Ja | — |
+| `Bild` | Das Eingabebild, das hochskaliert werden soll. Akzeptiert einen Stapel von Bildern; jedes Bild wird unabhängig verarbeitet. | IMAGE | Ja | — |
 
 ## Ausgaben
 

@@ -7,13 +7,13 @@ Der Node Generate Text verwendet ein CLIP-Modell, um aus einem Prompt Text zu er
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `clip` | Das CLIP-Modell, das verwendet wird, um den Prompt zu tokenisieren und den Text zu erzeugen. | CLIP | Ja | - |
-| `prompt` | Der Prompt, der die Generierung steuert. Unterstützt mehrere Zeilen und dynamische Prompts (Standard: leerer String). | STRING | Ja | - |
-| `images` | Erweiterbare Gruppe von bis zu 50 Bildern, `image1` bis `image50`, die als visueller Kontext für das Modell dient. | AUTOGROW | Nein | 0 bis 50 Bilder |
-| `videos` | Erweiterbare Gruppe von bis zu 100 Videoeingaben, `video1` bis `video100`. Jedes Video ist ein Stapel von Frames, für die 24 FPS angenommen und die intern auf die Framerate des Modells unterabgetastet werden. | AUTOGROW | Nein | 0 bis 100 Videos |
-| `audios` | Erweiterbare Gruppe von bis zu 100 Audioeingaben, `audio1` bis `audio100`, die als Audiokontext für das Modell dient. | AUTOGROW | Nein | 0 bis 100 Audiodateien |
+| `Prompt` | Der Prompt, der die Generierung steuert. Unterstützt mehrere Zeilen und dynamische Prompts (Standard: leerer String). | STRING | Ja | - |
+| `Bilder` | Erweiterbare Gruppe von bis zu 50 Bildern, `image1` bis `image50`, die als visueller Kontext für das Modell dient. | AUTOGROW | Nein | 0 bis 50 Bilder |
+| `Videos` | Erweiterbare Gruppe von bis zu 100 Videoeingaben, `video1` bis `video100`. Jedes Video ist ein Stapel von Frames, für die 24 FPS angenommen und die intern auf die Framerate des Modells unterabgetastet werden. | AUTOGROW | Nein | 0 bis 100 Videos |
+| `Audios` | Erweiterbare Gruppe von bis zu 100 Audioeingaben, `audio1` bis `audio100`, die als Audiokontext für das Modell dient. | AUTOGROW | Nein | 0 bis 100 Audiodateien |
 | `max_length` | Maximale Anzahl der zu erzeugenden Tokens (Standard: 512). | INT | Ja | 1 bis 32768 |
 | `sampling_mode` | `on` sampelt die Ausgabe und zeigt die unten aufgeführten Sampling-Parameter an. `off` erzeugt gierig ohne Zufalls-Sampling. | DYNAMIC_COMBO | Ja | `"on"`<br>`"off"` |
-| `thinking` | Arbeitet im Thinking-Modus, wenn das Modell dies unterstützt (Standard: False). | BOOLEAN | Nein | True oder False |
+| `Nachdenken` | Arbeitet im Thinking-Modus, wenn das Modell dies unterstützt (Standard: False). | BOOLEAN | Nein | True oder False |
 | `use_default_template` | Verwendet den eingebauten System-Prompt oder die Chat-Vorlage, falls das Modell eine besitzt (Standard: True). Erweiterter Parameter. | BOOLEAN | Nein | True oder False |
 | `mtp` | Spekulative Dekodierung mit dem Multi-Token-Prediction-Kopf des Checkpoints. Ohne MTP-Gewichte hat dies keine Wirkung. `"auto"` passt die Draft-Tiefe und -Breite an die beobachteten Token-Übereinstimmungen und Ausführungskosten an, `"2"` bis `"5"` legen eine konstante Draft-Tiefe fest, und die `tree`-Modi fixieren sowohl Breite als auch Tiefe. Die gesampelte Ausgabe bleibt korrekt verteilt, unterscheidet sich jedoch für denselben Seed von der Nicht-MTP-Ausgabe (Standard: `"auto"`). | COMBO | Nein | `"auto"`<br>`"off"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"tree2s1"`<br>`"tree2s2"`<br>`"tree3s1"`<br>`"tree4s1m8"` |
 | `system_prompt` | Ersetzt den System-Prompt in der Chat-Vorlage des Modells. Wird ignoriert, wenn die Standardvorlage nicht verwendet wird. Verbinden Sie eine STRING-Eingabe, anstatt sie im Node einzugeben (Standard: leer). | STRING | Nein | - |

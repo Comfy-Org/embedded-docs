@@ -6,7 +6,7 @@ Dieser Node lädt Videodateien und die zugehörigen Textbeschriftungen aus einem
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `folder` | Der Ordner, der Videodateien und .txt-Beschriftungen enthält. | COMBO | Ja | Listet dynamisch alle Unterordner innerhalb des ComfyUI-Eingabeverzeichnisses auf |
+| `Ordner` | Der Ordner, der Videodateien und .txt-Beschriftungen enthält. | COMBO | Ja | Listet dynamisch alle Unterordner innerhalb des ComfyUI-Eingabeverzeichnisses auf |
 
 Der ausgewählte Ordner muss ein Unterordner des ComfyUI-Eingabeverzeichnisses sein; ein Ordnername, der außerhalb dieses Verzeichnisses aufgelöst wird, führt zu einem Fehler. Wenn der ausgewählte Ordner keine Dateien mit einer unterstützten Videoerweiterung (MP4, AVI, MOV, WEBM, MKV, FLV) enthält, löst der Node einen Fehler aus. Bei verschachtelten Ordnern, deren Name mit einer Zahl gefolgt von einem Unterstrich beginnt (zum Beispiel `5_classname`), wird jedes Video in diesem Ordner so oft in den Datensatz aufgenommen, wie es das Präfix angibt. Die Beschriftung jedes Videos wird aus einer `.txt`-Datei mit demselben Basisnamen gelesen; wenn keine passende `.txt`-Datei existiert, ist die Beschriftung eine leere Zeichenkette.
 

@@ -6,7 +6,7 @@ Füllt ein Bild mit einer Volltonfarbe oder einer gespiegelten Kopie seiner Rän
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `image` | Das aufzufüllende Bild. | IMAGE | Ja | - |
+| `Bild` | Das aufzufüllende Bild. | IMAGE | Ja | - |
 | `padding_type` | Wie viel Padding hinzugefügt wird: `"pad dimensions"` für exakte Pixelwerte pro Seite, `"pad by multiplier"` für eine Ausgabegröße relativ zur Eingabe oder `"pad to multiple"`, um das nächste Vielfache zu erreichen. Beim Auswählen einer Option werden ihre Parameter eingeblendet. | DYNAMIC_COMBO | Ja | `"pad dimensions"`<br>`"pad by multiplier"`<br>`"pad to multiple"` |
 | `left` | Pixel, die links hinzugefügt werden. Verfügbar, wenn `padding_type` `"pad dimensions"` ist (Standard: 0). | INT | Ja | 0 bis 16384 |
 | `top` | Pixel, die oben hinzugefügt werden. Verfügbar, wenn `padding_type` `"pad dimensions"` ist (Standard: 0). | INT | Ja | 0 bis 16384 |

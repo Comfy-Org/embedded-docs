@@ -6,9 +6,9 @@ Der ImageAddNoise-Node fügt einem Eingabebild zufälliges Rauschen hinzu. Er ve
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `image` | Das Eingabebild, dem Rauschen hinzugefügt wird | IMAGE | Ja | - |
-| `seed` | Der zufällige Seed, der zum Erzeugen des Rauschens verwendet wird (Standard: 0). Dieser Parameter unterstützt die Funktionalität „control after generate“. | INT | Ja | 0 bis 18446744073709551615 |
-| `strength` | Steuert die Intensität des Rauscheffekts (Standard: 0.5, Schritt: 0.01) | FLOAT | Ja | 0.0 bis 1.0 |
+| `Bild` | Das Eingabebild, dem Rauschen hinzugefügt wird | IMAGE | Ja | - |
+| `Seed` | Der zufällige Seed, der zum Erzeugen des Rauschens verwendet wird (Standard: 0). Dieser Parameter unterstützt die Funktionalität „control after generate“. | INT | Ja | 0 bis 18446744073709551615 |
+| `Stärke` | Steuert die Intensität des Rauscheffekts (Standard: 0.5, Schritt: 0.01) | FLOAT | Ja | 0.0 bis 1.0 |
 
 **Hinweis:** Rauschwerte werden zum Bild addiert und das Ergebnis wird auf den Bereich 0.0–1.0 begrenzt. Wenn das Eingabebild einen Alpha-Kanal (4 Kanäle) besitzt, bleibt der ursprüngliche Alpha-Kanal unverändert erhalten – Rauschen wird nur auf die Farbkanäle angewendet.
 

@@ -9,7 +9,7 @@ Der Node Random Crop Images wählt zufällig einen rechteckigen Bereich aus jede
 | `image` | Das Bild, das zugeschnitten werden soll. | IMAGE | Ja | - |
 | `width` | Die Breite des Zuschnittbereichs (Standard: 512). | INT | Nein | 1 - 8192 |
 | `height` | Die Höhe des Zuschnittbereichs (Standard: 512). | INT | Nein | 1 - 8192 |
-| `seed` | Eine Zahl, die zur Steuerung der zufälligen Position des Zuschnitts verwendet wird (Standard: 0). | INT | Nein | 0 - 18446744073709551615 |
+| `Seed` | Eine Zahl, die zur Steuerung der zufälligen Position des Zuschnitts verwendet wird (Standard: 0). | INT | Nein | 0 - 18446744073709551615 |
 
 **Hinweis:** Die Parameter `width` und `height` müssen kleiner als oder gleich den Abmessungen des Eingabebilds sein. Wenn eine angegebene Dimension größer als das Bild ist, wird der Zuschnitt auf die Grenzen des Bildes beschränkt.
 

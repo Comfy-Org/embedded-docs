@@ -6,9 +6,9 @@ Erstellt eine Kopie einer Stimme, die eine andere Sprache muttersprachlich spric
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `voice` | Zu kopierende Breeze-Stimme. | BREEZE_VOICE | Ja | - |
-| `language` | Sprache, die die neue Stimme spricht. Standard: `"English"`. | COMBO | Ja | Mehrere Optionen verfügbar |
-| `seed` | Steuert, ob der Node erneut ausgeführt wird; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Nein | 0 bis 2147483647 |
+| `Stimme` | Zu kopierende Breeze-Stimme. | BREEZE_VOICE | Ja | - |
+| `Sprache` | Sprache, die die neue Stimme spricht. Standard: `"English"`. | COMBO | Ja | Mehrere Optionen verfügbar |
+| `Seed` | Steuert, ob der Node erneut ausgeführt wird; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Nein | 0 bis 2147483647 |
 
 ## Ausgaben
 

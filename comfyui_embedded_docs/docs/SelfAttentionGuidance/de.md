@@ -7,8 +7,8 @@ Der Knoten Self-Attention Guidance wendet Guidance auf Diffusionsmodelle an, ind
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `model` | Das Diffusionsmodell, auf das Self-Attention-Guidance angewendet werden soll | MODEL | Ja | - |
-| `scale` | Die Stärke des Self-Attention-Guidance-Effekts (Standard: 0.5) | FLOAT | Nein | -2.0 bis 5.0 |
-| `blur_sigma` | Der Grad der Unschärfe, der zum Erstellen der Guidance-Karte angewendet wird (Standard: 2.0) | FLOAT | Nein | 0.0 bis 10.0 |
+| `Skalierung` | Die Stärke des Self-Attention-Guidance-Effekts (Standard: 0.5) | FLOAT | Nein | -2.0 bis 5.0 |
+| `Unschärfe-Sigma` | Der Grad der Unschärfe, der zum Erstellen der Guidance-Karte angewendet wird (Standard: 2.0) | FLOAT | Nein | 0.0 bis 10.0 |
 
 ## Ausgaben
 

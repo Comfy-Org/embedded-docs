@@ -6,8 +6,8 @@ Dieser Node wandelt ein Dictionary (eine Sammlung von Schlüssel-Wert-Paaren) in
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `dictionary` | Das Dictionary, das in einen String umgewandelt werden soll | DICT | Ja | - |
-| `indent` | Leerzeichen pro Einrückungsebene. 0 erzeugt einen kompakten einzeiligen String (Standard: 2) | INT | Nein | 0 bis 8 |
+| `Wörterbuch` | Das Dictionary, das in einen String umgewandelt werden soll | DICT | Ja | - |
+| `Einrückung` | Leerzeichen pro Einrückungsebene. 0 erzeugt einen kompakten einzeiligen String (Standard: 2) | INT | Nein | 0 bis 8 |
 
 ## Ausgaben
 

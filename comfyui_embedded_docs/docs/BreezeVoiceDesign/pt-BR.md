@@ -6,11 +6,11 @@ Cria uma nova voz Breeze a partir de uma descrição escrita. Forneça uma descr
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `description` | Descrição da voz em 3 a 500 caracteres: idade, gênero, sotaque, tom, ritmo. Padrão: vazio. | STRING | Sim | 3 a 500 caracteres |
-| `preview_text` | A frase que a nova voz fala na prévia, com até 500 caracteres. Escreva-a no idioma selecionado, porque a voz é construída a partir desta prévia. Padrão: vazio. | STRING | Sim | 1 a 500 caracteres |
-| `language` | Idioma do texto de prévia. English e Chinese podem usar qualquer um dos modelos; outros idiomas usam Breeze TTS 2 Multilingual. | DYNAMIC_COMBO | Sim | Várias opções disponíveis |
-| `strength` | O quão fielmente a voz segue a descrição. Padrão: 4.0. | FLOAT | Não | 1.0 a 10.0 (passo 0.1) |
-| `seed` | Controla se o nó será executado novamente; os resultados não são determinísticos, independentemente da seed. Padrão: 42. | INT | Não | 0 a 2147483647 |
+| `descrição` | Descrição da voz em 3 a 500 caracteres: idade, gênero, sotaque, tom, ritmo. Padrão: vazio. | STRING | Sim | 3 a 500 caracteres |
+| `texto_de_prévia` | A frase que a nova voz fala na prévia, com até 500 caracteres. Escreva-a no idioma selecionado, porque a voz é construída a partir desta prévia. Padrão: vazio. | STRING | Sim | 1 a 500 caracteres |
+| `idioma` | Idioma do texto de prévia. English e Chinese podem usar qualquer um dos modelos; outros idiomas usam Breeze TTS 2 Multilingual. | DYNAMIC_COMBO | Sim | Várias opções disponíveis |
+| `intensidade` | O quão fielmente a voz segue a descrição. Padrão: 4.0. | FLOAT | Não | 1.0 a 10.0 (passo 0.1) |
+| `semente` | Controla se o nó será executado novamente; os resultados não são determinísticos, independentemente da seed. Padrão: 42. | INT | Não | 0 a 2147483647 |
 
 ### Entradas para os idiomas "English" e "Chinese"
 

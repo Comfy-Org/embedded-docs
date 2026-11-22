@@ -7,11 +7,11 @@ Der Node ConditioningSetAreaPercentage ist darauf spezialisiert, den Einflussber
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
 | `CONDITIONING` | Stellt die zu ändernden Conditioning-Elemente dar und dient als Grundlage für die Anwendung von Bereichs- und Strength-Anpassungen. | CONDITIONING |
-| `width` | Legt die Breite des Bereichs als Prozentsatz der gesamten Bildbreite fest und beeinflusst, wie stark das Conditioning horizontal auf das Bild wirkt. | `FLOAT` |
-| `height` | Bestimmt die Höhe des Bereichs als Prozentsatz der gesamten Bildhöhe und beeinflusst die vertikale Ausdehnung des Conditioning-Einflusses. | `FLOAT` |
+| `Breite` | Legt die Breite des Bereichs als Prozentsatz der gesamten Bildbreite fest und beeinflusst, wie stark das Conditioning horizontal auf das Bild wirkt. | `FLOAT` |
+| `Höhe` | Bestimmt die Höhe des Bereichs als Prozentsatz der gesamten Bildhöhe und beeinflusst die vertikale Ausdehnung des Conditioning-Einflusses. | `FLOAT` |
 | `x` | Gibt den horizontalen Startpunkt des Bereichs als Prozentsatz der gesamten Bildbreite an und positioniert den Conditioning-Effekt. | `FLOAT` |
 | `y` | Gibt den vertikalen Startpunkt des Bereichs als Prozentsatz der gesamten Bildhöhe an und positioniert den Conditioning-Effekt. | `FLOAT` |
-| `strength` | Steuert die Intensität des Conditioning-Effekts innerhalb des angegebenen Bereichs und ermöglicht eine Feinabstimmung seiner Wirkung. | `FLOAT` |
+| `Stärke` | Steuert die Intensität des Conditioning-Effekts innerhalb des angegebenen Bereichs und ermöglicht eine Feinabstimmung seiner Wirkung. | `FLOAT` |
 
 ## Ausgaben
 

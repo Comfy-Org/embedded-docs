@@ -6,9 +6,9 @@ Der Node Sonilo Text to Music erzeugt Musik aus einer Textbeschreibung mithilfe 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Text-Prompt, der die zu generierende Musik beschreibt. Muss nach dem Entfernen von Leerzeichen am Anfang und Ende 1 bis 1000 Zeichen enthalten. | STRING | Ja | 1 bis 1000 Zeichen |
-| `duration` | Zieldauer in Sekunden. Maximal: 6 Minuten. Standard: 30. | INT | Nein | 1 bis 360 |
-| `seed` | Seed für Reproduzierbarkeit. Wird derzeit vom Sonilo-Dienst ignoriert, aber für die Konsistenz des Graphen beibehalten. Standard: 0. | INT | Nein | 0 bis 18446744073709551615 |
+| `Prompt` | Text-Prompt, der die zu generierende Musik beschreibt. Muss nach dem Entfernen von Leerzeichen am Anfang und Ende 1 bis 1000 Zeichen enthalten. | STRING | Ja | 1 bis 1000 Zeichen |
+| `Dauer` | Zieldauer in Sekunden. Maximal: 6 Minuten. Standard: 30. | INT | Nein | 1 bis 360 |
+| `Seed` | Seed für Reproduzierbarkeit. Wird derzeit vom Sonilo-Dienst ignoriert, aber für die Konsistenz des Graphen beibehalten. Standard: 0. | INT | Nein | 0 bis 18446744073709551615 |
 
 **Hinweise:**
 - Die Eingabe `seed` ist für die Konsistenz des Workflows vorhanden, hat aber derzeit keinen Einfluss auf die Ausgabe des Sonilo-Dienstes.

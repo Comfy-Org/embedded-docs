@@ -6,11 +6,11 @@ Der SkipLayerGuidanceSD3-Node verbessert die Führung in Richtung detaillierter 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Modell, auf das die Skip-Layer-Guidance angewendet werden soll | MODEL | Ja | - |
-| `layers` | Kommagetrennte Liste der zu überspringenden Layer-Indizes (Standard: "7, 8, 9") | STRING | Ja | - |
-| `scale` | Die Stärke des Skip-Layer-Guidance-Effekts (Standard: 3.0) | FLOAT | Ja | 0.0 - 10.0 |
-| `start_percent` | Der Startpunkt der Guidance-Anwendung als Prozentsatz der Gesamtschritte (Standard: 0.01) | FLOAT | Ja | 0.0 - 1.0 |
-| `end_percent` | Der Endpunkt der Guidance-Anwendung als Prozentsatz der Gesamtschritte (Standard: 0.15) | FLOAT | Ja | 0.0 - 1.0 |
+| `Modell` | Das Modell, auf das die Skip-Layer-Guidance angewendet werden soll | MODEL | Ja | - |
+| `Ebenen` | Kommagetrennte Liste der zu überspringenden Layer-Indizes (Standard: "7, 8, 9") | STRING | Ja | - |
+| `Skalierung` | Die Stärke des Skip-Layer-Guidance-Effekts (Standard: 3.0) | FLOAT | Ja | 0.0 - 10.0 |
+| `Startprozentsatz` | Der Startpunkt der Guidance-Anwendung als Prozentsatz der Gesamtschritte (Standard: 0.01) | FLOAT | Ja | 0.0 - 1.0 |
+| `Endprozentsatz` | Der Endpunkt der Guidance-Anwendung als Prozentsatz der Gesamtschritte (Standard: 0.15) | FLOAT | Ja | 0.0 - 1.0 |
 
 ## Ausgaben
 

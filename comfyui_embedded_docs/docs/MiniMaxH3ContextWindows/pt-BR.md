@@ -6,7 +6,7 @@ Divide a amostragem em janelas de contexto sobrepostas para que um vídeo do Min
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo ao qual aplicar janelas de contexto durante a amostragem. | MODEL | Sim | - |
+| `modelo` | O modelo ao qual aplicar janelas de contexto durante a amostragem. | MODEL | Sim | - |
 | `context_length` | O comprimento da janela de contexto em quadros reais. Deve ser 17*n + 5 (padrão: 124). | INT | Sim | 22 a 16384 (MAX_RESOLUTION), passo 17 |
 | `context_overlap` | A sobreposição da janela de contexto em quadros reais. Deve ser 17*n + 5 (padrão: 39). | INT | Sim | 5 ou mais, passo 17 |
 | `fuse_method` | O método usado para fundir as janelas de contexto (padrão: `"pyramid"`). | COMBO | Sim | `"pyramid"`<br>`"relative"`<br>`"flat"`<br>`"overlap-linear"` |

@@ -8,13 +8,13 @@ Dieser Node verwendet das Kling 3.0-Modell, um ein Video zu generieren. Er erste
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modell- und Generierungseinstellungen. Wenn Sie diese Option auswählen, wird ein verschachtelter Parameter `resolution` angezeigt. | DYNAMIC_COMBO | Ja | `"kling-v3"` |
-| `prompt` | Die Textbeschreibung, die die Videogenerierung steuert. Muss zwischen 1 und 2500 Zeichen lang sein. | STRING | Ja | N/A |
-| `duration` | Die Länge des Videos in Sekunden (Standard: 5). | INT | Ja | 3 bis 15 |
+| `Modell` | Modell- und Generierungseinstellungen. Wenn Sie diese Option auswählen, wird ein verschachtelter Parameter `resolution` angezeigt. | DYNAMIC_COMBO | Ja | `"kling-v3"` |
+| `Prompt` | Die Textbeschreibung, die die Videogenerierung steuert. Muss zwischen 1 und 2500 Zeichen lang sein. | STRING | Ja | N/A |
+| `Dauer` | Die Länge des Videos in Sekunden (Standard: 5). | INT | Ja | 3 bis 15 |
 | `first_frame` | Das Startbild für das Video. Muss mindestens 300x300 Pixel groß sein und ein Seitenverhältnis zwischen 1:2.5 und 2.5:1 aufweisen. | IMAGE | Ja | N/A |
 | `end_frame` | Das Endbild für das Video. Muss mindestens 300x300 Pixel groß sein und ein Seitenverhältnis zwischen 1:2.5 und 2.5:1 aufweisen. | IMAGE | Ja | N/A |
 | `generate_audio` | Steuert, ob Audio für das Video generiert wird (Standard: True). | BOOLEAN | Ja | N/A |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 bis 2147483647 |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 bis 2147483647 |
 
 ### Kling V3 Eingaben
 

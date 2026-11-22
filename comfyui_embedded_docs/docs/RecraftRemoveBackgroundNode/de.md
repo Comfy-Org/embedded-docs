@@ -6,7 +6,7 @@ Dieser Node entfernt den Hintergrund aus Bildern mithilfe des Recraft-API-Dienst
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `image` | Das oder die Eingabebilder, die für die Hintergrundentfernung verarbeitet werden sollen. Jedes Bild im Batch wird einzeln verarbeitet. | IMAGE | Ja | - |
+| `Bild` | Das oder die Eingabebilder, die für die Hintergrundentfernung verarbeitet werden sollen. Jedes Bild im Batch wird einzeln verarbeitet. | IMAGE | Ja | - |
 
 ## Ausgaben
 

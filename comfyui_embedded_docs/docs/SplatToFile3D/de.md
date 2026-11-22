@@ -6,8 +6,8 @@ Der Node SplatToFile3D konvertiert einen Gaussian-Splat in ein File3D-Objekt, da
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `splat` | Die Gaussian-Splat-Daten, die in eine Datei serialisiert werden sollen | SPLAT | Ja | - |
-| `format` | Das Ausgabedateiformat für die 3D-Datei (Standard: "ply"). ply: Standard-3D-Gaussian-Splat mit vollständigen sphärischen Harmonischen. ksplat: mkkellogg SplatBuffer (Level 0, unkomprimiert), nur Basisfarbe. spz: Niantic gzip-komprimiert (~10x kleiner), nur Basisfarbe | COMBO | Ja | "ply"<br>"ksplat"<br>"spz" |
+| `Splat` | Die Gaussian-Splat-Daten, die in eine Datei serialisiert werden sollen | SPLAT | Ja | - |
+| `Format` | Das Ausgabedateiformat für die 3D-Datei (Standard: "ply"). ply: Standard-3D-Gaussian-Splat mit vollständigen sphärischen Harmonischen. ksplat: mkkellogg SplatBuffer (Level 0, unkomprimiert), nur Basisfarbe. spz: Niantic gzip-komprimiert (~10x kleiner), nur Basisfarbe | COMBO | Ja | "ply"<br>"ksplat"<br>"spz" |
 
 Hinweis: Dieser Node unterstützt nur ein Element pro Batch. Wenn der eingegebene Splat mehr als ein Element im Batch enthält, gibt der Node eine Warnung aus und verwendet das erste Element. Wenn ein nicht unterstütztes Format angegeben wird, löst der Node einen Fehler aus.
 

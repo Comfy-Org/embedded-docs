@@ -6,9 +6,9 @@ Der Node `GrowMask` dient dazu, die Größe einer gegebenen Maske zu ändern, in
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `mask` | Die Eingabemaske, die geändert werden soll. Dieser Parameter ist zentral für die Funktionsweise des Nodes und dient als Basis, auf der die Maske entweder erweitert oder verkleinert wird. | MASK |
-| `expand` | Bestimmt das Ausmaß und die Richtung der Maskenänderung. Positive Werte bewirken eine Erweiterung der Maske, während negative Werte zu einer Verkleinerung führen. Dieser Parameter beeinflusst direkt die endgültige Größe der Maske. | INT |
-| `tapered_corners` | Ein boolesches Flag, das, wenn auf True gesetzt, einen Verjüngungseffekt auf die Ecken der Maske während der Änderung anwendet. Diese Option ermöglicht sanftere Übergänge und visuell ansprechendere Ergebnisse. | BOOLEAN |
+| `Maske` | Die Eingabemaske, die geändert werden soll. Dieser Parameter ist zentral für die Funktionsweise des Nodes und dient als Basis, auf der die Maske entweder erweitert oder verkleinert wird. | MASK |
+| `Erweitern` | Bestimmt das Ausmaß und die Richtung der Maskenänderung. Positive Werte bewirken eine Erweiterung der Maske, während negative Werte zu einer Verkleinerung führen. Dieser Parameter beeinflusst direkt die endgültige Größe der Maske. | INT |
+| `Abgeschrägte Ecken` | Ein boolesches Flag, das, wenn auf True gesetzt, einen Verjüngungseffekt auf die Ecken der Maske während der Änderung anwendet. Diese Option ermöglicht sanftere Übergänge und visuell ansprechendere Ergebnisse. | BOOLEAN |
 
 ## Ausgaben
 

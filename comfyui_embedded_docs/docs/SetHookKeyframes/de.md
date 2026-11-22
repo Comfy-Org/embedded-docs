@@ -6,8 +6,8 @@ Der Node Set Hook Keyframes ermöglicht es, Keyframe-Zeitplanung auf vorhandene 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `hooks` | Die Hook-Gruppe, auf die die Keyframe-Zeitplanung angewendet wird | HOOKS | Ja | - |
-| `hook_kf` | Optionale Keyframe-Gruppe mit Timing-Informationen für die Hook-Ausführung | HOOK_KEYFRAMES | Nein | - |
+| `Hooks` | Die Hook-Gruppe, auf die die Keyframe-Zeitplanung angewendet wird | HOOKS | Ja | - |
+| `Hook-Keyframe` | Optionale Keyframe-Gruppe mit Timing-Informationen für die Hook-Ausführung | HOOK_KEYFRAMES | Nein | - |
 
 ## Ausgaben
 

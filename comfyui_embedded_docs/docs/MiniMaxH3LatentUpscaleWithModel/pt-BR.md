@@ -6,10 +6,10 @@ O nó MiniMax H3 Latent Upscale With Model redimensiona a parte de vídeo de um 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo de upscale de latente, geralmente carregado com Load Latent Upscale Model. Precisa ser um upscaler de latente com convolução 3D do MiniMax H3. | LATENT_UPSCALE_MODEL | Sim | - |
-| `samples` | Latente do MiniMax H3 a ser redimensionado. Um latente aninhado mantém sua parte de áudio como está. | LATENT | Sim | - |
-| `width` | Largura alvo do vídeo em pixels. O latente é redimensionado para `width / 16` colunas, então o valor é arredondado para baixo para um múltiplo de 16. (padrão: 2560) | INT | Sim | 32 a 16384 (passo 32) |
-| `height` | Altura alvo do vídeo em pixels, também arredondada para baixo para um múltiplo de 16. (padrão: 1440) | INT | Sim | 32 a 16384 (passo 32) |
+| `modelo` | Modelo de upscale de latente, geralmente carregado com Load Latent Upscale Model. Precisa ser um upscaler de latente com convolução 3D do MiniMax H3. | LATENT_UPSCALE_MODEL | Sim | - |
+| `amostras` | Latente do MiniMax H3 a ser redimensionado. Um latente aninhado mantém sua parte de áudio como está. | LATENT | Sim | - |
+| `largura` | Largura alvo do vídeo em pixels. O latente é redimensionado para `width / 16` colunas, então o valor é arredondado para baixo para um múltiplo de 16. (padrão: 2560) | INT | Sim | 32 a 16384 (passo 32) |
+| `altura` | Altura alvo do vídeo em pixels, também arredondada para baixo para um múltiplo de 16. (padrão: 1440) | INT | Sim | 32 a 16384 (passo 32) |
 
 Quando o tamanho solicitado já corresponde ao latente, o latente de entrada é retornado sem alterações. O latente redimensionado não carrega `noise_mask`, então um latente parcialmente mascarado perde sua máscara. A rede executa suas convoluções 3D em fatias temporais, o que mantém o uso de memória em clipes longos próximo ao de uma única fatia.
 

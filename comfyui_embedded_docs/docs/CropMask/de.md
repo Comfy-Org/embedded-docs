@@ -6,11 +6,11 @@ Der CropMask-Node dient zum Zuschneiden eines angegebenen Bereichs aus einer geg
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `mask` | Die Maskeingabe stellt das zuzuschneidende Maskenbild dar. Sie ist erforderlich, um den zu extrahierenden Bereich anhand der angegebenen Koordinaten und Abmessungen festzulegen. | MASK |
+| `Maske` | Die Maskeingabe stellt das zuzuschneidende Maskenbild dar. Sie ist erforderlich, um den zu extrahierenden Bereich anhand der angegebenen Koordinaten und Abmessungen festzulegen. | MASK |
 | `x` | Die x-Koordinate gibt den Startpunkt auf der horizontalen Achse an, an dem das Zuschneiden beginnen soll. | INT |
 | `y` | Die y-Koordinate bestimmt den Startpunkt auf der vertikalen Achse für den Zuschneidevorgang. | INT |
-| `width` | Die Breite definiert die horizontale Ausdehnung des Zuschneidebereichs ab dem Startpunkt. | INT |
-| `height` | Die Höhe gibt die vertikale Ausdehnung des Zuschneidebereichs ab dem Startpunkt an. | INT |
+| `Breite` | Die Breite definiert die horizontale Ausdehnung des Zuschneidebereichs ab dem Startpunkt. | INT |
+| `Höhe` | Die Höhe gibt die vertikale Ausdehnung des Zuschneidebereichs ab dem Startpunkt an. | INT |
 
 ## Ausgaben
 

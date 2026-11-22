@@ -6,10 +6,10 @@ Der Node ConditioningStableAudio fügt sowohl positiven als auch negativen Condi
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `positive` | Die positive Conditioning-Eingabe, die mit Audio-Zeitinformationen modifiziert werden soll | CONDITIONING | Ja | - |
-| `negative` | Die negative Conditioning-Eingabe, die mit Audio-Zeitinformationen modifiziert werden soll | CONDITIONING | Ja | - |
-| `seconds_start` | Die Startzeit in Sekunden für die Audiogenerierung (Standard: 0.0) | FLOAT | Ja | 0.0 bis 1000.0 (Schrittweite 0.1) |
-| `seconds_total` | Die Gesamtdauer in Sekunden für die Audiogenerierung (Standard: 47.0) | FLOAT | Ja | 0.0 bis 1000.0 (Schrittweite 0.1) |
+| `Positiv` | Die positive Conditioning-Eingabe, die mit Audio-Zeitinformationen modifiziert werden soll | CONDITIONING | Ja | - |
+| `Negativ` | Die negative Conditioning-Eingabe, die mit Audio-Zeitinformationen modifiziert werden soll | CONDITIONING | Ja | - |
+| `Startsekunden` | Die Startzeit in Sekunden für die Audiogenerierung (Standard: 0.0) | FLOAT | Ja | 0.0 bis 1000.0 (Schrittweite 0.1) |
+| `Gesamtsekunden` | Die Gesamtdauer in Sekunden für die Audiogenerierung (Standard: 47.0) | FLOAT | Ja | 0.0 bis 1000.0 (Schrittweite 0.1) |
 
 ## Ausgaben
 

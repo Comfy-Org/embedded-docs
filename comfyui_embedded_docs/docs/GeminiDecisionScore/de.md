@@ -11,8 +11,8 @@ Bewerten Sie den Text, die Bilder, das Audio oder das Video, das Sie verbinden, 
 | `threshold` | `result` ist true, wenn die Punktzahl mindestens diesem Wert entspricht. Saubere, scharfe Bilder erreichen etwa 7 bis 8, stark beschädigte etwa 3 bis 5 (Standard: 6.0). | FLOAT | Ja | 1.0 bis 10.0 (Schritt: 0.1) |
 | `images` | Zu bewertende Bilder, bis zu 16 über die erweiterbaren Slots (`image_1` ... `image_16`). Ein gebündeltes Bild zählt einmal pro enthaltenem Bild. | IMAGE | Nein | Bis zu 16 Bilder |
 | `audio` | Zu bewertender Audioclip. | AUDIO | Nein | - |
-| `video` | Zu bewertender Videoclip. | VIDEO | Nein | - |
-| `text` | Text, auf den sich die Frage bezieht, etwa ein Prompt oder eine LLM-Antwort, bis zu 20000 Zeichen. | STRING | Nein | Bis zu 20000 Zeichen |
+| `Video` | Zu bewertender Videoclip. | VIDEO | Nein | - |
+| `Text` | Text, auf den sich die Frage bezieht, etwa ein Prompt oder eine LLM-Antwort, bis zu 20000 Zeichen. | STRING | Nein | Bis zu 20000 Zeichen |
 
 Verbinden Sie mindestens eines von `text`, `images`, `audio` oder `video`; der Node gibt einen Fehler aus, wenn nichts zu bewerten ist. Bei mehreren Bildern benennen Sie diese innerhalb der Frage als `image_1`, `image_2` und so weiter.
 

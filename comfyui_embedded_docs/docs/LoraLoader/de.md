@@ -16,7 +16,7 @@ Wenn Sie mehrere LoRA-Modelle laden möchten, können Sie mehrere Nodes direkt h
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `model` | Wird normalerweise verwendet, um eine Verbindung zum Basismodell herzustellen | MODEL |
+| `Modell` | Wird normalerweise verwendet, um eine Verbindung zum Basismodell herzustellen | MODEL |
 | `clip` | Wird normalerweise verwendet, um eine Verbindung zum CLIP-Modell herzustellen | CLIP |
 | `lora_name` | Wählen Sie den Namen des zu verwendenden LoRA-Modells aus | COMBO[STRING] |
 | `strength_model` | Wertebereich von -100.0 bis 100.0, für die tägliche Bilderzeugung typischerweise zwischen 0~1 verwendet. Höhere Werte führen zu deutlicheren Anpassungseffekten des Modells | FLOAT |

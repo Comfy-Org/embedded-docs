@@ -8,14 +8,14 @@ Gere um vídeo de um avatar HeyGen falando com o Avatar 6. Escolha uma das apar�
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Seletor de modelo. `"heygen-avatar-6-turbo"` é o nível mais barato e rápido; ambos os modelos aceitam as mesmas entradas e resoluções. | COMBO | Sim | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `modelo` | Seletor de modelo. `"heygen-avatar-6-turbo"` é o nível mais barato e rápido; ambos os modelos aceitam as mesmas entradas e resoluções. | COMBO | Sim | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
 | `avatar` | Aparência do avatar a ser exibida. As 19 aparências integradas compatíveis com o Avatar 6 são listadas diretamente; `custom avatar` revela `custom_avatar_id` para uma aparência que você criou no HeyGen. | DYNAMIC_COMBO | Sim | 19 aparências integradas<br>`custom avatar` |
-| `speech` | Conduza o avatar com um roteiro de texto (conversão de texto em fala do HeyGen) ou com seu próprio áudio. Nome de exibição: origem da fala. | DYNAMIC_COMBO | Sim | `"script"`<br>`"audio"` |
-| `resolution` | Resolução do vídeo de saída. Padrão: `"1080p"`. | COMBO | Sim | `"1080p"`<br>`"2k"` |
-| `aspect_ratio` | Proporção do vídeo de saída. `"auto"` segue a filmagem da própria aparência do avatar. Padrão: `"auto"`. | COMBO | Sim | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `motion_prompt` | Direcionamento opcional para gestos, expressão, postura e movimento de câmera. Padrão: string vazia. | STRING | Sim | Texto multilinha |
-| `motion_expressiveness` | `"less"` fornece menos gestos e de menor amplitude. O prompt de movimento tem precedência onde os dois se sobrepõem. Padrão: `"default"`. | COMBO | Sim | `"less"`<br>`"default"` |
-| `seed` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Sim | 0 a 2147483647 |
+| `fala` | Conduza o avatar com um roteiro de texto (conversão de texto em fala do HeyGen) ou com seu próprio áudio. Nome de exibição: origem da fala. | DYNAMIC_COMBO | Sim | `"script"`<br>`"audio"` |
+| `resolução` | Resolução do vídeo de saída. Padrão: `"1080p"`. | COMBO | Sim | `"1080p"`<br>`"2k"` |
+| `proporção_da_tela` | Proporção do vídeo de saída. `"auto"` segue a filmagem da própria aparência do avatar. Padrão: `"auto"`. | COMBO | Sim | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `prompt_de_movimento` | Direcionamento opcional para gestos, expressão, postura e movimento de câmera. Padrão: string vazia. | STRING | Sim | Texto multilinha |
+| `expressividade_de_movimento` | `"less"` fornece menos gestos e de menor amplitude. O prompt de movimento tem precedência onde os dois se sobrepõem. Padrão: `"default"`. | COMBO | Sim | `"less"`<br>`"default"` |
+| `semente` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Sim | 0 a 2147483647 |
 
 ### Entradas de `custom avatar`
 

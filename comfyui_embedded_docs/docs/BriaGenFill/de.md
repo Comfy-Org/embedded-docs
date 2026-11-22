@@ -10,9 +10,9 @@
 | `mask` | Weiße Bereiche werden mit generiertem Inhalt gefüllt, schwarze Bereiche bleiben erhalten. Die Maske wird vor dem Senden mit einem Schwellenwert von 50 % binarisiert: Nur Bereiche, die mit mehr als 50 % Deckkraft markiert sind, gelten als weiß. Muss dasselbe Seitenverhältnis wie das Bild haben. | MASK | Ja | - |
 | `prompt` | Beschreibung dessen, was innerhalb des maskierten Bereichs generiert werden soll. Muss mindestens 1 Zeichen enthalten. (Standard: "") | STRING | Ja | - |
 | `negative_prompt` | Ein Prompt, der Inhalte beschreibt, die im generierten Ergebnis vermieden werden sollen. Wenn er leer gelassen wird, wird er nicht an die API gesendet. (Standard: "") | STRING | Ja | - |
-| `refine_prompt` | Den Prompt automatisch für bessere Ergebnisse anpassen; deaktivieren, um den Prompt genau wie geschrieben zu verwenden. (Standard: true) | BOOLEAN | Ja | true<br>false |
-| `seed` | Seed für den Generierungsprozess. (Standard: 42) | INT | Ja | 1 bis 2147483647 |
-| `moderation` | Moderationseinstellungen. Wenn auf "true" gesetzt, werden die untenstehenden Moderationsoptionen angewendet. (Standard: "false") | DYNAMIC_COMBO | Ja | "false"<br>"true" |
+| `Prompt verfeinern` | Den Prompt automatisch für bessere Ergebnisse anpassen; deaktivieren, um den Prompt genau wie geschrieben zu verwenden. (Standard: true) | BOOLEAN | Ja | true<br>false |
+| `Seed` | Seed für den Generierungsprozess. (Standard: 42) | INT | Ja | 1 bis 2147483647 |
+| `Moderation` | Moderationseinstellungen. Wenn auf "true" gesetzt, werden die untenstehenden Moderationsoptionen angewendet. (Standard: "false") | DYNAMIC_COMBO | Ja | "false"<br>"true" |
 
 ### Moderations-Eingaben (wenn `moderation` = "true")
 

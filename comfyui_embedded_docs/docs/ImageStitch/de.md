@@ -6,12 +6,12 @@ Dieser Node ermöglicht es Ihnen, zwei Bilder in einer angegebenen Richtung (obe
 
 | Parametername | Beschreibung | Datentyp | Eingabetyp | Standard | Bereich |
 | --- | --- | --- | --- | --- | --- |
-| `image1` | Das erste Bild, das zusammengefügt werden soll | IMAGE | Erforderlich | - | - |
-| `image2` | Das zweite Bild, das zusammengefügt werden soll; wenn nicht angegeben, wird nur das erste Bild zurückgegeben | IMAGE | Optional | None | - |
-| `direction` | Die Richtung zum Zusammenfügen des zweiten Bildes: right, down, left oder up | STRING | Erforderlich | right | right/down/left/up |
-| `match_image_size` | Ob die Größe des zweiten Bildes angepasst werden soll, damit es den Abmessungen des ersten Bildes entspricht | BOOLEAN | Erforderlich | True | True/False |
-| `spacing_width` | Breite des Abstands zwischen den Bildern; muss eine gerade Zahl sein | INT | Erforderlich | 0 | 0-1024 |
-| `spacing_color` | Farbe des Abstands zwischen zusammengefügten Bildern | STRING | Erforderlich | white | white/black/red/green/blue |
+| `Bild 1` | Das erste Bild, das zusammengefügt werden soll | IMAGE | Erforderlich | - | - |
+| `Bild 2` | Das zweite Bild, das zusammengefügt werden soll; wenn nicht angegeben, wird nur das erste Bild zurückgegeben | IMAGE | Optional | None | - |
+| `Richtung` | Die Richtung zum Zusammenfügen des zweiten Bildes: right, down, left oder up | STRING | Erforderlich | right | right/down/left/up |
+| `Bildgrößen abgleichen` | Ob die Größe des zweiten Bildes angepasst werden soll, damit es den Abmessungen des ersten Bildes entspricht | BOOLEAN | Erforderlich | True | True/False |
+| `Abstandsbreite` | Breite des Abstands zwischen den Bildern; muss eine gerade Zahl sein | INT | Erforderlich | 0 | 0-1024 |
+| `Abstandsfarbe` | Farbe des Abstands zwischen zusammengefügten Bildern | STRING | Erforderlich | white | white/black/red/green/blue |
 
 > Bei `spacing_color`: Wenn andere Farben als "white/black" verwendet werden und `match_image_size` auf `false` gesetzt ist, wird der Padding-Bereich mit black gefüllt
 

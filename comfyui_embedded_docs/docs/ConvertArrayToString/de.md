@@ -6,8 +6,8 @@ Der Node „Convert Array to String“ nimmt ein Array (eine Liste) von Elemente
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `array` | Das Array, das in einen JSON-String konvertiert werden soll | ARRAY | Ja | - |
-| `indent` | Leerzeichen pro Einrückungsebene. 0 erzeugt eine kompakte einzeilige Zeichenkette (Standard: 2) | INT | Nein | 0 bis 8 |
+| `Array` | Das Array, das in einen JSON-String konvertiert werden soll | ARRAY | Ja | - |
+| `Einrückung` | Leerzeichen pro Einrückungsebene. 0 erzeugt eine kompakte einzeilige Zeichenkette (Standard: 2) | INT | Nein | 0 bis 8 |
 
 ## Ausgaben
 

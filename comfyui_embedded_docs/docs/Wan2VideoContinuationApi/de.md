@@ -8,12 +8,12 @@ Der Wan 2.7 Video Continuation-Node erzeugt ein neues Videosegment, das an das E
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `model` | Das zu verwendende Videogenerierungsmodell. Die ausgewählte Option bestimmt, welche zusätzlichen Einstellungen unten angezeigt werden. | DYNAMIC_COMBO | Ja | `"wan2.7-i2v"` |
+| `Modell` | Das zu verwendende Videogenerierungsmodell. Die ausgewählte Option bestimmt, welche zusätzlichen Einstellungen unten angezeigt werden. | DYNAMIC_COMBO | Ja | `"wan2.7-i2v"` |
 | `first_clip` | Eingabevideo, von dem aus fortgesetzt wird. Dauer: 2s-10s. Das Seitenverhältnis der Ausgabe wird aus diesem Video abgeleitet. | VIDEO | Ja | 2s bis 10s |
 | `last_frame` | Bild des letzten Frames. Die Fortsetzung wird zu diesem Frame überleiten. | IMAGE | Nein | - |
-| `seed` | Seed, der für die Generierung verwendet werden soll. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
+| `Seed` | Seed, der für die Generierung verwendet werden soll. (Standard: 0) | INT | Ja | 0 bis 2147483647 |
 | `prompt_extend` | Ob der Prompt mit KI-Unterstützung erweitert werden soll. (Standard: True) | BOOLEAN | Ja | - |
-| `watermark` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll. (Standard: False) | BOOLEAN | Ja | - |
+| `Wasserzeichen` | Ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll. (Standard: False) | BOOLEAN | Ja | - |
 
 ### wan2.7-i2v Eingaben
 

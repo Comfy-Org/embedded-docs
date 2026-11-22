@@ -7,9 +7,9 @@ Der Node SetClipHooks ermöglicht es Ihnen, benutzerdefinierte Hooks auf ein CLI
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `clip` | Das CLIP-Modell, auf das Hooks angewendet werden sollen | CLIP | Ja | - |
-| `apply_to_conds` | Ob Hooks auf Conditioning-Ausgaben angewendet werden sollen (Standard: True) | BOOLEAN | Ja | - |
-| `schedule_clip` | Ob CLIP-Scheduling aktiviert werden soll (Standard: False) | BOOLEAN | Ja | - |
-| `hooks` | Optionale Hook-Gruppe, die auf das CLIP-Modell angewendet werden soll | HOOKS | Nein | - |
+| `Auf Konditionierungen anwenden` | Ob Hooks auf Conditioning-Ausgaben angewendet werden sollen (Standard: True) | BOOLEAN | Ja | - |
+| `CLIP planen` | Ob CLIP-Scheduling aktiviert werden soll (Standard: False) | BOOLEAN | Ja | - |
+| `Hooks` | Optionale Hook-Gruppe, die auf das CLIP-Modell angewendet werden soll | HOOKS | Nein | - |
 
 ## Ausgaben
 

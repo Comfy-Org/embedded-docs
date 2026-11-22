@@ -10,9 +10,9 @@ Der Selektor `moderation` blendet zusätzliche Moderationsoptionen ein, wenn er 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das freizustellende Bild. | IMAGE | Ja | - |
-| `prompt` | Was beibehalten werden soll und optional, was entfernt oder eingeschränkt werden soll, z. B. „die Person mit der Matte und der Pflanze“, „die Frau an ihrem Schreibtisch ohne die Lampe“ oder „nur der Stuhl“. Darf nicht leer sein. Wenn nichts auf den Prompt passt, ist das Ergebnis vollständig transparent. Standard: `""` (leerer String). | STRING | Ja | 1 Zeichen oder mehr |
-| `moderation` | Moderationseinstellungen. Wenn auf `"true"` gesetzt, werden die unten aufgeführten visuellen Moderationsflags verfügbar. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
+| `Bild` | Das freizustellende Bild. | IMAGE | Ja | - |
+| `Prompt` | Was beibehalten werden soll und optional, was entfernt oder eingeschränkt werden soll, z. B. „die Person mit der Matte und der Pflanze“, „die Frau an ihrem Schreibtisch ohne die Lampe“ oder „nur der Stuhl“. Darf nicht leer sein. Wenn nichts auf den Prompt passt, ist das Ergebnis vollständig transparent. Standard: `""` (leerer String). | STRING | Ja | 1 Zeichen oder mehr |
+| `Moderation` | Moderationseinstellungen. Wenn auf `"true"` gesetzt, werden die unten aufgeführten visuellen Moderationsflags verfügbar. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
 
 ### Moderation "true" Eingaben
 

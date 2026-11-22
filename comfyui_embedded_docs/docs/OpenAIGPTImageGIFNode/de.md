@@ -10,7 +10,7 @@ OpenAI GPT Image 2.6 GIF erzeugt aus einem Prompt mit den GPT Image-Modellen von
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Range |
 | --- | --- | --- | --- | --- |
-| `model` | Das GPT Image-Modell, das für die Animation verwendet werden soll. | DYNAMIC_COMBO | Ja | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
+| `Modell` | Das GPT Image-Modell, das für die Animation verwendet werden soll. | DYNAMIC_COMBO | Ja | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
 
 ### gpt-image-2.6-flare und gpt-image-2.6-sunburst Eingaben
 
@@ -18,14 +18,14 @@ Beide Modelle verwenden dieselben Parameter.
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Range |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Was animiert werden soll. (Standard: `""`) | STRING | Ja | N/A |
-| `model.size` | Größe jedes Frames. Größere Größen lassen nur niedrigere Frame-Anzahlen zu. (Standard: `"512x512"`) | COMBO | Ja | `"384x384"`<br>`"512x512"`<br>`"640x640"`<br>`"720x720"`<br>`"768x768"`<br>`"960x960"`<br>`"512x288"`<br>`"288x512"`<br>`"1024x576"`<br>`"576x1024"`<br>`"1280x720"`<br>`"720x1280"` |
-| `model.frame_count` | Anzahl der Frames. Frames werden in Stufen abgerechnet: 2 bis 8, 9, 10 bis 12, 13 bis 16. (Standard: `9`) | INT | Ja | 2 bis 16 |
-| `model.frame_duration_ms` | Wie lange jeder Frame angezeigt wird, in Millisekunden. (Standard: `200`) | INT | Ja | 20 bis 2000 (Schritt: 10) |
-| `model.background` | Frame-Hintergrund. Transparenz wird von Save WEBM mit vp9, Save Animated WEBP und Save Animated PNG beibehalten. (Standard: `"opaque"`) | COMBO | Ja | `"opaque"`<br>`"transparent"` |
-| `model.quality` | Bildqualität. Höhere Stufen kosten mehr und dauern länger. (Standard: `"low"`) | COMBO | Ja | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | Wie stark das Modell die Animation vor dem Rendern plant. (Standard: `"high"`) | COMBO | Ja | `"low"`<br>`"medium"`<br>`"high"` |
-| `model.seed` | Steuert, ob der Knoten erneut ausgeführt wird; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: `42`) | INT | Ja | 0 bis 2147483647 |
+| `Prompt` | Was animiert werden soll. (Standard: `""`) | STRING | Ja | N/A |
+| `Größe` | Größe jedes Frames. Größere Größen lassen nur niedrigere Frame-Anzahlen zu. (Standard: `"512x512"`) | COMBO | Ja | `"384x384"`<br>`"512x512"`<br>`"640x640"`<br>`"720x720"`<br>`"768x768"`<br>`"960x960"`<br>`"512x288"`<br>`"288x512"`<br>`"1024x576"`<br>`"576x1024"`<br>`"1280x720"`<br>`"720x1280"` |
+| `frame_count` | Anzahl der Frames. Frames werden in Stufen abgerechnet: 2 bis 8, 9, 10 bis 12, 13 bis 16. (Standard: `9`) | INT | Ja | 2 bis 16 |
+| `frame_duration_ms` | Wie lange jeder Frame angezeigt wird, in Millisekunden. (Standard: `200`) | INT | Ja | 20 bis 2000 (Schritt: 10) |
+| `Hintergrund` | Frame-Hintergrund. Transparenz wird von Save WEBM mit vp9, Save Animated WEBP und Save Animated PNG beibehalten. (Standard: `"opaque"`) | COMBO | Ja | `"opaque"`<br>`"transparent"` |
+| `Qualität` | Bildqualität. Höhere Stufen kosten mehr und dauern länger. (Standard: `"low"`) | COMBO | Ja | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `Komplexität` | Wie stark das Modell die Animation vor dem Rendern plant. (Standard: `"high"`) | COMBO | Ja | `"low"`<br>`"medium"`<br>`"high"` |
+| `Seed` | Steuert, ob der Knoten erneut ausgeführt wird; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: `42`) | INT | Ja | 0 bis 2147483647 |
 
 **Parametereinschränkungen und -beschränkungen:**
 

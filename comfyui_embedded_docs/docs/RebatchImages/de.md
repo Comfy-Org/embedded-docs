@@ -6,7 +6,7 @@ Der RebatchImages-Node dient dazu, einen Batch von Bildern in eine neue Batch-Ko
 
 | Feld | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `images` | Eine Liste von Bildern, die neu gebatcht werden sollen. Dieser Parameter ist entscheidend, um die Eingabedaten zu bestimmen, die dem Rebatching-Prozess unterzogen werden. | `IMAGE` |
+| `Bilder` | Eine Liste von Bildern, die neu gebatcht werden sollen. Dieser Parameter ist entscheidend, um die Eingabedaten zu bestimmen, die dem Rebatching-Prozess unterzogen werden. | `IMAGE` |
 | `batch_size` | Gibt die gewünschte Größe der Ausgabe-Batches an. Dieser Parameter beeinflusst direkt, wie die Eingabebilder gruppiert und verarbeitet werden, und wirkt sich auf die Struktur der Ausgabe aus. | `INT` |
 
 ## Ausgaben

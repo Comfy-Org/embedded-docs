@@ -6,7 +6,7 @@ Der LoadImage-Node dient zum Laden und Vorverarbeiten von Bildern von einem ange
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `image` | Der Parameter `image` gibt die Kennung des zu ladenden und zu verarbeitenden Bildes an. Er ist entscheidend, um den Pfad zur Bilddatei zu bestimmen und anschließend das Bild zum Transformieren und Normalisieren zu laden. | COMBO[STRING] |
+| `Bild` | Der Parameter `image` gibt die Kennung des zu ladenden und zu verarbeitenden Bildes an. Er ist entscheidend, um den Pfad zur Bilddatei zu bestimmen und anschließend das Bild zum Transformieren und Normalisieren zu laden. | COMBO[STRING] |
 
 ## Ausgaben
 

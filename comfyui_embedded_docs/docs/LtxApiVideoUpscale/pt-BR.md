@@ -6,9 +6,9 @@ Aumenta a resolução de um vídeo para 1080p, 4K ou 8K, mantendo sua proporçã
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `video` | Vídeo para aumentar a resolução, com o lado menor de pelo menos 480 pixels e no máximo 7680x4320 em qualquer orientação. Até 2401 quadros para 1080p, 601 quadros para 4K e 241 quadros para 8K. | VIDEO | Sim | - |
-| `resolution` | Tamanho de saída, o maior possível que caiba em 1920x1080, 3840x2160 ou 7680x4320 e rotacionado para vídeos em retrato. Padrão: `"4k"`. | COMBO | Sim | `"1080p"`<br>`"4k"`<br>`"8k"` |
-| `seed` | Controla se o nó é executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Não | 0 a 4294967295 |
+| `vídeo` | Vídeo para aumentar a resolução, com o lado menor de pelo menos 480 pixels e no máximo 7680x4320 em qualquer orientação. Até 2401 quadros para 1080p, 601 quadros para 4K e 241 quadros para 8K. | VIDEO | Sim | - |
+| `resolução` | Tamanho de saída, o maior possível que caiba em 1920x1080, 3840x2160 ou 7680x4320 e rotacionado para vídeos em retrato. Padrão: `"4k"`. | COMBO | Sim | `"1080p"`<br>`"4k"`<br>`"8k"` |
+| `semente` | Controla se o nó é executado novamente; os resultados são não determinísticos independentemente da seed. Padrão: 42. | INT | Não | 0 a 4294967295 |
 
 ## Saídas
 

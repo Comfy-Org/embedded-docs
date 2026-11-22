@@ -8,7 +8,7 @@ PixVerse V6 Fusion (Referenz zu Video) erstellt mit PixVerse ein Video aus Refer
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modell- und Generierungseinstellungen. Wählt das Modell aus und zeigt seine Generierungseinstellungen unten an. Die einzige verfügbare Option ist "PixVerse V6". | DYNAMIC_COMBO | Ja | "PixVerse V6" |
+| `Modell` | Modell- und Generierungseinstellungen. Wählt das Modell aus und zeigt seine Generierungseinstellungen unten an. Die einzige verfügbare Option ist "PixVerse V6". | DYNAMIC_COMBO | Ja | "PixVerse V6" |
 
 ### PixVerse V6 Eingaben
 
@@ -27,9 +27,9 @@ PixVerse V6 Fusion (Referenz zu Video) erstellt mit PixVerse ein Video aus Refer
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `subjects` | Erweiterbarer Slot: Verbinden Sie Referenzbilder der Subjekte, die in der Szene platziert werden sollen. Slots heißen subject1 bis subject8; verweisen Sie im Prompt als @Subject1, @Subject2 usw. auf sie. | IMAGE | Nein | 0 bis 8 Bilder |
-| `backgrounds` | Erweiterbarer Slot: Verbinden Sie Referenzbilder der Szene, in die die Subjekte platziert werden. Slots heißen background1 bis background2; verweisen Sie im Prompt als @Background1, @Background2 auf sie. | IMAGE | Nein | 0 bis 2 Bilder |
-| `videos` | Erweiterbarer Slot: Verbinden Sie Referenzvideos, um Subjekte, Bewegung, Bildkomposition oder Stil daraus zu übernehmen. Slots heißen video1 bis video2; verweisen Sie im Prompt als @Video1, @Video2 auf sie. Jedes Video darf höchstens 15 Sekunden lang sein, und die Gesamtdauer darf 15 Sekunden nicht überschreiten. Das Verbinden mindestens eines Videos schaltet den Node in den Omni-Modus um. | VIDEO | Nein | 0 bis 2 Videos<br>max. 15 Sekunden je<br>15 Sekunden insgesamt |
+| `Motive` | Erweiterbarer Slot: Verbinden Sie Referenzbilder der Subjekte, die in der Szene platziert werden sollen. Slots heißen subject1 bis subject8; verweisen Sie im Prompt als @Subject1, @Subject2 usw. auf sie. | IMAGE | Nein | 0 bis 8 Bilder |
+| `Hintergründe` | Erweiterbarer Slot: Verbinden Sie Referenzbilder der Szene, in die die Subjekte platziert werden. Slots heißen background1 bis background2; verweisen Sie im Prompt als @Background1, @Background2 auf sie. | IMAGE | Nein | 0 bis 2 Bilder |
+| `Videos` | Erweiterbarer Slot: Verbinden Sie Referenzvideos, um Subjekte, Bewegung, Bildkomposition oder Stil daraus zu übernehmen. Slots heißen video1 bis video2; verweisen Sie im Prompt als @Video1, @Video2 auf sie. Jedes Video darf höchstens 15 Sekunden lang sein, und die Gesamtdauer darf 15 Sekunden nicht überschreiten. Das Verbinden mindestens eines Videos schaltet den Node in den Omni-Modus um. | VIDEO | Nein | 0 bis 2 Videos<br>max. 15 Sekunden je<br>15 Sekunden insgesamt |
 
 Hinweis: Verbinden Sie mindestens ein Subjekt, einen Hintergrund oder ein Referenzvideo. Referenz-Tags im Prompt (zum Beispiel @Subject1, @Background1, @Video1) müssen mit verbundenen Slots übereinstimmen, andernfalls wird die Anfrage abgelehnt. Wenn mindestens ein Referenzvideo verbunden ist (Omni-Modus), entspricht die Ausgabelänge dem längsten Referenzvideo, `duration_seconds` wird ignoriert, `aspect_ratio` kann auf "auto" gesetzt werden, und es werden bis zu 10 Referenzbilder akzeptiert. Ohne Referenzvideo werden höchstens 7 Referenzbilder (Subjekte und Hintergründe zusammen) akzeptiert, und das Seitenverhältnis "auto" ist nicht erlaubt.
 

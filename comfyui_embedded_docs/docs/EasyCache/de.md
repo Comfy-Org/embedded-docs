@@ -6,7 +6,7 @@ Der EasyCache-Node fügt einem Diffusionsmodell ein natives Caching-System hinzu
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Modell, dem EasyCache hinzugefügt werden soll. | MODEL | Ja | - |
+| `Modell` | Das Modell, dem EasyCache hinzugefügt werden soll. | MODEL | Ja | - |
 | `reuse_threshold` | Der Schwellenwert für die Wiederverwendung zwischengespeicherter Schritte (Standard: 0.2). | FLOAT | Ja | 0.0 - 3.0 |
 | `start_percent` | Der relative Sampling-Schritt, bei dem die Verwendung von EasyCache beginnt (Standard: 0.15). | FLOAT | Ja | 0.0 - 1.0 |
 | `end_percent` | Der relative Sampling-Schritt, bei dem die Verwendung von EasyCache endet (Standard: 0.95). | FLOAT | Ja | 0.0 - 1.0 |

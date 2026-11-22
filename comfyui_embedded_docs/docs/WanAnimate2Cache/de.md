@@ -6,7 +6,7 @@ Die Aktivierungen des Pose-Videos werden pro Block einmalig zwischengespeichert,
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das Wan Animate2-Modell, an das der Cache angehängt wird. | MODEL | Ja | |
+| `Modell` | Das Wan Animate2-Modell, an das der Cache angehängt wird. | MODEL | Ja | |
 | `device` | Wo der Cache gehalten werden soll. cpu (RAM) ist die sichere Wahl; der Cache passt bei typischen Größen nicht zusammen mit dem Modell in den VRAM. gpu (VRAM) kann schneller sein, wenn der Cache hineinpasst. (Standard: "cpu") | STRING | Ja | "cpu"<br>"gpu" |
 | `dtype` | Speicherpräzision. Der Wert default speichert die Aktivierungen im Compute-Datentyp des Modells. int8 halbiert den Cache, int4 viertelt ihn, convrot wird verwendet, um die Genauigkeit zu erhalten. (Standard: "default") | STRING | Ja | "default"<br>"int8"<br>"int4" |
 

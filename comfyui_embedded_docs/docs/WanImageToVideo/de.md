@@ -6,12 +6,12 @@ Der WanImageToVideo-Node bereitet Conditioning- und Latent-Repräsentationen fü
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `positive` | Positive Conditioning-Eingabe, die zur Steuerung der Generierung verwendet wird | CONDITIONING | Ja | - |
-| `negative` | Negative Conditioning-Eingabe, die zur Steuerung der Generierung verwendet wird | CONDITIONING | Ja | - |
+| `Positiv` | Positive Conditioning-Eingabe, die zur Steuerung der Generierung verwendet wird | CONDITIONING | Ja | - |
+| `Negativ` | Negative Conditioning-Eingabe, die zur Steuerung der Generierung verwendet wird | CONDITIONING | Ja | - |
 | `vae` | VAE-Modell, das verwendet wird, um Bilder in den latenten Raum zu kodieren | VAE | Ja | - |
-| `width` | Breite des generierten Videos (Standard: 832, Schritt: 16) | INT | Ja | 16 bis MAX_RESOLUTION |
-| `height` | Höhe des generierten Videos (Standard: 480, Schritt: 16) | INT | Ja | 16 bis MAX_RESOLUTION |
-| `length` | Anzahl der Frames im Video (Standard: 81, Schritt: 4) | INT | Ja | 1 bis MAX_RESOLUTION |
+| `Breite` | Breite des generierten Videos (Standard: 832, Schritt: 16) | INT | Ja | 16 bis MAX_RESOLUTION |
+| `Höhe` | Höhe des generierten Videos (Standard: 480, Schritt: 16) | INT | Ja | 16 bis MAX_RESOLUTION |
+| `Länge` | Anzahl der Frames im Video (Standard: 81, Schritt: 4) | INT | Ja | 1 bis MAX_RESOLUTION |
 | `batch_size` | Anzahl der Videos, die in einem Batch generiert werden (Standard: 1) | INT | Ja | 1 bis 4096 |
 | `clip_vision_output` | Optionale CLIP-Vision-Ausgabe, die als zusätzliches Conditioning zu den positiven und negativen Eingaben hinzugefügt wird | CLIP_VISION_OUTPUT | Nein | - |
 | `start_image` | Optionales Startbild, das zum Initialisieren des Videos verwendet wird. Wenn angegeben, wird es auf die festgelegte `width` und `height` skaliert und an den Anfang der Frame-Sequenz gesetzt; alle Frames über `length` hinaus werden ignoriert. Die verbleibenden Frames werden mit neutralen Grauwerten (0,5) gefüllt, sofern `ref_pad_image` nicht angegeben ist. | IMAGE | Nein | - |

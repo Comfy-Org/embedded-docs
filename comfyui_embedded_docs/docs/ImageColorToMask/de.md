@@ -6,8 +6,8 @@ Der Node `ImageColorToMask` ist darauf ausgelegt, eine angegebene Farbe in einem
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `image` | Der Parameter `image` repräsentiert das zu verarbeitende Eingabebild. Er ist entscheidend, um die Bereiche des Bildes zu bestimmen, die der angegebenen Farbe entsprechen und in eine Maske umgewandelt werden sollen. | `IMAGE` |
-| `color` | Der Parameter `color` gibt die Zielfarbe im Bild an, die in eine Maske umgewandelt werden soll. Er spielt eine entscheidende Rolle beim Identifizieren der spezifischen Farbbereiche, die in der resultierenden Maske hervorgehoben werden sollen. | `INT` |
+| `Bild` | Der Parameter `image` repräsentiert das zu verarbeitende Eingabebild. Er ist entscheidend, um die Bereiche des Bildes zu bestimmen, die der angegebenen Farbe entsprechen und in eine Maske umgewandelt werden sollen. | `IMAGE` |
+| `Farbe` | Der Parameter `color` gibt die Zielfarbe im Bild an, die in eine Maske umgewandelt werden soll. Er spielt eine entscheidende Rolle beim Identifizieren der spezifischen Farbbereiche, die in der resultierenden Maske hervorgehoben werden sollen. | `INT` |
 
 ## Ausgaben
 

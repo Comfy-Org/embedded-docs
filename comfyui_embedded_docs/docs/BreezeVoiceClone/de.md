@@ -6,9 +6,9 @@ Erstellt eine Breeze-Stimme aus einer Aufnahme eines einzelnen Sprechers. Die St
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `audio` | Aufnahme eines einzelnen Sprechers, mindestens 3 Sekunden lang. Nur die ersten 60 Sekunden werden verwendet. | AUDIO | Ja | - |
-| `remove_background_noise` | Bereinigt die Aufnahme vor dem Klonen. Standard: false. | BOOLEAN | Nein | true<br>false |
-| `seed` | Steuert, ob der Node erneut ausgeführt wird; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Nein | 0 bis 2147483647 |
+| `Audio` | Aufnahme eines einzelnen Sprechers, mindestens 3 Sekunden lang. Nur die ersten 60 Sekunden werden verwendet. | AUDIO | Ja | - |
+| `Hintergrundgeräusche entfernen` | Bereinigt die Aufnahme vor dem Klonen. Standard: false. | BOOLEAN | Nein | true<br>false |
+| `Seed` | Steuert, ob der Node erneut ausgeführt wird; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 42. | INT | Nein | 0 bis 2147483647 |
 
 ## Ausgaben
 

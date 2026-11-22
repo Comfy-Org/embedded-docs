@@ -6,11 +6,11 @@ Dieser Node ändert das Seitenverhältnis eines vorhandenen Videos mit Luma Ray 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `video` | Quellvideo, das neu gerahmt werden soll. Bis zu 10 Sekunden. | VIDEO | Ja | - |
-| `prompt` | Beschreibt, wie die neu freigelegten Leinwandbereiche gefüllt werden sollen. | STRING | Ja | Min. Länge: 1 Zeichen<br>Max. Länge: 6000 Zeichen |
-| `aspect_ratio` | Das Zielseitenverhältnis für das neu gerahmte Video (Standard: "16:9"). | STRING | Ja | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4"<br>"21:9" |
-| `resolution` | Die Ausgabeauflösung des neu gerahmten Videos (Standard: "720p"). | STRING | Ja | "360p"<br>"540p"<br>"720p"<br>"1080p" |
-| `seed` | Seed für reproduzierbare Generierung. | INT | Ja | - |
+| `Video` | Quellvideo, das neu gerahmt werden soll. Bis zu 10 Sekunden. | VIDEO | Ja | - |
+| `Prompt` | Beschreibt, wie die neu freigelegten Leinwandbereiche gefüllt werden sollen. | STRING | Ja | Min. Länge: 1 Zeichen<br>Max. Länge: 6000 Zeichen |
+| `Seitenverhältnis` | Das Zielseitenverhältnis für das neu gerahmte Video (Standard: "16:9"). | STRING | Ja | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4"<br>"21:9" |
+| `Auflösung` | Die Ausgabeauflösung des neu gerahmten Videos (Standard: "720p"). | STRING | Ja | "360p"<br>"540p"<br>"720p"<br>"1080p" |
+| `Seed` | Seed für reproduzierbare Generierung. | INT | Ja | - |
 
 **Hinweis:** Die `1080p`-Auflösung ist bei vertikalen Seitenverhältnissen (`9:16` und `3:4`) beim Neu-Rahmen nicht verfügbar.
 

@@ -6,8 +6,8 @@ Der **Convert SDR to HDR**-Node erweitert sRGB-Bilder mit Standard-Dynamic-Range
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Das/die SDR-Bild(er) in sRGB, das/die zu HDR erweitert werden soll(en). | IMAGE | Ja | - |
-| `algorithm` | HDR-Erweiterungsalgorithmus. Die Auswahl eines Algorithmus blendet dessen Parameter (`target_luminance`) ein. | DYNAMIC_COMBO | Ja | `"lottes"` |
+| `Bild` | Das/die SDR-Bild(er) in sRGB, das/die zu HDR erweitert werden soll(en). | IMAGE | Ja | - |
+| `Algorithmus` | HDR-Erweiterungsalgorithmus. Die Auswahl eines Algorithmus blendet dessen Parameter (`target_luminance`) ein. | DYNAMIC_COMBO | Ja | `"lottes"` |
 
 ### lottes Eingaben
 

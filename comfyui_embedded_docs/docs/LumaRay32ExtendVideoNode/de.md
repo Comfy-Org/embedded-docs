@@ -9,10 +9,10 @@ Luma Ray 3.2 Extend Video setzt eine vorherige Luma Ray 3.2-Videogenerierung for
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `source_generation_id` | Generierungs-ID des vorherigen Ray 3.2-Videos, das erweitert werden soll. Verbinden Sie die `generation_id`-Ausgabe eines anderen Luma Ray 3.2-Nodes. Standard: "" (leer). Dieser Wert ist erforderlich und darf nicht leer sein. | STRING | Ja | – |
-| `direction` | Vorwärts setzt nach dem vorherigen Clip fort; rückwärts wird davor eingefügt. Vorwärts verwendet den Quellclip als Startframe; rückwärts verwendet ihn als Endframe. Die Auswahl von "Forward (continue after)" fügt die Option `loop` hinzu. | DYNAMIC_COMBO | Ja | "Forward (continue after)"<br>"Backward (lead-in before)" |
-| `prompt` | Text-Prompt für den neuen Inhalt. Standard: "" (leer). Muss zwischen 1 und 6000 Zeichen lang sein. | STRING | Ja | 1 bis 6000 Zeichen |
-| `resolution` | Ausgabeauflösung für das erweiterte Videosegment. Standard: "720p". | COMBO | Ja | "540p"<br>"720p"<br>"1080p" |
-| `seed` | Seed, der bestimmt, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 0. | INT | Ja | 0 bis 0xFFFFFFFFFFFFFFFF (18446744073709551615) |
+| `Richtung` | Vorwärts setzt nach dem vorherigen Clip fort; rückwärts wird davor eingefügt. Vorwärts verwendet den Quellclip als Startframe; rückwärts verwendet ihn als Endframe. Die Auswahl von "Forward (continue after)" fügt die Option `loop` hinzu. | DYNAMIC_COMBO | Ja | "Forward (continue after)"<br>"Backward (lead-in before)" |
+| `Prompt` | Text-Prompt für den neuen Inhalt. Standard: "" (leer). Muss zwischen 1 und 6000 Zeichen lang sein. | STRING | Ja | 1 bis 6000 Zeichen |
+| `Auflösung` | Ausgabeauflösung für das erweiterte Videosegment. Standard: "720p". | COMBO | Ja | "540p"<br>"720p"<br>"1080p" |
+| `Seed` | Seed, der bestimmt, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. Standard: 0. | INT | Ja | 0 bis 0xFFFFFFFFFFFFFFFF (18446744073709551615) |
 
 ### Forward (continue after) Eingaben
 

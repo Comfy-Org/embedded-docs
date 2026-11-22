@@ -6,7 +6,7 @@ Der FreeU-Node wendet Modifikationen im Frequenzbereich auf die Ausgabeblöcke e
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Modell, auf das FreeU-Modifikationen angewendet werden | MODEL | Ja | - |
+| `Modell` | Das Modell, auf das FreeU-Modifikationen angewendet werden | MODEL | Ja | - |
 | `b1` | Backbone-Skalierungsfaktor, angewendet auf Feature-Maps mit model_channels × 4 Kanälen (Standard: 1.1). Als erweiterte Einstellung markiert. | FLOAT | Ja | 0.0 - 10.0 |
 | `b2` | Backbone-Skalierungsfaktor, angewendet auf Feature-Maps mit model_channels × 2 Kanälen (Standard: 1.2). Als erweiterte Einstellung markiert. | FLOAT | Ja | 0.0 - 10.0 |
 | `s1` | Skalierungsfaktor für Skip-Verbindungen, angewendet auf Feature-Maps mit model_channels × 4 Kanälen (Standard: 0.9). Als erweiterte Einstellung markiert. | FLOAT | Ja | 0.0 - 10.0 |

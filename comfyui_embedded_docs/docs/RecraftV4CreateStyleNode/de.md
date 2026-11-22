@@ -6,8 +6,8 @@ Dieser Node erstellt einen wiederverwendbaren Recraft V4-Stil aus 1 bis 10 Refer
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modell, für das der Stil erstellt wird. Standard und Pro teilen sich einen Stil-Pool: Rasterstile funktionieren mit jedem Recraft V4- und V4.1-Rastermodell, Vektorstile (*_vector) mit jedem V4- und V4.1-Vektormodell. | COMBO | Ja | "recraftv4_styles"<br>"recraftv4_styles_vector"<br>"recraftv4_styles_pro"<br>"recraftv4_styles_pro_vector" |
-| `images` | Referenzbilder, die den Stil definieren. Ähnliche Referenzen schärfen die Übereinstimmung, abwechslungsreiche Referenzen erweitern sie. Erweiterbarer Slot: Verbinden Sie 1 bis 10 Bilder (`image_1` bis `image_10`). | IMAGE | Ja | 1 bis 10 Bilder |
+| `Modell` | Modell, für das der Stil erstellt wird. Standard und Pro teilen sich einen Stil-Pool: Rasterstile funktionieren mit jedem Recraft V4- und V4.1-Rastermodell, Vektorstile (*_vector) mit jedem V4- und V4.1-Vektormodell. | COMBO | Ja | "recraftv4_styles"<br>"recraftv4_styles_vector"<br>"recraftv4_styles_pro"<br>"recraftv4_styles_pro_vector" |
+| `Bilder` | Referenzbilder, die den Stil definieren. Ähnliche Referenzen schärfen die Übereinstimmung, abwechslungsreiche Referenzen erweitern sie. Erweiterbarer Slot: Verbinden Sie 1 bis 10 Bilder (`image_1` bis `image_10`). | IMAGE | Ja | 1 bis 10 Bilder |
 
 ### Hinweise
 

@@ -6,9 +6,9 @@ Der Node ImageScaleToMaxDimension ändert die Größe von Bildern, sodass sie in
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `image` | Das Eingabebild, dessen Größe geändert werden soll | IMAGE | Ja | - |
-| `upscale_method` | Die Interpolationsmethode, die für die Skalierung des Bildes verwendet wird (Standard: "area") | STRING | Ja | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bilinear"<br>"bicubic" |
-| `largest_size` | Die maximale Dimension für das skalierte Bild (Standard: 512) | INT | Ja | 0 bis 16384 |
+| `Bild` | Das Eingabebild, dessen Größe geändert werden soll | IMAGE | Ja | - |
+| `Upscale-Methode` | Die Interpolationsmethode, die für die Skalierung des Bildes verwendet wird (Standard: "area") | STRING | Ja | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bilinear"<br>"bicubic" |
+| `Maximale Größe` | Die maximale Dimension für das skalierte Bild (Standard: 512) | INT | Ja | 0 bis 16384 |
 
 ## Ausgaben
 

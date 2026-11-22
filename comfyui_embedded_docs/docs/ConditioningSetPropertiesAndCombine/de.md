@@ -8,11 +8,11 @@ Der Node ConditioningSetPropertiesAndCombine ändert Konditionierungsdaten, inde
 | --- | --- | --- | --- | --- | --- |
 | `cond` | Die ursprünglichen Konditionierungsdaten, die geändert werden sollen | CONDITIONING | Erforderlich | - | - |
 | `cond_NEW` | Die neuen Konditionierungsdaten, die anzuwendende Eigenschaften bereitstellen | CONDITIONING | Erforderlich | - | - |
-| `strength` | Steuert die Intensität der Eigenschaften der neuen Konditionierung | FLOAT | Erforderlich | 1.0 | 0.0 - 10.0 |
+| `Stärke` | Steuert die Intensität der Eigenschaften der neuen Konditionierung | FLOAT | Erforderlich | 1.0 | 0.0 - 10.0 |
 | `set_cond_area` | Bestimmt, wie der Konditionierungsbereich angewendet wird | STRING | Erforderlich | default | ["default", "mask bounds"] |
-| `mask` | Optionale Maske, um bestimmte Bereiche für die Konditionierung festzulegen | MASK | Optional | - | - |
-| `hooks` | Optionale Hook-Funktionen für benutzerdefinierte Verarbeitung | HOOKS | Optional | - | - |
-| `timesteps` | Optionaler Zeitschrittbereich, um zu steuern, wann die Konditionierung angewendet wird | TIMESTEPS_RANGE | Optional | - | - |
+| `Maske` | Optionale Maske, um bestimmte Bereiche für die Konditionierung festzulegen | MASK | Optional | - | - |
+| `Hooks` | Optionale Hook-Funktionen für benutzerdefinierte Verarbeitung | HOOKS | Optional | - | - |
+| `Zeitschritte` | Optionaler Zeitschrittbereich, um zu steuern, wann die Konditionierung angewendet wird | TIMESTEPS_RANGE | Optional | - | - |
 
 **Hinweis:** Wenn `mask` angegeben ist, kann der Parameter `set_cond_area` "mask bounds" verwenden, um die Anwendung der Konditionierung auf die maskierten Bereiche zu beschränken.
 

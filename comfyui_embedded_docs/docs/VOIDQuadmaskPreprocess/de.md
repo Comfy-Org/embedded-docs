@@ -8,8 +8,8 @@ Der Node VOIDQuadmaskPreprocess bereitet eine Maske für das VOID-Inpainting vor
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `mask` | Die Eingabemaske, die vorverarbeitet werden soll. | MASK | Ja | N/A |
-| `dilate_width` | Dilatationsradius für den primären Maskenbereich. Ein Wert von 0 bedeutet, dass keine Dilatation angewendet wird. (Standard: 0) | INT | Nein | 0 bis 50 (Schritt: 1) |
+| `Maske` | Die Eingabemaske, die vorverarbeitet werden soll. | MASK | Ja | N/A |
+| `Dilationsbreite` | Dilatationsradius für den primären Maskenbereich. Ein Wert von 0 bedeutet, dass keine Dilatation angewendet wird. (Standard: 0) | INT | Nein | 0 bis 50 (Schritt: 1) |
 
 ## Ausgaben
 

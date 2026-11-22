@@ -6,8 +6,8 @@ HyperTile wendet eine Tiling-Technik auf den Attention-Mechanismus in Diffusions
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Diffusionsmodell, auf das die HyperTile-Optimierung angewendet werden soll | MODEL | Ja | - |
-| `tile_size` | Die Ziel-Kachelgröße für die Verarbeitung (Standard: 256). Intern wird der Wert auf einen Mindestwert von 32 begrenzt und dann durch 8 geteilt, um die effektive Kachelgröße zu erhalten. | INT | Ja | 1 - 2048 |
+| `Modell` | Das Diffusionsmodell, auf das die HyperTile-Optimierung angewendet werden soll | MODEL | Ja | - |
+| `Kachelgröße` | Die Ziel-Kachelgröße für die Verarbeitung (Standard: 256). Intern wird der Wert auf einen Mindestwert von 32 begrenzt und dann durch 8 geteilt, um die effektive Kachelgröße zu erhalten. | INT | Ja | 1 - 2048 |
 | `swap_size` | Steuert, wie die Kacheln während der Verarbeitung neu angeordnet werden, um die Effizienz zu verbessern. Größere Werte ermöglichen mehr Variation bei den Kachelgrößen (Standard: 2) | INT | Ja | 1 - 128 |
 | `max_depth` | Die maximale Tiefenebene (Auflösungsskala), auf die Tiling angewendet wird. Ein Wert von 0 wendet Tiling nur bei der höchsten Auflösung an (Standard: 0) | INT | Ja | 0 - 10 |
 | `scale_depth` | Wenn aktiviert, wird die Kachelgröße auf tieferen Tiefenebenen proportional skaliert. Dies kann helfen, die Qualität bei niedrigeren Auflösungen zu erhalten (Standard: False) | BOOLEAN | Ja | True / False |

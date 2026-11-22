@@ -6,12 +6,12 @@ QwenImageDiffsynthControlnet wendet einen Diffusionssynthese-Kontrollnetzwerk-Pa
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Basismodell, das mit dem Kontrollnetzwerk gepatcht werden soll | MODEL | Ja | - |
+| `Modell` | Das Basismodell, das mit dem Kontrollnetzwerk gepatcht werden soll | MODEL | Ja | - |
 | `model_patch` | Das Kontrollnetzwerk-Patchmodell, das auf das Basismodell angewendet werden soll | MODEL_PATCH | Ja | - |
 | `vae` | Der im Diffusionsprozess verwendete VAE (Variational Autoencoder) | VAE | Ja | - |
-| `image` | Das Eingabebild, das zur Steuerung des Kontrollnetzwerks verwendet wird. Nur die ersten drei Farbkanäle (RGB) werden verwendet; zusätzliche Kanäle werden verworfen | IMAGE | Ja | - |
-| `strength` | Die Stärke des Einflusses des Kontrollnetzwerks (Standard: 1.0) | FLOAT | Ja | -10.0 bis 10.0 (Schrittweite 0.01) |
-| `mask` | Optionale Maske, die Bereiche definiert, in denen das Kontrollnetzwerk angewendet werden soll. Bei DiffSynth- und Z-Image-Patches wird die Maske vor der Verwendung intern invertiert | MASK | Nein | - |
+| `Bild` | Das Eingabebild, das zur Steuerung des Kontrollnetzwerks verwendet wird. Nur die ersten drei Farbkanäle (RGB) werden verwendet; zusätzliche Kanäle werden verworfen | IMAGE | Ja | - |
+| `Stärke` | Die Stärke des Einflusses des Kontrollnetzwerks (Standard: 1.0) | FLOAT | Ja | -10.0 bis 10.0 (Schrittweite 0.01) |
+| `Maske` | Optionale Maske, die Bereiche definiert, in denen das Kontrollnetzwerk angewendet werden soll. Bei DiffSynth- und Z-Image-Patches wird die Maske vor der Verwendung intern invertiert | MASK | Nein | - |
 | `start_percent` | Der Punkt im Entrauschungsprozess, als Bruchteil der gesamten Sampling-Schritte, an dem das Kontrollnetzwerk zu wirken beginnt (Standard: 0.0) | FLOAT | Nein | 0.0 bis 1.0 (Schrittweite 0.001) |
 | `end_percent` | Der Punkt im Entrauschungsprozess, an dem das Kontrollnetzwerk aufhört zu wirken (Standard: 1.0) | FLOAT | Nein | 0.0 bis 1.0 (Schrittweite 0.001) |
 

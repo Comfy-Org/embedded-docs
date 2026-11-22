@@ -6,11 +6,11 @@ Este nó gera uma malha triangular pronta para jogos com uma contagem de faces a
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | A versão do modelo Meshy a ser usada para geração. | COMBO | Sim | `"meshy-t2.5"` |
+| `modelo` | A versão do modelo Meshy a ser usada para geração. | COMBO | Sim | `"meshy-t2.5"` |
 | `prompt` | A descrição textual do modelo 3D a ser gerado. | STRING | Sim | 1 a 800 caracteres |
 | `target_polycount` | Número aproximado de triângulos na malha gerada. Padrão: 15000. | INT | Sim | 100 a 30000 |
 | `pose_mode` | A pose do personagem gerado. Uma string vazia solicita nenhuma pose específica. Esta é uma configuração avançada. Padrão: `""` (string vazia). | COMBO | Sim | `""`<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | A seed controla se o nó deve ser executado novamente; os resultados não são determinísticos independentemente da seed. Padrão: 42. | INT | Sim | 0 a 2147483647 |
+| `semente` | A seed controla se o nó deve ser executado novamente; os resultados não são determinísticos independentemente da seed. Padrão: 42. | INT | Sim | 0 a 2147483647 |
 
 **Restrições:**
 

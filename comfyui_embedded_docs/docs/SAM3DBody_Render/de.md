@@ -10,7 +10,7 @@ Rendert 3D-Körperpose-Daten mit einem auswählbaren Stil in ein Bild. Der Node 
 |-----------|-------------|-----------|----------|-------|
 | `render_style` | Render-Modus. 'mesh' = 3D-MHR-Mesh, durch die Kamera rasterisiert. 'silhouette' = binäre Maske des Meshes. 'openpose_2d' = flaches 2D-Skelett. 'openpose_3d' = OpenPose-Skelett als flach schattiertes 3D-Modell. 'scail' = SCAIL-3D-Kapseln. (Standard: "mesh") | DYNAMIC_COMBO | Ja | "mesh"<br>"silhouette"<br>"openpose_2d"<br>"openpose_3d"<br>"scail" |
 | `pose_data` | MHR-Pose-Daten oder externe Y-up-Rig-Pose-Daten (KimodoSample). Alle Render-Stile funktionieren für externe Rigs, die OpenPose-Gelenkkarten in ihrem `_skeleton_override` enthalten (KimodoSample tut dies). | MHR_POSE_DATA oder KIMODO_POSE_DATA | Ja | — |
-| `background` | Hintergrund pro Frame. Weggelassen = schwarze Leinwand. | IMAGE | Nein | — |
+| `Hintergrund` | Hintergrund pro Frame. Weggelassen = schwarze Leinwand. | IMAGE | Nein | — |
 | `width` | Ausgabebreite in Pixeln. 0 = native image_size der Pose-Daten verwenden. Wenn nur einer der Werte width/height gesetzt ist, wird der andere unter Beibehaltung des ursprünglichen Seitenverhältnisses abgeleitet. (Standard: 0) | INT | Nein | 0 bis 16384, Schritt 8 |
 | `height` | Ausgabehöhe in Pixeln. 0 = native image_size der Pose-Daten verwenden. Wenn nur einer der Werte width/height gesetzt ist, wird der andere unter Beibehaltung des ursprünglichen Seitenverhältnisses abgeleitet. (Standard: 0) | INT | Nein | 0 bis 16384, Schritt 8 |
 | `camera_info` | Freie 6DOF-Kameraüberschreibung. Wenn verdrahtet, wird die Pose durch diese Kamera neu projiziert (Position/Ziel/Zoom/Rotation/FoV) anstelle der vorhergesagten. | LOAD_3D_CAMERA | Nein | — |

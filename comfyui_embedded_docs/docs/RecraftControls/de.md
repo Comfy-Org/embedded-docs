@@ -6,8 +6,8 @@ Erstellt Recraft Controls zum Anpassen der Recraft-Generierung. Dieser Node erm�
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `colors` | Farbeinstellungen für die Hauptelemente | COLOR | Nein | - |
-| `background_color` | Einstellung der Hintergrundfarbe | COLOR | Nein | - |
+| `Farben` | Farbeinstellungen für die Hauptelemente | COLOR | Nein | - |
+| `Hintergrundfarbe` | Einstellung der Hintergrundfarbe | COLOR | Nein | - |
 
 ## Ausgaben
 

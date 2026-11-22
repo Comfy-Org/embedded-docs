@@ -8,11 +8,11 @@ Este nó codifica uma ou mais imagens de referência e anexa seus latents ao con
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `positive` | O condicionamento positivo a ser modificado com os latents de referência. | CONDITIONING | Sim | - |
-| `negative` | Condicionamento negativo opcional que recebe os mesmos latents de referência. Deixe-o desconectado para reutilizar o condicionamento positivo modificado na saída `negative`. | CONDITIONING | Não | - |
+| `positivo` | O condicionamento positivo a ser modificado com os latents de referência. | CONDITIONING | Sim | - |
+| `negativo` | Condicionamento negativo opcional que recebe os mesmos latents de referência. Deixe-o desconectado para reutilizar o condicionamento positivo modificado na saída `negative`. | CONDITIONING | Não | - |
 | `vae` | O VAE usado para codificar as imagens de referência conectadas. Quando nenhum VAE está conectado, as imagens de referência são ignoradas. | VAE | Não | - |
-| `resolution` | Como cada imagem de referência é preparada antes da codificação. `"keep resolution"` codifica-a no tamanho de entrada; `"resize"` redimensiona-a para uma contagem alvo de megapixels enquanto preserva a proporção, o que revela `megapixels`. (padrão: "keep resolution") | DYNAMIC_COMBO | Sim | `"keep resolution"`<br>`"resize"` |
-| `images` | Slot expansível: conecte uma ou mais imagens de referência (`image_1`, `image_2`, ...) para usar como referências. As imagens são codificadas na ordem dos slots e anexadas ao condicionamento nessa ordem. | IMAGE | Não | 1 a 100 |
+| `resolução` | Como cada imagem de referência é preparada antes da codificação. `"keep resolution"` codifica-a no tamanho de entrada; `"resize"` redimensiona-a para uma contagem alvo de megapixels enquanto preserva a proporção, o que revela `megapixels`. (padrão: "keep resolution") | DYNAMIC_COMBO | Sim | `"keep resolution"`<br>`"resize"` |
+| `imagens` | Slot expansível: conecte uma ou mais imagens de referência (`image_1`, `image_2`, ...) para usar como referências. As imagens são codificadas na ordem dos slots e anexadas ao condicionamento nessa ordem. | IMAGE | Não | 1 a 100 |
 
 ### Entradas de redimensionamento
 

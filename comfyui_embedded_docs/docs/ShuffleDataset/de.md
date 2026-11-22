@@ -6,8 +6,8 @@ Der Node Shuffle Dataset nimmt eine Liste von Bildern entgegen und ändert deren
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `images` | Die Liste der Bilder, die gemischt werden sollen. | IMAGE | Ja | - |
-| `seed` | Zufälliger Seed. (Standard: 0) | INT | Nein | 0 bis 18446744073709551615 |
+| `Bilder` | Die Liste der Bilder, die gemischt werden sollen. | IMAGE | Ja | - |
+| `Seed` | Zufälliger Seed. (Standard: 0) | INT | Nein | 0 bis 18446744073709551615 |
 
 ## Ausgaben
 

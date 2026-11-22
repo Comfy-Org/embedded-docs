@@ -8,11 +8,11 @@ Dieser Node rendert ein vorhandenes Video mit einem neuen Prompt unter Verwendun
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `video` | Quellvideo zum Bearbeiten. Bis zu 18 Sekunden. | VIDEO | Ja | - |
-| `prompt` | Beschreibt die gewünschte Bearbeitung. | STRING | Ja | - |
-| `resolution` | Die Ausgabeauflösung für das bearbeitete Video. (Standard: "720p") | COMBO | Ja | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
-| `strength` | Wie stark die Quelle bewahrt werden soll, anstatt sie neu zu interpretieren. "auto" lässt Ray 3.2 wählen; adhere_* bewahrt am meisten, flex_* ist ausgewogen, reimagine_* ändert am meisten. (Standard: "auto") | COMBO | Ja | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
-| `seed` | Seed für Reproduzierbarkeit. | INT | Ja | - |
+| `Video` | Quellvideo zum Bearbeiten. Bis zu 18 Sekunden. | VIDEO | Ja | - |
+| `Prompt` | Beschreibt die gewünschte Bearbeitung. | STRING | Ja | - |
+| `Auflösung` | Die Ausgabeauflösung für das bearbeitete Video. (Standard: "720p") | COMBO | Ja | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+| `Stärke` | Wie stark die Quelle bewahrt werden soll, anstatt sie neu zu interpretieren. "auto" lässt Ray 3.2 wählen; adhere_* bewahrt am meisten, flex_* ist ausgewogen, reimagine_* ändert am meisten. (Standard: "auto") | COMBO | Ja | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
+| `Seed` | Seed für Reproduzierbarkeit. | INT | Ja | - |
 
 **Hinweis:** Der `prompt` muss zwischen 1 und 6000 Zeichen lang sein. Das Quellvideo darf eine Dauer von 18 Sekunden nicht überschreiten.
 

@@ -6,7 +6,7 @@ Zerlegt ein Bild in seine Rot-, Grün- und Blaukanäle und gibt den Alphakanal a
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `image` | Das zu zerlegende Bild. Eine einkanalige (Graustufen-)Eingabe wird erweitert, sodass alle drei Farbausgaben dieselben Daten enthalten. | IMAGE | Ja | - |
+| `Bild` | Das zu zerlegende Bild. Eine einkanalige (Graustufen-)Eingabe wird erweitert, sodass alle drei Farbausgaben dieselben Daten enthalten. | IMAGE | Ja | - |
 
 ## Ausgaben
 

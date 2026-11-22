@@ -6,13 +6,13 @@ Classifique de 1 a 10 o texto, as imagens, o áudio ou o vídeo que você conect
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a ser usado (padrão: `"gemini-decision-1"`). | COMBO | Sim | `"gemini-decision-1"` |
-| `question` | O que deve ser classificado, indicando o que significam 1 e 10 (padrão: "Rate the technical quality of the image from 1 (worst) to 10 (best)."). | STRING | Sim | 1 a 5000 caracteres |
-| `threshold` | `result` é verdadeiro quando a pontuação é pelo menos este valor. Imagens limpas e nítidas pontuam cerca de 7 a 8; imagens muito danificadas, cerca de 3 a 5 (padrão: 6.0). | FLOAT | Sim | 1.0 a 10.0 (passo 0.1) |
-| `images` | Imagens a serem classificadas, até 16 nos slots expansíveis (`image_1` ... `image_16`). Uma imagem em lote conta uma vez por imagem. | IMAGE | Não | Até 16 imagens |
-| `audio` | Clipe de áudio a ser classificado. | AUDIO | Não | - |
-| `video` | Clipe de vídeo a ser classificado. | VIDEO | Não | - |
-| `text` | Texto ao qual a pergunta se refere, como um prompt ou uma resposta de LLM, com até 20000 caracteres. | STRING | Não | Até 20000 caracteres |
+| `modelo` | Modelo a ser usado (padrão: `"gemini-decision-1"`). | COMBO | Sim | `"gemini-decision-1"` |
+| `pergunta` | O que deve ser classificado, indicando o que significam 1 e 10 (padrão: "Rate the technical quality of the image from 1 (worst) to 10 (best)."). | STRING | Sim | 1 a 5000 caracteres |
+| `limiar` | `result` é verdadeiro quando a pontuação é pelo menos este valor. Imagens limpas e nítidas pontuam cerca de 7 a 8; imagens muito danificadas, cerca de 3 a 5 (padrão: 6.0). | FLOAT | Sim | 1.0 a 10.0 (passo 0.1) |
+| `imagens` | Imagens a serem classificadas, até 16 nos slots expansíveis (`image_1` ... `image_16`). Uma imagem em lote conta uma vez por imagem. | IMAGE | Não | Até 16 imagens |
+| `áudio` | Clipe de áudio a ser classificado. | AUDIO | Não | - |
+| `vídeo` | Clipe de vídeo a ser classificado. | VIDEO | Não | - |
+| `texto` | Texto ao qual a pergunta se refere, como um prompt ou uma resposta de LLM, com até 20000 caracteres. | STRING | Não | Até 20000 caracteres |
 
 Conecte pelo menos um entre `text`, `images`, `audio` ou `video`; o nó gera um erro quando não há nada para classificar. Com várias imagens, nomeie-as `image_1`, `image_2` e assim por diante dentro da pergunta.
 

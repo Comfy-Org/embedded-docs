@@ -6,9 +6,9 @@ Der PerpNegGuider-Node erstellt ein Führungssystem zur Steuerung der Bilderzeug
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das für die Führungserzeugung zu verwendende Modell | MODEL | Ja | - |
-| `positive` | Die positive Konditionierung, die die Erzeugung in Richtung gewünschter Inhalte lenkt | CONDITIONING | Ja | - |
-| `negative` | Die negative Konditionierung, die die Erzeugung von unerwünschten Inhalten weglenkt | CONDITIONING | Ja | - |
+| `Modell` | Das für die Führungserzeugung zu verwendende Modell | MODEL | Ja | - |
+| `Positiv` | Die positive Konditionierung, die die Erzeugung in Richtung gewünschter Inhalte lenkt | CONDITIONING | Ja | - |
+| `Negativ` | Die negative Konditionierung, die die Erzeugung von unerwünschten Inhalten weglenkt | CONDITIONING | Ja | - |
 | `empty_conditioning` | Die leere oder neutrale Konditionierung, die als Basisreferenz für die senkrechte negative Führung verwendet wird | CONDITIONING | Ja | - |
 | `cfg` | Der Classifier-Free-Guidance-Skalierungswert, der steuert, wie stark die Konditionierung die Erzeugung beeinflusst (Standard: 8.0) | FLOAT | Ja | 0.0 - 100.0 |
 | `neg_scale` | Der negative Skalierungsfaktor, der die Stärke des senkrechten negativen Effekts anpasst (Standard: 1.0) | FLOAT | Ja | 0.0 - 100.0 |

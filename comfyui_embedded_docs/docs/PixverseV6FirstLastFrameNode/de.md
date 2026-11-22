@@ -8,9 +8,9 @@ PixVerse V6 First-Last-Frame to Video erzeugt mithilfe von PixVerse ein Video, d
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `first_frame` | Das Startbild des Videos. | IMAGE | Ja | — |
-| `last_frame` | Das Endbild des Videos. | IMAGE | Ja | — |
-| `model` | Modell- und Generierungseinstellungen. Wählt das PixVerse-Modell aus und zeigt dessen Generierungsparameter an. | DYNAMIC_COMBO | Ja | "PixVerse V6" |
+| `Erstes Frame` | Das Startbild des Videos. | IMAGE | Ja | — |
+| `Letztes Frame` | Das Endbild des Videos. | IMAGE | Ja | — |
+| `Modell` | Modell- und Generierungseinstellungen. Wählt das PixVerse-Modell aus und zeigt dessen Generierungsparameter an. | DYNAMIC_COMBO | Ja | "PixVerse V6" |
 
 ### PixVerse V6 Eingaben
 

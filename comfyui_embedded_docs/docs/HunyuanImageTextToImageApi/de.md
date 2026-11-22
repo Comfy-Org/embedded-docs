@@ -8,7 +8,7 @@ Der Tencent HY Image: Text to Image-Node erzeugt ein Bild aus einer Textbeschrei
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das für die Generierung verwendete Modell. Das ausgewählte Modell bestimmt, welche zusätzlichen Eingaben angezeigt werden. | DYNAMIC_COMBO | Ja | `"hy-image-3.5-preview"` |
+| `Modell` | Das für die Generierung verwendete Modell. Das ausgewählte Modell bestimmt, welche zusätzlichen Eingaben angezeigt werden. | DYNAMIC_COMBO | Ja | `"hy-image-3.5-preview"` |
 
 ### hy-image-3.5-preview Eingaben
 

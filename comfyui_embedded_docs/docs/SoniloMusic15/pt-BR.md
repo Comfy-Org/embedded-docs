@@ -7,7 +7,7 @@ O nó Sonilo Music 1.5 gera uma música completa com vocais cantados a partir de
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
 | `prompt` | Descrição da música: gênero, clima, instrumentos e vocais. Para definir as palavras você mesmo, adicione um bloco `Lyrics:` com as tags `[Verse]` e `[Chorus]`; sem ele, o modelo escreve suas próprias letras. Deve ter de 1 a 2000 caracteres após remover espaços em branco. | STRING | Sim | 1 a 2000 caracteres |
-| `duration` | `auto` ajusta a duração da música às letras. `custom` usa o valor de `seconds`, cortando letras que não se encaixam e repetindo as curtas. | DYNAMIC_COMBO | Sim | `"auto"`<br>`"custom"` |
+| `duração` | `auto` ajusta a duração da música às letras. `custom` usa o valor de `seconds`, cortando letras que não se encaixam e repetindo as curtas. | DYNAMIC_COMBO | Sim | `"auto"`<br>`"custom"` |
 | `seed` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed (padrão: 42). | INT | Sim | 0 a 18446744073709551615 |
 
 ### Parâmetros de duração personalizada (quando `duration` é `"custom"`)

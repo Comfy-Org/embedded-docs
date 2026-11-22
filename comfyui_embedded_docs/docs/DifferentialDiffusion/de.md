@@ -6,8 +6,8 @@ Der Node „Differential Diffusion“ modifiziert den Denoising-Prozess, indem e
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das zu ändernde Diffusionsmodell | MODEL | Ja | - |
-| `strength` | Steuert die Stärke der Überblendung zwischen der ursprünglichen Denoise-Maske und der binären Schwellenwertmaske (Standard: 1.0) | FLOAT | Nein | 0.0 - 1.0 |
+| `Modell` | Das zu ändernde Diffusionsmodell | MODEL | Ja | - |
+| `Stärke` | Steuert die Stärke der Überblendung zwischen der ursprünglichen Denoise-Maske und der binären Schwellenwertmaske (Standard: 1.0) | FLOAT | Nein | 0.0 - 1.0 |
 
 ## Ausgaben
 

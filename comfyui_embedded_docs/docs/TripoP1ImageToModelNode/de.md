@@ -11,7 +11,7 @@ Diese Parameter sind immer verfügbar.
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `output_mode` | Wählt den Ergebnistyp. "Geometry only" gibt ein untexturiertes Mesh zurück; "Textured" fügt Farb-/PBR-Maps hinzu und blendet zusätzliche Textureinstellungen ein. | DYNAMIC_COMBO | Ja | `"Geometry only"`<br>`"Textured"` |
-| `image` | Das 2D-Quellbild, das zur Erzeugung des 3D-Modells verwendet wird. Ein einzelnes Bild ist erforderlich; der Node löst einen Fehler aus, wenn keines bereitgestellt wird. | IMAGE | Ja | - |
+| `Bild` | Das 2D-Quellbild, das zur Erzeugung des 3D-Modells verwendet wird. Ein einzelnes Bild ist erforderlich; der Node löst einen Fehler aus, wenn keines bereitgestellt wird. | IMAGE | Ja | - |
 | `enable_image_autofix` | Das Eingabebild vorverarbeiten, um eine bessere Generierungsqualität zu erzielen. (Standard: False) | BOOLEAN | Nein | True<br>False |
 | `face_limit` | Zielanzahl der Flächen, 48-20000. -1 lässt Tripo adaptiv auswählen. (Standard: -1) | INT | Nein | -1 bis 20000 |
 | `model_seed` | Seed, der für die Geometriegenerierung verwendet wird, damit Ergebnisse reproduziert werden können. (Standard: 42) | INT | Nein | 0 bis 2147483647 |

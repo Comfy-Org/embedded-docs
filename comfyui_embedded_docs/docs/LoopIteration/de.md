@@ -6,12 +6,12 @@ Dieser Node stellt Iterations-Metadaten für Workflows im Schleifenstil bereit. 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `iteration_index` | Der Index der aktuellen Iteration, als Liste übergeben. Das erste Element wird an die Ausgabe weitergegeben. | INT | Ja | - |
-| `is_first` | Gibt an, ob die aktuelle Iteration die erste ist, als Liste übergeben. Das erste Element wird an die Ausgabe weitergegeben. | BOOLEAN | Ja | - |
-| `is_last` | Gibt an, ob die aktuelle Iteration die letzte ist, als Liste übergeben. Das erste Element wird an die Ausgabe weitergegeben. | BOOLEAN | Ja | - |
-| `list_item` | Das für diese Iteration aus der Liste entnommene Element. Optional; wenn angegeben, wird das erste Element an die Ausgabe weitergegeben, andernfalls wird None zurückgegeben. | ANY | Nein | - |
-| `current_iteration_value` | Der von der aktuellen Iteration mitgeführte Wert. Optional; wenn angegeben, wird der vollständige Wert an die Ausgabe weitergegeben, andernfalls wird None zurückgegeben. | ANY | Nein | - |
-| `reuse_cache` | Steuert, ob das Ergebnis aus dem Cache wiederverwendet werden darf. Wenn aktiviert, behält der Node einen stabilen Fingerabdruck bei, sodass zwischengespeicherte Ergebnisse wiederverwendet werden können. Wenn deaktiviert, wird ein nicht übereinstimmender Fingerabdruck erzeugt, sodass der Node bei jeder Iteration erneut ausgeführt wird. | BOOLEAN | Ja | - |
+| `Iterationsindex` | Der Index der aktuellen Iteration, als Liste übergeben. Das erste Element wird an die Ausgabe weitergegeben. | INT | Ja | - |
+| `erste Iteration` | Gibt an, ob die aktuelle Iteration die erste ist, als Liste übergeben. Das erste Element wird an die Ausgabe weitergegeben. | BOOLEAN | Ja | - |
+| `letzte Iteration` | Gibt an, ob die aktuelle Iteration die letzte ist, als Liste übergeben. Das erste Element wird an die Ausgabe weitergegeben. | BOOLEAN | Ja | - |
+| `Listenelement` | Das für diese Iteration aus der Liste entnommene Element. Optional; wenn angegeben, wird das erste Element an die Ausgabe weitergegeben, andernfalls wird None zurückgegeben. | ANY | Nein | - |
+| `Wert der aktuellen Iteration` | Der von der aktuellen Iteration mitgeführte Wert. Optional; wenn angegeben, wird der vollständige Wert an die Ausgabe weitergegeben, andernfalls wird None zurückgegeben. | ANY | Nein | - |
+| `Cache wiederverwenden` | Steuert, ob das Ergebnis aus dem Cache wiederverwendet werden darf. Wenn aktiviert, behält der Node einen stabilen Fingerabdruck bei, sodass zwischengespeicherte Ergebnisse wiederverwendet werden können. Wenn deaktiviert, wird ein nicht übereinstimmender Fingerabdruck erzeugt, sodass der Node bei jeder Iteration erneut ausgeführt wird. | BOOLEAN | Ja | - |
 
 Hinweis: Dieser Node ist für Listen-Eingaben ausgelegt, das heißt, jede Eingabe wird als Liste erwartet und der Node gibt nur das erste Element jeder Liste aus (außer `current_iteration_value`, das als Liste weitergegeben wird). Er akzeptiert außerdem zusätzliche Eingaben über die hier aufgeführten hinaus.
 

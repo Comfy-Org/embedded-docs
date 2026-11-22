@@ -6,7 +6,7 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `language` | 注目のボイスの言語グループ、または ID を入力する場合は `custom` です。デフォルト: `"English"`。 | DYNAMIC_COMBO | はい | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
+| `言語` | 注目のボイスの言語グループ、または ID を入力する場合は `custom` です。デフォルト: `"English"`。 | DYNAMIC_COMBO | はい | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
 
 ### 言語「English」「Chinese」「Japanese」の入力
 

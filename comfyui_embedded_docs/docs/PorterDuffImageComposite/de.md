@@ -6,11 +6,11 @@ Der Node `PorterDuffImageComposite` ist für die Durchführung von Bild-Composit
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `source` | Der Tensor des Quellbilds, das über das Zielbild gelegt werden soll. Er spielt eine entscheidende Rolle für das endgültige visuelle Ergebnis basierend auf dem ausgewählten Compositing-Modus. | `IMAGE` |
+| `Quelle` | Der Tensor des Quellbilds, das über das Zielbild gelegt werden soll. Er spielt eine entscheidende Rolle für das endgültige visuelle Ergebnis basierend auf dem ausgewählten Compositing-Modus. | `IMAGE` |
 | `source_alpha` | Der Alphakanal des Quellbilds, der die Transparenz jedes Pixels im Quellbild angibt. Er beeinflusst, wie das Quellbild mit dem Zielbild vermischt wird. | `MASK` |
-| `destination` | Der Tensor des Zielbilds, das als Hintergrund dient, über den das Quellbild gelegt wird. Er trägt basierend auf dem Mischmodus zum endgültigen zusammengesetzten Bild bei. | `IMAGE` |
+| `Ziel` | Der Tensor des Zielbilds, das als Hintergrund dient, über den das Quellbild gelegt wird. Er trägt basierend auf dem Mischmodus zum endgültigen zusammengesetzten Bild bei. | `IMAGE` |
 | `destination_alpha` | Der Alphakanal des Zielbilds, der die Transparenz der Pixel des Zielbilds definiert. Er beeinflusst die Vermischung von Quell- und Zielbild. | `MASK` |
-| `mode` | Der anzuwendende Porter-Duff-Compositing-Modus, der bestimmt, wie Quell- und Zielbild miteinander vermischt werden. Jeder Modus erzeugt unterschiedliche visuelle Effekte. | COMBO[STRING] |
+| `Modus` | Der anzuwendende Porter-Duff-Compositing-Modus, der bestimmt, wie Quell- und Zielbild miteinander vermischt werden. Jeder Modus erzeugt unterschiedliche visuelle Effekte. | COMBO[STRING] |
 
 ## Ausgaben
 

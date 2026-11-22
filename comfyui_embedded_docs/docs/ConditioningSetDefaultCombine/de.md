@@ -8,7 +8,7 @@ Dieser Node kombiniert eine primäre Conditioning-Eingabe mit einer Standard-Con
 | --- | --- | --- | --- | --- | --- |
 | `cond` | Die primäre Conditioning-Eingabe, die verarbeitet und kombiniert werden soll | CONDITIONING | Erforderlich | - | - |
 | `cond_DEFAULT` | Die Standard-Conditioning-Daten, die mit dem primären Conditioning kombiniert werden sollen | CONDITIONING | Erforderlich | - | - |
-| `hooks` | Optionale Hook-Konfiguration, die steuert, wie die Conditioning-Daten verarbeitet und kombiniert werden | HOOKS | Optional | - | - |
+| `Hooks` | Optionale Hook-Konfiguration, die steuert, wie die Conditioning-Daten verarbeitet und kombiniert werden | HOOKS | Optional | - | - |
 
 ## Ausgaben
 

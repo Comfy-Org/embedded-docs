@@ -6,8 +6,8 @@ Dieser Node ist für Compositing-Operationen konzipiert, insbesondere um ein Bil
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `image` | Der Hauptbildinhalt, der mit einer Alpha-Maske kombiniert werden soll. Er stellt das Bild ohne Transparenzinformationen dar. | `IMAGE` |
-| `alpha` | Die Alpha-Maske, die die Transparenz des zugehörigen Bildes definiert. Sie wird verwendet, um zu bestimmen, welche Teile des Bildes transparent oder halbtransparent sein sollen. | `MASK` |
+| `Bild` | Der Hauptbildinhalt, der mit einer Alpha-Maske kombiniert werden soll. Er stellt das Bild ohne Transparenzinformationen dar. | `IMAGE` |
+| `Alpha` | Die Alpha-Maske, die die Transparenz des zugehörigen Bildes definiert. Sie wird verwendet, um zu bestimmen, welche Teile des Bildes transparent oder halbtransparent sein sollen. | `MASK` |
 
 ## Ausgaben
 

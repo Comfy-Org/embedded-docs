@@ -7,9 +7,9 @@ SenseNova コンディショニングを、画像生成用またはテキスト�
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | SenseNova CLIP モデル。CLIP Text Encode にも供給している CLIP ローダーを接続し、エンコーダーの出力は `conditioning` に接続します。入力されるコンディショニングがすでに完了している場合を除き、すべてのタスクで必要です。 | CLIP | いいえ | - |
-| `conditioning` | CLIP Text Encode からの SenseNova テキストコンディショニング。 | CONDITIONING | はい | - |
-| `negative` | オプションのネガティブコンディショニング。`interleave` タスクと `self-correction` タスクでは更新されて返されます。 | CONDITIONING | いいえ | - |
-| `task` | 実行するタスク。`"image"` は標準サンプラー用にプロンプトをエンコードし、`"image thinking"` はモデルが応答する前に考えさせ、`"interleave"` はテキストと画像を 1 回のパスで生成し、`"self-correction"` はモデルが自身の以前の出力を修正できるようにします。 | DYNAMIC_COMBO | はい | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
+| `コンディショニング` | CLIP Text Encode からの SenseNova テキストコンディショニング。 | CONDITIONING | はい | - |
+| `ネガティブ` | オプションのネガティブコンディショニング。`interleave` タスクと `self-correction` タスクでは更新されて返されます。 | CONDITIONING | いいえ | - |
+| `タスク` | 実行するタスク。`"image"` は標準サンプラー用にプロンプトをエンコードし、`"image thinking"` はモデルが応答する前に考えさせ、`"interleave"` はテキストと画像を 1 回のパスで生成し、`"self-correction"` はモデルが自身の以前の出力を修正できるようにします。 | DYNAMIC_COMBO | はい | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
 | `max_tokens` | この呼び出し中に生成される最大トークン数。デフォルト：1024。 | INT | はい | 1～8192 |
 
 ### `interleave` 入力

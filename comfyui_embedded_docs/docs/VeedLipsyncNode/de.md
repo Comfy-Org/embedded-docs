@@ -6,7 +6,7 @@ Synchronisieren Sie den Mund eines Sprechers in einem Video mit VEED Lipsync neu
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Zu verwendendes Modell. Beim Auswählen eines Modells werden die für dieses Modell spezifischen Parameter angezeigt: `video`, `audio` und `seed`. | DYNAMIC_COMBO | Ja | `"lipsync-2.0"` |
+| `Modell` | Zu verwendendes Modell. Beim Auswählen eines Modells werden die für dieses Modell spezifischen Parameter angezeigt: `video`, `audio` und `seed`. | DYNAMIC_COMBO | Ja | `"lipsync-2.0"` |
 | `video` | Filmmaterial eines Sprechers in Frontalansicht. Wenn es kürzer als das Audio ist, wird es vorwärts und rückwärts abgespielt, bis das Audio endet. | VIDEO | Ja | - |
 | `audio` | Neue Sprachaufnahme, bis zu 600 Sekunden. Legt die Videolänge fest. | AUDIO | Ja | Bis zu 600 Sekunden |
 | `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 42) | INT | Ja | 0 bis 2147483647 |

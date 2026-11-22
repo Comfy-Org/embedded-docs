@@ -6,7 +6,7 @@ Dieser Node erstellt ein persönliches Video-Asset für Seedance 2.0. Er lädt I
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `video` | Video, das als persönliches Asset registriert werden soll. | VIDEO | Ja | - |
+| `Video` | Video, das als persönliches Asset registriert werden soll. | VIDEO | Ja | - |
 | `group_id` | Verwenden Sie eine vorhandene Seedance-Asset-Gruppen-ID erneut, um die wiederholte menschliche Verifizierung für dieselbe Person zu überspringen. Leer lassen, um die Echtpersonen-Authentifizierung im Browser auszuführen und eine neue Gruppe zu erstellen. (Standard: leere Zeichenkette) | STRING | Nein | - |
 
 **Video-Einschränkungen:**

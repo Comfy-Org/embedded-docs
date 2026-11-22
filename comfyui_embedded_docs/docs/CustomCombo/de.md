@@ -6,7 +6,7 @@ Der Custom Combo-Node ermöglicht es Ihnen, Ihre eigene Liste von Textoptionen f
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `choice` | Die aus dem benutzerdefinierten Dropdown ausgewählte Textoption. Die Liste der verfügbaren Optionen wird vom Benutzer in der Frontend-Oberfläche des Nodes definiert. | COMBO | Ja | Benutzerdefiniert |
+| `Auswahl` | Die aus dem benutzerdefinierten Dropdown ausgewählte Textoption. Die Liste der verfügbaren Optionen wird vom Benutzer in der Frontend-Oberfläche des Nodes definiert. | COMBO | Ja | Benutzerdefiniert |
 | `index` | Ein ganzzahliger Wert, der verwendet werden kann, um einen Index anzugeben. Standard: 0. | INT | Nein | Jede ganze Zahl (Standard: 0) |
 
 **Hinweis:** Die Validierung für die Eingaben dieses Nodes ist absichtlich deaktiviert. Dadurch können Sie beliebige benutzerdefinierte Textoptionen im Frontend schreiben, ohne dass das Backend prüft, ob Ihre Auswahl einer vordefinierten Liste entspricht. Widgets außer dem Combo-Dropdown sind vollständig im Frontend definiert. Dieser Node ist als experimentell gekennzeichnet.

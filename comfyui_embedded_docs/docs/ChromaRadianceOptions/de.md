@@ -6,7 +6,7 @@ Der Node ChromaRadianceOptions erm√∂glicht es Ihnen, erweiterte Einstellungen f√
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das Modell, auf das Chroma Radiance-Optionen angewendet werden | MODEL | Ja | - |
+| `Modell` | Das Modell, auf das Chroma Radiance-Optionen angewendet werden | MODEL | Ja | - |
 | `preserve_wrapper` | Wenn aktiviert, wird an einen vorhandenen Wrapper einer Modellfunktion delegiert, falls ein solcher existiert. Im Allgemeinen sollte dies aktiviert bleiben. (Standard: True) | BOOLEAN | Nein | - |
 | `start_sigma` | Erstes Sigma, bei dem diese Optionen wirksam sind. (Standard: 1.0) | FLOAT | Nein | 0.0 bis 1.0 |
 | `end_sigma` | Letztes Sigma, bei dem diese Optionen wirksam sind. (Standard: 0.0) | FLOAT | Nein | 0.0 bis 1.0 |

@@ -8,8 +8,8 @@ Dieser Node repariert alte oder beschädigte Fotografien über die Bria API. Er 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `image` | Das zu reparierende Foto. Der Alphakanal wird vor dem Hochladen verworfen. | IMAGE | Ja | - |
-| `moderation` | Moderationseinstellungen für die Anfrage. Die Auswahl von `"true"` blendet zwei zusätzliche boolesche Schalter ein; die Auswahl von `"false"` sendet keine Moderations-Flags. Standard: `"false"`. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
+| `Bild` | Das zu reparierende Foto. Der Alphakanal wird vor dem Hochladen verworfen. | IMAGE | Ja | - |
+| `Moderation` | Moderationseinstellungen für die Anfrage. Die Auswahl von `"true"` blendet zwei zusätzliche boolesche Schalter ein; die Auswahl von `"false"` sendet keine Moderations-Flags. Standard: `"false"`. | DYNAMIC_COMBO | Ja | `"false"`<br>`"true"` |
 
 ### Moderationseingaben
 

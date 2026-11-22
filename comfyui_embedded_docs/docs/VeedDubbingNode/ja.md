@@ -6,7 +6,7 @@ VEED Dubbing は、VEED を使用して動画内の音声を別の言語に翻�
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 吹き替えモデルです。`"standard"` はより低コストでモノラル音声を返し、ラテンアメリカスペイン語とブラジルポルトガル語に対応します。`"pro"` は地域アクセントとステレオ音声を追加します。モデルを選択すると、`video`、`target_language`、`source_language`、`seed` が表示されます。 | DYNAMIC_COMBO | はい | `"standard"`<br>`"pro"` |
+| `モデル` | 吹き替えモデルです。`"standard"` はより低コストでモノラル音声を返し、ラテンアメリカスペイン語とブラジルポルトガル語に対応します。`"pro"` は地域アクセントとステレオ音声を追加します。モデルを選択すると、`video`、`target_language`、`source_language`、`seed` が表示されます。 | DYNAMIC_COMBO | はい | `"standard"`<br>`"pro"` |
 
 ### standard 入力
 

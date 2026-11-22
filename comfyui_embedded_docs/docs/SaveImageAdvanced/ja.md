@@ -8,9 +8,9 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `images` | 保存する画像です。 | IMAGE | はい | - |
-| `filename_prefix` | 保存するファイルのプレフィックスです。`%date:yyyy-MM-dd%` や `%Empty Latent Image.width%` などの書式トークンを含めることができます。（デフォルト: "ComfyUI"） | STRING | はい | - |
-| `format` | 画像を保存するファイル形式です。形式を選択すると、その形式の追加オプションが表示されます。 | DYNAMIC_COMBO | はい | `"png"`<br>`"exr"`<br>`"avif"` |
+| `画像` | 保存する画像です。 | IMAGE | はい | - |
+| `ファイル名プレフィックス` | 保存するファイルのプレフィックスです。`%date:yyyy-MM-dd%` や `%Empty Latent Image.width%` などの書式トークンを含めることができます。（デフォルト: "ComfyUI"） | STRING | はい | - |
+| `フォーマット` | 画像を保存するファイル形式です。形式を選択すると、その形式の追加オプションが表示されます。 | DYNAMIC_COMBO | はい | `"png"`<br>`"exr"`<br>`"avif"` |
 
 ### PNG 入力
 

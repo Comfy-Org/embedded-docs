@@ -10,7 +10,7 @@ O OpenAI GPT Image 2.6 GIF gera um GIF animado a partir de um prompt com os mode
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model` | O modelo GPT Image a usar para a animação. | DYNAMIC_COMBO | Sim | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
+| `modelo` | O modelo GPT Image a usar para a animação. | DYNAMIC_COMBO | Sim | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
 
 ### Entradas do gpt-image-2.6-flare e do gpt-image-2.6-sunburst
 
@@ -18,14 +18,14 @@ Ambos os modelos compartilham os mesmos parâmetros.
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | O que animar. (padrão: `""`) | STRING | Sim | N/A |
-| `model.size` | Tamanho de cada quadro. Tamanhos maiores só comportam contagens de quadros menores. (padrão: `"512x512"`) | COMBO | Sim | `"384x384"`<br>`"512x512"`<br>`"640x640"`<br>`"720x720"`<br>`"768x768"`<br>`"960x960"`<br>`"512x288"`<br>`"288x512"`<br>`"1024x576"`<br>`"576x1024"`<br>`"1280x720"`<br>`"720x1280"` |
-| `model.frame_count` | Número de quadros. Os quadros são cobrados em faixas: 2 a 8, 9, 10 a 12, 13 a 16. (padrão: `9`) | INT | Sim | 2 a 16 |
-| `model.frame_duration_ms` | Por quanto tempo cada quadro é exibido, em milissegundos. (padrão: `200`) | INT | Sim | 20 a 2000 (passo 10) |
-| `model.background` | Fundo do quadro. A transparência é mantida por Save WEBM com vp9, Save Animated WEBP e Save Animated PNG. (padrão: `"opaque"`) | COMBO | Sim | `"opaque"`<br>`"transparent"` |
-| `model.quality` | Qualidade da imagem. Níveis mais altos custam mais e demoram mais. (padrão: `"low"`) | COMBO | Sim | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | Quanto o modelo planeja a animação antes de renderizar. (padrão: `"high"`) | COMBO | Sim | `"low"`<br>`"medium"`<br>`"high"` |
-| `model.seed` | Controla se o nó é executado novamente; os resultados são não determinísticos independentemente da seed. (padrão: `42`) | INT | Sim | 0 a 2147483647 |
+| `prompt` | O que animar. (padrão: `""`) | STRING | Sim | N/A |
+| `tamanho` | Tamanho de cada quadro. Tamanhos maiores só comportam contagens de quadros menores. (padrão: `"512x512"`) | COMBO | Sim | `"384x384"`<br>`"512x512"`<br>`"640x640"`<br>`"720x720"`<br>`"768x768"`<br>`"960x960"`<br>`"512x288"`<br>`"288x512"`<br>`"1024x576"`<br>`"576x1024"`<br>`"1280x720"`<br>`"720x1280"` |
+| `frame_count` | Número de quadros. Os quadros são cobrados em faixas: 2 a 8, 9, 10 a 12, 13 a 16. (padrão: `9`) | INT | Sim | 2 a 16 |
+| `frame_duration_ms` | Por quanto tempo cada quadro é exibido, em milissegundos. (padrão: `200`) | INT | Sim | 20 a 2000 (passo 10) |
+| `fundo` | Fundo do quadro. A transparência é mantida por Save WEBM com vp9, Save Animated WEBP e Save Animated PNG. (padrão: `"opaque"`) | COMBO | Sim | `"opaque"`<br>`"transparent"` |
+| `qualidade` | Qualidade da imagem. Níveis mais altos custam mais e demoram mais. (padrão: `"low"`) | COMBO | Sim | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `complexidade` | Quanto o modelo planeja a animação antes de renderizar. (padrão: `"high"`) | COMBO | Sim | `"low"`<br>`"medium"`<br>`"high"` |
+| `semente` | Controla se o nó é executado novamente; os resultados são não determinísticos independentemente da seed. (padrão: `42`) | INT | Sim | 0 a 2147483647 |
 
 **Restrições e limitações dos parâmetros:**
 

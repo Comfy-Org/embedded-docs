@@ -6,8 +6,8 @@ EmptySD3LatentImage erstellt ein leeres (ausschließlich aus Nullen bestehendes)
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `width` | Die Breite des latenten Bildes in Pixeln (Standard: 1024). Werte werden in Schritten von 16 erhöht. | INT | Ja | 16 bis MAX_RESOLUTION (Schritt: 16) |
-| `height` | Die Höhe des latenten Bildes in Pixeln (Standard: 1024). Werte werden in Schritten von 16 erhöht. | INT | Ja | 16 bis MAX_RESOLUTION (Schritt: 16) |
+| `Breite` | Die Breite des latenten Bildes in Pixeln (Standard: 1024). Werte werden in Schritten von 16 erhöht. | INT | Ja | 16 bis MAX_RESOLUTION (Schritt: 16) |
+| `Höhe` | Die Höhe des latenten Bildes in Pixeln (Standard: 1024). Werte werden in Schritten von 16 erhöht. | INT | Ja | 16 bis MAX_RESOLUTION (Schritt: 16) |
 | `batch_size` | Die Anzahl der im Batch zu generierenden latenten Bilder (Standard: 1). | INT | Ja | 1 bis 4096 |
 
 ## Ausgaben

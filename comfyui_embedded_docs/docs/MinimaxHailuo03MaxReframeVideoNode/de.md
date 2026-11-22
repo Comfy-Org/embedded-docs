@@ -8,7 +8,7 @@ Dieser Node passt ein Video an ein neues Seitenverhältnis an, indem er es auf e
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Modell, das für die Videogenerierung verwendet wird. | DYNAMIC_COMBO | Ja | "MiniMax H3 Max" |
+| `Modell` | Modell, das für die Videogenerierung verwendet wird. | DYNAMIC_COMBO | Ja | "MiniMax H3 Max" |
 
 ### MiniMax H3 Max Eingaben
 

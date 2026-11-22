@@ -8,9 +8,9 @@ Dieser Node erzeugt mit dem Wan 3.0-Modell ein Video aus einem Text-Prompt und o
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `model` | Wählt die für die Generierung verwendete Modellvariante von Wan 3.0 aus. | DYNAMIC_COMBO | Ja | `wan3.0-video`<br>`wan3.0-video-prime` |
-| `seed` | Seed für die Generierung. Standard: 42. | INT | Ja | 0 bis 2147483647 |
-| `watermark` | Gibt an, ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll. Standard: false. | BOOLEAN | Ja | true<br>false |
+| `Modell` | Wählt die für die Generierung verwendete Modellvariante von Wan 3.0 aus. | DYNAMIC_COMBO | Ja | `wan3.0-video`<br>`wan3.0-video-prime` |
+| `Seed` | Seed für die Generierung. Standard: 42. | INT | Ja | 0 bis 2147483647 |
+| `Wasserzeichen` | Gibt an, ob dem Ergebnis ein KI-generiertes Wasserzeichen hinzugefügt werden soll. Standard: false. | BOOLEAN | Ja | true<br>false |
 
 ### Eingaben für wan3.0-video und wan3.0-video-prime
 

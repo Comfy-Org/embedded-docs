@@ -6,8 +6,8 @@ Wendet einen Stapel von LoRAs in einem einzigen Node auf ein Diffusionsmodell an
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Diffusionsmodell, auf das die LoRAs angewendet werden. | MODEL | Ja | - |
-| `loras` | Erweiterbare Gruppe von LoRAs, die in Zeilenreihenfolge auf das Modell angewendet werden (`loras.0`, `loras.1` und so weiter). Fügen Sie eine Zeile pro LoRA hinzu; jede Zeile enthält eine Datei, eine Stärke und einen Ein-/Aus-Schalter. | DYNAMIC_GROUP | Ja | 1 bis 20 Zeilen |
+| `Modell` | Das Diffusionsmodell, auf das die LoRAs angewendet werden. | MODEL | Ja | - |
+| `LoRAs` | Erweiterbare Gruppe von LoRAs, die in Zeilenreihenfolge auf das Modell angewendet werden (`loras.0`, `loras.1` und so weiter). Fügen Sie eine Zeile pro LoRA hinzu; jede Zeile enthält eine Datei, eine Stärke und einen Ein-/Aus-Schalter. | DYNAMIC_GROUP | Ja | 1 bis 20 Zeilen |
 
 ### `loras` Zeilenfelder
 

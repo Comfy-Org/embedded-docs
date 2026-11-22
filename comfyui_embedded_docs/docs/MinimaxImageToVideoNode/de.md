@@ -6,7 +6,7 @@ Erzeugt synchron Videos auf Basis eines Bildes und eines Prompts sowie optionale
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Bild, das als erstes Frame der Videogenerierung verwendet wird | IMAGE | Ja | - |
+| `Bild` | Bild, das als erstes Frame der Videogenerierung verwendet wird | IMAGE | Ja | - |
 | `prompt_text` | Text-Prompt zur Steuerung der Videogenerierung (Standard: leerer String) | STRING | Ja | - |
 | `model` | Modell, das für die Videogenerierung verwendet wird (Standard: "I2V-01") | COMBO | Ja | "I2V-01-Director"<br>"I2V-01"<br>"I2V-01-live" |
 | `seed` | Der Zufallsseed, der zum Erzeugen des Rauschens verwendet wird (Standard: 0) | INT | Nein | 0 bis 18446744073709551615 |

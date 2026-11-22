@@ -6,8 +6,8 @@ Der Node `FeatherMask` wendet einen Feathering-Effekt auf die Ränder einer gege
 
 | Parameter | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `mask` | Die Maske, auf die der Feathering-Effekt angewendet wird. Sie bestimmt den Bereich des Bildes, der vom Feathering-Effekt beeinflusst wird. | MASK |
-| `left` | Gibt den Abstand vom linken Rand an, innerhalb dessen der Feathering-Effekt angewendet wird. | INT |
+| `Maske` | Die Maske, auf die der Feathering-Effekt angewendet wird. Sie bestimmt den Bereich des Bildes, der vom Feathering-Effekt beeinflusst wird. | MASK |
+| `Links` | Gibt den Abstand vom linken Rand an, innerhalb dessen der Feathering-Effekt angewendet wird. | INT |
 | `top` | Gibt den Abstand vom oberen Rand an, innerhalb dessen der Feathering-Effekt angewendet wird. | INT |
 | `right` | Gibt den Abstand vom rechten Rand an, innerhalb dessen der Feathering-Effekt angewendet wird. | INT |
 | `bottom` | Gibt den Abstand vom unteren Rand an, innerhalb dessen der Feathering-Effekt angewendet wird. | INT |

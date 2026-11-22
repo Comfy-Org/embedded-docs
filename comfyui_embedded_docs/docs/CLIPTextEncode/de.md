@@ -10,7 +10,7 @@ Stellen Sie sich das wie die Kommunikation mit einem Künstler vor, der eine and
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `text` | Der zu kodierende Text. Unterstützt mehrzeilige Eingaben und dynamische Prompts. | STRING | Ja | Beliebiger Text |
+| `Text` | Der zu kodierende Text. Unterstützt mehrzeilige Eingaben und dynamische Prompts. | STRING | Ja | Beliebiger Text |
 | `clip` | Das CLIP-Modell, das zur Kodierung des Textes verwendet wird. | CLIP | Ja | Geladene CLIP-Modelle |
 
 Hinweis: Wenn der `clip`-Eingang None ist (zum Beispiel, wenn er von einem Checkpoint-Loader stammt, dessen Checkpoint kein gültiges CLIP- oder Textencoder-Modell enthält), löst der Node einen Fehler aus.

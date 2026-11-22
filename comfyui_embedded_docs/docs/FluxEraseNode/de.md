@@ -6,10 +6,10 @@ Entfernt das maskierte Objekt aus einem Bild und rekonstruiert den Hintergrund. 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|--------------|----------|--------------|---------|
-| `image` | Das zu verarbeitende Eingabebild | IMAGE | Ja | - |
-| `mask` | Weiße Bereiche werden entfernt; schwarze Bereiche bleiben erhalten | MASK | Ja | - |
+| `Bild` | Das zu verarbeitende Eingabebild | IMAGE | Ja | - |
+| `Maske` | Weiße Bereiche werden entfernt; schwarze Bereiche bleiben erhalten | MASK | Ja | - |
 | `dilate_pixels` | Erweitert die Maskengrenzen, um eine saubere Abdeckung der Objektkanten sicherzustellen (Standard: 10) | INT | Ja | 0 bis 25 |
-| `seed` | Der Zufallsseed, der zum Erzeugen des Rauschens verwendet wird (Standard: 0) | INT | Nein | 0 bis 2147483647 |
+| `Seed` | Der Zufallsseed, der zum Erzeugen des Rauschens verwendet wird (Standard: 0) | INT | Nein | 0 bis 2147483647 |
 
 **Hinweis:** Das Eingabebild muss in beiden Dimensionen mindestens 256x256 Pixel groß sein. Die Maske wird automatisch an die Bildabmessungen angepasst, und der Alphakanal des Bildes wird vor der Verarbeitung entfernt.
 

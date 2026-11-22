@@ -8,10 +8,10 @@ Der Node Grok Video Extend erweitert ein vorhandenes Video um eine nahtlose Fort
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Das für die Videoerweiterung zu verwendende Modell. Wenn die Option `"grok-imagine-video"` ausgewählt wird, werden ihre modellspezifischen Einstellungen angezeigt. | DYNAMIC_COMBO | Ja | `"grok-imagine-video"` |
-| `prompt` | Textbeschreibung dessen, was als Nächstes im Video passieren soll. | STRING | Ja | N/A |
-| `video` | Quellvideo, das erweitert werden soll. MP4-Format, 2–15 Sekunden. | VIDEO | Ja | MP4, 2–15 Sekunden, maximal 50 MB |
-| `seed` | Der Parameter `seed` bestimmt, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 bis 2147483647 |
+| `Modell` | Das für die Videoerweiterung zu verwendende Modell. Wenn die Option `"grok-imagine-video"` ausgewählt wird, werden ihre modellspezifischen Einstellungen angezeigt. | DYNAMIC_COMBO | Ja | `"grok-imagine-video"` |
+| `Prompt` | Textbeschreibung dessen, was als Nächstes im Video passieren soll. | STRING | Ja | N/A |
+| `Video` | Quellvideo, das erweitert werden soll. MP4-Format, 2–15 Sekunden. | VIDEO | Ja | MP4, 2–15 Sekunden, maximal 50 MB |
+| `Seed` | Der Parameter `seed` bestimmt, ob der Node erneut ausgeführt werden soll; die tatsächlichen Ergebnisse sind unabhängig vom Seed nicht deterministisch (Standard: 0). | INT | Ja | 0 bis 2147483647 |
 
 ### grok-imagine-video Eingaben
 

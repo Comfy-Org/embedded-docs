@@ -8,7 +8,7 @@ Durch Auswahl eines `model` werden die spezifischen Parameter des Modells sichtb
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Zu verwendendes Modell. `heygen-voice-1-turbo` ist schneller und kostet weniger (Standard: `"heygen-voice-1"`). | DYNAMIC_COMBO | Ja | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `Modell` | Zu verwendendes Modell. `heygen-voice-1-turbo` ist schneller und kostet weniger (Standard: `"heygen-voice-1"`). | DYNAMIC_COMBO | Ja | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `audio` | Aufnahme eines Sprechers zum Klonen. Verwenden Sie mindestens 10 Sekunden klarer Sprache; nur die ersten 3 Minuten werden verwendet. | AUDIO | Ja | - |
 | `text` | Zu sprechender Text, bis zu 5000 Zeichen. Sprachausgaben, die länger als etwa 12 Minuten dauern, schlagen fehl, deshalb sollten Sie sehr langen chinesischen oder japanischen Text aufteilen (Standard: leer). | STRING | Ja | 1 bis 5000 Zeichen |
 | `language` | Sprache des Textes. Legen Sie sie für eng verwandte Sprachen wie Serbisch oder Malaiisch fest, die die automatische Erkennung verwechseln kann (Standard: `"auto"`). | COMBO | Ja | `"auto"`<br>Mehrere Sprachvoreinstellungen |

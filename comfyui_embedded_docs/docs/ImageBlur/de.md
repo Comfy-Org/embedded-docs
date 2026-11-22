@@ -6,9 +6,9 @@ Der Node `ImageBlur` wendet einen Gaußschen Weichzeichner auf ein Bild an, wodu
 
 | Feld | Beschreibung | Datentyp |
 | --- | --- | --- |
-| `image` | Das Eingabebild, das weichgezeichnet werden soll. Dies ist das primäre Ziel für den Weichzeichnungseffekt. | `IMAGE` |
-| `blur_radius` | Bestimmt den Radius des Weichzeichnungseffekts. Ein größerer Radius führt zu einer stärkeren Weichzeichnung. | `INT` |
-| `sigma` | Steuert die Ausbreitung der Weichzeichnung. Ein höherer Sigma-Wert bedeutet, dass die Weichzeichnung einen größeren Bereich um jeden Pixel herum beeinflusst. | `FLOAT` |
+| `Bild` | Das Eingabebild, das weichgezeichnet werden soll. Dies ist das primäre Ziel für den Weichzeichnungseffekt. | `IMAGE` |
+| `Weichzeichnungsradius` | Bestimmt den Radius des Weichzeichnungseffekts. Ein größerer Radius führt zu einer stärkeren Weichzeichnung. | `INT` |
+| `Sigma` | Steuert die Ausbreitung der Weichzeichnung. Ein höherer Sigma-Wert bedeutet, dass die Weichzeichnung einen größeren Bereich um jeden Pixel herum beeinflusst. | `FLOAT` |
 
 ## Ausgaben
 

@@ -6,10 +6,10 @@ Erstellt den Layout-Prompt, den MOSS-Image liest. Er nimmt die im Node „Create
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `prompt` | Beschreibung des gesamten Bildes. Sie wird zur Bildunterschrift des Layouts. | STRING | Ja | - |
-| `element` | Die zu platzierenden Elemente, entnommen aus dem Node „Create Bounding Boxes“. Jede Box trägt ihre Bildunterschrift bei; Textboxen tragen auch ihren Text bei, und Boxen, die eine Farbpalette tragen, behalten diese. | ARRAY | Ja | - |
-| `width` | Breite des generierten Bildes in Pixeln. Die Boxen werden in dieses Pixelraster umgewandelt, verwenden Sie also die Größe des Bildes, das Sie generieren möchten (Standard: 1024). | INT | Ja | 16 bis 16384 (Schritt: 16) |
-| `height` | Höhe des generierten Bildes in Pixeln. Die Boxen werden in dieses Pixelraster umgewandelt, verwenden Sie also die Größe des Bildes, das Sie generieren möchten (Standard: 1024). | INT | Ja | 16 bis 16384 (Schritt: 16) |
+| `Prompt` | Beschreibung des gesamten Bildes. Sie wird zur Bildunterschrift des Layouts. | STRING | Ja | - |
+| `Element` | Die zu platzierenden Elemente, entnommen aus dem Node „Create Bounding Boxes“. Jede Box trägt ihre Bildunterschrift bei; Textboxen tragen auch ihren Text bei, und Boxen, die eine Farbpalette tragen, behalten diese. | ARRAY | Ja | - |
+| `Breite` | Breite des generierten Bildes in Pixeln. Die Boxen werden in dieses Pixelraster umgewandelt, verwenden Sie also die Größe des Bildes, das Sie generieren möchten (Standard: 1024). | INT | Ja | 16 bis 16384 (Schritt: 16) |
+| `Höhe` | Höhe des generierten Bildes in Pixeln. Die Boxen werden in dieses Pixelraster umgewandelt, verwenden Sie also die Größe des Bildes, das Sie generieren möchten (Standard: 1024). | INT | Ja | 16 bis 16384 (Schritt: 16) |
 | `character_boxes` | Nummern der Boxen, die als Zeichen anstelle von Objekten gekennzeichnet werden sollen, wie in der Vorschau von „Create Bounding Boxes“ getaggt, zum Beispiel „1, 3“. Jede Zahl in der Zeichenkette wird gelesen, daher funktioniert jedes Trennzeichen (Standard: leer). | STRING | Ja | - |
 
 ## Ausgaben

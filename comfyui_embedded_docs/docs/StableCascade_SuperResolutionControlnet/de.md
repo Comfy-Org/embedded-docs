@@ -6,7 +6,7 @@ Dieser Node ist Teil der experimentellen Stable-Cascade-Gruppe. Er bereitet Eing
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `image` | Das Eingabebild, das für die Super-Resolution verarbeitet werden soll. Nur die ersten 3 Farbkanäle (RGB) des Bildes werden zur Kodierung verwendet. | IMAGE | Ja | - |
+| `Bild` | Das Eingabebild, das für die Super-Resolution verarbeitet werden soll. Nur die ersten 3 Farbkanäle (RGB) des Bildes werden zur Kodierung verwendet. | IMAGE | Ja | - |
 | `vae` | Das VAE-Modell, das zur Kodierung des Eingabebilds verwendet wird | VAE | Ja | - |
 
 ## Ausgaben

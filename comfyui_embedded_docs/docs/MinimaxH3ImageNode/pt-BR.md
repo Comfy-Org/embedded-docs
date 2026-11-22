@@ -6,12 +6,12 @@ Gera imagens a partir de texto com o MiniMax H3 Image, ou edita e combina até 1
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Range |
 | --- | --- | --- | --- | --- |
-| `model` | `MiniMax-H3-Image` ou `MiniMax-H3-Image-Highspeed` para execuções mais rápidas. Padrão: `"MiniMax-H3-Image"`. | COMBO | Sim | `"MiniMax-H3-Image"`<br>`"MiniMax-H3-Image-Highspeed"` |
+| `modelo` | `MiniMax-H3-Image` ou `MiniMax-H3-Image-Highspeed` para execuções mais rápidas. Padrão: `"MiniMax-H3-Image"`. | COMBO | Sim | `"MiniMax-H3-Image"`<br>`"MiniMax-H3-Image-Highspeed"` |
 | `prompt` | O que gerar, ou como editar as referências. Com imagens de referência conectadas, pode ter no máximo 8.000 caracteres. Padrão: vazio. | STRING | Sim | 1 a 8000 caracteres |
-| `size` | `2K` e `4K` derivam o tamanho a partir de uma proporção de aspecto; `custom` define largura e altura exatas. Padrão: `"2K"`. | DYNAMIC_COMBO | Sim | `"2K"`<br>`"4K"`<br>`"custom"` |
+| `tamanho` | `2K` e `4K` derivam o tamanho a partir de uma proporção de aspecto; `custom` define largura e altura exatas. Padrão: `"2K"`. | DYNAMIC_COMBO | Sim | `"2K"`<br>`"4K"`<br>`"custom"` |
 | `enhance_prompt` | O MiniMax reescreve o prompt em uma descrição de cena detalhada antes de gerar. Edições de imagem são sempre aprimoradas. Quando desativado, escolha uma proporção de aspecto fixa ou um tamanho personalizado. Padrão: true. | BOOLEAN | Não | true<br>false |
-| `seed` | Controla se o nó é executado novamente; os resultados não são determinísticos independentemente da seed. Padrão: 42. | INT | Não | 0 a 2147483647 |
-| `images` | Imagens de referência para editar ou combinar, referenciadas no prompt como `@Image1` a `@Image16` na ordem de conexão. | AUTOGROW | Não | Até 16 imagens |
+| `semente` | Controla se o nó é executado novamente; os resultados não são determinísticos independentemente da seed. Padrão: 42. | INT | Não | 0 a 2147483647 |
+| `imagens` | Imagens de referência para editar ou combinar, referenciadas no prompt como `@Image1` a `@Image16` na ordem de conexão. | AUTOGROW | Não | Até 16 imagens |
 
 ### Entradas de tamanho "2K" e "4K"
 

@@ -7,7 +7,7 @@ Dieser Node verwendet die Tencent Hunyuan3D API, um eine UV-Entfaltung an einem 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `model_3d` | Eingabe-3D-Modell (GLB, OBJ oder FBX). Das Modell muss weniger als 30.000 Flächen haben. | FILE3D | Ja | GLB<br>OBJ<br>FBX |
-| `seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 1) | INT | Nein | 0 bis 2147483647 |
+| `Seed` | Der Seed steuert, ob der Node erneut ausgeführt werden soll; die Ergebnisse sind unabhängig vom Seed nicht deterministisch. (Standard: 1) | INT | Nein | 0 bis 2147483647 |
 
 ## Ausgaben
 

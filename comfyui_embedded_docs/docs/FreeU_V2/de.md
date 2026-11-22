@@ -6,7 +6,7 @@ FreeU_V2 verbessert die Qualität der Bilderzeugung, indem es frequenzbasierte M
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `model` | Das Diffusionsmodell, auf das die FreeU-Verbesserung angewendet werden soll | MODEL | Ja | - |
+| `Modell` | Das Diffusionsmodell, auf das die FreeU-Verbesserung angewendet werden soll | MODEL | Ja | - |
 | `b1` | Skalierungsfaktor für Backbone-Features des ersten Blocks (Standard: 1.3) | FLOAT | Ja | 0.0 - 10.0 |
 | `b2` | Skalierungsfaktor für Backbone-Features des zweiten Blocks (Standard: 1.4) | FLOAT | Ja | 0.0 - 10.0 |
 | `s1` | Skalierungsfaktor für Skip-Features des ersten Blocks (Standard: 0.9) | FLOAT | Ja | 0.0 - 10.0 |

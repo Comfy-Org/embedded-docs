@@ -6,8 +6,8 @@ Este nó cria uma operação de latent que mescla um latent em direção a um la
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 | --- | --- | --- | --- | --- |
-| `reference` | O latent em direção ao qual mesclar. Suas amostras são convertidas para o dispositivo e o dtype do latent sendo processado, depois redimensionadas e repetidas para corresponder a ele. | LATENT | Sim | - |
-| `strength` | O quanto mesclar em direção à referência: 0 deixa o latent inalterado, 1 corresponde ao latent de referência redimensionado (padrão: 1.0). | FLOAT | Sim | 0.0 a 1.0 (passo: 0.0001) |
+| `referência` | O latent em direção ao qual mesclar. Suas amostras são convertidas para o dispositivo e o dtype do latent sendo processado, depois redimensionadas e repetidas para corresponder a ele. | LATENT | Sim | - |
+| `força` | O quanto mesclar em direção à referência: 0 deixa o latent inalterado, 1 corresponde ao latent de referência redimensionado (padrão: 1.0). | FLOAT | Sim | 0.0 a 1.0 (passo: 0.0001) |
 
 ## Saídas
 

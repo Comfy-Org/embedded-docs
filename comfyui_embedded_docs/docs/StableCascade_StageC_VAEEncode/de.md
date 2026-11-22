@@ -6,9 +6,9 @@ Der Node StableCascade_StageC_VAEEncode verarbeitet ein Eingabebild durch einen 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
-| `image` | Das Eingabebild, das in den latenten Raum codiert werden soll | IMAGE | Ja | - |
+| `Bild` | Das Eingabebild, das in den latenten Raum codiert werden soll | IMAGE | Ja | - |
 | `vae` | Das VAE-Modell, das zum Codieren des Bildes verwendet wird | VAE | Ja | - |
-| `compression` | Der Komprimierungsfaktor, der vor der Codierung auf das Bild angewendet wird. Die Bildabmessungen werden durch diesen Wert geteilt und anschließend mit dem Downscale-Verhältnis des VAE multipliziert. Dies ist ein erweiterter Parameter. (Standard: 42) | INT | Ja | 4-128 (Schritt: 1) |
+| `Komprimierung` | Der Komprimierungsfaktor, der vor der Codierung auf das Bild angewendet wird. Die Bildabmessungen werden durch diesen Wert geteilt und anschließend mit dem Downscale-Verhältnis des VAE multipliziert. Dies ist ein erweiterter Parameter. (Standard: 42) | INT | Ja | 4-128 (Schritt: 1) |
 
 ## Ausgaben
 
