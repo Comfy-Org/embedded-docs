@@ -9,7 +9,7 @@ Este nodo acorta texto cortándolo en una longitud máxima especificada. Toma cu
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `text` | La cadena de texto que se truncará. | STRING | Sí | N/A |
-| `max_length` | Longitud máxima del texto. El texto se cortará después de esta cantidad de caracteres (predeterminado: 77). | INT | Sí | 1 a 10000 |
+| `longitud_máxima` | Longitud máxima del texto. El texto se cortará después de esta cantidad de caracteres (predeterminado: 77). | INT | Sí | 1 a 10000 |
 
 ## Salidas
 

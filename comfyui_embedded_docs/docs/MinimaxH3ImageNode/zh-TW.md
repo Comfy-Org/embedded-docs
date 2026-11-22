@@ -6,12 +6,12 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `model` | `MiniMax-H3-Image`，或使用執行速度更快的 `MiniMax-H3-Image-Highspeed`。預設：`"MiniMax-H3-Image"`。 | COMBO | 是 | `"MiniMax-H3-Image"`<br>`"MiniMax-H3-Image-Highspeed"` |
-| `prompt` | 要生成的內容，或如何編輯參考影像。連接參考影像時，最多可達 8,000 個字元。預設：空。 | STRING | 是 | 1 至 8000 個字元 |
-| `size` | `2K` 與 `4K` 會依長寬比推導尺寸；`custom` 則設定確切的寬度與高度。預設：`"2K"`。 | DYNAMIC_COMBO | 是 | `"2K"`<br>`"4K"`<br>`"custom"` |
-| `enhance_prompt` | MiniMax 會在生成前將提示詞改寫為詳細的場景描述。影像編輯一律會進行增強。關閉時，請選擇固定長寬比或自訂尺寸。預設：True。 | BOOLEAN | 否 | True<br>False |
-| `seed` | 控制此節點是否重新執行；無論種子值為何，結果都是不確定的。預設：42。 | INT | 否 | 0 至 2147483647 |
-| `images` | 要編輯或組合的參考影像，在提示詞中依連接順序以 `@Image1` 至 `@Image16` 指稱。 | AUTOGROW | 否 | 最多 16 張影像 |
+| `模型` | `MiniMax-H3-Image`，或使用執行速度更快的 `MiniMax-H3-Image-Highspeed`。預設：`"MiniMax-H3-Image"`。 | COMBO | 是 | `"MiniMax-H3-Image"`<br>`"MiniMax-H3-Image-Highspeed"` |
+| `提示詞` | 要生成的內容，或如何編輯參考影像。連接參考影像時，最多可達 8,000 個字元。預設：空。 | STRING | 是 | 1 至 8000 個字元 |
+| `尺寸` | `2K` 與 `4K` 會依長寬比推導尺寸；`custom` 則設定確切的寬度與高度。預設：`"2K"`。 | DYNAMIC_COMBO | 是 | `"2K"`<br>`"4K"`<br>`"custom"` |
+| `增強提示詞` | MiniMax 會在生成前將提示詞改寫為詳細的場景描述。影像編輯一律會進行增強。關閉時，請選擇固定長寬比或自訂尺寸。預設：True。 | BOOLEAN | 否 | True<br>False |
+| `種子` | 控制此節點是否重新執行；無論種子值為何，結果都是不確定的。預設：42。 | INT | 否 | 0 至 2147483647 |
+| `圖片` | 要編輯或組合的參考影像，在提示詞中依連接順序以 `@Image1` 至 `@Image16` 指稱。 | AUTOGROW | 否 | 最多 16 張影像 |
 
 ### 尺寸 "2K" 與 "4K" 輸入
 

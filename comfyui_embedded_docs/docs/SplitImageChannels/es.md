@@ -6,7 +6,7 @@ Divide una imagen en sus canales rojo, verde y azul, y devuelve el canal alfa co
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `image` | La imagen que se va a dividir. Una entrada de un solo canal (escala de grises) se expande para que las tres salidas de color contengan los mismos datos. | IMAGE | Sí | - |
+| `imagen` | La imagen que se va a dividir. Una entrada de un solo canal (escala de grises) se expande para que las tres salidas de color contengan los mismos datos. | IMAGE | Sí | - |
 
 ## Salidas
 

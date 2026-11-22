@@ -6,9 +6,9 @@ ReplaceVideoLatentFrames reemplaza un rango de fotogramas en un video latente de
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `destination` | El latente de destino donde se reemplazarán los fotogramas. | LATENT | Sí | - |
-| `source` | El latente de origen que proporciona los fotogramas para insertar en el latente de destino. Si no se proporciona, el latente de destino se devuelve sin cambios. | LATENT | No | - |
-| `index` | El índice de fotograma latente inicial en el latente de destino donde se colocarán los fotogramas del latente de origen. Los valores negativos cuentan desde el final (por defecto: 0). | INT | Sí | -MAX_RESOLUTION a MAX_RESOLUTION |
+| `destino` | El latente de destino donde se reemplazarán los fotogramas. | LATENT | Sí | - |
+| `fuente` | El latente de origen que proporciona los fotogramas para insertar en el latente de destino. Si no se proporciona, el latente de destino se devuelve sin cambios. | LATENT | No | - |
+| `índice` | El índice de fotograma latente inicial en el latente de destino donde se colocarán los fotogramas del latente de origen. Los valores negativos cuentan desde el final (por defecto: 0). | INT | Sí | -MAX_RESOLUTION a MAX_RESOLUTION |
 
 **Restricciones:**
 

@@ -10,9 +10,9 @@ Genera imágenes de forma síncrona según el prompt y la resolución. Este nodo
 | `tamaño` | El tamaño de la imagen generada. (por defecto: "1024x1024") | COMBO | Sí | "1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" |
 | `n` | El número de imágenes a generar. (por defecto: 1) | INT | Sí | 1-6 |
 | `semilla` | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales no son deterministas independientemente de la semilla. (por defecto: 0) | INT | Sí | 0-18446744073709551615 |
-| `recraft_style` | Selección opcional de estilo para la generación de imágenes. Cuando no se proporciona, se usa por defecto el estilo "realistic_image". | RECRAFT_STYLE | No | Varias opciones disponibles |
-| `negative_prompt` | Una descripción de texto opcional de elementos no deseados en una imagen. (por defecto: "") | STRING | No | - |
-| `recraft_controls` | Controles adicionales opcionales sobre la generación mediante el nodo Recraft Controls. | RECRAFT_CONTROLS | No | Varias opciones disponibles |
+| `estilo_recraft` | Selección opcional de estilo para la generación de imágenes. Cuando no se proporciona, se usa por defecto el estilo "realistic_image". | RECRAFT_STYLE | No | Varias opciones disponibles |
+| `prompt_negativo` | Una descripción de texto opcional de elementos no deseados en una imagen. (por defecto: "") | STRING | No | - |
+| `controles_recraft` | Controles adicionales opcionales sobre la generación mediante el nodo Recraft Controls. | RECRAFT_CONTROLS | No | Varias opciones disponibles |
 
 **Nota:** El parámetro `seed` solo controla cuándo el nodo se vuelve a ejecutar, pero no hace que la generación de imágenes sea determinista. Las imágenes de salida reales variarán incluso con el mismo valor de semilla.
 

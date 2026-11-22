@@ -6,7 +6,7 @@
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model` | 要使用的分割模型：`"standard"` 适用于任意背景，边缘效果最佳，输出最高可达 3840x2160；`"fast"` 速度更快，输出最高可达 1920x1080；`"green screen"` 用于抠除绿色背景，输出最高可达 3840x2160。更大的视频会被缩小。选择某个选项后会显示其参数。 | DYNAMIC_COMBO | 是 | `"standard"`<br>`"fast"`<br>`"green screen"` |
+| `模型` | 要使用的分割模型：`"standard"` 适用于任意背景，边缘效果最佳，输出最高可达 3840x2160；`"fast"` 速度更快，输出最高可达 1920x1080；`"green screen"` 用于抠除绿色背景，输出最高可达 3840x2160。更大的视频会被缩小。选择某个选项后会显示其参数。 | DYNAMIC_COMBO | 是 | `"standard"`<br>`"fast"`<br>`"green screen"` |
 | `video` | 要抠出主体的视频。最长 60 秒。 | VIDEO | 是 | 最长 60 秒 |
 | `refine_foreground_edges` | 让头发、毛发和精细细节的边缘更干净。关闭此选项可降低费用。适用于 `"standard"` 和 `"fast"`（默认：True）。 | BOOLEAN | 是 | false<br>true |
 | `subject_is_person` | 当主体是物体或动物时请关闭。适用于 `"standard"` 和 `"fast"`（默认：True）。 | BOOLEAN | 是 | false<br>true |

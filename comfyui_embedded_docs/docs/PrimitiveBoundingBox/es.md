@@ -8,8 +8,8 @@ El nodo PrimitiveBoundingBox crea un área rectangular simple definida por su po
 | --- | --- | --- | --- | --- |
 | `x` | La coordenada X de la esquina superior izquierda del cuadro delimitador (por defecto: 0). | INT | Sí | 0 a 16384 |
 | `y` | La coordenada Y de la esquina superior izquierda del cuadro delimitador (por defecto: 0). | INT | Sí | 0 a 16384 |
-| `width` | El ancho del cuadro delimitador (por defecto: 512). | INT | Sí | 1 a 16384 |
-| `height` | La altura del cuadro delimitador (por defecto: 512). | INT | Sí | 1 a 16384 |
+| `ancho` | El ancho del cuadro delimitador (por defecto: 512). | INT | Sí | 1 a 16384 |
+| `alto` | La altura del cuadro delimitador (por defecto: 512). | INT | Sí | 1 a 16384 |
 
 Nota: Todos los valores máximos siguen la constante MAX_RESOLUTION de ComfyUI, que define la dimensión de imagen más grande que el nodo acepta.
 

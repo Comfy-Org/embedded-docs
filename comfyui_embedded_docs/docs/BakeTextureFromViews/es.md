@@ -6,13 +6,13 @@ Proyecta las imágenes renderizadas sobre el diseño UV de la malla. Renderiza l
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `mesh` | La malla con el UV desplegado que se renderizó. | MESH | Sí | - |
-| `images` | Una imagen por cámara, en el orden de las cámaras (Batch Images). Cualquier resolución con la relación de aspecto del render; una resolución mayor produce un horneado más nítido. | IMAGE | Sí | - |
+| `malla` | La malla con el UV desplegado que se renderizó. | MESH | Sí | - |
+| `imágenes` | Una imagen por cámara, en el orden de las cámaras (Batch Images). Cualquier resolución con la relación de aspecto del render; una resolución mayor produce un horneado más nítido. | IMAGE | Sí | - |
 | `camera_info` | Las cámaras con las que se renderizaron las imágenes, tal como se conectaron a Render Mesh. Combina rigs con Batch Cameras. Ninguna: vista frontal autoencuadrada de Render Mesh. | LOAD3D_CAMERA | No | - |
-| `resolution` | Resolución de textura cuadrada. 0 mantiene el tamaño actual de la textura de la malla, o 2048 cuando no tiene ninguna; en caso contrario, la textura actual se remuestrea a esa resolución. Predeterminado: 0. | INT | No | 0 a 8192 (paso: 64) |
+| `resolución` | Resolución de textura cuadrada. 0 mantiene el tamaño actual de la textura de la malla, o 2048 cuando no tiene ninguna; en caso contrario, la textura actual se remuestrea a esa resolución. Predeterminado: 0. | INT | No | 0 a 8192 (paso: 64) |
 | `blend_exponent` | Las vistas se ponderan mediante cos(ángulo de vista)^exponente. Un valor mayor favorece la vista más frontal (más nítida, con costuras más marcadas); un valor menor promedia más vistas (más suave). Predeterminado: 4.0. | FLOAT | No | 0.0 a 32.0 (paso: 0.5) |
 | `fill_unseen` | Los téxeles que ninguna vista ve toman color propagado desde la superficie vista en lugar de la textura o los colores de vértice propios de la malla. Úsalo cuando las vistas reemplacen toda la textura. Predeterminado: false. | BOOLEAN | No | true<br>false |
-| `mask` | Áreas editadas por vista; solo se proyectan los píxeles enmascarados. Una única máscara se aplica a todas las vistas. | MASK | No | - |
+| `máscara` | Áreas editadas por vista; solo se proyectan los píxeles enmascarados. Una única máscara se aplica a todas las vistas. | MASK | No | - |
 
 ## Salidas
 

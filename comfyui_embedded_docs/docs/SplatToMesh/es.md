@@ -14,8 +14,8 @@ Este nodo convierte un splat gaussiano 3D en una superficie de malla coloreada. 
 | `componente_mínima` | Elimina componentes conectados más pequeños que este número de vértices. Remueve burbujas flotantes desconectadas y la capa interna de paredes dobles. 0 mantiene todos los componentes. Predeterminado: 500 | INT | Sí | 0 - 100000 (paso 50) |
 | `opacidad_mínima` | Ignora gaussianos más tenues que este valor antes del mallado. Predeterminado: 0.02 | FLOAT | Sí | 0.0 - 1.0 (paso 0.01) |
 | `enfocar_color` | Nitidez de la textura de vértices. 1.0 proporciona una mezcla físicamente correcta; valores más altos sesgan el color de cada vóxel hacia su gaussiano dominante en lugar de promediar vecinos (elimina la borrosidad de la textura). Afecta solo al color, no a la geometría. Predeterminado: 2.0 | FLOAT | Sí | 1.0 - 8.0 (paso 0.5) |
-| `solid` | Rellena el interior según la orientación de las gaussianas para obtener una única superficie cerrada. Desactivado mantiene el contorno de densidad original, que deja una pared interior oculta detrás de la superficie. Valor predeterminado: True | BOOLEAN | No | True / False |
-| `fill` | Solo se usa cuando `solid` está activado. Coste de cerrar una abertura en relación con seguir la superficie. Los valores bajos cierran aberturas más grandes: alrededor de 3 sella objetos huecos, pero también pone tapas en vasos y cuellos. Valor predeterminado: 20.0 | FLOAT | No | 0.0 - 1000.0 (paso 1.0) |
+| `sólido` | Rellena el interior según la orientación de las gaussianas para obtener una única superficie cerrada. Desactivado mantiene el contorno de densidad original, que deja una pared interior oculta detrás de la superficie. Valor predeterminado: True | BOOLEAN | No | True / False |
+| `rellenar` | Solo se usa cuando `solid` está activado. Coste de cerrar una abertura en relación con seguir la superficie. Los valores bajos cierran aberturas más grandes: alrededor de 3 sella objetos huecos, pero también pone tapas en vasos y cuellos. Valor predeterminado: 20.0 | FLOAT | No | 0.0 - 1000.0 (paso 1.0) |
 
 ## Salidas
 

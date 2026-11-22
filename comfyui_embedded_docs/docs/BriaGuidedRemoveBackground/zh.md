@@ -10,9 +10,9 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 要抠出的图像。 | IMAGE | 是 | - |
-| `prompt` | 要保留的内容，并可选择指定要丢弃或缩小到范围的内容，例如 'the person with the mat and the plant'、'the woman at her desk without the lamp' 或 'only the chair'。不能为空。如果没有任何内容与提示词匹配，结果将完全透明。默认：`""`（空字符串）。 | STRING | 是 | 1 个字符或更多 |
-| `moderation` | 审核设置。设为 `"true"` 时，下方的视觉审核开关即可用。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
+| `图像` | 要抠出的图像。 | IMAGE | 是 | - |
+| `提示词` | 要保留的内容，并可选择指定要丢弃或缩小到范围的内容，例如 'the person with the mat and the plant'、'the woman at her desk without the lamp' 或 'only the chair'。不能为空。如果没有任何内容与提示词匹配，结果将完全透明。默认：`""`（空字符串）。 | STRING | 是 | 1 个字符或更多 |
+| `内容审核` | 审核设置。设为 `"true"` 时，下方的视觉审核开关即可用。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
 
 ### Moderation "true" 输入
 

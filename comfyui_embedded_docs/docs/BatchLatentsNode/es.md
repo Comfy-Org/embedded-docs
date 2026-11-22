@@ -6,7 +6,7 @@ El nodo Batch Latents combina múltiples entradas latentes en un solo lote. Toma
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `latents` | Un conjunto de muestras latentes que se combinarán en un solo lote. Debes proporcionar al menos un latente, y puedes añadir hasta 50. El nodo crea automáticamente ranuras de entrada (`latent_1`, `latent_2`, etc.) a medida que conectas más latentes. | LATENT | Sí | 1 a 50 entradas |
+| `latentes` | Un conjunto de muestras latentes que se combinarán en un solo lote. Debes proporcionar al menos un latente, y puedes añadir hasta 50. El nodo crea automáticamente ranuras de entrada (`latent_1`, `latent_2`, etc.) a medida que conectas más latentes. | LATENT | Sí | 1 a 50 entradas |
 
 **Nota:** Debes proporcionar al menos una entrada latente para que el nodo funcione. El nodo crea automáticamente ranuras de entrada a medida que conectas más latentes, hasta un máximo de 50. Cada latente de entrada se reforma para coincidir con la forma de muestra del primer latente antes de combinarse, y a cualquier latente que no tenga metadatos de índice de lote se le asigna un índice de lote secuencial. Los latentes de entrada se unen a lo largo de la dimensión de lote para producir el resultado combinado.
 

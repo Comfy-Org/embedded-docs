@@ -8,12 +8,12 @@ Convierte texto en voz con Breeze TTS 2. Elige una voz de Breeze, selecciona el 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `voice` | Voz de Breeze con la que hablar, procedente de Breeze Voice Selector o de uno de los nodos de creación de voces de Breeze. | BREEZE_VOICE | Sí | - |
-| `text` | Texto que se va a pronunciar, de 1 a 1000 caracteres. Las etiquetas de audio como `(laughs)` o `(sighs)` se interpretan en lugar de leerse. Predeterminado: vacío. | STRING | Sí | 1 a 1000 caracteres |
-| `language` | Idioma del texto. El inglés y el chino pueden usar cualquiera de los dos modelos; los demás idiomas usan Breeze TTS 2 Multilingual. Una voz suena mejor en su propio idioma, así que para otro idioma usa una copia creada con Breeze Voice Localize. | DYNAMIC_COMBO | Sí | Múltiples opciones disponibles |
-| `delivery` | Cómo se interpreta la línea: `neutral` mantiene la voz tal como está; `directed` sigue instrucciones escritas. Predeterminado: `"neutral"`. | DYNAMIC_COMBO | Sí | `"neutral"`<br>`"directed"` |
-| `speed` | Multiplicador de velocidad que mantiene el tono sin cambios. Predeterminado: 1.0. | FLOAT | No | 0.5 a 2.0 (paso 0.05) |
-| `seed` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 2147483647 |
+| `voz` | Voz de Breeze con la que hablar, procedente de Breeze Voice Selector o de uno de los nodos de creación de voces de Breeze. | BREEZE_VOICE | Sí | - |
+| `texto` | Texto que se va a pronunciar, de 1 a 1000 caracteres. Las etiquetas de audio como `(laughs)` o `(sighs)` se interpretan en lugar de leerse. Predeterminado: vacío. | STRING | Sí | 1 a 1000 caracteres |
+| `idioma` | Idioma del texto. El inglés y el chino pueden usar cualquiera de los dos modelos; los demás idiomas usan Breeze TTS 2 Multilingual. Una voz suena mejor en su propio idioma, así que para otro idioma usa una copia creada con Breeze Voice Localize. | DYNAMIC_COMBO | Sí | Múltiples opciones disponibles |
+| `interpretación` | Cómo se interpreta la línea: `neutral` mantiene la voz tal como está; `directed` sigue instrucciones escritas. Predeterminado: `"neutral"`. | DYNAMIC_COMBO | Sí | `"neutral"`<br>`"directed"` |
+| `velocidad` | Multiplicador de velocidad que mantiene el tono sin cambios. Predeterminado: 1.0. | FLOAT | No | 0.5 a 2.0 (paso 0.05) |
+| `semilla` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 2147483647 |
 
 ### Entradas para los idiomas "English" y "Chinese"
 

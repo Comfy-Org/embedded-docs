@@ -6,7 +6,7 @@ El nodo Video Slice permite extraer un segmento específico de un video. Puedes 
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `video` | El video de entrada que se va a segmentar. | VIDEO | Sí | - |
+| `vídeo` | El video de entrada que se va a segmentar. | VIDEO | Sí | - |
 | `hora de inicio` | Tiempo de inicio en segundos (predeterminado: 0.0). | FLOAT | Sí | -1e5 a 1e5 |
 | `duración` | Duración en segundos, o 0 para duración ilimitada (predeterminado: 0.0). | FLOAT | Sí | 0.0 y superior |
 | `duración estricta` | Si es True, cuando la duración especificada no sea posible, se generará un error (predeterminado: False). | BOOLEAN | Sí | - |

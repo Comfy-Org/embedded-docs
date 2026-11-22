@@ -6,13 +6,13 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `conditioning` | 文本条件。UltraTex 训练时使用的是空提示词。 | CONDITIONING | 是 | - |
+| `条件` | 文本条件。UltraTex 训练时使用的是空提示词。 | CONDITIONING | 是 | - |
 | `vae` | 用于编码法线、视角和参考图的 VAE。 | VAE | 是 | - |
-| `normals` | Render Mesh 的 `world normal` 图像：6 个标准视角，或 4 个侧面视角。 | IMAGE | 是 | - |
-| `masks` | 相同视角的 Render Mesh 遮罩，每个视角一个。 | MASK | 是 | - |
-| `reference` | 物体应有的外观，从正面相机一侧观察。 | IMAGE | 是 | - |
-| `reference_mask` | 参考图的物体遮罩，物体部分为白色。默认：全白。 | MASK | 否 | - |
-| `extra_views` | 更多参考图：从其他视角观察的物体，每张都与其视角绑定，就像参考图绑定到正面一样。默认：`"off"`。 | DYNAMIC_COMBO | 是 | `"off"`<br>`"on"` |
+| `法线` | Render Mesh 的 `world normal` 图像：6 个标准视角，或 4 个侧面视角。 | IMAGE | 是 | - |
+| `蒙版` | 相同视角的 Render Mesh 遮罩，每个视角一个。 | MASK | 是 | - |
+| `参考图像` | 物体应有的外观，从正面相机一侧观察。 | IMAGE | 是 | - |
+| `参考蒙版` | 参考图的物体遮罩，物体部分为白色。默认：全白。 | MASK | 否 | - |
+| `额外视图` | 更多参考图：从其他视角观察的物体，每张都与其视角绑定，就像参考图绑定到正面一样。默认：`"off"`。 | DYNAMIC_COMBO | 是 | `"off"`<br>`"on"` |
 
 ### Extra Views "on" 输入
 

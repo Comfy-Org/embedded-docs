@@ -7,15 +7,15 @@ El nodo Nano Banana 2 genera o edita imágenes de forma síncrona a través de l
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
 | `prompt` | Prompt de texto que describe la imagen a generar o las ediciones a aplicar. Incluye cualquier restricción, estilo o detalle que el modelo deba seguir. No puede estar vacío ni contener solo espacios en blanco. (predeterminado: vacío) | STRING | Sí | N/A |
-| `model` | El modelo Gemini que se usará para la generación de imágenes. | COMBO | Sí | "Nano Banana 2 (Gemini 3.1 Flash Imagen)" |
-| `seed` | Cuando la semilla se fija en un valor específico, el modelo hace su mejor esfuerzo por proporcionar la misma respuesta en solicitudes repetidas. No se garantiza una salida determinista. Además, cambiar el modelo o la configuración de parámetros, como la temperatura, puede provocar variaciones en la respuesta incluso cuando se usa el mismo valor de semilla. De forma predeterminada, se usa un valor de semilla aleatorio. (predeterminado: 42) | INT | Sí | 0 a 18446744073709551615 |
-| `aspect_ratio` | Si se establece en 'auto', coincide con la relación de aspecto de la imagen de entrada; si no se proporciona ninguna imagen, normalmente se genera una imagen de 16:9. (predeterminado: "auto") | COMBO | Sí | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"4:5"<br>"5:4"<br>"9:16"<br>"16:9"<br>"21:9" |
-| `resolution` | Resolución de salida objetivo. Para 2K/4K se usa el escalador nativo de Gemini. | COMBO | Sí | "1K"<br>"2K"<br>"4K" |
-| `response_modalities` | Determina el tipo de contenido que devuelve el modelo: "IMAGE" devuelve solo una imagen; "IMAGE+TEXT" también devuelve texto. (avanzado) | COMBO | Sí | "IMAGE"<br>"IMAGE+TEXT" |
-| `thinking_level` | Controla la profundidad del proceso de razonamiento del modelo. | COMBO | Sí | "MINIMAL"<br>"HIGH" |
-| `images` | Imagen(es) de referencia opcional(es). Para incluir varias imágenes, usa el nodo Batch Images (hasta 14). | IMAGE | No | 1 a 14 imágenes |
-| `files` | Archivo(s) opcional(es) para usar como contexto del modelo. Acepta entradas del nodo Gemini Generate Content Input Files. | CUSTOM | No | N/A |
-| `system_prompt` | Instrucciones fundamentales que dictan el comportamiento de una IA. (predeterminado: un prompt predefinido que indica al modelo que siempre produzca una imagen) (avanzado) | STRING | No | N/A |
+| `modelo` | El modelo Gemini que se usará para la generación de imágenes. | COMBO | Sí | "Nano Banana 2 (Gemini 3.1 Flash Imagen)" |
+| `semilla` | Cuando la semilla se fija en un valor específico, el modelo hace su mejor esfuerzo por proporcionar la misma respuesta en solicitudes repetidas. No se garantiza una salida determinista. Además, cambiar el modelo o la configuración de parámetros, como la temperatura, puede provocar variaciones en la respuesta incluso cuando se usa el mismo valor de semilla. De forma predeterminada, se usa un valor de semilla aleatorio. (predeterminado: 42) | INT | Sí | 0 a 18446744073709551615 |
+| `relación_de_aspecto` | Si se establece en 'auto', coincide con la relación de aspecto de la imagen de entrada; si no se proporciona ninguna imagen, normalmente se genera una imagen de 16:9. (predeterminado: "auto") | COMBO | Sí | "auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"4:5"<br>"5:4"<br>"9:16"<br>"16:9"<br>"21:9" |
+| `resolución` | Resolución de salida objetivo. Para 2K/4K se usa el escalador nativo de Gemini. | COMBO | Sí | "1K"<br>"2K"<br>"4K" |
+| `modalidades_de_respuesta` | Determina el tipo de contenido que devuelve el modelo: "IMAGE" devuelve solo una imagen; "IMAGE+TEXT" también devuelve texto. (avanzado) | COMBO | Sí | "IMAGE"<br>"IMAGE+TEXT" |
+| `nivel_de_pensamiento` | Controla la profundidad del proceso de razonamiento del modelo. | COMBO | Sí | "MINIMAL"<br>"HIGH" |
+| `imágenes` | Imagen(es) de referencia opcional(es). Para incluir varias imágenes, usa el nodo Batch Images (hasta 14). | IMAGE | No | 1 a 14 imágenes |
+| `archivos` | Archivo(s) opcional(es) para usar como contexto del modelo. Acepta entradas del nodo Gemini Generate Content Input Files. | CUSTOM | No | N/A |
+| `prompt_del_sistema` | Instrucciones fundamentales que dictan el comportamiento de una IA. (predeterminado: un prompt predefinido que indica al modelo que siempre produzca una imagen) (avanzado) | STRING | No | N/A |
 
 **Nota:** La entrada `images` admite un máximo de 14 imágenes. Si se proporcionan más, el nodo genera un error. La entrada `prompt` no debe estar vacía ni contener solo espacios en blanco.
 

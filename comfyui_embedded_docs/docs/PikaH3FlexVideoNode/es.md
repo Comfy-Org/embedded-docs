@@ -6,14 +6,14 @@ Este nodo genera un video con audio sincronizado a partir de un prompt de texto,
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `prompt` | Lo que sucede en el video, incluido el sonido que deseas. No debe estar vacío. Predeterminado: "" (cadena vacía). | STRING | Sí | 1 a 8000 caracteres |
+| `indicación` | Lo que sucede en el video, incluido el sonido que deseas. No debe estar vacío. Predeterminado: "" (cadena vacía). | STRING | Sí | 1 a 8000 caracteres |
 | `first_frame` | Imagen opcional usada como fotograma inicial. Conectarla ejecuta imagen a video en lugar de texto a video. | IMAGE | No | - |
 | `last_frame` | Imagen opcional usada como fotograma final. Se puede usar junto con `first_frame` o por sí sola. | IMAGE | No | - |
-| `resolution` | Resolución de salida. `"1080p"` y superiores se renderizan a 768p y se escalan una vez. La misma semilla a 480p genera un video diferente. Predeterminado: `"768p"`. | COMBO | Sí | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
+| `resolución` | Resolución de salida. `"1080p"` y superiores se renderizan a 768p y se escalan una vez. La misma semilla a 480p genera un video diferente. Predeterminado: `"768p"`. | COMBO | Sí | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
 | `aspect_ratio` | Relación de aspecto de salida. `"auto"` sigue el primer fotograma conectado; de lo contrario, sigue el prompt. Predeterminado: `"auto"`. | COMBO | Sí | `"auto"`<br>`"21:9"`<br>`"16:9"`<br>`"3:2"`<br>`"4:3"`<br>`"5:4"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"9:21"` |
-| `duration` | Duración del clip en segundos. La longitud de salida sigue una cuadrícula de fotogramas: 5 segundos dan 124 fotogramas, aproximadamente 5,17 segundos. Predeterminado: 5. | INT | Sí | 5 a 15 segundos |
+| `duración` | Duración del clip en segundos. La longitud de salida sigue una cuadrícula de fotogramas: 5 segundos dan 124 fotogramas, aproximadamente 5,17 segundos. Predeterminado: 5. | INT | Sí | 5 a 15 segundos |
 | `rewrite_prompt` | Permite que Pika expanda primero el prompt. Entonces, la misma semilla da un video diferente en cada ejecución. Predeterminado: False. | BOOLEAN | Sí | true<br>false |
-| `seed` | Semilla para el muestreo. Con `rewrite_prompt` desactivado, la misma semilla repite el video exactamente, aunque una ejecución local con la misma semilla da un resultado diferente. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
+| `semilla` | Semilla para el muestreo. Con `rewrite_prompt` desactivado, la misma semilla repite el video exactamente, aunque una ejecución local con la misma semilla da un resultado diferente. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
 
 **Restricciones:**
 

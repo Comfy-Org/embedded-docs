@@ -8,7 +8,7 @@ El nodo de Guía de Autoatención aplica guía a modelos de difusión modificand
 | --- | --- | --- | --- | --- |
 | `modelo` | El modelo de difusión al que se aplicará la guía de autoatención | MODEL | Sí | - |
 | `escala` | La intensidad del efecto de guía de autoatención (predeterminado: 0.5) | FLOAT | No | -2.0 a 5.0 |
-| `blur_sigma` | La cantidad de desenfoque aplicada para crear el mapa de guía (predeterminado: 2.0) | FLOAT | No | 0.0 a 10.0 |
+| `sigma_de_desenfoque` | La cantidad de desenfoque aplicada para crear el mapa de guía (predeterminado: 2.0) | FLOAT | No | 0.0 a 10.0 |
 
 ## Salidas
 

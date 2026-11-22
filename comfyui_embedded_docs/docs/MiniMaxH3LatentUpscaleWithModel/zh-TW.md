@@ -6,10 +6,10 @@ MiniMax H3 Latent Upscale With Model 會使用 Latent 放大模型，將 MiniMax
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Latent 放大模型，通常透過 Load Latent Upscale Model 載入。它必須是 MiniMax H3 3D-conv latent 放大器。 | LATENT_UPSCALE_MODEL | 是 | - |
-| `samples` | 要調整尺寸的 MiniMax H3 latent。巢狀 latent 會保持其音訊部分不變。 | LATENT | 是 | - |
-| `width` | 目標影片寬度，單位為像素。latent 會調整為 `width / 16` 欄，因此數值會向下捨入至 16 的倍數。（預設值：2560） | INT | 是 | 32 至 16384 （步進值：32） |
-| `height` | 目標影片高度，單位為像素，也會向下捨入至 16 的倍數。（預設值：1440） | INT | 是 | 32 至 16384 （步進值：32） |
+| `模型` | Latent 放大模型，通常透過 Load Latent Upscale Model 載入。它必須是 MiniMax H3 3D-conv latent 放大器。 | LATENT_UPSCALE_MODEL | 是 | - |
+| `樣本` | 要調整尺寸的 MiniMax H3 latent。巢狀 latent 會保持其音訊部分不變。 | LATENT | 是 | - |
+| `寬度` | 目標影片寬度，單位為像素。latent 會調整為 `width / 16` 欄，因此數值會向下捨入至 16 的倍數。（預設值：2560） | INT | 是 | 32 至 16384 （步進值：32） |
+| `高度` | 目標影片高度，單位為像素，也會向下捨入至 16 的倍數。（預設值：1440） | INT | 是 | 32 至 16384 （步進值：32） |
 
 當要求的尺寸已與 latent 相符時，會原樣返回輸入的 latent。被縮放的 latent 不帶 `noise_mask`，因此部分遮罩的 latent 會失去其遮罩。此網路會以時間切片執行其 3D 卷積，讓長片段使用的記憶體維持在接近單一時間切片的用量。
 

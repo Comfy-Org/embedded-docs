@@ -8,7 +8,7 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的模型。`heygen-voice-1-turbo` 速度更快，成本更低。选择模型后会显示其特有参数：`voice_id`、`text`、`language` 和 `expressiveness_boost`。 | DYNAMIC_COMBO | 是 | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `模型` | 要使用的模型。`heygen-voice-1-turbo` 速度更快，成本更低。选择模型后会显示其特有参数：`voice_id`、`text`、`language` 和 `expressiveness_boost`。 | DYNAMIC_COMBO | 是 | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `voice_id` | 来自 HeyGen Voice 1.0 Instant Clone 的声音（默认：空）。 | STRING | 是 | 不适用 |
 | `text` | 要朗读的文本。最多 5000 个字符；超过约 12 分钟的语音会失败，因此请拆分非常长的中文或日文文本（默认：空）。 | STRING | 是 | 1 至 5000 个字符 |
 | `language` | 文本的语言。对于塞尔维亚语或马来语等自动检测容易混淆的近似语言，请手动设置（默认："auto"）。 | COMBO | 是 | `"auto"`<br>多种语言预设 |

@@ -6,12 +6,12 @@ El nodo Kling Omni Image (Pro) crea o edita imágenes utilizando el modelo más 
 
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model_name` | El modelo específico de Kling AI a utilizar para la generación de imágenes. | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-image-o1"` |
+| `nombre_del_modelo` | El modelo específico de Kling AI a utilizar para la generación de imágenes. | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-image-o1"` |
 | `prompt` | Una descripción textual que describe el contenido de la imagen. Puede incluir tanto descripciones positivas como negativas. El texto debe tener entre 1 y 2500 caracteres de longitud. | STRING | Sí | - |
-| `resolution` | La resolución objetivo para la imagen generada. Nota: La resolución 4K no es compatible con el modelo `kling-image-o1`. | COMBO | Sí | `"1K"`<br>`"2K"`<br>`"4K"` |
-| `aspect_ratio` | La relación de aspecto deseada (ancho a alto) para la imagen generada. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"3:2"`<br>`"2:3"`<br>`"21:9"` |
+| `resolución` | La resolución objetivo para la imagen generada. Nota: La resolución 4K no es compatible con el modelo `kling-image-o1`. | COMBO | Sí | `"1K"`<br>`"2K"`<br>`"4K"` |
+| `relación_de_aspecto` | La relación de aspecto deseada (ancho a alto) para la imagen generada. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"3:2"`<br>`"2:3"`<br>`"21:9"` |
 | `cantidad_de_series` | Generar una serie de imágenes. Esta función no es compatible con el modelo `kling-image-o1`. (valor predeterminado: "disabled") | COMBO | Sí | `"disabled"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` |
-| `reference_images` | Hasta 10 imágenes de referencia adicionales. Cada imagen debe tener al menos 300 píxeles tanto de ancho como de alto, y su relación de aspecto debe estar entre 1:2.5 y 2.5:1. | IMAGE | No | - |
+| `imágenes_de_referencia` | Hasta 10 imágenes de referencia adicionales. Cada imagen debe tener al menos 300 píxeles tanto de ancho como de alto, y su relación de aspecto debe estar entre 1:2.5 y 2.5:1. | IMAGE | No | - |
 | `semilla` | La semilla controla si el nodo debe reejecutarse; los resultados no son deterministas independientemente de la semilla. (valor predeterminado: 0) | INT | No | 0 a 2147483647 |
 
 ## Salidas

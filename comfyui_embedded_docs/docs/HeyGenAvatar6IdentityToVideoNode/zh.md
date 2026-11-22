@@ -8,14 +8,14 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 模型选择器。`"heygen-avatar-6-turbo"` 是更便宜、更快的档位；两个模型接受相同的输入和分辨率。 | COMBO | 是 | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
-| `avatar` | 要展示的形象外观。直接列出 19 个支持 Avatar 6 的内置形象；`custom avatar` 会显示 `custom_avatar_id`，用于你在 HeyGen 中制作的形象。 | DYNAMIC_COMBO | 是 | 19 个内置形象<br>`custom avatar` |
-| `speech` | 用文本脚本（HeyGen 文本转语音）或你自己的音频来驱动形象。显示名称：语音来源。 | DYNAMIC_COMBO | 是 | `"script"`<br>`"audio"` |
-| `resolution` | 输出视频的分辨率。默认：`"1080p"`。 | COMBO | 是 | `"1080p"`<br>`"2k"` |
-| `aspect_ratio` | 输出视频的宽高比。`"auto"` 跟随形象外观自身的素材。默认：`"auto"`。 | COMBO | 是 | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `motion_prompt` | 用于指导手势、表情、姿态和镜头运动的可选提示。默认：空字符串。 | STRING | 是 | 多行文本 |
-| `motion_expressiveness` | `"less"` 会产生更少、更小的手势。两者重叠时，motion prompt 优先。默认：`"default"`。 | COMBO | 是 | `"less"`<br>`"default"` |
-| `seed` | 种子控制节点是否应重新运行；无论种子如何，结果都是不确定的。默认：42。 | INT | 是 | 0 到 2147483647 |
+| `模型` | 模型选择器。`"heygen-avatar-6-turbo"` 是更便宜、更快的档位；两个模型接受相同的输入和分辨率。 | COMBO | 是 | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `虚拟形象` | 要展示的形象外观。直接列出 19 个支持 Avatar 6 的内置形象；`custom avatar` 会显示 `custom_avatar_id`，用于你在 HeyGen 中制作的形象。 | DYNAMIC_COMBO | 是 | 19 个内置形象<br>`custom avatar` |
+| `语音` | 用文本脚本（HeyGen 文本转语音）或你自己的音频来驱动形象。显示名称：语音来源。 | DYNAMIC_COMBO | 是 | `"script"`<br>`"audio"` |
+| `分辨率` | 输出视频的分辨率。默认：`"1080p"`。 | COMBO | 是 | `"1080p"`<br>`"2k"` |
+| `宽高比` | 输出视频的宽高比。`"auto"` 跟随形象外观自身的素材。默认：`"auto"`。 | COMBO | 是 | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `动作提示词` | 用于指导手势、表情、姿态和镜头运动的可选提示。默认：空字符串。 | STRING | 是 | 多行文本 |
+| `动作表现力` | `"less"` 会产生更少、更小的手势。两者重叠时，motion prompt 优先。默认：`"default"`。 | COMBO | 是 | `"less"`<br>`"default"` |
+| `种子` | 种子控制节点是否应重新运行；无论种子如何，结果都是不确定的。默认：42。 | INT | 是 | 0 到 2147483647 |
 
 ### `custom avatar` 输入
 

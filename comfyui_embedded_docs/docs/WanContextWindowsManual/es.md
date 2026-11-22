@@ -8,11 +8,11 @@ El nodo WAN Context Windows (Manual) permite configurar manualmente las ventanas
 | --- | --- | --- | --- | --- |
 | `modelo` | El modelo al que aplicar ventanas de contexto durante el muestreo. | MODEL | Sí | - |
 | `longitud_contexto` | La longitud de la ventana de contexto en fotogramas reales. Debe ser 4*n + 1 (predeterminado: 81). | INT | Sí | 1 a 16384 (MAX_RESOLUTION), paso 4 |
-| `context_overlap` | El solapamiento de la ventana de contexto en fotogramas reales (predeterminado: 30). | INT | Sí | 0 o superior |
-| `context_schedule` | Algoritmo de planificación dependiente del paso para ventanas de contexto (predeterminado: "uniform_standard"). | COMBO | Sí | "static_standard"<br>"uniform_standard"<br>"uniform_looped"<br>"batched" |
-| `context_stride` | El paso de la ventana de contexto; solo aplicable a planificaciones uniformes (predeterminado: 1). | INT | Sí | 1 o superior |
-| `closed_loop` | Si se debe cerrar el bucle de la ventana de contexto; solo aplicable a planificaciones en bucle (predeterminado: False). | BOOLEAN | Sí | - |
-| `fuse_method` | El método que se utiliza para fusionar las ventanas de contexto (predeterminado: "pyramid"). | COMBO | Sí | "pyramid"<br>"gaussian"<br>"average"<br>"overlap" |
+| `superposición_de_contexto` | El solapamiento de la ventana de contexto en fotogramas reales (predeterminado: 30). | INT | Sí | 0 o superior |
+| `programa_de_contexto` | Algoritmo de planificación dependiente del paso para ventanas de contexto (predeterminado: "uniform_standard"). | COMBO | Sí | "static_standard"<br>"uniform_standard"<br>"uniform_looped"<br>"batched" |
+| `zancada_de_contexto` | El paso de la ventana de contexto; solo aplicable a planificaciones uniformes (predeterminado: 1). | INT | Sí | 1 o superior |
+| `bucle_cerrado` | Si se debe cerrar el bucle de la ventana de contexto; solo aplicable a planificaciones en bucle (predeterminado: False). | BOOLEAN | Sí | - |
+| `método_de_fusión` | El método que se utiliza para fusionar las ventanas de contexto (predeterminado: "pyramid"). | COMBO | Sí | "pyramid"<br>"gaussian"<br>"average"<br>"overlap" |
 | `freenoise` | Si se debe aplicar el barajado de ruido FreeNoise; mejora la mezcla de ventanas (predeterminado: True). | BOOLEAN | Sí | - |
 | `retain_first_frame` | Conservar el primer fotograma I2V en cada ventana de contexto (puede ayudar a mantener la referencia inicial) (predeterminado: False). | BOOLEAN | Sí | - |
 | `split_conds_to_windows` | Si se deben dividir los múltiples condicionamientos (creados por ConditionCombine) en cada ventana según el índice de región (predeterminado: False). | BOOLEAN | Sí | - |

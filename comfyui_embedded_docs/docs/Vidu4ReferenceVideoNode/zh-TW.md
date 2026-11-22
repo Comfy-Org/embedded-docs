@@ -8,7 +8,7 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用於影片生成的模型。選取模型後會顯示其專屬參數：`reference_images`、`reference_audios`、`prompt`、`aspect_ratio`、`resolution`、`duration`、`audio` 和 `seed`。 | DYNAMIC_COMBO | 是 | `"Vidu Q4 Preview"` |
+| `模型` | 用於影片生成的模型。選取模型後會顯示其專屬參數：`reference_images`、`reference_audios`、`prompt`、`aspect_ratio`、`resolution`、`duration`、`audio` 和 `seed`。 | DYNAMIC_COMBO | 是 | `"Vidu Q4 Preview"` |
 | `reference_images` | 可增長插槽：連接一或多張參考圖片（`image_1`、`image_2`、...）用於生成的影片；批次中的每張圖片都會計入總數。請在提示詞中依序引用它們：image 1、image 2，依此類推。 | IMAGE | 是 | 最多 15 張圖片 |
 | `reference_audios` | 可增長插槽：連接可選的語音參考（`audio_1`、`audio_2`、`audio_3`），每段 3 到 12 秒。只會使用聲音，不會使用字詞：在提示詞中撰寫對話，並依序指派聲音，例如 `image 1 says "Hello!" in the voice from audio 1`。需要啟用 `audio`。 | AUDIO | 否 | 最多 3 個片段 |
 | `prompt` | 用於影片生成的文字描述，最多 5000 個字元。需要用它來描述你想使用的參考內容。 | STRING | 是 | 任意文字 |

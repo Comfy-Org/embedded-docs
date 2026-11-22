@@ -6,7 +6,7 @@ Resincroniza la boca de un hablante en un video con una nueva pista de voz usand
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo a usar. Al seleccionar un modelo se muestran los parámetros específicos de este: `video`, `audio` y `seed`. | DYNAMIC_COMBO | Sí | `"lipsync-2.0"` |
+| `modelo` | Modelo a usar. Al seleccionar un modelo se muestran los parámetros específicos de este: `video`, `audio` y `seed`. | DYNAMIC_COMBO | Sí | `"lipsync-2.0"` |
 | `video` | Metraje de un hablante de frente. Si es más corto que el audio, se reproduce hacia adelante y hacia atrás hasta que termina el audio. | VIDEO | Sí | - |
 | `audio` | Nueva locución, de hasta 600 segundos. Establece la duración del video. | AUDIO | Sí | Hasta 600 segundos |
 | `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas, independientemente de la semilla. (predeterminado: 42) | INT | Sí | 0 a 2147483647 |

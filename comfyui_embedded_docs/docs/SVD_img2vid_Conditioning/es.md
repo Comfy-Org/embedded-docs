@@ -6,7 +6,7 @@ El nodo `SVD_img2vid_Conditioning` prepara los datos de condicionamiento para la
 
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `clip_vision` | Modelo de visión CLIP para codificar la imagen de entrada | CLIP_VISION | Sí | - |
+| `visión_clip` | Modelo de visión CLIP para codificar la imagen de entrada | CLIP_VISION | Sí | - |
 | `imagen_inicial` | Imagen inicial que se usará como punto de partida para la generación de video | IMAGE | Sí | - |
 | `vae` | Modelo VAE para codificar la imagen en el espacio latente | VAE | Sí | - |
 | `ancho` | Ancho del video de salida (predeterminado: 1024, paso: 8) | INT | Sí | 16 a MAX_RESOLUTION |

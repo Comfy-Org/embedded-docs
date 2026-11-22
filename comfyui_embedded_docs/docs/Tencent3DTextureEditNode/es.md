@@ -6,9 +6,9 @@ Este nodo utiliza la API de Tencent Hunyuan3D para editar las texturas de un mod
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model_3d` | Modelo 3D en formato FBX. El modelo debe tener menos de 100000 caras. | FILE3D | Sí | FBX, Cualquiera |
+| `modelo_3d` | Modelo 3D en formato FBX. El modelo debe tener menos de 100000 caras. | FILE3D | Sí | FBX, Cualquiera |
 | `prompt` | Describe la edición de textura. Admite hasta 1024 caracteres UTF-8. | STRING | Sí |  |
-| `seed` | La semilla controla si el nodo debe re-ejecutarse; los resultados no son deterministas independientemente de la semilla. (predeterminado: 0) | INT | No | 0 a 2147483647 |
+| `semilla` | La semilla controla si el nodo debe re-ejecutarse; los resultados no son deterministas independientemente de la semilla. (predeterminado: 0) | INT | No | 0 a 2147483647 |
 
 **Nota:** La entrada `model_3d` debe ser un archivo en formato FBX. Este nodo no admite otros formatos de archivo 3D.
 

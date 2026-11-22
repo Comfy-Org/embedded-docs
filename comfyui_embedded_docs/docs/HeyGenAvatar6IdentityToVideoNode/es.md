@@ -8,14 +8,14 @@ Genera un video de un avatar de HeyGen hablando con Avatar 6. Elige uno de los a
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Selector de modelo. `"heygen-avatar-6-turbo"` es el nivel más económico y rápido; ambos modelos aceptan las mismas entradas y resoluciones. | COMBO | Sí | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `modelo` | Selector de modelo. `"heygen-avatar-6-turbo"` es el nivel más económico y rápido; ambos modelos aceptan las mismas entradas y resoluciones. | COMBO | Sí | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
 | `avatar` | Aspecto de avatar que se va a presentar. Los 19 aspectos integrados que admiten Avatar 6 se listan directamente; `custom avatar` muestra `custom_avatar_id` para un aspecto que hayas creado en HeyGen. | DYNAMIC_COMBO | Sí | 19 aspectos integrados<br>`custom avatar` |
-| `speech` | Controla el avatar con un guion de texto (texto a voz de HeyGen) o tu propio audio. Nombre para mostrar: origen del habla. | DYNAMIC_COMBO | Sí | `"script"`<br>`"audio"` |
-| `resolution` | Resolución del video de salida. Predeterminado: `"1080p"`. | COMBO | Sí | `"1080p"`<br>`"2k"` |
+| `voz` | Controla el avatar con un guion de texto (texto a voz de HeyGen) o tu propio audio. Nombre para mostrar: origen del habla. | DYNAMIC_COMBO | Sí | `"script"`<br>`"audio"` |
+| `resolución` | Resolución del video de salida. Predeterminado: `"1080p"`. | COMBO | Sí | `"1080p"`<br>`"2k"` |
 | `aspect_ratio` | Relación de aspecto del video de salida. `"auto"` sigue el metraje propio del aspecto de avatar. Predeterminado: `"auto"`. | COMBO | Sí | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
 | `motion_prompt` | Dirección opcional para gestos, expresión, postura y movimiento de cámara. Predeterminado: cadena vacía. | STRING | Sí | Texto multilínea |
 | `motion_expressiveness` | `"less"` proporciona menos gestos y más pequeños. El prompt de movimiento tiene prioridad donde ambos se solapan. Predeterminado: `"default"`. | COMBO | Sí | `"less"`<br>`"default"` |
-| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
 
 ### Entradas de `custom avatar`
 

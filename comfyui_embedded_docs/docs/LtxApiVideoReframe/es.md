@@ -7,9 +7,9 @@ Reencuadra un video a una nueva resolución y relación de aspecto. El área fue
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `video` | Video a reencuadrar, de hasta 60 segundos y 1800 fotogramas, con cada lado entre 64 y 4096 píxeles. | VIDEO | Sí | - |
-| `resolution` | Tamaño y relación de aspecto de salida, en 720p o 1080p. Predeterminado: `"(1080p) 1080x1920 (9:16)"`. | COMBO | Sí | `"(720p) 720x720 (1:1)"`<br>`"(720p) 720x900 (4:5)"`<br>`"(720p) 900x720 (5:4)"`<br>`"(720p) 720x1280 (9:16)"`<br>`"(720p) 1280x720 (16:9)"`<br>`"(1080p) 1080x1080 (1:1)"`<br>`"(1080p) 1080x1350 (4:5)"`<br>`"(1080p) 1350x1080 (5:4)"`<br>`"(1080p) 1080x1920 (9:16)"`<br>`"(1080p) 1920x1080 (16:9)"` |
-| `placement` | Dónde se ubica el video original en el nuevo fotograma. El video siempre llena un lado del fotograma, por lo que un anclaje lo mueve solo a lo largo del otro lado. Predeterminado: `"center"`. | DYNAMIC_COMBO | Sí | `"center"`<br>`"top"`<br>`"bottom"`<br>`"left"`<br>`"right"`<br>`"custom"` |
-| `seed` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 4294967295 |
+| `resolución` | Tamaño y relación de aspecto de salida, en 720p o 1080p. Predeterminado: `"(1080p) 1080x1920 (9:16)"`. | COMBO | Sí | `"(720p) 720x720 (1:1)"`<br>`"(720p) 720x900 (4:5)"`<br>`"(720p) 900x720 (5:4)"`<br>`"(720p) 720x1280 (9:16)"`<br>`"(720p) 1280x720 (16:9)"`<br>`"(1080p) 1080x1080 (1:1)"`<br>`"(1080p) 1080x1350 (4:5)"`<br>`"(1080p) 1350x1080 (5:4)"`<br>`"(1080p) 1080x1920 (9:16)"`<br>`"(1080p) 1920x1080 (16:9)"` |
+| `ubicación` | Dónde se ubica el video original en el nuevo fotograma. El video siempre llena un lado del fotograma, por lo que un anclaje lo mueve solo a lo largo del otro lado. Predeterminado: `"center"`. | DYNAMIC_COMBO | Sí | `"center"`<br>`"top"`<br>`"bottom"`<br>`"left"`<br>`"right"`<br>`"custom"` |
+| `semilla` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 4294967295 |
 
 ### Entradas de ubicación "custom"
 

@@ -6,9 +6,9 @@ El nodo LatentCutToBatch divide una representación latente a lo largo de una di
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `samples` | La representación latente que se va a dividir y agrupar en lote. | LATENT | Sí | - |
+| `muestras` | La representación latente que se va a dividir y agrupar en lote. | LATENT | Sí | - |
 | `dim` | La dimensión a lo largo de la cual se recortan las muestras latentes. `"t"` se refiere a la dimensión temporal (fotogramas), `"x"` al ancho y `"y"` a la altura. | COMBO | Sí | `"t"`<br>`"x"`<br>`"y"` |
-| `slice_size` | El tamaño de cada segmento que se recortará de la dimensión especificada. Si el tamaño de la dimensión no es divisible exactamente por este valor, el resto se descarta. (predeterminado: 1) | INT | Sí | 1 a 16384 (resolución máxima) |
+| `tamaño_de_corte` | El tamaño de cada segmento que se recortará de la dimensión especificada. Si el tamaño de la dimensión no es divisible exactamente por este valor, el resto se descarta. (predeterminado: 1) | INT | Sí | 1 a 16384 (resolución máxima) |
 
 Nota: La opción `"t"` solo tiene efecto cuando el latente incluye una dimensión temporal. Si la dimensión elegida corresponde a la posición de lote o de canal, o no existe (por ejemplo, al seleccionar `"t"` en un latente sin fotogramas), el nodo devuelve la entrada sin cambios. Si `slice_size` es mayor que el tamaño de la dimensión elegida, se usa toda la dimensión como un único segmento. Cuando el tamaño de la dimensión no es divisible de manera uniforme por `slice_size`, la porción sobrante al final se descarta. El tamaño del lote de salida es el tamaño del lote de entrada multiplicado por el número de segmentos, y la dimensión recortada se reduce a `slice_size`.
 

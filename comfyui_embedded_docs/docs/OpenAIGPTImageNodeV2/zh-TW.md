@@ -28,7 +28,7 @@
 | `品質` | 影像品質，會影響成本與生成時間（預設：`"low"`）。 | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 | `model.images` | 用於影像編輯的選用參考影像。最多 16 張影像。詳見「參考輸入」。 | IMAGE | 否 | 0 至 16 |
 | `model.mask` | 用於內繪（inpainting）的選用遮罩（白色區域會被替換）。必須恰好有一張參考影像。 | MASK | 否 | N/A |
-| `model.complexity` | 模型在算繪前規劃影像的程度。較低的值回應較快，較高的值則規劃更多。預設：`"high"`。 | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
+| `複雜度` | 模型在算繪前規劃影像的程度。較低的值回應較快，較高的值則規劃更多。預設：`"high"`。 | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
 
 ### gpt-image-2.5-flare 與 gpt-image-2.5-sunburst 輸入
 

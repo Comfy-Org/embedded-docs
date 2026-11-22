@@ -19,7 +19,7 @@ El nodo ByteDance Image to Video genera videos utilizando modelos ByteDance a tr
 | `semilla` | Semilla a usar para la generación (predeterminado: 0). | INT | No | 0 - 2147483647 |
 | `cámara_fija` | Especifica si se debe fijar la cámara. La plataforma añade una instrucción para fijar la cámara a tu prompt, pero no garantiza el efecto real (predeterminado: False). | BOOLEAN | No | `False`<br>`True` |
 | `marca_de_agua` | Si se debe añadir una marca de agua "AI generated" al video (predeterminado: False). | BOOLEAN | No | `False`<br>`True` |
-| `generate_audio` | Añade una pista de audio generada por IA. Los modelos restantes ignoran esta entrada (predeterminado: False). | BOOLEAN | No | `False`<br>`True` |
+| `generar_audio` | Añade una pista de audio generada por IA. Los modelos restantes ignoran esta entrada (predeterminado: False). | BOOLEAN | No | `False`<br>`True` |
 
 **Nota:** El prompt no debe contener las siguientes palabras (sin distinción de mayúsculas y minúsculas): `resolution`, `ratio`, `duration`, `seed`, `camerafixed`, `watermark`. Estos parámetros se configuran mediante sus entradas dedicadas.
 

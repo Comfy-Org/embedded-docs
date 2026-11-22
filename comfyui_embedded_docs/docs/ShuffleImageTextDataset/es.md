@@ -6,9 +6,9 @@ Este nodo mezcla una lista de imágenes y una lista de textos de forma conjunta,
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `images` | Lista de imágenes a mezclar. | IMAGE | Sí | - |
-| `texts` | Lista de textos a mezclar. | STRING | Sí | - |
-| `seed` | Semilla aleatoria. El orden de la mezcla está determinado por este valor (predeterminado: 0). | INT | No | 0 a 18446744073709551615 |
+| `imágenes` | Lista de imágenes a mezclar. | IMAGE | Sí | - |
+| `textos` | Lista de textos a mezclar. | STRING | Sí | - |
+| `semilla` | Semilla aleatoria. El orden de la mezcla está determinado por este valor (predeterminado: 0). | INT | No | 0 a 18446744073709551615 |
 
 **Nota:** Las entradas `images` y `texts` deben ser listas de la misma longitud. El nodo emparejará la primera imagen con el primer texto, la segunda imagen con el segundo texto, y así sucesivamente, antes de mezclar estos pares de forma conjunta.
 

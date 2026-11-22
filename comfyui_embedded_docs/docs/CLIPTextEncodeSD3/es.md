@@ -10,7 +10,7 @@ CLIPTextEncodeSD3 procesa entradas de texto para modelos Stable Diffusion 3 codi
 | `clip_l` | Entrada de texto para el modelo CLIP local. Admite texto multilínea e indicaciones dinámicas. | STRING | Sí | - |
 | `clip_g` | Entrada de texto para el modelo CLIP global. Admite texto multilínea e indicaciones dinámicas. | STRING | Sí | - |
 | `t5xxl` | Entrada de texto para el modelo T5-XXL. Admite texto multilínea e indicaciones dinámicas. | STRING | Sí | - |
-| `empty_padding` | Controla cómo se manejan las entradas de texto vacías. Cuando se establece en `"none"`, las entradas de texto vacías para `clip_g`, `clip_l` o `t5xxl` resultan en listas de tokens vacías en lugar de relleno. Cuando se establece en `"empty_prompt"`, las entradas vacías se tokenizan como indicaciones vacías (comportamiento estándar de relleno). Este es un parámetro avanzado (predeterminado: `"none"`). | COMBO | Sí | `"none"`<br>`"empty_prompt"` |
+| `relleno_vacío` | Controla cómo se manejan las entradas de texto vacías. Cuando se establece en `"none"`, las entradas de texto vacías para `clip_g`, `clip_l` o `t5xxl` resultan en listas de tokens vacías en lugar de relleno. Cuando se establece en `"empty_prompt"`, las entradas vacías se tokenizan como indicaciones vacías (comportamiento estándar de relleno). Este es un parámetro avanzado (predeterminado: `"none"`). | COMBO | Sí | `"none"`<br>`"empty_prompt"` |
 
 **Restricciones de parámetros:**
 

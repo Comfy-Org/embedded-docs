@@ -8,7 +8,7 @@ Este nodo combina una entrada de condicionamiento primaria con una entrada de co
 | --- | --- | --- | --- | --- | --- |
 | `cond` | La entrada de condicionamiento primaria que se procesará y combinará | CONDITIONING | Requerido | - | - |
 | `cond_DEFAULT` | Los datos de condicionamiento predeterminados que se combinarán con el condicionamiento primario | CONDITIONING | Requerido | - | - |
-| `hooks` | Configuración opcional de hooks que controla cómo se procesan y combinan los datos de condicionamiento | HOOKS | Opcional | - | - |
+| `ganchos` | Configuración opcional de hooks que controla cómo se procesan y combinan los datos de condicionamiento | HOOKS | Opcional | - | - |
 
 ## Salidas
 

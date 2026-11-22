@@ -10,9 +10,9 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 要去背的圖像。 | IMAGE | 是 | - |
-| `prompt` | 要保留的內容，並可選擇性指定要移除或縮限的範圍，例如 'the person with the mat and the plant'、'the woman at her desk without the lamp' 或 'only the chair'。不得為空。若沒有任何內容符合提示詞，結果將完全透明。預設值：`""`（空字串）。 | STRING | 是 | 1 個字元以上 |
-| `moderation` | 審核設定。設為 `"true"` 時，下方的視覺審核旗標將可使用。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
+| `圖像` | 要去背的圖像。 | IMAGE | 是 | - |
+| `提示詞` | 要保留的內容，並可選擇性指定要移除或縮限的範圍，例如 'the person with the mat and the plant'、'the woman at her desk without the lamp' 或 'only the chair'。不得為空。若沒有任何內容符合提示詞，結果將完全透明。預設值：`""`（空字串）。 | STRING | 是 | 1 個字元以上 |
+| `內容審核` | 審核設定。設為 `"true"` 時，下方的視覺審核旗標將可使用。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
 
 ### Moderation "true" 輸入
 

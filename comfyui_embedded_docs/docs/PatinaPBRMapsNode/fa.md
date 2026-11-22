@@ -6,13 +6,13 @@
 
 | پارامتر | توضیحات | نوع داده | الزامی | بازه |
 |-----------|-------------|-----------|----------|-------|
-| `image` | عکس یا رندری که نقشه‌های PBR از آن استخراج می‌شوند. | IMAGE | بله | - |
-| `basecolor` | نقشه basecolor (albedo) را تولید کنید. پیش‌فرض: True. | BOOLEAN | بله | true<br>false |
-| `normal` | نقشه normal را تولید کنید. پیش‌فرض: True. | BOOLEAN | بله | true<br>false |
-| `roughness` | نقشه roughness را تولید کنید. پیش‌فرض: False. | BOOLEAN | بله | true<br>false |
-| `metalness` | نقشه metalness را تولید کنید. پیش‌فرض: False. | BOOLEAN | بله | true<br>false |
-| `height` | نقشه height (displacement) را تولید کنید. پیش‌فرض: False. | BOOLEAN | بله | true<br>false |
-| `seed` | دانه برای نویززدایی تکرارپذیر. پیش‌فرض: 42. | INT | بله | 0 تا 2147483646 |
+| `تصویر` | عکس یا رندری که نقشه‌های PBR از آن استخراج می‌شوند. | IMAGE | بله | - |
+| `رنگ پایه` | نقشه basecolor (albedo) را تولید کنید. پیش‌فرض: True. | BOOLEAN | بله | true<br>false |
+| `نرمال` | نقشه normal را تولید کنید. پیش‌فرض: True. | BOOLEAN | بله | true<br>false |
+| `زبری` | نقشه roughness را تولید کنید. پیش‌فرض: False. | BOOLEAN | بله | true<br>false |
+| `فلزی‌بودن` | نقشه metalness را تولید کنید. پیش‌فرض: False. | BOOLEAN | بله | true<br>false |
+| `ارتفاع` | نقشه height (displacement) را تولید کنید. پیش‌فرض: False. | BOOLEAN | بله | true<br>false |
+| `بذر` | دانه برای نویززدایی تکرارپذیر. پیش‌فرض: 42. | INT | بله | 0 تا 2147483646 |
 | `safety_checker` | بررسی ایمنی محتوای ارائه‌دهنده را روی درخواست اجرا کنید. تنظیم پیشرفته. پیش‌فرض: False. | BOOLEAN | بله | true<br>false |
 | `auto_downscale` | تصویر ورودی‌ای را که ضلع بلندتر آن از 2048 پیکسل—حد ورودی مدل—بیشتر است، به‌طور خودکار با حفظ نسبت ابعاد کوچک می‌کند؛ تصاویر کوچک‌تر بدون تغییر می‌مانند. برای دریافت خطا در تصاویر بزرگ‌تر، آن را غیرفعال کنید. تنظیم پیشرفته. پیش‌فرض: True. | BOOLEAN | خیر | true<br>false |
 

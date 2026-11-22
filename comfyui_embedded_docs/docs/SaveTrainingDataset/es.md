@@ -6,10 +6,10 @@ Este nodo guarda en disco un dataset de entrenamiento codificado para cargarlo d
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `latents` | Lista de diccionarios de latentes de MakeTrainingDataset. | LATENT | Sí | N/A |
-| `conditioning` | Lista de listas de condicionamiento de MakeTrainingDataset. | CONDITIONING | Sí | N/A |
-| `folder_name` | Nombre de la carpeta en la que se guardará el dataset, dentro del directorio datasets. Se permiten subcarpetas como 'project/run1'. (predeterminado: "training_dataset") | STRING | Sí | N/A |
-| `shard_size` | Número de muestras por archivo de fragmento. (predeterminado: 1000) | INT | Sí | 1 a 100000 |
+| `latentes` | Lista de diccionarios de latentes de MakeTrainingDataset. | LATENT | Sí | N/A |
+| `acondicionamiento` | Lista de listas de condicionamiento de MakeTrainingDataset. | CONDITIONING | Sí | N/A |
+| `nombre_de_carpeta` | Nombre de la carpeta en la que se guardará el dataset, dentro del directorio datasets. Se permiten subcarpetas como 'project/run1'. (predeterminado: "training_dataset") | STRING | Sí | N/A |
+| `tamaño_de_fragmento` | Número de muestras por archivo de fragmento. (predeterminado: 1000) | INT | Sí | 1 a 100000 |
 
 **Nota:** La cantidad de elementos en `latents` debe coincidir exactamente con la cantidad de elementos en `conditioning`; el nodo lanza un error si estas cantidades no coinciden. El `folder_name` debe especificar una subcarpeta del directorio datasets (por ejemplo, `my_dataset`); no puede ser el propio directorio datasets, y se rechazan los nombres de carpeta que se resuelvan fuera del directorio datasets. El parámetro `shard_size` es una configuración avanzada.
 

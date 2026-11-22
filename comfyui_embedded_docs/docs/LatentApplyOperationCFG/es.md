@@ -8,8 +8,8 @@ El nodo LatentApplyOperationCFG aplica una operación latente dentro del paso de
 | --- | --- | --- | --- | --- |
 | `modelo` | El modelo al que se aplicará la operación CFG | MODEL | Sí | - |
 | `operación` | La operación latente que se aplicará durante el proceso de muestreo CFG | LATENT_OPERATION | Sí | - |
-| `start_percent` | Fracción de la programación de eliminación de ruido en la que la operación empieza a aplicarse; 0 es el inicio de la programación (predeterminado: 0.0) | FLOAT | No | 0.0 a 1.0 (paso 0.001) |
-| `end_percent` | Fracción de la programación de eliminación de ruido en la que la operación deja de aplicarse; 1 es el final de la programación (predeterminado: 1.0) | FLOAT | No | 0.0 a 1.0 (paso 0.001) |
+| `porcentaje_inicial` | Fracción de la programación de eliminación de ruido en la que la operación empieza a aplicarse; 0 es el inicio de la programación (predeterminado: 0.0) | FLOAT | No | 0.0 a 1.0 (paso 0.001) |
+| `porcentaje_final` | Fracción de la programación de eliminación de ruido en la que la operación deja de aplicarse; 1 es el final de la programación (predeterminado: 1.0) | FLOAT | No | 0.0 a 1.0 (paso 0.001) |
 
 Nota: Este nodo está marcado como experimental. La operación se aplica a las salidas de condicionamiento del modelo durante el proceso de muestreo CFG. Cuando hay dos salidas de condicionamiento, la operación se aplica a la diferencia entre la primera y la segunda salida, y la segunda salida se vuelve a sumar al resultado. Cuando solo hay una salida de condicionamiento, la operación se aplica directamente a ella. La operación solo se ejecuta entre los puntos `start_percent` y `end_percent` de la programación de eliminación de ruido, por lo que puede limitarse a una parte de la programación; fuera de esa ventana, las salidas de condicionamiento se devuelven sin cambios.
 

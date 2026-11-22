@@ -6,7 +6,7 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的模型。預設值：`"ideogram-vector-1"`。 | DYNAMIC_COMBO | 是 | `"ideogram-vector-1"` |
+| `模型` | 要使用的模型。預設值：`"ideogram-vector-1"`。 | DYNAMIC_COMBO | 是 | `"ideogram-vector-1"` |
 | `image` | 要轉換的影像。批次輸入會逐張影像轉換，並一併回傳產生的 SVG。 | IMAGE | 是 | - |
 | `mode` | `"simple"` 會描繪較少、較大的形狀；`"default"` 會保留更精細的細節。預設值：`"default"`。 | COMBO | 是 | `"simple"`<br>`"default"` |
 

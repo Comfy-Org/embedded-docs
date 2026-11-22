@@ -6,16 +6,16 @@
 
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用于生成的 Meshy 模型版本。 | COMBO | 是 | `"meshy-t2.5"` |
-| `image` | 生成模型所依据的参考图像。 | IMAGE | 是 | - |
-| `target_polycount` | 生成网格中三角形的近似数量。默认值：15000。 | INT | 是 | 100 到 30000 |
-| `should_texture` | 决定是否生成纹理。`"false"` 会跳过纹理阶段并返回无纹理的网格。 | DYNAMIC_COMBO | 是 | `"true"`<br>`"false"` |
+| `模型` | 用于生成的 Meshy 模型版本。 | COMBO | 是 | `"meshy-t2.5"` |
+| `图像` | 生成模型所依据的参考图像。 | IMAGE | 是 | - |
+| `目标面数` | 生成网格中三角形的近似数量。默认值：15000。 | INT | 是 | 100 到 30000 |
+| `生成纹理` | 决定是否生成纹理。`"false"` 会跳过纹理阶段并返回无纹理的网格。 | DYNAMIC_COMBO | 是 | `"true"`<br>`"false"` |
 | `enable_pbr` | 除基础颜色外，还生成 PBR 贴图（金属度、粗糙度、法线）。仅当 `should_texture` 设为 `"true"` 时此输入才可用。默认值：`False`。 | BOOLEAN | 否 | - |
 | `texture_prompt` | 用于引导纹理生成过程的文本提示词。最多 800 个字符。不能与 `texture_image` 同时使用。仅当 `should_texture` 设为 `"true"` 时此输入才可用。默认值：`""`（空字符串）。 | STRING | 否 | 1 到 800 个字符 |
 | `texture_image` | 用于纹理生成过程的参考图像。`texture_image` 或 `texture_prompt` 同一时间只能使用其中一个。仅当 `should_texture` 设为 `"true"` 时此输入才可用。 | IMAGE | 否 | - |
 | `texture_resolution` | 纹理分辨率。更高的分辨率可捕捉更多表面细节。仅当 `should_texture` 设为 `"true"` 时此输入才可用。 | COMBO | 否 | `"2k"`<br>`"4k"`<br>`"8k"` |
-| `pose_mode` | 所生成角色的姿势。空字符串表示不指定特定姿势。这是一个高级设置。默认值：`""`（空字符串）。 | COMBO | 是 | `""`<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | 种子控制节点是否应重新运行；无论种子如何，结果都是不确定的。默认值：42。 | INT | 是 | 0 到 2147483647 |
+| `姿势模式` | 所生成角色的姿势。空字符串表示不指定特定姿势。这是一个高级设置。默认值：`""`（空字符串）。 | COMBO | 是 | `""`<br>`"A-pose"`<br>`"T-pose"` |
+| `随机种` | 种子控制节点是否应重新运行；无论种子如何，结果都是不确定的。默认值：42。 | INT | 是 | 0 到 2147483647 |
 
 **注意：** `enable_pbr`、`texture_prompt`、`texture_image` 和 `texture_resolution` 输入仅在 `should_texture` 设为 `"true"` 时可用。
 

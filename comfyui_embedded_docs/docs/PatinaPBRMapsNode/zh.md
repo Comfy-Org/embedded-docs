@@ -6,15 +6,15 @@
 
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 用于推导 PBR 贴图的照片或渲染图。 | IMAGE | 是 | - |
-| `basecolor` | 生成 basecolor（albedo）贴图。默认值：True。 | BOOLEAN | 是 | true<br>false |
-| `normal` | 生成 normal 贴图。默认值：True。 | BOOLEAN | 是 | true<br>false |
-| `roughness` | 生成 roughness 贴图。默认值：False。 | BOOLEAN | 是 | true<br>false |
-| `metalness` | 生成 metalness 贴图。默认值：False。 | BOOLEAN | 是 | true<br>false |
-| `height` | 生成 height（displacement）贴图。默认值：False。 | BOOLEAN | 是 | true<br>false |
-| `seed` | 用于可复现去噪的种子。默认值：42。 | INT | 是 | 0 到 2147483646 |
-| `safety_checker` | 对请求执行提供商的内容安全检查。高级设置。默认值：False。 | BOOLEAN | 是 | true<br>false |
-| `auto_downscale` | 当输入图像的最长边超过 2048 像素（模型的输入上限）时，自动按比例缩小并保持纵横比；较小的图像保持不变。禁用此项时，遇到超大图像将改为报错。高级设置。默认值：True。 | BOOLEAN | 否 | true<br>false |
+| `图像` | 用于推导 PBR 贴图的照片或渲染图。 | IMAGE | 是 | - |
+| `基础颜色` | 生成 basecolor（albedo）贴图。默认值：True。 | BOOLEAN | 是 | true<br>false |
+| `法线` | 生成 normal 贴图。默认值：True。 | BOOLEAN | 是 | true<br>false |
+| `粗糙度` | 生成 roughness 贴图。默认值：False。 | BOOLEAN | 是 | true<br>false |
+| `金属度` | 生成 metalness 贴图。默认值：False。 | BOOLEAN | 是 | true<br>false |
+| `高度` | 生成 height（displacement）贴图。默认值：False。 | BOOLEAN | 是 | true<br>false |
+| `种子` | 用于可复现去噪的种子。默认值：42。 | INT | 是 | 0 到 2147483646 |
+| `安全检查器` | 对请求执行提供商的内容安全检查。高级设置。默认值：False。 | BOOLEAN | 是 | true<br>false |
+| `自动缩小` | 当输入图像的最长边超过 2048 像素（模型的输入上限）时，自动按比例缩小并保持纵横比；较小的图像保持不变。禁用此项时，遇到超大图像将改为报错。高级设置。默认值：True。 | BOOLEAN | 否 | true<br>false |
 
 **约束与行为：**
 

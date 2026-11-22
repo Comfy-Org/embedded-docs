@@ -6,8 +6,8 @@ El nodo ModelMergeSD3_2B permite fusionar dos modelos Stable Diffusion 3 2B mezc
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `model1` | El primer modelo a fusionar | MODEL | Sí | - |
-| `model2` | El segundo modelo a fusionar | MODEL | Sí | - |
+| `modelo1` | El primer modelo a fusionar | MODEL | Sí | - |
+| `modelo2` | El segundo modelo a fusionar | MODEL | Sí | - |
 | `pos_embed.` | Peso de interpolación del embedding de posición (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `x_embedder.` | Peso de interpolación del embedding de entrada (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `context_embedder.` | Peso de interpolación del embedding de contexto (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |

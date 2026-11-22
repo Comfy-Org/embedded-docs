@@ -6,9 +6,9 @@ Elimina el ruido de fondo de la voz en un video con VEED. Solo cambia la banda s
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `video` | Video con una banda sonora de voz, de menos de 30 minutos. El video debe tener una pista de audio. | VIDEO | Sí | Hasta 1799 segundos |
-| `strength` | Cuánto ruido se elimina debajo de la voz. Un valor más bajo conserva más tono de sala detrás de la voz; las pausas entre palabras siempre se limpian por completo, y los valores por encima del predeterminado cambian poco. (predeterminado: 0.874) | FLOAT | Sí | 0.0 a 1.0 (paso 0.001) |
-| `loudness` | Si se debe normalizar la sonoridad de la voz. `"normalize"` la establece en `target_lufs`; `"keep input level"` deja el nivel tal como está. Al seleccionar una opción se revelan sus parámetros. (predeterminado: `"normalize"`) | DYNAMIC_COMBO | Sí | `"normalize"`<br>`"keep input level"` |
+| `vídeo` | Video con una banda sonora de voz, de menos de 30 minutos. El video debe tener una pista de audio. | VIDEO | Sí | Hasta 1799 segundos |
+| `intensidad` | Cuánto ruido se elimina debajo de la voz. Un valor más bajo conserva más tono de sala detrás de la voz; las pausas entre palabras siempre se limpian por completo, y los valores por encima del predeterminado cambian poco. (predeterminado: 0.874) | FLOAT | Sí | 0.0 a 1.0 (paso 0.001) |
+| `sonoridad` | Si se debe normalizar la sonoridad de la voz. `"normalize"` la establece en `target_lufs`; `"keep input level"` deja el nivel tal como está. Al seleccionar una opción se revelan sus parámetros. (predeterminado: `"normalize"`) | DYNAMIC_COMBO | Sí | `"normalize"`<br>`"keep input level"` |
 | `target_lufs` | Sonoridad integrada de la voz limpia en LUFS. Los picos se limitan a -1.1 dBTP, por lo que los objetivos altos se detienen antes (aproximadamente -15 LUFS para voz típica). Disponible cuando `loudness` es `"normalize"` (predeterminado: -19.0). | FLOAT | Sí | -40.0 a -8.0 (paso 0.1) |
 
 El nodo se detiene con un error cuando el clip dura más de 1799 segundos y cuando el video no tiene pista de audio.

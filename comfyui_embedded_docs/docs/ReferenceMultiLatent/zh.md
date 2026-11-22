@@ -8,11 +8,11 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `positive` | 要使用参考 latent 修改的正向条件。 | CONDITIONING | 是 | - |
-| `negative` | 可选的负向条件，会接收相同的参考 latent。保持未连接，以在 `negative` 输出上复用修改后的正向条件。 | CONDITIONING | 否 | - |
+| `正面` | 要使用参考 latent 修改的正向条件。 | CONDITIONING | 是 | - |
+| `负面` | 可选的负向条件，会接收相同的参考 latent。保持未连接，以在 `negative` 输出上复用修改后的正向条件。 | CONDITIONING | 否 | - |
 | `vae` | 用于编码已连接参考图像的 VAE。未连接 VAE 时，参考图像会被忽略。 | VAE | 否 | - |
-| `resolution` | 每张参考图像在编码前的准备方式。`"keep resolution"` 会按传入尺寸进行编码；`"resize"` 会将其缩放到目标百万像素数，同时保持宽高比，这会显示 `megapixels`。（默认值："keep resolution"） | DYNAMIC_COMBO | 是 | `"keep resolution"`<br>`"resize"` |
-| `images` | 可增长槽位：连接一个或多个参考图像（`image_1`、`image_2`、...）以用作参考。图像会按槽位顺序编码，并按该顺序附加到条件中。 | IMAGE | 否 | 1 到 100 |
+| `分辨率` | 每张参考图像在编码前的准备方式。`"keep resolution"` 会按传入尺寸进行编码；`"resize"` 会将其缩放到目标百万像素数，同时保持宽高比，这会显示 `megapixels`。（默认值："keep resolution"） | DYNAMIC_COMBO | 是 | `"keep resolution"`<br>`"resize"` |
+| `图像` | 可增长槽位：连接一个或多个参考图像（`image_1`、`image_2`、...）以用作参考。图像会按槽位顺序编码，并按该顺序附加到条件中。 | IMAGE | 否 | 1 到 100 |
 
 ### Resize 输入
 

@@ -6,9 +6,9 @@ Este nodo proporciona un muestreador configurable para la generación de imágen
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `solver_type` | Selecciona el algoritmo de solucionador subyacente para el muestreador. | COMBO | Sí | "phi_1"<br>"phi_2" |
+| `tipo_de_solver` | Selecciona el algoritmo de solucionador subyacente para el muestreador. | COMBO | Sí | "phi_1"<br>"phi_2" |
 | `eta` | Intensidad estocástica (predeterminado: 1.0). | FLOAT | No | 0.0 - 100.0 |
-| `s_noise` | Multiplicador de ruido SDE (predeterminado: 1.0). | FLOAT | No | 0.0 - 100.0 |
+| `ruido_s` | Multiplicador de ruido SDE (predeterminado: 1.0). | FLOAT | No | 0.0 - 100.0 |
 | `r` | Tamaño de paso relativo para la etapa intermedia (nodo c2) (predeterminado: 0.5). | FLOAT | No | 0.01 - 1.0 |
 
 **Nota:** La descripción del nodo define los siguientes preajustes de muestreador:

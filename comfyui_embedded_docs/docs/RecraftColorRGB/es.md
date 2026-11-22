@@ -9,7 +9,7 @@ Crea un color Recraft especificando valores individuales de rojo, verde y azul. 
 | `r` | Valor rojo del color (predeterminado: 0) | INT | Sí | 0-255 |
 | `g` | Valor verde del color (predeterminado: 0) | INT | Sí | 0-255 |
 | `b` | Valor azul del color (predeterminado: 0) | INT | Sí | 0-255 |
-| `recraft_color` | Cadena de color Recraft existente opcional para extender con el nuevo color RGB | COLOR | No | - |
+| `color_recraft` | Cadena de color Recraft existente opcional para extender con el nuevo color RGB | COLOR | No | - |
 
 ## Salidas
 

@@ -6,13 +6,13 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的模型。`heygen-decision-1-turbo` 比 `heygen-decision-1` 更快且成本更低（默认：`"heygen-decision-1"`）。 | COMBO | 是 | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | 各选项所要回答的问题，最多 5000 个字符（默认："What style is the image?"）。 | STRING | 是 | 1 到 5000 个字符 |
-| `options` | 每行一个选项，按原样使用，每个最多 128 个字符。为不匹配任何选项的输入添加一个类似 `other` 的选项（默认：`photo`、`illustration`、`3d render`、`anime`、`sketch`、`other`）。 | STRING | 是 | 2 到 255 个选项 |
-| `images` | 要分类的图像，总共最多 4 张，批次中的每一帧都计入。它们按顺序在各个套接字之间编号为 `image_1` 到 `image_4`。 | IMAGE | 否 | 最多 4 张图像 |
+| `模型` | 要使用的模型。`heygen-decision-1-turbo` 比 `heygen-decision-1` 更快且成本更低（默认：`"heygen-decision-1"`）。 | COMBO | 是 | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
+| `问题` | 各选项所要回答的问题，最多 5000 个字符（默认："What style is the image?"）。 | STRING | 是 | 1 到 5000 个字符 |
+| `选项` | 每行一个选项，按原样使用，每个最多 128 个字符。为不匹配任何选项的输入添加一个类似 `other` 的选项（默认：`photo`、`illustration`、`3d render`、`anime`、`sketch`、`other`）。 | STRING | 是 | 2 到 255 个选项 |
+| `图像` | 要分类的图像，总共最多 4 张，批次中的每一帧都计入。它们按顺序在各个套接字之间编号为 `image_1` 到 `image_4`。 | IMAGE | 否 | 最多 4 张图像 |
 | `audio_1` | 要分类的音频，最长 30 分钟。 | AUDIO | 否 | 最长 30 分钟 |
 | `video_1` | 要分类的视频，最长 60 秒。 | VIDEO | 否 | 最长 60 秒 |
-| `text` | 问题所涉及的文字，例如提示词或 LLM 回复，最多 20000 个字符。 | STRING | 否 | 最多 20000 个字符 |
+| `文本` | 问题所涉及的文字，例如提示词或 LLM 回复，最多 20000 个字符。 | STRING | 否 | 最多 20000 个字符 |
 
 请提供 2 到 255 个选项，不得重复，也不得有仅大小写不同的选项，否则节点会报错。至少连接一个要分类的输入，并在问题中用套接字名称指代它们，例如 "Which season is shown in image_1?"。
 

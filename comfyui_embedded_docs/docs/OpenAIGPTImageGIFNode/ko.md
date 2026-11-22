@@ -10,7 +10,7 @@ OpenAI GPT Image 2.6 GIF는 OpenAI의 GPT Image 모델을 사용하여 프롬프
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `model` | 애니메이션에 사용할 GPT Image 모델입니다. | DYNAMIC_COMBO | 예 | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
+| `모델` | 애니메이션에 사용할 GPT Image 모델입니다. | DYNAMIC_COMBO | 예 | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
 
 ### gpt-image-2.6-flare 및 gpt-image-2.6-sunburst 입력
 
@@ -18,14 +18,14 @@ OpenAI GPT Image 2.6 GIF는 OpenAI의 GPT Image 모델을 사용하여 프롬프
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | 애니메이션화할 내용입니다. (기본값: `""`) | STRING | 예 | N/A |
-| `model.size` | 각 프레임의 크기입니다. 크기가 클수록 더 낮은 프레임 수만 지원됩니다. (기본값: `"512x512"`) | COMBO | 예 | `"384x384"`<br>`"512x512"`<br>`"640x640"`<br>`"720x720"`<br>`"768x768"`<br>`"960x960"`<br>`"512x288"`<br>`"288x512"`<br>`"1024x576"`<br>`"576x1024"`<br>`"1280x720"`<br>`"720x1280"` |
-| `model.frame_count` | 프레임 수입니다. 프레임은 2~8, 9, 10~12, 13~16 단계로 과금됩니다. (기본값: `9`) | INT | 예 | 2~16 |
-| `model.frame_duration_ms` | 각 프레임이 표시되는 시간(밀리초)입니다. (기본값: `200`) | INT | 예 | 20 ~ 2000 (단계: 10) |
-| `model.background` | 프레임 배경입니다. 투명도는 vp9를 사용하는 Save WEBM, Save Animated WEBP 및 Save Animated PNG에서 유지됩니다. (기본값: `"opaque"`) | COMBO | 예 | `"opaque"`<br>`"transparent"` |
-| `model.quality` | 이미지 품질입니다. 수준이 높을수록 비용이 더 들고 시간이 더 오래 걸립니다. (기본값: `"low"`) | COMBO | 예 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | 렌더링 전에 모델이 애니메이션을 얼마나 계획하는지 나타냅니다. (기본값: `"high"`) | COMBO | 예 | `"low"`<br>`"medium"`<br>`"high"` |
-| `model.seed` | 노드의 재실행 여부를 제어합니다. 시드와 관계없이 결과는 비결정적입니다. (기본값: `42`) | INT | 예 | 0 ~ 2147483647 |
+| `프롬프트` | 애니메이션화할 내용입니다. (기본값: `""`) | STRING | 예 | N/A |
+| `크기` | 각 프레임의 크기입니다. 크기가 클수록 더 낮은 프레임 수만 지원됩니다. (기본값: `"512x512"`) | COMBO | 예 | `"384x384"`<br>`"512x512"`<br>`"640x640"`<br>`"720x720"`<br>`"768x768"`<br>`"960x960"`<br>`"512x288"`<br>`"288x512"`<br>`"1024x576"`<br>`"576x1024"`<br>`"1280x720"`<br>`"720x1280"` |
+| `프레임 수` | 프레임 수입니다. 프레임은 2~8, 9, 10~12, 13~16 단계로 과금됩니다. (기본값: `9`) | INT | 예 | 2~16 |
+| `프레임 지속 시간(ms)` | 각 프레임이 표시되는 시간(밀리초)입니다. (기본값: `200`) | INT | 예 | 20 ~ 2000 (단계: 10) |
+| `배경` | 프레임 배경입니다. 투명도는 vp9를 사용하는 Save WEBM, Save Animated WEBP 및 Save Animated PNG에서 유지됩니다. (기본값: `"opaque"`) | COMBO | 예 | `"opaque"`<br>`"transparent"` |
+| `품질` | 이미지 품질입니다. 수준이 높을수록 비용이 더 들고 시간이 더 오래 걸립니다. (기본값: `"low"`) | COMBO | 예 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `복잡도` | 렌더링 전에 모델이 애니메이션을 얼마나 계획하는지 나타냅니다. (기본값: `"high"`) | COMBO | 예 | `"low"`<br>`"medium"`<br>`"high"` |
+| `시드` | 노드의 재실행 여부를 제어합니다. 시드와 관계없이 결과는 비결정적입니다. (기본값: `42`) | INT | 예 | 0 ~ 2147483647 |
 
 **매개변수 제약 및 제한 사항:**
 

@@ -7,7 +7,7 @@ Aplica una pila de LoRAs a un codificador de texto CLIP en un solo nodo. Cada fi
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `clip` | El codificador de texto CLIP al que se aplicarán los LoRAs. | CLIP | Sí | - |
-| `loras` | Grupo ampliable de LoRAs, aplicado al codificador de texto en el orden de las filas (`loras.0`, `loras.1`, etc.). Agregue una fila por LoRA; cada fila contiene un archivo, una intensidad y un interruptor de activación/desactivación. | DYNAMIC_GROUP | Sí | 1 a 20 filas |
+| `LoRAs` | Grupo ampliable de LoRAs, aplicado al codificador de texto en el orden de las filas (`loras.0`, `loras.1`, etc.). Agregue una fila por LoRA; cada fila contiene un archivo, una intensidad y un interruptor de activación/desactivación. | DYNAMIC_GROUP | Sí | 1 a 20 filas |
 
 ### Campos de las filas de `loras`
 

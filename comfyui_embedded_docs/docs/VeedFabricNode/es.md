@@ -6,7 +6,7 @@ Convierte una imagen fija y una pista de voz en un video con habla y sincronizac
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo a utilizar. Al seleccionar un modelo, se muestran los parámetros específicos de este: `image`, `audio` y `resolution`. | DYNAMIC_COMBO | Sí | `"fabric-1.0"` |
+| `modelo` | Modelo a utilizar. Al seleccionar un modelo, se muestran los parámetros específicos de este: `image`, `audio` y `resolution`. | DYNAMIC_COMBO | Sí | `"fabric-1.0"` |
 | `image` | Imagen con un rostro claramente visible. El video mantiene su relación de aspecto. | IMAGE | Sí | - |
 | `audio` | Audio de voz para sincronizar los labios, de hasta 300 segundos. Establece la duración del video. | AUDIO | Sí | Hasta 300 segundos |
 | `resolution` | Clase de tamaño de salida: aproximadamente 0.4 megapíxeles en `"480p"` (864x480 en 16:9) y 0.9 megapíxeles en `"720p"` (1312x736 en 16:9). (predeterminado: `"720p"`) | COMBO | Sí | `"480p"`<br>`"720p"` |

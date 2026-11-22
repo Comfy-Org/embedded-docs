@@ -6,10 +6,10 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 사용할 모델입니다(기본값: `"gemini-decision-1"`). | COMBO | 예 | `"gemini-decision-1"` |
-| `question` | 어떤 이미지를 선택할지 지정합니다(기본값: "Which image best matches the prompt in text? If there is no text, which image has the best quality?"). | STRING | 예 | 1~5000자 |
-| `images` | 선택할 이미지로, 배치 또는 단일 프레임 배치 형태입니다. | IMAGE | 예 | 2~64개 이미지 |
-| `text` | 질문의 대상이 되는 텍스트로, 이미지를 생성할 때 사용한 프롬프트 등이며 최대 20,000자입니다. | STRING | 아니요 | 최대 20,000자 |
+| `모델` | 사용할 모델입니다(기본값: `"gemini-decision-1"`). | COMBO | 예 | `"gemini-decision-1"` |
+| `질문` | 어떤 이미지를 선택할지 지정합니다(기본값: "Which image best matches the prompt in text? If there is no text, which image has the best quality?"). | STRING | 예 | 1~5000자 |
+| `이미지` | 선택할 이미지로, 배치 또는 단일 프레임 배치 형태입니다. | IMAGE | 예 | 2~64개 이미지 |
+| `텍스트` | 질문의 대상이 되는 텍스트로, 이미지를 생성할 때 사용한 프롬프트 등이며 최대 20,000자입니다. | STRING | 아니요 | 최대 20,000자 |
 
 이 노드는 2~64개 이미지가 필요하며, 이미지가 하나뿐이면 오류를 발생시킵니다. 선택이 이미지 품질만이 아니라 프롬프트를 따라야 하는 경우 `text`를 연결하세요.
 

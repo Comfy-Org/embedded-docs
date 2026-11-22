@@ -9,7 +9,7 @@ Tripo: Smart UV vuelve a desplegar las UV de un modelo y reasigna sus texturas, 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
 | `model_task_id` | ID de tarea del modelo que se va a volver a desplegar. Acepta un ID de tarea de modelo de un nodo de generación de Tripo, o un ID de tarea de rig, retarget o segmentación. | MODEL_TASK_ID | Sí | ID de tarea de Tripo |
-| `bake` | Hornea las texturas existentes en la nueva disposición UV. Desactivado omite el horneado y devuelve el modelo sin sus texturas de color (predeterminado: True). | BOOLEAN | Sí | `True`<br>`False` |
+| `hornear` | Hornea las texturas existentes en la nueva disposición UV. Desactivado omite el horneado y devuelve el modelo sin sus texturas de color (predeterminado: True). | BOOLEAN | Sí | `True`<br>`False` |
 
 ## Salidas
 

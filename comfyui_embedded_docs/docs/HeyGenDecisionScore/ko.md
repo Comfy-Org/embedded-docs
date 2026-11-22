@@ -6,13 +6,13 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 사용할 모델입니다. `heygen-decision-1-turbo`는 `heygen-decision-1`보다 빠르고 비용이 적게 듭니다(기본값: `"heygen-decision-1"`). | COMBO | 예 | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | 무엇을 평가할지와 1과 10이 각각 무엇을 의미하는지를 설명합니다(기본값: "Rate the technical quality of the image from 1 (worst) to 10 (best)."). | STRING | 예 | 1~5000자 |
-| `threshold` | 점수가 이 값 이상일 때 `result`가 true가 됩니다. 깨끗하고 선명한 이미지는 약 7점, 심하게 손상된 이미지는 약 3~5점을 받습니다(기본값: 6.0). | FLOAT | 예 | 1.0 ~ 10.0 (단계: 0.1) |
-| `images` | 평가할 이미지로, 배치의 모든 프레임을 포함해 최대 4개까지 가능합니다. 소켓 순서에 따라 `image_1`부터 `image_4`까지 번호가 매겨집니다. | IMAGE | 아니오 | 최대 4개 이미지 |
+| `모델` | 사용할 모델입니다. `heygen-decision-1-turbo`는 `heygen-decision-1`보다 빠르고 비용이 적게 듭니다(기본값: `"heygen-decision-1"`). | COMBO | 예 | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
+| `질문` | 무엇을 평가할지와 1과 10이 각각 무엇을 의미하는지를 설명합니다(기본값: "Rate the technical quality of the image from 1 (worst) to 10 (best)."). | STRING | 예 | 1~5000자 |
+| `임계값` | 점수가 이 값 이상일 때 `result`가 true가 됩니다. 깨끗하고 선명한 이미지는 약 7점, 심하게 손상된 이미지는 약 3~5점을 받습니다(기본값: 6.0). | FLOAT | 예 | 1.0 ~ 10.0 (단계: 0.1) |
+| `이미지` | 평가할 이미지로, 배치의 모든 프레임을 포함해 최대 4개까지 가능합니다. 소켓 순서에 따라 `image_1`부터 `image_4`까지 번호가 매겨집니다. | IMAGE | 아니오 | 최대 4개 이미지 |
 | `audio_1` | 평가할 오디오로, 최대 30분까지 가능합니다. | AUDIO | 아니오 | 최대 30분 |
 | `video_1` | 평가할 비디오로, 최대 60초까지 가능합니다. | VIDEO | 아니오 | 최대 60초 |
-| `text` | 질문의 대상이 되는 텍스트로, 프롬프트나 LLM 응답 등이며 최대 20000자까지 가능합니다. | STRING | 아니오 | 최대 20000자 |
+| `텍스트` | 질문의 대상이 되는 텍스트로, 프롬프트나 LLM 응답 등이며 최대 20000자까지 가능합니다. | STRING | 아니오 | 최대 20000자 |
 
 평가할 입력을 최소 하나 이상 연결하고, 질문 안에서 소켓 이름으로 지칭하세요. 예: "How sharp is image_1?"
 

@@ -6,7 +6,7 @@ Elige una voz destacada de Breeze, o cualquier id de voz de Breeze, y la pasa a 
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `language` | Grupo de idioma de las voces destacadas, o `custom` para introducir un id. Predeterminado: `"English"`. | DYNAMIC_COMBO | Sí | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
+| `idioma` | Grupo de idioma de las voces destacadas, o `custom` para introducir un id. Predeterminado: `"English"`. | DYNAMIC_COMBO | Sí | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
 
 ### Entradas de idioma "English", "Chinese" y "Japanese"
 

@@ -6,7 +6,7 @@ Recorte el sujeto de un video con VEED y devuelva los fotogramas junto con una m
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo de segmentación a usar: `"standard"` para cualquier fondo con los mejores bordes y salida de hasta 3840x2160, `"fast"` para un resultado más rápido de hasta 1920x1080, o `"green screen"` para aplicar clave de color a un fondo verde de hasta 3840x2160. Los videos más grandes se reducen de escala. Al seleccionar una opción se revelan sus parámetros. | DYNAMIC_COMBO | Sí | `"standard"`<br>`"fast"`<br>`"green screen"` |
+| `modelo` | Modelo de segmentación a usar: `"standard"` para cualquier fondo con los mejores bordes y salida de hasta 3840x2160, `"fast"` para un resultado más rápido de hasta 1920x1080, o `"green screen"` para aplicar clave de color a un fondo verde de hasta 3840x2160. Los videos más grandes se reducen de escala. Al seleccionar una opción se revelan sus parámetros. | DYNAMIC_COMBO | Sí | `"standard"`<br>`"fast"`<br>`"green screen"` |
 | `video` | El video del que se va a recortar el sujeto. Hasta 60 segundos. | VIDEO | Sí | Hasta 60 segundos |
 | `refine_foreground_edges` | Bordes más limpios en el cabello, el pelaje y los detalles finos. Desactivarlo reduce el precio. Disponible para `"standard"` y `"fast"` (predeterminado: True). | BOOLEAN | Sí | false<br>true |
 | `subject_is_person` | Desactívelo cuando el sujeto sea un objeto o un animal. Disponible para `"standard"` y `"fast"` (predeterminado: True). | BOOLEAN | Sí | false<br>true |

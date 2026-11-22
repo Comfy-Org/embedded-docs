@@ -8,7 +8,7 @@ Crea una voz de Breeze a partir de una grabación de un solo hablante. La voz se
 | --- | --- | --- | --- | --- |
 | `audio` | Grabación de un solo hablante, de al menos 3 segundos de duración. Solo se utilizan los primeros 60 segundos. | AUDIO | Sí | - |
 | `remove_background_noise` | Limpia la grabación antes de la clonación. Predeterminado: false. | BOOLEAN | No | true<br>false |
-| `seed` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 2147483647 |
+| `semilla` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | No | 0 a 2147483647 |
 
 ## Salidas
 

@@ -6,7 +6,7 @@
 
 | 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `mode` | 节点执行的操作：`"text to music"` 创作一首新歌，`"cover"` 重新录制提供的歌曲。每种模式会在下方显示各自的输入项。默认：`"text to music"`。 | DYNAMIC_COMBO | 是 | `"text to music"`<br>`"cover"` |
+| `模式` | 节点执行的操作：`"text to music"` 创作一首新歌，`"cover"` 重新录制提供的歌曲。每种模式会在下方显示各自的输入项。默认：`"text to music"`。 | DYNAMIC_COMBO | 是 | `"text to music"`<br>`"cover"` |
 
 ### 文本生成音乐输入
 

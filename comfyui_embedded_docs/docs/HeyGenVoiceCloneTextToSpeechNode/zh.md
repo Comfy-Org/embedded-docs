@@ -8,7 +8,7 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的模型。`heygen-voice-1-turbo` 速度更快且成本更低（默认：`"heygen-voice-1"`）。 | DYNAMIC_COMBO | 是 | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
+| `模型` | 要使用的模型。`heygen-voice-1-turbo` 速度更快且成本更低（默认：`"heygen-voice-1"`）。 | DYNAMIC_COMBO | 是 | `"heygen-voice-1"`<br>`"heygen-voice-1-turbo"` |
 | `audio` | 用于克隆的单人说话录音。请使用至少 10 秒的清晰语音；仅使用前 3 分钟。 | AUDIO | 是 | - |
 | `text` | 要朗读的文本，最多 5000 个字符。超过约 12 分钟的语音会失败，因此请拆分超长的中文或日文文本（默认：空）。 | STRING | 是 | 1 到 5000 个字符 |
 | `language` | 文本的语言。对于塞尔维亚语、马来语等自动检测容易混淆的相近语言，请手动设置（默认：`"auto"`）。 | COMBO | 是 | `"auto"`<br>多个语言预设 |

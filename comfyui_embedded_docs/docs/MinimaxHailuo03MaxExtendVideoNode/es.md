@@ -8,7 +8,7 @@ Este nodo continúa un video con nuevo metraje guiado por un prompt y referencia
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | Modelo que se utilizará para continuar el video. Ambos modelos exponen las mismas entradas a continuación. | DYNAMIC_COMBO | Sí | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
+| `modelo` | Modelo que se utilizará para continuar el video. Ambos modelos exponen las mismas entradas a continuación. | DYNAMIC_COMBO | Sí | "MiniMax H3 Max"<br>"MiniMax H3 Max Turbo" |
 
 ### Entradas de los modelos
 

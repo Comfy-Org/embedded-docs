@@ -6,7 +6,7 @@ El nodo LTXV Audio VAE Loader carga un modelo de autoencoder variacional de audi
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `ckpt_name` | Checkpoint del VAE de audio que se va a cargar. Es una lista desplegable que se completa con todos los archivos encontrados en el directorio `checkpoints` de ComfyUI. | COMBO | Sí | Todos los archivos de la carpeta `checkpoints`. La lista se genera en tiempo de ejecución. |
+| `nombre_de_checkpoint` | Checkpoint del VAE de audio que se va a cargar. Es una lista desplegable que se completa con todos los archivos encontrados en el directorio `checkpoints` de ComfyUI. | COMBO | Sí | Todos los archivos de la carpeta `checkpoints`. La lista se genera en tiempo de ejecución. |
 
 El archivo seleccionado debe ser un checkpoint válido del VAE de audio LTXV. El nodo conserva únicamente los pesos del VAE de audio y del vocoder del archivo, y lanza un error si el modelo cargado no es un VAE válido.
 

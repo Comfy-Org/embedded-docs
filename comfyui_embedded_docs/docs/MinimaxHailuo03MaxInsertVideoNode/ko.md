@@ -8,7 +8,7 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
-| `model` | 비디오 생성에 사용할 모델입니다. | DYNAMIC_COMBO | 예 | "MiniMax H3 Max" |
+| `모델` | 비디오 생성에 사용할 모델입니다. | DYNAMIC_COMBO | 예 | "MiniMax H3 Max" |
 
 ### MiniMax H3 Max 입력
 

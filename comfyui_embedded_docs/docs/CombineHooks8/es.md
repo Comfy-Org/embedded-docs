@@ -6,14 +6,14 @@ El nodo Combinar Hooks [8] fusiona hasta ocho grupos de hooks diferentes en un �
 
 | Parámetro | Descripción | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango |
 | --- | --- | --- | --- | --- | --- |
-| `hooks_A` | Primer grupo de hooks a combinar | HOOKS | opcional | None | - |
-| `hooks_B` | Segundo grupo de hooks a combinar | HOOKS | opcional | None | - |
-| `hooks_C` | Tercer grupo de hooks a combinar | HOOKS | opcional | None | - |
-| `hooks_D` | Cuarto grupo de hooks a combinar | HOOKS | opcional | None | - |
-| `hooks_E` | Quinto grupo de hooks a combinar | HOOKS | opcional | None | - |
-| `hooks_F` | Sexto grupo de hooks a combinar | HOOKS | opcional | None | - |
-| `hooks_G` | Séptimo grupo de hooks a combinar | HOOKS | opcional | None | - |
-| `hooks_H` | Octavo grupo de hooks a combinar | HOOKS | opcional | None | - |
+| `ganchos_A` | Primer grupo de hooks a combinar | HOOKS | opcional | None | - |
+| `ganchos_B` | Segundo grupo de hooks a combinar | HOOKS | opcional | None | - |
+| `ganchos_C` | Tercer grupo de hooks a combinar | HOOKS | opcional | None | - |
+| `ganchos_D` | Cuarto grupo de hooks a combinar | HOOKS | opcional | None | - |
+| `ganchos_E` | Quinto grupo de hooks a combinar | HOOKS | opcional | None | - |
+| `ganchos_F` | Sexto grupo de hooks a combinar | HOOKS | opcional | None | - |
+| `ganchos_G` | Séptimo grupo de hooks a combinar | HOOKS | opcional | None | - |
+| `ganchos_H` | Octavo grupo de hooks a combinar | HOOKS | opcional | None | - |
 
 **Nota:** Todos los parámetros de entrada son opcionales. El nodo combinará únicamente los grupos de hooks que se proporcionen, ignorando aquellos que se dejen vacíos. Puedes proporcionar desde uno hasta ocho grupos de hooks para su combinación.
 

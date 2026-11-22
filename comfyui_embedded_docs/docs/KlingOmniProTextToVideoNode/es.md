@@ -6,12 +6,12 @@ Este nodo genera un video a partir de una descripción de texto usando el modelo
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model_name` | El modelo específico de Kling que se usará para la generación de video (predeterminado: `"kling-v3-omni"`). | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` |
+| `nombre_del_modelo` | El modelo específico de Kling que se usará para la generación de video (predeterminado: `"kling-v3-omni"`). | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` |
 | `prompt` | Un prompt de texto que describe el contenido del video. Puede incluir tanto descripciones positivas como negativas. Se ignora cuando los storyboards están habilitados. | STRING | Sí | 0 a 2500 caracteres |
-| `aspect_ratio` | La relación de aspecto o las dimensiones del video que se va a generar. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
-| `duration` | La duración del video en segundos (predeterminado: 5). | INT | Sí | 3 a 15 segundos |
-| `resolution` | La calidad o resolución de píxeles del video (predeterminado: `"1080p"`). Internamente se asigna a calidad estándar, pro o 4k. | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | Genera una serie de segmentos de video con prompts y duraciones individuales. Se ignora para el modelo o1. | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `relación_de_aspecto` | La relación de aspecto o las dimensiones del video que se va a generar. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `duración` | La duración del video en segundos (predeterminado: 5). | INT | Sí | 3 a 15 segundos |
+| `resolución` | La calidad o resolución de píxeles del video (predeterminado: `"1080p"`). Internamente se asigna a calidad estándar, pro o 4k. | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `guiones_gráficos` | Genera una serie de segmentos de video con prompts y duraciones individuales. Se ignora para el modelo o1. | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
 | `generar_audio` | Si se debe generar audio para el video (predeterminado: False). | BOOLEAN | No | True / False |
 | `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). | INT | No | 0 a 2147483647 |
 

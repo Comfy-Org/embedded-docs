@@ -6,15 +6,15 @@
 
 | 参数 | 说明 | 数据类型 | 必需 | 范围 |
 | --- | --- | --- | --- | --- |
-| `image` | 要填充的图像。 | IMAGE | 是 | - |
-| `padding_type` | 添加多少填充：`"pad dimensions"` 表示按每侧的精确数量填充，`"pad by multiplier"` 表示按相对于输入的输出尺寸填充，`"pad to multiple"` 表示填充至下一个倍数。选择某个选项后会显示其对应的参数。 | DYNAMIC_COMBO | 是 | `"pad dimensions"`<br>`"pad by multiplier"`<br>`"pad to multiple"` |
+| `图像` | 要填充的图像。 | IMAGE | 是 | - |
+| `填充类型` | 添加多少填充：`"pad dimensions"` 表示按每侧的精确数量填充，`"pad by multiplier"` 表示按相对于输入的输出尺寸填充，`"pad to multiple"` 表示填充至下一个倍数。选择某个选项后会显示其对应的参数。 | DYNAMIC_COMBO | 是 | `"pad dimensions"`<br>`"pad by multiplier"`<br>`"pad to multiple"` |
 | `left` | 在左侧添加的像素数。当 `padding_type` 为 `"pad dimensions"` 时可用（默认：0）。 | INT | 是 | 0 到 16384 |
 | `top` | 在顶部添加的像素数。当 `padding_type` 为 `"pad dimensions"` 时可用（默认：0）。 | INT | 是 | 0 到 16384 |
 | `right` | 在右侧添加的像素数。当 `padding_type` 为 `"pad dimensions"` 时可用（默认：0）。 | INT | 是 | 0 到 16384 |
 | `bottom` | 在底部添加的像素数。当 `padding_type` 为 `"pad dimensions"` 时可用（默认：0）。 | INT | 是 | 0 到 16384 |
 | `multiplier` | 相对于输入的输出尺寸，例如 1.5 表示在每侧增加 25%。填充量会在相对的边之间平均分配。当 `padding_type` 为 `"pad by multiplier"` 时可用（默认：1.0）。 | FLOAT | 是 | 1.0 到 8.0（步长 0.01） |
 | `multiple` | 填充使宽度和高度能被此数字整除。填充量在相对的边之间平均分配，多出的像素分配到右侧和底部。当 `padding_type` 为 `"pad to multiple"` 时可用（默认：32）。 | INT | 是 | 1 到 16384 |
-| `padding_style` | 填充区域的填充方式：`"color"` 或 `"mirror image"`。选择某个选项后会显示其对应的参数。 | DYNAMIC_COMBO | 是 | `"color"`<br>`"mirror image"` |
+| `填充样式` | 填充区域的填充方式：`"color"` 或 `"mirror image"`。选择某个选项后会显示其对应的参数。 | DYNAMIC_COMBO | 是 | `"color"`<br>`"mirror image"` |
 | `color` | 填充区域的填充颜色；alpha 会被忽略。当 `padding_style` 为 `"color"` 时可用（默认：`"#000000"`）。 | COLOR | 是 | - |
 | `feathering` | 在有填充的边上，将图像边缘的这么多像素与填充颜色混合。0 表示保留硬边缘。当 `padding_style` 为 `"color"` 时可用（默认：0）。 | INT | 是 | 0 到 16384 |
 

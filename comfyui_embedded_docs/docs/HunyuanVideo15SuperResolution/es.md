@@ -10,7 +10,7 @@ El nodo HunyuanVideo15SuperResolution prepara datos de condicionamiento para un 
 | `negativo` | La entrada de condicionamiento negativo que se modificará con datos latentes y de aumento. | CONDITIONING | Sí | N/A |
 | `vae` | El VAE utilizado para codificar la `start_image` opcional. Requerido si se proporciona `start_image`. | VAE | No | N/A |
 | `imagen_inicial` | Una imagen inicial opcional para guiar la superresolución. Si se proporciona, se amplía y se codifica en el latente de condicionamiento. | IMAGE | No | N/A |
-| `clip_vision_output` | Incrustaciones de visión CLIP opcionales para añadir al condicionamiento. | CLIP_VISION_OUTPUT | No | N/A |
+| `salida_de_visión_clip` | Incrustaciones de visión CLIP opcionales para añadir al condicionamiento. | CLIP_VISION_OUTPUT | No | N/A |
 | `latente` | La representación latente de video de entrada que se incorpora al condicionamiento. | LATENT | Sí | N/A |
 | `aumento_de_ruido` | La fuerza del aumento de ruido a aplicar al condicionamiento (predeterminado: 0.70). Este es un parámetro avanzado. | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |
 

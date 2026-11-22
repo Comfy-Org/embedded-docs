@@ -7,8 +7,8 @@ Este nodo genera un efecto de sonido a partir de una descripción de texto con P
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
 | `prompt` | Qué debe ser el efecto de sonido. No debe estar vacío. Predeterminado: "" (cadena vacía). | STRING | Sí | 1 a 4000 caracteres |
-| `duration` | Duración del efecto de sonido en segundos. Predeterminado: 5.0. | FLOAT | Sí | 1.0 a 20.0 (paso: 0.1) |
-| `seed` | Semilla para el muestreo. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
+| `duración` | Duración del efecto de sonido en segundos. Predeterminado: 5.0. | FLOAT | Sí | 1.0 a 20.0 (paso: 0.1) |
+| `semilla` | Semilla para el muestreo. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
 
 ## Salidas
 

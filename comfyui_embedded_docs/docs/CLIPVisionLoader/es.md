@@ -6,7 +6,7 @@ Este nodo detecta automáticamente los modelos ubicados en la carpeta `ComfyUI/m
 
 | Campo | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `clip_name` | Lista todos los archivos de modelo compatibles en la carpeta `ComfyUI/models/clip_vision`. | COMBO[STRING] |
+| `nombre_de_clip` | Lista todos los archivos de modelo compatibles en la carpeta `ComfyUI/models/clip_vision`. | COMBO[STRING] |
 
 ## Salidas
 

@@ -6,7 +6,7 @@ VEED Dubbing은 VEED를 통해 영상 속 음성을 다른 언어로 번역하�
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 더빙 모델입니다. `"standard"`는 더 저렴하고 모노 오디오를 반환하며 라틴 아메리카 스페인어와 브라질 포르투갈어를 지원합니다. `"pro"`는 지역 억양과 스테레오 오디오를 추가합니다. 모델을 선택하면 `video`, `target_language`, `source_language` 및 `seed`가 표시됩니다. | DYNAMIC_COMBO | 예 | `"standard"`<br>`"pro"` |
+| `모델` | 더빙 모델입니다. `"standard"`는 더 저렴하고 모노 오디오를 반환하며 라틴 아메리카 스페인어와 브라질 포르투갈어를 지원합니다. `"pro"`는 지역 억양과 스테레오 오디오를 추가합니다. 모델을 선택하면 `video`, `target_language`, `source_language` 및 `seed`가 표시됩니다. | DYNAMIC_COMBO | 예 | `"standard"`<br>`"pro"` |
 
 ### standard 입력
 

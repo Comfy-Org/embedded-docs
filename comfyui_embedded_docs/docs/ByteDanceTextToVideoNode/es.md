@@ -18,7 +18,7 @@ El nodo ByteDance Text to Video genera un video a partir de un prompt de texto m
 | `semilla` | Semilla que se utilizará para la generación (por defecto: 0). | INT | No | 0 a 2147483647 |
 | `cámara_fija` | Especifica si se debe fijar la cámara. La plataforma añade al prompt una instrucción para fijar la cámara, pero no garantiza el efecto real (por defecto: False). | BOOLEAN | No | - |
 | `marca_de_agua` | Indica si se debe añadir una marca de agua "AI generated" al video (por defecto: False). | BOOLEAN | No | - |
-| `generate_audio` | Añade una pista de audio generada por IA. Los modelos restantes ignoran esta entrada (por defecto: False). | BOOLEAN | No | - |
+| `generar_audio` | Añade una pista de audio generada por IA. Los modelos restantes ignoran esta entrada (por defecto: False). | BOOLEAN | No | - |
 
 **Restricciones de los parámetros:**
 

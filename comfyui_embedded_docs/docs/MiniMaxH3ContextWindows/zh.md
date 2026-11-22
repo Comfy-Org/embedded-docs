@@ -6,12 +6,12 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model` | 在采样期间应用上下文窗口的模型。 | MODEL | 是 | - |
-| `context_length` | 上下文窗口的长度，以真实帧为单位。必须为 17*n + 5（默认值：124）。 | INT | 是 | 22 到 16384（MAX_RESOLUTION），步长：17 |
-| `context_overlap` | 上下文窗口的重叠长度，以真实帧为单位。必须为 17*n + 5（默认值：39）。 | INT | 是 | 5 或更高，步长：17 |
-| `fuse_method` | 用于融合上下文窗口的方法（默认值：`"pyramid"`）。 | COMBO | 是 | `"pyramid"`<br>`"relative"`<br>`"flat"`<br>`"overlap-linear"` |
+| `模型` | 在采样期间应用上下文窗口的模型。 | MODEL | 是 | - |
+| `上下文长度` | 上下文窗口的长度，以真实帧为单位。必须为 17*n + 5（默认值：124）。 | INT | 是 | 22 到 16384（MAX_RESOLUTION），步长：17 |
+| `上下文重叠` | 上下文窗口的重叠长度，以真实帧为单位。必须为 17*n + 5（默认值：39）。 | INT | 是 | 5 或更高，步长：17 |
+| `融合方法` | 用于融合上下文窗口的方法（默认值：`"pyramid"`）。 | COMBO | 是 | `"pyramid"`<br>`"relative"`<br>`"flat"`<br>`"overlap-linear"` |
 | `freenoise` | 是否应用 FreeNoise 噪声混洗，以改善窗口混合（默认值：True，高级参数）。 | BOOLEAN | 是 | true<br>false |
-| `split_conds_to_windows` | 是否根据区域索引，将由 ConditionCombine 创建的多个 conditioning 拆分到每个窗口（默认值：False，高级参数）。 | BOOLEAN | 是 | true<br>false |
+| `将条件拆分到窗口` | 是否根据区域索引，将由 ConditionCombine 创建的多个 conditioning 拆分到每个窗口（默认值：False，高级参数）。 | BOOLEAN | 是 | true<br>false |
 
 两种长度均以真实帧为单位给出，并在采样前转换为 latent：当帧数不超过 5 时，`context_length` 会变为 2 个 latent；否则为 `((frames - 5) / 17) * 5 + 2`。`context_overlap` 以相同方式转换，然后封顶为 `context_length` 减 5，因此重叠始终会留下一个完整的块用于推进。此节点始终使用步长为 1 的静态调度，在 latent 时间维度上应用这些窗口，并且不添加因果修复帧，因为每个窗口都从块边界开始。`split_conds_to_windows` 期望由 ConditionCombine 节点创建的多个 conditioning。
 

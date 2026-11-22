@@ -7,13 +7,13 @@ El nodo Ecualizador de Audio (3 Bandas) permite ajustar las frecuencias graves, 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `audio` | Los datos de audio de entrada que contienen la forma de onda y la frecuencia de muestreo. | AUDIO | Sí | - |
-| `low_gain_dB` | Ganancia para frecuencias bajas (Graves). Los valores positivos amplifican, los negativos atenúan. (predeterminado: 0.0) | FLOAT | No | -24.0 a 24.0 |
-| `low_freq` | Frecuencia de corte para el filtro shelving bajo en Hertz (Hz). (predeterminado: 100) | INT | No | 20 a 500 |
-| `mid_gain_dB` | Ganancia para frecuencias medias. Los valores positivos amplifican, los negativos atenúan. (predeterminado: 0.0) | FLOAT | No | -24.0 a 24.0 |
-| `mid_freq` | Frecuencia central para el filtro peak de medios en Hertz (Hz). (predeterminado: 1000) | INT | No | 200 a 4000 |
+| `ganancia_baja_dB` | Ganancia para frecuencias bajas (Graves). Los valores positivos amplifican, los negativos atenúan. (predeterminado: 0.0) | FLOAT | No | -24.0 a 24.0 |
+| `frecuencia_baja` | Frecuencia de corte para el filtro shelving bajo en Hertz (Hz). (predeterminado: 100) | INT | No | 20 a 500 |
+| `ganancia_media_dB` | Ganancia para frecuencias medias. Los valores positivos amplifican, los negativos atenúan. (predeterminado: 0.0) | FLOAT | No | -24.0 a 24.0 |
+| `frecuencia_media` | Frecuencia central para el filtro peak de medios en Hertz (Hz). (predeterminado: 1000) | INT | No | 200 a 4000 |
 | `mid_q` | Factor Q (ancho de banda) para el filtro peak de medios. Los valores más bajos crean una banda más ancha, los valores más altos crean una banda más estrecha. (predeterminado: 0.707) | FLOAT | No | 0.1 a 10.0 |
-| `high_gain_dB` | Ganancia para frecuencias altas (Agudos). Los valores positivos amplifican, los negativos atenúan. (predeterminado: 0.0) | FLOAT | No | -24.0 a 24.0 |
-| `high_freq` | Frecuencia de corte para el filtro shelving alto en Hertz (Hz). (predeterminado: 5000) | INT | No | 1000 a 15000 |
+| `ganancia_alta_dB` | Ganancia para frecuencias altas (Agudos). Los valores positivos amplifican, los negativos atenúan. (predeterminado: 0.0) | FLOAT | No | -24.0 a 24.0 |
+| `frecuencia_alta` | Frecuencia de corte para el filtro shelving alto en Hertz (Hz). (predeterminado: 5000) | INT | No | 1000 a 15000 |
 
 **Nota:** Los parámetros `low_gain_dB`, `mid_gain_dB` y `high_gain_dB` solo se aplican cuando su valor no es cero. Si una ganancia se establece en 0.0, la etapa de filtro correspondiente se omite.
 

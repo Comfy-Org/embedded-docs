@@ -7,9 +7,9 @@ El nodo Recorte Aleatorio de Imágenes selecciona aleatoriamente una sección re
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `image` | La imagen que se va a recortar. | IMAGE | Sí | - |
-| `width` | El ancho del área de recorte (predeterminado: 512). | INT | No | 1 - 8192 |
-| `height` | La altura del área de recorte (predeterminado: 512). | INT | No | 1 - 8192 |
-| `seed` | Número utilizado para controlar la posición aleatoria del recorte (predeterminado: 0). | INT | No | 0 - 18446744073709551615 |
+| `ancho` | El ancho del área de recorte (predeterminado: 512). | INT | No | 1 - 8192 |
+| `alto` | La altura del área de recorte (predeterminado: 512). | INT | No | 1 - 8192 |
+| `semilla` | Número utilizado para controlar la posición aleatoria del recorte (predeterminado: 0). | INT | No | 0 - 18446744073709551615 |
 
 **Nota:** Los parámetros `width` y `height` deben ser menores o iguales a las dimensiones de la imagen de entrada. Si una dimensión especificada es mayor que la imagen, el recorte se limitará al borde de la imagen.
 

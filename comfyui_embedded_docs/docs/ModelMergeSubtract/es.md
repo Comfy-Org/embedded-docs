@@ -6,9 +6,9 @@ Este nodo está diseñado para operaciones avanzadas de fusión de modelos, espe
 
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model1` | El modelo base del cual se restarán los parámetros. | `MODEL` |
-| `model2` | El modelo cuyos parámetros se restarán del modelo base. | `MODEL` |
-| `multiplier` | Un valor de punto flotante que escala el efecto de sustracción sobre los parámetros del modelo base. | `FLOAT` |
+| `modelo1` | El modelo base del cual se restarán los parámetros. | `MODEL` |
+| `modelo2` | El modelo cuyos parámetros se restarán del modelo base. | `MODEL` |
+| `multiplicador` | Un valor de punto flotante que escala el efecto de sustracción sobre los parámetros del modelo base. | `FLOAT` |
 
 ## Salidas
 

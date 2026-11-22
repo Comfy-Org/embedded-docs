@@ -13,7 +13,7 @@
 | `影像` | 將從中移除背景的輸入影像。 | IMAGE | 是 | - |
 | `審核` | 審核設定。當設為 `"true"` 時，會提供額外的審核選項。 | DYNAMIC_COMBO | 是 | `"false"`<br>`"true"` |
 | `種子` | `seed` 控制節點是否應重新執行；同一張影像無論 `seed` 為何，結果都相同。預設：`0`。 | INT | 是 | 0 至 2147483647 |
-| `model` | 背景移除模型。預設為 `"RMBG2"`；`"RMBG3"` 使用較新的 Bria RMBG 3.0 模型。 | COMBO | 否 | `"RMBG2"`<br>`"RMBG3"` |
+| `模型` | 背景移除模型。預設為 `"RMBG2"`；`"RMBG3"` 使用較新的 Bria RMBG 3.0 模型。 | COMBO | 否 | `"RMBG2"`<br>`"RMBG3"` |
 
 ### Moderation "true" 輸入
 

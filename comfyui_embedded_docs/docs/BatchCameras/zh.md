@@ -6,7 +6,7 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `cameras` | 可增长的相机槽位，来自 Create Camera Info、Create Camera Orbit 或查看器。一个相机列表会视为其中的每一台相机。 | AUTOGROW | 是 | 1 到 50 台相机 |
+| `相机` | 可增长的相机槽位，来自 Create Camera Info、Create Camera Orbit 或查看器。一个相机列表会视为其中的每一台相机。 | AUTOGROW | 是 | 1 到 50 台相机 |
 
 ## 输出
 

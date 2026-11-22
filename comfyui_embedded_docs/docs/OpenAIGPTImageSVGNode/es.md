@@ -10,7 +10,7 @@ OpenAI GPT Image 2.6 SVG genera un SVG editable a partir de un prompt con los mo
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo GPT Image que se usará para el SVG. | DYNAMIC_COMBO | Sí | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
+| `modelo` | El modelo GPT Image que se usará para el SVG. | DYNAMIC_COMBO | Sí | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
 
 ### Entradas de gpt-image-2.6-flare y gpt-image-2.6-sunburst
 
@@ -18,12 +18,12 @@ Ambos modelos comparten los mismos parámetros.
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | Descripción del SVG que se va a dibujar. (predeterminado: `""`) | STRING | Sí | N/A |
-| `model.size` | Tamaño de la imagen de referencia a partir de la cual se dibuja el SVG. (predeterminado: `"1024x1024"`) | COMBO | Sí | `"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"` |
-| `model.background` | Fondo de la imagen de referencia. (predeterminado: `"auto"`) | COMBO | Sí | `"auto"`<br>`"opaque"`<br>`"transparent"` |
-| `model.quality` | Calidad de la imagen de referencia a partir de la cual se dibuja el SVG. (predeterminado: `"low"`) | COMBO | Sí | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | Cuánto planifica el modelo la imagen de referencia antes de renderizarla. (predeterminado: `"high"`) | COMBO | Sí | `"low"`<br>`"medium"`<br>`"high"` |
-| `model.seed` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. (predeterminado: `42`) | INT | Sí | 0 a 2147483647 |
+| `indicación` | Descripción del SVG que se va a dibujar. (predeterminado: `""`) | STRING | Sí | N/A |
+| `tamaño` | Tamaño de la imagen de referencia a partir de la cual se dibuja el SVG. (predeterminado: `"1024x1024"`) | COMBO | Sí | `"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"` |
+| `fondo` | Fondo de la imagen de referencia. (predeterminado: `"auto"`) | COMBO | Sí | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `calidad` | Calidad de la imagen de referencia a partir de la cual se dibuja el SVG. (predeterminado: `"low"`) | COMBO | Sí | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `complejidad` | Cuánto planifica el modelo la imagen de referencia antes de renderizarla. (predeterminado: `"high"`) | COMBO | Sí | `"low"`<br>`"medium"`<br>`"high"` |
+| `semilla` | Controla si el nodo se vuelve a ejecutar; los resultados no son deterministas independientemente de la semilla. (predeterminado: `42`) | INT | Sí | 0 a 2147483647 |
 
 ## Salidas
 

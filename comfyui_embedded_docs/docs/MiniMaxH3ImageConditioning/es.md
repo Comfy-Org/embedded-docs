@@ -9,9 +9,9 @@ Convierte un prompt en condicionamiento y un latente vacío para una imagen fija
 | `clip` | El modelo CLIP de MiniMax H3 Image, que tokeniza el prompt junto con cualquier imagen de referencia y codifica el condicionamiento. | CLIP | Sí | - |
 | `vae` | El VAE de MiniMax H3 Image. Con él, las imágenes también se anclan como latentes de referencia; sin él, solo condicionan al codificador de texto. | VAE | No | - |
 | `prompt` | Qué generar o cómo editar las imágenes de referencia. | STRING | Sí | Texto multilínea |
-| `width` | Ancho de salida en píxeles. 0 usa el ancho de `image_1` después de su escalado de referencia, o 2048 si no hay imágenes. Predeterminado: 0. | INT | Sí | 0 a MAX_RESOLUTION (paso 32) |
-| `height` | Alto de salida en píxeles. 0 usa el alto de `image_1` después de su escalado de referencia, o 2048 si no hay imágenes. Predeterminado: 0. | INT | Sí | 0 a MAX_RESOLUTION (paso 32) |
-| `images` | Grupo ampliable de imágenes de referencia, desde `image_1` en adelante; `image_1` es la imagen que se va a editar. El prompt se refiere a ellas como `<Picture n>`. | AUTOGROW | No | 0 a 100 imágenes |
+| `ancho` | Ancho de salida en píxeles. 0 usa el ancho de `image_1` después de su escalado de referencia, o 2048 si no hay imágenes. Predeterminado: 0. | INT | Sí | 0 a MAX_RESOLUTION (paso 32) |
+| `alto` | Alto de salida en píxeles. 0 usa el alto de `image_1` después de su escalado de referencia, o 2048 si no hay imágenes. Predeterminado: 0. | INT | Sí | 0 a MAX_RESOLUTION (paso 32) |
+| `imágenes` | Grupo ampliable de imágenes de referencia, desde `image_1` en adelante; `image_1` es la imagen que se va a editar. El prompt se refiere a ellas como `<Picture n>`. | AUTOGROW | No | 0 a 100 imágenes |
 
 ## Salidas
 

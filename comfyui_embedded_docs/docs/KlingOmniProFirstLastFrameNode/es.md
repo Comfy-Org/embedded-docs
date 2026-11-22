@@ -6,14 +6,14 @@ Este nodo utiliza el último modelo de Kling AI para generar un vídeo a partir 
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `model_name` | El modelo específico de Kling AI que se utilizará para la generación de vídeo. | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` |
+| `nombre_del_modelo` | El modelo específico de Kling AI que se utilizará para la generación de vídeo. | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` |
 | `prompt` | Una indicación de texto que describe el contenido del vídeo. Puede incluir descripciones tanto positivas como negativas. Se ignora cuando los storyboards están habilitados. | STRING | Sí | - |
-| `duration` | La duración deseada del vídeo generado en segundos (por defecto: 5). | INT | Sí | 3 a 15 |
-| `first_frame` | La imagen inicial para la secuencia de vídeo. | IMAGE | Sí | - |
-| `end_frame` | Un fotograma final opcional para el vídeo. No se puede utilizar simultáneamente con `reference_images`. No funciona con storyboards. | IMAGE | No | - |
-| `reference_images` | Hasta 6 imágenes de referencia adicionales. | IMAGE | No | - |
-| `resolution` | La resolución de salida para el vídeo generado (por defecto: "1080p"). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | Genera una serie de segmentos de vídeo con indicaciones y duraciones individuales. Solo es compatible con `kling-v3-omni`. | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `duración` | La duración deseada del vídeo generado en segundos (por defecto: 5). | INT | Sí | 3 a 15 |
+| `primer_fotograma` | La imagen inicial para la secuencia de vídeo. | IMAGE | Sí | - |
+| `fotograma_final` | Un fotograma final opcional para el vídeo. No se puede utilizar simultáneamente con `reference_images`. No funciona con storyboards. | IMAGE | No | - |
+| `imágenes_de_referencia` | Hasta 6 imágenes de referencia adicionales. | IMAGE | No | - |
+| `resolución` | La resolución de salida para el vídeo generado (por defecto: "1080p"). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `guiones_gráficos` | Genera una serie de segmentos de vídeo con indicaciones y duraciones individuales. Solo es compatible con `kling-v3-omni`. | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
 | `generar_audio` | Genera audio para el vídeo (por defecto: False). Solo es compatible con `kling-v3-omni`. | BOOLEAN | No | True / False |
 | `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados son no deterministas independientemente de la semilla (por defecto: 0). | INT | No | 0 a 2147483647 |
 

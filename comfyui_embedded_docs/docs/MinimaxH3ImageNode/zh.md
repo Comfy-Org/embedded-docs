@@ -6,12 +6,12 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model` | 使用 `MiniMax-H3-Image`，或使用 `MiniMax-H3-Image-Highspeed` 以获得更快的运行速度。默认：`"MiniMax-H3-Image"`。 | COMBO | 是 | `"MiniMax-H3-Image"`<br>`"MiniMax-H3-Image-Highspeed"` |
-| `prompt` | 要生成的内容，或如何编辑参考图像。连接参考图像时，最多 8,000 个字符。默认：空。 | STRING | 是 | 1 到 8000 个字符 |
-| `size` | `2K` 和 `4K` 根据宽高比推导尺寸；`custom` 设置精确的宽度和高度。默认：`"2K"`。 | DYNAMIC_COMBO | 是 | `"2K"`<br>`"4K"`<br>`"custom"` |
-| `enhance_prompt` | MiniMax 会在生成前将提示词改写为详细的场景描述。图像编辑始终会启用增强。关闭时，请选择固定的宽高比或自定义尺寸。默认：true。 | BOOLEAN | 否 | true<br>false |
-| `seed` | 控制节点是否重新运行；但无论种子为何，结果都是非确定性的。默认：42。 | INT | 否 | 0 到 2147483647 |
-| `images` | 要编辑或组合的参考图像，在提示词中按连接顺序以 `@Image1` 到 `@Image16` 引用。 | AUTOGROW | 否 | 最多 16 张图像 |
+| `模型` | 使用 `MiniMax-H3-Image`，或使用 `MiniMax-H3-Image-Highspeed` 以获得更快的运行速度。默认：`"MiniMax-H3-Image"`。 | COMBO | 是 | `"MiniMax-H3-Image"`<br>`"MiniMax-H3-Image-Highspeed"` |
+| `提示词` | 要生成的内容，或如何编辑参考图像。连接参考图像时，最多 8,000 个字符。默认：空。 | STRING | 是 | 1 到 8000 个字符 |
+| `尺寸` | `2K` 和 `4K` 根据宽高比推导尺寸；`custom` 设置精确的宽度和高度。默认：`"2K"`。 | DYNAMIC_COMBO | 是 | `"2K"`<br>`"4K"`<br>`"custom"` |
+| `增强提示词` | MiniMax 会在生成前将提示词改写为详细的场景描述。图像编辑始终会启用增强。关闭时，请选择固定的宽高比或自定义尺寸。默认：true。 | BOOLEAN | 否 | true<br>false |
+| `种子` | 控制节点是否重新运行；但无论种子为何，结果都是非确定性的。默认：42。 | INT | 否 | 0 到 2147483647 |
+| `图像` | 要编辑或组合的参考图像，在提示词中按连接顺序以 `@Image1` 到 `@Image16` 引用。 | AUTOGROW | 否 | 最多 16 张图像 |
 
 ### 尺寸 "2K" 和 "4K" 输入
 

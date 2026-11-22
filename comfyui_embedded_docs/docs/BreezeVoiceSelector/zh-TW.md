@@ -6,7 +6,7 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `language` | 精選語音的語言群組，或使用 `custom` 以輸入 ID。預設：`"English"`。 | DYNAMIC_COMBO | 是 | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
+| `語言` | 精選語音的語言群組，或使用 `custom` 以輸入 ID。預設：`"English"`。 | DYNAMIC_COMBO | 是 | `"English"`<br>`"Chinese"`<br>`"Japanese"`<br>`"custom"` |
 
 ### 語言 "English"、"Chinese" 和 "Japanese" 輸入
 

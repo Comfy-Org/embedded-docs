@@ -8,7 +8,7 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的模型。选择模型会显示其特有的参数：`image`、`scale_factor` 和 `creativity`。 | DYNAMIC_COMBO | 是 | `"crystal-upscaler"` |
+| `模型` | 要使用的模型。选择模型会显示其特有的参数：`image`、`scale_factor` 和 `creativity`。 | DYNAMIC_COMBO | 是 | `"crystal-upscaler"` |
 | `image` | 要放大的图像。必须恰好包含一张图像；不支持图像批次。 | IMAGE | 是 | N/A |
 | `scale_factor` | 将图像宽度和高度相乘的系数。输出限制为 100 兆像素（默认值：2.0）。 | FLOAT | 是 | 1.0 到 200.0 （步长：0.1） |
 | `creativity` | 较高的值让模型重建更多细节，而不是严格保留原始图像。对于较短边为 256 像素或更小的图像没有效果（默认值：0）。 | INT | 是 | 0 到 10 |

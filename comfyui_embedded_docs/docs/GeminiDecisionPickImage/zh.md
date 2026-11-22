@@ -6,10 +6,10 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的模型（默认：`"gemini-decision-1"`）。 | COMBO | 是 | `"gemini-decision-1"` |
-| `question` | 选择哪张图像（默认："Which image best matches the prompt in text? If there is no text, which image has the best quality?"）。 | STRING | 是 | 1 到 5000 个字符 |
-| `images` | 可供选择的图像，可以是批次，也可以是单批帧。 | IMAGE | 是 | 2 到 64 张图像 |
-| `text` | 问题所针对的文本，例如生成这些图像所用的提示词，最多 20000 个字符。 | STRING | 否 | 最多 20000 个字符 |
+| `模型` | 要使用的模型（默认：`"gemini-decision-1"`）。 | COMBO | 是 | `"gemini-decision-1"` |
+| `问题` | 选择哪张图像（默认："Which image best matches the prompt in text? If there is no text, which image has the best quality?"）。 | STRING | 是 | 1 到 5000 个字符 |
+| `图像` | 可供选择的图像，可以是批次，也可以是单批帧。 | IMAGE | 是 | 2 到 64 张图像 |
+| `文本` | 问题所针对的文本，例如生成这些图像所用的提示词，最多 20000 个字符。 | STRING | 否 | 最多 20000 个字符 |
 
 此节点需要 2 到 64 张图像，只有单张图像时会报错。当选择应以提示词为依据而非仅凭图像质量时，请连接 `text`。
 

@@ -8,11 +8,11 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `positive` | 要使用參考 latent 修改的正向 conditioning。 | CONDITIONING | 是 | - |
-| `negative` | 可選的負向 conditioning，會接收相同的參考 latent。保持未連接，即可在 `negative` 輸出上重複使用修改後的正向 conditioning。 | CONDITIONING | 否 | - |
+| `正向` | 要使用參考 latent 修改的正向 conditioning。 | CONDITIONING | 是 | - |
+| `負向` | 可選的負向 conditioning，會接收相同的參考 latent。保持未連接，即可在 `negative` 輸出上重複使用修改後的正向 conditioning。 | CONDITIONING | 否 | - |
 | `vae` | 用於編碼已連接參考影像的 VAE。未連接 VAE 時，參考影像會被忽略。 | VAE | 否 | - |
-| `resolution` | 每張參考影像在編碼前的準備方式。`"keep resolution"` 會以傳入尺寸進行編碼；`"resize"` 會將其縮放至目標百萬像素數，同時保留長寬比，這會顯示 `megapixels`。（預設值："keep resolution"） | DYNAMIC_COMBO | 是 | `"keep resolution"`<br>`"resize"` |
-| `images` | 可增長插槽：連接一張或多張參考影像（`image_1`、`image_2`、...）以作為參考。影像會依插槽順序編碼，並依該順序附加至 conditioning。 | IMAGE | 否 | 1 至 100 |
+| `解析度` | 每張參考影像在編碼前的準備方式。`"keep resolution"` 會以傳入尺寸進行編碼；`"resize"` 會將其縮放至目標百萬像素數，同時保留長寬比，這會顯示 `megapixels`。（預設值："keep resolution"） | DYNAMIC_COMBO | 是 | `"keep resolution"`<br>`"resize"` |
+| `圖像` | 可增長插槽：連接一張或多張參考影像（`image_1`、`image_2`、...）以作為參考。影像會依插槽順序編碼，並依該順序附加至 conditioning。 | IMAGE | 否 | 1 至 100 |
 
 ### 調整尺寸輸入
 

@@ -6,10 +6,10 @@ El nodo LTXV Empty Latent Audio crea un lote de tensores latentes de audio vací
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `frames_number` | Número de fotogramas. El valor predeterminado es 97. | INT | Sí | 1 a 1000 |
-| `frame_rate` | Número de fotogramas por segundo. El valor predeterminado es 25.0. Esta entrada acepta valores FLOAT o INT. | FLOAT | Sí | 1.0 a 1000.0 |
-| `batch_size` | El número de muestras de audio latente en el lote. El valor predeterminado es 1. | INT | Sí | 1 a 4096 |
-| `audio_vae` | El modelo Audio VAE del que obtener la configuración. Se muestra como «Audio VAE». | VAE | Sí | N/A |
+| `número_de_fotogramas` | Número de fotogramas. El valor predeterminado es 97. | INT | Sí | 1 a 1000 |
+| `tasa_de_fotogramas` | Número de fotogramas por segundo. El valor predeterminado es 25.0. Esta entrada acepta valores FLOAT o INT. | FLOAT | Sí | 1.0 a 1000.0 |
+| `tamaño_de_lote` | El número de muestras de audio latente en el lote. El valor predeterminado es 1. | INT | Sí | 1 a 4096 |
+| `vae_de_audio` | El modelo Audio VAE del que obtener la configuración. Se muestra como «Audio VAE». | VAE | Sí | N/A |
 
 **Nota:** La entrada `audio_vae` es obligatoria. El nodo genera un error si no se proporciona.
 

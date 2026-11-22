@@ -10,7 +10,7 @@ OpenAI GPT Image 2.6 SVG 使用 OpenAI 的 GPT Image 模型根据提示词生成
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model` | 用于 SVG 的 GPT Image 模型。 | DYNAMIC_COMBO | 是 | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
+| `模型` | 用于 SVG 的 GPT Image 模型。 | DYNAMIC_COMBO | 是 | `"gpt-image-2.6-flare"`<br>`"gpt-image-2.6-sunburst"` |
 
 ### gpt-image-2.6-flare 和 gpt-image-2.6-sunburst 输入
 
@@ -18,12 +18,12 @@ OpenAI GPT Image 2.6 SVG 使用 OpenAI 的 GPT Image 模型根据提示词生成
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `model.prompt` | 要绘制的 SVG 的描述。（默认：`""`） | STRING | 是 | N/A |
-| `model.size` | 用于绘制 SVG 的参考图像的尺寸。（默认：`"1024x1024"`） | COMBO | 是 | `"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"` |
-| `model.background` | 参考图像的背景。（默认：`"auto"`） | COMBO | 是 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
-| `model.quality` | 用于绘制 SVG 的参考图像的质量。（默认：`"low"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
-| `model.complexity` | 模型在渲染前对参考图像进行规划的程度。（默认：`"high"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
-| `model.seed` | 控制节点是否重新运行；无论随机种子如何，结果都是非确定性的。（默认：`42`） | INT | 是 | 0 到 2147483647 |
+| `提示词` | 要绘制的 SVG 的描述。（默认：`""`） | STRING | 是 | N/A |
+| `尺寸` | 用于绘制 SVG 的参考图像的尺寸。（默认：`"1024x1024"`） | COMBO | 是 | `"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"` |
+| `背景` | 参考图像的背景。（默认：`"auto"`） | COMBO | 是 | `"auto"`<br>`"opaque"`<br>`"transparent"` |
+| `质量` | 用于绘制 SVG 的参考图像的质量。（默认：`"low"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
+| `复杂度` | 模型在渲染前对参考图像进行规划的程度。（默认：`"high"`） | COMBO | 是 | `"low"`<br>`"medium"`<br>`"high"` |
+| `种子` | 控制节点是否重新运行；无论随机种子如何，结果都是非确定性的。（默认：`42`） | INT | 是 | 0 到 2147483647 |
 
 ## 输出
 

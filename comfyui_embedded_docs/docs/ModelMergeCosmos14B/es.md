@@ -6,8 +6,8 @@ El nodo **ModelMergeCosmos14B** fusiona dos modelos de IA mediante un enfoque ba
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model1` | Primer modelo que se va a fusionar | MODEL | Sí | - |
-| `model2` | Segundo modelo que se va a fusionar | MODEL | Sí | - |
+| `modelo1` | Primer modelo que se va a fusionar | MODEL | Sí | - |
+| `modelo2` | Segundo modelo que se va a fusionar | MODEL | Sí | - |
 | `pos_embedder.` | Peso para el componente de embedding de posición (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |
 | `extra_pos_embedder.` | Peso para el componente de embedding de posición adicional (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |
 | `x_embedder.` | Peso para el componente de embedding x (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 (paso: 0.01) |

@@ -8,8 +8,8 @@ El parámetro `ratio` determina la proporción de mezcla entre los dos modelos. 
 
 | Parámetro | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `model1` | El primer modelo a fusionar. Actúa como modelo base sobre el cual se aplican los parches del segundo modelo. | `MODEL` |
-| `model2` | El segundo modelo cuyos parches se aplican sobre el primer modelo, influenciados por la proporción especificada. | `MODEL` |
+| `modelo1` | El primer modelo a fusionar. Actúa como modelo base sobre el cual se aplican los parches del segundo modelo. | `MODEL` |
+| `modelo2` | El segundo modelo cuyos parches se aplican sobre el primer modelo, influenciados por la proporción especificada. | `MODEL` |
 | `ratio` | Cuando este valor es 1, el modelo de salida es 100% `model1`, y cuando este valor es 0, el modelo de salida es 100% `model2`. | `FLOAT` |
 
 ## Salidas

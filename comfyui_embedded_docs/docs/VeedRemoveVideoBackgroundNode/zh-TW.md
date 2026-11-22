@@ -6,7 +6,7 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `model` | 要使用的分割模型：`"standard"` 適用於任何背景，可提供最佳邊緣，輸出最高可達 3840x2160；`"fast"` 可更快取得結果，最高可達 1920x1080；`"green screen"` 可去背綠幕背景，最高可達 3840x2160。較大的影片會被縮小。選取某個選項後會顯示其參數。 | DYNAMIC_COMBO | 是 | `"standard"`<br>`"fast"`<br>`"green screen"` |
+| `模型` | 要使用的分割模型：`"standard"` 適用於任何背景，可提供最佳邊緣，輸出最高可達 3840x2160；`"fast"` 可更快取得結果，最高可達 1920x1080；`"green screen"` 可去背綠幕背景，最高可達 3840x2160。較大的影片會被縮小。選取某個選項後會顯示其參數。 | DYNAMIC_COMBO | 是 | `"standard"`<br>`"fast"`<br>`"green screen"` |
 | `video` | 要從中將主體去背的影片。最多 60 秒。 | VIDEO | 是 | 最多 60 秒 |
 | `refine_foreground_edges` | 讓頭髮、毛髮與細節的邊緣更乾淨。關閉此選項可降低費用。適用於 `"standard"` 與 `"fast"`（預設：True）。 | BOOLEAN | 是 | false<br>true |
 | `subject_is_person` | 當主體是物件或動物時請關閉。適用於 `"standard"` 與 `"fast"`（預設：True）。 | BOOLEAN | 是 | false<br>true |

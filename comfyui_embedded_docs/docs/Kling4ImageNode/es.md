@@ -8,10 +8,10 @@ Genera o edita imágenes con Kling 4.0 a partir de un prompt de texto y hasta 10
 |-----------|-------------|---------------|-------------|-------|
 | `reference_images` | Ranuras ampliables para imágenes de referencia (`image_1` ... `image_10`). Refiérase a ellas en el prompt como `@Image1`, `@Image2`, etc. | AUTOGROW | No | 0 a 10 imágenes |
 | `prompt` | Descripción de la imagen. Refiérase a las imágenes conectadas como `@Image1`, `@Image2`, ... Predeterminado: cadena vacía. | STRING | Sí | Texto multilínea |
-| `resolution` | Resolución de la imagen de salida. Predeterminado: `"2K"`. | COMBO | Sí | `"2K"`<br>`"4K"`<br>`"8K"` |
+| `resolución` | Resolución de la imagen de salida. Predeterminado: `"2K"`. | COMBO | Sí | `"2K"`<br>`"4K"`<br>`"8K"` |
 | `aspect_ratio` | Relación de aspecto de la imagen de salida. `"auto"` sigue las imágenes de referencia; de lo contrario, el prompt. Predeterminado: `"auto"`. | COMBO | Sí | `"auto"`<br>`"9:16"`<br>`"2:3"`<br>`"3:4"`<br>`"1:1"`<br>`"4:3"`<br>`"3:2"`<br>`"16:9"`<br>`"21:9"` |
 | `series_amount` | Genera una serie de imágenes relacionadas que mantienen los mismos personajes y estilo. `"auto"` permite que el modelo elija de 2 a 10 imágenes. Predeterminado: `"disabled"`. | COMBO | Sí | `"disabled"`<br>`"auto"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` |
-| `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
+| `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. Predeterminado: 42. | INT | Sí | 0 a 2147483647 |
 
 **Restricciones y comportamiento:**
 

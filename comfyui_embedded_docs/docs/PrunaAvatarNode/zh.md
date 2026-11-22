@@ -6,21 +6,21 @@
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `image` | 视频起始的人像。1:2 到 4:1 之间的宽高比会被保留；更极端的图像（例如 1:5）会被裁剪为 9:16 或 16:9。 | IMAGE | 是 | - |
-| `speech` | 用文本转语音脚本或你自己的音频来驱动视频。选择某个选项后，其对应输入项会在下方显示。 | DYNAMIC_COMBO | 是 | `"script"`<br>`"audio"` |
-| `prompt` | 描述视频呈现的内容（默认："The person is talking."）。最多 5000 个字符。 | STRING | 是 | 最多 5000 个字符 |
-| `resolution` | 输出分辨率（默认：`"768p"`）。1080p、2k 和 4k 会对生成的 768p 视频进行放大。 | COMBO | 是 | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
+| `图像` | 视频起始的人像。1:2 到 4:1 之间的宽高比会被保留；更极端的图像（例如 1:5）会被裁剪为 9:16 或 16:9。 | IMAGE | 是 | - |
+| `语音` | 用文本转语音脚本或你自己的音频来驱动视频。选择某个选项后，其对应输入项会在下方显示。 | DYNAMIC_COMBO | 是 | `"script"`<br>`"audio"` |
+| `提示词` | 描述视频呈现的内容（默认："The person is talking."）。最多 5000 个字符。 | STRING | 是 | 最多 5000 个字符 |
+| `分辨率` | 输出分辨率（默认：`"768p"`）。1080p、2k 和 4k 会对生成的 768p 视频进行放大。 | COMBO | 是 | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
 | `enhance_prompt` | 将人像中呈现的动态（如背景、灯光和身体动作）添加到提示词中（默认：True）。高级设置。 | BOOLEAN | 是 | `True`<br>`False` |
-| `seed` | 生成所用的随机种子（默认：42）。只有在 `enhance_prompt` 关闭时，相同种子才能精确复现结果。 | INT | 是 | 0 到 2147483647<br>步长：1 |
+| `种子` | 生成所用的随机种子（默认：42）。只有在 `enhance_prompt` 关闭时，相同种子才能精确复现结果。 | INT | 是 | 0 到 2147483647<br>步长：1 |
 
 ### `"script"` 输入
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `speech.script` | 人物要说出的话。视频长度与语音长度一致，超过 3 分钟的语音会在 3 分钟处截断。 | STRING | 是 | 任意文本 |
-| `speech.voice` | 语音所使用的音色（默认：`"Zephyr (Female)"`）。 | COMBO | 是 | 30 个预设音色 |
-| `speech.language` | 脚本朗读所用的语言（默认：`"English (US)"`）。 | COMBO | 是 | `"English (US)"`<br>`"English (UK)"`<br>`"Spanish"`<br>`"French"`<br>`"German"`<br>`"Italian"`<br>`"Portuguese (Brazil)"`<br>`"Japanese"`<br>`"Korean"`<br>`"Hindi"` |
-| `speech.voice_prompt` | 脚本的朗读方式：语气、节奏、口音、情绪（默认："Say the following."）。该内容本身不会被朗读。 | STRING | 是 | 任意文本 |
+| `脚本` | 人物要说出的话。视频长度与语音长度一致，超过 3 分钟的语音会在 3 分钟处截断。 | STRING | 是 | 任意文本 |
+| `声音` | 语音所使用的音色（默认：`"Zephyr (Female)"`）。 | COMBO | 是 | 30 个预设音色 |
+| `语言` | 脚本朗读所用的语言（默认：`"English (US)"`）。 | COMBO | 是 | `"English (US)"`<br>`"English (UK)"`<br>`"Spanish"`<br>`"French"`<br>`"German"`<br>`"Italian"`<br>`"Portuguese (Brazil)"`<br>`"Japanese"`<br>`"Korean"`<br>`"Hindi"` |
+| `voice_prompt` | 脚本的朗读方式：语气、节奏、口音、情绪（默认："Say the following."）。该内容本身不会被朗读。 | STRING | 是 | 任意文本 |
 
 ### `"audio"` 输入
 

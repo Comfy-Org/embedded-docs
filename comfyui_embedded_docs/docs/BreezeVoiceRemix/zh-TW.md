@@ -6,10 +6,10 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `voice` | 要變更的 Breeze 語音。 | BREEZE_VOICE | 是 | - |
-| `change` | `custom` 以文字描述變更內容，`preset` 選擇具名的變更。預設：`"custom"`。 | DYNAMIC_COMBO | 是 | `"custom"`<br>`"preset"` |
-| `strength` | 數值越高，語音變更程度越大。預設：4.0。 | FLOAT | 否 | 1.0 至 10.0（步進值：0.1） |
-| `seed` | 控制節點是否重新執行；無論 `seed` 為何，結果都不具確定性。預設：42。 | INT | 否 | 0 至 2147483647 |
+| `聲音` | 要變更的 Breeze 語音。 | BREEZE_VOICE | 是 | - |
+| `變更` | `custom` 以文字描述變更內容，`preset` 選擇具名的變更。預設：`"custom"`。 | DYNAMIC_COMBO | 是 | `"custom"`<br>`"preset"` |
+| `強度` | 數值越高，語音變更程度越大。預設：4.0。 | FLOAT | 否 | 1.0 至 10.0（步進值：0.1） |
+| `種子` | 控制節點是否重新執行；無論 `seed` 為何，結果都不具確定性。預設：42。 | INT | 否 | 0 至 2147483647 |
 
 ### Change "custom" 輸入
 

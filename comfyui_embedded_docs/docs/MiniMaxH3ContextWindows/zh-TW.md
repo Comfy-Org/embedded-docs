@@ -6,12 +6,12 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 | --- | --- | --- | --- | --- |
-| `model` | 要在取樣期間套用上下文視窗的模型。 | MODEL | 是 | - |
-| `context_length` | 上下文視窗的長度，以實際幀數表示。必須為 17*n + 5（預設值：124）。 | INT | 是 | 22 至 16384（MAX_RESOLUTION），步進值：17 |
-| `context_overlap` | 上下文視窗的重疊長度，以實際幀數表示。必須為 17*n + 5（預設值：39）。 | INT | 是 | 5 或更高，步進值：17 |
-| `fuse_method` | 用於融合上下文視窗的方法（預設值：`"pyramid"`）。 | COMBO | 是 | `"pyramid"`<br>`"relative"`<br>`"flat"`<br>`"overlap-linear"` |
+| `模型` | 要在取樣期間套用上下文視窗的模型。 | MODEL | 是 | - |
+| `上下文長度` | 上下文視窗的長度，以實際幀數表示。必須為 17*n + 5（預設值：124）。 | INT | 是 | 22 至 16384（MAX_RESOLUTION），步進值：17 |
+| `上下文重疊` | 上下文視窗的重疊長度，以實際幀數表示。必須為 17*n + 5（預設值：39）。 | INT | 是 | 5 或更高，步進值：17 |
+| `融合方法` | 用於融合上下文視窗的方法（預設值：`"pyramid"`）。 | COMBO | 是 | `"pyramid"`<br>`"relative"`<br>`"flat"`<br>`"overlap-linear"` |
 | `freenoise` | 是否套用 FreeNoise 雜訊洗牌，可改善視窗混合（預設值：True，進階參數）。 | BOOLEAN | 是 | true<br>false |
-| `split_conds_to_windows` | 是否根據區域索引，將多個條件（由 ConditionCombine 建立）分割到各個視窗（預設值：False，進階參數）。 | BOOLEAN | 是 | true<br>false |
+| `將條件拆分至視窗` | 是否根據區域索引，將多個條件（由 ConditionCombine 建立）分割到各個視窗（預設值：False，進階參數）。 | BOOLEAN | 是 | true<br>false |
 
 這兩個長度皆以實際幀數指定，並在取樣前轉換為 latent：`context_length` 在 5 幀或更少時會變成 2 個 latent，否則為 `((frames - 5) / 17) * 5 + 2`。`context_overlap` 以相同方式轉換，然後上限設為 `context_length` 減 5，因此重疊部分始終會留下一個完整區塊可往前推進。此節點一律使用步幅為 1 的靜態排程，在 latent 時間維度上套用視窗，且不加入因果修正幀，因為每個視窗都從區塊邊界開始。`split_conds_to_windows` 預期使用由 ConditionCombine 節點建立的多個條件。
 

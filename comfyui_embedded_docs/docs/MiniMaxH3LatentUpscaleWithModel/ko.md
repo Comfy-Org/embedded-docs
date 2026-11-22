@@ -6,10 +6,10 @@ MiniMax H3 Latent Upscale With Model은 latent 업스케일 모델을 사용하�
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | latent 업스케일 모델로, 일반적으로 Load Latent Upscale Model로 로드합니다. MiniMax H3 3D-conv latent 업스케일러여야 합니다. | LATENT_UPSCALE_MODEL | 예 | - |
-| `samples` | 크기 조정할 MiniMax H3 latent입니다. 중첩된 latent는 오디오 부분을 그대로 유지합니다. | LATENT | 예 | - |
-| `width` | 대상 비디오 너비(픽셀)입니다. latent는 `width / 16` 열로 크기 조정되므로 값은 16의 배수로 내림됩니다. (기본값: 2560) | INT | 예 | 32  ~  16384 (단계: 32) |
-| `height` | 대상 비디오 높이(픽셀)이며, 마찬가지로 16의 배수로 내림됩니다. (기본값: 1440) | INT | 예 | 32  ~  16384 (단계: 32) |
+| `모델` | latent 업스케일 모델로, 일반적으로 Load Latent Upscale Model로 로드합니다. MiniMax H3 3D-conv latent 업스케일러여야 합니다. | LATENT_UPSCALE_MODEL | 예 | - |
+| `샘플` | 크기 조정할 MiniMax H3 latent입니다. 중첩된 latent는 오디오 부분을 그대로 유지합니다. | LATENT | 예 | - |
+| `너비` | 대상 비디오 너비(픽셀)입니다. latent는 `width / 16` 열로 크기 조정되므로 값은 16의 배수로 내림됩니다. (기본값: 2560) | INT | 예 | 32  ~  16384 (단계: 32) |
+| `높이` | 대상 비디오 높이(픽셀)이며, 마찬가지로 16의 배수로 내림됩니다. (기본값: 1440) | INT | 예 | 32  ~  16384 (단계: 32) |
 
 요청된 크기가 이미 latent와 일치하면 입력 latent가 변경 없이 반환됩니다. 크기가 조정된 latent에는 `noise_mask`가 포함되지 않으므로 부분적으로 마스크된 latent는 마스크를 잃습니다. 네트워크는 3D 컨볼루션을 시간 슬래브에서 실행하므로 긴 클립에서도 메모리 사용량이 단일 슬래브와 비슷하게 유지됩니다.
 

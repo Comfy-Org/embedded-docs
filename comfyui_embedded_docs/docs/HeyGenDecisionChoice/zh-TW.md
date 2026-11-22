@@ -6,13 +6,13 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 要使用的模型。`heygen-decision-1-turbo` 比 `heygen-decision-1` 更快且成本更低（預設：`"heygen-decision-1"`）。 | COMBO | 是 | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | 選項所要回答的問題，最多 5000 個字元（預設："What style is the image?"）。 | STRING | 是 | 1 至 5000 個字元 |
-| `options` | 每行一個選項，完全依輸入內容使用，每個最多 128 個字元。為不符合任何選項的輸入新增一個選項，例如 `other`（預設：`photo`、`illustration`、`3d render`、`anime`、`sketch`、`other`）。 | STRING | 是 | 2 至 255 個選項 |
-| `images` | 要分類的影像，總共最多 4 張，批次中的每一幀都會計入。它們依序跨各個插槽編號為 `image_1` 至 `image_4`。 | IMAGE | 否 | 最多 4 張影像 |
+| `模型` | 要使用的模型。`heygen-decision-1-turbo` 比 `heygen-decision-1` 更快且成本更低（預設：`"heygen-decision-1"`）。 | COMBO | 是 | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
+| `問題` | 選項所要回答的問題，最多 5000 個字元（預設："What style is the image?"）。 | STRING | 是 | 1 至 5000 個字元 |
+| `選項` | 每行一個選項，完全依輸入內容使用，每個最多 128 個字元。為不符合任何選項的輸入新增一個選項，例如 `other`（預設：`photo`、`illustration`、`3d render`、`anime`、`sketch`、`other`）。 | STRING | 是 | 2 至 255 個選項 |
+| `影像` | 要分類的影像，總共最多 4 張，批次中的每一幀都會計入。它們依序跨各個插槽編號為 `image_1` 至 `image_4`。 | IMAGE | 否 | 最多 4 張影像 |
 | `audio_1` | 要分類的音訊，最長 30 分鐘。 | AUDIO | 否 | 最長 30 分鐘 |
 | `video_1` | 要分類的影片，最長 60 秒。 | VIDEO | 否 | 最長 60 秒 |
-| `text` | 問題所針對的文字，例如提示詞或 LLM 回應，最多 20000 個字元。 | STRING | 否 | 最多 20000 個字元 |
+| `文字` | 問題所針對的文字，例如提示詞或 LLM 回應，最多 20000 個字元。 | STRING | 否 | 最多 20000 個字元 |
 
 請提供 2 至 255 個選項，且不得重複，也不得有僅大小寫不同的選項，否則節點會引發錯誤。至少連接一個要分類的輸入，並在問題中依插槽名稱指稱它們，例如「Which season is shown in image_1?」。
 

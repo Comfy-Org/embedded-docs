@@ -6,7 +6,7 @@ El nodo LatentUpscaleModelLoader carga un modelo especializado en escalar repres
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model_name` | El nombre del archivo de modelo de escalado latente que se va a cargar. Las opciones disponibles se rellenan dinámicamente a partir de los archivos presentes en el directorio `latent_upscale_models` de ComfyUI. | COMBO | Sí | Todos los archivos de la carpeta `latent_upscale_models` |
+| `nombre_del_modelo` | El nombre del archivo de modelo de escalado latente que se va a cargar. Las opciones disponibles se rellenan dinámicamente a partir de los archivos presentes en el directorio `latent_upscale_models` de ComfyUI. | COMBO | Sí | Todos los archivos de la carpeta `latent_upscale_models` |
 
 ## Salidas
 

@@ -7,12 +7,12 @@ Este nodo modifica áreas específicas de una imagen basándose en un prompt de 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
 | `imagen` | La imagen de entrada que se va a modificar | IMAGE | Sí | - |
-| `mask` | La máscara que define qué áreas de la imagen deben modificarse | MASK | Sí | - |
+| `máscara` | La máscara que define qué áreas de la imagen deben modificarse | MASK | Sí | - |
 | `prompt` | Prompt para la generación de la imagen (por defecto: cadena vacía, longitud máxima: 1000 caracteres) | STRING | Sí | - |
 | `n` | El número de imágenes a generar (por defecto: 1, mínimo: 1, máximo: 6) | INT | Sí | 1-6 |
 | `semilla` | Semilla para determinar si el nodo debe ejecutarse de nuevo; los resultados reales son no deterministas independientemente de la semilla (por defecto: 0) | INT | Sí | 0-18446744073709551615 |
-| `recraft_style` | Parámetro de estilo opcional para la API de Recraft. Si no se proporciona, se usa el estilo "realistic_image" por defecto | STYLEV3 | No | - |
-| `negative_prompt` | Descripción de texto opcional de elementos no deseados en una imagen (por defecto: cadena vacía) | STRING | No | - |
+| `estilo_recraft` | Parámetro de estilo opcional para la API de Recraft. Si no se proporciona, se usa el estilo "realistic_image" por defecto | STYLEV3 | No | - |
+| `prompt_negativo` | Descripción de texto opcional de elementos no deseados en una imagen (por defecto: cadena vacía) | STRING | No | - |
 
 *Nota: La `image` y la `mask` deben proporcionarse juntas para que funcione la operación de inpainting. La máscara se redimensionará automáticamente para coincidir con las dimensiones de la imagen. El `prompt` se valida y tiene una longitud máxima de 1000 caracteres. Si se utiliza un `style_id` de la Infinite Style Library, asegúrese de que no sea un estilo de arte vectorial, ya que esto puede hacer que la API devuelva datos SVG en lugar de una imagen.*
 

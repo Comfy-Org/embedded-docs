@@ -6,7 +6,7 @@ Une cámaras y órbitas de cámara en una sola lista de cámaras, en el orden de
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `cameras` | Ranura ampliable de cámaras, procedentes de Create Camera Info, Create Camera Orbit o de un visor. Una lista de cámaras cuenta como todas las cámaras que contiene. | AUTOGROW | Sí | 1 a 50 cámaras |
+| `cámaras` | Ranura ampliable de cámaras, procedentes de Create Camera Info, Create Camera Orbit o de un visor. Una lista de cámaras cuenta como todas las cámaras que contiene. | AUTOGROW | Sí | 1 a 50 cámaras |
 
 ## Salidas
 

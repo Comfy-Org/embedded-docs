@@ -6,8 +6,8 @@ RelayVSR Conditioning prepara el condicionamiento y el latent vacío para un esc
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
-| `model` | El modelo de difusión RelayVSR, cargado con Load Model: `relayvsr_x2_lightx2v_int8_convrot.safetensors` o `relayvsr_x4_int8_convrot.safetensors`. | MODEL | Sí | N/A |
-| `images` | El video de baja calidad en su resolución nativa. El factor de escalado del modelo determina el tamaño del resultado. | IMAGE | Sí | N/A |
+| `modelo` | El modelo de difusión RelayVSR, cargado con Load Model: `relayvsr_x2_lightx2v_int8_convrot.safetensors` o `relayvsr_x4_int8_convrot.safetensors`. | MODEL | Sí | N/A |
+| `imágenes` | El video de baja calidad en su resolución nativa. El factor de escalado del modelo determina el tamaño del resultado. | IMAGE | Sí | N/A |
 
 ## Salidas
 

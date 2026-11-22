@@ -8,7 +8,7 @@ El nodo Save Video guarda el video de entrada en tu directorio de salida de Comf
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `video` | El video a guardar. | VIDEO | Sí | - |
+| `vídeo` | El video a guardar. | VIDEO | Sí | - |
 | `prefijo_nombre_archivo` | El prefijo para el archivo a guardar. Puede incluir información de formato como `%date:yyyy-MM-dd%` o `%Empty Latent Image.width%` para incluir valores de los nodos (predeterminado: `video/ComfyUI`). | STRING | Sí | - |
 | `formato` | El contenedor de salida. `auto` usa MOV para ProRes, WebM para AV1 y MP4 en los demás casos. MP4, MKV, WebM y MOV seleccionan un contenedor específico. Seleccionar un formato también determina qué opciones de códec están disponibles (predeterminado: `auto`). | DYNAMIC_COMBO | Sí | `"auto"`<br>`"mp4"`<br>`"mkv"`<br>`"webm"`<br>`"mov"` |
 | `códec` | El códec de video de salida. `auto` conserva un flujo de origen compatible. La recodificación H.264 y AV1 admite SDR, HDR (HLG) y HDR PQ. Este selector está anidado bajo el formato elegido (predeterminado: `auto`). | DYNAMIC_COMBO | No | `"auto"`<br>`"h264"`<br>`"av1"` (no disponible con el formato `webm`)<br>`"prores"` (solo con los formatos `auto`, `mkv` y `mov`) |

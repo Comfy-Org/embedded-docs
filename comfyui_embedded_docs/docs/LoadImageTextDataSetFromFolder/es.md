@@ -6,7 +6,7 @@ Este nodo carga un conjunto de pares de imagen y descripción de texto desde una
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 | --- | --- | --- | --- | --- |
-| `folder` | La carpeta desde la que se cargan las imágenes y las descripciones de texto. | COMBO | Sí | Subcarpetas dentro del directorio de entrada de ComfyUI (cargadas dinámicamente) |
+| `carpeta` | La carpeta desde la que se cargan las imágenes y las descripciones de texto. | COMBO | Sí | Subcarpetas dentro del directorio de entrada de ComfyUI (cargadas dinámicamente) |
 
 **Nota:** La carpeta seleccionada debe ser una subcarpeta del directorio de entrada de ComfyUI. El nodo espera un archivo de descripción `.txt` por imagen: para cada archivo de imagen (`.png`, `.jpg`, `.jpeg`, `.webp`), busca un archivo `.txt` con el mismo nombre base en la misma ubicación y utiliza su contenido recortado como descripción. Si no se encuentra ningún archivo de descripción, se utiliza una cadena vacía. El nodo también admite la estructura de carpetas de kohya-ss/sd-scripts: las subcarpetas cuyo nombre comienza con un número y un guion bajo (por ejemplo `5_cats`) repiten las imágenes de su interior esa cantidad de veces en la lista de salida final. Si la carpeta seleccionada no contiene imágenes válidas, el nodo genera un error.
 
