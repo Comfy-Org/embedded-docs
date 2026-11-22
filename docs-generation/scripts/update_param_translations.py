@@ -299,6 +299,26 @@ def update_doc_with_translations(doc_file, node_name, lang, frontend_translation
     
     return False, []
 
+def _changed_doc_pairs(base):
+    """{(node_name, lang)} for docs changed against *base* (three-dot diff)."""
+    import subprocess
+    try:
+        out = subprocess.run(
+            ["git", "diff", "--name-only", f"{base}...HEAD", "--",
+             "comfyui_embedded_docs/docs/"],
+            capture_output=True, text=True, check=True,
+            cwd=str(DOCS_ROOT.parents[1]),   # repo root: the pathspec is root-relative
+        ).stdout
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return set()
+    pairs = set()
+    for line in out.splitlines():
+        parts = line.strip().split("/")
+        if len(parts) >= 2 and parts[-1].endswith(".md"):
+            pairs.add((parts[-2], parts[-1][:-3]))
+    return pairs
+
+
 def main():
     """Main function"""
 
@@ -312,6 +332,13 @@ def main():
                         help="Preview changes without writing files")
     parser.add_argument("--refresh", action="store_true",
                         help="Force re-fetch of frontend translations from GitHub")
+    parser.add_argument("--changed-only", action="store_true",
+                        help="only files changed against --base (CI gate on a PR)")
+    parser.add_argument("--base", default="origin/main",
+                        help="base ref for --changed-only (default: origin/main)")
+    parser.add_argument("--check-only", action="store_true",
+                        help="never write; exit 1 when any Inputs param name diverges "
+                             "from the frontend table")
     args = parser.parse_args()
 
     if args.lang and args.lang not in SUPPORTED_LANGS:
@@ -321,7 +348,7 @@ def main():
 
     target_lang = args.lang
     target_node = args.node
-    dry_run = args.dry_run
+    dry_run = args.dry_run or args.check_only
     force_refresh = args.refresh
     
     print("=" * 80)
@@ -355,6 +382,14 @@ def main():
             print(f"❌ Error: --node must be a node directory inside {DOCS_ROOT}, got: {target_node}")
             sys.exit(1)
         node_dirs = [candidate]
+    elif args.changed_only:
+        changed = _changed_doc_pairs(args.base)
+        node_dirs = []
+        for node_name, _lang in changed:
+            d = DOCS_ROOT / node_name
+            if d.is_dir() and d not in node_dirs:
+                node_dirs.append(d)
+        print(f"🔎 --changed-only: {len(changed)} changed doc(s) in {len(node_dirs)} node(s)\n")
     else:
         node_dirs = [d for d in DOCS_ROOT.iterdir() if d.is_dir()]
     
@@ -366,7 +401,10 @@ def main():
         node_name = node_dir.name
         
         # Determine which languages to process
-        langs_to_process = [target_lang] if target_lang else SUPPORTED_LANGS
+        if args.changed_only and not target_lang:
+            langs_to_process = sorted({l for n, l in _changed_doc_pairs(args.base) if n == node_name})
+        else:
+            langs_to_process = [target_lang] if target_lang else SUPPORTED_LANGS
         
         for lang in langs_to_process:
             if lang == 'en':  # Skip English (it's the source)
@@ -399,6 +437,13 @@ def main():
     if dry_run:
         print("\n💡 Run without --dry-run to apply changes")
     print("=" * 80)
+
+    if args.check_only and total_updated:
+        print(f"\n❌ {total_updated} file(s) carry an Inputs parameter name that differs "
+              f"from the ComfyUI frontend.\n   Fix with: python "
+              f"docs-generation/scripts/update_param_translations.py"
+              f"{' --changed-only --base ' + args.base if args.changed_only else ''}")
+        sys.exit(1)
 
 if __name__ == '__main__':
     main()
