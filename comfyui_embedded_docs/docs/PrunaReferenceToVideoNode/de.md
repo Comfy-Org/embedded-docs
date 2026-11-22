@@ -13,7 +13,7 @@ Generieren Sie ein Video aus einem Prompt, das durch Referenzbilder, -videos und
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 | --- | --- | --- | --- | --- |
 | `model.images` | Erweiterbarer Slot für Referenzbilder (`image_1`, `image_2`, ...), im Prompt in Verbindungsreihenfolge als `@Image1` bis `@Image9` referenziert. Bis zu 9 Bilder, einschließlich des ersten und letzten Frames. | AUTOGROW | Nein | 0 bis 9 Bilder |
-| `model.videos` | Erweiterbarer Slot für Referenzvideos (`video_1`, `video_2`, ...), referenziert als `@Video1` bis `@Video3`. Jedes 2 bis 15 Sekunden bei bis zu 60 fps, insgesamt 15 Sekunden. Videos über 1080p werden herunterskaliert. | AUTOGROW | Nein | 0 bis 3 Videos |
+| `model.videos` | Erweiterbarer Slot für Referenzvideos (`video_1`, `video_2`, ...), referenziert als `@Video1` bis `@Video3`. Jedes 2 bis 15 Sekunden bei bis zu 60 fps, insgesamt 15 Sekunden. Videos über 1080p werden herunterskaliert. | AUTOGROW | Nein | 0 bis 3 Videoclips |
 | `model.audios` | Erweiterbarer Slot für Referenzaudio (`audio_1`, `audio_2`, ...), referenziert als `@Audio1` bis `@Audio3`. Insgesamt bis zu 15 Sekunden. | AUTOGROW | Nein | 0 bis 3 Audioclips |
 | `model.prompt` | Beschreibt das Video. Referenzieren Sie die Referenzen als `@Image1`, `@Video1` oder `@Audio1` (Standard: leer). Bis zu 5000 Zeichen. | STRING | Ja | 1 bis 5000 Zeichen |
 | `model.first_frame` | Bild, mit dem das Video beginnt. Zählt zum Limit von 9 Bildern. | IMAGE | Nein | - |

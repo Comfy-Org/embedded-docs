@@ -17,7 +17,7 @@ Diese Eingaben erscheinen, wenn `model` auf `"kling-4.0"` gesetzt ist.
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `reference_images` | Erweiterbare Slots für Referenzbilder, bis zu 10. Verweisen Sie im Prompt in Verbindungsreihenfolge als `@Image1`, `@Image2` usw. darauf. | AUTOGROW | Nein | 0 bis 10 Bilder |
-| `reference_videos` | Erweiterbare Slots für Referenzvideos, bis zu 5. Verweisen Sie im Prompt als `@Video1`, `@Video2` usw. darauf. Jedes Video und alle Videos zusammen müssen 3 bis 30 Sekunden lang sein. | AUTOGROW | Nein | 0 bis 5 Videos |
+| `reference_videos` | Erweiterbare Slots für Referenzvideos, bis zu 5. Verweisen Sie im Prompt als `@Video1`, `@Video2` usw. darauf. Jedes Video und alle Videos zusammen müssen 3 bis 30 Sekunden lang sein. | AUTOGROW | Nein | 0 bis 5 Videoclips |
 | `first_frame` | Optionales Frame, mit dem das Video beginnt. Zählt zusammen mit den Referenzbildern zum Limit von 10 Bildern. | IMAGE | Nein | - |
 | `last_frame` | Optionales Frame, mit dem das Video endet. Zählt zusammen mit den Referenzbildern zum Limit von 10 Bildern. | IMAGE | Nein | - |
 | `prompt` | Beschreibung des zu erzeugenden Videos. Verweisen Sie auf die Eingaben als `@Image1`, `@Image2` usw. sowie `@Video1`, `@Video2` usw. | STRING | Ja | 1 bis 26000 Zeichen |
@@ -33,7 +33,7 @@ Diese Eingaben erscheinen, wenn `model` auf `"kling-4.0-flash"` gesetzt ist.
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `reference_images` | Erweiterbare Slots für Referenzbilder, bis zu 10. Verweisen Sie im Prompt in Verbindungsreihenfolge als `@Image1`, `@Image2` usw. darauf. | AUTOGROW | Nein | 0 bis 10 Bilder |
-| `reference_videos` | Erweiterbare Slots für Referenzvideos, bis zu 5. Verweisen Sie im Prompt als `@Video1`, `@Video2` usw. darauf. Jedes Video und alle Videos zusammen müssen 3 bis 20 Sekunden lang sein. | AUTOGROW | Nein | 0 bis 5 Videos |
+| `reference_videos` | Erweiterbare Slots für Referenzvideos, bis zu 5. Verweisen Sie im Prompt als `@Video1`, `@Video2` usw. darauf. Jedes Video und alle Videos zusammen müssen 3 bis 20 Sekunden lang sein. | AUTOGROW | Nein | 0 bis 5 Videoclips |
 | `first_frame` | Optionales Frame, mit dem das Video beginnt. Zählt zusammen mit den Referenzbildern zum Limit von 10 Bildern. | IMAGE | Nein | - |
 | `prompt` | Beschreibung des zu erzeugenden Videos. Verweisen Sie auf die Eingaben als `@Image1`, `@Image2` usw. sowie `@Video1`, `@Video2` usw. | STRING | Ja | 1 bis 26000 Zeichen |
 | `resolution` | Auflösung des Ausgabevideos. Flash rendert nur 720p. Standard: `"720p"`. | COMBO | Ja | `"720p"` |
