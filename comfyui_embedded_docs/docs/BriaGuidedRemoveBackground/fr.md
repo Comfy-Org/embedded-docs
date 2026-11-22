@@ -12,7 +12,7 @@ Le sélecteur `moderation` révèle des options de modération supplémentaires 
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image à détourer. | IMAGE | Oui | - |
 | `prompt` | Ce qu'il faut conserver et, éventuellement, ce qu'il faut supprimer ou restreindre, comme « la personne avec le tapis et la plante », « la femme à son bureau sans la lampe » ou « uniquement la chaise ». Ne doit pas être vide. Si rien ne correspond au prompt, le résultat est entièrement transparent. Valeur par défaut : `""` (chaîne vide). | STRING | Oui | 1 caractère ou plus |
-| `moderation` | Paramètres de modération. Lorsqu'il est défini sur `"true"`, les indicateurs de modération visuelle ci-dessous deviennent disponibles. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
+| `modération` | Paramètres de modération. Lorsqu'il est défini sur `"true"`, les indicateurs de modération visuelle ci-dessous deviennent disponibles. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
 
 ### Entrées de modération « true »
 

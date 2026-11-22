@@ -6,8 +6,8 @@ Ce nœud crée une opération sur latent qui mélange un latent vers un latent d
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `reference` | Le latent vers lequel effectuer le mélange. Ses échantillons sont convertis vers le périphérique et le dtype du latent en cours de traitement, puis redimensionnés et répétés pour correspondre à celui-ci. | LATENT | Oui | - |
-| `strength` | Jusqu’où effectuer le mélange vers la référence : 0 laisse le latent inchangé, 1 correspond au latent de référence redimensionné (par défaut : 1.0). | FLOAT | Oui | 0.0 à 1.0 (pas de 0.0001) |
+| `référence` | Le latent vers lequel effectuer le mélange. Ses échantillons sont convertis vers le périphérique et le dtype du latent en cours de traitement, puis redimensionnés et répétés pour correspondre à celui-ci. | LATENT | Oui | - |
+| `intensité` | Jusqu’où effectuer le mélange vers la référence : 0 laisse le latent inchangé, 1 correspond au latent de référence redimensionné (par défaut : 1.0). | FLOAT | Oui | 0.0 à 1.0 (pas de 0.0001) |
 
 ## Sorties
 

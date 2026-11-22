@@ -7,9 +7,9 @@ Construit le prompt de mise en page que lit MOSS-Image. Il prend les éléments 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 | --- | --- | --- | --- | --- |
 | `prompt` | Description de l'image entière. Elle devient la légende de la mise en page. | STRING | Oui | - |
-| `element` | Les éléments à placer, provenant du nœud Create Bounding Boxes. Chaque boîte fournit sa légende ; les boîtes de texte fournissent également leur texte, et les boîtes qui portent une palette de couleurs la conservent. | ARRAY | Oui | - |
-| `width` | Largeur de l'image générée en pixels. Les boîtes sont converties dans cette grille de pixels, utilisez donc la taille de l'image que vous prévoyez de générer (par défaut : 1024). | INT | Oui | 16 à 16384 (pas 16) |
-| `height` | Hauteur de l'image générée en pixels. Les boîtes sont converties dans cette grille de pixels, utilisez donc la taille de l'image que vous prévoyez de générer (par défaut : 1024). | INT | Oui | 16 à 16384 (pas 16) |
+| `élément` | Les éléments à placer, provenant du nœud Create Bounding Boxes. Chaque boîte fournit sa légende ; les boîtes de texte fournissent également leur texte, et les boîtes qui portent une palette de couleurs la conservent. | ARRAY | Oui | - |
+| `largeur` | Largeur de l'image générée en pixels. Les boîtes sont converties dans cette grille de pixels, utilisez donc la taille de l'image que vous prévoyez de générer (par défaut : 1024). | INT | Oui | 16 à 16384 (pas 16) |
+| `hauteur` | Hauteur de l'image générée en pixels. Les boîtes sont converties dans cette grille de pixels, utilisez donc la taille de l'image que vous prévoyez de générer (par défaut : 1024). | INT | Oui | 16 à 16384 (pas 16) |
 | `character_boxes` | Numéros des boîtes à étiqueter comme personnages plutôt que comme objets, tels qu'indiqués dans l'aperçu de Create Bounding Boxes, par exemple « 1, 3 ». Chaque nombre de la chaîne est lu, donc n'importe quel séparateur fonctionne (par défaut : vide). | STRING | Oui | - |
 
 ## Sorties

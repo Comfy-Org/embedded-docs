@@ -6,7 +6,7 @@ Kameraları ve kamera yörüngelerini giriş sırasına göre tek bir kamera lis
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `cameras` | Genişletilebilir kamera yuvası; Create Camera Info, Create Camera Orbit veya bir görüntüleyiciden gelir. Bir kamera listesi, içindeki her kamera olarak sayılır. | AUTOGROW | Evet | 1 ile 50 kamera arası |
+| `kameralar` | Genişletilebilir kamera yuvası; Create Camera Info, Create Camera Orbit veya bir görüntüleyiciden gelir. Bir kamera listesi, içindeki her kamera olarak sayılır. | AUTOGROW | Evet | 1 ile 50 kamera arası |
 
 ## Çıktılar
 

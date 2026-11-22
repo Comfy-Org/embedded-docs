@@ -6,12 +6,12 @@ MOSS-Image renk/derinlik kontrol adaptörünün renk bölgesi ve derinlik harita
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `positive` | Kontrol sinyalinin ekleneceği pozitif koşullandırma. | CONDITIONING | Evet | N/A |
-| `negative` | Kontrol sinyalinin ekleneceği negatif koşullandırma. | CONDITIONING | Evet | N/A |
+| `pozitif` | Kontrol sinyalinin ekleneceği pozitif koşullandırma. | CONDITIONING | Evet | N/A |
+| `negatif` | Kontrol sinyalinin ekleneceği negatif koşullandırma. | CONDITIONING | Evet | N/A |
 | `vae` | Haritaları latentlere kodlamak için kullanılan VAE. | VAE | Evet | N/A |
 | `color_map` | Çıktı boyutunda, her bölge için tek bir düz renk. Renkler yalnızca bölge kimlikleridir. | IMAGE | Hayır | N/A |
-| `depth_map` | Çıktı boyutunda derinlik haritası; yakın olan beyazdır. | IMAGE | Hayır | N/A |
-| `strength` | Haritaların görüntü token'larına katkısını ölçekler. 0.0, harita olmamasıyla aynıdır; 1.0, eğitilmiş güçtür (varsayılan: 1.0). | FLOAT | Evet | 0.0 ile 10.0 arası (adım: 0.01) |
+| `derinlik_haritası` | Çıktı boyutunda derinlik haritası; yakın olan beyazdır. | IMAGE | Hayır | N/A |
+| `güç` | Haritaların görüntü token'larına katkısını ölçekler. 0.0, harita olmamasıyla aynıdır; 1.0, eğitilmiş güçtür (varsayılan: 1.0). | FLOAT | Evet | 0.0 ile 10.0 arası (adım: 0.01) |
 | `start_percent` | Kontrolün başladığı örnekleme yüzdesi (varsayılan: 0.0). | FLOAT | Evet | 0.0 ile 1.0 arası (adım: 0.001) |
 | `end_percent` | Kontrolün bittiği örnekleme yüzdesi. Erken bitirmek düzeni ve derinliği korurken kalan adımlar şekilleri gevşetir (varsayılan: 1.0). | FLOAT | Evet | 0.0 ile 1.0 arası (adım: 0.001) |
 

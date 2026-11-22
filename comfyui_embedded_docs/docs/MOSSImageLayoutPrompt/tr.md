@@ -6,11 +6,11 @@ MOSS-Image'in okuduğu düzen istemini oluşturur. Create Bounding Boxes düğü
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `prompt` | Tüm görüntünün tanımı. Düzenin altyazısı olur. | STRING | Evet | - |
-| `element` | Yerleştirilecek öğeler; Create Bounding Boxes düğümünden alınır. Her kutu kendi altyazısını sağlar; metin kutuları ayrıca metinlerini sağlar ve renk paleti taşıyan kutular paletini korur. | ARRAY | Evet | - |
-| `width` | Üretilen görüntünün piksel cinsinden genişliği. Kutular bu piksel ızgarasına dönüştürülür; bu nedenle üretmeyi planladığınız görüntünün boyutunu kullanın (varsayılan: 1024). | INT | Evet | 16 ile 16384 arası (adım: 16) |
-| `height` | Üretilen görüntünün piksel cinsinden yüksekliği. Kutular bu piksel ızgarasına dönüştürülür; bu nedenle üretmeyi planladığınız görüntünün boyutunu kullanın (varsayılan: 1024). | INT | Evet | 16 ile 16384 arası (adım: 16) |
-| `character_boxes` | Nesneler yerine karakter olarak etiketlenecek kutuların numaraları; Create Bounding Boxes önizlemesinde etiketlendiği gibidir, örneğin "1, 3". Dizedeki her sayı okunur, bu nedenle herhangi bir ayırıcı çalışır (varsayılan: boş). | STRING | Evet | - |
+| `istem` | Tüm görüntünün tanımı. Düzenin altyazısı olur. | STRING | Evet | - |
+| `öğe` | Yerleştirilecek öğeler; Create Bounding Boxes düğümünden alınır. Her kutu kendi altyazısını sağlar; metin kutuları ayrıca metinlerini sağlar ve renk paleti taşıyan kutular paletini korur. | ARRAY | Evet | - |
+| `genişlik` | Üretilen görüntünün piksel cinsinden genişliği. Kutular bu piksel ızgarasına dönüştürülür; bu nedenle üretmeyi planladığınız görüntünün boyutunu kullanın (varsayılan: 1024). | INT | Evet | 16 ile 16384 arası (adım: 16) |
+| `yükseklik` | Üretilen görüntünün piksel cinsinden yüksekliği. Kutular bu piksel ızgarasına dönüştürülür; bu nedenle üretmeyi planladığınız görüntünün boyutunu kullanın (varsayılan: 1024). | INT | Evet | 16 ile 16384 arası (adım: 16) |
+| `karakter_kutuları` | Nesneler yerine karakter olarak etiketlenecek kutuların numaraları; Create Bounding Boxes önizlemesinde etiketlendiği gibidir, örneğin "1, 3". Dizedeki her sayı okunur, bu nedenle herhangi bir ayırıcı çalışır (varsayılan: boş). | STRING | Evet | - |
 
 ## Çıktılar
 

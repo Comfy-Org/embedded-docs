@@ -6,7 +6,7 @@ Ce nœud convertit une image en SVG modifiable avec Ideogram Vector. Le résulta
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser. Par défaut : `"ideogram-vector-1"`. | DYNAMIC_COMBO | Oui | `"ideogram-vector-1"` |
+| `modèle` | Modèle à utiliser. Par défaut : `"ideogram-vector-1"`. | DYNAMIC_COMBO | Oui | `"ideogram-vector-1"` |
 | `image` | L’image à convertir. Une entrée par lots est convertie image par image et les SVG résultants sont renvoyés ensemble. | IMAGE | Oui | - |
 | `mode` | `"simple"` trace moins de formes, de plus grande taille ; `"default"` conserve davantage de détails fins. Par défaut : `"default"`. | COMBO | Oui | `"simple"`<br>`"default"` |
 

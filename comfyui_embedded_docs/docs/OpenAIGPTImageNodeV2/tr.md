@@ -28,7 +28,7 @@ Bu girdiler, `model` değeri `gpt-image-2.6-flare` veya `gpt-image-2.6-sunburst`
 | `kalite` | Görüntü kalitesi; maliyeti ve üretim süresini etkiler (varsayılan: `"low"`). | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"`<br>`"xhigh"`<br>`"max"` |
 | `model.images` | Görüntü düzenleme için isteğe bağlı referans görüntü(ler). En fazla 16 görüntü. Ayrıntılar için Referans Girdileri bölümüne bakın. | IMAGE | Hayır | 0 ile 16 arası |
 | `model.mask` | İç boyama (inpainting) için isteğe bağlı maske (beyaz alanlar değiştirilecektir). Tam olarak bir referans görüntü gerektirir. | MASK | Hayır | Yok |
-| `model.complexity` | Modelin görüntüyü oluşturmadan önce ne kadar planladığı. Düşük değerler daha hızlı döner, yüksek değerler daha fazla planlama yapar. Varsayılan: `"high"`. | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"` |
+| `karmaşıklık` | Modelin görüntüyü oluşturmadan önce ne kadar planladığı. Düşük değerler daha hızlı döner, yüksek değerler daha fazla planlama yapar. Varsayılan: `"high"`. | COMBO | Evet | `"low"`<br>`"medium"`<br>`"high"` |
 
 ### gpt-image-2.5-flare ve gpt-image-2.5-sunburst Girdileri
 

@@ -6,11 +6,11 @@ HeyGen'in Voice 1.0 motoruyla tek konuşmacılı bir kayıttan ses klonlayın. D
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `audio` | Tek konuşmacı kaydı. En az 10 saniye net konuşma kullanın; yalnızca ilk 3 dakika kullanılır. | AUDIO | Evet | N/A |
-| `language` | Kayıtta konuşulan dil (varsayılan: "auto"). | COMBO | Evet | `"auto"`<br>Birden çok dil ön ayarı |
-| `similarity` | Sesin kaydı ne kadar yakından takip ettiği (varsayılan: "max"). | COMBO | Evet | `"medium"`<br>`"high"`<br>`"extra_high"`<br>`"max"` |
+| `ses` | Tek konuşmacı kaydı. En az 10 saniye net konuşma kullanın; yalnızca ilk 3 dakika kullanılır. | AUDIO | Evet | N/A |
+| `dil` | Kayıtta konuşulan dil (varsayılan: "auto"). | COMBO | Evet | `"auto"`<br>Birden çok dil ön ayarı |
+| `benzerlik` | Sesin kaydı ne kadar yakından takip ettiği (varsayılan: "max"). | COMBO | Evet | `"medium"`<br>`"high"`<br>`"extra_high"`<br>`"max"` |
 | `remove_background_noise` | Klonlamadan önce kayıttaki arka plan gürültüsünü temizleyin (varsayılan: True). | BOOLEAN | Evet | True<br>False |
-| `seed` | Kaydı yeniden klonlamak için tohumu değiştirin; her klon biraz farklı bir sestir (varsayılan: 42). | INT | Evet | 0 ile 2147483647 arası |
+| `tohum` | Kaydı yeniden klonlamak için tohumu değiştirin; her klon biraz farklı bir sestir (varsayılan: 42). | INT | Evet | 0 ile 2147483647 arası |
 
 **Not:** Ses, HeyGen hesabınızda "ComfyUI Voice" olarak oluşturulur ve düğüm, yeniden kullanmak üzere kopyalayabilmeniz için `voice_id` değerini arayüzde yazdırır. Konuşmacı, yakından ilişkili bir dille kolayca karıştırılabilecek bir dil konuşmuyorsa `language` değerini "auto" olarak bırakın. `seed` girdisi, arayüzde sabit bir Control After Generate kontrolü içerir, bu nedenle başka bir klon istediğinizde onu elle değiştirin.
 

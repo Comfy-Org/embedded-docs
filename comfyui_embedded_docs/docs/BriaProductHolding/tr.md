@@ -12,10 +12,10 @@ Bu düğüm, Bria ile bir ürünü bir kişinin ellerine yerleştirir. Kişinin 
 |-----------|-------------|-----------|----------|-------|
 | `person_image` | Ürünü tutan kişinin fotoğrafı. Görsel yüklenmeden önce alfa kanalı kaldırılır. | IMAGE | Evet | - |
 | `product_images` | Bir ürünün 1 ila 3 görseli: ürünün kendisi, ambalajı, başka bir açısı veya tamamlayıcı bir öğe. Toplu giriş, görsel başına bir kez sayılır ve saydam alanlar beyaz olarak işlenir. | AUTOGROW | Evet | 1 ila 3 görsel |
-| `instruction` | Bria'nın yerleşik talimatına eklenen isteğe bağlı ek yönlendirme, örneğin hangi elin kullanılacağı veya etiketin hangi yöne bakacağı. Varsayılan: `""` (boş dize). | STRING | Evet | - |
+| `talimat` | Bria'nın yerleşik talimatına eklenen isteğe bağlı ek yönlendirme, örneğin hangi elin kullanılacağı veya etiketin hangi yöne bakacağı. Varsayılan: `""` (boş dize). | STRING | Evet | - |
 | `aspect_ratio` | `"auto"` kişi fotoğrafının çerçevelenmesini yaklaşık 1 megapikselde tutar. Sabit bir oran 0,6 ila 1 megapiksel arasında döndürür, örneğin `"3:4"` için 768x1024. Varsayılan: `"auto"`. | COMBO | Evet | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"` |
 | `seed` | Bria'ya istek ile gönderilen tohum. Varsayılan: 42. | INT | Evet | 1 ila 2147483647 |
-| `moderation` | Moderasyon ayarları. `"true"` olarak ayarlandığında, aşağıdaki moderasyon işareti kullanılabilir hale gelir. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
+| `denetleme` | Moderasyon ayarları. `"true"` olarak ayarlandığında, aşağıdaki moderasyon işareti kullanılabilir hale gelir. | DYNAMIC_COMBO | Evet | `"false"`<br>`"true"` |
 
 ### Moderasyon `"true"` Girdileri
 

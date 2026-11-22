@@ -6,7 +6,7 @@
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 | --- | --- | --- | --- | --- |
-| `name` | שם הקובץ של תיקון המודל לטעינה מתיקיית `model_patches`. יש לבחור אחד מקובצי התיקון הזמינים מהרשימה. | COMBO | כן | רשימה דינמית של כל קובצי תיקון המודל שנמצאו בתיקיית `model_patches` |
+| `שם` | שם הקובץ של תיקון המודל לטעינה מתיקיית `model_patches`. יש לבחור אחד מקובצי התיקון הזמינים מהרשימה. | COMBO | כן | רשימה דינמית של כל קובצי תיקון המודל שנמצאו בתיקיית `model_patches` |
 
 הערה: צומת זה מסומן כניסיוני. סוג התיקון מזוהה אוטומטית מתוכן הקובץ, כך שאין צורך בבחירה ידנית של סוג. הצומת קורא מטא-נתוני checkpoint ובוחן מפתחות משקולות כדי להחליט איזו ארכיטקטורה לבנות (לדוגמה Qwen Image block-wise ControlNet, Qwen Image 2.1 Fun ControlNet, Z-Image ControlNet, Wan Uni3C ControlNet, MiniMax H3 Fun ControlNet, SigLIP feature projection, Lightricks duration head, Anima LLLite, MultiTalk או SUPIR). המשקולות נטענות עם טעינה בטוחה מופעלת, והמודל ממוקם על התקן offload בתוך `CoreModelPatcher` כך שאפשר יהיה להחיל אותו מאוחר יותר על מודל אחר.
 

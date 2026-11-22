@@ -8,9 +8,9 @@ ByteDance Seedance 2.5 Reference to Video יוצר, עורך או מאריך ס�
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `model` | בורר מודל. Seedance 2.5 עבור המודל החדש ביותר, סרטונים באורך של עד 30 שניות ופלט mp4; Seedance 2.5 Draft עבור תצוגה מקדימה מהירה ב-480p שפלט `draft_task_id` שלה מרנדר את התוצר הסופי ב-1080p או 4k בצומת ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.5 Flash לסרטוני 480p ו-720p באורך עד 30 שניות; Seedance 2.0 עבור איכות מרבית ו-4k; Fast עבור אופטימיזציה למהירות; Mini עבור היצירה המהירה והזולה ביותר. בחירת מודל משנה את ווידג'טי הקלט המוצגים למטה. | DYNAMIC_COMBO | כן | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.5 Flash"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
-| `seed` | Seed קובע האם הצומת צריך לרוץ מחדש; התוצאות אינן דטרמיניסטיות ללא תלות ב-seed. ברירת מחדל: 0. | INT | כן | 0 עד 2147483647 |
-| `watermark` | האם להוסיף סימן מים לסרטון. ברירת מחדל: False. הגדרה מתקדמת. | BOOLEAN | כן | true<br>false |
+| `מודל` | בורר מודל. Seedance 2.5 עבור המודל החדש ביותר, סרטונים באורך של עד 30 שניות ופלט mp4; Seedance 2.5 Draft עבור תצוגה מקדימה מהירה ב-480p שפלט `draft_task_id` שלה מרנדר את התוצר הסופי ב-1080p או 4k בצומת ByteDance Seedance 2.5 Draft to Final Video; Seedance 2.5 Flash לסרטוני 480p ו-720p באורך עד 30 שניות; Seedance 2.0 עבור איכות מרבית ו-4k; Fast עבור אופטימיזציה למהירות; Mini עבור היצירה המהירה והזולה ביותר. בחירת מודל משנה את ווידג'טי הקלט המוצגים למטה. | DYNAMIC_COMBO | כן | "Seedance 2.5"<br>"Seedance 2.5 Draft"<br>"Seedance 2.5 Flash"<br>"Seedance 2.0"<br>"Seedance 2.0 Fast"<br>"Seedance 2.0 Mini" |
+| `זרע` | Seed קובע האם הצומת צריך לרוץ מחדש; התוצאות אינן דטרמיניסטיות ללא תלות ב-seed. ברירת מחדל: 0. | INT | כן | 0 עד 2147483647 |
+| `סימן מים` | האם להוסיף סימן מים לסרטון. ברירת מחדל: False. הגדרה מתקדמת. | BOOLEAN | כן | true<br>false |
 
 ### קלטים של Seedance 2.5
 

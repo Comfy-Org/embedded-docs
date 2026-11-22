@@ -6,10 +6,10 @@ Crée une copie modifiée d’une voix dans la même langue, soit à partir d’
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `voice` | Voix Breeze à modifier. | BREEZE_VOICE | Oui | - |
-| `change` | `custom` décrit la modification en texte, `preset` sélectionne une modification nommée. Par défaut : `"custom"`. | DYNAMIC_COMBO | Oui | `"custom"`<br>`"preset"` |
-| `strength` | Des valeurs plus élevées modifient davantage la voix. Par défaut : 4.0. | FLOAT | Non | 1.0 à 10.0 (pas : 0.1) |
-| `seed` | Contrôle si le nœud se réexécute ; les résultats ne sont pas déterministes quel que soit le seed. Par défaut : 42. | INT | Non | 0 à 2147483647 |
+| `voix` | Voix Breeze à modifier. | BREEZE_VOICE | Oui | - |
+| `modification` | `custom` décrit la modification en texte, `preset` sélectionne une modification nommée. Par défaut : `"custom"`. | DYNAMIC_COMBO | Oui | `"custom"`<br>`"preset"` |
+| `intensité` | Des valeurs plus élevées modifient davantage la voix. Par défaut : 4.0. | FLOAT | Non | 1.0 à 10.0 (pas : 0.1) |
+| `graine` | Contrôle si le nœud se réexécute ; les résultats ne sont pas déterministes quel que soit le seed. Par défaut : 42. | INT | Non | 0 à 2147483647 |
 
 ### Entrées de modification "custom"
 

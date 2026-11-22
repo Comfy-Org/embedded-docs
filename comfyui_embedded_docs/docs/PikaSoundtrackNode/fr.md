@@ -6,9 +6,9 @@ Ce nœud génère une bande-son synchronisée pour une vidéo avec Pika. L'image
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `video` | Le clip pour lequel écrire une bande-son. Jusqu'à 10 minutes. | VIDEO | Oui | - |
+| `vidéo` | Le clip pour lequel écrire une bande-son. Jusqu'à 10 minutes. | VIDEO | Oui | - |
 | `instruction` | Le contenu audio souhaité : effets sonores, ambiance, musique ou style. Laissez vide pour le déduire de l'image. Par défaut : "" (chaîne vide). | STRING | Oui | 0 à 10000 caractères |
-| `seed` | Graine pour l'échantillonnage. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
+| `graine` | Graine pour l'échantillonnage. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
 
 **Contraintes :**
 

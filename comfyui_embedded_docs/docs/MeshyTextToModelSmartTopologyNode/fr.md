@@ -6,11 +6,11 @@ Ce nœud génère un maillage triangulaire prêt pour le jeu avec un nombre de f
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | La version du modèle Meshy à utiliser pour la génération. | COMBO | Oui | `"meshy-t2.5"` |
-| `prompt` | Description textuelle du modèle 3D à générer. | STRING | Oui | 1 à 800 caractères |
+| `modèle` | La version du modèle Meshy à utiliser pour la génération. | COMBO | Oui | `"meshy-t2.5"` |
+| `invite` | Description textuelle du modèle 3D à générer. | STRING | Oui | 1 à 800 caractères |
 | `target_polycount` | Nombre approximatif de triangles dans le maillage généré. Par défaut : 15000. | INT | Oui | 100 à 30000 |
-| `pose_mode` | Pose du personnage généré. Une chaîne vide ne demande aucune pose spécifique. Il s’agit d’un paramètre avancé. Par défaut : `""` (chaîne vide). | COMBO | Oui | `""`<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
+| `mode de pose` | Pose du personnage généré. Une chaîne vide ne demande aucune pose spécifique. Il s’agit d’un paramètre avancé. Par défaut : `""` (chaîne vide). | COMBO | Oui | `""`<br>`"A-pose"`<br>`"T-pose"` |
+| `graine` | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
 
 **Contraintes :**
 

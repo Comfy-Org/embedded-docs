@@ -6,13 +6,13 @@ Conditionne FLUX.2 Klein 9B avec le LoRA UltraTex pour peindre l'apparence d'une
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `conditioning` | Conditionnement textuel. UltraTex a été entraîné avec une invite vide. | CONDITIONING | Oui | - |
+| `conditionnement` | Conditionnement textuel. UltraTex a été entraîné avec une invite vide. | CONDITIONING | Oui | - |
 | `vae` | VAE utilisé pour encoder les normales, les vues et la référence. | VAE | Oui | - |
-| `normals` | Images Render Mesh en mode `world normal` : les 6 vues canoniques, ou les 4 vues latérales. | IMAGE | Oui | - |
-| `masks` | Masques Render Mesh des mêmes vues, un par vue. | MASK | Oui | - |
-| `reference` | L'objet tel qu'il doit apparaître, vu depuis le côté de la caméra avant. | IMAGE | Oui | - |
-| `reference_mask` | Masque de l'objet de la référence, blanc pour l'objet. Par défaut : entièrement blanc. | MASK | Non | - |
-| `extra_views` | Références supplémentaires : l'objet vu depuis les autres vues, chacune liée à sa vue comme la référence est liée à la vue avant. Par défaut : `"off"`. | DYNAMIC_COMBO | Oui | `"off"`<br>`"on"` |
+| `normales` | Images Render Mesh en mode `world normal` : les 6 vues canoniques, ou les 4 vues latérales. | IMAGE | Oui | - |
+| `masques` | Masques Render Mesh des mêmes vues, un par vue. | MASK | Oui | - |
+| `référence` | L'objet tel qu'il doit apparaître, vu depuis le côté de la caméra avant. | IMAGE | Oui | - |
+| `masque de référence` | Masque de l'objet de la référence, blanc pour l'objet. Par défaut : entièrement blanc. | MASK | Non | - |
+| `vues supplémentaires` | Références supplémentaires : l'objet vu depuis les autres vues, chacune liée à sa vue comme la référence est liée à la vue avant. Par défaut : `"off"`. | DYNAMIC_COMBO | Oui | `"off"`<br>`"on"` |
 
 ### Entrées des vues supplémentaires "on"
 

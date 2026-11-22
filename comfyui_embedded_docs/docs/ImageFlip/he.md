@@ -6,8 +6,8 @@
 
 | פרמטר | תיאור | סוג נתון | חובה | טווח |
 | --- | --- | --- | --- | --- |
-| `image` | תמונת הקלט שיש להפוך | IMAGE | כן | - |
-| `flip_method` | כיוון ההיפוך להחלה (ברירת מחדל: "x-axis: vertically") | STRING | כן | "x-axis: vertically"<br>"y-axis: horizontally" |
+| `תמונה` | תמונת הקלט שיש להפוך | IMAGE | כן | - |
+| `שיטת היפוך` | כיוון ההיפוך להחלה (ברירת מחדל: "x-axis: vertically") | STRING | כן | "x-axis: vertically"<br>"y-axis: horizontally" |
 
 ## פלטים
 

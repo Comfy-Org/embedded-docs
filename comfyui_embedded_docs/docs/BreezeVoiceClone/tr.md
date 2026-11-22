@@ -6,9 +6,9 @@ Tek bir konuşmacının kaydından bir Breeze sesi oluşturur. Ses, hesabınıza
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `audio` | Tek konuşmacının kaydı, en az 3 saniye uzunluğunda. Yalnızca ilk 60 saniye kullanılır. | AUDIO | Evet | - |
-| `remove_background_noise` | Klonlamadan önce kaydı temizler. Varsayılan: false. | BOOLEAN | Hayır | true<br>false |
-| `seed` | Düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 arası |
+| `ses` | Tek konuşmacının kaydı, en az 3 saniye uzunluğunda. Yalnızca ilk 60 saniye kullanılır. | AUDIO | Evet | - |
+| `arka_plan_gürültüsünü_kaldır` | Klonlamadan önce kaydı temizler. Varsayılan: false. | BOOLEAN | Hayır | true<br>false |
+| `tohum` | Düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 arası |
 
 ## Çıktılar
 

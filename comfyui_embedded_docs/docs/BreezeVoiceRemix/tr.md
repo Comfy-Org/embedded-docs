@@ -6,10 +6,10 @@ Aynı dilde bir sesin değiştirilmiş bir kopyasını, değişikliğin yazılı
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `voice` | Değiştirilecek Breeze sesi. | BREEZE_VOICE | Evet | - |
-| `change` | `custom` değişikliği metin olarak açıklar, `preset` adlandırılmış bir değişikliği seçer. Varsayılan: `"custom"`. | DYNAMIC_COMBO | Evet | `"custom"`<br>`"preset"` |
-| `strength` | Daha yüksek değerler sesi daha fazla değiştirir. Varsayılan: 4.0. | FLOAT | Hayır | 1.0 ile 10.0 arası (adım: 0.1) |
-| `seed` | Düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 arası |
+| `ses` | Değiştirilecek Breeze sesi. | BREEZE_VOICE | Evet | - |
+| `değişiklik` | `custom` değişikliği metin olarak açıklar, `preset` adlandırılmış bir değişikliği seçer. Varsayılan: `"custom"`. | DYNAMIC_COMBO | Evet | `"custom"`<br>`"preset"` |
+| `güç` | Daha yüksek değerler sesi daha fazla değiştirir. Varsayılan: 4.0. | FLOAT | Hayır | 1.0 ile 10.0 arası (adım: 0.1) |
+| `tohum` | Düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 arası |
 
 ### Değişiklik "custom" Girdileri
 

@@ -10,11 +10,11 @@ Flux Video Upscale, bir videoyu FLUX süper çözünürlüğüyle büyütür; bu
 |-----------|-------------|-----------|----------|-------|
 | `video` | 1 ila 20 saniyelik ve en fazla 50 MB boyutunda, en az 64x64 piksel olan ve en-boy oranı 1:4 ile 4:1 arasında bulunan kaynak klip. Çıktı 24 fps'te işlenir ve kare başına yaklaşık 14,4 megapiksel ile sınırlandırılır. | VIDEO | Evet | 1 ila 20 saniye süre; en-boy oranı 1:4 ile 4:1 arasında; en az 64x64 piksel |
 | `target_resolution` | Çıktı boyutu. `"1080p"`, `"2K"` ve `"4K"` sonucu 1920x1080, 2560x1440 veya 3840x2160 piksel içine sığdırır; dikey klipler için döndürülür; `"by factor"` ise bunun yerine `upscale_factor` kullanır. | DYNAMIC_COMBO | Evet | `"2K"`<br>`"4K"`<br>`"1080p"`<br>`"by factor"` |
-| `mode` | `"creative"` ince detayları geri kazandırır ve üretir; üretilmiş görüntüler, dokular ve manzaralar için en iyisidir. `"precise"` kaynağı değiştirmeden keskinleştirir; yüzler, ürünler ve gerçek görüntüler içindir. (varsayılan: `"creative"`) | COMBO | Evet | `"creative"`<br>`"precise"` |
-| `prompt` | İyileştirilmiş detayı yönlendiren, klip için isteğe bağlı açıklama. Nötr bir büyütme için boş bırakın. (varsayılan: boş) | STRING | Evet | Çok satırlı metin |
+| `mod` | `"creative"` ince detayları geri kazandırır ve üretir; üretilmiş görüntüler, dokular ve manzaralar için en iyisidir. `"precise"` kaynağı değiştirmeden keskinleştirir; yüzler, ürünler ve gerçek görüntüler içindir. (varsayılan: `"creative"`) | COMBO | Evet | `"creative"`<br>`"precise"` |
+| `istem` | İyileştirilmiş detayı yönlendiren, klip için isteğe bağlı açıklama. Nötr bir büyütme için boş bırakın. (varsayılan: boş) | STRING | Evet | Çok satırlı metin |
 | `auto_downscale` | Çok büyük kaynakları reddetmek yerine küçültün: alan olarak 2560x1440 pikselin üzerinde veya hedef çözünürlüğün üçte ikisinin üzerinde olanlar. En-boy oranı korunur. (varsayılan: true) | BOOLEAN | Evet | true<br>false |
 | `safety_tolerance` | Moderasyon toleransı; 0 en katı seçenektir. (varsayılan: 2, gelişmiş parametre) | INT | Evet | 0 ila 4 |
-| `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; FLUX kendi seed değerini seçer, bu nedenle gerçek sonuçlar bu değerden bağımsız olarak deterministik değildir. (varsayılan: 42) | INT | Evet | 0 ila 4294967295 |
+| `tohum` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; FLUX kendi seed değerini seçer, bu nedenle gerçek sonuçlar bu değerden bağımsız olarak deterministik değildir. (varsayılan: 42) | INT | Evet | 0 ila 4294967295 |
 
 ### by factor Girdileri
 

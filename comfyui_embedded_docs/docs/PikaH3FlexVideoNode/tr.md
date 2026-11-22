@@ -6,13 +6,13 @@ Bu düğüm, bir metin isteminden senkronize sesli video oluşturur; isteğe ba�
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Videoda ne olacağı, istediğiniz ses de dahil. Boş olamaz. Varsayılan: "" (boş dize). | STRING | Evet | 1 ile 8000 karakter arası |
-| `first_frame` | Açılış karesi olarak kullanılan isteğe bağlı görüntü. Bağlandığında metinden videoya yerine görüntüden videoya çalışır. | IMAGE | Hayır | - |
-| `last_frame` | Kapanış karesi olarak kullanılan isteğe bağlı görüntü. `first_frame` ile birlikte veya tek başına kullanılabilir. | IMAGE | Hayır | - |
-| `resolution` | Çıktı çözünürlüğü. `"1080p"` ve üzeri, 768p'de oluşturur ve bir kez büyütür. 480p'de aynı seed farklı bir video verir. Varsayılan: `"768p"`. | COMBO | Evet | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
-| `aspect_ratio` | Çıktı en-boy oranı. `"auto"` ilk bağlanan kareyi, aksi takdirde istemi takip eder. Varsayılan: `"auto"`. | COMBO | Evet | `"auto"`<br>`"21:9"`<br>`"16:9"`<br>`"3:2"`<br>`"4:3"`<br>`"5:4"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"9:21"` |
-| `duration` | Saniye cinsinden klip uzunluğu. Çıktı uzunluğu bir kare ızgarasını izler: 5 saniye 124 kare, yaklaşık 5,17 saniye verir. Varsayılan: 5. | INT | Evet | 5 ile 15 saniye arası |
-| `rewrite_prompt` | Önce Pika'nın istemi genişletmesine izin verin. Aynı seed daha sonra her çalıştırmada farklı bir video verir. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
+| `istem` | Videoda ne olacağı, istediğiniz ses de dahil. Boş olamaz. Varsayılan: "" (boş dize). | STRING | Evet | 1 ile 8000 karakter arası |
+| `ilk_kare` | Açılış karesi olarak kullanılan isteğe bağlı görüntü. Bağlandığında metinden videoya yerine görüntüden videoya çalışır. | IMAGE | Hayır | - |
+| `son_kare` | Kapanış karesi olarak kullanılan isteğe bağlı görüntü. `first_frame` ile birlikte veya tek başına kullanılabilir. | IMAGE | Hayır | - |
+| `çözünürlük` | Çıktı çözünürlüğü. `"1080p"` ve üzeri, 768p'de oluşturur ve bir kez büyütür. 480p'de aynı seed farklı bir video verir. Varsayılan: `"768p"`. | COMBO | Evet | `"480p"`<br>`"768p"`<br>`"1080p"`<br>`"2k"`<br>`"4k"` |
+| `en_boy_oranı` | Çıktı en-boy oranı. `"auto"` ilk bağlanan kareyi, aksi takdirde istemi takip eder. Varsayılan: `"auto"`. | COMBO | Evet | `"auto"`<br>`"21:9"`<br>`"16:9"`<br>`"3:2"`<br>`"4:3"`<br>`"5:4"`<br>`"1:1"`<br>`"4:5"`<br>`"3:4"`<br>`"2:3"`<br>`"9:16"`<br>`"9:21"` |
+| `süre` | Saniye cinsinden klip uzunluğu. Çıktı uzunluğu bir kare ızgarasını izler: 5 saniye 124 kare, yaklaşık 5,17 saniye verir. Varsayılan: 5. | INT | Evet | 5 ile 15 saniye arası |
+| `istemi_yeniden_yaz` | Önce Pika'nın istemi genişletmesine izin verin. Aynı seed daha sonra her çalıştırmada farklı bir video verir. Varsayılan: False. | BOOLEAN | Evet | true<br>false |
 | `seed` | Örnekleme için seed. `rewrite_prompt` kapalıyken aynı seed videoyu tam olarak yineler; ancak aynı seed ile yerel bir çalıştırma farklı bir sonuç verir. Varsayılan: 42. | INT | Evet | 0 ile 2147483647 arası |
 
 **Kısıtlamalar:**

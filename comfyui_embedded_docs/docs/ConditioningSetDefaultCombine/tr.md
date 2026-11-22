@@ -6,9 +6,9 @@ Bu düğüm, birincil koşullandırma girdisini varsayılan bir koşullandırma 
 
 | Parametre | Açıklama | Veri Türü | Girdi Türü | Varsayılan | Aralık |
 | --- | --- | --- | --- | --- | --- |
-| `cond` | İşlenecek ve birleştirilecek birincil koşullandırma girdisi | CONDITIONING | Gerekli | - | - |
-| `cond_DEFAULT` | Birincil koşullandırma ile birleştirilecek varsayılan koşullandırma verisi | CONDITIONING | Gerekli | - | - |
-| `hooks` | Koşullandırma verisinin nasıl işleneceğini ve birleştirileceğini kontrol eden isteğe bağlı kanca yapılandırması | HOOKS | İsteğe bağlı | - | - |
+| `koşul` | İşlenecek ve birleştirilecek birincil koşullandırma girdisi | CONDITIONING | Gerekli | - | - |
+| `koşul_VARSAYILAN` | Birincil koşullandırma ile birleştirilecek varsayılan koşullandırma verisi | CONDITIONING | Gerekli | - | - |
+| `kancalar` | Koşullandırma verisinin nasıl işleneceğini ve birleştirileceğini kontrol eden isteğe bağlı kanca yapılandırması | HOOKS | İsteğe bağlı | - | - |
 
 ## Çıktılar
 

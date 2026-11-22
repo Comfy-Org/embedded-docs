@@ -6,9 +6,9 @@ Crée une copie d’une voix qui parle nativement une autre langue, au lieu de l
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `voice` | Voix Breeze à copier. | BREEZE_VOICE | Oui | - |
-| `language` | Langue parlée par la nouvelle voix. Par défaut : `"English"`. | COMBO | Oui | Plusieurs options disponibles |
-| `seed` | Contrôle si le nœud est réexécuté ; les résultats sont non déterministes quel que soit le seed. Par défaut : 42. | INT | Non | 0 à 2147483647 |
+| `voix` | Voix Breeze à copier. | BREEZE_VOICE | Oui | - |
+| `langue` | Langue parlée par la nouvelle voix. Par défaut : `"English"`. | COMBO | Oui | Plusieurs options disponibles |
+| `graine` | Contrôle si le nœud est réexécuté ; les résultats sont non déterministes quel que soit le seed. Par défaut : 42. | INT | Non | 0 à 2147483647 |
 
 ## Sorties
 

@@ -6,9 +6,9 @@ Sonilo Music 1.5 düğümü, bir metin isteminden vokal içeren eksiksiz bir şa
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
-| `prompt` | Şarkının açıklaması: tür, ruh hali, enstrümanlar ve vokaller. Sözleri kendiniz belirlemek için `[Verse]` ve `[Chorus]` etiketleri içeren bir `Lyrics:` bloğu ekleyin; bu blok olmadan model kendi şarkı sözlerini yazar. Boşluklar kırpıldıktan sonra 1 ile 2000 karakter arasında olmalıdır. | STRING | Evet | 1 ile 2000 karakter arası |
-| `duration` | `auto`, şarkı uzunluğunu şarkı sözlerine uydurur. `custom`, `seconds` değerini kullanır; sığmayan şarkı sözlerini keser ve kısa olanları yineler. | DYNAMIC_COMBO | Evet | `"auto"`<br>`"custom"` |
-| `seed` | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 42). | INT | Evet | 0 ile 18446744073709551615 arası |
+| `istem` | Şarkının açıklaması: tür, ruh hali, enstrümanlar ve vokaller. Sözleri kendiniz belirlemek için `[Verse]` ve `[Chorus]` etiketleri içeren bir `Lyrics:` bloğu ekleyin; bu blok olmadan model kendi şarkı sözlerini yazar. Boşluklar kırpıldıktan sonra 1 ile 2000 karakter arasında olmalıdır. | STRING | Evet | 1 ile 2000 karakter arası |
+| `süre` | `auto`, şarkı uzunluğunu şarkı sözlerine uydurur. `custom`, `seconds` değerini kullanır; sığmayan şarkı sözlerini keser ve kısa olanları yineler. | DYNAMIC_COMBO | Evet | `"auto"`<br>`"custom"` |
+| `tohum` | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 42). | INT | Evet | 0 ile 18446744073709551615 arası |
 
 ### Özel Süre Parametreleri (`duration` değeri `"custom"` olduğunda)
 

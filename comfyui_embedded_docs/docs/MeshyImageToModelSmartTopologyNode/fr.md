@@ -6,7 +6,7 @@ Ce nœud génère un maillage triangulaire prêt pour le jeu à partir d’une i
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Version du modèle Meshy à utiliser pour la génération. | COMBO | Oui | `"meshy-t2.5"` |
+| `modèle` | Version du modèle Meshy à utiliser pour la génération. | COMBO | Oui | `"meshy-t2.5"` |
 | `image` | Image de référence à partir de laquelle le modèle est généré. | IMAGE | Oui | - |
 | `target_polycount` | Nombre approximatif de triangles dans le maillage généré. Par défaut : 15000. | INT | Oui | 100 à 30000 |
 | `should_texture` | Détermine si les textures sont générées. `"false"` ignore la phase de texturation et renvoie un maillage non texturé. | DYNAMIC_COMBO | Oui | `"true"`<br>`"false"` |
@@ -15,7 +15,7 @@ Ce nœud génère un maillage triangulaire prêt pour le jeu à partir d’une i
 | `texture_image` | Image de référence pour le processus de texturation. Seule l'une des entrées `texture_image` ou `texture_prompt` peut être utilisée à la fois. Cette entrée n'est disponible que lorsque `should_texture` est défini sur `"true"`. | IMAGE | Non | - |
 | `texture_resolution` | Résolution de la texture. Des résolutions plus élevées capturent davantage de détails de surface. Cette entrée n'est disponible que lorsque `should_texture` est défini sur `"true"`. | COMBO | Non | `"2k"`<br>`"4k"`<br>`"8k"` |
 | `pose_mode` | Pose du personnage généré. Une chaîne vide indique qu'aucune pose spécifique n'est demandée. Il s'agit d'un paramètre avancé. Par défaut : `""` (chaîne vide). | COMBO | Oui | `""`<br>`"A-pose"`<br>`"T-pose"` |
-| `seed` | La graine détermine si le nœud doit être réexécuté ; les résultats ne sont pas déterministes, quelle que soit la graine. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
+| `graine` | La graine détermine si le nœud doit être réexécuté ; les résultats ne sont pas déterministes, quelle que soit la graine. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
 
 **Remarque :** Les entrées `enable_pbr`, `texture_prompt`, `texture_image` et `texture_resolution` ne sont disponibles que lorsque `should_texture` est défini sur `"true"`.
 

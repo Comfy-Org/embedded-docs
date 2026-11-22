@@ -8,8 +8,8 @@
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 | --- | --- | --- | --- | --- |
-| `model` | מודל הבינה המלאכותית שיש להשתמש בו לשיפור וידאו. בחירת מודל חושפת פרמטר `resolution` מקונן. המודלים הזמינים והרזולוציות הנתמכות שלהם משתנים. | DYNAMIC_COMBO | כן | `"Portrait Restore Model (1x)"`<br>`"Portrait Restore Model (2x)"`<br>`"General Restore Model (1x)"`<br>`"General Restore Model (2x)"`<br>`"General Restore Model (4x)"`<br>`"Ultra HD Model (2x)"`<br>`"Generative Model (1x)"` |
-| `video` | קובץ הווידאו הקלטי שיש לשפר. | VIDEO | כן | N/A |
+| `מודל` | מודל הבינה המלאכותית שיש להשתמש בו לשיפור וידאו. בחירת מודל חושפת פרמטר `resolution` מקונן. המודלים הזמינים והרזולוציות הנתמכות שלהם משתנים. | DYNAMIC_COMBO | כן | `"Portrait Restore Model (1x)"`<br>`"Portrait Restore Model (2x)"`<br>`"General Restore Model (1x)"`<br>`"General Restore Model (2x)"`<br>`"General Restore Model (4x)"`<br>`"Ultra HD Model (2x)"`<br>`"Generative Model (1x)"` |
+| `וידאו` | קובץ הווידאו הקלטי שיש לשפר. | VIDEO | כן | N/A |
 
 ### קלטים של Portrait Restore, General Restore ו-Ultra HD Model
 
@@ -17,13 +17,13 @@
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 | --- | --- | --- | --- | --- |
-| `model.resolution` | רזולוציית היעד עבור הווידאו המשופר. בחירה ב-`"original"` שומרת על רזולוציית וידאו הקלט. | COMBO | כן | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"`<br>`"8K"` |
+| `רזולוציית מודל` | רזולוציית היעד עבור הווידאו המשופר. בחירה ב-`"original"` שומרת על רזולוציית וידאו הקלט. | COMBO | כן | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"`<br>`"8K"` |
 
 ### קלטים של Generative Model (1x)
 
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 | --- | --- | --- | --- | --- |
-| `model.resolution` | רזולוציית היעד עבור הווידאו המשופר. בחירה ב-`"original"` שומרת על רזולוציית וידאו הקלט. האפשרות `"8K"` אינה זמינה עבור מודל זה. | COMBO | כן | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"` |
+| `רזולוציית מודל` | רזולוציית היעד עבור הווידאו המשופר. בחירה ב-`"original"` שומרת על רזולוציית וידאו הקלט. האפשרות `"8K"` אינה זמינה עבור מודל זה. | COMBO | כן | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"` |
 
 **הערות:**
 

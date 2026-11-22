@@ -8,10 +8,10 @@
 
 | פרמטר | תיאור | סוג נתונים | נדרש | טווח |
 | --- | --- | --- | --- | --- |
-| `video` | הווידאו הקלטי שיש לעבד. חייב להיות בפורמט מיכל MP4. | VIDEO | כן | - |
-| `upscaler_model` | מודל ה-AI המשמש להגדלת הווידאו. תת-הפרמטרים הזמינים תלויים במודל הנבחר. בחירה ב-`"Disabled"` משביתה את ההגדלה. | DYNAMIC_COMBO | כן | `"Astra 2"`<br>`"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"`<br>`"Disabled"` |
-| `interpolation_model` | מודל ה-AI המשמש לאינטרפולציית פריימים. תת-הפרמטרים הזמינים תלויים במודל הנבחר. בחירה ב-`"Disabled"` משביתה את האינטרפולציה. | DYNAMIC_COMBO | כן | `"Disabled"`<br>`"apo-8"` |
-| `dynamic_compression_level` | רמת CQP המשמשת לדחיסת וידאו (ברירת מחדל: `"Low"`). | COMBO | לא | `"Low"`<br>`"Mid"`<br>`"High"` |
+| `וידאו` | הווידאו הקלטי שיש לעבד. חייב להיות בפורמט מיכל MP4. | VIDEO | כן | - |
+| `מודל שדרוג` | מודל ה-AI המשמש להגדלת הווידאו. תת-הפרמטרים הזמינים תלויים במודל הנבחר. בחירה ב-`"Disabled"` משביתה את ההגדלה. | DYNAMIC_COMBO | כן | `"Astra 2"`<br>`"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"`<br>`"Disabled"` |
+| `מודל אינטרפולציה` | מודל ה-AI המשמש לאינטרפולציית פריימים. תת-הפרמטרים הזמינים תלויים במודל הנבחר. בחירה ב-`"Disabled"` משביתה את האינטרפולציה. | DYNAMIC_COMBO | כן | `"Disabled"`<br>`"apo-8"` |
+| `רמת דחיסה דינמית` | רמת CQP המשמשת לדחיסת וידאו (ברירת מחדל: `"Low"`). | COMBO | לא | `"Low"`<br>`"Mid"`<br>`"High"` |
 
 הסעיפים הבאים מתארים את תת-הפרמטרים המופיעים עבור כל אפשרות של הבוררים `upscaler_model` ו-`interpolation_model`. אפשרויות ה-`"Disabled"` אינן מציגות פרמטרים נוספים.
 

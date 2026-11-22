@@ -8,11 +8,11 @@ Bu düğüm, bir veya daha fazla referans görüntüyü kodlar ve latentlerini b
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `positive` | Referans latentleriyle değiştirilecek pozitif koşullandırma. | CONDITIONING | Evet | - |
-| `negative` | Aynı referans latentlerini alacak isteğe bağlı negatif koşullandırma. `negative` çıktısında değiştirilmiş pozitif koşullandırmayı yeniden kullanmak için bağlantısız bırakın. | CONDITIONING | Hayır | - |
+| `pozitif` | Referans latentleriyle değiştirilecek pozitif koşullandırma. | CONDITIONING | Evet | - |
+| `negatif` | Aynı referans latentlerini alacak isteğe bağlı negatif koşullandırma. `negative` çıktısında değiştirilmiş pozitif koşullandırmayı yeniden kullanmak için bağlantısız bırakın. | CONDITIONING | Hayır | - |
 | `vae` | Bağlı referans görüntüleri kodlamak için kullanılan VAE. Hiçbir VAE bağlı değilse referans görüntüler yok sayılır. | VAE | Hayır | - |
-| `resolution` | Her referans görüntünün kodlamadan önce nasıl hazırlanacağı. `"keep resolution"` görüntüyü geldiği boyutta kodlar; `"resize"` en boy oranını koruyarak hedef megapiksel sayısına ölçekler ve `megapixels` seçeneğini görünür kılar. (varsayılan: "keep resolution") | DYNAMIC_COMBO | Evet | `"keep resolution"`<br>`"resize"` |
-| `images` | Genişletilebilir yuva: referans olarak kullanmak için bir veya daha fazla referans görüntü (`image_1`, `image_2`, ...) bağlayın. Görüntüler yuva sırasına göre kodlanır ve koşullandırmaya aynı sırayla eklenir. | IMAGE | Hayır | 1 ile 100 arası |
+| `çözünürlük` | Her referans görüntünün kodlamadan önce nasıl hazırlanacağı. `"keep resolution"` görüntüyü geldiği boyutta kodlar; `"resize"` en boy oranını koruyarak hedef megapiksel sayısına ölçekler ve `megapixels` seçeneğini görünür kılar. (varsayılan: "keep resolution") | DYNAMIC_COMBO | Evet | `"keep resolution"`<br>`"resize"` |
+| `görüntüler` | Genişletilebilir yuva: referans olarak kullanmak için bir veya daha fazla referans görüntü (`image_1`, `image_2`, ...) bağlayın. Görüntüler yuva sırasına göre kodlanır ve koşullandırmaya aynı sırayla eklenir. | IMAGE | Hayır | 1 ile 100 arası |
 
 ### Yeniden Boyutlandırma Girdileri
 

@@ -7,12 +7,12 @@ Bağladığınız metin, görseller, ses veya video için kendi seçeneklerinizd
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Kullanılacak model. `heygen-decision-1-turbo`, `heygen-decision-1`'den daha hızlıdır ve daha düşük maliyetlidir (varsayılan: `"heygen-decision-1"`). | COMBO | Evet | `"heygen-decision-1"`<br>`"heygen-decision-1-turbo"` |
-| `question` | Seçeneklerin yanıtladığı soru, en fazla 5000 karakter (varsayılan: "What style is the image?"). | STRING | Evet | 1 ile 5000 karakter arası |
-| `options` | Her satırda bir seçenek, tam olarak yazıldığı gibi kullanılır, her biri en fazla 128 karakter. Hiçbirine uymayan girdiler için `other` gibi bir seçenek ekleyin (varsayılan: `photo`, `illustration`, `3d render`, `anime`, `sketch`, `other`). | STRING | Evet | 2 ile 255 seçenek arası |
-| `images` | Sınıflandırılacak görseller, toplamda en fazla 4; bir toplu işin her karesi sayılır. Yuvalar boyunca sırayla `image_1` ile `image_4` arasında numaralandırılırlar. | IMAGE | Hayır | En fazla 4 görsel |
+| `soru` | Seçeneklerin yanıtladığı soru, en fazla 5000 karakter (varsayılan: "What style is the image?"). | STRING | Evet | 1 ile 5000 karakter arası |
+| `seçenekler` | Her satırda bir seçenek, tam olarak yazıldığı gibi kullanılır, her biri en fazla 128 karakter. Hiçbirine uymayan girdiler için `other` gibi bir seçenek ekleyin (varsayılan: `photo`, `illustration`, `3d render`, `anime`, `sketch`, `other`). | STRING | Evet | 2 ile 255 seçenek arası |
+| `görseller` | Sınıflandırılacak görseller, toplamda en fazla 4; bir toplu işin her karesi sayılır. Yuvalar boyunca sırayla `image_1` ile `image_4` arasında numaralandırılırlar. | IMAGE | Hayır | En fazla 4 görsel |
 | `audio_1` | Sınıflandırılacak ses, en fazla 30 dakika. | AUDIO | Hayır | En fazla 30 dakika |
 | `video_1` | Sınıflandırılacak video, en fazla 60 saniye. | VIDEO | Hayır | En fazla 60 saniye |
-| `text` | Sorunun ilgili olduğu metin, örneğin bir istem veya bir LLM yanıtı, en fazla 20000 karakter. | STRING | Hayır | En fazla 20000 karakter |
+| `metin` | Sorunun ilgili olduğu metin, örneğin bir istem veya bir LLM yanıtı, en fazla 20000 karakter. | STRING | Hayır | En fazla 20000 karakter |
 
 2 ile 255 seçenek verin; hiçbiri iki kez olmasın ve hiçbiri yalnızca harf büyüklüğü/küçüklüğü bakımından farklı olmasın, aksi takdirde düğüm hata verir. Sınıflandırmak için en az bir girdi bağlayın ve soru içinde yuvalarına göre adlandırın, örneğin "image_1'de hangi mevsim gösteriliyor?".
 

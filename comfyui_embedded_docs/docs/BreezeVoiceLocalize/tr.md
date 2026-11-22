@@ -6,9 +6,9 @@ Başka bir dili ana dili gibi konuşan bir sesin kopyasını oluşturur; yabanc�
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `voice` | Kopyalanacak Breeze sesi. | BREEZE_VOICE | Evet | - |
-| `language` | Yeni sesin konuştuğu dil. Varsayılan: `"English"`. | COMBO | Evet | Birden çok seçenek mevcut |
-| `seed` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 arası |
+| `ses` | Kopyalanacak Breeze sesi. | BREEZE_VOICE | Evet | - |
+| `dil` | Yeni sesin konuştuğu dil. Varsayılan: `"English"`. | COMBO | Evet | Birden çok seçenek mevcut |
+| `tohum` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 arası |
 
 ## Çıktılar
 

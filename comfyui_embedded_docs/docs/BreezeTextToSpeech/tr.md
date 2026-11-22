@@ -8,11 +8,11 @@ Converts metni Breeze TTS 2 ile sese dönüştürür. Bir Breeze sesi seçin, me
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `voice` | Seslendirme için kullanılacak Breeze sesi; Breeze Voice Selector veya Breeze ses oluşturma düğümlerinden birinden alınır. | BREEZE_VOICE | Evet | - |
-| `text` | Seslendirilecek metin, 1 ile 1000 karakter arası. `(laughs)` veya `(sighs)` gibi ses etiketleri okunmak yerine uygulanır. Varsayılan: boş. | STRING | Evet | 1 ile 1000 karakter arası |
-| `language` | Metnin dili. İngilizce ve Çince iki modelden herhangi birini kullanabilir; diğer diller Breeze TTS 2 Multilingual kullanır. Bir ses en iyi kendi dilinde duyulur; bu nedenle başka bir dil için Breeze Voice Localize ile oluşturulmuş bir kopya kullanın. | DYNAMIC_COMBO | Evet | Birden çok seçenek mevcut |
-| `delivery` | Satırın nasıl seslendirileceği: `neutral` sesi olduğu gibi tutar, `directed` yazılı talimatları izler. Varsayılan: `"neutral"`. | DYNAMIC_COMBO | Evet | `"neutral"`<br>`"directed"` |
-| `speed` | Perdeyi değiştirmeden tempo çarpanı. Varsayılan: 1.0. | FLOAT | Hayır | 0.5 ile 2.0 arası (adım: 0.05) |
+| `ses` | Seslendirme için kullanılacak Breeze sesi; Breeze Voice Selector veya Breeze ses oluşturma düğümlerinden birinden alınır. | BREEZE_VOICE | Evet | - |
+| `metin` | Seslendirilecek metin, 1 ile 1000 karakter arası. `(laughs)` veya `(sighs)` gibi ses etiketleri okunmak yerine uygulanır. Varsayılan: boş. | STRING | Evet | 1 ile 1000 karakter arası |
+| `dil` | Metnin dili. İngilizce ve Çince iki modelden herhangi birini kullanabilir; diğer diller Breeze TTS 2 Multilingual kullanır. Bir ses en iyi kendi dilinde duyulur; bu nedenle başka bir dil için Breeze Voice Localize ile oluşturulmuş bir kopya kullanın. | DYNAMIC_COMBO | Evet | Birden çok seçenek mevcut |
+| `üslup` | Satırın nasıl seslendirileceği: `neutral` sesi olduğu gibi tutar, `directed` yazılı talimatları izler. Varsayılan: `"neutral"`. | DYNAMIC_COMBO | Evet | `"neutral"`<br>`"directed"` |
+| `hız` | Perdeyi değiştirmeden tempo çarpanı. Varsayılan: 1.0. | FLOAT | Hayır | 0.5 ile 2.0 arası (adım: 0.05) |
 | `seed` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Hayır | 0 ile 2147483647 arası |
 
 ### Dil "English" ve "Chinese" Girdileri

@@ -6,13 +6,13 @@ Projette les images rendues sur la disposition UV du maillage. Rendez le maillag
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `mesh` | Le maillage déplié en UV qui a été rendu. | MESH | Oui | - |
+| `maillage` | Le maillage déplié en UV qui a été rendu. | MESH | Oui | - |
 | `images` | Une image par caméra, dans l'ordre des caméras (Batch Images). Toute résolution ayant le rapport d'aspect du rendu ; une résolution plus élevée donne une cuisson plus nette. | IMAGE | Oui | - |
 | `camera_info` | Les caméras avec lesquelles les images ont été rendues, telles que connectées à Render Mesh. Joignez les rigs avec Batch Cameras. Aucun : vue de face auto-cadrée de Render Mesh. | LOAD3D_CAMERA | Non | - |
-| `resolution` | Résolution de la texture carrée. 0 conserve la taille de texture actuelle du maillage, ou 2048 lorsqu'il n'en a pas ; sinon, la texture actuelle est rééchantillonnée à cette taille. Par défaut : 0. | INT | Non | 0 à 8192 (pas : 64) |
+| `résolution` | Résolution de la texture carrée. 0 conserve la taille de texture actuelle du maillage, ou 2048 lorsqu'il n'en a pas ; sinon, la texture actuelle est rééchantillonnée à cette taille. Par défaut : 0. | INT | Non | 0 à 8192 (pas : 64) |
 | `blend_exponent` | Les vues sont pondérées par cos(angle de vue)^exposant. Une valeur plus élevée favorise la vue la plus frontale (plus nette, coutures plus marquées) ; une valeur plus faible moyenne davantage de vues (plus douce). Par défaut : 4.0. | FLOAT | Non | 0.0 à 32.0 (pas : 0.5) |
 | `fill_unseen` | Les texels qu'aucune vue ne voit prennent une couleur développée à partir de la surface vue au lieu de la texture ou des couleurs de sommets propres au maillage. Utilisez-le lorsque les vues remplacent toute la texture. Par défaut : false. | BOOLEAN | Non | true<br>false |
-| `mask` | Zones modifiées par vue ; seuls les pixels masqués sont projetés. Un masque unique s'applique à chaque vue. | MASK | Non | - |
+| `masque` | Zones modifiées par vue ; seuls les pixels masqués sont projetés. Un masque unique s'applique à chaque vue. | MASK | Non | - |
 
 ## Sorties
 

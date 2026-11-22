@@ -6,14 +6,14 @@
 
 | פרמטר | תיאור | סוג נתונים | נדרש | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `image` | תמונת קלט להמרה לווידאו | IMAGE | כן | - |
-| `prompt` | הנחיה ליצירת הווידאו (ברירת מחדל: מחרוזת ריקה) | STRING | כן | - |
-| `quality` | הגדרת איכות הווידאו (ברירת מחדל: res_540p) | COMBO | כן | `res_540p`<br>`res_1080p` |
-| `duration_seconds` | משך הווידאו שנוצר בשניות | COMBO | כן | `dur_2`<br>`dur_5`<br>`dur_10` |
-| `motion_mode` | סגנון תנועה שמוחל על יצירת הווידאו | COMBO | כן | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` |
+| `תמונה` | תמונת קלט להמרה לווידאו | IMAGE | כן | - |
+| `הנחיה` | הנחיה ליצירת הווידאו (ברירת מחדל: מחרוזת ריקה) | STRING | כן | - |
+| `איכות` | הגדרת איכות הווידאו (ברירת מחדל: res_540p) | COMBO | כן | `res_540p`<br>`res_1080p` |
+| `משך בשניות` | משך הווידאו שנוצר בשניות | COMBO | כן | `dur_2`<br>`dur_5`<br>`dur_10` |
+| `מצב תנועה` | סגנון תנועה שמוחל על יצירת הווידאו | COMBO | כן | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` |
 | `seed` | ערך Seed ליצירת הווידאו (ברירת מחדל: 0) | INT | כן | 0-2147483647 |
-| `negative_prompt` | תיאור טקסט אופציונלי של אלמנטים לא רצויים בתמונה (ברירת מחדל: מחרוזת ריקה) | STRING | לא | - |
-| `pixverse_template` | תבנית אופציונלית להשפעה על סגנון היצירה, שנוצרה על ידי צומת PixVerse Template | CUSTOM | לא | - |
+| `הנחיה שלילית` | תיאור טקסט אופציונלי של אלמנטים לא רצויים בתמונה (ברירת מחדל: מחרוזת ריקה) | STRING | לא | - |
+| `תבנית PixVerse` | תבנית אופציונלית להשפעה על סגנון היצירה, שנוצרה על ידי צומת PixVerse Template | CUSTOM | לא | - |
 
 **הערה:** בעת שימוש באיכות 1080p, מצב התנועה מוגדר אוטומטית למצב normal ומשך הזמן מוגבל ל-5 שניות. עבור משכי זמן שאינם 5 שניות, מצב התנועה מוגדר גם הוא אוטומטית למצב normal.
 

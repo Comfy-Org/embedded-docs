@@ -15,7 +15,7 @@ Le sélecteur `moderation` révèle une option de modération supplémentaire lo
 | `instruction` | Consigne supplémentaire facultative ajoutée à l'instruction intégrée de Bria, par exemple quelle main utiliser ou dans quel sens l'étiquette est orientée. Par défaut : `""` (chaîne vide). | STRING | Oui | - |
 | `aspect_ratio` | `"auto"` conserve le cadrage de la photo de la personne à environ 1 mégapixel. Un ratio fixe renvoie entre 0,6 et 1 mégapixel, par exemple 768x1024 pour `"3:4"`. Par défaut : `"auto"`. | COMBO | Oui | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"` |
 | `seed` | Graine envoyée à Bria avec la requête. Par défaut : 42. | INT | Oui | 1 à 2147483647 |
-| `moderation` | Paramètres de modération. Lorsqu'il est défini sur `"true"`, l'option de modération ci-dessous devient disponible. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
+| `modération` | Paramètres de modération. Lorsqu'il est défini sur `"true"`, l'option de modération ci-dessous devient disponible. | DYNAMIC_COMBO | Oui | `"false"`<br>`"true"` |
 
 ### Entrées Modération « true »
 

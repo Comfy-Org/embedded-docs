@@ -6,7 +6,7 @@ Divise l'échantillonnage en fenêtres de contexte chevauchantes afin qu'une vid
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Le modèle auquel appliquer des fenêtres de contexte pendant l'échantillonnage. | MODEL | Oui | - |
+| `modèle` | Le modèle auquel appliquer des fenêtres de contexte pendant l'échantillonnage. | MODEL | Oui | - |
 | `context_length` | La longueur de la fenêtre de contexte en images réelles. Doit être 17*n + 5 (par défaut : 124). | INT | Oui | 22 à 16384 (MAX_RESOLUTION), pas de 17 |
 | `context_overlap` | Le chevauchement de la fenêtre de contexte en images réelles. Doit être 17*n + 5 (par défaut : 39). | INT | Oui | 5 ou plus, pas de 17 |
 | `fuse_method` | La méthode utilisée pour fusionner les fenêtres de contexte (par défaut : `"pyramid"`). | COMBO | Oui | `"pyramid"`<br>`"relative"`<br>`"flat"`<br>`"overlap-linear"` |

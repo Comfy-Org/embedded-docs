@@ -6,7 +6,7 @@ Transformez une image fixe et une piste vocale en une vidéo parlante avec synch
 
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
-| `model` | Modèle à utiliser. La sélection d'un modèle révèle les paramètres qui lui sont propres : `image`, `audio` et `resolution`. | DYNAMIC_COMBO | Oui | `"fabric-1.0"` |
+| `modèle` | Modèle à utiliser. La sélection d'un modèle révèle les paramètres qui lui sont propres : `image`, `audio` et `resolution`. | DYNAMIC_COMBO | Oui | `"fabric-1.0"` |
 | `image` | Image dont le visage est clairement visible. La vidéo conserve son rapport d'aspect. | IMAGE | Oui | - |
 | `audio` | Parole à synchroniser labialement, jusqu'à 300 secondes. Détermine la durée de la vidéo. | AUDIO | Oui | Jusqu'à 300 secondes |
 | `resolution` | Classe de taille de sortie : environ 0,4 mégapixel à `"480p"` (864x480 en 16:9) et 0,9 mégapixel à `"720p"` (1312x736 en 16:9). (par défaut : `"720p"`) | COMBO | Oui | `"480p"`<br>`"720p"` |

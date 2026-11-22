@@ -7,7 +7,7 @@ Bu düğüm, Pika ile bir video için senkronize bir ses parçası oluşturur. G
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `video` | Ses parçası oluşturulacak klip. En fazla 10 dakika. | VIDEO | Evet | - |
-| `instruction` | Sesin ne olması gerektiği: ses efektleri, ortam sesi, müzik veya stil. Görüntüden türetmek için boş bırakın. Varsayılan: "" (boş dize). | STRING | Evet | 0 ile 10000 karakter arası |
+| `talimat` | Sesin ne olması gerektiği: ses efektleri, ortam sesi, müzik veya stil. Görüntüden türetmek için boş bırakın. Varsayılan: "" (boş dize). | STRING | Evet | 0 ile 10000 karakter arası |
 | `seed` | Örnekleme için tohum. Varsayılan: 42. | INT | Evet | 0 ile 2147483647 arası |
 
 **Kısıtlamalar:**

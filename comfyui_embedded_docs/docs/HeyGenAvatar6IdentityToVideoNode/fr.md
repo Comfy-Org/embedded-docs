@@ -8,14 +8,14 @@ Générez une vidéo parlante d'un avatar HeyGen avec Avatar 6. Choisissez l'une
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Sélecteur de modèle. `"heygen-avatar-6-turbo"` est le palier moins cher et plus rapide ; les deux modèles acceptent les mêmes entrées et résolutions. | COMBO | Oui | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
+| `modèle` | Sélecteur de modèle. `"heygen-avatar-6-turbo"` est le palier moins cher et plus rapide ; les deux modèles acceptent les mêmes entrées et résolutions. | COMBO | Oui | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
 | `avatar` | Apparence d'avatar à présenter. Les 19 apparences intégrées compatibles avec Avatar 6 sont listées directement ; `custom avatar` révèle `custom_avatar_id` pour une apparence que vous avez créée dans HeyGen. | DYNAMIC_COMBO | Oui | 19 apparences intégrées<br>`custom avatar` |
-| `speech` | Pilotez l'avatar avec un script texte (synthèse vocale HeyGen) ou votre propre audio. Nom affiché : source vocale. | DYNAMIC_COMBO | Oui | `"script"`<br>`"audio"` |
-| `resolution` | Résolution de la vidéo de sortie. Par défaut : `"1080p"`. | COMBO | Oui | `"1080p"`<br>`"2k"` |
+| `parole` | Pilotez l'avatar avec un script texte (synthèse vocale HeyGen) ou votre propre audio. Nom affiché : source vocale. | DYNAMIC_COMBO | Oui | `"script"`<br>`"audio"` |
+| `résolution` | Résolution de la vidéo de sortie. Par défaut : `"1080p"`. | COMBO | Oui | `"1080p"`<br>`"2k"` |
 | `aspect_ratio` | Format d'image de la vidéo de sortie. `"auto"` suit la séquence vidéo d'origine de l'apparence d'avatar. Par défaut : `"auto"`. | COMBO | Oui | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
 | `motion_prompt` | Indications facultatives pour les gestes, l'expression, la posture et les mouvements de caméra. Par défaut : chaîne vide. | STRING | Oui | Texte multiligne |
 | `motion_expressiveness` | `"less"` produit des gestes moins nombreux et plus petits. Le prompt de mouvement prévaut là où les deux se chevauchent. Par défaut : `"default"`. | COMBO | Oui | `"less"`<br>`"default"` |
-| `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
+| `graine` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. Par défaut : 42. | INT | Oui | 0 à 2147483647 |
 
 ### Entrées `custom avatar`
 

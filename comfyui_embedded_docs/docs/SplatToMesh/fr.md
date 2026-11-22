@@ -14,8 +14,8 @@ Ce nœud convertit un splat gaussien 3D en une surface maillée colorée. Il fon
 | `composant_min` | Supprime les composants connectés plus petits que ce nombre de sommets. Élimine les amas flottants détachés et la coque interne des doubles parois. 0 conserve tous les composants. Par défaut : 500 | INT | Oui | 0 - 100000 (pas de 50) |
 | `opacité_min` | Ignore les gaussiens plus faibles que cette valeur avant le maillage. Par défaut : 0,02 | FLOAT | Oui | 0,0 - 1,0 (pas de 0,01) |
 | `accentuation_couleur` | Affûte la texture des sommets. 1,0 donne un mélange physiquement correct ; des valeurs plus élevées biaisent la couleur de chaque voxel vers sa gaussienne dominante au lieu de faire la moyenne des voisins (dé-étale la texture). Affecte uniquement la couleur, pas la géométrie. Par défaut : 2,0 | FLOAT | Oui | 1,0 - 8,0 (pas de 0,5) |
-| `solid` | Remplit l'intérieur selon l'orientation des gaussiennes pour obtenir une surface fermée unique. Désactivé, le contour de densité brut est conservé, ce qui laisse une paroi interne cachée derrière la surface. Valeur par défaut : True | BOOLEAN | Non | True / False |
-| `fill` | Utilisé uniquement lorsque `solid` est activé. Coût de fermeture d'une ouverture par rapport au suivi de la surface. Des valeurs faibles ferment des ouvertures plus grandes : environ 3 scelle les objets creux, mais met aussi des couvercles sur les tasses et les cols. Valeur par défaut : 20.0 | FLOAT | Non | 0.0 - 1000.0 (pas 1.0) |
+| `solide` | Remplit l'intérieur selon l'orientation des gaussiennes pour obtenir une surface fermée unique. Désactivé, le contour de densité brut est conservé, ce qui laisse une paroi interne cachée derrière la surface. Valeur par défaut : True | BOOLEAN | Non | True / False |
+| `remplissage` | Utilisé uniquement lorsque `solid` est activé. Coût de fermeture d'une ouverture par rapport au suivi de la surface. Des valeurs faibles ferment des ouvertures plus grandes : environ 3 scelle les objets creux, mais met aussi des couvercles sur les tasses et les cols. Valeur par défaut : 20.0 | FLOAT | Non | 0.0 - 1000.0 (pas 1.0) |
 
 ## Sorties
 

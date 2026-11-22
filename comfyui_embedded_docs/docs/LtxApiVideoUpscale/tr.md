@@ -7,8 +7,8 @@ Yükseltilecek videoyu en-boy oranını, kare hızını ve sesi koruyarak 1080p,
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 | --- | --- | --- | --- | --- |
 | `video` | Yükseltilecek video; kısa kenarı en az 480 piksel olmalı ve her iki yönde de en fazla 7680x4320 olmalıdır. 1080p için 2401 kareye, 4K için 601 kareye ve 8K için 241 kareye kadar. | VIDEO | Evet | - |
-| `resolution` | Çıktı boyutu; 1920x1080, 3840x2160 veya 7680x4320 içine sığabilecek en büyük boyut olarak ve dikey videolar için çevrilerek. Varsayılan: `"4k"`. | COMBO | Evet | `"1080p"`<br>`"4k"`<br>`"8k"` |
-| `seed` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Hayır | 0 ile 4294967295 arası |
+| `çözünürlük` | Çıktı boyutu; 1920x1080, 3840x2160 veya 7680x4320 içine sığabilecek en büyük boyut olarak ve dikey videolar için çevrilerek. Varsayılan: `"4k"`. | COMBO | Evet | `"1080p"`<br>`"4k"`<br>`"8k"` |
+| `tohum` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed değerinden bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Hayır | 0 ile 4294967295 arası |
 
 ## Çıktılar
 

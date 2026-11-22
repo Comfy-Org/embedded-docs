@@ -10,12 +10,12 @@ Avatar 6 ile bir HeyGen avatarının konuşan videosunu oluşturun. Avatar 6'yı
 |-----------|-------------|-----------|----------|-------|
 | `model` | Model seçici. `"heygen-avatar-6-turbo"` daha ucuz, daha hızlı kademedir; her iki model de aynı girdileri ve çözünürlükleri kabul eder. | COMBO | Evet | `"heygen-avatar-6"`<br>`"heygen-avatar-6-turbo"` |
 | `avatar` | Sunulacak avatar görünümü. Avatar 6'yı destekleyen 19 yerleşik görünüm doğrudan listelenir; `custom avatar`, HeyGen'de oluşturduğunuz bir görünüm için `custom_avatar_id` alanını gösterir. | DYNAMIC_COMBO | Evet | 19 yerleşik görünüm<br>`custom avatar` |
-| `speech` | Avatarı bir metin betiğiyle (HeyGen metinden konuşmaya) veya kendi sesinizle yönlendirin. Görünen ad: konuşma kaynağı. | DYNAMIC_COMBO | Evet | `"script"`<br>`"audio"` |
-| `resolution` | Çıktı videosunun çözünürlüğü. Varsayılan: `"1080p"`. | COMBO | Evet | `"1080p"`<br>`"2k"` |
-| `aspect_ratio` | Çıktı videosunun en-boy oranı. `"auto"`, avatar görünümünün kendi görüntüsünü takip eder. Varsayılan: `"auto"`. | COMBO | Evet | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `motion_prompt` | Hareketler, ifade, duruş ve kamera hareketi için isteğe bağlı yönlendirme. Varsayılan: boş dize. | STRING | Evet | Çok satırlı metin |
-| `motion_expressiveness` | `"less"` daha az ve daha küçük jestler sağlar. Hareket istemi, ikisinin çakıştığı yerlerde önceliklidir. Varsayılan: `"default"`. | COMBO | Evet | `"less"`<br>`"default"` |
-| `seed` | Seed, düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Evet | 0 ile 2147483647 arası |
+| `konuşma` | Avatarı bir metin betiğiyle (HeyGen metinden konuşmaya) veya kendi sesinizle yönlendirin. Görünen ad: konuşma kaynağı. | DYNAMIC_COMBO | Evet | `"script"`<br>`"audio"` |
+| `çözünürlük` | Çıktı videosunun çözünürlüğü. Varsayılan: `"1080p"`. | COMBO | Evet | `"1080p"`<br>`"2k"` |
+| `en_boy_oranı` | Çıktı videosunun en-boy oranı. `"auto"`, avatar görünümünün kendi görüntüsünü takip eder. Varsayılan: `"auto"`. | COMBO | Evet | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `hareket_istemi` | Hareketler, ifade, duruş ve kamera hareketi için isteğe bağlı yönlendirme. Varsayılan: boş dize. | STRING | Evet | Çok satırlı metin |
+| `hareket_ifadeciliği` | `"less"` daha az ve daha küçük jestler sağlar. Hareket istemi, ikisinin çakıştığı yerlerde önceliklidir. Varsayılan: `"default"`. | COMBO | Evet | `"less"`<br>`"default"` |
+| `tohum` | Seed, düğümün yeniden çalışıp çalışmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan: 42. | INT | Evet | 0 ile 2147483647 arası |
 
 ### `custom avatar` Girdileri
 

@@ -7,11 +7,11 @@ Bu düğüm, p-h3-image ile tek bir durağan görüntü için bir istemi koşull
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `clip` | İstemi (varsa referans görüntüler dahil) belirteçleştirmek ve koşullandırmayı kodlamak için kullanılan p-h3-image CLIP modeli. | CLIP | Evet | - |
-| `prompt` | Neyin oluşturulacağı veya `image_1` dosyasının nasıl düzenleneceği. Görüntüler bağlıyken kısa bir talimatın başına `Edit <Picture 1>. ` eklenir. Zaten `Edit <Picture` ile başlayan bir talimat veya bir istem yükseltici tarafından üretilen bir düzenleme talimatı, tam olarak yazıldığı gibi kullanılır. | STRING | Evet | - |
-| `width` | Piksel cinsinden çıktı genişliği. 0, ölçekleme sonrasında `image_1` genişliğini kullanır veya görüntü bağlı değilken 2912 kullanır (varsayılan: 0). | INT | Evet | 0 ile MAX_RESOLUTION arası |
-| `height` | Piksel cinsinden çıktı yüksekliği. 0, ölçekleme sonrasında `image_1` yüksekliğini kullanır veya görüntü bağlı değilken 2912 kullanır (varsayılan: 0). | INT | Evet | 0 ile MAX_RESOLUTION arası |
+| `istem` | Neyin oluşturulacağı veya `image_1` dosyasının nasıl düzenleneceği. Görüntüler bağlıyken kısa bir talimatın başına `Edit <Picture 1>. ` eklenir. Zaten `Edit <Picture` ile başlayan bir talimat veya bir istem yükseltici tarafından üretilen bir düzenleme talimatı, tam olarak yazıldığı gibi kullanılır. | STRING | Evet | - |
+| `genişlik` | Piksel cinsinden çıktı genişliği. 0, ölçekleme sonrasında `image_1` genişliğini kullanır veya görüntü bağlı değilken 2912 kullanır (varsayılan: 0). | INT | Evet | 0 ile MAX_RESOLUTION arası |
+| `yükseklik` | Piksel cinsinden çıktı yüksekliği. 0, ölçekleme sonrasında `image_1` yüksekliğini kullanır veya görüntü bağlı değilken 2912 kullanır (varsayılan: 0). | INT | Evet | 0 ile MAX_RESOLUTION arası |
 | `vae` | p-h3-image VAE'si. Bağlandığında görseller referans latent olarak da sabitlenir; bağlanmadığında yalnızca metin kodlayıcısını koşullar. | VAE | Hayır | - |
-| `images` | `image_1` ile `image_9` arasındaki en fazla 9 görüntüden oluşan büyütülebilir grup. `image_1` düzenlenen görüntüdür, kalan yuvalar referanstır. | AUTOGROW | Hayır | 0 ile 9 görsel arası |
+| `görüntüler` | `image_1` ile `image_9` arasındaki en fazla 9 görüntüden oluşan büyütülebilir grup. `image_1` düzenlenen görüntüdür, kalan yuvalar referanstır. | AUTOGROW | Hayır | 0 ile 9 görsel arası |
 
 ## Çıktılar
 

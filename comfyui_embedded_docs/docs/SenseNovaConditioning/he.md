@@ -7,9 +7,9 @@
 | פרמטר | תיאור | סוג נתונים | חובה | טווח |
 |-----------|-------------|-----------|----------|-------|
 | `clip` | מודל SenseNova CLIP. חברו את טוען ה-CLIP שמזין גם את CLIP Text Encode; פלט המקודד עובר ל-`conditioning`. נדרש לכל משימה למעט כאשר הקונדישנינג הנכנס כבר הושלם. | CLIP | לא | - |
-| `conditioning` | קונדישנינג טקסט של SenseNova מ-CLIP Text Encode. | CONDITIONING | כן | - |
-| `negative` | קונדישנינג שלילי אופציונלי. מתעדכן ומוחזר עבור המשימות `interleave` ו-`self-correction`. | CONDITIONING | לא | - |
-| `task` | המשימה להרצה. `"image"` מקודד את הפרומפט עבור סמפלר סטנדרטי, `"image thinking"` מאפשר למודל לחשוב לפני שהוא עונה, `"interleave"` מפיק טקסט ותמונות במעבר אחד, ו-`"self-correction"` מאפשר למודל לתקן את הפלט הקודם שלו. | DYNAMIC_COMBO | כן | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
+| `התניה` | קונדישנינג טקסט של SenseNova מ-CLIP Text Encode. | CONDITIONING | כן | - |
+| `שלילי` | קונדישנינג שלילי אופציונלי. מתעדכן ומוחזר עבור המשימות `interleave` ו-`self-correction`. | CONDITIONING | לא | - |
+| `משימה` | המשימה להרצה. `"image"` מקודד את הפרומפט עבור סמפלר סטנדרטי, `"image thinking"` מאפשר למודל לחשוב לפני שהוא עונה, `"interleave"` מפיק טקסט ותמונות במעבר אחד, ו-`"self-correction"` מאפשר למודל לתקן את הפלט הקודם שלו. | DYNAMIC_COMBO | כן | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
 | `max_tokens` | מספר הטוקנים המקסימלי שנוצר במהלך קריאה זו. ברירת מחדל: 1024. | INT | כן | 1 עד 8192 |
 
 ### קלטים של `interleave`

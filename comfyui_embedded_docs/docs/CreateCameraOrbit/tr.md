@@ -7,10 +7,10 @@
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `camera_info` | Yörüngenin ilk kamerası. Bir kamera listesi, içindeki her kameranın yörüngesini oluşturur. | LOAD3D_CAMERA | Evet | - |
-| `count` | Süpürme boyunca eşit aralıklarla yerleştirilmiş kamera sayısı. Varsayılan: 4. | INT | Evet | 1 ile 64 arası |
-| `yaw` | Hedef etrafındaki toplam dönüş; Create Camera Info'nun yaw yönünde. Tam turlar ilk kameradan bir adım önce durur; diğer süpürmeler son kamerada biter. Varsayılan: 360.0. | FLOAT | Evet | -720.0 ile 720.0 arası (adım: 1.0) |
-| `pitch` | Hedef üzerindeki toplam eğim; pozitif değer Create Camera Info'nun pitch yönünde yükselir; 90'ı geçince kameralar tepenin üzerinden geçer. Tam turlar `yaw` gibi döngü yapar. Varsayılan: 0.0. | FLOAT | Evet | -720.0 ile 720.0 arası (adım: 1.0) |
-| `poles` | Hedefe doğrudan aşağıdan ve/veya yukarıdan bakan görüşler; yörüngeden sonra eklenir. Görüntülerinin üst kısmı ilk kameradan uzağa bakar. Varsayılan: `"none"`. | COMBO | Evet | `"none"`<br>`"top"`<br>`"bottom"`<br>`"top and bottom"` |
+| `sayı` | Süpürme boyunca eşit aralıklarla yerleştirilmiş kamera sayısı. Varsayılan: 4. | INT | Evet | 1 ile 64 arası |
+| `sapma` | Hedef etrafındaki toplam dönüş; Create Camera Info'nun yaw yönünde. Tam turlar ilk kameradan bir adım önce durur; diğer süpürmeler son kamerada biter. Varsayılan: 360.0. | FLOAT | Evet | -720.0 ile 720.0 arası (adım: 1.0) |
+| `eğim` | Hedef üzerindeki toplam eğim; pozitif değer Create Camera Info'nun pitch yönünde yükselir; 90'ı geçince kameralar tepenin üzerinden geçer. Tam turlar `yaw` gibi döngü yapar. Varsayılan: 0.0. | FLOAT | Evet | -720.0 ile 720.0 arası (adım: 1.0) |
+| `kutuplar` | Hedefe doğrudan aşağıdan ve/veya yukarıdan bakan görüşler; yörüngeden sonra eklenir. Görüntülerinin üst kısmı ilk kameradan uzağa bakar. Varsayılan: `"none"`. | COMBO | Evet | `"none"`<br>`"top"`<br>`"bottom"`<br>`"top and bottom"` |
 
 ## Çıktılar
 
