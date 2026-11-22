@@ -6,7 +6,7 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `clip` | SenseNova CLIP 模型。請連接同時供給 CLIP Text Encode 的 CLIP 載入器，編碼器的輸出接到 `conditioning`。除了傳入的條件資料已完成的情況外，所有任務皆需要此項。 | CLIP | 否 | - |
+| `clip` | SenseNova CLIP 模型。請連接同時供給 CLIP Text Encode 的 CLIP 載入器，編碼器的輸出接到 `conditioning`。除了傳入的條件資料為空或已完成的情況外，所有任務皆需要此項。 | CLIP | 否 | - |
 | `條件設定` | 來自 CLIP Text Encode 的 SenseNova 文字條件資料。 | CONDITIONING | 是 | - |
 | `負向` | 選用的負向條件資料。在 `interleave` 與 `self-correction` 任務中會更新並回傳。 | CONDITIONING | 否 | - |
 | `任務` | 要執行的任務。`"image"` 會為標準取樣器編碼提示詞，`"image thinking"` 會讓模型在回答前先思考，`"interleave"` 會在一次處理中產生文字與影像，`"self-correction"` 會讓模型修正自己先前的輸出。 | DYNAMIC_COMBO | 是 | `"image"`<br>`"image thinking"`<br>`"interleave"`<br>`"self-correction"` |
@@ -31,7 +31,7 @@
 
 **限制與行為：**
 
-* `clip` 輸入接收 SenseNova CLIP 模型本身，而不是 CLIP Text Encode 的輸出（那是 `CONDITIONING`）。`clip` 缺少（除非傳入的條件資料已完成）或不是 SenseNova CLIP 時，節點會報錯。
+* `clip` 輸入接收 SenseNova CLIP 模型本身，而不是 CLIP Text Encode 的輸出（那是 `CONDITIONING`）。當傳入的條件資料為空或已完成時，節點會提前回傳、不使用 `clip`；否則 `clip` 缺少或不是 SenseNova CLIP 都會報錯。
 * `"image thinking"` 需要恰好一個正向條件項目；`"interleave"` 與 `"self-correction"` 需要一個正向與一個負向項目。
 * 當模型正在等待影像時，將前一個取樣器的 LATENT 輸出連接到 `samples`。在尚未請求影像前傳入 `samples` 會造成錯誤。
 * 當傳入的條件資料已完成時，節點會原樣回傳，其中 `generated_text` 為空，且 `image_requested` 設為 False。
