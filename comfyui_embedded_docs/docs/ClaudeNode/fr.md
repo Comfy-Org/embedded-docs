@@ -64,6 +64,7 @@ Ce modèle n'expose pas de paramètre `reasoning_effort`.
 
 - **Limite d'images :** Un maximum de 20 images peut être fourni par requête. Connecter plus de 20 images déclenche une erreur.
 - **Invite requise :** L'invite doit contenir au moins un caractère non blanc. Une invite vide déclenche une erreur de validation.
+- **Longueur de l'invite :** L'invite est limitée à 500 000 caractères et `system_prompt` à 100 000 caractères ; sur Haiku 4.5, les limites sont de 100 000 et 20 000.
 - **Gestion de la température :** Lorsque la réflexion est activée, l'API Anthropic exige que la température ne soit pas définie (elle vaut 1.0 par défaut). Opus 5.5, Opus 5, Opus 4.8, Fable 5.2, Fable 5.1, Fable 5, Sonnet 5.5 et Sonnet 5 n'exposent pas de paramètre de température. Opus 4.7 ignore `temperature`, et tout modèle dont `reasoning_effort` est défini sur autre chose que `"off"` l'ignore également.
 - **Comportement du raisonnement et de la réflexion :** Le paramètre `reasoning_effort` contrôle si la réflexion est activée. Opus 5.5, Opus 5, Fable 5.2, Fable 5.1 et Fable 5 ont toujours le raisonnement activé. Haiku 4.5 ne prend pas en charge le raisonnement. Lorsque la réflexion est activée, le nœud utilise la réflexion adaptative : Anthropic choisit le budget de raisonnement selon l’effort demandé. Lorsque `reasoning_effort` est `"off"` sur Sonnet 5.5, la requête utilise la réflexion `between_tools` au lieu de la réflexion désactivée, donc la réponse ne contient toujours pas de raisonnement.
 - **Minimum de `max_tokens` :** `max_tokens` accepte des valeurs à partir de 1024 sur Opus 5.5 et Sonnet 5.5, à partir de 8192 sur Fable 5.2, et à partir de 4096 sur tous les autres modèles.
@@ -79,4 +80,4 @@ Ce modèle n'expose pas de paramètre `reasoning_effort`.
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClaudeNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `b0e262a9f0ee0a9c74fc8408b35c539cffde465c9448a5dcf99b8418671518c7`
+**Source fingerprint (SHA-256):** `28810aabb3563e6099e24fe4eed921999cf6863ee0bde246999961df7c51e6e9`

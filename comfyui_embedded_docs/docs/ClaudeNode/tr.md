@@ -64,6 +64,7 @@ Bu model bir `reasoning_effort` ayarı sunmaz.
 
 - **Görüntü sınırı:** İstek başına en fazla 20 görüntü sağlanabilir. 20'den fazla görüntü bağlanması hata oluşturur.
 - **İstem gerekli:** İstem en az bir boşluk dışı karakter içermelidir. Boş bir istem doğrulama hatası oluşturur.
+- **Prompt uzunluğu:** Prompt 500000 karakterle, `system_prompt` ise 100000 karakterle sınırlıdır; Haiku 4.5 üzerinde sınırlar 100000 ve 20000'dir.
 - **Sıcaklık işleme:** Düşünme etkinleştirildiğinde, Anthropic API'nin sıcaklık değerinin ayarlanmamış olmasını gerektirir (varsayılan olarak 1.0'dır). Opus 5.5, Opus 5, Opus 4.8, Fable 5.2, Fable 5.1, Fable 5, Sonnet 5.5 ve Sonnet 5 bir sıcaklık ayarı sunmaz. Opus 4.7 `temperature` değerini yok sayar ve `reasoning_effort` değeri `"off"` dışında bir şeye ayarlanmış herhangi bir model de bunu yok sayar.
 - **Akıl yürütme/düşünme davranışı:** `reasoning_effort` ayarı düşünmenin etkin olup olmadığını kontrol eder. Opus 5.5, Opus 5, Fable 5.2, Fable 5.1 ve Fable 5'te akıl yürütme her zaman etkindir. Haiku 4.5 akıl yürütmeyi desteklemez. Düşünme etkinleştirildiğinde düğüm uyarlamalı düşünmeyi kullanır; akıl yürütme bütçesini Anthropic istenen çabaya göre belirler. Sonnet 5.5'te `reasoning_effort` `"off"` olduğunda, istek devre dışı düşünme yerine `between_tools` düşünmesini kullanır, bu nedenle yanıt yine de akıl yürütme içermez.
 - **Maksimum token alt sınırı:** `max_tokens`, Opus 5.5 ve Sonnet 5.5'te 1024'ten, Fable 5.2'de 8192'den, diğer tüm modellerde 4096'dan başlayan değerleri kabul eder.
@@ -79,4 +80,4 @@ Bu model bir `reasoning_effort` ayarı sunmaz.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClaudeNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `b0e262a9f0ee0a9c74fc8408b35c539cffde465c9448a5dcf99b8418671518c7`
+**Source fingerprint (SHA-256):** `28810aabb3563e6099e24fe4eed921999cf6863ee0bde246999961df7c51e6e9`

@@ -64,6 +64,7 @@ Anthropic의 Claude 모델에서 텍스트 응답을 생성합니다. 텍스트 
 
 - **이미지 제한:** 요청당 최대 20개의 이미지를 제공할 수 있습니다. 20개를 초과하는 이미지를 연결하면 오류가 발생합니다.
 - **프롬프트 필수:** 프롬프트에는 공백이 아닌 문자가 하나 이상 포함되어야 합니다. 빈 프롬프트는 유효성 검사 오류를 발생시킵니다.
+- **프롬프트 길이:** 프롬프트는 500000자, `system_prompt`는 100000자로 제한됩니다. Haiku 4.5에서는 상한이 100000자와 20000자입니다.
 - **`temperature` 처리:** 사고(thinking)가 활성화되면 Anthropic API는 `temperature`를 설정하지 않아야 합니다(기본값 1.0). Opus 5.5, Opus 5, Opus 4.8, Fable 5.2, Fable 5.1, Fable 5, Sonnet 5.5 및 Sonnet 5는 `temperature` 설정을 노출하지 않습니다. Opus 4.7은 `temperature`를 무시하며, `reasoning_effort`가 `"off"` 이외의 값으로 설정된 모든 모델도 이를 무시합니다.
 - **추론/사고 동작:** `reasoning_effort` 설정은 사고(thinking) 활성화 여부를 제어합니다. Opus 5.5, Opus 5, Fable 5.2, Fable 5.1 및 Fable 5는 추론이 항상 활성화됩니다. Haiku 4.5는 추론을 지원하지 않습니다. 사고가 활성화되면 노드는 적응형 사고를 사용하며, Anthropic이 지정된 강도에 따라 추론 예산을 정합니다. Sonnet 5.5에서 `reasoning_effort`가 `"off"`이면 요청은 비활성화된 사고 대신 `between_tools` 사고를 사용하므로, 응답에는 여전히 추론이 포함되지 않습니다.
 - **`max_tokens` 최솟값:** `max_tokens`는 Opus 5.5 및 Sonnet 5.5에서 1024부터, Fable 5.2에서는 8192부터, 다른 모든 모델에서는 4096부터의 값을 허용합니다.
@@ -79,4 +80,4 @@ Anthropic의 Claude 모델에서 텍스트 응답을 생성합니다. 텍스트 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClaudeNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `b0e262a9f0ee0a9c74fc8408b35c539cffde465c9448a5dcf99b8418671518c7`
+**Source fingerprint (SHA-256):** `28810aabb3563e6099e24fe4eed921999cf6863ee0bde246999961df7c51e6e9`
