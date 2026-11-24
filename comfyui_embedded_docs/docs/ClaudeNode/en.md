@@ -64,6 +64,7 @@ This model does not expose a `reasoning_effort` setting.
 
 - **Image limit:** A maximum of 20 images can be provided per request. Connecting more than 20 images raises an error.
 - **Prompt required:** The prompt must contain at least one non-whitespace character. An empty prompt raises a validation error.
+- **Prompt length:** The prompt is limited to 500,000 characters and `system_prompt` to 100,000 characters; on Haiku 4.5 the limits are 100,000 and 20,000.
 - **Temperature handling:** When thinking is enabled, the Anthropic API requires temperature to be unset (it defaults to 1.0). Opus 5.5, Opus 5, Opus 4.8, Fable 5.2, Fable 5.1, Fable 5, Sonnet 5.5, and Sonnet 5 do not expose a temperature setting. Opus 4.7 ignores `temperature`, and any model with `reasoning_effort` set to anything other than `"off"` also ignores it.
 - **Reasoning/thinking behavior:** The `reasoning_effort` setting controls whether thinking is enabled. Opus 5.5, Opus 5, Fable 5.2, Fable 5.1, and Fable 5 always have reasoning enabled. Haiku 4.5 does not support reasoning. When thinking is enabled, the node uses adaptive thinking, so Anthropic chooses the reasoning budget for the requested effort. When `reasoning_effort` is `"off"` on Sonnet 5.5, the request uses `between_tools` thinking instead of disabled thinking, so the response still contains no reasoning.
 - **Max tokens minimum:** `max_tokens` accepts values from 1024 on Opus 5.5 and Sonnet 5.5, from 8192 on Fable 5.2, and from 4096 on every other model.
@@ -79,4 +80,4 @@ This model does not expose a `reasoning_effort` setting.
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClaudeNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `b0e262a9f0ee0a9c74fc8408b35c539cffde465c9448a5dcf99b8418671518c7`
+**Source fingerprint (SHA-256):** `28810aabb3563e6099e24fe4eed921999cf6863ee0bde246999961df7c51e6e9`

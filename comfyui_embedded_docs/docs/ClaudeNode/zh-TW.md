@@ -64,6 +64,7 @@
 
 - **圖片限制：** 每次請求最多可提供 20 張圖片。連接超過 20 張圖片會引發錯誤。
 - **提示詞必填：** `prompt` 必須包含至少一個非空白字元。空的 `prompt` 會引發驗證錯誤。
+- **提示詞長度：** 提示詞上限為 500,000 個字元，`system_prompt` 上限為 100,000 個字元；在 Haiku 4.5 上這兩個上限分別是 100,000 和 20,000。
 - **Temperature 處理：** 啟用思考時，Anthropic API 要求 `temperature` 必須未設定（預設為 1.0）。Opus 5.5、Opus 5、Opus 4.8、Fable 5.2、Fable 5.1、Fable 5、Sonnet 5.5 與 Sonnet 5 不會提供 `temperature` 設定。Opus 4.7 會忽略 `temperature`，而任何將 `reasoning_effort` 設為 `"off"` 以外值的模型也會忽略它。
 - **推理/思考行為：** `reasoning_effort` 設定會控制是否啟用思考。Opus 5.5、Opus 5、Fable 5.2、Fable 5.1 與 Fable 5 永遠啟用推理。Haiku 4.5 不支援推理。啟用思考時，節點會使用自適應思考模式，由 Anthropic 依要求的強度自行決定推理預算。當 Sonnet 5.5 的 `reasoning_effort` 為 `"off"` 時，請求會使用 `between_tools` 思考，而非停用思考，因此回應仍不包含推理。
 - **Max tokens 最小值：** `max_tokens` 在 Opus 5.5 與 Sonnet 5.5 上接受從 1024 起的值，在 Fable 5.2 上接受從 8192 起的值，而在其他每個模型上接受從 4096 起的值。
@@ -79,4 +80,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClaudeNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `b0e262a9f0ee0a9c74fc8408b35c539cffde465c9448a5dcf99b8418671518c7`
+**Source fingerprint (SHA-256):** `28810aabb3563e6099e24fe4eed921999cf6863ee0bde246999961df7c51e6e9`

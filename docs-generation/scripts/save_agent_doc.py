@@ -52,6 +52,9 @@ VALID_TYPES = {
     "MODEL", "MODEL_PATCH", "IMAGE", "MASK", "LATENT", "CONDITIONING", "CLIP", "VAE",
     "STRING", "INT", "FLOAT", "BOOLEAN", "COMBO", "DYNAMIC_COMBO", "AUDIO", "VIDEO",
     "BOUNDING_BOX", "FILE3D", "FILE3DGLB", "FILE3DFBX", "PROMPT", "EXTRA_PNGINFO",
+    # Other single-format 3D file handles (IO.File3DOBJ / File3DSTL / File3DUSDZ),
+    # e.g. the OBJ, STL and USDZ outputs of Meshy: Image to Relief.
+    "FILE3DOBJ", "FILE3DSTL", "FILE3DUSDZ",
     "WEBCAM", "GUIDER", "SAMPLER", "SIGMAS", "NOISE", "ANY", "PK_HOOK", "MESH",
     "AUTO_TRIGGER", "IC_LORA_PARAMETERS", "MODEL_TASK_ID", "IMAGE_TASK_ID",
     # Optical flow model handle (io.Custom("OPTICAL_FLOW")) shared by the Optical

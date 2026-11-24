@@ -64,6 +64,7 @@ Anthropic の Claude モデルからテキスト応答を生成します。テ�
 
 - **画像の上限:** 1 回のリクエストにつき最大 20 枚の画像を指定できます。20 枚を超える画像を接続するとエラーになります。
 - **プロンプト必須:** プロンプトには少なくとも 1 つの空白以外の文字が含まれている必要があります。空のプロンプトは検証エラーになります。
+- **プロンプトの長さ:** プロンプトは 500000 文字、`system_prompt` は 100000 文字までに制限されます。Haiku 4.5 では上限が 100000 文字と 20000 文字になります。
 - **temperature の扱い:** thinking が有効な場合、Anthropic API では temperature を未設定にする必要があります（デフォルトは 1.0）。Opus 5.5、Opus 5、Opus 4.8、Fable 5.2、Fable 5.1、Fable 5、Sonnet 5.5、Sonnet 5 は temperature 設定を公開していません。Opus 4.7 は `temperature` を無視し、`reasoning_effort` が `"off"` 以外に設定されている任意のモデルも同様に無視します。
 - **推論/thinking の動作:** `reasoning_effort` 設定は thinking を有効にするかどうかを制御します。Opus 5.5、Opus 5、Fable 5.2、Fable 5.1、Fable 5 では推論が常に有効です。Haiku 4.5 は推論をサポートしていません。thinking が有効な場合、ノードは adaptive thinking を使用し、Anthropic が指定した強度に応じて推論予算を決めます。Sonnet 5.5 で `reasoning_effort` が `"off"` の場合、リクエストは disabled thinking ではなく `between_tools` thinking を使用するため、応答に推論は含まれません。
 - **max_tokens の最小値:** `max_tokens` は Opus 5.5 と Sonnet 5.5 では 1024 以上、Fable 5.2 では 8192 以上、その他のすべてのモデルでは 4096 以上の値を受け付けます。
@@ -79,4 +80,4 @@ Anthropic の Claude モデルからテキスト応答を生成します。テ�
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClaudeNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `b0e262a9f0ee0a9c74fc8408b35c539cffde465c9448a5dcf99b8418671518c7`
+**Source fingerprint (SHA-256):** `28810aabb3563e6099e24fe4eed921999cf6863ee0bde246999961df7c51e6e9`

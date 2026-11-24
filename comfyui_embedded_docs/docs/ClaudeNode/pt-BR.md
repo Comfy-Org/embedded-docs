@@ -64,6 +64,7 @@ Este modelo não expõe uma configuração `reasoning_effort`.
 
 - **Limite de imagens:** No máximo 20 imagens podem ser fornecidas por requisição. Conectar mais de 20 imagens gera um erro.
 - **Prompt obrigatório:** O prompt deve conter pelo menos um caractere que não seja espaço em branco. Um prompt vazio gera um erro de validação.
+- **Comprimento do prompt:** O prompt é limitado a 500000 caracteres e `system_prompt` a 100000 caracteres; no Haiku 4.5 os limites são 100000 e 20000.
 - **Tratamento da temperatura:** Quando o pensamento está habilitado, a API da Anthropic exige que a temperatura não seja definida (o padrão é 1.0). Opus 5.5, Opus 5, Opus 4.8, Fable 5.2, Fable 5.1, Fable 5, Sonnet 5.5 e Sonnet 5 não expõem uma configuração de temperatura. Opus 4.7 ignora `temperature`, e qualquer modelo com `reasoning_effort` definido como algo diferente de `"off"` também a ignora.
 - **Comportamento de raciocínio/pensamento:** A configuração `reasoning_effort` controla se o pensamento está habilitado. Opus 5.5, Opus 5, Fable 5.2, Fable 5.1 e Fable 5 sempre têm o raciocínio habilitado. Haiku 4.5 não suporta raciocínio. Quando o pensamento está habilitado, o nó usa pensamento adaptativo, então a Anthropic escolhe o orçamento de raciocínio conforme o esforço solicitado. Quando `reasoning_effort` é `"off"` no Sonnet 5.5, a requisição usa o pensamento `between_tools` em vez do pensamento desabilitado, então a resposta ainda não contém raciocínio.
 - **Mínimo de max tokens:** `max_tokens` aceita valores a partir de 1024 no Opus 5.5 e Sonnet 5.5, a partir de 8192 no Fable 5.2 e a partir de 4096 em todos os outros modelos.
@@ -79,4 +80,4 @@ Este modelo não expõe uma configuração `reasoning_effort`.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ClaudeNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `b0e262a9f0ee0a9c74fc8408b35c539cffde465c9448a5dcf99b8418671518c7`
+**Source fingerprint (SHA-256):** `28810aabb3563e6099e24fe4eed921999cf6863ee0bde246999961df7c51e6e9`
