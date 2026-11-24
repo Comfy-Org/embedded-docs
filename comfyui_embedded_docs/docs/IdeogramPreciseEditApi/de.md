@@ -51,4 +51,4 @@ Die Auswahl eines `model` bestimmt, welche Eingaben erscheinen. Beide Modelle be
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramPreciseEditApi/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `84f042739a8d7bc1a4b268f6175be6a598b67d32b9311fdf204a923472f5fcc9`
+**Source fingerprint (SHA-256):** `9218070f5e55b3bd8da0701d4b4ea969cb7b1c2ebfc06669a523e64ce4bcf342`

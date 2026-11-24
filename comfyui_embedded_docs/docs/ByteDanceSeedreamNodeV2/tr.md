@@ -74,4 +74,4 @@ Bu düğüm, ByteDance'in Seedream modellerini (4.0, 4.5, 5.0 Lite ve 5.0 Pro s�
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV2/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `f1a84171d94c602ec5417e43857ddf511ab1e54caa089b1928f740d3a38423f8`
+**Source fingerprint (SHA-256):** `f3b88c5a4251787be5f2679b7f2668d2d89f549895a1d3cead95601e8b854c24`
