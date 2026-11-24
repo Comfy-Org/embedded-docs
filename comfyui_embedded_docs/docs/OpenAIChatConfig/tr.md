@@ -2,6 +2,8 @@
 
 OpenAIChatConfig düğümü, OpenAI Chat Düğümü'nün yanıtları nasıl ürettiğini kontrol eden gelişmiş seçenekleri tanımlar. Kırpma stratejisini ayarlamanıza, çıktı tokenlarının sayısını sınırlamanıza, özel yönergeler sağlamanıza ve modelin yanıtlamadan önce ne kadar akıl yürütme çabası uygulayacağını seçmenize olanak tanır.
 
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
+
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
@@ -22,4 +24,4 @@ Not: `top_p` ve `temperature` API belirtiminde özellik olarak listelense de tü
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d282083de3568490e78763688ab01a32bc29759f590544ebce727e31c13b97a0`
+**Source fingerprint (SHA-256):** `ddb2821b1ca54d6a3a701f93c9845e2f08268ab004c8368b98227b408813a7e6`

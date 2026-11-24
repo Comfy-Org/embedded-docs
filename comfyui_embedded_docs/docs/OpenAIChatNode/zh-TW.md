@@ -2,13 +2,15 @@
 
 此節點會從 OpenAI 模型產生文字回應。它會將您的文字提示，以及可選的圖像或檔案，傳送給 OpenAI 模型，並傳回產生的文字回應。
 
+**注意：** 此節點在原始碼中標記為已棄用。
+
 ## 輸入
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | 提供給模型的文字輸入，用於產生回應（預設：空字串）。 | STRING | 是 | - |
 | `persist_context` | 此參數已棄用且沒有任何作用（預設：False）。 | BOOLEAN | 是 | - |
-| `model` | 用於產生回應的模型（預設：`gpt-5`） | COMBO | 是 | `gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
+| `model` | 用於產生回應的模型（預設：`gpt-6.2-sol`） | COMBO | 是 | `gpt-6.2-astra`<br>`gpt-6.2-sol`<br>`gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
 | `images` | 可選的圖像，用作模型的上下文。若要包含多張圖像，可以使用 Batch Images 節點。 | IMAGE | 否 | - |
 | `files` | 可選的檔案，用作模型的上下文。接受來自 OpenAI Chat Input Files 節點的輸入。 | OPENAI_INPUT_FILES | 否 | - |
 | `advanced_options` | 模型的選用設定。接受來自 OpenAI Chat Advanced Options 節點的輸入。 | OPENAI_CHAT_CONFIG | 否 | - |
@@ -24,4 +26,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `0a4f23acbe136b6137e163b9b2dce49c93746800ac2a42a29602ee4011a2db72`
+**Source fingerprint (SHA-256):** `02d2de048ffd84bc56db2effa155ad5fef3e00cbd71f7b5850f6947247565cbe`

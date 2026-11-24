@@ -2,13 +2,15 @@
 
 Questo nodo genera risposte testuali da un modello OpenAI. Invia il tuo prompt di testo, e opzionalmente immagini o file, a un modello OpenAI e restituisce la risposta testuale generata.
 
+**Nota:** questo nodo è contrassegnato come deprecato nel codice sorgente.
+
 ## Input
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `prompt` | Input testuali per il modello, utilizzati per generare una risposta (predefinito: stringa vuota). | STRING | Sì | - |
 | `mantieni_contesto` | Questo parametro è deprecato e non ha alcun effetto (predefinito: False). | BOOLEAN | Sì | - |
-| `modello` | Il modello utilizzato per generare la risposta (predefinito: `gpt-5`) | COMBO | Sì | `gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
+| `modello` | Il modello utilizzato per generare la risposta (predefinito: `gpt-6.2-sol`) | COMBO | Sì | `gpt-6.2-astra`<br>`gpt-6.2-sol`<br>`gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
 | `immagini` | Immagini opzionali da usare come contesto per il modello. Per includere più immagini, puoi usare il nodo Batch Images. | IMAGE | No | - |
 | `file` | File opzionali da usare come contesto per il modello. Accetta input dal nodo OpenAI Chat Input Files. | OPENAI_INPUT_FILES | No | - |
 | `opzioni_avanzate` | Configurazione opzionale per il modello. Accetta input dal nodo OpenAI Chat Advanced Options. | OPENAI_CHAT_CONFIG | No | - |
@@ -24,4 +26,4 @@ Nota: quando viene collegata una configurazione `advanced_options` che imposta u
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatNode/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `0a4f23acbe136b6137e163b9b2dce49c93746800ac2a42a29602ee4011a2db72`
+**Source fingerprint (SHA-256):** `02d2de048ffd84bc56db2effa155ad5fef3e00cbd71f7b5850f6947247565cbe`

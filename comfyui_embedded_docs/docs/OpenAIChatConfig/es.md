@@ -2,6 +2,8 @@
 
 El nodo OpenAIChatConfig define opciones avanzadas que controlan cómo el nodo OpenAI Chat genera respuestas. Permite establecer la estrategia de truncamiento, limitar la cantidad de tokens de salida, proporcionar instrucciones personalizadas y elegir cuánto esfuerzo de razonamiento debe aplicar el modelo antes de responder.
 
+**Nota:** Este nodo está marcado como obsoleto en el código fuente.
+
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
@@ -22,4 +24,4 @@ Nota: Aunque `top_p` y `temperature` se enumeran como propiedades en la especifi
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `d282083de3568490e78763688ab01a32bc29759f590544ebce727e31c13b97a0`
+**Source fingerprint (SHA-256):** `ddb2821b1ca54d6a3a701f93c9845e2f08268ab004c8368b98227b408813a7e6`

@@ -2,13 +2,15 @@
 
 Bu düğüm, bir OpenAI modelinden metin yanıtları üretir. Metin isteminizi ve isteğe bağlı olarak görselleri veya dosyaları bir OpenAI modeline gönderir ve üretilen metin yanıtını döndürür.
 
+**Not:** Bu düğüm kaynak kodda kullanımdan kaldırılmış olarak işaretlenmiştir.
+
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `komut` | Modele gönderilen ve bir yanıt oluşturmak için kullanılan metin girdileri (varsayılan: boş dize). | STRING | Evet | - |
 | `bağlamı_sürdür` | Bu parametre kullanımdan kaldırılmıştır ve hiçbir etkisi yoktur (varsayılan: False). | BOOLEAN | Evet | - |
-| `model` | Yanıtı oluşturmak için kullanılan model (varsayılan: `gpt-5`) | COMBO | Evet | `gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
+| `model` | Yanıtı oluşturmak için kullanılan model (varsayılan: `gpt-6.2-sol`) | COMBO | Evet | `gpt-6.2-astra`<br>`gpt-6.2-sol`<br>`gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
 | `görseller` | Model için bağlam olarak kullanılacak isteğe bağlı görsel(ler). Birden fazla görsel eklemek için Batch Images düğümünü kullanabilirsiniz. | IMAGE | Hayır | - |
 | `dosyalar` | Model için bağlam olarak kullanılacak isteğe bağlı dosya(lar). OpenAI Chat Input Files düğümünden girdileri kabul eder. | OPENAI_INPUT_FILES | Hayır | - |
 | `gelişmiş_seçenekler` | Model için isteğe bağlı yapılandırma. OpenAI Chat Advanced Options düğümünden girdileri kabul eder. | OPENAI_CHAT_CONFIG | Hayır | - |
@@ -24,4 +26,4 @@ Not: Bir akıl yürütme eforu ayarlayan bir `advanced_options` yapılandırmas�
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `0a4f23acbe136b6137e163b9b2dce49c93746800ac2a42a29602ee4011a2db72`
+**Source fingerprint (SHA-256):** `02d2de048ffd84bc56db2effa155ad5fef3e00cbd71f7b5850f6947247565cbe`

@@ -2,13 +2,15 @@
 
 このノードは、OpenAI モデルからテキスト応答を生成します。テキストプロンプト、およびオプションで画像やファイルを OpenAI モデルに送信し、生成されたテキスト応答を返します。
 
+**注：** このノードはソースコード上で非推奨としてマークされています。
+
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
 | `プロンプト` | モデルへのテキスト入力。応答を生成するために使用されます（デフォルト：空文字列）。 | STRING | はい | - |
 | `コンテキストの永続化` | このパラメータは非推奨であり、効果はありません（デフォルト：False）。 | BOOLEAN | はい | - |
-| `モデル` | 応答の生成に使用するモデル（デフォルト：`gpt-5`） | COMBO | はい | `gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
+| `モデル` | 応答の生成に使用するモデル（デフォルト：`gpt-6.2-sol`） | COMBO | はい | `gpt-6.2-astra`<br>`gpt-6.2-sol`<br>`gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
 | `画像` | モデルのコンテキストとして使用する省略可能な画像。複数の画像を含めるには、Batch Images ノードを使用できます。 | IMAGE | いいえ | - |
 | `ファイル` | モデルのコンテキストとして使用する省略可能なファイル。OpenAI Chat Input Files ノードからの入力を受け付けます。 | OPENAI_INPUT_FILES | いいえ | - |
 | `詳細オプション` | モデルの省略可能な設定。OpenAI Chat Advanced Options ノードからの入力を受け付けます。 | OPENAI_CHAT_CONFIG | いいえ | - |
@@ -24,4 +26,4 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `0a4f23acbe136b6137e163b9b2dce49c93746800ac2a42a29602ee4011a2db72`
+**Source fingerprint (SHA-256):** `02d2de048ffd84bc56db2effa155ad5fef3e00cbd71f7b5850f6947247565cbe`

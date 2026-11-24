@@ -2,6 +2,8 @@
 
 Der OpenAIChatConfig-Node definiert erweiterte Optionen, die steuern, wie der OpenAI Chat Node Antworten generiert. Er ermöglicht es Ihnen, die Kürzungsstrategie festzulegen, die Anzahl der Ausgabe-Tokens zu begrenzen, benutzerdefinierte Anweisungen bereitzustellen und auszuwählen, wie viel Reasoning-Aufwand das Modell vor der Antwort betreiben soll.
 
+**Hinweis:** Dieser Node ist im Quellcode als veraltet markiert.
+
 ## Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
@@ -22,4 +24,4 @@ Hinweis: Obwohl `top_p` und `temperature` in der API-Spezifikation als Eigenscha
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `d282083de3568490e78763688ab01a32bc29759f590544ebce727e31c13b97a0`
+**Source fingerprint (SHA-256):** `ddb2821b1ca54d6a3a701f93c9845e2f08268ab004c8368b98227b408813a7e6`

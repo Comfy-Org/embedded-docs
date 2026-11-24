@@ -2,6 +2,8 @@
 
 OpenAIChatConfig 節點定義進階選項，用於控制 OpenAI Chat 節點如何產生回應。它可讓您設定截斷策略、限制輸出 token 數量、提供自訂指示，以及選擇模型在回答前應投入多少推理。
 
+**注意：** 此節點在原始碼中標記為已棄用。
+
 ## 輸入
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
@@ -22,4 +24,4 @@ OpenAIChatConfig 節點定義進階選項，用於控制 OpenAI Chat 節點如�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `d282083de3568490e78763688ab01a32bc29759f590544ebce727e31c13b97a0`
+**Source fingerprint (SHA-256):** `ddb2821b1ca54d6a3a701f93c9845e2f08268ab004c8368b98227b408813a7e6`

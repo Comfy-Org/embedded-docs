@@ -2,13 +2,15 @@
 
 Dieser Node generiert Textantworten von einem OpenAI-Modell. Er sendet Ihren Text-Prompt und optional Bilder oder Dateien an ein OpenAI-Modell und gibt die generierte Textantwort zurück.
 
+**Hinweis:** Dieser Node ist im Quellcode als veraltet markiert.
+
 ## Eingaben
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Texteingaben für das Modell, die zur Generierung einer Antwort verwendet werden (Standard: leerer String). | STRING | Ja | - |
 | `persist_context` | Dieser Parameter ist veraltet und hat keine Auswirkung (Standard: False). | BOOLEAN | Ja | - |
-| `model` | Das Modell, das zur Generierung der Antwort verwendet wird (Standard: `gpt-5`) | COMBO | Ja | `gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
+| `model` | Das Modell, das zur Generierung der Antwort verwendet wird (Standard: `gpt-6.2-sol`) | COMBO | Ja | `gpt-6.2-astra`<br>`gpt-6.2-sol`<br>`gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
 | `images` | Optionales Bild oder optionale Bilder, die als Kontext für das Modell verwendet werden. Um mehrere Bilder einzubinden, können Sie den Node „Batch Images“ verwenden. | IMAGE | Nein | - |
 | `files` | Optionale Datei oder optionale Dateien, die als Kontext für das Modell verwendet werden. Akzeptiert Eingaben vom Node „OpenAI Chat Input Files“. | OPENAI_INPUT_FILES | Nein | - |
 | `advanced_options` | Optionale Konfiguration für das Modell. Akzeptiert Eingaben vom Node „OpenAI Chat Advanced Options“. | OPENAI_CHAT_CONFIG | Nein | - |
@@ -24,4 +26,4 @@ Hinweis: Wenn eine `advanced_options`-Konfiguration verbunden ist, die einen Rea
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `0a4f23acbe136b6137e163b9b2dce49c93746800ac2a42a29602ee4011a2db72`
+**Source fingerprint (SHA-256):** `02d2de048ffd84bc56db2effa155ad5fef3e00cbd71f7b5850f6947247565cbe`

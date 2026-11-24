@@ -2,6 +2,8 @@
 
 OpenAIChatConfig 노드는 OpenAI Chat 노드가 응답을 생성하는 방식을 제어하는 고급 옵션을 정의합니다. 이를 통해 잘림 전략을 설정하고, 출력 토큰 수를 제한하며, 사용자 지정 지침을 제공하고, 모델이 답변하기 전에 적용할 추론 노력 수준을 선택할 수 있습니다.
 
+**참고:** 이 노드는 소스 코드에서 사용 중단(deprecated)으로 표시되어 있습니다.
+
 ## 입력
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
@@ -22,4 +24,4 @@ OpenAIChatConfig 노드는 OpenAI Chat 노드가 응답을 생성하는 방식�
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `d282083de3568490e78763688ab01a32bc29759f590544ebce727e31c13b97a0`
+**Source fingerprint (SHA-256):** `ddb2821b1ca54d6a3a701f93c9845e2f08268ab004c8368b98227b408813a7e6`
