@@ -2,6 +2,8 @@
 
 The OpenAIChatConfig node defines advanced options that control how the OpenAI Chat Node generates responses. It lets you set the truncation strategy, limit the number of output tokens, provide custom instructions, and choose how much reasoning effort the model should apply before answering.
 
+**Note:** This node is marked as deprecated in the source code.
+
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
@@ -24,5 +26,5 @@ Note: While `top_p` and `temperature` are listed as properties in the API specif
 
 
 ---
-**Source fingerprint (SHA-256):** `d282083de3568490e78763688ab01a32bc29759f590544ebce727e31c13b97a0`
+**Source fingerprint (SHA-256):** `ddb2821b1ca54d6a3a701f93c9845e2f08268ab004c8368b98227b408813a7e6`
 

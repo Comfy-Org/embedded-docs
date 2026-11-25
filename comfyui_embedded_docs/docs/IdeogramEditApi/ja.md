@@ -52,4 +52,4 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramEditApi/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `58c189d65502373ff7b56f5f32d9f2e7ee8019fc58f1bbbb80abc859cf978f67`
+**Source fingerprint (SHA-256):** `5816278e93aae381dcf602c968ba78b49524072ccee52ff1685c42098d6344b2`

@@ -2,6 +2,8 @@
 
 OpenAIChatConfig ノードは、OpenAI Chat ノードが応答を生成する方法を制御する詳細オプションを定義します。切り詰め戦略の設定、出力トークン数の上限、カスタム指示の提供、回答前にモデルが適用する推論エフォートの量の選択ができます。
 
+**注：** このノードはソースコード上で非推奨としてマークされています。
+
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
@@ -22,4 +24,4 @@ OpenAIChatConfig ノードは、OpenAI Chat ノードが応答を生成する方
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `d282083de3568490e78763688ab01a32bc29759f590544ebce727e31c13b97a0`
+**Source fingerprint (SHA-256):** `ddb2821b1ca54d6a3a701f93c9845e2f08268ab004c8368b98227b408813a7e6`

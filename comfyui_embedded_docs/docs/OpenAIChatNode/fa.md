@@ -2,13 +2,15 @@
 
 این گره پاسخ‌های متنی را از یک مدل OpenAI تولید می‌کند. متن درخواست شما و به‌صورت اختیاری تصاویر یا فایل‌ها را به یک مدل OpenAI می‌فرستد و پاسخ متنی تولیدشده را بازمی‌گرداند.
 
+**نکته:** این گره در کد منبع به‌عنوان منسوخ‌شده علامت‌گذاری شده است.
+
 ## ورودی‌ها
 
 | پارامتر | توضیحات | نوع داده | الزامی | محدوده |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | ورودی‌های متنی برای مدل که برای تولید پاسخ استفاده می‌شوند (پیش‌فرض: رشته خالی). | STRING | بله | - |
 | `persist_context` | این پارامتر منسوخ شده است و هیچ تأثیری ندارد (پیش‌فرض: False). | BOOLEAN | بله | - |
-| `model` | مدلی که برای تولید پاسخ استفاده می‌شود (پیش‌فرض: `gpt-5`) | COMBO | بله | `gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
+| `model` | مدلی که برای تولید پاسخ استفاده می‌شود (پیش‌فرض: `gpt-6.2-sol`) | COMBO | بله | `gpt-6.2-astra`<br>`gpt-6.2-sol`<br>`gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
 | `images` | تصویر(های) اختیاری برای استفاده به‌عنوان زمینه برای مدل. برای گنجاندن چندین تصویر، می‌توانید از گره Batch Images استفاده کنید. | IMAGE | خیر | - |
 | `files` | فایل(های) اختیاری برای استفاده به‌عنوان زمینه برای مدل. ورودی‌هایی را از گره OpenAI Chat Input Files می‌پذیرد. | OPENAI_INPUT_FILES | خیر | - |
 | `advanced_options` | پیکربندی اختیاری برای مدل. ورودی‌هایی را از گره OpenAI Chat Advanced Options می‌پذیرد. | OPENAI_CHAT_CONFIG | خیر | - |
@@ -24,4 +26,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `0a4f23acbe136b6137e163b9b2dce49c93746800ac2a42a29602ee4011a2db72`
+**Source fingerprint (SHA-256):** `02d2de048ffd84bc56db2effa155ad5fef3e00cbd71f7b5850f6947247565cbe`

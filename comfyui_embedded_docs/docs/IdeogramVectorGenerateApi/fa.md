@@ -29,4 +29,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramVectorGenerateApi/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `5bd24ad48d6c26daf43f84544a9c22a18961dea645799104591f3785a851f819`
+**Source fingerprint (SHA-256):** `1dd115b3cd2f9554792b004b7fd5666c2fa08dbaeb664baab2b5c65a5e733599`

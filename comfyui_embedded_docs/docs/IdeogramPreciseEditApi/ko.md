@@ -51,4 +51,4 @@ Ideogram 4.6 또는 4.5 정밀 편집으로 텍스트 프롬프트의 안내를 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramPreciseEditApi/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `84f042739a8d7bc1a4b268f6175be6a598b67d32b9311fdf204a923472f5fcc9`
+**Source fingerprint (SHA-256):** `9218070f5e55b3bd8da0701d4b4ea969cb7b1c2ebfc06669a523e64ce4bcf342`

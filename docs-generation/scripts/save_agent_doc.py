@@ -93,6 +93,9 @@ VALID_TYPES = {
     # Camera info handle (IO.Load3DCamera.Input, io_type LOAD3D_CAMERA),
     # e.g. the optional `camera_info` of MiniMax H3 Max Camera Control.
     "LOAD3D_CAMERA",
+    # File handle emitted by OpenAI ChatGPT Input Files (IO.Custom("OPENAI_INPUT_FILES")),
+    # consumed by the `files` input of the OpenAI ChatGPT nodes.
+    "OPENAI_INPUT_FILES",
 }
 
 ROW_RE = re.compile(r"^\|")

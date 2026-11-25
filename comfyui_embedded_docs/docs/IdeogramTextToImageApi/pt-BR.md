@@ -50,4 +50,4 @@ Selecionar um `model` determina quais entradas aparecem. O Ideogram 4.6 adiciona
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramTextToImageApi/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `a21f1faed9ca7a7bc63dae74003cc7599f11013075f718af9e5860d2cd666828`
+**Source fingerprint (SHA-256):** `953fee48c0337e6ded4e72332c27279496eeb9c108c0700c2fa14095855047f1`

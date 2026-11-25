@@ -50,4 +50,4 @@ Ideogram 4.6 또는 4.5를 사용하여 텍스트 프롬프트로 이미지를 �
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramTextToImageApi/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `a21f1faed9ca7a7bc63dae74003cc7599f11013075f718af9e5860d2cd666828`
+**Source fingerprint (SHA-256):** `953fee48c0337e6ded4e72332c27279496eeb9c108c0700c2fa14095855047f1`

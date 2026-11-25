@@ -74,4 +74,4 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV2/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `f1a84171d94c602ec5417e43857ddf511ab1e54caa089b1928f740d3a38423f8`
+**Source fingerprint (SHA-256):** `f3b88c5a4251787be5f2679b7f2668d2d89f549895a1d3cead95601e8b854c24`

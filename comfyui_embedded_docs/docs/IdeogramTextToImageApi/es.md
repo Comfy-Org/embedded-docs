@@ -50,4 +50,4 @@ Seleccionar un `model` determina qué entradas aparecen. Ideogram 4.6 agrega `ba
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramTextToImageApi/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `a21f1faed9ca7a7bc63dae74003cc7599f11013075f718af9e5860d2cd666828`
+**Source fingerprint (SHA-256):** `953fee48c0337e6ded4e72332c27279496eeb9c108c0700c2fa14095855047f1`

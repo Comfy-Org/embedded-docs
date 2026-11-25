@@ -29,4 +29,4 @@ Ce nœud génère un SVG modifiable à partir d'un prompt textuel avec Ideogram 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramVectorGenerateApi/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `5bd24ad48d6c26daf43f84544a9c22a18961dea645799104591f3785a851f819`
+**Source fingerprint (SHA-256):** `1dd115b3cd2f9554792b004b7fd5666c2fa08dbaeb664baab2b5c65a5e733599`

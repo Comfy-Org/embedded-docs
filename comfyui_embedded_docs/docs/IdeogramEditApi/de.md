@@ -52,4 +52,4 @@ Die Auswahl von `model` bestimmt, welche Eingaben angezeigt werden. Ideogram 4.6
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramEditApi/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `58c189d65502373ff7b56f5f32d9f2e7ee8019fc58f1bbbb80abc859cf978f67`
+**Source fingerprint (SHA-256):** `5816278e93aae381dcf602c968ba78b49524072ccee52ff1685c42098d6344b2`

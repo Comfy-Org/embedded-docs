@@ -2,13 +2,15 @@
 
 تولّد هذه العقدة ردودًا نصية من نموذج OpenAI. ترسل المطالبة النصية الخاصة بك، ومعها اختياريًا صور أو ملفات، إلى نموذج OpenAI وتعيد الرد النصي المُولَّد.
 
+**ملاحظة:** تم وضع علامة على هذه العقدة على أنها مهملة في الكود المصدري.
+
 ## المدخلات
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | مدخلات نصية إلى النموذج، تُستخدم لتوليد رد (القيمة الافتراضية: سلسلة نصية فارغة). | STRING | نعم | - |
 | `persist_context` | هذا المعامل مهمل وليس له تأثير (القيمة الافتراضية: `False`). | BOOLEAN | نعم | - |
-| `model` | النموذج المستخدم لتوليد الرد (القيمة الافتراضية: `gpt-5`) | COMBO | نعم | `gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
+| `model` | النموذج المستخدم لتوليد الرد (القيمة الافتراضية: `gpt-6.2-sol`) | COMBO | نعم | `gpt-6.2-astra`<br>`gpt-6.2-sol`<br>`gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
 | `images` | صورة/صور اختيارية تُستخدم كسياق للنموذج. لتضمين صور متعددة، يمكنك استخدام عقدة Batch Images. | IMAGE | لا | - |
 | `files` | ملف/ملفات اختيارية تُستخدم كسياق للنموذج. تقبل مدخلات من عقدة OpenAI Chat Input Files. | OPENAI_INPUT_FILES | لا | - |
 | `advanced_options` | إعدادات اختيارية للنموذج. تقبل مدخلات من عقدة OpenAI Chat Advanced Options. | OPENAI_CHAT_CONFIG | لا | - |
@@ -24,4 +26,4 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `0a4f23acbe136b6137e163b9b2dce49c93746800ac2a42a29602ee4011a2db72`
+**Source fingerprint (SHA-256):** `02d2de048ffd84bc56db2effa155ad5fef3e00cbd71f7b5850f6947247565cbe`

@@ -2,13 +2,15 @@
 
 이 노드는 OpenAI 모델로부터 텍스트 응답을 생성합니다. 텍스트 프롬프트와 선택적으로 이미지 또는 파일을 OpenAI 모델로 전송하고 생성된 텍스트 응답을 반환합니다.
 
+**참고:** 이 노드는 소스 코드에서 사용 중단(deprecated)으로 표시되어 있습니다.
+
 ## 입력
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
 | `프롬프트` | 모델에 대한 텍스트 입력으로, 응답을 생성하는 데 사용됩니다(기본값: 빈 문자열). | STRING | 예 | - |
 | `컨텍스트 유지` | 이 매개변수는 더 이상 사용되지 않으며 아무 효과가 없습니다(기본값: False). | BOOLEAN | 예 | - |
-| `모델` | 응답을 생성하는 데 사용되는 모델입니다(기본값: `gpt-5`). | COMBO | 예 | `gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
+| `모델` | 응답을 생성하는 데 사용되는 모델입니다(기본값: `gpt-6.2-sol`). | COMBO | 예 | `gpt-6.2-astra`<br>`gpt-6.2-sol`<br>`gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
 | `이미지` | 모델의 컨텍스트로 사용할 선택적 이미지입니다. 여러 이미지를 포함하려면 Batch Images 노드를 사용할 수 있습니다. | IMAGE | 아니요 | - |
 | `파일` | 모델의 컨텍스트로 사용할 선택적 파일입니다. OpenAI Chat Input Files 노드의 입력을 받습니다. | OPENAI_INPUT_FILES | 아니요 | - |
 | `고급 옵션` | 모델에 대한 선택적 구성입니다. OpenAI Chat Advanced Options 노드의 입력을 받습니다. | OPENAI_CHAT_CONFIG | 아니요 | - |
@@ -24,4 +26,4 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `0a4f23acbe136b6137e163b9b2dce49c93746800ac2a42a29602ee4011a2db72`
+**Source fingerprint (SHA-256):** `02d2de048ffd84bc56db2effa155ad5fef3e00cbd71f7b5850f6947247565cbe`

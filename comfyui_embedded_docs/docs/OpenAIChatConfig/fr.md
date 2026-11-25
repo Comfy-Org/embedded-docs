@@ -2,6 +2,8 @@
 
 Le nœud OpenAIChatConfig définit des options avancées qui contrôlent la manière dont le nœud OpenAI Chat génère les réponses. Il vous permet de définir la stratégie de troncature, de limiter le nombre de tokens de sortie, de fournir des instructions personnalisées et de choisir le niveau d'effort de raisonnement que le modèle doit appliquer avant de répondre.
 
+**Remarque :** Ce nœud est marqué comme obsolète dans le code source.
+
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
@@ -22,4 +24,4 @@ Remarque : bien que `top_p` et `temperature` soient répertoriés comme proprié
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d282083de3568490e78763688ab01a32bc29759f590544ebce727e31c13b97a0`
+**Source fingerprint (SHA-256):** `ddb2821b1ca54d6a3a701f93c9845e2f08268ab004c8368b98227b408813a7e6`

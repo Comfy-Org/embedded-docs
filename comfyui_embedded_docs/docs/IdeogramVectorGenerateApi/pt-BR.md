@@ -29,4 +29,4 @@ Este nó gera um SVG editável a partir de um prompt de texto com o Ideogram Vec
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramVectorGenerateApi/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `5bd24ad48d6c26daf43f84544a9c22a18961dea645799104591f3785a851f819`
+**Source fingerprint (SHA-256):** `1dd115b3cd2f9554792b004b7fd5666c2fa08dbaeb664baab2b5c65a5e733599`

@@ -51,4 +51,4 @@ Seleccionar un `model` determina qué entradas aparecen. Ambos modelos editan un
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramPreciseEditApi/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `84f042739a8d7bc1a4b268f6175be6a598b67d32b9311fdf204a923472f5fcc9`
+**Source fingerprint (SHA-256):** `9218070f5e55b3bd8da0701d4b4ea969cb7b1c2ebfc06669a523e64ce4bcf342`

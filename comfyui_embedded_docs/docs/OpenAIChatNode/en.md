@@ -2,13 +2,15 @@
 
 This node generates text responses from an OpenAI model. It sends your text prompt, and optionally images or files, to an OpenAI model and returns the generated text response.
 
+**Note:** This node is marked as deprecated in the source code.
+
 ## Inputs
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Text inputs to the model, used to generate a response (default: empty string). | STRING | Yes | - |
 | `persist_context` | This parameter is deprecated and has no effect (default: False). | BOOLEAN | Yes | - |
-| `model` | The model used to generate the response (default: `gpt-5`) | COMBO | Yes | `gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
+| `model` | The model used to generate the response (default: `gpt-6.2-sol`) | COMBO | Yes | `gpt-6.2-astra`<br>`gpt-6.2-sol`<br>`gpt-6-astra`<br>`gpt-6.1-sol`<br>`gpt-6.1-terra`<br>`gpt-6-sol`<br>`gpt-6-luna`<br>`gpt-5.6-sol`<br>`gpt-5.6-terra`<br>`gpt-5.6-luna`<br>`gpt-5.5-pro`<br>`gpt-5.5`<br>`gpt-5`<br>`gpt-5-mini`<br>`gpt-5-nano`<br>`gpt-4.1`<br>`gpt-4.1-mini`<br>`o3` |
 | `images` | Optional image(s) to use as context for the model. To include multiple images, you can use the Batch Images node. | IMAGE | No | - |
 | `files` | Optional file(s) to use as context for the model. Accepts inputs from the OpenAI Chat Input Files node. | OPENAI_INPUT_FILES | No | - |
 | `advanced_options` | Optional configuration for the model. Accepts inputs from the OpenAI Chat Advanced Options node. | OPENAI_CHAT_CONFIG | No | - |
@@ -26,5 +28,5 @@ Note: When an `advanced_options` configuration that sets a reasoning effort is c
 
 
 ---
-**Source fingerprint (SHA-256):** `0a4f23acbe136b6137e163b9b2dce49c93746800ac2a42a29602ee4011a2db72`
+**Source fingerprint (SHA-256):** `02d2de048ffd84bc56db2effa155ad5fef3e00cbd71f7b5850f6947247565cbe`
 
