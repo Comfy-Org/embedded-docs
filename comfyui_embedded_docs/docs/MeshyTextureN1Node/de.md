@@ -8,11 +8,11 @@ Dieser Node texturiert ein zuvor erstelltes 3D-Modell mit dem Meshy N1-Texturmod
 |-----------|-------------|-----------|----------|-------|
 | `Modell` | Das für den Texturierungsjob verwendete KI-Modell. Derzeit ist nur `"meshy-n1"` verfügbar. | COMBO | Ja | `"meshy-n1"` |
 | `meshy_task_id` | Task-ID des zuvor erstellten 3D-Modells, das texturiert werden soll. | MESHY_TASK_ID, STRING | Ja | N/A |
-| `front_view` | Die Ansicht, die Meshy als Vorderseite behandelt. Ein Bild texturiert die Vorderseite und lässt die Rückseite schlicht; fügen Sie Rück- und Seitenansichten in `extra_views` hinzu, um eine originalgetreue Rückseite zu erhalten. | IMAGE | Ja | Einzelbild |
+| `front_view` | Die Ansicht, die Meshy als Vorderseite behandelt. Ein Bild texturiert die Vorderseite und lässt die Rückseite schlicht; fügen Sie Rück- und Seitenansichten in `Zusätzliche Ansichten` hinzu, um eine originalgetreue Rückseite zu erhalten. | IMAGE | Ja | Einzelbild |
 | `Zusätzliche Ansichten` | Weitere Ansichten desselben Objekts, in beliebiger Reihenfolge. Erweiterbarer Slot: Verbinden Sie 0 bis 3 Bilder (`view_1` ... `view_3`). Zusammen mit `front_view` höchstens 4 Bilder. | IMAGE | Nein | 0 bis 3 Bilder |
 | `enable_original_uv` | Verwendet die ursprüngliche UV des Modells, anstatt neue UVs zu generieren. Wenn aktiviert, bewahrt Meshy vorhandene Texturen aus dem hochgeladenen Modell. Wenn das Modell keine ursprüngliche UV besitzt, ist die Qualität der Ausgabe möglicherweise nicht so gut. (Standard: True; erweiterte Option) | BOOLEAN | Nein | True / False |
 
-**Hinweis:** `front_view` und `extra_views` dürfen zusammen höchstens 4 Bilder enthalten; der Node löst einen Fehler aus, wenn mehr verbunden sind. Wenn ein verbundenes Bild einen Batch enthält, zählt jedes Bild im Batch zu diesem Limit. Die Texturauflösung ist fest auf 2K eingestellt und es werden keine PBR-Maps generiert.
+**Hinweis:** `front_view` und `Zusätzliche Ansichten` dürfen zusammen höchstens 4 Bilder enthalten; der Node löst einen Fehler aus, wenn mehr verbunden sind. Wenn ein verbundenes Bild einen Batch enthält, zählt jedes Bild im Batch zu diesem Limit. Die Texturauflösung ist fest auf 2K eingestellt und es werden keine PBR-Maps generiert.
 
 ## Ausgaben
 
