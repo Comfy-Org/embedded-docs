@@ -7,7 +7,7 @@
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `模型` | 用於貼圖工作的 AI 模型。目前僅提供 `"meshy-7"`。 | COMBO | 是 | `"meshy-7"` |
-| `Meshy 工作 ID` | 要進行貼圖之先前建立 3D 模型的任務 ID。 | MESHY_TASK_ID | 是 | — |
+| `Meshy 工作 ID` | 要進行貼圖之先前建立 3D 模型的任務 ID。 | MESHY_TASK_ID, STRING | 是 | — |
 | `多視角影像` | 同一物件的參考視圖。第一張影像為主要（正面）視圖；其餘視圖的順序不影響結果。可擴充插槽：連接 1 到 4 張影像（`image_1` 到 `image_4`）。 | IMAGE | 是 | 1 到 4 張影像 |
 | `啟用原始 UV` | 使用模型的原始 UV，而非產生新的 UV。啟用時，Meshy 會保留上傳模型中現有的貼圖。如果模型沒有原始 UV，輸出品質可能不會那麼好。（預設：True；進階選項） | BOOLEAN | 否 | True / False |
 | `PBR` | 啟用 PBR（基於物理的渲染）貼圖生成。（預設：False；進階選項） | BOOLEAN | 否 | True / False |
@@ -20,11 +20,11 @@
 | 輸出名稱 | 說明 | 資料類型 |
 |-------------|-------------|-----------|
 | `model_file` | 模型檔案名稱。此輸出僅保留以維持向後相容性。 | STRING |
-| `meshy_task_id` | 貼圖工作的任務 ID。 | MESHY_TASK_ID |
+| `meshy_task_id` | 貼圖工作的任務 ID。 | MESHY_TASK_ID, STRING |
 | `GLB` | 以 GLB 格式下載的已貼圖 3D 模型。 | FILE3DGLB |
 | `FBX` | 以 FBX 格式下載的已貼圖 3D 模型。 | FILE3DFBX |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureMultiViewNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `3a08d003683a182121471a064833c09b932c7c84c20fd5cb5ac0285e135b2b7e`
+**Source fingerprint (SHA-256):** `358cc98a3e60795a9294e302deecb7501da2425bf7afe90462999f3e77ab1c3b`

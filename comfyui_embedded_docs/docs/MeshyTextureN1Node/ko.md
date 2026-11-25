@@ -7,7 +7,7 @@ Meshy N1 텍스처 모델을 사용하여 이전에 생성한 3D 모델에 텍�
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | 텍스처링 작업에 사용되는 AI 모델입니다. 현재 `"meshy-n1"`만 사용할 수 있습니다. | COMBO | 예 | `"meshy-n1"` |
-| `meshy_task_id` | 텍스처링할 이전에 생성한 3D 모델의 작업 ID입니다. | MESHY_TASK_ID | 예 | 해당 없음 |
+| `meshy_task_id` | 텍스처링할 이전에 생성한 3D 모델의 작업 ID입니다. | MESHY_TASK_ID, STRING | 예 | 해당 없음 |
 | `front_view` | Meshy가 전면으로 간주하는 뷰입니다. 이미지 하나는 전면에 텍스처를 입히고 후면은 비워 둡니다. 후면을 충실하게 표현하려면 `extra_views`에 후면 및 측면 뷰를 추가하세요. | IMAGE | 예 | 단일 이미지 |
 | `extra_views` | 동일한 객체의 추가 뷰이며 순서는 무관합니다. 확장 가능한 슬롯: 0~3개 이미지를 연결합니다(`view_1` ... `view_3`). `front_view`와 함께 최대 4개 이미지입니다. | IMAGE | 아니요 | 0~3개 이미지 |
 | `enable_original_uv` | 새 UV를 생성하는 대신 모델의 원본 UV를 사용합니다. 활성화하면 Meshy는 업로드된 모델의 기존 텍스처를 보존합니다. 모델에 원본 UV가 없으면 출력 품질이 좋지 않을 수 있습니다. (기본값: True; 고급 옵션) | BOOLEAN | 아니요 | True / False |
@@ -18,11 +18,11 @@ Meshy N1 텍스처 모델을 사용하여 이전에 생성한 3D 모델에 텍�
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `meshy_task_id` | 텍스처링 작업의 작업 ID로, 이후 Meshy 노드에서 사용할 수 있습니다. | MESHY_TASK_ID |
+| `meshy_task_id` | 텍스처링 작업의 작업 ID로, 이후 Meshy 노드에서 사용할 수 있습니다. | MESHY_TASK_ID, STRING |
 | `GLB` | GLB 형식으로 다운로드된 텍스처가 적용된 3D 모델입니다. | FILE3DGLB |
 | `FBX` | FBX 형식으로 다운로드된 텍스처가 적용된 3D 모델입니다. | FILE3DFBX |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureN1Node/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `808df4f5a32b2d9ca6e74668051409836f2fcbc078d4ee3e85c07121d7a81f76`
+**Source fingerprint (SHA-256):** `be4191fd091839cfdce82b4f41fc6ae9e70f7b5b5504eb14a3c0d741d25ac8fd`

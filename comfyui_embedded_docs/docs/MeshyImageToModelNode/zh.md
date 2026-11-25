@@ -33,11 +33,11 @@ Mesh：Image to Model 节点使用 Meshy API，从单个输入图像生成 3D �
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
 | `模型文件` | 生成的 GLB 模型的文件名。仅为向后兼容而保留。 | STRING |
-| `meshy_task_id` | Meshy API 任务的唯一标识符，可用于参考或故障排查。 | MESHY_TASK_ID |
+| `meshy_task_id` | Meshy API 任务的唯一标识符，可用于参考或故障排查。 | MESHY_TASK_ID, STRING |
 | `GLB` | 以 GLB 文件格式生成的 3D 模型。 | FILE3DGLB |
 | `FBX` | 以 FBX 文件格式生成的 3D 模型。 | FILE3DFBX |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `38528b48c3f792a459008a52f65fae248ef1dadafb37fe4dc6b697d25bc89f4f`
+**Source fingerprint (SHA-256):** `084118fd44d003e35b9ef531654be8ffbbd4845126d93101a07a7bcacfa8738e`

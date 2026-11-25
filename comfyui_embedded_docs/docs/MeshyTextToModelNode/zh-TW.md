@@ -27,11 +27,11 @@ Meshy: Text to Model 節點使用 Meshy API 根據文字描述生成 3D 模型�
 | 輸出名稱 | 描述 | 資料類型 |
 |-------------|-------------|-----------|
 | `model_file` | 產生的 GLB 模型檔案名稱。此輸出是為了向後相容而提供。 | STRING |
-| `meshy_task_id` | Meshy API 任務的唯一識別碼。 | MESHY_TASK_ID |
+| `meshy_task_id` | Meshy API 任務的唯一識別碼。 | MESHY_TASK_ID, STRING |
 | `GLB` | 產生的 GLB 格式 3D 模型檔案。 | FILE3DGLB |
 | `FBX` | 產生的 FBX 格式 3D 模型檔案。 | FILE3DFBX |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `a02a5ae28bcae343c628d11ba3efa952b61b8bdf867669f58f1beb0f7c9e49f9`
+**Source fingerprint (SHA-256):** `cbd1a3d18c31a4021efdae83f597b01b1ff5ce3d7dad19fedc98db420d4e3ebb`

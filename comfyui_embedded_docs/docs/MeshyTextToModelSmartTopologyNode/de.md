@@ -21,11 +21,11 @@ Dieser Node erzeugt mit Meshy T2.5 ein spielfertiges Dreiecksnetz mit einer Ziel
 
 | Ausgabenname | Beschreibung | Datentyp |
 |-------------|-------------|-----------|
-| `meshy_task_id` | Die eindeutige Kennung der Meshy-API-Aufgabe. | MESHY_TASK_ID |
+| `meshy_task_id` | Die eindeutige Kennung der Meshy-API-Aufgabe. | MESHY_TASK_ID, STRING |
 | `GLB` | Das generierte 3D-Modell im GLB-Format. | FILE3DGLB |
 | `FBX` | Das generierte 3D-Modell im FBX-Format. | FILE3DFBX |
 
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelSmartTopologyNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `9fcdc846a4ba39cf3d099629637fbb0cf6d9c8d65bcee8aff5ec6ac5c76b6af3`
+**Source fingerprint (SHA-256):** `a49cdddcb2e50ce21d84a51c552bb06f049b62c316532eddd16a0c7c8416a8e4`

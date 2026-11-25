@@ -29,11 +29,11 @@
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `meshy_task_id` | Meshy API タスクの一意の識別子です。 | MESHY_TASK_ID |
+| `meshy_task_id` | Meshy API タスクの一意の識別子です。 | MESHY_TASK_ID, STRING |
 | `GLB` | GLB 形式で生成された 3D モデルです。 | FILE3DGLB |
 | `FBX` | FBX 形式で生成された 3D モデルです。 | FILE3DFBX |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelSmartTopologyNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `e78034a591825ec6e105df1942cf501e882ac780cc2584bfa04b424ecc34a02e`
+**Source fingerprint (SHA-256):** `17704680639b8abca5247f2a3f6392871a0feb2a67e4396ba6922cf4c11d7143`

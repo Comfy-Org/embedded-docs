@@ -6,7 +6,7 @@
 
 | 參數 | 說明 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `rig_task_id` | 來自先前已完成之 Meshy 角色綁定操作的唯一任務 ID。 | MESHY_RIGGED_TASK_ID | 是 | N/A |
+| `rig_task_id` | 來自先前已完成之 Meshy 角色綁定操作的唯一任務 ID。 | MESHY_RIGGED_TASK_ID, STRING | 是 | N/A |
 | `action_id` | 要套用的動畫動作 ID 編號。請前往 https://docs.meshy.ai/en/api/animation-library 查看可用值清單。（預設值：0） | INT | 是 | 0 至 696 |
 
 ## 輸出
@@ -20,4 +20,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `760e94d3a92910051d9b473545191842dc9672e6c4a59c3d1cd9cfdc5eb2589d`
+**Source fingerprint (SHA-256):** `d2fe5e62d8261880fe55cf305bc8bac4cb85367914d9ddfe2308ad1b43c85a16`

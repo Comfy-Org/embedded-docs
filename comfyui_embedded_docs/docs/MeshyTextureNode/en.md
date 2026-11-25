@@ -7,7 +7,7 @@ The Meshy: Texture Model node applies AI-generated textures to an existing 3D mo
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
 | `model` | The AI model version to use for texturing. | COMBO | Yes | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `meshy_task_id` | The unique identifier (task ID) from a previous Meshy 3D generation or conversion task. This provides the base 3D model to be textured. | MESHY_TASK_ID | Yes | - |
+| `meshy_task_id` | The unique identifier (task ID) from a previous Meshy 3D generation or conversion task. This provides the base 3D model to be textured. | MESHY_TASK_ID, STRING | Yes | - |
 | `enable_original_uv` | Use the original UV of the model instead of generating new UVs. When enabled (default: `True`), Meshy preserves existing textures from the uploaded model. If the model has no original UV, the quality of the output might not be as good. This is an advanced option. | BOOLEAN | Yes | true / false |
 | `pbr` | Enables Physically Based Rendering (PBR) material output for the textured model (default: `False`). This is an advanced option. | BOOLEAN | Yes | true / false |
 | `text_style_prompt` | Describe your desired texture style of the object using text (default: empty string). Maximum 600 characters. Cannot be used at the same time as `image_style`. | STRING | Yes | - |
@@ -24,11 +24,11 @@ The Meshy: Texture Model node applies AI-generated textures to an existing 3D mo
 | Output Name | Description | Data Type |
 | --- | --- | --- |
 | `model_file` | The filename of the generated GLB model. This output is provided for backward compatibility only. | STRING |
-| `meshy_task_id` | The unique task identifier for this texturing job, which can be used to reference the result. | MESHY_TASK_ID |
+| `meshy_task_id` | The unique task identifier for this texturing job, which can be used to reference the result. | MESHY_TASK_ID, STRING |
 | `GLB` | The textured 3D model saved in the GLB file format. | FILE3DGLB |
 | `FBX` | The textured 3D model saved in the FBX file format. | FILE3DFBX |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `30d51f6efe3602f27d99706840c974baf2c4397a4f9a191f3478e7eff372e319`
+**Source fingerprint (SHA-256):** `31a79c719799c04d1819d36dc1ec231b9954030a14dbb29461ecd782867c32cb`

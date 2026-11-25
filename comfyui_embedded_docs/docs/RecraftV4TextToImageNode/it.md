@@ -8,7 +8,7 @@ Genera immagini da prompt testuali utilizzando i modelli Recraft V4 e V4.1. Invi
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
-| `modello` | Il modello da utilizzare per la generazione. I modelli recraftv4_styles sono progettati per una generazione coerente con lo stile e richiedono sempre uno style_id o style_references. `recraftv4_1_flash` è il modello più veloce ed economico e non supporta alcuno stile. | DYNAMIC_COMBO | Sì | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `modello` | Il modello da utilizzare per la generazione. I modelli recraftv4_styles sono progettati per una generazione coerente con lo stile e richiedono sempre uno style_id o style_references. `recraftv4_1_flash` esegue Recraft V4.1 Flash V2, il modello più veloce ed economico, e non supporta alcuno stile. | DYNAMIC_COMBO | Sì | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `prompt` | Prompt per la generazione dell'immagine. Massimo 10.000 caratteri. | STRING | Sì | da 1 a 10000 caratteri |
 | `negative_prompt` | Questo input viene ignorato: il prompt negativo non è supportato dai modelli Recraft V4 e V4.1. | STRING | Sì | N/A |
 | `n` | Il numero di immagini da generare (predefinito: 1). | INT | Sì | 1 a 6 |
@@ -51,4 +51,4 @@ Questi modelli condividono lo stesso parametro `size`.
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `690286e663f27b525e58f81a7f883e490dacd48c1a34ee7b8e9ad4efd9935ff1`
+**Source fingerprint (SHA-256):** `a762c76c262ac2e973ab4dfebf392cd66ea5672cca431ad4f849eb7819ead6a0`

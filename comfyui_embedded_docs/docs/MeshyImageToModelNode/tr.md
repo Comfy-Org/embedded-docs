@@ -35,11 +35,11 @@ Meshy: Image to Model düğümü, tek bir girdi görüntüsünden 3D model oluş
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
 | `model_file` | Oluşturulan GLB modelinin dosya adı. Yalnızca geriye dönük uyumluluk için korunmaktadır. | STRING |
-| `meshy_task_id` | Referans veya sorun giderme amacıyla kullanılabilen Meshy API görevi için benzersiz tanımlayıcı. | MESHY_TASK_ID |
+| `meshy_task_id` | Referans veya sorun giderme amacıyla kullanılabilen Meshy API görevi için benzersiz tanımlayıcı. | MESHY_TASK_ID, STRING |
 | `GLB` | GLB dosya formatında oluşturulan 3D model. | FILE3DGLB |
 | `FBX` | FBX dosya formatında oluşturulan 3D model. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `38528b48c3f792a459008a52f65fae248ef1dadafb37fe4dc6b697d25bc89f4f`
+**Source fingerprint (SHA-256):** `084118fd44d003e35b9ef531654be8ffbbd4845126d93101a07a7bcacfa8738e`

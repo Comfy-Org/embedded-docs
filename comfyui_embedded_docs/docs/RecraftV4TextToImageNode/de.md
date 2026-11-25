@@ -8,7 +8,7 @@ Erzeugt Bilder aus Text-Prompts mit den Modellen Recraft V4 und V4.1. Es sendet 
 
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
-| `Modell` | Das für die Generierung zu verwendende Modell. Die recraftv4_styles-Modelle sind für stilkonsistente Generierung ausgelegt und erfordern immer eine style_id oder style_references. `recraftv4_1_flash` ist das schnellste und günstigste Modell und unterstützt überhaupt keine Stile. | DYNAMIC_COMBO | Ja | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `Modell` | Das für die Generierung zu verwendende Modell. Die recraftv4_styles-Modelle sind für stilkonsistente Generierung ausgelegt und erfordern immer eine style_id oder style_references. `recraftv4_1_flash` führt Recraft V4.1 Flash V2 aus, das schnellste und günstigste Modell, und unterstützt überhaupt keine Stile. | DYNAMIC_COMBO | Ja | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `Prompt` | Prompt für die Bildgenerierung. Maximal 10.000 Zeichen. | STRING | Ja | 1 bis 10000 Zeichen |
 | `negative_prompt` | Dieser Eingabewert wird ignoriert: Negative Prompts werden von den Modellen Recraft V4 und V4.1 nicht unterstützt. | STRING | Ja | N/A |
 | `n` | Die Anzahl der zu generierenden Bilder (Standard: 1). | INT | Ja | 1 bis 6 |
@@ -51,4 +51,4 @@ Diese Modelle verwenden denselben Parameter `size`.
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `690286e663f27b525e58f81a7f883e490dacd48c1a34ee7b8e9ad4efd9935ff1`
+**Source fingerprint (SHA-256):** `a762c76c262ac2e973ab4dfebf392cd66ea5672cca431ad4f849eb7819ead6a0`

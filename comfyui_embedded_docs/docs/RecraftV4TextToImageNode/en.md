@@ -8,7 +8,7 @@ Generates images from text prompts using Recraft V4 and V4.1 models. It sends th
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The model to use for generation. The recraftv4_styles models are built for style-consistent generation and always require a style_id or style_references. `recraftv4_1_flash` is the fastest and cheapest model and supports no styles at all. | DYNAMIC_COMBO | Yes | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `model` | The model to use for generation. The recraftv4_styles models are built for style-consistent generation and always require a style_id or style_references. `recraftv4_1_flash` runs Recraft V4.1 Flash V2, the fastest and cheapest model, and supports no styles at all. | DYNAMIC_COMBO | Yes | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `prompt` | Prompt for the image generation. Maximum 10,000 characters. | STRING | Yes | 1 to 10000 characters |
 | `negative_prompt` | This input is ignored: negative prompt is not supported by Recraft V4 and V4.1 models. | STRING | Yes | N/A |
 | `n` | The number of images to generate (default: 1). | INT | Yes | 1 to 6 |
@@ -51,4 +51,4 @@ These models share the same `size` parameter.
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `690286e663f27b525e58f81a7f883e490dacd48c1a34ee7b8e9ad4efd9935ff1`
+**Source fingerprint (SHA-256):** `a762c76c262ac2e973ab4dfebf392cd66ea5672cca431ad4f849eb7819ead6a0`

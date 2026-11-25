@@ -7,7 +7,7 @@
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | テクスチャリングジョブに使用する AI モデルです。現在は `"meshy-n1"` のみが利用可能です。 | COMBO | はい | `"meshy-n1"` |
-| `meshy_task_id` | テクスチャを適用する対象となる、以前に作成された 3D モデルのタスク ID です。 | MESHY_TASK_ID | はい | N/A |
+| `meshy_task_id` | テクスチャを適用する対象となる、以前に作成された 3D モデルのタスク ID です。 | MESHY_TASK_ID, STRING | はい | N/A |
 | `front_view` | Meshy が正面として扱うビューです。画像 1 枚では正面にのみテクスチャが適用され、背面は無地のままになります。背面を忠実に再現するには、`extra_views` に背面ビューと側面ビューを追加してください。 | IMAGE | はい | 単一画像 |
 | `extra_views` | 同じオブジェクトの追加ビューです。順序は任意です。拡張可能なスロット：0～3 枚の画像（`view_1` ... `view_3`）を接続できます。`front_view` と合わせて最大 4 枚の画像となります。 | IMAGE | いいえ | 0～3 枚の画像 |
 | `enable_original_uv` | 新しい UV を生成する代わりに、モデルの元の UV を使用します。有効にすると、Meshy はアップロードされたモデルの既存のテクスチャを保持します。モデルに元の UV がない場合、出力の品質が十分でない可能性があります。（デフォルト：True、詳細オプション） | BOOLEAN | いいえ | True または False |
@@ -18,11 +18,11 @@
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `meshy_task_id` | テクスチャリングジョブのタスク ID です。後続の Meshy ノードで使用できます。 | MESHY_TASK_ID |
+| `meshy_task_id` | テクスチャリングジョブのタスク ID です。後続の Meshy ノードで使用できます。 | MESHY_TASK_ID, STRING |
 | `GLB` | GLB 形式でダウンロードされた、テクスチャ適用済みの 3D モデルです。 | FILE3DGLB |
 | `FBX` | FBX 形式でダウンロードされた、テクスチャ適用済みの 3D モデルです。 | FILE3DFBX |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureN1Node/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `808df4f5a32b2d9ca6e74668051409836f2fcbc078d4ee3e85c07121d7a81f76`
+**Source fingerprint (SHA-256):** `be4191fd091839cfdce82b4f41fc6ae9e70f7b5b5504eb14a3c0d741d25ac8fd`

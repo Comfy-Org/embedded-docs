@@ -29,11 +29,11 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `meshy_task_id` | Meshy API 작업의 고유 식별자입니다. | MESHY_TASK_ID |
+| `meshy_task_id` | Meshy API 작업의 고유 식별자입니다. | MESHY_TASK_ID, STRING |
 | `GLB` | GLB 형식으로 생성된 3D 모델입니다. | FILE3DGLB |
 | `FBX` | FBX 형식으로 생성된 3D 모델입니다. | FILE3DFBX |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelSmartTopologyNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `e78034a591825ec6e105df1942cf501e882ac780cc2584bfa04b424ecc34a02e`
+**Source fingerprint (SHA-256):** `17704680639b8abca5247f2a3f6392871a0feb2a67e4396ba6922cf4c11d7143`

@@ -21,11 +21,11 @@ This node generates a game-ready triangle mesh at a target face count with Meshy
 
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
-| `meshy_task_id` | The unique identifier of the Meshy API task. | MESHY_TASK_ID |
+| `meshy_task_id` | The unique identifier of the Meshy API task. | MESHY_TASK_ID, STRING |
 | `GLB` | The generated 3D model in GLB format. | FILE3DGLB |
 | `FBX` | The generated 3D model in FBX format. | FILE3DFBX |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelSmartTopologyNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `9fcdc846a4ba39cf3d099629637fbb0cf6d9c8d65bcee8aff5ec6ac5c76b6af3`
+**Source fingerprint (SHA-256):** `a49cdddcb2e50ce21d84a51c552bb06f049b62c316532eddd16a0c7c8416a8e4`

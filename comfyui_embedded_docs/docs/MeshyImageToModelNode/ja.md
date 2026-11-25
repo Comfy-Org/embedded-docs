@@ -35,11 +35,11 @@ Meshy: Image to Model ノードは、Meshy API を使用して、1枚の入力�
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
 | `model_file` | 生成されたGLBモデルのファイル名です。後方互換性のためだけに維持されています。 | STRING |
-| `meshy_task_id` | Meshy APIタスクの一意の識別子で、参照やトラブルシューティングに使用できます。 | MESHY_TASK_ID |
+| `meshy_task_id` | Meshy APIタスクの一意の識別子で、参照やトラブルシューティングに使用できます。 | MESHY_TASK_ID, STRING |
 | `GLB` | GLBファイル形式で生成された3Dモデルです。 | FILE3DGLB |
 | `FBX` | FBXファイル形式で生成された3Dモデルです。 | FILE3DFBX |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `38528b48c3f792a459008a52f65fae248ef1dadafb37fe4dc6b697d25bc89f4f`
+**Source fingerprint (SHA-256):** `084118fd44d003e35b9ef531654be8ffbbd4845126d93101a07a7bcacfa8738e`

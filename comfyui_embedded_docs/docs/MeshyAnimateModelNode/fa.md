@@ -6,7 +6,7 @@
 
 | پارامتر | توضیحات | نوع داده | الزامی | محدوده |
 |-----------|-------------|-----------|----------|-------|
-| `rig_task_id` | شناسه وظیفه یکتای حاصل از یک عملیات ریگینگ کاراکتر Meshy که قبلاً تکمیل شده است. | MESHY_RIGGED_TASK_ID | بله | N/A |
+| `rig_task_id` | شناسه وظیفه یکتای حاصل از یک عملیات ریگینگ کاراکتر Meshy که قبلاً تکمیل شده است. | MESHY_RIGGED_TASK_ID, STRING | بله | N/A |
 | `action_id` | شناسه عددی اکشن انیمیشنی که باید اعمال شود. برای مشاهده فهرست مقادیر موجود به https://docs.meshy.ai/en/api/animation-library مراجعه کنید. (پیش‌فرض: 0) | INT | بله | 0 تا 696 |
 
 ## خروجی‌ها
@@ -20,4 +20,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `760e94d3a92910051d9b473545191842dc9672e6c4a59c3d1cd9cfdc5eb2589d`
+**Source fingerprint (SHA-256):** `d2fe5e62d8261880fe55cf305bc8bac4cb85367914d9ddfe2308ad1b43c85a16`

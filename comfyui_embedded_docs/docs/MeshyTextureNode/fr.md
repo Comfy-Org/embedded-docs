@@ -7,7 +7,7 @@ Le nœud Meshy: Texture Model applique des textures générées par IA à un mod
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `modèle` | Version du modèle IA à utiliser pour la texturation. | COMBO | Oui | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `meshy_task_id` | Identifiant unique (ID de tâche) provenant d'une précédente tâche Meshy de génération ou de conversion 3D. Fournit le modèle 3D de base à texturer. | MESHY_TASK_ID | Oui | - |
+| `meshy_task_id` | Identifiant unique (ID de tâche) provenant d'une précédente tâche Meshy de génération ou de conversion 3D. Fournit le modèle 3D de base à texturer. | MESHY_TASK_ID, STRING | Oui | - |
 | `activer_uv_original` | Utiliser l'UV d'origine du modèle au lieu de générer de nouveaux UV. Lorsque cette option est activée (valeur par défaut : `True`), Meshy préserve les textures existantes du modèle téléversé. Si le modèle n'a pas d'UV d'origine, la qualité de la sortie risque de ne pas être aussi bonne. Il s'agit d'une option avancée. | BOOLEAN | Oui | true / false |
 | `pbr` | Active la sortie de matériau PBR (rendu basé sur la physique) pour le modèle texturé (valeur par défaut : `False`). Il s'agit d'une option avancée. | BOOLEAN | Oui | true / false |
 | `invite_style_texte` | Décrivez le style de texture souhaité pour l'objet à l'aide de texte (valeur par défaut : chaîne vide). Maximum 600 caractères. Ce paramètre ne peut pas être utilisé en même temps que `image_style`. | STRING | Oui | - |
@@ -24,11 +24,11 @@ Le nœud Meshy: Texture Model applique des textures générées par IA à un mod
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
 | `model_file` | Nom du fichier du modèle GLB généré. Cette sortie est fournie uniquement pour des raisons de compatibilité ascendante. | STRING |
-| `meshy_task_id` | Identifiant unique de tâche pour cette tâche de texturation, qui peut être utilisé pour référencer le résultat. | MESHY_TASK_ID |
+| `meshy_task_id` | Identifiant unique de tâche pour cette tâche de texturation, qui peut être utilisé pour référencer le résultat. | MESHY_TASK_ID, STRING |
 | `GLB` | Le modèle 3D texturé enregistré au format de fichier GLB. | FILE3DGLB |
 | `FBX` | Le modèle 3D texturé enregistré au format de fichier FBX. | FILE3DFBX |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `30d51f6efe3602f27d99706840c974baf2c4397a4f9a191f3478e7eff372e319`
+**Source fingerprint (SHA-256):** `31a79c719799c04d1819d36dc1ec231b9954030a14dbb29461ecd782867c32cb`

@@ -6,7 +6,7 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `rig_task_id` | 以前に完了した Meshy キャラクターリギング操作で得られた一意のタスクID。 | MESHY_RIGGED_TASK_ID | はい | N/A |
+| `rig_task_id` | 以前に完了した Meshy キャラクターリギング操作で得られた一意のタスクID。 | MESHY_RIGGED_TASK_ID, STRING | はい | N/A |
 | `action_id` | 適用するアニメーションアクションのID番号。利用可能な値の一覧については、https://docs.meshy.ai/en/api/animation-library をご覧ください。（デフォルト: 0） | INT | はい | 0 〜 696 |
 
 ## 出力
@@ -20,4 +20,4 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `760e94d3a92910051d9b473545191842dc9672e6c4a59c3d1cd9cfdc5eb2589d`
+**Source fingerprint (SHA-256):** `d2fe5e62d8261880fe55cf305bc8bac4cb85367914d9ddfe2308ad1b43c85a16`

@@ -7,7 +7,7 @@ Este nodo texturiza un modelo 3D creado previamente usando de 1 a 4 vistas de re
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
 | `modelo` | El modelo de IA utilizado para el trabajo de texturizado. Actualmente solo está disponible `"meshy-7"`. | COMBO | Sí | `"meshy-7"` |
-| `ID de tarea de Meshy` | El ID de tarea del modelo 3D creado previamente que se va a texturizar. | MESHY_TASK_ID | Sí | — |
+| `ID de tarea de Meshy` | El ID de tarea del modelo 3D creado previamente que se va a texturizar. | MESHY_TASK_ID, STRING | Sí | — |
 | `imágenes multivista` | Vistas de referencia del mismo objeto. La primera imagen es la vista principal (frontal); el orden de las vistas restantes no importa. Ranura ampliable: conecta de 1 a 4 imágenes (`image_1` a `image_4`). | IMAGE | Sí | 1 a 4 imágenes |
 | `usar UV original` | Usar el UV original del modelo en lugar de generar nuevos UV. Cuando está habilitado, Meshy conserva las texturas existentes del modelo subido. Si el modelo no tiene UV original, la calidad de la salida podría no ser tan buena. (predeterminado: True; opción avanzada) | BOOLEAN | No | True / False |
 | `pbr` | Habilita la generación de texturas PBR (renderizado basado en física). (predeterminado: False; opción avanzada) | BOOLEAN | No | True / False |
@@ -20,11 +20,11 @@ Este nodo texturiza un modelo 3D creado previamente usando de 1 a 4 vistas de re
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
 | `model_file` | Nombre del archivo del modelo. Esta salida se conserva solo por compatibilidad hacia atrás. | STRING |
-| `meshy_task_id` | ID de tarea del trabajo de texturizado. | MESHY_TASK_ID |
+| `meshy_task_id` | ID de tarea del trabajo de texturizado. | MESHY_TASK_ID, STRING |
 | `GLB` | El modelo 3D texturizado descargado en formato GLB. | FILE3DGLB |
 | `FBX` | El modelo 3D texturizado descargado en formato FBX. | FILE3DFBX |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureMultiViewNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `3a08d003683a182121471a064833c09b932c7c84c20fd5cb5ac0285e135b2b7e`
+**Source fingerprint (SHA-256):** `358cc98a3e60795a9294e302deecb7501da2425bf7afe90462999f3e77ab1c3b`

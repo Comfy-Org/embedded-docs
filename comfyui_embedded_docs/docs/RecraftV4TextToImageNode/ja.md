@@ -8,7 +8,7 @@ Recraft V4 および V4.1 モデルを使用して、テキストプロンプト
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 生成に使用するモデルです。recraftv4_styles モデルはスタイル一貫性のある生成向けに構築されており、常に style_id または style_references が必要です。`recraftv4_1_flash` は最速かつ最も低コストなモデルで、スタイルをまったくサポートしません。 | DYNAMIC_COMBO | はい | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `model` | 生成に使用するモデルです。recraftv4_styles モデルはスタイル一貫性のある生成向けに構築されており、常に style_id または style_references が必要です。`recraftv4_1_flash` は Recraft V4.1 Flash V2 を実行し、最速かつ最も低コストなモデルで、スタイルをまったくサポートしません。 | DYNAMIC_COMBO | はい | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `prompt` | 画像生成用のプロンプトです。最大 10,000 文字です。 | STRING | はい | 1～10000文字 |
 | `negative_prompt` | この入力は無視されます。Recraft V4 および V4.1 モデルではネガティブプロンプトはサポートされていません。 | STRING | はい | N/A |
 | `n` | 生成する画像の数です（デフォルト: 1）。 | INT | はい | 1～6 |
@@ -51,4 +51,4 @@ Recraft V4 および V4.1 モデルを使用して、テキストプロンプト
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `690286e663f27b525e58f81a7f883e490dacd48c1a34ee7b8e9ad4efd9935ff1`
+**Source fingerprint (SHA-256):** `a762c76c262ac2e973ab4dfebf392cd66ea5672cca431ad4f849eb7819ead6a0`

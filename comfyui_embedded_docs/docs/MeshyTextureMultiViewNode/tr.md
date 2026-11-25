@@ -7,7 +7,7 @@ Bu düğüm, daha önce oluşturulmuş bir 3D modeli, aynı nesnenin 1 ila 4 ref
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Dokulandırma işi için kullanılan yapay zeka modeli. Şu anda yalnızca `"meshy-7"` kullanılabilir. | COMBO | Evet | `"meshy-7"` |
-| `meshy_task_id` | Dokulandırılacak, daha önce oluşturulmuş 3D modelin görev kimliği. | MESHY_TASK_ID | Evet | — |
+| `meshy_task_id` | Dokulandırılacak, daha önce oluşturulmuş 3D modelin görev kimliği. | MESHY_TASK_ID, STRING | Evet | — |
 | `multiview_images` | Aynı nesnenin referans görünümleri. İlk görüntü birincil (ön) görünümdür; kalan görünümlerin sırası önemli değildir. Büyütülebilir yuva: 1 ila 4 görüntü bağlayın (`image_1` ila `image_4`). | IMAGE | Evet | 1 ila 4 görüntü |
 | `enable_original_uv` | Yeni UV'ler oluşturmak yerine modelin orijinal UV'sini kullanın. Etkinleştirildiğinde Meshy, yüklenen modeldeki mevcut dokuları korur. Modelin orijinal UV'si yoksa çıktının kalitesi o kadar iyi olmayabilir. (varsayılan: True; gelişmiş seçenek) | BOOLEAN | Hayır | True / False |
 | `pbr` | PBR (fiziksel tabanlı işleme) doku üretimini etkinleştirir. (varsayılan: False; gelişmiş seçenek) | BOOLEAN | Hayır | True / False |
@@ -20,11 +20,11 @@ Bu düğüm, daha önce oluşturulmuş bir 3D modeli, aynı nesnenin 1 ila 4 ref
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
 | `model_file` | Model dosyası adı. Bu çıktı yalnızca geriye dönük uyumluluk için tutulur. | STRING |
-| `meshy_task_id` | Dokulandırma işinin görev kimliği. | MESHY_TASK_ID |
+| `meshy_task_id` | Dokulandırma işinin görev kimliği. | MESHY_TASK_ID, STRING |
 | `GLB` | GLB biçiminde indirilen dokulandırılmış 3D model. | FILE3DGLB |
 | `FBX` | FBX biçiminde indirilen dokulandırılmış 3D model. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureMultiViewNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `3a08d003683a182121471a064833c09b932c7c84c20fd5cb5ac0285e135b2b7e`
+**Source fingerprint (SHA-256):** `358cc98a3e60795a9294e302deecb7501da2425bf7afe90462999f3e77ab1c3b`

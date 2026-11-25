@@ -21,11 +21,11 @@ Este nodo genera una malla triangular lista para juegos con un recuento objetivo
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `meshy_task_id` | El identificador único de la tarea de la API de Meshy. | MESHY_TASK_ID |
+| `meshy_task_id` | El identificador único de la tarea de la API de Meshy. | MESHY_TASK_ID, STRING |
 | `GLB` | El modelo 3D generado en formato GLB. | FILE3DGLB |
 | `FBX` | El modelo 3D generado en formato FBX. | FILE3DFBX |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelSmartTopologyNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `9fcdc846a4ba39cf3d099629637fbb0cf6d9c8d65bcee8aff5ec6ac5c76b6af3`
+**Source fingerprint (SHA-256):** `a49cdddcb2e50ce21d84a51c552bb06f049b62c316532eddd16a0c7c8416a8e4`

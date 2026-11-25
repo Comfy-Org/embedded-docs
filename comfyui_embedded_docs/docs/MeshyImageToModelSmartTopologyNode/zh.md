@@ -29,11 +29,11 @@
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `meshy_task_id` | Meshy API 任务的唯一标识符。 | MESHY_TASK_ID |
+| `meshy_task_id` | Meshy API 任务的唯一标识符。 | MESHY_TASK_ID, STRING |
 | `GLB` | 生成的 GLB 格式 3D 模型。 | FILE3DGLB |
 | `FBX` | 生成的 FBX 格式 3D 模型。 | FILE3DFBX |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelSmartTopologyNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `e78034a591825ec6e105df1942cf501e882ac780cc2584bfa04b424ecc34a02e`
+**Source fingerprint (SHA-256):** `17704680639b8abca5247f2a3f6392871a0feb2a67e4396ba6922cf4c11d7143`

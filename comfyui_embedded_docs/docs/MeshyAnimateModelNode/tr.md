@@ -6,7 +6,7 @@ Bu düğüm, Meshy hizmetini kullanarak daha önce riglenmiş bir 3B karaktere b
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `rig_task_id` | Daha önce tamamlanmış bir Meshy karakter rigleme işleminden alınan benzersiz görev kimliği. | MESHY_RIGGED_TASK_ID | Evet | N/A |
+| `rig_task_id` | Daha önce tamamlanmış bir Meshy karakter rigleme işleminden alınan benzersiz görev kimliği. | MESHY_RIGGED_TASK_ID, STRING | Evet | N/A |
 | `action_id` | Uygulanacak animasyon aksiyonunun ID numarası. Kullanılabilir değerlerin listesi için https://docs.meshy.ai/en/api/animation-library adresini ziyaret edin. (varsayılan: 0) | INT | Evet | 0 - 696 |
 
 ## Çıktılar
@@ -20,4 +20,4 @@ Bu düğüm, Meshy hizmetini kullanarak daha önce riglenmiş bir 3B karaktere b
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `760e94d3a92910051d9b473545191842dc9672e6c4a59c3d1cd9cfdc5eb2589d`
+**Source fingerprint (SHA-256):** `d2fe5e62d8261880fe55cf305bc8bac4cb85367914d9ddfe2308ad1b43c85a16`

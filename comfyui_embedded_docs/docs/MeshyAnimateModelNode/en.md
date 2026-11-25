@@ -6,7 +6,7 @@ This node applies a specific animation action to a previously rigged 3D characte
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `rig_task_id` | The unique task ID from a previously completed Meshy character rigging operation. | MESHY_RIGGED_TASK_ID | Yes | N/A |
+| `rig_task_id` | The unique task ID from a previously completed Meshy character rigging operation. | MESHY_RIGGED_TASK_ID, STRING | Yes | N/A |
 | `action_id` | The ID number of the animation action to apply. Visit https://docs.meshy.ai/en/api/animation-library for a list of available values. (default: 0) | INT | Yes | 0 to 696 |
 
 ## Outputs
@@ -20,4 +20,4 @@ This node applies a specific animation action to a previously rigged 3D characte
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `760e94d3a92910051d9b473545191842dc9672e6c4a59c3d1cd9cfdc5eb2589d`
+**Source fingerprint (SHA-256):** `d2fe5e62d8261880fe55cf305bc8bac4cb85367914d9ddfe2308ad1b43c85a16`

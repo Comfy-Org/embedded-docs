@@ -35,11 +35,11 @@
 | Имя выхода | Описание | Тип данных |
 | --- | --- | --- |
 | `model_file` | Имя файла созданной GLB-модели. Сохраняется только для обратной совместимости. | STRING |
-| `meshy_task_id` | Уникальный идентификатор задачи API Meshy, который можно использовать для справки или устранения неполадок. | MESHY_TASK_ID |
+| `meshy_task_id` | Уникальный идентификатор задачи API Meshy, который можно использовать для справки или устранения неполадок. | MESHY_TASK_ID, STRING |
 | `GLB` | Созданная 3D-модель в формате файла GLB. | FILE3DGLB |
 | `FBX` | Созданная 3D-модель в формате файла FBX. | FILE3DFBX |
 
 > Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/ru.md)
 
 ---
-**Source fingerprint (SHA-256):** `38528b48c3f792a459008a52f65fae248ef1dadafb37fe4dc6b697d25bc89f4f`
+**Source fingerprint (SHA-256):** `084118fd44d003e35b9ef531654be8ffbbd4845126d93101a07a7bcacfa8738e`

@@ -7,7 +7,7 @@
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | テクスチャリングジョブに使用するAIモデルです。現在は「meshy-7」のみ利用可能です。 | COMBO | はい | `"meshy-7"` |
-| `meshy_task_id` | テクスチャを適用する、以前に作成した3DモデルのタスクIDです。 | MESHY_TASK_ID | はい | — |
+| `meshy_task_id` | テクスチャを適用する、以前に作成した3DモデルのタスクIDです。 | MESHY_TASK_ID, STRING | はい | — |
 | `multiview_images` | 同じオブジェクトの参照ビューです。最初の画像がメイン（正面）ビューで、残りのビューの順序は任意です。拡張可能なスロット：1～4枚の画像（`image_1`～`image_4`）を接続します。 | IMAGE | はい | 1～4枚の画像 |
 | `enable_original_uv` | 新しいUVを生成する代わりに、モデルの元のUVを使用します。有効にすると、Meshyはアップロードされたモデルの既存のテクスチャを保持します。モデルに元のUVがない場合、出力の品質が十分でない可能性があります。（デフォルト：True、詳細オプション） | BOOLEAN | いいえ | True / False |
 | `pbr` | PBR（物理ベースレンダリング）テクスチャの生成を有効にします。（デフォルト：False、詳細オプション） | BOOLEAN | いいえ | True / False |
@@ -20,11 +20,11 @@
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
 | `model_file` | モデルファイル名です。この出力は後方互換性のためにのみ保持されています。 | STRING |
-| `meshy_task_id` | テクスチャリングジョブのタスクIDです。 | MESHY_TASK_ID |
+| `meshy_task_id` | テクスチャリングジョブのタスクIDです。 | MESHY_TASK_ID, STRING |
 | `GLB` | GLB形式でダウンロードされたテクスチャ適用済み3Dモデルです。 | FILE3DGLB |
 | `FBX` | FBX形式でダウンロードされたテクスチャ適用済み3Dモデルです。 | FILE3DFBX |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureMultiViewNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `3a08d003683a182121471a064833c09b932c7c84c20fd5cb5ac0285e135b2b7e`
+**Source fingerprint (SHA-256):** `358cc98a3e60795a9294e302deecb7501da2425bf7afe90462999f3e77ab1c3b`

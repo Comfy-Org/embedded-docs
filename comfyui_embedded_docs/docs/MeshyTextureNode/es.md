@@ -7,7 +7,7 @@ El nodo Meshy: Texture Model aplica texturas generadas por IA a un modelo 3D exi
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 | --- | --- | --- | --- | --- |
 | `modelo` | La versión del modelo de IA que se utilizará para texturizar. | COMBO | Sí | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `id_de_tarea_meshy` | El identificador único (ID de tarea) de una tarea anterior de generación o conversión 3D de Meshy. Proporciona el modelo 3D base que se va a texturizar. | MESHY_TASK_ID | Sí | - |
+| `id_de_tarea_meshy` | El identificador único (ID de tarea) de una tarea anterior de generación o conversión 3D de Meshy. Proporciona el modelo 3D base que se va a texturizar. | MESHY_TASK_ID, STRING | Sí | - |
 | `habilitar_uv_original` | Usar el UV original del modelo en lugar de generar UV nuevos. Cuando está habilitado (predeterminado: `True`), Meshy conserva las texturas existentes del modelo cargado. Si el modelo no tiene UV original, la calidad de la salida podría no ser tan buena. Esta es una opción avanzada. | BOOLEAN | Sí | true / false |
 | `pbr` | Habilita la salida de material con renderizado basado en física (PBR) para el modelo texturizado (predeterminado: `False`). Esta es una opción avanzada. | BOOLEAN | Sí | true / false |
 | `estilo_texto` | Describe el estilo de textura deseado del objeto usando texto (predeterminado: cadena vacía). Máximo 600 caracteres. No se puede usar al mismo tiempo que `image_style`. | STRING | Sí | - |
@@ -24,11 +24,11 @@ El nodo Meshy: Texture Model aplica texturas generadas por IA a un modelo 3D exi
 | Nombre de salida | Descripción | Tipo de datos |
 | --- | --- | --- |
 | `model_file` | El nombre de archivo del modelo GLB generado. Esta salida se proporciona solo por compatibilidad hacia atrás. | STRING |
-| `meshy_task_id` | El identificador único de tarea para este trabajo de texturizado, que se puede usar para referenciar el resultado. | MESHY_TASK_ID |
+| `meshy_task_id` | El identificador único de tarea para este trabajo de texturizado, que se puede usar para referenciar el resultado. | MESHY_TASK_ID, STRING |
 | `GLB` | El modelo 3D texturizado guardado en el formato de archivo GLB. | FILE3DGLB |
 | `FBX` | El modelo 3D texturizado guardado en el formato de archivo FBX. | FILE3DFBX |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `30d51f6efe3602f27d99706840c974baf2c4397a4f9a191f3478e7eff372e319`
+**Source fingerprint (SHA-256):** `31a79c719799c04d1819d36dc1ec231b9954030a14dbb29461ecd782867c32cb`

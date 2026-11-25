@@ -6,7 +6,7 @@ Meshy: Rig Model ノードは、以前のMeshyタスクの3Dモデルを受け�
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `meshy_task_id` | リギング対象のモデルを生成した、以前のMeshy操作（例：text-to-3D や image-to-3D）の一意のタスクIDです。 | MESHY_TASK_ID | はい | 該当なし |
+| `meshy_task_id` | リギング対象のモデルを生成した、以前のMeshy操作（例：text-to-3D や image-to-3D）の一意のタスクIDです。 | MESHY_TASK_ID, STRING | はい | 該当なし |
 | `height_meters` | キャラクターモデルのおおよその身長（メートル単位）です。スケーリングとリギングの精度向上に役立ちます（デフォルト：1.7）。 | FLOAT | はい | 0.1～15.0 |
 | `texture_image` | モデルのUV展開済みベースカラーテクスチャ画像です。 | IMAGE | いいえ | 該当なし |
 
@@ -17,11 +17,11 @@ Meshy: Rig Model ノードは、以前のMeshyタスクの3Dモデルを受け�
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
 | `model_file` | 後方互換性のためだけに保持されているレガシー出力で、GLBモデルのファイル名が含まれます。 | STRING |
-| `rig_task_id` | このリギング操作の一意のタスクIDで、後続のMeshyノードで結果を参照するために使用できます。 | MESHY_RIGGED_TASK_ID |
+| `rig_task_id` | このリギング操作の一意のタスクIDで、後続のMeshyノードで結果を参照するために使用できます。 | MESHY_RIGGED_TASK_ID, STRING |
 | `GLB` | GLBファイル形式で保存されたリギング済み3Dキャラクターモデルです。 | FILE3DGLB |
 | `FBX` | FBXファイル形式で保存されたリギング済み3Dキャラクターモデルです。 | FILE3DFBX |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRigModelNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `6ae79359fa54f36dd2491a952fe54fa56866038758e8cd475a2d2f8e9e47e3b3`
+**Source fingerprint (SHA-256):** `6f1c9cdf1f27511b66fb4a26259657eb41b331b8e7e1d33e5450d275dd7cacba`

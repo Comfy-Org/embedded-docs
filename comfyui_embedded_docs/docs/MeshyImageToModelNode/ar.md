@@ -35,11 +35,11 @@
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
 | `model_file` | اسم ملف نموذج GLB المُنشأ. يُحافظ عليه للتوافق مع الإصدارات السابقة فقط. | STRING |
-| `meshy_task_id` | المعرّف الفريد لمهمة واجهة برمجة تطبيقات Meshy، ويمكن استخدامه للرجوع إليه أو لاستكشاف الأخطاء وإصلاحها. | MESHY_TASK_ID |
+| `meshy_task_id` | المعرّف الفريد لمهمة واجهة برمجة تطبيقات Meshy، ويمكن استخدامه للرجوع إليه أو لاستكشاف الأخطاء وإصلاحها. | MESHY_TASK_ID, STRING |
 | `GLB` | النموذج ثلاثي الأبعاد المُنشأ بصيغة ملف GLB. | FILE3DGLB |
 | `FBX` | النموذج ثلاثي الأبعاد المُنشأ بصيغة ملف FBX. | FILE3DFBX |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `38528b48c3f792a459008a52f65fae248ef1dadafb37fe4dc6b697d25bc89f4f`
+**Source fingerprint (SHA-256):** `084118fd44d003e35b9ef531654be8ffbbd4845126d93101a07a7bcacfa8738e`

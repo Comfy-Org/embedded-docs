@@ -35,11 +35,11 @@
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
 | `فایل مدل` | نام فایل مدل GLB تولیدشده. فقط برای سازگاری با نسخه‌های قبلی نگهداری می‌شود. | STRING |
-| `شناسه وظیفه meshy` | شناسه یکتای وظیفه Meshy API که می‌تواند برای مرجع یا عیب‌یابی استفاده شود. | MESHY_TASK_ID |
+| `شناسه وظیفه meshy` | شناسه یکتای وظیفه Meshy API که می‌تواند برای مرجع یا عیب‌یابی استفاده شود. | MESHY_TASK_ID, STRING |
 | `GLB` | مدل سه‌بعدی تولیدشده در قالب فایل GLB. | FILE3DGLB |
 | `FBX` | مدل سه‌بعدی تولیدشده در قالب فایل FBX. | FILE3DFBX |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `38528b48c3f792a459008a52f65fae248ef1dadafb37fe4dc6b697d25bc89f4f`
+**Source fingerprint (SHA-256):** `084118fd44d003e35b9ef531654be8ffbbd4845126d93101a07a7bcacfa8738e`

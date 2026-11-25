@@ -6,7 +6,7 @@ Meshy: Rig Model düğümü, önceki bir Meshy görevinden bir 3D model alır ve
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `meshy_task_id` | Riglenmek üzere modeli üreten önceki bir Meshy işleminden (örn. metinden 3D'ye veya görüntüden 3D'ye) alınan benzersiz görev kimliği. | MESHY_TASK_ID | Evet | N/A |
+| `meshy_task_id` | Riglenmek üzere modeli üreten önceki bir Meshy işleminden (örn. metinden 3D'ye veya görüntüden 3D'ye) alınan benzersiz görev kimliği. | MESHY_TASK_ID, STRING | Evet | N/A |
 | `height_meters` | Karakter modelinin metre cinsinden yaklaşık yüksekliği. Bu, ölçekleme ve rigleme doğruluğuna yardımcı olur (varsayılan: 1.7). | FLOAT | Evet | 0.1 ile 15.0 |
 | `texture_image` | Modelin UV açılmış temel renk doku görüntüsü. | IMAGE | Hayır | N/A |
 
@@ -17,11 +17,11 @@ Meshy: Rig Model düğümü, önceki bir Meshy görevinden bir 3D model alır ve
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
 | `model_file` | Yalnızca geriye dönük uyumluluk için tutulan eski bir çıktı; GLB modelinin dosya adını içerir. | STRING |
-| `rig_task_id` | Bu rigleme işlemi için benzersiz görev kimliği; sonraki Meshy düğümlerinde sonuca başvurmak için kullanılabilir. | MESHY_RIGGED_TASK_ID |
+| `rig_task_id` | Bu rigleme işlemi için benzersiz görev kimliği; sonraki Meshy düğümlerinde sonuca başvurmak için kullanılabilir. | MESHY_RIGGED_TASK_ID, STRING |
 | `GLB` | GLB dosya biçiminde kaydedilen riglenmiş 3D karakter modeli. | FILE3DGLB |
 | `FBX` | FBX dosya biçiminde kaydedilen riglenmiş 3D karakter modeli. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRigModelNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `6ae79359fa54f36dd2491a952fe54fa56866038758e8cd475a2d2f8e9e47e3b3`
+**Source fingerprint (SHA-256):** `6f1c9cdf1f27511b66fb4a26259657eb41b331b8e7e1d33e5450d275dd7cacba`

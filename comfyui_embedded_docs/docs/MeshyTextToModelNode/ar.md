@@ -27,11 +27,11 @@
 | اسم المخرج | الوصف | نوع البيانات |
 |-------------|-------------|-----------|
 | `model_file` | اسم ملف نموذج GLB المولَّد. يُوفَّر هذا المخرج للتوافق مع الإصدارات السابقة. | STRING |
-| `meshy_task_id` | المعرّف الفريد لمهمة Meshy API. | MESHY_TASK_ID |
+| `meshy_task_id` | المعرّف الفريد لمهمة Meshy API. | MESHY_TASK_ID, STRING |
 | `GLB` | ملف النموذج ثلاثي الأبعاد المولَّد بصيغة GLB. | FILE3DGLB |
 | `FBX` | ملف النموذج ثلاثي الأبعاد المولَّد بصيغة FBX. | FILE3DFBX |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `a02a5ae28bcae343c628d11ba3efa952b61b8bdf867669f58f1beb0f7c9e49f9`
+**Source fingerprint (SHA-256):** `cbd1a3d18c31a4021efdae83f597b01b1ff5ce3d7dad19fedc98db420d4e3ebb`

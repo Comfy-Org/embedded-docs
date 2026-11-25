@@ -7,7 +7,7 @@ Meshy: Texture Model 节点将 AI 生成的纹理应用到现有的 3D 模型。
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 | --- | --- | --- | --- | --- |
 | `模型` | 用于纹理化的 AI 模型版本。 | COMBO | 是 | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `meshy_task_id` | 来自先前 Meshy 3D 生成或转换任务的唯一标识符（任务 ID）。它提供要进行纹理化的基础 3D 模型。 | MESHY_TASK_ID | 是 | - |
+| `meshy_task_id` | 来自先前 Meshy 3D 生成或转换任务的唯一标识符（任务 ID）。它提供要进行纹理化的基础 3D 模型。 | MESHY_TASK_ID, STRING | 是 | - |
 | `启用原始UV` | 使用模型的原始 UV，而不是生成新的 UV。启用时（默认：`True`），Meshy 会保留上传的模型中已有的纹理。如果模型没有原始 UV，输出质量可能不会那么好。这是一个高级选项。 | BOOLEAN | 是 | true / false |
 | `PBR` | 为纹理化模型启用基于物理的渲染（PBR）材质输出（默认：`False`）。这是一个高级选项。 | BOOLEAN | 是 | true / false |
 | `文本风格提示` | 使用文本描述对象所需的纹理风格（默认：空字符串）。最多 600 个字符。不能与 `image_style` 同时使用。 | STRING | 是 | - |
@@ -24,11 +24,11 @@ Meshy: Texture Model 节点将 AI 生成的纹理应用到现有的 3D 模型。
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
 | `model_file` | 生成的 GLB 模型的文件名。此输出仅为向后兼容而提供。 | STRING |
-| `meshy_task_id` | 此纹理化作业的唯一任务标识符，可用于引用结果。 | MESHY_TASK_ID |
+| `meshy_task_id` | 此纹理化作业的唯一任务标识符，可用于引用结果。 | MESHY_TASK_ID, STRING |
 | `GLB` | 以 GLB 文件格式保存的已纹理化 3D 模型。 | FILE3DGLB |
 | `FBX` | 以 FBX 文件格式保存的已纹理化 3D 模型。 | FILE3DFBX |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `30d51f6efe3602f27d99706840c974baf2c4397a4f9a191f3478e7eff372e319`
+**Source fingerprint (SHA-256):** `31a79c719799c04d1819d36dc1ec231b9954030a14dbb29461ecd782867c32cb`

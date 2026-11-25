@@ -7,7 +7,7 @@
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | 텍스처링 작업에 사용되는 AI 모델입니다. 현재는 `"meshy-7"`만 사용할 수 있습니다. | COMBO | 예 | `"meshy-7"` |
-| `meshy_task_id` | 텍스처링할 이전에 생성된 3D 모델의 작업 ID입니다. | MESHY_TASK_ID | 예 | — |
+| `meshy_task_id` | 텍스처링할 이전에 생성된 3D 모델의 작업 ID입니다. | MESHY_TASK_ID, STRING | 예 | — |
 | `multiview_images` | 동일한 객체의 참조 뷰입니다. 첫 번째 이미지는 기본(정면) 뷰이며, 나머지 뷰의 순서는 상관없습니다. 확장 가능한 슬롯: 이미지 1~4개(`image_1`~`image_4`)를 연결합니다. | IMAGE | 예 | 이미지 1~4개 |
 | `enable_original_uv` | 새 UV를 생성하는 대신 모델의 원본 UV를 사용합니다. 활성화하면 Meshy가 업로드된 모델의 기존 텍스처를 보존합니다. 모델에 원본 UV가 없으면 출력 품질이 좋지 않을 수 있습니다. (기본값: True, 고급 옵션) | BOOLEAN | 아니요 | True / False |
 | `pbr` | PBR(물리 기반 렌더링) 텍스처 생성을 활성화합니다. (기본값: False, 고급 옵션) | BOOLEAN | 아니요 | True / False |
@@ -20,11 +20,11 @@
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
 | `model_file` | 모델 파일 이름입니다. 이 출력은 하위 호환성을 위해서만 유지됩니다. | STRING |
-| `meshy_task_id` | 텍스처링 작업의 작업 ID입니다. | MESHY_TASK_ID |
+| `meshy_task_id` | 텍스처링 작업의 작업 ID입니다. | MESHY_TASK_ID, STRING |
 | `GLB` | GLB 형식으로 다운로드된 텍스처가 입혀진 3D 모델입니다. | FILE3DGLB |
 | `FBX` | FBX 형식으로 다운로드된 텍스처가 입혀진 3D 모델입니다. | FILE3DFBX |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureMultiViewNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `3a08d003683a182121471a064833c09b932c7c84c20fd5cb5ac0285e135b2b7e`
+**Source fingerprint (SHA-256):** `358cc98a3e60795a9294e302deecb7501da2425bf7afe90462999f3e77ab1c3b`

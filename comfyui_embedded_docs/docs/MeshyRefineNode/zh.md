@@ -7,7 +7,7 @@ Meshy: Refine Draft Model 节点获取来自先前 Meshy 任务的 3D 草稿模�
 | 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | 用于细化草稿模型的 AI 模型。 | COMBO | 是 | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `meshy_task_id` | 要细化的草稿模型的唯一任务 ID。 | MESHY_TASK_ID | 是 | - |
+| `meshy_task_id` | 要细化的草稿模型的唯一任务 ID。 | MESHY_TASK_ID, STRING | 是 | - |
 | `enable_pbr` | 生成 PBR 贴图（金属度、粗糙度、法线）以及基础颜色。注意：使用雕塑风格时应将其设为 false，因为雕塑风格会生成自己的一套 PBR 贴图。（默认值：False） | BOOLEAN | 是 | - |
 | `texture_prompt` | 提供文本提示以引导纹理生成过程。最多 600 个字符。不能与 `texture_image` 同时使用。（默认值：空字符串） | STRING | 是 | - |
 | `texture_image` | `texture_image` 和 `texture_prompt` 中只能同时使用一个。 | IMAGE | 否 | - |
@@ -20,11 +20,11 @@ Meshy: Refine Draft Model 节点获取来自先前 Meshy 任务的 3D 草稿模�
 | 输出名 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
 | `模型文件` | 生成的 GLB 模型的文件名。（仅用于向后兼容） | STRING |
-| `meshy_task_id` | 已提交细化作业的唯一任务 ID。 | MESHY_TASK_ID |
+| `meshy_task_id` | 已提交细化作业的唯一任务 ID。 | MESHY_TASK_ID, STRING |
 | `GLB` | 最终细化的 3D 模型，格式为 GLB。 | FILE3DGLB |
 | `FBX` | 最终细化的 3D 模型，格式为 FBX。 | FILE3DFBX |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRefineNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `d9aac584e6abf9688c97bf01ea515bca13844d08c93923a672fb2853266926c8`
+**Source fingerprint (SHA-256):** `fa15faa0d5bada54579c310c96451db0ed06a803d2cd2e1eeb949a5e5f556145`

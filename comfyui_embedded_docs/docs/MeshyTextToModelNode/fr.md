@@ -27,11 +27,11 @@ Lorsque `ultra_mode` est activé, le paramètre `model` doit être défini sur `
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
 | `model_file` | Nom de fichier du modèle GLB généré. Cette sortie est fournie pour la compatibilité descendante. | STRING |
-| `meshy_task_id` | Identifiant unique de la tâche de l'API Meshy. | MESHY_TASK_ID |
+| `meshy_task_id` | Identifiant unique de la tâche de l'API Meshy. | MESHY_TASK_ID, STRING |
 | `GLB` | Fichier de modèle 3D généré au format GLB. | FILE3DGLB |
 | `FBX` | Fichier de modèle 3D généré au format FBX. | FILE3DFBX |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `a02a5ae28bcae343c628d11ba3efa952b61b8bdf867669f58f1beb0f7c9e49f9`
+**Source fingerprint (SHA-256):** `cbd1a3d18c31a4021efdae83f597b01b1ff5ce3d7dad19fedc98db420d4e3ebb`

@@ -6,7 +6,7 @@ The Meshy: Rig Model node takes a 3D model from a previous Meshy task and automa
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `meshy_task_id` | The unique task ID from a previous Meshy operation (e.g., text-to-3D or image-to-3D) that generated the model to be rigged. | MESHY_TASK_ID | Yes | N/A |
+| `meshy_task_id` | The unique task ID from a previous Meshy operation (e.g., text-to-3D or image-to-3D) that generated the model to be rigged. | MESHY_TASK_ID, STRING | Yes | N/A |
 | `height_meters` | The approximate height of the character model in meters. This aids in scaling and rigging accuracy (default: 1.7). | FLOAT | Yes | 0.1 to 15.0 |
 | `texture_image` | The model's UV-unwrapped base color texture image. | IMAGE | No | N/A |
 
@@ -17,11 +17,11 @@ The Meshy: Rig Model node takes a 3D model from a previous Meshy task and automa
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
 | `model_file` | A legacy output kept for backward compatibility only, containing the filename of the GLB model. | STRING |
-| `rig_task_id` | The unique task ID for this rigging operation, which can be used to reference the result in later Meshy nodes. | MESHY_RIGGED_TASK_ID |
+| `rig_task_id` | The unique task ID for this rigging operation, which can be used to reference the result in later Meshy nodes. | MESHY_RIGGED_TASK_ID, STRING |
 | `GLB` | The rigged 3D character model saved in the GLB file format. | FILE3DGLB |
 | `FBX` | The rigged 3D character model saved in the FBX file format. | FILE3DFBX |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRigModelNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `6ae79359fa54f36dd2491a952fe54fa56866038758e8cd475a2d2f8e9e47e3b3`
+**Source fingerprint (SHA-256):** `6f1c9cdf1f27511b66fb4a26259657eb41b331b8e7e1d33e5450d275dd7cacba`

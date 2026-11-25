@@ -6,7 +6,7 @@
 
 | פרמטר | תיאור | סוג נתונים | נדרש | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `rig_task_id` | מזהה המשימה הייחודי מפעולת ריגינג קודמת של דמות Meshy שהושלמה. | MESHY_RIGGED_TASK_ID | כן | N/A |
+| `rig_task_id` | מזהה המשימה הייחודי מפעולת ריגינג קודמת של דמות Meshy שהושלמה. | MESHY_RIGGED_TASK_ID, STRING | כן | N/A |
 | `action_id` | מספר המזהה של פעולת האנימציה להחלה. בקרו ב-https://docs.meshy.ai/en/api/animation-library לקבלת רשימה של ערכים זמינים. (ברירת מחדל: 0) | INT | כן | 0 עד 696 |
 
 ## פלטים
@@ -20,4 +20,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `760e94d3a92910051d9b473545191842dc9672e6c4a59c3d1cd9cfdc5eb2589d`
+**Source fingerprint (SHA-256):** `d2fe5e62d8261880fe55cf305bc8bac4cb85367914d9ddfe2308ad1b43c85a16`

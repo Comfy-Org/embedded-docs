@@ -6,7 +6,7 @@ El nodo Meshy: Rig Model toma un modelo 3D de una tarea previa de Meshy y crea a
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `id_de_tarea_meshy` | El ID de tarea único de una operación previa de Meshy (p. ej., texto a 3D o imagen a 3D) que generó el modelo al que se le aplicará rigging. | MESHY_TASK_ID | Sí | N/A |
+| `id_de_tarea_meshy` | El ID de tarea único de una operación previa de Meshy (p. ej., texto a 3D o imagen a 3D) que generó el modelo al que se le aplicará rigging. | MESHY_TASK_ID, STRING | Sí | N/A |
 | `altura_metros` | La altura aproximada del modelo de personaje en metros. Esto ayuda a la precisión del escalado y del rigging (predeterminado: 1.7). | FLOAT | Sí | 0.1 a 15.0 |
 | `imagen_de_textura` | La imagen de textura de color base con desarrollo UV del modelo. | IMAGE | No | N/A |
 
@@ -17,11 +17,11 @@ El nodo Meshy: Rig Model toma un modelo 3D de una tarea previa de Meshy y crea a
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
 | `model_file` | Una salida heredada que se conserva únicamente por compatibilidad con versiones anteriores y que contiene el nombre de archivo del modelo GLB. | STRING |
-| `rig_task_id` | El ID de tarea único para esta operación de rigging, que se puede usar para hacer referencia al resultado en nodos Meshy posteriores. | MESHY_RIGGED_TASK_ID |
+| `rig_task_id` | El ID de tarea único para esta operación de rigging, que se puede usar para hacer referencia al resultado en nodos Meshy posteriores. | MESHY_RIGGED_TASK_ID, STRING |
 | `GLB` | El modelo de personaje 3D con rigging guardado en formato de archivo GLB. | FILE3DGLB |
 | `FBX` | El modelo de personaje 3D con rigging guardado en formato de archivo FBX. | FILE3DFBX |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRigModelNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `6ae79359fa54f36dd2491a952fe54fa56866038758e8cd475a2d2f8e9e47e3b3`
+**Source fingerprint (SHA-256):** `6f1c9cdf1f27511b66fb4a26259657eb41b331b8e7e1d33e5450d275dd7cacba`

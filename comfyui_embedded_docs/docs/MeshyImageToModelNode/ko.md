@@ -35,11 +35,11 @@ Meshy: Image to Model 노드는 Meshy API를 사용하여 단일 입력 이미�
 | 출력 이름 | 설명 | 데이터 유형 |
 | --- | --- | --- |
 | `model_file` | 생성된 GLB 모델의 파일 이름입니다. 이전 버전과의 호환성을 위해서만 유지됩니다. | STRING |
-| `meshy_task_id` | Meshy API 작업의 고유 식별자로, 참조 또는 문제 해결에 사용할 수 있습니다. | MESHY_TASK_ID |
+| `meshy_task_id` | Meshy API 작업의 고유 식별자로, 참조 또는 문제 해결에 사용할 수 있습니다. | MESHY_TASK_ID, STRING |
 | `GLB` | GLB 파일 형식으로 생성된 3D 모델입니다. | FILE3DGLB |
 | `FBX` | FBX 파일 형식으로 생성된 3D 모델입니다. | FILE3DFBX |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `38528b48c3f792a459008a52f65fae248ef1dadafb37fe4dc6b697d25bc89f4f`
+**Source fingerprint (SHA-256):** `084118fd44d003e35b9ef531654be8ffbbd4845126d93101a07a7bcacfa8738e`

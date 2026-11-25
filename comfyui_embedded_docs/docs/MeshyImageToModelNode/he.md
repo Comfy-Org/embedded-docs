@@ -35,11 +35,11 @@
 | שם פלט | תיאור | סוג נתונים |
 | --- | --- | --- |
 | `model_file` | שם הקובץ של מודל ה-GLB שנוצר. נשמר רק עבור תאימות לאחור. | STRING |
-| `meshy_task_id` | המזהה הייחודי של משימת ה-API של Meshy, שיכול לשמש להתייחסות או לפתרון בעיות. | MESHY_TASK_ID |
+| `meshy_task_id` | המזהה הייחודי של משימת ה-API של Meshy, שיכול לשמש להתייחסות או לפתרון בעיות. | MESHY_TASK_ID, STRING |
 | `GLB` | המודל התלת-ממדי שנוצר בפורמט קובץ GLB. | FILE3DGLB |
 | `FBX` | המודל התלת-ממדי שנוצר בפורמט קובץ FBX. | FILE3DFBX |
 
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `38528b48c3f792a459008a52f65fae248ef1dadafb37fe4dc6b697d25bc89f4f`
+**Source fingerprint (SHA-256):** `084118fd44d003e35b9ef531654be8ffbbd4845126d93101a07a7bcacfa8738e`

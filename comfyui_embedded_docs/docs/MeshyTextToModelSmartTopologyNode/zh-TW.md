@@ -21,11 +21,11 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 |-------------|-------------|-----------|
-| `meshy_task_id` | Meshy API 任務的唯一識別碼。 | MESHY_TASK_ID |
+| `meshy_task_id` | Meshy API 任務的唯一識別碼。 | MESHY_TASK_ID, STRING |
 | `GLB` | 以 GLB 格式生成的 3D 模型。 | FILE3DGLB |
 | `FBX` | 以 FBX 格式生成的 3D 模型。 | FILE3DFBX |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelSmartTopologyNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `9fcdc846a4ba39cf3d099629637fbb0cf6d9c8d65bcee8aff5ec6ac5c76b6af3`
+**Source fingerprint (SHA-256):** `a49cdddcb2e50ce21d84a51c552bb06f049b62c316532eddd16a0c7c8416a8e4`

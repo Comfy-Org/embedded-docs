@@ -29,11 +29,11 @@ Dieser Node erzeugt mit Meshy T2.5 aus einem Referenzbild ein spielfertiges Drei
 
 | Ausgabenname | Beschreibung | Datentyp |
 |-------------|-------------|-----------|
-| `meshy_task_id` | Der eindeutige Bezeichner der Meshy-API-Aufgabe. | MESHY_TASK_ID |
+| `meshy_task_id` | Der eindeutige Bezeichner der Meshy-API-Aufgabe. | MESHY_TASK_ID, STRING |
 | `GLB` | Das generierte 3D-Modell im GLB-Format. | FILE3DGLB |
 | `FBX` | Das generierte 3D-Modell im FBX-Format. | FILE3DFBX |
 
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelSmartTopologyNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `e78034a591825ec6e105df1942cf501e882ac780cc2584bfa04b424ecc34a02e`
+**Source fingerprint (SHA-256):** `17704680639b8abca5247f2a3f6392871a0feb2a67e4396ba6922cf4c11d7143`

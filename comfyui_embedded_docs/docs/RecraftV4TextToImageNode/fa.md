@@ -8,7 +8,7 @@
 
 | پارامتر | توضیحات | نوع داده | الزامی | محدوده |
 |-----------|-------------|-----------|----------|-------|
-| `مدل` | مدلی که برای تولید استفاده می‌شود. مدل‌های recraftv4_styles برای تولید سازگار با سبک ساخته شده‌اند و همیشه به `style_id` یا `style_references` نیاز دارند. `recraftv4_1_flash` سریع‌ترین و ارزان‌ترین مدل است و به‌کلی از سبک‌ها پشتیبانی نمی‌کند. | DYNAMIC_COMBO | بله | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `مدل` | مدلی که برای تولید استفاده می‌شود. مدل‌های recraftv4_styles برای تولید سازگار با سبک ساخته شده‌اند و همیشه به `style_id` یا `style_references` نیاز دارند. `recraftv4_1_flash` نسخهٔ Recraft V4.1 Flash V2 را اجرا می‌کند که سریع‌ترین و ارزان‌ترین مدل است و به‌کلی از سبک‌ها پشتیبانی نمی‌کند. | DYNAMIC_COMBO | بله | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `پرامپت` | پرامپت برای تولید تصویر. حداکثر 10,000 کاراکتر. | STRING | بله | 1 تا 10000 کاراکتر |
 | `پرامپت منفی` | این ورودی نادیده گرفته می‌شود: پرامپت منفی توسط مدل‌های Recraft V4 و V4.1 پشتیبانی نمی‌شود. | STRING | بله | N/A |
 | `تعداد` | تعداد تصاویری که باید تولید شود (پیش‌فرض: 1). | INT | بله | 1 تا 6 |
@@ -51,4 +51,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `690286e663f27b525e58f81a7f883e490dacd48c1a34ee7b8e9ad4efd9935ff1`
+**Source fingerprint (SHA-256):** `a762c76c262ac2e973ab4dfebf392cd66ea5672cca431ad4f849eb7819ead6a0`

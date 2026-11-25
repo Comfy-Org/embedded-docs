@@ -6,7 +6,7 @@ Meshy: Rig Model 노드는 이전 Meshy 작업의 3D 모델을 가져와 자동�
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `meshy_task_id` | 리깅할 모델을 생성한 이전 Meshy 작업(예: text-to-3D 또는 image-to-3D)의 고유 작업 ID입니다. | MESHY_TASK_ID | 예 | N/A |
+| `meshy_task_id` | 리깅할 모델을 생성한 이전 Meshy 작업(예: text-to-3D 또는 image-to-3D)의 고유 작업 ID입니다. | MESHY_TASK_ID, STRING | 예 | N/A |
 | `height_meters` | 캐릭터 모델의 대략적인 높이(단위: 미터)입니다. 이는 스케일링 및 리깅 정확도에 도움이 됩니다(기본값: 1.7). | FLOAT | 예 | 0.1  ~  15.0 |
 | `texture_image` | 모델의 UV 언랩된 기본 색상 텍스처 이미지입니다. | IMAGE | 아니요 | N/A |
 
@@ -17,11 +17,11 @@ Meshy: Rig Model 노드는 이전 Meshy 작업의 3D 모델을 가져와 자동�
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
 | `model_file` | 이전 버전과의 호환성을 위해서만 유지되는 레거시 출력으로, GLB 모델의 파일 이름을 포함합니다. | STRING |
-| `rig_task_id` | 이 리깅 작업의 고유 작업 ID로, 이후 Meshy 노드에서 결과를 참조하는 데 사용할 수 있습니다. | MESHY_RIGGED_TASK_ID |
+| `rig_task_id` | 이 리깅 작업의 고유 작업 ID로, 이후 Meshy 노드에서 결과를 참조하는 데 사용할 수 있습니다. | MESHY_RIGGED_TASK_ID, STRING |
 | `GLB` | GLB 파일 형식으로 저장된 리깅된 3D 캐릭터 모델입니다. | FILE3DGLB |
 | `FBX` | FBX 파일 형식으로 저장된 리깅된 3D 캐릭터 모델입니다. | FILE3DFBX |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRigModelNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `6ae79359fa54f36dd2491a952fe54fa56866038758e8cd475a2d2f8e9e47e3b3`
+**Source fingerprint (SHA-256):** `6f1c9cdf1f27511b66fb4a26259657eb41b331b8e7e1d33e5450d275dd7cacba`

@@ -7,7 +7,7 @@ Le nœud Meshy: Refine Draft Model prend un modèle 3D provisoire issu d'une tâ
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `modèle` | Le modèle IA utilisé pour affiner le modèle provisoire. | COMBO | Oui | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `meshy_task_id` | L'identifiant unique de la tâche du modèle provisoire que vous souhaitez affiner. | MESHY_TASK_ID | Oui | - |
+| `meshy_task_id` | L'identifiant unique de la tâche du modèle provisoire que vous souhaitez affiner. | MESHY_TASK_ID, STRING | Oui | - |
 | `activer_pbr` | Génère des cartes PBR (métallique, rugosité, normale) en plus de la couleur de base. Remarque : cette option doit être définie sur false lors de l'utilisation du style Sculpture, car ce style génère son propre ensemble de cartes PBR. (par défaut : False) | BOOLEAN | Oui | - |
 | `invite_texture` | Fournissez une invite de texte pour guider le processus de texturation. 600 caractères maximum. Ne peut pas être utilisé en même temps que `texture_image`. (par défaut : chaîne vide) | STRING | Oui | - |
 | `image_texture` | Un seul de `texture_image` ou `texture_prompt` peut être utilisé en même temps. | IMAGE | Non | - |
@@ -20,11 +20,11 @@ Le nœud Meshy: Refine Draft Model prend un modèle 3D provisoire issu d'une tâ
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
 | `model_file` | Le nom de fichier du modèle GLB généré. (Uniquement pour la rétrocompatibilité) | STRING |
-| `meshy_task_id` | L'identifiant unique de la tâche pour le travail d'affinage soumis. | MESHY_TASK_ID |
+| `meshy_task_id` | L'identifiant unique de la tâche pour le travail d'affinage soumis. | MESHY_TASK_ID, STRING |
 | `GLB` | Le modèle 3D affiné final au format GLB. | FILE3DGLB |
 | `FBX` | Le modèle 3D affiné final au format FBX. | FILE3DFBX |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRefineNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d9aac584e6abf9688c97bf01ea515bca13844d08c93923a672fb2853266926c8`
+**Source fingerprint (SHA-256):** `fa15faa0d5bada54579c310c96451db0ed06a803d2cd2e1eeb949a5e5f556145`

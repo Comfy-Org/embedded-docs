@@ -7,7 +7,7 @@ The Meshy: Refine Draft Model node takes a 3D draft model from a previous Meshy 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `model` | The AI model used to refine the draft model. | COMBO | Yes | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `meshy_task_id` | The unique task ID of the draft model you want to refine. | MESHY_TASK_ID | Yes | - |
+| `meshy_task_id` | The unique task ID of the draft model you want to refine. | MESHY_TASK_ID, STRING | Yes | - |
 | `enable_pbr` | Generate PBR Maps (metallic, roughness, normal) in addition to the base color. Note: this should be set to false when using Sculpture style, as Sculpture style generates its own set of PBR maps. (default: False) | BOOLEAN | Yes | - |
 | `texture_prompt` | Provide a text prompt to guide the texturing process. Maximum 600 characters. Cannot be used at the same time as `texture_image`. (default: empty string) | STRING | Yes | Maximum 600 characters |
 | `texture_image` | Only one of `texture_image` or `texture_prompt` may be used at the same time. | IMAGE | No | - |
@@ -20,11 +20,11 @@ The Meshy: Refine Draft Model node takes a 3D draft model from a previous Meshy 
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
 | `model_file` | The filename of the generated GLB model. (For backward compatibility only) | STRING |
-| `meshy_task_id` | The unique task ID for the submitted refinement job. | MESHY_TASK_ID |
+| `meshy_task_id` | The unique task ID for the submitted refinement job. | MESHY_TASK_ID, STRING |
 | `GLB` | The final refined 3D model in GLB format. | FILE3DGLB |
 | `FBX` | The final refined 3D model in FBX format. | FILE3DFBX |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRefineNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `d9aac584e6abf9688c97bf01ea515bca13844d08c93923a672fb2853266926c8`
+**Source fingerprint (SHA-256):** `fa15faa0d5bada54579c310c96451db0ed06a803d2cd2e1eeb949a5e5f556145`

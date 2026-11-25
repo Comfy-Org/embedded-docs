@@ -29,11 +29,11 @@ Questo nodo genera una mesh triangolare pronta per i videogiochi da un'immagine 
 
 | Nome output | Descrizione | Tipo di dato |
 |-------------|-------------|--------------|
-| `meshy_task_id` | L'identificatore univoco del task API Meshy. | MESHY_TASK_ID |
+| `meshy_task_id` | L'identificatore univoco del task API Meshy. | MESHY_TASK_ID, STRING |
 | `GLB` | Il modello 3D generato in formato GLB. | FILE3DGLB |
 | `FBX` | Il modello 3D generato in formato FBX. | FILE3DFBX |
 
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelSmartTopologyNode/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `e78034a591825ec6e105df1942cf501e882ac780cc2584bfa04b424ecc34a02e`
+**Source fingerprint (SHA-256):** `17704680639b8abca5247f2a3f6392871a0feb2a67e4396ba6922cf4c11d7143`

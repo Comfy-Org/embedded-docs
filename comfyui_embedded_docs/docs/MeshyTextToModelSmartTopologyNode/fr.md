@@ -21,11 +21,11 @@ Ce nœud génère un maillage triangulaire prêt pour le jeu avec un nombre de f
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `meshy_task_id` | Identifiant unique de la tâche d’API Meshy. | MESHY_TASK_ID |
+| `meshy_task_id` | Identifiant unique de la tâche d’API Meshy. | MESHY_TASK_ID, STRING |
 | `GLB` | Le modèle 3D généré au format GLB. | FILE3DGLB |
 | `FBX` | Le modèle 3D généré au format FBX. | FILE3DFBX |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelSmartTopologyNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `9fcdc846a4ba39cf3d099629637fbb0cf6d9c8d65bcee8aff5ec6ac5c76b6af3`
+**Source fingerprint (SHA-256):** `a49cdddcb2e50ce21d84a51c552bb06f049b62c316532eddd16a0c7c8416a8e4`

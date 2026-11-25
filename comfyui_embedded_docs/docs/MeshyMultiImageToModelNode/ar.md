@@ -52,11 +52,11 @@
 | اسم المخرَج | الوصف | نوع البيانات |
 | --- | --- | --- |
 | `model_file` | اسم ملف نموذج GLB المولَّد. يتم توفير هذا المخرج للتوافق مع الإصدارات السابقة فقط. | STRING |
-| `meshy_task_id` | المعرف الفريد لمهمة Meshy API. | MESHY_TASK_ID |
+| `meshy_task_id` | المعرف الفريد لمهمة Meshy API. | MESHY_TASK_ID, STRING |
 | `GLB` | النموذج ثلاثي الأبعاد المولَّد بتنسيق GLB. | FILE3DGLB |
 | `FBX` | النموذج ثلاثي الأبعاد المولَّد بتنسيق FBX. | FILE3DFBX |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyMultiImageToModelNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `9475279c0990fc069b4fef2bf0e2e20218ca1a9591a261ce6d33a2b651782ddb`
+**Source fingerprint (SHA-256):** `656386a417ce082160a25acf6ddfe3a52a2c04b295f07d8749e8d420eaf404c6`

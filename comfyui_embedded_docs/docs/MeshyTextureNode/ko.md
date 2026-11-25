@@ -7,7 +7,7 @@ Meshy: Texture Model 노드는 기존 3D 모델에 AI 생성 텍스처를 적용
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 | --- | --- | --- | --- | --- |
 | `model` | 텍스처링에 사용할 AI 모델 버전입니다. | COMBO | 예 | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `meshy_task_id` | 이전 Meshy 3D 생성 또는 변환 작업의 고유 식별자(task ID)입니다. 텍스처를 적용할 기본 3D 모델을 제공합니다. | MESHY_TASK_ID | 예 | - |
+| `meshy_task_id` | 이전 Meshy 3D 생성 또는 변환 작업의 고유 식별자(task ID)입니다. 텍스처를 적용할 기본 3D 모델을 제공합니다. | MESHY_TASK_ID, STRING | 예 | - |
 | `원본 UV 사용` | 새로운 UV를 생성하는 대신 모델의 원본 UV를 사용합니다. 활성화하면(기본값: `True`) Meshy는 업로드된 모델의 기존 텍스처를 유지합니다. 모델에 원본 UV가 없으면 출력 품질이 저하될 수 있습니다. 이는 고급 옵션입니다. | BOOLEAN | 예 | true / false |
 | `pbr` | 텍스처가 적용된 모델에 물리 기반 렌더링(PBR) 재질 출력을 활성화합니다(기본값: `False`). 이는 고급 옵션입니다. | BOOLEAN | 예 | true / false |
 | `텍스트 스타일 프롬프트` | 텍스트를 사용하여 원하는 개체의 텍스처 스타일을 설명합니다(기본값: 빈 문자열). 최대 600자입니다. `image_style`과 동시에 사용할 수 없습니다. | STRING | 예 | - |
@@ -24,11 +24,11 @@ Meshy: Texture Model 노드는 기존 3D 모델에 AI 생성 텍스처를 적용
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
 | `model_file` | 생성된 GLB 모델의 파일 이름입니다. 이 출력은 하위 호환성을 위해서만 제공됩니다. | STRING |
-| `meshy_task_id` | 이 텍스처링 작업의 고유 task 식별자로, 결과를 참조하는 데 사용할 수 있습니다. | MESHY_TASK_ID |
+| `meshy_task_id` | 이 텍스처링 작업의 고유 task 식별자로, 결과를 참조하는 데 사용할 수 있습니다. | MESHY_TASK_ID, STRING |
 | `GLB` | GLB 파일 형식으로 저장된 텍스처가 적용된 3D 모델입니다. | FILE3DGLB |
 | `FBX` | FBX 파일 형식으로 저장된 텍스처가 적용된 3D 모델입니다. | FILE3DFBX |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `30d51f6efe3602f27d99706840c974baf2c4397a4f9a191f3478e7eff372e319`
+**Source fingerprint (SHA-256):** `31a79c719799c04d1819d36dc1ec231b9954030a14dbb29461ecd782867c32cb`

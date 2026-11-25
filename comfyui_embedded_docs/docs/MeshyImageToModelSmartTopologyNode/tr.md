@@ -29,11 +29,11 @@ Bu düğüm, Meshy T2.5 ile hedef yüz sayısında bir referans görselden oyun 
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `meshy_task_id` | Meshy API görevinin benzersiz tanımlayıcısı. | MESHY_TASK_ID |
+| `meshy_task_id` | Meshy API görevinin benzersiz tanımlayıcısı. | MESHY_TASK_ID, STRING |
 | `GLB` | GLB biçiminde oluşturulan 3D model. | FILE3DGLB |
 | `FBX` | FBX biçiminde oluşturulan 3D model. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelSmartTopologyNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `e78034a591825ec6e105df1942cf501e882ac780cc2584bfa04b424ecc34a02e`
+**Source fingerprint (SHA-256):** `17704680639b8abca5247f2a3f6392871a0feb2a67e4396ba6922cf4c11d7143`
