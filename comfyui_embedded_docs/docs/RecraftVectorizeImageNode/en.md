@@ -1,6 +1,6 @@
 # Recraft Vectorize Image Node
 
-Generates SVG vector graphics from an input image. This node converts raster images into scalable vector format by sending each image to the Recraft API and combining the results into a single SVG output.
+Generates SVG vector graphics from an input image. This node converts raster images into scalable vector format by sending each image to the Recraft API and returning the results in a single SVG output. That output holds a separate SVG document for each processed image; the documents are not merged into one.
 
 ## Inputs
 
@@ -14,7 +14,7 @@ Generates SVG vector graphics from an input image. This node converts raster ima
 
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
-| `SVG` | The generated vector graphics output combining all processed images into a single SVG document. | SVG |
+| `SVG` | The generated vector graphics. The single SVG output holds a separate SVG document for each processed image. | SVG |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftVectorizeImageNode/en.md)
 
