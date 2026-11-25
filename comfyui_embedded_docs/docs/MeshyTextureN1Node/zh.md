@@ -9,7 +9,7 @@
 | `model` | 用于纹理生成任务的 AI 模型。目前仅提供 `"meshy-n1"`。 | COMBO | 是 | `"meshy-n1"` |
 | `meshy_task_id` | 先前创建的、需要添加纹理的 3D 模型的任务 ID。 | MESHY_TASK_ID, STRING | 是 | N/A |
 | `front_view` | Meshy 视为正面的视图。仅提供一张图像时，只会为正面添加纹理，背面保持空白；可在 `extra_views` 中添加背面和侧面视图，以获得真实的背面效果。 | IMAGE | 是 | 单张图像 |
-| `extra_views` | 同一物体的更多视图，顺序不限。可增长的槽位：连接 0 到 3 张图像（`view_1` ... `view_3`）。与 `front_view` 合计最多 4 张图像。 | IMAGE | 否 | 0 到 3 张图像 |
+| `额外视图` | 同一物体的更多视图，顺序不限。可增长的槽位：连接 0 到 3 张图像（`view_1` ... `view_3`）。与 `front_view` 合计最多 4 张图像。 | IMAGE | 否 | 0 到 3 张图像 |
 | `enable_original_uv` | 使用模型的原始 UV，而不是生成新的 UV。启用后，Meshy 会保留所上传模型中已有的纹理。如果模型没有原始 UV，输出质量可能不够理想。（默认：True；高级选项） | BOOLEAN | 否 | True / False |
 
 **注意：** `front_view` 和 `extra_views` 合计最多可包含 4 张图像；连接更多图像时节点会报错。如果所连接的图像带有批次（batch），则该批次中的每张图像都会计入此限制。纹理分辨率固定为 2K，且不会生成 PBR 贴图。
