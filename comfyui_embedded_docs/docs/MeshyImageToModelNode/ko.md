@@ -17,7 +17,7 @@ Meshy: Image to Model 노드는 Meshy API를 사용하여 단일 입력 이미�
 | `texture_prompt` | 텍스처링 과정을 안내하는 텍스트 프롬프트를 제공합니다. 최대 600자입니다. `texture_image`와 동시에 사용할 수 없습니다. 이 입력은 `should_texture` 값이 `"true"`로 설정된 경우에만 사용할 수 있습니다. 기본값: 빈 문자열. | STRING | 아니요* | - |
 | `texture_image` | `texture_image`와 `texture_prompt` 중 하나만 동시에 사용할 수 있습니다. 이 입력은 `should_texture` 값이 `"true"`로 설정된 경우에만 사용할 수 있습니다. | IMAGE | 아니요* | - |
 | `texture_resolution` | 베이스 컬러 텍스처 해상도입니다. 해상도가 높을수록 더 세밀한 표면 디테일을 포착합니다. 이 입력은 `should_texture` 값이 `"true"`로 설정된 경우에만 사용할 수 있습니다. | COMBO | 아니요* | `"2k"`<br>`"4k"`<br>`"8k"` |
-| `pose_mode` | 생성된 모델의 포즈 모드를 지정합니다. 고급 매개변수입니다. | COMBO | 예 | `""` (empty)<br>`"A-pose"`<br>`"T-pose"` |
+| `pose_mode` | 생성된 모델의 포즈 모드를 지정합니다. 고급 매개변수입니다. | COMBO | 예 | `""` (비어 있음)<br>`"A-pose"`<br>`"T-pose"` |
 | `seed` | 시드는 노드 재실행 여부를 제어합니다. 시드와 관계없이 결과는 비결정적입니다. 기본값: 0. | INT | 예 | 0 - 2147483647 |
 | `ultra_mode` | 더 미세한 표면 디테일과 더 높은 정밀도의 지오메트리를 위해 추가 정제 패스를 실행합니다. 기본값: `False`. | BOOLEAN | 예 | - |
 | `ultra_resolution` | 울트라 패스의 해상도: `"2k"`는 2048³, `"4k"`는 4096³에서 실행되어 가장 세밀한 표면 디테일을 제공합니다. `"4k"`에는 `"meshy-7.1"` 또는 `"latest"` 모델이 필요합니다. `ultra_mode`가 활성화된 경우에만 사용됩니다(기본값: `"2k"`). | COMBO | 아니요 | `"2k"`<br>`"4k"` |
