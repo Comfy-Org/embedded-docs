@@ -7,7 +7,7 @@ Erzeugt SVG-Vektorgrafiken aus einem Eingabebild. Dieser Node wandelt Rasterbild
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `image` | Das Eingabebild, das in das SVG-Format konvertiert werden soll. Unterstützt die Stapelverarbeitung mehrerer Bilder. | IMAGE | Ja | - |
-| `version` | Die Version des Vektorisierers: `v1` ist die Standardversion, und `v1_pro` (Vectorizer Pro) liefert sauberere SVGs mit glatten Kurven, geraden Linien und scharfen Ecken, ideal für Beschriftungen und komplexe Formen (Standard: "v1"). | COMBO | Nein | "v1"<br>"v1_pro" |
+| `Version` | Die Version des Vektorisierers: `v1` ist die Standardversion, und `v1_pro` (Vectorizer Pro) liefert sauberere SVGs mit glatten Kurven, geraden Linien und scharfen Ecken, ideal für Beschriftungen und komplexe Formen (Standard: "v1"). | COMBO | Nein | "v1"<br>"v1_pro" |
 | `shape_stacking` | Wie Formen im SVG gestapelt werden: `hierarchical` schichtet Formen übereinander; `cut_out` erzeugt Formen, die sich niemals überlappen, für Plotter, Vinylschneider und Siebdruck (Standard: "hierarchical"). | COMBO | Nein | "hierarchical"<br>"cut_out" |
 
 ## Ausgaben

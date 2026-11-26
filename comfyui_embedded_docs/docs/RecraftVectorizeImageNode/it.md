@@ -7,7 +7,7 @@ Genera grafica vettoriale SVG da un'immagine di input. Questo nodo converte imma
 | Parametro | Descrizione | Tipo di dati | Obbligatorio | Intervallo |
 |-----------|-------------|--------------|--------------|------------|
 | `immagine` | L'immagine di input da convertire in formato SVG. Supporta l'elaborazione in batch di più immagini. | IMAGE | Sì | - |
-| `version` | La versione del vettorizzatore: `v1` è la versione standard, mentre `v1_pro` (Vectorizer Pro) produce SVG più puliti con curve morbide, linee rette e angoli netti, ideale per scritte e forme intricate (predefinito: "v1"). | COMBO | No | "v1"<br>"v1_pro" |
+| `versione` | La versione del vettorizzatore: `v1` è la versione standard, mentre `v1_pro` (Vectorizer Pro) produce SVG più puliti con curve morbide, linee rette e angoli netti, ideale per scritte e forme intricate (predefinito: "v1"). | COMBO | No | "v1"<br>"v1_pro" |
 | `shape_stacking` | Come vengono impilate le forme nell'SVG: `hierarchical` dispone le forme a strati una sopra l'altra; `cut_out` crea forme che non si sovrappongono mai, per plotter, taglierine per vinile e serigrafia (predefinito: "hierarchical"). | COMBO | No | "hierarchical"<br>"cut_out" |
 
 ## Output
