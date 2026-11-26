@@ -117,14 +117,6 @@
 
 این مدل‌ها تا 10 تصویر مرجع را پشتیبانی می‌کنند (به ورودی‌های مرجع مراجعه کنید).
 
-### ورودی‌های Moonshot Kimi K2 Thinking
-
-| پارامتر | توضیحات | نوع داده | الزامی | محدوده |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | میزان استدلال. گزینه 'off' استدلال را به‌طور کامل غیرفعال می‌کند. (پیش‌فرض: "off") | COMBO | خیر | "off"<br>"low"<br>"medium"<br>"high" |
-
-مدل متنی‌فقط — بدون تصاویر یا ویدیوهای مرجع.
-
 ### ورودی‌های Perplexity Sonar Pro
 
 | پارامتر | توضیحات | نوع داده | الزامی | محدوده |
@@ -153,7 +145,7 @@
 
 **نکته‌ها:**
 
-- **مدل‌های موجود:** گزینه‌های مدل موجود به‌صورت پویا ساخته می‌شوند و شامل مدل‌هایی با قابلیت‌های متفاوت هستند. فهرست کامل 36 مدل به این شرح است:
+- **مدل‌های موجود:** گزینه‌های مدل موجود به‌صورت پویا ساخته می‌شوند و شامل مدل‌هایی با قابلیت‌های متفاوت هستند. فهرست کامل 35 مدل به این شرح است:
   - Anthropic: `anthropic/claude-opus-5`، `anthropic/claude-opus-4.8`، `anthropic/claude-opus-4.7`، `anthropic/claude-fable-5`، `anthropic/claude-sonnet-5`، `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`، `openai/gpt-5.6-sol`، `openai/gpt-5.6-terra-pro`، `openai/gpt-5.6-terra`، `openai/gpt-5.6-luna-pro`، `openai/gpt-5.6-luna`، `openai/gpt-5.5-pro`، `openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
@@ -163,7 +155,7 @@
   - Qwen: ، `qwen/qwen3.6-plus`، `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`، `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`، `z-ai/glm-5`
-  - Moonshot: `moonshotai/kimi-k3`، `moonshotai/kimi-k2.6`، `moonshotai/kimi-k2-thinking`
+  - Moonshot: `moonshotai/kimi-k3`، `moonshotai/kimi-k2.6`
   - Perplexity: `perplexity/sonar-pro`، `perplexity/sonar-reasoning-pro`، `perplexity/sonar-deep-research`
 
 - **محدودیت‌های تصویر و ویدیو:** حداکثر تعداد تصاویر و ویدیوهای مرجع به مدل انتخاب‌شده بستگی دارد. اگر تعداد کل تصاویر یا ویدیوهای ارائه‌شده از حد مجاز مدل فراتر رود، گره خطا صادر می‌کند. مدل‌هایی که از تصویر یا ویدیو پشتیبانی نمی‌کنند، جایگاه‌های مرجع مربوطه را نمایش نمی‌دهند.
@@ -185,4 +177,4 @@
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`
+**Source fingerprint (SHA-256):** `7269c5823741963139f20f970b0faaae77781b712e6def96bfaebbfca09f0400`

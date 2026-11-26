@@ -117,14 +117,6 @@ Shared by `moonshotai/kimi-k3` and `moonshotai/kimi-k2.6`.
 
 These models support up to 10 reference images (see Reference Inputs).
 
-### Moonshot Kimi K2 Thinking Inputs
-
-| Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | Reasoning effort. 'off' disables reasoning entirely. (default: "off") | COMBO | No | "off"<br>"low"<br>"medium"<br>"high" |
-
-Text-only model — no reference images or videos.
-
 ### Perplexity Sonar Pro Inputs
 
 | Parameter | Description | Data Type | Required | Range |
@@ -153,7 +145,7 @@ Text-only models — no reference images or videos.
 
 **Notes:**
 
-- **Available models:** The available model options are dynamically built and include models with different capabilities. The full list of 36 models is:
+- **Available models:** The available model options are dynamically built and include models with different capabilities. The full list of 35 models is:
   - Anthropic: `anthropic/claude-opus-5`, `anthropic/claude-opus-4.8`, `anthropic/claude-opus-4.7`, `anthropic/claude-fable-5`, `anthropic/claude-sonnet-5`, `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-terra-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-luna`, `openai/gpt-5.5-pro`, `openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
@@ -163,7 +155,7 @@ Text-only models — no reference images or videos.
   - Qwen: `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`, `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`, `z-ai/glm-5`
-  - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`, `moonshotai/kimi-k2-thinking`
+  - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`
   - Perplexity: `perplexity/sonar-pro`, `perplexity/sonar-reasoning-pro`, `perplexity/sonar-deep-research`
 
 - **Image and video constraints:** The maximum number of reference images and videos depends on the selected model. The node raises an error if the total number of images or videos provided exceeds the model's limit. Models without image or video support do not show the corresponding reference slots.
@@ -185,4 +177,4 @@ Text-only models — no reference images or videos.
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`
+**Source fingerprint (SHA-256):** `7269c5823741963139f20f970b0faaae77781b712e6def96bfaebbfca09f0400`

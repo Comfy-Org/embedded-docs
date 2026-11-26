@@ -117,14 +117,6 @@ Yalnızca metin modelleri — referans görseli veya videosu yok.
 
 Bu modeller en fazla 10 referans görselini destekler (bkz. Referans Girdileri).
 
-### Moonshot Kimi K2 Thinking Girdileri
-
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | Akıl yürütme çabası. 'off' akıl yürütmeyi tamamen devre dışı bırakır. (varsayılan: "off") | COMBO | Hayır | "off"<br>"low"<br>"medium"<br>"high" |
-
-Yalnızca metin modeli — referans görseli veya videosu yok.
-
 ### Perplexity Sonar Pro Girdileri
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
@@ -153,7 +145,7 @@ Yalnızca metin modelleri — referans görseli veya videosu yok.
 
 **Notlar:**
 
-- **Kullanılabilir modeller:** Kullanılabilir model seçenekleri dinamik olarak oluşturulur ve farklı yeteneklere sahip modelleri içerir. 36 modelin tam listesi şu şekildedir:
+- **Kullanılabilir modeller:** Kullanılabilir model seçenekleri dinamik olarak oluşturulur ve farklı yeteneklere sahip modelleri içerir. 35 modelin tam listesi şu şekildedir:
   - Anthropic: `anthropic/claude-opus-5`, `anthropic/claude-opus-4.8`, `anthropic/claude-opus-4.7`, `anthropic/claude-fable-5`, `anthropic/claude-sonnet-5`, `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-terra-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-luna`, `openai/gpt-5.5-pro`, `openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
@@ -163,7 +155,7 @@ Yalnızca metin modelleri — referans görseli veya videosu yok.
   - Qwen: `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`, `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`, `z-ai/glm-5`
-  - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`, `moonshotai/kimi-k2-thinking`
+  - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`
   - Perplexity: `perplexity/sonar-pro`, `perplexity/sonar-reasoning-pro`, `perplexity/sonar-deep-research`
 
 - **Görsel ve video kısıtlamaları:** Referans görsellerinin ve videolarının maksimum sayısı seçilen modele bağlıdır. Sağlanan toplam görsel veya video sayısı modelin sınırını aşarsa düğüm bir hata verir. Görsel veya video desteği olmayan modeller, ilgili referans yuvalarını göstermez.
@@ -185,4 +177,4 @@ Yalnızca metin modelleri — referans görseli veya videosu yok.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`
+**Source fingerprint (SHA-256):** `7269c5823741963139f20f970b0faaae77781b712e6def96bfaebbfca09f0400`

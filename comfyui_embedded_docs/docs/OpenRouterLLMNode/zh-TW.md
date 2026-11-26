@@ -116,14 +116,6 @@ OpenRouter LLM 節點會將文字提示傳送給可透過 OpenRouter 服務使�
 
 這些模型最多支援 10 張參考影像（請參閱「參考輸入」）。
 
-### Moonshot Kimi K2 Thinking 輸入
-
-| 參數 | 描述 | 資料類型 | 必填 | 範圍 |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推理強度。設為 'off' 可完全停用推理。（預設值："off"） | COMBO | 否 | "off"<br>"low"<br>"medium"<br>"high" |
-
-僅限文字的模型——不支援參考影像或影片。
-
 ### Perplexity Sonar Pro 輸入
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
@@ -152,7 +144,7 @@ OpenRouter LLM 節點會將文字提示傳送給可透過 OpenRouter 服務使�
 
 **附註：**
 
-- **可用模型：** 可用模型選項會動態建立，並包含具有不同能力的模型。完整的 36 個模型清單如下：
+- **可用模型：** 可用模型選項會動態建立，並包含具有不同能力的模型。完整的 35 個模型清單如下：
 
   - Anthropic: `anthropic/claude-opus-5`, `anthropic/claude-opus-4.8`, `anthropic/claude-opus-4.7`, `anthropic/claude-fable-5`, `anthropic/claude-sonnet-5`, `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-terra-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-luna`, `openai/gpt-5.5-pro`, `openai/gpt-5.5`
@@ -163,7 +155,7 @@ OpenRouter LLM 節點會將文字提示傳送給可透過 OpenRouter 服務使�
   - Qwen: `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`, `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`, `z-ai/glm-5`
-  - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`, `moonshotai/kimi-k2-thinking`
+  - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`
   - Perplexity: `perplexity/sonar-pro`, `perplexity/sonar-reasoning-pro`, `perplexity/sonar-deep-research`
 
 - **影像與影片限制：** 參考影像和影片的數量上限取決於所選模型。如果提供的影像或影片總數超過模型限制，節點會拋出錯誤。不支援影像或影片的模型不會顯示對應的參考插槽。
@@ -184,4 +176,4 @@ OpenRouter LLM 節點會將文字提示傳送給可透過 OpenRouter 服務使�
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`
+**Source fingerprint (SHA-256):** `7269c5823741963139f20f970b0faaae77781b712e6def96bfaebbfca09f0400`

@@ -117,14 +117,6 @@ OpenRouter LLM 노드는 텍스트 프롬프트를 OpenRouter 서비스를 통�
 
 이 모델들은 최대 10개의 참조 이미지를 지원합니다 (참조 입력 참조).
 
-### Moonshot Kimi K2 Thinking 입력
-
-| 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 추론 노력입니다. 'off'로 설정하면 추론이 완전히 비활성화됩니다. (기본값: "off") | COMBO | 아니요 | "off"<br>"low"<br>"medium"<br>"high" |
-
-텍스트 전용 모델 — 참조 이미지 또는 비디오를 지원하지 않습니다.
-
 ### Perplexity Sonar Pro 입력
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
@@ -153,7 +145,7 @@ OpenRouter LLM 노드는 텍스트 프롬프트를 OpenRouter 서비스를 통�
 
 **참고:**
 
-- **사용 가능한 모델:** 사용 가능한 모델 옵션은 동적으로 구성되며 서로 다른 기능을 가진 모델을 포함합니다. 총 36개 모델의 전체 목록은 다음과 같습니다:
+- **사용 가능한 모델:** 사용 가능한 모델 옵션은 동적으로 구성되며 서로 다른 기능을 가진 모델을 포함합니다. 총 35개 모델의 전체 목록은 다음과 같습니다:
   - Anthropic: `anthropic/claude-opus-5`, `anthropic/claude-opus-4.8`, `anthropic/claude-opus-4.7`, `anthropic/claude-fable-5`, `anthropic/claude-sonnet-5`, `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-terra-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-luna`, `openai/gpt-5.5-pro`, `openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
@@ -163,7 +155,7 @@ OpenRouter LLM 노드는 텍스트 프롬프트를 OpenRouter 서비스를 통�
   - Qwen: `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`, `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`, `z-ai/glm-5`
-  - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`, `moonshotai/kimi-k2-thinking`
+  - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`
   - Perplexity: `perplexity/sonar-pro`, `perplexity/sonar-reasoning-pro`, `perplexity/sonar-deep-research`
 
 - **이미지 및 비디오 제약:** 참조 이미지와 비디오의 최대 개수는 선택한 모델에 따라 다릅니다. 제공된 이미지 또는 비디오의 총 수가 모델 제한을 초과하면 노드가 오류를 발생시킵니다. 이미지 또는 비디오를 지원하지 않는 모델은 해당 참조 슬롯을 표시하지 않습니다.
@@ -185,4 +177,4 @@ OpenRouter LLM 노드는 텍스트 프롬프트를 OpenRouter 서비스를 통�
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`
+**Source fingerprint (SHA-256):** `7269c5823741963139f20f970b0faaae77781b712e6def96bfaebbfca09f0400`

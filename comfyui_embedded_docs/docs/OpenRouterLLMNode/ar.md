@@ -117,14 +117,6 @@
 
 تدعم هذه النماذج ما يصل إلى 10 صور مرجعية (انظر المدخلات المرجعية).
 
-### مدخلات Moonshot Kimi K2 Thinking
-
-| المعامل | الوصف | نوع البيانات | إلزامي | النطاق |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | درجة التفكير. القيمة 'off' تعطل التفكير تمامًا. (الافتراضي: "off") | COMBO | لا | "off"<br>"low"<br>"medium"<br>"high" |
-
-نموذج نصي فقط — لا يدعم الصور أو الفيديو المرجعية.
-
 ### مدخلات Perplexity Sonar Pro
 
 | المعامل | الوصف | نوع البيانات | إلزامي | النطاق |
@@ -153,7 +145,7 @@
 
 **ملاحظات:**
 
-- **النماذج المتاحة:** يتم بناء خيارات النماذج المتاحة ديناميكيًا وتتضمن نماذج بقدرات مختلفة. القائمة الكاملة للنماذج الـ36 هي:
+- **النماذج المتاحة:** يتم بناء خيارات النماذج المتاحة ديناميكيًا وتتضمن نماذج بقدرات مختلفة. القائمة الكاملة للنماذج الـ35 هي:
   - Anthropic: `anthropic/claude-opus-5`، `anthropic/claude-opus-4.8`، `anthropic/claude-opus-4.7`، `anthropic/claude-fable-5`، `anthropic/claude-sonnet-5`، `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`، `openai/gpt-5.6-sol`، `openai/gpt-5.6-terra-pro`، `openai/gpt-5.6-terra`، `openai/gpt-5.6-luna-pro`، `openai/gpt-5.6-luna`، `openai/gpt-5.5-pro`، `openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
@@ -163,7 +155,7 @@
   - Qwen: ، `qwen/qwen3.6-plus`، `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`، `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`، `z-ai/glm-5`
-  - Moonshot: `moonshotai/kimi-k3`، `moonshotai/kimi-k2.6`، `moonshotai/kimi-k2-thinking`
+  - Moonshot: `moonshotai/kimi-k3`، `moonshotai/kimi-k2.6`
   - Perplexity: `perplexity/sonar-pro`، `perplexity/sonar-reasoning-pro`، `perplexity/sonar-deep-research`
 
 - **قيود الصور والفيديو:** يعتمد الحد الأقصى لعدد الصور والفيديو المرجعية على النموذج المحدد. ترفع العقدة خطأً إذا تجاوز العدد الإجمالي للصور أو الفيديو المقدمة حد النموذج. النماذج التي لا تدعم الصور أو الفيديو لا تُظهر فتحات المرجع المقابلة.
@@ -185,4 +177,4 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`
+**Source fingerprint (SHA-256):** `7269c5823741963139f20f970b0faaae77781b712e6def96bfaebbfca09f0400`
