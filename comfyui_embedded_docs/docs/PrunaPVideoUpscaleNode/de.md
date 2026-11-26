@@ -10,8 +10,8 @@ Pruna P-Video Upscale vergrößert ein Video auf 720p, 1080p, 2K oder 4K und beh
 | --- | --- | --- | --- | --- |
 | `Video` | Zu vergrößerndes Video, bis zu 512 MiB. Videos mit mehr als 10 Megapixeln können nur an das 2K- oder 4K-Ziel gesendet werden. | VIDEO | Ja | Bis zu 512 MiB |
 | `Ziel` | Ausgabepixelbereich: 720p entspricht etwa 0,9 Megapixeln, 1080p 2,1, 2K 3,7 und 4K 8,3. Der längste Clip wird durch das Ziel begrenzt: 2400, 1200, 600 oder 300 Frames, etwa 100, 50, 25 oder 12,5 Sekunden bei 24 fps (Standard: "1080p"). | COMBO | Ja | "720p"<br>"1080p"<br>"2K"<br>"4K" |
-| `fps` | Ausgabebildrate (Standard: "source"). "source" behält die Bildrate des Videos bei, bis zu 60; eine höhere Rate wird interpoliert. Eine Ausgabe über 30 fps kostet doppelt so viel. | COMBO | Ja | "source"<br>"16"<br>"24"<br>"25"<br>"30"<br>"48"<br>"50"<br>"60" |
-| `Turbo` | Schnelleres Upscaling mit weicheren Details zum gleichen Preis (Standard: false). | BOOLEAN | Nein | true<br>false |
+| `fps` | Ausgabebildrate (Standard: "source"). "source" behält die Bildrate des Videos bei, bis zu 60; eine höhere Rate wird interpoliert. Eine Ausgabe über 30 fps kostet doppelt so viel, außer mit `turbo`. | COMBO | Ja | "source"<br>"16"<br>"24"<br>"25"<br>"30"<br>"48"<br>"50"<br>"60" |
+| `Turbo` | Schnelleres Upscaling mit weicheren Details zu einem niedrigeren Preis (Standard: false). | BOOLEAN | Nein | true<br>false |
 
 ### Parametereinschränkungen
 
@@ -27,4 +27,4 @@ Pruna P-Video Upscale vergrößert ein Video auf 720p, 1080p, 2K oder 4K und beh
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrunaPVideoUpscaleNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `e8fc88b6177085e0852d17ff92b0a22a26c9914c012a9a244b19da9b2c0e38c2`
+**Source fingerprint (SHA-256):** `0c475fe2afc5804811ddacc6caf8565cf414e27cbbbc2d57175f39b28f927ab6`

@@ -8,8 +8,8 @@ Pruna P-Video Upscale 可将视频放大至 720p、1080p、2K 或 4K，同时保
 | --- | --- | --- | --- | --- |
 | `视频` | 待放大的视频，最大 512 MiB。超过 10 兆像素的视频只能发送至 2K 或 4K 目标。 | VIDEO | 是 | 最大 512 MiB |
 | `目标` | 输出像素面积：720p 约为 0.9 兆像素，1080p 为 2.1，2K 为 3.7，4K 为 8.3。最长片段受目标限制：2400、1200、600 或 300 帧，在 24 fps 下约为 100、50、25 或 12.5 秒（默认值："1080p"）。 | COMBO | 是 | "720p"<br>"1080p"<br>"2K"<br>"4K" |
-| `fps` | 输出帧率（默认值："source"）。"source" 保持视频原有帧率，最高 60；更高的帧率将通过插帧实现。输出高于 30 fps 的费用为两倍。 | COMBO | 是 | "source"<br>"16"<br>"24"<br>"25"<br>"30"<br>"48"<br>"50"<br>"60" |
-| `极速` | 更快的放大速度，细节更柔和，价格相同（默认值：false）。 | BOOLEAN | 否 | true<br>false |
+| `fps` | 输出帧率（默认值："source"）。"source" 保持视频原有帧率，最高 60；更高的帧率将通过插帧实现。输出高于 30 fps 的费用为两倍，使用 `turbo` 时除外。 | COMBO | 是 | "source"<br>"16"<br>"24"<br>"25"<br>"30"<br>"48"<br>"50"<br>"60" |
+| `极速` | 更快的放大速度，细节更柔和，价格更低（默认值：false）。 | BOOLEAN | 否 | true<br>false |
 
 ### 参数约束
 
@@ -25,4 +25,4 @@ Pruna P-Video Upscale 可将视频放大至 720p、1080p、2K 或 4K，同时保
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrunaPVideoUpscaleNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `e8fc88b6177085e0852d17ff92b0a22a26c9914c012a9a244b19da9b2c0e38c2`
+**Source fingerprint (SHA-256):** `0c475fe2afc5804811ddacc6caf8565cf414e27cbbbc2d57175f39b28f927ab6`
