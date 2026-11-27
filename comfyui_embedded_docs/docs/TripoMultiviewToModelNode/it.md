@@ -18,7 +18,7 @@ Questo nodo genera modelli 3D in modo sincrono utilizzando l'API di Tripo, elabo
 | `seme texture` | Seme casuale per la generazione della texture (predefinito: 42). | INT | No | 0 a 2,147,483,647 |
 | `qualità texture` | Livello di qualità per la generazione della texture (predefinito: `"standard"`). `"detailed"` = texture HD, `"extreme"` = texture Ultra 8K. | COMBO | No | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `allineamento texture` | Metodo utilizzato per allineare le texture al modello (predefinito: `"original_image"`). | COMBO | No | `"original_image"`<br>`"geometry"` |
-| `limite facce` | Numero massimo di facce. -1 lascia che Tripo scelga in modo adattivo (circa 1.4M facce su v3.x standard, 2M su detailed). Tripo applica un limite silenziosamente: v2.5 a 500,000, mesh quad a 150,000. (predefinito: -1) | INT | No | -1 a 2,000,000 |
+| `limite facce` | Numero massimo di facce. -1 lascia che Tripo scelga in modo adattivo (circa 1.4M facce su v3.x standard, 2M su detailed). Tripo applica un limite silenziosamente: mesh quad a 150,000. (predefinito: -1) | INT | No | -1 a 2,000,000 |
 | `quad` | Output con mesh quad. Tripo fornisce mesh quad come FBX, quindi il risultato arriva sull'output FBX e l'output GLB rimane vuoto. (predefinito: False) | BOOLEAN | No | - |
 | `qualità geometria` | Livello di qualità per la generazione della geometria (predefinito: `"standard"`). | COMBO | No | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Mesh low-poly con topologia pulita e dallo stile artigianale (500-20,000 facce, quad 500-10,000). Ideale per soggetti semplici; quelli complessi potrebbero fallire. (predefinito: False) | BOOLEAN | No | - |

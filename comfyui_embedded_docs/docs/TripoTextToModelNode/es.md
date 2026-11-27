@@ -16,7 +16,7 @@ Este nodo heredado genera modelos 3D terminados a partir de una descripción de 
 | `semilla_del_modelo` | Semilla utilizada para la etapa de generación del modelo (valor predeterminado: 42). | INT | No | 0 a 2147483647 |
 | `semilla_de_textura` | Semilla utilizada para la etapa de generación de texturas (valor predeterminado: 42). | INT | No | 0 a 2147483647 |
 | `calidad_de_textura` | Calidad de las texturas generadas. detailed = texturas HD, extreme = texturas Ultra 8K (valor predeterminado: standard). | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
-| `límite_de_caras` | Cantidad máxima de caras. -1 permite que Tripo elija de forma adaptativa (aproximadamente 1.4 M de caras en v3.x standard, 2 M en detailed). Tripo limita silenciosamente: v2.5 a 500,000, mallas quad a 150,000. (valor predeterminado: -1) | INT | No | -1 a 2000000 |
+| `límite_de_caras` | Cantidad máxima de caras. -1 permite que Tripo elija de forma adaptativa (aproximadamente 1.4 M de caras en v3.x standard, 2 M en detailed). Tripo limita silenciosamente: mallas quad a 150,000. (valor predeterminado: -1) | INT | No | -1 a 2000000 |
 | `cuadrante` | Salida de malla quad. Tripo entrega las mallas quad como FBX, por lo que el resultado llega a la salida FBX y la salida GLB permanece vacía. (valor predeterminado: False) | BOOLEAN | No | true / false |
 | `calidad_de_geometría` | Calidad de la geometría generada (valor predeterminado: standard). | COMBO | No | "standard"<br>"detailed" |
 | `smart_low_poly` | Malla low-poly con topología de estilo limpio y artesanal (500-20,000 caras, quad 500-10,000). Ideal para sujetos simples; los complejos pueden fallar. (valor predeterminado: False) | BOOLEAN | No | true / false |

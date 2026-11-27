@@ -16,7 +16,7 @@
 | `模型種子` | 用於模型生成階段的種子（預設：42）。 | INT | 否 | 0 至 2147483647 |
 | `紋理種子` | 用於紋理生成階段的種子（預設：42）。 | INT | 否 | 0 至 2147483647 |
 | `紋理品質` | 生成紋理的品質。detailed = HD 紋理，extreme = 8K Ultra 紋理（預設：standard）。 | COMBO | 否 | "standard"<br>"detailed"<br>"extreme" |
-| `面數限制` | 最大面數。-1 讓 Tripo 自適應選擇（v3.x standard 約 1.4M 面，detailed 約 2M 面）。Tripo 會默默限制：v2.5 為 500,000，四邊形網格為 150,000。（預設：-1） | INT | 否 | -1 至 2000000 |
+| `面數限制` | 最大面數。-1 讓 Tripo 自適應選擇（v3.x standard 約 1.4M 面，detailed 約 2M 面）。Tripo 會默默限制：四邊形網格為 150,000。（預設：-1） | INT | 否 | -1 至 2000000 |
 | `四邊形` | 四邊形網格輸出。Tripo 會以 FBX 格式提供四邊形網格，因此結果會出現在 FBX 輸出，而 GLB 輸出會保持空白。（預設：False） | BOOLEAN | 否 | true / false |
 | `幾何品質` | 生成幾何的品質（預設：standard）。 | COMBO | 否 | "standard"<br>"detailed" |
 | `smart_low_poly` | 具有乾淨、手工風格拓撲的低多邊形網格（500-20,000 面，四邊形 500-10,000）。最適合簡單主體；複雜主體可能會失敗。（預設：False） | BOOLEAN | 否 | true / false |

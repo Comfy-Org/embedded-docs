@@ -18,7 +18,7 @@ This node generates 3D models synchronously using Tripo's API by processing up t
 | `texture_seed` | Random seed for texture generation (default: 42). | INT | No | 0 to 2,147,483,647 |
 | `texture_quality` | Quality level for texture generation (default: `"standard"`). `"detailed"` = HD textures, `"extreme"` = 8K Ultra textures. | COMBO | No | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `texture_alignment` | Method used for aligning textures to the model (default: `"original_image"`). | COMBO | No | `"original_image"`<br>`"geometry"` |
-| `face_limit` | Maximum face count. -1 lets Tripo pick adaptively (about 1.4M faces on v3.x standard, 2M on detailed). Tripo clamps silently: v2.5 at 500,000, quad meshes at 150,000. (default: -1) | INT | No | -1 to 2,000,000 |
+| `face_limit` | Maximum face count. -1 lets Tripo pick adaptively (about 1.4M faces on v3.x standard, 2M on detailed). Tripo clamps quad meshes silently at 150,000. (default: -1) | INT | No | -1 to 2,000,000 |
 | `quad` | Quad mesh output. Tripo delivers quad meshes as FBX, so the result arrives on the FBX output and the GLB output stays empty. (default: False) | BOOLEAN | No | - |
 | `geometry_quality` | Quality level for geometry generation (default: `"standard"`). | COMBO | No | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Low-poly mesh with clean, hand-crafted style topology (500-20,000 faces, quad 500-10,000). Best for simple subjects; complex ones may fail. (default: False) | BOOLEAN | No | - |

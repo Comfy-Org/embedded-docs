@@ -15,7 +15,7 @@ Génère un modèle 3D à partir d'une description textuelle en utilisant le ser
 | `model_seed` | Valeur de graine pour la génération du modèle (par défaut : 42). | INT | Non | 0 à 2147483647 |
 | `texture_seed` | Valeur de graine pour la génération de texture (par défaut : 42). | INT | Non | 0 à 2147483647 |
 | `texture_quality` | Niveau de détail des textures (par défaut : "standard"). "detailed" = textures HD, "extreme" = textures 8K Ultra. | COMBO | Non | `"standard"`<br>`"detailed"`<br>`"extreme"` |
-| `face_limit` | Nombre maximal de faces. -1 laisse Tripo choisir de manière adaptative (environ 1,4 M de faces en v3.x standard, 2 M en detailed). Tripo limite silencieusement : v2.5 à 500 000, maillages quad à 150 000 (par défaut : -1). | INT | Non | -1 à 2000000 |
+| `face_limit` | Nombre maximal de faces. -1 laisse Tripo choisir de manière adaptative (environ 1,4 M de faces en v3.x standard, 2 M en detailed). Tripo limite silencieusement : maillages quad à 150 000 (par défaut : -1). | INT | Non | -1 à 2000000 |
 | `quad` | Sortie en maillage quad. Tripo livre les maillages quad au format FBX, le résultat arrive donc sur la sortie FBX et la sortie GLB reste vide (par défaut : False). | BOOLEAN | Non | True<br>False |
 | `geometry_quality` | Niveau de détail de la géométrie (par défaut : "standard"). | COMBO | Non | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Maillage low-poly avec une topologie propre de style artisanal (500-20 000 faces, quad 500-10 000). Idéal pour les sujets simples ; les sujets complexes peuvent échouer (par défaut : False). | BOOLEAN | Non | True<br>False |

@@ -18,7 +18,7 @@ Ce nœud génère des modèles 3D de manière synchrone en utilisant l'API de Tr
 | `graine_texture` | Graine aléatoire pour la génération de texture (par défaut : 42). | INT | Non | 0 à 2,147,483,647 |
 | `qualité_texture` | Niveau de qualité pour la génération de texture (par défaut : `"standard"`). `"detailed"` = textures HD, `"extreme"` = textures Ultra 8K. | COMBO | Non | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `alignement_texture` | Méthode utilisée pour aligner les textures sur le modèle (par défaut : `"original_image"`). | COMBO | Non | `"original_image"`<br>`"geometry"` |
-| `limite_visage` | Nombre maximal de faces. -1 laisse Tripo choisir de manière adaptative (environ 1,4 M de faces sur v3.x standard, 2 M sur detailed). Tripo limite silencieusement : v2.5 à 500 000, les maillages quad à 150 000. (par défaut : -1) | INT | Non | -1 à 2,000,000 |
+| `limite_visage` | Nombre maximal de faces. -1 laisse Tripo choisir de manière adaptative (environ 1,4 M de faces sur v3.x standard, 2 M sur detailed). Tripo limite silencieusement : les maillages quad à 150 000. (par défaut : -1) | INT | Non | -1 à 2,000,000 |
 | `quad` | Sortie de maillage quad. Tripo livre les maillages quad au format FBX, donc le résultat arrive sur la sortie FBX et la sortie GLB reste vide. (par défaut : False) | BOOLEAN | Non | - |
 | `geometry_quality` | Niveau de qualité pour la génération de géométrie (par défaut : `"standard"`). | COMBO | Non | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Maillage low-poly avec une topologie propre, de style fait main (500 à 20 000 faces, quad 500 à 10 000). Idéal pour les sujets simples ; les sujets complexes peuvent échouer. (par défaut : False) | BOOLEAN | Non | - |

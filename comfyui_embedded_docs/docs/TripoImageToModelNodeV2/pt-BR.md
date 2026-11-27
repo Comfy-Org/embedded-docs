@@ -15,7 +15,7 @@ O nó Tripo: Image to Model transforma uma única imagem de referência em um mo
 | `texture_seed` | Semente usada para a etapa de geração de textura (padrão: 42). | INT | Não | 0 a 2147483647 |
 | `texture_quality` | detailed = texturas HD, extreme = texturas Ultra 8K (padrão: "standard"). | COMBO | Não | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | Como as texturas são alinhadas na geometria gerada (padrão: "original_image"). | COMBO | Não | "original_image"<br>"geometry" |
-| `face_limit` | Número máximo de faces. -1 permite que a Tripo escolha de forma adaptativa (cerca de 1,4M de faces no v3.x standard, 2M em detailed). A Tripo aplica limites silenciosamente: v2.5 em 500.000, malhas quad em 150.000 (padrão: -1). | INT | Não | -1 a 2000000 |
+| `face_limit` | Número máximo de faces. -1 permite que a Tripo escolha de forma adaptativa (cerca de 1,4M de faces no v3.x standard, 2M em detailed). A Tripo aplica limites silenciosamente: malhas quad em 150.000 (padrão: -1). | INT | Não | -1 a 2000000 |
 | `quad` | Saída de malha quad. A Tripo entrega malhas quad como FBX, então o resultado chega na saída FBX e a saída GLB permanece vazia (padrão: false). | BOOLEAN | Não | true<br>false |
 | `geometry_quality` | O nível de qualidade da geometria gerada (padrão: "standard"). | COMBO | Não | "standard"<br>"detailed" |
 | `smart_low_poly` | Malha low-poly com topologia limpa e de estilo artesanal (500-20.000 faces, quad 500-10.000). Melhor para objetos simples; objetos complexos podem falhar (padrão: false). | BOOLEAN | Não | true<br>false |

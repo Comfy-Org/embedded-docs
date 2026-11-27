@@ -7,7 +7,7 @@ Generiert synchron 3D-Modelle basierend auf einem einzelnen Bild unter Verwendun
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `Bild` | Das Eingabebild, das zur Generierung des 3D-Modells verwendet wird. Es muss ein Bild bereitgestellt werden, andernfalls löst der Node einen Fehler aus. | IMAGE | Ja | - |
-| `Modellversion` | Die für die Generierung zu verwendende Modellversion. | COMBO | Nein | `"v1.4"`<br>`"v3.0"`<br>`"v3.5"`<br>`"v3.6"` |
+| `Modellversion` | Die für die Generierung zu verwendende Modellversion. | COMBO | Nein | `"v3.1-20260211"`<br>`"v3.0-20250812"` |
 | `Stil` | Wird von Tripo nicht mehr unterstützt und ignoriert. Für ältere Workflows beibehalten. (Standard: `"None"`) | COMBO | Nein | `"None"`<br>`"realistic"`<br>`"cartoon"`<br>`"sculpture"`<br>`"low_poly"` |
 | `Textur` | Textur-Maps generieren. Wenn deaktiviert, wird reine Geometrie zurückgegeben und `pbr` ignoriert. (Standard: True) | BOOLEAN | Nein | True<br>False |
 | `PBR` | PBR-Material-Maps (Basisfarbe, Metallic, Rauheit, Normal). Erfordert `texture`. (Standard: True) | BOOLEAN | Nein | True<br>False |
@@ -16,7 +16,7 @@ Generiert synchron 3D-Modelle basierend auf einem einzelnen Bild unter Verwendun
 | `Textur-Seed` | Zufälliger Seed für die Texturgenerierung. (Standard: 42) | INT | Nein | 0 bis 2147483647 |
 | `Texturqualität` | Qualitätsstufe für die Texturgenerierung: `detailed` = HD-Texturen, `extreme` = 8K-Ultra-Texturen. (Standard: `"standard"`) | COMBO | Nein | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `Texturausrichtung` | Ausrichtungsmethode für das Textur-Mapping. (Standard: `"original_image"`) | COMBO | Nein | `"original_image"`<br>`"geometry"` |
-| `Flächenlimit` | Maximale Anzahl von Flächen. -1 lässt Tripo adaptiv wählen (etwa 1,4 Mio. Flächen bei v3.x Standard, 2 Mio. bei detailed). Tripo begrenzt stillschweigend: v2.5 bei 500.000, Quad-Meshes bei 150.000. (Standard: -1) | INT | Nein | -1 bis 2000000 |
+| `Flächenlimit` | Maximale Anzahl von Flächen. -1 lässt Tripo adaptiv wählen (etwa 1,4 Mio. Flächen bei v3.x Standard, 2 Mio. bei detailed). Tripo begrenzt stillschweigend: Quad-Meshes bei 150.000. (Standard: -1) | INT | Nein | -1 bis 2000000 |
 | `Quad` | Quad-Mesh-Ausgabe. Tripo liefert Quad-Meshes als FBX, daher erscheint das Ergebnis an der FBX-Ausgabe und die GLB-Ausgabe bleibt leer. (Standard: False) | BOOLEAN | Nein | True<br>False |
 | `Geometriequalität` | Qualitätsstufe für die Geometriegenerierung. (Standard: `"standard"`) | COMBO | Nein | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Low-Poly-Mesh mit sauberer Topologie im handgefertigten Stil (500–20.000 Flächen, Quad 500–10.000). Am besten für einfache Motive geeignet; komplexe können fehlschlagen. (Standard: False) | BOOLEAN | Nein | True<br>False |

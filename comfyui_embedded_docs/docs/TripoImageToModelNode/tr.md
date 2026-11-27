@@ -7,7 +7,7 @@ Tripo API'sini kullanarak tek bir görsele dayalı olarak 3B modelleri eşzamanl
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `görüntü` | 3B modeli oluşturmak için kullanılan giriş görseli. Bir görsel sağlanmalıdır; aksi takdirde düğüm hata verir. | IMAGE | Evet | - |
-| `model_sürümü` | Oluşturma için kullanılacak model sürümü. | COMBO | Hayır | `"v1.4"`<br>`"v3.0"`<br>`"v3.5"`<br>`"v3.6"` |
+| `model_sürümü` | Oluşturma için kullanılacak model sürümü. | COMBO | Hayır | `"v3.1-20260211"`<br>`"v3.0-20250812"` |
 | `stil` | Tripo tarafından artık desteklenmiyor ve yok sayılıyor. Daha eski iş akışları için korunmuştur. (varsayılan: `"None"`) | COMBO | Hayır | `"None"`<br>`"realistic"`<br>`"cartoon"`<br>`"sculpture"`<br>`"low_poly"` |
 | `doku` | Doku haritaları oluşturur. Kapalı olduğunda yalın geometri döndürür ve `pbr` yok sayılır. (varsayılan: True) | BOOLEAN | Hayır | True<br>False |
 | `pbr` | PBR malzeme haritaları (temel renk, metalik, pürüzlülük, normal). `texture` gerektirir. (varsayılan: True) | BOOLEAN | Hayır | True<br>False |
@@ -16,7 +16,7 @@ Tripo API'sini kullanarak tek bir görsele dayalı olarak 3B modelleri eşzamanl
 | `doku_tohumu` | Doku oluşturma için rastgele tohum. (varsayılan: 42) | INT | Hayır | 0 ile 2147483647 |
 | `doku_kalitesi` | Doku oluşturma için kalite düzeyi: `detailed` = HD dokular, `extreme` = 8K Ultra dokular. (varsayılan: `"standard"`) | COMBO | Hayır | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `doku_hizalama` | Doku eşleme için hizalama yöntemi. (varsayılan: `"original_image"`) | COMBO | Hayır | `"original_image"`<br>`"geometry"` |
-| `yüz_sınırı` | Maksimum yüz sayısı. -1, Tripo'nun uyarlamalı seçim yapmasını sağlar (v3.x standardında yaklaşık 1,4 milyon yüz, ayrıntılıda 2 milyon). Tripo sessizce sınırlar: v2.5'te 500.000, quad ağlarda 150.000. (varsayılan: -1) | INT | Hayır | -1 ile 2000000 |
+| `yüz_sınırı` | Maksimum yüz sayısı. -1, Tripo'nun uyarlamalı seçim yapmasını sağlar (v3.x standardında yaklaşık 1,4 milyon yüz, ayrıntılıda 2 milyon). Tripo sessizce sınırlar: quad ağlarda 150.000. (varsayılan: -1) | INT | Hayır | -1 ile 2000000 |
 | `dörtlü` | Quad ağ çıktısı. Tripo quad ağları FBX olarak teslim eder; bu nedenle sonuç FBX çıktısına gelir ve GLB çıktısı boş kalır. (varsayılan: False) | BOOLEAN | Hayır | True<br>False |
 | `geometry_quality` | Geometri oluşturma için kalite düzeyi. (varsayılan: `"standard"`) | COMBO | Hayır | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Temiz, el yapımı tarzda topolojiye sahip düşük poligonlu ağ (500-20.000 yüz, quad 500-10.000). Basit nesneler için en uygunudur; karmaşık olanlar başarısız olabilir. (varsayılan: False) | BOOLEAN | Hayır | True<br>False |

@@ -15,7 +15,7 @@ Generates a 3D model from a text description using the Tripo service. The node s
 | `model_seed` | Seed value for model generation (default: 42). | INT | No | 0 to 2147483647 |
 | `texture_seed` | Seed value for texture generation (default: 42). | INT | No | 0 to 2147483647 |
 | `texture_quality` | Texture detail level (default: "standard"). "detailed" = HD textures, "extreme" = 8K Ultra textures. | COMBO | No | `"standard"`<br>`"detailed"`<br>`"extreme"` |
-| `face_limit` | Maximum face count. -1 lets Tripo pick adaptively (about 1.4M faces on v3.x standard, 2M on detailed). Tripo clamps silently: v2.5 at 500,000, quad meshes at 150,000 (default: -1). | INT | No | -1 to 2000000 |
+| `face_limit` | Maximum face count. -1 lets Tripo pick adaptively (about 1.4M faces on v3.x standard, 2M on detailed). Tripo clamps silently: quad meshes at 150,000 (default: -1). | INT | No | -1 to 2000000 |
 | `quad` | Quad mesh output. Tripo delivers quad meshes as FBX, so the result arrives on the FBX output and the GLB output stays empty (default: False). | BOOLEAN | No | True<br>False |
 | `geometry_quality` | Geometry detail level (default: "standard"). | COMBO | No | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Low-poly mesh with clean, hand-crafted style topology (500-20,000 faces, quad 500-10,000). Best for simple subjects; complex ones may fail (default: False). | BOOLEAN | No | True<br>False |

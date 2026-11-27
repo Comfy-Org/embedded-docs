@@ -16,7 +16,7 @@ Este nó legado gera modelos 3D finalizados a partir de uma descrição textual 
 | `semente_do_modelo` | Semente usada para o estágio de geração do modelo (padrão: 42). | INT | Não | 0 a 2147483647 |
 | `semente_da_textura` | Semente usada para o estágio de geração de textura (padrão: 42). | INT | Não | 0 a 2147483647 |
 | `qualidade_da_textura` | Qualidade das texturas geradas. detailed = texturas HD, extreme = texturas 8K Ultra (padrão: standard). | COMBO | Não | "standard"<br>"detailed"<br>"extreme" |
-| `limite_de_faces` | Contagem máxima de faces. -1 permite que a Tripo escolha de forma adaptativa (cerca de 1,4M de faces em v3.x standard, 2M em detailed). A Tripo limita silenciosamente: v2.5 em 500.000, malhas quad em 150.000. (padrão: -1) | INT | Não | -1 a 2000000 |
+| `limite_de_faces` | Contagem máxima de faces. -1 permite que a Tripo escolha de forma adaptativa (cerca de 1,4M de faces em v3.x standard, 2M em detailed). A Tripo limita silenciosamente: malhas quad em 150.000. (padrão: -1) | INT | Não | -1 a 2000000 |
 | `quad` | Saída de malha quad. A Tripo entrega malhas quad como FBX, então o resultado chega na saída FBX e a saída GLB permanece vazia. (padrão: False) | BOOLEAN | Não | true / false |
 | `qualidade_da_geometria` | Qualidade da geometria gerada (padrão: standard). | COMBO | Não | "standard"<br>"detailed" |
 | `smart_low_poly` | Malha low-poly com topologia limpa, no estilo feito à mão (500-20.000 faces, quad 500-10.000). Melhor para objetos simples; objetos complexos podem falhar. (padrão: False) | BOOLEAN | Não | true / false |

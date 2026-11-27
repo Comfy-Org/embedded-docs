@@ -16,7 +16,7 @@
 | `texture_quality` | 生成されるテクスチャの品質。`detailed` = HD テクスチャ、`extreme` = 8K Ultra テクスチャ。（デフォルト："standard"）詳細入力。 | COMBO | いいえ | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | テクスチャをモデルにどのように位置合わせするか。（デフォルト："original_image"）詳細入力。 | COMBO | いいえ | "original_image"<br>"geometry" |
 | `texture_prompt` | テクスチャリング用の任意のテキストガイダンス。ソース画像を持たず色を推測できないインポートモデル（Tripo: Import Model）では、実質的に必須です。参照画像と組み合わせることはできません。（デフォルト：空） | STRING | いいえ | - |
-| `model_version` | テクスチャモデル：v3.x で生成されたメッシュには v3.0、v2.5 で生成されたメッシュには v2.5 を使用します。（デフォルト：v3_0_20250812） | COMBO | いいえ | Tripo テクスチャモデルのバージョン、デフォルト "v3_0_20250812" |
+| `model_version` | テクスチャモデル：v3.x で生成されたメッシュには v3.0。（デフォルト：v3_0_20250812） | COMBO | いいえ | `"v3.0-20250812"` |
 | `style_image` | テクスチャの芸術的スタイルの参照画像。`texture_prompt` と一緒に使用した場合にのみ有効です。 | IMAGE | いいえ | - |
 | `reference` | テクスチャをガイドする参照画像。`texture_prompt` または `style_image` と組み合わせることはできません。（デフォルト："none"） | DYNAMIC_COMBO | いいえ | "none"<br>"image"<br>"multiview" |
 | `part_names` | Tripo: Segment Model からテクスチャリングするパーツ名のカンマ区切りリスト。空の場合はすべてのパーツにテクスチャを適用します。（デフォルト：空）詳細入力。 | STRING | いいえ | - |

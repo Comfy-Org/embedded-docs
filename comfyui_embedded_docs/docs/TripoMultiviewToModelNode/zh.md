@@ -18,7 +18,7 @@
 | `纹理种子` | 纹理生成的随机种子（默认：42）。 | INT | 否 | 0 到 2,147,483,647 |
 | `纹理质量` | 纹理生成的质量级别（默认：`"standard"`）。`"detailed"` = HD 纹理，`"extreme"` = 8K 超高清纹理。 | COMBO | 否 | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `纹理对齐` | 用于将纹理与模型对齐的方法（默认：`"original_image"`）。 | COMBO | 否 | `"original_image"`<br>`"geometry"` |
-| `面数限制` | 最大面数。-1 让 Tripo 自适应选择（v3.x standard 约 140 万面，detailed 约 200 万面）。Tripo 会静默限制：v2.5 为 500,000，四边形网格为 150,000。（默认：-1） | INT | 否 | -1 到 2,000,000 |
+| `面数限制` | 最大面数。-1 让 Tripo 自适应选择（v3.x standard 约 140 万面，detailed 约 200 万面）。Tripo 会静默限制：四边形网格为 150,000。（默认：-1） | INT | 否 | -1 到 2,000,000 |
 | `四边形` | 四边形网格输出。Tripo 以 FBX 格式交付四边形网格，因此结果会出现在 FBX 输出上，而 GLB 输出保持为空。（默认：False） | BOOLEAN | 否 | - |
 | `几何质量` | 几何体生成的质量级别（默认：`"standard"`）。 | COMBO | 否 | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | 具有干净、手工制作风格拓扑的低多边形网格（500-20,000 面，四边形 500-10,000）。最适合简单主体；复杂主体可能会失败。（默认：False） | BOOLEAN | 否 | - |

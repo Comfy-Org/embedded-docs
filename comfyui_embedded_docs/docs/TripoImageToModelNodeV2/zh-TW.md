@@ -15,7 +15,7 @@ Tripo: Image to Model 節點使用 Tripo 的 image-to-model 服務，將單一�
 | `紋理種子` | 用於紋理生成步驟的種子（預設：42）。 | INT | 否 | 0 到 2147483647 |
 | `紋理品質` | detailed = HD 紋理，extreme = 8K Ultra 紋理（預設："standard"）。 | COMBO | 否 | "standard"<br>"detailed"<br>"extreme" |
 | `紋理對齊` | 紋理在生成幾何上的對齊方式（預設："original_image"）。 | COMBO | 否 | "original_image"<br>"geometry" |
-| `面數上限` | 最大面數。-1 讓 Tripo 自適應選擇（在 v3.x standard 上約 1.4M 面，detailed 約 2M 面）。Tripo 會默默限制：v2.5 為 500,000，quad 網格為 150,000（預設：-1）。 | INT | 否 | -1 到 2000000 |
+| `面數上限` | 最大面數。-1 讓 Tripo 自適應選擇（在 v3.x standard 上約 1.4M 面，detailed 約 2M 面）。Tripo 會默默限制：quad 網格為 150,000（預設：-1）。 | INT | 否 | -1 到 2000000 |
 | `四邊形網格` | 四邊形網格輸出。Tripo 以 FBX 格式提供 quad 網格，因此結果會出現在 FBX 輸出，而 GLB 輸出會保持為空（預設：false）。 | BOOLEAN | 否 | true<br>false |
 | `幾何品質` | 生成幾何的品質等級（預設："standard"）。 | COMBO | 否 | "standard"<br>"detailed" |
 | `智慧低多邊形` | 具有乾淨、手工風格拓撲的低多邊形網格（500-20,000 面，quad 500-10,000）。最適合簡單主體；複雜主體可能會失敗（預設：false）。 | BOOLEAN | 否 | true<br>false |

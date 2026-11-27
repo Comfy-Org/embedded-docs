@@ -18,7 +18,7 @@ Este nodo genera modelos 3D de forma síncrona usando la API de Tripo, procesand
 | `semilla_de_textura` | Semilla aleatoria para la generación de texturas (predeterminado: 42). | INT | No | 0 a 2,147,483,647 |
 | `calidad_de_textura` | Nivel de calidad para la generación de texturas (predeterminado: `"standard"`). `"detailed"` = texturas HD, `"extreme"` = texturas Ultra 8K. | COMBO | No | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `alineación_de_textura` | Método usado para alinear las texturas con el modelo (predeterminado: `"original_image"`). | COMBO | No | `"original_image"`<br>`"geometry"` |
-| `límite_de_caras` | Número máximo de caras. -1 permite que Tripo elija de forma adaptativa (aproximadamente 1.4M de caras en v3.x estándar, 2M en detallado). Tripo limita silenciosamente: v2.5 a 500,000, mallas quad a 150,000. (predeterminado: -1) | INT | No | -1 a 2,000,000 |
+| `límite_de_caras` | Número máximo de caras. -1 permite que Tripo elija de forma adaptativa (aproximadamente 1.4M de caras en v3.x estándar, 2M en detallado). Tripo limita silenciosamente: mallas quad a 150,000. (predeterminado: -1) | INT | No | -1 a 2,000,000 |
 | `cuadrilátero` | Salida de malla quad. Tripo entrega las mallas quad como FBX, por lo que el resultado llega a la salida FBX y la salida GLB permanece vacía. (predeterminado: False) | BOOLEAN | No | - |
 | `calidad_de_geometría` | Nivel de calidad para la generación de geometría (predeterminado: `"standard"`). | COMBO | No | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Malla low-poly con topología limpia de estilo artesanal (500-20,000 caras, quad 500-10,000). Mejor para sujetos simples; los complejos pueden fallar. (predeterminado: False) | BOOLEAN | No | - |

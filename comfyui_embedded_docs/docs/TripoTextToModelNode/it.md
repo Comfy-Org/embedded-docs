@@ -16,7 +16,7 @@ Questo nodo legacy genera modelli 3D finiti a partire da una descrizione testual
 | `seme_modello` | Seme utilizzato per la fase di generazione del modello (predefinito: 42). | INT | No | 0 a 2147483647 |
 | `seme_texture` | Seme utilizzato per la fase di generazione della texture (predefinito: 42). | INT | No | 0 a 2147483647 |
 | `qualità_texture` | Qualità delle texture generate. detailed = texture HD, extreme = texture 8K Ultra (predefinito: standard). | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
-| `limite_facce` | Numero massimo di facce. -1 lascia che Tripo scelga in modo adattivo (circa 1,4 milioni di facce su v3.x standard, 2 milioni su detailed). Tripo applica dei limiti silenziosamente: v2.5 a 500.000, mesh quad a 150.000. (predefinito: -1) | INT | No | -1 a 2000000 |
+| `limite_facce` | Numero massimo di facce. -1 lascia che Tripo scelga in modo adattivo (circa 1,4 milioni di facce su v3.x standard, 2 milioni su detailed). Tripo applica dei limiti silenziosamente: mesh quad a 150.000. (predefinito: -1) | INT | No | -1 a 2000000 |
 | `quad` | Output con mesh a quad. Tripo consegna le mesh a quad in formato FBX, quindi il risultato arriva sull'output FBX e l'output GLB rimane vuoto. (predefinito: False) | BOOLEAN | No | true / false |
 | `qualità_geometria` | Qualità della geometria generata (predefinito: standard). | COMBO | No | "standard"<br>"detailed" |
 | `smart_low_poly` | Mesh low-poly con topologia pulita in stile artigianale (da 500 a 20.000 facce, quad da 500 a 10.000). Ideale per soggetti semplici; quelli complessi potrebbero fallire. (predefinito: False) | BOOLEAN | No | true / false |

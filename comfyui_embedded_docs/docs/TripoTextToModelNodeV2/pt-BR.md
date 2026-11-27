@@ -15,7 +15,7 @@ Gera um modelo 3D a partir de uma descrição textual usando o serviço Tripo. O
 | `model_seed` | Valor de seed para geração de modelo (padrão: 42). | INT | Não | 0 a 2147483647 |
 | `texture_seed` | Valor de seed para geração de textura (padrão: 42). | INT | Não | 0 a 2147483647 |
 | `texture_quality` | Nível de detalhe da textura (padrão: "standard"). "detailed" = texturas HD, "extreme" = texturas 8K Ultra. | COMBO | Não | `"standard"`<br>`"detailed"`<br>`"extreme"` |
-| `face_limit` | Número máximo de faces. -1 permite que o Tripo escolha de forma adaptativa (cerca de 1,4 milhão de faces no v3.x standard, 2 milhões no detailed). O Tripo limita silenciosamente: v2.5 em 500.000, malhas quad em 150.000 (padrão: -1). | INT | Não | -1 a 2000000 |
+| `face_limit` | Número máximo de faces. -1 permite que o Tripo escolha de forma adaptativa (cerca de 1,4 milhão de faces no v3.x standard, 2 milhões no detailed). O Tripo limita silenciosamente: malhas quad em 150.000 (padrão: -1). | INT | Não | -1 a 2000000 |
 | `quad` | Saída de malha quad. O Tripo entrega malhas quad como FBX, então o resultado chega na saída FBX e a saída GLB permanece vazia (padrão: False). | BOOLEAN | Não | True<br>False |
 | `geometry_quality` | Nível de detalhe da geometria (padrão: "standard"). | COMBO | Não | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Malha low-poly com topologia limpa e de estilo artesanal (500 a 20.000 faces; quad 500 a 10.000). Melhor para temas simples; os complexos podem falhar (padrão: False). | BOOLEAN | Não | True<br>False |

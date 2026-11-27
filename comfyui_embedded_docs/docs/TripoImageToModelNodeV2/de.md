@@ -15,7 +15,7 @@ Der Node Tripo: Image to Model wandelt ein einzelnes Referenzbild mithilfe des B
 | `texture_seed` | Seed für den Textur-Generierungsschritt (Standard: 42). | INT | Nein | 0 bis 2147483647 |
 | `texture_quality` | detailed = HD-Texturen, extreme = 8K-Ultra-Texturen (Standard: "standard"). | COMBO | Nein | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | Wie Texturen auf der generierten Geometrie ausgerichtet werden (Standard: "original_image"). | COMBO | Nein | "original_image"<br>"geometry" |
-| `face_limit` | Maximale Anzahl an Faces. -1 lässt Tripo adaptiv wählen (etwa 1,4 Mio. Faces bei v3.x standard, 2 Mio. bei detailed). Tripo begrenzt stillschweigend: v2.5 bei 500.000, Quad-Meshes bei 150.000 (Standard: -1). | INT | Nein | -1 bis 2000000 |
+| `face_limit` | Maximale Anzahl an Faces. -1 lässt Tripo adaptiv wählen (etwa 1,4 Mio. Faces bei v3.x standard, 2 Mio. bei detailed). Tripo begrenzt stillschweigend: Quad-Meshes bei 150.000 (Standard: -1). | INT | Nein | -1 bis 2000000 |
 | `quad` | Quad-Mesh-Ausgabe. Tripo liefert Quad-Meshes als FBX, daher kommt das Ergebnis am FBX-Ausgang an und der GLB-Ausgang bleibt leer (Standard: false). | BOOLEAN | Nein | true<br>false |
 | `geometry_quality` | Die Qualitätsstufe der generierten Geometrie (Standard: "standard"). | COMBO | Nein | "standard"<br>"detailed" |
 | `smart_low_poly` | Low-Poly-Mesh mit sauberer Topologie im handgefertigten Stil (500–20.000 Faces, Quad 500–10.000). Am besten für einfache Motive geeignet; komplexe können fehlschlagen (Standard: false). | BOOLEAN | Nein | true<br>false |

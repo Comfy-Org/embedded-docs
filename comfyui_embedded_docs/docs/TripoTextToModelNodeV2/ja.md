@@ -15,7 +15,7 @@ Tripoサービスを使用して、テキスト記述から3Dモデルを生成�
 | `model_seed` | モデル生成用のシード値（デフォルト: 42）。 | INT | いいえ | 0～2147483647 |
 | `texture_seed` | テクスチャ生成用のシード値（デフォルト: 42）。 | INT | いいえ | 0～2147483647 |
 | `texture_quality` | テクスチャの詳細レベル（デフォルト: "standard"）。"detailed" = HDテクスチャ、"extreme" = 8K Ultraテクスチャ。 | COMBO | いいえ | `"standard"`<br>`"detailed"`<br>`"extreme"` |
-| `face_limit` | 最大フェイス数。-1 を指定すると、Tripoが適応的に選択します（v3.x standard では約1.4Mフェイス、detailed では2M）。Tripoは通知なしでクランプします: v2.5 では500,000、quadメッシュでは150,000（デフォルト: -1）。 | INT | いいえ | -1～2000000 |
+| `face_limit` | 最大フェイス数。-1 を指定すると、Tripoが適応的に選択します（v3.x standard では約1.4Mフェイス、detailed では2M）。Tripoは通知なしでクランプします: quadメッシュでは150,000（デフォルト: -1）。 | INT | いいえ | -1～2000000 |
 | `quad` | クアッドメッシュ出力。TripoはクアッドメッシュをFBXとして提供するため、結果はFBX出力に格納され、GLB出力は空のままになります（デフォルト: False）。 | BOOLEAN | いいえ | True<br>False |
 | `geometry_quality` | ジオメトリの詳細レベル（デフォルト: "standard"）。 | COMBO | いいえ | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | クリーンで手作り風のトポロジーを持つローポリメッシュ（500～20,000フェイス、quadでは500～10,000）。単純な被写体に最適ですが、複雑なものは失敗する可能性があります（デフォルト: False）。 | BOOLEAN | いいえ | True<br>False |
