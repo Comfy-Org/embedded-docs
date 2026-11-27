@@ -19,7 +19,7 @@ Tripo: Texture model (Legacy) ノードは、Tripo API を通じて既存の Tri
 | `texture_quality` | テクスチャ解像度の品質: detailed = HD テクスチャ、extreme = 8K Ultra テクスチャ。（デフォルト: "standard"）。おおよそのコスト: standard $0.10、detailed $0.20、extreme $0.30。 | COMBO | いいえ | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | 生成されたテクスチャをモデルに整列させる方法。（デフォルト: "original_image"） | COMBO | いいえ | "original_image"<br>"geometry" |
 | `texture_prompt` | テクスチャリング用の任意のテキストガイダンス。色を推論する元画像を持たないインポート済みモデル（Tripo: Import Model）では、実質的に必須です。参照画像と併用できません。（デフォルト: ""） | STRING | いいえ | - |
-| `model_version` | テクスチャモデル: v3.0 は v3.x で生成されたメッシュ用。（デフォルト: v3.0-20250812） | COMBO | いいえ | `"v3.0-20250812"` |
+| `model_version` | テクスチャモデル: v3.0 は v3.x で生成されたメッシュ用です。（デフォルト: v3.0-20250812） | COMBO | いいえ | `"v3.0-20250812"` |
 | `style_image` | テクスチャの芸術的スタイル用の参照画像。`texture_prompt` と組み合わせてのみ使用されます。 | IMAGE | いいえ | - |
 | `reference` | テクスチャを誘導する参照画像。`texture_prompt` または `style_image` と併用できません。（デフォルト: "none"） | DYNAMIC_COMBO | いいえ | "none"<br>"image"<br>"multiview" |
 | `part_names` | テクスチャを適用する、Tripo: Segment Model からのカンマ区切りのパーツ名。空の場合、すべてのパーツにテクスチャを適用します。（デフォルト: ""） | STRING | いいえ | - |

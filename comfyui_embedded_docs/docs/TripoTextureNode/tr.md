@@ -17,7 +17,7 @@ Tripo: Texture model (Legacy) düğümü, Tripo API aracılığıyla mevcut bir 
 | `doku_kalitesi` | Doku çözünürlüğü kalitesi: detailed = HD dokular, extreme = 8K Ultra dokular. (varsayılan: "standard"). Yaklaşık maliyet: standard $0.10, detailed $0.20, extreme $0.30. | COMBO | Hayır | "standard"<br>"detailed"<br>"extreme" |
 | `doku_hizalama` | Üretilen dokuları modele hizalamak için kullanılan yöntem. (varsayılan: "original_image") | COMBO | Hayır | "original_image"<br>"geometry" |
 | `texture_prompt` | Doku kaplama için isteğe bağlı metin yönlendirmesi. Renkleri çıkarabilecek bir kaynak görüntü taşımayan içe aktarılmış modeller (Tripo: Import Model) için pratikte gereklidir. Referans görüntülerle birlikte kullanılamaz. (varsayılan: "") | STRING | Hayır | - |
-| `model_version` | Doku modeli: v3.x ile üretilen mesh'ler için v3.0. (varsayılan: v3.0-20250812) | COMBO | Hayır | `"v3.0-20250812"` |
+| `model_version` | Doku modeli: v3.x ile üretilen mesh'ler için v3.0 kullanılır. (varsayılan: v3.0-20250812) | COMBO | Hayır | `"v3.0-20250812"` |
 | `style_image` | Dokuların sanatsal stili için referans görüntü. Yalnızca `texture_prompt` ile birlikte kullanılır. | IMAGE | Hayır | - |
 | `referans` | Dokulara yol gösteren referans görüntüler. `texture_prompt` veya `style_image` ile birleştirilemez. (varsayılan: "none") | DYNAMIC_COMBO | Hayır | "none"<br>"image"<br>"multiview" |
 | `part_names` | Tripo: Segment Model'den alınan, doku uygulanacak virgülle ayrılmış parça adları. Boş bırakılırsa her parçaya doku uygulanır. (varsayılan: "") | STRING | Hayır | - |
